@@ -90,6 +90,6 @@ caps.handback.revision: 29
   
 ### 若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../Topic/Step%2010:%20Write%20Code%20for%20Additional%20Buttons%20and%20a%20Check%20Box.md)。  
+-   若要移到下一個教學課程步驟，請參閱[步驟 10：撰寫其他按鈕和核取方塊的程式碼](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。

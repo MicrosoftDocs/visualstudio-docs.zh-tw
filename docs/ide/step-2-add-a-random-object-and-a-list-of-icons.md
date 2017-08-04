@@ -54,6 +54,6 @@ IntelliSense 視窗
   
 ### 若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 3：將隨機圖示指派給每個標籤](../Topic/Step%203:%20Assign%20a%20Random%20Icon%20to%20Each%20Label.md)。  
+-   若要移到下一個教學課程步驟，請參閱[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將資料表加入至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)。

@@ -48,10 +48,10 @@ caps.handback.revision: 13
 |--------|--------|  
 |[步驟 1：建立專案並將資料表加入至表單](../ide/step-1-create-a-project-and-add-a-table-to-your-form.md)|從建立專案並加入 `TableLayoutPanel` 控制項，讓控制項正確對齊開始。|  
 |[步驟 2：加入隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)|加入 `Random` 物件和 `List` 物件，以建立圖示清單。|  
-|[步驟 3：將隨機圖示指派給每個標籤](../Topic/Step%203:%20Assign%20a%20Random%20Icon%20to%20Each%20Label.md)|將圖示隨機指派給 `Label` 控制項，因此，每個遊戲是不同的。|  
-|[步驟 4：將 Click 事件處理常式加入至每個標籤](../Topic/Step%204:%20Add%20a%20Click%20Event%20Handler%20to%20Each%20Label.md)|加入 Click 事件處理常式，以變更已按下標籤的色彩。|  
+|[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)|將圖示隨機指派給 `Label` 控制項，因此，每個遊戲是不同的。|  
+|[步驟 4：將 Click 事件處理常式加入至每個標籤](../ide/step-4-add-a-click-event-handler-to-each-label.md)|加入 Click 事件處理常式，以變更已按下標籤的色彩。|  
 |[步驟 5：加入標籤參考](../ide/step-5-add-label-references.md)|加入參考變數，以追蹤已按一下的標籤。|  
-|[步驟 6：加入計時器](../Topic/Step%206:%20Add%20a%20Timer.md)|將計時器加入至表單，追蹤遊戲已經過的時間。|  
-|[步驟 7：讓配對保持可見](../Topic/Step%207:%20Keep%20Pairs%20Visible.md)|如果已選取相符的配對，請讓圖示配對維持可見狀態。|  
+|[步驟 6：加入計時器](../ide/step-6-add-a-timer.md)|將計時器加入至表單，追蹤遊戲已經過的時間。|  
+|[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)|如果已選取相符的配對，請讓圖示配對維持可見狀態。|  
 |[步驟 8：加入方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|加入 `CheckForWinner()` 方法以驗證玩家是否贏了。|  
 |[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)|嘗試其他功能，例如變更圖示和色彩、加上格線，以及加入音效。  試著讓戲局變大並調整計時器。|

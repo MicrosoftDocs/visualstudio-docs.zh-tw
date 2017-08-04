@@ -43,4 +43,4 @@ caps.handback.revision: 17
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../Topic/Step%207:%20Keep%20Pairs%20Visible.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。
