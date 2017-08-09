@@ -1,26 +1,46 @@
 ---
 title: "如何：在索引中尋找主題 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "索引索引標籤 [說明檢視器 2.0]"
-  - "說明檢視器 2.0, 使用索引"
-  - "說明檢視器 2.0, 索引索引標籤"
-  - "使用索引 [說明檢視器 2.0]"
-  - "索引篩選 [說明檢視器 2.0]"
-  - "說明檢視器 2.0, 索引篩選"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Index tab [Help Viewer 2.0]
+- Help Viewer 2.0, using the index
+- Help Viewer 2.0, Index tab
+- using the index [Help Viewer 2.0]
+- index filtering [Help Viewer 2.0]
+- Help Viewer 2.0, index filtering
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 15
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 884530b6c2ebc44f935dd814a39bbf0495764303
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/08/2017
+
 ---
 # <a name="how-to-find-topics-in-the-index"></a>如何：在索引中尋找主題
 索引包含與已安裝內容的主題相關聯的關鍵字清單。 每個主題都可能有多個相關聯的關鍵字，而且每個關鍵字都可能與多個主題建立關聯。 請以在活頁簿中使用索引的相同方式來使用此索引。  
@@ -42,8 +62,3 @@ caps.handback.revision: 15
   
 ## <a name="see-also"></a>另請參閱  
  [索引搜尋提示](../ide/index-search-tips.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
