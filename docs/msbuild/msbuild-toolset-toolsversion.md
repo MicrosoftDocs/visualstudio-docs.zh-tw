@@ -33,10 +33,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 17fd26b26e25c31772adf4b8629852256317968c
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: 6a45db14ee055c4fbdf738cf36df503a4a1fffd0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
@@ -68,9 +68,9 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
  `ToolsVersion` 屬性也用於專案移轉。 例如，如果您在 Visual Studio 2010 中開啟 Visual Studio 2008 專案，則會上傳專案檔，以包括 ToolsVersion="4.0"。 如果您隨後嘗試在 Visual Studio 2008 中開啟該專案，它不會識別已升級的 `ToolsVersion`，因此會像該屬性仍設為 3.5 那樣建置專案。  
   
- Visual Studio 2010 和 Visual Studio 2012 使用 4.0 的 ToolsVersion。 Visual Studio 2013 使用 12.0 的 ToolsVersion。 在許多情況下，您可以在所有三種版本的 Visual Studio 中開啟專案，而無需修改。 Visual Studio 一律使用正確的工具組，但是如果所使用的版本與專案檔中的版本不符的話，您會收到通知。 幾乎在所有的情況下，此警告都是良性的，因為工具組在大部分情況下都相容。  
+ Visual Studio 2010 和 Visual Studio 2012 使用 4.0 的 ToolsVersion。 Visual Studio 2013 使用 12.0 的 ToolsVersion。 Visual Studio 2015 使用 ToolsVersion 14.0，而 Visual Studio 2017 使用 ToolsVersion 15.0。 在許多情況下，專案無需修改，即可在多種版本的 Visual Studio 中開啟。 Visual Studio 一律使用正確的工具組，但是如果所使用的版本與專案檔中的版本不符的話，您會收到通知。 幾乎在所有的情況下，此警告都是良性的，因為工具組在大部分情況下都相容。  
   
- 子工具組 (將在本主題稍後說明) 可讓 MSBuild 根據執行建置的內容，自動切換要使用的工具組。 例如，MSBuild 在 Visual Studio 2012 中執行時使用的工具組，比在 Visual Studio 2010 中執行時更新，您不需要明確變更專案檔。 如需詳細資訊，請參閱[讓自訂專案成為版本感知](../misc/making-custom-projects-version-aware.md)。  
+ 子工具組 (將在本主題稍後說明) 可讓 MSBuild 根據執行建置的內容，自動切換要使用的工具組。 例如，MSBuild 在 Visual Studio 2012 中執行時使用的工具組，比在 Visual Studio 2010 中執行時更新，您不需要明確變更專案檔。  
   
 ## <a name="toolset-implementation"></a>工具組實作  
  選取組成工具組的各種工具、目標和工作的路徑，即可實作工具組。 MSBuild 所定義之工具組中的工具來自下列來源：  
@@ -134,3 +134,4 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
 ## <a name="see-also"></a>另請參閱  
  [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)
+

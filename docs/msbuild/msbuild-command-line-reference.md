@@ -37,10 +37,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 47596188b7e415840ee45a97aff2076bd4d887bd
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: e55b81428aa7d54d8383955c67e206df919bb1d1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
@@ -69,7 +69,7 @@ MSBuild.exe [Switches] [ProjectFile]
 |/noautoresponse|/noautorsp|不要自動包含任何 MSBuild.rsp 檔案。|  
 |/nodeReuse:`value`|/nr:`value`|啟用或停用 MSBuild 節點的重複使用功能。 您可以指定下列值：<br /><br /> -   **True**。 組建完成後保留節點，以便後續組建可以加以使用 (預設值)。<br />-   **False**。 在組建完成後不保留節點。<br /><br /> 節點對應至執行中專案。 如果您包含 **/maxcpucount** 參數，就能同時執行多個節點。|  
 |/nologo||不要顯示程式啟始資訊或著作權訊息。|  
-|/preprocess[:`filepath`]|/pp[:`filepath`]|由內嵌在組建期間匯入的所有檔案，並標上其界限標記，藉此建立單一彙總的專案檔。 您可以使用此參數更輕鬆地判斷正在匯入哪些檔案、從哪裡匯入檔案，以及哪些檔案形成組建。 使用這個參數時，並不會建置專案。<br /><br /> 如果您指定 `filepath`，則彙總的專案檔會是檔案的輸出。 否則，輸出會顯示在主控台視窗中。<br /><br /> 如需如何使用 `Import` 項目來將專案檔插入另一個專案檔的相關資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
+|<a name="preprocess"></a> /preprocess[:`filepath`]|/pp[:`filepath`]|由內嵌在組建期間匯入的所有檔案，並標上其界限標記，藉此建立單一彙總的專案檔。 您可以使用此參數更輕鬆地判斷正在匯入哪些檔案、從哪裡匯入檔案，以及哪些檔案形成組建。 使用這個參數時，並不會建置專案。<br /><br /> 如果您指定 `filepath`，則彙總的專案檔會是檔案的輸出。 否則，輸出會顯示在主控台視窗中。<br /><br /> 如需如何使用 `Import` 項目來將專案檔插入另一個專案檔的相關資訊，請參閱 [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md) 和[如何：在多個專案檔中使用相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)。|  
 |/property:`name`=`value`|/p:`name`=`value`|設定或覆寫所指定的專案層級屬性，其中 `name` 是屬性名稱，而 `value` 是屬性值。 分別指定每個屬性，或使用分號或逗號分隔多個屬性，如下列範例所示：<br /><br /> `/property:WarningLevel=2;OutDir=bin\Debug`|  
 |/target:`targets`|/t:`targets`|在專案中建置指定的目標。 分別指定每個目標，或使用分號或逗號分隔多個目標，如下列範例所示：<br /><br /> `/target:Resources;Compile`<br /><br /> 如果您使用這個參數指定任何目標，便會執行這些目標，而不是專案檔中 `DefaultTargets` 屬性的任何目標。 如需詳細資訊，請參閱[目標建置順序](../msbuild/target-build-order.md)和[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。<br /><br /> 目標是一組工作。 如需詳細資訊，請參閱[目標](../msbuild/msbuild-targets.md)。|  
 |/toolsversion:`version`|/tv:`version`|指定用來建置專案的工具組版本，如下列範例所示：`/toolsversion:3.5`<br /><br /> 藉由使用這個參數，您可以建置專案，並指定有別於 [Project 項目 (MSBuild)](../msbuild/project-element-msbuild.md) 中所指定的版本。 如需詳細資訊，請參閱[覆寫 ToolsVersion 設定](../msbuild/overriding-toolsversion-settings.md)。<br /><br /> 若是 MSBuild 4.5，您可以為 `version` 指定下列值：2.0、3.5 和 4.0。 如果您指定 4.0，則 `VisualStudioVersion` 組建屬性會指定要使用哪個子工具組。 如需詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) 的＜子工具組＞一節。<br /><br /> 工具組包含用於建置應用程式的工作、目標和工具。 工具包括編譯器，例如 csc.exe 和 vbc.exe。 如需工具組的詳細資訊，請參閱[工具組 (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)、[標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)及[多目標](../msbuild/msbuild-multitargeting-overview.md)。 **注意：**工具組版本與目標 Framework 的版本不同，目標 Framework 版本是建置專案以在其上方執行的目標 .NET Framework 版本。 如需詳細資訊，請參閱[目標 Framework 和目標平台](../msbuild/msbuild-target-framework-and-target-platform.md)。|  
@@ -107,3 +107,4 @@ msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)
+

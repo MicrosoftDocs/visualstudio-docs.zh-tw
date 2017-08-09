@@ -37,19 +37,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 88f783331de62539614ea6d175039ccb5bf1b767
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
-在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](http://msdn.microsoft.com/Library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)。  
+在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
   
 ## <a name="parameters"></a>參數  
  下表說明 `GenerateResource` 工作的參數。  
   
-|參數|描述|  
+|參數|說明|  
 |---------------|-----------------|  
 |`AdditionalInputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|  
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組，該名稱/值組除了 (或選擇性覆寫) 一般環境區塊，還應傳遞給繁衍的 resgen.exe。|  
@@ -71,17 +72,17 @@ ms.lasthandoff: 02/22/2017
 |`StronglyTypedNamespace`|選擇性的 `String` 參數。<br /><br /> 指定要為強型別資源產生的類別來源使用的命名空間。 如果未指定此參數，任何強型別資源都位在全域命名空間中。|  
 |`TLogReadFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀參數。<br /><br /> 取得代表讀取追蹤記錄檔的項目陣列。|  
 |`TLogWriteFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 唯讀參數。<br /><br /> 取得代表寫入追蹤記錄檔的項目陣列。|  
-|`ToolArchitecture`|選擇性的 [String](assetId:///String?qualifyHint=False&autoUpgrade=True) 參數。<br /><br /> 用來判斷是否需要使用 Tracker.exe 來繁衍 ResGen.exe。<br /><br /> 應可剖析為 <xref:Microsoft.Build.Utilities.ExecutableType> 列舉的成員。 如果為 `String.Empty`，請使用啟發學習法以判斷預設架構。 應可剖析為 Microsoft.Build.Utilities.ExecutableType 列舉的成員。|  
-|`TrackerFrameworkPath`|選擇性的 assetId:///String?qualifyHint=False&autoUpgrade=True 參數。<br /><br /> 指定包含 FileTracker.dll 之適當 .NET Framework 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 FileTracker.dll 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 .NET Framework 版本決定適當的位置。|  
-|`TrackerLogDirectory`|選擇性的 assetId:///String?qualifyHint=False&autoUpgrade=True 參數。<br /><br /> 指定要用於放置執行此工作產生之追蹤記錄檔的中繼目錄。|  
-|`TrackerSdkPath`|選擇性的 assetId:///String?qualifyHint=False&autoUpgrade=True 參數。<br /><br /> 指定包含 Tracker.exe 之適當 Windows SDK 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 Tracker.exe 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 Windows SDK 決定適當的位置。|  
-|`TrackFileAccess`|選擇性的 [Boolean](assetId:///Boolean?qualifyHint=False&autoUpgrade=True) 參數。<br /><br /> 如果為 true，會使用輸入檔的目錄來解析相對檔案路徑。|  
+|`ToolArchitecture`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 用來判斷是否需要使用 Tracker.exe 來繁衍 ResGen.exe。<br /><br /> 應可剖析為 <xref:Microsoft.Build.Utilities.ExecutableType> 列舉的成員。 如果為 `String.Empty`，請使用啟發學習法以判斷預設架構。 應可剖析為 Microsoft.Build.Utilities.ExecutableType 列舉的成員。|  
+|`TrackerFrameworkPath`|選擇性的 `String` 參數。<br /><br /> 指定包含 FileTracker.dll 之適當 .NET Framework 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 FileTracker.dll 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 .NET Framework 版本決定適當的位置。|  
+|`TrackerLogDirectory`|選擇性的 `String` 參數。<br /><br /> 指定要用於放置執行此工作產生之追蹤記錄檔的中繼目錄。|  
+|`TrackerSdkPath`|選擇性的 `String` 參數。<br /><br /> 指定包含 Tracker.exe 之適當 Windows SDK 位置的路徑。<br /><br /> 如果設定，使用者要負責確定所傳遞的 Tracker.exe 的位元和他們想要使用 ResGen.exe 的位元相符。 如果未設定，工作會根據目前的 Windows SDK 決定適當的位置。|  
+|`TrackFileAccess`|選擇性的 <xref:System.Boolean> 參數。<br /><br /> 如果為 true，會使用輸入檔的目錄來解析相對檔案路徑。|  
 |`UseSourcePath`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會使用輸入檔的目錄來解析相對檔案路徑。|  
   
 ## <a name="remarks"></a>備註  
  因為 .resx 檔案可能包含連至其他資源檔的連結，所以光是比較 .resx 和 .resource 檔案的時間戳記並不足以看出輸出是否為最新的。 相反地，`GenerateResource` 工作會追蹤 .resx 檔案中的連結，以及檢查所連結檔案的時間戳記。 這表示，您不應該只在包含 `GenerateResource` 工作的目標上使用 `Inputs` 與 `Outputs` 屬性，因為這可能會略過原本應該要執行的工作。  
   
- 除了上面所列的參數，此工作會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而其本身是繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
  當使用 MSBuild 4.0 處理以 .NET 3.5 為目標的專案時，可能會因為 x86 資源而建置失敗。 若要解決這個問題，您可以將目標建置為 AnyCPU 組件。  
   

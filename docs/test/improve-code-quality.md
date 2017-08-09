@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: fbc3a182d2c3dbceaa17685f649ea73a3e73ed85
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="improve-code-quality"></a>改善程式碼品質
@@ -54,8 +54,8 @@ ms.lasthandoff: 05/13/2017
 |[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|程式碼度量資訊是一組軟體測量數據，可以讓開發人員更深入了解他們正在開發的程式碼。 度量資訊包括函式和類別的可維護性指數、函式的循環複雜度、類別的繼承深度，以及類別間的結合程度。|  
   
 ## <a name="related-scenarios"></a>相關案例  
- [採用 Visual Studio 和 Team Foundation Server 方便進行應用程式生命週期管理](assetId:///7ae9182f-4762-4bd3-b238-39ce987932e5)  
- 如果您不熟悉 Visual Studio Team Foundation，可以深入了解如何在小組開發環境中使用它來改善生產力，並且降低應用程式開發伴隨的風險。  
+ [Team Services 與 TFS 的 DevOps 概觀](https://www.visualstudio.com/docs/devops-alm-overview)  
+ 如果您不熟悉 Visual Studio Team Foundation 和 Visual Studio Team Services,，可以深入了解如何在小組開發環境中使用它來改善生產力，並且降低應用程式開發伴隨的風險。  
   
  [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)  
  您可以使用 [!INCLUDE[vsPreExt](../test/includes/vspreext_md.md)] 管理設計軟體所面臨的挑戰和複雜度。 您可以使用 [!INCLUDE[vsPreShort](../test/includes/vspreshort_md.md)] 以視覺化方式，依據現有的內容和未來希望擁有的內容來建立應用程式模型。 您還可以建立和維護圖表，在應用程式的邏輯模型對應到實體模型時協助您將模型視覺化；如此可讓您變更、驗證和分析「正在設計」的軟體。  

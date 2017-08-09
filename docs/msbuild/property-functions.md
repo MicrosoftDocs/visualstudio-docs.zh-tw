@@ -29,10 +29,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: f351952a256679ec2d6c9dc2daa5288ca7214ad0
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
+ms.openlocfilehash: c52ed7c7e6de33d10d2a653a1072766aa9fb8023
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/31/2017
 
 ---
 # <a name="property-functions"></a>屬性函式
@@ -98,6 +99,10 @@ ms.lasthandoff: 03/01/2017
 -   System.IO.Path  
 
 -   System.Math  
+
+-   System.Runtime.InteropServices.OSPlatform
+
+-   System.Runtime.InteropServices.RuntimeInformation
 
 -   System.UInt16  
 
@@ -195,13 +200,22 @@ ms.lasthandoff: 03/01/2017
 |int BitwiseAnd(int first, int second)|對第一和第二個整數 (第一 & 第二) 執行位元 `AND`。|  
 |int BitwiseXor(int first, int second)|對第一和第二個整數 (第一 ^ 第二) 執行位元 `XOR`。|  
 |int BitwiseNot(int first)|執行位元 `NOT` (~第一)。|  
+|bool IsOsPlatform(string platformString)|指定目前的作業系統平台是否為 `platformString`。 `platformString` 必須是 `OSPlatform` 的成員。|
+|bool IsOSUnixLike|如果目前的作業系統是 UNIX 系統，則為 true。|
+|string NormalizePath(params string[] path)|取得所提供路徑的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元。|
+|string NormalizeDirectory(params string[] path)|取得所提供目錄的規範化完整路徑，並確保它包含目前作業系統的正確目錄分隔符號字元，且後面有斜線。|
+|string EnsureTrailingSlash(string path)|如果指定的路徑後面沒有斜線，請新增一個。 如果此路徑是空字串，請不要修改它。|
+|string GetPathOfFileAbove(string file, string startingDirectory)|根據目前的組建檔案位置搜尋檔案，或如果指定，則根據 `startingDirectory` 搜尋。|
+|GetDirectoryNameOfFileAbove(string startingDirectory, string fileName)|在指定的目錄中，或在該目錄上方目錄結構中的位置中找到檔案。|
+|string MakeRelative(string basePath, string path)|讓 `path` 成為 `basePath` 的相對項。 `basePath` 必須是絕對目錄。 如果 `path` 不能成為相對的，它就會被逐字傳回。 類似於 `Uri.MakeRelativeUri`。|
+|string ValueOrDefault(string conditionValue, string defaultValue)|只有當參數 'conditionValue' 為空時，才傳回參數 'defaultValue' 中的字串；否則，傳回值 conditionValue。|
 
 ##  <a name="nested-property-functions"></a>巢狀屬性函式  
  您可以組合屬性函式，以構成較複雜的函式，如下列範例所示。  
 
  `$([MSBuild]::BitwiseAnd(32, $([System.IO.File]::GetAttributes(tempFile))))`  
 
- 此範例會傳回路徑 `tempFile` 所提供檔案之 <xref:System.IO.FileAttributes>`Archive` 位元 (32 或 0) 的值。 請注意，列舉資料值無法依屬性函式中的名稱顯示。 必須改為使用數值 (32)。  
+ 此範例會傳回路徑 <xref:System.IO.FileAttributes> 所提供檔案之 `Archive``tempFile` 位元 (32 或 0) 的值。 請注意，列舉資料值無法依屬性函式中的名稱顯示。 必須改為使用數值 (32)。  
 
  中繼資料也可能會出現在巢狀屬性函式中。 如需詳細資訊，請參閱[批次處理](../msbuild/msbuild-batching.md)。  
 

@@ -33,10 +33,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: a00b80092a44190d626b93b0ecc5689bafd1a4e3
-ms.lasthandoff: 02/22/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: 8b60481a9895e818773273cecbf89212f557d620
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
@@ -84,7 +85,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  在應用程式類型清單中，按一下 [ **類別庫**]。  
   
-5.  在 [名稱] 方塊中，輸入 `Bank` 並按一下 [確定]。  
+5.  在 [ **名稱** ] 方塊中，輸入 `Bank` ]，然後按一下 [ **確定**。  
   
     > [!NOTE]
     >  如果已經有專案使用 "Bank" 這個名稱，就請為專案選擇另一個名稱。  
@@ -124,7 +125,7 @@ public void Debit(double amount)
 ```  
   
 ##  <a name="BKMK_Create_a_unit_test_project"></a> 建立單元測試專案  
- **必要條件**：遵循[準備逐步解說](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)程序中的步驟。  
+ **必要條件**：遵循 [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough)程序中的步驟。  
   
 #### <a name="to-create-a-unit-test-project"></a>建立單元測試專案  
   
@@ -171,7 +172,7 @@ namespace BankTests
 }  
 ```  
   
- **將 using 陳述式加入至受測試專案**  
+ **將 using 陳述式加入至受測專案**  
   
  我們也可以將 using 陳述式加入至類別，讓我們呼叫受測專案，而不需使用完整名稱。 在類別檔案的頂端，加入：  
   
@@ -193,7 +194,7 @@ using BankAccountNS;
   
  藉由分析受測方法，我們判斷至少有三種需要檢查的行為：  
   
-1.  如果付款金額大於餘額，該方法會擲回 [ArgumentOutOfRangeException](assetId:///ArgumentOutOfRangeException?qualifyHint=False&autoUpgrade=True) 。  
+1.  如果付款金額大於餘額，該方法會擲回 <xref:System.ArgumentOutOfRangeException> 。  
   
 2.  如果付款金額小於零，也會擲回 `ArgumentOutOfRangeException` 。  
   
@@ -227,7 +228,7 @@ using BankAccountNS;
     }  
     ```  
   
- 此方法相當簡單。 我們設定一開始就有餘額的新 `BankAccount` 物件，然後提領有效的金額。 我們針對 Managed 程式碼 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 方法使用 Microsoft 單元測試架構，以驗證最終餘額如我們所預期。  
+ 此方法相當簡單。 我們設定一開始就有餘額的新 `BankAccount` 物件，然後提領有效的金額。 我們針對 Managed 程式碼 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> 方法使用 Microsoft 單元測試架構，以確認結尾餘額如預期。  
   
 ###  <a name="BKMK_Test_method_requirements"></a> 測試方法需求  
  測試方法必須符合下列需求：  
@@ -253,11 +254,11 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 修正程式碼並重新執行測試  
  **分析測試結果**  
   
- 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*>**參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
+ 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*> **參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
   
  重新對 Debit 程式碼執行檢查後發現了 Bug，單元測試現在已成功了。 提領的金額應該從帳戶餘額減去，但卻被加入至帳戶餘額。  
   
- **修正錯誤 (bug)**  
+ **修正 Bug**  
   
  若要更正這個錯誤，請將這一行  
   
@@ -309,7 +310,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
 ```  
   
- 我們使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 屬性來判斷提示已擲回適當的例外狀況。 除非擲回 `ArgumentOutOfRangeException` ，否則此屬性會造成測試失敗。 使用正數和負數的 `debitAmount` 值執行測試，然後暫時修改受測試方法，以在金額小於零時擲回泛型 <xref:System.ApplicationException>，表示測試正確運作。 若要測試提領金額大於餘額的案例，我們所要做的就是：  
+ 我們使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute> 屬性來判斷提示已擲回正確的例外狀況。 除非擲回 `ArgumentOutOfRangeException` ，否則此屬性會造成測試失敗。 使用正數和負數的 `debitAmount` 值執行測試，然後暫時修改受測方法以在金額小於零時擲回泛型 <xref:System.ApplicationException> ，表示測試正確運作。 若要測試提領金額大於餘額的案例，我們所要做的就是：  
   
 1.  建立名為 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange`的新測試方法。  
   
@@ -331,9 +332,9 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
 throw new ArgumentOutOfRangeException("amount");  
 ```  
   
- 從搜尋 MSDN Library 中，我們發現有會報告更豐富資訊的建構函式存在。 <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` 包含引數名稱、引數值和使用者定義的訊息。 我們可以重構受測方法以使用這個建構函式。 更好的是，我們可以使用可公開取得的類型成員來指定錯誤。  
+ 從搜尋 MSDN Library 中，我們發現有會報告更豐富資訊的建構函式存在。 <xref:System.ArgumentOutOfRangeException.%23ctor%2A>`(String, Object, String)` 會包含引數的名稱、引數值和使用者定義的訊息。 我們可以重構受測方法以使用這個建構函式。 更好的是，我們可以使用可公開取得的類型成員來指定錯誤。  
   
- **重構受測試的程式碼**  
+ **重構受測程式碼**  
   
  我們先在類別範圍定義錯誤訊息的兩個常數：  
   
@@ -368,7 +369,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
 -   判斷提示訊息 (建構函式的第三個參數) 包含 `DebitAmountExceedsBalanceMessage` 類別中所定義的 `BankAccount` 。  
   
- Microsoft 單元測試架構中的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法可讓我們驗證第二個選項，而不需要第一個選項所需的計算。  
+ Microsoft 單元測試架構的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert.Contains%2A?displayProperty=fullName> 方法可讓我們驗證第二個選項，而不需要進行第一個選項所必要的計算。  
   
  再來，我們嘗試修訂 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` ，看起來可能會像這樣：  
   
@@ -404,7 +405,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
 3.  如果 `debitAmount` 值有效 (也就是說，小於餘額但大於零)，則不會攔截到任何例外狀況，因此也永遠不會攔截判斷提示。 測試方法就會成功。 這樣就不好了，因為我們要的是測試方法在未擲回例外狀況時失敗。  
   
- 第三個事實是我們的測試方法有 Bug。 為了嘗試解決此問題，我們將 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示新增到測試方法的結尾，以處理沒有擲回任何例外狀況的情況。  
+ 第三個事實是我們的測試方法有 Bug。 若要嘗試解決這個問題，我們在測試方法的結尾加入了 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 判斷提示，以處理未擲回例外狀況的情況。  
   
  但是重新測試後顯示，測試現在會因為攔截到正確的例外狀況而失敗。 Catch 陳述式重設了例外狀況，且方法會繼續執行，而在新的判斷提示處失敗。 爲了解決新的問題，我們在 `return` 之後加入 `StringAssert`陳述式。 重新測試後確認我們已修正問題。 我們的 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 最終版本看起來像下面這樣：  
   

@@ -1,19 +1,39 @@
 ---
 title: "如何：使用並行視覺化檢視標記 SDK | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 19a45032-f8a7-4137-890e-2ceeec938b8d
 caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
+ms.openlocfilehash: d705cd8146a0ccb43be54e2d825387699e157379
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/03/2017
+
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。  
@@ -52,7 +72,7 @@ caps.handback.revision: 9
   
 4.  在功能表列上選擇 [分析]、[並行視覺化檢視]、[從目前專案開始]，以執行應用程式並顯示 [並行視覺化檢視]。 下圖顯示 [並行視覺化檢視] 中的三個範圍和三個標記。  
   
-     ![包含 3 個標記和警示的 [並行視覺化檢視]](~/profiling/media/cvmarkersnative.png "CvMarkersNative")  
+     ![包含 3 個標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersnative.png "CvMarkersNative")  
   
 5.  透過呼叫 `marker_series`的建構函式以加入建立其他自訂標記系列的程式碼，而該建構函式接受標記系列的字串名稱。  
   
@@ -93,7 +113,7 @@ caps.handback.revision: 9
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
     ```  
   
-3.  加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 透過呼叫靜態的 [EnterSpan](assetId:///EnterSpan?qualifyHint=False&autoUpgrade=True) 方法來建立 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> 物件。 若要寫入預設系列，您可以使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 類別的靜態寫入方法。  
+3.  加入在預設標記系列中建立三個範圍的程式碼，並在每個範圍各寫入一個旗標、訊息和警示。 您可以藉由呼叫靜態 `EnterSpan` 方法建立 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> 物件。 若要寫入預設系列，請使用 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers> 類別的靜態寫入方法。  
   
     ```VB  
   
@@ -138,7 +158,7 @@ caps.handback.revision: 9
   
      ![包含標記和警示的 [並行視覺化檢視]](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")  
   
-5.  透過使用靜態的 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法，加入程式碼以建立客戶標記系列。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 類別包含建立範圍和寫入旗標、訊息和警示的方法。  
+5.  透過使用靜態 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A> 方法，加入建立客戶標記系列的程式碼。 <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> 類別包含建立範圍及撰寫旗標、訊息和警示的方法。  
   
     ```VB  
   
@@ -178,9 +198,4 @@ caps.handback.revision: 9
   
 ## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

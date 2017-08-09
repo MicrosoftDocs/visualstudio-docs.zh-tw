@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b699132bf1a31d3ef9dc3ba5af3f99c22890c632
+ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
+ms.openlocfilehash: 0a939044b9806236cf55333c30bce24ae0fdb28a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -39,10 +39,9 @@ ms.lasthandoff: 05/13/2017
 當您開發應用程式時，Live Unit Testing 會在背景自動執行任何受影響的單元測試，並立即在 Visual Studio IDE 中呈現即時的結果和程式碼涵蓋範圍。 當您修改程式碼時，Live Unit Testing 會針對您的變更如何影響現有測試，以及您所增加的新程式碼是否受到一或多個現有測試所涵蓋提供反饋。 這可在您進行錯誤修正或新增功能時，委婉地提醒您撰寫單元測試。
 
 > [!NOTE]
-> Live Unit Testing 適用於以 Visual Studio 2017 Enterprise Edition 中的 .NET Framework 為目標的 C# 和 Visual Basic 專案。 目前，它無法與 .NET Core 搭配使用。
+> Live Unit Testing 適用於以 Visual Studio 2017 Enterprise Edition 中的 .NET Core 或 .NET Framework 為目標的 C# 和 Visual Basic 專案。
 
 ## <a name="supported-test-frameworks"></a>支援的測試架構
-
 Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其配接器與架構所支援的最小版本也列於表格中。 單元測試架構全都可從 NuGet.org 取得。
  
 <table> 
@@ -63,8 +62,8 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 </tr>
 <tr>
    <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
+   <td>MSTest.TestAdapter 1.1.11</td>
+   <td>MSTest.TestFramework 1.1.11</td>
 </tr>
 </table>
 
@@ -72,11 +71,11 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 在某些情況下，您可能需要明確地還原方案中的專案所參考的 NuGet 封裝，才能使 Live Unit Testing 運作。 若要執行此動作，您可以在啟用 Living Unit Testing 之前，明確地建置方案 (從最上層的 Visual Studio 功能表中依序選取 [建置] 和 [重建方案])，或是在方案中還原封裝 (以滑鼠右鍵按一下方案，然後選取 [還原 NuGet 封裝])。 
 
-#    <a name="configuring-live-unit-testing"></a>設定 Live Unit Testing
+#   <a name="configuring-live-unit-testing"></a>設定 Live Unit Testing
 
 您可以設定 Live Unit Testing，方法是從最上層的 Visual Studio 功能表中依序選取 [工具] 和 [選項]，然後在 [選項] 對話方塊的左窗格中選取 [Live Unit Testing]。 下圖顯示對話方塊中提供的 Live Unit Testing 組態選項。
 
-  ![Image](~/test/media/lut-options.png)
+  ![Image](./media/lut-options.png)
 
 可設定的選項包括：
 
@@ -101,25 +100,25 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 - **停止**：可完全停止 Live Unit Testing。 Live Unit Testing 會捨棄所有已收集的資料。
 - **重新啟動**：相當於選取 [Live Unit Testing] 功能表中的 [停止]，並接著選取 [啟動]。
 
-##    <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>在輸入期間於編輯器中檢視涵蓋範圍的視覺效果
+##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>在輸入期間於編輯器中檢視涵蓋範圍的視覺效果
 
 一旦啟用之後，Live Unit Testing 就會更新 Visual Studio 編輯器中的每個程式碼行，以顯示單元測試是否會涵蓋您撰寫的程式碼，以及涵蓋該程式碼的測試是否順利通過。  下圖顯示顯示具有通過及失敗測試的程式碼行，以及不受測試涵蓋的程式碼行。 僅由通過的測試所涵蓋的程式碼行會以綠色的 "✓" 裝飾，由一或多個失敗測試所涵蓋的程式碼行會以紅色 "🞩" 裝飾，而沒有受任何測試涵蓋的程式碼行則會以藍色 "" 裝飾。
 
-  ![Image](~/ide/media/lut-codewindow.png)
+  ![Image](./media/lut-codewindow.png)
 
 當您在程式碼編輯器中修改程式碼時，系統會立即更新 Live Unit Testing 涵蓋範圍的視覺效果。 處理編輯時，視覺效果會變更來表示資料不是最新狀態，並會在通過、失敗及未涵蓋符號下方新增圓形計時器圖案，如下圖所示。
 
-  ![Image](~/test/media/lut-codeupdating.png)
+  ![Image](./media/lut-codeupdating.png)
  
 ## <a name="getting-information-on-successful-or-failed-tests"></a>取得成功或失敗測試的相關資訊
 
 藉由將滑鼠暫留在程式碼視窗中的成功或失敗符號上方，您就能看到已針對該行做出多少測試。 如果您按一下該符號，就能看見個別測試的狀態，如下圖所示。
  
-  ![Image](~/test/media/lut-failedinfo.png) 
+  ![Image](./media/lut-failedinfo.png) 
 
 當您將滑鼠暫留在工具提示中的失敗測試上方時，工具提示會展開以提供有關失敗的其他資訊，如下圖所示。 如果您按一下工具提示中的失敗測試，就能直接瀏覽至該測試。
 
-  ![Image](~/test/media/lut-failedmsg.png) 
+  ![Image](./media/lut-failedmsg.png) 
 
 ## <a name="diagnosing-and-correcting-test-failures"></a>診斷並修正測試失敗
 
@@ -143,8 +142,8 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 
 例如，如果您的方案具有數百個測試專案，則您可以選取一組目標測試專案來參與 Live Unit Testing。 若要在單元測試中選取個別專案，請在啟動 Live Unit Testing 之後執行下列動作：
 
-1.    以滑鼠右鍵按一下 [方案總管] 中的方案，然後依序選擇 [即時測試] 和 [排除] 來排除整個方案。
-2.    以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試] 和 [包含]。
+1.  以滑鼠右鍵按一下 [方案總管] 中的方案，然後依序選擇 [即時測試] 和 [排除] 來排除整個方案。
+2.  以滑鼠右鍵按一下您想要包含於測試中的每個測試專案，然後依序選擇 [即時測試] 和 [包含]。
  
 您可以使用程式碼編輯器視窗來包含或排除個別的測試方法。 以滑鼠右鍵按一下程式碼編輯器視窗中的測試方法特徵標記，然後依序選取 [即時測試] 和 [包含]，或是 [即時測試] 和 [排除]。 
 
