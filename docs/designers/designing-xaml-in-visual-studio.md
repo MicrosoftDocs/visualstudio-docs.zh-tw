@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中設計 XAML | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,31 +13,23 @@ caps.latest.revision: 4
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e832941dd00fa81bea1566f17504fe7e27c41a48
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 535cd67469897e84a749e3e1c58c2695ddddd006
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
-Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 XAML 型 Windows 桌面、Web、 [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)和 [Windows 市集](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) 應用程式建立更吸引人的使用者介面和豐富的媒體體驗。 兩者共用一組常用的設計和工具視窗以及 XAML 編輯器，但是 Blend for Visual Studio 提供更進階工作的其他設計工具，例如動畫和行為。  
+
+Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為各種應用程式類型建立更吸引人的使用者介面和豐富的媒體體驗。 兩種工具都具有一組共同的功能，包括視覺 XAML 編輯器，但是 Blend for Visual Studio 提供更進階工作的其他設計工具，例如動畫和行為。  
   
+設計應用程式的程序取決於您選擇的工具和目標平台。 目前的這個主題會比較 Visual Studio 和 Blend for Visual Studio 中的 XAML 設計工具。 如需使用工具的更詳細逐步解說，請參閱下列主題：
+
+- [在 Visual Studio 中使用 XAML 設計工具建立 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
+- [使用 Blend for Visual Studio 建立 UI](creating-a-ui-by-using-blend-for-visual-studio.md)
+- [使用 Windows Presentation Foundation 建立新式桌面應用程式](create-modern-desktop-applications-with-windows-presentation-foundation.md)
+
 ## <a name="choosing-the-right-tool"></a>選擇正確的工具  
  您多半是取決於您的技能組合選擇設計工具。 如果您偏向於程式碼導向，可以在 Visual Studio 中撰寫 XAML 程式碼來完成更進階的設計工作。 如果您偏向於設計導向，Blend for Visual Studio 可讓您無須撰寫程式碼也能執行進階的工作。  
   
@@ -48,7 +40,7 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 X
   
 -   **一致的使用者介面：** 您可以在熟悉的 Visual Studio 使用者介面環境中設計應用程式，讓在 IDE 之間切換成為更愉快且更有生產力的經驗。 Blend for Visual Studio 會使用 Visual Studio 暗色調佈景主題，藉由改善您的內容與使用者介面之間的對比，協助您專注於正在設計的內容。 請參閱[使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)。  
   
-     ![Blend for Visual Studio IDE](~/designers/media/blendide.png "BlendIDE")  
+     ![Blend for Visual Studio IDE](../designers/media/blendide.png "BlendIDE")  
   
 -   **XAML IntelliSense：** 兩者的 IDE 都支援您預期之所有來自 IntelliSense 的通用功能，包括陳述式完成、支援一般編輯器作業，像是註解和格式化程式碼，以及巡覽至資源、繫結和程式碼。  
   
@@ -56,9 +48,9 @@ Visual Studio 和 Blend for Visual Studio 都提供視覺化工具，用於為 X
   
 -   **檔案重新載入經驗：** 您可以在 Blend for Visual Studio 或 Visual Studio 中編輯 XAML 檔案，當您在已編輯的檔案之間切換時，會讓它們自動重新載入。 若要降低工作流程中斷，您現在可以在 [檔案重新載入] 對話方塊中設定您的檔案重新載入喜好。  
   
-     ![檔案重新載入體驗](~/designers/media/blendfilereload.png "BlendFileReload")  
+     ![檔案重新載入體驗](../designers/media/blendfilereload.png "BlendFileReload")  
   
--   **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱 [Visual Studio 中的自訂開發設定](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+-   **同步處理的配置和設定：** 自訂配置可讓您儲存並套用工具視窗配置的自訂項目。 當您使用相同的 Microsoft 帳戶登入時，Visual Studio 會跨電腦同步處理 Visual Studio 和 Blend for Visual Studio 的這些自訂項目和偏好設定。 請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
 -   **常見的 [方案總管]：** [方案總管] 會提供您的專案和其檔案的組織化檢視，而且也已準備好存取與其相關聯的命令。 使用 [方案總管]，使用大型企業專案更加輕鬆。 請參閱[解決方案和專案](../ide/solutions-and-projects-in-visual-studio.md)。  
   

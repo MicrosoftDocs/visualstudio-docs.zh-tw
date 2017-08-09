@@ -29,14 +29,14 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 44110390bcddc67d86dcfcc81c2d5961e346ccf7
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: a8d9473804b42169b5b33795b023832b753837d0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
-Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](https://msdn.microsoft.com/library/windows/apps/windows.web.http.aspx)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。  
+Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。  
   
  網路工具僅支援 Windows 通用平台應用程式。 目前不支援其他平台。  
   
@@ -58,7 +58,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
   
  報表視窗看起來應該類似這樣：  
   
- ![[網路] 視窗](~/profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
+ ![[網路] 視窗](../profiling/media/network_fullwindow.png "NETWORK_FullWindow")  
   
 ## <a name="analyzing-data"></a>分析資料  
  無論您的應用程式正在執行，或甚至在關閉之後，透過選取任何顯示在摘要檢視上的網路作業，即可分析擷取的 HTTP 流量。  
@@ -91,6 +91,5 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
 3.  回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
 ## <a name="see-also"></a>另請參閱  
- [使用或不使用偵錯工具執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)
- [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022) (Visual Studio 部落格︰Visual Studio 的網路檢查簡介)  
- [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Channel 9 影片︰VS 診斷工具 - 新的網路分析工具)
+ [使用或不使用偵錯工具來執行程式碼剖析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md) [Visual Studio blog: Introducing Visual Studio's network inspector](http://go.microsoft.com/fwlink/?LinkId=535022)  (Visual Studio 部落格︰Visual Studio 的網路檢查簡介)  
+ [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Channel 9 影片︰VS 診斷工具 - 新的網路分析工具) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)

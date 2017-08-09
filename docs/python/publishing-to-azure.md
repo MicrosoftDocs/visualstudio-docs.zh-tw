@@ -1,12 +1,13 @@
 ---
 title: "從 Visual Studio 將 Python 應用程式發佈至 Azure App Service | Microsoft Docs"
 ms.custom: 
-ms.date: 3/7/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 85031f91-3a65-463b-a678-1e69f1b843e6
@@ -14,24 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 0163d1279b41ef8fecf9ca774cd3e67f0f47f1b1
-ms.lasthandoff: 03/07/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9bce1901cc86eea29638d4a715c18c6367fa6dc6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -51,31 +39,31 @@ ms.lasthandoff: 03/07/2017
 
 發佈至 Azure 將會需要 Azure 訂用帳戶，您也可以使用暫時網站。
 
-針對訂用帳戶，請從[免費的完整 Azure 帳戶](https://azure.microsoft.com/en-us/free/)開始，其中包含適用於 Azure 服務的贈送點數。 此外，請考慮註冊 [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/)，您一整年都能在每個月取得 $25 美元的點數。
+針對訂用帳戶，請從[免費的完整 Azure 帳戶](https://azure.microsoft.com/en-us/free/)開始，其中包含適用於 Azure 服務的贈送點數。 此外，請考慮註冊 [Visual Studio Dev Essentials](https://azure.microsoft.com/en-us/pricing/member-offers/vs-dev-essentials/)，您一整年都能在每個月取得美金 $25 的點數。
 
 在無需 Azure 訂用帳戶的情況下，於 Azure App Service 中建立暫時網站：
 
 1. 開啟瀏覽器並移至 [try.azurewebsites.net](https://try.azurewebsites.net)。
 1. 選取 [Web 應用程式] 作為應用程式類型，然後選取 [下一步]。
 1. 選取 [空白網站] 作為範本，然後選取 [建立 >]。
-1. 以您偏好的社交登入進行登入，在經過一小段時間之後，便可以透過顯示的 URL 存取您的網站。
-1. 選取 [下載發行設定檔] 並儲存 `.publishsettings` 檔案，您將會在稍後使用此檔案。
+1. 以您選擇的社交登入進行登入，在經過一小段時間之後，就可以透過顯示的 URL 存取您的網站。
+1. 選取 [下載發行設定檔] 並儲存 `.publishsettings` 檔案，稍後您會使用此檔案。
 
 ## <a name="create-and-test-the-initial-project"></a>建立並測試初始專案
 
 1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案]，搜尋 "Bottle"，選取 [Bottle Web 專案]，然後按一下 [確定]。    
 
-1. 當系統提示您安裝外部套件時，選取 [安裝至虛擬環境]。 請注意，對話方塊底部的 [顯示必要套件] 控制項將能顯示會安裝的套件：
+1. 當系統提示您安裝外部套件時，選取 [安裝至虛擬環境]。 請注意，對話方塊底部的 [顯示必要套件] 控制項會顯示將安裝的套件：
 
-  ![安裝必要套件](~/python/media/tutorials-common-external-packages.png)
+  ![安裝必要套件](media/tutorials-common-external-packages.png)
 
 1. 針對虛擬環境選取您偏好的基礎解譯器 (例如 **Python 2.7** 或 **Python 3.4**)，然後按一下 [建立]：
 
-  ![在建立專案時新增虛擬環境](~/python/media/tutorials-common-add-virtual-environment.png)
+  ![在建立專案時新增虛擬環境](media/tutorials-common-add-virtual-environment.png)
 
-1. 當專案建立好之後，透過選取 [偵錯] > [開始偵錯] 或按 F5，在本機測試專案。 根據預設，應用程式會使用無需任何設定的記憶體內部存放庫。 所有資料都會在網頁伺服器停止時遺失。
+1. 當專案建立好之後，透過選取 [偵錯] > [開始偵錯] 或按 F5，在本機測試專案。 根據預設，應用程式會使用不需要進行任何設定的記憶體內部存放庫。 所有資料都會在網頁伺服器停止時遺失。
 
-1. 在應用程式內四處點擊，以查看其運作方式。
+1. 在應用程式內四處點擊，以測試其作業。
 
 1. 當您完成時，請停止偵錯工具 ([偵錯] > [停止偵錯]，或 Shift-F5)。
 
@@ -85,7 +73,7 @@ ms.lasthandoff: 03/07/2017
 
 1. 在 [發行] 對話方塊中，選取 [Microsoft Azure App Service]：
 
-  ![發佈至 Azure 步驟 1](~/python/media/tutorials-common-publish-1.png)
+  ![發佈至 Azure 步驟 1](media/tutorials-common-publish-1.png)
 
 1. 選取目標：
 
@@ -94,7 +82,7 @@ ms.lasthandoff: 03/07/2017
 
 1. App Service 詳細資料會出現在 [發行] 對話方塊的 [連線] 索引標籤中，如下所示。
 
-  ![發佈至 Azure 步驟 2](~/python/media/tutorials-common-publish-2.png)
+  ![發佈至 Azure 步驟 2](media/tutorials-common-publish-2.png)
 
 1. 視需要選取 [下一步 >] 以檢閱其他設定。 如果您計畫[在 Azure 上對 Python 程式碼進行遠端偵錯](debugging-azure-remote.md)，您必須將 [組態] 設定為 [偵錯]
-1. 選取 [發行]。 當您的應用程式部署至 Azure 之後，您的預設瀏覽器便會開啟並顯示該網站。 
+1. 選取 [發行]。 將您的應用程式部署至 Azure 之後，就會在該網站上開啟您的預設瀏覽器。 

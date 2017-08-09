@@ -13,26 +13,11 @@ caps.latest.revision: 7
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7716a0e9249c67760ae7b31160dcae89b77b9ca7
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b42e50dcfc4820b750c04085f1e881ee25f786f9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
@@ -41,7 +26,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Requirements"></a> 必要條件  
  您需要下列項目才能完成本逐步解說：  
   
--   Visual Studio 2015 – 支援 WPF 開發的任何版本。  
+-   Visual Studio 2017 或支援 WPF 開發的任何版本。  
   
 -   使用中的 Microsoft Azure 帳戶。  
   
@@ -115,7 +100,7 @@ ms.lasthandoff: 05/13/2017
   
      這個 XAML 程式碼會建立可重複使用的版面配置，其中含有數字、標題和描述欄位的預留位置。 在執行階段時，可將預留位置取代為文字，如下圖所示。  
   
-     ![QuickStartTask 使用者控制項](~/designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![QuickStartTask 使用者控制項](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
 6.  在 **方案總管**中，展開 [QuickStartTask.xaml]  節點並開啟 **QuickStartTask.xaml.cs** 或 **QuickStartTask.xaml.vb** 檔案。  
   
@@ -302,7 +287,7 @@ ms.lasthandoff: 05/13/2017
   
      此時，您的設計看起來應該像下圖：  
   
-     ![設計工具中的 MainWindow](~/designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![設計工具中的 MainWindow](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
     >  遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單]  中看到一些錯誤。 別擔心，一旦完成其餘的程序後，這些錯誤就會消失。  
@@ -572,7 +557,7 @@ ms.lasthandoff: 05/13/2017
   
      請注意，[查詢及更新資料]  清單會加入兩個項目，如下圖所示。  
   
-     ![待辦項目會加入清單。](~/designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![待辦項目會加入清單。](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
 4.  選取清單中 **Do something else** 的項目核取方塊。  
   
@@ -581,8 +566,8 @@ ms.lasthandoff: 05/13/2017
 ## <a name="next-steps"></a>後續步驟  
  您已經完成一個含 Azure 後端的 WPF 桌面應用程式範例，且相當簡單。 當然，實際應用程式很可能更複雜，但仍適用相同的基本概念。 請參閱 [.NET Framework 中的 WPF](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)。  
   
- 您可以加入色彩、圖案、圖形甚至動畫，讓使用者介面更吸引人。 請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。  
-  
+ 您可以加入色彩、圖案、圖形甚至動畫，讓使用者介面更吸引人。 請參閱[在 Visual Studio 中使用 XAML 設計工具建立 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) 和[使用 Blend for Visual Studio 建立 UI](creating-a-ui-by-using-blend-for-visual-studio.md)。 如需工具之間的比較，請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。  
+
  您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](http://azure.microsoft.com/en-us/services/app-service/mobile/)。  
   
 ## <a name="see-also"></a>另請參閱  

@@ -1,12 +1,13 @@
 ---
 title: "使用 Visual Studio R 工具編輯程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 4/28/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: e8b42484d471d4deac0eabcd4c55e09297d0873f
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: 261cced8583b751d74701a8903a10a4584928940
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
@@ -57,15 +44,15 @@ Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體�
 
 除了將程式碼的不同部分，例如字串、註解和關鍵字等著色，RTVS 也會醒目提示並啟用註解中的連結︰
 
-![R 程式碼的語法著色](~/rtvs/media/editing-syntax-colors.png)
+![R 程式碼的語法著色](media/editing-syntax-colors.png)
 
 若要自訂字型和某些醒目提示色彩，請選取 [工具] > [選項] 命令、巡覽至 [環境] > [字型和色彩]，然後變更 [顯示項目︰] 方塊中的 R 相關項目設定︰
 
-![R 程式碼的字型和色彩選項](~/rtvs/media/editing-syntax-colors-options.png)
+![R 程式碼的字型和色彩選項](media/editing-syntax-colors-options.png)
 
 Visual Studio 也會在編輯器中的語法錯誤加上底線︰
 
-![R 程式碼中的語法錯誤醒目提示](~/rtvs/media/editing-syntax-error.png)
+![R 程式碼中的語法錯誤醒目提示](media/editing-syntax-error.png)
 
 若要變更此行為，請參閱[編輯器選項](#editor-options)下的 [進階] > [語法檢查] 設定。
 
@@ -73,37 +60,37 @@ Visual Studio 也會在編輯器中的語法錯誤加上底線︰
 
 在您輸入程式碼時，RTVS 提供自動完成，如 [IntelliSense](code-intellisense.md) 頁面上所述。 它也會自動設定格式，例如大括弧和括弧的完成︰ 
 
-![內嵌格式化的動畫](~/rtvs/media/editing-inline-formatting.gif)
+![內嵌格式化的動畫](media/editing-inline-formatting.gif)
 
 輸入有許多參數的函式呼叫時，您經常會想要對齊參數，讓程式碼更容易閱讀。 RTVS 會記住您為參數設定的縮排，並針對接下來的數行自動套用該縮排︰
 
-![自動縮排的動畫](~/rtvs/media/editing-auto-indentation.gif)
+![自動縮排的動畫](media/editing-auto-indentation.gif)
 
-若要變更此行為，請參閱底下的 [定位點] 群組[編輯器選項](#editor-options)。
+若要變更此行為，請參閱 [定位點] 群組的[編輯器選項](#editor-options)。
 
 可摺疊程式碼區域可讓您在編輯器中暫時隱藏程式碼的一部分。 Visual Studio 會為您自動建立不同的多行陳述式區域，除非 [進階] > [大綱] > [程式碼大綱] 選項設定為 Off。
 
 若要建立自己的區域，請將想要的程式碼圍上以 `---` 為結尾的註解。 程式碼左邊的小型 +/- 控制項，可讓您展開和摺疊區域︰
 
-![使用註解建立可摺疊區域](~/rtvs/media/editing-collapsible-regions.gif)
+![使用註解建立可摺疊區域](media/editing-collapsible-regions.gif)
  
 根據預設，Visual Studio 會在您按 Tab 鍵時插入空格。 您可以再次變更此行為，如[選項、文字編輯器、定位點](../ide/reference/options-text-editor-all-languages.md)所述。
 
 ## <a name="code-navigation"></a>程式碼巡覽
 
-程式碼巡覽可讓您快速存取 R 程式和其程式庫的原始程式碼。 這些巡覽功能可讓您維持工作的流程，而不需要花時間搜尋並以手動方式巡覽至感興趣的程式碼。
+程式碼巡覽可讓您快速存取 R 程式和其程式庫的原始程式碼。 這些功能會讓您停留在工作流程中，不必以手動方式搜尋程式碼。
 
 [移至定義] 會快速跳至函式定義，或彈出內嵌迷你編輯器來讀取程式庫函式的原始程式碼。 只要以滑鼠右鍵按一下感興趣的函式，然後選取 [移至定義]，或將游標放在函式中，並按 F12 鍵。
 
-這會開啟新的編輯器視窗，其中包含函式的原始程式碼，並將游標方便地放在函式定義的開頭。
+此命令會開啟新的編輯器視窗，包含此函式的原始程式碼。 資料指標為方便您將會位於函式定義的開頭。
 
 從快顯功能表或 Alt + F12 叫用的 [查看定義]，會插入唯讀、可捲動區域，其中在函式呼叫下包含函式的原始程式碼︰
 
-![查看定義的動畫](~/rtvs/media/editing-peek-definition.gif)
+![查看定義的動畫](media/editing-peek-definition.gif)
 
 ## <a name="sending-code-to-the-interactive-window"></a>將程式碼傳送至互動式視窗
 
-許多開發人員喜歡在編輯器中撰寫程式碼，然後將該程式碼傳送到[互動式視窗](interactive-repl.md)來立即測試 (也稱為讀取-評估-列印-重複，或稱 REPL)。 做法是在 R 編輯器中針對目前這一行程式碼按 Ctrl + Enter 鍵，這樣會將游標放在下一行。 使用 Ctrl + Enter 鍵，您便可以實際上從編輯器逐步執行程式碼。
+許多開發人員喜歡在編輯器中撰寫程式碼，然後將該程式碼傳送到[互動式視窗](interactive-repl.md)來立即測試 (也稱為讀取-評估-列印-重複，或稱 REPL)。 在 R 編輯器中按 Ctrl+Enter 鍵會將目前這一行程式碼傳送到互動式視窗，並將資料指標放在下一行。 使用 Ctrl + Enter 鍵，您便可以實際上從編輯器逐步執行程式碼。
 
 您也可以選取程式碼，然後按 Ctrl + Enter 鍵，套用整個選取範圍。 或者，以滑鼠右鍵按一下選取範圍，然後選取 [以互動方式執行]。
 
@@ -123,15 +110,15 @@ f <- function(a) { return(a + 1) }
 
 若要重新格式化整個程式碼檔案，請選取 [編輯] > [進階] > [格式化文件] (Ctrl+E、D)。
 
-自動格式化是可以復原的個別作業。 例如，如果您將程式碼貼入編輯器，以及它套用的格式化，則選取 [編輯] > [復原] 或按 Ctrl + Z，將會復原格式化，第二次復原則將反轉貼上作業本身。
+自動格式化是可以復原的個別作業。 例如，如果您將程式碼貼入編輯器，以及它套用的格式化，則選取 [編輯] > [復原] 或按 Ctrl+Z，會反轉格式化，第二次 [復原] 則會反轉貼上作業本身。
  
-格式化選項 (包括關閉格式化) 是透過 [文字編輯器] > [R] > [進階] 索引標籤上的 [工具] > [選項] 來設定，您可以使用 [R 工具] > [編輯器選項] 命令，或在編輯器中以滑鼠右鍵按一下並選取 [格式化選項] 直接前往。 如需詳細資訊，請參閱底下的[編輯器選項](#editor-options)。
+格式化選項 (包括關閉格式化) 是透過 [文字編輯器] > [R] > [進階] 索引標籤的 [工具] > [選項] 設定。 您可以使用 [R 工具] > [編輯器選項] 命令，或在編輯器中按一下滑鼠右鍵，然後選取 [格式選項]，直接移至此頁面。 如需詳細資訊，請參閱[編輯器選項](#editor-options)一節。
  
 ## <a name="inserting-roxygen-comments"></a>插入 Roxygen 註解
 
 RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解的捷徑。 只要在函式定義上方的空白行上輸入 `###`︰
 
-![插入 Roxygen 註解的動畫](~/rtvs/media/editing-roxygen-comments.gif)
+![插入 Roxygen 註解的動畫](media/editing-roxygen-comments.gif)
 
 ## <a name="editor-options"></a>編輯器選項
 

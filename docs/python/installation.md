@@ -1,12 +1,13 @@
 ---
 title: "Visual Studio 中的 Python 安裝 | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ce3d3656-7ba2-490d-92df-0bb3e3badf92
@@ -14,29 +15,15 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 9cdd87d81f0b0f4748a25c7bb87fb840e246854c
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="installing-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
+# <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
 
 若要為 Visual Studio 安裝 Python 支援，請遵循符合您 Visual Studio 版本之小節中的指示：
 
@@ -44,12 +31,15 @@ ms.lasthandoff: 05/10/2017
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
 
-請注意，針對 Visual Studio 2015 和更早版本，您需要另外安裝您所選的 Python 解譯器。 如需詳細資料，請參閱 [Python 環境](python-environments.md)。
+針對 Visual Studio 2015 和更早版本，您也需要另外安裝您所選的 Python 解譯器。 如需詳細資料，請參閱 [Python 環境](python-environments.md)。
 
 在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 Alt-I 開啟 Python Interactive 視窗，並輸入 `2+2`。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
 
 > [!Tip]
-> Python 工作負載包含很有用的 Cookiecutter 擴充功能，能提供探索範本、輸入範本選項，以及建立專案及檔案的圖形化使用者介面。 如需詳細資訊，請參閱[使用 Cookiecutter](cookiecutter.md)。
+> Python 工作負載包含很有用的 Cookiecutter 擴充功能，能提供探索範本、輸入範本選項，以及建立專案及檔案的圖形化使用者介面。 如需詳細資料，請參閱[使用 Cookiecutter](cookiecutter.md)。
+
+> [!Note]
+> 目前在 Visual Studio for Mac 中沒有 Python 支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上取得。 請參閱[問與答](python-in-visual-studio.md#questions-and-answers)。
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
@@ -57,14 +47,16 @@ ms.lasthandoff: 05/10/2017
 
 1. 在 Visual Studio 安裝程式中，選取 [Web 與雲端] > [Python 開發] 工作負載。
 
-    ![Visual Studio 安裝程式中的 Python 開發工作負載](~/python/media/installation-python-workload.png)
+    ![Visual Studio 安裝程式中的 Python 開發工作負載](media/installation-python-workload.png)
 
     > [!Note]
     > **資料科學和分析應用程式**工作負載中也包含 Python。
 
 1. 在安裝程式的右側，選取 Python 解譯器，以及其他您想包含的相關工具。 例如，如果您計劃開發適用於 Python 的 C++ 延伸模組，請包括 [Python 原生開發工具] 選項。
 
-    ![Visual Studio 安裝程式中的 Python 開發選項](~/python/media/installation-python-options.png)
+    ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
+
+1. 如果您已經在電腦上安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
@@ -74,9 +66,9 @@ ms.lasthandoff: 05/10/2017
 
 1. 選取 [程式語言] > [適用於 Visual Studio 的 Python 工具]，然後選取 [下一步]：
 
-    ![Visual Studio 2015 安裝程式中的 PTVS 選項](~/python/media/installation-vs2015.png)    
+    ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)    
 
-1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。
+1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。 如果您已安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 
 ## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 和更早版本
 
@@ -86,7 +78,7 @@ ms.lasthandoff: 05/10/2017
     - Visual Studio 2012：[適用於 Visual Studio 2012 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920478)
     - Visual Studio 2010：[適用於 Visual Studio 2010 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。
+1. [安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。 如果您已安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
 
 ## <a name="install-locations"></a>安裝位置
 

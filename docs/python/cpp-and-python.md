@@ -1,38 +1,25 @@
 ---
 title: "在 Visual Studio 中使用 C++ 和 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 3/27/2017
+ms.date: 7/12/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
-ms.topic: article
+ms.topic: get-started-article
 ms.assetid: f7dbda92-21bf-4af0-bb34-29b8bf231f32
 description: "在 Visual Studio 中撰寫適用於 Python 的 C++ 延伸模組或模組的程序和步驟"
 caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: f8a0bef07667e5f876473c966ed3d14a1b84dd0b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 6128d78b99b7fa82ffd5676678a49b1b6a0de177
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -41,27 +28,27 @@ ms.lasthandoff: 05/10/2017
 以 C++ (或 C) 撰寫的模組通常用於延伸 Python 解譯器的功能，以及啟用低階作業系統功能的存取。 有三個主要類型的模組︰
 
 - 加速器模組︰因為 Python 是解譯的語言，可以用 C++ 撰寫特定程式碼以獲得更高的效能。 
-- 包裝函式模組︰公開現有的 C/C++ 介面給 Python 程式碼或公開更 "Pythonic" 的 API，利用 Python 語言功能讓 API 更容易使用。
+- 包裝函式模組：包裝函式會向 Python 程式碼公開現有的 C/C++ 介面，或公開來自 Python、容易使用且更「Python 化」的 API。
 - 低層級的系統存取模組︰建立以存取 CPython 執行階段、作業系統或基礎硬體的較低層級功能。 
 
-本主題會逐步建置適用於 CPython 的 C++ 延伸模組，計算雙曲線正切函數，並從 Python 程式碼呼叫它。 為了示範效能差異，您將先以 Python 建立和測試常式。
+本主題會逐步建置適用於 CPython 的 C++ 延伸模組，計算雙曲線正切函數，並從 Python 程式碼呼叫它。 常式先以 Python 實作，以示範用 C++ 實作相同常式時的效能改善。
 
 這裡採用的方法是針對標準 CPython 延伸模組，如 [Python 文件](https://docs.python.org/3/c-api/)中所述。 此方法與其他方法之間的比較，描述於本主題結尾的[替代方法](#alternative-approaches)。
 
 ## <a name="prerequisites"></a>必要條件
 
-本逐步解說是針對 Visual Studio 2017 所撰寫，並且具有**使用 C++ 的桌面開發**和 **Python 開發**工作負載，及其預設選項 (例如使用 Python 3.6 作為預設解譯器)。 在 **Python 開發**工作負載中，也請核取 **Python 原生開發工具**右邊的方塊，它會設定本主題中所述的大部分選項。 (這個選項也會自動包含 C++ 工作負載。) 
+本逐步解說是針對 Visual Studio 2017 所撰寫，並且具有**使用 C++ 的桌面開發**和 **Python 開發**工作負載，及其預設選項 (例如使用 Python 3.6 作為預設解譯器)。 在 [Python 開發] 工作負載中，也請核取 Python 原生開發工具右邊的方塊，它會設定本主題中所述的大部分選項。 (這個選項也會自動包含 C++ 工作負載。) 
 
-![選取 Python 原生開發工具選項](~/python/media/cpp-install-native.png)
+![選取 Python 原生開發工具選項](media/cpp-install-native.png)
 
-如需詳細資料，請參閱[為 Visual Studio 安裝 Python 支援](installation.md)，包括使用 Visual Studio 的其他版本。 如果您分別安裝 Python，請務必在安裝程式的 [進階選項] 下，選取 [下載偵錯符號] 和 [下載偵錯二進位檔案]。 如此可確保如果您選擇進行偵錯組建，您可以使用必要的偵錯程式庫。
+如需詳細資訊，請參閱[為 Visual Studio 安裝 Python 支援](installation.md)，包括使用 Visual Studio 的其他版本。 如果您分別安裝 Python，請務必在安裝程式的 [進階選項] 下，選取 [下載偵錯符號] 和 [下載偵錯二進位檔案]。 這個選項可確保如果您選擇進行偵錯組建，您可以使用必要的偵錯程式庫。
 
 > [!Note]
 > Python 也可透過包含 64 位元的 Anaconda 3 (含最新版 CPython) 和預設 [Python 原生開發工具] 選項的**資料科學和分析應用程式**工作負載取得。
 
 ## <a name="create-the-python-application"></a>建立 Python 應用程式
 
-1. 選取 [檔案] > [新增] > [專案] 功能表命令，然後搜尋 "Python"、選取 [Python 應用程式] 範本、賦予它適合的名稱和位置，然後選取 [確定]，在 Visual Studio 中建立新的 Python 專案。
+1. 在 Visual Studio 中建立新的 Python 專案，方法是選取 [檔案] > [新增] > [專案]。 搜尋 Python、選取 [Python 應用程式] 範本、提供適合的名稱和位置，並選取 [確定]。
 
 1. 在專案的 `.py` 檔案中，貼上下列程式碼，以為雙曲線正切函數的計算進行基準測試 (實作時不使用數學程式庫，以方便比較)。 您可以隨意以手動方式輸入程式碼，來體驗一些 [Python 編輯功能](code-editing.md)。
 
@@ -111,7 +98,7 @@ ms.lasthandoff: 05/10/2017
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. 使用 [偵錯] > [啟動但不偵錯] (Ctrl + F5) 執行程式，來查看結果。 您會看到每個基準測試需要數秒才能完成。
+1. 使用 [偵錯] > [啟動但不偵錯] (Ctrl + F5) 執行程式，來查看結果。 每個基準測試需要數秒才能完成。
 
 ## <a name="create-the-core-c-project"></a>建立核心 C++ 專案
 
@@ -127,23 +114,23 @@ ms.lasthandoff: 05/10/2017
 
     | 索引標籤 | 屬性 | 值 | 
     | --- | --- | --- |
-    | 一般 | 一般 > 目標名稱 | 將此設為完全符合 Python 所見的模組名稱。 |
+    | 一般 | 一般 > 目標名稱 | 將此欄位設為完全符合 Python 所見的模組名稱。 |
     | | 一般 > 目標副檔名 | .pyd |
     | | 專案預設值 > 組態類型 | 動態程式庫 (.dll) |
     | C/C++ > 一般 | 其他 Include 目錄 | 視您的安裝新增適當的 Python `include` 資料夾，例如 `c:\Python36\include` |     
     | C/C++ > 程式碼產生 | 執行階段程式庫 | 多執行緒的 DLL (/ MD) (請參閱下列警告) |
-    | C/C++ > 前置處理器 | 前置處理器定義 | 新增 `Py_LIMITED_API;` 至字串的開頭。 這會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 |
+    | C/C++ > 前置處理器 | 前置處理器定義 | 將 `Py_LIMITED_API;` 新增到字串的開頭會限制您可以從 Python 呼叫的某些功能，並使程式碼更容易在不同版本的 Python 之間移植。 |
     | 連結器 > 一般 | 其他程式庫目錄 | 視您的安裝新增適當的 Python `lib` 資料夾並包含 `.lib` 檔案，例如 `c:\Python36\libs` (請務必指向包含 `.lib` 檔案的 `libs` 資料夾，而「不是」包含 `.py` 檔案的 `Lib` 資料夾。) | 
 
     > [!Tip]
-    > 如果您沒有看到 [C/C++] 索引標籤，這是因為專案不包含它識別為 C/C++ 原始程式檔的任何檔案。 如果您建立原始程式檔，而沒有 `.c` 或 `.cpp` 副檔名，便可能發生此情形。 比方說，如果您稍早在新項目對話方塊中不小心輸入 `module.coo` 而不是 `module.cpp`，則 Visual Studio 會建立此檔案，但不會將檔案類型設定為「C/C++ 程式碼」，「C/C++ 程式碼」會啟動 [C/C++ 屬性] 索引標籤。 即使用 `.cpp` 重新命名您的檔案，仍會是此情形。 若要修正此問題，請在方案總管中以滑鼠右鍵按一下檔案、選取 [屬性]，然後將 [檔案類型] 設定為 [C/C++ 程式碼]。
+    > 如果您沒有看到 [C/C++] 索引標籤，這是因為專案不包含它識別為 C/C++ 原始程式檔的任何檔案。 如果您建立原始程式檔，而沒有 `.c` 或 `.cpp` 副檔名，便可能發生此情形。 比方說，如果您稍早在新項目對話方塊中不小心輸入 `module.coo` 而不是 `module.cpp`，則 Visual Studio 會建立此檔案，但不會將檔案類型設定為「C/C++ 程式碼」，「C/C++ 程式碼」會啟動 [C/C++ 屬性] 索引標籤。 即使用 `.cpp` 重新命名您的檔案，仍會發生這種錯誤識別。 若要正確設定檔案類型，請在方案總管中以滑鼠右鍵按一下檔案、選取 [屬性]，然後將 [檔案類型] 設定為 [C/C++ 程式碼]。
 
     > [!Warning]
-    > 請不要將 [C/C++] > [產生程式碼] > [執行階段程式庫] 選項設定為 [多執行緒偵錯 DLL (/MDd)]，即使是針對偵錯組態。 您必須選取 [多執行緒 DLL (/MD)] 執行階段，因為非偵錯 Python 二進位碼檔案是使用它所建置。 如果您剛好設定 /MDd 選項，您會在建置 DLL 的偵錯組態時看到錯誤「C1189: Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容」。 此外，如果您移除 `Py_LIMITED_API` 以避免發生建置錯誤，則 Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為「Python 嚴重錯誤︰PyThreadState_Get︰沒有目前的執行緒」。)
+    > 請不要將 [C/C++] > [產生程式碼] > [執行階段程式庫] 選項設定為 [多執行緒偵錯 DLL (/MDd)]，即使是針對偵錯組態。 請選取 [多執行緒 DLL (/MD)] 執行階段，因為非偵錯 Python 二進位碼檔案是使用它所建置。 如果您剛好設定 /MDd 選項，您會在建置 DLL 的偵錯組態時看到錯誤「C1189: Py_LIMITED_API 與 Py_DEBUG、Py_TRACE_REFS 和 Py_REF_DEBUG 不相容」。 此外，如果您移除 `Py_LIMITED_API` 以避免發生建置錯誤，Python 會在嘗試匯入模組時當機。 (當機會發生在 DLL 的 `PyModule_Create` 呼叫內，如稍後所述，輸出訊息為「Python 嚴重錯誤︰PyThreadState_Get︰沒有目前的執行緒」。)
     >
     > 請注意，/MDd 選項用來建置 Python 偵錯二進位檔案 (例如 python_d.exe)，但針對延伸模組 DLL 選取它仍會導致 `Py_LIMITED_API` 建置錯誤。
    
-1. 以滑鼠右鍵按一下 C++ 專案，然後選取 [建置] 來測試您的組態 (偵錯和發行)。 請注意，您會在 **Debug** 和 **Release** 下的 *solution* 資料夾發現 `.pyd` 檔案，而不是 C++ 專案資料夾本身。
+1. 以滑鼠右鍵按一下 C++ 專案，然後選取 [建置] 來測試您的組態 (偵錯和發行)。 `.pyd` 檔案位於 **Debug** 和 **Release** 下的 *solution* 資料夾，而不是 C++ 專案資料夾本身。
 
 1. 將下列程式碼加入 C++ 專案的主要 `.cpp` 檔案︰
 
@@ -231,11 +218,11 @@ ms.lasthandoff: 05/10/2017
 
 1. 在方案總管中，以滑鼠右鍵按一下 [Python 專案]，然後選取 [參考]。 在對話方塊中，依序選取 [專案] 索引標籤、[superfastcode] 專案、[確定]。
 
-第二，您可以將模組安裝在全域 Python 環境中，將它也提供給其他 Python 專案使用。 請注意，這樣通常會需要您重新整理該環境的 IntelliSense 完成資料庫，以及從環境中移除該模組。
+第二，您可以將模組安裝在全域 Python 環境中，將它也提供給其他 Python 專案使用。 這樣做，通常需要您重新整理該環境的 IntelliSense 完成資料庫。 從環境移除模組時，也需要重新整理。
 
-1. 如果您使用 Visual Studio 2017，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 這是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 所建置，並預期在透過此處所述方法建置延伸模組時，這些工具可供使用。
+1. 如果您使用 Visual Studio 2017，請執行 Visual Studio 安裝程式，然後依序選取 [修改]、[個別元件] > [編譯器、建置工具和執行階段] > [Visual C++ 2015.3 v140 工具組]。 此步驟之所以必要，是因為 Python (適用於 Windows) 本身是使用 Visual Studio 2015 (14.0 版) 所建置，並預期在透過此處所述方法建置延伸模組時，這些工具可供使用。
 
-1. 在 C++ 專案中建立名為 `setup.py` 的檔案，方法是以滑鼠右鍵按一下專案，選取 *[新增] > [新增項目...]，再搜尋 "Python" 並選取 [Python 檔案]，將它命名為 setup.py，然後選取 [確定]。 當檔案出現在編輯器中時，將下列程式碼貼入其中︰
+1. 在 C++ 專案中建立名為 `setup.py` 的檔案，方法是以滑鼠右鍵按一下專案，選取 [新增] > [新增項目...]，再搜尋 "Python" 並選取 [Python 檔案]，將它命名為 setup.py，然後選取 [確定]。 當檔案出現在編輯器中時，將下列程式碼貼入其中︰
 
     ```python
     from distutils.core import setup, Extension, DEBUG
@@ -248,7 +235,7 @@ ms.lasthandoff: 05/10/2017
         )
     ```
 
-    如需有關此指令碼的文件，請參閱 [Building C and C++ Extentions](https://docs.python.org/3/extending/building.html) (建置 C 和 C++ 延伸模組) (python.org)。
+    如需有關此指令碼的文件，請參閱 [Building C and C++ Extensions](https://docs.python.org/3/extending/building.html) (建置 C 和 C++ 延伸模組) (python.org)。
 
 1. `setup.py` 程式碼會指示 Python 建置延伸模組 (使用 Visual Studio 2015 C++ 工具組)，這是從命令列發生。 開啟提升權限的命令提示字元、巡覽至包含 C++ 專案 (和 `setup.py`) 的資料夾，然後輸入下列命令︰
 
@@ -258,7 +245,7 @@ ms.lasthandoff: 05/10/2017
 
 現在您可以呼叫 `tanh` 程式碼模組，並比較它和 Python 實作的效能︰
 
-1. 在 `tanhbenchmark.py` 新增以下幾行，呼叫從 DLL 匯出的 `fast_tanh` 方法，並將它加入基準測試輸出。 如果您以手動方式輸入 `from s` 陳述式，則會看到 `superfastcode` 出現在完成清單中，且輸入 `import` 之後您會看到 `fast_tanh` 方法。
+1. 在 `tanhbenchmark.py` 新增以下幾行，呼叫從 DLL 匯出的 `fast_tanh` 方法，並將它加入基準測試輸出。 如果您以手動方式輸入 `from s` 陳述式，則會看到 `superfastcode` 出現在完成清單中，且輸入 `import` 之後會出現 `fast_tanh` 方法。
 
     ```python
     from superfastcode import fast_tanh    
@@ -269,16 +256,16 @@ ms.lasthandoff: 05/10/2017
 
 ## <a name="debug-the-c-code"></a>偵錯 C++ 程式碼
 
-[Visual Studio 中的 Python 支援](installation.md)包括能夠[同時偵錯 Python 和 C++ 程式碼](debugging-mixed-mode.md)。 若要親自體驗，請執行下列作業︰
+[Visual Studio 中的 Python 支援](installation.md)包括能夠[同時偵錯 Python 和 C++ 程式碼](debugging-mixed-mode.md)。 若要體驗此混合模式偵錯，請執行下列步驟：
 
 1. 在方案總管中以滑鼠右鍵按一下 Python 專案、依序選取 [屬性]、[偵錯] 索引標籤，然後選取 [偵錯] > [啟用機器碼偵錯] 的選項。
 
     > [!Tip]
-    > 當您啟用機器碼偵錯時，Python 的輸出視窗可能會在程式完成時立即消失，而不給您平常的「按任意鍵繼續...」暫停。 若要強制暫停，當您啟用機器碼偵錯時，請將 `-i` 選項加入 [偵錯] 索引標籤上的 [執行] > [解譯器引數] 欄位。 這會讓 Python 解譯器在程式碼完成之後進入互動模式，等候您按下 Ctrl + Z、Enter 以結束。 (或者，如果您不介意修改 Python 程式碼，可以在程式結尾新增 `import os` 和 `os.system("pause")` 陳述式。 這會複製原始暫停提示字元。)
+    > 當您啟用機器碼偵錯時，Python 的輸出視窗可能會在程式完成時立即消失，而不給您平常的「按任意鍵繼續...」暫停。 若要強制暫停，當您啟用機器碼偵錯時，請將 `-i` 選項加入 [偵錯] 索引標籤上的 [執行] > [解譯器引數] 欄位。 這個引數會讓 Python 解譯器在程式碼完成之後進入互動模式，等候您按下 Ctrl + Z、Enter 以結束。 (或者，如果您不介意修改 Python 程式碼，可以在程式結尾新增 `import os` 和 `os.system("pause")` 陳述式。 此程式碼會複製原始暫停提示字元。)
 
-1. 在您的 C++ 程式碼中，在 `tanh` 方法內的第一行設定中斷點，然後啟動偵錯工具。 您會看到偵錯工具在呼叫該程式碼時停止︰
+1. 在您的 C++ 程式碼中，在 `tanh` 方法內的第一行設定中斷點，然後啟動偵錯工具。 偵錯工具在呼叫該程式碼時停止︰
 
-    ![在 C++ 程式碼的中斷點處停止](~/python/media/cpp-debugging.png)
+    ![在 C++ 程式碼的中斷點處停止](media/cpp-debugging.png)
 
 1. 此時您可以逐步執行 C++ 程式碼、檢查變數等等，如[同時偵錯 Python 和 C++ 程式碼](debugging-mixed-mode.md)中所述。
 

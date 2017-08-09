@@ -34,11 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 90b2481b0ec4f9387fe3a2c0b733a103e8c03845
-ms.openlocfilehash: 36770fe6fad52e33144f382446d7e851734f87c5
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初級開發人員指南
@@ -47,6 +47,8 @@ ms.lasthandoff: 05/23/2017
 當偵錯工具暫停時，[CPU 使用量] 工具會收集在應用程式中執行的函式的詳細資訊。 此工具列出正在執行工作的函式，並提供讓您用來專注於取樣工作階段特定區段的時間軸圖形。
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量] 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/Profiling-Tools.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
+
+您也可以[觀看使用診斷工具的影片](#video)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。
 
 在本主題中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具來分析 CPU 使用量，或是以執行中的應用程式為目標，如需詳細資訊，請參閱[執行程式碼剖析工具但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   
@@ -63,7 +65,7 @@ ms.lasthandoff: 05/23/2017
 
 4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)][](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
 
-     ![顯示診斷工具](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
      我們主要是要查看 CPU 使用率，因此，請務必啟用 [CPU 使用量] (預設為啟用)。
 
@@ -71,7 +73,7 @@ ms.lasthandoff: 05/23/2017
 
      當應用程式完成載入時，會出現 [Diagnostics Tools (診斷工具)] 的 [Summary (摘要)] 檢視。
 
-     ![診斷工具摘要索引標籤](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![診斷工具摘要索引標籤](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      如需事件的詳細資訊，請參閱[搜尋和篩選診斷工具視窗的事件索引標籤 (Searching and filtering the Events tab of the Diagnostic Tools window)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)。
 
@@ -79,7 +81,7 @@ ms.lasthandoff: 05/23/2017
 
 7.  當偵錯工具暫停時，啟用 CPU 使用量資料的收集，然後開啟 [CPU Usage (CPU 使用量)] 索引標籤。
 
-     ![診斷工具可啟用 CPU 分析](~/profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
+     ![診斷工具可啟用 CPU 分析](../profiling/media/DiagToolsEnableCPUProfiling.png "DiagToolsEnableCPUProfiling")
 
      當您選擇 [啟用 CPU 分析] 時，Visual Studio 就會開始錄製您的函式和它們執行所需的時間。 只有在應用程式於中斷點停止時，您才能檢視收集的資料。
 
@@ -89,15 +91,15 @@ ms.lasthandoff: 05/23/2017
 
 9.  在 CPU 時間軸中選取您想要分析的區域 (必須是顯示程式碼剖析資料的區域)。
 
-     ![選取一個時間區段的診斷工具](~/profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
+     ![選取一個時間區段的診斷工具](../profiling/media/DiagToolsSelectTimeSegment.png "DiagToolsSelectTimeSegment")
 
      程式碼剖析工具隨即開始準備執行緒資料。 等候它完成。
 
-     ![正在準備執行緒的診斷工具](~/profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
+     ![正在準備執行緒的診斷工具](../profiling/media/DiagToolsPreparingThreads.png "DiagToolsPreparingThreads")
   
      [CPU 使用量] 工具會在 [CPU Usage (CPU 使用量)] 索引標籤中顯示報告。
   
-     ![診斷工具 CPU 使用量索引標籤](~/profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
+     ![診斷工具 CPU 使用量索引標籤](../profiling/media/DiagToolsCPUUsageTab.png "DiagToolsCPUUsageTab")
 
      此時，您可以開始分析資料。
 
@@ -107,7 +109,7 @@ ms.lasthandoff: 05/23/2017
 
 1. 在函式清單中，檢查執行最多工作的函式。
 
-    ![診斷工具 CPU 使用量函式清單](~/profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
+    ![診斷工具 CPU 使用量函式清單](../profiling/media/DiagToolsCPUUsageFunctionList.png "DiagToolsCPUUsageFunctionList")
 
     > [!TIP]
     > 執行工作最多的函式會優先列出 (不是以呼叫順序列出)。 這可協助您快速找出執行時間最長的函式。
@@ -116,7 +118,7 @@ ms.lasthandoff: 05/23/2017
 
     當您按兩下函式時，[Caller/Callee (呼叫者/被呼叫者)] 檢視會在左窗格中開啟。 
 
-    ![診斷工具的呼叫端/被呼叫端檢視](~/profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
+    ![診斷工具的呼叫端/被呼叫端檢視](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
 
     在此檢視中，選取的函式會出現在標題和 [目前的函式] 方塊中 (在此範例中為 GetNumber)。 呼叫目前函式的函式顯示在左邊的 [Calling Function (呼叫的函式)] 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [Called Functions (所呼叫函式)] 方塊。 (您可以選取任一個方塊來變更目前的函式。)
 
@@ -131,7 +133,7 @@ ms.lasthandoff: 05/23/2017
  
     圖中的每個編號區域與程序中的步驟相關。
   
-    ![診斷工具呼叫樹狀圖](~/profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
+    ![診斷工具呼叫樹狀圖](../profiling/media/DiagToolsCallTree.png "DiagToolsCallTree")
   
 |||
 |-|-|
@@ -154,7 +156,7 @@ ms.lasthandoff: 05/23/2017
   
 如果您想要檢視外部程式碼的呼叫路徑時，請從 [Filter (篩選)] 檢視清單中選擇 [Show External Code (顯示外部程式碼)]  ，然後選擇 [(Apply) 套用] 。  
   
-![選擇 [Filter (篩選)]檢視，然後選擇 [Show External Code (顯示外部程式碼)]](~/profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
+![選擇 [Filter (篩選)]檢視，然後選擇 [Show External Code (顯示外部程式碼)]](../profiling/media/DiagToolsShowExternalCode.png "DiagToolsShowExternalCode")  
   
 請注意，許多外部程式碼呼叫鏈結都是深度巢狀的，因此 [函式名稱] 資料行的寬度可能會超出所有電腦監視器 (但不含最大的電腦監視器) 的顯示寬度。 發生此情況時，函式名稱會顯示為 […]：
   
@@ -162,8 +164,12 @@ ms.lasthandoff: 05/23/2017
 
 > [!TIP]
 > 如果您剖析呼叫 Windows 函式的外部程式碼，您應該要確定您有最新的 .pdb 檔案。 如果沒有這些檔案，您的報告檢視會列出隱晦且難以了解的 Windows 函式名稱。 如需如何確認您擁有所需檔案的詳細資訊，請參閱[在偵錯工具中指定符號 (.pdb) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
+
+## <a name="video"></a> 觀看使用診斷工具的影片
+
+<div style="padding-top: 56.25%; position: relative; width: 100%;">
+<iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171" frameborder="0" allowfullscreen></iframe>
+</div>
   
 ## <a name="see-also"></a>另請參閱  
- [[記憶體使用量](../profiling/memory-usage.md)
- [CPU 使用量](../profiling/cpu-usage.md)
- [程式碼剖析工具](../profiling/profiling-tools.md)
+ [[記憶體使用量](../profiling/memory-usage.md) [CPU 使用量](../profiling/cpu-usage.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)

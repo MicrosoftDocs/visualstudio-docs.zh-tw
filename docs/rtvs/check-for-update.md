@@ -1,12 +1,13 @@
 ---
 title: "Visual Studio R 工具的目前版本 | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ae5fca3b-ce82-4b81-8625-75454e4099b0
@@ -14,37 +15,23 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: f6730aa618ef42adebe596614ba024e9b0a31948
+ms.translationtype: HT
+ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
+ms.openlocfilehash: d8a9097b8f75f834c9d9d19c711ceb6a3f7b5e07
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 07/12/2017
 
 ---
 
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
-Visual Studio R 工具 (RTVS) 的最新版本是 **1.0.30321.1407** (建議選項)。
+此頁面上次更新後的 Visual Studio R 工具 (RTVS) 版本為 **1.0.30531.2148**。 您的版本會隨 Visual Studio 版本以及是否使用預覽通道而有所不同。
 
-這是 RTVS 的 1.0 版，可從 [aka.ms/rtvs-current](https://aka.ms/rtvs-current) 取得。
+若要檢查版本，可以在 Visual Studio 中前往 [說明] > [關於]，向下捲動到 [Visual Studio R 工具] 項目︰ 
 
-要檢查版本，可以在 Visual Studio 前往 [說明] > [關於] 並向下捲動到 [Visual Studio R 工具] 項目︰
+![在 Visual Studio 中檢查 RTVS 版本 (VS2017)](media/current-version.png)
 
-![在 Visual Studio 中檢查 RTVS 版本 (VS2017)](~/rtvs/media/current-version.png)
+若要更新 Visual Studio 2017 的 RTVS 版本，請移至 Visual Studio 安裝程式並選取 [更新] 按鈕，或移至 [aka.ms/rtvs-current](https://aka.ms/rtvs-current)。
 
 請參閱[安裝](installation.md)以取得 Visual Studio 和 Windows 的需求。
 

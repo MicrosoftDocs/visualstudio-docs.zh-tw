@@ -1,12 +1,13 @@
 ---
 title: "適用於 Python 的 Azure 雲端服務專案範本 | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a2ce82ee-8c73-419a-bbd2-4c3513fd394d
@@ -14,24 +15,11 @@ caps.latest.revision: 11
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 5dd1c40c925327c9494e3a334cdf348692a4981d
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: b90240dbb25e45827cbe8cd728dfcff23b1a8884
+ms.contentlocale: zh-tw
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -48,21 +36,21 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 1. 安裝[適用於 Visual Studio 的 Azure .NET SDK (英文)](https://www.visualstudio.com/vs/azure-tools/)，這是使用雲端服務範本的必要項目。
 1. 在 Visual Studio 中，選取 [檔案] > [新增] > [專案...]，然後搜尋「Azure Python」，並從清單中選取 [Azure 雲端服務]：
 
-    ![適用於 Python 的 Azure 雲端專案範本](~/python/media/template-azure-cloud-project.png)
+    ![適用於 Python 的 Azure 雲端專案範本](media/template-azure-cloud-project.png)
 
 1. 選取要包含的一或多個角色。 雲端專案可以結合以不同語言撰寫的角色，因此您可以輕鬆地以最適合的語言撰寫應用程式的每個部分。 若要在完成此對話方塊後將新角色新增至專案，請在 [方案總管] 中以滑鼠右鍵按一下 [角色]，然後選取 [新增] 下的其中一個項目。
 
-    ![在 Azure 雲端專案範本中新增角色](~/python/media/template-azure-cloud-service-project-wizard.png)
+    ![在 Azure 雲端專案範本中新增角色](media/template-azure-cloud-service-project-wizard.png)
 
 1. 建立個別角色專案後，如果您選取的角色使用其他的 Python 封裝 (例如 Django、Bottle 或 Flask 架構)，系統會提示您安裝它們。
 
-1. 將新角色新增至專案後，您會看到一些設定指示。 這些指示通常是不必要的，但對於在未來自訂專案上可能會很有用。 請注意，同時新增多個角色時，只有針對最後一個角色的指示會維持開啟。 不過，您可以在其他角色個別的 `readme.mht` 檔案 (位於角色的根目錄或 `bin` 資料夾中) 中找到指示和疑難排解秘訣。
+1. 將新角色新增至專案後，就會出現組態指示。 通常不需要進行組態變更，但未來自訂專案時可能十分有用。 請注意，同時新增多個角色時，只會針對最後一個角色的指示維持開啟。 不過，您可以在其他角色個別的 `readme.mht` 檔案 (位於角色的根目錄或 `bin` 資料夾中) 中找到指示和疑難排解秘訣。
 
-1. 專案的 `bin` 資料夾也包含一或兩個用來設定虛擬機器的 PowerShell 指令碼，包括安裝 Python、專案中的任何 [requirements.txt](#dependencies) 檔案，以及設定 IIS (如有需要)。 您可以視需要針對部署編輯這些檔案，但您能以其他方式管理最常見的選項 (請參閱下方的[設定角色部署](#configuring-role-deployment))。 不建議您移除這些檔案，因為如果無法存取這些檔案，系統將會改用舊版的設定指令碼。
+1. 專案的 `bin` 資料夾也包含一或兩個用來設定虛擬機器的 PowerShell 指令碼，包括安裝 Python、專案中的任何 [requirements.txt](#dependencies) 檔案，以及設定 IIS (如有需要)。 您可以視需要針對部署編輯這些檔案，但您能以其他方式管理最常見的選項 (請參閱下方的[設定角色部署](#configuring-role-deployment))。 不建議您移除這些檔案，因為如果無法使用這些檔案，系統會改用舊版的設定指令碼。
 
-    ![背景工作角色支援檔案](~/python/media/template-azure-cloud-service-worker-role-support-files.png)
+    ![背景工作角色支援檔案](media/template-azure-cloud-service-worker-role-support-files.png)
 
-    若要將這些設定指令碼新增至新的專案，請以滑鼠右鍵按一下專案，選取 [新增] > [新增項目...]，然後選取 [Web 角色支援檔案] 或 [背景工作角色支援檔案]。
+    若要將這些設定指令碼新增至新的專案，請以滑鼠右鍵按一下專案，並選取 [新增] > [新增項目...]，然後選取 [Web 角色支援檔案] 或 [背景工作角色支援檔案]。
    
 
 ## <a name="configuring-role-deployment"></a>設定角色部署
@@ -72,7 +60,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 - `ConfigureCloudService.ps1` 用於 Web 和背景工作角色，通常用來安裝並設定相依性，以及設定 Python 版本。
 - `LaunchWorker.ps1` 僅用於背景工作角色，可用來變更啟始行為、新增命令列引數，或是新增環境變數。
 
-這兩個檔案都包含自訂的指示。 您也可以將另一項工作新增至主要雲端服務專案的 `ServiceDefinition.csdef` 檔案，將 `PYTHON` 變數設定為其已安裝 `python.exe` (或對等項目) 的路徑，來安裝自己的 Python 版本。 設定 `PYTHON` 之後，將不會從 NuGet 安裝 Python。
+這兩個檔案都包含自訂的指示。 您也可以將另一項工作新增至主要雲端服務專案的 `ServiceDefinition.csdef` 檔案，將 `PYTHON` 變數設定為其已安裝 `python.exe` (或對等項目) 的路徑，來安裝自己的 Python 版本。 設定 `PYTHON` 時，不會從 NuGet 安裝 Python。
 
 其他的設定可依下列方式完成：
 
@@ -96,18 +84,18 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 發佈程序牽涉到兩個階段。 首先，Visual Studio 會建立包含雲端服務之所有角色的單一封裝。 此封裝是要部署至 Azure 的項目，它會為每個角色初始化一或多部虛擬機器並部署來源。
 
-當每部虛擬機器啟動時，它會執行 `ConfigureCloudService.ps1` 指令碼並安裝任何相依性。 此指令碼預設會從 [nuget (英文)](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 安裝 Python 的最新版本，以及 `requirements.txt` 檔案中指定的所有封裝。 
+當每部虛擬機器啟動時，它會執行 `ConfigureCloudService.ps1` 指令碼並安裝任何相依性。 此指令碼預設會從 [NuGet](https://www.nuget.org/packages?q=Tags%3A%22python%22+Authors%3A%22Python+Software+Foundation%22) 安裝 Python 的最新版本，以及 `requirements.txt` 檔案中指定的所有套件。 
 
 最後，背景工作角色會執行 `LaunchWorker.ps1`，這會開始執行您的 Python 指令碼；Web 角色會初始化 IIS 並開始處理 Web 要求。
 
 
 ## <a name="dependencies"></a>相依性
 
-針對雲端服務，`ConfigureCloudService.ps1` 指令碼會使用 `pip` 來安裝一組 Python 相依性。 這些相依性應該在名為 `requirements.txt` 的檔案中指定 (可藉由修改 `ConfigureCloudService.ps1` 來自訂)。 該檔案在初始化過程中會使用 `pip install -r requirements.txt` 來執行。
+針對雲端服務，`ConfigureCloudService.ps1` 指令碼會使用 `pip` 來安裝一組 Python 相依性。 相依性應該指定於名為 `requirements.txt` 的檔案中 (可藉由修改 `ConfigureCloudService.ps1` 來自訂)。 該檔案在初始化過程中會使用 `pip install -r requirements.txt` 來執行。
 
 請注意，雲端服務執行個體不包括 C 編譯器，因此含有 C 擴充功能的所有程式庫都必須提供預先編譯的二進位檔。
 
-PIP 與其相依性，以及 `requirements.txt` 中的所有封裝都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要的封裝](python-environments.md#managing-required-packages)以取得管理 `requirements.txt` 檔案的詳細資料。
+PIP 與其相依性，以及 `requirements.txt` 中的所有套件都會自動下載，且可能會被視為需付費的頻寬使用量。 請參閱[管理必要套件](python-environments.md#managing-required-packages)，以取得管理 `requirements.txt` 檔案的詳細資料。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -121,5 +109,5 @@ PIP 與其相依性，以及 `requirements.txt` 中的所有封裝都會自動�
 - 您的 Python 專案包含列出所有相依性的 `requirements.txt` 檔案 (或是一組 wheel 檔案集合)。
 - 在雲端服務上啟用遠端桌面，並調查記錄檔。
 - `ConfigureCloudService.ps1` 和 `LaunchWorker.ps1` 的記錄檔會儲存於遠端電腦上的 `C:\Resources\Directory\%RoleId%.DiagnosticStore\LogFiles` 資料夾中。
-- Web 角色會將額外的記錄檔寫入至 `web.config` 設定的路徑，也就是 `WSGI_LOG` appSetting 中的路徑。 也可以使用 Rost 一般 IIS 或 FastCGI 記錄。
+- Web 角色會將額外的記錄檔寫入至 `web.config` 設定的路徑，也就是 `WSGI_LOG` appSetting 中的路徑。 大部分的一般 IIS 或 FastCGI 記錄也適用。
 - 目前，`LaunchWorker.ps1.log` 檔案是檢視 Python 背景工作角色所顯示之輸出或錯誤的唯一方式。

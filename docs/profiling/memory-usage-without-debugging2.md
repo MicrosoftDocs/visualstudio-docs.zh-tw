@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: baf1e18c56587b071aaa25fd522e3aa1b27a0b30
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: caa4a551c437a6d0479ff1a6fdd5526c6837721a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="memory-usage-without-the-debugger"></a>記憶體使用量 (不使用偵錯工具)
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/13/2017
   
  當您開始診斷工作階段時，您的應用程式會啟動，且 [診斷工具] 視窗會顯示應用程式記憶體使用量的時間軸圖形。  
   
- ![記憶體使用量概觀頁面](~/profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
+ ![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
  時間軸圖形會顯示應用程式在執行時，在記憶體內的波動情況。 圖形中的高峰通常表示一些程式碼正在收集或建立資料，然後在處理完成時將它捨棄。 大型的高峰表示您可能可以最佳化的區域。 更值得關注的是未傳回的記憶體耗用提高，因為它可能表示記憶體使用效率低落，或甚至是記憶體流失。  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="BKMK_Memory_Usage_overview_page"></a>記憶體使用量概觀頁面  
  停止資料收集之後，[記憶體使用量] 工具會停止應用程式，並顯示概觀報表。  
   
- ![記憶體使用量概觀頁面](~/profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
+ ![記憶體使用量概觀頁面](../profiling/media/memuse__reportoverview.png "MEMUSE__ReportOverview")  
   
 ###  <a name="BKMK_Memory_Usage_snapshot_views"></a>記憶體使用量快照檢視  
  使用快照檢視可以在新的 Visual Studio 視窗中開啟詳細報表。 有兩種快照檢視：  
@@ -98,10 +98,10 @@ ms.lasthandoff: 05/13/2017
   
 |||  
 |-|-|  
-|![步驟 1](~/profiling/media/procguid_1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
-|![步驟 2](~/profiling/media/procguid_2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
-|![步驟 3](~/profiling/media/procguid_3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
-|![步驟 4](~/profiling/media/procguid_4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
+|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|連結文字顯示在擷取快照時，記憶體中的總位元組數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的大小總計進行排序。|  
+|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|連結文字顯示擷取快照時記憶體中的總物件數。<br /><br /> 選擇這個連結可以顯示快照詳細資料報表，此報表依類型執行個體的計數進行排序。|  
+|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|連結文字顯示此快照時的記憶體中物件大小總計與上一個快照大小總計之間的差異。<br /><br /> 此快照的記憶體大小大於與上一個快照時，連結文字是正數，大小較小時則為負數。 連結文字 [基準] 表示這個是診斷工作階段中的第一個快照。[無差異] 表示差異是零。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的大小總計差異進行排序。|  
+|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|連結文字顯示此快照中的記憶體物件總數與上一個快照物件數之間的差異。<br /><br /> 選擇這個連結可以顯示快照差異報表，此報表依類型執行個體的總計數差異進行排序。|  
   
 ##  <a name="BKMK_Snapshot_reports"></a>快照報表  
  ![記憶體使用量快照報表](../profiling/media/memuse_snapshotreport_all.png "MEMUSE_SnapshotReport_All")  
@@ -141,7 +141,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="BKMK_Snapshot_details_reports"></a>快照詳細資料報表  
  您可以使用快照詳細資料報表，專注在診斷工作階段的一張快照。 若要開啟詳細資料報表，請選擇快照檢視中的其中一個連結，如下圖所示。 這兩個連結都會開啟相同報表。唯一的差別在於報表中 [Managed 堆積] 樹狀目錄的起始排序次序。 在兩種情況下，您都能在報表開啟之後變更排序順序。  
   
- ![快照檢視中的快照報表連結](~/profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
+ ![快照檢視中的快照報表連結](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "MEMUSE_SnapshotView_SnapshotDetailsLinks")  
   
 -   [MB] 連結會依據 [內含大小 (位元組)] 欄來排序報表。  
   
@@ -189,7 +189,7 @@ ms.lasthandoff: 05/13/2017
 ###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a>Managed 堆積樹狀目錄 (快照差異)  
  [Managed 堆積] 樹狀目錄會列出保留在記憶體中的物件類型。 您可以展開類型名稱，檢視依大小排序的前十大類型執行個體。 選取類型或執行個體會顯示選取項目的 [根的路徑] 和 [參考的物件] 樹狀目錄。  
   
- ![差異報表中類型的 Managed 堆積樹狀目錄](~/profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
+ ![差異報表中類型的 Managed 堆積樹狀目錄](../profiling/media/memuse_snapshotdiff_type_heap.png "MEMUSE_SnapshotDiff_Type_Heap")  
   
  請注意，圖片中已摺疊 [計數]、[大小 (位元組)] 和 [內含大小 (位元組)] 欄。  
   
@@ -206,7 +206,7 @@ ms.lasthandoff: 05/13/2017
 ###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a>根的路徑樹狀目錄 (快照差異)  
  [根的路徑] 樹狀目錄顯示參考類型或執行個體的物件鏈結。 .NET Framework 記憶體回收行程只會在對物件的所有參考都已釋放時才清除物件的記憶體。  
   
- ![差異檢視中根的路徑樹狀目錄，用於執行個體](~/profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
+ ![差異檢視中根的路徑樹狀目錄，用於執行個體](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "MEMUSE_SnapshotDiff_PathsToRoot_Instance_All")  
   
 ###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a>參考的物件樹狀目錄 (快照差異)  
  [參考的物件] 樹狀目錄顯示主要類型或執行個體參考的物件。  
@@ -220,7 +220,5 @@ ms.lasthandoff: 05/13/2017
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
 ## <a name="see-also"></a>另請參閱  
- [JavaScript 記憶體](../profiling/javascript-memory.md)
- [程式碼剖析工具](../profiling/profiling-tools.md)
- [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
+ [JavaScript 記憶體](../profiling/javascript-memory.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md) [使用 C++、C# 與 Visual Basic 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh750313.aspx)   
  [使用 Visual Studio 中的新記憶體使用量工具來診斷記憶體問題](http://go.microsoft.com/fwlink/p/?LinkId=394706)

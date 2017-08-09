@@ -26,11 +26,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e59263c352084107d9849ab656b8b7d034337c53
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 2a58b84403189d824494af85bc732a1b8cf3d0b6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/13/2017
 
 **答：**
 
-Live Unit Testing 目前無法與 .NET Core 搭配使用。 我們正致力於在未來加入這項支援。 
+可以。 Live Unit Testing 是與 .NET Core 和 .NET Framework 搭配運作。 在 Visual Studio 2017 版本 15.3 Preview 中，最近新增 .NET Core 支援。 
 
 ## <a name="why-doesnt-live-unit-testing-work-when-i-turn-it-on"></a>當我開啟 Live Unit Testing 時，為什麼它不會運作？ 
 
@@ -49,7 +49,7 @@ Live Unit Testing 目前無法與 .NET Core 搭配使用。 我們正致力於�
 
 - 如果方案中之專案所參考的 NuGet 封裝尚未還原，Live Unit Testing 將不會運作。 在開啟 Live Unit Testing 之前明確地建置方案，或是還原方案中的 NuGet 封裝，應該就能解決此問題。 
 
-- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 封裝的參考，`MSTest.TestAdapter` (至少需要版本 1.1.4-preview) 和 `MSTest.TestFramework` (至少需要版本 1.0.5-preview)。 如需詳細資訊，請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 主題中的＜支援的測試架構＞一節。
+- 如果您在專案中使用以 MSTest 為基礎的測試，請務必移除對 `Microsoft.VisualStudio.QualityTools.UnitTestFramework` 的參考，然後新增對最新 MSTest NuGet 套件的參考，`MSTest.TestAdapter` (至少需要版本 1.1.11) 和 `MSTest.TestFramework` (至少需要版本 1.1.11)。 如需詳細資訊，請參閱[使用 Visual Studio 2017 Enterprise Edition 中的 Live Unit Testing](live-unit-testing.md#supported-test-frameworks) 主題中的＜支援的測試架構＞一節。
  
 - 您的方案中應該至少要有一個專案含有參考 xUnit、NUnit 或 MSTest 測試架構的 NuGet 參考或直接參考。 此專案應該也要參考對應的 Visual Studio 測試配接器 NuGet 封裝。 Visual Studio 測試配接器也可以透過 `.runsettings` 檔案來參考。 `.runsettings` 檔案必須具有類似下列項目的項目： 
 
@@ -239,3 +239,4 @@ public class Class1
 
 [即時單元測試](live-unit-testing.md)
  
+

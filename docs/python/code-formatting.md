@@ -1,12 +1,13 @@
 ---
 title: "在 Visual Studio 中格式化 Python 程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 4/10/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a14bc7e8c9194fff3a1bec2739c9e9c2480e905b
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -43,9 +30,9 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 - 若要格式化選取範圍︰選取 [編輯] > [進階] > [格式化選取範圍] 或按 Ctrl+E、F。
 - 若要格式化整個檔案︰選取 [編輯] > [進階] > [格式化文件] 或按 Ctrl+E、D。
 
-透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式化] 和其子索引標籤可設定選項，且依預設會設為符合 [PEP 8 樣式指南 (英文)](http://www.python.org/dev/peps/pep-0008/) 的超集。 [一般] 索引標籤決定何時套用格式；其他三個子頁面會在後續小節中定義。
+透過 [工具] > [選項] > [文字編輯器] > [Python] > [格式化] 及其巢狀索引標籤可設定選項，且依預設會設為符合 [PEP 8 樣式指南](http://www.python.org/dev/peps/pep-0008/)的超集。 [一般] 索引標籤決定何時套用格式，本主題說明其他三個索引標籤的設定。
 
-此外，[Visual Studio 中的 Python 支援](installation.md)也將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表，如下所述。
+此外，[Visual Studio 中的 Python 支援](installation.md)也將實用的[填滿註解段落](#fill-comment-paragraph-command)命令新增到 [編輯] > [進階] 功能表，如下文所述。
 
 ## <a name="spacing"></a>間距
 
@@ -55,7 +42,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 - 已清除︰移除任何間距。
 - 不定︰保留原始格式。
 
-下表提供各種選項的範例。
+下表提供各種選項範例：
 
 | 類別定義選項 | 已核取 | 已清除 |
 | --- | --- | --- | 
@@ -99,7 +86,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="statements"></a>陳述式
 
-**陳述式**控制自動將各種陳述式重新撰寫成更多 Pythonic 格式。
+[陳述式] 選項控制以更多 Pythonic 格式自動重新撰寫各種陳述式。
 
 | 選項 | 格式之前 | 格式之後 |
 | --- | --- | --- |
@@ -110,7 +97,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="wrapping"></a>換行
 
-您可在 [換行] 中設定 [最大註解寬度] (預設為 80)；如果您已設定 [將太寬的註解換行] 選項，Visual Studio 會將註解重新格式化為不超過該寬度。
+[包裝] 讓您設定 [註解寬度上限] (預設值為 80)。 如已設定 [將太寬的註解換行] 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
 
 ```python
 # Wrapped to 40 columns

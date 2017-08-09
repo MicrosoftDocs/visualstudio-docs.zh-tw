@@ -33,11 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: ddd52c1af0a164235de2e5055896e020dc8715c3
+ms.translationtype: HT
+ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
+ms.openlocfilehash: 251b00c479c3853ba4fc00521f3e4cac74a93d27
 ms.contentlocale: zh-tw
-ms.lasthandoff: 03/07/2017
+ms.lasthandoff: 07/13/2017
 
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
@@ -90,7 +90,7 @@ ms.lasthandoff: 03/07/2017
   
  圖中的每個編號區域與程序中的步驟相關。  
   
- ![用於取樣的摘要報表檢視](~/profiling/media/summary_sampling.png "Summary_Sampling")  
+ ![用於取樣的摘要報表檢視](../profiling/media/summary_sampling.png "Summary_Sampling")  
   
 #### <a name="to-analyze-sampling-data"></a>分析取樣資料  
   
@@ -139,9 +139,9 @@ ms.lasthandoff: 03/07/2017
   
 4.  在重新執行工作階段之後，會將另一個資料檔案加入 [效能總管] 中此工作階段的 [報告] 資料夾。 選取原始和新的程式碼剖析資料，以滑鼠右鍵按一下選取範圍，然後按一下 [比較效能報告]。  
   
-     新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較程式碼剖析工具資料檔案](../profiling/how-to-compare-performance-data-files.md)。  
+     新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較程式碼剖析工具資料檔案](../profiling/how-to-compare-performance-data-files.md)。
   
 ## <a name="see-also"></a>另請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [快速入門](../profiling/getting-started-with-performance-tools.md)   
- [概觀](../profiling/overviews-performance-tools.md)
+ [概觀](../profiling/overviews-performance-tools.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)
