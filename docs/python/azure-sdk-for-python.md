@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: c64d1abc2266b7e2edbb2c81a46c53c39eb9a85a
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 89de0d11791dbf13b9d4fcfcea8168b443d2777b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -45,7 +45,7 @@ pip install azure
 
 [Azure SDK for Python 開發人員中心](http://azure.microsoft.com/develop/python/)也有一些實用的資源，包括教學課程，例如：
 
-  - 使用 [Django](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-python-how-to-use-topics-subscriptions)、[Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
+  - 使用 [Django](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-django-app)、[Flask](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-flask-app) 和 [Bottle](https://docs.microsoft.com/azure/app-service-web/web-sites-python-create-deploy-bottle-app) 建立 Web 應用程式。
   - [Blob 儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-blob-storage)
   - [表格儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)
   - [佇列儲存體](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)
@@ -66,3 +66,4 @@ pip install azure
 SDK 的 Git 存放庫網址如下：[https://github.com/Azure/azure-sdk-for-python](https://github.com/Azure/azure-sdk-for-python)。
 
 如果您發現任何問題，或對 SDK 的使用方式有任何疑問，請[在存放庫中提出問題](https://github.com/Azure/azure-sdk-for-python/issues)。
+
