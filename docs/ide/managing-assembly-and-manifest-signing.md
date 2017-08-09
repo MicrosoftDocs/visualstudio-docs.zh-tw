@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: b42679476f9e1da034011eb7e9b81250c0c81a1e
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
@@ -80,12 +80,12 @@ ms.lasthandoff: 05/30/2017
 > [!WARNING]
 >  您應該一律以密碼保護金鑰檔，以防止他人使用您的金鑰檔。 您也可以使用提供者或憑證存放區來保護您的金鑰。  
   
- 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公用/私密金鑰組](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
+ 您也可以指向已經建立的金錀。 如需建立金鑰的詳細資訊，請參閱[如何：建立公用/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。  
   
  如果您只能存取公開金鑰，您可以使用延遲簽署，稍後再指定金鑰。 選取 [僅延遲簽署] 核取方塊以啟用延遲簽署。 延遲簽署的專案將不會執行，且無法進行偵錯。 不過，您可以在開發期間略過驗證，使用 [Sn.exe (Strong Name Tool)](/dotnet/framework/tools/sn-exe-strong-name-tool) 與 `-Vr` 選項。  
   
  如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [強式名稱的組件](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)   
  [強式名稱組件 (組件簽署) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

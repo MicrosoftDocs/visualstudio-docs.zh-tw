@@ -18,10 +18,10 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: c3521e1de25854db012cb91bbe09d9463ecb42c7
-ms.openlocfilehash: af1ff0dbeeb30e6b3169c6a94dab8da50085bf20
+ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
+ms.openlocfilehash: 5448253ae93b82a2631e6c48495a31d2724ed0b7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/21/2017
+ms.lasthandoff: 08/08/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/21/2017
 
 如果 Visual Studio 偵測到啟動變慢，就會出現快顯訊息，警告您導致速度變慢的延伸模組或工具視窗。 此訊息亦提供 [管理 Visual Studio 效能] 對話方塊的連結。使用 [說明] > [管理 Visual Studio 效能] 功能表命令也可開啟此對話方塊。
 
-![管理 Visual Studio 效能 - 快顯會顯示「我們注意到擴充功能 ... 讓 Visual Studio 變慢」的訊息](~/ide/media/vside_perfdialog_popup.PNG)
+![管理 Visual Studio 效能 - 快顯會顯示「我們注意到擴充功能 ... 讓 Visual Studio 變慢」的訊息](../ide/media/vside_perfdialog_popup.png)
 
 對話方塊會列出影響啟動效能的擴充功能與工具視窗。 這個對話方塊可讓您變更延伸模組和工具視窗設定，以改善啟動效能。
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 07/21/2017
 
 如果某個擴充功能讓 Visual Studio 啟動變慢，則在您選擇其中一種擴充功能類型時，該擴充功能會出現在 [管理 Visual Studio 效能] 對話方塊中。 對話方塊會顯示啟動時、載入方案時與在編輯器中輸入時，影響效能的擴充功能。
 
-![管理 Visual Studio 效能 - 擴充功能檢視](~/ide/media/vside_perfdialog_extensions.PNG)
+![管理 Visual Studio 效能 - 擴充功能檢視](../ide/media/vside_perfdialog_extensions.png)
 
 對於啟動、方案載入或輸入時間的影響，如果高到無法接受的程度，請選取 [停用] 按鈕，以便為該案例停用擴充功能。 您隨時可以使用擴充管理員或 [管理 Visual Studio 效能] 對話方塊，針對未來的工作階段重新啟用擴充功能。
 
@@ -53,7 +53,7 @@ ms.lasthandoff: 07/21/2017
 - **啟動時不要顯示視窗**：下次開啟 Visual Studio 時，一律會關閉指定的工具視窗，即使已在前一個工作階段中開啟也是一樣。 您可以從適當的功能表中開啟工具視窗。
 - **啟動時自動隱藏視窗**：如果已在前一個工作階段中開啟工具視窗，則此選項會在啟動時摺疊工具視窗的群組，以避免初始化工具視窗。 如果您經常使用工具視窗，則此選項是不錯的選擇，原因是工具視窗仍然可用，但不再對 Visual Studio 啟動時間造成負面影響。
 
-![管理 Visual Studio 效能 - 工具視窗檢視](~/ide/media/vside_perfdialog_toolwindows.PNG)
+![管理 Visual Studio 效能 - 工具視窗檢視](../ide/media/vside_perfdialog_toolwindows.png)
 
 您隨時可以返回此對話方塊，以變更任何工具視窗的設定。
 
@@ -69,7 +69,7 @@ Visual Studio 2017 支援「輕量型方案載入」，可減少在 IDE 中載�
 
 若要變更所有專案與方案設定的輕量型方案載入，請移至 [工具] > [選項] > [專案和方案] > [一般]，並選取三種載入選項之一：
 
-![工具選項對話方塊](~/ide/media/VSIDE_LightweightSolutionLoad.png)
+![工具選項對話方塊](../ide/media/VSIDE_LightweightSolutionLoad.png)
 
 - **讓 Visual Studio 選擇最適合方案的方式**：Visual Studio 會在每個方案開啟時進行分析，以判斷是否要套用輕量型方案載入。 
 - **啟用**：不論整個 IDE 設定為何，都會啟用此方案的輕量型方案載入。
@@ -77,7 +77,7 @@ Visual Studio 2017 支援「輕量型方案載入」，可減少在 IDE 中載�
 
 若要啟用個別方案的輕量型方案載入，請選取方案總管中的頂層方案節點。 在 [屬性] 視窗中，針對 [輕量型載入] 屬性，選擇 [預設]、[已啟用] 或 [已停用]。
 
-![底下提供說明，包括方案總管](~/ide/media/VSIDE_LSL Solution Setting.png)
+![底下提供說明，包括方案總管](../ide/media/VSIDE_LSL Solution Setting.png)
 
 您可以在方案總管中，以滑鼠右鍵按一下頂層方案節點，並選取 [啟用輕量型方案載入] (若此功能目前為停用) 或 [停用輕量型方案載入] (若此功能目前為啟用)：
 
@@ -87,7 +87,7 @@ Visual Studio 2017 支援「輕量型方案載入」，可減少在 IDE 中載�
 
 當您在 Visual Studio 2017 中開啟大型方案時，可能會看到啟用輕量型解決方案載入的快顯訊息。 只有包含許多 C#、VB 或 C++ 專案的方案，才會出現此訊息。 選擇 [啟用] 可以只針對該方案啟動輕量型方案載入。 整個 IDE 的設定並未變更。
 
-![快顯視窗](~/ide/media/VSIDE_LSL Popup.png)
+![快顯視窗](../ide/media/VSIDE_LSL Popup.png)
 
 您之後可以在方案的 [屬性] 視窗中停用輕量型方案載入。
 
