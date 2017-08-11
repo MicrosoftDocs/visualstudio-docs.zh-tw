@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 中的 Python 環境 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 7/25/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: f73c0c7c40d1edd18cccb1ba69424c4e34472c33
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: fa8a7616fe88f024ab299e5d115b66f8656e7cb3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -52,7 +52,7 @@ Visual Studio 中的 Python 可讓您輕鬆管理多個 Python 環境，以及�
 
 ## <a name="selecting-and-installing-python-interpreters"></a>選取並安裝 Python 解譯器
 
-除了 Visual Studio 2017 之外，Python 解譯器並未隨附 Python 支援，因此您必須安裝下列其中之一，才能執行您的程式碼。 一般而言，Visual Studio 會自動偵測新安裝的解譯器，並為它們設定環境。 如果情況並非如此，請參閱下面的[為現有的解譯器建立環境](#creating-an-environment-for-an-existing-interpreter)。
+除了 Visual Studio 2017 之外，Python 解譯器並未隨附 Python 支援，因此您必須安裝下列其中之一，才能執行您的程式碼。 一般而言，Visual Studio 會自動偵測新安裝的解譯器，並為每一個解譯器設定環境。 如果偵測不到安裝的環境，請參閱[為現有的解譯器建立環境](#creating-an-environment-for-an-existing-interpreter)。
 
 | 解譯器 | 描述 | 
 | --- | --- | 
@@ -89,7 +89,7 @@ Visual Studio 中的 Python 可讓您輕鬆管理多個 Python 環境，以及�
 
 ### <a name="creating-an-environment-for-an-existing-interpreter"></a>為現有的解譯器建立環境
 
-Visual Studio 通常是透過檢查登錄來找出已安裝的 Python 解譯器，但如果解譯器不是以標準方式安裝，就有可能找不到該解譯器。 在這種情況下，您可以依照下列方式，將 Visual Studio 直接指向解譯器：
+Visual Studio 通常會透過檢查登錄來找出安裝的 Python 解譯器 (依照 [PEP 514 - Windows 登錄中的 Python 註冊](https://www.python.org/dev/peps/pep-0514/)) \(英文)\。 不過，如果解譯器以非標準方式安裝，Visual Studio 可能無法找到解譯器。 在這種情況下，您可以依照下列方式，將 Visual Studio 直接指向解譯器：
 
 1. 在「環境視窗」中選取 [+ Custom (+ 自訂)]，這會建立一個新環境並開啟 [[Configure (設定)] 索引標籤](#configure-tab) (下面會說明)。
 
@@ -99,7 +99,15 @@ Visual Studio 通常是透過檢查登錄來找出已安裝的 Python 解譯器�
 1. 在 [Prefix path (前置路徑)] 欄位中，輸入或瀏覽至解譯器的路徑。
 1. 選取 [Auto Detect (自動偵測)] 來讓 Visual Studio 完成其餘欄位，或是手動完成它們。
 1. 選取 [Apply (套用)] 來儲存環境。
-1. 如果您需要移除環境，請在 [Configure (設定)] 索引標籤上選取 [Remove (移除)]。
+1. 如果您需要移除環境，請在 [Configure (設定)] 索引標籤上選取 [Remove (移除)]。 自動偵測環境不會提供這個選項。 如需詳細資訊，請參閱下一章節。
+
+### <a name="moving-an-existing-interpreter"></a>移動現有的解譯器
+
+如果您將現有的解譯器移至檔案系統上新的位置，Visual Studio 不會自動偵測變更。 您必須透過手動步驟來更新 [環境] 視窗中的清單：
+
+- 如果您最初是針對該解譯器來建立環境，請編輯該環境以指向新的位置。
+
+- 如果最初是自動偵測的環境，則環境是使用特定的安裝程式安裝在電腦上，而該安裝程式會建立登錄項目以供 Visual Studio 檢查。 在此情況下，請先將 Python 解譯器還原到其原始位置。 然後使用安裝程式將它解除安裝，以清除登錄項目。 接著，在所需的位置重新安裝解譯器。 重新啟動 Visual Studio，應該就會自動偵測新的位置。 此程序可確保正確地套用安裝程式的任何其他副作用。
 
 ### <a name="overview-tab"></a>Overview (概觀) 索引標籤
 

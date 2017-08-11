@@ -27,24 +27,24 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 1600207e0c504f4b4dcbf620e92bcc06e14ec035
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 4401606f97452de235b8a2d406451e5481518006
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
-您可以使用 *.runsettings 檔案設定 Visual Studio 中的單元測試。 (檔案名稱並不重要，但前提是您使用副檔名 '.runsettings'。) 例如，您可以變更執行測試的 .NET Framework、傳遞測試結果的所在目錄，以及測試回合期間所收集的資料。  
+您可以使用 \*.runsettings 檔案來設定 Visual Studio 中的單元測試。 (檔案名稱並不重要，但前提是您使用副檔名 '.runsettings'。) 例如，您可以變更執行測試的 .NET Framework、傳遞測試結果的所在目錄，以及測試回合期間所收集的資料。  
   
- 如果您不想要執行任何特殊組態，則不需要 *.runsettings 檔案。 最常見做法是自訂[程式碼涵蓋範圍](../test/customizing-code-coverage-analysis.md)。  
+ 如果不想要執行任何特殊設定，則不需要 \*.runsettings 檔案。 最常見做法是自訂[程式碼涵蓋範圍](../test/customizing-code-coverage-analysis.md)。  
   
 > [!NOTE]
 >  **.runsettings 和 .testsettings**  
 >   
->  有兩種類型的檔案可用來設定測試。 *.runsettings 是用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 Intellitrace 和事件記錄配接器)。  
+>  有兩種類型的檔案可用來設定測試。 \*.runsettings 可用於單元測試。 而 \*.testsettings 是針對[實驗室環境測試](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)、Web 效能和負載測試以及用於自訂一些類型的診斷資料配接器 (例如 Intellitrace 和事件記錄配接器)。  
 >   
->  在舊版 Visual Studio 到 2010 中，也是使用 *.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
+>  到 2010 為止的舊版 Visual Studio 中，也是使用 \*.testsettings 檔案來自訂單元測試。 您還是可以這麼做，但是測試的執行速度比使用 \*.runsettings 檔案中的對等組態還要慢。  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>使用 .runsettings 檔案自訂測試  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 05/13/2017
  ![啟用回合設定檔](../test/media/runsettings-1.png "RunSettings-1")  
   
 ##  <a name="example"></a> 複製這個範例 .runsettings 檔案  
- 以下是一般 *.runsettings 檔案。 因為每個值都有預設值，因此該檔案的每個項目都是選擇性的。  
+ 以下是一般 \*.runsettings 檔案。 因為每個值都有預設值，因此該檔案的每個項目都是選擇性的。  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  

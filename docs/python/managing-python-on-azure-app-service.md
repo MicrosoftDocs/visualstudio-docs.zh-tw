@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 5b509a46dd3dbee3a45ab2eac57242636beee17b
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 56fccdd5e103cf29c8ea4a93ab80de7187275642
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -176,7 +176,7 @@ HTTP 平台模組會將通訊端連線直接傳遞至獨立 Python 程序。 這
 }
 ```
 
-如需命令和驗證的資訊，請參閱 [Kudu 文件](https://github.com/projectkudu/kudu/wiki/REST-API)。 您也可以從 Azure CLI 使用 [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) 來查看認證。 GitHub 上也提供張貼 Kudu 命令的協助程式程式庫](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42)。
+如需命令和驗證的資訊，請參閱 [Kudu 文件](https://github.com/projectkudu/kudu/wiki/REST-API)。 您也可以從 Azure CLI 使用 [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) 來查看認證。 公佈 Kudu 命令的協助程式程式庫也[在 GitHub 上提供使用](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) \(英文\)。
 
 
 ### <a name="copying-libraries-into-app-source-code"></a>將程式庫複製至應用程式原始程式碼
@@ -188,3 +188,4 @@ HTTP 平台模組會將通訊端連線直接傳遞至獨立 Python 程序。 這
 ### <a name="avoiding-virtual-environments"></a>避免虛擬環境
 
 雖然在虛擬環境中本機工作可協助您完全了解網站所需的相依性，但是不建議在 App Service 上使用虛擬環境。 相反地，只要將程式庫安裝到您的主要 Python 資料夾，並部署它們與您的應用程式，即可避免相依性衝突。
+

@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 029b5627cf8f7213dfe3bab233db01fe27aa6c49
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: d1e2efc557f90d01a955710d53a1f2724b5f5f7d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/03/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
@@ -58,7 +58,7 @@ ms.lasthandoff: 06/03/2017
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 tlbimp.exe 和 aximp.exe，以產生必要的包裝函式組件。 此參數允許多目標的 `ResolveComReferences`。|  
 |`FilesWritten`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含寫入至磁碟的所有檔案名稱。 這包括快取檔案 (如果有的話)。 此參數對於 Clean 的實作很有用。|  
 |`MinimalRebuildFromTracking`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定參數，指定是否將使用追蹤式累加建置。 如果為 `true`，會開啟累加建置，否則會強制重建。|  
-|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 指定所產生檔案 (例如 .resources 檔案) 的名稱。 如果未指定名稱，會使用符合的輸入檔名稱，且建立的 .resources 檔案會置於包含該輸入檔的目錄中。|  
+|`NeverLockTypeAssemblies`|選擇性的 `Boolean` 參數。<br /><br /> 取得或設定布林值，該值可指定是否建立新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain) 以評估資源 (.resx) 檔 (true)，或是只有當資源檔參考使用者的組件 (false) 時建立新的 [AppDomain](https://docs.microsoft.com/dotnet/api/system.appdomain)。|  
 |`OutputResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定所產生檔案 (例如 .resources 檔案) 的名稱。 如果未指定名稱，會使用符合的輸入檔名稱，且建立的 .resources 檔案會置於包含該輸入檔的目錄中。|  
 |`PublicClass`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會建立強型別資源類別做為公用類別。|  
 |`References`|選擇性的 `String[]` 參數。<br /><br /> 要從中載入 .resx 檔型別的參考。 Resx 檔案資料元素可能具有 .NET 型別。 讀取 .resx 檔時，必須解析此型別。 一般而言，使用標準型別載入規則即可順利解析。 如果您提供 `References` 中的組件，則會優先使用它們。<br /><br /> 強型別資源不需要此參數。|  
@@ -112,3 +112,4 @@ ms.lasthandoff: 06/03/2017
 ## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)
+

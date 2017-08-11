@@ -35,10 +35,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 5c28e68b89f6583dc35a91b275693c11e0259dfd
-ms.openlocfilehash: 6e4094925eec3e4a8768219180e75fa9d1f1fa03
+ms.sourcegitcommit: 14c21f67beb92d3b13a5c54c755ccb846d116a9c
+ms.openlocfilehash: aaa19a3a818c3fa3196d79959ee30c5eae4c1b5f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 08/05/2017
 
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初級開發人員指南
@@ -48,7 +48,9 @@ ms.lasthandoff: 07/13/2017
 
 診斷中樞提供許多其他選項來執行和管理診斷工作階段。 如果 [CPU 使用量] 沒有提供您所需的資料，則[其他程式碼剖析工具](../profiling/Profiling-Tools.md)可提供不同種類的資訊，這可能會很有幫助。 在許多情況下，應用程式的效能瓶頸可能是 CPU 以外的問題所導致，例如記憶體、呈現 UI 或網路要求時間。 診斷中樞提供許多其他選項來記錄和分析這類資料。
 
-您也可以[觀看使用診斷工具的影片](#video)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。
+|         |         |
+|---------|---------|
+| ![觀看影片](../install/media/video-icon.png "WatchVideo") | [觀看使用診斷工具的影片](#video)，了解如何分析 CPU 使用量，以及如何分析記憶體使用量。 |
 
 在本主題中，我們將討論一般偵錯工作流程中的 CPU 使用量分析。 您也可以不附加偵錯工具來分析 CPU 使用量，或是以執行中的應用程式為目標，如需詳細資訊，請參閱[執行程式碼剖析工具但不偵錯](../profiling/running-profiling-tools-with-or-without-the-debugger.md)。
   

@@ -31,11 +31,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b5c18e7d208879498c1923403ec1bd213adffb5a
+ms.translationtype: HT
+ms.sourcegitcommit: f0576ce6dd78fe1328bcea3ab9a27507ddc0f2c0
+ms.openlocfilehash: 4811dda912f20272733a4d878fc8c607eb2573fc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能支援測試優先
@@ -60,7 +60,21 @@ ms.lasthandoff: 05/24/2017
      ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png "NewProject_Test")  
 新增專案對話方塊  
   
-4.  按一下 [確定]  關閉 [新增專案]  對話方塊。 您已準備好可開始撰寫測試  
+4.  按一下 [確定]  關閉 [新增專案]  對話方塊。
+
+5.  在您的類別專案內，於 [方案總管] 中，以滑鼠右鍵按一下 [參考] 項目，並按一下 [加入參考]。
+
+6.  在 [參考管理員] 對話方塊中，選取 [專案]，然後選取您的單元測試專案。
+
+7.  按一下 [確定] 以關閉 [參考管理員] 對話方塊。
+
+8.  在 **Class1**檔案中，於最後一個現有 **using** 陳述式的正後方，針對測試專案加入 **using** 陳述式：
+
+    * 在 Visual Basic 中，加入 `Using UnitTestProject1`
+    
+    * 在 C# 中，加入 `using UnitTestProject1;`
+    
+9.  儲存您的方案。 您已準備好開始撰寫測試。  
   
 ### <a name="to-generate-a-new-class-from-a-unit-test"></a>從單元測試產生新類別  
   
@@ -73,18 +87,18 @@ ms.lasthandoff: 05/24/2017
   
 3.  找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile`的類別新執行個體，如下列圖例所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，類型名稱下會出現智慧標籤。 智慧標籤的確切位置會因您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 而不同。  
   
-     ![Visual Basic 中的智慧標籤底線](~/ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Visual Basic 中的智慧標籤底線](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![C&#35; 中的智慧標籤底線](~/ide/media/genclass_underline.png "GenClass_Underline")  
+     ![C&#35; 中的智慧標籤底線](../ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
 4.  將滑鼠指標停留在智慧標籤上查看錯誤訊息，表示尚未定義任何名為 `Automobile` 的類型。 按一下智慧標籤，或按 CTRL+。 (CTRL+ 句號) 開啟 [從用量產生] 快顯功能表，如下圖所示。  
   
-     ![Visual Basic 中的智慧標籤操作功能表](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
+     ![Visual Basic 中的智慧標籤內容功能表](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
 Visual Basic  
   
-     ![C&#35; 中的智慧標籤操作功能表](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
+     ![C&#35; 中的智慧標籤內容功能表](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
 Visual C#  
   
 5.  您現在有兩種選擇。 您可以按一下 [產生 'Class Automobile']  在測試專案中建立新的檔案，並填入名為 `Automobile`的空類別。 這可以在新檔案中快速建立新類別，這個新檔案具有目前專案的預設存取修飾詞。 您也可以按一下 [產生新的類型]  開啟 [產生新的類型]  對話方塊。 提供的選項包括將類別放在現有的檔案，以及將檔案加入另一個專案中。  
@@ -112,10 +126,10 @@ Visual C#
   
      下圖顯示智慧標籤的快顯功能表。  
   
-     ![Visual Basic 中的產生屬性操作功能表](~/ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Visual Basic 中的產生屬性內容功能表](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![C&#35; 中的產生屬性操作功能表](~/ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![C&#35; 中的產生屬性內容功能表](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
 ### <a name="to-locate-the-source-code"></a>找出原始程式碼  
@@ -161,7 +175,7 @@ Visual C#
   
      下圖顯示 [測試結果]  視窗。  
   
-     ![失敗的測試結果](~/ide/media/testsfailed.png "TestsFailed")  
+     ![失敗的測試結果](../ide/media/testsfailed.png "TestsFailed")  
 測試結果視窗  
   
 2.  在 [測試結果]  視窗中，在每個測試結果資料列按兩下，移至每一項測試失敗的位置。  

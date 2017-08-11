@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 04937d3cd1a16e0be90305221850e691c8d18c50
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -37,7 +37,7 @@ ms.lasthandoff: 07/18/2017
 
 1. 開啟在 Visual Studio 中載入的 [Python 專案](python-projects.md)，以滑鼠右鍵按一下專案，選取[新增] > [新增項目...]，然後選取 [Python 單元測試]，再選取 [新增]。
 
-1. 如果您直接執行指令碼，則這個動作會建立 `test1.py file with code that imports the standard `unittest` module, derives a test class from `unittest.TestCase`, and invokes `unittest.main()`：
+1. 此動作會建立 `test1.py` 檔案，其中的程式碼會匯入標準 `unittest` 模組、從 `unittest.TestCase` 衍生測試類別，並在直接執行指令碼的情況下叫用 `unittest.main()`：
 
   ```python
   import unittest

@@ -15,59 +15,45 @@ ms.assetid: 556EDD3F-E365-43EE-B3DD-03AA4353F75B
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d9de84bed187c62962a76424aabdc5f355dff4dc
-ms.openlocfilehash: e6c301a7b784c5966d4f7216e67067ef6ce3ed70
+ms.translationtype: HT
+ms.sourcegitcommit: 89f86a5935ad283ef5c0e29ea2db0ae22cf603a8
+ms.openlocfilehash: 0fd361edd5bc5056f09c64aa4499a10a50656546
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 08/07/2017
 
 ---
 # <a name="troubleshooting-visual-studio-2017-installation-and-upgrade-issues"></a>針對 Visual Studio 2017 安裝和升級問題進行疑難排解
 
 ## <a name="symptoms"></a>徵兆
-當您嘗試安裝或更新 Microsoft Visual Studio 2017 時，作業失敗。
+當您嘗試安裝或更新 Visual Studio 2017 時，作業會失敗。
 
 ## <a name="workaround"></a>因應措施
 若要暫時解決此問題，請依照這些步驟執行。
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>步驟 1 - 查看此問題是否為已知問題
-Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正。 查看[我們版本資訊的已知問題區段](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes#KIinstall)，看看是否有您問題的因應措施。
+Visual Studio 安裝程式有一些已知問題，Microsoft 正在努力修正。 查看[我們版本資訊的已知問題區段](https://www.visualstudio.com/news/releasenotes/vs2017-knownissues)，看看是否有您問題的因應措施。
 
 ### <a name="step-2---check-with-the-developer-community"></a>步驟 2 - 查看開發人員社群
-在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方案。
+在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/spaces/8/index.html)\(英文\) 中搜尋您的錯誤訊息。 社群的其他成員可能已記錄您問題的解決方案。
 
 ### <a name="step-3---delete-the-visual-studio-installer-directory-to-fix-upgrade-problems"></a>步驟 3 - 刪除 Visual Studio 安裝程式目錄，以修正升級問題
-Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可安裝 Visual Studio 安裝程式的其餘部分。 刪除 Visual Studio 安裝程式檔案，然後重新執行啟動載入器，可能可以解決一些更新失敗問題。 若要執行此動作，請依照下列步驟執行：
+Visual Studio 安裝程式啟動載入器是最小的輕量型可執行檔，可安裝 Visual Studio 安裝程式的其餘部分。 刪除 Visual Studio 安裝程式檔案，然後重新執行啟動載入器，可能可以解決一些更新失敗問題。
+
+**注意：**執行下列動作將會重新安裝 Visual Studio 安裝程式檔案並重設安裝中繼資料。
 
 1. 關閉 Visual Studio 安裝程式。
 2. 刪除 Visual Studio 安裝程式目錄。 一般而言，目錄為 C:\Program Files (x86)\Microsoft Visual Studio\Installer。
-3. 執行 Visual Studio 安裝程式啟動載入器。 您可在 [下載] 資料夾中找到檔名遵循 ```vs_[Visual Studio edition]__*.exe``` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://www.visualstudio.com/downloads/)頁面並按一下您的 Visual Studio 版本的 [下載] 來下載啟動載入器。 執行這個可執行檔以重設您的安裝中繼資料。
-4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式繼續失敗，請移至以下的步驟 4。
-<br/>**注意：**此步驟會重新安裝 Visual Studio 安裝程式檔案並重設安裝中繼資料。
+3. 執行 Visual Studio 安裝程式啟動載入器。 您可在 [下載] 資料夾中找到檔名遵循 ```vs_[Visual Studio edition]__*.exe``` 模式的啟動載入器。 如果找不到該應用程式，請移至 [Visual Studio 下載](https://www.visualstudio.com/downloads/)頁面並按一下您 Visual Studio 版本的 [下載] 來下載啟動載入器。 執行該可執行檔來重設您的安裝中繼資料。
+4. 嘗試重新安裝或更新 Visual Studio。 如果安裝程式持續失敗，請移至下一步驟。
 
 ### <a name="step-4---report-a-problem"></a>步驟 4 - 回報問題
 在某些情況下 (例如與損毀的檔案相關的問題)，則必須逐一查看問題：
 
-1. 下載 [ Microsoft Visual Studio and the .NET Framework Log Collection Tool (Microsoft Visual Studio 和 .NET Framework 記錄收集工具)](https://www.microsoft.com/en-us/download/details.aspx?id=12493)，然後執行它。 此工具會收集及編譯適用於 Visual Studio、.NET Framework 和 SQL Server 安裝的可用安裝程式記錄檔。
+1. 下載 [ Microsoft Visual Studio and the .NET Framework Log Collection Tool (Microsoft Visual Studio 和 .NET Framework 記錄收集工具)](https://aka.ms/vscollect)，然後執行它。 此工具會收集及編譯適用於 Visual Studio、.NET Framework 和 SQL Server 安裝的可用安裝程式記錄檔。
 2. 開啟 Visual Studio 安裝程式，然後按一下 [回報問題] 以開啟「Visual Studio 意見反應」工具。
-![您可以使用 Tab 鍵移至 [提供意見反應] 按鈕以開啟意見反應工具](~/install/media/report-a-problem.png)
+![您可以使用 Tab 鍵移至 [提供意見反應] 按鈕以開啟意見反應工具](media/report-a-problem.png)
 3. 提供問題報告標題，並提供相關詳細資料。 按一下 [下一步] 以移至 [附件] 區段，然後附加產生的記錄檔 (一般而言，該檔案位於 %TEMP%\vslogs.zip)。
-![使用 Tab 鍵移至 [回報新問題]，然後依照步驟執行](~/install/media/problem-report-details.png)
+![使用 Tab 鍵移至 [回報新問題]，然後依照步驟執行](media/problem-report-details.png)
 4. 按一下 [下一步] 以檢閱您的問題報告，然後按一下 [提交]。
 
 ### <a name="step-5---run-installcleanupexe-to-clean-up-installation-files"></a>步驟 5 - 執行 InstallCleanup.exe 以清除安裝檔案

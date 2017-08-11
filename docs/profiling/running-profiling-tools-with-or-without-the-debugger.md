@@ -13,11 +13,11 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8d0cc37019b04d6f734d6bd604c0ddd948b6dc9f
+ms.translationtype: HT
+ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
+ms.openlocfilehash: 30ac6d277edf54ac56294ea0639a471a22dc00da
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/08/2017
 
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行程式碼剖析工具
@@ -38,7 +38,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 3.  您是否需要精確的量測效能或可接受約略數字？  
   
-     偵錯組建缺少「版本」組建提供的某些最佳化功能，例如內嵌函式呼叫和常數、清除未用的程式碼路徑，以及無法採用偵錯工具所用的方式來儲存變數。 偵錯工具本身由於需要執行特定作業進行偵錯 (例如攔截例外和模組載入事件)，因此效能時有差異。 基於以上原因，偵錯工具整合工具的效能數字表現精確度範圍僅為數十毫秒。 具非偵錯工具的「版本」設定其效能數字會更加精確。  
+     偵錯組建缺少「版本」組建提供的某些最佳化功能，例如內嵌函式呼叫和常數、清除未用的程式碼路徑，以及無法採用偵錯工具所用的方式來儲存變數。 偵錯工具本身由於需要執行特定作業進行偵錯 (例如攔截例外和模組載入事件)，因此效能時有差異。 偵錯工具整合工具的效能數字較不精確，因為它們不會考慮偵錯工具最佳化，但是當與其他偵錯時所取得的相對量值比較時，仍相當有用。 具非偵錯工具的「版本」設定其效能數字會更加精確。
   
 ##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a>偵錯時收集程式碼剖析資料  
  下列章節說明本機偵錯。 您可以在稍後的各節裡，了解在裝置上偵錯或遠端偵錯。  
@@ -63,11 +63,11 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
  這個視窗現在會有一個搜尋方塊，讓您可以找到事件清單中任何位置的特定字串。 例如，下圖顯示搜尋字串 "install" 的結果，其符合四個事件：  
   
- ![DiagnosticsEventSearch](~/profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
+ ![DiagnosticsEventSearch](../profiling/media/diagnosticseventsearch.png "DiagnosticsEventSearch")  
   
  您也可以在視窗中篩選事件，來進行檢視或隱藏。 在 [篩選]  下拉式清單中，您可以核取或取消核取特定類別的事件。 類別名稱與前置詞名稱相同。  
   
- ![DiagnosticEventFilter](~/profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
+ ![DiagnosticEventFilter](../profiling/media/diagnosticeventfilter.png "DiagnosticEventFilter")  
   
  如需詳細資訊，請參閱 [搜尋和篩選診斷工具視窗的事件索引標籤](http://blogs.msdn.com/b/visualstudioalm/archive/2015/11/12/searching-and-filtering-the-events-tab-of-the-diagnostic-tools-window.aspx)。  
   
@@ -80,7 +80,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 3.  在診斷啟動頁面上，選擇要在工作階段中執行的一項或多項工具。 只有適用於該專案類型、作業系統與程式設計語言的工具才會顯示。 當您選擇一項診斷工具時，將會停用無法在相同診斷工作階段中執行的工具選項。 以下是 C# Windows 通用應用程式中可能會有的選項：  
   
-     ![選取診斷工具](~/profiling/media/diag_selecttool.png "DIAG_SelectTool")  
+     ![選取診斷工具](../profiling/media/diag_selecttool.png "DIAG_SelectTool")  
   
 4.  若要開始診斷工作階段，請按一下 [開始]。  
   
@@ -88,7 +88,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
      執行工作階段期間，某些工具在診斷工具啟動頁面上會顯示即時資料圖表。  
   
-     ![在 [效能及診斷] 頁面上收集資料](~/profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
+     ![在 [效能及診斷] 頁面上收集資料](../profiling/media/pdhub_collectdata.png "PDHUB_CollectData")  
   
 6.  若要結束診斷工作階段，請按一下 [停止收集]。  
   
@@ -96,32 +96,32 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
  此外，您也可以從診斷工具啟動頁面的最近開啟清單中，開啟已儲存的 .diagnostic 工作階段檔案。  
   
- ![開啟已儲存的診斷工作階段檔案](~/profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
+ ![開啟已儲存的診斷工作階段檔案](../profiling/media/pdhub_openexistingdiagsession.png "PDHUB_OpenExistingDiagSession")  
   
 ## <a name="the-profiling-report"></a>程式碼剖析報表  
- ![診斷工具報表](~/profiling/media/diag_report.png "DIAG_Report")  
+ ![診斷工具報表](../profiling/media/diag_report.png "DIAG_Report")  
   
 |||  
 |-|-|  
-|![步驟 1](~/profiling/media/procguid_1.png "ProcGuid_1")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
-|![步驟 2](~/profiling/media/procguid_2.png "ProcGuid_2")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|  
-|![步驟 3](~/profiling/media/procguid_3.png "ProcGuid_3")|這項工具會顯示一個或多個主要圖表。 如果您的診斷工作階段是使用多項工具所建立，則會顯示所有主要圖表。|  
-|![步驟 4](~/profiling/media/procguid_4.png "ProcGuid_4")|您可以摺疊和展開個別圖表。|  
-|![步驟 5](~/profiling/media/procguid_6.png "ProcGuid_6")|當您的資料包含來自多項工具的資訊時，該工具的詳細資料會收集在索引標籤之下。|  
-|![步驟 6](~/profiling/media/procguid_6a.png "ProcGuid_6a")|這項工具可以有一個或多個詳細資料檢視。 檢視會經過特定時間軸區域篩選。|  
+|![步驟 1](../profiling/media/procguid_1.png "ProcGuid_1")|時間軸會顯示程式碼剖析工作階段的長度、應用程式週期啟用事件，以及使用者標記。|  
+|![步驟 2](../profiling/media/procguid_2.png "ProcGuid_2")|您可以拖曳藍色巡覽列，選取時間軸的區域，將報告限制在時間軸的一部分。|  
+|![步驟 3](../profiling/media/procguid_3.png "ProcGuid_3")|這項工具會顯示一個或多個主要圖表。 如果您的診斷工作階段是使用多項工具所建立，則會顯示所有主要圖表。|  
+|![步驟 4](../profiling/media/procguid_4.png "ProcGuid_4")|您可以摺疊和展開個別圖表。|  
+|![步驟 5](../profiling/media/procguid_6.png "ProcGuid_6")|當您的資料包含來自多項工具的資訊時，該工具的詳細資料會收集在索引標籤之下。|  
+|![步驟 6](../profiling/media/procguid_6a.png "ProcGuid_6a")|這項工具可以有一個或多個詳細資料檢視。 檢視會經過特定時間軸區域篩選。|  
   
 ## <a name="setting-the-analysis-target-to-another-device"></a>將另一部裝置設定為分析目標  
  除了從 Visual Studio 專案啟動您的應用程式之外，您也可以在替代目標上執行診斷工作階段。 例如，您可能想要在從 Windows 市集安裝的應用程式版本上診斷效能問題。  
   
- ![選擇診斷工具分析目標](~/profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
+ ![選擇診斷工具分析目標](../profiling/media/pdhub_chooseanalysistarget.png "PDHUB_ChooseAnalysisTarget")  
   
  您可以啟動裝置上已安裝的應用程式，也可以將診斷工具附加至已在執行中的某些應用程式。 當您選擇 [執行中的應用程式] 或 [已安裝的應用程式] 時，您可以從指定的部署目標上探索到的應用程式清單中選取應用程式。  
   
- ![選擇診斷執行中或已安裝的應用程式](~/profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")  
+ ![選擇診斷執行中或已安裝的應用程式](../profiling/media/pdhub_selectrunningapp.png "PDHUB_SelectRunningApp")  
   
  選擇 [Internet Explorer] 時，您可以指定 URL 以及變更手機部署目標。  
   
- ![指定要在 Internet Explorer 中顯示的 URL](~/profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
+ ![指定要在 Internet Explorer 中顯示的 URL](../profiling/media/pdhub_choosephoneanalysistarget.png "PDHUB_ChoosePhoneAnalysisTarget")  
   
 ## <a name="remote-debugging"></a>Remote Debugging  
  在遠端電腦或平板電腦上執行診斷工作階段需要安裝 Visual Studio 遠端工具，並使其於遠端目標上執行。 若為傳統型應用程式，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  若為 Windows 通用應用程式，請參閱[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
@@ -142,3 +142,4 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
  [Visual Studio 2015 中的診斷工具偵錯工具視窗 (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
  [Visual Studio Enterprise 2015 中的 IntelliTrace (英文)](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/intellitrace-in-visual-studio-ultimate-2015.aspx)
+
