@@ -13,6 +13,7 @@
 ## [管理外部工具](managing-external-tools.md)
 ## [Visual Studio 中的同步設定](synchronized-settings-in-visual-studio.md)
 # [最佳化 Visual Studio 啟動時間](optimize-visual-studio-startup-time.md)
+# [Visual Studio 效能祕訣和訣竅](visual-studio-performance-tips-and-tricks.md)
 # [如何：在 Visual Studio IDE 中四處移動](how-to-move-around-in-the-visual-studio-ide.md)
 # [Visual Studio 使用者開發入門](get-started-developing-with-visual-studio.md)
 ## [Visual C# 和 Visual Basic 使用者入門](getting-started-with-visual-csharp-and-visual-basic.md)
