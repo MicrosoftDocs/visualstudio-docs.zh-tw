@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 05/10/2017
+ms.date: 08/09/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -32,11 +32,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 25704ab33e59ccea06d2234e3761b3a05106fcdd
+ms.translationtype: HT
+ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
+ms.openlocfilehash: aa13502c48937ec10e88ea175df2e15e97a8bcaf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 
@@ -54,6 +54,7 @@ ms.lasthandoff: 05/13/2017
 
 
 如需有關如何使用這些識別碼的詳細資訊，請參閱[使用命令列參數安裝 Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md) 頁面。 而如需其他產品的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼 (英文)](workload-and-component-ids.md) 頁面。
+
 
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2017"></a>Visual Studio 核心編輯器 (隨附於 Visual Studio Enterprise 2017)
 
@@ -101,7 +102,7 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | 建議
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | 建議
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.0.26323.1 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.0.26419.1 | 建議
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Azure 計算模擬器 | 15.0.26419.1 | 建議
@@ -167,7 +168,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.0.26208.0 | 建議
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | 建議
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.0.26323.1 | 建議
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.0.26419.1 | 建議
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 建議
@@ -275,7 +276,7 @@ Microsoft.Net.Component.4.5.2.TargetingPack | .NET Framework 4.5.2 目標套件 
 Microsoft.Net.Component.4.5.TargetingPack | .NET Framework 4.5 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | 建議
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | 建議
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心編輯器 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | 程式碼剖析工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.EntityFramework | Entity Framework 6 工具 | 15.0.26208.0 | 建議
@@ -416,7 +417,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | Optional
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 與 Visual Basic Roslyn 編譯程式 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# 和 Visual Basic | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.0.26208.0 | Optional
@@ -594,7 +595,7 @@ Microsoft.VisualStudio.Component.WebDeploy | Web Deploy | 15.0.26208.0 | 必要
 Microsoft.Net.Component.4.5.1.TargetingPack | .NET Framework 4.5.1 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | 建議
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | 建議
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | 建議
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心編輯器 | 15.0.26208.0 | 建議
 Microsoft.VisualStudio.Component.DiagnosticTools | 程式碼剖析工具 | 15.0.26208.0 | 建議
@@ -623,7 +624,7 @@ Microsoft.VisualStudio.Web.Mvc4.ComponentGroup | ASP.NET MVC 4 | 15.0.26208.0 | 
 
 **識別碼：**Microsoft.VisualStudio.Workload.Node
 
-**描述：**使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。
+**描述：**使用非同步的事件驅動 JavaScript 執行階段 Node.js 來建置可調整的網路應用程式。 
 
 ### <a name="components-included-by-this-workload"></a>此工作負載所包含的元件
 
@@ -736,7 +737,7 @@ Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目標套件 
 Microsoft.Net.Component.4.6.TargetingPack | .NET Framework 4.6 目標套件 | 15.0.26208.0 | Optional
 Microsoft.Net.Component.4.TargetingPack | .NET Framework 4 目標套件 | 15.0.26208.0 | Optional
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET Framework 4.6.1 開發工具 | 15.0.26208.0 | Optional
-Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 - 4.6 開發工具 | 15.0.26208.0 | Optional
+Microsoft.Net.ComponentGroup.TargetingPacks.Common | .NET Framework 4 – 4.6 開發工具 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.AppInsights.Tools | 開發人員分析工具 | 15.0.26323.1 | 選擇性
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Azure 製作工具 | 15.0.26419.1 | 選擇性
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Azure Libraries for .NET | 15.0.26208.0 | 選擇性
@@ -909,6 +910,8 @@ Microsoft.VisualStudio.Component.SQL.CLR | SQL Server 的 CLR 資料類型 | 15.
 Microsoft.VisualStudio.Component.VisualStudioData | 資料來源與服務參考 | 15.0.26208.0 | Optional
 Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP | 適用於 UWP 的 Windows 10 SDK (10.0.15063.0)：C#、VB、JS | 15.0.26419.1 | 選擇性
 Microsoft.VisualStudio.ComponentGroup.UWP.Cordova | 適用於 Cordova 的通用 Windows 平台工具 | 15.0.26403.0 | Optional
+
+
 ## <a name="unaffiliated-components"></a>非附屬元件
 
 這些是未隨附於任何工作負載但可選取來作為個別元件的元件。
@@ -929,6 +932,7 @@ Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test
 Microsoft.VisualStudio.Component.TestTools.WebLoadTest | Web 效能與負載測試工具 | 15.0.26208.0
 Microsoft.VisualStudio.Component.TypeScript.2.0 | TypeScript 2.0 SDK | 15.0.26208.0
 Microsoft.VisualStudio.Component.TypeScript.2.1 | TypeScript 2.1 SDK | 15.0.26208.0
+
 
 ## <a name="see-also"></a>另請參閱
 
