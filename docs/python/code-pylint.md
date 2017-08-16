@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: cd841938f160420934941a5166184f79aca82be7
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 4b22d434b99bdd2648408b9191c5f050589883ae
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 
@@ -40,7 +40,7 @@ PyLint 警告和錯誤會出現在 [錯誤清單] 視窗中︰
 按兩下錯誤會帶您直接前往產生問題的原始程式碼。
 
 > [!Tip]
-> 如需所有 PyLint 輸出訊息的詳細清單，請參閱 [PyLint 功能參考 (英文)](https://pylint.readthedocs.io/en/latest/reference_guide/features.html)。
+> 如需所有 PyLint 輸出訊息的詳細清單，請參閱 [PyLint 功能參考 (英文)](https://pylint.readthedocs.io/en/latest/technical_reference/features.html)。
 
 ## <a name="setting-pylint-command-line-options"></a>設定 PyLint 命令列選項
 
@@ -59,3 +59,4 @@ PyLint 文件的 [command-line options](https://pylint.readthedocs.io/en/latest/
 1. 開啟檔案進行編輯，它包含您可以使用的各種設定。 若要停用警告，請找出 `[MESSAGES CONTROL]` 區段，然後找出該區段的 `disable` 設定。 您會看到一長串的特定訊息，可以在其中附加您想要的任何警告。 在此範例中，請附加 `,missing-docstring` (包括其中的逗號)。
 
 1. 儲存 `.pylintrc` 檔案，再次執行 PyLint，您會發現警告現在已經隱藏。
+
