@@ -25,15 +25,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 0120e0adfed2c27ebd17d446f2f0e5c808acff92
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 24e19e5752534fb8391fa3e11f250c4a7ed8a737
 ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 08/17/2017
 
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>叫用 VS 擴充功能中的文字轉換
-如果您要撰寫的 Visual Studio 擴充功能，例如功能表命令或[定義域專屬語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得<xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>服務，並將它轉換成<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> </xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating>  
+如果您要撰寫 Visual Studio 擴充功能，例如功能表命令或[網域特定領域語言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)，您可以使用文字範本化服務來轉換文字範本。 取得 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> 服務並將它轉換成  <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>。  
   
 ## <a name="getting-the-text-templating-service"></a>取得文字範本化服務  
   
@@ -55,9 +55,9 @@ string result = t4.ProcessTemplate(filePath, System.IO.File.ReadAllText(filePath
 ## <a name="passing-parameters-to-the-template"></a>將參數傳遞給範本  
  您可以將參數傳遞給範本。 在範本中，您可以使用 `<#@parameter#>` 指示詞取得參數值。  
   
- 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，必須與宣告的型別<xref:System.SerializableAttribute>，它必須衍生自<xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject>或</xref:System.SerializableAttribute> 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有的內建型別，例如**System.String**和**System.Int32**都是可序列化。  
+ 針對參數的類型，您必須使用可序列化或可封送處理的類型。 也就是說，類型必須使用 <xref:System.SerializableAttribute> 宣告或類型必須衍生自 <xref:System.MarshalByRefObject>。 這是必要的限制，因為文字範本會在不同的 AppDomain 中執行。 所有的內建類型，例如**System.String**和**System.Int32**都是可序列化。  
   
- 若要傳遞參數值，呼叫程式碼可以放入值中`Session`字典，或在<xref:System.Runtime.Remoting.Messaging.CallContext>.</xref:System.Runtime.Remoting.Messaging.CallContext>  
+ 為了傳遞參數值，呼叫的程式碼可以在 `Session` 字典或 <xref:System.Runtime.Remoting.Messaging.CallContext> 中放入值。  
   
  下列範例會使用兩個方法轉換簡短的測試範本：  
   
@@ -94,7 +94,7 @@ string result = t4.ProcessTemplate("",
 ```  
   
 ## <a name="error-reporting-and-the-output-directive"></a>錯誤報告和輸出指示詞  
- 處理期間所發生的任何錯誤都會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 錯誤視窗中。 此外，您可以藉由指定可實作<xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>回呼通知的錯誤  
+ 處理期間所發生的任何錯誤都會顯示在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 錯誤視窗中。 此外，指定實作 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback> 的回呼，也可以發出錯誤通知。  
   
  如果要將結果字串寫入檔案中，您可能會想要知道範本的 `<#@output#>` 指示詞中指定的副檔名和編碼。 此資訊也會傳遞至回呼。 如需詳細資訊，請參閱[T4 輸出指示詞](../modeling/t4-output-directive.md)。  
   
@@ -151,7 +151,7 @@ Sample text.
  編譯器警告會出現在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 錯誤視窗中，而且也會產生 `ErrorCallback` 的呼叫。  
   
 ## <a name="reference-parameters"></a>傳址參數  
- 您可以使用的參數類別，衍生自<xref:System.MarshalByRefObject>.</xref:System.MarshalByRefObject>傳遞值傳出文字範本  
+ 您可以使用衍生自 <xref:System.MarshalByRefObject> 的參數類別，將值傳出文字範本。  
   
 ## <a name="related-topics"></a>相關主題  
  若要從前置處理過的文字範本產生文字：  
@@ -161,5 +161,5 @@ Sample text.
  定義自訂主應用程式。 如需詳細資訊，請參閱[使用自訂主機處理文字範本](../modeling/processing-text-templates-by-using-a-custom-host.md)。  
   
  若要產生可在之後編譯及執行的原始程式碼：  
- 呼叫`t4.PreprocessTemplate()` <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.</xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>方法
+ 呼叫 `t4.PreprocessTemplate()` 的 <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating> 方法。
 

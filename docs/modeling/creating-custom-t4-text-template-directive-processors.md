@@ -1,70 +1,87 @@
 ---
-title: "建立自訂 T4 文字範本指示詞處理器 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "文字範本, 自訂指示詞處理器"
+title: "建立自訂 T4 文字範本指示詞處理器 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 29
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 29
----
-# 建立自訂 T4 文字範本指示詞處理器
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: a8f56201528b15da04c5861be5c9afdd9a9b379e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/17/2017
 
-「*文字範本轉換流程*」\(Text Template Transformation Process\) 採用「*文字範本*」\(Text Template\) 檔做為輸入，並產生文字檔做為輸出。  「*文字範本轉換引擎*」\(Text Template Transformation Engine\) 會控制流程，並與文字範本轉換主應用程式以及一個或多個文字範本「*指示詞處理器*」\(Directive Processor\) 互動來完成流程。  如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
+---
+# <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器
+*文字範本轉換流程*採用*文字範本*做為輸入和產生的文字檔做為輸出的檔案。 *文字範本轉換引擎*控制項與文字範本轉換主應用程式和一個或多個文字範本互動的處理程序和引擎*指示詞處理器*完成程序。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
  若要建立自訂指示詞處理器，您可以建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。  
   
- 這兩者之間的差異在於，<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 會實作從使用者取得參數並產生製作範本輸出檔之程式碼時所需的最基本介面；  <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 則實作需求\/供給設計模式。  <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 會處理 `requires` 和 `provides` 這兩個特別的參數。  例如，自訂指示詞處理器可能接受使用者提供的檔案名稱、開啟和讀取該檔案，然後將檔案的文字儲存在名為 `fileText` 的變數中。  <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 類別的子類別會將使用者提供的檔案名稱做為 `requires` 參數的值，並將用來儲存文字之變數的名稱當做 `provides` 參數的值。  這個處理器接著開啟和讀取該檔案，然後將檔案的文字儲存在指定的變數中。  
+ 在這兩者之間的差異在於<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>實作取得使用者的參數，並產生產生範本輸出檔案的程式碼所需的最低介面。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>實作要求/提供設計模式。 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>處理特殊的兩個參數，`requires`和`provides`。  例如，自訂指示詞處理器可能會接受來自使用者開啟的檔案名稱讀取的檔案，然後儲存檔案的文字中的變數，名為`fileText`。 子類別<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>類別可能需要從使用者檔案名稱的值為`requires`參數，以及用來儲存文字做為值的變數名稱`provides`參數。 此處理器會開啟和讀取檔案，然後將檔案的文字儲存在指定的變數。  
   
- 您必須先註冊自訂指示詞處理器，才能從 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的文字範本中呼叫它。  
+ 在呼叫自訂指示詞處理器中的文字範本之前[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您必須註冊它。  
   
- 如需如何加入相關登錄機碼的詳細資訊，請參閱[部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
+ 如需如何新增登錄機碼的詳細資訊，請參閱[部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)。  
   
-## 自訂指示詞  
- 自訂指示詞看起來如下：  
+## <a name="custom-directives"></a>自訂指示詞  
+ 自訂指示詞看起來像這樣：  
   
- `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" … #>`  
+ `<#@ MyDirective Processor="MyDirectiveProcessor" parameter1="value1" ... #>`  
   
- 當您想要從文字範本存取外部資料或資源時，可以使用自訂指示詞處理器。  
+ 當您想要從文字範本存取外部資料或資源，您可以使用自訂指示詞處理器。  
   
- 不同的文字範本可以共用單一指示詞處理器提供的功能，因此指示詞處理器可提供重複使用程式碼的方式。  內建的 `include` 指示詞也是同樣的情況，因為它可以用來提供共通的程式碼，在不同的文字範本之間共用。  但還是有些差別，`include` 指示詞所提供的任何功能都是固定的，無法接受參數。  如果您想要在文字範本中提供常用的功能並允許範本傳遞參數，就必須建立自訂指示詞處理器。  
+ 不同的文字範本可以共用單一的指示詞處理器所提供的功能，因此指示詞處理器，提供一種因素的程式碼重複使用。 內建`include`指示詞會很類似，因為您可以將程式碼分離出來並共用各不同的文字範本中使用它。 差別在於任何功能，`include`指示詞提供固定的不接受參數。 如果您想要提供文字範本的一般功能，並允許將參數傳遞的範本，您必須建立自訂指示詞處理器。  
   
- 舉例來說，自訂指示詞處理器可以是：  
+ 可能是自訂指示詞處理器的一些範例：  
   
--   接受使用者名稱及密碼做為參數並從資料庫傳回資料的指示詞處理器。  
+-   從資料庫可接受使用者名稱和密碼做為參數傳回資料的指示詞處理器。  
   
--   接受檔案名稱做為參數並開啟和讀取檔案的指示詞處理器。  
+-   開啟和讀取檔案的指示詞處理器做為參數接受檔案名稱。  
   
-### 自訂指示詞處理器的主體部分  
- 若要開發指示詞處理器，您必須建立繼承 <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> 或 <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor> 的類別。  
+### <a name="principal-parts-of-a-custom-directive-processor"></a>主體組件的自訂指示詞處理器  
+ 若要開發的指示詞處理器，您必須建立繼承的類別<xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor>或<xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>。  
   
- 您必須實作且最為重要的 `DirectiveProcessor` 方法如下。  
+ 最重要`DirectiveProcessor`必須實作的方法是，如下所示。  
   
--   `bool IsDirectiveSupported(string directiveName)`：如果指示詞處理器可以處理具名指示詞，則傳回 `true`。  
+-   `bool IsDirectiveSupported(string directiveName)`-傳回`true`如果具名指示詞可處理指示詞處理器。  
   
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`：範本引擎會在範本中每個出現指示詞的位置上呼叫此方法。  您的處理器應該會儲存這些結果。  
+-   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)`-範本引擎會呼叫這個方法，針對每個範本中的指示詞。 結果應該儲存您的處理器。  
   
- 在所有的 ProcessDirective\(\) 呼叫之後，範本引擎將會呼叫下列方法：  
+ 只有將所有呼叫之後，範本化引擎會呼叫這些方法：  
   
--   `string[] GetReferencesForProcessingRun()`：傳回範本程式碼所需之組件的名稱。  
+-   `string[] GetReferencesForProcessingRun()`-傳回範本程式碼所需的組件的名稱。  
   
--   `string[] GetImportsForProcessingRun()`：傳回可在範本程式碼中使用的命名空間。  
+-   `string[] GetImportsForProcessingRun()`-傳回可用的命名空間中的範本程式碼。  
   
--   `string GetClassCodeForProcessingRun()`：傳回範本程式碼可使用之方法、屬性及其他宣告的程式碼。  若要這麼做，最簡單的方式就是建置包含 C\# 或 Visual Basic 程式碼的字串。  若要能夠從使用任何 CLR 語言的範本呼叫指示詞處理器，您可以將陳述式建構成 CodeDom 樹狀結構，然後以範本使用的語言傳回序列化該樹狀結構的結果。  
+-   `string GetClassCodeForProcessingRun()`-傳回碼的方法、 屬性和範本程式碼可以使用其他宣告。 若要這樣做最簡單的方式是建立包含 C# 或 Visual Basic 程式碼的字串。 若要讓您指示詞處理器能夠呼叫使用任何 CLR 語言的範本，您為 CodeDom 樹狀結構建構陳述式，然後傳回結果的序列化範本所使用的語言中的樹狀結構。  
   
--   如需詳細資訊，請參閱[逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
+-   如需詳細資訊，請參閱[逐步解說： 建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。  
   
-## 本章節內容  
+## <a name="in-this-section"></a>本章節內容  
  [部署自訂指示詞處理器](../modeling/deploying-a-custom-directive-processor.md)  
- 說明如何註冊自訂指示詞處理器。  
+ 說明如何自訂指示詞處理器暫存器。  
   
  [逐步解說：建立自訂指示詞處理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
- 說明如何建立自訂指示詞處理器、如何註冊和測試指示詞處理器，以及如何將輸出檔格式化為 HTML。
+ 描述如何建立自訂指示詞處理器、 如何註冊和測試指示詞處理器，以及如何格式化為 HTML 的輸出檔。
