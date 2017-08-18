@@ -29,45 +29,23 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cd8418f782f800390d166403374ecb879970dbc3
-ms.openlocfilehash: 92304c73b1a098c32a74011956dadd8097b8329d
+ms.sourcegitcommit: a2cfae1be1415a2d770d1467a09f207f73eafd05
+ms.openlocfilehash: 5b872f1d28c132fe2910bed16882ba6fb01e6782
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity 變更記錄。  
 
-## <a name="3400"></a>3.4.0.0
- 發行日期：2017 年 8 月 22 日
+## <a name="3302"></a>3.3.0.2
+ 發行日期：2017 年 8 月 15 日
 
-### <a name="new-features"></a>新功能  
-
--   **Project Generation:**  
-
-    -   已新增 assembly.json 編譯單位的支援。
-
-    -   停止將 Unity 組件複製至專案資料夾。
-    
--   **偵錯工具：**  
-
-    -   已新增使用新 Unity 執行階段設定下一個陳述式的支援。
-    
-    -   已新增使用新 Unity 執行階段之 Decimal 類型的支援。
-    
-    -   已新增隱含/明確轉換的支援。
-    
 ### <a name="bug-fixes"></a>Bug 修正  
   
--   **評估：**  
-
-    -   修正具有隱含大小的陣列建立。
-    
-    -   修正具有區域變數的編譯器所產生項目。
+-   **專案產生：**  
    
--   **Project Generation:**  
-   
-    -   修正 4.6 API 層級的 Microsoft.CSharp 參考。
+    -   修正 Unity 5.5 和先前版本上 Visual Studio 方案的產生。
    
 ## <a name="3300"></a>3.3.0.0
  發行日期：2017 年 8 月 14 日
