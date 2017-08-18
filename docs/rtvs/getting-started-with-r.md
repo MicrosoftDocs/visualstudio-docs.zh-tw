@@ -171,7 +171,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
 
-1. 您可以繼續逐步執行程式行，或選取 [繼續] (F5) 來執行到完成 (或下一個中斷點)。
+1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。
 
 若要深入資訊，請參閱[偵錯](debugging.md)和[變數總管](variable-explorer.md)。
 
