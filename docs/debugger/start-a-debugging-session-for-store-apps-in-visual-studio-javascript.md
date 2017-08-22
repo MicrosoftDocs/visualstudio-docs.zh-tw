@@ -1,264 +1,282 @@
 ---
-title: "在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.installedapppackagelauncher"
-  - "vs.debug.error.wwahost_scriptdebuggingdisabled"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Start a debugging session for Store Apps in Visual Studio (JavaScript) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.installedapppackagelauncher
+- vs.debug.error.wwahost_scriptdebuggingdisabled
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: fb91203f-2cf4-44d3-8ed9-93bc5aaa50b8
 caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# 在 Visual Studio 中，為市集應用程式啟動偵錯工作階段 (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5a1e75fb305a98ee46f76c0403774535278b53e2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-![適用於 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+---
+# <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Start a debugging session for Store Apps in Visual Studio (JavaScript)
+![Applies to Windows and Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 本主題說明如何對於開始對使用 JavaScript 和 HTML5 撰寫的 Windows 市集應用程式執行偵錯工作階段。您可以使用單一按鍵開始偵錯，也可以為特定案例設定偵錯工作階段，然後選擇應用程式的啟動方式。  
+ This topic describes how to start a debugging session for Windows Store apps written in JavaScript and HTML5. You can start debugging with a single keystroke, or you can configure the debugging session for specific scenarios and then choose the way to start the app.  
   
 > [!NOTE]
->  對於使用 XAML 和 Visual C\#、Visual C\+\+ 或 Visual Basic 撰寫的應用程式，請參閱[啟動偵錯工作階段 \(VB、C\#、C\+\+ 和 XAML\)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  For apps written in XAML and Visual C#, Visual C++, or Visual Basic, see [Start a debug session (VB, C#, C++ and XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
- [本主題內容](#BKMK_In_this_topic)  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ [In this topic](#BKMK_In_this_topic)  
   
- [簡單的偵錯方法](#BKMK_The_easy_way_to_start_debugging)  
+ [The easy way to start debugging](#BKMK_The_easy_way_to_start_debugging)  
   
- [設定偵錯工作階段](#BKMK_Configure_the_debugging_session)  
+ [Configure the debugging session](#BKMK_Configure_the_debugging_session)  
   
--   [開啟專案的偵錯屬性頁](#BKMK_Open_the_debugging_property_page_for_the_project)  
+-   [Open the debugging property page for the project](#BKMK_Open_the_debugging_property_page_for_the_project)  
   
--   [選擇組建組態選項](#BKMK_Choose_the_build_configuration_options)  
+-   [Choose the build configuration options](#BKMK_Choose_the_build_configuration_options)  
   
--   [選擇部署目標](#BKMK_Choose_the_deployment_target)  
+-   [Choose the deployment target](#BKMK_Choose_the_deployment_target)  
   
--   [選擇要使用的偵錯工具](#BKMK_Choose_the_debugger_to_use)  
+-   [Choose the debugger to use](#BKMK_Choose_the_debugger_to_use)  
   
--   [(選擇性) 在偵錯工作階段中延遲啟動應用程式](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
+-   [(Optional) Delay starting the app in the debug session](#BKMK__Optional__Delay_starting_app_in_the_debug_session)  
   
--   [(選擇性) 停用網路回送](#BKMK__Optional__Disable_network_loopbacks)  
+-   [(Optional) Disable network loopbacks](#BKMK__Optional__Disable_network_loopbacks)  
   
- [開始偵錯工作階段](#BKMK_Start_the_debugging_session)  
+ [Start the debugging session](#BKMK_Start_the_debugging_session)  
   
--   [開始偵錯 (F5)](#BKMK_Start_debugging__F5_)  
+-   [Start debugging (F5)](#BKMK_Start_debugging__F5_)  
   
--   [開始偵錯 (F5)，但延遲啟動應用程式](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
+-   [Start debugging (F5) but delay the app start](#BKMK_Start_debugging__F5__but_delay_the_app_start)  
   
- [在偵錯工具中啟動已安裝的應用程式](#BKMK_Start_an_installed_app_in_the_debugger)  
+ [Start an installed app in the debugger](#BKMK_Start_an_installed_app_in_the_debugger)  
   
- [將偵錯工具附加至執行中的應用程式](#BKMK_Attach_the_debugger_to_a_running_app_)  
+ [Attach the debugger to a running app](#BKMK_Attach_the_debugger_to_a_running_app_)  
   
--   [將應用程式設定成以偵錯模式執行](#BKMK_Set_the_app_to_run_in_debug_mode)  
+-   [Set the app to run in debug mode](#BKMK_Set_the_app_to_run_in_debug_mode)  
   
--   [附加偵錯工具](#BKMK_Attach_the_debugger)  
+-   [Attach the debugger](#BKMK_Attach_the_debugger)  
   
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a> 簡單的偵錯方法  
- ![僅適用於 Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+##  <a name="BKMK_The_easy_way_to_start_debugging"></a> The easy way to start debugging  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
-1.  在 Visual Studio 中開啟應用程式方案。  
+1.  Open the app solution in Visual Studio.  
   
-2.  如果解決方案包含適用於 Windows 市集應用程式和 Windows Phone 應用程式的專案，首先必須確定您要偵錯的專案為啟始專案。在方案總管中選取專案，然後從內容功能表選擇 \[設定為啟始專案\]。  
+2.  If the solution contains projects for both Windows Store and Windows Store Phone apps, make sure that the project you want to debug is the start-up project. In Solution Explore, select the project and then choose **Set as StartUp Project** from the context menu.  
   
-3.  按 F5。  
+3.  Press F5.  
   
- ![僅適用於 Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- Visual Studio 會建置並啟動已附加偵錯工具的應用程式。執行會持續到中斷點為止，若以手動方式暫停執行，就會發生未處理的例外狀況，或結束應用程式。如需詳細資訊，請參閱[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。  
+ Visual Studio builds and starts the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends. For more information, see [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md).  
   
-##  <a name="BKMK_Configure_the_debugging_session"></a> 設定偵錯工作階段  
- 因為未編譯指令碼，所以不會套用組建組態與平台設定。如果您要對 C\+\+ 或 Managed 元件執行偵錯，請將 \[組態\] 設定為 \[偵錯\]，再從 \[組態\] 對話方塊中選擇目標平台。  
+##  <a name="BKMK_Configure_the_debugging_session"></a> Configure the debugging session  
+ Because script is not compiled, the build configuration and platform settings don't apply. If you are debugging a C++ or managed component, set the **Configuration** to **Debug** and choose your target platform from the **Configuration** dialog.  
   
-###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> 開啟專案的偵錯屬性頁  
+###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Open the debugging property page for the project  
   
-1.  在方案總管中選取專案。在捷徑功能表上選擇 \[屬性\]。  
+1.  In Solution Explorer, select the project. On the shortcut menu, choose **Properties**.  
   
-2.  展開 \[組態屬性\] 節點，然後選擇 \[偵錯\]。  
+2.  Expand the **Configuration Properties**  node and then choose **Debugging**.  
   
-###  <a name="BKMK_Choose_the_build_configuration_options"></a> 選擇組建組態選項  
+###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choose the build configuration options  
   
-1.  從 \[組態\] 清單中，選擇 \[偵錯\] 或 \[作用中 \(偵錯\)\]。。  
+1.  From the **Configuration** list, choose **Debug** or **(Active) Debug**.  
   
-2.  從 \[平台\] 清單中選擇建置的目標平台。在大部分情況下，\[任何 CPU\] 會是最佳選擇。  
+2.  From the **Platform** list choose the target platform to build for. In most cases, **Any CPU** is the best choice.  
   
-###  <a name="BKMK_Choose_the_deployment_target"></a> 選擇部署目標  
- 您可以在 Visual Studio 電腦、本機電腦上的 Visual Studio 模擬器或遠端電腦上部署應用程式並對其執行偵錯。您可以從專案的 \[偵錯\] 屬性頁上之 \[要啟動的偵錯工具\] 清單中選擇目標。  
+###  <a name="BKMK_Choose_the_deployment_target"></a> Choose the deployment target  
+ You can deploy and debug an app on the Visual Studio machine, in the Visual Studio simulator on the local machine, or on a remote machine. You choose the target from the **Debugger to launch** list on the **Debugging** property page for the project.  
   
- ![僅適用於 Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- 對於 Windows 市集應用程式，請從 \[目標裝置\] 清單中選擇下列其中一個選項：  
+ For a Windows Store app, choose one of these options from the **Target device** list:  
   
 |||  
 |-|-|  
-|**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。請參閱[在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|  
-|**模擬器**|在 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的 Visual Studio 模擬器中為應用程式執行偵錯。模擬器是可讓您對本機電腦上無法使用的裝置功能 \(例如觸控筆勢與裝置旋轉\) 進行偵錯的桌面視窗。請參閱[在模擬器中執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
-|**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，進行應用程式的偵錯。若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。請參閱[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
+|**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+|**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+|**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
- 如果您選擇 \[遠端電腦\]，請以下列任一種方式指定遠端電腦的名稱或 IP 位址：  
+ If you choose **Remote Machine**, specify the name or IP address of the remote machine in one of these ways:  
   
--   在 \[電腦名稱\] 方塊中，輸入遠端電腦的名稱或 IP 位址。  
+-   Enter the name or IP address of the remote machine in the **Machine Name** box.  
   
--   在 \[電腦名稱\] 方塊中選擇向下箭頭，然後選擇 \[\<尋找...\>\]。然後從 \[選取遠端偵錯工具連接\] 對話方塊中選擇遠端電腦。  
+-   Choose the down arrow in the **Machine Name** box and choose **\<Locate...>**. Then choose the remote machine from **Select Remote Debugger Connection** dialog box.  
   
-     ![選取遠端偵錯工具連接](~/debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN\_PRO\_SelectRemoteDebuggerDlg")  
+     ![Select Remote Debugger Connection](../debugger/media/vsrun_pro_selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")  
   
     > [!NOTE]
-    >  \[選取遠端偵錯工具連接\] 對話方塊會顯示位於本機子網路上的電腦，以及透過乙太網路纜線直接連接至 Visual Studio 電腦的任何電腦。若要指定其他電腦，請在 \[電腦名稱\] 方塊中輸入名稱。  
+    >  The Select Remote Debugger Connection dialog box displays machines that are on the local sub-net and machines that are directly connected to the Visual Studio machine by an Ethernet cable. To specify another machine, enter the name in the **Machine Name** box.  
   
- ![僅適用於 Windows Phone](~/debugger/media/phone_only_content.png "phone\_only\_content")  
+ ![Applies to Windows Phone only](../debugger/media/phone_only_content.png "phone_only_content")  
   
- 對於 Windows Phone 應用程式，請選擇 \[裝置\]，或從 \[目標裝置\] 清單中選擇一個模擬器。  
+ For a Windows Store Phone app, choose **Device** or one of the emulators from the **Target device** list.  
   
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> 選擇要使用的偵錯工具  
- 偵錯工具預設會附加到您應用程式中的 JavaScript 程式碼。您可以選擇偵錯您應用程式元件的原生 C\+\+ 和 Managed 程式碼，而非 JavaScript 程式碼。在應用程式專案之 \[偵錯\] 屬性頁的 \[偵錯工具類型\] 清單中，指定要執行偵錯的程式碼。  
+###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choose the debugger to use  
+ By default, the debugger attaches to the JavaScript code in your app. You can choose to debug the native C++ and managed code of components of your app instead of the JavaScript code. You specify the code to debug in the **Debugger Type** list on the **Debugging** property page of the app project.  
   
- 請從 \[偵錯工具類型\] 清單中選擇一個偵錯工具：  
+ Choose one of these debuggers from the **Debugger Type** list:  
   
 |||  
 |-|-|  
-|**僅限指令碼**|對應用程式中的 JavaScript 程式碼執行偵錯。Managed 程式碼與原生碼會予忽略。|  
-|**僅限原生**|對應用程式中的原生 C\/C\+\+ 程式碼執行偵錯。Managed 程式碼與 JavaScript 程式碼會予忽略。|  
-|**機器碼加指令碼**|在您的應用程式中對原生 C\+\+ 程式碼與 JavaScript 程式碼執行偵錯。|  
-|**僅限 Managed**|對應用程式中的 Managed 程式碼執行偵錯。JavaScript 程式碼與原生 C\/C\+\+ 程式碼會予忽略。|  
-|**混合 \(Managed 與原生\)**|對應用程式中的原生 C\/C\+\+ 程式碼與 Managed 程式碼執行偵錯。JavaScript 程式碼會予忽略。|  
+|**Script Only**|Debug JavaScript code in your app. Managed code and native code are ignored.|  
+|**Native Only**|Debug native C/C++ code in your app. Managed code and JavaScript code are ignored.|  
+|**Native with Script**|Debug native C++ code and JavaScript code in your app.|  
+|**Managed Only**|Debug managed code in your app. JavaScript code and native C/C++ code are ignored.|  
+|**Mixed (Managed and Native)**|Debug native C/C++ code and managed code in your app. JavaScript code is ignored.|  
   
-###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> \(選擇性\) 在偵錯工作階段中延遲啟動應用程式  
- Visual Studio 預設會在您開始進行偵錯時，立即啟動該應用程式。您也可以僅開始偵錯工作階段，而延遲啟動您的應用程式。如果從 \[開始\] 功能表或由啟用合約啟動應用程式，或是由其他處理序或方法啟動應用程式，即會在偵錯工具中啟動應用程式。您也可以使用延遲啟動，來偵錯應用程式中想要在應用程式未執行時發生的背景事件。  
+###  <a name="BKMK__Optional__Delay_starting_app_in_the_debug_session"></a> (Optional) Delay starting the app in the debug session  
+ By default, Visual Studio immediately starts the app when you start debugging. You can also start a debug session but delay the start of your app. The app is launched in the debugger when it is launched from the Start menu or by an activation contract, or when it is started by another process or method. You can also use delayed start to debug background events in your app that you want to occur when the app is not running.  
   
- 您可以在應用程式專案的 \[偵錯\] 屬性頁之 \[啟動應用程式\] 清單中，指定是否要延遲啟動應用程式。選擇下列任一選項：  
+ You specify whether to delay the launch of your app in the **Launch Application** list on the **Debugging** property page of the app project. Choose one of these options:  
   
--   選擇 \[否\] 會延遲啟動您的應用程式。  
+-   Choose **No** to delay the launch of your app.  
   
--   選擇 \[是\] 會立即啟動您的應用程式。  
+-   Choose **Yes** to launch the app immediately.  
   
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> \(選擇性\) 停用網路回送  
- ![僅適用於 Windows](~/debugger/media/windows_only_content.png "windows\_only\_content")  
+###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> (Optional) Disable network loopbacks  
+ ![Applies to Windows only](../debugger/media/windows_only_content.png "windows_only_content")  
   
- 基於安全性的理由，以標準形式安裝的 Windows 市集應用程式，不得對其安裝所在的裝置進行網路呼叫。根據預設，Visual Studio 部署會針對部署應用程式建立此規則的豁免。此豁免可讓您測試在單一機器上的通訊程序。將應用程式提交到 Windows 市集之前，應不使用豁免來測試您的應用程式。  
+ For security reasons, a Windows Store app that is installed in the standard manner is not allowed to make network calls to the device it is installed on. By default, Visual Studio deployment creates an exemption from this rule for the deployed app. This exemption allows you to test communication procedures on a single machine. Before you submit your app to the Windows Store, you should test your app without the exemption.  
   
- 若要移除網路回送豁免，請從 \[偵錯\] 屬性頁的 \[允許網路回送\] 清單中選擇 \[否\] 。  
+ To remove the network loopback exemption, choose **No** from the **Allow Network Loopback** list on the **Debugging** property page.  
   
-##  <a name="BKMK_Start_the_debugging_session"></a> 開始偵錯工作階段  
+##  <a name="BKMK_Start_the_debugging_session"></a> Start the debugging session  
   
-###  <a name="BKMK_Start_debugging__F5_"></a> 開始偵錯 \(F5\)  
- 當您從 \[偵錯\] 功能表上選擇 \[開始偵錯\] 時 \(鍵盤：**F5**\)，Visual Studio 會啟動附加有偵錯工具的應用程式。執行會持續到出現中斷點為止，若以手動方式暫止執行，會發生未處理的例外狀況，或結束應用程式。  
+###  <a name="BKMK_Start_debugging__F5_"></a> Start debugging (F5)  
+ When you choose **Start Debugging** on the **Debug** menu (Keyboard: F5), Visual Studio launches the app with the debugger attached. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> 開始偵錯 \(F5\)，但延遲啟動應用程式  
- 您可以將應用程式設定成以偵錯模式執行，但使用偵錯工具以外的方法啟動。例如，您可能會希望從 \[開始\] 功能表啟動應用程式時即執行偵錯，或對應用程式的背景處理序執行偵錯，而不啟動應用程式。若要延遲啟動應用程式，請執行下列作業：  
+###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Start debugging (F5) but delay the app start  
+ You can set the app to run in debug mode, but let it be started by a method other than the debugger. For example, you might want to debug the launch of your app from the Start menu, or to debug a background process in the app without starting the app.To delay the app start, do this:  
   
-1.  在應用程式專案屬性的 \[偵錯\] 頁面上，從 \[啟動應用程式\] 清單中選擇 \[否\]。  
+1.  On the **Debug** page of the app project properties, choose **No** from the **Launch Application** list.  
   
-2.  從 \[偵錯\] 功能表上選擇 \[開始偵錯\] \(鍵盤：F5\)。  
+2.  Choose **Start Debugging** on the **Debug** menu (Keyboard: F5).  
   
-3.  從 \[開始\] 功能表、執行合約或透過其他處理序，啟動您的應用程式。  
+3.  Start your app from the Start menu, an execution contract, or by another procedure.  
   
- 該應用程式會以偵錯模式啟動。執行會持續到出現中斷點為止，若以手動方式暫止執行，會發生未處理的例外狀況，或結束應用程式。  
+ The app starts in debug mode. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
- 如需偵錯背景工作的詳細資訊，請參閱[觸發、暫停和繼續事件，以及讓事件成為背景事件 \(Windows 市集\)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+ . For more information about debugging background tasks, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
-##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> 在偵錯工具中啟動已安裝的應用程式  
- 使用 F5 開始偵錯時，Visual Studio 會建置及部署應用程式、將應用程式設定為以偵錯模式執行，然後再啟動該應用程式。若要啟動已安裝在裝置上的應用程式，請使用 \[偵錯已安裝的應用程式套件\] 對話方塊。當您必須偵錯從 Windows 市集安裝的應用程式，或者有應用程式的原始程式檔，卻沒有應用程式的 Visual Studio 專案時，這個方式就很有用。例如，您可能有並非使用 Visual Studio 專案或方案所建置的自訂系統。  
+##  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Start an installed app in the debugger  
+ When you start debugging by using F5, Visual Studio builds and deploys the app, sets the app to run in debug mode, and then starts it. To start an app that is already installed on a device, use the Debug Installed App Package dialog box. This procedure is useful when you need to debug an app that was installed from the Windows store, or when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- 該應用程式可安裝在本機裝置，或其可在遠端裝置上。您可以立即啟動應用程式，也可以設定應用程式，使其藉由其他處理序或方式啟動 \(例如從 \[開始\] 功能表或透過啟用合約\) 後再於偵錯工具中執行。如果您只希望偵錯背景處理程序而不啟動應用程式，還可以將應用程式設定成以偵錯模式執行。如需詳細資訊，請參閱[觸發、暫停和繼續事件，以及讓事件成為背景事件 \(Windows 市集\)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)。  
+ The app can be installed on the local device, or it can be on a remote device.  You can start the app immediately, or you can set it to run in the debugger when it is started by another process or method, such as from the Start menu or by an activation contract, You can also set the app to run in debug mode when you want to debug a background process without starting the app. For more information, see [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).  
   
- 若要將已安裝的應用程式設定為在偵錯模式下執行，請執行這項操作：  
+ To set an installed app to run in debug mode, do this:  
   
 > [!NOTE]
->  當您啟動此程序時，不得執行此應用程式。  
+>  The app must not be running when you start this procedure.  
   
-1.  在 \[偵錯\] 功能表上，選擇 \[偵錯已安裝的應用程式套件\]。  
+1.  On the **Debug** menu, choose **Debug Installed App Package**.  
   
-2.  從清單中選擇下列任一選項：  
+2.  Choose one of the following options from the list:  
   
     |||  
     |-|-|  
-    |**本機電腦**|在本機電腦上對目前工作階段中的應用程式進行偵錯。請參閱[在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)。|  
-    |**模擬器**|在 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的 Visual Studio 模擬器中為應用程式執行偵錯。模擬器是可讓您對本機電腦上無法使用的裝置功能 \(例如觸控筆勢與裝置旋轉\) 進行偵錯的桌面視窗。請參閱[在模擬器中執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)。|  
-    |**遠端電腦**|在透過內部網路連接到本機電腦的裝置上，或使用乙太網路纜線直接連接的裝置上，進行應用程式的偵錯。若要遠端偵錯，必須在遠端裝置上安裝並執行 Visual Studio 遠端工具。請參閱[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。|  
+    |**Local Machine**|Debug the app in the current session on your local machine. See [Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md).|  
+    |**Simulator**|Debug the app in the Visual Studio simulator for [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] apps. The simulator is a Desktop window that enables you to debug device functionality—such as touch gestures and device rotation—that are not available on the local machine. See [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).|  
+    |**Remote Machine**|Debug the app on a device that is connected to the local machine over an intranet or directly connected by using an Ethernet cable. To debug remotely, the Visual Studio Remote Tools must be installed and running on the remote device. See [Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md).|  
   
-3.  從 \[已安裝的應用程式套件\] 清單中選擇應用程式。  
+3.  Choose the app from the **Installed App Packages** list.  
   
-4.  從 \[偵錯這種程式碼類型\] 清單中，選擇要使用的偵錯引擎。  
+4.  Choose the debug engine to use from the **Debug this code type** list.  
   
-5.  \(選擇性\)。選擇 \[不啟動，但在我的程式碼啟動時進行偵錯\]，如此當以其他方法啟動應用程式時，即會偵錯該應用程式，或是偵錯背景處理程序。  
+5.  (Optional). Choose **Do not launch, but debug my code when it starts** to debug the app when it is started by some other method, or to debug a background process.  
   
- 當您按一下 \[開始\] 時，就會啟動應用程式，或將其設定成以偵錯模式執行。  
+ When you click **Start**, the app is launched or is set to run in debug mode.  
   
-##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> 將偵錯工具附加至執行中的應用程式  
- 若要將偵錯工具附加到 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式，必須使用 \[Debuggable Package 管理員\] 將應用程式設定為以偵錯模式執行。\[Debuggable Package 管理員\] 會隨 Visual Studio 遠端工具一起安裝。  
+##  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attach the debugger to a running app  
+ To attach the debugger to a [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] app, you must use the Debuggable Package Manager to set the app to run in debug mode. The Debuggable Package Manager is installed with the Visual Studio Remote Tools.  
   
- 當您需要對已安裝的應用程式 \(例如從 Windows 市集安裝的應用程式\) 執行偵錯時，將偵錯工具附加至應用程式將會有所幫助。當您具有應用程式的原始程式檔，但沒有應用程式的 Visual Studio 專案時，就必須進行附加。例如，您可能會有未使用 Visual Studio 專案或方案的自訂建置系統。  
+ Attaching the debugger to an app is useful when you need to debug an already-installed app, such as an app that was installed from the Windows store. Attaching is required when you have the source files for the app, but you do not have a Visual Studio project for the app. For example, you might have a custom build system that does not use Visual Studio projects or solutions.  
   
- 若要附加至應用程式：  
+ To attach to an app:  
   
-1.  將應用程式設定成以偵錯模式執行此動作必須在未執行應用程式時完成。  
+1.  Set the app to run in debug mode. This must be done when the app is not running.  
   
-2.  啟動應用程式。您可以從 \[開始\] 功能表、執行合約或透過其他方法啟動應用程式。  
+2.  Start the app. You can start the app from the Start menu, an execution contract, or some other method.  
   
-3.  將偵錯工具附加至執行中的應用程式。  
+3.  Attach the debugger to the running app.  
   
-###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> 將應用程式設定成以偵錯模式執行  
+###  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Set the app to run in debug mode  
   
-1.  在已安裝應用程式的裝置上，安裝 Visual Studio 遠端工具。請參閱[安裝遠端工具](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools)。  
+1.  Install the Visual Studio Remote Tools on the device where the app is installed. See [Installing the remote tools](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).  
   
-2.  在 \[開始\] 功能表上搜尋 `Debuggable Package Manager` 並加以啟動。  
+2.  On the Start menu, search for `Debuggable Package Manager` and then start it.  
   
-     為 AppxDebug Cmdlet 設定的 PowerShell 視窗會隨即出現。  
+     A PowerShell window properly configured for the AppxDebug cmdlet appears.  
   
-3.  若要啟用應用程式的偵錯功能，您必須指定此應用程式的 PackageFullName 識別項。若要檢視包含 PackageFullName 的完整應用程式清單，請在 PowerShell 命令提示字元處輸入 `Get-AppxPackage`。  
+3.  To enable debugging of an app, you must specify the PackageFullName identifier of the app. To view a list all apps that includes the PackageFullName, type `Get-AppxPackage` at the PowerShell prompt.  
   
-4.  在 PowerShell 命令提示字元中，輸入`Enable-AppxDebug` *PackageFullName*，而其中的 *PackageFullName* 是應用程式的 PackageFullName 識別項。  
+4.  At the PowerShell prompt, enter `Enable-AppxDebug` *PackageFullName* where *PackageFullName* is the PackageFullName identifier of the app.  
   
-###  <a name="BKMK_Attach_the_debugger"></a> 附加偵錯工具  
+###  <a name="BKMK_Attach_the_debugger"></a> Attach the debugger  
   
 > [!TIP]
->  JavaScript 應用程式會在 wwahost.exe 處理序的執行個體中執行。如果在您附加至應用程式時有其他 JavaScript 應用程式正在執行，則需要知道在其中執行應用程式之 wwahost.exe 的數值處理序 ID \(PID\)。  
+>  JavaScript apps run in an instance of the wwahost.exe process. If other JavaScript apps are running when you attach to the app, you will need to know the numeric process id (PID) of the wwahost.exe that the app is running in.  
 >   
->  此狀況最簡單的處理方式，就是關閉所有其他 JavaScript 應用程式。否則，您可以在啟動應用程式之前開啟 Windows 工作管理員，並記下 wwahost.exe 處理序的 ID。當您在 \[可使用的處理序\] 對話方塊中，指定要附加的處理序時，應用程式之 wwahost.exe 的 ID 將會不同於您所記下的 ID。  
+>  The easiest way to deal with this situation is to close all of the other JavaScript apps. Otherwise, you can open Windows Task Manager before you start the app and note the ids of the wwahost.exe processes. When you specify the process to attach to in the **Available Processes**  dialog box, the wwahost.exe of the app will have an id that is different than the ones that you have noted.  
   
- 若要附加偵錯工具：  
+ To attach the debugger:  
   
-1.  在 \[偵錯\] 功能表上，選擇 \[附加至處理序\]。  
+1.  On the **Debug** menu, choose **Attach to Process**.  
   
-     \[附加至處理序\] 對話方塊會隨即出現。  
+     The **Attach to Process** dialog box appears.  
   
-2.  若要附加至遠端裝置上的應用程式，請在 \[限定詞\] 方塊中指定遠端裝置。您可以：  
+2.  To attach to an app on a remote device, specify the remote device in the **Qualifier** box. You can:  
   
-    -   在 \[限定詞\] 方塊中輸入名稱。  
+    -   Enter the name in the **Qualifier** box.  
   
-    -   選擇 \[限定詞\] 方塊中的向下箭頭，並從您先前附加之裝置的清單中選擇裝置。  
+    -   Choose the down-arrow in the **Qualifier** box and choose the device from a list of devices that you have attached to before.  
   
-    -   選擇 \[尋找\]，以從本機子網路上的裝置清單中選取裝置。  
+    -   Choose **Find** to choose the device from a list of devices on your local subnet.  
   
-3.  在 \[附加至\] 方塊中指定您要偵錯的程式碼類型。  
+3.  Specify the type of code that you want to debug in the **Attach to** box.  
   
-     選擇 \[選取\]，然後執行下列其中一項動作：  
+     Choose **Select** and then do one of the following:  
   
-    -   選擇 \[自動判斷要偵錯的程式碼類型\]  
+    -   Choose **Automatically determine the type of code to debug**.  
   
-    -   選擇 \[偵錯這些程式碼類型\]，然後從清單中選擇一或多個類型。  
+    -   Choose **Debug these code types** and then choose one or more types from the list.  
   
-4.  在 \[可使用的處理序\] 清單中，選擇適當的 **wwahost.exe** 處理序。使用 \[標題\] 資料行識別您的應用程式。  
+4.  In the **Available Processes**  list, choose the appropriate **wwahost.exe** process. Use the **Title** column to identify your app.  
   
-5.  選擇 \[附加\]。  
+5.  Choose **Attach**.  
   
- Visual Studio 會將偵錯工具附加至處理序。執行會持續到出現中斷點為止，若以手動方式暫止執行，會發生未處理的例外狀況，或結束應用程式。  
+ Visual Studio attaches the debugger to the process. Execution continues until a breakpoint is reached, you manually suspend execution, an unhandled exception occurs, or the app ends.  
   
-## 請參閱  
- [在偵錯工作階段中控制執行 \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
- [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   
- [觸發、暫停和繼續事件，以及讓事件成為背景事件 \(Windows 市集\)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
- [在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)
+## <a name="see-also"></a>See Also  
+ [Control execution in a debug session (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
+ [Quickstart: Debug HTML and CSS](../debugger/quickstart-debug-html-and-css.md)   
+ [Trigger suspend, resume, and background events for Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md)   
+ [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

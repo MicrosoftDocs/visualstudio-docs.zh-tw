@@ -1,143 +1,165 @@
 ---
-title: "C++ 中的格式規範 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "快速監看式對話方塊，C++ 中的格式規範"
-  - "變數 [偵錯工具]，監看變數符號"
-  - "符號，監看變數格式化"
-  - "快速監看式對話方塊，使用格式規範"
-  - "運算式 [C++]，格式規範"
-  - "規範，監看變數格式"
-  - "規範"
-  - "監看式視窗，C++ 中的格式規範"
-  - "監看變數符號"
-  - "格式規範，偵錯工具"
-  - "偵錯工具，可辨識的格式規範"
+title: Format specifiers in the debugger (C++) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- QuickWatch dialog box, format specifiers in C++
+- variables [debugger], watch variable symbols
+- symbols, watch variable formatting
+- QuickWatch dialog box, using format specifiers
+- expressions [C++], format specifiers
+- specifiers, watch variable format
+- specifiers
+- Watch window, format specifiers in C++
+- watch variable symbols
+- format specifiers, debugger
+- debugger, format specifiers recognized by
 ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 40
-caps.handback.revision: 40
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# C++ 中的格式規範
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c0f3cc415b06c4c341a2b4279b7ada393192417c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-您可以使用格式規範變更在 \[監看式\] 視窗中顯示值的格式。  
+---
+# <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Format specifiers in C++ in the Visual Studio debugger
+You can change the format in which a value is displayed in the **Watch** window using format specifiers.  
   
- 您也可以在 \[即時運算\] 視窗、\[命令\] 視窗，甚至來源視窗中使用格式規範。 如果暫停在這些視窗中的某個運算式上，結果則會顯示在 DataTip \(資料提示方塊\)。 DataTip 顯示會反映格式規範。  
+ You can also use format specifiers in the **Immediate** window, the **Command** window, and even in source windows. If you pause on an expression in those windows, the result will appear in a DataTip. The DataTip display reflects the format specifier.  
   
 > [!NOTE]
->  Visual Studio 原生偵錯工具變更成新的偵錯引擎。 這項變更包括加入一些新的格式規範，以及移除一些舊的格式規範。 當您使用 C\+\+\/CLI 執行 Interop \(混合原生和 Managed\) 偵錯時仍會使用較舊的偵錯工具。 本主題的下列章節說明每個偵錯引擎的格式規範。  
+>  When the Visual Studio native debugger changed to a new debugging engine, some new format specifiers were added and some old ones were removed. The  older debugger is still used when you do interop (mixed native and managed) debugging with C++/CLI. The following sections in this topic show the format specifiers for each debug engine.
 >   
->  -   [格式規範](#BKMK_Visual_Studio_2012_format_specifiers) 描述新偵錯引擎中的格式規範。  
-> -   [使用 C++/CLI 的 Interop 偵錯格式規範](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) 描述舊偵錯引擎中的格式規範。  
+>  -   [Format Specifiers](#BKMK_Visual_Studio_2012_format_specifiers) describes the format specifiers in the new debugging engine.  
+> -   [Format specifiers for interop debugging with C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describes the format specifiers in the older debugging engine.  
   
-## 使用格式規範  
- 如果您有下列程式碼：  
+## <a name="using-format-specifiers"></a>Using Format Specifiers  
+ If you have the following code:  
   
-```cpp  
-int main() { int my_var1 = 0x0065; int my_var2 = 0x0066; int my_var3 = 0x0067; }  
+```C++  
+int main() {  
+    int my_var1 = 0x0065;  
+    int my_var2 = 0x0066;  
+    int my_var3 = 0x0067;  
+}  
 ```  
   
- 將 `my_var1` 變數加入 \[監看式\] 視窗 \(偵錯時，**偵錯 \/ Windows \/ 監看式 \/ 監看式 1**\) 並將顯示設定為十六進位 \(在 \[監看式\] 視窗中，以滑鼠右鍵按一下變數，然後選取 \[十六進位顯示\]\)。 現在監看式視窗顯示它包含了值 0x0065。 若希望數值以字元顯示，而非整數，請在 \[名稱\] 欄位中變數名稱後面，加入字元格式規範 **, c**。 \[值\] 資料行現在出現時會帶有 **101 'e'**。  
+ Add the `my_var1` variable to the **Watch** window (while debugging, **Debug > Windows > Watch > Watch 1**) and set the display to hexadecimal (in the **Watch** window, right-click the variable and select **Hexadecimal Display**). Now the Watch window shows that it contains the value 0x0065. To see this value expressed as a character instead of an integer, in the Name column, after the variable name, add the character format specifier **, c**. The **Value** column now appears with **101 'e'**.  
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> 格式規範  
- 下表顯示可在 Visual Studio 中使用的格式規範。 使用 C\+\+\/CLI 的 Interop 偵錯不支援粗體的規範。  
+##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Format Specifiers  
+ The following tables show the format specifiers that you can use in Visual Studio. Specifiers in bold are not supported for interop debugging with C++/CLI.  
   
-|規範|格式|原始的監看值|顯示的值|  
-|--------|--------|------------|----------|  
-|d|十進位整數|0x00000066|102|  
-|o|不帶正負號的八進位整數|0x00000066|000000000146|  
-|x<br /><br /> **h**|十六進位整數|102|0xcccccccc|  
-|X<br /><br /> **H**|十六進位整數|102|0xCCCCCCCC|  
-|c|單一字元|0x0065, c|101 'e'|  
-|s|const char\* 字串|\<位置\> “hello world”|"hello world"|  
-|**sb**|const char\* 字串|\<位置\> “hello world”|hello world|  
-|s8|const char\* 字串|\<位置\> “hello world”|"hello world"|  
-|**s8b**|const char\* 字串|\<位置\> “hello world”|"hello world"|  
-|su|const wchar\_t\* const<br /><br /> char16\_t\* 字串|\<位置\> L”hello world”|L"hello world"<br /><br /> u"hello world"|  
-|sub|const wchar\_t\* const<br /><br /> char16\_t\* 字串|\<位置\> L”hello world”|hello world|  
-|bstr|BSTR 字串|\<位置\> L”hello world”|L”hello world”|  
-|**s32**|UTF\-32 字串|\<位置\> U”hello world”|U”hello world”|  
-|**s32b**|Utf\-32 字串 \(沒有引號\)|\<位置\> U”hello world”|hello world|  
-|**en**|enum|Saturday\(6\)|星期六|  
-|**hv**|指標類型：指出檢查中的指標值是陣列堆積配置的結果，例如 `new int[3]`。|\<位置\>{\<第一個成員\>}|\<位置\> {\<第一個成員\>, \<第二個成員\>, ...}|  
-|**na**|隱藏物件指標的記憶體位址。|\<位置\>，{成員\=值...}|{成員\=值...}|  
-|**nd**|只顯示基底類別資訊，忽略衍生類別|`(Shape*) square` 包含基底類別和衍生類別資訊|只顯示基底類別資訊|  
-|hr|HRESULT 或 Win32 錯誤碼。 \(偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中\)。|S\_OK|S\_OK|  
-|wc|Window 類別旗標|0x0010|WC\_DEFAULTCHAR|  
-|wm|Windows 訊息編號|16|WM\_CLOSE|  
-|\!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示\>|4|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|--------------------------|---------------------|  
+|d|decimal integer|0x00000066|102|  
+|o|unsigned octal integer|0x00000066|000000000146|  
+|x<br /><br /> **h**|hexadecimal integer|102|0xcccccccc|  
+|X<br /><br /> **H**|hexadecimal integer|102|0xCCCCCCCC|  
+|c|single character|0x0065, c|101 'e'|  
+|s|const char* string|\<location> "hello world"|"hello world"|  
+|**sb**|const char* string (no quotation marks)|\<location> "hello world"|hello world|  
+|s8|UTF-8 string|\<location> "This is a UTF-8 coffee cup â˜•"|"This is a UTF-8 coffee cup ☕"|
+|**s8b**|UTF-8 string (no quotation marks)|\<location> "hello world"|hello world|  
+|su|Unicode (UTF-16 encoding) string|\<location> L"hello world"|L"hello world"<br /><br /> u"hello world"|  
+|sub|Unicode (UTF-16 encoding) string (no quotation marks)|\<location> L"hello world"|hello world|  
+|bstr|BSTR string|\<location> L"hello world"|L"hello world"|  
+|env|Environment block (double-null terminated string)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|UTF-32 string|\<location> U"hello world"|U"hello world"|  
+|**s32b**|UTF-32 string (no quotation marks)|\<location> U"hello world"|hello world|  
+|**en**|enum|Saturday(6)|Saturday|  
+|**hv**|Pointer type - indicates that the pointer value being inspected is the result of the heap allocation of an array, for example, `new int[3]`.|\<location>{\<first member>}|\<location>{\<first member>, \<second member>, ...}|  
+|**na**|Suppresses the memory address of a pointer to an object.|\<location>, {member=value...}|{member=value...}|  
+|**nd**|Displays only the base class information, ignoring derived classes|`(Shape*) square` includes base class and derived class information|Displays only base class information|  
+|hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
+|wc|Window class flag|0x0010|WC_DEFAULTCHAR|  
+|wm|Windows message numbers|16|WM_CLOSE|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
 > [!NOTE]
->  當 **hv** 格式規範出現時，偵錯工具會嘗試判斷緩衝區的長度並顯示適當的項目數目。 因為偵錯工具不一定能一直找到陣列確切的緩衝區大小，所以您應該盡可能使用大小規範 `(pBuffer,[bufferSize])`。**hv** 格式規範是針對緩衝區大小非隨時可用的案例。  
+>  When the **hv** format specifier is present, the debugger attempts to determine the length of the buffer and display the appropriate number of elements. Because it is not always possible for the debugger to find the exact buffer size of an array, you should use a size specifier `(pBuffer,[bufferSize])` whenever possible. The **hv** format specifier is intended for scenarios where the buffer size is not readily available  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 做為陣列的指標大小規範  
- 如果想要將檢視的物件指標做為陣列，可以使用整數或運算式來指定陣列項目的數量：  
+###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Size specifiers for pointers as arrays  
+ If you have a pointer to an object you want to view as an array, you can use an integer or an expression to specify the number of array elements:  
   
-|規範|格式|原始的監看值|顯示的值|  
-|--------|--------|------------|----------|  
-|n|十進位或**十六進位**整數|pBuffer,\[32\]<br /><br /> pBuffer,**\[0x20\]**|顯示 `pBuffer` 為 32 個項目的陣列。|  
-|**\[exp\]**|判斷值為整數的有效 C\+\+ 運算式。|pBuffer,\[bufferSize\]|PBuffer 顯示為 `bufferSize` 項目的陣列。|  
-|**expand\(n\)**|判斷值為整數的有效 C\+\+ 運算式|pBuffer，expand\(2\)|顯示 `pBuffer` 的第三個項目|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|---------------------------|---------------------|  
+|n|Decimal or **hexadecimal** integer|pBuffer,[32]<br /><br /> pBuffer,**[0x20]**|Displays `pBuffer` as a 32 element array.|  
+|**[exp]**|A valid C++ expression that evaluates to an integer.|pBuffer,[bufferSize]|Displays pBuffer as an array of `bufferSize` elements.|  
+|**expand(n)**|A valid C++ expression that evaluates to an integer|pBuffer, expand(2)|Displays the third element of  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C\+\+\/CLI 的 Interop 偵錯格式規範  
- 偵錯原生和 C\+\+\/CLI 程式碼僅支援**粗體**的規範。  
+##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Format specifiers for interop debugging with C++/CLI  
+ Specifiers in **bold** are supported only for debugging native and C++/CLI code.  
   
-|規範|格式|原始的監看值|顯示的值|  
-|--------|--------|------------|----------|  
-|**d,i**|帶正負號的十進位整數|0xF000F065|\-268373915|  
-|**u**|不帶正負號的十進位整數|0x0065|101|  
-|o|不帶正負號的八進位整數|0xF065|0170145|  
-|x,X|十六進位整數|61541|0x0000f065|  
-|**l,h**|長整數或短整數前置詞，用於：d、i、u、o、x、X|00406042|0x0c22|  
-|**f**|帶正負號的浮點數|\(3.\/2.\), f|1.500000|  
-|**e**|帶正負號的科學記號表示法|\(3.0\/2.0\)|1.500000e\+000|  
-|**g**g|帶正負號的浮點數或帶正負號的科學記號表示法 \(兩者中較短者\)|\(3.0\/2.0\)|1.5|  
-|c|單一字元|\<位置\>|101 'e'|  
-|s|const char\*|\<位置\>|"hello world"|  
-|su|const wchar\_t\*<br /><br /> const char16\_t\*|\<位置\>|L"hello world"|  
-|sub|const wchar\_t\*<br /><br /> const char16\_t\*|\<位置\>|hello world|  
-|s8|const char\*|\<位置\>|"hello world"|  
-|hr|HRESULT 或 Win32 錯誤碼。 \(偵錯工具現在可自動將 HRESULT 解碼，因此這個規範並不需要用於這些狀況中\)。|S\_OK|S\_OK|  
-|wc|Window 類別旗標。|0x00000040,|WC\_DEFAULTCHAR|  
-|wm|Windows 訊息編號|0x0010|WM\_CLOSE|  
-|\!|未經處理格式，忽略任何資料類型檢視自訂|\<自訂的表示\>|4|  
+|Specifier|Format|Original Watch Value|Value Displayed|  
+|---------------|------------|--------------------------|---------------------|  
+|**d,i**|signed decimal integer|0xF000F065|-268373915|  
+|**u**|unsigned decimal integer|0x0065|101|  
+|o|unsigned octal integer|0xF065|0170145|  
+|x,X|Hexadecimal integer|61541|0x0000f065|  
+|**l,h**|long or short prefix for: d, i, u, o, x, X|00406042|0x0c22|  
+|**f**|signed floating point|(3./2.), f|1.500000|  
+|**e**|signed scientific notation|(3.0/2.0)|1.500000e+000|  
+|**g**|signed floating point or signed scientific notation, whichever is shorter|(3.0/2.0)|1.5|  
+|c|single character|\<location>|101 'e'|  
+|s|const char*|\<location>|"hello world"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hello world"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hello world|  
+|s8|const char*|\<location>|"hello world"|  
+|hr|HRESULT or Win32 error code. (The debugger now decodes HRESULTs automatically, so this specifier is not required in those cases.|S_OK|S_OK|  
+|wc|Window class flag.|0x00000040,|WC_DEFAULTCHAR|  
+|wm|Windows message numbers|0x0010|WM_CLOSE|  
+|!|raw format, ignoring any data type views customizations|\<customized representation>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> 使用 C\+\+\/CLI 的 Interop 偵錯中記憶體位置的格式規範  
- 下表包含了用於記憶體位置的格式化符號。 您可將記憶體位置規範用於評估結果為位置的任何數值或運算式。  
+###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Format specifiers memory locations in interop debugging with C++/CLI  
+ The following table contains formatting symbols used for memory locations. You can use a memory location specifier with any value or expression that evaluates to a location.  
   
-|符號|格式|原始的監看值|顯示的值|  
-|--------|--------|------------|----------|  
-|**ma**|64 個 ASCII 字元|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
-|**m**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mb**|十六進位表示的 16 個位元組，後面跟著 16 個 ASCII 字元|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
-|**mw**|8 個字組|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
-|**md**|4 個 Doubleword|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
-|**mq**|2 個 Quadword|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
-|**mu**|2 個位元組的字元 \(Unicode\)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
+|Symbol|Format|Original Watch Value|Value Displayed|  
+|------------|------------|--------------------------|---------------------|  
+|**ma**|64 ASCII characters|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|  
+|**m**|16 bytes in hexadecimal, followed by 16 ASCII characters|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mb**|16 bytes in hexadecimal, followed by 16 ASCII characters|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|  
+|**mw**|8 words|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|  
+|**md**|4 doublewords|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|  
+|**mq**|2 quadwords|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
+|**mu**|2-byte characters (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 在使用 C\+\+\/CLI 的 Interop 偵錯中做為陣列之指標的大小規範  
- 如果想要將檢視的物件指標做為陣列，可以使用整數來指定陣列項目的數量：  
+###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Size specifier for pointers as arrays in interop debugging with C++/CLIt  
+ If you have a pointer to an object you want to view as an array, you can use an integer to specify the number of array elements:  
   
-|規範|格式|運算式|顯示的值|  
-|--------|--------|---------|----------|  
-|n|十進位整數|pBuffer\[32\]|顯示 `pBuffer` 為 32 個項目的陣列。|
+|Specifier|Format|Expression|Value Displayed|  
+|---------------|------------|----------------|---------------------|  
+|n|Decimal integer|pBuffer[32]|Displays `pBuffer` as a 32 element array.|

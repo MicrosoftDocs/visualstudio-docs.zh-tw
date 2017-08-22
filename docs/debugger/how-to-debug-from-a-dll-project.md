@@ -1,75 +1,106 @@
 ---
-title: "如何：從 DLL 專案偵錯 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio], DLL"
-  - "偵錯 DLL"
-  - "DLL 專案, 偵錯"
-  - "DLL, 偵錯專案"
+title: 'How to: Debug from a DLL Project | Microsoft Docs'
+ms.custom: 
+ms.date: 05/24/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- DLL projects, debugging
+- debugging DLLs
+- DLLs, debugging projects
+- debugging [Visual Studio], DLLs
 ms.assetid: 40a94339-d3f7-4ab9-b8a1-b8cf82942f44
 caps.latest.revision: 30
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 30
----
-# 如何：從 DLL 專案偵錯
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 62f65784f36031eb754252f385f7c78c821fc5ec
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-若要啟動 DLL 專案的偵錯，必須在專案屬性中指定呼叫應用程式。  C\+\+ 屬性頁面在配置與內容方面和 C\# 及 Visual Basic 的屬性頁面不同。  
+---
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio"></a>How to: Debug from a DLL Project in Visual Studio
+One way to debug a DLL project is to specify the calling application in the project properties of the DLL project and then you can start debugging from the DLL project itself. For this method to work, the application must call the DLL, and the DLL must be in the location where the application expects to find it (otherwise, the application might find a different version of the DLL and load that instead, and it won't hit your breakpoints). For other methods of debugging DLLs, see [Debugging DLL Projects](../debugger/debugging-dll-projects.md).
   
- 如果機器碼呼叫了 Managed DLL，且您想要對兩者進行偵錯，可以在專案屬性中指定此項目。  如需取得詳細資訊，請參閱[如何：在混合模式偵錯](../debugger/how-to-debug-in-mixed-mode.md)。  
+If a managed DLL is called by native code and you want to debug both, you can specify this in the project properties. For more information, see [How to: Debug in Mixed Mode](../debugger/how-to-debug-in-mixed-mode.md).   
+
+The C++ property pages differ in layout and content from the C# and Visual Basic property pages. 
   
-> [!NOTE]
->  您無法在 Visual Studio 的 Express 版中指定外部呼叫應用程式。  而是需要將可執行的專案加入方案中，並將其設定為啟動專案，並從可執行的專案之 DLL 中呼叫方法。  
+### <a name="to-specify-the-calling-application-in-a-c-project"></a>To specify the calling application in a C++ project  
   
-### 在 C\+\+ 專案中指定呼叫應用程式  
+1.  Right-click the project node in the **Solution Explorer** and select **Properties**.  
   
-1.  在 \[方案總管\] 的專案節點上按一下滑鼠右鍵，並選取 \[屬性\] 。  移至 \[偵錯\] 索引標籤。  
+2.  Make sure that the **Configuration** field at the top of the window is set to **Debug**. 
+
+    A **Debug** configuration is required for this method. 
   
-2.  請確定視窗頂端的 \[組態\] 欄位，已設定為 \[偵錯\]。  
+3.  Go to **Configuration Properties > Debugging**.  
   
-3.  移至 \[組態屬性\/偵錯\]。  
+4.  In the **Debugger to launch** list, choose **Local Windows Debugger** or **Remote Windows Debugger**.  
   
-4.  在 \[要啟動的偵錯工具\] 清單中，選擇 \[本機 Windows 偵錯工具\] 或 \[遠端 Windows 偵錯工具\]。  
+5.  In the **Command** or **Remote Command** box, add the fully-qualified path name of the calling application (such as an .exe file).
+
+    ![Debugging Properties Window](../debugger/media/dbg-debugging-properties-dll.png "DebuggingPropertiesWindow")  
   
-5.  在 \[命令\] 或 \[遠端命令\] 方塊中，加入應用程式的完整路徑名稱。  
+6.  Add any necessary program arguments to the **Command Arguments** box.  
   
-6.  在 \[命令引數\] 方塊中，加入必要的程式引數。  
+### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>To specify the calling application in a C# or Visual Basic project  
   
-### 在 C\# 或 Visual Basic 專案中指定呼叫應用程式  
+1.  Right-click the project node in the **Solution Explorer** and select **Properties**, and then select the **Debug** tab.
+
+2.  Make sure that the **Configuration** field at the top of the window is set to **Debug**.
+
+3.  (.NET Framework) Select **Start external program**, and add the fully-qualified path name of the calling application.
+
+4.  (.NET Core) Select **Executable** from the **Launch** list, and then add the fully-qualified path name of the calling application in the **Executable** field. 
   
-1.  在 \[方案總管\] 的專案節點上按一下滑鼠右鍵，並選取 \[屬性\] 。  移至 \[偵錯\] 索引標籤。  
+     If you need to add the external program's command line arguments, add them in the **Command line arguments** (or **Application arguments**) field.
+
+    ![Debugging Properties Window](../debugger/media/dbg-debugging-properties-dll-csharp.png "DebuggingPropertiesWindow") 
+
+5.  If you need to, you can also call an application as a URL. (You might want to do this if you are debugging a managed DLL used by a local ASP.NET application.)  
   
-     選取 \[啟動外部程式\]，然後加入要執行的程式之完整路徑名稱。  
+     Under **Start Action**, select the **Start browser with URL:** radio button and fill in the URL.
   
-     如果需要加入外部程式的命令列引數，請將其加入 \[命令列的引數\] 欄位。  
+### <a name="to-start-debugging-from-the-dll-project"></a>To start debugging from the DLL project  
   
-2.  您也可以將應用程式呼叫為 URL。  \(若正在偵錯本機 ASP.NET 應用程式所使用之 Managed DLL，進行此動作可能相當有助益。\)  
+1.  Set breakpoints in the DLL project. 
+
+2.  Right-click the DLL project and choose **Set as Startup Project**. 
+
+    (Also, make sure that the **Solutions Configuration** field is still set to **Debug**.)   
   
-     在 \[起始動作\] 下，選取 \[瀏覽器起始 URL:\] 選項按鈕並塡入 URL。  
+3.  Start debugging (press F5, click the green arrow, or click **Debug > Start Debugging**).
+
+    You will hit the breakpoints in your DLL. If you aren't able to hit the breakpoints, make sure that your DLL output (by default, the **project\Debug** folder) is in a location that the calling application expects to find it.
   
-### 從 DLL 專案啟動偵錯  
-  
-1.  視需要設定中斷點。  
-  
-2.  啟動偵錯 \(按 F5 鍵，按一下綠色箭頭或按一下 \[偵錯\/開始偵錯\]\)。  
-  
-## 請參閱  
- [偵錯 DLL 專案](../debugger/debugging-dll-projects.md)   
- [C\# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [C\+\+ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+## <a name="see-also"></a>See Also  
+ [Debugging DLL Projects](../debugger/debugging-dll-projects.md)   
+ [Project Settings for  C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Project Settings for a Visual Basic Debug Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)

@@ -1,73 +1,138 @@
 ---
-title: "如何：設定偵錯和發行組態 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.builds"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "組建組態, 偵錯"
-  - "組建組態, 發行"
-  - "組態, 發行"
-  - "偵錯組建"
-  - "偵錯組建, 變更組態設定"
-  - "偵錯組建, 切換至發行組建"
-  - "偵錯組態"
-  - "偵錯 [Visual Studio], 偵錯組態"
-  - "偵錯 [Visual Studio], 發行組態"
-  - "專案 [Visual Studio], 偵錯組態"
-  - "專案 [Visual Studio], 發行組態"
-  - "發行組建, 變更設定"
-  - "發行組建, 切換至偵錯組建"
-  - "Visual Basic 專案, 偵錯與發行組建"
+title: 'How to: Set debug and release configurations | Microsoft Docs'
+ms.custom: H1HackMay2017
+ms.date: 04/10/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.builds
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- configurations, release
+- build configurations, release
+- projects [Visual Studio], release configurations
+- debugging [Visual Studio], release configurations
+- release builds, changing settings
+- debug builds
+- debug builds, switching to release build
+- debug builds, changing configuration settings
+- debugging [Visual Studio], debug configurations
+- projects [Visual Studio], debug configurations
+- build configurations, debug
+- debug configurations
+- release builds, switching to debug build
+- Visual Basic projects, debug and release builds
 ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 45
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 45
----
-# 如何：設定偵錯和發行組態
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 8686f4ae235cedfa82e403bac72c891aaa0fa9e0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-Visual Studio 專案針對您的程式具有不同的版本和偵錯組態。  依照名稱提示，您可以建置用來偵錯的偵錯版本，和最後發行散發的發行版本。  
+---
+# <a name="how-to-set-debug-and-release-configurations-in-visual-studio"></a>How to: Set debug and release configurations in Visual Studio
+Visual Studio projects have separate release and debug configurations for your program. As the names imply, you build the debug version for debugging and the release version for the final release distribution.  
   
- 程式的偵錯組態會使用完整符號偵錯資訊，在沒有最佳化的情況下進行編譯。  最佳化會使偵錯變得複雜，因為原始程式碼與產生的指令之間關係較為複雜。  
+The debug configuration of your program is compiled with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex.  
   
- 程式的發行組態不包含符號偵錯資訊，而且會完全最佳化。  依照所用的編譯器選項而定，PDB 檔案中可能會產生偵錯資訊。  如果您日後必須偵錯發行版本，建立 PDB 檔可能會非常有用。  
+The release configuration of your program contains no symbolic debug information and is fully optimized. Debug information can be generated in .pdb files, [depending on the compiler options](#BKMK_symbols_release) that are used. Creating .pdb files can be very useful if you later have to debug your release version.  
   
- 如需建置組態的詳細資訊，請參閱[了解組建組態](../ide/understanding-build-configurations.md)。  
+For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).  
   
- 您可以從 \[建置\] 功能表、從工具列，或在專案的屬性頁中變更組建組態。  專案屬性頁因語言而異。  下列程序示範如何從功能表和工具列變更組建組態。  如需如何變更不同語言專案中組建組態的詳細資訊，請參閱以下的＜相關主題＞一節。  
+You can change the build configuration from the **Build** menu, from the toolbar, or in the project's property pages. Project property pages are language-specific. The procedure below shows how to change the build configuration from the menu and the toolbar. For more information about how to change the build configuration in projects in different languages, see the See Also section below.  
   
-### 若要變更組建組態  
+## <a name="change-the-build-configuration"></a>Change the build configuration  
   
-1.  從 \[建置\] 功能表：按一下 \[建置\] \/ \[組態管理員\]，然後選取 \[偵錯\] 或 \[發行\]。  
+1.  From the **Build** menu, select **Configuration Manager**, then select **Debug** or **Release**.  
   
-2.  在工具列的 \[方案組態\] 清單方塊中，選擇 \[偵錯\] 或 \[發行\]。  
+2.  On the toolbar, choose either **Debug** or **Release** from the **Solution Configurations** list box.  
   
-     ![工具列組建組態](~/debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
+     ![toolbar build configuration](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
-     在 Express 版中無法使用此工具列。  您可以使用 \[**建置方案 F6**\] 和 \[**開始偵錯 F5**\] 功能表項目選擇組態。  
+     This toolbar is not available in Express editions. You can use the **Build Solution F6** and **Start Debugging F5** menu items to choose the configuration.
+
+## <a name="BKMK_symbols_release"></a>Generate symbol (.pbd) files for a build
+
+For most project types, the .pdb files are generated by default for both debug and release builds, but the default settings are different depending on your specific project type and the version of Visual Studio. You can configure whether the compiler generates .pdb files and what kind of debug information to include.
+
+> [!IMPORTANT] 
+> The debugger will load only a .pdb file for an executable file that exactly matches the .pdb file that was created when the executable was built (that is, the .pdb must be the original or a copy of the original .pdb file). For more information see [Why does Visual Studio require debugger symbol files to exactly match the binary files that they were built with?](https://blogs.msdn.microsoft.com/jimgries/2007/07/06/why-does-visual-studio-require-debugger-symbol-files-to-exactly-match-the-binary-files-that-they-were-built-with/)
+
+Each project type may have a different way of setting these options.
+
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generate symbol files for a C#, ASP.NET, or Visual Basic project
+
+For detailed information on project settings for debug configurations in C#, see [Project settings for a C# Debug configuration](../debugger/project-settings-for-csharp-debug-configurations.md). For Visual Basic, see [this topic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+
+1. Right-click the project in Solution Explorer and choose **Properties**.
+
+2. Choose a **Release** or **Debug** build from the **Configuration** list.
+
+2. Choose **Build** settings and then click the **Advanced** button.
+
+    In Visual Basic, you choose the **Compile** settings and the **Advanced Compile Options** button instead.
+
+3. Choose **full**, **portable**, or **pdb_only** in the **Debugging information** list box (**Generate debug info** in Visual Basic).
+
+    The portable format is the most recent cross-platform format for .NET Core. For more information on options, see [Advanced Build Settings dialog box (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+
+    ![Generate PDBs for builds in C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+
+4. Build your project.
+
+    The symbol file(s) get created in the same folder as the executable or the main output file.
+
+### <a name="generate-symbol-files-for-a-c-project"></a>Generate symbol files for a C++ project
+
+1. Right-click the project in Solution Explorer and choose **Properties**.
+
+2. Choose a **Release** or **Debug** build from the **Configuration** list.
+
+2. Under **Linker > Debugging**, select desired options for **Generate Debug Info**.
+
+    For detailed information on project settings for debug configurations in C++, see [Project settings for a C++ Debug configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+
+4. Configure options for Generate Program Database Files
+
+    In most C++ projects, the default value is `$(OutDir)$(TargetName).pdb`, which generates .pdb files in the output folder.
+
+    ![Generate PDBs for builds in C++](../debugger/media/dbg_project_properties_pdb_cplusplus.png "GeneratePDBsforCPlusPlus") 
+
+5. Build your project.
+
+    The symbol file(s) get created in the same folder as the executable or the main output file.
   
-## 請參閱  
- [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
- [C\+\+ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [C\# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
- [Debug and Release Project Configurations](http://msdn.microsoft.com/zh-tw/0440b300-0614-4511-901a-105b771b236e)
+## <a name="see-also"></a>See Also  
+ [Specify symbol (.pdb) files and source files in the  Visua Studio debugger](../debugger/debugger-settings-and-preparation.md) [Debugger Settings and Preparation](../debugger/debugger-settings-and-preparation.md)   
+ [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Project Settings for  C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Project Settings for a Visual Basic Debug Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md)   
+ [Debug and Release Project Configurations](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)

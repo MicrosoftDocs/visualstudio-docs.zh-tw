@@ -1,82 +1,89 @@
 ---
-title: "如何：以 TableAdapter 直接存取資料庫 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 儲存"
-  - "資料庫 [Visual Basic], 使用 TableAdapter 存取"
-  - "資料集 [Visual Basic], 加入至專案"
-  - "DBDirect 方法"
-  - "GenerateDbDirectMethods 屬性"
-  - "儲存資料"
-  - "TableAdapter.Delete 方法"
-  - "TableAdapter.GenerateDBDirectMethods 屬性"
-  - "TableAdapter.Insert 方法"
-  - "TableAdapter.Update 方法"
-  - "TableAdapter"
+title: Directly access the database with a TableAdapter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- databases [Visual Basic], accessing with a TableAdapter
+- DBDirect methods
+- datasets [Visual Basic], adding to projects
+- data [Visual Studio], saving
+- TableAdapter.Delete method
+- GenerateDbDirectMethods property
+- TableAdapter.Insert method
+- TableAdapter.GenerateDBDirectMethods property
+- TableAdapter.Update method
+- saving data
+- TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 12
-caps.handback.revision: 8
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 2d3b6a7be25b04254cd4cdefd23f7edac2f93cd7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 如何：以 TableAdapter 直接存取資料庫
-除了 `InsertCommand`、`UpdateCommand` 和 `DeleteCommand` 之外，還可以使用直接執行於資料庫的方法，建立 TableAdapter。  您可以直接呼叫這些方法 \(`TableAdapter.Insert`、`TableAdapter.Update` 和 `TableAdapter.Delete`\)，管理資料庫中的資料。  
+# <a name="directly-access-the-database-with-a-tableadapter"></a>Directly access the database with a TableAdapter
+In addition to the `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableAdapters are created with methods that can be run directly against the database. These methods (`TableAdapter.Insert`, `TableAdapter.Update`, and `TableAdapter.Delete`) can be called to manipulate data directly in the database.  
   
- 如果您不要建立這些直接方法，請在 \[**屬性**\] 視窗中將 TableAdapter 的 `GenerateDbDirectMethods` 屬性設為 `false`。  除了 TableAdapter 的主要查詢之外，所有加入至 TableAdapter 的查詢也都是獨立查詢，所以不會產生這些 DbDirect 方法。  
+ If you don't want to create these direct methods, set the TableAdapter's `GenerateDbDirectMethods` property to `false` in the **Properties** window. If any queries  are added to a TableAdapter in addition to the TableAdapter's main query, they are standalone queries that don't generate these DbDirect methods.  
   
-## 將命令直接傳送給資料庫  
- 呼叫會執行您正嘗試完成之工作的 TableAdapter DbDirect 方法。  
+## <a name="send-commands-directly-to-a-database"></a>Send commands directly to a database  
+ Call the TableAdapter DbDirect method that performs the task you are trying to accomplish.  
   
-#### 若要將新的資料錄直接插入到資料庫中  
+#### <a name="to-insert-new-records-directly-into-a-database"></a>To insert new records directly into a database  
   
--   請呼叫 TableAdapter 的 `Insert` 方法，並傳入每個資料行的值做為參數。  下列程序會使用 Northwind 資料庫的 `Region` 資料表做為範例。  
-  
-    > [!NOTE]
-    >  如果您沒有可用的執行個體，請針對您想使用的 TableAdapter 執行個體化。  
-  
-     [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]
-     [!code-cs[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]  
-  
-#### 若要直接在資料庫中更新資料錄  
-  
--   請呼叫 TableAdapter 的 `Update` 方法，並傳入每個資料行的新值和原始值做為參數。  
+-   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind databaseas an example.  
   
     > [!NOTE]
-    >  如果您沒有可用的執行個體，請針對您想使用的 TableAdapter 執行個體化。  
+    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
   
-     [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]
-     [!code-cs[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]  
+     [!code-vb[VbRaddataSaving#15](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_1.vb)]  [!code-cs[VbRaddataSaving#15](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_1.cs)]  
   
-#### 若要直接從資料庫中刪除資料錄  
+#### <a name="to-update-records-directly-in-a-database"></a>To update records directly in a database  
   
--   請呼叫 TableAdapter 的 `Delete` 方法，並傳入每個資料行的值做為 `Delete` 方法的參數   \(此範例使用 Northwind 資料庫的 `Region` 資料表\)。  
+-   Call the TableAdapter's `Update` method, passing in the new and original values for each column as parameters.  
   
     > [!NOTE]
-    >  如果您沒有可用的執行個體，請針對您想使用的 TableAdapter 執行個體化。  
+    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
   
-     [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]
-     [!code-cs[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]  
+     [!code-vb[VbRaddataSaving#18](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_2.vb)]  [!code-cs[VbRaddataSaving#18](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_2.cs)]  
   
-## 請參閱  
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)   
- [TableAdapter 概觀](../data-tools/tableadapter-overview.md)   
- [命令和參數](../Topic/Commands%20and%20Parameters.md)
+#### <a name="to-delete-records-directly-from-a-database"></a>To delete records directly from a database  
+  
+-   Call the TableAdapter's `Delete` method, passing in the values for each column as parameters of the `Delete` method. The following procedure uses the `Region` table in the Northwind database as an example.  
+  
+    > [!NOTE]
+    >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  
+  
+     [!code-vb[VbRaddataSaving#21](../data-tools/codesnippet/VisualBasic/directly-access-the-database-with-a-tableadapter_3.vb)]  [!code-cs[VbRaddataSaving#21](../data-tools/codesnippet/CSharp/directly-access-the-database-with-a-tableadapter_3.cs)]  
+  
+## <a name="see-also"></a>See Also  
+ [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -1,93 +1,109 @@
 ---
-title: "MFC 偵錯技術 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AfxEnableMemoryTracking"
-  - "CMemoryState"
-  - "delayFreeMemDF"
-  - "checkAlwaysMemDF"
-  - "vs.debug.mfc"
-  - "vs.debug.objects.dump"
-  - "vs.debug.memory.dump"
-  - "allocMemDF"
-  - "afxMemDF"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [MFC]"
+title: MFC Debugging Techniques | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AfxEnableMemoryTracking
+- CMemoryState
+- delayFreeMemDF
+- checkAlwaysMemDF
+- vs.debug.mfc
+- vs.debug.objects.dump
+- vs.debug.memory.dump
+- allocMemDF
+- afxMemDF
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [MFC]
 ms.assetid: b154fc31-5e90-4734-8cbd-58dd9fe1f750
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# MFC 偵錯技術
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 8ead19c84b5a2a522199f70773a7ba99613b6b7f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-如果您正在偵錯 MFC 程式，這些偵錯技術可能很有幫助。  
+---
+# <a name="mfc-debugging-techniques"></a>MFC Debugging Techniques
+If you are debugging an MFC program, these debugging techniques may be useful.  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
  [AfxDebugBreak](#BKMK_AfxDebugBreak)  
   
- [TRACE 巨集](#BKMK_The_TRACE_macro)  
+ [The TRACE macro](#BKMK_The_TRACE_macro)  
   
- [在 MFC 偵測記憶體流失](#BKMK_Memory_leak_detection_in_MFC)  
+ [Detecting memory leaks in MFC](#BKMK_Memory_leak_detection_in_MFC)  
   
--   [追蹤記憶體配置](#BKMK_Tracking_memory_allocations)  
+-   [Tracking memory allocations](#BKMK_Tracking_memory_allocations)  
   
--   [啟用記憶體診斷](#BKMK_Enabling_memory_diagnostics)  
+-   [Enabling memory diagnostics](#BKMK_Enabling_memory_diagnostics)  
   
--   [擷取記憶體快照](#BKMK_Taking_memory_snapshots)  
+-   [Taking memory snapshots](#BKMK_Taking_memory_snapshots)  
   
--   [檢視記憶體統計資料](#BKMK_Viewing_memory_statistics)  
+-   [Viewing memory statistics](#BKMK_Viewing_memory_statistics)  
   
--   [取得物件傾印](#BKMK_Taking_object_dumps)  
+-   [Taking object dumps](#BKMK_Taking_object_dumps)  
   
-    -   [解譯記憶體傾印](#BKMK_Interpreting_memory_dumps)  
+    -   [Interpreting memory dumps](#BKMK_Interpreting_memory_dumps)  
   
-    -   [自訂物件傾印](#BKMK_Customizing_object_dumps)  
+    -   [Customizing object dumps](#BKMK_Customizing_object_dumps)  
   
-     [減少 MFC 偵錯組建的大小](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
+     [Reducing the size of an MFC Debug build](#BKMK_Reducing_the_size_of_an_MFC_Debug_build)  
   
-    -   [以選取的模組之偵錯資訊來建置 MFC 應用程式](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
+    -   [Building an MFC app with debug information for selected modules](#BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules)  
   
 ##  <a name="BKMK_AfxDebugBreak"></a> AfxDebugBreak  
- MFC 提供了一個特殊的 [AfxDebugBreak](../Topic/AfxDebugBreak%20\(MFC\).md) 函式，可在原始程式碼中直接撰寫 \(硬式編碼\) 中斷點：  
+ MFC provides a special [AfxDebugBreak](http://msdn.microsoft.com/Library/c4cd79b9-9327-4db5-a9d6-c4004a92aa30) function for hard-coding breakpoints in source code:  
   
 ```  
 AfxDebugBreak( );  
   
 ```  
   
- 在 Intel 平台上，`AfxDebugBreak` 會產生下列會在原始程式碼裡而非在核心 \(Kernel\) 程式碼中斷的程式碼：  
+ On Intel platforms, `AfxDebugBreak` produces the following code, which breaks in source code rather than kernel code:  
   
 ```  
 _asm int 3  
 ```  
   
- 在其他的平台上，`AfxDebugBreak` 只會呼叫 `DebugBreak`。  
+ On other platforms, `AfxDebugBreak` merely calls `DebugBreak`.  
   
- 當您建立發行的組建或使用 `AfxDebugBreak` 來包圍它們時，請務必要移除 `#ifdef _DEBUG` 陳述式。  
+ Be sure to remove `AfxDebugBreak` statements when you create a release build or use `#ifdef _DEBUG` to surround them.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_The_TRACE_macro"></a> TRACE 巨集  
- 若要在偵錯工具[輸出視窗](../ide/reference/output-window.md)裡顯示程式的訊息，您可以使用 [ATLTRACE](../Topic/ATLTRACE%20\(ATL\).md) 巨集或 MFC [TRACE](../Topic/TRACE.md) 巨集。 像[判斷提示](../debugger/c-cpp-assertions.md)一樣，追蹤巨集只有在程式的偵錯版本才會啟動而且在發行版本編譯時會消失。  
+##  <a name="BKMK_The_TRACE_macro"></a> The TRACE macro  
+ To display messages from your program in the debugger [Output window](../ide/reference/output-window.md), you can use the [ATLTRACE](http://msdn.microsoft.com/Library/c796baa5-e2b9-4814-a27d-d800590b102e) macro or the MFC [TRACE](http://msdn.microsoft.com/Library/7b6f42d8-b55a-4bba-ab04-c46251778e6f) macro. Like [assertions](../debugger/c-cpp-assertions.md), the trace macros are active only in the Debug version of your program and disappear when compiled in the Release version.  
   
- 下列範例顯示一些您可以使用 **TRACE** 巨集的方式。 就像 `printf` 一樣，**TRACE** 巨集可以處理許多引數。  
+ The following examples show some of the ways you can use the **TRACE** macro. Like `printf`, the **TRACE** macro can handle a number of arguments.  
   
 ```  
 int x = 1;  
@@ -102,7 +118,7 @@ TRACE( "x = %d and y = %d\n", x, y );
 TRACE( "x = %d and y = %x and z = %f\n", x, y, z );  
 ```  
   
- TRACE 巨集會適當處理 char\* 和 wchar\_t\* 這兩種參數。 下列範例示範搭配不同類型的字串參數來使用 TRACE 巨集。  
+ The TRACE macro appropriately handles both char* and wchar_t\* parameters. The following examples demonstrate the use of the TRACE macro together with different types of string parameters.  
   
 ```  
 TRACE( "This is a test of the TRACE macro that uses an ANSI string: %s %d\n", "The number is:", 2);  
@@ -113,62 +129,62 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
   
 ```  
   
- 如需 **TRACE** 巨集的詳細資訊，請參閱[診斷服務](/visual-cpp/mfc/reference/diagnostic-services)。  
+ For more information on the **TRACE** macro, see [Diagnostic Services](/cpp/mfc/reference/diagnostic-services).  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> 在 MFC 偵測記憶體流失  
- MFC 提供類別和函式來偵測已配置但從未解除配置的記憶體。  
+##  <a name="BKMK_Memory_leak_detection_in_MFC"></a> Detecting memory leaks in MFC  
+ MFC provides classes and functions for detecting memory that is allocated but never deallocated.  
   
-###  <a name="BKMK_Tracking_memory_allocations"></a> 追蹤記憶體配置  
- 在 MFC 裡，您可以使用 [DEBUG\_NEW](../Topic/DEBUG_NEW.md) 巨集取代 **new** 運算子來幫助尋找記憶體流失。 在程式的偵錯版本裡，`DEBUG_NEW` 追蹤每個物件所配置的檔案名稱和行號。 當您編譯程式的發行版本時，`DEBUG_NEW` 解析成簡單而不具檔名和行號資訊的 **new** 操作。 因此，在程式的發行版本中不會有速度負擔。  
+###  <a name="BKMK_Tracking_memory_allocations"></a> Tracking memory allocations  
+ In MFC, you can use the macro [DEBUG_NEW](http://msdn.microsoft.com/Library/9b379344-4093-4bec-a3eb-e0d8a63ada9d) in place of the **new** operator to help locate memory leaks. In the Debug version of your program, `DEBUG_NEW` keeps track of the file name and line number for each object that it allocates. When you compile a Release version of your program, `DEBUG_NEW` resolves to a simple **new** operation without the file name and line number information. Thus, you pay no speed penalty in the Release version of your program.  
   
- 如果您不要以 `DEBUG_NEW` 取代 **new** 來重新編寫整個程式，您可以在原始程式檔裡定義這個巨集：  
+ If you do not want to rewrite your entire program to use `DEBUG_NEW` in place of **new**, you can define this macro in your source files:  
   
 ```  
 #define new DEBUG_NEW  
 ```  
   
- 當您執行[物件傾印](#BKMK_Taking_object_dumps)，每個以 `DEBUG_NEW` 配置的物件會顯示其配置位置的檔案和行號，讓您可以指出記憶體流失的來源。  
+ When you do an [object dump](#BKMK_Taking_object_dumps), each object allocated with `DEBUG_NEW` will show the file and line number where it was allocated, allowing you to pinpoint the sources of memory leaks.  
   
- MFC 架構的偵錯版本會自動使用 `DEBUG_NEW`，但是您的程式碼不會。 如果您要擁有 `DEBUG_NEW` 的優點，您必須依照上述方式，明確地使用 `DEBUG_NEW` 或 **\#define new**。  
+ The Debug version of the MFC framework uses `DEBUG_NEW` automatically, but your code does not. If you want the benefits of `DEBUG_NEW`, you must use `DEBUG_NEW` explicitly or **#define new** as shown above.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Enabling_memory_diagnostics"></a> 啟用記憶體診斷  
- 您必須在使用記憶體診斷設施之前啟用診斷追蹤。  
+###  <a name="BKMK_Enabling_memory_diagnostics"></a> Enabling memory diagnostics  
+ Before you can use the memory diagnostics facilities, you must enable diagnostic tracing.  
   
- **若要啟用或停用記憶體診斷**  
+ **To enable or disable memory diagnostics**  
   
--   呼叫全域函式 [AfxEnableMemoryTracking](../Topic/AfxEnableMemoryTracking.md) 來啟用或停用診斷記憶體配置器 \(Allocator\)。 因為記憶體診斷在偵錯程式庫中預設是啟用的，通常您會使用這個函式將它們暫時地關閉，以增加程式執行速度和減少診斷輸出。  
+-   Call the global function [AfxEnableMemoryTracking](http://msdn.microsoft.com/Library/0a40e0c4-855d-46e2-9577-a8f2346f47db) to enable or disable the diagnostic memory allocator. Because memory diagnostics are on by default in the debug library, you will typically use this function to temporarily turn them off, which increases program execution speed and reduces diagnostic output.  
   
- **若要選取具 afxMemDF 的特定記憶體診斷功能**  
+ **To select specific memory diagnostic features with afxMemDF**  
   
--   如果您要更準確地控制記憶體診斷功能，您可以設定 MFC 全域變數 [afxMemDF](../Topic/afxMemDF.md) 值，選擇性地開啟和關閉各個記憶體診斷功能。 這個變數可以有下列的值，如同列舉類型 **afxMemDF** 所指定。  
+-   If you want more precise control over the memory diagnostic features, you can selectively turn individual memory diagnostic features on and off by setting the value of the MFC global variable [afxMemDF](http://msdn.microsoft.com/Library/cf117501-5446-4fce-81b3-f7194bc95086). This variable can have the following values as specified by the enumerated type **afxMemDF**.  
   
-    |值|描述|  
-    |-------|--------|  
-    |**allocMemDF**|開啟診斷記憶體配置器 \(預設\)。|  
-    |**delayFreeMemDF**|呼叫 `delete` 或 `free` 時會延遲釋放記憶體，直到程式結束。 這會造成程式配置可能的最大記憶體量。|  
-    |**checkAlwaysMemDF**|每一次記憶體配置或釋放時都會呼叫 [AfxCheckMemory](../Topic/AfxCheckMemory.md)。|  
+    |Value|Description|  
+    |-----------|-----------------|  
+    |**allocMemDF**|Turn on diagnostic memory allocator (default).|  
+    |**delayFreeMemDF**|Delay freeing memory when calling `delete` or `free` until program exits. This will cause your program to allocate the maximum possible amount of memory.|  
+    |**checkAlwaysMemDF**|Call [AfxCheckMemory](http://msdn.microsoft.com/Library/4644da71-7d14-41dc-adc0-ee9558fd7a28) every time memory is allocated or freed.|  
   
-     這些值可以藉由執行邏輯 OR 操作用於結合，如下所示：  
+     These values can be used in combination by performing a logical-OR operation, as shown here:  
   
-    ```cpp  
+    ```C++  
     afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;  
     ```  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_memory_snapshots"></a> 擷取記憶體快照  
+###  <a name="BKMK_Taking_memory_snapshots"></a> Taking memory snapshots  
   
-1.  建立 [CMemoryState](http://msdn.microsoft.com/zh-tw/8fade6e9-c6fb-4b2a-8565-184a912d26d2) 物件並呼叫 [CMemoryState::Checkpoint](../Topic/CMemoryState::Checkpoint.md) 成員函式。 這會建立第一個記憶體快照。  
+1.  Create a [CMemoryState](http://msdn.microsoft.com/en-us/8fade6e9-c6fb-4b2a-8565-184a912d26d2) object and call the [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint) member function. This creates the first memory snapshot.  
   
-2.  程式執行記憶體配置和解除配置操作之後，會建立另一個 `CMemoryState` 物件並且呼叫此物件的 `Checkpoint`。 這會取得記憶體使用的第二個快照。  
+2.  After your program performs its memory allocation and deallocation operations, create another `CMemoryState` object and call `Checkpoint` for that object. This gets a second snapshot of memory usage.  
   
-3.  建立第三個 `CMemoryState` 物件並呼叫其 [CMemoryState::Difference](../Topic/CMemoryState::Difference.md) 成員函式，會提供兩個先前的 `CMemoryState` 物件作為引數。 如果兩種記憶體狀態之間有差異，`Difference` 函式會傳回非零值。 這表示有些記憶體區塊沒有解除配置。  
+3.  Create a third `CMemoryState` object and call its [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) member function, supplying as arguments the two previous `CMemoryState` objects. If there is a difference between the two memory states, the `Difference` function returns a nonzero value. This indicates that some memory blocks have not been deallocated.  
   
-     這個範例會顯示程式碼看起來的樣子：  
+     This example shows what the code looks like:  
   
     ```  
     // Declare the variables needed  
@@ -191,16 +207,16 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
     #endif  
     ```  
   
-     請注意，記憶體檢查陳述式會以 `#ifdef`[\_DEBUG](/visual-cpp/c-runtime-library/debug)\/ **\#endif** 區塊括住，因此它們只會在程式的偵錯版本中編譯。  
+     Notice that the memory-checking statements are bracketed by **#ifdef _DEBUG / #endif** blocks so that they are compiled only in Debug versions of your program.  
   
-     您知道有記憶體流失的狀況存在之後，可以使用另一個成員函式 [CMemoryState::DumpStatistics](../Topic/CMemoryState::DumpStatistics.md) 幫助您尋找流失的記憶體。  
+     Now that you know a memory leak exists, you can use another member function, [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) that will help you locate it.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Viewing_memory_statistics"></a> 檢視記憶體統計資料  
- [CMemoryState::Difference](../Topic/CMemoryState::Difference.md) 函式會查看兩個記憶體狀態物件，並偵測開頭和結尾狀態之間任何沒有從堆積解除配置的物件。 在您已擷取記憶體快照並使用 `CMemoryState::Difference` 比較這些快照之後，您可以呼叫 [CMemoryState::DumpStatistics](../Topic/CMemoryState::DumpStatistics.md) 取得沒有解除配置之物件的詳細資訊。  
+###  <a name="BKMK_Viewing_memory_statistics"></a> Viewing memory statistics  
+ The [CMemoryState::Difference](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Difference) function looks at two memory-state objects and detects any objects not deallocated from the heap between the beginning and end states. After you have taken memory snapshots and compared them using `CMemoryState::Difference`, you can call [CMemoryState::DumpStatistics](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpStatistics) to get information about the objects that have not been deallocated.  
   
- 參考下列範例：  
+ Consider the following example:  
   
 ```  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
@@ -210,7 +226,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
 }  
 ```  
   
- 從此範例的傾印看起來會像這樣：  
+ A sample dump from the example looks like this:  
   
 ```  
 0 bytes in 0 Free Blocks  
@@ -220,28 +236,28 @@ Largest number used: 67 bytes
 Total allocations: 67 bytes  
 ```  
   
- 自由區塊是指如果 `afxMemDF` 設為 `delayFreeMemDF` 則解除配置會延遲的區塊。  
+ Free blocks are blocks whose deallocation is delayed if `afxMemDF` was set to `delayFreeMemDF`.  
   
- 一般物件區塊 \(顯示在第二行\) 會維持在堆積配置。  
+ Ordinary object blocks, shown on the second line, remain allocated on the heap.  
   
- 非物件區塊會以 `new` 包含已配置的陣列和結構。 在這種情況下，四個非物件區塊會配置於堆積上而不會解除配置。  
+ Non-object blocks include arrays and structures allocated with `new`. In this case, four non-object blocks were allocated on the heap but not deallocated.  
   
- `Largest number used` 提供程式在任何時間可以使用的最大記憶體。  
+ `Largest number used` gives the maximum memory used by the program at any time.  
   
- `Total allocations` 提供程式所使用的總記憶體量。  
+ `Total allocations` gives the total amount of memory used by the program.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Taking_object_dumps"></a> 取得物件傾印  
- 在 MFC 程式中，您可以使用 [CMemoryState::DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md) 來傾印堆積上尚未解除配置之所有物件的描述。`DumpAllObjectsSince` 會傾印從上一個 [CMemoryState::Checkpoint](../Topic/CMemoryState::Checkpoint.md) 之後配置的所有物件。 如果沒有發生 `Checkpoint` 呼叫，`DumpAllObjectsSince` 會傾印目前在記憶體的所有物件和非物件。  
-  
-> [!NOTE]
->  您必須先[啟用診斷追蹤](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_Memory_Diagnostics)，才能使用 MFC 物件傾印。  
+###  <a name="BKMK_Taking_object_dumps"></a> Taking object dumps  
+ In an MFC program, you can use [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) to dump a description of all objects on the heap that have not been deallocated. `DumpAllObjectsSince` dumps all objects allocated since the last [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__Checkpoint). If no `Checkpoint` call has taken place, `DumpAllObjectsSince` dumps all objects and nonobjects currently in memory.  
   
 > [!NOTE]
->  MFC 會在程式結束時自動傾印所有的流失物件，因此您不需要建立程式碼來傾印這個時候的物件。  
+>  Before you can use MFC object dumping, you must [enable diagnostic tracing](#BKMK_Enabling_Memory_Diagnostics).  
   
- 下列程式碼會比較兩個記憶體狀態來測試記憶體流失，如果偵測到遺漏便會傾印所有物件：  
+> [!NOTE]
+>  MFC automatically dumps all leaked objects when your program exits, so you do not need to create code to dump objects at that point.  
+  
+ The following code tests for a memory leak by comparing two memory states and dumps all objects if a leak is detected.  
   
 ```  
 if( diffMemState.Difference( oldMemState, newMemState ) )  
@@ -251,7 +267,7 @@ if( diffMemState.Difference( oldMemState, newMemState ) )
 }  
 ```  
   
- 傾印的內容看起來像這樣：  
+ The contents of the dump look like this:  
   
 ```  
 Dumping objects ->  
@@ -268,18 +284,18 @@ Phone #: 581-0215
 {1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
 ```  
   
- 大多數程式碼一開頭括號裡的數字便指定了物件配置的順序。 最近配置的物件的數字最高，且會出現在傾印的最上方。  
+ The numbers in braces at the beginning of most lines specify the order in which the objects were allocated. The most recently allocated object has the highest number and appears at the top of the dump.  
   
- 若要從物件傾印取得最大量的資訊，您可以覆寫任何 `Dump` 衍生物件的 `CObject` 成員函式來自訂物件傾印。  
+ To get the maximum amount of information out of an object dump, you can override the `Dump` member function of any `CObject`-derived object to customize the object dump.  
   
- 您可以將全域變數 `_afxBreakAlloc` 設定為顯示在括號裡的數字，將中斷點設於特定記憶體配置上。 如果您重新執行該程式，則當此配置發生時，偵錯工具會中斷執行。 然後您可以查看呼叫堆疊來檢視程式如何到達此點。  
+ You can set a breakpoint on a particular memory allocation by setting the global variable `_afxBreakAlloc` to the number shown in the braces. If you rerun the program the debugger will break execution when that allocation takes place. You can then look at the call stack to see how your program got to that point.  
   
- C 執行階段程式庫中類似的函式是 [\_CrtSetBreakAlloc](/visual-cpp/c-runtime-library/reference/crtsetbreakalloc)，其可用於 C 執行階段配置。  
+ The C run-time library has a similar function, [_CrtSetBreakAlloc](/cpp/c-runtime-library/reference/crtsetbreakalloc), that you can use for C run-time allocations.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Interpreting_memory_dumps"></a> 解譯記憶體傾印  
- 請看此物件傾印的詳細內容：  
+####  <a name="BKMK_Interpreting_memory_dumps"></a> Interpreting memory dumps  
+ Look at this object dump in more detail:  
   
 ```  
 {5} strcore.cpp(80) : non-object block at $00A7521A, 9 bytes long  
@@ -294,7 +310,7 @@ Phone #: 581-0215
 {1} strcore.cpp(80) : non-object block at $00A7516E, 25 bytes long  
 ```  
   
- 產生這種傾印的程式只有兩種明確的配置，一種是在堆疊上，另一種是在堆積上：  
+ The program that generated this dump had only two explicit allocations—one on the stack and one on the heap:  
   
 ```  
 // Do your memory allocations and deallocations.  
@@ -303,15 +319,15 @@ CString s("This is a frame variable");
 CPerson* p = new CPerson( "Smith", "Alan", "581-0215" );  
 ```  
   
- `CPerson` 建構函式 \(Constructor\) 需要三個 `char` 指標的引數 \(用來初始化 `CString` 成員變數\)。 在記憶體傾印裡，您可以看到 `CPerson` 物件和三個非物件區塊 \(3、4 和 5\)。 這些物件會儲存 `CString` 成員變數字元，且在不會在叫用 \(Invoke\) `CPerson` 物件解構函式 \(Destructor\) 刪除。  
+ The `CPerson` constructor takes three arguments that are pointers to `char`, which are used to initialize `CString` member variables. In the memory dump, you can see the `CPerson` object along with three nonobject blocks (3, 4, and 5). These hold the characters for the `CString` member variables and will not be deleted when the `CPerson` object destructor is invoked.  
   
- 區塊編號 2 是 `CPerson` 物件本身。`$51A4` 代表區塊的位址且後面跟著物件的內容 \(由 [DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md) 呼叫時，由 `CPerson`::`Dump` 所輸出\)。  
+ Block number 2 is the `CPerson` object itself. `$51A4` represents the address of the block and is followed by the contents of the object, which were output by `CPerson`::`Dump` when called by [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince).  
   
- 您可以由區塊編號 1 的順序號碼和大小猜想出它與 `CString` 框架變數相關，這些資訊符合 `CString` 框架變數裡的字元數字。 框架上配置的變數在框架超過範圍 \(Scope\) 時會自動解除配置。  
+ You can guess that block number 1 is associated with the `CString` frame variable because of its sequence number and size, which matches the number of characters in the frame `CString` variable. Variables allocated on the frame are automatically deallocated when the frame goes out of scope.  
   
- **框架變數**  
+ **Frame Variables**  
   
- 一般來說，您不必擔心與框架變數相關的堆積物件，因為它們會在框架變數超過範圍時自動解除配置。 若要避免在記憶體診斷傾印裡發生混亂，您應該定位 `Checkpoint` 呼叫，這樣它們會在框架變數範圍的外部。 例如，將範圍括號放在前述配置程式碼的前後，如下所示：  
+ In general, you should not worry about heap objects associated with frame variables because they are automatically deallocated when the frame variables go out of scope. To avoid clutter in your memory diagnostic dumps, you should position your calls to `Checkpoint` so that they are outside the scope of frame variables. For example, place scope brackets around the previous allocation code, as shown here:  
   
 ```  
 oldMemState.Checkpoint();  
@@ -324,7 +340,7 @@ oldMemState.Checkpoint();
 newMemState.Checkpoint();  
 ```  
   
- 加了範圍括號，這個範例的記憶體傾印如下：  
+ With the scope brackets in place, the memory dump for this example is as follows:  
   
 ```  
 Dumping objects ->  
@@ -339,15 +355,15 @@ First Name: Alan
 Phone #: 581-0215  
 ```  
   
- **非物件配置**  
+ **Nonobject Allocations**  
   
- 請注意，有些配置是物件 \(例如 `CPerson`\)，而有些則是非物件配置。 「非物件配置」為不是從 `CObject` 衍生之物件的配置，或基本 C 類型 \(例如 `char`、`int` 或 **long**\) 的配置。 如果 **CObject** 衍生類別配置額外空間 \(例如為內部緩衝區\)，則該類物件便會顯示物件和非物件配置。  
+ Notice that some allocations are objects (such as `CPerson`) and some are nonobject allocations. "Nonobject allocations" are allocations for objects not derived from `CObject` or allocations of primitive C types such as `char`, `int`, or `long`. If the **CObject-**derived class allocates additional space, such as for internal buffers, those objects will show both object and nonobject allocations.  
   
- **防止記憶體流失**  
+ **Preventing Memory Leaks**  
   
- 請注意，在上面的程式碼中，與 `CString` 框架變數相關聯的記憶體區塊已經自動解除配置，而且不會顯示為記憶體流失。 與範圍規則相關的自動解除配置會處理大多數與框架變數相關的記憶體流失。  
+ Notice in the code above that the memory block associated with the `CString` frame variable has been deallocated automatically and does not show up as a memory leak. The automatic deallocation associated with scoping rules takes care of most memory leaks associated with frame variables.  
   
- 然而，對於堆積上的物件配置，您必須明確地刪除物件以防止記憶體流失。 若要清除先前範例裡最後的記憶體流失，請參考下列程式碼，刪除配置在堆積的 `CPerson` 物件：  
+ For objects allocated on the heap, however, you must explicitly delete the object to prevent a memory leak. To clean up the last memory leak in the previous example, delete the `CPerson` object allocated on the heap, as follows:  
   
 ```  
 {  
@@ -359,16 +375,16 @@ Phone #: 581-0215
 }  
 ```  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-####  <a name="BKMK_Customizing_object_dumps"></a> 自訂物件傾印  
- 當您從 [CObject](/visual-cpp/mfc/reference/cobject-class) 衍生類別時，您可在使用 [DumpAllObjectsSince](../Topic/CMemoryState::DumpAllObjectsSince.md) 來傾印物件至[輸出視窗](../ide/reference/output-window.md)時，覆寫 `Dump` 成員函式以提供額外的資訊。  
+####  <a name="BKMK_Customizing_object_dumps"></a> Customizing object dumps  
+ When you derive a class from [CObject](/cpp/mfc/reference/cobject-class), you can override the `Dump` member function to provide additional information when you use [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure.md#cmemorystate__DumpAllObjectsSince) to dump objects to the [Output window](../ide/reference/output-window.md).  
   
- `Dump` 函式將物件的成員變數的文字表示寫入傾印內容 \([CDumpContext](/visual-cpp/mfc/reference/cdumpcontext-class)\)。 傾印內容類似 I\/O 資料流。 您可以使用附加運算子 \(**\<\<**\) 將資料傳送至 `CDumpContext`。  
+ The `Dump` function writes a textual representation of the object's member variables to a dump context ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). The dump context is similar to an I/O stream. You can use the append operator (**<<**) to send data to a `CDumpContext`.  
   
- 當您覆寫 `Dump` 函式時，您應該先呼叫 `Dump` 的基底類別版本來傾印基底類別物件的內容。 接著輸出衍生類別中每個成員變數的文字說明和值。  
+ When you override the `Dump` function, you should first call the base class version of `Dump` to dump the contents of the base class object. Then output a textual description and value for each member variable of your derived class.  
   
- `Dump` 函式的宣告看起來像這樣：  
+ The declaration of the `Dump` function looks like this:  
   
 ```  
 class CPerson : public CObject  
@@ -384,9 +400,9 @@ public:
 };  
 ```  
   
- 因為只有在偵錯程式時，物件傾印才具有意義，`Dump` 函式的宣告會以 **\#ifdef \_DEBUG \/ \#endif** 區塊括號起來。  
+ Because object dumping only makes sense when you are debugging your program, the declaration of the `Dump` function is bracketed with an **#ifdef _DEBUG / #endif** block.  
   
- 在下列範例裡，`Dump` 函式先呼叫基底類別的 `Dump` 函式。 然後將每個成員變數的簡短說明和成員的值一起寫入至診斷資料流。  
+ In the following example, the `Dump` function first calls the `Dump` function for its base class. It then writes a short description of each member variable along with the member's value to the diagnostic stream.  
   
 ```  
 #ifdef _DEBUG  
@@ -402,7 +418,7 @@ void CPerson::Dump( CDumpContext& dc ) const
 #endif  
 ```  
   
- 您必須提供 `CDumpContext` 引數來指定傾印的輸出位置。 MFC 的偵錯版本提供一個可以傳送輸出至偵錯工具的預先定義 `CDumpContext` 物件 \(名為 `afxDump`\)。  
+ You must supply a `CDumpContext` argument to specify where the dump output will go. The Debug version of MFC supplies a predefined `CDumpContext` object named `afxDump` that sends output to the debugger.  
   
 ```  
 CPerson* pMyPerson = new CPerson;  
@@ -414,77 +430,77 @@ pMyPerson->Dump( afxDump );
 #endif  
 ```  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> 減少 MFC 偵錯組建的大小  
- 大型 MFC 應用程式的偵錯資訊可能需要大量的磁碟空間。 您可以使用下列其中一項程序縮減大小：  
+##  <a name="BKMK_Reducing_the_size_of_an_MFC_Debug_build"></a> Reducing the size of an MFC Debug build  
+ The debug information for a large MFC application can take up a lot of disk space. You can use one of these procedures to reduce the size:  
   
-1.  使用 [\/Z7、\/Zi、\/ZI \(偵錯資訊格式\)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format) 選項重建 MFC 程式庫，而非 **\/Z7**。 這些選項會建置包含整個程式庫的偵錯資訊，以降低重複性並且節省空間的單一程式資料庫 \(PDB\) 檔。  
+1.  Rebuild the MFC libraries using the [/Z7, /Zi, /ZI (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) option, instead of **/Z7**. These options build a single program database (PDB) file that contains debug information for the entire library, reducing redundancy and saving space.  
   
-2.  重建不具偵錯資訊的 MFC 程式庫 \(沒有 [\/Z7、\/Zi、\/ZI \(偵錯資訊格式\)](/visual-cpp/build/reference/z7-zi-zi-debug-information-format) 選項\)。 在這個範例裡，缺乏偵錯資訊讓您無法在 MFC 程式庫程式碼裡使用大多數的偵錯工具設施，然而由於 MFC 程式庫已經充分偵錯過了，所以這不是問題。  
+2.  Rebuild the MFC libraries without debug information (no [/Z7, /Zi, /ZI (Debug Information Format)](/cpp/build/reference/z7-zi-zi-debug-information-format) option). In this case, the lack of debug information will prevent you from using most debugger facilities within the MFC library code, but because the MFC libraries are already thoroughly debugged, this may not be a problem.  
   
-3.  只以選取模組的偵錯資訊建置您自己的應用程式，如下所述。  
+3.  Build your own application with debug information for selected modules only as described below.  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> 以選取的模組之偵錯資訊來建置 MFC 應用程式  
- 以 MFC 偵錯程式庫建置選取模組，可以讓您在這些模組裡使用逐步執行的方法和其他偵錯設施。 這個程序利用 Visual C\+\+ Makefile 的偵錯和發行模式，因此必要的變更說明如下列步驟 \(此外在需要完整發行組建時，「全部重建」是必須的\)：  
+###  <a name="BKMK_Building_an_MFC_app_with_debug_information_for_selected_modules"></a> Building an MFC app with debug information for selected modules  
+ Building selected modules with the MFC debug libraries enables you to use stepping and the other debug facilities in those modules. This procedure makes use of both the Debug and Release modes of the Visual C++ makefile, thus necessitating the changes described in the following steps (and also making a "rebuild all" necessary when a full Release build is required).  
   
-1.  在 \[方案總管\] 中選取專案。  
+1.  In Solution Explorer, select the project.  
   
-2.  從 \[**檢視**\] 功能表中，選取 \[**屬性頁**\]。  
+2.  From the **View** menu, select **Property Pages**.  
   
-3.  首先，您要建立新專案組態。  
+3.  First, you will create a new project configuration.  
   
-    1.  在 \[\<專案\> 屬性頁\] 對話方塊中，按一下 \[組態管理員\] 按鈕。  
+    1.  In the **\<Project> Property Pages** dialog box, click the **Configuration Manager** button.  
   
-    2.  在[組態管理員對話方塊](http://msdn.microsoft.com/zh-tw/fa182dca-282e-4ae5-bf37-e155344ca18b)裡，在方格中尋找專案。 在 \[組態\] 欄中，選取 \[\<新增...\>\]。  
+    2.  In the [Configuration Manager dialog box](http://msdn.microsoft.com/en-us/fa182dca-282e-4ae5-bf37-e155344ca18b), locate your project in the grid. In the **Configuration** column, select **\<New...>**.  
   
-    3.  在[新增專案組態對話方塊](http://msdn.microsoft.com/zh-tw/cca616dc-05a6-4fe3-bdc1-40c72a66f2be)裡，於 \[**專案組態名稱**\] 方塊內輸入新組態的名稱，例如「部分偵錯」。  
+    3.  In the [New Project Configuration dialog box](http://msdn.microsoft.com/en-us/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), type a name for your new configuration, such as "Partial Debug", in the **Project Configuration Name** box.  
   
-    4.  在 \[**複製設定值**\] 清單裡，選擇 \[**發行**\]。  
+    4.  In the **Copy Settings from** list, choose **Release**.  
   
-    5.  按一下 \[**確定**\] 關閉 \[**新增專案組態**\] 對話方塊。  
+    5.  Click **OK** to close the **New Project Configuration**dialog box.  
   
-    6.  關閉 \[**組態管理員**\] 對話方塊。  
+    6.  Close the **Configuration Manager** dialog box.  
   
-4.  現在，您要為整個專案設定選項。  
+4.  Now, you will set options for the entire project.  
   
-    1.  在 \[**屬性頁**\] 對話方塊裡，\[**組態屬性**\] 資料夾底下，選取 \[**一般**\] 分類。  
+    1.  In the **Property Pages** dialog box, under the **Configuration Properties** folder, select the **General** category.  
   
-    2.  在專案設計方格裡，展開 \[**專案預設值**\] \(如果有需要\)。  
+    2.  In the project settings grid, expand **Project Defaults** (if necessary).  
   
-    3.  在 \[**專案預設值**\] 底下，尋找 \[**MFC 用法**\]。 目前的設定會出現在方格的右欄。 按一下目前設定並且將它變更為 \[**使用 MFC 的靜態程式庫**\]。  
+    3.  Under **Project Defaults**, find **Use of MFC**. The current setting appears in the right column of the grid. Click on the current setting and change it to **Use MFC in a Static Library**.  
   
-    4.  在 \[**屬性頁**\] 對話方塊的左窗格裡，開啟 \[**C\/C\+\+**\] 資料夾並且選取 \[**前置處理器**\]。 在屬性方格裡，尋找 \[**前置處理器定義**\]，並以 "\_DEBUG" 取代 "NDEBUG"。  
+    4.  In the left pane of the **Properties Pages** dialog box, open the **C/C++** folder and select **Preprocessor**. In the properties grid, find **Preprocessor Definitions** and replace "NDEBUG" with "_DEBUG".  
   
-    5.  在 \[**屬性頁**\] 對話方塊的左窗格裡，開啟 \[**連結器**\] 資料夾並且選取 \[**輸入**\] 分類。 在屬性方格裡，尋找 \[**其他相依性**\]。 在 \[**其他相依性**\] 設定裡，輸入「NAFXCWD.LIB」和「LIBCMT」。  
+    5.  In the left pane of the **Properties Pages** dialog box, open the **Linker** folder and select the **Input** Category. In the properties grid, find **Additional Dependencies**. In the **Additional Dependencies** setting, type "NAFXCWD.LIB" and "LIBCMT."  
   
-    6.  按一下 \[**確定**\] 以儲存新組建選項，並且關閉 \[**屬性頁**\] 對話方塊。  
+    6.  Click **OK** to save the new build options and close the **Property Pages** dialog box.  
   
-5.  從 \[**建置**\] 功能表選取 \[**重建**\]。 這會從模組移除所有的偵錯資訊，但是不會影響 MFC 程式庫。  
+5.  From the **Build** menu, select **Rebuild**. This removes all debug information from your modules but does not affect the MFC library.  
   
-6.  現在您必須將偵錯資訊加回至應用程式裡的選取模組。 記住您只能在以偵錯資訊編譯的模組裡設定中斷點並且執行其他偵錯工具功能。 對於您要包含偵錯資訊的每個專案檔，執行下列步驟：  
+6.  Now you must add debug information back to selected modules in your application. Remember that you can set breakpoints and perform other debugger functions only in modules you have compiled with debug information. For each project file in which you want to include debug information, carry out the following steps:  
   
-    1.  在 \[方案總管\] 裡，開啟位於專案下的 \[**原始程式檔**\] 資料夾。  
+    1.  In Solution Explorer, open the **Source Files** folder located under your project.  
   
-    2.  選取您要設定偵錯資訊的檔案。  
+    2.  Select the file you want to set debug information for.  
   
-    3.  從 \[**檢視**\] 功能表中，選取 \[**屬性頁**\]。  
+    3.  From the **View** menu, select **Property Pages**.  
   
-    4.  在 \[**屬性頁**\] 對話方塊的 \[**組態設定**\] 資料夾底下，開啟 \[**C\/C\+\+**\] 資料夾，然後選取 \[**一般**\] 分類。  
+    4.  In the **Property Pages** dialog box, under the **Configuration Settings** folder, open the **C/C++** folder then select the **General** category.  
   
-    5.  在屬性方格裡，尋找 \[**偵錯資訊格式**\]。  
+    5.  In the properties grid, find **Debug Information Format.**  
   
-    6.  按一下 \[**偵錯資訊格式**\] 設定並且選取偵錯資訊需要的選項 \(通常是 \[**\/ZI**\]\)。  
+    6.  Click the **Debug Information Format** settings and select the desired option (usually **/ZI**) for debug information.  
   
-    7.  如果您要使用應用程式精靈所產生的應用程式，或者您有先行編譯的標頭，則必須關閉先行編譯的標頭，或在編譯其他模組之前重新編譯這些標頭。 否則，您會收到警告 C4650 和錯誤訊息 C2855。 若要關閉先行編譯標頭檔，可以變更 \[\<專案\> 屬性\] 對話方塊中的 \[建立\/使用先行編譯標頭檔\] 設定 \(依序選取 \[組態屬性\] 資料夾、\[C\/C\+\+\] 子資料夾、\[先行編譯標頭檔\] 分類\)。  
+    7.  If you are using an application wizard-generated application or have precompiled headers, you have to turn off the precompiled headers or recompile them before compiling the other modules. Otherwise, you will receive warning C4650 and error message C2855. You can turn off precompiled headers by changing the **Create/Use Precompiled Headers** setting in the **\<Project> Properties** dialog box (**Configuration Properties** folder, **C/C++** subfolder, **Precompiled Headers** category).  
   
-7.  從 \[**建置**\] 功能表，選取 \[**建置**\] 來重建過期的專案檔案。  
+7.  From the **Build** menu, select **Build** to rebuild project files that are out of date.  
   
- 除了本主題所說明的技巧以外，您可以使用外部 Makefile 來定義每個檔案的個別選項。 在此情況中，若要連結 MFC 偵錯程式庫，您必須定義每個模組的 [\_DEBUG](/visual-cpp/c-runtime-library/debug) 旗標。 如果您要使用 MFC 發行程式庫，您必須定義 NDEBUG。 如需撰寫外部 Makefile 的詳細資訊，請參閱 [NMAKE 參考](/visual-cpp/build/running-nmake)。  
+ As an alternative to the technique described in this topic, you can use an external makefile to define individual options for each file. In that case, to link with the MFC debug libraries, you must define the [_DEBUG](/cpp/c-runtime-library/debug) flag for each module. If you want to use MFC release libraries, you must define NDEBUG. For more information on writing external makefiles, see the [NMAKE Reference](/cpp/build/running-nmake).  
   
- [本主題內容](#BKMK_In_this_topic)  
+ [In this topic](#BKMK_In_this_topic)  
   
-## 請參閱  
- [偵錯 Visual C\+\+](../debugger/debugging-native-code.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Visual C++](../debugger/debugging-native-code.md)

@@ -1,64 +1,70 @@
 ---
-title: "如何：擴充 TableAdapter 的功能 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/17/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 擴充 TableAdapters"
-  - "資料 [Visual Studio], TableAdapter"
-  - "TableAdapter, 加入功能"
+title: Extend the functionality of a TableAdapter | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- data [Visual Studio], TableAdapters
+- data [Visual Studio], extending TableAdapters
+- TableAdapters, adding functionality
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 caps.latest.revision: 11
-caps.handback.revision: 7
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: a72bc2d1c887cc15905c100e62c4ca007bfcad47
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 如何：擴充 TableAdapter 的功能
-您可以擴充 TableAdapter 的功能，方法是將程式碼加入 TableAdapter 的部分類別檔。  
+# <a name="extend-the-functionality-of-a-tableadapter"></a>Extend the functionality of a TableAdapter
+You can extend the functionality of a TableAdapter by adding code to the TableAdapter's partial class file.  
   
- 當您對 TableAdapter \(在 \[**DataSet 設計工具**\] 中\) 進行任何變更，或在執行修改 TableAdapter 設定的任何精靈時進行變更，就會重新產生定義 TableAdapter 的程式碼。  若要防止在 TableAdapter 重新產生期間刪除您的程式碼，請將程式碼加入至 TableAdapter 的部分類別檔。  
+ The code that defines a TableAdapter is regenerated when any changes are made to the TableAdapter in the **Dataset Designer**, or when a wizard  modifies the configuration of a TableAdapter. To prevent your code from being deleted during the regeneration of a TableAdapter, add code to the TableAdapter's partial class file.  
   
- \(部分類別可讓特定類別的程式碼分割為多個實體檔案。  如需詳細資訊，請參閱 [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [partial \(類型\)](/dotnet/csharp/language-reference/keywords/partial-type)\)。  
+ Partial classes allow code for a specific class to be divided among multiple physical files. For more information, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) or [partial (Type)](/dotnet/csharp/language-reference/keywords/partial-type).  
   
-## 找出程式碼中的 TableAdapter  
- 雖然 TableAdapter 是以 \[**DataSet 設計工具**\] 所設計，但產生的 TableAdapter 類別不是 <xref:System.Data.DataSet> 的巢狀類別。  TableAdapter 會根據 TableAdapter 之關聯資料集的名稱，位於命名空間中。  例如，如果您的應用程式含有名為 `HRDataSet` 的資料集，TableAdapter 就會位於 `HRDataSetTableAdapters` 命名空間中   \(命名慣例會遵循此模式：*DatasetName* \+ `TableAdapters`\)。  
+## <a name="locate-tableadapters-in-code"></a>Locate TableAdapters in code  
+ While TableAdapters are designed with the **Dataset Designer**, the TableAdapter classes that are generated are not  nested classes of <xref:System.Data.DataSet>. TableAdapters are located in a namespace based on the name of the TableAdapter's associated dataset. For example, if your application contains a dataset named `HRDataSet`, the TableAdapters would be located in the `HRDataSetTableAdapters` namespace. (The naming convention follows this pattern: *DatasetName* + `TableAdapters`).  
   
- 下列範例是假設在專案中含有名為 `CustomersTableAdapter` 的 TableAdapter 以及 `NorthwindDataSet`。  
+ The following example assumes a TableAdapter named `CustomersTableAdapter`is in a project with `NorthwindDataSet`.  
   
-#### 若要建立 TableAdapter 的部分類別  
+#### <a name="to-create-a-partial-class-for-a-tableadapter"></a>To create a partial class for a TableAdapter  
   
-1.  選擇 \[**專案**\] 功能表中的 \[**加入類別**\]，即可在專案中加入一個新的類別。  
+1.  Add a new class to your project by going to the **Project** menu and selecting **Add Class**.  
   
-2.  將此類別命名為 `CustomersTableAdapterExtended`。  
+2.  Name the class `CustomersTableAdapterExtended`.  
   
-3.  按一下 \[**加入**\]。  
+3.  Select **Add**.  
   
-4.  將程式碼取代成適用於專案的命名空間及部分類別名稱。  例如：  
+4.  Replace the code with the correct namespace and partial class name for your project as follows:  
   
-     [!CODE [VbRaddataTableAdapters#2](../CodeSnippet/VS_Snippets_VBCSharp/VbRaddataTableAdapters#2)]  
+     [!code-cs[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]  [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]  
   
-## 請參閱  
- [TableAdapter 概觀](../data-tools/tableadapter-overview.md)   
- [如何：建立 TableAdapter](../data-tools/create-and-configure-tableadapters.md)   
- [如何：建立 TableAdapter 查詢](../data-tools/how-to-create-tableadapter-queries.md)   
- [如何：擴充資料集的功能](../Topic/How%20to:%20Extend%20the%20Functionality%20of%20a%20Dataset.md)   
- [資料逐步解說](../Topic/Data%20Walkthroughs.md)   
- [將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

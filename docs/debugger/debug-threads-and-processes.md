@@ -1,65 +1,87 @@
 ---
-title: "在 Visual Studio 中偵錯執行緒和處理序 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio], 執行緒"
-  - "偵錯執行緒"
-  - "多重處理序偵錯"
-  - "處理序, 偵錯"
-  - "執行緒處理 [Visual Studio], 偵錯"
+title: Tools to debug threads and processes | Microsoft Docs
+ms.custom: 
+ms.date: 04/21/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- multiprocess debugging
+- threading [Visual Studio], debugging
+- processes, debugging
+- debugging threads
+- debugging [Visual Studio], threads
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
-caps.latest.revision: 15
-caps.handback.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 在 Visual Studio 中偵錯執行緒和處理序
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+caps.latest.revision: 14
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 394fcc0339f4ce2bef4aca64efc5bc8bcf1e3e00
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-「*執行緒*」\(Thread\) 和「*處理序*」\(Process\) 在電腦科學中是相關的概念。  兩者都代表必須以特定順序執行的指令序列。  但是，不同執行緒或處理序中的指令能夠平行執行。  
+---
+# <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Tools to debug threads and processes in Visual Studio
+*Threads* and *processes* are related concepts in computer science. Both represent sequences of instructions that must execute in a specific order. Instructions in separate threads or processes, however, can execute in parallel.  
   
- 處理序存在於作業系統中，並對應至所謂的程式或應用程式。  從另一方面來說，執行緒存在於處理序中。  基於這個原因，執行緒有時候會稱為「*輕量處理序*」\(Light\-Weight Process\)。  每個處理序是由一或多個執行緒組成。  
+ Processes exist in the operating system and correspond to what users see as programs or applications. A thread, on the other hand, exists within a process. For this reason, threads are sometimes referred to as *light-weight processes*. Each process consists of one or more threads.  
   
- 具有多個處理序能夠讓電腦同時執行一項以上的工作。  具有多個執行緒能夠讓處理序分割工作以平行方式執行。  使用多個處理器的電腦能夠在不同的處理器上執行處理序或執行緒。  如此可達到真正的平行處理。  
+ The existence of multiple processes enables a computer to perform more than one task at a time. The existence of multiple threads enables a process to separate work to be performed in parallel. On a computer with multiprocessors, processes or threads can run on different processors. This enables true parallel processing.  
   
- 但是並非都能達到完美的平行處理境界。  執行緒有時候必須進行同步處理。  一個執行緒可能需要等候其他執行緒的結果，或是一個執行緒可能需要其他執行緒正在使用之資源的獨佔存取權。  同步處理是多執行緒應用程式中發生錯誤的常見原因。  有時候執行緒會演變成一直在等候永遠無法使用的資源。  這會導致所謂的「*死結*」\(Deadlock\) 情況。  
+ Perfect parallel processing is not always possible. Threads sometimes must be synchronized. One thread may have to wait for a result from another thread, or one thread may need exclusive access to a resource that another thread is using. Synchronization problems are a common cause of bugs in multithreaded applications. Sometimes threads may end up waiting for a resource that never becomes available. This results in a condition called *deadlock*.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具提供強大而容易使用的工具以便偵錯執行緒和處理序。  
+ The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger provides powerful but easy-to-use tools for debugging threads and processes.  
   
-## Visual Studio 中偵錯執行緒和處理序的工具  
- 在 \[[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\] 中使用處理序的主要工具是 \[**附加至處理序**\] 對話方塊、\[**處理序**\] 視窗和 \[**偵錯位置**\] 工具列。  偵錯執行緒使用的主要工具是 \[**執行緒**\] 視窗、來源視窗中的執行緒標記，以及 \[**偵錯位置**\] 工具列。  
+## <a name="tools-and-features"></a>Tools and features
+The tools you need to use in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depend on what type of code you are trying to debug:
+
+- For processes, the primary tools are the **Attach to Process** dialog box, the **Processes** window, and the **Debug Location** toolbar.
+
+- For threads, the primary tools for debugging threads are the **Threads** window, thread markers in source windows, **Parallel Stacks** window, **Parallel Watch** window, and the **Debug Location** toolbar.  
   
- 用於偵錯多執行緒應用程式的主要工具是 \[**平行堆疊**\] 和 \[**平行工作**\]、\[**平行監看式**\] 及 \[**GPU 執行緒**\] 視窗。  
+- For code that uses the <xref:System.Threading.Tasks.Task> in the [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl), the [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/) (native code), the primary tools for debugging multithreaded applications are the **Parallel Stacks** window, the **Parallel Watch** window, and the **Tasks** window (the **Tasks** window also supports the JavaScript promise object).
+
+- For debugging threads on the GPU, the primary tool is the **GPU Threads** windows.  
   
- 下表顯示在這些位置中可用的資訊與能夠執行的動作：  
+ The following table shows the information available and the actions you can perform in each of these places:  
   
-|使用者介面|可用的資訊|能夠執行的動作|  
-|-----------|-----------|-------------|  
-|\[**附加至處理序**\] 對話方塊|能夠附加至的可用處理序：<br /><br /> -   處理序名稱 \(.exe\)<br />-   處理序 ID 編號<br />-   Menubar 標題<br />-   型別 \(Managed v4.0；Managed v2.0、v1.1、v1.0；x86；x64；IA64\)<br />-   使用者名稱 \(帳戶名稱\)<br />-   工作階段編號|選取要附加至的處理序<br /><br /> 選取遠端電腦<br /><br /> 變更連接至遠端電腦的傳輸類型|  
-|\[**處理序**\] 視窗|附加之處理序：<br /><br /> -   處理序名稱<br />-   處理序 ID 編號<br />-   處理序 .exe 的路徑<br />-   Menubar 標題<br />-   狀態 \(中斷.  執行\)<br />-   偵錯 \(原生、Managed 等\)<br />-   傳輸類型 \(預設、未經驗證的機器碼\)<br />-   傳輸限定詞 \(遠端電腦\)|工具：<br /><br /> -   附加<br />-   中斷連結<br />-   結束<br /><br /> 捷徑功能表：<br /><br /> -   附加<br />-   中斷連結<br />-   當偵錯停止時中斷連結<br />-   結束|  
-|\[**執行緒**\] 視窗|目前處理序中的執行緒：<br /><br /> -   執行緒 ID<br />-   Managed ID<br />-   分類 \(主執行緒、介面執行緒、遠端程序呼叫處理常式或背景工作執行緒\)<br />-   執行緒名稱<br />-   建立執行緒的位置<br />-   優先權<br />-   關連遮罩<br />-   暫停計數<br />-   處理序名稱<br />-   旗標指標<br />-   暫停指標|工具：<br /><br /> -   搜尋<br />-   搜尋呼叫堆疊<br />-   將 Just My Code 加上旗標<br />-   將自訂模組選取範圍加上旗標<br />-   群組依據<br />-   Columns<br />-   展開\/摺疊呼叫堆疊<br />-   展開\/摺疊群組<br />-   凍結\/解除凍結執行緒<br /><br /> 捷徑功能表：<br /><br /> -   在原始程式檔中顯示執行緒<br />-   切換至執行緒<br />-   凍結執行中的執行緒<br />-   解除凍結執行緒<br />-   爲執行緒加上旗標以便做進一步研究<br />-   取消執行緒的旗標<br />-   重新命名執行緒<br />-   顯示和隱藏執行緒<br /><br /> 其他動作：<br /><br /> -   在資料提示方塊中檢視執行緒的呼叫堆疊|  
-|來源視窗|左側巡覽邊上的執行緒指示器能指出是單一或多個執行緒 \(預設為關閉，可使用 \[**執行緒**\] 視窗中的捷徑功能表開啟\)。|捷徑功能表：<br /><br /> -   切換至執行緒<br />-   爲執行緒加上旗標以便做進一步研究<br />-   取消執行緒的旗標|  
-|**偵錯位置**工具列|-   目前的處理序<br />-   顯示應用程式縮圖<br />-   暫停應用程式<br />-   繼續執行應用程式<br />-   暫停並關閉應用程式<br />-   目前的執行緒<br />-   切換目前執行緒的旗標狀態<br />-   僅顯示有旗標的執行緒<br />-   僅顯示目前處理序<br />-   目前的堆疊框架|-   切換至另一個執行緒<br />-   暫停、繼續或關閉應用程式<br />-   切換至目前處理序中的另一個執行緒<br />-   切換至目前執行緒中的另一個堆疊框架<br />-   將目前執行緒加上旗標或取消旗標<br />-   僅顯示有旗標的執行緒<br />-   僅顯示目前處理序|  
-|\[**平行堆疊**\] 視窗|-   一個視窗中多個執行緒的呼叫堆疊。<br />-   每一個執行緒的作用中堆疊框架。<br />-   任何方法的呼叫端和被呼叫端。|-   篩選掉指定的執行緒<br />-   切換至 \[平行工作\] 檢視<br />-   將執行緒加上旗標或取消旗標<br />-   縮放|  
-|\[**平行工作**\] 視窗|-   檢視 <xref:System.Threading.Tasks.Task> 物件的相關資訊，包括工作 ID、工作狀態 \(已排程、執行中、等待中、死結\)，以及指派給工作的執行緒。<br />-   呼叫堆疊中的目前位置。<br />-   在建立時傳遞至工作的委派|-   切換至目前工作<br />-   將工作加上旗標或取消旗標<br />-   凍結或解除凍結工作|  
-|\[**平行監看式**\] 視窗|-   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。<br />-   框架資料行，其中的箭號表示選取的框架。<br />-   可以顯示電腦、處理序、Tile、工作和執行緒的可設定資料行。|-   將執行緒加上旗標或取消旗標<br />-   僅顯示已標幟的執行緒<br />-   切換框架<br />-   排序資料行<br />-   群組執行緒<br />-   凍結或解除凍結執行緒<br />-   匯出 \[平行監看式\] 視窗中的資料|  
-|**GPU 執行緒**視窗|-   旗標資料行，您可以在該資料行中標示想要特別注意的執行緒。<br />-   使用中執行緒資料行，其中黃色箭號表示使用中執行緒。  箭號表示執行進入偵錯工具的執行緒。<br />-   \[**執行緒計數**\] 資料行，顯示同一位置的執行緒數目。<br />-   \[**行**\] 資料行，顯示每個執行緒群組所在的程式碼行。<br />-   \[**位址**\] 資料行，顯示每個執行緒群組所在的指令位址。<br />-   \[**位置**\] 資料行，是位址在程式碼中的位置。<br />-   \[**狀態**\] 資料行，顯示執行緒為使用中或已封鎖。<br />-   \[**磚**\] 資料行中，顯示資料列中執行緒的磚索引。|-   變更為不同的使用中執行緒<br />-   顯示特定磚和執行緒<br />-   顯示或隱藏資料行<br />-   依資料行排序<br />-   群組執行緒<br />-   凍結或解除凍結執行緒<br />-   將執行緒加上旗標或取消旗標<br />-   僅顯示已標幟的執行緒|  
+|User Interface|Information Available|Actions You Can Perform|  
+|--------------------|---------------------------|-----------------------------|  
+|**Attach to Process** dialog box|Available Processes you can attach to:<br /><br /> -   Process name (.exe)<br />-   Process ID number<br />-   Menubar Title<br />-   Type (Managed v4.0; Managed v2.0, v1.1, v1.0; x86; x64; IA64)<br />-   User Name (account name)<br />-   Session number|Select a process to attach to<br /><br /> Select a remote computer<br /><br /> Change transport type for connecting to remote computers|  
+|**Processes** window|Attached Processes:<br /><br /> -   Process Name<br />-   Process ID number<br />-   Path to process .exe<br />-   Menubar Title<br />-   State (Break. Running)<br />-   Debugging (Native, Managed, and so on.)<br />-   Transport type (default, native with no authentication)<br />-   Transport Qualifier (remote computer)|Tools:<br /><br /> -   Attach<br />-   Detach<br />-   Terminate<br /><br /> Shortcut menu:<br /><br /> -   Attach<br />-   Detach<br />-   Detach when debugging stopped<br />-   Terminate|  
+|**Threads** window|Threads in current process:<br /><br /> -   Thread ID<br />-   Managed ID<br />-   Category (main thread, interface thread, remote procedure call handler, or worker thread)<br />-   Thread Name<br />-   Location where thread is created<br />-   Priority<br />-   Affinity Mask<br />-   Suspended Count<br />-   Process Name<br />-   Flag Indicator<br />-   Suspended indicator|Tools:<br /><br /> -   Search<br />-   Search Call Stack<br />-   Flag Just My Code<br />-   Flag Custom Module Selection<br />-   Group by<br />-   Columns<br />-   Expand/Collapse callstacks<br />-   Expand/Collapse groups<br />-   Freeze/Thaw Threads<br /><br /> Shortcut menu:<br /><br /> -   Show threads in source<br />-   Switch to a thread<br />-   Freeze a running thread<br />-   Thaw a frozen thread<br />-   Flag a thread for additional study<br />-   Unflag a thread<br />-   Rename a thread<br />-   Show and hide threads<br /><br /> Other actions:<br /><br /> -   View the call stack for a thread in a DataTip|  
+|Source window|Thread indicators in left gutter indicate single or multiple threads (off by default, turned on by using shortcut menu in **Threads** window)|Shortcut menu:<br /><br /> -   Switch to a thread<br />-   Flag a thread for additional study<br />-   Unflag a thread|  
+|**Debug Location** toolbar|-   Current process<br />-   Suspend the application<br />-   Resume the application<br />-   Suspend and shut down the application<br />-   Current thread<br />-   Toggle current thread flag state<br />-   Show only flagged threads<br />-   Show only current process<br />-   Current stack frame|-   Switch to another process<br />-   Suspend, resume, or shut down the application<br />-   Switch to another thread in current process<br />-   Switch to another stack frame in current thread<br />-   Flag or unflag current threads<br />-   Show only flagged threads<br />-   Show only the current process|  
+|**Parallel Stacks** window|-   Call stacks for multiple threads in one window.<br />-   Active stack frame for each thread.<br />-   Callers and callees for any method.|-   Filter out specified threads<br />-   Switch to Tasks view<br />-   Flag or unflag a thread<br />-   Zoom|   
+|**Parallel Watch** window|-   The flag column, in which you can mark a thread that you want to pay special attention to.<br />-   The frame column, in which an arrow indicates the selected frame.<br />-   A configurable column that can display the machine, process, tile, task, and thread.|-   Flag or unflag a thread<br />-   Display only flagged threads<br />-   Switch frames<br />-   Sort a column<br />-   Group threads<br />-   Freeze or thaw threads<br />-   export the data in the Parallel Watch window| 
+|**Tasks** window|-   View information about <xref:System.Threading.Tasks.Task> objects including task ID, task status (scheduled, running, waiting, deadlocked), and which thread is assigned to the task.<br />-   Current location in call stack.<br />-   Delegate passed to the task at creation time|-   Switch to current task<br />-   Flag or unflag a task<br />-   Freeze or thaw a task|  
+|**GPU Threads** window|-   The flag column, in which you can mark a thread that you want to pay special attention to.<br />-   The current thread column, in which a yellow arrow indicates the current thread.<br />-   The **Thread Count** column, which displays the number of threads at the same location.<br />-   The **Line** column, which displays the line of code where each group of threads is located.<br />-   The **Address** column, which displays the instruction address where each group of threads is located.<br />-   The **Location** column, which is the location in the code of the address.<br />-   The **Status** column, which shows whether the thread is active or blocked.<br />-   The **Tile** column, which shows the tile index for the threads in the row.|-   Change to a different thread<br />-   Display a particular tile and thread<br />-   Display or hide a column<br />-   Sort by a column<br />-   Group threads<br />-   Freeze or thaw threads<br />-   Flag or unflag a thread<br />-   Display only flagged threads|  
   
-## 請參閱  
- [附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
- [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [偵錯 GPU 程式碼](../debugger/debugging-gpu-code.md)
+## <a name="see-also"></a>See Also  
+ [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
+ [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Debugging GPU Code](../debugger/debugging-gpu-code.md)

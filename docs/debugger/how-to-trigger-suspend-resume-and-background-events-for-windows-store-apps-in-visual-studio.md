@@ -1,131 +1,148 @@
 ---
-title: "如何在 Visual Studio 中為 Windows 市集應用程式觸發、暫停和繼續事件，以及讓事件成為背景事件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.background_task_activate_failure"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: How to trigger suspend, resume, and background events for Windows Store apps in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.background_task_activate_failure
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 824ff3ca-fedf-4cf5-b3e2-ac8dc82d40ac
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何在 Visual Studio 中為 Windows 市集應用程式觸發、暫停和繼續事件，以及讓事件成為背景事件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: f1ec5363d5561fbca1a706831e4d4da7e935b48f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-不在偵錯模式時，由 Windows **處理程序生命週期管理** \(PLM\) 控制您應用程式的執行狀態：啟動、暫停、繼續和終止應用程式，以便回應使用者動作和裝置的狀態。 而處於偵錯模式時，Windows 會停用這些啟用事件。 本主題說明如何在偵錯工具中引發這些事件。  
+---
+# <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>How to trigger suspend, resume, and background events for Windows Store apps in Visual Studio
+When you are not debugging, Windows **Process Lifetime Management** (PLM) controls the execution state of your app—starting, suspending, resuming, and terminating the app in response to user actions and the state of the device. When you are debugging, Windows disables these activation events. This topic describes how to fire these events in the debugger.  
   
- 本主題也將說明如何對**背景工作**偵錯。 背景工作可讓您在背景處理序中執行某些作業 \(即使您的應用程式並未執行也無妨\)。 您可以使用偵錯工具，將您的應用程式置於偵錯模式，接著無須啟動 UI，就能啟動背景工作並對其偵錯。  
+ This topic also describes how to debug **Background tasks**. Background tasks enable you to perform certain operations in a background process, even when you app is not running. You can use the debugger to put your app in debug mode and then— without starting the UI—start and debug the background task.  
   
- 如需處理程序生命週期管理和背景工作的詳細資訊，請參閱[Launching, resuming, and multitasking](http://msdn.microsoft.com/zh-tw/04307b1b-05af-46a6-b639-3f35e297f71b)。  
+ For more information about Process Lifetime Management and background tasks see [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b).  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
- [觸發處理程序生命週期管理事件](#BKMK_Trigger_Process_Lifecycle_Management_events)  
+##  <a name="BKMK_In_this_topic"></a> In this topic  
+ [Trigger Process Lifetime Management events](#BKMK_Trigger_Process_Lifecycle_Management_events)  
   
- [觸發背景工作](#BKMK_Trigger_background_tasks)  
+ [Trigger background tasks](#BKMK_Trigger_background_tasks)  
   
--   [從標準偵錯工作階段中觸發背景工作](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
+-   [Trigger a background task event from a standard debug session](#BKMK_Trigger_a_background_task_event_from_a_standard_debug_session)  
   
--   [在應用程式未執行時觸發背景工作](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
+-   [Trigger a background task when the app is not running](#BKMK_Trigger_a_background_task_when_the_app_is_not_running)  
   
- [從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
+ [Trigger Process Lifetime Management events and background tasks from an installed app](#BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app)  
   
- [診斷背景工作啟用錯誤](#BKMK_Diagnosing_background_task_activation_errors)  
+ [Diagnosing background task activation errors](#BKMK_Diagnosing_background_task_activation_errors)  
   
-##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> 觸發處理程序生命週期管理事件  
- 當使用者切換離開您的應用程式，或當 Windows 進入低電力狀態時，Windows 就會暫停您的應用程式。 您可以回應 `Suspending` 事件，將相關的應用程式和使用者資料儲存至永久儲存區，以便釋放資源。 當應用程式從「**暫停**」狀態繼續時，它會進入「**執行中**」狀態，並從上次暫停的地方繼續進行。 您可以回應 `Resuming` 事件，還原或重新整理應用程式狀態，以便回收資源。  
+##  <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Trigger Process Lifetime Management events  
+ Windows can suspend your app when the user switches away from it or when Windows enters a low power state. You can respond to the `Suspending` event to save relevant app and user data to persistent storage and to release resources. When an app is resumed from the **Suspended** state, it enters the **Running** state and continues from where it was when it was suspended. You can respond to the `Resuming` event to restore or refresh application state and reclaim resources.  
   
- Windows 會在記憶體中盡可能保留暫停的應用程式，但如果沒有足夠的資源得以在記憶體中保留這些應用程式，Windows 會終止它們。 使用者也可以明確關閉您的應用程式。 沒有特定事件用來指出使用者已關閉應用程式。  
+ Although Windows attempts to keep as many suspended apps in memory as possible, Windows can terminate your app if there aren't enough resources to keep it in memory. A user can also explicitly close your app. There's no special event to indicate that the user has closed an app.  
   
- 在 Visual Studio 偵錯工具中，您可以手動暫停、繼續和終止您的應用程式，以便對處理生命週期事件進行偵錯。 若要對處理生命週期事件進行偵錯：  
+ In the Visual Studio debugger, you can manually suspend, resume, and terminate your apps to debug process lifecycle events. To debug a process lifecycle event:  
   
-1.  在您要偵錯的事件之處理常式中設定中斷點。  
+1.  Set a breakpooint in the handler of the event that you want to debug.  
   
-2.  按 **F5** 開始偵錯作業。  
+2.  Press **F5** to start debugging.  
   
-3.  在 \[**偵錯位置**\] 工具列上，選擇您要引發的事件：  
+3.  On the **Debug Location** toolbar, choose the event that you want to fire:  
   
-     ![暫止、繼續、結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-     請注意，\[**暫停和終止**\] 會關閉應用程式並結束偵錯工作階段。  
+     Note that **Suspend and terminate** closes the app and ends the debug session.  
   
-##  <a name="BKMK_Trigger_background_tasks"></a> 觸發背景工作  
- 任何應用程式都可以登錄背景工作，以回應特定的系統事件 \(即使應用程式並未執行\)。 背景工作不能執行直接更新 UI 的程式碼，但它們可以透過動態磚更新、徽章更新和快顯通知，對使用者顯示資訊。 如需詳細資訊，請參閱[Supporting your app with background tasks](http://msdn.microsoft.com/zh-tw/4c7bb148-eb1f-4640-865e-41f627a46e8e)。  
+##  <a name="BKMK_Trigger_background_tasks"></a> Trigger background tasks  
+ Any app can register a background task to respond to certain system events, even when the app is not running. Background tasks can't run code that directly updates the UI; instead, they show information to the user with tile updates, badge updates, and toast notifications. For more information, see [Supporting your app with background tasks](http://msdn.microsoft.com/en-us/4c7bb148-eb1f-4640-865e-41f627a46e8e)  
   
- 您可以從偵錯工具觸發事件，啟動應用程式的背景工作。  
+ You can trigger the events that start background tasks for your app from the debugger.  
   
 > [!NOTE]
->  偵錯工具只能觸發不含資料的事件，例如指出裝置狀態變更的事件。 若是需要使用者輸入或其他資料的背景工作，則必須手動觸發。  
+>  The debugger can trigger only those events that do not contain data, such as events that indicate a change of state in the device. You have to manually trigger background tasks that require user input or other data.  
   
- 觸發背景工作事件的最實際方法，就是在您的應用程式未執行時觸發。 不過，也支援在標準偵錯工作階段中觸發事件。  
+ The most realistic way to trigger a background task event is when your app is not running. However, triggering the event in a standard debugging session is also supported.  
   
-###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> 從標準偵錯工作階段中觸發背景工作  
+###  <a name="BKMK_Trigger_a_background_task_event_from_a_standard_debug_session"></a> Trigger a background task event from a standard debug session  
   
-1.  在您要偵錯的背景工作程式碼中設定中斷點。  
+1.  Set a breakpoint in the background task code that you want to debug.  
   
-2.  按 **F5** 開始偵錯作業。  
+2.  Press **F5** to start debugging.  
   
-3.  從 \[**偵錯位置**\] 工具列的事件清單中，選擇您想要啟動的背景工作。  
+3.  From the events list on the **Debug Location** toolbar, choose the background task that you want to start.  
   
-     ![暫止、繼續、結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> 在應用程式未執行時觸發背景工作  
+###  <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Trigger a background task when the app is not running  
   
-1.  在您要偵錯的背景工作程式碼中設定中斷點。  
+1.  Set a breakpoint in the background task code that you want to debug.  
   
-2.  開啟啟始專案的偵錯屬性頁。 在 \[方案總管\] 中選取專案。 在 \[**偵錯**\] 功能表上，選擇 \[**屬性**\]。  
+2.  Open the debug property page for the start-up project. In Solution Explorer, select the project. On the **Debug** menu, choose **Properties**.  
   
-     若是 C\+\+ 專案，您可能必須展開 \[**組態屬性**\]，然後選擇 \[**偵錯**\]。  
+     For C++ projects, you might have to expand **Configuration Properties** and then choose **Debugging**.  
   
-3.  執行下列任一步驟：  
+3.  Do one of the following:  
   
-    -   若是 Visual C\# 和 Visual Basic 專案，請選擇 \[**不啟動，但在我的程式碼啟動時進行偵錯**\]。  
+    -   For Visual C# and Visual Basic projects, choose **Do not launch, but debug my code when it starts**  
   
-         ![C&#35;&#47;VB 偵錯啟動應用程式屬性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG\_CsVb\_DontLaunchApp")  
+         ![C&#35;&#47;VB debug launch application property](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")  
   
-    -   若是 JavaScript 和 Visual C\+\+ 專案，請從 \[**啟動應用程式**\] 清單中選擇 \[**否**\]。  
+    -   For JavaScript and Visual C++ projects, choose **No** from the **Launch application** list.  
   
-         ![C&#43;&#43;&#47;VB 啟動應用程式偵錯屬性](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG\_CppJs\_DontLaunchApp")  
+         ![C&#43;&#43;&#47;VB Launch application debug property](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")  
   
-4.  按 **F5** 將應用程式置入偵錯模式。 請注意，\[**偵錯位置**\] 工具列的 \[**處理**\] 清單會顯示應用程式封裝名稱，表示您正處於偵錯模式。  
+4.  Press **F5** to put the app in debug mode. Note the **Process** list on the **Debug Location** toolbar displays the app package name to indicate that you are in debug mode.  
   
-     ![背景工作處理序清單](~/debugger/media/dbg_backgroundtask_processlist.png "DBG\_BackgroundTask\_ProcessList")  
+     ![Background task Process list](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")  
   
-5.  從 \[**偵錯位置**\] 工具列的事件清單中，選擇您想要啟動的背景工作。  
+5.  From the events list on the **Debug Location** toolbar, choose the background task that you want to start.  
   
-     ![暫止、繼續、結束和背景工作](../debugger/media/dbg_suspendresumebackground.png "DBG\_SuspendResumeBackground")  
+     ![Suspend, resume, terminate, and background tasks](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")  
   
-##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> 從已安裝的應用程式觸發處理程序生命週期管理事件和背景工作  
- 您可以使用 \[偵錯已安裝的應用程式\] 對話方塊，載入已安裝在偵錯工具中的應用程式。 例如，您可以偵錯從 Windows 市集安裝的應用程式，或者當您有應用程式的原始程式檔，卻沒有應用程式的 Visual Studio 專案時，也可以偵錯應用程式。 \[偵錯已安裝的應用程式\] 對話方塊可讓您在 Visual Studio 電腦或遠端裝置以偵錯模式啟動應用程式，或是將應用程式設定成以偵錯模式執行而不啟動。 如需詳細資訊，請參閱**如何啟動偵錯工作階段**之 [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) 或 [Visual C\+\+、Visual C\# 和 Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) 版本中的**在偵錯工具中啟動已安裝的應用程式**一節。  
+##  <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Trigger Process Lifetime Management events and background tasks from an installed app  
+ Use the Debug Installed App dialog box to load an app that is already installed into the debugger. For example, you might debug an app that was installed from the Windows store, or debug an app when you have the source files for the app, but not a Visual Studio project for the app. The Debug Installed App dialog box allows you start an app in debug mode on the Visual Studio machine or on a remote device, or to set the app to run in debug mode but not start it. See the **Start an installed app in the debugger** section of either the [JavaScript](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Start_an_installed_app_in_the_debugger) or [Visual C++, Visual C#, and Visual Basic](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md#BKMK_Start_an_installed_app_in_the_debugger) versions of **How to start a debugging session** for more information.  
   
- 將應用程式載入至偵錯工具後，您就能使用上述任何程序。  
+ Once the app is loaded into the debugger, you can use any of the procedures described above.  
   
-##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> 診斷背景工作啟用錯誤  
- Windows 事件檢視器中背景基礎結構的診斷記錄包含詳細資訊，您可以用來診斷和疑難排解背景工作錯誤。 若要檢視記錄檔：  
+##  <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosing background task activation errors  
+ The diagnostic logs in Windows Event Viewer for the background infrastructure contained detailed information that you can use to diagnose and troubleshoot background task errors. To view the log:  
   
-1.  開啟 \[事件檢視器\] 應用程式。  
+1.  Open the Event Viewer application.  
   
-2.  在 \[**動作**\] 窗格中，選擇 \[**檢視**\]，並確定已勾選 \[**顯示分析與偵錯記錄檔**\]。  
+2.  In the **Actions** pane, choose **View** and make sure **Show Analytic and Debug Logs** is checked.  
   
-3.  在 \[**事件檢視器 \(本機\)**\] 樹狀目錄中，依序展開 \[**應用程式及服務記錄檔**\]、\[**Microsoft**\]、\[**Windows**\] 以及 \[**BackgroundTasksInfrastructure**\] 節點。  
+3.  On the **Event Viewer (Local)** tree, expand the nodes **Applications and Services Logs** > **Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.  
   
-4.  選擇 \[**診斷**\] 記錄檔。  
+4.  Choose the **Diagnostic** log.  
   
-## 請參閱  
- [使用 Visual Studio 測試市集應用程式](../test/testing-store-apps-with-visual-studio.md)   
- [在 Visual Studio 中偵錯應用程式](../debugger/debug-store-apps-in-visual-studio.md)   
- [Application lifecycle](http://msdn.microsoft.com/zh-tw/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
- [Launching, resuming, and multitasking](http://msdn.microsoft.com/zh-tw/04307b1b-05af-46a6-b639-3f35e297f71b)
+## <a name="see-also"></a>See Also  
+ [Testing Store apps with Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
+ [Debug apps in Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)   
+ [Application lifecycle](http://msdn.microsoft.com/en-us/53cdc987-c547-49d1-a5a4-fd3f96b2259d)   
+ [Launching, resuming, and multitasking](http://msdn.microsoft.com/en-us/04307b1b-05af-46a6-b639-3f35e297f71b)

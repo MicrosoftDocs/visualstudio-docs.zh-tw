@@ -1,89 +1,106 @@
 ---
-title: "支援的程式碼變更 (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "編輯後繼續 [C#], 支援的程式碼變更"
+title: Supported Code Changes (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- Edit and Continue [C#], supported code changes
 ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# 支援的程式碼變更 (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6c870acd2a1a2339e66ef8e960657a44036057aa
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-\[編輯後繼續\] 會處理方法主體內大多數程式碼的變更。  但是在偵錯期間，無法套用方法主體外的變更和方法主體內的某些變更。  若要套用這些不支援的變更，您必須停止偵錯，然後使用新版程式碼重新啟動偵錯。  
+---
+# <a name="supported-code-changes-c"></a>Supported Code Changes (C#)
+Edit and Continue handles most types of code changes within method bodies. Most changes outside method bodies, and a few changes within method bodies, cannot be applied during debugging, however. To apply those unsupported changes, you must stop debugging and restart with a fresh version of the code.  
   
- 偵錯工作階段期間不能將下列變更套用至 C\# 程式碼：  
+ The following changes cannot be applied to C# code during a debugging session:  
   
--   變更目前的陳述式或任何其他使用中陳述式。  
+-   Changes to the current statement or any other active statement.  
   
-     使用中陳述式包含了在呼叫堆疊的函式中，為了取得目前陳述式而呼叫的任何陳述式。  
+     Active statements include any statements, in functions on the call stack, that were called to get to the current statement.  
   
-     目前的陳述式在來源視窗中會以黃色背景標示。  其他使用中陳述式會以灰色背景標示，而且是唯讀的。  這些預設色彩可以在 \[**選項**\] 對話方塊中進行變更。  
+     The current statement is marked by a yellow background in the source window. Other active statements are marked by a shaded background and are read-only. These default colors can be changed in the **Options** dialog box.  
   
--   變更類型的簽章。  
+-   Changing the signature of a type.  
   
--   加入會擷取之前尚未擷取之變數的匿名方法。  
+-   Adding an anonymous method that captures a variable that hasn't been captured before.  
   
--   加入、移除或變更屬性。  
+-   Adding, removing, or changing attributes.  
   
--   加入、移除或變更 `using` 指示詞。  
+-   Adding, removing, or changing `using` directives.  
   
--   在使用中陳述式前後加入 `foreach`、`using` 或 `lock`。  
+-   Adding a `foreach`, `using`, or `lock` around the active statement.  
   
-## Unsafe 程式碼  
- 變更 Unsafe 程式碼的限制與變更 Safe 程式碼的限制相同，但前者多了下列這一項額外限制：\[編輯後繼續\] 不支援對包含 `stackalloc` 運算子之方法內的 Unsafe 程式碼進行變更。  
+## <a name="unsafe-code"></a>Unsafe Code  
+ Changes to unsafe code have the same limitations as changes to safe code, with one additional restriction: Edit and Continue does not support changes to unsafe code that exits within a method that contains the `stackalloc` operator.  
   
-## 例外狀況  
- \[編輯後繼續\] 支援 `catch` 和 `finally` 區塊的變更，不同之處在於不允許將 `catch` 或 `finally` 區塊加入使用中陳述式前後。  
+## <a name="exceptions"></a>Exceptions  
+ Edit and Continue supports changes to `catch` and `finally` blocks, except that adding a `catch` or `finally` block around the active statement is not allowed.  
   
-## 不支援的案例  
- \[編輯後繼續\] 無法用於下列偵錯案例中：  
+## <a name="unsupported-scenarios"></a>Unsupported Scenarios  
+ Edit and Continue is not available in the following debugging scenarios:  
   
--   在某些情況下偵錯 LINQ 程式碼。  如需詳細資訊，請參閱[偵錯 LINQ](../debugger/debugging-linq.md)。  
+-   Debugging LINQ code in certain circumstances. For more information, see [Debugging LINQ](../debugger/debugging-linq.md).  
   
-    -   擷取之前尚未擷取的變數。  
+    -   Capturing a variable that hasn't been captured before.  
   
-    -   變更查詢運算式的類型 \(例如，select a \=\> select new { A \= a };\)  
+    -   Changing the type of query expression. (e.g., select a => select new { A = a };)  
   
-    -   移除包含使用中陳述式的 `where`。  
+    -   Removing a `where` that contains an active statement.  
   
-    -   移除包含使用中陳述式的 `let`。  
+    -   Removing a `let` that contains an active statement.  
   
-    -   移除包含使用中陳述式的 `join`。  
+    -   Removing a `join` that contains an active statement.  
   
-    -   移除包含使用中陳述式的 `orderby`。  
+    -   Removing an `orderby` that contains an active statement.  
   
--   混合模式 \(原生\/Managed\) 偵錯。  
+-   Mixed-mode (native/managed) debugging.  
   
--   SQL 偵錯  
+-   SQL debugging.  
   
--   偵錯 Dr.  Watson 傾印。  
+-   Debugging a Dr. Watson dump.  
   
--   在未選取 \[**發生未處理的例外狀況時回溯呼叫堆疊**\] 選項的情況下，於發生未處理的例外狀況後編輯程式碼。  
+-   Editing code after an unhandled exception, when the "**Unwind the call stack on unhandled exceptions**" option is not selected.  
   
--   偵錯內嵌的執行階段應用程式。  
+-   Debugging an embedded runtime application.  
   
--   對具有 \[**附加至**\] 的應用程式進行偵錯，而不是從 \[**偵錯**\] 功能表選擇 \[**啟動**\] 執行應用程式。  
+-   Debugging an application that has **Attach to** instead of running the application by choosing **Start** from the **Debug** menu.  
   
--   偵錯最佳化程式碼  
+-   Debugging optimized code.  
   
--   由於建置錯誤以致新版本建置失敗之後，對舊版程式碼進行偵錯。  
+-   Debugging an old version of your code after a new version failed to build because of build errors.  
   
-## 請參閱  
- [編輯後繼續 \(Visual C\#\)](../debugger/edit-and-continue-visual-csharp.md)   
- [如何：使用編輯後繼續 \(C\#\)](../debugger/how-to-use-edit-and-continue-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Edit and Continue (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
+ [How to: Use Edit and Continue (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)

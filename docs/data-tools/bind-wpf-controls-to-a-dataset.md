@@ -1,141 +1,158 @@
 ---
-title: "逐步解說：將 WPF 控制項繫結到資料集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "WPF 資料繫結 [Visual Studio], 逐步解說"
-  - "WPF Designer, 資料繫結"
-  - "WPF, Visual Studio 中的資料繫結"
+title: Bind WPF controls to a dataset | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio], walkthroughs
+- WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 caps.latest.revision: 32
-caps.handback.revision: 30
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c67929edfa1b81cf6b8da9b8aea816277e9ddfa1
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 逐步解說：將 WPF 控制項繫結到資料集
-您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。  這些控制項會繫結至封裝於資料集中的產品記錄。  您也要加入按鈕，以瀏覽產品，並將變更儲存至產品記錄。  
+# <a name="bind-wpf-controls-to-a-dataset"></a>Bind WPF controls to a dataset
+In this walkthrough, you will create a WPF application that contains data-bound controls. The controls are bound to product records that are encapsulated in a dataset. You will also add buttons to browse through products and save changes to product records.  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   建立 WPF 應用程式，以及建立從 AdventureWorksLT 範例資料庫中的資料產生的資料集。  
+-   Creating a WPF application and a dataset that is generated from data in the AdventureWorksLT sample database.  
   
--   從 \[資料來源\] 視窗將資料表拖曳至 WPF 設計工具的視窗，以建立一組資料繫結控制項。  
+-   Creating a set of data-bound controls by dragging a data table from the **Data Sources** window to a window in the WPF Designer.  
   
--   建立可向前及向後巡覽產品記錄的按鈕。  
+-   Creating buttons that navigate forward and backward through product records.  
   
--   建立可將使用者對產品記錄所做的變更儲存至資料表和基礎資料來源的按鈕。  
+-   Creating a button that saves changes that users make to the product records to the data table and the underlying data source.  
   
      [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
   
--   對執行中的 SQL Server 或 SQL Server Express \(其中連結了 AdventureWorksLT 範例資料庫\) 執行個體的存取權。  您可以從 [CodePlex 網站](http://go.microsoft.com/fwlink/?linkid=87843) 下載 AdventureWorksLT 資料庫。  
+-   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorksLT sample database attached to it. You can download the AdventureWorksLT database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
   
- 預先了解下列概念也有助於完成此逐步解說 \(但非必要\)：  
+ Prior knowledge of the following concepts is also helpful, but not required to complete the walkthrough:  
   
--   資料集和 TableAdapter。  如需詳細資訊，請參閱[使用 Visual Studio 中的資料集](../data-tools/dataset-tools-in-visual-studio.md)與[TableAdapter 概觀](../data-tools/tableadapter-overview.md)。  
+-   Datasets and TableAdapters. For more information, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) and [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
--   使用 WPF 設計工具。  如需詳細資訊，請參閱[WPF 和 Silverlight 設計工具概觀](http://msdn.microsoft.com/zh-tw/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
+-   Working with the WPF Designer. For more information, see [WPF and Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
--   WPF 資料繫結。  如需詳細資訊，請參閱[資料繫結概觀](../Topic/Data%20Binding%20Overview.md)。  
+-   WPF data binding. For more information, see [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview).  
   
-## 建立專案  
- 建立新的 WPF 專案。  此專案將顯示產品記錄。  
+## <a name="create-the-project"></a>Create the project  
+ Create a new WPF project. The project will display product records.  
   
-#### 若要建立專案  
+#### <a name="to-create-the-project"></a>To create the project  
   
-1.  啟動 Visual Studio。  
+1.  Start Visual Studio.  
   
-2.  在 \[檔案\] 功能表中，指向 \[新增\]，然後按一下 \[專案\]。  
+2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  展開 \[Visual Basic\] 或 \[Visual C\#\]，然後選取 \[Windows\]。  
+3.  Expand **Visual Basic** or **Visual C#**, and then select **Windows**.  
   
-4.  選取 \[WPF 應用程式\] 專案範本。  
+4.  Select the **WPF Application** project template.  
   
-5.  在 \[名稱\] 方塊中，輸入 `AdventureWorksProductsEditor`，然後按一下 \[確定\]。  
+5.  In the **Name** box, type `AdventureWorksProductsEditor` and click **OK**.  
   
-     Visual Studio 隨即建立 `AdventureWorksProductsEditor` 專案。  
+     Visual Studio creates the `AdventureWorksProductsEditor` project.  
   
-## 建立應用程式的資料集  
- 建立資料繫結控制項之前，您必須先定義應用程式的資料模型，並將其加入至 \[資料來源\] 視窗。  在此逐步解說中，您會建立資料集做為資料模型。  
+## <a name="create-a-dataset-for-the-application"></a>Create a dataset for the application  
+ Before you can create data-bound controls, you must define a data model for your application and add it to the **Data Sources** window. In this walkthrough, you create a dataset to use as the data model.  
   
-#### 建立資料集  
+#### <a name="to-create-a-dataset"></a>To create a dataset  
   
-1.  按一下 \[**資料**\] 功能表上的 \[**顯示資料來源**\]。  
+1.  On the **Data** menu, click **Show Data Sources**.  
   
-     \[資料來源\] 視窗隨即開啟。  
+     The **Data Sources** window opens.  
   
-2.  在 \[**資料來源**\] 視窗中，按一下 \[**加入新資料來源**\]。  
+2.  In the **Data Sources** window, click **Add New Data Source**.  
   
-     \[**資料來源組態精靈**\] 隨即開啟。  
+     The **Data Source Configuration** wizard opens.  
   
-3.  在 \[**選擇資料來源類型**\] 頁面上，選取 \[**資料庫**\]，再按 \[**下一步**\]。  
+3.  On the **Choose a Data Source Type** page, select **Database**, and then click **Next**.  
   
-4.  在 \[**選擇資料庫模型**\] 頁面上，選取 \[**資料集**\]，再按 \[**下一步**\]。  
+4.  On the **Choose a Database Model** page, select **Dataset**, and then click **Next**.  
   
-5.  在 \[選擇資料連接\] 頁面中，選取下列其中一個選項：  
+5.  On the **Choose Your Data Connection** page, select one of the following options:  
   
-    -   若下拉式清單中有提供 AdventureWorksLT 範例資料庫的資料連接，請選取此資料連接，然後按 \[下一步\]。  
+    -   If a data connection to the AdventureWorksLT sample database is available in the drop-down list, select it and then click **Next**.  
   
-         \-或\-  
+    -   Click **New Connection**, and create a connection to the AdventureWorksLT database.  
   
-    -   按一下 \[新增連接\]，建立與 AdventureWorksLT 資料庫的連接。  
+6.  On the **Save the Connection String to the Application Configure File** page, select the **Yes, save the connection as** check box, and then click **Next**.  
   
-6.  在 \[將連接字串儲存到應用程式組態檔\] 頁面中，選取 \[是，將連接儲存為\] 核取方塊，然後按 \[下一步\]。  
+7.  On the **Choose Your Database Objects** page, expand **Tables**, and then select the **Product (SalesLT)** table.  
   
-7.  在 \[選擇您的資料庫物件\] 頁面中，展開 \[資料表\]，然後選取 **Product \(SalesLT\)** 資料表。  
+8.  Click **Finish**.  
   
-8.  按一下 \[**完成**\]。  
+     Visual Studio adds a new `AdventureWorksLTDataSet.xsd` file to the project, and it adds a corresponding **AdventureWorksLTDataSet** item to the **Data Sources** window. The `AdventureWorksLTDataSet.xsd` file defines a typed dataset named `AdventureWorksLTDataSet` and a TableAdapter named `ProductTableAdapter`. Later in this walkthrough, you will use the `ProductTableAdapter` to fill the dataset with data and save changes back to the database.  
   
-     Visual Studio 隨即將新的 AdventureWorksLTDataSet.xsd 檔案加入至專案，並將對應的 \[AdventureWorksLTDataSet\] 項目加入至 \[資料來源\] 視窗。  AdventureWorksLTDataSet.xsd 檔案會定義名稱為 `AdventureWorksLTDataSet` 的類型資料集，以及名稱為 `ProductTableAdapter` 的 TableAdapter。  在此逐步解說稍後的內容中，您會使用 `ProductTableAdapter` 將資料填入資料集，並將變更儲存回資料庫。  
+9. Build the project.  
   
-9. 建置專案。  
+## <a name="edit-the-default-fill-method-of-the-tableadapter"></a>Edit the default fill method of the TableAdapter  
+ To fill the dataset with data, use the `Fill` method of the `ProductTableAdapter`. By default, the `Fill` method fills the `ProductDataTable` in the `AdventureWorksLTDataSet` with all rows of data from the Product table. You can modify this method to return only a subset of the rows. For this walkthrough, modify the `Fill` method to return only rows for products that have photos.  
   
-## 編輯 TableAdapter 的預設 Fill 方法  
- 若要將資料填入資料集，請使用 `ProductTableAdapter` 的 `Fill` 方法。  根據預設，`Fill` 方法會使用 Product 資料表的所有資料列，填入 `AdventureWorksLTDataSet` 中的 `ProductDataTable`。  您可以修改此方法，使其只傳回資料列的子集。  在此逐步解說中，會修改 `Fill` 方法，使其只針對具有相片的產品傳回資料列。  
+#### <a name="to-load-product-rows-that-have-photos"></a>To load product rows that have photos  
   
-#### 載入具有相片的產品資料列  
+1.  In **Solution Explorer**, double-click the `AdventureWorksLTDataSet.xsd` file.  
   
-1.  在**方案總管**中，按兩下 AdventureWorksLTDataSet.xsd 檔案。  
+     The Dataset designer opens.  
   
-     DataSet 設計工具隨即開啟。  
+2.  In the designer, right-click the **Fill, GetData()** query and select **Configure**.  
   
-2.  在設計工具中，在 \[Fill,GetData\(\)\] 查詢上按一下滑鼠右鍵，然後選取 \[設定\]。  
+     The **TableAdapter Configuration** wizard opens.  
   
-     \[TableAdapter 組態精靈\] 隨即開啟。  
-  
-3.  在 \[輸入 SQL 陳述式\] 頁面中，將下列 WHERE 子句加在文字方塊中 `SELECT` 陳述式的後面。  
+3.  In the **Enter a SQL Statement** page, add the following WHERE clause after the `SELECT` statement in the text box.  
   
     ```  
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'  
     ```  
   
-4.  按一下 \[**完成**\]。  
+4.  Click **Finish**.  
   
-## 定義使用者介面  
- 透過在 WPF 設計工具中修改 XAML，將數個按鈕加入至視窗。  在此逐步解說稍後的內容中，您會加入程式碼，讓使用者使用這些按鈕捲動及儲存產品記錄的變更。  
+## <a name="define-the-user-interface"></a>Define the user interface  
+ Add several buttons to the window by modifying the XAML in the WPF Designer. Later in this walkthrough, you will add code that enables users to scroll through and save changes to products records by using these buttons.  
   
-#### 定義視窗的使用者介面  
+#### <a name="to-define-the-user-interface-of-the-window"></a>To define the user interface of the window  
   
-1.  在**方案總管**中，按兩下 MainWindow.xaml。  
+1.  In **Solution Explorer**, double-click MainWindow.xaml.  
   
-     隨即在 WPF 設計工具中開啟視窗。  
+     The window opens in the WPF Designer.  
   
-2.  在設計工具的 [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] 檢視中，在 `<Grid>` 標記之間加入下列程式碼：  
+2.  In the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] view of the designer, add the following code between the `<Grid>` tags:  
   
     ```  
     <Grid.RowDefinitions>  
@@ -147,18 +164,18 @@ manager: "ghogen"
     <Button HorizontalAlignment="Right" Margin="0,21,46,24" Name="saveButton" Width="110">Save changes</Button>  
     ```  
   
-3.  建置專案。  
+3.  Build the project.  
   
-## 建立資料繫結控制項  
- 從 \[資料來源\] 視窗將 `Product` 資料表拖曳至 WPF 設計工具，以建立顯示客戶記錄的控制項。  
+## <a name="create-data-bound-controls"></a>Create data-bound controls  
+ Create controls that display customer records by dragging the `Product` table from the **Data Sources** window to the WPF Designer.  
   
-#### 建立資料繫結控制項  
+#### <a name="to-create-data-bound-controls"></a>To create data-bound controls  
   
-1.  在 \[資料來源\] 視窗中，按一下 \[Product\] 節點的下拉式功能表，然後選取 \[詳細資料\]。  
+1.  In the **Data Sources** window, click the drop-down menu for the **Product** node and select **Details**.  
   
-2.  展開 \[Product\] 節點。  
+2.  Expand the **Product** node.  
   
-3.  在此範例中，不會顯示某些欄位，因此請按下列節點旁邊的下拉式功能表，然後選取 \[無\]：  
+3.  For this example, some fields will not be displayed, so click the drop-down menu next to the following nodes and select **None**:  
   
     -   ProductCategoryID  
   
@@ -170,89 +187,89 @@ manager: "ghogen"
   
     -   ModifiedDate  
   
-4.  按一下 \[ThumbNailPhoto\] 節點旁邊的下拉式功能表，並選取 \[影像\]。  
+4.  Click the drop-down menu next to the **ThumbNailPhoto** node and select **Image**.  
   
     > [!NOTE]
-    >  根據預設，\[資料來源\] 視窗中表示圖片的項目，會將其預設控制項設定為 \[無\]。  這是因為圖片是以位元組陣列儲存在資料庫中，且位元組陣列可以包含任何項目，從簡單位元組陣列到大型應用程式的可執行檔。  
+    >  By default, items in the **Data Sources** window that represent pictures have their default control set to **None**. This is because pictures are stored as byte arrays in databases, and byte arrays can contain anything from a simple array of bytes to the executable file of a large application.  
   
-5.  從 \[資料來源\] 視窗將 \[Product\] 節點拖曳至包含按鈕的資料列底下的資料格列。  
+5.  From the **Data Sources** window, drag the **Product** node to the grid row under the row that contains the buttons.  
   
-     Visual Studio 會產生 XAML，其定義了一組繫結至 **Products** 資料表之資料的控制項。  此外還會產生載入資料的程式碼。  如需產生之 XAML 和程式碼的詳細資訊，請參閱 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
+     Visual Studio generates XAML that defines a set of controls that are bound to data in the **Products** table. It also generates code that loads the data. For more information about the generated XAML and code, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-6.  在設計工具中，按一下 \[Product ID\] 標籤旁邊的文字方塊。  
+6.  In the designer, click the text box next to the **Product ID** label.  
   
-7.  在 \[屬性\] 視窗中，選取 **IsReadOnly** 屬性旁邊的核取方塊。  
+7.  In the **Properties** window, select the check box next to the **IsReadOnly** property.  
   
-## 巡覽產品記錄  
- 加入可讓使用者使用 **\<** 及 **\>** 按鈕捲動產品記錄的程式碼。  
+## <a name="navigating-product-records"></a>Navigating product records  
+ Add code that enables users to scroll through product records by using the **\<** and **>** buttons.  
   
-#### 讓使用者巡覽產品記錄  
+#### <a name="to-enable-users-to-navigate-product-records"></a>To enable users to navigate product records  
   
-1.  在設計工具中，按兩下視窗介面上的 **\<** 按鈕。  
+1.  In the designer, double-click the **<** button on the window surface.  
   
-     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `backButton_Click` 事件處理常式。  
+     Visual Studio opens the code-behind file, and creates a new `backButton_Click` event handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
-2.  修改 `Window_Loaded` 事件處理常式，使 `ProductViewSource`、`AdventureWorksLTDataSet` 和 `AdventureWorksLTDataSetProductTableAdapter` 位於方法之外，且整個表單都可以存取它們。  只將這些項目從全域宣告為表單，並以類似下列的方式在 `Window_Loaded` 事件處理常式中指派它們：  
+2.  Modify the `Window_Loaded` event handler, so the `ProductViewSource`, `AdventureWorksLTDataSet`, and `AdventureWorksLTDataSetProductTableAdapter` are outside of the method and accessible to the entire form. Declare only these to be global to the form, and assign them within the `Window_Loaded` event handler similar to the following:  
   
-     [!CODE [Data_WPFDATASET#1](../CodeSnippet/VS_Snippets_ProTools/data_wpfdataset#1)]  
+     [!code-cs[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]  [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]  
   
-3.  將下列程式碼加入至 `backButton_Click` 事件處理常式：  
+3.  Add the following code to the `backButton_Click` event handler:  
   
-     [!CODE [Data_WPFDATASET#2](../CodeSnippet/VS_Snippets_ProTools/data_wpfdataset#2)]  
+     [!code-cs[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]  [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
-4.  回到設計工具，然後按兩下 **\>** 按紐。  
+4.  Return to the designer and double-click the **>** button.  
   
-5.  將下列程式碼加入至 `nextButton_Click` 事件處理常式：  
+5.  Add the following code to the `nextButton_Click` event handler:  
   
-     [!CODE [Data_WPFDATASET#3](../CodeSnippet/VS_Snippets_ProTools/data_wpfdataset#3)]  
+     [!code-cs[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]  [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]  
   
-## 儲存產品記錄的變更  
- 加入程式碼，讓使用者可以使用 \[儲存變更\] 按鈕儲存產品記錄的變更。  
+## <a name="save-changes-to-product-records"></a>Save changes to product records  
+ Add code that enables users to save changes to product records by using the **Save changes** button.  
   
-#### 加入可儲存產品記錄變更的功能  
+#### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>To add the ability to save changes to product records  
   
-1.  在設計工具中，按兩下 \[儲存變更\] 按鈕。  
+1.  In the designer, double-click the **Save changes** button.  
   
-     Visual Studio 會開啟程式碼後置檔案，並建立 <xref:System.Windows.Controls.Primitives.ButtonBase.Click> 事件的新 `saveButton_Click` 事件處理常式。  
+     Visual Studio opens the code-behind file, and creates a new `saveButton_Click` event handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
-2.  將下列程式碼加入至 `saveButton_Click` 事件處理常式：  
+2.  Add the following code to the `saveButton_Click` event handler:  
   
-     [!CODE [Data_WPFDATASET#4](../CodeSnippet/VS_Snippets_ProTools/data_wpfdataset#4)]  
+     [!code-cs[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]  [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]  
   
     > [!NOTE]
-    >  此範例使用 `TableAdapter` 的 `Save` 方法來儲存變更。  在此逐步解說中，這是適當的方法，因為只會變更一個資料表。  若您必須將變更儲存至多個資料表，可以改用 Visual Studio 以您的資料集所產生之 `TableAdapterManager` 的 `UpdateAll` 方法。  如需詳細資訊，請參閱[TableAdapterManager 概觀](../Topic/TableAdapterManager%20Overview.md)。  
+    >  This example uses the `Save` method of the `TableAdapter` to save the changes. This is appropriate in this walkthrough, because only one data table is being changed. If you need to save changes to multiple data tables, you can alternatively use the `UpdateAll` method of the `TableAdapterManager` that Visual Studio generates with your dataset. For more information, see [TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
   
-## 測試應用程式  
- 建置並執行應用程式。  驗證您是否可以檢視及更新產品記錄。  
+## <a name="test-the-application"></a>Test the application  
+ Build and run the application. Verify that you can view and update product records.  
   
-#### 若要測試應用程式  
+#### <a name="to-test-the-application"></a>To test the application  
   
-1.  請按 **F5**。  
+1.  Press **F5**.  
   
-     隨即建置應用程式並執行。  驗證下列各項：  
+     The application builds and runs. Verify the following:  
   
-    -   文字方塊會從具有相片的第一個產品記錄顯示資料。  此產品具有產品 ID 713，以及名稱 **Long\-Sleeve Logo Jersey, S**。  
+    -   The text boxes display data from the first product record that has a photo. This product has the product ID 713, and the name **Long-Sleeve Logo Jersey, S**.  
   
-    -   您可以按一下 **\>** 或 **\<** 按鈕，巡覽其他產品記錄。  
+    -   You can click the **>** or **<** buttons to navigate through other product records.  
   
-2.  在其中一個產品記錄中，變更 **Size** 值，然後按一下 \[儲存變更\]。  
+2.  In one of the product records, change the **Size** value, and then click **Save changes**.  
   
-3.  關閉應用程式，然後在 Visual Studio 中按 **F5** 鍵，以重新啟動應用程式。  
+3.  Close the application, and then restart the application by pressing **F5** in Visual Studio.  
   
-4.  巡覽至您剛變更的產品記錄，確認變更已保存。  
+4.  Navigate to the product record you changed, and verify that the change persisted.  
   
-5.  關閉應用程式。  
+5.  Close the application.  
   
-## 後續步驟  
- 完成此逐步解說後，您可以執行下列相關的工作：  
+## <a name="next-steps"></a>Next Steps  
+ After completing this walkthrough, you can perform the following related tasks:  
   
--   學習如何使用 Visual Studio 中的 \[資料來源\] 視窗，將 WPF 控制項繫結至其他資料來源類型。  如需詳細資訊，請參閱[逐步解說：將 WPF 控制項繫結至 WCF 資料服務](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。  
+-   Learn how to use the **Data Sources** window in Visual Studio to bind WPF controls to other types of data sources. For more information, see [Bind WPF controls to a WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).  
   
--   學習如何使用 Visual Studio 中的 \[資料來源\] 視窗，顯示 WPF 控制項中的相關資料 \(也就是具有父子關聯性中的資料\)。  如需詳細資訊，請參閱[逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)。  
+-   Learn how to use the **Data Sources** window in Visual Studio to display related data (that is, data in a parent-child relationship) in WPF controls. For more information, see [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md).  
   
-## 請參閱  
- [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [如何：將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [使用 Visual Studio 中的資料集](../data-tools/dataset-tools-in-visual-studio.md)   
- [WPF 和 Silverlight 設計工具概觀](http://msdn.microsoft.com/zh-tw/570b7a5c-0c86-4326-a371-c9b63378fc62)   
- [資料繫結概觀](../Topic/Data%20Binding%20Overview.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
+ [WPF and Silverlight Designer Overview](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)   
+ [Data Binding Overview](/dotnet/framework/wpf/data/data-binding-overview)

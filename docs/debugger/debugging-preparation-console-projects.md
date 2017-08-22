@@ -1,67 +1,84 @@
 ---
-title: "偵錯準備：主控台專案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "主控台應用程式, 偵錯"
-  - "偵錯 [Visual Studio], 主控台應用程式"
-  - "偵錯主控台應用程式"
+title: 'Debugging Preparation: Console Projects | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [Visual Studio], console applications
+- debugging console applications
+- console applications, debugging
 ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 caps.latest.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
----
-# 偵錯準備：主控台專案
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5cb0008579e05b4b6f6281057106547c647734db
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-準備偵錯主控台專案與準備偵錯 Windows 專案類似，只需進行一些額外考量。  如需詳細資訊，請參閱[Windows Form 應用程式](../debugger/debugging-preparation-windows-forms-applications.md)和 [Debugging Preparation: Windows Forms Applications \(.NET\)](http://msdn.microsoft.com/zh-tw/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)。  由於所有主控台應用程式都有相似性，這個主題的內容會涵蓋下列專案類型：  
+---
+# <a name="debugging-preparation-console-projects"></a>Debugging Preparation: Console Projects
+Preparing to debug a Console project is similar to preparing to debug a Windows project, with some additional considerations. For more information, see [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), and [Debugging Preparation: Windows Forms Applications (.NET)](http://msdn.microsoft.com/en-us/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Because of the similarity of all console applications, this topic covers the following project types:  
   
--   C\# 主控台應用程式  
+-   C# Console Application  
   
--   Visual Basic 主控台應用程式  
+-   Visual Basic Console Application  
   
--   C\+\+ 主控台應用程式 \(.NET\)  
+-   C++ Console Application (.NET)  
   
--   C\+\+ 主控台應用程式 \(Win32\)  
+-   C++ Console Application (Win32)  
   
- 您可能需要為您的主控台應用程式指定命令列引數。  如需詳細資訊，請參閱 [C\+\+ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)、[Visual Basic 偵錯組態的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)或 [C\# 偵錯組態的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)。  
+ You might have to specify command-line arguments for your console application. For more information, see [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md), [Project Settings for a Visual Basic Debug Configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md), or [Project Settings for  C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md).  
   
- 跟所有的專案屬性一樣，這些引數會持續保留於偵錯工作階段和 Visual Studio 工作階段之間。  因此，如果某主控台應用程式是您先前已經偵錯的應用程式，請記住先前工作階段的 \[**\<專案\> 屬性頁**\] 對話方塊中可能有引數。  
+ Like all project properties, these arguments persist between debug sessions and between  Visual Studio sessions. Therefore, if the console application is one that you have debugged previously, remember that there might be arguments from previous sessions entered in the **\<Project> Property Pages** dialog box.  
   
- 主控台應用程式使用 \[**主控台**\] 視窗接受輸入訊息並顯示輸出訊息。  若要寫入至 \[**主控台**\] 視窗，您的應用程式必須使用 **Console** 物件，而不是使用 Debug 物件。  若要寫入至 \[**Visual Studio 輸出**\] 視窗，請和平常一樣使用 Debug 物件。  請您務必知道您的應用程式要寫於何處，否則您可能會在錯誤的地方尋找訊息。  如需詳細資訊，請參閱 [Console 類別](https://msdn.microsoft.com/en-us/library/system.console.aspx)、[Debug 類別](https://msdn.microsoft.com/en-us/library/system.diagnostics.debug.aspx)，以及[輸出視窗](../ide/reference/output-window.md)。  
+ A console application uses the **Console** window to accept input and to display output messages. To write to the **Console** window, your application must use the **Console** object instead of the Debug object. To write to the **Visual Studio Output** window, use the Debug object, as usual. Be sure that you know where your application is writing or you might be looking for messages in the wrong place. For more information, see [Console Class](/dotnet/api/system.console), [Debug Class](/dotnet/api/system.diagnostics.debug), and [Output Window](../ide/reference/output-window.md).  
   
-## 啟動應用程式  
- 某些主控台應用程式啟動時，會執行至完成，然後結束。  這種行為可能會讓您沒有足夠的時間中斷執行和進行偵錯。  若要對應用程式進行偵錯，請使用下列其中一項程序啟動應用程式：  
+## <a name="starting-the-application"></a>Starting the application  
+ When some console applications start, they run to completion and then exit. This behavior might not give you enough time to break execution and debug. To be able to debug an application, use one of the following procedures to start the application:  
   
--   應用程式會開始執行，並且一直執行至中斷點。  
+-   Your application starts executing and runs until it reaches the breakpoint.  
   
--   應用程式會啟動，並且在原始程式碼的第一行立即中斷。  
+-   Your application starts and immediately breaks at the first line of source code.  
   
--   在原始程式碼視窗中，以滑鼠右鍵按一下某一行程式碼，然後選取 \[**執行至游標處**\]。  
+-   In a source code window, right-click a line and select **Run to cursor**.  
   
-     應用程式會啟動並執行至選取的程式行，或者至中斷點 \(如果在該程式行之前遇到中斷點\)。  
+     Your application starts and runs to the selected line, or to a breakpoint, if the breakpoint is hit before the line.  
   
- 對主控台應用程式進行偵錯時，您可能想要從命令提示字元，而不是從 Visual Studio 啟動應用程式。  在這種情況下，您可以從命令提示字元啟動應用程式並且將 Visual Studio 偵錯工具附加至其中。  如需詳細資訊，請參閱[附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)。  
+ When you debug a console application, you might want to start the application from the command prompt rather than from Visual Studio. In that case, you can start the application from the command prompt and attach the Visual Studio debugger to it. For more information, see [Attach to Running Processes](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   
- 當您從 Visual Studio 啟動主控台應用程式時，\[**主控台**\] 視窗有時候會出現在 Visual Studio 視窗後面。  如果您嘗試從 Visual Studio 啟動主控台應用程式而且似乎沒有回應，請嘗試移動 Visual Studio 視窗。  
+ When you start a console application from Visual Studio, the **Console** window sometimes appears behind the Visual Studio window. If you try to start your console application from Visual Studio and nothing seems to happen, try to move the Visual Studio window.  
   
-## 請參閱  
- [偵錯機器碼](../debugger/debugging-native-code.md)   
- [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
- [Visual C\+\+ 專案類型](../debugger/debugging-preparation-visual-cpp-project-types.md)   
- [C\#、F\# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [C\+\+ 偵錯組態的專案設定](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
- [偵錯工具安全性](../debugger/debugger-security.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Native Code](../debugger/debugging-native-code.md)   
+ [Debugging Managed Code](../debugger/debugging-managed-code.md)   
+ [Visual C++ Project Types](../debugger/debugging-preparation-visual-cpp-project-types.md)   
+ [C#, F#, and Visual Basic Project Types](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
+ [Project Settings for a C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
+ [Debugger Security](../debugger/debugger-security.md)

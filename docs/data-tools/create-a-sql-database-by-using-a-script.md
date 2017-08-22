@@ -1,53 +1,72 @@
 ---
-title: "逐步解說：建立小型範例資料庫 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
+title: Create a SQL database by using a script | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
 ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 14
-caps.handback.revision: 10
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6871f54959652787dfc115f8360e67aa4c8ddf33
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 逐步解說：建立小型範例資料庫
-在此逐步解說中，您將會使用 Visual Studio 建立包含 [逐步解說：使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md) 範例程式碼的小型資料庫。  
+# <a name="create-a-sql-database-by-using-a-script"></a>Create a SQL database by using a script
+In this walkthrough, you use Visual Studio to create a small database that contains the sample code for [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
- **本主題內容**  
+ **In this topic**  
   
--   [建立包含資料庫結構描述的指令碼](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+-   [Create a script that contains a database schema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [建立資料庫專案並匯入結構描述](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+-   [Create a database project and import a schema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [部署資料庫](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+-   [Deploy the database](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
-## 必要條件  
- 若要完成這個逐步解說，您必須安裝 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  您也必須能夠連接到有權建立和部署資料庫的資料庫伺服器或 LocalDB 資料庫。  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, you must have SQL Server Express LocalDB, or another SQL database, installed.  
   
-##  <a name="CreateScript"></a> 建立包含資料庫結構描述的指令碼  
+##  <a name="CreateScript"></a> Create a script that contains a database schema  
   
-#### 若要建立您可以從中匯入結構描述的指令碼  
+#### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>To create a script from which you can import a schema  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的功能表列上選擇 \[**檔案**\]、\[**新增**\]、\[**檔案**\]。  
+1.  In [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], on the menu bar, select **File** > **New** > **File**.  
   
-     \[**新增檔案**\] 對話方塊隨即出現。  
+     The **New File** dialog box appears.  
   
-2.  在 \[**分類**\] 清單中，選擇 \[**一般**\]。  
+2.  In the **Categories** list, select **General**.  
   
-3.  在 \[**範本**\] 清單中，選擇 \[**SQL 檔案**\]，然後選擇 \[**開啟**\] 按鈕。  
+3.  In the **Templates** list, select **Sql File**, and then select the **Open** button.  
   
-     Transact\-SQL 編輯器隨即開啟。  
+     The Transact-SQL editor opens.  
   
-4.  複製下列 Transact\-SQL 程式碼並將其貼入 Transact\-SQL 編輯器。  
+4.  Copy the following Transact-SQL code, and then paste it into the Transact-SQL editor.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -209,62 +228,62 @@ manager: "ghogen"
     GO  
     ```  
   
-5.  在功能表列上，選擇 \[**檔案**\]、\[**另存 SqlQuery\_1.sql 為**\]。  
+5.  On the menu bar, select **File** > **Save SqlQuery_1.sql As...**.  
   
-     \[**另存新檔**\] 對話方塊隨即出現。  
+     The **Save File As** dialog box appears.  
   
-6.  在 \[**檔案名稱**\] 方塊中，輸入 `SampleImportScript.sql`，記下要儲存檔案的位置，然後選擇 \[**儲存**\] 按鈕。  
+6.  In the **File Name** box, enter `SampleImportScript.sql`, note the location where you'll save the file, and then select the **Save** button.  
   
-7.  在功能表列上，選擇 \[**檔案**\]、\[**關閉方案**\]。  
+7.  On the menu bar, select **File** > **Close Solution**.  
   
-     接著，建立資料庫專案，然後從您已建立的指令碼匯入結構描述。  
+     Next, create a database project, and then import the schema from the script that you've created.  
   
-##  <a name="CreateProject"></a> 建立資料庫專案並匯入結構描述  
+##  <a name="CreateProject"></a> Create a database project and import a schema  
   
-#### 若要建立資料庫專案  
+#### <a name="to-create-a-database-project"></a>To create a database project  
   
-1.  在功能表列上，選擇 \[**檔案**\]、\[**新增**\]、\[**專案**\]。  
+1.  On the menu bar, select **File** > **New** > **Project**.  
   
-     \[新增專案\] 對話方塊隨即出現。  
+     The **New Project** dialog box appears.  
   
-2.  在 \[**已安裝的**\] 下方展開 \[**範本**\] 節點，展開 \[**其他語言**\] 節點，選擇 \[**SQL Server**\] 分類，然後選擇 \[**SQL Server 資料庫專案**\] 範本。  
+2.  Under **Installed**, expand the **Templates** node, expand the **Other Languages** node, select the **SQL Server** category, and then select the **SQL Server Database Project** template.  
   
     > [!NOTE]
-    >  並非在所有的 Visual Studio 安裝中都會出現 \[**其他語言**\] 節點。  
+    >  The **Other Languages** node doesn't appear in all installations of Visual Studio.  
   
-3.  在 \[**名稱**\] 方塊中，輸入 `Small Database`。  
+3.  In the **Name** box, enter `Small Database`.  
   
-4.  選取 \[**為方案建立目錄**\] 核取方塊 \(若尚未選取\)。  
+4.  Select the **Create directory for solution** check box if it isn't already selected.  
   
-5.  清除 \[**加入至原始檔控制**\] 核取方塊 \(若尚未清除\)，然後選擇 \[**確定**\] 按鈕。  
+5.  Clear the **Add to source control** check box if it isn't already cleared, and then select the **OK** button.  
   
-     資料庫專案就會在 \[**方案總管**\] 中建立並出現。  
+     The database project is created and appears in **Solution Explorer**.  
   
-     接下來，從指令碼匯入資料庫結構描述。  
+     Next, import the database schema from the script.  
   
-#### 若要從指令碼匯入資料庫結構描述  
+#### <a name="to-import-a-database-schema-from-a-script"></a>To import a database schema from a script  
   
-1.  選擇功能表列上的 \[**專案**\]、\[**匯入**\]、\[**指令碼**\]。  
+1.  On the menu bar, select **Project** > **Import** > **Script**.  
   
-2.  在 \[歡迎\] 頁面中，檢閱文字，然後選擇 \[**下一步**\] 按鈕。  
+2.  On the **Welcome** page, review the text, and then select the **Next** button.  
   
-3.  選取 \[**單一檔案**\] 選項按鈕，然後選擇 \[**瀏覽**\] 按鈕。  
+3.  Select the **Single File** option button, and then select the **Browse** button.  
   
-     \[**匯入 SQL 指令碼**\] 對話方塊隨即出現。  
+     The **Import SQL Script** dialog box appears.  
   
-4.  開啟您儲存 SampleImportScript.sql 檔案的資料夾，選擇它，然後選擇 \[**開啟**\] 按鈕。  
+4.  Open the folder where you saved the SampleImportScript.sql file, select the file, and then select the **Open** button.  
   
-5.  選擇 \[**完成**\] 按鈕，關閉 \[**匯入 SQL 指令碼**\] 對話方塊。  
+5.  Select the **Finish** button to close the **Import SQL Script** dialog box.  
   
-     如此就會匯入指令碼，而且該指令碼所定義的物件會加入至資料庫專案。  
+     The script is imported, and the objects that the script defines are added to your database project.  
   
-6.  檢閱摘要，然後選擇 \[**完成**\] 按鈕以關閉 \[**匯入 SQL 指令碼檔**\] 對話方塊。  
+6.  Review the summary, and then click the **Finish** button to close the **Import SQL Script File** dialog box.  
   
-7.  在 \[**方案總管**\] 中，展開專案的 Sales、Scripts 及 Security 資料夾，然後確認資料夾皆包含 .sql 檔案。  
+7.  In **Solution Explorer**, expand the Sales, Scripts, and Security folders of your project, and verify that they contain .sql files.  
   
-8.  在 \[**SQL Server 物件總管**\] 中，確認資料庫出現在 \[**專案**\] 節點底下。  
+8.  In **SQL Server Object Explorer**, verify that the database appears under the **Projects** node.  
   
-     此時，資料庫只包含系統物件，例如資料表和預存程序。  在您部署資料庫之後，它會包含指令碼定義的使用者資料表和預存程序。  
+     At this point, the database contains only system objects, such as tables and stored procedures. After you deploy the database, it will contain the user tables and stored procedures that the scripts define.  
   
-##  <a name="DeployDatabase"></a> 部署資料庫  
- 當您選擇 F5 鍵時，預設會將資料庫部署 \(或發行\) 至 LocalDB 資料庫。  您可以將資料庫部署到不同位置，作法是開啟專案的屬性頁，選擇 \[**偵錯**\] 索引標籤，然後變更連接字串。
+##  <a name="DeployDatabase"></a> Deploy the database  
+ When you press the **F5** key, you deploy (or publish) the database to a LocalDB database by default. You can deploy the database to a different location by opening the properties page for the project, selecting the **Debug** tab, and then changing the connection string.

@@ -1,257 +1,268 @@
 ---
-title: "使用中斷點 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/08/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.breakpointswin"
-  - "vs.debug.disassembly.insert"
-  - "vs.debug.sourcewin.edit"
-  - "vs.debug.file"
-  - "vs.debug.breakpt.new"
-  - "vs.debug.whenbreakpointishit"
-  - "vs.debug.breakpt.choose"
-  - "vs.debug.breakpt.location.address"
-  - "vs.debug.breakpt.constraints"
-  - "vs.debug.breakpoints.delete"
-  - "vs.debug.breakpt.location.data"
-  - "vc.breakpoints"
-  - "vs.debug.breakpt.condition"
-  - "vs.debug.breakpt.location.function"
-  - "vs.debug.breakpoints"
-  - "vs.debug.menu.insert"
-  - "vs.debug.filenames"
-  - "vs.debug.breakpt.action"
-  - "vs.debug.sourcewin.insert"
-  - "vs.debug.address"
-  - "vs.debug.data"
-  - "vs.debug.func"
-  - "vs.debug.breakpt.location.file"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "中斷點, 關於中斷點"
+title: Use Breakpoints in the Debugger in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 02/07/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.breakpointswin
+- vs.debug.disassembly.insert
+- vs.debug.sourcewin.edit
+- vs.debug.file
+- vs.debug.breakpt.new
+- vs.debug.whenbreakpointishit
+- vs.debug.breakpt.choose
+- vs.debug.breakpt.location.address
+- vs.debug.breakpt.constraints
+- vs.debug.breakpoints.delete
+- vs.debug.breakpt.location.data
+- vc.breakpoints
+- vs.debug.breakpt.condition
+- vs.debug.breakpt.location.function
+- vs.debug.breakpoints
+- vs.debug.menu.insert
+- vs.debug.filenames
+- vs.debug.breakpt.action
+- vs.debug.sourcewin.insert
+- vs.debug.address
+- vs.debug.data
+- vs.debug.func
+- vs.debug.breakpt.location.file
+helpviewer_keywords:
+- breakpoints, about breakpoints
 ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 caps.latest.revision: 57
-caps.handback.revision: 56
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 使用中斷點
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c2882283042f23d4f8fde14b4f49ca1669b1a5a7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-當您想要停止偵錯工具執行時，或許是為了要查看程式碼變數的狀態，或查看呼叫堆疊，此時您可以設定中斷點。 它們是開發人員工具箱中最重要的偵錯技術之一。  
+---
+# <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Use Breakpoints in the Visual Studio Debugger
+You can set breakpoints when you want to stop debugger execution, perhaps to see the state of code variables or to look at the call stack. They are one of the most important debugging techniques in a developer's toolbox.  
   
-##  <a name="BKMK_Overview"></a> 在原始程式碼中設定函式中斷點  
- 您可以在原始程式碼檔案左邊界按一下，或將游標放在程式碼行，再按 F9，設定在原始程式碼中的函式中斷點。 中斷點會在左邊界中顯示為一個紅點，且該行程式碼也會標上色彩：  
+##  <a name="BKMK_Overview"></a> Setting a function breakpoint in source code  
+ You set a function breakpoint in source code by clicking in the left margin of a source code file, or by putting your cursor on a line of code and pressing F9. The breakpoint appears as a red dot in the left margin, and the line of code is colored as well:  
   
- ![設定中斷點](~/debugger/media/basicbreakpoint.png "BasicBreakpoint")  
+ ![Set a breakpoint](../debugger/media/basicbreakpoint.png "BasicBreakpoint")  
   
- 當您在偵錯工具中執行此程式碼時，每當該行程式碼執行之前叫用了中斷點，便會停止執行。 原始程式碼行的色彩為黃色：  
+ When you run this code in the debugger, execution stops whenever the breakpoint is hit, before the code on that line is executed. The line of source code is colored yellow:  
   
- ![中斷點執行已停止](~/debugger/media/breakpointexecution.png "BreakpointExecution")  
+ ![Breakpoint execution stopped](../debugger/media/breakpointexecution.png "BreakpointExecution")  
   
- 此時 `testInt` 的值仍然是 1。  
+ At this point the value of `testInt` is still 1.  
   
- 您可以查看此應用程式的目前狀態，包括變數值和此呼叫堆疊。 如需呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。  
+ You can look at the current state of the application, including variable values and the call stack. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md).  
   
- 您可以在任何可執行程式碼行上設定中斷點。 例如，在上面的 C\# 程式碼中，您可以在變數宣告、`for` 迴圈或在 `for` 迴圈內部的任何程式碼設定中斷點，但是您無法在命名空間或類別宣告或方法簽章上設定中斷點。  
+ You can set a breakpoint on any line of executable code. For example, in the C# code above you can set a breakpoint on the variable declaration, the `for` loop, or any code inside the `for` loop, but you cannot set a breakpoint on the namespace or class declarations or the method signature.  
   
-##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> 設定其他種類的中斷點  
- 您也可以在呼叫堆疊中、在 \[反組譯碼\] 視窗中，以及在原生 C\+\+ 程式碼中，以資料條件或記憶體位址設定中斷點。  
+##  <a name="BKMK_Set_a_breakpoint_in_a_source_file"></a> Setting Other Kinds of Breakpoints  
+ You can also set breakpoints in the call stack, in the Disassembly window, and, in native C++ code, at a data condition or a memory address.  
   
-## 在 \[呼叫堆疊\] 視窗中設定中斷點  
- 您可以藉由在 \[呼叫堆疊\] 視窗中設定中斷點，在進行呼叫的函式返回的指令或程式行位置中斷執行。 如需呼叫堆疊的詳細資訊，請參閱[如何：使用呼叫堆疊視窗](../debugger/how-to-use-the-call-stack-window.md)。 此偵錯工具必須已停止執行。  
+## <a name="BKMK_Set_a_breakpoint_in_the_call_stack_window"></a> Setting a Breakpoint in the Call Stack Window  
+ You can break execution at the instruction or line that a calling function returns to by setting a breakpoint in the **Call Stack** window. For more information about the call stack, see [How to: Use the Call Stack Window](../debugger/how-to-use-the-call-stack-window.md). The debugger must have stopped executing.  
   
-1.  開始偵錯此應用程式，並等候執行停止 \(例如，在中斷點處\)。 開啟 \[呼叫堆疊\] 視窗 \(\[偵錯\] \/ \[Windows\] \/ \[呼叫堆疊\]，或 **CTRL \+ ALT \+ C**\)。  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Call Stack** window (**Debug > Windows > Call Stack**, or **CTRL + ALT + C**).  
   
-2.  以滑鼠右鍵按一下呼叫函式，然後選取 \[中斷點\] \/ \[插入中斷點\]，或只使用快速鍵 **F9**。  
+2.  Right-click the calling function and then select **Breakpoint > Insert Breakpoint**, or just use the shortcut key **F9**.  
   
-3.  中斷點符號會出現在函式呼叫名稱旁邊、呼叫堆疊的左邊界中。  
+3.  A breakpoint symbol appears in the left margin of the call stack, next to the function call name.  
   
- 在 \[中斷點\] 視窗中，此呼叫堆疊中斷點會顯示為位址，伴隨著對應於函式中下一個可執行指令的記憶體位置。 偵錯工具會在指令處中斷執行。  
+ In the **Breakpoints** window, the call stack breakpoint appears as an address with a memory location that corresponds to the next executable instruction in the function. The debugger breaks execution at the instruction.  
   
- 若要在程式碼執行期間以視覺化方式追蹤中斷點，請參閱[進行偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
+ To visually trace breakpoints during code execution, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
-## 在 \[反組譯碼\] 視窗中設定中斷點  
- 若要在組譯碼指令處設定中斷點，偵錯工具必須處於中斷模式。  
+## <a name="setting-a-breakpoint-in-the-disassembly-window"></a>Setting a Breakpoint in the Disassembly Window  
+ To set a breakpoint at an assembly instruction, the debugger must be in break mode.  
   
-1.  開始偵錯此應用程式，並等候執行停止 \(例如，在中斷點處\)。 開啟 \[反組譯碼\] 視窗 \(\[偵錯\] \/ \[Windows\] \/ \[反組譯碼\]，或 **Ctrl \+ Alt \+ D**\)。  
+1.  Start debugging the application, and wait execution is stopped (for example, at a breakpoint). Open the **Disassembly** window (**Debug > Windows > Disassembly**, or **Ctrl + Alt + D**).  
   
-2.  在想要中斷的指令之左邊界按一下，或將游標移至此指令，然後按下 **F9**。  
+2.  Click in the left margin at the instruction that you want to break at, or set your cursor at the instruction and press **F9**.  
   
-## 設定資料中斷點 \(僅限原生 C\+\+\)  
- 當儲存在特定記憶體位址的值變更時，資料中斷點會中斷執行。 如果值已讀取但未變更，則不會中斷執行。 若要設定資料中斷點，偵錯工具必須處於中斷模式。  
+## <a name="BKMK_set_a_data_breakpoint_native_cplusplus_only"></a>Setting a Data Breakpoint (native C++ only)  
+ Data breakpoints break execution when a value that is stored at a specified memory address changes. If the value is read but not changed, execution doesn't break. To set data breakpoints, the debugger must be in break mode.  
   
-1.  開始偵錯應用程式，並等候直到已到達中斷點為止。 在 \[偵錯\] 功能表上，選擇 \[新增中斷點\] \/ \[資料中斷點\] \(或開啟 \[中斷點\] 視窗，然後選擇 \[新增\] \/ \[資料中斷點\]。  
+1.  Start debugging the application, and wait until a breakpoint is reached. On the **Debug** menu, choose **New Breakpoint > Data Breakpoint** (or open the **Breakpoints** window and choose **New > Data Breakpoint**.  
   
-2.  在 \[位址\] 方塊中，輸入記憶體位址或計算結果為記憶體位址的運算式。 例如，輸入當變數 `avar` 的內容變更時要中斷的 `&avar`。  
+2.  In the **Address** box, type a memory address or an expression that evaluates to a memory address. For example, type `&avar` to break when the contents of the variable `avar` changes.  
   
-3.  在 \[位元組計數\] 下拉式清單中，選取想要偵錯工具監看的位元組數量。 例如，如果選取 **4**，則偵錯工具將從 `&avar` 開始監看四個位元組，並且在任何這些位元組的值變更時中斷。  
+3.  In the **Byte Count** dropdown, select the number of bytes you want the debugger to watch. For example, if you select **4**, the debugger will watch the four bytes starting at `&avar` and break if any of those bytes change value.  
   
- 請記住，資料中斷點的使用取決於特定記憶體位址是否適用。  
+ Keep in mind that data breakpoints depend on the applicability of specific memory addresses.  
   
--   偵錯工作階段之間的變數位址會有所不同。 在每個偵錯工作階段的結尾會自動停用資料中斷點。  
+-   The address of a variable changes from one debugging session to the next. Data breakpoints are automatically disabled at the end of each debugging session.  
   
--   如果您對區域變數設定資料中斷點，則此中斷點在函式結束時會保持啟用狀態，但是此記憶體位址不再適用，而且該中斷點的行為無法預期。 如果對區域變數設定資料中斷點，您應該在函式結束前移除或停用中斷點。  
+-   If you set a data breakpoint on a local variable, the breakpoint remains enabled when the function ends, but the memory address is no longer applicable, and the behavior of the breakpoint is unpredictable. If you set a data breakpoint on a local variable, you should remove or disable the breakpoint before the function ends.  
   
- 下列情況不適用資料中斷點：  
+ Data breakpoints don't work under these conditions:  
   
--   未進行偵錯的處理序寫入記憶體位置  
+-   A process that is not being debugged writes to the memory location  
   
--   記憶體位置在兩個或多個處理序之間共用  
+-   The memory location is shared between two or more processes  
   
--   記憶體位置已在核心內更新。 例如，如果記憶體已傳遞至 32 位元的 Windows `ReadFile` 函式，記憶體將會從核心模式進行更新，而偵錯工具將不會在記憶體寫入時中斷。  
+-   The memory location is updated within the kernel. For example, if memory is passed to the 32-bit Windows `ReadFile` function, the memory will be updated from kernel mode and the debugger doesn't break on the memory write.  
   
-## 以記憶體位址設定中斷點 \(僅限原生 C\+\+\)  
- 您也可以使用物件位址，在特定類別執行個體呼叫的方法上設定中斷點。  以下為範例：  
+## <a name="setting-a-breakpoint-with-a-memory-address-native-c-only"></a>Setting a Breakpoint with a Memory Address (native C++ only)  
+ You can also use the address of an object to set a breakpoint on a method called on a specific instance of a class.  Here's an example:  
   
- 例如，指定具有位址的類型 `my_class` 物件位址，您可以在從該執行個體呼叫的名為  `my_method` 的方法上設定函式中斷點。  
+ For example, given an object of type `my_class` with the address, you can set a function breakpoint on a method named `my_method` called from that instance.  
   
-1.  在已具現化類別的執行個體後的某處設定中斷點。  
+1.  Set a breakpoint somewhere after that instance of the class is instantiated.  
   
-2.  尋找執行個體的位址 \(我們稱它為 `0xcccccccc`\)。  
+2.  Find the address of the instance (we'll say it's `0xcccccccc`).  
   
-3.  按一下　\[偵錯\] \/ \[新增中斷點\] \/ \[函式中斷點\] \(或**ALT \+ F9 和 ALT \+ B**\)。  
+3.  Click **Debug > New Breakpoint > Function Breakpoint** (or **ALT + F9, B**).  
   
-4.  在 \[函式名稱\] 方塊中加入下列文字：  
+4.  Add the following text to the **Function Name** box:  
   
-    ```cpp  
+    ```C++  
     ((my_class *) 0xcccccccc)->my_method  
     ```  
   
-##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> 管理中斷點  
- 您可以使用 \[中斷點\] 視窗 \(\[偵錯\] \/ \[Windows\] \/ \[中斷點\]，或 **CTRL \+ ALT \+ B**\) 查看已在方案中設定的所有中斷點：  
+##  <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Managing Breakpoints  
+ You can use the **Breakpoints** window (**Debug > Windows > Breakpoints**, or **CTRL + ALT + B**) to see all the breakpoints you have set in your solution:  
   
- ![中斷點視窗](~/debugger/media/breakpointswindow.png "BreakpointsWindow")  
+ ![Breakpoints window](../debugger/media/breakpointswindow.png "BreakpointsWindow")  
   
- \[中斷點\] 視窗可讓您集中管理所有中斷點，這點在非常重視中斷點的大型方案或複雜的偵錯情節中非常有用。 如果您需要儲存或共用一組中斷點的狀態和位置，只能從 \[中斷點\] 視窗儲存和匯入中斷點。  
+ The **Breakpoints** window gives you a central place to manage all your breakpoints, which can be especially helpful in a large solution or a complex debugging scenario where breakpoints are critical. If you need to save or share the state and location of a set of breakpoints, you can export and import breakpoints only from the **Breakpoints** window.  
   
-##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> 進階中斷點  
+##  <a name="BKMK_Specify_a_breakpoint_condition_using_a_code_expression"></a> Advanced Breakpoints  
   
-## 中斷點條件  
- 您可以設定條件來控制中斷點執行的時機和位置。  
+## <a name="breakpoint-conditions"></a>Breakpoint conditions  
+ You can control when and where a breakpoint executes by setting conditions.  
   
-1.  以滑鼠右鍵按一下中斷點，或將滑鼠停留在中斷點，然後選擇設定圖示。  
+1.  Right-click the breakpoint, or hover over the breakpoint and choose the settings icon.  
   
-2.  在內容功能表中，選取 \[條件\]。 這會開啟 \[中斷點設定\] 視窗：  
+2.  In the context menu, select **Conditions**. This opens the **Breakpoint Settings** window:  
   
- ![中斷點設定](../debugger/media/breakpointsettings.png "BreakpointSettings")  
+ ![Breakpoint settings](../debugger/media/breakpointsettings.png "BreakpointSettings")  
   
- 當您核取 \[條件\] 方塊後，此視窗隨即展開以顯示不同種類的條件。  
+ When you check the **Conditions** box, the window expands to show the different kinds of conditions.  
   
- **條件運算式**：當您選取 \[條件運算式\] 後，您就可以選擇兩個條件：\[為 True\] 和 \[變更時\]。 如果想要在滿足運算式時中斷，請選擇 \[為 true\]，如果想要在運算式的值變更時中斷，請選擇 \[變更時\]。  
+ **Conditional Expression:** When you select Conditional Expression, you can then choose two conditions: **Is true** and **When changed**. Choose **Is true** if you want to break when the expression is satisfied, or choose **When changed** if you want to break when the value of the expression has changed.  
   
- 在下列範例中，我們設定此中斷點僅當 `testInt` 的值為 **4** 的時候才叫用：  
+ In the following example we set the breakpoint to hit only when the value of `testInt` is **4**:  
   
- ![中斷點條件為 true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
+ ![Breakpoint condition is true](../debugger/media/breakpointconditionistrue.png "BreakpointConditionIsTrue")  
   
- 在下列範例中，我們設定此中斷點僅當 `testInt` 的值變更時才叫用：  
+ In the following example we set the breakpoint to hit only when the value of `testInt` changes:  
   
- ![變更時的中斷點](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
+ ![Breakpoint when changed](../debugger/media/breakpointwhenchanged.png "BreakpointWhenChanged")  
   
- \[變更時\] 欄位的行為會隨不同的程式設計語言而異。 如果針對機器碼選擇 \[變更時\]，偵錯工具不會將第一次條件評估視為變更，因此不會在第一次評估時叫用中斷點。 如果針對 Managed 程式碼選擇 \[變更時\]，則會在選取 \[變更時\] 之後的第一次評估時叫用中斷點。  
+ The behavior of the When changed field is different for different programming languages. If you choose **When changed** for native code, the debugger doesn't consider the first evaluation of the condition to be a change, so the breakpoint won't be hit on the first evaluation. If you choose **When changed** for managed code, he breakpoint is hit on the first evaluation after **When changed** is selected.  
   
- 如果使用無效的語法設定中斷點條件，警告訊息便會出現。 如果使用有效的語法，但是無效的語意指定中斷點條件，在第一次叫用中斷點時，則會出現警告訊息。 在任一情況下，當叫用無效的中斷點時，偵錯工具便會中斷執行。 只有在條件是有效的並且判斷值為 `false` 時，才會略過中斷點。  
+ If you set a breakpoint condition with invalid syntax, a warning message appears. If you specify a breakpoint condition with valid syntax but invalid semantics, a warning message appears the first time the breakpoint is hit. In either case, the debugger breaks execution when the invalid breakpoint is hit. The breakpoint is skipped only if the condition is valid and evaluates to `false`.  
   
- 這個條件可以是偵錯工具所能辨識的任何有效運算式。 如需有效運算式的詳細資訊，請參閱[偵錯工具中的運算式](../debugger/expressions-in-the-debugger.md)。  
+ The condition can be any valid expression that is recognized by the debugger. For more information about valid expressions, see [Expressions in the Debugger](../debugger/expressions-in-the-debugger.md).  
   
-## 在中斷點條件中使用物件 ID \(C\# 和 F\#\)  
- 有時候您可能需要觀察特定物件的行為，例如，您可能想要了解為什麼在集合中多次插入物件。 在 C\# 和 F\# 中，您可以針對[參考類型](/dotnet/csharp/language-reference/keywords/reference-types)的特定執行個體建立物件 ID，並在中斷點條件中使用它們。 物件 ID 是由 Common Language Runtime \(CLR\) 偵錯服務所產生並與物件相關聯。  若要建立物件 ID，請執行下列動作：  
+## <a name="using-object-ids-in-breakpoint-conditions-c-and-f"></a>Using Object IDs in Breakpoint Conditions (C# and F#)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to find out why an object was inserted more than once into a collection. In C# and F#, you can create object IDs for specific instances of [reference types](/dotnet/csharp/language-reference/keywords/reference-types) and use them in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  To create an object ID, do the following:  
   
-1.  當物件已建立一段時間之後，於程式碼中設定中斷點。  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  開始偵錯，當執行到中斷點停止時，找到 \[區域變數\] 視窗中的中斷點，並按一下滑鼠右鍵，然後選取 \[設定物件 ID\]。  
+2.  Start debugging, and when execution stops in the breakpoint, find the breakpoint in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-     您應該會看到 \[區域變數\] 視窗中顯示 **$** 加上一個數字。 這就是物件 ID。  
+     You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-3.  在您要調查的位置加入新的條件中斷點 \(例如，要將物件加入集合時\)。  
+3.  Add a new conditional breakpoint at the point you want to investigate, for example when the object is to be added to the collection.  
   
-4.  使用 \[條件運算式\] 欄位中的物件 ID。 例如，如果變數 `item` 參考要加入集合的物件，您會放置 **item \=\= $n**，其中 **n** 是物件 ID 號碼。  
+4.  Use the Object ID in the Conditional Expression field. For example, if there is a variable `item` referring to the object that is to be added to the collection, you would put **item == $n**, where **n** is the object ID number.  
   
-     要將該物件加入集合時，執行會在該處中斷。  
+     Execution will break at the point when that object is to be added to the collection.  
   
- 如果您稍後想要刪除物件 ID，則可以在 \[區域變數\] 視窗中於變數上按一下滑鼠右鍵，然後選取 \[刪除物件 ID\]。  
+ If you later want to delete the object ID, you can right-click the variable in the **Locals** window and select **Delete Object ID**.  
   
- 請注意，物件 ID 會建立弱式參考，且不會防止物件被記憶體回收。 它們僅針對目前的偵錯工作階段才有效。  
+ Note that Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
-## 叫用次數  
- 如果您懷疑程式碼中的某個迴圈在經過特定數目的反覆項目之後開始出現行為異常，您可以設定中斷點，在遇到相關聯的程式碼行指定的次數之後停止執行，而不需強迫重複按 **F5** 到達反覆項目層級。  
+## <a name="hit-count"></a>Hit Count  
+ If you suspect that a loop in your code starts misbehaving after a certain number of iterations, you can set a breakpoint to stop execution after a specified number of hits to the to the associated line of code, rather than being forced to repeatedly press **F5** to reach the iteration level.  
   
- 在 \[中斷點設定\] 視窗中，將此條件設為 \[叫用次數\]。 然後指定反覆項目的數目。 在下列範例中，我們設定此中斷點在每隔一個反覆項目上叫用：  
+ In the **Breakpoint Settings** window, set the condition to **Hit Count**. You can then specify the number of iterations. In the following example, we set the breakpoint to hit on every other iteration:  
   
- ![遇到中斷點的次數](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
+ ![Breakpoint hit count](../debugger/media/breakpointhitcount.png "BreakpointHitCount")  
   
-## 篩選  
- 您可以限制只在指定的裝置上或指定的處理序和執行緒中引發中斷點。  
+## <a name="filter"></a>Filter  
+ You can restrict a breakpoint to fire only on specified devices, or in specified processes and threads.  
   
- 在 \[中斷點設定\] 視窗中，將此條件設為 \[篩選條件\]。 輸入一或多個下列運算式。  
+ In the **Breakpoint Setting**s window, set the condition to **Filter**. Enter one or more of the following expressions.  
   
--   MachineName \= "名稱"  
+-   MachineName = "name"  
   
--   ProcessId \= 值  
+-   ProcessId = value  
   
--   ProcessName \="名稱"  
+-   ProcessName = "name"  
   
--   ThreadId \= 值  
+-   ThreadId = value  
   
--   ThreadName \= "名稱"  
+-   ThreadName = "name"  
   
- 將字串值置於雙引號中。 您可以使用這些來結合子句：`&` \(AND\)、`||` \(OR\)、`!` \(NOT\) 和括號。  
+ Enclose string values in double quotes. You can combine clauses using `&` (AND), `||` (OR), `!` (NOT), and parentheses.  
   
-##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> 中斷點動作和追蹤點  
- 追蹤點是將訊息列印至 \[輸出\] 視窗的中斷點。 追蹤點在程式語言中的行為可以像是暫存追蹤陳述式。  
+##  <a name="BKMK_Print_to_the_Output_window_with_tracepoints"></a> Breakpoint Actions and Tracepoints  
+ A tracepoint is a breakpoint that prints a message to the Output window. A tracepoint can act like a temporary trace statement in the programming language.  
   
- 在 \[中斷點設定\] 視窗中，核取 \[動作\] 方塊。 選擇 \[動作\] 群組中的 \[將訊息記錄到輸出視窗\]。 您可以列印泛型字串，例如「這是測試」。 若要包含變數或運算式的值，請將它置於大括號中。  
+ In the **Breakpoint Settings** window, check the **Actions** box. Choose **Log a message to Output window** in the **Action** group. You can print a generic string, such as **this is a test**. To include the value of a variable or expression, enclose it in curly braces.  
   
- 若要在叫用追蹤點時中斷執行，請清除 \[繼續執行\] 核取方塊。 若已核取 \[繼續執行\] 時，則不會暫止執行。 在這兩種情況下，都會列印訊息。  
+ To break execution when the tracepoint is hit, clear the **Continue Execution** check box. When **Continue Execution** is checked, execution is not halted. In both cases, the message is printed.  
   
- 您可以在 \[訊息\] 中使用下列特殊關鍵字。  
+ You can use the following special keywords in the **Message**.  
   
 |||  
 |-|-|  
-|**$ADDRESS**|目前指令|  
-|**$CALLER**|呼叫函式名稱|  
-|**$CALLSTACK**|呼叫堆疊|  
-|**$FUNCTION**|目前的函式名稱|  
-|**$PID**|處理序 ID|  
-|**$PNAME**|處理序名稱|  
-|**$TID**|執行緒 ID|  
-|**$TNAME**|執行緒名稱|  
+|**$ADDRESS**|Current instruction|  
+|**$CALLER**|Calling function name|  
+|**$CALLSTACK**|Call stack|  
+|**$FUNCTION**|Current function name|  
+|**$PID**|Process id|  
+|**$PNAME**|Process name|  
+|**$TID**|Thread id|  
+|**$TNAME**|Thread name|  
 |**$TICK**||  
 |**$TNAME**||  
   
-##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> 中斷點標籤  
- 中斷點標籤僅在 \[中斷點\] 視窗中用來排序和篩選中斷點清單。 若要將標籤加入至中斷點，請選擇中斷點列，然後選擇內容功能表上的 \[標籤\]。  
+##  <a name="BKMK_Set_a_breakpoint_at_a_function_return_in_the_Call_Stack_window"></a> Breakpoint labels  
+ Breakpoint labels are used only in the **Breakpoints** window to sort and filter the list of breakpoints. To add a label to a breakpoint, choose the breakpoint row and then choose **Label** on the context menu.  
   
-## 匯出和匯入中斷點  
- 您可以將中斷點匯出至 XML 檔案，方法是以滑鼠右鍵按一下此中斷點，然後選取 \[匯出\]。 根據預設，該檔案會儲存在此方案目錄中。 若要匯入中斷點，請開啟 \[中斷點\] 視窗 \(**CTRL \+ ALT \+ B**\)，然後在工具列上按一下向右的箭頭 \(工具提示為 \[從檔案匯入中斷點\]\)。  
+## <a name="export-and-import-breakpoints"></a>Export and Import Breakpoints  
+ You can export a breakpoint to an XML file by right-clicking on the breakpoint and selecting **Export**. The file is saved by default in the solution directory. To import breakpoints, open the **Breakpoints** window (**CTRL + ALT + B**) and on the toolbar click the right-pointing arrow (the tooltip is **Import breakpoints from a file**).  
   
-## 進行中斷點疑難排解  
+## <a name="troubleshoot-breakpoints"></a>Troubleshoot breakpoints  
   
-### 我刪除了中斷點，但再次啟動偵錯時繼續叫用此中斷點  
- 如果您在偵錯時刪除了中斷點，則在某些情況下，您會在下次啟動偵錯時再次叫用此中斷點。 若要停止叫用此中斷點，請確定所有中斷點的執行個體都已從 \[中斷點\] 視窗中移除。  
+### <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>I deleted a breakpoint, but I continue to hit it when I start debugging again  
+ If you deleted a breakpoint while debugging, in some cases you may hit the breakpoint again the next time you start debugging. To stop hitting this breakpoint, make sure all the instances of the breakpoint are removed from the **Breakpoints** window.  
   
-### 偵錯工具找不到中斷點原始程式檔的正確版本  
- 如果原始程式檔已變更，且來源不再符合您要偵錯的程式碼，則即使原始程式檔存在，偵錯工具可能仍會尋找對應中斷點的原始程式檔。  
+### <a name="the-debugger-cant-locate-the-correct-version-of-the-source-file-for-a-breakpoint"></a>The debugger can't locate the correct version of the source file for a breakpoint  
+ If a source file has changed and the source no longer matches the code you are debugging, the debugger might locate the source file that corresponds to a breakpoint, even though the source file exists.  
   
-1.  如果您要 Visual Studio 顯示不符合您要偵錯之版本的原始程式碼，請選擇 \[偵錯\] \/ \[選項和設定\]。 在 \[偵錯\] \/ \[一般\] 頁面上，清除 \[原始程式檔必須完全符合原始版本\] 選項。  
+1.  If you want Visual Studio to display source code that doesn't match the version you are debugging, choose **Debug > Options and Settings**. On the **Debugging/General** page, clear the **Require source files that exactly match the original version** option.  
   
-2.  您也可以將中斷點繫結至原始程式檔。 選取中斷點，並選擇內容功能表上的 \[條件\]。 在 \[中斷點設定\] 視窗中核取 \[允許原始程式碼與原始版本不同\]。  
+2.  You can also bind the breakpoint to the source file. Select the breakpoint and choose **Conditions** on the context menu. Check **Allow the source code to be different from the original** in the **Breakpoint Settings** window.  
   
-### 中斷點在 DLL 中無法運作  
- 在偵錯工具尚未載入有關程式碼所在模組的偵錯資訊之前，您無法在原始程式檔中設定中斷點。 問題徵兆可能包含 \[無法設定中斷點\] 這類訊息。 警告中斷點圖像 \(Glyph\) 會出現在中斷點的位置。 不過，這些警告中斷點在程式碼載入時會成為實際的中斷點。 如需載入符號的詳細資訊，請參閱[指定符號 \(.pdb\) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。  
+### <a name="breakpoints-dont-work-in-a-dll"></a>Breakpoints don't work in a DLL  
+ You cannot set a breakpoint in a source file when the debugger hasn't loaded the debug information for the module where the code is located. Symptoms may include messages such as **the breakpoint will not be set**. The Warning breakpoint glyph appears at the breakpoint location. However, these Warning breakpoints become actual breakpoints when the code is loaded. For more information about loading symbols, see [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
-## 請參閱  
- [使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Navigating through Code with the Debugger](../debugger/navigating-through-code-with-the-debugger.md)

@@ -1,66 +1,85 @@
 ---
-title: "如何：利用 WPF 應用程式建立查閱資料表 | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [WPF], 顯示"
-  - "資料繫結, WPF"
-  - "顯示資料, WPF"
-  - "WPF [WPF], 資料"
-  - "WPF 資料繫結 [Visual Studio]"
-  - "WPF Designer, 資料繫結"
-  - "WPF, Visual Studio 中的資料繫結"
+title: Create lookup tables in WPF applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- data [WPF], displaying
+- WPF, data binding in Visual Studio
+- WPF data binding [Visual Studio]
+- displaying data, WPF
+- WPF [WPF], data
+- WPF Designer, data binding
+- data binding, WPF
 ms.assetid: 56a1fbff-c7e8-4187-a1c1-ffd17024bc1b
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 35c99d7b903674af2e4d8b6f6e8c770d440d95c8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 如何：利用 WPF 應用程式建立查閱資料表
-您可以建立查閱資料表，方法是從 \[**資料來源**\] 視窗將父資料表或物件的主節點拖曳至已繫結至相關子資料表之資料行或屬性的控制項。  「*查閱資料表*」\(Lookup Table\) 一詞 \(有時候稱為「*查閱繫結*」\(Lookup Binding\)\) 描述根據某個資料表中的外部索引鍵欄位值，顯示另一個資料表之資訊的控制項。  
+# <a name="create-lookup-tables-in-wpf-applications"></a>Create lookup tables in WPF applications
+The term *lookup table* (sometimes called a *lookup binding*) describes a control that displays information from one data table based on the value of a foreign-key field in another table. You can create a lookup table by dragging the main node of a parent table or object in the **Data Sources** window onto a control that is already bound to a column or property in a related child table.  
   
- 例如，請考慮銷售資料庫中的 `Orders` 資料表。  `Orders` 資料表中的每筆記錄都包含 `CustomerID`，表示下訂單的客戶。  `CustomerID` 是外部索引鍵，它會指向 `Customers` 資料表中的客戶記錄。  從 `Orders` 資料表顯示訂單清單時，您可能要顯示的是實際客戶名稱，而不是 `CustomerID`。  因為客戶名稱是在 `Customers` 資料表中，您必須建立查閱資料表，才能顯示客戶名稱。  查閱資料表使用 `Orders` 記錄中的 `CustomerID` 值，以巡覽關聯性並傳回使用者易記的客戶名稱。  
+ For example, consider a table of `Orders` in a sales database. Each record in the `Orders` table includes a `CustomerID` that indicates which customer placed the order. The `CustomerID` is a foreign key that points to a customer record in the `Customers` table. When you display a list of orders from the `Orders` table, you may want to display the actual customer name instead of the `CustomerID`. Because the customer name is in the `Customers` table, you need to create a lookup table to display the customer name. The lookup table uses the `CustomerID` value in the `Orders` record to navigate the relationship, and return the customer name.  
   
-### 若要建立查閱資料表  
+## <a name="to-create-a-lookup-table"></a>To create a lookup table  
   
-1.  將下列其中一種具有相關資料的資料來源加入專案中：  
+1.  Add one of the following types of data sources with related data to your project:  
   
-    -   資料集或實體資料模型。  如需詳細資訊，請參閱 [如何：連接至資料庫中的資料](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+    -   Dataset or Entity Data Model. 
   
-    -   WCF 資料服務、WCF 服務或 Web 服務。  如需詳細資訊，請參閱 [如何：連接至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
+    -   WCF Data Service, WCF service or Web service. For more information, see [How to: Connect to Data in a Service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    -   物件。  如需詳細資訊，請參閱 [如何：連接至物件中的資料](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md)。  
-  
-    > [!NOTE]
-    >  在建立查閱資料表之前，兩個相關資料表或物件必須存在，當做專案的資料來源。  
-  
-2.  開啟 \[**WPF 設計工具**\]，並確定設計工具包含的容器是 \[**資料來源**\] 視窗中項目的有效置放目標。  
-  
-     如需有效置放目標的詳細資訊，請參閱[將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
-  
-3.  在 \[**資料**\] 功能表上按一下 \[**顯示資料來源**\]，以開啟 \[**資料來源**\] 視窗。  
-  
-4.  展開 \[**資料來源**\] 視窗中的節點，直到您看見父資料表或物件和其相關子資料表或物件為止。  
+    -   Objects. For more information, see [Bind to objects in Visual Studio](bind-objects-in-visual-studio.md).  
   
     > [!NOTE]
-    >  相關子資料表或物件是指在父資料表或物件底下顯示為可展開子節點的節點。  
+    >  Before you can create a lookup table, two related tables or objects must exist as a data source for the project.  
   
-5.  按一下子節點的下拉式功能表，然後選取 \[**詳細資料**\]。  
+2.  Open the **WPF Designer**, and make sure that the designer contains a container that is a valid drop target for items in the **Data Sources** window.  
   
-6.  展開子節點。  
+     For more information about valid drop targets, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-7.  在子節點底下，按一下將子資料和父資料產生關聯之項目的下拉式功能表 \(在上述範例中，這是 \[**CustomerID**\] 節點\)。  選取下列其中一種支援查閱繫結的控制項：  
+3.  On the **Data** menu, click **Show Data Sources** to open the **Data Sources** window.  
+  
+4.  Expand the nodes in the **Data Sources** window, until you can see the parent table or object and the related child table or object.  
+  
+    > [!NOTE]
+    >  The related child table or object is the node that appears as an expandable child node under the parent table or object.  
+  
+5.  Click the drop-down menu for the child node, and select **Details**.  
+  
+6.  Expand the child node.  
+  
+7.  Under the child node, click the drop-down menu for the item that relates the child and parent data. (In the preceding example, this is the **CustomerID** node.) Select one of the following types of controls that support lookup binding:  
   
     -   **ComboBox**  
   
@@ -69,30 +88,30 @@ manager: "ghogen"
     -   **ListView**  
   
         > [!NOTE]
-        >  如果 \[**ListBox**\] 或 \[**ListView**\] 控制項並未出現在清單中，您可以將這些控制項加入至清單。  如需詳細資訊，請參閱 [設定從 \[資料來源\] 視窗拖曳時要建立的控制項](../Topic/Set%20the%20control%20to%20be%20created%20when%20dragging%20from%20the%20Data%20Sources%20window.md)。  
+        >  If the **ListBox** or **ListView** control does not appear in the list, you can add these controls to the list. For information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-    -   任何衍生自 <xref:System.Windows.Controls.Primitives.Selector> 的自訂控制項。  
+    -   Any custom control that derives from <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  如需如何將自訂控制項加入至可供選取做為 \[**資料來源**\] 視窗中項目的控制項清單的詳細資訊，請參閱 [將自訂控制項加入 \[資料來源\] 視窗](../Topic/Add%20custom%20controls%20to%20the%20Data%20Sources%20window.md)。  
+        >  For information about how to add custom controls to the list of controls you can select for items in the **Data Sources** window, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-8.  從 \[**資料來源**\] 視窗將子節點拖曳至 WPF 設計工具中的容器 \(在上述範例中，子節點是 \[**Orders**\] 節點\)。  
+8.  Drag the child node from the **Data Sources** window onto a container in the WPF designer. (In the preceding example, the child node is the **Orders** node.)  
   
-     Visual Studio 會針對您拖曳的每個項目產生建立新資料繫結控制項的 XAML。  XAML 也會將子資料表或物件的新 <xref:System.Windows.Data.CollectionViewSource> 加入置放目標的資源中。  對於某些資料來源，Visual Studio 也會產生可將資料載入資料表或物件中的程式碼。  如需詳細資訊，請參閱[將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)。  
+     Visual Studio generates XAML that creates new data-bound controls for each of the items that you drag. The XAML also adds a new <xref:System.Windows.Data.CollectionViewSource> for the child table or object to the resources of the drop target. For some data sources, Visual Studio also generates code to load data into the table or object. For more information, see [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-9. 從 \[**資料來源**\] 視窗將父節點拖曳至您先前建立的查閱繫結控制項 \(在上述範例中，父節點是 \[**Customers**\] 節點\)。  
+9. Drag the parent node from the **Data Sources** window onto the lookup binding control that you created earlier. (In the preceding example, the parent node is the **Customers** node).  
   
-     Visual Studio 會設定此控制項上的一些屬性，以設定查閱繫結。  下表列出 Visual Studio 修改的屬性。  必要時，您可以在 XAML 或 \[**屬性**\] 視窗中變更這些屬性。  
+     Visual Studio sets some properties on the control to configure the lookup binding. The following table lists the properties that Visual Studio modifies. If necessary, you can change these properties in the XAML or in the **Properties** window.  
   
-    |屬性|設定說明|  
-    |--------|----------|  
-    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|這個屬性指定用來取得控制項中顯示之資料的集合或繫結。  Visual Studio 會將這個屬性設定為您拖曳至控制項之父資料的 <xref:System.Windows.Data.CollectionViewSource>。|  
-    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|這個屬性指定控制項中顯示之資料項目的路徑。  Visual Studio 會將這個屬性設定為主索引鍵之後，第一個擁有字串資料型別的資料行或屬性。<br /><br /> 如果您想要在父資料中顯示不同的資料行或屬性，請將這個屬性變更為不同屬性的路徑。|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 會將這個屬性繫結至您拖曳至設計工具中子資料的資料行或屬性。  這是父資料的外部索引鍵。|  
-    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio 會將這個屬性設定為子資料中做為父資料外部索引鍵之資料行或屬性的路徑。|  
+    |Property|Explanation of setting|  
+    |--------------|----------------------------|  
+    |<xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>|This property specifies the collection or binding that is used to get the data that is displayed in the control. Visual Studio sets this property to the <xref:System.Windows.Data.CollectionViewSource> for the parent data you dragged to the control.|  
+    |<xref:System.Windows.Controls.ItemsControl.DisplayMemberPath%2A>|This property specifies the path of the data item that is displayed in the control. Visual Studio sets this property to the first column or property in the parent data, after the primary key, that has a string data type.<br /><br /> If you want to display a different column or property in the parent data, change this property to the path of a different property.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio binds this property to the column or property of the child data that you dragged to the designer. This is the foreign key to the parent data.|  
+    |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio sets this property to the path of the column or property of the child data that is the foreign key to the parent data.|  
   
-## 請參閱  
- [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [如何：將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio2.md)   
- [如何：在 WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)   
- [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
+## <a name="see-also"></a>See Also  
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
+ [Display related data in WPF applications](../data-tools/display-related-data-in-wpf-applications.md)   
+ [Walkthrough: Displaying Related Data in a WPF Application](../data-tools/display-related-data-in-wpf-applications.md)

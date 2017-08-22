@@ -1,58 +1,53 @@
----
-title: "如何：偵錯 Web 應用程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
+-- title: "How to: Debug Web Applications | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-ide-debug" ms.tgt_pltfrm: "" ms.topic: "article" dev_langs: 
   - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ASP.NET Web Form, 偵錯"
-  - "ASP.NET, 偵錯 Web 應用程式"
-  - "偵錯 ASP.NET Web 應用程式, 開發期間"
-  - "Web 服務, 偵錯"
-ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+  - "VB"
+  - "FSharp"
+  - "C++" helpviewer_keywords: 
+  - "Web services, debugging"
+  - "ASP.NET Web Forms, debugging"
+  - "ASP.NET, debugging Web applications"
+  - "debugging ASP.NET Web applications, during development" ms.assetid: 6440d12e-6b29-42c5-a958-99aeaaff480f caps.latest.revision: 37 author: "mikejo5000" ms.author: "mikejo" manager: "ghogen" translation.priority.ht: 
+  - "cs-cz"
+  - "de-de"
+  - "es-es"
+  - "fr-fr"
+  - "it-it"
+  - "ja-jp"
+  - "ko-kr"
+  - "pl-pl"
+  - "pt-br"
+  - "ru-ru"
+  - "tr-tr"
+  - "zh-cn"
+  - "zh-tw"
 ---
-# 如何：偵錯 Web 應用程式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 是在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開發 Web 應用程式的主要技術。  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具提供在本機環境或遠端伺服器上，偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式所用的強大工具。  本主題說明如何在開發期間偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 專案。  如需如何對已部署在實際執行伺服器 \(Production Server\) 上的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式進行偵錯的詳細資訊，請參閱[偵錯已部署的 Web 應用程式](../debugger/debugging-deployed-web-applications.md)。  
+# <a name="how-to-debug-web-applications"></a>How to: Debug Web Applications
+[!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] is the primary technology for developing Web applications in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. The [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] debugger provides powerful tools for debugging [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web applications locally or on a remote server. This topic describes how to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] project during development. For information about how to debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application already deployed on a production server, see [Debugging Deployed Web Applications](../debugger/debugging-deployed-web-applications.md).  
   
- 若要偵錯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式：  
+ To debug a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application:  
   
--   您必須具有必要的使用權限。  如需詳細資訊，請參閱 [系統需求](../debugger/aspnet-debugging-system-requirements.md)。  
+-   You must have required permissions. For more information, see [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 偵錯必須在 \[**專案屬性**\] 中啟用。  
+-   [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] debugging must be enabled in **Project Properties**.  
   
--   應用程式的組態檔 \(Web.config\) 必須設為偵錯模式。  偵錯模式會導致 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 產生動態產生之檔案的符號，並使偵錯工具附加到 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式。  如果您已從 Web 專案範本建立專案，則 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會在開始偵錯時自動設定這個項目。  
+-   The configuration file of your application (Web.config) must be set to debug mode. Debug mode causes [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] to generate symbols for dynamically generated files and enables the debugger to attach to the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sets this automatically when you start to debug, if you created your project from the Web projects template.  
   
--   如需詳細資訊，請參閱 [如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)。  
+-   For more information, see [How to: Enable Debugging for ASP.NET Applications](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
-### 若要在開發期間偵錯 Web 應用程式  
+### <a name="to-debug-a-web-application-during-development"></a>To debug a Web application during development  
   
-1.  按一下 \[**偵錯**\] 功能表上的 \[**啟動**\]，開始偵錯 Web 應用程式。  
+1.  On the **Debug** menu, click **Start** to begin debugging the Web application.  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會建置 Web 應用程式專案、視需要部署應用程式、如果您在本機偵錯，則會啟動 ASP.NET 程式開發伺服器，以及附加至 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] builds the Web application project, deploys the application if necessary, starts the ASP.NET Development Server if you are debugging locally, and attaches to the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process.  
   
-2.  使用偵錯工具來設定和清除中斷點、逐步執行和執行其他偵錯作業，就和您使用任何應用程式一樣。  
+2.  Use the Debugger to set and clear breakpoints, step, and perform other debugging operations, as you would for any application.  
   
-     如需詳細資訊，請參閱[偵錯工具基礎](../debugger/debugger-basics.md)。  
+     For more information, see [Debugger Basics](../debugger/debugger-basics.md).  
   
-3.  在 \[**偵錯**\] 功能表上按一下 \[**停止偵錯**\] 以結束偵錯工作階段，或是在 Internet Explorer 的 \[**檔案**\] 功能表上按一下 \[**關閉**\]。  
+3.  On the **Debug** menu, click **Stop Debugging** to end the debugging session or on the **File** menu in Internet Explorer, click **Close**.  
   
-## 請參閱  
- [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)   
- [偵錯 ASP.NET 和 AJAX 應用程式](../debugger/debugging-aspnet-and-ajax-applications.md)   
- [如何：啟用 ASP.NET 應用程式的偵錯](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
+## <a name="see-also"></a>See Also  
+ [Debugging Web Applications and Script](../debugger/debugging-web-applications-and-script.md)   
+ [Debugging ASP.NET and AJAX Applications](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [How to: Enable Debugging for ASP.NET Applications](../debugger/how-to-enable-debugging-for-aspnet-applications.md)

@@ -1,56 +1,73 @@
 ---
-title: "嘗試聯繫遠端電腦時，發生 DCOM 錯誤。存取遭拒。 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.remote.dcom_access_denied"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "DCOM, 存取錯誤"
-  - "遠端 DCOM 拒絕存取錯誤"
-  - "遠端偵錯, DCOM 錯誤"
+title: A DCOM error occurred trying to contact the remote computer. Access is denied. | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.remote.dcom_access_denied
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- remote debugging, DCOM error
+- remote DCOM access denied error
+- DCOM, access errors
 ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 caps.latest.revision: 27
-caps.handback.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 嘗試聯繫遠端電腦時，發生 DCOM 錯誤。存取遭拒。
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: cc8adff7c0c5d7e1595f59c6571a5670c9f7163f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：  
+---
+# <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>A DCOM error occurred trying to contact the remote computer. Access is denied.
+Remote debugging uses DCOM to communicate between the local and remote computers in the following situations:  
   
--   偵錯工具已設定為 \[原生相容性模式\]，或是在 \[工具\]\/\[選項\]\/\[偵錯\] 頁面中核取了 \[Managed 相容性模式\]。  
+-   The debugger is set to **Native Compatibility Mode** or **Managed Compatibility Mode** is checked in the **Tools > Options > Debugging** page  
   
--   您正在偵錯 Managed C\+\+ \(C\+\+\/CLI\) 程式碼。  
+-   You are debugging managed C++ (C++/CLI) code.  
   
--   在 Visual Studio 2013 中，於 \[工具\]\/\[選項\]\/\[偵錯\] 頁面中核取了 \[啟用原生編輯後繼續\] 時。  
+-   In Visual Studio 2013, when **Enable native Edit and Continue** is checked in the **Tools > Options > Debugging** page  
   
--   某些協力廠商偵錯情節  
+-   Some third party debugging scenarios  
   
- Visual Studio 處理序無法透過 DCOM 對遠端偵錯工具處理序進行自我驗證 \(或認為提供的認證不足\) 時，就會發生這個錯誤。 下列其中一種或多種解決方案可能可以解決此問題：  
+ This error occurs when the Visual Studio process cannot authenticate itself (or the supplied credentials were deemed insufficient) to the remote debugger process over DCOM. One or more of the following workarounds might resolve the issue:  
   
--   關閉 \[原生相容性模式\] 和 \[Managed 相容性模式\]。  
+-   Turn off  **Native Compatibility Mode** and **Managed Compatibility Mode**.  
   
--   在 Visual Studio 2013 中，關閉 \[啟用原生編輯後繼續\]。  
+-   In Visual Studio 2013, turn off **Enable native Edit and Continue**.  
   
--   將兩部電腦重新開機。  
+-   Reboot both computers.  
   
--   如果遠端偵錯要求輸入認證，請核取這個選項儲存認證。  
+-   If remote debugging requires entering credentials, check the option to save the credentials.  
   
-## 請參閱  
- [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging Errors and Troubleshooting](../debugger/remote-debugging-errors-and-troubleshooting.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

@@ -1,61 +1,81 @@
 ---
-title: "遠端偵錯工具連接埠指派 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Remote Debugger Port Assignments | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# 遠端偵錯工具連接埠指派
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 1208ccaea240a05795659348e55c5497c75b195d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-Visual Studio 遠端偵錯工具可以應用程式或背景服務的形式執行。 當以應用程式的形式執行時，它會使用預設指派的連接埠，如下所示：  
+---
+# <a name="remote-debugger-port-assignments"></a>Remote Debugger Port Assignments
+The Visual Studio Remote Debugger can run as an application or as a background service. When it runs as an application, it uses a port that is assigned by default as follows:  
+
+-   Visual Studio 2017: 4022
+
+-   Visual Studio 2015: 4020  
   
--   Visual Studio 2015：4020  
+-   Visual Studio 2013: 4018  
   
--   Visual Studio 2013：4018  
+-   Visual Studio 2012: 4016  
   
--   Visual Studio 2012：4016  
+ In other words, the number of the port assigned to the remote debugger is incremented by 2 for each release. You can set a different port number of you like. We will explain how to set port numbers in a later section.  
   
- 換句話說，指派給遠端偵錯工具的連接埠號碼會隨著每個版本遞增 2。 您可以設定您要的不同連接埠號碼。 我們將在稍後的章節中說明如何設定連接埠號碼。  
+## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>The Remote Debugger Port on 32-bit Operating Systems  
+ TCP 4022 (in Visual Studio 2017) is the main port, and is required for all scenarios. You can configure this from either the command line or the remote debugger window.  
   
-## 32 位元作業系統上的遠端偵錯工具連接埠  
- \(在 Visual Studio 2015 中\) TCP 4020 是主要的連接埠，在所有情況下都需要。 您可以從命令列或遠端偵錯工具視窗來進行此設定。  
+ In the remote debugger window, click **Tools > Options**, and set the TCP/IP port number.  
   
- 在遠端偵錯工具視窗中，按一下 \[工具\] \/ \[選項\]，然後設定 TCP\/IP 通訊埠編號。  
+ On the command line, start the remote debugger with the **/port** switch: **msvsmon /port \<port number>**.  
   
- 在命令列上，使用 **\/port** 參數啟動遠端偵錯工具：**msvsmon \/port \<連接埠號碼\>**。  
+ You can find all the remote debugger command line switches in the remote debugging help (press **F1** or click **Help > Usage** in the remote debugger window).  
   
- 您可以在遠端偵錯說明中找到所有遠端偵錯工具命令列參數 \(在遠端偵錯工具視窗中按 **F1** 或按一下 \[說明\] \/ \[用法\]\)。  
+## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>The Remote Debugger Port on 64-bit Operating Systems  
+ When the 64-bit version of the remote debugger is started, it uses the 4022 port by default.  If you debug a 32-bit process, the 64-bit version of the remote debugger starts a 32-bit version of the remote debugger on port 4023. If you run the 32-bit remote debugger, it uses 4022, and 4023 is not used.  
   
-## 64 位元作業系統上的遠端偵錯工具連接埠  
- 當啟動 64 位元版本的遠端偵錯工具時，它預設會使用 4020 連接埠。  如果您偵錯 32 位元處理序，64 位元版本的遠端偵錯工具會在連接埠 4021 啟動遠端偵錯工具的 32 位元版本。 如果您執行 32 位元遠端偵錯工具，它會使用 4020，而不會使用 4021。  
+ This port is configurable from the command line: **Msvsmon /wow64port \<port number>**.  
   
- 此連接埠可從命令列設定：**Msvsmon \/wow64port \<連接埠號碼\>**。  
+## <a name="the-discovery-port"></a>The Discovery Port  
+ UDP 3702 is used for finding running instances of the remote debugger on the network (for example, the **Find** dialog in the **Attach to Process** dialog). It is used only for discovering a machine running the remote debugger, so it is  optional if you have some other way of knowing the machine name or IP address of the target computer. This is a standard port for discovery, so the port number cannot be configured.  
   
-## 探索連接埠  
- UDP 3702 用於在網路上搜尋遠端偵錯工具的執行個體 \(例如 \[附加至處理序\] 對話方塊中的 \[尋找\] 對話方塊\)。 它只適用於探索執行遠端偵錯工具的機器，因此如果您有其他方式得知目標電腦的機器名稱或 IP 位址，它是選擇性的。 這是探索的標準連接埠，因此不能設定連接埠號碼。  
+ If you do not want to enable discovery, you can start msvsmon from the command line with discovery disabled:  **Msvsmon /nodiscovery**.  
   
- 如果您不想啟用探索，可以從命令列啟動 msvsmon 並停用探索：**Msvsmon \/nodiscovery**。  
-  
-## Azure 上的遠端偵錯工具連接埠  
- Azure 上的遠端偵錯工具會使用下列連接埠。 雲端服務上的連接埠會對應至個別 VM 上的連接埠。 所有連接埠都是 TCP。  
+## <a name="remote-debugger-ports-on-azure"></a>Remote Debugger Ports on Azure  
+ The following ports are used by the remote debugger on Azure. The ports on the cloud service are mapped to the ports on the individual VM. All ports are TCP.  
   
 ||||  
 |-|-|-|  
-|**連線**|**雲端服務上的連接埠**|**VM 上的連接埠**|  
+|**Connection**|**Port on Cloud Service**|**Port on VM**|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|  
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|  
   
-## 請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)
