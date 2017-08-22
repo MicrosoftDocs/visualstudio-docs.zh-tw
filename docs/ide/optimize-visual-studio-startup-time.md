@@ -18,15 +18,17 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: 3037d92e9de377ab4b306a5a0e164e29fa6659e7
-ms.openlocfilehash: 5448253ae93b82a2631e6c48495a31d2724ed0b7
+ms.sourcegitcommit: fe6d864baf518cba882cea8e985fdacbfdf5b8b2
+ms.openlocfilehash: f4e915655ffe11f28c071864cb2cbd68dc799881
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
 # <a name="optimize-visual-studio-startup-time"></a>最佳化 Visual Studio 啟動時間
 在理想情況下，Visual Studio 應該一律盡快啟動。 不過，Visual Studio 延伸模組和開啟工具視窗是在啟動時自動載入，因此可能會嚴重影響啟動時間。 [管理 Visual Studio 效能] 視窗可讓您查看影響 Visual Studio 啟動時間的擴充與功能，並控制這些擴充與功能的載入行為。
+
+如需提升效能的一般提示，請參閱 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。
 
 ## <a name="control-startup-behavior"></a>控制啟動行為
 
@@ -98,4 +100,7 @@ Visual Studio 2017 支援「輕量型方案載入」，可減少在 IDE 中載�
 - 啟用輕量型方案載入時，有些協力廠商擴充功能的行為可能不如預期。
 - 在您開始偵錯時未載入的專案中無法使用 [編輯後繼續]。 這類專案中包含的檔案會是唯讀檔案。如果嘗試編輯，將會回報錯誤，指出尚未載入專案。
 - 在啟用輕量型解決方案負載時，F# 專案可能無法正確建置，且符號在「移至」中可能不會完全可用。
+
+## <a name="see-also"></a>另請參閱
+[Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
 

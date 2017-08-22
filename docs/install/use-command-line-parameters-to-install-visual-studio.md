@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 90e19f6e693733162065754b441fb213fd0bd9f8
+ms.sourcegitcommit: 223750aef8d997c6ae017f49ea0a9522bdba72bc
+ms.openlocfilehash: 2b702407996fd104b62d9b8c6874d7914d7bd2e8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
@@ -95,7 +95,6 @@ ms.lasthandoff: 07/18/2017
 | `--includeRecommended` | **選擇性**︰包含所安裝之任何工作負載的建議元件，但不包含選擇性元件。 使用 `--allWorkloads` 或 `--add` 指定工作負載。 |
 | `--includeOptional` | **選擇性**︰包含配置中所包含之任何工作負載的建議和選擇性元件。 使用 `--add` 指定工作負載。  |
 
-
 | **進階安裝選項** | **說明** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：將安裝之執行個體的通道識別碼。 這對安裝命令是必要的，對其他指定了 `--installPath` 的命令則會予以略過。 |
@@ -107,6 +106,7 @@ ms.lasthandoff: 07/18/2017
 | `--locale <language-locale>` | **選擇性**︰變更安裝程式本身的使用者介面顯示語言。 設定將會予以保留。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
 | `--cache` | **15.2 的新功能，選擇性**︰如果存在，套件將會在安裝之後加以保留，以利後續修復。 這將會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
 | `--nocache` | **15.2 的新功能，選擇性**︰如果存在，套件將會在安裝或修復之後刪除。 只有在需要時才會再次下載它們，並於使用過後再次刪除。 這將會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
+| `--noUpdateInstaller` | **15.2 的新功能，選擇性**︰如果存在，則在指定無訊息時會防止安裝程式更新它自己。 如果在需要安裝程式更新時指定具有無訊息的 noUpdateInstaller，則安裝程式會讓命令失敗，並傳回非零結束代碼。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作負載識別碼和元件識別碼清單
 如需依 Visual Studio 產品排序的工作負載和元件識別碼清單，請參閱 [Visual Studio 2017 工作負載和元件識別碼](workload-and-component-ids.md)頁面。
