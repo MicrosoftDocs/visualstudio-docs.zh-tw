@@ -1,43 +1,43 @@
 ---
-title: "Visual Studio for Mac 工作負載"
+title: Visual Studio for Mac Workloads
 author: asb3993
 ms.author: amburns
 ms.date: 08/03/2017
 ms.topic: article
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 281e1bba246a2c9663b0ec4a339144202d0eb8db
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 8870c8fa0a521ed5ac6e31aa0465f1dbe8578f63
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 08/23/2017
 
 ---
 
-# <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac 工作負載
+# <a name="visual-studio-for-mac-workloads"></a>Visual Studio for Mac Workloads
 
-Visual Studio for Mac 已預先安裝下列項目的工作負載：
+Visual Studio for Mac comes pre-installed with workloads for the following:
 
-* 使用 .NET 的跨平台行動應用程式：Android、iOS、tvOS、watchOS
-* Mac 桌面應用程式
-* .NET Core 應用程式
-* ASP.NET Core Web 應用程式
-* 跨平台 Unity 遊戲
+* Cross-Platform Mobile apps with .NET: Android, iOS, tvOS, watchOS
+* Mac desktop apps
+* .NET Core applications
+* ASP.NET Core Web applications
+* Cross-platform Unity games
 
 ## <a name="xamarin"></a>Xamarin
 
-Xamarin 可讓您使用 .NET for Android、iOS、tvOS、watchOS 和 Mac 桌面應用程式建立跨平台行動應用程式。
+Xamarin allows you to create cross-platform Mobile apps with .NET for Android, iOS, tvOS, watchOS, and Mac desktop apps.
 
-如需在 Visual Studio for Mac 中使用 Xamarin 的資訊，請參閱 [Xamarin Developer Center](https://developer.xamarin.com/)，並參閱行動應用程式[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started)。
+For information on using Xamarin in Visual Studio for Mac, refer to the [Xamarin Developer Center](https://developer.xamarin.com/) and check out the Mobile apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
 
-## <a name="net-core-applications"></a>.NET Core 應用程式
+## <a name="net-core-applications"></a>.NET Core applications
 
-如需使用 .NET Core 的詳細資訊，請參閱[文件](https://docs.microsoft.com/en-us/dotnet/core/)。
+For more information on using .NET Core, refer to the [documentation](https://docs.microsoft.com/en-us/dotnet/core/).
 
-## <a name="aspnet-core-web-applications"></a>ASP.NET Core Web 應用程式
+## <a name="aspnet-core-web-applications"></a>ASP.NET Core Web Applications
 
-如需在 Visual Studio for Mac 中開始使用 AST.NET Core 的資訊，請參閱[開始使用 ASP.NET Core](~/asp-net-core.md) 指南，或參閱 ASP.NET Core Web 應用程式[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
+For information on getting started using ASP.NET Core in Visual Studio for Mac, refer to the [Getting Started with ASP.NET Core](~/asp-net-core.md) guide or check out the ASP.NET Core web apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
-## <a name="cross-platform-unity-game-development"></a>跨平台 Unity 遊戲開發
+## <a name="cross-platform-unity-game-development"></a>Cross-platform Unity Game Development
 
-若要開始使用 Unity 建置遊戲，請參閱[安裝頁面](~/setup-vsmac-tools-unity.md)和[使用 Unity Tools 指南](~/using-vsmac-tools-unity.md)，或參閱 Unity [實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)。
+To start building games with Unity, see the [Setup page](~/setup-vsmac-tools-unity.md) and the [guide to using Unity Tools](~/using-vsmac-tools-unity.md), or check out the Unity [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).
 
