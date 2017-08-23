@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 8663c848e5a6988c20e2d1c020bf99a368e82b60
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: f681301201a4f39e0ad83c6724e0b38d82653b84
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/23/2017
 
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspect Variables in the Autos and Locals Windows in Visual Studio
@@ -122,7 +122,7 @@ private static int subtractVars(int i, int j)
 }  
 ```
 
- Set a breakpoint on the int `x = sumVars(a, b) + subtractVars(c, d);` line.  
+ Set a breakpoint on the `int x = sumVars(a, b) + subtractVars(c, d);` line.  
   
  Start debugging, and when execution breaks at the first breakpoint, press **F10 (Step Over)**. You should see the following in the **Autos** window:  
   
@@ -156,3 +156,4 @@ You can use the **Debug Location** toolbar to select the desired function, threa
   
 ## <a name="see-also"></a>See Also  
  [Debugger Windows](../debugger/debugger-windows.md)
+
