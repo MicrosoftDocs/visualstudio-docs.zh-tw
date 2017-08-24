@@ -17,10 +17,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: b01caada54c08bb7f9c9baabfe9ece486e087794
-ms.openlocfilehash: 190a5e183757a5f02eeeb4aca7fc1c2e7f1beb1c
+ms.sourcegitcommit: 1e85a41fea58723b8f7f2119d0d0c951574c4f9c
+ms.openlocfilehash: f0fb1e91107017fd25e44f524550b0eef1732865
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/15/2017
 
 ---
 
@@ -45,6 +45,14 @@ Visual Studio 是我們提供給開發人員的整合式生產力工具套件，
      ![修改 Visual Studio 2017；將產品解除安裝](media/vs2017-uninstall-confirm.PNG "確認將 Visual Studio 2017 解除安裝")  
 
 如果您稍後改變心意而想要重新安裝 Visual Studio 2017，請重新啟動 Visual Studio 安裝程式，然後從選擇畫面中選取 [安裝]。
+
+## <a name="uninstall-visual-studio-installer"></a>解除安裝 Visual Studio 安裝程式
+若要從電腦完全移除 Visual Studio 2017 和 Visual Studio 安裝程式，請從 [應用程式與功能] 進行解除安裝。
+1. 開啟 [應用程式與功能]。 例如，在 Windows 10 中，選取 [開始]，然後在搜尋列中鍵入**應用程式與功能**。  
+2. 尋找 [Microsoft Visual Studio 2017]。  
+3. 按一下 [解除安裝] 。  
+
+這會移除電腦上的所有 Visual Studio 2017 安裝以及 Visual Studio 安裝程式。
 
 ## <a name="see-also"></a>請參閱  
 * [安裝 Visual Studio](install-visual-studio.md)

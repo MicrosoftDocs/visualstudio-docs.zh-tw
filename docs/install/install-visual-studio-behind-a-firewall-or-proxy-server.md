@@ -2,7 +2,7 @@
 title: "將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方 | Microsoft Docs"
 description: 
 ms.custom: 
-ms.date: 07/18/2017
+ms.date: 08/01/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
@@ -20,10 +20,10 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ddbbda1069749e2ce685507d55a070f1dec27c17
-ms.openlocfilehash: 48fd143f917d6e13c18f6913bea625b2e8cf5ce8
+ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
+ms.openlocfilehash: 0803ea25bd8f45d79d618ff481094fb5786b1acb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/19/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="install-visual-studio-behind-a-firewall-or-proxy-server"></a>將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方
@@ -43,8 +43,13 @@ Visual Studio 安裝程式會從各種不同的網域及其下載伺服器下載
 | dl.xamarin.com | 安裝套件下載位置 |
 | visualstudiogallery.msdn.microsoft.com | Visual Studio 延伸模組下載位置 |
 | www.visualstudio.com | 文件位置 |
+| docs.microsoft.com | 文件位置 |
 | msdn.microsoft.com | 文件位置 |
 | www.microsoft.com | 文件位置 |
+| * windows.net | 登入位置 |
+| *.microsoftonline.com | 登入位置 |
+| *.live.com | 登入位置 |
+
 
 ## <a name="non-microsoft-domains"></a>非 Microsoft 網域
 | Domain | 安裝這些工作負載 |
