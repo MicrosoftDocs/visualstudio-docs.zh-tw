@@ -1,51 +1,68 @@
 ---
-title: "IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::GetExceptionDescription"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::GetExceptionDescription"
+title: IDebugExceptionEvent2::GetExceptionDescription | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugExceptionEvent2::GetExceptionDescription
+helpviewer_keywords:
+- IDebugExceptionEvent2::GetExceptionDescription
 ms.assetid: d07d458f-5729-47e4-9b77-1bd59c61a75a
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugExceptionEvent2::GetExceptionDescription
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f407f4a50d02217791891b9828fc8b893501f2d7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-取得可顯示例外狀況的描述。  
+---
+# <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
+Gets a displayable description of the exception.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetExceptionDescription(   
-   BSTR* pbstrDescription  
+HRESULT GetExceptionDescription(   
+   BSTR* pbstrDescription  
 );  
 ```  
   
-```c#  
-int GetExceptionDescription(   
-   out string pbstrDescription  
+```cs  
+int GetExceptionDescription(   
+   out string pbstrDescription  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pbstrDescription`  
- \[\] out傳回可顯示例外狀況的描述。  
+ [out] Returns a displayable description of the exception.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 從這個方法傳回的字串通常是例外的名稱，也會顯示在**輸出**例外狀況發生時的視窗。  
+## <a name="remarks"></a>Remarks  
+ The string returned from this method is typically the name of the exception and is shown in the **Output** window when the exception occurs.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

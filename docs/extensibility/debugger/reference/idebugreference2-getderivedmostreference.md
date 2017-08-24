@@ -1,5 +1,5 @@
 ---
-title: "IDebugReference2::GetDerivedMostReference |Microsoft 文件"
+title: IDebugReference2::GetDerivedMostReference | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1cb281e93eb462de607f83a4e1d2d72785cef9a2
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2a005497beb987aa6818ebe4d67fbb3b94348401
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
-取得參考的最具衍生性的參考。 保留供未來使用。  
+Gets the derived-most reference of a reference. Reserved for future use.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetDerivedMostReference(   
@@ -47,21 +48,21 @@ HRESULT GetDerivedMostReference(
 );  
 ```  
   
-```c#  
+```cs  
 int GetDerivedMostReference(   
    out IDebugReference2 ppDerivedMost  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ppDerivedMost`  
- [out]傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，表示最具衍生性的屬性。  
+ [out] Returns an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object that represents the derived-most property.  
   
-## <a name="return-value"></a>傳回值  
- 一律傳回 `E_NOTIMPL`。  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## <a name="remarks"></a>備註  
- 例如，如果這個屬性會描述該物件會實作`ClassRoot`，但這是實際的執行個體化`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)代表參考物件`ClassDerived`物件。  
+## <a name="remarks"></a>Remarks  
+ For example, if this property describes an object that implements `ClassRoot` but which is actually an instantiation of `ClassDerived` that is derived from `ClassRoot`, then this method returns an [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) object representing a reference to the `ClassDerived` object.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

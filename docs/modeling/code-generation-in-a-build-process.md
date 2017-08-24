@@ -1,5 +1,5 @@
 ---
-title: "程式碼產生的建置流程中 |Microsoft 文件"
+title: Code Generation in a Build Process | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,25 +28,26 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: c7818b61eeb863948fcdb6e221c614461dd69e9e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 1342b78ad28e821c9d792e99c494fafa05a415e4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="code-generation-in-a-build-process"></a>建置流程中的程式碼產生
-[文字轉換](../modeling/code-generation-and-t4-text-templates.md)可以叫用的一部分[建置程序](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案。 有的建置工作會針對文字轉換進行特製化。 T4 建置工作會執行設計階段的文字範本，也會編譯執行階段 (前置處理過後) 的文字範本。  
+# <a name="code-generation-in-a-build-process"></a>Code Generation in a Build Process
+[Text transformation](../modeling/code-generation-and-t4-text-templates.md) can be invoked as part of the [build process](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692) of a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution. There are build tasks that are specialized for text transformation. The T4 build tasks run design-time text templates, and they also compile run-time (preprocessed) text templates.  
   
- 根據不同的建置引擎，建置工作可執行的動作會有些差異。 如果當您建置方案在 Visual Studio 中的時，文字範本可以存取 Visual Studio API (EnvDTE) [hostspecific ="true"](../modeling/t4-template-directive.md)屬性設定。 但在您從命令列建置方案或透過 Visual Studio 啟始伺服器組建時，這並不正確。 在這些情況下，會由 MSBuild 執行組建，並會使用不同的 T4 主機。  
+ There are some differences in what the build tasks can do, depending on which build engine you use. When you build the solution in Visual Studio, a text template can access the Visual Studio API (EnvDTE) if the [hostspecific="true"](../modeling/t4-template-directive.md) attribute is set. But that isn't true when you build the solution from the command line or when you initiate a server build through Visual Studio. In those cases, the build is performed by MSBuild and a different T4 host is used.  
   
- 這表示在 MSBuild 中建置文字範本時，您無法以相同方式來存取如專案檔名之類的項目。 不過，您可以[使用組建參數傳遞至文字範本和指示詞處理器的環境資訊](#parameters)。  
+ This means that you can't access things like project file names in the same way when you build a text template in MSBuild. However, you can [pass environment information into text templates and directive processors by using build parameters](#parameters).  
   
-##  <a name="a-namebuildservera-configure-your-machines"></a><a name="buildserver"></a>設定您的電腦  
- 若要啟用建置工作，在開發電腦上的，安裝 Visual Studio Modeling SDK。
+##  <a name="buildserver"></a> Configure your machines  
+ To enable build tasks on your development computer, install Modeling SDK for Visual Studio.
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
- 如果[組建伺服器](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9)所在的電腦上執行[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]是未安裝，請從下列檔案複製到組建電腦開發電腦。 將 '*' 替代為最新版本號碼。  
+ If [your build server](http://msdn.microsoft.com/Library/788443c3-0547-452e-959c-4805573813a9) runs on a computer on which [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] is not installed, copy the following files to the build computer from your development machine. Substitute the most recent version numbers for '*'.  
   
 -   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating  
   
@@ -60,7 +61,7 @@ ms.lasthandoff: 02/22/2017
   
     -   Microsoft.VisualStudio.TextTemplating.*.0.dll  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (數個檔案)  
+    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (several files)  
   
     -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll  
   
@@ -68,28 +69,28 @@ ms.lasthandoff: 02/22/2017
   
     -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll  
   
-## <a name="to-edit-the-project-file"></a>若要編輯專案檔  
- 您必須編輯專案檔，才能設定 MSBuild 中的部分功能。  
+## <a name="to-edit-the-project-file"></a>To edit the project file  
+ You'll have to edit your project file to configure some of the features in MSBuild.  
   
- 在 方案總管 中，選擇 **卸載**從您的專案內容功能表。 如此可讓您在 XML 編輯器中編輯 .csproj 或 .vbproj 檔案。  
+ In solution explorer, choose **Unload** from the context menu of your project. That allows you to edit the .csproj or .vbproj file in the XML editor.  
   
- 當您完成編輯時，請選擇**重新載入**。  
+ When you've finished editing, choose **Reload**.  
   
-## <a name="import-the-text-transformation-targets"></a>匯入文字轉換目標  
- 在 .vbproj 或 .csproj 檔案中，尋找如下所列的程式行：  
+## <a name="import-the-text-transformation-targets"></a>Import the Text Transformation Targets  
+ In the .vbproj or .csproj file, find a line like this:  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`  
   
- \-或-  
+ \- or -  
   
  `<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`  
   
- 在那一行之後，插入文字範本化匯入：  
+ After that line, insert the Text Templating import:  
   
 ```xml  
 <!-- Optionally make the import portable across VS versions -->  
   <PropertyGroup>  
-    <!-- Get the Visual Studio version – defaults to 10: -->  
+    <!-- Get the Visual Studio version - defaults to 10: -->  
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>  
     <!-- Keep the next element all on one line: -->  
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>  
@@ -99,10 +100,10 @@ ms.lasthandoff: 02/22/2017
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" />  
 ```  
   
-## <a name="transforming-templates-in-a-build"></a>在組建中轉換範本  
- 其中具有可輸入至專案檔以控制轉換工作的一些屬性：  
+## <a name="transforming-templates-in-a-build"></a>Transforming templates in a build  
+ There are some properties that you can insert into your project file to control the transformation task:  
   
--   在每個組建的開始處執行轉換工作：  
+-   Run the Transform task at the start of every build:  
   
     ```xml  
     <PropertyGroup>  
@@ -110,7 +111,7 @@ ms.lasthandoff: 02/22/2017
     </PropertyGroup>  
     ```  
   
--   覆寫唯讀的檔案，因為它們未被簽出：  
+-   Overwrite files that are read-only, for example because they are not checked out:  
   
     ```xml  
     <PropertyGroup>  
@@ -118,7 +119,7 @@ ms.lasthandoff: 02/22/2017
     </PropertyGroup>  
     ```  
   
--   每次轉換每一個範本：  
+-   Transform every template every time:  
   
     ```xml  
     <PropertyGroup>  
@@ -126,31 +127,31 @@ ms.lasthandoff: 02/22/2017
     </PropertyGroup>  
     ```  
   
-     根據預設，如果範本檔、包含的檔案，或是所有之前已由範本、所使用指示詞處理器讀取的檔案的建立時間較晚，T4 MSBuild 工作會重新產生輸出檔。 請注意，在只比較範本和輸出檔案的日期的情況下，此相依性測試將比在 Visual Studio 中的 Transform All Templates 命令來得更為強大。  
+     By default, the T4 MSBuild task regenerates an output file if it is older than its template file, or any files that are included, or any files that have previously been read by the template or by a directive processor that it uses. Notice that this is a much more powerful dependency test than is used by the Transform All Templates command in Visual Studio, which only compares the dates of the template and output file.  
   
- 若在專案中僅執行文字轉換，請叫用 TransformAll 工作：  
+ To perform just the text transformations in your project, invoke the TransformAll task:  
   
  `msbuild myProject.csproj /t:TransformAll`  
   
- 轉換特定文字範本：  
+ To transform a specific text template:  
   
  `msbuild myProject.csproj /t:Transform /p:TransformFile="Template1.tt"`  
   
- 您可以在 TransformFile 中使用萬用字元：  
+ You can use wildcards in TransformFile:  
   
  `msbuild dsl.csproj /t:Transform /p:TransformFile="GeneratedCode\**\*.tt"`  
   
-## <a name="source-control"></a>原始檔控制  
- 與原始檔控制系統的特定內建整合並未提供。 不過，您可以加入自己的擴充功能，例如簽出和簽入產生的檔案。根據預設，文字轉換工作會避免覆寫標記為唯讀的檔案，因此，當遇到這類型檔案時，會將錯誤記錄至 Visual Studio 的錯誤清單，並中斷工作。  
+## <a name="source-control"></a>Source Control  
+ There is no specific built-in integration with a source control system. However, you can add your own extensions, for example to check out and check in a generated file.By default, the text transform task avoids overwriting a file that is marked as read- only, and when such a file is encountered, an error is logged in the Visual Studio error list, and the task fails.  
   
- 若要指定必須覆寫唯讀檔案，請插入以下屬性：  
+ To specify that read-only files should be overwritten, insert this property:  
   
  `<OverwriteReadOnlyOuputFiles>true</OverwriteReadOnlyOuputFiles>`  
   
- 除非您自訂後置處理步驟，否則覆寫檔案時就會將警告記錄於錯誤清單中。  
+ Unless you customize the postprocessing step, a warning will be logged in the error list when a file is overwritten.  
   
-## <a name="customizing-the-build-process"></a>自訂建置流程  
- 文字轉換會在建置程序的其他工作之前運作。 藉由設定 `$(BeforeTransform)` 和 `$(AfterTransform)` 屬性，您可以定義轉換之前和之後叫用的工作：  
+## <a name="customizing-the-build-process"></a>Customizing the build process  
+ Text transformation happens before other tasks in the build process. You can define tasks that are invoked before and after transformation, by setting the properties `$(BeforeTransform)` and `$(AfterTransform)`:  
   
 ```  
 <PropertyGroup>  
@@ -165,16 +166,16 @@ ms.lasthandoff: 02/22/2017
   </Target>  
 ```  
   
- 在 `AfterTransform` 中，您可以參考檔案清單：  
+ In `AfterTransform`, you can reference lists of files:  
   
--   GeneratedFiles：流程所寫入之檔案的清單。 對於已覆寫現有唯讀檔的檔案而言，%(GeneratedFiles.ReadOnlyFileOverwritten) 將會是 true。 您可以從原始檔控制中簽出這些檔案。  
+-   GeneratedFiles - a list of files written by the process. For those files that overwrote existing read-only files, %(GeneratedFiles.ReadOnlyFileOverwritten) will be true. These files can be checked out of source control.  
   
--   NonGeneratedFiles：不會遭到覆寫之唯讀檔案的清單。  
+-   NonGeneratedFiles - a list of read-only files that were not overwritten.  
   
- 例如，您可以定義工作以檢查 GeneratedFiles。  
+ For example, you define a task to check out GeneratedFiles.  
   
-## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath 和 OutputFileName  
- 這些屬性只能由 MSBuild 使用。 它們並不會影響在 Visual Studio 中產生的程式碼。 它們會將產生的輸出檔重新導向至不同資料夾或檔案。 目標資料夾必須已經存在。  
+## <a name="outputfilepath-and-outputfilename"></a>OutputFilePath and OutputFileName  
+ These properties are used only by MSBuild. They do not affect code generation in Visual Studio. They redirect the generated output file to a different folder or file. The target folder must already exist.  
   
 ```xml  
 <ItemGroup>  
@@ -186,9 +187,9 @@ ms.lasthandoff: 02/22/2017
 </ItemGroup>  
 ```  
   
- 一個可用於重新導向的資料夾為 `$(IntermediateOutputPath).`  
+ A useful folder to redirect to is `$(IntermediateOutputPath).`  
   
- 如果您指定輸出檔名，則會優先於範本中輸出指示詞指定的副檔名。  
+ If you specify and output filename, it will take precedence over the extension specified in the output directive in the templates.  
   
 ```xml  
 <ItemGroup>  
@@ -200,10 +201,10 @@ ms.lasthandoff: 02/22/2017
 </ItemGroup>  
 ```  
   
- 在 VS 中，同時使用 [轉換所有範本] 或執行單一檔案產生器時，不建議指定 OutputFileName 和 OutputFilePath。 根據觸發轉換的方法，最後將會產生不同的檔案路徑。 這很容易混淆。  
+ Specifying an OutputFileName or OutputFilePath isn't recommended if you are also transforming templates inside VS using Transform All, or running the single file generator. You will end up with different file paths depending on how you triggered the transformation. This can be very confusing.  
   
-## <a name="adding-reference-and-include-paths"></a>加入參考和包含路徑  
- 主機具有搜尋範本中所參考組件的預設路徑集合。 加入至這個集合：  
+## <a name="adding-reference-and-include-paths"></a>Adding reference and include paths  
+ The host has a default set of paths where it searches for assemblies referenced in templates. To add to this set:  
   
 ```  
 <ItemGroup>  
@@ -212,7 +213,7 @@ ms.lasthandoff: 02/22/2017
 </ItemGroup>  
 ```  
   
- 若要設定搜尋包含檔案的資料夾，請提供以分號分隔的清單。 通常會加入至現有的資料夾清單。  
+ To set the folders that will be searched for include files, provide a semicolon-separated list. Usually you add to the existing folder list.  
   
 ```  
 <PropertyGroup>  
@@ -222,8 +223,8 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
   
 ```  
   
-##  <a name="a-nameparametersa-pass-build-context-data-into-the-templates"></a><a name="parameters"></a>將建置內容資料傳入範本  
- 您可以在專案檔中設定參數值。 例如，您可以傳遞[建置](../msbuild/msbuild-properties.md)屬性和[環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md):  
+##  <a name="parameters"></a> Pass build context data into the templates  
+ You can set parameter values in the project file. For example, you can pass [build](../msbuild/msbuild-properties.md) properties and [environment variables](../msbuild/how-to-use-environment-variables-in-a-build.md):  
   
 ```xml  
 <ItemGroup>  
@@ -234,7 +235,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </ItemGroup>  
 ```  
   
- 在文字範本內，在範本指示詞中設定 `hostspecific`。 使用[參數](../modeling/t4-parameter-directive.md)指示詞取得值︰  
+ In a text template, set `hostspecific` in the template directive. Use the [parameter](../modeling/t4-parameter-directive.md) directive to get values:  
   
 ```  
 <#@template language="c#" hostspecific="true"#>  
@@ -243,23 +244,23 @@ The project folder is: <#= ProjectFolder #>
   
 ```  
   
- 在指示詞處理器中，您可以呼叫<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>::</xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>  
+ In a directive processor, you can call <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>:  
   
-```c#  
+```cs  
 string value = Host.ResolveParameterValue("-", "-", "parameterName");  
 ```  
   
-```vb#  
+```vb  
 Dim value = Host.ResolveParameterValue("-", "-", "parameterName")  
 ```  
   
 > [!NOTE]
-> 只有在您使用 MSBuild 時， `ResolveParameterValue` 才會從 `T4ParameterValues` 取得資料。 使用 Visual Studio 轉換範本時，參數會擁有預設值。  
+>  `ResolveParameterValue` gets data from `T4ParameterValues` only when you use MSBuild. When you transform the template using Visual Studio, the parameters will have default values.  
   
-##  <a name="a-namemsbuilda-using-project-properties-in-assembly-and-include-directives"></a><a name="msbuild"></a>使用專案屬性中的組件和 include 指示詞  
- Visual Studio 巨集 (如 $(SolutionDir)) 在 MSBuild 中無法運作。 您可以改用專案屬性。  
+##  <a name="msbuild"></a> Using project properties in assembly and include directives  
+ Visual Studio macros like $(SolutionDir) don't work in MSBuild. You can use project properties instead.  
   
- 編輯您的 .csproj 或 .vbproj 檔案以定義專案屬性。 這個範例會定義名為 `myLibFolder` 的屬性：  
+ Edit your .csproj or .vbproj file to define a project property. This example defines a property named `myLibFolder`:  
   
 ```xml  
 <!-- Define a project property, myLibFolder: -->  
@@ -276,36 +277,36 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
   
 ```  
   
- 您現在可以在 assembly 和 include 指示詞中使用專案屬性：  
+ Now you can use your project property in assembly and include directives:  
   
 ```  
 <#@ assembly name="$(myLibFolder)\MyLib.dll" #>  
 <#@ include file="$(myLibFolder)\MyIncludeFile.t4" #>  
 ```  
   
- 這些指示詞會從 MSBuild 和 Visual Studio 裝載中的 T4parameterValues 取得值。  
+ These directives get values from T4parameterValues both in MSBuild and in Visual Studio hosts.  
   
-## <a name="q--a"></a>問與答  
- **為什麼要在組建伺服器中轉換範本？我已經轉換 Visual Studio 中的範本，在簽入我的程式碼之前。**  
+## <a name="q--a"></a>Q & A  
+ **Why would I want to transform templates in the build server? I already transformed templates in Visual Studio before I checked in my code.**  
   
- 如果更新包含的檔案或範本讀取的其他檔案，Visual Studio 並不會自動轉換檔案。 轉換範本為組建的一部分，以確保一切皆維持在最新狀態。  
+ If you update an included file, or another file read by the template, Visual Studio doesn't transform the file automatically. Transforming templates as part of the build makes sure that everything's up to date.  
   
- **其他選項還有哪些轉換文字範本的？**  
+ **What other options are there for transforming text templates?**  
   
--   [TextTransform 公用程式](../modeling/generating-files-with-the-texttransform-utility.md)用於命令指令碼。 大部分情況下，使用 MSBuild 較為容易。  
+-   The [TextTransform utility](../modeling/generating-files-with-the-texttransform-utility.md) can be used in command scripts. In most cases, it's easier to use MSBuild.  
   
--   [叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
+-   [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md)  
   
--   [設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)會由 Visual Studio 轉換。  
+-   [Design-time text templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md) are transformed by Visual Studio.  
   
--   [執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)會在您的應用程式在執行階段轉換。  
+-   [Run time text templates](../modeling/run-time-text-generation-with-t4-text-templates.md) are transformed at run time in your application.  
   
-## <a name="read-more"></a>進一步了解  
- 在 T4 MSbuild 範本中有好的指引：$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
+## <a name="read-more"></a>Read more  
+ There is good guidance in the T4 MSbuild template, $(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets  
   
- [撰寫 T4 文字範本](../modeling/writing-a-t4-text-template.md)  
+ [Writing a T4 Text Template](../modeling/writing-a-t4-text-template.md)  
   
- [Oleg Sych︰ 了解 t4: msbuild 整合](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
+ [Oleg Sych: Understanding T4:MSBuild Integration](http://www.olegsych.com/2010/04/understanding-t4-msbuild-integration/)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

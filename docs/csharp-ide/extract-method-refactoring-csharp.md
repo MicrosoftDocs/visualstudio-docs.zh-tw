@@ -1,52 +1,68 @@
 ---
-title: "擷取方法重構 (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractmethod"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "重構 [C#]，擷取方法"
-  - "擷取方法重構作業 [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-method
+title: Extract Method Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Method
+- Extract Method refactoring operation [C#]
 ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
-caps.handback.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# 擷取方法重構 (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3d8a2c29b292c1e09b51b2543724eb85e7eda75b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-\[**擷取方法**\] 是一項重構作業，可讓您輕鬆地從現有成員的程式碼片段建立新方法。  
+---
+# <a name="extract-method-refactoring-c"></a>Extract Method Refactoring (C#)
+**Extract Method** is a refactoring operation that provides an easy way to create a new method from a code fragment in an existing member.  
   
- 您可以使用 \[**擷取方法**\] 從現有成員的程式碼區塊內擷取選取的程式碼範圍，藉此建立新的方法。  新的擷取方法會包含選取的程式碼，而在現有成員中的已選定程式碼會取代成新方法的呼叫。  將程式碼片段轉變成自己的方法，能讓您迅速和正確地重新組織程式碼，以便重複使用並提升可讀性。  
+ Using **Extract Method**, you can create a new method by extracting a selection of code from inside the code block of an existing member. The new, extracted method contains the selected code, and the selected code in the existing member is replaced with a call to the new method. Turning a fragment of code into its own method lets you quickly and accurately reorganize code for better reuse and readability.  
   
- \[**擷取方法**\] 具有下列優點：  
+ **Extract Method** has the following benefits:  
   
--   強調獨立且可重複使用的方法，進而採行最佳編碼做法。  
+-   Encourages best coding practices by emphasizing discrete, reusable methods.  
   
--   由於組織完善，可建立自我記錄的程式碼。  
+-   Encourages self-documenting code through good organization.  
   
-     當使用描述性名稱時，高層次的方法讀起來就像一系列註解。  
+     When descriptive names are used, high-level methods can read more like a series of comments.  
   
--   可建立更精細的方法，以簡化覆寫。  
+-   Encourages the creation of finer-grained methods to simplify overriding.  
   
--   減少程式碼重複。  
+-   Reduces code duplication.  
   
-### 若要使用擷取方法  
+### <a name="to-use-extract-method"></a>To use Extract Method  
   
-1.  建立名為 `ExtractMethod`的主控台應用程式，再以下列範例程式碼取代 `Program`。  
+1.  Create a console application named `ExtractMethod`, and then replace `Program` with the following example code.  
   
-    ```c#  
+    ```cs  
     class A  
     {  
         const double PI = 3.141592;  
@@ -68,44 +84,43 @@ manager: "wpickett"
     }  
     ```  
   
-2.  選取您想要擷取的程式碼片段：  
+2.  Select the code fragment you want to extract:  
   
-    ```c#  
+    ```cs  
     double area = PI * radius * radius;  
-  
     ```  
   
-3.  在 \[**重構**\] 功能表上，按一下 \[**擷取方法**\]。  
+3.  On the **Refactor** menu, click **Extract Method**.  
   
-     \[**擷取方法**\] 對話方塊隨即出現。  
+     The **Extract Method** dialog box appears.  
   
-     或者，您也可以輸入鍵盤快速鍵 CTRL\+R、M，以顯示 \[**擷取方法**\] 對話方塊。  
+     Alternatively, you can also type the keyboard shortcut CTRL+R, M to display the **Extract Method** dialog box.  
   
-     您也可以用滑鼠右鍵按一下選取的程式碼，指向 \[**重構**\]，然後按一下 \[**擷取方法**\] 顯示 \[**擷取方法**\] 對話方塊。  
+     You can also right-click the selected code, point to **Refactor**, and then click **Extract Method** to display the **Extract Method** dialog box.  
   
-4.  在 \[**新方法名稱**\] 方塊中指定新方法的名稱，例如 `CircleArea`。  
+4.  Specify a name for the new method, such as `CircleArea`, in the **New Method Name** box.  
   
-     \[**預覽方法簽章**\] 下會顯示新方法簽章的預覽。  
+     A preview of the new method signature displays under **Preview Method Signature**.  
   
-5.  按一下 \[**確定**\]。  
+5.  Click **OK**.  
   
-## 備註  
- 當您使用 \[**擷取方法**\] 命令時，新方法會插入到同一類別中來源成員之後。  
+## <a name="remarks"></a>Remarks  
+ When you use the **Extract Method** command, the new method is inserted following the source member in the same class.  
   
-## 部分型別  
- 如果類別是部分型別，\[**擷取方法**\] 便會產生緊接在來源成員之後的新方法。  \[**擷取方法**\] 會判斷新方法的簽章，同時在新方法中的程式碼沒有參考任何執行個體 \(Instance\) 資料時建立靜態方法。  
+## <a name="partial-types"></a>Partial Types  
+ If the class is a partial type, then **Extract Method** generates the new method immediately following the source member. **Extract Method** determines the signature of the new method, creating a static method when no instance data is referenced by the code in the new method.  
   
-## 泛型型別參數  
- 如果您擷取的方法有不受限制的泛型型別參數，產生的程式碼就不會將 `ref` 修飾詞 \(Modifier\) 加入至參數，除非已指派值給參數。  如果擷取的方法能夠將參考型別當做泛型型別引數，則您應手動將 `ref` 修飾詞加入至方法簽章中的參數。  
+## <a name="generic-type-parameters"></a>Generic Type Parameters  
+ When you extract a method that has an unconstrained generic type parameter, the generated code will not add the `ref` modifier to that parameter unless a value is assigned to it. If the extracted method will support reference types as the generic type argument, then you should manually add the `ref` modifier to the parameter in the method signature.  
   
-## 匿名方法  
- 如果嘗試擷取匿名方法 \(Anonymous Method\) 的部分，而其中參考了在該匿名方法外部宣告或參考的區域變數，則 Visual Studio 將會警告您可能發生語意變更。  
+## <a name="anonymous-methods"></a>Anonymous Methods  
+ If you try to extract part of an anonymous method that includes a reference to a local variable that is either declared or referenced outside the anonymous method, then Visual Studio will warn you about potential semantic changes.  
   
- 若匿名方法使用區域變數的值，會在執行匿名方法時取得該值。  將匿名方法擷取至其他方法內時，則會在呼叫擷取方法時取得區域變數的值。  
+ When an anonymous method uses the value of a local variable, the value is obtained at the moment the anonymous method is executed. When an anonymous method is extracted into another method, the value of the local variable is obtained at the moment of the call to the extracted method.  
   
- 下列範例將說明這個語意變更。  如果執行這段程式碼，主控台顯示的會是 **11**。  如果您使用 \[**擷取方法**\] 將程式碼註解標記的程式碼區域擷取到自己的方法內，然後執行重構的程式碼，則主控台將會顯示 **10**。  
+ The following example illustrates this semantic change. If this code is executed, then **11** will be printed to the console. If you use **Extract Method** to extract the region of code that is marked by code comments into its own method and then execute the refactored code, then **10** will be printed to the console.  
   
-```c#  
+```cs  
 class Program  
 {  
     delegate void D();  
@@ -123,7 +138,7 @@ class Program
 }  
 ```  
   
- 若要解決這種情況，請將匿名方法中使用的區域變數當做類別的欄位。  
+ To work around this situation, make the local variables that are used in the anonymous method fields of the class.  
   
-## 請參閱  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

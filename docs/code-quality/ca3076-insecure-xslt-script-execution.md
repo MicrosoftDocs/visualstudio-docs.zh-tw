@@ -1,52 +1,70 @@
 ---
-title: "CA3076：不安全的 XSLT 指令碼執行 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'CA3076: Insecure XSLT Script Execution | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 53cb7a46-c564-488f-bc51-0e210a7853c9
 caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
----
-# CA3076：不安全的 XSLT 指令碼執行
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 54405544c27c156b1e0530ea29404db18f1baa92
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
+---
+# <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Insecure XSLT Script Execution
 |||  
 |-|-|  
 |TypeName|InsecureXSLTScriptExecution|  
 |CheckId|CA3076|  
-|分類|Microsoft.Security|  
-|中斷變更|非中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 如果您在 .NET 應用程式中以不安全的方式執行 [Extensible Stylesheets Language Transformations \(XSLT\) \(可延伸樣式表語言轉換 \(XSLT\)\)](https://support.microsoft.com/en-us/kb/313997)，處理器可能會[解析不受信任的 URI 參考](http://msdn.microsoft.com/zh-tw/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a)，而這些參考可能會將機密資訊洩漏給攻擊者，導致拒絕服務和跨網站攻擊。  
+## <a name="cause"></a>Cause  
+ If you execute [Extensible Stylesheets Language Transformations (XSLT)](https://support.microsoft.com/en-us/kb/313997) in .NET applications insecurely, the processor may [resolve untrusted URI references](http://msdn.microsoft.com/en-us/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) that could disclose sensitive information to attackers, leading to Denial of Service and Cross-Site attacks.  
   
-## 規則描述  
- [XSLT](http://msdn.microsoft.com/zh-tw/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) 是全球資訊網協會 \(W3C\) 針對 XML 資料轉換的一項標準。 XSLT 通常用來撰寫可將 XML 資料轉換為其他格式的樣式表，例如 HTML、固定長度的文字、以逗號分隔的文字或不同的 XML 格式。 雖然預設為禁止使用，您仍可以針對專案選擇啟用此項目。  
+## <a name="rule-description"></a>Rule Description  
+ [XSLT](http://msdn.microsoft.com/en-us/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) is a World Wide Web Consortium (W3C) standard for transforming XML data. XSLT is typically used to write style sheets to transform XML data to other formats such as HTML, fixed length text, comma-separated text, or a different XML format. Although prohibited by default, you may choose to enable it for your project.  
   
- 為了保障您不會公開受攻擊面，每當 XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> 收到可執行惡意指令碼的 <xref:System.Xml.Xsl.XsltSettings> 和 <xref:System.Xml.XmlResolver> 不安全組合執行個體時，即會觸發此規則。  
+ To ensure you're not exposing an attack surface, this rule triggers whenever the XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> receives insecure combination instances of <xref:System.Xml.Xsl.XsltSettings> and <xref:System.Xml.XmlResolver>, which allows malicious script processing.  
   
-## 如何修正違規  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
   
--   將不安全的 XsltSettings 引數取代為 XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> 或取代為已停用文件功能與指令碼執行的執行個體。  
+-   Replace the insecure XsltSettings argument with XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> or with an instance that has disabled document function and script execution.  
   
--   將 <xref:System.Xml.XmlResolver> 引數取代為 null 或 <xref:System.Xml.XmlSecureResolver> 執行個體。  
+-   Replace the <xref:System.Xml.XmlResolver> argument with null or an <xref:System.Xml.XmlSecureResolver> instance.  
   
-## 隱藏警告的時機  
- 如果您無法確定輸入是否來自受信任的來源，請不要隱藏這個警告的規則。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Unless you're sure that the input is known to be from a trusted source, do not suppress a rule from this warning.  
   
-## 虛擬程式碼範例  
+## <a name="pseudo-code-examples"></a>Pseudo-code Examples  
   
-### 違規  
+### <a name="violation"></a>Violation  
   
-```c#  
+```cs  
 using System.Xml;  
 using System.Xml.Xsl;  
   
@@ -62,12 +80,12 @@ namespace TestNamespace
              xslCompiledTransform.Load("testStylesheet", settings, resolver); // warn   
         }  
     }   
-}   
+}   
 ```  
   
-### 方案  
+### <a name="solution"></a>Solution  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -86,9 +104,9 @@ namespace TestNamespace
 }  
 ```  
   
-### 違規  
+### <a name="violation"></a>Violation  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   
@@ -111,9 +129,9 @@ namespace TestNamespace
 }  
 ```  
   
-### 方案  
+### <a name="solution"></a>Solution  
   
-```c#  
+```cs  
 using System.Xml;   
 using System.Xml.Xsl;   
   

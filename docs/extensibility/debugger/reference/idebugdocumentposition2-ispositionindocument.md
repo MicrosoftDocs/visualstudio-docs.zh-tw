@@ -1,52 +1,69 @@
 ---
-title: "IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentPosition2::IsPositionInDocument"
-helpviewer_keywords: 
-  - "IDebugDocumentPosition2::IsPositionInDocument"
+title: IDebugDocumentPosition2::IsPositionInDocument | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentPosition2::IsPositionInDocument
+helpviewer_keywords:
+- IDebugDocumentPosition2::IsPositionInDocument
 ms.assetid: d5cf57cb-b93b-4e1d-bec9-185f4fe8668d
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentPosition2::IsPositionInDocument
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3428aa4bfd4d35f47466c7dfaeefd91bbe30bfeb
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-判斷指定的文件中若包含文件位置。  
+---
+# <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
+Determines if the document position is contained in the given document.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT IsPositionInDocument(   
-   IDebugDocument2* pDoc  
+HRESULT IsPositionInDocument(   
+   IDebugDocument2* pDoc  
 );  
 ```  
   
-```c#  
-int IsPositionInDocument(   
-   IDebugDocument2 pDoc  
+```cs  
+int IsPositionInDocument(   
+   IDebugDocument2 pDoc  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pDoc`  
- \[in\][IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)物件，代表包含的文件候選。  
+ [in] The [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) object that represents the containing document candidate.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 這個方法主要用於將中斷點設定[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  當載入文件時，中斷點位置稱為以判斷文件是否包含這個位置。  
+## <a name="remarks"></a>Remarks  
+ This method is used primarily in setting breakpoints in [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) interfaces. As documents are loaded, the breakpoint position is called to determine if the document contains this position.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

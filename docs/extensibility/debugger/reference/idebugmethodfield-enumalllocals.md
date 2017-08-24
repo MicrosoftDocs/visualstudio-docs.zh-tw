@@ -1,60 +1,77 @@
 ---
-title: "IDebugMethodField::EnumAllLocals | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumAllLocals"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumAllLocals 方法"
+title: IDebugMethodField::EnumAllLocals | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMethodField::EnumAllLocals
+helpviewer_keywords:
+- IDebugMethodField::EnumAllLocals method
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugMethodField::EnumAllLocals
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 235235f6c48be15adb2364a1c66ac2e6b62ff4ee
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-建立方法，包括在內部編譯器產生的所有區域變數的列舉值。  
+---
+# <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
+Creates an enumerator for all local variables of the method, including those generated internally by a compiler.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT EnumAllLocals(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppLocals  
+HRESULT EnumAllLocals(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```c#  
+```cs  
 int EnumAllLocals(  
-   IDebugAddress        pAddress,   
-   out IEnumDebugFields ppLocals  
+   IDebugAddress        pAddress,   
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示在方法中，指向特定的範圍 」 或 「 內容是偵錯地址。  
+ [in] An [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object representing a debug address within the method, pointing to a particular scope or context.  
   
  `ppLocals`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表在指定的範圍 ； 所有區域變數的清單 否則，會傳回 null 值，表示沒有區域變數。  
+ [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) object representing the list of all locals in the specified scope; otherwise, returns a null value indicating no locals.  
   
-## 傳回值  
- 如果成功的話，會傳回 S\_OK，或傳回 S\_FALSE，如果不有任何區域變數。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK or returns S_FALSE if there are no locals. Otherwise, returns an error code.  
   
-## 備註  
- 只有包含特定的偵錯的地址區塊中所定義的變數，才會列舉。  這個方法會包含任何編譯器所產生的區域變數。  如果所需要的全部都在原始檔，這項呼叫中明確定義的區域變數[EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Only the variables defined within the block that contains the given debug address are enumerated. This method includes any compiler-generated locals. If all that is needed are the locals explicitly defined in the source, call the [EnumLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) method.  
   
- 一種方法可以包含多個範圍的內容或區塊。  
+ A method can contain multiple scoping contexts or blocks.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

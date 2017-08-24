@@ -1,5 +1,5 @@
 ---
-title: "BP_FLAGS90 |Microsoft 文件"
+title: BP_FLAGS90 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,16 +28,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4dfb7dc681519b37fe5cb9cd20e4bca22d800b96
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 18cb86f1a1105cfb34be2e16c58824314f9f55c8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
-列舉有效的選擇性旗標值。 選擇性旗標可能會用來指定當您設定中斷點的其他資訊。 這個列舉型別擴充[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列舉型別。  
+Enumerates valid values for optional flags. The optional flags may be used to specify additional information when you set a breakpoint. This enumeration extends the [BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md) enumeration.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 enum enum_BP_FLAGS90  
@@ -53,7 +54,7 @@ enum enum_BP_FLAGS90
 typedef DWORD BP_FLAGS90;  
 ```  
   
-```c#  
+```cs  
 public enum enum_BP_FLAGS90  
 {  
    // VS 8.0 values  
@@ -66,25 +67,25 @@ public enum enum_BP_FLAGS90
 };  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  BP90_FLAG_NONE  
- 不指定任何中斷點旗標。  
+ Specifies no breakpoint flag.  
   
  BP90_FLAG_MAP_DOCPOSITION  
- 指定偵錯引擎 (DE) 應該將中斷點對應使用的文件位置。 這是僅適用於指令碼為導向的原始程式檔例如 Active Server Pages (ASP) 中設定中斷點。  
+ Specifies that the debug engine (DE) should map the breakpoint by using the document position. This is applicable only to breakpoints set in script-oriented source files such as Active Server Pages (ASP).  
   
  BP90_FLAG_DONT_STOP  
- 指定中斷點應由偵錯引擎中，但是，偵錯引擎最後應該停止那里;也就是[IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)應該不會傳送事件物件。 這個旗標被設計主要是用於追蹤點。  
+ Specifies that the breakpoint should be processed by the debug engine, but that the debug engine ultimately should not stop there; that is, an [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) event object should not be sent. This flag is designed to be used primarily with trace points.  
   
  BP90_FLAG_TRACEPOINT_CONTINUE  
- 使用原生偵錯引擎來判斷是否應該清除逐步執行的狀態。 不同於 BP90_FLAG_DONT_STOP 因為 BP90_FLAG_DONT_STOP 不設定追蹤點執行巨集。  
+ Used by the native debug engine to determine whether the stepping state should be cleared. It differs from BP90_FLAG_DONT_STOP because BP90_FLAG_DONT_STOP is not set if the trace point executes a macro.  
   
-## <a name="requirements"></a>需求  
- 標頭︰ Msdbg90.h  
+## <a name="requirements"></a>Requirements  
+ Header: Msdbg90.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

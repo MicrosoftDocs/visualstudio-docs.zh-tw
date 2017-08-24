@@ -1,5 +1,5 @@
 ---
-title: "將使用者控制項加入至 [開始] 頁面 |Microsoft 文件"
+title: Adding User Control to the Start Page | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,34 +30,35 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 69c2ff24616af373461de0cbf4456499db63f902
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 421de69556d8833b78b401331db4584d7243cdb7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="adding-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面
-本逐步解說示範如何加入自訂的起始頁 DLL 的參考。 範例會新增至方案中，使用者控制項建置使用者控制項，並再建置的組件參考起始頁.xaml 檔案。 新的索引標籤裝載使用者控制項，其做為基本的 Web 瀏覽器功能。  
+# <a name="adding-user-control-to-the-start-page"></a>Adding User Control to the Start Page
+This walkthrough shows how to add a DLL reference to a custom Start Page. The example adds a user control to the solution, builds the user control, and then references the built assembly from the Start Page .xaml file. A new tab hosts the user control, which functions as a basic Web browser.  
   
- 您可以使用相同的程序加入任何可以從.xaml 檔案中呼叫的組件。  
+ You can use the same process to add any assembly that can be called from a .xaml file.  
   
-## <a name="adding-a-wpf-user-control-to-the-solution"></a>將 WPF 使用者控制項加入至方案  
- 首先，Windows Presentation Foundation (WPF) 使用者控制項加入起始頁方案。  
+## <a name="adding-a-wpf-user-control-to-the-solution"></a>Adding a WPF User Control to the Solution  
+ First, add a Windows Presentation Foundation (WPF) user control to the Start Page solution.  
   
-1.  建立起始頁面使用我們建立在[建立自訂起始頁](../extensibility/creating-a-custom-start-page.md)。  
+1.  Create a Start Page by using we created in [Creating a Custom Start Page](../extensibility/creating-a-custom-start-page.md).  
   
-2.  在**方案總管] 中**，以滑鼠右鍵按一下方案，按一下**新增**，然後按一下 [**新的專案**。  
+2.  In **Solution Explorer**, right-click the solution, click **Add**, and then click **New Project**.  
   
-3.  在左窗格中**新的專案**對話方塊方塊中，展開  **Visual Basic**或**Visual C#**節點，然後按一下  **Windows**。 在中間窗格中，選取**WPF 使用者控制項程式庫**。  
+3.  In the left pane of the **New Project** dialog box, expand either the **Visual Basic** or **Visual C#** node, and click **Windows**. In the middle pane, select **WPF User Control Library**.  
   
-4.  將控制項`WebUserControl`然後按一下 **確定**。  
+4.  Name the control `WebUserControl` and then click **OK**.  
   
-## <a name="implementing-the-user-control"></a>實作使用者控制項  
- 若要實作 WPF 使用者控制項，建置在 XAML 中的使用者介面 (UI)，然後以 C# 或其他.NET 語言撰寫的程式碼後置事件。  
+## <a name="implementing-the-user-control"></a>Implementing the User Control  
+ To implement a WPF user control, build the user interface (UI) in XAML and then write the code-behind events in C# or another .NET language.  
   
-#### <a name="to-write-the-xaml-for-the-user-control"></a>撰寫使用者控制項的 XAML  
+#### <a name="to-write-the-xaml-for-the-user-control"></a>To write the XAML for the user control  
   
-1.  開啟使用者控制項的 XAML 檔案。 在\<方格 > 項目，將下列的資料列定義加入至控制項。  
+1.  Open the XAML file for the user control. In the \<Grid> element, add the following row definitions to the control.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -67,7 +68,7 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-2.  在 main`Grid`項目，新增下列新`Grid`元素，其中包含文字方塊中輸入網站位址和設定新的地址 按鈕。  
+2.  In the main `Grid` element, add the following new `Grid` element, which contains a text box for typing Web addresses and a button for setting the new address.  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -80,13 +81,13 @@ ms.lasthandoff: 02/22/2017
     </Grid>  
     ```  
   
-3.  將下列的畫面格加入至最上層`Grid`元素後方`Grid`包含按鈕和文字方塊項目。  
+3.  Add the following frame to the top-level `Grid` element just after the `Grid` element that contains the button and textbox.  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  下列範例顯示完整的 XAML 使用者控制項。  
+4.  The following example shows the completed XAML for the user control.  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -115,15 +116,15 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
-#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>撰寫使用者控制項的程式碼後置事件。  
+#### <a name="to-write-the-code-behind-events-for-the-user-control"></a>To write the code-behind events for the user control  
   
-1.  在 XAML 設計工具中，按兩下**設定位址**按鈕加入至控制項。  
+1.  In the XAML designer, double-click the **Set Address** button you added to the control.  
   
-     UserControl1.cs 檔案會在程式碼編輯器中開啟。  
+     The UserControl1.cs file opens in the code editor.  
   
-2.  填入 SetButton_Click 事件處理常式，如下所示。  
+2.  Fill in the SetButton_Click Event Handler as follows.  
   
-    ```c#  
+    ```cs  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
@@ -137,45 +138,45 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     此程式碼會設定在文字方塊中輸入做為目標的 Web 瀏覽器的網址。 如果位址不正確，程式碼擲回錯誤。  
+     This code sets the Web address that is typed in the text box as the target for the Web browser. If the address is not valid, the code throws an error.  
   
-3.  您也必須處理 WebFrame_Navigated 事件︰  
+3.  You must also handle the WebFrame_Navigated event:  
   
-    ```c#  
+    ```cs  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  建置方案。  
+4.  Build the solution.  
   
-## <a name="adding-the-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面  
- 若要將此控制項的起始頁專案，使用入門 頁面上的專案檔中，加入新的控制項程式庫的參考。 然後您可以將控制項加入 [啟動] 頁面的 XAML 標記。  
+## <a name="adding-the-user-control-to-the-start-page"></a>Adding the User Control to the Start Page  
+ To make this control available to the Start Page project, in the Start Page project file, add a reference to the new control library. Then you can add the control to the Start Page XAML markup.  
   
-1.  在**方案總管] 中**，在起始頁專案中，以滑鼠右鍵按一下**參考**然後按一下 [**加入參考**。  
+1.  In **Solution Explorer**, in the Start Page project, right-click **References** and then click **Add Reference**.  
   
-2.  在**專案**索引標籤上，選取**WebUserControl**然後按一下 **確定**。  
+2.  On the **Projects** tab, select **WebUserControl** and then click **OK**.  
   
-3.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
+3.  On the **Build** menu, click **Build Solution**.  
   
-     建置方案讓使用者控制 IntelliSense 可以使用其他方案中的檔案。  
+     Building the solution makes the user control available to IntelliSense for other files in the solution.  
   
- 若要將控制項加入至 [啟動] 頁面的 XAML 標記，加入命名空間參考組件，然後放在頁面上的控制項。  
+ To add the control to the Start Page XAML markup, add a namespace reference to the assembly, then put the control on the page.  
   
-#### <a name="to-add-the-control-to-the-markup"></a>將控制項加入至標記  
+#### <a name="to-add-the-control-to-the-markup"></a>To add the control to the markup  
   
-1.  在**方案總管 中**，開啟 啟動 頁面上的.xaml 檔案。  
+1.  In **Solution Explorer**, open the Start Page .xaml file.  
   
-2.  在**XAML**  窗格中，將下列命名空間宣告加入至最上層<xref:System.Windows.Controls.Grid>項目。</xref:System.Windows.Controls.Grid>  
+2.  In the **XAML** pane, add the following namespace declaration to the top-level <xref:System.Windows.Controls.Grid> element.  
   
     ```xml  
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"  
     ```  
   
-3.  在**XAML**  窗格中，捲動到\<方格 > 一節。  
+3.  In the **XAML** pane, scroll to the \<Grid> section.  
   
-     區段包含<xref:System.Windows.Controls.TabControl>中的項目<xref:System.Windows.Controls.Grid>項目。</xref:System.Windows.Controls.Grid> </xref:System.Windows.Controls.TabControl>  
+     The section contains a <xref:System.Windows.Controls.TabControl> element in a <xref:System.Windows.Controls.Grid> element.  
   
-4.  新增\<TabControl > 項目包含\<TabItem >，其中包含您的使用者控制項的參考。  
+4.  Add a \<TabControl> element containing a \<TabItem> that contains a reference to your user control.  
   
     ```xml  
   
@@ -185,22 +186,22 @@ ms.lasthandoff: 02/22/2017
   
     ```  
   
- 現在您可以測試控制項。  
+ Now you can test the control.  
   
-## <a name="testing-a-manually-created-custom-start-page"></a>測試以手動方式建立的自訂起始頁  
+## <a name="testing-a-manually-created-custom-start-page"></a>Testing a manually created custom Start Page  
   
-1.  複製您的 XAML 檔案，並支援文字檔案或標記檔案，為**%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\ **資料夾。  
+1.  Copy your XAML file, and any supporting text files or markup files, to the **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\** folder.  
   
-2.  如果您的起始頁參考任何控制項或未安裝 Visual studio 組件中的型別，將組件，然後貼在*Visual Studio 安裝資料夾***\Common7\IDE\PrivateAssemblies\\**。  
+2.  If your start page references any controls or types in assemblies that are not installed by Visual Studio, copy the assemblies and then paste them in *Visual Studio installation folder***\Common7\IDE\PrivateAssemblies\\**.  
   
-3.  在 Visual Studio 命令提示字元中，輸入**devenv /rootsuffix Exp**若要開啟的 Visual Studio 的實驗執行個體。  
+3.  At a Visual Studio command prompt, type **devenv /rootsuffix Exp** to open an experimental instance of Visual Studio.  
   
-4.  在實驗執行個體中，移至**工具 / 選項 / 環境 / 啟動**頁面，並選取您的 XAML 檔案從**自訂起始頁**下拉式清單。  
+4.  In the experimental instance, go to the **Tools / Options / Environment / Startup** page and select your XAML file from the **Customize Start Page** dropdown.  
   
-5.  在 [檢視]  功能表上，按一下 [起始頁] 。  
+5.  On the **View** menu, click **Start Page**.  
   
-     應該會顯示自訂起始頁。 如果您想要變更的任何檔案，您必須關閉的實驗執行個體、 進行變更、 複製並貼變更的檔案，然後再重新開啟實驗性的執行個體，以檢視所做的變更。  
+     Your custom start page should be displayed. If you want to change any files, you must close the experimental instance, make the changes, copy and paste the changed files, and then re-open the experimental instance to view the changes.  
   
-## <a name="see-also"></a>另請參閱  
- [WPF 容器控制項](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
- [逐步解說︰ 將自訂的 XAML 加入至 [開始] 頁面](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+## <a name="see-also"></a>See Also  
+ [WPF Container Controls](http://msdn.microsoft.com/en-us/a0177167-d7db-4205-9607-8ae316952566)   
+ [Walkthrough: Adding Custom XAML to the Start Page](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

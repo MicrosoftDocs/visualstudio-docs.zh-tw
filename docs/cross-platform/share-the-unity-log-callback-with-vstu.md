@@ -1,5 +1,5 @@
 ---
-title: "與 VSTU 共用 Unity 記錄回呼 | Microsoft Docs"
+title: Share the Unity Log Callback with VSTU | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,21 +27,22 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b4362bcbd04411be4db296fc5996232fd61f5d7f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e598b0f08bd0703bdec3b1abb380fb127df550ae
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="share-the-unity-log-callback-with-vstu"></a>與 VSTU 共用 Unity 記錄回呼
-Visual Studio Tools for Unity 使用 Unity 註冊記錄回呼，以便將其主控台串流至 Visual Studio。 如果您的編輯器指令碼也使用 Unity 註冊記錄回呼，VSTU 回呼可能會與您的回呼相衝突。 若要避免這種可能性，請使用 `VisualStudioIntegration.LogCallback` 事件來與 VSTU 合作。  
+# <a name="share-the-unity-log-callback-with-vstu"></a>Share the Unity Log Callback with VSTU
+Visual Studio Tools for Unity registers a log callback with Unity to be able to stream its console to Visual Studio. If your editor scripts also register a log callback with Unity, the VSTU callback might interfere with your callback. To prevent this possibility, use the `VisualStudioIntegration.LogCallback` event to cooperate with VSTU.  
   
-## <a name="demonstrates"></a>示範  
- 如何共用 Visual Studio Tools for Unity 所建立的 Unity 記錄回呼。  
+## <a name="demonstrates"></a>Demonstrates  
+ How to share the Unity Log Callback created by Visual Studio Tools for Unity.  
   
-## <a name="example"></a>範例  
+## <a name="example"></a>Example  
   
-```c#  
+```cs  
 using System;  
   
 using UnityEngine;  
@@ -62,5 +63,5 @@ public class LogCallbackHook
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [範例：產生專案檔](../cross-platform/customize-project-files-created-by-vstu.md)
+## <a name="see-also"></a>See Also  
+ [Example: Project File Generation](../cross-platform/customize-project-files-created-by-vstu.md)

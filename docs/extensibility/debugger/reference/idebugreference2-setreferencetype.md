@@ -1,5 +1,5 @@
 ---
-title: "IDebugReference2::SetReferenceType |Microsoft 文件"
+title: IDebugReference2::SetReferenceType | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4827e0e54caa6b10fdf876e4360a5f9df480de00
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a9d975854fffee9410cf839e3e265dbbca2d9085
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
-設定參考型別。 保留供未來使用。  
+Sets the reference type. Reserved for future use.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT SetReferenceType (   
@@ -47,19 +48,19 @@ HRESULT SetReferenceType (
 );  
 ```  
   
-```c#  
+```cs  
 int SetReferenceType (   
    enum_REFERENCE_TYPE dwRefType  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `dwRefType`  
- [in]介於[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列舉，指定參考型別。  
+ [in] A value from the [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeration that specifies the reference type.  
   
-## <a name="return-value"></a>傳回值  
- 一律傳回 `E_NOTIMPL`。  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

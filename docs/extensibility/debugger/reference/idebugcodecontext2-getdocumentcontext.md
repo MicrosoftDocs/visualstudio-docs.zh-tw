@@ -1,5 +1,5 @@
 ---
-title: "IDebugCodeContext2::GetDocumentContext |Microsoft 文件"
+title: IDebugCodeContext2::GetDocumentContext | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 348c135ce6300041ee5e6f29cdaf3772579cfc1d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a027dafa1cb6033b68bb039a8deb3ce24717bda2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
-取得對應於這個程式碼內容的文件內容。 文件內容表示對應至產生這個指令的原始程式碼的原始程式檔中的位置。  
+Gets the document context that corresponds to this code context. The document context represents a position in the source file that corresponds to the source code that generated this instruction.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetDocumentContext(   
@@ -47,22 +48,22 @@ HRESULT GetDocumentContext(
 );  
 ```  
   
-```c#  
+```cs  
 int GetDocumentContext(   
    out IDebugDocumentContext2 ppSrcCxt  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ppSrcCxt`  
- [out]傳回[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)對應至程式碼內容的物件。  
+ [out] Returns the [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) object that corresponds to the code context.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 一般來說，文件內容可以視為原始程式檔中的位置的程式碼內容時執行資料流中的程式碼指示的位置。  
+## <a name="remarks"></a>Remarks  
+ Generally, the document context can be thought of as a position in a source file while the code context is a position of a code instruction in an execution stream.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

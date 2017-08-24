@@ -1,63 +1,80 @@
 ---
-title: "載入 Vspackage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "自動載入 Vspackage"
-  - "VSPackage, 載入"
+title: Loading VSPackages | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- VSPackages, autoloading
+- VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# 載入 Vspackage
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c3b226e9532cbbc79cca56810df9c37354c21228
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-只有需要其功能時，只有 VSPackages 會載入 Visual Studio。 比方說，Visual Studio 會使用專案工廠或 VSPackage 實作的服務時，會載入 VSPackage。 這項功能稱為延遲的載入，盡可能使用來改善效能。  
+---
+# <a name="loading-vspackages"></a>Loading VSPackages
+VSPackages are loaded into Visual Studio only when their functionality is required. For example, a VSPackage is loaded when Visual Studio uses a project factory or a service that the VSPackage implements. This feature is called delayed loading, which is used whenever possible to improve performance.  
   
 > [!NOTE]
->  Visual Studio 可以判斷特定的 VSPackage 資訊，例如 VSPackage 提供，而不載入 VSPackage 的命令。  
+>  Visual Studio can determine certain VSPackage information, such as the commands that a VSPackage offers, without loading the VSPackage.  
   
- VSPackages 可以例如設定自動載入在特定的使用者介面 \(UI\) 內容中，開啟方案時。<xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 屬性來設定此內容。  
+ VSPackages can be set to autoload in a particular user interface (UI) context, for example, when a solution is open. The <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribute sets this context.  
   
-### 自動載入 VSPackage 中特定的內容  
+### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Autoloading a VSPackage in a specific context  
   
--   新增 `ProvideAutoLoad` 屬性設定為 VSPackage 屬性︰  
+-   Add the `ProvideAutoLoad` attribute to the VSPackage attributes:  
   
-    ```c#  
+    ```cs  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     [Guid("00000000-0000-0000-0000-000000000000")] // your specific package GUID  
-    public class MyAutoloadedPackage : Package  
+    public class MyAutoloadedPackage : Package  
     {. . .}  
     ```  
   
-     請參閱列舉的欄位 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> UI 內容及其 GUID 值的清單。  
+     See the enumerated fields of <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> for a list of the UI contexts and their GUID values.  
   
--   在設定中斷點 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
+-   Set a breakpoint in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method.  
   
--   建置 VSPackage 並開始偵錯。  
+-   Build the VSPackage and start debugging.  
   
--   載入方案或建立一個。  
+-   Load a solution or create one.  
   
-     VSPackage 載入，並在中斷點停止。  
+     The VSPackage loads and stops at the breakpoint.  
   
-## 強制載入 VSPackage  
- 在某些情況下 VSPackage 可能強制另一個要載入的 VSPackage。 例如，輕量型 VSPackage 可能會載入大 VSPackage 中不是 CMDUIContext 可用的內容。  
+## <a name="forcing-a-vspackage-to-load"></a>Forcing a VSPackage to load  
+ Under some circumstances a VSPackage may have to force another VSPackage to be loaded. For example, a lightweight VSPackage might load a larger VSPackage in a context that is not available as a CMDUIContext.  
   
- 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> 方法，以強制載入 VSPackage。  
+ You can use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> method to force a VSPackage to load.  
   
--   插入此程式碼至 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> VSPackage 可強制另一個載入 VSPackage 的方法︰  
+-   Insert this code into the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method of the VSPackage that forces another VSPackage to load:  
   
-    ```c#  
+    ```cs  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
     if (shell == null) return;  
   
@@ -68,17 +85,17 @@ caps.handback.revision: 17
   
     ```  
   
-     當初始化 VSPackage 時，它會強制 `PackageToBeLoaded` 載入。  
+     When the VSPackage is initialized, it will force `PackageToBeLoaded` to load.  
   
-     強制載入不應該用於 VSPackage 通訊。 請改用 [使用並提供服務](../extensibility/using-and-providing-services.md)。  
+     Force loading should not be used for VSPackage communication. Use [Using and Providing Services](../extensibility/using-and-providing-services.md) instead.  
   
-## 若要註冊的 VSPackage 中使用自訂屬性  
- 在某些情況下，您可能需要建立新的註冊屬性，您的擴充功能。 您可以使用註冊屬性，加入新的登錄機碼，或將新值加入至現有的索引鍵。 新的屬性必須衍生自 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, ，必須覆寫和 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> 和 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> 方法。  
+## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>Using a custom attribute to register a VSPackage  
+ In certain cases you may need to create a new registration attribute for your extension. You can use registration attributes to add new registry keys or to add new values to existing keys. The new attribute must derive from <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, and it must override the <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> and <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> methods.  
   
-## 建立登錄機碼  
- 下列程式碼，建立自訂屬性 **自訂** VSPackage 所註冊之機碼下的子機碼。  
+## <a name="creating-a-registry-key"></a>Creating a Registry Key  
+ In the following code, the custom attribute creates a **Custom** subkey under the key for the VSPackage that is being registered.  
   
-```c#  
+```cs  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -101,10 +118,10 @@ public override void Unregister(RegistrationContext context)
   
 ```  
   
-## 建立現有的登錄機碼下的新值  
- 您可以新增自訂值到現有的金鑰。 下列程式碼示範如何將新值加入至 VSPackage 註冊金鑰。  
+## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creating a New Value Under an Existing Registry Key  
+ You can add custom values to an existing key. The following code shows how to add a new value to a VSPackage registration key.  
   
-```c#  
+```cs  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -126,5 +143,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-## 請參閱  
- [Vspackage](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>See Also  
+ [VSPackages](../extensibility/internals/vspackages.md)

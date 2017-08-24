@@ -1,52 +1,69 @@
 ---
-title: "IDebugObject::SetReferenceValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::SetReferenceValue"
-helpviewer_keywords: 
-  - "IDebugObject::SetReferenceValue 方法"
+title: IDebugObject::SetReferenceValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject::SetReferenceValue
+helpviewer_keywords:
+- IDebugObject::SetReferenceValue method
 ms.assetid: 08c78a4e-98eb-41cb-8b75-02a6a43d49f7
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugObject::SetReferenceValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: af5fde3a9f694d11b28ab90b9c3aab665685b6ee
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-設定這個物件的參考值。  
+---
+# <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
+Sets the reference value of this object.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT SetReferenceValue(   
-   IDebugObject* pObject  
+HRESULT SetReferenceValue(   
+   IDebugObject* pObject  
 );  
 ```  
   
-```c#  
+```cs  
 int SetReferenceValue(  
-   [In] IDebugObject pObject  
+   [In] IDebugObject pObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pObject`  
- \[in\][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，代表新的參考值。  
+ [in] An [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the new reference value.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## 備註  
- 這個方法會製作這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件中指定的物件值的參考`pObject`參數，丟棄所有先前的參考。  請注意這`IDebugObject`物件必須已經是參考型別。  
+## <a name="remarks"></a>Remarks  
+ This method makes this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object a reference to the value of the object given in the `pObject` parameter, throwing away any previous reference. Note that this `IDebugObject` object must already be a reference type.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

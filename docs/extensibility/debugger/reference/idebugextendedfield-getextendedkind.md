@@ -1,47 +1,64 @@
 ---
-title: "IDebugExtendedField::GetExtendedKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExtendedField::GetExtendedKind"
-  - "GetExtendedKind"
+title: IDebugExtendedField::GetExtendedKind | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugExtendedField::GetExtendedKind
+- GetExtendedKind
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugExtendedField::GetExtendedKind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bbd315f19d91d1d0738803aea2099c7adb5ed143
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-擷取指定的延伸的欄位種類。  
+---
+# <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
+Retrieves the specified extended field kind.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetExtendedKind(  
-   FIELD_KIND_EX* pdwKind  
+   FIELD_KIND_EX* pdwKind  
 );  
 ```  
   
-```c#  
+```cs  
 int GetExtendedKind(  
-   ref enum_FIELD_KIND_EX pdwKind  
+   ref enum_FIELD_KIND_EX pdwKind  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pdwKind`  
- 輸入 \[、 輸出\]從數值[FIELD\_KIND\_EX](../../../extensibility/debugger/reference/field-kind-ex.md)定義的欄位類型的列舉型別。  
+ [in, out] Value from the [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) enumeration that defines the kind of field.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

@@ -17,10 +17,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: bf2a85fcd39b482ff2c4e9e40c7a343dd5d7fd91
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 759cf96ce1182a9ca2a3937165d7297429d6c83c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Create a simple data application with WPF and Entity Framework 6
@@ -413,7 +413,7 @@ This walkthough shows how to create a basic "forms over data" application in Vis
   
 2.  Add these handler methods to the MainWindow class in MainWindow.xaml.cs, If your CollectionViewSource for the Customers table has a different name, then you will need to adjust the name in each of these methods:  
   
-    ```c#  
+    ```cs  
        private void LastCommandHandler(object sender, ExecutedRoutedEventArgs e)  
     {  
         custViewSource.View.MoveCurrentToLast();  

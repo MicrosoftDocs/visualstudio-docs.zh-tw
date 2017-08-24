@@ -1,28 +1,45 @@
 ---
-title: "如何：使用逸出序列從範本產生範本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "文字範本, 從範本產生範本"
+title: 'How to: Generate Templates from Templates By Using Escape Sequences | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
 caps.latest.revision: 35
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 35
----
-# 如何：使用逸出序列從範本產生範本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a61e9858f4efe9dd9d4d10f5873ed98ddcd0fd3c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-您可以建立文字範本，以建立另一個文字範本做為產生的文字輸出。  若要這麼做，您必須使用逸出序列來描述文字範本標記。  如果沒有使用逸出序列，產生的文字範本就含有預先定義的意義。  如需在文字範本中使用逸出序列的詳細資訊，請參閱[使用文字範本中的逸出序列](../modeling/using-escape-sequences-in-text-templates.md)。  
+---
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>How to: Generate Templates from Templates By Using Escape Sequences
+You can create a text template that creates another text template as its generated text output. To do this, you must use escape sequences to delineate the text template tags. If you do not use escape sequences, your generated text template will have a pre-defined meaning. For more information about using escape sequences in text templates, see [Using Escape Sequences in Text Templates](../modeling/using-escape-sequences-in-text-templates.md).  
   
-### 若要從文字範本中產生文字範本  
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>To generate a text template from within a text template  
   
--   使用反斜線 \(\\\) 做為逸出字元，在文字範本內產生必要的標記，以便在別的文字範本中提供指示詞、陳述式、運算式和類別等功能。  
+-   Use the backslash (\\) as an escape character to produce the necessary markup tags within the text template for directives, statements, expressions, and class features in a separate text template file.  
   
     ```  
     \<#@ directive \#>  
@@ -31,10 +48,10 @@ caps.handback.revision: 35
     \<#+ classfeature \#>  
     ```  
   
-## 範例  
- 下列範例會使用逸出字元，從文字範本產生文字範本。  `output` 指示詞會將目的檔案類型設定為文字範本檔案類型 \(.tt\)。  
+## <a name="example"></a>Example  
+ The following example uses escape characters to produce a text template from a text template. The `output` directive sets the destination file type to the text template file type (.tt).  
   
-```c#  
+```cs  
 \<#@ output extension=".tt" \#>  
 \<#@ assembly name="System.Xml.dll" \#>  
 \<#@ import namespace="System.Xml" \#>  
@@ -53,7 +70,7 @@ XmlDocument xDoc = new XmlDocument();
 \#>  
 ```  
   
- 產生的文字輸出是文字範本。  
+ The generated text output is a text template.  
   
 ```  
 <#@ output extension=".tt" #>  

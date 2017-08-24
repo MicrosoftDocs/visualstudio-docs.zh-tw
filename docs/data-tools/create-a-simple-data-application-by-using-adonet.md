@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5638a26829f0d8d0c6b24281d4c8ab57f180242c
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3329584dc8a03d4921e9bf6293e122aa3eb6cdf3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Create a simple data application by using ADO.NET
@@ -162,7 +162,7 @@ When you create an application that manipulates data in a database, you perform 
   
 3.  In the Utility file, replace the placeholder code with the following code. Notice the numbered comments (prefixed with Util-) that identify sections of the code. The table that follows the code calls out key points.  
   
-    ```c#  
+    ```cs  
     using System;  
     using System.Collections.Generic;  
     using System.Linq;  
@@ -251,7 +251,7 @@ When you create an application that manipulates data in a database, you perform 
 #### <a name="create-code-for-navigation"></a>Create code for Navigation  
  In the Navigation form, replace the existing code with the following code.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.ComponentModel;  
@@ -342,7 +342,7 @@ End Namespace
 #### <a name="create-code-for-newcustomer"></a>Create code for NewCustomer  
  Add the following code to the NewCustomer form. Step through each code block by using the numbered comments and the table after the code.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.ComponentModel;  
@@ -760,7 +760,7 @@ End Namespace
 #### <a name="create-code-for-fillorcancel"></a>Create code for FillOrCancel  
  Add the following code to the FillOrCancel form. Step through the code blocks by using the numbered comments and the table that follows the code.  
   
-```c#  
+```cs  
 using System;  
 using System.Collections.Generic;  
 using System.ComponentModel;  

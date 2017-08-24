@@ -51,10 +51,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 50cb8e237165ddd27d6b98c9bc403ad7debea81c
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 8223512c055140a8e4786adec5492384a25fe10b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation Services and WCF Data Services in Visual Studio
@@ -140,11 +140,11 @@ Visual Studio provides tools for working with Windows Communication Foundation (
   
 2.  In the Code Editor, add a constructor for the service reference:  
   
-    ```vb#  
+    ```vb  
     Dim proxy As New ServiceReference.Service1Client(  
     ```  
   
-    ```c#  
+    ```cs  
     ServiceReference.Service1Client proxy = new ServiceReference.Service1Client(  
     ```  
   

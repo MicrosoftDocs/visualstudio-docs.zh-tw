@@ -1,98 +1,115 @@
 ---
-title: "IDebugEngine2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::Attach"
-helpviewer_keywords: 
-  - "IDebugEngine2::Attach"
+title: IDebugEngine2::Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine2::Attach
+helpviewer_keywords:
+- IDebugEngine2::Attach
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugEngine2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 99441a25b9136fe434f0a9b836d913e1257e6d8a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-將偵錯引擎 \(DE\) 附加到程式或程式。  工作階段偵錯管理員 \(SDM\) 執行同處理序以 SDM DE 時呼叫。  
+---
+# <a name="idebugengine2attach"></a>IDebugEngine2::Attach
+Attaches a debug engine (DE) to a program or programs. Called by the session debug manager (SDM) when the DE is running in-process to the SDM.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Attach(   
-   IDebugProgram2**      pProgram,  
-   IDebugProgramNode2**  rgpProgramNodes,  
-   DWORD                 celtPrograms,  
-   IDebugEventCallback2* pCallback,  
-   ATTACH_REASON         dwReason  
+HRESULT Attach(   
+   IDebugProgram2**      pProgram,  
+   IDebugProgramNode2**  rgpProgramNodes,  
+   DWORD                 celtPrograms,  
+   IDebugEventCallback2* pCallback,  
+   ATTACH_REASON         dwReason  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugProgram2[]     pProgram,  
-   IDebugProgramNode2[] rgpProgramNodes,  
-   uint                 celtPrograms,  
-   IDebugEventCallback2 pCallback,  
-   Enum_ATTACH_REASON   dwReason  
+```cs  
+int Attach(   
+   IDebugProgram2[]     pProgram,  
+   IDebugProgramNode2[] rgpProgramNodes,  
+   uint                 celtPrograms,  
+   IDebugEventCallback2 pCallback,  
+   Enum_ATTACH_REASON   dwReason  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pProgram`  
- \[in\]陣列的[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示要附加至的程式。  這些都是連接埠的程式。  
+ [in] An array of [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objects that represent programs to be attached to. These are port programs.  
   
  `rgpProgramNodes`  
- \[in\]陣列的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)代表程式的節點，一個用於每個程式的物件。  此陣列中的程式節點代表相同的程式，如`pProgram`。  以便 DE 辨認附加至程式，可以使用 \[程式\] 節點。  
+ [in] An array of [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objects that represent program nodes, one for each program. The program nodes in this array represent the same programs as in `pProgram`. The program nodes are given so that the DE can identify the programs to attach to.  
   
  `celtPrograms`  
- \[in\]程式及\/或程式中的節點的數字`pProgram`和`rgpProgramNodes`陣列。  
+ [in] Number of programs and/or program nodes in the `pProgram` and `rgpProgramNodes` arrays.  
   
  `pCallback`  
- \[in\][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)是用來將偵錯事件傳送至 SDM 的物件。  
+ [in] The [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) object to be used to send debug events to the SDM.  
   
  `dwReason`  
- \[in\]介於[ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)指定的原因，讓您附加這些程式的列舉型別。  如需詳細資訊，請參閱＜備註＞一節。  
+ [in] A value from the [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) enumeration that specifies the reason for attaching these programs. For more information, see the Remarks section.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 有三個原因，讓您附加至程式、，如下所示：  
+## <a name="remarks"></a>Remarks  
+ There are three reasons for attaching to a program, as follows:  
   
--   `ATTACH_REASON_LAUNCH`指出 DE 附加到程式，因為使用者啟動包含它的處理序。  
+-   `ATTACH_REASON_LAUNCH` indicates that the DE is attaching to the program because the user launched the process that contains it.  
   
--   `ATTACH_REASON_USER`表示使用者已明確地要求 DE 附加到程式 \(或包含程式的處理序\)。  
+-   `ATTACH_REASON_USER` indicates that the user has explicitly requested the DE to attach to a program (or the process that contains a program).  
   
--   `ATTACH_REASON_AUTO`指出 DE 附加到特定的程式，因為它已經偵錯的其他程式中特定的處理程序。  這也稱為自動附加。  
+-   `ATTACH_REASON_AUTO` indicates the DE is attaching to a particular program because it is already debugging other programs in a particular process. This is also called auto-attach.  
   
- 當呼叫這個方法時，DE 必須依順序傳送這些事件：  
+ When this method is called, the DE needs to send these events in sequence:  
   
-1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)\(如果它已經尚未傳送偵錯引擎的特定執行個體\)  
+1.  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md) (if it has not already been sent for a particular instance of the debug engine)  
   
 2.  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)  
   
 3.  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)  
   
- 此外，如果將附加的原因是`ATTACH_REASON_LAUNCH`，DE 需要傳送給[IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)事件。  
+ In addition, if the reason for attaching is `ATTACH_REASON_LAUNCH`, the DE needs to send the [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md) event.  
   
- 一次 DE 取得[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件對應到程式的偵錯，它可以查詢任何私用的介面。  
+ Once the DE gets the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) object corresponding to the program being debugged, it can be queried for any private interface.  
   
- 呼叫方法的程式\] 節點中所指定的陣列之前`pProgram`或`rgpProgramNodes`，則模擬，必要時，必須在啟用`IDebugProgram2`介面代表 \[程式\] 節點。  一般情況下，不過，這個步驟並不需要。  如需詳細資訊，請參閱 [安全性問題](../../../extensibility/debugger/security-issues.md)。  
+ Before calling the methods of a program node in the array given by `pProgram` or `rgpProgramNodes`, impersonation, if required, should be enabled on the `IDebugProgram2` interface that represents the program node. Normally, however, this step is not necessary. For more information, see [Security Issues](../../../extensibility/debugger/security-issues.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
- [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)   
+ [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)   
  [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)   
  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)   

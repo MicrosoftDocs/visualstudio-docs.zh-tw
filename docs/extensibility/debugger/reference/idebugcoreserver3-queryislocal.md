@@ -1,42 +1,59 @@
 ---
-title: "IDebugCoreServer3::QueryIsLocal | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::QueryIsLocal"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::QueryIsLocal"
+title: IDebugCoreServer3::QueryIsLocal | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::QueryIsLocal
+helpviewer_keywords:
+- IDebugCoreServer3::QueryIsLocal
 ms.assetid: cca030de-f853-4ed7-b2fb-395f08a6b884
 caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
----
-# IDebugCoreServer3::QueryIsLocal
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d5cc1555f07f13dcce0de6d25ddf9399e9a3fdbc
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-判斷伺服器是否為本機呼叫端。  
+---
+# <a name="idebugcoreserver3queryislocal"></a>IDebugCoreServer3::QueryIsLocal
+Determines if the server is local to the caller.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT QueryIsLocal(  
-   void  
+HRESULT QueryIsLocal(  
+   void  
 );  
 ```  
   
-```c#  
-int QueryIsLocal();  
+```cs  
+int QueryIsLocal();  
 ```  
   
-## 傳回值  
- 傳回`S_OK` ，表示伺服器是在本機。  傳回`S_FALSE`如果伺服器正在執行中的 msvsmon.exe，通常用於遠端偵錯執行個體。  
+## <a name="return-value"></a>Return Value  
+ Returns `S_OK` to indicate the server is local. Returns `S_FALSE` if the server is running from an instance of msvsmon.exe, which is typically used for remote debugging.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

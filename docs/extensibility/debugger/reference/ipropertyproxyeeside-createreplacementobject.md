@@ -1,59 +1,76 @@
 ---
-title: "IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IPropertyProxyEESide::CreateReplacementObject"
-helpviewer_keywords: 
-  - "IPropertyProxyEESide::CreateReplacementObject"
+title: IPropertyProxyEESide::CreateReplacementObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IPropertyProxyEESide::CreateReplacementObject
+helpviewer_keywords:
+- IPropertyProxyEESide::CreateReplacementObject
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IPropertyProxyEESide::CreateReplacementObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 701333c03bbee4f7b32ccdae139fab4c85c5ef56
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-建立一份資料物件的特定運算式評估工具 \(EE\)。  
+---
+# <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
+Creates a copy of a data object specific to the expression evaluator (EE).  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT CreateReplacementObject(  
-   IEEDataStorage*  dataIn,  
-   IEEDataStorage** dataOut  
+HRESULT CreateReplacementObject(  
+   IEEDataStorage*  dataIn,  
+   IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
-int CreateReplacementObject(  
-   IEEDataStorage     dataIn,  
-   out IEEDataStorage dataOut  
+```cs  
+int CreateReplacementObject(  
+   IEEDataStorage     dataIn,  
+   out IEEDataStorage dataOut  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `dataIn`  
- \[in\][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)持有的資料来複製的物件。  
+ [in] An [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object holding the data to be copied.  
   
  `dataOut`  
- \[\] out傳回新的`IEEDataStorage`物件。  
+ [out] Returns a new `IEEDataStorage` object.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 這個方法會提供[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，表示的位元組陣列。  這個連入的資料物件通常不會實作得知 ee 給予。  不過，這個方法所傳回的物件一律實作得知 ee 給予，它可讓 EE 實作`IEEDataStorage`上想要的任何類別的介面。  
+## <a name="remarks"></a>Remarks  
+ This method is given an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object representing an array of bytes. This incoming data object is typically not implemented by the EE. However, the object returned by this method is always implemented by the EE, which lets the EE implement the `IEEDataStorage` interface on whatever class is desired.  
   
- 請注意資料提供連入的`IEEDataStorage`物件必須是相同的資料中的連出`IEEDataStorage`物件。  
+ Note that the data supplied by the incoming `IEEDataStorage` object must be the same data in the outgoing `IEEDataStorage` object.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

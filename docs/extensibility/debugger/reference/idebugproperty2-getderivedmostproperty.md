@@ -1,51 +1,68 @@
 ---
-title: "IDebugProperty2::GetDerivedMostProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::GetDerivedMostProperty"
-helpviewer_keywords: 
-  - "IDebugProperty2::GetDerivedMostProperty"
+title: IDebugProperty2::GetDerivedMostProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProperty2::GetDerivedMostProperty
+helpviewer_keywords:
+- IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugProperty2::GetDerivedMostProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: a08f93904ba7c95fe68abbbe363a6254bbe2eb2c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-取得屬性的衍生最徹底的屬性。  
+---
+# <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
+Gets the derived-most property of a property.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetDerivedMostProperty (   
-   IDebugProperty2** ppDerivedMost  
+HRESULT GetDerivedMostProperty (   
+   IDebugProperty2** ppDerivedMost  
 );  
 ```  
   
-```c#  
-int GetDerivedMostProperty (   
-   out IDebugProperty2 ppDerivedMost  
+```cs  
+int GetDerivedMostProperty (   
+   out IDebugProperty2 ppDerivedMost  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppDerivedMost`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示衍生最徹底的屬性。  
+ [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the derived-most property.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  傳回`S_GETDERIVEDMOST_NO_DERIVED_MOST`如果沒有衍生最徹底的屬性來擷取。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code. Returns `S_GETDERIVEDMOST_NO_DERIVED_MOST` if there is no derived-most property to retrieve.  
   
-## 備註  
- 比方說，如果這個屬性描述物件實作`ClassRoot`也就是實際的執行個體化，但`ClassDerived` ，衍生自`ClassRoot`，那麼這個方法會傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件描述`ClassDerived`物件。  
+## <a name="remarks"></a>Remarks  
+ For example, if this property describes an object that implements `ClassRoot` but which is actually an instantiation of `ClassDerived` that is derived from `ClassRoot`, then this method returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object describing the `ClassDerived` object.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -1,5 +1,5 @@
 ---
-title: "工具視窗中加入快顯功能表 |Microsoft 文件"
+title: Adding a Shortcut Menu in a Tool Window | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,32 +31,33 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ab921bec73528be7207baebdf9cb31885e2253fd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d9fb26e32802c28da38ad4d2617280b1ec5aefa3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>工具視窗中加入快顯功能表
-本逐步解說將工具視窗中的快顯功能表。 快顯功能表是在使用者以滑鼠右鍵按一下按鈕、 文字方塊或視窗背景時出現。 快顯功能表上的命令行為與其他功能表或工具列上的命令相同。 若要支援快顯功能表上，指定.vsct 檔案中並顯示在回應按一下滑鼠右鍵。  
+# <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Adding a Shortcut Menu in a Tool Window
+This walkthrough puts a shortcut menu in a tool window. A shortcut menu is a menu that appears when a user right-clicks a button, text box, or window background. Commands on a shortcut menu behave the same as commands on other menus or toolbars. To support a shortcut menu, specify it in the .vsct file and display it in response to the right-click of the mouse.  
   
- 工具視窗包含繼承自<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.</xref:Microsoft.VisualStudio.Shell.ToolWindowPane>的自訂工具視窗類別中的 WPF 使用者控制項  
+ A tool window consists of a WPF user control in a custom tool window class that inherits from <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>.  
   
- 本逐步解說示範如何建立快顯功能表為 Visual Studio 功能表中，宣告.vsct 檔中的功能表項目，然後使用管理套件架構定義的工具視窗的類別中實作它們。 這種方法能存取 Visual Studio 命令、 UI 項目，以及自動化物件模型。  
+ This walkthrough shows how to create a shortcut menu as a Visual Studio menu, by declaring menu items in the .vsct file, and then using the Managed Package Framework to implement them in the class that defines the tool window. This approach facilitates access to Visual Studio commands, UI elements, and the Automation object model.  
   
- 或者，如果快顯功能表將不會存取 Visual Studio 功能，您可以使用<xref:System.Windows.FrameworkElement.ContextMenu%2A>XAML 使用者控制項中項目的屬性。</xref:System.Windows.FrameworkElement.ContextMenu%2A> 如需詳細資訊，請參閱[ContextMenu](http://msdn.microsoft.com/Library/2f40b2bb-b702-4706-9fc4-10bcfd7cc35d)。  
+ Alternatively, if your shortcut menu will not access Visual Studio functionality, you can use the <xref:System.Windows.FrameworkElement.ContextMenu%2A> property of a XAML element in the user control. For more information, see [ContextMenu](/dotnet/framework/wpf/controls/contextmenu).  
   
-## <a name="prerequisites"></a>必要條件  
- 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## <a name="creating-the-tool-window-shortcut-menu-package"></a>建立工具視窗的捷徑功能表套件  
+## <a name="creating-the-tool-window-shortcut-menu-package"></a>Creating the Tool Window Shortcut Menu Package  
   
-1.  建立 VSIX 專案，名為`TWShortcutMenu`，並新增名為的工具視窗範本**快顯功能表**給它。 如需建立工具視窗的詳細資訊，請參閱[建立擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。  
+1.  Create a VSIX project named `TWShortcutMenu` and add a tool window template named **ShortCutMenu** to it. For more information about creating a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-## <a name="specifying-the-shortcut-menu"></a>指定的捷徑功能表  
- 從用來填滿工具視窗背景的色彩的清單中選取捷徑功能表，如本逐步解說中所示讓使用者。  
+## <a name="specifying-the-shortcut-menu"></a>Specifying the Shortcut Menu  
+ A shortcut menu such as the one shown in this walkthrough lets the user select from a list of colors that are used to fill the background of the tool window.  
   
-1.  在 ShortcutMenuPackage.vsct，尋找名為 guidShortcutMenuPackageCmdSet，GuidSymbol 項目中，宣告快顯功能表、 捷徑功能表群組和功能表選項。 GuidSymbol 項目現在看起來應該像這樣︰  
+1.  In ShortcutMenuPackage.vsct, find in the GuidSymbol element named guidShortcutMenuPackageCmdSet, and declare the shortcut menu, shortcut menu group, and menu options. The GuidSymbol element should now look like this:  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -69,7 +70,7 @@ ms.lasthandoff: 02/22/2017
     </GuidSymbol>  
     ```  
   
-2.  按鈕項目之前建立的功能表項目，然後定義的捷徑功能表中。  
+2.  Just before the Buttons element, create a Menus element and then define the shortcut menu in it.  
   
     ```vb  
     <Menus>  
@@ -82,9 +83,9 @@ ms.lasthandoff: 02/22/2017
     </Menus>  
     ```  
   
-     快顯功能表沒有父代，因為它不屬於功能表或工具列。  
+     A shortcut menu does not have a parent because it is not part of a menu or toolbar.  
   
-3.  建立群組項目與群組項目，其中包含快顯功能表項目，並群組與關聯的捷徑功能表。  
+3.  Create a Groups element with a Group element that contains the shortcut menu items, and associate the group with the shortcut menu.  
   
     ```xml  
     <Groups>  
@@ -94,7 +95,7 @@ ms.lasthandoff: 02/22/2017
     </Groups>  
     ```  
   
-4.  在按鈕項目定義個別的命令將會出現快顯功能表。 按鈕項目看起來應該像這樣︰  
+4.  In the Buttons element, define the individual commands that will appear on the shortcut menu. The Buttons element should look like this:  
   
     ```xml  
     <Buttons>  
@@ -129,9 +130,9 @@ ms.lasthandoff: 02/22/2017
     </Buttons>  
     ```  
   
-5.  在 ShortcutMenuPackageGuids.cs，加入命令定義設定 GUID、 快顯功能表和功能表項目。  
+5.  In ShortcutMenuPackageGuids.cs, add the definitions for the command set GUID, the shortcut menu, and the menu items.  
   
-    ```c#  
+    ```cs  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
     public const int ColorMenu = 0x1000;  
     public const int cmdidRed = 0x102;  
@@ -139,23 +140,23 @@ ms.lasthandoff: 02/22/2017
     public const int cmdidBlue = 0x104;  
     ```  
   
-     這些是 ShortcutMenuPackage.vsct 檔的 Symbols 區段中定義的相同命令 Id。 內容群組不會包含這裡因為只能在.vsct 檔中需要它。  
+     These are the same command IDs that are defined in the Symbols section of the ShortcutMenuPackage.vsct file. The context group is not included here because it is required only in the .vsct file.  
   
-## <a name="implementing-the-shortcut-menu"></a>實作快顯功能表  
- 本章節會實作快顯功能表和其命令。  
+## <a name="implementing-the-shortcut-menu"></a>Implementing the Shortcut Menu  
+ This section implements the shortcut menu and its commands.  
   
-1.  ShortcutMenu.cs，在 [工具] 視窗中可取得功能表命令的服務，但不能與其包含之控制項。 下列步驟顯示如何讓使用者控制功能表命令服務。  
+1.  In ShortcutMenu.cs, the tool window can get the menu command service, but the control it contains cannot. The following steps show how to make the menu command service available to the user control.  
   
-2.  在 ShortcutMenu.cs，新增下列 using 陳述式︰  
+2.  In ShortcutMenu.cs, add the following using statements:  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  取得功能表命令服務，並加入控制項，將功能表命令服務傳遞至 contructor 工具視窗的 initialize （） 方法來覆寫︰  
+3.  Override the tool window's Initialize() method to get the menu command service and add the control, passing the menu command service to the contructor:  
   
-    ```c#  
+    ```cs  
     protected override void Initialize()  
     {  
         commandService = (OleMenuCommandService)GetService(typeof(IMenuCommandService));  
@@ -163,9 +164,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-4.  在快顯功能表工具視窗建構函式，移除會將控制項加入的那一行。 建構函式現在看起來應該像這樣︰  
+4.  In the ShortcutMenu tool window constructor, remove the line that adds the control. The constructor should now look like this:  
   
-    ```c#  
+    ```cs  
     public ShortcutMenu() : base(null)  
     {  
         this.Caption = "ShortcutMenu";  
@@ -174,9 +175,9 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-5.  ShortcutMenuControl.xaml.cs，加入功能表命令服務的私用欄位，變更才會功能表命令服務控制建構函式。 若要新增的內容功能表命令，然後使用功能表命令服務。 ShortcutMenuControl 建構函式看起來應該類似下列的程式碼。 稍後定義的命令處理常式。  
+5.  In ShortcutMenuControl.xaml.cs, add a private field for the menu command service and change the control constructor to take the menu command service. Then use the menu command service to add the context menu commands. The ShortcutMenuControl constructor should now look like the following code. The command handler will be defined later.  
   
-    ```c#  
+    ```cs  
     public ShortcutMenuControl(OleMenuCommandService service)  
     {  
         this.InitializeComponent();  
@@ -200,7 +201,7 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-6.  在 ShortcutMenuControl.xaml，加入<xref:System.Windows.UIElement.MouseRightButtonDown>最上層事件<xref:System.Windows.Controls.UserControl>項目。</xref:System.Windows.Controls.UserControl> </xref:System.Windows.UIElement.MouseRightButtonDown> XAML 檔案現在應該看起來像這樣︰  
+6.  In ShortcutMenuControl.xaml, add a <xref:System.Windows.UIElement.MouseRightButtonDown> event to the top level <xref:System.Windows.Controls.UserControl> element. The XAML file should now look like this:  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -222,18 +223,18 @@ ms.lasthandoff: 02/22/2017
     </UserControl>  
     ```  
   
-7.  在 ShortcutMenuControl.xaml.cs，加入事件處理常式的虛設常式。  
+7.  In ShortcutMenuControl.xaml.cs, add a stub for the event handler.  
   
-    ```c#  
+    ```cs  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
     . . .  
     }  
     ```  
   
-8.  新增下列 using 陳述式相同的檔案︰  
+8.  Add the following using statements to the same file:  
   
-    ```c#  
+    ```cs  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     using System;  
@@ -241,9 +242,9 @@ ms.lasthandoff: 02/22/2017
     using System.Windows.Media;  
     ```  
   
-9. 實作`MyToolWindowMouseRightButtonDown`事件，如下所示。  
+9. Implement the `MyToolWindowMouseRightButtonDown` event as follows.  
   
-    ```c#  
+    ```cs  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
     {  
         if (null != commandService)  
@@ -257,11 +258,11 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     這會建立<xref:System.ComponentModel.Design.CommandID>快速鍵功能表中的物件識別的滑鼠點選位置，並使用在該位置開啟捷徑功能表<xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A>方法。</xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> </xref:System.ComponentModel.Design.CommandID>  
+     This creates a <xref:System.ComponentModel.Design.CommandID> object for the shortcut menu, identifies the location of the mouse click, and opens the shortcut menu in that location by using the <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService.ShowContextMenu%2A> method.  
   
-10. 實作命令處理常式。  
+10. Implement the command handler.  
   
-    ```c#  
+    ```cs  
     private void ChangeColor(object sender, EventArgs e)  
     {  
         var mc = sender as MenuCommand;  
@@ -281,18 +282,18 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-     在此情況下，只有一個方法會處理事件的所有功能表項目藉由識別<xref:System.ComponentModel.Design.CommandID>，並據此設定的背景色彩。</xref:System.ComponentModel.Design.CommandID> 如果功能表項目所包含的不相關的命令，您會建立每個命令的個別事件處理常式。  
+     In this case, just one method handles events for all of the menu items by identifying the <xref:System.ComponentModel.Design.CommandID> and setting the background color accordingly. If the menu items had contained unrelated commands, you would have created a separate event handler for each command.  
   
-## <a name="testing-the-tool-window-features"></a>測試工具視窗功能  
+## <a name="testing-the-tool-window-features"></a>Testing the Tool Window Features  
   
-1.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+1.  Build the project and start debugging. The experimental instance appears.  
   
-2.  在實驗執行個體中，按一下 **檢視 / 其他視窗**，然後按一下 **快顯功能表**。 這樣應該會顯示工具視窗。  
+2.  In the experimental instance, click **View / Other Windows**, and then click **ShortcutMenu**. Doing this should display your tool window.  
   
-3.  以滑鼠右鍵按一下 [工具] 視窗中的主體中。 應該會顯示快顯功能表具有色彩的清單。  
+3.  Right-click in the body of the tool window. A shortcut menu that has a list of colors should be displayed.  
   
-4.  按一下快顯功能表上的色彩。 工具視窗背景色彩應該變更為選取的色彩。  
+4.  Click a color on the shortcut menu. The tool window background color should be changed to the selected color.  
   
-## <a name="see-also"></a>另請參閱  
- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)   
- [使用並提供服務](../extensibility/using-and-providing-services.md)
+## <a name="see-also"></a>See Also  
+ [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)   
+ [Using and Providing Services](../extensibility/using-and-providing-services.md)

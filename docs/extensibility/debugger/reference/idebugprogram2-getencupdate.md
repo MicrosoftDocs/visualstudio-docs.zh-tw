@@ -1,51 +1,68 @@
 ---
-title: "IDebugProgram2::GetENCUpdate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetENCUpdate"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetENCUpdate"
+title: IDebugProgram2::GetENCUpdate | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::GetENCUpdate
+helpviewer_keywords:
+- IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugProgram2::GetENCUpdate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cdd91c67793ce67c1d69b3af2d35552e92eb1170
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-這個方法會取得編輯後繼續 \(ENC\) 的更新程式。  自訂的偵錯引擎一定會傳回`E_NOTIMPL`。  
+---
+# <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
+This method gets the Edit and Continue (ENC) update for this program. A custom debug engine always returns `E_NOTIMPL`.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetENCUpdate(   
-   IUnknown** ppUpdate  
+HRESULT GetENCUpdate(   
+   IUnknown** ppUpdate  
 );  
 ```  
   
-```c#  
+```cs  
 int GetENCUpdate(  
-   out object ppUpdate  
+   out object ppUpdate  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppUpdate`  
- \[\] out傳回內部介面，可用來更新這個程式。  
+ [out] Returns an internal interface that can be used to update this program.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
 > [!NOTE]
->  自訂的偵錯引擎應該永遠會傳回`E_NOTIMPL`。  
+>  A custom debug engine should always return `E_NOTIMPL`.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

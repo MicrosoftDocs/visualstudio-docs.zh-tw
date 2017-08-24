@@ -1,5 +1,5 @@
 ---
-title: "IDebugPort2::EnumProcesses |Microsoft 文件"
+title: IDebugPort2::EnumProcesses | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 15f31118b114819fac63b1cc9c8b1b0e66f353b0
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6aaadab4104b6ea2986d16bef8ac973dbd0e7caa
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
-傳回所有連接埠上執行的處理序清單。  
+Returns a list of all the processes running on a port.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT EnumProcesses(   
@@ -47,19 +48,19 @@ HRESULT EnumProcesses(
 );  
 ```  
   
-```c#  
+```cs  
 int EnumProcesses(   
    out IEnumDebugProcesses2 ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ppEnum`  
- [out]傳回[IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)物件，其中包含的所有連接埠上執行的處理序清單。  
+ [out] Returns an [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) object that contains a list of all the processes running on a port.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)   
  [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

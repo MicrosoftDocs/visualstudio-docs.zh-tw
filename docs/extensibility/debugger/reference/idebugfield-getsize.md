@@ -1,5 +1,5 @@
 ---
-title: "IDebugField::GetSize |Microsoft 文件"
+title: IDebugField::GetSize | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ef74d7e7ff50691aace25108facf60ef17d6c8cf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 53ae9005d8e20253956e23d978e4472467d4ba36
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-這個方法會取得一個欄位，以位元組為單位的大小。  
+This method gets the size of a field, in bytes.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetSize(   
@@ -47,21 +48,21 @@ HRESULT GetSize(
 );  
 ```  
   
-```c#  
+```cs  
 int GetSize(  
    out uint pdwSize  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pdwSize`  
- [out]傳回的大小。  
+ [out] Returns the size.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 所有欄位都具有型別和所有型別都有大小。 比方說，一種位元組的欄位具有 1 個位元組的大小。  
+## <a name="remarks"></a>Remarks  
+ All fields have a type and all types have a size. For example, a field with a type of byte has a size of 1 byte.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,5 +1,5 @@
 ---
-title: "相依性圖表中加入自訂架構驗證 |Microsoft 文件"
+title: Add custom architecture validation to dependency diagrams | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,117 +28,118 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 16702d78769037b693ddfc0a36ac62453e9b7115
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d14346c73d5d8ba730ff080719e65c6f1d1f3f94
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>相依性圖表中加入自訂架構驗證
-在 Visual Studio 中，使用者可以驗證針對圖層模型專案中的原始程式碼，使他們可以確認原始碼符合相依性圖表上的相依性。 有標準的驗證演算法，但您可以定義自己的驗證擴充功能。  
+# <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Add custom architecture validation to dependency diagrams
+In Visual Studio, users can validate the source code in a project against a layer model so that they can verify that the source code conforms to the dependencies on a dependency diagram. There is a standard validation algorithm, but you can define your own validation extensions.  
   
- 當使用者選取**驗證架構**命令相依性圖表中，標準驗證方法會叫用，後面接著任何已安裝的驗證擴充功能。  
+ When the user selects the **Validate Architecture** command on a dependency diagram, the standard validation method is invoked, followed by any validation extensions that have been installed.  
   
 > [!NOTE]
->  在相依性圖表中，驗證的主要目的是比較圖表與解決方案的其他部分中的程式碼。  
+>  In a dependency diagram, the main purpose of validation is to compare the diagram with the program code in other parts of the solution.  
   
- 您可以將圖層驗證擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將它散發給其他 Visual Studio 使用者。 您可以單獨將驗證程式放在 VSIX 中，或是在相同 VSIX 中將它與其他擴充功能結合。 您應該在單獨的 Visual Studio 專案中撰寫驗證程式的程式碼，而不是在與其他擴充功能相同的專案中。  
+ You can package your layer validation extension into a Visual Studio Integration Extension (VSIX), which you can distribute to other Visual Studio users. You can either place your validator in a VSIX by itself, or you can combine it in the same VSIX as other extensions. You should write the code of the validator in its own Visual Studio project, not in the same project as other extensions.  
   
 > [!WARNING]
->  建立驗證專案之後，請複製本主題結尾的 [範例程式碼](#example) ，然後視您的需要加以編輯。  
+>  After you have created a validation project, copy the [example code](#example) at the end of this topic and then edit that to your own needs.  
   
-## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-layer-diagrams.md#prereqs)。  
+## <a name="requirements"></a>Requirements  
+ See [Requirements](../modeling/extend-layer-diagrams.md#prereqs).  
   
-## <a name="defining-a-layer-validator-in-a-new-vsix"></a>在新的 VSIX 中定義圖層驗證程式  
- 建立驗證程式最快速的方法是使用專案範本。 這樣做會將程式碼和 VSIX 資訊清單放入相同的專案中。  
+## <a name="defining-a-layer-validator-in-a-new-vsix"></a>Defining a Layer Validator in a New VSIX  
+ The quickest method of creating a validator is to use the project template. This places the code and the VSIX manifest into the same project.  
   
-#### <a name="to-define-an-extension-by-using-a-project-template"></a>使用專案範本定義擴充功能  
+#### <a name="to-define-an-extension-by-using-a-project-template"></a>To define an extension by using a project template  
   
-1.  使用 [檔案]  功能表上的 [新增專案]  命令，在新的方案中建立專案。  
+1.  Create a project in a new solution, by using the **New Project** command on the **File** menu.  
   
-2.  在 [新增專案]  對話方塊中，於 [模型專案] 之下，選取 [圖層設計工具驗證擴充功能] 。  
+2.  In the **New Project** dialog box, under **Modeling Projects**, select **Layer Designer Validation Extension**.  
   
-     此範本隨即建立包含小型範例的專案。  
+     The template creates a project that contains a small example.  
   
     > [!WARNING]
-    >  Makethe 範本正常運作︰  
+    >  To makethe template work properly:  
     >   
-    >  -   編輯對 `LogValidationError` 的呼叫，移除選擇性引數 `errorSourceNodes` 和 `errorTargetNodes`。  
-    > -   如果您使用自訂屬性，套用所述更新[將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)。  
+    >  -   Edit calls to `LogValidationError` to remove the optional arguments `errorSourceNodes` and `errorTargetNodes`.  
+    > -   If you use custom properties, apply the update mentioned in [Add custom properties to dependency diagrams](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
-3.  編輯程式碼以定義您的驗證。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
+3.  Edit the code to define your validation. For more information, see [Programming Validation](#programming).  
   
-4.  若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
+4.  To test the extension, see [Debugging Layer Validation](#debugging).  
   
     > [!NOTE]
-    >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
+    >  Your method will be called only in specific circumstances, and breakpoints will not work automatically. For more information, see [Debugging Layer Validation](#debugging).  
   
-5.  若要安裝擴充功能中的主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或其他電腦上，尋找**.vsix**檔案中**bin\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+5.  To install the extension in the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or on another computer, find the **.vsix** file in **bin\\\***. Copy it to the computer where you want to install it, and then double-click it. To uninstall it, use **Extensions and Updates** on the **Tools** menu.  
   
-## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>將圖層驗證程式加入個別的 VSIX 中  
- 如果您想要建立一個包含圖層驗證程式、命令和其他擴充功能的 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對處理常式建立個別專案。 
+## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adding a Layer Validator to a Separate VSIX  
+ If you want to create one VSIX that contains layer validators, commands, and other extensions, we recommend that you create one project to define the VSIX, and separate projects for the handlers. 
   
-#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>將圖層驗證加入個別的 VSIX  
+#### <a name="to-add-layer-validation-to-a-separate-vsix"></a>To add layer validation to a separate VSIX  
   
-1.  在新的或現有的 Visual Studio 方案中建立類別庫專案。 在 [新增專案]  對話方塊中，按一下 [Visual C#]  ，然後按一下 [類別庫] 。 這個專案會包含圖層驗證類別。  
+1.  Create a Class Library project in a new or existing Visual Studio solution. In the **New Project** dialog box, click **Visual C#** and then click **Class Library**. This project will contain the layer validation class.  
   
-2.  在您的方案中識別或建立 VSIX 專案。 VSIX 專案會包含名為 **source.extension.vsixmanifest**的檔案。 如果您必須加入 VSIX 專案，請遵循下列步驟：  
+2.  Identify or create a VSIX project in your solution. A VSIX project contains a file that is named **source.extension.vsixmanifest**. If you have to add a VSIX project, follow these steps:  
   
-    1.  在 [新增專案]  對話方塊中，依序選擇 [Visual C#] 、[擴充性] 、[VSIX 專案] 。  
+    1.  In the **New Project** dialog box, choose **Visual C#**, **Extensibility**, **VSIX Project**.  
   
-    2.  在 [方案總管] 中，在 VSIX 專案的捷徑功能表上，選擇 [設定為啟始專案] 。  
+    2.  In **Solution Explorer**, on the shortcut menu of the VSIX project, **Set as Startup Project**.  
   
-3.  在 **source.extension.vsixmanifest**的 [資產] 下，加入圖層驗證專案做為 MEF 元件：  
+3.  In **source.extension.vsixmanifest**, under **Assets**, add the layer validation project as a MEF component:  
   
-    1.  選擇 [新增] 。  
+    1.  Choose **New**.  
   
-    2.  在 [加入新的資產]  對話方塊中，設定：  
+    2.  In the **Add New Asset** dialog box, set:  
   
-          =   
+         **Type** = **Microsoft.VisualStudio.MefComponent**  
   
-          =   
+         **Source** = **A project in current solution**  
   
-          = *您的驗證程式專案*  
+         **Project** = *your validator project*  
   
-4.  您也必須將它加入做為圖層驗證：  
+4.  You must also add it as a layer validation:  
   
-    1.  選擇 [新增] 。  
+    1.  Choose **New**.  
   
-    2.  在 [加入新的資產]  對話方塊中，設定：  
+    2.  In the **Add New Asset** dialog box, set:  
   
-         **型別** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 這不是下拉式清單的其中一個選項。 您必須從鍵盤輸入。  
+         **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. This is not one of the options in the drop-down list. You must enter it from the keyboard.  
   
-          =   
+         **Source** = **A project in current solution**  
   
-          = *您的驗證程式專案*  
+         **Project** = *your validator project*  
   
-5.  返回圖層驗證專案，然後加入下列專案參考：  
+5.  Return to the layer validation project, and add the following project references:  
   
-    |**參考**|**這可讓您執行**|  
+    |**Reference**|**What this allows you to do**|  
     |-------------------|------------------------------------|  
-    |Microsoft.VisualStudio.GraphModel.dll|讀取架構圖形|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|讀取與圖層相關聯的程式碼 DOM|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|讀取圖層模型|  
-    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|讀取和更新圖形和圖表。|  
-    |System.ComponentModel.Composition|使用 Managed Extensibility Framework (MEF) 定義驗證元件|  
-    |Microsoft.VisualStudio.Modeling.Sdk.[版本]|定義模型擴充功能|  
+    |Microsoft.VisualStudio.GraphModel.dll|Read the architecture graph|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.CodeSchema.dll|Read the code DOM associated with layers|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|Read the Layer model|  
+    |Microsoft.VisualStudio.ArchitectureTools.Extensibility|Read and update shapes and diagrams.|  
+    |System.ComponentModel.Composition|Define the validation component using Managed Extensibility Framework (MEF)|  
+    |Microsoft.VisualStudio.Modeling.Sdk.[version]|Define modeling extensions|  
   
-6.  將本主題結尾處的範例程式碼複製到驗證程式庫專案中的類別檔案，以包含您的驗證程式碼。 如需詳細資訊，請參閱 [程式設計驗證](#programming)。  
+6.  Copy the example code at the end of this topic into the class file in the validator library project to contain the code for your validation. For more information, see [Programming Validation](#programming).  
   
-7.  若要測試擴充功能，請參閱 [圖層驗證偵錯](#debugging)。  
+7.  To test the extension, see [Debugging Layer Validation](#debugging).  
   
     > [!NOTE]
-    >  只有在特定情況下才會呼叫您的方法，且中斷點將不會自動運作。 如需詳細資訊，請參閱 [圖層驗證偵錯](#debugging)。  
+    >  Your method will be called only in specific circumstances, and breakpoints will not work automatically. For more information, see [Debugging Layer Validation](#debugging).  
   
-8.  若要安裝 VSIX 中的主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或其他電腦上，尋找**.vsix**檔案中**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下 VSIX 檔案。 (Windows 8 中為檔案總管。)  
+8.  To install the VSIX in the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or on another computer, find the **.vsix** file in the **bin** directory of the VSIX project. Copy it to the computer where you want to install the VSIX. Double-click the VSIX file in Windows Explorer. (File Explorer in Windows 8.)  
   
-     若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+     To uninstall it, use **Extensions and Updates** on the **Tools** menu.  
   
-##  <a name="a-nameprogramminga-programming-validation"></a><a name="programming"></a>程式設計驗證  
- 若要定義圖層驗證擴充功能，您可以定義具有下列特性的類別：  
+##  <a name="programming"></a> Programming Validation  
+ To define a layer validation extension, you define a class that has the following characteristics:  
   
--   宣告的整體形式如下：  
+-   The overall form of the declaration is as follows:  
   
     ```  
   
@@ -158,32 +159,31 @@ ms.lasthandoff: 02/22/2017
       } }  
     ```  
   
--   當您發現錯誤時，可以使用 `LogValidationError()`回報。  
+-   When you discover an error, you can report it by using `LogValidationError()`.  
   
     > [!WARNING]
-    >  請不要使用 `LogValidationError`的選擇性參數。  
+    >  Do not use the optional parameters of `LogValidationError`.  
   
- 當使用者叫用 [驗證架構]  功能表命令時，圖層執行階段系統會分析圖層及其成品，以產生圖形。 圖形包含四個部分：  
+ When the user invokes the **Validate Architecture** menu command, the layer runtime system analyses the layers and their artifacts to produce a graph. The graph has four parts:  
   
--   
-          [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案的圖層模型，在圖形中以節點和連結表示。  
+-   The layer models of the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution that are represented as nodes and links in the graph.  
   
--   定義在方案中並以節點表示的程式碼、專案項目和其他成品，以及代表分析程序所探索到之相依性的連結。  
+-   The code, project items, and other artifacts that are defined in the solution and represented as nodes, and links that represent the dependencies discovered by the analysis process.  
   
--   從圖層節點到程式碼成品節點的連結。  
+-   Links from the layer nodes to the code artifact nodes.  
   
--   代表驗證程式所發現之錯誤的節點。  
+-   Nodes that represent errors discovered by the validator.  
   
- 建構好圖形後，會呼叫標準驗證方法。 完成時，任何已安裝的擴充驗證方法會依未指定的順序呼叫。 圖形會傳遞至每個 `ValidateArchitecture` 方法，它可以掃描圖形並報告其所找到的任何錯誤。  
+ When the graph has been constructed, the standard validation method is called. When this is complete, any installed extension validation methods are called in unspecified order. The graph is passed to each `ValidateArchitecture` method, which can scan the graph and report any errors that it finds.  
   
 > [!NOTE]
->  這不是可用於定義域專屬語言的驗證程序相同。  
+>  This is not the same as the validation process that can be used in domain-specific languages.  
   
- 驗證方法不應該變更圖層模型或正在驗證的程式碼。  
+ Validation methods should not change the layer model or the code that is being validated.  
   
- 圖形模型定義在<xref:Microsoft.VisualStudio.GraphModel>.</xref:Microsoft.VisualStudio.GraphModel> 其主體類別是<xref:Microsoft.VisualStudio.GraphModel.GraphNode>和<xref:Microsoft.VisualStudio.GraphModel.GraphLink>.</xref:Microsoft.VisualStudio.GraphModel.GraphLink> </xref:Microsoft.VisualStudio.GraphModel.GraphNode>  
+ The graph model is defined in <xref:Microsoft.VisualStudio.GraphModel>. Its principal classes are <xref:Microsoft.VisualStudio.GraphModel.GraphNode> and <xref:Microsoft.VisualStudio.GraphModel.GraphLink>.  
   
- 每個節點和每個連結都有一個或多個類別，此類別會指定其所代表的項目或關聯性的類型。 典型圖形的節點有下列類別：  
+ Each Node and each Link has one or more Categories which specify the type of element or relationship that it represents. The nodes of a typical graph have the following categories:  
   
 -   Dsl.LayerModel  
   
@@ -203,39 +203,38 @@ ms.lasthandoff: 02/22/2017
   
 -   CodeSchema_Property  
   
- 從圖層到程式碼中之項目的連結具有「代表」的類別。  
+ Links from layers to elements in the code have the category "Represents".  
   
-##  <a name="a-namedebugginga-debugging-validation"></a><a name="debugging"></a>驗證偵錯  
- 若要對您的圖層驗證擴充功能進行偵錯，請按 CTRL + F5。 
-          [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本執行個體中，開啟或建立圖層模型。 此模型必須與程式碼相關聯，而且必須有至少一個相依性。  
+##  <a name="debugging"></a> Debugging Validation  
+ To debug your layer validation extension, press CTRL+F5. An experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens. In this instance, open or create a layer model. This model must be associated with code, and must have at least one dependency.  
   
-### <a name="test-with-a-solution-that-contains-dependencies"></a>測試包含相依性的方案  
- 除非有下列特性，否則不會執行驗證：  
+### <a name="test-with-a-solution-that-contains-dependencies"></a>Test with a Solution that contains Dependencies  
+ Validation is not executed unless the following characteristics are present:  
   
--   相依性圖表沒有至少一個相依性連結。  
+-   There is at least one dependency link on the dependency diagram.  
   
--   在模型中有與程式碼項目相關聯的圖層。  
+-   There are layers in the model that are associated with code elements.  
   
- 第一次啟動 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體測試驗證擴充功能時，請開啟或建立具有下列特性的方案。  
+ The first time that you start an experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to test your validation extension, open or create a solution that has these characteristics.  
   
-### <a name="run-clean-solution-before-validate-architecture"></a>在驗證架構之前執行清除方案  
- 每當您更新驗證程式碼時，請使用實驗性方案中 [建置]  功能表上的 [清除方案]  命令，然後再測試驗證命令。 這是必要的，因為會快取驗證結果。 如果您未更新測試相依性圖表或其程式碼，將不會執行驗證方法。  
+### <a name="run-clean-solution-before-validate-architecture"></a>Run Clean Solution before Validate Architecture  
+ Whenever you update your validation code, use the **Clean Solution** command on the **Build** menu in the experimental solution, before you test the Validate command. This is necessary because the results of validation are cached. If you have not updated the test dependency diagram or its code, the validation methods will not be executed.  
   
-### <a name="launch-the-debugger-explicitly"></a>明確地啟動偵錯工具  
- 驗證會在個別的處理序中執行。 因此，不會觸發驗證方法中的中斷點。 驗證開始時，您必須明確地將偵錯工具附加到處理序。  
+### <a name="launch-the-debugger-explicitly"></a>Launch the Debugger Explicitly  
+ Validation runs in a separate process. Therefore, the breakpoints in your validation method will not be triggered. You must attach the debugger to the process explicitly when validation has started.  
   
- 若要將偵錯工具附加到驗證處理序，請在驗證方法的開頭，插入對 `System.Diagnostics.Debugger.Launch()` 的呼叫。 偵錯對話方塊出現時，選取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的主要執行個體。  
+ To attach the debugger to the validation process, insert a call to `System.Diagnostics.Debugger.Launch()` at the start of your validation method. When the debugging dialog box appears, select the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
- 或者，您可以插入對 `System.Windows.Forms.MessageBox.Show()`的呼叫。 訊息方塊出現時，請移至主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]和**偵錯**功能表上，按一下**附加至處理序**。 選取名為 **Graphcmd.exe**的處理序。  
+ Alternatively, you can insert a call to `System.Windows.Forms.MessageBox.Show()`. When the message box appears, go to the main instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] and on the **Debug** menu click **Attach to Process**. Select the process that is named **Graphcmd.exe**.  
   
- 一律藉由按 CTRL + F5 ([啟動但不偵錯]) 來啟動實驗執行個體。  
+ Always start the experimental instance by pressing CTRL+F5 (**Start without Debugging**).  
   
-### <a name="deploying-a-validation-extension"></a>部署驗證擴充功能  
- 若要在已安裝 Visual Studio 適當版本的電腦上安裝您的驗證擴充功能，請在目標電腦上開啟 VSIX 檔案。 若要在已安裝 [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] 的電腦上安裝，您必須手動將 VSIX 內容解壓縮到 [擴充功能] 資料夾。 如需詳細資訊，請參閱[部署圖層模型擴充功能](../modeling/deploy-a-layer-model-extension.md)。  
+### <a name="deploying-a-validation-extension"></a>Deploying a Validation Extension  
+ To install your validation extension on a computer on which a suitable version of Visual Studio is installed, open the VSIX file on the target computer. To install on a computer on which [!INCLUDE[esprbuild](../misc/includes/esprbuild_md.md)] is installed, you must manually extract the VSIX contents into an Extensions folder. For more information, see [Deploy a layer model extension](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="a-nameexamplea-example-code"></a><a name="example"></a>範例程式碼  
+##  <a name="example"></a> Example code  
   
-```c#  
+```cs  
 using System;  
 using System.ComponentModel.Composition;  
 using System.Globalization;  
@@ -294,6 +293,6 @@ namespace Validator3
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [擴充相依性圖表](../modeling/extend-layer-diagrams.md)
+## <a name="see-also"></a>See Also  
+ [Extend dependency diagrams](../modeling/extend-layer-diagrams.md)
 

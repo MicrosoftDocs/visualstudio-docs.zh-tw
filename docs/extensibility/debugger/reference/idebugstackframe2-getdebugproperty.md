@@ -1,52 +1,69 @@
 ---
-title: "IDebugStackFrame2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
+title: IDebugStackFrame2::GetDebugProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugStackFrame2::GetDebugProperty
+helpviewer_keywords:
+- IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugStackFrame2::GetDebugProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 6592ecfbf38f190cdaeac2c2f494a390babc8c99
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-取得堆疊框架的屬性描述。  
+---
+# <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
+Gets a description of the properties of a stack frame.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppDebugProp  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppDebugProp  
 );  
 ```  
   
-```c#  
-int GetDebugProperty (   
-   out IDebugProperty2 ppDebugProp  
+```cs  
+int GetDebugProperty (   
+   out IDebugProperty2 ppDebugProp  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppDebugProp`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，描述此堆疊框架的內容。  
+ [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that describes the properties of this stack frame.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 呼叫[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)與適當的篩選器的方法可以擷取區域變數、 方法參數、 暫存器和堆疊框架相關聯"this"指標。  
+## <a name="remarks"></a>Remarks  
+ Calling the [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) method with appropriate filters can retrieve the local variables, method parameters, registers, and "this" pointer associated with the stack frame.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

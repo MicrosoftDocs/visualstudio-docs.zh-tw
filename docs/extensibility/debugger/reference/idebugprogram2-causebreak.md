@@ -1,48 +1,65 @@
 ---
-title: "IDebugProgram2::CauseBreak | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::CauseBreak"
-helpviewer_keywords: 
-  - "IDebugProgram2::CauseBreak"
+title: IDebugProgram2::CauseBreak | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::CauseBreak
+helpviewer_keywords:
+- IDebugProgram2::CauseBreak
 ms.assetid: 07d353fc-68ab-4297-a18f-3d3c7a80e121
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugProgram2::CauseBreak
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 32c85b2a83012d867e6b6d5a6336b948589c6c32
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-程式停止執行下一個要求的時間它執行緒嘗試執行其中一項。  
+---
+# <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
+Requests that the program stop execution the next time one of its threads attempts to run.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT CauseBreak(   
-   void   
+HRESULT CauseBreak(   
+   void   
 );  
 ```  
   
-```c#  
+```cs  
 int CauseBreak();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)當這個程式接下來會嘗試執行程式碼，呼叫這個方法後，事件就會傳送。  
+## <a name="remarks"></a>Remarks  
+ An [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) event is sent when the program next attempts to run code after this method is called.  
   
- 這個方法是非同步的因為此方法會立即傳回而不一定等待程式停止。  
+ This method is asynchronous in that the method returns immediately without necessarily waiting for the program to stop.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

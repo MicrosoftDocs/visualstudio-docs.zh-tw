@@ -1,59 +1,76 @@
 ---
-title: "IEnumDebugPropertyInfo2::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugPropertyInfo2::Next"
-helpviewer_keywords: 
-  - "IEnumDebugPropertyInfo2::Next"
+title: IEnumDebugPropertyInfo2::Next | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEnumDebugPropertyInfo2::Next
+helpviewer_keywords:
+- IEnumDebugPropertyInfo2::Next
 ms.assetid: 4eb8c7c3-aadf-4187-abee-c0620308a3eb
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IEnumDebugPropertyInfo2::Next
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e8928b6f74ea359958d0b3a660af0636f294a26a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-傳回下一個項目從集合的列舉型別。  
+---
+# <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
+Returns the next set of elements from the enumeration.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT Next(  
-   ULONG                 celt,  
-   DEBUG_PROPERTY_INFO** rgelt,  
-   ULONG*                pceltFetched  
+   ULONG                 celt,  
+   DEBUG_PROPERTY_INFO** rgelt,  
+   ULONG*                pceltFetched  
 );  
 ```  
   
-```c#  
+```cs  
 int Next(  
-   uint                  celt,  
-   DEBUG_PROPERTY_INFO[] rgelt,  
-   ref uint              pceltFetched  
+   uint                  celt,  
+   DEBUG_PROPERTY_INFO[] rgelt,  
+   ref uint              pceltFetched  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]若要擷取的項目數。  也會指定最大`rgelt`陣列。  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- 輸入 \[、 輸出\]陣列的[DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會自動填入的項目。  
+ [in, out] Array of [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elements to be filled in.  
   
  `pceltFetched`  
- \[\] out傳回以實際傳回的項目數`rgelt`。  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果少於無法傳回所要求的項目數目。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)   
- [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+ [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

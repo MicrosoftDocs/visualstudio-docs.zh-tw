@@ -1,48 +1,65 @@
 ---
-title: "IDebugField::Equal | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::Equal"
-helpviewer_keywords: 
-  - "IDebugField::Equal 方法"
+title: IDebugField::Equal | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::Equal
+helpviewer_keywords:
+- IDebugField::Equal method
 ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugField::Equal
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b66dd6f8272221ec66cf2425883df6e591c416b0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-這個方法會比較此欄位與指定的欄位相等。  
+---
+# <a name="idebugfieldequal"></a>IDebugField::Equal
+This method compares this field with the specified field for equality.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT Equal(   
-   IDebugField* pField  
+HRESULT Equal(   
+   IDebugField* pField  
 );  
 ```  
   
-```c#  
+```cs  
 int Equal(  
-   IDebugField pField  
+   IDebugField pField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pField`  
- \[in\]比較這個欄位。  
+ [in] The field to compare to this one.  
   
-## 傳回值  
- 如果欄位是相同時，會傳回`S_OK`。  如果欄位不同，會傳回`S_FALSE.`否則會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If the fields are the same, returns `S_OK`. If the fields are different, returns `S_FALSE.` Otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

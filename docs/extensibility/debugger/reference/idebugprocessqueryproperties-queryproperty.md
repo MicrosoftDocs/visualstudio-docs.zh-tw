@@ -1,5 +1,5 @@
 ---
-title: "IDebugProcessQueryProperties::QueryProperty |Microsoft 文件"
+title: IDebugProcessQueryProperties::QueryProperty | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,16 +28,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f1b945948d80b1f1dcfd65bd2ce626b45a77094e
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e9d9d5226745a544095a5f7a74c01625537a80f5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
-此方法會查詢指定的屬性值的偵錯程序。  
+This method queries for a specified property value of the debugging process.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT QueryProperty(  
@@ -45,15 +46,15 @@ HRESULT QueryProperty(
    VARIANT               *pvarPropValue);  
 ```  
   
-```c#  
+```cs  
 int QueryProperty(  
    enum_PROCESS_PROPERTY_TYPE dwPropType,  
    out object                 pvarPropValue);  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `dwPropType`  
- [in]查詢屬性的定義。 這些值包括：  
+ [in] Definition of the property queried. The values are:  
   
 -   PROCESS_PROPERTY_COMMAND_LINE = 1  
   
@@ -62,13 +63,13 @@ int QueryProperty(
 -   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
  `pvarPropValue`  
- [out]屬性的值。  
+ [out] The value of the property.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 這個方法很少使用。  
+## <a name="remarks"></a>Remarks  
+ This method is seldom used.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

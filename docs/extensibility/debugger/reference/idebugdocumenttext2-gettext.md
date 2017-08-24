@@ -1,68 +1,85 @@
 ---
-title: "IDebugDocumentText2::GetText | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentText2::GetText"
-helpviewer_keywords: 
-  - "IDebugDocumentText2::GetText"
+title: IDebugDocumentText2::GetText | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentText2::GetText
+helpviewer_keywords:
+- IDebugDocumentText2::GetText
 ms.assetid: f8c15a58-da77-473e-a721-7a094e306c63
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugDocumentText2::GetText
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: d961a2a873254aa94df8d6903bd16b03ef170325
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-從指定的位置，文件中擷取的文字。  
+---
+# <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
+Retrieves the text from the specified position in the document.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetText(   
-   TEXT_POSITION pos,  
-   ULONG         cMaxChars,  
-   WCHAR*        pText,  
-   ULONG*        pcNumChars  
+HRESULT GetText(   
+   TEXT_POSITION pos,  
+   ULONG         cMaxChars,  
+   WCHAR*        pText,  
+   ULONG*        pcNumChars  
 );  
 ```  
   
-```c#  
-int GetText(   
-   eumn_TEXT_POSITION pos,  
-   uint               cMaxChars,  
-   IntPtr             pText,  
-   out uint           pcNumChars  
+```cs  
+int GetText(   
+   eumn_TEXT_POSITION pos,  
+   uint               cMaxChars,  
+   IntPtr             pText,  
+   out uint           pcNumChars  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pos`  
- \[in\]A [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)結構，其指出要擷取文字的位置。  
+ [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates the location of the text to be retrieved.  
   
  `cMaxChars`  
- \[in\]要擷取的文字字元的數目上限。  
+ [in] The maximum number of characters of the text to be retrieved.  
   
  `pText`  
- 輸入 \[、 輸出\]是要在以想要的文字填滿的緩衝區指標。  這個緩衝區必須至少包含`cMaxChars`寬字元的數字。  
+ [in, out] A pointer to a buffer that is to be filled in with the desired text. This buffer must be able to contain at least `cMaxChars` number of wide characters.  
   
  `pcNumChars`  
- \[\] out傳回實際擷取的字元的數。  
+ [out] Returns the number of characters actually retrieved.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 範例  
- 這個範例會示範如何呼叫這個方法，從 C\#。  
+## <a name="example"></a>Example  
+ This example shows how this method can be called from C#.  
   
-```c#  
+```cs  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio;  
 using Microsoft.VisualStudio.Debugger.Interop;  
@@ -98,6 +115,6 @@ namespace Mynamespace
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

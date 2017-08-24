@@ -1,62 +1,79 @@
 ---
-title: "包含項目 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "Include"
-helpviewer_keywords: 
-  - "包含項目 (VSCT XML 結構描述)"
-  - "VSCT XML 結構描述項目包括"
+title: Include Element | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- Include
+helpviewer_keywords:
+- Include element (VSCT XML schema)
+- VSCT XML schema elements, Include
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# 包含項目
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 92af4aa2802558fba71fe3b088ea76fee3d58f0d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-包含項目會指定可以找到的檔案所提供包含可插入至目前檔案的路徑。  所有符號和定義的型別都會在已編譯的結果。  
+---
+# <a name="include-element"></a>Include Element
+The Include element specifies a file that can be located on the supplied include path for insertion into the current file.  All symbols and types defined will become part of the compiled result.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```c#  
+```cs  
 <Include href="stdidcmd.h" />  
 ```  
   
-## 屬性和項目  
- 下列章節說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>Attributes and Elements  
+ The following sections describe attributes, child elements, and parent elements.  
   
-### 屬性  
+### <a name="attributes"></a>Attributes  
   
-|屬性|描述|  
-|--------|--------|  
-|href|必要項。 標頭檔的路徑:<br /><br /> href\="stdidcmd.h 」|  
-|條件|選擇項。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|Attribute|Description|  
+|---------------|-----------------|  
+|href|Required. The path to the header file:<br /><br /> href="stdidcmd.h"|  
+|Condition|Optional. See [Conditional Attributes](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
-### 子項目  
+### <a name="child-elements"></a>Child Elements  
   
-|項目|描述|  
-|--------|--------|  
-|無。|無。|  
+|Element|Description|  
+|-------------|-----------------|  
+|None.|None.|  
   
-### 父項目  
+### <a name="parent-elements"></a>Parent Elements  
   
-|項目|描述|  
-|--------|--------|  
-|[CommandTable 項目](../extensibility/commandtable-element.md)|定義的所有項目代表命令 — 也就是功能表項目、 功能表、 工具列和下拉式方塊 — VSPackage 提供 ide。|  
+|Element|Description|  
+|-------------|-----------------|  
+|[CommandTable Element](../extensibility/commandtable-element.md)|Defines all of the elements that represent commands — that is, menu items, menus, toolbars, and combo boxes — that a VSPackage provides to the IDE.|  
   
-## 範例  
+## <a name="example"></a>Example  
   
 ```  
 <Include href="PackagePlacements.vsct"/>  
 ```  
   
-## 請參閱  
- [Visual Studio 命令資料表 \(。Vsct\) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>See Also  
+ [Visual Studio Command Table (.Vsct) Files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

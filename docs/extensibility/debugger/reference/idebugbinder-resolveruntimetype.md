@@ -1,58 +1,75 @@
 ---
-title: "IDebugBinder::ResolveRuntimeType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder::ResolveRuntimeType"
-helpviewer_keywords: 
-  - "IDebugBinder::ResolveRuntimeType 方法"
+title: IDebugBinder::ResolveRuntimeType | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugBinder::ResolveRuntimeType
+helpviewer_keywords:
+- IDebugBinder::ResolveRuntimeType method
 ms.assetid: 6456ab3e-1c03-4f3c-91f9-16797ab7f5e7
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugBinder::ResolveRuntimeType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 0b14c39a8f254342122e77c3f29fc1c454b377ab
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-這個方法會決定物件的執行階段型別。  
+---
+# <a name="idebugbinderresolveruntimetype"></a>IDebugBinder::ResolveRuntimeType
+This method determines the run-time type of an object.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT ResolveRuntimeType(   
-   IDebugObject* pObject,  
-   IDebugField** ppResolved  
+HRESULT ResolveRuntimeType(   
+   IDebugObject* pObject,  
+   IDebugField** ppResolved  
 );  
 ```  
   
-```c#  
+```cs  
 int ResolveRuntimeType(  
-   IDebugObject     pObject,   
-   out IDebugField  ppResolved  
+   IDebugObject     pObject,   
+   out IDebugField  ppResolved  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pObject`  
- \[in\][IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)解析。  
+ [in] The [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) to be resolved.  
   
  `ppResolved`  
- \[\] out傳回的物件的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)。  
+ [out] Returns the type of the object as an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 執行階段型別物件未必是已知在編譯時期。  例如，使用多型，引數可以傳遞至函式為其基底類別，例如 \[button 類別。  實際的引數可能衍生的類別，例如選項按鈕類別。  
+## <a name="remarks"></a>Remarks  
+ The run-time type of an object is not always known at compile time. For example, using polymorphism, an argument can be passed to a function as its base class, such as a button class. The actual argument might be a derived class, such as a radio button class.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

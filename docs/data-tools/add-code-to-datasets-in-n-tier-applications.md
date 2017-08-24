@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: ee1a0cf1b392fe6407fb66cf64a2372cc2208a69
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 78304b0239a2188b43f8cfca440b4bcec0ac3adf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Add code to datasets in n-tier applications
@@ -67,14 +67,14 @@ You can extend the functionality of a dataset by creating a partial class file f
   
      The following example shows where to add code to the CustomersDataTable in the NorthwindDataSet:  
   
-    ```vb#  
+    ```vb  
     Partial Public Class CustomersDataTable  
         ' Add code here to add functionality   
         ' to the CustomersDataTable.  
     End Class  
     ```  
   
-    ```c#  
+    ```cs  
     partial class CustomersDataTable  
     {  
         // Add code here to add functionality  

@@ -1,115 +1,132 @@
 ---
-title: "MODULE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO"
-helpviewer_keywords: 
-  - "MODULE_INFO 結構"
+title: MODULE_INFO | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MODULE_INFO
+helpviewer_keywords:
+- MODULE_INFO structure
 ms.assetid: f2e06180-1ab3-4eb5-a428-7994cceb61b6
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# MODULE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 2ad0fe31572fda794a8be06580330a63c0ca0d0b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-描述特定模組 \(DLL、 執行檔或組件\)。  
+---
+# <a name="moduleinfo"></a>MODULE_INFO
+Describes a particular module (DLL, EXE, or assembly).  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-typedef struct tagMODULE_INFO {   
-   MODULE_INFO_FIELDS dwValidFields;  
-   BSTR               m_bstrName;  
-   BSTR               m_bstrUrl;  
-   BSTR               m_bstrVersion;  
-   BSTR               m_bstrDebugMessage;  
-   UINT64             m_addrLoadAddress;  
-   UINT64             m_addrPreferredLoadAddress;  
-   DWORD              m_dwSize;  
-   DWORD              m_dwLoadOrder;  
-   FILETIME           m_TimeStamp;  
-   BSTR               m_bstrUrlSymbolLocation;  
-   MODULE_FLAGS       m_dwModuleFlags;  
+typedef struct tagMODULE_INFO {   
+   MODULE_INFO_FIELDS dwValidFields;  
+   BSTR               m_bstrName;  
+   BSTR               m_bstrUrl;  
+   BSTR               m_bstrVersion;  
+   BSTR               m_bstrDebugMessage;  
+   UINT64             m_addrLoadAddress;  
+   UINT64             m_addrPreferredLoadAddress;  
+   DWORD              m_dwSize;  
+   DWORD              m_dwLoadOrder;  
+   FILETIME           m_TimeStamp;  
+   BSTR               m_bstrUrlSymbolLocation;  
+   MODULE_FLAGS       m_dwModuleFlags;  
 } MODULE_INFO;  
 ```  
   
-```c#  
-public struct MODULE_INFO {   
-   public uint     dwValidFields;  
-   public string   m_bstrName;  
-   public string   m_bstrUrl;  
-   public string   m_bstrVersion;  
-   public string   m_bstrDebugMessage;  
-   public ulong    m_addrLoadAddress;  
-   public ulong    m_addrPreferredLoadAddress;  
-   public uint     m_dwSize;  
-   public uint     m_dwLoadOrder;  
-   public FILETIME m_TimeStamp;  
-   public string   m_bstrUrlSymbolLocation;  
-   public uint     m_dwModuleFlags;  
+```cs  
+public struct MODULE_INFO {   
+   public uint     dwValidFields;  
+   public string   m_bstrName;  
+   public string   m_bstrUrl;  
+   public string   m_bstrVersion;  
+   public string   m_bstrDebugMessage;  
+   public ulong    m_addrLoadAddress;  
+   public ulong    m_addrPreferredLoadAddress;  
+   public uint     m_dwSize;  
+   public uint     m_dwLoadOrder;  
+   public FILETIME m_TimeStamp;  
+   public string   m_bstrUrlSymbolLocation;  
+   public uint     m_dwModuleFlags;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Members  
  dwValidFields  
- 從的旗標組合[MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)指定哪些欄位已填寫的列舉型別。  
+ A combination of flags from the [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeration that specifies which fields are filled out.  
   
- m\_bstrName  
- 模組名稱。  
+ m_bstrName  
+ The module name.  
   
- m\_bstrUrl  
- 模組的 URL。  
+ m_bstrUrl  
+ The module URL.  
   
- m\_bstrVersion  
- 模組的版本。  
+ m_bstrVersion  
+ The module version.  
   
- m\_bstrDebugMessage  
- 選擇性的訊息相關的模組，比方說，"無法載入符號。"  
+ m_bstrDebugMessage  
+ An optional message about the module, for example, "Symbols cannot be loaded."  
   
- m\_addrLoadAddress  
- 模組的載入位址。  
+ m_addrLoadAddress  
+ The module load address.  
   
- m\_addrPreferredLoadAddress  
- 模組的慣用的載入位址。  
+ m_addrPreferredLoadAddress  
+ The preferred load address of the module.  
   
- m\_dwSize  
- 模組大小。  
+ m_dwSize  
+ The module size.  
   
- m\_dwLoadOrder  
- 模組的載入順序。  
+ m_dwLoadOrder  
+ The module load order.  
   
- m\_TimeStamp  
- 符號檔案上次修改時間。  
+ m_TimeStamp  
+ The time the symbol file was last modified.  
   
- m\_bstrUrlSymbolLocation  
- 符號檔的位置 \(例如，"。  \\"\) 指定模組中。  若要尋找模組的符號作為起始位置。  
+ m_bstrUrlSymbolLocation  
+ The location of the symbol file (for example, ".\\") specified in the module. Used as a starting location to find symbols for a module.  
   
- m\_dwModuleFlags  
- 從的旗標組合[MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)描述模組的列舉型別。  
+ m_dwModuleFlags  
+ A combination of flags from the [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) enumeration that describes the module.  
   
-## 備註  
- 這個結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)填滿其中的方法。  
+## <a name="remarks"></a>Remarks  
+ This structure is passed to the [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) method where it is filled in.  
   
- 這個結構會對應到列在每個模組**模組**視窗。  
+ This structure corresponds to each module listed in the **Modules** window.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE\_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

@@ -1,39 +1,55 @@
 ---
-title: "AsyncTaskMethodBuilder &lt; TResult &gt;。ObjectIdForDebugger 屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ObjectForDebugger 屬性，AsyncTaskMethodBuilder < TResult > 結構 [.NET Framework 偵錯引擎]"
+title: AsyncTaskMethodBuilder&lt;TResult&gt;.ObjectIdForDebugger Property | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ObjectForDebugger property, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 060b857f-daf5-43ea-bb51-abf9368e1e91
 caps.latest.revision: 3
-caps.handback.revision: 3
-ms.author: "gregvanl"
-manager: "ghogen"
----
-# AsyncTaskMethodBuilder &lt; TResult &gt;。ObjectIdForDebugger 屬性
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e9abc52c67016d4077c08f9e8366adb9ae317727
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-取得物件，可用來唯一識別此產生器來偵錯工具。  
+---
+# <a name="asynctaskmethodbuilderlttresultgtobjectidfordebugger-property"></a>AsyncTaskMethodBuilder&lt;TResult&gt;.ObjectIdForDebugger Property
+Gets an object that may be used to uniquely identify this builder to the debugger.  
   
- **命名空間:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
+ **Namespace:** <xref:System.Runtime.CompilerServices?displayProperty=fullName>  
   
- **組件:** mscorlib \(在 mscorlib.dll\)  
+ **Assembly:** mscorlib (in mscorlib.dll)  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 \(CIL\)。  
+ Because you cannot access this internal member from the .NET Framework, the following syntax is provided in Common Intermediate Language (CIL).  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```c#  
+```cs  
 private object ObjectIdForDebugger  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>   
- [.NET Framework 的平行擴充內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ [Parallel Extension Internals for the .NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

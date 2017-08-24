@@ -1,40 +1,57 @@
 ---
-title: "逐步解說: 將內容類型連結至檔案名稱副檔名 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "編輯器 [Visual Studio SDK]，新的連結內容類型為檔案副檔名"
+title: 'Walkthrough: Linking a Content Type to a File Name Extension | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
----
-# 逐步解說: 將內容類型連結至檔案名稱副檔名
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 3f5a533ddab8e09040bb132cd2ad0c511308ce5c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-您可以定義您自己的內容類型，並使用編輯器 Managed Extensibility Framework \(MEF\) 延伸模組，將副檔名連結到它。 在某些情況下，檔案的副檔名已經定義的語言服務。不過，使用 MEF 您仍必須將它連結到內容類型。  
+---
+# <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Walkthrough: Linking a Content Type to a File Name Extension
+You can define your own content type and link a file name extension to it by using editor Managed Extensibility Framework (MEF) extensions. In some cases, the file name extension has already been defined by a language service; nevertheless, to use it with MEF you still must link it to a content type.  
   
-## 必要條件  
- 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## 建立 MEF 專案  
+## <a name="creating-a-mef-project"></a>Creating a MEF Project  
   
-1.  建立 C\# VSIX 專案。 \(在 **新的專案** 對話方塊中，選取 **Visual C\# \/ 擴充性**, ，然後 **VSIX 專案**。\) 將方案命名為 `ContentTypeTest`。  
+1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `ContentTypeTest`.  
   
-2.  在 **source.extension.vsixmanifest** 檔案，請移至 **資產** 索引標籤，然後設定 **類型** 欄位 **Microsoft.VisualStudio.MefComponent**, 、 **來源** 欄位 **目前方案中的專案**, ，和 **專案** 欄位設為專案的名稱。  
+2.  In the **source.extension.vsixmanifest** file, go to the **Assets** tab, and set the **Type** field to **Microsoft.VisualStudio.MefComponent**, the **Source** field to **A project in current solution**, and the **Project** field to the name of the project.  
   
-## 定義內容類型  
+## <a name="defining-the-content-type"></a>Defining the Content Type  
   
-1.  將類別檔案，並將它 `FileAndContentTypes`。  
+1.  Add a class file and name it `FileAndContentTypes`.  
   
-2.  加入下列組件的參考：  
+2.  Add references to the following assemblies:  
   
     1.  System.ComponentModel.Composition  
   
@@ -42,25 +59,25 @@ caps.handback.revision: 24
   
     3.  Microsoft.VisualStudio.CoreUtility  
   
-3.  新增下列 `using` 指示詞。  
+3.  Add the following `using` directives.  
   
-    ```c#  
+    ```cs  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text.Classification;  
     using Microsoft.VisualStudio.Utilities;  
   
     ```  
   
-4.  宣告靜態類別中包含的定義。  
+4.  Declare a static class that contains the definitions.  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  在此類別中匯出 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 名為 「 隱藏 」 和 「 文字 」，為其基底定義宣告。  
+5.  In this class, export a <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> named "hid" and declare its base definition to be "text".  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {  
         [Export]  
@@ -70,11 +87,11 @@ caps.handback.revision: 24
     }  
     ```  
   
-## 內容類型連結的檔案名稱副檔名  
+## <a name="linking-a-file-name-extension-to-a-content-type"></a>Linking a File Name Extension to a Content Type  
   
--   若要將此內容類型對應至檔案的副檔名，匯出 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 擴充功能的 「.hid 」 和內容類型 「 隱藏 」。  
+-   To map this content type to a file name extension, export a <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> that has the extension ".hid" and the content type "hid".  
   
-    ```c#  
+    ```cs  
     internal static class FileAndContentTypeDefinitions  
     {  
          [Export]  
@@ -89,18 +106,18 @@ caps.handback.revision: 24
     }  
     ```  
   
-## 將內容類型加入至編輯器匯出  
+## <a name="adding-the-content-type-to-an-editor-export"></a>Adding the Content Type to an Editor Export  
   
-1.  建立編輯器延伸模組。 例如，您可以使用邊界圖像 \(glyph\) 延伸模組中所述 [逐步解說︰ 建立邊界圖像](../extensibility/walkthrough-creating-a-margin-glyph.md)。  
+1.  Create an editor extension. For example, you can use the margin glyph extension described in [Walkthrough: Creating a Margin Glyph](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  加入您在此程序中定義的類別。  
+2.  Add the class you defined in this procedure.  
   
-3.  當您匯出的擴充類別時，加入 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 「 隱藏 」 給它的型別。  
+3.  When you export the extension class, add a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of type "hid" to it.  
   
-    ```c#  
+    ```cs  
     [Export]  
     [ContentType("hid")]  
     ```  
   
-## 請參閱  
- [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>See Also  
+ [Language Service and Editor Extension Points](../extensibility/language-service-and-editor-extension-points.md)

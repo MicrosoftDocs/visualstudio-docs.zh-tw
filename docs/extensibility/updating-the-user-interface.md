@@ -1,38 +1,55 @@
 ---
-title: "更新使用者介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "更新的使用者介面"
-  - "更新 UI 的命令"
+title: Updating the User Interface | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- user interfaces, updating
+- commands, updating UI
 ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 caps.latest.revision: 41
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 41
----
-# 更新使用者介面
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 91792b43389d76926d0b08d3a7fbb82f20572d8a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-執行命令後，您可以加入程式碼以更新使用者介面與您的新命令的狀態。  
+---
+# <a name="updating-the-user-interface"></a>Updating the User Interface
+After you implement a command, you can add code to update the user interface with the state of your new commands.  
   
- 典型的 Win32 應用程式中的命令集可用於連續輪詢，使用者可以檢視它們時，您可以調整個別命令的狀態。 不過，因為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 殼層可以裝載無限的數量的 Vspackage，廣泛輪詢可能會降低回應性，特別輪詢多個 managed 程式碼與 COM interop 組件  
+ In a typical Win32 application, the command set can be continuously polled and the state of individual commands can be adjusted as the user views them. However, because the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell can host an unlimited number of VSPackages, extensive polling might decrease responsiveness, especially polling across interop assemblies between managed code and COM.  
   
-### 若要更新 UI  
+### <a name="to-update-the-ui"></a>To update the UI  
   
-1.  請執行下列其中一個步驟：  
+1.  Perform one of the following steps:  
   
-    -   呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 方法。  
+    -   Call the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method.  
   
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面可以取自 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務，如下所示。  
+         An <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface can be obtained from the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service, as follows.  
   
-        ```c#  
+        ```cs  
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)  
         {  
             IVsUIShell vsShell = (IVsUIShell)sp.GetService(typeof(IVsUIShell));  
@@ -45,12 +62,12 @@ caps.handback.revision: 41
   
         ```  
   
-         如果參數 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 為非零 \(`TRUE`\)，然後執行更新，以同步方式以及立即。 我們建議您傳遞零 \(`FALSE`\) 這個參數可協助您維護良好的效能。 如果您想要避免快取，套用 `DontCache` 旗標，當您建立.vsct 檔案中的命令。 不過，請小心使用此旗標，或可能會降低效能。 如需命令旗標的詳細資訊，請參閱 [命令旗標的項目](../extensibility/command-flag-element.md) 文件。  
+         If the parameter of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> is non-zero (`TRUE`), then the update is performed synchronously and immediately. We recommend that you pass zero (`FALSE`) for this parameter to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously or performance might decrease. For more information about command flags, see the [Command Flag Element](../extensibility/command-flag-element.md) documentation.  
   
-    -   在使用就地啟動模型，在視窗中裝載 ActiveX 控制項的 Vspackage，可能會更方便使用 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 方法。<xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 方法中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 方法中的 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面的功能相同。 兩者會造成重新查詢所有命令的狀態的環境。 一般而言，更新是不會立即執行。 相反地，更新會延遲到閒置時。 殼層會快取命令狀態可協助您維護良好的效能。 如果您想要避免快取，套用 `DontCache` 旗標，當您建立.vsct 檔案中的命令。 不過，在因為可能會降低效能，請小心使用此旗標。  
+    -   In VSPackages that host an ActiveX control by using the in-place activation model in a window, it might be more convenient to use the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface and the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> method in the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface are functionally equivalent. Both cause the environment to re-query the state of all commands. Typically, an update is not performed immediately. Instead, an update is delayed until idle time. The shell caches the command state to help maintain good performance. If you want to avoid caching, apply the `DontCache` flag when you create the command in the .vsct file. Nevertheless, use the flag cautiously because performance might decrease.  
   
-         請注意，您可以取得 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 介面呼叫 `QueryInterface` 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 物件，或藉由取得從介面 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 服務。  
+         Notice that you can obtain the <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface by calling the `QueryInterface` method on an <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> object or by obtaining the interface from the <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service.  
   
-## 請參閱  
- [VSPackages 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [實作](../extensibility/internals/command-implementation.md)
+## <a name="see-also"></a>See Also  
+ [How VSPackages Add User Interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Implementation](../extensibility/internals/command-implementation.md)

@@ -1,49 +1,66 @@
 ---
-title: "在舊版語言服務中的註解程式碼 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "註解支援的語言服務 [受管理的封裝 framework]"
-  - "註解程式碼的語言服務 [受管理的封裝 framework]"
+title: Commenting Code in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- comments, supporting in language services [managed package framework]
+- language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# 在舊版語言服務中的註解程式碼
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: f1814fc40bac1e977a02fa53a34c8e59e299b2bd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-程式語言通常會提供一種方法來加註或註解的程式碼。  註解是一段文字所提供的程式碼的其他資訊，但在編譯或解譯期間會被忽略。  
+---
+# <a name="commenting-code-in-a-legacy-language-service"></a>Commenting Code in a Legacy Language Service
+Programming languages typically provide a means to annotate or comment the code. A comment is a section of text that provides additional information about the code but is ignored during compilation or interpretation.  
   
- 受管理的套件的架構 \(MPF\) 類別會提供註解和 uncommenting 的選取文字中的支援。  
+ The managed package framework (MPF) classes provide support for commenting and uncommenting selected text.  
   
-## 註解樣式  
- 有兩種一般註解樣式：  
+## <a name="comment-styles"></a>Comment Styles  
+ There are two general styles of comment:  
   
-1.  內嵌註解，註解是在同一行的位置。  
+1.  Line comments, where the comment is on a single line.  
   
-2.  區塊註解，註解可能包含多行的位置。  
+2.  Block comments, where the comment may include multiple lines.  
   
- 內嵌註解通常會有一個開始字元 \(或字元\)，區塊註解時有開始和結束的字元。  比方說，在 C\# 行註解開頭 \/ \/，以及區塊註解開頭為 \/ \*，並結束 \* \/。  
+ Line comments typically have a starting character (or characters), while block comments have both start and end characters. For example, in C#, a line comment starts with //, and a block comment starts with /* and ends with \*/.  
   
- 當使用者選取命令**註解選取範圍** 的 **編輯** \-\>  **進階** \] 功能表中，命令會路由傳送到<xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A>上的方法<xref:Microsoft.VisualStudio.Package.Source>類別。  當使用者選取命令**取消註解選取項目**，命令會路由至<xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A>方法。  
+ When the user selects the command **Comment Selection** from the **Edit** -> **Advanced** menu, the command is routed to the <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class. When the user selects the command **Uncomment Selection**, the command is routed to the <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> method.  
   
-## 支援的程式碼註解  
- 您可以讓您語言服務支援的程式碼意見的`EnableCommenting`的參數名稱<xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 。  這會將<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A>屬性的<xref:Microsoft.VisualStudio.Package.LanguagePreferences>類別。  如需有關如何設定語言 servicce 功能的詳細資訊，請參閱[註冊語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)\)。  
+## <a name="supporting-code-comments"></a>Supporting Code Comments  
+ You can have your language service support code comments by means of the `EnableCommenting` named parameter of the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> . This sets the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCommenting%2A> property of the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. For more information about setting language servicce features, see [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)).  
   
- 您也必須覆寫<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>方法來傳回<xref:Microsoft.VisualStudio.Package.CommentInfo>結構，與您的語言的註解字元。  C\#\-樣式行註解字元是預設值。  
+ You must also override the <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> method to return a <xref:Microsoft.VisualStudio.Package.CommentInfo> structure with the comment characters for your language. C#-style line comment characters are the default.  
   
-### 範例  
- 以下是項目的實作範例<xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A>方法。  
+### <a name="example"></a>Example  
+ Here is an example implementation of the <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> method.  
   
-```c#  
+```cs  
 using Microsoft.VisualStudio.Package;  
   
 namespace MyLanguagePackage  
@@ -62,6 +79,6 @@ namespace MyLanguagePackage
 }  
 ```  
   
-## 請參閱  
- [舊版的語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
- [註冊語言服務](../../extensibility/internals/registering-a-legacy-language-service1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Registering a Legacy Language Service](../../extensibility/internals/registering-a-legacy-language-service1.md)

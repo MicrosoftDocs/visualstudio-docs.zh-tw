@@ -1,43 +1,60 @@
 ---
-title: "Reorder Parameters Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.reorder"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactoring [C#], Reorder Parameters"
-  - "Reorder Parameters refactoring [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
+title: Reorder Parameters Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.csharp.refactoring.reorder
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Reorder Parameters
+- Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
 caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Reorder Parameters Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: bf433e4bf8d32c39511bf043414a55ccb1a9d5bd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-`Reorder Parameters` 是一項 Visual C\# 重構作業，提供了變更方法、索引子和委派之參數順序的簡易方式。  `Reorder Parameters` 會變更宣告，且會在任何呼叫成員的位置重新整理參數，以反映新順序。  
+---
+# <a name="reorder-parameters-refactoring-c"></a>Reorder Parameters Refactoring (C#)
+`Reorder Parameters` is a Visual C# refactoring operation that provides an easy way to change the order of the parameters for methods, indexers, and delegates. `Reorder Parameters` changes the declaration, and at any locations where the member is called, the parameters are rearranged to reflect the new order.  
   
- 若要執行 `Reorder Parameters` 作業，將資料指標放在方法、索引子或委派旁邊或上面。  資料指標就定位時，請按鍵盤快速鍵或按一下捷徑功能表中的命令，以叫用 `Reorder Parameters` 作業。  
+ To perform the `Reorder Parameters` operation, put the cursor on or next to a method, indexer, or delegate. When the cursor is in position, invoke the `Reorder Parameters` operation by pressing the keyboard shortcut, or by clicking the command from the shortcut menu.  
   
 > [!NOTE]
->  您無法在擴充方法中重新排列第一個參數。  
+>  You cannot reorder the first parameter in an extension method.  
   
-### 若要重新排列參數  
+### <a name="to-reorder-parameters"></a>To reorder parameters  
   
-1.  建立名為 `ReorderParameters` 的類別庫，再以下列範例程式碼取代 `Class1`。  
+1.  Create a class library named `ReorderParameters`, and then replace `Class1` with the following example code.  
   
-    ```c#  
+    ```cs  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -56,26 +73,26 @@ manager: "wpickett"
     }  
     ```  
   
-2.  將游標放在 `MethodB` 上，可以放在方法宣告或方法呼叫中。  
+2.  Place the cursor on `MethodB`, either in the method declaration or the method call.  
   
-3.  在 \[**重整**\] 功能表上按一下 \[**重新排列參數**\]。  
+3.  On the **Refactor** menu, click **Reorder Parameters**.  
   
-     隨即出現 \[**重新排列參數**\] 對話方塊。  
+     The **Reorder Parameters** dialog box appears.  
   
-4.  在 \[**重新排列參數**\] 對話方塊中，選取 \[**參數**\] 清單中的 `int i`，然後按一下向下按鈕。  
+4.  In the **Reorder Parameters** dialog box, select `int i` in the **Parameters** list, and then click the down button.  
   
-     或者，您可以將 `int i` 拖曳到 \[**參數**\] 清單中 `bool b` 的後面。  
+     Alternatively, you can drag `int i` after `bool b` in the **Parameters** list.  
   
-5.  在 \[**重新排列參數**\] 對話方塊中，按一下 \[**確定**\]。  
+5.  In the **Reorder Parameters** dialog box, click **OK**.  
   
-     如果已在 \[**重新排列參數**\] 對話方塊中選取 \[**預覽參考變更**\] 選項，\[**預覽變更 \- 重新排列參數**\] 對話方塊便會出現。  這個對話方塊可讓您預覽 `MethodB` 的參數清單變更，包括簽章和方法呼叫。  
+     If the **Preview reference changes** option is selected in the **Reorder Parameters** dialog box, the **Preview Changes - Reorder Parameters** dialog box will appear. It provides a preview of the changes in the parameter list for `MethodB` in both the signature and the method call.  
   
-    1.  如果出現 \[**預覽變更 \- 重新排列參數**\] 對話方塊，請按一下 \[**套用**\]。  
+    1.  If the **Preview Changes - Reorder Parameters** dialog box appears, click **Apply**.  
   
-         在此範例中， `MethodB` 之方法宣告和所有的方法呼叫位置都會更新。  
+         In this example, the method declaration and all the method call sites for `MethodB` are updated.  
   
-## 備註  
- 您可以從方法宣告或方法呼叫中重新排列參數。  將游標放置位在方法或委派宣告本身或旁邊，但不是在主體中。  
+## <a name="remarks"></a>Remarks  
+ You can reorder parameters from a method declaration or a method call. Position the cursor on or next to the method or delegate declaration but not in the body.  
   
-## 請參閱  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 87a1ea1c7c56cece66e98ae05116bde4af642834
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b182b9e19538513ab3fce7b0670f09f0af9194b9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Add code to TableAdapters in n-tier applications
@@ -70,14 +70,14 @@ You can extend the functionality of a `TableAdapter` by creating a partial class
   
 5.  The following example shows where to add code to the `CustomersTableAdapter` in the `NorthwindDataSet`:  
   
-    ```vb#  
+    ```vb  
     Partial Public Class CustomersTableAdapter  
         ' Add code here to add functionality   
         ' to the CustomersTableAdapter.  
     End Class  
     ```  
   
-    ```c#  
+    ```cs  
     public partial class CustomersTableAdapter  
     {  
         // Add code here to add functionality  

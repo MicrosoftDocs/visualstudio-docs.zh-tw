@@ -1,40 +1,57 @@
 ---
-title: "在舊版語言服務中的自訂文件屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "自訂文件屬性，語言服務 [受管理的封裝 framework]"
-  - "自訂的文件屬性"
-  - "語言服務 [受管理的封裝 framework] 自訂文件屬性"
+title: Custom Document Properties in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- custom document properties, language services [managed package framework]
+- document properties, custom
+- language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 caps.latest.revision: 18
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 18
----
-# 在舊版語言服務中的自訂文件屬性
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 92ab0eaeeafdaf89c9534ed9e9af0d48db868f81
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-文件內容可以顯示在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]**屬性**視窗。   程式語言通常不需要個別的原始程式檔相關聯的屬性。不過，因此 XML 支援文件內容，會影響編碼、 結構描述，以及樣式表。  
+---
+# <a name="custom-document-properties-in-a-legacy-language-service"></a>Custom Document Properties in a Legacy Language Service
+Document properties can be displayed in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Properties** window. Programming languages generally do not have properties associated with individual source files. However, XML supports document properties that affect the encoding, schema, and stylesheet.  
   
-## 討論  
- 如果您的語言需要自訂文件屬性，您必須在衍生類別，以從<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，並在您的衍生類別中實作的必要屬性。  
+## <a name="discussion"></a>Discussion  
+ If your language needs custom document properties, you must derive a class from the <xref:Microsoft.VisualStudio.Package.DocumentProperties> class and implement the necessary properties on your derived class.  
   
- 此外，文件屬性通常會儲存在原始程式檔本身。  這需要語言服務来剖析的原始程式檔中顯示的屬性資訊**屬性** 視窗，並在文件屬性有所變更時更新原始程式檔 **屬性**視窗。  
+ In addition, document properties are typically stored in the source file itself. This requires the language service to parse the property information from the source file to display in the **Properties** window and to update the source file when a change is made to the document properties in the **Properties** window.  
   
-## 自訂 DocumentProperties 類別  
- 若要支援自訂的文件內容，您必須衍生類別，以從<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別，並新增所需的多個屬性。  您也應該提供給組織中的使用者屬性**屬性**視窗顯示。  如果屬性僅有`get`存取子，就會顯示出來，以唯讀模式中**屬性**視窗。  如果屬性有兩個`get`和`set`存取子，屬性也可以在更新**屬性**視窗。  
+## <a name="customizing-the-documentproperties-class"></a>Customizing the DocumentProperties Class  
+ To support custom document properties, you must derive a class from the <xref:Microsoft.VisualStudio.Package.DocumentProperties> class and add as many properties as you need. You should also supply user attributes to organize them in the **Properties** window display. If a property has only a `get` accessor, it is shown as read-only in the **Properties** window. If a property has both `get` and `set` accessors, the property can also be updated in the **Properties** window.  
   
-### 範例  
- 以下是範例類別衍生自<xref:Microsoft.VisualStudio.Package.DocumentProperties>，顯示兩個屬性的檔案名稱和描述。  屬性更新時，自訂的方法，在<xref:Microsoft.VisualStudio.Package.LanguageService>類別稱為 「 寫入屬性的原始程式檔。  
+### <a name="example"></a>Example  
+ Here is an example class derived from <xref:Microsoft.VisualStudio.Package.DocumentProperties>, showing two properties, Filename and Description. When a property is updated, a custom method on the <xref:Microsoft.VisualStudio.Package.LanguageService> class is called to write the property to the source file.  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -121,12 +138,12 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## 將自訂的 DocumentProperties 類別執行個體化  
- 若要將您自訂的文件屬性的類別執行個體化，您必須覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>的版本中的方法<xref:Microsoft.VisualStudio.Package.LanguageService>類別以傳回單一執行個體您<xref:Microsoft.VisualStudio.Package.DocumentProperties>類別。  
+## <a name="instantiating-the-custom-documentproperties-class"></a>Instantiating the Custom DocumentProperties class  
+ To instantiate your custom document properties class, you must override the <xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A> method in your version of the <xref:Microsoft.VisualStudio.Package.LanguageService> class to return a single instance of your <xref:Microsoft.VisualStudio.Package.DocumentProperties> class.  
   
-### 範例  
+### <a name="example"></a>Example  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -148,22 +165,22 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## 原始程式檔中的屬性  
- 文件屬性通常是原始程式檔，因為這些值會儲存在原始程式檔本身。  這需要支援的語言剖析器或掃瞄器來定義這些屬性。  例如，XML 文件的內容會儲存在根節點。  根節點上的值會被修改時**屬性** \] 視窗會變更值，並在編輯器中會更新的根節點。  
+## <a name="properties-in-the-source-file"></a>Properties in the Source File  
+ Since document properties are usually specific to the source file, the values are stored in the source file itself. This requires support from the language parser or scanner to define these properties. For example, the properties of an XML document are stored on the root node. The values on the root node are modified when the **Properties** window values are changed, and the root node is updated in the editor.  
   
-### 範例  
- 本範例將儲存 「 檔名 」 和 「 說明 」 中前兩行的原始程式檔，以特殊註解標頭中內嵌的內容：  
+### <a name="example"></a>Example  
+ This example stores the properties "Filename" and "Description" in the first two lines of the source file, embedded in a special comment header, as:  
   
 ```  
 //!Filename = file.testext  
 //!Description = A sample file  
 ```  
   
- 本範例將說明來取得及設定文件內容與原始程式檔的前兩行，如果使用者直接修改原始程式檔更新屬性的方式所需的兩個方法。  `SetPropertyValue`方法顯示下面是相同的範例中其中一個從呼叫`TestDocumentProperties`類別的 「 自訂 DocumentProperties 類別 」 一節中所示。  
+ This example shows the two methods needed to get and set the document properties from the first two lines of the source file as well as how the properties are updated if the user modifies the source file directly. The `SetPropertyValue` method in the example shown here is the same one called from the `TestDocumentProperties` class as shown in the "Customizing the DocumentProperties class" section.  
   
- 這個範例會使用掃瞄器，來判斷在前兩行中的語彙基元的型別。  這個範例是僅供說明。  更常見的方法，以這種情況下是剖析成所謂的剖析樹狀目錄樹狀結構的每一個節點包含特定的語彙基元的相關資訊的位置的原始程式檔。  根節點都包含文件內容。  
+ This example uses the scanner to determine the type of tokens in the first two lines. This example is for illustrative purposes only. A more typical approach to this situation is to parse the source file into what is called a parse tree where each node of the tree contains information about a particular token. The root node would contain the document properties.  
   
-```c#  
+```cs  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -398,5 +415,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## 請參閱  
- [舊版的語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)

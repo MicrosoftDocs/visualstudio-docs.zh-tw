@@ -1,49 +1,66 @@
 ---
-title: "IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentTextEvents2::OnUpdateDocumentAttributes"
-helpviewer_keywords: 
-  - "IDebugDocumentTextEvents2::onUpdateDocumentAttributes"
+title: IDebugDocumentTextEvents2::onUpdateDocumentAttributes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentTextEvents2::OnUpdateDocumentAttributes
+helpviewer_keywords:
+- IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentTextEvents2::onUpdateDocumentAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 174b1c43f1671621f845b96c55850cc30be07287
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-已更新文件屬性會通知收件者的事件。  
+---
+# <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
+Notifies receiver of the event that the document attributes have been updated.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT onUpdateDocumentAttributes(   
-   TEXT_DOC_ATTR_2 textdocattr  
+HRESULT onUpdateDocumentAttributes(   
+   TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
-```c#  
-int onUpdateDocumentAttributes(   
-   enum_TEXT_DOC_ATTR_2 textdocattr  
+```cs  
+int onUpdateDocumentAttributes(   
+   enum_TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `textdocattr`  
- \[in\]從的旗標組合[TEXT\_DOC\_ATTR\_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)指定的文件已更新的屬性的列舉型別。  
+ [in] A combination of flags from the [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeration that specifies the updated attributes of the document.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
- [TEXT\_DOC\_ATTR\_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)
+ [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

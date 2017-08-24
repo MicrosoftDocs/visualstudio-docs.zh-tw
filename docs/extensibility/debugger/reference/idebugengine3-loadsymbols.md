@@ -1,47 +1,64 @@
 ---
-title: "IDebugEngine3::LoadSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine3::LoadSymbols"
-helpviewer_keywords: 
-  - "IDebugEngine3::LoadSymbols"
+title: IDebugEngine3::LoadSymbols | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngine3::LoadSymbols
+helpviewer_keywords:
+- IDebugEngine3::LoadSymbols
 ms.assetid: c846a440-1d91-4d48-b8f1-82e902ae152b
 caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# IDebugEngine3::LoadSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 88dd6c3aa2fa7df4b6dd57f3c77a72db0b635d39
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-\(視\) 載入符號這個偵錯引擎正在偵錯的所有模組。  
+---
+# <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
+Loads (as necessary) symbols for all modules being debugged by this debugging engine.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT LoadSymbols();  
 ```  
   
-```c#  
+```cs  
 int LoadSymbols();  
 ```  
   
-#### 參數  
- 無。  
+#### <a name="parameters"></a>Parameters  
+ None.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise returns error code.  
   
-## 備註  
- 這會載入這個偵錯引擎所參考的所有模組的偵錯符號。  它們沒有已被載入時，才會載入的符號。  符號會在呼叫中設定的路徑上搜尋[SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)。  
+## <a name="remarks"></a>Remarks  
+ This loads debugging symbols for all modules referenced by this debugging engine. The symbols are loaded only if they have not already been loaded. Symbols are searched on the paths set by a call to [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)   
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

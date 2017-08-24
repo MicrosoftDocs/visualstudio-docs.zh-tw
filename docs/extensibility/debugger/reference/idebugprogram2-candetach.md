@@ -1,5 +1,5 @@
 ---
-title: "IDebugProgram2::CanDetach |Microsoft 文件"
+title: IDebugProgram2::CanDetach | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: fba40d6cb4d2e9fc3a26b6df34f5d18cdb0401b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: e7cb5bc735eadaba8685914d49121488505f2839
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-判斷偵錯引擎 (DE) 可以中斷連結的程式。  
+Determines if a debug engine (DE) can detach from the program.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT CanDetach(  
@@ -47,12 +48,12 @@ HRESULT CanDetach(
 );  
 ```  
   
-```c#  
+```cs  
 int CanDetach();  
 ```  
   
-## <a name="return-value"></a>傳回值  
- 如果卸離，傳回`S_OK`; 否則傳回錯誤碼。 傳回`S_FALSE`如果 DE 無法中斷連結的程式。  
+## <a name="return-value"></a>Return Value  
+ If can detach, returns `S_OK`; otherwise, returns an error code. Returns `S_FALSE` if the DE cannot detach from the program.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -1,5 +1,5 @@
 ---
-title: "IDebugField::GetKind |Microsoft 文件"
+title: IDebugField::GetKind | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,16 +30,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 723b2850a87c4da0c3e7b531c1b0cbf308ab2e2d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cfeb62edc3de7e0a494ca8446903a2845a54e5f3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-這個方法會取得欄位的類型。  
+This method gets the kind of field.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT GetKind(   
@@ -47,19 +48,19 @@ HRESULT GetKind(
 );  
 ```  
   
-```c#  
+```cs  
 int GetKind(  
    out enum_FIELD_KIND pdwKind  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pdwKind`  
- [out]傳回的欄位類型的組合為[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)常數。  
+ [out] Returns the kind of field as a combination of [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) constants.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

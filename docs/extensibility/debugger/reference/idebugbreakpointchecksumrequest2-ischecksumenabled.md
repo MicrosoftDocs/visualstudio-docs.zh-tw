@@ -1,46 +1,63 @@
 ---
-title: "IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugBreakpointChecksumRequest2::IsChecksumEnabled"
+title: IDebugBreakpointChecksumRequest2::IsChecksumEnabled | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugBreakpointChecksumRequest2::IsChecksumEnabled
 ms.assetid: 8b1853b5-745c-4cd6-88a9-ce0673971bb0
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugBreakpointChecksumRequest2::IsChecksumEnabled
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 9eb36703aee307f49ec2bcbfb8eefb31b2d2b41a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-判斷是否已啟用這份文件的總和檢查碼。  
+---
+# <a name="idebugbreakpointchecksumrequest2ischecksumenabled"></a>IDebugBreakpointChecksumRequest2::IsChecksumEnabled
+Determines whether the checksum is enabled for this document.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
 HRESULT IsChecksumEnabled(   
-   BOOL *pfChecksumEnabled  
+   BOOL *pfChecksumEnabled  
 );  
 ```  
   
-```c#  
+```cs  
 public int IsChecksumEnabled(   
-   out int pfChecksumEnabled  
+   out int pfChecksumEnabled  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pfChecksumEnabled`  
- \[\] out此屬性傳回 TRUE 如果總和檢查碼蟀諉 否則，會傳回 FALSE。  
+ [out] Returns TRUE if the checksum is enabled; otherwise, returns FALSE.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

@@ -1,5 +1,5 @@
 ---
-title: "如何︰ 取得服務 |Microsoft 文件"
+title: 'How to: Get a Service | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,62 +28,63 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f66c7e1f01c8d8eb69c6718314890bfb02cccc17
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: c069ab76a75b5b95541c048d4eae444faf7ed9a7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
 ---
-# <a name="how-to-get-a-service"></a>如何︰ 取得服務
-您通常需要取得 Visual Studio 服務存取不同的功能。 一般情況下，Visual Studio 服務提供一個或多個您可以使用的介面。 您可以從 VSPackage 取得大部分的服務。  
+# <a name="how-to-get-a-service"></a>How to: Get a Service
+You often need to get Visual Studio services to access different features. In general, a Visual Studio service provides one or more interfaces that you can use. You can get most services from a VSPackage.  
   
- 衍生自任何 VSPackage <xref:Microsoft.VisualStudio.Shell.Package>，已正確地決定位置，可以針對任何全域服務要求。</xref:Microsoft.VisualStudio.Shell.Package> 因為封裝類別會實作<xref:System.IServiceProvider>，衍生自封裝任何 VSPackage 也是服務提供者。</xref:System.IServiceProvider>  
+ Any VSPackage that derives from <xref:Microsoft.VisualStudio.Shell.Package> and that has been correctly sited can ask for any global service. Because the Package class implements <xref:System.IServiceProvider>, any VSPackage that derives from Package is also a service provider.  
   
- 當 Visual Studio 會載入<xref:Microsoft.VisualStudio.Shell.Package>，它會傳遞<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>物件傳遞給<xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>在初始化期間的方法。</xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> </xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> </xref:Microsoft.VisualStudio.Shell.Package> 這稱為*地點*VSPackage。 封裝類別包裝此服務提供者，並提供<xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>服務的方法。</xref:Microsoft.VisualStudio.Shell.Package.GetService%2A>  
+ When Visual Studio loads a <xref:Microsoft.VisualStudio.Shell.Package>, it passes an <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> object to the <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> method during initialization. This is called *siting* the VSPackage. The Package class wraps this service provider and provides the <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> method for getting services.  
   
-## <a name="getting-a-service-from-an-initialized-vspackage"></a>從已初始化的 VSPackage 取得服務  
+## <a name="getting-a-service-from-an-initialized-vspackage"></a>Getting a service from an initialized VSPackage  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含擴充資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到 VSIX 專案範本，在**新的專案**下的對話方塊**Visual C# / 擴充性**。  
+1.  Every Visual Studio extension starts with a VSIX deployment project which will contain the extension assets. Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX project named `GetServiceExtension`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
   
-2.  現在加入名為的自訂命令項目範本**GetServiceCommand**。 在**加入新項目** 對話方塊中，移至**Visual C# / 擴充性**，然後選取**自訂命令**。 在**名稱**視窗的底部欄位中，將命令檔名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂的命令，[建立擴充功能的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  Now add a custom command item template named **GetServiceCommand**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **GetServiceCommand.cs**. For more information about how to create a custom command, [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  在 GetServiceCommand.cs，移除 MenuItemCommand 方法主體中的，新增下列程式碼︰  
+3.  In GetServiceCommand.cs, remove the body of the MenuItemCommand method and add the following code:  
   
-    ```c#  
+    ```cs  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
     if (activityLog == null) return;  
     System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
   
     ```  
   
-     此程式碼取得 SVsActivityLog 服務，並將它轉換至<xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>介面，這可以用來寫入活動記錄檔。</xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> 如需範例，請參閱[How to︰ 使用活動記錄](../extensibility/how-to-use-the-activity-log.md)。  
+     This code gets an SVsActivityLog service and casts it to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+4.  Build the project and start debugging. The experimental instance appears.  
   
-5.  在實驗執行個體的 工具 功能表上找到**叫用 GetServiceCommand**  按鈕。 當您按一下這個按鈕時，您應該會看到訊息方塊，指出**找到活動記錄檔服務。**  
+5.  On the Tools menu of the experimental instance, find the **Invoke GetServiceCommand** button. When you click this button, you should see a message box that says **Found the activity log service.**  
   
-## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>取得工具視窗或控制項容器中的服務  
- 有時候您可能需要從 [工具] 視窗中取得的服務，或控制未設置，否則不知道您想要的服務的服務提供者已決定位置的容器。 例如，您可能想要寫入活動記錄檔從控制項中。  
+## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Getting a service from a tool window or control container  
+ Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control.  
   
- 靜態<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法會初始化任何 VSPackage 衍生自第一次快取的服務提供者會依賴<xref:Microsoft.VisualStudio.Shell.Package>設置。</xref:Microsoft.VisualStudio.Shell.Package> </xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>  
+ The static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method relies on a cached service provider that is initialized the first time any VSPackage derived from <xref:Microsoft.VisualStudio.Shell.Package> is sited.  
   
- 設置 VSPackage 之前呼叫 VSPackage 建構函式，因為全域服務就無法從 VSPackage 建構函式通常使用。 請參閱[How to︰ 疑難排解服務](../extensibility/how-to-troubleshoot-services.md)的因應措施。  
+ Because the VSPackage constructor is called before the VSPackage is sited, global services are typically unavailable from within the VSPackage constructor. See [How to: Troubleshoot Services](../extensibility/how-to-troubleshoot-services.md) for a workaround.  
   
- 以下是方式的範例的工具視窗或其他非 VSPackage 項目中取得服務。  
+ Here's an example of the way to get a service in a tool window or other non-VSPackage element.  
   
-```c#  
+```cs  
 IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;  
 if (log == null) return;  
 ```  
   
-## <a name="getting-a-service-from-the-dte-object"></a>從 DTE 物件取得服務  
- 您也可以取得從服務<xref:EnvDTE.DTEClass>物件。</xref:EnvDTE.DTEClass> 不過，您必須取得 DTE 物件做為服務或藉由呼叫靜態從 VSPackage<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。</xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>  
+## <a name="getting-a-service-from-the-dte-object"></a>Getting a service from the DTE object  
+ You can also get services from <xref:EnvDTE.DTEClass> object. However, you must get the DTE object as a service from a VSPackage or by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
   
- DTE 物件實作<xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>，您可以用來查詢服務，以使用<xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>.</xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> </xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>  
+ The DTE object implements <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>, which you can use to query for a service by using <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A>.  
   
- 以下是如何從 DTE 物件取得服務。  
+ Here's how to get a service from the DTE object.  
   
-```c#  
+```cs  
 // Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  
@@ -99,7 +100,7 @@ if (sp != null)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [如何︰ 提供的服務](../extensibility/how-to-provide-a-service.md)   
- [使用並提供服務](../extensibility/using-and-providing-services.md)   
- [服務的基本資訊](../extensibility/internals/service-essentials.md)
+## <a name="see-also"></a>See Also  
+ [How to: Provide a Service](../extensibility/how-to-provide-a-service.md)   
+ [Using and Providing Services](../extensibility/using-and-providing-services.md)   
+ [Service Essentials](../extensibility/internals/service-essentials.md)

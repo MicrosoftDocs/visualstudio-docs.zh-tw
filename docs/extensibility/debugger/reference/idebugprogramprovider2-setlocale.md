@@ -1,48 +1,65 @@
 ---
-title: "IDebugProgramProvider2::SetLocale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramProvider2::SetLocale"
-helpviewer_keywords: 
-  - "IDebugProgramProvider2::SetLocale"
+title: IDebugProgramProvider2::SetLocale | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgramProvider2::SetLocale
+helpviewer_keywords:
+- IDebugProgramProvider2::SetLocale
 ms.assetid: b41d20a7-ba40-4c42-a450-16f413d6a04f
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProgramProvider2::SetLocale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: 74d86f84762a8342b2a4a64239f7c0b577f5f200
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-會建立任何地區設定特性的資源所使用的地區設定。  
+---
+# <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
+Establishes a locale to be used for any locale-specific resources.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT SetLocale(  
-   WORD wLangID  
+HRESULT SetLocale(  
+   WORD wLangID  
 );  
 ```  
   
-```c#  
-int SetLocale(  
-   ushort wLangID  
+```cs  
+int SetLocale(  
+   ushort wLangID  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `wLangID`  
- \[in\]若要建立的語言識別碼。  例如，英文的 1033。  
+ [in] Language ID to establish. For example, 1033 for English.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 25df2b3849a0cb18ec15a0fde2798e36c829a8da
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: db6b71330152616cf4923f4351aed6b286a31c76
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/24/2017
 
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>How to: Add validation to entity classes
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/22/2017
   
     4.  Add the following code to first verify that a value has been entered and then to ensure that the value entered for the column is acceptable for your application. The `value` argument contains the proposed value, so add logic to confirm that it is a valid value:  
   
-        ```vb#  
+        ```vb  
         If value.HasValue Then  
             ' Add code to ensure that the value is acceptable.  
             ' If value < 1 Then  
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/22/2017
   
          Type `partial` and then a space to access the list of available partial methods. Click the column-changing method for the column you want to add validation for. The following code resembles code that is generated when you select a column-changing partial method:  
   
-        ```c#  
+        ```cs  
         partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
             {  
                throw new System.NotImplementedException();  
@@ -115,7 +115,7 @@ ms.lasthandoff: 08/22/2017
   
     4.  Access individual column values by using the `instance` argument, as shown in the following code:  
   
-        ```vb#  
+        ```vb  
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then  
             Dim ErrorMessage As String = "Invalid data!"  
             Throw New Exception(ErrorMessage)  
@@ -128,7 +128,7 @@ ms.lasthandoff: 08/22/2017
   
     2.  Type `partial` and then a space to access the list of available partial methods. Click the update method for the class you want to add validation for. The following code resembles code that is generated when you select an `Update`*CLASSNAME* partial method:  
   
-        ```c#  
+        ```cs  
         partial void UpdateCLASSNAME(CLASSNAME instance)  
         {  
             if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  

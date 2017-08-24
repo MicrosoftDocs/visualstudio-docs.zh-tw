@@ -1,42 +1,57 @@
 ---
-title: "Extract Interface Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractinterface"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactoring [C#], Extract Interface"
-  - "Extract Interface refactoring operation [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-interface
+title: Extract Interface Refactoring (C#) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-csharp
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Interface
+- Extract Interface refactoring operation [C#]
 ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
 caps.latest.revision: 25
-caps.handback.revision: 25
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-# Extract Interface Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: BillWagner
+ms.author: wiwagn
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: da62fb0666914563d36c7f5feb568d23b0d104ca
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-\[擷取介面\] 是一項重構作業，提供了建立新介面的簡易方式，且新介面中會包含從現有類別、結構或介面產生的成員。  
+---
+# <a name="extract-interface-refactoring-c"></a>Extract Interface Refactoring (C#)
+Extract Interface is a refactoring operation that provides an easy way to create a new interface with members that originate from an existing class, struct, or interface.  
   
- 當數個用戶端使用某個類別、結構或介面的相同成員子集，或多個類別、結構或介面擁有相同的成員子集時，這項作業對於在介面中納入該成員子集來說相當實用。  如需使用介面的詳細資訊，請參閱[介面](/dotnet/csharp/programming-guide/interfaces/index)。  
+ When several clients use the same subset of members from a class, struct, or interface, or when multiple classes, structs, or interfaces have a subset of members in common, it can be useful to embody the subset of members in an interface. For more information about using interfaces, see [Interfaces](/dotnet/csharp/programming-guide/interfaces/index).  
   
- \[擷取介面\] 會在新檔案中產生一個介面，並將游標放置在新檔案的開頭。  您可以使用 **Extract Interface** 對話方塊指定要擷取到新介面中的成員、新介面的名稱，以及所產生檔案的名稱。  
+ Extract Interface generates an interface in a new file and positions the cursor at the beginning of the new file. You can specify which members to extract into the new interface, the name of the new interface, and the name of the generated file using the **Extract Interface** dialog box.  
   
-### 若要使用擷取介面  
+### <a name="to-use-extract-interface"></a>To use Extract Interface  
   
-1.  建立名為 `ExtractInterface`的主控台應用程式，再以下列程式碼取代 `Program`。  
+1.  Create a console application named `ExtractInterface`, and then replace `Program` with the following code  
   
-    ```c#  
+    ```cs  
     // Invoke Extract Interface on ProtoA.  
     // Note:  the extracted interface will be created in a new file.  
     class ProtoA  
@@ -45,21 +60,21 @@ manager: "wpickett"
     }  
     ```  
   
-2.  將游標位置停在 `MethodB` 中，然後按一下 \[**重構**\] 功能表上的 \[**擷取介面**\]。  
+2.  With the cursor positioned in `MethodB`, and click **Extract Interface** on the **Refactor** menu.  
   
-     \[**擷取介面**\] 對話方塊便會出現。  
+     The **Extract Interface** dialog box appears.  
   
-     您也可以輸入鍵盤快速鍵 CTRL\+R、I，以顯示 \[**擷取介面**\] 對話方塊。  
+     You can also type the keyboard shortcut CTRL+R, I to display the **Extract Interface** dialog box.  
   
-     您也可以按一下滑鼠右鍵，指向 \[**重構**\]，然後按一下 \[**擷取介面**\] 顯示 \[**擷取介面**\] 對話方塊。  
+     You can also right-click the mouse, point to **Refactor**, and then click **Extract Interface** to display the **Extract Interface** dialog box.  
   
-3.  按一下 \[**全選**\]。  
+3.  Click **Select All**.  
   
-4.  按一下 \[**確定**\]。  
+4.  Click **OK**.  
   
-     您會看見新檔案、IProtoA.cs 和下列程式碼：  
+     You see the new file, IProtoA.cs, and the following code:  
   
-    ```c#  
+    ```cs  
     using System;  
     namespace TopThreeRefactorings  
     {  
@@ -70,10 +85,10 @@ manager: "wpickett"
     }  
     ```  
   
-## 備註  
- 只有當游標位於包含要擷取之成員的類別、結構或介面中時，才能使用這項功能。  當游標位於這個位置時，請叫用 \[擷取介面\] 重構作業。  
+## <a name="remarks"></a>Remarks  
+ This feature is only accessible when the cursor is positioned in the class, struct, or interface that contains the members that you would like to extract. When the cursor is in this position, invoke the Extract Interface refactoring operation.  
   
- 當您在類別或結構上叫用擷取介面時，會修改基底和介面清單以加入新介面的名稱。  當您在介面上叫用擷取介面時，並不會修改基底和介面清單。  
+ When you invoke extract interface on a class or on a struct, the bases and interfaces list is modified to include the new interface name. When you invoke extract interface on an interface, the bases and interfaces list is not modified.  
   
-## 請參閱  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>See Also  
+ [Refactoring (C#)](refactoring-csharp.md)

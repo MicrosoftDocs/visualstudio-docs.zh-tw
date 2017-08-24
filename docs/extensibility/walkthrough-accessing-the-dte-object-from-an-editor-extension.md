@@ -1,36 +1,53 @@
 ---
-title: "逐步解說︰ 從編輯器延伸模組來存取 DTE 物件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "編輯器 [Visual Studio SDK]，新-取得 DTE 物件"
+title: 'Walkthrough: Accessing the DTE Object from an Editor Extension | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editors [Visual Studio SDK], new - getting the DTE object
 ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 caps.latest.revision: 22
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 22
----
-# 逐步解說︰ 從編輯器延伸模組來存取 DTE 物件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: b8a44b149fe8adfcbcb7ef2d66e8b95f23378bdd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-在 Vspackage 中，您可以取得 DTE 物件呼叫 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> DTE 物件的型別方法。 在 Managed Extensibility Framework \(MEF\) 擴充功能，您可以匯入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ，然後呼叫 <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> 方法的類型與 <xref:EnvDTE.DTE>。  
+---
+# <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Walkthrough: Accessing the DTE Object from an Editor Extension
+In VSPackages, you can get the DTE object by calling the <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> method with the type of the DTE object. In Managed Extensibility Framework (MEF) extensions, you can import <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> and then call the <xref:Microsoft.VisualStudio.Shell.ServiceProvider.GetService%2A> method with a type of <xref:EnvDTE.DTE>.  
   
-## 必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ To follow this walkthrough, you must install the Visual Studio SDK. For more information, see [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
-## 取得 DTE 物件  
+## <a name="getting-the-dte-object"></a>Getting the DTE Object  
   
-#### 若要從 ServiceProvider 取得 DTE 物件  
+#### <a name="to-get-the-dte-object-from-the-serviceprovider"></a>To get the DTE object from the ServiceProvider  
   
-1.  建立 C\# VSIX 專案，名為 `DTETest`。 加入編輯器分類的項目範本，並將它命名 `DTETest`。 如需詳細資訊，請參閱[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
+1.  Create a C# VSIX project named `DTETest`. Add an Editor Classifier item template and name it `DTETest`. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-2.  下列組件參考加入至專案︰  
+2.  Add the following assembly references to the project:  
   
     -   EnvDTE  
   
@@ -38,31 +55,31 @@ caps.handback.revision: 22
   
     -   Microsoft.VisualStudio.Shell.Immutable.10.0  
   
-3.  移至 DTETest.cs 檔案，並新增下列 `using` 指示詞︰  
+3.  Go to the DTETest.cs file, and add the following `using` directives:  
   
-    ```c#  
+    ```cs  
     using EnvDTE;  
     using EnvDTE80;  
     using Microsoft.VisualStudio.Shell;  
   
     ```  
   
-4.  在 `GetDTEProvider` 類別中，匯入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>。  
+4.  In the `GetDTEProvider` class, import a <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
-    ```c#  
+    ```cs  
     [Import]  
     internal SVsServiceProvider ServiceProvider = null;  
   
     ```  
   
-5.  在 `GetClassifier()` 方法中，加入下列程式碼。  
+5.  In the `GetClassifier()` method, add the following code.  
   
-    ```c#  
+    ```cs  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  
   
-6.  如果您必須使用 <xref:EnvDTE80.DTE2> 介面，您可以將 DTE 物件轉換成它。  
+6.  If you have to use the <xref:EnvDTE80.DTE2> interface, you can cast the DTE object to it.  
   
-## 請參閱  
- [語言服務及編輯器擴充點](../extensibility/language-service-and-editor-extension-points.md)
+## <a name="see-also"></a>See Also  
+ [Language Service and Editor Extension Points](../extensibility/language-service-and-editor-extension-points.md)

@@ -1,54 +1,71 @@
 ---
-title: "IDebugField::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetInfo"
-helpviewer_keywords: 
-  - "IDebugField::GetInfo 方法"
+title: IDebugField::GetInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugField::GetInfo
+helpviewer_keywords:
+- IDebugField::GetInfo method
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugField::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: dcc267d755bbb02591d81ac240e31e4f24245db9
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-這個方法會取得的欄位可顯示的資訊。  
+---
+# <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
+This method gets displayable information about the field.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp#  
-HRESULT GetInfo(   
-   FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO* pFieldInfo  
+HRESULT GetInfo(   
+   FIELD_INFO_FIELDS dwFields,  
+   FIELD_INFO* pFieldInfo  
 );  
 ```  
   
-```c#  
+```cs  
 int GetInfo(  
-   enum_FIELD_INFO_FIELDS dwFields,  
-   FIELD_INFO[] pFieldInfo  
+   enum_FIELD_INFO_FIELDS dwFields,  
+   FIELD_INFO[] pFieldInfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- \[in\]結合[FIELD\_INFO\_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md)的常數，選取要顯示的資訊。  如果欄位是代表一個符號，這通常是符號名稱和型別。  
+ [in] A combination of [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) constants that selects the information to be displayed. If the field represents a symbol, this is typically the symbol name and type.  
   
  `pFieldInfo`  
- \[\] out傳回的資訊提供的[FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)結構。  
+ [out] Returns the information in the supplied [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) structure.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
- [FIELD\_INFO](../../../extensibility/debugger/reference/field-info.md)
+ [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)
