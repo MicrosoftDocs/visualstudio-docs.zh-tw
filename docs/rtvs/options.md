@@ -1,12 +1,13 @@
 ---
 title: "Visual Studio 中的 R 工具選項 | Microsoft Docs"
 ms.custom: 
-ms.date: 4/26/2017
+ms.date: 6/29/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-r
+ms.devlang: r
 ms.tgt_pltfrm: 
 f1_keywords:
 - vs.toolsoptionspages.r_tools
@@ -18,34 +19,19 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a873df77756e5a957d327049566c8e0db1f3a8a
-ms.openlocfilehash: 9b680c73d54c9809e3f4c46dc2841f1f320e4af9
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: a2f0421ff622483fb53795dac527bb8db3c689e2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/12/2017
+ms.lasthandoff: 08/14/2017
 
 ---
-
 
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
  
 設定的存取方式是透過 [R 工具] > [選項] 功能表，或透過 [工具] > [選項] 並捲動到 [R 工具]：
  
-  ![R 工具的 [選項] 對話方塊](~/rtvs/media/options-dialog.png)
+  ![R 工具的 [選項] 對話方塊](media/options-dialog.png)
 
 下列各節描述此頁面上可用的不同選項。
 
@@ -54,12 +40,12 @@ ms.lasthandoff: 05/12/2017
 
 <a name="data-scientist-layout"</a>
 
-另外還有一個特殊功能表項目 [R 工具] > [資料科學設定]，可使用針對資料科學家需求最佳化的版面配置來設定 Visual Studio IDE。 具體而言，此選項會開啟[互動式](interactive-repl.md)、[變數總管](variable-explorer.md)和[工作區](workspaces.md)視窗：
+[R 工具] > [資料科學設定] 功能表項目也可使用針對資料科學家需求最佳化的配置來設定 Visual Studio IDE。 具體而言，此選項會開啟[互動式](interactive-repl.md)、[變數總管](variable-explorer.md)和[工作區](workspaces.md)視窗：
 
-![Visual Studio 中的資料科學家視窗版面配置](~/rtvs/media/installation-data-scientist-layout-result.png)
+![Visual Studio 中的資料科學家視窗版面配置](media/installation-data-scientist-layout-result.png)
 
 > [!Important]      
-> 若要在稍後還原其他 Visual Studio 設定，請先使用 [工具] > [匯入和匯出設定] 命令，並選取 [匯出選取的環境設定]，以及指定檔案名稱。 若要還原這些設定，請使用相同的命令，並選取 [匯入選取的環境設定]。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定] 命令，則也可以使用相同的命令。
+> 若要在稍後還原其他 Visual Studio 設定，請先使用 [工具] > [匯入和匯出設定] 命令，並選取 [匯出選取的環境設定]，然後指定檔案名稱。 若要還原這些設定，請使用相同的命令，並選取 [匯入選取的環境設定]。 如果您變更資料科學家版面配置，並稍後想要還原，而不是直接使用 [資料科學設定] 命令，則也可以使用相同的命令。
 
 ## <a name="debugging"></a>偵錯
 
@@ -81,14 +67,14 @@ ms.lasthandoff: 05/12/2017
 | 選項 | 預設值 | 說明 | 
 | --- | --- | --- |
 | F1 網頁瀏覽器 | `Internal` | 控制使用 Ctrl+F1 搜尋詞彙時的說明顯示方式。 設定為 `Internal` 時，說明是呈現在 Visual Studio 的工具視窗內。 設定為 `External` 時，說明會顯示在預設網頁瀏覽器中。 | 
-| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中對詞彙按 Ctrl+F1 時，如何將搜尋詞彙傳遞至搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將範圍設為搜尋 `stackoverflow.com` 網域內的頁面。 | 
-| R 說明瀏覽器 | `Automatic` | 控制使用 F1、`?` 或 `??` 搜尋詞彙時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
+| F1 Web 搜尋字串 | `R site:stackoverflow.com` | 控制在編輯器中對詞彙按 Ctrl+F1 時，如何將搜尋詞彙傳遞至搜尋引擎。 字串預設是 `R site:stackoverflow.com`，這是將 `R` 附加至搜尋詞彙。 `site:stackoverflow.com` 是搜尋引擎的指示詞，告知將搜尋範圍設為 `stackoverflow.com` 網域內的頁面。 | 
+| R 說明瀏覽器 | `Automatic` | 控制使用 F1、`?` 或 `??` 搜尋 R 文件時的說明顯示方式。 設定為 `Automatic` 時，說明會呈現在適當的視窗中。 例如，HTML 說明出現在 Visual Studio 工具視窗內，而 PDF 出現在預設 PDF 程式中。 設定為 `External` 時，說明會呈現在預設網頁瀏覽器中。 |
 
 ## <a name="history"></a>歷程
 
 | 選項 | 預設值 | 說明 | 
 | --- | --- | --- |
-| 一律儲存歷程記錄 | `True` | 控制只要關閉專案，RTVS 是否就會將命令歷程記錄寫入工作目錄中的 `.RHistory` 檔案。 請注意，即使您在結束前未儲存專案，也會發生這種情況。 |
+| 一律儲存歷程記錄 | `True` | 控制只要關閉專案，RTVS 是否就會將命令歷程記錄寫入工作目錄中的 `.RHistory` 檔案。 即使您在結束前未儲存專案，還是會儲存歷程記錄。 |
 | 重設搜尋篩選 | `True` | 判斷 [歷程記錄] 視窗是否可以篩選命令歷程記錄，只顯示子字串與 [R 歷程記錄] 對話方塊中篩選詞彙相符的命令。 此設定可決定是否只要執行新命令就重設歷程記錄搜尋篩選，或切換至新專案，這樣會觸發載入不同的 `.RHistory` 檔案。 如果您使用篩選集來執行命令，並且納悶剛剛執行的命令為什麼未顯示在 [歷程記錄] 中，則預設設定 `True` 可將驚喜降至最低。 |
 | 使用多行選取範圍 | `True` | 指定是否可以只按一下就在 [歷程記錄] 中選取多行陳述式。 也會透過陳述式而非行來啟用互動式視窗中的向上/向下箭號巡覽。 |
 
@@ -115,7 +101,7 @@ ms.lasthandoff: 05/12/2017
 | 選項 | 預設值 | 說明 | 
 | --- | --- | --- |
 | 字碼頁 | `(OS Default)` | 設定 R 的字碼頁 (地區設定)。預設會使用作業系統的基礎地區設定。 | 
-| CRAN 鏡像 | `(Use .Rprofile)` | 設定預設 CRAN 鏡像來進行套件安裝。 預設設定 `Use .Rprofile` 使用 `.RProfile` 檔案中的 CRAN 鏡像設定。 您可以在下拉式清單中選取其中一個列出的 CRAN 鏡像來覆寫此設定。 |
+| CRAN 鏡像 | `(Use .Rprofile)` | 設定預設 CRAN 鏡像來進行套件安裝。 預設設定 `Use .Rprofile` 使用 `.RProfile` 檔案中的 CRAN 鏡像設定。 |
 | 工作目錄 | 使用者特定資料夾 | Sets 是目前的工作目錄，一般只要開啟專案就會予以設定。 |
 
 ## <a name="workspace"></a>工作區
@@ -127,3 +113,4 @@ ms.lasthandoff: 05/12/2017
 | 在專案關閉時儲存工作區 | `No` | 設定為 `Yes` 會在關閉專案時，將全域環境儲存至 `.RData` 檔案。 |
 | 在切換工作區前顯示確認對話方塊 | `Yes` | 設定為 `No` 會在切換不同的工作區時停止提示使用者進行確認。 請參閱[切換工作區](workspaces.md#switching-between-workspaces)。 |
  
+
