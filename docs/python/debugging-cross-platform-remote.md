@@ -16,10 +16,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: b18efd1fb488c0d07b9a0ffa41f9b4e3613ef17c
+ms.sourcegitcommit: 50af64c33c96fe1f3bf46a06e3c6d42672c60844
+ms.openlocfilehash: 11e0a19d5a3262fd21e573d102c40055c1f4e46d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/17/2017
 
 ---
 
@@ -129,7 +129,9 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
 
     | Visual Studio 版本 | Python 工具/ptvsd 版本 |
     | --- | --- |
-    | 2017 | 3.0.0 |
+    | 2017 15.3 | 3.2.0 |
+    | 2017 15.2 | 3.1.0 |
+    | 2017 15.0, 15.1 | 3.0.0 |
     | 2015 | 2.2.6 |
     | 2013 | 2.2.2 |
     | 2012, 2010 | 2.1 |

@@ -15,10 +15,10 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6dbf4f2bfabbfe5dc780eb4e973c6fae7ca6b1d9
+ms.sourcegitcommit: d0a5b44962b0cfbe549453b1760a38237de7e6ab
+ms.openlocfilehash: 420af3d78a514a7e6b6ded186c204ad8301c4c85
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
@@ -44,7 +44,7 @@ Visual Studio 中的 Python 支援包含一些[專案範本](python-projects.md)
 1. 選取 [Python 應用程式] 範本、指定專案的資料夾，並選取 [確定]。 (如果您想要立刻建立專案的本機存放庫，也請選取 [加入至原始檔控制] 選項)。
 
     > [!Tip]
-    > [從現有的 Python 程式碼] 範本可讓您從已包含 Python 程式碼的資料夾快速建立 Visual Studio 專案，而不是建立新的空白專案並將現有的程式碼匯入。
+    > [從現有 Python 程式碼] 範本可讓您從已包含 Python 程式碼的資料夾快速建立 Visual Studio 專案，而不是建立新的空白專案並將現有的程式碼匯入。
 
 1. 幾分鐘後，專案會在 Visual Studio [方案總管] 視窗中開啟。 您可以在這裡瀏覽專案中的檔案和資料夾，以及管理環境。
 
@@ -239,7 +239,7 @@ Visual Studio 中的 Python 支援包含一些[專案範本](python-projects.md)
 
 1. 若要繼續執行程式碼直到下一個中斷點 (或程式結束) 為止，再次按下 F5 或選取 [繼續] 工具列按鈕或 [偵錯] > [繼續]。 因為您在 `for` 迴圈中有中斷點，將會在下一個反覆項目中斷。
 
-1. 逐步執行數百個迴圈的反覆項目可能會非常繁瑣，因此您可以針對稍早設定的中斷點新增條件，只在 `i` 的值超過特定值 (例如 1600) 時才中斷。 若要設定條件，以滑鼠右鍵按一下中斷點紅點，然後選取 [條件]。 在出現的 [中斷點設定] 視窗中，輸入 `i > 1600` 做為運算式，並選取 [關閉]。 現在，按下 F5 繼續，監看程式在再次中斷前會執行一段時間。 
+1. 逐步執行數百個迴圈的反覆項目可能會非常繁瑣，因此您可以針對稍早設定的中斷點新增條件，只在 `i` 的值超過特定值 (例如 1600) 時才中斷。 若要設定條件，以滑鼠右鍵按一下中斷點紅點，然後選取 [條件]。在出現的 [中斷點設定] 視窗中，輸入 `i > 1600` 做為運算式，並選取 [關閉]。 現在，按下 F5 繼續，監看程式在再次中斷前會執行一段時間。 
 
     ![設定中斷點條件](media/getting-started-debugging-4.png)
 
