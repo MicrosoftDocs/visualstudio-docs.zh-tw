@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 78e1ad6e35ef53bb2ee1a19af6fbfe7c3a045382
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8901f9fff01ecdfe21e3731df8b2d155fe250ac2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # IDebugCoreServer3::GetConnectionProtocol
@@ -42,13 +42,13 @@ Returns a value indicating the protocol that is being used to communicate betwee
   
 ## Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetConnectionProtocol(  
    CONNECTION_PROTOCOL* pProtocol  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetConnectionProtocol(  
    CONNECTION_PROTOCOL[] pProtocol  
 );  

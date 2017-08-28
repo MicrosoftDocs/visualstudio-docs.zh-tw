@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6a3e0469a1ac8bb45ac481ddf6a4e2c673ae30c6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4beeb5d67bc47abb5981f5d8c11abf7350c74a88
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
@@ -41,14 +41,14 @@ Unloads the debug symbols for the specified module from memory.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT UnloadSymbols(  
    ULONG32 ulAppDomainID,  
    GUID    guidModule  
 );  
 ```  
   
-```cs  
+```csharp  
 int UnloadSymbols(  
    uint ulAppDomainID,  
    Guid guidModule  
@@ -68,7 +68,7 @@ int UnloadSymbols(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::UnloadSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule  

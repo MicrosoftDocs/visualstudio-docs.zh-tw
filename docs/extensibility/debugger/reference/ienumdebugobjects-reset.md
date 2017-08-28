@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bc2cbfeaee257a146767e91a357c1d6cf4c845c1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6e2e7589f7d951c1faaa517b37ea46d549c5260e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
@@ -42,11 +42,11 @@ This method resets the enumeration to the first element.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Reset(void);  
 ```  
   
-```cs  
+```csharp  
 int Reset();  
 ```  
   

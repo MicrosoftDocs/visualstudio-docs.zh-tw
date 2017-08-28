@@ -12,10 +12,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3f115fee918d0b7b3144fdf4f3093dd9ccc1a4c8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Walkthrough: Debugging a Text Template that Accesses a Model
@@ -60,7 +60,7 @@ When you modify or add text templates in a domain-specific language solution, yo
     > [!NOTE]
     >  The code contains an error. You are introducing the error in order to debug it.  
   
-    ```cs  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
@@ -105,7 +105,7 @@ When you modify or add text templates in a domain-specific language solution, yo
   
      The change is highlighted.  
   
-    ```cs  
+    ```csharp  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
@@ -124,7 +124,7 @@ When you modify or add text templates in a domain-specific language solution, yo
     > [!NOTE]
     >  The code contains an error. You are introducing the error in order to debug it.  
   
-    ```cs  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
@@ -179,7 +179,7 @@ When you modify or add text templates in a domain-specific language solution, yo
   
      The changes are highlighted.  
   
-    ```cs  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  

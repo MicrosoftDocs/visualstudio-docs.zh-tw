@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1ce2c9029ad729f9974def324b33457fb5009a30
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c0d234a190148d3ef2466923490a92d9f42afd27
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3getenginefilter"></a>IDebugProcess3::GetEngineFilter
@@ -41,13 +41,13 @@ Retrieves an array of unique identifiers for available debug engines.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEngineFilter(  
    GUID_ARRAY *pEngineArray  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetEngineFilter(  
    out GUID_ARRAY[] pEngineArray  
 );  

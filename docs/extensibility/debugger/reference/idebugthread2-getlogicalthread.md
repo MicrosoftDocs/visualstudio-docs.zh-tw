@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f1e3209edb8df8a17c6c3e7417685e1ba8ca75a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d7a5362aad3a8044ec484f70e71812e45e6a3a8d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
@@ -42,14 +42,14 @@ Debug engines do not implement this method.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetLogicalThread(   
    IDebugStackFrame2*     pStackFrame,  
    IDebugLogicalThread2** ppLogicalThread  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetLogicalThread(   
    IDebugStackFrame2        pStackFrame,  
    out IDebugLogicalThread2 ppLogicalThread  

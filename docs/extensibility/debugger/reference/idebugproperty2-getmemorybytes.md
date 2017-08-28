@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5fc15cbf0163c290873f619ab83cd44ccf47d9fb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5f8f0e6933166f1923e15b2b23859361d4c4360d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getmemorybytes"></a>IDebugProperty2::GetMemoryBytes
@@ -42,13 +42,13 @@ Gets the memory bytes that compose the value of a property.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryBytes (   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryBytes (   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 63be8282a66ad4d2cbec6507acd8015f8f15a0af
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3fc2616f840a79bbda012f943f40c4744a39bf35
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
@@ -42,7 +42,7 @@ This method converts an expression string to a parsed expression.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Parse(   
    LPCOLESTR                upstrExpression,  
    PARSEFLAGS               dwFlags,  
@@ -53,7 +53,7 @@ HRESULT Parse(
 );  
 ```  
   
-```cs  
+```csharp  
 int Parse(  
    string                     upstrExpression,   
    enum_PARSEFLAGS            dwFlags,   

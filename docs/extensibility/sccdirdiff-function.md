@@ -1,85 +1,102 @@
 ---
-title: "SccDirDiff 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDirDiff"
-helpviewer_keywords: 
-  - "SccDirDiff 函式"
+title: SccDirDiff Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccDirDiff
+helpviewer_keywords:
+- SccDirDiff function
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# SccDirDiff 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8dd2e57fc177f726cc08226df9f7e1e0a520b74b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-此函式會顯示目前的本機目錄上的用戶端磁碟和原始檔控制下對應的專案之間的差異。  
+---
+# <a name="sccdirdiff-function"></a>SccDirDiff Function
+This function displays the differences between the current local directory on the client disk and the corresponding project under source control.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccDirDiff(  
-   LPVOID    pContext,  
-   HWND      hWnd,  
-   LPCSTR    lpDirName,  
-   LONG      dwFlags,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pContext,  
+   HWND      hWnd,  
+   LPCSTR    lpDirName,  
+   LONG      dwFlags,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  pContext  
- \[\] in原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpDirName  
- \[\] in要為其顯示視覺化差異的本機目錄的完整的路徑。  
+ [in] Fully qualified path to the local directory for which to show a visual difference.  
   
  dwFlags  
- \[\] in命令旗標 \(請參閱 \< 備註 \> 一節\)。  
+ [in] Command flags (see Remarks section).  
   
  pvOptions  
- \[\] in原始檔控制外掛程式專屬選項。  
+ [in] Source control plug-in-specific options.  
   
-## 傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
-|-------|--------|  
-|SCC\_OK|在磁碟上的目錄是在原始程式碼控制的專案相同。|  
-|SCC\_I\_FILESDIFFER|在磁碟上的目錄與原始程式碼控制中的專案不同。|  
-|SCC\_I\_RELOADFILE|需要重新載入檔案或專案。|  
-|SCC\_E\_FILENOTCONTROLLED|目錄不是原始程式碼控制之下。|  
-|SCC\_E\_NOTAUTHORIZED|不允許使用者執行這項作業。|  
-|SCC\_E\_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|非特定的失敗。|  
-|SCC\_E\_FILENOTEXIST|找不到本機目錄。|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The directory on disk is the same as the project in source code control.|  
+|SCC_I_FILESDIFFER|The directory on disk is different from the project in source code control.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTCONTROLLED|The directory is not under source code control.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
+|SCC_E_FILENOTEXIST|Local directory could not be found.|  
   
-## 備註  
- 此函式用來指示的原始檔控制外掛程式，以顯示給使用者的變更至指定的目錄清單。 外掛程式就會開啟它自己的視窗中，選擇，以顯示磁碟上的使用者的目錄和版本控制下對應的專案之間差異的格式。  
+## <a name="remarks"></a>Remarks  
+ This function is used to instruct the source control plug-in to display to the user a list of changes to a specified directory. The plug-in opens its own window, in a format of its choice, to display the differences between the user's directory on disk and the corresponding project under version control.  
   
- 如果外掛程式支援的比較所有的目錄，它必須支援目錄的比較，以檔案名稱為基礎即使不支援 「 快速差異 」 選項即可。  
+ If a plug-in supports comparison of directories at all, it must support comparison of directories on a file-name basis even if the "quick-diff" options are not supported.  
   
-|`dwFlags`|解譯|  
-|---------------|--------|  
-|SCC\_DIFF\_IGNORECASE|\(可用於快速差異或視覺\) 不區分大小寫的比較。|  
-|SCC\_DIFF\_IGNORESPACE|會忽略泛空白字元 \(可能用來快速差異或視覺\)。|  
-|SCC\_DIFF\_QD\_CONTENTS|如果原始檔控制外掛程式支援，以無訊息模式比較位元組的目錄。|  
-|SCC\_DIFF\_QD\_CHECKSUM|如果外掛程式支援，以無訊息模式會比較總和檢查碼，透過目錄，或如果不支援，就會回到 SCC\_DIFF\_QD\_CONTENTS。|  
-|SCC\_DIFF\_QD\_TIME|如果外掛程式支援，以無訊息模式會比較時間戳記，透過目錄，或如果不支援，便會回到 SCC\_DIFF\_QD\_CHECKSUM 或 SCC\_DIFF\_QD\_CONTENTS。|  
+|`dwFlags`|Interpretation|  
+|---------------|--------------------|  
+|SCC_DIFF_IGNORECASE|Case-insensitive comparison (may be used for either quick diff or visual).|  
+|SCC_DIFF_IGNORESPACE|Ignores white space (may be used for either quick-diff or visual).|  
+|SCC_DIFF_QD_CONTENTS|If supported by the source control plug-in, silently compares the directory, byte by byte.|  
+|SCC_DIFF_QD_CHECKSUM|If supported by plug-in, silently compares the directory via a checksum, or, if not supported, falls back to SCC_DIFF_QD_CONTENTS.|  
+|SCC_DIFF_QD_TIME|If supported by plug-in, silently compares the directory via its timestamp, or, if not supported, falls back on SCC_DIFF_QD_CHECKSUM or SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  此函式會使用相同的命令旗標為 [SccDiff](../extensibility/sccdiff-function.md)。 不過，可以選擇原始檔控制外掛程式不支援目錄的 「 快速差異 」 作業。  
+>  This function uses the same command flags as the [SccDiff](../extensibility/sccdiff-function.md). However, a source control plug-in may choose to not support the "quick-diff" operation for directories.  
   
-## 請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 04fddf2d045b552254be0d829c9e65d3b5c37a1e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1182d60d57dba3f1ee49f5a119ef19de6f7ae9c1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
@@ -48,7 +48,7 @@ HRESULT DisableENC(
 );  
 ```  
   
-```cs  
+```csharp  
    EncUnavailableReason reason  
 );  
 ```  

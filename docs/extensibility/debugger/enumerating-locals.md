@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4dbccdbdadc9b855dab9472f5f9a360b2ba083d4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6221af5116f27cd64b644d06c2a21acb51d16923
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="enumerating-locals"></a>Enumerating Locals
@@ -61,7 +61,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This example shows an implementation of `IDebugProperty2::EnumChildren` in managed code.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     public class CFieldProperty : IDebugProperty2  
@@ -140,7 +140,7 @@ namespace EEMC
 ## <a name="unmanaged-code"></a>Unmanaged Code  
  This example shows an implementation of `IDebugProperty2::EnumChildren` in unmanaged code.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CFieldProperty::EnumChildren(   
         in DEBUGPROP_INFO_FLAGS        infoFlags,  
         in DWORD                       radix,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c76ad14a802d87b29735026702bd2b45738749b2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e49edf69949622ce0e0125153e41bdcf338ec30c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpstate"></a>BP_STATE
@@ -42,7 +42,7 @@ Specifies the existence of a bound breakpoint and also specifies if it is enable
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  
@@ -52,7 +52,7 @@ enum enum_BP_STATE {
 typedef DWORD BP_STATE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_STATE {   
    BPS_NONE     = 0x0000,  
    BPS_DELETED  = 0x0001,  

@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f019716be5a5d4615a8bb02d898d16a00ef2ab89
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8be43438312773b2e02915f963b1c68fff61e889
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="writing-to-the-user-settings-store"></a>Writing to the User Settings Store
@@ -63,7 +63,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
   
 2.  In UserSettingsStoreCommand.cs, add the following using statements:  
   
-    ```cs  
+    ```csharp  
     using System.Collections.Generic;  
     using Microsoft.VisualStudio.Settings;  
     using Microsoft.VisualStudio.Shell.Settings;  
@@ -71,7 +71,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
   
 3.  In MenuItemCallback, delete the body of the method and get the user settings store, as follows:  
   
-    ```cs  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  
@@ -81,7 +81,7 @@ User settings are writeable settings like the ones in the **Tools / Options** di
   
 4.  Now find out whether Notepad is already set as an external tool. You need to iterate through all the external tools to determine whether the ToolCmd setting is "Notepad", as follows:  
   
-    ```cs  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         SettingsManager settingsManager = new ShellSettingsManager(ServiceProvider);  

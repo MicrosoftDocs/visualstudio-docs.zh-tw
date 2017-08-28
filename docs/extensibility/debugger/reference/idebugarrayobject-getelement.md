@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 69574670a49b45b60143bfb90f01bfc246507be0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f1d56b32b91b840cc87bb3ba50107b65c54c79d5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
@@ -42,14 +42,14 @@ Gets an element of the array.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetElement(   
    DWORD          dwIndex,  
    IDebugObject** ppElement  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetElement(  
    [In] uint dwIndex,   
    out IDebugObject ppElement  

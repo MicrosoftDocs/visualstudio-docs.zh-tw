@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 336df94ff7a67f68e6640dbe3ee41e6c237fe4b9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9bed4781641156603e0624b4b8635faaa5d82e06
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
@@ -42,7 +42,7 @@ This method evaluates the expression synchronously.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EvaluateSync(   
    EVALFLAGS             dwFlags,  
    DWORD                 dwTimeout,  
@@ -51,7 +51,7 @@ HRESULT EvaluateSync(
 );  
 ```  
   
-```cs  
+```csharp  
 int EvaluateSync(  
    enum_EVALFLAGS       dwFlags,   
    uint                 dwTimeout,   
@@ -87,7 +87,7 @@ int EvaluateSync(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CExpression` object that implements the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CExpression::EvaluateSync(EVALFLAGS dwFlags,  
                                   DWORD dwTimeout,  
                                   IDebugEventCallback2* pExprCallback,  

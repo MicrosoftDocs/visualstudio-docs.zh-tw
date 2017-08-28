@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2a3db3b4204b83f48b86d8ba581bcd8257b841cb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 15559f89279ece438ca3af55c1a9936c0b5c4c06
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
@@ -50,7 +50,7 @@ HRESULT SetJustMyCodeState(
 );  
 ```  
   
-```cs  
+```csharp  
 int SetJustMyCodeState(  
    int             fUpdate,   
    uint            dwModules,   

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 75ff6a3d928c0c1678653a823b65c7d7c14315ad
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 69acd84ab08288fe4f0b2e2e781ed966dcfe84ca
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
@@ -41,13 +41,13 @@ Returns the number of constraints that are associated with this generic paramete
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ConstraintCount(  
    ULONG32* pcConst  
 );  
 ```  
   
-```cs  
+```csharp  
 int ConstraintCount(  
    ref uint pcConst  
 );  
@@ -63,7 +63,7 @@ int ConstraintCount(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugGenericParamFieldType** object that exposes the [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
 {  
     HRESULT hr = S_OK;  

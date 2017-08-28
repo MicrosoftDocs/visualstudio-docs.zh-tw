@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f2e81493b54a5d36ae5ec5664e19ab10a922ed8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 02a7edeb55d998019d6f814ca8ee7351dea5429b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
@@ -42,13 +42,13 @@ Retrieves a list of all code contexts associated with this document context.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumCodeContexts(   
    IEnumDebugCodeContexts2** ppEnumCodeCxts  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumCodeContexts(   
    out IEnumDebugCodeContexts2 ppEnumCodeCxts  
 );  
@@ -67,7 +67,7 @@ int EnumCodeContexts(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CDebugContext` object that exposes the [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)    
 {    
    HRESULT hr;    

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7efac74fa7a0c62df1817884d113ddc21233bad3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2464bd638f57c059755fbe2659a4317af0ec0de
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
@@ -49,7 +49,7 @@ HRESULT GetExceptionObjectAndType(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExceptionObjectAndType(  
    out IDebugObject ppException,  
    out IDebugField  ppField  

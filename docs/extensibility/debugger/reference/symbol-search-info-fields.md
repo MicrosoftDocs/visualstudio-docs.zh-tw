@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c663d0d7cd71c343af61c06b21c18854dd1c4033
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 799fe42709a0536dbe8389054da32b29e5791d8c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
@@ -42,7 +42,7 @@ Specifies the kind of symbol information to retrieve.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_SYMBOL_SEARCH_INFO_FIELDS  
 {  
    SSIF_NONE                = 0x00000000,  
@@ -51,7 +51,7 @@ enum enum_SYMBOL_SEARCH_INFO_FIELDS
 typedef DWORD SYMBOL_SEARCH_INFO_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_SYMBOL_SEARCH_INFO_FIELDS  
 {  
    SSIF_NONE                = 0x00000000,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ab6998588cbfd76e015e2dfeac92f90f181be15c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3bf359535d5b11edb95910afe5a81ca048ab9c21
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
@@ -42,7 +42,7 @@ This method gets the field representing a fully qualified method name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMethodFieldsByName(   
    LPCOLESTR          pszFullName,  
    NAME_MATCH         nameMatch,  
@@ -50,7 +50,7 @@ HRESULT GetMethodFieldsByName(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMethodFieldsByName(  
    string               pszFullName,   
    NAME_MATCH           nameMatch,   

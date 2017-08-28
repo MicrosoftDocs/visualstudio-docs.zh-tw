@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 79fcb3bd6c6453eec03f489fc92646463cdb80ff
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 129a3e49c3cb7f5ba13b3a5ec893f8deb5969712
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Insecure Processing in API Design, XML Document and XML Text Reader
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/24/2017
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System;   
 using System.Xml;   
   
@@ -88,7 +88,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System;   
 using System.Xml;   
   

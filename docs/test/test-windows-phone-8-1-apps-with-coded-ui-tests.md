@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 504b05c95f96454aecbec6b93886156dcf8b5111
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 01b31305ba4ed3706e6368a2b8d9963e524c9c1a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Test Windows UWP and 8.1 Phone Apps with Coded UI Tests
@@ -58,7 +58,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
 5.  On designer surface, double-click the button control and add the following code:  
   
-    ```cs  
+    ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
     {  
         this.textBox.Text = this.button.Name;  
@@ -147,7 +147,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
      **Assert method**  
   
-    ```cs  
+    ```csharp  
     public void AssertMethod1()  
     {  
         #region Variable Declarations  
@@ -170,7 +170,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
      **Controls**  
   
-    ```cs  
+    ```csharp  
     #region Properties  
     public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues  
     {  
@@ -238,7 +238,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
     1.  Launch the Windows Phone app using the automation ID property you copied to the clipboard previously:  
   
-        ```cs  
+        ```csharp  
         XamlWindow myAppWindow = XamlWindow.Launch("ed85f6ff-2fd1-4ec5-9eef-696026c3fa7b_cyrqexqw8cc7c!App");  
         ```  
   
@@ -248,7 +248,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
     2.  Add a gesture to tap the button control:  
   
-        ```cs  
+        ```csharp  
         Gesture.Tap(this.UIMap.UIApp1Window.UIButtonButton);  
         ```  
   
@@ -258,7 +258,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
     3.  Verify that the call to the assert method that was automatically generated comes after launching the app and tap gesture on the button:  
   
-        ```cs  
+        ```csharp  
         this.UIMap.AssertMethod1();  
         ```  
   
@@ -268,7 +268,7 @@ Use this walkthrough for creating UI tests for UWP apps that run on mobile devic
   
      After the code is added, the CodedUITestMethod1 test method should appear as follows:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  

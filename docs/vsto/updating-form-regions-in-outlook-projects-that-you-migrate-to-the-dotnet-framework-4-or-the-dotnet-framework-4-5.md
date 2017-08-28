@@ -20,10 +20,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: add79c2f01b4fe8efa2f5b3a0b5f8cc288a3d0c3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 47e751b76324ec6a8d15df1ace36da647649c5a1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="updating-form-regions-in-outlook-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Updating Form Regions in Outlook Projects that You Migrate to the .NET Framework 4 or the .NET Framework 4.5
@@ -49,7 +49,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public FormRegion1(Microsoft.Office.Interop.Outlook.FormRegion formRegion)  
         : base(formRegion)  
     {  
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public FormRegion1(Microsoft.Office.Interop.Outlook.FormRegion formRegion)  
         : base(Globals.Factory, formRegion)  
     {  
@@ -85,7 +85,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private static void InitializeManifest(Microsoft.Office.Tools.Outlook.FormRegionManifest manifest)  
     {  
         // Do not change code in this method.  
@@ -102,7 +102,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private static void InitializeManifest(Microsoft.Office.Tools.Outlook.FormRegionManifest manifest,   
         Microsoft.Office.Tools.Outlook.Factory factory)  
     {  
@@ -134,7 +134,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public ImportedFormRegion1(Microsoft.Office.Interop.Outlook.FormRegion formRegion)  
         : base(formRegion)  
     {  
@@ -151,7 +151,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public ImportedFormRegion1(Microsoft.Office.Interop.Outlook.FormRegion formRegion)  
         : base(Globals.Factory, formRegion)  
     {  
@@ -168,7 +168,7 @@ ms.lasthandoff: 08/24/2017
     Me.olkTextBox1 = Me.GetFormRegionControl(Of Microsoft.Office.Interop.Outlook.OlkTextBox)("OlkTextBox1")  
     ```  
   
-    ```cs  
+    ```csharp  
     this.olkTextBox1 = this.GetFormRegionControl<Microsoft.Office.Interop.Outlook.OlkTextBox>("OlkTextBox1");  
     ```  
   
@@ -178,7 +178,7 @@ ms.lasthandoff: 08/24/2017
     Me.olkTextBox1 = CType(GetFormRegionControl("OlkTextBox1"), Microsoft.Office.Interop.Outlook.OlkTextBox)  
     ```  
   
-    ```cs  
+    ```csharp  
     this.olkTextBox1 = (Microsoft.Office.Interop.Outlook.OlkTextBox)GetFormRegionControl("OlkTextBox1");  
     ```  
   

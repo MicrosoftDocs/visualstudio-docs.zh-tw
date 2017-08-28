@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5f5ab1e38a4939d6c9f1bf9fe1cf63cb8445fbd1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 91979ec4af172bba37ab3e7630790e68ec2c73dc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
@@ -41,7 +41,7 @@ Retrieves the application entry point.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEntryPoint(  
    ULONG32         ulAppDomainID,  
    GUID            guidModule,  
@@ -49,7 +49,7 @@ HRESULT GetEntryPoint(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetEntryPoint(  
    uint              ulAppDomainID,  
    Guid              guidModule,  
@@ -73,7 +73,7 @@ int GetEntryPoint(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetEntryPoint(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

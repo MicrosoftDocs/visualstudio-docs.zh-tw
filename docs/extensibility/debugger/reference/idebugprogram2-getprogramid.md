@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 89a2ad61ed93f025938093b3de30cfa35d18eb4f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4de4120528f5ecfda0d3e0ef373582a98d511bc2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
@@ -42,13 +42,13 @@ Gets a GUID for this program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetProgramId(   
    GUID* pguidProgramId  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetProgramId(   
    out Guid pguidProgramId  
 );  

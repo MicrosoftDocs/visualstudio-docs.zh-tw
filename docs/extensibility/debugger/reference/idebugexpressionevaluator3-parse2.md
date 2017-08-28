@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b48245e97ba9e426af0430c8ae939997e62811a6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5dec9c5ee5e58a7e9c4d4264a93597794c5beedc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
@@ -40,7 +40,7 @@ Converts an expression string to a parsed expression given the symbol provider a
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Parse2 (  
    LPCOLESTR                upstrExpression,  
    PARSEFLAGS               dwFlags,  
@@ -53,7 +53,7 @@ HRESULT Parse2 (
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT Parse2 (  
    string                     upstrExpression,  
    enum_PARSEFLAGS            dwFlags,  
@@ -100,7 +100,7 @@ HRESULT Parse2 (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CEE** object that exposes the [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
   PARSEFLAGS in_FLAGS,  
   UINT in_RADIX,  

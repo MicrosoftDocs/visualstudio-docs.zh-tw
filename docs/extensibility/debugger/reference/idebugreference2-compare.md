@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f4de78b3e6886643a51c417683921e175ececeb7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 287e9f4e4266f9e76812c605376875e12bea9c7b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
@@ -42,14 +42,14 @@ Compares one reference to another. Reserved for future use.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Compare (   
    REFERENCE_COMPARE dwCompare,  
    IDebugReference2* pReference  
 );  
 ```  
   
-```cs  
+```csharp  
 int Compare (   
    enum_REFERENCE_COMPARE dwCompare,  
    IDebugReference2       pReference  

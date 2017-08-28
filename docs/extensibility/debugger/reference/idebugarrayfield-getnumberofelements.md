@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a24b86049701a9aead02c068d61f6ef823e17c57
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 947e4b498c0fa7a936bf5a7c15f39c4aeb0ed9b4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
@@ -42,13 +42,13 @@ Gets the number of elements in the array.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetNumberOfElements(   
    DWORD* pdwNumElements  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetNumberOfElements(  
    out uint pdwNumElements  
 );  

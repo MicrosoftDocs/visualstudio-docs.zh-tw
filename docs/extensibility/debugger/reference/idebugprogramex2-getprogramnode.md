@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 65e0fc13cb7f2ef152654f2a76f782a7bc2d9e79
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: aaf7dc32fc8536f56e0d30961ecca4f84007f3bf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
@@ -42,13 +42,13 @@ Gets the program node associated with a program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetProgramNode(   
    IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetProgramNode(   
    out IDebugProgramNode2 ppProgramNode  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fd582f48a70a31e4aab5c13e4b5219e62a9e74f5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 756d6783a7990d5ad06ed86dc243cc2c08646f7e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
@@ -42,13 +42,13 @@ Creates an enumerator for the classes nested in this class.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumNestedClasses(   
    IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumNestedClasses(  
    out IEnumDebugFields ppEnum  
 );  

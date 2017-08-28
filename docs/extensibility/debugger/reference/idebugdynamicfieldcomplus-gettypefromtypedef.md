@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f26fb8adaa2745321dbd648823a3fceea40b408d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 32084b5fac4ea092d12317091c8abc18ef401b84
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
@@ -41,7 +41,7 @@ Retrieves a type given its token.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromTypeDef(  
    ULONG32       ulAppDomainID,  
    GUID          guidModule,  
@@ -50,7 +50,7 @@ HRESULT GetTypeFromTypeDef(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeFromTypeDef(  
    uint            ulAppDomainID,  
    Guid            guidModule,  

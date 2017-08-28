@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cfeb62edc3de7e0a494ca8446903a2845a54e5f3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a4d5f5f96ee4d2121ed4fa8f7fc6f4504a418575
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
@@ -42,13 +42,13 @@ This method gets the kind of field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetKind(   
    FIELD_KIND* pdwKind  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetKind(  
    out enum_FIELD_KIND pdwKind  
 );  

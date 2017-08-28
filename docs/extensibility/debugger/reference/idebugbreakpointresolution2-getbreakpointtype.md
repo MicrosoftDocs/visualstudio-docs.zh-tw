@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 91f2ac85d578d2402552d2e3bdf8eb28082b4a79
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f766505f9b0d79281fe01a530b3164da66b02148
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
@@ -42,13 +42,13 @@ Gets the type of the breakpoint represented by this resolution.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetBreakpointType(   
    BP_TYPE* pBPType  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetBreakpointType(   
    out enum_ BP_TYPE pBPType  
 );  

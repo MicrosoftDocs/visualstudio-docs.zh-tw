@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7553609afc0fdc17f48634046dcb531db65b5f8b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b494bec6dda9e6252243005ef817798f65d0a0be
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Adding a Most Recently Used List to a Submenu
@@ -63,7 +63,7 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 2.  In the `Symbols` section, in the `GuidSymbol` node named guidTestCommandPackageCmdSet, add the symbol for the `MRUListGroup` group and the `cmdidMRUList` command, as follows.  
   
-    ```cs  
+    ```csharp  
     <IDSymbol name="MRUListGroup" value="0x1200"/>  
     <IDSymbol name="cmdidMRUList" value="0x0200"/>  
     ```  
@@ -80,7 +80,7 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 4.  In the `Buttons` section, add a node to represent the newly declared command, after the existing button entries.  
   
-    ```cs  
+    ```csharp  
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidMRUList"  
         type="Button" priority="0x0100">  
         <Parent guid="guidTestCommandPackageCmdSet" id="MRUListGroup" />  
@@ -102,26 +102,26 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 1.  In TestCommandPackageGuids.cs, add the following lines after the existing command IDs in the `TestCommandPackageGuids` class definition.  
   
-    ```cs  
+    ```csharp  
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file  
     public const uint cmdidMRUList = 0x200;  
     ```  
   
 2.  In TestCommand.cs add the following using statement.  
   
-    ```cs  
+    ```csharp  
     using System.Collections;  
     ```  
   
 3.  Add the following code in the TestCommand constructor after the last AddCommand call. The `InitMRUMenu` will be defined later  
   
-    ```cs  
+    ```csharp  
     this.InitMRUMenu(commandService);  
     ```  
   
 4.  Add the following code in the TestCommand class. This code initializes the list of strings that represent the items to be shown on the MRU list.  
   
-    ```cs  
+    ```csharp  
     private int numMRUItems = 4;  
     private int baseMRUID = (int)TestCommandPackageGuids.cmdidMRUList;  
     private ArrayList mruList;  
@@ -145,7 +145,7 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 5.  After the `InitializeMRUList` method, add the `InitMRUMenu` method. This initializes the MRU list menu commands.  
   
-    ```cs  
+    ```csharp  
     private void InitMRUMenu(OleMenuCommandService mcs)  
     {  
         InitializeMRUList();  
@@ -165,7 +165,7 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 6.  After the `InitMRUMenu` method, add the following `OnMRUQueryStatus` method. This is the handler that sets the text for each MRU item.  
   
-    ```cs  
+    ```csharp  
     private void OnMRUQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand menuCommand = sender as OleMenuCommand;  
@@ -182,7 +182,7 @@ This walkthrough builds on the demonstrations in [Adding a Submenu to a Menu](..
   
 7.  After the `OnMRUQueryStatus` method, add the following `OnMRUExec` method. This is the handler for selecting an MRU item. This method moves the selected item to the top of the list and then displays the selected item in a message box.  
   
-    ```cs  
+    ```csharp  
     private void OnMRUExec(object sender, EventArgs e)  
     {  
         var menuCommand = sender as OleMenuCommand;  

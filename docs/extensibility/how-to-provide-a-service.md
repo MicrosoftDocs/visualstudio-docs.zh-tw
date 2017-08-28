@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f786afc643a6f4ed3faf10bf53a10cb4f391a843
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f624a2f2b030d775af0fc8f14c7541d28e84ca8e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-provide-a-service"></a>How to: Provide a Service
@@ -61,7 +61,7 @@ A VSPackage can provide services that other VSPackages can use. To provide a ser
   
      The following example shows a very basic implementation of the three types. The constructor of the service class must set the service provider.  
   
-    ```cs  
+    ```csharp  
     public class MyService : SMyService, IMyService  
     {  
         private Microsoft.VisualStudio.OLE.Interop.IServiceProvider serviceProvider;  
@@ -96,7 +96,7 @@ A VSPackage can provide services that other VSPackages can use. To provide a ser
   
 1.  To register a service, add the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> to the VSPackage that provides the service. Here is an example:  
   
-    ```cs  
+    ```csharp  
     [ProvideService(typeof(SMyService))]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [Guid(VSPackage1.PackageGuidString)]  
@@ -113,7 +113,7 @@ A VSPackage can provide services that other VSPackages can use. To provide a ser
   
 1.  In the VSPackage initializer, add the service and add a callback method to create the services. Here is the change to make to the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method:  
   
-    ```cs  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  
@@ -139,7 +139,7 @@ A VSPackage can provide services that other VSPackages can use. To provide a ser
   
 3.  Now you can get the service and use its methods. We'll show this in the initializer, but you can get the service anywhere you want to use the service.  
   
-    ```cs  
+    ```csharp  
     protected override void Initialize()  
     {  
         ServiceCreatorCallback callback =new ServiceCreatorCallback(CreateService);  

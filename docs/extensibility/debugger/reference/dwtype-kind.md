@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e399026aea64c5e2f01bb66f0827fa4c24d89f58
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 699f842ffc8fa14f7674a49671f9ac2b8ada6117
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="dwtypekind"></a>dwTYPE_KIND
@@ -42,7 +42,7 @@ Specifies how to interpret the type of an [IDebugField](../../../extensibility/d
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_dwTYPE_KIND {  
    TYPE_KIND_METADATA = 0x0001,  
    TYPE_KIND_PDB      = 0x0002,  
@@ -52,7 +52,7 @@ enum enum_dwTYPE_KIND {
 typedef DWORD dwTYPE_KIND;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_dwTYPE_KIND {  
    TYPE_KIND_METADATA = 0x0001,  
    TYPE_KIND_PDB      = 0x0002,  

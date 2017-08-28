@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 88dd6c3aa2fa7df4b6dd57f3c77a72db0b635d39
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5f2804506fa68972062c53d8aca72bf9f3138099
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
@@ -46,7 +46,7 @@ Loads (as necessary) symbols for all modules being debugged by this debugging en
 HRESULT LoadSymbols();  
 ```  
   
-```cs  
+```csharp  
 int LoadSymbols();  
 ```  
   

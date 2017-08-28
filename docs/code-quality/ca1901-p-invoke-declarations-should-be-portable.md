@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a004749aec8e4473a7a5d050114acdaa4b63651d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fb3ea2ab50f10dcb348c03a716c1eba5bee7e630
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: P/Invoke declarations should be portable
@@ -68,7 +68,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="example"></a>Example  
  The following example demonstrates a violation of this rule.  
   
-```cs  
+```csharp  
 internal class NativeMethods  
 {  
     [DllImport("shell32.dll", CharSet=CharSet.Auto)]  
@@ -79,7 +79,7 @@ internal class NativeMethods
   
  In this example, the `nIconIndex` parameter is declared as an `IntPtr`, which is 4 bytes wide on a 32-bit platform and 8 bytes wide on a 64-bit platform. In the unmanaged declaration that follows, you can see that `nIconIndex` is a 4-byte unsigned integer on all platforms.  
   
-```cs  
+```csharp  
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,   
     UINT nIconIndex);  
 ```  
@@ -87,7 +87,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ## <a name="example"></a>Example  
  To fix the violation, change the declaration to the following:  
   
-```cs  
+```csharp  
 internal class NativeMethods{  
     [DllImport("shell32.dll", CharSet=CharSet.Auto)]   
     internal static extern IntPtr ExtractIcon(IntPtr hInst,   

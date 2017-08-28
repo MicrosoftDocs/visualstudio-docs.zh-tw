@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e687f6858f2b6205f8f53ce17e2990ccf375d55b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3828aaa1961dc95e73c3e26d156b4b149b802c37
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
@@ -48,7 +48,7 @@ HRESULT GetName(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetName(  
    out string pbstrName  
 );  

@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 16cdc07635aa778f6372bba3fa6066568ea038b8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 05021cedda7030bcddf84388b5997d93da99defb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
@@ -40,13 +40,13 @@ Retrieves a reference to the interface of the debug process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetProcess(   
    IDebugProcess2 **ppProcess  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetProcess(   
    out IDebugProcess2 ppProcess  
 );  
@@ -62,7 +62,7 @@ public int GetProcess(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugCodeContext** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)  
 {  
     HRESULT hr = S_OK;  

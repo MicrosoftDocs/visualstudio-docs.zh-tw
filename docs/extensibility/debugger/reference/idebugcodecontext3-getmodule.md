@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b271707d24a394d2f619ee21a40a42c8b8a13e82
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c015c7b6cb604e1f5da5ca13cb7a58425c622773
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
@@ -40,13 +40,13 @@ Retrieves a reference to the interface of the debug module.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetModule(   
    IDebugModule2 **ppModule  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetModule(   
    out IDebugModule2 ppModule  
 );  
@@ -62,7 +62,7 @@ public int GetModule(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugCodeContext** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
 {  
     HRESULT hr = S_OK;  

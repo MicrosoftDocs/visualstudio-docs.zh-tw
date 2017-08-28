@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 20eff1c37fd668fae4dd5bfdf77bbe4b800e02a0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: de6db7ed6a3f89e1b257337c85fd54c1c2704815
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
@@ -42,13 +42,13 @@ Returns a copy of the current enumeration as a separate object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
    IEnumDebugCodeContexts2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int Clone(  
    out IEnumDebugCodeContexts2 ppEnum  
 );  

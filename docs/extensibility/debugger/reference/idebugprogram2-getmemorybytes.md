@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c737898be52c57442df052f40905f3d1869d5db3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 78da58e71bea0bdbec5c85146b8123ae6c66295e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
@@ -42,13 +42,13 @@ Retrieves the memory bytes occupied by the program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryBytes(   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryBytes(   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  

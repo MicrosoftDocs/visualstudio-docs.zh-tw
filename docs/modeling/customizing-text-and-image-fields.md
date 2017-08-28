@@ -26,10 +26,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5fc13bbcc29225ca06524d148c8db96b3d48a681
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c5f606d4e35e3becade144926854a98afc436cc5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="customizing-text-and-image-fields"></a>Customizing Text and Image Fields
@@ -222,7 +222,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  To test the code, press F5 and, in the debugging solution, open a sample diagram. The default state of the icon should appear. Select the shape and in the Properties window, change the value of the **AlternateState** property. The icon should then appear rotated through 90 degrees, on that shape.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
 ...  

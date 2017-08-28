@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 99441a25b9136fe434f0a9b836d913e1257e6d8a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0dbefd1609d67936e08a783387a4f4d4f62b7128
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
@@ -42,7 +42,7 @@ Attaches a debug engine (DE) to a program or programs. Called by the session deb
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Attach(   
    IDebugProgram2**      pProgram,  
    IDebugProgramNode2**  rgpProgramNodes,  
@@ -52,7 +52,7 @@ HRESULT Attach(
 );  
 ```  
   
-```cs  
+```csharp  
 int Attach(   
    IDebugProgram2[]     pProgram,  
    IDebugProgramNode2[] rgpProgramNodes,  

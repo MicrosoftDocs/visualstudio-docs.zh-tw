@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9293fca7b4eaa4dc2db19772c2e44ffb6bb44185
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: aaf69a1c036fe31a02b6482cb5f753075492c21c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
@@ -42,13 +42,13 @@ Gets the parent property of a property.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetParent (   
    IDebugProperty2** ppParent  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetParent (   
    out IDebugProperty2 ppParent  
 );  

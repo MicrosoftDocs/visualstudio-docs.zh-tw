@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6de2918532eb5b2c92b25fd3485cb53ed2265d86
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3148f8a1aaa333c8ae0cf55bdc3bc4e218c0f574
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
@@ -42,7 +42,7 @@ Specifies the breakpoint condition style for pending and bound breakpoints.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  
@@ -51,7 +51,7 @@ enum enum_BP_COND_STYLE {
 typedef DWORD BP_COND_STYLE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_COND_STYLE {   
    BP_COND_NONE         = 0x0000,  
    BP_COND_WHEN_TRUE    = 0x0001,  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1ce040112a48d1a5ad731b06ac0a468d365327b6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a1aa97237bf99f9f0f3d608550e83a416b8bcbac
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="implementing-getmethodproperty"></a>Implementing GetMethodProperty
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This example shows an implementation of `IDebugExpressionEvaluator::GetMethodProperty` in managed code.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  

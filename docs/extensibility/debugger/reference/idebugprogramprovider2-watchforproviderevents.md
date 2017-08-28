@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 980c5a8626c7694c69086e7589c9da509669189f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7d5d7c7ff2856be896a1281c297dc8b707a2917f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
@@ -53,7 +53,7 @@ HRESULT WatchForProviderEvents(
 );  
 ```  
   
-```cs  
+```csharp  
 int WatchForProviderEvents(  
    enum_PROVIDER_FLAGS   Flags,  
    IDebugDefaultPort2    pPort,  
@@ -99,7 +99,7 @@ int WatchForProviderEvents(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugEngine** object that exposes the [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(  
     PROVIDER_FLAGS Flags,   
     IDebugDefaultPort2 *pPort,   

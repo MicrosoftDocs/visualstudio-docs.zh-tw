@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fa16bfc901bd4d6a7a36467886cbfae046a5f9b6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3926456c8b625102dfc5df4d8818f3cacc3a2ce3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
@@ -42,13 +42,13 @@ Suspends a thread.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Suspend (   
    DWORD *pdwSuspendCount  
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT Suspend (   
    out uint pdwSuspendCount  
 );  

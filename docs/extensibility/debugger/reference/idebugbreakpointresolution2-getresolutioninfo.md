@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 91bda0ecbcddc41741fd96f891e88f3fc62b90a9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 80c7869b4cc916e99dee099703dd66ea8056853d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
@@ -42,14 +42,14 @@ Gets the breakpoint resolution information that describes this breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetResolutionInfo(   
    BPRESI_FIELDS       dwFields,  
    BP_RESOLUTION_INFO* pBPResolutionInfo  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetResolutionInfo(   
    enum BPRESI_FIELDS   dwFields,  
    BP_RESOLUTION_INFO[] pBPResolutionInfo  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fbaecc58d27d41d342d7c101d4204767d70a604d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ac6ab04becff0850453d5fb02a67c765264caf49
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
@@ -42,7 +42,7 @@ Reads instructions starting from the current position in the disassembly stream.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Read(   
    DWORD                     dwInstructions,  
    DISASSEMBLY_STREAM_FIELDS dwFields,  
@@ -51,7 +51,7 @@ HRESULT Read(
 );  
 ```  
   
-```cs  
+```csharp  
 int Read(   
    uint                           dwInstructions,  
    enum_DISASSEMBLY_STREAM_FIELDS dwFields,  

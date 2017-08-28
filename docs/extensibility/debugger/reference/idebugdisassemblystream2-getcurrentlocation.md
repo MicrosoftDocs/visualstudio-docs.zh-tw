@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f0ee8b8f7cbec2b795e7e144c8b0396ef9ff7488
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af95543052f0fd0a48f2f5c1e71b584e8902925f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
@@ -42,13 +42,13 @@ Returns a code location identifier that represents the current code location.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCurrentLocation(   
    UINT64* puCodeLocationId  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCurrentLocation(   
    out ulong puCodeLocationId  
 );  

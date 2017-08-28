@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3fc0a6f7d7929bbea7a3779fbd329ea898986ee1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 21fcc9388b40baa9e003b4beb876ba2f0f23fbaf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>How to: Managing Multiple Threads in Managed Code
@@ -45,7 +45,7 @@ If you have a managed VSPackage extension that calls asynchronous methods or has
   
 1.  If you are on the UI thread and you want to do asynchronous work on a background thread, use Task.Run():  
   
-    ```cs  
+    ```csharp  
     await Task.Run(async delegate{  
         // Now you're on a separate thread.  
     });  
@@ -55,7 +55,7 @@ If you have a managed VSPackage extension that calls asynchronous methods or has
   
 2.  If you are on the UI thread and you want to synchronously block while you are performing work on a background thread, use the <xref:System.Threading.Tasks.TaskScheduler> property `TaskScheduler.Default` inside <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
-    ```cs  
+    ```csharp  
     // using Microsoft.VisualStudio.Threading;  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  
         await TaskScheduler.Default;  
@@ -69,7 +69,7 @@ If you have a managed VSPackage extension that calls asynchronous methods or has
   
 1.  If you're on a background thread and you want to do something on the UI thread, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
-    ```cs  
+    ```csharp  
     // Switch to main thread  
     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  
     ```  
@@ -78,7 +78,7 @@ If you have a managed VSPackage extension that calls asynchronous methods or has
   
      If your background thread method isn't asynchronous and you can't make it asynchronous, you can still use the `await` syntax to switch to the UI thread by wrapping your work with <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>, as in this example:  
   
-    ```cs  
+    ```csharp  
     ThreadHelper.JoinableTaskFactory.Run(async delegate {  
         // Switch to main thread  
         await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();  

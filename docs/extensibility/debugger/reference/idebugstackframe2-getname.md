@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: efd0c15d84924fc1416023576671b6917c1067e8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e1d2f407fcb6dc4ab9d26a8cd47804310c2b8e4f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
@@ -42,13 +42,13 @@ Gets the name of the stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetName (   
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetName (   
    out string pbstrName  
 );  

@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bffed81dc6971d8eb84fc5c8577cbcbd7eec27aa
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ff2cab57f2db7cfc5095faa049bf73b16e6e2bc3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
@@ -43,13 +43,13 @@ Retrieves the user-displayable name for this context.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetName(   
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetName(  
    out string pbstrName  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1239392c7a4dc96761034d7aa6f95d73134a139f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1798f5ec2ad4a7fdd95f683aff7eb3c61aac94c3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
@@ -42,13 +42,13 @@ Retrieves a list of the modules that this program has loaded and is executing.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumModules(   
    IEnumDebugModules2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumModules(   
    out IEnumDebugModules2 ppEnum  
 );  

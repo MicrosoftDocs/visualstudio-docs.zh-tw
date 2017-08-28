@@ -53,10 +53,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0cd0b861abf5060e2da383bed5ce21760bb1a48e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 972079ccba97db41d25b84de3394bdc40c1473c1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Manage exceptions with the debugger in Visual Studio
@@ -120,7 +120,7 @@ If you select an exception in the **Exception Settings** window, debugger execut
   
 *  A C# console application references a class library with a class that has two methods, a method that throws an exception and handles it and a second method that throws the same exception and doesn't handle it:  
   
-    ```cs 
+    ```csharp 
     public class Class1  
     {  
         public void ThrowHandledException()  

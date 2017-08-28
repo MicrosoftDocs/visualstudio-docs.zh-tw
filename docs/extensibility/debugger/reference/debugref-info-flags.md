@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7d898c465b43bfb32f8ea7fc75b66b056f35626f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e1efd63a837ae86d26b4eebd4851bbfa8d89c4a7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="debugrefinfoflags"></a>DEBUGREF_INFO_FLAGS
@@ -42,7 +42,7 @@ Specifies what information to retrieve about a debug reference object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  
@@ -57,7 +57,7 @@ enum enum_DEBUGREF_INFO_FLAGS {
 typedef DWORD DEBUGREF_INFO_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_DEBUGREF_INFO_FLAGS {   
    DEBUGREF_INFO_NAME             = 0x00000001,  
    DEBUGREF_INFO_TYPE             = 0x00000002,  

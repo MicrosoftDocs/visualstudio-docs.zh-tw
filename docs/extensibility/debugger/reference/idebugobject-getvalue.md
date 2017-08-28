@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 62f05a24d81c4abb7e4ef8bbf25ccf3d58ea710d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f18feac64690b31f7c589afd9b17368adbf5261c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectgetvalue"></a>IDebugObject::GetValue
@@ -42,14 +42,14 @@ Gets the value of the object as a consecutive series of bytes.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetValue(   
    BYTE* pValue,  
    UINT  nSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetValue(  
    ref byte[] pValue,   
    uint nSize  

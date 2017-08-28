@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 80b7ac1a2c950b4f167214b5224851e86f315ce3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f1c91c1a805d99617875556b04f1903fd7c32daa
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
@@ -42,13 +42,13 @@ Gets the property to be destroyed.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDebugProperty (   
    IDebugProperty2** ppProperty  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDebugProperty (   
    out IDebugProperty2 ppProperty  
 );  

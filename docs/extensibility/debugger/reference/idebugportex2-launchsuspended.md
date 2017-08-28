@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2020dbb883f7de5efbbe7642bc0d07720a3dab3e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8d1faea09d72130b737fb9c64d4cfb03afbcf77
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
@@ -42,7 +42,7 @@ Launches an executable file.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT LaunchSuspended(   
    LPCOLESTR        pszExe,  
    LPCOLESTR        pszArgs,  
@@ -55,7 +55,7 @@ HRESULT LaunchSuspended(
 );  
 ```  
   
-```cs  
+```csharp  
 int LaunchSuspended(   
    string             pszExe,  
    string             pszArgs,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 204452fe8b697becc889f3c09c2bb50adf0a3f41
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bc4aef9381443cbdc0e83d37f9cadb9a4634a1d3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
@@ -42,7 +42,7 @@ Specifies what kind of information to retrieve for a particular machine.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  
@@ -51,7 +51,7 @@ enum enum_MACHINE_INFO_FIELDS {
 typedef DWORD MACHINE_INFO_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_MACHINE_INFO_FIELDS {   
    MCIF_NAME  = 0x00000001,  
    MCIF_FLAGS = 0x00000002,  

@@ -38,10 +38,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 22f04565845e1dcf73522e18de76b1e227a78170
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5359df1aa685a0fc8dabe356c0901072d6c36608
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="remove-parameters-refactoring-c"></a>Remove Parameters Refactoring (C#)
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/24/2017
   
 1.  Create a console application named `RemoveParameters`, and then replace `Program` with the following code.  
   
-    ```cs  
+    ```csharp  
     class A  
     {  
         // Invoke on 'A'.  
@@ -95,13 +95,13 @@ ms.lasthandoff: 08/24/2017
   
  If a parameter being removed is modified during the call to a method, the removal of the parameter will also remove the modification. For example, if a method call is changed from  
   
-```cs  
+```csharp  
 MyMethod(param1++, param2);  
 ```  
   
  to  
   
-```cs  
+```csharp  
 MyMethod(param2);  
 ```  
   

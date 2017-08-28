@@ -36,10 +36,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 48594f38814cef86fcdbe32bc1b4037da573ee28
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3eeb0f184470399f33b54decb3a37ff9f68d6d0b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API
@@ -79,7 +79,7 @@ By default, all of the assemblies included in a [!INCLUDE[ndptecclick](../deploy
   
 7.  Compile the file into an assembly.  
   
-    ```cs  
+    ```csharp  
     csc /target:library /keyfile:TestKey.snk ClickOnceLibrary.cs  
     ```  
   
@@ -105,7 +105,7 @@ By default, all of the assemblies included in a [!INCLUDE[ndptecclick](../deploy
   
 13. Compile it into an executable using the following command.  
   
-    ```cs  
+    ```csharp  
     csc /target:exe /reference:ClickOnceLibrary.dll Form1.cs  
     ```  
   

@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c2497ca7503b5334fd3e45cf3f1655ebad9a043f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a92d03bca26e1e3eceacb3b611d81e344b656393
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>How to: Split a Class into Partial Classes (Class Designer)
@@ -73,7 +73,7 @@ End Class
 ## <a name="example"></a>Example  
  To split a class definition in Visual C#, use the `partial` keyword, as shown in the following example.  
   
-```cs  
+```csharp  
 // First part of class definition.  
 public partial class Employee  
 {  

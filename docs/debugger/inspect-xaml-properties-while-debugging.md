@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7eb736ffac837b0e44bf7331dba17f1e68f1d631
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 73f88a22063c408f796a28c8135c10f204dea75e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspect XAML properties while debugging
@@ -70,7 +70,7 @@ You can get a real-time view of your running XAML code with the **Live Visual Tr
   
  Add the following command handler to the MainWindow.xaml.cs file:  
   
-```cs 
+```csharp 
 int count;
 
 private void button_Click(object sender, RoutedEventArgs e)  

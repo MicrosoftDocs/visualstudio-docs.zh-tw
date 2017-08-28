@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b2ca6d2ce1e9dfa59957a080ddfb4e8a0fcffcb5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 352f465ead2af45be120a78b2bea025dd72892dd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
@@ -40,7 +40,7 @@ Enumerates the available expression evaluators given the language and vendor ide
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumEEs(  
    DWORD  celtBuffer,  
    GUID*  rgguidLang,  
@@ -49,7 +49,7 @@ HRESULT EnumEEs(
 );  
 ```  
   
-```cs  
+```csharp  
 public int EnumEEs(  
    uint       celtBuffer,  
    ref Guid   rgguidLang,  

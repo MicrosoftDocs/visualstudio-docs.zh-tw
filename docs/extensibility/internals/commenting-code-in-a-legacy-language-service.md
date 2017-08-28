@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f1814fc40bac1e977a02fa53a34c8e59e299b2bd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 005878f50c8d42f278df12a2d0419ca06d552bd0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Commenting Code in a Legacy Language Service
@@ -60,7 +60,7 @@ Programming languages typically provide a means to annotate or comment the code.
 ### <a name="example"></a>Example  
  Here is an example implementation of the <xref:Microsoft.VisualStudio.Package.Source.GetCommentFormat%2A> method.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Package;  
   
 namespace MyLanguagePackage  

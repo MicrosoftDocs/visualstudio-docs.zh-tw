@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6c3663e6c37a77634473e0a552c80401b964ea06
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 198db90bd7be89217419742d44ec5bf065073120
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
@@ -42,7 +42,7 @@ Gives the reason a breakpoint was unbound.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  
@@ -52,7 +52,7 @@ enum enum_BP_UNBOUND_REASON {
 typedef DWORD BP_UNBOUND_REASON;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_UNBOUND_REASON {   
    BPUR_UNKNOWN           = 0x0000,  
    BPUR_CODE_UNLOADED     = 0x0002,  

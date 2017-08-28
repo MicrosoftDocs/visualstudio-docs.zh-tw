@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 85f72389bed0d6c69714cac4f0b0666924bc88c2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: afccf495feef9a01aa5969d994d7612d1539b38a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="guidarray"></a>GUID_ARRAY
@@ -40,7 +40,7 @@ Describes an array of unique identifiers for available debug engines.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagGUID_ARRAY  
 {  
    DWORD dwCount;  
@@ -48,7 +48,7 @@ typedef struct tagGUID_ARRAY
 } GUID_ARRAY;  
 ```  
   
-```cs  
+```csharp  
 public struct GUID_ARRAY  
 {  
    public uint dwCount;  

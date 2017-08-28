@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 006cd595ce619df66b9f407c437dd51113bca05c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 918c276f4a15a36bdaa54a64670a77da953440b4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="attachreason"></a>ATTACH_REASON
@@ -42,7 +42,7 @@ Specifies the reason for the debug engine (DE) to attach to a program node.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  
@@ -51,7 +51,7 @@ enum enum_ATTACH_REASON {
 typedef DWORD ATTACH_REASON;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_ATTACH_REASON {   
    ATTACH_REASON_LAUNCH = 0x0001,  
    ATTACH_REASON_USER   = 0x0002,  

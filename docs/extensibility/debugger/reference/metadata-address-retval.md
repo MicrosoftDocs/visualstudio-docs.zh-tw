@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 16002fe5b37c20797d74b0cd8e33cb99fbff2686
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c7da8b57554d8d9dca3dd7973d1afc7e7205bfc0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
@@ -51,7 +51,7 @@ typedef struct _tagMETADATA_ADDRESS_RETVAL {
 } METADATA_ADDRESS_RETVAL;  
 ```  
   
-```cs  
+```csharp  
 public struct METADATA_ADDRESS_RETVAL {  
    public int    tokMethod;  
    public uint   dwCorType;  

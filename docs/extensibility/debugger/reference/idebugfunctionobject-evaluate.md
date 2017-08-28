@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: df6bce16c7fe6e3fd99de2b666bce00c819b3bdf
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c803032cdeef8f2effaec810db9e42db87428e1f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
@@ -42,7 +42,7 @@ Calls the function and returns the resulting value as an object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Evaluate(   
    IDebugObject** ppParams,  
    DWORD          dwParams,  
@@ -51,7 +51,7 @@ HRESULT Evaluate(
 );  
 ```  
   
-```cs  
+```csharp  
 int Evaluate(  
    IDebugObject[]   ppParams,   
    IntPtr           dwParams,   

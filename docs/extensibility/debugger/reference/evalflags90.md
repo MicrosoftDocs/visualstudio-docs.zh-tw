@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fb795ea7e2e5658d0945fce9f2b8674144aa1de2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 25ff118d4cb3388798b456c516869d62b47ef4e3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
@@ -40,7 +40,7 @@ Enumerates the valid values for flags that control expression evaluation. This e
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_EVALFLAGS90  
 {  
    // VS 8.0 values  
@@ -60,7 +60,7 @@ enum enum_EVALFLAGS90
 typedef DWORD EVALFLAGS90;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_EVALFLAGS90  
 {  
    // VS 8.0 values  

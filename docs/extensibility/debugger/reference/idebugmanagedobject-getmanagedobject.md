@@ -1,51 +1,68 @@
 ---
-title: "IDebugManagedObject::GetManagedObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugManagedObject::GetManagedObject"
-helpviewer_keywords: 
-  - "IDebugManagedObject::GetManagedObject 方法"
+title: IDebugManagedObject::GetManagedObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugManagedObject::GetManagedObject
+helpviewer_keywords:
+- IDebugManagedObject::GetManagedObject method
 ms.assetid: 6abe1402-6aad-41e6-8ec1-ae12d5945992
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugManagedObject::GetManagedObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4debd813235db6a397726a6ddf2377285de87dfe
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-傳回表示 managed 的物件的介面。  
+---
+# <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
+Returns an interface that represents the managed object.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetManagedObject(   
-   IUnknown** ppManagedObject  
+```cpp  
+HRESULT GetManagedObject(   
+   IUnknown** ppManagedObject  
 );  
 ```  
   
-```cpp#  
+```cpp  
 int GetManagedObject(  
-   out object ppManagedObject  
+   out object ppManagedObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppManagedObject`  
- \[\] out傳回表示 managed 的物件的介面。  
+ [out] Returns an interface that represents the managed object.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## 備註  
- 這個方法所傳回的介面可以查詢任何 managed 類別，讓它被呼叫的方法實作的介面。  
+## <a name="remarks"></a>Remarks  
+ The interface returned from this method can be queried for any interface implemented by the managed class, allowing its methods to be called.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

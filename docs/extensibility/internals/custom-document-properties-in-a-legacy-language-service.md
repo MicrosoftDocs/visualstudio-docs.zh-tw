@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 92ab0eaeeafdaf89c9534ed9e9af0d48db868f81
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a76851b183ead84dad32ed36ce22f677ae3f3c3d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>Custom Document Properties in a Legacy Language Service
@@ -51,7 +51,7 @@ Document properties can be displayed in the [!INCLUDE[vsprvs](../../code-quality
 ### <a name="example"></a>Example  
  Here is an example class derived from <xref:Microsoft.VisualStudio.Package.DocumentProperties>, showing two properties, Filename and Description. When a property is updated, a custom method on the <xref:Microsoft.VisualStudio.Package.LanguageService> class is called to write the property to the source file.  
   
-```cs  
+```csharp  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -143,7 +143,7 @@ namespace TestLanguagePackage
   
 ### <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   
@@ -180,7 +180,7 @@ namespace TestLanguagePackage
   
  This example uses the scanner to determine the type of tokens in the first two lines. This example is for illustrative purposes only. A more typical approach to this situation is to parse the source file into what is called a parse tree where each node of the tree contains information about a particular token. The root node would contain the document properties.  
   
-```cs  
+```csharp  
 using System.ComponentModel;  
 using Microsoft.VisualStudio.Package;  
   

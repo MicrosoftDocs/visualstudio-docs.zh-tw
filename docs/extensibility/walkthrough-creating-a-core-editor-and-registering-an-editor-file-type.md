@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9bb289c4f765ac5ae3c2b2ed93ab82a4cb28373d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dec3e53df108377dacfc53ba308029933654b789
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Walkthrough: Creating a Core Editor and Registering an Editor File Type
@@ -74,7 +74,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Imports IOleServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider  
     ```  
   
-    ```cs  
+    ```csharp  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio;  
     using Microsoft.VisualStudio.Shell;  
@@ -93,7 +93,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     <Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")> _  
     ```  
   
-    ```cs  
+    ```csharp  
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
@@ -105,7 +105,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
         Private serviceProvider As IOleServiceProvider  
     ```  
   
-    ```cs  
+    ```csharp  
     class EditorFactory  
     {  
         private Package parentPackage;  
@@ -122,7 +122,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public EditorFactory(Package parentPackage)  
     {  
         this.parentPackage = parentPackage;  
@@ -135,7 +135,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Class EditorFactory Implements IVsEditorFacto  
     ```  
   
-    ```cs  
+    ```csharp  
     class EditorFactory : IVsEditorFactory  
   
     ```  
@@ -150,7 +150,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Return VSConstants.S_OK  
     ```  
   
-    ```cs  
+    ```csharp  
     return VSConstants.S_OK;  
     ```  
   
@@ -161,7 +161,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Return VSConstants.S_OK  
     ```  
   
-    ```cs  
+    ```csharp  
     this.serviceProvider = psp;  
     return VSConstants.S_OK;  
     ```  
@@ -178,7 +178,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Return retval  
     ```  
   
-    ```cs  
+    ```csharp  
     int retval = VSConstants.E_NOTIMPL;  
     pbstrPhysicalView = null;   // We support only one view.  
     if (rguidLogicalView.Equals(VSConstants.LOGVIEWID_Designer) ||  
@@ -258,7 +258,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Return retval  
     ```  
   
-    ```cs  
+    ```csharp  
     int retval = VSConstants.E_FAIL;  
   
     // Initialize these to empty to start with  
@@ -357,7 +357,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
           ".myext", 32, NameResourceID:=101 )> _  
     ```  
   
-    ```cs  
+    ```csharp  
     [ProvideEditorFactory(typeof(EditorFactory), 101)]  
     [ProvideEditorExtension(typeof(EditorFactory),   
           ".myext", 32, NameResourceID = 101)]   
@@ -371,7 +371,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     Private editorFactory As EditorFactory  
     ```  
   
-    ```cs  
+    ```csharp  
     private EditorFactory editorFactory;  
     ```  
   
@@ -383,7 +383,7 @@ This walkthrough demonstrates how to create a VSPackage that starts the [!INCLUD
     MyBase.RegisterEditorFactory(Me.editorFactory)  
     ```  
   
-    ```cs  
+    ```csharp  
     // Create our editor factory and register it.  
     this.editorFactory = new EditorFactory(this);  
     base.RegisterEditorFactory(this.editorFactory);  

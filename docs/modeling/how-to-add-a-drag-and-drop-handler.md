@@ -17,10 +17,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8881c3410db0167eab70f99f24dd4e0c3d2612e9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b773c9339949066c7d1837b7bc687403731e2bb8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>How to: Add a Drag-and-Drop Handler
@@ -45,7 +45,7 @@ You can add handlers for drag-and-drop events to your DSL, so that users can dra
 ##  <a name="overrideShapeElement"></a> Defining Gesture Handlers by Overriding ShapeElement Methods  
  Add a new code file to your DSL project. For a gesture handler, you usually must have at least the following `using` statements:  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
 using System.Linq;  
@@ -55,7 +55,7 @@ using System.Linq;
   
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- This method is called when the mouse pointer enters the shape during a drag operation. Your method should inspect the item that the user is dragging, and set the Effect property to indicate whether the user can drop the item on this shape. The Effect property determines the appearance of the cursor while it is over this shape, and also determines whether `OnDragDrop()` will be called when the user releases the mouse button.  
   
-    ```cs  
+    ```csharp  
     partial class MyShape // MyShape generated from DSL Definition.  
     {  
         public override void OnDragOver(DiagramDragEventArgs e)  
@@ -72,7 +72,7 @@ using System.Linq;
   
 -   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - This method is called if the user releases the mouse button while the mouse pointer rests over this shape or diagram, if `OnDragOver(DiagramDragEventArgs e)` previously set `e.Effect` to a value other than `None`.  
   
-    ```cs  
+    ```csharp  
     public override void OnDragDrop(DiagramDragEventArgs e)  
         {  
           if (!IsAcceptableDropItem(e))  
@@ -153,7 +153,7 @@ using System.Linq;
   
 -   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` - Use this property if you want users to drag items from a DSL or a UML model. An element group prototype contains one or more objects, links, and their property values. It is also used in paste operations and when you are adding an element from the toolbox. In a prototype, objects and their types are identified by Guid. For example, this code allows the user to drag class elements from a UML diagram or UML Model Explorer:  
   
-    ```cs  
+    ```csharp  
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
     {  
       return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
@@ -233,7 +233,7 @@ using System.Linq;
   
 2.  In the gesture handler code file, add the following namespace references:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.VisualStudio.Modeling;  
     using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
     using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -294,7 +294,7 @@ using System.Linq;
   
 -   The following code sample accepts an object dropped from a UML diagram.  
   
-    ```cs  
+    ```csharp  
   
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility;  
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
@@ -346,7 +346,7 @@ using System.Linq;
   
  To build this example, create a solution by using the **Class Diagrams** solution template. Add a code file and add the following code. Adjust the namespace to be the same as your own.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Design;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  

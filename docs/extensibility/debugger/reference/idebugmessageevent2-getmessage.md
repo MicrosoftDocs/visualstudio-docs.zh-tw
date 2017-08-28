@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5facc859d937acda934c37bf909a0d9d5424ae57
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 190d4dab907e1c0934cb91f7fef6f87989569cad
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
@@ -43,7 +43,7 @@ Gets the message to be displayed.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMessage(   
    MESSAGETYPE* pMessageType,  
    BSTR*        pbstrMessage,  
@@ -53,7 +53,7 @@ HRESULT GetMessage(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMessage(   
    out enum_MESSAGETYPE pMessageType,  
    out string           pbstrMessage,  

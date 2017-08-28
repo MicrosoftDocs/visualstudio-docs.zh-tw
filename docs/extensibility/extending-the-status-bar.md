@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 593ba21432cc65c92c2640cac7df8f3f96c9f02b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 350703e1b6de2c43ecabd1d86d719aa6bf62cb11
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extending-the-status-bar"></a>Extending the Status Bar
@@ -54,7 +54,7 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
   
 2.  In TestStatusBarCommand.cs, replace the command handler method code (MenuItemCallback) with the following:  
   
-    ```cs  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -98,7 +98,7 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
   
 2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
   
-    ```cs  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -136,7 +136,7 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
   
 2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
   
-    ```cs  
+    ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar =(IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  

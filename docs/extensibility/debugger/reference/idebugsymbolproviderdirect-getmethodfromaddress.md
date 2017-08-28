@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 44cb5adc9d8305aa0444376d3192a3262d86ff4e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2979c305bd8db9700f55e799de26fe4ce1422d6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
@@ -41,7 +41,7 @@ Retrieves information about the method at the specified debug address.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMethodFromAddress(  
    IDebugAddress* pAddress,  
    GUID*          pGuid,  
@@ -53,7 +53,7 @@ HRESULT GetMethodFromAddress(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMethodFromAddress(  
    IDebugAddress pAddress,  
    out Guid      pGuid,  

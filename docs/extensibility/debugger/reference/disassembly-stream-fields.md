@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 091c06837cb883571d2ab8f35dbd0877bb2d07d3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c1681a66953db211dba3f9cc93235b15083a73a4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="disassemblystreamfields"></a>DISASSEMBLY_STREAM_FIELDS
@@ -42,7 +42,7 @@ Specifies what information to retrieve about a disassembly field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  
@@ -61,7 +61,7 @@ enum enum_DISASSEMBLY_STREAM_FIELDS {
 typedef DWORD DISASSEMBLY_STREAM_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_DISASSEMBLY_STREAM_FIELDS {   
    DSF_ADDRESS          = 0x00000001,  
    DSF_ADDRESSOFFSET    = 0x00000002,  

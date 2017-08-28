@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 61d570da34c133ceb1b08ad56ae795b05afde421
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cf37d2d273a5ac18793b29ee644a33ce2cc66836
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
@@ -42,7 +42,7 @@ Describes various attributes for an [IDebugProperty2](../../../extensibility/deb
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 #define DBG_ATTRIB_NONE                 0x0000000000000000,  
 #define DBG_ATTRIB_ALL                  0x00000000ffffffff,  
   
@@ -112,7 +112,7 @@ Describes various attributes for an [IDebugProperty2](../../../extensibility/deb
 typedef UINT64 DBG_ATTRIB_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public const int DBG_ATTRIB_NONE                 = 0x0000000000000000,  
 public const int DBG_ATTRIB_ALL                  = 0x00000000ffffffff,  
   

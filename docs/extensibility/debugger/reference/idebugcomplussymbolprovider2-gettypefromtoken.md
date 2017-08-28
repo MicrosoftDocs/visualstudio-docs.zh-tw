@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e5d352e43ec4f5f2f364c0c472afb9acb1030d7d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b8395849f002519d52ed1f547e92b67e35f6408e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
@@ -41,7 +41,7 @@ Retrieves a type given its token.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromToken(  
    ULONG32       appDomain,  
    GUID          guidModule,  
@@ -50,7 +50,7 @@ HRESULT GetTypeFromToken(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeFromToken(  
    uint            appDomain,  
    Guid            guidModule,  
@@ -78,7 +78,7 @@ int GetTypeFromToken(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

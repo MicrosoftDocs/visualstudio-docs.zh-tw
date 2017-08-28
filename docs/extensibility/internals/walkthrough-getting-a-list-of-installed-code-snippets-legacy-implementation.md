@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 51bac52e28b37818b45fd63d3c30bebb7e8d8d35
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 50d5343d98bba8df79628d9bfdfa838aea9e27d8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Walkthrough: Getting a List of Installed Code Snippets (Legacy Implementation)
@@ -48,7 +48,7 @@ A code snippet is a piece of code that can be inserted into the source buffer ei
   
 1.  The following code shows how to get a list of code snippets for a given language. The results are stored in an array of <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> structures. This method uses the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method to get the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> interface from the <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. However, you can also use the service provider given to your VSPackage and call the <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> method.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections;  
     using System.Runtime.InteropServices;  
@@ -126,7 +126,7 @@ A code snippet is a piece of code that can be inserted into the source buffer ei
 > [!NOTE]
 >  The `expansionsList` array listis cached for performance reasons. Changes to the snippets are not reflected in the list until the language service is stopped and reloaded (for example, by stopping and restarting [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).  
   
-```cs  
+```csharp  
 class TestLanguageService : LanguageService  
 {  
     private ArrayList expansionsList;  
@@ -151,7 +151,7 @@ class TestLanguageService : LanguageService
   
      The `TestDeclaration` class contains all the information that can be displayed in a completion list as well as the type of declaration.  
   
-    ```cs  
+    ```csharp  
     class TestAuthoringScope : AuthoringScope  
     {  
         public void AddDeclarations(TestDeclaration declaration)  

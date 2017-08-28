@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 070fbbd163cf6e3b7d743558feb00ad27401cfdb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fcbbe570cdecbcbfb2333ac0fbb8e3a3ba9d5dc5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="registering-an-expression-evaluator"></a>Registering an Expression Evaluator
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/24/2017
 ### <a name="example"></a>Example  
  This function shows how a managed code EE registers and unregisters itself with Visual Studio.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     [GuidAttribute("462D4A3D-B257-4AEE-97CD-5918C7531757")]  
@@ -144,7 +144,7 @@ namespace EEMC
 ### <a name="example"></a>Example  
  This function shows how an unmanaged code (C++) EE registers and unregisters itself with Visual Studio.  
   
-```cpp#  
+```cpp  
 /*---------------------------------------------------------  
   Registration  
 -----------------------------------------------------------*/  

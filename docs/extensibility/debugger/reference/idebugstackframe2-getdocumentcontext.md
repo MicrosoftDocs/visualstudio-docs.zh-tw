@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 37b9e8ec93696e15ebc7b733d98a86b8a12b566d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4e9e6ae94f046a54c778e39dfa5ddd3aa68b0092
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getdocumentcontext"></a>IDebugStackFrame2::GetDocumentContext
@@ -42,13 +42,13 @@ Gets the document context for this stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppCxt  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDocumentContext (   
    out IDebugDocumentContext2 ppCxt  
 );  

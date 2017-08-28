@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8cca8cc0dd6cdd0ce6e8127f833eb04553f8949f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4b4bad39cd9ad636d64ec4c6ea04583dab801e89
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
@@ -42,7 +42,7 @@ Creates an array object. This array can contain either primitive or object insta
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreateArrayObject(   
    OBJECT_TYPE    ot,  
    IDebugField*   pClassField,  
@@ -53,7 +53,7 @@ HRESULT CreateArrayObject(
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateArrayObject(  
    enum_OBJECT_TYPE ot,   
    IDebugField      pClassField,   

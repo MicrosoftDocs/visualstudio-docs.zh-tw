@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6d819936facdd2f1c05af41b584d167aa39c7bd3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 34d3a4569e9e236ee28d1829572d84d7b382fcfb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
@@ -42,14 +42,14 @@ A structure that holds a list of `GUID`s.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagCONST_GUID_ARRAY {  
    DWORD       dwCount;  
    CONST GUID* Members;  
 } CONST_GUID_ARRAY;  
 ```  
   
-```cs  
+```csharp  
 public struct CONST_GUID_ARRAY {  
    public uint   dwCount;  
    public Guid[] Members;  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9d0a844931a8041da12ef9691a172fb36eb983f6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f051b6f265ab8e7aa60f7218066b5dcbe05b675
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
@@ -42,7 +42,7 @@ Specifies the state of a pending breakpoint (a breakpoint that has not yet been 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PENDING_BP_STATE {   
    PBPS_NONE     = 0x0000,  
    PBPS_DELETED  = 0x0001,  
@@ -52,7 +52,7 @@ enum enum_PENDING_BP_STATE {
 typedef DWORD PENDING_BP_STATE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PENDING_BP_STATE {   
    PBPS_NONE     = 0x0000,  
    PBPS_DELETED  = 0x0001,  

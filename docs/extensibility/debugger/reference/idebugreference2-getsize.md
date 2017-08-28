@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: be4a0f63b2cc28c37442eddb8ecfb3458b6d92c2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b09816a1ed57f8b4fd5fdd475406786cb39198a3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
@@ -42,13 +42,13 @@ Gets the size, in bytes, of the value of the reference. Reserved for future use.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize (   
    DWORD* pdwSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize (   
    out uint pdwSize  
 );  

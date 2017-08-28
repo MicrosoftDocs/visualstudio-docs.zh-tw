@@ -14,10 +14,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c1c8b7bf0735550f6146532fd5d1a9fa0c2243bb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>How to: Intercept a Click on a Shape or Decorator
@@ -149,7 +149,7 @@ public partial class MyShape // change
   
 -   The change of role order fires a rule that updates the display. This behavior is already defined, and no additional code is required.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Design;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  

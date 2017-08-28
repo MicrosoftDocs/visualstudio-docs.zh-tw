@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c1d92848141326a8fb0e574d04178d9ae2434194
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6100a72aadbdc1dcee82d1b43e1394cd204d5b0f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
@@ -41,13 +41,13 @@ Determines if the array has base indices (lower bounds) defined.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT HasBaseIndices (  
    BOOL* pfHasBaseIndices  
 );  
 ```  
   
-```cs  
+```csharp  
 int HasBaseIndices (  
    out bool pfHasBaseIndices  
 );  

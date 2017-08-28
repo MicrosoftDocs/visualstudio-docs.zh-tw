@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ccc2100399700e057fc490850f9c2e9095840a74
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e8a1d5fd980d50326c11101acc54146e4de03258
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
@@ -42,13 +42,13 @@ Stops all threads running in this program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Stop(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int Stop();  
 ```  
   

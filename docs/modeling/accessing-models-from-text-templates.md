@@ -14,10 +14,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f6999f26e96c8057f8ae1b782569a7e83f780b50
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 741fc8ac1ed4e0cc449c8010b71bd13a484933a8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="accessing-models-from-text-templates"></a>Accessing Models from Text Templates
@@ -118,7 +118,7 @@ Here is a list of elements in the model:
   
  To access the models in your text template, you can now write code similar to the code in the following example.  
   
-```cs  
+```csharp  
 <#  
 foreach (ExampleElement element in this.LibraryModel.Elements)  
 ...  

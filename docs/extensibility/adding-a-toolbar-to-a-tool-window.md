@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 906e33598c316211e492644fabd8310226a1bcda
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b094a04a9d2e273418edaa7cc4bc2d36f89e9d29
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>Adding a Toolbar to a Tool Window
@@ -104,20 +104,20 @@ This walkthrough shows how to add a toolbar to a tool window.
   
 1.  In TWTestCommandPackageGuids.cs add the following lines.  
   
-    ```cs  
+    ```csharp  
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file  
     public const int TWToolbar = 0x1000;  
     ```  
   
 2.  In TestToolWindow.cs add the following using statement.  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel.Design;  
     ```  
   
 3.  In the TestToolWindow constructor add the following line.  
   
-    ```cs  
+    ```csharp  
     this.ToolBar = new CommandID(new Guid(TWTestCommandPackageGuids.guidTWTestCommandPackageCmdSet), TWTestCommandPackageGuids.TWToolbar);  
     ```  
   

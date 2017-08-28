@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d25c0fd02d15da12464aba45cc55beac2cb64c2c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f454f75556d1f088bb2e4560af2a436a9cd247d7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolproviderupdatesymbols"></a>IDebugComPlusSymbolProvider::UpdateSymbols
@@ -41,7 +41,7 @@ Updates the debug symbols in memory with those from the specified data stream.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT UpdateSymbols (  
    ULONG32  ulAppDomainID,  
    GUID     guidModule,  
@@ -49,7 +49,7 @@ HRESULT UpdateSymbols (
 );  
 ```  
   
-```cs  
+```csharp  
 int UpdateSymbols (  
    uint    ulAppDomainID,  
    Guid    guidModule,  
@@ -70,7 +70,7 @@ int UpdateSymbols (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::UpdateSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

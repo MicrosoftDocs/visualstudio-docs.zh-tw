@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6aeff6a9c4199dcf5f1bd6c304c09a6cd992f24c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 00674430f95eed895a6564676e9d33a36795268d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
@@ -42,13 +42,13 @@ Gets the size, in bytes, of the property value.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize (   
    DWORD* pdwSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize (   
    out uint pdwSize  
 );  

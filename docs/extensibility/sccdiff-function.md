@@ -1,87 +1,104 @@
 ---
-title: "SccDiff 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccDiff"
-helpviewer_keywords: 
-  - "SccDiff 函式"
+title: SccDiff Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccDiff
+helpviewer_keywords:
+- SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# SccDiff 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: de66dd1f5bb36ac60c145d481f4d46722dc1ca59
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-此函式會顯示 \(或選擇性地只會檢查\) 目前的檔案 \(位於本機磁碟上\) 和最後一個簽入的版本之間差異，在來源控制系統。  
+---
+# <a name="sccdiff-function"></a>SccDiff Function
+This function displays (or optionally just checks for) the differences between the current file (on the local disk) and its last checked-in version in the source control system.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccDiff(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LPCSTR    lpFileName,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LPCSTR    lpFileName,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[\] in原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpFileName  
- \[\] in要求不同的檔案名稱。  
+ [in] File name for which the difference is requested.  
   
- Stored  
- \[\] in命令旗標。 如需詳細資訊，請參閱 \< 備註 \>。  
+ fOptions  
+ [in] Command flags. See Remarks for details.  
   
  pvOptions  
- \[\] in原始檔控制外掛程式專屬選項。  
+ [in] Source control plug-in-specific options.  
   
-## 傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
-|-------|--------|  
-|SCC\_OK|工作複本與伺服器版本都相同。|  
-|SCC\_I\_FILESDIFFERS|工作複本與原始檔控制下的版本不同。|  
-|SCC\_I\_RELOADFILE|需要重新載入檔案或專案。|  
-|SCC\_E\_FILENOTCONTROLLED|檔案不是原始檔控制下。|  
-|SCC\_E\_NOTAUTHORIZED|不允許使用者執行這項作業。|  
-|SCC\_E\_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC\_E\_NONSPECIFICERROR|非特定的失敗。未取得檔案的差異。|  
-|SCC\_E\_FILENOTEXIST|找不到本機檔案。|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The working copy and server version are identical.|  
+|SCC_I_FILESDIFFERS|The working copy differs from the version under source control.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure; file difference was not obtained.|  
+|SCC_E_FILENOTEXIST|The local file was not found.|  
   
-## 備註  
- 此函式有兩種不同的用途。 根據預設，它顯示檔案的變更清單。 原始檔控制外掛程式開啟它自己的視窗中選擇，以顯示磁碟上的使用者的檔案與原始檔控制下之檔案的最新版本之間的差異的格式。  
+## <a name="remarks"></a>Remarks  
+ This function serves two different purposes. By default, it displays a list of changes to a file. The source control plug-in opens its own window, in whatever format it chooses, to display the differences between the user's file on disk and the latest version of the file under source control.  
   
- 或者，IDE 可能只需要判斷檔案是否已變更。 例如，IDE 可能需要以判斷它是否能安全簽出檔案，而不通知使用者。 在此情況下，IDE 會傳入 `SCC_DIFF_CONTENTS` 旗標。 原始檔控制外掛程式必須檢查磁碟，位元組的對原始檔控制的檔案上的檔案，並傳回值，指出兩個檔案而不會向使用者顯示任何項目是否不同。  
+ Alternatively, the IDE may simply need to determine whether a file has changed. For example, the IDE may need to determine whether it is safe to check out a file without informing the user. In that case, the IDE passes in the `SCC_DIFF_CONTENTS` flag. The source control plug-in must check the file on disk, byte by byte, against the source-controlled file and return a value indicating whether the two files are different without displaying anything to the user.  
   
- 一種效能最佳化，原始檔控制外掛程式可能會使用總和檢查碼或時間戳記，而不需要針對呼叫的位元組的比較為基礎的替代項目 `SCC_DIFF_CONTENTS`: 這些形式的比較會很明顯地更快，但較不可靠。 並非所有的原始檔控制系統可能會支援這些替代的比較方法，以及外掛程式可能需要切換回內容比較。 所有的原始檔控制外掛程式時，至少必須支援內容比較。  
+ As a performance optimization, the source control plug-in may use an alternative based on a checksum or a timestamp instead of the byte-by-byte comparison called for by `SCC_DIFF_CONTENTS`: these forms of comparison are obviously faster but less reliable. Not all source control systems may support these alternative comparison methods, and the plug-in may have to fall back to a contents comparison. All source control plug-ins must, at a minimum, support a contents comparison.  
   
 > [!NOTE]
->  快速差異旗標互斥。 有效傳遞任何旗標，但同時傳遞多個無效。`SCC_DIFF_QUICK_DIFF`, 這結合了所有的旗標的遮罩可以用來測試，但它應該永遠不會做為參數傳遞。  
+>  The quick difference flags are mutually exclusive. It is valid to pass no flags, but it is not valid to simultaneously pass more than one. `SCC_DIFF_QUICK_DIFF`, which is a mask that combines all flags, can be used to test, but it should never be passed as a parameter.  
   
-|`fOption`|意義|  
-|---------------|--------|  
-|SCC\_DIFF\_IGNORECASE|不區分大小寫的比較 \(可能用來快速或視覺化差異\)。|  
-|SCC\_DIFF\_IGNORESPACE|會忽略泛空白字元 \(可能用來快速或視覺化差異\)。|  
-|SCC\_DIFF\_QD\_CONTENTS|以無訊息模式比較位元組的檔案。|  
-|SCC\_DIFF\_QD\_CHECKSUM|以無訊息模式會比較總和檢查碼時支援透過檔案。 如果不支援，回復到內容的比較。|  
-|SCC\_DIFF\_QD\_TIME|以無訊息模式比較透過支援時，其時間戳記的檔案。 如果不支援，回復到內容的比較。|  
+|`fOption`|Meaning|  
+|---------------|-------------|  
+|SCC_DIFF_IGNORECASE|Case-insensitive comparison (may be used for either quick or visual difference).|  
+|SCC_DIFF_IGNORESPACE|Ignores white space (may be used for either quick or visual difference).|  
+|SCC_DIFF_QD_CONTENTS|Silently compares the file, byte by byte.|  
+|SCC_DIFF_QD_CHECKSUM|Silently compares the file via a checksum when supported. If not supported, falls back to a comparison of contents.|  
+|SCC_DIFF_QD_TIME|Silently compares the file via its timestamp when supported. If not supported, falls back to a comparison of contents.|  
   
-## 請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

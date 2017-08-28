@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d0c5f78126884c2f63f9292f5ccb1a2de0bab8e7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e9059d4c2d13455c52e690bc424736b35f7cc659
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
@@ -42,7 +42,7 @@ This method sends events that signify the creation and destruction of processes 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Event(  
    IDebugCoreServer2* pServer,  
    IDebugPort2*       pPort,  
@@ -53,7 +53,7 @@ HRESULT Event(
 );  
 ```  
   
-```cs  
+```csharp  
 int Event(  
    IDebugCoreServer2 pServer,   
    IDebugPort2       pPort,   

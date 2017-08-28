@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0c5c751e392e8b34a7de598558b27360beab3352
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 77c810bb6e4791fbc0c3cf787f340a8d996ce037
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
@@ -42,7 +42,7 @@ Specifies the criteria for comparing two document contexts.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  
@@ -52,7 +52,7 @@ enum enum_DOCCONTEXT_COMPARE {
 typedef DWORD DOCCONTEXT_COMPARE;  
 ```  
   
-```cs  
+```csharp  
 enum enum_DOCCONTEXT_COMPARE {   
    DOCCONTEXT_EQUAL         = 0x0001,  
    DOCCONTEXT_LESS_THAN     = 0x0002,  

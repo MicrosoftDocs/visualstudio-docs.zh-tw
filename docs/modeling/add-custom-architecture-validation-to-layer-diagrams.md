@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d14346c73d5d8ba730ff080719e65c6f1d1f3f94
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 25261e06fc2d5ef1d2850b8ecdf159b1085d8d83
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Add custom architecture validation to dependency diagrams
@@ -234,7 +234,7 @@ In Visual Studio, users can validate the source code in a project against a laye
   
 ##  <a name="example"></a> Example code  
   
-```cs  
+```csharp  
 using System;  
 using System.ComponentModel.Composition;  
 using System.Globalization;  

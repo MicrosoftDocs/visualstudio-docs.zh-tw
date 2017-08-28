@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1dd8ca35ee00c99e899367ddf0983f1480330cd1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 422dc31356947d9856f235db8e93cb1ca5b69930
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
@@ -42,13 +42,13 @@ Called by the session debug manager (SDM) to indicate that a synchronous debug e
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2* pEvent  
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT ContinueFromSynchronousEvent(   
    IDebugEvent2 pEvent  
 );  
@@ -67,7 +67,7 @@ HRESULT ContinueFromSynchronousEvent(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CEngine` object that implements the [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::ContinueFromSynchronousEvent(IDebugEvent2* pEvent)  
 {  
    HRESULT hr;  

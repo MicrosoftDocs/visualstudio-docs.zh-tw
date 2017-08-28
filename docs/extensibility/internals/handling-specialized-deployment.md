@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8f554391c50968b2ee9f852d9bfc8dd433672d3b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d822f80c6040f68dacce76acfc9660ad9c7fe052
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="handling-specialized-deployment"></a>Handling Specialized Deployment
@@ -80,7 +80,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     private Microsoft.VisualStudio.Shell.EventSinkCollection adviseSink = new Microsoft.VisualStudio.Shell.EventSinkCollection();  
     public int AdviseDeployStatusCallback(IVsDeployStatusCallback pIVsDeployStatusCallback,   
                                           out uint pdwCookie)  
@@ -103,7 +103,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int UnadviseDeployStatusCallback(uint dwCookie)  
     {  
         adviseSink.RemoveAt(dwCookie);  
@@ -121,7 +121,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int Commit(uint dwReserved)  
     {  
          //Implement commit operation here.  
@@ -139,7 +139,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int Rollback(uint dwReserved)  
     {  
         //Implement Rollback operation here.  
@@ -165,7 +165,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int QueryStartDeploy(uint dwOptions, int[] pfSupported, int[] pfReady)  
     {  
         if (pfSupported != null && pfSupported.Length >0)  
@@ -193,7 +193,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int QueryStatusDeploy(out int pfDeployDone)  
     {  
         pfDeployDone = 1;  
@@ -234,7 +234,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int StartDeploy(IVsOutputWindowPane pIVsOutputWindowPane, uint dwOptions)  
     {  
         if (pIVsOutputWindowPane == null)  
@@ -283,7 +283,7 @@ A deployment is an optional operation for projects. A Web project, for example, 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int StopDeploy(int fSync)  
     {  
         if (deploymentThread != null && deploymentThread.IsAlive)  

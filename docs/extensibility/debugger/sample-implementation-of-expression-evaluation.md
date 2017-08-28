@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3bbd9bed540c4ef6dda72a6846c799228ba4b7fa
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca872421d20d1d1a85cb2c5db621de28adee356d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Sample Implementation of Expression Evaluation
@@ -57,7 +57,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This is an implementation of `IDebugExpressionEvaluator::Parse` in managed code. Note that this version of the method defers the parsing to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) as the code for parsing also evaluates at the same time (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     public class CParsedExpression : IDebugParsedExpression  
@@ -84,7 +84,7 @@ namespace EEMC
 ## <a name="unmanaged-code"></a>Unmanaged Code  
  This is an implementation of `IDebugExpressionEvaluator::Parse` in unmanaged code. This method calls a helper function, `Parse`, to parse the expression and check for errors but this method ignores the resulting value. The formal evaluation is deferred to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) where the expression is parsed while it is evaluated (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CExpressionEvaluator::Parse(  
         in    LPCOLESTR                 pszExpression,  
         in    PARSEFLAGS                flags,  

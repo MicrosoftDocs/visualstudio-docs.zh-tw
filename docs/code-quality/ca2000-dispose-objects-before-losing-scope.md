@@ -1,102 +1,185 @@
 ---
-title: "CA2000：必須在超出範圍前處置物件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2000"
-  - "Dispose objects before losing scope"
-  - "DisposeObjectsBeforeLosingScope"
-helpviewer_keywords: 
-  - "CA2000"
-  - "DisposeObjectsBeforeLosingScope"
+title: 'CA2000: Dispose objects before losing scope | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2000
+- Dispose objects before losing scope
+- DisposeObjectsBeforeLosingScope
+helpviewer_keywords:
+- CA2000
+- DisposeObjectsBeforeLosingScope
 ms.assetid: 0c3d7d8d-b94d-46e8-aa4c-38df632c1463
 caps.latest.revision: 32
-caps.handback.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2000：必須在超出範圍前處置物件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 61903e0c6ec3a27648e69ca210e0a5fa71615c22
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Dispose objects before losing scope
 |||  
 |-|-|  
-|型別名稱|DisposeObjectsBeforeLosingScope|  
+|TypeName|DisposeObjectsBeforeLosingScope|  
 |CheckId|CA2000|  
-|類別|Microsoft.Reliability|  
-|中斷變更|中斷|  
+|Category|Microsoft.Reliability|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 已建立 <xref:System.IDisposable> 型別的區域物件 \(Local Object\)，但在此物件的所有參考都超出範圍之後才會處置此物件。  
+## <a name="cause"></a>Cause  
+ A local object of a <xref:System.IDisposable> type is created but the object is not disposed before all references to the object are out of scope.  
   
-## 規則描述  
- 如果在可處置物件的所有參考都超出範圍前明確未處置掉該物件，在記憶體回收行程執行該物件的完成項時，於某個不定時間處置該物件。  由於可能會發生例外事件，導致物件的完成項無法執行，所以應改為明確處置物件。  
+## <a name="rule-description"></a>Rule Description  
+ If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.  
   
-## 如何修改違規情況  
- 若要修正此規則的違規情形，請在物件的所有參考都超出範圍之前，在此物件上呼叫 <xref:System.IDisposable.Dispose%2A>。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, call <xref:System.IDisposable.Dispose%2A> on the object before all references to it are out of scope.  
   
- 請注意，您可以使用 `using` 陳述式 \(在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 `Using`\) 來包裝實作 `IDisposable` 的物件。  在 `using` 區段結束時將會自動處置以這種方式包裝的物件。  
+ Note that you can use the `using` statement (`Using` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) to wrap objects that implement `IDisposable`. Objects that are wrapped in this manner will automatically be disposed at the close of the `using` block.  
   
- 在下列一些情況下，使用陳述式不足以保護 IDisposable 物件，而且可能會導致發生 CA2000。  
+ The following are some situations where the using statement is not enough to protect IDisposable objects and can cause CA2000 to occur.  
   
--   要傳回可處置的物件，需要在使用中區塊外部的 try\/finally 區塊中建構該物件。  
+-   Returning a disposable object requires that the object is constructed in a try/finally block outside a using block.  
   
--   初始化可處置物件的成員不應該在使用陳述式的建構函式中進行。  
+-   Initializing members of a disposable object should not be done in the constructor of a using statement.  
   
--   只被一個例外狀況處理常式保護的巢狀建構函式。  例如：  
+-   Nesting constructors that are protected only by one exception handler. For example,  
   
-    ```  
+    ```csharp
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
     { ... }  
-    ```  
+    ```
   
-     使 CA2000 發生的原因是因為 StreamReader 物件建構中的失敗可能會導致 FileStream 物件永遠不會關閉。  
+     causes CA2000 to occur because a failure in the construction of the StreamReader object can result in the FileStream object never being closed.  
   
--   動態物件應該使用陰影物件來實作 IDisposable 物件的 Dispose 模式。  
+-   Dynamic objects should use a shadow object to implement the Dispose pattern of IDisposable objects.  
   
-## 隱藏警告的時機  
- 請勿隱藏這項規則的警告，除非您在呼叫 `Dispose`之物件的方法，例如 <xref:System.IO.Stream.Close%2A>，或假如這隻引發警告的方法傳回了IDisposable 物件來包裝您的物件。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule unless you have called a method on your object that calls `Dispose`, such as <xref:System.IO.Stream.Close%2A>, or if the method that raised the warning returns an IDisposable object wraps your object.  
   
-## 相關規則  
- [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2213: Disposable fields should be disposed](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202：不要多次處置物件](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: Do not dispose objects multiple times](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
-## 範例  
- 如果您要實作的方法會傳回可處置物件，請使用 try\/finally 區塊而不含 Catch 區塊，來確定處置該物件。  利用 try\/finally 區塊，您可允許在錯誤點引發例外狀況，並確保處置該物件。  
+## <a name="example"></a>Example  
+ If you are implementing a method that returns a disposable object, use a try/finally block without a catch block to make sure that the object is disposed. By using a try/finally block, you allow exceptions to be raised at the fault point and make sure that object is disposed.  
   
- 在 OpenPort1 方法中，開啟 ISerializable 物件 SerialPort 的呼叫，或是 SomeMethod 的呼叫都可能失敗。  在此實作上會引發 CA2000 警告。  
+ In the OpenPort1 method, the call to open the ISerializable object SerialPort or the call to SomeMethod can fail. A CA2000 warning is raised on this implementation.  
   
- 在 OpenPort2 方法中，會宣告兩個 SerialPort 物件並將其設定為 null：  
+ In the OpenPort2 method, two SerialPort objects are declared and set to null:  
   
--   `tempPort`，用來測試方法作業是否成功。  
+-   `tempPort`, which is used to test that the method operations succeed.  
   
--   `port`，用於方法的傳回值。  
+-   `port`, which is used for the return value of the method.  
   
- `tempPort` 會在 `try` 區塊中建構和開啟，而且其他任何必要的工作都會在相同的 `try` 區塊中執行。  在 `try` 區塊的結尾，已開啟的連接埠會指派至會傳回的 `port` 物件，而且 `tempPort` 物件會設定為  `null`。  
+ The `tempPort` is constructed and opened in a `try` block, and any other required work is performed in the same `try` block. At the end of the `try` block, the opened port is assigned to the `port` object that will be returned and the `tempPort` object is set to `null`.  
   
- `finally` 區塊會檢查 `tempPort` 的值。  如果它不是 Null，方法中的作業便已失敗，而且已關閉 `tempPort` 以確保會釋放任何資源。  如果方法的作業成功，傳回的連接埠物件將包含開啟的 SerialPort 物件，如果作業失敗，則會是 null。  
+ The `finally` block checks the value of `tempPort`. If it is not null, an operation in the method has failed, and `tempPort` is closed to make sure that any resources are released. The returned port object will contain the opened SerialPort object if the operations of the method succeeded, or it will be null if an operation failed.  
+
+```csharp
+public SerialPort OpenPort1(string portName)
+{
+   SerialPort port = new SerialPort(portName);
+   port.Open();  //CA2000 fires because this might throw
+   SomeMethod(); //Other method operations can fail
+   return port;
+}
+
+public SerialPort OpenPort2(string portName)
+{
+   SerialPort tempPort = null;
+   SerialPort port = null;
+   try
+   {
+      tempPort = new SerialPort(portName);
+      tempPort.Open();
+      SomeMethod();
+      //Add any other methods above this line
+      port = tempPort;
+      tempPort = null;
+      
+   }
+   finally
+   {
+      if (tempPort != null)
+      {
+         tempPort.Close();
+      }
+   }
+   return port;
+}
+```
+
+```vb
+Public Function OpenPort1(ByVal PortName As String) As SerialPort
+
+   Dim port As New SerialPort(PortName)
+   port.Open()    'CA2000 fires because this might throw
+   SomeMethod()   'Other method operations can fail
+   Return port
+
+End Function
+
+
+Public Function OpenPort2(ByVal PortName As String) As SerialPort
+
+   Dim tempPort As SerialPort = Nothing
+   Dim port As SerialPort = Nothing
+
+   Try
+      tempPort = New SerialPort(PortName)
+      tempPort.Open()
+      SomeMethod()
+      'Add any other methods above this line
+      port = tempPort
+      tempPort = Nothing
+
+   Finally
+      If Not tempPort Is Nothing Then
+         tempPort.Close()
+      End If
+
+
+   End Try
+
+   Return port
+
+End Function
+```
+ 
+## <a name="example"></a>Example  
+ By default, the [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiler has all arithmetic operators check for overflow. Therefore, any Visual Basic arithmetic operation might throw an <xref:System.OverflowException>. This could lead to unexpected violations in rules such as CA2000. For example, the following CreateReader1 function will produce a CA2000 violation because the Visual Basic compiler is emitting an overflow checking instruction for the addition that could throw an exception that would cause the StreamReader not to be disposed.  
   
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope_1.vb)]
- [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope_1.vb)]
- [!code-cs[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/CSharp/ca2000-dispose-objects-before-losing-scope_1.cs)]  
+ To fix this, you can disable the emitting of overflow checks by the Visual Basic compiler in your project or you can modify your code as in the following CreateReader2 function.  
   
-## 範例  
- 預設情況下，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器會對所有算術運算子進行溢位檢查。  因此，任何 Visual Basic 算術運算都可能擲回 <xref:System.OverflowException>。  這可能會導致如 CA2000 規則中的意外違規。  例如，下列 CreateReader1 函式會產生 CA2000 違規，因為 Visual Basic 編譯器會針對可能擲回例外狀況，進而使 StreamReader 不處置的加入，發出溢位檢查指令。  
+ To disable the emitting of overflow checks, right-click the project name in Solution Explorer and then click **Properties**. Click **Compile**, click **Advanced Compile Options**, and then check **Remove integer overflow checks**.  
   
- 若要修正此問題，您可以用您專案中的 Visual Basic 編譯器來停用的溢位檢查的發出，或者可以像下列 CreateReader2 函式一樣修改您的程式碼。  
-  
- 若要停用發出溢位檢查，請以滑鼠右鍵按一下 \[方案總管\] 中的專案名稱，然後按一下 \[**內容**\]。  請按一下 \[**編譯**\]，按一下 \[**進階編譯選項**\]，然後再核取 \[**移除整數的溢位檢查**\]。  
-  
- [!CODE [FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1](FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope.VBOverflow#1)]  
-  
-## 請參閱  
+  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+
+## <a name="see-also"></a>See Also  
  <xref:System.IDisposable>   
- [處置模式](../Topic/Dispose%20Pattern.md)
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

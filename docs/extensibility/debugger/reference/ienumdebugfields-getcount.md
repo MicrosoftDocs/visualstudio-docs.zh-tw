@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a96c34fd85de373a3a69f801fe24a51f99e083ef
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ce93932b56d13afc7ea5bb5c3b16cd42a1219470
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
@@ -42,13 +42,13 @@ This method returns the number of elements in the enumeration.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCount(  
    [out] ULONG* pcelt  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCount(  
    out uint pcelt  
 );  

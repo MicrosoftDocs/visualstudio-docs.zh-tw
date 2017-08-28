@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 27ba3bc3e9fdaafda477082555214dc36dfc37ea
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2b486a8ef06c557c45e565f49017a45710df359d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bppasscount"></a>BP_PASSCOUNT
@@ -42,14 +42,14 @@ Describes the count and conditions upon which a conditional breakpoint is fired.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_PASSCOUNT {   
    DWORD              dwPassCount;  
    BP_PASSCOUNT_STYLE stylePassCount;  
 } BP_PASSCOUNT;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_PASSCOUNT {   
    public uint dwPassCount;  
    public uint stylePassCount;  

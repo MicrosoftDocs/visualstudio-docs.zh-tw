@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fb53c2ac032123fc3167de2f9e2239d24a94bdd1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cc67341253d4f5a48f7b482b3b26ec3499b01419
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
@@ -42,7 +42,7 @@ This method converts either an object location or a memory address to a memory c
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext(   
    IDebugField*           pField,  
    DWORD                  dwConstant,  
@@ -50,7 +50,7 @@ HRESULT GetMemoryContext(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryContext(  
    IDebugField              pField,   
    uint                     dwConstant,   

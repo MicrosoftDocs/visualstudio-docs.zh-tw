@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e39fb66c7618085393dfdb6a14ec085aa0f4b99e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f0a3c52090b143d3a5172fcdbd97d48ae7a89560
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
@@ -50,7 +50,7 @@ HRESULT GetAllAliases(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetAllAliases(  
    uint          uRequest,   
    IDebugAlias[] ppAliases,   

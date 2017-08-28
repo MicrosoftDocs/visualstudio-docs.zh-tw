@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a3a78b3d76cd78b9c6a3a707101e1237eb1958ea
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0d6b49d8721d112b642459b3fc0d517fe0668094
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
@@ -41,14 +41,14 @@ Creates an object that represents a primitive type.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreatePrimitive (  
    DWORD          dwElementType,  
    IDebugField ** pTypeField  
 );  
 ```  
   
-```cs  
+```csharp  
 int CreatePrimitive (  
    uint            dwElementType,  
    out IDebugField pTypeField  

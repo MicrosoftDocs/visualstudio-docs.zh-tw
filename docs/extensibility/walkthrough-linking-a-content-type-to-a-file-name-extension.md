@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3f5a533ddab8e09040bb132cd2ad0c511308ce5c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1bebe89c0bc2785f85bf38949ea477d2da662cc9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Walkthrough: Linking a Content Type to a File Name Extension
@@ -61,7 +61,7 @@ You can define your own content type and link a file name extension to it by usi
   
 3.  Add the following `using` directives.  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text.Classification;  
     using Microsoft.VisualStudio.Utilities;  
@@ -70,14 +70,14 @@ You can define your own content type and link a file name extension to it by usi
   
 4.  Declare a static class that contains the definitions.  
   
-    ```cs  
+    ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
 5.  In this class, export a <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> named "hid" and declare its base definition to be "text".  
   
-    ```cs  
+    ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {  
         [Export]  
@@ -91,7 +91,7 @@ You can define your own content type and link a file name extension to it by usi
   
 -   To map this content type to a file name extension, export a <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> that has the extension ".hid" and the content type "hid".  
   
-    ```cs  
+    ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {  
          [Export]  
@@ -114,7 +114,7 @@ You can define your own content type and link a file name extension to it by usi
   
 3.  When you export the extension class, add a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of type "hid" to it.  
   
-    ```cs  
+    ```csharp  
     [Export]  
     [ContentType("hid")]  
     ```  

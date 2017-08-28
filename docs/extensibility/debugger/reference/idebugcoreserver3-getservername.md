@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c24e3a6a0f7fb9906a9798bd82c064f82c302b89
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2148c21a81a3d59d193bee47bedc97505969228
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
@@ -42,13 +42,13 @@ Retrieves the name of the server.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetServerName(  
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetServerName(  
    out string pbstrName  
 );  

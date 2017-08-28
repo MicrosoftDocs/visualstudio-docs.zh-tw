@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a08f93904ba7c95fe68abbbe363a6254bbe2eb2c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 90e4751b335eb901cc068c82c8cee231e39c812a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
@@ -42,13 +42,13 @@ Gets the derived-most property of a property.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDerivedMostProperty (   
    IDebugProperty2** ppDerivedMost  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDerivedMostProperty (   
    out IDebugProperty2 ppDerivedMost  
 );  

@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 420909d5100e6c04c0053be8df451143e7eb581a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e47370c8994a3300fd1de955c450c5e1a8731a1e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
@@ -40,7 +40,7 @@ Retrieves the unique identifier for a expression evaluator metric given its name
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricGuid(  
    REFGUID guidLang,  
    REFGUID guidVendor,  
@@ -49,7 +49,7 @@ HRESULT GetEEMetricGuid(
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT GetEEMetricGuid(  
    ref Guid guidLang,  
    ref Guid guidVendor,  

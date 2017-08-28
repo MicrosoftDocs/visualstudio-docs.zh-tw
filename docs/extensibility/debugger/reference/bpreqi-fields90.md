@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: aaf58bdc99391e481e9829b7606c230ee39f8cd4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2de27fc0c3ea470e63c82c8116e34e450eb08bb2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
@@ -40,7 +40,7 @@ Enumerates the valid values that specify the information to be retrieved about a
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BPREQI_FIELDS90  
 {  
    // VS 8.0 values  
@@ -66,7 +66,7 @@ enum enum_BPREQI_FIELDS90
 typedef DWORD BPREQI_FIELDS90;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BPREQI_FIELDS90  
 {  
     // VS 8.0 values  

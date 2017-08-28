@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e0dbd8b653aacabc9687cc90b8f4d4221d28b16b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7913b12a72ac269f543fcaa3ac7a8ca355b969ce
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpcondition"></a>BP_CONDITION
@@ -42,7 +42,7 @@ Describes the conditions under which a breakpoint fires.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_CONDITION {   
    IDebugThread2* pThread;  
    BP_COND_STYLE  styleCondition;  
@@ -52,7 +52,7 @@ typedef struct _BP_CONDITION {
 } BP_CONDITION;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_CONDITION {   
    public IDebugThread2 pThread;  
    public uint          styleCondition;  

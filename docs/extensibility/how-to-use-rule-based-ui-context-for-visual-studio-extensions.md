@@ -24,10 +24,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a42c87eeb38de9750113cc9d940d8809e0bb5998
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5845c428716cc4b28f117151dc71a42f8cfa2587
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>How to: Use Rule-based UI Context for Visual Studio Extensions
@@ -55,13 +55,13 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
   
      For example, let's assume a new UIContext "UIContextGuid" is to be added. The GUID created (you can create a GUID by clicking on Tools -> create guid) is "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". You then add the following inside your package class:  
   
-    ```cs  
+    ```csharp  
     public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
     ```  
   
      For the attributes, add the following: (Details of these attributes will be explained later)  
   
-    ```cs  
+    ```csharp  
     [ProvideAutoLoad(TestPackage.UIContextGuid)]      
     [ProvideUIContextRule(TestPackage.UIContextGuid,  
         name: "Test auto load",   
@@ -113,7 +113,7 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
 ## <a name="adding-more-rules-for-ui-context"></a>Adding More Rules for UI Context  
  Since the UI Context rules are Boolean expressions, you can add more restricted rules for a UI Context. For example, in the above UI Context, you can specify that the rule applies only when a solution with a project is loaded. In this way, the commands won't show up if you open up a ".config" file as a standalone file, not as part of a project.  
   
-```cs  
+```csharp  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]      
 [ProvideUIContextRule(TestPackage.UIContextGuid,    
     name: "Test auto load",  
@@ -129,7 +129,7 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
   
  For example, you can specify your test load rule to have a delay of 100 milliseconds:  
   
-```cs  
+```csharp  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]  
 [ProvideUIContextRule(TestPackage.UIContextGuid,   
     name: "Test auto load",  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 463f54f0bbaac033f86988022a23ff0ac5da1d0e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c22bd5b1a07947bc7cca7819adaf7b66334d23a7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
@@ -42,7 +42,7 @@ Sends notification of debug events.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Event(   
    IDebugEngine2*  pEngine,  
    IDebugProcess2* pProcess,  
@@ -54,7 +54,7 @@ HRESULT Event(
 );  
 ```  
   
-```cs  
+```csharp  
 int Event(   
    IDebugEngine2  pEngine,  
    IDebugProcess2 pProcess,  

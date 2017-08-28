@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e98aa8d5b6fe5ef20e07585fc5c33135c0192ae1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 10b40fccecfff4d4578b1a1bfe228d037e7516ac
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="creating-an-options-page"></a>Creating an Options Page
@@ -60,20 +60,20 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 2.  Add the following using statement.  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel;  
     ```  
   
 3.  Declare an OptionPageGrid class and derive it from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```cs  
+    ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
 4.  Apply a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class to assign to the class an options category and options page name for the OptionPageGrid. The result should look like this:  
   
-    ```cs  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -91,7 +91,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
     -   Apply a <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> to assign to the property a description.  
   
-    ```cs  
+    ```csharp  
     public class OptionPageGrid : DialogPage  
     {  
         private int optionInt = 256;  
@@ -131,7 +131,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 3.  Add an `OptionPageCustom` class, just before the `OptionPageGrid` class. Derive the new class from `DialogPage`.  
   
-    ```cs  
+    ```csharp  
     public class OptionPageCustom : DialogPage  
     {  
         private string optionValue = "alpha";  
@@ -146,7 +146,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 4.  Add a GUID attribute. Add an OptionString property:  
   
-    ```cs  
+    ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -162,7 +162,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 5.  Apply a second <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class. This attribute assigns the class an options category and options page name.  
   
-    ```cs  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -182,7 +182,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 8.  Add a public `OptionsPage` field, an `Initialize` method to the control class, and update the event handler to set the option value to the contents of the text box:  
   
-    ```cs  
+    ```csharp  
     public partial class MyUserControl : UserControl  
     {  
         public MyUserControl()  
@@ -208,7 +208,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 9. In the package code file, add an override for the `OptionPageCustom.Window` property to the OptionPageCustom class to create, initialize, and return an instance of `MyUserControl`. The class should now look like this:  
   
-    ```cs  
+    ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -264,7 +264,7 @@ This walkthrough creates a simple Tools/Options page that uses a property grid t
   
 3.  In the MyToolsOptionsCommand file, replace the body of the command's `ShowMessageBox` method with the following:  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         MyToolsOptionsPackage myToolsOptionsPackage = this.package as MyToolsOptionsPackage;  

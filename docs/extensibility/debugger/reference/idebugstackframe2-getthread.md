@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 52ea06852e79a3e44cb9cad39aab2334fec2631c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2bb19df8e322a7196880ff27d28709f4e74cf44a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
@@ -42,13 +42,13 @@ Gets the thread associated with a stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetThread (   
    IDebugThread2** ppThread  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetThread (   
    out IDebugThread2 ppThread  
 );  

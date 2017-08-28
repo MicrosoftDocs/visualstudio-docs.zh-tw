@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5174f5d35dc43c82017c33163279b1da5e67fc7e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 649123de9961a3bc7aace51faa34cba2e57ce6f7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
@@ -42,7 +42,7 @@ Retrieves a list of the children of the property.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumChildren (   
    DEBUGPROP_INFO_FLAGS      dwFields,  
    DWORD                     dwRadix,  
@@ -54,7 +54,7 @@ HRESULT EnumChildren (
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumChildren (   
    enum_DEBUGPROP_INFO_FLAGS   dwFields,  
    uint                        dwRadix,  

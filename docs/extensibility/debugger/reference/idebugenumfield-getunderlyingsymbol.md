@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1e4bd73a6fc1b81bbb1ce645cff653c7cabe3b24
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c996887392231e631080ff7ed2c7395c85110af1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
@@ -42,13 +42,13 @@ This method returns an [IDebugField](../../../extensibility/debugger/reference/i
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetUnderlyingSymbol(  
    IDebugField** ppField  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetUnderlyingSymbol(  
    out IDebugField ppField  
 );  

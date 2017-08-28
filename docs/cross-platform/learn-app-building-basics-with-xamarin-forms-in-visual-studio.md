@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 90d9bd5095b911f2eea6907d88959f9b9d60369e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 157b900964afc33690b696a08f047c5dd1c2d70d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Learn app-building basics with Xamarin.Forms in Visual Studio
@@ -122,7 +122,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 2.  Replace the entire contents of **Weather.cs** with the following:  
   
-    ```cs  
+    ```csharp  
     namespace WeatherApp  
     {  
         public class Weather  
@@ -155,7 +155,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 4.  Replace the entire contents of **DataService.cs** with the following code:  
   
-    ```cs  
+    ```csharp  
     using System.Threading.Tasks;  
     using Newtonsoft.Json;  
     using System.Net.Http;  
@@ -186,7 +186,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 6.  Replace the contents of **Core.cs** with the following:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Threading.Tasks;  
   
@@ -254,7 +254,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 3.  To add an event handler for the button's **Clicked** event to update the button text, replace the contents of **WeatherPage.xaml.cs** with the code below. (Feel free to change "60601" to another zip code.)  
   
-    ```cs  
+    ```csharp  
     using System;  
     using Xamarin.Forms;  
   
@@ -283,7 +283,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 4.  To open **WeatherPage** as the first screen when the app launches, replace the default constructor in **App.cs** with the following code:  
   
-    ```cs  
+    ```csharp  
     public App()  
     {  
         MainPage = new NavigationPage(new WeatherPage());  
@@ -402,7 +402,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 2.  In **WeatherPage.xaml.cs**, replace the **GetWeatherBtn_Clicked** event handler with the code below. This code verifies that there's a zip code in the entry field, retrieves data for that zip code, sets the whole screen's binding context to the resulting Weather instance, then sets the button text to "Search Again." Note that each label in the UI binds to a property of the Weather class, so when you set the screen's binding context to a **Weather** instance, those labels update automatically.  
   
-    ```cs  
+    ```csharp  
     private async void GetWeatherBtn_Clicked(object sender, EventArgs e)  
     {  
         if (!String.IsNullOrEmpty(zipCodeEntry.Text))  

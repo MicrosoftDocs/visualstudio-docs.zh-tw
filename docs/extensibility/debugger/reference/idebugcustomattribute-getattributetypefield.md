@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 89b092a84fbc0f0423079fda41884b9a2f71b0f8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 274da63d909053843d401745cc501d298fc89f8e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
@@ -42,13 +42,13 @@ Gets the custom attribute class type.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetAttributeTypeField(   
    IDebugClassField** ppCAType  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetAttributeTypeField(  
    out IDebugClassField ppCAType  
 );  

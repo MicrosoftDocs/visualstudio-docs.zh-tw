@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 965b7866e0afcf0de99a71643d995591bd6ff524
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e87c6e5c38726c252a794ddb4342f4cc001861c4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
@@ -42,7 +42,7 @@ Watches for execution (or stops watching for execution) to occur on the given th
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT WatchForThreadStep(   
    IDebugProgram2* pOriginatingProgram,  
    DWORD           dwTid,  
@@ -51,7 +51,7 @@ HRESULT WatchForThreadStep(
 );  
 ```  
   
-```cs  
+```csharp  
 int WatchForThreadStep(   
    IDebugProgram2 pOriginatingProgram,  
    uint           dwTid,  

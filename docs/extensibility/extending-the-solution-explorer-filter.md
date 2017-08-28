@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 17da2e6f18c9528e861013e13f1192571aa59d7e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0bbfc6c783a44a6f9aa3254e613781b186e24839
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Extending the Solution Explorer Filter
@@ -78,7 +78,7 @@ You can extend **Solution Explorer** filter functionality to show or hide differ
   
 1.  Add some GUIDs to the FileFilterPackageGuids.cs file:  
   
-    ```cs  
+    ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
@@ -91,7 +91,7 @@ You can extend **Solution Explorer** filter functionality to show or hide differ
   
      The `ShouldIncludeInFilter` method filters the items in the **Solution Explorer** hierarchy based on the condition that you specify.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.ComponentModel.Composition;  
@@ -178,7 +178,7 @@ You can extend **Solution Explorer** filter functionality to show or hide differ
   
 4.  In FileFilter.cs, remove the command placement and handling code from the FileFilter constructor. The result should look like this:  
   
-    ```cs  
+    ```csharp  
     private FileFilter(Package package)  
     {  
         if (package == null)  
@@ -194,7 +194,7 @@ You can extend **Solution Explorer** filter functionality to show or hide differ
   
 5.  In FileFilterPackage,cs, replace the code in the Initialize() method with the following:  
   
-    ```cs  
+    ```csharp  
     protected override void Initialize()  
     {  
         Debug.WriteLine (string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this.ToString()));  

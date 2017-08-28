@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ba5b7fc4f1ba4cf73fbd7c4425bfdd65dadf2c41
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0c8f633b4556d2ebf2ef7c14ae1ce24807dbb8c6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
@@ -41,7 +41,7 @@ Constructs a field instance given an array of type arguments.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ConstructInstantiation(  
    ULONG32       cArgs,  
    IDebugField** ppArgs,  
@@ -49,7 +49,7 @@ HRESULT ConstructInstantiation(
 );  
 ```  
   
-```cs  
+```csharp  
 int ConstructInstantiation(  
    uint            cArgs,  
    IDebugField[]   ppArgs,  

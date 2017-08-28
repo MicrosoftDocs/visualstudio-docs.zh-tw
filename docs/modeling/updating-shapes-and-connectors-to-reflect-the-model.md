@@ -12,10 +12,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6f6e72eefb8a61a12940a95eba59411469625c98
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Updating Shapes and Connectors to Reflect the Model
@@ -48,7 +48,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
  The following example assumes that you have exposed `FillColor` as a domain property as described in the previous section.  
   
-```cs  
+```csharp  
 [RuleOn(typeof(ExampleElement))]  
   class ExampleElementPropertyRule : ChangeRule  
   {  
@@ -88,7 +88,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Use OnChildConfigured to initialize a shape's properties  
  To set the properties of a shape when it is first created, the override `OnChildConfigured()` in a partial definition of your diagram class. The diagram class is specified in your DSL Definition, and the generated code is in **Dsl\Generated Code\Diagram.cs**. For example:  
   
-```cs  
+```csharp  
 partial class MyLanguageDiagram  
 {  
   protected override void OnChildConfigured(ShapeElement child, bool childWasPlaced, bool createdDuringViewFixup)  

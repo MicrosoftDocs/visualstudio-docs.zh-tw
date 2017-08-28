@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7e729b7e15d9001d00c7f57557c696ba788a04de
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0e5c52d3b05c23324202e16323546bafabbf0658
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
@@ -42,7 +42,7 @@ Gets the [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetReferenceInfo (   
    DEBUGREF_INFO_FLAGS   dwFields,  
    DWORD                 nRadix,  
@@ -53,7 +53,7 @@ HRESULT GetReferenceInfo (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetReferenceInfo (   
    enum_DEBUGREF_INFO_FLAGS  dwFields,  
    uint                      nRadix,  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: dd9f38626cb6aacb5ba20b21d62694319802c717
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b44ed58f399dfc724c2e44fc7d43d780087e110f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
@@ -41,13 +41,13 @@ Retrieves information about the computer on which the debugger in running.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetComputerInfo(  
    COMPUTER_INFO * pInfo  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetComputerInfo(  
    out COMPUTER_INFO[] pInfo  
 );  

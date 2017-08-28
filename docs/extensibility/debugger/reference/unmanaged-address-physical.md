@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 151ae0e657d8bb3a29737c99404d6698c61a7114
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4995ebde9cd99732bb02f0711c9af8c9c023cbad
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
@@ -48,7 +48,7 @@ typedef struct _tagUNMANAGED_ADDRESS_PHYSICAL {
 } UNMANAGED_ADDRESS_PHYSICAL;  
 ```  
   
-```cs  
+```csharp  
 public struct UNMANAGED_ADDRESS_PHYSICAL {  
    public ulong offset;  
 }  

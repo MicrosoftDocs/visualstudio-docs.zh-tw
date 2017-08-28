@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c4509686b578b68a2313819aef8700c94e4db87a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 431068566735b29587388808cb206fb62b834a1b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="step-7-keep-pairs-visible"></a>Step 7: Keep Pairs Visible
@@ -53,7 +53,7 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked.Text = secondClicked.Text  
     ```  
   
-    ```cs  
+    ```csharp  
     firstClicked.Text == secondClicked.Text  
     ```  
   
@@ -63,7 +63,7 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked = Nothing  
     ```  
   
-    ```cs  
+    ```csharp  
     firstClicked = null;  
     ```  
   

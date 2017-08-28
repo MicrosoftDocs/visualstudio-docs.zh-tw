@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 781b57612e3fe26f2edd7754442def5eb1341a93
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navigate and update layer models in program code
@@ -77,7 +77,7 @@ using (ILinkedUndoTransaction t =
   
  To get the comments that are attached to a layer element, use:  
   
-```cs  
+```csharp  
 ILayerModel model = diagram.GetLayerModel();   
 IEnumerable<ILayerComment> comments =   
    model.Comments.Where(comment =>   

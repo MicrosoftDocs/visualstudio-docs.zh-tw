@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 38cdbe26d229c925f831b9e22a133627e1db9ae1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af0f123d5c5f6bd00e7dcc27fff857982ee99ca4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugboundbreakpoints2next"></a>IEnumDebugBoundBreakpoints2::Next
@@ -42,7 +42,7 @@ Returns the next set of elements from the enumeration.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG                    celt,  
    IDebugBoundBreakpoint2** rgelt,  
@@ -50,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```cs  
+```csharp  
 int Next(  
    uint                     celt,  
    IDebugBoundBreakpoint2[] rgelt,  

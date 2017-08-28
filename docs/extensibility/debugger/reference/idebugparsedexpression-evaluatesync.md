@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b3a0fb72daf623636e3aeb50f8c0681c8b98a7e4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5afd11ea876e30a16a1eedf3c7cc0968096ad8e7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
@@ -42,7 +42,7 @@ This method evaluates the parsed expression and optionally casts the result to a
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EvaluateSync(   
    DWORD                 dwEvalFlags,  
    DWORD                 dwTimeout,  
@@ -54,7 +54,7 @@ HRESULT EvaluateSync(
 );  
 ```  
   
-```cs  
+```csharp  
 int EvaluateSync(  
    uint                 dwEvalFlags,   
    uint                 dwTimeout,   

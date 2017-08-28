@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7d60d52e77a9d32598212d9b11ec18808ca8d8cf
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e6c80257696eb282d017b5698d1355c257970941
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluator2setidebugidecallback"></a>IDebugExpressionEvaluator2::SetIDebugIDECallback
@@ -41,13 +41,13 @@ Enables a debug engine to pass a callback to the expression evaluator during ini
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetIDebugIDECallback (  
    IDebugIDECallback * pCallback  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetIDebugIDECallback (  
    IDebugIDECallback pCallback  
 );  

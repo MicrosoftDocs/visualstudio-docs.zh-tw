@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ddcc17c18f4e11d90e252e248c0447330a8c31f0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e9ec7bb7fcb63e613a3a0e45e37f101390ba3d75
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
@@ -42,13 +42,13 @@ Gets the displayable message.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetString(   
    BSTR* pbstrString  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetString(   
    out string pbstrString  
 );  

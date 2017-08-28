@@ -33,10 +33,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f5a52b82ef3d71ba1d648e3a53208ee7fa04b075
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 502fbce9d9fbd187e0cccb0b613d470a23f09e10
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>How to: Expose Lists of Symbols Provided by the Library to the Object Manager
@@ -64,7 +64,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     protected System.Collections.Generic.SortedList<string, Method> m_Methods = new System.Collections.Generic.SortedList<string, Method>();  
   
     public int GetItemCount(out uint pCount)  
@@ -114,7 +114,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int GetCategoryField2(uint index, int Category, out uint pfCatField)  
     {  
         pfCatField = 0;  
@@ -179,7 +179,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int GetTextWithOwnership([System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")] uint index, [System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")] Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS tto, [System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")] out string ppszText)  
     {  
         ppszText = m_Methods.Values[(int)index].FullName;  
@@ -224,7 +224,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public virtual int GetDisplayData(uint index, Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA[] pData)  
     {  
         if (pData == null)  
@@ -283,7 +283,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     public int GetExpandable(uint index, out int pfExpandable)  
     {  
         pfExpandable = Microsoft.VisualStudio.VSIP.Samples.CallBrowser.Constants.TRUE;  
@@ -384,7 +384,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     // Call graph list.  
     public class CallsList :  
         ResultsList,  

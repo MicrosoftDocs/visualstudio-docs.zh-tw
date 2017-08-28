@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 45b40af3c81efe2c3e9851e59069e8e229674930
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: efb41f7bffeaa652c51af5623d4b38a8d826d2bf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
@@ -42,7 +42,7 @@ Specifies what information to retrieve about an [IDebugField](../../../extensibi
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_INFO_FIELDS {   
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  
@@ -54,7 +54,7 @@ enum enum_FIELD_INFO_FIELDS {
 typedef DWORD FIELD_INFO_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FIELD_INFO_FIELDS {  
    FIF_FULLNAME  = 0x0001,  
    FIF_NAME      = 0x0002,  

@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e9e13d5994dbd423ffdff3e62e2cfedfe1a08490
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 392c1d2518287fbe8904cfea3710d9e7faa0309c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
@@ -40,7 +40,7 @@ Retrieves the value of a metric given its name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMetricDword(  
    LPCWSTR pszType,  
    REFGUID guidSection,  
@@ -49,7 +49,7 @@ HRESULT GetMetricDword(
 );  
 ```  
   
-```cs  
+```csharp  
 private int GetMetricDword(  
    string   pszType,  
    ref Guid guidSection,  

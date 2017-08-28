@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f407f4a50d02217791891b9828fc8b893501f2d7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c7279e8aef6d903e2836a3f6025f550eb89e1bab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexceptionevent2getexceptiondescription"></a>IDebugExceptionEvent2::GetExceptionDescription
@@ -42,13 +42,13 @@ Gets a displayable description of the exception.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetExceptionDescription(   
    BSTR* pbstrDescription  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExceptionDescription(   
    out string pbstrDescription  
 );  

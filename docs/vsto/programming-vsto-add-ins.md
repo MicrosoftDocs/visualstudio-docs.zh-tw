@@ -40,10 +40,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e73e31a8e93b2157b96160e9967bda9b8846c79f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cf3d0ebb1e066345b9106da49bd7d136525269e3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="programming-vsto-add-ins"></a>Programming VSTO Add-Ins
@@ -82,7 +82,7 @@ ms.lasthandoff: 08/24/2017
 Dim newWorkbook As Excel.Workbook = Me.Application.Workbooks.Add()  
 ```  
   
-```cs  
+```csharp  
 Excel.Workbook newWorkbook = this.Application.Workbooks.Add(System.Type.Missing);  
 ```  
   
@@ -92,7 +92,7 @@ Excel.Workbook newWorkbook = this.Application.Workbooks.Add(System.Type.Missing)
 Dim newWorkbook As Excel.Workbook = Globals.ThisAddIn.Application.Workbooks.Add()  
 ```  
   
-```cs  
+```csharp  
 Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.Type.Missing);  
 ```  
   

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6bcfa3e05b4172782d1d1f54e1733b7a3c5ec186
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 63873031c8a6acfbb24f51694b2d415998a6e220
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
@@ -48,7 +48,7 @@ HRESULT SetAllExceptions(
 );  
 ```  
   
-```cs  
+```csharp  
 int SetAllExceptions(  
    enum_EXCEPTION_STATE dwState  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ac5396dfa27e3a015fcf57f5ccd1c326902a146d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 68a5f199f389cb5bc24f0e648bb4719c1ad79545
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
@@ -42,14 +42,14 @@ This method uses a case-insensitive search to return the value associated with t
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetValueFromStringCaseInsensitive(  
    LPCOLESTR  pszValue,  
    ULONGLONG* pvalue  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetValueFromStringCaseInsensitive(  
    string    pszValue,   
    out ulong pValue  

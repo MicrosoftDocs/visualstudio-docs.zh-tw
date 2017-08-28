@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7a08069c1de3fc96f8849f68df95b914846efbe4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f32501870f3e5be41c8960233202b4147d09bc43
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extending-the-output-window"></a>Extending the Output Window
@@ -60,7 +60,7 @@ The **Output** window is a set of read/write text panes. Visual Studio has these
   
 4.  In TestOutput.cs, delete the ShowMessageBox method. Add the following method stub:  
   
-    ```cs  
+    ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
     {  
     }  
@@ -68,7 +68,7 @@ The **Output** window is a set of read/write text panes. Visual Studio has these
   
 5.  In the TestOutput constructor, change the command handler to OutputCommandHandler. Here is the part that adds the commands:  
   
-    ```cs  
+    ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
     if (commandService != null)  
     {  
@@ -81,7 +81,7 @@ The **Output** window is a set of read/write text panes. Visual Studio has these
   
 6.  The sections below have different methods that show different ways of dealing with the Output pane. You can call these methods to body of the OutputCommandHandler() method. For example, the following code adds the CreatePane() method given in the next section.  
   
-    ```cs  
+    ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
     {  
         CreatePane(new Guid(), "Created Pane", true, false);  
@@ -91,7 +91,7 @@ The **Output** window is a set of read/write text panes. Visual Studio has these
 ## <a name="creating-an-output-window-with-ivsoutputwindow"></a>Creating an Output Window with IVsOutputWindow  
  This example shows how to create a new **Output** window pane by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interface.  
   
-```cs  
+```csharp  
 void CreatePane(Guid paneGuid, string title,   
     bool visible, bool clearWithSolution)  
 {  
@@ -118,7 +118,7 @@ void CreatePane(Guid paneGuid, string title,
 ## <a name="creating-an-output-window-with-outputwindow"></a>Creating an Output Window with OutputWindow  
  This example shows how to create an **Output** window pane by using the <xref:EnvDTE.OutputWindow> object.  
   
-```cs  
+```csharp  
 void CreatePane(string title)  
 {  
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
@@ -145,7 +145,7 @@ void CreatePane(string title)
 ## <a name="deleting-an-output-window"></a>Deleting an Output Window  
  This example shows how to delete an **Output** window pane.  
   
-```cs  
+```csharp  
 void DeletePane(Guid paneGuid)  
 {  
     IVsOutputWindow output =  
@@ -170,7 +170,7 @@ void DeletePane(Guid paneGuid)
 ## <a name="getting-the-general-pane-of-the-output-window"></a>Getting the General Pane of the Output Window  
  This example shows how to get the built-in **General** pane of the **Output** window.  
   
-```cs  
+```csharp  
 void GetGeneralPane()  
 {  
     return (IVsOutputWindowPane)GetService(  
@@ -183,7 +183,7 @@ void GetGeneralPane()
 ## <a name="getting-the-build-pane-of-the-output-window"></a>Getting the Build Pane of the Output Window  
  This example shows how to find the Build pane and write to it. Since the Build pane isn't activated by default, it activates it also.  
   
-```cs  
+```csharp  
 void OutputTaskItemStringExExample(string buildMessage)  
 {  
     EnvDTE80.DTE2 dte = (EnvDTE80.DTE2)ServiceProvider.GetService(typeof(EnvDTE.DTE));  

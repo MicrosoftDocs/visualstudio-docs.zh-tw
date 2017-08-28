@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 41b262581d66efdb2b07ec3707cc8be3976cd87b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6fa8347d8f4ce02deafd6cd48b44871600426a3f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
@@ -41,7 +41,7 @@ Converts either an object location or a 64-bit memory address to a memory contex
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext64 (  
    IDebugField*           pField,  
    UINT64                 uConstant,  
@@ -49,7 +49,7 @@ HRESULT GetMemoryContext64 (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryContext64 (  
    IDebugField              pField,  
    ulong                    uConstant,  
@@ -73,7 +73,7 @@ int GetMemoryContext64 (
 ## <a name="example"></a>Example  
  The following examples creates an object that implements the [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md) interface and uses this method to retrieve the memory context.  
   
-```cpp#  
+```cpp  
 HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryContext )  
 {  
     // precondition  

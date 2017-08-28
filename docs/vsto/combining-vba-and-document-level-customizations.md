@@ -32,10 +32,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9763a38754c21a4d0672eff415b3dca65f537a99
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 398b40884eb6ec0dd9525d98f69eea2f60798379
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="combining-vba-and-document-level-customizations"></a>Combining VBA and Document-Level Customizations
@@ -67,7 +67,7 @@ ms.lasthandoff: 08/24/2017
 Globals.Sheet1.Application.Run("MyMacro")  
 ```  
   
-```cs  
+```csharp  
 Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,  
     missing, missing, missing, missing, missing, missing, missing,  
     missing, missing, missing, missing, missing, missing, missing,  

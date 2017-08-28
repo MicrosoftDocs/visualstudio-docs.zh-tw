@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5ff05b8bd13d5420db663c6e8581804ed4430ddc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 24df28acbaed1b946983aa32d75f4692e0177f21
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluatorsetlocale"></a>IDebugExpressionEvaluator::SetLocale
@@ -42,13 +42,13 @@ This method sets the language to use to create printable results.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetLocale(   
    WORD wLangID  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetLocale(  
    ushort wLangID  
 );  

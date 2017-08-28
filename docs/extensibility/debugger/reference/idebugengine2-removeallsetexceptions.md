@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f3fafa5d1e9dfe0270a1f7841720f4a956fec685
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ea570fe5ab9df8ad2cc004a35113156436161dcd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
@@ -42,13 +42,13 @@ Removes the list of exceptions the IDE has set for a particular run-time archite
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT RemoveAllSetExceptions(   
    REFGUID guidType  
 );  
 ```  
   
-```cs  
+```csharp  
 int RemoveAllSetExceptions(   
    ref Guid guidType  
 );  

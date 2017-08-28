@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 16c2f097d6abf08ac5b60a5d16baa991aeec73b3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c3afe651ae7baf25ffa54bc7f1941b783fba1f9e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
@@ -42,13 +42,13 @@ Gets the memory context of the property value.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext (   
    IDebugMemoryContext2** ppMemory  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryContext(  
    out IDebugMemoryContext2 ppMemory  
 );  

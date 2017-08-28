@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1d8d8e0750ec93a0d53774cc415cf5e17909fc2a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 141ae4ae9bf0ae6633fe6d4a244726bf22489bc9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
@@ -42,14 +42,14 @@ Creates an enumerator for the constructors for this class.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumConstructors(   
    CONSTRUCTOR_ENUM   cMatch,  
    IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumConstructors(  
    CONSTRUCTOR_ENUM     cMatch,   
    out IEnumDebugFields ppEnum  

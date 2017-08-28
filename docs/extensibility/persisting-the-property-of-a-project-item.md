@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3f6e55935d378b3fc41ed2b900f35ccb49de7cd4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9693a6e79af44f7e71aeea75f7a490bc500e72d7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Persisting the Property of a Project Item
@@ -47,7 +47,7 @@ You may want to persist a property you add to a project item, such as the author
   
 1.  Add the following code to your VSPackage:  
   
-    ```cs  
+    ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
     EnvDTE.Project project = dte.Solution.Projects.Item(1);  
   
@@ -61,7 +61,7 @@ You may want to persist a property you add to a project item, such as the author
   
 1.  Add the following code to the code given in the method in the previous procedure:  
   
-    ```cs  
+    ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
         hierarchy as IVsBuildPropertyStorage;  
     if (buildPropertyStorage != null)  
@@ -78,7 +78,7 @@ You may want to persist a property you add to a project item, such as the author
   
 1.  Add the following code to your VSPackage:  
   
-    ```cs  
+    ```csharp  
     IVsHierarchy hierarchy = null;  
     IntPtr hierarchyPtr = IntPtr.Zero;  
     IntPtr selectionContainer = IntPtr.Zero;  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3985d14d1a0b17a0d78ce22a613b54325253d907
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 01b9978a8bcc7668d46f6dbeae8fa22dc6961239
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
@@ -48,7 +48,7 @@ HRESULT GetObject(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetObject(  
    Out IDebugObject2 ppObject  
 )  

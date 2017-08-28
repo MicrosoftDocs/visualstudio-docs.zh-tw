@@ -24,10 +24,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5df60e254c84a8b08f3c568d31504dd10a4f5056
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8cc2fa18b3f6e81acc3ab65894ea5d293462f6a8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-debugging-a-sharepoint-application-by-using-intellitrace"></a>Walkthrough: Debugging a SharePoint Application by Using IntelliTrace
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/24/2017
     Private webUrl As String = "/"  
     ```  
   
-    ```cs  
+    ```csharp  
     // SharePoint site and subsite.  
     private string siteUrl = "http://localhost";  
     private string webUrl = "/";  
@@ -127,7 +127,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public override void FeatureActivated(SPFeatureReceiverProperties properties)  
     {  
         try  
@@ -205,7 +205,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public override void FeatureDeactivating(SPFeatureReceiverProperties properties)  
     {  
         // The following line induces an error to demonstrate debugging.  

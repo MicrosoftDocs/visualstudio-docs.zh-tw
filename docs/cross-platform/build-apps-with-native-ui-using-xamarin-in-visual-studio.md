@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ab0564672a2d93a7065cdae1f662642f49cc4dbc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e743915718ae035e8fbe804076552f10f2682dfd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Build apps with native UI using Xamarin in Visual Studio
@@ -122,7 +122,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 3.  Replace the entire contents of **Weather.cs** with the following:  
   
-    ```cs  
+    ```csharp  
     namespace WeatherApp  
     {  
         public class Weather  
@@ -155,7 +155,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 5.  Replace the entire contents of **DataService.cs** with the following code:  
   
-    ```cs  
+    ```csharp  
     using System.Threading.Tasks;  
     using Newtonsoft.Json;  
     using System.Net.Http;  
@@ -186,7 +186,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 7.  Replace the contents of **Core.cs** with the following:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Threading.Tasks;  
   
@@ -488,7 +488,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 1.  Open the **MainActivity.cs** file of the **WeatherApp** project in the code editor and replace its contents with the code below. This code calls the `GetWeather` method that you defined in your shared code. Then, in the UI of the app, it shows the data that is retrieved from that method.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using Android.App;  
     using Android.Widget;  
@@ -613,7 +613,7 @@ Once you've done the steps in [Setup and install](../cross-platform/setup-and-in
   
 4.  Replace that event handler with the following code.  
   
-    ```cs  
+    ```csharp  
     private async void GetWeatherButton_Click(object sender, RoutedEventArgs e)  
     {  
         if (!String.IsNullOrEmpty(zipCodeEntry.Text))  

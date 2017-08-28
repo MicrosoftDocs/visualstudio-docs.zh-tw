@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7a13903f0100080b3a9c57d11732da9334fa8ab7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0e1d2b2228085505971102494522cdf9085d4a67
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
@@ -42,14 +42,14 @@ A structure that describes an array of strings.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagBSTR_ARRAY {  
    DWORD dwCount;  
    BSTR* Members;  
 } BSTR_ARRAY;  
 ```  
   
-```cs  
+```csharp  
 struct BSTR_ARRAY {  
    DWORD    dwCount;  
    string[] Members;  

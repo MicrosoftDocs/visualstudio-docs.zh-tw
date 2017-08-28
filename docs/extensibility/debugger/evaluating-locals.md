@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d0c32a818694a69dea1a5aee6fc717e2b2b42f0f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8e2e4c4f00e37a4f81244dc7905996889a2055b0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="evaluating-locals"></a>Evaluating Locals
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This is an implementation of a function that retrieves the value of a local in managed code.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     internal class Field  
@@ -97,7 +97,7 @@ namespace EEMC
 ## <a name="unmanaged-code"></a>Unmanaged Code  
  This is an implementation of a function that retrieves the value of a local in unmanaged code. `FieldGetType` is shown in [Getting Local Values](../../extensibility/debugger/getting-local-values.md).  
   
-```cpp#  
+```cpp  
 HRESULT FieldGetPrimitiveValue(  
     in  IDebugBinder* pbinder,  
     in  IDebugField*  pfield,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 65a702ee46753be5a80cd0185ce5cdb2e83942c5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4ea86b30abbd2651a17e04d979df1c37f0d5306d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
@@ -45,7 +45,7 @@ Performs a step.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Step(   
    IDebugThread2*  pThread,  
    STEPKIND        sk,  
@@ -53,7 +53,7 @@ HRESULT Step(
 );  
 ```  
   
-```cs  
+```csharp  
 int Step(   
    IDebugThread2  pThread,  
    enum_STEPKIND  sk,  

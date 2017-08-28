@@ -36,10 +36,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bf433e4bf8d32c39511bf043414a55ccb1a9d5bd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 76fb3d24801d2f5fc04f4fc349080ee643e39f76
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Reorder Parameters Refactoring (C#)
@@ -54,7 +54,7 @@ ms.lasthandoff: 08/24/2017
   
 1.  Create a class library named `ReorderParameters`, and then replace `Class1` with the following example code.  
   
-    ```cs  
+    ```csharp  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  

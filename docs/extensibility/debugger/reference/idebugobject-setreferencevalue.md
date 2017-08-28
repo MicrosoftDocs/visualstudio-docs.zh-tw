@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: af5fde3a9f694d11b28ab90b9c3aab665685b6ee
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e66a066d2f4d94585a84da4d41ffafe597d89ed3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectsetreferencevalue"></a>IDebugObject::SetReferenceValue
@@ -42,13 +42,13 @@ Sets the reference value of this object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetReferenceValue(   
    IDebugObject* pObject  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetReferenceValue(  
    [In] IDebugObject pObject  
 );  

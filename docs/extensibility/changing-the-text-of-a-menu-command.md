@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bdd26e987f239e6f24d6000154c0b04eee48161d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5cff9c7a8f834478e9ba414491c193c7a485c936
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="changing-the-text-of-a-menu-command"></a>Changing the Text of a Menu Command
@@ -59,7 +59,7 @@ The following steps show how to change the text label of a menu command by using
   
 3.  In the ChangeMenuText.cs file, create an event handler that will be called before the menu command is displayed.  
   
-    ```cs  
+    ```csharp  
     private void OnBeforeQueryStatus(object sender, EventArgs e)  
     {  
         var myCommand = sender as OleMenuCommand;  
@@ -76,7 +76,7 @@ The following steps show how to change the text label of a menu command by using
   
      Here is what it should look like:  
   
-    ```cs  
+    ```csharp  
     private ChangeMenuText(Package package)  
     {  
         if (package == null)  

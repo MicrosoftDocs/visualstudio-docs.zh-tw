@@ -26,10 +26,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cb2c19f3c03de4626bfcbc57475c8318c927d112
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f47e551fc1aff5e2e1c65ac80e9a020c28cee8dd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="invoking-text-transformation-in-a-vs-extension"></a>Invoking Text Transformation in a VS Extension
@@ -37,7 +37,7 @@ If you are writing a Visual Studio extension such as a menu command or [domain-s
   
 ## <a name="getting-the-text-templating-service"></a>Getting the text templating service  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.TextTemplating;  
 using Microsoft.VisualStudio.TextTemplating.VSHost;  
 ...  
@@ -98,7 +98,7 @@ string result = t4.ProcessTemplate("",
   
  If you want to write the result string to a file, you might want to know what file extension and encoding have been specified in the `<#@output#>` directive in the template. This information will also be passed to your callback. For more information, see [T4 Output Directive](../modeling/t4-output-directive.md).  
   
-```cs  
+```csharp  
 void ProcessMyTemplate(string MyTemplateFile)  
 {  
   string templateContent = File.ReadAllText(MyTemplateFile);  

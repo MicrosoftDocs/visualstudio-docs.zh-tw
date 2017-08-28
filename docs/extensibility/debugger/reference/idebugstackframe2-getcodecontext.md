@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: eeab43e7a8bdef282f9359e91c5fa8d6154f0645
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: df0326f0c6fb70f604d29300853e2cadf2fdd0ad
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
@@ -42,13 +42,13 @@ Gets the code context for this stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCodeContext (   
    IDebugCodeContext2** ppCodeCxt  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCodeContext (   
    out IDebugCodeContext2 ppCodeCxt  
 );  

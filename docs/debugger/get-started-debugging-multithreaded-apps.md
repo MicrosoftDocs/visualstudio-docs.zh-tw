@@ -36,10 +36,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: def3f0935aa513f2e6f901720a5d036633b7856c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ff0936d041a4d9307ab4e0e64344c948ae1d22f5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Get started debugging a multithreaded application in Visual Studio
@@ -75,7 +75,7 @@ To begin this tutorial, you need a multithreaded application project. Follow the
   
 6.  Delete the code that appears in the source file and replace it with the example code shown here.
 
-    ```cs
+    ```csharp
     using System;
     using System.Threading;
 

@@ -38,10 +38,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5ba80dbff23fb092df3da49674f6f7e987867250
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b35a4c2716a9eccc2a3c7d5c5f7c225aad0bf307
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Walkthrough: Creating a Custom Installer for a ClickOnce Application
@@ -62,7 +62,7 @@ Any ClickOnce application based on an .exe file can be silently installed and up
     Imports System.Windows.Forms  
     ```  
   
-    ```cs  
+    ```csharp  
     using System.Deployment.Application;  
     using System.Windows.Forms;  
     ```  
@@ -84,7 +84,7 @@ Any ClickOnce application based on an .exe file can be silently installed and up
     MessageBox.Show("Installer object created.")  
     ```  
   
-    ```cs  
+    ```csharp  
     MyInstaller installer = new MyInstaller();  
     installer.InstallApplication(@"\\myServer\myShare\myApp.application");  
     MessageBox.Show("Installer object created.");  

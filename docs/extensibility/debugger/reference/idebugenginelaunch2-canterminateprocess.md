@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 87e118cebf37a6481115f966408060733c50871f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 67b6fcb9acd65cc82e6c72b0b6b385c19dd22b9d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
@@ -42,13 +42,13 @@ Determines if a process can be terminated.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanTerminateProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
-```cs  
+```csharp  
 int CanTerminateProcess (   
    IDebugProcess2 pProcess  
 );  

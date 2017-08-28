@@ -38,10 +38,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d3398729e3b32842dc47cff2d191a18085d29626
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 647469783ab7ea7f5846dac47db8fe5f87e03245
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-set-a-thread-name-in-managed-code"></a>How to: Set a Thread Name in Managed Code
@@ -51,7 +51,7 @@ Thread naming is possible in any edition of Visual Studio. Thread naming is usef
   
 ## <a name="example"></a>Example  
 
-```cs
+```csharp
 public class Needle
 {
     // This method will be called when the thread is started.  

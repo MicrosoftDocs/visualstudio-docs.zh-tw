@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8475a7e1695aa80e73ca95285eaf3fe70b91edc2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 91351143b6983708845e72860d8b4b53df47ce29
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
@@ -42,13 +42,13 @@ This method skips over the specified number of elements.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
    [in] ULONG celt  
 );  
 ```  
   
-```cs  
+```csharp  
 int Skip(  
    [In] uint celt  
 );  

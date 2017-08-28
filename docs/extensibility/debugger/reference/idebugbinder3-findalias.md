@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b4820228074cb4860480e447b836c59e9bbc427c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 277b755c5dae6061ae224e4541683c4524df0a84
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
@@ -49,7 +49,7 @@ HRESULT FindAlias(
 );  
 ```  
   
-```cs  
+```csharp  
 int FindAlias(  
    string          pcstrName,  
    out IDebugAlias ppAlias  

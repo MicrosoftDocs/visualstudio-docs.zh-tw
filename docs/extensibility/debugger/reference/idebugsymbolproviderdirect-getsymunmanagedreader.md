@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d6ce5ce98888891493f1578e8789768b388db6fe
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4d72d8ef00090168a9c27d93eecf3578ae9d9130
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
@@ -41,7 +41,7 @@ Retrieves a symbol reader for unmanaged code.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSymUnmanagedReader (  
    ULONG32    ulAppDomainID,  
    GUID       guidModule,  
@@ -49,7 +49,7 @@ HRESULT GetSymUnmanagedReader (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSymUnmanagedReader (  
    uint       ulAppDomainID,  
    Guid       guidModule,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c06c2b4b04463e7176732d1f0ba3a5ba83a0c715
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: db51796bcdb2487f91ac3f8babb249328f2ad89b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
@@ -42,13 +42,13 @@ Gets the program's exit code.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetExitCode(   
    DWORD* pdwExit  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExitCode(   
    out uint pdwExit  
 );  

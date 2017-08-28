@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4b6066de1c205e7df469c2c4f016e533ae9fd01a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 14d5aa4fa026f27f6b083d656cd5df3f8b7d7f41
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
@@ -43,7 +43,7 @@ Writes the specified number of bytes of memory, starting at the specified addres
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT WriteAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
@@ -51,7 +51,7 @@ HRESULT WriteAt(
 );  
 ```  
   
-```cs  
+```csharp  
 int WriteAt(  
    IDebugMemoryContext2 pStartContext,  
    uint                 dwCount,  

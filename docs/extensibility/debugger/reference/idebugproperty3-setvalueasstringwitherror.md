@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ea47050c28041ee660f971c8f0bafc2f57916724
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cec26257ab5c283c82846ff477b3e929e40194f1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
@@ -51,7 +51,7 @@ HRESULT SetValueAsStringWithError(
 );  
 ```  
   
-```cs  
+```csharp  
 int SetValueAsStringWithError(  
    string     pszValue,  
    uint       dwRadix,  
@@ -82,7 +82,7 @@ int SetValueAsStringWithError(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CProperty::SetValueAsStringWithError(   
     LPCOLESTR in_szValue,  
     DWORD in_RADIX,  

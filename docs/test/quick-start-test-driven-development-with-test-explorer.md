@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d988b3022d706b96d11260c61feb5e1bdf0f327f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af65c4f502cd36d00b031784dcda275abec3630a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Quick Start: Test Driven Development with Test Explorer
@@ -99,7 +99,7 @@ We recommend that you create unit tests to help keep your code working correctly
   
 3.  Write a basic test method. Verify the result obtained for a specific input:  
   
-    ```cs  
+    ```csharp  
   
     [TestMethod]  
     public void BasicRooterTest()  
@@ -149,7 +149,7 @@ We recommend that you create unit tests to help keep your code working correctly
   
 1.  In `MyMath\Rooter.cs`, improve the code of `SquareRoot`:  
   
-    ```cs  
+    ```csharp  
     public double SquareRoot(double input)  
      {  
        return input / 2;  
@@ -173,7 +173,7 @@ We recommend that you create unit tests to help keep your code working correctly
   
      In your test class, add the following test, which tries a range of input values:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
     public void RooterValueRange()  
     {  
@@ -227,7 +227,7 @@ We recommend that you create unit tests to help keep your code working correctly
   
 1.  Add a test for negative inputs:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
      public void RooterTestNegativeInputx()  
      {  
@@ -254,7 +254,7 @@ We recommend that you create unit tests to help keep your code working correctly
   
 4.  Fix the method code:  
   
-    ```cs  
+    ```csharp  
   
     public double SquareRoot(double input)  
     {  
@@ -278,7 +278,7 @@ We recommend that you create unit tests to help keep your code working correctly
     >   
     >  We recommend that you perform refactoring steps separately from steps that extend functionality. Keeping the tests unchanged gives you confidence that you have not accidentally introduced bugs while refactoring.  
   
-    ```cs  
+    ```csharp  
     public class Rooter  
     {  
       public double SquareRoot(double input)  

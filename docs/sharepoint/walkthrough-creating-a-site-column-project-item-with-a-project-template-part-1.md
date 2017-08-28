@@ -23,10 +23,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2ec75ccd4e3e78206ef7c812ef0f51a76ee1812b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3cb7516f579bc99c27aae434a17a5f3e38b62ac8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1
@@ -255,7 +255,7 @@ ms.lasthandoff: 08/24/2017
     Imports System.Security  
     ```  
   
-    ```cs  
+    ```csharp  
     using System.Security;  
     ```  
   

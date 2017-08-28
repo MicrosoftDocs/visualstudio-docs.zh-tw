@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d961a2a873254aa94df8d6903bd16b03ef170325
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a7e950fbf8667ee85f992ab8406dfdd9d7442555
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
@@ -42,7 +42,7 @@ Retrieves the text from the specified position in the document.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetText(   
    TEXT_POSITION pos,  
    ULONG         cMaxChars,  
@@ -51,7 +51,7 @@ HRESULT GetText(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetText(   
    eumn_TEXT_POSITION pos,  
    uint               cMaxChars,  
@@ -79,7 +79,7 @@ int GetText(
 ## <a name="example"></a>Example  
  This example shows how this method can be called from C#.  
   
-```cs  
+```csharp  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio;  
 using Microsoft.VisualStudio.Debugger.Interop;  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 25bbfa902c42570181039c9d545d9fb0779f7e40
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a930579367d13d92953e3fe6c349b53e9308db70
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
@@ -48,7 +48,7 @@ HRESULT CreateObjectID(
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateObjectID();  
 ```  
   

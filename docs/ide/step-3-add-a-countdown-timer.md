@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 475d67f74c6fdecf970b5bb25f672b17560c1338
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2dfc67d366f021c5c54a68b3ff72f2df79dafc2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Step 3: Add a Countdown Timer
@@ -84,7 +84,7 @@ In the third part of this tutorial, you'll add a countdown timer to track the nu
     End If  
     ```  
   
-    ```cs  
+    ```csharp  
     if (something that your program will check)  
     {  
         // One or more statements that will run  

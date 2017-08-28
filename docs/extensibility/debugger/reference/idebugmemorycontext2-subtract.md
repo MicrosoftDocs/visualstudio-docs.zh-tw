@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c6e517a8208a1e0cab5a1c39222e8d50be0e788b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 43704f0c63c2ae08b759a3a7648f81dc8d682236
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
@@ -43,14 +43,14 @@ Subtracts the specified value from the current context and returns a new context
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Subtract(   
    UINT64                 dwCount,  
    IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```cs  
+```csharp  
 int Subtract(  
    ulong                    dwCount,   
    out IDebugMemoryContext2 ppMemCxt  

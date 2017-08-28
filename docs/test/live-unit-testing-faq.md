@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: df1a6631892b124f2ee971daaa0a247db1293311
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c6a2c3b313aca87a77f7ad5b12a3d99c82c042b2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing Frequently Asked Questions
@@ -173,7 +173,7 @@ For solution-specific settings, you can apply the <xref:System.Diagnostics.CodeA
 
 You can also check whether `Microsoft.CodeAnalysis.LiveUnitTesting.Runtime` is loaded in the current application domain and disable tests based on that. For example, you can do something like the following with xUnit:
 
-```cs
+```csharp
 [ExcludeFromCodeCoverage]
 public class SkipLiveFactAttribute : FactAttribute
 {

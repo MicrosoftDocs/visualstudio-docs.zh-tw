@@ -23,10 +23,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4ae22d831d5072f1278270d9d4ac37370fba5de9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4bac541696170363b92ce99270460a10e2f181d8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>How to: Expose Code to VBA in a Visual C# Project
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/24/2017
   
 4.  Apply the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> and <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributes to the class that you are exposing to VBA. These attributes make the class visible to COM, but without generating a class interface.  
   
-    ```cs  
+    ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
     [System.Runtime.InteropServices.ClassInterface(  
         System.Runtime.InteropServices.ClassInterfaceType.None)]  
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/24/2017
   
     -   If you are exposing a host item class to VBA, override the **GetAutomationObject** method that belongs to this class, and return the current instance of the class.  
   
-        ```cs  
+        ```csharp  
         protected override object GetAutomationObject()  
         {  
             return this;  
@@ -75,7 +75,7 @@ ms.lasthandoff: 08/24/2017
   
     -   If you are exposing a class that is not a host item to VBA, override the **GetAutomationObject** method of any host item in your project, and return an instance of the non-host item class. For example, the following code assumes that you are exposing a class named `DocumentUtilities` to VBA.  
   
-        ```cs  
+        ```csharp  
         protected override object GetAutomationObject()  
         {  
             return new DocumentUtilities();  
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/24/2017
   
 8.  Make the interface visible to COM by adding the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to the interface.  
   
-    ```cs  
+    ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
     ```  
   

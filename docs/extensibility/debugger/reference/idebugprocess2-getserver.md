@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9403afaa6941ab8bfce9a59f4a1bf217d6da77b1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a9f6575b8f6266149f4b9ba1c49d3a0a33359c68
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
@@ -42,13 +42,13 @@ Gets the server that this process is running on.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetServer(   
    IDebugCoreServer2** ppServer  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetServer(   
    out IDebugCoreServer2 ppServer  
 );  

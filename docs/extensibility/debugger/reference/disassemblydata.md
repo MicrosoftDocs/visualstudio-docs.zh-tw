@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0e739afd02422555640d0093d3f8d9b9b84e510c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cde2a74a390443593a8d49ce0dad57a547e0eff0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="disassemblydata"></a>DisassemblyData
@@ -42,7 +42,7 @@ Describes one disassembly instruction for the integrated development environment
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagDisassemblyData {   
    DISASSEMBLY_STREAM_FIELDS dwFields;  
    BSTR                      bstrAddress;  
@@ -60,7 +60,7 @@ typedef struct tagDisassemblyData {
 } DisassemblyData;  
 ```  
   
-```cs  
+```csharp  
 public struct DisassemblyData {   
    public uint          dwFields;  
    public string        bstrAddress;  
@@ -131,7 +131,7 @@ public struct DisassemblyData {
 ## <a name="example"></a>Example  
  The `bstrDocumentUrl` field can contain additional information other than a string if the `DF_DOCUMENT_CHECKSUM` flag is set. The process of creating and reading this encoded string is straightforward in [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]. However, in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], it is another matter. For those who are curious, the following example shows one way to create the encoded string from [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] and one way to decode the encoded string in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
-```cs  
+```csharp  
 using System;  
 using System.Runtime.InteropServices;  
   

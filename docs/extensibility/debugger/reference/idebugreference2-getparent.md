@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 24d5acca0c507650528aa4e2d2b78c6349025c3b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6ad3a164eb6a214d0fa35cface5d157567d52eb7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
@@ -42,13 +42,13 @@ Gets the parent reference of a reference. Reserved for future use.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetParent (   
    IDebugReference2** ppParent  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetParent (   
    out IDebugReference2 ppParent  
 );  

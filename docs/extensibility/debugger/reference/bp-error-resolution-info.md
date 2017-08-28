@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2d6dafb10de627ace7ce311cbf0e04af43e9cf3b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3f15c5d5176f12345f41dde7b0ac5fe729bd1202
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
@@ -42,7 +42,7 @@ Describes the resolution of an error breakpoint, including location, program, an
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_ERROR_RESOLUTION_INFO {   
    BPERESI_FIELDS         dwFields;  
    BP_RESOLUTION_LOCATION bpResLocation;  
@@ -53,7 +53,7 @@ typedef struct _BP_ERROR_RESOLUTION_INFO {
 } BP_ERROR_RESOLUTION_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_ERROR_RESOLUTION_INFO {   
    public uint                   dwFields;  
    public BP_RESOLUTION_LOCATION bpResLocation;  

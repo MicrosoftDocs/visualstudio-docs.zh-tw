@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e9d9368e4400f15ee8cfceb59f132ed4c65bd051
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9def9e56e0896d11c10bfebfd5c2defe3fb52da8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
@@ -42,14 +42,14 @@ This method returns the value associated with the name of an enumeration constan
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetValueFromString(  
    LPCOLESTR  pszValue,  
    ULONGLONG* pvalue  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetValueFromString(  
    string    pszValue,  
    out ulong pValue  

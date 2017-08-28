@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e6d541283d3655ec3a57f1aa549726d95d041df6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b38e28b81d1a33eed7e80cc52316e9a133885052
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
@@ -42,13 +42,13 @@ Sets the registry root for the debug engine (DE).
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetRegistryRoot(   
    LPCOLESTR pszRegistryRoot  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetRegistryRoot(   
    string pszRegistryRoot  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2e297efd8111b970523e284506ce60bf9b0c8628
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1f2e99eb33e1e8412fc5c92d8ee613368f62649a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
@@ -42,13 +42,13 @@ Gets the breakpoint error resolution that describes the error.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetBreakpointResolution(   
    IDebugErrorBreakpointResolution2** ppErrorResolution  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetBreakpointResolution(   
    out IDebugErrorBreakpointResolution2 ppErrorResolution  
 );  

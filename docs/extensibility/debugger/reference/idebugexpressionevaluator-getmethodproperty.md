@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6860ec64f5e498d9cd563c48bf3930a8601ed2dc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d7bfe15fe46814c1247ab9796f3725b3bb6d5c91
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
@@ -42,7 +42,7 @@ This method gets a property object that contains the locals, arguments, and othe
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMethodProperty(   
    IDebugSymbolProvider* pSymbolProvider,  
    IDebugAddress*        pAddress,  
@@ -52,7 +52,7 @@ HRESULT GetMethodProperty(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMethodProperty(  
    IDebugSymbolProvider pSymbolProvider,   
    IDebugAddress        pAddress,   

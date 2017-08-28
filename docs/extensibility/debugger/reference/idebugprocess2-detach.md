@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a4b2f80e3d16871055d323b850fea53d4c208903
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2d327a5ef049a61da9e19227dae4c897764b0e7e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
@@ -42,13 +42,13 @@ Detaches the debugger from this process by detaching all of the programs in the 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Detach(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int Detach();  
 ```  
   

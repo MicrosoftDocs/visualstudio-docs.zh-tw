@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6b9e9de90ec43cbbb7a284dc3e79f14fbd87fbc9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0616c22b758edae77521f40933fcb940f9d1437c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplier2canaddport"></a>IDebugPortSupplier2::CanAddPort
@@ -42,13 +42,13 @@ Verifies that a port supplier can add new ports.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanAddPort(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int CanAddPort();  
 ```  
   

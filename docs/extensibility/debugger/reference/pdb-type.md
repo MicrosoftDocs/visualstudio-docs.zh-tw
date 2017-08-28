@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 170b8f4245f903419b9a2e125cc2635c6e972831
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 59f2a994987bf3259129c4338e007774467ad4a4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="pdbtype"></a>PDB_TYPE
@@ -42,7 +42,7 @@ This structure specifies information about a field type taken from a PDB symbol.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_PDB {  
    ULONG32 ulAppDomainID;  
    GUID    guidModule;  
@@ -50,7 +50,7 @@ typedef struct _tagTYPE_PDB {
 } PDB_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public struct PDB_TYPE {  
    public uint ulAppDomainID;  
    public Guid guidModule;  

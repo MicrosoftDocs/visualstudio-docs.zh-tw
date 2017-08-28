@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: af6c6e103e54d9012fe30a0c40012d686762c068
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c1836489b1845bca9e57daf83fc97bafeaf9da72
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>Walkthrough: Creating a View Adornment, Commands, and Settings (Column Guides)
@@ -81,13 +81,13 @@ You can extend the Visual Studio text/code editor with commands and view effects
   
  The code also must declare an adornment layer.  When the editor updates views, it gets the adornment layers for the view and from that gets the adornment elements.  You can declare the ordering of your layer relative to others with attributes.  Replace the following line:  
   
-```cs  
+```csharp  
 [Order(After = PredefinedAdornmentLayers.Caret)]  
 ```  
   
  with these two lines:  
   
-```cs  
+```csharp  
 [Order(Before = PredefinedAdornmentLayers.Text)]  
 [TextViewRole(PredefinedTextViewRoles.Document)]  
 ```  
@@ -97,7 +97,7 @@ You can extend the Visual Studio text/code editor with commands and view effects
 ## <a name="implementing-the-settings-manager"></a>Implementing the Settings Manager  
  Replace the contents of the GuidesSettingsManager.cs with the following code (explained below):  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Settings;  
 using Microsoft.VisualStudio.Shell;  
 using Microsoft.VisualStudio.Shell.Settings;  
@@ -350,14 +350,14 @@ namespace ColumnGuides
   
  There are some parts of the code worth highlighting.  The following line of code gets the Visual Studio managed wrapper for the settings storage.  For the most part, this abstracts over the Windows registry, but this API is independent of the storage mechanism.  
   
-```cs  
+```csharp  
 internal static SettingsManager VsManagedSettingsManager =  
     new ShellSettingsManager(ServiceProvider.GlobalProvider);  
 ```  
   
  The Visual Studio settings storage uses a category identifier and a setting identifier to uniquely identify all settings:  
   
-```cs  
+```csharp  
 private const string _collectionSettingsName = "Text Editor";  
 private const string _settingName = "Guides";  
 ```  
@@ -373,7 +373,7 @@ private const string _settingName = "Guides";
   
  Replace the contents of the ColumnGuideAdornment.cs with the following code (explained below):  
   
-```cs  
+```csharp  
 using System;  
 using System.Windows.Media;  
 using Microsoft.VisualStudio.Text.Editor;  
@@ -779,7 +779,7 @@ namespace ColumnGuides
   
  Find this line in ColumnGuideCommandsPackage.cs and copy the GUID from between the quotation marks:  
   
-```cs  
+```csharp  
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";  
 ```  
   
@@ -845,7 +845,7 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
   
  Replace the contents of the ColumnGuideCommands.cs file with the following code (explained below):  
   
-```cs  
+```csharp  
 using System;  
 using System.ComponentModel.Design;  
 using System.Globalization;  
@@ -1190,7 +1190,7 @@ namespace ColumnGuides
   
  Let's look at one of the command handler hook ups from the class constructor:  
   
-```cs  
+```csharp  
 _addGuidelineCommand =   
     new OleMenuCommand(AddColumnGuideExecuted, null,  
                        AddColumnGuideBeforeQueryStatus,  
@@ -1203,7 +1203,7 @@ _addGuidelineCommand =
   
  The following line provides assistance for when users invoke the command via the Command Window (explained below):  
   
-```cs  
+```csharp  
 _addGuidelineCommand.ParametersDescription = "<column>";  
 ```  
   
@@ -1211,7 +1211,7 @@ _addGuidelineCommand.ParametersDescription = "<column>";
   
  **AddColumnGuideExecuted function**.  The interesting part of adding a guide is figuring out the current editor view and caret location.  First this function calls `GetApplicableColumn` which checks if there is a user-supplied argument in the command handler's event arguments, and if there is none, then the function checks the editor's view:  
   
-```cs  
+```csharp  
 private int GetApplicableColumn(EventArgs e)  
 {  
     var inValue = ((OleMenuCmdEventArgs)e).InValue as string;  
@@ -1230,7 +1230,7 @@ private int GetApplicableColumn(EventArgs e)
   
  `GetCurrentEditorColumn` has to dig a little to get an <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> view of the code.  If you trace through `GetActiveTextView`, `GetActiveView`, and `GetTextViewFromVsTextView`, you can see how to do that.  The following is the relevant code abstracted, starting with the current selection, then getting the selection's frame, then getting the frame's DocView as an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>, then getting an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> from the IVsTextView, then getting a view host, and finally the IWpfTextView:  
   
-```cs  
+```csharp  
    IVsMonitorSelection selection =  
        this.ServiceProvider.GetService(typeof(IVsMonitorSelection))   
            as IVsMonitorSelection;  
@@ -1286,7 +1286,7 @@ ErrorHandler.ThrowOnFailure(selection.GetCurrentElementValue(
   
  Once you have an IWpfTextView, you can get the column where the caret is located:  
   
-```cs  
+```csharp  
 private static int GetCaretColumn(IWpfTextView textView)  
 {  
     // This is the code the editor uses to populate the status bar.  
@@ -1335,14 +1335,14 @@ private static int GetCaretColumn(IWpfTextView textView)
   
  You saw the command handler hook up code in the `ColumnGuideCommands` class constructor provided a description of the allowed parameter:  
   
-```cs  
+```csharp  
 _addGuidelineCommand.ParametersDescription = "<column>";  
   
 ```  
   
  You saw the `GetApplicableColumn` function checks `OleMenuCmdEventArgs` for a value before checking the editor's view for a current column:  
   
-```cs  
+```csharp  
 private int GetApplicableColumn(EventArgs e)  
 {  
     var inValue = ((OleMenuCmdEventArgs)e).InValue as string;  

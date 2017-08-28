@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e9d9d5226745a544095a5f7a74c01625537a80f5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8fc463cddeb679d0b5212178b98f91bc7deb57e3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
@@ -40,13 +40,13 @@ This method queries for a specified property value of the debugging process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT QueryProperty(  
    PROCESS_PROPERTY_TYPE  dwPropType,  
    VARIANT               *pvarPropValue);  
 ```  
   
-```cs  
+```csharp  
 int QueryProperty(  
    enum_PROCESS_PROPERTY_TYPE dwPropType,  
    out object                 pvarPropValue);  

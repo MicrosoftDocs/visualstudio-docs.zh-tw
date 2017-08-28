@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 60e7a1593bc29086c40655e35b4a4f5e5131d20f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 745908c5c5f8f4844ea6bbe80111bb32bf4dbac3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Use UI Automation To Test Your Code
@@ -138,7 +138,7 @@ Automated tests that drive your application through its user interface (UI) are 
   
      To view the generated code, close the UI Test Builder window. In the code, you can see the names that you gave to each step. The code is in the CUIT file that you created:  
   
-    ```cs  
+    ```csharp  
     [CodedUITest]  
     public class CodedUITest1  
     { ...  
@@ -260,7 +260,7 @@ Automated tests that drive your application through its user interface (UI) are 
   
  After you generate the test method, code similar to the following example will be added to the UIMap.Desinger.cs file:  
   
-```cs  
+```csharp  
 // Mouse hover '1' label at (87, 9)  
 Mouse.Hover(uIItem1Text, new Point(87, 9));  
   
@@ -337,7 +337,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
 -   **A line in the test method.**  
   
-    ```cs  
+    ```csharp  
     [CodedUITest]  
     public class CodedUITest1  
     { ...  
@@ -360,7 +360,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
      Youcan also view the generated method in UIMap.Designer.cs. This method performs the actions that you recorded when you run the test.  
   
-    ```cs  
+    ```csharp  
     // File: UIMap.Designer.cs  
     public partial class UIMap  
     {  
@@ -377,7 +377,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   
      You can make adapted versions of these methods by copying them to UIMap.cs. For example, you could make a parameterized version that you could call from a test method:  
   
-    ```cs  
+    ```csharp  
     // File: UIMap.cs  
     public partial class UIMap // Same partial class  
     {  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 13c02837a42de9c22dc2cc21194aa7f8e1ebdfee
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 577be76306d4fe54f3a5e95e9d494f82653ecebc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
@@ -41,7 +41,7 @@ Retrieves the type parameters given the number of parameters.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetFormalTypeParams(  
    ULONG32                   cParams,  
    IDebugGenericParamField** ppParams,  
@@ -49,7 +49,7 @@ HRESULT GetFormalTypeParams(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetFormalTypeParams(  
    uint                          cParams,  
    out IDebugGenericParamField[] ppParams,  

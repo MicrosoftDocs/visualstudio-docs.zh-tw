@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 64296cf80c8e3a66a3d15257db531c2ae0b90bf4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d7a69bd22d3c8dbf93a3da67f6a2b4fd89fec0b0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="changing-the-appearance-of-a-command"></a>Changing the Appearance of a Command
@@ -56,19 +56,19 @@ You can provide feedback to your user by changing the appearance of a command. F
   
 2.  In the ChangeMenuText.cs file, add the following using statement:  
   
-    ```cs  
+    ```csharp  
     using System.Security.Permissions;  
     ```  
   
 3.  In the ChangeMenuTextPackageGuids.cs file, add the following line:  
   
-    ```cs  
+    ```csharp  
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file  
     ```  
   
 4.  In the ChangeMenuText.cs file, replace the code in the ShowMessageBox method with the following:  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         var command = sender as OleMenuCommand;  
@@ -79,7 +79,7 @@ You can provide feedback to your user by changing the appearance of a command. F
   
 5.  Obtain the command that you want to update from the <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> object and then set the appropriate properties on the command object. For example, the following method makes the specified command from a VSPackage command set available or unavailable. The following code makes the menu item named `New Text` unavailable after it has been clicked.  
   
-    ```cs  
+    ```csharp  
     public bool ChangeMyCommand(int cmdID, bool enableCmd)  
     {  
         bool cmdUpdated = false;  

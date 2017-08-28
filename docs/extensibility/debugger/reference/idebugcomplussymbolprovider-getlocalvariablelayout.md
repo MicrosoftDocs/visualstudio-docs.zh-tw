@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 878a964a45f99e47150325592d993bdb65d50d9a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4776f56ea10c6b99cc59761139e9112d9a8780b2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
@@ -41,7 +41,7 @@ Retrieves the layout of local variables for a set of methods.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetLocalVariablelayout(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -51,7 +51,7 @@ HRESULT GetLocalVariablelayout(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetLocalVariablelayout(  
    uint        ulAppDomainID,  
    Guid        guidModule,  
@@ -83,7 +83,7 @@ int GetLocalVariablelayout(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  
     ULONG32 ulAppDomainID,   
     GUID guidModule,   

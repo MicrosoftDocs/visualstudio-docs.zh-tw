@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 32c278218eb5001e370f45e870c06093acfd6d04
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7cf3f0726e250fd0f7b1b9af768ffac85cbb8ec3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="exceptionstate"></a>EXCEPTION_STATE
@@ -42,7 +42,7 @@ Specifies the exception state.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  
@@ -67,7 +67,7 @@ enum enum_EXCEPTION_STATE {
 typedef DWORD EXCEPTION_STATE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_EXCEPTION_STATE {   
    EXCEPTION_NONE                          = 0x0000,  
    EXCEPTION_STOP_FIRST_CHANCE             = 0x0001,  

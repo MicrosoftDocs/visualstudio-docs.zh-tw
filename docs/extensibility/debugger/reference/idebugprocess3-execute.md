@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 61d622eca0ca6fcd42e0f988aec0a109e985e419
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f1b377b1e4fa46d488851f7c63a27900272feb04
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
@@ -51,7 +51,7 @@ HRESULT Execute(
 );  
 ```  
   
-```cs  
+```csharp  
 int Execute(  
    IDebugThread2 pThread  
 );  

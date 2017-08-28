@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 371946f240b92f5e97883185fe0fc90b62744f12
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 749381a752521bcf728ecf1fb88583bdcbabbb00
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="fieldinfo"></a>FIELD_INFO
@@ -42,7 +42,7 @@ This structure describes a local variable, parameter, or other field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagFieldInfo {   
    FIELD_INFO_FIELDS dwFields;  
    BSTR              bstrFullName;  
@@ -52,7 +52,7 @@ typedef struct _tagFieldInfo {
 } FIELD_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct FIELD_INFO {  
    public uint   dwFields;  
    public string bstrFullName;  

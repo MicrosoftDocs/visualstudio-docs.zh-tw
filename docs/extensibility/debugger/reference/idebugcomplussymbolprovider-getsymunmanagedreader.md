@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5765f464f2751b29b899eb8d7728ea42f7a3dc81
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d48e01442cca27e602e8c726db7ebd3997b33d8c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
@@ -41,7 +41,7 @@ Retrieves the symbol reader to be used by unmanaged code.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSymUnmanagedReader(  
    ULONG32    ulAppDomainID,  
    GUID       guidModule,  
@@ -49,7 +49,7 @@ HRESULT GetSymUnmanagedReader(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSymUnmanagedReader(  
    uint       ulAppDomainID,  
    Guid       guidModule,  
@@ -73,7 +73,7 @@ int GetSymUnmanagedReader(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetSymUnmanagedReader(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

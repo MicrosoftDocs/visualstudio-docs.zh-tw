@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 83b337db3c5852ad4d1f31be966833de4e025d5a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 276dd3dac6670caa171ee2e3c87606c56dca36fd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Creating an Extension with a Menu Command
@@ -63,13 +63,13 @@ This walkthrough shows how to create an extension with a menu command that launc
   
 1.  Stop debugging and go back to your working instance of Visual Studio. Open the FirstCommand.cs file and add the following using statement:  
   
-    ```cs  
+    ```csharp  
     using System.Diagnostics;  
     ```  
   
 2.  Find the private FirstCommand constructor. This is where the command is hooked up to the command service and the command handler is specified. Change the name of the command handler to StartNotepad, as follows:  
   
-    ```cs  
+    ```csharp  
     private FirstCommand(Package package)  
     {  
         if (package == null)  
@@ -92,7 +92,7 @@ This walkthrough shows how to create an extension with a menu command that launc
   
 3.  Remove the MenuItemCallback method and add a StartNotepad method which will just start Notepad:  
   
-    ```cs  
+    ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
     {  
         Process proc = new Process();  

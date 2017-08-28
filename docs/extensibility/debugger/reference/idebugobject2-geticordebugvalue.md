@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 88cda3ca25f75e955396f85c1e165eb692133362
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 477ce5c18672e8324667e28754810e66101e7b0c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
@@ -48,7 +48,7 @@ HRESULT GetICorDebugValue(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetICorDebugValue(  
    out object ppUnk  
 );  

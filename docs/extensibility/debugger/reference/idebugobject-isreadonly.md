@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 641db347344f6d179b6e03199595994767c5a5fd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 13ede24192408b7b5a68c13d37a4535ccf352fed
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
@@ -42,13 +42,13 @@ Determines if this object is read-only.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsReadOnly(   
    BOOL* pfIsReadOnly  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsReadOnly(  
    out int pfIsReadOnly  
 );  

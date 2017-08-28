@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b6b01b137c6655f1b043aba6bf5bf05e040d0579
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bc12e80a25b779189cd231a35a404ed8b7a2531c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
@@ -42,13 +42,13 @@ Creates an enumerator for all the breakpoints that fired at the current code loc
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumBreakpoints(  
   IEnumDebugBoundBreakpoints2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumBreakpoints(  
   out IEnumDebugBoundBreakpoints2 ppEnum  
 );  

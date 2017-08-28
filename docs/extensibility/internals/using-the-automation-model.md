@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: beae7d64aaf9b4ce454ebf9de8baa114e60d1ac0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 82a9c2068bdd3e234bcc53ffa870ca289289d690
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="using-the-automation-model"></a>Using the Automation Model
@@ -48,7 +48,7 @@ Sub DoAutomation()
 End Sub  
 ```  
   
-```cpp#  
+```cpp  
 void DoAutomation(void)  
 {  
   CComQIPtr<Projects> pMyPkg; // Use an IDispatch-derived object type.  

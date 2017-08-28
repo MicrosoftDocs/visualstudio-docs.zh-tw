@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3f0ced25684f53f96de3f5f1dc6f5aa36f18060a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 56e68d79036593bb76c475c60fc431f409f31e3b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
@@ -42,13 +42,13 @@ Unregisters a program that can be debugged from the port it is running on.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT RemoveProgramNode(   
    IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
-```cs  
+```csharp  
 int RemoveProgramNode(   
    IDebugProgramNode2 pProgramNode  
 );  

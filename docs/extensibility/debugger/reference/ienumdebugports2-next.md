@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 42b6442bec0a93b2b860eae722a9b7fc5fe90ee8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1007dc01e0b6f073477348442b55a31c4db13ee7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
@@ -42,7 +42,7 @@ Returns the next set of elements from the enumeration.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG         celt,  
    IDebugPort2** rgelt,  
@@ -50,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```cs  
+```csharp  
 int Next(  
    uint          celt,  
    IDebugPort2[] rgelt,  

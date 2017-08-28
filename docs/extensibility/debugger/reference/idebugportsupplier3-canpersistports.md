@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8eb3be98cdb95928be214b82b4e834d084e49311
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9c61891876f3e27753283042b0b24dd7d7d60dfd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
@@ -46,7 +46,7 @@ This method determines whether the port supplier can persist ports (by writing t
 HRESULT CanPersistPorts();  
 ```  
   
-```cs  
+```csharp  
 int CanPersistPorts();  
 ```  
   

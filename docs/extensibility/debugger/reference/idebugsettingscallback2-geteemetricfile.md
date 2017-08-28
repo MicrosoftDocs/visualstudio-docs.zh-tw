@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: efc609e9dc8c60d6c797c5ab42e9fafa465bd57b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e2d0ec99c2bb4e166b949a082aea6928ee5023d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
@@ -40,7 +40,7 @@ Retrieves the expression evaluator metric file given the name or the metric.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricFile(  
    REFGUID guidLang,  
    REFGUID guidVendor,  
@@ -49,7 +49,7 @@ HRESULT GetEEMetricFile(
 );  
 ```  
   
-```cs  
+```csharp  
 private int GetEEMetricFile(  
    ref Guid   guidLang,  
    ref Guid   guidVendor,  

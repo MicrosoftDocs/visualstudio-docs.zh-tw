@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e41173b13100c2e0e9ccf4c91f56b4fd94889958
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d1423bc575cc70703a6c1e99fde8d8776055519f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
@@ -40,7 +40,7 @@ Retrieves the unique identifier of a metric given its name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMetricGuid(  
    LPCWSTR pszType,  
    REFGUID guidSection,  
@@ -49,7 +49,7 @@ HRESULT GetMetricGuid(
 );  
 ```  
   
-```cs  
+```csharp  
 private int GetMetricGuid(  
    string   pszType,  
    ref Guid guidSection,  

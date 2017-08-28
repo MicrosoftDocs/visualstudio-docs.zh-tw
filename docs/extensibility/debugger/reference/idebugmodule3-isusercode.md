@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ffa5be1e9fb92bdc5b2e8193922228a5129a2188
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3f5bffdc71d82883799b94f2433e3eb7bdb37a7b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmodule3isusercode"></a>IDebugModule3::IsUserCode
@@ -42,13 +42,13 @@ Retrieves information on whether the module represents user code or not.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsUserCode(  
    BOOL* pfUser  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsUserCode(  
    out int pfUser  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b00d82b48fe683fe8ca75da7ed14db4e6caf0b9e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1357a55b240872237a9c838d1387cf07f14c6f92
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
@@ -42,7 +42,7 @@ Specifies where an assembly is located.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_ASSEMBLYLOCRESOLUTION {  
    ALR_NAME      = 0x0,  
    ALR_USERDIR   = 0x1,  
@@ -52,7 +52,7 @@ enum enum_ASSEMBLYLOCRESOLUTION {
 typedef DWORD ASSEMBLYLOCRESOLUTION;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_ASSEMBLYLOCRESOLUTION {  
    ALR_NAME      = 0x0,  
    ALR_USERDIR   = 0x1,  

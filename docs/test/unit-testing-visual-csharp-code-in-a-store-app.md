@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 24df1c8c66e5b0c9f189bb2732df0f437fce8832
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Unit testing Visual C# code in a Store app
@@ -80,7 +80,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 6.  Open UnitTest1.cs in the Visual Studio editor.  
   
-    ```cs  
+    ```csharp  
   
     using System;  
     using System.Collections.Generic;  
@@ -116,7 +116,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 1.  Insert some test code in `TestMethod1` of the **UnitTest1.cs** file:  
   
-    ```cs  
+    ```csharp  
   
     [TestMethod]  
     public void TestMethod1()  
@@ -142,7 +142,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 3.  Add the following code to the Rooter class **Rooter.cs** file:  
   
-    ```cs  
+    ```csharp  
   
     public Rooter()  
     {  
@@ -176,13 +176,13 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
     2.  Add this code below the `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;` line:  
   
-        ```cs  
+        ```csharp  
         using Maths;  
         ```  
   
 3.  Add a test that uses the Rooter function. Add the following code to **UnitTest1.cpp**:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
     public void BasicTest()  
     {  
@@ -209,7 +209,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 1.  Add a new test:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
     public void RangeTest()  
     {  
@@ -241,7 +241,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 4.  Enhance the code under test so that the new test passes. Change the `SqareRoot` function in **Rooter.cs** to this:  
   
-    ```cs  
+    ```csharp  
     public double SquareRoot(double x)  
     {  
         double estimate = x;  
@@ -268,7 +268,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 1.  Add another test to **UnitTest1.cs**:  
   
-    ```cs  
+    ```csharp  
     // Verify that negative inputs throw an exception.  
     [TestMethod]  
     public void NegativeRangeTest()  
@@ -315,7 +315,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
     3.  Add code to the Rooter method to catch the exception:  
   
-        ```cs  
+        ```csharp  
         public double SquareRoot(double x)  
         {  
             if (x < 0.0)  
@@ -336,7 +336,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 1.  Change the result implementation  
   
-    ```cs  
+    ```csharp  
     // old code  
     //result = result - (result*result - v)/(2*result);  
     // new code  
@@ -355,7 +355,7 @@ This topic describes one way to create unit tests for a Visual C# class in a Win
   
 1.  Add a private method to the Unit1Test class to calculate the tolerance value and then call that method instead.  
   
-    ```cs  
+    ```csharp  
     private double ToleranceHelper(double expected)  
     {  
         return expected / 1000;  

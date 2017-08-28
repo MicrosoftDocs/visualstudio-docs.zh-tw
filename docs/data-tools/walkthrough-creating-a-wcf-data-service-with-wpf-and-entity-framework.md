@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d2ae80673afdceb5cc5f816d92ab9b9cbf084801
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fae3852dfc45bf515c388ab5db0b083f5808c96a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Walkthrough: Creating a WCF Data Service with WPF and Entity Framework
@@ -209,7 +209,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
     Imports NorthwindClient.ServiceReference1  
     ```  
   
-    ```cs  
+    ```csharp  
     using NorthwindClient.ServiceReference1;  
     ```  
   
@@ -223,7 +223,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
         End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void Form1_Load(object sender, EventArgs e)  
     {  
     NorthwindEntities proxy = new NorthwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc/"));  
@@ -269,7 +269,7 @@ This walkthrough demonstrates how to create a simple [!INCLUDE[ss_data_service](
         End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void Button1_Click(object sender, EventArgs e)  
     {  
     ServiceReference1.northwindModel.northwindEntities proxy = new northwindEntities(new Uri("http://localhost:53161/NorthwindCustomers.svc"));  

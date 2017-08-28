@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 78304b0239a2188b43f8cfca440b4bcec0ac3adf
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 899d445d2dbcbf002b78d9a2a4f222ce0fc4ade0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Add code to datasets in n-tier applications
@@ -74,7 +74,7 @@ You can extend the functionality of a dataset by creating a partial class file f
     End Class  
     ```  
   
-    ```cs  
+    ```csharp  
     partial class CustomersDataTable  
     {  
         // Add code here to add functionality  

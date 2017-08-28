@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 85ae6a3b202e2927cafc86eb7b65a832e3e36ddb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 015b4918d9e7be0c777b4d5ff346798e58c63192
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
@@ -41,13 +41,13 @@ Determines if the specified custom attribute is defined.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsCustomAttributeDefined(  
    LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsCustomAttributeDefined(  
    string pszCustomAttributeName  
 );  
@@ -63,7 +63,7 @@ int IsCustomAttributeDefined(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugClassFieldSymbol** object that exposes the [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
     LPCOLESTR pszCustomAttribute  
 )  

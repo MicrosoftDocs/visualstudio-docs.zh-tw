@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f6d113cdcd8e2eb958332e61a4da13e60505af00
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5e0162d17fc81b1304213d0259863f35523a833f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
@@ -42,13 +42,13 @@ Attaches to the associated program or defers the attach process to the [Attach](
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT OnAttach(  
    [in] REFGUID guidProgramId  
 );  
 ```  
   
-```cs  
+```csharp  
 int OnAttach(  
    ref Guid guidProgramId  
 };  

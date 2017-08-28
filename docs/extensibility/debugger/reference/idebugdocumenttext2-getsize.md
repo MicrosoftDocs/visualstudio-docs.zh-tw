@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 640e10cff94d598e91e2627b574e010d6cc1fcf7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b017d9a867dd9d441eade16a980f605f3ef40c45
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
@@ -42,14 +42,14 @@ Retrieves the size of the text at this position in the document.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(   
    ULONG* pcNumLines,  
    ULONG* pcNumChars  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize(   
    ref uint pcNumLines,  
    ref uint pcNumChars  

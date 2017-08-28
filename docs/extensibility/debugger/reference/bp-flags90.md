@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 18cb86f1a1105cfb34be2e16c58824314f9f55c8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5e958be77ca266af30556fa8c03c580eea94b903
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
@@ -40,7 +40,7 @@ Enumerates valid values for optional flags. The optional flags may be used to sp
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_FLAGS90  
 {  
    // VS 8.0 values  
@@ -54,7 +54,7 @@ enum enum_BP_FLAGS90
 typedef DWORD BP_FLAGS90;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_FLAGS90  
 {  
    // VS 8.0 values  

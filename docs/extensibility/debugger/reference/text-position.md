@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f456e2e19e8a4e29fd5a324164d0ff91600f6912
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1731cd5f374f733fb0ec967faaf6c11b34b80ceb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="textposition"></a>TEXT_POSITION
@@ -42,14 +42,14 @@ Describes the line and column location in the given text.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagTEXT_POSITION {   
    DWORD dwLine;  
    DWORD dwColumn;  
 } TEXT_POSITION;  
 ```  
   
-```cs  
+```csharp  
 public struct TEXT_POSITION {   
    public uint dwLine;  
    public uint dwColumn;  

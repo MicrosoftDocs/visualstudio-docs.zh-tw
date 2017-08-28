@@ -1,5 +1,5 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition |Microsoft 文件"
+title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,16 +29,17 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 62b1761fc1c1ec58ef0c02fa7bfa57bc20f2eea9
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8f7e77903d98943b1f1d0d5b879656c67b1ac223
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-將指定的模組中的文件位置對應到偵錯位址的陣列。  
+Maps a document position in the specified module to an array of debug addresses.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
 ```  
 [C++]  
@@ -64,32 +65,32 @@ int GetAddressesInModuleFromPosition(
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in]應用程式定義域識別項。  
+ [in] Application domain identifier.  
   
  `guidModule`  
- [in]模組的唯一識別碼。  
+ [in] Unique identifier of the module.  
   
  `pDocPos`  
- [in]文件位置。  
+ [in] The document position.  
   
  `fStatmentOnly`  
- [in]如果`TRUE`，限制在單一陳述式的偵錯位址。  
+ [in] If `TRUE`, limits the debug addresses to a single statement.  
   
  `ppEnumBegAddresses`  
- [out]傳回此陳述式或列相關聯的起始偵錯位址的列舉值。  
+ [out] Returns an enumerator for the starting debug addresses that are associated with this statement or line.  
   
  `ppEnumEndAddresses`  
- [out]傳回此陳述式或列相關聯的結束偵錯位址的列舉值。  
+ [out] Returns an enumerator for the ending debug addresses that are associated with this statement or line.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAddressesInModuleFromPosition(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -238,5 +239,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

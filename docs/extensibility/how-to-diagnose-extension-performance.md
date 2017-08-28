@@ -28,10 +28,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e15df613e678e577a16c613c8be0c302b2c8d1a3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b78a02b9d780b9556cbbf42fce04b1da06e22833
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Measuring extension impact in startup
@@ -112,7 +112,7 @@ PerfView is a system wide tracing tool that will help you understand hot paths i
 
 This example is based on the sample code below, which is designed to show case some common delay causes:
 
-```cs
+```csharp
 protected override void Initialize()
 {
     // Initialize a class from another assembly as an example

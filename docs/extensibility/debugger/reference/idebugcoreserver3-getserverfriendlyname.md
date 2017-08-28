@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a08b4f33384d6603d180cb190cb2d6f411da0281
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7a8ff4b91cb37ee71435069fbacb6a7bcd5ab818
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
@@ -42,13 +42,13 @@ Retrieves a friendly name for the server.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetServerFriendlyName(  
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetServerFriendlyName(  
    out string pbstrName  
 );  

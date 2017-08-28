@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 50b3c5f36aab03db18a974fe6fd3a7258ee4d0c7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 308c14f97f33a0f4e454380e4bb00d4731d4482d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="displaykind"></a>DisplayKind
@@ -40,7 +40,7 @@ Enumerates the valid values that represent the kinds of information to take from
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  
@@ -50,7 +50,7 @@ enum enum_DisplayKind
 typedef DWORD DisplayKind;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_DisplayKind  
 {  
    DisplayKind_Value = 0x1,  

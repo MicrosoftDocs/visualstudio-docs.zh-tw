@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c3b226e9532cbbc79cca56810df9c37354c21228
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9808bce5f41519f87499de0ace2eaa8350021f79
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="loading-vspackages"></a>Loading VSPackages
@@ -48,7 +48,7 @@ VSPackages are loaded into Visual Studio only when their functionality is requir
   
 -   Add the `ProvideAutoLoad` attribute to the VSPackage attributes:  
   
-    ```cs  
+    ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
@@ -74,7 +74,7 @@ VSPackages are loaded into Visual Studio only when their functionality is requir
   
 -   Insert this code into the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method of the VSPackage that forces another VSPackage to load:  
   
-    ```cs  
+    ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
     if (shell == null) return;  
   
@@ -95,7 +95,7 @@ VSPackages are loaded into Visual Studio only when their functionality is requir
 ## <a name="creating-a-registry-key"></a>Creating a Registry Key  
  In the following code, the custom attribute creates a **Custom** subkey under the key for the VSPackage that is being registered.  
   
-```cs  
+```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -121,7 +121,7 @@ public override void Unregister(RegistrationContext context)
 ## <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creating a New Value Under an Existing Registry Key  
  You can add custom values to an existing key. The following code shows how to add a new value to a VSPackage registration key.  
   
-```cs  
+```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  

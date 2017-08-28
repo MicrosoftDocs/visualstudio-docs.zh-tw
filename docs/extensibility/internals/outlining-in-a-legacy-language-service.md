@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e5cf0a9d11720022861231ba434e56050c664c64
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e564990901247cf51dd3bfd71b3c121937cf1d86
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Outlining in a Legacy Language Service
@@ -66,7 +66,7 @@ Outlining makes it possible to collapse a complex program into an overview or ou
   
  This example assumes C# rules for comments, strings, and literals.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   

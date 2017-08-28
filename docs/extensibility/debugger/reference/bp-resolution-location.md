@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 024eb66e34c57d356911d4ce2913fc7586c77d17
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 82945a764887f47e11d7878417e96f77b9dba1a2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
@@ -42,7 +42,7 @@ Specifies the structure of the breakpoint resolution location.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 struct _BP_RESOLUTION_LOCATION {  
    BP_TYPE bpType;  
    union {  
@@ -53,7 +53,7 @@ struct _BP_RESOLUTION_LOCATION {
 } BP_RESOLUTION_LOCATION;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_RESOLUTION_LOCATION {  
    public uint bpType;  
    public IntPtr unionmember1;  
@@ -101,7 +101,7 @@ public struct BP_RESOLUTION_LOCATION {
 ## <a name="example"></a>Example  
  This example shows how to interpret the `BP_RESOLUTION_LOCATION` structure in C#.  
   
-```cs  
+```csharp  
 using System;  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio.Debugger.Interop;  

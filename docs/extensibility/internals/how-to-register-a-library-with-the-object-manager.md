@@ -33,10 +33,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d89f3d794fca61aec290f5ad2df28f5633e9e732
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0c9291dec5cf812f2cf2d8807263f1dc2b46e325
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>How to: Register a Library with the Object Manager
@@ -65,7 +65,7 @@ Symbols-browsing tools, such as **Class View**, **Object Browser**, **Call Brows
     m_CallBrowserLibrary = New CallBrowser.Library()  
     ```  
   
-    ```cs  
+    ```csharp  
     private CallBrowser.Library m_CallBrowserLibrary = null;  
     private uint m_nLibraryCookie = 0;  
     // Create Library.  
@@ -98,7 +98,7 @@ Symbols-browsing tools, such as **Class View**, **Object Browser**, **Call Brows
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void RegisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  
@@ -153,7 +153,7 @@ Symbols-browsing tools, such as **Class View**, **Object Browser**, **Call Brows
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void UnregisterLibrary()  
     {  
         if (m_nLibraryCookie != 0)  

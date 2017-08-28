@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0a2c09230aba1673cbcea0474cde33e74d7e8d26
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6656cb960d0ec96ebb88752c7ba9a1570659c158
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="machineinfo"></a>MACHINE_INFO
@@ -42,7 +42,7 @@ Describes a particular machine.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagMACHINE_INFO {   
    MACHINE_INFO_FIELDS Fields;  
    BSTR                bstrName;  
@@ -50,7 +50,7 @@ typedef struct tagMACHINE_INFO {
 } MACHINE_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct MACHINE_INFO {   
    public uint   Fields;  
    public string bstrName;  

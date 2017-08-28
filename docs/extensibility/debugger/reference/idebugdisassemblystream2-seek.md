@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 79ae3ce3671c5251f70ee8b3d0f888c8227c9e84
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e82c5eab1099ba2d72fe69e3e28a98405b05af0f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
@@ -42,7 +42,7 @@ Moves the read pointer in the disassembly stream a given number of instructions 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Seek(   
    SEEK_START          dwSeekStart,  
    IDebugCodeContext2* pCodeContext,  
@@ -51,7 +51,7 @@ HRESULT Seek(
 );  
 ```  
   
-```cs  
+```csharp  
 int Seek(   
    enum_SEEK_START    dwSeekStart,  
    IDebugCodeContext2 pCodeContext,  

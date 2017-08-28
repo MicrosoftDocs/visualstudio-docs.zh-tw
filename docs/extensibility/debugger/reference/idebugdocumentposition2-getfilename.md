@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 273ef2b9f394c4c216e4fa7483c0c63c035aa46f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c6b4aa6ced94961f928efc0fed59a8db06a33609
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
@@ -42,13 +42,13 @@ Gets the file name of the source file that contains the document position.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetFileName(   
    BSTR* pbstrFileName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetFileName(   
    out string pbstrFileName  
 );  

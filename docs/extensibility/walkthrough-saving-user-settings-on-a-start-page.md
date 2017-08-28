@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c5c07ba1c70371f2a8093af99a46e2f3c7e2cd0e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 32c9eb173c3841189865500d160fd1b8df7fb9ca
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-saving-user-settings-on-a-start-page"></a>Walkthrough: Saving User Settings on a Start Page
@@ -105,7 +105,7 @@ You can persist user settings for your start page. By following this walkthrough
   
 3.  Add a private `SettingsStore` property, as shown in the following example.  
   
-    ```cs  
+    ```csharp  
     private IVsWritableSettingsStore _settingsStore = null;  
     private IVsWritableSettingsStore SettingsStore  
     {  
@@ -139,7 +139,7 @@ You can persist user settings for your start page. By following this walkthrough
   
 4.  Fill in the `Button_Click` event as follows.  
   
-    ```cs  
+    ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
     {  
         int exists = 0;  
@@ -156,7 +156,7 @@ You can persist user settings for your start page. By following this walkthrough
   
 5.  Add the following handler for the `OnLoaded` event of the user control.  
   
-    ```cs  
+    ```csharp  
     private void OnLoaded(Object sender, RoutedEventArgs e)  
     {  
         string value;  

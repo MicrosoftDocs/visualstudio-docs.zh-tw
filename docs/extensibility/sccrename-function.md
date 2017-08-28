@@ -1,68 +1,85 @@
 ---
-title: "SccRename 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccRename"
-helpviewer_keywords: 
-  - "SccRename 函式"
+title: SccRename Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccRename
+helpviewer_keywords:
+- SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# SccRename 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 58a500fe775bb7837e6132bd918be63fb68b7fe2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-此函式會將檔案重新命名原始檔控制系統中。  
+---
+# <a name="sccrename-function"></a>SccRename Function
+This function renames a file in the source control system.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccRename(  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPCSTR lpFileName,  
-   LPCSTR lpNewName  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPCSTR lpFileName,  
+   LPCSTR lpNewName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[\] in原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpFileName  
- \[\] in重新命名檔案的完整的檔案名稱。  
+ [in] The fully qualified file name of the file being renamed.  
   
  lpNewName  
- \[\] in完整的新名稱。 如果不同的目錄路徑，然後移動檔案從一個子目錄到另一個。  
+ [in] The fully qualified new name. If the directory path is different, then the file has moved from one subdirectory to another.  
   
-## 傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
-|-------|--------|  
-|SCC\_OK|重新命名作業順利完成。|  
-|SCC\_E\_PROJNOTOPEN|無法在原始檔控制開啟專案。|  
-|SCC\_E\_FILENOTCONTROLLED|檔案不是原始檔控制下。|  
-|SCC\_E\_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。|  
-|SCC\_E\_NOTAUTHORIZED|若要完成這項作業未授權使用者。|  
-|SCC\_E\_COULDNOTCREATEPROJECT|重新命名程序的一部分，無法建立專案。|  
-|SCC\_E\_OPNOTPERFORMED|未執行作業。|  
-|SCC\_E\_NONSPECIFICERROR|發生未指定或一般錯誤。|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The renaming operation completed successfully.|  
+|SCC_E_PROJNOTOPEN|The project is not open under source control.|  
+|SCC_E_FILENOTCONTROLLED|The file is not under source control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues.|  
+|SCC_E_NOTAUTHORIZED|The user is not authorized to complete this operation.|  
+|SCC_E_COULDNOTCREATEPROJECT|The project could not be created as part of the renaming process.|  
+|SCC_E_OPNOTPERFORMED|The operation was not performed.|  
+|SCC_E_NONSPECIFICERROR|An unspecified or general error occurred.|  
   
-## 備註  
- 此函式可用來重新命名檔案或將它從某個位置移到另一個原始檔控制系統中。 原始檔控制外掛程式不應嘗試存取磁碟上的檔案。 是 IDE 的責任，若要重新命名本機檔案。  
+## <a name="remarks"></a>Remarks  
+ This function can be used to rename a file or move it from one location to another in the source control system. The source control plug-in should not attempt to access the file on disk. It is the IDE's responsibility to rename the local file.  
   
-## 請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

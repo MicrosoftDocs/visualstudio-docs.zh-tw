@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0ac165a7ee5ba262b9452a75172f053edac6f749
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 39ba70fbd22708f16e00eefdd0c679ffc98119bf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="rename-refactoring-c"></a>Rename Refactoring (C#)
@@ -73,7 +73,7 @@ ms.lasthandoff: 08/24/2017
   
 1.  Create a console application named `RenameIdentifier`, and then replace `Program` with the following example code.  
   
-    ```cs  
+    ```csharp  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -110,7 +110,7 @@ ms.lasthandoff: 08/24/2017
   
 1.  Create a console application named `RenameIdentifier`, and then replace `Program` with the following example code.  
   
-    ```cs  
+    ```csharp  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -165,14 +165,14 @@ ms.lasthandoff: 08/24/2017
 ## <a name="renaming-properties-of-anonymous-types"></a>Renaming Properties of Anonymous Types  
  When you rename a property in anonymous types, the rename operation will propagate to properties in other anonymous types that have the same properties. The following examples illustrate this behavior.  
   
-```cs  
+```csharp  
 var a = new { ID = 1};  
 var b = new { ID = 2};  
 ```  
   
  In the preceding code, renaming `ID` will change `ID` in both statements because they have the same underlying anonymous type.  
   
-```cs  
+```csharp  
 var companyIDs =  
     from c in companylist  
     select new { ID = c.ID, Name = c.Name};  

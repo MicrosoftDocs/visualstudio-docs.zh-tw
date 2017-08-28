@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e598b0f08bd0703bdec3b1abb380fb127df550ae
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 138cd3c911d9e97e16c5fbe64a3526101cece0b2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="share-the-unity-log-callback-with-vstu"></a>Share the Unity Log Callback with VSTU
@@ -42,7 +42,7 @@ Visual Studio Tools for Unity registers a log callback with Unity to be able to 
   
 ## <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using System;  
   
 using UnityEngine;  

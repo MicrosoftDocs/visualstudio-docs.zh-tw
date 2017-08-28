@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 95207f7d5abf65725436859971d83221e46e5344
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 76ff03498b0bb6953024f03a9535e47346da38b5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpreqifields"></a>BPREQI_FIELDS
@@ -62,7 +62,7 @@ enum enum_BPREQI_FIELDS {
 typedef DWORD BPREQI_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BPREQI_FIELDS {   
    BPREQI_BPLOCATION   = 0x0001,  
    BPREQI_LANGUAGE     = 0x0002,  

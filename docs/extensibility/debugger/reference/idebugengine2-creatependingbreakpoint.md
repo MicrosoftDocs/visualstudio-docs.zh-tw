@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cfe1e98b02c31907b1a9e2bf3acab4fb98c29ad7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 26a44b7c1449e767bca10793bd4602ea472a8a48
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
@@ -42,14 +42,14 @@ Creates a pending breakpoint in the debug engine (DE).
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreatePendingBreakpoint(   
    IDebugBreakpointRequest2*  pBPRequest,  
    IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```cs  
+```csharp  
 int CreatePendingBreakpoint(   
    IDebugBreakpointRequest2     pBPRequest,  
    out IDebugPendingBreakpoint2 ppPendingBP  

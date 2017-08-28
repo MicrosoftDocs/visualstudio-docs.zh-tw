@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f37bc822231380dd5dc5c07cdf0d93b13b919c88
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3610a9e61d6140fee11a6db4a30060fa02207981
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
@@ -42,7 +42,7 @@ This method gets extended information about a field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetExtendedInfo(   
    REFGUID guidExtendedInfo,  
    BYTE**  prgBuffer,  
@@ -50,7 +50,7 @@ HRESULT GetExtendedInfo(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExtendedInfo(  
    ref Guid guidExtendedInfo,   
    IntPtr[] prgBuffer,   

@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 938182d231b697ef84257dffdf49f7ea8b995840
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dea47c602059d35b639b60e07d5c86c49231930f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
@@ -43,13 +43,13 @@ Gets the document context that describes the position in the document that is to
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDocumentContext (   
    IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDocumentContext (   
    out IDebugDocumentContext2 ppDocContext  
 );  

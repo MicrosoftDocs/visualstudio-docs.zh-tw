@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f5c84eefdea08151353152141a6d6cf042a080a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9c7c91cd7e52c7201b135772977c4d5191608cad
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
@@ -42,13 +42,13 @@ Gets the code context that describes the location of this event.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCodeContext(   
    IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCodeContext(   
    out IDebugCodeContext2 ppCodeContext  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: dcc267d755bbb02591d81ac240e31e4f24245db9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 60eb5889f197af894dc07478a08ede828090f8c2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
@@ -42,14 +42,14 @@ This method gets displayable information about the field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetInfo(   
    FIELD_INFO_FIELDS dwFields,  
    FIELD_INFO* pFieldInfo  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetInfo(  
    enum_FIELD_INFO_FIELDS dwFields,  
    FIELD_INFO[] pFieldInfo  

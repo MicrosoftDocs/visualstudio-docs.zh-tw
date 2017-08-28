@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d5bfcdc6b98cb32767f16a4eea20e6092411fb73
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e37e40196fcffd76aa00b501a789b58ac0399f75
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Walkthrough: Customizing the insert, update, and delete behavior of entity classes
@@ -141,7 +141,7 @@ The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     Private NorthwindDataContext1 As New NorthwindDataContext  
     ```  
   
-    ```cs  
+    ```csharp  
     private NorthwindDataContext northwindDataContext1  
         = new NorthwindDataContext();  
   
@@ -153,7 +153,7 @@ The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     CustomerBindingSource.DataSource = NorthwindDataContext1.Customers  
     ```  
   
-    ```cs  
+    ```csharp  
     customerBindingSource.DataSource  
         = northwindDataContext1.Customers;  
   
@@ -178,7 +178,7 @@ The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
     NorthwindDataContext1.SubmitChanges()  
     ```  
   
-    ```cs  
+    ```csharp  
     northwindDataContext1.SubmitChanges();  
     ```  
   

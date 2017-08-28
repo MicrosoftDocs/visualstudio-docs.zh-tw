@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fc9cc9f23063fa9a94f200a0baa14b7953e06546
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0abbea4c880f3cec8969a4ece484d5b333bc8638
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
@@ -51,7 +51,7 @@ HRESULT GetTypeArguments(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeArguments(  
    uint          skip,  
    uint          count,  

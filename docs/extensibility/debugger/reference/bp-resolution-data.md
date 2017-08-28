@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 910e34723b99b95e1deb44b4396bd776270afcf3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f5be75214e9ab112cc3af17bd8bdcfae00083661
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpresolutiondata"></a>BP_RESOLUTION_DATA
@@ -42,7 +42,7 @@ Describes the result of binding a data breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_RESOLUTION_DATA {   
    BSTR              bstrDataExpr;  
    BSTR              bstrFunc;  
@@ -51,7 +51,7 @@ typedef struct _BP_RESOLUTION_DATA {
 } BP_RESOLUTION_DATA;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_RESOLUTION_DATA {   
    public string bstrDataExpr;  
    public string bstrFunc;  

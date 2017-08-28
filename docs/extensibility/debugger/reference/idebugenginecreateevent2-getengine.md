@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 62552141fdf363685d1a1338046a86ae85b5432b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c56f38e3a8961deba685cfb7be4b582be1b60c69
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenginecreateevent2getengine"></a>IDebugEngineCreateEvent2::GetEngine
@@ -42,13 +42,13 @@ Retrieves the object that represents the newly created debug engine (DE).
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEngine(   
    IDebugEngine2** pEngine  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetEngine(   
    out IDebugEngine2 pEngine  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5b853d8c63b6e0c2d4e6f6c0d573e9776f58e2cd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 50655e8d565fe08c4ea918d69f5eeb8780d43c55
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
@@ -42,7 +42,7 @@ Gets the disassembly stream for this program or a part of this program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDisassemblyStream(   
    DISASSEMBLY_STREAM_SCOPE   dwScope,  
    IDebugCodeContext2*        pCodeContext,  
@@ -50,7 +50,7 @@ HRESULT GetDisassemblyStream(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDisassemblyStream(   
    enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
    IDebugCodeContext2             pCodeContext,  

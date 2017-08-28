@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 404334708e3f3b36b779724b90a35b72111a16a7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 533365fcdaa14a3178809cf04116a4358cd0ba51
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="fieldkind"></a>FIELD_KIND
@@ -42,7 +42,7 @@ Specifies the kind of field contained in an [IDebugField](../../../extensibility
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND {   
    FIELD_KIND_NONE       = 0x00000000,  
   
@@ -91,7 +91,7 @@ enum enum_FIELD_KIND {
 typedef DWORD FIELD_KIND;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FIELD_KIND {  
    FIELD_KIND_NONE       = 0x00000000,  
   

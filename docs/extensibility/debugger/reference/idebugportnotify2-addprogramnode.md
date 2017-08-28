@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 07a344c59efebdd13591937b7136d4c000a84e57
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5292d0835d1f8295d3580c726e11e8a1a311eef8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
@@ -42,13 +42,13 @@ Registers a program that can be debugged with the port it is running on.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AddProgramNode(   
    IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
-```cs  
+```csharp  
 int AddProgramNode(   
    IDebugProgramNode2 pProgramNode  
 );  

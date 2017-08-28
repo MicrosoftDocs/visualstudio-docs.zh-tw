@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bd482214cbdfbb75ce48d7150afd2f451518e93d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c9ed64c1db1472e334333f3c2cb6d1bfb017c25
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
@@ -42,13 +42,13 @@ Attempts to determine why an auto-attach failed.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DiagnoseWebDebuggingError(  
    LPCWSTR pszUrl  
 );  
 ```  
   
-```cs  
+```csharp  
 int DiagnoseWebDebuggingError(  
    string pszUrl  
 );  

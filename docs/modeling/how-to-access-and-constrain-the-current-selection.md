@@ -28,10 +28,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b604773481c2b4ad64a91e08e857e25bd7a07207
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 73221c9dc178c5f9ba1621146f7b863507e0f1a3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>How to: Access and Constrain the Current Selection
@@ -76,7 +76,7 @@ When you write a command or gesture handler for your domain-specific language, y
   
 3.  Add the following properties to the command set class for you domain-specific language to determine what type of window is active.  
   
-    ```cs  
+    ```csharp  
     // using Microsoft.VisualStudio.Modeling.Shell;  
   
     // Returns true if the model designer is the active selection container;  
@@ -124,7 +124,7 @@ When you write a command or gesture handler for your domain-specific language, y
 ### <a name="example"></a>Example  
  The following code file creates a selection rule that expands the selection to include all instances of each of the domain shapes that was initially selected.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using Microsoft.VisualStudio.Modeling;  

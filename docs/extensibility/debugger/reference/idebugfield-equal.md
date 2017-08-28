@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b66dd6f8272221ec66cf2425883df6e591c416b0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 759043a8cd324ad393893474752beaa8615dbb62
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
@@ -42,13 +42,13 @@ This method compares this field with the specified field for equality.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Equal(   
    IDebugField* pField  
 );  
 ```  
   
-```cs  
+```csharp  
 int Equal(  
    IDebugField pField  
 );  

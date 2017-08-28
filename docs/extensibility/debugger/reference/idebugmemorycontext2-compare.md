@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7319d015e98eadc4aad0b5df902ed5e3d4dd2a5d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 775527fd695283b01878b64eae8a0051a3c7522b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
@@ -43,7 +43,7 @@ Compares the memory context to each context in the given array in the manner ind
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Compare(   
    CONTEXT_COMPARE        compare,  
    IDebugMemoryContext2** rgpMemoryContextSet,  
@@ -52,7 +52,7 @@ HRESULT Compare(
 );  
 ```  
   
-```cs  
+```csharp  
 int Compare(  
    enum_CONTEXT_COMPARE   compare,   
    IDebugMemoryContext2[] rgpMemoryContextSet,   

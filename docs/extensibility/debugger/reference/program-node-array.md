@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9768c4fdf392ad83277bfd7c77b63c59eab08737
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c99a11588cca832e15d82ff147f8900588494db6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
@@ -49,7 +49,7 @@ typedef struct tagPROGRAM_NODE_ARRAY {
 } PROGRAM_NODE_ARRAY;  
 ```  
   
-```cs  
+```csharp  
 public struct tagPROGRAM_NODE_ARRAY {  
    public uint                 dwCount;  
    public IDebugProgramNode2[] Members;  

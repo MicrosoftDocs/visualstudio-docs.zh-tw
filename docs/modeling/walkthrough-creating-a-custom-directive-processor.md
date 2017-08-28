@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 932b028d12dd999ec464b7f6c40fce11b5eb1210
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 449a8d80eef26935251c265b526d8aacd471d147
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Walkthrough: Creating a Custom Directive Processor
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/24/2017
   
  The code that the directive creates looks like the following:  
   
-```cs  
+```csharp  
 private System.Xml.XmlDocument document0Value;  
   
 public virtual System.Xml.XmlDocument Document0  
@@ -110,7 +110,7 @@ End Property
   
 3.  Replace the code in **Class1** with the following code. This code defines a CustomDirectiveProcessor class that inherits from the <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> class and implements the necessary methods.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.CodeDom;  
     using System.CodeDom.Compiler;  
@@ -761,7 +761,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
   
      The language of the text template does not have to match the language of the directive processor.  
   
-    ```cs  
+    ```csharp  
     <#@ assembly name="System.Xml" #>  
     <#@ template debug="true" #>  
     <#@ output extension=".txt" #>  
@@ -898,7 +898,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Additional open \<# and close #> tags separate the statement code from the HTML tags.  
   
-    ```cs  
+    ```csharp  
     <#@ assembly name="System.Xml" #>  
     <#@ template debug="true" #>  
     <#@ output extension=".htm" #>  

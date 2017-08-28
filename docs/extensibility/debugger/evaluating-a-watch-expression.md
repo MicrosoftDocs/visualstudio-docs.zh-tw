@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4e39bff4c9b300eec1970a3ad5a622d3a5d52cfc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5fb9d8981905cdb235cd50f71a80f0bfcac7ecf0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="evaluating-a-watch-expression"></a>Evaluating a Watch Expression
@@ -53,7 +53,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This is an implementation of the `IDebugParsedExpression::EvaluateSync` in managed code. The helper method `Tokenize` parses the expression into a parse tree. The helper function `EvalToken` converts the token to a value. The helper function `FindTerm` recursively traverses the parse tree, calling `EvalToken` for each node representing a value and applying any operations (addition or subtraction) in the expression.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     public class CParsedExpression : IDebugParsedExpression  

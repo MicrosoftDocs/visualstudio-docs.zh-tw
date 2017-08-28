@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 72f8df717961d782b6479c48315a841efcbe2bd2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dd4c9a72faec7d5b5142a8d10dd3ad6723e8fa64
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
@@ -42,13 +42,13 @@ Gets the memory context that represents the address of the value of the object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext(   
    IDebugMemoryContext2** pContext  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryContext(  
    ref IDebugMemoryContext2 pContext  
 );  

@@ -28,10 +28,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0c3ac35e15aa486c19e5e27688742c55f8286b8d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9364f111bc310b9d57bec88611b795ec22ee2ec7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testing SharePoint 2010 Applications with Coded UI Tests
@@ -72,7 +72,7 @@ Including coded UI tests in a SharePoint application lets you verify that the wh
   
  If you are recording actions on an empty cell, you must modify the code by double clicking on the cell and then performing a set text operation. This is needed because a click on the cell, followed by any keyboard action activates the `textarea` within the cell. Simply recording a `setvalue` on the empty cell would search for the `editbox` which is not present until the cell has been clicked. For example:  
   
-```cs  
+```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
 uiGridKeyboardInputEdit.Text=value;  
 ```  
@@ -81,14 +81,14 @@ uiGridKeyboardInputEdit.Text=value;
   
 1.  Go to cell initialization and make `RowIndex` and `ColumnIndex` primary properties:  
   
-    ```cs  
+    ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
 2.  Find the `HtmlDiv` child of the cell:  
   
-    ```cs  
+    ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
     {   
          if (String.IsNullOrEmpty(cell.InnerText)) return cell;   
@@ -104,13 +104,13 @@ uiGridKeyboardInputEdit.Text=value;
   
 3.  Add code for a mouse double-click action on `HtmlDiv`:  
   
-    ```cs  
+    ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
 4.  Add code to set text on `TextArea`:  
   
-    ```cs  
+    ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
     ```  
   

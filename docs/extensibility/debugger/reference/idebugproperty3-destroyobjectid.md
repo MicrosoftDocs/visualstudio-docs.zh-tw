@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cbea09405c1cc7f7f808d7dd8b5261b52291603f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 65dfccafc071e2cb73fd530fa9b15ac1503e203a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
@@ -48,7 +48,7 @@ HRESULT DestroyObjectID(
 );  
 ```  
   
-```cs  
+```csharp  
 int DestroyObjectID();  
 ```  
   

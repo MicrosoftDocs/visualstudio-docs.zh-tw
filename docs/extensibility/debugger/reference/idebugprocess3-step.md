@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c11bdfa9d723dd01543b816d4cf8c84e9bf902de
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5b527440083ea02890856892f9954a45cb726627
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3step"></a>IDebugProcess3::Step
@@ -53,7 +53,7 @@ HRESULT Step(
 );  
 ```  
   
-```cs  
+```csharp  
 int Step(  
    IDebugThread2 pThread,   
    enum_STEPKIND sk,   

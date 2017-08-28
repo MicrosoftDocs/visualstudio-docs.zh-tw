@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bde584e57e285886ae6d80ebe5afb699ceee70a3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5cfe28abb387bf6b2500286bbc6c56943bdbe810
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
@@ -41,7 +41,7 @@ Retrieves the number of value strings to display for the specified property or f
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetValueDisplayStringCount (  
    DWORD         displayKind,   
    IDebugField * propertyOrField,   
@@ -49,7 +49,7 @@ HRESULT GetValueDisplayStringCount (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetValueDisplayStringCount (  
    uint        displayKind,   
    IDebugField propertyOrField,   

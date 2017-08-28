@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f448e24546d07c338d3b1839fa0cd3c2588064e6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b85fd3dc361cfea138db53ad6edaae9978c72939
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Walkthrough: Create a Simple Application with Visual C# or Visual Basic
@@ -230,7 +230,7 @@ By completing this walkthrough, you'll become familiar with many of the tools, d
   
      For Visual C#, the event handler should look like this:  
   
-    ```cs  
+    ```csharp  
     private void Button_Click_1(object sender, RoutedEventArgs e)  
     {  
   

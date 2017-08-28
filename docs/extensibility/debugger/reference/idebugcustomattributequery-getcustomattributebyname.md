@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8421d2867bc659931f4ff778fa5d2105ce7a1ea2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 18791a4ff27a6704a9f40bf2b0995bc916b0d1b6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
@@ -41,7 +41,7 @@ Retrieves a custom attribute given its name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCustomAttributeByName(  
    LPCOLESTR pszCustomAttributeName,  
    BYTE*     ppBlob,  
@@ -49,7 +49,7 @@ HRESULT GetCustomAttributeByName(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCustomAttributeByName(  
    string    pszCustomAttributeName,  
    ref int[] ppBlob,  
@@ -73,7 +73,7 @@ int GetCustomAttributeByName(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugClassFieldSymbol** object that exposes the [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
     LPCOLESTR pszCustomAttributeName,  
     BYTE *pBlob,  

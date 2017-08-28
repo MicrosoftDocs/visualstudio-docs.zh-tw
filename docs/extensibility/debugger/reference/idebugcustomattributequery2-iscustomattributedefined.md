@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bc9b0b854e1643478e633c02a1edf69f6967b923
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4ba562b125d9a619957c460a32ce00b8c2698e30
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
@@ -42,13 +42,13 @@ Determines whether a custom attribute exists by name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsCustomAttributeDefined(   
    LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsCustomAttributeDefined(  
    [In] string pszCustomAttributeName  
 );  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 61923b849e4d6f7a08b215e4593aa666c5dc94e8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 312c06295492ac9bd1136ea7de9a0399f247c365
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="registering-and-unregistering-vspackages"></a>Registering and Unregistering VSPackages
@@ -44,7 +44,7 @@ You use attributes to register a VSPackage, but
   
  The following code shows how to use the standard registration attributes to register your VSPackage.  
   
-```cs  
+```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
 [Guid("0B81D86C-0A85-4f30-9B26-DD2616447F95")]  
 public sealed class BasicPackage : Package  
@@ -76,7 +76,7 @@ In certain cases you may need to create a new registration attribute for your ex
   
 The following code shows how to create a new registration attribute.  
   
-```cs  
+```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
     public class CustomRegistrationAttribute : RegistrationAttribute  
     {  
@@ -89,7 +89,7 @@ The following code shows how to create a new registration attribute.
   
 In the following code, the custom attribute creates a **Custom** subkey under the key for the VSPackage that is being registered.  
   
-```cs  
+```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  
@@ -115,7 +115,7 @@ public override void Unregister(RegistrationContext context)
   
 You can add custom values to an existing key. The following code shows how to add a new value to a VSPackage registration key.  
   
-```cs  
+```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
 {  
     Key packageKey = null;  

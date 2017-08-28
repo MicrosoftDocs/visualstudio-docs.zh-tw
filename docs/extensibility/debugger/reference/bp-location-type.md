@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e3bcc889f512a0216429516f4e33c9128deaaa89
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9c3360a18f206c6b28d7fcf60f227579e99e6967
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
@@ -42,7 +42,7 @@ Specifies the location type of the breakpoint for a breakpoint request.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  
@@ -63,7 +63,7 @@ enum enum_BP_LOCATION_TYPE {
 typedef DWORD BP_LOCATION_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_LOCATION_TYPE {   
    BPLT_NONE               = 0x00000000,  
    BPLT_FILE_LINE          = 0x00010000,  

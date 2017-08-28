@@ -16,10 +16,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1f63a78e0770901121c1238e84e230035ee99458
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="customizing-element-creation-and-movement"></a>Customizing Element Creation and Movement
@@ -166,7 +166,7 @@ The role of an Element Merge Directive
   
 5.  Create a new code file in the **Dsl** project. Replace its content with the following code and change the namespace to the namespace of your project.  
   
-    ```cs  
+    ```csharp  
     using Microsoft.VisualStudio.Modeling;  
   
     namespace Company.ElementMergeSample // EDIT.  
@@ -233,7 +233,7 @@ The role of an Element Merge Directive
   
 6.  In a new code file, write a partial class for the receiving class, and override the `MergeRelate` method. Remember to call the base method. For example:  
   
-    ```cs  
+    ```csharp  
     partial class ExampleModel  
     {  
       /// <summary>  

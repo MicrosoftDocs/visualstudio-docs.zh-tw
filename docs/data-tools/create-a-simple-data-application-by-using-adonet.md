@@ -30,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: a70efa7c969ee0bec6975278b877d4ab69a0d039
-ms.openlocfilehash: 916452585d8474338f91e3528e2adc0d578b6ad8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b9ddc58b4205be5928f366ae82d4e0512eb9b767
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Create a simple data application by using ADO.NET
@@ -168,8 +168,7 @@ The Navigation form opens when you run the application. The **Add an account** b
 #### <a name="add-code-for-the-navigation-form-logic"></a>Add code for the Navigation form logic   
  In the code page for the Navigation form, complete the method bodies for the three button click event handlers as shown in the following code.  
   
-[!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)] 
-
+[!code-csharp[Navigation#1](../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs#1)]  
 [!code-vb[Navigation#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb#1)]   
   
 ### <a name="newcustomer-form"></a>NewCustomer form  
@@ -183,10 +182,9 @@ To complete the NewCustomer form logic, follow these steps.
 
 1. Bring the ```System.Data.SqlClient``` namespace into scope so that you don't have to fully qualify the names of its members.  
 
-     ```cs  
+     ```csharp  
      using System.Data.SqlClient  
      ```  
-
      ```vb  
      Imports System.Data.SqlClient  
      ```  
@@ -194,13 +192,11 @@ To complete the NewCustomer form logic, follow these steps.
 2. Add some variables and helper methods to the class as shown in the following code.  
 
      [!code-csharp[NewCustomer#1](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#1)]  
-
      [!code-vb[NewCustomer#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#1)]  
 
 3. Complete the method bodies for the four button click event handlers as shown in the following code.  
 
-     [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]    
-
+     [!code-csharp[NewCustomer#2](../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs#2)]  
      [!code-vb[NewCustomer#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb#2)]  
 
 ### <a name="fillorcancel-form"></a>FillOrCancel form  
@@ -213,11 +209,10 @@ To complete the FillOrCancel form logic, follow these steps.
 
 1. Bring the following two namespaces into scope so that you don't have to fully qualify the names of their members.  
 
-     ```cs  
+     ```csharp  
      using System.Data.SqlClient;  
      using System.Text.RegularExpressions;  
      ```  
-
      ```vb  
      Imports System.Data.SqlClient  
      Imports System.Text.RegularExpressions  
@@ -226,13 +221,11 @@ To complete the FillOrCancel form logic, follow these steps.
 2. Add a variable and helper method to the class as shown in the following code.  
 
      [!code-csharp[FillOrCancel#1](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#1)]  
-
      [!code-vb[FillOrCancel#1](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#1)]  
 
 3. Complete the method bodies for the four button click event handlers as shown in the following code.  
 
      [!code-csharp[FillOrCancel#2](../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs#2)]  
-
      [!code-vb[FillOrCancel#2](../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb#2)]  
 
 ##  <a name="BKMK_testyourapplication"></a> Test your application  

@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 43134fc58872d9a5b006119d7437c76c6c820597
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 90351c8d5a492a5642568691893f61a7001861cb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Using stubs to isolate parts of your application from each other for unit testing
@@ -87,7 +87,7 @@ ms.lasthandoff: 08/24/2017
   
  Let's start this discussion with a motivating example, the one in the diagram. The class StockAnalyzer reads share prices and generates some interesting results. It has some public methods, which we want to test. To keep things simple, let's just look at one of those methods, a very simple one that reports the current price of a particular share. We want to write a unit test of that method. Here's the first draft of a test:  
   
-```cs  
+```csharp  
 [TestMethod]  
 public void TestMethod1()  
 {  
@@ -115,7 +115,7 @@ End Sub
   
  Another problem might be that the StockFeed component, which is used by the StockAnalyzer, is still under development. Here's the first draft of the code of the method under test:  
   
-```cs  
+```csharp  
 public int GetContosoPrice()  
 {  
     var stockFeed = new StockFeed(); // NOT RECOMMENDED  
@@ -144,7 +144,7 @@ End Function
   
  The StockAnalyzer code can therefore be improved by decoupling it from the StockFeed by using an interface like this:  
   
-```cs  
+```csharp  
 public interface IStockFeed  
 {  
     int GetSharePrice(string company);  
@@ -209,7 +209,7 @@ analyzer = new StockAnalyzer(new StockFeed())
   
 ###  <a name="WriteTest"></a> Write your test with stubs  
   
-```cs  
+```csharp  
 [TestClass]  
 class TestStockAnalyzer  
 {  
@@ -272,7 +272,7 @@ End Class
 ###  <a name="mocks"></a> Verifying parameter values  
  You can verify that when your component makes a call to another component, it passes the correct values. You can either place an assertion in the stub, or you can store the value and verify it in the main body of the test. For example:  
   
-```cs  
+```csharp  
 [TestClass]  
 class TestMyComponent  
 {  
@@ -352,7 +352,7 @@ End Class
 ###  <a name="BKMK_Methods"></a> Methods  
  As described in the example, methods can be stubbed by attaching a delegate to an instance of the stub class. The name of the stub type is derived from the names of the method and parameters. For example, given the following `IMyInterface` interface and method `MyMethod`:  
   
-```cs  
+```csharp  
 // application under test  
 interface IMyInterface   
 {  
@@ -362,7 +362,7 @@ interface IMyInterface
   
  We attach a stub to `MyMethod` that always returns 1:  
   
-```cs  
+```csharp  
 // unit test code  
   var stub = new StubIMyInterface ();  
   stub.MyMethodString = (value) => 1;  
@@ -374,7 +374,7 @@ interface IMyInterface
 ###  <a name="BKMK_Properties"></a> Properties  
  Property getters and setters are exposed as separate delegates and can be stubbed separately. For example, consider the `Value` property of `IMyInterface`:  
   
-```cs  
+```csharp  
 // code under test  
 interface IMyInterface   
 {  
@@ -385,7 +385,7 @@ interface IMyInterface
   
  We attach delegates to the getter and setter of `Value` to simulate an auto-property:  
   
-```cs  
+```csharp  
 // unit test code  
 int i = 5;  
 var stub = new StubIMyInterface();  
@@ -399,7 +399,7 @@ stub.ValueSet = (value) => i = value;
 ###  <a name="BKMK_Events"></a> Events  
  Events are exposed as delegate fields. As a result, any stubbed event can be raised simply by invoking the event backing field. Let's consider the following interface to stub:  
   
-```cs  
+```csharp  
 // code under test  
 interface IWithEvents   
 {  
@@ -409,7 +409,7 @@ interface IWithEvents
   
  To raise the `Changed` event, we simply invoke the backing delegate:  
   
-```cs  
+```csharp  
 // unit test code  
   var withEvents = new StubIWithEvents();  
   // raising Changed  
@@ -420,7 +420,7 @@ interface IWithEvents
 ###  <a name="BKMK_Generic_methods"></a> Generic methods  
  It's possible to stub generic methods by providing a delegate for each desired instantiation of the method. For example, given the following interface containing a generic method:  
   
-```cs  
+```csharp  
 // code under test  
 interface IGenericMethod   
 {  
@@ -430,7 +430,7 @@ interface IGenericMethod
   
  you could write a test that stubs the `GetValue<int>` instantiation:  
   
-```cs  
+```csharp  
 // unit test code  
 [TestMethod]  
 public void TestGetValue()   
@@ -448,7 +448,7 @@ public void TestGetValue()
 ###  <a name="BKMK_Partial_stubs"></a> Stubs of virtual classes  
  In the previous examples, the stubs have been generated from interfaces. You can also generate stubs from a class that has virtual or abstract members. For example:  
   
-```cs  
+```csharp  
 // Base class in application under test  
     public abstract class MyClass  
     {  
@@ -462,7 +462,7 @@ public void TestGetValue()
   
  In the stub generated from this class, you can set delegate methods for DoAbstract() and DoVirtual(), but not DoConcrete().  
   
-```cs  
+```csharp  
 // unit test  
   var stub = new Fakes.MyClass();  
   stub.DoAbstractString = (x) => { Assert.IsTrue(x>0); };  
@@ -472,7 +472,7 @@ public void TestGetValue()
   
  If you do not provide a delegate for a virtual method, Fakes can either provide the default behavior, or it can call the method in the base class. To have the base method called, set the `CallBase` property:  
   
-```cs  
+```csharp  
 // unit test code  
 var stub = new Fakes.MyClass();  
 stub.CallBase = false;  
@@ -498,7 +498,7 @@ Assert.AreEqual(43,stub.DoVirtual(1));
   
  The behavior can be changed at any time by setting the `InstanceBehavior` property on any stub instance. For example, the following snippet changes a behavior that does nothing or returns the default value of the return type: `default(T)`:  
   
-```cs  
+```csharp  
 // unit test code  
 var stub = new StubIFileSystem();  
 // return default(T) or do nothing  
@@ -507,7 +507,7 @@ stub.InstanceBehavior = StubsBehaviors.DefaultValue;
   
  The behavior can also be changed globally for all stub objects for which the behavior has not been set by setting the `StubsBehaviors.Current` property:  
   
-```cs  
+```csharp  
 // unit test code  
 //change default behavior for all stub instances  
 //where the behavior has not been set  

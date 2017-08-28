@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 10bcd50f0c285640d5e13f5306f4863e73152d6b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2df884c0e6e6945ff22da6ff38dfef2cc0d63d29
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="messagetype"></a>MESSAGETYPE
@@ -42,7 +42,7 @@ Specifies the message type and reason.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  
@@ -54,7 +54,7 @@ enum enum_MESSAGETYPE {
 typedef DWORD MESSAGETYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_MESSAGETYPE {   
    MT_OUTPUTSTRING      = 0x0000001,  
    MT_MESSAGEBOX        = 0x00000002,  

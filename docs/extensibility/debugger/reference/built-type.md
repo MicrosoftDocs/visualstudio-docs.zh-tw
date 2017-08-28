@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 802289fc6676d1f323a5e32a3032d5799697a2f0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b934ec1b4701a174db5b90dd0b24c3dcc02ae759
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="builttype"></a>BUILT_TYPE
@@ -42,7 +42,7 @@ This structure specifies information about a field type taken from metadata.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_BUILT {  
    ULONG32      ulAppDomainID;  
    GUID         guidModule;  
@@ -50,7 +50,7 @@ typedef struct _tagTYPE_BUILT {
 } BUILT_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public struct BUILT_TYPE {  
    public uint        ulAppDomainID;  
    public Guid        guidModule;  

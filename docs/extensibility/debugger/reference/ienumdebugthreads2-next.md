@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 07be7ec4535cdb5882a0baf45e73985ef1256786
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 446f57d098ff5f8f85e7c061715eaae9ea3eb17a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
@@ -42,7 +42,7 @@ Returns the next set of elements from the enumeration.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG           celt,  
    IDebugThread2** rgelt,  
@@ -50,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```cs  
+```csharp  
 int Next(  
    uint            celt,  
    IDebugThread2[] rgelt,  

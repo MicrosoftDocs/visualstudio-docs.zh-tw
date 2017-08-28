@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 00f11814f160afc63db19c744b7c3cecebea8c0e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c721a1ee298eba5e948b42c29d9746e61122008b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
@@ -42,14 +42,14 @@ This method obtains the name of the enumeration constant given its value.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetStringFromValue(  
    ULONGLONG value,  
    BSTR*     pbstrValue  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetStringFromValue(  
    ulong      value,  
    out string pbstrValue  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 174b1c43f1671621f845b96c55850cc30be07287
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e23d7c47226050e107444448857ac2e2bc9bb7a7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
@@ -42,13 +42,13 @@ Notifies receiver of the event that the document attributes have been updated.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT onUpdateDocumentAttributes(   
    TEXT_DOC_ATTR_2 textdocattr  
 );  
 ```  
   
-```cs  
+```csharp  
 int onUpdateDocumentAttributes(   
    enum_TEXT_DOC_ATTR_2 textdocattr  
 );  

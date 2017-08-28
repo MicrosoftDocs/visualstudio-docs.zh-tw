@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 71c2b33190cfaf39da2806008ccd4d9626475253
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8ff212816453d257829c7c1a802cf8669f0482c0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Design-Time Code Generation by using T4 Text Templates
@@ -110,7 +110,7 @@ Design-time T4 text templates let you generate program code and other files in y
   
 1.  Change the content of the `.tt` file:  
   
-    ```cs  
+    ```csharp  
     <#@ template hostspecific="false" language="C#" #>  
     <#@ output extension=".txt" #>  
     <#int top = 10;  
@@ -168,7 +168,7 @@ Design-time T4 text templates let you generate program code and other files in y
   
 2.  Insert code that will generate the solution code that you require. For example, if you want to generate three integer field declarations in a class:  
   
-    ```cs  
+    ```csharp  
   
               <#@ template debug="false" hostspecific="false" language="C#" #>  
     <#@ output extension=".cs" #>  
@@ -240,7 +240,7 @@ Design-time T4 text templates let you generate program code and other files in y
   
  For example, after importing **System.IO**, you could write:  
   
-```cs  
+```csharp  
   
       <# var properties = File.ReadLines("C:\\propertyList.txt");#>  
 ...  
@@ -265,7 +265,7 @@ Design-time T4 text templates let you generate program code and other files in y
   
  Then you can write, for example:  
   
-```cs  
+```csharp  
 <# string fileName = this.Host.ResolvePath("filename.txt");  
   string [] properties = File.ReadLines(filename);  
 #>  

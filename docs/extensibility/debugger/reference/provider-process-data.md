@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 196b4c97132fce1d824f3af2f38050b94764abfb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 950de8d21eac1688f5aa6139ca79484d0d000d96
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
@@ -42,7 +42,7 @@ This structure provides information about processes running on a machine.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagPROVIDER_PROCESS_DATA {  
    PROVIDER_FIELDS    Fields;  
    PROGRAM_NODE_ARRAY ProgramNodes;  
@@ -50,7 +50,7 @@ typedef struct tagPROVIDER_PROCESS_DATA {
 } PROVIDER_PROCESS_DATA;  
 ```  
   
-```cs  
+```csharp  
 public struct PROVIDER_PROCESS_DATA {  
    public uint               Fields;  
    public PROGRAM_NODE_ARRAY ProgramNodes;  

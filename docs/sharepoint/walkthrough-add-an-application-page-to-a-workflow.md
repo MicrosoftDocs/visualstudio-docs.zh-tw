@@ -23,10 +23,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4ba8eaefb9500c70f60ab9046f6af57fb2f65538
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c06cccc5a3bd846c1b8c3c75986e6ed9637b7e82
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Walkthrough: Add an Application Page to a Workflow
@@ -67,7 +67,7 @@ ms.lasthandoff: 08/24/2017
       workflowProperties.InitiationData  
     ```  
   
-    ```cs  
+    ```csharp  
     createTask1_TaskProperties1.ExtendedProperties["Outcome"] =   
       workflowProperties.InitiationData;  
     ```  
@@ -125,7 +125,7 @@ ms.lasthandoff: 08/24/2017
     Imports Microsoft.SharePoint.Navigation  
     ```  
   
-    ```cs  
+    ```csharp  
     using System;  
     using Microsoft.SharePoint;  
     using Microsoft.SharePoint.WebControls;  
@@ -210,7 +210,7 @@ ms.lasthandoff: 08/24/2017
     End Try  
     ```  
   
-    ```cs  
+    ```csharp  
     try  
     {  
         // Reference the Tasks list on the SharePoint site.  

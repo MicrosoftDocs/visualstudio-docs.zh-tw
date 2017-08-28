@@ -35,10 +35,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cc31ee5c559478e5c1faefc485e02f022f98caa5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eb1e4d30bb71fffc1de83c9c77e089ac8e912f0e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Neutral Resources Languages for Localization
@@ -52,7 +52,7 @@ The <xref:System.Resources.NeutralResourcesLanguageAttribute> class specifies th
   
 ```  
   
-```cs  
+```csharp  
 // Set neutral resources language for assembly.  
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  

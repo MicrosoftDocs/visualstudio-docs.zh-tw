@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: db6b71330152616cf4923f4351aed6b286a31c76
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e635c30b6dc18f1d76a558848d4a2668d9f29411
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>How to: Add validation to entity classes
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/24/2017
   
          Type `partial` and then a space to access the list of available partial methods. Click the column-changing method for the column you want to add validation for. The following code resembles code that is generated when you select a column-changing partial method:  
   
-        ```cs  
+        ```csharp  
         partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
             {  
                throw new System.NotImplementedException();  
@@ -128,7 +128,7 @@ ms.lasthandoff: 08/24/2017
   
     2.  Type `partial` and then a space to access the list of available partial methods. Click the update method for the class you want to add validation for. The following code resembles code that is generated when you select an `Update`*CLASSNAME* partial method:  
   
-        ```cs  
+        ```csharp  
         partial void UpdateCLASSNAME(CLASSNAME instance)  
         {  
             if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  

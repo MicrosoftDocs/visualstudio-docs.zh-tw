@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1e88150115b3ac1f6a293df4249fc9f4e72ff339
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 933df0f375648f94e7ea9545bee136c88dea78a8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="debugaddressunion"></a>DEBUG_ADDRESS_UNION
@@ -60,7 +60,7 @@ typedef struct _tagDEBUG_ADDRESS_UNION {
 } DEBUG_ADDRESS_UNION;  
 ```  
   
-```cs  
+```csharp  
 public struct DEBUG_ADDRESS_UNION {  
    public ADDRESS_KIND dwKind;  
    public IntPtr       unionmember;  
@@ -127,7 +127,7 @@ public struct DEBUG_ADDRESS_UNION {
 ## <a name="example"></a>Example  
  This example shows how to interpret one kind of address (`METADATA_ADDRESS_ARRAYELEM`) of the `DEBUG_ADDRESS_UNION` structure in C#. The remaining elements can be interpreted in exactly the same way.  
   
-```cs  
+```csharp  
 using System;  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio.Debugger.Interop;  

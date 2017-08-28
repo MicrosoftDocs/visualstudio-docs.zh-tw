@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b6f6c828328cefd57589ce84bdd9c8b5fe75eb4a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 583787bbff6b397a04fcd66a6a0fc24244f6baba
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
@@ -41,7 +41,7 @@ Retrieves the constraints that are associated with this generic parameter.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetConstraints(  
    ULONG32       cConstraints,  
    IDebugField** ppConstraints,  
@@ -49,7 +49,7 @@ HRESULT GetConstraints(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetConstraints(  
    uint              cConstraints,  
    out IDebugField[] ppConstraints,  
@@ -73,7 +73,7 @@ int GetConstraints(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugGenericParamFieldType** object that exposes the [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
     ULONG32 cConstraints,  
     IDebugField** ppConstraints,  

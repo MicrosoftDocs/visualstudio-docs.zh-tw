@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6131dcf58e111ba0ce8c7328ac4c3f63c76ff23b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a76f02a1edd4a51d28e6667a9662d8db8c570068
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
@@ -42,13 +42,13 @@ This method gets the container of a field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetContainer(   
    IDebugContainerField** ppContainerField  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetContainer(  
    out IDebugContainerField ppContainerField  
 );  

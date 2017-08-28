@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 915c1b677ed6efc1e2a7239d2c61bd0604c71569
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4275e135e4be176a0f182f0d8b374861b93af845
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
@@ -42,7 +42,7 @@ Specifies modifiers for a field type.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_MODIFIERS {   
    FIELD_MOD_NONE             = 0x00000000,  
   
@@ -81,7 +81,7 @@ enum enum_FIELD_MODIFIERS {
 typedef DWORD FIELD_MODIFIERS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FIELD_MODIFIERS {  
    FIELD_MOD_NONE             = 0x00000000,  
   

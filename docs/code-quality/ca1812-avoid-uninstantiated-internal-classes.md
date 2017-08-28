@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2c36323e4eba939bed8d9a71b9c6f5bfd3ea7f5d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 831d1287c575e733ddd6f37acd2e3a95d06ebdc6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Avoid uninstantiated internal classes
@@ -89,7 +89,7 @@ ms.lasthandoff: 08/24/2017
   
 -   The class is passed as a generic type parameter that has a new constraint. For example, the following example will raise this rule.  
   
-    ```cs  
+    ```csharp  
     internal class MyClass  
     {     
         public DoSomething()     

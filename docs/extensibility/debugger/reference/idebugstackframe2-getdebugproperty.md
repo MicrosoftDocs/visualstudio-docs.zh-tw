@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6592ecfbf38f190cdaeac2c2f494a390babc8c99
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ddd242ae3bd789bd90edf995fe00946e5050aedf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
@@ -42,13 +42,13 @@ Gets a description of the properties of a stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDebugProperty (   
    IDebugProperty2** ppDebugProp  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDebugProperty (   
    out IDebugProperty2 ppDebugProp  
 );  

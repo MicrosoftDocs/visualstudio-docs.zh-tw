@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9ce17d4a104d41d17f2ba0703afbafb5dc51840c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 71aa2ad915e78d695f9f714a6d4c9b6cd1ae4cfb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
@@ -42,7 +42,7 @@ Specifies what actions to take when intercepting exceptions.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
    IEA_INTERCEPT = 0x0001  
@@ -50,7 +50,7 @@ enum enum_INTERCEPT_EXCEPTION_ACTION
 typedef DWORD INTERCEPT_EXCEPTION_ACTION;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
    IEA_INTERCEPT = 0x0001  

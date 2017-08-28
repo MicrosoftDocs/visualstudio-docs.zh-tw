@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 26191dce0d929893bd929c7cc5cdf44d2c7e0b38
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d291bcb2b15d0ebe6447e016a728ce8a0f377c15
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
@@ -41,7 +41,7 @@ Retrieves the document checksum and algorithm identifier given the maximum numbe
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksumAndAlgorithmId(   
    GUID  *pRetVal,  
    ULONG cMaxBytes,  
@@ -50,7 +50,7 @@ HRESULT GetChecksumAndAlgorithmId(
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetChecksumAndAlgorithmId(   
    out Guid pRetVal,  
    uint     cMaxBytes,  
@@ -78,7 +78,7 @@ public int GetChecksumAndAlgorithmId(
 ## <a name="example"></a>Example  
  The following example uses this method to get the checksum and algorithm for a document.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)  
 {  
     HRESULT hRes = E_FAIL;  

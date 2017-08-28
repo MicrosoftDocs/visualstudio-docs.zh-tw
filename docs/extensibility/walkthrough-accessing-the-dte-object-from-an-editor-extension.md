@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b8a44b149fe8adfcbcb7ef2d66e8b95f23378bdd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ff1db3071f5dc7117bf7b277ff2a4da3841e3202
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-accessing-the-dte-object-from-an-editor-extension"></a>Walkthrough: Accessing the DTE Object from an Editor Extension
@@ -57,7 +57,7 @@ In VSPackages, you can get the DTE object by calling the <xref:Microsoft.VisualS
   
 3.  Go to the DTETest.cs file, and add the following `using` directives:  
   
-    ```cs  
+    ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     using Microsoft.VisualStudio.Shell;  
@@ -66,7 +66,7 @@ In VSPackages, you can get the DTE object by calling the <xref:Microsoft.VisualS
   
 4.  In the `GetDTEProvider` class, import a <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider>.  
   
-    ```cs  
+    ```csharp  
     [Import]  
     internal SVsServiceProvider ServiceProvider = null;  
   
@@ -74,7 +74,7 @@ In VSPackages, you can get the DTE object by calling the <xref:Microsoft.VisualS
   
 5.  In the `GetClassifier()` method, add the following code.  
   
-    ```cs  
+    ```csharp  
     DTE dte = (DTE)ServiceProvider.GetService(typeof(DTE));  
   
     ```  

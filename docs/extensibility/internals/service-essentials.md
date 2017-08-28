@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 418610c8de05266ae0f9503f6b31421a27deb23a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0b78b5f9bf1fb6d9c92657b99e6d21b58cab2728
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="service-essentials"></a>Service Essentials
@@ -62,7 +62,7 @@ A service is a contract between two VSPackages. One VSPackage provides a specifi
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
     ```  
   
-    ```cs  
+    ```csharp  
     GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
     ```  
   
@@ -96,7 +96,7 @@ Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> wor
   
 -   Insert this code in the constructor, tool window, or control container:  
   
-    ```cs  
+    ```csharp  
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;
         if (log == null) return;
     ```  

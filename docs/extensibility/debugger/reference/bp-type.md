@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 708a933944a081a8a49b329eed7a8d2984ad85c3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 85c01d4ef648769bd821217d51aafcfb8d07381b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bptype"></a>BP_TYPE
@@ -42,7 +42,7 @@ Specifies whether the breakpoint is at a code location, is a data location, or i
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  
@@ -52,7 +52,7 @@ enum enum_BP_TYPE {
 typedef DWORD BP_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_TYPE {   
    BPT_NONE    = 0x0000,  
    BPT_CODE    = 0x0001,  

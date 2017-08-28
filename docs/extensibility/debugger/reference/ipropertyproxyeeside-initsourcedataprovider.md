@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 023f5a8b68bc1d570d3d8eea81328f745bb7df9e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dd7b285c5f81e03ce5c6b67d1eb9d37c19cfc56e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
@@ -42,13 +42,13 @@ Initializes the source data for this object and returns an object containing the
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT InitSourceDataProvider(  
    IEEDataStorage** dataOut  
 );  
 ```  
   
-```cs  
+```csharp  
 int InitSourceDataProvider(  
    out IEEDataStorage dataOut  
 );  

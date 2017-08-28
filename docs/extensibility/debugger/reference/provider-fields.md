@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 281ff0ecb84f0bcdf464b4b7919a84e58f13b5d5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 809e77e8caee46ef4d15701cc61eb6df464067e2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
@@ -42,7 +42,7 @@ Specifies properties associated with a program provider.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PROVIDER_FIELDS {  
    PFIELD_PROGRAM_NODES       = 0x01,  
    PFIELD_IS_DEBUGGER_PRESENT = 0x02  
@@ -50,7 +50,7 @@ enum enum_PROVIDER_FIELDS {
 typedef DWORD PROVIDER_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PROVIDER_FIELDS {  
    PFIELD_PROGRAM_NODES       = 0x01,  
    PFIELD_IS_DEBUGGER_PRESENT = 0x02  

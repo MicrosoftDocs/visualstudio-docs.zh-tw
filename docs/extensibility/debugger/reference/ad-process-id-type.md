@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5d47e901dd3c0236641a558ab8520b09e246adb5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 694582e69e19f155842e13e5f23314aa244d72b4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
@@ -42,7 +42,7 @@ Specifies how to interpret a process ID in the [AD_PROCESS_ID](../../../extensib
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_AD_PROCESS_ID {  
    AD_PROCESS_ID_SYSTEM = 0,  
    AD_PROCESS_ID_GUID   = 1  
@@ -50,7 +50,7 @@ enum enum_AD_PROCESS_ID {
 typedef DWORD AD_PROCESS_ID_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_AD_PROCESS_ID {  
    AD_PROCESS_ID_SYSTEM = 0,  
    AD_PROCESS_ID_GUID   = 1  

@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9999709a1185834224e273682a9eaaf4a789f75f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6a14023a35884ed742535872a649927770e93072
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Walkthrough: Creating a Custom Text Template Host
@@ -71,7 +71,7 @@ A *text template**host* provides an environment that enables the *text template 
   
 3.  Replace the code in the Program.cs or Module1.vb file with the following code:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.IO;  
     using System.CodeDom.Compiler;  
@@ -748,7 +748,7 @@ A *text template**host* provides an environment that enables the *text template 
     > [!NOTE]
     >  The programming language of the text template does not have to match that of the custom host.  
   
-    ```cs  
+    ```csharp  
     Text Template Host Test  
   
     <#@ template debug="true" #>  

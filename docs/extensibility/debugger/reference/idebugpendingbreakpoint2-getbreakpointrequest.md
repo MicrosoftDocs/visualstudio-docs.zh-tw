@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6d8b434fae30848eccc522302e439bb00a7884cc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 36c9c93eb014668665c3692e61bb2a1a1b47a999
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
@@ -43,13 +43,13 @@ Gets the breakpoint request that was used to create this pending breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetBreakpointRequest(   
    IDebugBreakpointRequest2** ppBPRequest  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetBreakpointRequest(   
    out IDebugBreakpointRequest2 ppBPRequest  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1f56dd1560045143d155825978eb152906accdf1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 18c88ee00372b8669aa700824c225afacc4c48bb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3getdebugreason"></a>IDebugProcess3::GetDebugReason
@@ -48,7 +48,7 @@ HRESULT GetDebugReason(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDebugReason(  
    out enum_DEBUG_REASON pReason  
 );  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e3b398e69db2cd16e9f8f277265ac100e48e7681
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0d8bd772e752134a41de1edbb2888703c3ebf42d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
@@ -42,7 +42,7 @@ Enables automatic attaching for the specified debug engines.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnableAutoAttach(  
    GUID*     rgguidSpecificEngines,  
    DWORD     celtSpecificEngines,  
@@ -51,7 +51,7 @@ HRESULT EnableAutoAttach(
 );  
 ```  
   
-```cs  
+```csharp  
 int EnableAutoAttach(  
    Guid[]     rgguidSpecificEngines,  
    uint       celtSpecificEngines,  

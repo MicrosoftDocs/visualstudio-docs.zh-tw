@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 84f20e6f253a4af45ed885594385f66f3fe9749e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9d44703c318e03dd464b122b448454e304fb72f3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
@@ -48,7 +48,7 @@ HRESULT GetHostingProcessLanguage(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetHostingProcessLanguage(  
    out Guid pguidLang  
 );  

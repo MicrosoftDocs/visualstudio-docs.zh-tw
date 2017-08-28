@@ -1,5 +1,5 @@
 ---
-title: "SccCheckin 函式 |Microsoft 文件"
+title: SccCheckin Function | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e8bfa87246bc866a251951e4700b796d833dd63f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b082ca831c17dcab3fbc95f8dd547da23a1f8982
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="scccheckin-function"></a>SccCheckin 函式
-此函式先前已簽出將檔案簽入原始檔控制系統，儲存所做的變更和建立新的版本。 以計數和簽入的檔案名稱的陣列，會呼叫此函數。  
+# <a name="scccheckin-function"></a>SccCheckin Function
+This function checks in previously checked-out files to the source control system, storing the changes and creating a new version. This function is called with a count and an array of names of the files to be checked in.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccCheckin (  
    LPVOID    pvContext,  
    HWND      hWnd,  
@@ -53,50 +54,50 @@ SCCRTN SccCheckin (
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- [in]原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- [in]SCC 外掛程式使用一層，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in] A handle to the IDE window that the SCC plug-in can use as a parent for any dialog boxes that it provides.  
   
  nFiles  
- [in]選取要簽入檔案的數目。  
+ [in] Number of files selected to be checked in.  
   
  lpFileNames  
- [in]簽入檔案的完整格式的本機路徑名稱的陣列。  
+ [in] Array of fully qualified local path names of files to be checked in.  
   
  lpComment  
- [in]若要套用至每個選取的檔案在存回註解。 這是`NULL`如果原始檔控制外掛程式應該提示使用者輸入註解。  
+ [in] Comment to be applied to each of the selected files being checked in. This is `NULL` if the source control plug-in should prompt for a comment.  
   
- Stored  
- [in]命令旗標、 0 或`SCC_KEEP_CHECKEDOUT`。  
+ fOptions  
+ [in] Command flags, either 0 or `SCC_KEEP_CHECKEDOUT`.  
   
  pvOptions  
- [in]SCC 外掛程式專屬選項。  
+ [in] SCC plug-in-specific options.  
   
-## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一︰  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|檔案已成功簽入。|  
-|SCC_E_FILENOTCONTROLLED|選取的檔案不是原始程式碼控制之下。|  
-|SCC_E_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
-|SCC_E_NONSPECIFICERROR|非特定的失敗。 檔案尚未登入。|  
-|SCC_E_NOTCHECKEDOUT|使用者不具有簽出檔案，因此無法簽入。|  
-|SCC_E_CHECKINCONFLICT|無法執行簽入，因為︰<br /><br /> -繼續另一位使用者簽入和`bAutoReconcile`時發生錯誤。<br /><br /> -或-<br /><br /> （例如，當檔案是二進位），則無法執行-自動合併。|  
-|SCC_E_VERIFYMERGE|檔案已經自動合併，但是有尚未簽入暫止的使用者驗證。|  
-|SCC_E_FIXMERGE|檔案已經自動合併，但尚未簽因為必須以手動方式解決合併衝突。|  
-|SCC_E_NOTAUTHORIZED|不允許使用者執行這項作業。|  
-|SCC_I_OPERATIONCANCELED|在完成之前取消作業。|  
-|SCC_I_RELOADFILE|需要重新載入檔案或專案。|  
-|SCC_E_FILENOTEXIST|找不到本機檔案。|  
+|SCC_OK|Files was successfully checked in.|  
+|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
+|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
+|SCC_E_NONSPECIFICERROR|Nonspecific failure. File was not checked in.|  
+|SCC_E_NOTCHECKEDOUT|The user has not checked out the file, so cannot check it in.|  
+|SCC_E_CHECKINCONFLICT|Checkin could not be performed because:<br /><br /> -   Another user has checked in ahead and `bAutoReconcile` was false.<br /><br /> -or-<br /><br /> -   The auto-merge cannot be done (for example, when files are binary).|  
+|SCC_E_VERIFYMERGE|File has been auto-merged but has not been checked in pending user verification.|  
+|SCC_E_FIXMERGE|File has been auto-merged but has not been checked in due to a merge conflict that must be manually resolved.|  
+|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
+|SCC_I_OPERATIONCANCELED|Operation was cancelled before completion.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
+|SCC_E_FILENOTEXIST|Local file was not found.|  
   
-## <a name="remarks"></a>備註  
- 註解適用於所簽入的所有檔案。 註解引數可以是`null`字串，在此情況下的原始檔控制外掛程式可以提示使用者輸入的每個檔案的註解字串。  
+## <a name="remarks"></a>Remarks  
+ The comment applies to all files being checked in. The comment argument can be a `null` string, in which case the source control plug-in can prompt the user for a comment string for each file.  
   
- `fOptions`引數可以指定的值為`SCC_KEEP_CHECKEDOUT`旗標，表示要檢查的檔案，並再次查看使用者的意圖。  
+ The `fOptions` argument can be given a value of the `SCC_KEEP_CHECKEDOUT` flag to indicate the user's intent to check the file in and check it out again.  
   
-## <a name="see-also"></a>另請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

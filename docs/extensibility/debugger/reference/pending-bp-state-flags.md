@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: db6b76953b0ed0e2349c4e25c41e7fa6d66ad9d8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 65f0037632918ed02ac12decd46e5b7beffbf1c2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
@@ -42,7 +42,7 @@ Specifies the pending breakpoint state flags.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PENDING_BP_STATE_FLAGS {   
    PBPSF_NONE        = 0x0000,  
    PBPSF_VIRTUALIZED = 0x0001  
@@ -50,7 +50,7 @@ enum enum_PENDING_BP_STATE_FLAGS {
 typedef DWORD PENDING_BP_STATE_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PENDING_BP_STATE_FLAGS {   
    PBPSF_NONE        = 0x0000,  
    PBPSF_VIRTUALIZED = 0x0001  

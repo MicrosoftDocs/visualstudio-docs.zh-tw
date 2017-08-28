@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4958bf9282e34fe83364a367af67a35eba4f3031
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d8292cb6aa52ffd872783bb4c0faae38d0be8ac5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-troubleshoot-services"></a>How to: Troubleshoot Services
@@ -48,7 +48,7 @@ There are several common problems that can occur when you try to get a service:
   
  If the requested service cannot be obtained, the call to <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> returns null. You should always test for null after requesting a service:  
   
-```cs  
+```csharp  
 IVsActivityLog log =   
     GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
 if (log == null) return;  

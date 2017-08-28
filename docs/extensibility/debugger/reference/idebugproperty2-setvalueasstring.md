@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0841422abba7ba25c1c102db241b804b16769fc7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4a8fe4e1a40aa9ab33cd0cfdb925bbb4f0607fbd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
@@ -42,7 +42,7 @@ Sets the value of a property from a given string.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsString (   
    LPCOLESTR pszValue,  
    UINT      nRadix,  
@@ -50,7 +50,7 @@ HRESULT SetValueAsString (
 );  
 ```  
   
-```cs  
+```csharp  
 int SetValueAsString (   
    string pszValue,  
    uint   nRadix,  

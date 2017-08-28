@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 90dbf573c60e17194546085d7d5fdcb70ea8a334
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a4c15d3a000a1b960bfcf3f7f3a0d46708718bda
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
@@ -42,7 +42,7 @@ Returns information that allows construction of a human-readable error message.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetErrorMessage(  
    MESSAGETYPE* pMessageType,  
    BSTR*        pbstrErrorFormat,  
@@ -53,7 +53,7 @@ HRESULT GetErrorMessage(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetErrorMessage(  
    out enum_MESSAGETYPE   pMessageType,  
    out string             pbstrErrorFormat,  

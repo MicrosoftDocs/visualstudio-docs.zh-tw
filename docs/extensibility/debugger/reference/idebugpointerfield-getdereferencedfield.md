@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5085440e2a3bfc90629d405a0532d05c06b59b87
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3c431a56f1a678dc79bdfefeedf4bb65d1d93d36
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
@@ -42,13 +42,13 @@ This method returns the type of object to which this pointer object points.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDereferencedField(  
    IDebugField** ppField  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDereferencedField(  
    out IDebugField ppField  
 );  

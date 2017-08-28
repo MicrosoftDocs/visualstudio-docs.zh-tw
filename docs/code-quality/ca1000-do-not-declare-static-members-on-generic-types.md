@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4d059621aec53b6fdf676030494a5f5a39328a81
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 60c8440f9ba51b0226a54ccfd814c371510809a9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Do not declare static members on generic types
@@ -62,7 +62,7 @@ GenericType(Of Integer).SharedMethod()
 someObject.GenericMethod(Of Integer)()  
 ```  
   
-```cs  
+```csharp  
 // Static method in a generic type.  
 GenericType<int>.StaticMethod();  
   

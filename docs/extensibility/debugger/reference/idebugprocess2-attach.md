@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d2324fce8a6dcc14e9fa9b2c20278781d0dbebfd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 95b86696abe1491c4ff1deedcfa948d0ca6e0df4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
@@ -42,7 +42,7 @@ Attaches the session debug manager (SDM) to the process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Attach(   
    IDebugEventCallback2* pCallback,  
    GUID*                 rgguidSpecificEngines,  
@@ -51,7 +51,7 @@ HRESULT Attach(
 );  
 ```  
   
-```cs  
+```csharp  
 int Attach(   
    IDebugEventCallback2 pCallback,  
    Guid[]               rgguidSpecificEngines,  

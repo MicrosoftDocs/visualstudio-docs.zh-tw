@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c3e9b04d1e88355d9846038c25f6db35a7fd8435
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 828ed054adb81597f32425cff134b0b0d682ecab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="codepath"></a>CODE_PATH
@@ -42,14 +42,14 @@ Describes a method or function call.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagCODE_PATH {   
    BSTR                bstrName;  
    IDebugCodeContext2* pCode;  
 } CODE_PATH;  
 ```  
   
-```cs  
+```csharp  
 public struct CODE_PATH {  
    public string            bstrName;  
    public IDebugCodeContext pCode;  

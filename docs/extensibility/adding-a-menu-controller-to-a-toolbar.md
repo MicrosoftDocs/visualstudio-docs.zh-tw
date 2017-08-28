@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b7c9d2fe8e710040a26d2ca682036c82cf621fbc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 998583202afcbf9c99f87d6bbdfcbb5747718bfa
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adding a Menu Controller to a Toolbar
@@ -132,7 +132,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
   
 1.  In TWTestCommandPackageGuids.cs, add command IDs for your three menu items after the existing command IDs.  
   
-    ```cs  
+    ```csharp  
     public const int cmdidMCItem1 = 0x130;  
     public const int cmdidMCItem2 = 0x131;  
     public const int cmdidMCItem3 = 0x132;  
@@ -140,13 +140,13 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
   
 2.  In TWTestCommand.cs, add the following code at the top of the TWTestCommand class.  
   
-    ```cs  
+    ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
 3.  In the TWTestCommand constructor, after the last call to the `AddCommand` method, add code to route the events for each command through the same handlers.  
   
-    ```cs  
+    ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
         TWTestCommandPackageGuids.cmdidMCItem3; i++)  
     {  
@@ -167,7 +167,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
   
 4.  Add an event handler to the TWTestCommand class to mark the selected command as checked.  
   
-    ```cs  
+    ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
@@ -180,7 +180,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
   
 5.  Add an event handler that displays a MessageBox when the user selects a command on the menu controller:  
   
-    ```cs  
+    ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  

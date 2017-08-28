@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7d51d08a49cd8fbff8ed6debfeb9bac7f372e5c4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f0e4fd1d732a6055b0b38b68f0bce967b5a3f991
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adding Search to a Tool Window
@@ -85,7 +85,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 3.  In the TestSearchControl.xaml.cs file, add the following using statement:  
   
-    ```cs  
+    ```csharp  
     using System.Text;  
     ```  
   
@@ -95,7 +95,7 @@ When you create or update a tool window in your extension, you can add the same 
   
      This code adds a public <xref:System.Windows.Controls.TextBox> property  named **SearchResultsTextBox** and a public string property named **SearchContent**. In the constructor, SearchResultsTextBox is set to the text box, and SearchContent is initialized to a newline-delimited set of strings. The content of the text box is also initialized to the set of strings.  
   
-    ```cs  
+    ```csharp  
     public partial class TestSearchControl : UserControl  
     {  
         public TextBox SearchResultsTextBox { get; set; }  
@@ -140,7 +140,7 @@ When you create or update a tool window in your extension, you can add the same 
   
      To enable search, you must override the <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> property. The <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> class implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> and provides a default implementation that doesn't enable search.  
   
-    ```cs  
+    ```csharp  
     public override bool SearchEnabled  
     {  
         get { return true; }  
@@ -158,7 +158,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 1.  In the TestSearch.cs file, add the following `using` statements:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Runtime.InteropServices;  
@@ -181,7 +181,7 @@ When you create or update a tool window in your extension, you can add the same 
   
          In `TestSearchTask`, the constructor sets a private field that references the tool window. To provide the search method, you override the <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> and <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStopSearch%2A> methods. The <xref:Microsoft.VisualStudio.Shell.VsSearchTask.OnStartSearch%2A> method is where you implement the search process. This process includes performing the search, displaying the search results in the text box, and calling the base class implementation of this method to report that the search is complete.  
   
-    ```cs  
+    ```csharp  
     public override IVsSearchTask CreateSearch(uint dwCookie, IVsSearchQuery pSearchQuery, IVsSearchCallback pSearchCallback)  
     {  
         if (pSearchQuery == null || pSearchCallback == null)  
@@ -289,7 +289,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 1.  In the TestSearch.cs file, add the following code to the `TestSearch` class. This code enables instant search instead of on-demand search (meaning that the user doesn't have to click ENTER). The code overrides the `ProvideSearchSettings` method in the `TestSearch` class, which is necessary to change the default settings.  
   
-    ```cs  
+    ```csharp  
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
@@ -303,7 +303,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 3.  In the `ProvideSearchSettings` method, add the following line, which enables the display of a progress bar.  
   
-    ```cs  
+    ```csharp  
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)  
     {  
         Utilities.SetValue(pSearchSettings,   
@@ -317,13 +317,13 @@ When you create or update a tool window in your extension, you can add the same 
   
      For the progress bar to appear, the progress must be reported. To report the progress, uncomment the following code in the `OnStartSearch` method of the `TestSearchTask` class:  
   
-    ```cs  
+    ```csharp  
     SearchCallback.ReportProgress(this, progress++, (uint)contentArr.GetLength(0));  
     ```  
   
 4.  To slow processing enough that the progress bar is visible, uncomment the following line in the `OnStartSearch` method of the `TestSearchTask` class:  
   
-    ```cs  
+    ```csharp  
     System.Threading.Thread.Sleep(100);  
     ```  
   
@@ -336,7 +336,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 1.  In the TestSearch.cs file, add the following code to the `TestSearch` class. The code overrides the `SearchOptionsEnum` method, which allows the search implementation to detect whether a given option is on or off. The code in `SearchOptionsEnum` adds an option to match case to an <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> enumerator. The option to match case is also made available as the `MatchCaseOption` property.  
   
-    ```cs  
+    ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
     public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
@@ -370,7 +370,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 2.  In the `TestSearchTask` class, uncomment matchCase line in the `OnStartSearch` method:  
   
-    ```cs  
+    ```csharp  
     private IVsEnumWindowSearchOptions m_optionsEnum;  
     public override IVsEnumWindowSearchOptions SearchOptionsEnum  
     {  
@@ -417,7 +417,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 1.  In the TestSearch.cs file, add the following code to the `TestSearch` class. The code implements `SearchFiltersEnum` by adding a <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> that specifies to filter the search results so that only even lines appear.  
   
-    ```cs  
+    ```csharp  
     public override IVsEnumWindowSearchFilters SearchFiltersEnum  
     {  
         get  
@@ -434,7 +434,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 2.  In the TestSearch.cs file, add the following methods to the `TestSearchTask` class, which is in the `TestSearch` class. These methods support the `OnStartSearch` method, which you'll modify in the next step.  
   
-    ```cs  
+    ```csharp  
     private string RemoveFromString(string origString, string stringToRemove)  
     {  
         int index = origString.IndexOf(stringToRemove);  
@@ -462,7 +462,7 @@ When you create or update a tool window in your extension, you can add the same 
   
 3.  In the `TestSearchTask` class, update the `OnStartSearch` method with the following code. This change updates the code to support the filter.  
   
-    ```cs  
+    ```csharp  
     protected override void OnStartSearch()  
     {  
         // Use the original content of the text box as the target of the search.   

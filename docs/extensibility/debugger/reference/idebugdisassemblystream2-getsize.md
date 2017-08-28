@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 989db77c6bccf9a1f89a5ac033384309b6354717
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d4ec6c1c5e7fed3d1c9694c9193af6a05fb8d13b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
@@ -42,13 +42,13 @@ Gets the size in instructions of this disassembly stream.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(   
    UINT64* pnSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize(   
    out ulong pnSize  
 );  

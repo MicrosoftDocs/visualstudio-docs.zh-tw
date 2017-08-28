@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 65702f87e1d482ab6c1920bb9b75ba9ed97718cf
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d7dd6cbad8d57ff68d5346f949429eb01414f5b2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
@@ -41,13 +41,13 @@ Determines if the object is a transparent proxy.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT IsProxy (  
    BOOL* pfIsProxy  
 );  
 ```  
   
-```cs  
+```csharp  
 int IsProxy (  
    out bool pfIsProxy  
 );  

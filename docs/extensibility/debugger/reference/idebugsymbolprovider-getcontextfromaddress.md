@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: eaf1c1f34d1c71578f5d03c4bcce7ca424af1325
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d1f9b6e3e66024c034c14187cdaf4aa7806b9e8b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
@@ -42,14 +42,14 @@ This method maps a debug address into a document context.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetContextFromAddress(   
    IDebugAddress*           pAddress,  
    IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetContextFromAddress(  
    IDebugAddress              pAddress,   
    out IDebugDocumentContext2 ppDocContext  

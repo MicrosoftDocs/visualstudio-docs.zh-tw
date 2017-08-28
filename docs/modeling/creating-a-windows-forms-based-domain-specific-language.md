@@ -12,10 +12,10 @@ author: alancameronwills
 ms.author: awills
 manager: douge
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 328c884c41bb6ac07f613d627d577fccbebab566
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 17652a19df04d016db54429ab7bc7d407768df87
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Creating a Windows Forms-Based Domain-Specific Language
@@ -183,7 +183,7 @@ Schema of links between data sources and views.
   
 1.  Add the following code in a separate code file in the **UI** project:  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel;  
     using Microsoft.VisualStudio.Modeling;  
     using Microsoft.VisualStudio.Modeling.Design;  
@@ -209,7 +209,7 @@ Schema of links between data sources and views.
   
 2.  In the **DslPackage** project, edit **DslPackage\DocView.tt** to update the following variable definition:  
   
-    ```cs  
+    ```csharp  
     string viewControlTypeName = "FarmControl";  
     ```  
   
@@ -259,7 +259,7 @@ Schema of links between data sources and views.
   
      Edit it as follows:  
   
-    ```cs  
+    ```csharp  
     private void NewSheepButton_Click(object sender, EventArgs e)  
     {  
       using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))  
@@ -292,7 +292,7 @@ Schema of links between data sources and views.
   
      You will also need to insert the following directive:  
   
-    ```cs  
+    ```csharp  
   
     using Microsoft.VisualStudio.Modeling;  
   
@@ -311,7 +311,7 @@ Schema of links between data sources and views.
 ### <a name="about-the-code-to-add-an-element"></a>About the code to add an element  
  For the new element buttons, the following alternative code is slightly simpler.  
   
-```cs  
+```csharp  
 private void NewSheepButton_Click(object sender, EventArgs e)  
 {  
   using (Transaction t = farm.Store.TransactionManager.BeginTransaction("Add sheep"))  

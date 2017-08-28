@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 97b0d5411111af293166cb86941d6cef74795845
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c7803cad2b18ad668bf6ac4814821c1f9098774d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
@@ -55,7 +55,7 @@ enum enum_PROVIDER_FLAGS {
 typedef DWORD PROVIDER_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PROVIDER_FLAGS {  
    PFLAG_NONE                    = 0x00,  
    PFLAG_REMOTE_PORT             = 0x01,  

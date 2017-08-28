@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 623360290d98af0034d3ccb41bdb7b99f968f5be
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 957e917870e4482721b0c32e4551072fb9092044
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
@@ -42,7 +42,7 @@ This method maps a document position into an array of debug addresses.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetAddressesFromPosition(   
    IDebugDocumentPosition2* pDocPos,  
    BOOL                     fStatmentOnly,  
@@ -51,7 +51,7 @@ HRESULT GetAddressesFromPosition(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetAddressesFromPosition(   
    IDebugDocumentPosition2  pDocPos,  
    bool                     fStatmentOnly,  

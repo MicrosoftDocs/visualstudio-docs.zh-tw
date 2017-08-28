@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d9da17db3268a413ef07915cdf087e50a7cee48b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f8e3cd22039e737060fb9e87109dab182fd6da49
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
@@ -42,13 +42,13 @@ Terminates the process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Terminate(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int Terminate();  
 ```  
   

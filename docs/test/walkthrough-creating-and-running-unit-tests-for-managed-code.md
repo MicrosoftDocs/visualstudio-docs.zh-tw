@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fd79f278f3ef81bc7dd00e9d640fc7103ea90ea5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Walkthrough: Creating and Running Unit Tests for Managed Code
@@ -107,7 +107,7 @@ This walkthrough will step you through creating, running, and customizing a seri
   
  In this quick start, we focus on the `Debit` method.The Debit method is called when money is withdrawn an account and contains the following code:  
   
-```cs  
+```csharp  
 // method under test  
 public void Debit(double amount)  
 {  
@@ -154,7 +154,7 @@ public void Debit(double amount)
   
  The BankAccountTests.cs file now contains the following code:  
   
-```cs  
+```csharp  
 // unit test code  
 using System;  
 using Microsoft.VisualStudio.TestTools.UnitTesting;  
@@ -176,7 +176,7 @@ namespace BankTests
   
  We can also add a using statement to the class to let us to call into the project under test without using fully qualified names. At the top of the class file, add:  
   
-```cs  
+```csharp  
 using BankAccountNS;  
 ```  
   
@@ -208,7 +208,7 @@ using BankAccountNS;
   
 2.  Add the following method to that `BankAccountTests` class:  
   
-    ```cs  
+    ```csharp  
     // unit test code  
     [TestMethod]  
     public void Debit_WithValidAmount_UpdatesBalance()  
@@ -262,13 +262,13 @@ using BankAccountNS;
   
  To correct the error, simply replace the line  
   
-```cs  
+```csharp  
 m_balance += amount;  
 ```  
   
  with  
   
-```cs  
+```csharp  
 m_balance -= amount;  
 ```  
   
@@ -291,7 +291,7 @@ m_balance -= amount;
   
  A first attempt at creating a test method to address these issues seems promising:  
   
-```cs  
+```csharp  
 //unit test method  
 [TestMethod]  
 [ExpectedException(typeof(ArgumentOutOfRangeException))]  
@@ -328,7 +328,7 @@ public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
   
  Looking at the method under test again, we see both conditional statements use an `ArgumentOutOfRangeException` constructor that takes name of the argument as a parameter:  
   
-```cs  
+```csharp  
 throw new ArgumentOutOfRangeException("amount");  
 ```  
   
@@ -338,7 +338,7 @@ throw new ArgumentOutOfRangeException("amount");
   
  We first define two constants for the error messages at class scope:  
   
-```cs  
+```csharp  
 // class under test  
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";  
 public const string DebitAmountLessThanZeroMessage = "Debit amount less than zero";  
@@ -346,7 +346,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
  We then modify the two conditional statements in the `Debit` method:  
   
-```cs  
+```csharp  
 // method under test  
 // ...  
     if (amount > m_balance)  
@@ -373,7 +373,7 @@ public const string DebitAmountLessThanZeroMessage = "Debit amount less than zer
   
  A second attempt at revising `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` might look like:  
   
-```cs  
+```csharp  
 [TestMethod]  
 public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()  
 {  
@@ -409,7 +409,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
   
  But retesting shows that the test now fails if the correct exception is caught. The catch statement resets the exception and the method continues to execute, failing at the new assert. To resolve the new problem, we add a `return` statement after the `StringAssert`. Retesting confirms that we have fixed our problems. Our final version of the `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` looks like the following:  
   
-```cs  
+```csharp  
 [TestMethod]  
 public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()  
 {  

@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b0a85a675c61006bc923c2a8fbbe32440c953ac5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
@@ -43,13 +43,13 @@ DEPRECATED. DO NOT USE.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DetachDebugger_V7 (   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int DetachDebugger_V7 ();  
 ```  
   

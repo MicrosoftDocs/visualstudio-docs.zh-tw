@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6507a9a129c1f3185164a764be5bb8074bc8c7d1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 236c16c8cac80c4d6ef50ed956591ca6222660df
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovidergetnamefromtoken"></a>IDebugComPlusSymbolProvider::GetNameFromToken
@@ -41,7 +41,7 @@ Returns the name associated with the specified token given its metadata object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetNameFromToken (  
    IUnknown* pMetadataImport,  
    DWORD     dwToken,  
@@ -49,7 +49,7 @@ HRESULT GetNameFromToken (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetNameFromToken (  
    object     pMetadataImport,  
    uint       dwToken,  
@@ -73,7 +73,7 @@ int GetNameFromToken (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetNameFromToken(  
     IUnknown* pMetadataImport,  
     DWORD dwToken,  

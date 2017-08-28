@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1496b93aafc43793b2b0c97d24ba0dbb0666fa2f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d823714b04af8afc7c8b7d988ab746f41dc4ba68
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Walkthrough: My First WPF Desktop Application
@@ -500,7 +500,7 @@ ms.lasthandoff: 08/24/2017
   
 4.  Add the following code to the `ExpenseItHome` class:  
   
-    ```cs  
+    ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
     {  
         // View Expense Report  
@@ -836,7 +836,7 @@ ms.lasthandoff: 08/24/2017
   
 2.  In C#, add the following constructor to the **ExpenseReportPage** class, or in Visual Basic replace the existing class with the following:  
   
-    ```cs  
+    ```csharp  
     // Custom constructor to pass expense report data  
         public ExpenseReportPage(object data):this()  
         {  
@@ -868,7 +868,7 @@ ms.lasthandoff: 08/24/2017
   
 4.  Replace the `Click` event handler code with the following:  
   
-    ```cs  
+    ```csharp  
     private void Button_Click(object sender, RoutedEventArgs e)  
     {  
         // View Expense Report  

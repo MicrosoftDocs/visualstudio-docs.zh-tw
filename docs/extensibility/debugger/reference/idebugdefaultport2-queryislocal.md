@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ea95cffc3deb43d45d42b4ab518c5cfedb71d11e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 169a4975770ea0704ebaf59d9fa5b621f30bd014
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
@@ -42,13 +42,13 @@ This method determines whether this port is on the local machine.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT QueryIsLocal(  
    void  
 );  
 ```  
   
-```cs  
+```csharp  
 int QueryIsLocal();  
 ```  
   

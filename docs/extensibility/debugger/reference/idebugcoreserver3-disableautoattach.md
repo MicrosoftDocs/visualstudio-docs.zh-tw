@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 17ae3e774279bf0ce0eff7e064be550649246972
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8712383536b6c2c159ba6f5d1ef7c59329b127f3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3disableautoattach"></a>IDebugCoreServer3::DisableAutoAttach
@@ -42,13 +42,13 @@ Disables automatic attaching for all debug engines associated with this server.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisableAutoAttach(  
    void  
 );  
 ```  
   
-```cs  
+```csharp  
 int DisableAutoAttach();  
 ```  
   

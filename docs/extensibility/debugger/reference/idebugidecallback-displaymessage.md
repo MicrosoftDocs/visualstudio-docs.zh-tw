@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f49cd40d8f936b316ee278efde198471c50ebc87
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7b3f7e5fde160bc9d1e5ece61b810090c5dd7d9b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
@@ -40,13 +40,13 @@ Sends the specified message string to the debugger's output window.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayMessage (  
    LPCOLESTR szMessage  
 );  
 ```  
   
-```cs  
+```csharp  
 int DisplayMessage (  
    string szMessage  
 );  

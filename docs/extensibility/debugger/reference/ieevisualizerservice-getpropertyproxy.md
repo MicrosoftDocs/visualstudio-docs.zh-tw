@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bd2977128483038775bbe46060d04fb33abb1bdc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f523b44c1193b1a7776fa143214d1a76cb9a1fdb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
@@ -49,7 +49,7 @@ HRESULT GetPropertyProxy(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetPropertyProxy(  
    uint                     dwID,  
    out IPropertyProxyEESide proxy  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f63df6e184be9312982c13b962b830d596052e6b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2d7d1631c1b5179d51a80b2094766c4ed053ac36
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
@@ -42,13 +42,13 @@ Specifies how the debug engine (DE) should handle a given exception.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetException(   
    EXCEPTION_INFO* pException  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetException(   
    EXCEPTION_INFO[] pException  
 );  

@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 53aa395278b4711d53c62723f25e8b9e1159722b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d85e24701fd6bc31852fff3927f3698210681b82
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomy of a Coded UI Test
@@ -58,7 +58,7 @@ When you create a Coded UI Test in a coded UI test project, several files are ad
 #### <a name="declarations-section"></a>Declarations section  
  This section includes the following declarations for a Windows UI.  
   
-```cs  
+```csharp  
 using System;  
 using System.CodeDom.Compiler;  
 using System.Collections.Generic;  

@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0bab369eedbba9a56ec440cf1286fc64cfab6221
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c54155a382aa9fce95ecaab212632d80dfa61d9f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs Source Code
@@ -82,7 +82,7 @@ This topic contains the contents and description of the C# source code in the fi
   
 ### <a name="code"></a>Code  
   
-```cs  
+```csharp  
 using System;  
 using System.Linq;  
 using System.Collections;  

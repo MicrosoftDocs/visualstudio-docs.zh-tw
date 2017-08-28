@@ -1,36 +1,53 @@
 ---
-title: "從 IDE 中啟動組建 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "組建"
+title: Starting a Build from within the IDE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# 從 IDE 中啟動組建
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4480985bdbca5225703d5efafc87c553e02f4b22
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。  本主題說明這麼做的原因並概述相關程序。  
+---
+# <a name="starting-a-build-from-within-the-ide"></a>Starting a Build from within the IDE
+Custom project systems must use <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> to start builds. This topic describes the reasons for this and outlines the procedure.  
   
-## 平行組建和執行緒  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允許需要居中協調通用資源存取權的平行組建。  專案系統可以非同步方式執行組建，但是這樣的系統絕對不能從提供給組建管理員的回呼中呼叫組建函式。  
+## <a name="parallel-builds-and-threads"></a>Parallel Builds and Threads  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] allows parallel builds which requires mediation for access to common resources. Project systems can run builds asynchronously, but such systems must not call build functions from within call backs is provided to the build manager.  
   
- 如果專案系統修改環境變數，就必須將組建的 NodeAffinity 設定為 OutOfProc。  這表示您將無法使用主物件，因為這些物件必須有同處理序節點才能使用。  
+ If the project system modifies environment variables, it must set the NodeAffinity of the build to OutOfProc. This means that you cannot use host objects, since they require the in-proc node.  
   
-## 使用 IVSBuildManagerAccessor  
- 下列程式碼概略說明專案系統可以用來啟動組建的方法：  
+## <a name="using-ivsbuildmanageraccessor"></a>Using IVSBuildManagerAccessor  
+ The code below outlines a method that a project system can use to start a build:  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

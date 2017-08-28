@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e3f1dba56678c2a41f5dfac2e904cced5931fbf6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bf6c0768a9bb6fad3e48dc92ac74081cdf4b4116
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
@@ -43,13 +43,13 @@ Retrieves the size, in bytes, of the memory represented by this [IDebugMemoryByt
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(   
    UINT64* pqwSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize(  
    out ulong pqwSize  
 );  

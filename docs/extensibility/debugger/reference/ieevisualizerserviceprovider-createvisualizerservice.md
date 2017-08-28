@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f843a0f2d8cd20a43034f6300e81797d5e7b8f10
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c9860fadecc05cd992e46a64619315c0d9e766e0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
@@ -52,7 +52,7 @@ HRESULT CreateVisualizerService(
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateVisualizerService(  
    IDebugBinder binder,  
    IDebugSymbolProvider      pSymProv,  

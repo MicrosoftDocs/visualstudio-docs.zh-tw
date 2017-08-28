@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e0fa14cfb56367dfab3a6eea284c3cae6b843247
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1585d47a3d32c7a5df1173b03a6791cd85d66640
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
@@ -48,7 +48,7 @@ HRESULT GetProcessID (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetProcessID (  
    out uint pProcID  
 );  

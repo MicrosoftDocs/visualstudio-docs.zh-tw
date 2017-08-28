@@ -32,10 +32,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 04e393c70c9eb8c6679d9d1619ef422daec3956a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 85a6bd427cf3bc5cada6bbec20b2b919e2a02d62
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Anonymous Methods and Code Analysis
@@ -61,7 +61,7 @@ Class AClass
     End SubEnd Class  
 ```  
   
-```cs  
+```csharp  
   
       delegate void Delegate();  
 class Class  
@@ -99,7 +99,7 @@ Sub Method1()
 End SubEnd Class  
 ```  
   
-```cs  
+```csharp  
   
       delegate void Delegate();  
 class Class  
@@ -140,7 +140,7 @@ End SubSub New(ByVal a As String)
 End SubEnd Class  
 ```  
   
-```cs  
+```csharp  
   
       delegate void Delegate();  
 class Class  

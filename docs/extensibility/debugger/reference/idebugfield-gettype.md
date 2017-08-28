@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6f2c8564fc2397743b31ad92f2d1517c16848696
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d488b166922db5b49de2cf6e58f4b487fe719037
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
@@ -42,13 +42,13 @@ This method gets the type of field.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetType(   
    IDebugField** ppType  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetType(  
    out IDebugField ppType  
 );  

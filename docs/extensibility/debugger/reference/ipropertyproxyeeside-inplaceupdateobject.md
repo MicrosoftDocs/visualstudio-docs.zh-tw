@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b4389596c19adc113b2c8307d45982f7ac1046cc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1971b553a355b415543aba8ae8936a69e771976b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
@@ -42,14 +42,14 @@ Updates the object's data with the given data object and returns a new data obje
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT InPlaceUpdateObject(  
    [in] IEEDataStorage*   dataIn,  
    [out] IEEDataStorage** dataOut  
 );  
 ```  
   
-```cs  
+```csharp  
 int InPlaceUpdateObject(  
    IEEDataStorage     dataIn,  
    out IEEDataStorage dataOut  

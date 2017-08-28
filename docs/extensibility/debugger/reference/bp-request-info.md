@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e7ca82d33c4fd7d67a75864a4b5b92971e837c2b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cbf5d67ac7836fc87dc983ddf92704531bcebfa3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bprequestinfo"></a>BP_REQUEST_INFO
@@ -42,7 +42,7 @@ Contains the information required to implement a breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_REQUEST_INFO {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
@@ -57,7 +57,7 @@ typedef struct _BP_REQUEST_INFO {
 } BP_REQUEST_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_REQUEST_INFO {  
    public uint           dwFields;  
    public Guid           guidLanguage;  

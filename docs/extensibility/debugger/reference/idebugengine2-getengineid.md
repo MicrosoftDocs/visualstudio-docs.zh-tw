@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f680816fb7471334cb081e8d9bcac07faf92a87
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 10ed4bd2dd53f65aa55dbcfcf75c64fe2de1a6ae
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
@@ -42,13 +42,13 @@ Gets the GUID of the debug engine (DE).
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEngineID(   
    GUID* pguidEngine  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetEngineID(   
    out Guid pguidEngine  
 );  
@@ -67,7 +67,7 @@ int GetEngineID(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CEngine` object that implements the [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
    if (pguidEngine) {    
       // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    

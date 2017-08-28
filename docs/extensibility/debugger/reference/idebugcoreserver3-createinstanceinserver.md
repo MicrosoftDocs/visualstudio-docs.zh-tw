@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b3dfdec89632fd5228801fb1f33f513b533505cc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9014642bc352ccec00787e8daefc938f0bd3a251
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
@@ -42,7 +42,7 @@ Creates an instance of a debug engine on the server.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreateInstanceInServer(  
    LPCWSTR  szDll,  
    WORD     wLangId,  
@@ -52,7 +52,7 @@ HRESULT CreateInstanceInServer(
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateInstanceInServer(  
    string     szDll,   
    ushort     wLangID,   

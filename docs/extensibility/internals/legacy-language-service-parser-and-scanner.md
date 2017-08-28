@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 6cc27f39be42f9504fd2d1617ec7cd7be6333b48
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c95dbbeaf9dcd6e1014ce3d2af8a0398c6627fe3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Legacy Language Service Parser and Scanner
@@ -42,7 +42,7 @@ The parser is the heart of the language service. The Managed Package Framework (
 ## <a name="discussion"></a>Discussion  
  The following is a C# method.  
   
-```cs  
+```csharp  
 namespace MyNamespace  
 {  
     class MyClass  

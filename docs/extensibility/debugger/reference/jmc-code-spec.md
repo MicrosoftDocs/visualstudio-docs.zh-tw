@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 378d21c576d9fb59a9ee3bdd4003a94a5924144b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6f1196db575c24c952d00721dcdb68390aee3adc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
@@ -42,14 +42,14 @@ This structure is used to set the JustMyCode information for a module.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _JMC_CODE_SPEC {  
    BOOL fIsUserCode;  
    BSTR bstrModuleName;  
 } JMC_CODE_SPEC;  
 ```  
   
-```cs  
+```csharp  
 public struct JMC_CODE_SPEC {  
    public int    fIsUserCode;  
    public string bstrModuleName;  

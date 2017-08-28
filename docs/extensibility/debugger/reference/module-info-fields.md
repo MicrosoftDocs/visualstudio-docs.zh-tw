@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 10412354e5cdad73b43d432026ce02add56bcab5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 55c2435922cdd3898a57bfe20ef83c1c96f65924
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
@@ -42,7 +42,7 @@ Specifies the flags for the debug module information.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  
@@ -61,7 +61,7 @@ enum enum_MODULE_INFO_FIELDS {
 typedef DWORD MODULE_INFO_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_MODULE_INFO_FIELDS {   
    MIF_NONE              = 0x0000,  
    MIF_NAME              = 0x0001,  

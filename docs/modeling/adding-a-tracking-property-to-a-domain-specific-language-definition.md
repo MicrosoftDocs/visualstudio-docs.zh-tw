@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bf2ef475883e7ed9508d43a634fbef9a324f0ba3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adding a Tracking Property to a Domain-Specific Language Definition
@@ -185,7 +185,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the HelperClasses.cs file.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections;  
     using System.Diagnostics;  
@@ -270,7 +270,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the TypeDescriptor.cs file.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.ComponentModel;  
     using Microsoft.VisualStudio.Modeling;  
@@ -333,7 +333,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the Package.cs file.  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel;  
   
     namespace CompanyName.ProductName.TrackingPropertyDSL  
@@ -370,7 +370,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the ExampleModel.cs file.  
   
-    ```cs  
+    ```csharp  
     using System.Linq;  
   
     namespace CompanyName.ProductName.TrackingPropertyDSL  
@@ -445,7 +445,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the NamespaceTrackingProperty.cs file.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using Microsoft.VisualStudio.Modeling;  
   
@@ -611,7 +611,7 @@ This walkthrough shows how to add a tracking property to a domain model.
   
 1.  Add the following code to the Serialization.cs file.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Diagnostics;  
     using Microsoft.VisualStudio.Modeling;  

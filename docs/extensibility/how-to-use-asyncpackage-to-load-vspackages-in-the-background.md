@@ -24,10 +24,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5f2505c75bf05b055ee03c74833b38a32a2a71f9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cfd99e4926aac1847f6f0397747201cb0e3a74ab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>How to: Use AsyncPackage to Load VSPackages in the Background
@@ -42,21 +42,21 @@ Loading and initializing a VS package can result in disk I/O. If such I/O happen
   
      To indicate to Visual Studio that your package is safe for background loading and to opt into this behavior, your <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> should set **AllowsBackgroundLoading** property to true in the attribute constructor.  
   
-    ```cs  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]  
   
     ```  
   
      To indicate to Visual Studio that it is safe to instantiate your service on a background thread, you should set the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> property to true in the <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> constructor.  
   
-    ```cs  
+    ```csharp  
     [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]  
   
     ```  
   
 3.  If you are loading via UI contexts, then you should specify **PackageAutoLoadFlags.BackgroundLoad** for the <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> OR the value (0x2) into the flags written as the value of your package's auto-load entry.  
   
-    ```cs  
+    ```csharp  
     [ProvideAutoLoad(UIContextGuid, PackageAutoLoadFlags.BackgroundLoad)]  
   
     ```  
@@ -65,7 +65,7 @@ Loading and initializing a VS package can result in disk I/O. If such I/O happen
   
      NOTE: To call **base.InitializeAsync()**, you can change your source code to:  
   
-    ```cs  
+    ```csharp  
     await base.InitializeAsync(cancellationToken, progress);  
     ```  
   
@@ -75,7 +75,7 @@ Loading and initializing a VS package can result in disk I/O. If such I/O happen
   
  C#: Create an AsyncPackage :  
   
-```cs  
+```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]       
 [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]   
 public sealed class TestPackage : AsyncPackage   
@@ -112,7 +112,7 @@ public sealed class TestPackage : AsyncPackage
   
  C#: How to query service asynchronously:  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;   
 using Microsoft.VisualStudio.Shell.Interop;   
   

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c78c0a3c9cfa600d331b77cd10e59b5e73f60169
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d3ba5d8ea92200a70623a6e53ceb484aadfc3af2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
@@ -42,13 +42,13 @@ This method informs the process that a session is no longer debugging the proces
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Detach(   
    IDebugSession2* pSession  
 );  
 ```  
   
-```cs  
+```csharp  
 int Detach(  
    IDebugSession2 pSession  
 );  

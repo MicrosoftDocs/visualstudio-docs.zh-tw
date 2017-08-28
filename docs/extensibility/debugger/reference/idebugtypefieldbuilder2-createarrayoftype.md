@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a40f6124acf092f3c799fbf971419d3b435af9a6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f80332fc2980f18240004507b54c4cbfac731d60
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
@@ -41,7 +41,7 @@ Creates an array of the specified type and size.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreateArrayOfType (  
    IDebugField*  pTypeField,  
    DWORD         rank,  
@@ -49,7 +49,7 @@ HRESULT CreateArrayOfType (
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateArrayOfType (  
    IDebugField     pTypeField,  
    uint            rank,  

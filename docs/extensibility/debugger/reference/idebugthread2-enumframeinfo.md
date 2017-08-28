@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9af7ee66fef1b646670e3f0a8cd1f91b08a3fb37
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 61433b3a56c0108bcd01da578ee31c06b7d25d8d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
@@ -42,7 +42,7 @@ Retrieves a list of the stack frames for this thread.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumFrameInfo (   
    FRAMEINFO_FLAGS        dwFieldSpec,  
    UINT                   nRadix,  
@@ -50,7 +50,7 @@ HRESULT EnumFrameInfo (
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumFrameInfo (   
    enum_FRAMEINFO_FLAGS     dwFieldSpec,  
    uint                     nRadix,  

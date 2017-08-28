@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0d029155953ba3c988785f8c5bff91cf63214146
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7c56479174f6189a17f657af4919416d7b0a6951
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Insecure DTD Processing
@@ -95,7 +95,7 @@ ms.lasthandoff: 08/24/2017
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System.IO;   
 using System.Xml.Schema;   
   
@@ -116,7 +116,7 @@ class TestClass
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Schema;   
@@ -139,7 +139,7 @@ class TestClass
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -157,7 +157,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -179,7 +179,7 @@ namespace TestNamespace
   
 ### <a name="violations"></a>Violations  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -195,7 +195,7 @@ namespace TestNamespace
 }  
 ```  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -213,7 +213,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 public static void TestMethod(string xml)   
@@ -227,7 +227,7 @@ public static void TestMethod(string xml)
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Serialization;   
@@ -247,7 +247,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.IO;   
 using System.Xml;   
 using System.Xml.Serialization;   
@@ -268,7 +268,7 @@ namespace TestNamespace
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System.Xml;   
 using System.Xml.XPath;   
   
@@ -286,7 +286,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.Xml;   
 using System.Xml.XPath;   
   
@@ -305,7 +305,7 @@ namespace TestNamespace
   
 ### <a name="violation"></a>Violation  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -319,7 +319,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -333,7 +333,7 @@ namespace TestNamespace
   
 ### <a name="violations"></a>Violations  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -349,7 +349,7 @@ namespace TestNamespace
 }  
 ```  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -364,7 +364,7 @@ namespace TestNamespace
 }  
 ```  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   
@@ -385,7 +385,7 @@ namespace TestNamespace
   
 ### <a name="solution"></a>Solution  
   
-```cs  
+```csharp  
 using System.Xml;   
   
 namespace TestNamespace   

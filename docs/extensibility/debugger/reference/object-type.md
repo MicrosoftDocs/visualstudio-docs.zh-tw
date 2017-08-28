@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7e9fbbe8b4263143e235a2db6f7117d7bc36fafe
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5cb562b54d088e5f5c5fdb300a8f897e35f82f17
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
@@ -42,7 +42,7 @@ Specifies the type of an object from the expression evaluator.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_OBJECT_TYPE {   
    OBJECT_TYPE_BOOLEAN = 0x0,  
    OBJECT_TYPE_CHAR    = 0x1,  
@@ -63,7 +63,7 @@ enum enum_OBJECT_TYPE {
 typedef DWORD OBJECT_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_OBJECT_TYPE {   
    OBJECT_TYPE_BOOLEAN = 0x0,  
    OBJECT_TYPE_CHAR    = 0x1,  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4028bfa8ca95a4bc93aa21fb108b40cc4d091ac8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 63d6417da510f172c7331c97ee46eca2099a30e0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
@@ -41,13 +41,13 @@ Retrieves the name of the module currently being debugged.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetModuleName(   
    BSTR *pbstrModuleName  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetModuleName (  
    string pbstrModuleName  
 );  
@@ -63,7 +63,7 @@ public int GetModuleName (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugBeforeSymbolSearchEventBase** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)  
 {  
     HRESULT hRes = E_FAIL;  

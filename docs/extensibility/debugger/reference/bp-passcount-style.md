@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f1952cd8419c8f05a44ff08f8efa6f31e09a5260
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e76b64fc0ca35d442d654964f6bfc831b727d0e2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
@@ -42,7 +42,7 @@ Specifies the condition associated with the breakpoint pass count that causes th
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  
@@ -52,7 +52,7 @@ enum enum_BP_PASSCOUNT_STYLE {
 typedef DWORD BP_PASSCOUNT_STYLE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_PASSCOUNT_STYLE {   
    BP_PASSCOUNT_NONE             = 0x0000,  
    BP_PASSCOUNT_EQUAL            = 0x0001,  

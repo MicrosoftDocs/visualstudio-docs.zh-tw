@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 54d218b4a706cdbfe918ebf3e50197e9131ea537
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c32f92b5edf8b6a119e7e1124d6d58207e58f742
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
@@ -42,13 +42,13 @@ Gets the name of the port.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetPortName(   
    BSTR* pbstrPortName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetPortName(   
    out string pbstrPortName  
 );  

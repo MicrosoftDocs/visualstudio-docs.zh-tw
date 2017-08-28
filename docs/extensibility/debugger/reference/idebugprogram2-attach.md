@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 634eefce20c10c869b5d9241ba597d325ad1deb3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c20b759f000c17dbd6ec1fcd510b99ff70c6d9f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
@@ -42,13 +42,13 @@ Attaches to the program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Attach(   
    IDebugEventCallback2* pCallback  
 );  
 ```  
   
-```cs  
+```csharp  
 int Attach(   
    IDebugEventCallback2 pCallback  
 );  

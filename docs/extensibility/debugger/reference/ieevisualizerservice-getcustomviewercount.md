@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d886dea403579642fad27b751edc12a266d8ebc6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4ed857941c2e6305a47269f4ad150e13116d8647
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
@@ -48,7 +48,7 @@ HRESULT GetCustomViewerCount(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCustomViewerCount(  
    out uint pcelt  
 );  

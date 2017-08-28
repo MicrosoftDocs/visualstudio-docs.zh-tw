@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 52436aef005377095be87f64a301338867b2af46
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eb5212c4828ad24256447bc1c75f85ec0d9d9579
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Support for the Navigation Bar in a Legacy Language Service
@@ -47,7 +47,7 @@ The Navigation bar at the top of the editor view displays the types and members 
 ## <a name="the-contents-of-the-navigation-bar"></a>The Contents of the Navigation Bar  
  The Navigation bar usually contains a list of types and a list of members. The list of types includes all types available in the current source file. The type names include the complete namespace information. The following is an example of C# code with two types:  
   
-```cs  
+```csharp  
 namespace TestLanguagePackage  
 {  
     public class TestLanguageService  

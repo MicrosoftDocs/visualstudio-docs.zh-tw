@@ -45,10 +45,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bd6d0f833d64442213f37a874e02c5970009d49d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7eae24ec725509b2a2a6a276ad7f474a079bd952
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Culture-Specific Classes for Global Windows Forms and Web Forms
@@ -69,7 +69,7 @@ Console.WriteLine(MyInt.ToString("C", Thread.CurrentThread.CurrentCulture))
   
 ```  
   
-```cs  
+```csharp  
 // Put the using statements at the beginning of the code module  
 using System.Threading;  
 using System.Globalization;  

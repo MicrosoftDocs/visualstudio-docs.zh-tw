@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4aa59a9c33d4b29277da374fe6b35fc496385cf6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 598606c6360993e664eda19e30b1a8b017a59e3a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
@@ -42,13 +42,13 @@ Gets a custom debug engine (DE) interface.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEngineInterface(   
    IUnknown** ppUnk  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetEngineInterface(   
    out object ppUnk  
 );  

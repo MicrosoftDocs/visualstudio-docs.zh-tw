@@ -26,10 +26,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3793f5948ae11688fa266bb00b459d37d5c639e6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6d74b2c7a41907a9efce77628b30a5d22493eafb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Embedding a Diagram in a Windows Form
@@ -49,7 +49,7 @@ You can embed a DSL diagram in a Windows Control, which appears in the [!INCLUDE
   
 3.  In Solution Explorer, right-click the user control file and click **View Code**. Add this constructor and variable to the code:  
   
-    ```cs  
+    ```csharp  
   
     internal UserControl1(MyDSLDocView docView, Control content)  
       : this()  

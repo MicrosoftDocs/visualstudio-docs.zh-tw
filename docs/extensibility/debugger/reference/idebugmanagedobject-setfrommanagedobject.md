@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 25193a7c8bc3809c3996f06cee4d88734bb00d1f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d19df4fd8726ed3e59d57b314e19684b0a7f6a5e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
@@ -42,13 +42,13 @@ Sets the value of the instance of the value class object from the instance of th
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetFromManagedObject(   
    IUnknown* pManagedObject  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetFromManagedObject(  
    object pManagedObject  
 );  

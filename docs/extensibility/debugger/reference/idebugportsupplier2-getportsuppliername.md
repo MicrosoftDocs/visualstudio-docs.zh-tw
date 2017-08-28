@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 49a1ec49dbb03dc9705e0a7cdb40ad3587806b6b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8510de3817c7290e7a4ec47446e8f3f3ebbd1769
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
@@ -42,13 +42,13 @@ Gets the port supplier name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetPortSupplierName(   
    BSTR* pbstrName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetPortSupplierName(   
    out string pbstrName  
 );  

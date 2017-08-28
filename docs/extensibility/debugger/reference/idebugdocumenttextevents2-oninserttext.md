@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d009602cb45c1b9a542fd3ce8608d88b78e56569
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f851ac5f28d1f6b7e06fe5bd9fb74f3f27aa1771
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
@@ -42,14 +42,14 @@ Notifies the debug package that text has been inserted into the document.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT onInsert(   
    TEXT_POSITION pos,  
    DWORD         dwNumToInsert  
 );  
 ```  
   
-```cs  
+```csharp  
 int onInsert(   
    enum_TEXT_POSITION pos,  
    uint               dwNumToInsert  

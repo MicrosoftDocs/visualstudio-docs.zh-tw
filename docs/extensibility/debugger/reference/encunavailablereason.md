@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8c9f25370aefdf68a97fcb0ab4af6acf3fd6eafe
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 09a6d814499c7635e819133b148b7976a7124800
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
@@ -42,7 +42,7 @@ ms.lasthandoff: 08/24/2017
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum tagEncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  
@@ -55,7 +55,7 @@ enum tagEncUnavailableReason {
 typedef enum tagEncUnavailableReason EncUnavailableReason;  
 ```  
   
-```cs  
+```csharp  
 public enum EncUnavailableReason {  
    ENCUN_NONE,  
    ENCUN_INTEROP,  

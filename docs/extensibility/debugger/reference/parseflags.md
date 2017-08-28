@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 29c065b446e5df3b10fb9a549854a737f50fe71a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 86589a8f3886592ad1659b646b0a983a9f31f48b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="parseflags"></a>PARSEFLAGS
@@ -42,7 +42,7 @@ Specifies how to parse an expression.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
@@ -51,7 +51,7 @@ enum enum_PARSEFLAGS {
 typedef DWORD PARSEFLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f8122b047b20599b15a3f3fdbbc6d03295659de9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 63c68eab87ec26d3cf20c66e7a53061e8be79186
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
@@ -42,7 +42,7 @@ Sets the path or paths that are searched for debugging symbols.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetSymbolPath (  
    LPOLESTR            szSymbolSearchPath,  
    LPOLESTR            szSymbolCachePath,  
@@ -50,7 +50,7 @@ HRESULT SetSymbolPath (
 );  
 ```  
   
-```cs  
+```csharp  
 int SetSymbolPath(  
    string                    szSymbolSearchPath,   
    string                    szSymbolCachePath,   

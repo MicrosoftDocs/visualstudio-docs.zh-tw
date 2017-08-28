@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3d6363b268665f60d701eadf61e4f2f39d8eb211
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b3ae297bd299efd54cf1df611e67777d15681ae2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpflags"></a>BP_FLAGS
@@ -42,7 +42,7 @@ Provides optional flags that may be used to specify additional information when 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  
@@ -51,7 +51,7 @@ enum enum_BP_FLAGS {
 typedef DWORD BP_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BP_FLAGS {   
    BP_FLAG_NONE            = 0x0000,  
    BP_FLAG_MAP_DOCPOSITION = 0x0001,  

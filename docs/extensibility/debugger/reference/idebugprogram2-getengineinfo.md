@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d906945209ea6634795f2a63efe43a951befc9f4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f031cbe124765d44c116d3af35a877712cbe4502
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
@@ -42,14 +42,14 @@ Gets the name and GUID of the debug engine (DE) running this program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEngineInfo(   
    BSTR* pbstrEngine,  
    GUID* pguidEngine  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetEngineInfo(   
    out string pbstrEngine,  
    out GUID   pguidEngine  

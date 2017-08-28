@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2dfad37df5bada6edd5c5508c94fb80c87969ef4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bebd841ee5f96fcfd19aedfac6765987607cc94a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
@@ -42,14 +42,14 @@ Gets the breakpoint request information that describes this breakpoint request.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetRequestInfo(   
    BPREQI_FIELDS    dwFields,  
    BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetRequestInfo(   
    eunm_BPREQI_FIELDS  dwFields,  
    BP_REQUEST_INFO[]   pBPRequestInfo  

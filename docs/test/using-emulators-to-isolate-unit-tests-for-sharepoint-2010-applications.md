@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c2b9cdcc4bde36f95b0e6e32c9bd1aea870eb8c8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 478415dee5bcf1b37277f84ad0a49240bfc21a16
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Using emulators to isolate unit tests for Sharepoint 2010 applications
@@ -123,7 +123,7 @@ public bool ScheduleAppointment(SPWeb web, string listName, string name,
   
  The first test of the functionality in `ScheduleAppointment` method might look like this:  
   
-```cs  
+```csharp  
   
 [TestMethod]  
 public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()  
@@ -172,7 +172,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  To enable emulation in your test methods, wrap the method body in a `using` statement that creates a `SharePointEmulationScope` object. For example:  
   
-```cs  
+```csharp  
   
 [TestMethod]  
 public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()  
@@ -211,7 +211,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  For example, here's how you can modify the previous test to be dual-use:  
   
-```cs  
+```csharp  
   
 // class level field specifies emulation mode  
 private const EmulationMode emulatorMode = EmulationMode.Enabled;  
@@ -256,7 +256,7 @@ public void ScheduleAppointmentReturnsTrueWhenNewAppointmentIsCreated()
   
  Here's an example of the test class that demonstrates how to use preprocessor directives and the `TestInitialize` and `TestCleanup` attributed methods to set the emulation mode.  
   
-```cs  
+```csharp  
 //namespace declarations  
 ...  
   
@@ -333,7 +333,7 @@ namspace MySPAppTests
   
  In our example project, the `GetAppointmentsForToday` method calls the [SPList.GetItems(SPQuery)](http://msdn.microsoft.com/library/ms457534.aspx) SharePoint API method.  
   
-```cs  
+```csharp  
 // method under test  
 public string GetAppointmentsForToday(string listName, SPWeb web)  
 {  
@@ -358,7 +358,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
 > [!IMPORTANT]
 >  Test methods that explicitly create Fakes shims throw a `ShimNotSupported` exception when the test is run in the `EmulationMode.Passthrough` context. To avoid this issue, use a variable to set the `EmulationMode` value and wrap any Fakes code in an `if` statement that tests the value.  
   
-```cs  
+```csharp  
 // class level field to set emulation mode  
 private const EmulationMode emulatorMode = EmulationMode.Enabled  
   
@@ -421,7 +421,7 @@ public void GetAppointmentsForTodayReturnsOnlyTodaysAppointments()
 ##  <a name="BKMK_Example"></a> Example  
  Here's a final example that incorporates the SharePoint emulator techniques that are described above:  
   
-```cs  
+```csharp  
 using System;   
 //other namespace declarations  
 ...   

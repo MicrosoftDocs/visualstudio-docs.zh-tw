@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 275a5d23a2781ca84176d2d2079289f3f98b14f0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8f963ac7a52c8b1b5549e4b38cc465d6a452753c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
@@ -42,13 +42,13 @@ Returns the initial data for this object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetInitialData(  
    IEEDataStorage** dataOut  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetInitialData(  
    out IEEDataStorage dataOut  
 );  

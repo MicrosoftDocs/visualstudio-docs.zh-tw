@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ac4d859c75d81501b56402e406029e87806ee5f3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 63dd3f809e472bea8f558bff15e17bbfa0421a2c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Walkthrough: Creating, Editing and Maintaining a Coded UI Test
@@ -79,7 +79,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 14. At the top of the MainWindow class, add a delegate. The delegate will be used for the progress bar. To add the delegate, add the following code:  
   
-    ```cs  
+    ```csharp  
     public partial class MainWindow : Window  
     {  
             private delegate void ProgressBarDelegate(System.Windows.DependencyProperty dp, Object value);          
@@ -94,7 +94,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 15. In the button1_Click method, add the following code:  
   
-    ```cs  
+    ```csharp  
     private void button1_Click(object sender, RoutedEventArgs e)  
     {  
         double progress = 0;  
@@ -210,7 +210,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 2.  The UIMap.Designer.cs file opens with the point of error highlighted in the code:  
   
-    ```cs  
+    ```csharp  
   
     // Select 'CheckBox' check box  
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;  
@@ -246,7 +246,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 11. Add the following using statement to the file:  
   
-    ```cs  
+    ```csharp  
   
     using Microsoft.VisualStudio.TestTools.UITesting.WpfControls;  
   
@@ -254,7 +254,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 12. Add the following `WaitForControlEnabled()` method before the offending line of code identified previously:  
   
-    ```cs  
+    ```csharp  
   
               uICheckBoxCheckBox.WaitForControlEnabled();  
   
@@ -265,7 +265,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 13. In the CodedUITest1.cs file, locate the **CodedUITestMethod** method and either comment out or rename the reference to the original SimpleAppTest() method and then replace it with the new ModifiedSimpleAppTest():  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
             public void CodedUITestMethod1()  
             {  
@@ -299,7 +299,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
      The UIMap.cs file opens. The point of error is highlighted in the code:  
   
-    ```cs  
+    ```csharp  
   
     // Click 'Start' button  
     Mouse.Click(uIStartButton, new Point(27, 10));  
@@ -343,7 +343,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 11. In the UIMap.Designer.cs file, locate the UIStartButton1 property. Notice the `SearchProperties` is set to `"buttonA"`:  
   
-    ```cs  
+    ```csharp  
   
     public WpfButton UIStartButton1  
             {  
@@ -367,7 +367,7 @@ In this walkthrough, you will create a simple Windows Presentation Foundation (W
   
 12. In the UIMap.cs file, add a constructor and specify the `SearchProperties` property of the `UIStartButton` property to use the `AutomationID` property with a value of `"buttonA":`  
   
-    ```cs  
+    ```csharp  
   
     public UIMap()  
             {  

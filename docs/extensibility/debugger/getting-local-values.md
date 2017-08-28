@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: af9a4498035a15d16a09f7f01b8fa37fa0297c0f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c2cb3c1ac5b4d120fa6464983f191e03f496dbec
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="getting-local-values"></a>Getting Local Values
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This example shows an implementation of `IDebugProperty2::GetPropertyInfo` for a method's local in managed code. It also shows a helper function, `Field.GetType`, that is used to get the field's type. `Field.GetValue` is shown in [Evaluating Locals](../../extensibility/debugger/evaluating-locals.md). The helper function `Field.MapModifiersToAttributes` (not shown) simply converts a field's [FIELD_MODIFIERS](../../extensibility/debugger/reference/field-modifiers.md) flags to [DBG_ATTRIB_FLAGS](../../extensibility/debugger/reference/dbg-attrib-flags.md) values.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     public class CFieldProperty : IDebugProperty2  
@@ -196,7 +196,7 @@ namespace EEMC
 ## <a name="unmanaged-code"></a>Unmanaged Code  
  This example shows an implementation of `IDebugProperty2::GetPropertyInfo` for a method's local in unmanaged code. It also shows two helper functions, `FieldGetType` and `FieldGetValue` that are used to get the field's type and value, respectively. Note that `VARIANT`s are used for the field's value and type as a `VARIANT` can handle a wide variety of value types. In this implementation, `FieldGetValue` returns an [IDebugField](../../extensibility/debugger/reference/idebugfield.md) object that is later converted to a value in a call to `FieldGetPrimitiveValue` (which is shown in [Evaluating Locals](../../extensibility/debugger/evaluating-locals.md)).  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CFieldProperty::GetPropertyInfo(   
     in  DEBUGPROP_INFO_FLAGS infoFlags,  
     in  DWORD                radix,  

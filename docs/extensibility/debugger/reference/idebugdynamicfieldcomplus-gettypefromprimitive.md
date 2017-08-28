@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5014612a91c0564f44734592b4d3cf19df2ceb3a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8c5c3c721bdbf502ef7b47aa5e227daf5864ebf8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
@@ -41,14 +41,14 @@ Retrieves a type given its primitive type.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromPrimitive(  
    DWORD         dwCorElementType,  
    IDebugField** ppType  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeFromPrimitive(  
    uint            dwCorElementType,  
    out IDebugField ppType  

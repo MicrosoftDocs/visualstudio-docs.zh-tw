@@ -46,10 +46,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cc344929d2c7384c09c611e6420d605a5a8ab1d5
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a6a3eb5b92ca1c191c711cc1a45cfb2775986f76
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="content-controls"></a>Content Controls
@@ -188,7 +188,7 @@ ms.lasthandoff: 08/24/2017
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")  
 ```  
   
-```cs  
+```csharp  
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);  
 ```  
   

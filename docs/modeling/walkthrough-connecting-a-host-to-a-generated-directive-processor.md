@@ -20,10 +20,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e7009b5e8930c1a671c33af7e35e7ccff32e924c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Walkthrough: Connecting a Host to a Generated Directive Processor
@@ -116,7 +116,7 @@ You can write your own host that processes text templates. A basic custom host i
   
 4.  At the top of Program.cs or Module1.vb, add the following line of code:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.Win32;  
     ```  
   
@@ -129,7 +129,7 @@ You can write your own host that processes text templates. A basic custom host i
     > [!NOTE]
     >  In this step, you add references to the assemblies that are required by the generated directive processor that your host will support.  
   
-    ```cs  
+    ```csharp  
     //the host can provide standard assembly references  
     //the engine will use these references when compiling and  
     //executing the generated transformation class  
@@ -165,7 +165,7 @@ You can write your own host that processes text templates. A basic custom host i
     > [!IMPORTANT]
     >  This code contains hard-coded references to the name of the generated directive processor to which you want to connect. You could easily make this more general, in which case it looks for all directive processors listed in the registry and tries to find a match. In that case, the host would work with any generated directive processor.  
   
-    ```cs  
+    ```csharp  
     //the engine calls this method based on the directives the user has   
             //specified it in the text template  
             //this method can be called 0, 1, or more times  
@@ -250,7 +250,7 @@ You can write your own host that processes text templates. A basic custom host i
     > [!NOTE]
     >  The programming language of the text template does not need to match that of the custom host.  
   
-    ```cs  
+    ```csharp  
     Text Template Host Test  
   
     <#@ template debug="true" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation" #>  

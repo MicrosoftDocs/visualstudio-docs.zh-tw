@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 74e80c0c77fbe95327d222d60c598ca45f058ec4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e4e0ab36da7251124706826f41678fac2f93215
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
@@ -42,13 +42,13 @@ Returns a reference to the property's value.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetReference(  
    IDebugReference2** ppReference  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetReference(  
    out IDebugReference2 ppReference  
 );  

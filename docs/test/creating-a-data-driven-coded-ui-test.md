@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 388aa6ce843d1990273b0aac7a4148ffc5944d98
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f2e6f9a98756b7970ae965e784573ed98fa9c6e1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="creating-a-data-driven-coded-ui-test"></a>Creating a Data-Driven Coded UI Test
@@ -65,7 +65,7 @@ To test different conditions, you can run your tests multiple times with differe
   
      Close the test builder. The method is added to the test:  
   
-    ```cs  
+    ```csharp  
     [TestMethod]  
     public void CodedUITestMethod1()  
     {  
@@ -95,7 +95,7 @@ To test different conditions, you can run your tests multiple times with differe
   
      Because the `ValidateSum` method validates the results of the `AddNumbers` method, move it to the bottom of the code block.  
   
-    ```cs  
+    ```csharp  
     public void CodedUITestMethod1()  
     {  
   

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2ebd7c5b7b7e9c1825bcc8676baebf654f747e2f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 97bf05023ab5e97ae845ff6d62f873719e997e43
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
@@ -48,7 +48,7 @@ HRESULT CreateAlias(
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateAlias(  
    out IDebugAlias ppAlias  
 );  

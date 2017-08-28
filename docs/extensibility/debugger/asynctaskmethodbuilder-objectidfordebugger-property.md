@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9ec2c61ea492669853384702dc06776764c97529
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5c08371548bad4831b430425f1fa1221257aeb48
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder.ObjectIdForDebugger Property
@@ -46,7 +46,7 @@ Gets an object that may be used to uniquely identify this builder to the debugge
   
 ## <a name="syntax"></a>Syntax  
   
-```cs  
+```csharp  
 private object ObjectIdForDebugger  
 ```  
   

@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3e4ba0adc7d0e7441dbf2403ef0791e62132952b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 40983f5c5c79f1555ea039df8d71c931fa633f24
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Making Coded UI Tests Wait For Specific Events During Playback
@@ -73,7 +73,7 @@ In a coded UI test playback, you can instruct the test to wait for certain event
   
  Waits for the specified predicate returns to be `true`. This can be used for complex wait operation (like OR conditions) on a given control. For example, you can wait until the status text is **Succeeded** or **Failed** as shown in the following code:  
   
-```cs  
+```csharp  
   
 // Define the method to evaluate the condition   
 private static bool IsStatusDone(UITestControl control)   
@@ -91,7 +91,7 @@ statusText.WaitForControlCondition(IsStatusDone);
   
  All the previous methods are instance methods of UITestControl. This method is a static method. This method also waits for the specified predicate to be `true` but it can be used for complex wait operation (like OR conditions) on multiple controls. For example, you can wait until the status text is **Succeeded** or until an error message appears, as shown in the following code:  
   
-```cs  
+```csharp  
   
 // Define the method to evaluate the condition   
 private static bool IsStatusDoneOrError(UITestControl[] controls)   

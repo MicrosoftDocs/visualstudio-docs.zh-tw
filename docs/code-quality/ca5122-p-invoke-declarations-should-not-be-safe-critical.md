@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4d617d42107973eb8389e05fe08cac9fc3af90c7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a180aaeb955660ce0eb8d9e317ae8babc598a8a5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122 P/Invoke declarations should not be safe critical
@@ -45,7 +45,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="cause"></a>Cause  
  A P/Invoke declaration has been marked with a <xref:System.Security.SecuritySafeCriticalAttribute>:  
   
-```cs  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
   
 // ...  
@@ -66,7 +66,7 @@ public class C
 ## <a name="how-to-fix-violations"></a>How to Fix Violations  
  To make a P/Invoke available to transparent code, expose a security safe critical wrapper method for it:  
   
-```cs  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers  
   
 class C  

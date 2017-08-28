@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a027dafa1cb6033b68bb039a8deb3ce24717bda2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0caebddd60fa3b61bf1471f83e827ff367ce3cc6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
@@ -42,13 +42,13 @@ Gets the document context that corresponds to this code context. The document co
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDocumentContext(   
    IDebugDocumentContext2** ppSrcCxt  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetDocumentContext(   
    out IDebugDocumentContext2 ppSrcCxt  
 );  

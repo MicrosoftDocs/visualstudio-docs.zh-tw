@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f570cf771a3b355c16a6838a30db23cf6317e6d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1e7f7977956591a9519d62f55fd4444c99bebc00
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
@@ -42,14 +42,14 @@ Notifies the debug package that text has been replaced in the document.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT onReplaceText(   
    TEXT_POSITION pos,  
    DWORD         dwNumToReplace  
 );  
 ```  
   
-```cs  
+```csharp  
 int onReplaceText(   
    enum_TEXT_POSITION pos,  
    uint               dwNumToReplace  

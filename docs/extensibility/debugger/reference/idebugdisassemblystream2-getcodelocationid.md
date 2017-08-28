@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c3a56ef0058742c52f6f182c1854719d30aaf9b2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0614509685436f46a2f48eb8b6a6299321f84901
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
@@ -42,14 +42,14 @@ Returns a code location identifier for a particular code context.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCodeLocationId(   
    IDebugCodeContext2* pCodeContext,  
    UINT64*             puCodeLocationId  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCodeLocationId(   
    IDebugCodeContext2 pCodeContext,  
    out ulong          puCodeLocationId  

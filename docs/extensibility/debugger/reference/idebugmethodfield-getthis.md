@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ece817da9e43e1bed5ef8ab5a5635a4aad810a33
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8ae9558b7ee164f8c4c9c6b977ac7ca39d21c45c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
@@ -42,13 +42,13 @@ Gets the `this` (`Me` in [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetThis(   
    IDebugClassField** ppClass  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetThis(  
    out IDebugClassField ppClass  
 );  

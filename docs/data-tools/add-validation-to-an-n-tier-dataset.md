@@ -36,10 +36,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 45b39084ea26ab1a295be59f29418b751d252569
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 861d4c695f1e13c2c16d28f4fcc31c6eb5a77abd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Add validation to an n-tier dataset
@@ -94,7 +94,7 @@ End Sub
     End If  
     ```  
   
-    ```cs  
+    ```csharp  
     // C#  
     // Add this code to the DataTable   
     // partial class.  
@@ -162,7 +162,7 @@ End Sub
   
 5.  The following code shows how to create the `RowChanging` event handler and where to add user code to validate during the <xref:System.Data.DataTable.RowChanging> event for C#:  
   
-    ```cs  
+    ```csharp  
     partial class OrdersDataTable  
     {  
         public override void EndInit()  

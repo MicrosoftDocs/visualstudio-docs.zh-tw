@@ -14,10 +14,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2a764550322c566f94f3929808c138c6503e8ed1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5027ce1affd22c88af18301d51304958c819249a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service
@@ -106,7 +106,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
   
 7.  In the code editor, replace the `namespace WPFQuickStart.Common` (C#) namespace or the `Public Class QuickStartTask` (VB) method with the following code:  
   
-    ```cs  
+    ```csharp  
     namespace WPFQuickStart.Common  
     {  
         /// <summary>  
@@ -296,7 +296,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
   
 7.  In the Code Editor, add the following `using` or `Imports` directives to the top of the file:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
     using Newtonsoft.Json;   
     ```  
@@ -308,7 +308,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
   
 8.  Replace all of the code in the **WPFQuickStart** namespace (C#) or **Class MainWindow** class (VB) with the following code:  
   
-    ```cs  
+    ```csharp  
     namespace WPFQuickStart  
     {  
         /// <summary>  
@@ -521,7 +521,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
   
 2.  In the Code Editor, add the following `using` or **Imports** directives to the top of the file:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
     ```  
   
@@ -531,7 +531,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
   
 3.  Add the following declaration to the class, replacing *YOUR-SERVICE_HERE* with the name of the URL for your service, and replacing *YOUR-KEY-HERE* with the application key that you copied in the previous procedure:  
   
-    ```cs  
+    ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
                  "https://YOUR-SERVICE-HERE.azure-mobile.net/",  
                  "YOUR-KEY-HERE"  

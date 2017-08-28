@@ -39,10 +39,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 874094ddc980957ef0246a390d419815ff40e78c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6c80a48919a96f0fa24813cfaff5da81795ff226
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Overload operator equals on overloading add and subtract
@@ -69,7 +69,7 @@ Else
 End If  
 ```  
   
-```cs  
+```csharp  
 if (Object.ReferenceEquals(left, null))   
     return Object.ReferenceEquals(right, null);  
 return left.Equals(right);  

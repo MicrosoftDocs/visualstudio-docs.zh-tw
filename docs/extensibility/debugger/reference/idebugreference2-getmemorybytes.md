@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f29e388deb1a33ec2886ffe72e629718ec75ff8d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8ac66ae56a512a65009c72ba30c4c3162fe3863
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
@@ -42,13 +42,13 @@ Gets the memory bytes that physically contain the value of a reference. Reserved
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryBytes (   
    IDebugMemoryBytes2** ppMemoryBytes  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryBytes (   
    out IDebugMemoryBytes2 ppMemoryBytes  
 );  

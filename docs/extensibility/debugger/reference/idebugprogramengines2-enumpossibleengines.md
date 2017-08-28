@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b021edcf63afc852a3e8a007085e06292c49aee0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 64431c8adeeb56c17546f4aa6c16f517734f8941
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
@@ -42,7 +42,7 @@ Returns the GUIDs for all the possible debug engines (DE) that can debug this pr
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumPossibleEngines(   
    DWORD  celtBuffer,  
    GUID*  rgguidEngines,  
@@ -50,7 +50,7 @@ HRESULT EnumPossibleEngines(
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumPossibleEngines(   
    uint      celtBuffer,  
    GUID[]    rgguidEngines,  

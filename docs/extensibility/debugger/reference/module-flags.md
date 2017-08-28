@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e75c67cb3660353c33a26a8f0c8cf141b18e014b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2bb42c4a29330d2f554c2f2f05273349747addf9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
@@ -42,7 +42,7 @@ Used to describe a module.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  
@@ -54,7 +54,7 @@ enum enum_MODULE_FLAGS {
 typedef DWORD MODULE_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_MODULE_FLAGS {   
    MODULE_FLAG_NONE        = 0x0000,  
    MODULE_FLAG_SYSTEM      = 0x0001,  

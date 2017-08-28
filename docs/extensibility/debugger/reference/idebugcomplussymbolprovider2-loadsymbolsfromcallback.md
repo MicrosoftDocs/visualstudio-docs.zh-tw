@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 96bcb0f1821a9e310f8599e7a6ed369421f4e1c4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5c6e016d3c3bbd11bf57974dc0afe0c8df8f5d21
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
@@ -41,7 +41,7 @@ Loads debug symbols using the specified callback method.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsFromCallback(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -53,7 +53,7 @@ HRESULT LoadSymbolsFromCallback(
 );  
 ```  
   
-```cs  
+```csharp  
 int LoadSymbolsFromCallback(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -93,7 +93,7 @@ int LoadSymbolsFromCallback(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  

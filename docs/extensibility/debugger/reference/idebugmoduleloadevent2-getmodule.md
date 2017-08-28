@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9789c4526a57eb8ea619718dd28d350d49b6ea0f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e8f8c66fb4f3c65986d8d3591ad2483dd7d81955
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
@@ -42,7 +42,7 @@ Gets the module that is being loaded or unloaded.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetModule(   
    IDebugModule2** pModule,  
    BSTR*           pbstrDebugMessage,  
@@ -50,7 +50,7 @@ HRESULT GetModule(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetModule(   
    out IDebugModule2 pModule,  
    ref string        pbstrDebugMessage,  

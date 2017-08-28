@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b99dcee97074fad947ceae56afb816eb029cd1bc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 31598f3e18afdfd7d5842ce192b817dbdb8d3747
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
@@ -42,13 +42,13 @@ Gets the name of the program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetProgramName (   
    BSTR* pbstrProgramName  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetProgramName (   
    out string pbstrProgramName  
 );  
@@ -67,7 +67,7 @@ int GetProgramName (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CProgram` object that implements the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface. The `MakeBstr` function allocates a copy of the specified string as a BSTR.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
    if (!pbstrProgramName)    
       return E_INVALIDARG;    

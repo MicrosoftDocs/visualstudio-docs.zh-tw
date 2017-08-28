@@ -20,10 +20,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4b01e37aecbad238d6a66af907d3a87cba3e210d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 80ac7a90fdc727357566c76a1fa301f50dc60ac1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="updating-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Updating Ribbon Customizations in Office Projects that You Migrate to the .NET Framework 4 or the .NET Framework 4.5
@@ -55,7 +55,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public Ribbon1()  
     {  
         InitializeComponent();  
@@ -71,7 +71,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public Ribbon1()  
         : base(Globals.Factory.GetRibbonFactory())  
     {  
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/24/2017
     Me.button1 = New Microsoft.Office.Tools.Ribbon.RibbonButton()  
     ```  
   
-    ```cs  
+    ```csharp  
     this.button1 = new Microsoft.Office.Tools.Ribbon.RibbonButton();  
     ```  
   
@@ -100,7 +100,7 @@ ms.lasthandoff: 08/24/2017
     Me.button1 = Me.Factory.CreateRibbonButton()  
     ```  
   
-    ```cs  
+    ```csharp  
     this.button1 = this.Factory.CreateRibbonButton();  
     ```  
   
@@ -179,7 +179,7 @@ ms.lasthandoff: 08/24/2017
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")  
 ```  
   
-```cs  
+```csharp  
 this.tab1.Position = RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   
@@ -189,7 +189,7 @@ this.tab1.Position = RibbonPosition.AfterOfficeId("TabHome");
 Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")  
 ```  
   
-```cs  
+```csharp  
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");  
 ```  
   

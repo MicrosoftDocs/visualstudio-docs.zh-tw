@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 421de69556d8833b78b401331db4584d7243cdb7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adding User Control to the Start Page
@@ -124,7 +124,7 @@ This walkthrough shows how to add a DLL reference to a custom Start Page. The ex
   
 2.  Fill in the SetButton_Click Event Handler as follows.  
   
-    ```cs  
+    ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
     {  
         try  
@@ -142,7 +142,7 @@ This walkthrough shows how to add a DLL reference to a custom Start Page. The ex
   
 3.  You must also handle the WebFrame_Navigated event:  
   
-    ```cs  
+    ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  

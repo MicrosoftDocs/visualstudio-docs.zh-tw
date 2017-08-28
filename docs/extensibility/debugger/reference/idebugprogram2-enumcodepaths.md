@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2f083ff40b108be9ded3792c433a4dcf048f4914
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a70dc85a37f593fc56751a2890b85422b0d193d0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
@@ -42,7 +42,7 @@ Retrieves a list of the code paths for a given position in a source file.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumCodePaths(   
    LPCOLESTR            pszHint,  
    IDebugCodeContext2*  pStart,  
@@ -53,7 +53,7 @@ HRESULT EnumCodePaths(
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumCodePaths(   
    string                 pszHint,  
    IDebugCodeContext2     pStart,  

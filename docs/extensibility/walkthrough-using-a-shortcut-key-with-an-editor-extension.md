@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 857b028bb402aaa0dd5cb7cf72e0bbcf3cfdd8b6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: af4e580195d4867aebe6579bb4a4de15eaee1a8b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Walkthrough: Using a Shortcut Key with an Editor Extension
@@ -59,7 +59,7 @@ You can respond to shortcut keys in your editor extension. The following walkthr
   
  In the KeyBindingTest class file, change the class name to PurpleCornerBox. Use the light bulb that appears in the left margin to make the other appropriate changes. Inside the constructor, change the name of the adornment layer from **KeyBindingTest** to **PurpleCornerBox**:  
   
-```cs  
+```csharp  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
   
@@ -70,7 +70,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 2.  Add the following using statements.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.OLE.Interop;  
@@ -81,13 +81,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 3.  The class named KeyBindingCommandFilter should inherit from <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
-    ```cs  
+    ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
 4.  Add private fields for the text view, the next command in the command chain, and a flag to represent whether the command filter has already been added.  
   
-    ```cs  
+    ```csharp  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
     internal bool m_added;  
@@ -96,7 +96,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 5.  Add a constructor that sets the text view.  
   
-    ```cs  
+    ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
     {  
         m_textView = textView;  
@@ -115,7 +115,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 7.  Implement the `Exec()` method so that it adds a purple box to the view if a + character is typed.  
   
-    ```cs  
+    ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
     {  
         if (m_adorned == false)  
@@ -142,7 +142,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 1.  In the KeyBindingTestTextViewCreationListener file, add the following using statements:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.ComponentModel.Composition;  
@@ -157,7 +157,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 2.  In the adornment layer definition, change the name of the AdornmentLayer from **KeyBindingTest** to **PurpleCornerBox**.  
   
-    ```cs  
+    ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
     [Name("PurpleCornerBox")]  
     [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
@@ -166,7 +166,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 3.  To get the text view adapter, you must import the <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
-    ```cs  
+    ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
     internal IVsEditorAdaptersFactoryService editorFactory = null;  
   
@@ -174,7 +174,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 4.  Change the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> method so that it adds the `KeyBindingCommandFilter`.  
   
-    ```cs  
+    ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
     {  
         AddCommandFilter(textView, new KeyBindingCommandFilter(textView));  
@@ -183,7 +183,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
 5.  The `AddCommandFilter` handler gets the text view adapter and adds the command filter.  
   
-    ```cs  
+    ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
     {  
         if (commandFilter.m_added == false)  
@@ -210,7 +210,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
  In the KeyBindingTest.cs file, change the CreateVisuals() method to iterate through all the lines in the view to decorate the 'a' character.  
   
-```cs  
+```csharp  
 private void CreateVisuals(ITextViewLine line)  
 {  
     IWpfTextViewLineCollection textViewLines = this.view.TextViewLines;  

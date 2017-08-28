@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 79cddc78f8c7f90bc364dc49dca013c1b5a2dab3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1c948a156dbdcdab70a070d764f1bc10f887bf1a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="managing-universal-windows-projects"></a>Managing Universal Windows Projects
@@ -47,7 +47,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 3.  Open TestUniversalProject.cs and add the following `using` statements:  
   
-    ```cs  
+    ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     using Microsoft.VisualStudio;  
@@ -60,7 +60,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 4.  In the TestUniversalProject class add a private field pointing to the **Output** window.  
   
-    ```cs  
+    ```csharp  
     public sealed class TestUniversalProject   
     {  
         IVsOutputWindowPane output;  
@@ -70,7 +70,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 5.  Set the reference to the output pane inside TestUniversalProject constructor:  
   
-    ```cs  
+    ```csharp  
     private TestUniversalProject(Package package)  
     {  
         if (package == null)  
@@ -95,7 +95,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 6.  Remove the existing code from the `ShowMessageBox` method:  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
     {  
     }  
@@ -103,7 +103,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 7.  Get the DTE object, which we will use for several different purposes in this walkthrough. Also, make sure that a solution is loaded when the menu button is clicked.  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {   
         var dte = (EnvDTE.DTE)this.ServiceProvider.GetService(typeof(EnvDTE.DTE));  
@@ -121,7 +121,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 8.  Find the shared project. The shared project is a pure container; it does not build or produce outputs. The following method finds the first shared project in the solution by looking for the <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> object that has the shared project capability.  
   
-    ```cs  
+    ```csharp  
     private IVsHierarchy FindSharedProject()  
     {  
         var sln = (IVsSolution)this.ServiceProvider.GetService(typeof(SVsSolution));  
@@ -143,7 +143,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 9. In the `ShowMessageBox` method, output the caption (the project name that appears in the **Solution Explorer**) of the shared project.  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         var dte = (DTE)this.ServiceProvider.GetService(typeof(DTE));  
@@ -173,7 +173,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 10. Get the active platform project. Platform projects are the projects that contain platform-specific code and resources. The following method uses the new field <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7> to get the active platform project.  
   
-    ```cs  
+    ```csharp  
     private IVsHierarchy GetActiveProjectContext(IVsHierarchy hierarchy)  
     {  
         IVsHierarchy activeProjectContext;  
@@ -191,7 +191,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 11. In the `ShowMessageBox` method, output the caption of the active platform project.  
   
-    ```cs  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         var dte = (DTE)this.ServiceProvider.GetService(typeof(DTE));  
@@ -234,7 +234,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 12. Iterate through the platform projects. The following method gets all the importing (platform) projects from the shared project.  
   
-    ```cs  
+    ```csharp  
     private IEnumerable<IVsHierarchy> EnumImportingProjects(IVsHierarchy hierarchy)  
     {  
         IVsSharedAssetsProject sharedAssetsProject;  
@@ -253,7 +253,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
     > [!IMPORTANT]
     >  If the user has opened a C++ universal Windows app project in the experimental instance, the code above throws an exception. This is a known issue. To avoid the exception, replace the `foreach` block above with the following:  
   
-    ```cs  
+    ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
     for (int i = 0; i < importingProjects.Count; ++i)  
     {  
@@ -263,7 +263,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 13. In the `ShowMessageBox` method, output the caption of each platform project. Insert the following code after the line that outputs the caption of the active platform project. Only the platform projects that are loaded appear in this list.  
   
-    ```cs  
+    ```csharp  
     output.OutputStringThreadSafe("Platform projects:\n");  
   
     IEnumerable<IVsHierarchy> projects = this.EnumImportingProjects(sharedHier);  
@@ -279,7 +279,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 14. Change the active platform project. The following method sets the active project using <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.SetProperty%2A>.  
   
-    ```cs  
+    ```csharp  
     private int SetActiveProjectContext(IVsHierarchy hierarchy, IVsHierarchy activeProjectContext)  
     {  
         return hierarchy.SetProperty((uint)VSConstants.VSITEMID.Root, (int)__VSHPROPID7.VSHPROPID_SharedItemContextHierarchy, activeProjectContext);  
@@ -288,7 +288,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 15. In the `ShowMessageBox` method, change the active platform project. Insert this code inside the `foreach` block.  
   
-    ```cs  
+    ```csharp  
     bool isActiveProjectSet = false;  
     string platformCaption = null;  
     foreach (IVsHierarchy platformHier in projects)  
@@ -324,7 +324,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 1.  Find the shared items in the platform project. The items in the shared project appear in the platform project as shared items. You can't see them in the **Solution Explorer**, but you can walk the project hierarchy to find them. The following method walks the hierarchy and collects all the shared items. It optionally outputs the caption of each item,. The shared items are identified by the new property <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
-    ```cs  
+    ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
     {  
         string caption = HierarchyUtilities.GetHierarchyProperty<string>(hier, itemid, (int)__VSHPROPID.VSHPROPID_Caption);  
@@ -356,7 +356,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 2.  In the `ShowMessageBox` method, add the following code to walk the platform project hierarchy items. Insert it inside the `foreach` block.  
   
-    ```cs  
+    ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
     var sharedItemIds = new List<uint>();  
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
@@ -364,7 +364,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 3.  Read the shared items. The shared items appear in the platform project as hidden linked files, and you can read all the properties as ordinary linked files. The following code reads the full path of the first shared item.  
   
-    ```cs  
+    ```csharp  
     var sharedItemId = sharedItemIds[0];  
     string fullPath;  
     ErrorHandler.ThrowOnFailure(((IVsProject)activePlatformHier).GetMkDocument(sharedItemId, out fullPath));  
@@ -445,7 +445,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 3.  Open the HierarchyEventListener.cs file and add the following using statements:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.VisualStudio.Shell.Interop;  
     using Microsoft.VisualStudio;  
     using System.IO;  
@@ -454,7 +454,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 4.  Have the `HierarchyEventListener` class implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>:  
   
-    ```cs  
+    ```csharp  
     class HierarchyEventListener : IVsHierarchyEvents  
     { }  
   
@@ -462,7 +462,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 5.  Implement the members of <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents>, as in the code below.  
   
-    ```cs  
+    ```csharp  
     class HierarchyEventListener : IVsHierarchyEvents  
     {  
         private IVsHierarchy hierarchy;  
@@ -506,7 +506,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 6.  In the same class add another event handler for the DTE event <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>, which occurs whenever a project item is renamed.  
   
-    ```cs  
+    ```csharp  
     public void OnItemRenamed(EnvDTE.ProjectItem projItem, string oldName)  
     {  
         output.OutputStringThreadSafe(string.Format("[Event] Renamed {0} to {1} in project {2}\n",  
@@ -516,7 +516,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 7.  Sign up for the hierarchy events. You need to sign up separately for every project you are tracking. Add the following code in `ShowMessageBox`, one for the shared project, and the other for one of the platform projects.  
   
-    ```cs  
+    ```csharp  
     // hook up the event listener for hierarchy events on the shared project  
     HierarchyEventListener listener1 = new HierarchyEventListener(sharedHier, output);  
     uint cookie1;  
@@ -531,7 +531,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 8.  Sign up for the DTE project item event <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed>. Add the following code after you hook up the second listener.  
   
-    ```cs  
+    ```csharp  
     // hook up DTE events for project items  
     Events2 dteEvents = (Events2)dte.Events;  
     dteEvents.ProjectItemsEvents.ItemRenamed += listener1.OnItemRenamed;  
@@ -545,7 +545,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
      The following method modifies the name of a project item file.  
   
-    ```cs  
+    ```csharp  
     private void ModifyFileNameInProject(IVsHierarchy project, string path)  
     {    
         int found;  
@@ -563,7 +563,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 10. Call this method after all the other code in `ShowMessageBox` to modify the file name the item in the shared project. Insert this after the code that gets the full path of the item in the shared project.  
   
-    ```cs  
+    ```csharp  
     // change the file name of an item in a shared project  
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ErrorHandler.ThrowOnFailure(((IVsProject)activePlatformHier).GetMkDocument(sharedItemId, out fullPath));   
@@ -575,7 +575,7 @@ Universal Windows apps are apps that target both Windows 8.1 and Windows Phone 8
   
 12. Now try renaming a file in a platform project, and you can see the difference in the events that get fired. Add the following code in `ShowMessageBox` after the call to `ModifyFileName`.  
   
-    ```cs  
+    ```csharp  
     // change the file name of an item in a platform project  
     var unsharedItemIds = new List<uint>();  
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, unsharedItemIds, false, false);  

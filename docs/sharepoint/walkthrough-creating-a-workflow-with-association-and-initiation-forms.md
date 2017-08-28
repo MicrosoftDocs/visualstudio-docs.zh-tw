@@ -27,10 +27,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7ee04fda23bf03f6101731557d08e07befe66ecd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a9a1507cc7c2d98e98858d46563cd691b6ad969d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-workflow-with-association-and-initiation-forms"></a>Walkthrough: Creating a Workflow with Association and Initiation Forms
@@ -158,7 +158,7 @@ ms.lasthandoff: 08/24/2017
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     private string GetAssociationData()  
     {  
         // TODO: Return a string that contains the association data that   
@@ -221,7 +221,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     protected void Page_Load(object sender, EventArgs e)  
     {  
         InitializeParams();  
@@ -244,7 +244,7 @@ ms.lasthandoff: 08/24/2017
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     // This method is called when the user clicks the button to start the workflow.          
     private string GetInitiationData()  
     {  
@@ -321,7 +321,7 @@ ms.lasthandoff: 08/24/2017
     End Sub   
     ```  
   
-    ```cs  
+    ```csharp  
     private void createTask1_MethodInvoking(object sender, EventArgs e)  
     {  
         createTask1_TaskId1 = Guid.NewGuid();  
@@ -350,7 +350,7 @@ ms.lasthandoff: 08/24/2017
     End Sub   
     ```  
   
-    ```cs  
+    ```csharp  
     private void checkApprovalNeeded(object sender, ConditionalEventArgs   
       e)  
     {  
@@ -382,7 +382,7 @@ ms.lasthandoff: 08/24/2017
     End Sub   
     ```  
   
-    ```cs  
+    ```csharp  
     private void logToHistoryListActivity1_MethodInvoking(object sender,   
       EventArgs e)  
     {  

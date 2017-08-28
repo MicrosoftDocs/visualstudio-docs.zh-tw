@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 35a4824e1059c29f360b0ca8b3249ed84f49f9f1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 03bb7bc8cbecff6b74f5ea2c2e0d95f516c8f536
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
@@ -42,13 +42,13 @@ Retrieves the position of the function in the source document.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetOffset(   
    TEXT_POSITION* pPosition  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetOffset(  
    TEXT_POSITION[] pPosition  
 );  

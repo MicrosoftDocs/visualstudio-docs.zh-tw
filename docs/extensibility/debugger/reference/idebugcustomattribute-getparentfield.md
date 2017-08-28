@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 382eadb5d43161b537731d78df91d8d32ea9a10f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1f30a03099c4b8464f64737d706486d07c42a537
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
@@ -42,13 +42,13 @@ Gets the field to which the custom attribute is attached.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetParentField(   
    IDebugField** ppField  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetParentField(  
    out IDebugField ppField  
 );  

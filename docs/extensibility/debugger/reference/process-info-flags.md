@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 865608b6fd066c6cd894bc6b5eeffce03570deee
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f1bd6e203424bdc53e6af0aa97d320b80ee9d911
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
@@ -42,7 +42,7 @@ Describes or specifies properties of a process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  
@@ -52,7 +52,7 @@ enum enum_PROCESS_INFO_FLAGS {
 typedef DWORD PROCESS_INFO_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 enum enum_PROCESS_INFO_FLAGS {   
    PIFLAG_SYSTEM_PROCESS    = 0x00000001,  
    PIFLAG_DEBUGGER_ATTACHED = 0x00000002,  

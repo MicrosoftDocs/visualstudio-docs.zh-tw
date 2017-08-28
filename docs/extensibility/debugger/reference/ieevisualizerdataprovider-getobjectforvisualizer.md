@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: de6df6614e2d97394d18ec9390570291eea60096
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b5786b88fba5ced1011d4a0874905331883aac24
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
@@ -48,7 +48,7 @@ HRESULT GetObjectForVisualizer(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetObjectForVisualizer(  
    out IDebugObject ppObject  
 );  

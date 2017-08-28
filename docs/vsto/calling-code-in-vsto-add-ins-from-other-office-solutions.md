@@ -25,10 +25,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 56e78ab02591f1ab01260963ebe50d5841088311
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7d0d19940d8b132c5bc2e561a4dd9f966a2c6c44
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Calling Code in VSTO Add-ins from Other Office Solutions
@@ -138,7 +138,7 @@ Dim utilities As ExcelImportData.IAddInUtilities = TryCast( _
 utilities.ImportData()  
 ```  
   
-```cs  
+```csharp  
 object addInName = "ExcelImportData";  
 Office.COMAddIn addIn = Globals.ThisAddIn.Application.COMAddIns.Item(ref addInName);  
 ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)addIn.Object;  

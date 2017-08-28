@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 55d89e084bfc63258e6eca4200b7cc83f2e2014f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 49e07797f38251fd5dc3d870b753c7a4df3c755b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="seekstart"></a>SEEK_START
@@ -42,7 +42,7 @@ Specifies the position from which to start seeking in a disassembly stream.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  
@@ -53,7 +53,7 @@ enum enum_SEEK_START {
 typedef DWORD SEEK_START;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_SEEK_START {   
    SEEK_START_BEGIN       = 0x0001,  
    SEEK_START_END         = 0x0002,  

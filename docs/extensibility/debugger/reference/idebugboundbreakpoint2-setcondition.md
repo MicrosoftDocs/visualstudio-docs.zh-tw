@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c887a860eb5257c5c3c3d2873657684b92932c81
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2b4e7fa667bfd5c0956233588210bc87e55d02bd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
@@ -43,13 +43,13 @@ Sets or changes the condition associated with this bound breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetCondition(   
    enum_BP_CONDITION bpCondition  
 );  

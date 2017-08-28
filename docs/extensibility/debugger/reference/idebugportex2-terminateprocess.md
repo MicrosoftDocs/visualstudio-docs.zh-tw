@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 68c4008b4bea26b0e60e06ec7e96ac77b525c8aa
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0329d523e9f70eacb1f905ebe1fc42a586e5677b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
@@ -42,13 +42,13 @@ Terminates a process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT TerminateProcess(   
    IDebugProcess2* pPortProcess  
 );  
 ```  
   
-```cs  
+```csharp  
 int TerminateProcess(   
    IDebugProcess2 pPortProcess  
 );  

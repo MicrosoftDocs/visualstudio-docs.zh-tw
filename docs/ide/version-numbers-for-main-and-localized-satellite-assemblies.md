@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 190d3fc41e06eebb01790317b0ba2834239ebf3a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 19ca788264cd3e1075353f5986c365bcf2a57f67
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>Version Numbers for Main and Localized Satellite Assemblies
@@ -55,7 +55,7 @@ The <xref:System.Resources.SatelliteContractVersionAttribute> class provides ver
   
 ```  
   
-```cs  
+```csharp  
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   

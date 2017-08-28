@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d51d28b7d576acab9f703ba63a6b53b542d71f57
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: db49db8d9b0f4918bcc4487fc5c1b0566d306654
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="getting-local-properties"></a>Getting Local Properties
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="managed-code"></a>Managed Code  
  This example shows an implementation of `IEnumDebugPropertyInfo2::EnumChildren` for a method's locals in managed code.  
   
-```cs  
+```csharp  
 namespace EEMC  
 {  
     public class CEnumMethodField : IEnumDebugFields  
@@ -115,7 +115,7 @@ namespace EEMC
 ## <a name="unmanaged-code"></a>Unmanaged Code  
  This example shows an implementation of `IEnumDebugPropertyInfo2::EnumChildren` for a method's locals in unmanaged code.  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CEnumPropertyInfo::Next(  
     in  ULONG                count,  
     out DEBUG_PROPERTY_INFO* pelements,   

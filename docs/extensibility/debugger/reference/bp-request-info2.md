@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 42c49deedfbbdaaab6312e037c6b822ecdb7aee6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4afebff82e866e01c866d1ed2f344ead13dcea14
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bprequestinfo2"></a>BP_REQUEST_INFO2
@@ -42,7 +42,7 @@ Contains the information required to implement a breakpoint, including vendor GU
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_REQUEST_INFO2 {  
    BPREQI_FIELDS   dwFields;  
    GUID            guidLanguage;  
@@ -60,7 +60,7 @@ typedef struct _BP_REQUEST_INFO2 {
 } BP_REQUEST_INFO2;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_REQUEST_INFO2 {  
    public uint           dwFields;  
    public Guid           guidLanguage;  

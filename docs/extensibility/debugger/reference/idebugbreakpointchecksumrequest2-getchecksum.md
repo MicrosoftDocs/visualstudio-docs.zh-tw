@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 03eb6226f92f0dc724b8d05decf885e194719cc4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 32988f396d6fdb4433599edd651f79883013e55e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
@@ -40,14 +40,14 @@ Retrieves the document checksum for a breakpoint request given the unique identi
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksum(   
    REFGUID        guidAlgorithm,  
    CHECKSUM_DATA *pChecksumData  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetChecksum(   
    ref Guid               guidAlgorithm,  
    out enum_CHECKSUM_DATA pChecksumData  
@@ -67,7 +67,7 @@ public int GetChecksum(
 ## <a name="example"></a>Example  
  The following example shows a function that checks whether the checksum of a document, which is about to be bound, matches one from the UI.  
   
-```cpp#  
+```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  

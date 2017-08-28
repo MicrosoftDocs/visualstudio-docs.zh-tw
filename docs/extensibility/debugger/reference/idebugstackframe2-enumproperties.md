@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e3164a2583ce1079c522271741212d9d9970fc13
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5359698b2ae148abd5fc38da346ebcd5c456634c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
@@ -42,7 +42,7 @@ Creates an enumerator for properties associated with the stack frame, such as lo
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumProperties (   
    DEBUGPROP_INFO_FLAGS      dwFieldSpec,  
    UINT                      nRadix,  
@@ -53,7 +53,7 @@ HRESULT EnumProperties (
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumProperties (   
    enum_DEBUGPROP_INFO_FLAGS   dwFieldSpec,  
    uint                        nRadix,  

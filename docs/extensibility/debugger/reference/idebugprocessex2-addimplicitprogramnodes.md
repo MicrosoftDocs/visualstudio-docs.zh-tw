@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 43855b6131194f2f84d18c005f7cf5688257121e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b248f3077a21e0e1f8dfc989971454a8e5c06aa7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
@@ -42,7 +42,7 @@ This method adds a program node for each debug engine (DE) specified.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AddImplicitProgramNodes(  
    REFGUID guidLaunchingEngine,  
    GUID*   rgguidSpecificEngines,  
@@ -50,7 +50,7 @@ HRESULT AddImplicitProgramNodes(
 );  
 ```  
   
-```cs  
+```csharp  
 int AddImplicitProgramNodes(  
    ref Guid guidLaunchingEngine,  
    Guid[]   rgguidSpecificEngines,  

@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bbd315f19d91d1d0738803aea2099c7adb5ed143
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bbf1ab74d1a1eeeaab4e61792b9e723bc9c9313f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
@@ -41,13 +41,13 @@ Retrieves the specified extended field kind.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetExtendedKind(  
    FIELD_KIND_EX* pdwKind  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExtendedKind(  
    ref enum_FIELD_KIND_EX pdwKind  
 );  

@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1c0d31b4a079970282e0d66acf1cc3f944747e2e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d818e1194d87d39934b5e19747e38f0213fddb08
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="registering-a-legacy-language-service"></a>Registering a Legacy Language Service
@@ -58,7 +58,7 @@ In the managed package framework (MPF), the language service is proffered by a V
   
 ### <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -77,7 +77,7 @@ namespace TestLanguagePackage
   
 ### <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -102,7 +102,7 @@ namespace TestLanguagePackage
   
 ### <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -121,7 +121,7 @@ namespace TestLanguagePackage
   
 ### <a name="example"></a>Example  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -148,7 +148,7 @@ namespace TestLanguagePackage
 ### <a name="example"></a>Example  
  This example shows two property pages, **Options** and **Indenting**, and one node that contains the second property page.  
   
-```cs  
+```csharp  
 using Microsoft.VisualStudio.Shell;  
   
 namespace TestLanguagePackage  
@@ -183,7 +183,7 @@ namespace TestLanguagePackage
 ### <a name="example"></a>Example  
  This example shows a typical approach to proffering a service and supplying an idle timer.  
   
-```cs  
+```csharp  
   
 using System;  
 using System.Runtime.InteropServices;  

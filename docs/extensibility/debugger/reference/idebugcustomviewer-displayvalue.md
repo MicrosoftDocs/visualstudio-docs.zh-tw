@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b3dd1c9297cbef09f376c764b33c4b0a92ebb562
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c3bc315c94dabe095ee1c95d13877b87b1ebbd70
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
@@ -42,7 +42,7 @@ This method is called to display the specified value.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayValue(  
    HWND             hwnd,  
    DWORD            dwID,  
@@ -51,7 +51,7 @@ HRESULT DisplayValue(
 );  
 ```  
   
-```cs  
+```csharp  
 int DisplayValue(  
    IntPtr          hwnd,   
    uint            dwID,   

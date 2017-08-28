@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2ad0fe31572fda794a8be06580330a63c0ca0d0b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 46a6808c0d07cd3a1f819f903aea3a5ac4df88a7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="moduleinfo"></a>MODULE_INFO
@@ -42,7 +42,7 @@ Describes a particular module (DLL, EXE, or assembly).
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagMODULE_INFO {   
    MODULE_INFO_FIELDS dwValidFields;  
    BSTR               m_bstrName;  
@@ -59,7 +59,7 @@ typedef struct tagMODULE_INFO {
 } MODULE_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct MODULE_INFO {   
    public uint     dwValidFields;  
    public string   m_bstrName;  

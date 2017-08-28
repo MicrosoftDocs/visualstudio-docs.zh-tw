@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d382e54143b186eda14597052418f76ede22eb1a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 71211a0946c969d7b1cffc3eefc4f33b2f659df3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
@@ -42,7 +42,7 @@ Sets the value pointed to from a series of consecutive bytes.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetBytes(   
    DWORD  dwStart,  
    DWORD  dwCount,  
@@ -51,7 +51,7 @@ HRESULT SetBytes(
 );  
 ```  
   
-```cs  
+```csharp  
 int SetBytes(  
    uint     dwStart,   
    uint     dwCount,   

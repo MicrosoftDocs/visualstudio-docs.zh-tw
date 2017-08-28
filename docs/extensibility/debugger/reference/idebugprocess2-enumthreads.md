@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ad9d9612782c9f4a6387b382468f0f9cd635eca1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: da0bfd2700c00e215f7f42d5247cd0a42881fc35
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2enumthreads"></a>IDebugProcess2::EnumThreads
@@ -42,13 +42,13 @@ Retrieves a list of all the threads running in the process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumThreads(  
    IEnumDebugThreads2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumThreads(  
    out IEnumDebugThreads2 ppEnum  
 );  

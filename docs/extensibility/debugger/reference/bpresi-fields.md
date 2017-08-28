@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8c53eb507f73ee3a6ed63c5e9a04193090a141a7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7bf02f2da4f11c5e0c702f331b9960d30f9b282f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
@@ -42,7 +42,7 @@ Specifies the information  to be retrieved about the successful resolution of a 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  
@@ -52,7 +52,7 @@ enum enum_BPRESI_FIELDS {
 typedef DWORD BPRESI_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_BPRESI_FIELDS {   
    BPRESI_BPRESLOCATION = 0x0001,  
    BPRESI_PROGRAM       = 0x0002,  

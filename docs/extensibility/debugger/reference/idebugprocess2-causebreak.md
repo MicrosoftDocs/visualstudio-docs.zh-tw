@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 321acc41193cdc4bb4abf45c57dba7ea25f2357c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 09980d63410d9bbabaea7e010906078fa3810c68
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
@@ -42,13 +42,13 @@ Requests that the next program that is running code in this process halt and sen
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CauseBreak(   
    void  
 );  
 ```  
   
-```cs  
+```csharp  
 int CauseBreak();  
 ```  
   

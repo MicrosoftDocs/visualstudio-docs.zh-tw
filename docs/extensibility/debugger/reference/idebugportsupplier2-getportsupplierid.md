@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 34d9de01bf9a365bc9e8ada0f87e647f76ffd67f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2201df4c73028583667dd100d2c068b26ff86271
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
@@ -42,13 +42,13 @@ Gets the port supplier identifier.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetPortSupplierId(   
    GUID* pguidPortSupplier  
 );  
 ```  
   
-```cs  
+```csharp  
 HRESULT GetPortSupplierId(   
    out Guid pguidPortSupplier  
 );  

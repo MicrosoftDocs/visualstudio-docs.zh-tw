@@ -34,10 +34,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0f3c29f4aba14f6b17759758cf7ab9f364f2b07b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5f16658320df87a479d9669fadf269856f80a67a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extending the Properties, Task List, Output, and Options Windows
@@ -81,13 +81,13 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 1.  In the TodoWindowControl.xaml.cs file, add the following using statement:  
   
-    ```cs  
+    ```csharp  
     using System;  
     ```  
   
 2.  Add a public reference to the TodoWindow and have the TodoWindowControl constructor take a TodoWindow parameter. The code should look like this:  
   
-    ```cs  
+    ```csharp  
     public TodoWindow parent;  
   
     public TodoWindowControl(TodoWindow window)  
@@ -99,7 +99,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 3.  In TodoWindow.cs, change TodoWindowControl constructor to include the TodoWindow parameter. The code should look like this:  
   
-    ```cs  
+    ```csharp  
     public TodoWindow() : base(null)  
     {  
         this.Caption = "TodoWindow";  
@@ -115,7 +115,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 1.  Add a class named `ToolsOptions.cs`. Make the ToolsOptions class inherit from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```cs  
+    ```csharp  
     class ToolsOptions : DialogPage  
     {  
     }  
@@ -123,13 +123,13 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 2.  Add the following using statement:  
   
-    ```cs  
+    ```csharp  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
 3.  The Options page in this walkthrough provides only one option named DaysAhead. Add a private field named **daysAhead** and a property named **DaysAhead** to the ToolsOptions class:  
   
-    ```cs  
+    ```csharp  
     private double daysAhead;  
   
     public double DaysAhead  
@@ -145,7 +145,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 1.  In TodoWindowPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the TodoWindowPackage class:  
   
-    ```cs  
+    ```csharp  
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]  
     ```  
   
@@ -170,7 +170,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 2.  Add the following using statements the TodoItem.cs file.  
   
-    ```cs  
+    ```csharp  
     using System.ComponentModel;  
     using System.Windows.Forms;  
     using Microsoft.VisualStudio.Shell.Interop;  
@@ -178,7 +178,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 3.  Add the `public` access modifier to the class declaration.  
   
-    ```cs  
+    ```csharp  
     public class TodoItem  
     {  
     }  
@@ -186,7 +186,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
      Add the two properties, Name and DueDate. We'll do the UpdateList() and CheckForErrors() later.  
   
-    ```cs  
+    ```csharp  
     public class TodoItem  
     {  
         private TodoWindowControl parent;  
@@ -221,7 +221,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 4.  Add a private reference to the user control. Add a constructor that takes the user control and the name for this ToDo item. To find the value for daysAhead, it gets the Options page property.  
   
-    ```cs  
+    ```csharp  
     private TodoWindowControl parent;  
   
     public TodoItem(TodoWindowControl control, string itemName)  
@@ -250,7 +250,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 5.  Because instances of the `TodoItem` class will be stored in the ListBox and the ListBox will call the `ToString` function, you must overload the `ToString` function. Add the following code to TodoItem.cs, after the constructor and before the end of the class.  
   
-    ```cs  
+    ```csharp  
     public override string ToString()  
     {  
         return name + " Due: " + dueDate.ToShortDateString();  
@@ -259,7 +259,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 6.  In TodoWindowControl.xaml.cs, add stub methods to the TodoWindowControl class for the `CheckForError` and `UpdateList` methods. Put them after the ProcessDialogChar and before the end of the file.  
   
-    ```cs  
+    ```csharp  
     public void CheckForErrors()  
     {  
     }  
@@ -277,7 +277,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 1.  Replace the existing `button1_Click` function with code that creates a new TodoItem and adds it to the ListBox. It calls TrackSelection(), which will be defined later.  
   
-    ```cs  
+    ```csharp  
     private void button1_Click(object sender, RoutedEventArgs e)  
     {  
         if (textBox.Text.Length > 0)  
@@ -303,7 +303,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 4.  Add the following using statements to TodoWindowControl.xaml.cs:  
   
-    ```cs  
+    ```csharp  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.Shell.Interop;  
     using Microsoft.VisualStudio;  
@@ -321,7 +321,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 6.  Now, fill in the TrackSelection function, which will provide integration with the **Properties** window. This function is called when the user adds an item to the ListBox or clicks an item in the ListBox. It adds the contents of the ListBox to a SelectionContainer and passes the SelectionContainer to the **Properties** window's <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> event handler. The TrackSelection service tracks selected objects in the user interface (UI) and displays their properties  
   
-    ```cs  
+    ```csharp  
     private SelectionContainer mySelContainer;  
     private System.Collections.ArrayList mySelItems;  
     private IVsWindowFrame frame = null;  
@@ -371,7 +371,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 7.  Now, add the rest of the UpdateList function code in TodoWindowControl.xaml.cs. It should drop and re-add the modified TodoItem from the ListBox.  
   
-    ```cs  
+    ```csharp  
     public void UpdateList(TodoItem item)  
     {  
         var index = listBox.SelectedIndex;  
@@ -396,7 +396,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 1.  In TodoWindowControl.xaml.cs, in the `button1_Click` method, add code to get the **General** pane of the **Output** window (which is the default), and write to it. The method should look like this:  
   
-    ```cs  
+    ```csharp  
     private void button1_Click(object sender, EventArgs e)  
     {  
         if (textBox.Text.Length > 0)  
@@ -423,7 +423,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 2.  In order to add items to the Task List, you need a to add a nested class to the TodoWindowControl class. The nested class needs to derive from <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Add the following code to the end of the TodoWindowControl class.  
   
-    ```cs  
+    ```csharp  
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]  
     public class TodoWindowTaskProvider : TaskProvider  
     {  
@@ -436,7 +436,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 3.  Next add a private reference to TodoTaskProvider and a CreateProvider() method to the TodoWindowControl class. The code should look like this:  
   
-    ```cs  
+    ```csharp  
     private TodoWindowTaskProvider taskProvider;  
     private void CreateProvider()  
     {  
@@ -450,7 +450,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 4.  Add ClearError(), which clears the Task List, and ReportError(), which adds an entry to the Task List, to the TodoWindowControl class.  
   
-    ```cs  
+    ```csharp  
     private void ClearError()  
     {  
         CreateProvider();  
@@ -482,7 +482,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
   
 5.  Now implement the CheckForErrors method, as follows.  
   
-    ```cs  
+    ```csharp  
     public void CheckForErrors()  
     {  
         foreach (TodoItem item in listBox.Items)  

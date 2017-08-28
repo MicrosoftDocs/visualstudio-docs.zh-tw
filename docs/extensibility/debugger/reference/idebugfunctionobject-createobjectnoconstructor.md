@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 2a1c4d1f5c381a372d8055e6f78f3098d95a17f7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7e739ec710320cf6c0cfa9a6e75ef4626652d5dd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
@@ -42,14 +42,14 @@ Creates an object with no constructor.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CreateObjectNoConstructor(   
    IDebugField*   pClassObject,  
    IDebugObject** ppObject  
 );  
 ```  
   
-```cs  
+```csharp  
 int CreateObjectNoConstructor(  
    IDebugField      pClassField,   
    out IDebugObject ppObject  

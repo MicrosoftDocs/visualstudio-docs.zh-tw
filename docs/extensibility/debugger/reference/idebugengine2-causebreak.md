@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4e55ab700848f824a3500e8b94c8d75a21e856d1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9f9026984b37d273b455229c09f52b4fd5fb8416
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
@@ -42,13 +42,13 @@ Requests that all programs being debugged by this debug engine (DE) to stop exec
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CauseBreak(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int CauseBreak();  
 ```  
   

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f7c9df9c7408d1fdfdb403e09c7515915d530909
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2b0a7f080e26a6c55fa9ba759ed93e6b1eb09156
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
@@ -42,14 +42,14 @@ Creates an enumerator for selected local variables of the method.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumLocals(   
    IDebugAddress*     pAddress,  
    IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumLocals(  
    IDebugAddress        pAddress,   
    out IEnumDebugFields ppLocals  
@@ -71,7 +71,7 @@ int EnumLocals(
   
  A method can contain multiple scoping contexts or blocks. For example, the following contrived method contains three scopes, the two inner blocks and the method body itself.  
   
-```cs  
+```csharp  
 public void func(int index)  
 {  
     // Method body scope  

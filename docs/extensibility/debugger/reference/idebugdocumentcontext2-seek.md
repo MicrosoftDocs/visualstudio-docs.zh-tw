@@ -1,53 +1,70 @@
 ---
-title: "IDebugDocumentContext2::Seek | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::Seek"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::Seek"
+title: IDebugDocumentContext2::Seek | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDocumentContext2::Seek
+helpviewer_keywords:
+- IDebugDocumentContext2::Seek
 ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDocumentContext2::Seek
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e532f27a8256206575f930862a3c7e85c66b3a37
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-將文件內容移動指定的陳述式或程式行數。  
+---
+# <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
+Moves the document context by a given number of statements or lines.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Seek(   
-   int                      nCount,  
-   IDebugDocumentContext2** ppDocContext  
+```cpp  
+HRESULT Seek(   
+   int                      nCount,  
+   IDebugDocumentContext2** ppDocContext  
 );  
 ```  
   
-```cpp#  
-int Seek(   
-   int                        nCount,  
-   out IDebugDocumentContext2 ppDocContext  
+```cpp  
+int Seek(   
+   int                        nCount,  
+   out IDebugDocumentContext2 ppDocContext  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `nCount`  
- \[in\]陳述式或將繼續進行，取決於文件內容的行數。  
+ [in] The number of statements or lines to move ahead, depending on the document context.  
   
  `ppDocContext`  
- \[\] out傳回新的[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)物件，做為新的位置。  
+ [out] Returns a new [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) object with the new position.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d624be129bb2b61ac406d50892e1cbe643aaeba0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b91d3888c6ac3565ab8c8822fd241c9431a8f06c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="introduction-to-wpf"></a>Introduction to WPF
@@ -102,7 +102,7 @@ Windows Presentation Foundation (WPF) lets you create desktop client application
 </Window>  
 ```  
   
-```cs  
+```csharp  
 using System.Windows; // Window, RoutedEventArgs, MessageBox   
   
 namespace SDKSample  

@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cb1209106ee437cc98be8a5a296459f02756a8b2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 59622017a1e938d5bd32ed0bf6a9579e8435385b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
@@ -43,13 +43,13 @@ Determines whether this pending breakpoint can bind to a code location.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanBind (   
    IEnumDebugErrorBreakpoints2** ppErrorEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int CanBind (   
    out IEnumDebugErrorBreakpoints2 ppErrorEnum  
 );  
@@ -68,7 +68,7 @@ int CanBind (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CPendingBreakpoint` object that exposes the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
 {    
    HRESULT hr;    

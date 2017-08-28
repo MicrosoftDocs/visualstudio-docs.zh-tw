@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4bac421c26e2160c88f450e6484f1774dc4af4ee
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c3071e70c34a139dad20484f783ab32e6bd081e9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-and-removing-property-pages"></a>Adding and Removing Property Pages
@@ -68,7 +68,7 @@ The Project Designer provides a centralized location for managing project proper
   
     ```  
   
-    ```cs  
+    ```csharp  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-independent property pages.  
@@ -109,7 +109,7 @@ The Project Designer provides a centralized location for managing project proper
     property = propertyPagesList  
     ```  
   
-    ```cs  
+    ```csharp  
     string buildEventsPageGuid = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}";  
     int index = propertyPagesList.IndexOf(buildEventsPageGuid);  
     if (index != -1)  
@@ -151,7 +151,7 @@ The Project Designer provides a centralized location for managing project proper
     End Class  
     ```  
   
-    ```cs  
+    ```csharp  
     class DeployPropertyPage : Form, Microsoft.VisualStudio.OLE.Interop.IPropertyPage  
     {  
         . . . .   
@@ -178,7 +178,7 @@ The Project Designer provides a centralized location for managing project proper
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
     ```  
   
-    ```cs  
+    ```csharp  
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
@@ -200,7 +200,7 @@ The Project Designer provides a centralized location for managing project proper
     End Function  
     ```  
   
-    ```cs  
+    ```csharp  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-dependent property pages.  

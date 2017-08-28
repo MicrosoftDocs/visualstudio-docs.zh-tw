@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ba709b5d7fdc1ea380c2ce0cf40c56c53f830e3d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2845b7c3d10b62c268843f934cf3730019afd657
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
@@ -42,14 +42,14 @@ Adds a port.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AddPort(   
    IDebugPortRequest2* pRequest,  
    IDebugPort2**       ppPort  
 );  
 ```  
   
-```cs  
+```csharp  
 int AddPort(   
    IDebugPortRequest2 pRequest,  
    out IDebugPort2    ppPort  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cbf5851c53bc11724b253d8ebc107434bdc9d1f9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca920a3aff5cda28edfbd2b0c0b6a4329fb34988
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
@@ -42,13 +42,13 @@ Notifies the debug engine (DE) whether or not to stop at the current code locati
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CanStop (   
    BOOL fCanStop  
 );  
 ```  
   
-```cs  
+```csharp  
 int CanStop (   
    int fCanStop  
 );  

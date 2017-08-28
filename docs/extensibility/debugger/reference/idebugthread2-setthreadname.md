@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e967427a5bcb3b89ea3d4c7de14f47e3566b1a30
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3c6421fa7cbe8a152c8d75b72a9a4c1c60af461b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
@@ -42,13 +42,13 @@ Sets the name of the thread.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetThreadName (   
    LPCOLESTR pszName  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetThreadName (   
    string pszName  
 );  

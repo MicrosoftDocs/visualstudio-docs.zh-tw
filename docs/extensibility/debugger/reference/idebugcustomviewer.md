@@ -1,67 +1,84 @@
 ---
-title: "IDebugCustomViewer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer"
-helpviewer_keywords: 
-  - "IDebugCustomViewer 介面"
+title: IDebugCustomViewer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomViewer
+helpviewer_keywords:
+- IDebugCustomViewer interface
 ms.assetid: 7aca27d3-c7b8-470f-b42c-d1e9d9115edd
 caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
----
-# IDebugCustomViewer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 74fcd4f2c5ac72aeede1acd407f8bfb97f18932d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-這個介面可讓您的運算式評估工具 \(EE\)，以顯示屬性的值是必要的格式。  
+---
+# <a name="idebugcustomviewer"></a>IDebugCustomViewer
+This interface enables an expression evaluator (EE) to display a property's value in whatever format is necessary.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```  
 IDebugCustomViewer : IUknown  
 ```  
   
-## 實作器注意事項  
- EE 會實作這個介面來顯示屬性的值，以自訂的格式。  
+## <a name="notes-for-implementers"></a>Notes for Implementers  
+ An EE implements this interface to display a property's value in a custom format.  
   
-## 呼叫者的備忘稿  
- COM 的呼叫`CoCreateInstance`函式會具現化這個介面。  `CLSID`傳遞至`CoCreateInstance`取自登錄。  呼叫[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)會取得在登錄中的位置。  如需詳細資訊，以及範例，請參閱 「 備註 」。  
+## <a name="notes-for-callers"></a>Notes for Callers  
+ A call to COM's `CoCreateInstance` function instantiates this interface. The `CLSID` passed to `CoCreateInstance` is obtained from the registry. A call to [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) obtains the location in the registry. See Remarks for details as well as the Example.  
   
-## 方法 Vtable 順序  
- 這個介面會實作下列方法：  
+## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
+ This interface implements the following method:  
   
-|方法|描述|  
-|--------|--------|  
-|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|沒有項目，即顯示指定的值所需。|  
+|Method|Description|  
+|------------|-----------------|  
+|[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)|Does whatever is necessary to display a given value.|  
   
-## 備註  
- 當慣用的方式將無法顯示屬性的值，這個介面用 — 比方說，與資料表格或其他複雜屬性型別。  自訂的檢視器\]，以表示藉由`IDebugCustomViewer`介面，不同於型別視覺化檢視，也就是外部的程式，以顯示特定的型別，不論得知 ee 給予的資料。  得知 ee 給予實作自訂的檢視器專屬於該 EE。  使用者選取哪一種視覺化檢視來使用，它的型別視覺化檢視或自訂的檢視器。  請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需這個處理序的詳細資訊。  
+## <a name="remarks"></a>Remarks  
+ This interface is used when a property's value cannot be displayed by normal means—for example, with a data table or another complex property type. A custom viewer, as represented by the `IDebugCustomViewer` interface, is different from a type visualizer, which is an external program for displaying data of a specific type regardless of the EE. The EE implements a custom viewer that is specific to that EE. A user selects which type of visualizer to use, be it a type visualizer or a custom viewer. See [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) for details on this process.  
   
- 自訂的檢視器已登錄為 EE 相同的方式，並且因此，需要一種語言的 GUID 及供應商的 GUID。  只為 EE 已知精確的度量資訊 \(或登錄項目名稱\)。  這個度量資訊會在傳回[DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構，依序呼叫會傳回[GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)。  計量所儲存的值是`CLSID` ，會傳遞至 COM 的`CoCreateInstance`函式 \(請參閱範例\)。  
+ A custom viewer is registered in the same way as an EE and, therefore, requires a language GUID and a vendor GUID. The exact metric (or registry entry name) is known only to the EE. This metric is returned in the [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structure, which in turn is returned by a call to [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md). The value stored in the metric is the `CLSID` that is passed to COM's `CoCreateInstance` function (see the Example).  
   
- [SDK 協助程式進行偵錯](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)函式， `SetEEMetric`，可以用來註冊自訂的檢視器。  請參見"運算式評估工具 」 登錄`Debugging SDK Helpers`自訂的檢視器進行特定的登錄機碼的需要。  請注意，自訂的檢視器必須只有一個計量 \(這就是 EE 實作者所定義\)，而運算式評估工具需要數個預先定義的度量資訊。  
+ The [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) function, `SetEEMetric`, can be used to register a custom viewer. See the "Expression Evaluators" registry section of `Debugging SDK Helpers` for the specific registry keys that a custom viewer needs. Note that a custom viewer needs only one metric (which is defined by the EE's implementer) whereas an expression evaluator requires several predefined metrics.  
   
- 一般情況下，自訂的檢視器提供唯讀檢視的資料，因為[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面提供給[DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md)沒有方法變更為字串的屬性的值除外。  為了支援變更任意的資料區塊，得知 ee 給予會實作自訂的介面，相同的物件實作`IDebugProperty3`介面。  這個自訂介面提供變更任意資料區塊的所需的方法。  
+ Normally, a custom viewer provides a read-only view of the data, since the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface supplied to [DisplayValue](../../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) has no methods for changing the property's value except as a string. In order to support changing arbitrary blocks of data, the EE implements a custom interface on the same object that implements the `IDebugProperty3` interface. This custom interface would then provide the methods needed to change an arbitrary block of data.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 範例  
- 這個範例會示範如何從屬性取得第一個自訂的檢視器，如果該屬性有任何自訂的檢視器。  
+## <a name="example"></a>Example  
+ This example shows how to get the first custom viewer from a property if that property has any custom viewers.  
   
-```cpp#  
+```cpp  
 IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)  
 {  
     // This string is typically defined globally.  For this example, it  
@@ -105,8 +122,8 @@ IDebugCustomViewer *GetFirstCustomViewer(IDebugProperty2 *pProperty)
 }  
 ```  
   
-## 請參閱  
- [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>See Also  
+ [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [SDK 協助程式進行偵錯](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

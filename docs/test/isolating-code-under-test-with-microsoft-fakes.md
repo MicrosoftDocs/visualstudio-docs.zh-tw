@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 934e3b35f095f949ad11ef73e4365169d1c3e2c3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9726d092be94ba082adbcc21ebd09a94fe0c60d2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolating Code Under Test with Microsoft Fakes
@@ -78,7 +78,7 @@ Microsoft Fakes help you isolate the code you are testing by replacing other par
   
      Instead, define an interface that can be implemented by the other component, and which can also be implemented by a stub for test purposes:  
   
-    ```cs  
+    ```csharp  
     public int GetContosoPrice(IStockFeed feed)  
     { return feed.GetSharePrice("COOO"); }  
   
@@ -101,7 +101,7 @@ Microsoft Fakes help you isolate the code you are testing by replacing other par
   
 3.  In your tests, construct instances of the stub and provide code for its methods:  
   
-    ```cs  
+    ```csharp  
     [TestClass]  
     class TestStockAnalyzer  
     {  
@@ -166,7 +166,7 @@ Microsoft Fakes help you isolate the code you are testing by replacing other par
   
  Suppose your component contains calls to `DateTime.Now`:  
   
-```cs  
+```csharp  
 // Code under test:  
     public int GetTheCurrentYear()  
     {  
@@ -187,7 +187,7 @@ Microsoft Fakes help you isolate the code you are testing by replacing other par
   
 2.  **Insert a shim in a ShimsContext**  
   
-    ```cs  
+    ```csharp  
     [TestClass]  
     public class TestClass1  
     {   

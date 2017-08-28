@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4d87d637b2c899f908805aaa6cd61dfd7dde3caf
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e1a2257144eda1bf2951d5d6a7bbd946f7feb2d4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
@@ -42,7 +42,7 @@ Gets a description of the stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetInfo (   
    FRAMEINFO_FLAGS dwFieldSpec,  
    UINT            nRadix,  
@@ -50,7 +50,7 @@ HRESULT GetInfo (
 );  
 ```  
   
-```cs  
+```csharp  
 int GetInfo (   
    enum_FRAMEINFO_FLAGS dwFieldSpec,  
    uint                 nRadix,  

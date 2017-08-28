@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 31db8ad64b2f91d8b3da06ff0089de2a2dd6bd52
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 01e68e9dd7629aae3d32da31ddbf9a3e46e9d532
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-create-a-vsct-file"></a>How to: Create a .Vsct File  
@@ -156,7 +156,7 @@ You can create an XML-based .vsct file from an existing binary .cto file. Doing 
   
 5.  Add a ProvideMenuResource attribute to the package class, as shown in the following example.  
   
-    ```cs  
+    ```csharp  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
     ```  
   

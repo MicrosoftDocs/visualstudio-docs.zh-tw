@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3fa3dfe831c121e03ccb7d93bd1b50188171dee0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 889f350fed8dfaf3c052b3f9fc22f4480ea23737
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bpresolutioncode"></a>BP_RESOLUTION_CODE
@@ -42,13 +42,13 @@ Describes the location of a code breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _BP_RESOLUTION_CODE {   
    IDebugCodeContext2* pCodeContext;  
 } BP_RESOLUTION_CODE;  
 ```  
   
-```cs  
+```csharp  
 public struct BP_RESOLUTION_CODE {   
    public IDebugCodeContext2 pCodeContext;  
 };  

@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d86b9e1f8352ff827bf6cc6919c048c60f17e890
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d69fbe6a4f3c5453053f81cffd1753dca0470438
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
@@ -42,14 +42,14 @@ Gets the object pointed to.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DeReference(   
    DWORD          dwIndex,  
    IDebugObject** ppObject  
 );  
 ```  
   
-```cs  
+```csharp  
 int Dereference(  
    uint             dwIndex,   
    out IDebugObject ppObject  

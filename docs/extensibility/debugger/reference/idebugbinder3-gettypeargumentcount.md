@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1614c312c6aa307bd151cc76acbc843cd092a313
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9e676597c96441d0a33a190d45d78a5b4129ccfe
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
@@ -48,7 +48,7 @@ HRESULT GetTypeArgumentCount(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetTypeArgumentCount(  
    out uint uCount  
 );  

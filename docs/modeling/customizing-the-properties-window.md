@@ -19,10 +19,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a9f2aba4e5c4eaa89a284662d4f22665b7c0b1a1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 82a3e26ffcc0bfaa25efcdc5b57976733fe2af05
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="customizing-the-properties-window"></a>Customizing the Properties Window
@@ -231,7 +231,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
   
  Define a class that derives from <xref:System.ComponentModel.TypeConverter>. Add the code in a separate file in the **Dsl** project. For example:  
   
-```cs  
+```csharp  
 /// <summary>  
 /// Type converter that provides a list of values   
 /// to be displayed in the property grid.  

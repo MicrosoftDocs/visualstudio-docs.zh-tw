@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9a99449b966206bdbe371e80e32e6cd8cd8e2130
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 82f7330108481959b457c0f69d80c355c69831c3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="programdestroyflags"></a>PROGRAM_DESTROY_FLAGS
@@ -40,7 +40,7 @@ Enumerates the valid values of the program destroy flags.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
    PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  
@@ -48,7 +48,7 @@ enum enum_PPROGRAM_DESTROY_FLAGS
 typedef DWORD PROGRAM_DESTROY_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_PPROGRAM_DESTROY_FLAGS  
 {  
    PROGRAM_DESTROY_CONTINUE_DEBUGGING = 0x1  

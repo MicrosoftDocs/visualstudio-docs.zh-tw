@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: f7b59b5ff5addc30741eec4440b3159de903aea3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 845511af34a9d5827120d98a408d8d4b5d6f78dc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
@@ -42,13 +42,13 @@ Gets the system process identifier for the process hosting the program.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetHostPid (   
    AD_PROCESS_ID * pdwHostPid  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetHostPid (   
    out AD_PROCESS_ID pdwHostPid  
 );  
@@ -64,7 +64,7 @@ int GetHostPid (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CProgram` object that implements the [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetHostPid(DWORD* pdwHostPid) {    
     // Check for valid argument.    
    if (pdwHostPid)    

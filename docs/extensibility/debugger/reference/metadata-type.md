@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8e7489fe4195c9ca16273efaa60209e54f6d9062
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f2fd53d0e6a0b92a3c8c7b030d503578aa9d2f98
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
@@ -42,7 +42,7 @@ This structure specifies information about a field type taken from metadata.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_METADATA {  
    ULONG32  ulAppDomainID;  
    GUID     guidModule;  
@@ -50,7 +50,7 @@ typedef struct _tagTYPE_METADATA {
 } METADATA_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public struct METADATA_TYPE {  
    public uint ulAppDomainID;  
    public Guid guidModule;  

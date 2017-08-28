@@ -17,10 +17,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 32cb47a722f5cae7eeebb72dbfba60e1762b8fe3
-ms.openlocfilehash: 29b991a7e7b3d31d3dc076fc1ae8f5dd5527e4cd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f5a25b8a478a1c50808e1c6af15d2b36edfbdcd0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Create a simple data application with WPF and Entity Framework 6
@@ -126,7 +126,7 @@ This walkthough shows how to create a basic "forms over data" application in Vis
      
      Add a `using` directive for System.Data.Entity to bring the Load extension method into scope:  
   
-     ```cs
+     ```csharp
      using System.Data.Entity;  
      ```  
 

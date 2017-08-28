@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 310f35e403e870b4cb5705d6181f2881ac2237ec
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cdc951d340fbdf07effac4e0df2c19ac0e2947cd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
@@ -42,14 +42,14 @@ This method returns the exact type of a variable.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ResolveDynamicType (  
    IDebugDynamicField *pDynamic,  
    IDebugField       **ppResolved  
 );  
 ```  
   
-```cs  
+```csharp  
 int ResolveDynamicType(  
    IDebugDynamicField pDynamic,   
    out IDebugField    ppResolved  

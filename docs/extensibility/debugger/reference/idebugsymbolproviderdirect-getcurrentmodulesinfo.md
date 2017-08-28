@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0290eadffa24db79f901f6d78511dc9b18f8823e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 25cbece11a4f00f1d70362a86269899ee6e93043
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
@@ -41,7 +41,7 @@ Retrieves information about the modules in the symbol group.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCurrentModulesInfo(  
    unsigned long * pCount,  
    GUID *          ppGuids,  
@@ -51,7 +51,7 @@ HRESULT GetCurrentModulesInfo(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCurrentModulesInfo(  
    uint       pCount,  
    Guid       ppGuids,  

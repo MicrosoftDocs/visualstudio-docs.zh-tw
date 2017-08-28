@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 682b984c99bb2a8634b5b2c47cc7c3208cb71a72
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c7d446cc48fa5bb21495dbee07e0496c28e832f5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
@@ -42,13 +42,13 @@ Gets a memory context of a reference. Reserved for future use.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMemoryContext (   
    IDebugMemoryContext2** ppMemory  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryContext (   
    out IDebugMemoryContext2 ppMemory  
 );  

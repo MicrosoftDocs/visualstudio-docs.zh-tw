@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cdd91c67793ce67c1d69b3af2d35552e92eb1170
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a3cf362657225ed6d7173431152e4fdb40ebd314
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
@@ -42,13 +42,13 @@ This method gets the Edit and Continue (ENC) update for this program. A custom d
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetENCUpdate(   
    IUnknown** ppUpdate  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetENCUpdate(  
    out object ppUpdate  
 );  

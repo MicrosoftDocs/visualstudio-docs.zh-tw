@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 46b08682c513694cb66be1cc9a2e2cd8e3b987a4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ac300d90d6cd6841cdcc7213a5a6004a29b5a6f6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
@@ -42,7 +42,7 @@ This method gets the language that was used to compile the code at the debug add
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetLanguage(   
    IDebugAddress* pAddress,  
    GUID*          pguidLanguage,  
@@ -50,7 +50,7 @@ HRESULT GetLanguage(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetLanguage(  
    IDebugAddress pAddress,   
    out Guid      pguidLanguage,   

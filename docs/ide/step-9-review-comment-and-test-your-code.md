@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 966399189801605273fe5b7b1cdc47dfaf5a7062
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0be5e2b0e5d7471ec6ed60077545557ee1c9f151
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Step 9: Review, Comment, and Test Your Code
@@ -51,7 +51,7 @@ You next add a comment to your code. A comment is a note that doesn't change the
   
      The following is an example of a statement.  
   
-    ```cs  
+    ```csharp  
     pictureBox1.Load(openFileDialog1.FileName);  
     ```  
   

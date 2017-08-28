@@ -28,10 +28,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b80c378d146629c553bd3f228b58c501f04d79fe
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 142b66d965ccb51098a443645b3f2691d4644aaf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151: Fields with critical types should be security critical
@@ -45,7 +45,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="cause"></a>Cause  
  A security transparent field or a safe critical field is declared. Its type is specified as security critical. For example:  
   
-```cs  
+```csharp  
 [assembly: AllowPartiallyTrustedCallers]  
   
    [SecurityCritical]  
@@ -66,7 +66,7 @@ ms.lasthandoff: 08/24/2017
 ## <a name="how-to-fix-violations"></a>How to Fix Violations  
  To fix a violation of this rule, mark the field with the <xref:System.Security.SecurityCriticalAttribute> attribute, or make the type that is referenced by the field eith security transparent or safe critical.  
   
-```cs  
+```csharp  
 // Fix 1: Make the referencing field security critical  
 [assembly: AllowPartiallyTrustedCallers]  
   

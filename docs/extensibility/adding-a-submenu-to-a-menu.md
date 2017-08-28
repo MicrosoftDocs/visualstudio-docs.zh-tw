@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 621bbfa210d93fca5be08a1346baae74c88187a8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6492dd6f989337b55225a14dd7da4508a8de068b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-submenu-to-a-menu"></a>Adding a Submenu to a Menu
@@ -103,13 +103,13 @@ This walkthrough builds on the demonstration in [Adding a Menu to the Visual Stu
   
 1.  Open TestCommand.cs and add the following command ID after the existing command ID.  
   
-    ```cs  
+    ```csharp  
     public const int cmdidTestSubCmd = 0x105;  
     ```  
   
 2.  Add the sub-command. Find the command constructor. Add the following lines just after the call to the `AddCommand` method.  
   
-    ```cs  
+    ```csharp  
     CommandID subCommandID = new CommandID(CommandSet, (int)TestCommandPackageGuids.cmdidTestSubCmd);  
     MenuCommand subItem = new MenuCommand(  
         new EventHandler(SubItemCallback), subCommandID);  
@@ -119,7 +119,7 @@ This walkthrough builds on the demonstration in [Adding a Menu to the Visual Stu
   
      The `SubItemCallback` command handler will be defined later. The constructor should now look like this:  
   
-    ```cs  
+    ```csharp  
     private TestCommand(Package package)  
             {  
                 if (package == null)  
@@ -144,7 +144,7 @@ This walkthrough builds on the demonstration in [Adding a Menu to the Visual Stu
   
 3.  Add SubItemCallback(). This is the method that is called when the new command in the submenu is clicked.  
   
-    ```cs  
+    ```csharp  
     private void SubItemCallback(object sender, EventArgs e)  
     {  
         IVsUIShell uiShell = (IVsUIShell)this.ServiceProvider.GetService(  

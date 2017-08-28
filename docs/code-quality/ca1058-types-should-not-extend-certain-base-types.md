@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a2c632656683e36329eda655da2b018020aa3c82
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: def196d568d99947219baf406b7cbf922f95e387
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Types should not extend certain base types
@@ -77,7 +77,7 @@ ms.lasthandoff: 08/24/2017
   
  **Examples of Incorrect Usage**  
   
-```cs  
+```csharp  
 public class MyCollection : CollectionBase  
 {  
 }  
@@ -89,7 +89,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
   
  **Examples of Correct Usage**  
   
-```cs  
+```csharp  
 public class MyCollection : Collection<T>  
 {  
 }  

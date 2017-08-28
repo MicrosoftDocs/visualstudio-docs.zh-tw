@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 966928ed97aef1c692b5019fc6e8d7280dbbe4f6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c5562836530a830b197300afd6c86b3c82605293
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
@@ -108,7 +108,7 @@ Namespace Microsoft.Samples
 End Namespace  
 ```  
   
-```cs  
+```csharp  
   
       using System;   
 using System.Diagnostics;   

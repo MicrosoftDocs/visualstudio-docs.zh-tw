@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 063075468d7a12967eab2439b8e2dd157dc6288f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e5b9964dee0580fe0fbab6d817c4dc2abf56dad4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
@@ -41,13 +41,13 @@ Enables the expression evaluator (EE) to specify the callback interface that the
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetCallback (  
    IDebugSettingsCallback2* pCallback  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetCallback (  
    IDebugSettingsCallback2 pCallback  
 );  
@@ -66,7 +66,7 @@ int SetCallback (
 ## <a name="example"></a>Example  
  The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
 {  
     // precondition  

@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: da62fb0666914563d36c7f5feb568d23b0d104ca
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2976187778d144259b697b5253c78d4afe65b4ff
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extract-interface-refactoring-c"></a>Extract Interface Refactoring (C#)
@@ -51,7 +51,7 @@ Extract Interface is a refactoring operation that provides an easy way to create
   
 1.  Create a console application named `ExtractInterface`, and then replace `Program` with the following code  
   
-    ```cs  
+    ```csharp  
     // Invoke Extract Interface on ProtoA.  
     // Note:  the extracted interface will be created in a new file.  
     class ProtoA  
@@ -74,7 +74,7 @@ Extract Interface is a refactoring operation that provides an easy way to create
   
      You see the new file, IProtoA.cs, and the following code:  
   
-    ```cs  
+    ```csharp  
     using System;  
     namespace TopThreeRefactorings  
     {  

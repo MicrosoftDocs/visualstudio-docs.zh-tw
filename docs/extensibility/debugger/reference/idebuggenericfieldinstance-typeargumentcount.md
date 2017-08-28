@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 05a73eaa509f2d15d3c51cb1816e11f1cac52635
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bfd419af233f5f9725499313af8003e952509af0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
@@ -41,13 +41,13 @@ Returns the number of type parameter arguments for this instance.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT TypeArgumentCount(  
    ULONG32* pcArgs  
 );  
 ```  
   
-```cs  
+```csharp  
 int TypeArgumentCount(  
    ref uint pcArgs  
 );  

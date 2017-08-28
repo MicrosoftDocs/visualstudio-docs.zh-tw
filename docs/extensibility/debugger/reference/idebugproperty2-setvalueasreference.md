@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 68f0165f1b6998dc118c6279cba5d9666ea820c2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 58cc520d773d65cc3eba0588c2b8763079019018
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
@@ -42,7 +42,7 @@ Sets the value of this property to the value of the given reference.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetValueAsReference(  
    IDebugReference2** rgpArgs,  
    DWORD              dwArgCount,  
@@ -51,7 +51,7 @@ HRESULT SetValueAsReference(
 );  
 ```  
   
-```cs  
+```csharp  
 int SetValueAsReference(  
    IDebugReference2[] rgpArgs,  
    uint               dwArgCount,  

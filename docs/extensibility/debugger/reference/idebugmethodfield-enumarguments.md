@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5446d57f4940c16bd83fda4d0502e121c5efe0dc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6c3f4594264462e7df3b2bd1b13dd39d771e7207
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
@@ -42,13 +42,13 @@ Creates an enumerator for the type of each argument required to call the method.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumArguments(   
    IEnumDebugFields** ppParams  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumArguments(  
    out IEnumDebugFields ppParams  
 );  

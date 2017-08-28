@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b182b9e19538513ab3fce7b0670f09f0af9194b9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d54fff1d1083bf5d48d30a0f19ffa5c354ef1a8e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Add code to TableAdapters in n-tier applications
@@ -77,7 +77,7 @@ You can extend the functionality of a `TableAdapter` by creating a partial class
     End Class  
     ```  
   
-    ```cs  
+    ```csharp  
     public partial class CustomersTableAdapter  
     {  
         // Add code here to add functionality  

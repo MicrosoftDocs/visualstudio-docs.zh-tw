@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d50d80760a7172f6d53ef712ddbe9f5fe3a7a696
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 36a67a5a86bda48cbb71856b2c3e40043016d712
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmodule2reloadsymbolsdeprecated"></a>IDebugModule2::ReloadSymbols_Deprecated
@@ -42,14 +42,14 @@ OBSOLETE. DO NOT USE. Reloads the symbols for this module.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ReloadSymbols(   
    LPCOLESTR pszUrlToSymbols,  
    BSTR*     pbstrDebugMessage  
 );  
 ```  
   
-```cs  
+```csharp  
 int ReloadSymbols(   
    string     pszUrlToSymbols,  
    out string pbstrDebugMessage  

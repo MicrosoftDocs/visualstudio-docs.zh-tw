@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: db3f837d76ea4e0d0de0c54ae7e9151fc5ab55b6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f3e2f6ee39523250f3d3588ed21c21c9a146295
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="fieldkindex"></a>FIELD_KIND_EX
@@ -40,7 +40,7 @@ Enumerates additional kinds of fields that an [IDebugField](../../../extensibili
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  
@@ -50,7 +50,7 @@ enum enum_FIELD_KIND_EX
 typedef DWORD FIELD_KIND_EX;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FIELD_KIND_EX  
 {  
    FIELD_KIND_EX_NONE = 0,  

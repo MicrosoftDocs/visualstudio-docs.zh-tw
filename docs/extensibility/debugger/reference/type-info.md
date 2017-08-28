@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 0d4e4ca140424a9252a283379c65bf554d09c124
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 98dcd468a7cac91541811de6f8f0eb79a85bfa73
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="typeinfo"></a>TYPE_INFO
@@ -42,7 +42,7 @@ This structure specifies various kinds of information about a field's type.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 struct _tagTYPE_INFO_UNION {  
    dwTYPE_KIND dwKind;  
    union {  
@@ -54,7 +54,7 @@ struct _tagTYPE_INFO_UNION {
 } TYPE_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct TYPE_INFO {  
    public uint   dwKind;  
    public IntPtr unionmember;  
@@ -100,7 +100,7 @@ public struct TYPE_INFO {
 ## <a name="example"></a>Example  
  This example shows how to interpret the `unionmember` member of the `TYPE_INFO` structure in C#. This example shows interpreting only one type (`TYPE_KIND_METADATA`) but the others are interpreted in exactly the same way.  
   
-```cs  
+```csharp  
 using System;  
 using System.Runtime.Interop.Services;  
 using Microsoft.VisualStudio.Debugger.Interop;  

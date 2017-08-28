@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7396ea74f72c7407d41f396c6b9a713faf8826c0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c40747ca3422bbb229c73f3a01a5f760a05f4fd0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Run-Time Text Generation with T4 Text Templates
@@ -131,7 +131,7 @@ This report is Company Confidential.
 ### <a name="embedded-program-code"></a>Embedded program code  
  You can insert program code between `<#` and `#>`. For example:  
   
-```cs  
+```csharp  
 <table>  
     <# for (int i = 1; i <= 10; i++)  
        { #>  
@@ -167,7 +167,7 @@ This report is Company Confidential.
 ### <a name="generating-text-at-run-time"></a>Generating text at run time  
  In your application code, you can generate the content of your template using a call like this:  
   
-```cs  
+```csharp  
 MyWebPage page = new MyWebPage();  
 String pageContent = page.TransformText();  
 System.IO.File.WriteAllText("outputPage.html", pageContent);  
@@ -193,7 +193,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
   
  For example, you could create a separate file **MyWebPageCode.cs**:  
   
-```cs  
+```csharp  
 partial class MyWebPage  
 {  
     private MyData m_data;  
@@ -202,7 +202,7 @@ partial class MyWebPage
   
  In your template file **MyWebPage.tt**, you could write:  
   
-```cs  
+```csharp  
 <h2>Sales figures</h2>  
 <table>  
 <# foreach (MyDataItem item in m_data.Items)   
@@ -217,7 +217,7 @@ partial class MyWebPage
   
  To use this template in the application:  
   
-```cs  
+```csharp  
 MyData data = ...;  
 MyWebPage page = new MyWebPage(data);  
 String pageContent = page.TransformText();  
@@ -318,7 +318,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
   
  **SharedFragments.tt:**  
   
-```cs  
+```csharp  
 <#@ template language="C#" #>  
 <#+  
 protected void SharedText(int n)  
@@ -334,7 +334,7 @@ protected void SharedText(int n)
   
  **MyTextTemplate1.tt:**  
   
-```cs  
+```csharp  
 <#@ template language="C#" inherits="SharedFragments" #>  
 begin 1  
    <# SharedText(2); #>  
@@ -344,7 +344,7 @@ end 1
   
  **MyProgram.cs:**  
   
-```cs  
+```csharp  
 ...   
 MyTextTemplate1 t1  = new MyTextTemplate1();  
 string result = t1.TransformText();  
@@ -364,7 +364,7 @@ end 1
   
  **AbstractBaseTemplate1.tt:**  
   
-```cs  
+```csharp  
 <#@ template language="C#" #>  
   
 Here is the description for this derived template:  
@@ -388,7 +388,7 @@ End of common template.
   
  **DerivedTemplate1.tt:**  
   
-```cs  
+```csharp  
 <#@ template language="C#" inherits="AbstractBaseTemplate1" #>  
 <#   
   // Set the base template properties:  
@@ -415,7 +415,7 @@ protected override void SpecificFragment(int n)
   
  **Application code:**  
   
-```cs  
+```csharp  
 ...   
 DerivedTemplate1 t1 = new DerivedTemplate1();  
 string result = t1.TransformText();  

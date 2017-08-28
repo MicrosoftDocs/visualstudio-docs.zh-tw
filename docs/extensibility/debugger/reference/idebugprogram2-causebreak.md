@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 32c85b2a83012d867e6b6d5a6336b948589c6c32
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6ba58f5af0498f376dc7b7acbbe5a3dd6aa75952
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogram2causebreak"></a>IDebugProgram2::CauseBreak
@@ -42,13 +42,13 @@ Requests that the program stop execution the next time one of its threads attemp
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT CauseBreak(   
    void   
 );  
 ```  
   
-```cs  
+```csharp  
 int CauseBreak();  
 ```  
   

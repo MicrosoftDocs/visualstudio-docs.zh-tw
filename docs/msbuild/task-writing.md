@@ -1,41 +1,58 @@
 ---
-title: "工作撰寫 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, 建立工作"
-  - "MSBuild, 寫入工作"
-  - "工作, 為 MSBuild 建立"
+title: Task Writing | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, writing tasks
+- tasks, creating for MSBuild
+- MSBuild, creating tasks
 ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 19
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
----
-# 工作撰寫
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: kempb
+ms.author: kempb
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 633d01614009ca69d3e8ce78b60530b2881f47c2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-提供程式碼的工作，這些程式碼會在建置程序中執行。  工作包含在目標中。  常見工作的程式庫會隨 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供，您也可以自行建立工作。  如需隨 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供之工作程式庫的詳細資訊，請參閱 [Task Reference](../msbuild/msbuild-task-reference.md)。  
+---
+# <a name="task-writing"></a>Task Writing
+Tasks provide the code that runs during the build process. Tasks are contained in targets. A library of typical tasks is included with [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], and you can also create your own tasks. For more information about the library of tasks that are included with [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], see [Task Reference](../msbuild/msbuild-task-reference.md).  
   
-## 工作  
- 工作的例子包括複製一個或多個檔案的 [Copy](../msbuild/copy-task.md)、建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及編譯 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。  每一個工作都會實作為 .NET 類別，而這個類別再實作 Microsoft.Build.Framework.dll 組件中定義的 <xref:Microsoft.Build.Framework.ITask> 介面。  
+## <a name="tasks"></a>Tasks  
+ Examples of tasks include [Copy](../msbuild/copy-task.md), which copies one or more files, [MakeDir](../msbuild/makedir-task.md), which creates a directory, and [Csc](../msbuild/csc-task.md), which compiles [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] source code files. Each task is implemented as a .NET class that implements the <xref:Microsoft.Build.Framework.ITask> interface, which is defined in the Microsoft.Build.Framework.dll assembly.  
   
- 實作工作的方法有兩種：  
+ There are two approaches you can use when implementing a task:  
   
--   直接實作 <xref:Microsoft.Build.Framework.ITask> 介面。  
+-   Implement the <xref:Microsoft.Build.Framework.ITask> interface directly.  
   
--   從 Helper 類別 <xref:Microsoft.Build.Utilities.Task> 衍生您的類別，該 Helper 類別是在 Microsoft.Build.Utilities.dll 組件中定義的。  工作會實作 ITask 並提供某些 ITask 成員的預設實作。  此外，記錄也較為容易。  
+-   Derive your class from the helper class, <xref:Microsoft.Build.Utilities.Task>, which is defined in the Microsoft.Build.Utilities.dll assembly. Task implements ITask and provides default implementations of some ITask members. Additionally, logging is easier.  
   
- 在這兩種情況中，您都必須在類別中加入名為 `Execute` 的方法，這是在工作執行時呼叫的方法。  這個方法不會採用任何參數，但會傳回 `Boolean` 值：如果工作成功為 `true`，工作失敗則為 `false`。  在下列程式碼中，示範了不執行任何動作但會傳回 `true` 的工作。  
+ In both cases, you must add to your class a method named `Execute`, which is the method that is called when the task runs. This method takes no parameters and returns a `Boolean` value: `true` if the task succeeded or `false` if it failed. The following example shows a task that performs no action and returns `true`.  
   
-```  
+```csharp
 using System;  
 using Microsoft.Build.Framework;  
 using Microsoft.Build.Utilities;  
@@ -52,9 +69,9 @@ namespace MyTasks
 }  
 ```  
   
- 下列專案檔會執行這項工作：  
+ The following project file runs this task:  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="MyTarget">  
         <SimpleTask />  
@@ -62,9 +79,9 @@ namespace MyTasks
 </Project>  
 ```  
   
- 如果您在工作類別上建立 .NET 屬性，則當工作執行時，也可以接收來自專案檔的輸入。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會先設定這些屬性，並緊接著呼叫工作的 `Execute` 方法。  若要建立字串屬性，請使用工作程式碼如下：  
+ When tasks run, they can also receive inputs from the project file if you create .NET properties on the task class. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] sets these properties immediately before calling the task's `Execute` method. To create a string property, use task code such as:  
   
-```  
+```csharp
 using System;  
 using Microsoft.Build.Framework;  
 using Microsoft.Build.Utilities;  
@@ -88,9 +105,9 @@ namespace MyTasks
 }  
 ```  
   
- 下列專案檔會執行這項工作並將 `MyProperty` 設為指定的值：  
+ The following project file runs this task and sets `MyProperty` to the given value:  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
    <Target Name="MyTarget">  
       <SimpleTask MyProperty="Value for MyProperty" />  
@@ -98,18 +115,18 @@ namespace MyTasks
 </Project>  
 ```  
   
-## 註冊工作  
- 如果專案要執行工作，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 必須知道如何找到包含工作類別的組件。  工作是使用 [UsingTask Element \(MSBuild\)](../msbuild/usingtask-element-msbuild.md) 註冊的。  
+## <a name="registering-tasks"></a>Registering Tasks  
+ If a project is going to run a task, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] must know how to locate the assembly that contains the task class. Tasks are registered using the [UsingTask Element (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案 Microsoft.Common.Tasks 是一個專案檔，其中包含 `UsingTask` 項目清單，負責註冊 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 隨附的所有工作。  每次建置專案時，就會自動加入這個檔案。  如果已在 Microsoft.Common.Tasks 中註冊的工作同時也在目前專案檔中註冊，則目前專案檔具有優先權，也就是說，您可以用自己擁有的同名工作覆寫預設工作。  
+ The [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] file Microsoft.Common.Tasks is a project file that contains a list of `UsingTask` elements that register all the tasks that are supplied with [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. This file is automatically included when building every project. If a task that is registered in Microsoft.Common.Tasks is also registered in the current project file, the current project file takes precedence; that is, you can override a default task with your own task that has the same name.  
   
 > [!TIP]
->  您可以檢視 Microsoft.Common.Tasks 的內容，查看 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 隨附的工作清單。  
+>  You can see a list of the tasks that are supplied with [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] by viewing the contents of Microsoft.Common.Tasks.  
   
-## 從工作引發事件  
- 如果工作是從 <xref:Microsoft.Build.Utilities.Task> Helper 類別衍生，則可使用 <xref:Microsoft.Build.Utilities.Task> 類別的下列任何 Helper 方法，來引發任何已註冊記錄器將攔截及顯示的事件：  
+## <a name="raising-events-from-a-task"></a>Raising Events from a Task  
+ If your task derives from the <xref:Microsoft.Build.Utilities.Task> helper class, you can use any of the following helper methods on the <xref:Microsoft.Build.Utilities.Task> class to raise events that will be caught and displayed by any registered loggers:  
   
-```  
+```csharp
 public override bool Execute()  
 {  
     Log.LogError("messageResource1", "1", "2", "3");  
@@ -119,9 +136,9 @@ public override bool Execute()
 }  
 ```  
   
- 如果您的工作直接實作 <xref:Microsoft.Build.Framework.ITask>，您仍可以引發這類事件，但必須使用 IBuildEngine 介面。  在下列程式碼中，示範了實作 ITask 並引發自訂事件的工作：  
+ If your task implements <xref:Microsoft.Build.Framework.ITask> directly, you can still raise such events but you must use the IBuildEngine interface. The following example shows a task that implements ITask and raises a custom event:  
   
-```  
+```csharp
 public class SimpleTask : ITask  
 {  
     private IBuildEngine buildEngine;  
@@ -143,10 +160,10 @@ public class SimpleTask : ITask
 }  
 ```  
   
-## 需要設定工作參數  
- 您可以將特定工作屬性標記為「必要項」\(Required\)，如此任何執行工作的專案檔都必須設定這些屬性的值，否則建置會失敗。  請將 `[Required]` 屬性 \(Attribute\) 套用至工作中的 .NET 屬性 \(Property\)，如下所示：  
+## <a name="requiring-task-parameters-to-be-set"></a>Requiring Task Parameters to be Set  
+ You can mark certain task properties as "required" so that any project file that runs the task must set values for these properties or the build fails. Apply the `[Required]` attribute to the .NET property in your task as follows:  
   
-```  
+```csharp
 private string requiredProperty;  
   
 [Required]  
@@ -157,16 +174,16 @@ public string RequiredProperty
 }  
 ```  
   
- `[Required]` 屬性是由 <xref:Microsoft.Build.Framework> 命名空間中的 <xref:Microsoft.Build.Framework.RequiredAttribute> 所定義。  
+ The `[Required]` attribute is defined by <xref:Microsoft.Build.Framework.RequiredAttribute> in the <xref:Microsoft.Build.Framework> namespace.  
   
-## 範例  
+## <a name="example"></a>Example  
   
-### 描述  
- 下面這個 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別示範從 <xref:Microsoft.Build.Utilities.Task> Helper 類別衍生的工作。  這項工作會傳回 `true`，表示該工作成功。  
+### <a name="description"></a>Description  
+ This following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] class demonstrates a task deriving from the <xref:Microsoft.Build.Utilities.Task> helper class. This task returns `true`, indicating that it succeeded.  
   
-### 程式碼  
+### <a name="code"></a>Code  
   
-```  
+```csharp
 using System;  
 using Microsoft.Build.Utilities;  
   
@@ -183,14 +200,14 @@ namespace SimpleTask1
 }  
 ```  
   
-## 範例  
+## <a name="example"></a>Example  
   
-### 描述  
- 下面這個 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別示範實作 <xref:Microsoft.Build.Framework.ITask> 介面的工作。  這項工作會傳回 `true`，表示該工作成功。  
+### <a name="description"></a>Description  
+ This following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] class demonstrates a task implementing the <xref:Microsoft.Build.Framework.ITask> interface. This task returns `true`, indicating that it succeeded.  
   
-### 程式碼  
+### <a name="code"></a>Code  
   
-```  
+```csharp
 using System;  
 using Microsoft.Build.Framework;  
   
@@ -241,22 +258,22 @@ namespace SimpleTask2
 }  
 ```  
   
-## 範例  
+## <a name="example"></a>Example  
   
-### 描述  
- 這個 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 類別示範從 <xref:Microsoft.Build.Utilities.Task> Helper 類別衍生的工作。  它擁有必要的字串屬性，而且會引發所有已註冊記錄器顯示的事件。  
+### <a name="description"></a>Description  
+ This [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] class demonstrates a task that derives from the <xref:Microsoft.Build.Utilities.Task> helper class. It has a required string property, and raises an event that is displayed by all registered loggers.  
   
-### 程式碼  
+### <a name="code"></a>Code  
  [!code-cs[msbuild_SimpleTask3#1](../msbuild/codesnippet/CSharp/task-writing_1.cs)]  
   
-## 範例  
+## <a name="example"></a>Example  
   
-### 描述  
- 在下列程式碼中，示範了叫用上一個範例工作 SimpleTask3 的專案檔。  
+### <a name="description"></a>Description  
+ The following example shows a project file invoking the previous example task, SimpleTask3.  
   
-### 程式碼  
+### <a name="code"></a>Code  
   
-```  
+```xml  
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <UsingTask TaskName="SimpleTask3.SimpleTask3"   
         AssemblyFile="SimpleTask3\bin\debug\simpletask3.dll"/>  
@@ -267,6 +284,6 @@ namespace SimpleTask2
 </Project>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [Task Reference](../msbuild/msbuild-task-reference.md)   
  [Task Reference](../msbuild/msbuild-task-reference.md)

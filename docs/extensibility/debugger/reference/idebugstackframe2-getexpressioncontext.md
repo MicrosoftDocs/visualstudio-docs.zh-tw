@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 55e367b8adcd3fc09da800351183cabbaa3f18e1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 812a436a36537c23344b9beb3d863f4d773509c4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
@@ -42,13 +42,13 @@ Gets an evaluation context for expression evaluation within the current context 
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetExpressionContext (   
    IDebugExpressionContext2** ppExprCxt  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetExpressionContext (   
    out IDebugExpressionContext2 ppExprCxt  
 );  

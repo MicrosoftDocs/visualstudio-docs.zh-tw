@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3e5ea6b486d267dc9330e576eab6a73f644226cd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 22447cd6eadf1e4c094815112218bbd64877e9a3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
@@ -42,7 +42,7 @@ Selects different types of constructors.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  
@@ -50,7 +50,7 @@ typedef enum ConstructorMatchOptions {
 } CONSTRUCTOR_ENUM;  
 ```  
   
-```cs  
+```csharp  
 public enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  

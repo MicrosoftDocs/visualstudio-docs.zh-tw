@@ -25,10 +25,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: eb0805a08d84375c6a482860f2f385c4ff71c846
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ba96a1b78b61f14e23663ef43f78cf1588076eb5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="image-service-and-catalog"></a>Image Service and Catalog
@@ -378,13 +378,13 @@ spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
   
  **Helpful using statement**  
   
-```cs  
+```csharp  
 using GelUtilities = Microsoft.Internal.VisualStudio.PlatformUI.Utilities;  
 ```  
   
  **Get the image service**  
   
-```cs  
+```csharp  
 // This or your preferred way of querying for Visual Studio services  
 IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeof(SVsImageService));  
   
@@ -392,7 +392,7 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
   
  **Request the image**  
   
-```cs  
+```csharp  
 ImageAttributes attributes = new ImageAttributes  
 {  
     StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
@@ -423,7 +423,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
      Add this line to the constructor for the class that derives from the **ToolWindowPane** type:  
   
-    ```cs  
+    ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
     this.BitmapImageMoniker = KnownMonikers.Blank;  
     ```  
@@ -455,7 +455,7 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
   
     1.  Remove these lines (if they exist) in the constructor for the class that derives from the **ToolWindowPane** type:  
   
-        ```cs  
+        ```csharp  
         this.BitmapResourceID = <Value>;  
         this.BitmapIndex = <Value>;  
         ```  
@@ -521,7 +521,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
  The CSV file is deployed with the package and its location is specified by the **IconMappingFilename** property of the **ProvideMenuResource** package attribute:  
   
-```cs  
+```csharp  
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]  
 ```  
   
@@ -556,14 +556,14 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
   
 3.  In the **ApplyModifications** method, do the following somewhere in the method before returning the new tree, similar to the below example:  
   
-    ```cs  
+    ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
     tree = tree.SetIcon(KnownMonikers.Blank.ToProjectSystemType());  
     ```  
   
 4.  If you are creating a new tree, you can set the custom images by passing in the desired monikers into the NewTree method, similar to the below example:  
   
-    ```cs  
+    ```csharp  
     // Replace this KnownMoniker with your desired ImageMoniker  
     ProjectImageMoniker icon         = KnownMonikers.FolderClosed.ToProjectSystemType();  
     ProjectImageMoniker expandedIcon = KnownMonikers.FolderOpened.ToProjectSystemType();  

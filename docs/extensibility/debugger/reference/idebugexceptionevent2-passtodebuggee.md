@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5f9f662ced1d1a09fa941795c3586f8d6e6bcbb4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9b7ab19e370570dc736ab7685f1bda75aef13981
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
@@ -42,13 +42,13 @@ Specifies whether the exception should be passed on to the program being debugge
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT PassToDebuggee(  
    BOOL fPass  
 );  
 ```  
   
-```cs  
+```csharp  
 int PassToDebuggee(  
    int fPass  
 );  

@@ -28,23 +28,23 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: 981deb91768c98ef935c57582c34b805d6ce8ed7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: da7f91cc71eb6d0bc403089a0e34b6d81165e026
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Installing outside the extensions folder
 
 Starting with Visual Studio 2017 and VSIX v3 (version 3), there is now support for installing extension assets outside of the extensions folder. Currently, the following locations are enabled as valid installation locations (where [INSTALLDIR] is mapped to the Visual Studio instance's installation directory):
 
-* [INSTALLDIR]\Common7\IDE\PublicAssemblies
-* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\MSBuild
-* [INSTALLDIR]\Schemas
+* [INSTALLDIR]\Xml\Schemas
+* [INSTALLDIR]\Common7\IDE\PublicAssemblies
 * [INSTALLDIR]\Licenses
-* [INSTALLDIR]\RemoteDebugger
-* [INSTALLDIR]\VSTargets
+* [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
+* [INSTALLDIR]\Common7\IDE\RemoteDebugger
+* [INSTALLDIR]\Common7\IDE\VC\VCTargets
 
 >**Note:** The VSIX format does not allow you to install outside the VS install folder structure.
 

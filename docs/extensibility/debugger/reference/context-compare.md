@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c062c3e52114eb6ec58df3f371bd242235973155
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eaab64144ad0978a589f69005aea561c7bd74519
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="contextcompare"></a>CONTEXT_COMPARE
@@ -42,7 +42,7 @@ Specifies the criteria for comparing two memory contexts.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  
@@ -57,7 +57,7 @@ enum enum_CONTEXT_COMPARE {
 typedef DWORD CONTEXT_COMPARE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_CONTEXT_COMPARE {   
    CONTEXT_EQUAL                 = 0x0001,  
    CONTEXT_LESS_THAN             = 0x0002,  

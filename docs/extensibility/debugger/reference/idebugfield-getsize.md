@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 53ae9005d8e20253956e23d978e4472467d4ba36
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5f025b96c3a37cd55d8bc148d04196a862f7e7bc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
@@ -42,13 +42,13 @@ This method gets the size of a field, in bytes.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSize(   
    DWORD* pdwSize  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetSize(  
    out uint pdwSize  
 );  

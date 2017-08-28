@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 11c8cabb224199d5d813fd0c80e87f0eacad0251
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 100561bf7532efebf95d1c8cfda143f454a02197
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Creating a Basic Project System, Part 1
@@ -100,7 +100,7 @@ In Visual Studio, projects are the containers that developers use to organize so
   
 6.  Replace the existing code with the following lines.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using System.Text;  
@@ -320,7 +320,7 @@ In Visual Studio, projects are the containers that developers use to organize so
   
 4.  Implement the abstract property `ProductUserContext`:  
   
-    ```cs  
+    ```csharp  
     public override string ProductUserContext  
         {  
             get { return ""; }  

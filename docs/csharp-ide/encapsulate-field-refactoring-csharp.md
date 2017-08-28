@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b45b32450745fe5122fc7318bf224fa8ff16035d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c249571a4c47345882d1fe1adb81d2bd94eb43f5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsulate Field Refactoring (C#)
@@ -53,7 +53,7 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
   
 1.  Create a console application named `EncapsulateFieldExample`, and then replace `Program` with the following example code.  
   
-    ```cs  
+    ```csharp  
     class Square  
     {  
         // Select the word 'width' and then use Encapsulate Field.  
@@ -75,7 +75,7 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
   
 2.  In the [Code Editor](../ide/writing-code-in-the-code-and-text-editor.md), place the cursor in the declaration, on the name of the field that you want to encapsulate. In the example below, place the cursor on the word `width`:  
   
-    ```cs  
+    ```csharp  
     public int width, height;  
     ```  
   
@@ -95,7 +95,7 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
   
      The following `get` and `set` accessor code is displayed in your source file:  
   
-    ```cs  
+    ```csharp  
     public int Width  
     {  
         get { return width; }  
@@ -105,7 +105,7 @@ The **Encapsulate Field** refactoring operation enables you to quickly create a 
   
      The code in the `Main` method is also updated to the new `Width` property name.  
   
-    ```cs  
+    ```csharp  
     Square mySquare = new Square();  
     mySquare.Width = 110;  
     mySquare.height = 150;  

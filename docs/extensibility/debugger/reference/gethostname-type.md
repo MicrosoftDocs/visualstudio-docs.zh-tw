@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5f307ec84731567f301f45db799d7f141ed2dd08
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 103423e638e83954d7cfb44a49264dadd6729eb5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="gethostnametype"></a>GETHOSTNAME_TYPE
@@ -42,7 +42,7 @@ Specifies the type of host name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  
@@ -50,7 +50,7 @@ enum enum_GETHOSTNAME_TYPE {
 typedef DWORD GETHOSTNAME_TYPE;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_GETHOSTNAME_TYPE {   
    GHN_FRIENDLY_NAME = 0,  
    GHN_FILE_NAME     = 1  

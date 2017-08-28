@@ -33,10 +33,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d8d2fbd4af47b3c94ec3f5d1cbc6d88a52ca2e39
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 961200cabbd01953c6efd5f48e76cee62866afc5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="managing-application-settings-net"></a>Managing Application Settings (.NET)
@@ -98,13 +98,13 @@ Application settings enable you to store application information dynamically. Se
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accessing or Changing Application Settings at Run Time in Visual C# #
  In languages other than [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], such as [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], you must access the `Settings` class directly, as shown in the following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example.  
   
-```cs  
+```csharp  
 Properties.Settings.Default.FirstUserSetting = "abc";  
 ```  
   
  You must also explicitly call the `Save` method of this wrapper class in order to persist the user settings. You usually do this in the `Closing` event handler of the main form. The following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example shows a call to the `Save` method.  
   
-```cs  
+```csharp  
 Properties.Settings.Default.Save();  
 ```  
   

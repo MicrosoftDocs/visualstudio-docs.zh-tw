@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3bfdafe26cfe58bad1ed8c82079761a04f337de9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4dbed51c294907c35d8b87640c7308082fba35d4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>How to: Use Wizards with Project Templates
@@ -90,7 +90,7 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 
   
 6.  Replace the code in the **WizardImplementationClass.cs** file with the following code:  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using Microsoft.VisualStudio.TemplateWizard;  
@@ -177,7 +177,7 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 
   
 7.  Now create the **UserInputForm**. In the **WizardImplementation.cs** file, add the following code after the end of the **WizardImplementation** class.  
   
-    ```cs  
+    ```csharp  
     public partial class UserInputForm : Form  
         {  
             private static string customMessage;  
@@ -288,7 +288,7 @@ Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 
   
  Here is the full code file before it has been exported to a template.  
   
-```cs  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 $if$ ($targetframeworkversion$ >= 3.5)using System.Linq;  

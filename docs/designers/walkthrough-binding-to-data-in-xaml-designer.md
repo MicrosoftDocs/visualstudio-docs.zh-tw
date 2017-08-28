@@ -30,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 93ed626061d46059ef31c677aeb35858e19a5f45
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bcbe5e55c766a9e66af06590c86760173f32fbea
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Walkthrough: Binding to data in XAML Designer
@@ -49,7 +49,7 @@ In XAML Designer, you can set data binding properties by using the artboard and 
   
 4.  Open the MainWindow.xaml.cs (or MainWindow.xaml.vb) file and add the following code. In C#, add the code in the `BindingTest` namespace (before the final closing parenthesis in the file). In Visual Basic, just add the new class.  
   
-    ```cs  
+    ```csharp  
     public class ShoppingCart : DependencyObject  
     {  
         public int ItemCount  

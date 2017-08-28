@@ -20,10 +20,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 501fd9c953ec7877dcc4dd8634bd563a83bcc35a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 04035e9c2925cdc2d7c329509e71b723369a3f8b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>Walkthrough: Creating a Silverlight Web Part that Displays OData for SharePoint
@@ -109,7 +109,7 @@ ms.lasthandoff: 08/24/2017
     Imports System.Data.Services.Client  
     ```  
   
-    ```cs  
+    ```csharp  
     // Add the following three using statements.  
     using SLApplication.ServiceReference1;  
     using System.Windows.Data;  
@@ -124,7 +124,7 @@ ms.lasthandoff: 08/24/2017
     Private announcements As New DataServiceCollection(Of AnnouncementsItem)()  
     ```  
   
-    ```cs  
+    ```csharp  
     private TeamSiteDataContext context;  
     private CollectionViewSource myCollectionViewSource;  
     DataServiceCollection<AnnouncementsItem> announcements = new DataServiceCollection<AnnouncementsItem>();  
@@ -148,7 +148,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void UserControl_Loaded_1(object sender, RoutedEventArgs e)  
     {  
         // The URL for the OData service.  
@@ -182,7 +182,7 @@ ms.lasthandoff: 08/24/2017
   
     ```  
   
-    ```cs  
+    ```csharp  
     void announcements_LoadCompleted(object sender, LoadCompletedEventArgs e)  
     {  
         // Handle any errors.  

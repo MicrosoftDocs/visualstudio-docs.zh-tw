@@ -22,10 +22,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 8fc2bd504404e33a02100d0c56662afa7b5560a2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 69680caca452c8350c2fef18a1c01300211b3415
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>How to: Create a SharePoint Project Extension
@@ -119,7 +119,7 @@ ms.lasthandoff: 08/24/2017
     End Namespace  
     ```  
 
-    ```cs  
+    ```csharp  
     using Microsoft.VisualStudio.SharePoint;
     using System;
     using System.ComponentModel;

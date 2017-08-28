@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 3d8a2c29b292c1e09b51b2543724eb85e7eda75b
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d6c1bfe18f3fd2177efb31827340bff306ed7a9e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="extract-method-refactoring-c"></a>Extract Method Refactoring (C#)
@@ -62,7 +62,7 @@ ms.lasthandoff: 08/24/2017
   
 1.  Create a console application named `ExtractMethod`, and then replace `Program` with the following example code.  
   
-    ```cs  
+    ```csharp  
     class A  
     {  
         const double PI = 3.141592;  
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/24/2017
   
 2.  Select the code fragment you want to extract:  
   
-    ```cs  
+    ```csharp  
     double area = PI * radius * radius;  
     ```  
   
@@ -120,7 +120,7 @@ ms.lasthandoff: 08/24/2017
   
  The following example illustrates this semantic change. If this code is executed, then **11** will be printed to the console. If you use **Extract Method** to extract the region of code that is marked by code comments into its own method and then execute the refactored code, then **10** will be printed to the console.  
   
-```cs  
+```csharp  
 class Program  
 {  
     delegate void D();  

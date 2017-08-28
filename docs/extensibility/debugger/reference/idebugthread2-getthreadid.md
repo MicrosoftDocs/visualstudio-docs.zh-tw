@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ef87feadee26a8e4611526691a85c8f9c68d830a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e9784806466a73c2a38a93e2eabdd3186a687ee6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
@@ -42,13 +42,13 @@ Gets the system thread identifier.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetThreadId (   
    DWORD* pdwThreadId  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetThreadId (   
    out uint pdwThreadId  
 );  
@@ -67,7 +67,7 @@ int GetThreadId (
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CProgram` object that implements the [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {     
    *pdwThreadId = GetCurrentThreadId();    
    return NOERROR;    

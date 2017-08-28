@@ -23,10 +23,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fcaa1e01c1ab18233b103e06fe8dcdd847df98b1
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d5f13883367d68999df59647aba7cedeb48628e1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="walkthrough-profiling-a-sharepoint-application"></a>Walkthrough: Profiling a SharePoint Application
@@ -93,7 +93,7 @@ ms.lasthandoff: 08/24/2017
     Private webUrl As String = "/"  
     ```  
   
-    ```cs  
+    ```csharp  
     // SharePoint site/subsite.  
     private string siteUrl = "http://localhost";  
     private string webUrl = "/";  
@@ -126,7 +126,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public override void FeatureActivated(SPFeatureReceiverProperties properties)  
     {  
         try  
@@ -172,7 +172,7 @@ ms.lasthandoff: 08/24/2017
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     public void TimeCounter()  
     {  
         for (int i = 0; i < 100000; i++)  

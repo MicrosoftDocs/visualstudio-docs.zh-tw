@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e1e234620f89bf397eb7ec8470c57ecead52d48a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 94d35194abdacc8cb07ee39c0d401be825b63277
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugclassfieldenuminterfacesimplemented"></a>IDebugClassField::EnumInterfacesImplemented
@@ -42,13 +42,13 @@ Creates an enumerator for the interfaces implemented by this class.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumInterfacesImplemented(   
    IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumInterfacesImplemented(  
    out IEnumDebugFields ppEnum  
 );  

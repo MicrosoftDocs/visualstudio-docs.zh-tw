@@ -20,10 +20,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 42f9998fe7053d32a262fbd9c25eb22fafef206e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9c5d38f710d879ba6ee94a58c4b42450638ff119
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="updating-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Updating Excel and Word Projects that You Migrate to the .NET Framework 4 or the .NET Framework 4.5
@@ -63,7 +63,7 @@ ms.lasthandoff: 08/24/2017
     <Assembly: ExcelLocale1033Proxy(True)>  
     ```  
   
-    ```cs  
+    ```csharp  
     [assembly: ExcelLocale1033Proxy(true)]  
     ```  
   
@@ -83,7 +83,7 @@ ms.lasthandoff: 08/24/2017
   
     ```  
   
-    ```cs  
+    ```csharp  
     this.Application = (Excel.Application)Microsoft.Office.Tools.Excel.ExcelLocale1033Proxy.Wrap(typeof(Excel.Application), this.Application);  
   
     ```  
@@ -96,7 +96,7 @@ Dim vstoDocument as Microsoft.Office.Tools.Word.Document = _
     Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject()  
 ```  
   
-```cs  
+```csharp  
 Microsoft.Office.Tools.Word.Document vstoDocument =   
     Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject();  
 ```  
@@ -110,7 +110,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory)  
     ```  
   
-    ```cs  
+    ```csharp  
     Microsoft.Office.Tools.Word.Document vstoDocument =   
         Globals.ThisAddIn.Application.ActiveDocument.GetVstoObject(Globals.Factory);  
     ```  
@@ -122,7 +122,7 @@ Microsoft.Office.Tools.Word.Document vstoDocument =
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument)  
     ```  
   
-    ```cs  
+    ```csharp  
     Microsoft.Office.Tools.Word.Document vstoDocument =   
         Globals.Factory.GetVstoObject(Globals.ThisAddIn.Application.ActiveDocument);  
     ```  
@@ -160,7 +160,7 @@ Private Sub DoSomethingToSheet(ByVal worksheet As Microsoft.Office.Tools.Excel.W
 End Sub  
 ```  
   
-```cs  
+```csharp  
 private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet)  
 {  
     // Do something to the worksheet object.  
@@ -175,7 +175,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     DoSomethingToSheet(Globals.Sheet1.Base)  
     ```  
   
-    ```cs  
+    ```csharp  
     DoSomethingToSheet(Globals.Sheet1.Base);  
     ```  
   
@@ -187,7 +187,7 @@ private void DoSomethingToSheet(Microsoft.Office.Tools.Excel.Worksheet worksheet
     End Sub  
     ```  
   
-    ```cs  
+    ```csharp  
     private void DoSomethingToSheet (Microsoft.Office.Tools.Excel.WorksheetBase worksheet)  
     {  
         // Do something to the worksheet object.  

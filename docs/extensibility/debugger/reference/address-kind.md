@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 945be4e668266f67dfcdd6ef6732a1ea95e365a3
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 331c5f0e3356a20ea61ac88108c1580bf4928737
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="addresskind"></a>ADDRESS_KIND
@@ -57,7 +57,7 @@ enum enum_ADDRESS_KIND {
 typedef DWORD ADDRESS_KIND;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_ADDRESS_KIND {  
    ADDRESS_KIND_NATIVE                  = 0x0001,  
    ADDRESS_KIND_UNMANAGED_THIS_RELATIVE = 0x0002,  

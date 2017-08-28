@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 89d4c8824680e94a85911679e71e750c02fd8c48
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e89914747024ad23185ed1f6cc92e808d7703702
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="frameinfo"></a>FRAMEINFO
@@ -42,7 +42,7 @@ Describes a stack frame.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagFRAMEINFO {   
    FRAMEINFO_FLAGS    m_dwValidFields;  
    BSTR               m_bstrFuncName;  
@@ -60,7 +60,7 @@ typedef struct tagFRAMEINFO {
 } FRAMEINFO;  
 ```  
   
-```cs  
+```csharp  
 public struct FRAMEINFO {   
    public uint              m_dwValidFields;  
    public string            m_bstrFuncName;  

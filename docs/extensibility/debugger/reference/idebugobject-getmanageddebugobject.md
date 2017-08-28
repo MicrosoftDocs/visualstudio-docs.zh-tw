@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4ef4aa9ca7d3cd5208c412bf42a5c460a90320bd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 46c8bda2a1e575075eb74f8a75f9b5eb50f4c388
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
@@ -42,13 +42,13 @@ Creates a copy of the managed object in the address space of the debug engine.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetManagedDebugObject(   
    IDebugManagedObject** ppObject  
 );  
 ```  
   
-```cs  
+```csharp  
 int GetManagedDebugObject(  
    out IDebugManagedObject ppObject  
 );  

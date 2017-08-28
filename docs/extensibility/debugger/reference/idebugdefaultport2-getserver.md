@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: fbe39948cb0da10d47c9e60f24a5a6a69a685beb
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 214339a65ab6f4aba08529f2f9dcd287934bf2d7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
@@ -48,7 +48,7 @@ HRESULT GetServer(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetServer(  
    out IDebugCoreServer3 ppServer  
 );  

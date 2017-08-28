@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: ee839ee2a3a170bbd3e513cdbbc9768269be1afd
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 00f7cd1d45bca63387acc7f38b39b1cb51b4b2be
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Enable Coded UI Testing of Your Controls
@@ -64,7 +64,7 @@ Your control can be more easily tested if you implement support for the coded UI
   
 1.  Implement a class that derives from <xref:System.Windows.Forms.Control.ControlAccessibleObject>, and override the <xref:System.Windows.Forms.Control.AccessibilityObject%2A> property to return an object of your class.  
   
-    ```cs  
+    ```csharp  
     public partial class ChartControl : UserControl  
     {  
         // Overridden to return the custom AccessibleObject for the control.  
@@ -106,7 +106,7 @@ Your control can be more easily tested if you implement support for the coded UI
   
 1.  Override the curve legend accessible object's <xref:System.Windows.Forms.AccessibleObject.Description%2A> property to pass rich property values in the description string, separated from the main description (and each other if you are implementing multiple properties) by semicolons (;).  
   
-    ```cs  
+    ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
     {  
         // add the state property value to the description  
@@ -126,7 +126,7 @@ Your control can be more easily tested if you implement support for the coded UI
   
 3.  Add a property provider class that's derived from <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
   
-    ```cs  
+    ```csharp  
     using System;  
     using System.Collections.Generic;  
     using Accessibility;  

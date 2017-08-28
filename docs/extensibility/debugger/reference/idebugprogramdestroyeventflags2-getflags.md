@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 9111f3a0767fcedf2500f877855c4a447fc88a44
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: bd35a183703c249337a1542cacc25a1e74a25715
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
@@ -41,13 +41,13 @@ Retrieves the program destroy flags.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetFlags(  
    PROGRAM_DESTROY_FLAGS* pdwFlags  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetFlags(  
    out enum_PROGRAM_DESTROY_FLAGS pdwFlags  
 );  

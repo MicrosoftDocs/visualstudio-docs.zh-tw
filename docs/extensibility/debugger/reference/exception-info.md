@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cd4a11ab618c93616d11e69bceadb63828a11acc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fbc402041df0633038681eb64583e9a9b41fb28c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="exceptioninfo"></a>EXCEPTION_INFO
@@ -42,7 +42,7 @@ Describes an exception or run-time error thrown by the program being debugged.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef struct tagEXCEPTION_INFO {   
    IDebugProgram2* pProgram;  
    BSTR            bstrProgramName;  
@@ -53,7 +53,7 @@ typedef struct tagEXCEPTION_INFO {
 } EXCEPTION_INFO;  
 ```  
   
-```cs  
+```csharp  
 public struct EXCEPTION_INFO {   
    public IDebugProgram2 pProgram;  
    public string         bstrProgramName;  

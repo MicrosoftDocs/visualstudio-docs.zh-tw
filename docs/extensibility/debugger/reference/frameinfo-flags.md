@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a8f8dd9b923a06e8bb73e619ad9c7043f603ed3a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: d0b9ae5b6b9139715cd28b40dd8eae2294c507a7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="frameinfoflags"></a>FRAMEINFO_FLAGS
@@ -42,7 +42,7 @@ Specifies the information to retrieve about a stack frame object.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  
@@ -79,7 +79,7 @@ enum enum_FRAMEINFO_FLAGS {
 typedef DWORD FRAMEINFO_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_FRAMEINFO_FLAGS {  
    FIF_FUNCNAME              = 0x00000001,  
    FIF_RETURNTYPE            = 0x00000002,  

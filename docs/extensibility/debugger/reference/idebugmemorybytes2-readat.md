@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 663bf751558a6883f44e359b0e01140f4692d0f0
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c92d1be776d3d8e9db23a3871f0f3775dd84397
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
@@ -43,7 +43,7 @@ Reads a sequence of bytes, starting at a given location.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ReadAt(   
    IDebugMemoryContext2* pStartContext,  
    DWORD                 dwCount,  
@@ -53,7 +53,7 @@ HRESULT ReadAt(
 );  
 ```  
   
-```cs  
+```csharp  
 int ReadAt(  
    IDebugMemoryContext2 pStartContext,  
    uint                 dwCount,  

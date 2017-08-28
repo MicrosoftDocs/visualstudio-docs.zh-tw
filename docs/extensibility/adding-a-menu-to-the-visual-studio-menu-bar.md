@@ -30,10 +30,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 51382b2be058987a2333ab70008214bdefabfbd6
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e187603315224cdd73dbfaa53ea5cc7d4b0b7df
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adding a Menu to the Visual Studio Menu Bar
@@ -89,7 +89,7 @@ This walkthrough shows how to add a menu to the menu bar of the Visual Studio in
   
 3.  In the \<Groups> section, find the \<Group> and change the \<Parent> element to point to the menu we just added:  
   
-    ```cs  
+    ```csharp  
     <Groups>  
           <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
             <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  

@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c069ab76a75b5b95541c048d4eae444faf7ed9a7
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1679fe1834b5d6246194ee4f9b3e24d6d9c09540
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-get-a-service"></a>How to: Get a Service
@@ -50,7 +50,7 @@ You often need to get Visual Studio services to access different features. In ge
   
 3.  In GetServiceCommand.cs, remove the body of the MenuItemCommand method and add the following code:  
   
-    ```cs  
+    ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
     if (activityLog == null) return;  
     System.Windows.Forms.MessageBox.Show("Found the activity log service.");  
@@ -72,7 +72,7 @@ You often need to get Visual Studio services to access different features. In ge
   
  Here's an example of the way to get a service in a tool window or other non-VSPackage element.  
   
-```cs  
+```csharp  
 IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;  
 if (log == null) return;  
 ```  
@@ -84,7 +84,7 @@ if (log == null) return;
   
  Here's how to get a service from the DTE object.  
   
-```cs  
+```csharp  
 // Start with the DTE object, for example:   
 // using EnvDTE;  
 // DTE dte = (DTE)GetService(typeof(DTE));  

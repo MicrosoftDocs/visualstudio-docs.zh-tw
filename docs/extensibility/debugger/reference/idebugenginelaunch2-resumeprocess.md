@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 7d45ea5e772f9479f35f5b3d5deaaddaf10e7721
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dca7e10264280255624d4413af04aea06ddc7773
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
@@ -42,13 +42,13 @@ Resumes process execution.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT ResumeProcess (   
    IDebugProcess2* pProcess  
 );  
 ```  
   
-```cs  
+```csharp  
 int ResumeProcess (   
    IDebugProcess2 pProcess  
 );  

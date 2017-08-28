@@ -25,10 +25,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 89c6a0a69468ad0c6621cfb529e53b8f0452c5a2
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b96102a7f6a661d544ae6e82fcabb6eb6c38acb5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>How to: Provide an Asynchronous Visual Studio Service
@@ -44,7 +44,7 @@ If you want to obtain a service without blocking the UI thread, you should creat
   
 3.  In TestAsyncPackage.cs, change the package to inherit from AsyncPackage rather than Package:  
   
-    ```cs  
+    ```csharp  
     public sealed class TestAsyncPackage : AsyncPackage  
     ```  
   
@@ -60,7 +60,7 @@ If you want to obtain a service without blocking the UI thread, you should creat
   
 6.  Add the following using statements to the package file:  
   
-    ```cs  
+    ```csharp  
     using System.Threading;  
     using System.Threading.Tasks;  
     using System.Runtime.CompilerServices;  
@@ -107,7 +107,7 @@ If you want to obtain a service without blocking the UI thread, you should creat
   
  Here is an example of an AsyncPackage with an asynchronous service registration::  
   
-```cs  
+```csharp  
 [ProvideService((typeof(STextWriterService)), IsAsyncQueryable = true)]  
 [ProvideAutoLoad(UIContextGuids80.SolutionExists, PackageAutoLoadFlags.BackgroundLoad)]  
 [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]   
@@ -134,7 +134,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 3.  Implement the callback method as an asynchronous method that creates and returns the service.  
   
-    ```cs  
+    ```csharp  
     public async System.Threading.Tasks.Task<object> CreateService(IAsyncServiceContainer container, CancellationToken cancellationToken, Type serviceType)  
     {  
         STextWriterService service = null;  
@@ -152,7 +152,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 1.  We'll show this in the initializer, but you can get the service anywhere you want to use the service.  
   
-    ```cs  
+    ```csharp  
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
         this.AddService(typeof(STextWriterService), CreateService);  
@@ -183,7 +183,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
      Move this line to the `InitializeAsync()` method in the AsyncPackageForService.cs file. Since this is in an asynchronous initialization, you must switch to the main thread before you initialize the command using <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>. It should now look like this:  
   
-    ```cs  
+    ```csharp  
   
     protected override async System.Threading.Tasks.Task InitializeAsync(CancellationToken cancellationToken, IProgress<ServiceProgressData> progress)  
     {  
@@ -214,7 +214,7 @@ public sealed class TestAsyncPackage : AsyncPackage
   
 6.  Add an asynchronous method named `GetAsyncService()`, which gets the service and uses its methods:  
   
-    ```cs  
+    ```csharp  
     private async System.Threading.Tasks.Task GetAsyncService()  
     {  
         ITextWriterService textService =   

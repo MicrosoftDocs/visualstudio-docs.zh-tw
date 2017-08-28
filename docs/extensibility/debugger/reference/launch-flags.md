@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: cba77b2ea7491a17fd6e90ff26d03c920697c70e
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2f838e559d4c33a7bb807d5b0360a51ea7ff0d74
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
@@ -42,7 +42,7 @@ Specifies the debug launch flags.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  
@@ -52,7 +52,7 @@ enum enum_LAUNCH_FLAGS {
 typedef DWORD LAUNCH_FLAGS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_LAUNCH_FLAGS {   
    LAUNCH_DEBUG      = 0x0000,  
    LAUNCH_NODEBUG    = 0x0001,  

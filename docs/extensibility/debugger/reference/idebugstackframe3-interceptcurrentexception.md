@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b1b556058cbdf4e59e091e1b75248de5fde9eb51
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 009c775af66f457c41342d2ce6c8b20288052f6e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
@@ -49,7 +49,7 @@ HRESULT InterceptCurrentException(
 );  
 ```  
   
-```cs  
+```csharp  
 int InterceptCurrentException(  
    uint dwFlags,   
    out  ulong pqwCookie  

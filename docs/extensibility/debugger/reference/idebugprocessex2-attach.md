@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: a7c7d197509a7c7343112d151d65fe480e81c89c
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 44e7b5313b0efeb4895cfa53ebacd5397ef97bc5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
@@ -42,13 +42,13 @@ This method informs the process that a session is now debugging the process.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Attach(   
    IDebugSession2* pSession  
 );  
 ```  
   
-```cs  
+```csharp  
 int Attach(  
    IDebugSession2 pSession  
 );  

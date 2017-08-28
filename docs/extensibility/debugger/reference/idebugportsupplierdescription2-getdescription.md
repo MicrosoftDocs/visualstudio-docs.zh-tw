@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 06c3d5b5a584ab3fc7ecf48d1eae6eef8c8f124d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 675685e143078906623c3487ee4c108cd1d5fa87
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
@@ -40,14 +40,14 @@ Retrieves the description and description metadata for the port supplier.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetDescription(  
    PORT_SUPPLIER_DESCRIPTION_FLAGS *pdwFlags,  
    BSTR *pbstrText  
 );  
 ```  
   
-```cs  
+```csharp  
 public int GetDescription(  
    out enum_PORT_SUPPLIER_DESCRIPTION_FLAGS pdwFlags,  
    out string pbstrText  

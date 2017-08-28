@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: d1045d4e9bf0b3b1a38e6412482031284de9f438
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dc888c192209ae16b96e7b045f5a694b861c9db6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
@@ -50,7 +50,7 @@ HRESULT GetMemoryObject(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetMemoryObject(  
    IDebugField      pField,  
    long             uConstant,  

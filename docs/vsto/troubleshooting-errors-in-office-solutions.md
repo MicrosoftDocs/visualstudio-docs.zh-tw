@@ -28,10 +28,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 51b7155eb9f1363b55143177bbdd7b305f0db562
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7dbebdc98d1f7c83e654a3e14972b470914cec62
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="troubleshooting-errors-in-office-solutions"></a>Troubleshooting Errors in Office Solutions
@@ -137,7 +137,7 @@ ms.lasthandoff: 08/24/2017
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument  
 ```  
   
-```cs  
+```csharp  
 Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application.ActiveDocument;  
 ```  
   
@@ -153,7 +153,7 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument  
 ```  
   
-```cs  
+```csharp  
 Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;  
 ```  
   

@@ -26,10 +26,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: b29e3397cf5efbffb3bed41d11d942750cb9b76a
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a93cb843f45efffe2b8ccdb86543baf48736ed90
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="t4-template-directive"></a>T4 Template Directive
@@ -97,7 +97,7 @@ hostspecific="true"
   
  When `hostspecific` is `true` and you are using [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can cast `this.Host` to IServiceProvider to access [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] features. You can also use `Host.ResolvePath(filename)` to obtain the absolute path of a file in the project. For example:  
   
-```cs  
+```csharp  
 <#@ template debug="false" hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ assembly name="EnvDTE" #>  
@@ -177,7 +177,7 @@ This is the common footer.
 ```  
   
  Run-time (preprocessed) text template DerivedTemplate1.tt:  
- ```cs  
+ ```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -202,7 +202,7 @@ protected override void SpecificFragment2()
 ```  
   
  Application code to invoke DerivedTemplate1:  
- ```cs  
+ ```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   

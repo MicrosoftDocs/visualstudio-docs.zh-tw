@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e166a7050eef89493c16999a401c0c7f1710d287
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5571f418bd8e70f8c924e36e89ee3ec4d0f45d88
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
@@ -40,7 +40,7 @@ Retrieves a value that corresponds to the specified metric of the expression eva
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricDword(  
    REFGUID guidLang,  
    REFGUID guidVendor,  
@@ -49,7 +49,7 @@ HRESULT GetEEMetricDword(
 );  
 ```  
   
-```cs  
+```csharp  
 private int GetEEMetricDword(  
    ref Guid guidLang,  
    ref Guid guidVendor,  

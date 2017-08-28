@@ -32,10 +32,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 54347da59033c5902a4c8b106a7eb6df3a78cc52
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e418fc46dc04e4271954782ba7fe9cb8e2e652c7
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
@@ -43,13 +43,13 @@ Sets or changes the condition associated with the pending breakpoint.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetCondition(   
    BP_CONDITION bpCondition  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetCondition(   
    BP_CONDITION bpCondition  
 );  

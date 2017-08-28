@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 40fd1efbbc1614abde65f5add17880b9af052a7d
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 55f889134ce6d5e40845e4630da06ab42e4dbcbc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
@@ -40,13 +40,13 @@ Sets the locale for the port supplier.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetLocale(  
    WORD wLangID  
 );  
 ```  
   
-```cs  
+```csharp  
 int SetLocale(  
    ushort wLangID  
 );  

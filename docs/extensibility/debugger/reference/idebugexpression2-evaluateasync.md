@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: c32acab02826882bea12c36bd37bd42b52ed34e8
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 03ece802cc05e269dac26794bbc19e7a06b0679d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
@@ -42,14 +42,14 @@ This method evaluates the expression asynchronously.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EvaluateAsync (   
    EVALFLAGS             dwFlags,  
    IDebugEventCallback2* pExprCallback  
 );  
 ```  
   
-```cs  
+```csharp  
 int EvaluateAsync(  
    enum_EVALFLAGS       dwFlags,   
    IDebugEventCallback2 pExprCallback  
@@ -76,7 +76,7 @@ int EvaluateAsync(
 ## <a name="example"></a>Example  
  The following example shows how to implement this method for a simple `CExpression` object that implements the [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CExpression::EvaluateAsync(EVALFLAGS dwFlags,  
                                    IDebugEventCallback2* pExprCallback)  
 {  

@@ -29,10 +29,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1342b78ad28e821c9d792e99c494fafa05a415e4
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 6cfdd28afbfb88f83d7931b57adbedfb88bf93bf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="code-generation-in-a-build-process"></a>Code Generation in a Build Process
@@ -246,7 +246,7 @@ The project folder is: <#= ProjectFolder #>
   
  In a directive processor, you can call <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost.ResolveParameterValue%2A>:  
   
-```cs  
+```csharp  
 string value = Host.ResolveParameterValue("-", "-", "parameterName");  
 ```  
   

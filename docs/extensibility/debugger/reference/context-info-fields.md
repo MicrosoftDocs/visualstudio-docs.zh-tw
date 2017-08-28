@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 4a186079efac648a07b82a73633ed3655c8971fc
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 92b8a9e4fa544018e6cfa2baa5e57a9c978dde25
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
@@ -42,7 +42,7 @@ Specifies what information to retrieve about a memory context.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_CONTEXT_INFO_FIELDS {   
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  
@@ -55,7 +55,7 @@ enum enum_CONTEXT_INFO_FIELDS {
 typedef DWORD CONTEXT_INFO_FIELDS;  
 ```  
   
-```cs  
+```csharp  
 public enum enum_CONTEXT_INFO_FIELDS {  
    CIF_MODULEURL =       0x00000001,  
    CIF_FUNCTION =        0x00000002,  

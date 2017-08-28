@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: e57f54e6b1866f7d411fae1b84ab3599a4b3b06f
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9301d27a921ab549fd99c8d679f7c2601535d04e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
@@ -51,7 +51,7 @@ HRESULT GetCustomViewerList(
 );  
 ```  
   
-```cs  
+```csharp  
 int GetCustomViewerList(  
    uint                  celtSkip,  
    uint                  celtRequested,  

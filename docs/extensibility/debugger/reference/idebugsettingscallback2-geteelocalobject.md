@@ -29,10 +29,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: bdf465d678b75910bcad259acd763d2a23866a40
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0a1e7f1f257a8bed2d11d5ebf819cdf45b3612c6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
@@ -40,7 +40,7 @@ Retrieves a expression evaluator local object given the metric name.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetEELocalObject(  
    REFGUID     guidLang,  
    REFGUID     guidVendor,  
@@ -49,7 +49,7 @@ HRESULT GetEELocalObject(
 );  
 ```  
   
-```cs  
+```csharp  
 private int GetEELocalObject(  
    ref Guid          guidLang,  
    ref Guid          guidVendor,  

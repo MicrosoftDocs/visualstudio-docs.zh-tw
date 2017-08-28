@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: feeb7ffab696d11b08e227d2901ceeb1a2b4dc51
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9162c5a41e9af356c49b9978fe447cb980aa4c4e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
@@ -42,13 +42,13 @@ Retrieves a list of all available port suppliers.
   
 ## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumPortSuppliers(  
    IEnumDebugPortSuppliers2** ppEnum  
 );  
 ```  
   
-```cs  
+```csharp  
 int EnumPortSuppliers(  
    out IEnumDebugPortSuppliers2 ppEnum  
 );  

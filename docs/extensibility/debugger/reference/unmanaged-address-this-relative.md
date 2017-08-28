@@ -31,10 +31,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 1cdc7b3f07a08beb10fec7178962443ba8b693c9
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2412503a57f42b879a7e4226acf81397c4a9a56a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
@@ -50,7 +50,7 @@ typedef struct _tagUNMANAGED_THIS_RELATIVE {
 } UNMANAGED_ADDRESS_THIS_RELATIVE;  
 ```  
   
-```cs  
+```csharp  
 public struct UNMANAGED_THIS_RELATIVE {  
    public uint dwOffset;  
    public uint dwBitOffset;  
