@@ -1,134 +1,81 @@
 ---
-title: "如何：將 Windows Form 控制項繫結至資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Windows Form], 顯示"
-  - "資料來源, 顯示"
-  - "顯示資料, Windows Form 控制項"
-  - "Windows Form, 顯示資料"
+title: Bind Windows Forms controls to data | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
+helpviewer_keywords:
+- displaying data, Windows Forms controls
+- Windows Forms, displaying data
+- data sources, displaying
+- data [Windows Forms], displaying
 ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 28
-caps.handback.revision: 17
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 837a80350e3a393cd394ab7bf8900b091a8902eb
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
+
 ---
-# 如何：將 Windows Form 控制項繫結至資料
-從[資料來源視窗](../Topic/Data%20Sources%20Window.md)拖曳物件，將資料繫結至 Windows Form 控制項。  從 \[**資料來源**\] 視窗中拖曳項目之前，您可以針對個別控制項將資料表的控制項型別設為 **Details**，或針對 <xref:System.Windows.Forms.DataGridView> 將其設為 **DataGridView**。  如需詳細資訊，請參閱 [設定從 \[資料來源\] 視窗拖曳時要建立的控制項](../Topic/Set%20the%20control%20to%20be%20created%20when%20dragging%20from%20the%20Data%20Sources%20window.md)。  
+# <a name="bind-windows-forms-controls-to-data"></a>Bind Windows Forms controls to data
+You can bind data sources to controls by dragging objects from the **Data Sources** window onto a Windows Form or onto an existing control on a form. Before you drag items, you can set the type of control you want to bind to. Different values appear depending on whether you choose the table itself, or an individual column.  You can also set custom values. For a table, "Details" means that each column is bound to a separate control.  
+
+![Bind data source to DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata Bind data source to DataGridView")  
   
- 如果應用程式需要的控制項無法從 \[**資料來源**\] 視窗內，您可以加入控制項。  如需詳細資訊，請參閱 [將自訂控制項加入 \[資料來源\] 視窗](../Topic/Add%20custom%20controls%20to%20the%20Data%20Sources%20window.md)。  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+## <a name="bind-to--data-in-a-datagridview-control"></a>Bind to  data in a DataGridView control  
+For DataGridView, the entire table is bound to that single control. When you drag a DataGridView to the form, a tool strip for navigating records (<xref:System.Windows.Forms.BindingNavigator>) also appears. A [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray. In the following illustration, a TableAdapterManager is also added because the Customers table has a relation to the Orders table. These variables are all declared in the auto-generated code as private members in the form class. The auto-generated code for filling the DataGridView is located in the form_load event handler. The code for saving the data to update the database is located in the Save event handler for the BindingNavigator. You can move or modify this code as needed.  
   
-## 在個別控制項中顯示整個資料表  
- 您可以從 \[**資料來源**\] 視窗將資料表 \(若使用物件資料來源，則為表示集合的節點\) 拖曳至 Windows 應用程式的表單中，在個別控制項中顯示整個資料表。  
+ ![GridView with BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView with BindingNavigator")  
   
-#### 顯示整個資料表  
+ You can customize the behavior of the DataGridView and the BindingNavigator by clicking on the smart tag in the upper right corner of each:  
   
-1.  開啟 \[**資料來源**\] 視窗。  如需詳細資訊，請參閱 [如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)。  
+ ![DataGridView and Binding Navigator smart tags](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView and Binding Navigator smart tags")  
   
-    > [!NOTE]
-    >  如果 \[**資料來源**\] 視窗是空的，請加入資料來源。  如需詳細資訊，請參閱[資料來源概觀](../data-tools/add-new-data-sources.md)。  
+ If the controls your application needs are not available from within the **Data Sources** window, you can add controls. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
-2.  在 \[**Windows Form 設計工具**\] 中開啟表單。  
+ You can also drag items from the **Data Sources** window onto controls already on a form to bind the control to data. A control that is already bound to data has its data bindings reset to the item most recently dragged onto it. To be valid drop targets, controls must be capable of displaying the underlying data type of the item dragged onto it from the **Data Sources** window. For example, it's not valid to drag an item that has a data type of <xref:System.DateTime> onto a <xref:System.Windows.Forms.CheckBox>, because the <xref:System.Windows.Forms.CheckBox> is not capable of displaying a date.  
   
-3.  在 \[**資料來源**\] 視窗中選取資料表、按下拉式箭號，然後選取 \[**詳細資料**\]。  
+## <a name="bind-to--data-in-individual-controls"></a>Bind to  data in individual controls  
+ When you bind a data source to "Details," each column in the dataset is bound to a separate control.  
   
-4.  從 \[**資料來源**\] 視窗將資料表拖曳至表單。  
+ ![Bind data source to details](../data-tools/media/raddata-bind-data-source-to-details.png "raddata Bind data source to details")  
   
-     在表單上隨即建立各資料行 \(或屬性\) 的個別資料繫結控制項，隨附適當標題的標籤控制項。  
+> [!IMPORTANT]
+>  Note that in the previous  illustration, you drag from the Orders property of the Customers table, not from the Orders table. By binding to the Customer.Orders property, navigation commands made in the DataGridView are reflected immediately in the details controls. If you dragged from the Orders table, the controls would still be bound to the dataset, but not they would not be synchronized with the DataGridView.  
   
-## 在個別控制項中顯示選取的資料行  
- 從 \[**資料來源**\] 視窗將個別資料行 \(若使用物件資料來源，則為屬性\) 拖曳至 Windows 應用程式的表單中，在個別控制項中顯示個別資料行。  
+ The following illustration shows the default data-bound controls that are added to the form after the Orders property in the Customers table is bound to "Details" in the **Data Sources** window.  
   
-#### 顯示選取的資料行  
+ ![Orders table bound to details](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata Orders table bound to details")  
   
-1.  開啟 \[**資料來源**\] 視窗。  如需詳細資訊，請參閱 [如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)。  
+ Note also that each control has a smart tag. This tag enables customizations that apply to that control only.  
   
-    > [!NOTE]
-    >  如果 \[**資料來源**\] 視窗是空的，請加入資料來源。  如需詳細資訊，請參閱[資料來源概觀](../data-tools/add-new-data-sources.md)。  
-  
-2.  展開資料表，顯示個別資料行。  
-  
-    > [!TIP]
-    >  若要設定為各資料行建立的控制項，請在 \[**資料來源**\] 視窗中選取資料行、按下拉式箭號，然後從可用控制項清單中選取控制項。  如需詳細資訊，請參閱 [設定從 \[資料來源\] 視窗拖曳時要建立的控制項](../Topic/Set%20the%20control%20to%20be%20created%20when%20dragging%20from%20the%20Data%20Sources%20window.md)。  
-  
-3.  在 \[**Windows Form 設計工具**\] 中開啟表單。  
-  
-4.  從 \[**資料來源**\] 視窗將所要的資料行拖曳至表單。  
-  
-     每拖曳一個資料行或屬性，表單上就會建立一個資料繫結控制項，並附上適當標題的標籤控制項。  
-  
- 您也可以從 \[**資料來源**\] 視窗拖曳項目至現有控制項 \(已經在表單上的控制項\)，將控制項繫結至資料。  已經繫結到資料的控制項會將其資料繫結重設為最新拖曳到其上的項目。  
-  
-> [!NOTE]
->  控制項必須能夠顯示從 \[**資料來源**\] 視窗拖曳項目到其上的基礎資料型別，才能成為有效的置放目標。  例如，將具有 <xref:System.DateTime> 資料型別的項目拖曳到 <xref:System.Windows.Forms.CheckBox> 上是無效的動作，因為 <xref:System.Windows.Forms.CheckBox> 無法顯示日期。  
-  
-#### 若要將現有控制項繫結至資料  
-  
-1.  開啟 \[**資料來源**\] 視窗。  如需詳細資訊，請參閱 [如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)。  
-  
-2.  在 [Windows Forms Designer](http://msdn.microsoft.com/zh-tw/3c3d61f8-f36c-4d41-b9c3-398376fabb15)中開啟表單。  
-  
-3.  在 \[**資料來源**\] 視窗中展開資料表或物件，以顯示其個別資料行或屬性。  
-  
-4.  從 \[**資料來源**\] 視窗將所要的項目拖曳至現有控制項。  
-  
-     控制項現在已經繫結至該選取的項目。  
-  
-## 在 DataGridView 控制項中顯示資料  
-  
-#### 若要在新的 Windows Form DataGridView 控制項中顯示資料  
-  
-1.  開啟 \[**資料來源**\] 視窗。  如需詳細資訊，請參閱 [如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)。  
-  
-    > [!NOTE]
-    >  如果 \[**資料來源**\] 視窗是空的，請加入資料來源。  如需詳細資訊，請參閱[資料來源概觀](../data-tools/add-new-data-sources.md)。  
-  
-2.  在 \[**Windows Form 設計工具**\] 中開啟表單。  
-  
-3.  在 \[**資料來源**\] 視窗中選取資料表，並按一下下拉箭號，然後選取 \[**DataGridView**\]。  
-  
-4.  從 \[**資料來源**\] 視窗將資料表拖曳至表單。  
-  
-     <xref:System.Windows.Forms.DataGridView> 控制項以及用於巡覽資料錄的工具區域 \(<xref:System.Windows.Forms.BindingNavigator>\) 會出現在表單上。  [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/tableadapter-overview.md)、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 則會出現在元件匣中。  
-  
-#### 若要在現有的 Windows Form DataGridView 控制項中顯示資料  
-  
-1.  開啟 \[**資料來源**\] 視窗。  如需詳細資訊，請參閱 [如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)。  
-  
-    > [!NOTE]
-    >  如果 \[**資料來源**\] 視窗是空的，請加入資料來源。  如需詳細資訊，請參閱[資料來源概觀](../data-tools/add-new-data-sources.md)。  
-  
-2.  在 \[**Windows Form 設計工具**\] 中開啟表單。  
-  
-3.  在 \[**資料來源**\] 視窗中選取資料表，並按一下下拉箭號，然後選取 \[**DataGridView**\]。  
-  
-4.  從 \[**資料來源**\] 視窗將資料表拖曳至表單上的 <xref:System.Windows.Forms.DataGridView>。  
-  
-     <xref:System.Windows.Forms.DataGridView> 控制項現在會繫結到您將它拖曳到其上的資料表。  [DataSet](../data-tools/dataset-tools-in-visual-studio.md)、[TableAdapter](../data-tools/tableadapter-overview.md) 和 <xref:System.Windows.Forms.BindingSource> 則會出現在元件匣中。  
-  
-## 請參閱  
- [逐步解說：顯示 Windows Form 上的資料](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)   
- [BindingSource 元件概觀](../Topic/BindingSource%20Component%20Overview.md)   
- [BindingNavigator 控制項概觀](../Topic/BindingNavigator%20Control%20Overview%20\(Windows%20Forms\).md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)   
- [用來在 Visual Studio 中使用資料來源的工具](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+## <a name="see-also"></a>See Also  
+ [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

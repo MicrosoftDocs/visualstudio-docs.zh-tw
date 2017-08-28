@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting installation issues | Microsoft Docs
 description: Sometimes, things can go wrong. If your Visual Studio installation or upgrade fails, this page can help.
-ms.date: 08/24/2017
+ms.date: 08/28/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,8 +16,8 @@ author: timsneath
 ms.author: tims
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 7adecc638a0ea4b198501752930a5c92c9db282c
-ms.openlocfilehash: 566d3f0a9f38dd8fca763439ab714cf551a551ef
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 15e3b7cf051d26b6784df13f57794f6057e4c91c
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/28/2017
 
@@ -80,9 +80,9 @@ Here is a table of known issues and some workarounds when installing from a loca
 | New workloads, components, or languages fail to install.  | `--layout`  | Make sure that you have internet access if you install from a partial layout and select workloads, components, or languages that were not downloaded previously in that partial layout. |
 
 ## <a name="how-to-get-the-visual-studio-installation-logs"></a>How to get the Visual Studio installation logs
-Setup logs are needed to troubleshoot most installation issues. When you submit an issue by using [Report A Problem](../ide/how-to-report-a-problem-with-visual-studio-2017) in the Visual Studio Installer, these logs are automatically included in your report. 
+Setup logs are needed to troubleshoot most installation issues. When you submit an issue by using [Report a Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) in the Visual Studio Installer, these logs are automatically included in your report.
 
-If you contact Microsoft Support, you may need to provide these setup logs by using the [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). The log collection tool collects setup logs from all components installed by Visual Studio 2017, including .NET Framework, Windows SDK, and SQL Server. It also collects computer information, a Windows Installer inventory, and Windows event log information for Visual Studio Installer, Windows Installer, and System Restore. 
+If you contact Microsoft Support, you may need to provide these setup logs by using the [Microsoft Visual Studio and .NET Framework Log Collection Tool](https://aka.ms/vscollect). The log collection tool collects setup logs from all components installed by Visual Studio 2017, including .NET Framework, Windows SDK, and SQL Server. It also collects computer information, a Windows Installer inventory, and Windows event log information for Visual Studio Installer, Windows Installer, and System Restore.
 
 To collect the logs
 

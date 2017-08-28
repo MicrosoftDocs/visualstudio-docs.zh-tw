@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - WPF, data binding in Visual Studio
 - WPF data binding [Visual Studio], walkthroughs
@@ -36,29 +34,29 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: c67929edfa1b81cf6b8da9b8aea816277e9ddfa1
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 776008921e617c9a81c492e46125bca39a609bb5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bind WPF controls to a dataset
 In this walkthrough, you will create a WPF application that contains data-bound controls. The controls are bound to product records that are encapsulated in a dataset. You will also add buttons to browse through products and save changes to product records.  
   
- This walkthrough illustrates the following tasks:  
+This walkthrough illustrates the following tasks:  
   
--   Creating a WPF application and a dataset that is generated from data in the AdventureWorksLT sample database.  
+- Creating a WPF application and a dataset that is generated from data in the AdventureWorksLT sample database.  
   
--   Creating a set of data-bound controls by dragging a data table from the **Data Sources** window to a window in the WPF Designer.  
+- Creating a set of data-bound controls by dragging a data table from the **Data Sources** window to a window in the WPF Designer.  
   
--   Creating buttons that navigate forward and backward through product records.  
+- Creating buttons that navigate forward and backward through product records.  
   
--   Creating a button that saves changes that users make to the product records to the data table and the underlying data source.  
+- Creating a button that saves changes that users make to the product records to the data table and the underlying data source.  
   
-     [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
   

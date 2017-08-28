@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
@@ -34,8 +32,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 899d445d2dbcbf002b78d9a2a4f222ce0fc4ade0
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 5d2f58ef336a1d8a103492385c0e62b77be46ff7
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/28/2017
 
@@ -45,10 +43,10 @@ You can extend the functionality of a dataset by creating a partial class file f
   
  The code that defines a dataset is generated every time changes are made to the dataset definition (in the typed dataset). This code is also generated when you make changes during the running of any wizard that modifies the configuration of a dataset. To prevent your code from being deleted during the regeneration of a dataset, add code to the dataset's partial class file.  
   
- By default, after you separate the dataset and `TableAdapter` code, the result is a discrete class file in each project. The original project has a file named *DatasetName*.Designer.vb (or *DatasetName*.Designer.cs) that contains the `TableAdapter` code. The project that's designated in the **Dataset Project** property has a file that's named *DatasetName*.DataSet.Designer.vb (or *DatasetName*.DataSet.Designer.cs).This file contains the dataset code.  
+ By default, after you separate the dataset and TableAdapter code, the result is a discrete class file in each project. The original project has a file named *DatasetName*.Designer.vb (or *DatasetName*.Designer.cs) that contains the TableAdapter code. The project that's designated in the **Dataset Project** property has a file that's named *DatasetName*.DataSet.Designer.vb (or *DatasetName*.DataSet.Designer.cs).This file contains the dataset code.  
   
 > [!NOTE]
->  When you separate datasets and `TableAdapter`s (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing dataset partial classes must be moved manually to the dataset project.  
+>  When you separate datasets and TableAdapters (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing dataset partial classes must be moved manually to the dataset project.  
   
 > [!NOTE]
 >  When validation code needs to be added, the typed dataset provides functionality for generating <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.RowChanging> event handlers. For more information, see [Add validation to an n-tier dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).  
@@ -72,8 +70,7 @@ You can extend the functionality of a dataset by creating a partial class file f
         ' Add code here to add functionality   
         ' to the CustomersDataTable.  
     End Class  
-    ```  
-  
+    ```    
     ```csharp  
     partial class CustomersDataTable  
     {  

@@ -27,8 +27,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e635c30b6dc18f1d76a558848d4a2668d9f29411
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 97f84f709822525ab393dc0961d43d3e0bf29f80
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/28/2017
 
@@ -44,7 +44,7 @@ ms.lasthandoff: 08/28/2017
 ## <a name="adding-validation-for-changes-to-the-value-in-a-specific-column"></a>Adding Validation for Changes to the Value in a Specific Column  
  This procedure shows how to validate data when the value in a column changes. Because the validation is performed inside the class definition (instead of in the user interface) an exception is thrown if the value causes validation to fail. Implement error handling for the code in your application that attempts to change the column values.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 #### <a name="to-validate-data-during-a-columns-value-change"></a>To validate data during a column's value change  
   
@@ -60,9 +60,9 @@ ms.lasthandoff: 08/28/2017
   
     1.  Expand the **Method Name** list.  
   
-    2.  Locate the **On*COLUMNNAME*Changing** method for the column you want to add validation to.  
+    2.  Locate the **OnCOLUMNNAMEChanging** method for the column you want to add validation to.  
   
-    3.  An `On`*COLUMNNAME*`Changing` method is added to the partial class.  
+    3.  An `OnCOLUMNNAMEChanging` method is added to the partial class.  
   
     4.  Add the following code to first verify that a value has been entered and then to ensure that the value entered for the column is acceptable for your application. The `value` argument contains the proposed value, so add logic to confirm that it is a valid value:  
   
@@ -75,19 +75,16 @@ ms.lasthandoff: 08/28/2017
         End If  
         ```  
   
-     For C# projects:  
+    For C# projects:  
   
-    1.  Because C# projects do not automatically generate the event handlers, you can use IntelliSense to create the column-changing partial methods.  
+    Because C# projects do not automatically generate event handlers, you can use IntelliSense to create the column-changing partial methods. Type `partial` and then a space to access the list of available partial methods. Click the column-changing method for the column you want to add validation for. The following code resembles the code that is generated when you select a column-changing partial method:  
   
-         Type `partial` and then a space to access the list of available partial methods. Click the column-changing method for the column you want to add validation for. The following code resembles code that is generated when you select a column-changing partial method:  
-  
-        ```csharp  
-        partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
-            {  
-               throw new System.NotImplementedException();  
-            }  
-  
-        ```  
+    ```csharp  
+    partial void OnCOLUMNNAMEChanging(COLUMNDATATYPE value)  
+        {  
+           throw new System.NotImplementedException();  
+        }  
+    ```  
   
 ## <a name="adding-validation-for-updates-to-an-entity-class"></a>Adding Validation for Updates to an Entity Class  
  In addition to checking values during changes, you can also validate data when an attempt is made to update a complete entity class. Validation during an attempted update enables you to compare values in multiple columns if business rules require this. The following procedure shows how to validate when an attempt is made to update a complete entity class.  
@@ -109,9 +106,9 @@ ms.lasthandoff: 08/28/2017
   
     1.  Expand the **Method Name** list.  
   
-    2.  Click **Update***ENTITYCLASSNAME*.  
+    2.  Click **UpdateENTITYCLASSNAME**.  
   
-    3.  An `Update`*ENTITYCLASSNAME* method is added to the partial class.  
+    3.  An `UpdateENTITYCLASSNAME` method is added to the partial class.  
   
     4.  Access individual column values by using the `instance` argument, as shown in the following code:  
   
@@ -122,22 +119,20 @@ ms.lasthandoff: 08/28/2017
         End If  
         ```  
   
-     For C# projects:  
+    For C# projects:  
   
-    1.  Because C# projects do not automatically generate the event handlers, you can use IntelliSense to create the partial `Update`*CLASSNAME* method.  
+    Because C# projects do not automatically generate event handlers, you can use IntelliSense to create the partial `UpdateCLASSNAME` method. Type `partial` and then a space to access the list of available partial methods. Click the update method for the class you want to add validation for. The following code resembles the code that is generated when you select an `UpdateCLASSNAME` partial method:  
   
-    2.  Type `partial` and then a space to access the list of available partial methods. Click the update method for the class you want to add validation for. The following code resembles code that is generated when you select an `Update`*CLASSNAME* partial method:  
-  
-        ```csharp  
-        partial void UpdateCLASSNAME(CLASSNAME instance)  
+    ```csharp  
+    partial void UpdateCLASSNAME(CLASSNAME instance)  
+    {  
+        if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
         {  
-            if ((instance.COLUMNNAME == x) && (instance.COLUMNNAME = y))  
-            {  
-                string ErrorMessage = "Invalid data!";  
-                throw new System.Exception(ErrorMessage);  
-            }  
+            string ErrorMessage = "Invalid data!";  
+            throw new System.Exception(ErrorMessage);  
         }  
-        ```  
+    }  
+    ```  
   
 ## <a name="see-also"></a>See Also  
  [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

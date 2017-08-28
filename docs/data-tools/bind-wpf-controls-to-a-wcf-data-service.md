@@ -36,10 +36,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 6bfcb07427cf14f29764d30e4ebed7009f45d856
+ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
+ms.openlocfilehash: 9dc767b02361087974d9dd7c4ef88e282fef38b0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bind WPF controls to a WCF data service
@@ -47,17 +47,17 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
  This walkthrough illustrates the following tasks:  
   
--   Creating an Entity Data Model that is generated from data in the AdventureWorksLT sample database.  
+- Creating an Entity Data Model that is generated from data in the AdventureWorksLT sample database.  
   
--   Creating a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] that exposes the data in the Entity Data Model to a WPF application.  
+- Creating a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] that exposes the data in the Entity Data Model to a WPF application.  
   
--   Creating a set of data-bound controls by dragging items from the **Data Sources** window to the WPF designer.  
+- Creating a set of data-bound controls by dragging items from the **Data Sources** window to the WPF designer.  
   
--   Creating buttons that navigate forward and backward through customer records.  
+- Creating buttons that navigate forward and backward through customer records.  
   
--   Creating a button that saves changes to data in the controls to the [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] and the underlying data source.  
+- Creating a button that saves changes to data in the controls to the [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] and the underlying data source.  
   
-     [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisites  
  You need the following components to complete this walkthrough:  
