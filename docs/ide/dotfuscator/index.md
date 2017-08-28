@@ -46,7 +46,7 @@ ms.lasthandoff: 06/23/2017
 使用它來強化、保護及清理傳統型、行動裝置、伺服器和嵌入式應用程式，以協助保護商業機密和其他智慧財產 (IP)、減少盜版和仿冒，並防止竄改及未經授權的偵錯。
 Dotfuscator 不需要其他程式設計作業，甚至不需要存取原始程式碼，就可以在編譯的組件上執行。
 
-![](~/ide/dotfuscator/media/header.svg)
+![](media/header.svg)
 
 ## <a name="why-protection-matters"></a>為何保護很重要
 
@@ -85,7 +85,7 @@ Dotfuscator CE 提供現成的基本保護。
 
 ## <a name="getting-started"></a>快速入門
 
-若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動] (Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
+若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動]\(Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
 
 * 如果已經安裝 Dotfuscator CE，將會顯示啟動 Dotfuscator CE 使用者介面的 [功能表] 選項。 如需詳細資訊，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
 * 如果您尚未安裝 Dotfuscator CE，將會顯示相關的 [安裝] 選項。 如需詳細資訊，請參閱[安裝頁面][install]。
