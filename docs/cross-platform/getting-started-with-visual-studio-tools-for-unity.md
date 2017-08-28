@@ -113,7 +113,7 @@ ms.lasthandoff: 05/13/2017
  [Tutorials - Unity Learn page](http://unity3d.com/learn/tutorials/modules) (教學課程 – Unity Learn 頁面)  
 
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 設定 Unity Editor 使用 Visual Studio Tools for Unity  
- 如果您從現有的專案開始，或在建立專案時未匯入 Visual Studio Tools unitypackage，則需要立即匯入 unitypackage。 在 Unity 編輯器主功能表上，選擇 [資產]、[匯入封裝]、[Visual Studio 2015 Tools]  (您應該會看到已安裝之 Visual Studio 版本的選項)。  
+ 如果您從現有的專案開始，或在建立專案時未匯入 Visual Studio Tools unitypackage，則需要立即匯入 unitypackage。 在 Unity 編輯器主功能表上，選擇 [資產]、[匯入封裝]、[Visual Studio 2015 Tools] \(您應該會看到已安裝之 Visual Studio 版本的選項)。  
 
  ![將 VSTU 封裝匯入 Unity 專案。] (../cross-platform/media/vstu_configure_unity_import_vstu.png "vstu_configure_unity_import_vstu")  
 
