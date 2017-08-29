@@ -25,7 +25,7 @@ ms.lasthandoff: 07/18/2017
 
 # <a name="python-web-project-templates"></a>Python Web 專案範本
 
-Visual Studio 中的 Python 支援透過專案範本以及可設定成處理各種架構的偵錯啟動器，在 Bottle、Django 和 Flask 這類架構中開發 Web 專案。 不過，Visual Studio 不包含架構本身，您必須以滑鼠右鍵按一下專案並選取 [Python] > [Install/upgrade framework...] (安裝/升級架構...) 來個別安裝它們。
+Visual Studio 中的 Python 支援透過專案範本以及可設定成處理各種架構的偵錯啟動器，在 Bottle、Django 和 Flask 這類架構中開發 Web 專案。 不過，Visual Studio 不包含架構本身，您必須以滑鼠右鍵按一下專案並選取 [Python] > [Install/upgrade framework...]\(安裝/升級架構...) 來個別安裝它們。
 
 每個範本 (透過 [檔案] > [新增] > [專案] 存取) 會搭配隨機選取的本機連接埠啟動網頁伺服器，於偵錯期間開啟您的預設瀏覽器，並允許直接發行至 [Microsoft Azure](http://www.azure.com)。 針對 Bottle、Flask 和 Django 有提供範本，而且您可以針對其他架構 (例如 Pyramid) 使用一般的 [Web 專案] 範本。
 
@@ -158,7 +158,7 @@ c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 ```
 
-部署到 Azure App Service 後，您的網站會在 Microsoft IIS 後方執行。 若要讓您的網站搭配 IIS 運作，您至少需要新增 `web.config` 檔案。 有可用的範本可供一些常見的部署目標使用，您可以以滑鼠右鍵按一下專案並選取 [新增] > [新增項目] (請參閱下方的對話方塊) 來取得它們，而且您可以輕鬆地修改這些設定以用於其他用途。 如需可用組態設定的資訊，請參閱 [IIS Configuration Reference](https://www.iis.net/configreference) (IIS 設定參考)。
+部署到 Azure App Service 後，您的網站會在 Microsoft IIS 後方執行。 若要讓您的網站搭配 IIS 運作，您至少需要新增 `web.config` 檔案。 有可用的範本可供一些常見的部署目標使用，您可以以滑鼠右鍵按一下專案並選取 [新增] > [新增項目]\(請參閱下方的對話方塊) 來取得它們，而且您可以輕鬆地修改這些設定以用於其他用途。 如需可用組態設定的資訊，請參閱 [IIS Configuration Reference](https://www.iis.net/configreference) (IIS 設定參考)。
 
 ![Azure 項目範本](media/template-web-azure-items.png)
 
