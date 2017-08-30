@@ -94,7 +94,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
   c.  展開 [中繼憑證授權]，然後選取 [憑證]。<br/>
     * 檢查這份必要中繼憑證清單。<br/>
 
-如果憑證名稱不在 [Issued To] (核發給) 資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者] 中繼憑證存放區中，則只有已登入的使用者才能使用它，並且可能需要為其他使用者安裝它。
+如果憑證名稱不在 [Issued To]\(核發給) 資料行中，則必須予以安裝。  如果中繼憑證只位於 [目前使用者] 中繼憑證存放區中，則只有已登入的使用者才能使用它，並且可能需要為其他使用者安裝它。
 
 ## <a name="install-visual-studio"></a>安裝 Visual Studio
 在您安裝憑證之後，可以使用 [建立 Visual Studio 的網路安裝] 頁面的 [從網路安裝部署]((create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation) 區段中的指示，繼續離線部署 Visual Studio，而不需要額外的特殊步驟。
