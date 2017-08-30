@@ -6,6 +6,9 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 caps.latest.revision: 3
 author: mikeblome
@@ -27,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: c7cc1ed5245b711a6361e245ef5d8da6896d329b
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 461f11a6bb124b99d15047f69bf60a4ea01125a2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Walkthrough: Customizing the insert, update, and delete behavior of entity classes
@@ -118,7 +121,6 @@ Because you will be working with [!INCLUDE[vbtecdlinq](../data-tools/includes/vb
   
     > [!NOTE]
     >  If the **Customer** class is not available, cancel out of the wizard, build the project, and run the wizard again.  
-  
 8.  Click **Finish** to create the data source and add the **Customer** entity class to the **Data Sources** window.  
   
 ## <a name="creating-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Creating a DataGridView to Display the Customer Data on a Windows Form  
@@ -143,8 +145,7 @@ Because you will be working with [!INCLUDE[vbtecdlinq](../data-tools/includes/vb
   
     ```csharp  
     private NorthwindDataContext northwindDataContext1  
-        = new NorthwindDataContext();  
-  
+        = new NorthwindDataContext();    
     ```  
   
 5.  Create an event handler for the `Form_Load` event and add the following code to the handler:  
@@ -155,8 +156,7 @@ Because you will be working with [!INCLUDE[vbtecdlinq](../data-tools/includes/vb
   
     ```csharp  
     customerBindingSource.DataSource  
-        = northwindDataContext1.Customers;  
-  
+        = northwindDataContext1.Customers;    
     ```  
   
 ## <a name="implementing-save-functionality"></a>Implementing Save Functionality  

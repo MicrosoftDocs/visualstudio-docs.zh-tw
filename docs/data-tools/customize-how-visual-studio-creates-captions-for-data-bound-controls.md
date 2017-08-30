@@ -6,11 +6,6 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - Label captions, Data Sources window
 - smart captions
@@ -37,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 0a14212b85b1fa13fb61a7691689f5eb1f8e74de
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 3eef3e43fda971e82208cb447b261ffa82e6aac9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Customize how Visual Studio creates captions for data-bound controls

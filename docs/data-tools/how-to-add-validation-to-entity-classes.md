@@ -6,6 +6,9 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 caps.latest.revision: 3
 author: mikeblome
@@ -27,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: 97f84f709822525ab393dc0961d43d3e0bf29f80
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 3c6e5bb7d948aa33750161f19e435120cebc30d0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>How to: Add validation to entity classes

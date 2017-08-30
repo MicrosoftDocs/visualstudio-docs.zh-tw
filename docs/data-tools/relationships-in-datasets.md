@@ -9,11 +9,6 @@ ms.topic: article
 f1_keywords:
 - vbData.Microsoft.VSDesigner.DataSource.DesignRelation
 - vbdata.Microsoft.VSDesigner.DataSource.DesignRelation
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - relationships, about relationships
 - datasets [Visual Basic], relationships
@@ -39,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: aa870fb2725af1117e9c81bedce413a31f89a021
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: e3bdcec0ea120296b7fa610842541286fb6364dc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="relationships-in-datasets"></a>Relationships in datasets

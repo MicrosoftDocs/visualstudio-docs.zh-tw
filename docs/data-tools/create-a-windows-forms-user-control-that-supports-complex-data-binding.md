@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - data binding, user controls
 - data binding, complex
@@ -36,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: f0daf48edc1739c31d0cd23156a7653954d352fc
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: be5f97c932af02f5526e63123948e13271e1f015
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Create a Windows Forms user control that supports complex data binding

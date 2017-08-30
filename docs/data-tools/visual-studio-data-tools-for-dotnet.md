@@ -17,14 +17,14 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: a70efa7c969ee0bec6975278b877d4ab69a0d039
-ms.openlocfilehash: 2077782fd7fa253f9fa542b87ac5c94978141dae
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 4139329934b0cbdc7a8546ce39d07807a91634eb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio data tools for .NET
-Visual Studio and the .NET Framework together provide extensive API and tooling support for connecting to databases, modeling data in memory, and displaying the data in the user interface.  The .NET Framework classes that provide data-access functionality are known as [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, along with the data tooling in Visual Studio, was originally designed primarily to support relational databases and XML. These days,  many NoSQL database vendors, or third parties, offer ADO.NET providers.  
+Visual Studio and the .NET Framework together provide extensive API and tooling support for connecting to databases, modeling data in memory, and displaying the data in the user interface. The .NET Framework classes that provide data-access functionality are known as [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). ADO.NET, along with the data tooling in Visual Studio, was originally designed primarily to support relational databases and XML. These days,  many NoSQL database vendors, or third parties, offer ADO.NET providers.  
   
 [.NET Core](https://www.dotnetfoundation.org/netcore) supports ADO.NET, except for datasets and related types. If you are targeting .NET Core and require an object-relational mapping (ORM) layer, use [Entity Framework Core](https://docs.microsoft.com/ef/core/).  
   
@@ -44,11 +44,11 @@ Visual Studio and the .NET Framework together provide extensive API and tooling 
   
 5.  Add custom code for things like business rules, search, and data validation, or to take advantage of custom functionality that the underlying database exposes.  
   
- You can skip step 3 and program a .NET application to issue commands directly to a database, rather than using a model. In this case, you will find the relevant documentation here: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Note that you still can use the   Data Source Configuration Wizard and designers to generate data-binding code when you populate your own objects in memory and then data-bind UI controls to those objects.  
+ You can skip step 3 and program a .NET application to issue commands directly to a database, rather than using a model. In this case, you will find the relevant documentation here: [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx). Note that you still can use the Data Source Configuration Wizard and designers to generate data-binding code when you populate your own objects in memory and then data-bind UI controls to those objects.  
   
 ## <a name="in-this-section"></a>In this section  
   
--   [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+-   [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)
   
 -   [Add new connections](../data-tools/add-new-connections.md)  
   

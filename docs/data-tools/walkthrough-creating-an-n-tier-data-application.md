@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - n-tier applications, creating
 - n-tier applications, walkthroughs
@@ -34,10 +32,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c3cacadf6295c5bcbd600ea54bf0ff9e27a080e9
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: c3148acaacbd77d10c2729384130267a55d5231a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Walkthrough: Creating an N-Tier Data Application
@@ -256,7 +254,6 @@ ms.lasthandoff: 08/28/2017
   
     [OperationContract]  
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();  
-  
     ```  
   
 3.  In the DataService project, double-click Service1.vb (or Service1.cs).  
@@ -282,7 +279,6 @@ ms.lasthandoff: 08/28/2017
              CustomersTableAdapter1  
             = new DataAccessTier.NorthwindDataSetTableAdapters.CustomersTableAdapter();  
         return CustomersTableAdapter1.GetCustomers();  
-  
     }  
     public DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders()  
     {  
@@ -290,7 +286,6 @@ ms.lasthandoff: 08/28/2017
              OrdersTableAdapter1  
             = new DataAccessTier.NorthwindDataSetTableAdapters.OrdersTableAdapter();  
         return OrdersTableAdapter1.GetOrders();  
-  
     }  
     ```  
   
@@ -368,7 +363,6 @@ ms.lasthandoff: 08/28/2017
         new ServiceReference1.Service1Client();  
     northwindDataSet.Customers.Merge(DataSvc.GetCustomers());  
     northwindDataSet.Orders.Merge(DataSvc.GetOrders());  
-  
     ```  
   
 ## <a name="increasing-the-maximum-message-size-allowed-by-the-service"></a>Increasing the Maximum Message Size Allowed by the Service  

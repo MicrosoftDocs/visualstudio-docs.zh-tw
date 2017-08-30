@@ -1,62 +1,81 @@
 ---
-title: "使用舊版活動設計工具 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "活動, 新增子系"
-  - "活動, 設定"
-  - "活動, 建立自訂"
-  - "活動設計工具"
-  - "子活動, 新增"
-  - "自訂活動"
+title: Using the Legacy Activity Designer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- activities, configuring
+- custom activities
+- Activity Designer
+- child activities, adding
+- activities, adding child
+- activities, creating custom
 ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 5
+author: ErikRe
+ms.author: erikre
+manager: erikre
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 07f5366d268de8b426f02ec3aa982d6f89f1547d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 使用舊版活動設計工具
-本主題描述如何在舊版 [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)] 中使用活動設計工具。當以 [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] 或 [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)] 為目標時，請使用舊版設計工具。  
+# <a name="using-the-legacy-activity-designer"></a>Using the Legacy Activity Designer
+This topic describes how to use the activity designer in the legacy [!INCLUDE[wfd1](../workflow-designer/includes/wfd1_md.md)]. Use the legacy designer when targeting the [!INCLUDE[netfx35_long](../workflow-designer/includes/netfx35_long_md.md)] or the [!INCLUDE[vstecwinfx](../workflow-designer/includes/vstecwinfx_md.md)].  
   
- 活動設計工具可讓您建立自訂活動。  
+ The Activity Designer enables you to create your own custom activities.  
   
-## 建立自訂活動  
- 依照下列步驟使用活動設計工具建立自訂活動：  
+## <a name="creating-a-custom-activity"></a>Creating a Custom Activity  
+ Follow these steps to create a custom activity using the Activity Designer:  
   
-1.  在 \[**專案**\] 功能表上，按一下 \[**新增活動**\]。  
+1.  On the **Project** menu, click **Add Activity**.  
   
-2.  選取 \[**活動**\] 或 \[**活動 \(程式碼分開置放\)**\] 範本。  
+2.  Select the **Activity** or **Activity (with code separation)** template.  
   
-    1.  使用 \[**活動**\] 範本，以相同程式碼檔案中的活動定義和使用者程式碼來建立活動。  
+    1.  Use the **Activity** template to create an activity with the activity definition and the user code in same code file.  
   
-    2.  使用 \[**活動 \(程式碼分開置放\)**\] 範本，使用不同程式碼檔案中的使用者程式碼和表示為工作流程標記的活動定義來建立活動。  
+    2.  Use the **Activity (with code separation)** template to create an activity with the activity definition expressed as workflow markup and the user code in a separate code file.  
   
-3.  輸入活動名稱或保留預設名稱，再按一下 \[**新增**\]。  
+3.  Type an activity name or keep the default name, and then click **Add**.  
   
- 您也可以建立 **Workflow Activity Library** 類型的新專案來建立一組自訂的活動。如需這個專案類型的詳細資訊，請參閱[HOW TO：建立工作流程活動程式庫 \(舊版\)](../Topic/How%20to:%20Create%20a%20Workflow%20Activity%20Library%20\(Legacy\).md)。  
+ You can also create a set of custom activities by creating a new project of type **Workflow Activity Library**. For more information about this project type, see [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
-## 設定活動  
- 活動設計工具為使用中時，可使用屬性瀏覽器設定下表所列的屬性。  
+## <a name="configuring-an-activity"></a>Configuring an Activity  
+ While the Activity Designer is active, you can use the property browser to configure the properties listed in the following table.  
   
-|屬性|註解|  
-|--------|--------|  
-|**Name**|活動名稱。|  
-|**Base Class**|衍生活動的基底類別。預設的基底類別為 [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020) \(本頁面可能為英文\)。在 \[**屬性**\] 視窗中，按一下 \[**基底類別**\] 省略符號 **\[…\]**，選取[瀏覽並選取 .NET 類型對話方塊 \(舊版\)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md)中其他的基底類別。|  
-|**Description**|使用者定義的活動描述。|  
-|**Enabled**|預設值為 **True**，以啟用活動的執行與驗證。設為 **False** 會停用活動的執行與驗證。如需活動執行和驗證的詳細資訊，請參閱[開發工作流程活動](http://go.microsoft.com/fwlink?LinkID=65024) \(英文\)。|  
+|Property|Comments|  
+|--------------|--------------|  
+|**Name**|Name of the activity.|  
+|**Base Class**|Base class that the activity derives from. The default base class is [SequenceActivity](http://go.microsoft.com/fwlink?LinkID=65020). In the **Properties** window, click the **Base Class** ellipsis **[...]** to select another base class in the [Browse and Select a .NET Type Dialog Box (Legacy)](../workflow-designer/browse-and-select-a-dotnet-type-dialog-box-legacy.md).|  
+|**Description**|User-defined description of the activity.|  
+|**Enabled**|Set to **True** by default to enable activity execution and validation. Set to **False** to disable activity execution and validation. For information about activity execution and validation, see [Developing Workflow Activities](http://go.microsoft.com/fwlink?LinkID=65024).|  
   
-## 新增子活動  
- 您可以將子活動從 \[工具箱\] 拖曳至您正在設計的活動。接著，便可以使用屬性瀏覽器設定每一個子活動。  
+## <a name="adding-child-activities"></a>Adding Child Activities  
+ You can drag child activities from the Toolbox to the activity that you are designing. You can then configure each child activity using the property browser.  
   
-## 請參閱  
- [開發工作流程活動](http://go.microsoft.com/fwlink?LinkID=65024)   
- [建立自訂活動](http://go.microsoft.com/fwlink?LinkID=65021)   
- [舊版工作流程活動](../workflow-designer/legacy-workflow-activities.md)   
- [自訂活動範例](http://go.microsoft.com/fwlink?LinkID=65022)   
- [HOW TO：建立工作流程活動程式庫 \(舊版\)](../Topic/How%20to:%20Create%20a%20Workflow%20Activity%20Library%20\(Legacy\).md)   
- [使用舊版工作流程設計工具](../workflow-designer/using-the-legacy-workflow-designer.md)
+## <a name="see-also"></a>See Also  
+ [Developing Workflow Activities](http://go.microsoft.com/fwlink?LinkID=65024)   
+ [Creating Custom Activities](http://go.microsoft.com/fwlink?LinkID=65021)   
+ [Legacy Workflow Activities](../workflow-designer/legacy-workflow-activities.md)   
+ [Custom Activities Samples](http://go.microsoft.com/fwlink?LinkID=65022)   
+ [How to: Create a Workflow Activity Library (Legacy)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Using the Legacy Workflow Designer](../workflow-designer/using-the-legacy-workflow-designer.md)

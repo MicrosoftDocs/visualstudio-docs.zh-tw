@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - databases [Visual Basic], accessing with a TableAdapter
 - DBDirect methods
@@ -44,10 +42,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 2d3b6a7be25b04254cd4cdefd23f7edac2f93cd7
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: d265dbe3df2861d6dac10cc4ba445cbe257cfcdf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Directly access the database with a TableAdapter

@@ -6,16 +6,11 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - Windows Forms, searching data
 - Windows Forms, displaying data
 - parameters, displaying filtered data
-- data [Visual Studio], paramaterizing queries
+- data [Visual Studio], parameterizing queries
 - data [Visual Studio], searching
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 caps.latest.revision: 28
@@ -38,10 +33,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: f89cd3db830dfc3e2a2825044bac1eb4fece75da
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 6834e4d65b869c680e1a959c1667486e5b19ed34
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Create a Windows Form to search data

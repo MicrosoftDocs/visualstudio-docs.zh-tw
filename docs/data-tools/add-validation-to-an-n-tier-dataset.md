@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: 7768e8cb19341be757f377d69fe622a1c4557e46
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: e1f88d3259ee8d65578e157d85262b924df87637
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Add validation to an n-tier dataset
@@ -66,6 +66,8 @@ End Sub
   
 > [!NOTE]
 >  In C# projects, the Dataset Designer only creates partial classes for the dataset and individual tables in the dataset. The Dataset Designer does not automatically create event handlers for the <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.RowChanging> events in C# like it does in Visual Basic. In C# projects, you have to manually construct a method to handle the event and hook up the method to the underlying event. The following procedure provides the steps to create the required event handlers in both Visual Basic and C#.  
+  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 #### <a name="to-add-validation-during-changes-to-individual-column-values"></a>To add validation during changes to individual column values  
   
@@ -136,7 +138,7 @@ End Sub
   
 3.  Add user code inside the partial class declaration.  
   
-4.  The following code shows where to add user code to validate data during the <xref:System.Data.DataTable.RowChanging> event:    
+4.  The following code shows where to add user code to validate during the <xref:System.Data.DataTable.RowChanging> event. The C# example also includes code to hook the event handler method up to the `OrdersRowChanging` event.  
   
     ```vb  
     Partial Class OrdersDataTable  

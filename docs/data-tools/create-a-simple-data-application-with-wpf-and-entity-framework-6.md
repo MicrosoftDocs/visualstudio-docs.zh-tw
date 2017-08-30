@@ -6,6 +6,8 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- CSharp
 ms.assetid: 65929fab-5d78-4e04-af1e-cf4957f230f6
 caps.latest.revision: 22
 author: gewarren
@@ -17,10 +19,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f5a25b8a478a1c50808e1c6af15d2b36edfbdcd0
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 03c7fcd10c58babe6ad50b29cbb304cdcc4e920c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Create a simple data application with WPF and Entity Framework 6

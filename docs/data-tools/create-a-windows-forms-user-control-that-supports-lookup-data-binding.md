@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - data binding, user controls
 - LookupBindingPropertiesAttribute class, examples
@@ -36,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 4f98e2a2c6b6500c1656f4a4bf291878f168457b
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 52faf1fc3a5b682fc4e1f1603ad1d7c6088b797b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Create a Windows Forms user control that supports lookup data binding

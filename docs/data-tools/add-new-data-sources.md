@@ -8,11 +8,6 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
@@ -37,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b8e9d2a517e673cd7f44f1a392d6179f1c6b0801
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 3d03c3dde316e9139e254d1381a67245202efc39
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="add-new-data-sources"></a>Add new data sources

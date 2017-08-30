@@ -13,8 +13,6 @@ f1_keywords:
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - updating datasets, constraints
 - constraints [Visual Basic], datasets
@@ -41,10 +39,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5b5d6a28bfed55aa925aa667877f9c5e3b7f57c1
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 305e4ea8099c2e1273c4b02aa4eec3146d761b2f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>Turn off constraints while filling a dataset
