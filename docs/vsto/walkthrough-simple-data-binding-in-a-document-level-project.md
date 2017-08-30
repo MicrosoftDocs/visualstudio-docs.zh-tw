@@ -1,201 +1,201 @@
 ---
-title: "逐步解說：文件層級專案中的簡單資料繫結"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料 [Visual Studio 中的 Office 程式開發], 資料繫結"
-  - "資料繫結 [Visual Studio 中的 Office 程式開發], 工作表儲存格至資料庫欄位"
-  - "資料庫欄位 [Visual Studio 中的 Office 程式開發]"
-  - "簡單資料繫結 [Visual Studio 中的 Office 程式開發]"
-  - "工作表 [Visual Studio 中的 Office 程式開發], 將工作表儲存格繫結至資料庫欄位"
+title: 'Walkthrough: Simple Data Binding in a Document-Level Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data binding [Office development in Visual Studio], worksheet cell to Database field
+- worksheets [Office development in Visual Studio], binding worksheet cell to Database field
+- Database field [Office development in Visual Studio]
+- data [Office development in Visual Studio], binding data
+- simple data binding [Office development in Visual Studio]
 ms.assetid: 6b8fd638-af13-4ea1-b1c0-2763e2d8ae23
 caps.latest.revision: 58
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 57
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: ffe9f48755d77ad09430b08391e1aee10089c973
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：文件層級專案中的簡單資料繫結
-  本逐步解說示範使用文件層級專案進行資料繫結的基本概念。  SQL Server 資料庫中的單一資料欄位會繫結至 Microsoft Office Excel 中的已命名範圍。  此逐步解說也將示範如何加入可讓您捲動資料表中所有記錄的控制項。  
+# <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Walkthrough: Simple Data Binding in a Document-Level Project
+  This walkthrough demonstrates the basics of data binding in a document-level project. A single data field in a SQL Server database is bound to a named range in Microsoft Office Excel. The walkthrough also shows how to add controls that enable you to scroll through all the records in the table.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   建立 Excel 專案的資料來源。  
+-   Creating a data source for an Excel project.  
   
--   將控制項加入至工作表。  
+-   Adding controls to a worksheet.  
   
--   捲動資料庫記錄。  
+-   Scrolling through database records.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   與具有 Northwind SQL Server 範例資料庫之伺服器的連線。  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   從 SQL Server 資料庫讀取及寫入該資料庫的使用權限。  
+-   Permissions to read from and write to the SQL Server database.  
   
-## 建立新專案  
- 在這個步驟中，您將會建立一個 Excel 活頁簿專案。  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ In this step, you will create an Excel workbook project.  
   
-#### 若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  使用 Visual Basic 或 C\#，建立名為 **My Simple Data Binding** 的 Excel 活頁簿專案。  請確定已選取 \[**建立新文件**\]。  如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  Create an Excel workbook project with the name **My Simple Data Binding**, using either Visual Basic or C#. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
- Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 My Simple Data Binding 專案加入至 \[**方案總管**\]。  
+ Visual Studio opens the new Excel workbook in the designer and adds the **My Simple Data Binding** project to **Solution Explorer**.  
   
-## 建立資料來源  
- 請使用 \[**資料來源**\] 視窗，將具型別資料集加入您的專案。  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### 建立資料來源  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  如果 \[**資料來源**\] 視窗中不可見，請顯示它，請在功能表列上，選擇 \[**檢視**\]\]，則 \[**其他視窗**\]， \[**資料來源**\]。  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  選取 \[**加入新資料來源**\] 啟動 \[**資料來源組態精靈**\]。  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  選取 \[**資料庫**\]，再按一下 \[**下一步**\]。  
+3.  Select **Database** and then click **Next**.  
   
-4.  選取與 Northwind 範例 SQL Server 資料庫的資料連接，或使用 \[**新增連接**\] 按鈕加入新的連接。  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection using the **New Connection** button.  
   
-5.  在選取或建立連接後，請按 \[**下一步**\]。  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  如果已經選取，請清除儲存連接的選項，然後按一下 \[**下一步**\]。  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  在 \[**資料庫物件**\] 視窗中，展開 \[**資料表**\] 節點。  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  選取 \[**Customers**\] 資料表旁的核取方塊。  
+8.  Select the check box next to the **Customers** table.  
   
-9. 按一下 \[完成\]。  
+9. Click **Finish**.  
   
- 精靈會將 \[**Customers**\] 資料表加入至 \[**資料來源**\] 視窗。  也會將具型別資料集加入至 \[**方案總管**\] 中可以看得到的專案。  
+ The wizard adds the **Customers** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## 將控制項加入至工作表  
- 對於本逐步解說，在第一個工作表上，您需要兩個已命名的範圍和四個按鈕。  首先，請從 \[**資料來源**\] 視窗加入兩個已命名的範圍，使它們自動繫結至資料來源。  接著，再從 \[**工具箱**\] 加入按鈕。  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ For this walkthrough, you need two named ranges and four buttons on the first worksheet. First, add the two named ranges from the **Data Sources** window so that they are automatically bound to the data source. Next, add the buttons from the **Toolbox**.  
   
-#### 若要加入兩個已命名的範圍  
+#### <a name="to-add-two-named-ranges"></a>To add two named ranges  
   
-1.  驗證 \[**我的簡單資料 Binding.xlsx**\] 活頁簿在 Visual Studio 中開啟設計工具，並顯示 \[**Sheet1**\] 。  
+1.  Verify that the **My Simple Data Binding.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  開啟 \[**資料來源**\] 視窗，然後展開 \[**Customers**\] 節點。  
+2.  Open the **Data Sources** window and expand the **Customers** node.  
   
-3.  選取 \[**CompanyName**\] 資料行，然後按一下顯示的下拉箭號。  
+3.  Select the **CompanyName** column, and then click the drop-down arrow that appears.  
   
-4.  在下拉式清單中，選取 \[**NamedRange**\]，然後將 \[**CompanyName**\] 資料行拖曳至 \[**A1**\] 儲存格。  
+4.  Select **NamedRange** in the drop-down list, and then drag the **CompanyName** column to cell **A1**.  
   
-     \[**A1**\] 儲存格中會建立一個名為 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `companyNameNamedRange` 控制項。  同時，會將名為 `customersBindingSource` 的 <xref:System.Windows.Forms.BindingSource>、資料表配接器，以及 <xref:System.Data.DataSet> 執行個體加入至專案。  控制項繫結至 <xref:System.Windows.Forms.BindingSource>，繼而又繫結至 <xref:System.Data.DataSet> 執行個體。  
+     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `companyNameNamedRange` is created in cell **A1**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `customersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-5.  在 \[**資料來源**\] 視窗中選取 \[**CustomerID**\] 資料行，然後按一下顯示的下拉箭號。  
+5.  Select the **CustomerID** column in the **Data Sources** window, and then click the drop-down arrow that appears.  
   
-6.  在下拉式清單中，按一下 \[**NamedRange**\]，然後將 \[**CustomerID**\] 資料行拖曳至 \[**B1**\] 儲存格。  
+6.  Click **NamedRange** in the drop-down list, and then drag the **CustomerID** column to cell **B1**.  
   
-7.  另一個名為 `customerIDNamedRange` 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項會建立在 \[**B1**\] 儲存格中，並繫結至 <xref:System.Windows.Forms.BindingSource>。  
+7.  Another <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `customerIDNamedRange` is created in cell **B1**, and bound to the <xref:System.Windows.Forms.BindingSource>.  
   
-#### 若要加入四個按鈕  
+#### <a name="to-add-four-buttons"></a>To add four buttons  
   
-1.  從 \[**工具箱**\] 的 \[**通用控制項**\] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入至工作表的 \[**A3**\] 儲存格。  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A3** of the worksheet.  
   
-     這個按鈕的名稱為 `Button1`。  
+     This button is named `Button1`.  
   
-2.  依照此順序將另外三個按鈕加入至下列儲存格，使名稱如下所示：  
+2.  Add three more buttons to the following cells in this order, so that the names are as shown:  
   
-    |儲存格|\(名稱\)|  
-    |---------|------------|  
+    |Cell|(Name)|  
+    |----------|--------------|  
     |B3|Button2|  
     |C3|Button3|  
     |D3|Button4|  
   
- 下一步驟是在按鈕上加入文字，並在 C\# 中加入事件處理常式。  
+ The next step is to add text to the buttons, and in C# add event handlers.  
   
-## 初始化控制項  
- 設定按鈕文字，並在 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 事件期間加入事件處理常式。  
+## <a name="initializing-the-controls"></a>Initializing the Controls  
+ Set the button text and add event handlers during the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event.  
   
-#### 若要初始化控制項  
+#### <a name="to-initialize-the-controls"></a>To initialize the controls  
   
-1.  在 \[**方案總管**\] 中，在 \[**Sheet1.vb**\] 或 \[**Sheet1.cs**\] 上按一下滑鼠右鍵，再按捷徑功能表上的 \[**檢視程式碼**\]。  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  將下列程式碼加入至 `Sheet1_Startup` 方法，以設定每個按鈕的文字。  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for each button.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#2)]
-     [!code-vb[Trin_VstcoreDataExcel#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#2)]  
+     [!code-csharp[Trin_VstcoreDataExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#2)]  [!code-vb[Trin_VstcoreDataExcel#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#2)]  
   
-3.  如果是 C\#，請將按鈕 Click 事件的事件處理常式加入至 `Sheet1_Startup` 方法中。  
+3.  For C# only, add event handlers for the button click events to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#3)]  
+     [!code-csharp[Trin_VstcoreDataExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#3)]  
   
- 現在，請加入程式碼以處理按鈕的 <xref:System.Windows.Forms.Control.Click> 事件，以便使用者可以瀏覽目錄。  
+ Now add code to handle the <xref:System.Windows.Forms.Control.Click> events of the buttons so that the user can browse through the records.  
   
-## 加入程式碼以啟用捲動資料錄的功能  
- 將程式碼加入至每個按鈕的 <xref:System.Windows.Forms.Control.Click> 事件處理常式，以便在資料錄中移動。  
+## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Adding Code to Enable Scrolling Through the Records  
+ Add code to the <xref:System.Windows.Forms.Control.Click> event handler of each button to move through the records.  
   
-#### 若要移至第一個記錄  
+#### <a name="to-move-to-the-first-record"></a>To move to the first record  
   
-1.  為 `Button1` 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式，然後加入下列程式碼，以移至第一個記錄：  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button1` button, and add the following code to move to the first record:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#4)]
-     [!code-vb[Trin_VstcoreDataExcel#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#4)]  
+     [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]  [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]  
   
-#### 若要移至上一個記錄  
+#### <a name="to-move-to-the-previous-record"></a>To move to the previous record  
   
-1.  為 `Button2` 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式，然後加入下列程式碼，以後退一個記錄位置：  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button2` button, and add the following code to move the position back by one:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#5)]
-     [!code-vb[Trin_VstcoreDataExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#5)]  
+     [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]  [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]  
   
-#### 若要移至下一個記錄  
+#### <a name="to-move-to-the-next-record"></a>To move to the next record  
   
-1.  為 `Button3` 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式，然後加入下列程式碼，以前進一個記錄的位置：  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button3` button, and add the following code to advance the position by one:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#6)]
-     [!code-vb[Trin_VstcoreDataExcel#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#6)]  
+     [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]  [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]  
   
-#### 若要移至最後一個記錄  
+#### <a name="to-move-to-the-last-record"></a>To move to the last record  
   
-1.  為 `Button4` 按鈕的 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式，然後加入下列程式碼，以移至最後一個記錄：  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the `Button4` button, and add the following code to move to the last record:  
   
-     [!code-csharp[Trin_VstcoreDataExcel#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#7)]
-     [!code-vb[Trin_VstcoreDataExcel#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#7)]  
+     [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]  [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]  
   
-## 測試應用程式  
- 現在，請您測試活頁簿以確定您可以瀏覽資料庫中的記錄。  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to make sure that you can browse through the records in the database.  
   
-#### 若要測試您的活頁簿  
+#### <a name="to-test-your-workbook"></a>To test your workbook  
   
-1.  請按 F5 執行您的專案。  
+1.  Press F5 to run your project.  
   
-2.  請確認第一個記錄出現在 \[**A1**\] 和 \[**B1**\] 儲存格中。  
+2.  Confirm that the first record appears in cells **A1** and **B1**.  
   
-3.  按一下 \[**\>**\] \(`Button3`\) 按鈕，並確認下一個記錄出現在 \[**A1**\] 和 \[**B1**\] 儲存格中。  
+3.  Click the **>** (`Button3`) button and confirm that the next record appears in cell **A1** and **B1**.  
   
-4.  按一下其他捲動按鈕，以確認記錄如預期變更。  
+4.  Click the other scroll buttons to confirm that the record changes as expected.  
   
-## 後續步驟  
- 這個逐步解說顯示將已命名的範圍繫結至資料庫中資料欄位的基本概念。  以下則是接下來的一些工作：  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of binding a named range to a field in a database. Here are some tasks that might come next:  
   
--   快取資料，使您能夠離線使用資料。  如需詳細資訊，請參閱[如何：快取資料供離線使用或於伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   Cache the data so that it can be used offline. For more information, see [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   將儲存格繫結至資料表中多個資料行，而不是一個資料欄位。  如需詳細資訊，請參閱[逐步解說：文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)。  
+-   Bind cells to multiple columns in a table, instead of to one field. For more information, see [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).  
   
--   使用 <xref:System.Windows.Forms.BindingNavigator> 控制項，以捲動記錄。  如需詳細資訊，請參閱[如何：使用 Windows Form BindingNavigator 控制項巡覽資料](http://msdn.microsoft.com/library/0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb)。  
+-   Use a <xref:System.Windows.Forms.BindingNavigator> control to scroll through the records. For more information, see [How to: Navigate Data with the Windows Forms BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).  
   
-## 請參閱  
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Office 方案的資料](../vsto/data-in-office-solutions.md)   
- [逐步解說：文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)  
   
   

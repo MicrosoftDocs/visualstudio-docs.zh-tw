@@ -34,10 +34,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c5562836530a830b197300afd6c86b3c82605293
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1a7ce15f3b5fbdb759733250467a928715f6fedf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
@@ -135,4 +135,4 @@ namespace Microsoft.Samples
 ## <a name="example"></a>Example  
  The following example contains several methods that should be converted to properties, and several that should not because they do not behave like fields.  
   
- [!code-cs[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]
+ [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

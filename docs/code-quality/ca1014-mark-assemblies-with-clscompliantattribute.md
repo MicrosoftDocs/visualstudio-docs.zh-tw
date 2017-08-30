@@ -1,58 +1,73 @@
 ---
-title: "CA1014：以 CLSCompliantAttribute 標記組件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1014"
-  - "MarkAssembliesWithClsCompliant"
-helpviewer_keywords: 
-  - "CA1014"
-  - "MarkAssembliesWithClsCompliant"
+title: 'CA1014: Mark assemblies with CLSCompliantAttribute | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1014
+- MarkAssembliesWithClsCompliant
+helpviewer_keywords:
+- CA1014
+- MarkAssembliesWithClsCompliant
 ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
 caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1014：以 CLSCompliantAttribute 標記組件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 4d15d5c6d111f75bed1e73da1f94cbdae391c4ec
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Mark assemblies with CLSCompliantAttribute
 |||  
 |-|-|  
-|型別名稱|MarkAssembliesWithClsCompliant|  
+|TypeName|MarkAssembliesWithClsCompliant|  
 |CheckId|CA1014|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 組件沒有套用 <xref:System.CLSCompliantAttribute?displayProperty=fullName> 屬性 \(Attribute\)。  
+## <a name="cause"></a>Cause  
+ An assembly does not have the <xref:System.CLSCompliantAttribute?displayProperty=fullName> attribute applied to it.  
   
-## 規則描述  
- Common Language Specification \(CLS\) 會定義命名限制、資料型別及組件必須遵守的規則 \(如果組件會使用於跨程式設計語言時\)。  良好的設計會要求所有組件使用 <xref:System.CLSCompliantAttribute> 明確表示 CLS 標準的符合性。  如果該屬性未出現於組件中，則表示組件不符合 CSL 標準。  
+## <a name="rule-description"></a>Rule Description  
+ The Common Language Specification (CLS) defines naming restrictions, data types, and rules to which assemblies must conform if they will be used across programming languages. Good design dictates that all assemblies explicitly indicate CLS compliance with <xref:System.CLSCompliantAttribute>. If the attribute is not present on an assembly, the assembly is not compliant.  
   
- 符合 CLS 標準的組件可能會包含不符合標準的型別或型別成員。  
+ It is possible for a CLS-compliant assembly to contain types or type members that are not compliant.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將屬性加入至組件。  與其將整個組件標示為不符合標準，您應該判斷哪個型別或哪些型別成員不符合標準，然後將這些項目標示為不符合標準。  如果可能，您應該提供符合 CLS 標準的成員代替不符合標準的成員，以便讓最廣泛的可能使用者可以存取組件的所有功能。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the attribute to the assembly. Instead of marking the whole assembly as noncompliant, you should determine which type or type members are not compliant and mark these elements as such. If possible, you should provide a CLS-compliant alternative for noncompliant members so that the widest possible audience can access all the functionality of your assembly.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  如果您不想讓組件為相容的，請套用此屬性並將其值設為 `false`。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule. If you do not want the assembly to be compliant, apply the attribute and set its value to `false`.  
   
-## 範例  
- 下列範例會顯示已套用 <xref:System.CLSCompliantAttribute?displayProperty=fullName> 屬性，並將其宣告為符合 CLS 標準的組件。  
+## <a name="example"></a>Example  
+ The following example shows an assembly that has the <xref:System.CLSCompliantAttribute?displayProperty=fullName> attribute applied that declares it CLS-compliant.  
   
- [!code-cs[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
- [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]  
+ [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)] [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)] [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.CLSCompliantAttribute?displayProperty=fullName>   
- [語言獨立性以及與語言無關的元件](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md)
+ [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

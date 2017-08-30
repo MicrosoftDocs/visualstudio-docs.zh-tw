@@ -1,62 +1,67 @@
 ---
-title: "Office 專案中的事件"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Sheet1_Startup"
-  - "ThisDocument_Shutdown"
-  - "ThisDocument_Startup"
-  - "應用程式層級增益集 [Visual Studio 中的 Office 程式開發]，事件"
-  - "事件處理常式 [Visual Studio 中的 Office 程式開發]"
-  - "ThisWorkbook_Startup"
-  - "Sheet2_Startup"
-  - "ThisWorkbook_Shutdown"
-  - "文件層級自訂 [Visual Studio 中的 Office 程式開發]，事件"
-  - "Sheet2_Shutdown"
-  - "Startup 事件"
-  - "Sheet3_Shutdown"
-  - "增益集 [Visual Studio 中的 Office 程式開發]，事件"
-  - "Shutdown 事件"
-  - "ThisAddIn_Startup"
-  - "Sheet3_Startup"
-  - "Startup 方法 [Visual Studio 中的 Office 程式開發]"
-  - "Shutdown 方法 [Visual Studio 中的 Office 程式開發]"
-  - "Sheet1_Shutdown"
-  - "事件 [Visual Studio 中的 Office 程式開發]"
-  - "ThisAddIn_Shutdown"
+title: Events in Office Projects | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Sheet1_Startup
+- ThisDocument_Shutdown
+- ThisDocument_Startup
+- application-level add-ins [Office development in Visual Studio], events
+- event handlers [Office development in Visual Studio]
+- ThisWorkbook_Startup
+- Sheet2_Startup
+- ThisWorkbook_Shutdown
+- document-level customizations [Office development in Visual Studio], events
+- Sheet2_Shutdown
+- Startup event
+- Sheet3_Shutdown
+- add-ins [Office development in Visual Studio], events
+- Shutdown event
+- ThisAddIn_Startup
+- Sheet3_Startup
+- Startup method [Office development in Visual Studio]
+- Shutdown method [Office development in Visual Studio]
+- Sheet1_Shutdown
+- events [Office development in Visual Studio]
+- ThisAddIn_Shutdown
 ms.assetid: 666d7f23-ef85-4f2e-9cd3-258df5bdc6fd
 caps.latest.revision: 51
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 50
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6a54e56cbb529482b8980d041044ff8c07b0cd1b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# Office 專案中的事件
-  每個 Office 專案範本會自動產生數個事件處理常式。 文件層級自訂的事件處理常式與 VSTO 增益集的事件處理常式有些許不同。  
+# <a name="events-in-office-projects"></a>Events in Office Projects
+  Each Office project template automatically generates several event handlers. The event handlers for document-level customizations are slightly different from event handlers for VSTO Add-ins.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## 文件層級專案  
- Visual Studio 會在文件層級自訂中為新的或現有的文件或工作表，提供產生的後置程式碼。 這個程式碼會引發兩個不同的事件：**Startup** 和 **Shutdown**。  
+## <a name="document-level-projects"></a>Document-Level Projects  
+ Visual Studio provides generated code behind new or existing documents or worksheets in document-level customizations. This code raises two different events: **Startup** and **Shutdown**.  
   
-### Startup 事件  
- 在執行文件且組件中的所有初始設定程式碼都已執行之後，每個主項目 \(文件、活頁簿或工作表\) 都會引發 **Startup** 事件。 這是在程式碼執行的類別建構函式中，所執行的最後動作。 如需項目的詳細資訊，請參閱[主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)。  
+### <a name="startup-event"></a>Startup Event  
+ The **Startup** event is raised for each of the host items (document, workbook or worksheet) after the document is running and all the initialization code in the assembly has been run. It is the last thing to run in the constructor of the class that your code is running in. For more information about host items, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
   
- 當您建立文件層級專案時，Visual Studio 會在產生的程式碼檔案中建立 **Startup** 事件的事件處理常式：  
+ When you create a document-level project, Visual Studio creates event handlers for the **Startup** event in the generated code files:  
   
--   如果是 Microsoft Office Word 專案，則事件處理常式的名稱為 `ThisDocument_Startup`。  
+-   For Microsoft Office Word projects, the event handler is named `ThisDocument_Startup`.  
   
--   如果是 Microsoft Office Excel 專案，則事件處理常式有下列名稱：  
+-   For Microsoft Office Excel projects, the event handlers have the following names:  
   
     -   `Sheet1_Startup`  
   
@@ -66,14 +71,14 @@ caps.handback.revision: 50
   
     -   `ThisWorkbook_Startup`  
   
-### Shutdown 事件  
- 當已載入您程式碼的應用程式定義域即將卸載時，每個主項目 \(文件或工作表\) 都會引發  **Shutdown**  事件。  在卸載時，於類別中呼叫它是最後要執行的動作。  
+### <a name="shutdown-event"></a>Shutdown Event  
+ The **Shutdown** event is raised for each of the host items (document or worksheet) when the application domain that your code is loaded in is about to unload. It is the last thing to be called in the class as it unloads.  
   
- 當您建立文件層級專案時，Visual Studio 會在產生的程式碼檔案中建立  **Shutdown**  事件的事件處理常式：  
+ When you create a document-level project, Visual Studio creates event handlers for the **Shutdown** event in the generated code files:  
   
--   如果是 Microsoft Office Word 專案，則事件處理常式的名稱為 `ThisDocument_Shutdown`。  
+-   For Microsoft Office Word projects, the event handler is named `ThisDocument_Shutdown`.  
   
--   如果是 Microsoft Office Excel 專案，則事件處理常式有下列名稱：  
+-   For Microsoft Office Excel projects, the event handlers have the following names:  
   
     -   `Sheet1_Shutdown`  
   
@@ -84,26 +89,24 @@ caps.handback.revision: 50
     -   `ThisWorkbook_Shutdown`  
   
 > [!NOTE]  
->  在文件的 **Shutdown** 事件處理常式執行期間，請勿以程式設計方式移除控制項。 當 **Shutdown** 事件發生時，文件的 UI 項目便無法再使用。 如果您想要在應用程式關閉之前移除控制項，請將程式碼加入其他事件處理常式，例如 **BeforeClose** 或 **BeforeSave**。  
+>  Do not programmatically remove controls during the **Shutdown** event handler of the document. The UI elements of the document are no longer available when the **Shutdown** event occurs. If you want to remove controls before the application closes, add your code to another event handler, such as **BeforeClose** or **BeforeSave**.  
   
-### 事件處理常式方法宣告  
- 每個事件處理常式方法宣告都具有傳遞給它的相同引數：*sender* 和 *e*。 在 Excel 中，*sender* 引數會參考工作表，例如 `Sheet1` 或 `Sheet2`；在 Word 中，*sender* 引數會參考文件。*e* 引數會參考事件的標準引數 \(在此情況下不會使用\)。  
+### <a name="event-handler-method-declarations"></a>Event Handler Method Declarations  
+ Every event handler method declaration has the same arguments passed to it: *sender* and *e*. In Excel, the *sender* argument refers to the sheet, such as `Sheet1` or `Sheet2`; in Word, the *sender* argument refers to the document. The *e* argument refers to the standard arguments for an event, which are not used in this case.  
   
- 下列程式碼範例會顯示 Word 文件層級專案中的預設事件處理常式。  
+ The following code example shows the default event handlers in document-level projects for Word.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#121](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#121)]
- [!code-vb[Trin_VstcoreWordAutomation#121](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#121)]  
+ [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)] [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]  
   
- 下列程式碼範例會顯示 Excel 文件層級專案中的預設事件處理常式。  
+ The following code example shows the default event handlers in document-level projects for Excel.  
   
 > [!NOTE]  
->  下列程式碼範例顯示 `Sheet1` 類別中的事件處理常式。 其他主項目類別中的事件處理常式名稱會對應至這個類別名稱。 例如，在 `Sheet2` 類別中，**Startup** 事件處理常式的名稱為 `Sheet2_Startup`。 在 `ThisWorkbook` 類別中，**Startup** 事件處理常式的名稱為 `ThisWorkbook_Startup`。  
+>  The following code example shows the event handlers in the `Sheet1` class. The names of the event handlers in other host item classes correspond to the class name. For example, in the `Sheet2` class, the **Startup** event handler is named `Sheet2_Startup`. In the `ThisWorkbook` class, the **Startup** event handler is named `ThisWorkbook_Startup`.  
   
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#83)]
- [!code-vb[Trin_VstcoreExcelAutomation#83](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#83)]  
+ [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)] [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]  
   
-### 文件層級 Excel 專案中事件的順序  
- 呼叫 Excel 專案中 **Startup** 事件處理常式的順序如下：  
+### <a name="order-of-events-in-document-level-excel-projects"></a>Order of Events in Document-Level Excel Projects  
+ The **Startup** event handlers in Excel projects are called in this order:  
   
 1.  `ThisWorkbook_Startup`.  
   
@@ -113,9 +116,9 @@ caps.handback.revision: 50
   
 4.  `Sheet3_Startup`.  
   
-5.  順序中的其他工作表。  
+5.  Other sheets in order.  
   
- 呼叫活頁簿方案中  **Shutdown** 事件處理常式的順序如下：  
+ The **Shutdown** event handlers in a workbook solution are called in this order:  
   
 1.  `ThisWorkbook_Shutdown`.  
   
@@ -125,40 +128,40 @@ caps.handback.revision: 50
   
 4.  `Sheet3_Shutdown`.  
   
-5.  順序中的其他工作表。  
+5.  Other sheets in order.  
   
- 此順序是在編譯專案時決定。 如果使用者在執行階段重新排列工作表，則下次開啟或關閉活頁簿時，引發事件的順序並不會因而變更。  
+ The order is determined when the project is compiled. If the user rearranges the sheets at run time, it does not change the order that the events are raised the next time the workbook is opened or closed.  
   
-## VSTO 增益集專案  
- Visual Studio 提供在 VSTO 增益集中產生的程式碼。 這個程式碼會引發兩個不同的事件：<xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown>。  
+## <a name="vsto-add-in-projects"></a>VSTO Add-in Projects  
+ Visual Studio provides generated code in VSTO Add-ins. This code raises two different events: <xref:Microsoft.Office.Tools.AddInBase.Startup> and <xref:Microsoft.Office.Tools.AddInBase.Shutdown>.  
   
-### Startup 事件  
- VSTO 增益集載入並執行組件中的所有初始化程式碼之後，會引發 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件。 這個事件是由所產生程式碼檔中的 `ThisAddIn_Startup` 方法處理。  
+### <a name="startup-event"></a>Startup Event  
+ The <xref:Microsoft.Office.Tools.AddIn.Startup> event is raised after the VSTO Add-in is loaded and all the initialization code in the assembly has been run. This event is handled by the `ThisAddIn_Startup` method in the generated code file.  
   
- `ThisAddIn_Startup` 事件處理常式中的程式碼是第一個執行的使用者程式碼，除非您的增益集會覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在這個情況下，`ThisAddIn_Startup` 事件處理常式會在 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 之後呼叫。  
+ Code in the `ThisAddIn_Startup` event handler is the first user code to run, unless your VSTO Add-in overrides the <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> method. In this case, the `ThisAddIn_Startup` event handler is called after <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>.  
   
- 如果程式碼需要開啟文件，請勿將程式碼加入 `ThisAdd-In_Startup` 事件處理常式。 相反地，請將程式碼加入 Office 應用程式在使用者建立或開啟文件時所引發的事件。 如需詳細資訊，請參閱[啟動 Office 應用程式時存取文件](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。  
+ Don't add code in the `ThisAdd-In_Startup` event handler if the code requires a document to be open. Instead, add that code to an event that the Office application raises when a user creates or opens a document. For more information, see [Accessing a Document When the Office Application Starts](../vsto/programming-vsto-add-ins.md#AccessingDocuments).  
   
- 如需 VSTO 增益集啟動順序的詳細資訊，請參閱[VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)。  
+ For more information about the startup sequence of VSTO Add-ins, see [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).  
   
-### Shutdown 事件  
- 當已載入您程式碼的應用程式定義域即將卸載時，會引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 這個事件是由所產生程式碼檔中的 `ThisAddIn_Shutdown` 方法處理。 卸載 VSTO 增益集時，這個事件處理常式會是最後一個執行的使用者程式碼。  
+### <a name="shutdown-event"></a>Shutdown Event  
+ The <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event is raised when the application domain that your code is loaded in is about to be unloaded. This event is handled by the `ThisAddIn_Shutdown` method in the generated code file. This event handler is the last user code to run when the VSTO Add-in is unloaded.  
   
-#### Outlook VSTO 增益集中的關機事件  
- 只有當使用者藉由使用 Outlook 的 \[COM 增益集\] 對話方塊停用 VSTO 增益集時，才會引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 Outlook 結束時不會引發此事件。 如果您有必須在 Outlook 結束時執行的程式碼，請處理下列任一事件：  
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Shutdown Event in Outlook VSTO Add-ins  
+ The <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event is raised only when the user disables the VSTO Add-in by using the COM Add-ins dialog box in Outlook. It is not raised when Outlook exits. If you have code that must run when Outlook exits, handle either of the following events:  
   
--   <xref:Microsoft.Office.Interop.Outlook.Application> 物件的 <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> 事件。  
+-   The <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> event of the <xref:Microsoft.Office.Interop.Outlook.Application> object.  
   
--   <xref:Microsoft.Office.Interop.Outlook.Explorer> 物件的 <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 事件。  
+-   The <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> event of the <xref:Microsoft.Office.Interop.Outlook.Explorer> object.  
   
 > [!NOTE]  
->  您可以修改登錄，強制 Outlook 在結束時引發 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 不過，如果系統管理員還原此設定，則 Outlook 結束時，便不會再執行任何您加入至 `ThisAddIn_Shutdown` 方法的程式碼。 如需詳細資訊，請參閱[關閉 Outlook 2010 的變更](http://go.microsoft.com/fwlink/?LinkID=184614)。  
+>  You can force Outlook to raise the <xref:Microsoft.Office.Tools.AddInBase.Shutdown> event when it exits by modifying the registry. However, if an administrator reverts this setting, any code that you add to the `ThisAddIn_Shutdown` method no longer runs when Outlook exits. For more information, see [Shutdown Changes for Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).  
   
-## 請參閱  
- [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
- [VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)   
- [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Developing Office Solutions](../vsto/developing-office-solutions.md)   
+ [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
   
   

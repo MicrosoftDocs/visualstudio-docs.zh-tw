@@ -1,49 +1,66 @@
 ---
-title: "CA2200：請重新擲回以保存堆疊詳細資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "RethrowToPreserveStackDetails"
-  - "CA2200"
-helpviewer_keywords: 
-  - "CA2200"
-  - "RethrowToPreserveStackDetails"
+title: 'CA2200: Rethrow to preserve stack details | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- RethrowToPreserveStackDetails
+- CA2200
+helpviewer_keywords:
+- CA2200
+- RethrowToPreserveStackDetails
 ms.assetid: 046e1b98-c4dc-4515-874f-9c0de2285621
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2200：請重新擲回以保存堆疊詳細資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: dfc4529b607196c5c75537f1c337007b41313608
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Rethrow to preserve stack details
 |||  
 |-|-|  
-|型別名稱|RethrowToPreserveStackDetails|  
+|TypeName|RethrowToPreserveStackDetails|  
 |CheckId|CA2200|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 例外狀況 \(Exception\) 遭到重新擲回，而且已在 `throw` 陳述式 \(Statement\) 中明確指定此例外狀況。  
+## <a name="cause"></a>Cause  
+ An exception is re-thrown and the exception is explicitly specified in the `throw` statement.  
   
-## 規則描述  
- 一旦擲回例外狀況後，它所傳遞的部分資訊為堆疊追蹤。  此堆疊追蹤為方法呼叫階層的清單，以擲回例外狀況的方法為開頭，而以攔截例外狀況的方法為結尾。  如果例外狀況是透過在 `throw` 陳述式中指定例外狀況而重新擲回，則會在目前方法重新啟動堆疊追蹤，而在擲回例外狀況之原始方法和目前方法之間呼叫的方法清單則會遺失。  若要保留含有例外狀況的原始堆疊追蹤資訊，請使用 `throw` 陳述式而不指定例外狀況。  
+## <a name="rule-description"></a>Rule Description  
+ Once an exception is thrown, part of the information it carries is the stack trace. The stack trace is a list of the method call hierarchy that starts with the method that throws the exception and ends with the method that catches the exception. If an exception is re-thrown by specifying the exception in the `throw` statement, the stack trace is restarted at the current method and the list of method calls between the original method that threw the exception and the current method is lost. To keep the original stack trace information with the exception, use the `throw` statement without specifying the exception.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請重新擲回例外狀況而不需明確指定例外狀況。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, re-throw the exception without specifying the exception explicitly.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例會顯示違反規則的方法 \(`CatchAndRethrowExplicitly`\)，以及符合規則的方法 \(`CatchAndRethrowImplicitly`\)。  
+## <a name="example"></a>Example  
+ The following example shows a method, `CatchAndRethrowExplicitly`, which violates the rule and a method, `CatchAndRethrowImplicitly`, which satisfies the rule.  
   
- [!CODE [FxCop.Usage.Rethrow#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.Rethrow#1)]
+ [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)] [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

@@ -33,8 +33,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 64e387e9b4898395574598c2170f50d6dd42be43
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 6883dc4f4494fef4f53da354b8e4621b90184f45
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/30/2017
 
@@ -119,7 +119,7 @@ When displaying data on forms in Windows applications, you can choose existing c
   
 2.  Replace the code in the `PhoneNumberBox` with the following:  
   
-     [!code-cs[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]  [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
+     [!code-csharp[VbRaddataDisplaying#3](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.cs)]  [!code-vb[VbRaddataDisplaying#3](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-simple-data-binding_1.vb)]  
   
 3.  From the **Build** menu, choose **Build Solution**.  
   

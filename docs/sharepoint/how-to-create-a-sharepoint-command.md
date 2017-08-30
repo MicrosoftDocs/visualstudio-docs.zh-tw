@@ -1,85 +1,89 @@
 ---
-title: "How to: Create a SharePoint Command"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint commands [SharePoint development in Visual Studio], creating"
+title: 'How to: Create a SharePoint Command | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint commands [SharePoint development in Visual Studio], creating
 ms.assetid: e1fda8f0-eae1-4278-91c1-19a5e1fc327f
 caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b4676efb2d64541566daf5c9902de8a4a2157e6d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Create a SharePoint Command
-  如果您要在 SharePoint 工具擴充功能中使用伺服器物件模型，則必須建立自訂的「*SharePoint 命令*」\(SharePoint Command\) 來呼叫 API。  您可以在能夠直接呼叫伺服器物件模型的組件中定義 SharePoint 命令。  
+# <a name="how-to-create-a-sharepoint-command"></a>How to: Create a SharePoint Command
+  If you want to use the server object model in a SharePoint tools extension, you must create a custom *SharePoint command* to call the API. You define the SharePoint command in an assembly that can call into the server object model directly.  
   
- 如需 SharePoint 命令用途的詳細資訊，請參閱[Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
+ For more information about the purpose of SharePoint commands, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
   
-### 若要建立 SharePoint 命令  
+### <a name="to-create-a-sharepoint-command"></a>To create a SharePoint command  
   
-1.  建立具有下列配置的類別庫專案：  
+1.  Create a class library project that has the following configuration:  
   
-    -   將 .NET Framework 3.5 做為目標。  如需選取目標架構的詳細資訊，請參閱 [如何：以 .NET Framework 版本為目標](~/ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
+    -   Targets the .NET Framework 3.5. For more information about selecting the target framework, see [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
-    -   將 AnyCPU 或 x64 平台做為目標。  類別庫專案的預設目標平台是 AnyCPU。  如需選取目標平台的詳細資訊，請參閱 [NIB: How to: Optimize an Application for a Specific CPU Type](http://msdn.microsoft.com/zh-tw/294a75d2-4279-4b72-8298-2bea05be907a)。  
+    -   Targets the AnyCPU or x64 platform. By default, the target platform for class library projects is AnyCPU. For more information about selecting the target platform, see [How to: Configure Projects to Target Platforms](../ide/how-to-configure-projects-to-target-platforms.md).  
   
     > [!NOTE]  
-    >  您不能在定義 SharePoint 工具擴充功能的相同專案中實作 SharePoint 命令，因為 SharePoint 命令以 .NET Framework 3.5 為目標，而 SharePoint 工具擴充功能以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 為目標。  您必須在個別專案中定義由您的擴充功能使用的任何 SharePoint 命令。  如需詳細資訊，請參閱[Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+    >  You cannot implement a SharePoint command in the same project that defines a SharePoint tools extension, because SharePoint commands target the .NET Framework 3.5 and SharePoint tools extensions target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. You must define any SharePoint commands that are used by your extension in a separate project. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-2.  加入下列組件的參考：  
+2.  Add references to the following assemblies:  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
     -   Microsoft.SharePoint  
   
-3.  在專案的類別中，幾件案例定義 SharePoint 命令的方法。  該方法必須遵守以下方針：  
+3.  In a class in the project, create a method that defines your SharePoint command. The method must conform to the following guidelines:  
   
-    -   它可以擁有一或兩個參數。  
+    -   It can have one or two parameters.  
   
-         第一個參數必須是 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 物件。  此物件提供 Microsoft.SharePoint.SPSite 或 Microsoft.SharePoint.SPWeb，可在其上執行命令。  它也提供 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> 物件，可用來在 Visual Studio 中將訊息寫入 \[**輸出**\] 視窗或 \[**錯誤清單**\] 視窗。  
+         The first parameter must be a <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> object. This object provides the Microsoft.SharePoint.SPSite or Microsoft.SharePoint.SPWeb in which the command is executed. It also provides an <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandLogger> object that can be used to write messages to the **Output** window or **Error List** window in Visual Studio.  
   
-         第二個參數的型別您可自行選擇，但這個參數是選擇性的。  如果需要從 SharePoint 工具擴充功能將資料傳遞至命令，請將這個參數加入至 SharePoint 命令。  
+         The second parameter can be a type of your choice, but this parameter is optional. You can add this parameter to your SharePoint command if you need to pass data from your SharePoint tools extension to the command.  
   
-    -   它可以擁有傳回值，但這是選擇性的。  
+    -   It can have a return value, but this is optional.  
   
-    -   第二個參數和傳回值的型別必須是能夠由 Windows Communication Foundation \(WCF\) 序列化的型別。  如需詳細資訊，請參閱[資料合約序列化程式支援的型別](http://msdn.microsoft.com/library/7381b200-437a-4506-9556-d77bf1bc3f34)和[使用 XmlSerializer 類別](http://msdn.microsoft.com/library/c680602d-39d3-44f1-bf22-8e6654ad5069)。  
+    -   The second parameter and return value must be a type that can be serialized by the Windows Communication Foundation (WCF). For more information, see [Types Supported by the Data Contract Serializer](/dotnet/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer) and [Using the XmlSerializer Class](/dotnet/framework/wcf/feature-details/using-the-xmlserializer-class).  
   
-    -   方法可以具有任何可視性 \(**public**、**internal** 或 **private**\)，且可以是靜態或非靜態。  
+    -   The method can have any visibility (**public**, **internal**, or **private**), and it can be static or non-static.  
   
-4.  將 <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> 套用至方法。  此屬性會指定命令的唯一識別項；此識別項不需要符合方法名稱。  
+4.  Apply the <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> to the method. This attribute specifies a unique identifier for the command; this identifier does not have to match the method name.  
   
-     當您從 SharePoint 工具擴充功能呼叫命令時，您必須指定相同的唯一識別項。  如需詳細資訊，請參閱 [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md)。  
+     You must specify the same unique identifier when you call the command from your SharePoint tools extension. For more information, see [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md).  
   
-## 範例  
- 下列程式碼範例示範擁有 `Contoso.Commands.UpgradeSolution` 識別項的 SharePoint 命令。  此命令在伺服器物件模型中使用 API，以升級至已部署的方案。  
+## <a name="example"></a>Example  
+ The following code example demonstrates a SharePoint command that has the identifier `Contoso.Commands.UpgradeSolution`. This command uses APIs in the server object model to upgrade to a deployed solution.  
   
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/CS/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectextension.upgradedeploymentstep/vb/sharepointcommands/commands.vb#5)]  
+ [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)] [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]  
   
- 除了隱含的第一個 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 參數之外，此命令還有一個自訂的字串參數，其中包含正在升級至 SharePoint 網站的 .wsp 檔案完整路徑。  若要在完整的範例內容中查看這個程式碼，請參閱[Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。  
+ In addition to the implicit first <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> parameter, this command also has a custom string parameter that contains the full path of the .wsp file that is being upgraded to the SharePoint site. To see this code in the context of a larger example, see [Walkthrough: Creating a Custom Deployment Step for SharePoint Projects](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).  
   
-## 編譯程式碼  
- 這個範例需要參考下列組件：  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint.Commands  
   
 -   Microsoft.SharePoint  
   
-## 部署命令  
- 若要部署命令，請將命令組建併入與使用該命令的擴充功能組件相同的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 擴充功能 \(VSIX\) 套件中。  您還必須在 extension.vsixmanifest 檔案加入命令組件的項目。  如需詳細資訊，請參閱[Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+## <a name="deploying-the-command"></a>Deploying the Command  
+ To deploy the command, include the command assembly in the same [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package with the extension assembly that uses the command. You must also add an entry for the command assembly in the extension.vsixmanifest file. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md)   
  [How to: Execute a SharePoint Command](../sharepoint/how-to-execute-a-sharepoint-command.md)   
  [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  

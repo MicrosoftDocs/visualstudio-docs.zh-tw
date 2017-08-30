@@ -1,60 +1,75 @@
 ---
-title: "CA1054：URI 參數不應該為字串 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1054"
-  - "UriParametersShouldNotBeStrings"
-helpviewer_keywords: 
-  - "CA1054"
-  - "UriParametersShouldNotBeStrings"
+title: 'CA1054: URI parameters should not be strings | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1054
+- UriParametersShouldNotBeStrings
+helpviewer_keywords:
+- CA1054
+- UriParametersShouldNotBeStrings
 ms.assetid: 8e99d72b-a658-47a7-8dd5-9784ce2c30b8
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA1054：URI 參數不應該為字串
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 25d3c92f117d86193dad1230950f308ec5d2394b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: URI parameters should not be strings
 |||  
 |-|-|  
-|型別名稱|UriParametersShouldNotBeStrings|  
+|TypeName|UriParametersShouldNotBeStrings|  
 |CheckId|CA1054|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 型別會以名稱中包含 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url" 的字串參數宣告方法，並且型別不會宣告採用 <xref:System.Uri?displayProperty=fullName> 參數的對應多載。  
+## <a name="cause"></a>Cause  
+ A type declares a method with a string parameter whose name contains "uri", "Uri", "urn", "Urn", "url", or "Url" and the type does not declare a corresponding overload that takes a <xref:System.Uri?displayProperty=fullName> parameter.  
   
-## 規則描述  
- 這項規則會根據 Camel 命名法的大小寫慣例將參數名稱分割成語彙基元 \(Token\)，並檢查每個語彙基元是否等於 "uri"、"Uri"、"urn"、"Urn"、"url" 或 "Url"。  如果有符合的項目，規則就會假設參數代表統一資源識別元 \(URI\)。  URI 的字串表示方式容易發生剖析和編碼錯誤，並且可能因此產生安全性弱點。  如果方法使用 URI 字串表示，應該提供採用 <xref:System.Uri> 類別的對應多載，這樣就可以透過安全的方式提供這些服務。  
+## <a name="rule-description"></a>Rule Description  
+ This rule splits the parameter name into tokens based on the camel casing convention and checks whether each token equals "uri", "Uri", "urn", "Urn", "url", or "Url". If there is a match, the rule assumes that the parameter represents a uniform resource identifier (URI). A string representation of a URI is prone to parsing and encoding errors, and can lead to security vulnerabilities. If a method takes a string representation of a URI, a corresponding overload should be provided that takes an instance of the <xref:System.Uri> class, which provides these services in a safe and secure manner.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將參數變更為 <xref:System.Uri> 型別，而這會是中斷變更。  此外，也提供使用 <xref:System.Uri> 參數的方法多載，而這會是非中斷變更。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the parameter to a <xref:System.Uri> type; this is a breaking change. Alternately, provide an overload of the method which takes a <xref:System.Uri> parameter; this is a nonbreaking change.  
   
-## 隱藏警告的時機  
- 如果參數不代表 URI，則您可以放心地隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the parameter does not represent a URI.  
   
-## 範例  
- 下列程式碼範例會示範違反此規則的型別 \(`ErrorProne`\)，和滿足此規則的型別 \(`SaferWay`\)。  
+## <a name="example"></a>Example  
+ The following example shows a type, `ErrorProne`, that violates this rule, and a type, `SaferWay`, that satisfies the rule.  
   
- [!code-cs[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
- [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
- [!code-cpp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CPP/ca1054-uri-parameters-should-not-be-strings_1.cpp)]  
+ [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)] [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)] [!code-cpp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CPP/ca1054-uri-parameters-should-not-be-strings_1.cpp)]  
   
-## 相關規則  
- [CA1056：URI 屬性不應該為字串](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1056: URI properties should not be strings](../code-quality/ca1056-uri-properties-should-not-be-strings.md)  
   
- [CA1055：URI 傳回值不應該為字串](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)  
+ [CA1055: URI return values should not be strings](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)  
   
- [CA2234：必須傳遞 System.Uri 物件，而不要傳遞字串](../Topic/CA2234:%20Pass%20System.Uri%20objects%20instead%20of%20strings.md)  
+ [CA2234: Pass System.Uri objects instead of strings](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)  
   
- [CA1057：字串 URI 多載呼叫 System.Uri 多載](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+ [CA1057: String URI overloads call System.Uri overloads](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

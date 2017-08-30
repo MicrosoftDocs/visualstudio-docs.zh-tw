@@ -1,67 +1,83 @@
 ---
-title: "CA1008：列舉值中應該要有值為零的成員 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1008"
-  - "EnumsShouldHaveZeroValue"
-helpviewer_keywords: 
-  - "CA1008"
-  - "EnumsShouldHaveZeroValue"
+title: 'CA1008: Enums should have zero value | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1008
+- EnumsShouldHaveZeroValue
+helpviewer_keywords:
+- CA1008
+- EnumsShouldHaveZeroValue
 ms.assetid: 3503a73c-360c-416d-8ee4-c2aa44365a05
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1008：列舉值中應該要有值為零的成員
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e361d2406b3b2d8e54d9436d316e42dbb5221a8c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enums should have zero value
 |||  
 |-|-|  
-|型別名稱|EnumsShouldHaveZeroValue|  
+|TypeName|EnumsShouldHaveZeroValue|  
 |CheckId|CA1008|  
-|分類|Microsoft.Design|  
-|中斷變更|非中斷 \- 當提示您要將 **None** 值加入至沒有旗標的列舉時。中斷 \- 當提示您要重新命名或移除任何列舉值時。|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking - When you are prompted to add a **None** value to a non-flag enumeration.Breaking - When you are prompted to rename or remove any enumeration values.|  
   
-## 原因  
- 未套用 <xref:System.FlagsAttribute?displayProperty=fullName> 的列舉不定義含零值的成員；已套用 <xref:System.FlagsAttribute> 的列舉會定義含零值但名稱不為 'None' 的成員，或是列舉會定義多個值為零的成員。  
+## <a name="cause"></a>Cause  
+ An enumeration without an applied <xref:System.FlagsAttribute?displayProperty=fullName> does not define a member that has a value of zero; or an enumeration that has an applied <xref:System.FlagsAttribute> defines a member that has a value of zero but its name is not 'None', or the enumeration defines multiple zero-valued members.  
   
-## 規則描述  
- 就像其他實值型別一樣，未初始化的列舉其預設值為零。  非旗標屬性的列舉應該要定義含有零值的成員，使列舉可以指定有效的預設值。  如果合適，請將零值的成員命名為 'None'。  否則，請指派零給最常用的成員。  請注意，如果未在宣告中設定第一個列舉成員的值，其值預設為零。  
+## <a name="rule-description"></a>Rule Description  
+ The default value of an uninitialized enumeration, just like other value types, is zero. A non-flags-attributed enumeration should define a member that has the value of zero so that the default value is a valid value of the enumeration. If appropriate, name the member 'None'. Otherwise, assign zero to the most frequently used member. Note that, by default, if the value of the first enumeration member is not set in the declaration, its value is zero.  
   
- 如果在已套用 <xref:System.FlagsAttribute> 的列舉型別中定義零值成員，則其名稱應該是 'None'，以做為使用列舉型別並且未設定任何值時的預設值。  基於任何其他目的，使用零值成員會與 <xref:System.FlagsAttribute> 的用法相反，所以零值成員與 AND 和 OR 位元 \(Bitwise\) 運算子無法同時與其他成員一起使用。  這意味著只應該指派零值給一個成員。  請注意，如果在旗標屬性列舉中有多個成員具有零值，則 `Enum.ToString()` 將針對不是零的成員傳回不正確的結果。  
+ If an enumeration that has the <xref:System.FlagsAttribute> applied defines a zero-valued member, its name should be 'None' to indicate that no values have been set in the enumeration. Using a zero-valued member for any other purpose is contrary to the use of the <xref:System.FlagsAttribute> in that the AND and OR bitwise operators are useless with the member. This implies that only one member should be assigned the value zero. Note that if multiple members that have the value zero occur in a flags-attributed enumeration, `Enum.ToString()` returns incorrect results for members that are not zero.  
   
-## 如何修正違規  
- 若要對非旗標屬性列舉修正此規則的違規情形，請定義含有零值的成員。這是非中斷變更。  對於定義零值成員的旗標屬性列舉，將這個成員命名為 'None'，然後刪除任何其他含有零值的成員，這是需要中斷的變更。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule for non-flags-attributed enumerations, define a member that has the value of zero; this is a non-breaking change. For flags-attributed enumerations that define a zero-valued member, name this member 'None' and delete any other members that have a value of zero; this is a breaking change.  
   
-## 隱藏警告的時機  
- 除了先前所提供的旗標屬性列舉型別之外，請勿隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule except for flags-attributed enumerations that have previously shipped.  
   
-## 範例  
- 下列範例會顯示兩個滿足規則的列舉，以及一個違反規則的列舉 \(`BadTraceOptions`\)。  
+## <a name="example"></a>Example  
+ The following example shows two enumerations that satisfy the rule and an enumeration, `BadTraceOptions`, that violates the rule.  
   
- [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)]
- [!code-cs[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)]
- [!code-vb[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/VisualBasic/ca1008-enums-should-have-zero-value_1.vb)]  
+ [!code-cpp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CPP/ca1008-enums-should-have-zero-value_1.cpp)] [!code-csharp[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/CSharp/ca1008-enums-should-have-zero-value_1.cs)] [!code-vb[FxCop.Design.EnumsZeroValue#1](../code-quality/codesnippet/VisualBasic/ca1008-enums-should-have-zero-value_1.vb)]  
   
-## 相關規則  
- [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2217: Do not mark enums with FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
- [CA1700：不要在列舉值名稱中包含 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
+ [CA1700: Do not name enum values 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)  
   
- [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
+ [CA1712: Do not prefix enum values with type name](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
- [CA1028：列舉儲存區應該是 Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
+ [CA1028: Enum storage should be Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)  
   
- [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
+ [CA1027: Mark enums with FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Enum?displayProperty=fullName>

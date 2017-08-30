@@ -1,47 +1,51 @@
 ---
-title: "如何：以程式設計方式將圖形加入至 Visio 文件"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visio [Visual Studio 中的 Office 程式開發]，加入 Visio 圖形"
-  - "圖形 [Visual Studio 中的 Office 程式開發]，加入 Visio 圖形"
+title: 'How to: Programmatically Add Shapes to a Visio Document | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Visio [Office development in Visual Studio], adding Visio shapes
+- shapes [Office development in Visual Studio], adding Visio shapes
 ms.assetid: 29613237-88f5-41a7-9e13-cfa177f41221
 caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2adff4c408493c1a69a44207d9aad801ce8266fd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式將圖形加入至 Visio 文件
-  您可以從樣板擷取主圖形並把圖形放在使用中的頁面上，即可在 Microsoft Office Visio 文件中加入圖形。  
+# <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>How to: Programmatically Add Shapes to a Visio Document
+  You can add shapes to a Microsoft Office Visio document by retrieving the masters from a stencil and dropping the shapes on the active page.  
   
- 如需詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Documents.Add](HV10069241) 方法、[Microsoft.Office.Interop.Visio.Application.ActivePage](HV10069528) 屬性和 [Microsoft.Office.Interop.Visio.Page.Drop](HV10070273) 方法的 VBA 參考文件。  
+ For more information, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Documents.Add](http://msdn.microsoft.com/library/office/ff766868.aspx) method, [Microsoft.Office.Interop.Visio.Application.ActivePage](http://msdn.microsoft.com/library/office/ff765484.aspx) property, and [Microsoft.Office.Interop.Visio.Page.Drop](http://msdn.microsoft.com/library/office/ff765054.aspx) method.  
   
-## 在 Visio 文件中加入圖形  
+## <a name="adding-shapes-to-a-visio-document"></a>Adding Shapes to a Visio Document  
   
-#### 在 Visio 文件中加入圖形  
+#### <a name="to-add-shapes-to-a-visio-document"></a>To add shapes to a Visio document  
   
--   以使用中的文件，從 Documents.Masters 集合中擷取主圖形，然後將圖形放在使用中的文件。 您可以使用索引或主圖形名稱來擷取主圖形。  
+-   With a document active, retrieve the masters from the Documents.Masters collection and drop the shapes on the active document. You can retrieve a master by using the index or master name.  
   
-     下列程式碼範例會建立空白的 Visio 文件，然後用停駐的 \[基本圖形\] 樣板開啟它。 程式碼接著會擷取數個圖形，並將它們放在使用中的頁面上。  
+     The following code example creates a blank Visio document, and then opens it with the **Basic Shapes** stencil docked. The code then retrieves several shapes and drops them on the active page.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#13)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#13)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#13)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#13](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#13)]  
   
-## 請參閱  
- [Visio 方案](../vsto/visio-solutions.md)   
- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [使用 Visio 圖案](../vsto/working-with-visio-shapes.md)   
- [如何：以程式設計方式在 Visio 文件中複製並貼上圖形](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)   
+ [How to: Programmatically Copy and Paste Shapes in a Visio Document](../vsto/how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md)  
   
   

@@ -20,8 +20,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: b9ca117b5f5b1495f4aa7dba47d0331de623b474
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 040bc1a8f404136f24e4844db77fb50b3ad5deca
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/30/2017
 
@@ -45,7 +45,7 @@ To search for specific records in a dataset,  use the FindBy method on the DataT
   
      In the following example, the `CustomerID` column is the primary key of the `Customers` table. This means that the generated `FindBy` method is `FindByCustomerID`. The example shows how to assign a specific <xref:System.Data.DataRow> to a variable by using the generated `FindBy` method.  
   
-     [!code-cs[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]  [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]  
+     [!code-csharp[VbRaddataEditing#18](../data-tools/codesnippet/CSharp/query-datasets_1.cs)]  [!code-vb[VbRaddataEditing#18](../data-tools/codesnippet/VisualBasic/query-datasets_1.vb)]  
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>To find a row in an untyped dataset with a primary key value  
   
@@ -53,7 +53,7 @@ To search for specific records in a dataset,  use the FindBy method on the DataT
   
      The following example shows how to declare a new row called `foundRow` and assign it the return value of the <xref:System.Data.DataRowCollection.Find%2A> method. If the primary key is found, the contents of column index 1 are displayed in a message box.  
   
-     [!code-cs[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]  [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]  
+     [!code-csharp[VbRaddataEditing#19](../data-tools/codesnippet/CSharp/query-datasets_2.cs)]  [!code-vb[VbRaddataEditing#19](../data-tools/codesnippet/VisualBasic/query-datasets_2.vb)]  
   
 ## <a name="findrows-by-column-values"></a>Findrows by column values  
   
@@ -63,7 +63,7 @@ To search for specific records in a dataset,  use the FindBy method on the DataT
   
      The following example shows how to use the <xref:System.Data.DataTable.Select%2A> method of the <xref:System.Data.DataTable> to locate specific rows.  
   
-     [!code-cs[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]  [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]  
+     [!code-csharp[VbRaddataEditing#20](../data-tools/codesnippet/CSharp/query-datasets_3.cs)]  [!code-vb[VbRaddataEditing#20](../data-tools/codesnippet/VisualBasic/query-datasets_3.vb)]  
   
 ## <a name="access-related-records"></a>Access related records  
  When tables in a dataset are related, a <xref:System.Data.DataRelation> object can make  the related records available in another table. For example, a dataset containing `Customers` and `Orders` tables can be made available.  
@@ -89,10 +89,10 @@ To search for specific records in a dataset,  use the FindBy method on the DataT
   
 -   Call the <xref:System.Data.DataRow.GetChildRows%2A> method of a specific `Customers` data row, and return an array of rows from the `Orders` table:  
   
-     [!code-cs[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]  [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]  
+     [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]  [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>To return the parent record of a selected child record  
   
 -   Call the <xref:System.Data.DataRow.GetParentRow%2A> method of a specific `Orders` data row, and return a single row from the `Customers` table:  
   
-     [!code-cs[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]  [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]
+     [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]  [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

@@ -1,56 +1,71 @@
 ---
-title: "CA1023：不應該使用多維索引子 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IndexersShouldNotBeMultidimensional"
-  - "CA1023"
-helpviewer_keywords: 
-  - "CA1023"
-  - "IndexersShouldNotBeMultidimensional"
+title: 'CA1023: Indexers should not be multidimensional | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IndexersShouldNotBeMultidimensional
+- CA1023
+helpviewer_keywords:
+- CA1023
+- IndexersShouldNotBeMultidimensional
 ms.assetid: ae499879-97f6-434e-a61d-1fedd231d2fb
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA1023：不應該使用多維索引子
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e676d335932cf96e61771646a9510ad93561381f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexers should not be multidimensional
 |||  
 |-|-|  
-|型別名稱|IndexersShouldNotBeMultidimensional|  
+|TypeName|IndexersShouldNotBeMultidimensional|  
 |CheckId|CA1023|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- public 或 protected 型別包含使用一個以上之索引的公用或保護之索引子 \(Indexer\)。  
+## <a name="cause"></a>Cause  
+ A public or protected type contains a public or protected indexer that uses more than one index.  
   
-## 規則描述  
- 索引子 \(也就是索引屬性\) 應使用單一索引。  多維式索引子會大幅降低程式庫的可用性。  如果設計需要多個索引，請考慮該型別是否代表邏輯資料存放區。  如果不是，請使用方法。  
+## <a name="rule-description"></a>Rule Description  
+ Indexers, that is, indexed properties, should use a single index. Multi-dimensional indexers can significantly reduce the usability of the library. If the design requires multiple indexes, reconsider whether the type represents a logical data store. If not, use a method.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將設計變更為使用長整數 \(Long Integer\) 或字串索引，或是改用方法而非索引子。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the design to use a lone integer or string index, or use a method instead of the indexer.  
   
-## 隱藏警告的時機  
- 只有在仔細考慮確實需要非標準索引子之後，才能隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after carefully considering the need for the nonstandard indexer.  
   
-## 範例  
- 下列範例所顯示的型別 `DayOfWeek03`，它的多維式索引子會違反規則。  該索引子可視為轉換型別，因此公開為方法較為適當。  該型別會在 `RedesignedDayOfWeek03` 中重新設計以滿足規則。  
+## <a name="example"></a>Example  
+ The following example shows a type, `DayOfWeek03`, with a multi-dimensional indexer that violates the rule. The indexer can be seen as a type of conversion and therefore is more appropriately exposed as a method. The type is redesigned in `RedesignedDayOfWeek03` to satisfy the rule.  
   
- [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)]
- [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)]
- [!code-cs[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
+ [!code-vb[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/VisualBasic/ca1023-indexers-should-not-be-multidimensional_1.vb)] [!code-cpp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CPP/ca1023-indexers-should-not-be-multidimensional_1.cpp)] [!code-csharp[FxCop.Design.OneDimensionForIndexer#1](../code-quality/codesnippet/CSharp/ca1023-indexers-should-not-be-multidimensional_1.cs)]  
   
-## 相關規則  
- [CA1043：必須針對索引子使用整數類或字串引數](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1043: Use integral or string argument for indexers](../code-quality/ca1043-use-integral-or-string-argument-for-indexers.md)  
   
- [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)
+ [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)

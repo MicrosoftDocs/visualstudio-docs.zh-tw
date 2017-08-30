@@ -1,29 +1,34 @@
 ---
-title: "How to: Handle Deployment Conflicts"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, extending deployment"
+title: 'How to: Handle Deployment Conflicts | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- SharePoint development in Visual Studio, extending deployment
 ms.assetid: 8e545873-3fed-46cf-a95f-27b5fc0d5f83
 caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2e8f56380651de9c573dea674b26091aec8b0c0b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# How to: Handle Deployment Conflicts
-  您可以自行提供程式碼，處理 SharePoint 專案項目的部署衝突。  例如，您可以判斷部署位置是否已有目前專案項目中的任何檔案，然後在部署目前專案項目之前先刪除已部署的檔案。  如需部署衝突的詳細資訊，請參閱[Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
+# <a name="how-to-handle-deployment-conflicts"></a>How to: Handle Deployment Conflicts
+  You can provide your own code to handle deployment conflicts for a SharePoint project item. For example, you might determine whether any files in the current project item already exist in the deployment location, and then delete the deployed files before the current project item is deployed. For more information about deployment conflicts, see [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md).  
   
-### 若要處理部署衝突  
+### <a name="to-handle-a-deployment-conflict"></a>To handle a deployment conflict  
   
-1.  建立一個專案項目擴充功能、專案擴充功能或新專案項目類型的定義。  如需詳細資訊，請參閱下列主題：  
+1.  Create a project item extension, a project extension, or a definition of a new project item type. For more information, see the following topics:  
   
     -   [How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)  
   
@@ -31,33 +36,32 @@ caps.handback.revision: 13
   
     -   [How to: Define a SharePoint Project Item Type](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)  
   
-2.  在擴充功能中，處理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> 物件 \(在專案項目擴充功能或專案擴充功能中\) 或 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> 物件 \(在新專案項目類型的定義中\) 的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件。  
+2.  In the extension, handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event of an <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType> object (in a project item extension or project extension) or an <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> object (in a definition of a new project item type).  
   
-3.  在事件處理常式中，根據案例所套用的準則，判斷正在部署的專案項目與 SharePoint 網站上已部署的方案之間是否有衝突。  您可以使用事件引數參數的 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> 屬性來分析正在部署的專案項目，而且可以呼叫為此目的定義的 SharePoint 命令來分析位於部署位置的檔案。  
+3.  In the event handler, determine whether there is a conflict between the project item that is being deployed and the deployed solution on the SharePoint site, based on criteria that apply to your scenario. You can use the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemEventArgs.ProjectItem%2A> property of the event arguments parameter to analyze the project item that is being deployed, and you can analyze the files at the deployment location by calling a SharePoint command that you define for this purpose.  
   
-     針對許多衝突類型，您可能要先判斷正在執行的部署步驟。  您可以使用事件引數參數的 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> 屬性進行判斷。  雖然在進行內建 <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> 部署步驟期間偵測衝突完全合乎情理，但您還是可以在進行任何部署步驟期間檢查是否有衝突。  
+     For many types of conflicts, you might first want to determine which deployment step is executing. You can do this by using the <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.DeploymentStepInfo%2A> property of the event arguments parameter. Although it typically makes sense to detect conflicts during the built-in <xref:Microsoft.VisualStudio.SharePoint.Deployment.DeploymentStepIds.AddSolution> deployment step, you can check for conflicts during any deployment step.  
   
-4.  如果有衝突，請使用事件引數之 <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> 屬性的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 方法，建立新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 物件，  這個物件表示有部署衝突。  在 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> 方法的呼叫中，也請指定被呼叫用來解決衝突的方法。  
+4.  If a conflict exists, use the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> method of the <xref:Microsoft.VisualStudio.SharePoint.DeploymentStepStartedEventArgs.Conflicts%2A> property of the event arguments to create a new <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object. This object represents the deployment conflict. In your call to the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflictCollection.Add%2A> method, also specify the method that is called to resolve the conflict.  
   
-## 範例  
- 下列程式碼範例會示範處理專案項目擴充功能中清單定義專案項目之部署衝突的基本程序。  若要處理不同專案項目類型的部署衝突，請將不同字串傳遞到 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。  如需詳細資訊，請參閱[Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md)。  
+## <a name="example"></a>Example  
+ The following code example demonstrates the basic process for handling a deployment conflict in a project item extension for list definition project items. To handle a deployment conflict for a different type of project item, pass a different string to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. For more information, see [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md).  
   
- 為求簡化，這個範例中的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件處理常式假設部署衝突存在 \(亦即，它永遠會加入新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 物件\)，而 `Resolve` 方法只會傳回 **true** 表示已解決衝突。  在真實的案例中，<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件處理常式會先判斷目前專案項目中的檔案與位於部署位置的檔案之間是否有衝突，然後只會在有衝突的情況下加入 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 物件。  例如，您可以使用事件處理常式中的 `e.ProjectItem.Files` 屬性來分析專案項目中的檔案，而且可以呼叫 SharePoint 命令來分析位於部署位置的檔案。  同樣地，在真實的案例中，`Resolve` 方法可以呼叫 SharePoint 命令來解決 SharePoint 網站上的衝突。  如需建立 SharePoint 命令的詳細資訊，請參閱 [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md)。  
+ For simplicity, the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event handler in this example assumes that a deployment conflict exists (that is, it always adds a new <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object), and the `Resolve` method simply returns **true** to indicate that the conflict was resolved. In a real scenario, your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> event handler would first determine if a conflict exists between a file in the current project item and a file at the deployment location, and then add an <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> object only if a conflict exists. For example, you might use the `e.ProjectItem.Files` property in the event handler to analyze the files in the project item, and you might call a SharePoint command to analyze the files at the deployment location. Similarly, in a real scenario the `Resolve` method might call a SharePoint command to resolve the conflict on the SharePoint site. For more information about creating SharePoint commands, see [How to: Create a SharePoint Command](../sharepoint/how-to-create-a-sharepoint-command.md).  
   
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../snippets/csharp/VS_Snippets_OfficeSP/spextensibility.projectitemextension.deploymentconflict/cs/extension/deploymentconflictextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../snippets/visualbasic/VS_Snippets_OfficeSP/spextensibility.projectitemextension.deploymentconflict/vb/extension/deploymentconflictextension.vb#1)]  
+ [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)] [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]  
   
-## 編譯程式碼  
- 這個範例需要參考下列組件：  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires references to the following assemblies:  
   
 -   Microsoft.VisualStudio.SharePoint  
   
 -   System.ComponentModel.Composition  
   
-## 部署擴充功能  
- 若要部署擴充功能，請針對組件以及要與擴充功能一起散發的任何其他檔案建立 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 擴充功能 \(VSIX\) 套件。  如需詳細資訊，請參閱[Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
+## <a name="deploying-the-extension"></a>Deploying the Extension  
+ To deploy the extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
  [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md)   
  [How to: Run Code When Deployment Steps are Executed](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)   

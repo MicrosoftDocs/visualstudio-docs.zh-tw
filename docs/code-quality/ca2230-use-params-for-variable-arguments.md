@@ -1,56 +1,72 @@
 ---
-title: "CA2230：必須使用 params 做為變數引數 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseParamsForVariableArguments"
-  - "CA2230"
-helpviewer_keywords: 
-  - "CA2230"
-  - "UseParamsForVariableArguments"
+title: 'CA2230: Use params for variable arguments | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseParamsForVariableArguments
+- CA2230
+helpviewer_keywords:
+- CA2230
+- UseParamsForVariableArguments
 ms.assetid: bf98b733-4855-4110-9f16-eba5a9e79421
 caps.latest.revision: 15
-caps.handback.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2230：必須使用 params 做為變數引數
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 8e7037e7b642aa36bb1a351113e7d09dc1ea2537
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Use params for variable arguments
 |||  
 |-|-|  
-|型別名稱|UseParamsForVariableArguments|  
+|TypeName|UseParamsForVariableArguments|  
 |CheckId|CA2230|  
-|分類|Microsoft.Usage|  
-|中斷變更|中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的型別包含使用 `VarArgs` 呼叫慣例 \(Calling Convention\) 之公用或保護的方法。  
+## <a name="cause"></a>Cause  
+ A public or protected type contains a public or protected method that uses the `VarArgs` calling convention.  
   
-## 規則描述  
- `VarArgs` 呼叫慣例會和採用可變參數數目的某些方法定義一起使用。  使用 `VarArgs` 呼叫慣例的方法不符合 Common Language Specification \(CLS\) 標準，且無法跨程式語言存取。  
+## <a name="rule-description"></a>Rule Description  
+ The `VarArgs` calling convention is used with certain method definitions that take a variable number of parameters. A method using the `VarArgs` calling convention is not Common Language Specification (CLS) compliant and might not be accessible across programming languages.  
   
- 在 C\# 中，當方法的參數清單以 `__arglist` 關鍵字結尾時，就會使用 `VarArgs` 呼叫慣例。  Visual Basic 不支援 `VarArgs` 呼叫慣例，而 Visual C\+\+ 只允許在使用省略符號 `...` 標記法的 Unmanaged 程式碼中使用此慣例。  
+ In C#, the `VarArgs` calling convention is used when a method's parameter list ends with the `__arglist` keyword. Visual Basic does not support the `VarArgs` calling convention, and Visual C++  allows its use only in unmanaged code that uses the ellipse `...` notation.  
   
-## 如何修正違規  
- 若要在 C\# 中修正此規則的違規情形，請改用 [params](/dotnet/csharp/language-reference/keywords/params) 關鍵字，而非 `__arglist`。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule in C#, use the [params](/dotnet/csharp/language-reference/keywords/params) keyword instead of `__arglist`.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例會顯示兩個方法，其中一個違反規則，而另一個符合規則。  
+## <a name="example"></a>Example  
+ The following example shows two methods, one that violates the rule and one that satisfies the rule.  
   
- [!code-cs[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]  
+ [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Reflection.CallingConventions?displayProperty=fullName>   
- [語言獨立性以及與語言無關的元件](../Topic/Language%20Independence%20and%20Language-Independent%20Components.md)
+ [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

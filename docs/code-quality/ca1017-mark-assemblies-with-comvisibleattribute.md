@@ -1,56 +1,71 @@
 ---
-title: "CA1017：以 ComVisibleAttribute 標記組件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1017"
-  - "MarkAssembliesWithComVisible"
-helpviewer_keywords: 
-  - "MarkAssembliesWithComVisible"
-  - "CA1017"
+title: 'CA1017: Mark assemblies with ComVisibleAttribute | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1017
+- MarkAssembliesWithComVisible
+helpviewer_keywords:
+- MarkAssembliesWithComVisible
+- CA1017
 ms.assetid: 4842cb49-8dd8-4e5d-a2d6-ceeaf6c6cf8e
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1017：以 ComVisibleAttribute 標記組件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 642740f4750d643fddf51ba405be4acad6733ea7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Mark assemblies with ComVisibleAttribute
 |||  
 |-|-|  
-|型別名稱|MarkAssembliesWithComVisible|  
+|TypeName|MarkAssembliesWithComVisible|  
 |CheckId|CA1017|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 組件沒有套用 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 屬性 \(Attribute\)。  
+## <a name="cause"></a>Cause  
+ An assembly does not have the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute applied to it.  
   
-## 規則描述  
- <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性會判斷 COM 用戶端如何存取 Managed 程式碼。  良好的設計會要求組件明確表示 COM 的可視性。  COM 的可視性可以針對整個組件進行設定，然後針對個別型別及型別成員進行覆寫。  如果屬性不存在，則 COM 用戶端可以看到組件的內容。  
+## <a name="rule-description"></a>Rule Description  
+ The <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute determines how COM clients access managed code. Good design dictates that assemblies explicitly indicate COM visibility. COM visibility can be set for a whole assembly and then overridden for individual types and type members. If the attribute is not present, the contents of the assembly are visible to COM clients.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將屬性加入至組件。  如果您不想讓 COM 用戶端看到組件，請套用屬性並將值設為 `false`。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add the attribute to the assembly. If you do not want the assembly to be visible to COM clients, apply the attribute and set its value to `false`.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  如果您想讓組件看得見，請套用屬性並將值設為 `true`。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule. If you want the assembly to be visible, apply the attribute and set its value to `true`.  
   
-## 範例  
- 下列範例會顯示已套用 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性，以防止 COM 用戶端看到的組件。  
+## <a name="example"></a>Example  
+ The following example shows an assembly that has the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute applied to prevent it from being visible to COM clients.  
   
- [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]
- [!code-cs[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]  
+ [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)] [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)] [!code-csharp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CSharp/ca1017-mark-assemblies-with-comvisibleattribute_1.cs)]  
   
-## 請參閱  
- [與 Unmanaged 程式碼互通](../Topic/Interoperating%20with%20Unmanaged%20Code.md)   
- [限定互通的 .NET 類型](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)
+## <a name="see-also"></a>See Also  
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)   
+ [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

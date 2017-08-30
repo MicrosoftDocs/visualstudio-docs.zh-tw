@@ -1,233 +1,236 @@
 ---
-title: "逐步解說：文件層級專案中的複雜資料繫結"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "複雜資料 [Visual Studio 中的 Office 程式開發]"
-  - "資料 [Visual Studio 中的 Office 程式開發], 資料繫結"
-  - "資料繫結 [Visual Studio 中的 Office 程式開發], 多個資料行"
-  - "多重資料行資料繫結 [Visual Studio 中的 Office 程式開發]"
+title: 'Walkthrough: Complex Data Binding in a Document-Level Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Office development in Visual Studio], binding data
+- complex data [Office development in Visual Studio]
+- multiple column data binding [Office development in Visual Studio]
+- data binding [Office development in Visual Studio], multiple columns
 ms.assetid: 32ffad3d-fba4-476a-99b8-ef440434f4e1
 caps.latest.revision: 50
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 49
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: eabb6c71606a980cb0056bd844e93cde6c3a746e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：文件層級專案中的複雜資料繫結
-  本逐步解說示範使用文件層級專案進行複雜資料繫結的基本概念。  您可以將 Microsoft Office Excel 工作表中的多個儲存格，繫結至 Northwind SQL Server 資料庫中的欄位。  
+# <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Walkthrough: Complex Data Binding in a Document-Level Project
+  This walkthrough demonstrates the basics of complex data binding in a document-level project. You can bind multiple cells in a Microsoft Office Excel worksheet to fields in the Northwind SQL Server database.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   將資料來源加入至活頁簿專案。  
+-   Adding a data source to your workbook project.  
   
--   將資料繫結控制項加入至工作表。  
+-   Adding data-bound controls to a worksheet.  
   
--   將資料變更儲存回資料庫。  
+-   Saving data changes back to the database.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   與具有 Northwind SQL Server 範例資料庫之伺服器的連線。  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   從 SQL Server 資料庫讀取及寫入該資料庫的使用權限。  
+-   Permissions to read from and write to the SQL Server database.  
   
-## 建立新專案  
- 第一步是建立 Excel 活頁簿專案。  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ The first step is to create an Excel workbook project.  
   
-#### 若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  建立名為 **My Complex Data Binding** 的 Excel 活頁簿專案。  在精靈中選取 \[**建立新文件**\]。  
+1.  Create an Excel workbook project with the name **My Complex Data Binding**. In the wizard, select **Create a new document**.  
   
-     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 My Complex Data Binding 專案加入至 \[**方案總管**\]。  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Complex Data Binding** project to **Solution Explorer**.  
   
-## 建立資料來源  
- 請使用 \[**資料來源**\] 視窗，將具型別資料集加入您的專案。  
+## <a name="creating-the-data-source"></a>Creating the Data Source  
+ Use the **Data Sources** window to add a typed dataset to your project.  
   
-#### 建立資料來源  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  如果 \[**資料來源**\] 視窗中不可見，請顯示它，請在功能表列上，選擇 \[**檢視**\]\]，則 \[**其他視窗**\]， \[**資料來源**\]。  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  選取 \[**加入新資料來源**\] 啟動 \[**資料來源組態精靈**\]。  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  選取 \[**資料庫**\]，再按一下 \[**下一步**\]。  
+3.  Select **Database** and then click **Next**.  
   
-4.  選取與 Northwind 範例 SQL Server 資料庫的資料連接，或使用 \[**新增連接**\] 按鈕加入新的連接。  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
   
-5.  在選取或建立連接後，請按 \[**下一步**\]。  
+5.  After a connection has been selected or created, click **Next**.  
   
-6.  如果已經選取，請清除儲存連接的選項，然後按一下 \[**下一步**\]。  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  在 \[**資料庫物件**\] 視窗中，展開 \[**資料表**\] 節點。  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  選取 \[**Employees**\] 資料表旁的核取方塊。  
+8.  Select the check box next to the **Employees** table.  
   
-9. 按一下 \[完成\]。  
+9. Click **Finish**.  
   
- 精靈會將 \[**Employees**\] 資料表加入至 \[**資料來源**\] 視窗，  也會將具型別資料集加入至 \[**方案總管**\] 中可以看得到的專案。  
+ The wizard adds the **Employees** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## 將控制項加入至工作表  
- 工作表將在活頁簿開啟時顯示 \[**Employees**\] 資料表。  使用者將能對資料進行變更，然後按一下按鈕，將變更儲存回資料庫。  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ A worksheet will display the **Employees** table when the workbook is opened. Users will be able to make changes to the data and then save those changes back to the database by clicking a button.  
   
- 若要自動繫結工作表與資料表，您可以從 \[**資料來源**\] 視窗將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入至工作表。  若要讓使用者能夠選擇儲存變更，請從 \[**工具箱**\] 加入 <xref:System.Windows.Forms.Button> 控制項。  
+ To bind the worksheet to the table automatically, you can add a <xref:Microsoft.Office.Tools.Excel.ListObject> control to the worksheet from the **Data Sources** window. To give the user the option to save changes, add a <xref:System.Windows.Forms.Button> control from the **Toolbox**.  
   
-#### 加入清單物件  
+#### <a name="to-add-a-list-object"></a>To add a list object  
   
-1.  驗證 \[**我的複雜資料 Binding.xlsx**\] 活頁簿在 Visual Studio 中開啟設計工具，並顯示 \[**Sheet1**\] 。  
+1.  Verify that the **My Complex Data Binding.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
   
-2.  開啟 \[**資料來源**\] 視窗，然後選取 \[**Employees**\] 節點。  
+2.  Open the **Data Sources** window and select the **Employees** node.  
   
-3.  按一下顯示的下拉箭號。  
+3.  Click the drop-down arrow that appears.  
   
-4.  選取下拉式清單中的 \[**ListObject**\]。  
+4.  Select **ListObject** in the drop-down list.  
   
-5.  將 \[**Employees**\] 資料表拖曳至 \[**A6**\] 儲存格。  
+5.  Drag the **Employees** table to cell **A6**.  
   
-     \[**A6**\] 儲存格中會建立一個名為 `EmployeesListObject` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。  同時，會將名為 `EmployeesBindingSource` 的 <xref:System.Windows.Forms.BindingSource>、資料表配接器，以及 <xref:System.Data.DataSet> 執行個體加入至專案。  控制項繫結至 <xref:System.Windows.Forms.BindingSource>，繼而又繫結至 <xref:System.Data.DataSet> 執行個體。  
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `EmployeesListObject` is created in cell **A6**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `EmployeesBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-#### 若要加入按鈕  
+#### <a name="to-add-a-button"></a>To add a button  
   
-1.  從 \[**工具箱**\] 的 \[**通用控制項**\] 索引標籤，將 <xref:System.Windows.Forms.Button> 控制項加入至工作表的 \[**A4**\] 儲存格。  
+1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A4** of the worksheet.  
   
- 下一個步驟是在工作表開啟時將文字加入至按鈕。  
+ The next step is to add text to the button when the worksheet opens.  
   
-## 初始化控制項  
- 將文字加入至 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 事件處理常式中的按鈕。  
+## <a name="initializing-the-control"></a>Initializing the Control  
+ Add text to the button in the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler.  
   
-#### 若要初始化控制項  
+#### <a name="to-initialize-the-control"></a>To initialize the control  
   
-1.  在 \[**方案總管**\] 中，在 \[**Sheet1.vb**\] 或 \[**Sheet1.cs**\] 上按一下滑鼠右鍵，再按捷徑功能表上的 \[**檢視程式碼**\]。  
+1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
   
-2.  將下列程式碼加入至 `Sheet1_Startup` 方法，以設定 b`utton` 的文字。  
+2.  Add the following code to the `Sheet1_Startup` method to set the text for the b`utton`.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#8)]
-     [!code-vb[Trin_VstcoreDataExcel#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#8)]  
+     [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]  [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]  
   
-3.  如果是 C\#，請加入 <xref:System.Windows.Forms.Control.Click> 事件的事件處理常式至 `Sheet1_Startup` 方法。  
+3.  For C# only, add an event handler for the <xref:System.Windows.Forms.Control.Click> event to the `Sheet1_Startup` method.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#9](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#9)]  
+     [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]  
   
- 現在，請加入程式碼，以處理按鈕的 <xref:System.Windows.Forms.Control.Click> 事件。  
+ Now add code to handle the <xref:System.Windows.Forms.Control.Click> event of the button.  
   
-## 將變更儲存至資料庫  
- 將對資料所做的任何變更明確存回資料庫之前，這些變更都只存在本機資料集中。  
+## <a name="saving-changes-to-the-database"></a>Saving Changes to the Database  
+ Any changes have been made to the data exist only in the local dataset until they are explicitly saved back to the database.  
   
-#### 若要將變更儲存至資料庫  
+#### <a name="to-save-changes-to-the-database"></a>To save changes to the database  
   
-1.  為 b`utton` 的 <xref:System.Windows.Forms.Control.Click> 事件加入事件處理常式，然後加入下列程式碼，認可對資料集所做的所有變更儲存到資料庫中。  
+1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of the b`utton`, and add the following code to commit all changes that have been made in the dataset back to the database.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet3.vb#10)]  
+     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]  [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]  
   
-## 測試應用程式  
- 現在您可以測試活頁簿，確認資料將如預期般顯示，而且您可以在清單物件中操作該資料。  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your workbook to verify that the data appears as expected, and that you can manipulate the data in the list object.  
   
-#### 若要測試資料繫結  
+#### <a name="to-test-the-data-binding"></a>To test the data binding  
   
--   按 F5。  
+-   Press F5.  
   
-     確認當活頁簿開啟時，清單物件中會填入來自 \[**Employees**\] 資料表的資料。  
+     Verify that when the workbook opens, the list object is filled with data from the **Employees** table.  
   
-#### 若要修改資料  
+#### <a name="to-modify-data"></a>To modify data  
   
-1.  按一下 \[**B7**\] 儲存格，此儲存格應該包含 \[**Davolio**\] 的名稱。  
+1.  Click cell **B7**, which should contain the name **Davolio**.  
   
-2.  輸入 Anderson 的名稱，然後按 ENTER。  
+2.  Type the name **Anderson**, and then press ENTER.  
   
-#### 若要修改資料行行首  
+#### <a name="to-modify-a-column-header"></a>To modify a column header  
   
-1.  按一下包含資料行行首 \[**LastName**\] 的儲存格。  
+1.  Click the cell that contains the column header **LastName**.  
   
-2.  輸入 Last Name，在兩個字中間包含一個空格，然後按 ENTER。  
+2.  Type **Last Name**, including a space between the two words, and then press ENTER.  
   
-#### 若要儲存資料  
+#### <a name="to-save-data"></a>To save data  
   
-1.  在工作表上按一下 \[**儲存**\]。  
+1.  Click **Save** on the worksheet.  
   
-2.  結束 Excel。  當系統提示您儲存所做的變更時，請按一下 \[**否**\]。  
+2.  Exit Excel. Click **No** when prompted to save the changes you made.  
   
-3.  按 F5，再次執行專案。  
+3.  Press F5 to run the project again.  
   
-     清單物件中便會填入來自 \[**Employees**\] 資料表的資料。  
+     The list object is filled with data from the **Employees** table.  
   
-4.  請注意，\[**B7**\] 儲存格中的名稱仍為 Anderson，也就是您所進行並儲存到資料庫的資料變更。  資料行行首 \[**LastName**\] 則已變更回沒有空格的原始格式，因為資料行行首並未繫結至資料庫，而且您也沒有儲存對工作表所做的變更。  
+4.  Notice that the name in cell **B7** is still **Anderson**, which is the data change that you made and saved back to the database. The column header **LastName** has changed back to its original form with no space, because the column header is not bound to the database and you did not save the changes you made to the worksheet.  
   
-#### 若要加入新資料列  
+#### <a name="to-add-new-rows"></a>To add new rows  
   
-1.  在清單物件內選取儲存格。  
+1.  Select a cell inside the list object.  
   
-     新資料列會出現在清單底部，而且新資料列的第一個儲存格中會出現星號 \(**\***\)。  
+     A new row appears at the bottom of the list, with an asterisk (**\***) in the first cell of the new row.  
   
-2.  在空白資料列中加入下列資訊。  
+2.  Add the following information in the empty row.  
   
-    |EmployeeID|LastName|FirstName|標題|  
-    |----------------|--------------|---------------|--------|  
+    |EmployeeID|LastName|FirstName|Title|  
+    |----------------|--------------|---------------|-----------|  
     |10|Ito|Shu|Sales Manager|  
   
-#### 若要刪除資料列  
+#### <a name="to-delete-rows"></a>To delete rows  
   
--   以滑鼠右鍵按一下工作表最左邊的數字 \[16\] \(第 16 列\)，然後按一下 \[**刪除**\]。  
+-   Right-click the number 16 (row 16) on the far left side of the worksheet, and then click **Delete**.  
   
-#### 若要對清單中的資料列進行排序  
+#### <a name="to-sort-the-rows-in-the-list"></a>To sort the rows in the List  
   
-1.  在清單內選取儲存格。  
+1.  Select a cell inside the list.  
   
-     每個資料行行首中都會顯示箭號按鈕。  
+     Arrow buttons appear in each column header.  
   
-2.  按一下 \[**Last Name**\] 資料行行首中的箭號按鈕。  
+2.  Click the arrow button in the **Last Name** column header.  
   
-3.  按一下 \[**遞增排序**\]。  
+3.  Click **Sort Ascending**.  
   
-     會按照姓氏的字母順序排列資料列。  
+     The rows are sorted alphabetically by last names.  
   
-#### 若要篩選資訊  
+#### <a name="to-filter-information"></a>To filter information  
   
-1.  在清單內選取儲存格。  
+1.  Select a cell inside the list.  
   
-2.  按一下 \[**Title**\] 資料行行首中的箭號按鈕。  
+2.  Click the arrow button in the **Title** column header.  
   
-3.  按一下 \[**Sales Representative**\]。  
+3.  Click **Sales Representative**.  
   
-     清單中只會顯示 \[**Title**\] 資料行中具有 \[**Sales Representative**\] 的資料列。  
+     The list shows only those rows that have **Sales Representative** in the **Title** column.  
   
-4.  再按一下 \[**Title**\] 資料行行首中的箭號按鈕。  
+4.  Click the arrow button in the **Title** column header again.  
   
-5.  按一下 \[**\(全部\)**\]。  
+5.  Click **(All)**.  
   
-     會移除篩選並顯示所有資料列。  
+     Filtering is removed and all the rows appear.  
   
-## 後續步驟  
- 這個逐步解說示範將資料庫中資料表繫結至清單物件的基本步驟。  以下則是接下來的一些工作：  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of binding a table in a database to a list object. Here are some tasks that might come next:  
   
--   快取資料，使您能夠離線使用資料。  如需詳細資訊，請參閱[如何：快取資料供離線使用或於伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。  
+-   Cache the data so that it can be used offline. For more information, see [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).  
   
--   部署方案。  如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
+-   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
--   建立欄位和資料表之間的主從式 \(Master\/Detail\) 關聯。  如需詳細資訊，請參閱[逐步解說：使用快取資料集來建立主從式關聯](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。  
+-   Create a master/detail relation between a field and a table. For more information, see [Walkthrough: Creating a Master Detail Relation Using a Cached Dataset](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).  
   
-## 請參閱  
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Office 方案的資料](../vsto/data-in-office-solutions.md)   
- [逐步解說：文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
+ [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: "逐步解說：以使用時產生功能支援測試優先 | Microsoft Docs"
+title: 'Walkthrough: Test-First Support with the Generate From Usage Feature | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,173 +32,173 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: f0576ce6dd78fe1328bcea3ab9a27507ddc0f2c0
-ms.openlocfilehash: 4811dda912f20272733a4d878fc8c607eb2573fc
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0b7928304417df3a5b5a067720c91aedd46a457f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 
 ---
-# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能支援測試優先
-本主題示範如何使用支援「測試優先」開發的[使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)功能。  
+# <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Walkthrough: Test-First Support with the Generate From Usage Feature
+This topic demonstrates how to use the [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage) feature, which supports test-first development.  
   
- *「測試先行」開發方式* (Test-first development) 這種軟體設計方法，要先根據產品規格撰寫單元測試，再撰寫測試成功所需要的原始程式碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 支援「測試先行」開發方式的做法是，當您第一次在測試案例中參考類型和成員，在它們被定義之前，以原始程式碼產生新的類型和成員。  
+ *Test-first development* is an approach to software design in which you first write unit tests based on product specifications, and then write the source code that is required to make the tests succeed. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] supports test-first development by generating new types and members in the source code when you first reference them in your test cases, before they are defined.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在盡可能不中斷工作流程的情況下產生新的類型和成員。 您可以建立類型、方法、屬性、欄位或建構函式的 Stub，但不離開目前所在的程式碼位置。 當您開啟對話方塊指定類型產生選項時，焦點會在對話方塊一關閉時，立即回到目前開啟的檔案。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] generates the new types and members with minimal interruption to your workflow. You can create stubs for types, methods, properties, fields, or constructors without leaving your current location in code. When you open a dialog box to specify options for type generation, the focus returns immediately to the current open file when the dialog box closes.  
   
- [從用量產生] 功能可以和整合了 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的測試架構一起使用。 本主題會示範 Microsoft 單元測試架構。  
+ The Generate From Usage feature can be used with test frameworks that integrate with [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. In this topic, the Microsoft Unit Testing Framework is demonstrated.  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### <a name="to-create-a-windows-class-library-project-and-a-test-project"></a>建立 Windows 類別庫專案和測試專案  
+### <a name="to-create-a-windows-class-library-project-and-a-test-project"></a>To create a Windows Class Library project and a Test project  
   
-1.  在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中建立新的 Windows 類別庫專案。 將其命名為 `GFUDemo_VB` 或 `GFUDemo_CS`，視所用語言而定。  
+1.  In [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] or [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], create a new Windows Class Library project. Name it `GFUDemo_VB` or `GFUDemo_CS`, depending on which language you are using.  
   
-2.  在 **方案總管**中，以滑鼠右鍵按一下上方的解決方案，指向 [加入] ，然後按一下 [新增專案] 。 在 [新增專案]  對話方塊左側的 [專案類型]  窗格中，按一下 [測試] 。  
+2.  In **Solution Explorer**, right-click the solution icon at the top, point to **Add**, and then click **New Project**. In the **New Project** dialog box, in the **Project Types** pane on the left, click **Test**.  
   
-3.  在 [範本]  窗格中按一下 [單元測試專案]  ，並接受預設名稱 UnitTestProject1。 下圖顯示當它出現在 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]時的對話方塊。 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中，對話方塊看起來很類似。  
+3.  In the **Templates** pane, click **Unit Test Project** and accept the default name of UnitTestProject1. The following illustration shows the dialog box when it appears in [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the dialog box looks similar.  
   
-     ![[新增測試專案] 對話方塊](../ide/media/newproject_test.png "NewProject_Test")  
-新增專案對話方塊  
+     ![New Test Project dialog](../ide/media/newproject_test.png "NewProject_Test")  
+New Project dialog box  
   
-4.  按一下 [確定]  關閉 [新增專案]  對話方塊。
+4.  Click **OK** to close the **New Project** dialog box.
 
-5.  在您的類別專案內，於 [方案總管] 中，以滑鼠右鍵按一下 [參考] 項目，並按一下 [加入參考]。
+5.  In your class project, in **Solution Explorer**, right-click the **References** entry and click **Add Reference**.
 
-6.  在 [參考管理員] 對話方塊中，選取 [專案]，然後選取您的單元測試專案。
+6.  In the **Reference Manager** dialog box, select **Projects** and then select your unit test project.
 
-7.  按一下 [確定] 以關閉 [參考管理員] 對話方塊。
+7.  Click **OK** to close the **Reference Manager** dialog box.
 
-8.  在 **Class1**檔案中，於最後一個現有 **using** 陳述式的正後方，針對測試專案加入 **using** 陳述式：
+8.  In the **Class1** file, immediately after the last of the existing **using** statements, add a **using** statement for the test project:
 
-    * 在 Visual Basic 中，加入 `Using UnitTestProject1`
+    * In Visual Basic, add `Using UnitTestProject1`
     
-    * 在 C# 中，加入 `using UnitTestProject1;`
+    * In C#, add `using UnitTestProject1;`
     
-9.  儲存您的方案。 您已準備好開始撰寫測試。  
+9.  Save your solution. You are now ready to begin writing tests.  
   
-### <a name="to-generate-a-new-class-from-a-unit-test"></a>從單元測試產生新類別  
+### <a name="to-generate-a-new-class-from-a-unit-test"></a>To generate a new class from a unit test  
   
-1.  測試專案包含名為 UnitTest1 的檔案。 在 **方案總管** 中按兩下這個檔案，在程式碼編輯器中開啟它。 已產生測試類別和測試方法。  
+1.  The test project contains a file that is named UnitTest1. Double-click this file in **Solution Explorer** to open it in the Code Editor. A test class and test method have been generated.  
   
-2.  找到類別 `UnitTest1` 的宣告，並將它重新命名為 `AutomobileTest`。 如果 C# 中有 `UnitTest1()` 建構函式，請將它重新命名為 `AutomobileTest()`。  
+2.  Locate the declaration for class `UnitTest1` and rename it to `AutomobileTest`. In C#, if a `UnitTest1()` constructor is present, rename it to `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense 提供兩種完成 IntelliSense 陳述式的方式： *完成模式* (completion mode) 和 *建議模式*(suggestion mode)。 當類別和成員在使用前即已定義的情況下，請使用建議模式。 當 IntelliSense 視窗開啟時，您可以按 CTRL+ALT+SPACEBAR 在完成模式和建議模式之間切換。 如需詳細資訊，請參閱 [Using IntelliSense](../ide/using-intellisense.md) 。 當您在下個步驟輸入 `Automobile` 時，建議模式非常有幫助。  
+    >  IntelliSense now provides two alternatives for IntelliSense statement completion: *completion mode* and *suggestion mode*. Use suggestion mode for situations in which classes and members are used before they are defined. When an IntelliSense window is open, you can press CTRL+ALT+SPACEBAR to toggle between completion mode and suggestion mode. See [Using IntelliSense](../ide/using-intellisense.md) for more information. Suggestion mode will help when you are typing `Automobile` in the next step.  
   
-3.  找到 `TestMethod1()` 方法並將它重新命名為 `DefaultAutomobileIsInitializedCorrectly()`。 在這個方法內，建立名為 `Automobile`的類別新執行個體，如下列圖例所示。 波浪底線隨即出現，這表示發生編譯時期錯誤，類型名稱下會出現智慧標籤。 智慧標籤的確切位置會因您使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 而不同。  
+3.  Locate the `TestMethod1()` method and rename it to `DefaultAutomobileIsInitializedCorrectly()`. Inside this method, create a new instance of a class named `Automobile`, as shown in the following illustrations. A wavy underline appears, which indicates a compile-time error, and a smart tag appears under the type name. The exact location of the smart tag varies, depending on whether you are using [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)].  
   
-     ![Visual Basic 中的智慧標籤底線](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
+     ![Smart Tag Underline in Visual Basic](../ide/media/genclass_underlinevb.png "GenClass_UnderlineVB")  
 Visual Basic  
   
-     ![C&#35; 中的智慧標籤底線](../ide/media/genclass_underline.png "GenClass_Underline")  
+     ![Smart Tag Underline in  C&#35;](../ide/media/genclass_underline.png "GenClass_Underline")  
 Visual C#  
   
-4.  將滑鼠指標停留在智慧標籤上查看錯誤訊息，表示尚未定義任何名為 `Automobile` 的類型。 按一下智慧標籤，或按 CTRL+。 (CTRL+ 句號) 開啟 [從用量產生] 快顯功能表，如下圖所示。  
+4.  Rest the mouse pointer over the smart tag to see an error message that states that no type named `Automobile` is defined yet. Click the smart tag or press CTRL+. (CTRL+period) to open the Generate From Usage shortcut menu, as shown in the following illustrations.  
   
-     ![Visual Basic 中的智慧標籤內容功能表](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
+     ![Smart Tag Context Menu in Visual Basic](../ide/media/genclass_smartvb.png "GenClass_SmartVB")  
 Visual Basic  
   
-     ![C&#35; 中的智慧標籤內容功能表](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
+     ![Smart Tag Context Menu in C&#35;](../ide/media/genclass_smartcs.png "GenClass_SmartCS")  
 Visual C#  
   
-5.  您現在有兩種選擇。 您可以按一下 [產生 'Class Automobile']  在測試專案中建立新的檔案，並填入名為 `Automobile`的空類別。 這可以在新檔案中快速建立新類別，這個新檔案具有目前專案的預設存取修飾詞。 您也可以按一下 [產生新的類型]  開啟 [產生新的類型]  對話方塊。 提供的選項包括將類別放在現有的檔案，以及將檔案加入另一個專案中。  
+5.  Now you have two choices. You could click **Generate 'Class Automobile'** to create a new file in your test project and populate it with an empty class named `Automobile`. This is a quick way to create a new class in a new file that has default access modifiers in the current project. You can also click **Generate new type** to open the **Generate New Type** dialog box. This provides options that include putting the class in an existing file and adding the file to another project.  
   
-     按一下 [產生新的類型]  開啟 [產生新的類型]  對話方塊，如下圖所示。 在 [專案]  清單中，按一下 [GFUDemo_VB]  或 [GFUDemo_CS]  指示 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將檔案加入原始程式碼專案中，不是加入測試專案。  
+     Click **Generate new type** to open the **Generate New Type** dialog box, which is shown in the following illustration. In the **Project** list, click **GFUDemo_VB** or **GFUDemo_CS** to instruct [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to add the file to the source code project instead of the test project.  
   
-     ![[產生新的類型] 對話方塊](../ide/media/genotherdialog.png "GenOtherDialog")  
-[產生新的類型] 對話方塊  
+     ![Generate New Type dialog box](../ide/media/genotherdialog.png "GenOtherDialog")  
+Generate New Type dialog box  
   
-6.  按一下 [確定]  關閉對話方塊，並建立新的檔案。  
+6.  Click **OK** to close the dialog box and create the new file.  
   
-7.  在 **方案總管**的 [GFUDemo_VB] 或 [GFUDemo_CS] 專案節點下，確認是否有新增的 Automobile.vb 或 Automobile.cs 檔案。 在程式碼編輯器中，焦點仍在 `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`。 您可以盡可能不中斷的方式繼續撰寫測試。  
+7.  In **Solution Explorer**, look under the GFUDemo_VB or GFUDemo_CS project node to verify that the new Automobile.vb or Automobile.cs file is there. In the Code Editor, the focus is still in `AutomobileTest.DefaultAutomobileIsInitializedCorrectly`. You can continue to write your test with a minimum of interruption.  
   
-### <a name="to-generate-a-property-stub"></a>產生屬性 Stub  
+### <a name="to-generate-a-property-stub"></a>To generate a property stub  
   
-1.  假設產品規格規定 `Automobile` 類別有兩個公用屬性，名為 `Model` 和 `TopSpeed`。 這些屬性必須由預設的建構函式以 `"Not specified"` 和 `-1` 的預設值來初始化。 以下的單元測試會驗證預設建構函式是否將屬性設定為正確的預設值。  
+1.  Assume that the product specification states that the `Automobile` class has two public properties named `Model` and `TopSpeed`. These properties must be initialized with default values of `"Not specified"` and `-1` by the default constructor. The following unit test will verify that the default constructor sets the properties to their correct default values.  
   
-     在 `DefaultAutomobileIsInitializedCorrectly`中加入下列程式碼行：  
+     Add the following line of code to `DefaultAutomobileIsInitializedCorrectly`.  
   
-     [!code-cs[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]  [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
+     [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]  [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]  
   
-     因為程式碼參考 `Automobile`上未定義的兩個屬性，所以會顯示智慧標籤。 按一下 `Model` 的智慧標籤，然後按一下 [產生屬性 Stub] 。 也產生 `TopSpeed` 屬性的屬性Stub。  
+     Because the code references two undefined properties on `Automobile`, a smart tag appears. Click the smart tag for `Model` and then click **Generate property stub**. Generate a property stub for the `TopSpeed` property also.  
   
-     在 `Automobile` 類別中，會從內容正確推斷出新屬性的類型。  
+     In the `Automobile` class, the types of the new properties are correctly inferred from the context.  
   
-     下圖顯示智慧標籤的快顯功能表。  
+     The following illustration shows the smart tag shortcut menu.  
   
-     ![Visual Basic 中的產生屬性內容功能表](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
+     ![Generate Property context menu in Visual Basic](../ide/media/genpropertysmarttagvb.png "GenPropertySmartTagVB")  
 Visual Basic  
   
-     ![C&#35; 中的產生屬性內容功能表](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
+     ![Generate Property context menu in C&#35;](../ide/media/genpropertysmarttagcs.png "GenPropertySmartTagCS")  
 Visual C#  
   
-### <a name="to-locate-the-source-code"></a>找出原始程式碼  
+### <a name="to-locate-the-source-code"></a>To locate the source code  
   
-1.  使用 [巡覽至]  功能巡覽至 Automobile.cs 或 Automobile.vb 原始程式碼檔，以便驗證是否已產生新的屬性。  
+1.  Use the **Navigate To** feature to navigate to the Automobile.cs or Automobile.vb source code file so that you can verify that the new properties have been generated.  
   
-     [巡覽至]  功能可讓您快速輸入文字字串，例如類型名稱或部分名稱，按一下結果清單中的項目移至想要的位置。  
+     The **Navigate To** feature enables you to quickly enter a text string, such as a type name or part of a name, and go to the desired location by clicking the element in the result list.  
   
-     在程式碼編輯器按一下，然後按 CTRL+, (CTRL+逗號)，隨即開啟 [巡覽至]  對話方塊。 在文字方塊中輸入 `automobile`。 按一下清單中的 [汽車]  類別，然後按一下 [確定] 。  
+     Open the **Navigate To** dialog box by clicking in the Code Editor and pressing CTRL+, (CTRL+comma). In the text box, type `automobile`. Click the **Automobile** class in the list, and then click **OK**.  
   
-     下圖即會顯示 [巡覽至]  視窗。  
+     The **Navigate To** window is shown in the following illustration.  
   
-     ![[巡覽至] 對話方塊](../ide/media/navigate_2.png "Navigate_2")  
-[巡覽至] 視窗  
+     ![Navigate To dialog](../ide/media/navigate_2.png "Navigate_2")  
+Navigate To window  
   
-### <a name="to-generate-a-stub-for-a-new-constructor"></a>產生新建構函式的 Stub  
+### <a name="to-generate-a-stub-for-a-new-constructor"></a>To generate a stub for a new constructor  
   
-1.  在這個測試方法中，您會產生建構函式 Stub，它會初始化 `Model` 和 `TopSpeed` 屬性以獲得您指定的值。 稍後，您會加入更多的程式碼以完成測試。 請將下列其他測試方法加入您的 `AutomobileTest` 類別中。  
+1.  In this test method, you will generate a constructor stub that will initialize the `Model` and `TopSpeed` properties to have values that you specify. Later, you will add more code to complete the test. Add the following additional test method to your `AutomobileTest` class.  
   
-     [!code-cs[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]  [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
+     [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]  [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]  
   
-2.  按一下新類別建構函式下的智慧標籤，然後按一下 [產生建構函式 Stub] 。 請注意，在 `Automobile` 類別檔案中，新的建構函式已檢查建構函式呼叫中所使用的區域變數名稱，找到 `Automobile` 類別中具有相同名稱的屬性，並提供建構函式主體的程式碼將引數值儲存在 `Model` 和 `TopSpeed` 屬性中。 (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]中，新建構函式的 `_model` 和 `_topSpeed` 欄位都是 `Model` 和 `TopSpeed` 屬性的隱含定義支援欄位。)  
+2.  Click the smart tag under the new class constructor and then click **Generate constructor stub**. In the `Automobile` class file, notice that the new constructor has examined the names of the local variables that are used in the constructor call, found properties that have the same names in the `Automobile` class, and supplied code in the constructor body to store the argument values in the `Model` and `TopSpeed` properties. (In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], the `_model` and `_topSpeed` fields in the new constructor are the implicitly defined backing fields for the `Model` and `TopSpeed` properties.)  
   
-3.  產生新的建構函式後， `DefaultAutomobileIsInitializedCorrectly`的預設建構函式呼叫下會出現波浪底線。 錯誤訊息指出 `Automobile` 類別沒有任何建構函式採用零引數。 若要產生沒有任何參數的明確預設建構函式，請按一下智慧標籤，然後按一下 [產生建構函式 Stub] 。  
+3.  After you generate the new constructor, a wavy underline appears under the call to the default constructor in `DefaultAutomobileIsInitializedCorrectly`. The error message states that the `Automobile` class has no constructor that takes zero arguments. To generate an explicit default constructor that does not have parameters, click the smart tag and then click **Generate constructor stub**.  
   
-### <a name="to-generate-a-stub-for-a-method"></a>產生方法的 Stub  
+### <a name="to-generate-a-stub-for-a-method"></a>To generate a stub for a method  
   
-1.  假設規格規定，如果其 `Automobile` 和 `Model` 屬性設為預設值以外的值，新的 `TopSpeed` 就可以放入執行狀態。 請將下列各行加入 `AutomobileWithModelNameCanStart` 方法中。  
+1.  Assume that the specification states that a new `Automobile` can be put into a Running state if its `Model` and `TopSpeed` properties are set to something other than the default values. Add the following lines to the `AutomobileWithModelNameCanStart` method.  
   
-     [!code-cs[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]  [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
+     [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]  [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]  
   
-2.  按一下 `myAuto.Start` 方法呼叫的智慧標籤，然後按一下 [產生方法 Stub] 。  
+2.  Click the smart tag for the `myAuto.Start` method call and then click **Generate method stub**.  
   
-3.  按一下 `IsRunning` 屬性的智慧標籤，然後按一下 [產生屬性 Stub] 。 現在 `Automobile` 類別包含下列程式碼。  
+3.  Click the smart tag for the `IsRunning` property and then click **Generate property stub**. The `Automobile` class now contains the following code.  
   
-     [!code-cs[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]  [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
+     [!code-csharp[VbTDDWalkthrough#4](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.cs)]  [!code-vb[VbTDDWalkthrough#4](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_4.vb)]  
   
-### <a name="to-run-the-tests"></a>執行測試  
+### <a name="to-run-the-tests"></a>To run the tests  
   
-1.  在 [單元測試]  功能表中指向 [執行單元測試] ，然後按一下 [所有測試] 。 這個命令會執行為目前的解決方案撰寫的所有測試架構中的全部測試。  
+1.  On the **Unit Test** menu, point to **Run Unit Tests**, and then click **All Tests**. This command runs all tests in all test frameworks that are written for the current solution.  
   
-     在這個案例中，會有兩個測試，而且兩個測試都應該要失敗。 `DefaultAutomobileIsInitializedCorrectly` 測試失敗的原因是 `Assert.IsTrue` 條件傳回 `False`。 `AutomobileWithModelNameCanStart` 測試失敗的原因是 `Start` 類別的 `Automobile` 方法擲回例外狀況。  
+     In this case, there are two tests, and they both fail, as expected. The `DefaultAutomobileIsInitializedCorrectly` test fails because the `Assert.IsTrue` condition returns `False`. The `AutomobileWithModelNameCanStart` test fails because the `Start` method in the `Automobile` class throws an exception.  
   
-     下圖顯示 [測試結果]  視窗。  
+     The **Test Results** window is shown in the following illustration.  
   
-     ![失敗的測試結果](../ide/media/testsfailed.png "TestsFailed")  
-測試結果視窗  
+     ![Test results that failed](../ide/media/testsfailed.png "TestsFailed")  
+Test Results window  
   
-2.  在 [測試結果]  視窗中，在每個測試結果資料列按兩下，移至每一項測試失敗的位置。  
+2.  In the **Test Results** window, double-click on each test result row to go to the location of each test failure.  
   
-### <a name="to-implement-the-source-code"></a>實作原始程式碼  
+### <a name="to-implement-the-source-code"></a>To implement the source code  
   
-1.  將下列程式碼加入預設建構函式中，讓 `Model`、 `TopSpeed` 和 `IsRunning` 屬性都初始化為正確的 `"Not specified"`、 `-1`和 `True` (`true`) 預設值。  
+1.  Add the following code to the default constructor so that the `Model`, `TopSpeed` and `IsRunning` properties are all initialized to their correct default values of `"Not specified"`, `-1`, and `True` (`true`).  
   
-     [!code-cs[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]  [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
+     [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]  [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]  
   
-2.  呼叫 `Start` 方法時，它應該只有在 `IsRunning` 或 `Model` 屬性設為預設值以外的值時，才將 `TopSpeed` 旗標設為 true。 從方法主體移除 `NotImplementedException` ，並加入下列程式碼。  
+2.  When the `Start` method is called, it should set the `IsRunning` flag to true only if the `Model` or `TopSpeed` properties are set to something other than their default value. Remove the `NotImplementedException` from the method body and add the following code.  
   
-     [!code-cs[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]  [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
+     [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]  [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]  
   
-### <a name="to-run-the-tests-again"></a>再次執行測試  
+### <a name="to-run-the-tests-again"></a>To run the tests again  
   
-1.  在 [測試]  功能表中指向 [執行] ，然後按一下 [方案中的所有測試] 。 測試這一次會成功。 下圖顯示 [測試結果]  視窗。  
+1.  On the **Test** menu, point to **Run**, and then click **All Tests in Solution**. This time the tests pass. The **Test Results** window is shown in the following illustration.  
   
-     ![成功的測試結果](../ide/media/testspassed.png "TestsPassed")  
-測試結果視窗  
+     ![Test results that passed](../ide/media/testspassed.png "TestsPassed")  
+Test Results window  
   
-## <a name="see-also"></a>另請參閱  
- [使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)   
- [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)   
- [使用 IntelliSense](../ide/using-intellisense.md)   
- [對程式碼進行單元測試](../test/unit-test-your-code.md)
+## <a name="see-also"></a>See Also  
+ [Generate From Usage](../ide/visual-csharp-intellisense.md#generate-from-usage)   
+ [Writing Code](../ide/writing-code-in-the-code-and-text-editor.md)   
+ [Using IntelliSense](../ide/using-intellisense.md)   
+ [Unit Test Your Code](../test/unit-test-your-code.md)

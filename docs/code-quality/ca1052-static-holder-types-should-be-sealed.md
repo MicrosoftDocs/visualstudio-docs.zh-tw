@@ -1,65 +1,82 @@
 ---
-title: "CA1052：靜態預留位置類型應該為密封的 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "StaticHolderTypesShouldBeSealed"
-  - "CA1052"
-helpviewer_keywords: 
-  - "CA1052"
-  - "StaticHolderTypesShouldBeSealed"
+title: 'CA1052: Static holder types should be sealed | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- StaticHolderTypesShouldBeSealed
+- CA1052
+helpviewer_keywords:
+- CA1052
+- StaticHolderTypesShouldBeSealed
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1052：靜態預留位置類型應該為密封的
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9658a77e9504b08a523ca8fd31a60606cd8f8317
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Static holder types should be sealed
 |||  
 |-|-|  
-|型別名稱|StaticHolderTypesShouldBeSealed|  
+|TypeName|StaticHolderTypesShouldBeSealed|  
 |CheckId|CA1052|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的型別只包含靜態 \(Static\) 成員，因此不會利用 [密封](/dotnet/csharp/language-reference/keywords/sealed) \([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)\) 修飾詞 \(Modifier\) 宣告它們。  
+## <a name="cause"></a>Cause  
+ A public or protected type contains only static members and is not declared with the [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modifier.  
   
-## 規則描述  
- 這項規則會假設只包含靜態成員的型別不是設計為繼承的，因為該型別不會提供可以在衍生型別 \(Derived Type\) 中加以覆寫的任何功能。  預定不會繼承的型別應該以 `sealed` 修飾詞標記，以允許使用它做為基底型別 \(Base Type\)。  
+## <a name="rule-description"></a>Rule Description  
+ This rule assumes that a type that contains only static members is not designed to be inherited, because the type does not provide any functionality that can be overridden in a derived type. A type that is not meant to be inherited should be marked with the `sealed` modifier to prohibit its use as a base type.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將型別標示為 `sealed`。  如果是以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 \(含\) 以前的版本為目標，比較好的做法是將型別標記為 `static`。  使用這個方式，您可以避免必須宣告私用建構函式，以防止建立類別。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the type as `sealed`. If you are targeting [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 or later, a better approach is to mark the type as `static`. In this manner, you avoid having to declare a private constructor to prevent the class from being created.  
   
-## 隱藏警告的時機  
- 只有在型別是設計為繼承的，才能隱藏這項規則的警告。  缺少 `sealed` 修飾詞，表示型別與基底型別一樣有用。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only if the type is designed to be inherited. The absence of the `sealed` modifier suggests that the type is useful as a base type.  
   
-## 違規範例  
+## <a name="example-of-a-violation"></a>Example of a Violation  
   
-### 描述  
- 下列範例顯示違反規則的型別。  
+### <a name="description"></a>Description  
+ The following example shows a type that violates the rule.  
   
-### 程式碼  
- [!code-cs[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
- [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
- [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)] [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)] [!code-cpp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CPP/ca1052-static-holder-types-should-be-sealed_1.cpp)]  
   
-## 使用 Static 修飾詞進行修正  
+## <a name="fix-with-the-static-modifier"></a>Fix with the Static Modifier  
   
-### 描述  
- 下列範例顯示如何藉由使用 `static` 修飾詞標記型別來修正這個規則的違規。  
+### <a name="description"></a>Description  
+ The following example shows how to fix a violation of this rule by marking the type with the `static` modifier.  
   
-### 程式碼  
- [!code-cs[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]  
   
-## 相關規則  
- [CA1053：靜態預留位置類型不應包含建構函式](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1053: Static holder types should not have constructors](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+

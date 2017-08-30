@@ -1,60 +1,77 @@
 ---
-title: "CA2215：Dispose 方法應該呼叫基底類別處置 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2215"
-  - "DisposeMethodsShouldCallBaseClassDispose"
-  - "Dispose methods should call base class dispose"
-helpviewer_keywords: 
-  - "DisposeMethodsShouldCallBaseClassDispose"
-  - "CA2215"
+title: 'CA2215: Dispose methods should call base class dispose | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2215
+- DisposeMethodsShouldCallBaseClassDispose
+- Dispose methods should call base class dispose
+helpviewer_keywords:
+- DisposeMethodsShouldCallBaseClassDispose
+- CA2215
 ms.assetid: c772e7a6-a87e-425c-a70e-912664ae9042
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2215：Dispose 方法應該呼叫基底類別處置
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2fc05a4489fbd8b4d30cb3e9c3e9c0e86c2c26a5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215: Dispose methods should call base class dispose
 |||  
 |-|-|  
-|型別名稱|DisposeMethodsShouldCallBaseClassDispose|  
+|TypeName|DisposeMethodsShouldCallBaseClassDispose|  
 |CheckId|CA2215|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 實作 <xref:System.IDisposable?displayProperty=fullName> 的型別會繼承自同樣實作 <xref:System.IDisposable> 的型別。  但是繼承型別的 <xref:System.IDisposable.Dispose%2A> 方法卻未呼叫父型別的 <xref:System.IDisposable.Dispose%2A> 方法。  
+## <a name="cause"></a>Cause  
+ A type that implements <xref:System.IDisposable?displayProperty=fullName> inherits from a type that also implements <xref:System.IDisposable>. The <xref:System.IDisposable.Dispose%2A> method of the inheriting type does not call the <xref:System.IDisposable.Dispose%2A> method of the parent type.  
   
-## 規則描述  
- 如果型別會繼承自可處置的型別，則必須從本身的 <xref:System.IDisposable.Dispose%2A> 方法呼叫基底型別 \(Base Type\) 的 <xref:System.IDisposable.Dispose%2A> 方法。  呼叫基底型別方法 Dispose，確保會釋放由基底型別所建立的任何資源。  
+## <a name="rule-description"></a>Rule Description  
+ If a type inherits from a disposable type, it must call the <xref:System.IDisposable.Dispose%2A> method of the base type from within its own <xref:System.IDisposable.Dispose%2A> method. Calling the base type method Dispose ensures that any resources created by the base type are released.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請呼叫 <xref:System.IDisposable.Dispose%2A> 方法中的 `base`.<xref:System.IDisposable.Dispose%2A>。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, call `base`.<xref:System.IDisposable.Dispose%2A> in your <xref:System.IDisposable.Dispose%2A> method.  
   
-## 隱藏警告的時機  
- 如果 `base`.<xref:System.IDisposable.Dispose%2A> 的呼叫層級比規則的檢查層級更深層，則您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the call to `base`.<xref:System.IDisposable.Dispose%2A> occurs at a deeper calling level than the rule checks.  
   
-## 範例  
- 在下列範例中，程式碼會顯示實作 <xref:System.IDisposable> 的型別 `TypeA`。  
+## <a name="example"></a>Example  
+ The following example shows a type `TypeA` that implements <xref:System.IDisposable>.  
   
- [!CODE [FxCop.Usage.IDisposablePattern#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern#1)]  
+ [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2215-dispose-methods-should-call-base-class-dispose_1.cs)]  
   
-## 範例  
- 在下列範例中，程式碼會顯示繼承自型別 `TypeA` 並正確呼叫 <xref:System.IDisposable.Dispose%2A> 方法的型別 `TypeB`。  
+## <a name="example"></a>Example  
+ The following example shows a type `TypeB` that inherits from type `TypeA` and correctly calls its <xref:System.IDisposable.Dispose%2A> method.  
   
- [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_1.vb)]  
+ [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.IDisposable?displayProperty=fullName>   
- [處置模式](../Topic/Dispose%20Pattern.md)
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

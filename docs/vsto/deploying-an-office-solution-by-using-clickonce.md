@@ -1,267 +1,271 @@
 ---
-title: "使用 ClickOnce 部署 Office 方案"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ClickOnce 部署 [Visual Studio 中的 Office 程式開發], 部署方案"
-  - "Visual Studio 中的 Office 程式開發, 部署方案"
+title: Deploying an Office Solution by Using ClickOnce | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, deploying solutions
+- ClickOnce deployment [Office development in Visual Studio], deploying solutions
 ms.assetid: feb516b3-5e4d-449a-9fd2-347d08d90252
 caps.latest.revision: 59
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 58
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a8430c32a7d9352554a9fc940eabe3b4ef0428c4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 使用 ClickOnce 部署 Office 方案
-  使用 ClickOnce 只需要幾個步驟就能部署 Office 方案。  如果您發行更新，方案會自動偵測並安裝更新。  不過，ClickOnce 要求您針對電腦上的每個使用者分別安裝方案。  因此，如果同一部電腦上有多位使用者將執行您的方案，您應該考慮使用 Windows Installer \(.msi\)。  
+# <a name="deploying-an-office-solution-by-using-clickonce"></a>Deploying an Office Solution by Using ClickOnce
+  You can deploy your Office solution in fewer steps if you use ClickOnce. If you publish updates, your solution will automatically detect and install them. However, ClickOnce requires that you install your solution separately for each user of a computer. Therefore, you should consider using Windows Installer (.msi) if more than one user will run your solution on the same computer.  
   
-## 本主題內容  
+## <a name="in-this-topic"></a>In this topic  
   
--   [發行方案](#Publish)  
+-   [Publish the solution](#Publish)  
   
--   [決定您想要將信任授與方案的方式](#Trust)  
+-   [Decide how you want to grant trust to the solution](#Trust)  
   
--   [協助使用者安裝方案](#Helping)  
+-   [Help users install the solution](#Helping)  
   
--   [將方案的文件放置到使用者的電腦上 (僅適用於文件層級自訂)](#Put)  
+-   [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put)  
   
--   [將方案的文件放置到執行 SharePoint 的伺服器上 (僅適用於文件層級自訂)](#SharePoint)  
+-   [Put the document of a solution onto a server that's running SharePoint (document-level customizations only)](#SharePoint)  
   
--   [建立自訂安裝程式](#Custom)  
+-   [Create a custom installer](#Custom)  
   
--   [發行更新](#Update)  
+-   [Publish an update](#Update)  
   
--   [變更方案的安裝位置](#Location)  
+-   [Change the installation location of a solution](#Location)  
   
--   [將方案復原為舊版](#Roll)  
+-   [Roll back a solution to an earlier version](#Roll)  
   
- 如需如何透過建立 Windows Installer 檔來部署 Office 方案的詳細資訊，請參閱[使用 Windows Installer 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-windows-installer.md)。  
+ For more information about how to deploy an Office solution by creating a Windows Installer file, see [Deploying an Office Solution by Using Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).  
   
-##  <a name="Publish"></a> 發行方案  
- 您可以使用 \[**發行精靈**\] 或 \[**專案設計工具**\] 發行您的方案。  在這個程序中，您將使用 \[**專案設計工具**\]，因為它提供了一組完整的發行選項。  請參閱[發行精靈 &#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md)。  
+##  <a name="Publish"></a> Publish the solution  
+ You can publish your solution by using the **Publish Wizard** or the **Project Designer**. In this procedure, you'll use the **Project Designer** because it provides the complete set of publishing options. See [Publish Wizard &#40;Office Development in Visual Studio&#41;](../vsto/publish-wizard-office-development-in-visual-studio.md).  
   
-#### 若要發行方案  
+#### <a name="to-publish-the-solution"></a>To publish the solution  
   
-1.  在 \[**方案總管**\] 中選擇針對您的專案命名的節點。  
+1.  In **Solution Explorer**, choose the node that's named for your project.  
   
-2.  在功能表列上，選擇 \[專案\]、\[*ProjectName* 屬性\]。  
+2.  On the menu bar, choose **Project**, *ProjectName* **Properties**.  
   
-3.  在 \[**專案設計工具**\] 中選擇 \[**發行**\] 索引標籤，如下圖所示。  
+3.  In the **Project Designer**, choose the **Publish** tab, which the following illustration shows.  
   
-     ![[專案設計工具] 中的 [發行] 索引標籤](../vsto/media/vsto-publishtab.png "[專案設計工具] 中的 [發行] 索引標籤")  
+     ![The publish tab of the Project Designer](../vsto/media/vsto-publishtab.png "The publish tab of the Project Designer")  
   
-4.  在 \[發行資料夾位置 \(FTP 伺服器或檔案路徑\)\]\] 方塊中，輸入您希望 \[專案設計工具\] 將方案檔複製到其中的資料夾路徑。  
+4.  In the **Publishing Folder Location (ftp server, or file path)** box, enter the path of the folder where you want the **Project Designer** to copy the solution files.  
   
-     您可以輸入下列任何類型的路徑。  
+     You can enter any of the following types of paths.  
   
-    -   本機路徑 \(例如 *C:\\FolderName\\FolderName*\)。  
+    -   A local path (for example, *C:\FolderName\FolderName*).  
   
-    -   網路上資料夾的統一命名慣例 \(UNC\) 路徑 \(例如 *\\\\ServerName\\FolderName*\)。  
+    -   A Uniform Naming Convention (UNC) path to a folder on your network (for example, *\\\ServerName\FolderName*).  
   
-    -   相對路徑 \(例如專案預設發行到其中的資料夾 *PublishFolder\\*\)。  
+    -   A relative path (for example, *PublishFolder\\*, which is the folder into which the project is published by default).  
   
-5.  在 \[**安裝資料夾 URL**\] 方塊中，輸入完整的位置路徑以便使用者找到您的方案。  
+5.  In the **Installation Folder URL** box, enter the fully qualified path of the location where end users will find your solution.  
   
-     如果您還不知道位置，則不要在這個欄位中輸入任何內容。  根據預設，ClickOnce 會在您的使用者安裝方案的資料夾中尋找更新。  
+     If you don't know the location yet, don't enter anything into this field. By default, ClickOnce looks for updates in the folder from which your users install the solution.  
   
-6.  選擇 \[**必要條件**\] 按鈕。  
+6.  Choose the **Prerequisites** button.  
   
-7.  在 \[**必要條件**\] 對話方塊中，確定已選取 \[**建立安裝程式以安裝必要條件元件**\] 核取方塊。  
+7.  In the **Prerequisites** dialog box, ensure that the **Create setup program to install prerequisite components** check box is selected.  
   
-8.  在 \[**選擇要安裝的必要條件**\] 清單中，選取 \[**Windows Installer 4.5**\] 和適當 .NET Framework 套件的核取方塊。  
+8.  In the **Choose which prerequisites to install** list, select the check boxes for **Windows Installer 4.5** and the appropriate .NET Framework package.  
   
-     例如，如果您的方案以 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 為目標，請選取 \[**Windows Installer 4.5**\] 和 \[**Microsoft .NET Framework 4.5 Full**\] 的核取方塊。  
+     For example, if your solution targets the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], select the check boxes for **Windows Installer 4.5** and **Microsoft .NET Framework 4.5 Full**.  
   
-9. 如果您的方案以 .NET Framework 4.5 為目標，請選取 \[**Visual Studio 2010 Tools for Office Runtime**\] 核取方塊。  
-  
-    > [!NOTE]  
-    >  根據預設，這個核取方塊不會出現。  若要顯示這個核取方塊，您必須建立啟動載入器套件。  請參閱[使用 Visual Studio 2012 建立適用於 Office 2013 VSTO 增益集的啟動載入器套件](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx)。  
-  
-10. 在 \[**指定必要條件的安裝位置**\] 底下，選擇出現的其中一個選項，然後選擇 \[**確定**\] 按鈕。  
-  
-     下表會說明每個選項。  
-  
-    |選項|描述|  
-    |--------|--------|  
-    |**從元件廠商的網站下載必要條件**|系統會提示使用者下載並安裝廠商提供的這些必要條件。|  
-    |**從應用程式的相同位置下載必要條件**|必要軟體會隨方案安裝。  如果您選擇這個選項，Visual Studio 會自動將所有必要條件套件複製到發行位置。  必要條件套件必須放在開發電腦上，這個選項才能正常運作。|  
-    |**從下列位置下載必要條件**|Visual Studio 會將所有必要條件套件複製到您指定的位置，並且隨方案安裝這些套件。|  
-  
-     請參閱 [必要條件對話方塊](../ide/reference/prerequisites-dialog-box.md)。  
-  
-11. 選擇 \[更新\] 按鈕指定每位使用者之 VSTO 增益集或自訂檢查更新的頻率，然後選擇 \[確定\] 按鈕。  
+9. If your solution targets the .NET Framework 4.5, also select the **Visual Studio 2010 Tools for Office Runtime** check box.  
   
     > [!NOTE]  
-    >  如果您要使用 CD 或卸除式磁碟機進行部署，請選擇 \[**永遠不檢查更新**\] 選項按鈕。  
+    >  By default, this check box doesn't appear. To show this check box, you must create a Bootstrapper package. See [Creating a Bootstrapper package for an Office 2013 VSTO Add-in with Visual Studio 2012](http://blogs.msdn.com/b/vsto/archive/2012/12/21/creating-a-bootstrapper-package-for-an-office-2013-vsto-add-in-with-visual-studio-2012.aspx).  
   
-     如需如何發行更新的詳細資訊，請參閱[發行更新](#Update)。  
+10. Under **Specify the install location for prerequisites**, choose one of the options that appear, and then choose the **OK** button.  
   
-12. 選擇 \[**選項**\] 按鈕，檢閱 \[**選項**\] 對話方塊中的選項，然後選擇 \[**確定**\] 按鈕。  
+     The following table describes each option.  
   
-13. 選擇 \[**立即發行**\] 按鈕。  
+    |Option|Description|  
+    |------------|-----------------|  
+    |**Download prerequisites from the component vendor's web site**|The user is prompted to download and install these prerequisites from the vendor.|  
+    |**Download prerequisites from the same location as my application**|The prerequisite software is installed with the solution. If you choose this option, Visual Studio copies all of the prerequisite packages to the publish location for you. For this option to work, the prerequisite packages must be on the development computer.|  
+    |**Download prerequisites from the following location**|Visual Studio copies all of the prerequisite packages to the location that you specify and installs them with the solution.|  
   
-     Visual Studio 會將下列資料夾和檔案加入至您在本程序前段指定的發行資料夾。  
+     See [Prerequisites Dialog Box](/visualstudio/ide/reference/prerequisites-dialog-box).  
   
-    -   \[**Application Files**\] 資料夾。  
-  
-    -   安裝程式。  
-  
-    -   部署資訊清單，會指向最新版本的部署資訊清單。  
-  
-     \[**Application Files**\] 資料夾包含您發行之每個版本的子資料夾。  每個版本專屬子資料夾都包含下列檔案。  
-  
-    -   應用程式資訊清單。  
-  
-    -   部署資訊清單。  
-  
-    -   自訂組件。  
-  
-     下圖顯示 Outlook VSTO 增益集的發行資料夾結構。  
-  
-     ![發行資料夾結構](~/vsto/media/publishfolderstructure.png "發行資料夾結構")  
+11. Choose the **Updates** button, specify how often you want each end user's VSTO Add-in or customization to check for updates, and then choose the **OK** button.  
   
     > [!NOTE]  
-    >  ClickOnce 會將 .deploy 副檔名附加至組件，如此受保護的網際網路資訊服務 \(IIS\) 安裝就不會因為不安全的副檔名而封鎖檔案。  當使用者安裝方案時，ClickOnce 會移除 .deploy 副檔名。  
+    >  If you're deploying by using a CD or a removable drive, choose the **Never check for updates** option button.  
   
-14. 將方案檔複製到您在本程序前段指定的安裝位置。  
+     For information about how to publish an update, see [Publish an update](#Update).  
   
-##  <a name="Trust"></a> 決定您想要將信任授與方案的方式  
- 在使用者電腦上執行方案之前，您必須先授與信任，或是使用者必須在安裝方案時回應信任提示。  若要對方案授與信任，請使用確認為知名且受信任之發行者的憑證來簽署資訊清單。  請參閱[信任方案透過簽署應用程式和部署資訊清單](../vsto/granting-trust-to-office-solutions.md#Signing)。  
+12. Choose the **Options** button, review the options in the **Options** dialog box, and then choose the **OK** button.  
   
- 如果您要部署文件層級自訂，而且想要將文件放置到使用者的電腦上，或是在 SharePoint 網站上提供文件，請確定 Office 信任文件的位置。  請參閱[授與信任給文件](../vsto/granting-trust-to-documents.md)。  
+13. Choose the **Publish Now** button.  
   
-##  <a name="Helping"></a> 協助使用者安裝方案  
- 使用者能夠安裝方案的方式包括：執行安裝程式、開啟部署資訊清單，或是在文件層級自訂的情況下直接開啟文件。  最理想的做法是使用者應使用安裝程式安裝您的方案。  另外兩種方法都無法保證能夠安裝必要軟體。  如果使用者想要從安裝位置開啟文件，則必須將文件加入至 Office 應用程式的 \[信任中心\] 中信任的位置清單。  
+     Visual Studio adds the following folders and files to the publishing folder that you specified earlier in this procedure.  
   
-### 開啟文件層級自訂的文件  
- 使用者可以直接從安裝位置開啟文件層級自訂的文件，或是將文件複製到其本機電腦，然後開啟複本。  
+    -   The **Application Files** folder.  
   
- 最理想的做法是使用者應該在其電腦上開啟文件的複本，如此就不會有多位使用者嘗試同時開啟相同的複本。  若要強制執行這種做法，您可以設定安裝程式將文件複製到使用者電腦。  請參閱[將方案的文件放置到使用者的電腦上 (僅適用於文件層級自訂)](#Put)。  
+    -   The setup program.  
   
-### 藉由從 IIS 網站開啟部署資訊清單的方式安裝方案  
- 使用者可以從 Web 開啟部署資訊清單，藉此安裝 Office 方案。  不過，受保護的網際網路資訊服務 \(IIS\) 安裝將會封鎖副檔名為 .vsto 的檔案。  您必須先在 IIS 中定義 MIME 類型，才能使用 IIS 部署 Office 方案。  
+    -   A deployment manifest that points to the deployment manifest of the most recent version.  
   
-##### 若要將 .vsto MIME 類型加入至 IIS 6.0  
+     The **Application Files** folder contains a subfolder for each version that you publish. Each version-specific subfolder contains the following files.  
   
-1.  在執行 IIS 6.0 的伺服器上，選擇 \[**開始**\]、\[**所有程式**\]、\[**系統管理工具**\]、\[**網際網路資訊服務 \(IIS\) 管理員**\]。  
+    -   An application manifest.  
   
-2.  選擇電腦名稱、\[**網站**\] 資料夾或要設定的網站。  
+    -   A deployment manifest.  
   
-3.  在功能表列上，選擇 \[**動作**\]、\[**屬性**\]。  
+    -   Customization assemblies.  
   
-4.  在 \[**HTTP 標頭**\] 索引標籤上，選擇 \[**MIME 類型**\] 按鈕。  
+     The following illustration shows the structure of the publish folder for an Outlook VSTO Add-in.  
   
-5.  在 \[**MIME 類型**\] 視窗中，選擇 \[**新增**\] 按鈕。  
-  
-6.  在 \[**MIME 類型**\] 視窗中，輸入 **.vsto** 做為副檔名，並輸入 **application\/x\-ms\-vsto** 做為 MIME 類型，然後套用新的設定。  
+     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
   
     > [!NOTE]  
-    >  您必須重新啟動 World Wide Web Publishing 服務，或等待背景工作處理序回收，變更才會生效。  然後您必須清除瀏覽器的磁碟快取，並嘗試再次開啟 .vsto 檔案。  
+    >  ClickOnce appends the .deploy extension to assemblies so that a secured installation of Internet Information Services (IIS) won't block the files because of an unsafe extension. When the user installs the solution, ClickOnce removes the .deploy extension.  
   
-##### 若要將 .vsto MIME 類型加入至 IIS 7.0  
+14. Copy the solution files to the installation location that you specified earlier in this procedure.  
   
-1.  在執行 IIS 7.0 的伺服器上，選擇 \[**開始**\]、\[**所有程式**\]、\[**附屬應用程式**\]。  
+##  <a name="Trust"></a> Decide how you want to grant trust to the solution  
+ Before a solution can run on user computers, either you must grant trust or users must respond to a trust prompt when they install the solution. To grant trust to the solution, sign the manifests by using a certificate that identifies a known and trusted publisher. See [Trusting the Solution by Signing the Application and Deployment Manifests](../vsto/granting-trust-to-office-solutions.md#Signing).  
   
-2.  開啟 \[**命令提示字元**\] 的捷徑功能表，然後選擇 \[**以系統管理員身分執行**\]。  
+ If you're deploying a document-level customization and you want to put the document into a folder on the user's computer or make the document available on a SharePoint site, ensure that Office trusts the location of the document. See [Granting Trust to Documents](../vsto/granting-trust-to-documents.md).  
   
-3.  在 \[**開啟**\] 方塊中，輸入下列路徑，然後選擇 \[**確定**\] 按鈕。  
+##  <a name="Helping"></a> Help users install the solution  
+ Users can install the solution by running the setup program, opening the deployment manifest, or in the case of a document-level customization, opening the document directly. As a best practice, users should install your solution by using the setup program. The other two approaches don't ensure that the prerequisite software is installed. If users want to open the document from the installation location, they must add it to the list of trusted locations in the Trust Center of the Office application.  
+  
+### <a name="opening-the-document-of-a-document-level-customization"></a>Opening the document of a document-level customization  
+ Users can open the document of a document-level customization directly from the installation location or by copying the document to their local computer and then opening the copy.  
+  
+ As a best practice, users should open a copy of the document on their computers so that multiple users won't try to open the same copy at the same time. To enforce this practice, you can configure your setup program to copy the document to user computers. See [Put the document of a solution onto the end user's computer (document-level customizations only)](#Put).  
+  
+### <a name="installing-the-solution-by-opening-the-deployment-manifest-from-an-iis-website"></a>Installing the solution by opening the deployment manifest from an IIS website  
+ Users can install an Office solution by opening the deployment manifest from the web. However, a secured installation of Internet Information Services (IIS) will block files that have the .vsto extension. The MIME type must be defined in IIS before you can deploy an Office solution by using IIS.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-60"></a>To add the .vsto MIME type to IIS 6.0  
+  
+1.  On the server that's running IIS 6.0, choose **Start**, **All Programs**, **Administrative Tools**,  **Internet Information Services (IIS) Manager**.  
+  
+2.  Choose the computer name, the **Web Sites** folder, or the web site that you're configuring.  
+  
+3.  On the menu bar, choose **Action**, **Properties**.  
+  
+4.  On the **HTTP Headers** tab, choose the **MIME Types** button.  
+  
+5.  In the **MIME Types** window, choose the **New** button.  
+  
+6.  In the **MIME Type** window, enter **.vsto** as the extension, enter **application/x-ms-vsto** as the MIME type, and then apply the new settings.  
+  
+    > [!NOTE]  
+    >  For the changes to take effect, you must restart the World Wide Web Publishing Service or wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
+  
+##### <a name="to-add-the-vsto-mime-type-to-iis-70"></a>To add the .vsto MIME type to IIS 7.0  
+  
+1.  On the server that's running IIS 7.0, choose **Start**, **All Programs**, **Accessories**.  
+  
+2.  Open the shortcut menu for **Command Prompt**, and then choose  **Run as administrator.**  
+  
+3.  In the **Open** box, enter the following path, and then choose the **OK** button.  
   
     ```  
     %windir%\system32\inetsrv   
     ```  
   
-4.  輸入下列命令，然後套用新的設定。  
+4.  Enter the following command, and then apply the new settings.  
   
     ```  
     set config /section:staticContent /+[fileExtension='.vsto',mimeType='application/x-ms-vsto']  
     ```  
   
     > [!NOTE]  
-    >  您必須重新啟動 World Wide Web Publishing 服務，或是等待背景工作處理序回收，變更才會生效。  然後您必須清除瀏覽器的磁碟快取，並嘗試再次開啟 .vsto 檔案。  
+    >  For the changes to take effect, you must restart the World Wide Web Publishing Service, or you must wait for the worker process to recycle. You must then flush the browser's disk cache and then try to open the .vsto file again.  
   
-##  <a name="Put"></a> 將方案的文件放置到使用者的電腦上 \(僅適用於文件層級自訂\)  
- 您可以藉由建立部署後動作，將方案文件複製到使用者的電腦上。  如此一來，使用者安裝方案之後，就不必手動將文件從安裝位置複製到電腦上。  您必須建立定義部署後動作的類別、建置及發行方案、修改應用程式資訊清單，並重新簽署應用程式和部署資訊清單。  
+##  <a name="Put"></a> Put the document of a solution onto the end user's computer (document-level customizations only)  
+ You can copy the document of your solution onto the end user's computer for them by creating a post-deployment action. That way, the user doesn't have to manually copy the document from the installation location to their computer after they install your solution. You'll have to create a class that defines the post-deployment action, build and publish the solution, modify the application manifest, and re-sign the application and deployment manifest.  
   
- 下列程序會假設您的專案名稱為 **ExcelWorkbook**，而且您會將方案發行至電腦的 **C:\\publish** 目錄。  
+ The following procedures assume that your project name is **ExcelWorkbook** and that you publish the solution to the **C:\publish** directory on your computer.  
   
-### 建立定義部署後動作的類別  
+### <a name="create-a-class-that-defines-the-post-deployment-action"></a>Create a class that defines the post-deployment action  
   
-1.  在功能表列上選擇 \[**檔案**\]、\[**加入**\]、\[**新增專案**\]。  
+1.  On the menu bar, choose **File**, **Add**, **New Project**.  
   
-2.  在 \[**加入新的專案**\] 對話方塊的 \[**已安裝的範本**\] 窗格中，選擇 \[**Windows**\] 資料夾。  
+2.  In the **Add New Project** dialog box, in the **Installed Templates** pane, choose the **Windows** folder.  
   
-3.  在 \[**範本**\] 窗格中，選擇 \[**類別庫**\] 範本。  
+3.  In the **Templates** pane, choose the **Class Library** template.  
   
-4.  在 \[**名稱**\] 欄位中輸入 **FileCopyPDA**，然後選擇 \[**確定**\] 按鈕。  
+4.  In the **Name** field, enter **FileCopyPDA**, and then choose the **OK** button.  
   
-5.  在 \[**方案總管**\] 中，選擇 \[**FileCopyPDA**\] 專案。  
+5.  In **Solution Explorer**, choose the **FileCopyPDA** project.  
   
-6.  在功能表列上，選擇 \[**專案**\]、\[**加入參考**\]。  
+6.  On the menu bar, choose **Project**, **Add Reference**.  
   
-7.  在 \[**.NET**\] 索引標籤上，加入 Microsoft.VisualStudio.Tools.Applications.Runtime 和 Microsoft.VisualStudio.Tools.Applications.ServerDocument 的參考。  
+7.  On the **.NET** tab, add references to Microsoft.VisualStudio.Tools.Applications.Runtime and Microsoft.VisualStudio.Tools.Applications.ServerDocument.  
   
-8.  將類別重新命名為 `FileCopyPDA`，然後將檔案的內容取代為程式碼。  這個程式碼會執行下列工作：  
+8.  Rename the class to `FileCopyPDA`, and then replace the contents of the file with the code. This code performs the following tasks:  
   
-    -   將文件複製到使用者的桌面。  
+    -   Copies the document to the user's desktop.  
   
-    -   針對部署資訊清單，將 \_AssemblyLocation 屬性從相對路徑變更為完整路徑。  
+    -   Changes the _AssemblyLocation property from a relative path to a fully qualified path for the deployment manifest.  
   
-    -   如果使用者解除安裝方案，則將檔案刪除。  
+    -   Deletes the file if the user uninstalls the solution.  
   
-     [!code-csharp[Trin_ExcelWorkbookPDA#7](../snippets/csharp/VS_Snippets_OfficeSP/trin_excelworkbookpda/cs/filecopypda/class1.cs#7)]
-     [!code-vb[Trin_ExcelWorkbookPDA#7](../snippets/visualbasic/VS_Snippets_OfficeSP/trin_excelworkbookpda/vb/filecopypda/class1.vb#7)]  
+     [!code-vb[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/VisualBasic/trin_excelworkbookpda/filecopypda/class1.vb#7)] [!code-csharp[Trin_ExcelWorkbookPDA#7](../vsto/codesnippet/CSharp/trin_excelworkbookpda/filecopypda/class1.cs#7)]  
   
-### 建置及發行方案  
+### <a name="build-and-publish-the-solution"></a>Build and publish the solution  
   
-1.  在 \[**方案總管**\] 中，開啟 \[**FileCopyPDA**\] 專案的捷徑功能表，然後選擇 \[**建置**\]。  
+1.  In **Solution Explorer**, open the shortcut menu for the **FileCopyPDA** project, and then choose **Build**.  
   
-2.  開啟 \[**ExcelWorkbook**\] 專案的捷徑功能表，然後選擇 \[**建置**\]。  
+2.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Build**.  
   
-3.  開啟 \[**ExcelWorkbook**\] 專案的捷徑功能表，然後選擇 \[**加入參考**\]。  
+3.  Open the shortcut menu for the **ExcelWorkbook** project, and then choose **Add Reference**.  
   
-4.  在 \[**加入參考**\] 對話方塊中，依序選擇 \[**專案**\] 索引標籤、\[**FileCopyPDA**\] 和 \[**確定**\] 按鈕。  
+4.  In the **Add Reference** dialog box, choose the **Projects** tab, choose **FileCopyPDA**, and then choose the **OK** button.  
   
-5.  在 \[**方案總管**\] 中，選擇 \[**ExcelWorkbook**\] 專案。  
+5.  In **Solution Explorer**, choose the **ExcelWorkbook** project.  
   
-6.  在功能表列上，選擇 \[**專案**\]、\[**新增資料夾**\]。  
+6.  On menu bar, choose **Project**, **New Folder**.  
   
-7.  輸入 Data，然後選擇 Enter 鍵。  
+7.  Enter **Data**, and then choose the Enter key.  
   
-8.  在 \[**方案總管**\] 中，選擇 \[**Data**\] 資料夾。  
+8.  In **Solution Explorer**, choose the **Data** folder.  
   
-9. 在功能表列中，選擇 \[**專案**\]、\[**加入現有項目**\]。  
+9. On the menu bar, choose **Project**, **Add Existing Item**.  
   
-10. 在 \[**加入現有項目**\] 對話方塊中，瀏覽至 \[**ExcelWorkbook**\] 專案的輸出目錄，選擇 \[**ExcelWorkbook.xlsx**\] 檔案，然後選擇 \[**加入**\] 按鈕。  
+10. In the **Add Existing Item** dialog box, browse to the output directory for the **ExcelWorkbook** project, choose the **ExcelWorkbook.xlsx** file, and then choose the **Add** button.  
   
-11. 在 \[**方案總管**\] 中，選擇 \[**ExcelWorkbook.xlsx**\] 檔案。  
+11. In **Solution Explorer** choose the **ExcelWorkbook.xlsx** file.  
   
-12. 在 \[**屬性**\] 視窗中，將 \[**建置動作**\] 屬性變更為 \[**內容**\]，並且將 \[**複製到輸出目錄**\] 屬性設定為 \[**有更新時才複製**\]。  
+12. In the **Properties** window, change the **Build Action** property to **Content** and the **Copy to Output Directory** property to **Copy if newer**.  
   
-     完成這些步驟時，您的專案看起來會像下圖一樣。  
+     When you've completed these steps, your project will resemble the following illustration.  
   
-     ![部署後動作的專案結構。](../vsto/media/vsto-postdeployment.png "部署後動作的專案結構。")  
+     ![Project structure of the post deployment action.](../vsto/media/vsto-postdeployment.png "Project structure of the post deployment action.")  
   
-13. 發行 \[**ExcelWorkbook**\] 專案。  
+13. Publish the **ExcelWorkbook** project.  
   
-### 修改應用程式資訊清單  
+### <a name="modify-the-application-manifest"></a>Modify the application manifest  
   
-1.  使用 \[**檔案總管**\] 開啟 **c:\\publish** 目錄。  
+1.  Open the **c:\publish** directory by using **File Explorer**.  
   
-2.  開啟 \[Application Files\] 資料夾，然後開啟對應最新發行之方案版本的資料夾。  
+2.  Open the **Application Files** folder, and then open the folder that corresponds to the most recent published version of your solution.  
   
-3.  在像是 \[記事本\] 這類文字編輯器中開啟 **ExcelWorkbook.dll.manifest** 檔。  
+3.  Open the **ExcelWorkbook.dll.manifest** file in a text editor such as Notepad.  
   
-4.  在 `</vstav3:update>` 項目後面加上下列程式碼。  針對 `<vstav3:entryPoint>` 項目的類別屬性，使用下列語法：*NamespaceName.ClassName*。  在下列範例中，命名空間和類別名稱相同，因此產生的進入點名稱是 `FileCopyPDA.FileCopyPDA`。  
+4.  After the `</vstav3:update>` element, add following code. For the class attribute of the `<vstav3:entryPoint>` element, use the following syntax: *NamespaceName.ClassName*. In the following example, the namespace and class names are the same, so the resulting entry point name is `FileCopyPDA.FileCopyPDA`.  
   
     ```  
     <vstav3:postActions>  
@@ -280,21 +284,25 @@ caps.handback.revision: 58
     </vstav3:postActions>  
     ```  
   
-### 重新簽署應用程式和部署資訊清單  
+### <a name="re-sign-the-application-and-deployment-manifests"></a>Re-sign the application and deployment manifests  
   
-1.  在 **%USERPROFILE%\\Documents\\Visual Studio 2013\\Projects\\ExcelWorkbook\\ExcelWorkbook** 資料夾中複製 **ExcelWorkbook\_TemporaryKey.pfx** 憑證檔案，然後將它貼入 *PublishFolder* **\\Application Files\\ExcelWorkbook***MostRecentPublishedVersion* 資料夾。  
+1.  In the **%USERPROFILE%\Documents\Visual Studio 2013\Projects\ExcelWorkbook\ExcelWorkbook** folder, copy the **ExcelWorkbook_TemporaryKey.pfx** certificate file, and then paste it into the *PublishFolder* **\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder.  
   
-2.  開啟 Visual Studio 命令提示字元，然後將目錄變更為 **c:\\publish\\Application Files\\ExcelWorkbook***MostRecentPublishedVersion* 資料夾 \(例如 **c:\\publish\\Application Files\\ExcelWorkbook\_1\_0\_0\_4**\)。  
+2.  
   
-3.  執行下列命令簽署修改後的應用程式資訊清單：  
+3.  Open the Visual Studio command prompt, and then change directories to the **c:\publish\Application Files\ExcelWorkbook***MostRecentPublishedVersion* folder (for example, **c:\publish\Application Files\ExcelWorkbook_1_0_0_4**).  
+  
+4.  Sign the modified application manifest by running the following command:  
   
     ```  
     mage -sign ExcelWorkbook.dll.manifest -certfile ExcelWorkbook_TemporaryKey.pfx  
     ```  
   
-     「ExcelWorkbook.dll.manifest 簽署成功」訊息隨即顯示。  
+     The message "ExcelWorkbook.dll.manifest successfully signed" appears.  
   
-4.  切換到 **c:\\publish** 資料夾，然後執行下列命令更新及簽署部署資訊清單：  
+5.  
+  
+6.  Change to the **c:\publish** folder, and then update and sign the deployment manifest by running the following command:  
   
     ```  
     mage -update ExcelWorkbook.vsto -appmanifest "Application Files\Ex  
@@ -302,168 +310,168 @@ caps.handback.revision: 58
     ```  
   
     > [!NOTE]  
-    >  在上面的範例中，將 MostRecentVersionNumber 取代為最新發行之方案版本的版本號碼 \(例如 **1\_0\_0\_4**\)。  
+    >  In the previous example, replace MostRecentVersionNumber with the version number of the most recently published version of your solution (for example, **1_0_0_4**).  
   
-     「ExcelWorkbook.vsto 簽署成功」訊息隨即顯示。  
+     The message "ExcelWorkbook.vsto successfully signed" appears.  
   
-5.  將 ExcelWorkbook.vsto 檔案複製到 **c:\\publish\\Application Files\\ExcelWorkbook***MostRecentVersionNumber* 目錄。  
+7.  Copy the ExcelWorkbook.vsto file to the **c:\publish\Application Files\ExcelWorkbook***MostRecentVersionNumber* directory.  
   
-##  <a name="SharePoint"></a> 將方案的文件放置到執行 SharePoint 的伺服器上 \(僅適用於文件層級自訂\)  
- 您可以使用 SharePoint 將文件層級自訂發行至使用者。  當使用者前往 SharePoint 網站並開啟文件時，執行階段會自動將共用網路資料夾中的方案安裝到使用者的本機電腦。  方案安裝到本機上之後，即使文件是複製到其他地方 \(例如桌面\)，自訂仍舊會執行。  
+##  <a name="SharePoint"></a> Put the document of a solution onto a server that's running SharePoint (document-level customizations only)  
+ You can publish your document-level customization to end users by using SharePoint. When users go to the SharePoint site and open the document, the runtime automatically installs the solution from the shared network folder to the user's local computer. After the solution is installed locally, the customization will still function even if the document is copied elsewhere, such as the desktop.  
   
-#### 若要將文件放置到執行 SharePoint 的伺服器上  
+#### <a name="to-put-the-document-on-a-server-thats-running-sharepoint"></a>To put the document on a server that's running SharePoint  
   
-1.  將方案文件加入至 SharePoint 網站上的文件庫。  
+1.  Add the solution document to a document library on a SharePoint site.  
   
-2.  執行下列其中一種方法的步驟：  
+2.  Perform the steps for one of the following approaches:  
   
-    -   使用 Office 組態工具將執行 SharePoint 的伺服器加入至所有使用者電腦上 Word 或 Excel 中的 \[信任中心\]。  
+    -   Use the Office Configuration Tool to add the server that's running SharePoint to the Trust Center in Word or Excel on all user computers.  
   
-         請參閱 [Office 2010 中的安全性原則和設定](http://go.microsoft.com/fwlink/?LinkId=99227)。  
+         See [Security policies and settings in Office 2010](http://go.microsoft.com/fwlink/?LinkId=99227).  
   
-    -   確定每位使用者都執行下列步驟。  
+    -   Ensure that each user performs the following steps.  
   
-        1.  在本機電腦上開啟 Word 或 Excel，選擇 \[**檔案**\] 索引標籤，然後選擇 \[**選項**\] 按鈕。  
+        1.  On the local computer, open Word or Excel, choose the **File** tab, and then choose the **Options** button.  
   
-        2.  在 \[**信任中心**\] 對話方塊中，選擇 \[**信任位置**\] 按鈕。  
+        2.  In the **Trust Center** dialog box, choose the **Trusted Locations** button.  
   
-        3.  選取 \[**允許我的網路上之信任位置 \(不建議使用\)**\] 核取方塊，然後選擇 \[**新增位置**\] 按鈕。  
+        3.  Select the **Allow Trusted Locations on my network (not recommended)** check box, and then choose the **Add new location** button.  
   
-        4.  在 \[路徑\] 方塊中，輸入包含您上傳之文件的 SharePoint 文件庫 URL \(例如 *http:\/\/SharePointServerName\/TeamName\/ProjectName\/DocumentLibraryName*\)。  
+        4.  In the **Path** box, enter the URL of the SharePoint document library that contains the document that you uploaded (for example, *http://SharePointServerName/TeamName/ProjectName/DocumentLibraryName*).  
   
-             請勿加入預設網頁的名稱，例如 default.aspx 或 AllItems.aspx。  
+             Don't add the name of the default Web page, such as default.aspx or AllItems.aspx.  
   
-        5.  選取 \[**同時信任此位置的子資料夾**\] 核取方塊，然後選擇 \[**確定**\] 按鈕。  
+        5.  Select the **Subfolders of this location are also trusted** check box, and then choose the **OK** button.  
   
-             當使用者從 SharePoint 網站開啟文件時，文件隨即開啟，而且會安裝自訂。  使用者可以將文件複製到桌面。  自訂仍舊會執行，因為文件中的屬性是指向文件的網路位置。  
+             When users open the document from the SharePoint site, the document opens, and the customization is installed. Users can copy the document to their desktop. The customization will still run because properties in the document point to the network location of the document.  
   
-##  <a name="Custom"></a> 建立自訂安裝程式  
- 您可以為 Office 方案建立自訂安裝程式，而不使用發行方案時自動建立的安裝程式。  例如，您可以使用登入指令檔開始進行安裝，或使用批次檔安裝方案而無須與使用者互動。  使用者電腦上已安裝必要條件時，下列情境可獲得最佳效果。  
+##  <a name="Custom"></a> Create a custom installer  
+ You can create a custom installer for your Office solution, instead of using the setup program that's created for you when you publish the solution. For example, you could use a logon script to start the installation, or you could use a batch file to install the solution without user interaction. These scenarios work best if the prerequisites are already installed on end-user computers.  
   
- 在自訂安裝過程中，呼叫 Office 方案安裝程式工具 \(VSTOInstaller.exe\)，這個工具的預設安裝位置如下：  
+ As part of your custom installation process, call the installer tool for Office solutions (VSTOInstaller.exe), which is installed in the following location by default:  
   
- %commonprogramfiles%\\microsoft shared\\VSTO\\10.0\\VSTOInstaller.exe  
+ %commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe  
   
- 如果工具不在該位置，您可以使用 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\VSTO Runtime Setup\\v4\\InstallerPath 或 HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\VSTO Runtime Setup\\v4\\InstallerPath 登錄機碼來尋找該工具的路徑。  
+ If the tool isn't in that location, you can use the HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4\InstallerPath registry key to find the path to that tool.  
   
- VSTOinstaller.exe 可搭配下列參數使用。  
+ You can use the following parameters with VSTOinstaller.exe.  
   
-|參數|定義|  
-|--------|--------|  
-|\/Install 或 \/I|安裝方案。  這個選項後面必須接著部署資訊清單的路徑。  您可以指定本機電腦上的路徑，也就是通用命名慣例 \(UNC\) 檔案共用。  您可以指定本機路徑 \(*C:\\FolderName\\PublishFolder*\)、相對路徑 \(*Publish\\*\) 或完整位置 \(*\\\\ServerName\\FolderName* 或 http:\/\/*ServerName\/FolderName*\)。|  
-|\/Uninstall 或 \/U|解除安裝方案。  這個選項後面必須接著部署資訊清單的路徑。  您可以指定位於本機電腦或 UNC 檔案共用上的路徑。  您可以指定本機路徑 \(*c:\\FolderName\\PublishFolder*\)、相對路徑 \(*Publish\\*\) 或完整位置 \(*\\\\ServerName\\FolderName* 或 http:\/\/*ServerName\/FolderName*\)。|  
-|\/Silent 或 \/S|在不提示使用者輸入或顯示任何訊息的情況下，進行安裝或解除安裝。  如果需要信任提示，則不會安裝或更新自訂。|  
-|\/Help 或 \/?|顯示 \[說明\] 資訊。|  
+|Parameter|Definition|  
+|---------------|----------------|  
+|/Install or /I|Install the solution. You must follow this option with the path of a deployment manifest. You can specify a path on the local computer, a universal naming convention (UNC) file share. You can specify a local path (*C:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
+|/Uninstall or /U|Uninstall the solution. You must follow this option with the path of a deployment manifest. You can specify a path can be on the local computer, a UNC file share. You can specify a local path (*c:\FolderName\PublishFolder*), a relative path (*Publish\\*), or a fully qualified location (*\\\ServerName\FolderName* or http://*ServerName/FolderName*).|  
+|/Silent or /S|Install or uninstall without prompting the user for input or displaying any messages. If a trust prompt is required, the customization isn't installed or updated.|  
+|/Help or /?|Display the Help information.|  
   
- 當您執行 VSTOinstaller.exe 時，可能會出現下列錯誤碼。  
+ When you run VSTOinstaller.exe, the following error codes might appear.  
   
-|錯誤碼|定義|  
-|---------|--------|  
-|0|方案已成功安裝或解除安裝，或是出現 VSTOInstaller \[說明\]。|  
-|\-100|一個或多個命令列選項無效，或是設定超過一次。  如需詳細資訊，請輸入"vstoinstaller \/?"，或參閱[逐步解說：為 ClickOnce Office 方案建立自訂安裝程式](http://msdn.microsoft.com/zh-tw/3e5887ed-155f-485d-b8f6-3c02c074085e)。|  
-|\-101|一個或多個命令列選項無效。  如需詳細資訊，請輸入 "vstoinstaller \/?"。|  
-|\-200|部署資訊清單 URI 無效。  如需詳細資訊，請輸入 "vstoinstaller \/?"。|  
-|\-201|部署資訊清單無效，無法安裝方案。  請參閱 [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。|  
-|\-202|應用程式資訊清單的 Visual Studio Tools for Office 區段無效，無法安裝方案。  請參閱 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。|  
-|\-203|發生下載錯誤，無法安裝方案。  請檢查部署資訊清單的 URI 或網路檔案的位置，然後再試一次。|  
-|\-300|發生安全性例外狀況，無法安裝方案。  請參閱 [保護 Office 方案](../vsto/securing-office-solutions.md)。|  
-|\-400|無法安裝方案。|  
-|\-401|無法解除安裝方案。|  
-|\-500|作業已取消，因為無法安裝或解除安裝方案，或是無法下載部署資訊清單。|  
+|Error Code|Definition|  
+|----------------|----------------|  
+|0|The solution was successfully installed or uninstalled, or the VSTOInstaller Help appeared.|  
+|-100|One or more command-line options isn't valid or was set more than once. For more information, enter "vstoinstaller /?" or see [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e).|  
+|-101|One or more command-line options isn't valid. For more information, enter "vstoinstaller /?".|  
+|-200|The deployment manifest URI isn't valid. For more information, enter "vstoinstaller /?".|  
+|-201|The solution couldn't be installed because the deployment manifest isn't valid. See [Deployment Manifests for Office Solutions](../vsto/deployment-manifests-for-office-solutions.md).|  
+|-202|The solution couldn't be installed because the Visual Studio Tools for Office section of the application manifest isn't valid. See [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md).|  
+|-203|The solution couldn't be installed because a download error occurred. Check the URI or network file location of the deployment manifest, and then try again.|  
+|-300|The solution couldn't be installed because a security exception occurred. See [Securing Office Solutions](../vsto/securing-office-solutions.md).|  
+|-400|The solution couldn't be installed.|  
+|-401|The solution couldn't be uninstalled.|  
+|-500|The operation has been canceled because the solution couldn't be installed or uninstalled or the deployment manifest couldn't be downloaded.|  
   
-##  <a name="Update"></a> 發行更新  
- 若要更新方案，請使用 \[**專案設計工具**\] 或 \[**發行精靈**\] 再次發行方案，然後將更新的方案複製到安裝位置。  將檔案複製到安裝位置時，務必覆寫先前的檔案。  
+##  <a name="Update"></a> Publish an update  
+ To update a solution, you publish it again by using the **Project Designer** or **Publish Wizard**, and then you copy the updated solution to the installation location. When you copy the files to the installation location, make sure that you overwrite the previous files.  
   
- 下一次方案檢查更新時，就會自動尋找和載入新版本。  
+ The next time that the solution checks for an update, it'll find and load the new version automatically.  
   
-##  <a name="Location"></a> 變更方案的安裝位置  
- 您可以在發行方案之後，加入或變更安裝路徑。  基於下列其中一個或多個原因，您可能會想要變更安裝路徑：  
+##  <a name="Location"></a> Change the installation location of a solution  
+ You can add or change the installation path after a solution is published. You might want to change the installation path for one or more of the following reasons:  
   
--   在知道安裝路徑之前就已編譯安裝程式。  
+-   The setup program was compiled before the installation path was known.  
   
--   方案檔案已複製至不同位置。  
+-   The solution files have been copied to a different location.  
   
--   裝載安裝檔案的伺服器換了名稱或位置。  
+-   The server that hosts the installation files has a new name or location.  
   
- 若要變更方案的安裝路徑，您必須更新安裝程式，然後使用者必須執行安裝程式。  若是文件層級自訂，使用者也必須更新其文件中的屬性，以指向新位置。  
+ To change the installation path of a solution, you must update the setup program, and then users must run it. For document-level customizations, users must also update a property in their document to point to the new location.  
   
 > [!NOTE]  
->  如果您不想要求使用者更新其文件屬性，可以要求使用者從安裝位置取得更新的文件。  
+>  If you don't want to ask users to update their document properties, you can ask users to get the updated document from the installation location.  
   
-#### 若要變更安裝程式中的安裝路徑  
+#### <a name="to-change-the-installation-path-in-the-setup-program"></a>To change the installation path in the setup program  
   
-1.  開啟 \[**命令提示字元**\] 視窗，然後將目錄變更為安裝資料夾。  
+1.  Open a **Command Prompt** window, and then change directories to the installation folder.  
   
-2.  執行安裝程式並且包含 `/url` 參數，這個參數會將新安裝路徑當成字串。  
+2.  Run the setup program, and include the `/url` parameter, which takes the new installation path as a string.  
   
-     下列範例將示範如何將安裝路徑變更為 Fabrikam 網站上的位置，不過您可以將 URL 取代為您要的路徑：  
+     The following example shows how to change the installation path to a location on the Fabrikam website, but you can replace that URL with the path that you want:  
   
     ```  
     setup.exe /url="http://www.fabrikam.com/newlocation"  
     ```  
   
     > [!NOTE]  
-    >  如果出現訊息並指出可執行檔的簽章將失效，則用來簽署方案的憑證將不再有效且發行者為未知。  如此一來，使用者就必須確認可以信任方案的來源，才能進行安裝。  
+    >  If a message appears and state that the signature of the executable will be invalidated, the certificate that was used to sign the solution is no longer valid, and the publisher is unknown. As a result, users will need to confirm that they trust the source of the solution before they can install it.  
   
     > [!NOTE]  
-    >  若要顯示目前的 URL 值，請執行 `setup.exe /url`。  
+    >  To display the current value of the URL, run `setup.exe /url`.  
   
- 若是文件層級自訂，使用者必須開啟文件並更新其 \_AssemblyLocation 屬性。  下列步驟將描述使用者如何執行這項工作。  
+ For document-level customizations, users must open the document and then update its _AssemblyLocation property. The following steps describe how users can perform this task.  
   
-#### 若要更新文件中的 \_AssemblyLocation 屬性  
+#### <a name="to-update-the-assemblylocation-property-in-a-document"></a>To update the _AssemblyLocation property in a document  
   
-1.  在 \[**檔案**\] 索引標籤上，選擇 \[**資訊**\]，如下圖所示。  
+1.  On the **File** tab, choose **Info**, which the following illustration shows.  
   
-     ![Excel 中的 [資訊] 索引標籤](../vsto/media/vsto-infotab.png "Excel 中的 [資訊] 索引標籤")  
+     ![Info tab in Excel](../vsto/media/vsto-infotab.png "Info tab in Excel")  
   
-2.  在 \[**屬性**\] 清單中，選擇 \[**進階屬性**\]，如下圖所示。  
+2.  In the **Properties** list, choose **Advanced Properties**, which the following illustration shows.  
   
-     ![Excel 中的 [進階屬性]。](../vsto/media/vsto-advanceddocumentproperties.png "Excel 中的 [進階屬性]。")  
+     ![Advanced Properties in Excel.](../vsto/media/vsto-advanceddocumentproperties.png "Advanced Properties in Excel.")  
   
-3.  在 \[**屬性**\] 清單中的 \[**自訂**\] 索引標籤上，選擇 \[\_AssemblyLocation\]，如下圖所示。  
+3.  On the **Custom** tab in the **Properties** list, choose _AssemblyLocation, as the following illustration shows.  
   
-     ![AssemblyLocation 屬性。](../vsto/media/vsto-assemblylocationproperty.png "AssemblyLocation 屬性。")  
+     ![The AssemblyLocation property.](../vsto/media/vsto-assemblylocationproperty.png "The AssemblyLocation property.")  
   
-     \[**值**\] 方塊中會包含部署資訊清單識別項。  
+     The **Value** box contains the deployment manifest identifier.  
   
-4.  在識別項前面輸入文件的完整路徑，後面加上一條分隔線，格式為 *Path* |*識別項* \(例如 *File:\/\/ServerName\/FolderName\/FileName |74744e4b\-e4d6\-41eb\-84f7\-ad20346fe2d9*。  
+4.  Before the identifier, enter the fully qualified path of the document, followed by a bar, in the format *Path*|*Identifier* (for example, *File://ServerName/FolderName/FileName|74744e4b-e4d6-41eb-84f7-ad20346fe2d9*.  
   
-     如需格式化此識別項的詳細資訊，請參閱[自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)。  
+     For more information about how to format this identifier, see [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md).  
   
-5.  選擇 \[**確定**\] 按鈕，然後儲存並關閉文件。  
+5.  Choose the **OK** button, and then save and close the document.  
   
-6.  執行不含 \/url 參數的安裝程式，在指定的位置安裝方案。  
+6.  Run the setup program without the /url parameter to install the solution in the specified location.  
   
-##  <a name="Roll"></a> 將方案復原為舊版  
- 當您復原方案時，可以將使用者還原為該方案的舊版。  
+##  <a name="Roll"></a> Roll back a solution to an earlier version  
+ When you roll back a solution, you revert users back to an earlier version of that solution.  
   
-#### 若要復原方案  
+#### <a name="to-roll-back-a-solution"></a>To roll back a solution  
   
-1.  開啟方案的安裝位置。  
+1.  Open the installation location of the solution.  
   
-2.  在最上層發行資料夾中，刪除部署資訊清單 \(.vsto 檔案\)。  
+2.  In the top-level publish folder, delete the deployment manifest (the .vsto file).  
   
-3.  尋找要復原之版本的子資料夾。  
+3.  Find the subfolder for the version to which you want to roll back.  
   
-4.  將部署資訊清單從該資料夾複製至最上層發行資料夾。  
+4.  Copy the deployment manifest from that subfolder to the top-level publish folder.  
   
-     例如，若要將名為 **OutlookAddIn1** 的方案從 1.0.0.1 版本復原為 1.0.0.0 版本，請從 **OutlookAddIn1\_1\_0\_0\_0** 資料夾複製 **OutlookAddIn1.vsto** 檔案。  將檔案貼入最上層發行資料夾中，覆寫已經在該資料夾中的 **OutlookAddIn1\_1\_0\_0\_1** 版本專屬部署資訊清單。  
+     For example, to roll back a solution that's called **OutlookAddIn1** from version 1.0.0.1 to version 1.0.0.0, copy the file **OutlookAddIn1.vsto** from the **OutlookAddIn1_1_0_0_0** folder. Paste the file into the top-level publish folder, overwriting the version-specific deployment manifest for **OutlookAddIn1_1_0_0_1** that was already there.  
   
-     下圖顯示這個範例中的發行資料夾結構。  
+     The following illustration shows the publish folder structure in this example.  
   
-     ![發行資料夾結構](~/vsto/media/publishfolderstructure.png "發行資料夾結構")  
+     ![Publish Folder Structure](../vsto/media/publishfolderstructure.png "Publish Folder Structure")  
   
-     下次使用者開啟應用程式或自訂文件時，就會偵測到部署資訊清單的變更。  舊版 Office 方案便會從 ClickOnce 快取中執行。  
+     The next time that a user opens the application or customized document, the deployment manifest change is detected. The earlier version of the Office solution runs from the ClickOnce cache.  
   
 > [!NOTE]  
->  任何方案都只有前一個版本會儲存為本機資料。  如果復原兩種版本，則不會保留本機資料。  如需本機資料的詳細資訊，請參閱[在 ClickOnce 應用程式中存取本機和遠端資料](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)。  
+>  Local data is saved for only one previous version of a solution. If you roll back two versions, local data isn't retained. For more information about local data, see [Accessing Local and Remote Data in ClickOnce Applications](/visualstudio/deployment/accessing-local-and-remote-data-in-clickonce-applications).  
   
-## 請參閱  
- [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
- [發行 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [HOW TO：使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/zh-tw/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
- [HOW TO：安裝 ClickOnce Office 方案](http://msdn.microsoft.com/zh-tw/14702f48-9161-4190-994c-78211fe18065)   
- [HOW TO：使用 ClickOnce 將文件層級的 Office 方案發行至 SharePoint Server](http://msdn.microsoft.com/zh-tw/2408e809-fb78-42a1-9152-00afa1522e58)   
- [逐步解說：為 ClickOnce Office 方案建立自訂安裝程式](http://msdn.microsoft.com/zh-tw/3e5887ed-155f-485d-b8f6-3c02c074085e)  
+## <a name="see-also"></a>See Also  
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Publishing Office Solutions](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
+ [How to: Publish an Office Solution by Using ClickOnce](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [How to: Install a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/14702f48-9161-4190-994c-78211fe18065)   
+ [How to: Publish a Document-Level Office Solution to a SharePoint Server by Using ClickOnce](http://msdn.microsoft.com/en-us/2408e809-fb78-42a1-9152-00afa1522e58)   
+ [Creating a Custom Installer for a ClickOnce Office Solution](http://msdn.microsoft.com/en-us/3e5887ed-155f-485d-b8f6-3c02c074085e)  
   
   

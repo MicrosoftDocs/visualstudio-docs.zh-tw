@@ -1,71 +1,75 @@
 ---
-title: "如何：快取資料供離線使用或於伺服器上使用"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料 [Visual Studio 中的 Office 程式開發], 快取"
-  - "資料快取 [Visual Studio 中的 Office 程式開發], 離線使用"
-  - "資料快取 [Visual Studio 中的 Office 程式開發], 伺服器使用"
-  - "資料集 [Visual Studio 中的 Office 程式開發], 快取"
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發], 資料"
-  - "離線資料 [Visual Studio 中的 Office 程式開發]"
+title: 'How to: Cache Data for Use Offline or on a Server | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data caching [Office development in Visual Studio], server use
+- Office applications [Office development in Visual Studio], data
+- datasets [Office development in Visual Studio], caching
+- offline data [Office development in Visual Studio]
+- data [Office development in Visual Studio], caching
+- data caching [Office development in Visual Studio], offline use
 ms.assetid: 6246b187-9413-4336-821d-2259b1adec5a
 caps.latest.revision: 49
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 48
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0958c4b94f6d0d1e5121ee3d153cf5a19ddfe42f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：快取資料供離線使用或於伺服器上使用
-  您可以將文件中的資料項目標示為快取，使其可以在離線時使用。  而在文件存放在伺服器上時，這也可以讓其他的程式碼操作文件中的資料。  
+# <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>How to: Cache Data for Use Offline or on a Server
+  You can mark a data item to be cached in the document, so that it is available offline. This also makes it possible for the data in the document to be manipulated by other code when the document is stored on a server.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 您可以在程式碼中宣告資料項目，或是當使用 <xref:System.Data.DataSet> 時，藉由在 \[**屬性**\] 視窗中設定屬性，將資料項目標示為快取。  如果您要快取不是 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 的資料項目，請確認此項目符合在文件中快取的準則。  如需詳細資訊，請參閱[快取資料](../vsto/caching-data.md)。  
+ You can mark a data item to be cached when the data item is declared in your code, or, if you are using a <xref:System.Data.DataSet>, by setting a property in the **Properties** window. If you are caching a data item that is not a <xref:System.Data.DataSet> or <xref:System.Data.DataTable>, ensure that it meets the criteria for being cached in the document. For more information, see [Caching Data](../vsto/caching-data.md).  
   
 > [!NOTE]  
->  使用 Visual Basic 建立且標記為 **Cached** 和 **WithEvents** 的資料集 \(包括從 \[**資料來源**\] 視窗或 \[**工具箱**\] 拖曳且將 \[**CacheInDocument**\] 屬性設定為 \[**True**\] 的資料集\) 會在快取中其名稱前加上底線。  例如，如果建立資料集並將其命名為 Customers，<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 在快取中的名稱將會是 \_Customers。  當您使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 存取此快取項目時，必須指定 \_Customers 而不是 Customers。  
+>  Datasets created using Visual Basic that are marked as **Cached** and **WithEvents** (including datasets that are dragged from the **Data Sources** window or **Toolbox** that have the **CacheInDocument** property set to **True**) have an underscore prefixed to their names in the cache. For example, if you create a dataset and name it **Customers**, the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> name will be **_Customers** in the cache. When you use <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> to access this cached item, you must specify **_Customers** instead of **Customers**.  
   
-### 若要使用程式碼快取文件中的資料  
+### <a name="to-cache-data-in-the-document-using-code"></a>To cache data in the document using code  
   
-1.  將資料項目的公用欄位或屬性宣告為專案中主項目類別的成員，例如 Word 專案中的 `ThisDocumen`t 類別或 Excel 專案中的 `ThisWorkbook` 類別。  
+1.  Declare a public field or property for the data item as a member of a host item class in your project, such as the `ThisDocumen`t class in a Word project or the `ThisWorkbook` class in an Excel project.  
   
-2.  將 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 屬性 \(Attribute\) 套用至成員，以標示要儲存在文件資料快取中的資料項目。  下列程式碼範例會將這個屬性套用至 <xref:System.Data.DataSet> 的欄位宣告。  
+2.  Apply the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute to the member to mark the data item to be stored in the document's data cache. The following example applies this attribute to a field declaration for a <xref:System.Data.DataSet>.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreDataExcel#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#11)]  
+     [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]  [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]  
   
-3.  加入程式碼以建立資料項目的執行個體，以及在可能情況下將其從資料庫載入。  
+3.  Add code to create an instance of the data item and, if applicable, to load it from the database.  
   
-     資料項目只會在第一次建立時載入，此後快取會隨同文件保留，而您必須撰寫其他的程式碼來更新它。  
+     The data item is only loaded when it is first created; thereafter, the cache stays with the document and you must write other code to update it.  
   
-### 若要使用屬性視窗快取文件中的資料集  
+### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>To cache a dataset in the document by using the Properties window  
   
-1.  使用 Visual Studio 設計工具中的工具，將資料集加入至專案，例如使用 \[**資料來源**\] 視窗，將資料來源加入至專案。  
+1.  Add the dataset to the project by using tools in the Visual Studio designer, for example, by adding a data source to your project using the **Data Sources** window.  
   
-2.  如果沒有資料集的執行個體，請建立一個，並在設計工具中選取該執行個體。  
+2.  Create an instance of the dataset if you do not already have one, and select the instance in the designer.  
   
-3.  在 \[**屬性**\] 視窗中，將 \[**CacheInDocument**\] 屬性設定為 \[**True**\]。  
+3.  In the **Properties** window, set the **CacheInDocument** property to **True**.  
   
-     如需詳細資訊，請參閱[Office 專案中的屬性](../vsto/properties-in-office-projects.md)。  
+     For more information, see [Properties in Office Projects](../vsto/properties-in-office-projects.md).  
   
-4.  在 \[**屬性**\] 視窗中，將 \[**Modifiers**\] 屬性設定為 \[**Public**\] \(預設為 \[**Internal**\]\)。  
+4.  In the **Properties** window, set the **Modifiers** property to **Public** (by default it is **Internal**).  
   
-## 請參閱  
- [快取資料](../vsto/caching-data.md)   
- [如何：以程式設計方式快取 Office 文件的資料來源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
- [如何：快取受密碼保護文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [存取伺服器文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)   
- [儲存資料](../data-tools/saving-data.md)  
+## <a name="see-also"></a>See Also  
+ [Caching Data](../vsto/caching-data.md)   
+ [How to: Programmatically Cache a Data Source in an Office Document](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)   
+ [How to: Cache Data in a Password-Protected Document](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [Saving Data](/visualstudio/data-tools/saving-data)  
   
   

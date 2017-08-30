@@ -22,8 +22,8 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 2b9bcf36832dad4220a0a35f123b5fc761329ae3
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d4dfba7f395b3ad113ccc2ea205f49d9bbdaed61
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/30/2017
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/30/2017
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 ## <a name="example"></a>Example  
- [!code-cs[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]  
+ [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]  
   
 ## <a name="compiling-the-code"></a>Compiling the Code  
  This example requires:  

@@ -1,65 +1,81 @@
 ---
-title: "CA2235：必須標記所有不可序列化的欄位 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2235"
-  - "MarkAllNonSerializableFields"
-helpviewer_keywords: 
-  - "CA2235"
-  - "MarkAllNonSerializableFields"
+title: 'CA2235: Mark all non-serializable fields | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2235
+- MarkAllNonSerializableFields
+helpviewer_keywords:
+- CA2235
+- MarkAllNonSerializableFields
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2235：必須標記所有不可序列化的欄位
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 1b5cdf19bb22355cc57c2afe39f970a5e8d7b958
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Mark all non-serializable fields
 |||  
 |-|-|  
-|型別名稱|MarkAllNonSerializableFields|  
+|TypeName|MarkAllNonSerializableFields|  
 |CheckId|CA2235|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 可序列化之型別中所宣告之型別的執行個體 \(Instance\) 欄位是不可序列化的。  
+## <a name="cause"></a>Cause  
+ An instance field of a type that is not serializable is declared in a type that is serializable.  
   
-## 規則描述  
- 可序列化型別是以 <xref:System.SerializableAttribute?displayProperty=fullName> 屬性 \(Attribute\) 標示的型別。  當型別序列化時，如果型別所包含的不是可序列化之型別的執行個體欄位，將會發生 <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> 例外狀況。  
+## <a name="rule-description"></a>Rule Description  
+ A serializable type is one that is marked with the <xref:System.SerializableAttribute?displayProperty=fullName> attribute. When the type is serialized, a <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> exception is thrown if a type contains an instance field of a type that is not serializable.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將 <xref:System.NonSerializedAttribute?displayProperty=fullName> 屬性套用到不可序列化的欄位。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, apply the <xref:System.NonSerializedAttribute?displayProperty=fullName> attribute to the field that is not serializable.  
   
-## 隱藏警告的時機  
- 只有在宣告的 <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> 型別允許欄位的執行個體成為序列化或還原序列化時，才能隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Only suppress a warning from this rule if a <xref:System.Runtime.Serialization.ISerializationSurrogate?displayProperty=fullName> type is declared that allows instances of the field to be serialized and deserialized.  
   
-## 範例  
- 下列範例會顯示違反規則的型別和滿足規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates the rule and a type that satisfies the rule.  
   
- [!code-cs[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)]
- [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]  
+ [!code-csharp[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/CSharp/ca2235-mark-all-non-serializable-fields_1.cs)] [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]  
   
-## 相關規則  
- [CA2236：必須呼叫 ISerializable 類型上的基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2236: Call base class methods on ISerializable types](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
- [CA2240：必須正確實作 ISerializable](../Topic/CA2240:%20Implement%20ISerializable%20correctly.md)  
+ [CA2240: Implement ISerializable correctly](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
- [CA2229：請實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)  
+ [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2238：請正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
+ [CA2238: Implement serialization methods correctly](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
   
- [CA2237：必須以 SerializableAttribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
- [CA2239：必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
+ [CA2239: Provide deserialization methods for optional fields](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120：必須保護序列化建構函式](../Topic/CA2120:%20Secure%20serialization%20constructors.md)
+ [CA2120: Secure serialization constructors](../code-quality/ca2120-secure-serialization-constructors.md)

@@ -1,204 +1,209 @@
 ---
-title: "逐步解說：使用商務資料在 SharePoint 中建立外部清單"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 程式開發]，網頁組件中的商務資料"
-  - "BDC [Visual Studio 中的 SharePoint 程式開發]，外部清單"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 程式開發]，SharePoint 清單中的商務資料"
-  - "BDC [Visual Studio 中的 SharePoint 程式開發]，SharePoint 清單中的商務資料"
-  - "BDC [Visual Studio 中的 SharePoint 程式開發]，網頁組件中的商務資料"
-  - "BDC [Visual Studio 中的 SharePoint 程式開發]，實體後援清單"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 程式開發]，實體後援清單"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 程式開發]，外部清單"
+title: 'Walkthrough: Creating an External List in SharePoint by Using Business Data | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data in a Web Part
+- BDC [SharePoint development in Visual Studio], external list
+- Business Data Connectivity service [SharePoint development in Visual Studio], business data in a SharePoint list
+- BDC [SharePoint development in Visual Studio], business data in a SharePoint list
+- BDC [SharePoint development in Visual Studio], business data in a Web Part
+- BDC [SharePoint development in Visual Studio], entity backed list
+- Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
+- Business Data Connectivity service [SharePoint development in Visual Studio], external list
 ms.assetid: 046cf234-705a-4a6f-91f8-c5c569ae0dd0
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a83672695efad46c8205c056f35b841878fc0698
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：使用商務資料在 SharePoint 中建立外部清單
-  商務資料連接 \(BDC\) 服務可讓 SharePoint 顯示後端伺服器應用程式、Web 服務和資料庫中的商務資料。  
+# <a name="walkthrough-creating-an-external-list-in-sharepoint-by-using-business-data"></a>Walkthrough: Creating an External List in SharePoint by Using Business Data
+  The Business Data Connectivity (BDC) service enables SharePoint to display business data from back-end server applications, Web services, and databases.  
   
- 本逐步解說將示範如何為傳回範例資料庫中聯絡人相關資料的 BDC 服務建立模型，  然後您將使用此模型在 SharePoint 中建立外部清單。  
+ This walkthrough shows you how to create a model for the BDC service that returns information about contacts in a sample database. You will then create an external list in SharePoint by using this model.  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   建立專案。  
+-   Creating a project.  
   
--   在模型中新增實體。  
+-   Adding an entity to the model.  
   
--   加入搜尋方法。  
+-   Adding a finder method.  
   
--   加入特定搜尋方法。  
+-   Adding a specific finder method.  
   
--   測試專案。  
+-   Testing the project.  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   支援的 Windows 和 SharePoint 版本。  如需詳細資訊，請參閱[開發 SharePoint 方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   Supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]、[!INCLUDE[vsUltLong](../sharepoint/includes/vsultlong-md.md)] 或 [!INCLUDE[vsPreLong](../sharepoint/includes/vsprelong-md.md)]。  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)], [!INCLUDE[vsUltLong](../sharepoint/includes/vsultlong-md.md)], or [!INCLUDE[vsPreLong](../sharepoint/includes/vsprelong-md.md)].  
   
--   AdventureWorks 範例資料庫的存取權限。  如需如何安裝 AdventureWorks 資料庫的詳細資訊，請參閱 [SQL Server 範例資料庫](http://go.microsoft.com/fwlink/?LinkID=117483)。  
+-   Access to the AdventureWorks sample database. For more information about how to install the AdventureWorks database, see [SQL Server Sample Databases](http://go.microsoft.com/fwlink/?LinkID=117483).  
   
-## 建立包含 BDC 模型的專案  
+## <a name="creating-a-project-that-contains-a-bdc-model"></a>Creating a Project that Contains a BDC Model  
   
-#### 若要建立包含 BDC 模型的專案  
+#### <a name="to-create-a-project-that-contains-a-bdc-model"></a>To create a project that contains a BDC model  
   
-1.  在 Visual Studio的功能表列，選擇 \[ **檔案**\]， **新增**， **專案**。  
+1.  On the menu bar in Visual Studio, choose **File**, **New**, **Project**.  
   
-     \[**新增專案**\] 對話方塊隨即開啟。  
+     The **New Project** dialog box opens.  
   
-2.  在 \[**Visual C\#**\] 或 \[**Visual Basic**\] 底下，展開的 \[**SharePoint**\] 節點，然後按一下 \[**2010**\] 項目。  
+2.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** item.  
   
-3.  在 \[**範本**\] 窗格中，選擇 \[**SharePoint 2010 \-**\] 項目，命名為 AdventureWorksTest 然後選擇 \[**確定**\] 按鈕。  
+3.  In the **Templates** pane, choose **SharePoint 2010 Project**, name the project **AdventureWorksTest**, and then choose the **OK** button.  
   
-     \[**SharePoint 自訂精靈**\] 隨即出現。  在這個精靈，指定用來偵錯專案的網站以及設定方案的信任層級。  
+     The **SharePoint Customization Wizard** appears. In this wizard, you can specify the site that you'll use to debug the project and set the trust level of the solution.  
   
-4.  選取 \[**部署為陣列方案**\] 選項按鈕設定信任層級。  
+4.  Choose the **Deploy as a farm solution** option button to set the trust level.  
   
-5.  選擇 \[**完成**\] 按鈕以接受預設的本機 SharePoint 網站。  
+5.  Choose the **Finish** button to accept the default local SharePoint site.  
   
-6.  在 \[**方案總管**\] 中選擇 SharePoint 專案節點。  
+6.  In **Solution Explorer**, choose the SharePoint project node.  
   
-7.  在功能表列中，選擇 \[**專案**\]、\[**加入新項目**\]。  
+7.  On the menu bar, choose **Project**, **Add New Item**.  
   
-     \[**加入新項目**\] 對話方塊隨即開啟。  
+     The **Add New Item** dialog box opens.  
   
-8.  在 \[**範本**\] 窗格中，選取 \[**商務資料連接模型 \(僅限陣列方案\)**\]，將專案命名為 AdventureWorksContacts，然後選擇 \[**加入**\] 按鈕。  
+8.  In the **Templates** pane, choose **Business Data Connectivity Model (Farm Solution Only)**, name the project **AdventureWorksContacts**, and then choose the **Add** button.  
   
-## 在專案中加入資料存取類別  
+## <a name="adding-data-access-classes-to-the-project"></a>Adding Data Access Classes to the Project  
   
-#### 若要在專案中加入資料存取類別  
+#### <a name="to-add-data-access-classes-to-the-project"></a>To add data access classes to the project  
   
-1.  在選單條上選擇 \[**工具**\] ，按一下 \[**連接至資料庫**\]。  
+1.  On the menu bar, choose **Tools**, **Connect to Database**.  
   
-     \[**加入連接**\] 對話方塊隨即開啟。  
+     The **Add Connection** dialog box opens.  
   
-2.  加入 SQL Server AdventureWorks 範例資料庫的連接。  
+2.  Add a connection to the SQL Server AdventureWorks sample database.  
   
-     如需詳細資訊，請參閱[Add\/Modify Connection \(Microsoft SQL Server\)](http://msdn.microsoft.com/zh-tw/fa400910-26c3-4df7-b9d1-115e688b4ea3)。  
+     For more information, see [Add/Modify Connection (Microsoft SQL Server)](http://msdn.microsoft.com/en-us/fa400910-26c3-4df7-b9d1-115e688b4ea3).  
   
-3.  在 \[**方案總管**\] 中選擇專案節點。  
+3.  In **Solution Explorer**, choose the project node.  
   
-4.  在功能表列中，選擇 \[**專案**\]、\[**加入新項目**\]。  
+4.  On the menu bar, choose **Project**, **Add New Item**.  
   
-5.  在 \[**已安裝的範本**\] 窗格中選取 \[**資料**\] 節點。  
+5.  In the **Installed Templates** pane, choose the **Data** node.  
   
-6.  在 \[**範本**\] 窗格中選取 \[**LINQ to SQL 類別**\]。  
+6.  In the **Templates** pane, choose **LINQ to SQL Classes**.  
   
-7.  在 \[**名稱**\] 文字方塊中指定 specify AdventureWorks 輸入 TestGames.cpp，然後選擇 \[**新增**\] 按鈕。  
+7.  In the **Name** box, specify **AdventureWorks**, and then choose the **Add** button.  
   
-     專案中隨即加入一個 .dbml 檔，並開啟物件關聯式設計工具 \(O\/R 設計工具\)。  
+     A .dbml file is added to the project, and the Object Relational Designer (O/R Designer) opens.  
   
-8.  在功能表上，選擇 \[**檢視**\]，\[**伺服器總管**\]。  
+8.  On the menu bar, choose **View**, **Server Explorer**.  
   
-9. 在 \[**伺服器總管**\] 中展開表示 AdventureWorks 範例資料庫的節點，然後再展開 \[**資料表**\] 節點。  
+9. In **Server Explorer**, expand the node that represents the AdventureWorks sample database, and then expand the **Tables** node.  
   
-10. 將 \[**Contact \(Person\)**\] 資料表加入至 O\/R 設計工具上。  
+10. Add the **Contact (Person)** table onto the O/R Designer.  
   
-     實體類別隨即建立並出現在設計介面上。  這個實體類別的屬性會對應至 \[Contact \(Person\)\] 資料表中的資料行。  
+     An entity class is created and appears on the design surface. The entity class has properties that map to the columns in the Contact (Person) table.  
   
-## 從 BDC 模型中移除預設實體  
- \[**商務資料連線模型**\] 專案會將名為 Entity1 的預設實體新增至模型，  請移除這個實體。  稍後，您將加入新的實體。  在一開始就使用空模型，可減少完成逐步解說所需的步驟數目。  
+## <a name="removing-the-default-entity-from-the-bdc-model"></a>Removing the Default Entity from the BDC Model  
+ The **Business Data Connectivity Model** project adds a default entity named Entity1 to the model. Remove this entity. Later, you will add a new entity. Starting with an empty model reduces the number of steps required to complete the walkthrough.  
   
-#### 若要從模型中移除預設實體  
+#### <a name="to-remove-the-default-entity-from-the-model"></a>To remove the default entity from the model  
   
-1.  在 \[**方案總管**\] 中展開 \[**BdcModel1**\] 節點，然後打開 \[BdcModel1.bdcm\] 檔案。  
+1.  In **Solution Explorer**, expand the **BdcModel1** node, and then open the BdcModel1.bdcm file.  
   
-2.  商務資料連接模型檔案隨即在 \[BDC 設計工具\] 中開啟。  
+2.  The Business Data Connectivity model file opens in the BDC designer.  
   
-3.  在設計工具中，開啟 \[**Entity1**\] 節點的捷徑功能表，然後選擇 \[**刪除**\]。  
+3.  In the designer, open the shortcut menu for **Entity1**, and then choose **Delete**.  
   
-4.  在 \[**方案總管**\] 中，開啟 Entity1.vb \(Visual Basic\) 或 Entity1.cs 的捷徑功能表 \(在 C\# 中\)，然後選取 \[**刪除**\]。  
+4.  In **Solution Explorer**, open the shortcut menu for Entity1.vb (in Visual Basic) or Entity1.cs (in C#), and then choose **Delete**.  
   
-5.  開啟 Entity1Service.vb \(Visual Basic\) 或 Entity1Service.cs 的捷徑功能表 \(在 C\# 中\)，然後選取 \[**刪除**\]。  
+5.  Open the shortcut menu for Entity1Service.vb (in Visual Basic) or Entity1Service.cs (in C#), and then choose **Delete**.  
   
-## 在模型中新增實體  
- 將模型新增至實體。  您可以將實體從 Visual Studio \[**工具箱**\] 加入至 BDC 設計工具上。  
+## <a name="adding-an-entity-to-the-model"></a>Adding an Entity to the Model  
+ Add an entity to the model. You can add entities from the Visual Studio **Toolbox** onto the BDC designer.  
   
-#### 若要在模型中新增實體  
+#### <a name="to-add-an-entity-to-the-model"></a>To add an Entity to the model  
   
-1.  在功能表列上選擇 \[**檢視**\]、\[**工具箱**\]。  
+1.  On the menu bar, choose **View**, **Toolbox**.  
   
-2.  從 \[**工具箱**\] 的 \[**BusinessDataConnectivity**\] 索引標籤中，把一個**實體**加入至 BDC 設計工具。  
+2.  On the **BusinessDataConnectivity** tab of the **Toolbox**, add an **Entity** onto the BDC designer.  
   
-     新實體隨即出現在設計工具中。  Visual Studio 會將檔案加入至名為 EntityService.vb \(使用 Visual Basic 時\) 或 EntityService.cs \(使用 C\# 時\) 的專案。  
+     The new entity appears on the designer. Visual Studio adds a file that's named EntityService.vb (in Visual Basic) or EntityService.cs (in C#) to the project.  
   
-3.  在功能表上選擇 \[**檢視**\]、\[**屬性**\] 、\[**視窗**\]。  
+3.  On the menu bar, choose **View**, **Properties**, **Window**.  
   
-4.  在 \[**屬性**\] 視窗中，將 \[**Name**\] 屬性設定為 Contact。  
+4.  In the **Properties** window, set the **Name** property value to **Contact**.  
   
-5.  在設計工具中，開啟實體的捷徑功能表，選擇 \[**新增**\]，然後選擇 \[**識別項**\]。  
+5.  On the designer, open the shortcut menu for the entity, choose **Add**, and then choose **Identifier**.  
   
-     新識別項隨即出現在實體上。  
+     A new identifier appears on the entity.  
   
-6.  在 \[**屬性視窗**\] 中，將識別項的名稱變更為 ContactID。  
+6.  In the **Properties** window, change the name of the identifier to **ContactID**.  
   
-7.  在 \[**輸入名稱**\] 清單中，選取 \[**System.Int32**\]。  
+7.  In the **Type Name** list, choose **System.Int32**.  
   
-## 加入特定搜尋方法  
- 若要讓 BDC 服務顯示特定的連絡人，您必須加入「特定搜尋」方法。  當使用者在清單中選取項目，然後選擇 \[功能區\] 中的 \[**檢視項目**\] 按鈕時，BDC 服務便會呼叫特定搜尋方法。  
+## <a name="adding-a-specific-finder-method"></a>Adding a Specific Finder Method  
+ To enable the BDC service to display a specific contact, you must add a Specific Finder method. The BDC service calls the Specific Finder method when a user chooses an item in a list and then chooses the **View Item** button on the Ribbon.  
   
- 請使用 \[**BDC 方法詳細資料**\] 視窗，在 Contact 實體中加入特定搜尋方法。  若要傳回特定實體，請在方法中加入程式碼。  
+ Add a Specific Finder method to the Contact entity by using the **BDC Method Details** window. To return a specific entity, add code to the method.  
   
-#### 若要加入特定搜尋方法  
+#### <a name="to-add-a-specific-finder-method"></a>To add a Specific Finder method  
   
-1.  在 BDC 設計工具上選取 \[**Contact**\] 實體。  
+1.  On the BDC designer, choose the **Contact** entity.  
   
-2.  在功能表列上，選擇 \[**檢視**\]，\[**其他視窗**\]， \[**BDC 方法詳細資料**\]。  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     \[BDC 方法詳細資料\] 視窗隨即開啟。  
+     The BDC Method Details window opens.  
   
-3.  在 \[**加入方法**\] 清單中，選取 \[**建立特定搜尋方法**\]。  
+3.  In the **Add a Method** list, choose **Create Specific Finder Method**.  
   
-     Visual Studio 會將下列項目加入至模型。  這些項目會顯示在 \[**BDC 方法詳細資料**\] 視窗中。  
+     Visual Studio adds the following elements to the model. These elements appear in the **BDC Method Details** window.  
   
-    -   名為 ReadItem 的方法。  
+    -   A method named ReadItem.  
   
-    -   此方法的輸入參數。  
+    -   An input parameter for the method.  
   
-    -   方法的傳回參數。  
+    -   A return parameter for the method.  
   
-    -   各個參數的型別描述元。  
+    -   A type descriptor for each parameter.  
   
-    -   此方法的方法執行個體。  
+    -   A method instance for the method.  
   
-4.  在 \[**BDC 方法詳細資料**\] 視窗中，開啟針對 \[**聯絡人**\]型別描述元而顯示的下拉式清單，然後選擇 \[ **編輯**\]。  
+4.  In the **BDC Method Details** window, open the list that appears for the **Contact** type descriptor, and then choose **Edit**.  
   
-     \[**BDC 總管**\] 可讓您以階層方式檢視和打開模型。  
+     The **BDC Explorer** opens and provides a hierarchical view of the model.  
   
-5.  在 \[**屬性**\] 視窗中，按一下 \[**TypeName**\] 屬性旁邊的開啟清單中，選取 \[**本專案**\] 索引標籤，然後選取 \[**連絡人**\] 屬性。  
+5.  In the **Properties** window, open the list next to the **TypeName** property, choose the **Current Project** tab, and then choose the **Contact** property.  
   
-6.  在 \[**BDC 總管**\] 中，開啟\[**連絡人**\]型別描述元的捷徑功能表，然後選擇 \[**加入型別描述元**\]。  
+6.  In the **BDC Explorer**, open the shortcut menu of the **Contact**, and then choose **Add Type Descriptor**.  
   
-     名為 \[**TypeDescriptor1**\] 的新型別描述元隨即在 \[**BDC 總管**\] 中顯示。  
+     A new type descriptor that's named **TypeDescriptor1** appears in the **BDC Explorer**.  
   
-7.  在 \[**屬性視窗**\] 中，將 \[**名稱**\] 屬性設定為 **ContactID**。  
+7.  In the **Properties** window, set the **Name** property value to **ContactID**.  
   
-8.  在 \[**TypeName**\] 屬性旁邊的開啟清單，然後選取 \[**Int32**\]。  
+8.  Open the list next to the **TypeName** property, and then choose **Int32**.  
   
-9. 在 \[**識別項**\] 屬性旁邊的開啟清單，然後選取 **ContactID**。  
+9. Open the list next to the **Identifier** property, and then choose **ContactID**.  
   
-10. 重複步驟 6，為下列各個欄位建立型別描述元。  
+10. Repeat step 6 to create a type descriptor for each of the following fields.  
   
-    |名稱|類型名稱|  
-    |--------|----------|  
+    |Name|Type Name|  
+    |----------|---------------|  
     |FirstName|System.String|  
     |LastName|System.String|  
     |Phone|System.String|  
@@ -208,94 +213,92 @@ caps.handback.revision: 37
     |PasswordHash|System.String|  
     |PasswordSalt|System.String|  
   
-11. 在 BDC 設計工具的 \[**Contact**\] 實體上，打開 \[**ReadItem**\] 方法。  
+11. In the BDC designer, on the **Contact** entity, open the **ReadItem** method.  
   
-     Contact 服務程式碼檔案隨即在 \[程式碼編輯器\] 中開啟。  
+     The Contact service code file opens in Code Editor.  
   
-12. 在 `ContactService` 類別中，使用下列程式碼取代 `ReadItem` 方法。  這個程式碼會執行下列工作：  
+12. In the `ContactService` class, replace the `ReadItem` method with the following code. This code performs the following tasks:  
   
-    -   從 AdventureWorks 資料庫的 \[連絡人\] 資料表擷取記錄。  
+    -   Retrieves a record from Contact table of the AdventureWorks database.  
   
-    -   將 Contact 實體傳回至 BDC 服務。  
-  
-    > [!NOTE]  
-    >  將 `ServerName` 欄位的值替換成您的伺服器名稱。  
-  
-     [!code-csharp[SP_BDC#3](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#3)]  
-  
-## 加入搜尋方法  
- 若要讓 BDC 服務顯示清單中的連絡人，您必須加入搜尋方法。  請使用 \[**BDC 方法詳細資料**\] 視窗，在 Contact 實體中加入搜尋方法。  若要將實體集合傳回至 BDC 服務，請在方法中加入程式碼。  
-  
-#### 若要加入搜尋方法  
-  
-1.  在 BDC 設計工具中選取 \[**Contact**\] 實體。  
-  
-2.  在 \[**BDC 方法詳細資料**\] 視窗中，摺疊 \[**ReadItem**\] 節點。  
-  
-3.  在 \[**ReadList**\] 方法下方的 \[**將方法**\] 清單中，選取 \[**建立搜尋方法**\]。  
-  
-     Visual Studio 會加入方法、傳回參數以及型別描述元。  
-  
-4.  在 BDC 設計工具中按一下 \[**Contact**\] 實體，然後打開 \[**ReadList**\] 方法。  
-  
-     Contact 服務程式碼檔案隨即在 \[程式碼編輯器\] 中開啟。  
-  
-5.  在 `ContactService` 類別中，使用下列程式碼取代 `ReadList` 方法。  這個程式碼會執行下列工作：  
-  
-    -   從 AdventureWorks 資料庫的 \[連絡人\] 資料表擷取資料。  
-  
-    -   將 Contact 實體清單傳回至 BDC 服務。  
+    -   Returns a Contact entity to the BDC service.  
   
     > [!NOTE]  
-    >  將 `ServerName` 欄位的值替換成您的伺服器名稱。  
+    >  Replace the value of the `ServerName` field with the name of your server.  
   
-     [!code-csharp[SP_BDC#2](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#2)]  
+     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]  [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]  
   
-## 測試專案  
- 在您執行專案時，SharePoint 網站隨即開啟，而 Visual Studio 則會將您的模型加入至「商務資料連接」服務。  請在 SharePoint 中建立會參考 Contact 實體的外部清單。  AdventureWorks 資料庫中的連絡人資料會顯示在清單中。  
+## <a name="adding-a-finder-method"></a>Adding a Finder Method  
+ To enable the BDC service to display the contacts in a list, you must add a Finder method. Add a Finder method to the Contact entity by using the **BDC Method Details** window. To return a collection of entities to the BDC service, add code to the method.  
+  
+#### <a name="to-add-a-finder-method"></a>To add a Finder method  
+  
+1.  In the BDC designer, choose the **Contact** entity.  
+  
+2.  In the **BDC Method Details** window, collapse the **ReadItem** node.  
+  
+3.  In the **Add a Method** list under the **ReadList** method, choose **Create Finder Method**.  
+  
+     Visual Studio adds a method, a return parameter, and a type descriptor.  
+  
+4.  In the BDC designer, on the **Contact** entity, open the **ReadList** method.  
+  
+     The code file for the Contact service opens in Code Editor.  
+  
+5.  In the `ContactService` class, replace the `ReadList` method with the following code. This code performs the following tasks:  
+  
+    -   Retrieves data from the Contacts table of the AdventureWorks database.  
+  
+    -   Returns a list of Contact entities to the BDC service.  
+  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
+  
+     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]  [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]  
+  
+## <a name="testing-the-project"></a>Testing the Project  
+ When you run the project, the SharePoint site opens and Visual Studio adds your model to the Business Data Connectivity service. Create an external list in SharePoint that references the Contact entity. The data for contacts in the AdventureWorks database appear in the list.  
   
 > [!NOTE]  
->  在可以對方案進行偵錯之前，您可能需要修改 SharePoint 中的安全性設定。如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+>  You might have to modify your security settings in SharePoint before you can debug your solution.  For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-#### 若要測試專案  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  選擇 **F5** 鍵。  
+1.  Choose the **F5** key.  
   
-     SharePoint 網站隨即開啟。  
+     The SharePoint site opens.  
   
-2.  在 \[**網站動作**\] 功能表上，選擇 \[**取得更多選項**\] 命令。  
+2.  On the **Site Actions** menu, choose the **More Options** command.  
   
-3.  在 \[**建立**\] 頁面上，選取 \[**外部清單**\] 範本，然後選擇 \[**建立**\] 按鈕。  
+3.  On the **Create** page, choose the **External List** template, and then choose the **Create** button.  
   
-4.  將自訂清單命名為 Contacts。  
+4.  Name the custom list **Contacts**.  
   
-5.  選取 \[**外部內容類型**\] 欄位旁的瀏覽按鈕。  
+5.  Choose the browse button next to the **External Content Type** field.  
   
-6.  在 \[**外部內容類型選擇器**\] 對話方塊中，選取 \[**AdventureWorksContacts.BdcModel1.Contact**\] 項目，然後按一下 \[**建立**\] 按鈕。  
+6.  In the **External Content Type Picker** dialog box, choose the **AdventureWorksContacts.BdcModel1.Contact** item, and then choose the **Create** button.  
   
-     SharePoint 會建立一個外部清單從 AdventureWorks 範例資料庫中的連絡人。  
+     SharePoint creates an external list that contains contacts from the AdventureWorks sample database.  
   
-7.  若要測試特定搜尋方法，請選擇清單中的連絡人。  
+7.  To test the Specific Finder method, choose a contact in the list.  
   
-8.  在功能區，請選取 \[**項目**\] 索引標籤，然後選取 \[**檢視項目**\] 命令。  
+8.  On the Ribbon, choose the **Items** tab, and then choose the **View Item** command.  
   
-     您選取之聯絡人的詳細資料會顯示在表單上。  
+     The details of the contact that you chose appear on a form.  
   
-## 後續步驟  
- 您可以透過下列主題，進一步了解如何在 SharePoint 中設計 BDC 服務的模型：  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to design models for the BDC service in SharePoint from these topics:  
   
--   [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md).  
+-   [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md).  
   
--   [如何：加入更新者方法](../sharepoint/how-to-add-an-updater-method.md).  
+-   [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md).  
   
--   [如何：加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md).  
+-   [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md).  
   
-## 請參閱  
- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)   
- [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [將商業資料整合至 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [Integrating Business Data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

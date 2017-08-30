@@ -1,74 +1,78 @@
 ---
-title: "Office 方案中的晚期繫結"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "物件 [Visual Studio 中的 Office 程式開發]，轉型"
-  - "型別 [Visual Studio 中的 Office 程式開發]，轉型"
-  - "自動化 [Visual Studio 中的 Office 程式開發]，轉型物件"
-  - "轉型，物件至特定型別"
+title: Late Binding in Office Solutions | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- objects [Office development in Visual Studio], casting
+- types [Office development in Visual Studio], casting
+- automation [Office development in Visual Studio], casting objects
+- casting, object to specific type
 ms.assetid: 80b0d23e-df68-4ea9-a02b-238aee8ca9c0
 caps.latest.revision: 49
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 48
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a028772bd74c8160724f34e71489674809b8188f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# Office 方案中的晚期繫結
-  Office 應用程式物件模型中部分型別所提供的功能，也可以透過晚期繫結取得。  例如，有些方法和屬性可能會根據 Office 應用程式內容傳回不同型別的物件，而有些型別可能會公開不同內容中的不同方法或屬性。  
+# <a name="late-binding-in-office-solutions"></a>Late Binding in Office Solutions
+  Some types in the object models of Office applications provide functionality that is available through late-binding features. For example, some methods and properties can return different types of objects depending on the context of the Office application, and some types can expose different methods or properties in different contexts.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Visual Basic 專案 **Option Strict** 位置關閉，和以 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 可以直接與型別一起使用這些晚期繫結功能的 Visual C\# 專案。  
+ Visual Basic projects where **Option Strict** is off and Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] can work directly with types that employ these late-binding features.  
   
-## 物件傳回值的隱含和明確轉型  
- Microsoft Office 主要 Interop 組件 \(PIA\) 中的許多方法和屬性會傳回 <xref:System.Object> 值，因為它們可以傳回多種不同的物件型別。  例如，<xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> 屬性的傳回值可以是 <xref:Microsoft.Office.Interop.Excel.Worksheet> 或 <xref:Microsoft.Office.Interop.Excel.Chart> 物件 \(視使用中工作表而定\)，因此會傳回 <xref:System.Object>。  
+## <a name="implicit-and-explicit-casting-of-object-return-values"></a>Implicit and Explicit Casting of Object Return Values  
+ Many methods and properties in the Microsoft Office primary interop assemblies (PIAs) return <xref:System.Object> values, because they can return several different types of objects. For example, the <xref:Microsoft.Office.Tools.Excel.Workbook.ActiveSheet%2A> property returns an <xref:System.Object> because its return value can be a <xref:Microsoft.Office.Interop.Excel.Worksheet> or <xref:Microsoft.Office.Interop.Excel.Chart> object, depending on what the active sheet is.  
   
- 在方法或屬性傳回 <xref:System.Object>時，您必須明確轉換 \(在 Visual Basic 中為\) 至正確的物件型別 **Option Strict** 開啟的 Visual Basic 專案。  您不需要明確轉型為 **Option Strict** 關閉的 Visual Basic 專案的 <xref:System.Object> 傳回值。  
+ When a method or property returns a <xref:System.Object>, you must explicitly convert (in Visual Basic) the object to the correct type in Visual Basic projects where **Option Strict** is on. You do not have to explicitly cast <xref:System.Object> return values in Visual Basic projects where **Option Strict** is off.  
   
- 在大部分情況下，參考文件會列出傳回 <xref:System.Object> 之成員的可能傳回值型別。  轉換或轉型物件會在程式碼編輯器中對物件啟用 IntelliSense。  
+ In most cases, the reference documentation lists the possible types of the return value for a member that returns an <xref:System.Object>. Converting or casting the object enables IntelliSense for the object in the Code Editor.  
   
- 如需在 Visual Basic 中轉換的詳細資訊，請參閱[Implicit and Explicit Conversions &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions)和 [CType 函式 &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function)。  
+ For information about conversion in Visual Basic, see [Implicit and Explicit Conversions &#40;Visual Basic&#41;](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) and [CType Function &#40;Visual Basic&#41;](/dotnet/visual-basic/language-reference/functions/ctype-function).  
   
-### 範例  
- 下列程式碼範例示範如何將物件轉換成特定的物件輸入 **Option Strict** 開啟的 Visual Basic 專案。  這類專案，您必須明確轉型成 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> 屬性為 <xref:Microsoft.Office.Interop.Excel.Range>。  這個範例需要名稱為 `Sheet1` 之工作表類別的文件層級 Excel 專案。  
+### <a name="examples"></a>Examples  
+ The following code example demonstrates how to cast an object to a specific type in a Visual Basic project where **Option Strict** is on. In this type of project, you must explicitly cast the <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> property to a <xref:Microsoft.Office.Interop.Excel.Range>. This example requires a document-level Excel project with a worksheet class named `Sheet1`.  
   
- [!code-vb[Trin_VstcoreProgramming#9](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/Sheet1.vb#9)]  
+ [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]  
   
- 下列程式碼範例示範如何將物件隱含地轉型為已關閉 **Option Strict** 之 Visual Basic 專案和目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 之 Visual C\# 專案中的特定型別。  在這些類型的專案中，會將 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> 屬性隱含地轉型為 <xref:Microsoft.Office.Interop.Excel.Range>。  這個範例需要名稱為 `Sheet1` 之工作表類別的文件層級 Excel 專案。  
+ The following code example demonstrates how to implicitly cast an object to a specific type in a Visual Basic project where **Option Strict** is off or in a Visual C# project that targets the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. In these types of projects, the <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> property is implicitly cast to a <xref:Microsoft.Office.Interop.Excel.Range>. This example requires a document-level Excel project with a worksheet class named `Sheet1`.  
   
- [!code-csharp[Trin_VstcoreProgramming#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/Sheet1.cs#10)]
- [!code-vb[Trin_VstcoreProgramming#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/Sheet1.vb#10)]  
+ [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)] [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]  
   
-## 存取只能透過晚期繫結使用的成員  
- Office PIA 中的部分屬性和方法只能透過晚期繫結才能使用。  在 Visual Basic 專案 **Option Strict** 位置或在目標 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]的 Visual C\# 專案中，您可以使用晚期繫結功能在這些語言存取晚期繫結的成員。  在 Visual Basic 專案 **Option Strict** 位置開啟，您必須使用反映才能存取這些成員。  
+## <a name="accessing-members-that-are-available-only-through-late-binding"></a>Accessing Members That Are Available Only Through Late Binding  
+ Some properties and methods in the Office PIAs are available only through late binding. In Visual Basic projects where **Option Strict** is off or in Visual C# projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], you can use the late binding features in these languages to access late-bound members. In Visual Basic projects where **Option Strict** is on, you must use reflection to access these members.  
   
-### 範例  
- 下列程式碼範例示範如何存取已關閉 **Option Strict** 之 Visual Basic 專案或目標為 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 之 Visual C\# 專案中的晚期繫結的成員。  這個範例存取 Word 中 \[**開啟舊檔**\] 對話方塊的晚期繫結 **Name** 屬性。  若要使用這個範例，請從 Word 專案中的 `ThisDocument` 或 `ThisAddIn` 類別中執行。  
+### <a name="examples"></a>Examples  
+ The following code example demonstrates how to access late-bound members in a Visual Basic project where **Option Strict** is off or in a Visual C# project that targets the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. This example accesses the late-bound **Name** property of the **File Open** dialog box in Word. To use this example, run it from the `ThisDocument` or `ThisAddIn` class in a Word project.  
   
- [!code-csharp[Trin_VstcoreWordAutomation#122](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/CS/ThisDocument.cs#122)]
- [!code-vb[Trin_VstcoreWordAutomation#122](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#122)]  
+ [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)] [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]  
   
- 下列程式碼範例示範如何使用反映來完成 **Option Strict** 開啟的 Visual Basic 專案中進行相同工作。  
+ The following code example demonstrates how to use reflection to accomplish the same task in a Visual Basic project where **Option Strict** is on.  
   
- [!code-vb[Trin_VstcoreWordAutomation#102](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreWordAutomation/VB/ThisDocument.vb#102)]  
+ [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]  
   
-## 請參閱  
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
- [使用動態類型 &#40;C&#35; 程式設計手冊&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
+## <a name="see-also"></a>See Also  
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
+ [Using Type dynamic &#40;C&#35; Programming Guide&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)   
  [Option Strict Statement](/dotnet/visual-basic/language-reference/statements/option-strict-statement)   
- [反映 &#40;C&#35; 和 Visual Basic&#41;](http://msdn.microsoft.com/library/5d1d1bcf-08de-4d0b-97a8-912d17c00f26)   
- [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
+ [Reflection (C#)](/dotnet/csharp/programming-guide/concepts/reflection)  
+ [Reflection (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/reflection)  
+ [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
   
   

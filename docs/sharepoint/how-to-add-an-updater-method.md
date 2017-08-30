@@ -1,82 +1,86 @@
 ---
-title: "如何：加入更新者方法"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [Visual Studio 中的 SharePoint 開發], 更新者"
-  - "BDC [Visual Studio 中的 SharePoint 開發], 更新資料"
-  - "BDC [Visual Studio 中的 SharePoint 開發], 更新實體執行個體"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 開發], 更新者"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 開發], 更新資料"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 開發], 更新實體執行個體"
+title: 'How to: Add an Updater Method | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- BDC [SharePoint development in Visual Studio], updating data
+- BDC [SharePoint development in Visual Studio], Updater
+- Business Data Connectivity service [SharePoint development in Visual Studio], updating data
+- Business Data Connectivity service [SharePoint development in Visual Studio], Updater
+- Business Data Connectivity service [SharePoint development in Visual Studio], updating entity instances
+- BDC [SharePoint development in Visual Studio], updating entity instances
 ms.assetid: c97e443c-58dc-4f8f-8cbd-0d52d8a6a06b
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b9acbcbf58ebd258e935bc1e7f026af011bf4006
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：加入更新者方法
-  您可以藉由建立「*更新者*」\(Updater\) 方法，讓使用者更新 SharePoint 外部清單中的商務資料。  如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
+# <a name="how-to-add-an-updater-method"></a>How to: Add an Updater Method
+  You can enable users to update business data in a SharePoint external list by creating an *Updater* method. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
-### 若要建立更新者方法  
+### <a name="to-create-an-updater-method"></a>To create an Updater method  
   
-1.  在 BDC 設計工具上，選取實體。  
+1.  On the BDC designer, choose an entity.  
   
-2.  在功能表列上，選擇 \[**檢視**\]，\[**其他視窗**\]， \[**BDC 方法詳細資料**\]。  
+2.  On the menu bar, choose **View**, **Other Windows**, **BDC Method Details**.  
   
-     \[BDC 方法詳細資料\] 視窗隨即開啟。  如需這個視窗的詳細資訊，請參閱 [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)。  
+     The BDC Method Details window opens. For more information about this window, see [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md).  
   
-3.  在 \[**加入方法**\] 清單中，選取 \[**建立更新者方法**\]。  
+3.  In the **Add a Method** list, choose **Create Updater Method**.  
   
-     Visual Studio 會將下列項目加入至模型。  這些項目會顯示在 \[BDC 方法詳細資料\] 視窗中。  
+     Visual Studio adds the following elements to the model. These elements appear in the BDC Method Details window.  
   
-    -   名為 \[**更新**\] 的方法。  
+    -   A method that's named **Update**.  
   
-    -   此方法的輸入參數。  
+    -   An input parameter for the method.  
   
-    -   此參數的型別描述元。  根據預設，Visual Studio 會使用您針對搜尋方法定義的實體類型描述元 \(例如：連絡人\)。  
+    -   A type descriptor for the parameter. By default, Visual Studio uses the entity type descriptor that you defined for the Finder method (for example: Contact).  
   
-    -   此方法的方法執行個體。  
+    -   A method instance for the method.  
   
-     如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
-  
-    > [!NOTE]  
-    >  如果實體類型的識別項代表一個資料庫資料表中無法自動產生的欄位，請將 \[**預先更新者欄位**\] 屬性設定為 \[**True**\]。  
-  
-4.  在 \[**方案總管**\] 中，開啟針對實體所產生的服務程式碼檔案之捷徑功能表，然後選擇 \[**檢視程式碼**\]。  
-  
-     實體服務程式碼檔案會在程式碼編輯器中開啟。  如需這個檔案的詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
-  
-5.  將程式碼加入更新者方法，以更新資料。  下列範例會更新 SQL Server 之 AdventureWorks 範例資料庫中的連絡人資訊。  
+     For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
   
     > [!NOTE]  
-    >  將 `ServerName` 欄位的值替換成您的伺服器名稱。  
+    >  If the identifier of the entity type represents a field in a database table that's not automatically generated, set the **Pre-Updater Field** property to **True**.  
   
-     [!code-csharp[SP_BDC#5](../snippets/csharp/VS_Snippets_OfficeSP/sp_bdc/CS/bdcmodel1/contactservice.cs#5)]
-     [!code-vb[SP_BDC#5](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_bdc/VB/bdcmodel1/contactservice.vb#5)]  
+4.  In **Solution Explorer**, open the shortcut menu of the service code file that was generated for the entity, and then choose **View Code**.  
   
-## 請參閱  
- [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [如何：加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
- [如何：加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [如何：加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+     The entity service code file opens in the Code Editor. For more information about that file, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
+  
+5.  Add code to the Update method to update data. The following example updates information for a contact in the AdventureWorks sample database for SQL Server.  
+  
+    > [!NOTE]  
+    >  Replace the value of the `ServerName` field with the name of your server.  
+  
+     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]  [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]  
+  
+## <a name="see-also"></a>See Also  
+ [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
+ [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
  [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
- [如何：加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
- [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [如何：定義方法執行個體](../sharepoint/how-to-define-a-method-instance.md)  
+ [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
+ [BDC Model Design Tools Overview](../sharepoint/bdc-model-design-tools-overview.md)   
+ [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [How to: Define a Method Instance](../sharepoint/how-to-define-a-method-instance.md)  
   
   

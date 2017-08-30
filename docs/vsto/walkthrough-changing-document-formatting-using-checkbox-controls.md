@@ -1,167 +1,171 @@
 ---
-title: "逐步解說：使用 CheckBox 控制項來變更文件格式"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "核取方塊, Word 文件"
-  - "控制項 [Visual Studio 中的 Office 程式開發], 加入至文件"
-  - "文件 [Visual Studio 中的 Office 程式開發], 核取方塊控制項"
-  - "文件 [Visual Studio 中的 Office 程式開發], 格式化"
-  - "Word 文件, 使用控制項變更格式"
+title: 'Walkthrough: Changing Document Formatting Using CheckBox Controls | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word documents, changing formatting using controls
+- documents [Office development in Visual Studio], formatting
+- check boxes, Word documents
+- documents [Office development in Visual Studio], check box controls
+- controls [Office development in Visual Studio], adding to documents
 ms.assetid: 3740e41d-a57e-43bb-87e7-6e5481ef290b
 caps.latest.revision: 70
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 69
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 69edcb6d683c910d02e4224ec44590c288fefefa
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：使用 CheckBox 控制項來變更文件格式
-  本逐步解說將示範如何透過 Microsoft Office Word 的文件層級自訂，使用 Windows Form 控制項來變更文字格式。  
+# <a name="walkthrough-changing-document-formatting-using-checkbox-controls"></a>Walkthrough: Changing Document Formatting Using CheckBox Controls
+  This walkthrough demonstrates how to use Windows Forms controls in a document-level customization for Microsoft Office Word to change text formatting.  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   在設計階段，透過文件層級專案將文字和控制項加入至文件。  
+-   Adding text and a control to the document in a document-level project at design time.  
   
--   當選項被選取時將文字格式化  
+-   Formatting the text when an option is selected.  
   
- 若要查看完成範例的結果，請參閱 [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)中的＜Word 控制項範例＞。  
+ To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## 建立專案  
- 第一步就是建立 Word 文件專案。  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create a Word Document project.  
   
-#### 若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  建立名稱為 My Word Formatting 的 Word 文件專案。  在精靈中選取 \[**建立新文件**\]。  
+1.  Create a Word Document project with the name **My Word Formatting**. In the wizard, select **Create a new document**.  
   
-     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio 會在設計工具中開啟新的 Word 文件，並將 **My Word Formatting** 專案加入至 \[**方案總管**\]。  
+     Visual Studio opens the new Word document in the designer and adds the **My Word Formatting** project to **Solution Explorer**.  
   
-## 將文字和控制項加入至 Word 文件  
- 在這個逐步解說中，會將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項中的三個核取方塊和一些文字加入至 Word 文件中。  這些核取方塊將向使用者呈現文字格式化選項。  
+## <a name="adding-text-and-controls-to-the-word-document"></a>Adding Text and Controls to the Word Document  
+ For this walkthrough, add three check boxes and some text in a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the Word document. The check boxes will present options to the user for formatting the text.  
   
-#### 若要加入三個核取方塊  
+#### <a name="to-add-three-check-boxes"></a>To add three check boxes  
   
-1.  確認已在 Visual Studio 設計工具中開啟文件。  
+1.  Verify that the document is open in the Visual Studio designer.  
   
-2.  從 \[**工具箱**\] 的 \[**通用控制項**\] 索引標籤，將第一個 <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> 控制項拖曳至文件。  
+2.  From the **Common Controls** tab of the **Toolbox**, drag the first <xref:Microsoft.Office.Tools.Word.Controls.CheckBox> control to the document.  
   
-3.  在 \[**屬性**\] 視窗中變更下列屬性。  
+3.  In the **Properties** window, change the following properties.  
   
-    |屬性|值|  
-    |--------|-------|  
-    |**名稱**|**applyBoldFont**|  
-    |**文字**|粗體|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyBoldFont**|  
+    |**Text**|**Bold**|  
   
-4.  按下 **Enter**，將插入點移到第一個核取方塊下方。  
+4.  Press **Enter** to move the insertion point below the first check box.  
   
-5.  將第二個核取方塊加入文件中 `ApplyBoldFont` 核取方塊下方，然後變更下列屬性。  
+5.  Add a second check box to the document below the `ApplyBoldFont` check box and change the following properties.  
   
-    |屬性|值|  
-    |--------|-------|  
-    |**名稱**|**applyItalicFont**|  
-    |**文字**|斜體|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyItalicFont**|  
+    |**Text**|**Italic**|  
   
-6.  按下 **Enter**，將插入點移到第二個核取方塊下方。  
+6.  Press **Enter** to move the insertion point below the second check box.  
   
-7.  將第三個核取方塊加入文件中 `ApplyItalicFont` 核取方塊下方，然後變更下列屬性。  
+7.  Add a third check box to the document below the `ApplyItalicFont` check box and change the following properties.  
   
-    |屬性|值|  
-    |--------|-------|  
-    |**名稱**|**applyUnderlineFont**|  
-    |**文字**|底線|  
+    |Property|Value|  
+    |--------------|-----------|  
+    |**Name**|**applyUnderlineFont**|  
+    |**Text**|**Underline**|  
   
-#### 若要加入文字和書籤控制項  
+#### <a name="to-add-text-and-a-bookmark-control"></a>To add text and a Bookmark control  
   
-1.  將插入點移到核取方塊控制項下方，並輸入下列文字：  
+1.  Move the insertion point below the check box controls and type the following text:  
   
-     按一下核取方塊，變更這段文字的格式。  
+     **Click a check box to change the formatting of this text.**  
   
-2.  從 \[**工具箱**\] 的 \[**Word 控制項**\] 索引標籤，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項拖曳至文件中。  
+2.  From the **Word Controls** tab of the **Toolbox**, drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
   
-     \[**加入書籤控制項**\] 對話方塊隨即出現。  
+     The **Add Bookmark Control** dialog box appears.  
   
-3.  選取您加入文件的文字，然後按一下 \[**確定**\]。  
+3.  Select the text you added to the document and click **OK**.  
   
-     名稱為 **Bookmark1** 的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項便會加入文件中的選取文字。  
+     A <xref:Microsoft.Office.Tools.Word.Bookmark> control named **Bookmark1** is added to the selected text in the document.  
   
-4.  將 \[**屬性**\] 視窗中的 \[**\(名稱\)**\] 屬性值變更為 **fontText。**  
+4.  In the **Properties** window, change the value of the **(Name)** property to **fontText.**  
   
- 接著，撰寫程式碼以便在選取或清除核取方塊時，將文字格式化。  
+ Next, write the code to format the text when a check box is checked or cleared.  
   
-## 在選取或清除核取方塊時將文字格式化  
- 當使用者選取某一種格式選項時，變更文件中文字的格式。  
+## <a name="formatting-the-text-when-a-check-box-is-checked-or-cleared"></a>Formatting the Text When a Check box is Checked or Cleared  
+ When the user selects a formatting option, change the format of the text in the document.  
   
-#### 若要在選取核取方塊時變更格式  
+#### <a name="to-change-formatting-when-a-check-box-is-selected"></a>To change formatting when a check box is selected  
   
-1.  在 \[**方案總管**\] 中的 `ThisDocument` 上按一下滑鼠右鍵，然後按一下捷徑功能表上的 \[**檢視程式碼**\]。  
+1.  Right-click `ThisDocument` in **Solution Explorer**, and then click **View Code** on the shortcut menu.  
   
-2.  \(僅限 C\#\) 將下列常數加入至 **ThisDocument** 類別 \(Class\)。  
+2.  For C# only, add the following constants to the **ThisDocument** class.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#2)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#2)]  
   
-3.  將下列程式碼加入至 `applyBoldFont` 核取方塊的 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
+3.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyBoldFont` check box.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#3)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ThisDocument.vb#3)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#3)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#3)]  
   
-4.  將下列程式碼加入至 `applyItalicFont` 核取方塊的 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
+4.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyItalicFont` check box.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#4)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ThisDocument.vb#4)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#4)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#4)]  
   
-5.  將下列程式碼加入至 `applyUnderlineFont` 核取方塊的 <xref:System.Windows.Forms.Control.Click> 事件處理常式。  
+5.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the `applyUnderlineFont` check box.  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#5)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/VB/ThisDocument.vb#5)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#5)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#5)]  
   
-6.  在 C\# 中，您必須將文字方塊的事件處理常式加入至 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件。  如需如何建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+6.  In C#, you must add event handlers for the text boxes to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event. For information about how to create event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingControlsWord/CS/ThisDocument.cs#6)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#6)]  
   
-## 測試應用程式  
- 您現在可以測試文件，以確認當您選取或清除核取方塊時，文字會正確地格式化。  
+## <a name="testing-the-application"></a>Testing the Application  
+ You can now test your document to verify that the text is formatted correctly when you select or clear a check box.  
   
-#### 若要測試您的文件  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  請按 F5 執行您的專案。  
+1.  Press F5 to run your project.  
   
-2.  選取或清除核取方塊。  
+2.  Select or clear a check box.  
   
-3.  請確認文字是否會正確地格式化。  
+3.  Confirm that the text is formatted correctly.  
   
-## 後續步驟  
- 這個逐步解說示範在 Word 文件上使用核取方塊以及以程式方式變更文字格式的基本概念。  以下則是接下來的一些工作：  
+## <a name="next-steps"></a>Next Steps  
+ This walkthrough shows the basics of using check boxes and programmatically changing text formatting on Word documents. Here are some tasks that might come next:  
   
--   使用按鈕填入 \(Populate\) 文字方塊。  如需詳細資訊，請參閱[逐步解說：使用按鈕在文件的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
+-   Use a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
   
--   使用選項按鈕選取圖表樣式。  如需詳細資訊，請參閱[逐步解說：使用選項按鈕更新文件中的圖表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)。  
+-   Using radio buttons to select chart styles. For more information, see [Walkthrough: Updating a Chart in a Document Using Radio Buttons](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).  
   
-## 請參閱  
- [使用 Word 的逐步解說](../vsto/walkthroughs-using-word.md)   
- [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
- [NamedRange 控制項](../vsto/namedrange-control.md)   
- [Office 文件上的 Windows Form 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+-  
+  
+## <a name="see-also"></a>See Also  
+ [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
+ [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

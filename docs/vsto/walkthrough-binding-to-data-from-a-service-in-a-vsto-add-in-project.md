@@ -1,122 +1,122 @@
 ---
-title: "逐步解說：在 VSTO 增益集專案中繫結至服務資料"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料庫 [Visual Studio 中的 Office 程式開發]，捲動記錄"
-  - "記錄 [Visual Studio 中的 Office 程式開發]，捲動"
-  - "資料 [Visual Studio 中的 Office 程式開發]，捲動資料庫記錄"
+title: 'Walkthrough: Binding to Data from a Service in a VSTO add-in Project | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- databases [Office development in Visual Studio], scrolling records
+- records [Office development in Visual Studio], scrolling
+- data [Office development in Visual Studio], scrolling database records
 ms.assetid: 9b008be4-06a3-4ffc-9f02-79dd6cfe00ab
 caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 37
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7b5c4f8ec6023dbe58d319be5343010e8c1d6140
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：在 VSTO 增益集專案中繫結至服務資料
-  您可以將資料繫結至 VSTO 增益集專案中的主控制項。 本逐步解說示範如何將控制項加入 Microsoft Office Word 文件、將控制項繫結至從 MSDN 內容服務擷取的資料，以及在執行階段回應事件。  
+# <a name="walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: Binding to Data from a Service in a VSTO add-in Project
+  You can bind data to host controls in VSTO Add-in projects. This walkthrough demonstrates how to add controls to a Microsoft Office Word document, bind the controls to data retrieved from the MSDN Content Service, and respond to events at run time.  
   
- **適用對象：**本主題資訊適用於 Word 2010 的應用程式層級專案。 如需詳細資訊，請參閱[依 Office 應用程式和專案類型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。  
+ **Applies to:** The information in this topic applies to application-level projects for Word 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   在設計階段將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項加入文件。  
+-   Adding a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control to a document at run time.  
   
--   將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項繫結至來自 Web 服務的資料。  
+-   Binding the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control to data from a Web service.  
   
--   回應 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 事件。  
+-   Responding to the <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> event of a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
   
-## 建立新專案  
- 第一步是建立 Word VSTO 增益集專案。  
+## <a name="creating-a-new-project"></a>Creating a New Project  
+ The first step is to create a Word VSTO Add-in project.  
   
-#### 若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  使用 Visual Basic 或 C\#，建立名稱為 \[MTPS 內容服務\] 的 Word VSTO 增益集專案。  
+1.  Create a Word VSTO Add-in project with the name **MTPS Content Service**, using either Visual Basic or C#.  
   
-     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio 隨即開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，並將專案加入  **方案總管**。  
+     Visual Studio opens the `ThisAddIn.vb` or `ThisAddIn.cs` file and adds the project to **Solution Explorer**.  
   
-## 加入 Web 服務  
- 此逐步解說中使用稱為 MTPS 內容服務的 Web 服務。 此 Web 服務會從指定的 MSDN 文章，以 XML 字串或純文字形式傳回資訊。 接下來的步驟示範如何在內容控制項中顯示傳回的資訊。  
+## <a name="adding-a-web-service"></a>Adding a Web Service  
+ For this walkthrough, use a Web service called the MTPS Content Service. This Web service returns information from a specified MSDN article in the form of an XML string or plain text. A later step shows how to display the returned information in a content control.  
   
-#### 將 MTPS 內容服務加入專案  
+#### <a name="to-add-the-mtps-content-service-to-the-project"></a>To add the MTPS Content Service to the project  
   
-1.  在 \[**資料**\] 功能表上，請按一下 \[**加入新資料來源**\]。  
+1.  On the **Data** menu, click **Add New Data Source**.  
   
-2.  在 \[資料來源組態精靈\] 中，按一下 \[服務\]，然後按 \[下一步\]。  
+2.  In the **Data Source Configuration Wizard**, click **Service**, and then click **Next**.  
   
-3.  在 \[位址\] 欄位中，輸入下列 URL：  
+3.  In the **Address** field, type the following URL:  
   
-     **http:\/\/services.msdn.microsoft.com\/ContentServices\/ContentService.asmx**  
+     **http://services.msdn.microsoft.com/ContentServices/ContentService.asmx**  
   
-4.  按一下 \[**Go**\]。  
+4.  Click **Go**.  
   
-5.  在 \[命名空間\] 欄位中，輸入 **ContentService**，然後按一下 \[確定\]。  
+5.  In the **Namespace** field, type **ContentService**, and click **OK**.  
   
-6.  在 \[加入參考精靈\] 對話方塊中，按一下 \[完成\]。  
+6.  In the **Add Reference Wizard** dialog box, click **Finish**.  
   
-## 在執行階段加入內容控制項並繫結至資料  
- 在 VSTO 增益集專案中，您會在執行階段加入及繫結控制項。 此逐步解說中，請設定內容控制項，當使用者在控制項內按一下時，從 Web 服務擷取資料。  
+## <a name="adding-a-content-control-and-binding-to-data-at-run-time"></a>Adding a Content Control and Binding to Data at Run Time  
+ In VSTO Add-in projects, you add and bind controls at run time. For this walkthrough, configure the content control to retrieve data from the Web service when a user clicks inside the control.  
   
-#### 加入內容控制項並繫結至資料  
+#### <a name="to-add-a-content-control-and-bind-to-data"></a>To add a content control and bind to data  
   
-1.  在 `ThisAddIn` 類別中，宣告 MTPS 內容服務、內容控制項和資料繫結的變數。  
+1.  In the `ThisAddIn` class, declare the variables for the MTPS Content Service, the content control, and the data binding.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/CS/ThisAddIn.cs#2)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/VB/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]  
   
-2.  將下列方法加入 `ThisAddIn` 類別中。 這個方法會在使用中文件的開頭建立內容控制項。  
+2.  Add the following method to the `ThisAddIn` class. This method creates a content control at the beginning of the active document.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/CS/ThisAddIn.cs#4)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/VB/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#4)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#4](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#4)]  
   
-3.  將下列方法加入 `ThisAddIn` 類別中。 這個方法會初始化所需的物件，建立並傳送要求至 Web 服務。  
+3.  Add the following method to the `ThisAddIn` class. This method initializes the objects needed to create and send a request to the Web service.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#6)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#6](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#6)]  
   
-4.  建立事件處理常式來擷取 MSDN Library 文件，關於使用者在內容控制項內按一下並將資料繫結至內容控制項時的內容控制項資訊。  
+4.  Create an event handler to retrieve the MSDN Library document about content controls when a user clicks inside of the content control and bind the data to the content control.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/CS/ThisAddIn.cs#5)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/VB/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]  
   
-5.  從 `ThisAddIn_Startup` 方法呼叫 `AddRichTextControlAtRange` 和 `InitializeServiceObjects` 方法。 C\# 程式設計人員請加入事件處理常式。  
+5.  Call the `AddRichTextControlAtRange` and `InitializeServiceObjects` methods from the `ThisAddIn_Startup` method. For C# programmers, add an event handler.  
   
-     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/CS/ThisAddIn.cs#3)]
-     [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddIn_BindingDataToContentControl/VB/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]  [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]  
   
-## 測試增益集  
- 當您開啟 Word 時，<xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控制項就會出現。 當您在控制項內按一下時，它裡面的文字會改變。  
+## <a name="testing-the-add-in"></a>Testing the Add-In  
+ When you open Word, the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> control appears. The text in the control changes when you click inside it.  
   
-#### 測試 VSTO 增益集  
+#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
   
-1.  請按 **F5**。  
+1.  Press **F5**.  
   
-2.  在內容控制項內按一下。  
+2.  Click inside of the content control.  
   
-     資訊會從 MTPS 內容服務下載並顯示在內容控制項內。  
+     Information is downloaded from the MTPS Content Service and displayed inside the content control.  
   
-## 請參閱  
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

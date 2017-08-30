@@ -1,148 +1,152 @@
 ---
-title: "逐步解說：為您的 Word 建立第一個 VSTO 增益集"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "增益集 [Visual Studio 中的 Office 程式開發], 建立第一個專案"
-  - "應用程式層級增益集 [Visual Studio 中的 Office 程式開發], 建立第一個專案"
-  - "Visual Studio 中的 Office 程式開發, 建立第一個專案"
-  - "Word [Visual Studio 中的 Office 程式開發], 建立第一個專案"
+title: 'Walkthrough: Creating Your First VSTO Add-in for Word | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- application-level add-ins [Office development in Visual Studio], creating your first project
+- Office development in Visual Studio, creating your first project
+- add-ins [Office development in Visual Studio], creating your first project
+- Word [Office development in Visual Studio], creating your first project
 ms.assetid: 9d857be7-5c74-4303-baf4-672afc1ea397
 caps.latest.revision: 55
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 31464b710698d4dd253382676bde88b01f86a62a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：為您的 Word 建立第一個 VSTO 增益集
-  本入門逐步解說將示範如何建立 Microsoft Office Word 的 VSTO 增益集。  不論開啟哪一份文件，您在這類方案中建立的功能都可供應用程式本身使用。  
+# <a name="walkthrough-creating-your-first-vsto-add-in-for-word"></a>Walkthrough: Creating Your First VSTO Add-in for Word
+  This introductory walkthrough shows you how to create a VSTO Add-in for Microsoft Office Word. The features that you create in this kind of solution are available to the application itself, regardless of which documents are open.  
   
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   建立 Word VSTO 增益集專案。  
+-   Creating a Word VSTO Add-in project.  
   
--   撰寫可使用 Word 物件模型的程式碼，儲存文件時便可加入文字。  
+-   Writing code that uses the object model of Word to add text to a document when it is saved.  
   
--   建置和執行專案來進行測試。  
+-   Building and running the project to test it.  
   
--   清除已完成的專案，使得 VSTO 增益集不再於開發電腦上自動執行。  
+-   Cleaning up the completed project so that the VSTO Add-in no longer runs automatically on your development computer.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
 -   Microsoft Word  
   
-## 建立專案  
+## <a name="creating-the-project"></a>Creating the Project  
   
-#### 在 Visual Studio 中建立新的 Word VSTO 增益集專案  
+#### <a name="to-create-a-new-word-vsto-add-in-project-in-visual-studio"></a>To create a new Word VSTO Add-in project in Visual Studio  
   
-1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  在 \[檔案\] 功能表中，指向 \[新增\]，然後按一下 \[專案\]。  
+2.  On the **File** menu, point to **New**, and then click **Project**.  
   
-3.  在範本窗格中，展開 \[Visual C\#\] 或 \[Visual Basic\]，然後展開 \[Office\/SharePoint\]。  
+3.  In the templates pane, expand **Visual C#** or **Visual Basic**, and then expand **Office/SharePoint**.  
   
-4.  在展開的 \[Office\/SharePoint\] 節點下，選取 \[Office 增益集\] 節點。  
+4.  Under the expanded **Office/SharePoint** node, select the **Office Add-ins** node.  
   
-5.  在專案範本清單中，選取 \[Word VSTO 增益集\] 專案。  
+5.  In the list of project templates, select a Word VSTO Add-in project.  
   
-6.  在 \[名稱\] 方塊中，輸入 **FirstWordAddIn**。  
+6.  In the **Name** box, type **FirstWordAddIn**.  
   
-7.  按一下 \[**確定**\]。  
+7.  Click **OK**.  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會建立 **FirstWordAddIn** 專案，並在編輯器中開啟 ThisAddIn 程式碼檔案。  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the **FirstWordAddIn** project and opens the ThisAddIn code file in the editor.  
   
-## 撰寫程式碼以將文字加入儲存的文件  
- 接著，將程式碼加入 ThisAddIn 程式碼檔。  新程式碼會使用 Word 物件模型，將未定案文字加入每份儲存的文件中。  根據預設，ThisAddIn 程式碼檔包含下列產生的程式碼：  
+## <a name="writing-code-to-add-text-to-the-saved-document"></a>Writing Code to Add Text to the Saved Document  
+ Next, add code to the ThisAddIn code file. The new code uses the object model of Word to add boilerplate text to each saved document. By default, the ThisAddIn code file contains the following generated code:  
   
--   `ThisAddIn` 類別的部分定義。  這個類別提供您撰寫程式碼的進入點，並提供對 Word 物件模型的存取。  如需詳細資訊，請參閱 [VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)。  `ThisAddIn` 類別的其餘部分則定義於您不應修改的隱藏程式碼檔中。  
+-   A partial definition of the `ThisAddIn` class. This class provides an entry point for your code and provides access to the object model of Word. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). The remainder of the `ThisAddIn` class is defined in a hidden code file that you should not modify.  
   
--   `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件處理常式。  當 Word 載入和卸載 VSTO 增益集時，會呼叫這些事件處理常式。  請使用這些事件處理常式，在 VSTO 增益集載入時將它初始化，以及在 VSTO 增益集卸載時清除它所用的資源。  如需詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+-   The `ThisAddIn_Startup` and `ThisAddIn_Shutdown` event handlers. These event handlers are called when Word loads and unloads your VSTO Add-in. Use these event handlers to initialize your VSTO Add-in when it is loaded, and to clean up resources used by your VSTO Add-in when it is unloaded. For more information, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-#### 將文字段落加入儲存的文件  
+#### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>To add a paragraph of text to the saved document  
   
-1.  在 ThisAddIn 程式碼檔中，將下列程式碼加入 `ThisAddIn` 類別。  新的程式碼會定義 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式，該事件是在儲存文件時所引發的。  
+1.  In the ThisAddIn code file, add the following code to the `ThisAddIn` class. The new code defines an event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event, which is raised when a document is saved.  
   
-     當使用者儲存文件時，事件處理常式會將新文字加入此文件開頭。  
+     When the user saves a document, the event handler adds new text at the start of the document.  
   
-     [!code-csharp[Trin_WordAddInTutorial#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInTutorial/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_WordAddInTutorial#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_WordAddInTutorial/VB/ThisAddIn.vb#1)]  
+     [!code-vb[Trin_WordAddInTutorial#1](../vsto/codesnippet/VisualBasic/FirstWordAddIn/ThisAddIn.vb#1)]  [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]  
   
     > [!NOTE]  
-    >  此程式碼會使用索引值 1 來存取 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一個段落。  雖然 Visual Basic 和 Visual C\# 都是使用以 0 為起始的陣列，但是在 Word 物件模型中，大多數集合的陣列界限下限都是 1。  如需詳細資訊，請參閱[撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)。  
+    >  This code uses an index value of 1 to access the first paragraph in the <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> collection. Although Visual Basic and Visual C# use 0-based arrays, the lower array bounds of most collections in the Word object model is 1. For more information, see [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md).  
   
-2.  如果使用的是 C\#，請將下列必要的程式碼加入 `ThisAddIn_Startup` 事件處理常式中。  這段程式碼是用來連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件。  
+2.  If you are using C#, add the following required code to the `ThisAddIn_Startup` event handler. This code is used to connect the `Application_DocumentBeforeSave` event handler with the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event.  
   
-     [!code-csharp[Trin_WordAddInTutorial#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_WordAddInTutorial/CS/ThisAddIn.cs#2)]  
+     [!code-csharp[Trin_WordAddInTutorial#2](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#2)]  
   
- 若要在儲存文件時修改文件，前面的程式碼範例可以使用下列物件：  
+ To modify the document when it is saved, the previous code examples use the following objects:  
   
--   `ThisAddIn` 類別的 `Application` 欄位。  `Application` 欄位會傳回 <xref:Microsoft.Office.Interop.Word.Application> 物件，此物件代表 Word 目前的執行個體。  
+-   The `Application` field of the `ThisAddIn` class. The `Application` field returns a <xref:Microsoft.Office.Interop.Word.Application> object, which represents the current instance of Word.  
   
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式的 `Doc` 參數。  `Doc` 參數是 <xref:Microsoft.Office.Interop.Word.Document> 物件，此物件代表儲存的文件。  如需詳細資訊，請參閱 [Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
+-   The `Doc` parameter of the event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event. The `Doc` parameter is a <xref:Microsoft.Office.Interop.Word.Document> object, which represents the saved document. For more information, see [Word Object Model Overview](../vsto/word-object-model-overview.md).  
   
-## 測試專案  
+## <a name="testing-the-project"></a>Testing the Project  
   
-#### 測試專案  
+#### <a name="to-test-the-project"></a>To test the project  
   
-1.  按 **F5** 建置及執行專案。  
+1.  Press **F5** to build and run your project.  
   
-     當您建置專案時，程式碼會編譯到包含在專案建置輸出資料夾中的組件。  Visual Studio 也會建立一組登錄項目，以便 Word 探索和載入 VSTO 增益集，而且會設定開發電腦中的安全性設定，讓 VSTO 增益集可以執行。  如需詳細資訊，請參閱 [建置 Office 方案](../vsto/building-office-solutions.md)。  
+     When you build the project, the code is compiled into an assembly that is included in the build output folder for the project. Visual Studio also creates a set of registry entries that enable Word to discover and load the VSTO Add-in, and it configures the security settings on the development computer to enable the VSTO Add-in to run. For more information, see [Building Office Solutions](../vsto/building-office-solutions.md).  
   
-2.  在 Word 中，儲存使用中的文件。  
+2.  In Word, save the active document.  
   
-3.  確認下列文字已加入文件中。  
+3.  Verify that the following text is added to the document.  
   
      **This text was added by using code.**  
   
-4.  關閉 Word。  
+4.  Close Word.  
   
-## 清除專案  
- 當您完成專案開發時，請從開發電腦移除 VSTO 增益集組件、登錄項目和安全性設定。  否則，每次在開發電腦上開啟 Word 時，VSTO 增益集將會繼續執行。  
+## <a name="cleaning-up-the-project"></a>Cleaning up the Project  
+ When you finish developing a project, remove the VSTO Add-in assembly, registry entries, and security settings from your development computer. Otherwise, the VSTO Add-in will continue to run every time that you open Word on your development computer.  
   
-#### 清除開發電腦上已完成的專案  
+#### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>To clean up the completed project on your development computer  
   
-1.  在 Visual Studio 中，按一下 \[建置\] 功能表上的 \[清除方案\]。  
+1.  In Visual Studio, on the **Build** menu, click **Clean Solution**.  
   
-## 後續步驟  
- 現在您已經建立 Word 的基本 VSTO 增益集，可以從下列主題進一步了解如何開發 VSTO 增益集：  
+## <a name="next-steps"></a>Next Steps  
+ Now that you have created a basic VSTO Add-in for Word, you can learn more about how to develop VSTO Add-ins from these topics:  
   
--   您可以在 VSTO 增益集中執行的一般程式設計工作：[VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)。  
+-   General programming tasks that you can perform in VSTO Add-ins: [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
   
--   Word VSTO 增益集特有的程式設計工作：[Word 方案](../vsto/word-solutions.md)。  
+-   Programming tasks that are specific to Word VSTO Add-ins: [Word Solutions](../vsto/word-solutions.md).  
   
--   使用 Word 物件模型：[Word 物件模型概觀](../vsto/word-object-model-overview.md)。  
+-   Using the object model of Word: [Word Object Model Overview](../vsto/word-object-model-overview.md).  
   
--   自訂 Word 的 UI，例如，將自訂索引標籤加入功能區，或建立您專屬的自訂工作窗格：[Office UI 自訂](../vsto/office-ui-customization.md)。  
+-   Customizing the UI of Word, for example, by adding a custom tab to the Ribbon or creating your own custom task pane: [Office UI Customization](../vsto/office-ui-customization.md).  
   
--   建置和偵錯 Word 的 VSTO 增益集：[建置 Office 方案](../vsto/building-office-solutions.md)。  
+-   Building and debugging VSTO Add-ins for Word: [Building Office Solutions](../vsto/building-office-solutions.md).  
   
--   部署 Word 的 VSTO 增益集：[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
+-   Deploying VSTO Add-ins for Word: [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
   
-## 請參閱  
- [Office 方案開發概觀 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
- [Word 方案](../vsto/word-solutions.md)   
- [VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)   
- [Word 物件模型概觀](../vsto/word-object-model-overview.md)   
- [Office UI 自訂](../vsto/office-ui-customization.md)   
- [建置 Office 方案](../vsto/building-office-solutions.md)   
- [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
- [Office 專案範本概觀](../vsto/office-project-templates-overview.md)  
+## <a name="see-also"></a>See Also  
+ [Office Solutions Development Overview &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)   
+ [Word Solutions](../vsto/word-solutions.md)   
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Word Object Model Overview](../vsto/word-object-model-overview.md)   
+ [Office UI Customization](../vsto/office-ui-customization.md)   
+ [Building Office Solutions](../vsto/building-office-solutions.md)   
+ [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)   
+ [Office Project Templates Overview](../vsto/office-project-templates-overview.md)  
   
   

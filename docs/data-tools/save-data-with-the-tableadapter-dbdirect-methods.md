@@ -35,8 +35,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 7a819db1f12d94ef320d5602accffd28a4be04d9
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 7b960a3124e663cd1f49d8c10e8953837a47d38a
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/30/2017
 
@@ -130,7 +130,7 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `InsertButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]  [!code-cs[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
+     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]  [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
   
 #### <a name="to-add-code-to-update-records-in-the-database"></a>To add code to update records in the database  
   
@@ -138,7 +138,7 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `UpdateButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]  [!code-cs[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
+     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]  [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>To add code to delete records from the database  
   
@@ -146,7 +146,7 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `DeleteButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]  [!code-cs[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
+     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]  [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
   
 ## <a name="run-the-application"></a>Run the application  
   

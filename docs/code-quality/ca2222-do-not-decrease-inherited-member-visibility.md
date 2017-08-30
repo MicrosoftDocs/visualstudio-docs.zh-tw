@@ -1,50 +1,66 @@
 ---
-title: "CA2222：請勿降低繼承成員的可視性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotDecreaseInheritedMemberVisibility"
-  - "CA2222"
-helpviewer_keywords: 
-  - "CA2222"
-  - "DoNotDecreaseInheritedMemberVisibility"
+title: 'CA2222: Do not decrease inherited member visibility | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotDecreaseInheritedMemberVisibility
+- CA2222
+helpviewer_keywords:
+- DoNotDecreaseInheritedMemberVisibility
+- CA2222
 ms.assetid: 066c8675-381f-43cc-956c-d757cc494028
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA2222：請勿降低繼承成員的可視性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d4ab56a1963c0b6129aff83088b08104ccbe5437
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Do not decrease inherited member visibility
 |||  
 |-|-|  
-|型別名稱|DoNotDecreaseInheritedMemberVisibility|  
+|TypeName|DoNotDecreaseInheritedMemberVisibility|  
 |CheckId|CA2222|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 非密封型別之私用 \(Private\) 方法的簽章，與在基底型別 \(Base Type\) 中宣告的公用方法完全相同。  私用方法並非 Final。  
+## <a name="cause"></a>Cause  
+ A private method in an unsealed type has a signature that is identical to a public method declared in a base type. The private method is not final.  
   
-## 規則描述  
- 您不得變更繼承成員的存取修飾詞 \(Modifier\)。  將繼承成員變更為私用不會防止呼叫端存取方法的基底類別 \(Base Class\) 實作。  如果成員變成私用且型別為非密封，繼承型別可以呼叫在繼承階層架構 \(Inheritance Hierarchy\) 中方法的最後一個公用實作。  如果您必須變更存取修飾詞，則應該將方法標記為 Final 或是密封它的型別，以防止覆寫方法。  
+## <a name="rule-description"></a>Rule Description  
+ You should not change the access modifier for inherited members. Changing an inherited member to private does not prevent callers from accessing the base class implementation of the method. If the member is made private and the type is unsealed, inheriting types can call the last public implementation of the method in the inheritance hierarchy. If you must change the access modifier, either the method should be marked final or its type should be sealed to prevent the method from being overridden.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將存取變更為非私用。  此外，如果程式語言支援的話，您可以使方法成為 Final。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the access to be non-private. Alternatively, if your programming language supports it, you can make the method final.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例顯示違反此規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-vb[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/VisualBasic/ca2222-do-not-decrease-inherited-member-visibility_1.vb)]
- [!code-cs[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/CSharp/ca2222-do-not-decrease-inherited-member-visibility_1.cs)]
+ [!code-vb[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/VisualBasic/ca2222-do-not-decrease-inherited-member-visibility_1.vb)] [!code-csharp[FxCop.Usage.InheritedPublic#1](../code-quality/codesnippet/CSharp/ca2222-do-not-decrease-inherited-member-visibility_1.cs)]

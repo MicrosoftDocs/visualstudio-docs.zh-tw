@@ -1,63 +1,68 @@
 ---
-title: "全域存取 Office 專案中的物件"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "ThisDocument_Shutdown"
-  - "ThisDocument_Startup"
-  - "全域類別，物件全域存取權"
-  - "工作表 [Visual Studio 中的 Office 程式開發]，全域存取權"
-  - "文件 [Visual Studio 中的 Office 程式開發]，全域存取權"
-  - "事件處理常式 [Visual Studio 中的 Office 程式開發]"
-  - "ThisWorkbook_Startup"
-  - "應用程式層級增益集 [Visual Studio 中的 Office 程式開發]"
-  - "增益集 [Visual Studio 中的 Office 程式開發]，事件"
-  - "活頁簿 [Visual Studio 中的 Office 程式開發]，全域存取權"
-  - "ThisWorkbook_Shutdown"
-  - "文件層級自訂 [Visual Studio 中的 Office 程式開發]"
-  - "Startup 事件"
-  - "Shutdown 事件"
-  - "專案 [Visual Studio 中的 Office 程式開發]，全域存取權"
-  - "Office 文件 [Visual Studio 中的 Office 程式開發]，全域存取權"
-  - "ThisAddin_Startup"
-  - "事件 [Visual Studio 中的 Office 程式開發]"
-  - "ThisAddIn_Shutdown"
+title: Global Access to Objects in Office Projects | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- ThisDocument_Shutdown
+- ThisDocument_Startup
+- Globals class, object global access
+- worksheets [Office development in Visual Studio], global access
+- documents [Office development in Visual Studio], global access
+- event handlers [Office development in Visual Studio]
+- ThisWorkbook_Startup
+- application-level addins [Office development in Visual Studio]
+- addins [Office development in Visual Studio], events
+- workbooks [Office development in Visual Studio], global access
+- ThisWorkbook_Shutdown
+- document-level customizations [Office development in Visual Studio]
+- Startup event
+- Shutdown event
+- projects [Office development in Visual Studio], global access
+- Office documents [Office development in Visual Studio, global access
+- ThisAddin_Startup
+- events [Office development in Visual Studio]
+- ThisAddIn_Shutdown
 ms.assetid: f6a7f0ef-75d0-4a9b-9aec-be95ffa26adf
 caps.latest.revision: 55
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 54
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: a166e8ce7dc6315d9e150e8c7a1a11d135fd5517
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 全域存取 Office 專案中的物件
-  當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
+# <a name="global-access-to-objects-in-office-projects"></a>Global Access to Objects in Office Projects
+  When you create an Office project, Visual Studio automatically generates a class named `Globals` in the project. You can use the `Globals` class to access several different project items at run time from any code in the project.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## 如何使用 Globals 類別  
- `Globals` 是靜態類別，會將某些項目的參考保留在專案中。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取下列項目：  
+## <a name="how-to-use-the-globals-class"></a>How to Use the Globals Class  
+ `Globals` is a static class that keeps references to certain items in your project. By using the `Globals` class, you can access the following items from any code in the project at run time:  
   
--   Excel 活頁簿或範本專案中的 `ThisWorkbook` 和  `Sheet`*n* 類別。 您可以使用 `Globals.ThisWorkbook` 和  `Sheet`*n* 屬性來存取這些物件。  
+-   The `ThisWorkbook` and `Sheet`*n* classes in an Excel workbook or template project. You can access these objects by using the `Globals.ThisWorkbook` and `Sheet`*n* properties.  
   
--   Word 文件或範本專案中的 `ThisDocument` 類別。 您可以使用 `Globals.ThisDocument` 屬性來存取這個物件。  
+-   The `ThisDocument` class in a Word document or template project. You can access this object by using the `Globals.ThisDocument` property.  
   
--   VSTO 增益集專案中的 `ThisAddIn` 類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
+-   The `ThisAddIn` class in an VSTO Add-in project. You can access this object by using the `Globals.ThisAddIn` property.  
   
--   專案中使用 \[功能區設計工具\] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱[在執行階段存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)。  
+-   All Ribbons in your project that you customized by using the Ribbon Designer. You can access the Ribbons by using the `Globals.Ribbons` property. For more information, see [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md).  
   
--   Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱[在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)。  
+-   All Outlook form regions in an Outlook VSTO Add-in project. You can access the form regions by using the `Globals.FormRegions` property. For more information, see [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md).  
   
--   Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：  
+-   A factory object that enables you to create Ribbon controls, and host items at run time in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. You can access this object by using the `Globals.Factory` property. This object is an instance of a class that implements one the following interfaces:  
   
     -   <xref:Microsoft.Office.Tools.Factory>  
   
@@ -67,24 +72,23 @@ caps.handback.revision: 54
   
     -   <xref:Microsoft.Office.Tools.Word.Factory>  
   
- 例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 `Sheet1` 上的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。  
+ For example, you can use the `Globals.Sheet1` property to insert text into a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on `Sheet1` when a user clicks a button on the actions pane in a document-level project for Excel.  
   
- [!code-csharp[Trin_VstcoreProgramming#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/Sheet1.cs#1)]
- [!code-vb[Trin_VstcoreProgramming#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/Sheet1.vb#1)]  
+ [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)] [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## 初始化 Globals 類別  
- 嘗試在文件或 VSTO 增益集完全初始化之前使用 `Globals` 類別的程式碼，可能會擲回執行階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。  
+## <a name="initializing-the-globals-class"></a>Initializing the Globals Class  
+ Code that attempts to use the `Globals` class before the document or VSTO Add-in is completely initialized might throw a run time exception. For example, using `Globals` when declaring a class-level variable might fail because the `Globals` class might not be initialized with references to all of the host items before the declared object is instantiated.  
   
 > [!NOTE]  
->  雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示如果您建立的使用者控制項會在使用者控制項類別中使用 `Globals` 類別的某個屬性，您必須先檢查該屬性是否傳回 **null**，再嘗試使用傳回的物件。  
+>  The `Globals` class is never initialized at design time, but control instances are created by the designer. This means that if you create a user control that uses a property of the `Globals` class from inside a user control class, you must whether the property returns **null** before you try to use the returned object.  
   
-## 請參閱  
- [在執行階段存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)   
- [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
- [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)   
- [Document 主項目](../vsto/document-host-item.md)   
- [Workbook 主項目](../vsto/workbook-host-item.md)   
- [Worksheet 主項目](../vsto/worksheet-host-item.md)   
- [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
+ [Document Host Item](../vsto/document-host-item.md)   
+ [Workbook Host Item](../vsto/workbook-host-item.md)   
+ [Worksheet Host Item](../vsto/worksheet-host-item.md)   
+ [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
   
   

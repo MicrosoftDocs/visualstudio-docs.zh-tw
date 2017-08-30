@@ -1,90 +1,91 @@
 ---
-title: "如何：從文件屬性中讀取及寫入"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Word [Visual Studio 中的 Office 程式開發]，文件屬性"
-  - "文件 [Visual Studio 中的 Office 程式開發]，屬性"
-  - "文件屬性 [Visual Studio 中的 Office 程式開發]"
-  - "Excel [Visual Studio 中的 Office 程式開發]，文件屬性"
+title: 'How to: Read from and Write to Document Properties | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Word [Office development in Visual Studio], document properties
+- documents [Office development in Visual Studio], properties
+- document properties [Office development in Visual Studio]
+- Excel [Office development in Visual Studio], document properties
 ms.assetid: e9ef9fa3-36b9-48fb-8148-f5152463c03c
 caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 8af86f91c6a2a7782ae6e02c482dfa8d76f91866
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：從文件屬性中讀取及寫入
-  文件屬性可與文件一起儲存。 Office 應用程式提供許多內建屬性，例如作者、標題和主旨。 本主題說明如何設定 Microsoft Office Excel 和 Microsoft Office Word 的文件屬性。  
+# <a name="how-to-read-from-and-write-to-document-properties"></a>How to: Read from and Write to Document Properties
+  You can store document properties along with a document. Office applications provide a number of built-in properties, such as author, title, and subject. This topic shows how to set document properties in Microsoft Office Excel and Microsoft Office Word.  
   
- ![視訊的連結](~/data-tools/media/playvideo.gif "視訊的連結") 如需相關的影片示範，請參閱[如何：存取和操作 Microsoft Word 中的自訂文件屬性](http://go.microsoft.com/fwlink/?LinkId=136772)。  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Access and Manipulate Custom Document Properties in Microsoft Word?](http://go.microsoft.com/fwlink/?LinkId=136772).  
   
  [!INCLUDE[appliesto_docprops](../vsto/includes/appliesto-docprops-md.md)]  
   
-## 設定 Excel 的文件屬性  
- 若要處理 Excel 的內建屬性，請使用下列屬性:  
+## <a name="setting-document-properties-in-excel"></a>Setting Document Properties in Excel  
+ To work with built-in properties in Excel, use the following properties:  
   
--   在文件層級專案中，使用 `ThisWorkbook` 類別的 <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> 屬性。  
+-   In a document-level project, use the <xref:Microsoft.Office.Tools.Excel.Workbook.BuiltinDocumentProperties%2A> property of the `ThisWorkbook` class.  
   
--   在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Excel.Workbook> 物件的 <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> 屬性。  
+-   In a VSTO Add-in project, use the <xref:Microsoft.Office.Interop.Excel._Workbook.BuiltinDocumentProperties%2A> property of a <xref:Microsoft.Office.Interop.Excel.Workbook> object.  
   
- 這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
+ These properties return a <xref:Microsoft.Office.Core.DocumentProperties> object, which is a collection of <xref:Microsoft.Office.Core.DocumentProperty> objects. You can use the `Item` property of the collection to retrieve a particular property, either by name or by index within the collection.  
   
- 下列程式碼範例說明如何變更文件層級專案的內建 **Revision Number** 屬性。  
+ The following code example shows how to change the built-in **Revision Number** property in a document-level project.  
   
-#### 變更 Excel 的修訂編號屬性  
+#### <a name="to-change-the-revision-number-property-in-excel"></a>To change the Revision Number property in Excel  
   
-1.  將內建的文件屬性指派給變數。  
+1.  Assign the built-in document properties to a variable.  
   
-     [!code-csharp[Trin_VstcoreProgramming#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/ThisWorkbook.cs#7)]
-     [!code-vb[Trin_VstcoreProgramming#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/ThisWorkbook.vb#7)]  
+     [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]  [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]  
   
-2.  遞增 `Revision Number` 屬性，數目為一。  
+2.  Increment the `Revision Number` property by one.  
   
-     [!code-csharp[Trin_VstcoreProgramming#8](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/CS/ThisWorkbook.cs#8)]
-     [!code-vb[Trin_VstcoreProgramming#8](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgramming/VB/ThisWorkbook.vb#8)]  
+     [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]  [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]  
   
-## 設定 Word 的文件屬性  
- 若要處理 Word 的內建屬性，請使用下列屬性:  
+## <a name="setting-document-properties-in-word"></a>Setting Document Properties in Word  
+ To work with built-in properties in Word, use the following properties:  
   
--   在文件層級專案中，使用 `ThisDocument` 類別的 <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> 屬性。  
+-   In a document-level project, use the <xref:Microsoft.Office.Tools.Word.Document.BuiltInDocumentProperties%2A> property of the `ThisDocument` class.  
   
--   在 VSTO 增益集專案中，則請使用 <xref:Microsoft.Office.Interop.Word.Document> 物件的 <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> 屬性。  
+-   In a VSTO Add-in project, use the <xref:Microsoft.Office.Interop.Word._Document.BuiltInDocumentProperties%2A> property of a <xref:Microsoft.Office.Interop.Word.Document> object.  
   
- 這些屬性會傳回 <xref:Microsoft.Office.Core.DocumentProperties> 物件，它是 <xref:Microsoft.Office.Core.DocumentProperty> 物件的集合。 您可以按照名稱或集合內的索引，使用該集合的 `Item` 屬性擷取特定的屬性。  
+ These properties return a <xref:Microsoft.Office.Core.DocumentProperties> object, which is a collection of <xref:Microsoft.Office.Core.DocumentProperty> objects. You can use the `Item` property of the collection to retrieve a particular property, either by name or by index within the collection.  
   
- 下列程式碼範例說明如何變更文件層級專案的內建 **Subject** 屬性。  
+ The following code example shows how to change the built-in **Subject** property in a document-level project.  
   
-#### 變更主旨屬性  
+#### <a name="to-change-the-subject-property"></a>To change the Subject property  
   
-1.  將內建的文件屬性指派給變數。  
+1.  Assign the built-in document properties to a variable.  
   
-     [!code-csharp[Trin_VstcoreProgrammingWord#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingWord/CS/ThisDocument.cs#1)]
-     [!code-vb[Trin_VstcoreProgrammingWord#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingWord/VB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]  [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]  
   
-2.  將 `Subject` 屬性變更成「白皮書」。  
+2.  Change the `Subject` property to "Whitepaper".  
   
-     [!code-csharp[Trin_VstcoreProgrammingWord#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingWord/CS/ThisDocument.cs#2)]
-     [!code-vb[Trin_VstcoreProgrammingWord#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreProgrammingWord/VB/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]  [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]  
   
-## 穩固程式設計  
- 此範例假設，在 Excel 文件層級專案的 `ThisWorkbook` 類別和 Word 文件層級專案的 `ThisDocument`類別中，您已經撰寫了程式碼。  
+## <a name="robust-programming"></a>Robust Programming  
+ The examples assume that you have written the code in the `ThisWorkbook` class in a document-level project for Excel, and the `ThisDocument` class in a document-level project for Word.  
   
- 雖然您處理的是 Word 和 Excel 及其物件，但 Microsoft Office 仍會提供可用的內建文件屬性清單。 嘗試存取未定義的屬性會引發例外狀況。  
+ Although you are working with Word and Excel and their objects, Microsoft Office supplies the list of available built-in document properties. Attempting to access an undefined property raises an exception.  
   
-## 請參閱  
- [VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)   
- [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
- [如何：建立及修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
+## <a name="see-also"></a>See Also  
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
+ [How to: Create and Modify Custom Document Properties](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

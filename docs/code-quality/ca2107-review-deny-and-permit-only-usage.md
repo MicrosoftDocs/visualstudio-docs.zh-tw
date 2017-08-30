@@ -1,86 +1,103 @@
 ---
-title: "CA2107：必須檢視 Deny 和 Permit Only 的使用方式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2107"
-  - "ReviewDenyAndPermitOnlyUsage"
-helpviewer_keywords: 
-  - "ReviewDenyAndPermitOnlyUsage"
-  - "CA2107"
+title: 'CA2107: Review deny and permit only usage | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2107
+- ReviewDenyAndPermitOnlyUsage
+helpviewer_keywords:
+- ReviewDenyAndPermitOnlyUsage
+- CA2107
 ms.assetid: 366f4a56-ae93-4882-81d0-bd0a55ebbc26
 caps.latest.revision: 19
-caps.handback.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2107：必須檢視 Deny 和 Permit Only 的使用方式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2f0b71223049a22e040beffc7cfb012faf858c22
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Review deny and permit only usage
 |||  
 |-|-|  
-|型別名稱|ReviewDenyAndPermitOnlyUsage|  
+|TypeName|ReviewDenyAndPermitOnlyUsage|  
 |CheckId|CA2107|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 方法會包含指定 PermitOnly 或 Deny 安全性動作的安全性檢查。  
+## <a name="cause"></a>Cause  
+ A method contains a security check that specifies the PermitOnly or Deny security action.  
   
-## 規則描述  
- 只有相當了解 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 安全性的人員才能執行 [Using the PermitOnly Method](http://msdn.microsoft.com/zh-tw/8c7bdb7f-882f-45b7-908c-6cbaa1767649) 和 <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> 安全性動作。  而使用這些安全性動作的程式碼應該接受安全性檢閱。  
+## <a name="rule-description"></a>Rule Description  
+ The [Using the PermitOnly Method](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649) and <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> security actions should be used only by those who have an advanced knowledge of [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] security. Code that uses these security actions should undergo a security review.  
   
- Deny 會更改堆疊查核行程為了回應安全性需求而發生的預設行為。  不論呼叫堆疊中呼叫端的實際使用權限為何，它可以讓您指定在 Deny 方法期間絕對不能授與的使用權限。  如果堆疊查核行程偵測到受到 Deny 保護的方法，以及要求的使用權限已併入拒絕的使用權限中，則堆疊查核行程會失敗。  PermitOnly 也會更改堆疊查核行程的預設行為。  不論呼叫端的使用權限為何，它可以讓程式碼指定能夠授與的使用權限範圍。  如果堆疊查核行程偵測到受到 PermitOnly 保護的方法，以及要求的使用權限未併入 PermitOnly 所指定的使用權限中，則堆疊查核行程會失敗。  
+ Deny alters the default behavior of the stack walk that occurs in response to a security demand. It lets you specify permissions that must not be granted for the duration of the denying method, regardless of the actual permissions of the callers in the call stack. If the stack walk detects a method that is secured by Deny, and if the demanded permission is included in the denied permissions, the stack walk fails. PermitOnly also alters the default behavior of the stack walk. It allows code to specify only those permissions that can be granted, regardless of the permissions of the callers. If the stack walk detects a method that is secured by PermitOnly, and if the demanded permission is not included in the permissions that are specified by the PermitOnly, the stack walk fails.  
   
- 您應該仔細評估會依賴這些動作的程式碼，以找出因它有限用處和難以預測之行為所產生的安全性弱點。  請考慮下列事項：  
+ Code that relies on these actions should be carefully evaluated for security vulnerabilities because of their limited usefulness and subtle behavior. Consider the following:  
   
--   [Link Demands](../Topic/Link%20Demands.md)不會受到 Deny 或 PermitOnly 的影響。  
+-   [Link Demands](/dotnet/framework/misc/link-demands) are not affected by Deny or PermitOnly.  
   
--   如果 Deny 或 PermitOnly 與導致堆疊查核行程的要求會出現在同一堆疊框架 \(Stack Frame\) 中，則安全性動作不會有任何作用。  
+-   If the Deny or PermitOnly occurs in the same stack frame as the demand that causes the stack walk, the security actions have no effect.  
   
--   用於建構以路徑為基礎之使用權限的值通常可以利用多種方法指定。  拒絕存取某一形式的路徑，並不表示會拒絕存取所有形式的路徑。  例如，如果檔案共用對應至網路磁碟 X: 的 \\\\Server\\Share，若要拒絕存取共用上的檔案，則您必須拒絕 \\\\Server\\Share\\File、X:\\File，以及所有會存取檔案的路徑。  
+-   Values that are used to construct path-based permissions can usually be specified in multiple ways. Denying access to one form of the path does not deny access to all forms. For example, if a file share \\\Server\Share is mapped to a network drive X:, to deny access to a file on the share, you must deny \\\Server\Share\File, X:\File and every other path that accesses the file.  
   
--   <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> 可以在到達 Deny 或 PermitOnly 之前，終止堆疊查核行程。  
+-   An <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> can terminate a stack walk before the Deny or PermitOnly is reached.  
   
--   如果 Deny 有任何作用，也就是說，當呼叫端具有 Deny 封鎖的使用權限時，呼叫端可以略過 Deny 直接存取受保護的資源。  同樣地，如果呼叫端沒有拒絕的使用權限，則堆疊查核行程將會因為沒有 Deny 方法而失敗。  
+-   If a Deny has any effect, namely, when a caller has a permission that is blocked by the Deny, the caller can access the protected resource directly, bypassing the Deny. Similarly, if the caller does not have the denied permission, the stack walk would fail without the Deny.  
   
-## 如何修正違規  
- 任何使用這些安全性動作都將導致違規。  若要修正違規，請勿使用這些安全性動作。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Any use of these security actions will cause a violation. To fix a violation, do not use these security actions.  
   
-## 隱藏警告的時機  
- 只有在完成安全性檢閱後，才能隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule only after you complete a security review.  
   
-## 範例  
- 下列範例為 Deny 的某些限制。  
+## <a name="example"></a>Example  
+ The following example demonstrates some limitations of Deny.  
   
- 下列程式庫包含一個類別，其中有兩個相同的方法，但保護它們的安全性要求卻不同。  
+ The following library contains a class that has two methods that are identical except for the security demands that protect them.  
   
- [!CODE [FxCop.Security.PermitAndDeny#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Security.PermitAndDeny#1)]  
+ [!code-csharp[FxCop.Security.PermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]  
   
-## 範例  
- 下列應用程式會示範 Deny 對程式庫中受保護之方法所產生的作用。  
+## <a name="example"></a>Example  
+ The following application demonstrates the effects of Deny on the secured methods from the library.  
   
- [!code-cs[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_1.cs)]  
+ [!code-csharp[FxCop.Security.TestPermitAndDeny#1](../code-quality/codesnippet/CSharp/ca2107-review-deny-and-permit-only-usage_2.cs)]  
   
- 這個範例產生下列輸出。  
+ This example produces the following output.  
   
-  **Demand：呼叫端的 Deny 對具有已判斷提示之使用權限的 Demand 沒有作用。**  
-**LinkDemand：呼叫端的 Deny 對具有已判斷提示之使用權限的 LinkDemand 沒有作用。**  
-**LinkDemand：呼叫端的 Deny 對 LinkDemand 保護的程式碼沒有作用。**  
-**LinkDemand：這個 Deny 對 LinkDemand 保護的程式碼沒有作用。**   
-## 請參閱  
+ **Demand: Caller's Deny has no effect on Demand with the asserted permission.**  
+**LinkDemand: Caller's Deny has no effect on LinkDemand with the asserted permission.**  
+**LinkDemand: Caller's Deny has no effect with LinkDemand-protected code.**  
+**LinkDemand: This Deny has no effect with LinkDemand-protected code.**   
+## <a name="see-also"></a>See Also  
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Overriding Security Checks](http://msdn.microsoft.com/zh-tw/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [Using the PermitOnly Method](http://msdn.microsoft.com/zh-tw/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Overriding Security Checks](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
+ [Using the PermitOnly Method](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

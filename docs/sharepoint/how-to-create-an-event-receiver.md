@@ -1,77 +1,81 @@
 ---
-title: "如何：建立事件接收器"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.SPE.EventReceiver"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "事件接收器 [Visual Studio 中的 SharePoint 開發]"
-  - "Visual Studio 中的 SharePoint 開發, 事件接收器"
+title: 'How to: Create an Event Receiver | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.SPE.EventReceiver
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, event receivers
+- event receivers [SharePoint development in Visual Studio]
 ms.assetid: 6f90cb48-eb8f-43c2-a3f7-ed4ce81aedf2
 caps.latest.revision: 20
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 19
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 69a1c53bd067b77838e133808f0c72ca153e4bc7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：建立事件接收器
-  藉由建立 *事件接收器*，您可以在使用者與 SharePoint 項目 \(例如清單或清單項目時\) 互動時給予回應。  例如，當有人變更行事曆或從連絡人清單刪除姓名時，就會觸發事件接收器中的程式碼。  遵循這個主題，您可以學習如何將事件接收器加入至清單執行個體。  
+# <a name="how-to-create-an-event-receiver"></a>How to: Create an Event Receiver
+  By creating *event receivers*, you can respond when a user interacts with SharePoint items such as lists or list items. For example, the code in an event receiver can be triggered when a user changes the calendar or deletes a name from a contacts list. By following this topic, you can learn how to add an event receiver to a list instance.  
   
- 若要完成這些步驟，您必須安裝 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 以及 Windows 和 SharePoint 的支援的版本。  如需詳細資訊，請參閱[開發 SharePoint 方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  由於這個範例需要 SharePoint 專案，您也必須完成主題 [逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 的程序。  
+ To complete these steps, you must have installed [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] and supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md). Because this example requires a SharePoint project, you also must have completed the procedure in the topic [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-## 加入事件接收器  
- 您在 [逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 中建立的專案包含自訂網站欄、自訂清單和一個內容類型。  在下列程序中，您可以將簡單的事件處理常式 \(事件接收器\) 加入至清單執行個體，展開專案，並且顯示如何處理在 SharePoint 項目發生 \(例如清單\) 的事件。  
+## <a name="adding-an-event-receiver"></a>Adding an Event Receiver  
+ The project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) includes custom site columns, a custom list, and a content type. In the following procedure, you'll expand this project by adding a simple event handler (an event receiver) to a list instance to show how to handle events that occur in SharePoint items such as lists.  
   
-#### 若要將事件接收器加入至清單執行個體  
+#### <a name="to-add-an-event-receiver-to-the-list-instance"></a>To add an event receiver to the list instance  
   
-1.  開啟您在[逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中建立的專案。  
+1.  Open the project that you created in [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).  
   
-2.  在 \[**方案總管**\] 中，選取名為 \[**診斷所**\] 的 SharePoint 專案節點。  
+2.  In **Solution Explorer**, choose the SharePoint project node, which is named **Clinic**.  
   
-3.  在功能表列中，選擇 \[**專案**\]、\[**加入新項目**\]。  
+3.  On the menu bar, choose **Project**, **Add New Item**.  
   
-4.  在 \[**Visual C\#**\] 或 \[**Visual Basic**\] 底下，展開的 \[**SharePoint**\] 節點，然後按一下 \[**2010**\] 項目。  
+4.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** item.  
   
-5.  在 \[**範本**\] 窗格中，選取 \[**事件接收器**\]，將其命名為 TestEventReceiver1，然後選擇 \[**確定**\] 按鈕。  
+5.  In the **Templates** pane, choose **Event Receiver**, name it **TestEventReceiver1**, and then choose the **OK** button.  
   
-     \[**SharePoint 自訂精靈**\] 隨即出現。  
+     The **SharePoint Customization Wizard** appears.  
   
-6.  在 \[**您要何種類型的事件接收器?**\] 清單中，選取 \[**清單項目事件**\]。  
+6.  In the **What type of event receiver do you want?** list, choose **List Item Events**.  
   
-7.  在 \[**哪些項目應為事件來源?**\] 清單中，選取 \[**患者 \(診斷所\\患者\)**\]。  
+7.  In the **What item should be the event source?** list, choose **Patients (Clinic\Patients)**.  
   
-8.  在 \[**處理下列事件**\] 清單中，選取 \[**已加入一個項目**\] 旁的核取方塊，然後選擇 \[**結束**\] 按鈕。  
+8.  In the **Handle the following events** list, select the check box next to **An item was added**, and then choose the **Finish** button.  
   
-     新的事件接收器程式碼檔包含一個名為 `ItemAdded` 的方法。  在下一個步驟中，您會將程式碼加入至這個方法，根據預設，讓每個連絡人將名為 Scott Brown。  
+     The code file for the new event receiver contains a single method that's named `ItemAdded`. In the next step, you'll add code to this method so that every contact will be named Scott Brown by default.  
   
-9. 使用下列程式碼取代現有的 `ItemAdded` 方法，然後按 F5 鍵：  
+9. Replace the existing `ItemAdded` method with the following code, and then choose the F5 key:  
   
-     [!code-csharp[SP_EventReceiver#1](../snippets/csharp/VS_Snippets_OfficeSP/sp_eventreceiver/CS/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
-     [!code-vb[SP_EventReceiver#1](../snippets/visualbasic/VS_Snippets_OfficeSP/sp_eventreceiver/VB/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
+     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]   [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]  
   
-     程式碼執行，然後 SharePoint 網站會出現在 Web 瀏覽器。  
+     The code runs, and the SharePoint site appears in the web browser.  
   
-10. 在快速啟動列，請選擇 \[**患者**\] 連結，然後選擇 \[**加入新項目**\] 連結。  
+10. On the QuickLaunch bar, choose the **Patients** link, and then choose the **Add New Item** link.  
   
-     新項目的資料表單開啟。  
+     The entry form for new items opens.  
   
-11. 在欄位中輸入資料，然後選擇 \[**儲存**\] 按鈕。  
+11. Enter data in the fields, and then choose the **Save** button.  
   
-     選擇 \[**儲存**\] 按鈕後，\[**病患名稱**\] 資料行自動更新為 Scott Brown 名稱。  
+     After you choose the **Save** button, the **Patient Name** column automatically updates to the name Scott Brown.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

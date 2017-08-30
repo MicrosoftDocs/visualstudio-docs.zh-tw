@@ -1,56 +1,59 @@
 ---
-title: "如何：以程式設計方式在 Visio 文件中複製並貼上圖形"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "圖形 [Visual Studio 中的 Office 程式開發]，複製並貼上 Visio 圖形"
-  - "Visio [Visual Studio 中的 Office 程式開發]，複製並貼上 Visio 圖形"
+title: 'How to: Programmatically Copy and Paste Shapes in a Visio Document | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- shapes [Office development in Visual Studio], copying and pasting Visio shapes
+- Visio [Office development in Visual Studio], copying and pasting Visio shapes
 ms.assetid: 762d95cf-2d5c-4dea-988b-8f4da88fa1f1
 caps.latest.revision: 15
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 0a2603284a790ee940b8b20126e5994f35c59b65
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式在 Visio 文件中複製並貼上圖形
-  您可以程式設計方式，將文件頁面上的圖形複製貼到同一份文件的另一個新頁面上。 您可以選擇將圖形貼到預設位置 \(使用中視窗的中央\)，或是貼到與原始頁面一樣的座標位置。  
+# <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>How to: Programmatically Copy and Paste Shapes in a Visio Document
+  You can programmatically copy shapes on one page of a document and paste them into a new page in the same document. You can choose to paste them into the default location (the center of the active window) or into the same coordinate locations as they had on the original page.  
   
-## 複製並貼上圖形  
- 如需物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](HV10070304)、[Microsoft.Office.Interop.Visio.Shape.DrawOval](HV10070300)、[Microsoft.Office.Interop.Visio.Shape.Copy](HV10070291) 和 [Microsoft.Office.Interop.Visio.Shape.Paste](HV10070437) 方法以及 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](HV10071835) 旗標的 VBA 參考文件。  
+## <a name="copying-and-pasting-shapes"></a>Copying and Pasting Shapes  
+ For details about the object model, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), and [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) methods and the [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNormal](https://msdn.microsoft.com/library/office/ff765187.aspx) flag.  
   
-#### 若要將圖形複製至另一頁的中央  
+#### <a name="to-copy-shapes-to-the-center-of-another-page"></a>To copy shapes to the center of another page  
   
--   下列範例會示範如何從第一個頁面複製圖形，並貼到第二個頁面的中央。  
+-   The following example demonstrates how to copy the shapes from the first page and paste them into the center of the second page.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#14)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#14)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]  
   
-## 複製圖形並以相同位置貼上圖形  
- 如需物件模型的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](HV10070304)、[Microsoft.Office.Interop.Visio.Shape.DrawOval](HV10070300)、[Microsoft.Office.Interop.Visio.Shape.Copy](HV10070291) 和 [Microsoft.Office.Interop.Visio.Shape.Paste](HV10070437) 方法以及 [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](HV10071835) 旗標的 VBA 參考文件。  
+## <a name="copying-and-pasting-shapes-with-the-same-positions"></a>Copying and Pasting Shapes With the Same Positions  
+ For details about the object model, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Shape.DrawRectangle](https://msdn.microsoft.com/library/office/ff765757.aspx), [Microsoft.Office.Interop.Visio.Shape.DrawOval](https://msdn.microsoft.com/library/office/ff767121.aspx), [Microsoft.Office.Interop.Visio.Shape.Copy](https://msdn.microsoft.com/library/office/ff765638.aspx), and [Microsoft.Office.Interop.Visio.Shape.Paste](https://msdn.microsoft.com/library/office/ff768361.aspx) methods and the [Microsoft.Office.Interop.Visio.VisCutCopyPasteCodes.visCopyPasteNoTranslate](https://msdn.microsoft.com/library/office/ff765187.aspx) flag.  
   
- 如果需要控制貼上資訊的格式以及 \(選擇性\) 建立來源檔案 \(例如 Microsoft Office Word 文件\) 的連結，請使用 PasteSpecial 方法。  
+ If you need to control the format of the pasted information and (optionally) establish a link to a source file (for example, a Microsoft Office Word document), use the PasteSpecial method.  
   
-#### 若要將圖形和圖形位置複製到另一頁  
+#### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>To copy shapes and shape locations to another page  
   
--   下列範例會示範如何從第一個頁面複製圖形，並以其原始座標位置貼到第二個頁面。  
+-   The following example demonstrates how to copy the shapes from the first page and paste them into the second page with their original coordinate locations.  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/CS/ThisAddIn.cs#15)]
-     [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreVisioAutomationAddIn/VB/ThisAddIn.vb#15)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]  
   
-## 請參閱  
- [Visio 方案](../vsto/visio-solutions.md)   
- [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
- [使用 Visio 圖案](../vsto/working-with-visio-shapes.md)   
- [如何：以程式設計方式將圖形加入至 Visio 文件](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
+## <a name="see-also"></a>See Also  
+ [Visio Solutions](../vsto/visio-solutions.md)   
+ [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
+ [Working with Visio Shapes](../vsto/working-with-visio-shapes.md)   
+ [How to: Programmatically Add Shapes to a Visio Document](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)  
   
   

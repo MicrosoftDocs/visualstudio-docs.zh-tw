@@ -37,8 +37,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: a4b147718a69c01dba4343764f5685fc94f90331
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 8bcbcd429438fe7789234e375d64d397d31d1ff8
 ms.contentlocale: zh-tw
 ms.lasthandoff: 08/30/2017
 
@@ -107,7 +107,7 @@ A parameterized query returns data that meets the conditions of a WHERE clause w
   
  If this were a query on a TableAdapter, you could query for all orders that have not been shipped with the following code:  
   
- [!code-cs[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)] [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
+ [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)] [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
   
 #### <a name="to-enable-a-query-to-accept-null-values"></a>To enable a query to accept null values  
   

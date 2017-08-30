@@ -1,47 +1,64 @@
 ---
-title: "CA2142：透明程式碼不可以使用 LinkDemand 加以保護 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2142"
+title: 'CA2142: Transparent code should not be protected with LinkDemands | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2142
 ms.assetid: 6dc59053-5dd9-4583-bf10-5f339107e59f
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
----
-# CA2142：透明程式碼不可以使用 LinkDemand 加以保護
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 79889b3b9829c590162271677fafe6846147246c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: Transparent code should not be protected with LinkDemands
 |||  
 |-|-|  
-|型別名稱|TransparentMethodsShouldNotBeProtectedWithLinkDemands|  
+|TypeName|TransparentMethodsShouldNotBeProtectedWithLinkDemands|  
 |CheckId|CA2142|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 透明方法需要 <xref:System.Security.Permissions.SecurityAction> 或其他安全性要求。  
+## <a name="cause"></a>Cause  
+ A transparent method requires a <xref:System.Security.Permissions.SecurityAction> or other security demand.  
   
-## 規則描述  
- 需要 LinkDemand 才能存取的透明方法會引發這個規則。  安全性透明程式碼不應負責驗證作業的安全性，因此，不應要求權限。  由於透明方法的安全性應該是中立的，因此不應進行任何安全性決策。  此外，安全關鍵程式碼 \(不會進行安全性決策\) 不應該依賴透明程式碼在先前進行此類決策。  
+## <a name="rule-description"></a>Rule Description  
+ This rule fires on transparent methods which require LinkDemands to access them. Security transparent code should not be responsible for verifying the security of an operation, and therefore should not demand permissions. Because transparent methods are supposed to be security neutral, they should not be making any security decisions. Additionally, safe critical code, which does make security decisions, should not be relying on transparent code to have previously made such a decision.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請移除透明方法的連結要求，若方法執行安全性檢查 \(例如安全性要求\)，則在方法標記 <xref:System.Security.SecuritySafeCriticalAttribute> 屬性。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the link demand on the transparent method or mark the method with <xref:System.Security.SecuritySafeCriticalAttribute> attribute if it is performing security checks, such as security demands.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 在下列範例中，由於方法是透明的而且標記了包含 <xref:System.Security.Permissions.SecurityAction> 的 LinkDemand <xref:System.Security.PermissionSet>，因此會引發規則。  
+## <a name="example"></a>Example  
+ In the following example, the rule fires on the method because the method is transparent and is marked with a LinkDemand <xref:System.Security.PermissionSet> that contains an <xref:System.Security.Permissions.SecurityAction>.  
   
- [!code-cs[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]  
+ [!code-csharp[FxCop.Security.CA2142.TransparentMethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2142-transparent-code-should-not-be-protected-with-linkdemands_1.cs)]  
   
- 請勿隱藏此規則的警告。
+ Do not suppress a warning from this rule.

@@ -1,83 +1,86 @@
 ---
-title: "Office 中的執行緒支援"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "多個執行緒 [Visual Studio 中的 Office 程式開發]"
-  - "物件模型 [Visual Studio 中的 Office 程式開發], 執行緒支援"
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發], 執行緒支援"
-  - "執行緒 [Visual Studio 中的 Office 程式開發]"
+title: Threading Support in Office | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- multiple threads [Office development in Visual Studio]
+- threading [Office development in Visual Studio]
+- Office applications [Office development in Visual Studio], threading support
+- object models [Office development in Visual Studio], threading support
 ms.assetid: 810a6648-fece-4b43-9eb6-948d28ed2157
 caps.latest.revision: 33
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 32
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 10df94908366d53a01239bbd2ce9837d2b6780e6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# Office 中的執行緒支援
-  這個主題會提供 Microsoft Office 物件模型 \(Object Model\) 中如何支援執行緒的相關資訊。  雖然 Office 物件模型並非安全執行緒，不過您可以在一個 Office 方案中使用多個執行緒。  Office 應用程式就是元件物件模型 \(Component Object Model，COM\) 伺服器。  COM 可讓用戶端在任意執行緒上呼叫 COM 伺服器。  若為非安全執行緒的 COM 伺服器，COM 會提供一項序列化並行呼叫的機制，以便隨時只有一個邏輯執行緒會在伺服器上執行。  這項機制就稱為單一執行緒 Apartment \(STA\) 模型。  由於呼叫已序列化，因此當伺服器忙碌中或在背景執行緒上處理其他呼叫時，呼叫端可能會被封鎖一段時間。  
+# <a name="threading-support-in-office"></a>Threading Support in Office
+  This topic provides information about how threading is supported in the Microsoft Office object model. The Office object model is not thread safe, but it is possible to work with multiple threads in an Office solution. Office applications are Component Object Model (COM) servers. COM allows clients to call COM servers on arbitrary threads. For COM servers that are not thread safe, COM provides a mechanism to serialize concurrent calls so that only one logical thread executes on the server at any time. This mechanism is known as the single-threaded apartment (STA) model. Because calls are serialized, callers might be blocked for periods of time while the server is busy or is handling other calls on a background thread.  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## 使用多執行緒時所需知識  
- 若要使用多執行緒，必須至少具備下列與多執行緒處理相關的基本知識：  
+## <a name="knowledge-required-when-using-multiple-threads"></a>Knowledge Required When Using Multiple Threads  
+ To work with multiple threads, you must have at least basic knowledge of the following aspects of multithreading:  
   
--   Windows API  
+-   Windows APIs  
   
--   COM 多執行緒概念  
+-   COM multithreaded concepts  
   
--   並行  
+-   Concurrency  
   
--   同步處理  
+-   Synchronization  
   
--   封送處理  
+-   Marshaling  
   
- 如需多執行緒處理的一般資訊，請參閱[元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)。  
+ For general information about multithreading, see [Managed Threading](/dotnet/standard/threading/).  
   
- Office 會在主 STA 中執行。  了解這點的含意後，就可以了解如何搭配 Office 使用多個執行緒。  
+ Office runs in the main STA. Understanding the implications of this makes it possible to understand how to use multiple threads with Office.  
   
-## 基本多執行緒案例  
- Office 方案中的程式碼永遠會在 UI 主執行緒上執行。  您可能會想要在背景執行緒上另外執行不同的工作，讓應用程式效能流暢進行。  目標是幾乎在同時完成兩個工作，而不是一個工作在先，另一個工作在後，以便讓執行更加順暢 \(這是使用多執行緒的主要原因\)。  例如，您或許能以 Excel UI 主執行緒來處理事件，而同時在背景執行緒上執行另一個工作，從伺服器收集資料，並以伺服器的資料更新 Excel UI 中的儲存格。  
+## <a name="basic-multithreading-scenario"></a>Basic Multithreading Scenario  
+ Code in Office solutions always runs on the main UI thread. You might want to smooth out application performance by running a separate task on a background thread. The goal is to complete two tasks seemingly at once instead of one task followed by the other, which should result in smoother execution (the main reason to use multiple threads). For example, you might have your event code on the main Excel UI thread, and on a background thread you might run a task that gathers data from a server and updates cells in the Excel UI with the data from the server.  
   
-## 呼叫 Office 物件模型的背景執行緒  
- 當背景執行緒呼叫 Office 應用程式時，呼叫會自動跨越 STA 界限進行封送處理。  不過，不保證 Office 應用程式可以在背景執行緒進行呼叫時處理呼叫。  這些可能性包括：  
+## <a name="background-threads-that-call-into-the-office-object-model"></a>Background Threads That Call into the Office Object Model  
+ When a background thread makes a call to the Office application, the call is automatically marshaled across the STA boundary. However, there is no guarantee that the Office application can handle the call at the time the background thread makes it. There are several possibilities:  
   
-1.  Office 應用程式必須提取訊息，呼叫才有機會進入。  如果它正在進行重大的處理，而無法退讓時，就會耗費一些時間。  
+1.  The Office application must pump messages for the call to have the opportunity to enter. If it is doing heavy processing without yielding this could take time.  
   
-2.  如果 Apartment 中已經有另一個邏輯執行緒，新的執行緒便無法進入。  通常當邏輯執行緒進入 Office 應用程式，然後對呼叫端的 Apartment 進行重新進入呼叫時，就會發生這種情況。  應用程式會被封鎖並等候該呼叫傳回。  
+2.  If another logical thread is already in the apartment, the new thread cannot enter. This often happens when a logical thread enters the Office application and then makes a reentrant call back to the caller's apartment. The application is blocked waiting for that call to return.  
   
-3.  Excel 可能處於某種情況，無法立即處理傳入的呼叫。  例如，Office 應用程式可能正在顯示強制回應對話方塊。  
+3.  Excel might be in a state such that it cannot immediately handle an incoming call. For example, the Office application might be displaying a modal dialog.  
   
- 針對第 2 項和第 3 項可能性，COM 提供了 [IMessageFilter](http://msdn.microsoft.com/zh-tw/e12d48c0-5033-47a8-bdcd-e94c49857248) 介面。  如果伺服器實作此介面，所有呼叫都會透過 [HandleIncomingCall](http://msdn.microsoft.com/zh-tw/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) 方法進入。  若為第 2 項可能性，呼叫都會自動遭拒。  若為第 3 項可能性，伺服器可能會根據情況，拒絕呼叫。  如果呼叫遭拒，呼叫端就必須決定因應措施。  通常，呼叫端會實作 [IMessageFilter](http://msdn.microsoft.com/zh-tw/e12d48c0-5033-47a8-bdcd-e94c49857248)，以便透過 [RetryRejectedCall](http://msdn.microsoft.com/zh-tw/3f800819-2a21-4e46-ad15-f9594fac1a3d) 方法收到拒絕通知。  
+ For possibilities 2 and 3, COM provides the [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248) interface. If the server implements it, all calls enter through the [HandleIncomingCall](http://msdn.microsoft.com/en-us/7e31b518-ef4f-4bdd-b5c7-e1b16383a5be) method. For possibility 2, calls are automatically rejected. For possibility 3, the server can reject the call, depending on the circumstances. If the call is rejected, the caller must decide what to do. Normally, the caller implements [IMessageFilter](http://msdn.microsoft.com/en-us/e12d48c0-5033-47a8-bdcd-e94c49857248), in which case it would be notified of the rejection by the [RetryRejectedCall](http://msdn.microsoft.com/en-us/3f800819-2a21-4e46-ad15-f9594fac1a3d) method.  
   
- 不過，如果方案是以 Visual Studio 中的 Office 開發工具建立，則 COM Interop 會將所有遭拒的呼叫轉換成 <xref:System.Runtime.InteropServices.COMException> \(「訊息篩選器顯示應用程式正在忙碌中」\)。  每當您在背景執行緒上進行物件模型呼叫時，就必須準備處理這項例外狀況。  通常，處理方式包括重試一段時間，然後顯示對話方塊。  不過，您也可將背景執行緒建立為 STA，然後註冊訊息篩選條件，讓該執行緒處理這種情況。  
+ However, in the case of solutions created by using the Office development tools in Visual Studio, COM interop converts all rejected calls to a <xref:System.Runtime.InteropServices.COMException> ("The message filter indicated that the application is busy"). Whenever you make an object model call on a background thread, you must to be prepared to handle this exception. Typically, that involves retrying for a certain amount of time and then displaying a dialog. However, you can also create the background thread as STA and then register a message filter for that thread to handle this case.  
   
-## 正確啟動執行緒  
- 當您建立新的 STA 執行緒時，請先將 Apartment 狀態設為 STA，再啟動執行緒。  下列程式碼範例示範如何執行這項操作。  
+## <a name="starting-the-thread-correctly"></a>Starting the Thread Correctly  
+ When you create a new STA thread, set the apartment state to STA before you start the thread. The following code example demonstrates how to do this.  
   
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/CS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreCreatingExcel/VB/ThisWorkbook.vb#5)]  
+ [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)] [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]  
   
- 如需詳細資訊，請參閱[Managed Threading Best Practices](http://msdn.microsoft.com/library/e51988e7-7f4b-4646-a06d-1416cee8d557)。  
+ For more information, see [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices).  
   
-## 非強制回應表單  
- 非強制回應表單允許在顯示表單的同時，與應用程式之間進行某種互動。  使用者與表單互動，而表單毋需關閉，即可與應用程式互動。  Office 物件模型支援 Managed 非強制回應表單，但是，不應該在背景執行緒上使用。  
+## <a name="modeless-forms"></a>Modeless Forms  
+ A modeless form allows some type of interaction with the application while the form is displayed. The user interacts with the form, and the form interacts with the application without closing. The Office object model supports managed modeless forms; however, they should not be used on a background thread.  
   
-## 請參閱  
- [元件中的多執行緒](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779)   
- [Managed Threading](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87)   
- [執行緒 &#40;C&#35; 和 Visual Basic&#41;](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c)   
- [Using Threads and Threading](http://msdn.microsoft.com/library/9b5ec2cd-121b-4d49-b075-222cf26f2344)   
- [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Managed Threading](/dotnet/standard/threading/)  
+ [Threading (C#)](/dotnet/csharp/programming-guide/concepts/threading/index) [Threading (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)   
+ [Using Threads and Threading](/dotnet/standard/threading/using-threads-and-threading)   
+ [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)  
   
   

@@ -1,62 +1,77 @@
 ---
-title: "CA1011：建議將基底類型當做參數傳遞 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ConsiderPassingBaseTypesAsParameters"
-  - "CA1011"
-helpviewer_keywords: 
-  - "CA1011"
-  - "ConsiderPassingBaseTypesAsParameters"
+title: 'CA1011: Consider passing base types as parameters | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ConsiderPassingBaseTypesAsParameters
+- CA1011
+helpviewer_keywords:
+- CA1011
+- ConsiderPassingBaseTypesAsParameters
 ms.assetid: ce1e1241-dcf4-419b-9363-1d5bc4989279
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA1011：建議將基底類型當做參數傳遞
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2d950f5e6d9d5bdecfec1353f8c00171884f2e21
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Consider passing base types as parameters
 |||  
 |-|-|  
-|型別名稱|ConsiderPassingBaseTypesAsParameters|  
+|TypeName|ConsiderPassingBaseTypesAsParameters|  
 |CheckId|CA1011|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 方法宣告中包含屬於衍生型別 \(Derived Type\) 的型式參數，但該方法只會呼叫該參數的基底型別 \(Base Type\) 成員。  
+## <a name="cause"></a>Cause  
+ A method declaration includes a formal parameter that is a derived type, and the method calls only members of the base type of the parameter.  
   
-## 規則描述  
- 當方法宣告將基底型別指定為參數，則從此基底型別衍生的任何型別都可以當做對應引數傳遞給方法。  在方法主體內使用引數時，執行的特定方法需視引數型別而定。  如果不需要以衍生型別提供額外的功能，則可以使用基底型別讓方法獲得更廣泛的使用。  
+## <a name="rule-description"></a>Rule Description  
+ When a base type is specified as a parameter in a method declaration, any type that is derived from the base type can be passed as the corresponding argument to the method. When the argument is used inside the method body, the specific method that is executed depends on the type of the argument. If the additional functionality that is provided by the derived type is not required, use of the base type allows wider use of the method.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將參數型別變更為基底型別。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the type of the parameter to its base type.  
   
-## 隱藏警告的時機  
- 您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule  
   
--   如果方法需要衍生型別所提供的特定功能  
+-   if the method requires the specific functionality that is provided by the derived type  
   
-     \-或\-  
+     \- or -  
   
--   強制只能將衍生型別或衍生程度更大的型別傳遞至方法。  
+-   to enforce that only the derived type, or a more derived type, is passed to the method.  
   
- 在這些情況下，因為編譯器和執行階段提供了強式型別檢查，程式碼將會變得更強固。  
+ In these cases, the code will be more robust because of the strong type checking that is provided by the compiler and runtime.  
   
-## 範例  
- 在下列範例中，程式碼會顯示方法 `ManipulateFileStream`，它僅可與違反此規則的 <xref:System.IO.FileStream> 物件一起使用。  第二個方法 `ManipulateAnyStream` 會以 <xref:System.IO.Stream> 取代 <xref:System.IO.FileStream> 參數，以滿足此規則。  
+## <a name="example"></a>Example  
+ The following example shows a method, `ManipulateFileStream`, that can be used only with a <xref:System.IO.FileStream> object, which violates this rule. A second method, `ManipulateAnyStream`, satisfies the rule by replacing the <xref:System.IO.FileStream> parameter by using a <xref:System.IO.Stream>.  
   
- [!code-cs[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
- [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
- [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
+ [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)] [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)] [!code-vb[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/VisualBasic/ca1011-consider-passing-base-types-as-parameters_1.vb)]  
   
-## 相關規則  
- [CA1059：成員不應該公開特定的具象類型](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1059: Members should not expose certain concrete types](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

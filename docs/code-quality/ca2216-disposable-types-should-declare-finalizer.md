@@ -1,42 +1,58 @@
 ---
-title: "CA2216：可處置類型應該宣告完成項 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DisposableTypesShouldDeclareFinalizer"
-  - "CA2216"
-helpviewer_keywords: 
-  - "CA2216"
-  - "DisposableTypesShouldDeclareFinalizer"
+title: 'CA2216: Disposable types should declare finalizer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DisposableTypesShouldDeclareFinalizer
+- CA2216
+helpviewer_keywords:
+- CA2216
+- DisposableTypesShouldDeclareFinalizer
 ms.assetid: 0cabcc5e-b526-452b-8c2a-0cbe3b93c0ef
 caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2216：可處置類型應該宣告完成項
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 34689736c4fe492c9826ac844b011f84edeb6b24
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Disposable types should declare finalizer
 |||  
 |-|-|  
-|型別名稱|DisposableTypesShouldDeclareFinalizer|  
+|TypeName|DisposableTypesShouldDeclareFinalizer|  
 |CheckId|CA2216|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 實作 <xref:System.IDisposable?displayProperty=fullName> 且具有建議 Unmanaged 資源用法之欄位的型別，未實作如 <xref:System.Object.Finalize%2A?displayProperty=fullName> 所述的完成項。  
+## <a name="cause"></a>Cause  
+ A type that implements <xref:System.IDisposable?displayProperty=fullName>, and has fields that suggest the use of unmanaged resources, does not implement a finalizer as described by <xref:System.Object.Finalize%2A?displayProperty=fullName>.  
   
-## 規則描述  
- 如果可處置型別包含下列型別的欄位，就會報告違反此規則：  
+## <a name="rule-description"></a>Rule Description  
+ A violation of this rule is reported if the disposable type contains fields of the following types:  
   
 -   <xref:System.IntPtr?displayProperty=fullName>  
   
@@ -44,28 +60,28 @@ manager: "wpickett"
   
 -   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請實作會呼叫 <xref:System.IDisposable.Dispose%2A> 方法的完成項。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement a finalizer that calls your <xref:System.IDisposable.Dispose%2A> method.  
   
-## 隱藏警告的時機  
- 如果該型別並未實作 <xref:System.IDisposable> 以達到釋放 Unmanaged 資源的目的，則您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the type does not implement <xref:System.IDisposable> for the purpose of releasing unmanaged resources.  
   
-## 範例  
- 下列範例顯示違反此規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-cs[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
+ [!code-csharp[FxCop.Usage.DisposeNoFinalize#1](../code-quality/codesnippet/CSharp/ca2216-disposable-types-should-declare-finalizer_1.cs)]  
   
-## 相關規則  
- [CA2115：使用原生資源時必須呼叫 GC.KeepAlive](../Topic/CA2115:%20Call%20GC.KeepAlive%20when%20using%20native%20resources.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2115: Call GC.KeepAlive when using native resources](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816：正確呼叫 GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: Call GC.SuppressFinalize correctly](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA1049：擁有原生資源的類型應為可處置](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
+ [CA1049: Types that own native resources should be disposable](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.IDisposable?displayProperty=fullName>   
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [處置模式](../Topic/Dispose%20Pattern.md)
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

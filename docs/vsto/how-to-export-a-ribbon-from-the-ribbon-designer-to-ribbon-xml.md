@@ -1,76 +1,80 @@
 ---
-title: "如何：將功能區設計工具的功能區匯出到功能區 XML"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "自訂功能區, XML"
-  - "自訂功能區, XML"
-  - "匯出功能區"
-  - "功能區 [Visual Studio 中的 Office 程式開發], 匯出"
-  - "功能區 [Visual Studio 中的 Office 程式開發], XML"
-  - "功能區設計工具 [Visual Studio 中的 Office 程式開發]"
-  - "XML [Visual Studio 中的 Office 程式開發], 功能區"
+title: 'How to: Export a Ribbon from the Ribbon Designer to Ribbon XML | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- custom Ribbon, XML
+- customizing the Ribbon, XML
+- Ribbon [Office development in Visual Studio], XML
+- Ribbon [Office development in Visual Studio], exporting
+- XML [Office development in Visual Studio], Ribbon
+- Ribbon Designer [Office development in Visual Studio]
+- exporting Ribbon
 ms.assetid: 96e0e9ed-4392-4f45-ac33-b6f7c22ea321
 caps.latest.revision: 37
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 33
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cf3b9b66e0626328bccac92ab473dee33326b0f2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：將功能區設計工具的功能區匯出到功能區 XML
-  \[**功能區 \(視覺化設計工具\)**\] 項目不支援所有可能的功能區自訂類型。  若要以進階的方式自訂功能區，您可以從設計工具將功能區匯出至功能區 XML，並且直接編輯 XML。  
+# <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>How to: Export a Ribbon from the Ribbon Designer to Ribbon XML
+  The **Ribbon (Visual Designer)** item does not support all possible types of Ribbon customization. To customize the Ribbon in advanced ways, you can export the Ribbon from the designer to Ribbon XML and edit the XML directly.  
   
 > [!NOTE]  
->  並非所有屬性值都會出現在功能區 XML 檔中。  如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
+>  Not all property values appear in the Ribbon XML file. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md).  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-### 將功能區設計工具的功能區匯出到功能區 XML  
+### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>To export a Ribbon from the Ribbon Designer to Ribbon XML  
   
-1.  以滑鼠右鍵按一下 \[**方案總管**\] 中的功能區程式碼檔，然後按一下 \[**設計工具檢視**\]。  
+1.  Right-click the Ribbon code file in **Solution Explorer**, and then click **View Designer**.  
   
-2.  以滑鼠右鍵按一下功能區設計工具，然後按一下 \[**將功能區匯出至 XML**\]。  
+2.  Right-click the Ribbon Designer, and then click **Export Ribbon to XML**.  
   
-     Visual Studio 會將功能區 XML 檔案和功能區 XML 程式碼檔加入至專案。  
+     Visual Studio adds a Ribbon XML file and a Ribbon XML code file to your project.  
   
-3.  在功能區程式碼類別中，尋找開頭為 `TODO:.` 的註解。  
+3.  In the Ribbon code class, locate the comments that start with `TODO:`.  
   
-4.  根據您開發的方案類型而定，將這些註解中的程式碼區塊複製到 \[**ThisAddin**\]、\[**ThisWorkbook**\] 或 \[**ThisDocument**\] 類別中。  
+4.  Copy the code block in these comments to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, depending on which type of solution you are developing.  
   
-     此程式碼可以讓 Microsoft Office 應用程式探索及載入您的自訂功能區。  如需詳細資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
+     This code enables the Microsoft Office application to discover and load your custom Ribbon. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-5.  在 \[**ThisAddin**\]、\[**ThisWorkbook**\] 或 \[**ThisDocument**\] 類別中，取消程式碼區塊的註解。  
+5.  In the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class, uncomment the code block.  
   
-     取消註解程式碼之後，程式碼應該類似下列範例。  在這個範例中，功能區類別稱為 `MyRibbon`。  
+     After you uncomment the code, it should resemble the following example. In this example, the Ribbon class is called `MyRibbon`.  
   
-     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/CS/ThisAddIn.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Ribbon_Custom_Tab_XML/VB/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-6.  切換到功能區 XML 程式碼檔案並尋找 `Ribbon Callbacks` 區域。  
+6.  Switch to the Ribbon XML code file and find the `Ribbon Callbacks` region.  
   
-     這是您撰寫回呼方法以處理使用者動作 \(例如按一下按鈕\) 的區域。  
+     This is where you write callback methods to handle user actions, such as clicking a button.  
   
-7.  針對您在功能區設計工具程式碼中撰寫的每個事件處理常式建立回呼方法。  
+7.  Create a callback method for each event handler that you wrote in the Ribbon Designer code.  
   
-8.  將您所有的事件處理常式程式碼從事件處理常式移到回呼方法，並且修改程式碼以便配合功能區擴充性 \(RibbonX\) 程式設計模型使用。  
+8.  Move all your event handler code from the event handlers to the callback methods, and modify the code to work with the Ribbon extensibility (RibbonX) programming model.  
   
-     如需撰寫回呼方法及使用 RibbonX 程式設計模型的詳細資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
+     For information about writing callback methods and using the RibbonX programming model, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
-## 請參閱  
- [功能區概觀](../vsto/ribbon-overview.md)   
- [功能區設計工具](../vsto/ribbon-designer.md)   
- [功能區 XML](../vsto/ribbon-xml.md)   
- [逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [逐步解說：使用功能區 XML 建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)   
+ [Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
+ [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
   
   
