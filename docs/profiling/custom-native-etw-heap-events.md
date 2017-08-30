@@ -67,7 +67,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 從[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)工具擷取的快照 (未追蹤自訂堆積) 只會顯示 8192 位元組的單一配置，而不會顯示任何由集區所做的自訂配置：
 
-![Windows 堆積配置](~/profiling/media/heap-example-windows-heap.png)
+![Windows 堆積配置](media/heap-example-windows-heap.png)
 
 藉由執行下列步驟，我們可以使用這個相同工具來追蹤自訂堆積中的記憶體使用量。
 
@@ -158,17 +158,17 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 ## <a name="tracking-memory-usage"></a>追蹤記憶體使用量
 這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
 
-![啟用堆積分析](~/profiling/media/heap-enable-heap.png)
+![啟用堆積分析](media/heap-enable-heap.png)
 
 若要檢視自訂堆積追蹤，請使用位於 [快照] 視窗右上角的 [堆積] 下拉式清單，將 [NT 堆積] 檢視變更為您已命名的堆積。
 
-![堆積選取範圍](~/profiling/media/heap-example-custom-heap.png)
+![堆積選取範圍](media/heap-example-custom-heap.png)
 
 以上述的程式碼範例來看，當我們使用 `MemoryPool` 建立 `VSHeapTracker::CHeapTracker` 物件，並使用我們自己的 `allocate` 方法呼叫 `AllocateEvent` 方法時，您即可看到該自訂配置結果顯示 3 個執行個體，共計有 24 個位元組，且均為 `Foo` 類型。
 
 預設的「NT 堆積」堆積看起來和之前相同，只是新增了我們的 `CHeapTracker` 物件。
 
-![NT 堆積與追蹤程式](~/profiling/media/heap-example-windows-heap.png)
+![NT 堆積與追蹤程式](media/heap-example-windows-heap.png)
 
 如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件，以了解相關說明。
 
