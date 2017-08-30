@@ -41,7 +41,7 @@ Visual Studio R 工具 (RTVS) 提供 R Markdown 項目範本、編輯器支援 (
     install.packages("rmarkdown")
 
     ```
-1. 建立新的 R Markdown 檔案：使用 [檔案] > [新增] 功能表命令，從清單中選取 [R Markdown]，或以滑鼠右鍵按一下方案總管中的專案，然後選取 [新增 R Markdown] (或 [新增] > [新增項目...]，然後從清單中選取 [R Markdown])。
+1. 建立新的 R Markdown 檔案：使用 [檔案] > [新增] 功能表命令，從清單中選取 [R Markdown]，或以滑鼠右鍵按一下方案總管中的專案，然後選取 [新增 R Markdown]\(或 [新增] > [新增項目...]，然後從清單中選取 [R Markdown])。
 
 1. 新檔案的預設內容如下︰
 
