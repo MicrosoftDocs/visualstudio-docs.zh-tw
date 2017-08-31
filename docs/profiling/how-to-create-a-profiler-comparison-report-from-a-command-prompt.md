@@ -1,37 +1,54 @@
 ---
-title: "如何：從命令提示字元建立程式碼剖析工具比較報表 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Create a Profiler Comparison Report from a Command Prompt | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 00548d16-eb5b-46f7-8a65-862f98a43831
 caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# 如何：從命令提示字元建立程式碼剖析工具比較報表
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 064bad8c9344e3d10941341fa4f382e90c041c20
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
 
-您可以產生 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表，比較兩個程式碼剖析資料檔案 \(.VSP 或 .VSPS\) 的效能資料。  報告會顯示兩個程式碼剖析工作階段之間的差異、效能衰退和改善。  報告中的值會呈現與所指定第一個檔案之基準的差異 \(Delta\) 或變更。  這項差異的計算方法是找出舊的值 \(也就是基準值\) 以及新的分析結果值兩者之間的差異。  分析工具資料的比較基準可以是程式碼中的函式、應用程式中的模組、程式行、指定指標 \(IP\) 以及型別。  
+---
+# <a name="how-to-create-a-profiler-comparison-report-from-a-command-prompt"></a>How to: Create a Profiler Comparison Report from a Command Prompt
+You can generate a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools report that compares the performance data of two profiling data (.VSP /or .VSPS) files. The report shows the differences, performance regressions, and improvements that occurred from one profiling session to the other. The values in the report present the delta, or change, from the baseline of the first file that you specify. This delta is calculated by determining the difference between the old value, which is the baseline value, and the result value from the new analysis. Comparisons of profiler data can be based on the functions in the code, modules in the application, lines, instruction pointers (IPs), and types.  
   
- 若要列出比較分類和欄位的識別項，請輸入下列命令列：  
+ To list the identifiers of the comparison categories and fields, type the following command line:  
   
- **VSPerfReport \/querydifftables**  *VspFileName1* *VspFileName2*  
+ **VSPerfReport /querydifftables**  *VspFileName1* *VspFileName2*  
   
- 使用下列語法可以建立比較報告：  
+ Use the following syntax to create the comparison report:  
   
- **VSPerfReport \/diff**  `VspFileName1` *VspFileName2* \[**\/**`Options`\]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
   
- 您可以從下表將選項加入至 **VSPerfReport \/diff**  命令列。  
+ You can add options from the following table to the **VSPerfReport /diff** command line.  
   
-|選項|描述|  
-|--------|--------|  
-|**DiffThreshold:**\[*Value*\]|如果差異低於這個百分比臨界值，則忽略其差異。  此外，值低於此臨界值的新資料將不會顯示。|  
-|**DiffTable:** *TableName*|使用此資料表可以比較檔案。  預設會使用函式資料表。  指定 **VSPerfReport \/querydifftables** 中列出的識別項。|  
-|**DiffColumn:** *ColumnName*|使用此資料行可以比較值。  預設會使用專有樣本百分比資料行。  指定 **VSPerfReport \/querydifftables** 中列出的識別項。|
+|Option|Description|  
+|------------|-----------------|  
+|**DiffThreshold:**[*Value*]|Disregard the difference if it is below this percentage threshold value. Also, new data with values that are below this threshold will not appear.|  
+|**DiffTable:** *TableName*|Use this table to compare files. By default, the functions table is used. Specify the identifier that is listed in **VSPerfReport /querydifftables**.|  
+|**DiffColumn:** *ColumnName*|Use this column to compare values. By default, the exclusive samples percent column is used. Specify the identifier that is listed in **VSPerfReport /querydifftables**.|

@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: e044bcd713862e2b9a87440987432b6da1e9693f
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 09eb8904a2ec442d02f31bf8793d6a105d04ac6a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 # <a name="get-started-with-the-visual-studio-debugger"></a>Get started with the Visual Studio debugger
@@ -250,7 +250,7 @@ Mostly, we use the keyboard shortcuts here, because it's a good way to get fast 
 
      ![Use the Run to Cursor feature](../debugger/media/dbg-tour-run-to-cursor.png "Run to Cursor")
 
-    You should be paused on the breakpoint in `OnApplicationStartup` (since that is the first breakpoint.
+    You should be paused on the breakpoint in `MainWindow` (since that is the first breakpoint.
 
 3. Press F5 to advance to the `Add` method where you selected **Run to Cursor**.
 
@@ -280,7 +280,7 @@ Let's say that you are done examining the `Update` method in Data.cs, and you wa
      
      ![Exception Helper](../debugger/media/dbg-tour-exception-helper.png "Exception Helper")
 
-     Here, the **Exception Helper** shows you a `System.Argument` exception and an error message that says that the path is not a legal form. So, we know the error occurred on a method or function argument.
+     Here, the **Exception Helper** shows you a `System.ArgumentException` and an error message that says that the path is not a legal form. So, we know the error occurred on a method or function argument.
 
      In this example, the `DirectoryInfo` call gave the error on the empty string stored in the `value` variable. (Hover over `value` to see the empty string.)
 
@@ -303,3 +303,4 @@ To learn more about the features of the debugger, see [Debugger Tips and Tricks]
 
 ## <a name="see-also"></a>See Also  
  [Debugging in Visual Studio](../debugger/index.md) [Debugger Feature Tour](../debugger/debugger-feature-tour.md)
+

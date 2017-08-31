@@ -1,111 +1,127 @@
 ---
-title: "如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Attach the Profiler to a Native Service to Collect Application Statistics by Using the Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f783817f-77a0-4eb8-985b-ec3b77eadc42
 caps.latest.revision: 25
-caps.handback.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: e2e07d92de6f9fa3f15a2ebe1b87b495c3f85515
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
 
-本主題說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具將分析工具附加至原生服務，以及使用取樣方法收集效能統計資料。  
+---
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>How to: Attach the Profiler to a Native Service to Collect Application Statistics by Using the Command Line
+This topic describes how to use the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to attach the profiler to a native service and collect performance statistics by using the sampling method.  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中的增強安全性功能，需要在 Visual Studio 分析工具收集這些平台資料的方式上進行重大變更。  Windows 市集應用程式也需要新的收集技術。  請參閱 [剖析 Windows 8 和 Windows Server 2012 應用程式](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。  若要使用程式碼剖析工具的命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- 當程式碼剖析工具附加至服務時，您可以暫停和繼續資料收集。  
+ While the profiler is attached to the service, you can pause and resume data collection.  
   
- 若要結束程式碼剖析工作階段，程式碼剖析工具必須從服務中斷連結，而且程式碼剖析工具必須明確關閉。  
+ To end a profiling session, the profiler must be detached from the service and the profiler must be explicitly shut down.  
   
-## 以程式碼剖析工具啟動應用程式  
- 若要將程式碼剖析工具附加至原生服務，請使用 **VSPerfCmd.exe** [\/start](../profiling/start.md) 和 [\/attach](../profiling/attach.md) 選項初始化程式碼剖析工具並附加至目標應用程式。  在單一命令列上，可指定 **\/start** 和 **\/attach** 以及其個別選項。  您也可以加入 [\/globaloff](../profiling/globalon-and-globaloff.md) 選項，在目標應用程式啟動時暫停資料收集。  接著使用 [\/globalon](../profiling/globalon-and-globaloff.md) 開始收集資料。  
+## <a name="starting-the-application-with-the-profiler"></a>Starting the Application with the Profiler  
+ To attach the profiler to a native service, you use the **VSPerfCmd.exe**[/start](../profiling/start.md) and [/attach](../profiling/attach.md) options to initialize the profiler and attach it to the target application. You can specify **/start** and **/attach** and their respective options on a single command line. You can also add the [/globaloff](../profiling/globalon-and-globaloff.md) option to pause data collection at the start of the target application. You can then use [/globalon](../profiling/globalon-and-globaloff.md) to begin collecting data.  
   
-#### 若要將程式碼剖析工具附加至原生服務  
+#### <a name="to-attach-the-profiler-to-a-native-service"></a>To attach the Profiler to a native service  
   
-1.  如有必要，請啟動服務。  
+1.  If necessary, start the service.  
   
-2.  開啟命令提示字元視窗。  
+2.  Open a command prompt window.  
   
-3.  啟動程式碼剖析工具。  型別：  
+3.  Start the profiler. Type:  
   
-     **VSPerfCmd \/start:sample**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
+     **VSPerfCmd /start:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   **\/start:sample** 選項會初始化此分析工具。  
+    -   The **/start:sample** option initializes the profiler.  
   
-    -   **\/output:** `OutputFile` 選項必須搭配 **\/start** 使用。  `OutputFile` 指定程式碼剖析資料 \(.vsp\) 檔案的名稱和位置。  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     下列任何選項都可以搭配 **\/start:sample** 選項使用。  
+     You can use any of the following options with the **/start:sample** option.  
   
     > [!NOTE]
-    >  服務通常需要 **\/user** 和 **\/crosssession** 選項。  
+    >  The **/user** and **/crosssession** options are usually required for services.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|指定擁有已進行程式碼剖析處理序之帳戶的網域和使用者名稱。  只有在處理序是以非登入使用者的身分執行時，才需要這個選項。  處理序擁有人列於 \[Windows 工作管理員\] 的 \[處理程序\] 索引標籤上的 \[使用者名稱\] 資料行。|  
-    |[\/crosssession](../profiling/crosssession.md)|對其他工作階段中的處理序啟用程式碼剖析。  如果應用程式在不同的工作階段中執行，就必須有這個選項。  工作階段 ID 列於 \[Windows 工作管理員\] 之 \[處理程序\] 索引標籤上的 \[工作階段識別碼\] 資料行。  **\/CS** 可以當做 **\/crosssession** 的縮寫來指定。|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|僅能與 **\/wincounter** 搭配使用。  指定 Windows 效能計數器收集事件之間的毫秒數。  預設為 500 毫秒。|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 \(ETW\) 事件。  ETW 事件是在不同的 \(.etl\) 檔案中收集的。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the profiled process. This option is required only if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-4.  將程式碼剖析工具附加到服務。  型別：  
+4.  Attach the profiler to the service. Type:  
   
-     **VSPerfCmd \/attach:** `PID` \[`Sample Event`\]  
+     **VSPerfCmd /attach:** `PID` [`Sample Event`]  
   
-     `PID` 指定目標應用程式的處理序 ID。  您可以在 \[Windows 工作管理員\] 中檢視所有執行中處理序的處理序 ID。  
+     `PID` specifies the process ID of the target application. You can view the process IDs of all running processes in Windows Task Manager.  
   
-     根據預設，效能資料為每 10,000,000 個未暫止處理器時脈循環取樣一次。  在 1GHz 的處理器上，大約每 10 秒鐘一次。  您可以指定下列其中一項，變更時脈循環間隔或指定不同的取樣事件。  
+     By default, performance data is sampled every 10,000,000 non-halted processor clock cycles. This is approximately once every 10 seconds on a 1GH processor. You can specify one of the following options to change the clock cycle interval or to specify a different sampling event.  
   
-    |取樣事件|描述|  
-    |----------|--------|  
-    |[\/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 所指定的未暫止時脈循環數目。|  
-    |[\/pf](../profiling/pf.md)\[**:**`Interval`\]|將取樣事件變更為分頁錯誤。  如果已指定 `Interval`，則會設定樣本之間的分頁錯誤數目。  預設值為 10。|  
-    |[\/sys](../profiling/sys-vsperfcmd.md) \[**:**`Interval`\]|將取樣事件變更為從處理序對作業系統核心的系統呼叫 \(syscall\)。  如果已指定 `Interval`，則會設定樣本之間的呼叫數目。  預設值為 10。|  
-    |[\/counter](../profiling/counter.md) **:** `Config`|將取樣事件和間隔變更為 `Config` 中指定的處理器效能計數器和間隔。|  
+    |Sample Event|Description|  
+    |------------------|-----------------|  
+    |[/timer](../profiling/timer.md) **:** `Interval`|Changes the sampling interval to the number of non-halted clock cycles specified by `Interval`.|  
+    |[/pf](../profiling/pf.md)[**:**`Interval`]|Changes the sampling event to page faults. If `Interval` is specified, sets the number of page faults between samples. Default is 10.|  
+    |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Changes the sampling event to system calls from the process to the operating system kernel (syscalls). If `Interval` is specified, sets the number of calls between samples. Default is 10.|  
+    |[/counter](../profiling/counter.md) **:** `Config`|Changes the sampling event and interval to the processor performance counter and interval specified in `Config`.|  
   
-## 控制資料收集  
- 當目標應用程式正在執行時，您可以使用 **VSPerfCmd.exe** 選項，啟動及停止將資料寫入程式碼剖析工具資料檔案。  資料收集控制可讓您收集程式執行中特定組件的資料，例如應用程式的開始與結束。  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the target application is running, you can use **VSPerfCmd.exe** options to start and stop the writing of data to the profiler data file. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
   
-#### 若要啟動和停止資料收集  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   下列 **VSPerfCmd** 選項配對會啟動和停止資料收集。  在不同的命令列上指定每個選項。  您可以多次開啟或關閉資料收集。  
+-   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|啟動 \(**\/globalon**\) 或停止 \(**\/globaloff**\) 所有處理序的資料收集。|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID` [\/processoff](../profiling/processon-and-processoff.md)**:**`PID`|啟動 \(**\/processon**\) 或停止 \(**\/processoff**\) 對處理序 ID \(`PID`\) 所指定的處理序進行資料收集。|  
-    |**\/attach:** {`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[:{`PID`&#124;`ProcName`}\]|**\/attach** 會開始針對處理序 ID 或處理序名稱指定的處理序來收集資料。  **\/detach** 會停止對指定的處理序收集資料，如果沒有指定處理序，則停止所有處理序的資料收集。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** starts to collect data for the process specified by the process ID or process name. **/detach** stops data collection for the specified process, or for all processes if a process is not specified.|  
   
-## 結束程式碼剖析工作階段  
- 若要結束程式碼剖析工作階段，程式碼剖析工具必須從服務中斷連結，然後明確地關閉。  您可以藉由停止服務或呼叫 **VSPerfCmd \/detach** 選項，將使用取樣方法進行程式碼剖析的原生服務中斷連結。  然後呼叫 **VSPerfCmd** [\/shutdown](../profiling/shutdown.md) 選項，關閉程式碼剖析工具並關閉程式碼剖析資料檔案。  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, the profiler must be detached from the service and then explicitly shut down. You can detach native service that is being profiled with the sampling method by stopping the service or by calling the **VSPerfCmd /detach** option. You then call the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file.  
   
-#### 若要結束程式碼剖析工作階段  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  請執行下列其中一個動作，從目標應用程式中斷連結程式碼剖析工具：  
+1.  Do one of the following to detach the profiler from the target application:  
   
-    -   停止服務。  
+    -   Stop the service.  
   
-         \-或\-  
+         -or-  
   
-    -   輸入 **VSPerfCmd \/detach**  
+    -   Type **VSPerfCmd /detach**  
   
-2.  關閉程式碼剖析工具。  型別：  
+2.  Shut down the profiler. Type:  
   
-     **VSPerfCmd \/shutdown**  
+     **VSPerfCmd /shutdown**  
   
-## 請參閱  
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)   
- [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling Services](../profiling/command-line-profiling-of-services.md)   
+ [Sampling Method Data Views](../profiling/profiler-sampling-method-data-views.md)

@@ -1,133 +1,149 @@
 ---
-title: "如何：使用程式碼剖析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Instrument a Dynamically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：使用程式碼剖析工具命令列檢測動態編譯的 ASP.NET Web 應用程式並收集記憶體資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 3e20fe47ea52737031ab6cc84c47ef0979e4160f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
 
-本主題說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具，透過檢測程式碼剖析方法來為動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細的 .NET 記憶體配置和物件存留期資料。  
+---
+# <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>How to: Instrument a Dynamically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line
+This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to collect detailed .NET memory allocation and object lifetime data for a dynamically compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application by using the instrumentation profiling method.  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。  若要使用程式碼剖析工具的命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- 若要收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料，您可以修改目標應用程式的 web.config 檔案啟用 [VSInstr.exe](../profiling/vsinstr.md) 工具，以檢測動態編譯的應用程式檔案。  然後使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具設定裝載 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的伺服器，並且設定適當的環境變數以啟用 .NET 記憶體程式碼剖析，再重新啟動電腦。  
+ To collect performance data from a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, you modify the web.config file of the target application to enable the [VSInstr.exe](../profiling/vsinstr.md) tool to instrument the dynamically compiled application files. You then use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to configure the server that hosts the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application and enable .NET memory profiling by setting the appropriate environment variables, and then restart the computer.  
   
- 若要收集資料，請啟動程式碼剖析工具，然後執行目標應用程式。  程式碼剖析工具會附加至應用程式時，您可以暫停和繼續資料收集。當您收集到適當的資料時，依序關閉應用程式、Internet Information Services \(IIS\) 背景工作處理序，再關閉程式碼剖析工具。  
+ To collect data, start the profiler and then run the target application. While the profiler is attached to the application, you can pause and resume data collection.When you have collected the appropriate data, close the application, close the Internet Information Services (IIS) worker process, and then shut down the profiler.  
   
- 完成程式碼剖析工作時，將 web.config 檔案和 Web 伺服器還原為原始狀態。  
+ When you have completed your profiling work, restore the web.config file and the Web server to their original states.  
   
-## 設定 ASP.NET Web 應用程式和 Web 伺服器  
+## <a name="configuring-the-aspnet-web-application-and-the-web-server"></a>Configuring the ASP.NET Web Application and the Web Server  
   
-#### 若要設定 ASP.NET Web 應用程式和 Web 伺服器  
+#### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>To configure the ASP.NET Web application and the Web server  
   
-1.  修改目標應用程式的 web.config 檔案。  請參閱 [如何：修改 Web.Config 檔案以檢測並分析動態編譯的 ASP.NET Web 應用程式](../Topic/How%20to:%20Modify%20Web.Config%20Files%20to%20Instrument%20and%20Profile%20Dynamically%20Compiled%20ASP.NET%20Web%20Applications.md)。  
+1.  Modify the web.config file of the target application. See [How to: Modify Web.Config Files to Instrument and Profile Dynamically Compiled ASP.NET Web Applications](../profiling/how-to-modify-web-config-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications.md).  
   
-2.  在裝載 Web 應用程式的電腦上開啟命令提示字元視窗。  
+2.  Open a command prompt window on the computer that hosts the Web application.  
   
-3.  初始化程式碼剖析環境變數。  型別：  
+3.  Initialize the profiling environment variables. Type:  
   
-     **VSPerfClrEnv \/globaltracegc**  
+     **VSPerfClrEnv /globaltracegc**  
   
-     \-或\-  
+     -or-  
   
-     **VSPerfClrEnv \/globaltracegclife**  
+     **VSPerfClrEnv /globaltracegclife**  
   
-    -   **\/globaltracegc** 可啟用記憶體配置資料的收集功能。  
+    -   **/globaltracegc** enables the collection of memory allocation data.  
   
-    -   **\/globaltracegclife** 可啟用記憶體配置資料和物件存留期資料的收集功能。  
+    -   **/globaltracegclife** enables the collection of memory allocation data and object lifetime data.  
   
-4.  重新啟動電腦。  
+4.  Restart the computer.  
   
-## 執行程式碼剖析工作階段  
+## <a name="running-the-profiling-session"></a>Running the Profiling Session  
   
-#### 若要對 ASP.NET Web 應用程式進行程式碼剖析  
+#### <a name="to-profile-the-aspnet-web-application"></a>To profile the ASP.NET Web application  
   
-1.  啟動程式碼剖析工具。  型別：  
+1.  Start the profiler. Type:  
   
-     **VSPerfCmd** [\/start](../profiling/start.md)**:trace** [\/output](../profiling/output.md)**:**`OutputFile` \[`Options`\]  
+     **VSPerfCmd** [/start](../profiling/start.md) **:trace** [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   **\/start:trace** 選項會初始化程式碼剖析工具。  
+    -   The **/start:trace** option initializes the profiler.  
   
-    -   **\/output:** `OutputFile` 選項必須搭配 **\/start** 使用。  `OutputFile` 指定程式碼剖析資料 \(.vsp\) 檔案的名稱和位置。  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     下列任何選項都可以搭配 **\/start:trace** 選項使用。  
+     You can use any of the following options with the **/start:trace** option.  
   
     > [!NOTE]
-    >  ASP.NET 應用程式通常需要 **\/user** 和 **\/crosssession** 選項。  
+    >  The **/user** and **/crosssession** options are usually required for ASP.NET applications.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|指定擁有 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序之帳戶的選擇性網域和使用者名稱。  如果處理序是以非登入使用者的身分執行，就必須有這個選項。  該名稱會列於 \[Windows 工作管理員\] 的 \[處理程序\] 索引標籤上的 \[使用者名稱\] 資料行。|  
-    |[\/crosssession](../profiling/crosssession.md)|對其他工作階段中的處理序啟用程式碼剖析。  如果應用程式在不同的工作階段中執行，就必須有這個選項。  工作階段 ID 列於 \[Windows 工作管理員\] 之 \[處理程序\] 索引標籤上的 \[工作階段識別碼\] 資料行。  **\/CS** 可以當做 **\/crosssession** 的縮寫來指定。|  
-    |[\/globaloff](../profiling/globalon-and-globaloff.md)|在暫停資料收集的情況下，啟動程式碼剖析工具。  使用 [\/globalon](../profiling/globalon-and-globaloff.md) 繼續程式碼剖析。|  
-    |[\/counter](../profiling/counter.md) **:** `Config`|從 `Config` 中指定的處理器效能計數器收集資訊。  計數器資訊會加入至每個程式碼剖析事件收集的資料中。|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|僅能與 **\/wincounter** 搭配使用。  指定 Windows 效能計數器收集事件之間的毫秒數。  預設為 500 毫秒。|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 \(ETW\) 事件。  ETW 事件是在不同的 \(.etl\) 檔案中收集的。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the optional domain and user name of the account that owns the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process. This option is required if the process is running as a user other than the logged on user. The name is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/globaloff](../profiling/globalon-and-globaloff.md)|Starts the profiler with data collection paused. Use [/globalon](../profiling/globalon-and-globaloff.md) to resume profiling.|  
+    |[/counter](../profiling/counter.md) **:** `Config`|Collects information from the processor performance counter specified in `Config`. Counter information is added to the data collected at each profiling event.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-2.  以一般方式啟動 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。  
+2.  Start the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application in the typical way.  
   
-## 控制資料收集  
- 當目標應用程式正在執行時，您可以使用 **VSPerfCmd.exe** 選項，啟動及停止將資料寫入程式碼剖析工具資料檔案，以控制資料收集。  資料收集控制可讓您收集程式執行中特定組件的資料，例如應用程式的開始與結束。  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the target application is running, you can control data collection by starting and stopping the writing of data to the profiler data file by using **VSPerfCmd.exe** options. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
   
-#### 若要啟動和停止資料收集  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   下列選項配對會啟動和停止資料收集。  在不同的命令列上指定每個選項。  您可以多次開啟或關閉資料收集。  
+-   The following pairs of options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|啟動 \(**\/globalon**\) 或停止 \(**\/globaloff**\) 所有處理序的資料收集。|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID` [\/processoff](../profiling/processon-and-processoff.md)**:**`PID`|啟動 \(**\/processon**\) 或停止 \(**\/processoff**\) 對處理序 ID \(`PID`\) 所指定的處理序進行資料收集。|  
-    |[\/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [\/threadoff](../profiling/threadon-and-threadoff.md)**:**`TID`|啟動 \(**\/threadon**\) 或停止 \(**\/threadoff**\) 對執行緒 ID \(`TID`\) 所指定的執行緒進行資料收集。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Starts (**/threadon**) or stops (**/threadoff**) data collection for the thread specified by the thread ID (`TID`).|  
   
--   您也可以使用 **VSPerfCmd.exe** [\/mark](../profiling/mark.md) 選項，將程式碼剖析標記插入資料檔案。  **\/mark** 命令會加入識別項、時間戳記和選擇性使用者定義的文字字串。  標記可用來篩選程式碼剖析工具報告和資料檢視中的資料。  
+-   You can also use the **VSPerfCmd.exe**[/mark](../profiling/mark.md) option to insert a profiling mark into the data file. The **/mark** command adds an identifier, a timestamp, and an optional user-defined text string. Marks can be used to filter the data in profiler reports and data views.  
   
-## 結束程式碼剖析工作階段  
- 若要結束程式碼剖析工作階段，請關閉目標 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，停止 Internet Information Services \(IIS\) 以停止進行程式碼剖析的處理序，然後關閉程式碼剖析工具。  接著重新啟動 IIS。  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, close the target [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, stop Internet Information Services (IIS) to stop the profiled process, and then shut down the profiler. Then restart IIS.  
   
-#### 若要結束程式碼剖析工作階段  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。  
+1.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application.  
   
-2.  重設網際網路資訊服務 \(IIS\) 以關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。  型別：  
+2.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process by resetting Internet Information Services (IIS). Type:  
   
-     **IISReset \/stop**  
+     **IISReset /stop**  
   
-3.  關閉程式碼剖析工具。  型別：  
+3.  Shut down the profiler. Type:  
   
-     **VSPerfCmd** [\/shutdown](../profiling/shutdown.md)  
+     **VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
   
-4.  重新啟動 IIS。  型別：  
+4.  Restart IIS. Type:  
   
-     **IISReset \/start**  
+     **IISReset /start**  
   
-## 還原應用程式和電腦組態  
- 完成所有程式碼剖析時，請取代 web.config 檔案、清除程式碼剖析環境變數，然後重新啟動電腦，將伺服器和 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式還原為原始狀態。  
+## <a name="restoring-the-application-and-computer-configuration"></a>Restoring the Application and Computer Configuration  
+ When you have completed all profiling, replace the web.config file, clear the profiling environment variables, and restart the computer to restore the server and the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application to their original states.  
   
-#### 若要還原應用程式和電腦組態  
+#### <a name="to-restore-the-application-and-computer-configuration"></a>To restore the application and computer configuration  
   
-1.  以原始檔案複本取代 web.config 檔案。  
+1.  Replace the web.config file with a copy of the original file.  
   
-2.  \(選擇性\)  清除程式碼剖析環境變數。  型別：  
+2.  (Optional). Clear the profiling environment variables. Type:  
   
-     **VSPerfCmd \/globaloff**  
+     **VSPerfCmd /globaloff**  
   
-3.  重新啟動電腦。  
+3.  Restart the computer.  
   
-## 請參閱  
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling ASP.NET Web Applications](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)

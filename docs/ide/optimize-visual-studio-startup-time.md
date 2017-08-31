@@ -18,10 +18,10 @@ manager: ghogen
 f1_keywords:
 - vs.performancecenter
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 8e7afbf8099f2f63506f69b5d1243ded25d2cb42
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: feb8aed2c4ce883b4af940159d982184eae54fa3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 
@@ -76,10 +76,10 @@ The following sections show how to enable lightweight solution load and also hel
 
 ### <a name="enable-or-disable-lightweight-solution-load"></a>Enable or disable lightweight solution load
 
-You can right-click  the solution name in Solution Explorer, and select **Enable Lightweight Solution Load**. After selecting the option, you need to close and reopen the solution to activate lightweight solution load.
+You can right-click the solution name in Solution Explorer, and select **Enable Lightweight Solution Load**. After selecting the option, you need to close and reopen the solution to activate lightweight solution load.
 
 > [!NOTE]
-> The same steps apply for disabling LSL. To disable lightweight solution load, deselect **Enable Lightweight Solution Load**, then close and reopen the solution. 
+> Similar steps apply for disabling LSL. To disable lightweight solution load, select **Disable Lightweight Solution Load**, then close and reopen the solution. 
 
 ![Solution Explorer](../ide/media/VSIDE_LSL_Solution_Setting.png)
 

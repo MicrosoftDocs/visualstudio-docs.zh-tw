@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 21833414eefc19cfcd90e186f0aa5009b6f8a748
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 09e86315466ac4de07ee1a6d2545e17b0d14bf9a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rapid Web Site Profiling with VSPerfASPNETCmd
@@ -85,7 +85,7 @@ The **VSPerfASPNETCmd** command line tool enables you to easily profile [!INCLUD
 > [!WARNING]
 >  Tier interaction profiling (TIP) data can be collected using [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], or [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. However, tier interaction profiling data can be viewed only in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] and [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
 >   
->  To collect TIP data on Windows 8 or Windows Server 2012, you must use the the instrumentation (**/trace**) option.  
+>  To collect TIP data on Windows 8 or Windows Server 2012, you must use the instrumentation (**/trace**) option.  
   
  To collect tier interaction data with sampling data:  
   
