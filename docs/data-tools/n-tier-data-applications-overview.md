@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: dcd75e1385be357747233b7467a71520b1f0bef5
+ms.sourcegitcommit: cfa3f7c2609414076c1d8f9c6e0f1c9024edc4b4
+ms.openlocfilehash: b060fe4d3ce422a0440726c3a741fb4a104827e8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 # <a name="n-tier-data-applications-overview"></a>N-Tier Data Applications Overview
@@ -44,7 +44,7 @@ ms.lasthandoff: 08/30/2017
   
  Visual Studio contains several features to help developers create n-tier applications:  
   
--   The datasetprovides a **DataSet Project** property that enables you to separate the dataset (data entity layer) and `TableAdapter`s (data access layer) into discrete projects.  
+-   The dataset provides a **DataSet Project** property that enables you to separate the dataset (data entity layer) and TableAdapters (data access layer) into discrete projects.  
   
 -   The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) provides settings to generate the DataContext and data classes into separate namespaces. This enables logical separation of the data access and data entity tiers.  
   
