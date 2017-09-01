@@ -42,10 +42,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f495c16e70c81535cdc8ede6e499aad0ac358f08
+ms.sourcegitcommit: 5ecf0d9b54061ee7ea0bcf6dc701578ddfa856ec
+ms.openlocfilehash: e425a8bf8d4fc7d36a736bb3a7bc5c43e492b5a2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/01/2017
 
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Directly access the database with a TableAdapter
@@ -58,7 +58,7 @@ In addition to the `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableA
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>To insert new records directly into a database  
   
--   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind databaseas an example.  
+-   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind database as an example.  
   
     > [!NOTE]
     >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  

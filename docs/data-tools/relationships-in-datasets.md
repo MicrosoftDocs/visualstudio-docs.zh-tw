@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: e3bdcec0ea120296b7fa610842541286fb6364dc
+ms.sourcegitcommit: 5ecf0d9b54061ee7ea0bcf6dc701578ddfa856ec
+ms.openlocfilehash: 730b64e1e855f24409e804a3c0dbbc2d356bff01
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/01/2017
 
 ---
 # <a name="relationships-in-datasets"></a>Relationships in datasets
@@ -52,18 +52,18 @@ Datasets that contain related data tables use <xref:System.Data.DataRelation> ob
  It is important to understand the difference between a true join and the function of a <xref:System.Data.DataRelation> object. In a true join, records are taken from parent and child tables and put into a single, flat recordset. When you use a <xref:System.Data.DataRelation> object, no new recordset is created. Instead, the DataRelation tracks the relationship between tables and keeps parent and child records in sync.  
   
 ## <a name="datarelation-objects-and-constraints"></a>DataRelation objects and constraints  
- A <xref:System.Data.DataRelation> object is also used to create and enforce the following constraints:  
+A <xref:System.Data.DataRelation> object is also used to create and enforce the following constraints:  
   
 -   A unique constraint, which guarantees that a column in the table contains no duplicates.  
   
 -   A foreign-key constraint, which can be used to maintain referential integrity between a parent and child table in a dataset.  
   
- Constraints that you specify in a <xref:System.Data.DataRelation> object are implemented by automatically creating appropriate objects or setting properties. If you create a foreign-key constraint by using the <xref:System.Data.DataRelation> object, instances of the <xref:System.Data.ForeignKeyConstraint> class are added to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ChildKeyConstraint%2A> property.  
+Constraints that you specify in a <xref:System.Data.DataRelation> object are implemented by automatically creating appropriate objects or setting properties. If you create a foreign-key constraint by using the <xref:System.Data.DataRelation> object, instances of the <xref:System.Data.ForeignKeyConstraint> class are added to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ChildKeyConstraint%2A> property.  
   
- A unique constraint is implemented either by simply setting the <xref:System.Data.DataColumn.Unique%2A> property of a data column to `true` or by adding an instance of the <xref:System.Data.UniqueConstraint> class to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ParentKeyConstraint%2A> property. For information on suspending constraints in a dataset, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
+A unique constraint is implemented either by simply setting the <xref:System.Data.DataColumn.Unique%2A> property of a data column to `true` or by adding an instance of the <xref:System.Data.UniqueConstraint> class to the <xref:System.Data.DataRelation> object's <xref:System.Data.DataRelation.ParentKeyConstraint%2A> property. For information on suspending constraints in a dataset, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
 ### <a name="referential-integrity-rules"></a>Referential integrity rules  
- As part of the foreign-key constraint, you can specify referential integrity rules that are applied at three points:  
+As part of the foreign-key constraint, you can specify referential integrity rules that are applied at three points:  
   
 -   When a parent record is updated  
   
@@ -71,7 +71,7 @@ Datasets that contain related data tables use <xref:System.Data.DataRelation> ob
   
 -   When a change is accepted or rejected  
   
- The rules that you can make are specified in the <xref:System.Data.Rule> enumeration and are listed in the following table.  
+The rules that you can make are specified in the <xref:System.Data.Rule> enumeration and are listed in the following table.  
   
 |Foreign-key constraint rule|Action|  
 |----------------------------------|------------|  
