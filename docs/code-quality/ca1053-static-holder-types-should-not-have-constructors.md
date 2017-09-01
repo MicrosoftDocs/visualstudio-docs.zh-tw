@@ -1,52 +1,69 @@
 ---
-title: "CA1053：靜態預留位置類型不應包含建構函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "StaticHolderTypesShouldNotHaveConstructors"
-  - "CA1053"
-helpviewer_keywords: 
-  - "CA1053"
-  - "StaticHolderTypesShouldNotHaveConstructors"
+title: 'CA1053: Static holder types should not have constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- StaticHolderTypesShouldNotHaveConstructors
+- CA1053
+helpviewer_keywords:
+- CA1053
+- StaticHolderTypesShouldNotHaveConstructors
 ms.assetid: 10302b9a-fa5e-4935-a06a-513d9600f613
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1053：靜態預留位置類型不應包含建構函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 26a8887ff5604028d3028749230151d5b0555827
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Static holder types should not have constructors
 |||  
 |-|-|  
-|型別名稱|StaticHolderTypesShouldNotHaveConstructors|  
+|TypeName|StaticHolderTypesShouldNotHaveConstructors|  
 |CheckId|CA1053|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或巢狀公用型別只宣告靜態成員，而且具有公用或保護的預設建構函式。  
+## <a name="cause"></a>Cause  
+ A public or nested public type declares only static members and has a public or protected default constructor.  
   
-## 規則描述  
- 建構函式不是必要的，因為呼叫靜態成員不需型別的執行個體。  此外，因為型別沒有非靜態成員，因此建立執行個體不會提供任何型別成員的存取權限。  
+## <a name="rule-description"></a>Rule Description  
+ The constructor is unnecessary because calling static members does not require an instance of the type. Also, because the type does not have non-static members, creating an instance does not provide access to any of the type's members.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請移除預設建構函式或使它成為私用的。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the default constructor or make it private.  
   
 > [!NOTE]
->  如果型別並未定義任何建構函式，則有些編譯器會自動建立公用預設建構函式。  如果您的型別情況如此，請加入私用預設建構函式以排除此違規情形。  
+>  Some compilers automatically create a public default constructor if the type does not define any constructors. If this is the case with your type, add a private default constructor to eliminate the violation.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  出現建構函式意味著此型別不是靜態型別。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule. The presence of the constructor suggests that the type is not a static type.  
   
-## 範例  
- 下列範例顯示違反此規則的型別。  請注意，原始程式碼中沒有預設建構函式。  當此程式碼編譯成組件 \(Assembly\) 時，C\# 編譯器將會插入違反此規則的預設建構函式。  若要更正此錯誤，請宣告私用建構函式。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule. Notice that there is no default constructor in the source code. When this code is compiled into an assembly, the C# compiler will insert a default constructor, which will violate this rule. To correct this, declare a private constructor.  
   
- [!CODE [FxCop.Design.StaticTypes#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.StaticTypes#1)]
+ [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

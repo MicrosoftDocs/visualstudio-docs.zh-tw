@@ -1,62 +1,79 @@
 ---
-title: "IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
+title: IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugDisassemblyStream2::GetCodeContext
+helpviewer_keywords:
+- IDebugDisassemblyStream2::GetCodeContext
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugDisassemblyStream2::GetCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 18c71739242fa3f81ec9299c7dcfb3c227693aed
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-傳回指定的程式碼的位置識別碼相對應的程式碼內容物件。  
+---
+# <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
+Returns a code context object corresponding to a specified code location identifier.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetCodeContext(   
-   UINT64               uCodeLocationId,  
-   IDebugCodeContext2** ppCodeContext  
+```cpp  
+HRESULT GetCodeContext(   
+   UINT64               uCodeLocationId,  
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```c#  
-int GetCodeContext(   
-   ulong                  uCodeLocationId,  
-   out IDebugCodeContext2 ppCodeContext  
+```csharp  
+int GetCodeContext(   
+   ulong                  uCodeLocationId,  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `uCodeLocationId`  
- \[in\]指定的程式碼的位置識別碼。  請參閱 \[備註\] 部份的[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)的程式碼的位置識別碼說明的方法。  
+ [in] Specifies the code location identifier. See the Remarks section for the [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) method for a description of a code location identifier.  
   
  `ppCodeContext`  
- \[\] out傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相關聯的程式碼內容。  
+ [out] Returns an [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the associated code context.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 可以從呼叫傳回的程式碼的位置識別碼[GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)方法，而且可以出現在[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
+## <a name="remarks"></a>Remarks  
+ The code location identifier can be returned from a call to the [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md) method and can appear in the [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) structure.  
   
- 若要將程式碼內容轉換成程式碼的位置識別碼時，呼叫[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)方法。  
+ To convert a code context into a code location identifier, call the [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) method.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)   
- [GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)   
+ [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
+ [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

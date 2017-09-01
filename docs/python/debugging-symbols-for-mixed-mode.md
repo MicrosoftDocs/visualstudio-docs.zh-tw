@@ -1,12 +1,13 @@
 ---
 title: "Visual Studio 中的 Python/C++ 混和模式符號偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 4/4/2017
+ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: be5fdf2f-b55f-488a-9772-58adfe07a7ab
@@ -14,52 +15,39 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: adf122a478b29674dc2924dcf7d42972a5a3f52e
-ms.openlocfilehash: b8bf362f506255c09468934f01a7beeef3a632dd
-ms.lasthandoff: 04/10/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 1be4e28055f0501433f85325870654671c12f961
+ms.contentlocale: zh-tw
+ms.lasthandoff: 07/18/2017
 
 ---
 
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
-為提供完整的偵錯體驗，Visual Studio 中的[混合模式 Python 偵錯工具](debugging-mixed-mode.md)需要剖析目前使用之 Python 解譯器內的許多內部資料結構。 這會需要解譯器本身的偵錯符號。 以 python27.dll 為例，對應的符號檔為 python27.pdb；若是 python36.dll，符號檔則為 python36.pdb。 每個版本的解譯器也提供各種不同模組的符號檔。
+為提供完整的偵錯體驗，Visual Studio 中的[混合模式 Python 偵錯工具](debugging-mixed-mode.md)需要使用 Python 解譯器的偵錯符號，以便剖析許多內部資料結構。 以 python27.dll 為例，對應的符號檔為 python27.pdb；若是 python36.dll，符號檔則為 python36.pdb。 每個版本的解譯器也提供各種不同模組的符號檔。
 
-使用 Visual Studio 2017 時，"Python 3" 和 "Anaconda 3" 解譯器會自動安裝其個別符號，而 Visual Studio 會自動尋找這些符號。 若為 Visual Studio 2015 和更早版本，或使用其他轉譯器時，您必須個別下載符號，然後透過 [偵錯] > [符號] 索引標籤中的 [工具] > [選項] 對話方塊，將 Visual Studio 指向這些符號。 下面各節將有詳細的步驟說明。
+使用 Visual Studio 2017 時，"Python 3" 和 "Anaconda 3" 解譯器會自動安裝其個別符號，而 Visual Studio 會自動尋找那些符號。 若為 Visual Studio 2015 和更早版本，或使用其他轉譯器時，您必須個別下載符號，然後透過 [偵錯] > [符號] 索引標籤中的 [工具] > [選項] 對話方塊，將 Visual Studio 指向這些符號。 下面各節將有詳細的步驟說明。
 
 Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混合模式偵錯工作階段的時候。 在此情況下，它會顯示內含兩個選擇的對話方塊：
 
 - [開啟符號設定] 對話方塊的 [選項] 對話方塊，會開啟 [偵錯] > [符號] 索引標籤。
 - [下載我的解譯器的符號] 會開啟這個存在的文件頁面，在此情況下，請選取 [工具] > [選項]，並瀏覽至 [偵錯] > [符號] 索引標籤以繼續。
 
-    ![混合模式偵錯工具符號提示](~/python/media/mixed-mode-debugging-symbols-required.png)
+    ![混合模式偵錯工具符號提示](media/mixed-mode-debugging-symbols-required.png)
 
 ## <a name="downloading-symbols"></a>正在下載符號
 
 - Python 3.5 和更新版本：透過 Python 安裝程式取得偵錯符號。 依序選取 [自訂安裝] 和 [下一步] 移至 [進階選項]，然後選取 [下載偵錯符號] 和 [下載偵錯二進位檔案] 的方塊：
 
-    ![包括偵錯符號的 Python 3.x 安裝程式](~/python/media/mixed-mode-debugging-symbols-installer35.png)
+    ![包括偵錯符號的 Python 3.x 安裝程式](media/mixed-mode-debugging-symbols-installer35.png)
 
     符號檔 (`.pdb`) 會位於根安裝資料夾中，而個別模組的符號檔也在 `DLLs` 資料夾中。 因此，Visual Studio 會自動尋找這些檔案，您不需採取其他步驟。
 
-- Python 3.4.x 和更早版本：您可透過[官方發行版](#official-distributions)或 [Enthought Canopy](#enthought-canopy) 的可下載 .zip 檔案，取得下列符號。 下載之後，請將檔案解壓縮至本機資料夾 (例如 Python 資料夾內的 `Symbols` 資料夾) 以繼續。
+- Python 3.4.x 和更早版本：您可透過[官方發行版](#official-distributions)或 [Enthought Canopy](#enthought-canopy) 的可下載 .zip 檔案，取得符號。 下載之後，請將檔案解壓縮至本機資料夾 (例如 Python 資料夾內的 `Symbols` 資料夾) 以繼續。
 
     > [!Important]
-    > Python 次要組建以及 32 和 64 位元組建之間的符號有所不同，因此您需要完全符合的版本。 若要檢查目前使用的解譯器，請展開方案總管中專案下方的 [Python 環境] *節點*，並記下環境名稱。 然後切換到 [Python 環境] *視窗*，並記下安裝位置。 隨即在該位置開啟命令視窗，並啟動 `python.exe`，即會顯示其為 32 位元或 64 位元的正確版本。
+    > Python 次要組建以及 32 位元和 64 位元組建之間的符號有所不同，因此您需要完全符合的版本。 若要檢查目前使用的解譯器，請展開方案總管中專案下方的 [Python 環境] *節點*，並記下環境名稱。 然後切換到 [Python 環境] *視窗*，並記下安裝位置。 隨即在該位置開啟命令視窗，並啟動 `python.exe`，即會顯示其為 32 位元或 64 位元的正確版本。
 
 - 若是協力廠商 Python 發行版，例如 ActiveState Python：請連絡該發行版的作者，並要求他們提供符號。 WinPython 結合了未經變更的標準 Python 解譯器，因此，請使用官方發行版對應版本號碼的符號。
 
@@ -69,14 +57,14 @@ Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混
 
 1. 選取 [工具] > [選項] 功能表，然後瀏覽至 [偵錯] > [符號]。
     
-1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號的資料夾 (`python.pdb` 的位置，例如 `c:\python34\Symbols`，如下所示)，然後選取 [確定]。 
+1. 選取工具列上的 [新增] 按鈕 (如下所述)，輸入您要展開下載符號之資料夾 (`python.pdb` 的位置，例如 `c:\python34\Symbols`，如下所示)，然後選取 [確定]。 
 
-    ![混合模式偵錯工具符號選項](~/python/media/mixed-mode-debugging-symbols.png)
+    ![混合模式偵錯工具符號選項](media/mixed-mode-debugging-symbols.png)
 
-1. 偵錯工作階段期間，Visual Studio 也可能會提示您輸入 Python 解譯器的原始程式檔位置。 如果您已經下載這些項目 (例如從 [python.org/downloads](https://www.python.org/downloads) 下載)，當然也可以指向它們。
+1. 偵錯工作階段期間，Visual Studio 也可能會提示您輸入 Python 解譯器的原始程式檔位置。 如果您已經下載原始程式檔 (例如從 [python.org/downloads](https://www.python.org/downloads) 下載)，當然也可以指向它們。
 
 > [!Note]
-> 對話方塊顯示的符號快取功能，可用來建立從線上來源取得之符號的本機快取。 既然您已將這些功能下載到本機，Python 解譯器的符號就不需要這些功能。 在任何情況下，請參閱[指定 Visual Studio 偵錯工具中的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，以取得詳細資訊。
+> 對話方塊顯示的符號快取功能，可用來建立從線上來源取得之符號的本機快取。 既然符號已存在於本機，Python 解譯器的符號就不需要這些功能。 在任何情況下，請參閱[指定 Visual Studio 偵錯工具中的符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)，以取得詳細資訊。
 
 ## <a name="official-distributions"></a>官方發行版
 

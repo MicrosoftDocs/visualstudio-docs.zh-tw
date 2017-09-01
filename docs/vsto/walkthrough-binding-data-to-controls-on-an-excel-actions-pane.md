@@ -1,193 +1,195 @@
 ---
-title: "逐步解說：將資料繫結至 Excel 執行窗格上的控制項"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "動作窗格 [Visual Studio 中的 Office 程式開發], 繫結控制項"
-  - "動作窗格 [Visual Studio 中的 Office 程式開發], 資料繫結"
-  - "控制項 [Visual Studio 中的 Office 程式開發], 資料繫結"
-  - "資料繫結 [Visual Studio 中的 Office 程式開發], 執行窗格"
-  - "資料繫結 [Visual Studio 中的 Office 程式開發], 智慧文件"
-  - "智慧文件 [Visual Studio 中的 Office 程式開發], 資料繫結"
+title: 'Walkthrough: Binding Data to Controls on an Excel Actions Pane | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- controls [Office development in Visual Studio], data binding
+- actions panes [Office development in Visual Studio], data binding
+- data binding [Office development in Visual Studio], smart documents
+- data binding [Office development in Visual Studio], actions panes
+- actions panes [Office development in Visual Studio], binding controls
+- smart documents [Office development in Visual Studio], data binding
 ms.assetid: 106c07bd-e931-4dc5-94dc-ca43900fe09d
 caps.latest.revision: 63
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 62
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 66b4340f86c480fa040c0fc6a51623f30da34d27
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：將資料繫結至 Excel 執行窗格上的控制項
-  本逐步解說示範如何將資料繫結至 Microsoft Office Excel 執行窗格上的控制項。  控制項示範 SQL Server 資料庫中資料表之間的主從式關聯。  
+# <a name="walkthrough-binding-data-to-controls-on-an-excel-actions-pane"></a>Walkthrough: Binding Data to Controls on an Excel Actions Pane
+  This walkthrough demonstrates data binding to controls on an actions pane in Microsoft Office Excel. The controls demonstrate a master/detail relation between tables in a SQL Server database.  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   將控制項加入至工作表。  
+-   Adding controls to a worksheet.  
   
--   建立執行窗格控制項。  
+-   Creating an actions pane control.  
   
--   將資料繫結 Windows Form 控制項加入至執行窗格控制項。  
+-   Adding data-bound Windows Forms controls to an actions pane control.  
   
--   在應用程式開啟時顯示執行窗格。  
+-   Showing the actions pane when the application opens.  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置：  您所擁有的 Visual Studio 版本和使用的設定決定了這些項目。  如需詳細資訊，請參閱[Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
   
--   與具有 Northwind SQL Server 範例資料庫之伺服器的連線。  
+-   Access to a server with the Northwind SQL Server sample database.  
   
--   從 SQL Server 資料庫讀取及寫入該資料庫的使用權限。  
+-   Permissions to read from and write to the SQL Server database.  
   
-## 建立專案  
- 第一步是建立 Excel 活頁簿專案。  
+## <a name="creating-the-project"></a>Creating the Project  
+ The first step is to create an Excel Workbook project.  
   
-#### 若要建立新的專案  
+#### <a name="to-create-a-new-project"></a>To create a new project  
   
-1.  建立名為 My Excel Actions Pane 的 Excel 活頁簿專案。  在精靈中選取 \[**建立新文件**\]。  如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+1.  Create an Excel Workbook project with the name **My Excel Actions Pane**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **My Excel Actions Pane** 專案加入至 \[**方案總管**\]。  
+     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Actions Pane** project to **Solution Explorer**.  
   
-## 在專案中加入新資料來源  
+## <a name="adding-a-new-data-source-to-the-project"></a>Adding a New Data Source to the Project  
   
-#### 若要在專案中加入新資料來源  
+#### <a name="to-add-a-new-data-source-to-the-project"></a>To add a new data source to the project  
   
-1.  如果 \[**資料來源**\] 視窗中不可見，請顯示它，請在功能表列上，選擇 \[**檢視**\]\]，則 \[**其他視窗**\]， \[**資料來源**\]。  
+1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
   
-2.  選取 \[**加入新資料來源**\] 啟動 \[**資料來源組態精靈**\]。  
+2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  選取 \[**資料庫**\]，再按一下 \[**下一步**\]。  
+3.  Select **Database** and then click **Next**.  
   
-4.  選取與 Northwind 範例 SQL Server 資料庫的資料連接，或使用 \[**新增連接**\] 按鈕加入新的連接。  
+4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
   
-5.  按一下 \[**下一步**\]。  
+5.  Click **Next**.  
   
-6.  如果已經選取，請清除儲存連接的選項，然後按一下 \[**下一步**\]。  
+6.  Clear the option to save the connection if it is selected, and then click **Next**.  
   
-7.  在 \[**資料庫物件**\] 視窗中，展開 \[**資料表**\] 節點。  
+7.  Expand the **Tables** node in the **Database objects** window.  
   
-8.  選取 \[**供應商**\] 資料表旁的核取方塊。  
+8.  Select the check box next to the **Suppliers** table.  
   
-9. 展開 \[**產品**\] 資料表，並選取 \[**ProductName**\]、\[**SupplierID**\]、\[**QuantityPerUnit**\] 和 \[**UnitPrice**\]。  
+9. Expand the **Products** table and select **ProductName**, **SupplierID**, **QuantityPerUnit**, and **UnitPrice**.  
   
-10. 按一下 \[完成\]。  
+10. Click **Finish**.  
   
- 精靈會將 \[**供應商**\] 資料表和 \[**產品**\] 資料表加入至 \[**資料來源**\] 視窗，  也會將具型別資料集加入至 \[**方案總管**\] 中可以看得到的專案。  
+ The wizard adds the **Suppliers** table and **Products** table to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
   
-## 將控制項加入至工作表  
- 接下來，將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項和 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入至第一個工作表。  
+## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
+ Next, add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control and a <xref:Microsoft.Office.Tools.Excel.ListObject> control to the first worksheet.  
   
-#### 若要加入 NamedRange 控制項和 ListObject 控制項  
+#### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>To add a NamedRange control and a ListObject control  
   
-1.  驗證 \[**我的 Excel 動作 Pane.xlsx**\] 活頁簿在 Visual Studio 中開啟設計工具，以 `Sheet1` 所顯示的。  
+1.  Verify that the **My Excel Actions Pane.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
   
-2.  在 \[**資料來源**\] 視窗中，展開 \[**供應商**\] 資料表。  
+2.  In the **Data Sources** window, expand the **Suppliers** table.  
   
-3.  按一下 \[**公司名稱**\] 節點上的下拉箭號，然後選取 \[**NamedRange**\]。  
+3.  Click the drop-down arrow on the **Company Name** node, and then click **NamedRange**.  
   
-4.  將 \[**公司名稱**\] 從 \[**資料來源**\] 視窗拖曳到 `Sheet1` 中的 \[**A2**\] 儲存格。  
+4.  Drag **Company Name** from the **Data Sources** window to cell **A2** in `Sheet1`.  
   
-     在 \[**A2**\] 儲存格中會建立一個名為 `CompanyNameNamedRange` 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項，並會顯示文字 \<CompanyName\>。  同時，會將名為 `suppliersBindingSource` 的 <xref:System.Windows.Forms.BindingSource>、資料表配接器，以及 <xref:System.Data.DataSet> 加入至專案。  控制項繫結至 <xref:System.Windows.Forms.BindingSource>，繼而又繫結至 <xref:System.Data.DataSet> 執行個體。  
+     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `CompanyNameNamedRange` is created, and the text \<CompanyName> appears in cell **A2**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `suppliersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-5.  在 \[**資料來源**\] 視窗中，向下捲動超過 \[**供應商**\] 資料表底下的資料行。  位在清單底部的是 \[**產品**\] 資料表。由於它是 \[**供應商**\] 資料表的子系，因而位在該處。  請選取這個 \[**產品**\] 資料表，不要選取與 \[**供應商**\] 資料表位於相同層級的資料表，然後按一下顯示的下拉箭號。  
+5.  In the **Data Sources** window, scroll down past the columns that are under the **Suppliers** table. At the bottom of the list is the **Products** table; it is here because it is a child of the **Suppliers** table. Select this **Products** table, not the one that is at the same level as the **Suppliers** table, and then click the drop-down arrow that appears.  
   
-6.  在下拉式清單中按一下 \[**ListObject**\]，然後將 \[**產品**\] 資料表拖曳到 `Sheet1` 中的 \[**A6**\] 儲存格。  
+6.  Click **ListObject** in the drop-down list, and then drag the **Products** table to cell **A6** in `Sheet1`.  
   
-     \[**A6**\] 儲存格中會建立一個名為 `ProductNameListObject` 的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。  同時，會將名為 `productsBindingSource` 的 <xref:System.Windows.Forms.BindingSource> 和資料表配接器 \(Adapter\) 加入至專案。  控制項繫結至 <xref:System.Windows.Forms.BindingSource>，繼而又繫結至 <xref:System.Data.DataSet> 執行個體。  
+     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `ProductNameListObject` is created in cell **A6**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `productsBindingSource` and a table adapter are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
   
-7.  \(僅適用於 C\#\) 選取元件匣上的 \[**suppliersBindingSource**\]，並在 \[**屬性**\] 視窗中，將 \[**Modifiers**\] 屬性變更為 Internal。  
+7.  For C# only, select **suppliersBindingSource** on the component tray, and change the **Modifiers** property to **Internal** in the **Properties** window.  
   
-## 將控制項加入至執行窗格  
- 接下來，您需要包含下拉式方塊的執行窗格控制項。  
+## <a name="adding-controls-to-the-actions-pane"></a>Adding Controls to the Actions Pane  
+ Next, you need an actions pane control that contains a combo box.  
   
-#### 若要加入執行窗格控制項  
+#### <a name="to-add-an-actions-pane-control"></a>To add an actions pane control  
   
-1.  在 \[**方案總管**\] 中選取 **My Excel Actions Pane** 專案。  
+1.  Select the **My Excel Actions Pane** project in **Solution Explorer**.  
   
-2.  在 \[**專案**\] 功能表上，按一下 \[**加入新項目**\]。  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  選取 \[**加入新項目**\] 對話方塊中的 \[**執行窗格控制項**\]，將其命名為 **ActionsControl**，然後按一下 \[**加入**\]。  
+3.  In the **Add New Item** dialog box, select **Actions Pane Control**, name it **ActionsControl**, and click **Add**.  
   
-#### 若要將資料繫結 Windows Form 控制項加入至執行窗格控制項  
+#### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>To add data-bound Windows Forms controls to an actions pane control  
   
-1.  從 \[**工具箱**\] 的 \[**通用控制項**\] 索引標籤，拖曳 <xref:System.Windows.Forms.ComboBox> 控制項至執行窗格控制項。  
+1.  From the **Common Controls** tabs of the **Toolbox**, drag a <xref:System.Windows.Forms.ComboBox> control to the actions pane control.  
   
-2.  將 \[**Size**\] 屬性變更為 171, 21。  
+2.  Change the **Size** property to **171, 21**.  
   
-3.  調整使用者控制項以符合下拉式方塊的大小。  
+3.  Resize the user control to fit the combo box.  
   
-## 將執行窗格上的控制項繫結至資料  
- 在本節中，您會將 <xref:System.Windows.Forms.ComboBox> 的資料來源，設定為與工作表上 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的資料來源相同。  
+## <a name="binding-the-control-on-the-actions-pane-to-data"></a>Binding the Control on the Actions Pane to Data  
+ In this section, you will set the data source of the <xref:System.Windows.Forms.ComboBox> to the same data source as the <xref:Microsoft.Office.Tools.Excel.NamedRange> control on the worksheet.  
   
-#### 若要設定控制項的資料繫結屬性  
+#### <a name="to-set-data-binding-properties-of-the-control"></a>To set data binding properties of the control  
   
-1.  以滑鼠右鍵按一下執行窗格控制項，然後按一下 \[**檢視程式碼**\]。  
+1.  Right-click the actions pane control, and then click **View Code**.  
   
-2.  將下列程式碼加入至執行窗格控制項的 <xref:System.Windows.Forms.UserControl.Load> 事件。  
+2.  Add the following code to the <xref:System.Windows.Forms.UserControl.Load> event of the actions pane control.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/CS/ActionsControl.cs#1)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/VB/ActionsControl.vb#1)]  
+     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]  [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]  
   
-3.  在 C\# 中，您必須建立 `ActionsControl` 的事件處理常式。  您可以將這個程式碼放在 `ActionsControl` 建構函式 \(Constructor\) 中。  如需建立事件處理常式的詳細資訊，請參閱 [如何：在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
+3.  In C#, you must create an event handler for the `ActionsControl`. You can place this code in the `ActionsControl` constructor. For more information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/CS/ActionsControl.cs#2)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]  
   
-## 顯示執行窗格  
- 執行窗格要到您在執行階段加入控制項後，才會顯示。  
+## <a name="showing-the-actions-pane"></a>Showing the Actions Pane  
+ The actions pane is not visible until you add the control at run time.  
   
-#### 若要顯示執行窗格  
+#### <a name="to-show-the-actions-pane"></a>To show the actions pane  
   
-1.  以滑鼠右鍵按一下 \[**方案總管**\] 中的 ThisWorkbook.vb 或 ThisWorkbook.cs，然後按一下 \[**檢視程式碼**\]。  
+1.  In **Solution Explorer**, right-click ThisWorkbook.vb or ThisWorkbook.cs, and then click **View Code**.  
   
-2.  在 `ThisWorkbook` 類別 \(Class\) 中建立使用者控制項的新執行個體 \(Instance\)。  
+2.  Create a new instance of the user control in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/CS/ThisWorkbook.cs#3)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/VB/ThisWorkbook.vb#3)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]  [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]  
   
-3.  在 `ThisWorkbook` 的 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件處理常式中，將控制項加入至執行窗格。  
+3.  In the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event handler of `ThisWorkbook`, add the control to the actions pane.  
   
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/CS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreActionsPaneExcel/VB/ThisWorkbook.vb#4)]  
+     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]  [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]  
   
-## 測試應用程式  
- 現在您可以測試文件，確認當文件開啟時，執行窗格也會開啟，而且控制項具有主從式關聯性。  
+## <a name="testing-the-application"></a>Testing the Application  
+ Now you can test your document to verify that the actions pane opens when the document is opened, and that the controls have a master/detail relation.  
   
-#### 若要測試您的文件  
+#### <a name="to-test-your-document"></a>To test your document  
   
-1.  請按 F5 執行您的專案。  
+1.  Press F5 to run your project.  
   
-2.  確認可以看見執行窗格。  
+2.  Confirm that the actions pane is visible.  
   
-3.  在清單方塊中選取一家公司。  確認公司名稱列在 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項中，且產品詳細資料列在 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項中。  
+3.  Select a company in the list box. Verify that the company name is listed in the <xref:Microsoft.Office.Tools.Excel.NamedRange> control and that the product details are listed in the <xref:Microsoft.Office.Tools.Excel.ListObject> control.  
   
-4.  選取不同的公司，確認公司名稱和產品詳細資料會適當地變更。  
+4.  Select various companies to verify the company name and product details change as appropriate.  
   
-## 後續步驟  
- 以下則是接下來的一些工作：  
+## <a name="next-steps"></a>Next Steps  
+ Here are some tasks that might come next:  
   
--   將資料繫結至 Word 中的控制項。  如需詳細資訊，請參閱[逐步解說：在 Word 執行窗格將資料繫結至控制項](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md)。  
+-   Binding data to controls in Word. For more information, see [Walkthrough: Binding Data to Controls on a Word Actions Pane](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).  
   
--   部署專案。  如需詳細資訊，請參閱[使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。  
+-   Deploying the project. For more information, see [Deploying an Office Solution by Using ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).  
   
-## 請參閱  
- [執行窗格概觀](../vsto/actions-pane-overview.md)   
- [如何：管理執行窗格的控制項配置](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Actions Pane Overview](../vsto/actions-pane-overview.md)   
+ [How to: Manage Control Layout on Actions Panes](../vsto/how-to-manage-control-layout-on-actions-panes.md)   
+ [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)  
   
   

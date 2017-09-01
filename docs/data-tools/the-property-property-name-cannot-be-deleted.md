@@ -1,34 +1,53 @@
 ---
-title: "無法刪除屬性 &lt;屬性名稱&gt; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: The property &lt;property name&gt; cannot be deleted | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 caps.latest.revision: 2
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
-caps.handback.revision: 2
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: feae56294e98e67634cad7afa24ba22ad155412d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
+
 ---
-# 無法刪除屬性 &lt;屬性名稱&gt;
-無法刪除屬性 \<屬性名稱\>，因為它是設定為 \<類別名稱\> 與 \<類別名稱\> 間之繼承的鑑別子屬性  
+# <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>The property &lt;property name&gt; cannot be deleted
+The property \<property name> cannot be deleted because it is set as the **Discriminator Property** for the inheritance between \<class name> and \<class name>  
   
- 選取的屬性已設定為在錯誤訊息指出的類別 \(Class\) 之間進行繼承時，所需的 \[**鑑別子屬性**\]。如果屬性已參與資料類別之間的繼承組態，就無法刪除屬性。  
+ The selected property is set as the **Discriminator Property** for the inheritance between the classes indicated in the error message. Properties cannot be deleted if they are participating in the inheritance configuration between data classes.  
   
- 將 \[**鑑別子屬性**\] 設定為資料類別的不同屬性，就可以成功刪除要刪的屬性。  
+ Set the **Discriminator Property** to a different property of the data class to enable successful deletion of the desired property.  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  在 O\/R Designer 中，選取在錯誤訊息指出的資料類別之間連接的繼承關聯線。  
+1.  In the O/R Designer, select the inheritance line that connects the data classes indicated in the error message.  
   
-2.  將 \[**鑑別子屬性**\] 設定為不同屬性。  
+2.  Set the **Discriminator** Property to a different property.  
   
-3.  試著再次刪除屬性。  
+3.  Try to delete the property again.  
   
-## 請參閱  
- [HOW TO：使用 O\/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
- [資料類別繼承 \(O\/R 設計工具\)](../data-tools/data-class-inheritance-o-r-designer.md)   
- [逐步解說：使用單一資料表繼承建立 LINQ to SQL 類別 \(O\/R 設計工具\)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+## <a name="see-also"></a>See Also  
+ [How to: Configure inheritance by using the O/R Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   
+ [Data class inheritance (O/R Designer)](../data-tools/data-class-inheritance-o-r-designer.md)   
+ [Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)

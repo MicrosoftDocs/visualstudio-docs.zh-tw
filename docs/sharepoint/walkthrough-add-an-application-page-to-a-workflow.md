@@ -1,61 +1,66 @@
 ---
-title: "逐步解說：將應用程式頁面新增到工作流程"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "應用程式頁面 [Visual Studio 中的 SharePoint 程式開發]"
-  - "Visual Studio 中的 SharePoint 開發, 將應用程式頁面加入至工作流程"
+title: 'Walkthrough: Add an Application Page to a Workflow | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, adding applications page to workflow
+- application page [SharePoint development in Visual Studio]
 ms.assetid: e4845d07-917b-45cb-a569-4ecdd602fbd9
 caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 27
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c06cccc5a3bd846c1b8c3c75986e6ed9637b7e82
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
+
 ---
-# 逐步解說：將應用程式頁面新增到工作流程
-  本逐步解說示範如何將應用程式頁面加入至工作流程專案，此應用程式頁面會顯示衍生自工作流程的資料。  本逐步解說以[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)主題所述的專案為基礎。  
+# <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Walkthrough: Add an Application Page to a Workflow
+  This walkthrough demonstrates how to add an application page that displays data derived from a workflow to a workflow project. It builds on the project described in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
- 本逐步解說將示範下列工作：  
+ This walkthrough demonstrates the following tasks:  
   
--   將 ASPX 應用程式頁面加入至 SharePoint 工作流程專案。  
+-   Adding an ASPX application page to a SharePoint workflow project.  
   
--   從工作流程專案取得並操作資料。  
+-   Obtaining data from the workflow project and manipulating it.  
   
--   在應用程式頁面上的表格中顯示資料。  
+-   Displaying data in a table on the application page.  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
--   支援的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 版本。  如需詳細資訊，請參閱[開發 SharePoint 方案的要求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
+-   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
   
--   Visual Studio。  
+-   Visual Studio.  
   
--   您也必須完成[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)主題中的專案。  
+-   You also have to complete the project in the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).  
   
-## 修改工作流程程式碼  
- 首先，將一行程式碼加入至工作流程，將 \[結果\] 欄的值設定為費用報表的金額。  此值稍後會用於費用報表摘要計算。  
+## <a name="amending-the-workflow-code"></a>Amending the Workflow Code  
+ First, add a line of code to the workflow to set the value of the Outcome column to the amount of the expense report. This value is used later in the expense report summary calculation.  
   
-#### 若要設定工作流程中的結果欄值  
+#### <a name="to-set-the-value-of-the-outcome-column-in-the-workflow"></a>To set the value of the Outcome column in the workflow  
   
-1.  將[逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)主題完成的專案載入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
+1.  Load the completed project from the topic [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) into [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
   
-2.  開啟 Workflow1.cs 或 Workflow1.vb 的程式碼 \(視您的程式語言而定\)。  
+2.  Open the code for Workflow1.cs or Workflow1.vb (depending on your programming language).  
   
-3.  在 `createTask1_MethodInvoking` 方法的底部加入下列程式碼：  
+3.  To the bottom of the `createTask1_MethodInvoking` method, add the following code:  
   
     ```vb  
     createTask1_TaskProperties1.ExtendedProperties("Outcome") =   
@@ -67,16 +72,16 @@ caps.handback.revision: 27
       workflowProperties.InitiationData;  
     ```  
   
-## 建立應用程式頁面  
- 接下來，將 ASPX 表單加入至專案。  此表單將顯示從費用報表工作流程專案取得的資料。  若要這麼做，您將加入應用程式頁面。  應用程式頁面使用的主版頁面與其他 SharePoint 頁面相同，表示它會與 SharePoint 網站上的其他頁面相似。  
+## <a name="creating-an-application-page"></a>Creating an Application Page  
+ Next, add an ASPX form to the project. This form will display data obtained from the expense report workflow project. To do this, you will add an application page. An application page uses the same master page as other SharePoint pages, meaning that it will resemble other pages on the SharePoint site.  
   
-#### 若要將應用程式頁面加入至專案  
+#### <a name="to-add-an-application-page-to-the-project"></a>To add an application page to the project  
   
-1.  選取 ExpenseReport 專案，然後在功能表列上，選擇 \[**專案**\]、 \[**加入新項目**\]。  
+1.  Choose the ExpenseReport project, and then, on the menu bar, choose **Project**, **Add New Item**.  
   
-2.  在 \[**範本**\] 窗格中，選取 \[**應用程式頁面**\] 範本，為專案項目 \(**ApplicaitonPage1.aspx**\) 使用預設名稱，然後選擇 \[**加入**\] 按鈕。  
+2.  In the **Templates** pane, choose the **Application Page** template, use the default name for the project item (**ApplicaitonPage1.aspx**), and choose the **Add** button.  
   
-3.  在 ApplicationPage1.aspx 的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 中，以下列程式碼取代 `PlaceHolderMain` 區段：  
+3.  In the [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] of ApplicationPage1.aspx, replace the `PlaceHolderMain` section with the following:  
   
     ```  
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">  
@@ -88,9 +93,9 @@ caps.handback.revision: 27
     </asp:Content>  
     ```  
   
-     此程式碼會將表格以及標題加入至頁面。  
+     This code adds a table to the page together with a title.  
   
-4.  以下列程式碼取代 `PlaceHolderPageTitleInTitleArea` 區段，將標題加入至應用程式頁面：  
+4.  Add a title to the application page by replacing the `PlaceHolderPageTitleInTitleArea` section with the following:  
   
     ```  
     <asp:Content ID="PageTitleInTitleArea" ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server" >  
@@ -98,14 +103,14 @@ caps.handback.revision: 27
     </asp:Content>  
     ```  
   
-## 撰寫應用程式頁面的程式碼  
- 接下來，將程式碼加入至費用報表摘要應用程式頁面。  當您開啟頁面時，程式碼會掃描 SharePoint 中的工作清單，找出超過所配置支出限制的費用。  報表會列出每個項目以及費用總和。  
+## <a name="coding-the-application-page"></a>Coding the Application Page  
+ Next, add code to the expense report summary application page. When you open the page, the code scans the Task list in SharePoint for expenses that exceeded the allocated spending limit. The report lists each item together with the sum of the expenses.  
   
-#### 若要撰寫應用程式頁面的程式碼  
+#### <a name="to-code-the-application-page"></a>To code the application page  
   
-1.  選擇 \[**ApplicationPage1.aspx**\] 節點，然後在功能表列上選擇 \[**檢視**\]、\[**程式碼**\]，顯示應用程式頁面的後置程式碼。  
+1.  Choose the **ApplicationPage1.aspx** node, and then, on the menu bar, choose **View**, **Code** to display the code behind the application page.  
   
-2.  以下列程式碼取代類別最上方的 **using** 或 **Import** 陳述式 \(視您的程式語言而定\)：  
+2.  Replace the **using** or **Import** statements (depending on your programming language) at the top of the class with the following:  
   
     ```vb  
     Imports System  
@@ -133,7 +138,7 @@ caps.handback.revision: 27
     using Microsoft.SharePoint.Navigation;  
     ```  
   
-3.  將下列程式碼加入至 `Page_Load` 方法中：  
+3.  Add the following code to the `Page_Load` method:  
   
     ```vb  
     Try  
@@ -297,62 +302,62 @@ caps.handback.revision: 27
     ```  
   
     > [!WARNING]  
-    >  請務必以正在執行 SharePoint 的有效伺服器名稱取代「TestServer」中的程式碼。  
+    >  Be sure to replace "TestServer" in the code with the name of a valid server that's running SharePoint.  
   
-## 測試應用程式頁面  
- 接下來，判斷應用程式頁面是否正確顯示費用資料。  
+## <a name="testing-the-application-page"></a>Testing the Application Page  
+ Next, determine whether the application page displays the expense data correctly.  
   
-#### 若要測試應用程式頁面  
+#### <a name="to-test-the-application-page"></a>To test the application page  
   
-1.  按 F5 鍵執行並部署專案至 SharePoint。  
+1.  Choose the F5 key to run and deploy the project to SharePoint.  
   
-2.  選擇 \[**首頁**\] 按鈕，然後選擇快速啟動列上的 \[**共用文件**\] 連結，以顯示 SharePoint 網站上的 \[共用文件\] 清單。  
+2.  Choose the **Home** button, and then choose the **Shared Documents** link on the QuickLaunch bar to display the Shared Documents list on the SharePoint site.  
   
-3.  若要呈現此範例的費用報表，請在頁面頂端選擇 \[**程式庫工具**\] 索引標籤上的 \[**文件**\] 連結，將一些新文件上載至 \[文件\] 清單，然後選擇工具功能區上的 \[**上載文件**\] 按鈕。  
+3.  To represent expense reports for this example, upload some new documents into the Documents list by choosing the **Documents** link on the **LibraryTools** tab at the top of the page and then choosing the **Upload Document** button on the tool ribbon.  
   
-4.  在您上載某些檔案後，請選取在 \[**LibraryTools**\] 索引標籤上的 \[**程式庫**\] 連結頁面的頂端然後選取工具功能區上的 \[**程式庫設定**\] 按鈕，進行具現化工作流程。  
+4.  After you upload some documents, instantiate the workflow by choosing the **Library** link on the **LibraryTools** tab at the top of the page and then choosing the **Library Settings** button on the tool ribbon.  
   
-5.  在 \[**文件庫設定**\] 頁面上，選擇 \[**權限與管理**\] 區段中的 \[**工作流程設定**\] 連結。  
+5.  In the **Document Library Settings** page, choose the **Workflow Settings** link in the **Permissions and Management** section.  
   
-6.  選擇 \[**工作流程設定**\] 頁面中的 \[**加入工作流程**\] 連結。  
+6.  In the **Workflow Settings** page, choose the **Add a workflow** link.  
   
-7.  在 \[**加入工作流程**\] 頁面中，選取 \[**ExpenseReport \- Workflow1**\] 工作流程，輸入工作流程的名稱，例如 ExpenseTest，然後按 \[**下一步**\] 按鈕。  
+7.  In the **Add a Workflow** page, choose the **ExpenseReport - Workflow1** workflow, enter a name for the workflow, such as **ExpenseTest**, and then choose the **Next** button.  
   
-     工作流程關聯表單隨即出現。  使用此表單來報告費用限制金額。  
+     The workflow Association form appears. Use it to report the expense limit amount.  
   
-8.  在關聯表單，請輸入 **1000** 至 \[**自動核准限制**\] 方塊中，然後選擇 \[**關聯的工作流程**\] 按鈕。  
+8.  In the Association form, enter **1000** into the **Auto Approval Limit** box, and then choose the **Associate Workflow** button.  
   
-9. 按 \[**首頁**\] 按鈕回到 SharePoint 首頁。  
+9. Choose the **Home** button to return to the SharePoint home page.  
   
-10. 按一下快速啟動列上的 \[**共用文件**\] 連結。  
+10. Choose the **Shared Documents** link on the QuickLaunch bar.  
   
-11. 選取其中一個上載的文件來顯示下拉箭號，選取它，然後選取 \[**工作流程**\] 項目。  
+11. Choose one of the uploaded documents to display a drop-down arrow, choose it, and then choose the **Workflows** item.  
   
-12. 按一下 ExpenseTest 旁的影像，以顯示工作流程初始表單。  
+12. Choose the image next to the ExpenseTest to display the workflow Initiation form.  
   
-13. 在 \[**總支出**\] 文字方塊中輸入大於 1000 的值，然後按一下 \[**啟動工作流程**\] 按鈕。  
+13. In the **Expense Total** text box, enter a value that's greater than 1000, and then choose the **Start Workflow** button.  
   
-     當報告的費用超過所配置的費用金額時，會將工作加入至工作清單。  名為 \[**ExpenseTest**\] 的欄和值 \[**已完成**\] 也會加入至 \[共用文件\] 清單中的費用報表項目。  
+     When a reported expense exceeds the allocated expense amount, a task is added to the Task List. A column named **ExpenseTest** with the value **Completed** is also added to the expense report item in the Shared Documents list.  
   
-14. 針對 \[共用文件\] 清單中的其他文件重複步驟 11 \- 13\(文件的精確數字並不重要\)。  
+14. Repeat steps 11 - 13 with other documents in the Shared Documents list. (The exact number of documents is not important.)  
   
-15. 在 Web 瀏覽器中開啟下列 URL，顯示費用報表摘要應用程式頁面：**http:\/\/***SystemName***\/\_layouts\/ExpenseReport\/ApplicationPage1.aspx**。  
+15. Display the expense report summary application page by opening the following URL in a Web browser: **http://***SystemName***/_layouts/ExpenseReport/ApplicationPage1.aspx**.  
   
-     費用報表摘要頁面會顯示超過所配置金額的所有費用報表、超過的金額，以及所有報表的總金額。  
+     The expense report summary page lists all of the expense reports that exceeded the allocated amount, the amount they exceeded it by, and the total amount for all reports.  
   
-## 後續步驟  
- 如需 SharePoint 應用程式頁面的詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
+## <a name="next-steps"></a>Next Steps  
+ For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
   
- 您可以透過下列主題，進一步了解如何使用 Visual Studio 中的 Visual Web 設計工具來設計 SharePoint 頁面內容：  
+ You can learn more about how to design SharePoint page content by using the Visual Web Designer in Visual Studio from these topics:  
   
--   [建立 SharePoint 的 Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
   
--   [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
   
-## 請參閱  
- [逐步解說：使用關聯與初始化表單建立工作流程](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
- [如何：建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)   
- [建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)   
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Creating a Workflow with Association and Initiation Forms](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)   
+ [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
+ [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md)   
  [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
   
   

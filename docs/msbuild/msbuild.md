@@ -30,10 +30,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 79d77230e46bade8e89d4503dbf95b1f1831e464
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 44e9d5e7af0994c494522a043c74046c6667abeb
+ms.openlocfilehash: 3b7d14a96683da16d1c7e6bae6a5226bfbaaa616
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/08/2017
 
 ---
 # <a name="msbuild"></a>MSBuild
@@ -152,7 +153,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
 ###  <a name="BKMK_Tasks"></a> 工作  
  工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案用來執行建置作業之可執行程式碼的單元。 例如，工作可能是編譯輸入檔，或是執行外部工具。 工作可以重複使用，而且可以由不同專案中的不同開發人員共用。  
   
- 工作的執行邏輯是以 Managed 程式碼撰寫，並使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目對應到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 您可以撰寫 Managed 類型來實作 <xref:Microsoft.Build.Framework.ITask> 介面，藉以撰寫自己的工作。 如需如何撰寫工作的詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
+ 工作的執行邏輯是以 Managed 程式碼撰寫，並使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目對應到 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]。 若想撰寫自己的工作，您可以撰寫一個實作 <xref:Microsoft.Build.Framework.ITask> 介面的 Managed 類型。 如需如何撰寫工作的詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
   
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 包含您可以依據自己的需求修改的一般工作。  範例包括用於複製檔案的 [Copy](../msbuild/copy-task.md)、用於建立目錄的 [MakeDir](../msbuild/makedir-task.md)，以及用於編譯 Visual C# 原始程式碼檔的 [Csc](../msbuild/csc-task.md)。 如需可用工作的清單和用法資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
@@ -224,5 +225,6 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
  包含參考資訊的主題連結。  
   
- 字彙表  
- 定義通用 MSBuild 詞彙。
+ [字彙表](msbuild-glossary.md)
+ 定義通用的 MSBuild 字詞。
+

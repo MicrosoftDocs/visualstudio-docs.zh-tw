@@ -1,43 +1,60 @@
 ---
-title: "CA2149：透明方法不可以呼叫機器碼 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2149"
+title: 'CA2149: Transparent methods must not call into native code | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2149
 ms.assetid: 28951bd7-f3db-4871-99aa-bad68d1ead80
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# CA2149：透明方法不可以呼叫機器碼
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 71ec50be4ff379c67cc775d61903a37e8bd2a773
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2149-transparent-methods-must-not-call-into-native-code"></a>CA2149: Transparent methods must not call into native code
 |||  
 |-|-|  
-|型別名稱|TransparentMethodsMustNotCallNativeCode|  
+|TypeName|TransparentMethodsMustNotCallNativeCode|  
 |CheckId|CA2149|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 方法會呼叫 P\/Invoke 之類的方法 Stub 呼叫原生函式。  
+## <a name="cause"></a>Cause  
+ A method calls a native function through a method stub such as P/Invoke.  
   
-## 規則描述  
- 任何直接呼叫機器碼的透明方法都會引發此規則，例如透過 P\/Invoke。  違反這個規則會在層級 2安全性透明模型中導致 <xref:System.MethodAccessException>，並且在層級 1 透明模型中導致對 <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> 的完整需求。  
+## <a name="rule-description"></a>Rule Description  
+ This rule fires on any transparent method which calls directly into native code, for example, through a P/Invoke. Violations of this rule lead to a <xref:System.MethodAccessException> in the level 2 transparency model, and a full demand for <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> in the level 1 transparency model.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請在呼叫機器碼的方法標記 <xref:System.Security.SecurityCriticalAttribute> 或 <xref:System.Security.SecuritySafeCriticalAttribute> 屬性。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the method that calls the native code with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- [!CODE [FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../CodeSnippet/VS_Snippets_CodeAnalysis/fxcop.security.ca2149.transparentmethodsmustnotcallnativecode#1)]
+## <a name="example"></a>Example  
+ [!code-csharp[FxCop.Security.CA2149.TransparentMethodsMustNotCallNativeCode#1](../code-quality/codesnippet/CSharp/ca2149-transparent-methods-must-not-call-into-native-code_1.cs)]

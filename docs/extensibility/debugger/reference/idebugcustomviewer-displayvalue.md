@@ -1,70 +1,87 @@
 ---
-title: "IDebugCustomViewer::DisplayValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
-helpviewer_keywords: 
-  - "IDebugCustomViewer::DisplayValue"
+title: IDebugCustomViewer::DisplayValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCustomViewer::DisplayValue
+helpviewer_keywords:
+- IDebugCustomViewer::DisplayValue
 ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugCustomViewer::DisplayValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c3bc315c94dabe095ee1c95d13877b87b1ebbd70
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-若要顯示指定的值，會呼叫這個方法。  
+---
+# <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
+This method is called to display the specified value.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayValue(  
-   HWND             hwnd,  
-   DWORD            dwID,  
-   IUnknown *       pHostServices,  
-   IDebugProperty3* pDebugProperty);  
+   HWND             hwnd,  
+   DWORD            dwID,  
+   IUnknown *       pHostServices,  
+   IDebugProperty3* pDebugProperty);  
 );  
 ```  
   
-```c#  
+```csharp  
 int DisplayValue(  
-   IntPtr          hwnd,   
-   uint            dwID,   
-   object          pHostServices,   
-   IDebugProperty3 pDebugProperty  
+   IntPtr          hwnd,   
+   uint            dwID,   
+   object          pHostServices,   
+   IDebugProperty3 pDebugProperty  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `hwnd`  
- \[in\]父視窗  
+ [in] Parent window  
   
  `dwID`  
- \[in\]支援多種類型的自訂檢視器的識別碼。  
+ [in] ID for custom viewers that support more than one type.  
   
  `pHostServices`  
- \[in\] 保留。  永遠設定為 null。  
+ [in] Reserved. Always set to null.  
   
  `pDebugProperty`  
- \[in\]可以用來擷取要顯示值的介面。  
+ [in] Interface that can be used to retrieve the value to be displayed.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code.  
   
-## 備註  
- 因為這個方法會建立所需的視窗、 顯示值、 等待輸入，並關閉視窗中，所有傳回給呼叫端之前，顯示為"modal"。  這表示該方法必須處理所有層面顯示屬性的值，無法建立輸出中、 等候使用者輸入，來終結視窗的視窗。  
+## <a name="remarks"></a>Remarks  
+ The display is "modal" in that this method will create the necessary window, display the value, wait for input, and close the window, all before returning to the caller. This means the method must handle all aspects of displaying the property's value, from creating a window for output, to waiting for user input, to destroying the window.  
   
- 若要支援變更值在指定[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)物件時，您可以使用[SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)方法 — 如果值可以表示為字串。  否則，就必須建立一個自訂介面，由運算式評估工具實作這`DisplayValue`方法 — 相同的物件實作`IDebugProperty3`介面。  這個自訂介面提供方法，用於修改任意大小或複雜的資料。  
+ To support changing the value on the given [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) object, you can use the [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) method —if the value can be expressed as a string. Otherwise, it is necessary to create a custom interface—exclusive to the expression evaluator implementing this `DisplayValue` method—on the same object that implements the `IDebugProperty3` interface. This custom interface would supply methods for changing the data of an arbitrary size or complexity.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

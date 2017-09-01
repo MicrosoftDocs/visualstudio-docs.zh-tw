@@ -1,206 +1,203 @@
 ---
-title: "逐步解說：在 Visual Studio 中建立本機資料庫檔案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 區域資料"
-  - "資料 [Visual Studio], 逐步解說"
-  - "資料庫檔案, 建立"
-  - "資料庫, 建立"
-  - "區域資料"
-  - "LocalDB"
-  - "SQL Express"
-  - "SQL Server Express"
-  - "SQLEXPRESS"
+title: Create a SQL database by using a designer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- SQL Server Express
+- local data
+- LocalDB
+- SQLEXPRESS
+- data [Visual Studio], Local data
+- SQL Express
+- data [Visual Studio], walkthroughs
+- databases, creating
+- database files, creating
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 49
-caps.handback.revision: 44
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
 robots: noindex,nofollow
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: f83a5530eccf7c24e351dd29c7d083c5593a7878
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：在 Visual Studio 中建立本機資料庫檔案
-您可以使用 Visual Studio，在[區域資料概觀](../data-tools/local-data-overview.md)所述的 SQL Server Express LocalDB 中建立和更新本機資料庫檔案，來查看基本工作，例如加入資料表和定義資料行。  當您完成本逐步解說之後，您可以使用本機資料庫做為其他逐步解說的起點，探索更多進階的功能。  
+# <a name="create-a-sql-database-by-using-a-designer"></a>Create a SQL database by using a designer
+You can explore basic tasks, such as adding tables and defining columns, by using Visual Studio to create and update a local database file in SQL Server Express LocalDB. After you finish this walkthrough, you can discover more advanced capabilities by using your local database as a starting point for other walkthroughs that require it.  
   
- 如需如何使用 SQL Server Management Studio 或 Transact\-SQL 建立資料庫的詳細資訊，請參閱[Create a Database](http://msdn.microsoft.com/zh-tw/4c4beea2-6cbc-4352-9db6-49ea8130bb64)。  
+ You can also create a database by using SQL Server Management Studio (a separate download) or Transact-SQL statements in the **SQL Server Object Explorer** tool window in Visual Studio.  
   
- 在這個逐步解說中，您將探索下列工作：  
+ During this walkthrough, you'll explore the following tasks:  
   
--   [建立專案和本機資料庫檔案](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)。  
+-   [Create a project and a local database file](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
--   [建立資料表、資料行、主索引鍵和外部索引鍵](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)。  
+-   [Create tables, columns, primary keys, and foreign keys](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
   
--   [將資料填入資料表](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)。  
+-   [Populate the tables with data](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
-## 必要條件  
- 若要完成本逐步解說，請安裝 [!INCLUDE[vs_dev12_expwin](../data-tools/includes/vs_dev12_expwin_md.md)]、Visual Studio Professional 2013、Visual Studio Premium 2013 或 Visual Studio Ultimate 2013。  這些 Visual Studio 版本都包括 SQL Server Data Tools。  
+## <a name="prerequisites"></a>Prerequisites  
+ To complete this walkthrough, ensure that you have SQL Server Data Tools installed. On the **View** menu, you should see **SQL Server Object Explorer**. If it's not there, go to **Add or Remove Programs**, click **Visual Studio 2015**, select **Change**, and select the box next to **SQL Server Data Tools**.  
   
-##  <a name="BKMK_CreateNewSQLDB"></a> 建立專案和本機資料庫檔案  
+##  <a name="BKMK_CreateNewSQLDB"></a> Create a project and a local database file  
   
-#### 若要建立專案和資料庫檔案  
+#### <a name="to-create-a-project-and-a-database-file"></a>To create a project and a database file  
   
-1.  建立名為 `SampleDatabaseWalkthrough`的 Windows Form 專案。  
+1.  Create a Windows Forms project that's named `SampleDatabaseWalkthrough`.  
   
-     請參閱 [建立方案與專案](../ide/creating-solutions-and-projects.md)。  
+2.  On the menu bar, select **Project** > **Add New Item**.  
   
-2.  在功能表列中，選擇 \[**專案**\]、\[**加入新項目**\]。  
+3.  In the list of item templates, scroll down and select **Service-based Database**.  
   
-     \[**加入新項目**\] 對話方塊隨即出現，讓您可以加入適用於 Windows Form 專案的項目。  
+     ![Item Templates dialog box](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
   
-3.  在項目範本清單中，向下捲動直到出現 \[**服務架構資料庫**\]，然後選擇它。  
+4.  Name the database **SampleDatabase**, and then select the **Add** button.  
   
-     ![項目範本對話方塊](../data-tools/media/raddata-vsitemtemplates.png "raddata VSItemTemplates")  
+5.  If the **Data Sources** window isn't open, open it by selecting the Shift+Alt+D keys or, on the menu bar, selecting **View** > **Other Windows** > **Data Sources**.  
   
-4.  將資料庫命名為 SampleDatabase，然後選擇 \[**加入**\] 按鈕。  
+6.  In the **Data Sources** window, select the **Add New Data Source** link.  
   
-5.  如果 \[資料來源\] 視窗未開啟，請選擇 Shift\-Alt\-D 鍵將它開啟，或是在功能表列上選擇 \[**檢視**\]、\[**其他視窗**\]、\[**資料來源**\] 將它開啟。  
+7.  In the **Data Source Configuration Wizard**, select the **Next** button four times to accept the default settings, and then select the **Finish** button.  
   
-6.  在 \[資料來源\] 視窗中，選擇 \[**加入新資料來源**\] 連結。  
+ By opening the properties window for the database, you can view its connection string and the location of the primary .mdf file. You will see that the database file is in the project folder.  
   
-7.  在 \[**資料來源組態精靈**\] 中，選擇 \[**下一步**\] 按鈕四次接受預設設定，然後選擇 \[**完成**\] 按鈕。  
+-   In Visual Studio, select **View** > **SQL Server Object Explorer** if that window isn't already open. Open the properties window by expanding the **Data Connections** node, opening the shortcut menu for SampleDatabase.mdf, and then selecting **Properties**.  
   
- 藉由開啟資料庫的屬性視窗，就可以檢視其連接字串和主要 .mdf 檔案的位置。  
+-   Alternatively, you can select **View** > **Server Explorer**, if that window isn't already open. Open the properties window by expanding the **Data Connections** node. Open the shortcut menu for SampleDatabase.mdf, and then select **Properties**.  
   
--   在 Visual Studio Express 中，如果視窗尚未開啟，請選擇 \[**檢視**\]、\[**其他視窗**\]、\[**資料庫總管**\]。  展開 \[**資料連接**\] 節點、開啟 SampleDatabase.mdf 的捷徑功能表，然後選擇 \[**屬性**\]，即可開啟屬性視窗。  
+##  <a name="BKMK_CreateNewTbls"></a> Create tables, columns, primary keys, and foreign keys  
+ In this section, you'll create a couple of tables, a primary key in each table, and a few rows of sample data. In the next walkthrough, you'll get an idea of how that information might appear in an application. You'll also create a foreign key to specify how records in one table might correspond to records in the other table.  
   
--   在其他 Visual Studio 版本中，如果視窗尚未開啟，請選擇 \[**檢視**\]、\[**伺服器總管**\]。  展開 \[**資料連接**\] 節點、開啟 SampleDatabase.mdf 的捷徑功能表，然後選擇 \[**屬性**\]，即可開啟屬性視窗。  
+#### <a name="to-create-the-customers-table"></a>To create the Customers table  
   
-##  <a name="BKMK_CreateNewTbls"></a> 建立資料表、資料行、主索引鍵和外部索引鍵  
- 在本節中，您將建立幾個資料表、每個資料表中的主索引鍵以及一些範例資料列。  在下一個逐步解說中，您將會了解該資訊可能會以哪種方式出現在應用程式中的概念。  您也會建立外部索引鍵，以指定資料表中的記錄如何與另一個資料表中的記錄對應。  
+1.  In **Server Explorer** or **SQL Server Object Explorer**, expand the **Data Connections** node, and then expand the **SampleDatabase.mdf** node.  
   
-#### 若要建立 Customers 資料表  
+2.  Open the shortcut menu for **Tables**, and then select **Add New Table**.  
   
-1.  在 \[**伺服器總管**\] 或 \[**資料庫總管**\] 中，展開 \[**資料連接**\] 節點，然後展開 \[**SampleDatabase.mdf**\] 節點。  
+     The **Table Designer** opens and shows a grid with one default row, which represents a single column in the table that you're creating. By adding rows to the grid, you'll add columns in the table.  
   
-     如果您的 Visual Studio 版本的總管尚未開啟，請在功能表列上選擇 \[**檢視**\]、\[**伺服器總管**\] 或 \[**檢視**\]、\[**其他視窗**\]、\[**資料庫總管**\]。  
+3.  In the grid, add a row for each of the following entries:  
   
-2.  開啟 \[**資料表**\] 的捷徑功能表，然後選擇 \[**加入新的資料表**\]。  
+    |Column name|Data type|Allow nulls|  
+    |-----------------|---------------|-----------------|  
+    |`CustomerID`|`nchar(5)`|False (cleared)|  
+    |`CompanyName`|`nvarchar(50)`|False (cleared)|  
+    |`ContactName`|`nvarchar (50)`|True (selected)|  
+    |`Phone`|`nvarchar (24)`|True (selected)|  
   
-     \[**資料表設計工具**\] 隨即開啟並顯示含有一個預設列的格線，這表示您要建立的資料表中的單一資料行。  藉由在格線中加入資料列，您就是在資料表中加入資料行。  
+4.  Open the shortcut menu for the `CustomerID` row, and then select **Set Primary Key**.  
   
-3.  在格線中，為下列每一個項目加入一個資料列：  
+5.  Open the shortcut menu for the default row, and then select **Delete**.  
   
-    |資料行名稱|資料類型|允許 Null|  
-    |-----------|----------|-------------|  
-    |`CustomerID`|`nchar(5)`|False \(已清除\)|  
-    |`CompanyName`|`nvarchar(40)`|False \(已清除\)|  
-    |`ContactName`|`nvarchar (30)`|True \(已選取\)|  
-    |`Phone`|`nvarchar (24)`|True \(已選取\)|  
-  
-4.  開啟 `CustomerID` 資料列的捷徑功能表，然後選擇 \[**設定主索引鍵**\]。  
-  
-5.  開啟預設資料列的捷徑功能表，然後選擇 \[**刪除**\]。  
-  
-6.  透過更新指令碼窗格中的第一行來命名 Customers 資料表，以符合下面範例：  
+6.  Name the Customers table by updating the first line in the script pane to match the following sample:  
   
     ```  
     CREATE TABLE [dbo].[Customers]  
     ```  
   
-7.  在 \[資料表設計工具\] 的左上角，選擇 \[**更新**\] 按鈕，如下圖所示。  
+     You should see something like this:  
   
-     ![資料表設計工具的更新按鈕](../data-tools/media/updatelocaldb.png "UpdateLocalDB")  
+     ![Table Designer](../data-tools/media/raddata-table-designer.png "raddata Table Designer")  
   
-8.  在 \[**預覽資料庫更新**\] 對話方塊中，選擇 \[**更新資料庫**\] 按鈕。  
+7.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-     您所做的變更會儲存到本機資料庫檔案中。  
+8.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-#### 若要建立 Orders 資料表  
+     Your changes are saved to the local database file.  
   
-1.  加入另一個資料表，然後為下表中的每個項目加入一個資料列：  
+#### <a name="to-create-the-orders-table"></a>To create the Orders table  
   
-    |資料行名稱|資料類型|允許 Null|  
-    |-----------|----------|-------------|  
-    |`OrderID`|`int`|False \(已清除\)|  
-    |`CustomerID`|`nchar(5)`|False \(已清除\)|  
-    |`OrderDate`|`datetime`|True \(已選取\)|  
-    |`OrderQuantity`|`int`|True \(已選取\)|  
+1.  Add another table, and then add a row for each entry in the following table:  
   
-2.  將 \[**OrderID**\] 設為主索引鍵，然後刪除預設的資料列。  
+    |Column name|Data type|Allow nulls|  
+    |-----------------|---------------|-----------------|  
+    |`OrderID`|`int`|False (cleared)|  
+    |`CustomerID`|`nchar(5)`|False (cleared)|  
+    |`OrderDate`|`datetime`|True (selected)|  
+    |`OrderQuantity`|`int`|True (selected)|  
   
-3.  透過更新指令碼窗格中的第一行來命名 Orders 資料表，以符合下面範例：  
+2.  Set **OrderID** as the primary key, and then delete the default row.  
+  
+3.  Name the Orders table by updating the first line in the script pane to match the following sample:  
   
     ```  
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  在 \[資料表設計工具\] 的左上角，選擇 \[**更新**\] 按鈕。  
+4.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-5.  在 \[**預覽資料庫更新**\] 對話方塊中，選擇 \[**更新資料庫**\] 按鈕。  
+5.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-     您所做的變更會儲存到本機資料庫檔案中。  
+     Your changes are saved to the local database file.  
   
-#### 若要建立外部索引鍵  
+#### <a name="to-create-a-foreign-key"></a>To create a foreign key  
   
-1.  在格線右側的內容窗格中，開啟 \[**外部索引鍵**\] 的捷徑功能表，然後選擇 \[**加入新的外部索引鍵**\]，如下圖所示。  
+1.  In the context pane on the right side of the grid, open the shortcut menu for **Foreign Keys**, and then select **Add New Foreign Key**, as the following illustration shows.  
   
-     ![在資料表設計工具中加入外部索引鍵](../data-tools/media/foreignkey.png "ForeignKey")  
+     ![Adding a foreign key in Table Designer](../data-tools/media/foreignkey.png "ForeignKey")  
   
-2.  在出現的文字方塊中，以 `Customers` 取代 \[**ToTable**\]。  
+2.  In the text box that appears, replace **ToTable** with `Customers`.  
   
-3.  在指令碼窗格中，更新最後一行以符合下面範例：  
+3.  In the T-SQL pane, update the last line to match the following sample:  
   
     ```  
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  在 \[資料表設計工具\] 的左上角，選擇 \[**更新**\] 按鈕。  
+4.  In the upper-left corner of the **Table Designer**, select the **Update** button.  
   
-5.  在 \[**預覽資料庫更新**\] 對話方塊中，選擇 \[**更新資料庫**\] 按鈕。  
+5.  In the **Preview Database Updates** dialog box, select the **Update Database** button.  
   
-     您所做的變更會儲存到本機資料庫檔案中。  
+     Your changes are saved to the local database file.  
   
-##  <a name="BKMK_Populating"></a> 將資料填入資料表  
+##  <a name="BKMK_Populating"></a> Populate the tables with data  
   
-#### 若要將資料填入資料表  
+#### <a name="to-populate-the-tables-with-data"></a>To populate the tables with data  
   
-1.  在 \[**伺服器總管**\] 或 \[**資料庫總管**\] 中，展開範例資料庫的節點。  
+1.  In **Server Explorer** or **SQL Server Object Explorer**, expand the node for the sample database.  
   
-2.  開啟資料表節點的捷徑功能表，選擇 \[**重新整理**\]，然後展開資料表節點。  
+2.  Open the shortcut menu for the **Tables** node, select **Refresh**, and then expand the **Tables** node.  
   
-3.  開啟 Customers 資料表的捷徑功能表，然後選擇 \[**顯示資料表資料**\]。  
+3.  Open the shortcut menu for the Customers table, and then select **Show Table Data**.  
   
-4.  針對至少三個客戶，加入任何想要的資料。  
+4.  Add whatever data you want for at least three customers.  
   
-     您可以指定要做為客戶 ID 的五個任意字元，不過，請至少選擇一個可記住且之後可在此程序中使用的字元。  
+     You can specify any five characters you want as the customer IDs, but choose at least one that you can remember for use later in this procedure.  
   
-5.  開啟 Orders 資料表的捷徑功能表，然後選擇 \[**顯示資料表資料**\]。  
+5.  Open the shortcut menu for the Orders table, and then select **Show Table Data**.  
   
-6.  加入至少三筆訂單的資料。  
+6.  Add data for at least three orders.  
   
     > [!IMPORTANT]
-    >  確定所有訂單 ID 和訂單數量都是整數，而且每個客戶 ID 都符合您在 Customers 資料表的 CustomerID 資料行中指定的值。  
+    >  Make sure that all order IDs and order quantities are integers and that each customer ID  matches a value that you specified in the CustomerID column of the Customers table.  
   
-7.  在功能表列上，選擇 \[**檔案**\]、\[**全部儲存**\]。  
+7.  On the menu bar, select **File** > **Save All**.  
   
-8.  在功能表列上，選擇 \[**檔案**\]、\[**關閉方案**\]。  
+8.  On the menu bar, select **File** > **Close Solution**.  
   
     > [!NOTE]
-    >  最佳做法是，複製資料庫檔案，然後將複本貼到其他位置或為複本指定不同的名稱，以此方式備份剛建立的資料庫檔案。  
+    >  As a best practice, you can back up the database file that you just created by copying it and then either pasting the copy in another location or giving the copy a different name.  
   
-## 後續步驟  
- 現在您已經有包含一些範例資料的本機資料庫檔案，除了示範資料庫工作的其他逐步解說之外，您還可以完成[逐步解說：連接至本機資料庫檔案中的資料 \(Windows Form\)](../Topic/Walkthrough:%20Connecting%20to%20Data%20in%20a%20Local%20Database%20File%20\(Windows%20Forms\).md)。  
-  
-## 請參閱  
- [如何：管理專案中的本機資料檔](../data-tools/how-to-manage-local-data-files-in-your-project.md)   
- [區域資料概觀](../data-tools/local-data-overview.md)   
- [將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="next-steps"></a>Next Steps  
+ Now that you have a local database file with some sample data, you can complete any of the walkthroughs that demonstrate database tasks.

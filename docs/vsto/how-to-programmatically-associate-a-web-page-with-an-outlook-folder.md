@@ -1,39 +1,44 @@
 ---
-title: "如何：以程式設計方式使網頁與 Outlook 資料夾產生關聯"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料夾 [Visual Studio 中的 Office 程式開發], Web 網頁和"
-  - "Outlook [Visual Studio 中的 Office 程式開發], 附加至資料夾的 Web 網頁"
-  - "Web 網頁 [Visual Studio 中的 Office 程式開發], Outlook 資料夾"
+title: 'How to: Programmatically Associate a Web Page with an Outlook Folder | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- folders [Office development in Visual Studio], Web pages and
+- Outlook [Office development in Visual Studio], Web pages attached to folders
+- Web pages [Office development in Visual Studio], Outlook folders
 ms.assetid: b211b1b2-11e4-4316-87b7-98a3d10f95d1
 caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c3f4eeb5aa8de09da03c1d2d3a1b97967c70b4af
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式使網頁與 Outlook 資料夾產生關聯
-  這個範例會檢查 Microsoft Office Outlook 中名為 `HtmlView` 的資料夾是否存在。  如果此資料夾不存在，程式碼就會建立此資料夾並指派 Web 網頁給它。  如果此資料夾存在，則程式碼就會顯示資料夾內容。  
+# <a name="how-to-programmatically-associate-a-web-page-with-an-outlook-folder"></a>How to: Programmatically Associate a Web Page with an Outlook Folder
+  This example checks for a folder named `HtmlView` in Microsoft Office Outlook. If the folder does not exist, the code creates the folder and assigns a Web page to it. If the folder exists, the code displays the folder contents.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## 範例  
- [!code-csharp[Trin_OL_HTMLFolder#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_HTMLFolder/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]  
   
-## 請參閱  
- [使用資料夾](../vsto/working-with-folders.md)   
- [如何：以程式設計方式依名稱擷取資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [如何：以程式設計方式建立自訂資料夾項目](../vsto/how-to-programmatically-create-custom-folder-items.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Folders](../vsto/working-with-folders.md)   
+ [How to: Programmatically Retrieve a Folder by Name](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [How to: Programmatically Create Custom Folder Items](../vsto/how-to-programmatically-create-custom-folder-items.md)  
   
   

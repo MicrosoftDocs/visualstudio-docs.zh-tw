@@ -1,5 +1,5 @@
 ---
-title: "在舊版語言服務中的自動變數 視窗支援 |Microsoft 文件"
+title: Support for the Autos Window in a Legacy Language Service | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,28 +29,29 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 88cff53ca5c335fdf60aef85d79e9c6e86f03cfa
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b6e4f4783bd4d968ad7ab4784cdd6bb32ba2392a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支援舊版語言服務中的自動變數視窗
-**自動變數** 視窗會顯示運算式，例如變數和偵錯程式暫停 （可能是因為中斷點或例外狀況） 時，會在範圍的參數。 運算式可以包含變數，本機或全域和區域範圍中已變更的參數。 **自動變數**視窗也可以包含類別、 結構或其他類型的具現化。 運算式評估工具可以評估的任何項目可能會顯示在**自動變數**視窗。  
+# <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Support for the Autos Window in a Legacy Language Service
+The **Autos** window displays expressions such as variables and parameters that are in scope when the program being debugged is paused (either due to a breakpoint or an exception). The expressions can include variables, local or global, and parameters that have been changed in the local scope. The **Autos** window can also include instantiations of a class, structure, or some other type. Anything that an expression evaluator can evaluate can potentially be shown in the **Autos** window.  
   
- 受管理的封裝架構 (MPF) 不提供直接支援**自動變數**視窗。 不過，如果您覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法中，您可以傳回的運算式，以顯示在清單**自動變數**視窗。</xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>  
+ The managed package framework (MPF) does not provide direct support for the **Autos** window. However, if you override the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method, you can return a list of expressions to be presented in the **Autos** window.  
   
-## <a name="implementing-support-for-the-autos-window"></a>實作支援自動變數視窗  
- 您需要支援**自動變數**視窗就是實作<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>在<xref:Microsoft.VisualStudio.Package.LanguageService>類別</xref:Microsoft.VisualStudio.Package.LanguageService>中的方法</xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> 您的實作必須決定指定的位置，在來源檔案中，運算式應該會出現在**自動變數**視窗。 方法會傳回的字串，其中每個字串代表單一運算式清單。 傳回值為<xref:Microsoft.VisualStudio.VSConstants.S_OK>指出清單是否包含運算式，而<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>表示沒有顯示運算式。</xref:Microsoft.VisualStudio.VSConstants.S_FALSE> </xref:Microsoft.VisualStudio.VSConstants.S_OK>  
+## <a name="implementing-support-for-the-autos-window"></a>Implementing Support for the Autos Window  
+ All you need to do to support the **Autos** window is to implement the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method in the <xref:Microsoft.VisualStudio.Package.LanguageService> class. Your implementation must decide, given a location in the source file, which expressions should appear in the **Autos** window. The method returns a list of strings in which each string represents a single expression. A return value of <xref:Microsoft.VisualStudio.VSConstants.S_OK> indicates that the list contains expressions, while <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> indicates that there are no expressions to show.  
   
- 傳回實際的運算式是變數或參數，會出現在程式碼中該位置的名稱。 這些名稱傳遞給運算式評估工具，若要取得的值和型別，然後顯示在**自動變數**視窗。  
+ The actual expressions returned are the names of the variables or parameters that appear at that location in the code. These names are passed to the expression evaluator to obtain values and types that are then displayed in the **Autos** window.  
   
-### <a name="example"></a>範例  
- 下列範例示範<xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>方法，取得一份來自<xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>方法使用剖析原因<xref:Microsoft.VisualStudio.Package.ParseReason>.</xref:Microsoft.VisualStudio.Package.ParseReason></xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>運算式</xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A>的實作 每個運算式做為包裝`TestVsEnumBSTR`實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>介面。</xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR>  
+### <a name="example"></a>Example  
+ The following example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.GetProximityExpressions%2A> method that gets a list of expressions from the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method using the parse reason <xref:Microsoft.VisualStudio.Package.ParseReason>. Each of the expressions is wrapped as a `TestVsEnumBSTR` that implements the <xref:Microsoft.VisualStudio.TextManager.Interop.IVsEnumBSTR> interface.  
   
- 請注意，`GetAutoExpressionsCount`和`GetAutoExpression`方法都是自訂的方法上`TestAuthoringSink`物件，並已加入以支援這個範例。 它們代表一種方式新增至哪一個運算式中的`TestAuthoringSink`剖析器物件 (藉由呼叫<xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>方法) 可以剖析器之外進行存取。</xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A>  
+ Note that the `GetAutoExpressionsCount` and `GetAutoExpression` methods are custom methods on the `TestAuthoringSink` object and were added to support this example. They represent one way in which expressions added to the `TestAuthoringSink` object by the parser (by calling the <xref:Microsoft.VisualStudio.Package.AuthoringSink.AutoExpression%2A> method) can be accessed outside the parser.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  

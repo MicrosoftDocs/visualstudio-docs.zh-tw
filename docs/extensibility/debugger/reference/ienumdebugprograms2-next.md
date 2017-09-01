@@ -1,5 +1,5 @@
 ---
-title: "IEnumDebugPrograms2::Next |Microsoft 文件"
+title: IEnumDebugPrograms2::Next | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ed30d990c4a203611a9052632176f19098507bcd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f8117e40eb338cc8ac20cc928889462ae02d2d5e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ienumdebugprograms2next"></a>IEnumDebugPrograms2::Next
-從列舉傳回下一個項目的集合。  
+Returns the next set of elements from the enumeration.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Next(  
    ULONG            celt,  
    IDebugProgram2** rgelt,  
@@ -49,7 +50,7 @@ HRESULT Next(
 );  
 ```  
   
-```c#  
+```csharp  
 int Next(  
    uint             celt,  
    IDebugProgram2[] rgelt,  
@@ -57,19 +58,19 @@ int Next(
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- [in]若要擷取的項目數目。 也會指定的大小上限`rgelt`陣列。  
+ [in] The number of elements to retrieve. Also specifies the maximum size of the `rgelt` array.  
   
  `rgelt`  
- [in、 out]陣列[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)要填入的項目。  
+ [in, out] Array of [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) elements to be filled in.  
   
  `pceltFetched`  
- [out]傳回的項目數中實際傳回`rgelt`。  
+ [out] Returns the number of elements actually returned in `rgelt`.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果無法傳回要求的項目數目較少; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`. Returns `S_FALSE` if fewer than the requested number of elements could be returned; otherwise, returns an error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

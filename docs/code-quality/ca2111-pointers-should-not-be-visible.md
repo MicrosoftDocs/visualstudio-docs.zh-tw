@@ -1,60 +1,77 @@
 ---
-title: "CA2111：指標不應該為可見的 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PointersShouldNotBeVisible"
-  - "CA2111"
-helpviewer_keywords: 
-  - "CA2111"
-  - "PointersShouldNotBeVisible"
+title: 'CA2111: Pointers should not be visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- PointersShouldNotBeVisible
+- CA2111
+helpviewer_keywords:
+- CA2111
+- PointersShouldNotBeVisible
 ms.assetid: b3a8d466-895b-43bc-a2df-5d7058fe915f
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
----
-# CA2111：指標不應該為可見的
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9cc87d45fe19ec583499f918cb1e50528c418925
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2111-pointers-should-not-be-visible"></a>CA2111: Pointers should not be visible
 |||  
 |-|-|  
-|型別名稱|PointersShouldNotBeVisible|  
+|TypeName|PointersShouldNotBeVisible|  
 |CheckId|CA2111|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的 <xref:System.IntPtr?displayProperty=fullName> 或 <xref:System.UIntPtr?displayProperty=fullName> 欄位都不是唯讀的。  
+## <a name="cause"></a>Cause  
+ A public or protected <xref:System.IntPtr?displayProperty=fullName> or <xref:System.UIntPtr?displayProperty=fullName> field is not read-only.  
   
-## 規則描述  
- <xref:System.IntPtr> 和 <xref:System.UIntPtr> 是用於存取 Unmanaged 記憶體的指標型別。  如果指標不是私用、內部或唯讀的，惡意的程式碼可變更指標值，進而可能會允許存取記憶體中的任意位置，或是造成應用程式或系統錯誤。  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.IntPtr> and <xref:System.UIntPtr> are pointer types that are used to access unmanaged memory. If a pointer is not private, internal, or read-only, malicious code can change the value of the pointer, potentially allowing access to arbitrary locations in memory or causing application or system failures.  
   
- 如果您想要保護對包含指標欄位之型別的存取，請參閱[CA2112：受保護類型不應公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。  
+ If you intend to secure access to the type that contains the pointer field, see [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
   
-## 如何修正違規  
- 使指標成為唯讀、內部或私用的，即可保護指標。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Secure the pointer by making it read-only, internal, or private.  
   
-## 隱藏警告的時機  
- 如果您不依賴指標值，請隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Suppress a warning from this rule if you do not rely on the value of the pointer.  
   
-## 範例  
- 下列程式碼會顯示違反和滿足規則的指標。  請注意，非私用指標也會違反規則[CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)。  
+## <a name="example"></a>Example  
+ The following code shows pointers that violate and satisfy the rule. Notice that the non-private pointers also violate the rule [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).  
   
- [!code-cs[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]  
+ [!code-csharp[FxCop.Security.PointersArePrivate#1](../code-quality/codesnippet/CSharp/ca2111-pointers-should-not-be-visible_1.cs)]  
   
-## 相關規則  
- [CA2112：受保護類型不應公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
   
- [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
+ [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>

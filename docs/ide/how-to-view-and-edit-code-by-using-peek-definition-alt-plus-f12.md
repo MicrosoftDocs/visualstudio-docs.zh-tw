@@ -50,7 +50,7 @@ ms.lasthandoff: 05/13/2017
   
      下圖顯示名為 `Print()` 之方法的 [查看定義] 視窗：  
   
-     ![[查看] 視窗](~/ide/media/peekwindow.png "PeekWindow")  
+     ![[查看] 視窗](../ide/media/peekwindow.png "PeekWindow")  
   
      定義視窗會出現在原始檔案的 `printer.Print("Hello World!")` 這一行下方。 視窗不會隱藏原始檔案的任何程式碼。 `printer.Print("Hello World!")` 呼叫之後這幾行會出現在定義視窗底下。  
   
@@ -64,13 +64,13 @@ ms.lasthandoff: 05/13/2017
   
 -   如果您已開啟 [查看定義] 視窗，就可以在該視窗中的程式碼上再次呼叫 [查看定義]。 另一個定義視窗隨即開啟。 一組出現在定義視窗索引標籤旁邊的階層連結點，您可以用來在定義視窗之間巡覽。 每個點的工具提示顯示點表示的定義檔檔案名稱和路徑。  
   
-     ![[查看] 視窗內的 [查看] 視窗](~/ide/media/peekwithinpeek.png "PeekWithinPeek")  
+     ![[查看] 視窗內的 [查看] 視窗](../ide/media/peekwithinpeek.png "PeekWithinPeek")  
   
 #### <a name="to-use-peek-definition-with-multiple-results"></a>若要使用查看定義搭配多個結果  
   
--   如果您在擁有多個定義的程式碼上使用 [查看定義] (例如，部分類別)，則結果清單會出現在程式碼定義檢視的右邊。 您可以選取清單中的所有結果，顯示它的定義。  
+-   如果您在擁有多個定義的程式碼上使用 [查看定義]\(例如，部分類別)，則結果清單會出現在程式碼定義檢視的右邊。 您可以選取清單中的所有結果，顯示它的定義。  
   
-     ![來自多個結果的 [查看] 視窗](~/ide/media/peekmultiple.png "PeekMultiple")  
+     ![來自多個結果的 [查看] 視窗](../ide/media/peekmultiple.png "PeekMultiple")  
   
 #### <a name="to-edit-inside-the-peek-definition-window"></a>若要在查看定義視窗中進行編輯  
   

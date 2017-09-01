@@ -1,44 +1,58 @@
 ---
-title: "停止進行中的偵錯對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.stopnow"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "停止進行中的偵錯對話方塊"
+title: Stop Debugging In Progress Dialog Box | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.stopnow
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+helpviewer_keywords:
+- Stop Debugging in Progress dialog box
 ms.assetid: ed7ef49d-e25f-4a4d-9396-9bc7b4143117
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
----
-# 停止進行中的偵錯對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: d07ab45ca55e164f5b5eaff3603293c862bd7c7a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-如果偵錯工具嘗試停止偵錯工作階段，但是工作階段需要一些時間才會停止，這個對話方塊就會出現。  停止偵錯工作階段通常很快就能完成，所以不會出現這個對話方塊。  不過，有時可能需要多花一些時間才能從所有正在偵錯的處理序中斷連結。  如果停止工作階段需花費數秒 \(或是發生中斷連結錯誤\)，這個對話方塊就會出現。  如果經常發生這種情況，可能是因為內部問題，建議您連絡產品支援服務。  
+---
+# <a name="stop-debugging-in-progress-dialog-box"></a>Stop Debugging In Progress Dialog Box
+This dialog box appears when the debugger is trying to stop a debugging session, but stopping the session is going to take some time. Stopping a debugging session is normally very fast and this dialog box does not appear. Sometimes, however, it takes additional time to detach from all the processes being debugged. If stopping the session takes more than a few seconds (or if a detach error occurs), this dialog box appears. If this occurs frequently, it may be due to an internal problem and you may want to contact Product Support Services.  
   
- 您可以等候處理序中斷連結而且這個對話方塊消失，或者使用 \[**立即停止**\] 按鈕強制立即結束。  
+ You can wait for the processes to detach and this dialog box to disappear, or use the **Stop Now** button to force immediate termination.  
   
- **立即停止**  
- 按一下這個按鈕會立即結束偵錯工作階段。  使用 \[**立即停止**\] 會結束偵錯中的處理序，而不是中斷處理序連結。  如果您正在進行系統處理序偵錯，使用 \[**立即停止**\] 結束這些處理序可能會產生非預期且不想要的結果。  
+ **Stop Now**  
+ Click this button to end the debugging session immediately. Using **Stop Now** will terminate rather than detaching the processes being debugged. If you are debugging system processes, terminating those processes with **Stop Now** can have unexpected and undesired effects.  
   
-## 請參閱  
- [偵錯工具安全性](../debugger/debugger-security.md)   
- [Detaching Programs](http://msdn.microsoft.com/zh-tw/f2c756c2-8079-474b-94c2-01c19a141a01)
+## <a name="see-also"></a>See Also  
+ [Debugger Security](../debugger/debugger-security.md)   
+ [Detaching Programs](http://msdn.microsoft.com/en-us/f2c756c2-8079-474b-94c2-01c19a141a01)

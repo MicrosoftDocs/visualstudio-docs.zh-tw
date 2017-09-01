@@ -1,73 +1,90 @@
 ---
-title: "SccAddFromScc 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccAddFromScc"
-helpviewer_keywords: 
-  - "SccAddFromScc 函式"
+title: SccAddFromScc Function | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SccAddFromScc
+helpviewer_keywords:
+- SccAddFromScc function
 ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# SccAddFromScc 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4711028976d9a55e4281cb2ba3e8b0dd27aa1417
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-此函數可讓使用者瀏覽已在原始檔控制系統的檔案，並接著將這些檔案目前的專案。 比方說，此函式可進入常見的標頭檔目前的專案而不複製檔案。 傳回陣列的檔案， `lplpFileNames`, ，包含使用者想要新增至 IDE 專案的檔案清單。  
+---
+# <a name="sccaddfromscc-function"></a>SccAddFromScc Function
+This function allows the user to browse for files that are already in the source control system and subsequently make those files part of the current project. For example, this function can get a common header file into the current project without copying the file. The return array of files, `lplpFileNames`, contains the list of files that the user wants to add to the IDE project.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccAddFromScc (  
-   LPVOID   pvContext,  
-   HWND     hWnd,  
-   LPLONG   lpnFiles,  
-   LPCSTR** lplpFileNames  
+   LPVOID   pvContext,  
+   HWND     hWnd,  
+   LPLONG   lpnFiles,  
+   LPCSTR** lplpFileNames  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  pvContext  
- \[\] in原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  hWnd  
- \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
   
  lpnFiles  
- \[in、 out\]緩衝區中新增的檔案數目。 \(這是 `NULL` 如果指向的記憶體 `lplpFileNames` 會釋出。 請參閱 \< 備註 \> 以取得詳細資料\)。  
+ [in, out] A buffer for the number of files that are being added in. (This is `NULL` if the memory pointed to by `lplpFileNames` is to be released. See Remarks for details.)  
   
  lplpFileNames  
- \[in、 out\]沒有目錄路徑的所有檔案名稱的指標陣列。 這個陣列是配置和釋出原始檔控制外掛程式。 如果 `lpnFiles` \= 1 和 `lplpFileNames` 不 `NULL`, ，陣列中的第一個名稱所指 `lplpFileNames` 包含目的地資料夾。  
+ [in, out] An array of pointers to all the file names without directory paths. This array is allocated and freed by the source control plug-in. If `lpnFiles` = 1 and `lplpFileNames` is not `NULL`, the first name in the array pointed to by `lplpFileNames` contains the destination folder.  
   
-## 傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
-|-------|--------|  
-|SCC\_OK|檔案已成功位於並加入至專案。|  
-|SCC\_I\_OPERATIONCANCELED|作業已取消，造成任何影響。|  
-|SCC\_I\_RELOADFILE|需要重新載入檔案或專案。|  
+|Value|Description|  
+|-----------|-----------------|  
+|SCC_OK|The files were successfully located and added to the project.|  
+|SCC_I_OPERATIONCANCELED|Operation was canceled with no effect.|  
+|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
   
-## 備註  
- IDE 會呼叫此函式。 如果原始檔控制外掛程式支援指定的本機目的資料夾，IDE 會將 `lpnFiles` \= 1，並傳遞到本機資料夾名稱 `lplpFileNames`。  
+## <a name="remarks"></a>Remarks  
+ The IDE calls this function. If the source control plug-in supports specifying a local destination folder, the IDE passes `lpnFiles` = 1 and passes the local folder name into `lplpFileNames`.  
   
- 當呼叫 `SccAddFromScc` 函式傳回時，外掛程式已指派值，以 `lpnFiles` 和 `lplpFileNames`, ，為所需的檔案名稱陣列配置記憶體 \(請注意，此配置會取代在指標 `lplpFileNames`\)。 原始檔控制外掛程式負責將所有檔案都放入使用者的目錄或指定的目的地資料夾中。 然後，IDE 會將檔案加入至 IDE 專案。  
+ When the call to the `SccAddFromScc` function returns, the plug-in has assigned values to `lpnFiles` and `lplpFileNames`, allocating the memory for the file name array as necessary (note that this allocation replaces the pointer in `lplpFileNames`). The source control plug-in is responsible for placing all files into the user's directory or in the specified designation folder. The IDE then adds the files to the IDE project.  
   
- 最後，IDE 會呼叫此函式第二次，傳入 `NULL` 的 `lpnFiles`。 這會解譯為特殊的訊號，原始檔控制外掛程式中的檔案名稱陣列配置的記憶體釋放 `lplpFileNames``.`  
+ Finally, the IDE calls this function a second time, passing in `NULL` for `lpnFiles`. This is interpreted as a special signal by the source control plug-in to release the memory allocated for the file-name array in `lplpFileNames``.`  
   
- `lplpFileNames` 是 `char ***` 指標。 原始檔控制外掛程式會將檔案名稱，因此，以標準方式傳遞的清單，此 api 的指標陣列的指標。  
+ `lplpFileNames` is a `char ***` pointer. The source control plug-in places a pointer to an array of pointers to file names, thus passing the list in the standard way for this API.  
   
 > [!NOTE]
->  VSSCI API 的初始版本未提供一個方法來指示加入之檔案的目標專案。 要做到的語意，這一點 `lplpFIleNames` 參數已增強為方便輸入\/輸出參數，而不是輸出參數。 如果只指定單一檔案，也就是指向的值由 `lpnFiles` \= 1，則第一個項目 `lplpFileNames` 包含目標資料夾。 若要使用這些新的語意，IDE 會呼叫 `SccSetOption` 函式與 `nOption`參數設定為 `SCC_OPT_SHARESUBPROJ`。 如果原始檔控制外掛程式不支援語意 \(semantics\)，它會傳回 `SCC_E_OPTNOTSUPPORTED`。 這麼做的話會停用使用 **從原始檔控制的新增** 功能。 如果外掛程式支援 **從原始檔控制的新增** 功能 \(`SCC_CAP_ADDFROMSCC`\)，則它必須支援新的語意 \(semantics\)，並傳回 `SCC_I_SHARESUBPROJOK`。  
+>  Initial versions of the VSSCI API did not provide a way to indicate the target project for the added files. To accommodate this, the semantics of the `lplpFIleNames` parameter have been enhanced to make it an in/out parameter rather than an output parameter. If only a single file is specified, that is, the value pointed to by `lpnFiles` = 1, then the first element of `lplpFileNames` contains the target folder. To use these new semantics, the IDE calls the `SccSetOption` function with the `nOption`parameter set to `SCC_OPT_SHARESUBPROJ`. If a source control plug-in does not support the semantics, it returns `SCC_E_OPTNOTSUPPORTED`. Doing so disables the use of the **Add from Source Control** feature. If a plug-in supports the **Add from Source Control** feature (`SCC_CAP_ADDFROMSCC`), then it must support the new semantics and return `SCC_I_SHARESUBPROJOK`.  
   
-## 請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
  [SccSetOption](../extensibility/sccsetoption-function.md)

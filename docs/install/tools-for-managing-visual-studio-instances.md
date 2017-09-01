@@ -1,7 +1,7 @@
 ---
 title: "用於偵測及管理 Visual Studio 執行個體的工具 | Microsoft Docs"
 description: '{{PLACEHOLDER}}'
-ms.date: 04/14/2017
+ms.date: 08/14/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -15,38 +15,31 @@ ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
 author: timsneath
 ms.author: tims
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: a6c3aa65a2c0198c856f09f6f16f58bf16945d58
+ms.translationtype: HT
+ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
+ms.openlocfilehash: 1e81071d8a67fd5b8c38bcf87629604efe6fa4a5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 08/14/2017
 
 ---
+
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用於偵測及管理 Visual Studio 執行個體的工具
 
 ## <a name="detecting-existing-visual-studio-instances"></a>偵測現有的 Visual Studio 執行個體
 我們提供數種工具來協助您偵測及管理用戶端電腦上已安裝的 Visual Studio 執行個體︰
 
-* [VSWhere](https://github.com/microsoft/vswhere)：C++ 可執行檔，協助您從已安裝的 Visual Studio 執行個體找到核心 Visual Studio 工具的位置。
+* [VSWhere](https://github.com/microsoft/vswhere) \(英文\)：這個內建於 Visual Studio 中，也可供個別發佈的可執行檔，可以協助您在特定電腦上找到所有 Visual Studio 執行個體的位置。
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)︰PowerShell 指令碼，使用安裝程式組態 API 來識別已安裝的 Visual Studio 執行個體。
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：C# 和 C++ 範例，示範如何使用安裝程式組態 API 來查詢現有安裝。
 
 此外，[安裝程式組態 API](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.setup.configuration.aspx) 還提供介面，讓想要建置其專屬公用程式的開發人員查閱 Visual Studio 執行個體。
+
+## <a name="using-vswhereexe"></a>使用 vswhere.exe
+`vswhere.exe` 會自動包含在 Visual Studio 2017 15.2 版或更新版本之中，您也可以從它的[版本頁面](https://github.com/Microsoft/vswhere/releases) \(英文\) 下載它。 使用 `vswhere -?` 來取得該工具的說明資訊。 作為範例，此命令會顯示 Visual Studio 的所有版本 (包括產品的較舊版本及發行前版本)，並以 JSON 格式輸出結果：
+
+```cmd
+C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
+```
 
 >[!TIP]
 >如需 Visual Studio 2017 安裝的詳細資訊，請參閱 [Heath Stewart's blog articles](https://blogs.msdn.microsoft.com/heaths/tag/vs2017/) (Heath Stewart 的部落格文章)。

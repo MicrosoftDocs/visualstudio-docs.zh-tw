@@ -50,7 +50,7 @@ ms.lasthandoff: 07/21/2017
  若要新增或移除功能表或工具列項目，請參閱[如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)。  
 
 ### <a name="main-menu-casing"></a>主功能表大小寫  
- 您可以變更主功能表的下列兩種大小寫設定：[字首大寫] (像是 "File") 與 [全部大寫] (像是 "FILE")。 在 [快速啟動] 中輸入 "environment"，然後選擇 [環境] > [一般]，並變更 [將標題大寫樣式套用至功能表列] 選項。
+ 您可以變更主功能表的下列兩種大小寫設定：[字首大寫]\(像是 "File") 與 [全部大寫]\(像是 "FILE")。 在 [快速啟動] 中輸入 "environment"，然後選擇 [環境] > [一般]，並變更 [將標題大寫樣式套用至功能表列] 選項。
 
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

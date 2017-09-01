@@ -1,5 +1,5 @@
 ---
-title: "PARSEFLAGS |Microsoft 文件"
+title: PARSEFLAGS | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 04cf02cc21fd6ae7324267805e89b1454566b9b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 86589a8f3886592ad1659b646b0a983a9f31f48b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="parseflags"></a>PARSEFLAGS
-指定如何剖析的運算式。  
+Specifies how to parse an expression.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
@@ -50,7 +51,7 @@ enum enum_PARSEFLAGS {
 typedef DWORD PARSEFLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_PARSEFLAGS {   
    PARSE_EXPRESSION            = 0x0001,  
    PARSE_FUNCTION_AS_ADDRESS   = 0x0002,  
@@ -60,25 +61,25 @@ public enum enum_PARSEFLAGS {
   
 ## <a name="members"></a>Members  
  PARSE_EXPRESSION  
- 表示運算式不是陳述式。  
+ Indicates that the expression is not a statement.  
   
  PARSE_FUNCTION_AS_ADDRESS  
- 表示運算式剖析 （和更新版本評估） 的位址。  
+ Indicates that the expression is to be parsed (and later evaluated) as an address.  
   
  PARSE_DESIGN_TIME_EXPR_EVAL  
- 表示在設計階段期間剖析運算式 （也就是當設計工具開啟時）。  
+ Indicates that the expression is being parsed during design time (that is, when a designer is open).  
   
-## <a name="remarks"></a>備註  
- 做為參數傳遞[ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)和[剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as a parameter to the [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) and [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) methods.  
   
-## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)   
- [剖析](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)
+ [Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)

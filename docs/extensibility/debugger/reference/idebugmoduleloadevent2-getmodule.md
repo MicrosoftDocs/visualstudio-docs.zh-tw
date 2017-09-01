@@ -1,59 +1,76 @@
 ---
-title: "IDebugModuleLoadEvent2::GetModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModuleLoadEvent2::GetModule"
-helpviewer_keywords: 
-  - "IDebugModuleLoadEvent2::GetModule"
+title: IDebugModuleLoadEvent2::GetModule | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModuleLoadEvent2::GetModule
+helpviewer_keywords:
+- IDebugModuleLoadEvent2::GetModule
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugModuleLoadEvent2::GetModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e8f8c66fb4f3c65986d8d3591ad2483dd7d81955
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得模組正在載入或卸載。  
+---
+# <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
+Gets the module that is being loaded or unloaded.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetModule(   
-   IDebugModule2** pModule,  
-   BSTR*           pbstrDebugMessage,  
-   BOOL*           pbLoad  
+```cpp  
+HRESULT GetModule(   
+   IDebugModule2** pModule,  
+   BSTR*           pbstrDebugMessage,  
+   BOOL*           pbLoad  
 );  
 ```  
   
-```c#  
-int GetModule(   
-   out IDebugModule2 pModule,  
-   ref string        pbstrDebugMessage,  
-   ref int           pbLoad  
+```csharp  
+int GetModule(   
+   out IDebugModule2 pModule,  
+   ref string        pbstrDebugMessage,  
+   ref int           pbLoad  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pModule`  
- \[\] out傳回[IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件，代表載入或卸載的模組。  
+ [out] Returns an [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) object that represents the module which is loading or unloading.  
   
  `pbstrDebugMessage`  
- 輸入 \[、 輸出\]傳回選擇性的訊息，說明這個事件。  如果這個參數為 null 值，會不要求任何訊息。  
+ [in, out] Returns an optional message describing this event. If this parameter is a null value, no message is requested.  
   
  `pbLoad`  
- 輸入 \[、 輸出\]非零值 \(`TRUE`\) 如果模組是載入和零 \(`FALSE`\) 如果您正在卸載模組。  如果這個參數為 null 值，會不要求任何狀態。  
+ [in, out] Nonzero (`TRUE`) if the module is loading and zero (`FALSE`) if the module is unloading. If this parameter is a null value, no status is requested.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

@@ -1,126 +1,142 @@
 ---
-title: "原始檔中隱藏項目概觀 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "來源隱藏，程式碼分析"
-  - "程式碼分析，來源隱藏"
+title: In Source Suppression Overview | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- source suppression, code analysis
+- code analysis, source suppression
 ms.assetid: f1a2dc6a-a9eb-408c-9078-2571e57d207d
 caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 40
----
-# 原始檔中隱藏項目概觀
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: fcecc6fda25f2c6553a99f5166154cec63197fb9
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
-原始檔中隱藏項目的功能可透過將 **SuppressMessage** 屬性加入至導致違規的程式碼區段，隱藏或忽略 Managed 程式碼中的程式碼分析違規。  **SuppressMessage** 屬性是條件屬性；只有當您在編譯時期定義了 CODE\_ANALYSIS 條件式編譯符號時，這個屬性才會包含在 Managed 程式碼的 IL 中繼資料中。  
+---
+# <a name="in-source-suppression-overview"></a>In Source Suppression Overview
+In-source suppression is the ability to suppress or ignore Code Analysis violations in managed code by adding the **SuppressMessage** attribute to the code segments that cause the violations. The **SuppressMessage** attribute is a conditional attribute which is included in the IL metadata of your managed code assembly only if the CODE_ANALYSIS compilation symbol is defined at compile time.  
   
- 在 C\+\+\/CLI 中，若要加入此屬性，請在標頭檔中使用 CA\_SUPPRESS\_MESSAGE 或 CA\_GLOBAL\_SUPPRESS\_MESSAGE 巨集。  
+ In C++/CLI, use the macros CA_SUPPRESS_MESSAGE or CA_GLOBAL_SUPPRESS_MESSAGE in the header file,  to add the attribute .  
   
- 您不應在發行的組建上使用原始檔中隱藏項目的功能，以免不慎發行了原始檔中隱藏項目的中繼資料。  處理原始檔中隱藏項目所耗用的資源不低，因此若納入原始檔中隱藏項目的中繼資料，可能會降低應用程式的效能。  
+ You should not use in-source suppressions on release builds to prevent shipping the in-source suppression metadata accidentally. Because of the processing cost of in-source suppression, the performance of your application can also be degraded by including the in-source suppression metadata.  
   
 > [!NOTE]
->  您不需要自己親手撰寫這些屬性。  如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  此功能表項目不適用於 C\+\+ 程式碼。  
+>  You do not have to hand code these attributes yourself. For more information, see [How to: Suppress Warnings by Using the Menu Item](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). The menu item is not available for C++ code.  
   
-## SuppressMessage 屬性  
- 當您以滑鼠右鍵按一下 \[**錯誤清單**\] 中的程式碼分析警告，然後按一下 \[**隱藏訊息**\] 時，您的程式碼或是專案的全域隱藏項目檔案中便會加入 **SuppressMessage** 屬性。  
+## <a name="suppressmessage-attribute"></a>SuppressMessage Attribute  
+ When you right-click a Code Analysis warning in the **Error List** and then click **Suppress Message(s)**, a **SuppressMessage** attribute is added either in your code or to the project's global suppressions file.  
   
- **SuppressMessage** 屬性具有下列格式：  
+ The **SuppressMessage** attribute has the following format:  
   
 ```vb  
 <Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")>  
 ```  
   
-```c#  
+```csharp  
 [Scope:SuppressMessage("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")]  
   
 ```  
   
- \[C\+\+\]  
+ [C++]  
   
 ```  
 CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification", MessageId = "MessageId", Scope = "Scope", Target = "Target")  
   
 ```  
   
- 其中：  
+ Where:  
   
--   **Rule Category**：在其中定義規則的分類。  如需程式碼分析規則分類的詳細資訊，請參閱 [Managed 程式碼的程式碼分析警告](../code-quality/code-analysis-for-managed-code-warnings.md)。  
+-   **Rule Category** - The category in which the rule is defined. For more information about code analysis rule categories, see [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Rule Id**：規則的識別項。  支援規則識別項的簡短名稱和完整名稱。  簡短名稱為 CAXXXX，而完整名稱為 CAXXXX:FriendlyTypeName。  
+-   **Rule Id** - The identifier of the rule. Support includes both a short and long name for the rule identifier. The short name is CAXXXX; the long name is CAXXXX:FriendlyTypeName.  
   
--   **Justification**：記錄隱藏訊息原因的文字。  
+-   **Justification** - The text that is used to document the reason for suppressing the message.  
   
--   **Message Id**：每個訊息之問題的唯一識別項。  
+-   **Message Id** - Unique identifier of a problem for each message.  
   
--   **Scope**：要隱藏警告的目標。  如果未指定目標，就會將目標設定為屬性的目標。  支援的範圍包括下列：  
+-   **Scope** - The target on which the warning is being suppressed. If the target is not specified, it is set to the target of the attribute. Supported scopes include the following:  
   
     -   Module  
   
-    -   命名空間  
+    -   Namespace  
   
-    -   資源  
+    -   Resource  
   
-    -   類型  
+    -   Type  
   
-    -   成員  
+    -   Member  
   
--   **Target**：用來在要隱藏的警告上指定目標的識別項。  此識別項必須包含完整的項目名稱。  
+-   **Target** - An identifier that is used to specify the target on which the warning is being suppressed. It must contain a fully-qualified item name.  
   
-## SuppressMessage 用法  
- 程式碼分析警告會隱藏在套用 **SuppressMessage** 屬性執行個體 \(Instance\) 的層級。  目的是為了讓隱藏資訊與發生違規的程式碼緊密結合。  
+## <a name="suppressmessage-usage"></a>SuppressMessage Usage  
+ Code Analysis warnings are suppressed at the level to which an instance of the **SuppressMessage** attribute is applied. The purpose of this is to tightly couple the suppression information to the code where the violation occurs.  
   
- 隱藏項目的一般格式包括了規則分類和規則識別項，其中規則識別項包含人們可讀取的 \(Human\-Readable\) 選用規則名稱表示。  例如：  
+ The general form of suppression includes the rule category and a rule identifier which contains an optional human-readable representation of the rule name. For example,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- 若有絕對的效能原因，而必須將原始檔中隱藏項目的中繼資料最小化，則可以省略規則名稱本身。  將規則分類和它的規則 ID 結合，即足以構成唯一的規則識別項。  例如：  
+ If there are strict performance reasons for minimizing in-source suppression metadata, the rule name itself can be left out. The rule category and its rule ID together constitute a sufficiently unique rule identifier. For example,  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   
- 基於維護工作的考量，並不建議使用這個格式。  
+ This format is not recommended because of maintainability issues.  
   
-## 在方法主體內隱藏多個違規  
- 屬性只能套用至方法，不可內嵌於方法主體中。  不過，您可以指定識別項做為訊息 ID，以區別在方法內發生的多次違規。  
+## <a name="suppressing-multiple-violations-within-a-method-body"></a>Suppressing Multiple Violations within a method body  
+ Attributes can only be applied to a method and cannot be embedded within the method body. However, you can specify the identifier as the message ID to distinguish multiple occurrences of a violation within a method.  
   
- [!code-cpp[InSourceSuppression#1](../code-quality/codesnippet/CPP/in-source-suppression-overview_1.cpp)]
- [!code-vb[InSourceSuppression#1](../code-quality/codesnippet/VisualBasic/in-source-suppression-overview_1.vb)]
- [!code-cs[InSourceSuppression#1](../code-quality/codesnippet/CSharp/in-source-suppression-overview_1.cs)]  
+ [!code-cpp[InSourceSuppression#1](../code-quality/codesnippet/CPP/in-source-suppression-overview_1.cpp)] [!code-vb[InSourceSuppression#1](../code-quality/codesnippet/VisualBasic/in-source-suppression-overview_1.vb)] [!code-csharp[InSourceSuppression#1](../code-quality/codesnippet/CSharp/in-source-suppression-overview_1.cs)]  
   
-## 產生的程式碼  
- Managed 程式碼編譯器 \(Compiler\) 和某些協力廠商工具都會產生程式碼，以協助快速開發程式碼。  編譯器產生的程式碼出現在原始程式檔 \(Source File\) 時，通常都會以 **GeneratedCodeAttribute** 屬性來標記。  
+## <a name="generated-code"></a>Generated Code  
+ Managed code compilers and some third-party tools generate code to facilitate rapid code development. Compiler-generated code that appears in source files is usually marked with the **GeneratedCodeAttribute** attribute.  
   
- 您可以選擇是否隱藏所產生之程式碼的程式碼分析警告和錯誤。  如需如何隱藏這種警告和錯誤的詳細資訊，請參閱 [如何：隱藏所產生程式碼的警告](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md)。  
+ You can choose whether to suppress Code Analysis warnings and errors for generated code. For information about how to suppress such warnings and errors, see [How to: Suppress Warnings for Generated Code](../code-quality/how-to-suppress-code-analysis-warnings-for-generated-code.md).  
   
- 請注意，程式碼分析會忽略套用到整個組件 \(Assembly\) 或單一參數的 **GeneratedCodeAttribute**，  不過這種情況並不常發生。  
+ Note that Code Analysis ignores **GeneratedCodeAttribute** when it is applied to either an entire assembly or a single parameter. These situations occur rarely.  
   
-## 全域層級的隱藏項目  
- Managed 程式碼分析工具會檢查套用至組件、模組、型別、成員或參數層級的 **SuppressMessage** 屬性，  也會引發資源和命名空間的違規。  這些違規必須套用在全域層級，而且加以指定範圍和目標。  例如，下列訊息會隱藏命名空間違規：  
+## <a name="global-level-suppressions"></a>Global-Level Suppressions  
+ The managed code analysis tool examines **SuppressMessage** attributes that are applied at the assembly, module, type, member, or parameter level. It also fires violations against resources and namespaces. These violations must be applied at the global level and are scoped and targeted. For example, the following message suppresses a namespace violation:  
   
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  以命名空間範圍隱藏警告時，只會對命名空間本身隱藏警告，  不會對命名空間內的型別隱藏警告。  
+>  When you suppress a warning with namespace scope, it suppresses the warning against the namespace itself. It does not suppress the warning against types within the namespace.  
   
- 任何隱藏項目都可以藉由指定明確的範圍來表示。  這些隱藏項目必須處於模組層級。  您不能藉由裝飾型別來指定成員層級的隱藏項目。  
+ Any suppression can be expressed by specifying an explicit scope. These suppressions must live at the global level. You cannot specify member-level suppression by decorating a type.  
   
- 如果訊息參照到編譯器所產生的程式碼，但該程式碼並未對應到明確提供的使用者來源，則您只能使用全域層級的隱藏項目來隱藏這些訊息。  例如，下列程式碼會隱藏編譯器發出之建構函式 \(Constructor\) 的違規：  
+ Global-level suppressions are the only way to suppress messages that refer to compiler-generated code that does not map to explicitly provided user source. For example, the following code suppresses a violation against a compiler-emitted constructor:  
   
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  目標一律包含完整的項目名稱。  
+>  Target always contains the fully-qualified item name.  
   
-## 全域隱藏項目檔案  
- 全域隱藏項目檔案會維護全域層級隱藏項目或未指定目標的隱藏項目。  例如，組件層次違規的隱藏項目會儲存在這個檔案中。  此外，某些 ASP.NET 隱藏項目也會儲存在這個檔案中，因為表單的後置程式碼無法使用專案層級的設定。  當您第一次在 \[錯誤清單\] 視窗中選取 \[**隱藏訊息**\] 命令的 \[**在專案隱藏項目檔中**\] 選項時，將會建立全域隱藏項目，並加入至您的專案。  如需詳細資訊，請參閱[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
+## <a name="global-suppression-file"></a>Global Suppression File  
+ The global suppression file maintains suppressions that are either global-level suppressions or suppressions that do not specify a target. For example, suppressions for assembly level violations are stored in this file. Additionally, some ASP.NET suppressions are stored in this file because project level settings are not available for code behind a form. A global suppression is created and added to your project the first time that you select the **In Project Suppression File** option of the **Suppress Message(s)** command in the Error List window. For more information, see [How to: Suppress Warnings by Using the Menu Item](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Diagnostics.CodeAnalysis>

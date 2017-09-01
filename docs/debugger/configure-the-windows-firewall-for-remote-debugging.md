@@ -1,114 +1,143 @@
 ---
-title: "設定 Windows 防火牆進行遠端偵錯 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Configure the Windows Firewall for Remote Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 05/18/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# 設定 Windows 防火牆進行遠端偵錯
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: cd4596e063bc6fb66a259d34109eb1eb74d1780c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
-  
--   Windows 7  
-  
--   Windows 8\/8.1  
+---
+# <a name="configure-the-windows-firewall-for-remote-debugging"></a>Configure the Windows Firewall for Remote Debugging
+This topic describes how to configure the firewall to enable remote debugging on computers that run the following operating systems:  
   
 -   Windows 10  
   
--   Windows Server 2008 \(R2\)  
+-   Windows 8/8.1  
   
--   Windows Server 2012  
+-   Windows 7   
   
 -   Windows Server 2012 R2  
+
+-   Windows Server 2012
   
- 如果正在偵錯的網路未受到防火牆保護，便不需要進行這項設定。 否則，裝載 Visual Studio 的電腦和要進行偵錯的遠端電腦都需要進行變更防火牆設定。  
+-   Windows Server 2008 R2 
   
- **IPSec** 如果您的網路要求使用 IPSec 執行通訊，您必須在 Visual Studio 主機電腦和遠端電腦上都開啟其他連接埠。  
+ If the network on which you are debugging is not protected by a firewall, this configuration is unnecessary. Otherwise, both the computer that hosts Visual Studio and the remote computer that is to be debugged require changes to the firewall configuration.  
   
- **網頁伺服器** 如果您正在偵錯遠端網頁伺服器，您必須在遠端電腦上開啟其他連接埠。  
+ **IPSec** If your network requires that communication be performed using IPSec, you must open additional ports on both the Visual Studio host computer and the remote computer.  
   
- 請注意，這兩部電腦不需要執行相同的作業系統。 例如，Visual Studio 電腦可以執行 Windows 10，而遠端電腦則可以執行 Windows Server 2012 R2。  
+ **Web Server** If you are debugging a remote Web server, you must open an additional port on the remote computer. (For IIS, port 80 must be open.)  
   
-## 在 Visual Studio 電腦上設定 Windows 防火牆  
- 設定 Windows 防火牆的指示在不同作業系統上稍有不同。 在 Windows 7 或 Windows Server 2008，使用**程式**字樣，在 Windows 8\/8.1、Windows 10 和 Windows Server 2012 上，則使用**應用程式**字樣。  我們將在下列步驟中使用**應用程式**字樣。  
+ Note that both computers do not have to run the same operating system. For example, the Visual Studio computer can run Windows 10 and the remote computer can run Windows Server 2012 R2.      
   
-1.  開啟 \[Windows 防火牆\] 頁面。 \(在 \[開始\] 功能表搜尋方塊中，輸入 \[Windows 防火牆\]\)。  
-  
-2.  按一下 \[允許應用程式或功能通過 Windows 防火牆\]。  
-  
-3.  在 \[允許應用程式和功能\] 清單中尋找 \[Visual Studio 遠端偵錯工具探索\]。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
-  
-4.  如果未列出 \[Visual Studio 遠端偵錯工具探索\]，請按一下 \[允許另一個應用程式\]。 如果您在 \[加入應用程式\] 視窗中仍看不到它，請按一下 \[瀏覽\] 並瀏覽至 **\<Visual Studio 安裝目錄\>\\Common7\\IDE\\Remote Debugger**。 尋找應用程式適當的資料夾 \(x86、x64、Appx\)，然後選取 **msvsmon.exe**。 然後按一下 \[加入\]。  
-  
-5.  在 \[允許的應用程式和功能\] 清單中，選取 \[Visual Studio 遠端偵錯監視\]。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 \(\[網域\]、\[家用\/工作 \(私用\)\]、\[公用\]\)。 類型必須包括 Visual Studio 電腦連線的網路。  
-  
-## 在 Visual Studio 電腦上開啟連接埠以啟用探索  
- 您必須允許 UDP 連接埠 3702 傳入以允許探索執行遠端偵錯工具的電腦。 若要將它加入，請參閱＜如何在防火牆中設定連接埠＞。  
-  
-## 設定遠端電腦的 Windows 防火牆以進行遠端偵錯  
- 遠端偵錯元件可以安裝在遠端電腦上，或從共用目錄執行。 這兩種情況下都必須設定遠端電腦的防火牆。 遠端偵錯元件位於：  
-  
- **\<Visual Studio 安裝目錄\>\\Common7\\IDE\\Remote Debugger**  
-  
- 設定 Windows 防火牆的指示在不同作業系統上稍有不同。 在 Windows 7 或 Windows Server 2008，使用**程式**字樣，在 Windows 8\/8.1、Windows 10 和 Windows Server 2012 上，則使用**應用程式**字樣。  我們將在下列步驟中使用**應用程式**字樣。  
-  
-1.  開啟 \[Windows 防火牆\] 頁面。 \(在 \[開始\] 功能表搜尋方塊中，輸入 \[Windows 防火牆\]\)。  
-  
-2.  按一下 \[允許應用程式或功能通過 Windows 防火牆\]。  
-  
-3.  在 \[允許應用程式和功能\] 清單中尋找 \[Visual Studio 遠端偵錯監視\]。 如果有列出，請確定已選取，而且也選取一或多個網路類型。  
-  
-4.  如果未列出 \[Visual Studio 遠端偵監視\]，請按一下 \[允許另一個應用程式\]。 如果您在 \[加入應用程式\] 視窗中仍看不到它，請按一下 \[瀏覽\] 並瀏覽至 **\<Visual Studio 安裝目錄\>\\Common7\\IDE\\Remote Debugger**。 尋找應用程式適當的資料夾 \(x86、x64、Appx\)，然後選取 **msvsmon.exe**。 然後按一下 \[加入\]。  
-  
-5.  在 \[允許的應用程式\] 清單中，選取 \[Visual Studio 遠端偵錯監視\]。 核取您想要遠端偵錯監視與其通訊的一或多個網路類型 \(\[網域\]、\[家用\/工作 \(私用\)\]、\[公用\]\)。 類型必須包括 Visual Studio 電腦連線的網路。  
-  
-## 在遠端電腦上啟用遠端偵錯的連接埠  
+## <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>Ports on the remote computer that enable remote debugging  
   
 |||||  
 |-|-|-|-|  
-|**連接埠**|**傳入\/傳出**|**通訊協定**|**描述**|  
-|3702|傳出|UDP|遠端偵錯工具探索的必要項。|  
-|4020||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，通訊埠編號會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
-|4021||TCP|針對 VS 2015。 針對每個 Visual Studio 版本，連接埠號碼會遞增 2。 如需詳細資訊，請參閱＜Visual Studio 遠端偵錯工具連接埠指派＞。|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|   
+|4022|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. For more information, see [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).|  
+|4023|Incoming|TCP|For VS 2017. The port number is incremented by 2 for each Visual Studio version. (Only used to remote debug a 32-bit process from the 64-bit version of the remote debugger.) For more information, see  [Visual Studio Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).| 
+|3702|Outgoing|UDP|(Optional) Required for remote debugger discovery.|    
   
-## 在遠端電腦上以 Managed 或原生相容性模式啟用遠端偵錯的連接埠  
+## <a name="how-to-configure-ports-in-windows-firewall"></a>How to Configure Ports in Windows Firewall  
+
+When you install Visual Studio or the remote debugger, the software will try to open the correct ports. However, in some scenarios (such as using a third party firewall), you may need to open a port manually. If you need to verify that ports are open, see [Troubleshooting](#troubleshooting). Some instructions for opening a port may be different on older versions of Windows.
+
+To open a port:
+  
+1. Open the **Start** menu, search for **Windows Firewall with Advanced Security**.
+
+2. Then choose **Inbound Rules > New Rule > Port**, and then click **Next**. (For Outgoing rules, choose **Outbound Rules** instead.)
+
+3. Choose either **TCP** or **UDP**, depending on the port number.
+
+4. Under **Specific local ports**, enter the port number, click **Next**.
+
+5. Click **Allow the Connection** and then click **Next**.
+
+6. Select one or more network types to enable for the port and click **Next**.
+
+    The type you select must include the network to which the remote computer is connected.
+7. Add the name (for example, **msvsmon**, **IIS**, or **Web Deploy**) for the rule and click **Finish**.
+
+    You should see your new rule in the Inbound Rules or Outbound Rules list.
+
+## <a name="troubleshooting"></a>Troubleshooting
+
+If you are having trouble attaching to your app with the remote debugger, you may need to verify that the correct ports are open.
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-visual-studio-computer"></a>Verify that ports are open in the Windows Firewall on the Visual Studio Computer  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (In the **Start** menu search box, type **Windows Firewall**).  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger Discovery**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger Discovery** is not listed, click **Allow another app**. If you still don't see it in the **Add an app** window, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps and features** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="verify-that-ports-are-open-in-the-windows-firewall-on-the-remote-computer"></a>Verify that ports are open in the Windows Firewall on the remote computer  
+ The remote debugging components can be installed on the remote computer or run from a shared directory. The firewall of the remote computer must be configured in both cases. The remote debugging components are located in:  
+  
+ **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**  
+  
+ The instructions for configuring the Windows firewall differ slightly on different operating systems. On Windows 8/8.1, Windows 10, and Windows Server 2012, the word **app** is used; on Windows 7 or Windows Server 2008, the word **program** is used;  In the following steps we will use the word **app**.  
+  
+1.  Open the Windows Firewall page. (On the **Start** menu search box, type **Windows Firewall**.)  
+  
+2.  Click **Allow an app or feature through Windows Firewall**.  
+  
+3.  In the **Allowed apps and features** list, look for **Visual Studio Remote Debugger**. If it is listed, make sure that it is selected, and that one or more network types are also selected.  
+  
+4.  If **Visual Studio Remote Debugger** is not listed, click **Allow another app**. If you still don't see it in the **Add an app window**, click **Browse** and navigate to **\<Visual Studio installation directory>\Common7\IDE\Remote Debugger**. Find the appropriate folder for the application (x86, x64, Appx) and then select **msvsmon.exe**. Then click **Add**.  
+  
+5.  In the **Allowed apps** list, select **Visual Studio Remote Debugger**. Check one or more network types (**Domain, Home/Work (Private), Public**) that you want the remote debugging monitor to communicate with. The types must include the network to which the Visual Studio computer is connected. 
+
+### <a name="managed-or-native-compatibility-mode-open-additional-ports-on-the-remote-computer"></a>(Managed or native compatibility mode) Open additional ports on the remote computer
+
+If you are using compatibility mode for the debugger (**Tools > Options > Debugging**), additional ports will need to be opened. Compatibility mode enables a legacy version of the debugger and different ports are required.
+
+> [!NOTE]
+> The legacy version of the debugger is the Visual Studio 2010 debugger.
   
 |||||  
 |-|-|-|-|  
-|**連接埠**|**傳入\/傳出**|**通訊協定**|**描述**|  
-|135、139、445|傳出|TCP|必要項。|  
-|137、138|傳出|UDP|必要項。|  
-|500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|  
-|80|傳出|TCP|網頁伺服器偵錯的必要項。|  
+|**Ports**|**Incoming/Outgoing**|**Protocol**|**Description**|  
+|135, 139, 445|Outgoing|TCP|Required.|  
+|137, 138|Outgoing|UDP|Required.|  
+|500, 4500|Outgoing|UDP|Required if your domain policy requires network communication to be performed through IPSec.|  
+|80|Outgoing|TCP|Required for Web Server debugging.|
   
-## 如何在 Windows 防火牆中設定連接埠  
-  
-1.  在 \[開始\] 功能表中，搜尋 \[具有進階安全性的 Windows 防火牆\]。  
-  
-2.  按一下 \[輸入規則\] 或 \[輸出規則\]，然後按一下 \[動作\] 清單中的 \[新增規則\]。  
-  
-3.  在 \[規則類型\] 頁面上，選取 \[連接埠\] 然後按 \[下一步\]。  
-  
-4.  在 \[通訊協定和連接埠\] 頁面上，選取連接埠通訊協定 \(TCP 或 UDP\)。 選取 \[特定本機連接埠\] 並輸入您想要針對通訊協定啟用的一個或多個連接埠號碼。 以逗號分隔數字。 然後按 \[下一步\]。  
-  
-5.  在 \[動作\] 頁面上，選取 \[允許連線\] 然後按 \[下一步\]。  
-  
-6.  在 \[設定檔\] 頁面上，選取要為連接埠啟用的一個或多個網路類型。 您選取的類型必須包括遠端電腦連線的網路。 然後按 \[下一步\]。  
-  
-7.  在 \[名稱\] 頁面上，輸入規則的名稱，然後按一下 \[完成\]。  
-  
-8.  您應該會在 \[輸入規則\] 或 \[輸出規則\] 清單中看到您的新規則。  
-  
-## 請參閱  
- [遠端偵錯](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Remote Debugging](../debugger/remote-debugging.md)

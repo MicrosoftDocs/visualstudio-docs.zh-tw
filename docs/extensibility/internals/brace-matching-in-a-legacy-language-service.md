@@ -1,59 +1,76 @@
 ---
-title: "舊版語言服務中的比對括號 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "括號對稱"
-  - "語言服務 [受管理的封裝 framework] 括號對稱"
+title: Brace Matching in a Legacy Language Service | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- brace matching
+- language services [managed package framework], brace matching
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 27
----
-# 舊版語言服務中的比對括號
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b4685246ee6e511b849f346fc080982afaec42a4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-大括號比對，可協助開發人員追蹤需要一起發生，例如括號和大括號的語言項目。 當開發人員輸入右括號時，左括號會反白顯示。  
+---
+# <a name="brace-matching-in-a-legacy-language-service"></a>Brace Matching in a Legacy Language Service
+Brace matching helps the developer track language elements that need to occur together, such as parentheses and curly braces. When a developer enters a closing brace, the opening brace is highlighted.  
   
- 您可以比對兩個或三個共同發生的項目，稱為組和三合一。 三合一是共同發生的三個元素的集合。 比方說，在 C\# 中， `foreach` 陳述式構成 triple:"`foreach()`"，"`{`」，和 「`}`」。 輸入右括號時，會反白顯示三個項目。  
+ You can match two or three co-occurring elements, called pairs and triples. Triples are sets of three co-occurring elements. For example, in C#, the `foreach` statement forms a triple: "`foreach()`", "`{`", and "`}`". All three elements are highlighted when the closing brace is typed.  
   
- 舊版的語言服務會實作成，VSPackage 的一部分，但實作語言服務功能的較新的方法是使用 MEF 延伸模組。 若要了解有關實作括號對稱的新方法的詳細資訊，請參閱 [逐步解說︰ 顯示對稱的括號](../../extensibility/walkthrough-displaying-matching-braces.md)。  
+ Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more about the new way to implement brace matching, see [Walkthrough: Displaying Matching Braces](../../extensibility/walkthrough-displaying-matching-braces.md).  
   
 > [!NOTE]
->  我們建議您開始使用新的編輯器 API 儘速。 這會改善語言服務的效能，並可讓您充分利用新編輯器功能。  
+>  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
   
- <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別支援配對，而且與 triples <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> 和 <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> 方法。  
+ The <xref:Microsoft.VisualStudio.Package.AuthoringSink> class supports both pairs and triples with the <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> and <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> methods.  
   
-## 實作  
- 語言服務需要找出在語言中的所有相符項目，然後找出所有配對成功。 這通常透過實作 <xref:Microsoft.VisualStudio.Package.IScanner> 偵測相符的語言，然後使用 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法來比對項目。  
+## <a name="implementation"></a>Implementation  
+ The language service needs to identify all matched elements in the language and then locate all matching pairs. This is typically accomplished by implementing <xref:Microsoft.VisualStudio.Package.IScanner> to detect a matched language and then using the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method to match the elements.  
   
- <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 方法呼叫來 token 化列，並傳回之前插入號的語彙基元的掃描程式。 掃描器表示語言項目組已找到的語彙基元的觸發程序將值設定為 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 上目前的語彙基元。<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 方法呼叫 <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> 方法，接著呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> 剖析原因值的方法 <xref:Microsoft.VisualStudio.Package.ParseReason> 來尋找相符的語言項目。 找到相符的語言項目時，會反白顯示兩個項目。  
+ The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method calls the scanner to tokenize the line and return the token just before the caret. The scanner indicates that a language element pair has been found by setting a token trigger value of <xref:Microsoft.VisualStudio.Package.TokenTriggers> on the current token. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method calls the <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> method that in turn calls the <xref:Microsoft.VisualStudio.Package.LanguageService.BeginParse%2A> method with the parse reason value of <xref:Microsoft.VisualStudio.Package.ParseReason> to locate the matching language element. When the matching language element is found, both elements are highlighted.  
   
- 輸入一個大括號如何觸發，大括號反白顯示的完整說明，請參閱本主題的 「 範例剖析作業 」 一節 [舊版的語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)。  
+ For a complete description of how typing a brace triggers the brace highlighting, see the "Example Parse Operation" section in the topic [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md).  
   
-## 啟用支援括號對稱  
- <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 屬性可以設定 `MatchBraces`, ，`MatchBracesAtCaret`, ，和 `ShowMatchingBrace` 具名參數所設定的對應屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。 使用者也可以設定語言喜好設定的屬性。  
+## <a name="enabling-support-for-brace-matching"></a>Enabling Support for Brace Matching  
+ The <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> attribute can set the `MatchBraces`, `MatchBracesAtCaret`, and `ShowMatchingBrace` named parameters that set the corresponding properties of the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class. Language preference properties can also be set by the user.  
   
-|登錄項目|屬性|描述|  
-|----------|--------|--------|  
-|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|啟用括號對稱|  
-|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|啟用插入號移比對括號。|  
-|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|反白顯示對稱的括號。|  
+|Registry Entry|Property|Description|  
+|--------------------|--------------|-----------------|  
+|`MatchBraces`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Enables brace matching|  
+|`MatchBracesAtCaret`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Enables brace matching as the caret moves.|  
+|`ShowMatchingBrace`|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableShowMatchingBrace%2A>|Highlights the matching brace.|  
   
-## 比對的條件陳述式  
- 可以比對條件陳述式，例如 `if`, ，`else if`, ，和 `else`, ，或 `#if`, ，`#elif`, ，`#else`, ，`#endif`, ，做為分隔符號比對相同的方式。 您可以子類別 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 類別，並提供可以加入文字的方法，跨越以及內部陣列的相符項目分隔符號。  
+## <a name="matching-conditional-statements"></a>Matching Conditional Statements  
+ You can match conditional statements, such as `if`, `else if`, and `else`, or `#if`, `#elif`, `#else`, `#endif`, in the same way as matching delimiters. You can subclass the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class and provide a method that can add text spans as well as delimiters to the internal array of matching elements.  
   
-## 設定觸發程序  
- 下列範例示範如何偵測到相符的括號、 大括號和方括號，以及掃描程式設定它的觸發程序。<xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> 方法 <xref:Microsoft.VisualStudio.Package.Source> 類別偵測到觸發程序，並呼叫剖析器來尋找相符的配對 （請參閱本主題的 「 尋找相符項目 」 一節）。 這個範例是僅供示範用途。 它會假設您的掃描器都包含一種方法 `GetNextToken` ，識別，並傳回權杖，從一行文字。  
+## <a name="setting-the-trigger"></a>Setting the Trigger  
+ The following example shows how to detect matching parentheses, curly braces and square braces, and setting the trigger for it in the scanner. The <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class detects the trigger and calls the parser to find the matching pair (see the "Finding the Match" section in this topic). This example is for illustrative purposes only. It assumes that your scanner contains a method `GetNextToken` that identifies and returns tokens from a line of text.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -85,10 +102,10 @@ namespace TestLanguagePackage
         }  
 ```  
   
-## 比對大括號  
- 以下是一個簡單的例子，相符的語言項目 {}、 （） 和 \[\]，並加入其範圍 <xref:Microsoft.VisualStudio.Package.AuthoringSink> 物件。 此方法不是建議的方法來剖析程式碼。它是僅供示範用途。  
+## <a name="matching-the-braces"></a>Matching the Braces  
+ Here is a simplified example for matching the language elements { }, ( ), and [ ], and adding their spans to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> object. This approach is not a recommended approach to parsing source code; it is for illustrative purposes only.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -136,6 +153,6 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## 請參閱  
- [舊版的語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)   
- [舊版的語言服務剖析器和掃描器](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)   
+ [Legacy Language Service Parser and Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

@@ -1,5 +1,5 @@
 ---
-title: "IDebugProgramNode2::DetachDebugger_V7 |Microsoft 文件"
+title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,36 +31,37 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ea8843a824eb5e1cd0c7bcd658908d7cdaac98ce
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a281d92d93473dffeb8f488cd802a9cee4a779d7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
-已被取代。 請勿使用。  
+DEPRECATED. DO NOT USE.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DetachDebugger_V7 (   
    void   
 );  
 ```  
   
-```c#  
+```csharp  
 int DetachDebugger_V7 ();  
 ```  
   
-## <a name="return-value"></a>傳回值  
- 實作一律會傳回`E_NOTIMPL`。  
+## <a name="return-value"></a>Return Value  
+ An implementation should always return `E_NOTIMPL`.  
   
-## <a name="remarks"></a>備註  
+## <a name="remarks"></a>Remarks  
   
 > [!WARNING]
->  從[!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)]，這個方法不會再用和一律會傳回`E_NOTIMPL`。  
+>  As of [!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)], this method is no longer used and should always return `E_NOTIMPL`.  
   
- 偵錯工具意外結束時，會呼叫這個方法。 呼叫這個方法時，DE 應該繼續程式，如同使用者中斷。 應該不傳送任何偵錯事件。 程式應該是可附加偵錯工具的另一個執行個體的狀態。  
+ This method is called when the debugger unexpectedly quits. When this method is called, the DE should resume the program as though the user detached from it. No more debug events should be sent. The program should be in a state where it is attachable from another instance of the debugger.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

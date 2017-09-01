@@ -1,43 +1,60 @@
 ---
-title: "IDebugProcess2::CanDetach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::CanDetach"
-helpviewer_keywords: 
-  - "IDebugProcess2::CanDetach"
+title: IDebugProcess2::CanDetach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::CanDetach
+helpviewer_keywords:
+- IDebugProcess2::CanDetach
 ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcess2::CanDetach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8a84a04ccb51e9468bf00cb5f027d870e109dbaf
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-判斷工作階段偵錯管理員 \(SDM\) 可以中斷連結處理序。  
+---
+# <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
+Determines if the session debug manager (SDM) can detach the process.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CanDetach(  
-   void  
+```cpp  
+HRESULT CanDetach(  
+   void  
 );  
 ```  
   
-```c#  
-int CanDetach();  
+```csharp  
+int CanDetach();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK.`會傳回`S_FALSE`如果偵錯工具無法從處理序中斷連結。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK.` Returns `S_FALSE` if the debugger cannot detach from the process. Otherwise, returns an error code.  
   
-## 請參閱  
- [CanDetach](../Topic/IDebugProgram2::CanDetach.md)   
+## <a name="see-also"></a>See Also  
+ [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)   
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -1,61 +1,65 @@
 ---
-title: "自訂 Outlook 的功能區"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "自訂功能區, 關於自訂功能區"
-  - "自訂功能區, 關於自訂功能區"
-  - "偵測器 [Visual Studio 中的 Office 程式開發]"
-  - "Outlook [Visual Studio 中的 Office 程式開發], 功能區"
-  - "功能區 [Visual Studio 中的 Office 程式開發], Outlook"
+title: Customizing a Ribbon for Outlook | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Inspectors [Office development in Visual Studio]
+- Outlook [Office development in Visual Studio], Ribbon
+- customizing the Ribbon, about customizing the Ribbon
+- custom Ribbon, about customizing the Ribbon
+- Ribbon [Office development in Visual Studio], Outlook
 ms.assetid: 11d10e72-806d-4d5e-b080-139bd8633eaa
 caps.latest.revision: 42
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 41
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d1c65aa089a66e24b57bab3bcec5e0cf835d0fd4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 自訂 Outlook 的功能區
-  當您在 Microsoft Office Outlook 自訂功能區時，您必須考慮自訂功能區在應用程式中出現的位置。  Outlook 會將功能區顯示在主應用程式使用者介面 \(UI\) 中，以及在使用者執行建立電子郵件訊息等特定工作時開啟的視窗中。  這些應用程式視窗名為偵測器。  
+# <a name="customizing-a-ribbon-for-outlook"></a>Customizing a Ribbon for Outlook
+  When you customize the ribbon in Microsoft Office Outlook, you must consider where your custom ribbon will appear in the application. Outlook displays the ribbon in the main application user interface (UI) and in windows that open when users perform certain tasks, such as creating e-mail messages. These application windows are named inspectors.  
   
- ![視訊的連結](~/data-tools/media/playvideo.gif "視訊的連結") 如需相關的影片示範，請參閱 [如何使用功能區設計工具自訂 Outlook 功能區？](http://go.microsoft.com/fwlink/?LinkID=130312)。  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use the Ribbon Designer to Customize the Ribbon in Outlook?](http://go.microsoft.com/fwlink/?LinkID=130312).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## 在主應用程式 UI 加入自訂功能區  
- Outlook 中的主應用程式 UI 稱為「總管」。  如果您使用的是 \[功能區 \(視覺化設計工具\)\] 項目，您可按一下 \[屬性\] 視窗中的 \[RibbonType\] 功能區屬性，然後選取 \[Microsoft.Outlook.Explorer\]，將功能區加入總管。  
+## <a name="adding-a-custom-ribbon-to-the-main-application-ui"></a>Adding a Custom Ribbon to the Main Application UI  
+ The main application UI in Outlook is called the Explorer. If you are using the **Ribbon (Visual Designer)** item, you can add a ribbon to the Explorer by clicking the **RibbonType** property of the ribbon in the **Properties** window, and then selecting **Microsoft.Outlook.Explorer**.  
   
-## 將功能區指派給偵測器  
- 您可藉由指定與偵測器訊息類別相對應的功能區類型，識別您想要自訂的偵測器。  
+## <a name="assigning-a-ribbon-to-an-inspector"></a>Assigning a Ribbon to an Inspector  
+ You identify the inspector you want to customize by specifying the ribbon type that corresponds to the message class for the Inspector.  
   
- 如果您使用的是 \[功能區 \(視覺化設計工具\)\] 項目，按一下 \[屬性\] 視窗中的 \[RibbonType\] 功能區屬性，然後從值的清單中選取一或多個功能區 ID。  
+ If you are using the **Ribbon (Visual Designer)** item, click the **RibbonType** property of the ribbon in the **Properties** window, and then select one or more ribbon IDs from the list of values.  
   
- 您可以在專案中加入多個功能區。  如果有多個功能區共用功能區 ID，請覆寫在專案 `ThisAddin` 類別中的 CreateRibbonExtensibilityObject 方法，以指定要在執行階段顯示哪個功能區。  如需詳細資訊，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  如需每個功能區類型的詳細資訊，請參閱技術文件[自訂 Outlook 2007 中的功能區](http://msdn.microsoft.com/zh-tw/946e97ea-f556-4e84-8fac-01cd9214e170)。  
+ You can add more than one ribbon to a project. If more than one ribbon shares a ribbon ID, override the CreateRibbonExtensibilityObject method in the `ThisAddin` class of your project to specify which ribbon to display at run time. For more information, see [Ribbon Overview](../vsto/ribbon-overview.md). For more information about each ribbon type, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
-## 使用功能區 XML 來指定功能區類型  
- 如果您使用 \[功能區 \(XML\)\] 項目，請檢查 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法中 *ribbonID* 參數的值，並傳回適當的功能區。  
+## <a name="specifying-the-ribbon-type-by-using-ribbon-xml"></a>Specifying the Ribbon Type by Using Ribbon XML  
+ If you are using the **Ribbon (XML)** item, check the value of the *ribbonID* parameter in the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method and return the appropriate ribbon.  
   
- <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法會在功能區程式碼檔中由 Visual Studio 自動產生。  *ribbonID* 參數是識別總管或特定類型偵測器的字串。  如需 *ribbonID* 參數的可能值完整清單，請參閱技術文件[自訂 Outlook 2007 中的功能區](http://msdn.microsoft.com/zh-tw/946e97ea-f556-4e84-8fac-01cd9214e170)。  
+ The <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method is automatically generated by Visual Studio in the ribbon code file. The *ribbonID* parameter is a string that identifies the Explorer or a specific type of inspector. For a complete list of the possible values of the *ribbonID* parameter, see the technical article [Customizing the Ribbon in Outlook 2007](http://msdn.microsoft.com/en-us/946e97ea-f556-4e84-8fac-01cd9214e170).  
   
- 下列程式碼範例示範如何只在 `Microsoft.Outlook.Mail.Compose` 偵測器中顯示自訂功能區。  這是在使用者建立新的電子郵件訊息時開啟的偵測器。  `GetResourceText()` 方法會指定要顯示的功能區，此方法產生於 **Ribbon** 類別中。  如需 **Ribbon** 類別的詳細資訊，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
+ The following code example demonstrates how to display a custom ribbon only in the `Microsoft.Outlook.Mail.Compose` inspector. This is the inspector that opens when a user creates a new e-mail message. The ribbon to display is specified in the `GetResourceText()` method, which is generated in the **Ribbon** class. For more information about the **Ribbon** class, see [Ribbon XML](../vsto/ribbon-xml.md).  
   
- [!code-csharp[Trin_RibbonOutlookBasic#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/CS/Ribbon1.cs#1)]
- [!code-vb[Trin_RibbonOutlookBasic#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_RibbonOutlookBasic/VB/Ribbon1.vb#1)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#1)] [!code-vb[Trin_RibbonOutlookBasic#1](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#1)]  
   
-## 請參閱  
- [在執行階段存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)   
- [功能區概觀](../vsto/ribbon-overview.md)   
- [功能區設計工具](../vsto/ribbon-designer.md)   
- [功能區 XML](../vsto/ribbon-xml.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
+ [Ribbon Overview](../vsto/ribbon-overview.md)   
+ [Ribbon Designer](../vsto/ribbon-designer.md)   
+ [Ribbon XML](../vsto/ribbon-xml.md)  
   
   

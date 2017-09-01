@@ -1,44 +1,61 @@
 ---
-title: "IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProcessSecurity::QueryCanSafelyAttach"
+title: IDebugProcessSecurity::QueryCanSafelyAttach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugProcessSecurity::QueryCanSafelyAttach
 ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
----
-# IDebugProcessSecurity::QueryCanSafelyAttach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 8f0e6f4942a9151bb95d4f14e074355562016096
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-這個方法會允許連接埠提供者，用以顯示警告，使用者將附加至不安全的程序之前。  
+---
+# <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
+This method allows the port supplier to display a warning before the user attaches to an unsafe process.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT QueryCanSafelyAttach();  
 ```  
   
-```c#  
+```csharp  
 int QueryCanSafelyAttach();  
 ```  
   
-## 傳回值  
- 傳回值如下所示：  
+## <a name="return-value"></a>Return Value  
+ The return values are as follows:  
   
--   `S_OK`： 平安無事附加至處理序並沒有警告\] 對話方塊會顯示。  
+-   `S_OK`: Attaching to process is safe and no warning dialog box is shown.  
   
--   `S_FALSE`： 附加可能有安全性問題，並顯示警告對話方塊。  
+-   `S_FALSE`: Attaching could be a security problem and a dialog box with a warning is shown.  
   
--   `FAILURE`： 附加至處理序就會失敗。  
+-   `FAILURE`: Attaching to process fails.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

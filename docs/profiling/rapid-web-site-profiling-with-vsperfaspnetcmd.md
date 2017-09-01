@@ -1,101 +1,120 @@
 ---
-title: "使用 VSPerfASPNETCmd 快速進行網站程式碼剖析 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具，VSPerfASPNETCmd"
-  - "VSPerfASPNETCmd"
+title: Rapid Web Site Profiling with VSPerfASPNETCmd | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- proflilng tools,VSPerfASPNETCmd
+- VSPerfASPNETCmd
 ms.assetid: 9a9d62a6-549a-45ac-a948-76eb98586ac5
 caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
----
-# 使用 VSPerfASPNETCmd 快速進行網站程式碼剖析
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 09e86315466ac4de07ee1a6d2545e17b0d14bf9a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
 
-**VSPerfASPNETCmd** 命令列工具可讓您對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式輕鬆進行程式碼剖析。  相較於 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具，選項減少、不必設定環境變數，也不需要重新啟動電腦。  使用 **VSPerfASPNETCmd** 是以獨立分析工具進行程式碼剖析的慣用方法。  如需詳細資訊，請參閱[如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md)。  
+---
+# <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Rapid Web Site Profiling with VSPerfASPNETCmd
+The **VSPerfASPNETCmd** command line tool enables you to easily profile [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web applications. In comparison to the [VSPerfCmd](../profiling/vsperfcmd.md) command line tool, options are reduced, no environment variables have to be set, and rebooting the computer is not required. Using **VSPerfASPNETCmd** is the preferred method for profiling with the standalone profiler. For more information, see [How to: Install the Stand-Alone Profiler](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中的增強安全性功能，需要在 Visual Studio 分析工具收集這些平台資料的方式上進行重大變更。  Windows 市集應用程式也需要新的收集技術。  請參閱 [剖析 Windows 8 和 Windows Server 2012 應用程式](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
- 在某些案例中，例如收集並行資料或暫停程式碼剖析後再繼續，使用 **VSPerfCmd** 是慣用的程式碼剖析方法。  
-  
-> [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，請使用位於 32 位元 \\Team Tools\\Performance Tools 目錄中的 VSPerfASPNETCmd 工具。  若要使用程式碼剖析工具命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
-  
-## 對 ASP.NET 應用程式進行程式碼剖析  
- 若要對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式進行程式碼剖析，請輸入下列各節所描述的命令。  網站隨即啟動，而且分析工具會開始收集資料。  執行應用程式，然後關閉瀏覽器。  若要停止程式碼剖析，請在命令提示字元視窗中按下 ENTER 鍵。  
+ In some scenarios, such as collecting concurrency data or pausing and resuming profiling, using **VSPerfCmd** is the preferred profiling method.  
   
 > [!NOTE]
->  根據預設，在 **vsperfaspnetcmd** 命令後不會傳回命令提示字元。  您可以使用 **\/nowait** 選項來強制傳回命令提示字元。  請參閱 [使用 /NoWait 選項](#UsingNoWait)  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, use the VSPerfASPNETCmd tool located in the 32 bit \Team Tools\Performance Tools directory. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
-## 若要使用取樣方法收集應用程式統計資料  
- 取樣是 **VSPerfASPNETCmd** 工具的預設程式碼剖析方法，不必在命令列上設定。  下列命令列會從指定的 Web 應用程式收集應用程式統計資料：  
+## <a name="profiling-an-aspnet-application"></a>Profiling an ASP.NET Application  
+ To profile an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, type one of the commands described in the following sections. The Web site is started and the profiler starts to collect data. Exercise your application and then close the browser. To stop profiling, press the Enter key in the command prompt window.  
+  
+> [!NOTE]
+>  By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the **/nowait** option to force the command prompt to return. See [Using the /NoWait option](#UsingNoWait).  
+  
+## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>To collect application statistics by using the sampling method  
+ Sampling is the default profiling method of **VSPerfASPNETCmd** tool and does not have to be specified on the command line. The following command line collects application statistics from the specified Web application:  
   
  **vsperfaspnetcmd**  *websiteUrl*  
   
-## 若要使用檢測方法收集詳細的計時資料  
- 使用下列命令列，從動態編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式收集詳細計時資料：  
+## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>To collect detailed timing data by using the instrumentation method  
+ Use the following command line to collect detailed timing data from a dynamically compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application:  
   
- **vsperfaspnetcmd \/trace**  *websiteUrl*  
+ **vsperfaspnetcmd /trace**  *websiteUrl*  
   
- 如果您想要為 Web 應用程式中靜態編譯的.dll 檔案進行程式碼剖析，則必須使用 [VSInstr](../profiling/vsinstr.md) 命令列工具檢測檔案。  vsperfaspnetcmd \/trace 命令會包含來自受檢測檔案的資料。  
+ If you want to profile statically compiled .dll files in your Web application, you must instrument the files by using the [VSInstr](../profiling/vsinstr.md) command-line tool. The vsperfaspnetcmd /trace command will include data from the instrumented files.  
   
-## 若要收集 .NET 記憶體資料  
- **\/Memory** 選項會收集 .NET 記憶體中的物件配置相關資料，也可以收集這些物件存留期的相關資訊。  配置資料收集是 **\/Memory** 資料選項的預設模式，不必在命令列上設定。  
+## <a name="to-collect-net-memory-data"></a>To collect .NET memory data  
+ The **/Memory** option collects data about the allocation of objects in .NET memory and can collect data about the lifetime of those objects. Allocation data collection is the default mode of the **/Memory** data option and does not have to be specified on the command line.  
   
- **vsperfaspnetcmd \/memory** *websiteUrl*  
+ **vsperfaspnetcmd /memory** *websiteUrl*  
   
- 使用 **Lifetime** 參數，除了配置資料之外，還會收集物件存留期資料：  
+ Use the **Lifetime** parameter to collect object lifetime data in addition to the allocation data:  
   
- **vsperfaspnetcmd \/memory:lifetime** *websiteUrl*  
+ **vsperfaspnetcmd /memory:lifetime** *websiteUrl*  
   
- 您也可以使用 **\/Trace** 選項，將詳細的計時資料包含在 .NET 記憶體資料中：  
+ You can also use the **/Trace** option to include detailed timing information with the .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/trace** `websiteUrl`  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
   
-## 若要收集階層互動資料  
+## <a name="to-collect-tier-interaction-data"></a>To collect tier interaction data  
   
 > [!WARNING]
->  使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]，階層互動分析資料 \(TIP\) 可以被收集。  不過，階層互動分析資料只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中檢視。  
+>  Tier interaction profiling (TIP) data can be collected using [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], or [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]. However, tier interaction profiling data can be viewed only in [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] and [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)].  
 >   
->  若要在 Windows 8 或 Windows Server 2012 的 TIP 資料，您必須使用檢測 \(**\/trace**\) 選項。  
+>  To collect TIP data on Windows 8 or Windows Server 2012, you must use the instrumentation (**/trace**) option.  
   
- 若要收集階層互動資料與取樣資料：  
+ To collect tier interaction data with sampling data:  
   
- **vsperfaspnetcmd \/tip** `websiteUrl`  
+ **vsperfaspnetcmd /tip** `websiteUrl`  
   
- 若要收集階層互動資料與檢測資料：  
+ To collect tier interaction data with instrumentation data:  
   
- **vsperfaspnetcmd \/trace \/tip** *websiteUrl*  
+ **vsperfaspnetcmd /trace /tip** *websiteUrl*  
   
- 若要收集階層互動資料與 .NET 記憶體資料：  
+ To collect tier interaction data with .NET memory data:  
   
- **vsperfaspnetcmd \/memory**\[**:lifetime**\] **\/tip** *websiteUrl*  
+ **vsperfaspnetcmd /memory**[**:lifetime**] **/tip***websiteUrl*  
   
-##  <a name="UsingNoWait"></a> 使用 \/NoWait 選項  
- 根據預設，在 **vsperfaspnetcmd** 命令後不會傳回命令提示字元。  您可以使用下列語法選項來強制傳回命令提示字元。  然後，您可以在命令提示字元視窗中執行其他作業。  若要結束程式碼剖析，請在個別的 **vsperfaspnetcmd** 命令中使用 **\/shutdown** 選項。  
+##  <a name="UsingNoWait"></a> Using the /NoWait option  
+ By default, the command prompt does not return after a **vsperfaspnetcmd** command. You can use the following syntax option to force the command prompt to return. You can then perform other operations in the command prompt window. To end profiling, use the **/shutdown** option in a separate **vsperfaspnetcmd** command.  
   
- 若要開始程式碼剖析：  
+ To begin profiling:  
   
- **vsperfaspnetcmd** \[*\/Options*\] **\/nowait** *websiteUrl*  
+ **vsperfaspnetcmd** [*/Options*] **/nowait***websiteUrl*  
   
- 若要結束程式碼剖析：  
+ To end profiling:  
   
- **vsperfaspnetcmd \/shutdown** *websiteUrl*  
+ **vsperfaspnetcmd /shutdown** *websiteUrl*  
   
-## 其他選項  
- 您可以將下列任何選項加入至本節上列的命令，但 **vsperfaspnetcmd \/shutdown** 命令除外。  
+## <a name="additional-options"></a>Additional Options  
+ You can add any of the following options to the commands listed earlier in this section, except the **vsperfaspnetcmd /shutdown** command.  
   
-|選項|說明|  
-|--------|--------|  
-|**\/Output:** `VspFile`|根據預設，程式碼剖析資料 \(.vsp\) 檔案是在目前目錄中以檔案名稱 **PerformanceReport.vsp** 建立的。  使用 \/output 選項指定不同的位置、檔案名稱或兩者。|  
-|**\/PackSymbols:Off**|根據預設，VsPerfASPNETCmd 會將符號 \(函式、參數名稱等等\) 內嵌於 .vsp 檔案。  符號內嵌會讓程式碼剖析資料檔案變得非常大。  如果您在分析資料時仍然可以存取包含符號的 .pdb 檔案，請使用 \/packsymbols:off 選項停用符號內嵌。|
+|Option|Description|  
+|------------|-----------------|  
+|**/Output:** `VspFile`|By default, the profiling data (.vsp) file is created in the current directory with the file name **PerformanceReport.vsp**. Use the /output option to specify a different location, file name, or both.|  
+|**/PackSymbols:Off**|By default, VsPerfASPNETCmd embeds symbols (function and parameter names, etc) in the .vsp file. Embedding the symbols can make the profiling data file very large. If you will have access to the .pdb files that contain the symbols when you analyze the data, use the /packsymbols:off option to disable the embedding of the symbols.|
+

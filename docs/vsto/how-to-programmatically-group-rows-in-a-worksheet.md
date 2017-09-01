@@ -1,69 +1,72 @@
 ---
-title: "如何：以程式設計方式在工作表中分組資料列"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料行 [Visual Studio 中的 Office 程式開發], 取消分組"
-  - "群組"
-  - "群組 [Visual Studio 中的 Office 程式開發], 在工作表中清除"
-  - "群組, 在工作表中建立"
-  - "範圍, 建立群組"
-  - "資料列 [Visual Studio 中的 Office 程式開發], 取消分組"
-  - "工作表, 清除群組"
-  - "工作表, 建立群組"
-  - "工作表, 取消分組資料列和資料行"
+title: 'How to: Programmatically Group Rows in a Worksheet | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets, creating groups
+- groups, creating in worksheets
+- ranges, creating groups
+- worksheets, clearing groups
+- groups
+- groups [Office development in Visual Studio], clearing in worksheets
+- worksheets, ungrouping rows and columns
+- rows [Office development in Visual Studio], ungrouping
+- columns [Office development in Visual Studio], ungrouping
 ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
 caps.latest.revision: 46
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 45
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 996904cfea85793c2359e6fc5264b8e8dd973024
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式在工作表中分組資料列
-  您可以將一個或多個完整資料列組成群組。  若要在工作表中建立群組，請使用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項或原生 Excel 範圍物件。  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>How to: Programmatically Group Rows in a Worksheet
+  You can group one or more whole rows. To create a group in a worksheet, use a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## 使用 NamedRange 控制項  
- 如果要在設計階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入至文件層級專案，您可以使用這個控制項，以程式設計方式建立群組。  下列範例假設同一份工作表中有三個 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項：`data2001`、`data2002` 和 `dataAll`。  每個已命名範圍都會參考工作表中的完整資料列。  
+## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
+ If you add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a document-level project at design time, you can use the control to programmatically create a group. The following example assumes that there are three <xref:Microsoft.Office.Tools.Excel.NamedRange> controls on the same worksheet: `data2001`, `data2002`, and `dataAll`. Each named range refers to a whole row in the worksheet.  
   
-#### 若要在工作表中建立 NamedRange 控制項群組  
+#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>To create a group of NamedRange controls on a worksheet  
   
-1.  對於三個已命名的範圍，呼叫每個範圍的 <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> 方法，將這三個範圍群組起來：  這段程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> method of each range. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#32](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#32)]
-     [!code-vb[Trin_VstcoreExcelAutomation#32](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#32)]  
-  
-    > [!NOTE]  
-    >  若要取消資料列的群組，請呼叫 <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> 方法。  
-  
-## 使用原生 Excel 範圍  
- 此程式碼會假設您的工作表上有三個 Excel 範圍，名稱分別是 `data2001`、`data2002` 和 `dataAll`。  
-  
-#### 若要在工作表中建立 Excel 範圍群組  
-  
-1.  對於三個已命名的範圍，呼叫每個範圍的 <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> 方法，將這三個範圍群組起來：  下列範例假設同一份工作表中有三個名稱分別為 `data2001`、`data2002` 和 `dataAll` 的 <xref:Microsoft.Office.Interop.Excel.Range> 控制項。  每個已命名範圍都會參考工作表中的完整資料列。  
-  
-     [!code-csharp[Trin_VstcoreExcelAutomation#33](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#33)]
-     [!code-vb[Trin_VstcoreExcelAutomation#33](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#33)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]  [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  若要取消資料列的群組，請呼叫 <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> 方法。  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> method.  
   
-## 請參閱  
- [使用工作表](../vsto/working-with-worksheets.md)   
- [NamedRange 控制項](../vsto/namedrange-control.md)   
- [如何：將 NamedRange 控制項加入至工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
+ The code assumes that you have three Excel ranges named `data2001`, `data2002`, and `dataAll` on a worksheet.  
+  
+#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>To create a group of Excel ranges in a worksheet  
+  
+1.  Group three named ranges by calling the <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> method of each range. The following example assumes that there are three <xref:Microsoft.Office.Interop.Excel.Range> controls named `data2001`, `data2002`, and `dataAll` on the same worksheet. Each named range refers to a whole row in the worksheet.  
+  
+     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]  [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+  
+    > [!NOTE]  
+    >  To ungroup rows, call the <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> method.  
+  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [NamedRange Control](../vsto/namedrange-control.md)   
+ [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

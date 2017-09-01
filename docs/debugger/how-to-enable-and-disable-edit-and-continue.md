@@ -1,59 +1,85 @@
 ---
-title: "如何：啟用和停用編輯後繼續 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "/INCREMENTAL 連結器選項"
-  - "套用程式碼變更命令"
-  - "中斷模式, 套用程式碼變更"
-  - "程式碼變更, 在中斷模式套用"
-  - "編輯後繼續, 套用程式碼變更"
-  - "編輯後繼續, 停用"
-  - "編輯後繼續, 啟用"
-  - "Go 命令"
-  - "INCREMENTAL 連結器選項"
-  - "Step 命令"
+title: 'How to: Enable and Disable Edit and Continue (C#, VB, C++) | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- /INCREMENTAL linker option
+- Apply Code Changes command
+- Edit and Continue, disabling
+- code changes, applying in break mode
+- INCREMENTAL linker option
+- Edit and Continue, enabling
+- break mode, applying code changes
+- Edit and Continue, applying code changes
+- Step command
+- Go command
 ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 26
-caps.handback.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：啟用和停用編輯後繼續
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: e47cf3946f303bde8274006c092562d1883fd422
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-您可以在設計階段於 \[**選項**\] 對話方塊中停用或啟用 \[編輯後繼續\]。  但是在進行偵錯時，無法變更這項設定。  
+---
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>How to: Enable and Disable Edit and Continue (C#, VB, C++)
+You can disable or enable Edit and Continue in the **Options** dialog box at design time. You cannot change this setting while you are debugging.  
   
- \[編輯後繼續\] 只能用於偵錯組建中。  在原生 C\+\+ 中，\[編輯後繼續\] 必須使用 \/INCREMENTAL 選項。  
+Edit and Continue works only in debug builds. For native C++, Edit and Continue requires using the /INCREMENTAL option. For more information about feature requirements in C++, see this [blog post](https://blogs.msdn.microsoft.com/vcblog/2016/07/01/c-edit-and-continue-in-visual-studio-2015-update-3/) and [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md).
   
-## 程序  
+#### <a name="to-enabledisable-edit-and-continue"></a>To enable/disable Edit and Continue  
   
-#### 若要啟用\/停用編輯後繼續  
+1.  If you are in a debugging session, stop debugging (**Shift + F5**).
+
+2.  Open debugging options page (**Tools > Options > Debugging**).
   
-1.  在 \[**工具**\] 功能表上，按一下 \[**選項**\]。  
+3.  Select **General**, and scroll down to **Edit and Continue** category (right pane).  
   
-2.  在 \[**選項**\] 對話方塊中，開啟 \[**偵錯**\] 節點，然後選取 \[**編輯後繼續**\] 分類。  
-  
-3.  若要啟用，請選取 \[**啟用編輯後繼續**\] 核取方塊。  若要停用，請清除該核取方塊。  
+4.  To enable, select the **Enable Edit and Continue** check box. To disable, clear the check box.  
   
     > [!NOTE]
-    >  如果已啟用 IntelliTrace，而且您同時收集 IntelliTrace 事件和呼叫資訊，則會停用 \[編輯後繼續\]。  如需詳細資訊，請參閱[設定 IntelliTrace 以收集偵錯資訊](http://msdn.microsoft.com/zh-tw/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+    >  If IntelliTrace is enabled and you collect both IntelliTrace events and call information, Edit and Continue is disabled. For more information, see [IntelliTrace](../debugger/intellitrace.md).
+
+5. (C++) To enable, select **Enable Native Edit and Continue**. To disable, clear the check box.
+
+6. (C++) Set additional options for native code.
+
+    - **Apply changes on continue (Native only)**  
+        Visual Studio automatically compiles and applies any outstanding code changes you have made when continuing the process from a break state. If not selected, you can choose to apply changes using the "Apply Code Changes" item under the Debug menu.  
   
-4.  按一下 \[**確定**\]。  
+    - **Warn about stale code (Native only)**  
+        Get warnings about stale code. 
   
-## 請參閱  
- [編輯後繼續](../debugger/edit-and-continue.md)   
- [選項對話方塊、偵錯、編輯後繼續](../Topic/Edit%20and%20Continue,%20Debugging,%20Options%20Dialog%20Box.md)
+7.  Click **OK**.    
+  
+## <a name="see-also"></a>See Also  
+ [Edit and Continue](../debugger/edit-and-continue.md)

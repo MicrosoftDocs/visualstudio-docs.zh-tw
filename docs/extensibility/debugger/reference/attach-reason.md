@@ -1,68 +1,85 @@
 ---
-title: "ATTACH_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "ATTACH_REASON"
-helpviewer_keywords: 
-  - "ATTACH_REASON 列舉型別"
+title: ATTACH_REASON | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- ATTACH_REASON
+helpviewer_keywords:
+- ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# ATTACH_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 918c276f4a15a36bdaa54a64670a77da953440b4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定偵錯引擎 \(DE\) 的原因，附加到程式的節點。  
+---
+# <a name="attachreason"></a>ATTACH_REASON
+Specifies the reason for the debug engine (DE) to attach to a program node.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```cpp  
+enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 typedef DWORD ATTACH_REASON;  
 ```  
   
-```c#  
-public enum enum_ATTACH_REASON {   
-   ATTACH_REASON_LAUNCH = 0x0001,  
-   ATTACH_REASON_USER   = 0x0002,  
-   ATTACH_REASON_AUTO   = 0x0003  
+```csharp  
+public enum enum_ATTACH_REASON {   
+   ATTACH_REASON_LAUNCH = 0x0001,  
+   ATTACH_REASON_USER   = 0x0002,  
+   ATTACH_REASON_AUTO   = 0x0003  
 };  
 ```  
   
-## Members  
- ATTACH\_REASON\_AUTO  
- 附加，因為在處理序目前處於偵錯模式。  
+## <a name="members"></a>Members  
+ ATTACH_REASON_AUTO  
+ Attach because the process is currently in debug mode.  
   
- ATTACH\_REASON\_LAUNCH  
- 附加，因為在啟動程序。  
+ ATTACH_REASON_LAUNCH  
+ Attach because the process has been launched.  
   
- ATTACH\_REASON\_USER  
- 因使用者要求的連接。  
+ ATTACH_REASON_USER  
+ Attach because of a user request.  
   
-## 備註  
- 這些值用做為參數， [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)和[附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)方法。  
+## <a name="remarks"></a>Remarks  
+ These values are used as a parameter to the [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) and [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) methods.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
- [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
+ [Attach](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)

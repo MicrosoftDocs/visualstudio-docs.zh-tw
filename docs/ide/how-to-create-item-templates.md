@@ -32,11 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 3524c21503d0432d509c607ea157f3fe675b443d
+ms.translationtype: HT
+ms.sourcegitcommit: c00adbbabf0d3b82acb17f4a269dfc693246bc69
+ms.openlocfilehash: 60732a1fbe7379b43d2856a62d5cd459165dd9a3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
@@ -58,7 +58,7 @@ ms.lasthandoff: 05/31/2017
 
 3.  修改程式碼檔，指出要執行參數取代的地方。 如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
 
-4.  按一下 [檔案] 功能表上的 [匯出範本]。  
+4.  按一下 [專案] 功能表上的 [匯出範本]。  
 
 5.  按一下 [項目範本]，然後選取包含項目的專案，並按一下 [下一步]。  
 
@@ -166,7 +166,7 @@ ms.lasthandoff: 05/31/2017
 
 2.  修改專案項目，直到它準備好儲存成範本。  
 
-3.  適時修改程式碼檔案，指出要執行參數取代的位置。 如需參數取代的詳細資訊，請參閱＜作法：替代範本中的參數＞。  
+3.  適時修改程式碼檔案，指出要執行參數取代的位置。 如需參數取代的詳細資訊，請參閱[操作說明：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。
 
 4.  在與新項目範本相同的目錄中，使用 .vstemplate 檔案副檔名來建立 XML 檔案並儲存它。  
 

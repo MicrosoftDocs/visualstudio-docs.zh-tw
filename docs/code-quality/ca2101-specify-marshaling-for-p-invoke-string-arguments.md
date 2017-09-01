@@ -1,51 +1,69 @@
 ---
-title: "CA2101：必須指定 P/Invoke 字串引數的封送處理 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SpecifyMarshalingForPInvokeStringArguments"
-  - "CA2101"
-helpviewer_keywords: 
-  - "CA2101"
-  - "SpecifyMarshalingForPInvokeStringArguments"
+title: 'CA2101: Specify marshaling for P-Invoke string arguments | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SpecifyMarshalingForPInvokeStringArguments
+- CA2101
+helpviewer_keywords:
+- CA2101
+- SpecifyMarshalingForPInvokeStringArguments
 ms.assetid: 9d1abfc3-d320-41e0-9f6e-60cefe6ffe1b
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA2101：必須指定 P/Invoke 字串引數的封送處理
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 536195a8bd2a3d92e2fb5f784e29d01d9393e580
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Specify marshaling for P/Invoke string arguments
 |||  
 |-|-|  
-|型別名稱|SpecifyMarshalingForPInvokeStringArguments|  
+|TypeName|SpecifyMarshalingForPInvokeStringArguments|  
 |CheckId|CA2101|  
-|分類|Microsoft.Globalization|  
-|中斷變更|中斷|  
+|Category|Microsoft.Globalization|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 平台叫用成員允許部分信任的呼叫端、具有字串參數，並且未明確封送處理字串。  
+## <a name="cause"></a>Cause  
+ A platform invoke member allows for partially trusted callers, has a string parameter, and does not explicitly marshal the string.  
   
-## 規則描述  
- 從 Unicode 轉換為 ANSI 時，並非所有 Unicode 字元都可以用特定的 ANSI 字碼頁 \(Code Page\) 表示。  「*自動調整對應*」\(Best\-fit mapping\) 會嘗試替換無法表示的字元以解決此問題。  使用此功能會導致潛在的安全性弱點，因為您無法控制所選擇的字元。  例如，惡意的程式碼會刻意建立包含特定字碼頁中找不到的字元之 Unicode 字串，這些字元會轉換為檔案系統的特殊字元，例如 '..' 或 '\/'。  另請注意，在字串轉換為 ANSI 之前，會經常發生特殊字元的安全性檢查。  
+## <a name="rule-description"></a>Rule Description  
+ When you convert from Unicode to ANSI, it is possible that not all Unicode characters can be represented in a specific ANSI code page. *Best-fit mapping* tries to solve this problem by substituting a character for the character that cannot be represented. The use of this feature can cause a potential security vulnerability because you cannot control the character that is chosen. For example, malicious code could intentionally create a Unicode string that contains characters that are not found in a particular code page, which are converted to file system special characters such as '..' or '/'. Note also that security checks for special characters frequently occur before the string is converted to ANSI.  
   
- 自動調整對應是 Unmanaged 轉換 \(WChar 至 MByte\) 的預設值。  除非您明確停用自動調整對應，否則您的程式碼會因為此問題而包含可被利用的安全性弱點。  
+ Best-fit mapping is the default for the unmanaged conversion, WChar to MByte. Unless you explicitly disable best-fit mapping, your code might contain an exploitable security vulnerability because of this issue.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請明確封送處理字串資料型別。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, explicitly marshal string data types.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例會顯示違反此規則的方法，然後顯示如何修正違規。  
+## <a name="example"></a>Example  
+ The following example shows a method that violates this rule, and then shows how to fix the violation.  
   
- [!code-cs[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]
+ [!code-csharp[FxCop.Security.PinvokeAnsiUnicode#1](../code-quality/codesnippet/CSharp/ca2101-specify-marshaling-for-p-invoke-string-arguments_1.cs)]

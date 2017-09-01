@@ -1,66 +1,83 @@
 ---
-title: "CA2147：透明的方法不可以使用安全性判斷提示 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SecurityTransparentCodeShouldNotAssert"
-  - "CA2147"
-  - "CA2128"
-helpviewer_keywords: 
-  - "CA2128"
-  - "SecurityTransparentCodeShouldNotAssert"
+title: 'CA2147: Transparent methods may not use security asserts | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- SecurityTransparentCodeShouldNotAssert
+- CA2147
+- CA2128
+helpviewer_keywords:
+- CA2128
+- SecurityTransparentCodeShouldNotAssert
 ms.assetid: 5d31e940-e599-4b23-9b28-1c336f8d910e
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
----
-# CA2147：透明的方法不可以使用安全性判斷提示
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: eb5ab9afc21d0f3bcce6a5a0e49d021971532262
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Transparent methods may not use security asserts
 |||  
 |-|-|  
-|型別名稱|SecurityTransparentCodeShouldNotAssert|  
+|TypeName|SecurityTransparentCodeShouldNotAssert|  
 |CheckId|CA2147|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 標記為 <xref:System.Security.SecurityTransparentAttribute> 的程式碼並未具備足夠的使用權限可以進行判斷提示 \(Assert\)。  
+## <a name="cause"></a>Cause  
+ Code that is marked as <xref:System.Security.SecurityTransparentAttribute> is not granted sufficient permissions to assert.  
   
-## 規則描述  
- 此規則會分析完全透明或混合透明\/關鍵之組件 \(Assembly\) 中的所有方法和型別，並將 <xref:System.Security.CodeAccessPermission.Assert%2A> 的任何宣告式或必要用法加上旗標。  
+## <a name="rule-description"></a>Rule Description  
+ This rule analyzes all methods and types in an assembly which is either 100% transparent or mixed transparent/critical, and flags any declarative or imperative usage of <xref:System.Security.CodeAccessPermission.Assert%2A>.  
   
- 在執行階段，從透明程式碼對 <xref:System.Security.CodeAccessPermission.Assert%2A> 所做的任何呼叫都會導致擲回 <xref:System.InvalidOperationException> 的情況。  100% 透明的組件，以及混合的透明\/關鍵組件 \(其中的方法或型別宣告為透明，但包含宣告式或必要的判斷提示\)，都有可能發生這種問題。  
+ At run time, any calls to <xref:System.Security.CodeAccessPermission.Assert%2A> from transparent code will cause a <xref:System.InvalidOperationException> to be thrown. This can occur in both 100% transparent assemblies, and also in mixed transparent/critical assemblies where a method or type is declared transparent, but includes a declarative or imperative Assert.  
   
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 引入一項名為「*透明度*」\(Transparency\) 的功能。  個別方法、欄位、介面、類別和型別可以是透明或關鍵項目。  
+ The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 introduced a feature named *transparency*. Individual methods, fields, interfaces, classes, and types can be either transparent or critical.  
   
- 不能使用透明程式碼來評估安全性權限。  因此，其已授與或要求的任何使用權限都會自動透過程式碼傳遞至呼叫端或主機應用程式定義域。  權限升級的範例包括 Assert、LinkDemand、SuppressUnmanagedCode 以及 `unsafe` 程式碼。  
+ Transparent code is not allowed to elevate security privileges. Therefore, any permissions granted or demanded of it are automatically passed through the code to the caller or host application domain. Examples of elevations include Asserts, LinkDemands, SuppressUnmanagedCode, and `unsafe` code.  
   
-## 如何修正違規  
- 若要解決這個問題，請將呼叫判斷提示的程式碼標記為 <xref:System.Security.SecurityCriticalAttribute>，或是移除判斷提示。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To resolve the issue, either mark the code which calls the Assert with the <xref:System.Security.SecurityCriticalAttribute>, or remove the Assert.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的訊息。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a message from this rule.  
   
-## 範例  
- 在 `Assert` 方法擲回 <xref:System.InvalidOperationException> 時，如果 `SecurityTestClass` 是透明的，這個程式碼就會失敗。  
+## <a name="example"></a>Example  
+ This code will fail if `SecurityTestClass` is transparent, when the `Assert` method throws a <xref:System.InvalidOperationException>.  
   
- [!CODE [FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../CodeSnippet/VS_Snippets_CodeAnalysis/fxcop.security.ca2147.transparentmethodsmustnotusesecurityasserts#1)]  
+ [!code-csharp[FxCop.Security.CA2147.TransparentMethodsMustNotUseSecurityAsserts#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_1.cs)]  
   
-## 範例  
- 其中一個選項是程式碼檢閱下列範例中的 SecurityTransparentMethod 方法，如果認為該方法可安全提升，就將SecurityTransparentMethod 標記為安全關鍵。這樣做必須針對該方法執行詳細、完整且零錯誤的安全性稽查，同時檢查 Assert 之下發生在方法內的任何 call\-out：  
+## <a name="example"></a>Example  
+ One option is to code review the SecurityTransparentMethod method in the example below, and if the method is considered safe for elevation, mark SecurityTransparentMethod with secure-critical This requires that a detailed, complete, and error-free security audit must be performed on the method together with any call-outs that occur within the method under the Assert:  
   
- [!CODE [FxCop.Security.SecurityTransparentCode2#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Security.SecurityTransparentCode2#1)]  
+ [!code-csharp[FxCop.Security.SecurityTransparentCode2#1](../code-quality/codesnippet/CSharp/ca2147-transparent-methods-may-not-use-security-asserts_2.cs)]  
   
- 另一個選擇是從程式碼中移除判斷提示，並讓任何後續的檔案 I\/O 使用權限要求越過 SecurityTransparentMethod 流入呼叫端，以便進行安全性檢查。  這可啟用安全性檢查。  此時通常不需要安全性稽核，因為使用權限要求會流入呼叫端和\/或應用程式定義域中。  使用權限要求需透過安全性原則、裝載環境和程式碼來源使用權限的授與加以嚴密控制。  
+ Another option is to remove the Assert from the code, and let any subsequent file I/O permission demands flow beyond SecurityTransparentMethod to the caller. This enables security checks. In this case, no security audit is generally needed, because the permission demands will flow to the caller and/or the application domain. Permission demands are closely controlled through security policy, hosting environment, and code-source permission grants.  
   
-## 請參閱  
- [安全性警告](../code-quality/security-warnings.md)
+## <a name="see-also"></a>See Also  
+ [Security Warnings](../code-quality/security-warnings.md)

@@ -1,12 +1,13 @@
 ---
 title: "偵錯 Visual Studio 中的 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2192dc77-b5da-4332-b753-fa20f03f81e0
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: e15edc1f2739cad0960619aa6cb4b089589eebd8
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 92fd0f30dfbb09f0eca8d2c9bc98d7904d81353c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
@@ -61,34 +48,34 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 > [!Tip]
 > Visual Studio 中的 Python 支援在不使用檔案的情況下進行偵錯。 在開啟獨立 Python 檔案的情況下，於編輯器中按一下滑鼠右鍵，選取 [啟動並偵錯]，Visual Studio 就會在不使用引數的情況下，以全域預設環境啟動指令碼 (請參閱 [Python 環境](python-environments.md))。 但之後您就有完整的偵錯支援。
 >
-> 若要控制環境和引數，您必須建立程式碼專案。 您可以[從現有的 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)輕鬆地執行這項操作。
+> 若要控制環境和引數，請建立程式碼的專案，這可以透過[從現有的 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)專案範本輕鬆地完成。
 
 <a name="debugging-with-a-project"</a>
 ## <a name="basic-debugging"></a>基本偵錯
 
 基本偵錯工作流程包含設定中斷點、逐步執行程式碼、檢查值和處理例外狀況，如下列各節所述。 如需 Visual Studio 偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
 
-您可以透過 [偵錯 (Debug)] > [開始偵錯 (Start Debugging)] 命令、工具列上的 [開始] 按鈕或 F5 鍵開始偵錯工作階段。 您的專案啟動檔案 (在 [方案總管 (Solution Explorer)] 中以粗體顯示) 就會以專案的使用中環境和已在 [專案屬性 (Project Properties)] 中指定的任何命令列引數或搜尋路徑啟動 (請參閱[專案偵錯選項](#project-debugging-options))。 不過，如果基於某些原因沒有設定啟動檔，您會看到 Python 輸出視窗短暫出現，然後消失。 在此情況下，請在適當的檔案上按一下滑鼠右鍵，然後選取 [啟動檔案]。
+您可以透過 [偵錯 (Debug)] > [開始偵錯 (Start Debugging)] 命令、工具列上的 [開始] 按鈕或 F5 鍵開始偵錯工作階段。 這些動作會啟動您專案的啟動檔案 (在方案總管中以粗體顯示) 就會以專案的使用中環境和已在 [專案屬性] 中指定的任何命令列引數或搜尋路徑啟動 (請參閱[專案偵錯選項](#project-debugging-options))。 不過，如果基於某些原因沒有設定啟動檔，Python 輸出視窗會短暫出現，然後消失。 在此情況下，請在適當的檔案上按一下滑鼠右鍵，然後選取 [啟動檔案]。
 
 > [!Note]
 > 偵錯工具一律會以專案的使用中 Python 環境啟動。 若要變更環境，請將其他環境設為使用中，如 [Python 環境](python-environments.md)所述。
 
 ### <a name="breakpoints"></a>中斷點
 
-中斷點會在標示的點停止執行程式碼，讓您可以檢查程式狀態。 在程式碼編輯器的左邊界中按一下，或以滑鼠右鍵按一下程式碼並選取 [中斷點 (Breakpoint)] > [插入中斷點 (Insert Breakpoint)] 以設定中斷點。 具有中斷點的每一行會顯示一個紅點。
+中斷點會在標示的點停止執行程式碼，讓您可以檢查程式狀態。 在程式碼編輯器的左邊界中按一下，或以滑鼠右鍵按一下程式碼並選取 [中斷點] > [插入中斷點] 以設定中斷點。 具有中斷點的每一行會顯示一個紅點。
 
-![Visual Studio 中的中斷點](~/python/media/debugging-breakpoints.png)
+![Visual Studio 中的中斷點](media/debugging-breakpoints.png)
 
 按一下紅點或以滑鼠右鍵按一下程式碼，選取 [中斷點 (Breakpoint)] > [刪除中斷點 (Delete Breakpoint)] 會移除中斷點。 您也可以使用 [中斷點 (Breakpoint)] > [停用中斷點 (Disable Breakpoint)] 命令來停用而不移除它。
 
 > [!Note]
-> 對慣用其他語言的人而言，Python 中的一些中斷點可能令人驚訝。 在 Python 中，整個檔案就是可執行程式碼，因此 Python 會在載入檔案來處理任何最上層類別或函式定義時執行檔案。 如果已設定中斷點，您可以透過類別宣告發現偵錯工具中斷方式。 儘管不免令人驚訝，但這是正確的行為。
+> Python 中的一些中斷點可能會令已使用其他程式設計語言的開發人員感到意外。 在 Python 中，整個檔案就是可執行程式碼，因此 Python 會在載入檔案來處理任何最上層類別或函式定義時執行檔案。 如果已設定中斷點，您可以透過類別宣告發現偵錯工具中斷方式。 這種行為正確，不過有時會很令人意外。
 
-您可以自訂觸發中斷點的條件，例如僅在變數達到特定值時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中這項功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)
+您可以自訂觸發中斷點的條件，例如僅在變數設為特定值或值範圍時中斷。 若要設定條件，以滑鼠右鍵按一下中斷點的紅點，選取 [條件 (Condition)]，然後使用 Python 程式碼建立運算式。 如需 Visual Studio 中這項功能的完整詳細資訊，請參閱[中斷點條件](../debugger/using-breakpoints.md#breakpoint-conditions)
 
-設定條件時，您也可以設定 [動作 (Action)] 並建立要記錄至輸出視窗的訊息，或選擇自動繼續執行。 這會建立所謂的*追蹤點*，而不需要直接將記錄碼引入您的應用程式︰
+設定條件時，您也可以設定 [動作 (Action)] 並建立要記錄至輸出視窗的訊息，或選擇自動繼續執行。 記錄訊息會建立所謂的「追蹤點」，而不直接將記錄碼新增到您的應用程式︰
 
-![建立具有中斷點的追蹤點](~/python/media/debugging-tracepoint.png)
+![建立具有中斷點的追蹤點](media/debugging-tracepoint.png)
 
 ### <a name="stepping-through-code"></a>逐步執行程式碼
 
@@ -99,10 +86,10 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 | Continue | F5 | 執行程式碼，直到下一個中斷點為止。 |
 | 逐步執行 | F11 | 執行下一個陳述式並停止。 如果下一個陳述式是函式的呼叫，偵錯工具會停在所呼叫函式的第一行。 |
 | 不進入函式 | F10 | 執行下一個陳述式，包括呼叫函式 (執行其所有程式碼) 和套用任何傳回值。 不進入函式可讓您輕鬆略過不需偵錯的函式。 |
-| 跳離函式 | Shift+F11 | 執行程式碼直到目前的函式結束，然後逐步執行呼叫的陳述式。 當您不需要對目前函式的其餘部分進行偵錯時，此命令非常有用。 |
-| 執行至游標處 | Ctrl+F10 | 執行程式碼直到編輯器中插入點 (Caret) 的位置。 這可讓您輕鬆略過不需偵錯的程式碼區段。 |
-| 設定 Next 陳述式 | Ctrl+Shift+F10 | 將程式碼中目前的執行點變更為插入點 (Caret) 的位置。 這可讓您略過特定的程式碼區段而不執行，例如當您知道它有錯誤或是會產生不想要的副作用時。 |
-| 顯示下一個陳述式 | Alt+Num * | 返回下一個將執行的陳述式。 如果您在程式碼中四處尋找卻不知道偵錯工具實際停止的位置時，此命令很有用。 |
+| 跳離函式 | Shift+F11 | 執行程式碼直到目前的函式結束，然後逐步執行呼叫的陳述式。  當您不需要對目前函式的其餘部分進行偵錯時，此命令非常有用。 |
+| 執行至游標處 | Ctrl+F10 | 執行程式碼直到編輯器中插入點 (Caret) 的位置。 此命令可讓您輕鬆略過不需偵錯的程式碼區段。 |
+| 設定 Next 陳述式 | Ctrl+Shift+F10 | 將程式碼中目前的執行點變更為插入點 (Caret) 的位置。 此命令可讓您略過特定的程式碼區段而不執行，例如當您知道程式碼有錯誤或是會產生不想要的副作用時。 |
+| 顯示下一個陳述式 | Alt+Num * | 返回下一個將執行的陳述式。 如果您在程式碼中四處尋找卻不記得偵錯工具停止的位置時，此命令很有用。 |
 
 ### <a name="inspecting-and-modifying-values"></a>檢查和修改值
 
@@ -110,57 +97,55 @@ Visual Studio 提供全面的 Python 偵錯體驗，包括附加至執行中處�
 
 若要使用 DataTips 檢視值，只要將滑鼠游標停在編輯器中任一變數的上方。 您可以按一下值來變更它︰
 
-![偵錯工具中的 DataTips](~/python/media/debugging-quick-tips.png)
+![偵錯工具中的 DataTips](media/debugging-quick-tips.png)
 
 [自動變數 (Autos)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [自動變數 (Autos)]) 包含與目前的陳述式相關的變數和運算式。 您可以在值資料行中按兩下或選取並按 F2 來編輯值︰
 
-![偵錯工具中的 [自動變數 (Autos)] 視窗](~/python/media/debugging-autos-window.png)
+![偵錯工具中的 [自動變數 (Autos)] 視窗](media/debugging-autos-window.png)
 
 [區域變數 (Locals)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [區域變數 (Locals)]) 會顯示目前範圍中可再次編輯的所有變數︰
 
-![偵錯工具中的 [區域變數 (Locals)] 視窗](~/python/media/debugging-locals-window.png)
+![偵錯工具中的 [區域變數 (Locals)] 視窗](media/debugging-locals-window.png)
 
 如需使用 [自動變數 (Autos)] 和 [區域變數 (Locals)] 的詳細資訊，請參閱[在 [自動變數] 和 [區域變數] 視窗中檢查變數](../debugger/autos-and-locals-windows.md)。
 
 [監看式 (Watch)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [監看式 (Watch)] > [監看式 1-4 (Watch 1-4)]) 可讓您輸入任意 Python 運算式並檢視結果。 運算式會針對每個步驟重新評估︰
 
-![偵錯工具中的 [監看式 (Watch)] 視窗](~/python/media/debugging-watch-window.png)
+![偵錯工具中的 [監看式 (Watch)] 視窗](media/debugging-watch-window.png)
 
 如需使用 [監看式 (Watch)] 的詳細資訊，請參閱[使用監看式及快速監看式視窗在變數設定監看式](../debugger/watch-and-quickwatch-windows.md)。
 
-檢查字串值時 (針對此目的，`str`、`unicode``bytes` 和 `bytearray` 全都視為字串)，您會在值的右邊看到放大鏡圖示。 按一下此圖示，會在快顯對話方塊中顯示不具引號的字串值，其換行和多行式格式非常適合長字串。 此外，按一下圖示上的下拉箭號可讓您選取純文字、HTML、XML 和 JSON 視覺效果︰
+檢查字串值時 (針對此目的，`str`、`unicode``bytes` 和 `bytearray` 全都視為字串)，在值的右邊會出現放大鏡圖示。 按一下圖示，會在快顯對話方塊中顯示不具引號的字串值，其換行和多行式格式非常適合長字串。 此外，選取圖示上的下拉箭號可讓您選取純文字、HTML、XML 和 JSON 視覺效果︰
 
-![字串視覺化工具](~/python/media/debugging-string-visualizers.png)
+![字串視覺化工具](media/debugging-string-visualizers.png)
 
 HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的語法會反白顯示，並含有樹狀檢視。
 
 ### <a name="exceptions"></a>例外狀況
 
-如果對程式進行偵錯時發生錯誤，而且您沒有例外狀況處理常式可以處理它，偵錯工具會在例外狀況的位置中斷︰
+如果對程式進行偵錯時發生錯誤，但您沒有例外狀況處理常式可以處理它，偵錯工具會在例外狀況的位置中斷︰
 
-![例外狀況快顯](~/python/media/debugging-exception-popup.png)
+![例外狀況快顯](media/debugging-exception-popup.png)
 
 此時，您可以檢查程式狀態，包括呼叫堆疊。 不過，如果您嘗試逐步執行程式碼，將會繼續擲回例外狀況，直到已處理或您的程式結束為止。
 
 [偵錯 (Debug)] > [視窗 (Windows)] > [例外狀況設定 (Exception Settings)] 功能表命令會顯示一個視窗，您可以在其中展開 [Python 例外狀況 (Python Exceptions)]：
 
-![例外狀況視窗](~/python/media/debugging-exception-settings.png)
+![例外狀況視窗](media/debugging-exception-settings.png)
 
-每個例外狀況的核取方塊控制當此例外狀況引發時，是否*一律*中斷偵錯工具。 當您想更頻繁地針對特定例外狀況中斷時，應核取此方塊。
+每個例外狀況的核取方塊控制當此例外狀況引發時，是否*一律*中斷偵錯工具。 當您想更頻繁地針對特定例外狀況中斷時，請核取此方塊。
 
-根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況將會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任一例外狀況，然後選取或取消選取 [當使用者程式碼中未處理時繼續 (Continue When Unhandled in User Code)]。 當您想減少針對例外狀況中斷的頻率時，應清除此方塊。
+根據預設，在原始程式碼中找不到例外狀況處理常式時，大部分的例外狀況會中斷偵錯工具。 若要變更此行為，請以滑鼠右鍵按一下任一例外狀況，然後選取或取消選取 [當使用者程式碼中未處理時繼續]。 當您想減少針對例外狀況中斷的頻率時，請清除此方塊。
 
 若要設定未顯示在此清單中的例外狀況，請按一下 [新增 (Add)] 按鈕將其加入。 名稱必須符合例外狀況的完整名稱。
 
 ## <a name="project-debugging-options"></a>專案偵錯選項
 
-根據預設，偵錯工具會使用標準 Python 啟動器啟動您的程式，不使用任何命令列引數或其他特殊路徑或條件。 在 [方案總管 (Solution Explorer)] 中以滑鼠右鍵按一下您的專案，選取 [屬性 (Properties)]，然後選取 [偵錯 (Debug)] 索引標籤來存取專案的偵錯屬性，可以變更這些選項。
+根據預設，偵錯工具會使用標準 Python 啟動器啟動您的程式，不使用任何命令列引數或其他特殊路徑或條件。 在方案總管中以滑鼠右鍵按一下您的專案，選取 [屬性]，然後選取 [偵錯] 索引標籤來存取專案的偵錯屬性，可以變更啟動選項。
 
-![專案偵錯屬性](~/python/media/debugging-project-properties.png)
+![專案偵錯屬性](media/debugging-project-properties.png)
 
 ### <a name="launch-mode-options"></a>啟動模式選項
-
-[啟動模式 (Launch mode)] 選項可讓您選擇下列選項，以啟用不同的案例︰
 
 | 選項 | 描述 |
 | --- | --- |
@@ -173,11 +158,11 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 | 選項 | 描述 |
 | --- | --- |
-| 搜尋路徑 | 會比對在 [方案總管] 中專案的 [搜尋路徑] 節點所顯示的內容。 您可以在此處修改此值，但使用 [方案總管] 會比較容易，因為可讓您瀏覽資料夾並自動將路徑轉換成相對格式。 |
-| 指令碼引數 | 會加入至用來啟動指令碼的命令，顯示在您的指令碼檔案名稱之後。 此處的第一個項目將以 `sys.argv[1]` 的格式提供給您的指令碼，第二個項目則是 `sys.argv[2]`，依此類推。 |
-| 解譯器引數 | 會加入至指令碼名稱之前的啟動器命令列。 此處常見的引數包括控制警告的 `-W ...`，稍微最佳化程式的 `-O` 和使用未緩衝處理之 IO 的 `-u`。 IronPython 使用者可能會使用此欄位傳遞 `-X` 選項，例如 `-X:Frames` 或 `-X:MTA`。 |
-| 解譯器路徑 | 覆寫與目前環境相關聯的路徑。 使用非標準解譯器啟動您的指令碼時，此選項會很有用。 |
-| 環境變數 | 在這個多行文字方塊中，加入表單 `NAME=VALUE` 的項目。 這個設定是最後套用的，在任何現有的全域環境變數最上層，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，因此可以使用它來手動覆寫這些當中的任一項。 |
+| 搜尋路徑 | 這些值符合在方案總管中專案的 [搜尋路徑] 節點所顯示的內容。 您可以在此處修改此值，但使用 [方案總管] 會比較容易，因為可讓您瀏覽資料夾並自動將路徑轉換成相對格式。 |
+| 指令碼引數 | 這些引數會新增至用來啟動指令碼的命令，顯示在您的指令碼檔案名稱之後。 此處的第一個項目以 `sys.argv[1]` 的格式提供給您的指令碼，第二個項目則是 `sys.argv[2]`，依此類推。 |
+| 解譯器引數 | 這些引數會新增至指令碼名稱之前的啟動器命令列。 此處常見的引數包括控制警告的 `-W ...`，稍微最佳化程式的 `-O` 和使用未緩衝處理之 IO 的 `-u`。 IronPython 使用者可能會使用此欄位傳遞 `-X` 選項，例如 `-X:Frames` 或 `-X:MTA`。 |
+| 解譯器路徑 | 覆寫與目前環境相關聯的路徑。  使用非標準解譯器啟動您的指令碼時，此值會很有用。 |
+| 環境變數 | 在這個多行文字方塊中，加入表單 `NAME=VALUE` 的項目。 因為這個設定是最後套用的，在任何現有的全域環境變數之上，而且是在依據 [搜尋路徑] 設定 `PYTHONPATH` 之後，所以可以使用它來手動覆寫那些其他變數中的任一項。 |
 
 <a name="the-debug-interactive-window"</a>
 ## <a name="immediate-and-interactive-windows"></a>[即時運算 (Immediate)] 和 [互動式 (Interactive)] 視窗
@@ -186,9 +171,9 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 
 [即時運算 (Immediate)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [即時運算 (Immediate)]) 用於快速評估 Python 運算式和檢查或指派執行中程式內的變數。 如需詳細資訊，請參閱一般[即時運算視窗](../ide/reference/immediate-window.md)。
 
-[Python 偵錯互動式 (Python Debug Interactive)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [Python 偵錯互動式 (Python Debug Interactive)]) 更豐富，因為它可在偵錯時提供完整的[互動式 REPL](interactive-repl.md) 體驗，包括撰寫和執行程式碼。 它會使用標準 Python 啟動器自動連線到在偵錯工具中啟動的任一處理序 (包括透過 *[偵錯 (Debug)] > [附加至處理序 (Attach to Process)]  附加的處理序)。 不過，它在使用混合模式 C/C++ 偵錯時無法使用。
+[Python 偵錯互動式 (Python Debug Interactive)] 視窗 ([偵錯 (Debug)] > [視窗 (Windows)] > [Python 偵錯互動式 (Python Debug Interactive)]) 更豐富，因為它可在偵錯時提供完整的[互動式 REPL](interactive-repl.md) 體驗，包括撰寫和執行程式碼。 它會使用標準 Python 啟動器自動連線到在偵錯工具中啟動的任一處理序 (包括透過 [偵錯] > [附加至處理序]  附加的處理序)。 不過，它在使用混合模式 C/C++ 偵錯時無法使用。
 
-![[Python 偵錯互動式 (Python Debug Interactive)] 視窗](~/python/media/debugging-interactive.png)
+![[Python 偵錯互動式 (Python Debug Interactive)] 視窗](media/debugging-interactive.png)
 
 [偵錯互動式 (Debug Interactive)] 視窗支援[標準 REPL 命令](interactive-repl.md#meta-commands)以外的中繼命令：
 
@@ -211,8 +196,8 @@ HTML、XML 和 JSON 視覺效果會出現在不同的快顯視窗中，其中的
 | `$up`, `$u` | | 在堆疊追蹤中將目前的框架上移一層。 |
 | `$where`, `$w`, `$bt` | 列出目前執行緒的框架。 |
 
-請注意，標準偵錯工具視窗 (例如 [處理序]、[執行緒] 和 [呼叫堆疊]) 不會與 [偵錯互動式] 視窗同步。 這表示，變更 [偵錯互動式] 視窗中的使用中處理序、執行緒或框架，將不會影響其他偵錯工具視窗，同樣地，變更其他偵錯工具視窗中的使用中處理序、執行緒或框架，將不會影響 [偵錯互動式] 視窗。
+請注意，標準偵錯工具視窗 (例如 [處理序]、[執行緒] 和 [呼叫堆疊]) 不會與 [互動式偵錯] 視窗同步。 在 [互動式偵錯] 視窗中變更使用中的處理序、執行緒或框架，不會影響其他偵錯工具視窗。 同樣地，在其他偵錯工具視窗變更使用中的處理序、執行緒或框架，也不會影響 [互動式偵錯] 視窗。
 
-[偵錯互動式 (Debug Interactive)] 視窗有自己的一組選項，您可以透過 [工具 (Tools)] > [選項 (Options)] > [Python 工具 (Python Tools)] > [偵錯互動式視窗 (Debug Interactive Window)] 來存取。 不同於一般 [Python 互動式 (Python Interactive)] 視窗針對各個 Python 環境有不同的執行個體，[偵錯互動式視窗 (Debug Interactive Window)] 只有一個，而且一律使用 Python 解譯器進行處理序偵錯。
+[互動式偵錯] 視窗有自己的一組選項，您可以透過 [工具] > [選項] > [Python 工具] > [互動式偵錯視窗] 來存取。 不同於一般 [Python 互動式 (Python Interactive)] 視窗針對各個 Python 環境有不同的執行個體，[偵錯互動式視窗 (Debug Interactive Window)] 只有一個，而且一律使用 Python 解譯器進行處理序偵錯。 請參閱[選項 - 偵錯選項](options.md#debugging-options)。
 
-![[偵錯互動式視窗 (Debug Interactive Window)] 選項](~/python/media/debugging-interactive-options.png)
+![[偵錯互動式視窗 (Debug Interactive Window)] 選項](media/debugging-interactive-options.png)

@@ -1,49 +1,66 @@
 ---
-title: "IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyCreateEvent2::GetDebugProperty"
-helpviewer_keywords: 
-  - "IDebugPropertyCreateEvent2::GetDebugProperty"
+title: IDebugPropertyCreateEvent2::GetDebugProperty | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPropertyCreateEvent2::GetDebugProperty
+helpviewer_keywords:
+- IDebugPropertyCreateEvent2::GetDebugProperty
 ms.assetid: d7e43183-444c-4417-af19-82e28229f83a
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugPropertyCreateEvent2::GetDebugProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2581c32c32b1ac5668b5bc6836d47cf0c049e7cd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得新的屬性。  
+---
+# <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
+Gets the new property.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppProperty  
+```cpp  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppProperty  
 );  
 ```  
   
-```c#  
-int GetDebugProperty (   
-   out IDebugProperty2 ppProperty  
+```csharp  
+int GetDebugProperty (   
+   out IDebugProperty2 ppProperty  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppProperty`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，代表新的屬性。  
+ [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) object that represents the new property.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugPropertyCreateEvent2](../../../extensibility/debugger/reference/idebugpropertycreateevent2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

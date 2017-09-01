@@ -1,40 +1,45 @@
 ---
-title: "Windows Script Host | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Windows Script Host, 實作主應用程式"
+title: Windows Script Hosts | Microsoft Docs
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Windows Script Host, implementing hosts
 ms.assetid: 9d5f6471-b318-40f3-be01-d9cd0b1cdd47
 caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
+ms.openlocfilehash: 41fa898c7f0d62cd35cc1cb1c7b35eb2651c8bb6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/11/2017
+
 ---
-# Windows Script Host
-當實作 Windows 架構的指令碼載入時，您可以安全地假設，一個指令碼引擎呼叫基礎執行緒中的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面，只要主機執行下列動作:  
+# <a name="windows-script-hosts"></a>Windows Script Host
+實作 Microsoft Windows Script Host 時，您可以安全地假設指令碼引擎只呼叫基底執行緒內容中的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面，只要主機進行下列作業：  
   
--   選取基礎執行緒 \(通常包含訊息迴圈的執行緒\)。  
+-   選擇基底執行緒 (通常是包含訊息迴圈的執行緒)。  
   
--   具現化基礎執行緒的指令碼引擎。  
+-   在基底執行緒中具現化指令碼引擎。  
   
--   指令碼引擎只方法從基礎執行緒的呼叫，不過，明確地允許，在 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 和 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md)的位置。  
+-   除非特別允許，如 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 和 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 的情況，否則只從基底執行緒呼叫指令碼引擎方法。  
   
--   呼叫指令碼引擎的分派只物件從基礎執行緒。  
+-   只從基底執行緒呼叫指令碼引擎的分派物件。  
   
--   如果提供，確保在基礎執行緒的訊息迴圈執行視窗控制代碼。  
+-   如果提供視窗控制代碼，確保訊息迴圈會在基底執行緒中執行。  
   
--   確保只有主應用程式的物件模型做為事件來源的物件在基本的執行緒。  
+-   確保主機物件模型中的物件，只以基底執行緒中的事件為來源。  
   
- 這些規則是由所有單一執行緒的主機自動追蹤。  所描述之受限制的模型頂端刻意很鬆散的可讓主應用程式藉由呼叫來自其他執行緒的 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md) 中止的就會的指令碼 \(啟始被同時處理常式或類似的\)，請使用 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md)，、或迴圈在新執行緒上執行指令碼。  
+ 所有單一執行緒的主機都會自動遵循這些規則。 上述限制模型是刻意鬆散到足以允許主機放棄無法停止的指令碼，只要從另一個執行緒 (由 CTRL+BREAK 或類似的處理常式起始) 呼叫 [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md)，或使用 [IActiveScript::Clone](../winscript/reference/iactivescript-clone.md) 複製新執行緒中的指令碼。  
   
-## 備註  
- 這些限制都不適用於選擇實作無限制執行緒的 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面的無限制執行緒物件模型的主機。  這類主應用程式可以從任何執行緒的 [IActiveScript](../winscript/reference/iactivescript.md) 介面，，不受限制。  
+## <a name="remarks"></a>備註  
+ 這些限制都不適用選擇實作無限制執行緒 [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) 介面和無限制執行緒物件模型的主機。 這類主機可以從任何執行緒使用 [IActiveScript](../winscript/reference/iactivescript.md) 介面，完全沒有限制。  
   
-## 請參閱  
- [\<PAVE OVER\> Microsoft Windows 指令碼介面 \- 簡介](http://msdn.microsoft.com/library/3d10169f-2984-49ef-90c6-dd89c97f1dd6)
+## <a name="see-also"></a>另請參閱  
+ [Windows 指令碼的介面](../winscript/windows-script-interfaces.md)

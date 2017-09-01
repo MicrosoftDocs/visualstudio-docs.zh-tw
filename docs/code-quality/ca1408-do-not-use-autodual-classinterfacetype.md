@@ -1,63 +1,79 @@
 ---
-title: "CA1408：不要使用 AutoDual ClassInterfaceType | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotUseAutoDualClassInterfaceType"
-  - "CA1408"
-helpviewer_keywords: 
-  - "CA1408"
-  - "DoNotUseAutoDualClassInterfaceType"
+title: 'CA1408: Do not use AutoDual ClassInterfaceType | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotUseAutoDualClassInterfaceType
+- CA1408
+helpviewer_keywords:
+- CA1408
+- DoNotUseAutoDualClassInterfaceType
 ms.assetid: 60ca5e02-3c51-42dd-942b-4f950eecfa0f
 caps.latest.revision: 16
-caps.handback.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1408：不要使用 AutoDual ClassInterfaceType
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 2cceb66b5687cd06d2455396bc875bf11ea80208
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Do not use AutoDual ClassInterfaceType
 |||  
 |-|-|  
-|型別名稱|DoNotUseAutoDualClassInterfaceType|  
+|TypeName|DoNotUseAutoDualClassInterfaceType|  
 |CheckId|CA1408|  
-|分類|Microsoft.Interoperability|  
-|中斷變更|中斷|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 元件物件模型 \(COM\) 可見的型別是以設定為 <xref:System.Runtime.InteropServices.ClassInterfaceType> 的 `AutoDual` 值的 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性所標記。  
+## <a name="cause"></a>Cause  
+ A Component Object Model (COM) visible type is marked with the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute set to the `AutoDual` value of <xref:System.Runtime.InteropServices.ClassInterfaceType>.  
   
-## 規則描述  
- 使用雙重介面 \(Dual Interface\) 的型別可讓用戶端繫結至特定的介面配置。  在未來版本中，若型別或任何基底型別 \(Base Type\) 的配置有所變更，將會中斷繫結至此介面的 COM 用戶端。  依照預設，如果未指定 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性，則會使用分派介面。  
+## <a name="rule-description"></a>Rule Description  
+ Types that use a dual interface enable clients to bind to a specific interface layout. Any changes in a future version to the layout of the type or any base types will break COM clients that bind to the interface. By default, if the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute is not specified, a dispatch-only interface is used.  
   
- 除非已標記，否則所有公用的非泛型型別對 COM 皆為可見的，而所有非公用的泛型型別對 COM 則皆不可見的。  
+ Unless marked otherwise, all public nongeneric types are visible to COM; all nonpublic and generic types are invisible to COM.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性的值變更為 <xref:System.Runtime.InteropServices.ClassInterfaceType> 的 `None` 值，並明確地定義此介面。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the value of the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to the `None` value of <xref:System.Runtime.InteropServices.ClassInterfaceType> and explicitly define the interface.  
   
-## 隱藏警告的時機  
- 除非確定型別及其基底型別的配置在未來版本中不會變更，否則請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule unless it is certain that the layout of the type and its base types will not change in a future version.  
   
-## 範例  
- 下列範例會顯示違反此規則的類別，並重新宣告類別以便使用明確的介面。  
+## <a name="example"></a>Example  
+ The following example shows a class that violates the rule and a re-declaration of the class to use an explicit interface.  
   
- [!code-cs[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]  
+ [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)] [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]  
   
-## 相關規則  
- [CA1403：自動配置類型不應該是 COM 可見](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1403: Auto layout types should not be COM visible](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)  
   
- [CA1412：將 ComSource 介面標記為 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
+ [CA1412: Mark ComSource Interfaces as IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
   
-## 請參閱  
- [Introducing the Class Interface](http://msdn.microsoft.com/zh-tw/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [限定互通的 .NET 類型](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [與 Unmanaged 程式碼互通](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>See Also  
+ [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
+ [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)

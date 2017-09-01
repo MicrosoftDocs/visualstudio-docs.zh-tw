@@ -1,37 +1,42 @@
 ---
-title: "如何：以程式設計方式在特定資料夾中搜尋"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Outlook 資料夾 [Visual Studio 中的 Office 程式開發], 搜尋"
+title: 'How to: Programmatically Search Within a Specific Folder | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook folders [Office development in Visual Studio], searching
 ms.assetid: 8f2cdc8b-f757-412c-aa2b-ebd5bc52f697
 caps.latest.revision: 30
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 29
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 92a7df7611d40f1fe9c332cc5795a23fc0f2efb5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式在特定資料夾中搜尋
-  這個程式碼範例會使用 `Find` 和 `FindNext` 方法，在 \[**收件匣**\] 中搜尋電子郵件訊息的主旨欄位文字。  這個方法會使用字串篩選條件來檢查字母 T 做為 `Subject` 文字的開頭字母。  
+# <a name="how-to-programmatically-search-within-a-specific-folder"></a>How to: Programmatically Search Within a Specific Folder
+  This code example uses the `Find` and `FindNext` methods to search for text in the subject field of e-mail messages that are in the **Inbox**. This method uses a string filter to check for the letter T as the starting letter of the `Subject` text.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## 範例  
- [!code-csharp[Trin_OL_SearchFolder#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_SearchFolder/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_OL_SearchFolder#1](../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs#1)]  
   
-## 請參閱  
- [使用資料夾](../vsto/working-with-folders.md)   
- [Outlook 物件模型概觀](../vsto/outlook-object-model-overview.md)   
- [如何：以程式設計方式依名稱擷取資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Folders](../vsto/working-with-folders.md)   
+ [Outlook Object Model Overview](../vsto/outlook-object-model-overview.md)   
+ [How to: Programmatically Retrieve a Folder by Name](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)  
   
   

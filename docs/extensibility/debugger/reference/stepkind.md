@@ -1,72 +1,89 @@
 ---
-title: "STEPKIND | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "STEPKIND"
-helpviewer_keywords: 
-  - "STEPKIND 列舉型別"
+title: STEPKIND | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- STEPKIND
+helpviewer_keywords:
+- STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# STEPKIND
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f17bfba794d5b001b20c421210214a9f3ec0ef74
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定逐步執行的步驟類型。  
+---
+# <a name="stepkind"></a>STEPKIND
+Specifies the step kind for stepping.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
+```cpp  
+enum enum_STEPKIND {   
+   STEP_INTO      = 0,  
+   STEP_OVER      = 1,  
+   STEP_OUT       = 2,  
+   STEP_BACKWARDS = 3  
 };  
 typedef DWORD STEPKIND;  
 ```  
   
-```c#  
-public enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
+```csharp  
+public enum enum_STEPKIND {   
+   STEP_INTO      = 0,  
+   STEP_OVER      = 1,  
+   STEP_OUT       = 2,  
+   STEP_BACKWARDS = 3  
 };  
 ```  
   
-## Members  
- STEP\_INTO  
- 逐步執行函式。  
+## <a name="members"></a>Members  
+ STEP_INTO  
+ Steps into a function.  
   
- STEP\_OVER  
- 不是進入函式。  
+ STEP_OVER  
+ Steps over a function.  
   
- STEP\_OUT  
- 函式的步驟。  
+ STEP_OUT  
+ Steps out of a function.  
   
- STEP\_BACKWARDS  
- \[逐步執行回溯函式。  
+ STEP_BACKWARDS  
+ Steps backward into a function.  
   
-## 備註  
- 當做引數傳遞[逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) method.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

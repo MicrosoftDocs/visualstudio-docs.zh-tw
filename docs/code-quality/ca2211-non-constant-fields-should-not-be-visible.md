@@ -1,50 +1,66 @@
 ---
-title: "CA2211：非常數欄位不應該為可見的 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
-helpviewer_keywords: 
-  - "CA2211"
-  - "NonConstantFieldsShouldNotBeVisible"
+title: 'CA2211: Non-constant fields should not be visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2211
+- NonConstantFieldsShouldNotBeVisible
+helpviewer_keywords:
+- NonConstantFieldsShouldNotBeVisible
+- CA2211
 ms.assetid: e1e42c40-0acd-4312-af29-70133739a304
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 13
----
-# CA2211：非常數欄位不應該為可見的
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 57ba4fb986fe2cf5c81ce83e6e6b02b57aa64dd6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Non-constant fields should not be visible
 |||  
 |-|-|  
-|型別名稱|NonConstantFieldsShouldNotBeVisible|  
+|TypeName|NonConstantFieldsShouldNotBeVisible|  
 |CheckId|CA2211|  
-|分類|Microsoft.Usage|  
-|中斷變更|中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的靜態欄位既非常數，亦非唯讀。  
+## <a name="cause"></a>Cause  
+ A public or protected static field is not constant nor is it read-only.  
   
-## 規則描述  
- 既非常數，亦非唯讀的靜態欄位不是安全執行緒。  必須小心控制對這類欄位的存取，而且需要進階的程式設計技巧同步 \(Synchronize\) 對類別物件的存取。  因為這些技巧不易學會和精通，而測試這類物件也有困難度，所以最好能用靜態欄位儲存不會變更的資料。  此規則可套用到程式庫，但應用程式不應公開 \(Expose\) 任何欄位。  
+## <a name="rule-description"></a>Rule Description  
+ Static fields that are neither constants nor read-only are not thread-safe. Access to such a field must be carefully controlled and requires advanced programming techniques for synchronizing access to the class object. Because these are difficult skills to learn and master, and testing such an object poses its own challenges, static fields are best used to store data that does not change. This rule applies to libraries; applications should not expose any fields.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將靜態欄位設為常數或唯讀。  如果無法這麼做，請將型別重新設計為使用替代機制，例如管理基礎欄位之安全執行緒存取的安全執行緒屬性。  請注意，如鎖定爭用和死結 \(Deadlock\) 這類的問題可能會影響程式庫的效能和行為。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, make the static field constant or read-only. If this is not possible, redesign the type to use an alternative mechanism such as a thread-safe property that manages thread-safe access to the underlying field. Realize that issues such as lock contention and deadlocks might affect the performance and behavior of the library.  
   
-## 隱藏警告的時機  
- 如果您正在開發應用程式，因此對包含靜態欄位之型別的存取具有完全控制，則可以放心地隱藏此規則的警告。  使用非常數的靜態欄位會使程式開發人員難以正確使用程式庫，因此程式庫設計工具不應該隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if you are developing an application and therefore have full control over access to the type that contains the static field. Library designers should not suppress a warning from this rule; using non-constant static fields can make using the library difficult for developers to use correctly.  
   
-## 範例  
- 下列範例顯示違反此規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates this rule.  
   
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-cs[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+ [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)] [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

@@ -1,63 +1,88 @@
 ---
-title: "CA1810：必須初始化參考類型內部的靜態欄位 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
-helpviewer_keywords: 
-  - "InitializeReferenceTypeStaticFieldsInline"
-  - "CA1810"
+title: 'CA1810: Initialize reference type static fields inline | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
+helpviewer_keywords:
+- InitializeReferenceTypeStaticFieldsInline
+- CA1810
 ms.assetid: e9693118-a914-4efb-9550-ec659d8d97d2
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1810：必須初始化參考類型內部的靜態欄位
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f3660a31f03daaf278453dddd46a1e73cb7b200d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Initialize reference type static fields inline
 |||  
 |-|-|  
-|型別名稱|InitializeReferenceTypeStaticFieldsInline|  
+|TypeName|InitializeReferenceTypeStaticFieldsInline|  
 |CheckId|CA1810|  
-|分類|Microsoft.Performance|  
-|中斷變更|中斷|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 參考型別會宣告明確的靜態建構函式。  
+## <a name="cause"></a>Cause  
+ A reference type declares an explicit static constructor.  
   
-## 規則描述  
- 當型別宣告明確的靜態建構函式時，Just\-In\-Time \(JIT\) 編譯器會將檢查加入至型別的每個靜態方法和執行個體建構函式，確保之前已呼叫該靜態建構函式。  當存取任何靜態成員或建立型別的執行個體時，就會觸發靜態初始設定。  但是，如果您宣告屬於此型別的變數卻不使用它，並不會觸發靜態的初始設定，但如果初始設定將會變更全域狀態，這就很嚴重。  
+## <a name="rule-description"></a>Rule Description  
+ When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each static method and instance constructor of the type to make sure that the static constructor was previously called. Static initialization is triggered when any static member is accessed or when an instance of the type is created. However, static initialization is not triggered if you declare a variable of the type but do not use it, which can be important if the initialization changes global state.  
   
- 如果已內嵌初始化所有靜態資料，但未宣告明確的靜態建構函式，Microsoft Intermediate Language \(MSIL\) 編譯器就會將 `beforefieldinit` 旗標和隱含的靜態建構函式 \(它會初始化靜態資料\) 加入至 MSIL 型別定義。  當 JIT 編譯器遇到 `beforefieldinit` 旗標時，通常不會加入靜態建構函式檢查。  靜態初始設定保證會在存取任何靜態欄位之前執行，但不保證會在叫用 \(Invoke\) 靜態方法或執行個體建構函式之前執行。  請注意，靜態初始設定可以在宣告該型別的變數之後隨時進行。  
+ When all static data is initialized inline and an explicit static constructor is not declared, Microsoft intermediate language (MSIL) compilers add the `beforefieldinit` flag and an implicit static constructor, which initializes the static data, to the MSIL type definition. When the JIT compiler encounters the `beforefieldinit` flag, most of the time the static constructor checks are not added. Static initialization is guaranteed to occur at some time before any static fields are accessed but not before a static method or instance constructor is invoked. Note that static initialization can occur at any time after a variable of the type is declared.  
   
- 靜態建構函式檢查會降低效能。  靜態建構函式通常只用於初始化靜態欄位，在這種情況下，只需確定在初次存取靜態欄位之前會執行靜態初始設定即可。  `beforefieldinit` 行為適用於這些型別與大多數其他型別。  只有當靜態初始設定會影響全域狀態，而且下列其中一項條件成立時才不適用：  
+ Static constructor checks can decrease performance. Often a static constructor is used only to initialize static fields, in which case you must only make sure that static initialization occurs before the first access of a static field. The `beforefieldinit` behavior is appropriate for these and most other types. It is only inappropriate when static initialization affects global state and one of the following is true:  
   
--   對全域狀態的影響會高度耗費資源，而且如果不使用型別，就不需要影響全域狀態。  
+-   The effect on global state is expensive and is not required if the type is not used.  
   
--   即使不存取型別的任何靜態欄位，也可以存取全域狀態所受到的影響。  
+-   The global state effects can be accessed without accessing any static fields of the type.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請在宣告所有靜態資料時將靜態資料初始化，並移除靜態建構函式。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, initialize all static data when it is declared and remove the static constructor.  
   
-## 隱藏警告的時機  
- 如果效能不是主要考量、透過靜態初始設定變更全域狀態需要高度耗費資源，或者必須保證會在呼叫型別的靜態方法或建立型別的執行個體之前執行全域狀態變更，則您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not a concern; or if global state changes that are caused by static initialization are expensive or must be guaranteed to occur before a static method of the type is called or an instance of the type is created.  
   
-## 範例  
- 在下列範例中，程式碼會顯示違反規則的 `StaticConstructor` 型別，以及會以內嵌初始設定取代靜態建構函式之方式以滿足規則的 `NoStaticConstructor` 型別。  
+## <a name="example"></a>Example  
+ The following example shows a type, `StaticConstructor`, that violates the rule and a type, `NoStaticConstructor`, that replaces the static constructor with inline initialization to satisfy the rule.  
   
- [!CODE [FxCop.Performance.RefTypeStaticCtor#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.RefTypeStaticCtor#1)]  
+ [!code-csharp[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/CSharp/ca1810-initialize-reference-type-static-fields-inline_1.cs)] [!code-vb[FxCop.Performance.RefTypeStaticCtor#1](../code-quality/codesnippet/VisualBasic/ca1810-initialize-reference-type-static-fields-inline_1.vb)]  
   
- 請注意 `NoStaticConstructor` 類別 \(Class\) 之 MSIL 定義中所加入的 `beforefieldinit` 旗標。  
+ Note the addition of the `beforefieldinit` flag on the MSIL definition for the `NoStaticConstructor` class.  
   
-  **類別公開汽車 ansi StaticConstructor 擴充mscorlib 的類別 StaticConstructor .class 公用汽車的 ansi System.Object {} \/\/結尾 beforefieldinit NoStaticConstructor 擴充mscorlib 類別的 NoStaticConstructor System.Object {} \/\/結尾**   
-## 相關規則  
- [CA2207：必須初始化實值類型的靜態欄位內嵌](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
+ **.class public auto ansi StaticConstructor**  
+ **extends [mscorlib]System.Object**  
+**{**  
+**} // end of class StaticConstructor**  
+**.class public auto ansi beforefieldinit NoStaticConstructor**  
+ **extends [mscorlib]System.Object**  
+**{**  
+**} // end of class NoStaticConstructor**   
+## <a name="related-rules"></a>Related Rules  
+ [CA2207: Initialize value type static fields inline](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)

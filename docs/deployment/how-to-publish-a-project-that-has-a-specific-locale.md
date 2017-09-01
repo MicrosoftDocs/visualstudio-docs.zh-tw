@@ -1,51 +1,68 @@
 ---
-title: "如何：發行具有指定地區的專案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "部署應用程式 [ClickOnce], 當地語系化的專案"
-  - "地區設定, 部署"
-  - "地區設定, 發行"
-  - "巨集, 部署"
-  - "巨集, 發行"
-  - "發行當地語系化的專案"
-  - "發行, 當地語系化的專案"
+title: 'How to: Publish a Project That Has a Specific Locale | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- publishing, localized projects
+- locales, publishing for
+- deploying applications [ClickOnce], localized projects
+- locales, deploying for
+- publishing localized projects
+- macros, deploying with
+- macros, publishing with
 ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
----
-# 如何：發行具有指定地區的專案
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
+ms.openlocfilehash: cd6d798da4699116a75a486e2aaeac5ff17e577b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/24/2017
 
-一個應用程式包含不同地區設定的元件是很常見的情況。  在此情況下，您會建立一個內含數個專案的方案，然後針對每個地區設定發行不同的專案。  本程序示範如何使用巨集，發行方案中地區設定為 'en' 的第一個專案。  如果您要使用 'en' 以外的地區設定來嘗試執行這個程序，請確定將巨集中的 `localeString` 設定為符合您所使用的地區設定 \(例如 'de' 或 'de\-DE'\)。  
+---
+# <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>How to: Publish a Project That Has a Specific Locale
+It is not uncommon for an application to contain components that have different locales. In this scenario, you would create a solution that has several projects, and then publish separate projects for each locale. This procedure shows how to use a macro to publish the first project in a solution by using the 'en' locale. If you want to try this procedure with a locale other than 'en', make sure to set `localeString` in the macro to match the locale that you are using (for example, 'de' or 'de-DE').  
   
 > [!NOTE]
->  當您使用這個巨集時，發行位置應為有效的 URL 或通用命名慣例 \(UNC\) 共用。  此外，電腦上也必須安裝 Internet Information Services \(IIS\)。  若要安裝 IIS，請在 \[開始\] 功能表上，按一下 \[控制台\]。  按兩下 \[新增或移除程式\]。  在 \[新增或移除程式\] 中，按一下 \[新增\/移除 Windows 元件\]。  在 \[Windows 元件精靈\] 中，選取 \[元件\] 清單中的 \[Internet Information Services \(IIS\)\] 核取方塊。  然後按一下 \[完成\] 關閉精靈。  
+>  When you use this macro, the Publish Location should be a valid URL or Universal Naming Convention (UNC) share. Also, Internet Information Services (IIS) has to be installed on your computer. To install IIS, on the **Start** menu, click **Control Panel**. Double-click **Add or Remove Programs**. In **Add or Remove Programs**, click **Add/Remove Windows Components**. In the **Windows Components Wizard**, select the **Internet Information Services (IIS)** check box in the **Components** list. Then click **Finish** to close the wizard.  
   
-### 建立發行巨集  
+### <a name="to-create-the-publishing-macro"></a>To create the publishing macro  
   
-1.  若要開啟 \[巨集總管\]，請指向 \[工具\] 功能表上的 \[巨集\]，然後按一下 \[巨集總管\]。  
+1.  To open the Macro Explorer, on the **Tools** menu, point to **Macros**, and then click **Macro Explorer**.  
   
-2.  建立新的巨集模組。  在 \[巨集總管\] 中，選取 \[MyMacros\]。  指向 \[工具\] 功能表上的 \[巨集\]，然後按一下 \[新增巨集模組\]。  將模組命名為 PublishSpecificCulture。  
+2.  Create a new macro module. In the Macro Explorer, select **MyMacros**. On the **Tools** menu, point to **Macros**, and then click **New Macro Module**. Name the module **PublishSpecificCulture**.  
   
-3.  在 \[巨集總管\] 中，展開 \[MyMacros\] 節點，然後按兩下並開啟 \[PublishAllProjects\] 模組 \(或從 \[工具\] 功能表指向 \[巨集\]，然後按一下 \[巨集 IDE\]\)。  
+3.  In the Macro Explorer, expand the **MyMacros** node, and then open the **PublishAllProjects** module by double-clicking it (or, from the **Tools** menu, point to **Macros**, and then click **Macros IDE**).  
   
-4.  在 \[巨集 IDE\] 中，將下列程式碼加入至模組中的 `Import` 陳述式後面：  
+4.  In the Macros IDE, add the following code to the module, after the `Import` statements:  
   
-    ```vb#  
+    ```vb  
     Module PublishSpecificCulture  
         Sub PublishProjectFirstProjectWithEnLocale()  
             ' Note: You should publish projects by using the IDE at least once  
@@ -137,34 +154,34 @@ caps.handback.revision: 11
     End Module  
     ```  
   
-5.  關閉 \[巨集 IDE\]。  焦點將回到 Visual Studio。  
+5.  Close the Macros IDE. The focus will return to Visual Studio.  
   
-### 發行特定地區設定的專案  
+### <a name="to-publish-a-project-for-a-specific-locale"></a>To publish a project for a specific locale  
   
-1.  若要建立 Visual Basic Windows 應用程式專案，請指向 \[檔案\] 功能表上的 \[新增\]，然後按一下 \[專案\]。  
+1.  To create a Visual Basic Windows Application project, on the **File** menu, point to **New**, and then click **Project**.  
   
-2.  在 \[新增專案\] 對話方塊中，從 \[Visual Basic\] 節點選取 \[Windows 應用程式\]。  將專案命名為 PublishLocales。  
+2.  In the **New Project** dialog box, select **Windows Application** from the **Visual Basic** node. Name the project **PublishLocales**.  
   
-3.  按一下 Form1。  在 \[設計\] 下的 \[屬性\] 視窗中，將 **Language** 屬性從 \[\(預設\)\] 變更為 \[英文\]。  將表單的 **Text** 屬性變更為 MyForm。  
+3.  Click Form1. In the **Properties** window, under **Design**, change the **Language** property from **(Default)** to **English**. Change the **Text** property of the form to **MyForm**.  
   
-     請注意，當地語系化資源 DLL 只有在需要時才會建立。  例如，在您指定新的地區設定之後，若變更表單的文字或其中一個控制項，就會建立。  
+     Note that the localized resource DLLs are not created until they are needed. For example, they are created when you change the text of the form or one of its controls after you have specified the new locale.  
   
-4.  使用 Visual Studio IDE 發行 PublishLocales。  
+4.  Publish PublishLocales by using the Visual Studio IDE.  
   
-     在 \[方案總管\] 中，選取 PublishLocales。  選取 \[**專案**\] 功能表上的 \[**屬性**\]。  在 \[專案設計工具\] 的 \[發行\] 頁面上，指定發行位置為 http:\/\/localhost\/PublishLocales，然後按一下 \[立即發行\]。  
+     In **Solution Explorer**, select PublishLocales. On the **Project** menu, select **Properties**. In the Project Designer, on the **Publish** page, specify a publishing location of **http://localhost/PublishLocales**, and then click **Publish Now**.  
   
-     當發行網頁出現時，將其關閉。  \(在這個步驟中，您只需要發行專案，而不需要安裝專案\)。  
+     When the publish Web page appears, close it. (For this step, you only have to publish the project; you do not have to install it.)  
   
-5.  在 Visual Studio 的 \[命令提示字元\] 視窗中叫用此巨集，再次發行 PublishLocales。  若要檢視 \[命令提示字元\] 視窗，請指向 \[檢視\] 功能表上的 \[其他視窗\]，然後按一下 \[命令視窗\] 或按 CTRL\+ALT\+A。  在 \[命令提示字元\] 視窗中輸入 `macros`，自動完成便會提供可用的巨集清單。  選取下列巨集，然後按 ENTER 鍵：  
+5.  Publish PublishLocales again by invoking the macro in the Visual Studio Command Prompt window. To view the Command Prompt window, on the **View** menu, point to **Other Windows** and then click **Command Window**, or press CTRL+ALT+A. In the Command Prompt window, type `macros`; auto-complete will provide a list of available macros. Select the following macro and press ENTER:  
   
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`  
   
-6.  當發行程序成功時，將會產生一個訊息，指出：「PublishLocales\\PublishLocales.vbproj 發行成功。  發行語言為 'en'」。按一下訊息方塊中的 \[確定\]。  當發行網頁出現時，按一下 \[安裝\]。  
+6.  When the publish process succeeds, it will generate a message that says "Publish succeeded for PublishLocales\PublishLocales.vbproj. Publish language was 'en'." Click **OK** in the message box. When the publish Web page appears, click **Install**.  
   
-7.  查看 C:\\Inetpub\\wwwroot\\PublishLocales\\en。  除了當地語系化資源 DLL 以外，您還應該查看安裝的檔案，例如資訊清單、setup.exe 和發行網頁檔案。  \(根據預設，ClickOnce 會在 EXE 和 DLL 中附加 .deploy 副檔名，您可以在部署後移除此副檔名\)。  
+7.  Look in C:\Inetpub\wwwroot\PublishLocales\en. You should see the installed files such as the manifests, setup.exe, and the publish Web page file, in addition to the localized resource DLL. (By default ClickOnce appends a .deploy extension on EXEs and DLLs; you can remove this extension after deployment.)  
   
-## 請參閱  
- [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [Macros Development Environment](http://msdn.microsoft.com/zh-tw/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
- [Macro Explorer Window](http://msdn.microsoft.com/zh-tw/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
- [How to: Edit and Programmatically Create Macros](http://msdn.microsoft.com/zh-tw/6716f820-1feb-48ad-a718-27eb6b473c5a)
+## <a name="see-also"></a>See Also  
+ [Publishing ClickOnce Applications](../deployment/publishing-clickonce-applications.md)   
+ [Macros Development Environment](http://msdn.microsoft.com/en-us/d23105d8-34fe-4ad9-8278-fae2c660aeac)   
+ [Macro Explorer Window](http://msdn.microsoft.com/en-us/762169e6-f83f-44b4-bffa-d0f107cae9a3)   
+ [How to: Edit and Programmatically Create Macros](http://msdn.microsoft.com/en-us/6716f820-1feb-48ad-a718-27eb6b473c5a)

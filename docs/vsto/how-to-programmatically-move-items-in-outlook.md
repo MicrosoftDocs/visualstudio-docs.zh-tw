@@ -1,45 +1,50 @@
 ---
-title: "如何：以程式設計方式在 Outlook 中移動項目"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Outlook 資料夾 [Visual Studio 中的 Office 程式開發], 移動項目"
+title: 'How to: Programmatically Move Items in Outlook | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Outlook folders [Office development in Visual Studio], moving items
 ms.assetid: ac524f2e-a3e8-496d-bd5a-714799be44ab
 caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d7cf56d5e351d045f213a254474e5c24bcd9e206
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式在 Outlook 中移動項目
-  這個範例會從 \[**收件匣**\] 將未讀取的電子郵件訊息移至名為 **Test** 的資料夾中。  此範例只會移動 `Subject` 欄位中含有 **Test** 文字的訊息。  
+# <a name="how-to-programmatically-move-items-in-outlook"></a>How to: Programmatically Move Items in Outlook
+  This example moves unread e-mail messages from the **Inbox** to a folder named **Test**. The example only moves messages that have the word **Test** in the `Subject` field.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## 範例  
- [!code-csharp[Trin_OL_MoveItems#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_OL_MoveItems/CS/thisaddin.cs#1)]  
+## <a name="example"></a>Example  
+ [!code-csharp[Trin_OL_MoveItems#1](../vsto/codesnippet/CSharp/Trin_OL_MoveItems/thisaddin.cs#1)]  
   
-## 編譯程式碼  
- 這個範例需要：  
+## <a name="compiling-the-code"></a>Compiling the Code  
+ This example requires:  
   
--   名為 **Test** 的 Outlook 郵件資料夾。  
+-   An Outlook mail folder named **Test**.  
   
--   送達時 `Subject` 欄位中含有 **Test** 文字的電子郵件訊息。  
+-   An e-mail message that arrives with the word **Test** in the `Subject` field.  
   
-## 請參閱  
- [使用資料夾](../vsto/working-with-folders.md)   
- [如何：以程式設計方式依名稱擷取資料夾](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
- [如何：以程式設計方式在特定資料夾中搜尋](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
- [如何：以程式設計方式在收到電子郵件訊息時執行動作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Folders](../vsto/working-with-folders.md)   
+ [How to: Programmatically Retrieve a Folder by Name](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)   
+ [How to: Programmatically Search Within a Specific Folder](../vsto/how-to-programmatically-search-within-a-specific-folder.md)   
+ [How to: Programmatically Perform Actions When an E-Mail Message Is Received](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)  
   
   

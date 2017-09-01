@@ -1,48 +1,65 @@
 ---
-title: "IDebugEngineProgram2::Stop | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::Stop"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::Stop"
+title: IDebugEngineProgram2::Stop | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEngineProgram2::Stop
+helpviewer_keywords:
+- IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugEngineProgram2::Stop
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e8a1d5fd980d50326c11101acc54146e4de03258
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-停止執行此程式中的所有執行緒。  
+---
+# <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
+Stops all threads running in this program.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT Stop(   
-   void   
+```cpp  
+HRESULT Stop(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Stop();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 當這個程式正在偵錯在 multi\-program 的環境中，會呼叫這個方法。  收到來自其他程式停止事件時，會呼叫這個方法，在這個程式。  這個方法的實作應該是非同步的。 也就是不是所有的執行緒應該要以這個方法會傳回前停止。  這個方法的實作可能會像電話一樣簡單[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)在這個程式的方法。  
+## <a name="remarks"></a>Remarks  
+ This method is called when this program is being debugged in a multi-program environment. When a stopping event from some other program is received, this method is called on this program. The implementation of this method should be asynchronous; that is, not all threads should be required to be stopped before this method returns. The implementation of this method may be as simple as calling the [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md) method on this program.  
   
- 沒有偵錯事件傳送至這個方法的回應。  
+ No debug event is sent in response to this method.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

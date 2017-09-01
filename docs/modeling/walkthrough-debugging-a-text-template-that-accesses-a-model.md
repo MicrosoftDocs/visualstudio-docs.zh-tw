@@ -1,5 +1,5 @@
 ---
-title: "逐步解說︰ 偵錯文字範本存取模型 |Microsoft 文件"
+title: 'Walkthrough: Debugging a Text Template that Accesses a Model | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -11,55 +11,56 @@ caps.latest.revision: 6
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 7bbe2b592dc315bc0885e1f1ca4c890e4e66255d
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2943b49571077ac1cab87db5ecc4d0f82390273e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>逐步解說：偵錯存取模型的文字範本
-當您修改或加入定義域專屬語言方案中的文字範本時，您可能會發生錯誤時，引擎會轉換原始碼，或在編譯時產生的程式碼的範本。 下列逐步解說會示範一些您可以進行偵錯文字範本的操作。  
+# <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Walkthrough: Debugging a Text Template that Accesses a Model
+When you modify or add text templates in a domain-specific language solution, you may get errors when the engine transforms the template to source code or when it compiles the generated code. The following walkthrough demonstrates some of the things you can do to debug a text template.  
   
 > [!NOTE]
->  如需文字範本一般情況下，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。 如需有關偵錯文字範本的詳細資訊，請參閱[逐步解說︰ 偵錯文字範本](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f)。  
+>  For more information about text templates in general, see [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md). For more information about debugging text templates, see [Walkthrough: Debugging a Text Template](http://msdn.microsoft.com/Library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
-## <a name="creating-a-domain-specific-language-solution"></a>建立定義域專屬語言方案  
- 在此程序，您可以建立定義域專屬語言方案具有下列特性︰  
+## <a name="creating-a-domain-specific-language-solution"></a>Creating a Domain-Specific Language Solution  
+ In this procedure, you create a domain-specific language solution that has the following characteristics:  
   
--   名稱︰ DebuggingTestLanguage  
+-   Name: DebuggingTestLanguage  
   
--   方案範本︰ 最小語言  
+-   Solution template: Minimal Language  
   
--   檔案副檔名︰.ddd  
+-   File extension: .ddd  
   
--   公司名稱︰ Fabrikam  
+-   Company name: Fabrikam  
   
- 如需建立定義域專屬語言方案的詳細資訊，請參閱[How to︰ 建立定義域專屬的語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+ For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).  
   
-## <a name="creating-a-text-template"></a>建立文字範本  
- 將文字範本加入至您的方案。  
+## <a name="creating-a-text-template"></a>Creating a text template  
+ Add a text template to your solution.  
   
-#### <a name="to-create-a-text-template"></a>若要建立文字範本  
+#### <a name="to-create-a-text-template"></a>To create a text template  
   
-1.  建置方案並開始偵錯工具中執行。 (在**建置** 功能表上，按一下 **重建方案**，然後在**偵錯** 功能表上，按一下**開始偵錯**。)Visual Studio 的新執行個體開啟偵錯專案。  
+1.  Build the solution and start running it in the debugger. (On the **Build** menu, click **Rebuild Solution**, and then on the **Debug** menu, click **Start Debugging**.) A new instance of Visual Studio opens the Debugging project.  
   
-2.  新增名為文字檔`DebugTest.tt`偵錯專案。  
+2.  Add a text file named `DebugTest.tt` to the Debugging project.  
   
-3.  請確定**自訂工具**DebugTest.tt 屬性設定為`TextTemplatingFileGenerator`。  
+3.  Make sure that the **Custom Tool** property of DebugTest.tt is set to `TextTemplatingFileGenerator`.  
   
-## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>偵錯從文字範本存取模型的指示詞  
- 您可以從文字範本中的運算式與陳述式，存取模型之前，您必須先呼叫產生指示詞處理器。 呼叫產生指示詞處理器可讓類別模型中的文字範本程式碼能夠做為屬性。 如需詳細資訊，請參閱[文字範本存取模型](../modeling/accessing-models-from-text-templates.md)。  
+## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Debugging directives that access a model from a text template  
+ Before you can access a model from the statements and expressions in a text template, you must first call a generated directive processor. Calling the generated directive processor makes the classes in your model available to the text template code as properties. For more information, see [Accessing Models from Text Templates](../modeling/accessing-models-from-text-templates.md).  
   
- 下列程序，您將偵錯的指示詞的名稱不正確和不正確的屬性名稱。  
+ In the following procedures, you will debug an incorrect directive name and an incorrect property name.  
   
-#### <a name="to-debug-an-incorrect-directive-name"></a>若要偵錯的指示詞的名稱不正確  
+#### <a name="to-debug-an-incorrect-directive-name"></a>To debug an incorrect directive name  
   
-1.  下列程式碼來取代 DebugTest.tt 中的程式碼︰  
+1.  Replace the code in DebugTest.tt with the following code:  
   
     > [!NOTE]
-    >  包含錯誤的程式碼。 您引用的錯誤以進行偵錯。  
+    >  The code contains an error. You are introducing the error in order to debug it.  
   
-    ```c#  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
@@ -75,7 +76,7 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ modelRoot processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
@@ -90,40 +91,40 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-2.  在**方案總管 中**DebugTest.tt，以滑鼠右鍵按一下，然後按**執行自訂工具**。  
+2.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
   
-     **錯誤清單** 視窗會顯示此錯誤︰  
+     The **Error List** window displays this error:  
   
-     **名為 'DebuggingTestLanguageDirectiveProcessor' 處理器不支援名為 'modelRoot' 指示詞。將不會執行轉換。**  
+     **The processor named 'DebuggingTestLanguageDirectiveProcessor' does not support the directive named 'modelRoot'. The transformation will not be run.**  
   
-     在此情況下，指示詞的呼叫中包含的指示詞的名稱不正確。 您已指定`modelRoot`因為指示詞的名稱，但正確指示詞的名稱是`DebuggingTestLanguage`。  
+     In this case, the directive call contains an incorrect directive name. You have specified `modelRoot` as the directive name, but the correct directive name is `DebuggingTestLanguage`.  
   
-3.  按兩下中的錯誤**錯誤清單**跳至程式碼的視窗。  
+3.  Double-click the error in the **Error List** window to jump to the code.  
   
-4.  若要修正此程式碼，此指示詞名稱變更為`DebuggingTestLanguage`。  
+4.  To correct the code, change the directive name to `DebuggingTestLanguage`.  
   
-     變更會反白顯示。  
+     The change is highlighted.  
   
-    ```c#  
+    ```csharp  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>  
     ```  
   
-5.  在**方案總管 中**DebugTest.tt，以滑鼠右鍵按一下，然後按**執行自訂工具**。  
+5.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
   
-     現在系統轉換文字範本，並產生對應的輸出檔。 將不會看到的任何錯誤都**錯誤清單**視窗。  
+     Now the system transforms the text template and generates the corresponding output file. You will not see any errors in the **Error List** window.  
   
-#### <a name="to-debug-an-incorrect-property-name"></a>若要偵錯不正確的屬性名稱  
+#### <a name="to-debug-an-incorrect-property-name"></a>To debug an incorrect property name  
   
-1.  下列程式碼來取代 DebugTest.tt 中的程式碼︰  
+1.  Replace the code in DebugTest.tt with the following code:  
   
     > [!NOTE]
-    >  包含錯誤的程式碼。 您引用的錯誤以進行偵錯。  
+    >  The code contains an error. You are introducing the error in order to debug it.  
   
-    ```c#  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
@@ -139,7 +140,7 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
@@ -154,31 +155,31 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-2.  在**方案總管 中**DebugTest.tt，以滑鼠右鍵按一下，然後按**執行自訂工具**。  
+2.  In the **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
   
-     **錯誤清單** 視窗隨即出現並顯示這些錯誤之一︰  
+     The **Error List** window appears and displays one of these errors:  
   
      (C#)  
   
-     **正在編譯轉換︰ Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation' 未包含 'ExampleModel' 的定義**  
+     **Compiling transformation: Microsoft.VisualStudio.TextTemplating\<GUID>. GeneratedTextTransformation' does not contain a definition for 'ExampleModel'**  
   
      (Visual Basic)  
   
-     **正在編譯轉換: 'ExampleModel' 不是成員的 ' Microsoft.VisualStudio.TextTemplating\<GUID >。GeneratedTextTransformation'。**  
+     **Compiling transformation: 'ExampleModel' is not a member of 'Microsoft.VisualStudio.TextTemplating\<GUID>.GeneratedTextTransformation'.**  
   
-     在此情況下，文字範本程式碼包含不正確的屬性名稱。 您已指定`ExampleModel`做為屬性名稱，但正確的屬性名稱是`LibraryModel`。 您可以找到正確的屬性名稱中提供參數，如下列程式碼所示︰  
+     In this case, the text template code contains an incorrect property name. You have specified `ExampleModel` as the property name, but the correct property name is `LibraryModel`. You can find the correct property name in the provides parameter, as shown in the following code:  
   
     ```  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
     ```  
   
-3.  按兩下 [錯誤清單] 視窗，跳至程式碼中的錯誤。  
+3.  Double-click the error in the Error List window to jump to the code.  
   
-4.  若要修正此程式碼，將屬性名稱變更為`LibraryModel`文字範本程式碼中。  
+4.  To correct the code, change the property name to `LibraryModel` in the text template code.  
   
-     所做的變更會反白顯示。  
+     The changes are highlighted.  
   
-    ```c#  
+    ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
@@ -194,7 +195,7 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-    ```vb#  
+    ```vb  
     <#@ template language="VB" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
     <#@ output extension=".txt" #>  
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>  
@@ -209,6 +210,6 @@ ms.lasthandoff: 02/22/2017
     #>  
     ```  
   
-5.  在**方案總管 中**DebugTest.tt，以滑鼠右鍵按一下，然後按**執行自訂工具**。  
+5.  In **Solution Explorer**, right-click DebugTest.tt, and then click **Run Custom Tool**.  
   
-     現在系統轉換文字範本，並產生對應的輸出檔。 將不會看到的任何錯誤都**錯誤清單**視窗。
+     Now the system transforms the text template and generates the corresponding output file. You will not see any errors in the **Error List** window.

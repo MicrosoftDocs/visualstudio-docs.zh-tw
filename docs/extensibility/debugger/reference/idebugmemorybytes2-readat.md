@@ -1,79 +1,96 @@
 ---
-title: "IDebugMemoryBytes2::ReadAt | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryBytes2::ReadAt"
-helpviewer_keywords: 
-  - "IDebugMemoryBytes2::ReadAt 方法"
-  - "ReadAt 方法"
+title: IDebugMemoryBytes2::ReadAt | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMemoryBytes2::ReadAt
+helpviewer_keywords:
+- IDebugMemoryBytes2::ReadAt method
+- ReadAt method
 ms.assetid: b413684d-4155-4bd4-ae30-ffa512243b5f
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# IDebugMemoryBytes2::ReadAt
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2c92d1be776d3d8e9db23a3871f0f3775dd84397
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-讀取的位元組序列，開始於指定的位置。  
+---
+# <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
+Reads a sequence of bytes, starting at a given location.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT ReadAt(   
-   IDebugMemoryContext2* pStartContext,  
-   DWORD                 dwCount,  
-   BYTE*                 rgbMemory,  
-   DWORD*                pdwRead,  
-   DWORD*                pdwUnreadable  
+```cpp  
+HRESULT ReadAt(   
+   IDebugMemoryContext2* pStartContext,  
+   DWORD                 dwCount,  
+   BYTE*                 rgbMemory,  
+   DWORD*                pdwRead,  
+   DWORD*                pdwUnreadable  
 );  
 ```  
   
-```c#  
+```csharp  
 int ReadAt(  
-   IDebugMemoryContext2 pStartContext,  
-   uint                 dwCount,  
-   byte[]               rgbMemory,  
-   out uint             pdwRead,  
-   ref uint             pdwUnreadable  
+   IDebugMemoryContext2 pStartContext,  
+   uint                 dwCount,  
+   byte[]               rgbMemory,  
+   out uint             pdwRead,  
+   ref uint             pdwUnreadable  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pStartContext`  
- \[in\][IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，指定要從何處開始讀取的位元組。  
+ [in] The [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object that specifies where to start reading bytes.  
   
  `dwCount`  
- \[in\]要讀取的位元組數目。  也會指定一段`rgbMemory`陣列。  
+ [in] The number of bytes to read. Also specifies the length of the `rgbMemory` array.  
   
  `rgbMemory`  
- 輸入 \[、 輸出\]填入的位元組陣列實際讀取的資料。  
+ [in, out] Array filled in with the bytes actually read.  
   
  `pdwRead`  
- \[\] out傳回實際讀取的連續位元組數目。  
+ [out] Returns the number of contiguous bytes actually read.  
   
  `pdwUnreadable`  
- 輸入 \[、 輸出\]傳回 \[無法讀取的位元組數目。  如果用戶端不願就無法讀取的位元組數目，則可能是 null 值。  
+ [in, out] Returns the number of unreadable bytes. May be a null value if the client is uninterested in the number of unreadable bytes.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## 備註  
- 如果要求 100 個位元組和第一個 50 是否已可讀、 後 20 則無法讀取，而其餘的 30 容易閱讀，這個方法會傳回：  
+## <a name="remarks"></a>Remarks  
+ If 100 bytes are requested and the first 50 are readable, the next 20 are unreadable, and the remaining 30 are readable, this method returns:  
   
- \*`pdwRead` \= 50  
+ *`pdwRead` = 50  
   
- \*`pdwUnreadable` \= 20  
+ *`pdwUnreadable` = 20  
   
- 如此一來，因為`*pdwRead + *pdwUnreadable < dwCount`，呼叫端必須進行讀取的原始要求的 100 剩餘的 30 個位元組的其他呼叫，並[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件傳入的`pStartContext`參數必須前移 70。  
+ In this case, because `*pdwRead + *pdwUnreadable < dwCount`, the caller must make an additional call to read the remaining 30 bytes of the original 100 requested and the [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object passed in the `pStartContext` parameter must be advanced by 70.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)   
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

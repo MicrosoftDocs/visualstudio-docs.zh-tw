@@ -1,143 +1,158 @@
 ---
-title: "從其他 Office 方案呼叫 VSTO 增益集的程式碼"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "VBA [Visual Studio 中的 Office 程式開發]，在應用程式層級增益集中呼叫程式碼"
-  - "應用程式層級增益集 [Visual Studio 中的 Office 程式開發]，從其他方案呼叫程式碼"
-  - "呼叫增益集程式碼"
-  - "增益集 [Visual Studio 中的 Office 程式開發]，從其他方案呼叫程式碼"
-  - "互通性 [Visual Studio 中的 Office 程式開發]"
-  - "從 VBA 呼叫程式碼"
+title: Calling Code in VSTO Add-ins from Other Office Solutions | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- VBA [Office development in Visual Studio], calling code in application-level add-ins
+- application-level add-ins [Office development in Visual Studio], calling code from other solutions
+- calling add-in code
+- add-ins [Office development in Visual Studio], calling code from other solutions
+- interoperability [Office development in Visual Studio]
+- calling code from VBA
 ms.assetid: c1f16b4c-9291-49ed-9694-a83a37109612
 caps.latest.revision: 54
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 53
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 72b7b7cffdb21f74cbd0da9d9c9a9297c0b7e237
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 從其他 Office 方案呼叫 VSTO 增益集的程式碼
-  您可以將 VSTO 增益集中的物件公開給其他方案 \(包括其他 Microsoft Office 方案\)。 如果您想要讓其他方案也能使用 VSTO 增益集提供的服務，這就很有用。 例如，如果您的 Microsoft Office Excel VSTO 增益集會計算 Web 服務的財務資料，則其他方案可以在執行階段呼叫這個 Excel VSTO 增益集來執行這些計算。  
+# <a name="calling-code-in-vsto-add-ins-from-other-office-solutions"></a>Calling Code in VSTO Add-ins from Other Office Solutions
+  You can expose an object in your VSTO Add-in to other solutions, including other Microsoft Office solutions. This is useful if your VSTO Add-in provides a service that you want to enable other solutions to use. For example, if you have an VSTO Add-in for Microsoft Office Excel that performs calculations on financial data from a Web service, other solutions can perform these calculations by calling into the Excel VSTO Add-in at run time.  
   
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]  
   
- 這個程序包含兩個主要步驟：  
+ There are two main steps in this process:  
   
--   在您的 VSTO 增益集中，將物件公開給其他方案。  
+-   In your VSTO Add-in, expose an object to other solutions.  
   
--   在其他方案中，存取您的 VSTO 增益集所公開的物件，並呼叫該物件的成員。  
+-   In another solution, access the object exposed by your VSTO Add-in, and call members of the object.  
   
-## 可以呼叫增益集程式碼的方案類型  
- 您可以將 VSTO 增益集中的物件公開給下列類型的方案：  
+## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>Types of Solutions That Can Call Code in an Add-In  
+ You can expose an object in an VSTO Add-in to the following types of solutions:  
   
--   和 VSTO 增益集載入到相同應用程式處理序之文件內的 Visual Basic for Applications \(VBA\) 程式碼。  
+-   Visual Basic for Applications (VBA) code in a document that is loaded in the same application process as your VSTO Add-in.  
   
--   和 VSTO 增益集載入到相同應用程式處理序的文件層級自訂。  
+-   Document-level customizations that are loaded in the same application process as your VSTO Add-in.  
   
--   使用 Visual Studio 中的 Office 專案範本建立的其他 VSTO 增益集。  
+-   Other VSTO Add-ins created by using the Office project templates in Visual Studio.  
   
--   COM VSTO 增益集 \(即直接實作 <xref:Extensibility.IDTExtensibility2> 介面的 VSTO 增益集\)。  
+-   COM VSTO Add-ins (that is, VSTO Add-ins that implement the <xref:Extensibility.IDTExtensibility2> interface directly).  
   
--   任何在與 VSTO 增益集不同的處理序中執行的方案 \(這類方案也稱為*「跨處理序用戶端」*\(Out\-Of\-Process Client\)\)。 這包括將 Office 應用程式自動化的應用程式 \(例如 Windows Forms 或主控台應用程式\)，以及在不同處理序中載入的 VSTO 增益集。  
+-   Any solution that is running in a different process than your VSTO Add-in (these types of solutions are also named *out-of-process clients*). These include applications that automate an Office application, such as a Windows Forms or console application, and VSTO Add-ins that are loaded in a different process.  
   
-## 將物件公開給其他方案  
- 若要將您 VSTO 增益集中的物件公開給其他方案，請在 VSTO 增益集中執行下列步驟：  
+## <a name="exposing-objects-to-other-solutions"></a>Exposing Objects to Other Solutions  
+ To expose an object in your VSTO Add-in to other solutions, perform the following steps in your VSTO Add-in:  
   
-1.  定義您要公開給其他方案的類別。  
+1.  Define a class that you want to expose to other solutions.  
   
-2.  覆寫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 類別中的 `ThisAddIn` 方法。 傳回您要公開給其他方案之類別的執行個體。  
+2.  Override the <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> method in the `ThisAddIn` class. Return an instance of the class that you want to expose to other solutions.  
   
-### 定義您要公開給其他方案的類別  
- 您要公開的類別至少必須是公用的、其 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性必須設為 **true**，而且必須公開 [IDispatch](http://msdn.microsoft.com/zh-tw/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 介面。  
+### <a name="defining-the-class-you-want-to-expose-to-other-solutions"></a>Defining the Class You Want to Expose to Other Solutions  
+ At a minimum, the class you want to expose must be public, it must have the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute set to **true**, and it must expose the [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface.  
   
- 公開 [IDispatch](http://msdn.microsoft.com/zh-tw/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 介面的建議方法是執行下列步驟：  
+ The recommended way to expose the [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface is to perform the following steps:  
   
-1.  定義介面，這個介面宣告您要公開給其他方案的成員。 您可以在 VSTO 增益集專案中定義這個介面。 不過，如果您要將類別公開給非 VBA 方案，可以在個別的類別庫專案中定義這個介面，讓呼叫您 VSTO 增益集的方案不需參考您的 VSTO 增益集專案，就可以參考這個介面。  
+1.  Define an interface that declares the members that you want to expose to other solutions. You can define this interface in your VSTO Add-in project. However, you might want to define this interface in a separate class library project if you want to expose the class to non-VBA solutions, so that the solutions that call your VSTO Add-in can reference the interface without referencing your VSTO Add-in project.  
   
-2.  將 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 屬性套用至這個介面，並將這個屬性設為 **true**。  
+2.  Apply the <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to this interface, and set this attribute to **true**.  
   
-3.  修改您的類別以實作這個介面。  
+3.  Modify your class to implement this interface.  
   
-4.  將 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性套用至您的類別，並將這個屬性設為 None 列舉的 <xref:System.Runtime.InteropServices.ClassInterfaceType> 值。  
+4.  Apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to your class, and set this attribute to the None value of the <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeration.  
   
-5.  如果您要將類別公開給跨處理序用戶端，可能還必須執行下列作業：  
+5.  If you want to expose the class to out-of-process clients, you might also need to do the following:  
   
-    -   從 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 衍生類別。 如需詳細資訊，請參閱[將類別公開給跨處理序用戶端](#outofproc)。  
+    -   Derive the class from <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. For more information, see [Exposing Classes to Out-of-Process Clients](#outofproc).  
   
-    -   在您定義介面的專案中設定 \[註冊 COM Interop\] 屬性。 只有在您要讓用戶端使用早期繫結來呼叫 VSTO 增益集時，才需要執行這項作業。  
+    -   Set the **Register for COM interop** property in the project where you define the interface. This is necessary only if you want to enable clients to use early binding to call into the VSTO Add-in.  
   
- 下列程式碼範例示範 `AddInUtilities` 類別，該類別具有其他方案可以呼叫的 `ImportData` 方法。 若要在完整的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+ The following code example demonstrates an `AddInUtilities` class with an `ImportData` method that can be called by other solutions. To see this code in the context of a larger walkthrough, see [Walkthrough: Calling Code in a VSTO Add-in from VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough#3](../snippets/csharp/VS_Snippets_OfficeSP/Trin_AddInInteropWalkthrough/CS/AddInUtilities.cs#3)]
- [!code-vb[Trin_AddInInteropWalkthrough#3](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_AddInInteropWalkthrough/VB/AddInUtilities.vb#3)]  
+ [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)] [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]  
   
-### 將類別公開給 VBA  
- 當您執行上述步驟時，VBA 程式碼只能呼叫您在介面中宣告的方法。 VBA 程式碼無法呼叫您類別中的其他任何方法，包括您的類別從 <xref:System.Object> 等基底類別取得的方法。  
+### <a name="exposing-classes-to-vba"></a>Exposing Classes to VBA  
+ When you perform the steps provided above, VBA code can call only the methods that you declare in the interface. VBA code cannot call any other methods in your class, including methods that your class obtains from base classes such as <xref:System.Object>.  
   
- 或者，您也可以公開 [IDispatch](http://msdn.microsoft.com/zh-tw/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) 介面，方法是將 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 屬性設為 AutoDispatch 列舉的 AutoDual 或 <xref:System.Runtime.InteropServices.ClassInterfaceType> 值。 如果您這麼做，則不需要在個別的介面中宣告方法。 不過，VBA 程式碼可以呼叫您類別中的任何公用和非靜態方法，包括從 <xref:System.Object> 等基底類別取得的方法。 此外，使用早期繫結的跨處理序用戶端無法呼叫您的類別。  
+ You can alternatively expose the [IDispatch](https://msdn.microsoft.com/library/windows/desktop/ms221608.aspx) interface by setting the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attribute to the AutoDispatch or AutoDual value of the <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeration. If you do this, you do not have to declare the methods in a separate interface. However, VBA code can call any public and non-static methods in your class, including methods obtained from base classes such as <xref:System.Object>. In addition, out-of-process clients that use early binding cannot call your class.  
   
-###  <a name="outofproc"></a> 將類別公開給跨處理序用戶端  
- 如果您要將 VSTO 增益集中的類別公開給跨處理序用戶端，您應該從 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 衍生類別，以確保跨處理序用戶端可以呼叫所公開的 VSTO 增益集物件。 否則，當嘗試在跨處理序用戶端中取得所公開的物件執行個體時，可能會意外失敗。  
+###  <a name="outofproc"></a> Exposing Classes to Out-of-Process Clients  
+ If you want to expose a class in your VSTO Add-in to out-of-process clients, you should derive the class from <xref:System.Runtime.InteropServices.StandardOleMarshalObject> to ensure that out-of-process clients can call your exposed VSTO Add-in object. Otherwise, attempts to get an instance of your exposed object in an out-of-process client might fail unexpectedly.  
   
- 這是因為所有對 Office 應用程式物件模型的呼叫都必須在主要 UI 執行緒中進行，但是跨處理序用戶端會在任意 RPC \(遠端程序呼叫\) 執行緒中執行對您物件的呼叫。 .NET Framework 中的 COM 封送處理機制並不會切換執行緒，而是會嘗試在連入 RPC 執行緒 \(而不是主要 UI 執行緒\) 上封送處理對您物件的呼叫。 如果您的物件是衍生自 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 之類別的執行個體，則對您物件的連入呼叫會自動封送處理至當初用以建立已公開物件的執行緒，而該執行緒會成為主應用程式的主要 UI 執行緒。  
+ This is because all calls into the object model of an Office application must be made on the main UI thread, but calls from an out-of-process client to your object will arrive on an arbitrary RPC (remote procedure call) thread. The COM marshaling mechanism in the .NET Framework will not switch threads, and it will instead attempt to marshal the call to your object on the incoming RPC thread instead of the main UI thread. If your object is an instance of a class that derives from <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, incoming calls to your object are automatically marshaled to the thread where the exposed object was created, which will be the main UI thread of the host application.  
   
- 如需在 Office 方案中使用執行緒的詳細資訊，請參閱 [Office 中的執行緒支援](../vsto/threading-support-in-office.md)。  
+ For more information about using threads in Office solutions, see [Threading Support in Office](../vsto/threading-support-in-office.md).  
   
-### 覆寫 RequestComAddInAutomationService 方法  
- 下列程式碼範例示範如何在您的 VSTO 增益集中覆寫 `ThisAddIn` 類別中的 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>。 這個範例假設您已經定義想要公開給其他方案，且名稱為 `AddInUtilities` 的類別。 若要在完整的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+### <a name="overriding-the-requestcomaddinautomationservice-method"></a>Overriding the RequestComAddInAutomationService Method  
+ The following code example demonstrates how to override <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> in the `ThisAddIn` class in your VSTO Add-in. This example assumes that you have defined a class named `AddInUtilities` that you want to expose to other solutions. To see this code in the context of a larger walkthrough, see [Walkthrough: Calling Code in a VSTO Add-in from VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
- [!code-csharp[Trin_AddInInteropWalkthrough#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_AddInInteropWalkthrough/CS/ThisAddIn.cs#1)]
- [!code-vb[Trin_AddInInteropWalkthrough#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_AddInInteropWalkthrough/VB/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)] [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]  
   
- 載入 VSTO 增益集時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會呼叫 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 執行階段會將傳回的物件指派給代表 VSTO 增益集之 <xref:Microsoft.Office.Core.COMAddIn> 物件的 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 屬性。 這個 <xref:Microsoft.Office.Core.COMAddIn> 物件可供其他 Office 方案以及將 Office 自動化的方案使用。  
+ When your VSTO Add-in is loaded, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] calls the <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> method. The runtime assigns the returned object to the <xref:Microsoft.Office.Core.COMAddIn.Object%2A> property of a <xref:Microsoft.Office.Core.COMAddIn> object that represents your VSTO Add-in. This <xref:Microsoft.Office.Core.COMAddIn> object is available to other Office solutions, and to solutions that automate Office.  
   
-## 從其他方案存取物件  
- 若要呼叫您 VSTO 增益集中公開的物件，請在用戶端方案中執行下列步驟：  
+## <a name="accessing-objects-from-other-solutions"></a>Accessing Objects from Other Solutions  
+ To call the exposed object in your VSTO Add-in, perform the following steps in the client solution:  
   
-1.  取得代表已公開 VSTO 增益集的 <xref:Microsoft.Office.Core.COMAddIn> 物件。 用戶端可以使用主 Office 應用程式的物件模型中的 Application.COMAddIns 屬性，存取所有可用的 VSTO 增益集。  
+1.  Get the <xref:Microsoft.Office.Core.COMAddIn> object that represents the exposed VSTO Add-in. Clients can access all of the available VSTO Add-ins by using the Application.COMAddIns property in the object model of the host Office application.  
   
-2.  存取 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 物件的 <xref:Microsoft.Office.Core.COMAddIn> 屬性。 這個屬性會傳回 VSTO 增益集中已公開的物件。  
+2.  Access the <xref:Microsoft.Office.Core.COMAddIn.Object%2A> property of the <xref:Microsoft.Office.Core.COMAddIn> object. This property returns the exposed object from the VSTO Add-in.  
   
-3.  呼叫已公開物件的成員。  
+3.  Call the members of the exposed object.  
   
- 對於 VBA 用戶端和非 VBA 用戶端，您使用 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 屬性之傳回值的方式會不同。 對於跨處理序用戶端，還需要其他程式碼才能避免可能的競爭情形。  
+ The way that you use the return value of the <xref:Microsoft.Office.Core.COMAddIn.Object%2A> property is different for VBA clients and non-VBA clients. For out-of-process clients, additional code is necessary to avoid a possible race condition.  
   
-### 從 VBA 方案存取物件  
- 下列程式碼範例示範如何使用 VBA 呼叫 VSTO 增益集所公開的方法。 這個 VBA 巨集會呼叫 **ExcelImportData** VSTO 增益集中定義的 `ImportData` 方法。 若要在完整的逐步解說內容中查看這個程式碼，請參閱 [逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。  
+### <a name="accessing-objects-from-vba-solutions"></a>Accessing Objects from VBA Solutions  
+ The following code example demonstrates how to use VBA to call a method that is exposed by an VSTO Add-in. This VBA macro calls a method named `ImportData` that is defined in an VSTO Add-in that is named **ExcelImportData**. To see this code in the context of a larger walkthrough, see [Walkthrough: Calling Code in a VSTO Add-in from VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).  
   
 ```  
-Sub CallVSTOMethod() Dim addIn As COMAddIn Dim automationObject As Object Set addIn = Application.COMAddIns("ExcelImportData") Set automationObject = addIn.Object automationObject.ImportData End Sub  
+Sub CallVSTOMethod()  
+    Dim addIn As COMAddIn  
+    Dim automationObject As Object  
+    Set addIn = Application.COMAddIns("ExcelImportData")  
+    Set automationObject = addIn.Object  
+    automationObject.ImportData  
+End Sub  
 ```  
   
-### 從非 VBA 方案存取物件  
- 在非 VBA 方案中，您必須將 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 屬性值轉型為方案所實作的介面，然後才能在介面物件上呼叫已公開的方法。 下列程式碼範例示範如何從使用 Visual Studio 中的 Office Developer Tools 所建立的不同 VSTO 增益集呼叫 `ImportData` 方法。  
+### <a name="accessing-objects-from-non-vba-solutions"></a>Accessing Objects from Non-VBA Solutions  
+ In a non-VBA solution, you must cast the <xref:Microsoft.Office.Core.COMAddIn.Object%2A> property value to the interface it implements, and then you can call the exposed methods on the interface object. The following code example demonstrates how to call the `ImportData` method from a different VSTO Add-in that was created by using the Office developer tools in Visual Studio.  
   
 ```vb  
-Dim addIn As Office.COMAddIn = Globals.ThisAddIn.Application.COMAddIns.Item("ExcelImportData") Dim utilities As ExcelImportData.IAddInUtilities = TryCast( _ addIn.Object, ExcelImportData.IAddInUtilities) utilities.ImportData()  
+Dim addIn As Office.COMAddIn = Globals.ThisAddIn.Application.COMAddIns.Item("ExcelImportData")  
+Dim utilities As ExcelImportData.IAddInUtilities = TryCast( _  
+    addIn.Object, ExcelImportData.IAddInUtilities)  
+utilities.ImportData()  
 ```  
   
 ```csharp  
-object addInName = "ExcelImportData"; Office.COMAddIn addIn = Globals.ThisAddIn.Application.COMAddIns.Item(ref addInName); ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)addIn.Object; utilities.ImportData();  
+object addInName = "ExcelImportData";  
+Office.COMAddIn addIn = Globals.ThisAddIn.Application.COMAddIns.Item(ref addInName);  
+ExcelImportData.IAddInUtilities utilities = (ExcelImportData.IAddInUtilities)addIn.Object;  
+utilities.ImportData();  
 ```  
   
- 在這個範例中，如果您嘗試將 <xref:Microsoft.Office.Core.COMAddIn.Object%2A> 屬性的值轉型為 `AddInUtilities` 類別 \(而不是 `IAddInUtilities` 介面\)，則程式碼會擲回 <xref:System.InvalidCastException>。  
+ In this example, if you try to cast the value of the <xref:Microsoft.Office.Core.COMAddIn.Object%2A> property to the `AddInUtilities` class rather than the `IAddInUtilities` interface, the code will throw an <xref:System.InvalidCastException>.  
   
-## 請參閱  
- [VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)   
- [逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
- [開發 Office 方案](../vsto/developing-office-solutions.md)   
- [如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [VSTO 增益集的架構](../vsto/architecture-of-vsto-add-ins.md)   
- [使用擴充性介面自訂 UI 功能](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
+## <a name="see-also"></a>See Also  
+ [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
+ [Walkthrough: Calling Code in a VSTO Add-in from VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)   
+ [Developing Office Solutions](../vsto/developing-office-solutions.md)   
+ [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)   
+ [Customizing UI Features By Using Extensibility Interfaces](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md)  
   
   

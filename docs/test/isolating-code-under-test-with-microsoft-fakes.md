@@ -1,5 +1,5 @@
 ---
-title: "使用 Microsoft Fakes 在測試期間隔離程式碼 | Microsoft Docs"
+title: Isolating Code Under Test with Microsoft Fakes | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -26,82 +26,82 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3941968fa0e2e6205c94076f555c8366f009d4c0
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9726d092be94ba082adbcc21ebd09a94fe0c60d2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="isolating-code-under-test-with-microsoft-fakes"></a>使用 Microsoft Fakes 在測試期間隔離程式碼
-Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的其他部分，協助您隔離要測試的程式碼。 這些是受測試所控制的一些程式碼片段。 藉由隔離待測的程式碼，您可以在正確的位置尋找測試失敗的原因。 即使應用程式的其他部分還無法運作，您也可以利用虛設常式和填充碼。  
+# <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolating Code Under Test with Microsoft Fakes
+Microsoft Fakes help you isolate the code you are testing by replacing other parts of the application with *stubs* or *shims*. These are small pieces of code that are under the control of your tests. By isolating your code for testing, you know that if the test fails, the cause is there and not somewhere else. Stubs and shims also let you test your code even if other parts of your application are not working yet.  
   
- Fakes 分為兩種類別：  
+ Fakes come in two flavors:  
   
--   [虛設常式](#stubs)會以一小段實作相同介面的類別取代類別。  若要使用虛設常式，您所設計的應用程式必須讓每個元件只相依於介面，而不相依於其他元件。 (「元件」表示一起設計及更新的類別或類別群組，通常會包含在組件中)。  
+-   A [stub](#stubs) replaces a class with a small substitute that implements the same interface.  To use stubs, you have to design your application so that each component depends only on interfaces, and not on other components. (By "component" we mean a class or group of classes that are designed and updated together and typically contained in an assembly.)  
   
--   [填充碼](#shims)會在執行階段修改應用程式的編譯程式碼，以便執行您的測試所提供的填充碼，而不是進行指定的方法呼叫。 您可以使用填充碼取代您無法修改的組件 (例如 .NET 組件) 的呼叫。  
+-   A [shim](#shims) modifies the compiled code of your application at run time so that instead of making a specified method call, it runs the shim code that your test provides. Shims can be used to replace calls to assemblies that you cannot modify, such .NET assemblies.  
   
- ![Fakes 會取代其他元件](../test/media/fakes-2.png "Fakes-2")  
+ ![Fakes replace other components](../test/media/fakes-2.png "Fakes-2")  
   
  **Requirements**  
   
--   Visual Studio 企業版  
+-   Visual Studio Enterprise  
   
-## <a name="choosing-between-stub-and-shim-types"></a>在虛設常式和填充碼類型之間選擇  
- 由於您會同時開發及更新這些類別，因此您通常會將 Visual Studio 專案視為元件。 您可以考慮針對專案對方案中其他專案或專案所參考之其他組件的呼叫使用虛設常式和填充碼。  
+## <a name="choosing-between-stub-and-shim-types"></a>Choosing between stub and shim types  
+ Typically, you would consider a Visual Studio project to be a component, because you develop and update those classes at the same time. You would consider using stubs and shims for calls that the project makes to other projects in your solution, or to other assemblies that the project references.  
   
- 一般方針是，對 Visual Studio 方案中的呼叫使用虛設常式，而對其他參考組件的呼叫則使用填充碼。 這是因為在您自己的方案中，依虛設常式需要的方式定義介面以分隔元件是很好的作法。 但是，個別介面定義通常未隨附外部組件 (例如 System.dll)，因此，您必須使用填充碼。  
+ As a general guide, use stubs for calls within your Visual Studio solution, and shims for calls to other referenced assemblies. This is because within your own solution it is good practice to decouple the components by defining interfaces in the way that stubbing requires. But external assemblies such as System.dll typically are not provided with separate interface definitions, so you must use shims instead.  
   
- 其他考量為：  
+ Other considerations are:  
   
- **效能。** 由於填充碼會在執行階段重寫程式碼，因此執行得比較慢。 虛設常式類型沒有這樣的效能負荷，執行速度與虛擬方法一樣快。  
+ **Performance.** Shims run slower because they rewrite your code at run time. Stubs do not have this performance overhead and are as fast as virtual methods can go.  
   
- **靜態方法，密封類型。** 您只能使用虛設常式實作介面。 因此，虛設常式類型不能用於靜態方法、非虛擬方法、密封虛擬方法、密封類型中的方法等等。  
+ **Static methods, sealed types.** You can only use stubs to implement interfaces. Therefore, stub types cannot be used for static methods, non-virtual methods, sealed virtual methods, methods in sealed types, and so on.  
   
- **內部類型。** 虛設常式和填充碼都可以搭配使用組件屬性 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 存取的內部類型一起使用。  
+ **Internal types.** Both stubs and shims can be used with internal types that are made accessible by using the assembly attribute <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>.  
   
- **私用方法。** 如果方法簽章的所有類型都是可見的，填充碼可以取代私用方法呼叫。 虛設常式只能取代可見的方法。  
+ **Private methods.** Shims can replace calls to private methods if all the types on the method signature are visible. Stubs can only replace visible methods.  
   
- **介面和抽象方法。** 虛設常式提供可用於測試的介面和抽象方法實作。 填充碼無法檢測介面和抽象方法，因為它們沒有方法主體。  
+ **Interfaces and abstract methods.** Stubs provide implementations of interfaces and abstract methods that can be used in testing. Shims can't instrument interfaces and abstract methods, because they don't have method bodies.  
   
- 一般而言，我們建議您使用虛設常式類型與程式碼基底中的相依性隔離。 您可以藉由將元件隱藏在介面後面來達成。 您可以使用填充碼類型隔離不提供可測試之應用程式開發介面的協力廠商元件。  
+ In general, we recommend that you use stub types to isolate from dependencies within your codebase. You can do this by hiding the components behind interfaces. Shim types can be used to isolate from third-party components that do not provide a testable API.  
   
-##  <a name="stubs"></a> 開始使用虛設常式  
- 如需更詳細的描述，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
+##  <a name="stubs"></a> Getting started with stubs  
+ For a more detailed description, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **插入介面**  
+1.  **Inject interfaces**  
   
-     若要使用虛設常式，您所撰寫的測試程式碼不可明確提及應用程式其他元件中的類別。 「元件」是指一併開發及更新的一個或多個類別，通常會包含在一個 Visual Studio 專案中。 應使用介面宣告變數和參數，並應使用 Factory 傳入或建立其他元件的執行個體。 例如，如果 StockFeed 是另一個應用程式元件中的類別，下列作法就不正確：  
+     To use stubs, you have to write the code you want to test in such a way that it does not explicitly mention classes in another component of your application. By "component" we mean a class or classes that are developed and updated together, and typically contained in one Visual Studio project. Variables and parameters should be declared by using interfaces and instances of other components should be passed in or created by using a factory. For example, if StockFeed is a class in another component of the application, then this would be considered bad:  
   
      `return (new StockFeed()).GetSharePrice("COOO"); // Bad`  
   
-     相反地，請定義可由另一個元件或測試虛設常式實作的介面：  
+     Instead, define an interface that can be implemented by the other component, and which can also be implemented by a stub for test purposes:  
   
-    ```c#  
+    ```csharp  
     public int GetContosoPrice(IStockFeed feed)  
     { return feed.GetSharePrice("COOO"); }  
   
     ```  
   
-    ```vb#  
+    ```vb  
     Public Function GetContosoPrice(feed As IStockFeed) As Integer  
      Return feed.GetSharePrice("COOO")  
     End Function  
   
     ```  
   
-2.  **新增 Fakes 組件**  
+2.  **Add Fakes Assembly**  
   
-    1.  在方案總管中，展開測試專案的參考清單。 如果在 Visual Basic 中工作，您必須選擇 [顯示所有檔案] 才能看到參考清單。  
+    1.  In Solution Explorer, expand the test project's reference list. If you are working in Visual Basic, you must choose **Show All Files** in order to see the reference list.  
   
-    2.  選取定義介面 (例如 IStockFeed) 之組件的參考。 在此參考的捷徑功能表上，選擇 [新增 Fakes 組件]。  
+    2.  Select the reference to the assembly in which the interface (for example IStockFeed) is defined. On the shortcut menu of this reference, choose **Add Fakes Assembly**.  
   
-    3.  重建方案。  
+    3.  Rebuild the solution.  
   
-3.  在您的測試中，建構虛設常式的執行個體，並為其方法提供程式碼：  
+3.  In your tests, construct instances of the stub and provide code for its methods:  
   
-    ```c#  
+    ```csharp  
     [TestClass]  
     class TestStockAnalyzer  
     {  
@@ -132,7 +132,7 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
     }  
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Class TestStockAnalyzer  
   
@@ -157,16 +157,16 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
     ```  
   
-     這裡最特別的是 `StubIStockFeed` 類別。 Microsoft Fakes 機制會針對參考組件中的每一個介面產生虛設常式類別。 該虛設常式類別的名稱衍生自介面的名稱，再加上前置詞「`Fakes.Stub`」並附加參數類型名稱。  
+     The special piece of magic here is the class `StubIStockFeed`. For every interface in the referenced assembly, the Microsoft Fakes mechanism generates a stub class. The name of the stub class is the derived from the name of the interface, with "`Fakes.Stub`" as a prefix, and the parameter type names appended.  
   
-     另外也會為屬性、事件及泛型方法的 getter 及 setter 產生虛設常式。 如需詳細資訊，請參閱[使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)。  
+     Stubs are also generated for the getters and setters of properties, for events, and for generic methods. For more information, see [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> 開始使用填充碼  
- (如需更詳細的描述，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md))。  
+##  <a name="shims"></a> Getting started with shims  
+ (For a more detailed description, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
- 假設您的元件包含對 `DateTime.Now` 的呼叫：  
+ Suppose your component contains calls to `DateTime.Now`:  
   
-```c#  
+```csharp  
 // Code under test:  
     public int GetTheCurrentYear()  
     {  
@@ -175,19 +175,19 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
 ```  
   
- 在測試期間，您要填充 `Now` 屬性，因為真實版本會在每次呼叫時傳回不同的值，非常不方便。  
+ During testing, you would like to shim the `Now` property, because the real version inconveniently returns a different value at every call.  
   
- 若要使用填充碼，就不需要修改應用程式程式碼或以特別方式撰寫程式碼。  
+ To use shims, you don't have to modify the application code or write it a particular way.  
   
-1.  **新增 Fakes 組件**  
+1.  **Add Fakes Assembly**  
   
-     在方案總管中開啟單元測試專案的參考，並且選取包含要假造之方法的組件參考。 在本範例中，`DateTime` 類別是在 **System.dll** 中。  若要查看 Visual Basic 專案中的參考，請選擇 [顯示所有檔案]。  
+     In Solution Explorer, open your unit test project's references and select the reference to the assembly that contains the method you want to fake. In this example, the `DateTime` class is in **System.dll**.  To see the references in a Visual Basic project, choose **Show All Files**.  
   
-     選擇 [新增 Fakes 組件]。  
+     Choose **Add Fakes Assembly**.  
   
-2.  **在 ShimsContext 中插入填充碼**  
+2.  **Insert a shim in a ShimsContext**  
   
-    ```c#  
+    ```csharp  
     [TestClass]  
     public class TestClass1  
     {   
@@ -220,7 +220,7 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
   
     ```  
   
-    ```vb#  
+    ```vb  
     <TestClass()> _  
     Public Class TestClass1  
         <TestMethod()> _  
@@ -246,22 +246,22 @@ Microsoft Fakes 會以「虛設常式」或「填充碼」取代應用程式的�
     End Class  
     ```  
   
-     填充碼類別名稱是在原始類型名稱前面加上 `Fakes.Shim` 而構成。 方法名稱後面要加上參數名稱。 (您不必將任何組件參考加入 System.Fakes)。  
+     Shim class names are made up by prefixing `Fakes.Shim` to the original type name. Parameter names are appended to the method name. (You don't have to add any assembly reference to System.Fakes.)  
   
- 上述範例使用靜態方法的填充碼。 若要使用填充碼做為執行個體方法，請在類型名稱和方法名稱之間撰寫 `AllInstances`：  
+ The previous example uses a shim for a static method. To use a shim for an instance method, write `AllInstances` between the type name and the method name:  
   
 ```  
 System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...  
 ```  
   
- (沒有任何 'System.IO.Fakes' 組件可參考。 此命名空間是填充碼建立處理序所產生的。 但您可以按照一般方式使用 'using' 或 'Import')。  
+ (There is no 'System.IO.Fakes' assembly to reference. The namespace is generated by the shim creation process. But you can use 'using' or 'Import' in the usual way.)  
   
- 您也可以為特定執行個體、建構函式和屬性建立填充碼。 如需詳細資訊，請參閱[使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)。  
+ You can also create shims for specific instances, for constructors, and for properties. For more information, see [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).  
   
-## <a name="in-this-section"></a>本節內容  
- [使用虛設常式隔離應用程式的各個組件，方便進行單元測試](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
+## <a name="in-this-section"></a>In this section  
+ [Using stubs to isolate parts of your application from each other for unit testing](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)  
   
- [使用填充碼將應用程式與其他組件隔離，方便進行單元測試](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
+ [Using shims to isolate your application from other assemblies for unit testing](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
- [Microsoft Fakes 中的程式碼產生、編譯和命名慣例](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+ [Code generation, compilation, and naming conventions in Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "如何：收集網站的效能資料 | Microsoft Docs"
+title: 'How to: Collect Performance Data for a Web Site | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -38,88 +38,90 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 9f0e4f1541de074e02c2a74e3ba2605232a53a09
-ms.lasthandoff: 03/07/2017
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 7fe6230d86e79b6540b35d358ac9af2a3b4760a7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
-您可以使用 [效能精靈] 收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中未開啟之 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 網站進行程式碼剖析。  
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>How to: Collect Performance Data for a Web Site
+You can use the **Performance Wizard** to collect performance data for an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application. You can profile a Web application that is open in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], or you can profile an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web site that is located on your local computer and not open in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE.  
   
 > [!NOTE]
->  [效能精靈]  可讓您將階層互動 (TIP) 資料及/或 JScript 效能資料新增至收集的程式碼剖析資料。 TIP 選項會從伺服器端處理序收集資料。 JScript 程式碼剖析會從本機或遠端網站上執行的指令碼收集資料。 在大部分情況下，您應該只選擇其中一個選項。  
+>  The **Performance Wizard** enables you to add tier interaction (TIP) data, JScript performance data, or both to the collected profiling data. The TIP option collects data from server-side processes. The JScript profiling collects data from scripts that are running on a local or  remote Web site. In most cases, you should choose only one of the options.  
   
- 依據系統管理員提供的使用者存取權限設定，個別使用者不一定具有安全性權限可以在裝載 ASP.NET 處理序的電腦上建立分析工具工作階段。 下列範例説明各使用者之間可能存在的差異：  
+ Depending on User Access Permissions settings that an administrator has made available, an individual user might or might not have security permission to create a profiler session on the computer that hosts the ASP.NET process. The following examples illustrate possible differences among users:  
   
--   當系統管理員設定了要啟動的驅動程式和服務時，某些使用者可以存取進階的程式碼剖析功能。  
+-   Some users might access advanced profiling features when the Administrator has set the driver and service to start.  
   
--   網域使用者只能存取取樣程式碼剖析。  
+-   Domain users might access sample profiling only.  
   
--   某些使用者可以拒絕其他所有使用者存取程式碼剖析。  
+-   Some users might deny access to profiling to all other users.  
   
- 如需詳細資訊，請參閱[分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)，以及 [VSPerfCmd](../profiling/vsperfcmd.md) 中的 ADMIN 選項。  
+ For more information, see [Profiling and Windows Vista Security](../profiling/profiling-and-windows-vista-security.md) and the ADMIN options in [VSPerfCmd](../profiling/vsperfcmd.md).  
   
-### <a name="to-profile-a-web-site-project"></a>對網站專案進行程式碼剖析  
+### <a name="to-profile-a-web-site-project"></a>To profile a Web site project  
   
-1.  在 [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 或 [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] 中，開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。  
+1.  Open the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web project in [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] or [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
   
-2.  在 [分析] 功能表上，選取 [效能分析工具]，再選取 [效能總管]，然後選取 [啟動]。  
+2.  On the **Analyze** menu, select **Performance Profiler**, select **Performance Explorer**, and then select **Start**.  
   
-3.  在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需程式碼剖析方法的詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。 請注意，並行視覺化檢視程式碼剖析方法不適用於 Web 應用程式。  
+3.  On the first page of the wizard, select a profiling method, and then click **Next**. For more information about profiling methods, see [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md). Note that the concurrency visualizer profiling method is not available for web applications.  
   
-4.  在 [您要以哪一個應用程式作為分析的目標?]  下拉式清單中，確認已選取目前的專案，然後按一下 [下一步] 。  
+4.  In the **Which application would you like to target for profiling?** drop-down list, make sure that the current project is selected, and then click **Next**.  
   
-5.  在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
+5.  On the third page of the wizard, you can choose to add tier interaction profiling (TIP) data, data from the JavaScript running in the Web pages, or both.  
   
-    -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
+    -   To collect tier interaction, select the **Enable Tier Interaction Profiling** check box.  
   
-    -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
+    -   To collect data from the JavaScript running in the Web pages, select the **Profile JavaScript** check box.  
   
-6.  按 [ **下一步**]。  
+6.  Click **Next**.  
   
-7.  在精靈的第四個頁面上，按一下 [完成] 。  
+7.  On the fourth page of the wizard, click **Finish**.  
   
-8.  隨即為 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式建立效能工作階段，並在瀏覽器中啟動網站。 執行您要進行程式碼剖析的功能，然後關閉瀏覽器。  
+8.  A performance session is created for the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application, and the Web site is started in the browser. Exercise the functionality that you want to profile, and then close the browser.  
   
-     分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主視窗中顯示資料的 [摘要] 檢視。  
+     The profiler generates the data file and displays the Summary view of the data in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] main window.  
   
-### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>對網站進行程式碼剖析，但不在 Visual Studio 中開啟專案  
+### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>To profile a Web site without opening a project in Visual Studio  
   
-1.  開啟 [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 或 [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)]。  
+1.  Open [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] or [!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)].  
   
-2.  在 [分析] 功能表上，選取 [效能分析工具]，再選取 [效能總管]，然後選取 [啟動]。  
+2.  On the **Analyze** menu, select **Performance Profiler**, select **Performance Explorer**, and then select **Start**.  
   
-3.  在精靈的第一個頁面上，選取程式碼剖析方法，然後按一下 [下一步] 。 如需詳細資訊，請參閱[了解效能收集方法](../profiling/understanding-performance-collection-methods.md)。  
+3.  On the first page of the wizard, select a profiling method, and then click **Next**. For more information, see [Understanding Performance Collection Methods](../profiling/understanding-performance-collection-methods.md).  
   
-4.  在精靈的第二個頁面上，選取 [為 ASP.NET 或 JavaScript 應用程式進行程式碼剖析]  選項，然後按一下 [下一步] 。  
+4.  On the second page of the wizard, select the **Profile an ASP.NET or JavaScript application** option, and then click **Next**.  
   
-5.  在精靈第三個頁面的 [您要使用哪個 URL 或路徑執行 Web 應用程式]  方塊中，輸入應用程式首頁的 URL，然後按一下 [下一步] 。  
+5.  In the **What URL or Path will run your web application** box on the third page of the wizard, enter the URL to the application home page, and then click **Next**.  
   
-    -   若是伺服器 (IIS) 架構的網站，請輸入如 **http://localhost/MySite/default.aspx**之類的 URL。 這會對本機電腦上位於 MySite 之應用程式根目錄的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動該網站的 default.aspx 頁面以開始工作階段。  
+    -   For a server (IIS) based Web site, type a URL such as **http://localhost/MySite/default.aspx**. This causes the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application on the local computer at the application root of MySite to be profiled, and the page default.aspx on that site to be started in Internet Explorer to start the session.  
   
-    -   針對檔案架構的網站，請輸入如檔案///**c:\WebSites\MySite\default.aspx**之類的路徑。 這會對位於 c:\webSites\MySite 的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式進行程式碼剖析，然後 Internet Explorer 會啟動 http://localhost:nnnn/MySite/default.aspx 頁面以開始工作階段。  
+    -   For a file based Web site, type a path such as file///**c:\WebSites\MySite\default.aspx**. This causes the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] application located at c:\webSites\MySite to be profiled and the page http://localhost:nnnn/MySite/default.aspx to be started in Internet Explorer to start the session.  
   
-    -   針對您想要收集 JavaScript 資料的外部網站，請輸入如 http://www.contoso.com 之類的 URL。  
+    -   For external sites that you wish to collect JavaScript data on, type the URL, for example http://www.contoso.com.  
   
-     如需詳細資訊，請檢視 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 目標二進位檔的屬性頁。  
+     For more information, view the property pages for an [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] target binary.  
   
-6.  在精靈的第三個頁面上，您可以選擇是否要新增階層互動分析 (TIP) 資料及/或網頁中執行之 JavaScript 的資料。  
+6.  On the third page of the wizard, you can choose to add tier interaction profiling (TIP) data, data from the JavaScript running in the Web pages, or both.  
   
-    -   若要收集階層互動，請選取 [啟用階層互動分析]  核取方塊。  
+    -   To collect tier interaction, select the **Enable Tier Interaction Profiling** check box.  
   
-    -   若要從網頁中執行的 JavaScript 收集資料，請選取 [分析 JavaScript]  核取方塊。  
+    -   To collect data from the JavaScript running in the Web pages, select the **Profile JavaScript** check box.  
   
-7.  按 [ **下一步**]。  
+7.  Click **Next**.  
   
-8.  在精靈的第四個頁面上，按一下 [完成] 。  
+8.  On the fourth page of the wizard, click **Finish**.  
   
-9. 隨即為 ASP.NET 應用程式建立效能工作階段，並在瀏覽器中啟動網站。 執行您要進行程式碼剖析的功能，然後關閉瀏覽器。  
+9. A performance session is created for the ASP.NET application, and the Web site is started in the browser. Exercise the functionality that you want to profile, and then close the browser.  
   
-     分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主視窗中顯示資料的 [摘要] 檢視。  
+     The profiler generates the data file and displays the Summary view of the data in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] main window.  
   
-## <a name="see-also"></a>另請參閱  
- [概觀](../profiling/overviews-performance-tools.md)   
- [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
- [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
- [了解取樣資料值](../profiling/understanding-sampling-data-values.md)
+## <a name="see-also"></a>See Also  
+ [Overviews](../profiling/overviews-performance-tools.md)   
+ [Configuring Performance Sessions](../profiling/configuring-performance-sessions.md)   
+ [Understanding Instrumentation Data Values](../profiling/understanding-instrumentation-data-values.md)   
+ [Understanding Sampling Data Values](../profiling/understanding-sampling-data-values.md)
+

@@ -1,56 +1,73 @@
 ---
-title: "IDebugEnumField::GetStringFromValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetStringFromValue"
-helpviewer_keywords: 
-  - "IDebugEnumField::GetStringFromValue 方法"
+title: IDebugEnumField::GetStringFromValue | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugEnumField::GetStringFromValue
+helpviewer_keywords:
+- IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# IDebugEnumField::GetStringFromValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c721a1ee298eba5e948b42c29d9746e61122008b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-這個方法會取得指定其值的列舉常數的名稱。  
+---
+# <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
+This method obtains the name of the enumeration constant given its value.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetStringFromValue(  
-   ULONGLONG value,  
-   BSTR*     pbstrValue  
+   ULONGLONG value,  
+   BSTR*     pbstrValue  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetStringFromValue(  
-   ulong      value,  
-   out string pbstrValue  
+   ulong      value,  
+   out string pbstrValue  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `value`  
- \[in\]要取得的列舉型別名稱的常值。  
+ [in] The value for which to get the name of the enumeration constant.  
   
  `pbstrValue`  
- \[\] out傳回列舉型別常數的名稱。  
+ [out] Returns the name of the enumeration constant.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`如果沒有相關聯的名稱，或傳回錯誤碼的值。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns `S_FALSE` if the value has no associated name, or returns an error code.  
   
-## 備註  
- 如果有多個相同的值相關聯的名稱，將會傳回列舉型別中定義的名字。  
+## <a name="remarks"></a>Remarks  
+ If there is more than one name associated with the same value, the first name defined in the enumeration will be returned.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

@@ -1,5 +1,5 @@
 ---
-title: "IDebugModule3::SetJustMyCodeState |Microsoft 文件"
+title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,35 +30,36 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4fd680371b20b12e3e8ed5a1c8991eb35a1cb51f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dde5762e1f37b1690c3ffafb68b43380d8203cf2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-將標示為或沒有使用者程式碼模組。  
+Marks the module as being user code or not.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetJustMyCodeState(  
    BOOL fIsUserCode  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetJustMyCodeState(  
    int fIsUserCode  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `fIsUserCode`  
- [in]非零 (`TRUE`) 如果模組應該視為使用者程式碼，零 (`FALSE`) 如果不應。  
+ [in] Nonzero (`TRUE`) if the module should be considered user code, zero (`FALSE`) if it should not.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`，否則會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

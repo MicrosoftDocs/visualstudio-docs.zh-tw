@@ -1,55 +1,72 @@
 ---
-title: "將功能表加入至 Visual Studio 功能表列 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "建立最上層的功能表"
-  - "最上層功能表"
+title: Adding a Menu to the Visual Studio Menu Bar | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus, creating top level
+- top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 caps.latest.revision: 51
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 51
----
-# 將功能表加入至 Visual Studio 功能表列
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3e187603315224cdd73dbfaa53ea5cc7d4b0b7df
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-本逐步解說示範如何將功能表加入 Visual Studio 整合式的開發環境 \(IDE\) 的功能表列。 IDE 的功能表列包含功能表類別，例如 **檔案**, ，**編輯**, ，**檢視**, ，**視窗**, ，和 **協助**。  
+---
+# <a name="adding-a-menu-to-the-visual-studio-menu-bar"></a>Adding a Menu to the Visual Studio Menu Bar
+This walkthrough shows how to add a menu to the menu bar of the Visual Studio integrated development environment (IDE). The IDE menu bar contains menu categories such as **File**, **Edit**, **View**, **Window**, and **Help**.  
   
- 之前將新的功能表加入至 Visual Studio 功能表列，請考慮是否要將命令放在現有的功能表內。 如需命令位置的詳細資訊，請參閱 [功能表和 Visual Studio 的命令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。  
+ Before adding a new menu to the Visual Studio menu bar, consider whether your commands should be placed within an existing menu. For more information about command placement, see [Menus and Commands for Visual Studio](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md).  
   
- 功能表會宣告於.vsct 檔的專案。 如需功能表和.vsct 檔的詳細資訊，請參閱 [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)。  
+ Menus are declared in the .vsct file of the project. For more information about menus and .vsct files, see [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md).  
   
- 完成這個逐步解說，您可以建立名為功能表 **TestMenu** ，其中包含一個命令。  
+ By completing this walkthrough, you can create a menu named **TestMenu** that contains one command.  
   
-## 必要條件  
- 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## 建立 VSIX 專案具有自訂命令的項目範本  
+## <a name="creating-a-vsix-project-that-has-a-custom-command-item-template"></a>Creating a VSIX Project that has a Custom Command item template  
   
-1.  建立 VSIX 專案，名為 `TopLevelMenu`。 您可以找到 VSIX 專案範本，在 **新的專案** 下的對話方塊 **Visual C\#** \/ **擴充性**。  如需詳細資訊，請參閱[建立擴充功能的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+1.  Create a VSIX project named `TopLevelMenu`. You can find the VSIX project template in the **New Project** dialog under **Visual C#** / **Extensibility**.  For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  專案開啟時，加入名為的自訂命令項目範本 **TestCommand**。 在 **方案總管\] 中**, ，以滑鼠右鍵按一下專案節點，然後選取 **加入 \/ 新的項目**。 在 **加入新項目** \] 對話方塊中，移至 **Visual C\# \/ 擴充性** ，然後選取 **自訂命令**。 在 **名稱** 視窗的底部欄位中，將命令檔名稱變更為 **TestCommand.cs**。  
+2.  When the project opens, add a custom command item template named **TestCommand**. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **TestCommand.cs**.  
   
-## 在 IDE 的功能表列上建立功能表  
+## <a name="creating-a-menu-on-the-ide-menu-bar"></a>Creating a Menu on the IDE Menu Bar  
   
-#### 若要建立功能表  
+#### <a name="to-create-a-menu"></a>To create a menu  
   
-1.  在 **方案總管\] 中**, ，開啟 TestCommandPackage.vsct。  
+1.  In **Solution Explorer**, open TestCommandPackage.vsct.  
   
-     在檔案結尾，沒有包含數個 \< GuidSymbol \> 節點的 \< 符號 \> 節點。 在名為 guidTestCommandPackageCmdSet 節點中，加入新的符號，如下所示︰  
+     At the end of the file, there is a \<Symbols> node that contains several \<GuidSymbol> nodes. In the node named guidTestCommandPackageCmdSet, add a new symbol, as follows:  
   
     ```xml  
     <IDSymbol name="TopLevelMenu" value="0x1021"/>  
     ```  
   
-2.  \< 群組 \> 之前 \< 命令 \> 節點中建立空的 \< 功能表 \> 節點。 在 \< 功能表 \> 節點中，加入 \< 功能表 \> 節點，如下所示︰  
+2.  Create an empty \<Menus> node in the \<Commands> node, just before \<Groups>. In the \<Menus> node, add a \<Menu> node , as follows:  
   
     ```xml  
     <Menus>  
@@ -64,15 +81,15 @@ caps.handback.revision: 51
     </Menus>  
     ```  
   
-     `guid` 和 `id` \] 功能表上的值指定的命令集及特定的功能表中的命令集。  
+     The `guid` and `id` values of the menu specify the command set and the specific menu in the command set.  
   
-     `guid` 和 `id` 父系值放置在 Visual Studio 功能表列，其中包含工具和增益集的功能表中的區段的功能表。  
+     The `guid` and `id` values of the parent position the menu on the section of the Visual Studio menu bar that contains the Tools and Add-ins menus.  
   
-     值 `CommandName` 字串會指定文字的功能表項目中顯示。  
+     The value of the `CommandName` string specifies that the text should appear in the menu item.  
   
-3.  在 \< 群組 \> 區段中，找不到 \< 群組 \> 並變更 \< 父 \> 項目，以指向我們剛才加入的功能表︰  
+3.  In the \<Groups> section, find the \<Group> and change the \<Parent> element to point to the menu we just added:  
   
-    ```c#  
+    ```csharp  
     <Groups>  
           <Group guid="guidTestCommandPackageCmdSet" id="MyMenuGroup" priority="0x0600">  
             <Parent guid="guidTestCommandPackageCmdSet" id="TopLevelMenu"/>  
@@ -80,19 +97,19 @@ caps.handback.revision: 51
         </Groups>  
     ```  
   
-     這可讓 \[新增\] 功能表中群組的一部分。  
+     This makes the group part of the new menu.  
   
-4.  尋找 `Buttons` 一節。 請注意， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 套件\] 範本產生 `Button` 設為其父代的項目 `MyMenuGroup`。 如此一來，這個命令會出現在功能表上。  
+4.  Find the `Buttons` section. Notice that the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Package template has generated a `Button` element that has its parent set to `MyMenuGroup`. As a result, this command will appear on your menu.  
   
-## 建置和測試擴充功能  
+## <a name="building-and-testing-the-extension"></a>Building and Testing the Extension  
   
-1.  建置此專案並開始偵錯。 實驗執行個體的執行個體應該會出現。  
+1.  Build the project and start debugging. An instance of the experimental instance should appear.  
   
-2.  在實驗執行個體的功能表列應該包含 **TestMenu** 功能表。  
+2.  The menu bar in the experimental instance should contain a **TestMenu** menu.  
   
-3.  在 **TestMenu** \] 功能表上，按一下 \[ **叫用測試命令**。  
+3.  On the **TestMenu** menu, click **Invoke Test Command**.  
   
-     訊息方塊應該會出現，並顯示訊息 「 第封裝頁，在 TopLevelMenu.TestCommand.MenuItemCallback\(\) TestCommand 」。 這表示，適用於新的命令。  
+     A message box should appear and display the message "TestCommand Package Inside TopLevelMenu.TestCommand.MenuItemCallback()". This indicates that the new command works.  
   
-## 請參閱  
- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>See Also  
+ [Commands, Menus, and Toolbars](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,5 +1,5 @@
 ---
-title: "IDebugComPlusSymbolProvider::AreSymbolsLoaded |Microsoft 文件"
+title: IDebugComPlusSymbolProvider::AreSymbolsLoaded | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,45 +29,46 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b7de250f826aa35fcd8f71b0f9c74e5ddd60fb58
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 065a32112c65e9730c5c492e954de5c1415ad3b5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovideraresymbolsloaded"></a>IDebugComPlusSymbolProvider::AreSymbolsLoaded
-決定是否指定的應用程式網域識別項所指定模組已載入偵錯符號。  
+Determines if the debug symbols are loaded for the specified module given the application domain identifier.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT AreSymbolsLoaded (  
    ULONG32 ulAppDomainID,  
    GUID    guidModule  
 );  
 ```  
   
-```c#  
+```csharp  
 int AreSymbolsLoaded (  
    uint ulAppDomainID,  
    Guid guidModule  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
+ [in] Identifier for the application domain.  
   
  `guidModule`  
- [in]模組的唯一識別碼。  
+ [in] Unique identifier for the module.  
   
-## <a name="return-value"></a>傳回值  
- 如果載入偵錯符號時，會傳回`S_OK`，否則會傳回`S_FALSE`。  
+## <a name="return-value"></a>Return Value  
+ If the debug symbols are loaded, returns `S_OK`; otherwise, returns `S_FALSE`.  
   
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::AreSymbolsLoaded(  
     ULONG32 ulAppDomainID,  
     GUID guidModule  
@@ -87,5 +88,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

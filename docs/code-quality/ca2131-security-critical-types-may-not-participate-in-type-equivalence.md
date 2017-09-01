@@ -1,49 +1,65 @@
 ---
-title: "CA2131：安全性關鍵類型可能未參與類型等價 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2131"
+title: 'CA2131: Security critical types may not participate in type equivalence | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2131
 ms.assetid: 4170f3b1-6086-430d-8fba-837d5538c573
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2131：安全性關鍵類型可能未參與類型等價
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e4c03c61da4fcc454f37fca1397540a184ed752e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2131-security-critical-types-may-not-participate-in-type-equivalence"></a>CA2131: Security critical types may not participate in type equivalence
 |||  
 |-|-|  
-|型別名稱|CriticalTypesMustNotParticipateInTypeEquivalence|  
+|TypeName|CriticalTypesMustNotParticipateInTypeEquivalence|  
 |CheckId|CA2131|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 加入型別相等及型別本身或型別的成員或欄位的型別會標記 <xref:System.Security.SecurityCriticalAttribute> 屬性。  
+## <a name="cause"></a>Cause  
+ A type participates in type equivalence and a either the type itself, or a member or field of the type, is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
   
-## 規則描述  
- 此規則會引發任何關鍵的型別或包含參與型別等價之關鍵方法或欄位的型別。  當 CLR 偵測到此類型別時，會無法在執行階段以 <xref:System.TypeLoadException> 載入。  通常，只有在使用者手動實作型別等價，而不是依賴 tlbimp 和編譯器進行型別等價時，就會引發這項規則。  
+## <a name="rule-description"></a>Rule Description  
+ This rule fires on any critical types or types that contain critical methods or fields that are participating in type equivalence. When the CLR detects such a type, it fails to load it with a <xref:System.TypeLoadException> at run time. Typically, this rule fires only when users implement type equivalence manually rather than by relying on tlbimp and the compilers to do the type equivalence.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請移除 SecurityCritical 屬性。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, remove the SecurityCritical attribute.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例示範會引發這個規則的介面、方法和欄位。  
+## <a name="example"></a>Example  
+ The following examples demonstrate an interface, a method, and a field that will cause this rule to fire.  
   
- [!code-cs[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]  
+ [!code-csharp[FxCop.Security.CA2131.CriticalTypesMustNotParticipateInTypeEquivalence#1](../code-quality/codesnippet/CSharp/ca2131-security-critical-types-may-not-participate-in-type-equivalence_1.cs)]  
   
-## 請參閱  
- [Security\-Transparent Code, Level 2](../Topic/Security-Transparent%20Code,%20Level%202.md)
+## <a name="see-also"></a>See Also  
+ [Security-Transparent Code, Level 2](http://msdn.microsoft.com/Library/4d05610a-0da6-4f08-acea-d54c9d6143c0)

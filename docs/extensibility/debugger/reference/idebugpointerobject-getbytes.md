@@ -1,67 +1,84 @@
 ---
-title: "IDebugPointerObject::GetBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerObject::GetBytes"
-helpviewer_keywords: 
-  - "IDebugPointerObject::GetBytes 方法"
+title: IDebugPointerObject::GetBytes | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPointerObject::GetBytes
+helpviewer_keywords:
+- IDebugPointerObject::GetBytes method
 ms.assetid: e986c188-87fb-4b51-86e9-ee6a0035bdab
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugPointerObject::GetBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: be7648362f250dfba00a244e3d21aff2824eb325
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得指向分頁，作為一系列連續的位元組的值。  
+---
+# <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
+Gets the value pointed to as a series of consecutive bytes.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetBytes(   
-   DWORD  dwStart,  
-   DWORD  dwCount,  
-   BYTE*  pBytes,  
-   DWORD* pdwBytes  
+```cpp  
+HRESULT GetBytes(   
+   DWORD  dwStart,  
+   DWORD  dwCount,  
+   BYTE*  pBytes,  
+   DWORD* pdwBytes  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetBytes(  
-   uint       dwStart,   
-   uint       dwCount,   
-   out byte[] pBytes,   
-   out uint   pdwBytes  
+   uint       dwStart,   
+   uint       dwCount,   
+   out byte[] pBytes,   
+   out uint   pdwBytes  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `dwStart`  
- \[in\]位移，以位元組為單位，從一開始所指向的物件。  
+ [in] An offset, in bytes, from the start of the object pointed to.  
   
  `dwCount`  
- \[in\]若要擷取的位元組數目。  
+ [in] The number of bytes to retrieve.  
   
  `pBytes`  
- 輸入 \[、 輸出\]被填入的值為一系列連續的位元組陣列，開始於指定的位移，從物件所指向。  
+ [in, out] An array that is filled in with the value as a series of consecutive bytes, starting at the given offset from the object pointed to.  
   
  `pdwBytes`  
- \[\] out傳回實際擷取的位元組的數目。  
+ [out] Returns the number of bytes actually retrieved.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## 備註  
- 如果使用這個方法的指標，以這[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)所指向的點的基本型別或基本型別 \(也就是物件只能透過簡單的一連串的位元組陣列\) 的簡單陣列。  
+## <a name="remarks"></a>Remarks  
+ This method is used if the pointer as represented by this [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md) points to a primitive type or a simple array of primitive types (that is, an array that can be represented by a simple sequence of bytes).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)   
  [SetBytes](../../../extensibility/debugger/reference/idebugpointerobject-setbytes.md)

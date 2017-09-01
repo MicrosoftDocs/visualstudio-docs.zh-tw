@@ -1,48 +1,65 @@
 ---
-title: "IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThreadDestroyEvent2::GetExitCode"
-helpviewer_keywords: 
-  - "IDebugThreadDestroyEvent2::GetExitCode"
+title: IDebugThreadDestroyEvent2::GetExitCode | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
+helpviewer_keywords:
+- IDebugThreadDestroyEvent2::GetExitCode
 ms.assetid: 8bf47a17-f811-4d9b-bcea-7488908830ff
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugThreadDestroyEvent2::GetExitCode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2cc9cf03aebd0393e397efda6bb8d6fda2805aea
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得執行緒的結束代碼。  
+---
+# <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
+Gets the exit code for a thread.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetExitCode (   
-   DWORD* pdwExit  
+```cpp  
+HRESULT GetExitCode (   
+   DWORD* pdwExit  
 );  
 ```  
   
-```c#  
-int GetExitCode (   
-   out uint pdwExit  
+```csharp  
+int GetExitCode (   
+   out uint pdwExit  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pdwExit`  
- \[\] out傳回執行緒的結束代碼。  
+ [out] Returns the thread's exit code.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

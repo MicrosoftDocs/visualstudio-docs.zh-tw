@@ -1,7 +1,7 @@
 ---
 title: "Visual Studio 的 Android 模擬器 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -27,11 +27,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 07f3e972f06707f21543b5a70c9712d9706a3980
+ms.translationtype: HT
+ms.sourcegitcommit: fd35d38110fdd82d8748a57701d15dcc1933053e
+ms.openlocfilehash: 9a0dc7e7d771fa13300c8287096e330633461400
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/25/2017
 
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
@@ -39,23 +39,10 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
  Visual Studio Emulator for Android 的設計目的，是為了提供與實際裝置相當的效能。 不過，建議您先在實體裝置上測試應用程式，再發行應用程式。  
   
- 您可以透過唯一的裝置設定檔，針對每個 Android 平台、螢幕解析度，以及 Visual Studio Emulator for Android 支援的其他硬體內容來測試應用程式。  
-  
- 此主題包括下列各節。  
-  
--   [安裝及解除安裝](#Installing)  
-  
--   [系統需求和回溯相容性](#Requirements)  
-  
--   [Visual Studio 的 Android 模擬器網路功能](#Networking)  
-  
--   [設定 Visual Studio 的 Android 模擬器](#Configuring)  
-  
--   [您可以在模擬器中測試的功能](#FeaturesTest)  
-  
--   [您無法在模擬器中測試的功能](#FeaturesNonTest)  
-  
--   [支援資源](#Support)  
+ 您可以透過唯一的裝置設定檔，針對每個 Android 平台、螢幕解析度，以及 Visual Studio Emulator for Android 支援的其他硬體內容來測試應用程式。
+
+> [!NOTE]
+> 使用 Visual Studio Tools for Apache Cordova 時，建議搭配 Google Android 模擬器。 如需詳細資訊，請參閱[在 Android 上執行您的 Apache Cordova 應用程式](/visualstudio/cross-platform/tools-for-cordova/run-your-app/run-app-android#a-idgoogle-android-emulatora-run-on-the-google-android-emulator)。
   
 ##  <a name="Installing"></a> 安裝及解除安裝  
  安裝  
@@ -100,7 +87,7 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
  在 Visual Studio 2015 中，您可以使用模擬器管理員，來安裝、解除安裝及啟動裝置設定檔。 若要存取 [模擬器管理員]，請依序選擇 [工具] 和 [Visual Studio 的 Android 模擬器]。  
   
- ![Visual Studio 的 Android 模擬器管理員](~/cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
+ ![Visual Studio 的 Android 模擬器管理員](../cross-platform/media/android_emu_manager.png "Android_Emu_Manager")  
   
  預設有四個預先安裝的裝置設定檔 (5 英吋的 KitKat 和 Lollipop 手機和和 7 英吋的平板電腦組態)，如白色文字和圖示所示。 直到您選擇 [安裝設定檔] 按鈕並完成安裝為止，清單中的其他設定檔都會呈現灰色。 您可以依應用程式開發介面層級篩選清單，然後按一下設定檔右下方的詳細資料箭號，以檢視其完整組態詳細資料。  
   

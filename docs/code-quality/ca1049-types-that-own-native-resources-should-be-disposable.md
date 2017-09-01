@@ -1,66 +1,82 @@
 ---
-title: "CA1049：擁有原生資源的類型應為可處置 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1049"
-  - "TypesThatOwnNativeResourcesShouldBeDisposable"
-helpviewer_keywords: 
-  - "TypesThatOwnNativeResourcesShouldBeDisposable"
-  - "CA1049"
+title: 'CA1049: Types that own native resources should be disposable | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1049
+- TypesThatOwnNativeResourcesShouldBeDisposable
+helpviewer_keywords:
+- TypesThatOwnNativeResourcesShouldBeDisposable
+- CA1049
 ms.assetid: 084e587d-0e45-4092-b767-49eed30d6a35
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1049：擁有原生資源的類型應為可處置
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bbc23ac5da56b6de5a1e6bb713eb209e8a63698e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Types that own native resources should be disposable
 |||  
 |-|-|  
-|型別名稱|TypesThatOwnNativeResourcesShouldBeDisposable|  
+|TypeName|TypesThatOwnNativeResourcesShouldBeDisposable|  
 |CheckId|CA1049|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 型別會參考 <xref:System.IntPtr?displayProperty=fullName> 欄位、<xref:System.UIntPtr?displayProperty=fullName> 欄位或 <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> 欄位，但不會實作 <xref:System.IDisposable?displayProperty=fullName>。  
+## <a name="cause"></a>Cause  
+ A type references a <xref:System.IntPtr?displayProperty=fullName> field, a <xref:System.UIntPtr?displayProperty=fullName> field, or a <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName> field, but does not implement <xref:System.IDisposable?displayProperty=fullName>.  
   
-## 規則描述  
- 此規則假設 <xref:System.IntPtr>、<xref:System.UIntPtr> 和 <xref:System.Runtime.InteropServices.HandleRef> 欄位會儲存 Unmanaged 資源的指標。  配置 Unmanaged 資源的型別應實作 <xref:System.IDisposable>，讓呼叫端視需求釋放這些資源，並且縮短儲存資源之物件的存留期 \(Lifetime\)。  
+## <a name="rule-description"></a>Rule Description  
+ This rule assumes that <xref:System.IntPtr>, <xref:System.UIntPtr>, and <xref:System.Runtime.InteropServices.HandleRef> fields store pointers to unmanaged resources. Types that allocate unmanaged resources should implement <xref:System.IDisposable> to let callers to release those resources on demand and shorten the lifetimes of the objects that hold the resources.  
   
- 建議用以清除 Unmanaged 資源的設計模式就是同時提供隱含和明確方式，以便分別使用 <xref:System.Object.Finalize%2A?displayProperty=fullName> 方法和 <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> 方法釋放這些資源。  記憶體回收行程會在物件判斷為不可再執行後的某個不定時間，呼叫物件的 <xref:System.Object.Finalize%2A> 方法。  在呼叫 <xref:System.Object.Finalize%2A> 之後，須有其他記憶體回收行程才能釋放物件。  <xref:System.IDisposable.Dispose%2A> 方法允許呼叫端依照需求明確釋放資源，並且比資源交給記憶體回收行程還早釋放。  在清除 Unmanaged 資源之後，<xref:System.IDisposable.Dispose%2A> 應該呼叫 <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> 方法，讓記憶體回收行程知道不再需要呼叫 <xref:System.Object.Finalize%2A>。這可以消除其他記憶體回收行程的需求，並且縮短物件的存留期。  
+ The recommended design pattern to clean up unmanaged resources is to provide both an implicit and an explicit means to free those resources by using the <xref:System.Object.Finalize%2A?displayProperty=fullName> method and the <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> method, respectively. The garbage collector calls the <xref:System.Object.Finalize%2A> method of an object at some indeterminate time after the object is determined to be no longer reachable. After <xref:System.Object.Finalize%2A> is called, an additional garbage collection is required to free the object. The <xref:System.IDisposable.Dispose%2A> method allows the caller to explicitly release resources on demand, earlier than the resources would be released if left to the garbage collector. After it cleans up the unmanaged resources, <xref:System.IDisposable.Dispose%2A> should call the <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> method to let the garbage collector know that <xref:System.Object.Finalize%2A> no longer has to be called; this eliminates the need for the additional garbage collection and shortens the lifetime of the object.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請實作 <xref:System.IDisposable>。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement <xref:System.IDisposable>.  
   
-## 隱藏警告的時機  
- 如果型別未參考 Unmanaged 資源，則您可以放心地隱藏這項規則的警告。  否則，請勿隱藏這項規則的警告，因為實作 <xref:System.IDisposable> 失敗會導致 Unmanaged 資源無法使用或無法加以充分利用。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the type does not reference an unmanaged resource. Otherwise, do not suppress a warning from this rule because failure to implement <xref:System.IDisposable> can cause unmanaged resources to become unavailable or underused.  
   
-## 範例  
- 下列範例顯示的型別會實作 <xref:System.IDisposable> 以清除 Unmanaged 資源。  
+## <a name="example"></a>Example  
+ The following example shows a type that implements <xref:System.IDisposable> to clean up an unmanaged resource.  
   
- [!code-cs[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)]
- [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
+ [!code-csharp[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/CSharp/ca1049-types-that-own-native-resources-should-be-disposable_1.cs)] [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]  
   
-## 相關規則  
- [CA2115：使用原生資源時必須呼叫 GC.KeepAlive](../Topic/CA2115:%20Call%20GC.KeepAlive%20when%20using%20native%20resources.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2115: Call GC.KeepAlive when using native resources](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)  
   
- [CA1816：正確呼叫 GC.SuppressFinalize](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
+ [CA1816: Call GC.SuppressFinalize correctly](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)  
   
- [CA2216：可處置類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
+ [CA2216: Disposable types should declare finalizer](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
- [CA1001：具有可處置欄位的類型應該是可處置的](../Topic/CA1001:%20Types%20that%20own%20disposable%20fields%20should%20be%20disposable.md)  
+ [CA1001: Types that own disposable fields should be disposable](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
   
-## 請參閱  
- [Cleaning Up Unmanaged Resources](../Topic/Cleaning%20Up%20Unmanaged%20Resources.md)   
- [處置模式](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>See Also  
+ [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged)   
+ [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)

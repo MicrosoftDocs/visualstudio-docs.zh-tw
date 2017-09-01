@@ -1,79 +1,96 @@
 ---
-title: "CA2118：必須檢視 SuppressUnmanagedCodeSecurityAttribute 使用方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
-helpviewer_keywords: 
-  - "CA2118"
-  - "ReviewSuppressUnmanagedCodeSecurityUsage"
+title: 'CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2118
+- ReviewSuppressUnmanagedCodeSecurityUsage
+helpviewer_keywords:
+- ReviewSuppressUnmanagedCodeSecurityUsage
+- CA2118
 ms.assetid: 4cb8d2fc-4e44-4dc3-9b74-7f5838827d41
 caps.latest.revision: 20
-caps.handback.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA2118：必須檢視 SuppressUnmanagedCodeSecurityAttribute 使用方法
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: cdec0f1446b87f23be8f9da9014cd4fd3d3d05e2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Review SuppressUnmanagedCodeSecurityAttribute usage
 |||  
 |-|-|  
-|型別名稱|ReviewSuppressUnmanagedCodeSecurityUsage|  
+|TypeName|ReviewSuppressUnmanagedCodeSecurityUsage|  
 |CheckId|CA2118|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的型別或成員具有 <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> 屬性 \(Attribute\)。  
+## <a name="cause"></a>Cause  
+ A public or protected type or member has the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> attribute.  
   
-## 規則描述  
- 對於使用 COM Interop 或平台引動過程執行 Unmanaged 程式碼的成員，<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> 會變更安全性系統的預設行為。  通常，系統會針對 Unmanaged 程式碼的權限進行[資料與模型化](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)。  每次引動成員時，這個要求會發生於執行階段，並檢查呼叫堆疊中的每一個呼叫端是否具有使用權限。  當屬性存在時，系統會針對使用權限進行[Link Demands](../Topic/Link%20Demands.md)：當呼叫端是以 JIT 編譯時，會檢查立即呼叫端的使用權限。  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> changes the default security system behavior for members that execute unmanaged code using COM interop or platform invocation. Generally, the system makes a [Data and Modeling](/dotnet/framework/data/index) for unmanaged code permission. This demand occurs at run time for every invocation of the member, and checks every caller in the call stack for permission. When the attribute is present, the system makes a [Link Demands](/dotnet/framework/misc/link-demands) for the permission: the permissions of the immediate caller are checked when the caller is JIT-compiled.  
   
- 這個屬性主要是用於增加效能，不過，效能提升會伴隨顯著的安全性風險。  如果您將屬性置於呼叫原生 \(Native\) 方法的 public 成員，則呼叫堆疊中的呼叫端 \(不是立即呼叫端\) 不需要 Unmanaged 程式碼權限，即可執行 Unmanaged 程式碼。  根據 public 成員的動作及輸入處理，它可能允許不可信賴的呼叫端存取一般限制為可信賴程式碼的功能。  
+ This attribute is primarily used to increase performance; however, the performance gains come with significant security risks. If you place the attribute on public members that call native methods, the callers in the call stack (other than the immediate caller) do not need unmanaged code permission to execute unmanaged code. Depending on the public member's actions and input handling, it might allow untrustworthy callers to access functionality normally restricted to trustworthy code.  
   
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 會依賴安全性檢查，以防止呼叫端直接存取目前處理序 \(Process\) 的位址空間。  因為這個屬性會略過一般安全性，所以如果您的程式碼可以用於讀取或寫入處程序的記憶體，則它會引起嚴重的威脅。  請注意，風險不限於有意提供處理序記憶體存取權的方法。風險也會出現在惡意程式碼可以透過任何方法達成存取的任何案例中，例如，透過意外、不正確或無效的輸入。  
+ The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] relies on security checks to prevent callers from gaining direct access to the current process's address space. Because this attribute bypasses normal security, your code poses a serious threat if it can be used to read or write to the process's memory. Note that the risk is not limited to methods that intentionally provide access to process memory; it is also present in any scenario where malicious code can achieve access by any means, for example, by providing surprising, malformed, or invalid input.  
   
- 除非組件 \(Assembly\) 是從本機電腦執行，或是下列其中一個群組的成員，否則預設的安全性原則不會將 Unmanaged 程式碼權限授與組件：  
+ The default security policy does not grant unmanaged code permission to an assembly unless it is executing from the local computer or is a member of one of the following groups:  
   
--   My Computer Zone 程式碼群組  
+-   My Computer Zone Code Group  
   
--   Microsoft 強式名稱 \(Strong Name\) 程式碼群組  
+-   Microsoft Strong Name Code Group  
   
--   ECMA 強式名稱程式碼群組  
+-   ECMA Strong Name Code Group  
   
-## 如何修正違規  
- 仔細檢閱程式碼，以確定這個屬性是絕對必要的。  如果您不熟悉 Managed 程式碼安全性，或不了解使用這個屬性的安全性含意，請從程式碼中移除它。  如果需要此屬性，則必須確定呼叫端無法惡意地使用程式碼。  如果程式碼沒有執行 Unmanaged 程式碼的使用權限，則這個屬性不會有任何作用，因此應該將屬性移除。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ Carefully review your code to ensure that this attribute is absolutely necessary. If you are unfamiliar with managed code security, or do not understand the security implications of using this attribute, remove it from your code. If the attribute is required, you must ensure that callers cannot use your code maliciously. If your code does not have permission to execute unmanaged code, this attribute has no effect and should be removed.  
   
-## 隱藏警告的時機  
- 若要放心地隱藏這項規則的警告，您必須確定程式碼不會提供呼叫端存取原生作業或資源的權限，因為這種存取權限可能會遭到惡意使用。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ To safely suppress a warning from this rule, you must ensure that your code does not provide callers access to native operations or resources that can be used in a destructive manner.  
   
-## 範例  
- 下列範例會違反這項規則。  
+## <a name="example"></a>Example  
+ The following example violates the rule.  
   
- [!code-cs[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
+ [!code-csharp[FxCop.Security.TypesDoNotSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_1.cs)]  
   
-## 範例  
- 在下列範例中，`DoWork` 方法會提供平台引動方法 \(Platform Invocation Method\) `FormatHardDisk` 的可公開存取程式碼路徑。  
+## <a name="example"></a>Example  
+ In the following example, the `DoWork` method provides a publicly accessible code path to the platform invocation method `FormatHardDisk`.  
   
- [!code-cs[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
+ [!code-csharp[FxCop.Security.PInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_2.cs)]  
   
-## 範例  
- 在下列範例中，public 方法 `DoDangerousThing` 會導致違規。  若要解決此違規，應將 `DoDangerousThing` 變成私用 \(Private\)，並透過安全性要求所保護的 public 方法存取它，如同 `DoWork` 方法中所述。  
+## <a name="example"></a>Example  
+ In the following example, the public method `DoDangerousThing` causes a violation. To resolve the violation, `DoDangerousThing` should be made private, and access to it should be through a public method secured by a security demand, as illustrated by the `DoWork` method.  
   
- [!CODE [FxCop.Security.TypeInvokeAndSuppress#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress#1)]  
+ [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../code-quality/codesnippet/CSharp/ca2118-review-suppressunmanagedcodesecurityattribute-usage_3.cs)]  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName>   
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [Security Optimizations](http://msdn.microsoft.com/zh-tw/cf255069-d85d-4de3-914a-e4625215a7c0)   
- [資料與模型化](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)   
- [Link Demands](../Topic/Link%20Demands.md)
+ [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
+ [Security Optimizations](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0)   
+ [Data and Modeling](/dotnet/framework/data/index)  
+ [Link Demands](/dotnet/framework/misc/link-demands)  
+  

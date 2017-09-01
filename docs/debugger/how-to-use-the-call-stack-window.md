@@ -1,145 +1,161 @@
 ---
-title: "如何：使用呼叫堆疊視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.callstack"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "aspx"
-helpviewer_keywords: 
-  - "執行緒處理 [Visual Studio], 顯示來往的呼叫"
-  - "函式 [偵錯工具], 檢視呼叫堆疊上的程式碼"
-  - "反組譯程式碼"
-  - "中斷點, 呼叫堆疊視窗"
-  - "偵錯 [Visual Studio], 切換到另一個堆疊框架"
-  - "偵錯 [Visual Studio], [呼叫堆疊] 視窗"
-  - "[呼叫堆疊] 視窗, 檢視呼叫堆疊上函式的原始程式碼"
-  - "堆疊, 切換堆疊框架"
-  - "[呼叫堆疊] 視窗, 檢視呼叫堆疊上函式的反組譯程式碼"
+title: View the call stack in the Visual Studio debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/06/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.callstack
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+- aspx
+helpviewer_keywords:
+- threading [Visual Studio], displaying calls to or from
+- functions [debugger], viewing code on call stack
+- disassembly code
+- breakpoints, Call Stack window
+- debugging [Visual Studio], switching to another stack frame
+- debugging [Visual Studio], Call Stack window
+- Call Stack window, viewing source code for functions on the call stack
+- stack, switching stack frames
+- Call Stack window, viewing disassembly code for functions on the call stack
 ms.assetid: 5154a2a1-4729-4dbb-b675-db611a72a731
 caps.latest.revision: 40
-caps.handback.revision: 38
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：使用呼叫堆疊視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 83977d96d8e8503565f811608089279cfbef5d05
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-您可以使用 \[**呼叫堆疊**\] 視窗來檢視目前堆疊上的函式或程序呼叫。  
+---
+# <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-visual-studio-debugger"></a>View the call stack and use the Call Stack Window in the Visual Studio debugger
+
+By using the **Call Stack** window, you can view the function or procedure calls that are currently on the stack. The **Call Stack** window shows the order in which methods and functions are getting called. The call stack is a good way to examine and understand the execution flow of an app.
   
- \[**呼叫堆疊**\] 視窗會顯示每一個函式的名稱，以及撰寫函式時所使用的程式設計語言。  函式或程序名稱可能還會伴隨選擇性資訊，例如模組名稱、行號，以及參數名稱、類型和值。  您可以選擇開啟或關閉這個選擇性資訊。  
+When [debugging symbols](#bkmk_symbols) are not available for part of a call stack, the **Call Stack** window might not be able to display correct information for that part of the call stack. If that occurs, the following notation appears:  
   
- 執行指標目前所在的堆疊框架位置會以黃色箭頭識別。  根據預設，這就是資訊會顯示在來源、\[**反組譯碼**\]、\[**區域變數**\]、\[**監看式**\] 和 \[**自動變數**\] 視窗中的框架。  如果您想要將內容變更至堆疊上的其他框架，可以在 \[**呼叫堆疊**\] 視窗中進行這個動作。  
-  
- 當部分呼叫堆疊無法使用偵錯符號時，\[**呼叫堆疊**\] 視窗就無法顯示該部分呼叫堆疊的正確資訊。  就會出現下列標記法：  
-  
- \[下面的框架可能錯誤及\/或遺失，未載入 name.dll 的符號\]  
-  
- 在 Managed 程式碼中，\[**呼叫堆疊**\] 視窗預設為隱藏非使用者程式碼的資訊。  會出現下列標記法，而不是隱藏的資訊：  
-  
- **\[\<External Code\>\]**  
-  
- 非使用者程式碼是指任何不是 "My Code" 的程式碼。您可以使用捷徑功能表選擇顯示非使用者程式碼的呼叫堆疊資訊。  
-  
- 您可以使用捷徑功能表選擇是否要檢視執行緒之間的呼叫。  
-  
+`[Frames below may be incorrect and/or missing, no symbols loaded for name.dll]`
+
+>  [!NOTE]
+> The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse. 
+
 > [!NOTE]
->  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 \[說明\] 中所描述的不同。  若要變更設定，請選取 \[**工具**\] 功能表上的 \[**匯入和匯出設定**\]。  如需詳細資訊，請參閱 [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  The dialog boxes and menu commands you see might differ from those described here, depending on your active settings or edition. To change your settings, select **Import and Export Settings** on the **Tools** menu.  See [Personalizing the IDE](../ide/personalizing-the-visual-studio-ide.md)
   
-### 在中斷模式或執行模式中顯示呼叫堆疊視窗  
+## <a name="view-the-call-stack-while-in-the-debugger"></a>View the call stack while in the debugger 
   
--   在 \[**偵錯**\] 功能表上，選取 \[**視窗**\]，然後按一下 \[**呼叫堆疊**\]。  
+-   While debugging, in the **Debug** menu, select **Windows > Call Stack**.
+
+ ![Call Stack Window](../debugger/media/dbg_basics_callstack_window.png "CallStackWindow")
+
+A yellow arrow identifies the stack frame where the execution pointer is currently located. By default, this is the stack frame whose information appears in the source, **Locals**, **Autos**, **Watch**, and **Disassembly** windows. If you want to change the debugger context to another frame on the stack, you can do that by [switching to another stack frame](#bkmk_switch).   
   
-### 若要變更所顯示的選擇性資訊  
+## <a name="display-non-user-code-in-the-call-stack-window"></a>Display non-user code in the Call Stack window  
   
--   以滑鼠右鍵按一下 \[**呼叫堆疊**\] 視窗，然後設定或清除 \[**顯示 \<***the information that you want***\>**\]。  
+-   Right-click the **Call Stack** window and select **Show External Code**.
+
+Non-user code is any code that is not shown when [Just My Code](../debugger/just-my-code.md) is enabled. In managed code, non-user code frames are hidden by default. The following notation appears instead of the non-user code frames:  
   
-### 若要在呼叫堆疊視窗中顯示非使用者程式碼框架  
+**[\<External Code>]**  
   
--   以滑鼠右鍵按一下 \[**呼叫堆疊**\] 視窗，然後選取 \[**顯示外部程式碼**\]。  
+## <a name="bkmk_switch"></a> Switch to another stack frame (change the debugger context)
   
-### 若要切換到另一個堆疊框架  
+1.  In the **Call Stack** window, right-click the stack frame whose code and data that you want to view.
+
+    Or, you can double-click a frame in the **Call Stack** window to switch to the selected frame. 
   
-1.  在 \[**呼叫堆疊**\] 視窗中，以滑鼠右鍵按一下想要檢視之程式碼和資料的框架。  
+2.  Select **Switch to Frame**.  
   
-2.  選取 \[**切換至框架**\]。  
+     A green arrow with a curly tail appears next to the stack frame you selected. The execution pointer remains in the original frame, which is still marked with the yellow arrow. If you select **Step** or **Continue** from the **Debug** menu, execution will continue in the original frame, not the frame you selected.  
   
-     在您選取的框架旁邊會出現尾端彎曲的綠色箭號。  執行指標會留在原來的框架中，並仍以黃色箭頭標示。  如果您從 \[**偵錯**\] 功能表中選取 \[**逐步執行**\] 或 \[**繼續**\]，則會從原本的框架而非選取的框架繼續執行。  
+## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>View the source code for a function on the call stack  
   
-### 若要顯示與另一個執行緒之間的往來呼叫  
+-   In the **Call Stack** window, right-click the function whose source code you want to see and select **Go To Source Code**.
+
+## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Run to a specific function from the Call Stack window  
   
--   以滑鼠右鍵按一下 \[**呼叫堆疊**\] 視窗，然後選取 \[**包含至\/從其他執行緒的呼叫**\]。  
+-  In the **Call Stack** window, select the function, right-click and  choose **Run to Cursor**.  
   
-### 若要檢視呼叫堆疊上的函式的原始程式碼  
+## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Set a breakpoint on the exit point of a function call  
   
--   在 \[**呼叫堆疊**\] 視窗，以滑鼠右鍵按一下您要查看原始程式碼的函式，然後選取 \[**移至原始程式碼**\]。  
+-   See [Set a breakpoint at a call stack function](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+
+## <a name="display-calls-to-or-from-another-thread"></a>Display calls to or from another thread  
   
-### 若要以視覺化方式追蹤呼叫堆疊  
+-   Right-click the **Call Stack** window and select **Include Calls To/From Other Threads**.   
   
-1.  在 \[**呼叫堆疊**\] 視窗中，開啟捷徑功能表。  選擇 \[**在 Code Map 上顯示呼叫堆疊**\] \(鍵盤：**CTRL** \+ **SHIFT** \+ **\`**\)  
+## <a name="visually-trace-the-call-stack"></a>Visually trace the call stack  
+
+If you are using Visual Studio Enterprise (only), you can view code maps for the call stack while debugging.
+
+- In the **Call Stack** window, open the shortcut menu. Choose **Show Call Stack on Code Map**. (Keyboard: **CTRL** + **SHIFT** + **`**)  
   
-     請參閱 [進行偵錯時對應呼叫堆疊上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)。  
+    For detailed information, see [Map methods on the call stack while debugging](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
+
+![Show Call Stack on Code Map](../debugger/media/dbg_basics_show_call_stack_on_code_map.gif "ShowCallStackOnCodeMap")
   
-### 若要檢視呼叫堆疊上的函式的反組譯程式碼  
+## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack"></a>View the disassembly code for a function on the call stack  
   
--   在 \[**呼叫堆疊**\] 視窗中，以滑鼠右鍵按一下您要查看反組譯程式碼的函式，然後選取 \[**移至反組譯碼**\]。  
+-   In the **Call Stack** window, right-click the function whose disassembly code you want to see and select **Go To Disassembly**.    
+
+## <a name="change-the-optional-information-displayed"></a>Change the optional information displayed  
   
-### 若要從 \[呼叫堆疊\] 視窗執行至特定函式  
+-   Right-click the **Call Stack** window and set or clear **Show \<***the information that you want***>**.  
   
--   請參閱[執行至指定的位置或函式](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Run_to_a_specified_location_or_function)。  
+## <a name="bkmk_symbols"></a> Load Symbols for a module
+In the **Call Stack** window, you can load debugging symbols for code that does not currently have symbols loaded. These symbols can be .NET Framework or system symbols downloaded from the Microsoft public symbol servers or symbols in a symbol path on the computer that you are debugging.  
   
-### 若要在函式呼叫的結束點設定中斷點  
+See [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
   
--   請參閱[在原始程式行、組譯碼指令或呼叫堆疊函式設定中斷點](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_at_a_source_line__assembly_instruction__or_call_stack_function_)。  
+### <a name="to-load-symbols"></a>To load symbols  
   
-### 若要載入模組的符號  
+1.  In the **Call Stack** window, right-click the stack frame for which symbols are not loaded. The frame will be dimmed.  
   
--   在 \[**呼叫堆疊**\] 視窗中，以滑鼠右鍵按一下顯示您要重新載入符號之模組的框架，然後選取 \[**載入符號**\]。  
+2.  Point to **Load Symbols** and then click **Microsoft Symbol Servers** (if available) or browse to the symbol path.  
   
-## 載入符號  
- 在 \[**呼叫堆疊**\] 視窗中，您可以載入目前尚未載入符號之程式碼的偵錯符號。  這些符號可能是從 Microsoft 公用符號伺服器下載的 .NET Framework 或系統符號，或是您所偵錯之電腦上符號路徑中的符號。  
+### <a name="to-set-the-symbol-path"></a>To set the symbol path  
   
- 請參閱[指定符號 \(.pdb\) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)  
+1.  In the **Call Stack** window, choose **Symbol Settings** from the shortcut menu.  
   
-#### 若要載入符號  
+     The **Options** dialog box opens and the **Symbols** page is displayed.  
   
-1.  在 \[**呼叫堆疊**\] 視窗中，以滑鼠右鍵按一下未載入符號的框架。  該框架隨即變成暗灰色。  
+2.  Click **Symbol Settings**.  
   
-2.  指向 \[**載入符號來源**\]，然後按一下 \[**Microsoft 符號伺服器**\] 或 \[**符號路徑**\]。  
+3.  In the **Options** dialog box, click the Folder icon.  
   
-#### 若要設定符號路徑  
+     In the **Symbol file (.pdb) locations** box, a cursor appears.  
   
-1.  在 \[**呼叫堆疊**\] 視窗中，從捷徑功能表選擇 \[**符號設定**\]。  
+4.  Type a directory pathname to the symbol location on the computer that you are debugging. For local and remote debugging, this is a path on your local computer.
   
-     \[**選項**\] 對話方塊隨即開啟，並顯示 \[**符號**\] 頁面。  
+5.  Click **OK** to close the **Options** dialog box.  
   
-2.  按一下 \[**符號設定**\]。  
-  
-3.  在 \[**選項**\] 對話方塊中，按一下 \[資料夾\] 圖示。  
-  
-     游標隨即出現在 \[**符號檔 \(.pdb\) 位置**\] 方塊中。  
-  
-4.  輸入您要偵錯之電腦上符號位置的目錄路徑名稱。  在本機偵錯中，這是您的本機電腦；  在遠端偵錯中，則是遠端電腦。  
-  
-5.  按一下 \[**確定**\] 關閉 \[**選項**\] 對話方塊。  
-  
-## 請參閱  
- [呼叫堆疊視窗內的混合程式碼和遺失的資訊](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
- [如何：變更偵錯工具視窗的數值格式](../Topic/How%20to:%20Change%20the%20Numeric%20Format%20of%20Debugger%20Windows.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
- [指定符號 \(.pdb\) 和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [使用中斷點](../debugger/using-breakpoints.md)
+## <a name="see-also"></a>See Also  
+ [Mixed Code and Missing Information in the Call Stack Window](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md) [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)   
+ [Specify Symbol (.pdb) and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
+ [Using Breakpoints](../debugger/using-breakpoints.md)

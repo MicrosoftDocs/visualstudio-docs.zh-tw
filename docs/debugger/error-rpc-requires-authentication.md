@@ -1,38 +1,55 @@
 ---
-title: "錯誤：RPC 需要驗證 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.rpc_requires_authentication"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: 'Error: RPC Requires Authentication | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.error.rpc_requires_authentication
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 88362b3b-8fbe-431f-96a4-80e2d822bbc7
 caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# 錯誤：RPC 需要驗證
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 862fd47d67bc46bc727954739c8dd24218c69377
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-Visual Studio 偵錯工具無法連接至遠端電腦。  本機電腦上啟用了 RPC 原則，會阻止遠端偵錯進行。  
+---
+# <a name="error-rpc-requires-authentication"></a>Error: RPC Requires Authentication
+The Visual Studio debugger cannot connect to the remote computer. An RPC policy is enabled on the local computer which prevents remote debugging.  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>To correct this error  
   
-1.  執行 `\`*windir*`\system32\regedt32.exe`  
+1.  Run `\`*windir*`\system32\regedt32.exe`  
   
-2.  找出並刪除 `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`。  
+2.  Locate and delete `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
   
-3.  重新啟動您的電腦，如此登錄變更才會生效。  
+3.  Restart your computer so the registry change will take effect.  
   
-4.  如果問題仍然存在，請洽詢網域管理員有關 \[電腦設定\]\-\>\[系統管理範本\]\-\>\[系統\]\-\>\[遠端程序呼叫\]\-\>\[未經驗證的 RPC 用戶端限制\] 的群組原則設定。
+4.  If the problem persists, contact your domain administrator about the **Computer Configuration > Administrative Templates > System > Remote Procedure Call > Restrictions for Unauthenticated RPC clients** group policy setting.

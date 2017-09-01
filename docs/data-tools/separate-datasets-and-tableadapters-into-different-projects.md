@@ -1,69 +1,83 @@
 ---
-title: "如何：將資料集和 TableAdapters 分成不同的專案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "N-Tier 應用程式, 區隔資料集和 TableAdapter"
-  - "TableAdapter, N-Tier 應用程式"
+title: Separate datasets and TableAdapters into different projects | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- TableAdapters, n-tier applications
+- n-tier applications, separating Datasets and TableAdapters
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 caps.latest.revision: 18
-caps.handback.revision: 15
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: afb7a5b527ba91d1e495d0c51653894bf4b861da
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：將資料集和 TableAdapters 分成不同的專案
-具型別資料集經過強化，所以 [TableAdapter](../Topic/TableAdapters.md) 和資料集類別可以產生至不同的專案中。  可以讓您迅速區隔應用程式層，並產生 N\-Tier 資料應用程式。  
+# <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separate datasets and TableAdapters into different projects
+Typed datasets have been enhanced so that the [TableAdapters](create-and-configure-tableadapters.md) and dataset classes can be generated into separate projects. This enables you to quickly separate application layers and generate n-tier data applications.  
   
- 下列程序描述使用 [建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)將資料集程式碼產生至專案中的程序，此專案不同於內含產生的 `TableAdapter` 程式碼之專案。  
+ The following procedure describes the process of using the **Dataset Designer** to generate dataset code into a project that is separate from the project that contains the generated TableAdapter code.  
   
-## 區隔資料集和 TableAdapter  
- 當您區隔資料集程式碼和 `TableAdapter` 程式碼時，內含資料集程式碼的專案必須位於目前方案中。  如果這個專案不在目前的方案中，就不會列在 \[**屬性**\] 視窗中的 \[**DataSet 專案**\] 清單中。  
+## <a name="separate-datasets-and-tableadapters"></a>Separate datasets and TableAdapters  
+When you separate dataset code from TableAdapter code, the project that  contains the dataset code must be located in the current solution. If this project is not located in the current solution, it won't be available in the **DataSet Project** list in the **Properties** window.  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### 若要將資料集分成不同的專案  
+#### <a name="to-separate-the-dataset-into-a-different-project"></a>To separate the dataset into a different project  
   
-1.  開啟內含資料集的方案 \(.xsd 檔案\)。  
-  
-    > [!NOTE]
-    >  如果方案中不含您要分隔資料集程式碼的專案，請建立一個專案或將現有專案加入至方案中。  
-  
-2.  在 \[**方案總管**\] 中，按兩下具型別資料集檔案 \(.xsd 檔案\)，在 \[**DataSet 設計工具**\] 中開啟資料集。  
-  
-3.  按一下 \[**DataSet 設計工具**\] 中空白的區域。  
-  
-4.  找出 \[**屬性**\] 視窗中的 \[**DataSet 專案**\] 節點。  
-  
-5.  在 \[**DataSet 專案**\] 清單中，按一下您要在其中產生資料集程式碼的專案名稱。  
-  
-     在您按一下要產生資料集程式碼的專案後，\[**DataSet 檔案**\] 屬性中就會填入預設的檔案名稱。  如果需要，您可以變更這個名稱。  此外，如果您要將資料集程式碼產生至特定目錄中，可以將 \[**Project 資料夾**\] 屬性設定為資料夾的名稱。  
+1.  Open a solution that contains a dataset (.xsd file).  
   
     > [!NOTE]
-    >  當您藉由設定 \[**資料集專案**\] 屬性分隔 TableAdapter 和資料集時，專案中現有的部分資料集類別不會自動移動。  您必須將現有的資料集部分類別手動移至資料集專案。  
+    >  If the solution does not contain the project into which you want to separate your dataset code, create the project, or add an existing project to the solution.  
   
-6.  儲存資料集。  
+2.  Double-click a typed dataset file (an .xsd file) in **Solution Explorer** to open the dataset in the **Dataset Designer**.  
   
-     資料集程式碼會產生至您在 \[**DataSet 專案**\] 屬性中所選取的專案，而 **TableAdapter** 程式碼會產生至目前的專案。  
+3.  Select an empty area of the **Dataset Designer**.  
   
- 根據預設，當您分隔資料集和 `TableAdapter` 程式碼時，產生的結果是每一個專案中都有一個類別檔。  原始專案都有一個名稱為 DatasetName.Designer.vb \(或 DatasetName.Designer.cs\) 的檔案，內含 `TableAdapter` 程式碼。  \[**資料集專案**\] 屬性中指定的專案有一個名稱為 DatasetName.DataSet.Designer.vb \(或 DatasetName.DataSet.Designer.cs\) 的檔案，內含資料集程式碼。  
+4.  In the **Properties** window, locate the **DataSet Project** node.  
+  
+5.  In the **DataSet Project** list, select the name of the project into which you want to generate the dataset code.  
+  
+     After you select the project into which you want to generate the dataset code, the **DataSet File** property is populated with a default file name. You can change this name if necessary. Additionally, if you want to generate the dataset code into a specific directory, you can set the **Project Folder** property to the name of a folder.  
+  
+    > [!NOTE]
+    >  When you separate datasets and TableAdapters (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing partial dataset classes must be  moved manually to the dataset project.  
+  
+6.  Save the dataset.  
+  
+     The dataset code is generated into the selected project in the **DataSet Project** property, and the **TableAdapter** code is generated into the current project.  
+  
+ By default, after you separate the dataset and TableAdapter code, the result is a discrete class file in each project. The original project has a file  named DatasetName.Designer.vb (or DatasetName.Designer.cs) that contains the TableAdapter code. The project that's designated in the **Dataset Project** property has a file named DatasetName.DataSet.Designer.vb (or DatasetName.DataSet.Designer.cs) that contains the dataset code.  
   
 > [!NOTE]
->  選取資料集或 `TableAdapter` 專案後，請按一下 \[**方案總管**\] 中的 \[**顯示所有檔案**\] 以檢視產生的類別檔。  
+>  To view the generated class file, select the dataset or TableAdapter project. Then, in **Solution Explorer**, select **Show All Files**.  
   
-## 請參閱  
- [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
- [逐步解說：建立 N\-Tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
- [階層式更新](../data-tools/hierarchical-update.md)   
- [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   
- [ADO.NET](../Topic/ADO.NET.md)
+## <a name="see-also"></a>See Also  
+ [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)   
+ [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
+ [Hierarchical update](../data-tools/hierarchical-update.md)   
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
+ [ADO.NET](/dotnet/framework/data/adonet/index)

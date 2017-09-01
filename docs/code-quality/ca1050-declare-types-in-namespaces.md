@@ -1,55 +1,71 @@
 ---
-title: "CA1050：在命名空間中宣告類型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1050"
-  - "DeclareTypesInNamespaces"
-helpviewer_keywords: 
-  - "CA1050"
-  - "DeclareTypesInNamespaces"
+title: 'CA1050: Declare types in namespaces | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1050
+- DeclareTypesInNamespaces
+helpviewer_keywords:
+- DeclareTypesInNamespaces
+- CA1050
 ms.assetid: 1002748d-ac8d-404f-85dd-7a12d1ad3e05
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1050：在命名空間中宣告類型
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c8027dcac0515017a1e71c839f00cf84c8073ae2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declare types in namespaces
 |||  
 |-|-|  
-|型別名稱|DeclareTypesInNamespaces|  
+|TypeName|DeclareTypesInNamespaces|  
 |CheckId|CA1050|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的型別被定義在具名命名空間的範圍之外。  
+## <a name="cause"></a>Cause  
+ A public or protected type is defined outside the scope of a named namespace.  
   
-## 規則描述  
- 型別會在命名空間中宣告以防止名稱衝突，而且可當做組織物件階層架構中相關型別的一種方法。  在任何具名命名空間之外的型別會在全域命名空間中 \(該全域命名空間不可在程式碼中參考\)。  
+## <a name="rule-description"></a>Rule Description  
+ Types are declared in namespaces to prevent name collisions, and as a way to organize related types in an object hierarchy. Types that are outside any named namespace are in a global namespace that cannot be referenced in code.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將型別放置在命名空間中。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, place the type in a namespace.  
   
-## 隱藏警告的時機  
- 雖然不一定要隱藏這項規則的警告，但是當此組件 \(Assembly\) 絕對不會和其他組件一起使用時，這麼做並沒有安全顧慮。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Although you never have to suppress a warning from this rule, it is safe to do this when the assembly will never be used together with other assemblies.  
   
-## 範例  
- 下列範例顯示具有在命名空間外未正確宣告之型別的程式庫，以及在命名空間中以相同名稱宣告的型別。  
+## <a name="example"></a>Example  
+ The following example shows a library that has a type incorrectly declared outside a namespace, and a type that has the same name declared in a namespace.  
   
- [!code-cs[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)]
- [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
+ [!code-csharp[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_1.cs)] [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]  
   
-## 範例  
- 下列應用程式會使用先前定義的程式庫。  請注意，當名稱 `Test` 不符合命名空間的資格時，會建立在命名空間之外宣告的型別。  另外必須注意的是，若要存取 `Goodspace` 中的 `Test` 型別，則必須有命名空間名稱。  
+## <a name="example"></a>Example  
+ The following application uses the library that was defined previously. Note that the type that is declared outside a namespace is created when the name `Test` is not qualified by a namespace. Note also that to access the `Test` type in `Goodspace`, the namespace name is required.  
   
- [!CODE [FxCop.Design.TestTypesLive#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.TestTypesLive#1)]
+ [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)] [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

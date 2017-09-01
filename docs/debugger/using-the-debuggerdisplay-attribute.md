@@ -1,109 +1,126 @@
 ---
-title: "使用 DebuggerDisplay 屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "屬性 [C#]，偵錯工具"
-  - "DebuggerDisplay 屬性"
-  - "DebuggerDisplayAttribute 類別"
+title: Using the DebuggerDisplay Attribute | Microsoft Docs
+ms.custom: 
+ms.date: 08/09/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- attributes [C#], debugger
+- DebuggerDisplay attribute
+- DebuggerDisplayAttribute class
 ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 47
-caps.handback.revision: 47
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 使用 DebuggerDisplay 屬性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9c79cbf6f99ada07f84e54495ed492595f9b4ea0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-[DebuggerDisplayAttribute 類別](../Topic/DebuggerDisplayAttribute%20Class.md) 控制物件、屬性或欄位在偵錯工具變數視窗中顯示的方式。 這個屬性可以適用於類型、委派、屬性、欄位和組件。  
+---
+# <a name="using-the-debuggerdisplay-attribute"></a>Using the DebuggerDisplay Attribute
+The [DebuggerDisplayAttribute Class](/dotnet/api/system.diagnostics.debuggerdisplayattribute) controls how an object, property, or field is displayed in the debugger variable windows. This attribute can be applied to types, delegates, properties, fields, and assemblies.  
   
- `DebuggerDisplay` 屬性有單一引數，這是要在類型執行個體的 \[值\] 一欄中顯示的字串。 這個字串可以包含括號 \(`{` 和 `}`\)。 一對括號內的文字會評估為欄位、屬性或方法。  
+ The `DebuggerDisplay` attribute has a single argument, which is a string to be displayed in the value column for instances of the type. This string can contain braces (`{` and `}`). Text within a pair of braces is evaluated as a field, property or method.  
   
- 如果類別具有覆寫的 `ToString()` 方法，偵錯工具會使用覆寫的方法，而非預設的`{<typeName>}`。 因此，如果您已覆寫 `ToString()` 方法，偵錯工具就會使用覆寫的方法，而非預設的 `{<typeName>}`，而且您不需要使用 `DebuggerDisplay`。 若兩者都使用，`DebuggerDisplay` 屬性會優先於覆寫的 `ToString()` 方法。  
+ If a class has an overridden `ToString()` method, the debugger uses the overridden method instead of the default `{<typeName>}`. Thus, if you have overridden the `ToString()` method, the debugger uses the overridden method instead of the default`{<typeName>}`, and you do not have to use `DebuggerDisplay`. If you use both, the `DebuggerDisplay` attribute takes precedence over the  overridden `ToString()` method.  
   
- 偵錯工具是否評估這個隱含 `ToString()` 呼叫，是取決於 \[工具 \/ 選項 \/ 偵錯\] 對話方塊中的使用者設定。 Visual Basic 並未實作這個隱含 `ToString()` 評估。  
+ Whether the debugger evaluates this implicit `ToString()` call depends on a user setting in the **Tools / Options / Debugging** dialog box . Visual Basic does not implement this implicit `ToString()` evaluation.  
   
 > [!IMPORTANT]
->  如果已核取 \[工具\/選項 \/ 偵錯\] 對話方塊中的 \[在變數視窗中顯示物件的原始結構\] 核取方塊，即忽略 `DebuggerDisplay` 屬性。  
+>  If the **Show raw structure of objects in variables windows** check box is selected in the **Tools /Options / Debugging** dialog box, then the `DebuggerDisplay` attribute is ignored.  
   
- 下表說明 `DebuggerDisplay` 屬性的一些可能用法和範例輸出。  
+ The following table shows some possible uses of the `DebuggerDisplay` attribute and example outputs.  
   
-|屬性|出現在 \[**值**\] 欄中的輸出|  
-|--------|-------------------------|  
-|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> 用於具有 `x` 和 `y` 欄位的類型。|`x = 5 y = 18`|  
-|`[DebuggerDisplay("String value is {getString()}")]`參數語法會因語言而有所不同。 因此，請小心使用。|`String value is [5, 6, 6]`|  
+|Attribute|Output appearing in the Value column|  
+|---------------|------------------------------------------------|  
+|`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Used on a type with fields `x` and `y`.|`x = 5 y = 18`|  
+|`[DebuggerDisplay("String value is {getString()}")]`Parameter syntax can vary between languages. Therefore, use it with care.|`String value is [5, 6, 6]`|  
   
- `DebuggerDisplay` 也可以接受具名參數。  
+ `DebuggerDisplay` can also accept named parameters.  
   
-|參數|用途|  
-|--------|--------|  
-|`Name`, `Type`|這些參數會影響變數視窗的 \[**名稱**\] 和 \[**類型**\] 欄  \(它們可以設定為與建構函式使用相同語法的字串\)。過度使用或不當使用這些參數，會造成輸出混淆。|  
-|`Target`, `TargetTypeName`|指定屬性在組件層級使用時的目標類型。|  
+|Parameters|Purpose|  
+|----------------|-------------|  
+|`Name`, `Type`|These parameters affect the **Name** and **Type** columns of the variable windows. (They can be set to strings using the same syntax as the constructor.)Overusing these parameters, or using them incorrectly, can cause confusing output.|  
+|`Target`, `TargetTypeName`|Specifies the target type when the attribute is used at the assembly level.|  
   
- Autoexp.cs 檔案會在組件層級使用 DebuggerDisplay 屬性。 Autoexp.cs 檔案會決定 Visual Studio 用於 .NET 物件使用的預設展開 \(Expansion\)。 您可以檢查 autoexp.cs 檔案以取得如何使用 DebuggerDisplay 屬性的範例，或修改和編譯 autoexp.cs 檔案以變更預設展開 \(Expansion\)。 請務必先備份 autoexp.cs 檔案，再進行修改。  
+ The autoexp.cs file uses the DebuggerDisplay attribute at the assembly level. The autoexp.cs file determines the default expansions that Visual Studio uses for .NET objects. You can examine the autoexp.cs file for examples of how to use the DebuggerDisplay attribute, or you can modify and compile the autoexp.cs file to change the default expansions. Be sure to back up the autoexp.cs file before you modify it.  
   
- 若要建置 autoexp.cs，請開啟 VS2015 的開發人員命令提示字元，然後執行下列命令  
+ To build autoexp.cs, open up a Developer Command Prompt for VS2015, and run the following commands  
   
 ```  
 cd <directory containing autoexp.cs>  
 csc /t:library autoexp.cs  
 ```  
   
- 對 autoexp.dll 所做的變更將會在下一個偵錯工作階段中選出。  
+ The changes to autoexp.dll will be picked up in the next debug session.  
   
-## 在 DebuggerDisplay 中使用運算式  
- 雖然您可以在 DebuggerDisplay 屬性中使用大括號括住的一般運算式，但不建議採取這種做法。  
+## <a name="using-expressions-in-debuggerdisplay"></a>Using Expressions in DebuggerDisplay  
+ Although you can use a general expression between the braces in a DebuggerDisplay attribute, this practice is not recommended.  
   
- DebuggerDisplay 中的一般運算式只能隱含存取目標類型之目前執行個體的 `this` 指標。 運算式無法存取別名、區域變數或指標。 如果運算式參考屬性 \(Property\)，則不會處理這些屬性 \(Property\) 中的屬性 \(Attribute\)。 例如，如果欄位 `[DebuggerDisplay("Object {count - 2}"`  為 8，則 C\# 程式碼 `Object 6` 會顯示 `count`。  
+ A general expression in DebuggerDisplay has implicit access to the `this` pointer for the current instance of the target type only. The expression has no access to aliases, locals, or pointers. If the expression references properties, attributes on those properties are not processed. For example, the C# code `[DebuggerDisplay("Object {count - 2}"`  would display `Object 6` if the field `count` was 8.  
   
- 在 DebuggerDisplay 中使用運算式可能導致下列問題：  
+ Using expressions in DebuggerDisplay can lead to the following issues:  
   
--   評估運算式是偵錯工具中最昂貴的作業，而且每次顯示運算式時都會進行評估。 這可能會在逐步執行程式碼時導致效能問題。 例如，若集合或清單中的元素數目很大，則用於顯示其中值的複雜運算式執行速度可能會非常慢。  
+-   Evaluating expressions is the most expensive operation in the debugger and the expression is evaluated each time it is displayed. This can cause performance issues in stepping through code. For example, a complex expression that is used to display the values in a collection or list can be very slow when the number of elements is large.  
   
--   運算式是由使用目前堆疊框架語言的運算式評估工具進行評估，而不是由撰寫運算式之語言的評估工具進行評估。 這種情況可能會在語言不同時導致無法預測的結果。  
+-   Expressions are evaluated by the expression evaluator of the language of the current stack frame and not by the evaluator of the language in which the expression was written. This can cause unpredictable results when the languages are different.  
   
--   評估運算式可能會變更應用程式的狀態。 例如，設定屬性值的運算式會改變執行程式碼中的屬性值。  
+-   Evaluating an expression can change the state of the application. For example, an expression that sets the value of a property mutates the property value in the executing code.  
   
- 減少運算式評估可能出現之問題的其中一種方法，是建立私用屬性來執行作業並傳回字串。 這樣 DebuggerDisplay 屬性就可以顯示該私用屬性的值。 下列範例將實作這個模式：  
+ One way to reduce the possible problems of expression evaluation is by creating a private property that performs the operation and returns a string. The DebuggerDisplay attribute can then display the value of that private property. The following example implements this pattern:  
   
-```c#  
+```CSharp  
 [DebuggerDisplay("{DebuggerDisplay,nq}")]  
 public sealed class MyClass   
-{      
-    public int count { get; set; }      
-    public bool flag { get; set; }      
+{      
+    public int count { get; set; }      
+    public bool flag { get; set; }      
     private string DebuggerDisplay  
-   {         
+   {         
         get  
         {  
              return string.Format("("Object {0}", count - 2);  
-        }      
+        }      
     }  
 }  
 ```  
   
-## 範例  
- 下列程式碼範例將示範如何使用 `DebuggerDisplay` 搭配 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在偵錯工具變數視窗中檢視時 \(例如 \[**監看式**\] 視窗\)，它會產生類似下面所示的展開：  
+## <a name="example"></a>Example  
+ The following code example shows how to use `DebuggerDisplay`, together with `DebuggerBrowseable` and `DebuggerTypeProxy`. When viewed in a debugger variables window, such as the **Watch** window, it produces an expansion that looks like this:  
   
-|**名稱**|**值**|**類型**|  
-|------------|-----------|------------|  
-|索引鍵|"three"|object {string}|  
-|值|3|object {int}|  
+|**Name**|**Value**|**Type**|  
+|--------------|---------------|--------------|  
+|Key|"three"|object {string}|  
+|Value|3|object {int}|  
   
-```c#  
+```CSharp  
 [DebuggerDisplay("{value}", Name = "{key}")]  
 internal class KeyValuePairs  
 {  
@@ -179,7 +196,8 @@ class MyHashtable
 }  
 ```  
   
-## 請參閱  
- [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
- [顯示自訂資料類型](../debugger/create-custom-views-of-dot-managed-objects.md)   
- [Enhancing Debugging with the Debugger Display Attributes](../Topic/Enhancing%20Debugging%20with%20the%20Debugger%20Display%20Attributes.md)
+## <a name="see-also"></a>See Also  
+ [Using DebuggerTypeProxy Attribute](../debugger/using-debuggertypeproxy-attribute.md)   
+ [Create custom views of managed objects](../debugger/create-custom-views-of-dot-managed-objects.md)   
+ [Format specifiers in C#](../debugger/format-specifiers-in-csharp.md)   
+ [Enhancing Debugging with the Debugger Display Attributes](/dotnet/framework/debug-trace-profile/enhancing-debugging-with-the-debugger-display-attributes)

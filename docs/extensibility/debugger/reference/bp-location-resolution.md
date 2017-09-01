@@ -1,51 +1,68 @@
 ---
-title: "BP_LOCATION_RESOLUTION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_RESOLUTION"
-helpviewer_keywords: 
-  - "BP_LOCATION_RESOLUTION 結構"
+title: BP_LOCATION_RESOLUTION | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- BP_LOCATION_RESOLUTION
+helpviewer_keywords:
+- BP_LOCATION_RESOLUTION structure
 ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# BP_LOCATION_RESOLUTION
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 83c909eac8932821b4199b902e3aa533be4217b6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-說明解決方案的特定位置的中斷點。  
+---
+# <a name="bplocationresolution"></a>BP_LOCATION_RESOLUTION
+Describes the resolution of a breakpoint at a specific location.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct _BP_LOCATION_RESOLUTION {   
-   IDebugBreakpointResolution2* pResolution;  
+```cpp  
+typedef struct _BP_LOCATION_RESOLUTION {   
+   IDebugBreakpointResolution2* pResolution;  
 } BP_LOCATION_RESOLUTION;  
 ```  
   
-## Members  
+## <a name="members"></a>Members  
  pResolution  
- [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)的型別決定中斷點和其解析度資訊的物件。  
+ The [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) object that determines the type of the breakpoint and its resolution information.  
   
-## 備註  
- 這個結構屬於[BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)的聯集一部分的結構。  
+## <a name="remarks"></a>Remarks  
+ This structure is a member of the [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) structure as part of a union.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

@@ -1,56 +1,73 @@
 ---
-title: "IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetResolutionInfo"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpointResolution2::GetResolutionInfo"
+title: IDebugErrorBreakpointResolution2::GetResolutionInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugErrorBreakpointResolution2::GetResolutionInfo
+helpviewer_keywords:
+- IDebugErrorBreakpointResolution2::GetResolutionInfo
 ms.assetid: d94c4f60-8796-4848-86ee-186bbaa613f5
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugErrorBreakpointResolution2::GetResolutionInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 766648f84056efc252f3db66085a766fce38ffa0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得中斷點解析度錯誤資訊。  
+---
+# <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
+Gets the breakpoint error resolution information.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetResolutionInfo(   
-   BPERESI_FIELDS            dwFields,  
-   BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo  
+```cpp  
+HRESULT GetResolutionInfo(   
+   BPERESI_FIELDS            dwFields,  
+   BP_ERROR_RESOLUTION_INFO* pErrorResolutionInfo  
 );  
 ```  
   
-```c#  
-int GetResolutionInfo(   
-   enum_BPERESI_FIELDS        dwFields,  
-   BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo  
+```csharp  
+int GetResolutionInfo(   
+   enum_BPERESI_FIELDS        dwFields,  
+   BP_ERROR_RESOLUTION_INFO[] pErrorResolutionInfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- \[in\]從的旗標組合[BPERESI\_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)列舉型別，決定哪一個欄位的`pErrorResolutionInfo`都必須填寫。  
+ [in] A combination of flags from the [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeration that determine which fields of `pErrorResolutionInfo` are to be filled out.  
   
  `pErrorResolutionInfo`  
- 輸入 \[、 輸出\][BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)會被填入的中斷點解析度描述的結構。  
+ [in, out] The [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure that is filled in with the description of the breakpoint resolution.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 範例  
- 下列範例會實作這個方法的簡單的`CDebugErrorBreakpointResolution`物件，公開 \(expose\) [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。  
+## <a name="example"></a>Example  
+ The following example implements this method for a simple `CDebugErrorBreakpointResolution` object that exposes the [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interface.  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(  
@@ -150,7 +167,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [BPERESI\_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)   
- [BP\_ERROR\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)
+ [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)   
+ [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)

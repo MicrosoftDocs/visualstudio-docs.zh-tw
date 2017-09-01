@@ -1,5 +1,5 @@
 ---
-title: "在 Visual Studio 中分析記憶體使用量 | Microsoft Docs"
+title: Analyze Memory Usage in Visual Studio | Microsoft Docs
 ms.custom: H1Hack27Feb2017
 ms.date: 04/25/2017
 ms.reviewer: 
@@ -28,159 +28,162 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b2308ef41ea8068c153d286f58dcf8ac4c581ddd
+ms.translationtype: HT
+ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
+ms.openlocfilehash: 56ff9bcee976de7ae6be4bc410c275438f0f16ec
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/23/2017
 
 ---
-# <a name="analyze-memory-usage"></a>分析記憶體使用量
-當您進行偵錯時，您可以使用與偵錯工具整合的 [記憶體使用量] 診斷工具，來找出記憶體遺漏和記憶體使用沒有效率等問題。 記憶體使用量工具可讓您擷取 Managed 和原生記憶體堆積的一個或多個 *「快照」* (Snapshot)。 您可以收集 .NET、原生或混合模式 (.NET 和原生) 應用程式的快照。  
+# <a name="analyze-memory-usage"></a>Analyze Memory Usage
+Find memory leaks and inefficient memory while you're debugging with the debugger-integrated **Memory Usage** diagnostic tool. The Memory Usage tool lets you take one or more *snapshots* of the managed and native memory heap. You can collect snapshots of .NET, native, or mixed mode (.NET and native) apps.  
   
--   您可以分析一份快照，了解物件類型對於記憶體使用的相對影響，並找出應用程式中無效率使用記憶體的程式碼。  
+-   You can analyze a single snapshot to understand the relative impact of the object types on memory use, and to find code in your app that uses memory inefficiently.  
   
--   您也可以比較 (差異比對) 應用程式的兩個快照，找出造成記憶體使用量隨著時間逐漸增加的程式碼部分。  
+-   You can also compare (diff) two snapshots of an app to find areas in your code that cause the memory use to increase over time.  
   
- 下圖顯示 [診斷工具] 視窗 (於 Visual Studio 2015 Update 1 及更新版本中提供)：  
+ The following graphic shows the **Diagnostic Tools** window (available in Visual Studio 2015 Update 1 and later versions):  
   
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")  
   
- 除了可以在 **記憶體使用量** 工具中收集任何時間的記憶體快照之外，您還可以使用 Visual Studio 偵錯工具，來控制調查效能問題時要如何執行應用程式。 設定中斷點、逐步偵錯、全部中斷和其他偵錯工具動作，都可以協助您將效能調查工作集中在最相關的程式碼路徑上。 在應用程式執行時進行那些動作，可排除您不感興趣之程式碼的干擾，並可大幅縮短診斷問題所需的時間。  
+ Although you can collect memory snapshots at any time in the **Memory Usage** tool, you can use the Visual Studio debugger to control how your application executes while investigating performance issues. Setting breakpoints, stepping, Break All, and other debugger actions can help you focus your performance investigations on the code paths that are most relevant. Performing those actions while your app is running can eliminate the noise from the code that doesn't interest you and can significantly reduce the amount of time it takes you to diagnose an issue.  
   
- 您也可以在偵錯工具外部使用記憶體工具。 請參閱 [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md)。  
+ You can also use the memory tool outside of the debugger. See [Memory Usage without Debugging](../profiling/memory-usage-without-debugging2.md).  
   
 > [!NOTE]
->  **自訂配置器支援** 原生記憶體分析工具的運作方式是收集在執行階段所發出的配置 [ETW](https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803\(v=vs.85\).aspx) 事件資料。  在來源層級已註釋 CRT 和 Windows SDK 中的配置器，以便擷取其配置資料。  如果您正在撰寫自己的配置器，則針對任何將指標傳回最新配置之堆積記憶體的函式，都可以使用 [__declspec](/cpp/cpp/declspec)(allocator) 來裝飾，如本範例中針對 myMalloc 所示：  
+>  **Custom Allocator Support** The native memory profiler works by collecting allocation [ETW](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) event data emitted by during runtime.  Allocators in the CRT and Windows SDK have been annotated at the source level so that their allocation data can be captured.  If you are writing your own allocators, then any functions that return a pointer to newly allocated heap memory can be decorated with [__declspec](/cpp/cpp/declspec)(allocator), as seen in this example for myMalloc:  
 >   
 >  `__declspec(allocator) void* myMalloc(size_t size)` 
 
-## <a name="collect-memory-usage-data"></a>收集記憶體使用量資料
+## <a name="collect-memory-usage-data"></a>Collect memory usage data
 
-1.  開啟您想要在 Visual Studio 中偵錯的專案，並於應用程式中要開始檢查記憶體使用量的位置設定中斷點。
+1.  Open the project you want to debug in Visual Studio and set a breakpoint in your app at the point where you want to begin examining memory usage.
 
-    如果您懷疑某個區域具有記憶體問題，請在記憶體問題發生之前設定第一個中斷點。
+    If you have an area where you suspect a memory issue, set the first breakpoint before the memory issue occurs.
 
     > [!TIP]
-    >  由於當應用程式頻繁地配置和解除配置記憶體時，擷取您感興趣之作業的記憶體設定檔可能會是項挑戰，因此請在作業開始和結束處 (或是逐項順著作業) 設定中斷點，以找出記憶體變更的實際點。 
+    >  Because it can be challenging to capture the memory profile of an operation that interests you when your app frequently allocates and de-allocates memory, set breakpoints at the start and end of the operation (or step through the operation) to find the exact point that memory changed. 
 
-2.  在您想要分析的函式或程式碼區域結尾 (或是在可能的記憶體問題發生之後) 設定第二個中斷點。
+2.  Set a second breakpoint at the end of the function or region of code that you want to analyze (or after a suspected memory issue occurs).
   
-3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] / [視窗] / [顯示診斷工具]。
+3.  The **Diagnostic Tools** window appears automatically unless you have turned it off. To bring up the window again, click **Debug / Windows / Show Diagnostic Tools**.
 
-4.  以工具列上的 [選取工具] 設定選擇 [記憶體使用量]。
+4.  Choose **Memory Usage** with the **Select Tools** setting on the toolbar.
 
-     ![顯示診斷工具](~/profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Show Diagnostics Tools](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
-5.  按一下 [偵錯/開始偵錯]\(或工具列上的 [開始] 或 **F5**)。
+5.  Click **Debug / Start Debugging** (or **Start** on the toolbar, or **F5**).
 
-     當應用程式完成載入時，會出現 [Diagnostics Tools (診斷工具)] 的 [Summary (摘要)] 檢視。
+     When the app finishes loading, the Summary view of the Diagnostics Tools appears.
 
-     ![診斷工具摘要索引標籤](~/profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Diagnostics Tools Summary Tab](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  由於收集記憶體資料可能會影響原生或混合模式應用程式的偵錯效能，因此預設會停用記憶體快照。 若要在原生或混合模式應用程式中啟用快照，請啟動偵錯工作階段 (快速鍵：**F5**)。 在顯示 [診斷工具] 視窗時，選擇 [記憶體使用量] 索引標籤，然後選擇 [堆積程式碼剖析]。  
+     >  Because collecting memory data can affect the debugging performance of your native or mixed-mode apps, memory snapshots are disabled by default. To enable snapshots in native or mixed-mode apps, start a debugging session (Shortcut key: **F5**). When the **Diagnostic Tools** window appears, choose the Memory Usage tab, and then choose **Heap Profiling**.  
      >   
-     >  ![啟用快照](~/profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+     >  ![Enable snapshots](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
      >   
-     >  停止 (快速鍵： **Shift + F5**) 並重新啟動偵錯。  
+     >  Stop (Shortcut key: **Shift + F5**) and restart debugging.  
 
-6.  若要在偵錯工作階段開始時擷取快照，請選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。 (在此設定中斷點也可能會有幫助)。
+6.  To take a snapshot at the start of your debugging session, choose **Take snapshot** on the **Memory Usage** summary toolbar. (It may help to set a breakpoint here as well.)
 
-    ![擷取快照](~/profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
+    ![Take snapshot](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot") 
      
      > [!TIP]
-     >  若要建立記憶體的比較基準，請考慮擷取偵錯工作階段開始時的快照。  
+     >  To create a baseline for memory comparisons, consider taking a snapshot at the start of your debugging session.  
 
-6.  執行會叫用您的第一個中斷點的案例。
+6.  Run the scenario that will cause your first breakpoint to be hit.
 
-7.  當偵錯工具於第一個中斷點暫停時，選擇 [記憶體使用量] 摘要工具列上的 [擷取快照]。  
+7.  While the debugger is paused at the first breakpoint, choose **Take snapshot** on the **Memory Usage** summary toolbar.  
 
-8.  按 F5 使應用程式執行至第二個中斷點。
+8.  Hit F5 to run the app to your second breakpoint.
 
-9.  現在請擷取另一個快照。
+9.  Now, take another snapshot.
 
-     此時，您可以開始分析資料。    
+     At this point, you can begin to analyze the data.    
   
-## <a name="analyze-memory-usage-data"></a>分析記憶體使用量資料
-[記憶體使用量] 摘要表的資料列會列出您在偵錯工作階段期間擷取的快照，並提供更詳細檢視的連結。
+## <a name="analyze-memory-usage-data"></a>Analyze memory usage data
+The rows of Memory Usage summary table lists the snapshots that you have taken during the debugging session and provides links to more detailed views.
 
-![記憶體摘要表](~/profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
+![Memory summary table](../profiling/media/dbgdiag_mem_summarytable.png "DBGDIAG_MEM_SummaryTable")
 
- 每個資料行的名稱則取決於您在專案屬性中選擇的偵錯模式：.NET、原生或混合 (.NET 和原生)。  
+ The name of the columns depend on the debugging mode you choose in the project properties: .NET, native, or mixed (both .NET and native).  
   
--   [物件 (差異)] 和 [配置數 (差異)] 資料行顯示擷取快照時 .NET 和原生記憶體中的物件數目。  
+-   The **Objects (Diff)** and **Allocations (Diff)** columns display the number of objects in .NET and native memory when the snapshot was taken.  
   
--   [堆積大小 (差異)] 資料行顯示 .NET 和原生堆積中的位元組數目 
+-   The **Heap Size (Diff)** column displays the number of bytes in the .NET and native heaps 
 
-當您擷取多個快照之後，摘要表的資料格會包含資料列快照與上一個快照之間的值變更。  
+When you have taken multiple snapshots, the cells of the summary table include the change in the value between the row snapshot and the previous snapshot.  
 
-若要分析記憶體使用量，請按一下其中一個可以開啟記憶體使用量詳細報表的連結：  
+To analyze memory usage, click one of the links that opens up a detailed report of memory usage:  
 
--   若要檢視目前快照與先前快照之間差異的詳細資料，請選擇箭號左側的變更連結 (![記憶體使用量增加](~/profiling/media/prof-tour-mem-usage-up-arrow.png "記憶體使用量增加"))。 紅色箭號表示記憶體使用量增加，綠色箭號表示減少。
+-   To view details of the difference between the current snapshot and the previous snapshot, choose the change link to the left of the arrow (![Memory Usage Increase](../profiling/media/prof-tour-mem-usage-up-arrow.png "Memory Usage Increase")). A red arrow indicates an increase in memory usage, and a green arrow to indicates a decrease.
 
     > [!TIP]
-    >  為了協助使用者更快速地識別記憶體問題，差異報表會以整體數目增加最多 (按一下 [物件 (差異)] 資料行中的變更連結)，或整體堆積大小增加最多 (按一下 [堆積大小 (差異)] 資料行中的變更連結) 的物件類型來分類。
+    >  To help identify memory issues more quickly, the diff reports are sorted by object types that increased the most in overall number (click the change link in **Objects (Diff)** column) or that increased the most in overall heap size (click the change link in **Heap Size (Diff)** column).
 
--   若只要檢視所選快照的詳細資料，請按一下未變更連結。 
+-   To view details of only the selected snapshot, click the non-change link. 
   
- 報表會在個別的視窗中顯示。   
+ The report appears in a separate window.   
   
-### <a name="managed-types-reports"></a>Managed 類型報表  
- 選擇 [記憶體使用量] 摘要表中 [物件 (差異)] 或 [配置數 (差異)] 資料格的目前連結。  
+### <a name="managed-types-reports"></a>Managed types reports  
+ Choose the current link of a **Objects (Diff)** or **Allocations (Diff)** cell in the Memory Usage summary table.  
   
- ![偵錯工具 Managed 類型報表 &#45; 根的路徑](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
+ ![Debugger managed type report &#45; Paths to Root](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")  
   
- 上方窗格顯示快照中所有類型的計數和大小，包括類型參考之所有物件的大小 ([內含大小])。  
+ The top pane shows the count and size of the types in the snapshot, including the size of all objects that are referenced by the type (**Inclusive Size**).  
   
- 下方窗格中的 [根的路徑]  樹狀結構顯示參考在上方窗格中選取之類型的物件。 您必須釋放參考物件的最後一個類型，.NET Framework 記憶體回收行程才會清除該物件的記憶體。  
+ The **Paths to Root** tree in the bottom pane displays the objects that reference the type selected in the upper pane. The .NET Framework garbage collector cleans up the memory for an object only when the last type that references it has been released.  
   
- [參考的類型]  樹狀結構顯示在上方窗格中選取之類型所持有的參考。  
+ The **Referenced Types** tree displays the references that are held by the type selected in the upper pane.  
   
- ![Managed 參考的類型報表檢視](~/profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
+ ![Managed eferenced types report view](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")  
   
- 若要在上方窗格中顯示所選取類型的執行個體，請選擇 ![執行個體圖示](~/profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") 圖示。  
+ To display the instances of a selected type in the upper pane, choose the ![Instance icon](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon") icon.  
   
- ![執行個體檢視](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
+ ![Instances view](../profiling/media/dbgdiag_mem_managedtypesreport_instances.png "DBGDIAG_MEM_ManagedTypesReport_Instances")  
   
- [執行個體]  檢視顯示在上方窗格的快照中選取之物件的執行個體。 [根的路徑] 和 [參考的物件] 窗格顯示參考所選執行個體的物件，以及所選執行個體參考的類型。 當偵錯工具在擷取快照的位置停止時，您可以將滑鼠停留在 [值] 資料格，以在工具提示中顯示物件的值。  
+ The **Instances** view displays the instances of the selected object in the snapshot in the upper pane. The Paths to Root and Referenced Types pane display the objects that reference the selected instance and the types that the selected instance references. When the debugger is stopped at the point where the snapshot was taken, you can hover over the Value cell to display the values of the object in a tool tip.  
   
-### <a name="native-type-reports"></a>原生類型報表  
- 在 [診斷工具] 視窗的 [記憶體使用量] 摘要表中，選擇 [配置數 (差異)] 或 [堆積大小 (差異)] 資料格的目前連結。  
+### <a name="native-type-reports"></a>Native type reports  
+ Choose the current link of a **Allocations (Diff)** or **Heap Size (Diff)** cell in the Memory Usage summary table of the **Diagnostic Tools** window.  
   
- ![原生類型檢視](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
+ ![Native Type View](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")  
   
- [類型檢視]  顯示快照中所有類型的數目和大小。  
+ The **Types View** displays the number and size of the types in the snapshot.  
   
--   選擇所選取類型的執行個體圖示 (![[物件類型] 欄中的執行個體圖示](~/profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon"))，以顯示快照中所選取類型的物件相關資訊。  
+-   Choose the instances icon (![The instance icon in the Object Type column](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) of a selected type to display information about the objects of the selected type in the snapshot.  
   
-     [執行個體]  檢視顯示所選類型的每個執行個體。 選取執行個體會顯示在 [配置呼叫堆疊]  窗格中建立執行個體時所產生的呼叫堆疊。  
+     The **Instances** view displays each instance of the selected type. Selecting an instance displays the call stack that resulted in the creation of the instance in the **Allocation Call Stack** pane.  
   
-     ![執行個體檢視](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
+     ![Instances view](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   在 [檢視模式]  清單中選擇 [堆疊檢視]  ，以查看所選類型的配置堆疊。  
+-   Choose **Stacks View** in the **View Mode** list to see the allocation stack for the selected type.  
   
-     ![堆疊檢視](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
+     ![Stacks View](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
-### <a name="change-diff-reports"></a>變更 (差異比對) 報表  
+### <a name="change-diff-reports"></a>Change (Diff) reports  
   
--   在 [診斷工具]  視窗中，選擇 [記憶體使用量]  索引標籤摘要表資料格中的變更連結。  
+-   Choose the change link in a cell of the summary table of the **Memory Usage** tab on the **Diagnostic Tools** window.  
   
-     ![選擇變更 &#40;差異&#41; 報表](~/profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
+     ![Choose a change &#40;dif&#41;f report](../profiling/media/dbgdiag_mem_choosediffreport.png "DBGDIAG_MEM_ChooseDiffReport")  
   
--   在 Managed 或原生報表的 [比較]  清單中，選擇一個快照。  
+-   Choose a snapshot in the **Compare To** list of a managed or native report.  
   
-     ![從 [比較] 清單中選擇快照](~/profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
+     ![Choose a snapshot from the Compare To list](../profiling/media/dbgdiag_mem_choosecompareto.png "DBGDIAG_MEM_ChooseCompareTo")  
   
- 變更報表會將顯示基礎快照值與比較快照之間有差異的資料行 (標記為 [(差異比對)] )，加入基礎報表。 以下是原生類型檢視差異比對報表可能的樣子：  
+ The change report adds columns (marked with **(Diff)**) to the base report that show the difference between the base snapshot value and the comparison snapshot. Here's how a Native Type View diff report might look:  
   
- ![原生類型差異檢視](~/profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
+ ![Native Types Diff Veiw](../profiling/media/dbgdiag_mem_native_typesviewdiff.png "DBGDIAG_MEM_Native_TypesViewDiff")  
   
-## <a name="blogs-and-videos"></a>部落格和影片  
- [Visual Studio 2015 中的診斷工具偵錯工具視窗](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
+## <a name="blogs-and-videos"></a>Blogs and videos  
+ [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [部落格：在 Visual Studio 2015 偵錯時的記憶體使用量工具](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Blog: Memory Usage Tool while debugging in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
- [Visual C++ 部落格：VS2015 Preview 中的原生記憶體診斷](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
+ [Visual C++ Blog: Native Memory Diagnostics in VS2015 Preview](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   
- [Visual C++ 部落格：Visual Studio 2015 CTP 的原生記憶體診斷工具](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+ [Visual C++ Blog: Native Memory Diagnostic Tools for Visual Studio 2015 CTP](http://blogs.msdn.com/b/vcblog/archive/2014/06/04/native-memory-diagnostic-tools-for-visual-studio-14-ctp1.aspx)
+
+## <a name="see-also"></a>See Also
+ [Profiling in Visual Studio](../profiling/index.md) [Profiling Feature Tour](../profiling/profiling-feature-tour.md)

@@ -1,125 +1,138 @@
 ---
-title: "記憶體視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.memory"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "記憶體視窗"
-  - "字串 [Visual Studio], 檢視"
-  - "偵錯工具 [Visual Studio], [記憶體] 視窗"
-  - "記憶體 [Visual Studio], 偵錯"
-  - "偵錯 [Visual Studio], [記憶體] 視窗"
-  - "緩衝區, 檢視"
+title: View Memory for Variables in the Debugger | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.memory
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- Memory window
+- strings [Visual Studio], viewing
+- debugger [Visual Studio], Memory window
+- memory [Visual Studio], debugging
+- debugging [Visual Studio], Memory window
+- buffers, viewing
 ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 記憶體視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 2b271eaf132aea65c1217d8b4f3bfef7e1e1ac0e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-\[**記憶體**\] 視窗可讓您檢視應用程式所使用的記憶體空間。  \[**監看式**\] 視窗、\[**快速監看式**\] 對話方塊、\[**自動變數**\] 視窗和 \[**區域變數**\] 視窗會顯示儲存於特定記憶體位置的變數的內容。  但是 \[**記憶體**\] 視窗則會顯示整體概觀。  這類檢視對於檢查無法適當地顯示在其他視窗的大批資料 \(例如，緩衝區或很大的字串\) 來說極為方便。  不過，\[**記憶體**\] 視窗的功能並不只侷限於顯示資料。  它還會顯示記憶體空間內的所有內容，不管這些內容是資料、程式碼，或是未指派之記憶體內的無意義資料。  
+---
+# <a name="use-the-memory-windows-in-the-visual-studio-debugger"></a>Use the Memory Windows in the Visual Studio Debugger
+The **Memory** window provides a view into the memory space that is used by your application. The **Watch** window, **QuickWatch** dialog box, **Autos** window, and **Locals** window show you the content of variables, which are stored at specific locations in memory. But the **Memory** window shows you the large-scale picture. This view can be convenient for examining large pieces of data (buffers or large strings, for example) that do not display well in the other windows. However, the **Memory** window is not limited to displaying data. It displays everything in the memory space, whether the content is data, code, or random bits of garbage in unassigned memory.  
   
- 只有在透過 \[**選項**\] 對話方塊中的 \[**偵錯**\] 節點啟用位址層級偵錯時，才可以使用 \[**記憶體**\] 視窗。  \[**記憶體**\] 視窗無法用於指令碼或 SQL，這些語言都無法沒有記憶體的概念。  
+ The **Memory** window is available only if address-level debugging is enabled in the **Options** dialog box, **Debugging** node. The **Memory** window is not available for Script or SQL, which are languages that do not recognize the concept of memory.  
   
-## 開啟記憶體視窗  
+## <a name="opening-a-memory-window"></a>Opening a Memory Window  
   
-#### 若要開啟記憶體視窗  
+#### <a name="to-open-a-memory-window"></a>To open a Memory window  
   
-1.  如果目前不在偵錯模式下，請啟動偵錯。  
+1.  Start debugging, if you are not already in debug mode.  
   
-2.  在 \[**偵錯**\] 功能表中，指向 \[**視窗**\]。  接著指向 \[**記憶體** \]，再按一下 \[**記憶體 1**\]、\[**記憶體 2**\]、\[**記憶體 3**\] 或 \[**記憶體 4**\] \(較低階版本的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 只有一個 \[**記憶體**\] 視窗。  如果您使用這其中一個版本，請直接按一下 \[**記憶體**\]\)。  
+2.  In the **Debug** menu, point to **Windows**. Then, point to **Memory** and then click **Memory 1**, **Memory 2**, **Memory 3**, or **Memory 4**. (Lower-level editions of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] have only a single **Memory** window. If you are using one of those editions, just click **Memory**.)  
   
-## 記憶體視窗中的分頁  
- \[**記憶體**\] 視窗的垂直捲軸不是以標準方式操作。  現代電腦的位址空間很大，如果您抓住捲軸方塊並將它拖曳到隨機位置，很容易就會迷失。  因此，捲動方塊採「彈簧式設計」，永遠維持在捲軸的中央。  在機器碼應用程式中，您可以向上或向下翻頁，但不能自由捲動。  
+## <a name="paging-in-the-memory-window"></a>Paging in the Memory Window  
+ The **Memory** window has a vertical scrollbar that operates in a nonstandard manner. The address space of a modern computer is very large, and you could easily get lost by grabbing the scrollbar thumb and dragging it to a random location. For that reason, the thumb is "spring-loaded" and always remains in the center of the scrollbar. In native code applications, you can page up or down, but cannot scroll about freely.  
   
- 較高的記憶體位址會出現在視窗底部。  若要檢視較高的位址，請向下捲動而非向上捲動。  
+ Higher memory addresses appear at the bottom of the window. To view a higher address, scroll down, not up.  
   
-#### 若要在記憶體中向上或向下翻頁  
+#### <a name="to-page-up-or-down-in-memory"></a>To page up or down in memory  
   
-1.  若要向下翻頁 \(移至較高的記憶體位址\)，請按一下垂直捲軸中捲動方塊的下方某處。  
+1.  To page down (move to a higher memory address), click under the thumb in the vertical scrollbar.  
   
-2.  若要向上翻頁 \(移至較低的記憶體位址\)，請按一下垂直捲軸中捲動方塊的上方某處。  
+2.  To page up (move to a lower memory address), click above the thumb the vertical scrollbar.  
   
-## 選取記憶體位置  
- 如果您想要立即移到選取的記憶體位置，可以使用拖放作業或在 \[**位址**\] 方塊中編輯此值。  \[**位址**\] 方塊不僅會接受數值，同時也會接受評估為位址的運算式。  根據預設，\[**記憶體**\] 視窗會把 \[**位址**\] 運算式當做是一個現場運算式，會在程式執行時重新評估。  現場運算式非常有用。  例如，您可使用它們來檢視指標所碰觸的記憶體。  
+## <a name="selecting-a-memory-location"></a>Selecting a Memory Location  
+ If you want to move instantly to a selected location in memory, you can do so by using a drag-and-drop operation or by editing the value in the **Address** box. The **Address** box accepts not only numeric values but also expressions that evaluate to addresses. By default, the **Memory** window treats an **Address** expression as a live expression, which is reevaluated as your program executes. Live expressions can be very useful. For example, you can use them to view the memory that is touched by a pointer.  
   
-#### 若要透過拖放方式來選取記憶體位置  
+#### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>To select a memory location by dragging and dropping  
   
-1.  在任何視窗中選取記憶體位址或含記憶體位址的指標變數。  
+1.  In any window, select a memory address or pointer variable that contains a memory address.  
   
-2.  將位址或指標拖曳到 \[**記憶體**\] 視窗。  
+2.  Drag the address or pointer to the **Memory** window.  
   
-#### 若要使用編輯方式來選取記憶體位置  
+#### <a name="to-select-a-memory-location-by-editing"></a>To select a memory location by editing  
   
-1.  請在 \[**記憶體**\] 視窗中選取 \[**位址**\] 方塊。  
+1.  In the **Memory** window, select the **Address** box.  
   
-2.  輸入或貼上您要查看的位址，然後按 **ENTER**。  
+2.  Type or paste the address you want to see, and then press **ENTER**.  
   
-## 變更記憶體視窗顯示資訊的方式  
- 您可以自訂 \[**記憶體**\] 視窗顯示記憶體內容的方式。  根據預設，記憶體內容會在十六進位格式中以一位元組整數資料型別出現，而且欄位數會自動依據目前視窗寬度來決定。  
+## <a name="changing-the-way-the-memory-window-displays-information"></a>Changing the Way the Memory Window Displays Information  
+ You can customize the way the **Memory** window shows memory contents. By default, memory contents appear as one-byte integers in hexadecimal format, and the number of columns is determined automatically by the current width of the window.  
   
-#### 若要變更記憶體內容格式  
+#### <a name="to-change-the-format-of-the-memory-contents"></a>To change the format of the memory contents  
   
-1.  在 \[**記憶體**\] 視窗上按一下滑鼠右鍵。  
+1.  Right-click the **Memory** window.  
   
-2.  選擇您要的格式。  
+2.  Choose the format that you want.  
   
-#### 若要變更記憶體視窗中的欄位數  
+#### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>To change the number of columns in the Memory window  
   
-1.  請在 \[**記憶體**\] 視窗頂端的工具列中找出 \[**欄**\] 清單。  
+1.  In the toolbar at the top of the **Memory** window, locate the **Columns** list.  
   
-2.  在 \[**欄**\] 清單中選取想要顯示的欄數，或選取 \[**自動**\] 表示根據視窗寬度自動調整。  
+2.  In the **Columns** list, select the number of columns that you want to display or select **Auto** for automatic adjustment to fit the width of the window.  
   
- 如果不希望 \[**記憶體**\] 視窗內容在程式執行時進行變更，您可以關閉實況運算式評估。  
+ If you do not want the contents of the **Memory** window to change as your program executes, you can turn off live expression evaluation.  
   
-#### 若要切換實況評估  
+#### <a name="to-toggle-live-evaluation"></a>To toggle live evaluation  
   
-1.  在 \[**記憶體**\] 視窗上按一下滑鼠右鍵。  
+1.  Right-click the **Memory** window.  
   
-2.  在捷徑功能表上按一下 \[**自動重新評估**\]。  
+2.  On the shortcut menu, click **Reevaluate Automatically**.  
   
-     如果開啟實況評估，則會選取這個選項，您只要再按一下該選項即可關閉實況評估。  如果關閉實況評估，則不會選取這個選項，您只要再按一下該選項即可開啟實況評估。  
+     If live evaluation is on, the option will be selected, and clicking it turns off live evaluation. If live evaluation is off, the option is not selected, and clicking it turns on live evaluation.  
   
- 您可以在 \[**記憶體**\] 視窗的頂端隱藏或顯示工具列。  隱藏工具列時，您無法存取 \[位址\] 方塊或其他工具。  
+ You can hide or display the toolbar at the top of the **Memory** window. You will not have access to Address box or other tools as long as the toolbar is hidden.  
   
-#### 若要切換工具列  
+#### <a name="to-toggle-the-toolbar"></a>To toggle the toolbar  
   
-1.  在 \[**記憶體**\] 視窗上按一下滑鼠右鍵。  
+1.  Right-click a **Memory** window.  
   
-2.  按一下捷徑功能表上的 \[**顯示工具列**\]。  
+2.  On the shortcut menu, click **Show Toolbar**.  
   
-     工具列會不會出現，需視先前的狀態而定。  
+     The toolbar appears or disappears, depending on its previous state.  
   
-## 隨著指標變動記憶體位置  
- 您也可以在機器碼應用程式中，將暫存器名稱當成機動性的運算式。  例如，您可使用堆疊指標隨著堆疊而變動位置。  
+## <a name="following-a-pointer-through-memory"></a>Following a Pointer Through Memory  
+ In native code applications, you can use register names as live expressions. For example, you can use the stack pointer to follow the stack.  
   
-#### 若要隨著記憶體變動指標  
+#### <a name="to-follow-a-pointer-through-memory"></a>To follow a pointer through memory  
   
-1.  在 \[**記憶體**\] 視窗的 \[**位址**\] 方塊中輸入指標運算式。  指標變數必須在目前的範圍內。  有時您可能會需要取值 \(Dereference\)，視語言而定。  
+1.  In the **Memory** window **Address** box, type a pointer expression. The pointer variable must be in the current scope. Depending on the language, you might have to dereference it.  
   
-2.  請按 **ENTER**。  
+2.  Press **ENTER**.  
   
-     現在，當您使用 \[**逐步執行**\] 這類的命令時，顯示的記憶體位址會自動隨著指標變動而變動。  
+     Now, when you use an execution command such as **Step**, the memory address that is displayed will automatically change as the pointer changes.  
   
-## 請參閱  
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)
+## <a name="see-also"></a>See Also  
+ [Viewing Data in the Debugger](../debugger/viewing-data-in-the-debugger.md)

@@ -1,5 +1,5 @@
 ---
-title: "自訂原生 ETW 堆積事件 | Microsoft Docs"
+title: Custom Native ETW Heap Events | Microsoft Docs
 ms.custom: 
 ms.date: 02/24/2017
 ms.reviewer: 
@@ -29,21 +29,21 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: afc044be4d63b7a292a6d94e360366913bd28883
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
+ms.lasthandoff: 08/31/2017
 
 ---
 
-# <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
+# <a name="custom-native-etw-heap-events"></a>Custom Native ETW Heap Events
 
-Visual Studio 包含各種[分析與診斷工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
+Visual Studio contains a variety of [profiling and diagnostic tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools), including a native memory profiler.  This profiler hooks [ETW events](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-) from the heap provider and provides analysis of how memory is being allocated and used.  By default, this tool can only analyze allocations made from the standard Windows heap, and any allocations outside this native heap would not be displayed.
 
-在許多情況下，您可能想要使用自訂的堆積，以避免來自標準堆積的配置負荷。  比方說，您可以使用 [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx)，將大量記憶體配置在應用程式或遊戲開頭，接著在該清單內管理自己的區塊。  在此案例中，記憶體分析工具只會查看該初始配置，而不會查看您在記憶體區塊內完成的自訂管理。  不過，使用自訂原生堆積 ETW 提供者時，您就可以讓工具了解您在標準堆積以外進行的任何配置。
+There are many cases in which you may want to use your own custom heap and avoid the allocation overhead from the standard heap.  For instance, you could use [VirtualAlloc](https://msdn.microsoft.com/library/windows/desktop/aa366887(v=vs.85).aspx) to allocate a large amount of memory at the start of the app or game, and then manage your own blocks within that list.  In this scenario, the memory profiler tool would only see that initial allocation, and not your custom management done inside the memory chunk.  However, using the Custom Native Heap ETW Provider, you can let the tool know about any allocations you are making outside the standard heap.
 
-例如，在如下專案中，`MemoryPool` 是自訂的堆積，因此您只會在 Windows 堆積上看到單一配置：
+For example, in a project like the following where `MemoryPool` is a custom heap, you would only see a single allocation on the Windows heap:
 
 ```cpp
 class Foo
@@ -65,117 +65,117 @@ Foo* pFoo2 = (Foo*)mPool.allocate();
 Foo* pFoo3 = (Foo*)mPool.allocate();
 ```
 
-從[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)工具擷取的快照 (未追蹤自訂堆積) 只會顯示 8192 位元組的單一配置，而不會顯示任何由集區所做的自訂配置：
+A snapshot from the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) tool without custom heap tracking would show just the single 8192 byte allocation, and none of the custom allocations being made by the pool:
 
-![Windows 堆積配置](~/profiling/media/heap-example-windows-heap.png)
+![Windows Heap allocation](media/heap-example-windows-heap.png)
 
-藉由執行下列步驟，我們可以使用這個相同工具來追蹤自訂堆積中的記憶體使用量。
+By performing the following steps, we can use this same tool to track memory usgae in our custom heap.
 
-## <a name="how-to-use"></a>如何使用
+## <a name="how-to-use"></a>How to Use
 
-您可以輕鬆地在 C 和 C++ 中使用此程式庫。
+This library can be easily used in C and C++.
 
-1. 將自訂堆積 ETW 提供者的標頭包含在內：
+1. Include the header for the custom heap ETW provider:
 
    ```cpp
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 將 `__declspec(allocator)` 裝飾項目新增至自訂堆積管理員中的任何函式，以傳回新配置之堆積記憶體的指標。  此裝飾項目可讓工具正確識別要傳回的記憶體類型。  例如：
+1. Add the `__declspec(allocator)` decorator to any function in your custom heap manager that returns a pointer to newly allocated heap memory.  This decorator allows the tool to correctly identify the type of the memory being returned.  For example:
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
    ```
    
    > [!NOTE]
-   > 此裝飾項目會告知編譯器，此函式為配置器的其中一項呼叫。  每個函式呼叫皆會將 CallSite 的位址、呼叫指令的大小和新物件的 typeId 輸出至新的 `S_HEAPALLOCSITE` 符號。  進行 CallStack 配置時，Windows 就會發出 ETW 事件與上述資訊。  記憶體分析工具會逐步引導 CallStack 尋找與 `S_HEAPALLOCSITE` 符號相符的傳回位址；符號中的 typeId 資訊則會用來顯示配置的執行階段類型。
+   > This decorator will tell the compiler that this function is a call to an allocator.  Each call to the function will output the address of the callsite, the size of the call instruction, and the typeId of the new object to a new `S_HEAPALLOCSITE` symbol.  When a callstack is allocated, Windows will emit an ETW event with this information.  The memory profiler tool walks the callstack looking for a return address matching an `S_HEAPALLOCSITE` symbol, and the typeId information in the symbol is used to display the runtime type of the allocation.
    >
-   > 簡單來說，這表示看起來像 `(B*)(A*)MyMalloc(sizeof(B))` 的呼叫在工具中會顯示為 `B` 類型，而非 `void` 或 `A`。
+   > In short, this means a call that looks like `(B*)(A*)MyMalloc(sizeof(B))` will show up in the tool as being of type `B`, not `void` or `A`.
 
-1. 若為 C++，請建立 `VSHeapTracker::CHeapTracker` 物件，並提供要在分析工具中顯示的堆積名稱：
+1. For C++, create the `VSHeapTracker::CHeapTracker` object, providing a name for the heap, which will show up in the profiling tool:
 
    ```cpp
    auto pHeapTracker = std::make_unique<VSHeapTracker::CHeapTracker>("MyCustomHeap");
    ```
 
-   如果您是使用 C，請改用 `OpenHeapTracker` 函式。  此函式傳回的控制代碼，可讓您在呼叫其他追蹤函式時使用：
+   If you are using C, use the `OpenHeapTracker` function instead.  This function will return a handle that you will use when calling other tracking functions:
   
    ```C
    VSHeapTrackerHandle hHeapTracker = OpenHeapTracker("MyHeap");
    ```
 
-1. 使用自訂函式配置記憶體時，請呼叫 `AllocateEvent` (C++) 或 `VSHeapTrackerAllocateEvent` (C) 方法，即可傳入記憶體與其大小的指標，以追蹤配置：
+1. When allocating memory using your custom function, call the `AllocateEvent` (C++) or `VSHeapTrackerAllocateEvent` (C) method, passing in the pointer to the memory and its size, to track the allocation:
 
    ```cpp
    pHeapTracker->AllocateEvent(memPtr, size);
    ```
 
-   或
+   or
 
    ```C
    VSHeapTrackerAllocateEvent(hHeapTracker, memPtr, size);
    ```
 
    > [!IMPORTANT]
-   > 別忘了使用先前所述的 `__declspec(allocator)` 裝飾項目，來標記您的自訂配置器函式。
+   > Don't forget to tag your custom allocator function with the `__declspec(allocator)` decorator described earlier.
 
-1. 使用自訂函式解除配置記憶體時，請呼叫 `DeallocateEvent` (C++) 或 `VSHeapTracerDeallocateEvent` (C) 函式，即可傳入記憶體的指標，以解除配置：
+1. When deallocating memory using your custom function, call the `DeallocateEvent` (C++) or `VSHeapTracerDeallocateEvent` (C) function, passing in the pointer to the memory, to track the deallocation:
 
    ```cpp
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   或：
+   or:
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
    ```
 
-1. 使用自訂函式解除配置記憶體時，請呼叫 `ReallocateEvent` (C++) 或 `VSHeapReallocateEvent` (C) 方法，即可傳入新記憶體、配置大小，以及舊記憶體的指標：
+1. When reallocating memory using your custom function, call the `ReallocateEvent` (C++) or `VSHeapReallocateEvent` (C) method, passing in a pointer to the new memory, the size of the allocation, and a pointer to the old memory:
 
    ```cpp
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   或：
+   or:
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
    ```
 
-1. 最後，若要關閉並清除 C++ 中的自訂堆積追蹤器，您可以透過手動方式、標準的範圍規則，或 `CloseHeapTracker` 函式 (C) 來使用 `CHeapTracker` 解構函式：
+1. Finally, to close and clean up the custom heap tracker in C++, use the `CHeapTracker` destructor, either manually or via standard scoping rules, or the `CloseHeapTracker` function in C:
 
    ```cpp
    delete pHeapTracker;
    ```
 
-   或：
+   or:
 
    ```C
    CloseHeapTracker(hHeapTracker);
    ```
 
-## <a name="tracking-memory-usage"></a>追蹤記憶體使用量
-這些呼叫就緒時，您即可使用 Visual Studio 中的標準 [記憶體使用量] 工具，追蹤自訂堆積的使用量。  如需如何使用這項工具的詳細資訊，請參閱[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件。 請確定您已啟用堆積分析快照，否則不會顯示您的自訂堆積使用量。 
+## <a name="tracking-memory-usage"></a>Tracking Memory Usage
+With these calls in place, your custom heap usage can now be tracked using the standard **Memory Usage** tool in Visual Studio.  For more information on how to use this tool, please see the [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation. Ensure you have enabled heap profiling with snapshots, otherwise you will not see your custom heap usage displayed. 
 
-![啟用堆積分析](~/profiling/media/heap-enable-heap.png)
+![Enable Heap Profiling](media/heap-enable-heap.png)
 
-若要檢視自訂堆積追蹤，請使用位於 [快照] 視窗右上角的 [堆積] 下拉式清單，將 [NT 堆積] 檢視變更為您已命名的堆積。
+To view your custom heap tracking, use the **Heap** dropdown located at the upper-right corner of the **Snapshot** window to change the view from *NT Heap* to your own heap as named previously.
 
-![堆積選取範圍](~/profiling/media/heap-example-custom-heap.png)
+![Heap Selection](media/heap-example-custom-heap.png)
 
-以上述的程式碼範例來看，當我們使用 `MemoryPool` 建立 `VSHeapTracker::CHeapTracker` 物件，並使用我們自己的 `allocate` 方法呼叫 `AllocateEvent` 方法時，您即可看到該自訂配置結果顯示 3 個執行個體，共計有 24 個位元組，且均為 `Foo` 類型。
+Using the code example above, with `MemoryPool` creating a `VSHeapTracker::CHeapTracker` object, and our own `allocate` method now calling the `AllocateEvent` method, you can now see the result of that custom allocation, showing 3 instances totaling 24 bytes, all of type `Foo`.
 
-預設的「NT 堆積」堆積看起來和之前相同，只是新增了我們的 `CHeapTracker` 物件。
+The default *NT Heap* heap looks the same as earlier, with the addition of our `CHeapTracker` object.
 
-![NT 堆積與追蹤程式](~/profiling/media/heap-example-windows-heap.png)
+![NT Heap with Tracker](media/heap-example-windows-heap.png)
 
-如同使用標準 Windows 堆積一樣，您也可以使用這項工具來比較快照，並在自訂堆積中尋找流失或損毀情況。請參閱主要的[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)文件，以了解相關說明。
+As with the standard Windows heap, you can also use this tool to compare snapshots and look for leaks and corruption in your custom heap, which is described in the main [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage) documentation.
 
 > [!TIP]
-> Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt + F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl+Alt+F2** 鍵盤組合，加以啟用)。
+> Visual Studio also contains a **Memory Usage** tool in the **Performance Profiling** toolset, which is enabled from the **Debug > Performance Profiler** menu option, or the **Alt+F2** keyboard combination.  This feature does not include heap tracking and will not display your custom heap as described here.  Only the **Diagnostic Tools** window, which can be enabled with the **Debug > Windows > Show Diagnostic Tools** menu, or the **Ctrl+Alt+F2** keyboard combination, contains this functionality.
 
-## <a name="see-also"></a>另請參閱
-* [程式碼剖析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
+## <a name="see-also"></a>See Also
+* [Profiling Tools](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
+* [Memory Usage](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
 

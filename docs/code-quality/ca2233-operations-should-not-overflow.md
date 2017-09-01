@@ -1,117 +1,133 @@
 ---
-title: "CA2233：運算不應該發生溢位 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperationsShouldNotOverflow"
-  - "CA2233"
-helpviewer_keywords: 
-  - "CA2233"
-  - "OperationsShouldNotOverflow"
+title: 'CA2233: Operations should not overflow | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperationsShouldNotOverflow
+- CA2233
+helpviewer_keywords:
+- OperationsShouldNotOverflow
+- CA2233
 ms.assetid: 3a2b06ba-6d1b-4666-9eaf-e053ef47ffaa
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA2233：運算不應該發生溢位
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: f77e3f267d991f4bffbb18c1f69f66c4603d104c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: Operations should not overflow
 |||  
 |-|-|  
-|型別名稱|OperationsShouldNotOverflow|  
+|TypeName|OperationsShouldNotOverflow|  
 |CheckId|CA2233|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 方法會執行算術運算，但不會預先驗證運算元以防止溢位。  
+## <a name="cause"></a>Cause  
+ A method performs an arithmetic operation and does not validate the operands beforehand to prevent overflow.  
   
-## 規則描述  
- 如果沒有先驗證運算元，以確定運算結果不會超過所包含之資料型別的可能值範圍，則不應執行算術運算。  根據執行內容和所包含的資料型別，數學溢位可能會導致 <xref:System.OverflowException?displayProperty=fullName> 或結果的最重要位元遭到捨棄。  
+## <a name="rule-description"></a>Rule Description  
+ Arithmetic operations should not be performed without first validating the operands to make sure that the result of the operation is not outside the range of possible values for the data types involved. Depending on the execution context and the data types involved, arithmetic overflow can result in either a <xref:System.OverflowException?displayProperty=fullName> or the most significant bits of the result discarded.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請在執行作業之前先驗證運算元。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, validate the operands before you perform the operation.  
   
-## 隱藏警告的時機  
- 如果運算元的可能值從未導致算術運算溢位，則您可以放心地隱藏對這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if the possible values of the operands will never cause the arithmetic operation to overflow.  
   
-## 違規範例  
+## <a name="example-of-a-violation"></a>Example of a Violation  
   
-### 描述  
- 下列範例中的方法會管理違反此規則的整數。  [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 需要停用**移除**整數溢位選項才能引發此項。  
+### <a name="description"></a>Description  
+ A method in the following example manipulates an integer that violates this rule. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] requires the **Remove** integer overflow option to be disabled for this to fire.  
   
-### 程式碼  
- [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
- [!code-cs[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
+### <a name="code"></a>Code  
+ [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)] [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]  
   
-### 註解  
- 如果這個範例中的方法是傳遞 <xref:System.Int32.MinValue?displayProperty=fullName>，運算就會反向溢位 \(Underflow\)。  這會造成結果的最高有效位元被捨棄。  下列程式碼顯示發生這個現象的方式。  
+### <a name="comments"></a>Comments  
+ If the method in this example is passed <xref:System.Int32.MinValue?displayProperty=fullName>, the operation would underflow. This causes the most significant bit of the result to be discarded. The following code shows how this occurs.  
   
- \[C\#\]  
+ [C#]  
   
 ```  
 public static void Main()  
 {  
-    int value = int.MinValue;    // int.MinValue is -2147483648   
-    value = Calculator.Decrement(value);   
-    Console.WriteLine(value);  
+    int value = int.MinValue;    // int.MinValue is -2147483648   
+    value = Calculator.Decrement(value);   
+    Console.WriteLine(value);  
 }  
 ```  
   
- \[VB\]  
+ [VB]  
   
 ```  
 Public Shared Sub Main()       
-    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648   
-    value = Calculator.Decrement(value)   
-    Console.WriteLine(value)   
+    Dim value = Integer.MinValue    ' Integer.MinValue is -2147483648   
+    value = Calculator.Decrement(value)   
+    Console.WriteLine(value)   
 End Sub  
 ```  
   
-### Output  
+### <a name="output"></a>Output  
   
 ```  
 2147483647  
 ```  
   
-## 使用輸入參數驗證進行修正  
+## <a name="fix-with-input-parameter-validation"></a>Fix with Input Parameter Validation  
   
-### 描述  
- 下列範例會藉由驗證輸入值來修正前述違規。  
+### <a name="description"></a>Description  
+ The following example fixes the previous violation by validating the value of input.  
   
-### 程式碼  
- [!CODE [FxCop.Usage.OperationOverflowFixed#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowFixed#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)] [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]  
   
-## 使用檢查區塊進行修正  
+## <a name="fix-with-a-checked-block"></a>Fix with a Checked Block  
   
-### 描述  
- 下列範例會藉由在檢查區塊中包裝運算來修正前述違規。  如果運算造成溢位，將會擲回 <xref:System.OverflowException?displayProperty=fullName>。  
+### <a name="description"></a>Description  
+ The following example fixes the previous violation by wrapping the operation in a checked block. If the operation causes an overflow, a <xref:System.OverflowException?displayProperty=fullName> will be thrown.  
   
- 請注意，[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 不支援檢查區塊。  
+ Note that checked blocks are not supported in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].  
   
-### 程式碼  
- [!CODE [FxCop.Usage.OperationOverflowChecked#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]  
   
-## 開啟檢查算術溢位\/反向溢位  
- 如果在 C\# 中開啟檢查算術溢位\/反向溢位，就等同於將每個整數運算包裝在檢查區塊中。  
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Turn on Checked Arithmetic Overflow/Underflow  
+ If you turn on checked arithmetic overflow/underflow in C#, it is equivalent to wrapping every integer operation in a checked block.  
   
- **若要在 C\# 中開啟檢查算術溢位\/反向溢位**  
+ **To turn on checked arithmetic overflow/underflow in C#**  
   
-1.  在 \[**方案總管**\] 中，以滑鼠右鍵按一下專案，並選擇 \[**屬性**\]。  
+1.  In **Solution Explorer**, right-click your project and choose **Properties**.  
   
-2.  選取 \[**建置**\] 索引標籤，並按一下 \[**進階**\]。  
+2.  Select the **Build** tab and click **Advanced**.  
   
-3.  選取 \[**檢查算術溢位\/反向溢位**\]，並按一下 \[**確定**\]。  
+3.  Select **Check for arithmetic overflow/underflow** and click **OK**.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.OverflowException?displayProperty=fullName>   
- [C\# 運算子](/dotnet/csharp/language-reference/operators/index)   
- [Checked 與 Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)
+ [C# Operators](/dotnet/csharp/language-reference/operators/index)   
+ [Checked and Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

@@ -1,54 +1,71 @@
 ---
-title: "IDebugProcess2::GetName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetName"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetName"
+title: IDebugProcess2::GetName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::GetName
+helpviewer_keywords:
+- IDebugProcess2::GetName
 ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# IDebugProcess2::GetName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: fdd980541a751de02fc7e56ccabc6d21210c1595
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得標題、 好記的名稱或檔名的處理程序。  
+---
+# <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
+Gets the title, friendly name, or file name of the process.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetName(   
-   GETNAME_TYPE  gnType,  
-   BSTR*         pbstrName  
+```cpp  
+HRESULT GetName(   
+   GETNAME_TYPE  gnType,  
+   BSTR*         pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   enum_GETNAME_TYPE  gnType,  
-   out string         pbstrName  
+```csharp  
+int GetName(   
+   enum_GETNAME_TYPE  gnType,  
+   out string         pbstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `gnType`  
- \[in\]介於[GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)指定何種類型的 name 屬性傳回的列舉型別。  
+ [in] A value from the [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeration that specifies what type of name to return.  
   
  `pbstrName`  
- \[\] out傳回處理序的名稱。  
+ [out] Returns the name of the process.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [GETNAME\_TYPE](../../../extensibility/debugger/reference/getname-type.md)
+ [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

@@ -1,70 +1,87 @@
 ---
-title: "IDebugProcess3::Step | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess3::Step"
-helpviewer_keywords: 
-  - "IDebugProcess3::Step"
+title: IDebugProcess3::Step | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess3::Step
+helpviewer_keywords:
+- IDebugProcess3::Step
 ms.assetid: 6ad9094c-27cc-4927-8a7c-1b4d97b2e436
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugProcess3::Step
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5b527440083ea02890856892f9954a45cb726627
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-會導致處理程序逐步執行一個指令或陳述式。  
+---
+# <a name="idebugprocess3step"></a>IDebugProcess3::Step
+Causes the process to step one instruction or statement.  
   
 > [!NOTE]
->  應該使用這個方法，而不是[逐步執行](../../../extensibility/debugger/reference/idebugprogram2-step.md)。  
+>  This method should be used instead of [Step](../../../extensibility/debugger/reference/idebugprogram2-step.md).  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
 HRESULT Step(  
-   IDebugThread2* pThread,  
-   STEPKIND       sk,  
-   STEPUNIT       step,  
+   IDebugThread2* pThread,  
+   STEPKIND       sk,  
+   STEPUNIT       step,  
 );  
 ```  
   
-```c#  
+```csharp  
 int Step(  
-   IDebugThread2 pThread,   
-   enum_STEPKIND sk,   
-   enum_STEPUNIT step  
+   IDebugThread2 pThread,   
+   enum_STEPKIND sk,   
+   enum_STEPUNIT step  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pThread`  
- \[in\][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表正在螞蟻的執行緒。  
+ [in] An [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object representing the thread being stepped.  
   
  `sk`  
- \[in\]其中[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)的值。  
+ [in] One of the [STEPKIND](../../../extensibility/debugger/reference/stepkind.md) values.  
   
  `step`  
- \[in\]其中[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)的值。  
+ [in] One of the [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) values.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise returns error code.  
   
-## 備註  
- 如果有任何的執行緒同步處理或執行緒之間的通訊，當在逐步執行特定的執行緒時，就應該會執行其他處理序中的執行緒。  
+## <a name="remarks"></a>Remarks  
+ In case there is any thread synchronization or communication between threads, other threads in the process should run when a particular thread is stepping.  
   
- **警告**不會停止事件或即時的 \(同步\) 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫。 否則偵錯工具可能會停止回應。  
+ **Warning** Do not send a stopping event or an immediate (synchronous) event to [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) while handling this call; otherwise the debugger may hang.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)   
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [STEPKIND](../../../extensibility/debugger/reference/stepkind.md)   
  [STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)   
- [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

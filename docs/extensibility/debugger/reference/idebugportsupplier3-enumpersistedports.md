@@ -1,58 +1,75 @@
 ---
-title: "IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortSupplier3::EnumPersistedPorts"
-helpviewer_keywords: 
-  - "IDebugPortSupplier3::EnumPersistedPorts"
+title: IDebugPortSupplier3::EnumPersistedPorts | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugPortSupplier3::EnumPersistedPorts
+helpviewer_keywords:
+- IDebugPortSupplier3::EnumPersistedPorts
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugPortSupplier3::EnumPersistedPorts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 864bede809be6666726f685cbef75a581ec02a24
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-這個方法會擷取的物件之永續性的連接埠清單的列舉型別。  
+---
+# <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
+This method retrieves an object that allows enumeration of the list of persisted ports.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT EnumPersistedPorts(  
-   BSTR_ARRAY         PortNames,  
-   IEnumDebugPorts2** ppEnum  
+HRESULT EnumPersistedPorts(  
+   BSTR_ARRAY         PortNames,  
+   IEnumDebugPorts2** ppEnum  
 );  
 ```  
   
-```c#  
-int EnumPersistedPorts(  
-   BSTR_ARRAY           PortNames,  
-   out IEnumDebugPorts2 ppEnum  
+```csharp  
+int EnumPersistedPorts(  
+   BSTR_ARRAY           PortNames,  
+   out IEnumDebugPorts2 ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `PortNames`  
- \[in\]A [BSTR\_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)結構，其中包含一份，尋找及傳回的永續性的連接埠之間的連接埠名稱。  只有那些永續性連接埠使用這些名稱將會傳回。  
+ [in] A [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) structure that contains a list of port names to find and return among the persisted ports. Only those persisted ports with these names will be returned.  
   
  `ppEnum`  
- \[\] out物件，實作[IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)介面。  
+ [out] An object that implements the [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) interface.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 當執行個體化，且儲存時被終結的連接埠提供者連接埠提供者，就會載入持續性的連接埠。  
+## <a name="remarks"></a>Remarks  
+ Persisted ports are loaded when a port supplier is instantiated, and saved when the port supplier is destroyed.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)   
  [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)   
- [BSTR\_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)
+ [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

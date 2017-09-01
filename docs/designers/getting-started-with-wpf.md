@@ -1,7 +1,7 @@
 ---
 title: "WPF 使用者入門 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -13,26 +13,11 @@ caps.latest.revision: 5
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a737c447bc97738c6e8f5285f672e9964578061b
+ms.translationtype: HT
+ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc
+ms.openlocfilehash: b1d99a132c6e29239862e9bd7629eb47a679138f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/18/2017
 
 ---
 # <a name="getting-started-with-wpf"></a>WPF 使用者入門
@@ -43,13 +28,14 @@ Windows Presentation Foundation (WPF) 是建立桌面用戶端應用程式的 UI
 |||  
 |-|-|  
 |我想直接開始|[逐步解說：我的第一個 WPF 傳統型應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [逐步解說：建立連接至 Azure 行動服務的 WPF 傳統型應用程式](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
-|我該如何設計應用程式 UI？|[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)|  
-|剛開始使用 .NET 嗎？|[.NET Framework 概觀](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [應用程式基本概念](http://msdn.microsoft.com/Library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Visual C# 和 Visual Basic 使用者入門](https://msdn.microsoft.com/en-us/library/dd492171\(v=vs.140\).aspx)|  
-|WPF 的相關詳細資訊...|[WPF 簡介](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概觀 (WPF)](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)<br /><br /> [控制項](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)<br /><br /> [資料繫結概觀](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)<br /><br /> [WPF 資料繫結與 LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
-|您是 Windows Form 開發人員嗎？|[Windows Form 控制項和對等 WPF 控制項](https://msdn.microsoft.com/en-us/library/ms750559\(v=vs.100\).aspx)<br /><br /> [WPF 和 Windows Forms 互通的支援案例](https://msdn.microsoft.com/en-us/library/ms751797\(v=vs.100\).aspx)|  
+| 我想要比較 XAML 設計工具... |[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)|  
+|剛開始使用 .NET 嗎？|[.NET Framework 概觀](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [應用程式基本概念](/dotnet/standard/application-essentials)<br /><br /> [Visual C# 和 Visual Basic 使用者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|  
+|WPF 的相關詳細資訊...|[WPF 簡介](../designers/introduction-to-wpf.md)<br /><br /> [XAML 概觀 (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/advanced/xaml-overview-wpf)<br /><br /> [控制項](https://docs.microsoft.com/dotnet/framework/wpf/controls/)<br /><br /> [資料繫結概觀](https://docs.microsoft.com/dotnet/framework/wpf/data/data-binding-overview)<br /><br /> [WPF 資料繫結與 LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
+|您是 Windows Form 開發人員嗎？|[Windows Form 控制項和對等 WPF 控制項](https://docs.microsoft.com/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)<br /><br /> [WPF 和 Windows Forms 互通的支援案例](https://docs.microsoft.com/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)|  
   
 ## <a name="see-also"></a>另請參閱  
- [類別庫 (WPF)](https://msdn.microsoft.com/en-us/library/ms753307\(v=vs.100\).aspx)   
- [應用程式開發概觀](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)   
- [.NET Framework 開發人員中心](http://go.microsoft.com/fwlink/?LinkId=187437)   
+ [類別庫 (WPF)](https://docs.microsoft.com/dotnet/framework/wpf/class-library-wpf)   
+ [應用程式開發概觀](https://docs.microsoft.com/dotnet/framework/wpf/app-development/index)   
+ [.NET 文件首頁](https://docs.microsoft.com/dotnet/index)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+

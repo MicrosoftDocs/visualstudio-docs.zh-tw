@@ -1,5 +1,5 @@
 ---
-title: "IDebugThread2::Suspend |Microsoft 文件"
+title: IDebugThread2::Suspend | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,41 +30,42 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: aa00d0029120abad26a7f4fdcd15f828a0284f2f
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 3926456c8b625102dfc5df4d8818f3cacc3a2ce3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-暫止的執行緒。  
+Suspends a thread.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Suspend (   
    DWORD *pdwSuspendCount  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT Suspend (   
    out uint pdwSuspendCount  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pdwSuspendCount`  
- [out]擱置作業之後，傳回的暫停計數。  
+ [out] Returns the suspend count after the suspend operation.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 每次呼叫此方法會遞增暫停計數大於 0。 此暫停計數會顯示在**執行緒**偵錯視窗。  
+## <a name="remarks"></a>Remarks  
+ Each call to this method increments the suspend count above 0. This suspend count is displayed in the **Threads** debug window.  
   
- 每次呼叫這個方法，必須是稍後呼叫[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)方法。  
+ For each call to this method, there must be a later call to the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

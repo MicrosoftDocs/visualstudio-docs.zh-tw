@@ -1,63 +1,80 @@
 ---
-title: "CA2229：請實作序列化建構函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2229"
-  - "ImplementSerializationConstructors"
-helpviewer_keywords: 
-  - "CA2229"
-  - "ImplementSerializationConstructors"
+title: 'CA2229: Implement serialization constructors | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2229
+- ImplementSerializationConstructors
+helpviewer_keywords:
+- CA2229
+- ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA2229：請實作序列化建構函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d604f1d7d1acdbf72681378dd5780d5e76c6aec6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implement serialization constructors
 |||  
 |-|-|  
-|型別名稱|ImplementSerializationConstructors|  
+|TypeName|ImplementSerializationConstructors|  
 |CheckId|CA2229|  
-|分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|Category|Microsoft.Usage|  
+|Breaking Change|Non Breaking|  
   
-## 原因  
- 型別實作 <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> 介面、不是委派 \(Delegate\) 或介面，並符合下列其中一個條件：  
+## <a name="cause"></a>Cause  
+ The type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, is not a delegate or interface, and one of the following conditions is true:  
   
--   型別沒有採用 <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> 物件和 <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> 物件 \(序列化 \(Serialization\) 建構函式的簽章\) 的建構函式。  
+-   The type does not have a constructor that takes a <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> object and a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> object (the signature of the serialization constructor).  
   
--   型別為非密封且它的序列化建構函式的存取修飾詞 \(Modifier\) 不是 protected \(Family\)。  
+-   The type is unsealed and the access modifier for its serialization constructor is not protected (family).  
   
--   型別為密封且它的序列化建構函式的存取修飾詞不是 private。  
+-   The type is sealed and the access modifier for its serialization constructor is not private.  
   
-## 規則描述  
- 此規則會與支援自訂序列化的型別相關。  如果型別會實作 <xref:System.Runtime.Serialization.ISerializable> 介面，就表示會支援自訂序列化。  對於使用 <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> 方法序列化的物件，若要還原序列化或重新建立，則需要使用序列化建構函式。  
+## <a name="rule-description"></a>Rule Description  
+ This rule is relevant for types that support custom serialization. A type supports custom serialization if it implements the <xref:System.Runtime.Serialization.ISerializable> interface. The serialization constructor is required to deserialize, or re-create objects that have been serialized using the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> method.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請實作序列化建構函式。  針對密封類別，讓建構函式成為 private，否則為 protected。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, implement the serialization constructor. For a sealed class, make the constructor private; otherwise, make it protected.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的違規。  將該型別無法被還原序列化，而且在許多案例中也無法運作。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a violation of the rule. The type will not be deserializable, and will not function in many scenarios.  
   
-## 範例  
- 下列範例會顯示滿足規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that satisfies the rule.  
   
- [!code-cs[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
+ [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
   
-## 相關規則  
- [CA2237：必須以 SerializableAttribute 標記 ISerializable 類型](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

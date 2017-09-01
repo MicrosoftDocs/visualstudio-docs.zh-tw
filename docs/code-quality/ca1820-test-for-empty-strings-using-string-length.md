@@ -1,51 +1,69 @@
 ---
-title: "CA1820：應該使用字串長度測試空白字串 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
-helpviewer_keywords: 
-  - "TestForEmptyStringsUsingStringLength"
-  - "CA1820"
+title: 'CA1820: Test for empty strings using string length | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
+helpviewer_keywords:
+- TestForEmptyStringsUsingStringLength
+- CA1820
 ms.assetid: da1e70c8-b1dc-46b9-8b8f-4e6e48339681
 caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
----
-# CA1820：應該使用字串長度測試空白字串
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: bf4c484e1161b7c6dd3dfbe3917be327003d7414
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Test for empty strings using string length
 |||  
 |-|-|  
-|型別名稱|TestForEmptyStringsUsingStringLength|  
+|TypeName|TestForEmptyStringsUsingStringLength|  
 |CheckId|CA1820|  
-|分類|Microsoft.Performance|  
-|中斷變更|中斷|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 使用 <xref:System.Object.Equals%2A?displayProperty=fullName> 比較字串與空字串。  
+## <a name="cause"></a>Cause  
+ A string is compared to the empty string by using <xref:System.Object.Equals%2A?displayProperty=fullName>.  
   
-## 規則描述  
- 使用 <xref:System.String.Length%2A?displayProperty=fullName> 屬性或 <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> 方法比較字串，明顯地會比使用 <xref:System.Object.Equals%2A> 還快。  這是因為 <xref:System.Object.Equals%2A> 所執行的 MSIL 指令數目，明顯地比 <xref:System.String.IsNullOrEmpty%2A>，或擷取 <xref:System.String.Length%2A> 屬性值再與零相比所執行的指令數目更多。  
+## <a name="rule-description"></a>Rule Description  
+ Comparing strings using the <xref:System.String.Length%2A?displayProperty=fullName> property or the <xref:System.String.IsNullOrEmpty%2A?displayProperty=fullName> method is significantly faster than using <xref:System.Object.Equals%2A>. This is because <xref:System.Object.Equals%2A> executes significantly more MSIL instructions than either <xref:System.String.IsNullOrEmpty%2A> or the number of instructions executed to retrieve the <xref:System.String.Length%2A> property value and compare it to zero.  
   
- 您應該注意 <xref:System.Object.Equals%2A> 和 <xref:System.String.Length%2A> \=\= 0 在處理 null 字串時有所不同。  如果您嘗試取得 null 字串的 <xref:System.String.Length%2A> 屬性值，則 Common Language Runtime 會擲回 <xref:System.NullReferenceException?displayProperty=fullName>。  如果您在 null 字串與空字串之間執行比較，則 Common Language Runtime 並不會擲回例外狀況 \(Exception\)，而是傳回 `false`。  進行 null 測試並不會明顯影響這兩種方法的相對效能。  以 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 為目標時，請使用 <xref:System.String.IsNullOrEmpty%2A> 方法。  否則，請盡量使用 <xref:System.String.Length%2A> \=\= 比較。  
+ You should be aware that <xref:System.Object.Equals%2A> and <xref:System.String.Length%2A> == 0 behave differently for null strings. If you try to get the value of the <xref:System.String.Length%2A> property on a null string, the common language runtime throws a <xref:System.NullReferenceException?displayProperty=fullName>. If you perform a comparison between a null string and the empty string, the common language runtime does not throw an exception; the comparison returns `false`. Testing for null does not significantly affect the relative performance of these two approaches. When targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method. Otherwise, use the <xref:System.String.Length%2A> == comparison whenever possible.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將比較變更為使用 <xref:System.String.Length%2A> 屬性，並測試 null 字串。  以 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 為目標時，請使用 <xref:System.String.IsNullOrEmpty%2A> 方法。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the comparison to use the <xref:System.String.Length%2A> property and test for the null string. If targeting [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use the <xref:System.String.IsNullOrEmpty%2A> method.  
   
-## 隱藏警告的時機  
- 如果效能不是問題，則您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule if performance is not an issue.  
   
-## 範例  
- 下列範例會說明用以尋找空字串的不同技巧。  
+## <a name="example"></a>Example  
+ The following example illustrates the different techniques that are used to look for an empty string.  
   
- [!CODE [FxCop.Performance.StringTest#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Performance.StringTest#1)]
+ [!code-csharp[FxCop.Performance.StringTest#1](../code-quality/codesnippet/CSharp/ca1820-test-for-empty-strings-using-string-length_1.cs)]

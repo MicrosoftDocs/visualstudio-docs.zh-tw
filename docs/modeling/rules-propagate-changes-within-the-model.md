@@ -1,31 +1,48 @@
 ---
-title: "規則傳播模型內的變更 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式設計網域模型的定義域專屬語言"
-  - "定義域專屬語言規則"
+title: Rules Propagate Changes Within the Model | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Domain-Specific Language, programming domain models
+- Domain-Specific Language, rules
 ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 30
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 30
----
-# 規則傳播模型內的變更
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: alancameronwills
+ms.author: awills
+manager: douge
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cbdf006fecb00139eda95cf3e9f2726430888ce7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-您可以建立存放區的規則，以傳播變更從一個項目到另一個視覺效果和模型 SDK \(VMSDK\)。 存放區中的任何項目變更時，規則被排程執行，通常最外層的交易認可時。 有不同類型的不同類型的事件，例如加入一個項目，或刪除它的規則。 您可以將規則附加到特定類型的項目、 圖形或圖表。 許多內建功能由規則定義︰ 例如，規則可確保模型變更時，會更新圖表。 您可以加入您自己的規則來自訂定義域專屬語言。  
+---
+# <a name="rules-propagate-changes-within-the-model"></a>Rules Propagate Changes Within the Model
+You can create a store rule to propagate a change from one element to another in Visualization and Modeling SDK (VMSDK). When a change occurs to any element in the Store, rules are scheduled to be executed, usually when the outermost transaction is committed. There are different types of rules for different kinds of events, such as adding an element, or deleting it. You can attach rules to specific types of elements, shapes, or diagrams. Many built-in features are defined by rules: for example, rules ensure that a diagram is updated when the model changes. You can customize your domain-specific language by adding your own rules.  
   
- 規則存放區是在存放區\-也就是變更傳播變更模型項目、 關聯性、 圖形或連接器和其網域屬性特別有用。 當使用者叫用復原或取消復原命令，不要執行規則。 相反地，交易管理員可確保存放內容會還原到正確的狀態。 如果您想要將變更傳播到外部存放區資源，使用儲存的事件。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+ Store rules are particularly useful for propagating changes inside the store - that is, changes to model elements, relationships, shapes or connectors, and their domain properties. Rules do not run when the user invokes the Undo or Redo commands. Instead, the transaction manager makes sure that the store contents are restored to the correct state. If you want to propagate changes to resources outside the store, use Store Events. For more information, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
- 例如，假設您想要指定每當使用者 （或您的程式碼） 會建立新的項目型別 ExampleDomainClass，另一種類型的其他項目會在另一個模型的一部分。 您可以撰寫 AddRule，關聯 ExampleDomainClass。 您會撰寫程式碼來建立其他項目的規則中。  
+ For example, suppose that you want to specify that whenever the user (or your code) creates a new element of type ExampleDomainClass, an additional element of another type is created in another part of the model. You could write an AddRule and associate it with ExampleDomainClass. You would write code in the rule to create the additional element.  
   
-```c#  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -48,7 +65,7 @@ namespace ExampleNamespace
     if (store.TransactionManager.CurrentTransaction.IsSerializing)   
        return;  
   
-    // Code here propagates change as required – for example:  
+    // Code here propagates change as required - for example:  
       AnotherDomainClass echo = new AnotherDomainClass(element.Partition);  
       echo.Name = element.Name;  
       echo.Parent = element.Parent;    
@@ -70,43 +87,43 @@ namespace ExampleNamespace
 ```  
   
 > [!NOTE]
->  規則的程式碼應該變更的狀態只有項目存放區。也就是說，規則應該變更只模型項目、 關聯性、 圖形、 連接線、 圖表或其屬性。 如果您想要將變更傳播到外部存放區資源，定義儲存的事件。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+>  The code of a rule should change the state only of elements inside the Store; that is, the rule should change only model elements, relationships, shapes, connectors, diagrams, or their properties. If you want to propagate changes to resources outside the store, define Store Events. For more information, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
   
-### 若要定義規則  
+### <a name="to-define-a-rule"></a>To define a rule  
   
-1.  定義規則，加上類別 `RuleOn` 屬性。 與您的網域類別、 關聯性或圖表項目之一屬性產生關聯的規則。 這個類別，可能是抽象的每個執行個體，將套用的規則。  
+1.  Define the rule as a class prefixed with the `RuleOn` attribute. The attribute associates the rule with one of your domain classes, relationships, or diagram elements. The rule will be applied to every instance of this class, which may be abstract.  
   
-2.  註冊將其加入至所傳回的集合規則 `GetCustomDomainModelTypes()` 網域模型類別中。  
+2.  Register the rule by adding it to the set returned by `GetCustomDomainModelTypes()` in your domain model class.  
   
-3.  規則從衍生類別的其中一個抽象的規則類別，並撰寫的程式碼的執行方法。  
+3.  Derive the rule class from one of the abstract Rule classes, and write the code of the execution method.  
   
- 下列各節說明這些步驟詳細資料。  
+ The following sections describe these steps in more detail.  
   
-### 網域類別上定義的規則  
+### <a name="to-define-a-rule-on-a-domain-class"></a>To define a rule on a domain class  
   
--   在自訂程式碼檔案中，定義類別，並在它前面加 <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> 屬性︰  
+-   In a custom code file, define a class and prefix it with the <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> attribute:  
   
     ```  
     [RuleOn(typeof(ExampleElement),   
-         // Usual value – but required, because it is not the default:  
+         // Usual value - but required, because it is not the default:  
          FireTime = TimeToFire.TopLevelCommit)]   
     class MyRule ...  
   
     ```  
   
--   主體類型中的第一個參數可以是網域類別、 網域關聯性、 圖形、 連接線或圖表。 通常，您將規則套用至網域類別和關聯性。  
+-   The subject type in the first parameter can be a domain class, domain relationship, shape, connector, or diagram. Usually, you apply rules to domain classes and relationships.  
   
-     `FireTime` 通常是 `TopLevelCommit`。 這可確保交易的所有主要的變更之後，才執行的規則。 替代項目會以內嵌方式，變更; 後立即執行規則和 LocalCommit，它會執行在目前的交易 （這可能不是最外層） 結尾的規則。 您也可以設定會影響在佇列中，其排序規則的優先順序，但這是不可靠的方法，達到您所需要的結果。  
+     The `FireTime` is usually `TopLevelCommit`. This ensures that the rule is executed only after all the primary changes of the transaction have been made. The alternatives are Inline, which executes the rule soon after the change; and LocalCommit, which executes the rule at the end of the current transaction (which might not be the outermost). You can also set the priority of a rule to affect its ordering in the queue, but this is an unreliable method of achieving the result you require.  
   
--   您可以指定的抽象類別，做為主體類型。  
+-   You can specify an abstract class as the subject type.  
   
--   規則套用到主體類別的所有執行個體。  
+-   The rule applies to all instances of the subject class.  
   
--   預設值為 `FireTime` 是 TimeToFire.TopLevelCommit。 這會導致最外層的交易認可時要執行規則。 替代方法是 TimeToFire.Inline。 這會導致觸發的事件後立即執行規則。  
+-   The default value for `FireTime` is TimeToFire.TopLevelCommit. This causes the rule to be executed when the outermost transaction is committed. An alternative is TimeToFire.Inline. This causes the rule to be executed soon after the triggering event.  
   
-### 若要註冊的規則  
+### <a name="to-register-the-rule"></a>To register the rule  
   
--   將規則類別加入至所傳回的類型清單 `GetCustomDomainModelTypes` 網域模型中︰  
+-   Add your rule class to the list of types returned by `GetCustomDomainModelTypes` in your domain model:  
   
     ```  
     public partial class ExampleDomainModel  
@@ -122,51 +139,51 @@ namespace ExampleNamespace
   
     ```  
   
--   如果您不確定您的網域模型類別名稱，尋找檔案內的 **Dsl\\GeneratedCode\\DomainModel.cs**  
+-   If you are not sure of the name of your domain model class, look inside the file **Dsl\GeneratedCode\DomainModel.cs**  
   
--   在您的 DSL 專案中的自訂程式碼檔案撰寫此程式碼。  
+-   Write this code in a custom code file in your DSL project.  
   
-### 若要撰寫的程式碼的規則  
+### <a name="to-write-the-code-of-the-rule"></a>To write the code of the rule  
   
--   從下列基底類別的其中一個衍生規則類別︰  
+-   Derive the rule class from one of the following base classes:  
   
-    |基底類別|觸發程序|  
-    |----------|----------|  
-    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|加入項目、 連結或圖形。<br /><br /> 使用此選項以偵測新的關聯性，除了新的項目。|  
-    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|網域屬性值已變更。 方法引數提供舊的和新值。<br /><br /> 此規則會觸發圖形，當內建 `AbsoluteBounds` 屬性變更，如果圖形移動時。<br /><br /> 在許多情況下，會比較方便覆寫 `OnValueChanged` 或 `OnValueChanging` 屬性處理常式中。 變更立即之前和之後，會呼叫這些方法。 相較之下，此規則通常會在交易結束執行。 如需詳細資訊，請參閱[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)。 **Note:**  建立或刪除連結時，則不會觸發此規則。 相反地，寫入 `AddRule` 和 `DeleteRule` 網域關聯性。|  
-    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|即將被刪除的項目或連結時，就會觸發。 屬性 ModelElement.IsDeleting 為 true，直到交易結束為止。|  
-    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|已刪除的項目或連結時執行。 所有其他規則已執行，包括 DeletingRules 之後，會執行規則。 ModelElement.IsDeleting 為 false，而且 ModelElement.IsDeleted 為 true。 若要允許後續復原，此項目實際上不會移除從記憶體中，但從 Store.ElementDirectory 中移除。|  
-    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|項目移到另一個存放區的資料分割。<br /><br /> （請注意，這不與圖形的圖形化的位置）。|  
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|此規則只適用於網域關聯性。 如果您明確地指派任一端的連結模型項目，會觸發其項目。|  
-    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|從項目或連結的順序連結上使用 MoveBefore 或 MoveToIndex 方法變更時觸發。|  
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|建立交易時執行。|  
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|認可交易時執行。|  
-    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|回復交易時執行。|  
+    |Base class|Trigger|  
+    |----------------|-------------|  
+    |<xref:Microsoft.VisualStudio.Modeling.AddRule>|An element, link, or shape is added.<br /><br /> Use this to detect new relationships, in addition to new elements.|  
+    |<xref:Microsoft.VisualStudio.Modeling.ChangeRule>|A domain property value is changed. The method argument provides the old and new values.<br /><br /> For shapes, this rule is triggered when the built-in `AbsoluteBounds` property changes, if the shape is moved.<br /><br /> In many cases, it is more convenient to override `OnValueChanged` or `OnValueChanging` in the property handler. These methods are called immediately before and after the change. By contrast, the rule usually runs at the end of the transaction. For more information, see [Domain Property Value Change Handlers](../modeling/domain-property-value-change-handlers.md). **Note:**  This rule is not triggered when a link is created or deleted. Instead, write an `AddRule` and a `DeleteRule` for the domain relationship.|  
+    |<xref:Microsoft.VisualStudio.Modeling.DeletingRule>|Triggered when an element or link is about to be deleted. The property ModelElement.IsDeleting is true until the end of the transaction.|  
+    |<xref:Microsoft.VisualStudio.Modeling.DeleteRule>|Performed when an element or link has been deleted. The rule is executed after all other rules have been executed, including DeletingRules. ModelElement.IsDeleting is false, and ModelElement.IsDeleted is true. To allow for a subsequent Undo, the element is not actually removed from the memory, but it is removed from Store.ElementDirectory.|  
+    |<xref:Microsoft.VisualStudio.Modeling.MoveRule>|An element is moved from one store partition to another.<br /><br /> (Notice that this is not related to the graphical position of a shape.)|  
+    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerChangeRule>|This rule applies only to domain relationships. It is triggered if you explicitly assign a model element to either end of a link.|  
+    |<xref:Microsoft.VisualStudio.Modeling.RolePlayerPositionChangeRule>|Triggered when the ordering of links to or from an element is changed using the MoveBefore or MoveToIndex methods on a link.|  
+    |<xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>|Executed when a transaction is created.|  
+    |<xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>|Executed when the transaction is about to be committed.|  
+    |<xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>|Executed when the transaction is about to be rolled back.|  
   
--   每個類別具有您覆寫的方法。 型別 `override` 才能探索該類別中。 這個方法的參數會識別正在變更的項目。  
+-   Each class has a method that you override. Type `override` in your class to discover it. The parameter of this method identifies the element that is being changed.  
   
- 請注意下列有關規則的重點︰  
+ Notice the following points about rules:  
   
-1.  在交易中的變更集可能會觸發許多規則。 通常，最外層的交易認可時，會執行規則。 它們會以指定的順序執行。  
+1.  The set of changes in a transaction might trigger many rules. Usually, the rules are executed when the outermost transaction is committed. They are executed in an unspecified order.  
   
-2.  一律在交易內執行的規則。 因此，您不必建立新的交易，以便進行變更。  
+2.  A rule is always executed inside a transaction. Therefore, you do not have to create a new transaction to make changes.  
   
-3.  交易已回復，或復原或取消復原作業時，不會執行規則。 這些作業重設成先前的狀態存放區的所有內容。 因此，如果您的規則存放區外的任何內容的狀態變更，它可能會將保留在 synchronism 與存放區內容。 若要更新外部存放區的狀態，最好是使用事件。 如需詳細資訊，請參閱[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+3.  Rules are not executed when a transaction is rolled back, or when the Undo or Redo operations are performed. These operations reset all the content of the Store to its previous state. Therefore, if your rule changes the state of anything outside the Store, it might not keep in synchronism with the Store content. To update state outside the Store, it is better to use Events. For more information, see [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-4.  從檔案載入模型時，會執行一些規則。 若要判斷載入或儲存是否正在進行中，使用 `store.TransactionManager.CurrentTransaction.IsSerializing`。  
+4.  Some rules are executed when a model is loaded from file. To determine whether loading or saving is in progress, use `store.TransactionManager.CurrentTransaction.IsSerializing`.  
   
-5.  如果您的規則的程式碼會建立多個規則的觸發程序，它們將會新增至清單的結尾引發，並在交易完成之前會先執行。 DeletedRules 之後的所有其他規則執行。 一個規則可以在交易中，每個變更一次執行的次數。  
+5.  If the code of your rule creates more rule triggers, they will be added to the end of the firing list, and will be executed before the transaction completes. DeletedRules are executed after all other rules. One rule can run many times in a transaction, one time for each change.  
   
-6.  若要傳遞規則的資訊，您可以將資訊儲存於 `TransactionContext`。 這是只會保留在交易期間的字典。 當交易結束時，會處置。 在每個規則的事件引數提供給它的存取。 請記住規則不會執行可預測的順序。  
+6.  To pass information to and from rules, you can store information in the `TransactionContext`. This is just a dictionary that is maintained during the transaction. It is disposed when the transaction ends. The event arguments in each rule provide access to it. Remember that rules are not executed in a predictable order.  
   
-7.  使用其他替代項目後的規則。 例如，如果您想要更新屬性值變更時，請考慮使用計算的屬性。 如果您想要限制的大小或圖形的位置，使用 `BoundsRule`。 如果您想要回應的屬性值變更時，加入 `OnValueChanged` 屬性處理常式。 如需詳細資訊，請參閱[回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
+7.  Use rules after considering other alternatives. For example, if you want to update a property when a value changes, consider using a calculated property. If you want to constrain the size or location of a shape, use a `BoundsRule`. If you want to respond to a change in a property value, add an `OnValueChanged` handler to the property. For more information, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).  
   
-## 範例  
- 當網域關聯性來連結兩個項目執行個體化時，下列範例會更新屬性。 不只在使用者建立時連結在圖表上，同時也如果程式碼會建立一個連結，將會觸發規則。  
+## <a name="example"></a>Example  
+ The following example updates a property when a domain relationship is instantiated to link two elements. The rule will be triggered not only when the user creates a link on a diagram, but also if program code creates a link.  
   
- 若要測試此範例中，建立 DSL 使用工作流程 」 方案範本，然後插入下列程式碼 Dsl 專案中的檔案。 建置並執行方案，並在偵錯專案中開啟範例檔案。 繪製註解連結之間的註解圖案和資料流程項目。 在註解的文字變更為報表的最新的項目，您已經連接到它。  
+ To test this example, create a DSL using the Task Flow solution template, and insert the following code in a file in the Dsl project. Build and run the solution, and open the Sample file in the Debugging project. Draw a Comment Link between a Comment shape and a flow element. The text in the comment changes to report on the most recent element that you have connected it to.  
   
- 在實務上，您通常會針對每個 AddRule 撰寫 DeleteRule。  
+ In practice, you would usually write a DeleteRule for every AddRule.  
   
 ```  
 using System;  
@@ -210,6 +227,6 @@ namespace Company.TaskRuleExample
   
 ```  
   
-## 請參閱  
- [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
- [BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)
+## <a name="see-also"></a>See Also  
+ [Event Handlers Propagate Changes Outside the Model](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
+ [BoundsRules Constrain Shape Location and Size](../modeling/boundsrules-constrain-shape-location-and-size.md)

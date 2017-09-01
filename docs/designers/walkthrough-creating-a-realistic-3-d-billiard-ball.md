@@ -67,11 +67,11 @@ ms.lasthandoff: 05/13/2017
   
      紋理看起來應該像這樣：  
   
-     ![撞球紋理](~/designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
+     ![撞球紋理](../designers/media/gfx_shader_demo_billiard_art_ball_texture.png "gfx_shader_demo_billiard_art_ball_texture")  
   
 4.  或者，您也可能想要減少此紋理的儲存需求。 您可以減少紋理的寬度使符合其高度，來完成此作業。 這會壓縮紋理及其寬度，但因為紋理對應至球體的方式，會在呈現撞球時展開。 調整大小後，紋理看起來應該像這樣：  
   
-     ![壓縮成方形的撞球紋理](~/designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
+     ![壓縮成方形的撞球紋理](../designers/media/gfx_shader_demo_billiard_art_ball_texture_square.png "gfx_shader_demo_billiard_art_ball_texture_square")  
   
  現在您可以建立將此紋理套用至模型的著色器。  
   
@@ -93,7 +93,7 @@ ms.lasthandoff: 05/13/2017
   
  您的撞球現在看起來應該像這樣︰  
   
- ![經過紋理處理的撞球特寫](~/designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
+ ![經過紋理處理的撞球特寫](../designers/media/gfx_shader_demo_.png "gfx_shader_demo_")  
   
 ## <a name="creating-depth-with-the-lambert-lighting-model"></a>使用 Lambert 光源模型建立深度  
  到目前為止，您已建立易於辨識的撞球。 不過，它看起起平淡無奇 — 比較像是撞球的卡通圖片，不夠逼真。 平淡的外觀來自簡單的著色器，其表現如同撞球表面的每個像素都接收等量的光照。  
@@ -114,7 +114,7 @@ ms.lasthandoff: 05/13/2017
   
  套用 Lambert 光源後的撞球看起來應該像這樣︰  
   
- ![經過紋理和光源處理的撞球特寫](~/designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
+ ![經過紋理和光源處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_2.png "gfx_shader_demo_billiard_ball_2")  
   
 ## <a name="enhancing-the-basic-appearance-with-specular-highlights"></a>以高光強化基本的外觀。  
  Lambert 光源模型能為只有紋理的著色器提供形狀和立體感。 不過，撞球仍略顯平淡。  
@@ -135,7 +135,7 @@ ms.lasthandoff: 05/13/2017
   
  套用高光後的撞球看起來應該像這樣︰  
   
- ![加上高光的撞球特寫](~/designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
+ ![加上高光的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_3.png "gfx_shader_demo_billiard_ball_3")  
   
 ## <a name="creating-a-sense-of-space-by-reflecting-the-environment"></a>反映環境以建立空間感  
  套用高光後的撞球看起來很逼真。 它有正確的形狀、正確的繪製作業及正確的效果。 不過，還有一項技術可讓您的撞球更融入環境。  
@@ -158,27 +158,27 @@ ms.lasthandoff: 05/13/2017
   
 4.  建立第二個紋理，大小和第一個紋理相同。 此紋理會在立方體貼圖的四個面重複，對應球檯的表面和邊，以及球檯附近的區域。 請務必使用和底面紋理相同的色彩，以此紋理繪製球檯的介面。 紋理看起來應該像這樣：  
   
-     ![立方體貼圖各面的紋理](~/designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
+     ![立方體貼圖各面的紋理](../designers/media/gfx_shader_demo_billiard_art_env_texture_side.png "gfx_shader_demo_billiard_art_env_texture_side")  
   
      請記住，反射貼圖不一定要完全一致才有效。例如，本文中建立影像所用的立方體貼圖只包含四個球袋而不是六個。  
   
 5.  建立第三個紋理，大小和其他紋理相同。 此紋理會是立方體貼圖的頂面，對應球檯上方的天花板。 為讓這部分的倒影更有趣，您可以繪製頂光以強調前個程序中新增至著色器的高光。 紋理看起來應該像這樣：  
   
-     ![立方體貼圖頂面的紋理](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
+     ![立方體貼圖頂面的紋理](../designers/media/gfx_shader_demo_billiard_art_env_texture_top2.png "gfx_shader_demo_billiard_art_env_texture_top2")  
   
  既然您已針對立方體貼圖的各面建立個別的紋理，就可以使用工具將它們組合至一個儲存在單一 .dds 紋理的立方體貼圖中。 只要可以 .dds 紋理格式來儲存立方體貼圖，您可以使用任何想用的程式來建立立方體貼圖。 本逐步解說示範如何使用附屬於 2010 年 6 月版的 DirectX SDK 的 DirectX 紋理工具來建立紋理。  
   
 #### <a name="to-assemble-a-cube-map-by-using-the-directx-texture-tool"></a>使用 DirectX 紋理工具組合立方體貼圖  
   
-1.  在 DirectX 紋理工具的主功能表中，依序選擇 [檔案] 和 [New Texture] (新增紋理)。 [New Texture] (新增紋理) 對話方塊隨即出現。  
+1.  在 DirectX 紋理工具的主功能表中，依序選擇 [檔案] 和 [New Texture]\(新增紋理)。 [New Texture]\(新增紋理) 對話方塊隨即出現。  
   
-2.  在 [Texture Type] (紋理類型) 群組中選擇 [Cubemap Texture] (立方體貼圖紋理)。  
+2.  在 [Texture Type]\(紋理類型) 群組中選擇 [Cubemap Texture]\(立方體貼圖紋理)。  
   
 3.  在 [尺寸] 群組中，輸入正確的 [寬度] 和 [高度] 值，然後選擇 [確定]。 新的紋理文件隨即出現。 根據預設，紋理首先出現在紋理文件中，對應立方體的**正 X** 面。  
   
-4.  將您為紋理立方體面建立的紋理載入到立方體面。 在主功能表上依序選擇 [檔案] 及 [Open Onto This Cubemap Face] (在這個立方體面開啟)，選取您為此立方體面建立的紋理，然後選擇 [開啟]。  
+4.  將您為紋理立方體面建立的紋理載入到立方體面。 在主功能表上依序選擇 [檔案] 及 [Open Onto This Cubemap Face]\(在這個立方體面開啟)，選取您為此立方體面建立的紋理，然後選擇 [開啟]。  
   
-5.  對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face] (立方體貼圖面)，然後選取您想要檢視的立方體面。  
+5.  對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face]\(立方體貼圖面)，然後選取您想要檢視的立方體面。  
   
 6.  在**正 Y** 立方體面載入您為紋理立方體頂面建立的紋理。  
   
@@ -188,7 +188,7 @@ ms.lasthandoff: 05/13/2017
   
  您可以將立方體貼圖的配置想像成這樣︰  
   
- ![環境立方體貼圖的配置](~/designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
+ ![環境立方體貼圖的配置](../designers/media/gfx_shader_demo_billiard_art_env_texture_top.png "gfx_shader_demo_billiard_art_env_texture_top")  
   
  頂端影像是正 Y (+Y) 立方體面，中間從左到右是 -X、+Z、+X 和 -Z 立方體面，底面是 -Y 立方體面。  
   
@@ -212,7 +212,7 @@ ms.lasthandoff: 05/13/2017
   
  套用環境貼圖後的撞球看起來應該像這樣︰  
   
- ![經過環境貼圖處理的撞球特寫](~/designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
+ ![經過環境貼圖處理的撞球特寫](../designers/media/gfx_shader_demo_billiard_ball_4.png "gfx_shader_demo_billiard_ball_4")  
   
  在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
   

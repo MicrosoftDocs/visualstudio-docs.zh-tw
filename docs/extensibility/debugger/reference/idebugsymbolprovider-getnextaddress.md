@@ -1,5 +1,5 @@
 ---
-title: "IDebugSymbolProvider::GetNextAddress |Microsoft 文件"
+title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7f16f03e7e61fb059fdea10986ca76cf26b77590
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 61f05a9cdde32717d6151a15cf7f8d2176c7ed60
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-取得偵錯位址後面指定偵錯中的地址的方法。  
+Gets the debug address that follows a given debug address in a method.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetNextAddress(   
    IDebugAddress*  pAddress,  
    BOOL            fStatementOnly,  
@@ -49,7 +50,7 @@ HRESULT GetNextAddress(
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNextAddress(   
    IDebugAddress     pAddress,  
    bool              fStatementOnly,  
@@ -57,18 +58,18 @@ int GetNextAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- [in]指定偵錯的位址。  
+ [in] Given debug address.  
   
  `fStatementOnly`  
- [in]如果為 TRUE，則會限制單一陳述式的偵錯位址。  
+ [in] If TRUE, limits the debug addresses to a single statement.  
   
  `ppAddress`  
- [out]傳回下一個偵錯位址。  
+ [out] Returns the next debug address.  
   
-## <a name="return-value"></a>傳回值  
- 傳回有效`HRESULT`，通常 S_OK。  
+## <a name="return-value"></a>Return Value  
+ Returns a valid `HRESULT`, typically S_OK.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

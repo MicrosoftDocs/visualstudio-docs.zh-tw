@@ -1,5 +1,5 @@
 ---
-title: "SccIsMultiCheckoutEnabled 函式 |Microsoft 文件"
+title: SccIsMultiCheckoutEnabled Function | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,41 +30,42 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3d767767f3e2d8d3b67971dceda49c8309c549bb
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a8c1a00aa923374b7833e83edde4a0d7b5b4b9b6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled 函式
-此函式會檢查原始檔控制外掛程式是否允許多重簽出檔案。  
+# <a name="sccismulticheckoutenabled-function"></a>SccIsMultiCheckoutEnabled Function
+This function checks whether the source control plug-in allows multiple checkouts on a file.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 SCCRTN SccIsMultiCheckoutEnabled(  
    LPVOID pContext,  
    LPBOOL pbMultiCheckout  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  pContext  
- [in]原始檔控制外掛程式內容結構。  
+ [in] The source control plug-in context structure.  
   
  pbMultiCheckout  
- [out]指定是否啟用多重簽出，以供此專案 （非零值表示，並支援多重簽出）。  
+ [out] Specifies whether multiple checkouts are enabled for this project (nonzero means that multiple checkouts are supported).  
   
-## <a name="return-value"></a>傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一︰  
+## <a name="return-value"></a>Return Value  
+ The source control plug-in implementation of this function is expected to return one of the following values:  
   
-|值|描述|  
+|Value|Description|  
 |-----------|-----------------|  
-|SCC_OK|檢查已成功。|  
-|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特定的失敗。|  
+|SCC_OK|The check was successful.|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|Nonspecific failure.|  
   
-## <a name="remarks"></a>備註  
- IDE 可讓兩個檢查，以便決定是否檔案可以簽出同時由多個使用者。 首先，原始檔控制系統必須支援多重簽出。 原始檔控制外掛程式可以藉由指定初始化過程中指定這項功能`SCC_CAP_MULTICHECKOUT`。 此後，第二個檢查，IDE 會呼叫此函式可判斷目前的專案支援多重簽出。 如果選取的專案支援多重簽出，此外掛程式將傳回成功的程式碼，並設定`pbMultiCheckout`為非零 (`TRUE`) 或`FALSE`。  
+## <a name="remarks"></a>Remarks  
+ The IDE makes two checks to determine if files can be checked out simultaneously by more than one user. First, the source control system must support multiple checkouts. The source control plug-in can specify this capability during initialization by specifying the `SCC_CAP_MULTICHECKOUT`. Thereafter, as a second check, the IDE calls this function to determine whether or not the current project supports multiple checkouts. If multiple checkouts are supported for the selected project, the plug-in returns a success code and sets `pbMultiCheckout` to nonzero (`TRUE`) or `FALSE`.  
   
-## <a name="see-also"></a>另請參閱  
- [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)
+## <a name="see-also"></a>See Also  
+ [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)

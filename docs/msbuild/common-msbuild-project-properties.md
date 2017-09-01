@@ -37,11 +37,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 7ec5dd2249f67a2aa23dc42b1f4065bc5d9a318c
+ms.translationtype: HT
+ms.sourcegitcommit: 1c2afd23f9f6a7444b723a0f7d93ababad2624e7
+ms.openlocfilehash: 15e453ace87993aae4ecf80e37cf97e4afce2f28
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 08/15/2017
 
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
@@ -78,6 +78,7 @@ ms.lasthandoff: 05/13/2017
 |DefineTrace|布林值，指出您是否要定義 TRACE 常數。|  
 |DebugType|定義您要產生的偵錯資訊層級。 有效值為 "full"、"pdbonly" 和 "none"。|  
 |DelaySign|布林值，指出您是否要延遲簽署組件，而不要完整簽署組件。|  
+|具決定性|布林值，指出編譯器是否應該針對相同的輸入產生相同的組件。 這個參數對應於 `vbc.exe` 和 `csc.exe` 編譯器的 `/deterministic` 參數。|
 |DisabledWarnings|隱藏指定的警告。 您只需要指定警告識別項的數值部分。 若有多個警告，則會以分號分隔。 這個參數對應於 vbc.exe 編譯器的 `/nowarn` 參數。|  
 |DisableFastUpToDateCheck|僅適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的布林值。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式會使用稱為 FastUpToDateCheck 的處理序，判斷是否必須重建專案使其成為最新版本。 使用這個處理序比使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷的速度快。 將 DisableFastUpToDateCheck 屬性設為 `true`，可讓您略過 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 組建管理程式，並強制使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 判斷專案是否為最新版本。|  
 |DocumentationFile|產生為 XML 文件檔案之檔案的名稱。 這個名稱只包含檔案名稱，不包含路徑資訊。|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 05/13/2017
 |ExcludeDeploymentUrl|如果專案檔包含下列任何項目，[GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)會將 deploymentProvider 標記加入至部署資訊清單：<br /><br /> -   UpdateUrl<br />-   InstallUrl<br />-   PublishUrl<br /><br /> 不過，若使用 ExcludeDeploymentUrl，即使指定了上述任何 URL，仍可以防止將 deploymentProvider 標記加入至部署資訊清單。 若要防止加入該標記，請將下列屬性加入至您的專案檔：<br /><br /> `<ExcludeDeploymentUrl>true</ExcludeDeploymentUrl>` **注意：**ExcludeDeploymentUrl 不會在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中公開，只能透過手動編輯專案檔的方式設定。 設定這個屬性不會影響 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 內的發行作業，也就是說，deploymentProvider 標記仍會加入至 PublishUrl 所指定的 URL。|  
 |FileAlignment|以位元組為單位，指定要對齊輸出檔案區段的位置。 有效的值為 512、1024、2048、4096、8192。 這個屬性相當於 `/filealignment` 編譯器參數。|  
 |FrameworkPathOverride|指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 這個參數 (Parameter) 相當於 vbc.exe 編譯器的 `/sdkpath` 參數 (Switch)。|  
-|GenerateDocumentation|布林值參數，指出建置是否要產生文件。 如果為 `true`，則建置會產生文件資訊，並將該資訊連同建置工作所建立的可執行檔或程式庫的名稱放入 .xml 檔。|  
+|GenerateDocumentation|(僅 Visual Basic .NET) 布林值參數，指出建置是否產生文件。 如果為 `true`，則建置會產生文件資訊，並將該資訊連同建置工作所建立的可執行檔或程式庫的名稱放入 .xml 檔。|
 |IntermediateOutputPath|如果沒有指定路徑，則為衍生自 `BaseIntermediateOutputPath` 的完整中繼輸出路徑。 例如 \obj\debug\\。 如果這個屬性遭到覆寫，則設定 `BaseIntermediateOutputPath` 沒有任何作用。|  
 |KeyContainerName|強式名稱金鑰容器的名稱。|  
 |KeyOriginatorFile|強式名稱金鑰檔的名稱。|  
@@ -105,6 +106,7 @@ ms.lasthandoff: 05/13/2017
 |OverwriteReadOnlyFiles|布林值，指出您要讓建置覆寫唯讀檔案或是觸發錯誤。|  
 |PdbFile|您要發出之 .pdb 檔的檔案名稱。 這個屬性相當於 csc.exe 編譯器的 `/pdb` 參數。|  
 |平台|做為您建置目標的作業系統。 有效值為 "Any CPU"、"x86" 及 "x64"。|  
+|ProduceReferenceAssembly|布林值，設定為 `true` 時會產生目前組件的[參考組件](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md)。 使用這項功能時，`Deterministic` 應該是 `true`。 這個屬性對應於 `vbc.exe` 和 `csc.exe` 編譯器的 `/refout` 參數。|
 |RemoveIntegerChecks|布林值，指出是否要停用整數溢位錯誤檢查。 預設值是 `false`。 這個屬性相當於 vbc.exe 編譯器的 `/removeintchecks` 參數。|  
 |SGenUseProxyTypes|布林值，指出是否要由 SGen.exe 產生 Proxy 類型。<br /><br /> SGen 目標會使用這個屬性設定 UseProxyTypes 旗標。 這個屬性預設為 true，而且沒有 UI 可用來變更這個屬性。 若要產生非 WebService 類型的序列化組件，請先將這個屬性加入至專案檔並將它設定為 false，再匯入 Microsoft.Common.Targets 或 C#/VB.targets。|  
 |SGenToolPath|選擇性的工具路徑，指出目前版本的 SGen.exe 遭到覆寫時，取得 SGen.exe 的位置。|  

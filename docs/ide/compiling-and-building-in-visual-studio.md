@@ -17,10 +17,10 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 800fcd5ff96e9e6d05b79c4d6fc5ccf17ba3084b
+ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
+ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -61,3 +61,4 @@ Visual Studio 產品系列中，您可採用三種方式建置應用程式：Vis
 ## <a name="see-also"></a>另請參閱  
 
 - [建置 (編譯) 網站專案](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
+

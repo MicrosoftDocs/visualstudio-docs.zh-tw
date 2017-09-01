@@ -1,60 +1,77 @@
 ---
-title: "CA1403：自動配置類型不應該是 COM 可見 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "AutoLayoutTypesShouldNotBeComVisible"
-  - "CA1403"
-helpviewer_keywords: 
-  - "CA1403"
-  - "AutoLayoutTypesShouldNotBeComVisible"
+title: 'CA1403: Auto layout types should not be COM visible | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- AutoLayoutTypesShouldNotBeComVisible
+- CA1403
+helpviewer_keywords:
+- CA1403
+- AutoLayoutTypesShouldNotBeComVisible
 ms.assetid: a7007714-f9b4-4730-94e0-67d3dc68991f
 caps.latest.revision: 17
-caps.handback.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# CA1403：自動配置類型不應該是 COM 可見
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: d37505e5525641ad1917bae8f8f4327ea4888faf
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Auto layout types should not be COM visible
 |||  
 |-|-|  
-|型別名稱|AutoLayoutTypesShouldNotBeComVisible|  
+|TypeName|AutoLayoutTypesShouldNotBeComVisible|  
 |CheckId|CA1403|  
-|分類|Microsoft.Interoperability|  
-|中斷變更|中斷|  
+|Category|Microsoft.Interoperability|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 元件物件模型 \(COM\) 可見的實值型別是以設定為 <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName> 的 <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> 屬性所標記。  
+## <a name="cause"></a>Cause  
+ A Component Object Model (COM) visible value type is marked with the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> attribute set to <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=fullName>.  
   
-## 規則描述  
- <xref:System.Runtime.InteropServices.LayoutKind> 配置型別是由 Common Language Runtime 所管理。  可以在 .NET Framework 的版本間變更這些型別的配置，這將會中斷必須有特定配置的 COM 用戶端。  請注意如果未指定 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 屬性，則 C\#、[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 和 C\+\+ 編譯器會指定實值型別的 <xref:System.Runtime.InteropServices.LayoutKind> 配置。  
+## <a name="rule-description"></a>Rule Description  
+ <xref:System.Runtime.InteropServices.LayoutKind> layout types are managed by the common language runtime. The layout of these types can change between versions of the .NET Framework, which will break COM clients that expect a specific layout. Note that if the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute is not specified, the C#, [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], and C++ compilers specify the <xref:System.Runtime.InteropServices.LayoutKind> layout for value types.  
   
- 除非已標記，否則所有公用的非泛型型別對 COM 皆為可見的，而所有非公用的泛型型別對 COM 則皆不可見的。  但是，為了減少誤報的情形，這項規則要求必須明確陳述此型別的 COM 可視性、必須使用設定為 `false` 的 <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> 來標記包含的組件，而且必須使用設定為 `true` 的 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 來標記此型別。  
+ Unless marked otherwise, all public nongeneric types are visible to COM; all nonpublic and generic types are invisible to COM. However, to reduce false positives, this rule requires the COM visibility of the type to be explicitly stated; the containing assembly must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> set to `false` and the type must be marked with the <xref:System.Runtime.InteropServices.ComVisibleAttribute> set to `true`.  
   
-## 如何修正違規  
- 若要修正這項規則的違規情形，請將 <xref:System.Runtime.InteropServices.StructLayoutAttribute> 屬性的值變更為 <xref:System.Runtime.InteropServices.LayoutKind> 或 <xref:System.Runtime.InteropServices.LayoutKind>，或標記 COM 看不見的型別。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, change the value of the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to <xref:System.Runtime.InteropServices.LayoutKind> or <xref:System.Runtime.InteropServices.LayoutKind>, or make the type invisible to COM.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
-## 範例  
- 下列範例會顯示違反規則的型別和滿足規則的型別。  
+## <a name="example"></a>Example  
+ The following example shows a type that violates the rule and a type that satisfies the rule.  
   
- [!CODE [FxCop.Interoperability.AutoLayout#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Interoperability.AutoLayout#1)]  
+ [!code-csharp[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/CSharp/ca1403-auto-layout-types-should-not-be-com-visible_1.cs)] [!code-vb[FxCop.Interoperability.AutoLayout#1](../code-quality/codesnippet/VisualBasic/ca1403-auto-layout-types-should-not-be-com-visible_1.vb)]  
   
-## 相關規則  
- [CA1408：不要使用 AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
+## <a name="related-rules"></a>Related Rules  
+ [CA1408: Do not use AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)  
   
-## 請參閱  
- [Introducing the Class Interface](http://msdn.microsoft.com/zh-tw/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
- [限定互通的 .NET 類型](../Topic/Qualifying%20.NET%20Types%20for%20Interoperation.md)   
- [與 Unmanaged 程式碼互通](../Topic/Interoperating%20with%20Unmanaged%20Code.md)
+## <a name="see-also"></a>See Also  
+ [Introducing the Class Interface](http://msdn.microsoft.com/en-us/733c0dd2-12e5-46e6-8de1-39d5b25df024)   
+ [Qualifying .NET Types for Interoperation](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
+ [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)

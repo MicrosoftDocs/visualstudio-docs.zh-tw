@@ -1,117 +1,159 @@
 ---
-title: "[自動變數] 和 [區域變數] 視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "hero-article"
-f1_keywords: 
-  - "vs.debug.autos"
-  - "vs.debug.locals"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "偵錯工具，變數視窗"
-  - "偵錯 [Visual Studio]，變數視窗"
+title: Inspect Variables in the Autos and Locals Windows | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/17/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.autos
+- vs.debug.locals
+helpviewer_keywords:
+- debugger, variable windows
+- debugging [Visual Studio], variable windows
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 24
-caps.handback.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# [自動變數] 和 [區域變數] 視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: f681301201a4f39e0ad83c6724e0b38d82653b84
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/23/2017
 
-\[自動變數\] 視窗 \(偵錯時，**CTRL\+ALT\+V、A**，或 \[偵錯\] \/ \[視窗\] \/ \[自動變數\]\) 和 \[區域變數\] 視窗 \(偵錯時，**CTRL\+ALT\+V、L**，或 \[偵錯\] \/ \[視窗\] \/ \[區域變數\]\) 相當適合用來在您偵錯時查看變數值。 \[區域變數\] 視窗會顯示在區域範圍中定義的變數，這通常是目前正在執行的函式或方法。 \[自動變數\] 視窗會顯示目前這一行 \(偵錯工具停止處的位置\) 附近使用的變數。 會確切顯示哪些變數在不同語言中是不同的。 請參閱底下的＜\[自動變數\] 視窗中出現哪些變數？＞  
+---
+# <a name="inspect-variables-in-the-autos-and-locals-windows-in-visual-studio"></a>Inspect Variables in the Autos and Locals Windows in Visual Studio
+The **Autos** window (while debugging, **CTRL+ALT+V, A**, or **Debug > Windows > Autos**) and the **Locals** window (while debugging, **CTRL+ALT+V, L**, or **Debug > Windows > Locals**) are quite useful when you want to see variable values while you are debugging. The **Locals** window displays variables that are defined in the local  scope, which is generally the function or method that is currently being executed. The **Autos** window displays variables used around the current line (the place where the debugger is stopped). Exactly which variables display in this window is different in different languages. See [What variables appear in the Autos Window?](#bkmk_whatvariables) below.  
   
- 如果您需要基本偵錯的詳細資訊，請參閱 [開始使用偵錯工具](../debugger/getting-started-with-the-debugger.md)。  
+If you need more information about basic debugging, see [Getting Started with the Debugger](../debugger/getting-started-with-the-debugger.md).  
   
-## 查看 \[自動變數\] 和 \[區域變數\] 視窗中的物件  
- 陣列和物件會以樹狀結構控制項顯示在 \[自動變數\] 和 \[區域變數\] 視窗。 按一下變數名稱左邊的箭號，展開檢視來顯示欄位和屬性。 以下是 \[區域變數\] 視窗中的 [FileStream](../Topic/FileStream%20Class.md) 物件範例：  
+## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Looking at objects in the Autos and Locals windows  
+Arrays and objects are displayed in the Autos and Locals windows as tree controls. Click on the arrow to the left of the variable name to expand the view to show fields and properties. Here is an example of a [FileStream](http://msdn.microsoft.com/Library/a8737776-e545-4867-91ed-51c7f031fa19) object in the **Locals** window:  
   
- ![區域變數 &#45; FileStream](../debugger/media/locals-filestream.png "Locals\-FileStream")  
+![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
-## \[自動變數\] 視窗中出現哪些變數？  
- 您可以在 C\#、Visual Basic 和 C\+\+ 程式碼中使用 \[自動變數\] 視窗。 \[自動變數\] 視窗不支援 JavaScript 或 F\#。  
+## <a name="bkmk_whatvariables"></a> What variables appear in the Autos window?  
+ You can use the **Autos** window in C#, Visual Basic, and C++ code. The **Autos** window does not support JavaScript or F#.  
   
- 在 C\# 和 Visual Basic 中，\[自動變數\] 視窗會顯示目前或先前一行使用的任何變數。 例如，如果您宣告四個變數並設定如下：  
+ In C# and Visual Basic, the **Autos** window displays any  variable used on the current or preceding line. For example, if you declare four variables and set them as follows:
+
+```CSharp
+    public static void Main()
+    {
+       int a, b, c, d;
+       a = 1;
+       b = 2;
+       c = 3;
+       d = 4;
+    }
+```
+
+ If you set a breakpoint on the line `c = 3`; and run the debugger, when execution stops the **Autos** window will look like this:  
+
+ ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos-CSharp")  
+
+ Note that the value of `c` is 0, because the line `c = 3` has not yet been executed.  
+
+ In C++ the **Autos** window displays the variables used at least three lines before the current line (the line at which execution is stopped). If you declare six variables:
+
+```C++
+    void main() {
+        int a, b, c, d, e, f;
+        a = 1;
+        b = 2;
+        c = 3;
+        d = 4;
+        e = 5;
+        f = 6;
+    }
+```
+
+ If you set a breakpoint on the line `e = 5;` and run the debugger, when execution stops the **Autos** window will look like this:  
   
-```c#  
-public static void Main() { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; }  
-```  
+ ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos-Cplus")  
   
- 如果您在 `c = 3` 行上設定中斷點並執行偵錯工具，當停止執行時，\[自動變數\] 視窗看起來像這樣：  
+ Note that the variable e is uninitialized because the code on the line `e = 5;` has not yet been executed.  
   
- ![Autos&#45;CSharp](../debugger/media/autos-csharp.png "Autos\-CSharp")  
+ You can also see the return values of functions and methods in certain circumstances. See [View return values of method calls](#bkmk_returnValue) below.  
   
- 請注意，`c` 值為 0，因為尚未執行 `c = 3` 這行。  
+##  <a name="bkmk_returnValue"></a> View return values of method calls  
+ In .NET and C++ code you can examine return values when you step over or out of a method call. This functionality is useful when the result of a method call is not stored in a local variable, for example when a method is used as a parameter or as a return value of another    method.  
   
- 在 C\+\+ 中，\[自動變數\] 視窗會顯示目前這一行 \(停止執行之處的那一行\) 之前至少三行使用的變數。 如果您宣告六個變數：  
+ The following C# code adds the return values of two functions:  
+
+```CSharp
+static void Main(string[] args)  
+{  
+    int a, b, c, d;  
+    a = 1;  
+    b = 2;  
+    c = 3;  
+    d = 4;  
+    int x = sumVars(a, b) + subtractVars(c, d);  
+}  
   
-```cpp  
-void main() { int a, b, c, d, e, f; a = 1; b = 2; c = 3; d = 4; e = 5; f = 6; }  
-```  
+private static int sumVars(int i, int j)  
+{  
+    return i + j;  
+}  
   
- 如果您在 `e = 5;` 行上設定中斷點並執行偵錯工具，當停止執行時，\[自動變數\] 視窗看起來像這樣：  
+private static int subtractVars(int i, int j)  
+{  
+    return j - i;  
+}  
+```
+
+ Set a breakpoint on the `int x = sumVars(a, b) + subtractVars(c, d);` line.  
   
- ![Autos&#45;Cplus](../debugger/media/autos-cplus.png "Autos\-Cplus")  
-  
- 請注意，變數 e 因為在  `e = 5;`  行的程式碼尚未執行而未初始化。  
-  
- 在某些情況下，您也可以查看函式和方法的傳回值。 請參閱下方的 [檢視方法呼叫的傳回值](#bkmk_returnValue)。  
-  
-##  <a name="bkmk_returnValue"></a> 檢視方法呼叫的傳回值  
- 在 .NET 和 C\+\+ 程式碼中，您可以在不進入或者跳離方法呼叫時檢查傳回值。 當方法呼叫的結果不會儲存在區域變數中，例如，方法做為另一個方法的參數或傳回值時，這項功能會很有用。  
-  
- 下列 C\# 程式碼會加入兩個函式的傳回值：  
-  
-```c#  
-static void Main(string[] args) { int a, b, c, d; a = 1; b = 2; c = 3; d = 4; int x = sumVars(a, b) + subtractVars(c, d); } private static int sumVars(int i, int j) { return i + j; } private static int subtractVars(int i, int j) { return j - i; }  
-  
-```  
-  
- 在 int `x = sumVars(a, b) + subtractVars(c, d);`  行上設定中斷點。  
-  
- 開始偵錯，並在第一個中斷點中斷執行時，按下 **F10** \(不進入函式\)。 您應該會在 \[自動變數\] 視窗看到如下：  
+ Start debugging, and when execution breaks at the first breakpoint, press **F10 (Step Over)**. You should see the following in the **Autos** window:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   
-## 為什麼變數值有時在 \[區域變數\] 和 \[自動變數\] 視窗中是紅色的？  
- 您可能會注意到變數的值有時候在 \[區域變數\] 和 \[自動變數\] 視窗中是紅色。 這些是自從上次評估後已變更的變數值。 變更可能是來自先前的偵錯工作階段，或是因為值在視窗中已變更。  
+## <a name="why-are-variable-values-sometimes-red-in-locals-and-autos-windows"></a>Why are variable values sometimes red in Locals and Autos windows?  
+You may notice that the value of a variable is sometimes red in the **Locals** and **Autos** windows. These are variable values that have been changed since the last evaluation. The change could be from a previous debugging session, or because the value was changed in the window.  
   
-## 變更變數視窗的數字格式  
- 預設數值格式為十進位，但您可以將它變更為十六進位。 以滑鼠右鍵按一下 \[區域變數\] 或 \[自動變數\] 視窗並選取 \[十六進位顯示\]。 變更會影響所有偵錯工具視窗。  
+## <a name="changing-the-numeric-format-of-a-variable-window"></a>Changing the numeric format of a variable window  
+The default numeric format is decimal, but you can change it to hexadecimal. Right-click inside a **Locals** or **Autos** window and select **Hexadecimal Display**. The change affects all debugger windows.  
   
-## 編輯變數視窗中的值  
- 您可以編輯 \[自動變數\]、\[區域變數\]、\[監看式\] 和 \[快速監看式\] 視窗中出現的大部分變數值。 如需 \[監看式\] 和 \[快速監看式\] 視窗的相關資訊，請參閱 [監看式及快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)。 只要連按兩下您想要變更的值，並加入新值。  
+## <a name="editing-a-value-in-a-variable-window"></a>Editing a value in a Variable window  
+You can edit the values of most variables that appear in the **Autos**, **Locals**, **Watch**, and **QuickWatch** windows. For information about **Watch** and **QuickWatch** windows, see [Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md). Just double-click the value you want to change and add the new the value.  
   
- 您可以輸入值的運算式，例如 `a + b`。 偵錯工具接受大部分的有效語言運算式。  
+You can enter an expression for a value, for example `a + b`. The debugger accepts most valid language expressions.  
   
- 在原生 C\+\+ 程式碼中，您可能必須限定變數名稱的內容。 如需詳細資訊，請參閱[內容運算子 \(C\+\+\)](../debugger/context-operator-cpp.md)。  
+In native C++ code, you might have to qualify the context of a variable name. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+ 
+However, you should exercise caution when changing values. Here are some possible issues:  
   
- 不過，變更值時應該謹慎。 部分可能問題如下：  
+-   Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating `var1 = ++var2` changes the value of `var1` and `var2`.  
   
--   評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估 `var1 = ++var2` 會變更 `var1` 和 `var2` 的值。  
+     Expressions that change data are said to have [side effects](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), which can produce unexpected results if you are not aware of them. Make sure you understand the consequences of such a change before you make it.  
   
-     變更資料的運算式被視為具有[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))，如果您不知道它們的存在，可能會產生非預期的結果。 請確定您在進行之前了解這類變更的結果。  
+-   Editing floating-point values can result in minor inaccuracies because of decimal-to-binary conversion of fractional components. Even a seemingly harmless edit can result in changes to some of the least significant bits in the floating-point variable.  
   
--   由於分數元件的十進位至二進位轉換，編輯浮點數值會略微不精確。 即使表面上無害的編輯也可能造成浮點變數中的某些最小顯著性位元變更。  
+## <a name="changing-the-window-context"></a>Changing the window context  
+You can use the **Debug Location** toolbar to select the desired function, thread, or process, which changes the context for the variable windows. Set a breakpoint and start debugging. (If you do not see this toolbar, you can enable it by clicking in an empty part of the toolbar area. You should see a list of toolbars; select **Debug Location**). When the breakpoint is hit, execution stops and you can see the Debug Location toolbar, which is the bottom row of the following illustration.
   
-## 偵錯位置工具列  
- 您可以使用 \[偵錯位置\] 工具列選取想要的函式、執行緒或處理序。 設定中斷點，並開始偵錯。 \(如果看不到此工具列，您可以按一下工具列區域的空白部分來啟用它。 您應該會看到一份工具列。選取 \[偵錯位置\]\)。 當遇到中斷點時，執行會停止而且您可以看到 \[偵錯位置\] 工具列，它是下列圖形的底端列：  
+![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")   
   
- ![DebugLocationToolbar](~/debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
-  
- 您也可以按兩下 \[呼叫堆疊\] 視窗、\[執行緒\] 視窗，或 \[處理序\] 視窗中的項目，變更內容至不同的函式呼叫、執行緒或處理程序。  
-  
-## 請參閱  
- [偵錯工具視窗](../debugger/debugger-windows.md)
+## <a name="see-also"></a>See Also  
+ [Debugger Windows](../debugger/debugger-windows.md)
+

@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0c850e9be6f05bac6c312ef8d746b92754eb3e6c
+ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
+ms.openlocfilehash: 254f2d9121566ef14c5470c3d940e4f781a0f5e2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 06/30/2017
 
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
@@ -120,7 +120,7 @@ ms.lasthandoff: 05/13/2017
 |**版面配置**|在大型應用程式裡，螢幕上可能會同時顯示數千個項目。 這可能導致低 UI 畫面播放速率和對應不佳的應用程式回應性。 配置事件準確地判斷每個項目的成本配置 (也就是在排列、量值、ApplyTemplate、ArrangeOverride 和 ArrangeOverride 所花的時間)，並建置參與配置傳遞的視覺化樹狀結構。 您可以使用此視覺效果，來判斷哪些程式邏輯樹狀結構需要清除，或評估其他延遲機制以將配置傳遞最佳化。|  
 |**轉譯**|將 XAML 項目繪製到螢幕所花費的時間。|  
 |**I/0**|從本機磁碟或網路資源 (透過 [Microsoft Windows 網際網路 (WinINet) API](https://msdn.microsoft.com/en-us/library/windows/desktop/aa385331.aspx)存取) 擷取資料所花費的時間。|  
-|**App Code**|執行與剖析或配置不相關的應用程式 (使用者) 程式碼所花費的時間。|  
+|**應用程式程式碼**|執行與剖析或配置不相關的應用程式 (使用者) 程式碼所花費的時間。|  
 |**XAML 其他**|執行 XAML 執行階段程式碼所花費的時間。|  
   
 > [!TIP]
@@ -137,6 +137,6 @@ ms.lasthandoff: 05/13/2017
 |![自訂時間軸詳細資料資訊](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|可讓您指定事件的註釋。|  
   
 ## <a name="see-also"></a>另請參閱  
- [WPF 團隊部落格︰WPF 應用程式的新 UI 效能分析工具 (New UI Performance Analysis Tool for WPF Applications)](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx) (WPF 小組部落格︰WPF 應用程式的新 UI 效能分析工具)  
  [使用 C++、C# 及 Visual Basic 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
- [最佳化 WPF 應用程式效能](http://msdn.microsoft.com/Library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)
+ [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)

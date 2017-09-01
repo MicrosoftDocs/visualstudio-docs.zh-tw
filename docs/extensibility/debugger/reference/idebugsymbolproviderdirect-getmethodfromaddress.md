@@ -1,77 +1,94 @@
 ---
-title: "IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSymbolProviderDirect::GetMethodFromAddress"
-  - "GetMethodFromAddress"
+title: IDebugSymbolProviderDirect::GetMethodFromAddress | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSymbolProviderDirect::GetMethodFromAddress
+- GetMethodFromAddress
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugSymbolProviderDirect::GetMethodFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a2979c305bd8db9700f55e799de26fe4ce1422d6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-擷取位於指定的偵錯位址的方法的相關資訊。  
+---
+# <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
+Retrieves information about the method at the specified debug address.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMethodFromAddress(  
-   IDebugAddress* pAddress,  
-   GUID*          pGuid,  
-   DWORD*         pAppID,  
-   _mdToken*      pTokenClass,  
-   _mdToken*      pTokenMethod,  
-   DWORD*         pdwOffset,  
-   DWORD*         pdwVersion  
+   IDebugAddress* pAddress,  
+   GUID*          pGuid,  
+   DWORD*         pAppID,  
+   _mdToken*      pTokenClass,  
+   _mdToken*      pTokenMethod,  
+   DWORD*         pdwOffset,  
+   DWORD*         pdwVersion  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMethodFromAddress(  
-   IDebugAddress pAddress,  
-   out Guid      pGuid,  
-   out uint      pAppID,  
-   out uint      pTokenClass,  
-   out uint      pTokenMethod,  
-   out uint      pdwOffset,  
-   out uint      pdwVersion  
+   IDebugAddress pAddress,  
+   out Guid      pGuid,  
+   out uint      pAppID,  
+   out uint      pTokenClass,  
+   out uint      pTokenMethod,  
+   out uint      pdwOffset,  
+   out uint      pdwVersion  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pAddress`  
- \[in\]偵錯所表示的位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ [in] Debug address that is represented by the [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
   
  `pGuid`  
- \[\] out模組的唯一的識別項。  
+ [out] Unique identifier of the module.  
   
  `pAppID`  
- \[\] out應用程式定義域的識別項。  
+ [out] Identifier of the application domain.  
   
  `pTokenClass`  
- \[\] out語彙基元，表示包含類別。  
+ [out] Token that represents the containing class.  
   
  `pTokenMethod`  
- \[\] out語彙基元所表示的模組。  
+ [out] Token that represents the module.  
   
  `pdwOffset`  
- \[\] out以位元組為單位從開頭的位移`pAddress`參數。  
+ [out] An offset in bytes from the start of the `pAddress` parameter.  
   
  `pdwVersion`  
- \[\] out方法的版本號碼。  
+ [out] Version number of the method.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

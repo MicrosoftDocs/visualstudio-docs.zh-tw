@@ -1,7 +1,7 @@
 ---
 title: "在 Visual Studio 中使用 XAML 設計工具建立 UI | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -18,32 +18,17 @@ caps.latest.revision: 29
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0b6b302637113be1fb2700100124cf4079c06298
+ms.translationtype: HT
+ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
+ms.openlocfilehash: 0122714fa0c932a1fba849226e1200795ff20cfa
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 設計工具建立 UI
-Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的 Windows 市集、Windows Phone、WPF 和 Silverlight 應用程式。 您可以從 [工具箱]  拖曳控制項並在 [屬性]  視窗中設定屬性，藉此建立應用程式的使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。  
+Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以 XAML 為基礎的 Windows 和 Web 應用程式。 您可以從 [工具箱]  拖曳控制項並在 [屬性]  視窗中設定屬性，藉此建立應用程式的使用者介面。 您也可以在 [XAML] 檢視中直接編輯 XAML。  
   
- 如需進階 XAML 設計工作，例如動畫和行為，請參閱 [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)。  
+ 如需進階 XAML 設計工作，例如動畫和行為，請參閱 [Creating a UI by using Blend for Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)。 如需工具之間的比較，另請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。
   
 ## <a name="xaml-designer-workspace"></a>XML 設計工具工作區  
  XAML 設計工具中的工作區是由數個視覺化介面項目所組成。 其中包括畫板、XAML 編輯器、[裝置] 視窗、[文件大綱] 視窗和 [屬性] 視窗。 若要開啟 XAML 設計工具，請以滑鼠右鍵按一下 [方案總管]  中的 XAML 檔案，然後選擇 [設計工具檢視] 。  
@@ -72,7 +57,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
  調整大小控點會出現在選取的控制項上，讓您調整控制項的大小。 當您調整控制項的大小時，通常會出現寬度和高度值，協助您調整控制項的大小。 如需在 [設計] 檢視中操作控制項的詳細資訊，請參閱 [Working with elements in XAML Designer](../designers/working-with-elements-in-xaml-designer.md)。  
   
  **邊界**  
- 邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 [版面配置] [](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 底下的 **Margin** 屬性設定控制項的邊界。  
+ 邊界代表控制項邊緣與其容器邊緣之間的固定間距。 您可以使用 [屬性] 視窗中 **[版面配置]** 底下的 [Margin](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.frameworkelement.margin.aspx) 屬性設定控制項的邊界。  
   
  **邊界裝飾項**  
  您可以使用邊界裝飾項來變更項目相對於其版面配置容器的邊界。 當邊界裝飾項呈開啟狀態時，則未設定邊界且邊界裝飾項會顯示中斷的鏈結。 如果未設定邊界，則在執行階段調整版面配置容器的大小時，項目的位置維持不變。 當邊界裝飾項呈關閉狀態時，邊界裝飾項會顯示不中斷的鏈結，而且在執行階段調整版面配置容器的大小時，項目會隨著邊界移動 (邊界會保持固定)。  
@@ -82,7 +67,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
   
  在 [設計] 檢視中，畫面的左下方區域會提供其他畫板命令，如下所示：  
   
- ![設計檢視命令](~/designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
+ ![設計檢視命令](../designers/media/xaml_editor_design_controls.png "xaml_editor_design_controls")  
   
  這個工具列提供下列命令：  
   
@@ -109,7 +94,7 @@ Visual Studio 中的 XAML 設計工具提供視覺化介面，協助您設計以
  標記縮放可讓您調整 [XAML] 檢視的大小。 您可以從 20% 放大到 400%。  
   
 ## <a name="device-window"></a>[裝置] 視窗  
- XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬 Windows 市集或 Windows Phone 專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計]  功能表存取 [裝置] 視窗。 看起來如下：  
+ XAML 設計工具中的 [裝置] 視窗，可讓您在設計階段模擬專案的各種檢視、顯示和顯示選項。 當您使用 XAML 設計工具時，可以從 [設計]  功能表存取 [裝置] 視窗。 看起來如下：  
   
  ![[裝置] 視窗](../designers/media/xaml_editor_device_panel.png "xaml_editor_device_panel")  
   

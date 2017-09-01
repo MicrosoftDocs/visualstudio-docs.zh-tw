@@ -1,55 +1,58 @@
 ---
-title: "如何：以程式設計方式移除工作表的保護"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "工作表，取消保護"
-  - "文件 [Visual Studio 中的 Office 程式開發]，文件保護"
-  - "文件保護，移除工作表的"
-  - "Unprotect 方法"
+title: 'How to: Programmatically Remove Protection from Worksheets | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- worksheets, unprotecting
+- documents [Office development in Visual Studio], document protection
+- document protection, removing from worksheets
+- Unprotect method
 ms.assetid: 034688d2-eda7-4b4a-bcc2-d0999ff879a4
 caps.latest.revision: 48
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 47
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 3ca7d27aa126318a48e30887b1e76e932ec659c6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式移除工作表的保護
-  您可以程式設計的方式，移除 Microsoft Office Excel 工作表保護。  
+# <a name="how-to-programmatically-remove-protection-from-worksheets"></a>How to: Programmatically Remove Protection from Worksheets
+  You can programmatically remove protection from a Microsoft Office Excel worksheet.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 下例使用的變數 `getPasswordFromUser`，包含從使用者處取得的密碼。  
+ The following example uses the variable `getPasswordFromUser`, which contains a password obtained from the user.  
   
-### 取消文件層級自訂工作表的保護  
+### <a name="to-unprotect-a-worksheet-in-a-document-level-customization"></a>To unprotect a worksheet in a document-level customization  
   
-1.  呼叫工作表的 <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> 方法並傳入密碼，如有必要。 這個範例會假設您是使用名為 `Sheet1` 的工作表。  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Unprotect%2A> method of the worksheet and pass in the password, if required. This example assumes that you are working with a worksheet named `Sheet1`.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#28](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/Sheet1.cs#28)]
-     [!code-vb[Trin_VstcoreExcelAutomation#28](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/Sheet1.vb#28)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#28)]  [!code-vb[Trin_VstcoreExcelAutomation#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#28)]  
   
-### 取消 VSTO 增益集工作表的保護  
+### <a name="to-unprotect-a-worksheet-in-an-vsto-add-in"></a>To unprotect a worksheet in an VSTO Add-in  
   
-1.  呼叫使用中工作表的 <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> 方法並傳入密碼，如有必要。  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Worksheet.Unprotect%2A> method of the active worksheet and pass in the password, if required.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#18)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#18)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#18)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#18](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#18)]  
   
-## 請參閱  
- [使用工作表](../vsto/working-with-worksheets.md)   
- [如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
- [如何：以程式設計方式保護活頁簿](../vsto/how-to-programmatically-protect-workbooks.md)   
- [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
- [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Worksheets](../vsto/working-with-worksheets.md)   
+ [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [How to: Programmatically Protect Workbooks](../vsto/how-to-programmatically-protect-workbooks.md)   
+ [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)  
   
   

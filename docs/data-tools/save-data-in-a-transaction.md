@@ -1,169 +1,171 @@
 ---
-title: "逐步解說：在異動中儲存資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 儲存在異動中"
-  - "儲存資料"
-  - "System.Transactions 命名空間"
-  - "Transactions 命名空間"
-  - "異動, 儲存資料"
+title: Save data in a transaction | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- System.Transactions namespace
+- data [Visual Studio], saving in a transaction
+- transactions, saving data
+- Transactions namespace
+- saving data
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 caps.latest.revision: 15
-caps.handback.revision: 11
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 57d415109fe3d07930fa4302aed20de0e25c32fd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：在異動中儲存資料
-此逐步解說示範如何使用 <xref:System.Transactions> 命名空間儲存交易中的資料。  此範例使用 Northwind 範例資料庫的 `Customers` 和 `Orders` 資料表。  
+# <a name="save-data-in-a-transaction"></a>Save data in a transaction
+This walkthrough demonstrates how to save data in a transaction by using the <xref:System.Transactions> namespace. This example uses the `Customers` and `Orders` tables from the Northwind sample database.  
   
-## 必要條件  
- 此逐步解說需要 Northwind 範例資料庫的存取權。  如需設定 Northwind 範例資料庫的資訊，請參閱 [如何：安裝範例資料庫](../data-tools/how-to-install-sample-databases.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ This walkthrough requires access to the Northwind sample database. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## 建立 Windows 應用程式  
- 第一步是建立 **Windows 應用程式**。  
+## <a name="create-a-windows-application"></a>Create a Windows application  
+ The first step is to create a **Windows Application**.  
   
-#### 建立新的 Windows 專案  
+#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  在 Visual Studio 中，從 \[檔案\] 功能表建立新 \[專案\]。  
+1.  In Visual Studio, on the **File** menu, create a new **Project**.  
   
-2.  將專案命名為 SavingDataInATransactionWalkthrough。  
+2.  Name the project **SavingDataInATransactionWalkthrough**.  
   
-3.  選取 \[Windows 應用程式\]，然後按一下 \[確定\]。  如需詳細資訊，請參閱[用戶端應用程式](../Topic/Developing%20Client%20Applications%20with%20the%20.NET%20Framework.md)。  
+3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
   
-     隨即建立 **SavingDataInATransactionWalkthrough** 專案，並將其加入至**方案總管**。  
+     The **SavingDataInATransactionWalkthrough** project is created and added to **Solution Explorer**.  
   
-## 建立資料庫資料來源  
- 此步驟使用[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)，根據 Northwind 範例資料庫中的 `Customers` 及 `Orders` 資料表建立資料來源。  
+## <a name="create-a-database-data-source"></a>Create a database data source  
+ This step uses the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) to create a data source based on the `Customers` and `Orders` tables in the Northwind sample database.  
   
-#### 若要建立資料來源  
+#### <a name="to-create-the-data-source"></a>To create the data source  
   
-1.  按一下 \[**資料**\] 功能表上的 \[**顯示資料來源**\]。  
+1.  On the **Data** menu, select**Show Data Sources**.  
   
-2.  在 \[資料來源\] 視窗中，選取 \[加入新資料來源\]，以啟動 \[資料來源組態精靈\]。  
+2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration Wizard**.  
   
-3.  請選取 \[**選擇資料來源類型**\] 頁面上的 \[**資料庫**\]，再按 \[**下一步**\]。  
+3.  On the **Choose a Data Source Type**screen, select **Database**, and then select **Next**.  
   
-4.  在 \[選擇資料連接\] 頁面中，執行下列其中一項工作：  
+4.  On the **Choose your Data Connection** screen do one of the following:  
   
-    -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。  
+    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
   
-         \-或\-  
+         -or-  
   
-    -   選取 \[新增連接\] 以啟動 \[加入\/修改連接\] 對話方塊，並建立 Northwind 資料庫的連接。  
+    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box and create a connection to the Northwind database.  
   
-5.  如果資料庫需要密碼，請選取選項來加入敏感性資料，然後按一下 \[**下一步**\]。  
+5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
   
-6.  在 \[將連接字串儲存到應用程式組態檔\] 頁面中按 \[下一步\]。  
+6.  On the **Save connection string to the Application Configuration file** screen, select **Next**.  
   
-7.  在 \[**選擇您的資料庫物件**\] 頁面上，展開 \[**資料表**\] 節點。  
+7.  On the **Choose your Database Objects** screen, expand the **Tables** node.  
   
-8.  選取 `Customers` 及 `Orders` 資料表，然後按一下 \[完成\]。  
+8.  Select the `Customers` and `Orders` tables, and then select **Finish**.  
   
-     **NorthwindDataSet** 會加入專案中，且 `Customers` 及 `Orders` 資料表會出現在 \[資料來源\] 視窗中。  
+     The **NorthwindDataSet** is added to your project and the `Customers` and `Orders` tables appear in the **Data Sources** window.  
   
-## 將控制項加入至表單  
- 您可以從 \[資料來源\] 視窗將項目拖曳至表單，以建立資料繫結控制項。  
+## <a name="addcontrols-to-the-form"></a>Addcontrols to the form  
+ You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
-#### 在 Windows Form 上建立資料繫結控制項  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  
   
--   在 \[資料來源\] 視窗中展開 \[Customers\] 節點。  
+-   In the **Data Sources** window, expand the **Customers** node.  
   
--   從 \[資料來源\] 視窗中將 \[Customers\] 主節點拖曳至 **Form1**。  
+-   Drag the main **Customers** node from the **Data Sources** window onto **Form1**.  
   
-     <xref:System.Windows.Forms.DataGridView> 控制項以及巡覽記錄的工具區域 \(<xref:System.Windows.Forms.BindingNavigator>\) 會出現在表單上。  [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、[CustomersTableAdapter](../data-tools/tableadapter-overview.md)、<xref:System.Windows.Forms.BindingSource> 及 <xref:System.Windows.Forms.BindingNavigator> 會顯示在元件匣中。  
+     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `CustomersTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
   
--   將關聯的 \[Orders\] 節點 \(\[Fax\] 資料行下的關聯子資料表節點，不是主節點 \[Orders\]\) 拖曳至 **CustomersDataGridView** 下的表單。  
+-   Drag the related **Orders** node (not the main **Orders** node, but the related child-table node below the **Fax** column) onto the form below the **CustomersDataGridView**.  
   
-     <xref:System.Windows.Forms.DataGridView> 隨即出現在表單上。  [OrdersTableAdapter](../data-tools/tableadapter-overview.md) 和 <xref:System.Windows.Forms.BindingSource> 則會出現在元件匣中。  
+     A <xref:System.Windows.Forms.DataGridView> appears on the form. An `OrdersTableAdapter` and <xref:System.Windows.Forms.BindingSource> appear in the component tray.  
   
-## 將參考加入至 System.Transactions 組件  
- 交易會使用 <xref:System.Transactions> 命名空間。  預設不會加入 system.transactions 組件的專案參考，所以您必須手動加入。  
+## <a name="add-a-reference-to-the-systemtransactions-assembly"></a>Add a reference to the System.Transactions assembly  
+ Transactions use the <xref:System.Transactions> namespace. A project reference to the system.transactions assembly is not added by default, so you need to manually add it.  
   
-#### 加入 System.Transactions DLL 檔案的參考  
+#### <a name="to-add-a-reference-to-the-systemtransactions-dll-file"></a>To add a reference to the System.Transactions DLL file  
   
-1.  從 \[專案\] 功能表選擇 \[加入參考\]。  
+1.  On the **Project** menu, select **Add Reference**.  
   
-2.  選取 \[.NET\] 索引標籤上的 \[System.Transactions\]，並按一下 \[確定\]。  
+2.  Select **System.Transactions** (on the **.NET** tab), and then select **OK**.  
   
-     隨即會將 **System.Transactions** 的參考加入至專案。  
+     A reference to **System.Transactions** is added to the project.  
   
-## 修改 BindingNavigator 的 SaveItem 按鈕中的程式碼  
- 根據預設，會針對您拖放至表單的第一個資料表，將程式碼將入至 <xref:System.Windows.Forms.BindingNavigator> 的相同按鈕的 `click` 事件。  您必須手動加入程式碼以更新所有其他資料表。  在此逐步解說中，要從儲存按鈕的按一下事件處理常式重構現有儲存程式碼，並多建立幾個方法，以根據是否要加入或刪除資料列提供特定更新功能。  
+## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Modifythe code in the BindingNavigator's SaveItem button  
+ For the first table dropped onto your form, code is added by default to the `click` event of the save button on the <xref:System.Windows.Forms.BindingNavigator>. You need to manually add code to update any additional tables. For this walkthrough, we refactor the existing save code out of the save button's click event handler.We also create a few more methods to provide specific update functionality based on whether the row needs to be added or deleted.  
   
-#### 修改自動產生的儲存程式碼  
+#### <a name="to-modify-the-auto-generated-save-code"></a>To modify the auto-generated save code  
   
-1.  按兩下 **CustomersBindingNavigator** 上的 \[儲存\] 按鈕 \(具有磁碟片圖示的按鈕\)。  
+1.  Select the **Save** button on the **CustomersBindingNavigator** (the button with the floppy disk icon).  
   
-2.  以下列程式碼取代 `CustomersBindingNavigatorSaveItem_Click` 方法：  
+2.  Replace the `CustomersBindingNavigatorSaveItem_Click` method with the following code:  
   
-     [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
-     [!code-cs[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]  
+     [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]  [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]  
   
- 對關聯資料變更的協調順序如下：  
+ The order for reconciling changes to related data is as follows:  
   
--   刪除子記錄 \(在此情況中，從 `Orders` 資料表刪除記錄\)  
+-   Delete child records. (In this case, delete records from the `Orders` table.)  
   
--   刪除父記錄 \(在此情況中，從 `Customers` 資料表刪除記錄\)  
+-   Delete parent records. (In this case, delete records from the `Customers` table.)  
   
--   插入父記錄 \(在此情況中，將記錄插入 `Customers` 資料表\)  
+-   Insert parent records.(In this case, insert records in the `Customers` table.)  
   
--   插入子記錄 \(在此情況中，將記錄插入 `Orders` 資料表\)  
+-   Insert child records. (In this case, insert records in the `Orders` table.)  
   
-#### 刪除現有訂單  
+#### <a name="to-delete-existing-orders"></a>To delete existing orders  
   
--   將下列 `DeleteOrders` 方法加入至 **Form1**：  
+-   Add the following `DeleteOrders` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]
-     [!code-cs[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]  
+     [!code-vb[VbRaddataSaving#5](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_2.vb)]  [!code-csharp[VbRaddataSaving#5](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_2.cs)]  
   
-#### 刪除現有客戶  
+#### <a name="to-delete-existing-customers"></a>To delete existing customers  
   
--   將下列 `DeleteCustomers` 方法加入至 **Form1**：  
+-   Add the following `DeleteCustomers` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]
-     [!code-cs[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]  
+     [!code-vb[VbRaddataSaving#6](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_3.vb)]  [!code-csharp[VbRaddataSaving#6](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_3.cs)]  
   
-#### 加入新客戶  
+#### <a name="to-add-new-customers"></a>To add new customers  
   
--   將下列 `AddNewCustomers` 方法加入至 **Form1**：  
+-   Add the following `AddNewCustomers` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]
-     [!code-cs[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]  
+     [!code-vb[VbRaddataSaving#7](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_4.vb)]  [!code-csharp[VbRaddataSaving#7](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_4.cs)]  
   
-#### 加入新訂單  
+#### <a name="to-add-new-orders"></a>To add new orders  
   
--   將下列 `AddNewOrders` 方法加入至 **Form1**：  
+-   Add the following `AddNewOrders` method to **Form1**:  
   
-     [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
-     [!code-cs[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]  
+     [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]  [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]  
   
-## 執行應用程式  
+## <a name="run-the-application"></a>Run the application  
   
-#### 若要執行應用程式  
+#### <a name="to-run-the-application"></a>To run the application  
   
--   按 F5 執行應用程式。  
+-   Select **F5** to run the application.  
   
-## 請參閱  
- [交易和並行](../Topic/Transactions%20and%20Concurrency.md)   
- [Oracle 分散式交易](../Topic/Oracle%20Distributed%20Transactions.md)   
- [如何：使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)   
- [System.Transactions 與 SQL Server 整合](../Topic/System.Transactions%20Integration%20with%20SQL%20Server.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

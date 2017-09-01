@@ -1,46 +1,62 @@
 ---
-title: "報告巨集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.macros"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "_RPTFn 巨集"
-  - "_RPTn 巨集"
-  - "CRT, 報告巨集"
-  - "偵錯 [CRT], 報告巨集"
-  - "巨集, CRT 報告巨集"
-  - "巨集, 偵錯工具"
+title: Macros for Reporting | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.macros
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- macros, CRT reporting macros
+- macros, debugging with
+- _RPTFn macro
+- CRT, reporting macros
+- debugging [CRT], reporting macros
+- _RPTn macro
 ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
----
-# 報告巨集
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: edb8feb8c8389936cc6e5b9f4da997d063eb5d47
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-在您偵錯時，可以使用在 CRTDBG.H 裡定義的 **\_RPTn** 和 **\_RPTFn** 巨集，來取代 `printf` 陳述式的使用。  如果沒有定義 **\_DEBUG**，這些巨集便會自動地消失在您的發行組建裡，因此不需要在 **\#ifdef** 裡包含它們。  
+---
+# <a name="macros-for-reporting"></a>Macros for Reporting
+You can use the **_RPTn**, and **_RPTFn** macros, defined in CRTDBG.H, to replace the use of `printf` statements for debugging. These macros automatically disappear in your release build when **_DEBUG** is not defined, so there is no need to enclose them in **#ifdef**s.  
   
-|巨集|說明|  
-|--------|--------|  
-|**\_RPT0**、**\_RPT1**、**\_RPT2**、**\_RPT3**、**\_RPT4**|輸出訊息字串和零至四個引數。  從 \_RPT1 到 **\_RPT4**，訊息字串做為引數的 printf 樣式格式字串。|  
-|**\_RPTF0**、**\_RPTF1**、**\_RPTF2**、**\_RPTF4**|與 **\_RPTn** 相同，但是這些巨集也會輸出巨集所在位置的檔名和行號。|  
+|Macro|Description|  
+|-----------|-----------------|  
+|**_RPT0**, **_RPT1**, **_RPT2**, **_RPT3**, **_RPT4**|Outputs a message string and zero to four arguments. For _RPT1 through **_RPT4**, the message string serves as a printf-style formatting string for the arguments.|  
+|**_RPTF0**, **_RPTF1**, **,_RPTF2**, **_RPTF4**|Same as **_RPTn**, but these macros also output the file name and line number where the macro is located.|  
   
- 參考下列範例：  
+ Consider the following example:  
   
 ```  
 #ifdef _DEBUG  
@@ -51,13 +67,13 @@ caps.handback.revision: 15
 #endif  
 ```  
   
- 這段程式碼會將 `someVar` 和 `otherVar` 的值輸出至 **stdout**。  您可以使用下列的 `_RPTF2` 呼叫來報告這些相同的值，此外，還有檔名和行號：  
+ This code outputs the values of `someVar` and `otherVar` to **stdout**. You can use the following call to `_RPTF2` to report these same values and, additionally, the file name and line number:  
   
 ```  
 if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d, otherVar= %d\n", someVar, otherVar );  
 ```  
   
- 如果您發現特定應用程式需要的偵錯報告是 C 執行階段程式庫提供的巨集所沒有的，您可以撰寫特別設計的巨集來符合您自己的需要。  例如，您可以在其中一個標頭檔案中，包含像下面這段用來定義名為 **ALERT\_IF2** 巨集的程式碼：  
+ If you find that a particular application needs debug reporting that the macros supplied with the C run-time library do not provide, you can write a macro designed specifically to fit your own requirements. In one of your header files, for example, you could include code like the following to define a macro called **ALERT_IF2**:  
   
 ```  
 #ifndef _DEBUG                  /* For RELEASE builds */  
@@ -73,14 +89,14 @@ if (someVar > MAX_SOMEVAR) _RPTF2(_CRT_WARN, "In NameOfThisFunc( ), someVar= %d,
 #endif  
 ```  
   
- 一個 **ALERT\_IF2** 呼叫可以執行本主題開始的所有 **printf** 程式碼的函式：  
+ One call to **ALERT_IF2** could perform all the functions of the **printf** code at the start of this topic:  
   
 ```  
 ALERT_IF2(someVar > MAX_SOMEVAR, "OVERFLOW! In NameOfThisFunc( ),   
 someVar=%d, otherVar=%d.\n", someVar, otherVar );  
 ```  
   
- 因為自訂巨集可以很容易地變更為報告較多或較少資訊至不同的目的端 \(取決於哪一種比較方便\)，當您的偵錯需求不同時，這種方法特別有用。  
+ Because a custom macro can easily be changed to report more or less information to different destinations (depending on what is more convenient), this approach can be particularly useful as your debugging requirements evolve.  
   
-## 請參閱  
- [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)
+## <a name="see-also"></a>See Also  
+ [CRT Debugging Techniques](../debugger/crt-debugging-techniques.md)

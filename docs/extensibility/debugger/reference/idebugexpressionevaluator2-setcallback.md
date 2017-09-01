@@ -1,5 +1,5 @@
 ---
-title: "IDebugExpressionEvaluator2::SetCallback |Microsoft 文件"
+title: IDebugExpressionEvaluator2::SetCallback | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,43 +29,44 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f5f4757e09cc87d8481ae6501f178227df812fdc
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e5b9964dee0580fe0fbab6d817c4dc2abf56dad4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-可讓運算式評估工具 (EE) 來指定偵錯工具引擎 (DE) 將用來讀取度量設定回呼介面。  
+Enables the expression evaluator (EE) to specify the callback interface that the debugger engine (DE) will use to read metric settings.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT SetCallback (  
    IDebugSettingsCallback2* pCallback  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetCallback (  
    IDebugSettingsCallback2 pCallback  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pCallback`  
- [in]若要使用的設定回呼介面。  
+ [in] Interface to use for the settings callback.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 這個方法的運算式評估工具可用來讀取度量設定工作階段偵錯管理員提供的介面。 它適用於遠端偵錯上讀取度量[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]電腦。  
+## <a name="remarks"></a>Remarks  
+ This method provides an interface to the session debug manager that an expression evaluator can use to read metric settings. It is useful in remote debugging to read metrics on the [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] computer.  
   
-## <a name="example"></a>範例  
- 下列範例將示範如何實作這個方法的**CEE**公開物件[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)介面。  
+## <a name="example"></a>Example  
+ The following examples shows how to implement this method for a **CEE** object that exposes the [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)  
 {  
     // precondition  
@@ -90,5 +91,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

@@ -1,62 +1,79 @@
 ---
-title: "建立選項] 頁面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "[工具選項] 頁面 [Visual Studio SDK], 建立"
+title: Creating an Options Page | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 62
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 62
----
-# 建立選項] 頁面
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 10b40fccecfff4d4578b1a1bfe228d037e7516ac
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-本逐步解說會建立使用屬性方格中檢查和設定屬性的簡單工具\/選項頁面。  
+---
+# <a name="creating-an-options-page"></a>Creating an Options Page
+This walkthrough creates a simple Tools/Options page that uses a property grid to examine and set properties.  
   
- 將這些屬性，以儲存備份，還原從設定檔案，請遵循下列步驟，看然後 [建立設定分類](../extensibility/creating-a-settings-category.md)。  
+ To save these properties to and restore them from a settings file, follow these steps, and then see [Creating a Settings Category](../extensibility/creating-a-settings-category.md).  
   
- MPF 提供兩個類別來協助您建立工具選項頁 <xref:Microsoft.VisualStudio.Shell.Package> 類別和 <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別。 您建立子類別化在套件類別，這些頁面提供容器的 VSPackage。 您可以從 DialogPage 類別衍生建立每個工具選項頁面。  
+ The MPF provides two classes to help you create Tools Options pages, the <xref:Microsoft.VisualStudio.Shell.Package> class and the <xref:Microsoft.VisualStudio.Shell.DialogPage> class. You create a VSPackage to provide a container for these pages by subclassing the Package class. You create each tools options page by deriving from the DialogPage class.  
   
-## 必要條件  
- 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## 建立工具選項的格線頁  
- 在本節中，您可以建立簡單的工具選項屬性方格。 您可以使用這個方格來顯示和變更屬性的值。  
+## <a name="creating-a-tools-options-grid-page"></a>Creating a Tools Options Grid Page  
+ In this section, you create a simple Tools Options property grid. You use this grid to display and change the value of a property.  
   
-#### 若要建立 VSIX 專案並加入 VSPackage  
+#### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>To create the VSIX project and add a VSPackage  
   
-1.  每個 Visual Studio 擴充功能開始 VSIX 部署專案，以將包含擴充資產。 建立 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX 專案，名為 `MyToolsOptionsExtension`。 您可以找到 VSIX 專案範本，在 **新的專案** 下的對話方塊 **Visual C\# \/ 擴充性**。  
+1.  Every Visual Studio extension starts with a VSIX deployment project which will contain the extension assets. Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX project named `MyToolsOptionsExtension`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
   
-2.  加入名為的 Visual Studio 套件項目範本加入 VSPackage `MyToolsOptionsPackage`。 在 **方案總管\] 中**, ，以滑鼠右鍵按一下專案節點，然後選取 **加入 \/ 新的項目**。 在 **加入新項目\] 對話方塊**, ，請移至 **Visual C\# 項目 \/ 擴充性** ，然後選取 **Visual Studio 套件**。 在 **名稱** 欄位底部的 \[\] 對話方塊中，變更的檔案名稱 `MyToolsOptionsPackage.cs`。 如需如何建立 VSPackage 的詳細資訊，請參閱 [使用 VSPackage 建立擴充功能](../extensibility/creating-an-extension-with-a-vspackage.md)。  
+2.  Add a VSPackage by adding a Visual Studio Package item template named `MyToolsOptionsPackage`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item dialog**, go to **Visual C# Items / Extensibility** and select **Visual Studio Package**. In the **Name** field at the bottom of the dialog, change the file name to `MyToolsOptionsPackage.cs`. For more information about how to create a VSPackage, see [Creating an Extension with a VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md).  
   
-#### 若要建立工具選項屬性方格  
+#### <a name="to-create-the-tools-options-property-grid"></a>To create the Tools Options property grid  
   
-1.  程式碼編輯器中開啟 MyToolsOptionsPackage 檔案。  
+1.  Open the MyToolsOptionsPackage file in the code editor.  
   
-2.  新增下列 using 陳述式。  
+2.  Add the following using statement.  
   
-    ```c#  
+    ```csharp  
     using System.ComponentModel;  
     ```  
   
-3.  宣告 OptionPageGrid 類別和衍生它從 <xref:Microsoft.VisualStudio.Shell.DialogPage>。  
+3.  Declare an OptionPageGrid class and derive it from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
   
-    ```c#  
+    ```csharp  
     public class OptionPageGrid : DialogPage  
     {  }  
     ```  
   
-4.  套用 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 至 VSPackage 類別，以指派給類別的選項類別目錄和 OptionPageGrid 選項頁面名稱。 結果應該如下所示︰  
+4.  Apply a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class to assign to the class an options category and options page name for the OptionPageGrid. The result should look like this:  
   
-    ```c#  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -66,15 +83,15 @@ caps.handback.revision: 62
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-5.  新增 `OptionInteger` 屬性 `OptionPageGrid` 類別。  
+5.  Add an `OptionInteger` property to the `OptionPageGrid` class.  
   
-    -   套用 <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> 要指派給屬性的屬性方格的類別。  
+    -   Apply a <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> to assign to the property a property grid category.  
   
-    -   套用 <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> 要指派給屬性的名稱。  
+    -   Apply a <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> to assign to the property a name.  
   
-    -   套用 <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> 要指派給屬性的描述。  
+    -   Apply a <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> to assign to the property a description.  
   
-    ```c#  
+    ```csharp  
     public class OptionPageGrid : DialogPage  
     {  
         private int optionInt = 256;  
@@ -91,30 +108,30 @@ caps.handback.revision: 62
     ```  
   
     > [!NOTE]
-    >  預設實作 <xref:Microsoft.VisualStudio.Shell.DialogPage> 支援具有適當的轉換或結構或可展開成有適當的轉換器的屬性陣列的屬性。 如需轉換的清單，請參閱 <xref:System.ComponentModel> 命名空間。  
+    >  The default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage> supports properties that have appropriate converters or that are structures or arrays that can be expanded into properties that have appropriate converters. For a list of converters, see the <xref:System.ComponentModel> namespace.  
   
-6.  建置此專案並開始偵錯。  
+6.  Build the project and start debugging.  
   
-7.  在 Visual Studio 中，實驗性執行個體上 **工具** 功能表上，按一下 **選項**。  
+7.  In the experimental instance of Visual Studio, on the **Tools** menu click **Options**.  
   
-     在左窗格中，您應該看到 **My Category**。 （選項類別目錄會列出依字母順序，它應該會出現有關中途清單向下）。 開啟 **My Category** 然後按一下 \[ **我的格線頁**。選項方格會顯示在右窗格中。 屬性類別目錄是 **My Options**, ，而屬性名稱是 **我整數選項**。 屬性描述 **我整數選項**, ，會出現在窗格的底端。 將值從 256 其初始值變更為其他項目。 按一下 \[ **確定**, ，然後再重新開啟 **我的格線頁**。 您可以看到新的值保存。  
+     In the left pane you should see **My Category**. (Options categories are listed in alphabetical order, so it should appear about halfway down the list.) Open **My Category** and then click **My Grid Page**.The options grid appears in the right pane. The property category is **My Options**, and the property name is **My Integer Option**. The property description, **My integer option**, appears at the bottom of the pane. Change the value from its initial value of 256 to something else. Click **OK**, and then reopen **My Grid Page**. You can see that the new value persists.  
   
-     也可透過 Visual Studio 的 \[快速啟動選項頁面。 在 IDE 右上角 \[快速啟動\] 視窗中，輸入 **My Category** ，您會看到 **My Category –\> 我的格線頁** 列在下拉式清單中。  
+     Your options page is also available through Visual Studio's Quick Launch. In the Quick Launch window in the upper right corner of the IDE, type **My Category** and you will see **My Category -> My Grid Page** listed in the dropdown.  
   
-## 建立自訂工具選項頁面  
- 本節中，您可以建立工具選項\] 頁面使用自訂 UI。 您可以使用此頁面來顯示和變更屬性的值。  
+## <a name="creating-a-tools-options-custom-page"></a>Creating a Tools Options Custom Page  
+ In this section, you create a Tools Options page with a custom UI. You use this page to display and change the value of a property.  
   
-1.  程式碼編輯器中開啟 MyToolsOptionsPackage 檔案。  
+1.  Open the MyToolsOptionsPackage file in the code editor.  
   
-2.  新增下列 using 陳述式。  
+2.  Add the following using statement.  
   
     ```vb  
     using System.Windows.Forms;  
     ```  
   
-3.  新增 `OptionPageCustom` 類別之前 `OptionPageGrid` 類別。 將新類別衍生自 `DialogPage`。  
+3.  Add an `OptionPageCustom` class, just before the `OptionPageGrid` class. Derive the new class from `DialogPage`.  
   
-    ```c#  
+    ```csharp  
     public class OptionPageCustom : DialogPage  
     {  
         private string optionValue = "alpha";  
@@ -127,9 +144,9 @@ caps.handback.revision: 62
     }  
     ```  
   
-4.  將 GUID 屬性。 新增 OptionString 屬性︰  
+4.  Add a GUID attribute. Add an OptionString property:  
   
-    ```c#  
+    ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -143,9 +160,9 @@ caps.handback.revision: 62
     }  
     ```  
   
-5.  套用第二個 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> VSPackage 類別。 選項類別目錄和選項頁面名稱，這個屬性就會指派類別。  
+5.  Apply a second <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the VSPackage class. This attribute assigns the class an options category and options page name.  
   
-    ```c#  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]  
     [ProvideMenuResource("Menus.ctmenu", 1)]  
@@ -157,15 +174,15 @@ caps.handback.revision: 62
     public sealed class MyToolsOptionsPackage : Package  
     ```  
   
-6.  加入新 **使用者控制項** MyUserControl 命名專案。  
+6.  Add a new **User Control** named MyUserControl to the project.  
   
-7.  新增 **文字方塊** 至使用者控制項的控制項。  
+7.  Add a **TextBox** control to the user control.  
   
-     在 **屬性** 視窗的工具列上，按一下 **事件** \] 按鈕，然後再按兩下 \[ **保留** 事件。 新的事件處理常式會出現在 MyUserControl.cs 程式碼。  
+     In the **Properties** window, on the toolbar, click the **Events** button, and then double-click the **Leave** event. The new event handler appears in the MyUserControl.cs code.  
   
-8.  加入公用 `OptionsPage` 欄位中， `Initialize` 方法來控制類別和更新的事件處理常式，來設定選項值的文字方塊中的內容︰  
+8.  Add a public `OptionsPage` field, an `Initialize` method to the control class, and update the event handler to set the option value to the contents of the text box:  
   
-    ```c#  
+    ```csharp  
     public partial class MyUserControl : UserControl  
     {  
         public MyUserControl()  
@@ -187,11 +204,11 @@ caps.handback.revision: 62
     }  
     ```  
   
-     `optionsPage` 欄位保存父參考 `OptionPageCustom` 執行個體。`Initialize` 方法顯示 `OptionString` 中 **文字方塊**。 事件處理常式寫入目前的值 **文字方塊** 至 `OptionString` 當專注分葉 **文字方塊**。  
+     The `optionsPage` field holds a reference to the parent `OptionPageCustom` instance. The `Initialize` method displays `OptionString` in the **TextBox**. The event handler writes the current value of the **TextBox** to the `OptionString` when focus leaves the **TextBox**.  
   
-9. 在封裝的程式碼檔案中新增的覆寫 `OptionPageCustom.Window` 至 OptionPageCustom 類別，以建立、 初始化及傳回的執行個體的屬性 `MyUserControl`。 此類別現在看起來應該像這樣︰  
+9. In the package code file, add an override for the `OptionPageCustom.Window` property to the OptionPageCustom class to create, initialize, and return an instance of `MyUserControl`. The class should now look like this:  
   
-    ```c#  
+    ```csharp  
     [Guid("00000000-0000-0000-0000-000000000000")]  
     public class OptionPageCustom : DialogPage  
     {  
@@ -216,18 +233,18 @@ caps.handback.revision: 62
     }  
     ```  
   
-10. 建置並執行專案。  
+10. Build and run the project.  
   
-11. 在實驗執行個體中，按一下 \[ **工具 \/ 選項**。  
+11. In the experimental instance, click **Tools / Options**.  
   
-12. 尋找 **我類別** 然後 **我自訂頁面**。  
+12. Find **My Category** and then **My Custom Page**.  
   
-13. 值變更 **OptionString**。 按一下 \[ **確定**, ，然後再重新開啟 **我的自訂頁面**。 您可以看到已保存的新值。  
+13. Change the value of **OptionString**. Click **OK**, and then reopen **My Custom Page**. You can see that the new value has persisted.  
   
-## 存取選項  
- 本節中，您可以取得選項的值從 VSPackage 裝載相關聯的工具選項\] 頁面。 相同的技巧可以用來取得任何公用屬性的值。  
+## <a name="accessing-options"></a>Accessing Options  
+ In this section, you get the value of an option from the VSPackage that hosts the associated Tools Options page. The same technique can be used to obtain the value of any public property.  
   
-1.  在封裝的程式碼檔案中，新增名為的公用屬性 **OptionInteger** 至 **MyToolsOptionsPackage** 類別。  
+1.  In the package code file, add a public property called **OptionInteger** to the **MyToolsOptionsPackage** class.  
   
     ```  
     public int OptionInteger  
@@ -241,13 +258,13 @@ caps.handback.revision: 62
   
     ```  
   
-     此程式碼呼叫 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 建立或擷取 `OptionPageGrid` 執行個體。`OptionPageGrid` 呼叫 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 載入它的公用屬性的選項。  
+     This code calls <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> to create or retrieve an `OptionPageGrid` instance. `OptionPageGrid` calls <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> to load its options, which are public properties.  
   
-2.  現在加入名為的自訂命令項目範本 **MyToolsOptionsCommand** 要顯示的值。 在 **加入新項目** \] 對話方塊中，移至 **Visual C\# \/ 擴充性** ，然後選取 **自訂命令**。 在 **名稱** 視窗的底部欄位中，將命令檔名稱變更為 **MyToolsOptionsCommand.cs**。  
+2.  Now add a custom command item template named **MyToolsOptionsCommand** to display the value. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Custom Command**. In the **Name** field at the bottom of the window, change the command file name to **MyToolsOptionsCommand.cs**.  
   
-3.  在 MyToolsOptionsCommand 檔案中取代命令的主體 `ShowMessageBox` 使用下列方法︰  
+3.  In the MyToolsOptionsCommand file, replace the body of the command's `ShowMessageBox` method with the following:  
   
-    ```c#  
+    ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
     {  
         MyToolsOptionsPackage myToolsOptionsPackage = this.package as MyToolsOptionsPackage;  
@@ -256,11 +273,11 @@ caps.handback.revision: 62
   
     ```  
   
-4.  建置此專案並開始偵錯。  
+4.  Build the project and start debugging.  
   
-5.  在實驗性的執行個體，在 **工具** \] 功能表上，按一下 \[ **叫用 MyToolsOptionsCommand**。  
+5.  In the experimental instance, on the **Tools** menu, click **Invoke MyToolsOptionsCommand**.  
   
-     訊息方塊顯示目前的值 `OptionInteger`。  
+     A message box displays the current value of `OptionInteger`.  
   
-## 請參閱  
- [選項和選項頁面](../extensibility/internals/options-and-options-pages.md)
+## <a name="see-also"></a>See Also  
+ [Options and Options Pages](../extensibility/internals/options-and-options-pages.md)

@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 title: "Visual Studio 中的 JavaScript"
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9328c347d548a03a536cea16bd5851817c03d5a2
-ms.openlocfilehash: 31389d1757a5f48123c99bde41aea0c5fec5aebb
+ms.translationtype: HT
+ms.sourcegitcommit: 03c2a8902e7687be4da40d95f408eda7e4086acb
+ms.openlocfilehash: 36ac77e9c563bd7e0019cffdd302a7ae7d68f663
 ms.contentlocale: zh-tw
-ms.lasthandoff: 04/10/2017
+ms.lasthandoff: 08/17/2017
 
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript

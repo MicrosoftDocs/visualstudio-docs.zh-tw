@@ -1,5 +1,5 @@
 ---
-title: "如何︰ 加入拖放處理常式 |Microsoft 文件"
+title: 'How to: Add a Drag-and-Drop Handler | Microsoft Docs'
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,45 +16,46 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: a36c296ff4377397b732a1af98e4747e24f600b6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b773c9339949066c7d1837b7bc687403731e2bb8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="how-to-add-a-drag-and-drop-handler"></a>如何：加入拖放處理常式
-您可以將拖放事件的處理常式加入至您的 DSL，以便使用者可以從其他圖表或 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的其他部分，拖曳項目到您的圖表上。 您也可以加入按兩下等事件的處理常式。 拖放和按兩下處理常式，即為*軌跡處理常式*。  
+# <a name="how-to-add-a-drag-and-drop-handler"></a>How to: Add a Drag-and-Drop Handler
+You can add handlers for drag-and-drop events to your DSL, so that users can drag items onto your diagram from other diagrams or from other parts of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. You can also add handlers for events such as double-clicks. Together, drag-and-drop and double-click handlers are known as *gesture handlers*.  
   
- 本主題討論源自其他圖表的拖放軌跡。 若為單一圖表內的移動和複製事件，請考慮改為定義 `ElementOperations` 的子類別。 如需詳細資訊，請參閱[自訂複製行為](../modeling/customizing-copy-behavior.md)。 您也可以自訂 DSL 定義。  
+ This topic discusses drag-and-drop gestures that originate on other diagrams. For move and copy events within a single diagram, consider the alternative of defining a subclass of `ElementOperations`. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). You might also be able to customize the DSL definition.  
   
-## <a name="in-this-topic"></a>本主題內容  
+## <a name="in-this-topic"></a>In this topic  
   
--   前兩節說明定義軌跡處理程式的替代方法：  
+-   The first two sections describe alternative methods of defining a gesture handler:  
   
-    -   [定義軌跡處理常式覆寫 ShapeElement 方法](#overrideShapeElement)。 您可以覆寫 `OnDragDrop`、`OnDoubleClick`、`OnDragOver` 和其他方法。  
+    -   [Defining Gesture Handlers by Overriding ShapeElement methods](#overrideShapeElement). `OnDragDrop`, `OnDoubleClick`, `OnDragOver`, and other methods can be overridden.  
   
-    -   [使用 MEF 來定義軌跡處理常式](#MEF)。 如果您想讓協力廠商的開發人員能夠自行定義要加入至您的 DSL 的處理常式，請使用這個方法。 使用者可以在安裝您的 DSL 之後，選擇安裝協力廠商擴充功能。  
+    -   [Defining Gesture Handlers by using MEF](#MEF). Use this method if you want third-party developers to be able to define their own handlers to your DSL. Users can choose to install the third-party extensions after they have installed your DSL.  
   
--   [如何解碼拖曳的項目](#extracting)。 您可以從任何視窗或從桌面拖曳項目，也可以從 DSL 拖曳項目。  
+-   [How to Decode the Dragged Item](#extracting). Elements can be dragged from any window or from the desktop, as well as from a DSL.  
   
--   [如何取得原始拖曳項目](#getOriginal)。 如果拖曳的項目是 DSL 項目，您可以開啟來源模型並存取此項目。  
+-   [How to Get the Original Dragged Item](#getOriginal). If the dragged item is a DSL element, you can open the source model and access the element.  
   
--   [使用滑鼠動作︰ 拖曳區間項目](#mouseActions)。 這個範例示範可攔截圖形欄位上之滑鼠動作的低階處理常式。 這個範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
+-   [Using Mouse Actions: Dragging Compartment Items](#mouseActions). This sample demonstrates a lower-level handler that intercepts mouse actions on a shape's fields. The example lets the user re-order the items in a compartment by dragging with the mouse.  
   
-##  <a name="a-nameoverrideshapeelementa-defining-gesture-handlers-by-overriding-shapeelement-methods"></a><a name="overrideShapeElement"></a>藉由覆寫 ShapeElement 方法來定義軌跡處理常式  
- 將新的程式碼檔案加入至您的 DSL 專案。 在軌跡處理常式中，您通常必須至少有下列 `using` 陳述式：  
+##  <a name="overrideShapeElement"></a> Defining Gesture Handlers by Overriding ShapeElement Methods  
+ Add a new code file to your DSL project. For a gesture handler, you usually must have at least the following `using` statements:  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
 using System.Linq;  
 ```  
   
- 在新檔案中，針對應該回應拖曳作業的圖形或圖表類別定義部分類別。 覆寫下列方法：  
+ In the new file, define a partial class for the shape or diagram class that should respond to the drag operation. Override the following methods:  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>-當滑鼠指標在拖曳作業期間進入圖形時，會呼叫此方法。</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A> 您的方法應該會檢查使用者拖曳的項目，並設定 Effect 屬性，指出使用者是否可將項目放在此圖形上。 Effect 屬性決定游標移至此圖形上的外觀，並決定當使用者放開滑鼠按鈕時，是否呼叫 `OnDragDrop()`。  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- This method is called when the mouse pointer enters the shape during a drag operation. Your method should inspect the item that the user is dragging, and set the Effect property to indicate whether the user can drop the item on this shape. The Effect property determines the appearance of the cursor while it is over this shape, and also determines whether `OnDragDrop()` will be called when the user releases the mouse button.  
   
-    ```c#  
+    ```csharp  
     partial class MyShape // MyShape generated from DSL Definition.  
     {  
         public override void OnDragOver(DiagramDragEventArgs e)  
@@ -69,9 +70,9 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>– 此方法稱為 「 如果使用者放開滑鼠按鈕時滑鼠指標停留在此圖形或圖表中，如果`OnDragOver(DiagramDragEventArgs e)`先前設定`e.Effect`以外的值來`None`。</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A>  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> - This method is called if the user releases the mouse button while the mouse pointer rests over this shape or diagram, if `OnDragOver(DiagramDragEventArgs e)` previously set `e.Effect` to a value other than `None`.  
   
-    ```c#  
+    ```csharp  
     public override void OnDragDrop(DiagramDragEventArgs e)  
         {  
           if (!IsAcceptableDropItem(e))  
@@ -86,20 +87,20 @@ using System.Linq;
   
     ```  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>– 使用者按兩下圖形或圖表時，會呼叫此方法。</xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> - This method is called when the user double-clicks the shape or diagram.  
   
-     如需詳細資訊，請參閱[How to︰ 攔截圖案或 Decorator 按一下](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。  
+     For more information, see [How to: Intercept a Click on a Shape or Decorator](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
- 定義 `IsAcceptableDropItem(e)` 以決定是否可接受拖曳的項目，並定義 ProcessDragDropItem(e) 以在放置項目時更新模型。 這些方法必須先從事件引數擷取項目。 如需有關如何進行這項資訊，請參閱[如何取得拖曳項目的參考](#extracting)。  
+ Define `IsAcceptableDropItem(e)` to determine whether the dragged item is acceptable, and ProcessDragDropItem(e) to update your model when the item is dropped. These methods must first extract the item from the event arguments. For information about how to do that, see [How to get a reference to the dragged item](#extracting).  
   
-##  <a name="a-namemefa-defining-gesture-handlers-by-using-mef"></a><a name="MEF"></a>使用 MEF 來定義軌跡處理常式  
- MEF (Managed Extensibility Framework) 可讓您定義使用最小組態安裝的元件。 如需詳細資訊，請參閱[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/Library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)。  
+##  <a name="MEF"></a> Defining Gesture Handlers by using MEF  
+ MEF (Managed Extensibility Framework) lets you define components that can be installed with minimal configuration. For more information, see [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index).  
   
-#### <a name="to-define-a-mef-gesture-handler"></a>定義 MEF 軌跡處理常式  
+#### <a name="to-define-a-mef-gesture-handler"></a>To define a MEF gesture handler  
   
-1.  加入您**Dsl**和**DslPackage**專案**MefExtension**檔案中所述[使用 MEF 擴充您的 DSL](../modeling/extend-your-dsl-by-using-mef.md)。  
+1.  Add to your **Dsl** and **DslPackage** projects the **MefExtension** files that are described in [Extend your DSL by using MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
-2.  您現在可以將軌跡處理常式定義為 MEF 元件：  
+2.  You can now define a gesture handler as a MEF component:  
   
     ```  
   
@@ -131,28 +132,28 @@ using System.Linq;
   
     ```  
   
-     您可以建立多個軌跡處理常式元件，例如當您有不同類型的拖曳物件時。  
+     You can create more than one gesture handler component, such as when you have different types of dragged objects.  
   
-3.  加入目標圖形、連接線或圖表類別的部分類別定義，並定義 `IsAcceptableDropItem()` 和 `ProcessDragDropItem()` 方法。 這些方法一開始必須先從事件引數擷取拖曳的項目。 如需詳細資訊，請參閱[如何取得拖曳項目的參考](#extracting)。  
+3.  Add partial class definitions for the target shape, connector or diagram classes, and define the methods `IsAcceptableDropItem()` and `ProcessDragDropItem()`. These methods must begin by extracting the dragged item from the event arguments. For more information, see [How to get a reference to the dragged item](#extracting).  
   
-##  <a name="a-nameextractinga-how-to-decode-the-dragged-item"></a><a name="extracting"></a>如何解碼拖曳的項目  
- 當使用者將項目拖曳到您的圖表上，或從圖表的某個部分拖曳到另一個部分時，`DiagramDragEventArgs` 中會提供拖曳項目的相關資訊。 由於拖曳作業可能在畫面上的任何物件上啟動，因此提供的資料可以是任何一種格式。 您的程式碼必須辨識這些格式，並且能夠處理這些格式。  
+##  <a name="extracting"></a> How to decode the dragged item  
+ When the user drags an item onto your diagram, or from one part of your diagram to another, information about the item that is being dragged is available in `DiagramDragEventArgs`. Because the drag operation could have started at any object on the screen, the data can be available in any one of a variety of formats. Your code must recognize the formats with which it is capable of dealing.  
   
- 若要探索拖曳來源資訊的可用格式，請在偵錯模式中執行程式碼，並在 `OnDragOver()` 或 `CanDragDrop()` 的進入點設定中斷點。 檢查 `DiagramDragEventArgs` 參數的值。 這項資訊提供下列兩種格式：  
+ To discover the formats in which your drag source information is available, run your code in debugging mode, setting a breakpoint at the entry to `OnDragOver()` or `CanDragDrop()`. Inspect the values of the `DiagramDragEventArgs` parameter. The information is provided in two forms:  
   
--   <xref:System.Windows.Forms.IDataObject>  `Data`-這個屬性包含一個以上的格式通常是來源物件的序列化的版本。</xref:System.Windows.Forms.IDataObject> 其最有用的函式包括：  
+-   <xref:System.Windows.Forms.IDataObject>  `Data` - This property carries serialized versions of the source objects, usually in more than one format. Its most useful functions are:  
   
-    -   diagramEventArgs.Data.GetDataFormats() - 列出您可以解碼的拖曳物件格式。 例如，如果使用者從桌面拖曳檔案，可用的格式包括檔案名稱 ("`FileNameW`")。  
+    -   diagramEventArgs.Data.GetDataFormats() - Lists the formats in which you can decode the dragged object. For example, if the user drags a file from the desktop, the available formats include the file name ("`FileNameW`").  
   
-    -   `diagramEventArgs.Data.GetData(format)` - 解碼指定格式的拖曳物件。 將物件轉換成適當的類型。 例如：  
+    -   `diagramEventArgs.Data.GetData(format)` - Decodes the dragged object in the specified format. Cast the object to the appropriate type. For example:  
   
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`  
   
-         您也可以從使用您的自訂格式的來源傳輸模型匯流排參考等物件。 如需詳細資訊，請參閱[傳送模型匯流排參考拖放在如何](#mbr)。  
+         You can also transmit objects such as model bus references from the source in your own custom format. For more information, see [How to Send Model Bus References in a Drag and Drop](#mbr).  
   
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>`Prototype` – 如果您要讓使用者從 DSL 或 UML 模型拖曳項目，請使用這個屬性。</xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> 項目群組原型包含一個或多個物件、連結及其屬性值。 這個屬性也可用於貼上作業及加入工具箱中的項目時。 在原型中，物件及其類型會由 GUID 識別。 例如，下列程式碼允許使用者從 UML 圖表或 [UML 模型總管] 拖曳類別項目：  
+-   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` - Use this property if you want users to drag items from a DSL or a UML model. An element group prototype contains one or more objects, links, and their property values. It is also used in paste operations and when you are adding an element from the toolbox. In a prototype, objects and their types are identified by Guid. For example, this code allows the user to drag class elements from a UML diagram or UML Model Explorer:  
   
-    ```c#  
+    ```csharp  
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)  
     {  
       return e.Prototype != null && e.Prototype.RootProtoElements.Any(element =>   
@@ -163,26 +164,26 @@ using System.Linq;
   
     ```  
   
-     若要接受 UML 圖形，請實驗並判斷 UML 圖形的 GUID。 請記住，任一圖表上通常有多種項目類型。 另請記住，從 DSL 或 UML 圖表拖曳的物件是圖形，而不是模型項目。  
+     To accept UML shapes, determine the Guids of the UML shape classes by experiment. Remember that there is usually more than one type of element on any diagram. Remember also that an object dragged from a DSL or UML diagram is the shape, not the model element.  
   
- `DiagramDragEventArgs` 也具有屬性，指出目前的滑鼠指標位置，以及使用者是否按下 CTRL、ALT 或 SHIFT 鍵。  
+ `DiagramDragEventArgs` also has properties that indicate the current mouse pointer position and whether the user is pressing the CTRL, ALT, or SHIFT keys.  
   
-##  <a name="a-namegetoriginala-how-to-get-the-original-of-a-dragged-element"></a><a name="getOriginal"></a>如何取得原始的拖曳項目  
- 事件引數的 `Data` 和 `Prototype` 屬性只包含拖曳圖形的參考。 通常，如果您要在衍生自原型的目標 DSL 中以特定方式建立物件，您需要取得原始拖曳項目的存取權，例如讀取檔案內容，或巡覽至圖形所表示的模型項目。  您可以使用 Visual Studio 模型匯流排來協助達成此目標。  
+##  <a name="getOriginal"></a> How to get the original of a dragged element  
+ The `Data` and `Prototype` properties of the event arguments contain only a reference to the dragged shape. Usually, if you want to create an object in the target DSL that is derived from the prototype in some way, you need to obtain access to the original, for example, reading the file contents, or navigating to the model element represented by a shape.  You can use Visual Studio Model Bus to help with this.  
   
-### <a name="to-prepare-a-dsl-project-for-model-bus"></a>為模型匯流排準備 DSL 專案  
+### <a name="to-prepare-a-dsl-project-for-model-bus"></a>To prepare a DSL project for Model Bus  
   
-1.  使 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 模型匯流排可存取來源 DSL：  
+1.  Make the source DSL accessible by [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Model Bus:  
   
-    1.  如果尚未安裝 Visual Studio 模型匯流排擴充功能，請下載並進行安裝。 如需詳細資訊，請參閱[Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579)。  
+    1.  Download and install the Visual Studio Model Bus extension, if it is not already installed. For more information, see [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
-    2.  在 [DSL 設計工具] 中，開啟來源 DSL 的 DSL 定義檔。 以滑鼠右鍵按一下設計介面，然後按一下 **啟用 Modelbus**。 在對話方塊中，選擇其中一個或兩個選項。  按一下 [確定]。 新專案 "ModelBus" 會隨即加入至 DSL 方案。  
+    2.  Open the DSL definition file of the source DSL in DSL Designer. Right-click the design surface and then click **Enable Modelbus**. In the dialog box, choose one or both of the options.  Click **OK**. A new project "ModelBus" is added to the DSL solution.  
   
-    3.  按一下 **轉換所有範本**並重建方案。  
+    3.  Click **Transform All Templates** and rebuild the solution.  
   
-###  <a name="a-namembra-to-send-an-object-from-a-source-dsl"></a><a name="mbr"></a>若要從來源 DSL 傳送物件  
+###  <a name="mbr"></a> To send an object from a source DSL  
   
-1.  在您的 ElementOperations 子類別中，覆寫 `Copy()`，將模型匯流排參考 (MBR) 編碼成 IDataObject。 當使用者從來源圖表開始拖曳時，會呼叫這個方法。 接著在使用者放入目標圖表中時，IDataObject 中會提供編碼的 MBR。  
+1.  In your ElementOperations subclass, override `Copy()` so that it encodes a Model Bus Reference (MBR) into the IDataObject. This method will be called when the user starts to drag from the source diagram. The encoded MBR will then be available in the IDataObject when the user drops in the target diagram.  
   
     ```  
   
@@ -222,17 +223,17 @@ using System.Linq;
   
     ```  
   
-### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>從目標 DSL 或 UML 專案中的 DSL 接收模型匯流排參考  
+### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>To receive a Model Bus Reference from a DSL in a target DSL or UML project  
   
-1.  在目標 DSL 專案中，將專案參考加入至：  
+1.  In the target DSL project, add project references to:  
   
-    -   來源 DSL 專案。  
+    -   The source Dsl project.  
   
-    -   來源 ModelBus 專案。  
+    -   The source ModelBus project.  
   
-2.  在軌跡處理常式的程式碼檔案中，加入下列命名空間參考：  
+2.  In the gesture handler code file, add the following namespace references:  
   
-    ```c#  
+    ```csharp  
     using Microsoft.VisualStudio.Modeling;  
     using Microsoft.VisualStudio.Modeling.ExtensionEnablement;  
     using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -243,7 +244,7 @@ using System.Linq;
   
     ```  
   
-3.  下列範例說明如何取得來源模型項目的存取權：  
+3.  The following sample illustrates how to get access to the source model element:  
   
     ```  
     partial class MyTargetShape // or diagram or connector   
@@ -289,11 +290,11 @@ using System.Linq;
   
     ```  
   
-### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>接受源自 UML 模型的項目  
+### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>To accept an element sourced from a UML model  
   
--   下列程式碼範例接受從 UML 圖表放置的物件。  
+-   The following code sample accepts an object dropped from a UML diagram.  
   
-    ```c#  
+    ```csharp  
   
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility;  
       using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;  
@@ -340,12 +341,12 @@ using System.Linq;
   
     ```  
   
-##  <a name="a-namemouseactionsa-using-mouse-actions-dragging-compartment-items"></a><a name="mouseActions"></a>使用滑鼠動作︰ 拖曳區間項目  
- 您可以撰寫處理常式，來攔截圖形欄位上的滑鼠動作。 下列範例讓使用者使用滑鼠拖曳，來重新排序區間中的項目。  
+##  <a name="mouseActions"></a> Using Mouse Actions: Dragging Compartment Items  
+ You can write a handler that intercepts mouse actions on a shape's fields. The following example lets the user re-order the items in a compartment by dragging with the mouse.  
   
- 若要建置此範例中，建立方案使用**類別圖表**方案範本。 加入程式碼檔案並加入下列程式碼。 將命名空間調整成與您自己的程式碼相同的命名空間。  
+ To build this example, create a solution by using the **Class Diagrams** solution template. Add a code file and add the following code. Adjust the namespace to be the same as your own.  
   
-```c#  
+```csharp  
 using Microsoft.VisualStudio.Modeling;  
 using Microsoft.VisualStudio.Modeling.Design;  
 using Microsoft.VisualStudio.Modeling.Diagrams;  
@@ -591,9 +592,9 @@ namespace Company.CompartmentDrag  // EDIT.
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [自訂複製行為](../modeling/customizing-copy-behavior.md)   
- [部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)
+## <a name="see-also"></a>See Also  
+ [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md)   
+ [Deploying Domain-Specific Language Solutions](../modeling/deploying-domain-specific-language-solutions.md)
  
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
  

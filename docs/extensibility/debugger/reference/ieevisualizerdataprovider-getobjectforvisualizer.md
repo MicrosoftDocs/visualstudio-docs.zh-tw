@@ -1,53 +1,70 @@
 ---
-title: "IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerDataProvider::GetObjectForVisualizer"
-helpviewer_keywords: 
-  - "IEEVisualizerDataProvider::GetObjectForVisualizer 方法"
+title: IEEVisualizerDataProvider::GetObjectForVisualizer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IEEVisualizerDataProvider::GetObjectForVisualizer
+helpviewer_keywords:
+- IEEVisualizerDataProvider::GetObjectForVisualizer method
 ms.assetid: bd5376fc-13b4-40b7-9a5d-7ba8289f1b24
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IEEVisualizerDataProvider::GetObjectForVisualizer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: b5786b88fba5ced1011d4a0874905331883aac24
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-這個方法會取得物件，表示這個視覺化檢視。  
+---
+# <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
+This method gets the object that this visualizer represents.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
 ```cpp  
-HRESULT GetObjectForVisualizer(  
-   IDebugObject** ppObject  
+HRESULT GetObjectForVisualizer(  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
-int GetObjectForVisualizer(  
-   out IDebugObject ppObject  
+```csharp  
+int GetObjectForVisualizer(  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppObject`  
- \[\] out代表這個視覺化檢視物件  
+ [out] The object being represented by this visualizer  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- `GetObjectForVisualizer`可傳回物件的快取的版本。  如果在呼叫端想要確定物件是最新狀態，然後它會呼叫[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。  
+## <a name="remarks"></a>Remarks  
+ `GetObjectForVisualizer` is allowed to return a cached version of the object. If the caller wants to make sure that the object is up to date, then it will call [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md).  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)   
  [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)   
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

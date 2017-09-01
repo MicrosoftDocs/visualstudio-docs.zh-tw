@@ -1,38 +1,56 @@
 ---
-title: "從 Visual Studio 執行市集應用程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: Run Store apps from Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 98358355-e5e6-47e9-a4b6-cd559208e43c
 caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# 從 Visual Studio 執行市集應用程式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pt-br
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 0e2ce46d4d7038d5c23610aa12bcb9cc47c7a735
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-市集應用程式在多種裝置上執行，而且 Visual Studio 提供數種方式，讓您執行那些應用程式，並與之互動。  "F5" 體驗已獲增強，可在開發期間輕鬆地偵錯、分析和測試應用程式。  
+---
+# <a name="run-store-apps-from-visual-studio"></a>Run Store apps from Visual Studio
+Store apps run on a broad range of devices, and Visual Studio provides you with a number of ways to run and interact with those apps. The "F5" experience is enhanced to make it easy to debug, profile, and test apps during development.  
   
- ![開始偵錯並選取目標](../debugger/media/vsrun_dropdownlist.png "VSRUN\_DropDownList")  
+ ![Start debugging and select target](../debugger/media/vsrun_dropdownlist.png "VSRUN_DropDownList")  
   
-## 本節內容  
+## <a name="in-this-section"></a>In this section  
   
 |||  
 |-|-|  
-|[在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)|在 Visual Studio 裝置上執行 Windows 市集應用程式。|  
-|[在模擬器中執行 Windows 市集應用程式](../debugger/run-windows-store-apps-in-the-simulator.md)|在模擬 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 功能 \(例如觸控和方向\) 的桌面視窗中，執行 Windows 市集應用程式。|  
-|[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)|在透過網路或直接透過乙太網路纜線連接到 Visual Studio 電腦的裝置上，部署和執行 Windows 市集應用程式。|  
-|[在模擬器中執行 Windows Phone 應用程式](../debugger/run-windows-phone-apps-in-the-emulator.md)|在模擬 Windows Phone 的桌面視窗中，執行 Windows 市集應用程式。|  
-|[從 Visual Studio 部署 Windows 市集應用程式](../debugger/deploy-windows-store-apps-from-visual-studio.md)|在進行臨機操作測試的裝置上，部署和註冊 Windows 市集應用程式。|
+|[Run Windows Store apps on the local machine](../debugger/run-windows-store-apps-on-the-local-machine.md)|Run your Windows Store app on the Visual Studio device.|  
+|[Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md)|Run your Windows Store app in a desktop window that simulates [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] functionality such as touch and orientation.|  
+|[Run Windows Store apps on a remote machine](../debugger/run-windows-store-apps-on-a-remote-machine.md)|Deploy and run your Windows Store app on a device that is connected to the Visual Studio machine over a network or directly through an Ethernet cable.|  
+|[Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md)|Run your Windows Store app in a desktop window that simulates a Windows Phone.|  
+|[Deploy Windows Store apps from Visual Studio](../debugger/deploy-windows-store-apps-from-visual-studio.md)|Deploy and register your Windows Store app on a device for ad-hoc testing.|

@@ -1,84 +1,85 @@
 ---
-title: "將控制項繫結至 Visual Studio 中的資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料來源視窗"
-  - "資料來源, 顯示資料"
-  - "資料, 顯示"
-  - "顯示資料"
+title: Bind controls to data in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data, displaying
+- data sources, displaying data
+- Data Sources window
+- dislaying data
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 caps.latest.revision: 40
-caps.handback.revision: 29
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 4fb96e17c66df4b09d0cefb98f52c78f524af2ae
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 將控制項繫結至 Visual Studio 中的資料
-您可以透過將資料繫結至控制項，對應用程式的使用者顯示資料。  您可以從 \[**資料來源**\] 視窗將項目拖曳至 Visual Studio 設計介面上，藉以建立這些資料繫結控制項。  
+# <a name="bind-controls-to-data-in-visual-studio"></a>Bind controls to data in Visual Studio
+You can display data to users of your application by binding data to controls. You can create these data-bound controls by dragging items from the **Data Sources** window onto a design surface or controls on a surface  in Visual Studio.  
   
- 這個主題描述可用來建立資料繫結控制項的資料來源。  此外，也描述與資料繫結相關的一些一般工作。  如需如何建立資料繫結控制項的詳細資訊，請參閱[將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)、[將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)和[將 Silverlight 控制項繫結至 Visual Studio 中的資料](../Topic/Binding%20Silverlight%20Controls%20to%20Data%20in%20Visual%20Studio.md)。  
+ This topic describes the data sources you can use to create data-bound controls. It also describes some of the general tasks involved in data binding. For more specific details about how to create data-bound controls, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) and [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md).  
   
-## 資料來源  
- 資料來源表示應用程式可使用的資料。  您可以從資料庫、服務或物件中建立資料來源。  如需詳細資訊，請參閱[資料來源概觀](../data-tools/add-new-data-sources.md)。  
+## <a name="data-sources"></a>Data sources  
+ In the context of data binding, a data source represents the data in memory that can be bound to your user interface. In practical terms, a data source can be an Entity Framework class, a dataset, a service endpoint that is encapsulated in a .NET proxy object, a LINQ to SQL class, or any .NET object or collection. Some data sources enable you to create data-bound controls by dragging items from the **Data Sources** window, while other data sources do not. The following table shows which data sources are supported.  
   
- 有些資料來源可讓您從 \[**資料來源**\] 視窗拖曳項目，以建立資料繫結控制項，有些資料來源則否。  下表顯示支援的資料來源。  
+|Data source|Drag-and-drop support in **the Windows Forms Designer**|Drag-and-drop support in **the WPF Designer**|Drag-and-drop support in **the Silverlight Designer**|  
+|-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
+|Dataset|Yes|Yes|No|  
+|Entity Data Model|Yes<sup>1</sup>|Yes|Yes|  
+|LINQ to SQL classes|No<sup>2</sup>|No<sup>2</sup>|No<sup>2</sup>|  
+|Services (including [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], WCF services, and web services)|Yes|Yes|Yes|  
+|Object|Yes|Yes|Yes|  
+|SharePoint|Yes|Yes|Yes|  
   
-|資料來源|**Windows Form 設計工具**的拖放支援|**WPF 設計工具**的拖放支援|**Silverlight Designer** 的拖放支援|  
-|----------|--------------------------------|-----------------------|------------------------------------|  
-|資料集|是|是|否|  
-|實體資料模型|否<sup>1</sup>|是|是|  
-|LINQ to SQL 類別|否<sup>2</sup>|否<sup>2</sup>|否<sup>2</sup>|  
-|服務 \(包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、Web 服務和 Web 服務\)|是|是|是|  
-|物件|是|是|是|  
-|SharePoint|是|是|是|  
+ 1. Generate the model using the **Entity Data Model** wizard, then drag those objects to the designer.  
   
- 1.  當 \[**Windows Form 設計工具**\] 開啟時，\[**資料來源**\] 視窗中的實體為唯讀，無法拖曳至設計工具。  不過，您仍然可以根據實體資料模型加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。  
+ 2. LINQ to SQL classes do not appear in the **Data Sources** window. However, you can add a new object data source that is based on LINQ to SQL classes, and then drag those objects to the designer to create data-bound controls. For more information, see [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).  
   
- 2.  LINQ to SQL 類別不會出現在 \[**資料來源**\] 視窗中。  不過，您可以根據 LINQ to SQL 類別加入新的物件資料來源，然後將這些物件拖曳至設計工具，來建立資料繫結控制項。  如需詳細資訊，請參閱[逐步解說：建立 LINQ to SQL 類別 \(O\/R 設計工具\)](../Topic/Walkthrough:%20Creating%20LINQ%20to%20SQL%20Classes%20\(O-R%20Designer\).md)。  
+## <a name="data-sources-window"></a>Data Sources window  
+ Data sources are available to your project as items in the **Data Sources** window. This window is visible, or is accessible from the **View** menu, when a form design surface is the active window in your project. You can drag items from this window to create controls that are bound to the underlying data, and you can also configure the data sources by right-clicking.  
   
-## 資料來源視窗  
- 資料來源會在 \[**資料來源**\] 視窗中以項目形式使用於專案。  您可以從這個視窗拖曳項目，藉以建立繫結至基礎資料的控制項。  如需詳細資訊，請參閱[資料來源視窗](../Topic/Data%20Sources%20Window.md)。  
+ ![Data Sources window](../data-tools/media/raddata-data-sources-window.png "raddata Data Sources window")  
   
- 對於 \[**資料來源**\] 視窗中的每個資料類型，將項目拖曳到設計工具時都會建立一個預設控制項。  從 \[**資料來源**\] 視窗拖曳項目之前，您可以變更將建立的控制項。  如需詳細資訊，請參閱 [設定從 \[資料來源\] 視窗拖曳時要建立的控制項](../Topic/Set%20the%20control%20to%20be%20created%20when%20dragging%20from%20the%20Data%20Sources%20window.md)。  
+ For each data type that appears in the **Data Sources** window, a default control is created when you drag the item to the designer. Before you drag an item from the **Data Sources** window, you can change the control that will be created. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-## 將控制項繫結至資料的相關工作  
- 下表列出將控制項繫結至資料的一些最常用工作。  
+## <a name="tasks-involved-in-binding-controls-to-data"></a>Tasks involved in binding controls to data  
+ The following table lists some of the most common tasks you perform to bind controls to data.  
   
-|工作|詳細資訊|  
-|--------|----------|  
-|開啟 \[**資料來源**\] 視窗。|[如何：開啟資料來源視窗](../data-tools/how-to-open-the-data-sources-window.md)|  
-|將資源來源加入至專案。|[如何：連接至資料庫中的資料](../data-tools/how-to-connect-to-data-in-a-database.md)<br /><br /> [如何：連接至物件中的資料](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md)<br /><br /> [如何：連接至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)|  
-|設定當您從 \[**資料來源**\] 視窗中將項目拖曳到設計工具時建立的控制項。|[設定從 \[資料來源\] 視窗拖曳時要建立的控制項](../Topic/Set%20the%20control%20to%20be%20created%20when%20dragging%20from%20the%20Data%20Sources%20window.md)|  
-|修改與 \[**資料來源**\] 視窗中之項目相關聯的控制項清單。|[將自訂控制項加入 \[資料來源\] 視窗](../Topic/Add%20custom%20controls%20to%20the%20Data%20Sources%20window.md)|  
-|建立資料繫結控制項。|[將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)<br /><br /> [將 Silverlight 控制項繫結至 Visual Studio 中的資料](../Topic/Binding%20Silverlight%20Controls%20to%20Data%20in%20Visual%20Studio.md)|  
+|Task|More information|  
+|----------|----------------------|  
+|Open the **Data Sources** window.|Open a design surface in the editor and choose **View** > **Data Sources**.|  
+|Add a data source to your project.|[Add new data sources](../data-tools/add-new-data-sources.md)|  
+|Set the control that is created when you drag an item from the **Data Sources** window to the designer.|[Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|  
+|Modify the list of controls that are associated with items in the **Data Sources** window.|[Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md)|  
+|Create data-bound controls.|[Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)<br /><br /> [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)|  
+|Bind to an object or collection.|[Bind objects in Visual Studio](../data-tools/bind-objects-in-visual-studio.md)|  
+|Filter data that appears in the UI.|[Filter and sort data in a Windows Forms application](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+|Customize captions for controls.|[Customize how Visual Studio creates captions for data-bound controls](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
   
- 建立繫結至資料的控制項之後，可能需要執行下列其中一個工作。  
-  
-|工作|詳細資訊|  
-|--------|----------|  
-|編輯基礎資料來源中的資料|[在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)|  
-|驗證資料變更|[驗證資料](../Topic/Validating%20Data.md)|  
-|將更新資料儲存回資料庫|[儲存資料](../data-tools/saving-data.md)|  
-  
-## 請參閱  
- [將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)   
- [將 Silverlight 控制項繫結至 Visual Studio 中的資料](../Topic/Binding%20Silverlight%20Controls%20to%20Data%20in%20Visual%20Studio.md)   
- [如何：從資料庫將控制項繫結至圖片](../data-tools/bind-controls-to-pictures-from-a-database.md)   
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)   
- [用來在 Visual Studio 中使用資料來源的工具](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+## <a name="see-also"></a>See Also  
+ [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)   
+ [Windows Forms Data Binding](/dotnet/framework/winforms/windows-forms-data-binding)

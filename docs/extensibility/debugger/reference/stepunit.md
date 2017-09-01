@@ -1,67 +1,84 @@
 ---
-title: "STEPUNIT | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "STEPUNIT"
-helpviewer_keywords: 
-  - "STEPUNIT 列舉型別"
+title: STEPUNIT | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- STEPUNIT
+helpviewer_keywords:
+- STEPUNIT enumeration
 ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# STEPUNIT
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: dfa4ba22c8d56de8948c86fb6133f30e938564d8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定逐步執行的步驟單位。  
+---
+# <a name="stepunit"></a>STEPUNIT
+Specifies the step unit for stepping.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```cpp  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 typedef DWORD STEPUNIT;  
 ```  
   
-```c#  
-enum enum_STEPUNIT {   
-   STEP_STATEMENT   = 0,  
-   STEP_LINE        = 1,  
-   STEP_INSTRUCTION = 2  
+```csharp  
+enum enum_STEPUNIT {   
+   STEP_STATEMENT   = 0,  
+   STEP_LINE        = 1,  
+   STEP_INSTRUCTION = 2  
 };  
 ```  
   
-## Members  
- STEP\_STATEMENT  
- 由陳述式的步驟。  
+## <a name="members"></a>Members  
+ STEP_STATEMENT  
+ Steps by statement.  
   
- STEP\_LINE  
- 以行為的步驟。  
+ STEP_LINE  
+ Steps by line.  
   
- STEP\_INSTRUCTION  
- 由指令的步驟。  
+ STEP_INSTRUCTION  
+ Steps by instruction.  
   
-## 備註  
- 當做引數傳遞[逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) method.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

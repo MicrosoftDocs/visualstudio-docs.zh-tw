@@ -1,93 +1,110 @@
 ---
-title: "CA1021：避免使用 out 參數 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1021"
-  - "AvoidOutParameters"
-helpviewer_keywords: 
-  - "AvoidOutParameters"
-  - "CA1021"
+title: 'CA1021: Avoid out parameters | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1021
+- AvoidOutParameters
+helpviewer_keywords:
+- AvoidOutParameters
+- CA1021
 ms.assetid: 970f2304-842c-4fb7-9734-f3871da8d479
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
----
-# CA1021：避免使用 out 參數
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: c2d981d71613b94c7c1142d40fc0ef8e4a6d0a5c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: Avoid out parameters
 |||  
 |-|-|  
-|型別名稱|AvoidOutParameters|  
+|TypeName|AvoidOutParameters|  
 |CheckId|CA1021|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用型別中之公用或保護的方法具有 `out` 參數。  
+## <a name="cause"></a>Cause  
+ A public or protected method in a public type has an `out` parameter.  
   
-## 規則描述  
- 以傳址方式傳遞型別時 \(使用 `out` 或 `ref`\)，您需要擁有使用指標的經驗、了解實值型別和參考型別之間的差異，並處理具有多個傳回值的方法。  不過 `out` 和 `ref` 參數之間的差異一般人不甚了解。  
+## <a name="rule-description"></a>Rule Description  
+ Passing types by reference (using `out` or `ref`) requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood.  
   
- 以「傳址方式」傳遞參考型別時，方法會使用參數傳回不同的物件執行個體   以傳址方式傳遞參考型別也就是使用雙重指標、指標對指標或雙重間接取值 \(Indirection\)。  藉由使用以「傳值方式」傳遞的預設呼叫慣例 \(Calling Convention\)，採用參考型別的參數即已經接收到物件的指標。  以傳值方式傳遞指標，而不是傳遞所指向的物件。  以傳值方式傳遞代表方法不能變更指標，讓指標指向參考型別的新執行個體。  但是，它可以變更所指向物件的內容。  對大多數應用程式來說，這樣就已足夠並可產生想要的行為。  
+ When a reference type is passed "by reference," the method intends to use the parameter to return a different instance of the object. Passing a reference type by reference is also known as using a double pointer, pointer to a pointer, or double indirection. By using the default calling convention, which is pass "by value," a parameter that takes a reference type already receives a pointer to the object. The pointer, not the object to which it points, is passed by value. Pass by value means that the method cannot change the pointer to have it point to a new instance of the reference type. However, it can change the contents of the object to which it points. For most applications this is sufficient and yields the desired behavior.  
   
- 如果方法必須傳回不同的執行個體，請使用方法的傳回值以完成這項作業。  請參閱 <xref:System.String?displayProperty=fullName> 類別，以取得在字串上作業並傳回字串新執行個體的多種方法。  使用這個模型時，呼叫端必須決定是否要保留原始物件。  
+ If a method must return a different instance, use the return value of the method to accomplish this. See the <xref:System.String?displayProperty=fullName> class for a variety of methods that operate on strings and return a new instance of a string. When this model is used, the caller must decide whether the original object is preserved.  
   
- 雖然傳回值很常見並且大量使用，但還是需要中等的設計和編碼技能，才能正確地應用 `out` 和 `ref` 參數。  針對一般使用者所設計的程式庫架構不應預期使用者會熟練地運用 `out` 或 `ref` 參數。  
+ Although return values are commonplace and heavily used, the correct application of `out` and `ref` parameters requires intermediate design and coding skills. Library architects who design for a general audience should not expect users to master working with `out` or `ref` parameters.  
   
-## 如何修正違規  
- 若要修正因實值型別而引發此規則的違規情形，可讓方法傳回物件當做它的傳回值。  如果方法必須傳回多個值，請將方法重新設計，以傳回持有值之物件的單一執行個體。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule that is caused by a value type, have the method return the object as its return value. If the method must return multiple values, redesign it to return a single instance of an object that holds the values.  
   
- 若要修正因參考型別而引發此規則的違規情形，請確定所需的行為就是傳回參考的新執行個體。  如果是，則方法應使用它的傳回值以完成這項作業。  
+ To fix a violation of this rule that is caused by a reference type, make sure that the desired behavior is to return a new instance of the reference. If it is, the method should use its return value to do this.  
   
-## 隱藏警告的時機  
- 您可以放心地隱藏這項規則的警告。  然而，這種設計可能會造成可用性問題。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule. However, this design could cause usability issues.  
   
-## 範例  
- 下列程式庫會示範類別的兩種實作，而這個類別會產生使用者意見的回應。  第一個實作 \(`BadRefAndOut`\) 會強制程式庫使用者管理三個傳回值。  而第二個實作 \(`RedesignedRefAndOut`\) 會透過傳回容器 \(Container\) 類別 \(`ReplyData`\) 的執行個體，將資料當成單一單位管理，進而簡化使用者的經驗。  
+## <a name="example"></a>Example  
+ The following library shows two implementations of a class that generates responses to the feedback of a user. The first implementation (`BadRefAndOut`) forces the library user to manage three return values. The second implementation (`RedesignedRefAndOut`) simplifies the user experience by returning an instance of a container class (`ReplyData`) that manages the data as a single unit.  
   
- [!code-cs[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]  
+ [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]  
   
-## 範例  
- 下列應用程式會說明使用者經驗。  對重新設計之程式庫 \(`UseTheSimplifiedClass` 方法\) 的呼叫將會更明確易懂，因此能夠更容易地管理方法所傳回的資訊。  而這兩個方法的輸出都一樣。  
+## <a name="example"></a>Example  
+ The following application illustrates the experience of the user. The call to the redesigned library (`UseTheSimplifiedClass` method) is more straightforward, and the information returned by the method is easily managed. The output from the two methods is identical.  
   
- [!code-cs[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]  
+ [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]  
   
-## 範例  
- 下列範例程式庫將說明如何使用參考型別的 `ref` 參數，並顯示實作這項功能的較佳方法。  
+## <a name="example"></a>Example  
+ The following example library illustrates how `ref` parameters for reference types are used and shows a better way to implement this functionality.  
   
- [!code-cs[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]  
+ [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]  
   
-## 範例  
- 下列應用程式會在程式庫中呼叫每個方法，以示範行為。  
+## <a name="example"></a>Example  
+ The following application calls each method in the library to demonstrate the behavior.  
   
- [!code-cs[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]  
+ [!code-csharp[FxCop.Design.TestRefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_4.cs)]  
   
- 這個範例產生下列輸出。  
+ This example produces the following output.  
   
-  **變更指標 \- 以傳值方式傳遞：**  
+ **Changing pointer - passed by value:**  
 **12345**  
 **12345**  
-**變更指標 \- 以傳址方式傳遞：**  
+**Changing pointer - passed by reference:**  
 **12345**  
 **12345 ABCDE**  
-**透過傳回值傳遞：**  
+**Passing by return value:**  
 **12345 ABCDE**   
-## Try 模式方法  
+## <a name="try-pattern-methods"></a>Try pattern methods  
   
-### 說明  
- 實作 **Try\<Something\> 模式的方法 \(例如** <xref:System.Int32.TryParse%2A?displayProperty=fullName>\) 不會引發這個違規。  下列範例顯示實作 <xref:System.Int32.TryParse%2A?displayProperty=fullName> 方法的結構 \(實值型別，Value Type\)。  
+### <a name="description"></a>Description  
+ Methods that implement the **Try\<Something>** pattern, such as <xref:System.Int32.TryParse%2A?displayProperty=fullName>, do not raise this violation. The following example shows a structure (value type) that implements the <xref:System.Int32.TryParse%2A?displayProperty=fullName> method.  
   
-### 程式碼  
- [!CODE [FxCop.Design.TryPattern#1](../CodeSnippet/VS_Snippets_CodeAnalysis/FxCop.Design.TryPattern#1)]  
+### <a name="code"></a>Code  
+ [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]  
   
-## 相關規則  
- [CA1045：不要以傳址方式傳遞類型](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+## <a name="related-rules"></a>Related Rules  
+ [CA1045: Do not pass types by reference](../code-quality/ca1045-do-not-pass-types-by-reference.md)

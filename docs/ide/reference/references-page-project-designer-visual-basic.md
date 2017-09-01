@@ -36,11 +36,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
 ms.openlocfilehash: 3f6fc5d4cfa934af24497828a57111ea40d6f3a0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
+ms.lasthandoff: 08/08/2017
 
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)

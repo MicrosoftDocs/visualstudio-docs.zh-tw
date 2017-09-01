@@ -1,5 +1,5 @@
 ---
-title: "管理應用程式設定 (.NET) | Microsoft Docs"
+title: Managing Application Settings (.NET) | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,90 +32,84 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: a6435584544cbffb9d90258cfba1d83bd71ee8cc
+ms.translationtype: HT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 961200cabbd01953c6efd5f48e76cee62866afc5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
+ms.lasthandoff: 08/28/2017
 
 ---
-# 管理應用程式設定 (.NET)
-<a id="managing-application-settings-net" class="xliff"></a>
-應用程式設定可讓您動態儲存應用程式資訊。 設定可以讓您在用戶端電腦上儲存不應包含在應用程式程式碼中的資訊 (例如連接字串)、使用者偏好設定和執行階段所需的其他資訊。  
+# <a name="managing-application-settings-net"></a>Managing Application Settings (.NET)
+Application settings enable you to store application information dynamically. Settings allow you to store information on the client computer that should not be included in the application code (for example a connection string), user preferences and other information you need at runtime.  
   
- 應用程式設定會取代舊版 Visual Studio 中使用的動態屬性。  
+ Application settings replace the dynamic properties used in earlier versions of Visual Studio.  
   
- 每一個應用程式設定都必須具備唯一的名稱。 這個名稱可為字母、數字或底線的任意組合，但是不能以數字開頭，也不能包含空格。 透過 `Name` 屬性即可變更名稱。  
+ Each application setting must have a unique name. The name can be any combination of letters, numbers, or an underscore that does not start with a number, and it cannot contain spaces. The name can be changed through the `Name` property.  
   
- 應用程式設定可以儲存為任何資料類型，只要該類型可以序列化為 XML，或是具有可實作 `TypeConverter` / `ToString`/`FromString`。 最常見的類型是 `String`、`Integer` 和 `Boolean`，不過您也可以將值儲存為 <xref:System.Drawing.Color>、<xref:System.Object> 或連接字串。  
+ Application settings can be stored as any data type that can be serialized to XML or has a `TypeConverter` that implements `ToString`/`FromString`. The most common types are `String`, `Integer`, and `Boolean`, but you can also store values as <xref:System.Drawing.Color>, <xref:System.Object>, or as a connection string.  
   
- 應用程式設定也包含一個值。 該值是透過 **Value** 屬性來進行設定，而且必須符合設定的資料類型。  
+ Application settings also contain a value. The value is set with the **Value** property and must match the data type of the setting.  
   
- 此外，應用程式設定也可在設計階段繫結到表單或控制項的屬性。  
+ In addition, application settings can be bound to a property of a form or control at design time.  
   
- 應用程式設定根據範圍可分成兩種類型：  
+ There are two types of application settings, based on scope:  
   
--   應用程式範圍的設定可用於 Web 服務的 URL 或資料庫連接字串等資訊。 這些值與應用程式相關聯。 因此，使用者無法在執行時期變更。  
+-   Application-scoped settings can be used for information such as a URL for a Web service or a database connection string. These values are associated with the application. Therefore, users cannot change them at run time.  
   
--   使用者範圍的設定可用於保留表單最後一個位置或字型偏好設定等資訊。 使用者可以在執行階段變更這些值。  
+-   User-scoped settings can be used for information such as persisting the last position of a form or a font preference. Users can change these values at run time.  
   
- 您可以使用 [範圍]  屬性變更設定的類型。  
+ You can change the type of a setting by using the **Scope** property.  
   
- 專案系統會將應用程式設定儲存在兩個 XML 檔案中：一個是您建立第一個應用程式設定時所建立的 app.config 檔案，另一個是在執行時期，當執行應用程式的使用者變更任何使用者設定的值時，所建立的 user.config 檔案。 請注意，使用者設定中的變更不會寫入磁碟中，除非應用程式明確呼叫方法以執行這個動作。  
+ The project system stores application settings in two XML files: an app.config file, which is created at design time when you create the first application setting; and a user.config file, which is created at run time when the user who runs the application changes the value of any user setting. Notice that changes in user settings are not written to disk unless the application specifically calls a method to do this.  
   
-## 在設計階段建立應用程式設定
-<a id="creating-application-settings-at-design-time" class="xliff"></a>  
- 在設計階段建立應用程式設定有兩種方式：使用 [專案設計工具]  的 [設定] 頁面，或是使用表單或控制項的 [屬性]  視窗，這個視窗可讓您將設定繫結至屬性。  
+## <a name="creating-application-settings-at-design-time"></a>Creating Application Settings at Design Time  
+ At design time, you can create application settings in two ways: by using the **Settings** page of the **Project Designer**, or by using the **Properties** window for a form or control, which allows you to bind a setting to a property.  
   
- 當您建立應用程式範圍的設定 (例如資料庫連接字串或伺服器資源參考) 時， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將設定儲存在 app.config 中，並標示 `<applicationSettings>` 標記。 (連接字串儲存在 `<connectionStrings>` 標記之下)。  
+ When you create an application-scoped setting (for example, a database connection string, or a reference to server resources), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<applicationSettings>` tag. (Connection strings are saved under the `<connectionStrings>` tag.)  
   
- 當您建立使用者範圍的設定 (例如預設字型、首頁或視窗大小) 時， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會將設定儲存在 app.config 中的 `<userSettings>` 標記下。  
+ When you create a user-scoped setting (for example, default font, home page, or window size), [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] saves it in app.config with the `<userSettings>` tag.  
   
 > [!IMPORTANT]
->  當您將連接字串儲存在 app.config 中時，請特別謹慎，以免洩露連接字串中的重要資訊 (例如密碼或伺服器路徑)。  
+>  When you store connection strings in app.config, you should take precautions to avoid revealing sensitive information, such as passwords or server paths, in the connection string.  
 >   
->  如果您是從外部來源取得連接字串資訊 (例如使用者提供使用者 ID 和密碼)，請務必確保您用來建構連接字串的值不能包含會變更連接行為的其他連接字串參數。  
+>  If you take connection string information from an external source, such as a user supplying a user ID and password, you must be careful to ensure that the values that you use to construct your connection string do not contain additional connection string parameters that change the behavior of your connection.  
 >   
->  您可以考慮使用 [受保護的組態] 功能，將組態檔中的重要資訊加密。 如需詳細資訊，請參閱[保護連接資訊](/dotnet/framework/data/adonet/protecting-connection-information)。  
+>  Consider using the Protected Configuration feature to encrypt sensitive information in the configuration file. See [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information) for more information.  
   
 > [!NOTE]
->  由於類別庫 (Class Library) 沒有組態檔模型，因此應用程式設定不適用於類別庫專案。 但是 Visual Studio Tools for Office DLL 專案例外，它可以有組態檔。  
+>  Because there is no configuration file model for class libraries, application settings do not apply for Class Library projects. The exception is a Visual Studio Tools for Office DLL project, which can have a configuration file.  
   
-## 使用自訂設定檔
-<a id="using-customized-settings-files" class="xliff"></a>  
- 您可以在專案中加入自訂設定檔，以便於管理設定群組。 單一檔案中所包含的設定會以單元方式載入和儲存。 因此，將設定儲存在經常使用及不常使用群組的個別檔案中，可以節省載入和儲存設定的時間。  
+## <a name="using-customized-settings-files"></a>Using Customized Settings Files  
+ You can add customized settings files to your project for convenient management of groups of settings. Settings that are contained in a single file are loaded and saved as a unit. Therefore, being able to store settings in separate files for frequently-used and infrequently-used groups can save time in loading and saving settings.  
   
- 例如，您可以將檔案 (如 SpecialSettings.settings) 加入至專案中。 雖然 `SpecialSettings` 類別不會出現在 `My` 命名空間中，但是 [檢視程式碼]  仍可讀取包含 `Partial Class SpecialSettings`的自訂設定檔。  
+ For example, you can add a file such as SpecialSettings.settings to your project. While your `SpecialSettings` class is not exposed in the `My` namespace, **View Code** can read the custom settings file that contains `Partial Class SpecialSettings`.  
   
- [設定設計工具] 首先會搜尋專案系統所建立的 Settings.settings 檔案，也就是 [專案設計工具] 在 [設定]  索引標籤中所顯示的預設檔案。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案的 Settings.settings 位於 [My Project] 資料夾，而 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 專案的這個檔案則位於 [Properties] 資料夾。 然後 [專案設計工具] 會搜尋專案的根資料夾中其他設定檔。 因此，您應該將自訂設定檔放在此。 如果您將 .settings 檔案加入至專案中的其他地方，[專案設計工具] 就無法找到檔案。  
+ The Settings Designer first searches for the Settings.settings file that the project system creates; this is the default file that the Project Designer displays in the **Settings** tab. Settings.settings is located in the My Project folder for [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects and in the Properties folder for [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projects. The Project Designer then searches for other settings files in the project's root folder. Therefore, you should put your custom settings file there. If you add a .settings file elsewhere in your project, the Project Designer will not be able to locate it.  
   
-## 於執行階段在 Visual Basic 中存取或變更應用程式設定
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-basic" class="xliff"></a>  
- 在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 專案中，您可以使用 `My.Settings` 物件在執行階段存取應用程式設定。 請在 [設定]  頁中，按一下 [檢視程式碼]  按鈕，以檢視 Settings.vb 檔案 Settings.vb 會定義 `Settings` 類別，讓您用來處理 Settings 類別上的下列事件：<xref:System.Configuration.ApplicationSettingsBase.SettingChanging>、<xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>、<xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded> 和 <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>。 請注意，Settings.vb 中的 `Settings` 類別是部分類別，只會顯示使用者所擁有的程式碼，不會顯示整個產生的類別。 如需使用 `My.Settings` 物件存取應用程式設定的詳細資訊，請參閱 [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)。  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accessing or Changing Application Settings at Run Time in Visual Basic  
+ In [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] projects, you can access application settings at run time by using the `My.Settings` object. On the **Settings** page, click the **View code** button to view the Settings.vb file. Settings.vb defines the `Settings` class, which enables you to handle these events on the settings class: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>, and <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Notice that the `Settings` class in Settings.vb is a partial class that displays only the user-owned code, not the whole generated class. For more information about accessing application settings by using the `My.Settings` object, see [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings).  
   
- 使用者在執行階段所變更之任何使用者範圍的設定值 (例如表單的位置)，都會儲存在 user.config 檔案中。 請注意，預設值仍然是儲存在 app.config 中。  
+ The values of any user-scoped settings that the user changes at run time (for example, the position of a form) are stored in a user.config file. Notice that the default values are still saved in app.config.  
   
- 如果您在執行階段 (例如在測試應用程式時) 變更了任何使用者範圍的設定，想要將這些設定重設為預設值，請按一下 [同步處理]  按鈕。  
+ If you have changed any user-scoped settings during run time, for example in testing the application, and want to reset these settings to their default values, click the **Synchronize** button.  
   
- 強烈建議您使用 `My.Settings` 物件和預設的 .settings 檔來存取設定。 因為您可以使用 [設定設計工具] 將屬性指派給設定，並且會在應用程式關閉前自動儲存使用者設定。 然而， [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 應用程式可以直接存取設定。 在這個情況下，您必須存取 `MySettings` 類別，並且使用專案根目錄下的自訂 .settings 檔案。 您也必須在結束應用程式之前儲存使用者設定，如同您針對 C# 應用程式所做的一樣 (將於下一節中說明)。  
+ We strongly recommend that you use the `My.Settings` object and the default .settings file to access settings. This is because you can use the Settings Designer to assign properties to settings, and, additionally, user settings are automatically saved before application shutdown. However, your [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] application can access settings directly. In that case you have to access the `MySettings` class and use a custom .settings file in the root of the project. You must also save the user settings before ending the application, as you would do for a C# application; this is described in the following section.  
   
-## 在 Visual C# 中，於執行階段存取或變更應用程式設定
-<a id="accessing-or-changing-application-settings-at-run-time-in-visual-c" class="xliff"></a> #
- 在除了 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]之外的語言中 (例如 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)])，您必須直接存取 `Settings` 類別，如下列 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範例所示。  
+## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-c"></a>Accessing or Changing Application Settings at Run Time in Visual C# #
+ In languages other than [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], such as [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)], you must access the `Settings` class directly, as shown in the following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example.  
   
-```c#  
+```csharp  
 Properties.Settings.Default.FirstUserSetting = "abc";  
 ```  
   
- 您也必須明確呼叫此包裝函式類別的 `Save` 方法，以保存使用者設定。 這通常在主要表單的 `Closing` 事件處理常式中執行。 下列 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範例會示範呼叫 `Save` 方法。  
+ You must also explicitly call the `Save` method of this wrapper class in order to persist the user settings. You usually do this in the `Closing` event handler of the main form. The following [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] example shows a call to the `Save` method.  
   
-```c#  
+```csharp  
 Properties.Settings.Default.Save();  
 ```  
   
- 如需透過 `Settings` 類別存取應用程式設定的一般資訊，請參閱[應用程式設定概觀](/dotnet/framework/winforms/advanced/application-settings-overview)。 如需逐一查看設定的詳細資訊，請參閱此 [論壇文章](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral)。  
+ For general information about accessing application settings through the `Settings` class, see [Application Settings Overview](/dotnet/framework/winforms/advanced/application-settings-overview). For information about iterating through the settings, see this [forum post](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).  
   
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
- [存取應用程式設定](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
+## <a name="see-also"></a>See Also  
+ [Accessing Application Settings](/dotnet/visual-basic/developing-apps/programming/app-settings/accessing-application-settings)
 

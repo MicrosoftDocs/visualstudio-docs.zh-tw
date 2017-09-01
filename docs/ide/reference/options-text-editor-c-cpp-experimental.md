@@ -1,7 +1,7 @@
 ---
 title: "選項、文字編輯器、C/C++、實驗 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -30,11 +30,11 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 77c4408fcd93a776468cf5fb23b3807a2b8d594d
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 1677db7d5af93db8a378d598332e6a6d52f09bdd
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
+ms.lasthandoff: 08/14/2017
 
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
@@ -48,9 +48,10 @@ ms.lasthandoff: 05/24/2017
 >  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="enable-predictive-intellisense"></a>啟用預測性 Intellisense
-預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您輸入 <code>int x =</code> 並叫用 IntelliSense 下拉式清單，您只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
+預測性 IntelliSense 會限制顯示在 IntelliSense 下拉式清單中的結果數，讓您只看到內容相關的結果。 例如，如果您鍵入 <code>int x =</code> 並叫用 IntelliSense 下拉式清單，則只會看到整數或傳回整數的函式。 根據預設，會關閉預測性 IntelliSense。
 
-## <a name="enable-faster-project-load"></a>啟用更快的專案載入
+## <a name="enable-faster-project-load"></a>啟用更快的專案載入 
+**Visual Studio 2017 版本 15.3 和更新版本**：這項功能現在稱為「啟用專案快取」，並已移至 [VC++ 專案設定](vcpp-project-settings-projects-and-solutions-options-dialog-box.md)屬性頁。
 這個選項讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必重新從專案檔計算資料。 使用快取資料可以大幅加速專案載入時間。  
 
 ## <a name="additional-features-in-the-visual-studio-gallery"></a>Visual Studio 組件庫中的其他功能

@@ -1,5 +1,5 @@
 ---
-title: "IDebugCustomAttribute::GetParentField |Microsoft 文件"
+title: IDebugCustomAttribute::GetParentField | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,39 +30,40 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 81ef2f6d125720ff7df30429395dc8a3b4d2f0cd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1f30a03099c4b8464f64737d706486d07c42a537
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-取得要附加自訂屬性的欄位。  
+Gets the field to which the custom attribute is attached.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetParentField(   
    IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetParentField(  
    out IDebugField ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ppField`  
- [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表要附加自訂屬性欄位。  
+ [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object that represents the field to which the custom attribute is attached.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，會傳回 S_OK。否則，傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)来判斷哪些種類的欄位父系的物件。  
+## <a name="remarks"></a>Remarks  
+ Call the [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) method on the returned [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object to determine what kind of field the parent is.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: aa15581df771128117b0e4c75f5ddd749cdf5702
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
+ms.openlocfilehash: e212fafb9eaf7891ff75084d4d5dd8b492718049
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/15/2017
 
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 檔案
@@ -59,8 +60,8 @@ ms.lasthandoff: 03/01/2017
 |Microsoft.CSharp.targets|針對 Visual C# 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual C# 專案檔 (.csproj) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />`|  
 |Microsoft.VisualBasic.targets|針對 Visual Basic 專案定義標準建置程序的步驟。<br /><br /> 已透過 Visual Basic 專案檔 (.vbproj) 匯入，其中包含下列陳述式︰`<Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />`|
 
-## <a name="directorybuildprops"></a>Directory.Build.Props
-Directory.Build.Props 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 **ImportDirectoryBuildTargets** 設為 **false**，否則系統皆會從 Microsoft.Common.targets 自動匯入這個檔案。
+## <a name="directorybuildtargets"></a>Directory.Build.targets
+Directory.Build.targets 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 **ImportDirectoryBuildTargets** 設為 **false**，否則系統皆會從 Microsoft.Common.targets 自動匯入這個檔案。
 
 ## <a name="see-also"></a>另請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   

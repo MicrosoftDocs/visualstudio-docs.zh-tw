@@ -1,57 +1,74 @@
 ---
-title: "IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::GetServerFriendlyName"
+title: IDebugCoreServer3::GetServerFriendlyName | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::GetServerFriendlyName
+helpviewer_keywords:
+- IDebugCoreServer3::GetServerFriendlyName
 ms.assetid: 7035b904-b3d7-4d9b-98d9-65714b8a8b9f
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugCoreServer3::GetServerFriendlyName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7a8ff4b91cb37ee71435069fbacb6a7bcd5ab818
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-擷取伺服器的易記名稱。  
+---
+# <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
+Retrieves a friendly name for the server.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetServerFriendlyName(  
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetServerFriendlyName(  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetServerFriendlyName(  
-   out string pbstrName  
+```csharp  
+int GetServerFriendlyName(  
+   out string pbstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pbstrName`  
- \[\] out傳回伺服器的易記名稱。  
+ [out] Returns a friendly name for the server.  
   
 > [!NOTE]
->  呼叫端負責釋出的字串。  
+>  The caller is responsible for freeing the string.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns error code.  
   
-## 備註  
- 使用者啟動的伺服器，這個方法所傳回的名稱會是伺服器的完整名稱。  若為自動啟動伺服器，名稱會是電腦的伺服器上執行。  
+## <a name="remarks"></a>Remarks  
+ For user-launched servers, the name returned by this method is the full name of the server. For auto-launched servers, the name is that of the machine the server is running on.  
   
- 機器導向的名稱，呼叫[GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)方法。  
+ For a machine-oriented name, call the [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) method.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)   
  [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

@@ -1,185 +1,188 @@
 ---
-title: "逐步解說：設計 Outlook 表單區域"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "表單區域 [Visual Studio 中的 Office 程式開發], 建立"
+title: 'Walkthrough: Designing an Outlook Form Region | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- form regions [Office development in Visual Studio], creating
 ms.assetid: b033fc06-cdeb-4d7f-804b-86d15bfa022a
 caps.latest.revision: 41
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 40
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e75921b287578f25ed0c112e859129941f21c0f7
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 逐步解說：設計 Outlook 表單區域
-  自訂的表單區域會擴充標準或自訂的 Microsoft Office Outlook 表單。  在此逐步解說中，您要設計自訂的表單區域，它在連絡人項目的 \[偵測器\] 視窗中會顯示為新頁面。  這個表單區域會將地址資訊傳送至 Windows Live 當地搜尋網站，顯示連絡人清單中每個地址的對應。  如需表單區域的相關資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+# <a name="walkthrough-designing-an-outlook-form-region"></a>Walkthrough: Designing an Outlook Form Region
+  Custom form regions extend standard or custom Microsoft Office Outlook forms. In this walkthrough, you will design a custom form region that appears as a new page in the Inspector window of a contact item. This form region displays a map of each address that is listed for the contact, by sending the address information to the Windows Live Local Search Web site. For information about form regions, see [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- 這個逐步解說將說明下列工作：  
+ This walkthrough illustrates the following tasks:  
   
--   建立新的 Outlook VSTO 增益集專案。  
+-   Creating a new Outlook VSTO Add-in project.  
   
--   在 VSTO 增益集專案中加入表單區域。  
+-   Adding a form region to the VSTO Add-in project.  
   
--   設計表單區域的版面配置。  
+-   Designing the layout of the form region.  
   
--   自訂表單區域的行為。  
+-   Customizing the behavior of the form region.  
   
--   測試 Outlook 表單區域。  
+-   Testing the Outlook form region.  
   
 > [!NOTE]  
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置：  您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。  如需詳細資訊，請參閱 [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
-## 必要條件  
- 您需要下列元件才能完成此逐步解說：  
+## <a name="prerequisites"></a>Prerequisites  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] 或 [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]。  
+-   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] or [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].  
   
- ![視訊的連結](~/data-tools/media/playvideo.gif "視訊的連結") 如需本主題的影片版本，請參閱[影片 \- 如何：設計 Outlook 表單區域](http://go.microsoft.com/fwlink/?LinkID=140824)。  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a video version of this topic, see [Video How to: Designing an Outlook Form Region](http://go.microsoft.com/fwlink/?LinkID=140824).  
   
-## 建立新的 Outlook VSTO 增益集專案  
- 第一次建立基本的 VSTO 增益集專案。  
+## <a name="creating-a-new-outlook-vsto-add-in-project"></a>Creating a New Outlook VSTO Add-in Project  
+ First create a basic VSTO Add-in project.  
   
-#### 建立新的 Outlook VSTO 增益集專案  
+#### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>To create a new Outlook VSTO Add-in project  
   
-1.  在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中，建立名為 MapItAddIn 的 Outlook VSTO 增益集專案。  
+1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], create an Outlook VSTO Add-in project with the name **MapItAddIn**.  
   
-2.  在 \[新增專案\] 對話方塊中，選取 \[為方案建立目錄\]。  
+2.  In the **New Project** dialog box, select **Create directory for solution**.  
   
-3.  將專案儲存至任一目錄。  
+3.  Save the project to any directory.  
   
-     如需詳細資訊，請參閱[如何：在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
+     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
   
-## 在 Outlook VSTO 增益集專案中加入表單區域  
- Outlook VSTO 增益集解決方案可以包含一或多個 Outlook 表單區域項目。  使用 \[新的 Outlook 表單區域精靈\] 將表單區域項目加入專案。  
+## <a name="adding-a-form-region-to-the-outlook-vsto-add-in-project"></a>Adding a Form Region to the Outlook VSTO Add-in Project  
+ An Outlook VSTO Add-in solution can contain one or more Outlook form region items. Add a form region item to your project by using the **New Outlook Form Region** wizard.  
   
-#### 在 Outlook VSTO 增益集專案中加入表單區域  
+#### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>To add a form region to the Outlook VSTO Add-in project  
   
-1.  在 \[方案總管\] 中，選取 \[MapItAddIn\] 專案。  
+1.  In **Solution Explorer**, select the **MapItAddIn** project.  
   
-2.  在 \[專案\] 功能表中，按一下 \[加入新項目\]。  
+2.  On the **Project** menu, click **Add New Item**.  
   
-3.  在 \[加入新項目\] 對話方塊中，選取 \[Outlook 表單區域\]，將檔案命名為 MapIt，然後按一下 \[加入\]。  
+3.  In the **Add New Item** dialog box, select **Outlook Form Region**, name the file **MapIt**, and then click **Add**.  
   
-     如此會啟動 \[新的 Outlook 表單區域精靈\]。  
+     The **NewOutlook Form Region** wizard starts.  
   
-4.  在 \[選取您希望如何建立此表單區域\] 頁面上，按一下 \[設計新的表單區域\]，然後按一下 \[下一步\]。  
+4.  On the **Select how you want to create the form region** page, click **Design a new form region**, and then click **Next**.  
   
-5.  在 \[選取要建立的表單區域類型\] 頁面上，按一下 \[個別\]，然後按一下 \[下一步\]。  
+5.  On the **Select the type of form region you want to create** page, click **Separate**, and then click **Next**.  
   
-     *「個別」*\(separate\) 表單區域會在 Outlook 表單中加入新的頁面。  如需表單區域型別的詳細資訊，請參閱[建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)。  
+     A *separate* form region adds a new page to an Outlook form. For more information about form region types, see [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md).  
   
-6.  在 \[提供描述文字和選取顯示設定\] 頁面的 \[名稱\] 方塊中，輸入 **Map It**。  
+6.  On the **Supply descriptive text and select your display preferences** page, type **Map It** in the **Name** box.  
   
-     開啟連絡人項目時，這個名稱會出現在 \[偵測器\] 視窗的功能區上。  
+     This name appears on the Ribbon of the Inspector window when the contact item is open.  
   
-7.  選取 \[處於撰寫模式的偵測器\] 和 \[處於讀取模式的偵測器\]，然後按一下 \[下一步\]。  
+7.  Select **Inspectors that are in compose mode** and **Inspectors that are in read mode**, and then click **Next**.  
   
-8.  在 \[識別將顯示此表單區域的訊息類別\] 頁面上，清除 \[郵件\] 並選取 \[連絡人\]，然後按一下 \[完成\]。  
+8.  On the **Identify the message classes that will display this form region** page, clear **Mail Message**, select **Contact**, and then click **Finish**.  
   
-     MapIt.cs 或 MapIt.vb 檔案即會加入專案。  
+     A MapIt.cs or MapIt.vb file is added to your project.  
   
-## 設計表單區域的版面配置  
- 使用*「表單區域設計工具」*\(form region designer\) 以視覺化方式開發表單區域。  您可以將 Managed 控制項拖曳至表單區域設計工具介面。  請使用設計工具和 \[屬性\] 視窗調整控制項的版面配置和外觀。  
+## <a name="designing-the-layout-of-the-form-region"></a>Designing the Layout of the Form Region  
+ Develop form regions visually by using the *form region designer*. You can drag managed controls to the form region designer surface. Use the designer and the **Properties** window to adjust control layout and appearance.  
   
-#### 設計表單區域的版面配置  
+#### <a name="to-design-the-layout-of-the-form-region"></a>To design the layout of the form region  
   
-1.  在 \[方案總管\] 中展開 \[MapItAddIn\]專案，然後再連按兩下 MapIt.cs 或 MapIt.vb 開啟表單區域設計工具。  
+1.  In **Solution Explorer**, expand the **MapItAddIn** project, and then double-click MapIt.cs or MapIt.vb to open the Form Region Designer.  
   
-2.  以滑鼠右鍵按一下設計工具，再按一下 \[屬性\]。  
+2.  Right-click the designer, and then click **Properties**.  
   
-3.  在 \[屬性\] 視窗中，將 \[大小\] 設為 664、469。  
+3.  In the **Properties** window, set **Size** to **664, 469**.  
   
-     這可確保表單區域大到足以顯示地圖。  
+     This ensures that the form region will be large enough to display a map.  
   
-4.  在 \[**檢視**\] 功能表上，按一下 \[**工具箱**\]。  
+4.  On the **View** menu, click **Toolbox**.  
   
-5.  從 \[工具箱\] 的 \[通用控制項\] 索引標籤，將 \[Web 瀏覽器\] 加入表單區域。  
+5.  From the **Common Controls** tab of the **Toolbox**, add a **WebBrowser** to the form region.  
   
-     \[Web 瀏覽器\] 會顯示連絡人清單中每個地址的對應。  
+     The **WebBrowser** will display a map of each address that is listed for the contact.  
   
-## 自訂表單區域的行為  
- 在表單區域事件處理常式中加入程式碼，以自訂表單區域在執行階段的行為方式。  程式碼會檢查此表單區域的 Outlook 項目屬性，並決定是否要顯示 Map It 表單區域。  如果它顯示表單區域，程式碼會瀏覽至 Windows Live 當地搜尋，並載入 Outlook 連絡人項目中所列的每個地址的對應。  
+## <a name="customizing-the-behavior-of-the-form-region"></a>Customizing the Behavior of the Form Region  
+ Add code to form region event handlers to customize the way a form region behaves at run time. For this form region, the code examines the properties of an Outlook item and determines whether to display the Map It form region. If it displays the form region, the code navigates to Windows Live Local Search and loads a map of each address listed in the Outlook contact item.  
   
-#### 自訂表單區域的行為  
+#### <a name="to-customize-the-behavior-of-the-form-region"></a>To customize the behavior of the form region  
   
-1.  在 \[方案總管\] 中以滑鼠右鍵按一下 MapIt.cs 或 MapIt.vb，再按一下 \[檢視程式碼\]。  
+1.  In **Solution Explorer**, right click MapIt.cs or MapIt.vb, and then click **View Code**.  
   
-     MapIt.cs 或 MapIt.vb 會在程式碼編輯器中開啟。  
+     MapIt.cs or MapIt.vb opens in the Code Editor.  
   
-2.  展開 \[表單區域 Factory\] 程式碼區域。  
+2.  Expand the **Form Region Factory** code region.  
   
-     即會公開名為 `MapItFactory` 的表單區域 Factory 類別。  
+     The form region factory class named `MapItFactory` is exposed.  
   
-3.  將下列程式碼加入至 `MapItFactory_FormRegionInitializing` 事件處理常式。  當使用者開啟連絡人項目時，即會呼叫這個事件處理常式。  下列程式碼會判斷連絡人項目是否包含地址。  如果連絡人項目不包含地址，這個程式碼就會將 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 類別的 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 屬性設成 **true**，且不顯示表單區域。  否則，VSTO 增益集會引發 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，並顯示表單區域。  
+3.  Add the following code to the `MapItFactory_FormRegionInitializing` event handler. This event handler is called when the user opens a contact item. The following code determines whether the contact item contains an address. If the contact item does not contain an address, this code sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> class to **true** and the form region is not displayed. Otherwise, the VSTO Add-in raises the <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> event and displays the form region.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#1](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/CS/MapIt.cs#1)]
-     [!code-vb[Trin_Outlook_FR_Separate#1](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/VB/MapIt.vb#1)]  
+     [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]  [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-4.  將下列程式碼加入至 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件處理常式。  這個程式碼會執行下列工作：  
+4.  Add the following code to the <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> event handler. This code performs the following tasks:  
   
-    -   串連連絡人項目中的每個地址，並建立 URL 字串。  
+    -   Concatenates each address in the contact item and creates a URL string.  
   
-    -   呼叫 <xref:System.Windows.Forms.WebBrowser> 物件的<xref:System.Windows.Forms.WebBrowser.Navigate%2A> 方法，並將 URL 字串當成參數傳遞。  
+    -   Calls the <xref:System.Windows.Forms.WebBrowser.Navigate%2A> method of the <xref:System.Windows.Forms.WebBrowser> object and passes the URL string as a parameter.  
   
-     當地搜尋網站會出現在 Map It 表單區域中，並在便條簿中顯示每個地址。  
+     The Local Search Web site appears in the Map It form region and presents each address in the scratch pad.  
   
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/CS/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_Outlook_FR_Separate/VB/MapIt.vb#2)]  
+     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)] [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]  
   
-## 測試 Outlook 表單區域  
- 當您執行專案時，Visual Studio 會開啟 Outlook。  開啟連絡人項目，以檢視 Map It 表單區域。  在包含地址的任何連絡人項目表單中，Map It 表單區域會顯示為頁面。  
+## <a name="testing-the-outlook-form-region"></a>Testing the Outlook Form Region  
+ When you run the project, Visual Studio opens Outlook. Open a contact item to view the Map It form region. The Map It form region appears as a page in the form of any contact item that contains an address.  
   
-#### 測試 Map It 表單區域  
+#### <a name="to-test-the-map-it-form-region"></a>To test the Map It form region  
   
-1.  按 F5 執行專案。  
+1.  Press F5 to run the project.  
   
-     Outlook 即開啟。  
+     Outlook opens.  
   
-2.  在 Outlook 的 \[住家\] 索引標籤上，按一下 \[新增項目\]，然後按一下 \[連絡人\]。  
+2.  In Outlook, on the **Home** tab, click **New Items**, and then click **Contact**.  
   
-3.  在連絡人表單中，輸入連絡人名稱**王美美**，然後指定下列三個地址。  
+3.  In the contact form, type **Ann Beebe** as the contact name, and then specify the following three addresses.  
   
-    |地址類型|地址|  
-    |----------|--------|  
-    |**商務**|民權東路 4567 號  台北市|  
-    |**首頁**|中山北路 1234 號  台北市|  
-    |**其他**|自由路 5796 號  台中市|  
+    |Address Type|Address|  
+    |------------------|-------------|  
+    |**Business**|**4567 Main St. Buffalo, NY**|  
+    |**Home**|**1234 North St. Buffalo, NY**|  
+    |**Other**|**3456 Main St. Seattle, WA**|  
   
-4.  儲存並關閉連絡人項目。  
+4.  Save and close the contact item.  
   
-5.  重新開啟 \[王美美\] 連絡人項目。  
+5.  Re-open the **Ann Beebe** contact item.  
   
-6.  在項目功能區的 \[顯示\] 群組中，按一下 \[Map It\] 開啟 Map It 表單區域。  
+6.  In the **Show** group of the item's Ribbon, click **Map It** to open the Map It form region.  
   
-     Map It 表單區域即出現並顯示當地搜尋網站。  便條簿中即會出現 \[商務\]、\[住家\] 和 \[其他\] 位址。  在便條簿中選取想要對應的地址。  
+     The Map It form region appears, and displays the Local Search Web site. The **Business**, **Home**, and **Other** addresses appear in the scratch pad. In the scratch pad, select an address that you want to map.  
   
-## 後續步驟  
- 從這些主題，您可以進一步了解如何自訂 Outlook 應用程式的 UI：  
+## <a name="next-steps"></a>Next Steps  
+ You can learn more about how to customize the UI of an Outlook application from these topics:  
   
--   若要深入了解如何自訂 Outlook 項目的功能區，請參閱[自訂 Outlook 的功能區](../vsto/customizing-a-ribbon-for-outlook.md)。  
+-   To learn about how to customize the Ribbon of an Outlook item, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
   
-## 請參閱  
- [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
- [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
- [建立 Outlook 表單區域的方針](../vsto/guidelines-for-creating-outlook-form-regions.md)   
- [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
- [如何：在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [讓表單區域與 Outlook 訊息類別產生關聯](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
- [Outlook 表單區域中的自訂動作](../vsto/custom-actions-in-outlook-form-regions.md)   
- [如何：防止 Outlook 顯示表單區域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
+## <a name="see-also"></a>See Also  
+ [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
+ [Guidelines for Creating Outlook Form Regions](../vsto/guidelines-for-creating-outlook-form-regions.md)   
+ [Walkthrough: Importing a Form Region That Is Designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)   
+ [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [Associating a Form Region with an Outlook Message Class](../vsto/associating-a-form-region-with-an-outlook-message-class.md)   
+ [Custom Actions in Outlook Form Regions](../vsto/custom-actions-in-outlook-form-regions.md)   
+ [How to: Prevent Outlook from Displaying a Form Region](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)  
   
   

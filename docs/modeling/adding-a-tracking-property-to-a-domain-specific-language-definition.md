@@ -1,5 +1,5 @@
 ---
-title: "定義域專屬語言定義中加入追蹤屬性 |Microsoft 文件"
+title: Adding a Tracking Property to a Domain-Specific Language Definition | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,37 +29,38 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 0d97770109a3c362f99a014829e694fc2e027196
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ef5f86cb3b41af6cc9e7432cdbfb7365471320b8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>在網域指定的語言定義中加入追蹤屬性
-本逐步解說示範如何將追蹤屬性加入至網域模型。  
+# <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adding a Tracking Property to a Domain-Specific Language Definition
+This walkthrough shows how to add a tracking property to a domain model.  
   
- A*追蹤網域*屬性是可更新的使用者，但具有預設值所使用的其他網域屬性或項目值計算的屬性。  
+ A *tracking domain* property is a property that can be updated by the user but which has a default value that is calculated by using the values of other domain properties or elements.  
   
- 比方說，定義域專屬語言工具 （DSL 工具），在網域類別的屬性具有預設值的計算方式是使用網域類別，而是使用者名稱的顯示名稱可以在設計階段變更值，或重設導出值。  
+ For example, in the Domain-Specific Language Tools (DSL Tools), the Display Name property of a domain class has a default value that is calculated by using the name of the domain class, but a user can change the value at design time or reset it to the calculated value.  
   
- 在本逐步解說中，您可以建立定義域專屬語言 (DSL) 具有追蹤模型的預設命名空間屬性為基礎的預設值的屬性命名空間。 如需追蹤屬性的詳細資訊，請參閱[定義追蹤屬性](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be)。  
+ In this walkthrough, you create a domain-specific language (DSL) that has a Namespace tracking property that has a default value based on the Default Namespace property of the model. For more information about tracking properties, see [Defining Tracking Properties](http://msdn.microsoft.com/en-us/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
--   追蹤屬性描述項 DSL 工具支援。 不過，DSL 設計工具無法用來將追蹤的屬性加入一種語言。 因此，您必須新增自訂程式碼來定義和實作的追蹤屬性。  
+-   The DSL Tools support tracking property descriptors. However, the DSL designer cannot be used to add a tracking property to a language. Therefore, you must add custom code to define and implement the tracking property.  
   
- 追蹤屬性有兩種狀態︰ 追蹤，並更新使用者。 追蹤屬性有下列功能︰  
+ A tracking property has two states: tracking, and updated by the user. Tracking properties have the following features:  
   
--   追蹤狀態，追蹤屬性的值計算，而且會更新為模型變更中的其他屬性的值。  
+-   When in the tracking state, the value of the tracking property is calculated, and the value is updated as other properties in the model change.  
   
--   在更新的使用者狀態的追蹤屬性的值會保留使用者上次設定的屬性值。  
+-   When in the updated by user state, the value of the tracking property retains the value to which the user last set the property.  
   
--   在**屬性** 視窗中，**重設**命令的屬性是在更新時，才會啟用 追蹤 屬性的使用者狀態。 **重設**命令會設定追蹤屬性來追蹤狀態。  
+-   In the **Properties** window, the **Reset** command for the tracking property is only enabled when the property is in the updated by user state. The **Reset** command sets the tracking property state to tracking.  
   
--   在**屬性**視窗，追蹤屬性時追蹤狀態，其值會顯示在一般的字型。  
+-   In the **Properties** window, when the tracking property is in the tracking state, its value is displayed in a regular font.  
   
--   在**屬性** 視窗中，追蹤 屬性中更新時的使用者狀態，其值會顯示在粗體字型。  
+-   In the **Properties** window, when the tracking property is in the updated by user state, its value is displayed in a bold font.  
   
-## <a name="prerequisites"></a>必要條件  
- 您可以開始這個逐步解說之前，您必須先安裝這些元件︰  
+## <a name="prerequisites"></a>Prerequisites  
+ Before you can start this walkthrough, you must first install these components:  
   
 |||  
 |-|-|  
@@ -67,124 +68,124 @@ ms.lasthandoff: 02/22/2017
 |[!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580)|  
 |[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]|[http://go.microsoft.com/fwlink/?LinkID=185581](http://go.microsoft.com/fwlink/?LinkID=185581)|  
   
-## <a name="creating-the-dsl-project"></a>建立 DSL 專案  
- 建立您的網域特定語言專案。  
+## <a name="creating-the-dsl-project"></a>Creating the DSL Project  
+ Create the project for your domain-specific language.  
   
-#### <a name="to-create-the-project"></a>若要建立專案  
+#### <a name="to-create-the-project"></a>To create the project  
   
-1.  建立定義域專屬語言設計工具的專案。 將它命名為 `TrackingPropertyDSL`。  
+1.  Create a Domain-Specific Language Designer project. Name it `TrackingPropertyDSL`.  
   
-2.  在**定義域專屬語言設計工具精靈**，設定下列選項︰  
+2.  In the **Domain-Specific Language Designer Wizard**, set the following options:  
   
-    1.  選取**MinimalLanguage**範本。  
+    1.  Select the **MinimalLanguage** template.  
   
-    2.  使用預設名稱為網域特定語言， `TrackingPropertyDSL`。  
+    2.  Use the default name for the domain-specific language, `TrackingPropertyDSL`.  
   
-    3.  設定模型檔案的副檔名`trackingPropertyDsl`。  
+    3.  Set the extension for model files to `trackingPropertyDsl`.  
   
-    4.  使用預設範本圖示模型檔案。  
+    4.  Use the default template icon for the model files.  
   
-    5.  設定的產品名稱`Product Name`。  
+    5.  Set the name of the product to `Product Name`.  
   
-    6.  設定的公司名稱`Company Name`。  
+    6.  Set the name of the company to `Company Name`.  
   
-    7.  使用預設值為方案中專案的根命名空間`CompanyName.ProductName.TrackingPropertyDSL`。  
+    7.  Use the default value for the root namespace for projects in the solution, `CompanyName.ProductName.TrackingPropertyDSL`.  
   
-    8.  讓精靈建立組件的強式名稱金鑰檔。  
+    8.  Allow the wizard to create a strong name key file for your assemblies.  
   
-    9. 檢閱方案的詳細資料，然後按一下**完成**建立 DSL 定義專案。  
+    9. Review the details of the solution, and then click **Finish** to create the DSL definition project.  
   
-## <a name="customizing-the-default-dsl-definition"></a>自訂預設的 DSL 定義  
- 在本節中，您可以自訂 DSL 定義中包含下列項目︰  
+## <a name="customizing-the-default-dsl-definition"></a>Customizing the Default DSL Definition  
+ In this section, you customize the DSL definition to contain the following items:  
   
--   追蹤每個項目模型的屬性命名空間。  
+-   A Namespace tracking property for every element of the model.  
   
--   模型的每個項目，則為 True 的 IsNamespaceTracking 屬性。 這個屬性會指出是否在追蹤狀態，或在更新追蹤屬性的使用者狀態。  
+-   A Boolean IsNamespaceTracking property for every element of the model. This property will indicate whether the tracking property is in the tracking state or in the updated by user state.  
   
--   模型的預設命名空間屬性。 這個屬性會用於計算追蹤屬性的命名空間的預設值。  
+-   A Default Namespace property for the model. This property will be used to calculate the default value of the Namespace tracking property.  
   
--   CustomElements 計算模型的屬性。 這個屬性會指出項目具有自訂命名空間的比例。  
+-   A CustomElements calculated property for the model. This property will indicate the proportion of elements that have a custom namespace.  
   
-#### <a name="to-add-the-domain-properties"></a>若要新增網域屬性  
+#### <a name="to-add-the-domain-properties"></a>To add the domain properties  
   
-1.  在 DSL 設計工具中，以滑鼠右鍵按一下**ExampleModel**網域類別，指向**新增**，然後按一下  **DomainProperty**。  
+1.  In the DSL designer, right-click the **ExampleModel** domain class, point to **Add**, and then click **DomainProperty**.  
   
-    1.  將新屬性`DefaultNamespace`。  
+    1.  Name the new property `DefaultNamespace`.  
   
-    2.  在**屬性** 視窗中的新的屬性，將**預設值**至`DefaultNamespace`，並設定**類型**至**字串**。  
+    2.  In the **Properties** window for the new property, set **Default Value** to `DefaultNamespace`, and set **Type** to **String**.  
   
-2.  若要**ExampleModel**網域類別中，新增名為的網域屬性`CustomElements`。  
+2.  To the **ExampleModel** domain class, add a domain property named `CustomElements`.  
   
-     在**屬性** 視窗中的新的屬性，將**種類**至**計算**。  
+     In the **Properties** window for the new property, set **Kind** to **Calculated**.  
   
-3.  若要**ExampleElement**網域類別中，新增名為的網域屬性`Namespace`。  
+3.  To the **ExampleElement** domain class, add a domain property named `Namespace`.  
   
-     在**屬性** 視窗中的新的屬性，將**是可瀏覽**至**False**，並設定**種類**至**CustomStorage**。  
+     In the **Properties** window for the new property, set **Is Browsable** to **False**, and set **Kind** to **CustomStorage**.  
   
-4.  若要**ExampleElement**網域類別中，新增名為的網域屬性`IsNamespaceTracking`。  
+4.  To the **ExampleElement** domain class, add a domain property named `IsNamespaceTracking`.  
   
-     中**屬性** 視窗中的新的屬性，將**是可瀏覽**至**False**，請將**預設值**至`true`，並設定**類型**至**布林**。  
+     In the **Properties** window for the new property, set **Is Browsable** to **False**, set **Default Value** to `true`, and set **Type** to **Boolean**.  
   
-#### <a name="to-update-the-diagram-elements-and-dsl-details"></a>若要更新的圖表項目和 DSL 詳細資料  
+#### <a name="to-update-the-diagram-elements-and-dsl-details"></a>To update the diagram elements and DSL details  
   
-1.  在 DSL 設計工具中，以滑鼠右鍵按一下**ExampleShape**幾何圖形，指向**新增**，然後按一下 **文字裝飾項目**。  
+1.  In the DSL designer, right-click the **ExampleShape** geometry shape, point to **Add**, and then click **Text Decorator**.  
   
-    1.  將新的文字裝飾項目`NamespaceDecorator`。  
+    1.  Name the new text decorator `NamespaceDecorator`.  
   
-    2.  在**屬性** 視窗中的文字裝飾項目，將**位置**至**InnerBottomLeft**。  
+    2.  In the **Properties** window for the text decorator, set **Position** to **InnerBottomLeft**.  
   
-2.  在 DSL 設計工具中，選取連接的線條**ExampleElement**類別**ExampleShape**圖形。  
+2.  In the DSL designer, select the line that connects the **ExampleElement** class to the **ExampleShape** shape.  
   
-    1.  在**DSL 詳細資料**視窗中，選取**裝飾項目對應** 索引標籤。  
+    1.  In the **DSL Details** window, select the **Decorator Maps** tab.  
   
-    2.  在**裝飾項目**清單中，選取**NamespaceDecorator**，選取其核取方塊，然後在**屬性顯示**清單中，選取**命名空間**。  
+    2.  In the **Decorators** list, select **NamespaceDecorator**, select its check box and then on the **Display property** list, select **Namespace**.  
   
-3.  在**DSL Explorer**，展開**網域類別**資料夾中，以滑鼠右鍵按一下**ExampleElement**節點，然後再按一下**加入新的網域類型描述元**。  
+3.  In **DSL Explorer**, expand the **Domain Classes** folder, right-click the **ExampleElement** node, and then click **Add New Domain Type Descriptor**.  
   
-    1.  展開**ExampleElement**節點，然後選取**自訂型別描述項 （網域型別描述項）**節點。  
+    1.  Expand the **ExampleElement** node, and select the **Custom Type Descriptor (Domain Type Descriptor)** node.  
   
-    2.  在**屬性** 視窗中的網域型別描述項，將**自訂編碼**至**True**。  
+    2.  In the **Properties** window for the domain type descriptor, set **Custom Coded** to **True**.  
   
-4.  在**DSL Explorer**，請選取**Xml 序列化行為**節點。  
+4.  In **DSL Explorer**, select the **Xml Serialization Behavior** node.  
   
-    1.  在**屬性**視窗中，設定**自訂 Post Load**至**True**。  
+    1.  In the **Properties** window, set **Custom Post Load** to **True**.  
   
-## <a name="transforming-templates"></a>轉換範本  
- 既然您已對您的 DSL 定義網域類別和屬性，您可以確認 DSL 定義可被正確轉換為您的專案程式碼重新產生。  
+## <a name="transforming-templates"></a>Transforming Templates  
+ Now that you have defined the domain classes and properties for your DSL, you can verify that the DSL definition can be transformed correctly to regenerate the code for your project.  
   
-#### <a name="to-transform-the-text-templates"></a>要轉換文字範本  
+#### <a name="to-transform-the-text-templates"></a>To transform the text templates  
   
-1.  在**方案總管] 中**工具列上，按一下 [**轉換所有範本**。  
+1.  On the **Solution Explorer** toolbar, click **Transform All Templates**.  
   
-2.  系統會重新產生方案的程式碼，並將儲存 DslDefinition.dsl。 定義檔案的 XML 格式的相關資訊，請參閱[DslDefinition.dsl 檔](../modeling/the-dsldefinition-dsl-file.md)。  
+2.  The system regenerates the code for the solution, and saves DslDefinition.dsl. For information about the XML format of definition files, see [The DslDefinition.dsl File](../modeling/the-dsldefinition-dsl-file.md).  
   
-## <a name="creating-files-for-custom-code"></a>建立自訂程式碼檔  
- 當您轉換所有範本時，系統就會產生定義 Dsl 和 DslPackage 專案中的網域特定語言的原始程式碼。 因此，您可以避免干擾所產生的文字，撰寫自訂程式碼所產生的程式碼檔案不同的檔案中。  
+## <a name="creating-files-for-custom-code"></a>Creating Files for Custom Code  
+ When you transform all templates, the system generates the source code that defines your domain-specific language in the Dsl and DslPackage projects. So that you can avoid interfering with the generated text, write your custom code in files that are distinct from the generated code files.  
   
- 您必須提供程式碼來維護的值與您的追蹤屬性狀態。 若要可協助您區分產生程式碼中，從自訂程式碼，並避免命名衝突的檔案，將自訂程式碼檔案放在個別的子資料夾中。  
+ You must provide code for maintaining the value and the state of your tracking property. To help you distinguish your custom code from the generated code, and to avoid file naming conflicts, put your custom code files in a separate subfolder.  
   
-#### <a name="to-create-the-code-files"></a>若要建立的程式碼檔案  
+#### <a name="to-create-the-code-files"></a>To create the code files  
   
-1.  在**方案總管] 中**，以滑鼠右鍵按一下**DSL**專案，指向**新增**，然後按一下 [**新資料夾**。 新資料夾命名為`CustomCode`。  
+1.  In **Solution Explorer**, right-click the **DSL** project, point to **Add**, and then click **New Folder**. Name the new folder `CustomCode`.  
   
-2.  以滑鼠右鍵按一下新**應付**資料夾，指向**新增**，然後按一下 **新項目**。  
+2.  Right-click the new **CustomCode** folder, point to **Add**, and then click **New Item**.  
   
-3.  選取**程式碼檔案**範本中，設定**名稱**至`NamespaceTrackingProperty.cs`，然後按一下 **確定**。  
+3.  Select the **Code File** template, set the **Name** to `NamespaceTrackingProperty.cs`, and then click **OK**.  
   
-     建立 NamespaceTrackingProperty.cs 檔案，並開啟以供編輯。  
+     The NamespaceTrackingProperty.cs file is created and opened for editing.  
   
-4.  在資料夾中，建立下列的程式碼檔案︰ `ExampleModel.cs,``HelperClasses.cs`， `Serialization.cs`，和`TypeDescriptor.cs`。  
+4.  In the folder, create the following code files: `ExampleModel.cs,``HelperClasses.cs`, `Serialization.cs`, and `TypeDescriptor.cs`.  
   
-5.  在**DslPackage**專案中，也建立`CustomCode`資料夾，並將它加入`Package.cs`程式碼檔案。  
+5.  In the **DslPackage** project, also create a `CustomCode` folder, and add to it a `Package.cs` code file.  
   
-## <a name="adding-helper-classes-to-support-tracking-properties"></a>加入協助程式類別，以支援追蹤屬性  
- HelperClasses.cs 檔案中，加入`TrackingHelper`和`CriticalException`類別，如下所示。 您將會參考這些類別，稍後在本逐步解說。  
+## <a name="adding-helper-classes-to-support-tracking-properties"></a>Adding Helper Classes to Support Tracking Properties  
+ To the HelperClasses.cs file, add the `TrackingHelper` and `CriticalException` classes as follows. You will reference these classes later in this walkthrough.  
   
-#### <a name="to-add-the-helper-classes"></a>若要新增的 helper 類別  
+#### <a name="to-add-the-helper-classes"></a>To add the helper classes  
   
-1.  HelperClasses.cs 檔案中加入下列程式碼。  
+1.  Add the following code to the HelperClasses.cs file.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Collections;  
     using System.Diagnostics;  
@@ -257,19 +258,19 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>加入自訂型別描述項的自訂程式碼  
- 實作`GetCustomProperties`方法的型別描述項`ExampleModel`網域類別。  
+## <a name="adding-custom-code-for-the-custom-type-descriptor"></a>Adding Custom Code for the Custom Type Descriptor  
+ Implement the `GetCustomProperties` method for the type descriptor for the `ExampleModel` domain class.  
   
 > [!NOTE]
->  DSL 工具產生的自訂型別描述項的程式碼`ExampleModel`呼叫`GetCustomProperties`; 不過，DSL 工具不會產生實作方法的程式碼。  
+>  The code that the DSL Tools generate for the custom type descriptor for `ExampleModel` calls `GetCustomProperties`; however, the DSL Tools do not generate code that implements the method.  
   
- 定義這個方法會建立追蹤的追蹤屬性的命名空間的屬性描述項。 此外，提供追蹤屬性的屬性可以讓**屬性**正確顯示屬性 視窗。  
+ Defining this method creates the tracking property descriptor for the Namespace tracking property. Also, providing attributes for the tracking property enables the **Properties** window to display the property correctly.  
   
-#### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>若要修改 ExampleModel 網域類別的型別描述項  
+#### <a name="to-modify-the-type-descriptor-for-the-examplemodel-domain-class"></a>To modify the type descriptor for the ExampleModel domain class  
   
-1.  TypeDescriptor.cs 檔案中加入下列程式碼。  
+1.  Add the following code to the TypeDescriptor.cs file.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.ComponentModel;  
     using Microsoft.VisualStudio.Modeling;  
@@ -325,14 +326,14 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="adding-custom-code-for-the-package"></a>加入自訂程式碼封裝  
- 產生的程式碼定義 ExampleElement 網域類別; 的類型描述提供者不過，您必須加入程式碼，以指示要使用此類型描述提供者 DSL。  
+## <a name="adding-custom-code-for-the-package"></a>Adding Custom Code for the Package  
+ The generated code defines a type description provider for the ExampleElement domain class; however, you must add code to instruct the DSL to use this type description provider.  
   
-#### <a name="to-update-the-dsl-package-to-use-your-custom-type-descriptor"></a>若要更新之 DSL 封裝使用您的自訂型別描述項  
+#### <a name="to-update-the-dsl-package-to-use-your-custom-type-descriptor"></a>To update the DSL package to use your custom type descriptor  
   
-1.  將下列程式碼加入至 Package.cs 檔。  
+1.  Add the following code to the Package.cs file.  
   
-    ```c#  
+    ```csharp  
     using System.ComponentModel;  
   
     namespace CompanyName.ProductName.TrackingPropertyDSL  
@@ -353,23 +354,23 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="adding-custom-code-for-the-model"></a>加入自訂程式碼模型  
- 實作`GetCustomElementsValue`方法`ExampleModel`網域類別。  
+## <a name="adding-custom-code-for-the-model"></a>Adding Custom Code for the Model  
+ Implement the `GetCustomElementsValue` method for the `ExampleModel` domain class.  
   
 > [!NOTE]
->  DSL 工具產生的程式碼`ExampleModel`呼叫`GetCustomElementsValue`; 不過，DSL 工具不會產生實作方法的程式碼。  
+>  The code that the DSL Tools generate for `ExampleModel` calls `GetCustomElementsValue`; however, the DSL Tools do not generate code that implements the method.  
   
- 定義`GetCustomElementsValue`CustomElements 計算屬性的方法提供邏輯`ExampleModel`。 這個方法會計算數目`ExampleElement`具有追蹤具有使用者已更新的值，並傳回字串，這個計數代表模型中的總項目以百分比屬性的命名空間的網域類別。  
+ Defining the `GetCustomElementsValue` method provides the logic for the CustomElements calculated property of `ExampleModel`. This method counts the number of `ExampleElement` domain classes that have a Namespace tracking property that has a user-updated value, and returns a string that represents this count as a proportion of the total elements in the model.  
   
- 此外，新增`OnDefaultNamespaceChanged`方法`ExampleModel`，並覆寫`OnValueChanged`方法`DefaultNamespacePropertyHandler`巢狀類別的`ExampleModel`呼叫`OnDefaultNamespaceChanged`。  
+ In addition, add an `OnDefaultNamespaceChanged` method to `ExampleModel`, and override the `OnValueChanged` method of the `DefaultNamespacePropertyHandler` nested class of `ExampleModel` to call `OnDefaultNamespaceChanged`.  
   
- 因為 DefaultNamespace 屬性用來計算追蹤屬性的命名空間`ExampleModel`必須通知所有`ExampleElement`DefaultNamespace 值已變更的網域類別。  
+ Because the DefaultNamespace property is used to calculate the Namespace tracking property, `ExampleModel` must notify all `ExampleElement` domain classes that the value of DefaultNamespace has changed.  
   
-#### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>若要修改追蹤屬性的屬性處理常式  
+#### <a name="to-modify-the-property-handler-for-the-tracked-property"></a>To modify the property handler for the tracked property  
   
-1.  ExampleModel.cs 檔案中加入下列程式碼。  
+1.  Add the following code to the ExampleModel.cs file.  
   
-    ```c#  
+    ```csharp  
     using System.Linq;  
   
     namespace CompanyName.ProductName.TrackingPropertyDSL  
@@ -430,21 +431,21 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="adding-custom-code-for-the-tracking-property"></a>加入自訂程式碼追蹤屬性  
- 新增`CalculateNamespace`方法`ExampleElement`網域類別。  
+## <a name="adding-custom-code-for-the-tracking-property"></a>Adding Custom Code for the Tracking Property  
+ Add a `CalculateNamespace` method to the `ExampleElement` domain class.  
   
- 定義這個方法提供邏輯的計算 CustomElements 屬性`ExampleModel`。 這個方法會計算數目`ExampleElement`有追蹤該更新屬性的命名空間的網域類別的使用者狀態，並傳回字串，這個計數代表模型中的總項目以百分比。  
+ Defining this method provides the logic for the CustomElements calculated property of `ExampleModel`. This method counts the number of `ExampleElement` domain classes that have a Namespace tracking property that is in the updated by user state, and returns a string that represents this count as a proportion of the total elements in the model.  
   
- 另外，新增儲存體和方法來取得和設定，命名空間的自訂儲存屬性的`ExampleElement`網域類別。  
+ Also, add storage for, and methods to get and set, the Namespace custom storage property of the `ExampleElement` domain class.  
   
 > [!NOTE]
->  DSL 工具產生的程式碼`ExampleModel`呼叫 get 和 set 方法; 不過，DSL 工具不會產生程式碼實作的方法。  
+>  The code that the DSL Tools generate for `ExampleModel` calls the get and set methods; however, the DSL Tools do not generate code that implements the methods.  
   
-#### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>若要加入自訂型別描述項方法  
+#### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>To add the method for the custom type descriptor  
   
-1.  NamespaceTrackingProperty.cs 檔案中加入下列程式碼。  
+1.  Add the following code to the NamespaceTrackingProperty.cs file.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using Microsoft.VisualStudio.Modeling;  
   
@@ -600,17 +601,17 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="adding-custom-code-to-support-serialization"></a>加入自訂程式碼，以支援序列化  
- 加入程式碼來支援 XML 序列化的自訂後的載入行為。  
+## <a name="adding-custom-code-to-support-serialization"></a>Adding Custom Code to Support Serialization  
+ Add code to support the custom post-load behavior for XML serialization.  
   
 > [!NOTE]
->  DSL 工具產生呼叫的程式碼`OnPostLoadModel`和`OnPostLoadModelAndDiagram`方法; 不過，DSL 工具不會產生實作這些方法的程式碼。  
+>  The code that the DSL Tools generate calls the `OnPostLoadModel` and `OnPostLoadModelAndDiagram` methods; however, the DSL Tools do not generate code that implements these methods.  
   
-#### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>加入程式碼以支援自訂後的載入行為  
+#### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>To add code to support the custom post-load behavior  
   
-1.  Serialization.cs 檔案中加入下列程式碼。  
+1.  Add the following code to the Serialization.cs file.  
   
-    ```c#  
+    ```csharp  
     using System;  
     using System.Diagnostics;  
     using Microsoft.VisualStudio.Modeling;  
@@ -730,51 +731,51 @@ ms.lasthandoff: 02/22/2017
     }  
     ```  
   
-## <a name="testing-the-language"></a>測試語言  
- 下一步是建立並執行 DSL 設計工具中的新執行個體[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，以便您可以驗證追蹤的屬性是否正常運作。  
+## <a name="testing-the-language"></a>Testing the Language  
+ The next step is to build and run the DSL designer in a new instance of [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] so that you can verify that the tracking property is working correctly.  
   
-#### <a name="to-exercise-the-language"></a>若要執行的語言  
+#### <a name="to-exercise-the-language"></a>To exercise the language  
   
-1.  在**建置**] 功能表上，按一下 [**重建方案**。  
+1.  On the **Build** menu, click **Rebuild Solution**.  
   
-2.  在**偵錯**] 功能表上，按一下 [**開始偵錯**。  
+2.  On the **Debug** menu, click **Start Debugging**.  
   
-     在實驗組建的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]開啟**偵錯**方案，其中包含的空白測試檔案。  
+     The experimental build of [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] opens the **Debugging** solution, which contains an empty test file.  
   
-3.  在**方案總管] 中**，按兩下以開啟設計工具中，在 Test.trackingPropertyDsl 檔案，然後按一下 [設計介面。  
+3.  In **Solution Explorer**, double-click the Test.trackingPropertyDsl file to open it in the designer, and then click the design surface.  
   
-     請注意，在**屬性**圖表視窗**預設命名空間**屬性是**DefaultNamespace**，而**自訂項目**屬性是**0/0**。  
+     Notice that in the **Properties** window for the diagram, the **Default Namespace** property is **DefaultNamespace**, and the **Custom Elements** property is **0/0**.  
   
-4.  拖放到**ExampleElement**項目從**工具箱**到圖表介面。  
+4.  Drag an **ExampleElement** element from the **Toolbox** to the diagram surface.  
   
-5.  在**屬性** 視窗中的項目，選取**項目命名空間**屬性，並將值從**DefaultNamespace**至**OtherNamespace**。  
+5.  In the **Properties** window for the element, select the **Element Namespace** property, and change the value from **DefaultNamespace** to **OtherNamespace**.  
   
-     請注意，值**項目命名空間**現在以粗體顯示。  
+     Notice that the value of **Element Namespace** is now shown in bold.  
   
-6.  在**屬性**] 視窗中，以滑鼠右鍵按一下**項目命名空間**，然後按一下 [**重設**。  
+6.  In the **Properties** window, right-click **Element Namespace**, and then click **Reset**.  
   
-     屬性的值變更為**DefaultNamespace**，而一般字型顯示值。  
+     The value of the property is changed to **DefaultNamespace**, and the value is shown in a regular font.  
   
-     以滑鼠右鍵按一下**項目命名空間**一次。 **重設**命令會立即停用，因為屬性目前追蹤狀態。  
+     Right-click **Element Namespace** again. The **Reset** command is now disabled because the property is currently in its tracking state.  
   
-7.  將另一個**ExampleElement**從**工具箱**圖表介面，並變更其**項目命名空間**至**OtherNamespace**。  
+7.  Drag another **ExampleElement** from the **Toolbox** to the diagram surface, and change its **Element Namespace** to **OtherNamespace**.  
   
-8.  按一下設計介面。  
+8.  Click the design surface.  
   
-     在**屬性** 視窗中的值，圖表**自訂項目**現在**1/2**。  
+     In the **Properties** window for the diagram, the value of **Custom Elements** is now **1/2**.  
   
-9. 變更**預設命名空間**從圖表的**DefaultNamespace**至**NewNamespace**。  
+9. Change **Default Namespace** for the diagram from **DefaultNamespace** to **NewNamespace**.  
   
-     **命名空間**的第一個項目追蹤**預設命名空間**屬性，而**命名空間**第二個項目會保留其使用者已更新值的**OtherNamespace**。  
+     The **Namespace** of the first element tracks the **Default Namespace** property, whereas the **Namespace** of the second element retains its user-updated value of **OtherNamespace**.  
   
-10. 儲存方案，然後關閉 實驗組建中。  
+10. Save the solution, and then close the experimental build.  
   
-## <a name="next-steps"></a>後續步驟  
- 如果您打算使用多個追蹤屬性，或在多個 DSL 中實作追蹤屬性，您可以建立文字範本產生一般的程式碼來支援每個追蹤屬性。 如需文字範本的詳細資訊，請參閱[程式碼產生和 T4 文字範本](../modeling/code-generation-and-t4-text-templates.md)。  
+## <a name="next-steps"></a>Next Steps  
+ If you plan to use more than one tracking property, or implement tracking properties in more than one DSL, you can create a text template to generate the common code for supporting each tracking property. For more information about text templates, see [Code Generation and T4 Text Templates](../modeling/code-generation-and-t4-text-templates.md).  
   
-## <a name="see-also"></a>另請參閱  
- <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor></xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
- <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor></xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
- [如何定義定義域專屬語言](../modeling/how-to-define-a-domain-specific-language.md)   
- [如何：建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)   
+## <a name="see-also"></a>See Also  
+ <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>   
+ <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>   
+ [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)   
+ [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md)   
 

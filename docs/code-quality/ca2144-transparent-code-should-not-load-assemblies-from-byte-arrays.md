@@ -1,51 +1,68 @@
 ---
-title: "CA2144：透明程式碼不可以從位元組陣列載入組件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2144"
+title: 'CA2144: Transparent code should not load assemblies from byte arrays | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2144
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
----
-# CA2144：透明程式碼不可以從位元組陣列載入組件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 62c5737e64be26614b5aa45a0ad5f4c17416fcaf
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: Transparent code should not load assemblies from byte arrays
 |||  
 |-|-|  
-|型別名稱|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|  
+|TypeName|TransparentMethodsShouldNotLoadAssembliesFromByteArrays|  
 |CheckId|CA2144|  
-|分類|Microsoft.Security|  
-|中斷變更|中斷|  
+|Category|Microsoft.Security|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 透明方法會使用下列其中一種方法從位元組陣列載入組件：  
-  
--   <xref:System.Reflection.Assembly.Load%2A>  
+## <a name="cause"></a>Cause  
+ A transparent method loads an assembly from a byte array using one of the following methods:  
   
 -   <xref:System.Reflection.Assembly.Load%2A>  
   
 -   <xref:System.Reflection.Assembly.Load%2A>  
   
-## 規則描述  
- 透明程式碼的安全性檢閱不如關鍵性程式碼的安全性檢閱徹底，因為透明程式碼無法執行安全性敏感動作。  透明程式碼中可能不會注意到從位元組陣列載入的組件，而該位元組陣列可能包含需要稽核之重大或更重要的安全關鍵性程式碼。  因此，透明的程式碼不應從位元組陣列載入組件。  
+-   <xref:System.Reflection.Assembly.Load%2A>  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請在載入組件的方法標記 <xref:System.Security.SecurityCriticalAttribute> 或 <xref:System.Security.SecuritySafeCriticalAttribute> 屬性。  
+## <a name="rule-description"></a>Rule Description  
+ The security review for transparent code is not as thorough as the security review for critical code, because transparent code cannot perform security sensitive actions. Assemblies loaded from a byte array might not be noticed in transparent code, and that byte array might contain critical, or more importantly safe-critical code, that does need to be audited. Therefore, transparent code should not load assemblies from a byte array.  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, mark the method that is loading the assembly with the <xref:System.Security.SecurityCriticalAttribute> or the <xref:System.Security.SecuritySafeCriticalAttribute> attribute.  
   
-## 範例  
- 下列程式碼會引發規則，因為透明的方法會從位元組陣列載入組件。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ Do not suppress a warning from this rule.  
   
- [!code-cs[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]
+## <a name="example"></a>Example  
+ The rule fires on the following code because a transparent method loads an assembly from a byte array.  
+  
+ [!code-csharp[FxCop.Security.CA2144.TransparentMethodsShouldNotLoadAssembliesFromByteArrays#1](../code-quality/codesnippet/CSharp/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays_1.cs)]

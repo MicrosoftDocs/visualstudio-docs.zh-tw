@@ -1,75 +1,92 @@
 ---
-title: "DISASSEMBLY_STREAM_SCOPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DISASSEMBLY_STREAM_SCOPE"
-helpviewer_keywords: 
-  - "DISASSEMBLY_STREAM_SCOPE 列舉型別"
+title: DISASSEMBLY_STREAM_SCOPE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DISASSEMBLY_STREAM_SCOPE
+helpviewer_keywords:
+- DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# DISASSEMBLY_STREAM_SCOPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5383c2dfce7e6d50df6926cdcdfc0caf22754d65
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定反組譯碼資料流的範圍。  
+---
+# <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
+Specifies the scope of the disassembly stream.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+```cpp  
+enum enum_DISASSEMBLY_STREAM_SCOPE {   
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 typedef DWORD DISASSEMBLY_STREAM_SCOPE;  
 ```  
   
-```c#  
-public enum enum_DISASSEMBLY_STREAM_SCOPE {   
-   DSS_HUGE     = 0x10000000,  
-   DSS_FUNCTION = 0x0001,  
-   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
-   DSS_ALL      = (DSS_HUGE) | 0x0003  
+```csharp  
+public enum enum_DISASSEMBLY_STREAM_SCOPE {   
+   DSS_HUGE     = 0x10000000,  
+   DSS_FUNCTION = 0x0001,  
+   DSS_MODULE   = (DSS_HUGE) | 0x0002,  
+   DSS_ALL      = (DSS_HUGE) | 0x0003  
 };  
 ```  
   
-## Members  
- DSS\_HUGE  
- 指定反組譯程式碼的內容就會產生比用戶端通常會想要擷取的單一呼叫中的多個輸出。  
+## <a name="members"></a>Members  
+ DSS_HUGE  
+ Specifies that disassembling the code context would generate more output than a client would typically want to retrieve in a single call.  
   
- DSS\_FUNCTION  
- 指定函式所包含的程式碼內容應該反組譯。  指定 \[反組譯碼資料流表示函式時所傳回的[GetScope](../Topic/IDebugDisassemblyStream2::GetScope.md)方法。  
+ DSS_FUNCTION  
+ Specifies that the function contained by the code context should be disassembled. Specifies that the disassembly stream represents a function, when returned by the [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) method.  
   
- DSS\_MODULE  
- 當傳回的`IDebugDisassemblyStream2::GetScope`方法，會指定反組譯碼資料流表示模組。  
+ DSS_MODULE  
+ When returned by the `IDebugDisassemblyStream2::GetScope` method, specifies that the disassembly stream represents a module.  
   
- DSS\_ALL  
- 指定整個位址空間的反組譯碼。  
+ DSS_ALL  
+ Specifies disassembly for the entire address space.  
   
-## 備註  
- 當做引數傳遞[GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)方法，並傳回[GetScope](../Topic/IDebugDisassemblyStream2::GetScope.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) method and returned by the [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) method.  
   
- 這些值可以使用位元和結合`OR`。  
+ These values may be combined with a bitwise `OR`.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md)   
- [GetScope](../Topic/IDebugDisassemblyStream2::GetScope.md)
+ [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md)

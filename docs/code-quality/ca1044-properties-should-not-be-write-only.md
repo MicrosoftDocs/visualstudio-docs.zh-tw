@@ -1,50 +1,66 @@
 ---
-title: "CA1044：屬性不應為唯寫 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PropertiesShouldNotBeWriteOnly"
-  - "CA1044"
-helpviewer_keywords: 
-  - "CA1044"
-  - "PropertiesShouldNotBeWriteOnly"
+title: 'CA1044: Properties should not be write only | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- PropertiesShouldNotBeWriteOnly
+- CA1044
+helpviewer_keywords:
+- CA1044
+- PropertiesShouldNotBeWriteOnly
 ms.assetid: 8386bf3a-b161-4841-bf8b-92591595aea9
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
----
-# CA1044：屬性不應為唯寫
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 129c2ded7f18a21c97f95869fa385f897e12125a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Properties should not be write only
 |||  
 |-|-|  
-|型別名稱|PropertiesShouldNotBeWriteOnly|  
+|TypeName|PropertiesShouldNotBeWriteOnly|  
 |CheckId|CA1044|  
-|分類|Microsoft.Design|  
-|中斷變更|中斷|  
+|Category|Microsoft.Design|  
+|Breaking Change|Breaking|  
   
-## 原因  
- 公用或保護的屬性具有 set 存取子 \(Accessor\)，但沒有 get 存取子。  
+## <a name="cause"></a>Cause  
+ The public or protected property has a set accessor but does not have a get accessor.  
   
-## 規則描述  
- Get 存取子會提供屬性的讀取權限，而 set 存取子則提供寫入權限。  雖然它是可接受並經常需要具有唯讀屬性，設計方針會禁止使用唯寫屬性的屬性。  這是因為讓使用者設定一個值，然後防止使用者檢視該值並不會提供任何安全性。  同時，如果沒有讀取權限，則無法檢視共用物件的狀態，進而限制這些物件的使用性。  
+## <a name="rule-description"></a>Rule Description  
+ Get accessors provide read access to a property and set accessors provide write access. Although it is acceptable and often necessary to have a read-only property, the design guidelines prohibit the use of write-only properties. This is because letting a user set a value and then preventing the user from viewing the value does not provide any security. Also, without read access, the state of shared objects cannot be viewed, which limits their usefulness.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將 get 存取子加入至屬性。  此外，如果需要唯寫屬性行為，請考慮將這個屬性轉換為方法。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, add a get accessor to the property. Alternatively, if the behavior of a write-only property is necessary, consider converting this property to a method.  
   
-## 隱藏警告的時機  
- 強烈建議您不要隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is strongly recommended that you do not suppress a warning from this rule.  
   
-## 範例  
- 在下列範例中，`BadClassWithWriteOnlyProperty` 是具有唯寫屬性的型別。  `GoodClassWithReadWriteProperty` 包含修正過的程式碼。  
+## <a name="example"></a>Example  
+ In the following example, `BadClassWithWriteOnlyProperty` is a type with a write-only property. `GoodClassWithReadWriteProperty` contains the corrected code.  
   
- [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
- [!code-cs[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]
+ [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)] [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

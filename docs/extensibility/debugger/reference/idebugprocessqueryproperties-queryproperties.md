@@ -1,63 +1,80 @@
 ---
-title: "IDebugProcessQueryProperties::QueryProperties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugProcessQueryProperties::QueryProperties"
+title: IDebugProcessQueryProperties::QueryProperties | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugProcessQueryProperties::QueryProperties
 ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# IDebugProcessQueryProperties::QueryProperties
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 047341e2254ff9ffd3e01d1086e5c51a1311a871
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定的屬性值，偵錯的處理程序的這個方法查詢。  
+---
+# <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
+This method queries for a specified property values of the debugging process.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT QueryProperties(  
-   ULONG                  celt,  
-   PROCESS_PROPERTY_TYPE *rgdwPropTypes,  
-   VARIANT               *rgtPropValues);  
+   ULONG                  celt,  
+   PROCESS_PROPERTY_TYPE *rgdwPropTypes,  
+   VARIANT               *rgtPropValues);  
 ```  
   
-```c#  
+```csharp  
 int QueryProperties(  
-   uint                       celt,  
-   enum_PROCESS_PROPERTY_TYPE rgdwPropTypes,  
-   out object[ ]              rgtPropValues);  
+   uint                       celt,  
+   enum_PROCESS_PROPERTY_TYPE rgdwPropTypes,  
+   out object[ ]              rgtPropValues);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `celt`  
- \[in\]包含的屬性定義與屬性值的陣列的大小。  
+ [in] Size of the arrays containing the property definitions and property values.  
   
  `dwPropType`  
- \[in\]陣列，包含定義查詢的屬性。  可能的值為：  
+ [in] An array that contains definitions of the queried properties. The possible values are:  
   
--   PROCESS\_PROPERTY\_COMMAND\_LINE \= 1  
+-   PROCESS_PROPERTY_COMMAND_LINE = 1  
   
--   PROCESS\_PROPERTY\_CURRENT\_DIRECTORY \= 2  
+-   PROCESS_PROPERTY_CURRENT_DIRECTORY = 2  
   
--   PROCESS\_PROPERTY\_ENVIRONMENT\_VARIABLES \= 3  
+-   PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3  
   
  `pvarPropValue`  
- \[\] out陣列，其中包含的屬性值。  
+ [out] An array containing the property values.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 很少使用這個方法。  
+## <a name="remarks"></a>Remarks  
+ This method is seldom used.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)

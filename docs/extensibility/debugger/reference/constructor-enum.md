@@ -1,5 +1,5 @@
 ---
-title: "CONSTRUCTOR_ENUM |Microsoft 文件"
+title: CONSTRUCTOR_ENUM | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 08da7be8e0985b9ee8098c99b219553ab7d517cd
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 22447cd6eadf1e4c094815112218bbd64877e9a3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-選取不同類型的建構函式。  
+Selects different types of constructors.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 typedef enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  
@@ -49,7 +50,7 @@ typedef enum ConstructorMatchOptions {
 } CONSTRUCTOR_ENUM;  
 ```  
   
-```c#  
+```csharp  
 public enum ConstructorMatchOptions {   
    crAll       = 0,  
    crNonStatic = 1,  
@@ -59,24 +60,24 @@ public enum ConstructorMatchOptions {
   
 ## <a name="members"></a>Members  
  crAll  
- 選取所有建構函式。  
+ Selects all constructors.  
   
  crNonStatic  
- 選取非靜態建構函式。  
+ Selects non-static constructors.  
   
  crStatic  
- 選取靜態建構函式。  
+ Selects static constructors.  
   
-## <a name="remarks"></a>備註  
- 若要以引數傳遞[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) method.  
   
-## <a name="requirements"></a>需求  
- 標頭︰ sh.h  
+## <a name="requirements"></a>Requirements  
+ Header: sh.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>另請參閱  
- [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

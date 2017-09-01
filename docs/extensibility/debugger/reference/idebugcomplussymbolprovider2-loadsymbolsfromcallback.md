@@ -1,5 +1,5 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft 文件"
+title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,18 +29,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b0af89a6cef23a9fc8753cd82e3d022aec58083b
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 5c6e016d3c3bbd11bf57974dc0afe0c8df8f5d21
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-載入偵錯符號使用指定的回呼方法。  
+Loads debug symbols using the specified callback method.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsFromCallback(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -52,7 +53,7 @@ HRESULT LoadSymbolsFromCallback(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsFromCallback(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -64,35 +65,35 @@ int LoadSymbolsFromCallback(
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `ulAppDomainID`  
- [in]應用程式定義域的識別項。  
+ [in] Identifier of the application domain.  
   
  `guidModule`  
- [in]模組的唯一識別碼。  
+ [in] Unique identifier of the module.  
   
  `pUnkMetadataImport`  
- [in]包含符號中繼資料的物件。  
+ [in] Object that contains the symbol metadata.  
   
  `pUnkCorDebugModule`  
- [in]實作物件[ICorDebugModule 介面](ICorDebugModule%20Interface.xml)。  
+ [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
   
  `bstrModuleName`  
- [in]模組名稱。  
+ [in] Name of the module.  
   
  `bstrSymSearchPath`  
- [in]搜尋符號檔的路徑。  
+ [in] Path to search for the symbol file.  
   
  `pCallback`  
- [in]表示回呼方法的物件。  
+ [in] Object that represents the callback method.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -183,5 +184,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

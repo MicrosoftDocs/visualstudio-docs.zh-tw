@@ -1,66 +1,68 @@
 ---
-title: "如何：以程式設計方式快取 Office 文件的資料來源"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "資料 [Visual Studio 中的 Office 程式開發], 快取"
-  - "資料快取 [Visual Studio 中的 Office 程式開發], 以程式設計的方式"
-  - "資料集 [Visual Studio 中的 Office 程式開發], 快取"
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發], 資料"
-  - "StartCaching 方法"
+title: 'How to: Programmatically Cache a Data Source in an Office Document | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], data
+- datasets [Office development in Visual Studio], caching
+- StartCaching method
+- data caching [Office development in Visual Studio], programmatically
+- data [Office development in Visual Studio], caching
 ms.assetid: 70b3fc06-7534-407e-898b-36f84e9a7516
 caps.latest.revision: 43
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 43
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 9c027f61e5fb0d34aa26321ee92f9b9934049611
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式快取 Office 文件的資料來源
-  您可以用程式設計方式將資料物件加入至文件的資料快取中，方法是呼叫主項目 \(例如 <xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Tools.Excel.Workbook> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>\) 的 `StartCaching` 方法。  透過呼叫主項目的 `StopCaching` 方法，移除資料快取中的資料物件。  
+# <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>How to: Programmatically Cache a Data Source in an Office Document
+  You can programmatically add a data object to the data cache in a document by calling the `StartCaching` method of a host item, such as a <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, or <xref:Microsoft.Office.Tools.Excel.Worksheet>. Remove a data object from the data cache by calling the `StopCaching` method of a host item.  
   
- 雖然 `StartCaching` 方法和 `StopCaching` 方法都是私用的 \(Private\)，不過它們會出現在 IntelliSense 中。  
+ The `StartCaching` method and the `StopCaching` method are both private, but they appear in IntelliSense.  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 當您使用 `StartCaching` 方法，將資料物件加入至資料快取時，不需要使用 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 屬性 \(Attribute\) 宣告資料物件。  不過，資料物件必須符合某些需求，才能加入至資料快取。  如需詳細資訊，請參閱[快取資料](../vsto/caching-data.md)。  
+ When you use the `StartCaching` method to add a data object to the data cache, the data object does not need to be declared with the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute. However, the data object must meet certain requirements to be added to the data cache. For more information, see [Caching Data](../vsto/caching-data.md).  
   
-### 若要以程式設計方式快取資料物件  
+### <a name="to-programmatically-cache-a-data-object"></a>To programmatically cache a data object  
   
-1.  請在類別層級而不是在方法內宣告資料物件。  這個範例會假設您要宣告名為 `dataSet1` 的 <xref:System.Data.DataSet>，而您想以程式設計方式快取它。  
+1.  Declare the data object at the class level, not inside a method. This example assumes that you are declaring a <xref:System.Data.DataSet> named `dataSet1` that you want to cache programmatically.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#12](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#12)]
-     [!code-vb[Trin_VstcoreDataExcel#12](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#12)]  
+     [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]  [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]  
   
-2.  執行個體化資料物件，然後呼叫文件或工作表執行個體的 `StartCaching` 方法，並傳入資料物件的名稱。  
+2.  Instantiate the data object, and then call the `StartCaching` method of the document or worksheet instance and pass in the name of the data object.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#13](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#13)]
-     [!code-vb[Trin_VstcoreDataExcel#13](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#13)]  
+     [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]  [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]  
   
-### 若要停止快取資料物件  
+### <a name="to-stop-caching-a-data-object"></a>To stop caching a data object  
   
-1.  呼叫文件或工作表執行個體的 `StopCaching` 方法，並傳入資料物件的名稱。  這個範例會假設您有名為 `dataSet1` 的 <xref:System.Data.DataSet>，並想要停止快取它。  
+1.  Call the `StopCaching` method of the document or worksheet instance and pass in the name of the data object. This example assumes that you have a <xref:System.Data.DataSet> named `dataSet1` that you want to stop caching.  
   
-     [!code-csharp[Trin_VstcoreDataExcel#14](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/CS/Sheet1.cs#14)]
-     [!code-vb[Trin_VstcoreDataExcel#14](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreDataExcel/VB/Sheet1.vb#14)]  
+     [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]  [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]  
   
     > [!NOTE]  
-    >  請勿從文件或工作表之 `Shutdown` 事件的事件處理常式呼叫 `StopCaching`。  引發 `Shutdown` 事件時，修改資料快取就為時已晚。  如需 `Shutdown` 事件的詳細資訊，請參閱[Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+    >  Do not call `StopCaching` from the event handler for the `Shutdown` event of a document or worksheet. By the time the `Shutdown` event is raised, it is too late to modify the data cache. For more information about the `Shutdown` event, see [Events in Office Projects](../vsto/events-in-office-projects.md).  
   
-## 請參閱  
- [快取資料](../vsto/caching-data.md)   
- [如何：快取資料供離線使用或於伺服器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
- [如何：快取受密碼保護文件中的資料](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
- [存取伺服器文件中的資料](../vsto/accessing-data-in-documents-on-the-server.md)   
- [儲存資料](../data-tools/saving-data.md)  
+## <a name="see-also"></a>See Also  
+ [Caching Data](../vsto/caching-data.md)   
+ [How to: Cache Data for Use Offline or on a Server](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)   
+ [How to: Cache Data in a Password-Protected Document](../vsto/how-to-cache-data-in-a-password-protected-document.md)   
+ [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [Saving Data](/visualstudio/data-tools/saving-data)  
   
   

@@ -1,56 +1,73 @@
 ---
-title: "IDebugSourceServerModule::GetSourceServerData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSourceServerModule::GetSourceServerData"
+title: IDebugSourceServerModule::GetSourceServerData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugSourceServerModule::GetSourceServerData
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugSourceServerModule::GetSourceServerData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f441d4d3dd8f242ad66c425079916d35faedf7b3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-擷取陣列的來源伺服器的資訊。  
+---
+# <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
+Retrieves an array of source server information.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSourceServerData(  
-   ULONG* pDataByteCount,   
-   BYTE** ppData  
+   ULONG* pDataByteCount,   
+   BYTE** ppData  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetSourceServerData(  
-   out uint  pDataByteCount,   
-   out int[] ppData  
+   out uint  pDataByteCount,   
+   out int[] ppData  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pDataByteCount`  
- \[\] out在 \[資料陣列的位元組數目。  
+ [out] Number of bytes in the data array.  
   
  `ppData`  
- \[\] out參考的資料陣列。  
+ [out] Reference to the data array.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CModule** 物件，公開 \(expose\) [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)介面。  
+## <a name="example"></a>Example  
+ The following example shows how to implement this method for a **CModule** object that exposes the [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md) interface.  
   
-```cpp#  
+```cpp  
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)  
 {  
     HRESULT hr = S_OK;  
@@ -72,5 +89,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

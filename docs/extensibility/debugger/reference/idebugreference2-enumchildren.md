@@ -1,5 +1,5 @@
 ---
-title: "IDebugReference2::EnumChildren |Microsoft 文件"
+title: IDebugReference2::EnumChildren | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,18 +30,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 797c51f101dccba047553f71ee403551321551d6
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 9b1777fa80596fb0173cfa401e026264e8879ff0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
-取得選取的子系之參考的清單。 保留供未來使用。  
+Get a list of selected children of a reference. Reserved for future use.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT EnumChildren (   
    DEBUGREF_INFO_FLAGS        dwFields,  
    DWORD                      dwRadix,  
@@ -52,7 +53,7 @@ HRESULT EnumChildren (
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumChildren (   
    enum_DEBUGREF_INFO_FLAGS     dwFields,  
    uint                         dwRadix,  
@@ -63,29 +64,29 @@ int EnumChildren (
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- [in]從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列舉，指定哪些欄位中列舉[DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)結構是以進行填寫。  
+ [in] A combination of flags from the [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeration that specifies which fields in the enumerated [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) structures are to be filled in.  
   
  `dwRadix`  
- [in]用於格式化數字的任何資訊基數。  
+ [in] The radix to be used in formatting any numerical information.  
   
  `dwAttribFilter`  
- [in]從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉型別做為篩選器搭配`pszNameFilter`參數來選取要列舉的結構。  
+ [in] A combination of flags from the [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeration that is used as a filter in combination with the `pszNameFilter` parameter to select which structures are to be enumerated.  
   
  `pszNameFilter`  
- [in]字串，指定的篩選，例如 「 MyX 」，搭配`dwAttribFilter`參數來選取要列舉的結構。  
+ [in] A string specifying a filter, such as "MyX", used in combination with the `dwAttribFilter` parameter to select the structures to be enumerated.  
   
  `dwTimeout`  
- [in]最大時間 （毫秒），從這個方法傳回之前等待。 使用`INFINITE`無限期地等待。  
+ [in] Maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
   
  `ppEnum`  
- [out]傳回[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)物件，其中包含所要求的子屬性的清單。  
+ [out] Returns an [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) object that contains a list of the requested child properties.  
   
-## <a name="return-value"></a>傳回值  
- 一律傳回 `E_NOTIMPL`。  
+## <a name="return-value"></a>Return Value  
+ Always returns `E_NOTIMPL`.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
  [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   

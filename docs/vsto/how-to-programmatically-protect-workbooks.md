@@ -1,76 +1,77 @@
 ---
-title: "如何：以程式設計方式保護活頁簿"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "文件保護, 加入至活頁簿"
-  - "文件保護, 從活頁簿移除"
-  - "文件 [Visual Studio 中的 Office 程式開發], 文件保護"
-  - "活頁簿, 密碼"
-  - "活頁簿, 保護"
-  - "活頁簿, 取消保護"
+title: 'How to: Programmatically Protect Workbooks | Microsoft Docs'
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- workbooks, passwords
+- documents [Office development in Visual Studio], document protection
+- workbooks, unprotecting
+- document protection, removing from workbooks
+- document protection, adding to workbooks
+- workbooks, protecting
 ms.assetid: 553c67b9-e2a4-46b6-878c-5b4b4efa4589
 caps.latest.revision: 43
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 42
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 26ff26cffc717891c405b580602bae016fdd6399
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 如何：以程式設計方式保護活頁簿
-  您可以保護 Microsoft Office Excel 活頁簿，讓使用者無法加入或刪除工作表，也可以用程式設計的方式取消保護活頁簿。  您可以選擇性地指定密碼，指出是否要保護這個結構 \(讓使用者無法四處移動工作表\) 以及是否要保護活頁簿的視窗。  
+# <a name="how-to-programmatically-protect-workbooks"></a>How to: Programmatically Protect Workbooks
+  You can protect a Microsoft Office Excel workbook so that users cannot add or delete worksheets, and also unprotect the workbook programmatically. You can optionally specify a password, indicate whether you want the structure protected (so users cannot move sheets around), and indicate whether you want the workbook's windows protected.  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- 保護活頁簿並不會阻礙使用者編輯儲存格。  若要保護資料，您必須保護工作表。  如需詳細資訊，請參閱[如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)。  
+ Protecting a workbook does not stop users from editing cells. To protect the data, you must protect the worksheets. For more information, see [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md).  
   
- 下列的程式碼範例會使用變數來包含從使用者處取得的密碼。  
+ The following code examples use a variable to contain a password that is obtained from the user.  
   
-## 保護屬於文件層級自訂一部分的活頁簿  
+## <a name="protecting-a-workbook-that-is-part-of-a-document-level-customization"></a>Protecting a Workbook That Is Part of a Document-Level Customization  
   
-#### 若要保護活頁簿  
+#### <a name="to-protect-a-workbook"></a>To protect a workbook  
   
-1.  呼叫活頁簿的 <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> 方法，並加入密碼。  若要使用下列程式碼範例，請在 `ThisWorkbook` 類別中執行程式碼，而不是在工作表類別中執行。  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> method of the workbook and include a password. To use the following code example, run it in the `ThisWorkbook` class, not in a sheet class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#10](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#10)]
-     [!code-vb[Trin_VstcoreExcelAutomation#10](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#10)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]  [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]  
   
-#### 若要取消保護活頁簿  
+#### <a name="to-unprotect-a-workbook"></a>To unprotect a workbook  
   
-1.  呼叫 <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> 方法，如果需要密碼則傳遞密碼：  若要使用下列程式碼範例，請在 `ThisWorkbook` 類別中執行程式碼，而不是在工作表類別中執行。  
+1.  Call the <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> method, passing a password if it is required. To use the following code example, run it in the `ThisWorkbook` class, not in a sheet class.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#11](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/CS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreExcelAutomation#11](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomation/VB/ThisWorkbook.vb#11)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]  [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]  
   
-## 使用應用程式層級增益集保護活頁簿  
+## <a name="protecting-a-workbook-by-using-an-application-level-add-in"></a>Protecting a Workbook by Using an Application-Level Add-In  
   
-#### 若要保護活頁簿  
+#### <a name="to-protect-a-workbook"></a>To protect a workbook  
   
-1.  呼叫活頁簿的 <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> 方法，並加入密碼。  這個程式碼範例會使用現用活頁簿。  若要使用這個範例，請從專案的 `ThisAddIn` 類別中執行程式碼。  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> method of the workbook and include a password. This code example uses the active workbook. To use this example, run the code from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#6)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]  
   
-#### 若要取消保護活頁簿  
+#### <a name="to-unprotect-a-workbook"></a>To unprotect a workbook  
   
-1.  呼叫現用活頁簿的 <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> 方法，如果需要密碼則傳遞密碼。  若要使用這個範例，請從專案的 `ThisAddIn` 類別中執行程式碼。  
+1.  Call the <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> method of the active workbook, passing a password if it is required. To use this example, run the code from the `ThisAddIn` class in your project.  
   
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../snippets/csharp/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/CS/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_VstcoreExcelAutomationAddIn/VB/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]  [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]  
   
-## 請參閱  
- [使用活頁簿](../vsto/working-with-workbooks.md)   
- [如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
- [如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
- [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>See Also  
+ [Working with Workbooks](../vsto/working-with-workbooks.md)   
+ [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
   
   

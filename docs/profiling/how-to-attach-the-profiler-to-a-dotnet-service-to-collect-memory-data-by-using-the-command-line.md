@@ -1,133 +1,149 @@
 ---
-title: "如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集記憶體資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: 'How to: Attach the Profiler to a .NET Service to Collect Memory Data by Using the Command Line | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: aeac39af-ad99-479f-aa36-4104356ca512
 caps.latest.revision: 28
-caps.handback.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：使用命令列將程式碼剖析工具附加至 .NET 服務以收集記憶體資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
+ms.openlocfilehash: 1553b1c2d52aad2694ddd41861a0d4358dab3699
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
 
-本主題說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具將分析工具附加至 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務，以及收集記憶體資料。  您可以收集記憶體配置數目和大小的相關資料，也可以收集記憶體物件存留期的相關資料。  
+---
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>How to: Attach the Profiler to a .NET Service to Collect Memory Data by Using the Command Line
+This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to attach the profiler to a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service and collect memory data. You can collect data about the number and size of memory allocations, and you can also collect data about the lifetime of memory objects.  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中的增強安全性功能，需要在 Visual Studio 分析工具收集這些平台資料的方式上進行重大變更。  Windows 市集應用程式也需要新的收集技術。  請參閱 [剖析 Windows 8 和 Windows Server 2012 應用程式](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Enhanced security features in Windows 8 and Windows Server 2012 required significant changes in the way the Visual Studio profiler collects data on these platforms. Windows Store apps also require new collection techniques. See [Performance Tools on Windows 8 and Windows Server 2012 applications](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。  若要使用程式碼剖析工具的命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
- 若要收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務的記憶體資料，可以使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具，在裝載服務的電腦上初始化適當的環境變數。  電腦必須重新啟動，才能設定它進行程式碼剖析。  
+ To collect memory data from a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] service, you use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to initialize the appropriate environment variables on the computer that hosts the service. The computer must be restarted to configure it for profiling.  
   
- 接著，使用 [VSPerfCmd](../profiling/vsperfcmd.md) 工具將程式碼剖析工具附加至服務處理序。  當程式碼剖析工具附加至服務時，您可以暫停和繼續資料收集。  
+ You then use the [VSPerfCmd](../profiling/vsperfcmd.md) tool to attach the profiler to the service process. While the profiler is attached to the service, you can pause and resume data collection.  
   
- 若要結束程式碼剖析工作階段，程式碼剖析工具必須從服務中斷連結，而且程式碼剖析工具必須明確關閉。  在許多情況下，我們建議在工作階段結尾清除程式碼剖析環境變數。  
+ To end a profiling session, the profiler must be detached from the service and the profiler must be explicitly shut down. In most cases, we recommend clearing the profiling environment variables at the end of a session.  
   
-## 附加程式碼剖析工具  
+## <a name="attaching-the-profiler"></a>Attaching the Profiler  
   
-#### 若要將程式碼剖析工具附加至 .NET Framework 服務  
+#### <a name="to-attach-the-profiler-to-a-net-framework-service"></a>To attach the Profiler to a .NET Framework service  
   
-1.  如有必要，請安裝服務。  
+1.  If necessary, install the service.  
   
-2.  開啟命令提示字元視窗。  
+2.  Open a command prompt window.  
   
-3.  初始化程式碼剖析環境變數。  型別：  
+3.  Initialize the profiling environment variables. Type:  
   
-     **VSPerfClrEnv** {**\/globalsamplegc \/globalsamplegclife**}\[**\/samplelineoff**\]  
+     **VSPerfClrEnv** {**/globalsamplegc /globalsamplegclife**}[**/samplelineoff**]  
   
-    -   選項 **\/globalsamplegclife** 和 **\/globalsamplegclife** 會指定要收集之記憶體資料的類型。  只指定下列其中一個選項。  
+    -   The options **/globalsamplegclife** and **/globalsamplegclife** specify the type of memory data to collect. Specify one and only one of the following options.  
   
-     **\/globalsamplegc**  
-     啟用記憶體配置資料的收集功能。  
+     **/globalsamplegc**  
+     Enables the collection of memory allocation data.  
   
-     **\/globalsamplegclife**  
-     啟用記憶體配置資料和物件存留期資料的收集功能。  
+     **/globalsamplegclife**  
+     Enables the collection of both memory allocation data and object lifetime data.  
   
-    -   **\/samplelineoff** 選項會停用原始程式碼行號資料的收集功能。  
+    -   The **/samplelineoff** option disables the collection of source code line number data.  
   
-4.  重新啟動電腦以進行新的環境設定。  
+4.  Restart the computer to set the new environment configuration.  
   
-5.  如有必要，請啟動服務。  
+5.  If necessary, start the service.  
   
-6.  開啟命令提示字元視窗。  如有需要，請將程式碼剖析工具路徑加入至 PATH 環境變數。  
+6.  Open a command prompt window. If necessary, add the profiler path to the PATH environment variable.  
   
-7.  啟動程式碼剖析工具。  型別：  
+7.  Start the profiler. Type:  
   
-     **VSPerfCmd**  [\/start](../profiling/start.md) **:sample**  [\/output](../profiling/output.md) **:** `OutputFile` \[`Options`\]  
+     **VSPerfCmd**  [/start](../profiling/start.md) **:sample**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
   
-    -   **\/start:sample** 選項會初始化此分析工具。  
+    -   The **/start:sample** option initializes the profiler.  
   
-    -   **\/output:** `OutputFile` 選項必須搭配 **\/start** 使用。  `OutputFile` 指定程式碼剖析資料 \(.vsp\) 檔案的名稱和位置。  
+    -   The **/output:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
   
-     您可以使用下列一個或多個選項搭配 **\/start:sample** 選項。  
+     You can use one or more of the following options with the **/start:sample** option.  
   
     > [!NOTE]
-    >  服務通常需要 **\/user** 和 **\/crosssession** 選項。  
+    >  The **/user** and **/crosssession** options are usually required for services.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|指定擁有處理序之帳戶的網域和使用者名稱。  如果處理序是以非登入使用者的身分執行，就必須有這個選項。  處理序擁有人列於 \[Windows 工作管理員\] 的 \[處理程序\] 索引標籤上的 \[使用者名稱\] 資料行。|  
-    |[\/crosssession](../profiling/crosssession.md)|對其他登入工作階段中的處理序啟用程式碼剖析。  如果 ASP.NET 應用程式在不同的工作階段中執行，就必須有這個選項。  工作階段 ID 列於 \[Windows 工作管理員\] 之 \[處理程序\] 索引標籤上的 \[工作階段識別碼\] 資料行。  **\/CS** 可以當做 **\/crosssession** 的縮寫來指定。|  
-    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|指定用來執行服務之登入帳戶的選擇性網域和使用者名稱。  登入帳戶會在 \[Windows 服務控制管理員\] 中服務的 \[登入身分\] 資料行中列出。|  
-    |[\/crosssession&#124;cs](../profiling/crosssession.md)|對其他登入工作階段中的處理序啟用程式碼剖析。|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|僅能與 **\/wincounter** 搭配使用。  指定 Windows 效能計數器收集事件之間的毫秒數。  預設為 500 毫秒。|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 \(ETW\) 事件。  ETW 事件是在不同的 \(.etl\) 檔案中收集的。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the domain and user name of the account that owns the process. This option is required if the process is running as a user other than the logged on user. The process owner is listed in the User Name column on the Processes tab of Windows Task Manager.|  
+    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other logon sessions. This option is required if the ASP.NET application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
+    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the optional domain and user name of the logon account under which the service runs. The logon account is listed in the Log On As column of the service in the Windows Service Control Manager.|  
+    |[/crosssession&#124;cs](../profiling/crosssession.md)|Enables profiling of processes in other logon sessions.|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
   
-8.  將程式碼剖析工具附加到服務。  型別：  
+8.  Attach the profiler to the service. Type:  
   
-     **VSPerfCmd**  [\/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} \[[\/targetclr](../profiling/targetclr.md)**:**`Version`\]  
+     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
   
-    -   指定服務的處理序 ID 或處理序名稱。  您可以在 \[Windows 工作管理員\] 中檢視所有執行中處理序的處理序 ID 和名稱。  
+    -   Specify either the process ID or the process name of the service. You can view the process IDs and names of all running processes in Windows Task Manager.  
   
-    -   如果有多個 Common Language Runtime \(CLR\) 版本載入到某一種應用程式中，則 **targetclr:**`Version` 會指定要進行程式碼剖析的 Runtime 版本。  選擇項。  
+    -   **targetclr:** `Version` specifies the version of the common language runtime (CLR) to profile when more than one version of the runtime is loaded in an application. Optional.  
   
-## 控制資料收集  
- 當服務正在執行時，您可以使用 **VSPerfCmd.exe** 選項停止及啟動將資料寫入程式碼剖析工具資料檔案。  控制資料收集可讓您收集特定程式執行部分的資料，例如啟動或關閉應用程式。  
+## <a name="controlling-data-collection"></a>Controlling Data Collection  
+ While the service is running, you can use **VSPerfCmd.exe** options to stop and start the writing of data to the profiler data file. Controlling data collection enables you to collect data for a specific part of the program execution, such as starting or shutting down the application.  
   
-#### 若要啟動和停止資料收集  
+#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
   
--   下列 **VSPerfCmd** 選項配對會啟動和停止資料收集。  在不同的命令列上指定每個選項。  您可以多次開啟或關閉資料收集。  
+-   The following pairs of **VSPerfCmd** options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|啟動 \(**\/globalon**\) 或停止 \(**\/globaloff**\) 所有處理序的資料收集。|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [\/processoff](../profiling/processon-and-processoff.md) **:** `PID`|啟動 \(**\/processon**\) 或停止 \(**\/processoff**\) 對處理序 ID \(`PID`\) 所指定的處理序進行資料收集。|  
-    |**\/attach:**{`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[:{`PID`&#124;`ProcName`}\]|**\/attach** 會開始針對處理序 ID 或處理序名稱指定的處理序來收集資料。  **\/detach** 會停止對指定的處理序收集資料，如果沒有指定特定的處理序，則停止所有處理序的資料收集。|  
+    |Option|Description|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
+    |**/attach:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** starts to collect data for the process specified by the process ID or process name. **/detach** stops data collection for the specified process, or for all processes if a specific process is not specified.|  
   
-## 結束程式碼剖析工作階段  
- 若要結束程式碼剖析工作階段，程式碼剖析工具不能正在收集資料。  您可以停止服務或呼叫 **VSPerfCmd \/detach** 選項，藉此停止從使用取樣方法進行程式碼剖析的應用程式中收集資料。  然後呼叫 **VSPerfCmd** [\/shutdown](../profiling/shutdown.md) 選項，關閉程式碼剖析工具並關閉程式碼剖析資料檔案。  **VSPerfClrEnv \/globaloff** 命令會清除程式碼剖析環境變數，但是系統組態在電腦重新啟動後才會重設。  
+## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
+ To end a profiling session, the profiler must not be collecting data. You can stop the collection of data from an application profiled with the sampling method by stopping the service or by calling the **VSPerfCmd /detach** option. You then call the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file. The **VSPerfClrEnv /globaloff** command clears the profiling environment variables, but the system configuration is not reset until the computer is restarted.  
   
-#### 若要結束程式碼剖析工作階段  
+#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
   
-1.  請執行下列其中一個動作，從目標應用程式中斷連結程式碼剖析工具：  
+1.  Do one of the following to detach the profiler from the target application:  
   
-    -   停止服務。  
+    -   Stop the service.  
   
-         \-或\-  
+         -or-  
   
-    -   輸入 **VSPerfCmd \/detach**  
+    -   Type **VSPerfCmd /detach**  
   
-2.  關閉程式碼剖析工具。  型別：  
+2.  Shut down the profiler. Type:  
   
-     **VSPerfCmd \/shutdown**  
+     **VSPerfCmd /shutdown**  
   
-3.  \(選擇項\) 清除程式碼剖析環境變數。  型別：  
+3.  (Optional) Clear the profiling environment variables. Type:  
   
-     **VSPerfClrEnv \/globaloff**  
+     **VSPerfClrEnv /globaloff**  
   
-4.  重新啟動電腦。  
+4.  Restart the computer.  
   
-## 請參閱  
- [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)   
- [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)
+## <a name="see-also"></a>See Also  
+ [Profiling Services](../profiling/command-line-profiling-of-services.md)   
+ [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)

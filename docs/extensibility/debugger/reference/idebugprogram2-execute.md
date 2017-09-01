@@ -1,53 +1,70 @@
 ---
-title: "IDebugProgram2::Execute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Execute"
-helpviewer_keywords: 
-  - "IDebugProgram2::Execute"
+title: IDebugProgram2::Execute | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProgram2::Execute
+helpviewer_keywords:
+- IDebugProgram2::Execute
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugProgram2::Execute
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: e9f7b21134d6c71d18b4ebd567136aa8af5fd9f8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-會繼續執行此程式從停止的狀態。  清除任何先前的執行狀態 \(例如，一個步驟中\) 時，程式即開始執行一次。  
+---
+# <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
+Continues running this program from a stopped state. Any previous execution state (such as a step) is cleared, and the program starts executing again.  
   
 > [!NOTE]
->  這個方法已被取代。  請改用 [執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md) 方法。  
+>  This method is deprecated. Use the [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) method instead.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT Execute(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int Execute();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 當使用者開始執行，從停止的狀態，在某些其他程式的執行緒中時，這個程式在呼叫這個方法。  當使用者選取，也會呼叫這個方法**開始** 指令從 **偵錯**在 IDE 中的功能表。  這個方法的實作可能會像電話一樣簡單[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)在程式中目前的執行緒上的方法。  
+## <a name="remarks"></a>Remarks  
+ When the user starts execution from a stopped state in some other program's thread, this method is called on this program. This method is also called when the user selects the **Start** command from the **Debug** menu in the IDE. The implementation of this method may be as simple as calling the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method on the current thread in the program.  
   
 > [!WARNING]
->  不要傳送停止事件或立即 \(同步\) 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫。 否則偵錯工具可能會停止回應。  
+>  Do not send a stopping event or an immediate (synchronous) event to [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) while handling this call; otherwise the debugger may hang.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
- [繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

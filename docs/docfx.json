@@ -10,19 +10,19 @@
           "**/obj/**",
           "vsdocsdocs/**",
           "**/includes/**",
-		"sharepoint/**",
-		"vsto/**",
-			"code-quality/**",
-			"csharp-ide/**",
-			"data-tools/**",
-			"debugger/**",
-			"deployment/**",
-			"extensibility/**",
-			"misc/**",
-			"modeling/**",
-			"vb-ide/**",
-			"workflow-designer/**",
-			"xml-tools/**"
+	"sharepoint/**",
+	"vsto/**",
+	"code-quality/**",
+	"csharp-ide/**",
+	"data-tools/**",
+	"debugger/**",
+	"deployment/**",
+	"extensibility/**",
+	"misc/**",
+	"modeling/**",
+	"vb-ide/**",
+	"workflow-designer/**",
+	"xml-tools/**"
         ]
       }
     ],
@@ -44,7 +44,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-            "breadcrumb_path": "/visualstudio/_breadcrumb/toc.json",
+            "breadcrumb_path": "~/_breadcrumb/toc.yml",
             "ROBOTS": "INDEX,FOLLOW",
             "author": "",
             "ms.author": "",
@@ -59,7 +59,7 @@
             "searchScope": ["VS IDE"]},
     "fileMetadata": {},
     "template": [],
-    "xref": ["../_repo.en-us/docs/msdn.4.5.2.zip", "../_repo.en-us/docs/namespaces.4.5.2.zip", "../_repo.en-us/docs/vs.110.zip", "../_repo.en-us/docs/vs.140.zip", "../_repo.en-us/docs/office15.zip"],
+    "xref": ["missingapi.yml", "../dotnet-xref/_zip/dotnet.zip", "namespaces.4.5.2.zip", "vs.110.zip", "vs.140.zip", "office15.zip"],
     "dest": "vsdocsdocs"
   }
 }

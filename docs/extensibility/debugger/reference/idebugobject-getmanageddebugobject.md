@@ -1,52 +1,69 @@
 ---
-title: "IDebugObject::GetManagedDebugObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugObject::GetManagedDebugObject"
-helpviewer_keywords: 
-  - "IDebugObject::GetManagedDebugObject 方法"
+title: IDebugObject::GetManagedDebugObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugObject::GetManagedDebugObject
+helpviewer_keywords:
+- IDebugObject::GetManagedDebugObject method
 ms.assetid: cb89692e-7657-47ff-846d-311943521951
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugObject::GetManagedDebugObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 46c8bda2a1e575075eb74f8a75f9b5eb50f4c388
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-在偵錯引擎的位址空間中建立一份受管理的物件。  
+---
+# <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
+Creates a copy of the managed object in the address space of the debug engine.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetManagedDebugObject(   
-   IDebugManagedObject** ppObject  
+```cpp  
+HRESULT GetManagedDebugObject(   
+   IDebugManagedObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetManagedDebugObject(  
-   out IDebugManagedObject ppObject  
+   out IDebugManagedObject ppObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppObject`  
- \[\] out傳回[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)物件，代表剛建立的 managed 的物件。  
+ [out] Returns an [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) object representing the newly created managed object.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  如果這會傳回 E\_FAIL [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)不能代表受管理的實值類別執行個體。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code. Returns E_FAIL if this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) does not represent a managed value class instance.  
   
-## 備註  
- 這[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件必須表示受管理的實值類別執行個體中，例如`System.Decimal`執行個體。  藉由本機複本，呼叫的額外負荷[評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)就會被淘汰。  
+## <a name="remarks"></a>Remarks  
+ This [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object must represent a managed value class instance, such as a `System.Decimal` instance. By having a local copy, the overhead of calling [Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) is eliminated.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)   
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

@@ -9,11 +9,7 @@
         "exclude": [
           "**/obj/**",
           "scripting-docs/**",
-          "**/includes/**",
-          "**/chakra-hosting/**",
-          "**/javascript/**",
-          "**/jswinrt/**",
-          "**/winscript/**"
+          "**/includes/**"
         ]
       }
     ],

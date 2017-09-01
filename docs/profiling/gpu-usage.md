@@ -39,7 +39,7 @@ ms.lasthandoff: 06/23/2017
   
  這是 [GPU 使用量報告] 視窗：  
   
- ![GPU 使用量報表，包含 CPU 和 GPU 時間軸](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![GPU 使用量報表，包含 CPU 和 GPU 時間軸](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
 ## <a name="requirements"></a>需求  
  下列是圖形診斷需求以外的 GPU 使用量工具使用需求。  
@@ -56,11 +56,11 @@ ms.lasthandoff: 06/23/2017
   
 #### <a name="to-start-the-gpu-usage-tool"></a>啟動 GPU 使用量工具：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
+1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
   
 2.  在 [效能及診斷] 中樞中，核取 [GPU 使用量] 旁邊的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能與診斷工具，以取得更完整的應用程式效能。  
   
-     ![選擇您要使用的診斷工具。](~/profiling/media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
+     ![選擇您要使用的診斷工具。](media/gfx_diag_diagsession_tools.png "gfx_diag_diagsession_tools")  
   
     > [!NOTE]
     >  並非所有效能及診斷工具都可以同時使用。  
@@ -79,15 +79,15 @@ ms.lasthandoff: 06/23/2017
   
 1.  在 [診斷工作階段] 視窗的下半部，選擇 [停止收集] 連結，或按左上角的 [停止]。  
   
-     ![收集 GPU 和 CPU 計時資訊。](~/profiling/media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
+     ![收集 GPU 和 CPU 計時資訊。](media/gfx_diag_gpu_usage_collect.png "gfx_diag_gpu_usage_collect")  
   
 2.  在報告的上半部，選取其中一個圖形中的一個區段，以顯示您想要調查的問題。 您的選取項目最多可以有 3 秒的時間；會向起始處截斷較長的區段。  
   
-     ![收集後，選取範圍以檢視詳細資料](~/profiling/media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
+     ![收集後，選取範圍以檢視詳細資料](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  在報告的下半部，選擇 [...click here to view details of GPU usage for that range] (...按一下這裡以檢視該範圍的 GPU 使用量詳細資料) 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
+3.  在報告的下半部，選擇 [...click here to view details of GPU usage for that range]\(...按一下這裡以檢視該範圍的 GPU 使用量詳細資料) 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
   
-     ![收集後，已選取範圍](~/profiling/media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
+     ![收集後，已選取範圍](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
  這會開啟包含報告的新索引標籤式文件。 [GPU 使用量] 報告可協助您查看何時在 CPU 上啟動圖形事件、它何時到達 GPU，以及 GPU 執行它所需的時間。 這項資訊可協助您找出瓶頸以及提高程式碼中平行處理的機會。  
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 06/23/2017
 ## <a name="export-to-gpuview-or-windows-performance-analyzer"></a>匯出到 GPUView 或 Windows Performance Analyzer
 從 Visual Studio 2017 開始，這項資料可以使用 [GPUView](/windows-hardware/drivers/display/using-gpuview) 和 [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) 開啟，方法是按一下診斷工作階段右下角的 [在 GpuView 中開啟] 或 [在 WPA 中開啟] 連結。
 
-![在下列中開啟](~/profiling/media/gfx_diag_open_in.png)
+![在下列中開啟](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>使用 GPU 使用量報告  
@@ -105,7 +105,7 @@ ms.lasthandoff: 06/23/2017
   
  以下是 [GPU 使用量報告] 視窗：  
   
- ![GPU 使用量報表，包含 CPU 和 GPU 時間軸](~/profiling/media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
+ ![GPU 使用量報表，包含 CPU 和 GPU 時間軸](media/gfx_diag_gpu_usage_report.png "gfx_diag_gpu_usage_report")  
   
  選取報告下半部中的其中一個事件，即會在相關時間軸中的對應事件上放上標記，通常，CPU 執行緒上的一個事件代表 API 呼叫，其中一個 GPU 時間軸上的另一個事件則代表 GPU 完成工作的時間。 同樣地，選取時間軸中的其中一個事件會反白顯示報告下半部中的對應事件。縮小報告上半部的時間軸時，只會顯示最耗時的事件。 若要查看持續時間較短的事件，請使用 Ctrl + 指標裝置上的滾輪或上方面板左下角中的縮放控制項來放大時間軸。 您也可以拖曳時間軸面板的內容，以在所記錄的事件之間移動。  
   
@@ -140,13 +140,13 @@ ms.lasthandoff: 06/23/2017
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>從啟動應用程式延後程式碼剖析：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
+1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
   
 2.  在 [效能及診斷] 中樞，遵循 [GPU 使用量] 旁的 [設定] 連結。  
   
 3.  在 [GPU 分析組態] 的 [一般] 屬性頁，清除 [在應用程式啟動時開始分析] 核取方塊以延遲分析。  
   
-     ![設定 GPU 使用量收集的開始時間](~/profiling/media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
+     ![設定 GPU 使用量收集的開始時間](media/gfx_diag_gpu_usage_config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
 >  Direct3D 12 應用程式目前不支援延後程式碼剖析。  

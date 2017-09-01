@@ -1,187 +1,270 @@
 ---
-title: "監看式及快速監看式視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.watch"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio]，監看式視窗"
-  - "運算式 [偵錯工具]，評估"
-  - "變數 [偵錯工具]，評估"
-  - "運算式評估"
-  - "暫存器，評估"
-  - "偵錯 [Visual Studio]，運算式評估"
+title: Set a Watch on Variables in Visual Studio | Microsoft Docs
+ms.custom: H1Hack27Feb2017
+ms.date: 04/04/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.watch
+helpviewer_keywords:
+- debugging [Visual Studio], Watch window
+- expressions [debugger], evaluating
+- variables [debugger], evaluating
+- expression evaluation
+- registers, evaluating
+- debugging [Visual Studio], expression evaluation
 ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 45
-caps.handback.revision: 44
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 監看式及快速監看式視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
+ms.openlocfilehash: f3f89adacaa42fe708027bd8576ee2b8522eee1a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/23/2017
 
-在偵錯工作階段期間，您可以使用 \[監看式\] \(\[偵錯\] \/ \[視窗\] \/ \[監看式\] \/ \[監看式 \(1、2、3、4\)\]\) 和 \[快速監看式\] \(\[偵錯\] \/ \[快速監看式\]\) 視窗，監看變數和運算式。 其差異在於 \[監看式\] 視窗可以顯示數個變數，而 \[快速監看式\] 視窗一次僅可顯示單一變數。  
+---
+# <a name="set-a-watch-on-variables-using-the-watch-and-quickwatch-windows-in-visual-studio"></a>Set a Watch on Variables using the Watch and QuickWatch Windows in Visual Studio
+While you are debugging, you can use the **Watch** (**Debug > Windows > Watch > Watch (1, 2, 3, 4)**) and **QuickWatch** (right-click on variable / **Debug > QuickWatch**) windows to watch variables and expressions.  The difference is that the **Watch** window can display several variables, while the **QuickWatch** window displays a single variable at a time.
+
+The windows are only available during a debugging session. 
   
-## 使用 \[快速監看式\] 觀察單一變數  
- 您可以使用 \[快速監看式\] 視窗觀察單一變數。 例如，如果您有下列的程式碼：  
+## <a name="observing-a-single-variable-with-quickwatch"></a>Observing a single variable with QuickWatch  
+ You can use the **QuickWatch** window to observe a single variable. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b; a = 1; b = 2; for (int i = 0; i < 10; i++) { a = a + b; } }  
+```CSharp
+static void Main(string[] args)  
+{  
+    int a, b;  
+    a = 1;  
+    b = 2;  
+    for (int i = 0; i < 10; i++)  
+    {  
+        a = a + b;  
+    }   
+}  
 ```  
   
- 您可以觀察 \[快速監看式\] 視窗中的變數，如下所示：  
+ You can observe the a variable in the QuickWatch window as follows:  
   
-1.  在 `a = a + b;` 行上設定中斷點。  
+1.  Set a breakpoint on the `a = a + b;` line.  
   
-2.  開始偵錯。 執行會在中斷點停止。  
+2.  Start debugging. Execution stops at the breakpoint.  
   
-3.  開啟 \[快速監看式\] 視窗 \(按一下滑鼠右鍵，然後選擇 \[偵錯\] \/ \[快速監看式\]，或 **SHIFT\+F9**\)。您可以開啟視窗並將某個變數加入 \[運算式\] 視窗中，然後按一下 \[重新評估\]。 您應該會在 \[值\] 視窗中看到變數，值為 2。  
+3.  Open the **QuickWatch** window (right-click on a, then choose **QuickWatch**, or **SHIFT+F9**).
+
+    You should see the a variable in the **Values** window, with a value of 1.
+
+    ![QuickWatch Expression](../debugger/media/watchexpression.png "QuickWatchExpression")  
+
+    If you want to evaluate an expression using the variable, add an expression such as `a + b` to the **Expression** window and click **Reevaluate**. 
   
-4.  \[快速監看式\] 視窗是強制回應對話方塊視窗，因此只要開啟您就無法繼續偵錯。 您可以按一下 \[加入監看式\]，將變數加入 \[監看式\] 視窗。  
+4.  Add the variable to the **Watch** window from **QuickWatch** by clicking **Add Watch**. 
+
+    > [!NOTE]
+    > The **QuickWatch** window is a modal dialog window, so you can't continue debugging as long as it is open.  
   
-5.  關閉 \[快速監看式\] 視窗。 現在，您就可以一邊觀察 \[監看式\] 視窗中的值，一邊繼續偵錯。  
+5.  Close the **QuickWatch** window. Now you can continue debugging while you observe the value in the **Watch** window.  
   
-## 使用 \[監看式\] 視窗觀察變數  
- 您可以使用 \[監看式\] 視窗觀察多個變數。 例如，如果您有下列的程式碼：  
+## <a name="observing-variables-with-the-watch-window"></a>Observing variables with the Watch window  
+ You can observe multiple variables with the **Watch** window. For example, if you have the following code:  
   
-```c#  
-static void Main(string[] args) { int a, b, c; a = 1; b = 2; c = 0; for (int i = 0; i < 10; i++) { a++; b *= 2; c = a + b; } }  
-  
-```  
-  
- 將三個變數的值加入監看式視窗，如下所示：  
-  
-1.  在 `c = a + b;` 行上設定中斷點。  
-  
-2.  開始偵錯 \(**F5**\)。 執行會在中斷點停止。  
-  
-3.  開啟 \[監看式\] 視窗 \(\[偵錯\] \/ \[視窗\] \/ \[監看式\] \/ \[監看式 1\]，或 **CTRL\+ALT\+W，1**\)。  
-  
-4.  將 `a` 變數加入第一個資料列，`b` 變數加入第二個資料列，再將 `c` 變數加入第三個資料列。  
-  
-5.  繼續偵錯。  
-  
- 您應會發現變數值隨著您逐一查看 `for` 迴圈而變更。  
-  
- 若以機器碼來設計程式，有時可能需要限定變數名稱，或是包含變數名稱的運算式內容。 內容是變數所在的函式、原始程式檔和模組。 如果您需要執行這個動作，可以使用內容運算子語法。 如需詳細資訊，請參閱＜運算式 \(C\+\+\)＞。  
-  
-## 使用 \[監看式\] 視窗觀察運算式  
- 現在我們試試改用運算式。 您可以加入偵錯工具所能辨識的任何有效運算式。  
-  
- 比方說，如果您使用上一節列出的程式碼，則可以取得三個值的平均值，如下：  
-  
- ![WatchExpression](~/debugger/media/watchexpression.png "WatchExpression")  
-  
- 一般來說，\[監看式\] 視窗的運算式評估規則與您的程式碼撰寫語言的運算式評估規則相同。 如果您的運算式有語法錯誤，您應會在程式碼編輯器中看到相同的編譯器錯誤。 以下為範例：  
-  
- ![WatchExpressionError](~/debugger/media/watchexpressionerror.png "WatchExpressionError")  
-  
-##  <a name="bkmk_refreshWatch"></a> 重新整理已過期的監看值  
- 在 \[監看式\] 視窗中評估運算式時，某些情況下，您可能會看到重新整理圖示 \(由兩個箭頭圍成的圓形或含有兩條波浪線的圓形\)。  例如，如果您關閉屬性評估 \(\[工具\] \/ \[選項\] \/ \[偵錯\] \/ \[啟用屬性評估及其他隱含函式呼叫\]\)，而且您有下列的程式碼：  
-  
-```c#  
-static void Main(string[] args) { List<string> list = new List<string>(); list.Add("hello"); list.Add("goodbye"); }  
+```C++  
+int main()
+{
+    int a, b, c;
+    a = 1;
+    b = 2;
+    c = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        a++;
+        b *= 2;
+        c = a + b;
+    }
+
+    return 0;
+}
   
 ```  
   
- 如果您在清單的 `Count` 屬性中設定監看式，您應該會看到類似下列的訊息：  
+ Add the values of the three variables to the Watch window as follows:  
+  
+1.  Set a breakpoint on the `c = a + b;` line.  
+  
+2.  Start debugging (**F5**). Execution stops at the breakpoint.  
+  
+3.  Open the Watch window (**Debug > Windows > Watch > Watch 1**, or **CTRL+ALT+W, 1**).  
+  
+4.  Add the `a` variable to the first row, the `b` variable to the second row, and the `c` variable to the third row.
+
+    You can add variables by clicking an empty row and typing the variable name.
+  
+5.  Continue debugging (press **F11** to advance the debugger).  
+  
+ You should see the variable values changing as you iterate through the `for` loop.  
+  
+ If you are programming in native code, you may sometimes need to qualify the context of a variable name or an expression containing a variable name. The context is the function, source file, and module where a variable is located. If you have to do this, you can use the context operator syntax. For more information, see [Context Operator (C++)](../debugger/context-operator-cpp.md).  
+  
+## <a name="observing-expressions-with-the-watch-window"></a>Observing expressions with the Watch window  
+ Now let's try using an expression instead. You can add any valid expression recognized by the debugger.  
+  
+ For example, if you have the code listed in the preceding section, you can get the average of the three values like this:  
+  
+ ![Watch Expression](../debugger/media/watchexpression.png "WatchExpression")  
+  
+ In general, the rules for evaluating expressions in the **Watch** window are the same as the rules for evaluating expressions in your coding language. If your expression has a syntax error, you can expect the same compiler error that you would see in the code editor. Here's an example:  
+  
+ ![Watch Expression Error](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
+  
+##  <a name="bkmk_refreshWatch"></a> Refreshing Watch values that are out of date  
+ In certain circumstances you might see a refresh icon (a circular arrow) when an expression is evaluated in the **Watch** window.  For example, if you have property evaluation turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and you have the following code:  
+  
+```CSharp  
+static void Main(string[] args)  
+{  
+    List<string> list = new List<string>();  
+    list.Add("hello");  
+    list.Add("goodbye");  
+}  
+  
+```  
+  
+ If you set a watch on the `Count` property of the list, you should see something like the following:  
   
  ![RefreshWatch](../debugger/media/refreshwatch.png "RefreshWatch")  
   
- 這表示錯誤或已過期的值。 按一下圖示通常會重新整理值，但在某些情況下，您可能不想要重新整理。 首先，您必須知道為何沒有評估值。  
+ This indicates an error or a value that is out of date. You can generally refresh the value by clicking on the icon, but in some cases you might prefer not to refresh it. First you need to know why the value was not evaluated.  
   
- 如果您指向圖示，工具提示會提供資訊來說明為何沒有評估運算式。 如果出現環繞箭號，表示運算式由於下列其中一個原因而未評估：  
+ If you point to the icon, a tooltip provides information about why the expression was not evaluated.  If the circling arrows appear, the expression was not evaluated for one of the following reasons:  
   
--   •	當評估運算式時發生錯誤。 例如，發生逾時或變數超出範圍。  
+-   An error occurred as the expression was being evaluated. For example, a time-out might have occurred, or a variable might have been out of scope.  
   
--   •	運算式包含可能在應用程式中觸發副作用的函式呼叫 \(請參閱[副作用和運算式](#bkmk_sideEffects)\)。  
+-   The expression contains a function call which could trigger a side effect in the application (see [Side Effects and Expressions](#bkmk_sideEffects)).  
   
--   偵錯工具的屬性自動評估和隱含函式呼叫 \(\[工具\] \/ \[選項\] \/ \[偵錯\] \/ \[啟用屬性評估及其他隱含函式呼叫\]\) 已關閉，如此即無法自動評估運算式。  
+-   Automatic evaluation of properties and implicit functions calls by the debugger is turned off (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**), and then the expression cannot be automatically evaluated.  
   
- 若要重新整理值，請按一下重新整理圖示或按下空格鍵。 偵錯工具會嘗試重新評估運算式。 如果出現重新整理圖示是因為屬性和隱含副作用的自動評估已關閉，則可評估運算式。  
+ To refresh the value, click the refresh icon or press the spacebar. The debugger will try to reevaluate the expression. If the refresh icon appeared because automatic evaluation of properties and other implicit function calls was turned off, the expression can be evaluated.  
   
- 如果您看到圓形中有類似螺紋的兩條波浪線條的圖示，則運算式是因為潛在的跨執行緒相依性而未受評估。 也就是說，若要評估程式碼，需要暫時執行應用程式中的其他執行緒。 當您處於中斷模式時，通常會停止應用程式中的所有執行緒。 允許暫時執行其他執行緒可能會對程式的狀態造成無法預期的結果，且可能導致偵錯工具忽略中斷點之類的事件，並在這些執行緒中擲回例外狀況。  
+ If you see an icon that is a circle with two wavy lines that resemble threads, the expression was not evaluated because of a potential cross-thread dependency. In other words, evaluating the code requires other threads in your application to run temporarily. When you are in break mode, all threads in your application are typically stopped. Allowing other threads to run temporarily can have unexpected effects on the state of your program and causes the debugger to ignore events such as breakpoints and exceptions thrown on those threads.  
   
-##  <a name="bkmk_sideEffects"></a> 副作用和運算式  
- 評估某些運算式可能會變更變數的值，或是影響程式的狀態。 例如，評估下列運算式會變更 `var1` 的值：  
+##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+ Evaluating some expressions can change the value of a variable or otherwise affect the state of your program. For example, evaluating the following expression changes the value of `var1`:  
   
 ```  
 var1 = var2  
 ```  
   
- 這稱為[副作用](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))。 副作用會變更程式運作的方式，導致偵錯更加困難。  
+ This is called  a [side effect](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Side effects can make debugging more difficult by changing the way your program operates.  
   
- 已知有副作用的運算式只會在您第一次輸入的時候評估一次。 後續評估都會停用。 您可以按一下值旁邊的更新圖示，手動覆寫這個行為。  
+ An expression that is known to have side effects is  evaluated only once, when you first enter it. Subsequent evaluations are disabled. You can manually override this behavior by clicking the update icon that appears next to the value.  
   
- 避免所有副作用的其中一種方法是關閉自動函式評估 \(\[工具\] \/ \[選項\] \/ \[偵錯\] \/ \[啟用屬性評估及其他隱含函式呼叫\]\)。  
+ One way to avoid all side effects is to turn off automatic function evaluation (**Tools > Options > Debugging > Enable property evaluation and other implicit function calls**).  
   
- 當關閉屬性評估或隱含函式呼叫時，您可以使用 **ac** 格式修飾詞 \(僅適用 C\#\) 強制評估。 請參閱 [C\# 中的格式規範](../debugger/format-specifiers-in-csharp.md)。  
+ When evaluation of properties or implicit function calls is turned off, you can force evaluation by using the **ac** format modifier (for C# only). See [Format Specifiers in C#](../debugger/format-specifiers-in-csharp.md).  
   
-## 在 \[監看式\] 視窗 \(C\# 和 Visual Basic\) 中使用物件 ID  
- 有時候您可能需要觀察特定物件的行為，例如您可能想在區域變數已超出範圍之後，追蹤該變數參考的物件。 在 C\# 和 Visual Basic 中，您可以針對參考類型的特定執行個體建立物件 ID，並在中斷點條件和 \[監看式\] 視窗中使用它們。 物件 ID 是由 Common Language Runtime \(CLR\) 偵錯服務所產生並與物件相關聯。  
+## <a name="bkmk_objectIds"></a> Using Object IDs in the Watch window (C# and Visual Basic)  
+ There are times when you want to observe the behavior of a specific object; for example, you might want to track an object referred to by a local variable after that variable has gone out of scope. In C# and Visual Basic, you can create object IDs for specific instances of reference types and use them in the Watch window and in breakpoint conditions. The object ID is generated by the common language runtime (CLR) debugging services and associated with the object.  
   
 > [!NOTE]
->  物件 ID 會建立弱式參考，且不會防止記憶體回收物件。 它們僅針對目前的偵錯工作階段才有效。  
+>  Object IDs create weak references, and do not prevent the object from being garbage collected. They are valid only for the current debugging session.  
   
- 在下列程式碼中，其中一個方法會使用區域變數建立 `Person`，但您想要找出不同方法中的 `Person` 名稱：  
+ In the following code one method creates a `Person` using a local variable, but you want to find out what the `Person`'s name is in a different method:  
   
-```c#  
-class Person { public Person(string name) { Name = name; } public string Name { get; set; } } public class Program { List<Person> _people = new List<Person>(); public static void Main(string[] args) { MakePerson(); DoSomething(); } private static void MakePerson() { var p = new Person("Bob"); _people.Add(p); } private static void DoSomething() { // more processing Console.WriteLine("done"); } }  
+```CSharp  
+class Person  
+{  
+    public Person(string name)  
+    {  
+        Name = name;  
+    }  
+    public string Name { get; set; }  
+}  
+  
+public class Program  
+{  
+    List<Person> _people = new List<Person>();  
+    public static void Main(string[] args)  
+    {  
+        MakePerson();  
+        DoSomething();  
+    }  
+  
+    private static void MakePerson()  
+    {  
+        var p = new Person("Bob");  
+        _people.Add(p);  
+    }  
+  
+    private static void DoSomething()  
+    {  
+        // more processing  
+         Console.WriteLine("done");  
+    }  
+}  
   
 ```  
   
- 您可以在 \[監看式\] 視窗中將參考加入這個 `Person` 物件，如下所示：  
+ You can add a reference to that `Person` object in the **Watch** window as follows:  
   
-1.  當物件已建立一段時間之後，於程式碼中設定中斷點。  
+1.  Set a breakpoint in the code some time after the object has been created.  
   
-2.  開始偵錯，當執行到中斷點停止時，找到 \[區域變數\] 視窗中的變數，按一下滑鼠右鍵，然後選取 \[設定物件 ID\]。  
+2.  Start debugging, and when execution stops in the breakpoint, find the variable in the **Locals** window, right-click it, and select **Make Object ID**.  
   
-3.  您應該會看到 \[區域變數\] 視窗中顯示 **$** 加上一個數字。 這就是物件 ID。  
+3.  You should see a **$** plus a number in the **Locals** window. This is the object ID.  
   
-4.  將物件 ID 加入 \[監看式\] 視窗。  
+4.  Add the object ID to the Watch window.  
   
-5.  在您想要觀察物件的行為位置設定中斷點。  若是上述程式碼，這可能會在 `DoSomething()` 方法中。  
+5.  Set a breakpoint where you want to observe the object's behavior.  In the code above, that would be in the `DoSomething()` method.  
   
-6.  繼續偵錯，當執行在 `DoSomething()` 方法中停止時，\[監看式\] 視窗會顯示 `Person` 物件。  
+6.  Continue debugging, and when execution stops in the `DoSomething()` method, the **Watch** window displays the `Person` object.  
   
 > [!NOTE]
->  如果您想要查看物件的屬性，如上述範例中的 `Person.Name`，則必須啟用屬性評估。  
+>  If you want to see the object's properties, such as `Person.Name` in the example above, you must have enabled property evaluation .  
   
-## 在 \[監看式\] 視窗中使用暫存器 \(僅限 C\+\+\)  
- 如果正在偵錯機器碼，則可以使用  **$\<register name\>** 或 **@\<register name\>** 加入暫存器名稱以及變數名稱。  如需詳細資訊，請參閱[虛擬變數](../debugger/pseudovariables.md)。  
+## <a name="using-registers-in-the-watch-window-c-only"></a>Using registers in the Watch window (C++ only)  
+ If you are debugging native code, you can add register names as well as variable names using **$\<register name>** or **@\<register name>**.  For more information, see [Pseudovariables](../debugger/pseudovariables.md).  
   
-## 動態檢視和監看式視窗  
- 某些指令碼語言 \(例如 JavaScript 或 Python\) 使用動態或[鴨子類型](https://en.wikipedia.org/wiki/Duck_typing)，而 .NET 語言 \(4.0 或更新版本\) 支援難以用一般偵錯視窗觀察的物件，因為這些物件可能會有無法顯示的執行階段屬性和方法。  
+## <a name="dynamic-view-and-the-watch-window"></a>Dynamic View and the Watch window  
+ Some scripting languages (e.g. JavaScript or Python) use dynamic or [duck typing](https://en.wikipedia.org/wiki/Duck_typing), and .NET languages (in version 4.0 and later) support objects that are difficult to observe using the normal debugging windows, because they may have runtime properties and methods that cannot be displayed.  
   
- 如果物件是從實作 [IDynamicMetaObjectProvider 介面](../Topic/IDynamicMetaObjectProvider%20Interface.md) 的類型所建立，當 \[監看式\] 視窗顯示該物件時，偵錯工具會在 \[自動變數\] 顯示中加入一個特殊的 \[動態檢視\] 節點。 此節點會顯示動態物件的動態成員，但不允許編輯成員值。  
+ When the Watch window displays a or an object created from a type that implements the [IDynamicMetaObjectProvider Interface](https://docs.microsoft.com/en-us/dotnet/api/system.dynamic.idynamicmetaobjectprovider?view=netframework-4.7), the debugger adds a special **Dynamic View**  node to the **Autos** display. This node shows the dynamic members of the dynamic object but does not allow editing of the member values.  
   
- 如果您以滑鼠右鍵按一下 \[動態檢視\] 的任何子系，並選擇 \[加入監看式\]，偵錯工具會插入新的監看變數，其可將物件轉換成動態物件。 換句話說，**object Name** 會變成 \(**\(dynamic\)object\).Name**。  
+ If you right-click any child of a **Dynamic View** and choose **Add Watch**, the debugger inserts a new watch variable that casts an object to a dynamic object. In other words, **object Name** becomes (**(dynamic)object).Name**.  
   
- 評估 \[動態檢視\] 的成員時可能有副作用。 如需說明有哪些副作用，請參閱[副作用和運算式](#bkmk_sideEffects)。 若是 C\#，在您逐步執行至新的一行程式碼時，偵錯工具不會自動重新評估 \[動態檢視\] 中顯示的值。 若是 Visual Basic，則會自動重新整理透過 \[動態檢視\] 加入的運算式。  
+ Evaluating the members of a **Dynamic View** can have side effects. For an explanation of what side effects are, see [Side Effects and Expressions](#bkmk_sideEffects). For C#, the debugger does not automatically reevaluate the values shown in the **Dynamic View** when you step to a new line of code. For Visual Basic, expressions added through the **Dynamic View** are automatically refreshed.  
   
- 如需重新整理 \[動態檢視\] 值的相關指示，請參閱[重新整理已過期的監看值](#bkmk_refreshWatch)。  
+ For instructions about how to refresh the Dynamic View values, see [Refreshing Watch values that are out of date](#bkmk_refreshWatch).  
   
- 如果您希望只顯示物件的 \[動態檢視\]，可以使用 \[動態\] 格式規範：  
+ If you want to display only the **Dynamic View** for an object, you can use the **dynamic** format specifier:  
   
--   C\#: **ObjectName, dynamic**  
+-   C#: **ObjectName, dynamic**  
   
 -   Visual Basic:: **$dynamic, ObjectName**  
   
- \[動態檢視\] 也強化了 COM 物件的偵錯體驗。 當偵錯工具發現包裝在 **System.\_\_ComObject** 中的 COM 物件時，它會為該物件新增 \[動態檢視\] 節點。  
+ The **Dynamic View** also enhances the debugging experience for COM objects. When the debugger encounters a COM object wrapped in **System.__ComObject**, it adds a **Dynamic View** node for the object.  
   
-## 請參閱  
- [偵錯工具視窗](../debugger/debugger-windows.md)
+## <a name="see-also"></a>See Also  
+ [Debugger Windows](../debugger/debugger-windows.md)
+

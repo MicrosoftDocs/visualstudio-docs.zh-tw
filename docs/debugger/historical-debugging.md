@@ -1,41 +1,58 @@
 ---
-title: "歷程偵錯 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Historical Debugging | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
----
-# 歷程偵錯
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 9f73ccc235c3b893b2ad8d2ddb07dd1848414734
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/22/2017
 
-歷程偵錯是取決於 IntelliTrace 所收集資訊的偵錯模式。  它可讓您向後和向前逐步執行您的應用程式，並檢查其狀態。  
+---
+# <a name="historical-debugging"></a>Historical Debugging
+Historical debugging is a mode of debugging that depends on the information collected by IntelliTrace. It allows you to move backward and forward through the execution of your application and inspect its state.  
   
- 您可以在 Visual Studio Enterprise 版本 \(而非 Professional 或 Community 版本\) 中使用 IntelliTrace。  
+ You can use IntelliTrace in Visual Studio Enterprise edition (but not the Professional or Community editions).  
   
-## 為何使用歷程偵錯？  
- 設定中斷點來找出 Bug 可能相當容易出錯。  您可以在接近程式碼中懷疑為 Bug 所在的位置設定中斷點，然後在偵錯工具中執行應用程式，並希望您的中斷點找到錯誤位置，以及執行中斷可能會顯示 Bug 來源的位置。  否則，您必須嘗試在程式碼的某一處設定中斷點，然後重新執行偵錯工具，以重複執行測試步驟，直到找出問題。  
+## <a name="why-use-historical-debugging"></a>Why use Historical Debugging?  
+ Setting breakpoints to find bugs can be a rather hit-or-miss affair. You set a breakpoint close to the place in your code where you suspect the bug to be, then run the application in the debugger and hope your breakpoint gets hit, and that the place where execution breaks can reveal the source of the bug. If not, you'll have to try setting a breakpoint somewhere else in the code and rerun the debugger, executing your test steps over and over until you find the problem.  
   
- ![設定中斷點](~/debugger/media/breakpointprocesa.png "BreakpointProcesa")  
+ ![setting a breakpoint](../debugger/media/breakpointprocesa.png "BreakpointProcesa")  
   
- 您可以使用 IntelliTrace 和歷程偵錯來漫遊應用程式，並檢查其狀態 \(呼叫堆疊和區域變數\)，而不需要設定中斷點、重新啟動偵錯，以及重複測試步驟。  這可以節省許多時間，特別是當 Bug 位於測試案例的較深處而需要花很長的時間執行時。  
+ You can use IntelliTrace and Historical Debugging to roam around in your application and inspect its state (call stack and local variables) without having to set breakpoints, restart debugging, and repeat test steps. This can save you a lot of time, especially when the bug is located deep in a test scenario that takes a long time to execute.  
   
-## 如何開始使用歷程偵錯？  
- 預設會開啟 IntelliTrace。  您只需要決定感興趣的事件和函式呼叫。  如需定義您想要尋找之項目的詳細資訊，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。  如需使用 IntelliTrace 偵錯的逐步帳戶，請參閱[逐步解說：使用 IntelliTrace](../debugger/walkthrough-using-intellitrace.md)。  
+## <a name="how-do-i-start-using-historical-debugging"></a>How do I start using Historical Debugging?  
+ IntelliTrace is on by default. All you have to do is decide which events and function calls are of interest to you. For more information about defining what you want to look for, see [IntelliTrace Features](../debugger/intellitrace-features.md). For a step-by-step account of debugging with IntelliTrace, see [Walkthrough: Using IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
-## 使用歷程偵錯巡覽程式碼  
- 讓我們從內含 Bug 的簡單程式開始。  在 C\# 主控台應用程式中，加入下列程式碼：  
+## <a name="navigating-your-code-with-historical-debugging"></a>Navigating your code with Historical Debugging  
+ Let's start with a simple program that has a bug. In a C# console application, add the following code:  
   
-```c#  
+```CSharp  
 static void Main(string[] args)  
 {  
     int testInt = 0;  
@@ -61,28 +78,28 @@ private static int AddInt(int add)
 }  
 ```  
   
- 我們假設呼叫 `AddAll()` 之後的 `resultInt` 預期值是 20 \(遞增 `testInt` 20 次的結果\)。  \(我們也假設您看不到 `AddInt()` 中的 Bug\)。但是，結果實際上是 44。  如何在不逐步執行 `AddAll()` 10 次的情況下找到 Bug？  我們可以使用歷程偵錯更迅速且更輕鬆地找到 Bug。  方式如下：  
+ We'll assume that the expected value of `resultInt` after calling `AddAll()` is 20 (the result of incrementing `testInt` 20 times). (We'll also assume that you can't see the bug in `AddInt()`).But the result is actually 44. How can we find the bug without stepping through `AddAll()` 10 times? We can use Historical Debugging to find the bug faster and more easily. Here's how:  
   
-1.  在 \[工具\] \/ \[選項\] \/ \[IntelliTrace\] \/ \[一般\] 中，確定已啟用 IntelliTrace，然後選取 \[IntelliTrace 事件和呼叫資訊\] 選項。  如果您未選取此選項，則無法看到巡覽邊 \(如下所述\)。  
+1.  In Tools > Options > IntelliTrace > General, make sure that IntelliTrace is enabled, and select the IntelliTrace events and call information option. If you do not select this option, you will not be able to see the navigation gutter (as explained below).  
   
-2.  在 `Console.WriteLine(resultInt);` 行上設定中斷點。  
+2.  Set a breakpoint on the `Console.WriteLine(resultInt);` line.  
   
-3.  開始偵錯。  程式碼會執行到中斷點。  在 \[區域變數\] 視窗中，您可以看到 `resultInt` 的值是 44。  
+3.  Start debugging. The code executes to the breakpoint. In the **Locals** window, you can see that the value of `resultInt` is 44.  
   
-4.  開啟 \[診斷工具\] 視窗 \(\[偵錯\] \/ \[顯示診斷工具\]\)。  程式碼視窗應該如下所示：  
+4.  Open the **Diagnostic Tools** window (**Debug > Show Diagnostic Tools**). The code window should look like this:  
   
-     ![中斷點上的程式碼視窗](~/debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
+     ![Code window at the breakpoint](../debugger/media/historicaldebuggingbreakpoint.png "HistoricalDebuggingBreakpoint")  
   
-5.  您應該會在左邊界旁邊看到雙箭頭，就在中斷點正上方。  這個區域稱為巡覽邊，並用於歷程偵錯。  按一下箭頭。  
+5.  You should see a double arrow next to the left margin, just above the breakpoint. This area is called the navigation gutter, and is used for Historical Debugging. Click the arrow.  
   
-     在程式碼視窗中，您應該會看到前一行程式碼 \(`int resultInt = AddIterative(testInt);`\) 加上粉紅色。  在視窗上方，您應該會看到一則訊息，指出現在您正在使用歷程偵錯。  
+     In the code window, you should see that the preceding line of code (`int resultInt = AddIterative(testInt);`) is colored pink. Above the window, you should see a message that you are now in Historical Debugging.  
   
-     程式碼視窗現在如下所示：  
+     The code window now looks like this:  
   
-     ![歷程偵錯模式中的程式碼視窗](~/debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
+     ![code window in historical debugging mode](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6.  現在您可以逐步執行 `AddAll()` 方法 \(**F11**，或巡覽邊中的 \[逐步執行\] 按鈕\)。  逐步往前執行 \(**F10**，或巡覽邊中的 \[移至下一個呼叫\]\)。  粉紅色行現在位於 `j = AddInt(j);` 行。  在此情況下，**F10** 不會逐步執行下一行程式碼。  而是會逐步執行至下一個函式呼叫。  歷程偵錯呼叫會巡覽不同的呼叫，並略過不包括函式呼叫的程式碼行。  
+6.  Now you can step into the `AddAll()` method (**F11**, or the **Step Into** button in the navigation gutter. Step forward (**F10**, or **Go to Next Call** in the navigation gutter. The pink line is now on the `j = AddInt(j);` line. **F10** in this case does not step to the next line of code. Instead, it steps to the next function call. Historical debugging navigates from call to call, and it skips lines of code that do not include a function call.  
   
-7.  現在會逐步執行 `AddInt()` 方法。  您應該會立即看到此程式碼中的 Bug。  
+7.  Now step into the `AddInt()` method. You should see the bug in this code immediately.  
   
- 此程序只會大略探討您如何使用歷程偵錯。  若要深入了解不同的設定以及巡覽邊中不同按鈕的效果，請參閱 [IntelliTrace 功能](../debugger/intellitrace-features.md)。
+ This procedure just scratched the surface of what you can do with Historical Debugging. To find out more about the different settings and the effects of the different buttons in the navigation gutter, see [IntelliTrace Features](../debugger/intellitrace-features.md).

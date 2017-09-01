@@ -1,84 +1,101 @@
 ---
-title: "MODULE_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_FLAGS"
-helpviewer_keywords: 
-  - "MODULE_FLAGS 列舉型別"
+title: MODULE_FLAGS | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- MODULE_FLAGS
+helpviewer_keywords:
+- MODULE_FLAGS enumeration
 ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
----
-# MODULE_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2bb42c4a29330d2f554c2f2f05273349747addf9
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-用來描述模組。  
+---
+# <a name="moduleflags"></a>MODULE_FLAGS
+Used to describe a module.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+```cpp  
+enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 typedef DWORD MODULE_FLAGS;  
 ```  
   
-```c#  
-public enum enum_MODULE_FLAGS {   
-   MODULE_FLAG_NONE        = 0x0000,  
-   MODULE_FLAG_SYSTEM      = 0x0001,  
-   MODULE_FLAG_SYMBOLS     = 0x0002,  
-   MODULE_FLAG_64BIT       = 0x0004,  
-   MODULE_FLAG_OPTIMIZED   = 0x0008,  
-   MODULE_FLAG_UNOPTIMIZED = 0x0010  
+```csharp  
+public enum enum_MODULE_FLAGS {   
+   MODULE_FLAG_NONE        = 0x0000,  
+   MODULE_FLAG_SYSTEM      = 0x0001,  
+   MODULE_FLAG_SYMBOLS     = 0x0002,  
+   MODULE_FLAG_64BIT       = 0x0004,  
+   MODULE_FLAG_OPTIMIZED   = 0x0008,  
+   MODULE_FLAG_UNOPTIMIZED = 0x0010  
 };  
 ```  
   
-## Members  
- MODULE\_FLAG\_NONE  
- 指定沒有模組。  
+## <a name="members"></a>Members  
+ MODULE_FLAG_NONE  
+ Specifies no module.  
   
- MODULE\_FLAG\_SYSTEM  
- 指定系統模組。  
+ MODULE_FLAG_SYSTEM  
+ Specifies a system module.  
   
- MODULE\_FLAG\_SYMBOLS  
- 指定符號的模組。  
+ MODULE_FLAG_SYMBOLS  
+ Specifies a symbol module.  
   
- MODULE\_FLAG\_64BIT  
- 指定的 64 位元模組。  
+ MODULE_FLAG_64BIT  
+ Specifies a 64-bit module.  
   
- MODULE\_FLAG\_OPTIMIZED  
- 指定的模組已經過最佳化。  此狀態會反映在**模組**視窗。  
+ MODULE_FLAG_OPTIMIZED  
+ Specifies the module has been optimized. This state is reflected in the **Modules** window.  
   
- MODULE\_FLAG\_UNOPTIMIZED  
- 指定的模組未最佳化。  此狀態會反映在**模組**視窗。  這是預設狀態。  
+ MODULE_FLAG_UNOPTIMIZED  
+ Specifies the module has not been optimized. This state is reflected in the **Modules** window. This is the default state.  
   
-## 備註  
- 用於`m_dwModuleFlags`成員的[MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)結構。  
+## <a name="remarks"></a>Remarks  
+ Used for the `m_dwModuleFlags` member of the [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.  
   
- 這些旗標可以使用位元和結合`OR`。  
+ These flags may be combined with a bitwise `OR`.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)

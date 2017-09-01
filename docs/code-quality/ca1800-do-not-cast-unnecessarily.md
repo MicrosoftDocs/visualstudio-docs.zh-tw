@@ -1,61 +1,78 @@
 ---
-title: "CA1800：請勿執行不必要的轉型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1800"
-  - "DoNotCastUnnecessarily"
-helpviewer_keywords: 
-  - "DoNotCastUnnecessarily"
-  - "CA1800"
+title: 'CA1800: Do not cast unnecessarily | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-devops-test
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1800
+- DoNotCastUnnecessarily
+helpviewer_keywords:
+- DoNotCastUnnecessarily
+- CA1800
 ms.assetid: b79a010a-6627-421e-8955-6007e32fa808
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
----
-# CA1800：請勿執行不必要的轉型
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: e2c0d1e5c21661d1a6cc61f7ba7307812bb6a98b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
+---
+# <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Do not cast unnecessarily
 |||  
 |-|-|  
-|型別名稱|DoNotCastUnnecessarily|  
+|TypeName|DoNotCastUnnecessarily|  
 |CheckId|CA1800|  
-|分類|Microsoft.Performance|  
-|中斷變更|中斷|  
+|Category|Microsoft.Performance|  
+|Breaking Change|Non-breaking|  
   
-## 原因  
- 方法對其中一個引數或區域變數執行重複轉型。  若要依此規則完整分析，則必須使用偵錯資訊建置測試的組件 \(Assembly\)，而且必須可以使用關聯的程式資料庫 \(.pdb\) 檔案。  
+## <a name="cause"></a>Cause  
+ A method performs duplicate casts on one of its arguments or local variables. For complete analysis by this rule, the tested assembly must be built by using debugging information and the associated program database (.pdb) file must be available.  
   
-## 規則描述  
- 重複轉型會降低效能，尤其是在精簡型態的反覆運算陳述式中執行轉型時。  若為明確重複轉型作業，請將轉型結果儲存在區域變數中，並改用區域變數而不用重複轉型作業。  
+## <a name="rule-description"></a>Rule Description  
+ Duplicate casts decrease performance, especially when the casts are performed in compact iteration statements. For explicit duplicate cast operations, store the result of the cast in a local variable and use the local variable instead of the duplicate cast operations.  
   
- 如果 C\# `is` 運算子在執行實際轉型之前，用於測試轉型是否會成功，請考慮改為測試 `as` 運算子的結果。  這可提供相同的功能，而不需由 `is` 運算子執行隱含轉型作業。  
+ If the C# `is` operator is used to test whether the cast will succeed before the actual cast is performed, consider testing the result of the `as` operator instead. This provides the same functionality without the implicit cast operation that is performed by the `is` operator.  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請修改方法實作 \(Implementation\) 以最小化轉型作業的數目。  
+## <a name="how-to-fix-violations"></a>How to Fix Violations  
+ To fix a violation of this rule, modify the method implementation to minimize the number of cast operations.  
   
-## 隱藏警告的時機  
- 如果效能並非考量重點，則您可以放心地隱藏這項規則的警告，或是完全忽略該規則。  
+## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
+ It is safe to suppress a warning from this rule, or to ignore the rule completely, if performance is not a concern.  
   
-## 範例  
- 下列範例會顯示使用 C\# `is` 運算子的方法違反規則。  第二個方法會滿足規則，做法是以 `as` 運算子的結果測試取代 `is` 運算子，而將每個反覆運算的轉型作業數目由兩個減少到一個。  
+## <a name="example"></a>Example  
+ The following example shows a method that violates the rule by using the C# `is` operator. A second method satisfies the rule by replacing the `is` operator with a test against the result of the `as` operator, which decreases the number of cast operations per iteration from two to one.  
   
- [!code-cs[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]  
+ [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]  
   
-## 範例  
- 下列範例會顯示違反規則的方法 `start_Click` \(該方法具有多個重複明確轉型\)，以及滿足規則的方法 `reset_Click` \(該方法會將轉型儲存在區域變數中\)。  
+## <a name="example"></a>Example  
+ The following example shows a method, `start_Click`, that has multiple duplicate explicit casts, which violates the rule, and a method, `reset_Click`, which satisfies the rule by storing the cast in a local variable.  
   
- [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
- [!code-cs[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]  
+ [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)] [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [as](/dotnet/csharp/language-reference/keywords/as)   
  [is](/dotnet/csharp/language-reference/keywords/is)

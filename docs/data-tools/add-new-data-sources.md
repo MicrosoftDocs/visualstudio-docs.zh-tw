@@ -1,92 +1,116 @@
 ---
-title: "資料來源概觀 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.datasource.datasourcefieldspicker"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 資料來源"
-  - "資料來源"
+title: Add new data sources | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.datasource.datasourcefieldspicker
+helpviewer_keywords:
+- data [Visual Studio], data sources
+- data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 56
-caps.handback.revision: 41
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: cfa3f7c2609414076c1d8f9c6e0f1c9024edc4b4
+ms.openlocfilehash: 140155ad1f6cb09f98b2e812b274a0b98306f6c9
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/31/2017
+
 ---
-# 資料來源概觀
-「資料來源」\(Data Source\) 表示應用程式可使用的資料。  更確切地說，資料來源就是要在應用程式中使用的資料。  資料來源可以從資料庫 \(包括本機資料庫檔案\)、服務和物件中取得。  
+# <a name="add-new-data-sources"></a>Add new data sources
+In the context of .NET data tools in Visual Studio, the term *data source* refers to .NET objects that connect to a data store and expose the data to a .NET application. The Visual Studio designers can consume the output of the data source to generate the boilerplate code that binds the data to forms when you drag and drop database objects from the **Data Sources** window. This kind of data source can be:  
   
- 加入專案中的資料來源會顯示在 \[**資料來源**\] 視窗。  在許多情況下，您可以將資料來源拖曳到 Windows Form、WPF 和 Silverlight Designer，以建立繫結至基礎資料的控制項。  如需詳細資訊，請參閱[將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
+-   A class in an Entity Framework model that is associated with some kind of database.  
   
- Visual Studio 提供許多工具，可用來建立和編輯應用程式中的資料來源。  在 Visual Studio 專案中，會以實體資料模型、資料集、服務傳回的 Proxy 物件或其他物件類型表示資料來源，視基礎資料存放區傳回的物件而定。  
+-   A dataset that is associated with some kind of database.  
   
- 您可以使用 \[**資料來源組態精靈**\] 建立及編輯資料來源。  
+-   A class that represents a network service such as a Windows Communication Foundation (WCF) data service or a REST service.  
   
-## 從資料庫建立資料來源  
- 您可以從資料庫建立資料來源，其方式是執行 \[**資料來源組態精靈**\]，並選取 \[**資料庫**\] 資料來源類型。  如需詳細資訊，請參閱[如何：連接至資料庫中的資料](../data-tools/how-to-connect-to-data-in-a-database.md)。  
+-   A class that represents a SharePoint service.  
   
- 當您從資料庫建立資料來源時，Visual Studio 會產生「*資料模型*」\(Data Model\) 並將它加入至專案。  資料模型是資料庫基礎資料的強類型、可程式檢視。  您可以使用 Visual Studio 建立下列類型的資料模型：  
+-   A class or collection in your solution.  
   
--   以[實體資料模型](../Topic/Entity%20Data%20Model.md)為基礎的概念模型。  這種模型可用於 Entity Framework 或 WCF 資料服務。  如需詳細資訊，請參閱[Entity Framework 概觀](../Topic/Entity%20Framework%20Overview.md)與[WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md)。  
+> [!NOTE]
+>  If you are not using data-binding features, datasets, Entity Framework, LINQ to SQL, WCF, or SharePoint, the concept of a "data source" does not apply. Just connect directly to the database by using the SQLCommand objects and communicate directly with the database.  
   
--   具類型的資料集。  如需詳細資訊，請參閱[使用 Visual Studio 中的資料集](../data-tools/dataset-tools-in-visual-studio.md)。  
+ You create and edit data sources by using the **Data Source Configuration Wizard** in a Windows Forms or Windows Presentation Foundation application. For Entity Framework, first create your entity classes, and then start the wizard by selecting **Project** > **Add New Data Source** (described in more detail later in this article).  
   
--   LINQ to SQL 類別。  如需詳細資訊，請參閱[LINQ to SQL](../Topic/LINQ%20to%20SQL.md)。  
+ ![Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png "Data Source Configuration Wizard")  
+  
+ After you create a data source, it appears in the **Data Sources** tool window (Shift+Alt+D or **View** > **Other Windows** > **Data Source**). You can drag a data source from the **Data Sources** window onto a form design surface or control. This causes boilerplate code to be generated—code that displays the data that originates in the data store to the user. The following illustration shows a dataset that has been dropped onto a Windows form. If you selected F5 on the application, the data from the underlying database would appear in the form's controls.  
+  
+ ![Data Source drag operation](../data-tools/media/raddata-data-source-drag-operation.png "raddata Data Source drag operation")  
+  
+## <a name="data-source-for-a-database-or-a-database-file"></a>Data source for a database or a database file  
+  
+### <a name="dataset"></a>Dataset  
+ To create a dataset as a data source, run the **Data Source Configuration Wizard** (**Project** > **Add New Data Source**) and choose the **Database** data-source type. Follow the prompts to specify a new or existing database connection, or a database file.  
+  
+### <a name="entity-classes"></a>Entity classes  
+ To create an Entity Framework model as a data source, first run the **Entity Data Model Wizard** to create the entity classes (**Project** > **Add New Item** > **ADO.NET Entity Data Model**).  
+  
+ ![New Entity Framework model project item](../data-tools/media/raddata-new-entity-framework-model-project-item.png "raddata New Entity Framework model project item")  
+  
+ Choose the method by which you want to generate the model.  
+  
+ ![Entity Data Model Wizard](../data-tools/media/raddata-entity-data-model-wizard.png "raddata Entity Data Model Wizard")  
+  
+ Add the model as a data source. The classes that were generated appear in the **Data Source Configuration Wizard** when you choose the **Objects** category.  
+  
+ ![Data Source Configuration Wizard with Entity Classes](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png "raddata Data Source Configuration Wizard with Entity Classes")  
+  
+## <a name="data-source-for-a-service"></a>Data source for a service  
+ To create a data source from a service, run the **Data Source Configuration Wizard** and choose the **Service** data-source type. This is really just a shortcut to the **Add Service Reference** dialog box, which you can also access by right-clicking the project in **Solution Explorer** and selecting **Add service reference**.  
+  
+ When you create a data source from a service, Visual Studio adds a service reference to your project. Visual Studio also creates proxy objects that correspond to the objects that the service returns. For example, a service that returns a dataset is represented in your project as a dataset; a service that returns a specific type is represented in your project as the type returned.  
+  
+ You can create a data source from the following types of services:  
+  
+-   WCF Data Services. For more information, see [Overview](/dotnet/framework/data/wcf/wcf-data-services-overview).  
+  
+-   WCF services. For more information, see [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+  
+-   Web services.  
   
     > [!NOTE]
-    >  不同於以實體資料模型為基礎的概念模型和資料集，LINQ to SQL 類別無法透過 \[**資料來源組態精靈**\] 來建立。  它們也不會出現在 \[**資料來源**\] 視窗中，因此無法拖曳至設計工具建立資料繫結控制項。  不過，您可以根據 LINQ to SQL 類別建立物件資料來源，並將這些物件拖曳至設計工具。  如需詳細資訊，請參閱[HOW TO：建立對應到資料表和檢視的 LINQ to SQL 類別 \(O\/R 設計工具\)](../Topic/How%20to:%20Create%20LINQ%20to%20SQL%20classes%20mapped%20to%20tables%20and%20views%20\(O-R%20Designer\).md)。  
+    >  The items that appear in the **Data Sources** window are dependent on the data that the service returns. Some services might not provide enough information for the **Data Source Configuration Wizard** to create bindable objects. For example, if the service returns an untyped dataset, no items will appear in the **Data Sources** window when you complete the wizard. This is because untyped datasets do not provide a schema, and therefore the wizard does not have enough information to create the data source.  
   
-### 從區域資料庫檔案建立的資料來源  
- 您也可以從下列類型的資料庫檔案建立資料來源：Access 資料庫 \(.mdb 檔案\)、SQL Server Express LocalDB 資料庫 \(.mdf 檔案\) 和 SQL Server Express 資料庫 \(.mdf 檔案\)。  從這些資料庫檔案建立資料來源時，可以將資料庫檔案直接加入至專案。  如需詳細資訊，請參閱下列主題：  
+## <a name="data-source-for-an-object"></a>Data source for an object  
+ You can create a data source from any object that exposes one or more public properties by running the **Data Source Configuration Wizard** and then selecting the **Object** data-source type. All public properties of an object are displayed in the **Data Sources** window.   If you are using Entity Framework and have generated a model, this is where you find the entity classes that will be the data sources for your application.  
   
--   [區域資料概觀](../data-tools/local-data-overview.md)  
+ On the **Select the Data Objects** page, expand the nodes in the tree view to locate the objects that you want to bind to. The tree view contains nodes for your project and for assemblies and other projects that are referenced by your project.  
   
--   [如何：管理專案中的本機資料檔](../data-tools/how-to-manage-local-data-files-in-your-project.md)  
+ If you want to bind to an object in an assembly or project that does not appear in the tree view, click **Add Reference** and use the **Add Reference Dialog Box** to add a reference to the assembly or project. After you add the reference, the assembly or project is added to the tree view.  
   
-## 從服務建立的資料來源  
- 您可以從服務建立資料來源，其方式是執行 \[**資料來源組態精靈**\]，並選取 \[**服務**\] 資料來源類型。  如需詳細資訊，請參閱[如何：連接至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
+> [!NOTE]
+>  You may need to build the project that contains your objects before the objects appear in the tree view.  
   
- 當您從服務建立資料來源時，Visual Studio 會在專案中加入服務參考。  Visual Studio 也會建立對應於服務所傳回之物件的 Proxy 物件。  例如，傳回資料集的服務會在專案中表示為資料集，而傳回特定類型的服務，則會在專案中表示為傳回的類型。  
+> [!NOTE]
+>  To support drag-and-drop data binding, objects that implement the <xref:System.ComponentModel.ITypedList> or <xref:System.ComponentModel.IListSource> interface must have a default constructor. Otherwise, Visual Studio cannot instantiate the data-source object, and it will display an error when you drag the item to the design surface.  
   
- 您可以從下列服務類型建立資料來源：  
+## <a name="data-source-for-a-sharepoint-list"></a>Data source for a SharePoint list  
+ You can create a data source from a SharePoint list by running the **Data Source Configuration Wizard** and selecting the **SharePoint** data-source type. SharePoint exposes data through [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)], so creating a SharePoint data source is the same as creating a data source from a service. Selecting the **SharePoint** item in the **Data Source Configuration Wizard** opens the **Add Service Reference** dialog box, where you connect to the SharePoint data service by pointing to the SharePoint server.  This requires the SharePoint SDK.  
   
--   WCF 資料服務。  如需詳細資訊，請參閱[概觀](../Topic/WCF%20Data%20Services%20Overview.md)。  
-  
--   Windows Communication Foundation \(WCF\) 服務。  如需詳細資訊，請參閱[Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)。  
-  
--   Web 服務。  如需詳細資訊，請參閱[Not in Build: Introduction to Programming Web Services in Managed Code](http://msdn.microsoft.com/zh-tw/bd8861f3-39e1-4c06-995e-677e007eb961)。  
-  
-    > [!NOTE]
-    >  \[**資料來源**\] 視窗中出現的項目需視服務所傳回的資料而定。  某些服務可能不會提供足夠的資訊，讓 \[**資料來源組態精靈**\] 建立可繫結的物件。  例如，如果服務傳回不具類型的資料集，則完成精靈之後，在 \[**資料來源**\] 視窗中不會出現任何項目。  這是因為不具類型的資料集不會提供結構描述，所以精靈沒有充分資訊來建立資料來源。  
-  
-## 從物件建立資料來源  
- 您可以從公開一個或多個公用屬性的任何物件建立資料來源，其方式是執行 \[**資料來源組態精靈**\]，然後選取 \[**物件**\] 資料來源類型。  物件的所有公用屬性都會顯示在 \[**資料來源**\] 視窗中。  如需詳細資訊，請參閱[如何：連接至物件中的資料](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md)。  
-  
- 如需繫結至物件的詳細資訊，請參閱 [Visual Studio 中的物件繫結](../data-tools/bind-objects-in-visual-studio.md)。  
-  
-## 從 SharePoint 清單建立的資料來源  
- 您可以從 SharePoint 清單建立資料來源，其方式是執行 \[**資料來源組態精靈**\]，並選取 \[**SharePoint**\] 資料來源類型。  SharePoint 透過 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 公開資料，因此建立 SharePoint 資料來源和從服務建立資料來源效果相同。  在 \[**資料來源組態精靈**\] 中選取 \[**SharePoint**\] 項目，會開啟 \[**加入服務參考**\] 對話方塊，您可以在此指向 SharePoint 伺服器連接至 SharePoint 資料來源。  如需詳細資訊，請參閱[如何：連接至服務中的資料](../data-tools/how-to-connect-to-data-in-a-service.md)。  
-  
-## 請參閱  
- [將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)   
- [資料來源視窗](../Topic/Data%20Sources%20Window.md)   
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)

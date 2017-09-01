@@ -1,33 +1,38 @@
 ---
 title: "來自非同步 Windows 執行階段方法的特殊錯誤屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- javascript
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
 caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 120d8f699c8bedd0fe5762300203c5d5ec18e73e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/11/2017
+
 ---
-# 來自非同步 Windows 執行階段方法的特殊錯誤屬性
-因為錯誤可能會從呼叫堆疊中某深處擲回，在 JavaScript 中偵錯非同步 Windows 執行階段方法非常困難。  JavaScript `Error` 物件有額外屬性，只有在應用程式是以偵錯模式執行，從非同步 Windows 執行階段方法擲回錯誤時，才會顯示這些屬性。  
+# <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>來自非同步 Windows 執行階段方法的特殊錯誤屬性
+可能很難針對 JavaScript 中的非同步 Windows 執行階段方法進行偵錯，因為可能會從呼叫堆疊深層擲回錯誤。 應用程式以偵錯模式執行時，JavaScript `Error` 物件有些額外屬性只會出現在從非同步 Windows 執行階段方法擲回錯誤時。  
   
-## 特殊的錯誤屬性  
- 因偵錯模式中失敗的 Windows 執行階段非同步作業所產生的錯誤物件，有下列特殊屬性：  
+## <a name="special-error-properties"></a>特殊錯誤屬性  
+ 在偵錯模式中，因失敗 Windows 執行階段非同步作業而導致的錯誤物件具有下列特殊屬性：  
   
--   `asyncOpSource` \(物件\)：取得有關造成錯誤之呼叫進行的原始位置的資訊。  屬性 `asyncOpSource.originatingCall` \(字串\) 顯示使用者程式碼中產生非同步作業的位置。  
+-   `asyncOpSource` (物件) 取得進行已產生錯誤之呼叫的原始位置資訊。 屬性 `asyncOpSource.originatingCall` (字串) 顯示使用者程式碼中產生非同步作業的位置。  
   
--   asyncOpType \(字串\)：取得引發錯誤的非同步作業型別名稱。  
+-   asyncOpType (字串) 取得引發錯誤之非同步作業類型的名稱。  
   
  如需非同步作業錯誤的詳細資訊，請參閱：  
   
--   [How to handle errors with promises](http://msdn.microsoft.com/zh-tw/01d5a901-c4ea-46f6-8005-6d39c32203eb)  
+-   [如何使用 Promise 處理錯誤 (HTML)](https://msdn.microsoft.com/en-us/library/windows/apps/hh700337.aspx)  
   
--   [疑難排解 Windows 執行階段錯誤](http://msdn.microsoft.com/zh-tw/1ef7d7df-82ac-441d-8ad0-54ab1318de64)
+-   [為 Windows 執行階段錯誤進行疑難排解](http://msdn.microsoft.com/en-us/1ef7d7df-82ac-441d-8ad0-54ab1318de64)

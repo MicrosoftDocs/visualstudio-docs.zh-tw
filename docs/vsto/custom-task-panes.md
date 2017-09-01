@@ -1,157 +1,161 @@
 ---
-title: "自訂工作窗格"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "增益集 [Visual Studio 中的 Office 程式開發], 自訂工作窗格"
-  - "應用程式層級增益集 [Visual Studio 中的 Office 程式開發], 自訂工作窗格"
-  - "自訂工作窗格 [Visual Studio 中的 Office 程式開發]"
-  - "自訂工作窗格 [Visual Studio 中的 Office 程式開發], 關於自訂工作窗格"
-  - "自訂工作窗格 [Visual Studio 中的 Office 程式開發], 建立"
-  - "自訂工作窗格 [Visual Studio 中的 Office 程式開發], 多個應用程式視窗"
-  - "含有自訂工作窗格的多個應用程式視窗 [Visual Studio 中的 Office 程式開發]"
-  - "Visual Studio 中的 Office 程式開發, 工作窗格"
-  - "工作窗格 [Visual Studio 中的 Office 程式開發]"
-  - "工作窗格 [Visual Studio 中的 Office 程式開發], 關於自訂工作窗格"
-  - "工作窗格 [Visual Studio 中的 Office 程式開發], 建立"
-  - "工作窗格 [Visual Studio 中的 Office 程式開發] 多個應用程式視窗"
-  - "使用者介面面板 [Visual Studio 中的 Office 程式開發]"
-  - "使用者介面 [Visual Studio 中的 Office 程式開發], 自訂工作窗格"
+title: Custom Task Panes | Microsoft Docs
+ms.custom: 
+ms.date: 02/02/2017
+ms.prod: visual-studio-dev14
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, task panes
+- user interface panels [Office development in Visual Studio]
+- task panes [Office development in Visual Studio]
+- user interfaces [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio], creating
+- task panes [Office development in Visual Studio]. multiple application windows
+- custom task panes [Office development in Visual Studio], multiple application windows
+- task panes [Office development in Visual Studio], creating
+- application-level add-ins [Office development in Visual Studio], custom task panes
+- multiple applications windows with custom task panes [Office development in Visual Studio]
+- add-ins [Office development in Visual Studio], custom task panes
+- custom task panes [Office development in Visual Studio]
+- task panes [Office development in Visual Studio], about custom task panes
+- custom task panes [Office development in Visual Studio], about custom task panes
 ms.assetid: 9a415109-5333-433e-95c6-3d59ce9c4d02
 caps.latest.revision: 52
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 51
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: b99d43d4e775e118d60ba692f4dde615cbb6f5f6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 自訂工作窗格
-  工作窗格是通常停駐在 Microsoft Office 應用程式視窗一側的使用者介面面板。  自訂工作窗格為您提供建立個人專屬工作窗格的方法，也為使用者提供了熟悉的介面，供他們用來存取您方案的功能。  例如，介面中可以包含控制項，而這些控制項則會執行程式碼來修改文件或顯示資料來源中的資料。  
+# <a name="custom-task-panes"></a>Custom Task Panes
+  Task panes are user interface panels that are typically docked to one side of a window in a Microsoft Office application. Custom task panes give you a way to create your own task pane and provide users with a familiar interface to access your solution's features. For example, the interface can contain controls that run code to modify documents or display data from a data source.  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
 > [!NOTE]  
->  自訂工作窗格與執行窗格不同。  而執行窗格則屬於 Microsoft Office Word 和 Microsoft Office Excel 之文件層級自訂的一部分。  如需詳細資訊，請參閱[執行窗格概觀](../vsto/actions-pane-overview.md)。  
+>  A custom task pane differs from the actions pane. The actions pane is part of document-level customizations for Microsoft Office Word and Microsoft Office Excel. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
   
-## 自訂工作窗格的優點  
- 自訂工作窗格可以讓您將功能整合成熟悉的使用者介面。  您可以利用 Visual Studio 工具快速建立自訂工作窗格。  
+## <a name="benefits-of-custom-task-panes"></a>Benefits of Custom Task Panes  
+ Custom task panes let you integrate your features into a familiar user interface. You can create a custom task pane quickly by using Visual Studio tools.  
   
-### 熟悉的使用者介面  
- Microsoft Office System 應用程式的使用者已經十分熟悉工作窗格的用法，例如 Word 中的 \[樣式與格式設定\] 工作窗格。  自訂工作窗格的行為與 Microsoft Office system 的其他工作窗格相同。  使用者可以將自訂工作窗格固定至應用程式視窗的不同側，或是他們可以將自訂工作窗格拖曳到視窗中的任何位置。  您可以建立同時顯示多個自訂工作窗格的 VSTO 增益集，而且使用者可以個別控制每個工作窗格。  
+### <a name="familiar-user-interface"></a>Familiar User Interface  
+ Users of applications in the Microsoft Office system are already familiar with using task panes such as the **Styles and Formatting** task pane in Word. Custom task panes behave like other task panes in the Microsoft Office system. Users can dock custom task panes to different sides of the application window, or they can drag custom task panes to any location in the window. You can create a VSTO Add-in that displays multiple custom task panes at the same time, and users can control each task pane individually.  
   
-### Windows Form 支援  
- 您以 Visual Studio 中的 Office 開發工具建立的自訂工作窗格使用者介面是以 Windows Forms 控制項為基礎。  您可以使用熟悉的 \[Windows Form 設計工具\] 設計自訂工作窗格的使用者介面。  也可以使用 Windows Form 中的資料繫結支援，將資料來源繫結至工作窗格上的控制項。  
+### <a name="windows-forms-support"></a>Windows Forms Support  
+ The user interface of a custom task pane that you create by using the Office development tools in Visual Studio is based on Windows Forms controls. You can use the familiar Windows Forms Designer to design the user interface for a custom task pane. You can also use the data binding support in Windows Forms to bind a data source to controls on the task pane.  
   
-## 建立自訂工作窗格  
- 您可以利用下列兩個步驟建立基本的自訂工作窗格：  
+## <a name="creating-a-custom-task-pane"></a>Creating a Custom Task Pane  
+ You can create a basic custom task pane in two steps:  
   
-1.  將 Windows Form 控制項加入 <xref:System.Windows.Forms.UserControl> 物件，以建立自訂工作窗格的使用者介面。  
+1.  Create a user interface for your custom task pane by adding Windows Forms controls to a <xref:System.Windows.Forms.UserControl> object.  
   
-2.  將使用者控制項傳遞給 VSTO 增益集中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> 物件，將自訂工作窗格具現化。  這個集合會傳回可以用來修改工作窗格外觀以及回應使用者事件的新 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。  
+2.  Instantiate the custom task pane by passing the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> object in your VSTO Add-in. This collection returns a new <xref:Microsoft.Office.Tools.CustomTaskPane> object that you can use to modify the appearance of the task pane and respond to user events.  
   
- 如需詳細資訊，請參閱[如何：在應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。  
+ For more information, see [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).  
   
-### 建立使用者介面  
- 所有以 Visual Studio 中的 Office 開發工具建立的自訂工作窗格都會包含 <xref:System.Windows.Forms.UserControl> 物件。  這個使用者控制項提供了自訂工作窗格的使用者介面。  您可以在設計階段或執行階段建立此使用者控制項。  如果您在設計階段建立此使用者控制項，即可使用 \[Windows Form 設計工具\] 建構工作窗格的使用者介面。  
+### <a name="creating-the-user-interface"></a>Creating the User Interface  
+ All custom task panes that are created by using the Office development tools in Visual Studio contain a <xref:System.Windows.Forms.UserControl> object. This user control provides the user interface of your custom task pane. You can create the user control at design time or at run time. If you create the user control at design time, you can use the Windows Forms Designer to construct the user interface of your task pane.  
   
-### 具現化自訂工作窗格  
- 建立包含自訂工作窗格使用者介面的使用者控制項之後，您必須具現化 <xref:Microsoft.Office.Tools.CustomTaskPane>。  若要這樣做，請呼叫其中一個 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法，以便將使用者控制項傳遞至 VSTO 增益集中的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>。  此集合會公開為 `ThisAddIn` 類別的 `CustomTaskPanes` 欄位。  下列程式碼範例預定由 `ThisAddIn` 類別執行。  
+### <a name="instantiating-the-custom-task-pane"></a>Instantiating the Custom Task Pane  
+ After you create a user control that contains the user interface of the custom task pane, you have to instantiate a <xref:Microsoft.Office.Tools.CustomTaskPane>. To do this, pass the user control to the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> in your VSTO Add-in by calling one of the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods. This collection is exposed as the `CustomTaskPanes` field of the `ThisAddIn` class. The following code example is intended to be run from the `ThisAddIn` class.  
   
- [!code-csharp[Trin_TaskPaneBasic#2](../snippets/csharp/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/CS/ThisAddIn.cs#2)]
- [!code-vb[Trin_TaskPaneBasic#2](../snippets/visualbasic/VS_Snippets_OfficeSP/Trin_TaskPaneBasic/VB/ThisAddIn.vb#2)]  
+ [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)] [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]  
   
- <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法會傳回新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件。  您可以使用這個物件修改工作窗格的外觀，並回應使用者事件。  
+ The <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> methods return a new <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can use this object to modify the appearance of the task pane and to respond to user events.  
   
-### 在多個視窗中控制工作窗格  
- 自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢視。  顯示相關聯的視窗時才能顯示工作窗格。  
+### <a name="controlling-the-task-pane-in-multiple-windows"></a>Controlling the Task Pane in Multiple Windows  
+ Custom task panes are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible.  
   
- 若要判斷顯示自訂工作窗格的視窗，則當您建立工作窗格時，請使用適當的 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法多載：  
+ To determine which window displays the custom task pane, use the appropriate <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method overload when you create the task pane:  
   
--   若要使工作窗格與現用視窗產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+-   To associate the task pane with the active window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
--   若要使工作窗格與指定之視窗所裝載的文件產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法。  
+-   To associate the task pane with a document that is hosted by a specified window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method.  
   
- 當有多個視窗開啟時，有些 Office 應用程式對於何時建立或顯示工作窗格需要獲得明確的指示。  因此一定要考慮在何處具現化程式碼中的自訂工作窗格，以確保工作窗格會在應用程式中顯示適當的文件或項目。  如需詳細資訊，請參閱[管理應用程式視窗中的自訂工作窗格](#Managing)。  
+ Some Office applications require explicit instructions for when to create or display your task pane when more than one window is open. This makes it important to consider where to instantiate the custom task pane in your code to ensure that the task pane appears with the appropriate documents or items in the application. For more information, see [Managing Custom Task Panes in Application Windows](#Managing).  
   
-## 從工作窗格存取應用程式  
- 如果您要從使用者控制項自動化應用程式，可以使用程式碼中的 `Globals.ThisAddIn.Application` 直接存取物件模型。  靜態 `Globals` 類別會提供對 `ThisAddIn` 物件的存取。  這個物件的 `Application` 欄位為應用程式之物件模型的進入點。  
+## <a name="accessing-the-application-from-the-task-pane"></a>Accessing the Application from the Task Pane  
+ If you want to automate the application from the user control, you can directly access the object model by using `Globals.ThisAddIn.Application` in your code. The static `Globals` class provides access to the `ThisAddIn` object. The `Application` field of this object is the entry point into the object model of the application.  
   
- 如需 `ThisAddIn` 物件之 `Application` 欄位的詳細資訊，請參閱[VSTO 增益集程式設計](../vsto/programming-vsto-add-ins.md)。  如需示範如何從自訂工作窗格自動化應用程式的逐步解說，請參閱[逐步解說：運用自訂工作窗格自動化應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  如需 `Globals` 類別的詳細資訊，請參閱[全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)。  
+ For more information about the `Application` field of the `ThisAddIn` object, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md). For a walkthrough that demonstrates how to automate an application from a custom task pane, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md). For more information about the `Globals` class, see [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md).  
   
-## 管理工作窗格的使用者介面  
- 在您建立工作窗格之後，可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件的屬性和事件來控制工作窗格的使用者介面，以及在使用者變更工作窗格時予以回應。  
+## <a name="managing-the-user-interface-of-the-task-pane"></a>Managing the User Interface of the Task Pane  
+ After you create the task pane, you can use properties and events of the <xref:Microsoft.Office.Tools.CustomTaskPane> object to control the user interface of the task pane and to respond when the user changes the task pane.  
   
-### 顯示自訂工作窗格  
- 根據預設，工作窗格為隱藏狀態。  若要顯示工作窗格，您必須將 <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 設定為 **true**。  
+### <a name="making-the-custom-task-pane-visible"></a>Making the Custom Task Pane Visible  
+ By default, the task pane is not visible. To make the task pane visible, you must set the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property to **true**.  
   
- 使用者隨時可以按一下工作窗格角落的 \[關閉\] 按鈕 \(X\)，以關閉工作窗格。  但是，無法透過任何預設方法再次開啟自訂工作窗格。  如果使用者關閉了自訂工作窗格，除非您提供顯示工作窗格的方法，否則使用者將無法再次檢視該自訂工作窗格。  
+ Users can close a task pane at any time by clicking the **Close** button (X) in the corner of the task pane. However, there is no default way for users to open the custom task pane again. If a user closes a custom task pane, that user cannot view the custom task pane again unless you provide a way to display it.  
   
- 如果在 VSTO 增益集中建立自訂工作窗格，則應同時建立 UI 項目，例如使用者可以按一下來顯示或隱藏自訂工作窗格的按鈕。  如果您在支援自訂功能區的 Microsoft Office 應用程式中建立自訂工作窗格，可以將控制項群組加入功能區，且該功能區的按鈕可顯示或隱藏自訂工作窗格。  如需示範如何執行這項操作的逐步解說，請參閱[逐步解說：使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
+ If you create a custom task pane in your VSTO Add-in, you should also create a UI element, such as a button, that users can click to display or hide your custom task pane. If you create a custom task pane in a Microsoft Office application that supports customizing the Ribbon, you can add a control group to the Ribbon with a button that displays or hides your custom task pane. For a walkthrough that demonstrates how to do this, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
   
- 如果您在不支援自訂功能區的 Microsoft Office 應用程式中建立自訂工作窗格，則可加入用來顯示或隱藏自訂工作窗格的 <xref:Microsoft.Office.Core.CommandBarButton>。  
+ If you create a custom task pane in a Microsoft Office application that does not support customizing the Ribbon, you can add a <xref:Microsoft.Office.Core.CommandBarButton> that displays or hides your custom task pane.  
   
-### 修改工作窗格的外觀  
- 您可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件的屬性，控制自訂工作窗格的大小和位置。  您還可以使用包含在自訂工作窗格內之 <xref:System.Windows.Forms.UserControl> 物件的屬性，對自訂工作窗格的外觀進行其他多項變更。  例如，您可以使用使用者控制項的 <xref:System.Windows.Forms.Control.BackgroundImage%2A> 屬性，指定自訂工作窗格的背景影像。  
+### <a name="modifying-the-appearance-of-the-task-pane"></a>Modifying the Appearance of the Task Pane  
+ You can control the size and location of a custom task pane by using properties of the <xref:Microsoft.Office.Tools.CustomTaskPane> object. You can make many other changes to the appearance of a custom task pane by using properties of the <xref:System.Windows.Forms.UserControl> object that is contained in the custom task pane. For example, you can specify a background image for a custom task pane by using the <xref:System.Windows.Forms.Control.BackgroundImage%2A> property of the user control.  
   
- 下表列出可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 屬性進行的自訂工作窗格變更。  
+ The following table lists the changes you can make to a custom task pane by using <xref:Microsoft.Office.Tools.CustomTaskPane> properties.  
   
-|工作|屬性|  
-|--------|--------|  
-|變更工作窗格的大小|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
-|變更工作窗格的位置|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
-|隱藏或顯示工作窗格|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
-|避免使用者變更工作窗格的位置|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
+|Task|Property|  
+|----------|--------------|  
+|To change the size of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.Height%2A><br /><br /> <xref:Microsoft.Office.Tools.CustomTaskPane.Width%2A>|  
+|To change the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPosition%2A>|  
+|To hide the task pane or make it visible|<xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A>|  
+|To prevent the user from changing the location of the task pane|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionRestrict%2A>|  
   
-### 自訂工作窗格事件的程式設計  
- 您可能希望 VSTO 增益集能夠在使用者修改自訂工作窗格時做出回應。  例如，如果使用者將窗格從垂直方向改成水平方向，您可能會想要重新置放控制項。  
+### <a name="programming-custom-task-pane-events"></a>Programming Custom Task Pane Events  
+ You might want your VSTO Add-in to respond when the user modifies the custom task pane. For example, if the user changes the orientation of the pane from vertical to horizontal, you might want to reposition the controls.  
   
- 下表列出您可以處理的事件，以回應使用者對自訂工作窗格所進行的變更。  
+ The following table lists the events that you can handle to respond to changes that the user makes to the custom task pane.  
   
-|工作|事件|  
-|--------|--------|  
-|在使用者變更工作窗格的位置時回應。|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
-|在使用者隱藏或顯示工作窗格時回應。|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
+|Task|Event|  
+|----------|-----------|  
+|To respond when the user changes the location of the task pane.|<xref:Microsoft.Office.Tools.CustomTaskPane.DockPositionChanged>|  
+|To respond when the user hides the task pane or makes it visible.|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|  
   
-## 清除工作窗格所使用的資源  
- 在您建立自訂工作窗格之後，只要 VSTO 增益集還在執行中，<xref:Microsoft.Office.Tools.CustomTaskPane> 物件就會留在記憶體中。  甚至在使用者按一下工作窗格角落的 \[關閉\] 按鈕 \(X\) 後，此物件仍會留在記憶體中。  
+## <a name="cleaning-up-resources-used-by-the-task-pane"></a>Cleaning Up Resources Used by the Task Pane  
+ After you create a custom task pane, the <xref:Microsoft.Office.Tools.CustomTaskPane> object remains in memory as long as your VSTO Add-in is running. The object remains in memory even after the user clicks the **Close** button (X) in the corner of the task pane.  
   
- 若要在 VSTO 增益集仍執行時清除工作窗格使用的資源，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 或 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 方法。  這些方法會從 `CustomTaskPanes` 集合中移除指定的 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件，並且呼叫該物件的 <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> 方法。  
+ To clean up resources used by the task pane while the VSTO Add-in is still running, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods. These methods remove the specified <xref:Microsoft.Office.Tools.CustomTaskPane> object from the `CustomTaskPanes` collection, and they call the <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> method of the object.  
   
- 當 VSTO 增益集卸載時，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會自動清除自訂工作窗格使用的資源。  請不要在專案的 `ThisAddIn_Shutdown` 事件處理常式中呼叫 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 或 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 方法。  因為 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 會在呼叫 `ThisAddIn_Shutdown` 之前先清除 <xref:Microsoft.Office.Tools.CustomTaskPane> 物件使用的資源，所以這些方法會擲回 <xref:System.ObjectDisposedException>。  如需 `ThisAddIn_Shutdown` 的詳細資訊，請參閱 [Office 專案中的事件](../vsto/events-in-office-projects.md)。  
+ The [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] automatically cleans up resources used by the custom task pane when the VSTO Add-in is unloaded. Do not call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> or <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> methods in the `ThisAddIn_Shutdown` event handler in your project. These methods will throw an <xref:System.ObjectDisposedException>, because the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] cleans up resources used by the <xref:Microsoft.Office.Tools.CustomTaskPane> object before `ThisAddIn_Shutdown` is called. For more information about `ThisAddIn_Shutdown`, see [Events in Office Projects](../vsto/events-in-office-projects.md)  
   
-##  <a name="Managing"></a> 管理多個應用程式視窗中的自訂工作窗格  
- 在使用多重視窗的應用程式中建立自訂工作窗格以顯示文件和其他項目時，需要採取額外步驟以確保工作窗格能夠在使用者需要時顯示。  
+##  <a name="Managing"></a> Managing Custom Task Panes in Multiple Application Windows  
+ When you create a custom task pane in an application that uses multiple windows to display documents and other items, you need to take extra steps to ensure that the task pane is visible when the user expects it to be.  
   
- 所有應用程式中的自訂工作窗格會與文件框架視窗產生關聯，而該框架視窗會對使用者呈現文件或項目的檢視。  顯示相關聯的視窗時才能顯示工作窗格。  但是，並非所有應用程式都以相同方式來使用文件框架視窗。  
+ Custom task panes in all applications are associated with a document frame window, which presents a view of a document or item to the user. The task pane is visible only when the associated window is visible. However, not all applications use document frame windows the same way.  
   
- 下列應用程式群組具有不同的開發需求：  
+ The following application groups have different development requirements:  
   
 -   [Outlook](#Outlook)  
   
--   [Word、InfoPath 和 PowerPoint](#WordAndInfoPath)  
+-   [Word, InfoPath, and PowerPoint](#WordAndInfoPath)  
   
- ![視訊的連結](~/data-tools/media/playvideo.gif "視訊的連結") 如需相關的影片示範，請參閱[如何：管理 Word VSTO 增益集中的工作窗格？](http://go.microsoft.com/fwlink/?LinkId=136781)。  
+ ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Manage Task Panes in Word VSTO Add-ins?](http://go.microsoft.com/fwlink/?LinkId=136781).  
   
 ##  <a name="Outlook"></a> Outlook  
- 當您建立 Outlook 的自訂工作窗格時，自訂工作窗格將與特定 \[總管\] 或 \[檢查\] 視窗相關聯。  \[總管\] 視窗可顯示資料夾內容，而 \[檢查\] 視窗則會顯示電子郵件訊息或工作之類的項目。  
+ When you create a custom task pane for Outlook, the custom task pane is associated with a specific Explorer or Inspector window. Explorers are windows that display the contents of a folder, and Inspectors are windows that display an item such as an e-mail message or a task.  
   
- 如果要在多個 \[總管\] 或 \[檢查\] 視窗中顯示自訂工作窗格，您需要在 \[總管\] 或 \[檢查\] 視窗開啟時，建立自訂工作窗格的新執行個體。  若要這麼做，請在建立 \[總管\] 或 \[檢查\] 視窗時處理引發的事件，然後在事件處理常式中建立工作窗格。  您也可以處理 \[總管\] 與 \[檢查\] 事件，依據可見的視窗來隱藏或顯示工作窗格。  
+ If you want to display a custom task pane with multiple Explorer or Inspector windows, you need to create a new instance of the custom task pane when an Explorer or Inspector window opens. To do this, handle an event that is raised when an Explorer or Inspector window is created, and then create the task pane in the event handler. You can also handle Explorer and Inspector events to hide or display task panes depending on which window is visible.  
   
- 若要將工作窗格與特定 \[總管\] 或 \[檢查\] 產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法來建立工作窗格，並將 <xref:Microsoft.Office.Interop.Outlook.Explorer> 或 <xref:Microsoft.Office.Interop.Outlook.Inspector> 物件傳遞給 *window* 參數。  如需建立自訂工作窗格的詳細資訊，請參閱[自訂工作窗格概觀](../vsto/custom-task-panes.md)。  
+ To associate the task pane with a specific Explorer or Inspector, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass the <xref:Microsoft.Office.Interop.Outlook.Explorer> or <xref:Microsoft.Office.Interop.Outlook.Inspector> object to the *window* parameter. For more information about creating custom task panes, see [Custom Task Panes Overview](../vsto/custom-task-panes.md).  
   
- 如需示範如何為每個開啟的電子郵件訊息建立工作窗格的逐步解說，請參閱[逐步解說：在 Outlook 中的電子郵件訊息顯示自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
+ For a walkthrough that demonstrates how to create a task pane for every e-mail message that is opened, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
   
-### Outlook 事件  
- 若要監視 \[總管\] 視窗的狀態，可以處理下列與 \[總管\] 相關的事件：  
+### <a name="outlook-events"></a>Outlook Events  
+ To monitor the state of Explorer windows, you can handle the following Explorer-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorersEvents_Event.NewExplorer>  
   
@@ -161,7 +165,7 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Deactivate>  
   
- 若要監視 \[檢查\] 視窗的狀態，可以處理下列與 \[檢查\] 相關的事件：  
+ To monitor the state of Inspector windows, you can handle the following Inspector-related events:  
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorsEvents_Event.NewInspector>  
   
@@ -171,20 +175,20 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Deactivate>  
   
-### 避免在 Outlook 中顯示自訂工作窗格的多個執行個體  
- 若要避免 Outlook 視窗顯示自訂工作窗格的多個執行個體，請在關閉每個視窗時，從 `ThisAddIn` 類別的 `CustomTaskPanes` 集合中明確移除自訂工作窗格。  請在視窗關閉時所引發的事件 \(例如 <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 或 <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>\) 中呼叫 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 方法。  
+### <a name="preventing-multiple-instances-of-a-custom-task-pane-in-outlook"></a>Preventing Multiple Instances of a Custom Task Pane in Outlook  
+ To prevent Outlook windows from displaying multiple instances of a custom task pane, explicitly remove the custom task pane from the `CustomTaskPanes` collection of the `ThisAddIn` class when each window is closed. Call the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> method in an event that is raised when a window is closed, such as <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> or <xref:Microsoft.Office.Interop.Outlook.InspectorEvents_10_Event.Close>.  
   
- 如果您沒有明確移除自訂工作窗格，Outlook 視窗可能會顯示自訂工作窗格的多個執行個體。  Outlook 有時會回收視窗，而回收的視窗會保留對其附加之任何自訂工作窗格的參考。  
+ If you do not explicitly remove the custom task pane, Outlook windows might display multiple instances of the custom task pane. Outlook sometimes recycles windows, and recycled windows retain references to any custom task panes that were attached to them.  
   
-##  <a name="WordAndInfoPath"></a> Word、InfoPath 和 PowerPoint  
- Word、InfoPath 和 PowerPoint 會顯示不同文件框架視窗中的每份文件。  當您建立這些應用程式的自訂工作窗格時，自訂工作窗格只會與特定文件相關聯。  如果使用者開啟不同的文件，則自訂工作窗格會等到先前的文件重新顯示之後才會取消隱藏。  
+##  <a name="WordAndInfoPath"></a> Word, InfoPath, and PowerPoint  
+ Word, InfoPath, and PowerPoint display each document in a different document frame window. When you create a custom task pane for these applications, the custom task pane is associated only with a specific document. If the user opens a different document, the custom task pane is hidden until the earlier document is visible again.  
   
- 如果要在多份文件中顯示自訂工作窗格，可以在使用者建立新文件或開啟現有文件時，建立自訂工作窗格的新執行個體。  若要這麼做，請在建立或開啟文件時處理引發的事件，然後在事件處理常式中建立工作窗格。  您也可以處理文件事件，依據可見的文件來隱藏或顯示工作窗格。  
+ If you want to display a custom task pane with multiple documents, create a new instance of the custom task pane when the user creates a new document or opens an existing document. To do this, handle events that are raised when a document is created or opened, and then create the task pane in the event handlers. You can also handle document events to hide or display task panes depending on which document is visible.  
   
- 若要使工作窗格與特定文件視窗產生關聯，請使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法來建立工作窗格和傳遞 <xref:Microsoft.Office.Interop.Word.Window> \(適用於 Word\)，<xref:Microsoft.Office.Interop.InfoPath.WindowObject> \(適用於 InfoPath\)，或 <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> \(適用於 PowerPoint\) 到 *window* 參數。  
+ To associate the task pane with a specific document window, use the <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> method to create the task pane, and pass a <xref:Microsoft.Office.Interop.Word.Window> (for Word),  <xref:Microsoft.Office.Interop.InfoPath.WindowObject> (for InfoPath), or <xref:Microsoft.Office.Interop.PowerPoint.DocumentWindow> (for PowerPoint) to the *window* parameter.  
   
-### Word 事件  
- 若要在 Word 中監視文件視窗的狀態，您可以處理下列事件：  
+### <a name="word-events"></a>Word Events  
+ To monitor the state of document windows in Word, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>  
   
@@ -196,8 +200,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>  
   
-### InfoPath 事件  
- 若要在 InfoPath 中監視文件視窗的狀態，您可以處理下列事件：  
+### <a name="infopath-events"></a>InfoPath Events  
+ To monitor the state of document windows in InfoPath, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>  
   
@@ -209,8 +213,8 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>  
   
-### PowerPoint 事件  
- 若要在 PowerPoint 中監視文件視窗的狀態，您可以處理下列事件：  
+### <a name="powerpoint-events"></a>PowerPoint Events  
+ To monitor the state of document windows in PowerPoint, you can handle the following events:  
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation>  
   
@@ -224,10 +228,9 @@ caps.handback.revision: 51
   
 -   <xref:Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate>  
   
-## 請參閱  
- [如何：在應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [逐步解說：運用自訂工作窗格自動化應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [逐步解說：使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [逐步解說：在 Outlook 中的電子郵件訊息顯示自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
-  
-  
+## <a name="see-also"></a>See Also  
+ [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+

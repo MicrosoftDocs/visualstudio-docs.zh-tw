@@ -1,75 +1,86 @@
 ---
-title: "使用多層式架構應用程式中的資料集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Basic], N-Tier 應用程式"
-  - "資料集專案 [VS N-Tier 應用程式]"
-  - "資料集 [Visual Basic], N-Tier 應用程式"
-  - "分散式應用程式 [VS N-Tier 應用程式]"
-  - "多層應用程式"
-  - "多層資料庫應用程式"
-  - "N-Tier 應用程式"
-  - "TableAdapter, N-Tier 應用程式"
-  - "層, N-Tier 應用程式"
-  - "具類型資料集, N-Tier 應用程式"
+title: Work with datasets in n-tier applications | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- datasets [Visual Basic], n-tier applications
+- multi-tier database applications
+- DataSet project [VS n-tier applications]
+- distributed applications [VS n-tier applications]
+- data [Visual Basic], n-tier applications
+- TableAdapters, n-tier applications
+- n-tier applications
+- tiers, n-tier applications
+- typed datasets, n-tier applications
+- multiple tier applications
 ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 caps.latest.revision: 22
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: cb5ce71b5bbe9a5f580661fc3e1b8822cbd66b6e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
+
 ---
-# 使用多層式架構應用程式中的資料集
-*「多層式架構資料應用程式」*\(N\-tier data application\) 是以資料為主而且分成多個邏輯層 \(或*「層級」*\(tier\)\) 的應用程式。  換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。  如需詳細資訊，請參閱[多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。  
+# <a name="work-with-datasets-in-n-tier-applications"></a>Work with datasets in n-tier applications
+*N-tier data applications* are data-centric applications that are separated into multiple logical layers (or *tiers*). In other words, an n-tier data application is an application that is separated into multiple projects, with the data access tier, the business logic tier, and the presentation tier each in its own project. For more information, see [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md).  
   
- 具類型資料集已獲增強，因此可將 TableAdapter 和資料集類別產生為離散專案。  這提供快速分隔應用程式層以及產生多層式架構資料應用程式的能力。  
+ Typed datasets have been enhanced so that the TableAdapters and dataset classes can be generated into discrete projects. This provides the ability to quickly separate application layers and generate n-tier data applications.  
   
- 具類型資料集中的多層式架構支援會將應用程式架構的反覆開發啟用為多層式架構設計，並移除手動將程式碼分隔為多個專案的需求。  請使用[建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)開始設計資料層。  當您準備好採用應用程式架構進行多層式架構設計時，請設定資料集的 \[資料集專案\] 屬性，以將資料集類別產生為不同的專案。  
+ N-tier support in typed datasets enables iterative development of the application architecture to an n-tier design.It also removes the requirement to manually separate the code into more than one project. Start out designing the data layer by using the **Dataset Designer**. When you're ready to take the application architecture to an n-tiered design, set the **DataSet Project** property of a dataset to generate the dataset class into a separate project.  
   
-## 在本節中  
- [如何：將資料集和 TableAdapters 分成不同的專案](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
- 描述如何將產生的資料集類別移出含有產生的 TableAdapter 類別的專案，以及產生為新的專案。  
+## <a name="in-this-section"></a>In This Section  
+ [Separate datasets and TableAdapters into different projects](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)  
+ Describes how to move the generated dataset class out of the project that contains the generated TableAdapter classes and into a new project.  
   
- [如何：將程式碼加入 N\-Tier 應用程式中的 TableAdapters](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
- 描述如何產生部分類別，而使用部分類別可以加入多層式架構 TableAdapter 的程式碼。  
+ [Add code to TableAdapters in n-tier applications](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+ Describes how to generate a partial class in which code can be added for an n-tier TableAdapter.  
   
- [如何：將程式碼加入 N\-Tier 應用程式中的資料集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
- 描述如何產生部分類別，而使用部分類別可以加入多層式架構資料集的程式碼。  
+ [Add code to datasets in n-tier applications](../data-tools/add-code-to-datasets-in-n-tier-applications.md)  
+ Describes how to generate a partial class in which code can be added for an n-tier dataset.  
   
- [如何：將驗證加入 N\-Tier 資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)  
- 描述在何處加入程式碼，以執行資料變更驗證。  
+ [Add validation to an n-tier dataset](../data-tools/add-validation-to-an-n-tier-dataset.md)  
+ Describes where to add code to perform validation on changing data.  
   
- [逐步解說：建立 N\-Tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
- 提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。  
+ [Walkthrough: Creating an N-Tier Data Application](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
+ Provides step-by-step instructions for creating a typed dataset and separating the TableAdapter and dataset code into multiple projects.  
   
- [逐步解說：將驗證加入至 N\-Tier 資料應用程式](../Topic/Walkthrough:%20Adding%20Validation%20to%20an%20N-Tier%20Data%20Application.md)  
- 提供用於加入多層式架構資料應用程式逐步解說中所建立應用程式的驗證的逐步指示。  
-  
-## 參考  
+## <a name="reference"></a>Reference  
  <xref:System.Data.DataSet>  
   
  <xref:System.Data.TypedTableBase%601>  
   
-## 相關章節  
- [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)  
+## <a name="related-sections"></a>Related Sections  
+ [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)  
   
- [階層式更新](../data-tools/hierarchical-update.md)  
+ [Hierarchical update](../data-tools/hierarchical-update.md)  
   
- [使用 Visual Studio 中的資料集](../data-tools/dataset-tools-in-visual-studio.md)  
+ [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
- [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)  
+ [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)  
   
- [TableAdapter 概觀](../data-tools/tableadapter-overview.md)  
+ [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
   
- [使用 LINQ to SQL 的 N\-Tier 和遠端應用程式](../Topic/N-Tier%20and%20Remote%20Applications%20with%20LINQ%20to%20SQL.md)
+ [N-Tier and Remote Applications with LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

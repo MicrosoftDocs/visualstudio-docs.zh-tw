@@ -1,56 +1,130 @@
 ---
-title: "運算式評估的實作範例 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "運算試評估工具"
-  - "偵錯的 [偵錯 SDK]，運算式評估工具"
-  - "運算式評估、 範例"
+title: Sample Implementation of Expression Evaluation | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- expression evaluators
+- debugging [Debugging SDK], expression evaluators
+- expression evaluation, examples
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# 運算式評估的實作範例
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ca872421d20d1d1a85cb2c5db621de28adee356d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
+---
+# <a name="sample-implementation-of-expression-evaluation"></a>Sample Implementation of Expression Evaluation
 > [!IMPORTANT]
->  在 Visual Studio 2015，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱 [CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  In Visual Studio 2015, this way of implementing expression evaluators is deprecated. For information about implementing CLR expression evaluators, please see [CLR Expression Evaluators](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) and [Managed Expression Evaluator Sample](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- 如 **監看式** 視窗運算式，Visual Studio 會呼叫 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 產生 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 物件。`IDebugExpressionContext2::ParseText` 具現化的運算式評估工具 \(EE\) 並呼叫 [剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 取得 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 物件。  
+ For a **Watch** window expression, Visual Studio calls [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) to produce an [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) object. `IDebugExpressionContext2::ParseText` instantiates an expression evaluator (EE) and calls [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) to obtain an [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) object.  
   
- 這項實作的 `IDebugExpressionEvaluator::Parse` 會執行下列工作:  
+ This implementation of `IDebugExpressionEvaluator::Parse` performs the following tasks:  
   
-1.  \[只有 c \+ \+\]剖析運算式，尋找錯誤。  
+1.  [C++ only] Parses the expression to look for errors.  
   
-2.  具現化類別 \(稱為 `CParsedExpression` 在此範例中\) 來實作 `IDebugParsedExpression` 介面，並儲存在類別中，運算式才能進行剖析。  
+2.  Instantiates a class (called `CParsedExpression` in this example) that implements the `IDebugParsedExpression` interface and stores in the class the expression to be parsed.  
   
-3.  傳回 `IDebugParsedExpression` 介面從 `CParsedExpression` 物件。  
+3.  Returns the `IDebugParsedExpression` interface from the `CParsedExpression` object.  
   
 > [!NOTE]
->  在接下來的範例和 MyCEE 範例中，運算式評估工具不會分隔求值的剖析。  
+>  In the examples that follow and in the MyCEE sample, the expression evaluator does not separate the parsing from the evaluation.  
   
-## Managed 程式碼  
- 這是實作 `IDebugExpressionEvaluator::Parse` managed 程式碼中。 請注意，這個版本的方法會延遲到剖析 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 為剖析的程式碼也會評估一次 \(請參閱 [監看式運算式評估](../../extensibility/debugger/evaluating-a-watch-expression.md)\)。  
+## <a name="managed-code"></a>Managed Code  
+ This is an implementation of `IDebugExpressionEvaluator::Parse` in managed code. Note that this version of the method defers the parsing to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) as the code for parsing also evaluates at the same time (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```c#  
-namespace EEMC { public class CParsedExpression : IDebugParsedExpression { public HRESULT Parse( string                 expression, uint                   parseFlags, uint                   radix, out string                 errorMessage, out uint                   errorPosition, out IDebugParsedExpression parsedExpression) { errorMessage = ""; errorPosition = 0; parsedExpression = new CParsedExpression(parseFlags, radix, expression); return COM.S_OK; } } }  
+```csharp  
+namespace EEMC  
+{  
+    public class CParsedExpression : IDebugParsedExpression  
+    {  
+        public HRESULT Parse(  
+                string                 expression,   
+                uint                   parseFlags,  
+                uint                   radix,  
+            out string                 errorMessage,   
+            out uint                   errorPosition,   
+            out IDebugParsedExpression parsedExpression)  
+        {   
+            errorMessage = "";  
+            errorPosition = 0;  
+  
+            parsedExpression =  
+                new CParsedExpression(parseFlags, radix, expression);  
+            return COM.S_OK;  
+        }  
+    }  
+}  
 ```  
   
-## Unmanaged 程式碼  
- 這是實作 `IDebugExpressionEvaluator::Parse` unmanaged 程式碼中。 這個方法會呼叫 helper 函式， `Parse`, ，若要剖析的運算式和檢查是否發生錯誤，但這個方法會忽略所產生的值。 正式的評估會延後到 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 時進行評估，其中剖析運算式 \(請參閱 [監看式運算式評估](../../extensibility/debugger/evaluating-a-watch-expression.md)\)。  
+## <a name="unmanaged-code"></a>Unmanaged Code  
+ This is an implementation of `IDebugExpressionEvaluator::Parse` in unmanaged code. This method calls a helper function, `Parse`, to parse the expression and check for errors but this method ignores the resulting value. The formal evaluation is deferred to [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) where the expression is parsed while it is evaluated (see [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
   
-```cpp#  
-STDMETHODIMP CExpressionEvaluator::Parse( in    LPCOLESTR                 pszExpression, in    PARSEFLAGS                flags, in    UINT                      radix, out   BSTR                     *pbstrErrorMessages, inout UINT                     *perrorCount, out   IDebugParsedExpression  **ppparsedExpression ) { if (pbstrErrorMessages == NULL) return E_INVALIDARG; else *pbstrErrormessages = 0; if (pparsedExpression == NULL) return E_INVALIDARG; else *pparsedExpression = 0; if (perrorCount == NULL) return E_INVALIDARG; HRESULT hr; // Look for errors in the expression but ignore results hr = ::Parse( pszExpression, pbstrErrorMessages ); if (hr != S_OK) return hr; CParsedExpression* pparsedExpr = new CParsedExpression( radix, flags, pszExpression ); if (!pparsedExpr) return E_OUTOFMEMORY; hr = pparsedExpr->QueryInterface( IID_IDebugParsedExpression, reinterpret_cast<void**>(ppparsedExpression) ); pparsedExpr->Release(); return hr; }  
+```cpp  
+STDMETHODIMP CExpressionEvaluator::Parse(  
+        in    LPCOLESTR                 pszExpression,  
+        in    PARSEFLAGS                flags,  
+        in    UINT                      radix,  
+        out   BSTR                     *pbstrErrorMessages,  
+        inout UINT                     *perrorCount,  
+        out   IDebugParsedExpression  **ppparsedExpression  
+    )  
+{  
+    if (pbstrErrorMessages == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pbstrErrormessages = 0;  
+  
+    if (pparsedExpression == NULL)  
+        return E_INVALIDARG;  
+    else  
+        *pparsedExpression = 0;  
+  
+    if (perrorCount == NULL)  
+        return E_INVALIDARG;  
+  
+    HRESULT hr;  
+    // Look for errors in the expression but ignore results  
+    hr = ::Parse( pszExpression, pbstrErrorMessages );  
+    if (hr != S_OK)  
+        return hr;  
+  
+    CParsedExpression* pparsedExpr = new CParsedExpression( radix, flags, pszExpression );  
+    if (!pparsedExpr)  
+        return E_OUTOFMEMORY;  
+  
+    hr = pparsedExpr->QueryInterface( IID_IDebugParsedExpression,  
+                                      reinterpret_cast<void**>(ppparsedExpression) );  
+    pparsedExpr->Release();  
+  
+    return hr;  
+}  
 ```  
   
-## 請參閱  
- [監看式\] 視窗中的運算式評估](../Topic/Evaluating%20a%20Watch%20Window%20Expression.md)   
- [監看式運算式評估](../../extensibility/debugger/evaluating-a-watch-expression.md)
+## <a name="see-also"></a>See Also  
+ [Evaluating a Watch Window Expression](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
+ [Evaluating a Watch Expression](../../extensibility/debugger/evaluating-a-watch-expression.md)

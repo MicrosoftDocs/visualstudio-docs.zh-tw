@@ -35,10 +35,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 203e1e27cc892e96b103fc6cb22a73672a8e16af
-ms.openlocfilehash: 927d80ec00ee69ca6aa59f257826307bcd3fe513
-ms.lasthandoff: 03/01/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
+ms.openlocfilehash: 2430531e4ddb3a5ef40cd773327311fa7b85ce48
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/23/2017
 
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
@@ -97,7 +98,7 @@ ms.lasthandoff: 03/01/2017
 |`RemoveMetadata`|選擇性屬性。<br /><br /> 不要傳輸到目標項目之來源項目的中繼資料。 所有中繼資料會從來源項目傳輸到目標項目，名稱包含在以分號分隔的名稱清單中之中繼資料除外。 如需詳細資訊，請參閱[項目](../msbuild/msbuild-items.md)。<br /><br /> 這個屬性只有在針對 `ItemGroup` 中的 `Target` 項目指定時才有效。|  
 |`Update`|選擇性屬性。 (僅適用於 Visual Studio 2017 或更新版本的 .NET Core 專案)。<br /><br /> 可讓您修改使用 Glob 隨附之檔案的中繼資料。<br /><br />  僅有當項目所在的 `ItemGroup` 不屬於 `Target` 時，針對該項目指定這個屬性才有效。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
 
 |項目|說明|  
 |-------------|-----------------|  

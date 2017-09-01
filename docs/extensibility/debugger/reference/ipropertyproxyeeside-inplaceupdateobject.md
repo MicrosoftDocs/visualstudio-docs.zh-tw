@@ -1,5 +1,5 @@
 ---
-title: "IPropertyProxyEESide::InPlaceUpdateObject |Microsoft 文件"
+title: IPropertyProxyEESide::InPlaceUpdateObject | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,49 +30,50 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f07bc5831a0c25d4006005dd2c97af0ec111559a
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 1971b553a355b415543aba8ae8936a69e771976b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
-使用指定的資料物件更新物件的資料，並傳回新的資料物件，表示物件的新資料。  
+Updates the object's data with the given data object and returns a new data object representing the object's new data.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT InPlaceUpdateObject(  
    [in] IEEDataStorage*   dataIn,  
    [out] IEEDataStorage** dataOut  
 );  
 ```  
   
-```c#  
+```csharp  
 int InPlaceUpdateObject(  
    IEEDataStorage     dataIn,  
    out IEEDataStorage dataOut  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `dataIn`  
- [in][IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含新的資料。  
+ [in] An [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the new data.  
   
  `dataOut`  
- [out]傳回新`IEEDataStorage`物件，其中包含被取代的資料。  
+ [out] Returns a new `IEEDataStorage` object containing the replaced data.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 這個方法實際上會更新物件的資料。 在傳回的資料[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件就不需要將連入中的資料相同`IEEDataStorage`物件，但傳回的物件必須反映屬性的目前值。  
+## <a name="remarks"></a>Remarks  
+ This method actually updates the object's data. The data in the returned [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object does not need to be the same as the data in the incoming `IEEDataStorage` object, but the returned object must reflect the property's current value.  
   
- EE 尚未通常實作將傳入的資料物件。 不過，這個方法所傳回的物件一定會實作 EE，它可讓 EE 實作`IEEDataStorage`上想要使用任何類別介面。  
+ The incoming data object is typically not implemented by the EE. However, the object returned by this method is always implemented by the EE, which lets the EE implement the `IEEDataStorage` interface on whatever class is desired.  
   
- [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)方法會建立連入的資料物件為基礎的資料物件，但不會影響屬性的原始資料。  
+ The [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) method creates a data object based on the incoming data object but does not affect the property's original data.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)   
  [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

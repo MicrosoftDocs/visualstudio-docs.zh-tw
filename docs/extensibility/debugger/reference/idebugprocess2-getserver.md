@@ -1,52 +1,69 @@
 ---
-title: "IDebugProcess2::GetServer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetServer"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetServer"
+title: IDebugProcess2::GetServer | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugProcess2::GetServer
+helpviewer_keywords:
+- IDebugProcess2::GetServer
 ms.assetid: 8f73c530-cceb-4f1f-8c63-1cc0ccd4a310
 caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
----
-# IDebugProcess2::GetServer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: a9f6575b8f6266149f4b9ba1c49d3a0a33359c68
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-取得的伺服器上執行此程序。  
+---
+# <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
+Gets the server that this process is running on.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT GetServer(   
-   IDebugCoreServer2** ppServer  
+```cpp  
+HRESULT GetServer(   
+   IDebugCoreServer2** ppServer  
 );  
 ```  
   
-```c#  
-int GetServer(   
-   out IDebugCoreServer2 ppServer  
+```csharp  
+int GetServer(   
+   out IDebugCoreServer2 ppServer  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ppServer`  
- \[\] out傳回[IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)物件，代表此程序正在執行的伺服器。  
+ [out] Returns an [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) object that represents the server on which this process is running.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 可以在單一機器上執行一個以上的伺服器。  
+## <a name="remarks"></a>Remarks  
+ More than one server can be running on a single machine.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

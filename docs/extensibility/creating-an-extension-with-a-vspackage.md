@@ -1,45 +1,62 @@
 ---
-title: "使用 VSPackage 建立擴充功能 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Creating an Extension with a VSPackage | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
 caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
----
-# 使用 VSPackage 建立擴充功能
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 938cdf3b4e23ee7a6f68d1219e3e89a19bcbcba5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-本逐步解說會示範如何建立 VSIX 專案，並加入 VSPackage 專案項目。 我們將取得以顯示訊息方塊的 UI 殼層服務使用 VSPackage。  
+---
+# <a name="creating-an-extension-with-a-vspackage"></a>Creating an Extension with a VSPackage
+This walkthrough shows you how to create a VSIX project and add a VSPackage project item. We will use the VSPackage to get the UI Shell service in order to show a message box.  
   
-## 必要條件  
- 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
+## <a name="prerequisites"></a>Prerequisites  
+ Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
-## 建立 VSPackage  
+## <a name="creating-a-vspackage"></a>Creating a VSPackage  
   
-1.  建立 VSIX 專案，名為 **FirstPackage**。 您可以找到 VSIX 專案範本，在 **新的專案** 下的對話方塊 **Visual C\# \/ 擴充性**。  
+1.  Create a VSIX project named **FirstPackage**. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
   
-2.  專案開啟時，加入名為的 Visual Studio 封裝項目範本 **FirstPackage**。 在 **方案總管\] 中**, ，以滑鼠右鍵按一下專案節點，然後選取 **加入 \/ 新的項目**。 在 **加入新項目** \] 對話方塊中，移至 **Visual C\# \/ 擴充性** ，然後選取 **Visual Studio 套件**。 在 **名稱** 視窗的底部欄位中，將命令檔名稱變更為 **FirstPackage.cs**。  
+2.  When the project opens, add a Visual Studio package item template named **FirstPackage**. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item** dialog, go to **Visual C# / Extensibility** and select **Visual Studio Package**. In the **Name** field at the bottom of the window, change the command file name to **FirstPackage.cs**.  
   
-3.  建置此專案並開始偵錯。  
+3.  Build the project and start debugging.  
   
-     Visual Studio 的實驗執行個體隨即出現。 如需詳細的實驗執行個體的詳細資訊，請參閱 [實驗執行個體](../extensibility/the-experimental-instance.md)。  
+     The experimental instance of Visual Studio appears. For more information about the experimental instance, see [The Experimental Instance](../extensibility/the-experimental-instance.md).  
   
-4.  在實驗執行個體中，開啟 **工具 \/ 擴充功能和更新** 視窗。 您應該會看到 **FirstPackage** 這裡延伸模組。 \(如果您開啟 **擴充功能和更新** 在 Visual Studio 的工作執行個體，不會看到 **FirstPackage**\)。  
+4.  In the experimental instance, open the **Tools / Extensions and Updates** window. You should see the **FirstPackage** extension here. (If you open **Extensions and Updates** in your working instance of Visual Studio, you won't see **FirstPackage**).  
   
-## 載入 VSPackage  
- 此時延伸模組未載入，因為其中沒有任何會導致它載入。 \(按一下功能表命令，開啟 \[工具\] 視窗\)，其 ui 或藉由指定特定 UI 的內容中，應該載入 VSPackage 互動時，您通常可以載入擴充功能。 如需載入 Vspackage 和 UI 內容的詳細資訊，請參閱 [載入 Vspackage](../extensibility/loading-vspackages.md)。 此程序，顯示將如何開啟方案時，載入 VSPackage。  
+## <a name="loading-the-vspackage"></a>Loading the VSPackage  
+ At this point the extension does not load, because there is nothing that causes it to load. You can generally load an extension when you interact with its UI (clicking a menu command, opening a tool window), or by specifying that the VSPackage should load in a specific UI context. For more information about loading VSPackages and UI contexts, see [Loading VSPackages](../extensibility/loading-vspackages.md). For this procedure, we'll show you how to load a VSPackage when a solution is open.  
   
-1.  開啟 FirstPackage.cs 檔案。 尋找 FirstPackage 類別的宣告。 以下列取代現有的屬性:  
+1.  Open the FirstPackage.cs file. Look for the declaration of the FirstPackage class. Replace the existing attributes with following:  
   
-    ```c#  
+    ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)] // Info on this package for Help/About  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
@@ -47,9 +64,9 @@ caps.handback.revision: 5
     public sealed class FirstPackage : Package  
     ```  
   
-2.  讓我們加入訊息，讓我們知道已載入 VSPackage。 我們使用 VSPackage initialize \(\) 方法，這樣做，因為 VSPackage 已決定位置之後，才可以取得 Visual Studio 服務。 \(如需取得服務的詳細資訊，請參閱 [如何: 取得服務](../Topic/How%20to:%20Get%20a%20Service.md)。\) 使用取得的程式碼取代 initialize \(\) 方法 FirstPackage 的 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> 服務，取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 介面，並呼叫其 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> 方法。  
+2.  Let's add a message that lets us know that the VSPackage has loaded. We use the VSPackage's Initialize() method to do this, because you can get Visual Studio services only after the VSPackage has been sited. (For more information about getting services, see [How to: Get a Service](../extensibility/how-to-get-a-service.md).) Replace the Initialize() method of FirstPackage with code that gets the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service, gets the <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface, and calls its <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ShowMessageBox%2A> method.  
   
-    ```c#  
+    ```csharp  
     protected override void Initialize()  
     {  
         base.Initialize();  
@@ -72,6 +89,6 @@ caps.handback.revision: 5
     }  
     ```  
   
-3.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
+3.  Build the project and start debugging. The experimental instance appears.  
   
-4.  在實驗執行個體中開啟方案。 您應該會看到訊息方塊，指出 **第一個封裝內 initialize \(\)**。
+4.  Open a solution in the experimental instance. You should see a message box that says **First Package Inside Initialize()**.

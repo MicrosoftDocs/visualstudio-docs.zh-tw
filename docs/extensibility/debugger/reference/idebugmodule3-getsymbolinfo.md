@@ -1,90 +1,109 @@
 ---
-title: "IDebugModule3::GetSymbolInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugModule3::GetSymbolInfo"
-helpviewer_keywords: 
-  - "GetSymbolInfo 方法"
-  - "IDebugModule3::GetSymbolInfo 方法"
+title: IDebugModule3::GetSymbolInfo | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugModule3::GetSymbolInfo
+helpviewer_keywords:
+- GetSymbolInfo method
+- IDebugModule3::GetSymbolInfo method
 ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 17
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 17
----
-# IDebugModule3::GetSymbolInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 4923c6f79299338b2e615a0c8cae25afe28f1c80
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
-擷取清單的路徑中搜尋符號，以及搜尋每個路徑的結果。  
+---
+# <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
+Retrieves a list of paths that are searched for symbols as well as the results of searching each path.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetSymbolInfo(  
-   SYMBOL_SEARCH_INFO_FIELDS  dwFields,  
-   MODULE_SYMBOL_SEARCH_INFO* pInfo  
+   SYMBOL_SEARCH_INFO_FIELDS  dwFields,  
+   MODULE_SYMBOL_SEARCH_INFO* pInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetSymbolInfo(  
-   enum_SYMBOL_SEARCH_INFO_FIELDS dwFields,   
-   MODULE_SYMBOL_SEARCH_INFO[]    pinfo  
+   enum_SYMBOL_SEARCH_INFO_FIELDS dwFields,   
+   MODULE_SYMBOL_SEARCH_INFO[]    pinfo  
 );  
   
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `dwFields`  
- \[\] in從旗標的組合 [SYMBOL\_SEARCH\_INFO\_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) 列舉指定的哪些欄位 `pInfo` 要進行填寫。  
+ [in] A combination of flags from the [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeration specifying which fields of `pInfo` are to be filled in.  
   
  `pInfo`  
- \[\] outA [MODULE\_SYMBOL\_SEARCH\_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) 會利用指定的資訊填入其成員的結構。 如果這是 null 值，這個方法會傳回 `E_INVALIDARG`。  
+ [out] A [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) structure whose members are to be filled in with the specified information. If this is a null value, this method returns `E_INVALIDARG`.  
   
-## 傳回值  
- 如果此方法成功，它會傳回 `S_OK`; 否則它會傳回錯誤碼。  
-  
-> [!NOTE]
->  傳回的字串 \(在 `MODULE_SYMBOL_SEARCH_INFO` 結構\) 可能是空的即使 `S_OK` 傳回。 在此情況下，沒有搜尋資訊來傳回。  
-  
-## 備註  
- 如果 `bstrVerboseSearchInfo` 欄位 `MODULE_SYMBOL_SEARCH_INFO` 結構不是空白，則它將包含路徑搜尋和搜尋結果的清單。 清單會格式化為有一個路徑，後面接著省略符號 （"…"），後面接著結果。 如果有多個路徑的結果組，以"\\r\\n"（復位\/換行） 配對區隔每個組。 模式看起來像這樣︰  
-  
- \< 路徑 \>...\< 結果 \> \\r\\n \< 路徑 \>...\< 結果 \> \\r\\n \< 路徑 \>...\< 結果 \>  
-  
- 請注意最後一個項目沒有 \\r\\n 順序。  
-  
-## 範例  
- 在此範例中，這個方法會傳回三個路徑有三個不同的搜尋結果。 每一行會終止復位\/換行組中。 範例輸出只會搜尋結果列印以單一字串。  
+## <a name="return-value"></a>Return Value  
+ If the method succeeds, it returns `S_OK`; otherwise, it returns an error code.  
   
 > [!NOTE]
->  狀態結果是緊接"..."到該行結尾的所有項目。  
+>  The returned string (in the `MODULE_SYMBOL_SEARCH_INFO` structure) could be empty even if `S_OK` is returned. In this case, there was no search information to return.  
   
-```cpp#  
+## <a name="remarks"></a>Remarks  
+ If the `bstrVerboseSearchInfo` field of the `MODULE_SYMBOL_SEARCH_INFO` structure is not empty, then it contains a list of paths searched and the results of that search. The list is formatted with a path, followed by an ellipsis ("..."), followed by the result. If there is more than one path result pair, then each pair is separated by a "\r\n" (carriage-return/linefeed) pair. The pattern looks like this:  
+  
+ \<path>...\<result>\r\n\<path>...\<result>\r\n\<path>...\<result>  
+  
+ Note that the last entry does not have a \r\n sequence.  
+  
+## <a name="example"></a>Example  
+ In this example, this method returns three paths with three different search results. Each line is terminated with a carriage-return/linefeed pair. The example output just prints the search results as a single string.  
+  
+> [!NOTE]
+>  A status result is everything immediately following the "..." up to the end of the line.  
+  
+```cpp  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  
 {  
-    MODULE_SYMBOL_SEARCH_INFO ssi = { 0 };  
-    HRESULT hr;  
-    hr = pIDebugModule3->GetSymbolInfo(SSIF_VERBOSE_SEARCH_INFO,&ssi);  
-    if (SUCCEEDED(hr)) {  
-        CComBSTR searchInfo = ssi.bstrVerboseSearchInfo;  
-        if (searchInfo.Length() != 0) {  
-            std::wcout << (wchar_t *)(BSTR)searchInfo;  
-            std::wcout << std::endl;  
-        }  
-    }  
+    MODULE_SYMBOL_SEARCH_INFO ssi = { 0 };  
+    HRESULT hr;  
+    hr = pIDebugModule3->GetSymbolInfo(SSIF_VERBOSE_SEARCH_INFO,&ssi);  
+    if (SUCCEEDED(hr)) {  
+        CComBSTR searchInfo = ssi.bstrVerboseSearchInfo;  
+        if (searchInfo.Length() != 0) {  
+            std::wcout << (wchar_t *)(BSTR)searchInfo;  
+            std::wcout << std::endl;  
+        }  
+    }  
 }  
 ```  
   
- **c:\\symbols\\user32.pdb...找不到檔案。 c:\\winnt\\symbols\\user32.pdb...版本不符。 \\\\symbols\\symbols\\user32.dll\\0a8sd0ad8ad\\user32.pdb...載入符號。**   
-## 請參閱  
- [SYMBOL\_SEARCH\_INFO\_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
- [MODULE\_SYMBOL\_SEARCH\_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
+ **c:\symbols\user32.pdb... File not found.**  
+**c:\winnt\symbols\user32.pdb... Version does not match.**  
+**\\\symbols\symbols\user32.dll\0a8sd0ad8ad\user32.pdb... Symbols loaded.**   
+## <a name="see-also"></a>See Also  
+ [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md)   
+ [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md)   
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

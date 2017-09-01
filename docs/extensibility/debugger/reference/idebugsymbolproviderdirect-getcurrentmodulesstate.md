@@ -1,5 +1,5 @@
 ---
-title: "IDebugSymbolProviderDirect::GetCurrentModulesState |Microsoft 文件"
+title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,43 +29,44 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 1d9b8bbfb9982bcb54a3ef90e89442b111fc9d58
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: ce289cb350dfe285d8f2f28d0cd16ed7444fd166
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-擷取的符號提供者為成員的符號群組的相關資訊。  
+Retrieves information about the symbol group of which the symbol provider is a member.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetCurrentModulesState(  
     DWORD*          pState,  
     unsigned long * count  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCurrentModulesState(  
     out uint pState,  
     out uint count  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pState`  
- [out]符號提供者群組的狀態。  
+ [out] The state of the symbol provider group.  
   
  `count`  
- [out]群組中的模組數目。  
+ [out] Number of modules in the group.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="remarks"></a>備註  
- 加入或移除符號群組模組時，狀態會變更。 因此，這個方法可以用來偵測符號群組已被修改。  
+## <a name="remarks"></a>Remarks  
+ The state is changed whenever a module is added to, or removed from, the symbol group. Therefore, this method can be used to detect if a symbol group has been modified.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

@@ -1,66 +1,83 @@
 ---
-title: "IDebugCoreServer3::EnableAutoAttach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
-helpviewer_keywords: 
-  - "IDebugCoreServer3::EnableAutoAttach"
+title: IDebugCoreServer3::EnableAutoAttach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugCoreServer3::EnableAutoAttach
+helpviewer_keywords:
+- IDebugCoreServer3::EnableAutoAttach
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
----
-# IDebugCoreServer3::EnableAutoAttach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 0d8bd772e752134a41de1edbb2888703c3ebf42d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-啟用自動附加指定的偵錯引擎。  
+---
+# <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
+Enables automatic attaching for the specified debug engines.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT EnableAutoAttach(  
-   GUID*     rgguidSpecificEngines,  
-   DWORD     celtSpecificEngines,  
-   LPCOLESTR pszStartPageUrl,  
-   BSTR*     pbstrSessionId  
+```cpp  
+HRESULT EnableAutoAttach(  
+   GUID*     rgguidSpecificEngines,  
+   DWORD     celtSpecificEngines,  
+   LPCOLESTR pszStartPageUrl,  
+   BSTR*     pbstrSessionId  
 );  
 ```  
   
-```c#  
-int EnableAutoAttach(  
-   Guid[]     rgguidSpecificEngines,  
-   uint       celtSpecificEngines,  
-   string     pszStartPageUrl,  
-   out string pbstrSessionId  
+```csharp  
+int EnableAutoAttach(  
+   Guid[]     rgguidSpecificEngines,  
+   uint       celtSpecificEngines,  
+   string     pszStartPageUrl,  
+   out string pbstrSessionId  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `rgguidSpecificEngines`  
- \[in\]若要標記為自動附加的每個偵錯引擎 Guid 的陣列。  
+ [in] Array of GUIDs for each debug engine to mark as auto-attaching.  
   
  `celtSpecificEngines`  
- \[in\]控制台中的引擎數`rgguidSpecificEngines`。  
+ [in] The number of engines specified in `rgguidSpecificEngines`.  
   
  `pszStartPageUrl`  
- \[in\]自動附加時所使用的起始 URL。  
+ [in] The starting URL to use when auto-attaching.  
   
  `pbstrSessionID`  
- \[\] out已自動附加工作階段的識別碼。  
+ [out] ID of the session that was auto-attached.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  一個錯誤碼`E_AUTO_ATTACH_NOT_REGISTERED`，表示 auto\-attach 類別處理站尚未註冊。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise returns error code. One error code is `E_AUTO_ATTACH_NOT_REGISTERED`, which indicates that the auto-attach class factory has not been registered.  
   
-## 備註  
- 指定的 URL 相關聯的程式啟動時，指定偵錯引擎自動啟動並附加。  
+## <a name="remarks"></a>Remarks  
+ When a program associated with the specified URL is started, the specified debug engines are automatically started and attached.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

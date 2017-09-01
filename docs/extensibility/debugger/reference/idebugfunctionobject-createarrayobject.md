@@ -1,76 +1,93 @@
 ---
-title: "IDebugFunctionObject::CreateArrayObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject"
-helpviewer_keywords: 
-  - "IDebugFunctionObject::CreateArrayObject 方法"
+title: IDebugFunctionObject::CreateArrayObject | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugFunctionObject::CreateArrayObject
+helpviewer_keywords:
+- IDebugFunctionObject::CreateArrayObject method
 ms.assetid: a380e53c-15f1-401f-927f-f366eea789e6
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugFunctionObject::CreateArrayObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4b4bad39cd9ad636d64ec4c6ea04583dab801e89
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-建立陣列物件。  此陣列可以包含其中一個基本項目或物件執行個體的值。  
+---
+# <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
+Creates an array object. This array can contain either primitive or object instance values.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT CreateArrayObject(   
-   OBJECT_TYPE    ot,  
-   IDebugField*   pClassField,  
-   DWORD          dwRank,  
-   DWORD          dwDims[],  
-   DWORD          dwLowBounds[],  
-   IDebugObject** ppObject  
+```cpp  
+HRESULT CreateArrayObject(   
+   OBJECT_TYPE    ot,  
+   IDebugField*   pClassField,  
+   DWORD          dwRank,  
+   DWORD          dwDims[],  
+   DWORD          dwLowBounds[],  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int CreateArrayObject(  
-   enum_OBJECT_TYPE ot,   
-   IDebugField      pClassField,   
-   uint             dwRank,   
-   uint[]           dwDims,   
-   uint[]           dwLowBounds,   
-   out IDebugObject ppObject  
+   enum_OBJECT_TYPE ot,   
+   IDebugField      pClassField,   
+   uint             dwRank,   
+   uint[]           dwDims,   
+   uint[]           dwLowBounds,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `ot`  
- \[in\]指定值，從[OBJECT\_TYPE](../../../extensibility/debugger/reference/object-type.md)列舉型別，指出新的陣列物件的型別。  
+ [in] Specifies a value from the [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeration indicating the type of the new array object.  
   
  `pClassField`  
- \[in\][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表類別的物件，如果正在建立物件的陣列執行個體的值。  如果建立基本的物件陣列，這個參數會是 null 值。  
+ [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object representing the class of an object, if creating an array of object instance values. If creating an array of primitive objects, this parameter is a null value.  
   
  `dwRank`  
- \[in\]陣序規範的陣列維度的數目。  
+ [in] The rank or number of dimensions of the array.  
   
  `dwDims`  
- \[in\]陣列的每個維度的大小。  
+ [in] The sizes of each dimension of the array.  
   
  `dwLowBounds`  
- \[in\]每個維度的來源 \(通常是 0 或 1\)。  
+ [in] The origin of each dimension (typically 0 or 1).  
   
  `ppObject`  
- \[\] out傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的陣列。  這實際上是[IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)物件。  
+ [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object representing the newly created array. This is actually an [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) object.  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns S_OK; otherwise, returns an error code.  
   
-## 備註  
- 呼叫這個方法來建立物件，表示陣列參數至函式由其[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
+## <a name="remarks"></a>Remarks  
+ Call this method to create an object that represents an array parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

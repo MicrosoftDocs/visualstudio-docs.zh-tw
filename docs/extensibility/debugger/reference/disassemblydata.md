@@ -1,120 +1,137 @@
 ---
-title: "DisassemblyData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DisassemblyData"
-helpviewer_keywords: 
-  - "DisassemblyData 結構"
+title: DisassemblyData | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DisassemblyData
+helpviewer_keywords:
+- DisassemblyData structure
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
----
-# DisassemblyData
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: cde2a74a390443593a8d49ce0dad57a547e0eff0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-描述一個整合式的開發環境 \(IDE\) 若要顯示的反組譯碼指令。  
+---
+# <a name="disassemblydata"></a>DisassemblyData
+Describes one disassembly instruction for the integrated development environment (IDE) to display.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-typedef struct tagDisassemblyData {   
-   DISASSEMBLY_STREAM_FIELDS dwFields;  
-   BSTR                      bstrAddress;  
-   BSTR                      bstrAddressOffset;  
-   BSTR                      bstrCodeBytes;  
-   BSTR                      bstrOpcode;  
-   BSTR                      bstrOperands;  
-   BSTR                      bstrSymbol;  
-   UINT64                    uCodeLocationId;  
-   TEXT_POSITION             posBeg;  
-   TEXT_POSITION             posEnd;  
-   BSTR                      bstrDocumentUrl;  
-   DWORD                     dwByteOffset;  
-   DISASSEMBLY_FLAGS         dwFlags;  
+```cpp  
+typedef struct tagDisassemblyData {   
+   DISASSEMBLY_STREAM_FIELDS dwFields;  
+   BSTR                      bstrAddress;  
+   BSTR                      bstrAddressOffset;  
+   BSTR                      bstrCodeBytes;  
+   BSTR                      bstrOpcode;  
+   BSTR                      bstrOperands;  
+   BSTR                      bstrSymbol;  
+   UINT64                    uCodeLocationId;  
+   TEXT_POSITION             posBeg;  
+   TEXT_POSITION             posEnd;  
+   BSTR                      bstrDocumentUrl;  
+   DWORD                     dwByteOffset;  
+   DISASSEMBLY_FLAGS         dwFlags;  
 } DisassemblyData;  
 ```  
   
-```c#  
-public struct DisassemblyData {   
-   public uint          dwFields;  
-   public string        bstrAddress;  
-   public string        bstrAddressOffset;  
-   public string        bstrCodeBytes;  
-   public string        bstrOpcode;  
-   public string        bstrOperands;  
-   public string        bstrSymbol;  
-   public ulong         uCodeLocationId;  
-   public TEXT_POSITION posBeg;  
-   public TEXT_POSITION posEnd;  
-   public string        bstrDocumentUrl;  
-   public uint          dwByteOffset;  
-   public uint          dwFlags;  
+```csharp  
+public struct DisassemblyData {   
+   public uint          dwFields;  
+   public string        bstrAddress;  
+   public string        bstrAddressOffset;  
+   public string        bstrCodeBytes;  
+   public string        bstrOpcode;  
+   public string        bstrOperands;  
+   public string        bstrSymbol;  
+   public ulong         uCodeLocationId;  
+   public TEXT_POSITION posBeg;  
+   public TEXT_POSITION posEnd;  
+   public string        bstrDocumentUrl;  
+   public uint          dwByteOffset;  
+   public uint          dwFlags;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>Members  
  `dwFields`  
- [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)用來指定哪個欄位填寫常數。  
+ The [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) constant that specifies which fields are filled out.  
   
  `bstrAddress`  
- 位移從某個起點 \(通常是相關的函式的開頭\) 位址。  
+ The address as an offset from some starting point (usually the beginning of the associated function).  
   
  `bstrCodeBytes`  
- 針對這個指令碼的位元組。  
+ The code bytes for this instruction.  
   
  `bstrOpcode`  
- 這個指令的 opcode。  
+ The opcode for this instruction.  
   
  `bstrOperands`  
- 這個指令的運算元。  
+ The operands for this instruction.  
   
  `bstrSymbol`  
- 符號名稱，如果有的話，與相關聯的位址 \(公用符號、 標籤等等\)。  
+ The symbol name, if any, associated with the address (public symbol, label, and so on).  
   
  `uCodeLocationId`  
- 反組譯此行程式碼的位置識別碼。  如果某行的程式碼內容位址大於另一個程式碼內容位址，然後反組譯的碼位置識別項的第一個也會大於第二個程式碼的位置識別碼。  
+ The code location identifier for this disassembled line. If the code context address of one line is greater than the code context address of another, then the disassembled code location identifier of the first will also be greater than the code location identifier of the second.  
   
  `posBeg`  
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) ，相對於文件中的反組譯碼資料的起始處的位置。  
+ The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) that corresponds to the position in a document where the disassembly data begins.  
   
  `posEnd`  
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) ，相對於文件中的反組譯碼資料的結束處的位置。  
+ The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) that corresponds to the position in a document where the disassembly data ends.  
   
  `bstrDocumentUrl`  
- 可以表示為檔名的文字文件`bstrDocumentUrl`何處可以找到來源，檔名中填寫欄位使用格式`部份名稱`。  
+ For text documents that can be represented as file names, the `bstrDocumentUrl` field is filled in with the file name where the source can be found, using the format `file://file name`.  
   
- 無法以檔名的文字文件`bstrDocumentUrl`是文件的唯一識別項，並且偵錯引擎必須實作[GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md)方法。  
+ For text documents that cannot be represented as file names, `bstrDocumentUrl` is a unique identifier for the document, and the debug engine must implement the [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) method.  
   
- 這個欄位也可以包含加總檢查碼的其他資訊。  如需詳細資訊，請參閱 「 備註 」。  
+ This field can also contain additional information about checksums. See Remarks for details.  
   
  `dwByteOffset`  
- 指令是從程式碼行開頭的位元組數目。  
+ The number of bytes the instruction is from the beginning of the code line.  
   
  `dwFlags`  
- [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)指定的旗標為作用中的常數。  
+ The [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md) constant that specifies which flags are active.  
   
-## 備註  
- 每個`DisassemblyData`結構描述的反組譯碼的一個指令。  這些結構的陣列傳回的[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Each `DisassemblyData` structure describes one instruction of disassembly. An array of these structures is returned from the [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) method.  
   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)結構用於文字基礎僅有文件。  針對這個指令碼範圍填寫只對第一個指令所產生的陳述式或線條，比方說，當`dwByteOffset == 0`。  
+ The [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure is used for text-based documents only. The source code range for this instruction is filled out only for the first instruction generated from a statement or line, for example, when `dwByteOffset == 0`.  
   
- 對於非文字的文件，文件內容可避免惡意程式碼，以及`bstrDocumentUrl`欄位應該是空值。  如果`bstrDocumentUrl`欄位等同於`bstrDocumentUrl`欄位在先前的`DisassemblyData`陣列元素，則設定`bstrDocumentUrl`設為 null 值。  
+ For documents that are non-textual, a document context can be obtained from the code, and the `bstrDocumentUrl` field should be a null value. If the `bstrDocumentUrl` field is the same as the `bstrDocumentUrl` field in the previous `DisassemblyData` array element, then set the `bstrDocumentUrl` to a null value.  
   
- 如果`dwFlags`欄位具有`DF_DOCUMENT_CHECKSUM`再額外加總檢查碼資訊如下的字串所指的旗標集， `bstrDocumentUrl`欄位。  具體而言，null 字串結束字元之後那里遵循，依序且後面跟著 4 個位元組值，指出加總檢查碼位元組數，依序時，接著加總檢查碼位元組的加總檢查碼演算法用來識別的 GUID。  有關如何進行編碼和解碼的欄位中，請參閱本主題中的範例[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
+ If the `dwFlags` field has the `DF_DOCUMENT_CHECKSUM` flag set, then additional checksum information follows the string pointed to by the `bstrDocumentUrl` field. Specifically, after the null string terminator, there follows a GUID identifying the checksum algorithm that is in turn followed by a 4 byte value indicating the number of bytes in the checksum and that in turn is followed by the checksum bytes. See the Example in this topic on how to encode and decode this field in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
-## 範例  
- `bstrDocumentUrl`欄位可以包含字串以外的其他資訊，如果`DF_DOCUMENT_CHECKSUM`旗標設。  建立及讀取此編碼的字串的程序相當簡單，在[!INCLUDE[vcprvc](../../../debugger/includes/vcprvc_md.md)]。  不過，在[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]，這是另外一回事。  對新手而言好奇，下列範例會示範建立編碼的字串，從一種方式[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]和單向解碼已編碼的字串，在[!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)]。  
+## <a name="example"></a>Example  
+ The `bstrDocumentUrl` field can contain additional information other than a string if the `DF_DOCUMENT_CHECKSUM` flag is set. The process of creating and reading this encoded string is straightforward in [!INCLUDE[vcprvc](../../../code-quality/includes/vcprvc_md.md)]. However, in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)], it is another matter. For those who are curious, the following example shows one way to create the encoded string from [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)] and one way to decode the encoded string in [!INCLUDE[csprcs](../../../data-tools/includes/csprcs_md.md)].  
   
-```c#  
+```csharp  
 using System;  
 using System.Runtime.InteropServices;  
   
@@ -223,11 +240,11 @@ namespace MyNamespace
 }  
 ```  
   
-## 請參閱  
- [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
- [DISASSEMBLY\_STREAM\_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
+## <a name="see-also"></a>See Also  
+ [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)   
+ [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)   
- [DISASSEMBLY\_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)   
+ [DISASSEMBLY_FLAGS](../../../extensibility/debugger/reference/disassembly-flags.md)

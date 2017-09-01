@@ -1,99 +1,116 @@
 ---
-title: "CONTEXT_COMPARE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CONTEXT_COMPARE"
-helpviewer_keywords: 
-  - "CONTEXT_COMPARE 列舉型別"
+title: CONTEXT_COMPARE | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CONTEXT_COMPARE
+helpviewer_keywords:
+- CONTEXT_COMPARE enumeration
 ms.assetid: 701ed61c-a320-4c20-a335-0b840024abc0
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# CONTEXT_COMPARE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: eaab64144ad0978a589f69005aea561c7bd74519
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-指定的準則，來比較兩個記憶體內容。  
+---
+# <a name="contextcompare"></a>CONTEXT_COMPARE
+Specifies the criteria for comparing two memory contexts.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```cpp  
+enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 typedef DWORD CONTEXT_COMPARE;  
 ```  
   
-```c#  
-public enum enum_CONTEXT_COMPARE {   
-   CONTEXT_EQUAL                 = 0x0001,  
-   CONTEXT_LESS_THAN             = 0x0002,  
-   CONTEXT_GREATER_THAN          = 0x0003,  
-   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
-   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
-   CONTEXT_SAME_SCOPE            = 0x0006,  
-   CONTEXT_SAME_FUNCTION         = 0x0007,  
-   CONTEXT_SAME_MODULE           = 0x0008,  
-   CONTEXT_SAME_PROCESS          = 0x0009  
+```csharp  
+public enum enum_CONTEXT_COMPARE {   
+   CONTEXT_EQUAL                 = 0x0001,  
+   CONTEXT_LESS_THAN             = 0x0002,  
+   CONTEXT_GREATER_THAN          = 0x0003,  
+   CONTEXT_LESS_THAN_OR_EQUAL    = 0x0004,  
+   CONTEXT_GREATER_THAN_OR_EQUAL = 0x0005,  
+   CONTEXT_SAME_SCOPE            = 0x0006,  
+   CONTEXT_SAME_FUNCTION         = 0x0007,  
+   CONTEXT_SAME_MODULE           = 0x0008,  
+   CONTEXT_SAME_PROCESS          = 0x0009  
 };  
 ```  
   
-## Members  
- CONTEXT\_EQUAL  
- 相當於目標的記憶體內容的清單中找到的第一個記憶體內容。  
+## <a name="members"></a>Members  
+ CONTEXT_EQUAL  
+ Find the first memory context in the list that is equal to the target memory context.  
   
- CONTEXT\_LESS\_THAN  
- 小於目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_LESS_THAN  
+ Find the first memory context in the list that is less than the target memory context.  
   
- CONTEXT\_GREATER\_THAN  
- 大於目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_GREATER_THAN  
+ Find the first memory context in the list that is greater than the target memory context.  
   
- CONTEXT\_LESS\_THAN\_OR\_EQUAL  
- 在第一個記憶體內容中找到小於或等於目標的記憶體內容的清單。  
+ CONTEXT_LESS_THAN_OR_EQUAL  
+ Find the first memory context in the list that is less than or equal to the target memory context.  
   
- CONTEXT\_GREATER\_THAN\_OR\_EQUAL  
- 大於或等於目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_GREATER_THAN_OR_EQUAL  
+ Find the first memory context in the list that is greater than or equal to the target memory context.  
   
- CONTEXT\_SAME\_SCOPE  
- 在相同的範圍做為目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_SAME_SCOPE  
+ Find the first memory context in the list that is in the same scope as the target memory context.  
   
- CONTEXT\_SAME\_FUNCTION  
- 在清單中位於相同的函式，為目標的記憶體範圍中找到的第一個記憶體內容。  
+ CONTEXT_SAME_FUNCTION  
+ Find the first memory context in the list that is in the same function as the target memory scope.  
   
- CONTEXT\_SAME\_MODULE  
- 在相同的模組，做為目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_SAME_MODULE  
+ Find the first memory context in the list that is in the same module as the target memory context.  
   
- CONTEXT\_SAME\_PROCESS  
- 位於相同的程序，做為目標的記憶體內容的清單中找到的第一個記憶體內容。  
+ CONTEXT_SAME_PROCESS  
+ Find the first memory context in the list that is in the same process as the target memory context.  
   
-## 備註  
- 當做引數傳遞[比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)方法。  
+## <a name="remarks"></a>Remarks  
+ Passed as an argument to the [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md) method.  
   
- 這些值用來尋找符合指定的比較準則清單中的第一個記憶體內容。  記憶體內容有一份記憶體內容相本身針對透過`IDebugMemoryContext2::Compare`方法。  在清單中是比較運算子的第一個記憶體內容`true`接下來會傳回。  
+ These values are used to find the first memory context in a list that satisfies the specified comparison criteria. A memory context is given a list of memory contexts to compare itself against through the `IDebugMemoryContext2::Compare` method. The first memory context in the list for which the comparison operator is `true` is then returned.  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>Requirements  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
+ Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [比較](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)
+## <a name="see-also"></a>See Also  
+ [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Compare](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)

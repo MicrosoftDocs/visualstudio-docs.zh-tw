@@ -1,46 +1,51 @@
 ---
 title: "建立物件 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "建構函式"
-  - "建構函式, 包括屬性與方法"
-  - "建立物件"
-  - "建立物件, 關於建立物件"
-  - "建立物件, 建構函式"
-  - "建立物件, 原型"
-  - "自訂物件"
-  - "自訂物件, 建立"
-  - "建構函式"
-  - "初始化物件, 使用建構函式"
-  - "物件, 建立 [JavaScript]"
-  - "原型物件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- constructors, including properties and methods
+- function constructor
+- creating objects, constructor functions
+- constructor functions
+- prototype objects
+- creating objects
+- custom objects, creating
+- creating objects, about creating objects
+- objects, creating [JavaScript]
+- creating objects, prototypes
+- custom objects
+- initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
 caps.latest.revision: 19
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 19
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.translationtype: HT
+ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
+ms.openlocfilehash: 0ba7962179cc2f0fcb972caee692edabee368c7d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/11/2017
+
 ---
-# 建立物件 (JavaScript)
-您有數種方式可以使用 JavaScript 建立專屬物件。  您可以直接具現化[Object 物件](../javascript/reference/object-object-javascript.md)，然後加入專屬屬性和方法。  或者，您可以使用物件常值標記法來定義物件。  您也可以使用建構函式來定義物件。  如需使用建構函式的詳細資訊，請參閱[使用常數定義類型](../javascript/advanced/using-constructors-to-define-types.md)。  
+# <a name="creating-objects-javascript"></a>建立物件 (JavaScript)
+您有數種方式可以使用 JavaScript 建立專屬物件。 您可以直接具現化 [Object 物件](../javascript/reference/object-object-javascript.md)，然後新增專屬屬性和方法。 或者，您可以使用物件常值標記法來定義物件。 您也可以使用建構函式來定義物件。 如需使用建構函式的詳細資訊，請參閱[使用建構函式定義類型](../javascript/advanced/using-constructors-to-define-types.md)。  
   
-## 範例  
- 下列程式碼示範如何具現化物件，以及加入一些屬性。  在此情況下，只有 `pasta` 物件具有 `grain`、`width` 和 `shape` 屬性。  
+## <a name="example"></a>範例  
+ 下列程式碼示範如何具現化物件，以及加入一些屬性。 在此情況下，只有 `pasta` 物件具有 `grain`、`width` 和 `shape` 屬性。  
   
-```javascript  
-var pasta = new Object();  
+```JavaScript  
+const pasta = new Object();  
 pasta.grain = "wheat";  
 pasta.width = 0.5;  
 pasta.shape = "round";  
@@ -57,11 +62,11 @@ document.write(pasta.getShape());
   
 ```  
   
-## 物件常值  
- 當您只要想為物件建立一個執行個體時，也可以使用物件常值標記法。  下列程式碼示範如何使用物件常值標記法來具現化物件。  
+## <a name="object-literals"></a>物件常值  
+ 當您只要想為物件建立一個執行個體時，也可以使用物件常值標記法。 下列程式碼示範如何使用物件常值標記法來具現化物件。  
   
-```javascript  
-var pasta = {  
+```JavaScript  
+const pasta = {  
     grain: "wheat",  
     width: 0.5,  
     shape: "round"  
@@ -75,18 +80,18 @@ var pasta = {
   
  在 [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] 中，您可以使用縮寫語法來建立物件常值。  
   
-```javascript  
-var key = 'a';  
-var value = 5;  
+```JavaScript  
+const key = 'a';  
+const value = 5;  
   
 // Older version  
-var obj1 = {  
+const obj1 = {  
     key: key,  
     value: value  
 };  
   
 // Edge mode  
-var obj2 = {key, value};  
+const obj2 = {key, value};  
   
 console.log(obj2);  
   
@@ -96,26 +101,26 @@ console.log(obj2);
   
  下列範例示範如何使用縮寫語法以在物件常值中定義方法。  
   
-```javascript  
+```JavaScript  
 // Older versions  
-var obj = {  
+const obj = {  
     method1: function() {},  
     method2: function() {}  
 };  
   
 // Edge mode  
-var obj = {  
+const obj = {  
     method1() {},  
     method2() {}  
 };  
 ```  
   
- 您也可以在 [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] 中於物件常值中動態設定屬性名稱。  下列程式碼範例會使用 set 語法動態建立物件的屬性名稱。  
+ 您也可以在 [!INCLUDE[jsv12text](../javascript/includes/jsv12text-md.md)] 中於物件常值中動態設定屬性名稱。 下列程式碼範例會使用 set 語法動態建立物件的屬性名稱。  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     value: 0,  
     set [propName](v) {  
         this.value = v;  
@@ -135,10 +140,10 @@ console.log(obj.value);
   
  下列程式碼範例會使用 get 語法動態建立物件的屬性名稱。  
   
-```javascript  
-var propName = "prop_42";  
+```JavaScript  
+const propName = "prop_42";  
   
-var obj = {  
+const obj = {  
     get [propName]() {  
         return 777;  
     }  
@@ -150,10 +155,11 @@ console.log(obj.prop_42);
 // 777  
 ```  
   
- 下列程式碼範例會使用 [arrow function 語法](../javascript/functions-javascript.md)將 42 附加至屬性名稱來建立計算屬性。  
+ 下列程式碼範例會使用[箭號函式語法](../javascript/functions-javascript.md)將 42 附加至屬性名稱來建立計算屬性。  
   
-```javascript  
-var obj = {  
+```JavaScript  
+const obj = {  
     [ 'prop_' + (() => 42)() ]: 42  
 };  
 ```
+

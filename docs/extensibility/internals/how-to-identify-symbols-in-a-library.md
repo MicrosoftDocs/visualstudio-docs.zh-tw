@@ -1,28 +1,45 @@
 ---
-title: "如何: 識別文件庫中的符號 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "呼叫瀏覽器工具，用來識別文件庫中的符號"
-  - "呼叫瀏覽器工具"
+title: 'How to: Identify Symbols in a Library | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Call Browser tool, identifying symbols in the library
+- Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
----
-# 如何: 識別文件庫中的符號
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 099af7cc3e5f77041f95f72e7b42fd6bfb324fdc
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-符號瀏覽工具會顯示符號的階層式檢視。  符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。  
+---
+# <a name="how-to-identify-symbols-in-a-library"></a>How to: Identify Symbols in a Library
+Symbol-browsing tools display hierarchical views of symbols. The symbols represent namespaces, objects, classes, class members, and other language elements.  
   
- 在階層中的每個符號可以由傳至符號集瀏覽資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，透過下列介面：  
+ Each symbol in the hierarchy can be identified by the navigation information passed by the symbol library to the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager through the following interfaces:  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -30,11 +47,11 @@ caps.handback.revision: 21
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- 階層架構中符號的位置來區別符號。  它可讓瀏覽至特定符號的符號瀏覽工具。  唯一且完整的路徑，該符號的位置來決定的。  在路徑中的每個項目是一個節點。  路徑開頭為最上層的節點，並結束該特定的符號。  比方說，如果 M1 方法 C1 類別的成員則 C1 是 N1 命名空間中，M1 方法的完整路徑是 N1。C1。M1。  此路徑包含三個節點： N1，C1，和 M1。  
+ The location of the symbol in the hierarchy distinguishes a symbol. It allows symbol-browsing tools to navigate to a specific symbol. The unique, fully qualified path to the symbol determines the location. Each element in the path is a node. The path starts with the top-level node and ends with the specific symbol. For example, if the M1 method is a member of the C1 class and C1 is in N1 namespace, the full path of the M1 method is N1.C1.M1. This path contains three nodes: N1, C1, and M1.  
   
- 瀏覽資訊可以讓[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員來找出，請選取階層架構中的符號。  它可讓兩個瀏覽工具巡覽到另一個。  在使用時**物件瀏覽器**來瀏覽中的符號[!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)]專案，方法上按一下滑鼠右鍵，並開始**呼叫瀏覽器**工具，以顯示呼叫圖形中的方法。  
+ The navigation information allows the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager to locate, select and keep selected the symbols in the hierarchy. It allows navigating from one browsing tool to another. While using **Object Browser** to browse symbols in a [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] project, you can right click a method and start the **Call Browser** tool to display the method in a call graph.  
   
- 兩種形式描述符號位置。  標準的格式根據符號的完整路徑。  它所代表的符號階層架構中唯一的位置。  很獨立於符號瀏覽\] 工具。  若要取得標準格式的資訊， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>方法。  展示表單將告訴您在特定的符號瀏覽工具中符號的位置。  符號的位置是相對於其他符號在 hierarchicy 中的位置。  指定的符號可能會有數個簡報的路徑，但只有一個標準的路徑。  例如，假設 C1 類別從 C2 類別繼承，而這兩個類別是 N1 命名空間中**物件瀏覽器**會顯示以下的階層式樹狀目錄：  
+ Two forms describe the symbol location. The canonical form is based on the fully qualified path of the symbol. It represents a unique position of the symbol in the hierarchy. It is independent of the symbol-browsing tool. To obtain the canonical form information, the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager calls <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> method. The presentation form describes the location of the symbol within a specific symbol-browsing tool. The position of the symbol is relative to the position of other symbols in the hierarchicy. A given symbol may have several presentation paths, but only one canonical path. For example, if C1 class is inherited from C2 class and both classes are in N1 namespace, the **Object Browser** displays the following hierarchical tree:  
   
 ```  
 N1  
@@ -47,19 +64,19 @@ N1
   
 ```  
   
- C2 類別，在這個範例中，標準路徑是 N1 \+ C2。  C2 的簡報路徑包括 C1 與 「 基底和介面 」 的節點： N1 \+ C1 \+"基底和介面"\+ C2。  
+ The canonical path of C2 class, in this example, is N1 + C2. The presentation path of C2 includes C1 and "Bases and Interfaces" nodes: N1 + C1 + "Bases and Interfaces" + C2.  
   
- 若要取得簡報表單資訊的物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。  
+ To obtain the presentation form information, the object manager calls <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> method.  
   
-## 用來識別的階層架構中的符號  
+## <a name="identifying-a-symbol-in-the-hierarchy"></a>Identifying a Symbol in the Hierarchy  
   
-#### 若要取得正式而且簡報表單資訊  
+#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>To obtain canonical and presentation forms information  
   
-1.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 方法。  
+1.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> method.  
   
-     物件管理員會呼叫這個方法，以取得正式的符號路徑中所含的節點清單。  
+     The object manager calls this method to obtain the list of nodes contained in the canonical path of the symbol.  
   
-    ```vb#  
+    ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
         Dim EnumNavInfoNodes As CallBrowserEnumNavInfoNodes = _New CallBrowserEnumNavInfoNodes(m_strMethod)  
         ppEnum = CType(EnumNavInfoNodes, IVsEnumNavInfoNodes)  
@@ -67,7 +84,7 @@ N1
     End Function  
     ```  
   
-    ```c#  
+    ```csharp  
     public int EnumCanonicalNodes(out Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes ppEnum)  
     {  
         CallBrowserEnumNavInfoNodes EnumNavInfoNodes =  
@@ -78,11 +95,11 @@ N1
   
     ```  
   
-2.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 方法。  
+2.  Implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> method.  
   
-     物件管理員會呼叫這個方法，以取得該符號的簡報路徑中所含的節點清單。  
+     The object manager calls this method to obtain the list of nodes contained in the presentation path of the symbol.  
   
-## 請參閱  
- [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何: 使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何: 公開 \(expose\) 的程式庫物件管理員提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>See Also  
+ [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [How to: Register a Library with the Object Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [How to: Expose Lists of Symbols Provided by the Library to the Object Manager](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

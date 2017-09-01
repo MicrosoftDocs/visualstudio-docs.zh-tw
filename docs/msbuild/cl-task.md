@@ -40,10 +40,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: bde2b08fb3cc1b183d224ab3282e44f21a094403
-ms.lasthandoff: 04/05/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
+ms.openlocfilehash: 0e6777ed52cb1695c90ae42d7795de57f9c62169
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="cl-task"></a>CL 工作
@@ -366,7 +367,7 @@ ms.lasthandoff: 04/05/2017
   
      如果是 `true`，即會在使用 Microsoft 擴充功能 ([/Ze](/cpp/build/reference/za-ze-disable-language-extensions)) 的 [for](/cpp/cpp/for-statement-cpp) 迴圈中實作標準的 C++ 行為。  
   
-     如需詳細資訊，請參閱 [/Zc:forScope (強制 for 迴圈範圍中的一致性)](http://msdn.microsoft.com/Library/3031f02d-3b14-4ad0-869e-22b0110c3aed)。  
+     如需詳細資訊，請參閱 [/Zc:forScope (強制 for 迴圈範圍中的一致性)](/cpp/build/reference/zc-forscope-force-conformance-in-for-loop-scope)。  
   
 -   **ForcedIncludeFiles**  
   
@@ -714,7 +715,7 @@ ms.lasthandoff: 04/05/2017
   
      如果是 `true`，即會將 `wchar_t` 類型視為原生類型。  
   
-     如需詳細資訊，請參閱 [/Zc:wchar_t (wchar_t 是原生類型)](http://msdn.microsoft.com/Library/b0de5a84-da72-4e5a-9a4e-541099f939e0)。  
+     如需詳細資訊，請參閱 [/Zc:wchar_t (wchar_t 是原生類型)](/cpp/build/reference/zc-wchar-t-wchar-t-is-native-type)。  
   
 -   **UndefineAllPreprocessorDefinitions**  
   

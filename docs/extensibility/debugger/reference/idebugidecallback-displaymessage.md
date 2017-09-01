@@ -1,5 +1,5 @@
 ---
-title: "IDebugIDECallback::DisplayMessage |Microsoft 文件"
+title: IDebugIDECallback::DisplayMessage | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -28,35 +28,36 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d3aa786eb2440112713883ed6c600fc845975127
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 7b3f7e5fde160bc9d1e5ece61b810090c5dd7d9b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-將指定的訊息字串傳送至偵錯工具的輸出視窗。  
+Sends the specified message string to the debugger's output window.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT DisplayMessage (  
    LPCOLESTR szMessage  
 );  
 ```  
   
-```c#  
+```csharp  
 int DisplayMessage (  
    string szMessage  
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `szMessage`  
- [in]若要偵錯工具的 [輸出] 視窗中顯示的訊息字串。  
+ [in] Message string to display in the debugger's output window.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

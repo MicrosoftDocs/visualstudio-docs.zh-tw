@@ -1,5 +1,5 @@
 ---
-title: "驗證舊版語言服務中的中斷點 |Microsoft 文件"
+title: Validating Breakpoints in a Legacy Language Service | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,33 +29,34 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 3a8c2df45c0a834430a499cf6a7e7ef2da10bdbf
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 2a87c22948e710a3b95ee7f79b31626794dc7708
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
-# <a name="validating-breakpoints-in-a-legacy-language-service"></a>驗證舊版語言服務中的中斷點
-中斷點會指出偵錯工具正在執行時，應該特定時間點停止程式執行。 使用者可以在原始程式檔中的任一行上放置中斷點，因為編輯器並不知道何者構成有效的位置中斷點。 啟動偵錯工具時，所有標記 （稱為暫止中斷點） 的中斷點繫結至執行中的程式中的適當位置。 同時驗證中斷點，以確保它們可以將有效的程式碼位置來標示。 例如，註解上的中斷點無效，因為沒有程式碼的原始程式碼中該位置。 偵錯工具停用無效的中斷點。  
+# <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validating Breakpoints in a Legacy Language Service
+A breakpoint indicates that program execution should stop at a particular point while it is being run in a debugger. A user can place a breakpoint on any line in the source file, since the editor has no knowledge of what constitutes a valid location for a breakpoint. When the debugger is launched, all of the marked breakpoints (called pending breakpoints) are bound to the appropriate location in the running program. At the same time the breakpoints are validated to ensure that they mark valid code  locations. For example, a breakpoint on a comment is not valid, because there is no code at that location in the source code. The debugger disables invalid breakpoints.  
   
- 語言服務知道所顯示的原始碼，因為它可以在偵錯工具啟動前驗證中斷點。 您可以覆寫<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法來傳回指定中斷點的有效位置的範圍。</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 啟動偵錯工具時，但不需等到偵錯工具載入通知使用者的無效的中斷點時，仍會進行驗證中斷點的位置。  
+ Since the language service knows about the source code being displayed, it can validate breakpoints before the debugger is launched. You can override the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method to return a span specifying a valid location for a breakpoint. The breakpoint location is still validated when the debugger is launched, but the user is notified of invalid breakpoints without waiting for the debugger to load.  
   
-## <a name="implementing-support-for-validating-breakpoints"></a>實作支援驗證的中斷點  
+## <a name="implementing-support-for-validating-breakpoints"></a>Implementing Support for Validating Breakpoints  
   
--   <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法指定之中斷點的位置。</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> 您的實作必須決定位置有效，以及指出這是傳回識別程式碼的文字範圍相關聯的行位置中斷點。  
+-   The <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method is given the position of the breakpoint. Your implementation must decide whether or not the location is valid, and indicate this by returning a text span that identifies the code associated with the line position the breakpoint.  
   
--   傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>是否有效、 位置或<xref:Microsoft.VisualStudio.VSConstants.S_FALSE>如果不正確。</xref:Microsoft.VisualStudio.VSConstants.S_FALSE> </xref:Microsoft.VisualStudio.VSConstants.S_OK>  
+-   Return <xref:Microsoft.VisualStudio.VSConstants.S_OK> if the location is valid, or <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> if it is not valid.  
   
--   如果中斷點是有效的文字範圍會反白顯示中斷點以及。  
+-   If the breakpoint is valid the text span is highlighted along with the breakpoint.  
   
--   如果中斷點是無效的則會在狀態列中顯示錯誤訊息。  
+-   If the breakpoint is invalid, an error message appears in the status bar.  
   
-### <a name="example"></a>範例  
- 這個範例會示範實作<xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>方法呼叫 （如果有的話），取得一段程式碼剖析器在指定的位置。</xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A>  
+### <a name="example"></a>Example  
+ This example shows an implementation of the <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> method that calls the parser to obtain the span of code (if any) at the specified location.  
   
- 這個範例假設您已新增`GetCodeSpan`方法<xref:Microsoft.VisualStudio.Package.AuthoringSink>類別所驗證的文字範圍和傳回`true`如果它是有效的中斷點位置。</xref:Microsoft.VisualStudio.Package.AuthoringSink>  
+ This example assumes that you have added a `GetCodeSpan` method to the <xref:Microsoft.VisualStudio.Package.AuthoringSink> class that validates the text span and returns `true` if it is a valid breakpoint location.  
   
-```c#  
+```csharp  
 using Microsoft VisualStudio;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
@@ -115,5 +116,5 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [舊版的語言服務功能](../../extensibility/internals/legacy-language-service-features1.md)
+## <a name="see-also"></a>See Also  
+ [Legacy Language Service Features](../../extensibility/internals/legacy-language-service-features1.md)

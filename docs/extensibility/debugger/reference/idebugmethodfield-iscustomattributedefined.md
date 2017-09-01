@@ -1,48 +1,65 @@
 ---
-title: "IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::IsCustomAttributeDefined"
-helpviewer_keywords: 
-  - "IDebugMethodField::IsCustomAttributeDefined 方法"
+title: IDebugMethodField::IsCustomAttributeDefined | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IDebugMethodField::IsCustomAttributeDefined
+helpviewer_keywords:
+- IDebugMethodField::IsCustomAttributeDefined method
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
----
-# IDebugMethodField::IsCustomAttributeDefined
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 95a6058a5e63b4d43600bff7e567b91a1dbd964d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-判斷是否已經定義了特定的自訂屬性。  
+---
+# <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
+Determines whether a specific custom attribute has been defined.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pszCustomAttributeName`  
- \[in\]字串，包含要尋找的自訂屬性的名稱。  
+ [in] A string containing the name of the custom attribute to find.  
   
-## 傳回值  
- 傳回 S\_OK 如果自訂屬性定義在這種方法，否則會傳回 S\_FALSE。  
+## <a name="return-value"></a>Return Value  
+ Returns S_OK if the custom attribute is defined on this method, otherwise returns S_FALSE.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

@@ -1,27 +1,47 @@
 ---
-title: "剖析 Windows 8 和 Windows Server 2012 應用程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "Windows 8 和 Windows Server 2012 應用程式的效能工具 | Microsoft Docs"
+ms.custom: 
+ms.date: 06/19/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
 caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
+ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/21/2017
+
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
-Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 Windows 市集應用程式也需要新的資料收集技術。 本主題描述 Windows 8 和 Windows Server 2012 平台上的效能工具變更。  
+自 Windows 8 和 Windows Server 2012 開始的增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 Windows 市集應用程式也需要新的資料收集技術。 本主題描述自 Windows 8 和 Windows Server 2012 平台開始的效能工具變更。
   
 > [!NOTE]
->  其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。  
+>  其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。
   
-##  <a name="a-namebkmkinthistopica-in-this-topic"></a><a name="BKMK_In_this_topic"></a>本主題內容  
+##  <a name="BKMK_In_this_topic"></a>本主題內容  
  [從 Visual Studio IDE 收集 Windows 市集應用程式資料](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
@@ -32,7 +52,7 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  [收集階層互動 (TIP) 資料](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="a-namebkmkprofilingwindowsstoreappsfromthevisualstudioidea-collecting-data-on-windows-store-apps-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 市集應用程式資料  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 市集應用程式資料  
  當您剖析以 JavaScript 和 HTML 5 撰寫的 Windows 市集應用程式的程式碼時，要收集 JavaScript 程式碼的檢測資料。 當您剖析以 Visual C++、Visual C# 或 Visual Basic 撰寫的 Windows 市集應用程式或元件的程式碼時，要收集機器碼和 Managed 程式碼的取樣資料。 您可以在本機或遠端電腦上剖析應用程式的程式碼。  
   
  剖析 Windows 市集應用程式的程式碼時，不支援這些程式碼剖析的功能和選項：  
@@ -69,19 +89,19 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
  [本主題內容](#BKMK_In_this_topic)  
   
-##  <a name="a-namebkmkprofilingappsrunningonthewindows8desktoporonwindowsserver2012fromthevisualstudioidea-collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
+##  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
  Windows 8 尚未變更使用檢測方法進行程式碼剖析。  
   
  階層互動分析 (TIP) 不支援使用取樣方法。  
   
-###  <a name="a-namebkmkprofilingappsrunningonthewindows8desktoporonwindowsserver2012byusingsamplingfromthevisualstudioidea-collecting-data-on-apps-running-on-the-windows-8-desktop-or-on-windows-server-2012-by-using-sampling-from-the-visual-studio-ide"></a><a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
- 使用取樣方法剖析 Windows 8 桌面應用程式或 Windows Server 2012 應用程式時，不支援這些程式碼剖析功能和選項：  
+###  <a name="BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_by_using_sampling_from_the_Visual_Studio_IDE"></a>使用來自 Visual Studio IDE 的取樣，收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料  
+ 使用取樣方法剖析 Windows 8 桌面應用程式或 Windows Server 2012 應用程式時，不支援這些程式碼剖析功能和選項：
   
--   階層互動分析 (TIP)。 使用檢測支援收集 TIP 資料。  
+-   階層互動分析 (TIP)。 使用檢測支援收集 TIP 資料。
   
 -   取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
   
-##  <a name="a-namebkmkprofilingfromthecommandlinea-profiling-from-the-command-line"></a><a name="BKMK_Profiling_from_the_command_line"></a>從命令列進行程式碼剖析  
+##  <a name="BKMK_Profiling_from_the_command_line"></a> 從命令列進行程式碼剖析  
  您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：  
   
 |工具名稱|說明|  
@@ -108,12 +128,12 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
   
 -   取樣選項，例如設定取樣事件和逾時間隔，或收集其他效能計數器資料。  
   
-##  <a name="a-namebkmkcollectingtierinteractiontipdataa-collecting-tier-interaction-tip-data"></a><a name="BKMK_Collecting_tier_interaction__TIP__data"></a>收集階層互動 (TIP) 資料  
+##  <a name="BKMK_Collecting_tier_interaction__TIP__data"></a> 收集階層互動 (TIP) 資料  
  階層互動分析提供透過 ADO.NET 服務與資料庫通訊之多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。  
   
  **Visual Studio 版本**  
   
- 使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] 可以收集階層互動分析資料。 不過，只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 檢視階層互動分析資料。  
+ 使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)]可以收集階層互動分析資料。 不過，只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]檢視階層互動分析資料。  
   
  **Windows 8 和 Windows Server 2012**  
   
@@ -141,8 +161,3 @@ Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更�
  [效能總管](../profiling/performance-explorer.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

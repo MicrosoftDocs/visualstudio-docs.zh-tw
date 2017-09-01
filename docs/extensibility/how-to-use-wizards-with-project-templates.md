@@ -1,299 +1,332 @@
 ---
-title: "如何：搭配專案範本使用精靈 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IWizard 介面"
-  - "專案範本 [Visual Studio], 精靈"
-  - "範本 [Visual Studio], 精靈"
-  - "Visual Studio 範本, 精靈"
-  - "精靈 [Visual Studio], 專案範本"
+title: 'How to: Use Wizards with Project Templates | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- project templates [Visual Studio], wizards
+- Visual Studio templates, wizards
+- wizards [Visual Studio], project templates
+- templates [Visual Studio], wizards
+- IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 23
----
-# 如何：搭配專案範本使用精靈
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: 4dbed51c294907c35d8b87640c7308082fba35d4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-<xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 會提供 Visual Studio 介面，這個介面在實作後，可以讓您在使用者從範本建立專案時執行自訂的程式碼。  
+---
+# <a name="how-to-use-wizards-with-project-templates"></a>How to: Use Wizards with Project Templates
+Visual Studio provides the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface that, when implemented, enables you to run custom code when a user creates a project from a template.  
   
- 專案範本自訂可以用於：  
+ Project template customization can be used to display custom UI that collects user input to customize the template, add additional files to the template, or any other action allowed on a project.  
   
--   顯示會收集使用者輸入以參數化範本的自訂 UI。  
+ The <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface methods are called at various times while the project is being created, starting as soon as a user clicks **OK** on the **New Project** dialog box. Each method of the interface is named to describe the point at which it is called. For example, Visual Studio calls <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> immediately when it starts to create the project, making it a good location to write custom code to collect user input.  
   
--   加入要在範本中使用的參數值。  
+## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Creating a Project Template Project with a VSIX Project  
+ You start creating a custom template with the project template project., which is part of the Visual Studio SDK. In this procedure we will use a C# project template project, but there is also a Visual Basic project template project. Then you add a VSIX project to the solution that contains the project template project.  
   
--   將其他檔案加入範本。  
+1.  Create a C# project template project (in Visual Studio, **File / New / Project / Visual C# / Extensibility / C# Project Template**). Name it **MyProjectTemplate**.  
   
--   在專案上執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Automation 物件模型所允許的大部分動作。  
+    > [!NOTE]
+    >  You may be asked to install the Visual Studio SDK. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
- 建立專案時，會在不同的時間點呼叫 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面方法，而且只要使用者按一下 \[**新增專案**\] 對話方塊上的 \[**確定**\]，就會開始呼叫。  介面的每個方法是以描述呼叫方法的時間點來命名。  例如，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會在開始建立專案時立即呼叫 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>，使它成為撰寫自訂程式碼以收集使用者輸入的好位置。  
+2.  Add a new VSIX project (**File / New / Project / Visual C# / Extensibility / VSIX Project**) in the same solution as the project template project (in the **Solution Explorer**, select the solution node, right-click, and select **Add / New Project**). Name it **MyProjectWizard.**  
   
- 您為自訂精靈所撰寫的大部分程式碼，將使用 <xref:EnvDTE.DTE> 物件 \(它是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Automation 物件模型中的主要物件\) 來自訂專案。  如需 Automation 物件模型的詳細資訊，請參閱[擴充 Visual Studio 環境](../Topic/Extending%20the%20Visual%20Studio%20Environment.md)和[Automation 與擴充性參考](../Topic/Automation%20and%20Extensibility%20Reference.md)。  
+3.  Set the VSIX project as the startup project. In the **Solution Explorer**, select the VSIX project node, right-click, and select **Set as Startup Project**.  
   
-## 建立自訂範本精靈  
- 本主題顯示如何建立會在專案建立之前開啟 Windows Form 的自訂精靈。  此表單可以讓使用者加入自訂參數值，而此參數值將在建立專案時加入至原始程式碼。  主要的步驟一一詳述如下。  
+4.  Add the template project as an asset of the VSIX project. In the **Solution Explorer**, under the VSIX project node, find the **source.extension.vsixmanifest** file. Double-click it to open it in the manifest editor.  
   
-#### 若要建立自訂範本精靈  
+5.  In the manifest editor, select the **Assets** tab on the left side of the window.  
   
-1.  建立實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面的組件。  
+6.  In the **Assets** tab, select **New**. In the **Add New Asset** window, for the Type field, select **Microsoft.VisualStudio.ProjectTemplate**. In the **Source** field, select **A project in current solution**. In the **Project** field, select **MyProjectTemplate**. Then click **OK**.  
   
-2.  將組件安裝到全域組件快取。  
+7.  Build the solution and start debugging. A second instance of Visual Studio appears. (This may take a few minutes.)  
   
-3.  建立專案並使用 \[**匯出範本**\] 精靈，從專案建立範本。  
+8.  In the second instance of Visual Studio, try to create a new project with your new template. (**File / New / Project / Visual C# / MyProject Template**). The new project should appear with a class named **Class1**. You have now created a custom project template! Stop debugging now.  
   
-4.  在 .vstemplate 檔案中加入 `WizardExtension` 項目以修改範本，使範本連結至實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 的組件。  
+## <a name="creating-a-custom-template-wizard"></a>Creating a Custom Template Wizard  
+ This topic shows how to create a custom wizard that opens a Windows Form before the project is created. The form allows users to add a custom parameter value that is added to the source code during project creation.  
   
-5.  使用自訂精靈建立新專案。  
+1.  Set up the VSIX project to allow it to create an assembly.  
   
-## 實作 IWizard  
- 處理過程中的第一個步驟是建立實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 的組件。  這個組件會使用 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 方法顯示 Windows Form，以便讓使用者加入在建立專案時將使用到的自訂參數值。  
+2.  In the **Solution Explorer**, select the VSIX project node. Below the Solution Explorer, you should see the **Properties** window. If you do not, select **View / Properties Window**, or press **F4**. In the Properties window, select the following fields to `true`:  
   
-> [!NOTE]
->  這個範例使用 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 來實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>，不過您也可以使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]。  
+    -   **IncludeAssemblyInVSIXContainer**  
   
-#### 若要實作 IWizard  
+    -   **IncludeDebugSymbolsInVSIXContainer**  
   
-1.  建立新的類別庫專案。  
+    -   **IncludeDebugSymbolsInLocalVSIXDeployment**  
   
-2.  建立實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面的類別。  請參閱下面完整實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範例程式碼。  
+3.  Add the assembly as an asset to the VSIX project. Open the source.extension.vsixmanifest file and select the **Assets** tab. In the **Add New Asset** window, for **Type** select **Microsoft.VisualStudio.Assembly**, for **Source** select **A project in current solution**, and for **Project** select **MyProjectWizard**.  
   
- 這個範例包含兩個程式碼檔案：`IWizardImplementation` 是實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 介面的類別，而 `UserInputForm` 是讓使用者輸入的 Windows Form。  
+4.  Add the following references to the VSIX project. (In the **Solution Explorer**, under the VSIX project node select **References**, right-click, and select **Add Reference**.) In the **Add Reference** dialog,  in the **Framework** tab, find the **System.Windows Forms** assembly and select it. Now select the **Extensions** tab. find the **EnvDTE** assembly and select it. Also find the **Microsoft.VisualStudio.TemplateWizardInterface** assembly and select it. Click **OK**.  
   
-### IWizardImplementation 類別  
- `IWizardImplementation` 類別包含 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 的每個成員的方法實作。  在這個範例中，只有 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 方法會執行工作。  其他所有方法不執行任何工作，或是只傳回 `true`。  
+5.  Add a class for the wizard implementation to the VSIX project. (In the Solution Explorer, right-click the VSIX project node and select **Add**, then **New Item**, then **Class**.) Name the class **WizardImplementation**.  
   
- <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 方法接受四個參數：  
+6.  Replace the code in the **WizardImplementationClass.cs** file with the following code:  
   
--   <xref:System.Object> 參數，可以轉型為 <xref:EnvDTE._DTE> 根物件，讓您可以自訂專案。  
+    ```csharp  
+    using System;  
+    using System.Collections.Generic;  
+    using Microsoft.VisualStudio.TemplateWizard;  
+    using System.Windows.Forms;  
+    using EnvDTE;  
   
--   <xref:System.Collections.Generic.Dictionary%602> 參數，包含範本中所有預先定義的參數集合。  如需範本參數的詳細資訊，請參閱[樣板參數](../ide/template-parameters.md)。  
-  
--   <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> 參數，包含所使用的範本的相關資訊。  
-  
--   <xref:System.Object> 陣列，包含由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 傳遞給精靈的參數集合。  
-  
- 這個範例會從使用者輸入表單中，將參數值加入 <xref:System.Collections.Generic.Dictionary%602> 參數。  專案中 `$custommessage$` 參數的每個執行個體將以使用者輸入的文字取代。  您必須將下列配件加入至專案：  
-  
-1.  EnvDTE.dll  
-  
-2.  Microsoft.VisualStudio.TemplateWizardInterface.dll  
-  
-3.  System.Windows.Forms.dll  
-  
-> [!IMPORTANT]
->  這個範例中使用的 UserInputForm 在下列章節中定義。  
-  
-```c#  
-using System;  
-using System.Collections.Generic;  
-using Microsoft.VisualStudio.TemplateWizard;  
-using System.Windows.Forms;  
-using EnvDTE;  
-  
-namespace CustomWizard  
-{  
-    public class IWizardImplementation:IWizard  
+    namespace MyProjectWizard  
     {  
-        private UserInputForm inputForm;  
-        private string customMessage;  
-  
-        // This method is called before opening any item that   
-        // has the OpenInEditor attribute.  
-        public void BeforeOpeningFile(ProjectItem projectItem)  
+        public class WizardImplementation:IWizard  
         {  
-        }  
+            private UserInputForm inputForm;  
+            private string customMessage;  
   
-        public void ProjectFinishedGenerating(Project project)  
-        {  
-        }  
-  
-        // This method is only called for item templates,  
-        // not for project templates.  
-        public void ProjectItemFinishedGenerating(ProjectItem   
-            projectItem)  
-        {  
-        }  
-  
-        // This method is called after the project is created.  
-        public void RunFinished()  
-        {  
-        }  
-  
-        public void RunStarted(object automationObject,  
-            Dictionary<string, string> replacementsDictionary,  
-            WizardRunKind runKind, object[] customParams)  
-        {  
-            try  
+            // This method is called before opening any item that   
+            // has the OpenInEditor attribute.  
+            public void BeforeOpeningFile(ProjectItem projectItem)  
             {  
-                // Display a form to the user. The form collects   
-                // input for the custom message.  
-                inputForm = new UserInputForm();  
-                inputForm.ShowDialog();  
-  
-                customMessage = inputForm.get_CustomMessage();  
-  
-                // Add custom parameters.  
-                replacementsDictionary.Add("$custommessage$",   
-                    customMessage);  
             }  
-            catch (Exception ex)  
+  
+            public void ProjectFinishedGenerating(Project project)  
             {  
-                MessageBox.Show(ex.ToString());  
+            }  
+  
+            // This method is only called for item templates,  
+            // not for project templates.  
+            public void ProjectItemFinishedGenerating(ProjectItem   
+                projectItem)  
+            {  
+            }  
+  
+            // This method is called after the project is created.  
+            public void RunFinished()  
+            {  
+            }  
+  
+            public void RunStarted(object automationObject,  
+                Dictionary<string, string> replacementsDictionary,  
+                WizardRunKind runKind, object[] customParams)  
+            {  
+                try  
+                {  
+                    // Display a form to the user. The form collects   
+                    // input for the custom message.  
+                    inputForm = new UserInputForm();  
+                    inputForm.ShowDialog();  
+  
+                    customMessage = UserInputForm.CustomMessage;  
+  
+                    // Add custom parameters.  
+                    replacementsDictionary.Add("$custommessage$",   
+                        customMessage);  
+                }  
+                catch (Exception ex)  
+                {  
+                    MessageBox.Show(ex.ToString());  
+                }  
+            }  
+  
+            // This method is only called for item templates,  
+            // not for project templates.  
+            public bool ShouldAddProjectItem(string filePath)  
+            {  
+                return true;  
+            }          
+        }  
+    }  
+    ```  
+  
+     The **UserInputForm** referenced in this code will be implemented later.  
+  
+     The `WizardImplementation` class contains method implementations for every member of <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>. In this example, only the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method performs a task. All other methods either do nothing or return `true`.  
+  
+     The <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method accepts four parameters:  
+  
+    -   An <xref:System.Object> parameter that can be cast to the root <xref:EnvDTE._DTE> object, to enable you to customize the project.  
+  
+    -   A <xref:System.Collections.Generic.Dictionary%602> parameter that contains a collection of all pre-defined parameters in the template. For more information on template parameters, see [Template Parameters](../ide/template-parameters.md).  
+  
+    -   A <xref:Microsoft.VisualStudio.TemplateWizard.WizardRunKind> parameter that contains information about what kind of template is being used.  
+  
+    -   An <xref:System.Object> array that contains a set of parameters passed to the wizard by Visual Studio.  
+  
+     This example adds a parameter value from the user input form to the <xref:System.Collections.Generic.Dictionary%602> parameter. Every instance of the `$custommessage$` parameter in the project will be replaced with the text entered by the user. You must add the following assemblies to your project: **System** and **System.Drawing**.
+  
+7.  Now create the **UserInputForm**. In the **WizardImplementation.cs** file, add the following code after the end of the **WizardImplementation** class.  
+  
+    ```csharp  
+    public partial class UserInputForm : Form  
+        {  
+            private static string customMessage;  
+            private TextBox textBox1;  
+            private Button button1;  
+  
+            public UserInputForm()  
+            {  
+                this.Size = new System.Drawing.Size(155, 265);   
+  
+                button1 = new Button();  
+                button1.Location = new System.Drawing.Point(90, 25);  
+                button1.Size = new System.Drawing.Size(50, 25);  
+                button1.Click += button1_Click;  
+                this.Controls.Add(button1);  
+  
+                textBox1 = new TextBox();  
+                textBox1.Location = new System.Drawing.Point(10, 25);  
+                textBox1.Size = new System.Drawing.Size(70, 20);  
+                this.Controls.Add(textBox1);  
+            }  
+            public static string CustomMessage  
+            {  
+                get  
+                {  
+                    return customMessage;  
+                }  
+                set  
+                {  
+                    customMessage = value;  
+                }     
+            }  
+            private void button1_Click(object sender, EventArgs e)  
+            {  
+                customMessage = textBox1.Text;  
             }  
         }  
+    ```  
   
-        // This method is only called for item templates,  
-        // not for project templates.  
-        public bool ShouldAddProjectItem(string filePath)  
-        {  
-            return true;  
-        }          
-    }  
-}  
-```  
+     The user input form provides a simple form for entering a custom parameter. The form contains a text box named `textBox1` and a button named `button1`. When the button is clicked, the text from the text box is stored in the `customMessage` parameter.  
   
-### 使用者輸入表單  
- 使用者輸入表單會提供一個輸入自訂參數的簡單表單。  表單中包含名為 `textBox1` 的文字方塊，以及名為 `button1` 的按鈕。  當按一下按鈕時，來自文字方塊的文字便會儲存在 `customMessage` 參數中。  
+## <a name="connect-the-wizard-to-the-custom-template"></a>Connect the Wizard to the Custom Template  
+ In order for your custom project template to use your custom wizard, you need to sign the wizard assembly and add some lines to your custom project template to let it know where to find the wizard implementation when a new project is created.  
   
-##### 若要將 Windows Form 加入方案  
+1.  Sign the assembly. In the **Solution Explorer**, select the VSIX project, right-click, and select **Project Properties**.  
   
-1.  將下列程式碼加入至內含精靈插件的檔案。  
+2.  In the **Project Properties** window, select the **Signing** tab. in the **Signing** tab, check **Sign the assembly**. In the **Choose a strong name key file** field, select **\<New>**. In the **Create Strong Name Key** window, in the **Key file name** field, type **key.snk**. Uncheck the **Protect my key file with a password** field.  
   
-```c#  
-public partial class UserInputForm : Form  
-{  
-    private string customMessage;  
-    private TextBox textBox1;  
+3.  In the **Solution Explorer**, select the VSIX project and find the **Properties** window.  
   
-    public UserInputForm()  
-    {   
-        textBox1 = new TextBox();  
-        this.Controls.Add(textBox1);  
-    }  
+4.  Set the **Copy Build Output to Output Directory** field to **true**. This allows the assembly to be copied into the output directory when the solution is rebuilt. It is still contained in the .vsix file. You need to see the assembly in order to find out its signing key.  
   
-    public string get_CustomMessage()  
-    {  
-        return customMessage;  
-    }  
+5.  Rebuild the solution.  
   
-    private void textBox1_TextChanged(object sender, EventArgs e)  
-    {  
-        customMessage = textBox1.Text;  
-        this.Dispose();  
-    }  
-}  
-```  
+6.  You can now find the key.snk file in the MyProjectWizard project directory (**\<your disk location>\MyProjectTemplate\MyProjectWizard\key.snk**). Copy the key.snk file.  
   
-## 將組件安裝到全域組件快取  
- 實作 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 的組件必須以強式名稱簽署，並安裝到全域組件快取。  
+7.  Go to the output directory and find the assembly (**\<your disk location>\MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Paste the key.snk file here. (This isn't absolutely necessary, but it will make the following steps easier.)  
   
-#### 若要將組件安裝到全域組件快取中  
+8.  Open a command window, and change to the directory in which the assembly has been created.  
   
-1.  使用強式名稱簽署組件。  如需詳細資訊，請參閱 [如何：使用強式名稱簽署組件](../Topic/How%20to:%20Sign%20an%20Assembly%20with%20a%20Strong%20Name.md)或[How to: Sign an Assembly \(Visual Studio\)](http://msdn.microsoft.com/zh-tw/f468a7d3-234c-4353-924d-8e0ae5896564)。  
+9. Find the **sn.exe** signing tool. For example, on a Windows 10 64-bit operating system, a typical path would be the following:  
   
-2.  將強式名稱的組件安裝到全域組件快取中。  如需詳細資訊，請參閱[如何：將組件安裝到全域組件快取](../Topic/How%20to:%20Install%20an%20Assembly%20into%20the%20Global%20Assembly%20Cache.md)。  
+     **C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.6.1 Tools**  
   
-## 建立要當做範本使用的專案  
- 在這個範本中，當做範本使用的專案是一個主控台應用程式，它會顯示在自訂精靈的使用者輸入表單中所指定的訊息。  
+     If you can't find the tool, try running **where /R .  sn.exe** in the command window. Make a note of the path.  
   
-#### 若要建立範本專案  
+10. Extract the public key from the key.snk file. In the command window, type  
   
-1.  建立新的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 主控台應用程式。  
+     **\<location of sn.exe>\sn.exe - p key.snk outfile.key.**  
   
-2.  在應用程式的 `Main` 方法中，加入下列程式碼行。  
+     Don't forget to surround the path of sn.exe with quotation marks if there are spaces in the directory names!  
+  
+11. Get the public key token from the outfile:  
+  
+     **\<location of sn.exe>\sn.exe - t outfile.key.**  
+  
+     Again, don't forget the quotation marks. You should see a line in the output like this  
+  
+     **Public key token is <token>**  
+  
+     Make a note of this value.  
+  
+12. Add the reference to the custom wizard to the .vstemplate file of the project template. In the Solution Explorer, find the file named MyProjectTemplate.vstemplate, and open it. After the end of the \<TemplateContent> section, add the following section:  
+  
+    ```xml  
+    <WizardExtension>  
+        <Assembly>MyProjectWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=token</Assembly>  
+        <FullClassName>MyProjectWizard.WizardImplementation</FullClassName>  
+    </WizardExtension>  
+    ```  
+  
+     Where **MyProjectWizard** is the name of the assembly, and **token** is the token you copied in the previous step.  
+  
+13. Save all the files in the project and rebuild.  
+  
+## <a name="adding-the-custom-parameter-to-the-template"></a>Adding the Custom Parameter to the Template  
+ In this example, the project used as the template displays the message specified in the user input form of the custom wizard.  
+  
+1.  In the Solution Explorer, go to the **MyProjectTemplate** project and open **Class1.cs**.  
+  
+2.  In the `Main` method of the application, add the following line of code.  
   
     ```  
     Console.WriteLine("$custommessage$");  
     ```  
   
-     當從範本建立專案時，`$custommessage$` 參數會以使用者輸入表單中所輸入的文字取代。  
+     The parameter `$custommessage$` is replaced with the text entered in the user input form when a project is created from the template.  
   
-3.  按一下 \[**檔案**\] 功能表上的 \[**匯出範本**\]。  
+ Here is the full code file before it has been exported to a template.  
   
-4.  在 \[**匯出範本**\] 精靈中，按一下 \[**專案範本**\]，選取正確的專案，然後按一下 \[**下一步**\]。  
-  
-5.  在 \[**匯出範本**\] 精靈中，輸入關於範本的描述性資訊，選取 \[**自動將範本匯入 Visual Studio**\] 核取方塊，然後按一下 \[**完成**\]。  
-  
-     範本現在會顯示在 \[**新增專案**\] 對話方塊中，但是不會使用自訂精靈。  
-  
- 下列範例會顯示匯出成範本之前的完整程式碼檔。  
-  
-```c#  
+```csharp  
 using System;  
 using System.Collections.Generic;  
-using System.Text;  
+$if$ ($targetframeworkversion$ >= 3.5)using System.Linq;  
+$endif$using System.Text;  
   
-namespace TemplateProject  
+namespace $safeprojectname$  
 {  
-    class WriteMessage  
+    public class Class1  
     {  
-        static void Main(string[] args)  
-        {  
-            Console.WriteLine("$custommessage$");  
-        }  
+          static void Main(string[] args)  
+          {  
+               Console.WriteLine("$custommessage$");  
+          }  
     }  
 }  
 ```  
   
-## 修改範本  
- 現在範本已經建立並顯示在 \[**新增專案**\] 對話方塊中，您必須加以修改，讓它使用您在前面的步驟中所建立的組件。  
+## <a name="using-the-custom-wizard"></a>Using the Custom Wizard  
+ Now you can create a project from your template and use the custom wizard.  
   
-#### 若要將自訂精靈加入範本  
+1.  Rebuild the solution and start debugging. A second instance of Visual Studio should appear.  
   
-1.  尋找包含範本的 .zip 檔。  
+2.  Create a new MyProjectTemplate project. (**File / New / Project / Visual C# / MyProjectTemplate**)  
   
-    1.  在 \[**工具**\] 功能表上，按一下 \[**選項**\]。  
+3.  In the **New Project** dialog box, locate your template, type a name, and click **OK**.  
   
-    2.  按一下 \[**專案和方案**\]。  
+     The wizard user input form opens.  
   
-    3.  閱讀 \[**Visual Studio 使用者專案範本位置**\] 文字方塊。  
+4.  Type a value for the custom parameter and click the button.  
   
-     依據預設，這個位置為 My Documents\\Visual Studio *Version*\\Templates\\ProjectTemplates。  
+     The wizard user input form closes, and a project is created from the template.  
   
-2.  解壓縮這個 .zip 檔。  
+5.  In **Solution Explorer**, right-click the source code file and click **View Code**.  
   
-3.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟 .vstemplate 檔。  
+     Notice that `$custommessage$` has been replaced with the text entered in the wizard user input form.  
   
-4.  在 `TemplateContent` 項目後面，加入 [WizardExtension 項目 \(Visual Studio 範本\)](../extensibility/wizardextension-element-visual-studio-templates.md) 項目及自訂精靈組件的強式名稱。  如需尋找組件的強式名稱的詳細資訊，請參閱 [如何：檢視全域組件快取的內容](../Topic/How%20to:%20View%20the%20Contents%20of%20the%20Global%20Assembly%20Cache.md)和 [如何：參考強式名稱簽署組件](../Topic/How%20to:%20Reference%20a%20Strong-Named%20Assembly.md)。  
-  
-     下列範例會顯示 `WizardExtension` 項目。  
-  
-    ```  
-    <WizardExtension>  
-        <Assembly>CustomWizard, Version=1.0.0.0, Culture=Neutral, PublicKeyToken=fa3902f409bb6a3b</Assembly>  
-        <FullClassName>CustomWizard.IWizardImplementation</FullClassName>  
-    </WizardExtension>  
-    ```  
-  
-## 使用自訂精靈  
- 現在您可以從範本建立專案，並使用自訂精靈。  
-  
-#### 若要使用自訂精靈  
-  
-1.  在 \[檔案\] 功能表上，按一下 \[新增專案\]。  
-  
-2.  在 \[**新增專案**\] 對話方塊中，找出您的範本，並輸入名稱，然後按一下 \[**確定**\]。  
-  
-     精靈使用者輸入表單便會開啟。  
-  
-3.  輸入自訂參數的值，然後按一下按鈕。  
-  
-     精靈使用者輸入表單便會關閉，同時會從範本建立專案。  
-  
-4.  在 \[**方案總管**\] 中，在原始程式碼檔上按一下滑鼠右鍵，並按一下 \[**檢視程式碼**\]。  
-  
-     請注意，`$custommessage$` 會以在精靈使用者輸入表單中所輸入的文字取代。  
-  
-## 請參閱  
+## <a name="see-also"></a>See Also  
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>   
- [自訂範本](../ide/customizing-project-and-item-templates.md)   
- [WizardExtension 項目 \(Visual Studio 範本\)](../extensibility/wizardextension-element-visual-studio-templates.md)
+ [Customizing Templates](../ide/customizing-project-and-item-templates.md)   
+ [WizardExtension Element (Visual Studio Templates)](../extensibility/wizardextension-element-visual-studio-templates.md)
+

@@ -1,12 +1,13 @@
 ---
 title: "Visual Studio 中的 Python 單元測試 | Microsoft Docs"
 ms.custom: 
-ms.date: 5/8/2017
+ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
 - devlang-python
+ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3ad6523-5a4e-4209-8977-adc2da305df2
@@ -14,25 +15,11 @@ caps.latest.revision: 1
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85576806818a6ed289c2f660f87b5c419016c600
-ms.openlocfilehash: 2597583912c7694495617c53839f41aa13cda871
+ms.translationtype: HT
+ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
+ms.openlocfilehash: b68dc3d2fb7877349fc319ce5ea6e799f80c1dbf
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 
@@ -40,17 +27,17 @@ ms.lasthandoff: 05/10/2017
 
 單元測試是測試應用程式中其他程式碼單元 (通常是隔離的函數、類別等) 的程式碼片段。 應用程式通過所有單元測試之後，您至少可以確定其低階功能皆能正確運作。
 
-在設計程式時，Python 會廣泛地使用單元測試來驗證案例。 Visual Studio 中的 Python 支援包含在開發程序的內容內針對單元測試進行探索、執行及偵錯的支援，您不需要個別執行它們。
+在設計程式時，Python 會廣泛地使用單元測試來驗證案例。 Visual Studio 中的 Python 支援包含在開發程序的內容內針對單元測試進行探索、執行及偵錯，而且不需要個別執行測試。
 
 本主題提供搭配 Python 的 Visual Studio 中的單元測試功能簡介。 如需單元測試的整體詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。
 
 ## <a name="discovering-and-viewing-tests"></a>探索及檢視測試
 
-依照慣例，Visual Studio 會將測試辨識為名稱以 "test" 開頭的方法。 若要查看此結果，請執行下列步驟：
+依照慣例，Visual Studio 會將測試辨識為名稱以 `test` 開頭的方法。 若要查看此行為，請執行下列步驟：
 
 1. 開啟在 Visual Studio 中載入的 [Python 專案](python-projects.md)，以滑鼠右鍵按一下專案，選取[新增] > [新增項目...]，然後選取 [Python 單元測試]，再選取 [新增]。
 
-1. 此步驟會建立 test1.py 檔案，其中會具有會匯入標準 `unittest` 模組，從 `unittest.TestCase` 衍生測試類別，並在您直接執行指令碼的情況下叫用 `unittest.main()` 的程式碼：
+1. 此動作會建立 `test1.py` 檔案，其中的程式碼會匯入標準 `unittest` 模組、從 `unittest.TestCase` 衍生測試類別，並在直接執行指令碼的情況下叫用 `unittest.main()`：
 
   ```python
   import unittest
@@ -65,17 +52,17 @@ ms.lasthandoff: 05/10/2017
 
 1. 視需要儲存檔案，然後使用 [測試] > [Windows] > [測試總管] 功能表命令，開啟測試總管。
 
-1. 測試總管會針對測試搜尋專案，並將它們顯示如下。 按兩下測試會開啟其原始程式檔。
+1. 測試總管會搜尋要進行測試的專案，並將它們顯示如下。 按兩下測試會開啟其原始程式檔。
 
-    ![[測試總管] 顯示預設的 test_A](~/python/media/unit-test-A.png)
+    ![[測試總管] 顯示預設的 test_A](media/unit-test-A.png)
 
 1. 隨著新增更多測試，您可以使用工具列上的 [群組依據] 功能表，組織 [測試總管] 中的檢視：
 
-    ![[測試總管] 的 [群組依據] 工具列功能表](~/python/media/unit-test-group-menu.png)
+    ![[測試總管] 的 [群組依據] 工具列功能表](media/unit-test-group-menu.png)
 
 1. 您也可以在搜尋欄位中輸入文字，以依據名稱來篩選測試。
 
-如需 `unittest` 模組及撰寫測試的詳細資料，請參閱 [Python 2.7 文件 (英文)](https://docs.python.org/2/library/unittest.html) 或 [Python 3.4 文件 (英文)](https://docs.python.org/3/library/unittest.html) (python.org)。
+如需 `unittest` 模組以及撰寫測試的詳細資訊，請參閱 [Python 2.7 文件](https://docs.python.org/2/library/unittest.html) 或 [Python 3.4 文件](https://docs.python.org/3/library/unittest.html) (python.org)。
 
 ## <a name="running-tests"></a>執行測試
 
@@ -89,27 +76,27 @@ ms.lasthandoff: 05/10/2017
 
 - 通過的測試會顯示綠色的打勾圖示，以及執行測試所花費的時間：
 
-    ![test_A 通過狀態](~/python/media/unit-test-A-pass.png)
+    ![test_A 通過狀態](media/unit-test-A-pass.png)
 
 - 失敗的測試會顯示紅色十字，以及會顯示測試執行的主控台輸出和 `unittest` 輸出的 [輸出] 連結：
 
-    ![test_A 失敗狀態](~/python/media/unit-test-A-fail.png)
+    ![test_A 失敗狀態](media/unit-test-A-fail.png)
 
-    ![test_A 失敗且含原因](~/python/media/unit-test-A-fail-reason.png)
+    ![test_A 失敗且含原因](media/unit-test-A-fail-reason.png)
 
 ## <a name="debugging-tests"></a>偵錯測試
 
-因為單元測試是程式碼片段，它們和其他程式碼一樣會具有錯誤，並在某些情況下需要以偵錯工具執行，使您可以設定中斷點、檢視變數並逐步檢視程式碼。 Visual Studio 也提供診斷工具
+因為單元測試是程式碼片段，所以它們和其他程式碼一樣會有錯誤，並在某些情況下需要以偵錯工具執行。 在偵錯工具中，您可以設定中斷點、檢視變數，以及逐步檢視程式碼。 Visual Studio 也提供診斷工具以進行單元測試。
 
-若要開始偵錯，請在程式碼中設定初始中斷點，然後在 [測試總管] 中以滑鼠右鍵按一下測試 (或一系列測試)，然後選取 [偵錯選取的測試]。 Visual Studio 將會以和針對應用程式程式碼一樣的方式，啟動 Python 偵錯工具。
+若要開始偵錯，請在程式碼中設定初始中斷點，然後在 [測試總管] 中以滑鼠右鍵按一下測試 (或一系列測試)，然後選取 [偵錯選取的測試]。 Visual Studio 會以與針對應用程式碼一樣的方式，啟動 Python 偵錯工具。
 
-![對測試進行偵錯](~/python/media/unit-test-debugging.png)
+![對測試進行偵錯](media/unit-test-debugging.png)
 
 視您的 Visual Studio 版本而定 (請參閱[功能比較表](python-in-visual-studio.md#features-matrix))，您也可以使用 [分析選取之測試的程式碼涵蓋範圍] 和 [程式碼剖析測試] 命令。
 
 ### <a name="known-issues"></a>已知問題
 
-- 當開始偵錯時，Visual Studio 會看似啟動並停止偵錯，然後會再次啟動。 這是預期的行為。
-- 針對多個測試所進行的偵錯將會獨立執行，這將會中斷偵錯工作階段。
-- 當進行偵錯時，Visual Studio 會間歇性地無法啟動測試。 一般來說，再次嘗試對測試進行偵錯將會成功。
-- 進行偵錯時，可以離開測試進入 `unittest` 實作。 一般來說，下一個步驟將會執行至程式的結尾並停止偵錯。
+- 當開始偵錯時，Visual Studio 會看似啟動並停止偵錯，然後再次啟動。 這是預期的行為。
+- 針對多個測試所進行的偵錯都會獨立執行，這會中斷偵錯工作階段。
+- 當進行偵錯時，Visual Studio 會間歇性地無法啟動測試。 一般來說，再次嘗試對測試進行偵錯會成功。
+- 進行偵錯時，可以離開測試進入 `unittest` 實作。 一般來說，下一個步驟會執行至程式的結尾，並停止偵錯。

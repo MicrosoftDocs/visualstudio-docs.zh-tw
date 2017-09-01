@@ -1,86 +1,103 @@
 ---
-title: "逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce 部署, 全球化"
-  - "ClickOnce 部署, 當地語系化"
-  - "ClickOnce, 視需要下載"
-  - "當地語系化, Windows Form"
-  - "逐步解說, 當地語系化"
-  - "Windows Form, 全球化"
-  - "Windows Form, 當地語系化"
+title: 'Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer | Microsoft Docs'
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Windows Forms, globalization
+- ClickOnce deployment, globalization
+- localization, Windows Forms
+- ClickOnce, on-demand download
+- Windows Forms, localization
+- ClickOnce deployment, localization
+- walkthroughs, localization
 ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 caps.latest.revision: 10
-caps.handback.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-# 逐步解說：使用設計工具依 ClickOnce 部署 API 的要求下載附屬組件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
+ms.openlocfilehash: 653240e8bb782a99a1f58d16fff0748edea5cab2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/30/2017
 
-透過使用附屬組件，Windows Forms 應用程式可以設定為適用多個文化特性。  *「附屬組件」*\(Satellite Assembly\) 為包含文化特性 \(除了應用程式的預設文化特性以外\) 之應用程式資源的組件。  
+---
+# <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer
+Windows Forms applications can be configured for multiple cultures through the use of satellite assemblies. A *satellite assembly* is an assembly that contains application resources for a culture other than the application's default culture.  
   
- 如同 [當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)所述，您可以在相同 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署中包含多個附屬組件，以因應多個文化特性。  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 預設會下載您部署中所有的附屬組件到用戶端電腦，儘管單一用戶可能只需要一個附屬組件。  
+ As discussed in [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md), you can include multiple satellite assemblies for multiple cultures within the same [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] deployment. By default, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] will download all of the satellite assemblies in your deployment to the client machine, although a single client will probably require only one satellite assembly.  
   
- 本逐步解說示範如何標示您的附屬組件為選擇性，並僅下載用戶端電腦目前文化特性所需要的附屬組件。  
+ This walkthrough demonstrates how to mark your satellite assemblies as optional, and download only the assembly a client machine needs for its current culture settings.  
   
 > [!NOTE]
->  為了測試用途，下列程式碼範例以程式設計的方式設定文化特性為 `ja-JP`。  如需為生產環境調整程式碼的相關資訊，請參閱本主題＜後續步驟＞一節。  
+>  For testing purposes, the following code examples programmatically set the culture to `ja-JP`. See the "Next Steps" section later in this topic for information on how to adjust this code for a production environment.  
   
-### 將附屬組件標示為選擇性  
+### <a name="to-mark-satellite-assemblies-as-optional"></a>To mark satellite assemblies as optional  
   
-1.  建置您的專案。  這個步驟將會針對您在進行當地語系化的所有文化特性產生附屬組件。  
+1.  Build your project. This will generate satellite assemblies for all of the cultures you are localizing to.  
   
-2.  以滑鼠右鍵按一下 \[方案總管\] 中的專案名稱，再按一下 \[屬性\]。  
+2.  Right-click on your project name in Solution Explorer, and click **Properties**.  
   
-3.  按一下 \[發行\] 索引標籤，然後按一下 \[應用程式檔案\]。  
+3.  Click the **Publish** tab, and then click **Application Files**.  
   
-4.  選取 \[顯示所有檔案\] 核取方塊，顯示附屬組件。  所有附屬組件預設都會包含在部署中，而且會顯示在這個對話方塊中。  
+4.  Select the **Show all files** check box to display satellite assemblies. By default, all satellite assemblies will be included in your deployment and will be visible in this dialog box.  
   
-     附屬組件的名稱形式為 *isoCode*\\ApplicationName.resources.dll，其中 *isoCode* 是 RFC 1766 格式的語言識別項。  
+     A satellite assembly will have a name in the form *isoCode*\ApplicationName.resources.dll, where *isoCode* is a language identifier in RFC 1766 format.  
   
-5.  在每個語言識別項的 \[下載群組\] 清單內按一下 \[新增\]。  在系統提示您輸入下載群組名稱時，請輸入語言識別項。  例如，如果是日文的附屬組件，您可以將下載群組名稱指定為 `ja-JP`。  
+5.  Click **New...** in the **Download Group** list for each language identifier. When prompted for a download group name, enter the language identifier. For example, for a Japanese satellite assembly, you would specify the download group name `ja-JP`.  
   
-6.  關閉 \[應用程式檔案\] 對話方塊。  
+6.  Close the **Application Files** dialog box.  
   
-### 在 C\# 內視需要下載附屬組件  
+### <a name="to-download-satellite-assemblies-on-demand-in-c"></a>To download satellite assemblies on demand in C# #
   
-1.  開啟 Program.cs 檔案。  如果您沒有在 \[方案總管\] 內看到這個檔案，請選取您的專案，並在 \[專案\] 功能表上按一下 \[顯示所有檔案\]。  
+1.  Open the Program.cs file. If you do not see this file in Solution Explorer, select your project, and on the **Project** menu, click **Show All Files**.  
   
-2.  使用下列程式碼來下載適當的附屬組件，並啟動您的應用程式。  
+2.  Use the following code to download the appropriate satellite assembly and start your application.  
   
-     [!code-cs[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
+     [!code-csharp[ClickOnce.SatelliteAssemblies#1](../deployment/codesnippet/CSharp/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_1.cs)]  
   
-### 在 Visual Basic 內視需要下載附屬組件  
+### <a name="to-download-satellite-assemblies-on-demand-in-visual-basic"></a>To download satellite assemblies on demand in Visual Basic  
   
-1.  在應用程式的 \[屬性\] 視窗中，按一下 \[應用程式\] 索引標籤。  
+1.  In the **Properties** window for the application, click the **Application** tab.  
   
-2.  在索引標籤頁的下方，按一下 \[檢視應用程式事件\]。  
+2.  At the bottom of the tab page, click **View Application Events**.  
   
-3.  將下列匯入內容加入 ApplicationEvents.VB 檔案的開頭。  
+3.  Add the following imports to the beginning of the ApplicationEvents.VB file.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_2.vb)]  
   
-4.  將下列程式碼加入 `MyApplication` 類別。  
+4.  Add the following code to the `MyApplication` class.  
   
      [!code-vb[ClickOnce.SatelliteAssembliesVB#2](../deployment/codesnippet/VisualBasic/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer_3.vb)]  
   
-## 後續步驟  
- 在生產環境中，您可能需要移除程式碼範例中將 <xref:System.Threading.Thread.CurrentUICulture%2A> 設定為特定值的那一行，因為用戶端電腦預設會設定正確的值。  當您的應用程式在日文的用戶端電腦上執行時，<xref:System.Threading.Thread.CurrentUICulture%2A> 預設會是 `ja-JP`。  在部署應用程式前，以程式設計方式設定這個值是測試附屬組件的一個好方法。  
+## <a name="next-steps"></a>Next Steps  
+ In a production environment, you will likely need to remove the line in the code examples that sets <xref:System.Threading.Thread.CurrentUICulture%2A> to a specific value, because client machines will have the correct value set by default. When your application runs on a Japanese client machine, for example, <xref:System.Threading.Thread.CurrentUICulture%2A> will be `ja-JP` by default. Setting it programmatically is a good way to test your satellite assemblies before you deploy your application.  
   
-## 請參閱  
- [逐步解說：依 ClickOnce 部署 API 的要求下載附屬組件](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
- [當地語系化 ClickOnce 應用程式](../deployment/localizing-clickonce-applications.md)
+## <a name="see-also"></a>See Also  
+ [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)   
+ [Localizing ClickOnce Applications](../deployment/localizing-clickonce-applications.md)
+

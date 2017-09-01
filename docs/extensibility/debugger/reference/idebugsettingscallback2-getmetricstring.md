@@ -1,5 +1,5 @@
 ---
-title: "IDebugSettingsCallback2::GetMetricString |Microsoft 文件"
+title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,18 +29,19 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0bdf7e64da1e49bd965f0ca91acb4ae66e9936ff
-ms.lasthandoff: 02/22/2017
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: f45e062029f7cb7045b71c61cc122bd8f2cdb864
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-擷取指定其名稱的度量值字串。  
+Retrieves the value string of the metric given its name.  
   
-## <a name="syntax"></a>語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetMetricString(  
     LPCWSTR pszType,  
     REFGUID guidSection,  
@@ -49,7 +50,7 @@ HRESULT GetMetricString(
 );  
 ```  
   
-```c#  
+```csharp  
 private int GetMetricString(  
     string     pszType,  
     ref Guid   guidSection,  
@@ -58,21 +59,21 @@ private int GetMetricString(
 );  
 ```  
   
-#### <a name="parameters"></a>參數  
+#### <a name="parameters"></a>Parameters  
  `pszType`  
- [in]標準的類型。  
+ [in] Type of the metric.  
   
  `guidSection`  
- [in]區段的唯一識別碼。  
+ [in] Unique identifier of the section.  
   
  `pszMetric`  
- [in]標準的名稱。  
+ [in] Name of the metric.  
   
  `pbstrValue`  
- [out]傳回度量的值字串。  
+ [out] Returns the value string of the metric.  
   
-## <a name="return-value"></a>傳回值  
- 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

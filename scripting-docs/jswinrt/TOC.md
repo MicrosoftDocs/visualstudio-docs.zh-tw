@@ -5,3 +5,4 @@
 # [在 JavaScript 中處理 Windows 執行階段事件](handling-windows-runtime-events-in-javascript.md)
 # [以 JavaScript 表示 Windows 執行階段類型](javascript-representation-of-windows-runtime-types.md)
 # [Windows 執行階段 DateTime 和 TimeSpan 的表示法](windows-runtime-datetime-and-timespan-representations.md)
+# [使用 JavaScript 的 Windows 執行階段應用程式錯誤代碼](error-codes-for-windows-runtime-apps-using-javascript.md)

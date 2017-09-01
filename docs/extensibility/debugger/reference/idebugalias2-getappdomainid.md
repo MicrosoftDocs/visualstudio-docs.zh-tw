@@ -1,50 +1,67 @@
 ---
-title: "IDebugAlias2::GetAppDomainId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetAppDomainId"
-  - "IDebugAlias2::GetAppDomainId"
+title: IDebugAlias2::GetAppDomainId | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetAppDomainId
+- IDebugAlias2::GetAppDomainId
 ms.assetid: 23581aaa-5a53-4859-b264-eca49fc44bcd
 caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
----
-# IDebugAlias2::GetAppDomainId
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+ms.author: gregvanl
+manager: ghogen
+translation.priority.mt:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: MT
+ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
+ms.openlocfilehash: c168e29ba4884ec10acac89c3cafb74e8d1c77ba
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/28/2017
 
-擷取應用程式定義域的識別項。  
+---
+# <a name="idebugalias2getappdomainid"></a>IDebugAlias2::GetAppDomainId
+Retrieves the identifier for the application domain.  
   
-## 語法  
+## <a name="syntax"></a>Syntax  
   
-```cpp#  
+```cpp  
 HRESULT GetAppDomainId (  
-   ULONG32* pappDomainId  
+   ULONG32* pappDomainId  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAppDomainId (  
-   out uint pappDomainId  
+   out uint pappDomainId  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>Parameters  
  `pappDomainId`  
- \[\] out傳回應用程式定義域識別項。  
+ [out] Returns the application domain identifier.  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>Return Value  
+ If successful, returns `S_OK`; otherwise, returns an error code.  
   
-## 備註  
- 建立的應用程式網域的識別項有變更時重新啟動應用程式和新的應用程式定義域。  
+## <a name="remarks"></a>Remarks  
+ The application domain identifier changes whenever the application is restarted and a new application domain is created.  
   
-## 請參閱  
+## <a name="see-also"></a>See Also  
  [IDebugAlias2](../../../extensibility/debugger/reference/idebugalias2.md)

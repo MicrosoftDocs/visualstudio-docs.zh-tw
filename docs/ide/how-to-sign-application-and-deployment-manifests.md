@@ -36,10 +36,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: b59b417eb16674ff8c6c5223d790ae174ba20e09
-ms.lasthandoff: 02/22/2017
+ms.translationtype: HT
+ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
+ms.openlocfilehash: 18f1ea2f5ee76f4f8457b7254ff3dd3b7b3e4901
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
@@ -49,7 +50,7 @@ ms.lasthandoff: 02/22/2017
   
  針對 .exe 應用程式，您可以選擇是否要簽署 ClickOnce 資訊清單。 如需詳細資訊，請參閱本文件的＜產生未簽署的資訊清單＞ 一節。  
   
- 如需建立金鑰檔的資訊，請參閱[如何：建立公用/私密金鑰組](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)。  
+ 如需建立金鑰檔的資訊，請參閱[如何：建立公用/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)。  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 只支援副檔名為 .pfx 的個人資訊交換 (PFX) 金鑰檔。 不過，您可以在專案屬性的 [簽署] 頁面中，按一下 [從存放區選取]，即可從目前使用者的 Windows 憑證存放區選取其他類型的憑證。  
@@ -124,7 +125,7 @@ ms.lasthandoff: 02/22/2017
 3.  發行應用程式。  
   
 ## <a name="see-also"></a>另請參閱  
- [強式名稱的組件](http://msdn.microsoft.com/Library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [如何：建立公開/私密金鑰組](http://msdn.microsoft.com/Library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)   
+ [如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [專案設計工具、簽署頁](../ide/reference/signing-page-project-designer.md)   
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
