@@ -60,6 +60,6 @@ ms.lasthandoff: 07/26/2017
 決定多少資訊會寫入建置記錄檔，其位置在 \\...\\*專案名稱*\Debug\\*專案名稱*.log。  
 
 ## <a name="see-also"></a>另請參閱  
--編譯和建置[](../../ide/compiling-and-building-in-visual-studio.md)
+-[編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
 - [選項對話方塊、專案和解決方案](projects-and-solutions-options-dialog-box.md)
 - [選項對話方塊、專案和解決方案、Web 專案](options-dialog-box-projects-and-solutions-web-projects.md)
