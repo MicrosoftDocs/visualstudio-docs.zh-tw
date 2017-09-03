@@ -63,15 +63,15 @@ ms.lasthandoff: 05/13/2017
 
 1.  使用您在 Parallels/VMWare 內設定的 Windows 桌面，[下載並啟動任何 Visual Studio 2017 版本的安裝程式](https://www.visualstudio.com/downloads/) (Community、Professional 或 Enterprise)。 Visual Studio 2017 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天。
 
-2.  在安裝程式內，按一下 [啟動] 旁的 [其他選擇] (三橫條圖示) 按鈕，然後選擇 [修改]：  
+2.  在安裝程式內，按一下 [啟動] 旁的 [其他選擇]\(三橫條圖示) 按鈕，然後選擇 [修改]：  
   
-     ![在 Visual Studio 安裝中選擇 [修改] 選項](~/cross-platform/media/cross-plat-xamarin-setup-1a.png "跨平台 Xamarin 設定 1")  
+     ![在 Visual Studio 安裝中選擇 [修改] 選項](../cross-platform/media/cross-plat-xamarin-setup-1a.png "跨平台 Xamarin 設定 1")  
   
 3.  核取下列方塊：
 
     1.  [行動裝置與遊戲] > [使用 .NET 進行行動開發]。 這樣做也會自動選取 [常用工具及軟體開發套件] 下的各種 Android 工具。 此選項應該也會更新任何現有的 Xamarin 安裝。  
   
-         ![選取 [遊戲與行動開發] 下的 [行動開發] 選項](~/cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 設定 2")  
+         ![選取 [遊戲與行動開發] 下的 [行動開發] 選項](../cross-platform/media/cross-plat-xamarin-setup-2a.png "跨平台 Xamarin 設定 2")  
   
     2. (選擇性) [Windows] > [通用 Windows 平台開發]。 這包括安裝模擬器映像的選項，需要較長的時間下載。您可以稍後返回 Visual Studio 安裝程式以加入這些選項。  
 
@@ -130,8 +130,8 @@ ms.lasthandoff: 05/13/2017
 
     2.  如下所示，從 Visual Studio 的 [組建] 下拉式清單中選取 [iPhoneSimulator] 目標。 如果未列出任何模擬器，請在您的 Mac 上啟動 Xcode，選取 [Xcode] -> [喜好設定]，然後按一下 [下載]。 在 [元件]  下，您應該會看到可供下載的模擬器版本。 您可以在 Xamarin 的[偵錯](https://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/#Debugging_on_the_Simulator)頁面 (xamarin.com) 上找到偵錯的其他指示。
 
-         ![選取 iPhoneSimulator 建置目標](~/cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 驗證 5")
+         ![選取 iPhoneSimulator 建置目標](../cross-platform/media/crossplat-xamarin-verify-5.png "CrossPlat Xamarin 驗證 5")
 
     3.  如下所示，從 Visual Studio 的 [偵錯] 下拉式清單中選取 iPhone 目標，然後按 F5 鍵啟動偵錯工具。 這會在 Mac 上啟動模擬器，以在 Visual Studio 中偵錯時與應用程式進行互動。
 
-         ![選取 iPhone 偵錯目標](~/cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 驗證 6")
+         ![選取 iPhone 偵錯目標](../cross-platform/media/crossplat-xamarin-verify-6.png "CrossPlat Xamarin 驗證 6")
