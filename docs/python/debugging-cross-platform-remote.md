@@ -97,7 +97,7 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
 
 1. 選取 [偵錯] > [附加至處理序]。
 
-1. 在隨即顯示的 [附加至處理序] 對話方塊中，將 [連線類型] 設為 [Python remote (ptvsd)] (Python 遠端 (ptvsd)) (在舊版 Visual Studio 中，這些命令名稱為 [傳輸] 和 [Python 遠端偵錯])。
+1. 在隨即顯示的 [附加至處理序] 對話方塊中，將 [連線類型] 設為 [Python remote (ptvsd)]\(Python 遠端 (ptvsd)) (在舊版 Visual Studio 中，這些命令名稱為 [傳輸] 和 [Python 遠端偵錯])。
 
 1. 在 [連線目標] 欄位 (舊版為 [限定詞]) 中，輸入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是將 `enable_attach` 傳入 Python 程式碼的字串，`<ip_address>` 是遠端電腦的明確位址或名稱 (如 myvm.cloudapp.net)，而 `:5678` 是遠端偵錯的連接埠號碼。
 
@@ -120,9 +120,9 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
 
 ### <a name="connection-troubleshooting"></a>連線疑難排解
 
-1. 請確定您已針對 [連線類型] 選取 [Python remote (ptvsd)] (Python 遠端 (ptvsd)) (舊版則選取 [傳輸] 的 [Python 遠端偵錯])。
-1. 請檢查 [連線目標] (或 [限定詞]) 中的密碼是否完全符合遠端程式碼中的密碼。
-1. 請檢查 [連線目標] (或 [限定詞]) 中的 IP 位址是否完全符合遠端程式碼中的 IP 位址。
+1. 請確定您已針對 [連線類型] 選取 [Python remote (ptvsd)]\(Python 遠端 (ptvsd)) (舊版則選取 [傳輸] 的 [Python 遠端偵錯])。
+1. 請檢查 [連線目標]\(或 [限定詞]) 中的密碼是否完全符合遠端程式碼中的密碼。
+1. 請檢查 [連線目標]\(或 [限定詞]) 中的 IP 位址是否完全符合遠端程式碼中的 IP 位址。
 1. 請檢查遠端電腦上是否已開啟遠端偵錯連接埠，以及連接埠尾碼中是否包含連線目標，例如 `:5678`。
     - 如果您需要使用不同的連接埠，可以在 `enable_attach` 呼叫中使用 `address` 引數進行指定，如同在 `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))` 中一樣。 在此情況下，請開啟防火牆中的特定連接埠。
 1. 請檢查 `pip3 list` 所傳回的遠端電腦 ptvsd 安裝版本，是否符合您在 Visual Studio 中使用的 Python 工具版本 (如下表所示)。 如果有必要，請更新遠端電腦上的 ptvsd。
@@ -164,11 +164,11 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
 1. 將憑證新增至安裝 Visual Studio 之 Windows 電腦上的受信任根 CA，以確保通道安全：
 
     1. 將遠端電腦的憑證檔案複製到本機電腦。
-    1. 開啟 [控制台] 並瀏覽至 [系統管理工具] > [Manage computer certificates] (管理電腦憑證)。
+    1. 開啟 [控制台] 並瀏覽至 [系統管理工具] > [Manage computer certificates]\(管理電腦憑證)。
     1. 在出現的視窗中，展開左側的 [受信任的根憑證授權單位]，以滑鼠右鍵按一下 [憑證]，然後選取 [所有工作] > [匯入...]。
     1. 瀏覽並選取從遠端電腦複製的 `.cer` 檔案，然後按一下所有對話方塊以完成匯入。
 
-1. 現在，將 `tcps://` 作為 [連線目標] (或 [限定詞]) 的通訊協定，以在 Visual Studio 中重複附加程序，如先前所述。
+1. 現在，將 `tcps://` 作為 [連線目標]\(或 [限定詞]) 的通訊協定，以在 Visual Studio 中重複附加程序，如先前所述。
 
     ![選擇使用 SSL 進行遠端偵錯傳輸](media/remote-debugging-qualifier-ssl.png)
 
