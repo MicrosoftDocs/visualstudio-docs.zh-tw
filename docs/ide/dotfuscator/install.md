@@ -59,12 +59,12 @@ Visual Studio 2017 推出新的低影響安裝體驗。
 
 您可以從 Visual Studio IDE 安裝 Dotfuscator CE：
 
-1. 在 [快速啟動] (Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![](~/ide/dotfuscator/media/install_from_vs_12.png) <br/> <br/>
+1. 在 [快速啟動]\(Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
 2. 在 [快速啟動] 結果顯示畫面的「安裝」標題下，選取 [PreEmptive Protection - Dotfuscator (個別元件)]。
   * 但若看到「功能表」標題下的 [工具] - [PreEmptive Protection - Dotfuscator]，則已安裝 Dotfuscator CE。 如需使用方式詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
 3. [Visual Studio 安裝程式] 視窗即會啟動，預先設定安裝 Dotfuscator CE。
   * 您可能需要提供系統管理員認證才能繼續。
-4. 關閉所有 Visual Studio IDE 執行個體。 <br/> <br/> ![](~/ide/dotfuscator/media/install_from_vs_345.png) <br/> <br/>
+4. 關閉所有 Visual Studio IDE 執行個體。 <br/> <br/> ![](media/install_from_vs_345.png) <br/> <br/>
 5. 在 [Visual Studio 安裝程式] 視窗中，按一下 [安裝]。
 
 安裝完成之後，您就可以開始使用 Dotfuscator CE。 如需詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
@@ -74,13 +74,13 @@ Visual Studio 2017 推出新的低影響安裝體驗。
 如果您尚未安裝 Visual Studio 2017，您可以從 [Visual Studio 網站][2017-install]取得安裝程式。
 執行時，它會顯示所選 Visual Studio 版本的安裝選項。
 
-![](~/ide/dotfuscator/media/install_ui.png)
+![](media/install_ui.png)
 
 然後，您就可以安裝 Dotfuscator CE 當作 Visual Studio 2017 的個別元件︰
 
 1. 選取 [個別元件] 索引標籤。
-2. 勾選 [程式碼工具] 下的 [PreEmptive Protection - Dotfuscator] 項目。<br/> <br/> ![](~/ide/dotfuscator/media/install_individually_12.png) <br/> <br/>
-3. [摘要] 面板會在 [個別元件] 區塊下顯示 [PreEmptive Protection - Dotfuscator]。 <br/> <br/> ![](~/ide/dotfuscator/media/install_individually_3.png) <br/> <br/>
+2. 勾選 [程式碼工具] 下的 [PreEmptive Protection - Dotfuscator] 項目。<br/> <br/> ![](media/install_individually_12.png) <br/> <br/>
+3. [摘要] 面板會在 [個別元件] 區塊下顯示 [PreEmptive Protection - Dotfuscator]。 <br/> <br/> ![](media/install_individually_3.png) <br/> <br/>
 4. 為環境設定合適的任何詳細安裝設定。
 5. 準備好安裝 Visual Studio 時，請按一下 [安裝] 按鈕。
 
