@@ -1,5 +1,5 @@
 ---
-title: Introducing Visual Studio for Mac
+title: "Visual Studio for Mac 簡介"
 description: 
 author: asb3993
 ms.author: amburns
@@ -10,118 +10,118 @@ ms.translationtype: HT
 ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
 ms.openlocfilehash: ffbd08a4a6765c2cc38329325e91f4aed12d88d5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/04/2017
 
 ---
 
-# <a name="introducing-visual-studio-for-mac"></a>Introducing Visual Studio for Mac
+# <a name="introducing-visual-studio-for-mac"></a>Visual Studio for Mac 簡介
 
-Visual Studio for Mac is a modern, sophisticated IDE with many features for creating mobile, desktop, and web applications. It supports development of the following:
+Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌面和 Web 應用程式的許多功能。 它支援下列開發：
 
-* Mobile with .NET: Android, iOS, tvOS, watchOS
-* Mac desktop apps
-* .NET Core applications
-* ASP.NET Core Web applications
-* Cross-platform Unity games
+* 使用 .NET 的行動裝置：Android、iOS、tvOS、watchOS
+* Mac 桌面應用程式
+* .NET Core 應用程式
+* ASP.NET Core Web 應用程式
+* 跨平台 Unity 遊戲
 
-It includes a rich editor, debugging, native platform integration with iOS, Mac and Android, and integrated source control to name just a few of its many features.
+它擁有許多功能，包含多功能編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，以及整合式原始檔控制等等，只是其眾多功能的一小部分。
 
-This topic surveys various sections of Visual Studio for Mac, providing a look at some of the features that make it a powerful tool for creating cross-platform applications.
+本主題審視 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立跨平台應用程式的強大工具。
 
-## <a name="installation"></a>Installation
+## <a name="installation"></a>安裝
 
-Follow the steps in the [Installation](~/installation.md) guide to download and Install Visual Studio for Mac.
+請遵循[安裝](~/installation.md)指南下載並安裝 Visual Studio for Mac。
 
-## <a name="language-support"></a>Language support
+## <a name="language-support"></a>語言支援
 
-Visual Studio for Mac supports development in C# and F#, by default.
+根據預設，Visual Studio for Mac 支援以 C# 和 F# 進行開發。
 
 ### <a name="c"></a>C#
 
-C# is the most commonly used language for creating cross-platform applications in Visual Studio for Mac. This includes full support for all C# 7 features.
+C# 是在 Visual Studio for Mac 中建立跨平台應用程式最常用的語言。 這包括對所有 C# 7 功能的完整支援。
 
 ### <a name="f"></a>F#
 
-F# is a strongly-typed functional programming language designed to run on .NET. It is available as a programming language to Visual Studio for Mac users on Android, Mac and iOS. For more information on using F# and to view samples created in the language, visit the [F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) guides.
+F# 是專為在 .NET 上執行所設計的強型別功能性程式設計語言。 它可供 Visual Studio for Mac 使用者在 Android、Mac 和 iOS 上作為程式設計語言之用。 如需使用 F# 的詳細資訊，以及檢視以該語言建立的範例，請瀏覽 [F#](https://developer.xamarin.com/guides/cross-platform/fsharp/) 指南。
 
-## <a name="platform-support"></a>Platform support
+## <a name="platform-support"></a>平台支援
 
-## <a name="net-core"></a>.NET Core
+## <a name="net-core"></a>.NET 核心
 
-[.NET Core](https://www.microsoft.com/net/core#macos) is a platform for creating applications that run on Windows, Linux, and Mac. Visual Studio for Mac has support for loading, creating, running, and debugging .NET Core projects.
+[.NET Core](https://www.microsoft.com/net/core#macos) 是一種平台，用於建立在 Windows、Linux 和 Mac 上執行的應用程式。 Visual Studio for Mac 支援載入、建立、執行和偵錯 .NET Core 專案。
 
-To run .NET Core projects, the .NET Core SDK should be downloaded and installed.
+若要執行 .NET Core 專案，應該下載和安裝 .NET Core SDK。
 
-.NET Core support includes:
+.NET Core 支援包括：
 
-* C# and F# IntelliSense.
-* .NET Core project templates for console, library, and web applications.
-* Full debugging support, including breakpoints, call stack, watch window, etc.
-* NuGet PackageReferences and MSBuild-based restore.
-* Integrated unit testing support for running and debugging tests with the Visual Studio Test Platform that is included with the  .NET Core SDK.
-* Migration from the old project.json format.
+* C# 和 F# IntelliSense。
+* 適用於主控台、程式庫和 Web 應用程式的 .NET Core 專案範本。
+* 完整偵錯支援，包括中斷點、呼叫堆疊、監看式視窗等等。
+* NuGet PackageReferences 和 MSBuild 還原。
+* 整合式單元測試支援，可使用 .NET Core SDK 隨附的 Visual Studio 測試平台來執行和偵錯測試。
+* 從舊的 project.json 格式進行移轉。
 
-To get started, check out the ASP.NET Core web apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
+若要開始，請參閱 ASP.NET Core Web 應用程式[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
 
 ## <a name="xamarin"></a>Xamarin
 
-First-class support for [Xamarin](https://developer.xamarin.com/) allows you to develop rich native experiences for Android, macOS, iOS, tvOS, and watchOS. Xamarin.Forms cross-platform applications help you share XAML-based UI code between Android, iOS, and macOS without limiting access to native functionality.
+[Xamarin](https://developer.xamarin.com/) 的第一級支援可讓您開發 Android、macOS、iOS、tvOS 和 watchOS 的豐富原生體驗。 Xamarin.Forms 跨平台應用程式可協助您在 Android、iOS 與 macOS 之間共用 XAML UI 程式碼，而不限制原生功能的存取權。
 
-To get started, check out the Mobile apps [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started).
+若要開始，請參閱行動裝置應用程式[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started)。
 
 ### <a name="android"></a>Android
 
-Visual Studio has its own integrated Android SDK manager.
+Visual Studio 有自己的整合式 Android SDK Manager。
 
-For Android applications, Visual Studio for Mac includes its own designer, which works with Android `.axml` files to visually construct user interfaces. Visual Studio for Mac will open these files in its Android designer, as shown below:
+對於 Android 應用程式，Visual Studio for Mac 包括自己的設計工具，可使用 Android 的 `.axml` 檔案，以視覺化方式建構使用者介面。 Visual Studio for Mac 會在自己的 Android 設計工具中開啟這些檔案，如下所示：
 
 ![](media/intro-image31.png)
 
-For more information on the Android designer see the [Designer Overview](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview) document.
+如需 Android 設計工具的詳細資訊，請參閱[設計工具概觀](https://developer.xamarin.com/Android/Guides/User_Interface/Designer_Overview)文件。
 
 ### <a name="ios"></a>iOS
 
-The iOS Designer is fully integrated with Visual Studio for Mac and enables visual editing of .xib and Storyboard files to create iOS, tvOS, and WatchOS UIs and transitions. The entire user interface can be built using drag-and-drop functionality between the Toolbox and Design Surface, while using an intuitive approach to handling events. The iOS Designer also supports [custom controls](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/) with the added benefit of design-time rendering.
+iOS 設計工具已與 Visual Studio for Mac 完全整合在一起，以視覺化編輯 .xib 和分鏡腳本檔案來建立 iOS、tvOS 和 WatchOS UI 和轉換。 整個使用者介面都可以使用工具箱和設計介面之間的拖放功能建置，同時使用直覺式方法來處理事件。 iOS 設計工具也利用設計階段轉譯支援[自訂控制項](https://developer.xamarin.com/guides/ios/user_interface/designer/ios_designable_controls_overview/)。
 
 ![](media/intro-image30.png)
 
-For more information on using the iOS Designer, refer to the [Designer](https://developer.xamarin.com/guides/ios/user_interface/designer) documents.
+如需使用 iOS 設計工具的詳細資訊，請參閱[設計工具](https://developer.xamarin.com/guides/ios/user_interface/designer)文件。
 
 ### <a name="mac"></a>Mac
 
-Xamarin provides native Mac API bindings allowing you to create beautiful Mac applications.
+Xamarin 提供可讓您建立美觀 Mac 應用程式的原生 Mac API 繫結。
 
-For more information on writing Mac applications with Visual Studio for Mac, refer to the [Xamarin.Mac](https://developer.xamarin.com/guides/#mac) documentation.
+如需使用 Visual Studio for Mac 撰寫 Mac 應用程式的詳細資訊，請參閱 [Xamarin.Mac](https://developer.xamarin.com/guides/#mac) 文件。
 
-## <a name="gaming"></a>Gaming
+## <a name="gaming"></a>遊戲
 
-Visual Studio for Mac provides support for cross-platform games development with Unity 5.6.1.
+Visual Studio for Mac 支援 Unity 5.6.1 的跨平台遊戲開發。
 
-To get started, check out the Unity [hands-on lab](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started).
+若要開始，請參閱 Unity [實際操作實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Unity/Getting-Started)。
 
-## <a name="enterprise-features"></a>Enterprise features
+## <a name="enterprise-features"></a>企業功能
 
 > [!Note]
-> These products can only be used with a Visual Studio Enterprise subscription.
+> 這些產品只能搭配 Visual Studio Enterprise 訂閱使用。
 
-### <a name="profiler"></a>Profiler
+### <a name="profiler"></a>程式碼剖析工具
 
-The Xamarin Profiler has three instruments available for profiling. The [Introduction to the Xamarin Profiler](https://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/xamarin-profiler/) guide explores what these instruments measure and how they analyze your application, and clarifies the meaning of the data presented on each screen.
+Xamarin Profiler 有三種工具可供分析所用。 [Xamarin Profiler 簡介](https://developer.xamarin.com/guides/cross-platform/deployment,_testing,_and_metrics/xamarin-profiler/)指南探討這些工具測量的內容，以及它們如何分析您的應用程式，並釐清每個畫面上顯示的資料意義。
 
-### <a name="inspector"></a>Inspector
+### <a name="inspector"></a>檢查程式
 
-The Xamarin Inspector provides an interactive C# console with tools to users. It can be used as a debugging or diagnostics aid when inspecting live applications, as a teaching tool, as a documentation tool or an experimentation tool.
+Xamarin Inspector 為使用者提供互動式的 C# 主控台和工具。 檢查即時應用程式時，它可作為教學工具、記錄工具或試驗工具，用為偵錯或診斷輔助工具。
 
 ![](media/intro-inspector.png)
 
-It consists of a standalone application that provides a rich C# console that can target various programming platforms (Android, iOS, Mac and Windows) as well as integrating into the debugging workflow of your IDE.
+它包含的獨立應用程式，提供以各種程式設計平台 (Android、iOS、Mac 和 Windows) 為目標的多功能 C# 主控台，以及整合到 IDE 的偵錯工作流程中。
 
-For more information refer to the [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) guide.
+如需詳細資訊，請參閱 [Xamarin Inspector](https://developer.xamarin.com/guides/cross-platform/inspector/) 指南。
 
-## <a name="next-steps"></a>Next steps
+## <a name="next-steps"></a>後續步驟
 
-* **Get the big picture** - To get an overview of many of the major features in Visual Studio for Mac, see the Visual Studio for Mac [IDE Tour](~/ide-tour.md).
-* **Setup** - To learn about how to download and install Visual Studio, see the [Installation](~/installation.md) guide.
-* **Xamarin Tutorials** - To learn more about how to develop code with Xamarin, go to the Xamarin [Developer Center](https://developer.xamarin.com).
-* **Videos** - To learn more about other features and aspects of Visual Studio for Mac, check out videos on the [Xamarin University](https://university.xamarin.com) website.
-* **Hands-on Labs** - To get started working with the various workloads included in Visual Studio for Mac, check out the [hands-on labs](https://github.com/Microsoft/vs4mac-labs).
+* **了解全貌** - 若要概要了解 Visual Studio for Mac 中的主要功能，請參閱 Visual Studio for Mac [IDE 導覽](~/ide-tour.md)。
+* **安裝** - 若要了解如何下載並安裝 Visual Studio，請參閱[安裝](~/installation.md)指南。
+* **Xamarin 教學課程** - 若要深入了解如何使用 Xamarin 開發程式碼，請移至 Xamarin [開發人員中心](https://developer.xamarin.com)。
+* **影片** - 若要深入了解 Visual Studio for Mac 的其他功能和各種層面，請觀看 [Xamarin University](https://university.xamarin.com) (Xamarin 大學) 網站的影片。
+* **實際操作實驗室** - 若要開始使用 Visual Studio for Mac 包含的各種工作負載，請參閱[實際操作實驗室](https://github.com/Microsoft/vs4mac-labs)。
