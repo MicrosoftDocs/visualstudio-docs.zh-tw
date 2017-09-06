@@ -36,10 +36,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 57d415109fe3d07930fa4302aed20de0e25c32fd
+ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
+ms.openlocfilehash: 3383abb79014fbb0b6d4e491cf14e98a561a9043
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="save-data-in-a-transaction"></a>Save data in a transaction
@@ -90,7 +90,7 @@ This walkthrough demonstrates how to save data in a transaction by using the <xr
   
      The **NorthwindDataSet** is added to your project and the `Customers` and `Orders` tables appear in the **Data Sources** window.  
   
-## <a name="addcontrols-to-the-form"></a>Addcontrols to the form  
+## <a name="add-controls-to-the-form"></a>Add controls to the form  
  You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  
@@ -116,8 +116,8 @@ This walkthrough demonstrates how to save data in a transaction by using the <xr
   
      A reference to **System.Transactions** is added to the project.  
   
-## <a name="modifythe-code-in-the-bindingnavigators-saveitem-button"></a>Modifythe code in the BindingNavigator's SaveItem button  
- For the first table dropped onto your form, code is added by default to the `click` event of the save button on the <xref:System.Windows.Forms.BindingNavigator>. You need to manually add code to update any additional tables. For this walkthrough, we refactor the existing save code out of the save button's click event handler.We also create a few more methods to provide specific update functionality based on whether the row needs to be added or deleted.  
+## <a name="modify-the-code-in-the-bindingnavigators-saveitem-button"></a>Modify the code in the BindingNavigator's SaveItem button  
+ For the first table dropped onto your form, code is added by default to the `click` event of the save button on the <xref:System.Windows.Forms.BindingNavigator>. You need to manually add code to update any additional tables. For this walkthrough, we refactor the existing save code out of the save button's click event handler. We also create a few more methods to provide specific update functionality based on whether the row needs to be added or deleted.  
   
 #### <a name="to-modify-the-auto-generated-save-code"></a>To modify the auto-generated save code  
   
@@ -127,7 +127,7 @@ This walkthrough demonstrates how to save data in a transaction by using the <xr
   
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]  [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]  
   
- The order for reconciling changes to related data is as follows:  
+The order for reconciling changes to related data is as follows:  
   
 -   Delete child records. (In this case, delete records from the `Orders` table.)  
   

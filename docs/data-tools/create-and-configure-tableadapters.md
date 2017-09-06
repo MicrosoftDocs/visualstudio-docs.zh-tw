@@ -33,10 +33,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 5ecf0d9b54061ee7ea0bcf6dc701578ddfa856ec
-ms.openlocfilehash: 1a2a3a1f198def27854ded18506de60abb6a7036
+ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
+ms.openlocfilehash: 860cc65b2ce6046e7d007d1226c90cfda6e2c099
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="create-and-configure-tableadapters"></a>Create and configure TableAdapters
@@ -84,7 +84,11 @@ The **Advanced Options** in the wizard enable you to:
   
  Any changes that you make to the TableAdapter's main `Fill` method are reflected in the schema of the associated data table. For example, removing a column from the query in the main `Fill` method also removes the column from the associated data table. Additionally, removing the column from the main `Fill` method removes the column from any additional queries for that TableAdapter.  
   
- You can use the TableAdapter Query Configuration Wizard to create and edit additional queries for the TableAdapter. These additional queries must conform to the table schema, unless they return a scalar value.  The additional queries have a names that you specify (for example, `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`.)  
+ You can use the TableAdapter Query Configuration Wizard to create and edit additional queries for the TableAdapter. These additional queries must conform to the table schema, unless they return a scalar value.  Each additional query has a name that you specify.  
+ 
+ The following example shows you how to call an additional query named `FillByCity`:  
+ 
+ `CustomersTableAdapter.FillByCity(NorthwindDataSet.Customers, "Seattle")`  
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>To start the TableAdapter Query Configuration Wizard with a new query  
   

@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7b960a3124e663cd1f49d8c10e8953837a47d38a
+ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
+ms.openlocfilehash: deb7bc8f1fd15153555e1f94471b432ea93b00d0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Save data with the TableAdapter DBDirect methods
@@ -103,7 +103,7 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
      The **NorthwindDataSet** is added to your project and the `Region` table appears in the **Data Sources** window.  
   
-## <a name="addcontrols-to-the-form-to-display-the-data"></a>Addcontrols to the form to display the data  
+## <a name="add-controls-to-the-form-to-display-the-data"></a>Add controls to the form to display the data  
  Create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
   
 #### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  

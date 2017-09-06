@@ -38,10 +38,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 5ecf0d9b54061ee7ea0bcf6dc701578ddfa856ec
-ms.openlocfilehash: 234bb4fb1ee4e325115187080b5e38e7489435a1
+ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
+ms.openlocfilehash: 5359466b652e433a06150702adefd8e3e74eed9d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Fill datasets by using TableAdapters
@@ -141,7 +141,7 @@ A TableAdapter component  fills a dataset with data from the database, based on 
 
 
 ## <a name="security"></a>Security  
- When you use data commands with a `CommandType` property set to <xref:System.Data.CommandType>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.  
+ When you use data commands with a CommandType property set to <xref:System.Data.CommandType.Text>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.  
   
 ## <a name="see-also"></a>See Also  
  [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
