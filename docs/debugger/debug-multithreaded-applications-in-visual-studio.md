@@ -1,110 +1,123 @@
 ---
-title: "在 Visual Studio 中偵錯多執行緒應用程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.gputthreads"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio], 高效能運算"
-  - "偵錯 [Visual Studio], 多執行緒"
-  - "高效能偵錯"
-  - "多執行緒偵錯"
-  - "執行緒處理 [Visual Studio], 偵錯"
+title: Debug Multithreaded Applications in Visual Studio | Microsoft Docs
+ms.custom: 
+ms.date: 09/05/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.debug.gputthreads
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- threading [Visual Studio], debugging
+- debugging [Visual Studio], high-performance computing
+- debugging [Visual Studio], multithreaded
+- multithreaded debugging
+- high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
 caps.latest.revision: 25
-caps.handback.revision: 25
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 在 Visual Studio 中偵錯多執行緒應用程式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: HT
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: c5a123ccb276e01953b2168d50e0d633640d384a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 09/07/2017
 
-執行緒是作業系統配置處理器時間的指令序列。  在作業系統中執行的每個處理序都包含至少一個執行緒。  具有一個以上執行緒的處理序就稱為多執行緒。  
+---
+# <a name="debug-multithreaded-applications-in-visual-studio"></a>Debug Multithreaded Applications in Visual Studio
+A thread is a sequence of instructions to which the operating system allocates processor time. Every process that is running in the operating system consists of at least one thread. Processes that have more than one thread are called multithreaded.  
   
- 具有多個處理器、多重核心處理器或超執行緒處理器的電腦，可以同時執行多個執行緒。  多個執行緒的平行處理可以大幅改進程式效能，但由於帶來了追蹤多個執行緒的需要，也可能會增加偵錯的困難度。  
+Computers with multiple processors, multi-core processors, or hyperthreading processes can run multiple threads at the same time. Parallel processing of multiple threads can greatly improve program performance, but it can also make debugging more difficult because it introduces the need to keep track of multiple threads.  
   
- 除此之外，多執行緒也帶來一些新類型的潛在錯誤。  舉例來說，常常有兩個以上的執行緒必須存取相同資源，但同時間只有一個執行緒能夠安全存取該資源。  所以某些形式的互斥是必要的，才能確保同時間只有一個執行緒在存取該資源。  如果執行互斥的方式不正確，就可能產生「*死結*」\(Deadlock\) 的情況，造成沒有執行緒能夠執行。  在偵錯時死結可能會是個特別難處理的問題。  
+In addition, multithreading introduces some new types of potential bugs. Often, for example, two or more threads have to access the same resource, but only one thread can safely access the resource at a time. Some form of mutual exclusion is necessary to make sure that only one thread is accessing the resource at a time. If mutual exclusion is performed incorrectly, it can create a *deadlock* condition where no thread can execute. Deadlocks can be a particularly hard problem to debug.
+
+Visual Studio provides different tools for use in debugging multithreaded apps.
+
+- For threads, the primary tools for debugging threads are the **Threads** window, thread markers in source windows, **Parallel Stacks** window, **Parallel Watch** window, and the **Debug Location** toolbar. To learn about the **Threads** window and **Debug Location** toolbar, see [Walkthrough: Debug using the Threads Window](../debugger/how-to-use-the-threads-window.md). To learn how to use the **Parallel Stacks** and **Parallel Watch** windows, see [Get started debugging a multithreaded application](../debugger/get-started-debugging-multithreaded-apps.md). Both topics show how to use thread markers.
   
- Visual Studio 提供 \[執行緒\] 視窗、\[GPU 執行緒\] 視窗、\[平行監看式\] 視窗和其他功能，讓多執行緒偵錯更容易。 了解執行緒功能最好的方式，就是執行逐步解說。  請參閱[逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)和[逐步解說：偵錯 C\+\+ AMP 應用程式](../Topic/Walkthrough:%20Debugging%20a%20C++%20AMP%20Application.md)。  
+- For code that uses the [Task Parallel Library (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl) or the [Concurrency Runtime](/cpp/parallel/concrt/concurrency-runtime/), the primary tools for debugging are the **Parallel Stacks** window, the **Parallel Watch** window, and the **Tasks** window (the **Tasks** window also supports JavaScript). To get started, see [Walkthrough: Debugging a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md) and [Walkthrough: Debugging a C++ AMP Application](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application.md). 
+
+- For debugging threads on the GPU, the primary tool is the **GPU Threads** window. See [How to: Use the GPU Threads window](../debugger/how-to-use-the-gpu-threads-window.md).  
+
+- For processes, the primary tools are the **Attach to Process** dialog box, the **Processes** window, and the **Debug Location** toolbar.  
   
- Visual Studio 同樣提供強大的中斷點和追蹤點，這在您對多執行緒應用程式進行偵錯時非常實用。  您可以使用中斷點篩選條件，將中斷點放置在個別執行緒上。  請參閱[使用中斷點](../debugger/using-breakpoints.md)  
+Visual Studio also provides powerful breakpoints and tracepoints, which can be very useful when you debug multithreaded applications. You can use breakpoint conditions and filters to place breakpoints on individual threads. See [Using Breakpoints](../debugger/using-breakpoints.md). 
   
- 偵錯具有使用者介面的多執行緒應用程式可能會特別地困難。  在這種情況下，您可以考慮在第二部電腦上執行該應用程式，並使用遠端偵錯。  如需詳細資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。  
+Debugging a multithreaded application that has a user interface can be especially difficult. In that case, you might consider running the application on a second computer and using remote debugging. For information, see [Remote Debugging](../debugger/remote-debugging.md).  
   
-## 在本節中  
- [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)  
- 說明偵錯執行緒和處理序的基本概念。  
+## <a name="in-this-section"></a>In This Section
+ [Get started debugging a multithreaded application](../debugger/get-started-debugging-multithreaded-apps.md).  
+ A guided tour of thread debugging features, with emphasis on features in the **Parallel Stacks** window and **Parallel Watch** window.
+
+ [Tools for Debugging Threads and Processes](../debugger/debug-threads-and-processes.md)  
+ Lists the features of the tools for debugging threads and processes.  
   
- [偵錯處理序](../debugger/debug-multiple-processes.md)  
- 說明如何偵錯多重處理序  
+ [Debug Multiple Processes](../debugger/debug-multiple-processes.md)  
+ Explains how to debug multiple processes.
+
+ [Walkthrough: Debug using the Threads Window](../debugger/how-to-use-the-threads-window.md).  
+ Walkthrough that shows how to use the **Threads** window and the **Debug Location** toolbar. 
+
+ [Walkthrough: Debug a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md)  
+ Walkthrough that shows how to use the **Parallel Stacks** and **Tasks** windows.  
   
- [如何：使用執行緒視窗](../debugger/how-to-use-the-threads-window.md)  
- 使用 \[**執行緒**\] 視窗偵錯執行緒的好用程序。  
+ [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
+ Three ways to switch the debugging context to another thread.  
   
- [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)  
- 切換偵錯內容到另一個執行緒的三種方式。  
+ [How to: Flag and Unflag Threads](../debugger/how-to-flag-and-unflag-threads.md)  
+ Mark or flag threads that you want to give special attention to while debugging.    
   
- [如何：將執行緒加上旗標和取消旗標](../Topic/How%20to:%20Flag%20and%20Unflag%20Threads.md)  
- 將您要在偵錯時特別注意的執行緒加上標記或旗標。  
+ [How to: Debug On a High-Performance Cluster](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
+ Techniques for debugging an application that runs on a high-performance cluster.  
+
+ [Tips for Debugging Threads in Native Code](../debugger/tips-for-debugging-threads-in-native-code.md)  
+ Simple techniques that can be useful for debugging native threads. 
+
+ [How to: Set a Thread Name in Native Code](../debugger/how-to-set-a-thread-name-in-native-code.md)  
+ Give your thread a name that you view in the **Threads** window.  
   
- [如何：在機器碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-native-code.md)  
- 為執行緒命名以方便在 \[**執行緒**\] 視窗中檢視。  
+ [How to: Set a Thread Name in Managed Code](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
+ Give your thread a name that you view in the **Threads** window. 
   
- [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)  
- 為執行緒命名以方便在 \[**執行緒**\] 視窗中檢視。  
+## <a name="related-sections"></a>Related Sections  
+ [Using Breakpoints](../debugger/using-breakpoints.md)
+
+ - Use breakpoint conditions or filters when you want to debug an individual thread.  
   
- [逐步解說：偵錯多執行緒應用程式](../debugger/walkthrough-debugging-a-multithreaded-application.md)。  
- 執行緒偵錯功能的導覽，並強調說明 [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)] 的功能。  
+ - Tracepoints enable you to trace execution of your program without breaking. This can be useful for studying problems such as deadlocks.  
   
- [如何：偵錯高效能叢集](../debugger/how-to-debug-on-a-high-performance-cluster.md)  
- 偵錯在高效能叢集上執行的應用程式的相關技巧。  
+ [Threading](/dotnet/standard/threading/index)  
+ Threading concepts in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] programming, including example code.  
   
- [在機器碼中偵錯執行緒的秘訣](../debugger/tips-for-debugging-threads-in-native-code.md)  
- 在偵錯原生執行緒時非常好用的簡單技巧。  
+ [Multithreading in Components](http://msdn.microsoft.com/Library/2fc31e68-fb71-4544-b654-0ce720478779)  
+ How to use multithreading in [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] components.  
   
- [使用工作視窗](../debugger/using-the-tasks-window.md)  
- 顯示所有 Managed 或原生工作物件，包括其狀態和其他有用的資訊。  
+ [Multithreading Support for Older Code (Visual C++)](/cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
+ Threading concepts and example code for C++ programmers using MFC.  
   
- [使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md)  
- 以單一檢視顯示多個執行緒 \(或工作\) 的呼叫堆疊，並且聯合執行緒 \(或工作\) 共有的堆疊區段。  
-  
- [逐步解說：偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)  
- 顯示如何使用 \[平行工作\] 和 \[平行堆疊\] 視窗的逐步解說。  
-  
- [如何：使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md)  
- 跨多個執行緒檢查值和運算式。  
-  
- [如何：使用 GPU 執行緒視窗](../Topic/How%20to:%20Use%20the%20GPU%20Threads%20Window.md)  
- 在偵錯期間檢查並使用 GPU 上執行的執行緒。  
-  
-## 相關章節  
- [使用中斷點](../debugger/using-breakpoints.md)  
- -   在您要將中斷點放置在個別執行緒上時，可以使用的中斷點篩選條件。  
-  
--   追蹤點可以讓您追蹤程式的執行，而不會中斷程式。  在研究死結這類的問題時非常好用。  
-  
- [Threading](../Topic/Managed%20Threading.md)  
- [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 程式設計中的執行緒概念，包括範例程式碼。  
-  
- [元件中的多執行緒](../Topic/Multithreading%20in%20Components.md)  
- 如何在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 元件中使用多執行緒處理。  
-  
- [舊版程式碼的多執行緒支援 \(Visual C\+\+\)](/visual-cpp/parallel/multithreading/multithreading-support-for-older-code-visual-cpp)  
- 提供給使用 MFC 的 C\+\+ 程式設計人員的執行緒概念和範例程式碼。  
-  
-## 請參閱  
- [偵錯執行緒和處理序](../debugger/debug-threads-and-processes.md)   
- [遠端偵錯](../debugger/remote-debugging.md)
+## <a name="see-also"></a>See Also  
+ [Debug Threads and Processes](../debugger/debug-threads-and-processes.md)   
+ [Remote Debugging](../debugger/remote-debugging.md)

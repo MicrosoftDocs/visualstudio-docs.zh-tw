@@ -33,8 +33,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: a88479f28087106f9195c7e5b21802e702ffc3ec
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 447c31251b270eb5d839cd63a26c787850db4c70
 ms.contentlocale: zh-tw
 ms.lasthandoff: 09/07/2017
 
@@ -131,11 +131,12 @@ A common application scenario is to display selected data on a form. For example
   
      The query should be similar to the following:  
   
-     `SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax`  
-  
-     `FROM Customers`  
-  
-     `WHERE City = @City`  
+     ```sql
+     SELECT CustomerID, CompanyName, ContactName, ContactTitle,  
+          Address, City, Region, PostalCode, Country, Phone, Fax  
+     FROM Customers
+     WHERE City = @City  
+     ```
   
     > [!NOTE]
     >  Access and OLE DB data sources use the question mark ('?') to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  
