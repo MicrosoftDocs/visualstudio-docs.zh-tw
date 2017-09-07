@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: a64efded73a267501a4b57d1fff003d5de1bbc85
+ms.contentlocale: zh-tw
 
 ---
 > [!NOTE]

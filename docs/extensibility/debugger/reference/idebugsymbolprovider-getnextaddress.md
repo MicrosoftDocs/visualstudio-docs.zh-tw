@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProvider::GetNextAddress | Microsoft Docs
+title: "IDebugSymbolProvider::GetNextAddress |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 61f05a9cdde32717d6151a15cf7f8d2176c7ed60
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-Gets the debug address that follows a given debug address in a method.  
+取得會遵循特定的偵錯中的位址方法的偵錯位址。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetNextAddress(   
@@ -58,18 +58,18 @@ int GetNextAddress(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- [in] Given debug address.  
+ [in]指定偵錯的位址。  
   
  `fStatementOnly`  
- [in] If TRUE, limits the debug addresses to a single statement.  
+ [in]如果為 TRUE，則會限制位址給單一陳述式的偵錯。  
   
  `ppAddress`  
- [out] Returns the next debug address.  
+ [out]傳回下一個偵錯位址。  
   
-## <a name="return-value"></a>Return Value  
- Returns a valid `HRESULT`, typically S_OK.  
+## <a name="return-value"></a>傳回值  
+ 傳回有效`HRESULT`，通常為 S_OK。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

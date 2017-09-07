@@ -11,8 +11,8 @@ dev_langs:
 - CSharp
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 caps.latest.revision: 8
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.mt:
 - cs-cz
@@ -20,10 +20,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cfa3f7c2609414076c1d8f9c6e0f1c9024edc4b4
-ms.openlocfilehash: c215a6073084a601cdf6b94b603d14ef35e692d7
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: a86d6344ec40f48aa3d28cb6372d54b27cc52995
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="query-datasets"></a>Query datasets

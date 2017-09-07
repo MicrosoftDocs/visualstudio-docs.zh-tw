@@ -13,8 +13,8 @@ helpviewer_keywords:
 - n-tier applications, about n-tier applications
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -31,10 +31,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: cfa3f7c2609414076c1d8f9c6e0f1c9024edc4b4
-ms.openlocfilehash: b060fe4d3ce422a0440726c3a741fb4a104827e8
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: d86260cbc0bbc7eda47009730e26201368abd623
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="n-tier-data-applications-overview"></a>N-Tier Data Applications Overview

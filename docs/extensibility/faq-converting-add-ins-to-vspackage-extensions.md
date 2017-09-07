@@ -1,5 +1,5 @@
 ---
-title: 'FAQ: Converting Add-ins to VSPackage Extensions | Microsoft Docs'
+title: "常見問題集： 將增益集轉換為 VSPackage 擴充功能 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,75 +30,75 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 8db7d203b599c11ce8fea07ed3647771c879a256
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ: Converting Add-ins to VSPackage Extensions
-Add-ins are now deprecated. To make a new Visual Studio extension, you need to create a VSIX extension. Here are the answers to some frequently asked questions about how to convert a Visual Studio add-in to a VSIX extension.  
+# <a name="faq-converting-add-ins-to-vspackage-extensions"></a>常見問題集：將增益集轉換成 VSPackage 擴充功能
+增益集目前已被取代。 若要讓新的 Visual Studio 擴充功能，您需要建立 VSIX 擴充功能。 以下是有關如何將 Visual Studio 增益集轉換為 VSIX 擴充功能的一些常見問題集問題的答案。  
   
 > [!WARNING]
->  Starting in Visual Studio 2015, for C# and Visual Basic projects, you can use the VSIX project and add item templates for menu commands, tool windows, and VSPackages. For more information, see [What's New in the Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).  
+>  針對 C# 和 Visual Basic 專案，開始在 Visual Studio 2015 中，您就可以使用 VSIX 專案，並加入功能表命令、 工具視窗和 Vspackage 的項目範本。 如需詳細資訊，請參閱[What's New in Visual Studio 2015 SDK](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md)。  
   
 > [!IMPORTANT]
->  In many cases you can simply transfer your add-in code to a VSIX project with a VSPackage project item. You can get the DTE automation object by calling <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method.  
+>  在許多情況下可以只傳輸您的增益集程式碼加入 VSIX 專案 VSPackage 專案項目。 在 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 方法中呼叫 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>，可以取得 DTE 自動化物件。  
 >   
 >  `DTE2 dte = (DTE2)GetService(typeof(DTE));`  
 >   
->  For more information, see [How can I run my add-in code in a VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) below.  
+>  如需詳細資訊，請參閱[如何執行我的增益集程式碼在 VSPackage 中？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin)下方。  
   
-## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>What software do I need to develop VSIX extensions?  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>若要開發 VSIX 擴充功能是否需要哪些軟體？  
+ 啟動 Visual Studio 2015 中，請勿從 「 下載中心 」 未安裝 Visual Studio SDK。 它是包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="wheres-the-extension-documentation"></a>Where's the extension documentation?  
- Start with [Starting to Develop Visual Studio Extensions](../extensibility/starting-to-develop-visual-studio-extensions.md). Other articles about VSSDK extension development on MSDN are below that one.  
+## <a name="wheres-the-extension-documentation"></a>其中是 extension 文件？  
+ 開頭[開始開發 Visual Studio 擴充功能](../extensibility/starting-to-develop-visual-studio-extensions.md)。 VSSDK MSDN 上的擴充功能開發相關的其他文章如下一。  
   
-## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Can I convert my add-in project to a VSIX project?  
- An add-in project can't be converted directly to a VSIX project because the mechanisms used in VSIX projects are not the same as the ones in add-in projects. The VSIX project template, plus the right project item templates have a lot of code that makes it relatively easy to get up and running as a VSIX extension.  
+## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>可以轉換我增益集的專案加入 VSIX 專案嗎？  
+ 無法直接加入 VSIX 專案轉換的增益集專案，因為在 VSIX 專案中使用的機制不是在增益集專案中的相同。 VSIX 專案範本，再加上正確的專案項目範本有大量程式碼，讓它相當容易，才能啟動、 執行做為 VSIX 擴充功能。  
   
-##  <a name="BKMK_StartDeveloping"></a> How do I start developing VSIX extensions?  
- Here's how you make a VSIX that has a menu command:  
+##  <a name="BKMK_StartDeveloping"></a>如何開始開發 VSIX 擴充功能？  
+ 以下是讓 VSIX 的功能表命令的方式：  
   
-#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>To make a VSIX extension that has a menu command  
+#### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>若要建立 VSIX 擴充功能有功能表命令  
   
-1.  Create a VSIX project. (**File**, **New**, **Project**, or type **project** in the **Quick Launch** window). In the **New Project** dialog box, expand **Visual C# / Extensibility** or **Visual Basic / Extensibility** and select **VSIX Project**.) Name the project **TestExtension** and specify a location for it.  
+1.  建立 VSIX 專案。 (**檔案**，**新增**，**專案**，或類型**專案**中**快速啟動**視窗)。 在**新專案**對話方塊方塊中，展開  **Visual C# / 擴充性**或**Visual Basic / 擴充性**選取**VSIX 專案**。)將專案命名**TestExtension**和指定的位置。  
   
-2.  Add a **Custom Command** project item template. (Right-click the project node in the **Solution Explorer** and select **Add / New Item**. In the **New Project** dialog for either Visual C# or Visual Basic, select the **Extensibility** node and select **Custom Command**.)  
+2.  新增**自訂命令**專案項目範本。 (以滑鼠右鍵按一下專案節點中的**方案總管 中**選取**新增 / 新項目**。 在**新專案**Visual C# 或 Visual Basic 中，選取對話方塊**擴充性**節點，然後選取**自訂命令**。)  
   
-3.  Press F5 to build and run the project in debug mode.  
+3.  按 F5，以偵錯模式建置並執行專案。  
   
-     A second instance of Visual Studio appears. This second instance is called the experimental instance, and it may not have the same settings as the instance of Visual Studio you're using to write code. The first time you run the experimental instance, you will be asked to sign in to VS Online and specify your theme and profile.  
+     Visual Studio 的第二個執行個體隨即出現。 第二個執行個體稱為實驗執行個體，其設定可能與您正用來撰寫程式碼的 Visual Studio 執行個體的設定不同。 第一次執行實驗執行個體時，系統會要求您登入 VS Online 並指定佈景主題和設定檔。  
   
-     On the **Tools** menu (in the experimental instance) you should see a button named **My Command name**. When you choose this button, a message should appear: **Inside TestVSPackagePackage.MenuItemCallback()**.  
+     在**工具**功能表 （在實驗執行個體中） 您應該會看到名為按鈕**我命令名稱**。 當您選擇此按鈕時，應該會出現一則訊息：**內 TestVSPackagePackage.MenuItemCallback()**。  
   
-##  <a name="BKMK_RunAddin"></a> How can I run my add-in code in a VSPackage?  
- Add-in code usually runs in one of two ways:  
+##  <a name="BKMK_RunAddin"></a>如何在 VSPackage 中執行我的增益集程式碼？  
+ 增益集程式碼通常以兩種方式之一執行：  
   
--   Triggered by a menu command (the code is in the `IDTCommandTarget.Exec` method)  
+-   由功能表命令觸發 (程式碼在 `IDTCommandTarget.Exec` 方法中)  
   
--   Automatically on startup (the code is in the `OnConnection` event handler.)  
+-   啟動時自動執行 (程式碼在 `OnConnection` 事件處理常式中。)  
   
- You can do the same things in a VSPackage. Here's how to add some add-in code in the callback method:  
+ 您可以在 VSPackage 中執行相同的動作。 以下是如何在回呼方法加入一些增益集程式碼：  
   
-#### <a name="to-implement-a-menu-command-in-a-vspackage"></a>To implement a menu command in a VSPackage  
+#### <a name="to-implement-a-menu-command-in-a-vspackage"></a>在 VSPackage 中實作功能表命令  
   
-1.  Create a VSPackage that has a menu command. (For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).)  
+1.  建立具有功能表命令的 VSPackage。 (如需詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。)  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
   
-3.  Add the following `using` statements to the file:  
+3.  將下列 `using` 陳述式加入檔案中：  
   
     ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  Find the `MenuItemCallback` method. Add a call to <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to get the <xref:EnvDTE80.DTE2> object:  
+4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：  
   
     ```csharp  
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
     ```  
   
-5.  Add the code that your add-in had in its `IDTCommandTarget.Exec` method. For example, here is some code that adds a new pane to the **Output** window and prints "Some Text" in the new pane.  
+5.  在增益集的 `IDTCommandTarget.Exec` 方法中加入其具有的程式碼。 例如，以下是一些程式碼加入至新窗格，**輸出**視窗，並在新的窗格中的 「 部分文字 」 將列印。  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -112,87 +112,87 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
   
     ```  
   
-6.  Build and run this project. Press F5 or select **Start** on the **Debug** toolbar. In the experimental instance of Visual Studio, the **Tools** menu should have a button named **My Command name**. When you choose this button, the words **Some Text** should appear in an **Output** window pane. (You may have to open the **Output** window.)  
+6.  建置並執行此專案。 按 F5 或選取**啟動**上**偵錯**工具列。 在 Visual Studio 的實驗執行個體**工具**功能表應該有按鈕名為**我命令名稱**。 當您選擇此按鈕，單字**某些文字**應該會出現在**輸出**視窗窗格。 (您可能需要開啟**輸出**視窗。)  
   
- You can also have your code run on startup. However, this approach is generally discouraged for VSPackage extensions. If too many extensions try to load when Visual Studio starts, the start time might become noticeably longer. A better practice is to load the VSPackage automatically only when some condition is met (like a solution being opened).  
+ 您也可以讓程式碼在啟動時執行。 不過，通常不鼓勵對 VSPackage 擴充功能採用這種方法。 如果有太多擴充功能在 Visual Studio 啟動時嘗試載入，開始時間可能會變得很長。 較佳的做法是只在符合部分條件 (如開啟方案) 時才自動載入 VSPackage。  
   
- This procedure shows how to run add-in code in a VSPackage that loads automatically when a solution is opened:  
+ 這項程序示範如何在方案開啟時自動載入的 VSPackage 中，執行增益集程式碼：  
   
-#### <a name="to-autoload-a-vspackage"></a>To autoload a VSPackage  
+#### <a name="to-autoload-a-vspackage"></a>自動載入 VSPackage  
   
-1.  Create a VSIX project with a Visual Studio Package project item. (For the steps to do this, see [How do I start developing VSIX extensions?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping). Just add the **Visual Studio Package** project item instead.) Name the VSIX project **TestAutoload**.  
+1.  建立 VSIX 專案與 Visual Studio Package 專案項目。 (若要這樣做，請參閱[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping)。 只要加入**Visual Studio Package**改為專案項目。)VSIX 專案的名稱， **TestAutoload**。  
   
-2.  Open TestAutoloadPackage.cs. Find the line where the package class is declared:  
+2.  開啟 TestAutoloadPackage.cs。 尋找宣告套件類別的一行：  
   
     ```csharp  
     public sealed class <name of your package>Package : Package  
     ```  
   
-3.  Above this line is a set of attributes. Add this attribute:  
+3.  這一行上方是一組屬性。 加入此屬性：  
   
     ```csharp  
     [ProvideAutoLoad(UIContextGuids80.SolutionExists)]  
     ```  
   
-4.  Set a breakpoint in the `Initialize()` method and start debugging (F5).  
+4.  在 `Initialize()` 方法中設定中斷點並開始偵錯 (F5)。  
   
-5.  In the experimental instance, open a project. The VSPackage should load, and your breakpoint should be hit.  
+5.  在實驗執行個體中，開啟專案。 這時 VSPackage 應會載入，並且叫用您的中斷點。  
   
- You can specify other contexts in which to load your VSPackage by using the fields of <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80>. For more information, see [Loading VSPackages](../extensibility/loading-vspackages.md).  
+ 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 的欄位指定要在其中載入 VSPackage 的其他內容。 如需詳細資訊，請參閱[載入 Vspackage](../extensibility/loading-vspackages.md)。  
   
-## <a name="how-can-i-get-the-dte-object"></a>How can I get the DTE object?  
- If your add-in doesn't display UI—for example, menu commands, toolbar buttons, or tool windows—you may be able to use your code as-is as long as you get the DTE automation object from the VSPackage. Here's how:  
+## <a name="how-can-i-get-the-dte-object"></a>如何取得 DTE 物件？  
+ 如果您的增益集沒有顯示 UI (例如，功能表命令、工具列按鈕或工具視窗)，只要從 VSPackage 取得 DTE 自動化物件，就可以依現狀使用您的程式碼。 方式如下：  
   
-#### <a name="to-get-the-dte-object-from-a-vspackage"></a>To get the DTE object from a VSPackage  
+#### <a name="to-get-the-dte-object-from-a-vspackage"></a>從 VSPackage 取得 DTE 物件  
   
-1.  In a VSIX project with a Visual Studio Package item template, look for the *\<project name>*Package.cs file. This is the class that derives from <xref:Microsoft.VisualStudio.Shell.Package>; it can help you interact with Visual Studio. In this case, you use its <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to get the <xref:EnvDTE80.DTE2> object.  
+1.  在 VSIX 專案與 Visual Studio Package 項目範本中，尋找*\<專案名稱 >*Package.cs 檔案。 這是從 <xref:Microsoft.VisualStudio.Shell.Package> 衍生的類別；它可以幫助您與 Visual Studio 互動。 在這個案例中，您會使用其 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 取得 <xref:EnvDTE80.DTE2> 物件。  
   
-2.  Add these `using` statements:  
+2.  加入以下 `using` 陳述式：  
   
     ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-3.  Find the `Initialize` method. This method handles the command you specified in the package wizard. Add a call to <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to get the DTE object:  
+3.  尋找 `Initialize` 方法。 這個方法可處理您在套件精靈中指定的命令。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 DTE 物件：  
   
     ```csharp  
     DTE dte = (DTE)GetService(typeof(DTE));  
     ```  
   
- After you have the <xref:EnvDTE.DTE> automation object, you can add the rest of your add-in code to the project. If you need the <xref:EnvDTE80.DTE2> object, you can do the same thing.  
+ 具有 <xref:EnvDTE.DTE> 自動化物件之後，您可以將其餘的增益集程式碼加入專案。 如果您需要 <xref:EnvDTE80.DTE2> 物件，可以執行相同動作。  
   
-## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>How do I change menu commands and toolbar buttons in my add-in to the VSPackage style?  
- VSPackage extensions use the .vsct file to create most of the menu commands, toolbars, toolbar buttons, and other UI. The **Custom Command** project item template gives you the option to create a command on the **Tools** menu. For more information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+## <a name="how-do-i-change-menu-commands-and-toolbar-buttons-in-my-add-in-to-the-vspackage-style"></a>如何將增益集中的功能表命令和工具列按鈕變更為 VSPackage 樣式？  
+ VSPackage 擴充功能使用 .vsct 檔建立大部分的功能表命令、工具列、工具列按鈕和其他 UI。 **自訂命令**專案項目範本可讓您選擇建立命令上**工具**功能表。 如需詳細資訊，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
- For more information about .vsct files, see [How VSPackages Add User Interface Elements](../extensibility/internals/how-vspackages-add-user-interface-elements.md). For walkthroughs that show how to use the .vsct file to add menu items, toolbars, and toolbar buttons, see [Extending Menus and Commands](../extensibility/extending-menus-and-commands.md).  
+ 如需.vsct 檔案的詳細資訊，請參閱[如何 Vspackage 加入使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)。 如需示範如何使用.vsct 檔來加入功能表項目、 工具列和工具列按鈕的逐步解說，請參閱[擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)。  
   
-## <a name="how-do-i-add-custom-tool-windows-in-the-vspackage-way"></a>How do I add custom tool windows in the VSPackage way?  
- The Custom Tool Window project item template gives you the option to create a tool window. For more information about this project item template, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md). For information about tool windows, see [Extending and Customizing Tool Windows](../extensibility/extending-and-customizing-tool-windows.md) and the articles under it, especially [Adding a Tool Window](../extensibility/adding-a-tool-window.md).  
+## <a name="how-do-i-add-custom-tool-windows-in-the-vspackage-way"></a>如何以 VSPackage 方式加入自訂工具視窗？  
+ 自訂工具視窗的專案項目範本可讓您選擇建立工具視窗。 如需有關這個專案項目範本的詳細資訊，請參閱[建立工具視窗擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。 工具視窗的相關資訊，請參閱[延伸和自訂工具視窗](../extensibility/extending-and-customizing-tool-windows.md)以及在其下方文件特別[加入工具視窗](../extensibility/adding-a-tool-window.md)。  
   
-## <a name="how-do-i-manage-visual-studio-windows-in-the-vspackage-way"></a>How do I manage Visual Studio windows in the VSPackage way?  
- If your add-in manages Visual Studio windows, the add-in code should work in a VSPackage. For example, this procedure shows how to add code that manages the **Task List** to the `MenuItemCallback` method of the VSPackage.  
+## <a name="how-do-i-manage-visual-studio-windows-in-the-vspackage-way"></a>如何以 VSPackage 方式管理 Visual Studio 視窗？  
+ 如果您的增益集管理 Visual Studio 視窗，增益集程式碼應該能夠在 VSPackage 中運作。 例如，此程序示範如何將管理的程式碼加入**工作清單**至`MenuItemCallback`方法的 VSPackage。  
   
-#### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>To insert window-management code from an add-in into a VSPackage  
+#### <a name="to-insert-window-management-code-from-an-add-in-into-a-vspackage"></a>將視窗管理程式碼從增益集插入 VSPackage  
   
-1.  Create a VSPackage that has a menu command, as in the [How do I start developing VSIX extensions?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
+1.  建立具有功能表命令，在 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) > 一節。  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
   
-3.  Add these `using` statements:  
+3.  加入以下 `using` 陳述式：  
   
     ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  Find the `MenuItemCallback` method. Add a call to <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to get the <xref:EnvDTE80.DTE2> object:  
+4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：  
   
     ```csharp  
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
     ```  
   
-5.  Add the code from your add-in. For example, here is some code that adds new tasks to the **Task List**, lists the number of tasks, and then deletes one task.  
+5.  從增益集加入程式碼。 例如，以下是一些程式碼，會將新工作加入**工作清單**、 列出的工作數目，然後再刪除一個工作。  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)   
@@ -220,27 +220,27 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
     }  
     ```  
   
-## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>How do I manage projects and solutions in a VSPackage?  
- If your add-in manages projects and solutions, the add-in code should work in a VSPackage. For example, this procedure shows how to add code that gets the startup project.  
+## <a name="how-do-i-manage-projects-and-solutions-in-a-vspackage"></a>如何在 VSPackage 中管理專案和方案？  
+ 如果您的增益集管理專案和方案，增益集程式碼應該能夠在 VSPackage 中運作。 例如，這項程序示範如何加入可取得啟動專案的程式碼。  
   
-1.  Create a VSPackage that has a menu command, as in the [How do I start developing VSIX extensions?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) section.  
+1.  建立具有功能表命令，在 VSPackage[如何開始開發的 VSIX 擴充功能？](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_StartDeveloping) > 一節。  
   
-2.  Open the file that contains the definition of the VSPackage. (In a C# project, it's *\<your project name>*Package.cs.)  
+2.  開啟包含 VSPackage 之定義的檔案。 (在 C# 專案中，它有*\<您的專案名稱 >*Package.cs。)  
   
-3.  Add these `using` statements:  
+3.  加入以下 `using` 陳述式：  
   
     ```csharp  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  Find the `MenuItemCallback` method. Add a call to <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> to get the <xref:EnvDTE80.DTE2> object:  
+4.  尋找 `MenuItemCallback` 方法。 加入 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 的呼叫以取得 <xref:EnvDTE80.DTE2> 物件：  
   
     ```csharp  
     DTE2 dte = (DTE2)GetService(typeof(DTE));  
     ```  
   
-5.  Add the code from your add-in. For example, the following code gets the name of the startup project in a solution. (A multi-project solution must be open when this package runs.)  
+5.  從增益集加入程式碼。 例如，以下程式碼會取得方案中啟動專案的名稱。 (此套件執行時，多專案方案必須已開啟。)  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -261,8 +261,8 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
     }  
     ```  
   
-## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>How do I set keyboard shortcuts in a VSPackage?  
- You use the `<KeyBindings>` element of the .vsct file. In the following example, the keyboard shortcut for the command `idCommand1` is Alt+A, and the keyboard shortcut for the command `idCommand2` is Alt+Ctrl+A. Notice the syntax for the key names.  
+## <a name="how-do-i-set-keyboard-shortcuts-in-a-vspackage"></a>如何在 VSPackage 中設定鍵盤快速鍵？  
+ 您可以使用 .vsct 檔的 `<KeyBindings>` 項目。 在下列範例中，命令 `idCommand1` 的鍵盤快速鍵為 Alt+A，而命令 `idCommand2` 的鍵盤快速鍵為 Alt+Ctrl+A。 請注意按鍵名稱的語法。  
   
 ```xml  
 <KeyBindings>  
@@ -271,8 +271,8 @@ Add-ins are now deprecated. To make a new Visual Studio extension, you need to c
 </KeyBindings>  
 ```  
   
-## <a name="how-do-i-handle-automation-events-in-a-vspackage"></a>How do I handle automation events in a VSPackage?  
- You handle automation events in a VSPackage in the same way as in your add-in. The following code shows how to handle the `OnItemRenamed` event. (This example assumes that you've already gotten the DTE object.)  
+## <a name="how-do-i-handle-automation-events-in-a-vspackage"></a>如何在 VSPackage 中處理自動化事件？  
+ 在 VSPackage 中處理自動化事件的方式與在增益集中的方式相同。 下列程式碼將示範如何處理 `OnItemRenamed` 事件。 (這個範例假設您已經取得 DTE 物件。)  
   
 ```csharp  
 Events2 dteEvents = (Events2)dte.Events;  

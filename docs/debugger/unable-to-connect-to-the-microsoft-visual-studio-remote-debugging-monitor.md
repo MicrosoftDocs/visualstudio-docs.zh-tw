@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 32cb47a722f5cae7eeebb72dbfba60e1762b8fe3
-ms.openlocfilehash: 0925e58a081368f4d1f29ef8b90021b6c46c06e4
+ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
+ms.openlocfilehash: ec06f940ab93627c077fc9803ac5abcbe5017e29
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
+ms.lasthandoff: 09/02/2017
 
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
@@ -68,16 +68,14 @@ Try these steps:
 
 1. Make sure that you enter a valid computer name and port number in the **Attach to Process** dialog box or in the project properties (To set properties, see [these steps](#server_incorrect)). The computer name must be the following format:
 
-    ```
-    computername:port
-    ```
+    `computername:port`
 
     > [!NOTE]
     > The port number must match the [port number of the remote debugger](../debugger/remote-debugger-port-assignments.md), which *must be running* on the target machine.
 
 2. If the computer name does not work, try the IP address and port number instead.
 
-3. Make sure that the version of the remote debugger running on the target machine matches your version of Visual Studio.
+3. Make sure that the version of the remote debugger running on the target machine matches your version of Visual Studio. To get the correct version of the remote debugger, see [Remote Debugging](../debugger/remote-debugging.md).
 
     > [!TIP]
     > If you are attaching to the process and you connect successfully but don't see the process you want, select the **Show processes from all users check box**. This will show processes if you are connected under a different user account.

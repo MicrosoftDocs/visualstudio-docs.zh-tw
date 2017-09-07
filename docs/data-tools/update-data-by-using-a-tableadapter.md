@@ -18,8 +18,8 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 15
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 130c127cb0787e3f13f90adfef72de072300fcf3
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 949c283d48d8d2fd7e3c3e1e54a814b175b28304
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Update data by using a TableAdapter

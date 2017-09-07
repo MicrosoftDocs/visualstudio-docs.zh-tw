@@ -1,38 +1,57 @@
 ---
-title: "此關聯方法是下列預設插入、更新或刪除方法的支援方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: This related method is the backing method for the following default insert, update, or delete methods | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: f90d8ff4184e8c3686f40e86d31eca39865a87c0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 09/07/2017
+
 ---
-# 此關聯方法是下列預設插入、更新或刪除方法的支援方法
-此關聯方法是下列預設插入、更新或刪除方法的備份方法。如果刪除它，這些方法也會被刪除。是否要繼續?  
+# <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>This related method is the backing method for the following default insert, update, or delete methods
+This related method is the backing method for the following default insert, update, or delete methods. If it is deleted, these methods will be deleted as well. Do you wish to continue?  
   
- 選取的 `DataContext` 方法目前是當成 O\/R 設計工具上某個實體類別 \(Class\) 的插入、更新或刪除方法。刪除選取的方法會將使用這個方法的實體類別，還原成在更新期間執行插入、更新或刪除作業的預設執行階段行為。  
+ The selected `DataContext` method is currently used as one of the Insert, Update, or Delete methods for one of the entity classes on the O/R Designer. Deleting the selected method will cause the entity class that was using this method to revert to the default run-time behavior for performing the Insert, Update, or Delete during an update.  
   
-### 若要刪除選取的方法以讓實體類別使用執行階段更新  
+### <a name="to-delete-the-selected-method-causing-the-entity-class-to-use-runtime-updates"></a>To delete the selected method, causing the entity class to use runtime updates  
   
--   按一下 \[**是**\]。  
+-   Click **Yes**.  
   
-     會刪除選取的方法，而且任何使用這個方法覆寫更新行為的類別都會還原成使用預設 LINQ to SQL 執行階段行為。  
+     The selected method is deleted and any classes that used this method for overriding update behavior are reverted to using the default LINQ to SQL runtime behavior.  
   
-### 若要關閉訊息方塊並保留選取的方法  
+### <a name="to-close-the-message-box-leaving-the-selected-method-unchanged"></a>To close the message box, leaving the selected method unchanged  
   
--   按一下 \[**否**\]。  
+-   Click **No**.  
   
-     會關閉訊息方塊，不進行任何變更。  
+     The message box closes and no changes are made.  
   
-## 請參閱  
- [DataContext 方法 \(O\/R 設計工具\)](../data-tools/datacontext-methods-o-r-designer.md)   
- [HOW TO：指派預存程序來執行更新、插入和刪除 \(O\/R 設計工具\)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
- [O\/R 設計工具概觀](../Topic/LINQ%20to%20SQL%20Tools%20in%20Visual%20Studio1.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)
+## <a name="see-also"></a>See Also  
+ [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)   
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

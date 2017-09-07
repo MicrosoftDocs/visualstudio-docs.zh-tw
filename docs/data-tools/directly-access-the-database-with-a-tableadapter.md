@@ -23,8 +23,8 @@ helpviewer_keywords:
 - TableAdapters
 ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 12
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -42,10 +42,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f495c16e70c81535cdc8ede6e499aad0ac358f08
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 99a0c60ef282b84dbafcc080947d15144ba22fb1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Directly access the database with a TableAdapter
@@ -58,7 +58,7 @@ In addition to the `InsertCommand`, `UpdateCommand`, and `DeleteCommand`, TableA
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>To insert new records directly into a database  
   
--   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind databaseas an example.  
+-   Call the TableAdapter's `Insert` method, passing in the values for each column as parameters. The following procedure uses the `Region` table in the Northwind database as an example.  
   
     > [!NOTE]
     >  If you do not have an instance available, instantiate the TableAdapter that you want to use.  

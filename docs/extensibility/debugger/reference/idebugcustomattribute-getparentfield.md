@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttribute::GetParentField | Microsoft Docs
+title: "IDebugCustomAttribute::GetParentField |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1f30a03099c4b8464f64737d706486d07c42a537
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcustomattributegetparentfield"></a>IDebugCustomAttribute::GetParentField
-Gets the field to which the custom attribute is attached.  
+取得要附加自訂屬性的欄位。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetParentField(   
@@ -54,16 +54,16 @@ int GetParentField(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ppField`  
- [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object that represents the field to which the custom attribute is attached.  
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表要附加自訂屬性的欄位。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Call the [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) method on the returned [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object to determine what kind of field the parent is.  
+## <a name="remarks"></a>備註  
+ 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)方法在傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)來判斷什麼種類的欄位父物件。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

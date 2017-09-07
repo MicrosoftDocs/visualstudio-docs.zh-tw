@@ -12,8 +12,8 @@ helpviewer_keywords:
 - data [Visual Studio], querying an EDM
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 caps.latest.revision: 9
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 80fc0d9dbbf46339a032d7310bf9f931132a2ba0
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 47b19179bd814afc28d5555a89316aa9fb254a7d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Working with a Conceptual Model (WCF Data Services)

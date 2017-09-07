@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::GetProgram | Microsoft Docs
+title: "IDebugThread2::GetProgram |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7d1c024819017f8c8ec86872fdc3f14a8b8046ca
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-Gets the program in which a thread is running.  
+取得執行緒正在執行的程式。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetProgram (   
@@ -54,13 +54,13 @@ int GetProgram (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ppProgram`  
- [out] Returns an [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the program this thread is running in.  
+ [out]傳回[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示這個執行緒執行中的程式。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

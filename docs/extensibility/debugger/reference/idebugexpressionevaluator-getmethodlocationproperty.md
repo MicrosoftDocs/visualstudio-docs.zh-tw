@@ -1,5 +1,5 @@
 ---
-title: IDebugExpressionEvaluator::GetMethodLocationProperty | Microsoft Docs
+title: "IDebugExpressionEvaluator::GetMethodLocationProperty |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 592a3401d0f9712a78fcab9cf1056b05c6a746b8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
-This method converts a method location and offset into a memory address.  
+這個方法會將方法的位置和位移轉換成記憶體位址。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetMethodLocationProperty(   
@@ -62,31 +62,31 @@ int GetMethodLocationProperty(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `upstrFullyQualifiedMethodPlusOffset`  
- [in] The method location and offset, expressed as a string.  
+ [in]方法的位置和位移、 以字串表示。  
   
  `pSymbolProvider`  
- [in] The symbol provider expressed as an [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) object.  
+ [in]符號提供者以[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
   
  `pAddress`  
- [in] An address within the method, expressed as an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object.  
+ [in]在方法中，以表示位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件。  
   
  `pBinder`  
- [in] The binder expressed as an [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) object.  
+ [in]繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
   
  `ppProperty`  
- [out] Returns an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface that represents the memory address.  
+ [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)代表記憶體位址的介面。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The returned address can be used to set a breakpoint, for example.  
+## <a name="remarks"></a>備註  
+ 傳回的位址可以用來設定中斷點，例如。  
   
- Despite the name `upstrFullyQualifiedMethodPlusOffset`, this parameter can be passed a partially qualified method name. In that case, the selected method is the one that encloses `pAddress`. How this parameter is interpreted is up to the implementation of the expression evaluator and the language it supports.  
+ 不論名稱為何`upstrFullyQualifiedMethodPlusOffset`，這個參數可以傳遞的不完整的方法名稱。 在此情況下，選取的方法是一個內含`pAddress`。 這個參數的解譯方式，是由運算式評估工具及它所支援的語言實作。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   

@@ -1,5 +1,5 @@
 ---
-title: Updating Shapes and Connectors to Reflect the Model | Microsoft Docs
+title: "更新圖形和連接器，以反映模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,13 +15,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Updating Shapes and Connectors to Reflect the Model
-In a domain-specific language in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], you can make the appearance of a shape reflect the state of the underlying model.  
+# <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
+以網域特定語言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以進行反映基礎模型的狀態圖形的外觀。  
   
- The code examples in this topic should be added to a `.cs` file in your `Dsl` project. You will need these statements in each file:  
+ 本主題中的程式碼範例應該加入至`.cs`檔案中您`Dsl`專案。 您必須在每個檔案的這些陳述式：  
   
 ```  
 using Microsoft.VisualStudio.Modeling;  
@@ -29,24 +29,24 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Set Shape Map properties to control the visibility of a decorator  
- You can control the visibility of a decorator without writing program code, by configuring the mapping between the shape and the domain class in the DSL Definition. For more information, see [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md).
+## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>設定圖形地圖屬性以控制的裝飾項目的可見性  
+ 您可以控制裝飾項目的可見的性，而不需要撰寫程式碼中，藉由設定 DSL 定義中的圖形和領域類別之間的對應。 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。
   
-## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expose the color and style of a shape as properties  
- In the DSL Definition, right-click the shape class, point to **Add Exposed**, and then click one of the items such as **Fill Color**.  
+## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>將公開為屬性的色彩和樣式圖形  
+ DSL 定義中，以滑鼠右鍵按一下圖形類別，並指向**新增公開**，然後按一下其中一個項目例如**填滿色彩**。  
   
- The shape now has a domain property that you can set in program code or as a user. For example, to set it in the program code of a command or rule, you could write:  
+ 圖形現在有網域屬性，您可以在程式碼中或以使用者設定。 例如，若要設定該命令或規則的程式碼中，您可以撰寫：  
   
  `shape.FillColor = System.Drawing.Color.Red;`  
   
- If you want to make the property variable only under program control, and not by the user, select the new domain property such as **Fill Color** in the DSL Definition diagram. Then, in the Properties window, set **Is Browsable** to `false` or set **Is UI Readonly** to `true`.  
+ 如果您想要讓屬性變數只能在程式控制權，而不是由使用者，選取新的網域屬性例如**填滿色彩**DSL 定義圖表中。 然後，在 [屬性] 視窗中，將**是可瀏覽**至`false`或設定**是 UI Readonly**至`true`。  
   
-## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>Define Change Rules to make color, style or location depend on model element properties  
- You can define rules that update the appearance the shape dependent on other parts of the model. For example, you could define a Change Rule on a model element that updates the color of its shape dependent on the properties of the model element. For more information about Change Rules, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+## <a name="define-change-rules-to-make-color-style-or-location-depend-on-model-element-properties"></a>定義變更規則，使色彩、 樣式或位置取決於模型項目屬性  
+ 您可以定義規則，更新的外觀取決於模型的其他部分的圖形。 例如，您可以定義變更規則更新相依於模型項目的屬性及其圖案的色彩將模型項目上。 如需有關變更規則的詳細資訊，請參閱[規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
- You should use rules only to update properties that are maintained within the Store, because rules are not invoked when the Undo command is performed. This does not include some graphical features such as the size and visibility of a shape. To update those features of a shape, see [Updating Non-Store Graphical features](#OnAssociatedProperty).  
+ 您應該只可以更新存放區中，內進行維護的內容，因為規則不會叫用復原命令執行時使用規則。 這不包括某些圖形的功能，例如大小和形狀的可見性。 若要更新圖形的這些功能，請參閱[更新非存放區圖形功能](#OnAssociatedProperty)。  
   
- The following example assumes that you have exposed `FillColor` as a domain property as described in the previous section.  
+ 下列範例假設您有公開`FillColor`做為網域屬性，如前一節中所述。  
   
 ```csharp  
 [RuleOn(typeof(ExampleElement))]  
@@ -85,8 +85,8 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>Use OnChildConfigured to initialize a shape's properties  
- To set the properties of a shape when it is first created, the override `OnChildConfigured()` in a partial definition of your diagram class. The diagram class is specified in your DSL Definition, and the generated code is in **Dsl\Generated Code\Diagram.cs**. For example:  
+## <a name="use-onchildconfigured-to-initialize-a-shapes-properties"></a>使用 OnChildConfigured 初始化圖形的屬性  
+ 若要設定圖形的屬性，當它是第一個建立、 覆寫`OnChildConfigured()`圖表類別的部分定義中。 DSL 定義中，以指定圖表類別，且產生的程式碼位於**Dsl\Generated Code\Diagram.cs**。 例如:   
   
 ```csharp  
 partial class MyLanguageDiagram  
@@ -109,12 +109,12 @@ partial class MyLanguageDiagram
   
 ```  
   
- This method can be used both for domain properties and non-store features, such as the size of the shape.  
+ 同時針對網域屬性和非存放區功能，例如圖形的大小，可以使用這個方法。  
   
-##  <a name="OnAssociatedProperty"></a> Use AssociateValueWith() to update other features of a shape  
- For some features of a shape, such as whether it has a shadow, or the arrow style of a connector, there is no built-in method of exposing the feature as a domain property.  Changes to such features are not under the control of the transaction system. Therefore, it is not appropriate to update them using rules, because rules are not invoked when the user performs the Undo command.  
+##  <a name="OnAssociatedProperty"></a>若要更新圖形的其他功能使用 Associatevaluewith  
+ 某些功能的圖形，例如是否具有陰影或連接器的箭頭樣式沒有公開的功能，做為網域屬性的內建方法。  這類功能的變更並不在交易系統的控制權。 因此，不將其更新適當使用規則，因為規則不會叫用使用者對執行 [復原] 命令時。  
   
- Instead, you can update such features by using <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. In the following example, the arrow style of a connector is controlled by a value of a domain property in the relationship that the connector displays:  
+ 相反地，您可以藉由更新這類功能<xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>。 在下列範例中，連接器的箭頭樣式是連接器所顯示的關聯性中的網域屬性值所控制：  
   
 ```  
 public partial class ArrowConnector // My connector class.   
@@ -155,7 +155,7 @@ public partial class ArrowConnector // My connector class.
   
 ```  
   
- `AssociateValueWith()` should be called one time for each domain property that you want to register. After it has been called, any changes to the specified property will call `OnAssociatedPropertyChanged()` in any shapes that present the property's model element.  
+ `AssociateValueWith()`應該呼叫一次針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中的任何圖形都呈現屬性的模型項目。  
   
- It is not necessary to call `AssociateValueWith()` for each instance. Although InitializeResources is an instance method, it is invoked only one time for each shape class.
+ 不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次只能針對每個圖形 」 類別。
 

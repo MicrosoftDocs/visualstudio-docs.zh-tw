@@ -1,5 +1,5 @@
 ---
-title: Registering and Unregistering VSPackages | Microsoft Docs
+title: "註冊及取消註冊 Vspackage |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,16 +33,16 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 312c06295492ac9bd1136ea7de9a0399f247c365
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="registering-and-unregistering-vspackages"></a>Registering and Unregistering VSPackages
-You use attributes to register a VSPackage, but  
+# <a name="registering-and-unregistering-vspackages"></a>註冊和取消登錄 Vspackage
+您可以使用屬性來註冊 VSPackage，但  
   
-## <a name="registering-a-vspackage"></a>Registering a VSPackage  
- You can use attributes to control the registration of managed VSPackages. All registration information is contained in a .pkgdef file. For more information on file-based registration, see [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md).  
+## <a name="registering-a-vspackage"></a>註冊 VSPackage  
+ 您可以使用屬性來控制 managed Vspackage 的註冊。 所有的登錄資訊都包含.pkgdef 檔中。 多個檔案為基礎的登錄的詳細資訊，請參閱[CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)。  
   
- The following code shows how to use the standard registration attributes to register your VSPackage.  
+ 下列程式碼會示範如何使用標準註冊屬性來註冊您的 VSPackage。  
   
 ```csharp  
 [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -51,16 +51,16 @@ public sealed class BasicPackage : Package
 {. . .}  
 ```  
   
-## <a name="unregistering-an-extension"></a>Unregistering an Extension  
- If you have been experimenting with a lot of different VSPackages and want to remove them from the experimental instance, you can just run the **Reset** command. Look for **Reset the Visual Studio Experimental Instance** on the start page of your computer, or run this command from the command line:  
+## <a name="unregistering-an-extension"></a>取消註冊擴充功能  
+ 如果您已實驗許多不同的 Vspackage，而且想要移除的實驗執行個體，您可以只執行**重設**命令。 尋找**重設 Visual Studio 的實驗執行個體**您的電腦，[開始] 頁面上，或從命令列執行此命令：  
   
 ```vb  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp  
 ```  
   
- If you want to uninstall an extension that you have installed on your development instance of Visual Studio, go to **Tools / Extensions and Updates**, find the extension, and click **Uninstall**.  
+ 如果您想要解除安裝擴充功能，您已安裝 Visual Studio 的開發執行個體上，請移至**工具 / 擴充功能和更新**，尋找擴充功能，然後按一下**解除安裝**。  
   
- If for some reason neither of these methods succeeds at uninstalling the extension, you can unregister the VSPackage assembly from the command line as follows:  
+ 如果基於某些原因，這些方法皆未成功在解除安裝擴充功能，可取消 VSPackage 組件，從命令列，如下所示：  
   
 ```  
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\regpkg" /unregister <pathToVSPackage assembly>  
@@ -68,13 +68,13 @@ public sealed class BasicPackage : Package
   
 <a name="using-a-custom-registration-attribute-to-register-an-extension"></a>  
   
-## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>Use a custom registration attribute to register an extension  
+## <a name="use-a-custom-registration-attribute-to-register-an-extension"></a>使用自訂註冊屬性來登錄延伸模組  
   
-In certain cases you may need to create a new registration attribute for your extension. You can use registration attributes to add new registry keys or to add new values to existing keys. The new attribute must derive from <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>, and it must override the <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A> and <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A> methods.  
+在某些情況下，您可能需要建立新的註冊屬性，您的擴充功能。 加入新的登錄機碼，或將新值加入至現有的索引鍵，您可以使用登錄屬性。 新的屬性必須衍生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，而且必須覆寫<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  
   
-### <a name="creating-a-custom-attribute"></a>Creating a Custom Attribute  
+### <a name="creating-a-custom-attribute"></a>建立自訂屬性  
   
-The following code shows how to create a new registration attribute.  
+下列程式碼會示範如何建立新的登錄屬性。  
   
 ```csharp  
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = false)]  
@@ -83,11 +83,11 @@ The following code shows how to create a new registration attribute.
     }  
 ```  
   
- The <xref:System.AttributeUsageAttribute> is used on attribute classes to specify the program element (class, method, etc.) to which the attribute pertains, whether it can be used more than once, and whether it can be inherited.  
+ <xref:System.AttributeUsageAttribute>屬性類別上用來指定屬性相關、 是否才能使用一次以上，以及是否可繼承的程式元素 （類別、 方法等）。  
   
-### <a name="creating-a-registry-key"></a>Creating a Registry Key  
+### <a name="creating-a-registry-key"></a>建立登錄機碼  
   
-In the following code, the custom attribute creates a **Custom** subkey under the key for the VSPackage that is being registered.  
+下列程式碼，建立自訂屬性**自訂**之 VSPackage 所登錄機碼下的子機碼。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -111,9 +111,9 @@ public override void Unregister(RegistrationContext context)
 }  
 ```  
   
-### <a name="creating-a-new-value-under-an-existing-registry-key"></a>Creating a New Value Under an Existing Registry Key  
+### <a name="creating-a-new-value-under-an-existing-registry-key"></a>建立現有的登錄機碼下的新值  
   
-You can add custom values to an existing key. The following code shows how to add a new value to a VSPackage registration key.  
+您可以將自訂值加入到現有的金鑰。 下列程式碼會示範如何將新值加入至 VSPackage 的登錄機碼。  
   
 ```csharp  
 public override void Register(RegistrationAttribute.RegistrationContext context)  
@@ -137,5 +137,5 @@ public override void Unregister(RegistrationContext context)
 }  
 ```
   
-## <a name="see-also"></a>See Also  
- [VSPackages](../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>另請參閱  
+ [VSPackage](../extensibility/internals/vspackages.md)

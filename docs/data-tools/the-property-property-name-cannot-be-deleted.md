@@ -8,8 +8,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 caps.latest.revision: 2
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,10 +26,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: feae56294e98e67634cad7afa24ba22ad155412d
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 589add99c52db517c729d7c91f41869249cc59f3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>The property &lt;property name&gt; cannot be deleted

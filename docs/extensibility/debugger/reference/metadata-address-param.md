@@ -1,5 +1,5 @@
 ---
-title: METADATA_ADDRESS_PARAM | Microsoft Docs
+title: "METADATA_ADDRESS_PARAM |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: edca5da7e4d417f6578946c824ac601dea516270
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="metadataaddressparam"></a>METADATA_ADDRESS_PARAM
-This structure represents a parameter of a method or function.  
+此結構表示的方法或函式的參數。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_PARAM {  
@@ -58,27 +58,27 @@ public struct METADATA_ADDRESS_PARAM {
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## <a name="terms"></a>詞彙  
  tokMethod  
- The ID of the method the parameter is part of.  
+ 方法的識別碼參數是的一部分。  
   
  tokParam  
- The ID of the parameter.  
+ 參數的識別碼。  
   
  dwIndex  
- The index of the parameter in a list of parameters.  
+ 參數的清單中的參數索引。  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_PARAM` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## <a name="remarks"></a>備註  
+ 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_PARAM`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>另請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
  [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

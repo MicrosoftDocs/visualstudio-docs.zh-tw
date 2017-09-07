@@ -18,8 +18,8 @@ helpviewer_keywords:
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8bcbcd429438fe7789234e375d64d397d31d1ff8
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: e6a6c943286292d8df9803c94e4c396dc809128b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Create parameterized TableAdapter queries
@@ -95,25 +95,24 @@ A parameterized query returns data that meets the conditions of a WHERE clause w
   
      A control to input the parameter and a **Load** button are added to the form in a <xref:System.Windows.Forms.ToolStrip> control.  
   
- TableAdapter parameters can be assigned null values when you want to query for records that have no current value. For example, consider the following query that has a `ShippedDate` parameter in its `WHERE` clause:  
+#### <a name="querying-for-null-values"></a>Querying for null values  
+TableAdapter parameters can be assigned null values when you want to query for records that have no current value. For example, consider the following query that has a `ShippedDate` parameter in its `WHERE` clause:  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
-  
- `FROM Orders`  
-  
- `WHERE (ShippedDate = @ShippedDate) OR`  
-  
- `(ShippedDate IS NULL)`  
+ ```sql
+SELECT CustomerID, OrderDate, ShippedDate  
+FROM Orders  
+WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
+```  
   
  If this were a query on a TableAdapter, you could query for all orders that have not been shipped with the following code:  
   
  [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)] [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
-  
-#### <a name="to-enable-a-query-to-accept-null-values"></a>To enable a query to accept null values  
-  
+
+ To enable a query to accept null values:
+
 1.  In the **Dataset Designer**, select the TableAdapter query that needs to accept null parameter values.  
   
-2.  In the **Properties** window, select **Parameters**.Then press the ellipsis (**...**) button to open the **Parameters Collection Editor**.  
+2.  In the **Properties** window, select **Parameters**, then click the ellipsis (**...**) button to open the **Parameters Collection Editor**.  
   
 3.  Select the parameter that allows null values and set the **AllowDbNull** property to `true`.  
   

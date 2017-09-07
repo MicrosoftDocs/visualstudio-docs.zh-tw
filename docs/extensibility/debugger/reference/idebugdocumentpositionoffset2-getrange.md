@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentPositionOffset2::GetRange | Microsoft Docs
+title: "IDebugDocumentPositionOffset2::GetRange |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 501acf49bec28092c7a41fee83f6dfd9fe9d11c9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugdocumentpositionoffset2getrange"></a>IDebugDocumentPositionOffset2::GetRange
-Retrieves the range for the current document position.  
+擷取目前的文件位置的範圍。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetRange(  
@@ -54,26 +54,26 @@ public int GetRange(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pdwBegOffset`  
- [in, out] Offset for the start position of the range. Set this parameter to a null value if this information is not needed.  
+ [in、 out]範圍的開始位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。  
   
  `pdwEndOffset`  
- [in, out] Offset for the end position of the range. Set this parameter to a null value if this information is not needed.  
+ [in、 out]範圍的結束位置的位移。 如果不需要這項資訊，請設定此參數為 null 值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The range specified in a document position for a location breakpoint is used by the debug engine (DE) to search ahead for a statement that actually contributes code. For example, consider the following code:  
+## <a name="remarks"></a>備註  
+ 位置中斷點的文件位置中指定的範圍可由偵錯引擎 (DE) 來繼續搜尋實際上提供程式碼陳述式。 例如，請參考下列程式碼：  
   
 ```  
 Line 5: // comment  
 Line 6: x = 1;  
 ```  
   
- Line 5 contributes no code to the program being debugged. If the debugger that sets the breakpoint on line 5 wants the DE to search forward a certain amount for the first line that contributes code, the debugger would specify a range that includes additional candidate lines where a breakpoint might be correctly placed. The DE would then search forward through those lines until it found a line that could accept a breakpoint.  
+ 第 5 行是計算任何程式碼進行偵錯的程式。 如果在第 5 行上設定中斷點，偵錯工具要向前搜尋特定量佔程式碼的第一行 DE，偵錯工具會指定包含其他候選項目行中斷點可能會正確地放置範圍。 DE 會再向前搜尋這些行直到它找到無法接受中斷點的該行。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentPositionOffset2](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2.md)   
  [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md)

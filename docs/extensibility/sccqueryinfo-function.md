@@ -1,5 +1,5 @@
 ---
-title: SccQueryInfo Function | Microsoft Docs
+title: "SccQueryInfo 函式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 4efd9b29a89bc490255c35558e5862ebc14b7fec
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="sccqueryinfo-function"></a>SccQueryInfo Function
-This function obtains status information for a set of selected files under source control.  
+# <a name="sccqueryinfo-function"></a>SccQueryInfo 函式
+此函式會取得一組選取原始檔控制下的檔案狀態資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 SCCRTN SccQueryInfo(  
@@ -51,44 +51,44 @@ SCCRTN SccQueryInfo(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  pvContext  
- [in] The source control plug-in context structure.  
+ [in]原始檔控制外掛程式的內容結構。  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array and the length of the `lpStatus` array.  
+ [in]中指定的檔案數目`lpFileNames`陣列長度和`lpStatus`陣列。  
   
  lpFileNames  
- [in] An array of names of files to be queried.  
+ [in]要查詢的檔案名稱陣列。  
   
  lpStatus  
- [in, out] An array in which the source control plug-in returns the status flags for each file. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md).  
+ [in、 out]陣列，其中原始檔控制外掛程式傳回每個檔案的狀態旗標。 如需詳細資訊，請參閱[檔案狀態碼](../extensibility/file-status-code-enumerator.md)。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## <a name="return-value"></a>傳回值  
+ 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|Value|Description|  
+|值|說明|  
 |-----------|-----------------|  
-|SCC_OK|Query was successful.|  
-|SCC_E_ACCESSFAILURE|There was a problem with accessing the source control system, probably caused by network or contention issues. A retry is recommended.|  
-|SCC_E_PROJNOTOPEN|The project is not open under source control.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|SCC_OK|查詢已成功。|  
+|SCC_E_ACCESSFAILURE|發生問題，以存取原始檔控制系統，可能因網路或競爭問題。 建議使用重試。|  
+|SCC_E_PROJNOTOPEN|無法在原始檔控制開啟專案。|  
+|SCC_E_NONSPECIFICERROR|不明確的失敗。|  
   
-## <a name="remarks"></a>Remarks  
- If `lpFileName` is an empty string, there is currently no status information to update. Otherwise, it is the full path name of the file for which the status information may have changed.  
+## <a name="remarks"></a>備註  
+ 如果`lpFileName`為空字串，目前沒有更新狀態資訊。 否則，它是可能的狀態資訊已變更的檔案的完整路徑名稱。  
   
- The return array can be a bitmask of `SCC_STATUS_xxxx` bits. For more information, see [File Status Code](../extensibility/file-status-code-enumerator.md). A source control system may not support all bit types. For example, if `SCC_STATUS_OUTOFDATE` is not offered, the bit is just not set.  
+ 傳回陣列可以是位元遮罩`SCC_STATUS_xxxx`位元。 如需詳細資訊，請參閱[檔案狀態碼](../extensibility/file-status-code-enumerator.md)。 原始檔控制系統可能不支援所有的位元類型。 例如，如果`SCC_STATUS_OUTOFDATE`不提供，只是無法設定位元。  
   
- When using this function to check out files, note the following `MSSCCI` status requirements:  
+ 使用這個函數時簽出檔案，請注意下列`MSSCCI`狀態需求：  
   
--   `SCC_STATUS_OUTBYUSER` is set when the current user has checked out the file.  
+-   `SCC_STATUS_OUTBYUSER`目前的使用者已簽出檔案時設定。  
   
--   `SCC_STATUS_CHECKEDOUT` cannot be set unless `SCC_STATUS_OUTBYUSER` is set.  
+-   `SCC_STATUS_CHECKEDOUT`無法設定，除非`SCC_STATUS_OUTBYUSER`設定。  
   
--   `SCC_STATUS_CHECKEDOUT` is only set when the file is checked-out into the designated working directory.  
+-   `SCC_STATUS_CHECKEDOUT`時才會設定檔案已簽出到指定的工作目錄。  
   
--   If the file is checked-out by the current user into a directory other than the working directory, `SCC_STATUS_OUTBYUSER` is set but `SCC_STATUS_CHECKEDOUT` is not.  
+-   如果檔案已簽出目前的使用者所到工作目錄，以外的目錄`SCC_STATUS_OUTBYUSER`設定但`SCC_STATUS_CHECKEDOUT`不是。  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [File Status Code](../extensibility/file-status-code-enumerator.md)
+## <a name="see-also"></a>另請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
+ [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugCustomAttributeQuery2::GetCustomAttributeByName | Microsoft Docs
+title: "IDebugCustomAttributeQuery2::GetCustomAttributeByName |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 4d3b06a21b70934863403289fc549815ed515883
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-Obtains the custom attributes bytes given the name of the custom attribute.  
+取得指定的自訂屬性名稱的自訂屬性位元組。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetCustomAttributeByName(   
@@ -58,26 +58,26 @@ int GetCustomAttributeByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to look for.  
+ [in]字串，包含要尋找的自訂屬性的名稱。  
   
  `ppBlob`  
- [in, out] An array that is filled in with the custom attribute bytes.  
+ [in、 out]陣列，其中已填入的自訂屬性的位元組。  
   
  `pdwLen`  
- [in, out] Specifies the maximum number of bytes to return in the `ppBlob` array and returns the number of bytes actually written to the array.  
+ [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK or returns S_FALSE if the custom attribute does not exist. Otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功的話，會傳回 S_OK，或傳回 S_FALSE，如果自訂屬性不存在。 反之則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Set the `ppBlob` parameter to a null value to return the number of attributes bytes available. Then allocate an array and pass that array in for the `ppBlob` parameter.  
+## <a name="remarks"></a>備註  
+ 設定`ppBlob`參數為 null 的值，傳回的數字屬性可用位元組。 配置陣列，然後將陣列中的傳送`ppBlob`參數。  
   
- The attribute bytes represent the raw data of the custom attribute.  
+ 屬性代表自訂屬性的未經處理資料。  
   
- If the `ppBlob` and `pdwLen` parameters are set to a null value, this method can be used to determine if the custom attribute merely exists. An easier alternative, however, is to call the [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) method.  
+ 如果`ppBlob`和`pdwLen`參數已設為 null 的值，這個方法可用來判斷是否只存在於自訂屬性。 簡單的替代方案，不過，是呼叫[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

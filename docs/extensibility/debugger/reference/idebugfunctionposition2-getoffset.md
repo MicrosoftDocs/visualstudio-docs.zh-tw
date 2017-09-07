@@ -1,5 +1,5 @@
 ---
-title: IDebugFunctionPosition2::GetOffset | Microsoft Docs
+title: "IDebugFunctionPosition2::GetOffset |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 03bb7bc8cbecff6b74f5ea2c2e0d95f516c8f536
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
-Retrieves the position of the function in the source document.  
+擷取函式的來源文件中的位置。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetOffset(   
@@ -54,13 +54,13 @@ int GetOffset(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pPosition`  
- [in, out] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that is filled in with the position of the function in a document.  
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)填入這些函式的位置，在文件中的結構。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

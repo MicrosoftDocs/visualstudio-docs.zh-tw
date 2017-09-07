@@ -18,8 +18,8 @@ helpviewer_keywords:
 - database files, creating
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 caps.latest.revision: 49
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 translation.priority.ht:
@@ -38,10 +38,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: f83a5530eccf7c24e351dd29c7d083c5593a7878
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: b040729a29b556770dce7b02f16a3cf1df86fada
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Create a SQL database by using a designer

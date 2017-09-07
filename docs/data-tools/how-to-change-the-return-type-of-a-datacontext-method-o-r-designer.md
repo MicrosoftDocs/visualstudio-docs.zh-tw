@@ -8,8 +8,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 caps.latest.revision: 2
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: 97cbfbb92987f9d69f7e7a9ad3cbe18b3288858a
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: b130e051a4c7a312b2be952c1ef27e97c101cd1b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>How to: Change the return type of a DataContext method (O/R Designer)

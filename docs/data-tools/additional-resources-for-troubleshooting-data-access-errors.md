@@ -224,8 +224,8 @@ helpviewer_keywords:
 - datasets [Visual Basic], troubleshooting
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 29
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 translation.priority.ht:
@@ -244,10 +244,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: bfbd25917b5dccf3c656465143f4675738c51d90
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: bbff01f33245a94393fbaae483abb568155d4268
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Additional resources for troubleshooting data access errors

@@ -13,8 +13,8 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 ms.assetid: abf0a2b5-e4e5-422e-97ef-55a0e35a82df
 caps.latest.revision: 10
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 translation.priority.ht:
@@ -32,10 +32,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 8f8962f122aaa83fc7a3978e896c5e8fd7a85105
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 4b30581ade0ee26ac859b6c5ab1ed820150e4a81
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Walkthrough: Creating a DataTable in the Dataset Designer

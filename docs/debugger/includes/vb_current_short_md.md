@@ -13,9 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: b121b7d4e34a886df015b7f019639abfbd872dec
+ms.contentlocale: zh-tw
 
 ---
 Visual Basic

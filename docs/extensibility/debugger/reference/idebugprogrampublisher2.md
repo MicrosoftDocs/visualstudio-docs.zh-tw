@@ -1,5 +1,5 @@
 ---
-title: IDebugProgramPublisher2 | Microsoft Docs
+title: "IDebugProgramPublisher2 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,47 +34,47 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 242221c8cc3ffad51fa21f71d6209208b58ae6e6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
-This interface allows a debug engine (DE) or custom port suppliers to register programs for debugging.  
+這個介面可讓偵錯引擎 (DE) 或自訂連接埠供應商註冊進行偵錯的程式。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugProgramPublisher2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- Visual Studio implements this interface to register programs being debugged in order to make them visible for debugging across multiple processes.  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ Visual Studio 實作此介面，以便註冊才能讓變更可見的偵錯可跨多個處理序偵錯的程式。  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- Call COM's `CoCreateInstance` function with `CLSID_ProgramPublisher` to obtain this interface (see the Example). A DE or a custom port supplier uses this interface to register program nodes that represent programs being debugged.  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 呼叫 COM 的`CoCreateInstance`函式與`CLSID_ProgramPublisher`取得此介面 （請參閱範例）。 DE 或自訂連接埠供應商使用此介面來註冊程式節點代表偵錯的程式。  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable order  
- This interface implements the following methods:  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
+ 這個介面會實作下列方法：  
   
-|Method|Description|  
+|方法|說明|  
 |------------|-----------------|  
-|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|Makes a program node available to DEs and the session debug manager (SDM).|  
-|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|Removes a program node so that it is no longer available.|  
-|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|Makes a program available to DEs and the SDM.|  
-|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|Removes a program so it is no longer available.|  
-|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|Sets a flag indicating that a debugger is present.|  
+|[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)|讓程式節點使用 DEs 和工作階段偵錯管理員 (SDM)。|  
+|[UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md)|移除程式 節點，所以已無法再使用。|  
+|[PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)|讓程式使用 DEs 和 SDM。|  
+|[UnpublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogram.md)|移除程式，因此已無法再使用。|  
+|[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|設定旗標，表示偵錯工具已存在。|  
   
-## <a name="remarks"></a>Remarks  
- This interface makes programs and program nodes available (that is, "publishes" them) for use by DEs and the session debug manager (SDM). To access published programs and program nodes, use the [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface. This is the only way Visual Studio can recognize that a program is being debugged.  
+## <a name="remarks"></a>備註  
+ 這個介面提供的程式和程式的節點 （也就是 「 發行 」 它們） DEs 和工作階段的偵錯管理員 (SDM) 所使用。 若要存取已發行的程式和程式節點時，使用[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)介面。 這是 Visual Studio 可辨識的偵錯程式的唯一方式。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="example"></a>Example  
- This example shows how to instantiate the program publisher and register a program node. This is taken from the Tutorial, [Publishing the Program Node](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae).  
+## <a name="example"></a>範例  
+ 這個範例示範如何具現化程式發行者及註冊程式節點。 這取自教學課程中，[發佈程式節點](http://msdn.microsoft.com/en-us/d0100e02-4e2b-4e72-9e90-f7bc11777bae)。  
   
 ```cpp  
 // This is how m_srpProgramPublisher is defined in the class definition:  
@@ -107,6 +107,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## <a name="see-also"></a>另請參閱  
+ [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

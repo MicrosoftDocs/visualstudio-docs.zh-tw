@@ -1,5 +1,5 @@
 ---
-title: METADATA_TYPE | Microsoft Docs
+title: "METADATA_TYPE |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f2fd53d0e6a0b92a3c8c7b030d503578aa9d2f98
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
-This structure specifies information about a field type taken from metadata.  
+此結構會指定從中繼資料的欄位類型的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagTYPE_METADATA {  
@@ -58,31 +58,31 @@ public struct METADATA_TYPE {
 };  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  ulAppDomainID  
- ID of the application from which the symbol came. This is used to uniquely identify an instance of the application.  
+ 應用程式的來源符號的識別碼。 這用來唯一識別應用程式的執行個體。  
   
  guidModule  
- The GUID of the module that contains this field.  
+ 包含此欄位之模組的 GUID。  
   
  tokClass  
- The metadata token ID of this type.  
+ 此類型的中繼資料語彙基元的識別碼。  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ [C + +]`_mdToken`是`typedef`32 位元`int`。  
   
-## <a name="remarks"></a>Remarks  
- This structure appears as part of the union in the [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure when the `dwKind` field of the `TYPE_INFO` structure is set to `TYPE_KIND_METADATA` (a value from the [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeration).  
+## <a name="remarks"></a>備註  
+ 此結構會顯示過程中的等位[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設為`TYPE_KIND_METADATA`(介於[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
   
- The `tokClass` value is a metadata token that uniquely identifies a type. For details on how to interpret the upper bits of the metadata token ID, see the `CorTokenType` enumeration in the corhdr.h file in the [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.  
+ `tokClass`值是唯一識別型別的中繼資料語彙基元。 如需有關如何解譯較高的位元的中繼資料語彙基元識別碼的詳細資訊，請參閱`CorTokenType`corhdr.h 檔案中列舉[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK。  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>另請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

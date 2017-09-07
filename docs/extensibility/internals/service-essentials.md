@@ -1,5 +1,5 @@
 ---
-title: Service Essentials | Microsoft Docs
+title: "服務 Essentials |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,31 +32,31 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0b78b5f9bf1fb6d9c92657b99e6d21b58cab2728
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="service-essentials"></a>Service Essentials
-A service is a contract between two VSPackages. One VSPackage provides a specific set of interfaces for another VSPackage to consume. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] is itself a collection of VSPackages that provides services to other VSPackages.  
+# <a name="service-essentials"></a>服務的基本資訊
+服務是兩個 Vspackage 之間的合約。 一個 VSPackage 提供一組特定的另一個 VSPackage 也可以使用的介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本身是提供服務給其他 Vspackage 的 Vspackage 集合。  
   
- For example, you can use the SVsActivityLog service to obtain an IVsActivityLog interface, which you can use to write to the activity log. For more information, see [How to: Use the Activity Log](../../extensibility/how-to-use-the-activity-log.md).  
+ 例如，您可以使用 SVsActivityLog 服務以取得 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需詳細資訊，請參閱[How to： 使用活動記錄檔](../../extensibility/how-to-use-the-activity-log.md)。  
   
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] also provides some built-in services which are not registered. VSPackages can replace built-in or other services by providing a service override. Only one service override is permitted for any service.  
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]也提供一些內建的服務未登錄。 Vspackage 可以藉由提供服務覆寫來取代內建或其他服務。 只有一個服務覆寫允許任何服務。  
   
- Services have no discoverability. Therefore, you must know the service identifier (SID) of a service that you want to consume, and you must know which interfaces it provides. The reference documentation for the service provides this information.  
+ 服務會有任何可搜尋性。 因此，您必須知道您想要使用，服務的服務識別項 (SID)，而且您必須知道它所提供的介面。 服務的參考文件提供這項資訊。  
   
--   VSPackages that provide services are called service providers.  
+-   服務提供者時，會呼叫提供服務的 Vspackage。  
   
--   Services that are provided to other VSPackages are called global services.  
+-   其他 vspackage 所提供服務，稱為 「 全域服務 」。  
   
--   Services that are available only to the VSPackage that implements them, or to any object it creates, are called local services.  
+-   僅適用於 VSPackage 實作，或它會建立任何物件，稱為 「 本機服務的服務。  
   
--   Services that replace built-in services or services provided by other packages, are called service overrides.  
+-   取代內建的服務或其他封裝，提供服務的服務會呼叫服務覆寫。  
   
--   Services, or service overrides, are loaded on demand, that is, the service provider is loaded when the service it provides is requested by another VSPackage.  
+-   服務或服務覆寫，會視需要載入，它所提供的服務要求另一個 VSPackage 時，也就是載入的服務提供者。  
   
--   To support on-demand loading, a service provider registers its global services with [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. For more information, see [How to: Provide a Service](../../extensibility/how-to-provide-a-service.md).  
+-   若要支援視需要載入，服務提供者註冊其全域服務與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 如需詳細資訊，請參閱[How to： 提供服務](../../extensibility/how-to-provide-a-service.md)。  
   
--   After you obtain a service, use [QueryInterface](/cpp/atl/queryinterface) (unmanaged code) or casting (managed code) to get the desired interface, for example:  
+-   取得服務之後，請使用[QueryInterface](/cpp/atl/queryinterface) (unmanaged 程式碼) 或轉型 （managed 程式碼） 以取得所需的介面，例如：  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -66,35 +66,35 @@ A service is a contract between two VSPackages. One VSPackage provides a specifi
     GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
     ```  
   
--   Managed code refers to a service by its type, whereas unmanaged code refers to a service by its GUID.  
+-   Managed 程式碼是指服務，方法是其類型，而 unmanaged 程式碼是指透過其 GUID 的服務。  
   
--   When [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] loads a VSPackage, it passes a service provider to the VSPackage to give the VSPackage access to global services. This is referred to as "siting" the VSPackage.  
+-   當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入的 VSPackage，就會傳遞服務提供者至全域服務讓 VSPackage 存取 VSPackage。 這被指 「 地點"VSPackage。  
   
--   VSPackages can be service providers for the objects they create. For example, a form might send a request for a color service to its frame, which might pass the request to [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].  
+-   Vspackage 可以是服務提供者所建立的物件。 表單，可能會將色彩服務的要求傳送至其框架，可能會傳遞要求[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
--   Managed objects that are deeply nested, or not sited at all, may call <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> for direct access to global services.   
+-   深度巢狀的或未設置完全受管理的物件可能會呼叫<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>全域服務直接存取。   
   
 <a name="how-to-use-getglobalservice"></a>  
   
-## <a name="use-getglobalservice"></a>Use GetGlobalService  
+## <a name="use-getglobalservice"></a>使用 GetGlobalService  
   
-Sometimes you may need to get a service from a tool window or control container that has not been sited, or else has been sited with a service provider that does not know about the service you want. For example, you might want to write to the activity log from within a control. For more information about these and other scenarios, see [How to: Troubleshoot Services](../../extensibility/how-to-troubleshoot-services.md).  
+有時候您可能需要從工具視窗取得服務或控制未設置，否則就不知道您想要的服務的服務提供者已決定位置的容器。 例如，您可以寫入活動記錄檔從控制項中。 如需有關這些和其他案例的詳細資訊，請參閱[如何： 疑難排解服務](../../extensibility/how-to-troubleshoot-services.md)。  
   
-You can get most Visual Studio services by calling the static <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> method.  
+您可以藉由呼叫靜態取得大部分的 Visual Studio 服務<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>方法。  
   
-<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> relies on a cached service provider that is initialized the first time any VSPackage derived from Package is sited. You must guarantee that this condition is met, or else be prepared for a null service.  
+<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>依賴設置上快取的服務提供者，它會初始化任何 VSPackage 衍生自封裝第一次。 您必須保證確認此條件符合時，否則先備妥，null 的服務。  
   
-Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> works correctly most of the time.  
+幸運的是，<xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A>運作正常，大部分的時間。  
   
--   If a VSPackage provides a service known only to another VSPackage, the VSPackage requesting the service is sited before the VSPackage providing the service is loaded.  
+-   如果 VSPackage 提供只有知道另一個 VSPackage 的服務，服務要求 VSPackage 設置之前 VSPackage 提供已載入該服務。  
   
--   If a tool window is created by a VSPackage, the VSPackage is sited before the tool window is created.  
+-   如果 VSPackage 建立工具視窗，就會建立工具視窗之前設置 VSPackage。  
   
--   If a control container is hosted by a tool window created by a VSPackage, the VSPackage is sited before the control container is created.  
+-   如果建立 VSPackage 的工具視窗所裝載的控制項容器，VSPackage 設置之前建立控制項的容器。  
   
-### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>To get a service from within a tool window or control container  
+### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>若要取得從工具視窗或控制項容器內的服務  
   
--   Insert this code in the constructor, tool window, or control container:  
+-   建構函式、 工具視窗或控制項容器中插入這個程式碼：  
   
     ```csharp  
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -107,10 +107,10 @@ Fortunately, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> wor
     End If
     ```  
     
-    This code obtains an SVsActivityLog service and casts it to an IVsActivityLog interface, which can be used to write to the activity log. For an example, see [How to: Use the Activity Log](../../extensibility/how-to-use-the-activity-log.md).  
+    這段程式碼會取得 SVsActivityLog 服務，並將其轉換成 IVsActivityLog 介面，可用來寫入活動記錄檔。 如需範例，請參閱[How to： 使用活動記錄檔](../../extensibility/how-to-use-the-activity-log.md)。  
   
-## <a name="see-also"></a>See Also  
- [List of Available Services](../../extensibility/internals/list-of-available-services.md)   
- [Using and Providing Services](../../extensibility/using-and-providing-services.md)   
- [Casting and Type Conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   
- [Casting](/cpp/cpp/casting)
+## <a name="see-also"></a>另請參閱  
+ [可用服務清單](../../extensibility/internals/list-of-available-services.md)   
+ [使用並提供服務](../../extensibility/using-and-providing-services.md)   
+ [轉型和類型轉換](/dotnet/csharp/programming-guide/types/casting-and-type-conversions)   
+ [轉型](/cpp/cpp/casting)

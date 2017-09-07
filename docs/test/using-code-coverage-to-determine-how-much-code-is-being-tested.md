@@ -1,5 +1,5 @@
 ---
-title: Using Code Coverage to Determine How Much Code is being Tested | Microsoft Docs
+title: "使用程式碼涵蓋範圍來決定所測試的程式碼數量 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,87 +32,87 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 92d42f46b13479c44c29237104c5633b6b5d26eb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Using Code Coverage to Determine How Much Code is being Tested
-To determine what proportion of your project's code is actually being tested by coded tests such as unit tests, you can use the code coverage feature of Visual Studio. To guard effectively against bugs, your tests should exercise or 'cover' a large proportion of your code.  
+# <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
+若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。  
   
- Code coverage analysis can be applied to both managed (CLI) and unmanaged (native) code.  
+ 程式碼涵蓋範圍分析適用於 Managed 程式碼 (CLI) 和 Unmanaged (機器碼)。  
   
- Code coverage is an option when you run test methods using Test Explorer. The results table shows the percentage of the code that was run in each assembly, class, and method. In addition, the source editor shows you which code has been tested.  
+ 當您使用 [測試總管] 執行測試方法程式時，可以選擇程式碼涵蓋範圍。 結果表會顯示程式碼在每個組件、類別和方法中執行的百分比。 此外，原始檔編輯器會顯示已測試的程式碼。  
   
- ![Code coverage results with coloring](../test/media/codecoverage1.png "CodeCoverage1")  
+ ![顯示著色內容的程式碼涵蓋範圍結果](../test/media/codecoverage1.png "CodeCoverage1")  
   
  **Requirements**  
   
--   Visual Studio Enterprise  
+-   Visual Studio 企業版  
   
-### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>To analyze code coverage on unit tests in Test Explorer  
+### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>在 [測試總管] 中分析單元測試的程式碼涵蓋範圍  
   
-1.  On the **Test** menu, choose **Analyze Code Coverage**.  
+1.  在 [測試] 功能表中選擇 [分析程式碼涵蓋範圍]。  
   
-2.  To see which lines have been run, choose ![Show Code Coverage Coloring Icon](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.  
+2.  若要查看已執行的程式碼行，請選擇 ![顯示程式碼涵蓋範圍著色圖示](../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")[顯示程式碼涵蓋範圍著色]。  
   
-     To alter the colors, or to use bold face, choose **Tools**, **Options**, **Environment**, **Fonts and Colors**, **Show settings for: Text Editor**. Under **Display Items**, adjust the Coverage items.  
+     若要修改色彩或使用粗體格式，請選擇 [工具]、[選項]、[環境]、[字型和色彩]、[顯示設定: 文字編輯器]。 在 [顯示項目] 下，調整 [涵蓋範圍] 項目。  
   
-3.  If the results show low coverage, investigate which parts of the code are not being exercised, and write more tests to cover them. Development teams typically aim for about 80% code coverage. In some situations, lower coverage is acceptable. For example, lower coverage is acceptable where some code is generated from a standard template.  
+3.  如果結果顯示涵蓋範圍較小，請檢查不會執行的部分程式碼，並撰寫更多測試來涵蓋這些項目。 開發小組通常以 80% 的程式碼涵蓋範圍為目標。 某些情況可以接受較小的涵蓋範圍。 例如，從標準範本產生之程式碼涵蓋範圍較小是可接受的。  
   
 > [!TIP]
->  To get accurate results:  
+>  若要取得準確的結果：  
 >   
->  -   Make sure that compiler optimization is turned off.  
+>  -   請務必關閉編譯器最佳化。  
 >   
->      If you are working with unmanaged (native) code, use a debug build.  
-> -   Make sure that you are generating .pdb (symbol) files for each assembly.  
+>      如果使用 Unmanaged 程式碼 (機器碼)，請使用偵錯組建。  
+> -   請務必為每個組件產生 .pdb (符號) 檔。  
 >   
->  If you don't get the results you expect, see [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md). . Don't forget to run code coverage again after updating your code. Coverage results and code coloring are not automatically updated after you modify your code or when you run tests.  
+>  如果沒有得到預期的結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。 。 更新程式碼後不要忘記再次執行程式碼涵蓋範圍。 修改程式碼後或執行測試時，並不會自動更新涵蓋範圍結果和程式碼著色。  
   
-## <a name="reporting-in-blocks-or-lines"></a>Reporting in blocks or lines  
- Code coverage is counted in *blocks*. A block is a piece of code with exactly one entry and exit point.  If the program's control flow passes through a block during a test run, that block is counted as covered. The number of times the block is used has no effect on the result.  
+## <a name="reporting-in-blocks-or-lines"></a>區塊或行報告  
+ 程式碼涵蓋範圍以「區塊」(Block) 計算。 一個區塊是只有一個進入點及一個結束點的程式碼片段。  如果程式的控制流程在測試回合期間通過區塊，該區塊即屬於覆蓋的區塊。 區塊使用次數不會影響結果。  
   
- You can also have the results displayed in terms of lines by choosing **Add/Remove Columns** in the table header. If the test run exercised all the code blocks in any line of code, it is counted as one line. Where a line contains some code blocks that were exercised and some that were not, that is counted as a partial line.  
+ 您也可以選擇表格標題中的 [新增/移除資料行]，以行為單位顯示結果。 如果測試回合執行任一程式碼行中的所有程式碼區塊，會以一行計算。 同時包含執行及未執行之程式碼區塊的行屬於部分行。  
   
- Some users prefer a count of lines because the percentages correspond more closely to the size of the fragments that you see in the source code. A long block of calculation would count as a single block even if it occupies many lines.  
+ 某些使用者習慣以行計算，因為百分比較符合您在原始程式碼中看見的片段大小。 長區塊的計算也視同單一區塊，即便長區塊佔用許多行。  
   
-## <a name="managing-code-coverage-results"></a>Managing code coverage results  
- The Code Coverage Results window usually shows the result of the most recent run. The results will vary if you change your test data, or if you run only some of your tests each time.  
+## <a name="managing-code-coverage-results"></a>管理程式碼涵蓋範圍結果  
+ [程式碼涵蓋範圍結果] 視窗通常會顯示最近執行的結果。 如果您變更測試資料，或者每次只執行部分測試，結果就會有所不同。  
   
- The code coverage window can also be used to view previous results, or results obtained on other computers.  
+ [程式碼涵蓋範圍] 視窗也可用來檢視之前的結果，或是在其他電腦上得到的結果。  
   
- You can merge the results of several runs, for example from runs that use different test data.  
+ 您可以合併數個回合的結果，例如合併使用不同測試資料的回合。  
   
--   **To view a previous set of results**, select it from the drop-down menu. The menu shows a temporary list that is cleared when you open a new solution.  
+-   **若要檢視先前的結果集**，請從下拉式功能表中選取它。 當您開啟新的方案時，功能表會顯示暫存清單。  
   
--   **To view results from a previous session**, choose **Import Code Coverage Results**, navigate to the TestResults folder in your solution, and import a .coverage file.  
+-   **若要檢視上一個工作階段的結果**，請選擇 [匯入程式碼涵蓋範圍結果]，瀏覽至方案中的 [TestResults] 資料夾，然後匯入 .coverage 檔案。  
   
-     The coverage coloring might be incorrect if the source code has changed since the .coverage file was generated.  
+     如果在產生 .coverage 檔案之後變更過原始程式碼，涵蓋範圍著色可能會不正確。  
   
--   **To make results readable as text**, choose **Export Code Coverage Results**. This generates a readable .coveragexml file which you could process with other tools or send easily in mail.  
+-   **若要以文字顯示結果**，請選擇 [匯出程式碼涵蓋範圍結果]。 這樣會產生一個易讀的 .coveragexml 檔案，您可以使用其他工具處理這個檔案，也可以透過郵件傳送該檔案。  
   
--   **To send results to someone else**, send either a .coverage file or an exported .coveragexml file. They can then import the file. If they have the same version of the source code, they can see coverage coloring.  
+-   **若要將結果傳送給他人**，請傳送 .coverage 檔案或匯出的 .coveragexml 檔案。 然後，他們就可以匯入您所傳送的檔案。 如果他們有相同版本的原始程式碼，就可以看見涵蓋範圍著色。  
   
-## <a name="merging-results-from-different-runs"></a>Merging results from different runs  
- In some situations, different blocks in your code will be used depending on the test data. Therefore, you might want to combine the results from different test runs.  
+## <a name="merging-results-from-different-runs"></a>合併不同回合的結果  
+ 在某些情況下，會根據測試資料使用程式碼中的不同區塊。 因此，建議您合併不同測試回合的結果。  
   
- For example, suppose that when you run a test with input "2", you find that 50% of a particular function is covered. When you run the test a second time with the input "-2" you see in the coverage coloring view that the other 50% of the function is covered. Now you merge the results from the two test runs, and the report and coverage coloring view show that 100% of the function was covered.  
+ 例如，假設您在執行輸入 "2" 的測試時發現特定函式的涵蓋範圍是 50%。 當您第二次輸入 "-2" 執行測試時，您會在涵蓋範圍著色檢視中看見涵蓋範圍多了另外的 50%。 現在您合併了兩個測試回合的結果，而報告和涵蓋範圍檢視也顯示涵蓋範圍是該函式的 100%。  
   
- Use ![Icon for Merge button in Code Coverage window](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")**Merge Code Coverage Results** to do this. You can choose any combination of recent runs or imported results. If you want to combine exported results, you must import them first.  
+ 若要這樣做，請使用 ![[程式碼涵蓋範圍] 視窗中的 [合併] 按鈕圖示](../test/media/codecoverage-mergeicon.png "CodeCoverage-MergeIcon")[合併程式碼涵蓋範圍結果]。 您可以選擇最近的回合或匯入之結果的任何組合。 如果您要合併匯出的結果，必須先匯入結果。  
   
- Use **Export Code Coverage Results** to save the results of a merge operation.  
+ 使用 [匯出程式碼涵蓋範圍結果]，儲存合併作業的結果。  
   
-### <a name="limitations-in-merging"></a>Limitations in merging  
+### <a name="limitations-in-merging"></a>合併的限制  
   
--   If you merge coverage data from different versions of the code, the results are shown separately, but they are not combined. To get fully combined results, use the same build of the code, changing only the test data.  
+-   如果您從不同版本的程式碼合併涵蓋範圍資料，結果會個別顯示而不會合併。 若要取得完整的合併結果，請使用相同組建的程式碼，只變更測試資料。  
   
--   If you merge a results file that has been exported and then imported, you can only view the results by lines, not by blocks. Use the **Add/Remove Columns** command to show the line data.  
+-   如果合併先匯出再匯入的結果，您只能依行而不是依區塊檢視結果。 使用 [新增/移除資料行] 命令顯示行資料。  
   
--   If you merge results from tests of an ASP.NET project, the results for the separate tests are displayed, but not combined. This applies only to the ASP.NET artifacts themselves: results for any other assemblies will be combined.  
+-   如果您合併 ASP.NET 專案測試的結果，會顯示個別測試的結果而非合併的結果。 這只適用於 ASP.NET 成品本身：會合併其他任何組件的結果。  
   
-## <a name="excluding-elements-from-the-code-coverage-results"></a>Excluding elements from the code coverage results  
- You might want to exclude specific elements in your code from the coverage scores, for example if the code is generated from a text template. Add the attribute `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` to any of the following code elements: class, struct, method, property, property setter or getter, event. Note that excluding a class does not exclude its derived classes.  
+## <a name="excluding-elements-from-the-code-coverage-results"></a>在程式碼涵蓋範圍結果中排除項目  
+ 如果程式碼是從文字範本產生的，您可能會想要將程式碼中的特定項目從排除涵蓋範圍分數中排除。 將 `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` 屬性加入至下列任一程式碼項目：類別、結構、方法、屬性、屬性 setter 或 getter、事件。 請注意，排除類別並不會排除其衍生類別。  
   
- For example:  
+ 例如:  
   
 ```csharp  
   
@@ -207,8 +207,8 @@ public ref class ExampleClass2
   
 ```  
   
-### <a name="excluding-elements-in-native-c-code"></a>Excluding elements in Native C++ code  
- To exclude unmanaged (native) elements in C++ code:  
+### <a name="excluding-elements-in-native-c-code"></a>排除原生 C++ 程式碼中的項目  
+ 排除 C++ 程式碼中的 Umanaged (原生) 項目：  
   
 ```cpp  
   
@@ -235,72 +235,72 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
 ```  
   
- Use the following macros:  
+ 使用下列巨集：  
   
  `ExcludeFromCodeCoverage(` *ExclusionName* `, L"` *FunctionName* `");`  
   
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
--   *ExclusionName* is any unique name.  
+-   *ExclusionName* 是任何唯一名稱。  
   
--   *FunctionName* is a fully qualified function name. It may contain wildcards. For example, to exclude all the functions of a class, write `MyNamespace::MyClass::*`  
+-   *FunctionName* 是完整函式名稱。 可以包含萬用字元。 例如，若要排除某個類別的所有函式，可以寫成 `MyNamespace::MyClass::*`  
   
--   *SourceFilePath* is the local or UNC path of a .cpp file. It may contain wildcards. The following example excludes all files in a particular directory: `\\MyComputer\Source\UnitTests\*.cpp`  
+-   *SourceFilePath* 是 .cpp 檔案的本機或 UNC 路徑。 可以包含萬用字元。 下列範例會排除特定目錄中的所有檔案： `\\MyComputer\Source\UnitTests\*.cpp`  
   
 -   `#include <CodeCoverage\CodeCoverage.h>`  
   
--   Place calls to the exclusion macros in the global namespace, not within any namespace or class.  
+-   請呼叫全域命名空間中的排除巨集，而不要呼叫任何命名空間或類別中的排除巨集。  
   
--   You can place the exclusions either in the unit test code file or the application code file.  
+-   您可以在單元測試程式碼檔案或應用程式程式碼檔案中排除。  
   
--   The exclusions must be compiled as unmanaged (native) code, either by setting the compiler option or by using `#pragma managed(off)`.  
+-   您必須設定編譯器選項或使用 `#pragma managed(off)` 將排除編譯為 Unmanaged (機器碼)。  
   
 > [!NOTE]
->  To exclude functions in C++/CLI code, apply the attribute `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` to the function. This is the same as for C#.  
+>  若要排除 C++/CLI 程式碼中的函式，請將 `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` 屬性套用至該函式。 這和 C# 的做法相同。  
   
-### <a name="including-or-excluding-additional-elements"></a>Including or excluding additional elements  
- Code coverage analysis is performed only on assemblies that are loaded and for which a .pdb file is available in the same directory as the .dll or .exe file. Therefore in some circumstances, you can extend the set of assemblies that is included by getting copies of the appropriate .pdb files.  
+### <a name="including-or-excluding-additional-elements"></a>包含或排除其他項目  
+ 程式碼涵蓋範圍分析只能對載入的組件或與 .dll 或 .exe 檔案位於同一個目錄中的 .pdb 檔案執行。 因此，在某些情況下，您可以藉由取得包含適當 .pdb 檔案的複本來擴充所包含的組件集。  
   
- You can exercise more control over which assemblies and elements are selected for code coverage analysis by writing a .runsettings file. For example, you can exclude assemblies of particular kinds without having to add attributes to their classes. For more information, see [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md).  
+ 您可以撰寫 .runsettings 檔案進一步控制執行程式碼範圍分析時選取的組件和項目。 例如，您可以排除特定種類的組件，而不需要在其類別中加入屬性。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。  
   
-## <a name="analyzing-code-coverage-in-the-build-service"></a>Analyzing code coverage in the build service  
- When you check in your code, your tests will run on the build server, along with all the other tests from other team members. (If you haven't already set this up, see [Run tests in your build process](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38).) It's useful to analyze code coverage on the build service, because that gives the most up-to-date and comprehensive picture of coverage in the whole project. It will also include automated system tests and other coded tests that you don't usually run on the development machines.  
+## <a name="analyzing-code-coverage-in-the-build-service"></a>在組建服務中分析程式碼涵蓋範圍  
+ 當您檢查程式碼時，您的測試會在組建伺服器上與其他小組成員的所有其他測試一起執行。 (如果您尚未設定此功能，請參閱[在建置流程中執行測試](http://msdn.microsoft.com/Library/d05743a1-c5cf-447e-bed9-bed3cb595e38)。)由於在組建服務上分析程式碼覆蓋範圍可以針對整個專案的覆蓋範圍提供最新、最完整的分析結果，因此是非常有用的方法。 這項分析也包含自動化系統測試，和通常不會在開發電腦上執行的其他自動程式碼測試。  
   
-1.  In Team Explorer, open **Builds**, and then add or edit a build definition.  
+1.  在 Team Explorer 中開啟 [組建]，然後新增或編輯組建定義。  
   
-2.  On the **Process** page, expand **Automated Tests**, **Test Source**, **Run Settings**. Set **Type of Run Settings File** to **Code Coverage Enabled**.  
+2.  在 [流程] 頁面上，展開 [自動化測試]、[測試來源]、[回合設定]。 將 [回合設定檔的類型] 設為 [已啟用程式碼涵蓋範圍]。  
   
-     If you have more than one Test Source definition, repeat this step for each one.  
+     如果您有一個以上的測試來源定義，請針對每一個定義重複以上步驟。  
   
-    -   *But there is no field named **Type of Run Settings File**.*  
+    -   但沒有名為 [回合設定檔類型]** 的欄位。  
   
-         Under **Automated Tests**, select **Test Assembly** and choose the ellipsis button **[...]** at the end of the line. In the **Add/Edit Test Run** dialog box, under **Test Runner**, choose **Visual Studio Test Runner**.  
+         在 [自動化測試] 下，選取 [測試組件]，然後選擇行末的省略符號按鈕 [...]。 在 [加入/編輯測試回合] 對話方塊中，選擇 [測試執行器] 之下的 [Visual Studio 測試執行器]。  
   
- ![Setting the build definition for code coverage](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
+ ![設定程式碼涵蓋範圍的組建定義](../test/media/codecoverage-plaincc.png "CodeCoverage-plainCC")  
   
- After the build runs, the code coverage results are attached to the test run and appear in the build summary.  
+ 組建執行後會將程式碼涵蓋範圍結果附加至測試回合，而且結果會出現在組建摘要。  
   
-## <a name="analyzing-code-coverage-in-a-command-line"></a>Analyzing Code Coverage in a Command Line  
- To run tests from the command line, use vstest.console.exe. Code coverage is an option of this utility. For more information, see [VSTest.Console.exe command-line options](/devops-test-docs/test/vstest-console-exe-command-line-options).  
+## <a name="analyzing-code-coverage-in-a-command-line"></a>在命令列中分析程式碼涵蓋範圍  
+ 若要從命令列執行測試，請使用 vstest.console.exe。 程式碼涵蓋範圍是此公用程式的選項。 如需詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](/devops-test-docs/test/vstest-console-exe-command-line-options)。  
   
-1.  Launch the Visual Studio Developer Command Prompt:  
+1.  啟動 Visual Studio Developer 命令提示字元：  
   
-     On the Windows **Start** menu, choose **All Programs**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Developer Command Prompt**.  
+     在 Windows 的 [開始] 功能表上，依序選擇 [所有程式]、[Microsoft Visual Studio]、[Visual Studio Tools]、[開發人員命令提示字元]。  
   
-2.  Run:  
+2.  執行：  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
-## <a name="troubleshooting"></a>Troubleshooting  
- If you do not see code coverage results, see  [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md).  
+## <a name="troubleshooting"></a>疑難排解  
+ 如果您沒有看見程式碼涵蓋範圍結果，請參閱[針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)。  
   
-## <a name="external-resources"></a>External resources  
+## <a name="external-resources"></a>外部資源  
   
-### <a name="guidance"></a>Guidance  
- [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="guidance"></a>指引  
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>See Also  
- [Customizing Code Coverage Analysis](../test/customizing-code-coverage-analysis.md)   
- [Troubleshooting Code Coverage](../test/troubleshooting-code-coverage.md)   
- [Unit Test Your Code](../test/unit-test-your-code.md)
+## <a name="see-also"></a>另請參閱  
+ [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
+ [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)   
+ [對程式碼進行單元測試](../test/unit-test-your-code.md)
 

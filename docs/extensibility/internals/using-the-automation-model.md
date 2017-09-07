@@ -1,5 +1,5 @@
 ---
-title: Using the Automation Model | Microsoft Docs
+title: "使用 Automation 模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,14 +32,14 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 82a9c2068bdd3e234bcc53ffa870ca289289d690
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="using-the-automation-model"></a>Using the Automation Model
-After you have connected your VSPackage to automation, you can obtain the properties and methods by calling the <xref:EnvDTE.DTEClass.GetObject%2A> method on the <xref:EnvDTE._DTE> object, passing a string representing the object you wish to retrieve.  
+# <a name="using-the-automation-model"></a>使用 Automation 模型
+VSPackage 連接自動化之後，您可以取得的屬性和方法的呼叫<xref:EnvDTE.DTEClass.GetObject%2A>方法<xref:EnvDTE._DTE>物件，傳遞字串，表示您想要擷取的物件。  
   
-## <a name="obtaining-project-objects"></a>Obtaining Project Objects  
- The following are two code examples that show how an automation consumer obtains the project automation objects. For information about how to get the DTE object, see [How to: Get References to the DTE and DTE2 Objects](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4).  
+## <a name="obtaining-project-objects"></a>取得專案的物件  
+ 以下是兩個程式碼範例示範如何自動化取用者會包含專案 automation 物件。 如需如何取得 DTE 物件相關資訊，請參閱[How to： 取得參考的 DTE 和 DTE2 物件](http://msdn.microsoft.com/Library/c92e3c8e-82e6-4a67-85da-e43c50ffd8e4)。  
   
 ```vb  
 Sub DoAutomation()  
@@ -61,9 +61,9 @@ void DoAutomation(void)
   
 ```  
   
- At this point, you can use the standard project objects that are part of a specific VSPackage to move down the hierarchy model.  
+ 此時，您可以使用標準的專案物件屬於特定 VSPackage 也可以下移階層的模型。  
   
- The following code example shows how to get a custom object that is a property of a custom project type.:  
+ 下列程式碼範例示範如何取得自訂物件所自訂的專案類型的屬性。:  
   
 ```vb  
 Dim MyPrj As Project  
@@ -76,7 +76,7 @@ objMyObject = MyPrj.Object 'You call .Object to get to special Project
 objMyObject.MySpecialMethodOrProperty  
 ```  
   
- The following code lists the names of all of the properties in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] environment **General** option on the **Tools** menu:  
+ 下列程式碼列出所有中的屬性名稱[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]環境**一般**選項**工具**功能表：  
   
 ```vb  
 dim objDTE  
@@ -89,5 +89,5 @@ Next
   
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:EnvDTE.DTEClass.GetObject%2A>

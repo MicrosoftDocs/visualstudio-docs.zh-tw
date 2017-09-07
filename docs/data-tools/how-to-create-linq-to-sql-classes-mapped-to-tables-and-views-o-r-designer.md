@@ -8,8 +8,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 caps.latest.revision: 3
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -27,10 +27,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: efe23113e7163f5a85f3fe49edd783fb81e849d6
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 01de4416fb1c8a55fa32ecb2e638c6b6ec4fa588
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>How to: Create LINQ to SQL classes mapped to tables and views (O/R Designer)

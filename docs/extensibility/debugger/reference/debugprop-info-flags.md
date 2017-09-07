@@ -1,5 +1,5 @@
 ---
-title: DEBUGPROP_INFO_FLAGS | Microsoft Docs
+title: "DEBUGPROP_INFO_FLAGS |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f4633730a3dbe09f356c3731cd48c9428b9e8890
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="debugpropinfoflags"></a>DEBUGPROP_INFO_FLAGS
-Specifies what information to retrieve about a debug property object.  
+指定要擷取偵錯屬性物件的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 enum enum_DEBUGPROP_INFO_FLAGS {   
@@ -85,62 +85,62 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  DEBUGPROP_INFO_FULLNAME  
- Initialize/use the `bstrFullName` field.  
+ 初始化/使用`bstrFullName`欄位。  
   
  DEBUGPROP_INFO_NAME  
- Initialize/use the `bstrName` field.  
+ 初始化/使用`bstrName`欄位。  
   
  DEBUGPROP_INFO_TYPE  
- Initialize/use the `bstrType` field.  
+ 初始化/使用`bstrType`欄位。  
   
  DEBUGPROP_INFO_VALUE  
- Initialize/use the `bstrValue` field.  
+ 初始化/使用`bstrValue`欄位。  
   
  DEBUGPROP_INFO_ATTRIB  
- Initialize/use the `dwAttrib` field.  
+ 初始化/使用`dwAttrib`欄位。  
   
- DEBUGPROP_INFO_PROP,  
- Initialize/use the `pProperty` field that contains an [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface.  
+ DEBUGPROP_INFO_PROP，  
+ 初始化/使用`pProperty`包含欄位[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面。  
   
  DEBUGPROP_INFO_VALUE_AUTOEXPAND  
- Specifies that the value field should contain the auto-expanded value, if available, for this type of object.  
+ 指定 [值] 欄位應包含的自動展開的值，是否有的話，這種類型的物件。  
   
  DEBUGPROP_INFO_VALUE_NOFUNCEVAL  
- Deprecated.  
+ 已取代。  
   
  DEBUGPROP_INFO_VALUE_RAW  
- Do not return any beautified values or members (that is, do not format the values).  
+ 不會傳回任何 beautified 的值或成員 （也就是不要格式化值）。  
   
  DEBUGPROP_INFO_VALUE_NO_TOSTRING  
- Do not return any special synthesized values (for example, do not call `ToString()` on an object to produce a value).  
+ 不會傳回任何特殊的合成的值 (例如，請勿呼叫`ToString()`上用來產生值的物件)。  
   
  DEBUGPROP_INFO_NONE  
- Specifies that no flags are set.  
+ 指定設定任何旗標。  
   
  DEBUGPROP_INFO_STANDARD  
- Initialize/use the `dwAttrib`, `bstrName`, `bstrType`, and `bstrValue` fields.  
+ 初始化/使用`dwAttrib`， `bstrName`， `bstrType`，和`bstrValue`欄位。  
   
  DEBUGPROP_INFO_All  
- Indicates a mask of all flags.  
+ 表示所有旗標的遮罩。  
   
-## <a name="remarks"></a>Remarks  
- These values are passed to the [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md), [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md), and [EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md) methods to indicate which fields are to be initialized the [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure.  
+## <a name="remarks"></a>備註  
+ 這些值會傳遞給[GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)， [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)，和[EnumProperties](../../../extensibility/debugger/reference/idebugstackframe2-enumproperties.md)方法以指出哪些欄位是初始化[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構。  
   
- These values are also used for the `dwFields` member of the `DEBUG_PROPERTY_INFO` structure to indicate which fields of the structure are used and valid when the structure is returned.  
+ 這些值也會用於`dwFields`隸屬`DEBUG_PROPERTY_INFO`結構，表示結構的哪些欄位時，會使用並有效會傳回這個結構。  
   
- These values may be combined with a bitwise `OR`.  
+ 這些值可能會合併使用位元`OR`。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)   
  [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)   

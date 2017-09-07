@@ -1,5 +1,5 @@
 ---
-title: CONTEXT_INFO | Microsoft Docs
+title: "CONTEXT_INFO |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5cee396c4659807ca4dcded60f4d1f1fbbcc3f82
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
-This structure describes a memory context or code context.  
+此結構描述的記憶體內容或程式碼內容。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagCONTEXT_INFO {   
@@ -66,42 +66,42 @@ public struct CONTEXT_INFO {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  dwFields  
- A combination of flags from he [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeration that specifies which fields are filled out**.**  
+ 從他的旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉，指定哪些欄位都已填寫**。**  
   
  bstrModuleUrl  
- The name of the module where the context is located.  
+ 內容所在位置之模組的名稱。  
   
  bstrFunction  
- The function name where the context is located.  
+ 內容所在的函式名稱。  
   
  posFunctionOffset  
- A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that identifies the line and column offset of the function associated with the code context.  
+ A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)識別相關聯的程式碼內容的函式的行和資料行位移的結構。  
   
  bstrAddress  
- The address in code where the given context is located.  
+ 指定的內容所在的程式碼中的位址。  
   
  bstrAddressOffset  
- The offset of the address in code where the given context is located.  
+ 指定的內容所在的程式碼中的位址位移。  
   
  bstrAddressAbsolute  
- The absolute address in memory where the given context is located.  
+ 指定的內容所在位置的記憶體中的絕對位址。  
   
-## <a name="remarks"></a>Remarks  
- This structure is returned from a call to the [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) method.  
+## <a name="remarks"></a>備註  
+ 此結構會從呼叫傳回[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法。  
   
- A typical use for this structure is in support of a **Memory** debug window.  
+ 此結構的典型用法就是支援**記憶體**偵錯視窗。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>另請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)   
  [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
  [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

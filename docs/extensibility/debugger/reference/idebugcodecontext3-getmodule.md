@@ -1,5 +1,5 @@
 ---
-title: IDebugCodeContext3::GetModule | Microsoft Docs
+title: "IDebugCodeContext3::GetModule |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,13 +32,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c015c7b6cb604e1f5da5ca13cb7a58425c622773
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
-Retrieves a reference to the interface of the debug module.  
+擷取的偵錯模組介面的參考。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetModule(   
@@ -52,15 +52,15 @@ public int GetModule(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ppModule`  
- [out] Reference to the debug module interface.  
+ [out]偵錯模組介面的參考。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugCodeContext** object that exposes the [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md) interface.  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugCodeContext**公開物件[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)介面。  
   
 ```cpp  
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)  
@@ -80,5 +80,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugSymbolProviderDirect::GetCurrentModulesState | Microsoft Docs
+title: "IDebugSymbolProviderDirect::GetCurrentModulesState |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ce289cb350dfe285d8f2f28d0cd16ed7444fd166
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
-Retrieves information about the symbol group of which the symbol provider is a member.  
+擷取的符號提供者為成員的符號群組的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetCurrentModulesState(  
@@ -55,18 +55,18 @@ int GetCurrentModulesState(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pState`  
- [out] The state of the symbol provider group.  
+ [out]符號提供者群組的狀態。  
   
  `count`  
- [out] Number of modules in the group.  
+ [out]群組中的模組數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The state is changed whenever a module is added to, or removed from, the symbol group. Therefore, this method can be used to detect if a symbol group has been modified.  
+## <a name="remarks"></a>備註  
+ 模組已新增，或從符號群組中移除時，將變更的狀態。 因此，這個方法可以用來偵測符號群組已經被修改。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

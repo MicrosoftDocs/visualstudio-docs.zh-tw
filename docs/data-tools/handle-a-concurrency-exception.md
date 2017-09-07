@@ -18,8 +18,8 @@ helpviewer_keywords:
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 caps.latest.revision: 23
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3854ab5d1e79d5e8f63ff8a21ba313a75f36c8da
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: deabce254e91692e527b7c51ad6f2e2f7da7485d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="handle-a-concurrency-exception"></a>Handle a concurrency exception
@@ -144,7 +144,7 @@ Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised wh
   
 -   The proposed changes in the dataset  
   
- The user is then able to either overwrite the database with the proposed version, or cancel the update and refresh the dataset with the new values from the database.  
+The user is then able to either overwrite the database with the proposed version, or cancel the update and refresh the dataset with the new values from the database.  
   
 #### <a name="to-enable-the-handling-of-concurrency-errors"></a>To enable the handling of concurrency errors  
   
@@ -159,7 +159,7 @@ Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised wh
 ### <a name="add-code-to-handle-the-concurrency-exception"></a>Add code to handle the concurrency exception  
  When you attempt to perform an update and an exception gets raised, you generally want to do something with the information that's provided by the raised exception.  
   
- In this section, you add code that  attempts to update the database.You also handle any <xref:System.Data.DBConcurrencyException> that might get raised, as well as any other exceptions.  
+ In this section, you add code that  attempts to update the database. You also handle any <xref:System.Data.DBConcurrencyException> that might get raised, as well as any other exceptions.  
   
 > [!NOTE]
 >  The `CreateMessage` and `ProcessDialogResults` methods will be added later in this walkthrough.  
@@ -175,7 +175,7 @@ Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised wh
      [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]  [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
   
 ### <a name="display-choices-to-the-user"></a>Display choices to the user  
- The code you just wrote calls the `CreateMessage` procedure to display error information to the user. For this walkthrough, you use a message box to display the different versions of the record to the user.This enables the user to choose whether to overwrite the record with the changes or cancel the edit. Once the user selects an option (clicks a button) on the message box, the response is passed to the `ProcessDialogResult` method.  
+ The code you just wrote calls the `CreateMessage` procedure to display error information to the user. For this walkthrough, you use a message box to display the different versions of the record to the user. This enables the user to choose whether to overwrite the record with the changes or cancel the edit. Once the user selects an option (clicks a button) on the message box, the response is passed to the `ProcessDialogResult` method.  
   
 ##### <a name="to-create-the-message-to-display-to-the-user"></a>To create the message to display to the user  
   

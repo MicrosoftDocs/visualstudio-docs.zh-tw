@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service | Microsoft Docs'
+title: "逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -17,72 +17,72 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5027ce1affd22c88af18301d51304958c819249a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Walkthrough: Create a WPF Desktop Application connected to an Azure Mobile Service
-You can use Windows Presentation Foundation (WPF) to quickly create a modern desktop application that uses an Azure Mobile Service to store and provide data.  
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
+您可以使用 Windows Presentation Foundation (WPF) 快速建立現代桌面應用程式，以使用 Azure 行動服務來儲存與提供資料。  
   
-##  <a name="Requirements"></a> Prerequisites  
- You'll need the following to complete this walkthrough:  
+##  <a name="Requirements"></a> 必要條件  
+ 您需要下列項目才能完成本逐步解說：  
   
--   Visual Studio 2017 or any version that supports WPF development.  
+-   Visual Studio 2017 或支援 WPF 開發的任何版本。  
   
--   An active Microsoft Azure account.  
+-   使用中的 Microsoft Azure 帳戶。  
   
-    -   You can sign up for a free trial account [here](http://azure.microsoft.com/en-us/pricing/free-trial/).  
+    -   您可以在 [這裡](http://azure.microsoft.com/en-us/pricing/free-trial/)註冊免費試用帳戶。  
   
-    -   You can activate [MSDN subscriber benefits](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Your MSDN subscription gives you credits every month that you can use for paid Azure services.  
+    -   您可以啟動 [MSDN 訂閱者權益](https://azure.microsoft.com/en-us/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F)。 MSDN 訂閱可每月提供信用額度，讓您使用付費型 Azure 服務。  
   
-## <a name="create-a-project-and-add-references"></a>Create a project and add references  
- The first step is to create a WPF project and add a NuGet package that lets you connect to Azure Mobile Services.  
+## <a name="create-a-project-and-add-references"></a>建立專案並加入參考  
+ 第一個步驟是建立 WPF 專案，並加入可讓您連接到 Azure 行動服務的 NuGet 封裝。  
   
-#### <a name="to-create-the-project"></a>To create the project  
+#### <a name="to-create-the-project"></a>若要建立專案  
   
-1.  On the menu bar, choose **File**, **New**, **Project**.  
+1.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-2.  In the **New Project** dialog, expand either the **Visual C#** or **Visual Basic** node and choose the **Windows** node, and then expand the **Windows** node and choose the **Classic Desktop** node.  
+2.  在 [新增專案]  對話方塊中，展開 [Visual C#]  或 [Visual Basic]  節點，選擇 [Windows]  節點，然後展開 [Windows]  並選擇 [傳統桌面]  節點。  
   
-3.  In the template list, choose the **WPF Application** template.  
+3.  在範本清單中選擇 [WPF 應用程式]  範本。  
   
-4.  In the **Name** textbox enter `WPFQuickStart`, and then choose the **OK** button.  
+4.  在 [新增專案]  文字方塊中，輸入 `WPFQuickStart`，然後選擇 [確定]  按鈕。  
   
-     The project is created and the project files are added to **Solution Explorer**, and the designer for the default application window named **MainWindow.xaml** is displayed.  
+     即建立專案並將專案檔案加入 **方案總管**，並顯示名為 **MainWindow.xaml** 之預設應用程式視窗的設計工具。  
   
-#### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>To add a reference to the Windows Azure Mobile Services SDK  
+#### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>若要加入 Windows Azure Mobile Services SDK 的參考  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **References** node and choose **Manage NuGet Packages**.  
+1.  在 **方案總管**中，開啟 [參考]  節點的捷徑功能表，然後選擇 [管理 NuGet 套件] 。  
   
-2.  In the **NuGet Package Manager**, choose the **Search** field and enter `mobileservices`.  
+2.  在 [NuGet 封裝管理員] 中，選擇 [搜尋] 欄位並輸入 `mobileservices`。  
   
-3.  In the left pane, choose **WindowsAzure.MobileServices**, and then in the right pane choose the **Install** button.  
-  
-    > [!NOTE]
-    >  If a **Preview** dialog appears, review the proposed changes and then choose the **OK** button.  
-  
-4.  In the **License Acceptance** dialog, review the license terms and then accept them by choosing the **I Accept** button.  
-  
-     The necessary references will be added to **Solution Explorer**.  
+3.  在左窗格中選擇 **WindowsAzure.MobileServices**，然後在右窗格中選擇 [安裝]  按鈕。  
   
     > [!NOTE]
-    >  If you don't agree with the license terms, choose the **I Decline** button. You won't be able to finish the rest of the walkthrough.  
+    >  如果出現 [預覽]  對話方塊，請檢閱建議的變更，然後選擇 [確定]  按鈕。  
   
-## <a name="create-the-user-interface"></a>Create the user interface  
- The next step is to create the user interface for the application. First you'll create a reusable user control that displays a standard side-by-side two pane layout. You'll add the user control to the main application window and add controls to enter and display data, then write some code to define the interaction with the mobile service backend.  
+4.  在 [接受授權]  對話方塊中，檢閱授權條款並選擇 [我接受]  按鈕以接受條款。  
   
-#### <a name="to-add-a-user-control"></a>To add a user control  
+     必要的參考即會加入 **方案總管**。  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **WPFQuickStart** node and choose **Add**, **New Folder**.  
+    > [!NOTE]
+    >  如果您不同意授權條款，請選擇 [我拒絕] 按鈕。 這樣一來，您將無法完成此逐步解說的其餘部分。  
   
-2.  Name the folder `Common`.  
+## <a name="create-the-user-interface"></a>建立使用者介面  
+ 下一步是建立應用程式的使用者介面。 首先您要建立可重複使用的使用者控制項，其會顯示兩個窗格並排的標準版面配置。 您要將使用者控制項新增至主應用程式視窗，並新增控制項以輸入和顯示資料，然後撰寫程式碼來定義與行動服務後端的互動。  
   
-3.  Open the shortcut menu for the **Common** folder and choose **Add**, **User Control**.  
+#### <a name="to-add-a-user-control"></a>若要加入使用者控制項  
   
-4.  In the **Add New Item** dialog, choose the Name field and enter `QuickStartTask`, and then choose the **Add** button.  
+1.  在 **方案總管**中，開啟 [WPFQuickStart]  節點的捷徑功能表，然後依序選擇 [加入] 和 [新增資料夾] 。  
   
-     The user control will be added to the project and the **QuickStartTask.xaml** file will open in the designer.  
+2.  將資料夾命名為 `Common`註冊免費試用帳戶。  
   
-5.  In the lower pane of the designer, select the `<Grid>` and `</Grid>` tags and replace them with the following XAML code:  
+3.  開啟 [Common]  資料夾的捷徑功能表，然後依序選擇 [加入] 和 [使用者控制項] 。  
+  
+4.  在 [新增專案]  對話方塊中，選擇 [名稱] 欄位並輸入 `QuickStartTask`，然後選擇 [確定]  按鈕。  
+  
+     隨即將使用者控制項加入專案，並會在設計工具中開啟 **QuickStartTask.xaml** 檔案。  
+  
+5.  在設計工具下方窗格中選取 `<Grid>` 和 `</Grid>` 標記，並將它們取代成下列 XAML 程式碼：  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -98,13 +98,13 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         </Grid>  
     ```  
   
-     This XAML code creates a reusable layout with placeholders for number, title and description fields. At run time the placeholders can be replaced with text as shown in the following illustration.  
+     這個 XAML 程式碼會建立可重複使用的版面配置，其中含有數字、標題和描述欄位的預留位置。 在執行階段時，可將預留位置取代為文字，如下圖所示。  
   
-     ![The QuickStartTask user control](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
+     ![QuickStartTask 使用者控制項](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  In **Solution Explorer**, expand the **QuickStartTask.xaml** node and open the **QuickStartTask.xaml.cs** or **QuickStartTask.xaml.vb** file.  
+6.  在 **方案總管**中，展開 [QuickStartTask.xaml]  節點並開啟 **QuickStartTask.xaml.cs** 或 **QuickStartTask.xaml.vb** 檔案。  
   
-7.  In the code editor, replace the `namespace WPFQuickStart.Common` (C#) namespace or the `Public Class QuickStartTask` (VB) method with the following code:  
+7.  在程式碼編輯器中，將 `namespace WPFQuickStart.Common` (C#) 命名空間或 `Public Class QuickStartTask` (VB) 方法取代為下面程式碼：  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -200,29 +200,29 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         End Class  
     ```  
   
-     This code uses dependency properties to set the values for the number, title and description fields at run time.  
+     此程式碼會使用相依性屬性，在執行階段時設定數字、標題和描述欄位的值。  
   
-8.  On the menu bar, choose **Build**, **Build WPFQuickStart** to build the user control.  
+8.  在功能表列上，依序選擇 [建置] 、[建置 WPFQuickStart]  以建置使用者控制項。  
   
-#### <a name="to-create-and-modify-the-main-window"></a>To create and modify the main window  
+#### <a name="to-create-and-modify-the-main-window"></a>若要建立及修改主視窗  
   
-1.  In **Solution Explorer**, open the **MainWindow.xaml** file.  
+1.  在 **方案總管**中，開啟 **MainWindow.xaml** 檔。  
   
-2.  **Important**. This step is for C# only. If you are using Visual Basic, skip to the next step. In the lower pane of the designer, locate the line `xmlns:local="clr-namespace:WPFQuickStart"` and replace it with the following XAML code:  
+2.  **重要事項**： 這個步驟只適用於 C#。 如果您使用 Visual Basic，請跳至下一個步驟。 在設計工具下方窗格中，找到 `xmlns:local="clr-namespace:WPFQuickStart"` 行，並將它取代成下列 XAML 程式碼：  
   
     ```xaml  
     xmlns:local="clr-namespace:WPFQuickStart.Common"  
     ```  
   
-3.  In the **Properties** window, expand the **Common** category node and choose the **Title** property, and then enter `WPF Todo List` and press the **Enter** key.  
+3.  在 [新增專案]  視窗中，展開 [通用] **Common** 分類節點並選擇 [標題]  屬性，然後輸入 `WPF Todo List` 按下 **Enter** 鍵。  
   
-     Notice that the **Title** element in the XAML window changes to match the new value. You can modify XAML properties in either the XAML window or the **Properties** window, and the changes are synchronized.  
+     請注意，XAML 視窗中的 [標題]  元素會變更以符合新的值。 您可以在 XAML 視窗或 [屬性]  視窗中修改 XAML 屬性，變更會同步處理。  
   
-4.  In the XAML window, set the value of the **Height** element to `768`, and set the value of the **Width** property to `1280`.  
+4.  在 XAML 視窗中，將 [高度] 項目的值設為 `768`，將 [寬度] 屬性的值設為 `1280`。  
   
-     These elements correspond to the **Height** and **Width** properties, found in the **Layout** category in the **Properties** window.  
+     對應到 [高度]  和 [寬度]  屬性的這些元素，可在 [屬性]  視窗的 [版面配置]  分類中找到。  
   
-5.  Select the `<Grid>` and `</Grid>` tags and replace them with the following XAML code:  
+5.  選取 `<Grid>` 和 `</Grid>` 標記，並將它們取代成下列 XAML 程式碼：  
   
     ```xaml  
     <Grid>  
@@ -283,18 +283,18 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
         </Grid>  
     ```  
   
-     Notice that the changes are reflected in the Design window. Once again, you also could have defined the user interface by adding controls from the **Toolbox** window and setting properties in the **Properties** window. Anything that can be done in the designer can be done in XAML code, and vice versa.  
+     請注意，所做的變更會反映在 [設計] 視窗中。 同樣地，您也可以從 [工具箱]  視窗加入控制項，並在 [屬性]  視窗中設定屬性，以定義使用者介面。 任何可在設計工具中完成的項目，皆可在 XAML 程式碼中完成，反之亦然。  
   
-     At this point, the design should look like the following illustration.  
+     此時，您的設計看起來應該像下圖：  
   
-     ![The MainWindow in the designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
+     ![設計工具中的 MainWindow](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  While following the next few procedures you might see errors in the **Error List** if it is open. Don't worry; these errors will go away once you complete the remaining procedures.  
+    >  遵循接下來的幾個程序時，您可能會在開啟的 [錯誤清單]  中看到一些錯誤。 別擔心，一旦完成其餘的程序後，這些錯誤就會消失。  
   
-6.  In **Solution Explorer**, expand the **MainWindow.xaml** node and open the **MainWindow.xaml.cs** or **MainWindow.xaml.vb** file.  
+6.  在 **方案總管**中，展開 [MainWindow.xaml]  節點並開啟 **MainWindow.xaml.cs** 檔或 **MainWindow.xaml.vb** 檔。  
   
-7.  In the Code Editor, add the following `using` or `Imports` directives to the top of the file:  
+7.  在程式碼編輯器中，將 `using` 或 `Imports` 指示詞加入檔案的頂端：  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -306,7 +306,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Imports Newtonsoft.Json  
     ```  
   
-8.  Replace all of the code in the **WPFQuickStart** namespace (C#) or **Class MainWindow** class (VB) with the following code:  
+8.  將 **WPFQuickStart** 命名空間 (C#) 或 **Class MainWindow** 類別 (VB) 中的全部程式碼取代為下列程式碼：  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -470,56 +470,56 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     End Class  
     ```  
   
-     This code defines the interaction between the user interface and the database in the mobile service using asynchronous methods.  
+     此程式碼會定義在使用非同步方法時，行動服務中使用者介面與資料庫之間的互動。  
   
-## <a name="create-the-azure-mobile-service"></a>Create the Azure mobile service  
- The final step is to create a mobile service in Microsoft Azure, add a table to store your data, and then reference the service instance from your application.  
+## <a name="create-the-azure-mobile-service"></a>建立 Azure 行動服務  
+ 最後一個步驟是建立 Microsoft Azure 行動服務，並加入資料表以儲存資料，然後透過您的應用程式來參考服務執行個體。  
   
-#### <a name="to-create-a-mobile-service"></a>To create a mobile service  
+#### <a name="to-create-a-mobile-service"></a>若要建立行動服務  
   
-1.  Open a web browser and log in to your Microsoft Azure portal, and then choose the **MOBILE SERVICES** tab.  
+1.  開啟網頁瀏覽器，並登入 Microsoft Azure 入口網站，然後選擇 [行動服務]  索引標籤。  
   
-2.  Choose the **NEW** button, and in the pop up dialog choose **COMPUTE**, **MOBILE SERVICE,CREATE**.  
+2.  選擇 [新增] 按鈕，然後在快顯對話方塊中依序選擇 [計算]、[行動服務]、[建立]。  
   
-3.  In the **NEW MOBILE SERVICE** dialog, choose the **URL** textbox and enter `wpfquickstart01`.  
-  
-    > [!NOTE]
-    >  You may need to change the numeric portion of the URL. Microsoft Azure requires a unique URL for each mobile service.  
-  
-     This sets the URL for the service to *https://wpfquickstart01.azure-mobile.net/*.  
-  
-4.  In the **DATABASE** list, choose a database option. Since this is an application that probably won't get a lot of usage, you might want to choose the **Create a free 20MB SQL database** option, or choose the free database already associated with your subscription.  
-  
-5.  In the **REGION** list, choose the data center where you want to deploy the mobile service, and then choose the **Next** (right arrow) button.  
+3.  在 [新的行動服務] 對話方塊中，選擇 [URL] 文字方塊並輸入 `wpfquickstart01`。  
   
     > [!NOTE]
-    >  For this service you will use the default **BACKEND** setting, **JavaScript**.  
+    >  您可能需要變更 URL 的數字部分。 Microsoft Azure 要求每個行動服務皆具備唯一的 URL。  
   
-6.  If you are creating a new database, on the **Specify database settings** page, in the **SERVER** list choose **New SQL database server**, enter your **SQL LOGIN NAME** and **PASSWORD**, and then choose the **Complete** (checkmark) button.  
+     這會將服務的 URL 設為 *https://wpfquickstart01.azure-mobile.net/*。  
   
-7.  If you chose an existing database, on the **Database Settings** page, enter your **LOGIN PASSWORD** and then choose the **Complete** (checkmark) button.  
+4.  在 [資料庫]  清單中，選擇資料庫選項。 由於這個應用程式應該不常使用，所以您可以選擇 [建立免費的 20MB SQL 資料庫] 選項，或選擇已與訂閱建立關聯的免費資料庫。  
   
-     The process of creating the mobile service will begin. Once the process is completed the status will change to **Ready** and you can move on to the next step.  
+5.  在 [區域]  清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]\ (向右箭號) 按鈕。  
   
-8.  In the portal, select the newly created mobile service and then choose the **MANAGE KEYS** button.  
+    > [!NOTE]
+    >  針對這項服務，您要使用預設 [後端]  設定與 [JavaScript] 。  
   
-9. In the **Manage Access Keys** dialog, copy the **APPLICATION KEY**.  
+6.  如果您要建立新的資料庫，請在 [指定資料庫設定]  頁面上的 [伺服器]  清單中選擇 [新的 SQL 資料庫伺服器] ，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]\ (勾選記號) 按鈕。  
   
-     You'll use this in the next procedure.  
+7.  如果您選擇現有的資料庫，請在 [資料庫設定]  頁面上，輸入您的 **登入密碼** ，然後選擇 [完成]\ (勾選記號) 按鈕。  
   
-#### <a name="to-create-a-table"></a>To create a table  
+     建立行動服務的程序隨即開始。 程序完成時，狀態會變更為 [就緒]  ，您即可移至下一個步驟。  
   
-1.  In the Microsoft Azure portal, choose the right arrow next to the name of your mobile service, and on the menu bar, choose **DATA**, and then choose the **ADD A TABLE** link.  
+8.  在入口網站中，選取新建立的行動服務，然後選擇 [管理金鑰]  按鈕。  
   
-2.  In the **Create New Table** dialog, in the **TABLE NAME** text box enter `TodoItem`, and then choose the **Complete** (checkmark) button.  
+9. 在 [管理存取金鑰]  對話方塊中，複製 **應用程式金鑰**，  
   
-     Wait for the table to be created, and then move on to the final procedure.  
+     以便在下一個程序中使用。  
   
-#### <a name="to-add-a-declaration-for-the-mobile-service"></a>To add a declaration for the mobile service  
+#### <a name="to-create-a-table"></a>若要建立資料表  
   
-1.  Return to Visual Studio. In **Solution Explorer**, expand the **App.xaml** (C#) or **Application.xaml** (Visual Basic) node and open the **App.xaml.cs** or **App.xaml.vb** file.  
+1.  在 Microsoft Azure 入口網站中，選擇行動服務名稱旁的向右箭號，並在功能表列上選擇 [資料] ，然後選擇 [加入資料表]  連結。  
   
-2.  In the Code Editor, add the following `using` or **Imports** directives to the top of the file:  
+2.  在 [新增專案]  對話方塊的 [資料表名稱]  文字方塊中，輸入 `TodoItem`，然後選擇 [確定] \(勾選記號) 按鈕。  
+  
+     等候資料表建立，即可移至最後的程序。  
+  
+#### <a name="to-add-a-declaration-for-the-mobile-service"></a>若要加入行動服務的宣告  
+  
+1.  返回 Visual Studio。 在 **方案總管**中，展開 [App.xaml]\ (C#) 或 [Application.xaml]\ (Visual Basic) 節點並開啟 **App.xaml.cs** 檔或 **App.xaml.vb** 檔。  
+  
+2.  在程式碼編輯器中，將 `using` 或 **Imports** 指示詞加入檔案的頂端：  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -529,7 +529,7 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  Add the following declaration to the class, replacing *YOUR-SERVICE_HERE* with the name of the URL for your service, and replacing *YOUR-KEY-HERE* with the application key that you copied in the previous procedure:  
+3.  在類別中加入下列宣告，再將 *YOUR-SERVICE_HERE* 取代為您服務的 URL 名稱，並將 *YOUR-KEY-HERE* 取代為您在上一個程序中複製的應用程式金鑰：  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -542,34 +542,34 @@ You can use Windows Presentation Foundation (WPF) to quickly create a modern des
     Public Shared MobileService As New MobileServiceClient("https://YOUR-SERVICE-HERE.azure-mobile.net/", "YOUR-KEY-HERE")  
     ```  
   
-     This code allows the application to access the mobile service running on Microsoft Azure.  
+     此程式碼可讓應用程式存取 Microsoft Azure 上執行的行動服務。  
   
-## <a name="test-the-application"></a>Test the application  
- That's it - you've created a WPF desktop application that accesses an Azure Mobile Service. Now all that's left is to run the application and see it in action.  
+## <a name="test-the-application"></a>測試應用程式  
+ 這樣就行了 - 您已建立可存取 Azure 行動服務的 WPF 桌面應用程式。 現在只需執行應用程式並查看它的運作情況。  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>若要執行應用程式  
   
-1.  On the menu bar, choose **Debug**, **Start Debugging** (or press F5).  
+1.  在功能表列上，選擇 [偵錯] 、[開始偵錯]  或按 F5。  
   
-2.  In the **Insert a TodoItem** textbox, enter `Do something`, and then choose the **Save** button.  
+2.  在 [新增專案]  文字方塊中輸入 `Do something`，然後選擇 [確定]  按鈕。  
   
-3.  Enter `Do something else`, and then choose the **Save** button again.  
+3.  Enter `Do something else`，然後選擇 [確定]  按鈕。  
   
-     Notice that the two entries are added to the **Query and Update Data** list, as shown in the following illustration.  
+     請注意，[查詢及更新資料]  清單會加入兩個項目，如下圖所示。  
   
-     ![The Todo items are added to the list.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
+     ![待辦項目會加入清單。](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  Select the checkbox for the **Do something else** entry in the list.  
+4.  選取清單中 **Do something else** 的項目核取方塊。  
   
-     This calls the **UpdateCheckedTodoItem** method and removes the item from both the list and the database.  
+     這會呼叫 **UpdateCheckedTodoItem** 方法並從清單和資料庫中移除項目。  
   
-## <a name="next-steps"></a>Next Steps  
- You've completed a fairly simplistic example of a WPF desktop application with an Azure backend. Of course, a real application is likely to be much more complex, but the same basic concepts apply. See [WPF in the .NET Framework](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx).  
+## <a name="next-steps"></a>後續步驟  
+ 您已經完成一個含 Azure 後端的 WPF 桌面應用程式範例，且相當簡單。 當然，實際應用程式很可能更複雜，但仍適用相同的基本概念。 請參閱 [.NET Framework 中的 WPF](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)。  
   
- You can make the user interface more appealing by adding color, shapes, graphics, and even animations. See [Creating a UI by using XAML Designer in Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) and [Creating a UI by using Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md). For a comparison between the tools, see [Designing XAML in Visual Studio and Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
+ 您可以加入色彩、圖案、圖形甚至動畫，讓使用者介面更吸引人。 請參閱[在 Visual Studio 中使用 XAML 設計工具建立 UI](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) 和[使用 Blend for Visual Studio 建立 UI](creating-a-ui-by-using-blend-for-visual-studio.md)。 如需工具之間的比較，請參閱[在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)。  
 
- You can connect to existing SQL databases or other sources of data using Azure Mobile Services. See [Mobile Services documentation](http://azure.microsoft.com/en-us/services/app-service/mobile/).  
+ 您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](http://azure.microsoft.com/en-us/services/app-service/mobile/)。  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: My First WPF Desktop Application](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
- [Create Modern Desktop Applications with Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)
+## <a name="see-also"></a>另請參閱  
+ [逐步解說：我的第一個 WPF 桌面應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
+ [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

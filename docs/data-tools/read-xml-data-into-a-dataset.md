@@ -20,8 +20,8 @@ helpviewer_keywords:
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
 caps.latest.revision: 18
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -39,10 +39,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e45b2a2ed21e3a1750a9c90b3efe1eee0e19947e
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: c4903326d087532ea58183ef78e86bc610f22a94
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Read XML data into a dataset
@@ -187,10 +187,10 @@ ADO.NET provides simple methods for working with XML data. In this walkthrough, 
     |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
-## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Create the dataset thatreceives the XML data  
+## <a name="create-the-dataset-that-receives-the-xml-data"></a>Create the dataset that receives the XML data  
  In this step, you create a new dataset named `authors`. For more information about datasets, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
   
-#### <a name="to-create-a-new-dataset-that--receives-the-xml-data"></a>To create a new dataset that  receives the XML data  
+#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>To create a new dataset that receives the XML data  
   
 1.  In **Solution Explorer**, select the source file for **Form1**, and then select the **View Designer** button on the **Solution Explorer** toolbar.  
   

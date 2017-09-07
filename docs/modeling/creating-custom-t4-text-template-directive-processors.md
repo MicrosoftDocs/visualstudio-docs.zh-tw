@@ -31,7 +31,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: a8f56201528b15da04c5861be5c9afdd9a9b379e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>建立自訂 T4 文字範本指示詞處理器

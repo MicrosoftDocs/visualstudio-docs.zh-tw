@@ -27,18 +27,16 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 95981f9f5ea9f80526b347544cd5d029dc8d41a0
+ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
+ms.openlocfilehash: a4a5a571ede6554f2e601e571568fc17bc101943
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/02/2017
 
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model Tools in Visual Studio
 Entity Framework is an object-relational mapping technology that enables .NET developers to work with relational data by using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write. Entity Framework is the recommended object-relational mapping (ORM) modeling technology for new .NET applications.  
   
- As of March 2016, the most current released version is [Entity Framework 6](https://msdn.microsoft.com/en-us/data/ef) . [Entity Framework 7](https://docs.efproject.net/en/latest/) is in pre-release.  
-  
- [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools are designed to help you build [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] applications. The complete documentation for [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools is here: [Entity Framework](https://msdn.microsoft.com/en-us/data/jj590134).  
+ [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools are designed to help you build Entity Framework (EF) applications. The complete documentation for Entity Framework is here: [EF Core and EF 6](https://docs.microsoft.com/en-us/ef/).  
   
  With [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, you can create a *conceptual model* from an existing database and then graphically visualize and edit your conceptual model. Or, you can graphically create a conceptual model first, and then generate a database that supports your model. In either case, you can automatically update your model when the underlying database changes and automatically generate object-layer code for your application. Database generation and object-layer code generation are customizable.  
   

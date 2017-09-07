@@ -19,8 +19,8 @@ helpviewer_keywords:
 - data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 32
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -38,10 +38,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3c2de3fdb2e24ed1ed7c07bdc9f7e69be6169f0d
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 957c8c718ab1de8c3b6431d9e9bb87590514d4bb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Fill datasets by using TableAdapters
@@ -81,7 +81,7 @@ A TableAdapter component  fills a dataset with data from the database, based on 
 ## <a name="tableadapter-queries"></a>TableAdapter queries  
  ![TableAdapter with multiple queries](../data-tools/media/tableadapter.gif "TableAdapter")  
   
- TableAdapters can contain multiple queries to fill their associated data tables. You can define as many queries for a TableAdapter as your application requires, as long as each query returns data that conforms to the same schema as its associated data table. This capability enable a TableAdapter to load different results based on differing criteria.  
+ TableAdapters can contain multiple queries to fill their associated data tables. You can define as many queries for a TableAdapter as your application requires, as long as each query returns data that conforms to the same schema as its associated data table. This capability enables a TableAdapter to load different results based on differing criteria.  
   
  For example, if your application contains a table with customer names, you can create a query that fills the table with every customer name that begins with a certain letter, and another  that fills the table with all customers that are located in the same state. To fill a `Customers` table with customers in a given state, you can create a `FillByState` query that takes a parameter for the state value as follows: `SELECT * FROM Customers WHERE State = @State`. You run the query by calling the `FillByState` method and passing in the parameter value like this: `CustomerTableAdapter.FillByState("WA")`.  
   
@@ -91,7 +91,7 @@ A TableAdapter component  fills a dataset with data from the database, based on 
  By default, every time you run a query to fill a TableAdapter's data table, the existing data is cleared, and only the results of the query are loaded into the table. Set the TableAdapter's `ClearBeforeFill` property to `false` if you want to add or merge the data that's returned from a query to the existing data in a data table. Regardless of whether you clear the data, you need to explicitly send updates back to the database, if you want to persist them. So remember to save any changes  to the data in the table before running another query that fills the table. For more information, see [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md).  
   
 ## <a name="tableadapter-inheritance"></a>TableAdapter inheritance  
- TableAdapters extend the functionality of standard data adapters by encapsulating a configured <xref:System.Data.Common.DataAdapter> class?qualifyHint=False&autoUpgrade=True. By default, the TableAdapter inherits from the <xref:System.ComponentModel.Component> class and can't be cast to the <xref:System.Data.Common.DataAdapter> class. Casting a TableAdapter to the <xref:System.Data.Common.DataAdapter> class results in a <xref:System.InvalidCastException> error?qualifyHint=False&autoUpgrade=True. To change the base class of a TableAdapter, you can type a class that derives from <xref:System.ComponentModel.Component> in the **Base Class** property of the TableAdapter in the **Dataset Designer**.  
+ TableAdapters extend the functionality of standard data adapters by encapsulating a configured <xref:System.Data.Common.DataAdapter> class. By default, the TableAdapter inherits from the <xref:System.ComponentModel.Component> class and can't be cast to the <xref:System.Data.Common.DataAdapter> class. Casting a TableAdapter to the <xref:System.Data.Common.DataAdapter> class results in an <xref:System.InvalidCastException> error. To change the base class of a TableAdapter, you can specify a class that derives from <xref:System.ComponentModel.Component> in the **Base Class** property of the TableAdapter in the **Dataset Designer**.  
   
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter methods and properties  
  The TableAdapter class is not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. This means you can't look it up in the documentation or the **Object Browser**. It's created at design time when you use one of the wizards mentioned earlier. The name that's assigned to a TableAdapter when you create it is based on the name of the table you are working with. For example, when you create a TableAdapter based on a table in a database named `Orders`, the TableAdapter is named `OrdersTableAdapter`. The class name of the TableAdapter can be changed using the **Name** property in the **Dataset Designer**.  
@@ -120,7 +120,7 @@ A TableAdapter component  fills a dataset with data from the database, based on 
  If you don't want to create these direct methods, set the TableAdapter's **GenerateDbDirectMethods** property to `false` (in the **Properties** window). Additional queries that are added to the TableAdapter are standalone queries — they don't generate these methods.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter support for nullable types  
- TableAdapters support nullable types `Nullable(Of T)` and `T?`. For more information about nullable types in Visual Basic, see [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types.md). For more information about nullable types in C#, see [Using Nullable Types](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).  
+ TableAdapters support nullable types `Nullable(Of T)` and `T?`. For more information about nullable types in Visual Basic, see [Nullable Value Types](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). For more information about nullable types in C#, see [Using Nullable Types](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).  
   
 <a name="tableadaptermanager-reference"></a>  
   
@@ -141,7 +141,7 @@ A TableAdapter component  fills a dataset with data from the database, based on 
 
 
 ## <a name="security"></a>Security  
- When you use data commands with a `CommandType` property set to <xref:System.Data.CommandType>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.  
+ When you use data commands with a CommandType property set to <xref:System.Data.CommandType.Text>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. A best practice is to always use parameterized queries or stored procedures when possible.  
   
 ## <a name="see-also"></a>See Also  
  [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

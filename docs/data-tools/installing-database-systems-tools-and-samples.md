@@ -11,8 +11,8 @@ helpviewer_keywords:
 - databases, samples
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 caps.latest.revision: 28
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -30,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 3fd2d3ccf499aff5f0a31eb4bea2949fd2bee897
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 5490c95744c8f7af8fd445d70fd6e98c78dc77d5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="installing-database-systems-tools-and-samples"></a>Installing database systems, tools, and samples

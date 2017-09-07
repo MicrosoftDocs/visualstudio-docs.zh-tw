@@ -1,99 +1,116 @@
 ---
-title: "設定服務參考對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "msvse_wcf.dlg.ConfigureServiceReference"
-helpviewer_keywords: 
-  - "WCF 服務, [設定服務參考] 對話方塊"
-  - "服務參考 [Visual Studio], 設定行為"
-  - "設定服務參考對話方塊"
+title: Configure Service Reference Dialog Box | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- msvse_wcf.dlg.ConfigureServiceReference
+helpviewer_keywords:
+- WCF services, Configure Service Reference dialog box
+- service references [Visual Studio], configuring behavior
+- Configure Service Reference dialog box
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 caps.latest.revision: 16
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: a4aaa6e00355cee8ea7700d9114d2c174700ba72
+ms.contentlocale: zh-tw
+ms.lasthandoff: 09/07/2017
+
 ---
-# 設定服務參考對話方塊
-\[設定服務參考\] 對話方塊可讓您設定 [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 服務的行為。  
+# <a name="configure-service-reference-dialog-box"></a>Configure Service Reference Dialog Box
+The **Configure Service Reference** dialog box enables you to configure the behavior of [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] services.  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 \[說明\] 中描述的不同。  若要變更設定，請從 \[工具\] 功能表中選擇 \[匯入和匯出設定\]。  如需詳細資訊，請參閱 [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose Import and Export Settings on the Tools menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
- 若要存取 \[設定服務參考\] 對話方塊，請以滑鼠右鍵按一下 \[方案總管\] 中的服務參考，然後選擇 \[設定服務參考\]。  您也可以按一下[Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)中的 \[進階\]  按鈕來存取這個對話方塊。  
+ To access the **Configure Service Reference** dialog box, right-click a service reference in **Solution Explorer** and choose **Configure Service Reference**. You can also access the dialog box by clicking the **Advanced** button in the **Add Service Reference Dialog Box**.  
   
-## 工作清單  
+## <a name="task-list"></a>Task List  
   
--   若要變更裝載 WCF 服務的位址，請在 \[位址\] 欄位中輸入新位址。  
+-   To change the address where a WCF service is hosted, enter the new address in the **Address** field.  
   
--   若要變更 WCF 用戶端中的類別存取層級，請在 \[產生的類別的存取層級\] 清單中選取存取層級關鍵字。  
+-   To change the access level for classes in a WCF client, select an access-level keyword in the **Access level for generated classes** list.  
   
--   若要以非同步方式呼叫 WCF 服務的方法，請選取 \[產生非同步作業\] 核取方塊。  
+-   To call the methods of a WCF service asynchronously, select the **Generate asynchronous operations** check box.  
   
--   若要產生 WCF 用戶端的訊息合約類型，請選取 \[總是產生訊息合約\] 核取方塊。  
+-   To generate message contract types in a WCF client, select the **Always generate message contracts** check box.  
   
--   若要指定 WCF 用戶端的清單或字典集合類型，請從 \[集合類型\] 和 \[字典集合類型\] 清單中選取類型。  
+-   To specify list or dictionary collection types for a WCF client, select the types from the **Collection type** and **Dictionary collection type** lists.  
   
--   若要停用類型共用，請清除 \[重複使用參考組件中的類型\] 核取方塊。  若要針對參考組件的子集啟用類型共用，請選取 \[重複使用參考組件中的類型\] 核取方塊，然後選取 \[重複使用指定的參考組件中的類型\]，再從 \[參考組件清單\] 中選取所需的參考。  
+-   To disable type sharing, clear the **Reuse types in referenced assemblies** check box. To enable type sharing for a subset of referenced assemblies, select the **Reuse types in referenced assemblies** check box, select **Reuse types in specified referenced assemblies**, and select the desired references in the **Referenced assemblies list**.  
   
-## UIElement 清單  
- **地址**  
- 用於更新網址，服務參考會在這個網址查詢服務。  例如在開發期間，可能會在開發伺服器上裝載服務，稍後再將服務移至實際伺服器，並強迫變更位址。  
-  
-> [!NOTE]
->  從 [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md) 顯示 \[設定服務參考\] 對話方塊時，無法使用 \[位址\] 項目。  
-  
- **產生的類別的存取層級**  
- 判斷 WCF 用戶端類別的程式碼存取層級。  
+## <a name="uielement-list"></a>UIElement List  
+ **Address**  
+ Used to update the Web address where a service reference looks for a service. For example, during development the service may be hosted on a development server then later moved to a production server, necessitating an address change.  
   
 > [!NOTE]
->  針對網站專案，這個選項一律會設為 `Public`，而且無法變更。  如需詳細資訊，請參閱[Troubleshooting Service References](../data-tools/troubleshooting-service-references.md)。  
+>  The Address element is not available when the **Configure Service Reference** dialog box is displayed from the **Add Service Reference Dialog Box**.  
   
- **產生非同步作業**  
- 判斷將以同步方式 \(預設\) 或非同步方式呼叫 WCF 服務方法。  
-  
- **產生以工作為基礎的作業**  
- 撰寫非同步程式碼時，這個選項可讓您利用 .Net 4 所引進的工作平行程式庫 \(TPL\)。  請參閱[工作平行程式庫 \(TPL\)](http://msdn.microsoft.com/library/dd460717.aspx)。  
-  
- **總是產生訊息合約**  
- 判斷是否會產生 WCF 用戶端的訊息合約類型。  如需訊息合約的詳細資訊，請參閱[使用訊息合約](../Topic/Using%20Message%20Contracts.md)。  
-  
- **集合類型**  
- 指定 WCF 用戶端的清單集合類型。  預設類型為 <xref:System.Array>。  
-  
- **字典集合類型**  
- 指定 WCF 用戶端的字典集合類型。  預設類型為 <xref:System.Collections.Generic.Dictionary%602>。  
-  
- **重複使用參考組件中的類型**  
- 判斷在加入或更新服務時，WCF 用戶端是否會嘗試重複使用參考組件中已存在的類型，而不是產生新類型。  預設會核取這個選項。  
-  
- **重複使用所有參考組件中的類型**  
- 選取時，在可能的情況下會重複使用 \[參考組件清單\] 中的所有類型。  根據預設，這個選項是選取的。  
-  
- **重複使用指定的參考組件中的類型**  
- 選取時，只會重複使用 \[參考組件清單\] 中選取的類型。  
-  
- **參考組件清單**  
- 包含專案或網站的參考組件清單。  選取 \[重複使用指定的參考組件中的類型\] 時，可以選取或清除個別組件。  
-  
- **加入 Web 參考**  
- 顯示 [NIB: Add Web Reference Dialog Box](http://msdn.microsoft.com/zh-tw/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)。  
+ **Access level for generated classes**  
+ Determines the code access level for WCF client classes.  
   
 > [!NOTE]
->  只有針對以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 版為目標的專案，才應使用這個選項。  
+>  For Website projects, this option is always set to `Public` and cannot be changed. For more information, see [Troubleshooting Service References](../data-tools/troubleshooting-service-references.md).  
+  
+ **Generate asynchronous operations**  
+ Determines whether WCF service methods will be called synchronously (the default) or asynchronously.  
+  
+ **Generate task-based operations**  
+ When writing async code, this option allows you to take advantage of the Task Parallel Library (TPL) that was introduced with .Net 4. See [Task Parallel Library (TPL)](http://msdn.microsoft.com/library/dd460717.aspx).  
+  
+ **Always generate message contracts**  
+ Determines whether message contract types will be generated for a WCF client. For more information about message contracts, see [Using Message Contracts](/dotnet/framework/wcf/feature-details/using-message-contracts).  
+  
+ **Collection type**  
+ Specifies the list collection type for a WCF client. The default type is <xref:System.Array>.  
+  
+ **Dictionary collection type**  
+ Specifies the dictionary collection type for a WCF client. The default type is <xref:System.Collections.Generic.Dictionary%602>.  
+  
+ **Reuse types in referenced assemblies**  
+ Determines whether a WCF client will try to reuse that already exist in referenced assemblies instead of generating new types when a service is added or updated. By default, this option is checked.  
+  
+ **Reuse types in all referenced assemblies**  
+ When selected, all types in the **Referenced assemblies list** will be reused if possible. By default, this option is selected.  
+  
+ **Reuse types in specified referenced assemblies**  
+ When selected, only the selected types in the **Referenced assemblies list** will be reused.  
+  
+ **Referenced assemblies list**  
+ Contains a list of referenced assemblies for the project or Web site. When **Reuse types in specified referenced assemblies** is selected, individual assemblies can be selected or cleared.  
+  
+ **Add Web Reference**  
+ Displays the [NIB: Add Web Reference Dialog Box](http://msdn.microsoft.com/en-us/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
->  只有從 [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md) 顯示 \[設定服務參考\] 對話方塊時，才能使用 \[加入 Web 參考\] 按鈕。  
+>  This option should be used only for projects that target version 2.0 of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].  
   
-## 請參閱  
- [Add Service Reference Dialog Box](../Topic/Add%20Service%20Reference%20Dialog%20Box.md)   
- [How to: Add, Update, or Remove a Service Reference](../Topic/How%20to:%20Add,%20Update,%20or%20Remove%20a%20Service%20Reference.md)   
- [How to: Add a Reference to a Web Service](../Topic/How%20to:%20Add%20a%20Reference%20to%20a%20Web%20Service.md)   
- [Windows Communication Foundation 服務和 WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)   
- [耗用 ASMX 和 WCF 服務範例](http://msdn.microsoft.com/zh-tw/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)
+> [!NOTE]
+>  The **Add Web Reference** button is available only when the **Configure Service Reference** dialog box is displayed from the **Add Service Reference Dialog Box**.  
+  
+## <a name="see-also"></a>See Also  
+
+ [How to: Add a Reference to a Web Service](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
+ [Windows Communication Foundation Services and WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

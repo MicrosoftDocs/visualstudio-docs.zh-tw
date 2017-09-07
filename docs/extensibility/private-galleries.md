@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 8ce054bf6149f0224785f4c3cd9274e86dc09d04
 ms.openlocfilehash: e4c49a19a9befad5d90b9526842786f49af0851b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="private-galleries"></a>Private Galleries

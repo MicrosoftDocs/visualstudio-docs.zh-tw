@@ -16,8 +16,8 @@ helpviewer_keywords:
 - Web services, connecting
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 caps.latest.revision: 32
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 1d5ac117c835addd202e30a8ad4e1b9692202558
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 7b1edf226b73bd5c705e826d586a844d93ee91ea
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>How to: Connect to Data in a Service

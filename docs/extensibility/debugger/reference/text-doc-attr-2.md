@@ -1,5 +1,5 @@
 ---
-title: TEXT_DOC_ATTR_2 | Microsoft Docs
+title: "TEXT_DOC_ATTR_2 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 396ca7cf5d18883aca2b2a3fa9eec8a133dc7a8f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
-Describes the attributes of a document.  
+描述文件的屬性。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef DWORD TEXT_DOC_ATTR_2;  
@@ -51,24 +51,24 @@ const TEXT_DOC_ATTR_2 TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  TEXT_DOC_ATTR_READONLY_2  
- Indicates that the document is read-only.  
+ 表示文件是唯讀的。  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  This value is not actually defined in the assembly for C#. Instead, you must copy the definition to your source file.  
+>  此值是不實際 C# 組件中定義。 相反地，您必須將定義複製到原始程式檔。  
   
- Passed as an argument to the [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) method.  
+ 做為引數傳遞[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)

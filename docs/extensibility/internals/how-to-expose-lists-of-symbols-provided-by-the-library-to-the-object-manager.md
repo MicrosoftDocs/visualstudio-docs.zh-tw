@@ -1,5 +1,5 @@
 ---
-title: Expose Lists of Symbols Provided to the Object Manager | Microsoft Docs
+title: "公開的物件管理員來提供的符號清單 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -36,24 +36,24 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 502fbce9d9fbd187e0cccb0b613d470a23f09e10
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>How to: Expose Lists of Symbols Provided by the Library to the Object Manager
-The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** and **Find Symbol Results**, pass requests for new data to the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager. The object manager finds the appropriate libraries and requests new lists of symbols. The libraries respond by providing requested data to the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager through the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. The [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] object manager calls the methods in <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface to obtain the data and uses it to populate or update the views of the symbol-browsing tools.  
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何： 公開清單的程式庫提供對物件管理員中的符號
+符號瀏覽工具，**類別檢視**，**物件瀏覽器**，**呼叫瀏覽器**和**尋找符號結果**，傳遞至新資料的要求[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員。 物件管理員尋找適當的程式庫，並要求新的符號清單。 藉由提供要求的資料，以回應文件庫[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員透過<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面來取得資料，並使用它來擴展或更新符號瀏覽工具的檢視。  
   
- A library may get requests for data when the tool is invoked, the node is expanded, or the view is refreshed. When a symbol-browsing tool is invoked for the first time, the object manager requests the library to provide the top-level list. When the user expands a list node, the library provides a list of children under that node. Every object manager inquiry contains an index of the item of interest. To display a new list, the object manager must determine how many items are in the list, the type of the items, their names, accessibility, and other properties.  
+ 此工具會叫用、 展開節點，或重新整理檢視時，程式庫可能會收到資料的要求。 第一次叫用的符號瀏覽工具時，物件管理員要求的程式庫，以提供最上層的清單。 當使用者展開清單節點時，程式庫會提供該節點下的子系清單。 每個物件管理員查詢包含感興趣項目的索引。 若要顯示新的清單，物件管理員必須決定多少項目在清單中，項目，其名稱、 存取範圍，以及其他屬性的類型。  
   
 > [!NOTE]
->  The following managed code examples demonstrate how to provide lists of symbols through implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. The object manager calls the methods in this interface and uses the obtained data to populate or update the symbol-browsing tools.  
+>  下列的 managed 程式碼範例示範如何提供的符號，透過實作清單<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2>介面。 物件管理員這個介面中呼叫的方法，並使用取得的資料填入或更新的符號瀏覽工具。  
 >   
->  For native code symbol provider implementation, use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.  
+>  如需原生程式碼的符號提供者實作，使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2>介面。  
   
-## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Providing Lists of Symbols to the Object Manager  
+## <a name="providing-lists-of-symbols-to-the-object-manager"></a>提供對物件管理員中的符號清單  
   
-#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>To provide lists of symbols to the object manager  
+#### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>物件管理員提供的符號清單  
   
-1.  Get the number of items in the list of symbols by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> method. The following example demonstrates how the object manager obtains the information on the number of items in the list.  
+1.  取得的符號清單中的項目數目，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A>方法。 下列範例會示範如何 object manager 取得資訊清單中的項目數。  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -75,7 +75,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-2.  Get information about the categories and the attributes of a given list item by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> method. The item categories are specified in the <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> enumeration. The following example demonstrates how the object manager obtains attributes of items for a given category.  
+2.  取得資訊的類別，以及指定的清單項目的屬性，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A>方法。 中指定的項目分類<xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY>列舉型別。 下列範例會示範如何物件管理員取得的項目指定類別的屬性。  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -170,7 +170,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-3.  Get the text representation of a given list item by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> method. The following example demonstrates how to obtain a full name of a given item.  
+3.  取得指定的清單項目的文字表示，藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A>方法。 下列範例示範如何取得指定項目的完整名稱。  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -188,7 +188,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-4.  Get the icon information for a given list item by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> method. The icon represents the type (class, method, and so on), and accessibility (private, public, and so on) of a list item. The following example demonstrates how to obtain the icon information based on a given item attributes.  
+4.  取得指定的清單項目的圖示資訊藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A>方法。 圖示代表的類型 （類別、 方法等等） 和存取範圍 （私人、 公用，等等） 的清單項目。 下列範例示範如何取得根據指定的項目屬性的圖示資訊。  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -270,7 +270,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-5.  Get the information on whether a given list item is expandable by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> method. The following example demonstrates how to obtain the information on whether a given item can be expanded.  
+5.  取得有關指定的清單項目是否可展開藉由實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A>方法。 下列範例會示範如何取得在指定的項目是否可以展開的資訊。  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -297,7 +297,7 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-6.  Get a child list of symbols of a given list item by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> method. The following example demonstrates how to obtain a child list of symbols of a given item for **Call** or **Callers** graphs.  
+6.  藉由實作取得子系清單的指定的清單項目符號<xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A>方法。 下列範例示範如何取得子系清單的指定項目符號**呼叫**或**呼叫端**圖形。  
   
     ```vb  
     ' Call graph list.  
@@ -484,8 +484,8 @@ The symbol-browsing tools, **Class View**, **Object Browser**, **Call Browser** 
   
     ```  
   
-## <a name="see-also"></a>See Also  
- [Supporting Symbol-Browsing Tools](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [How to: Register a Library with the Object Manager](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [How to: Identify Symbols in a Library](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
- [Legacy Language Service Extensibility](../../extensibility/internals/legacy-language-service-extensibility.md)
+## <a name="see-also"></a>另請參閱  
+ [支援的符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [如何： 註冊物件管理員與程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何： 識別文件庫中的符號](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)   
+ [舊版語言服務的擴充性](../../extensibility/internals/legacy-language-service-extensibility.md)

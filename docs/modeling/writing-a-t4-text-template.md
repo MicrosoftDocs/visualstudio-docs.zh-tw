@@ -1,5 +1,5 @@
 ---
-title: Writing a T4 Text Template | Microsoft Docs
+title: "撰寫 T4 文字範本 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,59 +33,59 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 97a9b5ce0237d9a06289e52e6db86ca33b901fc6
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="writing-a-t4-text-template"></a>Writing a T4 Text Template
-A text template contains the text that will be generated from it. For example, a template that creates a web page will contain "\<html>..." and all the other standard parts of an HTML page. Inserted into the template are *control blocks*, which are fragments of program code. Control blocks provide varying values and allow parts of the text to be conditional and repeated.  
+# <a name="writing-a-t4-text-template"></a>撰寫 T4 文字範本
+文字範本包含將透過它產生的文字。 例如，建立網頁的範本將會包含"\<html > …"以及所有其他標準部分的 HTML 網頁。 插入至範本是*控制區塊*，其為程式碼片段。 控制區塊提供不同的值，並允許文字的各部分成為條件式和重複。  
   
- This structure makes a template easy to develop, because you can start with a prototype of the generated file, and incrementally insert control blocks that vary the result.  
+ 此結構讓範本容易開發，因為您可以從所產生檔案的原型開始，並以累加方式插入讓結果不同的控制區塊。  
   
- Text templates are composed of the following parts:  
+ 文字範本是由下列部分組成：  
   
--   **Directives** - elements that control how the template is processed.  
+-   **指示詞**-控制範本處理的方式的項目。  
   
--   **Text blocks** - content that is copied directly to the output.  
+-   **文字區塊**-內容，會直接複製到輸出。  
   
--   **Control blocks** - program code that inserts variable values into the text, and controls conditional or repeated parts of the text.  
+-   **控制區塊**-將變數值插入至文字並控制文字條件式或重複部分程式碼。  
   
- To try the examples in this topic, copy them into a template file as described in [Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md). After editing the template file, save it, and then inspect the output **.txt** file.  
+ 若要執行本主題中的範例，將其複製到範本檔中所述[設計階段透過使用 T4 文字範本的程式碼產生](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 編輯範本檔案之後, 加以儲存，並接著檢查輸出**.txt**檔案。  
   
-## <a name="directives"></a>Directives  
- Text template directives provide general instructions to the text templating engine about how to generate the transformation code and the output file.  
+## <a name="directives"></a>指示詞  
+ 文字範本指示詞提供有關如何產生轉換程式碼和輸出檔案之文字範本引擎的一般指示。  
   
- For example, the following directive specifies that the output file should have a .txt extension:  
+ 例如，下列指示詞指定輸出檔案的副檔名應該為 .txt：  
   
 ```  
   
 <#@ output extension=".txt" #>  
 ```  
   
- For more information about directives, see [T4 Text Template Directives](../modeling/t4-text-template-directives.md).  
+ 如需詳細指示詞的詳細資訊，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。  
   
-## <a name="text-blocks"></a>Text blocks  
- A text block inserts text directly into the output file. There is no special formatting for text blocks. For example, the following text template will produce a text file that contains the word "Hello":  
+## <a name="text-blocks"></a>文字區塊  
+ 文字區塊會將文字直接插入至輸出檔案。 文字區塊沒有特殊格式。 例如，下列文字範本將會產生含有 "Hello" 這個字的文字檔：  
   
 ```  
 <#@ output extension=".txt" #>  
 Hello  
 ```  
   
-## <a name="control-blocks"></a>Control blocks  
- Control blocks are sections of program code that are used to transform the templates. The default language is C#, but to use [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], you can write this directive at the beginning of the file:  
+## <a name="control-blocks"></a>控制區塊  
+ 控制區塊是用來轉換範本的程式碼區段。 預設語言是 C#，但是，若要使用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]，您可以在檔案開頭撰寫此指示詞：  
   
 ```  
 <#@ template language="VB" #>  
 ```  
   
- The language in which you write the code in the control blocks is unrelated to the language of the text that is generated.  
+ 您用來在控制區塊中撰寫程式碼的語言，與所產生文字的語言無關。  
   
-### <a name="standard-control-blocks"></a>Standard control blocks  
- A standard control block is a section of program code that generates part of the output file.  
+### <a name="standard-control-blocks"></a>標準控制區塊  
+ 標準控制區塊是產生輸出檔案部分的程式碼區段。  
   
- You can mix any number of text blocks and standard control blocks in a template file. However, you cannot place one control block inside another. Each standard control block is delimited by the symbols `<# ... #>`.  
+ 您可以在範本檔中混合使用任意數目的文字區塊和標準控制區塊。 不過，您不可以將某個控制區塊放入另一個控制區塊內。 每個標準控制區塊都是使用符號 `<# ... #>` 隔開。  
   
- For example, the following control block and text block cause the output file to contain the line "0, 1, 2, 3, 4 Hello!":  
+ 例如，下列控制區塊和文字區塊都會讓輸出檔案包含 "0, 1, 2, 3, 4 Hello!" 這行：  
   
 ```  
   
@@ -98,7 +98,7 @@ Hello
 #> Hello!  
 ```  
   
- Instead of using explicit `Write()` statements, you can interleave text and code. The following example prints "Hello!" four times:  
+ 您可以交錯使用文字和程式碼，而不要使用明確 `Write()` 陳述式。 下列範例會列印"Hello ！" 四次：  
   
 ```  
 <#  
@@ -111,25 +111,25 @@ Hello!
 #>  
 ```  
   
- You can insert a text block wherever a `Write();` statement would be allowed in the code.  
+ 只要程式碼中允許 `Write();` 陳述式的位置，就可以插入文字區塊。  
   
 > [!NOTE]
->  When you embed a text block within a compound statement such as a loop or conditional, always use braces {...} to contain the text block.  
+>  當您內嵌的文字區塊，例如迴圈或條件式複合陳述式內時，一律使用大括號 {...} 若要包含在文字區塊。  
   
-### <a name="expression-control-blocks"></a>Expression control blocks  
- An expression control block evaluates an expression and converts it to a string. This is inserted into the output file.  
+### <a name="expression-control-blocks"></a>運算式控制區塊  
+ 運算式控制區塊會評估運算式，並將它轉換為字串。 這會插入至輸出檔案。  
   
- Expression control blocks are delimited by the symbols `<#= ... #>`  
+ 運算式控制區塊是使用符號 `<#= ... #>` 隔開。  
   
- For example, the following control block causes the output file to contain "5":  
+ 例如，下列控制區塊會讓輸出檔案包含 "5"：  
   
 ```  
 <#= 2 + 3 #>  
 ```  
   
- Notice that the opening symbol has three characters "<#=".  
+ 請注意，開啟符號有三個字元 "<#="。  
   
- The expression can include any variable that is in scope. For example, this block prints lines with numbers:  
+ 運算式可以包括範圍內的任何變數。 例如，此區塊會列印含有數字的行：  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -143,12 +143,12 @@ This is hello number <#= i+1 #>: Hello!
 #>  
 ```  
   
-### <a name="class-feature-control-blocks"></a>Class feature control blocks  
- A class feature control block defines properties, methods, or any other code that should not be included in the main transform. Class feature blocks are frequently used for helper functions.  Typically, class feature blocks are placed in separate files so that they can be [included](#Include) by more than one text template.  
+### <a name="class-feature-control-blocks"></a>類別功能控制區塊  
+ 類別功能控制區塊定義屬性、方法，或不應該併入主要轉換的任何其他程式碼。 類別功能區塊經常用於協助程式函式。  通常，類別功能區塊會放在不同的檔案，讓它們可以是[包含](#Include)由多個文字範本。  
   
- Class feature control blocks are delimited by the symbols `<#+ ... #>`  
+ 類別功能控制區塊是使用符號 `<#+ ... #>` 隔開。  
   
- For example, the following template file declares and uses a method:  
+ 例如，下列範本檔會宣告和使用方法：  
   
 ```  
 <#@ output extension=".txt" #>  
@@ -170,12 +170,12 @@ private int Square(int i)
 #>  
 ```  
   
- Class features must be placed at the end of the file in which they are written. However, you can `<#@include#>` a file that contains a class feature, even if the `include` directive is followed by standard blocks and text.  
+ 類別功能必須放在於其中寫入它們的檔案結尾。 不過，即使 `<#@include#>` 指示詞後面有標準區塊和文字，您還是可以併入 (`include`) 含有類別功能的檔案。  
   
- For more information about control blocks, see [Text Template Control Blocks](../modeling/text-template-control-blocks.md).  
+ 如需控制區塊的詳細資訊，請參閱[文字範本控制區塊](../modeling/text-template-control-blocks.md)。  
   
-### <a name="class-feature-blocks-can-contain-text-blocks"></a>Class feature blocks can contain text blocks  
- You can write a method that generates text. For example:  
+### <a name="class-feature-blocks-can-contain-text-blocks"></a>類別功能區塊可以包含文字區塊。  
+ 您可以撰寫可產生文字的方法。 例如：  
   
 ```  
 List of Squares:  
@@ -194,72 +194,72 @@ private void WriteSquareLine(int i)
 #>  
 ```  
   
- It is particularly useful to place a method that generates text in a separate file that can be included by more than one template.  
+ 特別適用於將產生文字的方法放在多個範本可併入的不同檔案中。  
   
-## <a name="using-external-definitions"></a>Using external definitions  
+## <a name="using-external-definitions"></a>使用外部定義  
   
-### <a name="assemblies"></a>Assemblies  
- The code blocks of your template can use types that are defined the most frequently used .NET assemblies such as System.dll. In addition, you can reference other .NET assemblies or your own assemblies. You can provide a pathname, or the strong name of an assembly:  
+### <a name="assemblies"></a>組件  
+ 您範本的程式碼區塊可以使用最常用 .NET 組件 (如 System.dll) 中所定義的類型。 此外，您還可以參考其他 .NET 組件或您專屬的組件。 您可以提供路徑名稱，或組件的強式名稱：  
   
 ```  
 <#@ assembly name="System.Xml" #>  
 ```  
   
- You should use absolute path names, or use standard macro names in the path name. For example:  
+ 您應該使用絕對路徑名稱，或在路徑名稱中使用標準巨集名稱。 例如:   
   
 ```  
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>  
 ```  
   
- The assembly directive has no effect in a [preprocessed text template](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+ 組件指示詞沒有任何作用[前置處理過的文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
- For more information, see [T4 Assembly Directive](../modeling/t4-assembly-directive.md).  
+ 如需詳細資訊，請參閱[T4 組件指示詞](../modeling/t4-assembly-directive.md)。  
   
-### <a name="namespaces"></a>Namespaces  
- The import directive is the same as the `using` clause in C# or the `imports` clause in Visual Basic. It allows you to refer to types in your code without using a fully qualified name:  
+### <a name="namespaces"></a>命名空間  
+ import 指示詞與 C# 中的 `using` 子句或 Visual Basic 中的 `imports` 子句相同。 它可讓您參考您程式碼中的類型，而不需要使用完整名稱：  
   
 ```  
 <#@ import namespace="System.Xml" #>  
 ```  
   
- You can use as many `assembly` and `import` directives as you want. You must place them before text and control blocks.  
+ 您可以使用所想要數目的 `assembly` 和 `import` 指示詞。 您必須將它們放在文字和控制區塊的前面。  
   
- For more information, see [T4 Import Directive](../modeling/t4-import-directive.md).  
+ 如需詳細資訊，請參閱[T4 匯入指示詞](../modeling/t4-import-directive.md)。  
   
-###  <a name="Include"></a> Including code and text  
- The `include` directive inserts text from another template file. For example, this directive inserts the content of `test.txt`.  
+###  <a name="Include"></a>包括程式碼和文字  
+ `include` 指示詞會插入另一個範本檔中的文字。 例如，此指示詞會插入 `test.txt` 的內容。  
   
  `<#@ include file="c:\test.txt" #>`  
   
- The included content is processed almost as if it were part of the including text template. However, you can include a file that contains a class feature block `<#+...#>` even if the include directive is followed by ordinary text and standard control blocks.  
+ 處理所加入的內容時，幾乎可以將此內容當做是進行加入之文字範本的一部分來處理。 不過，即使 include 指示詞後面有一般文字和標準控制區塊，您還是可以包括含有類別功能區塊 `<#+...#>` 的檔案。  
   
- For more information, see [T4 Include Directive](../modeling/t4-include-directive.md).  
+ 如需詳細資訊，請參閱[T4 包含指示詞](../modeling/t4-include-directive.md)。  
   
-### <a name="utility-methods"></a>Utility methods  
- There are several methods such as `Write()` that are always available to you in a control block. They include methods for helping you indent the output, and for reporting errors.  
+### <a name="utility-methods"></a>公用程式方法  
+ 在控制區塊中，您一律可以使用數種方法 (如 `Write()`)。 它們包括的方法可以協助您縮排輸出，以及報告錯誤。  
   
- You can also write your own set of utility methods.  
+ 您也可以撰寫一組專屬公用程式方法。  
   
- For more information, see [Text Template Utility Methods](../modeling/text-template-utility-methods.md).  
+ 如需詳細資訊，請參閱[文字範本公用程式方法](../modeling/text-template-utility-methods.md)。  
   
-## <a name="transforming-data-and-models"></a>Transforming Data and Models  
- The most useful application for a text template is to generate material based on the content of a source such as a model, database, or data file. Your template extracts and reformats the data. A collection of templates can transform such a source into multiple files.  
+## <a name="transforming-data-and-models"></a>轉換資料和模型  
+ 文字範本的最有用應用是根據來源內容 (如模型、資料庫或資料檔案) 來產生資料。 您的範本會擷取和重新格式化資料。 範本集合可以將這類來源轉換為多個檔案。  
   
- There are several approaches to reading the source file.  
+ 有數種方式可以讀取原始程式檔。  
   
- **Read a file in the text template**. This is simplest way to get data into the template:  
+ **讀取文字範本中的檔案**。 這是取得資料以放入範本的最簡單方式：  
   
 ```  
 <#@ import namespace="System.IO" #>  
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...  
 ```  
   
- **Load a file as a navigable model**. A more powerful method is to read the data as a model, which your text template code can navigate. For example, you can load an XML file and navigate it with XPath expressions. You could also use [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765) to create a set of classes with which you can read the XML data.  
+ **將檔案載入為可巡覽的模型**。 功能較強大的方法是將資料讀取為您文字範本程式碼可以巡覽的模型。 例如，您可以載入 XML 檔案，並使用 XPath 運算式對其進行巡覽。 您也可以使用[xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765)建立一組類別，您可以讀取 XML 資料。  
   
- **Edit the model file in a diagram or form.** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] provides tools that let you edit a model as a diagram or Windows form. This makes it easier to discuss the model with users of the generated application. [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] also creates a set of strongly-typed classes that reflect the structure of the model. For more information, see [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md).  
+ **編輯圖表或表單中的模型檔案。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供工具，可讓您編輯模型圖表或 Windows form。 這樣可以更輕鬆地與所產生應用程式的使用者討論此模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 也會建立一組反映模型結構的強型別類別。 如需詳細資訊，請參閱[特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)。  
   
-### <a name="relative-file-paths-in-design-time-templates"></a>Relative file paths in design-time templates  
- In a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md), if you want to reference a file in a location relative to the text template, use `this.Host.ResolvePath()`. You must also set `hostspecific="true"` in the `template` directive:  
+### <a name="relative-file-paths-in-design-time-templates"></a>設計階段範本中的相對檔案路徑  
+ 在[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，如果您想要參考與文字範本，使用相對之位置中的檔案`this.Host.ResolvePath()`。 您也必須在 `hostspecific="true"` 指示詞中設定 `template`：  
   
 ```csharp  
 <#@ template hostspecific="true" language="C#" #>  
@@ -274,24 +274,24 @@ Content of MyFile.txt is:
   
 ```  
   
- You can also obtain other services that are provided by the host. For more information, see [Accessing Visual Studio or other Hosts from a Template](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ 您也可以取得主機所提供的其他服務。 如需詳細資訊，請參閱[存取 Visual Studio 或其他主機從範本](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4)。  
   
-### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Design-time Text Templates run in a separate AppDomain  
- You should be aware that a [design-time text template](../modeling/design-time-code-generation-by-using-t4-text-templates.md) runs in an AppDomain that is separate from the main application. In most cases this is not important, but you might discover restrictions in certain complex cases. For example, if you want to pass data in or out of the template from a separate service, then the service must provide a serializable API.  
+### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>設計階段文字範本是在不同的 AppDomain 中執行  
+ 您應該注意，[設計階段文字範本](../modeling/design-time-code-generation-by-using-t4-text-templates.md)主應用程式不同的 AppDomain 中執行。 在大多數情況下，這並不重要，但是，您可能會發現特定複雜情況下的限制。 例如，如果您想要使用不同的服務，將資料傳入或傳出範本，則服務必須提供可序列化的 API   
   
- (This isn't true of a [run-time text template](../modeling/run-time-text-generation-with-t4-text-templates.md), which provides code that is compiled along with the rest of your code.)  
+ (這不適[執行階段文字範本](../modeling/run-time-text-generation-with-t4-text-templates.md)，這樣會提供您的程式碼的其餘部分一起編譯的程式碼。)  
   
-## <a name="editing-templates"></a>Editing Templates  
- Specialized text template editors can be downloaded from the Extension Manager Online Gallery. On the **Tools** menu, click **Extension Manager**. Click **Online Gallery**, and then use the search tool.  
+## <a name="editing-templates"></a>編輯範本  
+ 您可以從「擴充管理員線上圖庫」下載特殊化文字範本編輯器。 在**工具**功能表上，按一下 **擴充管理員**。 按一下**線上組件庫**，然後使用搜尋工具。  
   
-## <a name="related-topics"></a>Related topics  
+## <a name="related-topics"></a>相關主題  
   
-|Task|Topic|  
+|工作|主題|  
 |----------|-----------|  
-|Writing a template.|[Guidelines for Writing T4 Text Templates](../modeling/guidelines-for-writing-t4-text-templates.md)|  
-|Generate text by using program code.|[Text Template Structure](../modeling/writing-a-t4-text-template.md)|  
-|Generate files in a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solution.|[Design-Time Code Generation by using T4 Text Templates](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
-|Run text generation outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].|[Generating Files with the TextTransform Utility](../modeling/generating-files-with-the-texttransform-utility.md)|  
-|Transform your data in the form of a domain-specific language.|[Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)|  
-|Write directive processors to transform your own data sources.|[Customizing T4 Text Transformation](../modeling/customizing-t4-text-transformation.md)|
+|撰寫範本。|[撰寫 T4 文字範本的方針](../modeling/guidelines-for-writing-t4-text-templates.md)|  
+|使用程式碼來產生文字。|[文字範本的結構](../modeling/writing-a-t4-text-template.md)|  
+|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 方案中產生檔案。|[使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|  
+|在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 外部執行文字產生。|[使用 TextTransform 公用程式產生檔案](../modeling/generating-files-with-the-texttransform-utility.md)|  
+|以網域特定領域語言形式，轉換您的資料。|[從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)|  
+|撰寫指示詞處理器，以轉換您專屬的資料來源。|[自訂 T4 文字轉換](../modeling/customizing-t4-text-transformation.md)|
 

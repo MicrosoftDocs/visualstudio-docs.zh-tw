@@ -15,8 +15,8 @@ helpviewer_keywords:
 - user controls [Visual Basic], creating
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: df0d36441585a6ad856edaf4c5bc0cf3fd65e5bc
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 39e7446abf0f7acb7de8d909af29858e6fd507c0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Create a Windows Forms user control that supports lookup data binding

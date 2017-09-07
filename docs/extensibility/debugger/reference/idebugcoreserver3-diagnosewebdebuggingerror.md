@@ -1,5 +1,5 @@
 ---
-title: IDebugCoreServer3::DiagnoseWebDebuggingError | Microsoft Docs
+title: "IDebugCoreServer3::DiagnoseWebDebuggingError |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2c9ed64c1db1472e334333f3c2cb6d1bfb017c25
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
-Attempts to determine why an auto-attach failed.  
+嘗試判斷為何 auto-attach 失敗。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT DiagnoseWebDebuggingError(  
@@ -54,18 +54,18 @@ int DiagnoseWebDebuggingError(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pszUrl`  
- [in] Not currently used; should always be set to a null value.  
+ [in]目前未使用。應一律設為 null 值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. The following are other typical return codes:  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 其他常見的傳回碼如下：  
   
-|Code|Description|  
+|程式碼|說明|  
 |----------|-----------------|  
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|Cannot determine why the remote server failed to start debugging.|  
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|Cannot debug on remote server, possibly due to insufficient permissions or because the DEBUG verb is not enabled.|  
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|The web server has been locked down and is blocking the DEBUG verb, which is required to enable debugging.|  
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|無法判斷遠端伺服器啟動偵錯失敗的原因。|  
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|無法偵錯在遠端伺服器上，可能是因為權限不足，或因為未啟用偵錯動詞命令。|  
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|網頁伺服器已經鎖定，並且封鎖 DEBUG 動詞命令，才能啟用偵錯。|  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

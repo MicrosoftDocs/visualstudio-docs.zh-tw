@@ -1,5 +1,5 @@
 ---
-title: Unit Test Basics | Microsoft Docs
+title: "單元測試基本概念 | Microsoft Docs"
 ms.custom: 
 ms.date: 2016-01-07
 ms.reviewer: 
@@ -33,63 +33,63 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="unit-test-basics"></a>Unit Test Basics
-Check that your code is working as expected by creating and running unit tests. It's called unit testing because you break down the functionality of your program into discrete testable behaviors that you can test as individual *units*. Visual Studio Test Explorer provides a flexible and efficient way to run your unit tests and view their results in Visual Studio. Visual Studio installs the Microsoft unit testing frameworks for managed and native code. Use a *unit testing framework* to create unit tests, run them, and report the results of these tests. Rerun unit tests when you make changes to test that your code is still working correctly. When you use Visual Studio Enterprise, you can run tests automatically after every build.  
+# <a name="unit-test-basics"></a>單元測試基本概念
+藉由建立及執行單元測試，檢查您的程式碼是否如預期般執行。 這之所以稱為單元測試，是因為您將程式功能分解成離散的可測試行為，這些行為能作為個別的「單位」加以測試。 Visual Studio [測試總管] 提供富彈性又有效率的方式來執行單元測試，並可在 Visual Studio 中檢視結果。 Visual Studio 會安裝 Managed 程式碼和原生程式碼適用的 Microsoft 單元測試架構。 請使用 *「單元測試架構」* (unit testing framework) 來建立單元測試並加以執行，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 當您使用 Visual Studio Enterprise 版時，可以在每次建置後自動執行測試。  
   
- Unit testing has the greatest effect on the quality of your code when it's an integral part of your software development workflow. As soon as you write a function or other block of application code, create unit tests that verify the behavior of the code in response to standard, boundary, and incorrect cases of input data, and that check any explicit or implicit assumptions made by the code. With *test driven development*, you create the unit tests before you write the code, so you use the unit tests as both design documentation and functional specifications.  
+ 當單元測試是軟體開發工作流程中不可或缺的一部分時，就能對您的程式碼品質發揮最大的作用。 一旦您撰寫函式或其他應用程式程式碼區塊，就會建立單元測試，以便驗證該程式碼的行為是否對應於輸入資料的標準、界限和不正確情況，並檢查程式碼所做的任何明確或隱含假設。 藉由 *「測試驅動式開發」*(test driven development)，您可在撰寫程式碼之前先建立單元測試，以便將單元測試做為設計文件和功能規格。  
   
- You can quickly generate test projects and test methods from your code, or manually create the tests as you need them. When you use IntelliTest to explore your .NET code, you can generate test data and a suite of unit tests. For every statement in the code, a test input is generated that will execute that statement. Find out how to [generate unit tests for your code](http://msdn.microsoft.com/library/dn823749.aspx).  
+ 您可以從您的程式碼快速產生測試專案和測試方法，或在您需要的時候以手動方式建立此測試。 當您使用 IntelliTest 來探索 .NET 程式碼時，可以產生測試資料和單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 了解如何 [產生程式碼的單元測試](http://msdn.microsoft.com/library/dn823749.aspx)。  
   
- Test Explorer can also run third-party and open source unit test frameworks that have implemented Test Explorer add-on interfaces. You can add many of these frameworks through the Visual Studio Extension Manager and the Visual Studio gallery. See [Install third-party unit test frameworks](../test/install-third-party-unit-test-frameworks.md)  
+ [測試總管] 也可以執行在其中已實作 [測試總管] 附加元件介面的協力廠商和開放原始碼的單元測試架構。 您可以透過 Visual Studio 擴充功能管理員和 Visual Studio 組件庫加入多個這些架構。 請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。  
   
--   [Quick starts](#BKMK_Quick_starts)  
+-   [快速入門](#BKMK_Quick_starts)  
   
--   [The MyBank Solution example](#BKMK_The_MyBank_Solution_example)  
+-   [MyBank 方案範例](#BKMK_The_MyBank_Solution_example)  
   
--   [Create unit test projects and test methods](#BKMK_Creating_the_unit_test_projects)  
+-   [建立單元測試專案和測試方法](#BKMK_Creating_the_unit_test_projects)  
   
--   [Write your tests](#BKMK_Writing_your_tests)  
+-   [撰寫您的測試](#BKMK_Writing_your_tests)  
   
--   [Run tests in Test Explorer](#BKMK_Running_tests_in_Test_Explorer)  
+-   [在 [測試總管] 中執行測試](#BKMK_Running_tests_in_Test_Explorer)  
   
--   [Run and view tests](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
+-   [執行測試並加以檢視](#BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar)  
   
-##  <a name="BKMK_Unit_testing_overview"></a> Unit testing overview  
+##  <a name="BKMK_Unit_testing_overview"></a> 單元測試概觀  
   
-###  <a name="BKMK_Quick_starts"></a> Quick starts  
- For an introduction to unit testing that takes you directly into coding, see one of these topics:  
+###  <a name="BKMK_Quick_starts"></a> 快速入門  
+ 如需單元測試的簡介以便直接參考編碼，請參閱下列其中一個主題：  
   
--   [Walkthrough: Creating and Running Unit Tests for Managed Code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+-   [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
--   [Quick Start: Test Driven Development with Test Explorer](../test/quick-start-test-driven-development-with-test-explorer.md)  
+-   [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
--   [Unit testing native code with Test Explorer](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
+-   [使用測試總管針對機器碼執行單元測試](http://msdn.microsoft.com/en-us/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
-##  <a name="BKMK_The_MyBank_Solution_example"></a> The MyBank Solution example  
- In this topic, we use the development of a fictional application called `MyBank` as an example. You don't need the actual code to follow the explanations in this topic. Test methods are written in C# and presented by using the Microsoft Unit Testing Framework for Managed Code, However, the concepts are easily transferred to other languages and frameworks.  
+##  <a name="BKMK_The_MyBank_Solution_example"></a> MyBank 方案範例  
+ 在本主題中，我們會使用稱為 `MyBank` 的虛構應用程式開發來做為範例。 您不需要實際程式碼來照著本主題中的說明進行。 測試方法會以 C# 撰寫，並使用 Managed 程式碼適用的 Microsoft 單元測試架構來呈現，不過，這個概念可輕鬆地轉移到其他語言和架構。  
   
- ![MyBank Solution](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
+ ![MyBank 方案](../test/media/ute_mybanksolution.png "UTE_MyBankSolution")  
   
- Our first attempt at a design for the `MyBank` application includes an accounts component that represents an individual account and its transactions with the bank, and a database component that represents the functionality to aggregate and manage the individual accounts.  
+ 我們第一次在 `MyBank` 應用程式的設計嘗試包括帳戶元件 (代表個別帳戶及其與銀行的交易)，和資料庫元件 (代表可彙總及管理個別帳戶的功能)。  
   
- We create a `MyBank` solution that contains two projects:  
+ 我們建立的 `MyBank` 方案包含兩個專案：  
   
 -   `Accounts`  
   
 -   `BankDb`  
   
- Our first attempt at designing the `Accounts` project contain a class to hold basic information about an account, an interface that specifies the common functionality of any type of account, like depositing and withdrawing assets from the account, and a class derived from the interface that represents a checking account. We begin the Accounts projects by creating the following source files:  
+ 我們第一次在 `Accounts` 專案的設計嘗試包含一個保留帳戶相關基本資訊的類別、一個指定任一種帳戶通用功能 (例如在帳戶的資產中存款和提款) 的介面，以及一個從該介面衍生代表支票帳戶的類別。 一開始我們先在帳戶專案中建立下列原始程式檔：  
   
--   `AccountInfo.cs` defines the basic information for an account.  
+-   `AccountInfo.cs` 定義帳戶的基本資訊。  
   
--   `IAccount.cs` defines a standard `IAccount` interface for an account, including methods to deposit and withdraw assets from an account and to retrieve the account balance.  
+-   `IAccount.cs` 定義帳戶的標準 `IAccount` 介面，包括從帳戶資產存款和提款，以及擷取帳戶餘額的方法。  
   
--   `CheckingAccount.cs` contains the `CheckingAccount` class that implements the `IAccounts` interface for a checking account.  
+-   `CheckingAccount.cs` 包含的 `CheckingAccount` 類別可實作支票帳戶的 `IAccounts` 介面。  
   
- We know from experience that one thing a withdrawal from a checking account must do is to make sure that the amount withdrawn is less than the account balance. So we override the `IAccount.Withdaw` method in `CheckingAccount` with a method that checks for this condition. The method might look like this:  
+ 我們從經驗中知道一件事，那就是從支票帳戶提款必須先確認提取的金額小於帳戶餘額。 因此我們使用一個可檢查此條件的方法來覆寫 `IAccount.Withdaw` 中的 `CheckingAccount` 方法。 此方法可能看起來像這樣：  
   
 ```csharp  
   
@@ -107,70 +107,70 @@ public void Withdraw(double amount)
   
 ```  
   
- Now that we have some code, it's time for testing.  
+ 現在我們已經有一些程式碼，該開始測試了。  
   
-##  <a name="BKMK_Creating_the_unit_test_projects"></a> Create unit test projects and test methods  
- It is often quicker to generate the unit test project and unit test stubs from your code. Or you can choose to create the unit test project and tests manually depending on your requirements.  
+##  <a name="BKMK_Creating_the_unit_test_projects"></a> 建立單元測試專案和測試方法  
+ 從您的程式碼中產生單元測試專案和單元測試虛設常式通常較快。 或者您可以視您的需求而定，選擇以手動方式建立單元測試專案和測試。  
   
- **Generate unit test project and unit test stubs**  
+ **產生單元測試專案和單元測試虛設常式**  
   
-1.  From the code editor window, right-click and choose **Create Unit Tests** from the context menu.  
+1.  從程式碼編輯器視窗中，自內容功能表以滑鼠右鍵按一下並選擇 [建立單元測試]  。  
   
-     ![From the editor window, view the context menu](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
+     ![從編輯器視窗，檢視操作功能表](../test/media/createunittestsrightclick.png "CreateUnitTestsRightClick")  
   
-2.  Click OK to accept the defaults to create your unit tests, or change the values used to create and name the unit test project and the unit tests. You can select the code that is added by default to the unit test methods.  
+2.  按一下 [確定] 接受預設值來建立單元測試，或變更過去用來建立和命名單元測試專案和單元測試的值。 您可以選取預設加入此單元測試方法的程式碼。  
   
-     ![Right&#45;click in editor and choose Create Unit Tests](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
+     ![在編輯器中按一下滑鼠右鍵，然後選擇 [建立單元測試]](../test/media/createunittestsdialog.png "CreateUnitTestsDialog")  
   
-3.  The unit test stubs are created in a new unit test project for all the methods in the class.  
+3.  會針對此類別中的所有方法，在新的單元測試專案中建立單元測試虛設常式。  
   
-     ![The unit tests are created](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
+     ![隨即建立單元測試](../test/media/createunittestsstubs.png "CreateUnitTestsStubs")  
   
-4.  Now jump ahead to learn how to [add code to the unit test methods](#BKMK_Writing_your_tests) to make your unit test meaningful, and any extra unit tests that you might want to add to thoroughly test your code.  
+4.  現在往前跳至了解如何 [將程式碼加入單元測試方法](#BKMK_Writing_your_tests) ，讓您的單元測試有意義，以及您可能會想加入的任何額外單元測試，藉此徹底測試程式碼。  
   
- **Create your unit test project and unit tests manually**  
+ **手動建立單元測試專案和單元測試**  
   
- A unit test project usually mirrors the structure of a single code project. In the MyBank example, you add two unit test projects named `AccountsTests` and `BankDbTests` to the `MyBanks` solution. The test project names are arbitrary, but adopting a standard naming convention is a good idea.  
+ 單元測試專案通常會反映單一程式碼專案的結構。 在 MyBank 範例中，您可以將名為 `AccountsTests` 和 `BankDbTests` 的兩個單元測試專案加入 `MyBanks` 方案中。 這些測試專案名稱可隨意命名，不過最好採用標準命名慣例。  
   
- **To add a unit test project to a solution:**  
+ **將單元測試專案加入方案：**  
   
-1.  On the **File** menu, choose **New** and then choose **Project** (Keyboard Ctrl + Shift + N).  
+1.  在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]\ (鍵盤 Ctrl + Shift + N)。  
   
-2.  On the New Project dialog box, expand the **Installed** node, choose the language that you want to use for your test project, and then choose **Test**.  
+2.  在 [新增專案] 對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試] 。  
   
-3.  To use one of the Microsoft unit test frameworks, choose **Unit Test Project** from the list of project templates. Otherwise, choose the project template of the unit test framework that you want to use. To test the `Accounts` project of our example, you would name the project `AccountsTests`.  
+3.  若要使用其中一個 Microsoft 單元測試架構，請從專案範本清單中選擇 [單元測試專案]  。 否則，請選擇您所要使用單元測試架構的專案範本。 若要測試本例的 `Accounts` 專案，請將專案命名為 `AccountsTests`。  
   
     > [!WARNING]
-    >  Not all third-party and open source unit test frameworks provide a Visual Studio project template. Consult the framework document for information about creating a project.  
+    >  並非所有協力廠商和開放原始碼的單元測試架構都提供 Visual Studio 專案範本。 如需建立專案的相關資訊，請參閱架構文件。  
   
-4.  In your unit test project, add a reference to the code project under test, in our example to the Accounts project.  
+4.  在您的單元測試專案中，可在本例中將受測程式碼專案的參考加入帳戶專案。  
   
-     To create the reference to the code project:  
+     建立程式碼專案的參考：  
   
-    1.  Select the project in Solution Explorer.  
+    1.  在 [方案總管] 中選取專案。  
   
-    2.  On the **Project** menu, choose **Add Reference**.  
+    2.  在 [專案]  功能表上，選擇 [加入參考] 。  
   
-    3.  On the Reference Manager dialog box, open the **Solution** node and choose **Projects**. Select the code project name and close the dialog box.  
+    3.  在 [參考管理員] 對話方塊上，開啟 [方案]  節點，然後選擇 [專案] 。 選取程式碼專案名稱，然後關閉對話方塊。  
   
- Each unit test project contains classes that mirror the names of the classes in the code project. In our example, the `AccountsTests` project would contain the following classes:  
+ 每個單元測試專案包含的類別都可反映程式碼專案中的類別名稱。 在本例中， `AccountsTests` 專案可能包含下列類別：  
   
--   `AccountInfoTests` class contains the unit test methods for the `AccountInfo` class in the `BankAccount` project  
+-   `AccountInfoTests` 類別包含 `AccountInfo` 專案中 `BankAccount` 類別的單元測試方法。  
   
--   `CheckingAccountTests` class contains the unit test methods for `CheckingAccount` class.  
+-   `CheckingAccountTests` 類別包含 `CheckingAccount` 類別的單元測試方法。  
   
-##  <a name="BKMK_Writing_your_tests"></a> Write your tests  
- The unit test framework that you use and Visual Studio IntelliSense will guide you through writing the code for your unit tests for a code project. To run in Test Explorer, most frameworks require that you add specific attributes to identify unit test methods. The frameworks also provide a way—usually through assert statements or method attributes—to indicate whether the test method has passed or failed. Other attributes identify optional setup methods that are at class initialization and before each test method and teardown methods that are run after each test method and before the class is destroyed.  
+##  <a name="BKMK_Writing_your_tests"></a> 撰寫您的測試  
+ 您使用的單元測試架構和 Visual Studio IntelliSense 會引導您完成撰寫程式碼專案的單元測試程式碼。 若要在 [測試總管] 中執行，大部分的架構都會要求您加入特定屬性，以識別單元測試方法。 這些架構也會提供一個辨別測試方法是否通過或失敗的方式，通常是透過判斷提示陳述式或方法屬性。 其他屬性會識別在類別初始化和每個測試方法之前的選用設定方法，和識別在每個測試方法之後和終結類別之前的清除方法。  
   
- The AAA (Arrange, Act, Assert) pattern is a common way of writing unit tests for a method under test.  
+ AAA (排列、作用、判斷提示) 模式是為受測方法撰寫單元測試的常見方式。  
   
--   The **Arrange** section of a unit test method initializes objects and sets the value of the data that is passed to the method under test.  
+-   單元測試方法的 [排列]  區段會初始化物件，並為傳遞至受測方法的資料設定值。  
   
--   The **Act** section invokes the method under test with the arranged parameters.  
+-   [作用]  區段會叫用含有所排列參數的受測方法。  
   
--   The **Assert** section verifies that the action of the method under test behaves as expected.  
+-   [判斷提示]  區段會驗證受測方法的動作是否如預期。  
   
- To test the `CheckingAccount.Withdraw` method of our example, we can write two tests: one that verifies the standard behavior of the method, and one that verifies that a withdrawal of more than the balance will fail. In the `CheckingAccountTests` class, we add the following methods:  
+ 若要測試本例的 `CheckingAccount.Withdraw` 方法，我們可以撰寫兩個測試：一個是驗證方法的標準行為，另一個則是驗證提款金額超過餘額將會失敗。 在 `CheckingAccountTests` 類別中，我們會加入下列方法：  
   
 ```csharp  
 [TestMethod]  
@@ -201,16 +201,16 @@ public void Withdraw_AmountMoreThanBalance_Throws()
   
 ```  
   
- Note that `Withdraw_ValidAmount_ChangesBalance` uses an explicit `Assert` statement to determine whether the test method passes or fails, while `Withdraw_AmountMoreThanBalance_Throws` uses the `ExpectedException` attribute to determine the success of the test method. Under the covers, a unit test framework wraps test methods in try/catch statements. In most cases, if an exception is caught, the test method fails and the exception is ignored. The `ExpectedException` attribute causes the test method to pass if the specified exception is thrown.  
+ 請注意， `Withdraw_ValidAmount_ChangesBalance` 會使用明確的 `Assert` 陳述式來判斷測試方法是否通過或失敗，而 `Withdraw_AmountMoreThanBalance_Throws` 則會使用 `ExpectedException` 屬性來判斷測試方法是否成功。 實際上，單元測試架構會將測試方法包在 try/catch 陳述式中。 在大部分情況下，如果攔截到例外狀況時，測試方法便會失敗，並忽略例外狀況。 如果指定的例外狀況擲回，則 `ExpectedException` 屬性就會導致測試方法通過。  
   
- For more information about the Microsoft Unit Testing Frameworks, see one of the following topics:  
+ 如需 Microsoft 單元測試架構的詳細資訊，請參閱下列其中一個主題：  
   
--   [Writing Unit Tests for the .NET Framework with the Microsoft Unit Test Framework for Managed Code](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
+-   [使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試](../test/writing-unit-tests-for-the-dotnet-framework-with-the-microsoft-unit-test-framework-for-managed-code.md)  
   
--   [Writing Unit tests for C/C++ with the Microsoft Unit Testing Framework for C++](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
+-   [使用適用於 C++ 的 Microsoft 單元測試架構撰寫適用於 C/C++ 的單元測試](../test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)  
   
-## <a name="set-timeouts-for-unit-tests"></a>Set timeouts for unit tests  
- To set a timeout on an individual test method:  
+## <a name="set-timeouts-for-unit-tests"></a>設定單元測試逾時  
+ 在個別的測試方法上設定逾時：  
   
 ```csharp  
 [TestMethod]  
@@ -224,7 +224,7 @@ public void My_Test()
   
 ```  
   
- To set the timeout to the maximum allowed:  
+ 設定允許逾時上限：  
   
 ```csharp  
 [TestMethod]  
@@ -234,74 +234,74 @@ public void My_Test ()
 }  
 ```  
   
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Run tests in Test Explorer  
- When you build the test project, the tests appear in Test Explorer. If Test Explorer is not visible, choose **Test** on the Visual Studio menu, choose **Windows**, and then choose **Test Explorer**.  
+##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> 在 [測試總管] 中執行測試  
+ 在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。  
   
- ![Unit Test Explorer](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![單元測試總管](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
- As you run, write, and rerun your tests, the default view of Test Explorer displays the results in groups of **Failed Tests**, **Passed Tests**, **Skipped Tests** and **Not Run Tests**. You can choose a group heading to open the view that displays all them tests in that group.  
+ 隨著您執行、撰寫及重新執行測試，[測試總管] 的預設檢視便會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  及 [未執行的測試] 群組中的結果。 您可以選擇群組標題，以開啟顯示該群組中所有這些測試的檢視。  
   
- You can also filter the tests in any view by matching text in the search box at the global level or by selecting one of the pre-defined filters. You can run any selection of the tests at any time. The results of a test run are immediately apparent in the pass/fail bar at the top of the explorer window. Details of a test method result are displayed when you select the test.  
+ 在搜尋方塊中找出全域層級中相符的文字或選取其中一個預先定義的篩選器，也能在任何檢視中篩選測試。 您可以隨時執行測試的任何選取範圍。 測試回合的結果會立即顯示在 [總管] 視窗上方的通過/失敗列中。 選取測試時，會顯示測試方法結果的詳細資料。  
   
-###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> Run and view tests  
- The Test Explorer toolbar helps you discover, organize, and run the tests that you are interested in.  
+###  <a name="BKMK_Running_and_viewing_tests_from_the_Test_Explorer_toolbar"></a> 執行測試並加以檢視  
+ [測試總管] 工具列可協助您探索、組織和執行您有興趣的測試。  
   
- ![Run tests from the Test Explorer toolbar](../test/media/ute_toolbar.png "UTE_ToolBar")  
+ ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- You can choose **Run All** to run all your tests, or choose **Run** to choose a subset of tests to run. After you run a set of tests, a summary of the test run appears at the bottom of the Test Explorer window. Select a test to view the details of that test in the bottom pane. Choose **Open Test** from the context menu (Keyboard: F12) to display the source code for the selected test.  
+ 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]\ (鍵盤：F12) 以顯示所選測試的原始程式碼。  
   
- If individual tests have no dependencies that prevent them from being run in any order, turn on parallel test execution with the ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") toggle button on the toolbar. This can noticeably reduce the time taken to run all the tests.  
+ 如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
   
-###  <a name="BKMK_Running_tests_after_every_build"></a> Run tests after every build  
+###  <a name="BKMK_Running_tests_after_every_build"></a> 每次建置後執行測試  
   
 > [!WARNING]
->  Running unit tests after every build is supported only in Visual Studio Enterprise.  
+>  只有 Visual Studio Enterprise 支援在每次建置之後執行單元測試。  
   
 |||  
 |-|-|  
-|![Run after build](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|To run your unit tests after each local build, choose **Test** on the standard menu, choose **Run Tests After Build** on the Test Explorer toolbar.|  
+|![建置後執行](../test/media/ute_runafterbuild_btn.png "UTE_RunAfterBuild_btn")|若要在每次本機組建之後執行單元測試，請選擇標準功能表上的 [測試]  ，接著在 [測試總管] 工具列上選擇 [建置之後執行測試]  。|  
   
-###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> Filter and group the test list  
- When you have a large number of tests, you can Type in Test Explorer search box to filter the list by the specified string. You can restrict your filter event more by choosing from the filter list.  
+###  <a name="BKMK_Filtering_and_grouping_the_test_list"></a> 篩選與群組測試清單  
+ 若有大量測試，您可以在 [測試總管] 搜尋方塊中輸入文字以便依指定字串篩選清單。 您可以從篩選清單中選擇以進一步限制篩選事件。  
   
- ![Search filter categories](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
+ ![搜尋篩選條件分類](../test/media/ute_searchfilter.png "UTE_SearchFilter")  
   
 |||  
 |-|-|  
-|![Test Explorer group button](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|To group your tests by category, choose the **Group By** button.|  
+|![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|若要依分類將測試分組，請選擇 [群組依據]  按鈕。|  
   
- For more information, see [Run unit tests with Test Explorer](../test/run-unit-tests-with-test-explorer.md)  
+ 如需詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。  
   
-## <a name="qa"></a>Q&A  
- **Q: How do I debug unit tests?**  
+## <a name="qa"></a>問與答  
+ **問：如何偵錯單元測試？**  
   
- **A:** Use Test Explorer to start a debugging session for your tests. Stepping through your code with the Visual Studio debugger seamlessly takes you back and forth between the unit tests and the project under test. To start debugging:  
+ **答：** 您可以使用 [測試總管] 來啟動測試的偵錯工作階段。 使用 Visual Studio 偵錯工具逐步執行程式碼可讓您順暢地在單元測試和受測專案之間來回進行。 啟動偵錯：  
   
-1.  In the Visual Studio editor, set a breakpoint in one or more test methods that you want to debug.  
+1.  在 Visual Studio 編輯器中，於您要偵錯的一個或多個測試方法中設定中斷點。  
   
     > [!NOTE]
-    >  Because test methods can run in any order, set breakpoints in all the test methods that you want to debug.  
+    >  由於測試方法可以依照任何順序執行，請在您要偵錯的所有測試方法中設定中斷點。  
   
-2.  In Test Explorer, select the test methods and then choose **Debug Selected Tests** from the shortcut menu.  
+2.  在 [測試總管] 中選取測試方法，然後從捷徑功能表中選擇 [偵錯所選測試]  。  
   
- Learn more details about [debugging unit tests](../debugger/debugging-in-visual-studio.md).  
+ 進一步了解 [偵錯單元測試](../debugger/debugging-in-visual-studio.md)的詳細資料。  
   
- **Q: If I'm using TDD, how do I generate code from my tests?**  
+ **問：如果我使用 TDD，要如何從我的測試產生程式碼？**  
   
- **A:** Use IntelliSense to generate classes and methods in your project code. Write a statement in a test method that calls the class or method that you want to generate, then open the IntelliSense menu under the call. If the call is to a constructor of the new class, choose **Generate new type** from the menu and follow the wizard to insert the class in your code project. If the call is to a method, choose **Generate new method** from the IntelliSense menu.  
+ **答：** 您可以使用 IntelliSense 在您的專案程式碼中產生類別和方法。 在測試方法中撰寫可呼叫所要產生類別或方法的陳述式，然後開啟該呼叫下的 IntelliSense 功能表。 如果呼叫的是新類別的建構函式，請從功能表中選擇 [產生新的類型]  ，然後遵循精靈以將類別插入程式碼專案中。 如果呼叫的是方法，請從 IntelliSense 功能表中選擇 [產生新的方法]  。  
   
- ![Generate Method Stub Intellisense Menu](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
+ ![產生方法虛設常式 Intellisense 功能表](../test/media/ute_generatemethodstubintellisense.png "UTE_GenerateMethodStubIntellisense")  
   
- **Q: Can I create unit tests that take multiple sets of data as input to run the test?**  
+ **問：是否可以建立採用多個資料集作為輸入來執行測試的單元測試？**  
   
- **A:** Yes. *Data-driven test methods* let you test a range of values with a single unit test method. Use a `DataSource` attribute for the test method that specifies the data source and table that contains the variable values that you want to test.  In the method body, you assign the row values to variables using the `TestContext.DataRow[`*ColumnName*`]` indexer.  
+ **答：** 可以。 *「資料驅動型測試方法」* (data-driven test method) 可讓您使用單一單元測試方法測試某個範圍的值。 請使用此測試方法的 `DataSource` 屬性，該屬性會指定包含您要測試之變數值的資料來源和資料表。  在方法主體中，您可使用 `TestContext.DataRow[`*ColumnName*`]` 索引子將資料列值指派給變數。  
   
 > [!NOTE]
->  These procedures apply only to test methods that you write by using the Microsoft unit test framework for managed code. If you're using a different framework, consult the framework documentation for equivalent functionality.  
+>  這些程序只適用於透過 Managed 程式碼適用的 Microsoft 單元測試架構所撰寫的測試方法。 如果您使用不同的架構，請參閱架構文件的同等功能。  
   
- For example, assume we add an unnecessary method to the `CheckingAccount` class that is named `AddIntegerHelper`. `AddIntegerHelper` adds two integers.  
+ 例如，假設我們將不需要的方法加入至名為 `CheckingAccount` 的 `AddIntegerHelper` 類別。 `AddIntegerHelper` 會加入兩個整數。  
   
- To create a data-driven test for the `AddIntegerHelper` method, we first create an Access database named `AccountsTest.accdb` and a table named `AddIntegerHelperData`. The `AddIntegerHelperData` table defines columns to specify the first and second operands of the addition and a column to specify the expected result. We fill a number of rows with appropriate values.  
+ 若要為 `AddIntegerHelper` 方法建立資料驅動型測試，我們會先建立名為 `AccountsTest.accdb` 的 Access 資料庫和名為 `AddIntegerHelperData`的資料表。 `AddIntegerHelperData` 資料表會定義可指定加法之第一個和第二個運算元的資料行，和可指定預期結果的資料行。 我們在多個資料列中填入適當的值。  
   
 ```csharp  
   
@@ -322,43 +322,43 @@ public void AddIntegerHelper_DataDrivenValues_AllShouldPass()
   
 ```  
   
- The attributed method runs once for each row in the table. Test Explorer reports a test failure for the method if any of the iterations fail. The test results detail pane for the method shows you the pass/fail status method for each row of data.  
+ 資料表中一個資料列執行一次屬性的方法。 如果任何反覆項目失敗，[測試總管] 會報告該方法的測試失敗。 該方法的測試結果詳細資料窗格會向您顯示每個資料列通過/失敗狀態的方法。  
   
- Learn more about [data-driven unit tests](../test/how-to-create-a-data-driven-unit-test.md).  
+ 深入了解 [資料驅動的單元測試](../test/how-to-create-a-data-driven-unit-test.md)。  
   
- **Q: Can I view how much of my code is tested by my unit tests?**  
+ **問：是否可以檢視我的單元測試已測試了多少程式碼？**  
   
- **A:** Yes. You can determine the amount of your code that is actually being tested by your unit tests by using the Visual Studio code coverage tool. Native and managed languages and all unit test frameworks that can be run by the Unit Test Framework are supported.  
+ **答：** 可以。 您可以使用 Visual Studio 程式碼涵蓋範圍工具來判斷您的單元測試實際測試的程式碼數量。 原生和 Managed 語言，以及可由單元測試架構執行的所有單元測試架構都受支援。  
   
- You can run code coverage on selected tests or on all tests in a solution. The Code Coverage Results window displays the percentage of the blocks of product code that were exercised by line, function, class, namespace and module.  
+ 您可以在方案中的所選測試或所有測試上執行程式碼涵蓋範圍。 [程式碼涵蓋範圍結果] 視窗會顯示線條、函式、類別、命名空間及模組所運用的產品程式碼區塊的百分比。  
   
- To run code coverage for test methods in a solution, choose **Tests** on the Visual Studio menu and then choose **Analyze code coverage**.  
+ 若要在方案中執行測試方法的程式碼涵蓋範圍，請選擇 [Visual Studio] 功能表上的 [測試]  ，然後選擇 [分析程式碼涵蓋範圍] 。  
   
- Coverage results appear in the Code Coverage Results window.  
+ 涵蓋範圍結果會出現在 [程式碼涵蓋範圍結果] 視窗中。  
   
- ![Code coverage results](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
+ ![程式碼涵蓋範圍結果](../test/media/ute_codecoverageresults.png "UTE_CodeCoverageResults")  
   
- Learn more about [code coverage](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md) .  
+ 進一步了解[程式碼涵蓋範圍](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。  
   
- **Q: How can I test methods in my code that have external dependencies?**  
+ **問：如何在我的程式碼中測試是否具有外部相依性的方法？**  
   
- **A:** Yes. If you have Visual Studio Enterprise, Microsoft Fakes can be used with test methods that you write by using unit test frameworks for managed code.  
+ **答：** 可以。 如果您有 Visual Studio Enterprise，則 Microsoft Fakes 可用於您透過 Managed 程式碼適用的單元測試架構所撰寫的測試方法。  
   
- Microsoft Fakes uses two approaches to create substitute classes for external dependencies.  
+ Microsoft Fakes 會使用兩種方式來建立外部相依性的替代類別：  
   
-1.  *Stubs* generate substitute classes derived from the parent interface of the target dependency class. Stub methods can be substituted for public virtual methods of the target class.  
+1.  *「虛設常式」* (stub) 會產生自目標相依性類別的父介面衍生的替代類別。 虛設常式方法可以取代為目標類別的公用虛擬方法。  
   
-2.  *Shims* use runtime instrumentation to divert calls to a target method to a substitute shim method for non-virtual methods.  
+2.  *「填充碼」* (shim) 會使用執行階段檢測將呼叫轉向至目標方法，以使用填充碼方法來替代非虛擬方法。  
   
- In both approaches, you use the generated delegates of calls to the dependency method to specify the behavior that you want in the test method.  
+ 在這兩種方法中，您可以對相依性方法使用呼叫所產生的委派，以指定您要讓測試方法執行的行為。  
   
- Learn more about [isolating unit test methods with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md).  
+ 深入了解 [使用 Microsoft Fakes 隔離單元測試方法](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
   
- **Q: Can I use other unit test frameworks to create unit tests?**  
+ **問：是否可以使用其他單元測試架構搭配 IntelliTest？**  
   
- **A:** Yes, follow these steps to [find and install other frameworks](../test/install-third-party-unit-test-frameworks.md). After you restart Visual Studio, reopen your solution to create your unit tests, and then select your installed frameworks here:  
+ **答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。 重新啟動 Visual Studio 之後，重新開啟方案以建立您的單元測試，然後在這裡選取您已安裝的架構：  
   
- ![Select other installed unit test framework](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
+ ![選取其他已安裝的單元測試架構](../test/media/createunittestsdialogextensions.png "CreateUnitTestsDialogExtensions")  
   
- Your unit test stubs will be created using the selected framework.
+ 將會使用所選擇的架構來建立您的單元測試虛設常式。
 

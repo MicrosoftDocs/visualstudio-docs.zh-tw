@@ -1,5 +1,5 @@
 ---
-title: IDebugThread2::Suspend | Microsoft Docs
+title: "IDebugThread2::Suspend |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3926456c8b625102dfc5df4d8818f3cacc3a2ce3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
-Suspends a thread.  
+暫止的執行緒。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT Suspend (   
@@ -54,18 +54,18 @@ HRESULT Suspend (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pdwSuspendCount`  
- [out] Returns the suspend count after the suspend operation.  
+ [out]擱置作業之後，傳回的暫停計數。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Each call to this method increments the suspend count above 0. This suspend count is displayed in the **Threads** debug window.  
+## <a name="remarks"></a>備註  
+ 每次呼叫此方法的暫停計數遞增 0 以上。 此暫停計數會顯示在**執行緒**偵錯視窗。  
   
- For each call to this method, there must be a later call to the [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) method.  
+ 每次呼叫此方法，必須要有稍後呼叫[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
  [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

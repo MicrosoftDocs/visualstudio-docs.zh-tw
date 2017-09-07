@@ -8,8 +8,8 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.mt:
 - cs-cz
@@ -17,10 +17,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: de593d01fbdec276e0b0e45d5ac757ae83e464c1
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: b6ad14dad1b177bc6e89d43df550626334c65291
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>How to: Save and Edit Connection Strings

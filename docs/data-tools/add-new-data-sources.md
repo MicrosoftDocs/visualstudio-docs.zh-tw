@@ -13,8 +13,8 @@ helpviewer_keywords:
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 56
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -32,10 +32,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: cfa3f7c2609414076c1d8f9c6e0f1c9024edc4b4
-ms.openlocfilehash: 140155ad1f6cb09f98b2e812b274a0b98306f6c9
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 9a66d0ffd2ed77b8b64a3dc0000db81bc7270ae5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="add-new-data-sources"></a>Add new data sources

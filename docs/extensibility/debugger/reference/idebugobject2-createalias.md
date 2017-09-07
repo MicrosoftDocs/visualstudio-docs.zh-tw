@@ -1,5 +1,5 @@
 ---
-title: IDebugObject2::CreateAlias | Microsoft Docs
+title: "IDebugObject2::CreateAlias |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 97bf05023ab5e97ae845ff6d62f873719e997e43
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
-Creates a unique ID or alias for this object or returns an existing alias.  
+建立的唯一識別碼或此物件的別名，或傳回現有的別名。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT CreateAlias(  
@@ -54,16 +54,16 @@ int CreateAlias(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ppAlias`  
- [out] The new (or existing) alias.  
+ [out]新的 （或現有的） 別名。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- An alias is a label that represents a particular object while the object is in memory.  
+## <a name="remarks"></a>備註  
+ 別名是代表特定的物件，而物件是在記憶體中的標籤。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
