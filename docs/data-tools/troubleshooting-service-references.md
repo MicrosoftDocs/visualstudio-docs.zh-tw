@@ -1,101 +1,117 @@
 ---
-title: "Troubleshooting Service References | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther"
-  - "msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo"
-  - "msvse_wcf.Err.ErrorOnOK"
-  - "msvse_wcf.cfg.ConfigurationErrorsException"
-helpviewer_keywords: 
-  - "service references [Visual Studio], troubleshooting"
-  - "WCF services, troubleshooting"
+title: Troubleshooting Service References | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- msvse_wcf.Err.ReferenceGroup_NamespaceConflictsOther
+- msvse_wcf.Err.AddSvcRefDlg_NothingSelectedOnGo
+- msvse_wcf.Err.ErrorOnOK
+- msvse_wcf.cfg.ConfigurationErrorsException
+helpviewer_keywords:
+- service references [Visual Studio], troubleshooting
+- WCF services, troubleshooting
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 caps.latest.revision: 22
-caps.handback.revision: 20
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: HT
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 4ad3f60e52964f3e1e7b0919c5d5e18ecd5d3056
+ms.contentlocale: zh-tw
+ms.lasthandoff: 09/07/2017
+
 ---
-# Troubleshooting Service References
-本主題列出在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用 [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 或 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 參考時可能發生的常見問題。  
+# <a name="troubleshooting-service-references"></a>Troubleshooting Service References
+This topic lists common issues that may occur when you are working with [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] or [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] references in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
   
-## 從服務傳回資料時發生錯誤  
- 當您從服務傳回 `DataSet` 或 `DataTable` 時，可能會收到「超出傳入訊息的訊息大小配額上限」例外狀況。  根據預設，某些繫結的 `MaxReceivedMessageSize` 屬性會設定為相對而言較小的值，以降低阻絕服務攻擊的危險。  您可以增加此值以避免出現例外狀況。  如需詳細資訊，請參閱 <xref:System.ServiceModel.BasicHttpBinding.MaxReceivedMessageSize%2A>。  
+## <a name="error-returning-data-from-a-service"></a>Error Returning Data from a Service  
+ When you return a `DataSet` or `DataTable` from a service, you may receive a "The maximum size quota for incoming messages has been exceeded" exception. By default, the `MaxReceivedMessageSize` property for some bindings is set to a relatively small value to limit exposure to denial-of-service attacks. You can increase this value to prevent the exception. For more information, see <xref:System.ServiceModel.HttpBindingBase.MaxReceivedMessageSize%2A>.  
   
- 若要更正這個錯誤：  
+ To fix this error:  
   
-1.  在 \[**方案總管**\] 中，按兩下以開啟 app.config 檔。  
+1.  In **Solution Explorer**, double-click the app.config file to open it.  
   
-2.  找出 `MaxReceivedMessageSize` 屬性，並將它變更為較大的值。  
+2.  Locate the `MaxReceivedMessageSize` property and change it to a larger value.  
   
-## 在我的方案中找不到服務  
- 當您按一下 \[**加入服務參考**\] 對話方塊中的 \[**探索**\] 按鈕時，方案中的一個或多個 WCF 服務庫專案沒有顯示在服務清單中。  如果服務庫已加入至方案，但尚未編譯，就會發生此錯誤。  
+## <a name="cannot-find-a-service-in-my-solution"></a>Cannot Find a Service in My Solution  
+ When you click the **Discover** button in the **Add Service References** dialog box, one or more WCF Service Library projects in the solution do not appear in the services list. This can occur if a Service Library has been added to the solution but has not yet been compiled.  
   
- 若要更正這個錯誤：  
+ To fix this error:  
   
--   在 \[**方案總管**\] 中，以滑鼠右鍵按一下該 WCF 服務庫專案，然後按一下 \[**建置**\]。  
+-   In **Solution Explorer**, right-click the WCF Service Library project and click **Build**.  
   
-## 透過遠端桌面存取服務時發生錯誤  
- 當使用者透過遠端桌面連線存取 Web 裝載的 WCF 服務，而且使用者沒有系統管理權限時，則會使用 NTLM 驗證。  如果使用者沒有系統管理權限，就會收到下列錯誤訊息：「HTTP 要求未經用戶端驗證配置 'Anonymous' 的授權。  接收自伺服器的驗證標頭為 'NTLM'」。  
+## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Error Accessing a Service over a Remote Desktop  
+ When a user accesses a Web-hosted WCF service over a remote desktop connection and the user does not have administrative permissions, NTLM authentication is used. If the user does not have administrative permissions, the user may receive the following error message: "The HTTP request is unauthorized with client authentication scheme 'Anonymous'. The authentication header received from the server was 'NTLM'."  
   
- 若要更正這個錯誤：  
+ To fix this error:  
   
-1.  在網站專案中，開啟 \[**屬性**\] 頁面。  
+1.  In the Web site project, open the **Properties** pages.  
   
-2.  清除 \[**起始選項**\] 索引標籤中的 \[**NTLM 驗證**\] 核取方塊。  
+2.  On the **Start Options** tab, clear the **NTLM Authentication** check box.  
   
     > [!NOTE]
-    >  針對只包含 WCF 服務的網站，才應關閉 NTLM 驗證。  WCF 服務的安全性是透過 web.config 檔案中的組態來管理。  因此，不需要 NTLM 驗證。  
+    >  You should turn off NTLM authentication only for Web sites that exclusively contain WCF services. Security for WCF services is managed through the configuration in the web.config file. This makes NTLM authentication unnecessary.  
   
- 如需詳細資訊，請參閱[疑難排解例外狀況：System.ServiceModel.Security.MessageSecurityException](../misc/troubleshooting-exceptions-system-servicemodel-security-messagesecurityexception.md)。  
+## <a name="access-level-for-generated-classes-setting-has-no-effect"></a>Access Level for Generated Classes Setting Has No Effect  
+ Setting the **Access level for generated classes** option in the **Configure Service References** dialog box to **Internal** or **Friend** may not always work. Even though the option appears to be set in the dialog box, the resulting support classes will be generated with an access level of `Public`.  
   
-## 產生之類別設定的存取層級沒有作用  
- 將 \[**設定服務參考**\] 對話方塊中的 \[**產生的類別的存取層級**\] 選項設定為 \[**內部**\] 或 \[**Friend**\] 不一定都有作用。  即使在對話方塊中已設定選項，產生的支援類別仍會具有 `Public` 存取層級。  
+ This is a known limitation of certain types, such as those serialized using the <xref:System.Xml.Serialization.XmlSerializer>.  
   
- 這是特定型別的已知限制，例如使用 <xref:System.Xml.Serialization.XmlSerializer> 序列化的型別。  
+## <a name="error-debugging-service-code"></a>Error Debugging Service Code  
+ When you step into the code for a WCF service from client code, you may receive an error related to missing symbols. This can occur when a service that was part of your solution was moved or removed from the solution.  
   
-## 偵錯服務程式碼時發生錯誤  
- 當您從用戶端程式碼逐步執行 WCF 服務的程式碼時，可能會接到與遺失符號相關的錯誤。  當屬於方案一部分的服務移至他處或從方案移除時，便可能會發生這個錯誤。  
+ When you first add a reference to a WCF service that is part of the current solution, an explicit build dependency is added between the service project and the service client project. This guarantees that that the client always accesses up-to-date service binaries, which is especially important for debugging scenarios such as stepping from client code into service code.  
   
- 當您一開始加入屬於目前方案一部分之 WCF 服務的參考時，會在服務專案和服務用戶端專案之間加入明確的組建相依性。  這可確保用戶端永遠存取最新的服務二進位檔，這對於像是從用戶端程式碼逐步執行服務程式碼之類的偵錯案例而言特別重要。  
+ If the service project is removed from the solution, this explicit build dependency is invalidated. Visual Studio can no longer guarantee that that the service project is rebuilt as necessary.  
   
- 如果服務專案已從方案移除，此明確組建相依性就會變成無效。  Visual Studio 無法再保證服務專案會依所需重建。  
+ To fix this error, you have to manually rebuild the service project:  
   
- 若要修正此錯誤，您必須手動重建服務專案：  
+1.  On the **Tools** menu, click **Options**.  
   
-1.  在 \[**工具**\] 功能表上按一下 \[**選項**\]。  
+2.  In the **Options** dialog box, expand **Projects and Solutions**, and then select **General**.  
   
-2.  在 \[**選項**\] 對話方塊中，展開 \[**專案和方案**\]，然後選取 \[**一般**\]。  
+3.  Make sure that the **Show advanced build configurations** check box is selected, and then click **OK**.  
   
-3.  確定已經選取 \[**顯示進階組建組態**\] 核取方塊，然後按一下 \[**確定**\]。  
+4.  Load the WCF service project. For more information, see [NIB How to: Create Multi-Project Solutions](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).  
   
-4.  載入 WCF 服務專案。  如需詳細資訊，請參閱 [如何：建立多專案的方案](http://msdn.microsoft.com/zh-tw/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)。  
+5.  In the **Configuration Manager** dialog box, set the **Active solution configuration** to **Debug**. For more information, see [How to: Create and Edit Configurations](../ide/how-to-create-and-edit-configurations.md).  
   
-5.  在 \[**組態管理員**\] 對話方塊中，將 \[**使用中的方案組態**\] 設定為 \[**偵錯**\]。  如需詳細資訊，請參閱 [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)。  
+6.  In **Solution Explorer**, select the WCF service project.  
   
-6.  在 \[**方案總管**\] 中，選取 WCF 服務專案。  
+7.  On the **Build** menu, click **Rebuild** to rebuild the WCF service project.  
   
-7.  在 \[**建置**\] 功能表上，按一下 \[**重建**\] 來重建 WCF 服務專案。  
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services Do Not Display in the Browser  
+ When it attempts to view an XML representation of data in a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)], Internet Explorer may misinterpret the data as an RSS feed. You must make sure that the option to display RSS feeds is disabled.  
   
-## 瀏覽器中未顯示 WCF 資料服務  
- 當它嘗試在 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]中檢視資料的 XML 表示時，Internet Explorer 可能會將資料錯誤解譯為 RSS 摘要。  您必須確定顯示 RSS 饋送的選項已停用。  
+ To fix this error, disable RSS feeds:  
   
- 若要修正此錯誤，請停用 RSS 饋送：  
+1.  In Internet Explorer, on the **Tools** menu, click **Internet Options**.  
   
-1.  在 Internet Explorer 的 \[**工具**\] 功能表上，按一下 \[**網際網路選項**\]。  
+2.  On the **Content** tab, in the **Feeds** section, click **Settings**.  
   
-2.  在 \[**內容**\] 索引標籤的 \[**摘要**\] 區段中，按一下 \[**設定**\]。  
+3.  In the **Feed Settings** dialog box, clear the **Turn on feed reading view** check box, and then click **OK**.  
   
-3.  在 \[**摘要設定**\] 對話方塊中，清除 \[**啟動摘要讀取檢視**\] 核取方塊，然後按一下 \[**確定**\]。  
+4.  Click **OK** to close the **Internet Options** dialog box.  
   
-4.  按一下 \[**確定**\]，關閉 \[**網際網路選項**\] 對話方塊。  
-  
-## 請參閱  
- [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Consuming ASMX and WCF Services Sample](http://msdn.microsoft.com/zh-tw/788ddf2c-2ac1-416b-8789-2fbb1e29b8fe)
+## <a name="see-also"></a>See Also  
+ [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

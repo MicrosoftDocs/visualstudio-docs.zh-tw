@@ -5,7 +5,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 03c2a8902e7687be4da40d95f408eda7e4086acb
 ms.openlocfilehash: 36ac77e9c563bd7e0019cffdd302a7ae7d68f663
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript

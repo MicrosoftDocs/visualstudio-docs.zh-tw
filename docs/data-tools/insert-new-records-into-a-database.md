@@ -17,8 +17,8 @@ helpviewer_keywords:
 - saving data
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -36,10 +36,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
-ms.openlocfilehash: 48437817d5803be4d098c55cfd6200b857899bcf
+ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
+ms.openlocfilehash: 500dfd5e51bb638a27cd90f34672760a95bc0b3a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="insert-new-records-into-a-database"></a>Insert new records into a database

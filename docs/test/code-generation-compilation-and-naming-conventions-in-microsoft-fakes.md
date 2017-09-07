@@ -1,5 +1,5 @@
 ---
-title: Code generation, compilation, and naming conventions in Microsoft Fakes | Microsoft Docs
+title: "Microsoft Fakes 中的程式碼產生、編譯和命名慣例 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,52 +30,52 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f68221fd37da500993e5afb9d3ee7e847f794a28
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Code generation, compilation, and naming conventions in Microsoft Fakes
-This topic discusses options and issues in Fakes code generation and compilation, and describes the naming conventions for Fakes generated types, members, and parameters.  
+# <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
+本主題討論產生與編譯 Fakes 程式碼的選項和問題，並且描述 Fakes 產生類型、成員和參數的命名慣例。  
   
  **Requirements**  
   
--   Visual Studio Enterprise  
+-   Visual Studio 企業版  
   
-##  <a name="BKMK_In_this_topic"></a> In this topic  
+##  <a name="BKMK_In_this_topic"></a>本主題內容  
   
--   [Code generation and compilation](#BKMK_Code_generation_and_compilation)  
+-   [程式碼產生和編譯](#BKMK_Code_generation_and_compilation)  
   
--   [Configuring code generation of stubs](#BKMK_Configuring_code_generation_of_stubs)
+-   [設定 Stub 的程式碼產生](#BKMK_Configuring_code_generation_of_stubs)
   
--   [Type filtering](#BKMK_Type_filtering)
+-   [類型篩選](#BKMK_Type_filtering)
   
--   [Stubbing concrete classes and virtual methods](#BKMK_Stubbing_concrete_classes_and_virtual_methods)
+-   [設定具象類別及虛擬方法的 Stub](#BKMK_Stubbing_concrete_classes_and_virtual_methods)
   
--   [Internal types](#BKMK_Internal_types)
+-   [內部類型](#BKMK_Internal_types)
   
--   [Optimizing build times](#BKMK_Optimizing_build_times)
+-   [最佳化建置時間](#BKMK_Optimizing_build_times)
   
--   [Avoiding assembly name clashing](#BKMK_Avoiding_assembly_name_clashing)  
+-   [避免組件名稱發生衝突](#BKMK_Avoiding_assembly_name_clashing)  
   
--   [Fakes naming conventions](#BKMK_Fakes_naming_conventions)  
+-   [Fakes 命名慣例](#BKMK_Fakes_naming_conventions)  
   
--   [Shim type and stub type naming conventions](#BKMK_Shim_type_and_stub_type_naming_conventions)
+-   [填充碼類型和 Stub 類型命名慣例](#BKMK_Shim_type_and_stub_type_naming_conventions)
   
--   [Shim delegate property or stub delegate field naming conventions](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions)
+-   [填充碼委派屬性或 Stub 委派欄位命名慣例](#BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions)
   
--   [Parameter type naming conventions](#BKMK_Parameter_type_naming_conventions)
+-   [參數類型命名慣例](#BKMK_Parameter_type_naming_conventions)
   
--   [Recursive rules](#BKMK_Recursive_rules)  
+-   [遞迴規則](#BKMK_Recursive_rules)  
   
--   [External resources](#BKMK_External_resources)  
+-   [外部資源](#BKMK_External_resources)  
   
--   [Guidance](#BKMK_Guidance)  
+-   [指引](#BKMK_Guidance)  
   
-##  <a name="BKMK_Code_generation_and_compilation"></a> Code generation and compilation  
+##  <a name="BKMK_Code_generation_and_compilation"></a> 程式碼產生和編譯  
   
-###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> Configuring code generation of stubs  
- The generation of stub types is configured in an XML file that has the .fakes file extension. The Fakes framework integrates in the build process through custom MSBuild tasks and detects those files at build time. The Fakes code generator compiles the stub types into an assembly and adds the reference to the project.  
+###  <a name="BKMK_Configuring_code_generation_of_stubs"></a> 設定 Stub 的程式碼產生  
+ 虛設常式類型會在有 .fakes 副檔名的 XML 檔中設定產生 。 Fakes 框架會在建置流程中透過自訂 MSBuild 工作整合，並在建置期間偵測這些檔案。 Fakes 程式碼產生器會編譯虛設常式類型至組件內，並加入專案參考。  
   
- The following example illustrates stub types defined in FileSystem.dll:  
+ 下列範例說明在 FileSystem.dll 中定義的虛設常式類型：  
   
 ```xml  
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">  
@@ -84,10 +84,10 @@ This topic discusses options and issues in Fakes code generation and compilation
   
 ```  
   
-###  <a name="BKMK_Type_filtering"></a> Type filtering  
- Filters can be set in the .fakes file to restrict which types should be stubbed. You can add an unbounded number of Clear, Add, Remove elements under the StubGeneration element to build the list of selected types.  
+###  <a name="BKMK_Type_filtering"></a> 類型篩選  
+ 篩選條件可以在 .fakes 檔案中設定，以限制應該設定哪些虛設常式類型。 您可以在 StubGeneration 項目下加入 Clear、Add、Remove 項目的未繫結數目，已建置所選類型的清單。  
   
- For example, this .fakes file generates stubs for types under the System and System.IO namespaces, but excludes any type containing "Handle" in System:  
+ 例如，這個 .fakes 檔案會針對在 System 和 System.IO 命名空間下的類型產生虛設常式，但是排除 System 中任何包含 "Handle" 的類型：  
   
 ```xml  
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">  
@@ -103,30 +103,30 @@ This topic discusses options and issues in Fakes code generation and compilation
 </Fakes>  
 ```  
   
- The filter strings use a simple grammar to define how the matching should be done:  
+ 篩選字串會使用簡單文法定義應該如何完成比對：  
   
--   Filters are case-insensitive by default; filters perform a substring matching:  
+-   篩選條件預設不區分大小寫；篩選條件會執行子字串比對：  
   
-     `el` matches "hello"  
+     `el` 比對 "hello"  
   
--   Adding `!` to the end of the filter will make it a precise case-sensitive match:  
+-   將 `!` 加入篩選條件結尾會讓它變成精確區分大小寫的比對：  
   
-     `el!` does not match "hello"  
+     `el!` 不符合 "hello"  
   
-     `hello!` matches "hello"  
+     `hello!` 比對符合 "hello"  
   
--   Adding `*` to the end of the filter will make it match the prefix of the string:  
+-   將 `*` 加入篩選條件的結尾會讓它符合字串的前置詞：  
   
-     `el*` does not match "hello"  
+     `el*` 不符合 "hello"  
   
-     `he*` matches "hello"  
+     `he*` 比對符合 "hello"  
   
--   Multiple filters in a semicolon-separated list are combined as a disjunction:  
+-   以分號分隔之清單中的多個篩選條件會結合為分離：  
   
-     `el;wo` matches "hello" and "world"  
+     `el;wo` 比對符合 "hello" 和 "world"  
   
-###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> Stubbing concrete classes and virtual methods  
- By default, stub types are generated for all non-sealed classes. It is possible to restrict the stub types to abstract classes through the .fakes configuration file:  
+###  <a name="BKMK_Stubbing_concrete_classes_and_virtual_methods"></a> 設定具象類別及虛擬方法的 Stub  
+ 預設會為所有非密封類別產生虛設常式類型。 透過 .fakes 組態檔可將虛設常式類型限制為抽象類別：  
   
 ```xml  
 <Fakes xmlns="http://schemas.microsoft.com/fakes/2011/">  
@@ -142,8 +142,8 @@ This topic discusses options and issues in Fakes code generation and compilation
 </Fakes>  
 ```  
   
-###  <a name="BKMK_Internal_types"></a> Internal types  
- The Fakes code generator will generate shim types and stub types for types that are visible to the generated Fakes assembly. To make internal types of a shimmed assembly visible to Fakes and your test assembly, add  <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attributes to the shimmed assembly code that gives visibility to the generated Fakes assembly and to the test assembly. Here's an example:  
+###  <a name="BKMK_Internal_types"></a> 內部類型  
+ Fakes 程式碼產生器會針對所產生之 Fakes 組件的可見類型產生填充碼和虛設常式類型。 若要讓 Fakes 和測試組件看見填充組件的內部類型，請將 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性加入填充組件的程式碼，以提供可視性給所產生的 Fakes 組件和測試組件。 以下為範例：  
   
 ```csharp  
 // FileSystem\AssemblyInfo.cs  
@@ -151,13 +151,13 @@ This topic discusses options and issues in Fakes code generation and compilation
 [assembly: InternalsVisibleTo("FileSystem.Tests")]  
 ```  
   
- **Internal types in strongly named assemblies**  
+ **強式名稱組件中的內部類型**  
   
- If the shimmed assembly is strongly named and you want access internal types of the assembly:  
+ 如果填充組件為強式名稱，而且您想要存取組件的內部類型：  
   
--   Both your test assembly and the Fakes assembly must be strongly named.  
+-   您的測試組件和 Fakes 組件都必須具有強式名稱。  
   
--   You must add the public keys of the test and Fakes assembly to the **InternalsVisibleToAttribute** attributes in the shimmed assemblies. Here's how our example attributes in the shimmed assembly code would look when the shimmed assembly is strongly named:  
+-   您必須將測試的公開金鑰和 Fakes 組件加入至填充組件的 **InternalsVisibleToAttribute** 屬性。 以下說明在填充組件程式碼以強式名稱命名時，填充組件程式碼中的範例屬性樣貌：  
   
     ```csharp  
     // FileSystem\AssemblyInfo.cs  
@@ -167,15 +167,15 @@ This topic discusses options and issues in Fakes code generation and compilation
         PublicKey=<Test_assembly_public_key>)]  
     ```  
   
- If the shimmed assembly is strongly named, the Fakes framework will automatically strongly sign the generated Fakes assembly. You have to strong sign the test assembly. See [Creating and Using Strong-Named Assemblies](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+ 如果填充組件具有強式名稱，則 Fakes 架構會自動強式簽署產生的 Fakes 組件。 您必須強式簽署測試組件。 請參閱[建立和使用強式名稱的組件](http://msdn.microsoft.com/Library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9)。  
   
- The Fakes framework uses the same key to sign all generated assemblies, so you can use this snippet as a starting point to add the **InternalsVisibleTo** attribute for the fakes assembly to your shimmed assembly code.  
+ Fakes 架構會使用相同金鑰來簽署所有產生的組件，因此，您可以使用這個程式碼片段做為起點，來將 Fakes 組件的 **InternalsVisibleTo** 屬性加入至填充組件程式碼。  
   
 ```csharp  
 [assembly: InternalsVisibleTo("FileSystem.Fakes, PublicKey=0024000004800000940000000602000000240000525341310004000001000100e92decb949446f688ab9f6973436c535bf50acd1fd580495aae3f875aa4e4f663ca77908c63b7f0996977cb98fcfdb35e05aa2c842002703cad835473caac5ef14107e3a7fae01120a96558785f48319f66daabc862872b2c53f5ac11fa335c0165e202b4c011334c7bc8f4c4e570cf255190f4e3e2cbc9137ca57cb687947bc")]  
 ```  
   
- You can specify a different public key for the Fakes assembly, such as a key you have created for the shimmed assembly, by specifying the full path to the **.snk** file that contains the alternate key as the `KeyFile` attribute value in the `Fakes`\\`Compilation` element of the **.fakes** file. For example:  
+ 您可以針對 Fakes 組件指定不同的公用金鑰，例如您已針對填充組件建立的金鑰，方法是指定 **.snk** 檔案的完整路徑，其中包含替代金鑰做為 **.fakes** 檔案之 `Fakes`\\`Compilation` 項目中的 `KeyFile` 屬性值。 例如:   
   
 ```xml  
 <-- FileSystem.Fakes.fakes -->  
@@ -185,7 +185,7 @@ This topic discusses options and issues in Fakes code generation and compilation
   
 ```  
   
- You then have to use the public key of the alternate **.snk** file as the second parameter of the InternalVisibleTo attribute for the Fakes assembly in the shimmed assembly code:  
+ 接著您必須在填充組件程式碼中，使用替代 **.snk** 檔案的公開金鑰，做為 Fakes 組件中 InternalVisibleTo 屬性的第二個參數：  
   
 ```csharp  
 // FileSystem\AssemblyInfo.cs  
@@ -195,35 +195,35 @@ This topic discusses options and issues in Fakes code generation and compilation
     PublicKey=<Test_assembly_public_key>)]  
 ```  
   
- In the example above, the values `Alternate_public_key` and the `Test_assembly_public_key` can be the same.  
+ 在上面的範例中，`Alternate_public_key` 和 `Test_assembly_public_key` 兩個值可以是相同的。  
   
-###  <a name="BKMK_Optimizing_build_times"></a> Optimizing build times  
- The compilation of Fakes assemblies can significantly increase your build time. You can minimize the build time by generating the Fakes assemblies for .NET System assemblies and third-party assemblies in a separate centralized project. Because such assemblies rarely change on your machine, you can reuse the generated Fakes assemblies in other projects.  
+###  <a name="BKMK_Optimizing_build_times"></a> 最佳化建置時間  
+ 編譯 Fakes 組件可能大幅增加建置時間。 您也可以藉由在不同的集中式專案中產生 .NET System 組件的 Fake 組件和協力廠商組件，以最小化建置時間。 因為這類組件在電腦上極少變動，您可以在其他專案中重複使用產生的 Fakes 組件。  
   
- From your unit test projects, you can simply take a reference to the compiled Fakes assemblies that are placed under the FakesAssemblies in the project folder.  
+ 從單元測試專案中，您可以取得已編譯 Fakes 組件的參考，這些組件是放置在專案資料夾中的 FakesAssemblies 底下。  
   
-1.  Create a new Class Library with the .NET runtime version matching your test projects. Let's call it Fakes.Prebuild. Remove the class1.cs file from the project, not needed.  
+1.  建立 .NET 執行階段版本與測試專案相符的新類別庫， 並稱它為 Fakes.Prebuild。 從專案刪除不需要的 class1.cs 檔。  
   
-2.  Add reference to all the System and third-party assemblies you need Fakes for.  
+2.  將參考加入您所需之 Fakes 的所有系統和協力廠商組件。  
   
-3.  Add a .fakes file for each of the assemblies and build.  
+3.  為每個組件和組建加入 .fakes 檔案。  
   
-4.  From your test project  
+4.  從您的測試專案  
   
-    -   Make sure that you have a reference to the Fakes runtime DLL:  
+    -   確定您有 Fakes 執行階段 DLL 的參考：  
   
          C:\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll  
   
-    -   For each assembly that you have created Fakes for, add a reference to the corresponding DLL file in the Fakes.Prebuild\FakesAssemblies folder of your project.  
+    -   對於您已建立 Fakes 的每個組件，加入專案之 Fakes.Prebuild\FakesAssemblies 資料夾中對應 DLL 檔案的參考。  
   
-###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> Avoiding assembly name clashing  
- In a Team Build environment, all build outputs are merged into a single directory. In the case of multiple projects using Fakes, it might happen that Fakes assemblies from different version override each other. For example, TestProject1 fakes mscorlib.dll from the .NET Framework 2.0 and TestProject2 fakes mscorlib.dll for the .NET Framework 4 would both yield to a mscorlib.Fakes.dll Fakes assembly.  
+###  <a name="BKMK_Avoiding_assembly_name_clashing"></a> 避免組件名稱發生衝突  
+ 在 Team Build 環境中，所有組建輸出會合併到單一目錄。 在多個專案使用 Fakes 的情況下，可能會發生不同版本的 Fakes 組件彼此覆寫的情形。 例如，.NET Framework 2.0 的 TestProject1 fakes mscorlib.dll 與 .NET Framework 4 的 TestProject2 fakes mscorlib.dll 都會產生 mscorlib.Fakes.dll Fakes 組件。  
   
- To avoid this issue, Fakes should automatically create version qualified Fakes assembly names for non-project references when adding the .fakes files. A version-qualified Fakes assembly name embeds a version number when you create the Fakes assembly name:  
+ 若要避免這個問題，當加入 .fakes 檔時，Fake 應該會自動為非專案參考建立版本限定的 Fake 組件名稱。 當您建立 Fakes 組件名稱時，版本限定的 Fakes 組件名稱會嵌入版本號碼：  
   
- Given an assembly MyAssembly and a version 1.2.3.4, the Fakes assembly name is MyAssembly.1.2.3.4.Fakes.  
+ 假設組件 MyAssembly 和版本 1.2.3.4，則 Fakes 組件名稱為 MyAssembly.1.2.3.4.Fakes。  
   
- You can change or remove this version by the editing the Version attribute of the Assembly element in the .fakes:  
+ 您可以透過編輯 .fakes 中 Assembly 項目的 Version 屬性來變更或移除這個版本：  
   
 ```xml  
 attribute of the Assembly element in the .fakes:  
@@ -234,92 +234,92 @@ attribute of the Assembly element in the .fakes:
   
 ```  
   
-##  <a name="BKMK_Fakes_naming_conventions"></a> Fakes naming conventions  
+##  <a name="BKMK_Fakes_naming_conventions"></a> Fakes 命名慣例  
   
-###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> Shim type and stub type naming conventions  
- **Namespaces**  
+###  <a name="BKMK_Shim_type_and_stub_type_naming_conventions"></a> 填充碼類型和 Stub 類型命名慣例  
+ **命名空間**  
   
--   .Fakes suffix is added to the namespace.  
+-   .Fakes 後置字元會加入命名空間。  
   
-     For example, `System.Fakes` namespace contains the shim types of System namespace.  
+     例如， `System.Fakes` 命名空間包含系統命名空間的填充碼類型。  
   
--   Global.Fakes contains the shim type of the empty namespace.  
+-   Global.Fakes 包含空白命名空間的填充碼類型。  
   
- **Type names**  
+ **類型名稱**  
   
--   Shim prefix is added to the type name to build the shim type name.  
+-   填充碼前置詞會加入類型名稱，以建置填充碼類型名稱。  
   
-     For example, ShimExample is the shim type of the Example type.  
+     例如，ShimExample 是範例類型的填充碼類型。  
   
--   Stub prefix is added to the type name to build the stub type name.  
+-   虛設常式前置詞會加入類型名稱，以建置虛設常式類型名稱。  
   
-     For example, StubIExample is the stub type of the IExample type.  
+     例如，StubIExample 是 IExample 類型的虛設常式類型。  
   
- **Type Arguments and Nested Type Structures**  
+ **類型引數和巢狀類型結構**  
   
--   Generic type arguments are copied.  
+-   會複製泛型型別引數。  
   
--   Nested type structure is copied for shim types.  
+-   會針對填充碼類型複製巢狀類型結構。  
   
-###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> Shim delegate property or stub delegate field naming conventions  
- **Basic rules** for field naming, starting from an empty name:  
+###  <a name="BKMK_Shim_delegate_property_or_stub_delegate_field_naming_conventions"></a> 填充碼委派屬性或 stub 委派欄位命名慣例  
+ 欄位命名適用的**基本規則**，從空白名稱開始：  
   
--   The method name is appended.  
+-   會附加方法名稱。  
   
--   If the method name is an explicit interface implementation, the dots are removed.  
+-   如果方法名稱是明確的介面實作，則會將點移除。  
   
--   If the method is generic, `Of`*n* is appended where *n* is the number of generic method arguments.  
+-   如果方法為泛型，則會附加 `Of`*n*，其中 *n* 是泛型方法引數的數目。  
   
- **Special method names** such as property getter or setters are treated as described in the following table.  
+ **特殊方法名稱**，例如屬性 getter 或 setter，會依照下表所述加以處理。  
   
-|If method is...|Example|Method name appended|  
+|如果方法是...|範例|附加的方法名稱|  
 |-------------------|-------------|--------------------------|  
-|A **constructor**|`.ctor`|`Constructor`|  
-|A static **constructor**|`.cctor`|`StaticConstructor`|  
-|An **accessor** with method name composed of two parts separated by "_" (such as property getters)|*kind_name* (common case, but not enforced by ECMA)|*NameKind*, where both parts have been capitalized and swapped|  
-||Getter of property `Prop`|`PropGet`|  
-||Setter of property `Prop`|`PropSet`|  
-||Event adder|`Add`|  
-||Event remover|`Remove`|  
-|An **operator** composed of two parts|`op_name`|`NameOp`|  
-|For example: + operator|`op_Add`|`AddOp`|  
-|For a **conversion operator**, the return type is appended.|`T op_Implicit`|`ImplicitOpT`|  
+|**建構函式**|`.ctor`|`Constructor`|  
+|靜態**建構函式**|`.cctor`|`StaticConstructor`|  
+|方法名稱由兩個以 "_" 分隔的部分 (例如屬性 getter) 組成的**存取子**|*kind_name* (一般情況，但 ECMA 不會強制執行)|*NameKind*，其中這兩個部分會改成大寫並互換|  
+||`Prop` 屬性的 getter|`PropGet`|  
+||`Prop` 屬性的 setter|`PropSet`|  
+||事件 adder|`Add`|  
+||事件 remover|`Remove`|  
+|由兩個部分組成的**運算子**|`op_name`|`NameOp`|  
+|例如：+ 運算子|`op_Add`|`AddOp`|  
+|若是**轉換運算子**，會附加傳回類型。|`T op_Implicit`|`ImplicitOpT`|  
   
- **Notes**  
+ **備註**  
   
--   **Getters and setters of indexers** are treated similarly to the property. The default name for an indexer is `Item`.  
+-   **索引子的 getter 和 setter** 是以類似屬性的方式來處理。 索引子的預設名稱是 `Item`。  
   
--   **Parameter type** names are transformed and concatenated.  
+-   會轉換並串連**參數類型**名稱。  
   
--   **Return type** is ignored unless there's an overload ambiguity. If this is the case, the return type is appended at the end of the name  
+-   除非有多載模稜兩可的情況，否則會忽略**傳回型別**。 如果是這種情況，則傳回型別將會附加在名稱結尾。  
   
-###  <a name="BKMK_Parameter_type_naming_conventions"></a> Parameter type naming conventions  
+###  <a name="BKMK_Parameter_type_naming_conventions"></a> 參數類型命名慣例  
   
-|Given|Appended string is...|  
+|假設|附加的字串是...|  
 |-----------|-------------------------|  
-|A **type**`T`|T<br /><br /> The namespace, nested structure, and generic tics are dropped.|  
-|An **out parameter**`out T`|`TOut`|  
-|A **ref parameter** `ref T`|`TRef`|  
-|An **array type**`T[]`|`TArray`|  
-|A **multi-dimensional array** type `T[ , , ]`|`T3`|  
-|A **pointer** type `T*`|`TPtr`|  
-|A **generic type**`T<R1, ...>`|`TOfR1`|  
-|A **generic type argument**`!i` of type `C<TType>`|`Ti`|  
-|A **generic method argument**`!!i` of method `M<MMethod>`|`Mi`|  
-|A **nested type**`N.T`|`N` is appended, then `T`|  
+|**類型**`T`|T<br /><br /> 命名空間、巢狀結構和泛型 tics 會被丟棄。|  
+|**out 參數**`out T`|`TOut`|  
+|**ref 參數** `ref T`|`TRef`|  
+|**陣列類型**`T[]`|`TArray`|  
+|**多維陣列**類型 `T[ , , ]`|`T3`|  
+|**指標**類型 `T*`|`TPtr`|  
+|**泛型類型**`T<R1, ...>`|`TOfR1`|  
+|類型 `C<TType>` 的**泛型類型引數**`!i`|`Ti`|  
+|方法 `M<MMethod>` 的**泛型方法引數**`!!i`|`Mi`|  
+|**巢狀類型**`N.T`|會附加 `N`，後接 `T`|  
   
-###  <a name="BKMK_Recursive_rules"></a> Recursive rules  
- The following rules are applied recursively:  
+###  <a name="BKMK_Recursive_rules"></a> 遞迴規則  
+ 下列規則會遞迴套用：  
   
--   Because Fakes uses C# to generate the Fakes assemblies, any character that would produce an invalid C# token is escaped to "_" (underscore).  
+-   由於 Fakes 會使用 C# 來產生 Fakes 組件，因此任何會產生無效 C# 語彙基元的字元都會逸出為 "_" (底線)。  
   
--   If a resulting name clashes with any member of the declaring type, a numbering scheme is used by appending a two-digit counter, starting at 01.  
+-   如果產生的名稱與宣告類型的任何成員發生衝突，則會使用編號配置，方法是附加兩位數計數器，從 01 開始。  
   
-##  <a name="BKMK_External_resources"></a> External resources  
+##  <a name="BKMK_External_resources"></a> 外部資源  
   
-###  <a name="BKMK_Guidance"></a> Guidance  
- [Testing for Continuous Delivery with Visual Studio 2012 - Chapter 2: Unit Testing: Testing the Inside](http://go.microsoft.com/fwlink/?LinkID=255188)  
+###  <a name="BKMK_Guidance"></a> 指引  
+ [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>See Also  
- [Isolating Code Under Test with Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md)
+## <a name="see-also"></a>另請參閱  
+ [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)
 

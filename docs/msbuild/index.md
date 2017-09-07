@@ -1,9 +1,9 @@
 ---
 redirect_url: /visualstudio/msbuild/msbuild
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ecde7a4a12265f3cc656cb56259848e7246df2fd
-ms.openlocfilehash: 56ea9df1923f3c3c8652996ec69ee2b3a894455d
+ms.translationtype: HT
+ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
+ms.openlocfilehash: 0e4e76b472a2f413afc6706c0a1fea4014e02a23
 ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
+ms.lasthandoff: 09/06/2017
 
 ---
