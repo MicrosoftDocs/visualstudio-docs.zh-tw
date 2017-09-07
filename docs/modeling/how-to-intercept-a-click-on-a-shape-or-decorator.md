@@ -1,5 +1,5 @@
 ---
-title: 'How to: Intercept a Click on a Shape or Decorator | Microsoft Docs'
+title: "如何： 攔截按一下圖形或 Decorator |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -17,14 +17,14 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 3eb235ec6c38b4995460308c0ac8b104b76f8492
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>How to: Intercept a Click on a Shape or Decorator
-The following procedures demonstrate how to intercept a click on a shape or an icon decorator. You can intercept clicks, double-clicks, drags, and other gestures, and make the element respond.  
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：攔截圖案或 Decorator 上的點選
+下列程序示範如何攔截按一下圖形或圖示裝飾項目。 您可以攔截按一下、 按兩下、 拖曳，及其他筆勢，並讓回應項目。  
   
-## <a name="to-intercept-clicks-on-shapes"></a>To Intercept Clicks on Shapes  
- In the Dsl project, in a code file that is separate from the generated code files, write a partial class definition for the shape class. Override `OnDoubleClick()` or one of the other methods that has a name beginning with `On...`. For example:  
+## <a name="to-intercept-clicks-on-shapes"></a>若要攔截在圖形上按下  
+ 在產生程式碼檔案中，從不同的程式碼檔案中的 Dsl 專案，撰寫圖形類別的部分類別定義。 覆寫`OnDoubleClick()`或其中一個名稱開頭的方法`On...`。 例如:   
   
 ```  
 public partial class MyShape // change  
@@ -38,20 +38,20 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  Set `e.Handled` to `true`, unless you want the event to be passed to the containing shape or diagram.  
+>  設定`e.Handled`至`true`，除非您想要傳遞給包含圖形或圖表的事件。  
   
-## <a name="to-intercept-clicks-on-decorators"></a>To Intercept Clicks on Decorators  
- Image decorators are carried on an instance of ImageField class, which has an OnDoubleClick method. You can intercept the clicks if you write an ImageField subclass. The fields are set up in the InitializeShapeFields method. Therefore, you must change that method to instantiate your subclass instead of the regular ImageField. The InitializeShapeFields method is in the generated code of the shape class. You can override the shape class if you set its `Generates Double Derived` property as described in the following procedure.  
+## <a name="to-intercept-clicks-on-decorators"></a>若要攔截點選裝飾項目  
+ ImageField 類別，具有 OnDoubleClick 方法的執行個體上執行映像裝飾項目。 如果您撰寫 ImageField 子類別，您可以攔截點選。 欄位會設定 InitializeShapeFields 方法中。 因此，您必須變更您的子類別，而不是一般 ImageField 具現化該方法。 InitializeShapeFields 方法是產生的程式碼的圖案類別中。 如果您設定，您可以覆寫圖形類別其`Generates Double Derived`屬性，如下列程序所述。  
   
- Although InitializeShapeFields is an instance method, it is called only once for each class. Therefore, only one instance of ClickableImageField exists for each field in each class, not one instance for each shape in the diagram. When the user double-clicks an instance, you must identify which instance has been hit, as the code in the example demonstrates.  
+ 雖然 InitializeShapeFields 是執行個體方法，它會呼叫一次只為每個類別。 因此，只有一個執行個體 ClickableImageField 存在每個類別，而不在圖表中的每個圖形的一個執行個體中每個欄位。 當使用者按兩下執行個體時，您必須識別哪一個執行個體被叫用，如範例的程式碼所示。  
   
-#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>To intercept a click on an icon decorator  
+#### <a name="to-intercept-a-click-on-an-icon-decorator"></a>若要攔截按一下圖示裝飾項目  
   
-1.  Open or create a DSL solution.  
+1.  開啟或建立 DSL 方案。  
   
-2.  Choose or create a shape that has an icon decorator, and map it to a domain class.  
+2.  選擇或建立的圖形圖示裝飾項目，並將它對應到網域類別。  
   
-3.  In a code file that is separate from the files in the `GeneratedCode` folder, create the new subclass of ImageField:  
+3.  程式碼檔案中的檔案不同`GeneratedCode`資料夾中，建立新的子類別的 ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -87,9 +87,9 @@ public partial class MyShape // change
     }  
     ```  
   
-     You should set Handled to true if you do not want the event to be passed to the containing shape.  
+     您應該設定 Handled 設為 true，如果您不想要傳遞到包含圖形的事件。  
   
-4.  Override the InitializeShapeFields method in your shape classs by adding the following partial class definition.  
+4.  加入下列的部分類別定義來覆寫中圖形 classs InitializeShapeFields 方法。  
   
     ```  
     public partial class MyShape // change  
@@ -116,38 +116,38 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Build and run the solution.  
+1.  建置並執行方案。  
   
-2.  Double-click the icon on an instance of the shape. Your test message should appear.  
+2.  按兩下圖形的執行個體上的圖示。 測試訊息應該會出現。  
   
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Intercepting clicks and drags on CompartmentShape lists  
- The following sample allows users to re-order items in a compartment shape by dragging them. To run this code:  
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>攔截按一下並拖曳 CompartmentShape 清單上  
+ 下列範例可讓使用者拖曳的方式重新排列區間圖案中的項目。 若要執行此程式碼：  
   
-1.  Create a new DSL solution by using the **Class Diagrams** solution template.  
+1.  使用建立新的 DSL 方案**類別圖表**方案範本。  
   
-     You can also work with a solution of your own that contains compartment shapes. This code assumes that there is an embedding relationship between the model elements represented by the shape, and the elements represented in the compartment list items.  
+     您也可以使用您自己的方案包含區間圖案。 此程式碼會假設為圖形所代表的模型項目與表示區間清單項目中的項目之間的內嵌關聯性。  
   
-2.  Set the **Generates Double Derived** property of the compartment shape.  
+2.  設定**會產生兩個衍生**區間圖案的屬性。  
   
-3.  Add this code in a file in the **Dsl** project.  
+3.  在檔案中加入下列程式碼**Dsl**專案。  
   
-4.  Adjust the domain class and shape names in this code to match your own DSL.  
+4.  調整以符合您自己的 DSL 這個程式碼中的網域類別和圖形名稱。  
   
- In summary, the code works as follows. In this example, `ClassShape` is the name of the compartment shape.  
+ 在 [摘要] 程式碼的運作方式如下。 在此範例中，`ClassShape`區間圖案的名稱。  
   
--   A set of mouse event handlers is attached to each compartment instance when it is created.  
+-   滑鼠事件處理常式的一組會附加至每一個分隔執行個體中，在建立時。  
   
--   The `ClassShape.MouseDown` event stores the current item.  
+-   `ClassShape.MouseDown`事件會儲存目前的項目。  
   
--   When the mouse moves out of the current item, an instance of MouseAction is created, which sets the cursor and captures the mouse until it is released.  
+-   當滑鼠移出目前的項目，建立 MouseAction 的執行個體，設定資料指標以及捕捉滑鼠，直到釋放它為止。  
   
-     To avoid interfering with other mouse actions, such as selecting the text of an item, the MouseAction is not created until the mouse has left the original item.  
+     為避免干擾其他滑鼠動作，例如選取項目，文字滑鼠離開原始項目之前，不會建立 MouseAction。  
   
-     An alternative to creating a MouseAction would be simply to listen for MouseUp. However, this would not work properly if the user releases the mouse after dragging it outside the compartment. The MouseAction is able to perform the appropriate action no matter where the mouse is released.  
+     建立 MouseAction 的替代方式是只接聽 MouseUp。 不過，這會無法正常運作如果使用者拖曳外區間之後釋放滑鼠按鈕。 MouseAction 才能夠執行適當的動作，不論其中放開滑鼠。  
   
--   When the mouse is released, MouseAction.MouseUp rearranges the order of the links between the model elements.  
+-   放開滑鼠，MouseAction.MouseUp 重新排列模型項目之間連結的順序。  
   
--   The change of role order fires a rule that updates the display. This behavior is already defined, and no additional code is required.  
+-   角色順序的變更就會引發更新顯示的規則。 已定義這項行為，並不需要任何額外的程式碼。  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -398,6 +398,6 @@ namespace Company.CompartmentDrag
   
 ```  
   
-## <a name="see-also"></a>See Also  
- [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md)   
- [Properties of Decorators](../modeling/properties-of-decorators.md)
+## <a name="see-also"></a>另請參閱  
+ [回應，且將變更傳播](../modeling/responding-to-and-propagating-changes.md)   
+ [Decorator 的屬性](../modeling/properties-of-decorators.md)

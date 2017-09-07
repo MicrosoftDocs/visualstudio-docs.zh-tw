@@ -1,5 +1,5 @@
 ---
-title: CONSTRUCTOR_ENUM | Microsoft Docs
+title: "CONSTRUCTOR_ENUM |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 22447cd6eadf1e4c094815112218bbd64877e9a3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
-Selects different types of constructors.  
+選取不同類型的建構函式。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef enum ConstructorMatchOptions {   
@@ -58,26 +58,26 @@ public enum ConstructorMatchOptions {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  crAll  
- Selects all constructors.  
+ 選取所有建構函式。  
   
  crNonStatic  
- Selects non-static constructors.  
+ 選取非靜態建構函式。  
   
  crStatic  
- Selects static constructors.  
+ 選取 靜態建構函式。  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the [EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md) method.  
+## <a name="remarks"></a>備註  
+ 做為引數傳遞[EnumConstructors](../../../extensibility/debugger/reference/idebugclassfield-enumconstructors.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md)

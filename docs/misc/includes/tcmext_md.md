@@ -15,8 +15,8 @@ translation.priority.ht:
 - zh-tw
 ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7798c1d43e2cdea9fc01e36a6baf78ebcc5d60fe
+ms.openlocfilehash: 249c2de091056b0278cc1c8ea54044f6b693e664
 ms.contentlocale: zh-tw
 
 ---
-Visual Studio 2005
+Microsoft Test Manager

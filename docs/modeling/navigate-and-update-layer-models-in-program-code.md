@@ -1,5 +1,5 @@
 ---
-title: Navigate and update layer models in program code | Microsoft Docs
+title: "巡覽及更新程式碼中的圖層模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,16 +32,16 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="navigate-and-update-layer-models-in-program-code"></a>Navigate and update layer models in program code
-This topic describes the elements and relationships in layer models, which you can navigate and update by using program code. For more information about dependency diagrams from the user's point of view, see [Dependency Diagrams: Reference](../modeling/layer-diagrams-reference.md) and [Dependency Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md).  
+# <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
+本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需從使用者的觀點來看的相依性圖表的詳細資訊，請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)和[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。  
   
- The <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> model described in this topic is a facade on a more general <xref:Microsoft.VisualStudio.GraphModel> model. If you are writing a [menu command or gesture extension](../modeling/add-commands-and-gestures-to-layer-diagrams.md), use the `Layer` model. If you are writing a [layer validation extension](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), it is easier to use the `GraphModel`.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer>本主題中所述的模型是在多個一般外觀<xref:Microsoft.VisualStudio.GraphModel>模型。 如果您要撰寫[功能表命令或軌跡擴充功能](../modeling/add-commands-and-gestures-to-layer-diagrams.md)，使用`Layer`模型。 如果您要撰寫[圖層驗證擴充功能](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)，更輕鬆地使用`GraphModel`。  
   
-## <a name="transactions"></a>Transactions  
- When you update a model, consider enclosing the changes in a `ILinkedUndoTransaction`. This groups your changes into one transaction. If any of the changes fails, the whole transaction will be rolled back. If the user undoes a change, all the changes will be undone together.  
+## <a name="transactions"></a>異動  
+ 當您更新模型時，請考慮將變更納入 `ILinkedUndoTransaction` 中。 這會將您的變更群組為一個交易。 如果任何變更失敗，則會復原整個交易。 如果使用者復原某項變更，則也會一併復原所有變更。  
   
 ```  
 using (ILinkedUndoTransaction t =  
@@ -52,30 +52,30 @@ using (ILinkedUndoTransaction t =
 }  
 ```  
   
-## <a name="containment"></a>Containment  
- ![ILayer and ILayerModel can both contain ILayers.](../modeling/media/layerapi_containment.png "LayerApi_Containment")  
+## <a name="containment"></a>內含項目  
+ ![ILayer 和 ILayerModel 都可以包含 ILayers。] (../modeling/media/layerapi_containment.png "LayerApi_Containment")  
   
- Layers (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>) and the layer model (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>) can contain Comments and Layers.  
+ 圖層 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayer>) 和圖層模型 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel>) 可以包含「註解」和「圖層」。  
   
- A layer (`ILayer`) can be contained in a layer model (`ILayerModel`) or it can be nested within another `ILayer`.  
+ 圖層 (`ILayer`) 可以包含在圖層模型 (`ILayerModel`) 中，也可以巢狀於另一個 `ILayer` 內。  
   
- To create a comment or a layer, use the creation methods on the appropriate container.  
+ 若要建立註解或圖層，請在適當的容器上使用建立方法。  
   
-## <a name="dependency-links"></a>Dependency Links  
- A dependency link is represented by an object. It can be navigated in either direction:  
+## <a name="dependency-links"></a>相依性連結  
+ 相依性連結是以物件代表。 而且可以使用任一方向進行巡覽：  
   
- ![An ILayerDependencyLink connects two ILayers.](../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
+ ![ILayerDependencyLink 會連接兩個 ILayers。] (../modeling/media/layerapi_dependency.png "LayerApi_Dependency")  
   
- To create a dependency link, call `source.CreateDependencyLink(target)`.  
+ 若要建立相依性連結，請呼叫 `source.CreateDependencyLink(target)`。  
   
-## <a name="comments"></a>Comments  
- Comments can be contained inside layers or the layer model, and can also be linked to any layer element:  
+## <a name="comments"></a>註解  
+ 註解可以包含在圖層或圖層模型內，也可以連結至任何圖層項目：  
   
- ![Comments can be attached to any layer element.](../modeling/media/layerapi_comments.png "LayerApi_Comments")  
+ ![註解可以附加至任何圖層項目。] (../modeling/media/layerapi_comments.png "LayerApi_Comments")  
   
- A comment can be linked to any number of elements, including none.  
+ 註解可以連結至任何數目的項目 (包含零個項目)。  
   
- To get the comments that are attached to a layer element, use:  
+ 若要取得連結至圖層項目的註解，請使用：  
   
 ```csharp  
 ILayerModel model = diagram.GetLayerModel();   
@@ -86,39 +86,39 @@ IEnumerable<ILayerComment> comments =
 ```  
   
 > [!CAUTION]
->  The `Comments` property of an `ILayer` gets comments that are contained within the `ILayer`. It does not get the comments that are linked to it.  
+>  `Comments` 的 `ILayer` 屬性會取得包含在 `ILayer` 內的註解。 但不會取得與它連結的註解。  
   
- Create a comment by invoking `CreateComment()` on the appropriate container.  
+ 在適當的容器上叫用 `CreateComment()`，以建立註解。  
   
- Create a link by using `CreateLink()` on the comment.  
+ 在註解上使用 `CreateLink()`，以建立連結。  
   
-## <a name="layer-elements"></a>Layer Elements  
- All the types of element that can be contained in a model are layer elements:  
+## <a name="layer-elements"></a>圖層項目  
+ 可以包含在模型中的所有類型的項目都是圖層項目：  
   
- ![dependency diagram contents are ILayerElements.](../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
+ ![相依性圖表內容為 ILayerElements。] (../modeling/media/layerapi_layerelements.png "LayerApi_LayerElements")  
   
-## <a name="properties"></a>Properties  
- Each `ILayerElement` has a string dictionary named `Properties`. You can use this dictionary to attach arbitrary information to any layer element.  
+## <a name="properties"></a>屬性  
+ 每個 `ILayerElement` 都有名稱為 `Properties` 的字串字典。 您可以使用此字典，將任意資訊連結至任何圖層項目。  
   
-## <a name="artifact-references"></a>Artifact References  
- An artifact reference (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) represents the link between a layer and a project item such as a file, class, or folder. The user creates artifacts when they create a layer or add to it by dragging items from Solution Explorer, Class View, or Object Browser onto a dependency diagram. Any number of artifact references can be linked to a layer.  
+## <a name="artifact-references"></a>成品參考  
+ 成品參考 (<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>) 代表圖層與專案項目 (如檔案、類別或資料夾) 之間的連結。 使用者建立成品建立圖層或從方案總管、 類別檢視或物件瀏覽器拖曳項目拖曳到相依性圖表中加入時。 您可以將任意數目的成品參考連結至圖層。  
   
- Each row in Layer Explorer displays an artifact reference. For more information, see [Create dependency diagrams from your code](../modeling/create-layer-diagrams-from-your-code.md).  
+ [圖層總管] 中的每個資料列都會顯示成品參考。 如需詳細資訊，請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
   
- The principal types and methods concerned with artifact references are as follows:  
+ 專注於成品參考的主體類型和方法如下：  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. The Categories property indicates what kind of artifact is referenced, such as a class, executable file, or assembly. Categories determines how the Identifier identifies the target artifact.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerArtifactReference>. Categories 屬性指出參考哪一種類型的成品 (如類別、可執行檔或組件)。 Categories 決定 Identifier 如何識別目標成品。  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> creates an artifact reference from an <xref:EnvDTE.Project> or <xref:EnvDTE.ProjectItem>. This is an asynchronous operation. Therefore, you usually provide a callback that is called when the creation is complete.  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ArtifactReferenceExtensions.CreateArtifactReferenceAsync%2A> 會透過 <xref:EnvDTE.Project> 或 <xref:EnvDTE.ProjectItem> 建立成品參考。 這是一個非同步作業。 因此，您通常會提供在建立完成時呼叫的回呼。  
   
- Layer Artifact References should not be confused with Artifacts in use case diagrams.  
+ 「圖層成品參考」不應該與使用案例圖中的「成品」混淆。  
   
-## <a name="shapes-and-diagrams"></a>Shapes and Diagrams  
- Two objects are used to represent each element in a layer model: an <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>, and an <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>. The `IShape` represents the position and size of the shape on the diagram. In layer models, every `ILayerElement` has one `IShape`, and every `IShape` on a dependency diagram has one `ILayerElement`. `IShape` is also used for UML models. Therefore, not every `IShape` has a layer element.  
+## <a name="shapes-and-diagrams"></a>圖案和圖表  
+ 兩個物件都是用來代表圖層模型中的每個項目：<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape>。 `IShape` 代表圖案在圖表上的位置和大小。 在圖層模型中，每個`ILayerElement`有一個`IShape`，和每`IShape`相依性圖表有一個`ILayerElement`。 `IShape` 也用於 UML 模型。 因此，不是每個 `IShape` 都有圖層項目。  
   
- In the same manner, the <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> is displayed on one <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram>.  
+ 同樣地，<xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerModel> 會顯示在一個 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 上。  
   
- In the code of a custom command or gesture handler, you can get the current diagram and the current selection of shapes from the `DiagramContext` import:  
+ 在自訂命令或手勢處理常式的程式碼中，您可以透過 `DiagramContext` 匯入，取得目前圖表以及目前圖案選取範圍：  
   
 ```  
 public class ... {  
@@ -135,14 +135,14 @@ public void ... (...)
     if (element != null) ... }}  
 ```  
   
- ![Each ILayerElement is presented by an IShape.](../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
+ ![每個 ilayerelement 都是由 IShape 呈現。] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> and <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> are also used to display UML models. For more information, see [Display a UML model on diagrams](../modeling/display-a-uml-model-on-diagrams.md).  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 也用來顯示 UML 模型。 如需詳細資訊，請參閱[圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
   
-## <a name="see-also"></a>See Also  
- [Add commands and gestures to dependency diagrams](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
- [Add custom architecture validation to dependency diagrams](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
- [Add custom properties to dependency diagrams](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Dependency Diagrams: Reference](../modeling/layer-diagrams-reference.md)   
- [Dependency Diagrams: Guidelines](../modeling/layer-diagrams-guidelines.md)   
+## <a name="see-also"></a>另請參閱  
+ [將命令和軌跡加入至相依性圖表](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
+ [相依性圖表中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
+ [將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)   
+ [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
+ [相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)   
 

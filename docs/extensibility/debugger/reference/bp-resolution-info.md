@@ -1,5 +1,5 @@
 ---
-title: BP_RESOLUTION_INFO | Microsoft Docs
+title: "BP_RESOLUTION_INFO |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 88d18b6262724e21602b87365d262c9422140abe
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="bpresolutioninfo"></a>BP_RESOLUTION_INFO
-Describes the bound breakpoint information for either a code breakpoint or a data breakpoint.  
+描述程式碼中斷點或資料中斷點的繫結的中斷點資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _BP_RESOLUTION_INFO {   
@@ -60,31 +60,31 @@ public struct BP_RESOLUTION_INFO {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  `dwFields`  
- A collection of flags from the [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) enumerations that specifies which fields are filled out.  
+ 旗標的集合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，指定哪些欄位都已填寫。  
   
  `bpResLocation`  
- The [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) structure that specifies the location of the breakpoint in code or data.  
+ [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)結構，指定在程式碼或資料中斷點的位置。  
   
  `pProgram`  
- The [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) object that represents the application in which the breakpoint error occurred.  
+ [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表中斷點錯誤發生所在之應用程式的物件。  
   
  `pThread`  
- The [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) object that represents the thread in which the application that contains the breakpoint error is running.  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表包含中斷點錯誤的應用程式執行所在的執行緒。  
   
-## <a name="remarks"></a>Remarks  
- This structure is returned by [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md).  
+## <a name="remarks"></a>備註  
+ 這個結構由[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
+## <a name="see-also"></a>另請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)   
  [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
  [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)   

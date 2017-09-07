@@ -1,5 +1,5 @@
 ---
-title: Getting Project Properties | Microsoft Docs
+title: "取得專案屬性 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,26 +33,26 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2384e27a9bb4f0aabf483bbbe0c14911e1380e32
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="getting-project-properties"></a>Getting Project Properties
-This walkthrough shows how to displays project properties in a tool window.  
+# <a name="getting-project-properties"></a>取得專案屬性
+本逐步解說示範如何在工具視窗中顯示專案內容。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>必要條件  
+ 啟動 Visual Studio 2015 中，請勿從 「 下載中心 」 未安裝 Visual Studio SDK。 它是包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>To create a VSIX Project and add a Tool Window  
+### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>建立 VSIX 專案，加入工具視窗  
   
-1.  Every Visual Studio extension starts with a VSIX deployment project which will contain the extension assets. Create a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] VSIX project named `ProjectPropertiesExtension`. You can find the VSIX project template in the **New Project** dialog under **Visual C# / Extensibility**.  
+1.  每個 Visual Studio 擴充功能開頭 VSIX 部署專案，以將包含延伸模組資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`ProjectPropertiesExtension`。 您可以找到 VSIX 專案範本，在**新專案**對話方塊底下**Visual C# / 擴充性**。  
   
-2.  Add a tool window by adding a Custom Tool Window item template named `ProjectPropertiesToolWindow`. In the **Solution Explorer**, right-click the project node and select **Add / New Item**. In the **Add New Item dialog**, go to **Visual C# Items / Extensibility** and select **Custom Tool Window**. In the **Name** field at the bottom of the dialog, change the file name to `ProjectPropertiesToolWindow.cs`. For more information about how to create a custom tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
+2.  加入名為的自訂工具視窗項目範本加入工具視窗`ProjectPropertiesToolWindow`。 在**方案總管 中**，以滑鼠右鍵按一下專案節點，然後選取**新增 / 新項目**。 在**加入新項目對話方塊**，請移至**Visual C# 項目 / 擴充性**選取**自訂工具視窗**。 在**名稱**在對話方塊底部欄位中，將檔案名稱變更為`ProjectPropertiesToolWindow.cs`。 如需如何建立自訂的工具視窗的詳細資訊，請參閱[建立工具視窗擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-3.  Build the solution and verify that it compiles without errors.  
+3.  建置方案，並確認方案編譯無誤。  
   
-### <a name="to-display-project-properties-in-a-tool-window"></a>To display project properties in a tool window  
+### <a name="to-display-project-properties-in-a-tool-window"></a>若要顯示工具視窗中的專案屬性  
   
-1.  In the ProjectPropertiesToolWindowCommand.cs file add the following using statements.  
+1.  ProjectPropertiesToolWindowCommand.cs 檔案中加入下列 using 陳述式。  
   
     ```csharp  
     using EnvDTE;  
@@ -60,9 +60,9 @@ This walkthrough shows how to displays project properties in a tool window.
   
     ```  
   
-2.  In ProjectPropertiesToolWindowControl.xaml, remove the existing button and add a TreeView from the Toolbox. You can also remove the click event handler from the ProjectPropertiesToolWindowControl.xaml.cs file.  
+2.  ProjectPropertiesToolWindowControl.xaml，移除現有的按鈕，從 [工具箱] 加入 TreeView。 您也可以從 ProjectPropertiesToolWindowControl.xaml.cs 檔案移除 click 事件處理常式。  
   
-3.  In ProjectPropertiesToolWindowCommand.cs, use the ShowToolWindow() method to open the project and read its properties, then add the properties to the TreeView. The code for ShowToolWindow should look like the following:  
+3.  在 ProjectPropertiesToolWindowCommand.cs，使用 ShowToolWindow() 方法來開啟專案，並讀取其屬性，然後將屬性加入至樹狀檢視。 ShowToolWindow 的程式碼看起來應該如下所示：  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  
@@ -109,10 +109,10 @@ This walkthrough shows how to displays project properties in a tool window.
     }  
     ```  
   
-4.  Build the project and start debugging. The experimental instance should appear.  
+4.  建置此專案並開始偵錯。 實驗執行個體應該會出現。  
   
-5.  In the experimental instance open a project.  
+5.  實驗執行個體中開啟專案。  
   
-6.  In the **View / Other Windows** click **ProjectPropertiesToolWindow**.  
+6.  在**檢視 / 其他視窗**按一下**ProjectPropertiesToolWindow**。  
   
-     You should see the tree control in the tool window together with the name of the first project and of all its project properties.
+     您應該會看到工具視窗，以及名稱的第一個專案和其所有的專案屬性中的樹狀目錄控制項。

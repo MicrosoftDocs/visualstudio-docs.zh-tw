@@ -1,5 +1,5 @@
 ---
-title: IDebugField | Microsoft Docs
+title: "IDebugField |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,43 +34,43 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1e978ece2ecf56735dc538324b5c148f7f85b9bb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfield"></a>IDebugField
-This interface represents a field, that is, a description of a symbol or type.  
+此介面代表一個欄位，也就是符號或類型的描述。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugField : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- A symbol provider implements this interface as the base class for all fields.  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 符號提供者會實作這個介面的基底類別的所有欄位。  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- This interface is the base class for all fields. Based on the return value of [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md), this interface may return more specialized interfaces by using [QueryInterface](/cpp/atl/queryinterface). In addition, many interfaces return `IDebugField` objects from various methods.  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 這個介面是基底類別的所有欄位。 根據傳回值[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)，此介面可能會傳回更具特製化的介面使用[QueryInterface](/cpp/atl/queryinterface)。 此外，許多介面傳回`IDebugField`各種方法的物件。  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
- The following table shows the methods of `IDebugField`.  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
+ 下表顯示的方法`IDebugField`。  
   
-|Method|Description|  
+|方法|說明|  
 |------------|-----------------|  
-|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|Gets displayable information about the symbol or type.|  
-|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|Gets the kind of field.|  
-|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|Gets the type of field.|  
-|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|Gets the container of the field.|  
-|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|Gets the address of the field.|  
-|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|Gets the size of a field, in bytes.|  
-|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|Gets extended information about a field.|  
-|[Equal](../../../extensibility/debugger/reference/idebugfield-equal.md)|Compares two fields.|  
-|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|Gets type-independent information about the symbol or type.|  
+|[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)|取得可顯示的符號或類型的相關資訊。|  
+|[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)|取得欄位的類型。|  
+|[GetType](../../../extensibility/debugger/reference/idebugfield-gettype.md)|取得欄位的類型。|  
+|[GetContainer](../../../extensibility/debugger/reference/idebugfield-getcontainer.md)|取得欄位的容器。|  
+|[GetAddress](../../../extensibility/debugger/reference/idebugfield-getaddress.md)|取得欄位的位址。|  
+|[GetSize](../../../extensibility/debugger/reference/idebugfield-getsize.md)|取得欄位，以位元組為單位的大小。|  
+|[GetExtendedInfo](../../../extensibility/debugger/reference/idebugfield-getextendedinfo.md)|取得擴充欄位的相關資訊。|  
+|[等於](../../../extensibility/debugger/reference/idebugfield-equal.md)|比較兩個欄位。|  
+|[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)|取得與類型無關的相關資訊的符號或類型。|  
   
-## <a name="remarks"></a>Remarks  
- A type is equivalent to a C language `typedef`.  
+## <a name="remarks"></a>備註  
+ 型別就相當於 C 語言`typedef`。  
   
- In the following C++ language example, `weather` is a class type, and `sunny` and `stormy` are symbols:  
+ 在下列 c + + 語言的範例，`weather`類別型別和`sunny`和`stormy`符號：  
   
 ```cpp  
 class weather;  
@@ -78,14 +78,14 @@ weather sunny;
 weather stormy;  
 ```  
   
- Whether a field represents a symbol or type can be determined by calling [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) and examining the [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) result. If the `FIELD_KIND_TYPE` bit is set, the field is a type, and if the `FIELD_KIND_SYMBOL` bit is set, it is a symbol.  
+ 欄位代表符號還是可以藉由呼叫決定類型[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)和檢查[FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)結果。 如果`FIELD_KIND_TYPE`位元會設為欄位類型，而且如果`FIELD_KIND_SYMBOL`會設定位元，它是一種符號。  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Symbol Provider Interfaces](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
+## <a name="see-also"></a>另請參閱  
+ [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

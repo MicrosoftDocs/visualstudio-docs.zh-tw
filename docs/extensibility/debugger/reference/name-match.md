@@ -1,5 +1,5 @@
 ---
-title: NAME_MATCH | Microsoft Docs
+title: "NAME_MATCH |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 0b978feb1b38c87c2ca7e0616953856556144f21
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="namematch"></a>NAME_MATCH
-Selects the case option for matching names.  
+選取 比對名稱的大小寫選項。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef enum {   
@@ -58,18 +58,18 @@ public enum NameMatchOptions {
 }  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  nmNone  
- No options are specified.  
+ 未指定任何選項。  
   
  nmCaseSensitive  
- Indicates that names to be matched are case-sensitive.  
+ 表示要比對的名稱會區分大小寫。  
   
  nmCaseInsensitive  
- Indicates that names to be matched are not case-sensitive.  
+ 指出要比對的名稱不區分大小寫。  
   
-## <a name="remarks"></a>Remarks  
- Passed as an argument to the following methods:  
+## <a name="remarks"></a>備註  
+ 做為引數傳遞給下列方法：  
   
 -   [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)  
   
@@ -79,15 +79,15 @@ public enum NameMatchOptions {
   
 -   [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)   
  [GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)   
  [EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)   

@@ -1,5 +1,5 @@
 ---
-title: IDebugPortSupplier2::GetPortSupplierId | Microsoft Docs
+title: "IDebugPortSupplier2::GetPortSupplierId |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 2201df4c73028583667dd100d2c068b26ff86271
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugportsupplier2getportsupplierid"></a>IDebugPortSupplier2::GetPortSupplierId
-Gets the port supplier identifier.  
+取得連接埠供應商識別碼。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetPortSupplierId(   
@@ -54,12 +54,12 @@ HRESULT GetPortSupplierId(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pguidPortSupplier`  
- [out] Returns the GUID of the port supplier.  
+ [out]傳回連接埠供應商的 GUID。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

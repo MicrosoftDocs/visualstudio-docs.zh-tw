@@ -1,5 +1,5 @@
 ---
-title: 'Walkthrough: Connecting a Host to a Generated Directive Processor | Microsoft Docs'
+title: "逐步解說： 連接到產生指示詞處理器的主機 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -23,27 +23,27 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Walkthrough: Connecting a Host to a Generated Directive Processor
-You can write your own host that processes text templates. A basic custom host is demonstrated in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). You could extend that host to add functions such as generating multiple output files.  
+# <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
+您可以撰寫自己的主機處理文字範本。 示範基本的自訂主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 您可以擴充該主應用程式加入功能，例如產生多個輸出檔案。  
   
- In this walkthrough, you expand your custom host so that it supports text templates that call directive processors. When you define a domain-specific language, it generates a *directive processor* for the domain model. The directive processor makes it easier for users to write templates that access the model, reducing the need to write assembly and import directives in the templates.  
+ 在本逐步解說中，您會展開您的自訂主機，以支援呼叫指示詞處理器的文字範本。 當您定義的特定領域語言時，它會產生*指示詞處理器*網域模型。 指示詞處理器，可讓使用者更輕鬆地撰寫存取模型，也不需要撰寫組件並匯入之範本中的指示詞的範本。  
   
 > [!WARNING]
->  This walkthrough builds on [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md). Perform that walkthrough first.  
+>  本逐步解決建置於[逐步解說： 建立自訂文字範本主應用](../modeling/walkthrough-creating-a-custom-text-template-host.md)。 第一次執行該逐步解說。  
   
- This walkthrough includes the following tasks:  
+ 本逐步解說包含下列工作：  
   
--   Using [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] to generate a directive processor that is based on a domain model.  
+-   使用[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]產生網域模型為基礎的指示詞處理器。  
   
--   Connecting a custom text template host to the generated directive processor.  
+-   連線的自訂文字範本主應用程式產生指示詞處理器。  
   
--   Testing the custom host with the generated directive processor.  
+-   測試自訂主應用程式以產生指示詞處理器。  
   
-## <a name="prerequisites"></a>Prerequisites  
- To define a DSL, you must have installed the following components:  
+## <a name="prerequisites"></a>必要條件  
+ 若要定義 DSL，您必須已安裝下列元件：  
   
 |||  
 |-|-|  
@@ -53,54 +53,54 @@ You can write your own host that processes text templates. A basic custom host i
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
   
- In addition, you must have the custom text template transformation created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+ 此外，您必須擁有在建立自訂文字範本轉換[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
-## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>Using Domain-Specific Language Tools to Generate a Directive Processor  
- In this walkthrough, you use the Domain-Specific Language Designer Wizard to create a domain-specific language for the solution DSLMinimalTest.  
+## <a name="using-domain-specific-language-tools-to-generate-a-directive-processor"></a>使用網域特定領域語言工具來產生指示詞處理器  
+ 在本逐步解說中，您可以使用網域特定語言設計工具精靈來建立特定領域語言方案 DSLMinimalTest。  
   
-#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>To use Domain-Specific Language Tools to generate a directive processor that is based on a domain model  
+#### <a name="to-use-domain-specific-language-tools-to-generate-a-directive-processor-that-is-based-on-a-domain-model"></a>要用於特定領域語言工具產生的網域模型為基礎的指示詞處理器  
   
-1.  Create a domain-specific language solution that has the following characteristics:  
+1.  建立具有下列特性的特定領域語言方案：  
   
-    -   Name: DSLMinimalTest  
+    -   名稱： DSLMinimalTest  
   
-    -   Solution template: Minimal Language  
+    -   方案範本： 最少的語言  
   
-    -   File extension: min  
+    -   副檔名： 最小值  
   
-    -   Company name: Fabrikam  
+    -   公司名稱： Fabrikam  
   
-     For more information about creating a domain-specific language solution, see [How to: Create a Domain-Specific Language Solution](../modeling/how-to-create-a-domain-specific-language-solution.md).  
+     如需有關建立特定領域語言方案的詳細資訊，請參閱[How to： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
-2.  On the **Build** menu, click **Build Solution**.  
+2.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
     > [!IMPORTANT]
-    >  This step generates the directive processor and adds the key for it in the registry.  
+    >  這個步驟會產生指示詞處理器，並將它的索引鍵，在登錄中。  
   
-3.  On the **Debug** menu, click **Start Debugging**.  
+3.  按一下 [偵錯] 功能表上的 [開始偵錯]。  
   
-     A second instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens.  
+     第二個執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]隨即開啟。  
   
-4.  In the experimental build, in **Solution Explorer**, double-click the file **sample.min**.  
+4.  在實驗組建中，在**方案總管 中**，按兩下檔案**sample.min**。  
   
-     The file opens in the designer. Notice that the model has two elements, ExampleElement1 and ExampleElement2, and a link between them.  
+     在設計工具中，開啟檔案。 請注意，此模型有兩個項目、 ExampleElement1 ExampleElement2，以及它們之間的連結。  
   
-5.  Close the second instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+5.  關閉第二個執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-6.  Save the solution, and then close the Domain-Specific Language Designer.  
+6.  儲存方案，然後關閉 特定領域語言設計工具。  
   
-## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>Connecting a Custom Text Template Host to a Directive Processor  
- After you generate the directive processor, you connect the directive processor and the custom text template host that you created in [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md).  
+## <a name="connecting-a-custom-text-template-host-to-a-directive-processor"></a>連線的自訂文字範本主應用程式的指示詞處理器  
+ 產生指示詞處理器之後，連線指示詞處理器和您在建立自訂文字範本主機[逐步解說： 建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)。  
   
-#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>To connect a custom text template host to the generated directive processor  
+#### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>若要連線的自訂文字範本主應用程式產生指示詞處理器  
   
-1.  Open the CustomHost solution.  
+1.  開啟 CustomHost 方案。  
   
-2.  On the **Project** menu, click **Add Reference**.  
+2.  在**專案**功能表上，按一下 **加入參考**。  
   
-     The **Add Reference** dialog box opens with the **.NET** tab displayed.  
+     **加入參考**對話方塊隨即開啟與**.NET**顯示索引標籤。  
   
-3.  Add the following references:  
+3.  加入下列參考：  
   
     -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
@@ -114,7 +114,7 @@ You can write your own host that processes text templates. A basic custom host i
   
     -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  At the top of Program.cs or Module1.vb, add the following line of code:  
+4.  在 Program.cs 或 Module1.vb 頂端，加入下列程式碼行：  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -124,10 +124,10 @@ You can write your own host that processes text templates. A basic custom host i
     Imports Microsoft.Win32  
     ```  
   
-5.  Locate the code for the property `StandardAssemblyReferences`, and replace it with the following code:  
+5.  找出屬性的程式碼`StandardAssemblyReferences`，並取代為下列程式碼：  
   
     > [!NOTE]
-    >  In this step, you add references to the assemblies that are required by the generated directive processor that your host will support.  
+    >  在此步驟中，您可以將產生指示詞處理器，您的主機可以支援所需的組件的參考。  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -160,10 +160,10 @@ You can write your own host that processes text templates. A basic custom host i
     }  
     ```  
   
-6.  Locate the code for the function `ResolveDirectiveProcessor`, and replace it with the following code:  
+6.  找出函式的程式碼`ResolveDirectiveProcessor`，並取代為下列程式碼：  
   
     > [!IMPORTANT]
-    >  This code contains hard-coded references to the name of the generated directive processor to which you want to connect. You could easily make this more general, in which case it looks for all directive processors listed in the registry and tries to find a match. In that case, the host would work with any generated directive processor.  
+    >  此程式碼會包含硬式編碼參考產生的指示詞處理器，您要連接的名稱。 您無法輕鬆地進行這一般，在此情況下會尋找所有指示詞處理器之登錄中列出，並嘗試尋找相符項目。 在此情況下，主機會使用任何產生的指示詞處理器。  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -234,21 +234,21 @@ You can write your own host that processes text templates. A basic custom host i
             }  
     ```  
   
-7.  On the **File** menu, click **Save All**.  
+7.  在**檔案**功能表上，按一下 **全部儲存**。  
   
-8.  On the **Build** menu, click **Build Solution**.  
+8.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testing the Custom Host with the Directive Processor  
- To test the custom text template host, first you must write a text template that calls the generated directive processor. Then you run the custom host, pass to it the name of the text template, and verify that the directive is processed correctly.  
+## <a name="testing-the-custom-host-with-the-directive-processor"></a>測試自訂主應用程式與指示詞處理器  
+ 第一次來測試自訂文字範本主應用程式，您必須撰寫呼叫產生指示詞處理器的文字範本。 然後您執行自訂主應用程式、 傳遞給它的文字範本名稱，並確認已正確處理指示詞。  
   
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>To create a text template to test the custom host  
+#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>若要建立文字範本以測試自訂主應用程式  
   
-1.  Create a text file, and name it `TestTemplateWithDP.tt`. You can use any text editor, such as Notepad, to create the file.  
+1.  建立文字檔案，並將其命名`TestTemplateWithDP.tt`。 您可以使用任何文字編輯器，例如 [記事本] 來建立檔案。  
   
-2.  Add the following to the text file:  
+2.  將下列程式碼加入至此文字檔中：  
   
     > [!NOTE]
-    >  The programming language of the text template does not need to match that of the custom host.  
+    >  文字範本的程式語言不需要符合自訂主應用程式。  
   
     ```csharp  
     Text Template Host Test  
@@ -317,43 +317,43 @@ You can write your own host that processes text templates. A basic custom host i
     #>  
     ```  
   
-3.  In the code, replace \<YOUR PATH> with the path of the Sample.min file from the design-specific language you created in the first procedure.  
+3.  在程式碼，取代\<您的路徑 > Sample.min 檔案從您在第一個程序中建立設計特定語言的路徑。  
   
-4.  Save and close the file.  
+4.  儲存並關閉檔案。  
   
-#### <a name="to-test-the-custom-host"></a>To test the custom host  
+#### <a name="to-test-the-custom-host"></a>若要測試自訂主應用程式  
   
-1.  Open a Command Prompt window.  
+1.  開啟 [命令提示字元] 視窗。  
   
-2.  Type the path of the executable file for the custom host, but do not press ENTER yet.  
+2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
   
-     For example, type:  
+     例如，輸入：  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer**, and then drag the file into the Command Prompt window.  
+    >  不要輸入位置，您可以瀏覽至 CustomHost.exe 檔中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
   
-3.  Type a space.  
+3.  輸入空格。  
   
-4.  Type the path of the text template file, and then press ENTER.  
+4.  輸入文字範本檔的路徑，然後按 ENTER。  
   
-     For example, type:  
+     例如，輸入：  
   
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file TestTemplateWithDP.txt in **Windows Explorer**, and then drag the file into the Command Prompt window.  
+    >  您可以不要輸入位置，瀏覽檔案 TestTemplateWithDP.txt 中**Windows 檔案總管**，然後將檔案拖曳到 [命令提示字元] 視窗。  
   
-     The custom host application runs and starts the text template transformation process.  
+     自訂主應用程式會執行，並開始文字範本轉換流程。  
   
-5.  In **Windows Explorer**, browse to the folder that contains the file TestTemplateWithDP.txt.  
+5.  在**Windows 檔案總管**，瀏覽至包含 TestTemplateWithDP.txt 檔案的資料夾。  
   
-     The folder also contains the file TestTemplateWithDP1.txt.  
+     這個資料夾也包含檔案 TestTemplateWithDP1.txt。  
   
-6.  Open this file to see the results of the text template transformation.  
+6.  開啟這個檔案來查看文字範本轉換的結果。  
   
-     The results of the generated text output appears and should look like this:  
+     產生的文字輸出的結果會出現，而且應該看起來像這樣：  
   
     ```  
     Text Template Host Test  
@@ -365,6 +365,6 @@ You can write your own host that processes text templates. A basic custom host i
     Linked from: ExampleElement1  
     ```  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Custom Text Template Host](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+## <a name="see-also"></a>另請參閱  
+ [逐步解說：建立自訂文字範本主機](../modeling/walkthrough-creating-a-custom-text-template-host.md)
 

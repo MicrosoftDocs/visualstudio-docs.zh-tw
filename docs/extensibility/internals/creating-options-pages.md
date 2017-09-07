@@ -1,5 +1,5 @@
 ---
-title: Creating Options Pages | Microsoft Docs
+title: "建立選項頁 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,70 +33,70 @@ ms.translationtype: MT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 6ed61dbc745b00f5f6f0beeba5aa38c3d316f98f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="creating-options-pages"></a>Creating Options Pages
-In the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] managed package framework, classes derived from <xref:Microsoft.VisualStudio.Shell.DialogPage> extend the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE by adding **Options** pages under the **Tools** menu.  
+# <a name="creating-options-pages"></a>建立選項頁面
+在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]managed 的封裝架構類別衍生自<xref:Microsoft.VisualStudio.Shell.DialogPage>擴充[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]加入 IDE**選項**頁面下**工具**功能表。  
   
- An object implementing a given **Tools Option** page is associated with specific VSPackages by the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> object.  
+ 實作指定**工具選項**頁面都與特定的 Vspackage<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>物件。  
   
- Because the environment instantiates the object implementing a particular **Tools Options** page when that particular page is displayed by the IDE:  
+ 因為環境實作特定的物件會具現化**工具選項**網頁時，IDE 會顯示該特定頁面：  
   
--   A **Tools Option** page should be implemented on its own object, and not on the object implementing a VSPackage.  
+-   A**工具選項**頁面應該實作自己的物件，而不是在實作 VSPackage 的物件。  
   
--   An object cannot implement multiple **Tools Options** pages.  
+-   物件不能實作多個**工具選項**頁面。  
   
-## <a name="registering-as-a-tools-options-page-provider"></a>Registering as a Tools Options Page Provider  
- A VSPackage supporting user configuration through **Tools Options** pages indicates the objects providing these **Tools Options** pages by applying instances of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> applied to the <xref:Microsoft.VisualStudio.Shell.Package> implementation.  
+## <a name="registering-as-a-tools-options-page-provider"></a>註冊工具選項頁面提供者為  
+ VSPackage 支援使用者設定透過**工具選項**頁面指出提供這些物件**工具選項**頁面套用的執行個體<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至<xref:Microsoft.VisualStudio.Shell.Package>實作。  
   
- There must be one instance of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> for every <xref:Microsoft.VisualStudio.Shell.DialogPage>-derived type that implements a **Tools Options** page.  
+ 必須有一個執行個體<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>的每個<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生型別可實作**工具選項**頁面。  
   
- Each instance of <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> uses the type that implements the **Tools Options** page, strings that contain the category and sub-category used to identify a **Tools Options** page, and resource information to register the type as providing a **Tools Options** page.  
+ 每個執行個體<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>使用實作的型別**工具選項**頁面上，包含類別和子類別，用來識別字串**工具選項** 頁面上和資源若要註冊為提供的類型資訊**工具選項**頁面。  
   
-## <a name="persisting-tools-options-page-state"></a>Persisting Tools Options Page State  
- If a **Tools Options** page implementation is registered with automation support enabled, the IDE persists the page's state along with all other **Tools Options** pages.  
+## <a name="persisting-tools-options-page-state"></a>保存的工具選項頁面狀態  
+ 如果**工具選項**頁面實作向啟用自動化支援，IDE 會保存在網頁的狀態，以及所有其他**工具選項**頁面。  
   
- A VSPackage can manage its own persistence by using <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>. Only one or the other method of persistence should be used.  
+ VSPackage 可以使用管理它自己的持續性<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>。 應該使用其中之一或其他持續性方法。  
   
-## <a name="implementing-dialogpage-class"></a>Implementing DialogPage Class  
- An object providing a VSPackage's implementation of a <xref:Microsoft.VisualStudio.Shell.DialogPage>-derived type can take advantage of the following inherited features:  
+## <a name="implementing-dialogpage-class"></a>實作 DialogPage 類別  
+ 物件提供的 VSPackage 實作<xref:Microsoft.VisualStudio.Shell.DialogPage>-衍生型別可以利用下列繼承的功能：  
   
--   A default user interface window.  
+-   預設使用者介面視窗。  
   
--   A default persistence mechanism available either if <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> is applied to the class, or if the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A> property is set to `true` for the <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> that is applied to the class.  
+-   預設持續性機制，可以使用任一如果<xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>套用至類別，或如果<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute.SupportsProfiles%2A>屬性設定為`true`如<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>套用至類別。  
   
--   Automation support.  
+-   自動化支援。  
   
- The minimum requirement for an object implementing a **Tools Options** page using <xref:Microsoft.VisualStudio.Shell.DialogPage> is the addition of public properties.  
+ 實作的最低需求**工具選項**網頁的<xref:Microsoft.VisualStudio.Shell.DialogPage>是新加入的公用屬性。  
   
- If the class properly registered as a **Tools Options** page provider, then its public properties are available on the **Options** section of the **Tools** menu in the form of a property grid.  
+ 如果類別已正確登錄為**工具選項**頁面上提供者，則其公開屬性位於**選項**區段**工具**功能表中的表單屬性方格。  
   
- All these default features can be overridden. For example, to create a more sophisticated user interface requires only overriding the default implementation of <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>.  
+ 可以覆寫這些預設功能。 例如，若要建立更趨精密完美的使用者介面需要只覆寫的預設實作<xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A>。  
   
-## <a name="example"></a>Example  
- What follows is a simple "hello world" implementation of an options page. Adding the following code to a default project created by the Visual Studio Package Template with the **Menu Command** option selected will adequately demonstrate option page functionality.  
+## <a name="example"></a>範例  
+ 以下是簡單"hello world"的實作的選項頁面。 將下列程式碼加入至預設專案與 Visual Studio 封裝範本所建立**功能表命令**選取的選項將充分示範選項頁面的功能。  
   
-### <a name="description"></a>Description  
- The following class defines a minimal "hello world" options page. When opened, the user can set the public `HelloWorld` property in a property grid.  
+### <a name="description"></a>說明  
+ 下列類別定義的最小的"hello world"選項頁面。 開啟時，使用者可以設定公開`HelloWorld`屬性方格中的屬性。  
   
-### <a name="code"></a>Code  
- [!code-csharp[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs)] [!code-vb[UI_UserSettings_ToolsOptionPages#11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
+### <a name="code"></a>程式碼  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages #11](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_1.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #11](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_1.vb)]  
   
-### <a name="description"></a>Description  
- Applying the following attribute to the package class makes the options page available when the package loads. The numbers are arbitrary resource IDs for the category and the page, and the Boolean value at the end specifies whether the page supports automation.  
+### <a name="description"></a>說明  
+ 將下列屬性套用至在封裝類別讓頁面上的選項可載入封裝時。 數字會針對類別目錄和頁面上，任意的資源識別碼和結尾的布林值，指定該分頁是否支援自動化。  
   
-### <a name="code"></a>Code  
- [!code-csharp[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs)] [!code-vb[UI_UserSettings_ToolsOptionPages#07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
+### <a name="code"></a>程式碼  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_2.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #07](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_2.vb)]  
   
-### <a name="description"></a>Description  
- The following event handler displays a result depending on the value of the property set in the options page. It uses the <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> method with the result explicitly cast into the custom option page type to access the properties exposed by the page.  
+### <a name="description"></a>說明  
+ 下列事件處理常式會顯示在 [選項] 頁面中設定的屬性值而定的結果。 它會使用<xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A>方法的結果明確地轉換成自訂選項的頁面類型，若要存取此網頁所公開的屬性。  
   
- In the case of a project generated by the package template, call this function from the `MenuItemCallback` function to attach it to the default command added to the **Tools** menu.  
+ 封裝範本所產生的專案，在呼叫此函式從`MenuItemCallback`函式，將它附加至的預設命令加入至**工具**功能表。  
   
-### <a name="code"></a>Code  
- [!code-csharp[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs)] [!code-vb[UI_UserSettings_ToolsOptionPages#08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
+### <a name="code"></a>程式碼  
+ [!code-csharp[UI_UserSettings_ToolsOptionPages #08](../../extensibility/internals/codesnippet/CSharp/creating-options-pages_3.cs) ] [!code-vb [UI_UserSettings_ToolsOptionPages #08](../../extensibility/internals/codesnippet/VisualBasic/creating-options-pages_3.vb)]  
   
-## <a name="see-also"></a>See Also  
- [Extending User Settings and Options](../../extensibility/extending-user-settings-and-options.md)   
- [Automation Support for Options Pages](../../extensibility/internals/automation-support-for-options-pages.md)
+## <a name="see-also"></a>另請參閱  
+ [擴充使用者設定和選項](../../extensibility/extending-user-settings-and-options.md)   
+ [選項頁的自動化支援](../../extensibility/internals/automation-support-for-options-pages.md)

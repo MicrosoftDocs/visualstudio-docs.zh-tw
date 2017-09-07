@@ -1,5 +1,5 @@
 ---
-title: Localizing Menu Commands | Microsoft Docs
+title: "當地語系化 功能表命令 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -37,34 +37,34 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 13910907c6041884cc0a1414fd0bfd82757a7639
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="localizing-menu-commands"></a>Localizing Menu Commands
-You can provide localized text for menu and toolbar commands by creating localized .vsct files and localized .resx files for your VSPackage, and then updating the project files to incorporate the changes.  
+# <a name="localizing-menu-commands"></a>當地語系化 功能表命令
+您可以提供當地語系化的文字的功能表和工具列命令藉由建立當地語系化的.vsct 檔案，並為您的 VSPackage，然後更新專案檔的變更當地語系化的.resx 檔。  
   
- For information about how to localize the installation experience, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md).  
+ 如需如何當地語系化安裝體驗的詳細資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)。  
   
-## <a name="localizing-command-names"></a>Localizing Command Names  
- In VSPackages, menu commands and toolbar buttons are defined in the .vsct file.  
+## <a name="localizing-command-names"></a>當地語系化的命令名稱  
+ 在 Vspackage 中，功能表命令和工具列按鈕會定義在.vsct 檔案中。  
   
-1.  In **Solution Explorer**, change the name of the .vsct file from *filename*.vsct to *filename*.en-US.vsct.  
+1.  在**方案總管 中**，變更從.vsct 檔的名稱*filename*.vsct 來*filename*.en US.vsct。  
   
-2.  Make a copy of *filename*.en-US.vsct for each localized language.  
+2.  建立一份*filename*.en-US.vsct 每個當地語系化語言。  
   
-     Name each copy *filename*.*Locale*.vsct, where *Locale* is a particular culture name. For a list of culture name values, see [Locale IDs Assigned by Microsoft](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx).  
+     命名每個複本*filename*。*地區設定*.vsct，其中*地區設定*是特定文化特性名稱。 如需文化特性名稱值的清單，請參閱[microsoft 指派的地區設定識別碼](https://msdn.microsoft.com/en-us/library/windows/apps/jj657969.aspx)。  
   
-     These *filename*.*Locale*.vsct files will contain the localized menu text for your package.  
+     這些*filename*。*地區設定*.vsct 檔會包含當地語系化的功能表文字，為您的封裝。  
   
-3.  Open each *filename*.*Locale*.vsct file to localize the text.  
+3.  開啟每一個*filename*。*地區設定*.vsct 檔的文字當地語系化。  
   
-    1.  Modify the [ButtonText](../extensibility/buttontext-element.md) element values as appropriate for the particular language.  
+    1.  修改[ButtonText](../extensibility/buttontext-element.md)為適合特定語言值的元素。  
   
-    2.  If you will provide localized icons, modify the [Bitmap](../extensibility/bitmap-element.md) values to point to the target files.  
+    2.  如果您將會提供當地語系化的圖示，修改[點陣圖](../extensibility/bitmap-element.md)值指向的目標檔案。  
   
-     The following example shows English and Spanish button text for a command to open a Family Tree Explorer tool window.  
+     下列範例會顯示英文和西班牙文按鈕文字，以開啟 家庭樹狀結構總管工具視窗命令。  
   
-     [FamilyTree.en-US.vsct]  
+     [FamilyTree.en US.vsct]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -77,7 +77,7 @@ You can provide localized text for menu and toolbar commands by creating localiz
     </Button>  
     ```  
   
-     [FamilyTree.es-ES.vsct]  
+     [FamilyTree.es ES.vsct]  
   
     ```xml  
     <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -91,24 +91,24 @@ You can provide localized text for menu and toolbar commands by creating localiz
   
     ```  
   
-## <a name="localizing-other-text-resources"></a>Localizing Other Text Resources  
- Text resources other than command names are defined in resource (.resx) files.  
+## <a name="localizing-other-text-resources"></a>當地語系化文字中的其他資源  
+ 命令名稱以外的文字資源的資源 (.resx) 檔中定義。  
   
-1.  Rename VSPackage.resx to VSPackage.en-US.resx.  
+1.  重新命名 VSPackage.en US.resx VSPackage.resx。  
   
-2.  Make a copy of the VSPackage.en-US.resx file for each localized language.  
+2.  請針對每個當地語系化的語言 VSPackage.en US.resx 檔案的副本。  
   
-     Name each copy VSPackage.*Locale*.resx, where *Locale* is a particular culture name.  
+     每個複本 VSPackage 的名稱。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
   
-3.  Rename Resources.resx to Resources.en-US.resx.  
+3.  重新命名 Resources.en US.resx Resources.resx。  
   
-4.  Make a copy of the Resources.en-US.resx file for each localized language.  
+4.  請針對每個當地語系化的語言 Resources.en US.resx 檔案的副本。  
   
-     Name each copy Resources.*Locale*.resx, where *Locale* is a particular culture name.  
+     命名每個複本的資源。*地區設定*.resx，其中*地區設定*是特定文化特性名稱。  
   
-5.  Open each .resx file to modify the string values as appropriate for the particular language and culture. The following example shows the localized resource definition for the title bar of a tool window.  
+5.  開啟每個.resx 檔案修改適合特定語言和文化特性的字串值。 下列範例會顯示當地語系化的資源定義工具視窗的標題列。  
   
-     [Resources.en-US.resx]  
+     [Resources.en US.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -116,7 +116,7 @@ You can provide localized text for menu and toolbar commands by creating localiz
     </data>  
     ```  
   
-     [Resources.es-ES.resx]  
+     [Resources.es ES.resx]  
   
     ```xml  
     <data name="ToolWindowTitle" xml:space="preserve">  
@@ -125,26 +125,26 @@ You can provide localized text for menu and toolbar commands by creating localiz
   
     ```  
   
-## <a name="incorporating-localized-resources-into-the-project"></a>Incorporating Localized Resources into the Project  
- You must modify the assemblyinfo.cs file and the project file to incorporate the localized resources.  
+## <a name="incorporating-localized-resources-into-the-project"></a>併入專案中當地語系化的資源  
+ 您必須修改 assemblyinfo.cs 檔案和專案檔案即可將當地語系化的資源。  
   
-1.  From the **Properties** node in **Solution Explorer**, open assemblyinfo.cs or assemblyinfo.vb in the editor.  
+1.  從**屬性**節點**方案總管 中**，在編輯器中開啟 assemblyinfo.cs 或 assemblyinfo.vb。  
   
-2.  Add the following entry.  
+2.  新增下列項目。  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
     ```  
   
-     This sets US English as the default language.  
+     英文 （美國） 設定為預設語言。  
   
-3.  Unload the project.  
+3.  卸載專案。  
   
-4.  Open the project file in the editor.  
+4.  在編輯器中開啟專案檔。  
   
-5.  Locate the `ItemGroup` element that contains `EmbeddedResource` elements.  
+5.  找出`ItemGroup`包含項目`EmbeddedResource`項目。  
   
-6.  In the `EmbeddedResource` element that calls VSPackage.en-US.resx, replace the `ManifestResourceName` element with a `LogicalName` element, set to `VSPackage.en-US.Resources`, as follows.  
+6.  在`EmbeddedResource`VSPackage.en US.resx，會呼叫的項目取代`ManifestResourceName`具有項目`LogicalName`項目，設定為`VSPackage.en-US.Resources`、，如下所示。  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -153,9 +153,9 @@ You can provide localized text for menu and toolbar commands by creating localiz
     </EmbeddedResource>  
     ```  
   
-7.  For each localized language, copy the  `EmbeddedResource` element for VsPackage.en-US, and set the **Include** attribute and **LogicalName** element of the copy to the target locale, as shown in the following example.  
+7.  針對每個當地語系化的語言複製`EmbeddedResource`VsPackage.en 美式和集合的項目**Include**屬性和**LogicalName**複製到目標地區設定，如下列所示的項目範例。  
   
-8.  To each localized `VSCTCompile` element, add a `ResourceName` element that points to `Menus.ctmenu`, as shown in the following example.  
+8.  每個當地語系化`VSCTCompile`項目，加入`ResourceName`指向項目的`Menus.ctmenu`，如下列範例所示。  
   
     ```xml  
     <ItemGroup>  
@@ -165,13 +165,13 @@ You can provide localized text for menu and toolbar commands by creating localiz
     </ItemGroup>  
     ```  
   
-9. Save the project file and reload the project.  
+9. 儲存專案檔，並重新載入專案。  
   
-10. Build the project.  
+10. 建置專案。  
   
-     This creates a main assembly, and resource assemblies for each language. For information on localizing the deployment process, see [Localizing VSIX Packages](../extensibility/localizing-vsix-packages.md)  
+     這樣會建立主要組件，以及每種語言的資源組件。 當地語系化的部署程序的資訊，請參閱[當地語系化 VSIX 封裝](../extensibility/localizing-vsix-packages.md)  
   
-## <a name="see-also"></a>See Also  
- [Extending Menus and Commands](../extensibility/extending-menus-and-commands.md)   
- [MenuCommands Vs. OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
- [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)
+## <a name="see-also"></a>另請參閱  
+ [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
+ [MenuCommand 對比OleMenuCommands](../extensibility/menucommands-vs-olemenucommands.md)   
+ [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

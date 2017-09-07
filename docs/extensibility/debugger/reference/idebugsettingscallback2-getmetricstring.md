@@ -1,5 +1,5 @@
 ---
-title: IDebugSettingsCallback2::GetMetricString | Microsoft Docs
+title: "IDebugSettingsCallback2::GetMetricString |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: f45e062029f7cb7045b71c61cc122bd8f2cdb864
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-Retrieves the value string of the metric given its name.  
+擷取指定之名稱的度量值字串。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetMetricString(  
@@ -59,21 +59,21 @@ private int GetMetricString(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pszType`  
- [in] Type of the metric.  
+ [in]標準的類型。  
   
  `guidSection`  
- [in] Unique identifier of the section.  
+ [in]區段的唯一識別碼。  
   
  `pszMetric`  
- [in] Name of the metric.  
+ [in]標準的名稱。  
   
  `pbstrValue`  
- [out] Returns the value string of the metric.  
+ [out]傳回度量的值字串。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

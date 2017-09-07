@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty2::GetSize | Microsoft Docs
+title: "IDebugProperty2::GetSize |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 00674430f95eed895a6564676e9d33a36795268d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugproperty2getsize"></a>IDebugProperty2::GetSize
-Gets the size, in bytes, of the property value.  
+取得大小，以位元組為單位的屬性值。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetSize (   
@@ -54,12 +54,12 @@ int GetSize (
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pdwSize`  
- [out] Returns the size, in bytes, of the property value.  
+ [out]傳回的大小，以位元組為單位的屬性值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code. Returns `S_GETSIZE_NO_SIZE` if the property has no size.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETSIZE_NO_SIZE`如果屬性沒有大小。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

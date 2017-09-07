@@ -18,7 +18,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 6fde5dfc012b43d71f6d8db2519607724eeeadc9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="debugging-by-using-the-store-viewer"></a>使用存放區檢視進行偵錯

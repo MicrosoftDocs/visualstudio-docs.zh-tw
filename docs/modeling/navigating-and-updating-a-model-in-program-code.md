@@ -1,5 +1,5 @@
 ---
-title: Navigating and Updating a Model in Program Code | Microsoft Docs
+title: "巡覽和更新的模型中的程式碼 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,67 +31,67 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 40f3a1d56019a8bcab4a11ffaf3aa7d37b02d262
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="navigating-and-updating-a-model-in-program-code"></a>Navigating and Updating a Model in Program Code
-You can write code to create and delete model elements, set their properties, and create and delete links between elements. All changes must be made within a transaction. If the elements are viewed on a diagram, the diagram will be "fixed up" automatically at the end of the transaction.  
+# <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型
+您可以撰寫程式碼，以建立和刪除模型項目、 設定其屬性，以及建立和刪除項目之間的連結。 在交易內，就必須進行的所有變更。 如果項目會在圖表檢視，圖表將會 「 」 自動修正交易的結尾。  
   
-## <a name="in-this-topic"></a>In this Topic  
- [An Example DSL Definition](#example)  
+## <a name="in-this-topic"></a>本主題內容  
+ [DSL 定義範例](#example)  
   
- [Navigating the Model](#navigation)  
+ [瀏覽模型](#navigation)  
   
- [Accessing Class Information](#metadata)  
+ [存取類別資訊](#metadata)  
   
- [Perform Changes inside a Transaction](#transaction)  
+ [執行交易內的變更](#transaction)  
   
- [Creating Model Elements](#elements)  
+ [建立模型項目](#elements)  
   
- [Creating Relationship Links](#links)  
+ [建立關聯性連結](#links)  
   
- [Deleting Elements](#deleteelements)  
+ [刪除項目](#deleteelements)  
   
- [Deleting Relationship Links](#deletelinks)  
+ [刪除關聯性的連結](#deletelinks)  
   
- [Reordering the Links of a Relationship](#reorder)  
+ [重新排列關聯性的連結](#reorder)  
   
- [Locks](#locks)  
+ [鎖定](#locks)  
   
- [Copy and Paste](#copy)  
+ [複製和貼上](#copy)  
   
- [Navigating and Updating Diagrams](#diagrams)  
+ [巡覽和更新圖表](#diagrams)  
   
- [Navigating between Shapes and Elements](#views)  
+ [圖案和項目之間巡覽](#views)  
   
- [Properties of Shapes and Connectors](#shapeProperties)  
+ [圖形和連接器的內容](#shapeProperties)  
   
- [DocView and DocData](#docdata)  
+ [DocView 和 DocData](#docdata)  
   
-##  <a name="example"></a> An Example DSL Definition  
- This is the main part of DslDefinition.dsl for the examples in this topic:  
+##  <a name="example"></a>DSL 定義範例  
+ 這是本主題中的範例如 DslDefinition.dsl 的主要部分：  
   
- ![DSL Definition diagram &#45; family tree model](../modeling/media/familyt_person.png "FamilyT_Person")  
+ ![DSL 定義圖表 &#45;王朝家譜模型](../modeling/media/familyt_person.png "FamilyT_Person")  
   
- This model is an instance of this DSL:  
+ 此模型是此 DSL 的執行個體：  
   
- ![Tudor Family Tree Model](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
+ ![都鐸王朝家譜模型](../modeling/media/tudor_familytreemodel.png "Tudor_FamilyTreeModel")  
   
-### <a name="references-and-namespaces"></a>References and Namespaces  
- To run the code in this topic, you should reference:  
+### <a name="references-and-namespaces"></a>參考和命名空間  
+ 若要執行本主題中的程式碼，您應該參考：  
   
  `Microsoft.VisualStudio.Modeling.Sdk.11.0.dll`  
   
- Your code will use this namespace:  
+ 您的程式碼會使用此命名空間：  
   
  `using Microsoft.VisualStudio.Modeling;`  
   
- In addition, if you are writing the code in a different project from the one in which your DSL is defined, you should import the assembly that is built by the Dsl project.  
+ 此外，如果您要從 DSL 定義所在的一個不同的專案中撰寫程式碼，您應該匯入 Dsl 專案所建置的組件。  
   
-##  <a name="navigation"></a> Navigating the Model  
+##  <a name="navigation"></a>瀏覽模型  
   
-### <a name="properties"></a>Properties  
- Domain properties that you define in the DSL definition become properties that you can access in program code:  
+### <a name="properties"></a>屬性  
+ DSL 定義中定義的網域屬性會變成屬性，您可以在程式碼中存取：  
   
  `Person henry = ...;`  
   
@@ -99,28 +99,28 @@ You can write code to create and delete model elements, set their properties, an
   
  `if (henry.Name.EndsWith("VIII")) ...`  
   
- If you want to set a property, you must do so inside a [transaction](#transaction):  
+ 如果您想要設定屬性，您必須這樣內[交易](#transaction):  
   
  `henry.Name = "Henry VIII";`  
   
- If in the DSL definition, a property's **Kind** is **Calculated**, you cannot set it. For more information, see [Calculated and Custom Storage Properties](../modeling/calculated-and-custom-storage-properties.md).  
+ DSL 定義中，屬性的 if**種類**是**計算**，您無法設定它。 如需詳細資訊，請參閱[計算和儲存體的自訂屬性](../modeling/calculated-and-custom-storage-properties.md)。  
   
-### <a name="relationships"></a>Relationships  
- Domain relationships that you define in the DSL definition become pairs of properties, one on the class at each end of the relationship. The names of the properties appear in the DslDefinition diagram as labels on the roles at each side of the relationship. Depending on the multiplicity of the role, the type of the property is either the class at the other end of the relationship, or a collection of that class.  
+### <a name="relationships"></a>關聯性  
+ DSL 定義中定義的網域關聯性變成成對的其中一個關聯性的每一端類別上的屬性。 屬性的名稱會出現在 DslDefinition 圖表中，為在每個關聯性端的角色上的標籤。 Role 的多重性，根據屬性的型別是位於關聯性另一端的類別，或是該類別的集合。  
   
  `foreach (Person child in henry.Children) { ... }`  
   
  `FamilyTreeModel ftree = henry.FamilyTreeModel;`  
   
- The properties at opposite ends of a relationship are always reciprocal. When a link is created or deleted, the role properties on both elements are updated. The following expression (which uses the extensions of `System.Linq`) is always true for the ParentsHaveChildren relationship in the example:  
+ 在關聯性的相反兩端屬性永遠是對等。 當建立或刪除連結時，會更新這兩個項目上的角色屬性。 下列運算式 (其中使用的副檔名`System.Linq`) 一定是 true。 ParentsHaveChildren 中的關聯性的範例：  
   
  `(Person p) => p.Children.All(child => child.Parents.Contains(p))`  
   
  `&& p.Parents.All(parent => parent.Children.Contains(p));`  
   
- **ElementLinks**. A relationship is also represented by a model element called a *link*, which is an instance of the domain relationship type. A link always has one source element and one target element. The source element and the target element can be the same.  
+ **ElementLinks**。 關聯性也由稱為將模型項目*連結*，這是網域關聯性類型的執行個體。 連結永遠都有一個來源項目和一個目標項目。 來源項目和目標項目可以是相同。  
   
- You can access a link and its properties:  
+ 您可以存取的連結和其屬性：  
   
  `ParentsHaveChildren link = ParentsHaveChildren.GetLink(henry, edward);`  
   
@@ -128,35 +128,35 @@ You can write code to create and delete model elements, set their properties, an
   
  `link == null || link.Parent == henry && link.Child == edward`  
   
- By default, no more than one instance of a relationship is allowed to link any pair of model elements. But if in the DSL definition, the `Allow Duplicates` flag is true for the relationship, then there might be more than one link, and you must use `GetLinks`:  
+ 根據預設，允許一個以上的執行個體關聯性的連結模型項目的任何配對。 DSL 定義中，但`Allow Duplicates`旗標為 true 的關聯性，則可能會有一個以上的連結，而且您必須使用`GetLinks`:  
   
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`  
   
- There are also other methods for accessing links. For example:  
+ 另外還有其他方法來存取連結。 例如:   
   
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`  
   
- **Hidden roles.** If in the DSL definition, **Is Property Generated** is **false** for a particular role, then no property is generated that corresponds to that role. However, you can still access the links and traverse the links using the methods of the relationship:  
+ **隱藏的角色。** DSL 定義中**產生屬性**是**false**為特定的角色，則沒有屬性不會產生對應至該角色。 不過，您仍可以存取連結及周遊的連結關聯性的方法：  
   
  `foreach (Person p in ParentsHaveChildren.GetChildren(henry)) { ... }`  
   
- The most frequently used example is the <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship, which links a model element to the shape that displays it on a diagram:  
+ 最常使用的範例是<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>關聯性，將模型項目會連結到圖表顯示的圖形：  
   
  `PresentationViewsSubject.GetPresentation(henry)[0] as PersonShape`  
   
-### <a name="the-element-directory"></a>The Element Directory  
- You can access all the elements in the store using the element directory:  
+### <a name="the-element-directory"></a>項目目錄  
+ 您可以存取使用的項目目錄存放區中的所有項目：  
   
  `store.ElementDirectory.AllElements`  
   
- There are also methods for finding elements, such as the following:  
+ 另外還有的方法來尋找項目，如下所示：  
   
  `store.ElementDirectory.FindElements(Person.DomainClassId);`  
   
  `store.ElementDirectory.GetElement(elementId);`  
   
-##  <a name="metadata"></a> Accessing Class Information  
- You can get information about the classes, relationships, and other aspects of the DSL definition. For example:  
+##  <a name="metadata"></a>存取類別資訊  
+ 您可以從中取得資訊的類別、 關聯性和 DSL 定義的其他層面。 例如:   
   
  `DomainClassInfo personClass = henry.GetDomainClass();`  
   
@@ -170,16 +170,16 @@ You can write code to create and delete model elements, set their properties, an
   
  `DomainRoleInfo sourceRole = relationship.DomainRole[0];`  
   
- The ancestor classes of model elements are as follows:  
+ 模型項目上階類別如下所示：  
   
--   ModelElement - all elements and relationships are ModelElements  
+-   ModelElement-所有項目和關聯性是 ModelElements  
   
--   ElementLink - all relationships are ElementLinks  
+-   ElementLink-所有關聯性都 ElementLinks  
   
-##  <a name="transaction"></a> Perform Changes inside a Transaction  
- Whenever your program code changes anything in the Store, it must do so inside a transaction. This applies to all model elements, relationships, shapes, diagrams, and their properties. For more information, see <xref:Microsoft.VisualStudio.Modeling.Transaction>.  
+##  <a name="transaction"></a>執行交易內的變更  
+ 每當您的程式碼變更存放區中的任何項目時，它必須在交易內執行。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。 如需詳細資訊，請參閱<xref:Microsoft.VisualStudio.Modeling.Transaction>。  
   
- The most convenient method of managing a transaction is with a `using` statement enclosed in a `try...catch` statement:  
+ 管理交易的最方便的方法是使用`using`陳述式括住`try...catch`陳述式：  
   
 ```  
 Store store; ...  
@@ -205,12 +205,12 @@ catch (Exception ex)
 }  
 ```  
   
- You can make any number of changes inside one transaction. You can open new transactions inside an active transaction.  
+ 您可以將任意數目的一筆交易內的變更。 您可以開啟使用中交易內的新交易。  
   
- To make your changes permanent, you should `Commit` the transaction before it is disposed. If an exception occurs that is not caught inside the transaction, the Store will be reset to its state before the changes.  
+ 若要進行永久變更，您應該`Commit`交易之前加以處置。 如果未攔截到在交易內發生的例外狀況，存放區將會重設為所做的變更之前的狀態。  
   
-##  <a name="elements"></a> Creating Model Elements  
- This example adds an element to an existing model:  
+##  <a name="elements"></a>建立模型項目  
+ 這個範例會將元素加入至現有的模型：  
   
 ```  
 FamilyTreeModel familyTree = ...; // The root of the model.         
@@ -230,97 +230,97 @@ using (Transaction t =
 }  
 ```  
   
- This example illustrates these essential points about creating an element:  
+ 這個範例會說明這些重點有關建立一個項目：  
   
--   Create the new element in a specific partition of the Store. For model elements and relationships, but not shapes, this is usually the default partition.  
+-   存放區的特定資料分割中建立新的項目。 模型項目和關聯性，但不圖形，這通常是預設資料分割。  
   
--   Make it the target of an embedding relationship. In the DslDefinition of this example, each Person must be the target of embedding relationship FamilyTreeHasPeople. To achieve this, we can either set the FamilyTreeModel role property of the Person object, or add the Person to the People role property of the FamilyTreeModel object.  
+-   進行內嵌的關聯性的目標。 在此範例的 DslDefinition，每個人必須是內嵌 FamilyTreeHasPeople 關聯性的目標。 若要達成此目的，我們可以設定 FamilyTreeModel 角色物件的屬性人員，或將人員加入至 FamilyTreeModel 物件的使用者角色屬性。  
   
--   Set the properties of a new element, particularly the property for which `IsName` is true in the DslDefinition. This flag marks the property that serves to identify the element uniquely within its owner. In this case, the Name property has that flag.  
+-   設定新的項目，特別是其屬性的屬性`IsName`DslDefinition 中成立。 這個旗標標記可以用來識別唯一中其擁有者的項目屬性。 在此情況下，Name 屬性具有該旗標。  
   
--   The DSL definition of this DSL must have been loaded into the Store. If you are writing an extension such as a menu command, this will typically be already true. In other cases, you can explicitly load the model into the Store, or use <xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus> to load it. For more information, see [How to: Open a Model from File in Program Code](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+-   DSL 定義的這個 DSL 必須載入到存放區。 如果您在撰寫如功能表命令擴充功能，這通常會是已為 true。 在其他情況下，您可以明確地將模型載入到存放區，或使用<xref:Microsoft.VisualStudio.Modeling.Integration.ModelBus>載入它。 如需詳細資訊，請參閱[How to： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)。  
   
- When you create an element in this way, a shape is automatically created (if the DSL has a diagram). It appears in an automatically assigned location, with default shape, color, and other features. If you want to control where and how the associated shape appears, see [Creating an Element and its Shape](#merge).  
+ 當您建立項目，如此一來時，圖形會自動建立 （如果 DSL 圖表）。 它會顯示在自動指派的位置，與預設圖形、 色彩和其他功能。 如果您想要控制相關聯的圖形出現的位置和方式，請參閱[建立項目和其圖形](#merge)。  
   
-##  <a name="links"></a> Creating Relationship Links  
- There are two relationships defined in the example DSL definition. Each relationship defines a *role property* on the class at each end of the relationship.  
+##  <a name="links"></a>建立關聯性連結  
+ 有兩個範例 DSL 定義中定義的關聯性。 每個關聯性定義*角色屬性*每一端的關聯性類別上。  
   
- There are three ways in which you can create an instance of a relationship. Each of these three methods has the same effect:  
+ 有三種方式，您可以在其中建立關聯性的執行個體。 每種方法具有相同的效果：  
   
--   Set the property of the source role player. For example:  
+-   設定來源角色扮演者的屬性。 例如:   
   
     -   `familyTree.People.Add(edward);`  
   
     -   `edward.Parents.Add(henry);`  
   
--   Set the property of the target role player. For example:  
+-   設定目標角色扮演者的屬性。 例如:   
   
     -   `edward.familyTreeModel = familyTree;`  
   
-         The multiplicity of this role is `1..1`, so we assign the value.  
+         此角色的重數是`1..1`，因此我們會將指派值。  
   
     -   `henry.Children.Add(edward);`  
   
-         The multiplicity of this role is `0..*`, so we add to the collection.  
+         此角色的重數是`0..*`，因此我們加入至集合。  
   
--   Construct an instance of the relationship explicitly. For example:  
+-   明確建構關聯性執行的個體。 例如:   
   
     -   `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`  
   
     -   `ParentsHaveChildren edwardHenryLink = new ParentsHaveChildren(henry, edward);`  
   
- The last method is useful if you want to set properties on the relationship itself.  
+ 最後的方法是如果您想要設定屬性本身的關聯性很有用。  
   
- When you create an element in this way, a connector on the diagram is automatically created, but it has a default shape, color, and other features. To control how the associated connector is created, see [Creating an Element and its Shape](#merge).  
+ 當您以這種方式建立項目時，自動建立在圖表上的連接器，但它有預設圖形、 色彩和其他功能。 若要控制相關聯的連接器的建立方式，請參閱[建立項目和其圖形](#merge)。  
   
-##  <a name="deleteelements"></a> Deleting Elements  
- Delete an element by calling `Delete()`:  
+##  <a name="deleteelements"></a>刪除項目  
+ 刪除的項目，藉由呼叫`Delete()`:  
   
  `henry.Delete();`  
   
- This operation will also delete:  
+ 也會刪除這項作業：  
   
--   Relationship links to and from the element. For example, `edward.Parents` will no longer contain `henry`.  
+-   關聯性的連結項目。 例如，`edward.Parents`就不再包含`henry`。  
   
--   Elements at roles for which the `PropagatesDelete` flag is true. For example, the shape that displays the element will be deleted.  
+-   位於其角色的項目`PropagatesDelete`旗標為 true。 例如，將刪除顯示的項目圖形。  
   
- By default, every embedding relationship has `PropagatesDelete` true at the target role. Deleting `henry` does not delete the `familyTree`, but `familyTree.Delete()` would delete all the `Persons`. For more information, see [Customizing Deletion Behavior](../modeling/customizing-deletion-behavior.md).  
+ 根據預設，每個內嵌的關聯性具有`PropagatesDelete`目標的角色，則為 true。 刪除`henry`不會刪除`familyTree`，但`familyTree.Delete()`會刪除所有`Persons`。 如需詳細資訊，請參閱[自訂刪除行為](../modeling/customizing-deletion-behavior.md)。  
   
- By default, `PropagatesDelete` is not true for the roles of reference relationships.  
+ 根據預設，`PropagatesDelete`不適用的參考關聯性的角色。  
   
- You can cause the deletion rules to omit specific propagations when you delete an object. This is useful if you are substituting one element for another. You supply the GUID of one or more roles for which deletion should not be propagated. The GUID can be obtained from the relationship class:  
+ 您可能會導致刪除規則，若要刪除的物件時，略過特定的傳播。 這非常有用，如果您會取代另一個項目。 您提供一或多個角色的刪除動作應該不會傳播的 GUID。 從 關聯性類別可取得 GUID:  
   
  `henry.Delete(ParentsHaveChildren.SourceDomainRoleId);`  
   
- (This particular example would have no effect, because `PropagatesDelete` is `false` for the roles of the `ParentsHaveChildren` relationship.)  
+ (此特定範例會有任何作用，因為`PropagatesDelete`是`false`的角色`ParentsHaveChildren`關聯性。)  
   
- In some cases, deletion is prevented by the existence of a lock, either on the element or on an element that would be deleted by propagation. You can use `element.CanDelete()` to check whether the element can be deleted.  
+ 在某些情況下，因鎖定項目上，或是會刪除傳播的項目上存在而無法刪除。 您可以使用`element.CanDelete()`來檢查是否可以刪除項目。  
   
-##  <a name="deletelinks"></a> Deleting Relationship Links  
- You can delete a relationship link by removing an element from a role property:  
+##  <a name="deletelinks"></a>刪除關聯性的連結  
+ 您可以藉由從角色屬性中移除項目刪除關聯性的連結：  
   
  `henry.Children.Remove(edward); // or:`  
   
  `edward.Parents.Remove(henry);  // or:`  
   
- You can also delete the link explicitly:  
+ 您也可以明確地刪除連結：  
   
  `edwardHenryLink.Delete();`  
   
- These three methods all have the same effect. You only need to use one of them.  
+ 所有這三種方法有相同的效果。 您只需要使用其中一個。  
   
- If the role has 0..1 or 1..1 multiplicity, you can set it to `null`, or to another value:  
+ 如果角色有 0..1 或 1..1 的多重性，您就可以將它設定為`null`，或為另一個值：  
   
- `edward.FamilyTreeModel = null;` // or:  
+ `edward.FamilyTreeModel = null;`或：  
   
  `edward.FamilyTreeModel = anotherFamilyTree;`  
   
-##  <a name="reorder"></a> Re-ordering the Links of a Relationship  
- The links of a particular relationship that are sourced or targeted at a particular model element have a specific sequence. They appear in the order in which they were added. For example, this statement will always yield the children in the same order:  
+##  <a name="reorder"></a>重新排序的關聯性的連結  
+ 取得資料來源或在特定模型項目為目標的特定關聯性的連結，會有特定的順序。 它們會出現在已加入的順序。 例如，此陳述式一定會產生相同的順序中的子系：  
   
  `foreach (Person child in henry.Children) ...`  
   
- You can change the order of the links:  
+ 您可以變更連結的順序：  
   
  `ParentsHaveChildren link = GetLink(henry,edward);`  
   
@@ -332,13 +332,13 @@ using (Transaction t =
   
  `link.MoveBefore(role, nextLink);`  
   
-##  <a name="locks"></a> Locks  
- Your changes might be prevented by a lock. Locks can be set on individual elements, on partitions, and on the store. If any of these levels has a lock that prevents the kind of change that you want to make, an exception might be thrown when you attempt it. You can discover whether locks are set by using element.GetLocks(), which is an extension method that is defined in the namespace <xref:Microsoft.VisualStudio.Modeling.Immutability>.  
+##  <a name="locks"></a>鎖定  
+ 鎖定可能會阻止您的變更。 個別項目、 資料分割，以及在存放區，可以設定鎖定。 如果任何這些層級鎖定來防止您想要的變更種類，當您嘗試它時可能會擲回例外狀況。 您可以探索是否鎖定使用設定的項目。GetLocks()，這是定義在命名空間的擴充方法<xref:Microsoft.VisualStudio.Modeling.Immutability>。  
   
- For more information, see [Defining a Locking Policy to Create Read-Only Segments](../modeling/defining-a-locking-policy-to-create-read-only-segments.md).  
+ 如需詳細資訊，請參閱[鎖定原則，以建立唯讀區段定義](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。  
   
-##  <a name="copy"></a> Copy and Paste  
- You can copy elements or groups of elements to an <xref:System.Windows.Forms.IDataObject>:  
+##  <a name="copy"></a>複製和貼上  
+ 您可以複製項目或群組的項目<xref:System.Windows.Forms.IDataObject>:  
   
 ```  
 Person person = personShape.ModelElement as Person;  
@@ -348,9 +348,9 @@ personShape.Diagram.ElementOperations
       .Copy(data, person.Children.ToList<ModelElement>());  
 ```  
   
- The elements are stored as a serialized Element Group.  
+ 項目會儲存為序列化的項目群組。  
   
- You can merge elements from an IDataObject into a model:  
+ 您可以將項目從 IDataObject 合併至模型：  
   
 ```  
 using (Transaction t = targetDiagram.Store.  
@@ -360,32 +360,32 @@ using (Transaction t = targetDiagram.Store.
 }  
 ```  
   
- `Merge ()` can accept either a `PresentationElement` or a `ModelElement`. If you give it a `PresentationElement`, you can also specify a position on the target diagram as a third parameter.  
+ `Merge ()`可以接受`PresentationElement`或`ModelElement`。 如果您提供`PresentationElement`，您也可以做為第三個參數的目標圖表上指定的位置。  
   
-##  <a name="diagrams"></a> Navigating and updating diagrams  
- In a DSL, the domain model element, which represents a concept such as Person or Song, is separate from the shape element, which represents what you see on the diagram. The domain model element stores the important properties and relationships of the concepts. The shape element stores the size, position and color of the object's view on the diagram, and the layout of its component parts.  
+##  <a name="diagrams"></a>巡覽和更新圖表  
+ DSL，在網域模型項目，它代表的概念，例如人或歌曲，則是分開的圖形元素，代表圖表上看到的內容項目。 網域模型項目儲存的重要屬性和關聯性的概念。 圖形元素儲存大小、 位置和色彩在圖表上的物件的檢視以及其元件部分的配置。  
   
-### <a name="presentation-elements"></a>Presentation Elements  
- ![Class diagram of base shape and element types](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
+### <a name="presentation-elements"></a>簡報項目  
+ ![基底的圖案和項目類型的類別圖表](../modeling/media/dslshapesandelements.png "DSLshapesAndElements")  
   
- In your DSL Definition, each element that you specify creates a class that is derived from one of the following standard classes.  
+ 在 DSL 定義中，您指定每個項目會建立衍生自下列標準類別的其中一個類別。  
   
-|Kind of element|Base class|  
+|一種項目|基底類別|  
 |---------------------|----------------|  
-|Domain class|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|  
-|Domain relationship|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
-|Shape|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
-|Connector|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
-|Diagram|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
+|領域類別|<xref:Microsoft.VisualStudio.Modeling.ModelElement>|  
+|網域關聯性|<xref:Microsoft.VisualStudio.Modeling.ElementLink>|  
+|圖形|<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>|  
+|接點|<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>|  
+|圖表|<xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>|  
   
- An element on a diagram usually represents a model element. Typically (but not always), a <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape> represents a domain class instance, and a <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape> represents a domain relationship instance. The <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship links a node or link shape to the model element that it represents.  
+ 在圖表上的項目通常代表模型項目。 通常 （但並非一定），<xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>代表網域類別的執行個體，和<xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>代表網域關聯性執行個體。 <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>關聯性連結至模型項目所代表的節點或連結的圖形。  
   
- Every node or link shape belongs to one diagram. A binary link shape connects two node shapes.  
+ 每個節點或連結 」 圖形都屬於一個圖表。 二進位連結 」 圖形會連接兩個節點圖案。  
   
- Shapes can have child shapes in two sets. A shape in the `NestedChildShapes` set is confined to the bounding box of its parent. A shape in the `RelativeChildShapes` list can appear outside or partly outside the bounds of the parent - for example a label or a port. A diagram has no `RelativeChildShapes` and no `Parent`.  
+ 圖形可以有兩個集合中的子圖形。 中的圖形`NestedChildShapes`組僅限於其父系的週框方塊。 中的圖形`RelativeChildShapes`清單會顯示外部或部分的父-例如標籤或連接埠範圍之外。 圖表沒有任何`RelativeChildShapes`，而且沒有`Parent`。  
   
-###  <a name="views"></a> Navigating between shapes and elements  
- Domain model elements and shape elements are related by the <xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject> relationship.  
+###  <a name="views"></a>圖案和項目之間巡覽  
+ 網域模型項目和圖形元素以相關<xref:Microsoft.VisualStudio.Modeling.Diagrams.PresentationViewsSubject>關聯性。  
   
 ```csharp  
 // using Microsoft.VisualStudio.Modeling;  
@@ -397,7 +397,7 @@ PersonShape henryShape =
     .FirstOrDefault() as PersonShape;  
 ```  
   
- The same relationship links relationships to connectors on the diagram:  
+ 相同的關聯性會連結到圖表上的連接器的關聯性：  
   
 ```  
 Descendants link = Descendants.GetLink(henry, edward);  
@@ -407,7 +407,7 @@ DescendantConnector dc =
 // dc.FromShape == henryShape && dc.ToShape == edwardShape  
 ```  
   
- This relationship also links the root of the model to the diagram:  
+ 此關聯性也會連結到圖表中，模型根：  
   
 ```  
 FamilyTreeDiagram diagram =   
@@ -415,28 +415,28 @@ FamilyTreeDiagram diagram =
       .FirstOrDefault() as FamilyTreeDiagram;  
 ```  
   
- To get the model element represented by a shape, use:  
+ 若要取得圖形所代表的模型項目，請使用：  
   
  `henryShape.ModelElement as Person`  
   
  `diagram.ModelElement as FamilyTreeModel`  
   
-### <a name="navigating-around-the-diagram"></a>Navigating around the Diagram  
- In general it is not advisable to navigate between shapes and connectors on the diagram. It is better to navigate the relationships in the model, moving between the shapes and connectors only when it is necessary to work on the appearance of the diagram. These methods link connectors to the shapes at each end:  
+### <a name="navigating-around-the-diagram"></a>巡覽圖表  
+ 一般情況下不建議巡覽圖形和圖表上的連接器。 最好是瀏覽在模型中，只在必要時用於圖表的外觀，圖形和連接器之間移動的關聯性。 這些方法會連結至每一端的圖形連接器：  
   
  `personShape.FromRoleLinkShapes, personShape.ToRoleLinkShapes`  
   
  `connector.FromShape, connector.ToShape`  
   
- Many shapes are composites; they are made up of a parent shape and one or more layers of children. Shapes that are positioned relative to another shape are said to be its *children*. When the parent shape moves, the children move with it.  
+ 許多圖形都是複合型態。它們所組成的父圖案和一或多個層級的子系。 據說相對於另一個圖形的形狀是其*子系*。 父圖形移動時，子系隨著一起移動。  
   
- *Relative children* can appear outside the bounding box of the parent shape. *Nested* children appear strictly inside the bounds of the parent.  
+ *相對的子系*可以出現在父圖形的週框方塊之外。 *巢狀*系嚴格出現在父系範圍內。  
   
- To obtain the top set of shapes on a diagram, use:  
+ 若要取得最上層的一組圖形在圖表上，請使用：  
   
  `Diagram.NestedChildShapes`  
   
- The ancestor classes of shapes and connectors are:  
+ 圖形及連接器的上階類別有：  
   
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>  
   
@@ -456,31 +456,31 @@ FamilyTreeDiagram diagram =
   
  --------- *YourConnector*  
   
-###  <a name="shapeProperties"></a> Properties of Shapes and Connectors  
- In most cases, it is not necessary to make explicit changes to shapes. When you have changed the model elements, the "fix up" rules update the shapes and connectors. For more information, see [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md).  
+###  <a name="shapeProperties"></a>圖形和連接器的內容  
+ 在大部分情況下，不需要對圖形進行明確的變更。 當您變更模型項目時，「 修復 」 規則更新圖形和連接器。 如需詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
   
- However, it is useful to make some explicit changes to shapes in properties that are independent of the model elements. For example, you could change these properties:  
+ 不過，很有用明確變更屬性的模型項目中的圖形。 例如，您可以變更這些屬性：  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A> - determines the height and width of the shape.  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Size%2A>-決定圖形的寬度與高度。  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A> - position relative to the parent shape or diagram  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape.Location%2A>-相對於父圖形或圖表的位置  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A> - the set of pens and brushes used for drawing the shape or connector  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.StyleSet%2A>-畫筆和筆刷用來繪製圖形或連接器的集合  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A> - makes the shape invisible  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Hide%2A>為使圖形不可見  
   
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A> - makes the shape visible after a `Hide()`  
+-   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.Show%2A>為使圖形可見之後`Hide()`  
   
-###  <a name="merge"></a> Creating an Element and its Shape  
- When you create an element and link it into the tree of embedding relationships, a shape is automatically created and associated with it. This is done by the "fixup" rules that execute at the end of the transaction. However, the shape will appear in an automatically-assigned location, and its shape, color and other features will have default values. To control how the shape is created, you can use the merge function. You must first add the elements you want to add into an ElementGroup, and then merge the group into the diagram.  
+###  <a name="merge"></a>建立項目和其圖形  
+ 當您建立一個項目，並將它連結到的內嵌關聯性樹狀結構時，圖形會自動建立並與它相關聯。 做法是在交易結束執行的 「 修復 」 規則。 不過，圖形會在自動指派的位置，且其形狀、 色彩和其他功能，則會有預設值。 若要控制圖形的建立方式，您可以使用 merge 函式。 您必須先加入您想要加入至 ElementGroup，項的目，然後再合併到圖表的群組。  
   
- This method:  
+ 這個方法：  
   
--   Sets the name, if you have assigned a property as the element name.  
+-   如果，設定的名稱，您已指派為元素名稱的屬性。  
   
--   Observes any Element Merge Directives that you specified in the DSL Definition.  
+-   會遵守任何項目合併指示詞 DSL 定義中所指定。  
   
- This example creates a shape at the mouse position, when the user double-clicks the diagram. In the DSL Definition for this sample, the `FillColor` property of `ExampleShape` has been exposed.  
+ 當使用者按兩下圖表，此範例會建立圖形滑鼠位置。 在此範例中，DSL 定義`FillColor`屬性`ExampleShape`已公開。  
   
 ```  
   
@@ -517,24 +517,24 @@ partial class MyDiagram
   
 ```  
   
- If you provide more than one shape, set their relative positions using the `AbsoluteBounds`.  
+ 如果您提供多個圖形，設定其使用的相對位置`AbsoluteBounds`。  
   
- You can also set the color and other exposed properties of connectors using this method.  
+ 您也可以設定色彩，以及使用此方法的連接器的其他公開的屬性。  
   
-### <a name="use-transactions"></a>Use Transactions  
- Shapes, connectors and diagrams are subtypes of <xref:Microsoft.VisualStudio.Modeling.ModelElement> and live in the Store. You must therefore make changes to them only inside a transaction. For more information, see [How to: Use Transactions to Update the Model](../modeling/how-to-use-transactions-to-update-the-model.md).  
+### <a name="use-transactions"></a>使用交易  
+ 圖形、 連接器和圖表會的子類型<xref:Microsoft.VisualStudio.Modeling.ModelElement>和即時存放區中。 因此，您必須進行這些變更只在交易內。 如需詳細資訊，請參閱[How to： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
-##  <a name="docdata"></a> Document View and Document Data  
- ![Class diagram of standard diagram types](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
+##  <a name="docdata"></a>文件檢視和文件資料  
+ ![標準圖表類型的類別圖表](../modeling/media/dsldiagramsanddocs.png "DSLDiagramsandDocs")  
   
-## <a name="store-partitions"></a>Store Partitions  
- When a model is loaded, the accompanying diagram is loaded at the same time. Typically, the model is loaded into Store.DefaultPartition, and the diagram content is loaded into another Partition. Usually, the content of each partition is loaded and saved to a separate file.  
+## <a name="store-partitions"></a>儲存資料分割  
+ 當載入模型時，同時載入隨附的圖表。 一般而言，模型載入 Store.DefaultPartition，而且圖表內容載入至另一個磁碟分割。 通常，每個資料分割的內容會載入，並儲存至個別檔案。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.Modeling.ModelElement>   
- [Validation in a Domain-Specific Language](../modeling/validation-in-a-domain-specific-language.md)   
- [Generating Code from a Domain-Specific Language](../modeling/generating-code-from-a-domain-specific-language.md)   
- [How to: Use Transactions to Update the Model](../modeling/how-to-use-transactions-to-update-the-model.md)   
- [Integrating Models by using Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
- [Responding to and Propagating Changes](../modeling/responding-to-and-propagating-changes.md)
+ [中的網域特定定義域語言的驗證](../modeling/validation-in-a-domain-specific-language.md)   
+ [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   
+ [如何： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)   
+ [使用 Visual Studio Modelbus 整合模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   
+ [回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)
 

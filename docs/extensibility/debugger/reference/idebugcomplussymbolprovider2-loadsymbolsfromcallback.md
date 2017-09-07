@@ -1,5 +1,5 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback | Microsoft Docs
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -33,13 +33,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5c6e016d3c3bbd11bf57974dc0afe0c8df8f5d21
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
-Loads debug symbols using the specified callback method.  
+載入偵錯符號使用指定的回呼方法。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT LoadSymbolsFromCallback(  
@@ -65,33 +65,33 @@ int LoadSymbolsFromCallback(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- [in] Identifier of the application domain.  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in]模組的唯一識別碼。  
   
  `pUnkMetadataImport`  
- [in] Object that contains the symbol metadata.  
+ [in]物件，其中包含的符號中繼資料。  
   
  `pUnkCorDebugModule`  
- [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in]物件，用於實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `bstrModuleName`  
- [in] Name of the module.  
+ [in]模組的名稱。  
   
  `bstrSymSearchPath`  
- [in] Path to search for the symbol file.  
+ [in]搜尋符號檔案的路徑。  
   
  `pCallback`  
- [in] Object that represents the callback method.  
+ [in]表示回呼方法的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
   
 ```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(  
@@ -184,5 +184,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

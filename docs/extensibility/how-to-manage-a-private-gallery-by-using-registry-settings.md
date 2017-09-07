@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 8ce054bf6149f0224785f4c3cd9274e86dc09d04
 ms.openlocfilehash: 00c42a4dbd6a9a526d661b7fa04793d531acd8bc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何： 使用登錄設定來管理私人組件庫

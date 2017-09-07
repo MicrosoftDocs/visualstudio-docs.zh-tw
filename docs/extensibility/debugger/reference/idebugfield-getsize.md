@@ -1,5 +1,5 @@
 ---
-title: IDebugField::GetSize | Microsoft Docs
+title: "IDebugField::GetSize |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5f025b96c3a37cd55d8bc148d04196a862f7e7bc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
-This method gets the size of a field, in bytes.  
+這個方法會取得欄位，以位元組為單位的大小。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetSize(   
@@ -54,15 +54,15 @@ int GetSize(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pdwSize`  
- [out] Returns the size.  
+ [out]傳回的大小。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- All fields have a type and all types have a size. For example, a field with a type of byte has a size of 1 byte.  
+## <a name="remarks"></a>備註  
+ 所有欄位都具有型別和所有型別都有大小。 比方說，類型為位元組的欄位有 1 個位元組的大小。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

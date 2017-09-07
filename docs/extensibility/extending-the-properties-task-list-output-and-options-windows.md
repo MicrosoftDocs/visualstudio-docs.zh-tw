@@ -1,5 +1,5 @@
 ---
-title: Extending the Properties, Task List, Output, and Options Windows | Microsoft Docs
+title: "擴充屬性、 工作清單、 輸出和選項 Windows |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -37,37 +37,37 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5f16658320df87a479d9669fadf269856f80a67a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="extending-the-properties-task-list-output-and-options-windows"></a>Extending the Properties, Task List, Output, and Options Windows
-You can access any tool window in Visual Studio. This walkthrough shows how to integrate information about your tool window into a new **Options** page and a new setting on the **Properties** page, and also how to write to the **Task List** and **Output** windows.  
+# <a name="extending-the-properties-task-list-output-and-options-windows"></a>擴充屬性、 工作清單、 輸出和選項的 Windows
+您可以存取 Visual Studio 中的任何工具視窗。 本逐步解說示範如何整合至新的工具視窗資訊**選項**頁面和新的設定上**屬性** 頁面上，以及如何將寫入**工作清單**和**輸出**windows。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>必要條件  
+ 啟動 Visual Studio 2015 中，請勿從 「 下載中心 」 未安裝 Visual Studio SDK。 它是包含為 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="create-an-extension-with-a-tool-window"></a>Create an Extension with a Tool Window  
+## <a name="create-an-extension-with-a-tool-window"></a>建立擴充功能與工具視窗  
   
-1.  Create a project named **TodoList** using the VSIX template, and add a custom tool window item template named **TodoWindow**.  
-  
-    > [!NOTE]
-    >  For more information about creating an extension with a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
-  
-## <a name="set-up-the-tool-window"></a>Set Up the Tool Window  
- Add a TextBox in which to type a new ToDo item, a Button to add the new item to the list, and a ListBox to display the items on the list.  
-  
-1.  In TodoWindow.xaml, delete the Button, TextBox, and StackPanel controls from the UserControl.  
+1.  建立專案，名為**TodoList**使用 VSIX 範本，並新增名為的自訂工具視窗項目範本**TodoWindow**。  
   
     > [!NOTE]
-    >  This does not delete the **button1_Click** event handler, which you will reuse in a later step.  
+    >  如需使用的工具視窗建立擴充功能的詳細資訊，請參閱[建立工具視窗擴充](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-2.  From the **All WPF Controls** section of the **Toolbox**, drag a **Canvas** control to the grid.  
+## <a name="set-up-the-tool-window"></a>設定工具視窗  
+ 加入文字方塊中輸入新 ToDo 項目，若要加入新的項目加入清單中，按鈕和清單方塊中顯示的項目在清單上。  
   
-3.  Drag a **TextBox**, a **Button**, and a **ListBox** to the Canvas. Arrange the elements so that the TextBox and the Button are on the same level, and the ListBox fills the rest of the window below them, as in the picture below.  
+1.  在 TodoWindow.xaml，刪除按鈕、 文字方塊中和 StackPanel 控制項從 使用者控制項。  
   
-     ![Finished Tool Window](../extensibility/media/t5-toolwindow.png "T5-ToolWindow")  
+    > [!NOTE]
+    >  這不會刪除**button1_Click**事件處理常式，您將在稍後步驟中重複使用。  
   
-4.  In the XAML pane, find the Button and set its Content property to **Add**. Reconnect the button event handler to the Button control by adding a `Click="button1_Click"` attribute. The Canvas block should look like this:  
+2.  從**所有 WPF 控制項**區段**工具箱**，拖曳**畫布**控制項至格線。  
+  
+3.  拖曳**文字方塊**、**按鈕**，和**ListBox**畫布上。 排列項目，讓文字方塊和按鈕位於相同的層級和清單方塊會填滿視窗下方，如下列圖片所示的其餘部分。  
+  
+     ![完成工具視窗](../extensibility/media/t5-toolwindow.png "T5 工具視窗")  
+  
+4.  在 [XAML] 窗格中，尋找按鈕，將其內容屬性設定為**新增**。 重新連接的按鈕控制項的按鈕事件處理常式加入`Click="button1_Click"`屬性。 畫布區塊應該看起來像這樣：  
   
     ```xml  
     <Canvas HorizontalAlignment="Left" Width="306">  
@@ -77,15 +77,15 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     </Canvas>  
     ```  
   
-#### <a name="customize-the-constructor"></a>Customize the constructor  
+#### <a name="customize-the-constructor"></a>自訂建構函式  
   
-1.  In the TodoWindowControl.xaml.cs file, add the following using statement:  
+1.  在 TodoWindowControl.xaml.cs 檔案中，加入下列 using 陳述式：  
   
     ```csharp  
     using System;  
     ```  
   
-2.  Add a public reference to the TodoWindow and have the TodoWindowControl constructor take a TodoWindow parameter. The code should look like this:  
+2.  加入公用 TodoWindow 參考，並且讓 TodoWindowControl 建構函式接受 TodoWindow 參數。 程式碼看起來應該像這樣：  
   
     ```csharp  
     public TodoWindow parent;  
@@ -97,7 +97,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-3.  In TodoWindow.cs, change TodoWindowControl constructor to include the TodoWindow parameter. The code should look like this:  
+3.  在 TodoWindow.cs，變更為包含 TodoWindow 參數 TodoWindowControl 建構函式。 程式碼看起來應該像這樣：  
   
     ```csharp  
     public TodoWindow() : base(null)  
@@ -110,10 +110,10 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-## <a name="create-an-options-page"></a>Create an Options Page  
- You can provide a page in the **Options** dialog box so that users can change settings for the tool window. Creating an Options page requires both a class that describes the options and an entry in the TodoListPackage.cs or TodoListPackage.vb file.  
+## <a name="create-an-options-page"></a>建立選項頁面  
+ 您可以提供中的頁面**選項**對話方塊，讓使用者可以變更工具視窗的設定。 建立選項頁面需要這兩個類別，描述的選項和 TodoListPackage.cs 或 TodoListPackage.vb 檔案中的項目。  
   
-1.  Add a class named `ToolsOptions.cs`. Make the ToolsOptions class inherit from <xref:Microsoft.VisualStudio.Shell.DialogPage>.  
+1.  將類別命名為`ToolsOptions.cs`。 使 ToolsOptions 類別繼承自<xref:Microsoft.VisualStudio.Shell.DialogPage>。  
   
     ```csharp  
     class ToolsOptions : DialogPage  
@@ -121,13 +121,13 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-2.  Add the following using statement:  
+2.  加入下列 using 陳述式：  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     ```  
   
-3.  The Options page in this walkthrough provides only one option named DaysAhead. Add a private field named **daysAhead** and a property named **DaysAhead** to the ToolsOptions class:  
+3.  這個逐步解說中的 [選項] 頁面會提供名為 DaysAhead 只有一個選項。 加入名為私用欄位**daysAhead**和屬性，名為**DaysAhead** ToolsOptions 類別：  
   
     ```csharp  
     private double daysAhead;  
@@ -139,36 +139,36 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
- Now you must make the project aware of this Options page.  
+ 現在您必須進行專案留意這個選項頁面。  
   
-#### <a name="make-the-options-page-available-to-users"></a>Make the Options page available to users  
+#### <a name="make-the-options-page-available-to-users"></a>讓使用者可以使用 [選項] 頁面  
   
-1.  In TodoWindowPackage.cs, add a <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> to the TodoWindowPackage class:  
+1.  在 TodoWindowPackage.cs，加入<xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>TodoWindowPackage 類別：  
   
     ```csharp  
     [ProvideOptionPage(typeof(ToolsOptions), "ToDo", "General", 101, 106, true)]  
     ```  
   
-2.  The first parameter to the ProvideOptionPage constructor is the type of the class ToolsOptions, which you created earlier. The second parameter, "ToDo", is the name of the category in the **Options** dialog box. The third parameter, "General", is the name of the subcategory of the **Options** dialog box where the Options page will be available. The next two parameters are resource IDs for strings; the first is the name of the category, and the second is the name of the subcategory. The final parameter determines whether this page can be accessed by using automation.  
+2.  ProvideOptionPage 建構函式的第一個參數是類別 ToolsOptions，您稍早建立的類型。 第二個參數，也就是"ToDo"，是在類別目錄名稱**選項** 對話方塊。 第三個參數，[一般]，為的子類別的名稱**選項**將可用的選項頁面的對話方塊。 下面兩個參數是資源識別碼的字串。第一個是類別目錄的名稱，而第二個是子類別目錄的名稱。 最後一個參數會決定是否可以使用自動化來存取此頁面。  
   
-     When a user opens your Options page, it should resemble the following picture.  
+     當使用者開啟選項頁面時，它應該類似下列圖片。  
   
-     ![Options Page](../extensibility/media/t5optionspage.gif "T5OptionsPage")  
+     ![選項頁面](../extensibility/media/t5optionspage.gif "T5OptionsPage")  
   
-     Notice the category **ToDo** and the subcategory **General**.  
+     請注意分類**ToDo**和 subcategory**一般**。  
   
-## <a name="make-data-available-to-the-properties-window"></a>Make Data Available to the Properties Window  
- You can make To Do list information available by creating a class named TodoItem that stores information about the individual items in the ToDo list.  
+## <a name="make-data-available-to-the-properties-window"></a>讓 [屬性] 視窗中使用資料  
+ 您可以提供待辦清單資訊建立名為 TodoItem 將個別項目的相關資訊儲存在 ToDo 清單中的類別。  
   
-1.  Add a class named `TodoItem.cs`.  
+1.  將類別命名為`TodoItem.cs`。  
   
-     When the tool window is available to users, the items in the ListBox will be represented by TodoItems. When the user selects one of these items in the ListBox, the **Properties** window will display information about the item.  
+     工具視窗可供使用者使用時，將由 TodoItems 表示清單方塊中的項目。 當使用者選取其中一個項目在清單方塊中，**屬性**視窗會顯示項目的資訊。  
   
-     To make data available in the **Properties** window, you turn the data into public properties that have two special attributes, `Description` and `Category`. `Description` is the text that appears at the bottom of the **Properties** window. `Category` determines where the property should appear when the **Properties** window is displayed in the **Categorized** view. In the following picture, the **Properties** window is in **Categorized** view, the **Name** property in the **ToDo Fields** category is selected, and the description of the **Name** property is displayed at the bottom of the window.  
+     若要讓資料在**屬性**視窗中，您將資料轉換成具有兩個特殊的屬性的公用屬性`Description`和`Category`。 `Description`會出現在底部的文字**屬性**視窗。 `Category`決定屬性應該會出現時**屬性**視窗會顯示在**分類**檢視。 在下圖中**屬性**視窗會處於**分類** 檢視中，**名稱**屬性**ToDo 欄位**類別選取，而描述為**名稱**屬性會顯示在視窗底部。  
   
-     ![Properties Window](../extensibility/media/t5properties.png "T5Properties")  
+     ![屬性視窗](../extensibility/media/t5properties.png "T5Properties")  
   
-2.  Add the following using statements the TodoItem.cs file.  
+2.  加入下列 using 陳述式 TodoItem.cs 檔案。  
   
     ```csharp  
     using System.ComponentModel;  
@@ -176,7 +176,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Add the `public` access modifier to the class declaration.  
+3.  新增`public`在類別宣告的存取修飾詞。  
   
     ```csharp  
     public class TodoItem  
@@ -184,7 +184,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-     Add the two properties, Name and DueDate. We'll do the UpdateList() and CheckForErrors() later.  
+     加入兩個屬性名稱和 DueDate。 我們將會執行 UpdateList() 和 CheckForErrors() 更新版本。  
   
     ```csharp  
     public class TodoItem  
@@ -219,7 +219,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-4.  Add a private reference to the user control. Add a constructor that takes the user control and the name for this ToDo item. To find the value for daysAhead, it gets the Options page property.  
+4.  加入至使用者控制項的私用的參考。 加入使用者控制項，而且此 ToDo 項目名稱會採用的建構函式。 若要尋找 daysAhead 值，它會取得選項頁面屬性。  
   
     ```csharp  
     private TodoWindowControl parent;  
@@ -248,7 +248,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-5.  Because instances of the `TodoItem` class will be stored in the ListBox and the ListBox will call the `ToString` function, you must overload the `ToString` function. Add the following code to TodoItem.cs, after the constructor and before the end of the class.  
+5.  因為執行個體`TodoItem`類別會儲存在清單方塊和清單方塊會呼叫`ToString`函式，您必須同時多載`ToString`函式。 建構函式之後，以及類別結尾之前，請加入 TodoItem.cs，下列程式碼。  
   
     ```csharp  
     public override string ToString()  
@@ -257,7 +257,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-6.  In TodoWindowControl.xaml.cs, add stub methods to the TodoWindowControl class for the `CheckForError` and `UpdateList` methods. Put them after the ProcessDialogChar and before the end of the file.  
+6.  在 TodoWindowControl.xaml.cs，虛設常式方法加入的 TodoWindowControl 類別`CheckForError`和`UpdateList`方法。 檔案結尾 ProcessDialogChar 之後再將它們放。  
   
     ```csharp  
     public void CheckForErrors()  
@@ -268,14 +268,14 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-     The `CheckForError` method will call a method that has the same name in the parent object, and that method will check whether any errors have occurred and handle them correctly. The `UpdateList` method will update the ListBox in the parent control; the method is called when the `Name` and `DueDate` properties in this class change. They will be implemented later.  
+     `CheckForError`方法會呼叫父物件，在具有相同名稱的方法，該方法會檢查是否所有錯誤發生，然後正確處理它們。 `UpdateList`方法將會更新父控制項的 ListBox; 此方法時，會呼叫`Name`和`DueDate`屬性，這個類別的變更。 將晚實作它們。  
   
-## <a name="integrate-into-the-properties-window"></a>Integrate into the Properties Window  
- Now write the code that manages the ListBox, which will be tied to the **Properties** window.  
+## <a name="integrate-into-the-properties-window"></a>將整合到 [屬性] 視窗  
+ 現在，管理清單方塊中會繫結至程式碼撰寫**屬性**視窗。  
   
- You must change the button click handler to read the TextBox, create a TodoItem, and adds it to the ListBox.  
+ 您必須變更按鈕 click 處理常式来讀取的文字方塊中，請建立 TodoItem，並將它加入至清單方塊。  
   
-1.  Replace the existing `button1_Click` function with code that creates a new TodoItem and adds it to the ListBox. It calls TrackSelection(), which will be defined later.  
+1.  取代現有`button1_Click`函式會建立新的 TodoItem 並將它加入至清單方塊的程式碼。 它會呼叫 TrackSelection()，稍後將會定義。  
   
     ```csharp  
     private void button1_Click(object sender, RoutedEventArgs e)  
@@ -290,9 +290,9 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-2.  In the Design view select the ListBox control. In the **Properties** window click the **Event handlers** button and find the SelectionChanged event. Fill in the text box with **listBox_SelectionChanged**. Doing this adds a stub for a SelectionChanged handler and assigns it to the event.  
+2.  在 [設計] 檢視中選取的清單方塊控制項。 在**屬性**視窗中按一下 **事件處理常式**按鈕，然後找出 SelectionChanged 的事件。 在文字方塊中，以填滿**listBox_SelectionChanged**。 如此一來新增 SelectionChanged 處理常式的虛設常式，並將它指派給此事件。  
   
-3.  Implement the TrackSelection() method. Since you will need to get the <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell><xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> services, you need make the <xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A> accessible by the TodoWindowControl. Add the following method to the TodoWindow class:  
+3.  實作 TrackSelection() 方法。 因為您需要取得<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell><xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>服務，您需要進行<xref:Microsoft.VisualStudio.Shell.WindowPane.GetService%2A>TodoWindowControl 可以存取。 將下列方法加入至 TodoWindow 類別：  
   
     ```  
     internal object GetVsService(Type service)  
@@ -301,7 +301,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-4.  Add the following using statements to TodoWindowControl.xaml.cs:  
+4.  加入下列 using 陳述式 TodoWindowControl.xaml.cs:  
   
     ```csharp  
     using System.Runtime.InteropServices;  
@@ -310,7 +310,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     using Microsoft.VisualStudio.Shell;  
     ```  
   
-5.  Fill in the SelectionChanged handler as follows:  
+5.  填滿 SelectionChanged 處理常式中，如下所示：  
   
     ```  
     private void listBox_SelectionChanged(object sender, SelectionChangedEventArgs e)  
@@ -319,7 +319,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-6.  Now, fill in the TrackSelection function, which will provide integration with the **Properties** window. This function is called when the user adds an item to the ListBox or clicks an item in the ListBox. It adds the contents of the ListBox to a SelectionContainer and passes the SelectionContainer to the **Properties** window's <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> event handler. The TrackSelection service tracks selected objects in the user interface (UI) and displays their properties  
+6.  現在，填寫 TrackSelection 函式，將會提供與整合**屬性**視窗。 當使用者將項目加入至清單方塊或清單方塊中的項目時，會呼叫此函數。 將清單方塊的內容加入 SelectionContainer 並傳遞至 SelectionContainer**屬性**視窗<xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>事件處理常式。 TrackSelection 服務會追蹤使用者介面 (UI) 中選取的物件，並顯示其屬性  
   
     ```csharp  
     private SelectionContainer mySelContainer;  
@@ -367,9 +367,9 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-     Now that you have a class that the **Properties** window can use, you can integrate the **Properties** window with the tool window. When the user clicks an item in the ListBox in the tool window, the **Properties** window should be updated accordingly. Similarly, when the user changes a ToDo item in the **Properties** window, the associated item should be updated.  
+     現在，您有一個類別，**屬性**視窗可以使用，您可以整合**屬性**與工具視窗的視窗。 當使用者按一下 [工具] 視窗中，在清單方塊中的項目**屬性**視窗應該據此更新。 同樣地，當使用者變更 ToDo 項目的**屬性**視窗中，應該更新相關聯的項目。  
   
-7.  Now, add the rest of the UpdateList function code in TodoWindowControl.xaml.cs. It should drop and re-add the modified TodoItem from the ListBox.  
+7.  現在，在 TodoWindowControl.xaml.cs 加入 UpdateList 函式程式碼的其餘部分。 它應該卸除並重新加入從清單方塊的已修改的 TodoItem。  
   
     ```csharp  
     public void UpdateList(TodoItem item)  
@@ -381,20 +381,20 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-8.  Test your code. Build the project and start debugging. The experimental instance should appear.  
+8.  測試您的程式碼。 建置此專案並開始偵錯。 實驗執行個體應該會出現。  
   
-9. Open the **Tools / Options** pages. You should see the ToDo category in the left pane. Categories are listed in alphabetical, so look under the Ts.  
+9. 開啟**工具 / 選項**頁面。 您應該會看到 ToDo 類別，在左窗格中。 列出分類中依字母順序排列，因此查看 Ts 底下。  
   
-10. On the Todo options page, you should see the DaysAhead property set to **0**. Change it to **2**.  
+10. [Todo 選項] 頁面中，您應該會看到屬性設為 DaysAhead **0**。 將它變更為**2**。  
   
-11. On the View / Other Windows menu, open **TodoWindow**. Type **EndDate** in the text box and click **Add**.  
+11. 在 檢視 / 其他視窗功能表中，開啟**TodoWindow**。 型別**EndDate**在文字方塊中按一下**新增**。  
   
-12. In the list box you should see a date two days later than today.  
+12. 在清單方塊中，您應該看到兩天後比今天晚的日期。  
   
-## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>Add Text to the Output Window and Items to the Task List  
- For the **Task List**, you create a new object of type Task, and then add that Task object to the **Task List** by calling its Add method. To write to the **Output** window, you call its GetPane method to obtain a pane object, and then you call the OutputString method of the pane object.  
+## <a name="add-text-to-the-output-window-and-items-to-the-task-list"></a>將文字加入輸出] 視窗和 [工作清單項目  
+ 如**工作清單**，您建立新工作中，類型的物件，然後再新增至該工作物件**工作清單**藉由呼叫其 Add 方法。 要寫入**輸出**視窗中，您呼叫 GetPane 方法來取得窗格物件，然後再呼叫 OutputString 物件的方法窗格。  
   
-1.  In TodoWindowControl.xaml.cs, in the `button1_Click` method, add code to get the **General** pane of the **Output** window (which is the default), and write to it. The method should look like this:  
+1.  TodoWindowControl.xaml.cs，在中`button1_Click`方法，加入程式碼以取得**一般**窗格**輸出**視窗 （這是預設值），並寫入其中。 此方法應該如下所示：  
   
     ```csharp  
     private void button1_Click(object sender, EventArgs e)  
@@ -421,7 +421,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-2.  In order to add items to the Task List, you need a to add a nested class to the TodoWindowControl class. The nested class needs to derive from <xref:Microsoft.VisualStudio.Shell.TaskProvider>. Add the following code to the end of the TodoWindowControl class.  
+2.  若要將項目加入至工作清單，您必須將巢狀的類別新增至 TodoWindowControl 類別。 巢狀的類別必須衍生自<xref:Microsoft.VisualStudio.Shell.TaskProvider>。 將下列程式碼加入至 TodoWindowControl 類別的結尾。  
   
     ```csharp  
     [Guid("72de1eAD-a00c-4f57-bff7-57edb162d0be")]  
@@ -434,7 +434,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-3.  Next add a private reference to TodoTaskProvider and a CreateProvider() method to the TodoWindowControl class. The code should look like this:  
+3.  接下來，請加入私人 TodoTaskProvider 參考以及 CreateProvider() 方法 TodoWindowControl 類別。 程式碼看起來應該像這樣：  
   
     ```csharp  
     private TodoWindowTaskProvider taskProvider;  
@@ -448,7 +448,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-4.  Add ClearError(), which clears the Task List, and ReportError(), which adds an entry to the Task List, to the TodoWindowControl class.  
+4.  ClearError()，清除工作清單和 ReportError()，將項目加入至工作清單中，加入 TodoWindowControl 類別。  
   
     ```csharp  
     private void ClearError()  
@@ -480,7 +480,7 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-5.  Now implement the CheckForErrors method, as follows.  
+5.  實作了 CheckForErrors 方法，如下所示。  
   
     ```csharp  
     public void CheckForErrors()  
@@ -496,30 +496,30 @@ You can access any tool window in Visual Studio. This walkthrough shows how to i
     }  
     ```  
   
-## <a name="trying-it-out"></a>Trying It Out  
+## <a name="trying-it-out"></a>正在試用  
   
-1.  Build the project and start debugging. The experimental instance appears.  
+1.  建置此專案並開始偵錯。 實驗執行個體隨即出現。  
   
-2.  Open the TodoWindow (**View / Other Windows / TodoWindow**).  
+2.  開啟 TodoWindow (**檢視 / 其他視窗 / TodoWindow**)。  
   
-3.  Type something in the text box and then click **Add**.  
+3.  在文字方塊中輸入的項目，然後按一下**新增**。  
   
-     A due date 2 days after today is added to the list box. No errors are generated, and the **Task List** (**View / Task List**) should have no entries.  
+     到期日今天加入至清單方塊後的 2 天。 沒有產生任何錯誤，而**工作清單**(**檢視 / 工作清單**) 應該有任何項目。  
   
-4.  Now change the setting on the **Tools / Options / ToDo** page from **2** back to **0**.  
+4.  現在將設定變更上**工具 / 選項 / ToDo**頁面**2**回到**0**。  
   
-5.  Type something else in the **TodoWindow** and then click **Add** again. This triggers an error and also an entry in the **Task List**.  
+5.  輸入中的其他項目**TodoWindow** ，然後按一下 **新增**一次。 這會觸發錯誤以及中的項目**工作清單**。  
   
-     As you add items, the initial date is set to now plus 2 days.  
+     當您加入的項目時，初始日期會設定現在加上 2 天。  
   
-6.  On the **View** menu, click **Output** to open the **Output** window.  
+6.  在**檢視**功能表上，按一下 **輸出**開啟**輸出**視窗。  
   
-     Notice that every time that you add an item, a message is displayed in the **Task List** pane.  
+     請注意，每次，將項目中顯示訊息**工作清單**窗格。  
   
-7.  Click one of the items in the ListBox.  
+7.  按一下其中一個清單方塊中的項目。  
   
-     The **Properties** window displays the two properties for the item.  
+     **屬性**視窗會顯示兩個項目的屬性。  
   
-8.  Change one of the properties and then press ENTER.  
+8.  變更其中一個屬性，然後按 ENTER 鍵。  
   
-     The item is updated in the ListBox.
+     更新項目在清單方塊。

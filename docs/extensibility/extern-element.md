@@ -35,7 +35,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: d4559aa03af16faf955594c3850281e6cf7b4903
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="extern-element"></a>Extern 項目

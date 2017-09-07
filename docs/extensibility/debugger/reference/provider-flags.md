@@ -1,5 +1,5 @@
 ---
-title: PROVIDER_FLAGS | Microsoft Docs
+title: "PROVIDER_FLAGS |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c7803cad2b18ad668bf6ac4814821c1f9098774d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
-Specifies desired properties to be obtained from a program provider.  
+指定要從程式提供者取得所需的屬性。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 enum enum_PROVIDER_FLAGS {  
@@ -67,30 +67,30 @@ public enum enum_PROVIDER_FLAGS {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  PFLAG_NONE  
- No flags specified.  
+ 沒有指定的旗標。  
   
  PFLAG_REMOTE_PORT  
- Caller wants a list of programs on a different machine than [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ 呼叫端想與不同的電腦上的程式清單[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
  PFLAG_DEBUGGEE  
- The process is currently being debugged by this instance of [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ 處理序目前所偵錯的這個執行個體[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
  PFLAG_ATTACH_TODEBUGGEE  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] is attached to the program being debugged but did not launch it.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]附加偵錯程式，但不是啟動它。  
   
  PFLAG_REASON_WATCH  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] is watching for events.  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]監看事件。  
   
  PFLAG_GET_PROGRAM_NODES  
- Caller wants the `ProgramNodes` field of the [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure.  
+ 呼叫端想`ProgramNodes`欄位[PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構。  
   
  PFLAG_GET_IS_DEBUGGER_PRESENT  
- Caller wants the `fIsTheDebuggerPresent` field of the `PROVIDER_PROCESS_DATA` structure.  
+ 呼叫端想`fIsTheDebuggerPresent`欄位`PROVIDER_PROCESS_DATA`結構。  
   
-## <a name="remarks"></a>Remarks  
- These flags are passed to the following methods:  
+## <a name="remarks"></a>備註  
+ 這些旗標會傳遞給下列的方法：  
   
 -   [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)  
   
@@ -98,17 +98,17 @@ public enum enum_PROVIDER_FLAGS {
   
 -   [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)  
   
- These values can be combined with a bitwise `OR`.  
+ 這些值可以合併的位元`OR`。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)   
  [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)   

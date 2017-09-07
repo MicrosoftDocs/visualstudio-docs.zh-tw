@@ -1,5 +1,5 @@
 ---
-title: BP_ERROR_TYPE | Microsoft Docs
+title: "BP_ERROR_TYPE |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -34,13 +34,13 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ab0dc686c4d002733bf8501be042e33c500fb8e3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 # <a name="bperrortype"></a>BP_ERROR_TYPE
-Specifies the error type of a breakpoint.  
+指定中斷點之錯誤型別。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 enum enum_BP_ERROR_TYPE {   
@@ -75,53 +75,53 @@ public enum enum_BP_ERROR_TYPE {
 };  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
  BPET_NONE  
- Specifies no breakpoint error.  
+ 不指定任何中斷點錯誤。  
   
  BPET_TYPE_WARNING  
- Specifies a warning-style breakpoint error.  
+ 指定警告樣式中斷點錯誤。  
   
  BPET_TYPE_ERROR  
- Specifies an error-style breakpoint error.  
+ 指定中斷點 error 類型錯誤。  
   
  BPET_SEV_HIGH  
- Specifies a high-severity breakpoint error.  
+ 指定高嚴重性中斷點錯誤。  
   
  BPET_SEV_GENERAL  
- Specifies a medium-severity breakpoint error.  
+ 指定媒體嚴重性中斷點錯誤。  
   
  BPET_SEV_LOW  
- Specifies a low-severity breakpoint error.  
+ 指定的低嚴重性中斷點錯誤。  
   
  BPET_TYPE_MASK  
- Specifies a mask-style breakpoint error.  
+ 指定遮罩樣式中斷點錯誤。  
   
  BPET_SEV_MASK  
- Specifies a severity-mask-style breakpoint error.  
+ 指定的嚴重性遮罩樣式中斷點錯誤。  
   
  BPET_GENERAL_WARNING  
- Specifies a general-warning-style breakpoint error.  
+ 指定的一般警告樣式中斷點錯誤。  
   
  BPET_GENERAL_ERROR  
- Specifies a general-error-style breakpoint error.  
+ 指定中斷點一般 error 類型錯誤。  
   
  BPET_ALL  
- Specifies all breakpoint error types.  
+ 指定中斷點的所有錯誤類型。  
   
-## <a name="remarks"></a>Remarks  
- These values may be combined with a bitwise `OR` and used for the `dwType` member of the [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) structure. Passed as a parameter to the [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) method.  
+## <a name="remarks"></a>備註  
+ 這些值可能會合併使用位元`OR`和用於`dwType`隸屬[BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)結構。 做為參數來傳遞[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)方法。  
   
- A breakpoint error type is composed of a type and a severity. This means that a breakpoint error type is never just a type (for example, `BPET_TYPE_ERROR`,) or a severity (for example, `BPET_SEV_GENERAL`) by itself. `BPET_GENERAL_WARNING` and `BPET_GENERAL_ERROR` provide predefined values for general warning and error breakpoints.  
+ 中斷點錯誤類型被組成類型和嚴重性。 這表示中斷點錯誤類型永遠不會是型別 (例如， `BPET_TYPE_ERROR`，) 或嚴重性 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING`和`BPET_GENERAL_ERROR`一般警告和錯誤的中斷點提供預先定義的值。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md)   
  [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
