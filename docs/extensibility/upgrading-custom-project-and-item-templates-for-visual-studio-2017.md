@@ -27,10 +27,10 @@ translation.priority.mt:
 - zh-cn
 - zh-tw
 ms.translationtype: MT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 81c1e0bcb6526d2ef13059dff6f0cede04282531
+ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
+ms.openlocfilehash: 50cc29ecd9c6c2447612b2d761052c204f52cd39
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 
@@ -215,7 +215,7 @@ We show the points of difference between the Visual Studio 2015 and Visual Studi
 
 2. Open a "Developer Command Prompt" for your installation by searching for it in Windows search and run `devenv /updateConfiguration`.
 
-3.  Start Visual Studio and launch the New Project and New Item dialogs to initialize both template trees. The template log now appears in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0\VsTemplateDiagnosticsList.csv**. Each template tree initialization appends entries to this log.  
+3.  Start Visual Studio and launch the New Project and New Item dialogs to initialize both template trees. The template log now appears in **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponds to the installation ID of your instance of Visual Studio). Each template tree initialization appends entries to this log.  
   
  The log file contains the following columns:  
   
