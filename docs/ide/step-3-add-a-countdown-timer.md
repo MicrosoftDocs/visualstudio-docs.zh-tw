@@ -1,5 +1,5 @@
 ---
-title: 'Step 3: Add a Countdown Timer | Microsoft Docs'
+title: "步驟 3：新增倒數計時器 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,47 +32,47 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 1719ed1feb1caa38644550322484d2ba519c1be2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-3-add-a-countdown-timer"></a>Step 3: Add a Countdown Timer
-In the third part of this tutorial, you'll add a countdown timer to track the number of seconds that remain for the quiz taker to finish.  
+# <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
+在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。  
   
 > [!NOTE]
->  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。 如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
-### <a name="to-add-a-countdown-timer"></a>To add a countdown timer  
+### <a name="to-add-a-countdown-timer"></a>若要加入倒數計時器  
   
-1.  Add an integer variable that's named **timeLeft**, just like you did in the previous procedure. Your code should look like the following.  
+1.  加入名為 **timeLeft** 的整數變數，就像在前一個程序中所進行。 您的程式碼應該看起來與下列範例相同。  
   
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]  [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]  
   
-     Now you need a method that actually counts the seconds, such as a timer, which raises an event after the amount of time that you specify.  
+     現在您需要實際計算秒數的方法，例如計時器，它會在經過您指定的時間後引發事件。  
   
-2.  In the design window, move a `Timer` control from the **Components** category of the Toolbox to your form.  
+2.  在設計視窗中，將 `Timer` 控制項從 [工具箱] 的 [元件] 分類移至表單。  
   
-     The control appears in the gray area at the bottom of the design window.  
+     控制項會出現在設計視窗底部的灰色區域中。  
   
-3.  On the form, choose the **timer1** icon that you just added, and set its **Interval** property to **1000**.  
+3.  在表單上選擇您剛新增的 [timer1] 圖示，並將其 [Interval] 屬性設定為 [1000]。  
   
-     Because the interval value is milliseconds, a value of 1000 causes the Tick event to fire every second.  
+     由於間隔值為毫秒，因此 1000 這個值會讓 Tick 事件每秒引發一次。  
   
-4.  On the form, double-click the Timer control, or choose it and then choose the Enter key.  
+4.  在表單上按兩下 [Timer] 控制項，或選擇該控制項，然後選擇 Enter 鍵。  
   
-     The code editor appears and displays the method for the Tick event handler that you just added.  
+     程式碼編輯器隨即出現，並且顯示您剛才為 Tick 事件處理常式加入的方法。  
   
-5.  Add the following statements to the new event handler method.  
+5.  將下列陳述式加入至新的事件處理常式方法。  
   
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]  [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]  
   
-     Based on what you added, the timer checks each second whether time has run out by determining whether the **timeLeft** integer variable is greater than 0. If it is, time still remains. The timer first subtracts 1 from timeLeft and then updates the **Text** property of the `timeLabel` control to show the quiz taker how many seconds remain.  
+     根據您新增的項目，計時器會藉由判斷 **timeLeft** 整數變數是否大於 0，每秒檢查一次時間是否已結束。 如果是，表示仍有剩餘時間。 計時器會先將 timeLeft 減 1，然後更新 `timeLabel` 控制項的 [Text] 屬性，讓受測者看到還剩多少秒。  
   
-     If no time remains, the timer stops and changes the text of the `timeLabel` control so that it shows **Time's up!** A message box announces that the quiz is over, and the answer is revealed—in this case, by adding addend1 and addend2. The **Enabled** property of the `startButton` control is set to `true` so that the quiz taker can start another quiz.  
+     如果沒有剩餘時間，計時器就會停止，並將 `timeLabel` 控制項的文字變更為顯示 **Time's up!**。 此時會出現訊息方塊宣布測驗結束，並且公布答案，這個案例為 addend1 和 addend2 相加。 `startButton` 控制項的 [Enabled] 屬性會設定為 `true`，如此受測者就能開始另一項測驗。  
   
-     You just added an `if else` statement, which is how you tell programs to make decisions. An `if else` statement looks like the following.  
+     您已加入 `if else` 陳述式，讓程式知道如何做判斷。 `if else` 陳述式看起來如下。  
   
     > [!NOTE]
-    >  The following example is for illustration only-don't add it to your project.  
+    >  下列範例僅供參考，請不要將它新增至您的專案。  
   
     ```vb  
     If (something that your program will check) Then  
@@ -97,29 +97,29 @@ In the third part of this tutorial, you'll add a countdown timer to track the nu
     }  
     ```  
   
-     Look closely at the statement that you added in the `else` block to show the answer to the addition problem.  
+     仔細查看您在 `else` 區塊中加入，用來顯示加法問題答案的陳述式。  
   
      [!code-vb[VbExpressTutorial3Step3#24](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_3.vb)]  [!code-csharp[VbExpressTutorial3Step3#24](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_3.cs)]  
   
-     The statement `addend1 + addend2` adds the values in the two variables together. The first part (`sum.Value`) uses the **Value** property of the sum `NumericUpDown` control to display the correct answer. You use the same property later to check the answers for the quiz.  
+     `addend1 + addend2` 陳述式會將兩個變數中的值相加。 第一個部分 (`sum.Value`) 會使用 sum (總和) `NumericUpDown` 控制項的 [Value] 屬性來顯示正確答案。 稍後您會使用相同屬性檢查測驗的答案。  
   
-     Quiz takers can enter numbers more easily by using a `NumericUpDown` control, which is why you use one for the answers to the math problems. All of the potential answers are whole numbers from 0 through 100. By leaving the default values of the **Minimum**, **Maximum**, and **DecimalPlaces** properties, you ensure that quiz takers can't enter decimals, negative numbers, or numbers that are too high. (If you wanted to allow quiz takers to enter 3.141 but not 3.1415, you could set the **DecimalPlaces** property to 3.)  
+     受測者透過使用 `NumericUpDown` 控制項就能更輕鬆地輸入數字，這就是為何使用其中一個控制項輸入數學問題答案的原因。 所有可能的答案包括從 0 到 100 的整數。 藉由保留 [Minimum]、[Maximum] 和 [DecimalPlaces] 屬性的預設值，就能確保受測者無法輸入小數、負數或太大的數字 (如果您要允許受測者輸入 3.141 而不是 3.1415，可以將 [DecimalPlaces] 屬性設定為 3)。  
   
-6.  Add three lines to the end of the `StartTheQuiz()` method, so the code looks like the following.  
+6.  將三行程式碼加入至 `StartTheQuiz()` 方法的結尾，使程式碼看起來如下。  
   
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]  [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]  
   
-     Now, when your quiz starts, the **timeLeft** variable is set to 30 and the **Text** property of the `timeLabel` control is set to 30 seconds. Then the `Start()` method of the `Timer` control starts the countdown. (The quiz doesn't check the answer yet—that comes next.)  
+     現在，當測驗開始時，[timeLeft] 變數會設定為 30，而且 `timeLabel` 控制項的 [Text] 屬性會設定為 30 秒。 然後，`Timer` 控制項的 `Start()` 方法就會開始倒數計時 (測驗還不會檢查答案，這是下一個部分)。  
   
-7.  Save your program, run it, and then choose the **Start** button on the form.  
+7.  儲存您的程式，並執行程式，然後選擇表單上的 [開始] 按鈕。  
   
-     The timer starts to count down. When time runs out, the quiz ends, and the answer appears. The following illustration shows the quiz in progress.  
+     計時器就會開始倒數。 當時間結束時，測驗就會結束，答案也會出現。 下圖將顯示進行中的測驗。  
   
-     ![Math quiz in progress](../ide/media/express_addcountdown.png "Express_AddCountdown")  
-Math quiz in progress  
+     ![數學測驗正在進行中](../ide/media/express_addcountdown.png "Express_AddCountdown")  
+數學測驗正進行中  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>繼續或檢視  
   
--   To go to the next tutorial step, see [Step 4: Add the CheckTheAnswer() Method](../ide/step-4-add-the-checktheanswer-parens-method.md).  
+-   若要移到下一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。  
   
--   To return to the previous tutorial step, see [Step 2: Create a Random Addition Problem](../ide/step-2-create-a-random-addition-problem.md).
+-   若要回到上一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。
