@@ -1,5 +1,5 @@
 ---
-title: Culture-Specific Classes for Global Windows Forms and Web Forms | Microsoft Docs
+title: "全域 Windows Form 和 Web Form 的特定文化特性類別 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -48,16 +48,16 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 7eae24ec725509b2a2a6a276ad7f474a079bd952
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Culture-Specific Classes for Global Windows Forms and Web Forms
-Each culture has different conventions for displaying dates, time, numbers, currency, and other information. The <xref:System.Globalization> namespace contains classes that can be used to modify how culture-specific values are displayed, such as <xref:System.Globalization.DateTimeFormatInfo>, **Calendar**, and <xref:System.Globalization.NumberFormatInfo>.  
+# <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全域 Windows Form 和 Web Form 的文化特性特定類別
+每個文化特性對於顯示日期、時間、數字、貨幣及其他資訊都有不同的慣例。 <xref:System.Globalization> 命名空間包含的類別可用來修改文化特性 (Culture) 特定值的顯示方式，例如 <xref:System.Globalization.DateTimeFormatInfo>、**Calendar** 和 <xref:System.Globalization.NumberFormatInfo>。  
   
-## <a name="using-the-culture-setting"></a>Using the Culture Setting  
- But most of the time you will use the culture setting, stored either in the application or in the **Regional Options** control panel, to automatically determine the conventions at run time and format the information accordingly. For more information on setting the culture, see [How to: Set the Culture and UI Culture for Windows Forms Globalization](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0) or [How to: Set the Culture and UI Culture for ASP.NET Web Page Globalization](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0). Classes that automatically format information according to the culture setting are called culture-specific. Some culture-specific methods are <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName>, and <xref:System.String.Format%2A?displayProperty=fullName>. Some culture-specific functions (in the Visual Basic language) are `MonthName` and `WeekDayName`.  
+## <a name="using-the-culture-setting"></a>使用文化特性設定  
+ 但大部分的情況，您會使用文化特性設定 (儲存於應用程式或控制台的 [地區選項] 中) 自動在執行階段判斷慣例並據以格式化資訊。 如需設定文化特性的詳細資訊，請參閱[如何：設定 Windows Form 全球化的文化特性和 UI 文化特性](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0)或[如何：為 ASP.NET 網頁全球化設定文化特性和 UI 文化特性](http://msdn.microsoft.com/Library/76091f86-f967-4687-a40f-de87bd8cc9a0)。 根據文化特性設定自動格式化資訊的類別，稱為文化特性專用。 一部分的文化特性 (Culture) 特定方法為 <xref:System.IFormattable.ToString%2A?displayProperty=fullName>、<xref:System.Console.WriteLine%2A?displayProperty=fullName> 和 <xref:System.String.Format%2A?displayProperty=fullName>。 一些文化特性函式 (在 Visual Basic 語言中) 如 `MonthName` 和 `WeekDayName`。  
   
- For example, the following code shows how you can use the <xref:System.IFormattable.ToString%2A> method to format currency for the current culture:  
+ 例如，下列程式碼示範如何使用 <xref:System.IFormattable.ToString%2A> 方法來針對目前的文化特性 (Culture) 對貨幣進行格式化：  
   
 ```vb  
 ' Put the Imports statements at the beginning of the code module  
@@ -78,19 +78,19 @@ int myInt = 100;
 Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));  
 ```  
   
- If the culture is set to "fr-FR", you will see this in the output window:  
+ 如果文化特性設定為 "fr-FR"，您會在輸出視窗中看到這個：  
   
  `100,00`  
   
- If the culture is set to "en-US", you will see this in the output window:  
+ 如果文化特性設定為 "en-US"，您會在輸出視窗中看到這個：  
   
  `$100.00`  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   
  <xref:System.Globalization.Calendar>   
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>   
  <xref:System.String.Format%2A?displayProperty=fullName>   
- [Globalizing and Localizing Applications](../ide/globalizing-and-localizing-applications.md)
+ [全球化和當地語系化應用程式](../ide/globalizing-and-localizing-applications.md)

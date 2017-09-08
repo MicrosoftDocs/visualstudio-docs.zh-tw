@@ -36,10 +36,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: e22ae316526950e5b2e8db931f76538158c90af9
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 427bfb4fbef8e0f44deb600d2ae92c58bc5e3c2f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/07/2017
 
 ---
 # <a name="walkthrough-debug-a-multithreaded-application-in-visual-studio-using-the-threads-window"></a>Walkthrough: Debug a multithreaded application in Visual Studio using the Threads window
@@ -171,7 +171,7 @@ You can flag threads that you want to give special attention. Flagging threads i
   
 #### <a name="to-unflag-threads"></a>To unflag threads  
   
-1.  On the **Threads** window, right-click the line corresponding to the flagged thread.  
+1.  In the **Threads** window, right-click the line corresponding to the flagged thread.  
   
      A shortcut menu is displayed. It has options to **Unflag** and **Unflag All Threads**.  
   
@@ -214,9 +214,7 @@ You can flag threads that you want to give special attention. Flagging threads i
      After a momentary delay, a DataTip appears. It shows a partial call stack for the thread.
 
      > [!TIP]
-     > For a graphical view of the call stacks for threads, open the [Parallel Stacks](../debugger/using-the-parallel-stacks-window.md) window (while debugging, choose **Debug / Windows / Parallel Stacks**). You will see call stacks like this illustration.
-
-    ![Parallel Stacks Window](../debugger/media/dbg-threads-parallel-stacks.png "ParallelStacksWindow")    
+     > For a graphical view of the call stacks for threads, open the [Parallel Stacks](../debugger/using-the-parallel-stacks-window.md) window (while debugging, choose **Debug / Windows / Parallel Stacks**).  
   
 5.  Look at the fourth column from the left, which is labeled **Category**. The threads are classified into categories.  
   

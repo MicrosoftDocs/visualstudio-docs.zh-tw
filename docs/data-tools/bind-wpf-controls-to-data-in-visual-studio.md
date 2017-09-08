@@ -35,8 +35,8 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: a258772fb8107917a118cc95aa5514f870bea4c0
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 69887a7cda0974fc8aec81a96ebead500ea0f87f
 ms.contentlocale: zh-tw
 ms.lasthandoff: 09/07/2017
 
@@ -78,7 +78,7 @@ You can display data to users of your application by binding data to [!INCLUDE[T
   
 -   Creates a data binding for a control. If you drag the item to an existing control in the designer, the XAML binds the control to the item. If you drag the item to a container, the XAML creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
   
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] also makes the following changes to the code-behind file:  
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] also makes the following changes to the code-behind file:  
   
 -   Creates a <xref:System.Windows.FrameworkElement.Loaded> event handler for the [!INCLUDE[TLA2#tla_ui](../data-tools/includes/tla2sharptla_ui_md.md)] element that contains the control. The event handler fills the table with data, retrieves the <xref:System.Windows.Data.CollectionViewSource> from the container's resources, and then makes the first data item the current item. If a <xref:System.Windows.FrameworkElement.Loaded> event handler already exists, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] adds this code to the existing event handler.  
   
@@ -89,7 +89,7 @@ You can display data to users of your application by binding data to [!INCLUDE[T
   
 -   Creates a data binding for a control. If you drag the item to an existing control in the designer, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] binds the control to the item. If you drag the item to a container, the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] creates the control that was selected for the dragged item, and it binds the control to the item. The control is created inside a new <xref:System.Windows.Controls.Grid>.  
   
- Visual Studio also makes the following changes to the code-behind file:  
+Visual Studio also makes the following changes to the code-behind file:  
   
 -   Adds a new method that returns a query for the entity that you dragged to the designer (or the entity that contains the property that you dragged to the designer). The new method has the name Get*EntityName*Query, where *EntityName* is the name of the entity.  
   

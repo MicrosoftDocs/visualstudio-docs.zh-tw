@@ -1,5 +1,5 @@
 ---
-title: 'Step 7: Keep Pairs Visible | Microsoft Docs'
+title: "步驟 7：讓配對保持可見 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -31,23 +31,23 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 15990f447ba3e368b19d93317eadbde7b126326a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-7-keep-pairs-visible"></a>Step 7: Keep Pairs Visible
-The game works well, as long as the player only chooses pairs of icons that don't match. But consider what should happen when the player chooses a matching pair. Instead of making the icons disappear by turning on the timer (using the `Start()` method), the game should reset itself so that it's no longer keeping track of any labels using the `firstClicked` and `secondClicked` reference variables, without resetting the colors for the two labels that were chosen.  
+# <a name="step-7-keep-pairs-visible"></a>步驟 7：讓配對保持可見
+只要玩家僅選擇不相符的圖示配對，遊戲都可以運作良好。 但是，請考慮當玩家選擇相符的配對時會發生的情況。 遊戲不用藉由啟動計時器使圖示消失 (使用 `Start()` 方法)，而是應該本身進行重設，如此它就不會再使用 `firstClicked` 和 `secondClicked` 參考變數來追蹤任何標籤，但不需要重設已選擇之兩個標籤的色彩。  
   
-### <a name="to-keep-pairs-visible"></a>To keep pairs visible  
+### <a name="to-keep-pairs-visible"></a>若要讓配對保持可見  
   
-1.  Add the following `if` statement to the `label_Click()` event handler method, near the end of the code just above the statement where you start the timer. Take a close look at the code while adding it to the program. Consider how the code works.  
+1.  將下列 `if` 陳述式加入至 `label_Click()` 事件處理常式方法，位置靠近您啟動計時器之陳述式正上方的程式碼那一端。 將程式碼加入至程式時，請仔細觀察該程式碼。 請考慮程式碼的運作方式。  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../ide/codesnippet/CSharp/step-7-keep-pairs-visible_1.cs)]  [!code-vb[VbExpressTutorial4Step7#9](../ide/codesnippet/VisualBasic/step-7-keep-pairs-visible_1.vb)]  
   
-     The first line of the `if` statement you just added checks whether the icon in the first label that the player chooses is the same as the icon in the second label. If the icons are identical, the program executes the three statements between the curly braces in C# or the three statements within the `if` statement in Visual Basic. The first two statements reset the `firstClicked` and `secondClicked` reference variables so that they no longer keep track of any of the labels. (You may recognize those two statements from the timer's Tick event handler.) The third statement is a `return` statement, which tells the program to skip the rest of the statements in the method without executing them.  
+     您剛才加入的 `if` 陳述式的第一行會檢查玩家所選擇的第一個標籤中的圖示是否與第二個標籤中的圖示相同。 如果圖示相同，程式即執行在 C# 中大括號之間或 Visual Basic 中 `if` 陳述式內的三個陳述式。 前兩個陳述式會重設 `firstClicked` 和 `secondClicked` 參考變數，如此他們便不會再追蹤任何的標籤  (您可以辨識來自計時器的 Tick 事件處理常式中的那兩個陳述式)。第三個陳述式是 `return` 陳述式，該陳述式會告訴程式略過方法中其餘的陳述式，而不要執行它們。  
   
-     If programming in Visual C#, you may have noticed that some of the code uses a single equal sign (`=`), while other statements use two equal signs (`==`). Consider why `=` is used in some places but `==` is used in other places.  
+     如果在 Visual C# 中設計程式，您可能已注意到有些程式碼會使用單一等號 (`=`)，而其他陳述式則使用兩個等號 (`==`)。 請考慮為何某些地方使用 `=`，而其他地方使用 `==`。  
   
-     This is a good example that shows the difference. Take a careful look at the code between the parentheses in the `if` statement.  
+     這是一個顯示差異的好範例。 請仔細觀察 `if` 陳述式中括號之間的程式碼。  
   
     ```vb  
     firstClicked.Text = secondClicked.Text  
@@ -57,7 +57,7 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked.Text == secondClicked.Text  
     ```  
   
-     Then look closely at the first statement in the block of code after the `if` statement.  
+     然後，再仔細查看 `if` 陳述式之後程式碼區塊中的第一個陳述式。  
   
     ```vb  
     firstClicked = Nothing  
@@ -67,15 +67,15 @@ The game works well, as long as the player only chooses pairs of icons that don'
     firstClicked = null;  
     ```  
   
-     The first of those two statements checks whether two icons are the same. Because two values are being compared, the Visual C# program uses the `==` equality operator. The second statement actually changes the value (called *assignment*), setting the `firstClicked` reference variable equal to `null` to reset it. That's why it uses the `=` assignment operator instead. Visual C# uses `=` to set values, and `==` to compare them. Visual Basic uses `=` for both variable assignment and comparison.  
+     這兩個陳述式中的第一個會檢查兩個圖示是否相同。 因為有兩個值在進行比較，所以 Visual C# 程式會使用 `==` 相等運算子。 第二個陳述式會實際變更值 (稱為「指派」)，方法是將 `firstClicked` 參考變數設為等於 `null` 以進行重設。 這就是它為何改用 `=` 指派運算子的緣故。 Visual C# 會使用 `=` 來設定值，而使用 `==` 比較它們。 Visual Basic 則是使用 `=` 來進行變數指派和比較。  
   
-2.  Save and run the program, and then start choosing icons on the form. If you choose a pair that doesn't match, the timer's Tick event triggers, and both icons disappear. If you choose a matching pair, the new `if` statement executes, and the return statement causes the method to skip the code that starts the timer, so the icons stay visible, as shown in the following picture.  
+2.  儲存並執行程式，然後開始在表單中選擇圖示。 如果您選擇不相符的配對，計時器的 Tick 事件觸發器和這兩個圖示都會消失。 如果選擇相符的配對，則會執行新的 `if` 陳述式，而 return 陳述式會導致方法略過用於啟動計時器的程式碼，如此圖示才能保持可見，如下列圖片所示。  
   
-     ![Game that you create in this tutorial](../ide/media/express_finishedgame.png "Express_FinishedGame")  
-Matching game with visible icon pairs  
+     ![您在本教學課程中建立的遊戲](../ide/media/express_finishedgame.png "Express_FinishedGame")  
+含有可見圖示配對的配對遊戲  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>繼續或檢視  
   
--   To go to the next tutorial step, see [Step 8: Add a Method to Verify Whether the Player Won](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+-   若要移至下一個教學課程步驟，請參閱[步驟 8：新增方法以驗證玩家是否贏了](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)。  
   
--   To return to the previous tutorial step, see [Step 6: Add a Timer](../ide/step-6-add-a-timer.md).
+-   若要返回上一個教學課程步驟，請參閱[步驟 6：新增計時器](../ide/step-6-add-a-timer.md)。

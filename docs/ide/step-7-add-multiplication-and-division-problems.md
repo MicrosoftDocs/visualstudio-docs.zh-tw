@@ -1,5 +1,5 @@
 ---
-title: 'Step 7: Add Multiplication and Division Problems | Microsoft Docs'
+title: "步驟 7：新增乘法和除法問題 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -32,41 +32,41 @@ ms.translationtype: HT
 ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
 ms.openlocfilehash: 481d1ad8050a0b028a7cbf23f9385c9920feb1a2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/06/2017
 
 ---
-# <a name="step-7-add-multiplication-and-division-problems"></a>Step 7: Add Multiplication and Division Problems
-In the seventh part of this tutorial, you'll add multiplication and division problems, but first think about how to make that change. Consider the initial step, which involves storing values.  
+# <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
+在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。  
   
-### <a name="to-add-multiplication-and-division-problems"></a>To add multiplication and division problems  
+### <a name="to-add-multiplication-and-division-problems"></a>若要加入乘法和除法問題  
   
-1.  Add four more integer variables to the form.  
+1.  在表單中加入另外四個整數變數。  
   
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]  [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]  
   
-2.  As you did before, modify the `StartTheQuiz()` method to fill in random numbers for the multiplication and division problems.  
+2.  如同您先前執行的方式，修改 `StartTheQuiz()` 方法填入乘法和除法問題的隨機數字。  
   
      [!code-vb[VbExpressTutorial3Step7#16](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_2.vb)]  [!code-csharp[VbExpressTutorial3Step7#16](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_2.cs)]  
   
-3.  Modify the `CheckTheAnswer()` method so that it also checks the multiplication and division problems.  
+3.  修改 `CheckTheAnswer()` 方法，讓它一併檢查乘法和除法問題。  
   
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]  [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]  
   
-     You can't easily enter the multiplication sign (×) and the division sign (÷) using the keyboard, so Visual C# and Visual Basic accept an asterisk (*) for multiplication and a slash mark (/) for division.  
+     由於使用鍵盤不容易輸入乘號 (×) 和除號 (÷)，因此 Visual C# 和 Visual Basic 可接受星號 (*) 表示乘法和斜線符號 (/) 表示除法。  
   
-4.  Change the last part of the timer's Tick event handler so that it fills in the correct answer when time runs out.  
+4.  變更計時器的 Tick 事件處理常式的最後一部分，讓事件處理常式在時間結束時填入正確答案。  
   
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]  [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]  
   
-5.  Save and run your program.  
+5.  儲存並執行您的程式。  
   
-     Quiz takers must answer four problems to complete the quiz, as the following illustration shows.  
+     受測者必須回答四個問題才能完成測驗，如下圖所示。  
   
-     ![Math quiz with four problems](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
-Math quiz with four problems  
+     ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
+包含四個問題的數學測驗  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>繼續或檢視  
   
--   To go to the next tutorial step, see [Step 8: Customize the Quiz](../ide/step-8-customize-the-quiz.md).  
+-   若要移到下一個教學課程步驟，請參閱[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)。  
   
--   To return to the previous tutorial step, see [Step 6: Add a Subtraction Problem](../ide/step-6-add-a-subtraction-problem.md).
+-   若要回到上一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。

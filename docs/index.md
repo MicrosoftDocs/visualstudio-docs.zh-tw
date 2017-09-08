@@ -4,10 +4,10 @@ hide_bc: true
 title: Visual Studio Documentation
 description: Learn how to use Visual Studio 2017 to develop applications, services, and tools in the language of your choice, for your platforms and devices.
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: bcd55d1b7e1037a4442ce47fe6b96bf865dfbdfc
+ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
+ms.openlocfilehash: 5b20d403d64825f519697b5069ec94eb46233c20
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/08/2017
 
 ---
 <div id="main" class="v2">
@@ -441,7 +441,7 @@ ms.lasthandoff: 08/30/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_web-1.svg" src="./images/vs_web-1.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs_tools-3.svg" src="./images/vs_web-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
