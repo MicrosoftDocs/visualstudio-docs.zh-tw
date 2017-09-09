@@ -52,7 +52,7 @@ ms.lasthandoff: 07/14/2017
   
 ### <a name="to-copy-all-the-elements-in-a-class-diagram"></a>複製類別圖中的所有項目  
   
-1.  以滑鼠右鍵按一下圖表介面，然後選擇 [全選]\  (鍵盤：**Ctrl + A**)。  
+1.  以滑鼠右鍵按一下圖表介面，然後選擇 [全選]. (鍵盤：**Ctrl + A**)  
   
 2.  在 [編輯] 功能表上，選取 [複製影像]。  
   
