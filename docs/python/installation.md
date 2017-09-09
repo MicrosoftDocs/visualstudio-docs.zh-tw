@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中的 Python 安裝 | Microsoft Docs"
+title: Installation for Python in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
@@ -16,95 +16,95 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 613af31a2e44cc447980b68de4b0b5642dde1262
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: e686fd03e4700baf36af3b4e353be2e1382a9e24
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="installing-python-support-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中安裝 Python 支援
+# <a name="installing-python-support-in-visual-studio-on-windows"></a>Installing Python support in Visual Studio on Windows
 
-若要為 Visual Studio 安裝 Python 支援，請遵循符合您 Visual Studio 版本之小節中的指示：
+To install Python support for Visual Studio, follow the instructions in the section that matches your version of Visual Studio:
 
 - [Visual Studio 2017](#visual-studio-2017)
 - [Visual Studio 2015](#visual-studio-2015)
-- [Visual Studio 2013 和更早版本](#visual-studio-2013-and-earlier)
+- [Visual Studio 2013 and earlier](#visual-studio-2013-and-earlier)
 
-針對 Visual Studio 2015 和更早版本，您也需要另外安裝您所選的 Python 解譯器。 如需詳細資料，請參閱 [Python 環境](python-environments.md)。
+For Visual Studio 2015 and earlier you also need to separately install a Python interpreter of your choice (Python  3.5 and earlier; 3.6 is not supported). For details, see [Python Environments](python-environments.md). The same page also contains instructions for adding an existing Python interpreter to Visual Studio 2017.
 
-在按照安裝步驟執行之後，若要快速測試 Python 支援，請按 Alt-I 開啟 Python Interactive 視窗，並輸入 `2+2`。 如果您沒有看到 `4` 的輸出，請重新檢查您的步驟。
+To quickly test Python support after following the installation steps, Open the Python Interactive window by pressing Alt-I and entering `2+2`. If you don't see the output of `4`, recheck your steps.
 
 > [!Tip]
-> Python 工作負載包含很有用的 Cookiecutter 擴充功能，能提供探索範本、輸入範本選項，以及建立專案及檔案的圖形化使用者介面。 如需詳細資料，請參閱[使用 Cookiecutter](cookiecutter.md)。
+> The Python workload includes the helpful Cookiecutter extension that provides a graphical user interface to discover templates, input template options, and create projects and files. For details, see [Using Cookiecutter](cookiecutter.md).
 
 > [!Note]
-> 目前在 Visual Studio for Mac 中沒有 Python 支援，但可透過 Visual Studio Code 在 Mac 和 Linux 上取得。 請參閱[問與答](python-in-visual-studio.md#questions-and-answers)。
+> Python support is not presently available in Visual Studio for Mac, but is available on Mac and Linux through Visual Studio Code. See [Questions and answers](python-in-visual-studio.md#questions-and-answers).
 
 ## <a name="visual-studio-2017"></a>Visual Studio 2017
 
-1. 從 [https://www.visualstudio.com/vs/](https://www.visualstudio.com/vs/) 安裝 Visual Studio 2017。
+1. Install the Visual Studio 2017 from [https://www.visualstudio.com/vs/](https://www.visualstudio.com/vs/).
 
-1. 在 Visual Studio 安裝程式中，選取 [Web 與雲端] > [Python 開發] 工作負載。
+1. In the Visual Studio installer, select the **Web & Cloud > Python Development**  workload.
 
-    ![Visual Studio 安裝程式中的 Python 開發工作負載](media/installation-python-workload.png)
+    ![Python development workload in the Visual Studio installer](media/installation-python-workload.png)
 
     > [!Note]
-    > **資料科學和分析應用程式**工作負載中也包含 Python。
+    > Python is also included in the **Data science and analytical applications** workload.
 
-1. 在安裝程式的右側，選取 Python 解譯器，以及其他您想包含的相關工具。 例如，如果您計劃開發適用於 Python 的 C++ 延伸模組，請包括 [Python 原生開發工具] 選項。
+1. On the right side of the installer, select the Python interpreters and other related tools you want to include. For example, if you plan on developing C++ extensions for Python, include the **Python native development tools** option.
 
-    ![Visual Studio 安裝程式中的 Python 開發選項](media/installation-python-options.png)
+    ![Python development options in the Visual Studio installer](media/installation-python-options.png)
 
-1. 如果您已經在電腦上安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
+1. If you already have interpreters installed on your computer, see [Creating an environment for an existing interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
 ## <a name="visual-studio-2015"></a>Visual Studio 2015
 
-1. 從 [控制台] > [程式和功能]，選取 [Microsoft Visual Studio 2015]，再選取 [變更]，以執行 Visual Studio 安裝程式。
+1. Run the Visual Studio installer through **Control Panel > Programs and Features**, selecting **Microsoft Visual Studio 2015** and then **Change**.
 
-1. 在安裝程式中，選取 [修改]。
+1. In the installer, select **Modify**.
 
-1. 選取 [程式語言] > [適用於 Visual Studio 的 Python 工具]，然後選取 [下一步]：
+1. Select **Programming Languages > Python Tools for Visual Studio** and then **Next**:
 
-    ![Visual Studio 2015 安裝程式中的 PTVS 選項](media/installation-vs2015.png)    
+    ![PTVS option in Visual Studio 2015 installer](media/installation-vs2015.png)    
 
-1. 當 Visual Studio 安裝完成之後，請[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。 如果您已安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
+1. Once Visual Studio setup is complete, [install a Python interpreter of your choice](python-environments.md#selecting-and-installing-python-interpreters). If you already have an interpreter installed, see [Creating an environment for an existing interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
-## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 和更早版本
+## <a name="visual-studio-2013-and-earlier"></a>Visual Studio 2013 and earlier
 
-1. 針對您的 Visual Studio 版本，安裝適當版本的「適用於 Visual Studio 的 Python 工具」：
+1. Install the appropriate version of Python Tools for Visual Studio for your version of Visual Studio:
 
-    - Visual Studio 2013：[適用於 Visual Studio 2013 的 PTVS 2.2 (英文)](https://github.com/Microsoft/PTVS/releases/v2.2)。 Visual Studio 2013 中的 [檔案] > [新增專案] 對話方塊能提供您此程序的捷徑。
-    - Visual Studio 2012：[適用於 Visual Studio 2012 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920478)
-    - Visual Studio 2010：[適用於 Visual Studio 2010 的 PTVS 2.1 (英文)](https://pytools.codeplex.com/downloads/get/920479)
+    - Visual Studio 2013: [PTVS 2.2 for Visual Studio 2013](https://github.com/Microsoft/PTVS/releases/v2.2). The **File > New Project** dialog in Visual Studio 2013 gives you a shortcut for this process.
+    - Visual Studio 2012: [PTVS 2.1 for Visual Studio 2012](https://pytools.codeplex.com/downloads/get/920478)
+    - Visual Studio 2010: [PTVS 2.1 for Visual Studio 2010](https://pytools.codeplex.com/downloads/get/920479)
 
-1. [安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)。 如果您已安裝解譯器，請參閱[為現有的解譯器建立環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
+1. [Install a Python interpreter of your choice](python-environments.md#selecting-and-installing-python-interpreters). If you already have an interpreter installed, see [Creating an environment for an existing interpreter](python-environments.md#creating-an-environment-for-an-existing-interpreter).
 
-## <a name="install-locations"></a>安裝位置
+## <a name="install-locations"></a>Install locations
 
-根據預設，系統會為電腦上的所有使用者安裝 Python 支援。
+By default, Python support is installed for all users on a computer.
 
-針對 Visual Studio 2017，Python 工作負載會安裝在 `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python`，其中 &lt;VS_edition&gt; 將會是 Community、Professional 或 Enterprise。
+For Visual Studio 2017, the Python workload is installed in `%ProgramFiles(x86)%\Microsoft Visual Studio\2017\<VS_edition>Common7\IDE\Extensions\Microsoft\Python` where &lt;VS_edition&gt; is Community, Professional, or Enterprise.
 
-針對 Visual Studio 2015 和更早版本，安裝路徑如下：
+For Visual Studio 2015 and earlier, installation paths are as follows:
 
-- 32 位元：
-  - 路徑：`%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路徑的登錄位置：`HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
-- 64 位元︰
-  - 路徑：`%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
-  - 路徑的登錄位置：`HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
+- 32-bit:
+  - Path: `%Program Files(x86)%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Registry location of path: `HKEY_LOCAL_MACHINE\Software\Microsoft\PythonTools\<VS_ver>\InstallDir`
+- 64-bit:
+  - Path: `%Program Files%\Microsoft Visual Studio <VS_ver>\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`
+  - Registry location of path: `HKEY_LOCAL_MACHINE\Software\Wow6432Node\Microsoft\PythonTools\<VS_ver>\InstallDir`
 
-其中：
+where:
 
-- &lt;VS_ver&gt;：    
-    - 針對 Visual Studio 2015 為 14.0
-    - 針對 Visual Studio 2013 為 12.0
-    - 針對 Visual Studio 2012 為 11.0
-    - 針對 Visual Studio 2010 為 10.0
-- &lt;PTVS_ver&gt; 為版本號碼，如 2.2、2.1、2.0、1.5、1.1 或 1.0。
+- &lt;VS_ver&gt; is:    
+    - 14.0 for Visual Studio 2015
+    - 12.0 for Visual Studio 2013
+    - 11.0 for Visual Studio 2012
+    - 10.0 for Visual Studio 2010
+- &lt;PTVS_ver&gt; is a version number, such as 2.2, 2.1, 2.0, 1.5, 1.1, or 1.0.
 
-### <a name="user-specific-installations-15-and-earlier"></a>使用者特定安裝 (1.5 和更早版本)
+### <a name="user-specific-installations-15-and-earlier"></a>User-specific installations (1.5 and earlier)
 
-適用於 Visual Studio 1.5 和更早版本的 Python 工具，僅允許針對目前的使用者進行安裝，此情況下的安裝路徑為 `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>`，其中 &lt;VS_ver&gt; 和 &lt;PTVS_ver&gt; 的狀況與上述相同。
+Python Tools for Visual Studio 1.5 and earlier allowed installation for the current user only, in which case the installation path is `%LocalAppData%\Microsoft\VisualStudio\<VS_ver>\Extensions\Microsoft\Python Tools for Visual Studio\<PTVS_ver>` where &lt;VS_ver&gt; and &lt;PTVS_ver&gt; are the same as described above.
 

@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中的 Python Web 專案範本 | Microsoft Docs"
+title: Web Project Template for Python in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/13/2017
 ms.prod: visual-studio-dev15
@@ -16,114 +16,116 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: e46dd1012d220015b1840c0c50332dbe45e43a1e
+ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
+ms.openlocfilehash: 6a03b26b2ad01bedc4f1b0882c39ba3ad19e26d2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 
-# <a name="python-web-project-templates"></a>Python Web 專案範本
+# <a name="python-web-project-templates"></a>Python Web Project Templates
 
-Visual Studio 中的 Python 支援透過專案範本以及可設定成處理各種架構的偵錯啟動器，在 Bottle、Django 和 Flask 這類架構中開發 Web 專案。 不過，Visual Studio 不包含架構本身，您必須以滑鼠右鍵按一下專案並選取 [Python] > [Install/upgrade framework...]\(安裝/升級架構...) 來個別安裝它們。
+Python in Visual Studio supports developing web projects in Bottle, Flask, and Django frameworks through project templates and a debug launcher that can be configured to handle various frameworks. You can also use the generic "Web Project" template for other frameworks such as Pyramid.
 
-每個範本 (透過 [檔案] > [新增] > [專案] 存取) 會搭配隨機選取的本機連接埠啟動網頁伺服器，於偵錯期間開啟您的預設瀏覽器，並允許直接發行至 [Microsoft Azure](http://www.azure.com)。 針對 Bottle、Flask 和 Django 有提供範本，而且您可以針對其他架構 (例如 Pyramid) 使用一般的 [Web 專案] 範本。
+Visual Studio does not include the frameworks themselves. You must install frameworks separately by right-clicking the project and selecting **Python > Install/upgrade framework...**.
 
-![新增 Web 專案範本](media/template-web-new-project.png)
+When run, a project created from a template (as accessed through **File > New > Project...**) launches a web server with a randomly selected local port, opens your default browser when debugging, and allows direct publishing to Microsoft Azure.
 
-Bottle、Flask 和 Django 範本各自都包含一個含有一些頁面及靜態檔案的起始網站。 此程式碼足以用來在本機 (其中某些設定需要從環境取得) 執行伺服器並進行偵錯，以及部署至 Microsoft Azure (其中必須提供 [WSGI 應用程式 (英文)](http://www.python.org/dev/peps/pep-3333/) 物件)。
+![New Web Project templates](media/template-web-new-project.png)
 
-從架構特定的範本建立專案時，系統會顯示對話方塊來協助您使用 pip 安裝必要的套件。 另外也建議您針對 Web 專案使用[虛擬環境](python-environments.md#virtual-environments)，如此當您發佈網站時，就會包含正確的相依性：
+The Bottle, Flask, and Django templates each include a starter site with some pages and static files. This code is sufficient to run and debug the server locally (where some settings need to be obtained from the environment) and to deploy to Microsoft Azure (where a [WSGI app](http://www.python.org/dev/peps/pep-3333/) object needs to be provided).
 
-![安裝專案範本所需之封裝的對話方塊](media/template-web-requirements-txt-wizard.png)
+When creating a project from a framework-specific template, a dialog appears to help you install the necessary packages using pip. We also recommend using a [virtual environment](python-environments.md#virtual-environments) for web projects so that the correct dependencies are included when you publish your web site:
 
-部署至 Microsoft Azure App Service 時，請選取 Python 的版本作為[網站延伸模組](https://aka.ms/PythonOnAppService)，並手動安裝套件。 此外，由於從 Visual Studio 部署時，Azure App Service 「不會」自動從 `requirements.txt` 檔案安裝封裝，請依照 [aka.ms/PythonOnAppService (英文)](https://aka.ms/PythonOnAppService) 上的設定詳細資料進行。
+![Dialog that installs needed packages for a project template](media/template-web-requirements-txt-wizard.png)
 
-Microsoft Azure 雲端服務「確實」支援 `requirements.txt` 檔案。 如需詳細資料，請參閱 [Azure 雲端服務專案](template-azure-cloud-service.md)。
+When deploying to Microsoft Azure App Service, select a version of Python as a [site extension](https://aka.ms/PythonOnAppService) and manually install packages. Also, because Azure App Service does **not** automatically install packages from a `requirements.txt` file when deployed from Visual Studio, follow the configuration details on [aka.ms/PythonOnAppService](https://aka.ms/PythonOnAppService).
 
-如需 Python Web 專案的簡介，請參閱[開始使用 PTVS 第 6 部：網站 (英文)](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com，3 分鐘 10 秒)。
+Microsoft Azure Cloud Service *does* support the `requirements.txt` file. [Azure Cloud Service Projects](template-azure-cloud-service.md) for details.
+
+For an introduction to Python web projects, see [Getting Started with PTVS, Part 6: Web sites](https://youtu.be/FJx5mutt1uk?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (youtube.com, 3m10s).
 
 > [!VIDEO https://www.youtube.com/embed/FJx5mutt1uk]
 
-## <a name="debugging"></a>偵錯
+## <a name="debugging"></a>Debugging
 
-當啟動 Web 專案進行偵錯時，Visual Studio 會在本機啟動網頁伺服器，然後開啟預設瀏覽器並移至該位址及連接埠。 若要指定其他選項，請以滑鼠右鍵按一下專案，選取 [屬性]，並選取 [Web 啟動器] 索引標籤：
+When a web project is started for debugging, Visual Studio starts the web server locally and opens your default browser to that address and port. To specify additional options, right-click the project, select **Properties**, and select the **Web Launcher** tab:
 
-  ![一般 Web 範本的 Web 啟動器屬性](media/template-web-launcher-properties.png)
+  ![Web launcher properties for the generic web template](media/template-web-launcher-properties.png)
 
-在 [偵錯] 群組中：
+In the **Debug** group:
 
-- **搜尋路徑**、**指令碼引數**、**解譯器引數**和**解譯器路徑**：這些選項與[一般偵錯](debugging.md)所使用的相同
-- **啟動 URL**：指定在瀏覽器中開啟的 URL。 預設值為 `localhost`。
-- **連接埠號碼**：在未於 URL 中指定連接埠的情況下，要使用的連接埠 (Visual Studio 預設會自動選取一個)。 此設定可讓您覆寫 `SERVER_PORT` 環境變數的預設值，該預設值是範本用來設定本機偵錯伺服器要接聽的連接埠。
+- **Search Paths**, **Script Arguments**, **Interpreter Arguments**, and **Interpreter Path**: these options are the same as for [normal debugging](debugging.md)
+- **Launch URL**: specifies the URL that is opened in your browser. It defaults to `localhost`.
+- **Port Number**: the port to use if none is specified in the URL (Visual Studio selects one automatically by default). This setting allows you to override the default value of the `SERVER_PORT` environment variable, which is used by the templates to configure the port the local debug server listens on.
 
-[執行伺服器命令] 和 [偵錯伺服器命令] 群組中的屬性 (下圖所示的為後者) 會決定 Web 伺服器的啟動方式。 因為許多架構要求使用目前專案外部的指令碼，您可以在這裡設定指令碼，而啟始模組的名稱可以當作參數傳遞。
+The properties in the **Run Server Command** and **Debug Server Command** groups (the latter is below what's show in the image) determine how the web server is launched. Because many frameworks require the use of a script outside of the current project, the script can be configured here and the name of the startup module can be passed as a parameter.
 
-- **命令**：可以是 Python 指令碼 (`*.py` 檔案)、模組名稱 (也就是 `python.exe -m module_name`) 或單一程式碼行 (也就是 `python.exe -c "code"`)。 下拉式清單中的值會指出是上述哪種類型。
-- **引數**︰這些引數會緊跟著命令在命令列上傳遞。
-- **環境**︰以新行來分隔的 `NAME=VALUE` 配對清單，可指定環境變數。 這些變數是在所有可修改環境的屬性 (例如連接埠號碼和搜尋路徑) 之後設定，因此可能會覆寫這些值。
+- **Command**: can be a Python script (`*.py` file), a module name (as in, `python.exe -m module_name`), or a single line of code (as in, `python.exe -c "code"`). The value in the dropdown indicates which of these types is intended.
+- **Arguments**: these arguments are passed on the command line following the command.
+- **Environment**: a newline-separated list of `NAME=VALUE` pairs specifying environment variables. These variables are set after all properties that may modify the environment, such as the port number and search paths, and so may overwrite these values.
 
-任何的專案屬性或環境變數都可以使用 MSBuild 語法指定，例如：`$(StartupFile) --port $(SERVER_PORT)`。
-`$(StartupFile)` 是啟始檔案的相對路徑，而 `{StartupModule}` 是啟始檔案的可匯入名稱。 `$(SERVER_HOST)` 和 `$(SERVER_PORT)` 是一般環境變數，會自動由 [啟動 URL] 和 [連接埠號碼] 屬性設定，或是由 [環境] 屬性設定。
+Any project property or environment variable can be specified with MSBuild syntax, for example: `$(StartupFile) --port $(SERVER_PORT)`.
+`$(StartupFile)` is the relative path to the startup file and `{StartupModule}` is the importable name of the startup file. `$(SERVER_HOST)` and `$(SERVER_PORT)` are normal environment variables that are set by the **Launch URL** and **Port Number** properties, automatically, or by the **Environment** property.
 
 > [!Note]
-> [執行伺服器命令] 中的值會搭配 [偵錯] > [啟動伺服器] 命令或 Ctrl-F5 使用；[偵錯伺服器命令] 群組中的值則是搭配 [偵錯] > [啟動偵錯伺服器] 命令或 F5 使用。
+> Values in **Run Server Command** are used with the **Debug > Start Server** command or Ctrl-F5; values in the **Debug Server Command** group are used with the **Debug > Start Debug Server** command or F5.
 
 
-### <a name="sample-bottle-configuration"></a>範例 Bottle 設定
+### <a name="sample-bottle-configuration"></a>Sample Bottle configuration
 
-Bottle Web 專案範本包括會執行必要設定的未定案程式碼。 不過，匯入的 Bottle 應用程式可能不會包括此程式碼，在這種情況下，下列設定會使用已安裝的 `bottle` 模組啟動應用程式：
+The Bottle Web Project template includes boilerplate code that does the necessary configuration. An imported bottle app may not include this code, however, in which case the following settings launch the app using the installed `bottle` module:
 
-- [執行伺服器命令] 群組：
-    - **命令**：`bottle` (模組)
-    - **引數**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+- **Run Server Command** group:
+    - **Command**: `bottle` (module)
+    - **Arguments**: `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-- [偵錯伺服器命令] 群組：
-    - **命令**：`bottle` (模組)
-    - **引數**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+- **Debug Server Command** group:
+    - **Command**: `bottle` (module)
+    - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-使用 Visual Studio 進行偵錯時，不建議使用 `--reload` 選項。
+The `--reload` option is not recommended when using Visual Studio for debugging.
 
-### <a name="sample-pyramid-configuration"></a>範例 Pyramid 設定
+### <a name="sample-pyramid-configuration"></a>Sample Pyramid configuration
 
-Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一旦建立應用程式，便可以使用[從現有的 Python 程式碼](python-projects.md#creating-a-project-from-existing-files)範本匯入該應用程式。 這麼做之後，請選取 [一般 Web 專案] 自訂項目來設定選項。 這些設定會假設 Pyramid 已經安裝到位於 `..\env` 的虛擬環境。
+Pyramid apps are currently best created using the `pcreate` command-line tool. Once an app has been created, it can be imported using the [From Existing Python Code](python-projects.md#creating-a-project-from-existing-files) template. After doing so, select the **Generic Web Project** customization to configure the options. These settings assume that Pyramid is installed into a virtual environment at `..\env`.
 
-- [偵錯] 群組：
-    - **伺服器連接埠**：6543 (或是 .ini 檔案中設定的值)
+- **Debug** group:
+    - **Server Port**: 6543 (or whatever is configured in the .ini files)
 
-- [執行伺服器命令] 群組：
-    - 命令：`..\env\scripts\pserve-script.py` (指令碼)
-    - 引數：`Production.ini`
+- **Run Server Command** group:
+    - Command: `..\env\scripts\pserve-script.py` (script)
+    - Arguments: `Production.ini`
 
-- [偵錯伺服器命令] 群組：
-    - 命令：`..\env\scripts\pserve-script.py` (指令碼)
-    - 引數：`Development.ini`
+- **Debug Server Command** group:
+    - Command: `..\env\scripts\pserve-script.py` (script)
+    - Arguments: `Development.ini`
 
 > [!Tip]
-> 您可能必須設定專案的 [工作目錄] 屬性，因為 Pyramid 應用程式的層級通常會比來源樹狀結構的最上層目錄再深一層。
+> You'll likely need to configure the **Working Directory** property of your project because Pyramid apps are typically one directory level deeper than the top of the source tree.
 
 
-### <a name="other-configurations"></a>其他設定
+### <a name="other-configurations"></a>Other configurations
 
-如果您有另一個架構的設定想要共用，或是想要求另一個架構的設定，請在 [GitHub 上提出問題](https://github.com/Microsoft/PTVS/issues)。
+If you have settings for another framework that you would like to share, or if you'd like to request settings for another framework, open an [issue on GitHub](https://github.com/Microsoft/PTVS/issues).
 
-## <a name="publishing-to-azure-app-service"></a>發佈至 Azure App Service
+## <a name="publishing-to-azure-app-service"></a>Publishing to Azure App Service
 
-有兩種主要方式可以發佈至 Azure App Service。 首先，來自原始檔控制的部署可以使用與其他語言相同的方式使用，如 [Azure 文件](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/)中所述。 若要直接從 Visual Studio 發佈，請以滑鼠右鍵按一下專案，然後選取 [發佈]：
+There are two primary ways to publish to Azure App Service. First, deployment from source control can be used in the same way as for other languages, as described in the [Azure documentation](http://azure.microsoft.com/en-us/documentation/articles/web-sites-publish-source-control/). To publish direct from Visual Studio, right-click the project and select **Publish**:
 
-![專案操作功能表上的 [發佈] 命令](media/template-web-publish-command.png)
+![Publish command on a project's context menu](media/template-web-publish-command.png)
 
-選取命令之後，精靈會逐步引導您完成建立網站或匯入發佈設定，預覽已修改的檔案，然後發佈至遠端伺服器。
+After selecting the command, a wizard walks you through creating a web site or importing publish settings, previewing modified files, and publishing to a remote server.
 
-當您在 App Service 上建立網站時，需要安裝 Python 以及您網站所需的所有套件。 您可以先發行網站，但它在您設定 Python 之後才會執行。
+When you create a site on App Service, you need to install Python and any packages your site depends upon. You can publish your site first, but it won't run until you have configured Python.
 
-若要在 App Service 上安裝 Python，建議您使用[網站擴充功能 (英文)](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net)。 這些延伸模組是 Python [正式版本](https://www.python.org) 的複本，並已針對 Azure App Service 最佳化並重新封裝。
+To install Python on App Service, we recommend using the [site extensions](http://www.siteextensions.net/packages?q=Tags%3A%22python%22) (siteextensions.net). These extensions are copies of the [official releases](https://www.python.org) of Python, optimized and repackaged for Azure App Service.
 
-網站延伸模組可以透過 [Azure 入口網站](https://portal.azure.com/)進行部署。 針對 App Service 選取 [開發工具] > [延伸模組] 刀鋒視窗，並選取 [新增]，然後捲動清單以尋找 Python 項目：
+A site extension can be deployed through the [Azure portal](https://portal.azure.com/). Select the **Development Tools > Extensions** blade for your App Service, select **Add**, and scroll the list to find the Python items:
 
-![在 Azure 入口網站上新增網站擴充功能](media/template-web-site-extensions.png)
+![Add Site Extension on the Azure portal](media/template-web-site-extensions.png)
 
-如果您使用 JSON 部署範本，您可以將網站擴充功能指定為網站的資源：
+If you are using JSON deployment templates, you can specify the site extension as a resource of your site:
 
 ```json
 {
@@ -148,9 +150,9 @@ Pyramid 應用程式目前最適合使用 `pcreate` 命令列工具建立。 一
 }
 ```
 
-最後，您可以透過[開發主控台 (英文)](https://github.com/projectkudu/kudu/wiki/Kudu-console) 登入，並從該處安裝網站擴充功能。
+Finally, you can log in through the [development console](https://github.com/projectkudu/kudu/wiki/Kudu-console) and install a site extension from there.
 
-目前，安裝封裝的建議方式，是在安裝網站擴充功能後使用開發主控台，並直接執行 PIP。 使用 Python 的完整路徑非常重要，否則您可能會執行錯誤版本的 Python，而且您通常並不需要使用虛擬環境。 例如: 
+Currently, the recommended way to install packages is to use the development console after installing the site extension and executing pip directly. Using the full path to Python is important, or you may execute the wrong one, and there is generally no need to use a virtual environment. For example:
 
 ```
 c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
@@ -158,24 +160,24 @@ c:\Python35\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 c:\Python27\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
 ```
 
-部署到 Azure App Service 後，您的網站會在 Microsoft IIS 後方執行。 若要讓您的網站搭配 IIS 運作，您至少需要新增 `web.config` 檔案。 有可用的範本可供一些常見的部署目標使用，您可以以滑鼠右鍵按一下專案並選取 [新增] > [新增項目]\(請參閱下方的對話方塊) 來取得它們，而且您可以輕鬆地修改這些設定以用於其他用途。 如需可用組態設定的資訊，請參閱 [IIS Configuration Reference](https://www.iis.net/configreference) (IIS 設定參考)。
+When deployed to Azure App Service, your site runs behind Microsoft IIS. To enable your site to work with IIS, you need to add at least a `web.config` file. There are templates available for some common deployment targets available by right-clicking the project and selecting **Add > New Item...** (see dialog below), and these configurations can be easily modified for other uses. See the [IIS Configuration Reference](https://www.iis.net/configreference) for information about the available configuration settings.
 
-![Azure 項目範本](media/template-web-azure-items.png)
+![Azure Item Templates](media/template-web-azure-items.png)
 
-可用的項目包括︰
+The available items include:
 
-- Azure web.config (FastCGI)：新增 `web.config` 檔案，適用於您的應用程式提供 [WSGI (英文)](https://wsgi.readthedocs.io/en/latest/) 物件以處理傳入連線的情況。
-- Azure web.config (HttpPlatformHandler)：新增 `web.config` 檔案，適用於您的應用程式針對傳入連線接聽通訊端的情況。
-- Azure 靜態檔案 web.config：當您有上述其中一個 `web.config` 檔案時，請將該檔案新增至子目錄，以排除它不讓應用程式進行處理。
-- Azure 遠端偵錯 web.config：新增透過 WebSockets 進行遠端偵錯的必要檔案。
-- Web 角色支援檔案：包含雲端服務 Web 角色的預設部署指令碼。
-- 背景工作角色角色支援檔案：包含雲端服務背景工作角色的預設部署及啟動指令碼。
+- Azure web.config (FastCGI): adds a `web.config` file for when your app provides a [WSGI](https://wsgi.readthedocs.io/en/latest/) object to handle incoming connections.
+- Azure web.config (HttpPlatformHandler): adds a `web.config` file for when your app listens on a socket for incoming connections.
+- Azure Static files web.config: when you have one of the above `web.config` files, add the file to a subdirectory to exclude it from being handled by your app.
+- Azure Remote debugging web.config: adds the files necessary for remote debugging over WebSockets.
+- Web Role Support Files: contains the default deployment scripts for Cloud Service web roles.
+- Worker Role Support Files: contains the default deployment and launch scripts for Cloud Service worker roles.
 
-如果您將偵錯 `web.config` 範本新增到專案，並計劃使用 Python 遠端偵錯，則必須使用 [偵錯] 設定來發行網站。 此設定不同於目前使用中的方案組態，且一律預設為 [發行]。 若要變更它，請開啟 [設定] 索引標籤，並使用發佈精靈的 [設定] 下拉式方塊 (如需建立並部署至 Azure Web Apps 的詳細資訊，請參閱 [Azure 文件](https://azure.microsoft.com/develop/python/))：
+If you add the debugging `web.config` template to your project and plan to use Python remote debugging, you need to publish the site in "Debug" configuration. This setting is separate from the current active solution configuration and always defaults to "Release." To change it, open the **Settings** tab and use the **Configuration** combo box in the publish wizard (see the [Azure documentation](https://azure.microsoft.com/develop/python/) for more information on creating and deploying to Azure Web Apps):
 
-![正在變更發佈設定](media/template-web-publish-config.png)
+![Changing the publish configuration](media/template-web-publish-config.png)
 
-[轉換為 Microsoft Azure 雲端服務專案] 命令 (如下圖) 會將雲端服務專案新增至您的方案。 此專案包括要使用之虛擬機器和服務的部署設定及組態。 使用雲端專案上的 [發行] 命令以部署至雲端服務；Python 專案上的 [發行] 命令仍然會部署至網站。 如需詳細資料，請參閱 [Azure 雲端服務專案](template-azure-cloud-service.md)。
+The **Convert to Microsoft Azure Cloud Service Project** command (image below) adds a Cloud Service project to your solution. This project includes the deployment settings and configuration for the virtual machines and services to be used. Use the **Publish** command on the cloud project to deploy to Cloud Service; the **Publish** command on the Python project still deploys to Web Sites. See [Azure Cloud Service Projects](template-azure-cloud-service.md) for more details.
 
-![[轉換為 Microsoft Azure 雲端服務專案] 命令](media/template-web-convert-menu.png)
+![Convert to Microsoft Azure Cloud Service Project command](media/template-web-convert-menu.png)
 
