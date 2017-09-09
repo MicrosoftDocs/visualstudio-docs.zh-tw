@@ -50,9 +50,7 @@
     }
   ],
   "notification_subscribers": [],
-  "branches_to_filter": [
-    "live"
-  ],
+  "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.zh-tw",
   "git_repository_branch_open_to_public_contributors": "live",
   "skip_source_output_uploading": false,
