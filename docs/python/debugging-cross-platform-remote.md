@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 中的 Python 跨平台遠端偵錯 | Microsoft Docs"
+title: Python Cross-Platform Remote Debugging in Visual Studio | Microsoft Docs
 ms.custom: 
 ms.date: 7/12/2017
 ms.prod: visual-studio-dev15
@@ -16,118 +16,118 @@ author: kraigb
 ms.author: kraigb
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 50af64c33c96fe1f3bf46a06e3c6d42672c60844
-ms.openlocfilehash: 11e0a19d5a3262fd21e573d102c40055c1f4e46d
+ms.sourcegitcommit: ea08439b7f540e5629dfc17df4748c296e0619fa
+ms.openlocfilehash: 7bd509a9f520434f3a09b3b01a59003094a420aa
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/11/2017
 
 ---
 
-# <a name="remotely-debugging-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
+# <a name="remotely-debugging-python-code-on-linux"></a>Remotely Debugging Python Code on Linux
 
-Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式並進行偵錯 (請參閱[遠端偵錯](../debugger/remote-debugging.md))。 它也可在其他作業系統、裝置或使用 [ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd)的 Python 實作 (不同於 CPython) 上進行遠端偵錯。
+Visual Studio can launch and debug Python applications locally and remotely on a Windows computer (see [Remote Debugging](../debugger/remote-debugging.md)). It can also debug remotely on a different operating system, device, or Python implementation other than CPython using the [ptvsd library](https://pypi.python.org/pypi/ptvsd).
 
-使用 ptvsd 時，進行偵錯的 Python 程式碼會裝載 Visual Studio 可以附加到的偵錯伺服器。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
+When using ptvsd, the Python code being debugged hosts the debug server to which Visual Studio can attach. This hosting requires a small modification to your code to import and enable the server, and may require network or firewall configurations on the remote computer to allow TCP connections.
 
-如需遠端偵錯的簡介，請參閱[深入探討︰跨平台遠端偵錯 (英文)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com，6 分 22 秒)。
+For an introduction to remote debugging, see [Deep Dive: Cross-Platform Remote Debugging](https://youtu.be/y1Qq7BrV6Cc) (youtube.com, 6m22s).
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
-## <a name="setting-up-a-linux-computer"></a>設定 Linux 電腦
+## <a name="setting-up-a-linux-computer"></a>Setting up a Linux computer
 
-若要遵循本逐步解說，需要下列項目：
+The following items are needed to follow this walkthrough:
 
-- 執行 Python 的遠端電腦，作業系統為 Mac OS 或 Linux。
-- 已開啟上述電腦的防火牆連接埠 5678 (輸入)，其為遠端偵錯的預設值。
+- A remote computer running Python on an operating system like Mac OSX or Linux.
+- Port 5678 (inbound) opened on that computer's firewall, which is the default for remote debugging.
 
-您可以輕鬆地建立 [Azure 上的 Linux 虛擬機器](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices)，並透過 Windows [使用遠端桌面進行存取](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop)。 適用於 VM 的 Ubuntu 預設會安裝 Python，因此是很方便的選項；否則，請參閱[安裝您所選的 Python 解譯器](python-environments.md#selecting-and-installing-python-interpreters)上的清單，以取得其他的 Python 下載位置。
+You can easily create [Linux virtual machines on Azure](https://docs.microsoft.com/azure/virtual-machines/linux/creation-choices) and [access it using Remote Desktop](https://docs.microsoft.com/azure/virtual-machines/linux/use-remote-desktop) from Windows. An Ubuntu for the VM is convenient because Python is installed by default; otherwise, see the list on [Install a Python interpreter of your choice](python-environments.md#selecting-and-installing-python-interpreters) for additional Python download locations.
 
-如需建立 Azure VM 防火牆規則的詳細資訊，請參閱[使用 Azure 入口網站對 Azure 中的 VM 開啟連接埠](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal)。
+For details on creating a firewall rule for an Azure VM, see [Opening ports to a VM in Azure using the Azure portal](https://docs.microsoft.com/azure/virtual-machines/windows/nsg-quickstart-portal).
 
-## <a name="preparing-the-script-for-debugging"></a>準備偵錯指令碼
+## <a name="preparing-the-script-for-debugging"></a>Preparing the script for debugging
 
-1. 在遠端電腦上，使用下列程式碼建立稱為 `guessing-game.py` 的 Python 檔案︰
+1. On the remote computer, create a Python file called `guessing-game.py` with the following code:
 
   ```python
-    import random
+  import random
 
-    guesses_made = 0
-    name = input('Hello! What is your name?\n')
-    number = random.randint(1, 20)
-    print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
+  guesses_made = 0
+  name = input('Hello! What is your name?\n')
+  number = random.randint(1, 20)
+  print('Well, {0}, I am thinking of a number between 1 and 20.'.format(name))
 
-    while guesses_made < 6:
-    guess = int(input('Take a guess: '))
-    guesses_made += 1
-    if guess < number:
-        print('Your guess is too low.')
-    if guess > number:
-        print('Your guess is too high.')
-    if guess == number:
-        break
-    if guess == number:
-    print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
-    else:
-    print('Nope. The number I was thinking of was {0}'.format(number))
+  while guesses_made < 6:
+      guess = int(input('Take a guess: '))
+      guesses_made += 1
+      if guess < number:
+          print('Your guess is too low.')
+      if guess > number:
+          print('Your guess is too high.')
+      if guess == number:
+          break
+  if guess == number:
+      print('Good job, {0}! You guessed my number in {1} guesses!'.format(name, guesses_made))
+  else:
+      print('Nope. The number I was thinking of was {0}'.format(number))
   ```
  
-1. 使用 `pip3 install ptvsd`，將 `ptvsd` 封裝安裝到您的環境。 (注意：建議您將 ptvsd 的安裝版本記錄起來，以免需要進行疑難排解；[ptvsd 清單](https://pypi.python.org/pypi/ptvsd)中也會顯示可用的版本)。
+1. Install the `ptvsd` package into your environment using `pip3 install ptvsd`. (Note: it's a good idea to record the version of ptvsd that's installed in case you need it for troubleshooting; the [ptvsd listing](https://pypi.python.org/pypi/ptvsd) also shows available versions.)
 
-1. 盡早在 `guessing-game.py` 中的其他程式碼之前加入下列程式碼，以啟用遠端偵錯。 (雖然不是嚴格要求，但在呼叫 `enable_attach` 函式前，無法對繁衍 (Spawn) 的任何背景執行緒進行偵錯。)
+1. Enable remote debugging by adding the code below at the earliest possible point in `guessing-game.py`, before other code. (Though not a strict requirement, it's impossible to debug any background threads spawned before the `enable_attach` function is called.)
 
    ```python
    import ptvsd
    ptvsd.enable_attach('my_secret')
    ```
 
-   第一個傳遞至 `enable_attach` 的引數 (稱為「密碼」) 會限制存取執行指令碼，您要在附加遠端偵錯工具時輸入此密碼。 (您也可以使用 `enable_attach(secret=None)`，允許任何人連線，但並不建議這麼做)。
+   The first argument passed to `enable_attach` (called "secret") restricts access to the running script, and you enter this secret when attaching the remote debugger. (Though not recommended, you can allow anyone to connect, use `enable_attach(secret=None)`.)
 
-1. 請儲存檔案，然後執行 `python3 guessing-game.py`。 `enable_attach` 的呼叫會在背景執行，並等待您與程式互動時的連入連線。 如有需要，可以在 `enable_attach` 之後呼叫 `wait_for_attach` 函式來封鎖程式，直到偵錯工具附加為止。
+1. Save the file and run `python3 guessing-game.py`. The call to `enable_attach` runs in the background and waits for incoming connections as you otherwise interact with the program. If desired, the `wait_for_attach` function can be called after `enable_attach` to block the program until the debugger attaches.
 
 > [!Tip]
-> 除了 `enable_attach` 和`wait_for_attach` 以外，ptvsd 也提供協助程式函式 `break_into_debugger`，其在偵錯工具附加時可做為程式設計的中斷點。 還有一個 `is_attached` 函式會在偵錯工具附加時傳回 `True` (請注意，在呼叫其他 `ptvsd` 之前，不需檢查這個結果)。
+> In addition to `enable_attach` and `wait_for_attach`, ptvsd also provides a helper function `break_into_debugger`, which serves as a programmatic breakpoint if the debugger is attached. There is also an `is_attached` function that returns `True` if the debugger is attached (note that there is no need to check this result before calling any other `ptvsd` functions).
 
-## <a name="attaching-remotely-from-python-tools"></a>從 Python 工具遠端附加
+## <a name="attaching-remotely-from-python-tools"></a>Attaching remotely from Python Tools
 
-在這些步驟中，我們會設定中斷點以停止遠端程序。
+In these steps, we set a simple breakpoint to stop the remote process.
 
-1. 在本機電腦上建立遠端檔案的複本，然後在 Visual Studio 中開啟它。 檔案所在位置並不重要，但其名稱應符合遠端電腦上的指令碼名稱。
+1. Create a copy of the remote file on the local computer and open it in Visual Studio. It doesn't matter where the file is located, but its name should match the name of the script on the remote computer.
 
-1. (選擇性) 若要讓本機電腦具有適用於 ptvsd 的 IntelliSense，請將 ptvsd 套件安裝到您的 Python 環境中。
+1. (Optional) To have IntelliSense for ptvsd on your local computer, install the ptvsd package into your Python environment.
 
-1. 選取 [偵錯] > [附加至處理序]。
+1. Select **Debug > Attach to Process**.
 
-1. 在隨即顯示的 [附加至處理序] 對話方塊中，將 [連線類型] 設為 [Python remote (ptvsd)]\(Python 遠端 (ptvsd)) (在舊版 Visual Studio 中，這些命令名稱為 [傳輸] 和 [Python 遠端偵錯])。
+1. In the **Attach to Process** dialog that appears, set **Connection Type** to **Python remote (ptvsd)**. (On older versions of Visual Studio these commands are named **Transport** and **Python remote debugging**.)
 
-1. 在 [連線目標] 欄位 (舊版為 [限定詞]) 中，輸入 `tcp://<secret>@<ip_address>:5678`，其中 `<secret>` 是將 `enable_attach` 傳入 Python 程式碼的字串，`<ip_address>` 是遠端電腦的明確位址或名稱 (如 myvm.cloudapp.net)，而 `:5678` 是遠端偵錯的連接埠號碼。
+1. In the **Connection Target** field (**Qualifier** on older versions), enter `tcp://<secret>@<ip_address>:5678` where `<secret>` is the string passed `enable_attach` in the Python code, `<ip_address>` is that of the remote computer (which can be either an explicit address or a name like myvm.cloudapp.net), and `:5678` is the remote debugging port number.
 
     > [!Warning]
-    > 如果透過公用網際網路連線，您應該改用 `tcps`，並遵循下列指示[使用 SSL 保護偵錯工具連線](#securing-the-debugger-connection-with-ssl)。
+    > If you're making a connection over the public internet, you should be using `tcps` instead and following the instruction below for [Securing the debugger connection with SSL](#securing-the-debugger-connection-with-ssl).
 
-1. 按 Enter，即可填入該電腦上可用的 ptvsd 處理序清單：
+1. Press Enter to populate the list of available ptvsd processes on that computer:
 
-    ![輸入連線目標，並列出處理序](media/remote-debugging-qualifier.png)
+    ![Entering the connection target and listing processes](media/remote-debugging-qualifier.png)
 
-    填入此清單之後，如果您剛好在遠端電腦上啟動另一個程式，請選取 [重新整理] 按鈕。
+    If you happen to start another program on the remote computer after populating this list, select the **Refresh** button.
 
-1. 選取要偵錯的處理序，再選取 [附加]，或按兩下處理序。
+1. Select the process to debug and then **Attach**, or double-click the process.
 
-1. Visual Studio 即會切換至偵錯模式，而遠端電腦仍會繼續執行指令碼，並提供所有一般[偵錯](debugging.md)功能。 例如，在 `if guess < number:` 行上設定中斷點，然後切換到遠端電腦，並輸入另一種猜測。 進行上述作業之後，本機電腦的 Visual Studio 會在該中斷點停駐，並顯示本機變數等等：
+1. Visual Studio then switches into debugging mode while the script continues to run on the remote computer, providing all the usual [debugging](debugging.md) capabilities. For example, set a breakpoint on the `if guess < number:` line, then switch over to the remote computer and enter another guess. After you do so, Visual Studio on your local computer stops at that breakpoint, shows local variables, and so on:
 
-    ![已叫用中斷點](media/remote-debugging-breakpoint-hit.png)
+    ![Breakpoint is hit](media/remote-debugging-breakpoint-hit.png)
 
-1. 當您停止偵錯時，Visual Studio 會中斷連結程式，而遠端電腦仍會繼續執行該程式。 ptvsd 也會繼續接聽以便附加偵錯工具，因此您可以隨時將其重新附加至處理序。
+1. When you stop debugging, Visual Studio detaches from the program, which continues to run on the remote computer. ptvsd also continues listening for attaching debuggers, so you can reattach to the process again at any time.
 
-### <a name="connection-troubleshooting"></a>連線疑難排解
+### <a name="connection-troubleshooting"></a>Connection troubleshooting
 
-1. 請確定您已針對 [連線類型] 選取 [Python remote (ptvsd)]\(Python 遠端 (ptvsd)) (舊版則選取 [傳輸] 的 [Python 遠端偵錯])。
-1. 請檢查 [連線目標]\(或 [限定詞]) 中的密碼是否完全符合遠端程式碼中的密碼。
-1. 請檢查 [連線目標]\(或 [限定詞]) 中的 IP 位址是否完全符合遠端程式碼中的 IP 位址。
-1. 請檢查遠端電腦上是否已開啟遠端偵錯連接埠，以及連接埠尾碼中是否包含連線目標，例如 `:5678`。
-    - 如果您需要使用不同的連接埠，可以在 `enable_attach` 呼叫中使用 `address` 引數進行指定，如同在 `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))` 中一樣。 在此情況下，請開啟防火牆中的特定連接埠。
-1. 請檢查 `pip3 list` 所傳回的遠端電腦 ptvsd 安裝版本，是否符合您在 Visual Studio 中使用的 Python 工具版本 (如下表所示)。 如果有必要，請更新遠端電腦上的 ptvsd。
+1. Make sure that you've selected **Python remote (ptvsd)** for the **Connection Type** (**Python remote debugging** for **Transport** with older versions.)
+1. Check that the secret in the **Connection Target** (or **Qualifier**) exactly matches the secret in the remote code.
+1. Check that the IP address in the **Connection Target** (or **Qualifier**) matches that of the remote computer.
+1. Check that you're opened the remote debugging port on the remote computer, and that you've included the port suffix in the connection target, such as `:5678`.
+    - If you need to use a different port, you can specify it in the `enable_attach` call using the `address` argument, as in `ptvsd.enable_attach(secret = 'my_secret', address = ('0.0.0.0', 8080))`. In this case, open that specific port in the firewall.
+1. Check that the version of ptvsd installed on the remote computer as returned by `pip3 list` matches that used by the version of the Python tools you're using in Visual Studio in the table below. If necessary, update ptvsd on the remote computer.
 
-    | Visual Studio 版本 | Python 工具/ptvsd 版本 |
+    | Visual Studio Version | Python tools/ptvsd version |
     | --- | --- |
     | 2017 15.3 | 3.2.0 |
     | 2017 15.2 | 3.1.0 |
@@ -137,53 +137,53 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
     | 2012, 2010 | 2.1 |
 
 
-## <a name="securing-the-debugger-connection-with-ssl"></a>使用 SSL 保護偵錯工具連線
+## <a name="securing-the-debugger-connection-with-ssl"></a>Securing the debugger connection with SSL
 
-根據預設，與 ptvsd 遠端偵錯伺服器的連線只有受到密碼的保護，並會以純文字傳遞所有的資料。 如需更安全的連線，ptvsd 支援 SSL，您可依下列方式設定︰
+By default, the connection to the ptvsd remote debug server is secured only by the secret and all data is passed in plain text. For a more secure connection, ptvsd supports SSL, which you set up as follows:
 
-1. 在遠端電腦上，使用 openssl 來產生個別的自我簽署憑證和金鑰檔案：
+1. On the remote computer, generate separate self-signed certificate and key files using openssl:
     
     ```bash
     openssl req -new -x509 -days 365 -nodes -out cert.cer -keyout cert.key
     ```
 
-    當 openssl 出現提示時，請依據您用以連接的項目，在 [一般名稱] 中使用主機名稱或 IP 位址 
+    When prompted, use the hostname or IP address (whichever you use to connect) for the **Common Name** when prompted by openssl.
 
-    (如需詳細資訊，請參閱 Python `ssl` 模組文件中的 [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates) (自我簽署的憑證)。 請注意，這些文件中的命令只會產生單一合併檔案)。
+    (See [Self-signed certificates](http://docs.python.org/3/library/ssl.html#self-signed-certificates) in the Python `ssl` module docs for additional details. Note that the command in those docs generates only a single combined file.)
 
-1. 在程式碼中，使用檔名作為值，將 `enable_attach` 的呼叫修改為包含 `certfile` 和 `keyfile` 引數 (這些引數與標準 `ssl.wrap_socket` Python 函式具有相同的意義)：
+1. In the code, modify the call to `enable_attach` to include `certfile` and `keyfile` arguments using the filenames as the values (these arguments have the same meaning as for the standard `ssl.wrap_socket` Python function):
 
     ```python
     ptvsd.enable_attach(secret='my_secret', certfile='cert.cer', keyfile='cert.key')
     ```
     
-    您也可以在本機電腦上的程式碼檔案進行相同變更，但這個程式碼並不會實際執行，因為不是絕對必要。    
+    You can also make the same change in the code file on the local computer, but because this code isn't actually run, it isn't strictly necessary.    
 
-1. 重新啟動遠端電腦上的 Python 程式，使其準備好開始偵錯。
+1. Restart the Python program on the remote computer, making it ready for debugging.
 
-1. 將憑證新增至安裝 Visual Studio 之 Windows 電腦上的受信任根 CA，以確保通道安全：
+1. Secure the channel by adding the certificate to Trusted Root CA on the Windows computer with Visual Studio:
 
-    1. 將遠端電腦的憑證檔案複製到本機電腦。
-    1. 開啟 [控制台] 並瀏覽至 [系統管理工具] > [Manage computer certificates]\(管理電腦憑證)。
-    1. 在出現的視窗中，展開左側的 [受信任的根憑證授權單位]，以滑鼠右鍵按一下 [憑證]，然後選取 [所有工作] > [匯入...]。
-    1. 瀏覽並選取從遠端電腦複製的 `.cer` 檔案，然後按一下所有對話方塊以完成匯入。
+    1. Copy the certificate file from the remote computer to the local computer.
+    1. Open Control Panel and navigate to **Administrative Tools > Manage computer certificates**.
+    1. In the window that appears, expand **Trusted Root Certification Authorities** on the left side, right-click **Certificates**, and select **All Tasks > Import...**.
+    1. Navigate to and select the `.cer` file copied from the remote computer, then click through the dialogs to complete the import.
 
-1. 現在，將 `tcps://` 作為 [連線目標]\(或 [限定詞]) 的通訊協定，以在 Visual Studio 中重複附加程序，如先前所述。
+1. Repeat the attach process in Visual Studio as described earlier, now using `tcps://` as the protocol for the **Connection Target** (or **Qualifier**).
 
-    ![選擇使用 SSL 進行遠端偵錯傳輸](media/remote-debugging-qualifier-ssl.png)
+    ![Choosing the remote debugging transport with SSL](media/remote-debugging-qualifier-ssl.png)
 
-### <a name="warnings"></a>警告
+### <a name="warnings"></a>Warnings
 
-透過 SSL 連線時，Visual Studio 會提示您潛在的憑證問題，如下所述。 您可以略過警告並繼續進行，但即使通道仍會加密以防竊聽，依然可能受到攔截攻擊。
+Visual Studio prompts you about potential certificate issues when connecting over SSL as described below. You may ignore the warnings and proceed, but although the channel is still be encrypted against eavesdropping it can be open to man-in-the-middle attacks.
 
-1. 如果您看到如下「遠端憑證不受信任」的警告，就表示您未正確將憑證新增至信任的根 CA。 檢查這些步驟，並再試一次。
+1. If you see the "remote certificate is not trusted" warning below, it means you did not properly add the certificate to the Trusted Root CA. Check those steps and try again.
 
-    ![受信任的 SSL 憑證警告](media/remote-debugging-ssl-warning.png)
+    ![SSL certificate trusted warning](media/remote-debugging-ssl-warning.png)
 
-1. 如果您看到如下「遠端憑證名稱與主機名稱不相符」的警告，表示您在建立憑證時，未使用適當的主機名稱或 IP 位址作為 [一般名稱]。
+1. If you see the "remote certificate name does not match hostname" warning below, it means you did not use the proper hostname or IP address as the **Common Name** when creating the certificate.
 
-    ![SSL 憑證主機名稱警告](media/remote-debugging-ssl-warning2.png)
+    ![SSL certificate hostname warning](media/remote-debugging-ssl-warning2.png)
 
 > [!Warning]
-> 目前，若不予理會這些警告，Visual Studio 2017 會停止回應。 請務必在嘗試連線之前，修正所有問題。
+> At present, Visual Studio 2017 hangs when you ignore these warnings. Be sure to correct all problems before attempting to connect.
 
