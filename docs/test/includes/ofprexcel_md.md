@@ -13,14 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 8ec89199c59be2c970c3ac6ab68e675ef7b234d9
+ms.contentlocale: zh-tw
 
 ---
 Microsoft Excel
-
-
-<!--HONumber=Feb17_HO4-->
-
-
