@@ -27,10 +27,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: bc8f895d87b6d76e2894aad799d1e12e687fc80c
-ms.openlocfilehash: de1670af5ecc7cebc94eedecd7cf9a69d44b5e79
+ms.sourcegitcommit: 4836609f24049516b7c6208f367e47e763e89b37
+ms.openlocfilehash: 4cb0fada03f2ff26dde2b24bb1335023d8a8ff08
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/12/2017
 
 ---
 
@@ -120,7 +120,7 @@ At any time, you can temporarily pause or completely stop Live Unit Testing. You
  
 ##  <a name="viewing-coverage-visualization-in-the-editor-as-you-type"></a>Viewing coverage visualization in the editor as you type
 
-Once enabled, Live Unit Testing updates each line of code in the Visual Studio editor to show you whether the code you're writing is covered by unit tests and whether the tests that cover it are passing.  The following figure shows lines of code with both passing and failing tests, as well as lines of code that are not covered by tests. Lines decorated with a green "✓" are covered only by passing tests, lines decorated with a red  "🞩" are covered by one or more failing tests, and lines decorated by a blue  "➖" are not covered by any test.
+Once enabled, Live Unit Testing updates each line of code in the Visual Studio editor to show you whether the code you're writing is covered by unit tests and whether the tests that cover it are passing.  The following figure shows lines of code with both passing and failing tests, as well as lines of code that are not covered by tests. Lines decorated with a green "✓" are covered only by passing tests, lines decorated with a red "x" are covered by one or more failing tests, and lines decorated by a blue  "➖" are not covered by any test.
 
   ![Image](./media/lut-codewindow.png)
 
