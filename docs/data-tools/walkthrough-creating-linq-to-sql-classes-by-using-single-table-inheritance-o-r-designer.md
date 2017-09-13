@@ -30,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 320889e9f010e89e0fafabac5e21a7a2b8913046
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: fb3f1137ce03f356374600196a3978ff02143438
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Walkthrough: Creating LINQ to SQL Classes by Using Single-Table Inheritance (O/R Designer)
@@ -107,18 +107,17 @@ The [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visu
 ## <a name="create-a-new-project"></a>Create a New Project  
  Now that you have created the table, create a new project to demonstrate configuring inheritance.  
   
-#### <a name="to-create-the-new-windows-application"></a>To create the new Windows Application  
+#### <a name="to-create-the-new-windows-forms-application"></a>To create the new Windows Forms Application  
   
-1.  From the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project **InheritanceWalkthrough**.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **InheritanceWalkthrough**, and then choose **OK**. 
   
-    > [!NOTE]
-    >  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is supported in Visual Basic and C# projects. Create the new project in one of these languages.  
-  
-3.  Click the **Windows Forms Application** template and then click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
-  
-4.  The InheritanceWalkthrough project is created and added to **Solution Explorer**.  
+     The **InheritanceWalkthrough** project is created, and added to **Solution Explorer**.  
   
 ## <a name="add-a-linq-to-sql-classes-file-to-the-project"></a>Add a LINQ to SQL Classes File to the Project  
   

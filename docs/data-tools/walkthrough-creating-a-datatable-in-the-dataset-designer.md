@@ -32,10 +32,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 4b30581ade0ee26ac859b6c5ab1ed820150e4a81
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: f238249749a46879a50e315d03556756afe5983f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>Walkthrough: Creating a DataTable in the Dataset Designer
@@ -43,7 +43,7 @@ This walkthrough explains how to create a <xref:System.Data.DataTable> (without 
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a new Windows Application project  
+-   Creating a new Windows Forms Application project  
   
 -   Adding a new dataset to the application  
   
@@ -53,19 +53,19 @@ This walkthrough explains how to create a <xref:System.Data.DataTable> (without 
   
 -   Setting the primary key for the table  
   
-## <a name="creating-a-new-windows-application"></a>Creating a New Windows Application  
+## <a name="creating-a-new-windows-forms-application"></a>Creating a New Windows Forms Application  
   
-#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows Application project  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms Application project  
   
-1.  From the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Choose a programming language in the **Project Types** pane.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **DataTableWalkthrough**, and then choose **OK**. 
   
-3.  Click **Windows Application** in the **Templates** pane.  
-  
-4.  Name the project `DataTableWalkthrough`, and then click **OK**.  
-  
-     Visual Studio adds the project to **Solution Explorer** and displays **Form1** in the designer.  
+     The **DataTableWalkthrough** project is created, and added to **Solution Explorer**.  
   
 ## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
   

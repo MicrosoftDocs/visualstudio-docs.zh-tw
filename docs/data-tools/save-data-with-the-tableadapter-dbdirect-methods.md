@@ -16,8 +16,8 @@ helpviewer_keywords:
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 caps.latest.revision: 14
-author: mikeblome
-ms.author: mblome
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: b07c47b32fd32f85a7441332ec29ca80e8a21c0c
-ms.openlocfilehash: deb7bc8f1fd15153555e1f94471b432ea93b00d0
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: aac04197ee35aa613f70f09f653bbde988dbe995
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Save data with the TableAdapter DBDirect methods
@@ -46,7 +46,7 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
  During this walkthrough, you will learn how to:  
   
--   Create a new **Windows Application**.  
+-   Create a new **Windows Forms Application**.  
   
 -   Create and configure a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
@@ -61,16 +61,18 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 -   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## <a name="create-a-windows-application"></a>Create a Windows application  
- The first step is to create a **Windows Application**.  
+## <a name="create-a-windows-forms-application"></a>Create a Windows Forms application  
+ The first step is to create a **Windows Forms Application**.  
   
 #### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  In Visual Studio, on the **File** menu, create a new **Project**.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project **TableAdapterDbDirectMethodsWalkthrough**.  
-  
-3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **TableAdapterDbDirectMethodsWalkthrough**, and then choose **OK**. 
   
      The **TableAdapterDbDirectMethodsWalkthrough** project is created and added to **Solution Explorer**.  
   
@@ -130,7 +132,8 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `InsertButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]  [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
+     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
+     [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
   
 #### <a name="to-add-code-to-update-records-in-the-database"></a>To add code to update records in the database  
   
@@ -138,7 +141,8 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `UpdateButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]  [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
+     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
+     [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
   
 #### <a name="to-add-code-to-delete-records-from-the-database"></a>To add code to delete records from the database  
   
@@ -146,7 +150,8 @@ This walkthrough provides detailed instructions for running SQL statements direc
   
 2.  Replace the `DeleteButton_Click` event handler with the following code:  
   
-     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]  [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
+     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
+     [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
   
 ## <a name="run-the-application"></a>Run the application  
   

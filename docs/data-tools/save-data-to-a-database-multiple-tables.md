@@ -35,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 9f037c561945a964ce2f8679b1b85bf94f82b17f
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: d1da14d43c3794ad2f114209b7166d37502c358e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Save data to a database (multiple tables)
@@ -51,7 +51,7 @@ One of the most common scenarios in application development is to display data o
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a new **Windows Application** project.  
+-   Creating a new **Windows Forms Application** project.  
   
 -   Creating and configuring a data source in your application with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
   
@@ -68,16 +68,18 @@ One of the most common scenarios in application development is to display data o
   
 -   Access to the Northwind sample database.  For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## <a name="create-the-windows-application"></a>Create the Windows application  
- The first step is to create a **Windows Application**. Assigning a name to the project is optional during this step, but we'll give it a name because we're planning on saving it later.  
+## <a name="create-the-windows-forms-application"></a>Create the Windows Forms application  
+ The first step is to create a **Windows Forms Application**. Assigning a name to the project is optional during this step, but we'll give it a name because we'll save the project later.  
   
-#### <a name="to-create-the-new-windows-application-project"></a>To create the new Windows application project  
+#### <a name="to-create-the-new-windows-forms-application-project"></a>To create the new Windows forms application project  
   
-1.  On the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project `UpdateMultipleTablesWalkthrough`.  
-  
-3.  Select **Windows Application**, and then select **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **UpdateMultipleTablesWalkthrough**, and then choose **OK**. 
   
      The **UpdateMultipleTablesWalkthrough** project is created and added to **Solution Explorer**.  
   
@@ -147,7 +149,8 @@ One of the most common scenarios in application development is to display data o
   
 2.  Replace the code in the event handler to call the `Update` methods of the related TableAdapters. The following code first creates three temporary data tables to hold the updated information for each <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState.Deleted>, <xref:System.Data.DataRowState.Added>, and <xref:System.Data.DataRowState.Modified>). Then updates are run in the correct order. The code should look like the following:  
   
-     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]  [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
+     [!code-vb[VbRaddataSaving#10](../data-tools/codesnippet/VisualBasic/save-data-to-a-database-multiple-tables_1.vb)]
+     [!code-csharp[VbRaddataSaving#10](../data-tools/codesnippet/CSharp/save-data-to-a-database-multiple-tables_1.cs)]  
   
 ## <a name="test-the-application"></a>Test the application  
   

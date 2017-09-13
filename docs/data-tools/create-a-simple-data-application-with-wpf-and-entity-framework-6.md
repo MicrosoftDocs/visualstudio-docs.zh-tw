@@ -19,10 +19,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
-ms.openlocfilehash: 125ab862b7b96b5d21657cb32046edadad58b86f
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: aa7d2f9274b9dd9ee39f0d930471f65e7784aca4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Create a simple data application with WPF and Entity Framework 6
@@ -41,7 +41,7 @@ This example uses SQL Server Express LocalDB and the Northwind sample database. 
 
        A query editor window opens.  
 
-    2. Copy the [Northwind Transact-SQL script](../data-tools/samples/northwind.sql) to your clipboard. This T-SQL script creates the Northwind database from scratch and populates it with data.  
+    2. Copy the [Northwind Transact-SQL script](https://raw.githubusercontent.com/MicrosoftDocs/visualstudio-docs-pr/master/docs/data-tools/samples/northwind.sql?token=AXuuSumpecuYdo6-SBYQyn1O0ZHI88uEks5ZwBYdwA%3D%3D) to your clipboard. This T-SQL script creates the Northwind database from scratch and populates it with data.  
 
     3. Paste the T-SQL script into the query editor, and then choose the **Execute** button.  
 
