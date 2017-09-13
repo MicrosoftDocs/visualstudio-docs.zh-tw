@@ -11,10 +11,10 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.translationtype: HT
-ms.sourcegitcommit: bc8f895d87b6d76e2894aad799d1e12e687fc80c
-ms.openlocfilehash: c9bd9746a925b6f8357ea66a5c91b0fed56ad44b
+ms.sourcegitcommit: 0923951068b6da36e6b50dea504baf9c9db1f564
+ms.openlocfilehash: 8d5e7a40854157c49464875edfbbdfe03f41bb8b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="introducing-live-unit-testing"></a>Introducing Live Unit Testing
@@ -35,9 +35,9 @@ To learn more about Live Unit Testing:
  
 - Read the [Live Unit Testing FAQ](live-unit-testing-faq.md) to learn what's new in Live Unit Testing, as well as to read about tips and techniques for using Live Unit Testing.
  
-- Watch the Channel 9 video for a overview of Live Unit Testing and its features. </br>
+- Watch the Channel 9 video for a overview of Live Unit Testing and its features. </p>
 
-   <iframe src="https://sec.ch9.ms/ch9/940d/4b7943b2-c6ca-4cb8-9ff4-b0283463940d/VS2017LaunchT105_high.mp4" width="960" height="540" allowFullScreen frameBorder="0"></iframe> 
+   > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Related resources
 [Code testing tools](https://www.visualstudio.com/vs/testing-tools/)   
