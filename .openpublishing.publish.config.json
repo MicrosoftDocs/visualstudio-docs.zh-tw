@@ -1,8 +1,5 @@
 {
   "build_entry_point": "docs",
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
-  "continue_with_document_error": true,
   "docsets_to_publish": [
     {
       "docset_name": "docs",
@@ -51,9 +48,11 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
-    "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.zh-tw",
-"git_repository_branch_open_to_public_contributors": "live",
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.zh-tw",
+  "git_repository_branch_open_to_public_contributors": "live",
+  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -77,9 +76,11 @@
       "branch_mapping": {
         "live": "live",
         "master": "master"
-       }
+      }
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false
 }
