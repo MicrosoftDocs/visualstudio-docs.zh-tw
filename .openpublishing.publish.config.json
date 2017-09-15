@@ -53,6 +53,9 @@
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "contribution_branch_mappings":{
+    "master-sxs": "master"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
