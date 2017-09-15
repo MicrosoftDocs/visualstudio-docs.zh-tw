@@ -36,7 +36,7 @@ ms.lasthandoff: 07/12/2017
 ## <a name="create-an-r-project"></a>建立 R 專案
 
 1. 啟動 Visual Studio。
-1. 選擇 [檔案] > [新增] > [專案...](Ctrl+Shift+N)
+1. 選擇 [檔案] > [新增] > [專案...]\(Ctrl+Shift+N)
 1. 從 [範本] > [R] 下選取 [R 專案]、提供專案名稱和位置，然後選取 [確定]：
 
    ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
@@ -171,7 +171,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
 
-1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。
+1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。\
 
 若要深入資訊，請參閱[偵錯](debugging.md)和[變數總管](variable-explorer.md)。
 
