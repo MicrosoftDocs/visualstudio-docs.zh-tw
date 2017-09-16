@@ -12,10 +12,10 @@ helpviewer_keywords:
 author: rpetrusha
 ms.author: ronpet
 ms.translationtype: HT
-ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
-ms.openlocfilehash: f22758b913e4cd1208afba17de09f0dbd646ea19
+ms.sourcegitcommit: bc8f895d87b6d76e2894aad799d1e12e687fc80c
+ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/09/2017
 
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Get started with Live Unit Testing in Visual Studio
@@ -25,9 +25,9 @@ When you enable Live Unit Testing in a Visual Studio solution, Live Unit Testing
 Live Unit Testing can be used to test solutions that target either the .NET Framework or .NET Core. In this tutorial, you'll learn to use Live Unit Testing by creating a simple class library that targets the .NET Standard, and you'll create an MSTest project that targets .NET Core to test it.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
-The complete C# solution can be downloaded from the [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/utilitylibraries/) repo on GitHub.
+The complete C# solution can be downloaded from the [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) repo on GitHub.
 # <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
-The complete Visual Basic solution can be downloaded from the [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/utilitylibraries/) repo on GitHub.
+The complete Visual Basic solution can be downloaded from the [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) repo on GitHub.
 
 ---
 

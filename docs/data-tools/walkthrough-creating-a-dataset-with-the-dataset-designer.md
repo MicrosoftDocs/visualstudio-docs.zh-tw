@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 361c02ced700557140b8d0f0a0f90a37d68169f0
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 4dca7e32af0f3c24542a7a069ac74f4da7d114b1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Walkthrough: Creating a Dataset with the Dataset Designer
@@ -45,7 +45,7 @@ In this walkthrough you will create a dataset using the **Dataset Designer**. It
   
  Tasks illustrated in this walkthrough include:  
   
--   Creating a new **Windows Application** project.  
+-   Creating a new **Windows Forms Application** project.  
   
 -   Adding an empty **DataSet** item to the project.  
   
@@ -62,19 +62,19 @@ In order to complete this walkthrough, you need:
   
 -   Access to the Northwind sample database (SQL Server or Access version). For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
   
-## <a name="creating-a-new-windows-application-project"></a>Creating a New Windows Application Project  
+## <a name="creating-a-new-windows-forms-application-project"></a>Creating a New Windows Forms Application Project  
   
-#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows Application project  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms Application project  
   
-1.  From the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Choose a programming language in the **Project Types** pane.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **DatasetDesignerWalkthrough**, and then choose **OK**. 
   
-3.  Click **Windows Application** in the **Templates** pane.  
-  
-4.  Name the project `DatasetDesignerWalkthrough`, and then click **OK**.  
-  
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] will add the project to **Solution Explorer** and display a new form in the designer.  
+     The **DatasetDesignerWalkthrough** project is created, and added to **Solution Explorer**.  
   
 ## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
   

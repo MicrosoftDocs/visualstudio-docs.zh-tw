@@ -30,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: f6c28527f711b76a85c9c2f0cafceff19c7a1a1f
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 414b46a6aff263c9295c9233f2adb292279f6832
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Walkthrough: Customizing the insert, update, and delete behavior of entity classes
@@ -74,18 +74,17 @@ Because you will be working with [!INCLUDE[vbtecdlinq](../data-tools/includes/vb
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-a-new-windows-application-project-that-contains-linq-to-sql-classes"></a>To create a new Windows Application project that contains LINQ to SQL classes  
+#### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>To create a new Windows Forms Application project that contains LINQ to SQL classes  
   
-1.  From the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project **UpdatingwithSProcsWalkthrough**.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **UpdatingWithSProcsWalkthrough**, and then choose **OK**. 
   
-    > [!NOTE]
-    >  The [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] is supported in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] and C# projects. Therefore, create the new project in one of these languages.  
-  
-3.  Click the **Windows Forms Application** template and click **OK**. For more information, see [Client Applications](/dotnet/framework/develop-client-apps).  
-  
-     The UpdatingwithSProcsWalkthrough project is created and added to **Solution Explorer**.  
+     The **UpdatingWithSProcsWalkthrough** project is created, and added to **Solution Explorer**.  
   
 4.  On the **Project** menu, click **Add New Item**.  
   

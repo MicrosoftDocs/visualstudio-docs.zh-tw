@@ -55,10 +55,10 @@ ms.lasthandoff: 06/23/2017
  您可以使用下列選項，來選取要顯示或修改的組態和平台。  
 
  **組態**  
- 指定要顯示或修改的組態設定。 這些設定包括 [偵錯] (預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。  
+ 指定要顯示或修改的組態設定。 這些設定包括 [偵錯]\ (預設值)、[發行]、[所有組態] 或使用者定義的組態。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。  
 
  **平台**  
- 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU] ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。  
+ 指定要顯示或修改的平台設定。 這些設定包括 [任何 CPU]\ ([!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)] 應用程式的預設值)、[x64]、[ARM]、[x86] 或使用者定義的平台。 如需詳細資訊，請參閱[如何：在 Visual Studio 中設定偵錯和發行組態](../../debugger/how-to-set-debug-and-release-configurations.md)。  
 
 ## <a name="general-page"></a>一般頁面  
  您可以使用下列選項，來設定專案的一般屬性。  

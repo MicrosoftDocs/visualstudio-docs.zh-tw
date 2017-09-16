@@ -37,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: deabce254e91692e527b7c51ad6f2e2f7da7485d
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 2108f18ae65e5ea5e6d12bcfc09aa1c5a1d3d4e3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="handle-a-concurrency-exception"></a>Handle a concurrency exception
@@ -48,7 +48,7 @@ Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised wh
   
  This walkthrough takes you through the following process:  
   
-1.  Create a new **Windows Application** project.  
+1.  Create a new **Windows Forms Application** project.  
   
 2.  Create a new dataset based on the Northwind `Customers` table.  
   
@@ -71,19 +71,19 @@ Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised wh
 >  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition that you're using. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
   
 ## <a name="create-a-new-project"></a>Create a new project  
- You begin your walkthrough by creating a new Windows application.  
+ You begin your walkthrough by creating a new Windows Forms application.  
   
-#### <a name="to-create-a-new-windows-application-project"></a>To create a new Windows application project  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms application project  
   
-1.  On the **File** menu, create a new project.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  In the **Project Types** pane, select a programming language.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **ConcurrencyWalkthrough**, and then choose **OK**. 
   
-3.  In the **Templates** pane, select **Windows Application**.  
-  
-4.  Name the project `ConcurrencyWalkthrough`, and then select **OK**.  
-  
-     Visual Studio adds the project to **Solution Explorer** and displays a new form in the designer.  
+     The **ConcurrencyWalkthrough** project is created and added to **Solution Explorer**, and a new form opens in the designer.  
   
 ## <a name="create-the-northwind-dataset"></a>Create the Northwind dataset  
  In this section, you create a dataset named `NorthwindDataSet`.  
@@ -168,11 +168,13 @@ The user is then able to either overwrite the database with the proposed version
   
 1.  Add the following code below the `Form1_Load` method:  
   
-     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]  [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]  
+     [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
+     [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]  
   
 2.  Replace the `CustomersBindingNavigatorSaveItem_Click` method to call the `UpdateDatabase` method so it looks like the following:  
   
-     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]  [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
+     [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
+     [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
   
 ### <a name="display-choices-to-the-user"></a>Display choices to the user  
  The code you just wrote calls the `CreateMessage` procedure to display error information to the user. For this walkthrough, you use a message box to display the different versions of the record to the user. This enables the user to choose whether to overwrite the record with the changes or cancel the edit. Once the user selects an option (clicks a button) on the message box, the response is passed to the `ProcessDialogResult` method.  
@@ -181,7 +183,8 @@ The user is then able to either overwrite the database with the proposed version
   
 -   Create the message by adding the following code to the **Code Editor**. Enter this code below the `UpdateDatabase` method.  
   
-     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]  [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]  
+     [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
+     [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]  
   
 ### <a name="process-the-users-response"></a>Process the user's response  
  You also need code to process the user's response to the message box. The options are either to overwrite the current record in the database with the proposed change, or abandon the local changes and refresh the data table with the record that's currently in the database. If the user chooses yes, the <xref:System.Data.DataTable.Merge%2A> method is called with the *preserveChanges* argument set to `true`. This causes the update attempt to be successful, because the original version of the record now matches the record in the database.  
@@ -190,7 +193,8 @@ The user is then able to either overwrite the database with the proposed version
   
 -   Add the following code below the code that was added in the previous section.  
   
-     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]  [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]  
+     [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
+     [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]  
   
 ## <a name="test-the-form"></a>Test the form  
  You can now test the form to make sure it behaves as expected. To simulate a concurrency violation you need to change data in the database after filling the NorthwindDataSet.  

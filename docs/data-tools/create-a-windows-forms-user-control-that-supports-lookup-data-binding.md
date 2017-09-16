@@ -34,10 +34,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 39e7446abf0f7acb7de8d909af29858e6fd507c0
+ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
+ms.openlocfilehash: 7eabf0cbf876ec6dbca40ffdca92ce96b91a569c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/13/2017
 
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>Create a Windows Forms user control that supports lookup data binding
@@ -57,7 +57,7 @@ When displaying data on Windows Forms, you can choose existing controls from the
   
  During this walkthrough, you will learn how to:  
   
--   Create a new **Windows Application**.  
+-   Create a new **Windows Forms Application**.  
   
 -   Add a new **User Control** to your project.  
   
@@ -76,16 +76,18 @@ When displaying data on Windows Forms, you can choose existing controls from the
   
 -   Access to the Northwind sample database.  
   
-## <a name="create-a-windows-application"></a>Create a Windows Application  
- The first step is to create a **Windows Application**.  
+## <a name="create-a-windows-forms-application"></a>Create a Windows Forms Application  
+ The first step is to create a **Windows Forms Application**.  
   
 #### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
   
-1.  In Visual Studio, from the **File** menu, create a new **Project**.  
+1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
   
-2.  Name the project **LookupControlWalkthrough**.  
-  
-3.  Select **Windows  Forms Application**, and click **OK**.  
+2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+
+3. In the middle pane, select the **Windows Forms App** project type.  
+
+4. Name the project **LookupControlWalkthrough**, and then choose **OK**. 
   
      The **LookupControlWalkthrough** project is created, and added to **Solution Explorer**.  
   
@@ -115,7 +117,8 @@ When displaying data on Windows Forms, you can choose existing controls from the
   
 2.  Replace the code in the `LookupBox` with the following:  
   
-     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]  [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
+     [!code-vb[VbRaddataDisplaying#5](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.vb)]
+     [!code-csharp[VbRaddataDisplaying#5](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-lookup-data-binding_1.cs)]  
   
 3.  From the **Build** menu, choose **Build Solution**.  
   

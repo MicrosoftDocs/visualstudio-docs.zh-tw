@@ -39,7 +39,7 @@ ms.lasthandoff: 06/30/2017
 ## <a name="what-can-you-do-with-the-visual-studio-ide"></a>您可以運用 Visual Studio IDE 來做什麼？
 您是否想要建立適用於 Android 手機的應用程式？ 您可以辦得到。 使用 C++ 來建立最頂尖的遊戲，如何？ 您也可以辦得到，而且還能做得更多。 Visual Studio 可提供範本來協助您建立網站、遊戲、傳統型應用程式、行動應用程式、適用於 Office 的應用程式等等。
 
-![Visual Studio 專案](~/ide/media/VSIDE_Tour_Projects_List.png)
+![Visual Studio 專案](../ide/media/VSIDE_Tour_Projects_List.png)
 
 或者，您可以直接開啟從幾乎任何來源取得的幾乎任何程式碼並開始工作。 在 GitHub 上看到您喜歡的專案嗎？ 只要直接複製該儲存機制、在 Visual Studio 中開啟它，然後開始撰寫程式碼即可！
 
@@ -57,7 +57,7 @@ Web 推動我們的現代化世界，而 Visual Studio 則可協助您撰寫適�
 ### <a name="write-code-in-a-world-class-editing-environment"></a>在世界級的編輯環境中撰寫程式碼
 Visual Studio 可透過語法色彩標示、陳述式完成、IntelliSense (所選程式碼元素的快顯描述)、程式碼大綱、設定偵錯中斷點等功能，協助您快速且輕鬆地撰寫程式碼。
 
-![JavaScript 程式碼範例](~/ide/media/vside_tour_javascript_example.gif)
+![JavaScript 程式碼範例](../ide/media/vside_tour_javascript_example.gif)
 
 若要深入了解，請參閱[在程式碼和文字編輯器中撰寫程式碼](https://docs.microsoft.com/visualstudio/ide/writing-code-in-the-code-and-text-editor)。
 
@@ -69,7 +69,7 @@ Visual Studio 還可協助您進行更多的工作。 如需更完整的清單�
 
 Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇並安裝「工作負載」，這些通常是您慣用的程式設計語言或平台所需的幾組功能。 此策略有助於將 Visual Studio 安裝項的資源使用量降到比以往低，這意謂著它的安裝和更新速度也更快。
 
-![Visual Studio 安裝程式](~/ide/media/vside_tour_install_dialog.png)
+![Visual Studio 安裝程式](../ide/media/vside_tour_install_dialog.png)
 
 除了提升安裝效能之外，Visual Studio 2017 中也做了許多改進來改善整體 IDE 啟動和解決方案載入時間。 例如，選取新的 [輕量型解決方案載入] 功能 (位於主功能表的 [工具] > [選項] > [專案和方案] 底下) 可讓較大型的方案更快載入。 若要深入了解如何在您的系統上設定 Visual Studio，請參閱 [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio)。
 
@@ -83,25 +83,25 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 
 1. 開啟 Visual Studio。 在功能表上，依序選擇 [檔案]、[新增]、[專案]。 (使用預設的專案值)。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_NewProject1.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_NewProject1.png)
 
   或者，您可以使用起始頁來建立新的專案。 如需詳細資訊，請參閱 [Harness the Power of the Redesigned Start Page](https://blogs.msdn.microsoft.com/visualstudio/2016/11/29/harness-the-power-of-the-redesigned-start-page/) (利用重新設計之起始頁的強大功能) (部落格)。
 
 1. [新增專案] 對話方塊會顯示數個專案範本。 請依序選擇 [Visual C#] 底下的 [Windows 通用] 分類、[空白應用程式 (通用 Windows)] 範本，然後選擇 [確定] 按鈕。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_NewProject2.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_NewProject2.png)
 
   這會使用 Visual C# 和 XAML 作為程式設計語言，來建立新的空白通用 Windows 應用程式專案。 請在 Visual Studio 為您設定專案時稍候一下。 如果提示您輸入任何資訊，目前請先接受預設值。
 
 1. 不久之後，您應該就會看到類似以下的螢幕擷取畫面。 您的專案檔會列在右邊一個名為 [方案總管] 的視窗中。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_NewProject3.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_NewProject3.png)
 
 1. 在 [方案總管] 中，選擇 MainPage.xaml 檔案旁邊的黑色小三角形來展開它，然後您應該會看到底下有一個 MainPage.xaml.cs 檔案。 請選擇此檔案 (當中包含 C# 程式碼) 來開啟它。
 
   MainPage.xaml.cs 中的 C# 程式碼會顯示在畫面左邊的程式碼編輯器中。 請注意，程式碼語法會自動標示色彩來表示不同類型的程式碼，例如陳述式或註解。 此外，程式碼中的垂直小虛線會指出那些大括號彼此成對，而行號則可協助您稍後找出程式碼。 您可以選擇帶方框的小負號來摺疊或展開程式碼。 此程式碼大綱功能可讓您隱藏您不需要的程式碼，有助於讓畫面變得較為簡潔。
 
-  ![](~/ide/media/VSIDE_Tour_NewProject3a.png)
+  ![](../ide/media/VSIDE_Tour_NewProject3a.png)
 
   還有其他可用的功能表和工具視窗，但讓我們目前先繼續進行操作。
 
@@ -111,29 +111,29 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 
 1. 展開 [通用 XAML 控制項] 區段，然後將 [按鈕] 控制項拖曳到表單的大致中間位置。 (確切的位置並無關緊要)。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_Toolbox.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_Toolbox.png)
 
   當您完成時，應該會看到類似以下的畫面。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_XAMLButton.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_XAMLButton.png)
 
   該按鈕在設計工具上，而其基礎程式碼 (已醒目提示) 則會自動新增到設計工具的 XAML 程式碼中。
 
 1. 讓我們來變更部分 XAML 程式碼。 請將按鈕程式碼中的文字從 `Button` 重新命名為 `Hello!`。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_XAMLButton2.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_XAMLButton2.png)
 
-1. 現在，啟動應用程式。 您可以透過選擇工具列上的 [開始] (![[開始] 按鈕](~/ide/media/VSIDE_StartButton.png)) 按鈕，或是選擇 F5 鍵或在功能表上選擇 [偵錯] > [開始偵錯]，來執行這項操作。
+1. 現在，啟動應用程式。 您可以透過選擇工具列上的 [開始] (![[開始] 按鈕](../ide/media/VSIDE_StartButton.png)) 按鈕，或是選擇 F5 鍵或在功能表上選擇 [偵錯] > [開始偵錯]，來執行這項操作。
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_RunButton.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_RunButton.png)
 
   應用程式會開始其建置程序，而狀態訊息則會顯示在 [輸出] 視窗中。 不久之後，您應該就會看到包含您按鈕的表單出現。 您現在已有一個執行中的應用程式！
 
-  ![螢幕擷取畫面](~/ide/media/VSIDE_Tour_RunProject.png)
+  ![螢幕擷取畫面](../ide/media/VSIDE_Tour_RunProject.png)
 
   當然，它目前還執行不了太多工作，但您稍後可以視需要為它新增更多功能。
 
-1. 當您執行完程式時，請選擇工具列上的 [停止] (![[停止] 按鈕](~/ide/media/VSIDE_StopButton.png)) 按鈕來停止它。
+1. 當您執行完程式時，請選擇工具列上的 [停止]\(![[停止] 按鈕](../ide/media/VSIDE_StopButton.png)) 按鈕來停止它。
 
 讓我們來摘要重述一下您到目前為止已完成的部分：您已在 Visual Studio 中建立新的 C# Windows 通用專案、檢視其程式碼、將控制項新增到設計工具中、變更部分 XAML 程式碼，然後執行該專案。 雖然此範例的程序已簡化，但仍展示了 Visual Studio IDE 的一些常用組件，這些是您在開發自己的應用程式時將使用的組件。 如果您想要此範例的進一步詳細資料，請參閱[建立 "Hello, world" 應用程式 (XAML)](https://docs.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-xaml-universal)。
 
@@ -141,7 +141,7 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 ## <a name="debug-test-and-improve-your-code"></a>偵錯、測試及改善您的程式碼
 沒有任何程式碼會始終以完美狀態執行。 當您撰寫程式碼時，必須執行它並測試它，以找出錯誤 (bug) 及改善效能。 Visual Studio 的先進偵錯系統可讓您針對在本機專案、遠端裝置或模擬器 (例如 Android 或 Windows Phone 裝置的模擬器) 上執行的程式碼進行偵錯。 您可以一次一個逐步執行程式碼陳述式，並隨時檢查變數，也可以逐步執行多執行緒應用程式，您也可以設定當指定的條件為真時才會叫用的中斷點。 您可以在程式碼執行時，監視變數的值等等。 這些全部都可以在程式碼編輯器本身中管理，如此您就不需要離開您的程式碼。
 
-![偵錯](~/ide/media/VSIDE_Tour_Debugging.png)
+![偵錯](../ide/media/VSIDE_Tour_Debugging.png)
 
 在測試方面，Visual Studio 提供單元測試、IntelliTest、負載和效能測試等。 若要取得有關 Visual Studio 偵錯程序的更多詳細資料，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。 若要深入了解測試，請參閱[測試工具](https://www.visualstudio.com/vs/testing-tools/)。 若要深入了解如何改善您應用程式的效能，請參閱[分析功能導覽](../profiling/profiling-feature-tour.md)。
 
@@ -162,11 +162,11 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 
 - [快速啟動](https://docs.microsoft.com/en-us/visualstudio/ide/reference/quick-launch-environment-options-dialog-box)搜尋方塊是一個可讓您在 Visual Studio 中快速找到所需項目的絕佳方式。 只要開始輸入您要尋找的任何項目的名稱，Visual Studio 就會提供選項來將您引導至您確實想要去的地方。 [快速啟動] 也會顯示連結，這些連結可啟動任何「工作負載」或「個別元件」的「Visual Studio 安裝程式」。
 
-  ![[快速啟動] 搜尋方塊](~/ide/media/VSIDE_Tour_QuickLaunch.png)
+  ![[快速啟動] 搜尋方塊](../ide/media/VSIDE_Tour_QuickLaunch.png)
 
 -  [重構](../ide/refactoring-in-visual-studio.md)包含一些作業，例如智慧型的變數重新命名、將選取的多行程式碼移動到個別函式、將程式碼移到其他位置、重新排序函式參數等等。
 
- ![重構](~/ide/media/VSIDE_refactor.png)  
+ ![重構](../ide/media/VSIDE_refactor.png)  
 
 -  **IntelliSense** 為一種涵蓋一組常用功能的概括性詞彙，會直接在編輯器中顯示有關您程式碼的類型資訊，而在某些情況下會為您撰寫一些程式碼。 就像內嵌在編輯器中的基本文件，讓您無需在個別的 [說明] 視窗中查閱類型資訊。 IntelliSense 功能會因語言而異。 如需詳細資訊，請參閱 [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md)、[Visual C++ Intellisense](../ide/visual-cpp-intellisense.md)、[JavaScript IntelliSense](../ide/javascript-intellisense.md)、[Visual Basic 特定的 IntelliSense](../ide/visual-basic-specific-intellisense.md)。 下圖顯示一些可用的 IntelliSense 功能：  
 
@@ -174,11 +174,11 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 
 -  「波浪線」是紅色的波浪底線，可在您輸入程式碼時，針對錯誤或潛在的問題即時提出警示。 這可讓您立即修正它們，而不需等到編譯或執行階段才發現錯誤。 如果您將滑鼠停留在波浪線，則您會看到有關此錯誤的其他資訊。 左邊界也可能會出現燈泡與修正錯誤的建議。 如需詳細資訊，請參閱[執行燈泡提示的快速動作](../ide/perform-quick-actions-with-light-bulbs.md)。  
 
- ![波浪線](~/ide/media/vs2017_squiggle.png)  
+ ![波浪線](../ide/media/vs2017_squiggle.png)  
 
 -  您可以在文字編輯器操作功能表上開啟[呼叫階層](../ide/reference/call-hierarchy.md)視窗，以顯示呼叫插入點 (caret) 底下方法及被該方法呼叫的方法。
 
- ![呼叫階層視窗](~/ide/media/VSIDE_call_hierarchy.png)
+ ![呼叫階層視窗](../ide/media/VSIDE_call_hierarchy.png)
 
 -  [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) 可讓您尋找程式碼、已連結的 Bug、工作項目、程式碼檢閱和單元測試的參考和變更，而不需離開編輯器。
 
@@ -186,11 +186,11 @@ Visual Studio 現在比以往更輕巧！ 新模組安裝程式可讓您選擇�
 
 -  [查看定義] [](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md) 視窗會顯示方法或類型的定義內嵌，而不用離開您目前的內容。  
 
- ![查看定義](~/ide/media/VSIDE_peek_definition.png)
+ ![查看定義](../ide/media/VSIDE_peek_definition.png)
 
 -  [移至定義]  內容功能表選項會讓您直接進入定義函式或物件的位置。 以滑鼠右鍵在編輯器中按一下，還有其他巡覽命令可供使用。
 
- ![移至定義](~/ide/media/VSIDE_go_to_definition.png)
+ ![移至定義](../ide/media/VSIDE_go_to_definition.png)
 
 - [物件瀏覽器](http://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)這個相關工具可讓您檢查系統上的 .NET 或「Windows 執行階段」組件，以查看它們所包含的型別，以及這些型別所包含的成員 (屬性、方法、事件)。
 
@@ -206,7 +206,7 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 如果您在網路上有 Visual Studio Team Services 帳戶或 Team Foundation Server，您便可以透過 Visual Studio 中的 [Team Explorer] 視窗與其連接。 在這個視窗中，您可以在原始檔控制簽入或簽出程式碼、管理工作項目、啟動建置和存取小組聊天室及工作區。 您可以從 [快速啟動] 方塊開啟 [Team Explorer]，也可以從主功能表的 [檢視] > [Team Explorer] 或從 [小組] > [管理連接] 來開啟它。
 下圖顯示裝載於 VSTS 中之方案的 Team Explorer 視窗。
 
-![Visual Studio Team Explorer](~/ide/media/vs2017_teamexplorer.png)  
+![Visual Studio Team Explorer](../ide/media/vs2017_teamexplorer.png)  
 
 如需有關 Visual Studio Team Services 的詳細資訊，請參閱 [Visual Studio Team Services](https://www.visualstudio.com/team-services/)。 如需 Team Foundation Server 的詳細資訊，請參閱 [Team Foundation Server](https://www.visualstudio.com/products/tfs-overview-vs)。
 
@@ -214,13 +214,13 @@ Team Foundation Server (TFS) 是 Visual Studio 的應用程式生命週期管理
 ## <a name="connect-to-services-databases-and-cloud-based-resources"></a>連接至服務、資料庫及雲端式資源
 雲端對現今的線上世界至關重要，而 Visual Studio 則提供您運用雲端的方法。 例如，「已連接服務」功能可讓您將應用程式連接至服務。 此外，您的應用程式還可以使用它來將其資料儲存在 Azure 儲存體上。
 
-![已連接服務](~/ide/media/VSIDE_Tour_Connected_Services.png)
+![已連接服務](../ide/media/VSIDE_Tour_Connected_Services.png)
 
 選擇 [已連接服務] 頁面上的服務會啟動「已連接服務精靈」，此精靈會設定您的專案並下載必要的 NuGet 套件，以協助您開始編寫服務的程式碼。
 
 您可以在 Visual Studio 內使用 [Cloud Explorer](https://azure.microsoft.com/documentation/articles/vs-azure-tools-resources-managing-with-cloud-explorer/) 來檢視和管理 Azure 型雲端資源。 Cloud Explorer 會顯示在您所登入 Azure 訂用帳戶下管理之所有帳戶中的 Azure 資源。 您可以在 Visual Studio 安裝程式中選取 Azure 開發工作負載，來取得 Cloud Explorer。
 
-![Cloud Explorer](~/ide/media/VSIDE_CloudExplorer.png)
+![Cloud Explorer](../ide/media/VSIDE_CloudExplorer.png)
 
 [伺服器總管] 可協助您瀏覽和管理 Azure、Salesforce.com、Office 365 及網站上的 SQL Server 執行個體和資產。 若要開啟 [伺服器總管]，請在主功能表上，選擇 [檢視] > [伺服器總管]。 如需有關使用 [伺服器總管] 的詳細資訊，請參閱[新增連線 (英文)](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)。
 
