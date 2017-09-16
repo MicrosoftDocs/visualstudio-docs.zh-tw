@@ -1,5 +1,8 @@
 {
   "build_entry_point": "docs",
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "continue_with_document_error": true,
   "docsets_to_publish": [
     {
       "docset_name": "docs",
@@ -21,7 +24,7 @@
       "build_output_subfolder": "scripting-docs",
       "locale": "zh-tw",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -36,7 +39,7 @@
       "build_output_subfolder": "mac",
       "locale": "zh-tw",
       "monikers": [],
-      "open_to_public_contributors": true,
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -50,7 +53,6 @@
   "branches_to_filter": [],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.zh-tw",
   "git_repository_branch_open_to_public_contributors": "live",
-  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [
@@ -76,11 +78,9 @@
       "branch_mapping": {
         "live": "live",
         "master": "master"
-      }
+       }
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_pdf_url_template": false
 }
