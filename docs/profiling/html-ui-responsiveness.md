@@ -66,7 +66,7 @@ ms.lasthandoff: 05/13/2017
   
      如果您要變更分析工具的分析目標，請選擇 [變更目標]。  
   
-     ![變更分析目標](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![變更分析目標](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      下列選項適用於分析目標：  
   
@@ -117,7 +117,7 @@ ms.lasthandoff: 05/13/2017
   
 8.  如果您加入了使用者標記，標記會出現在分析工具的 [檢視診斷工作階段時間軸](#Ruler) 中。 下圖顯示用來在程式碼中指定特定作業的單一使用者標記。  
   
-     ![顯示使用者標記的診斷尺規](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+     ![顯示使用者標記的診斷尺規](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
 9. 利用使用者標記、應用程式週期事件或圖表中看得到的資料，來識別時間軸中的關切區域及分析工具圖表。 下面是一些可協助您分析及使用圖表資料的指導方針：  
   
@@ -131,7 +131,7 @@ ms.lasthandoff: 05/13/2017
   
      下圖顯示具有反白顯示之感興趣的區域的 CPU 使用率圖表。  
   
-     ![CPU 使用率圖形](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+     ![CPU 使用率圖形](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
 11. 使用 [檢視時間軸詳細資料](#TimelineDetails) 以取得有關執行頻率太高或花費太多時間完成之事件的詳細資訊。 例如，請查看下列項目：  
   
@@ -146,7 +146,7 @@ ms.lasthandoff: 05/13/2017
     > [!TIP]
     >  分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。  
   
-12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ] (按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。  
+12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ]\(按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。  
   
 13. 放大時，請選取 CPU 使用率或視覺輸送量圖形的一部分。 確定選取範圍時，分析工具下方窗格的時間軸詳細資料圖形會變成只顯示選取的時段。  
   
@@ -174,7 +174,7 @@ if (performance && performance.mark) {
   
  下圖顯示具有單一使用者標記和其工具提示的診斷尺規。  
   
- ![顯示使用者標記的診斷尺規](~/profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
+ ![顯示使用者標記的診斷尺規](../profiling/media/js_htmlvizprofiler_usermark.png "JS_HTMLVizProfiler_UserMark")  
   
  您也可以在時間軸詳細資料檢視中，建立工具所產生的事件，以顯示兩個使用者標記之間經歷的時間。 下列程式碼會加入第二個使用者標記，以及執行兩個使用者標記之間所經歷的測量時間 (上一個程式碼會顯示第一個使用者標記)。  
   
@@ -199,7 +199,7 @@ if (performance.mark && performance.measure) {
   
  下圖顯示會針對數個應用程式週期事件顯示工具提示的範例診斷工作階段時間軸：  
   
- ![診斷工作階段時尺規](~/profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
+ ![診斷工作階段時尺規](../profiling/media/js_htmlvizprof_ruler.png "JS_HTMLVizProf_Ruler")  
   
  時間軸顯示應用程式週期事件 (如啟用事件) 發生的時間，而且顯示可加入至程式碼的使用者標記 (使用者標記三角形)。 您可以選取事件，以顯示含有詳細資訊的工具提示。 如需使用者標記的詳細資訊，請參閱本主題中的 [標記程式碼以供分析](#ProfileMark) 。  
   
@@ -219,7 +219,7 @@ if (performance.mark && performance.measure) {
   
  這個範例顯示 CPU 使用率圖形的外觀：  
   
- ![CPU 使用率圖形](~/profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
+ ![CPU 使用率圖形](../profiling/media/js_htmlvizprof_cpu_util.png "JS_HTMLVizProf_CPU_Util")  
   
  使用這個圖形：  
   
@@ -303,7 +303,7 @@ if (performance.mark && performance.measure) {
   
  若要篩選掉影像解碼、理論式下載和 GC 事件，請從下方窗格中的篩選圖示取消選取 [背景活動]  選項。 由於這些事件幾乎都不必採取動作，因此預設並不會顯示。  
   
- ![篩選時間軸中的事件](~/profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
+ ![篩選時間軸中的事件](../profiling/media/js_htmlvizprofiler_event_filter.png "JS_HTMLVizProfiler_Event_Filter")  
   
  若要篩選掉 HTTP 要求事件，請從下方窗格中的篩選圖示取消選取 [網路流量]  選項。 這些事件預設會在時間軸詳細資料圖表中顯示。  
   
@@ -317,7 +317,7 @@ if (performance.mark && performance.measure) {
 ###  <a name="GroupFrames"></a> 依畫面格分組事件  
  您可以將出現在時間軸詳細資料檢視中的事件，分組成個別畫面格。 這些畫面格事件是工具產生的事件，代表繪畫事件之間所發生之所有 UI 執行緒工作最上層的事件容器。 若要啟用此檢視，請選取 [依畫面格分組最上層事件] 。  
   
- ![依畫面格分組最上層事件](~/profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
+ ![依畫面格分組最上層事件](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")  
   
  當您依畫面格分組事件時，時間軸詳細資料檢視中的每個最上層事件，各代表一個畫面格。  
   
