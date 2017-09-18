@@ -1,68 +1,51 @@
 ---
-title: IDebugProcess2::GetProcessId | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProcess2::GetProcessId
-helpviewer_keywords:
-- IDebugProcess2::GetProcessId
+title: "IDebugProcess2::GetProcessId | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProcess2::GetProcessId"
+helpviewer_keywords: 
+  - "IDebugProcess2::GetProcessId"
 ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 08258124c9717701c442c5606dda13e90f4c5b52
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-Gets the GUID for this process.  
+# IDebugProcess2::GetProcessId
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得這個處理序中的 GUID。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetProcessId(  
-   GUID* pguidProcessId  
+```cpp#  
+HRESULT GetProcessId(  
+   GUID* pguidProcessId  
 );  
 ```  
   
-```csharp  
-int GetProcessId(  
-   out Guid pguidProcessId  
+```c#  
+int GetProcessId(  
+   out Guid pguidProcessId  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pguidProcessId`  
- [out] Returns the GUID for this process.  
+ \[\] out傳回的 GUID，此程序。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The Globally Unique IDentifier (GUID) identifies this process from all other processes running in the system.  
+## 備註  
+ 全域唯一識別項 \(GUID\) 可識別這個處理程序，避免系統中執行其他處理序。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

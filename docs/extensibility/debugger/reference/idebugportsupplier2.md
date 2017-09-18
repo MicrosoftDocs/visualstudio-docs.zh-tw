@@ -1,58 +1,41 @@
 ---
-title: IDebugPortSupplier2 | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugPortSupplier2
-helpviewer_keywords:
-- IDebugPortSupplier2 interface
+title: "IDebugPortSupplier2 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugPortSupplier2"
+helpviewer_keywords: 
+  - "IDebugPortSupplier2 介面"
 ms.assetid: 37067324-2ea6-4a01-8829-a6e9c7a70068
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4bc102daaea87a8dff93eb76b0bc42e195fa1f21
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="idebugportsupplier2"></a>IDebugPortSupplier2
-This interface supplies ports to the session debug manager (SDM).  
+# IDebugPortSupplier2
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個介面會提供給工作階段的偵錯專案經理 \(SDM\) 的連接埠。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```  
 IDebugPortSupplier2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- A custom port supplier implements this interface to represent a port supplier.  
+## 實作器注意事項  
+ 自訂的連接埠提供者會實作這個介面代表連接埠提供者。  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- A call to `CoCreateInstance` with a port supplier's `GUID` returns this interface (this is the typical way to obtain this interface). For example:  
+## 呼叫者的備忘稿  
+ 呼叫`CoCreateInstance`與連接埠提供者`GUID`會傳回這個介面 \(這是一般的方式，來取得這個介面\)。  例如：  
   
-```cpp  
+```cpp#  
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)  
 {  
     IDebugPortSupplier2 *pPS = NULL;  
@@ -67,39 +50,39 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 }  
 ```  
   
- A call to [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md) returns this interface, representing the current port supplier being used by [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ 呼叫[GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)會傳回這個介面，代表目前正在使用的連接埠提供者[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md) returns this interface, representing the port supplier that created the port.  
+ [GetPortSupplier](../Topic/IDebugPort2::GetPortSupplier.md)傳回這個介面，代表建立該連接埠的連接埠提供者。  
   
- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md) represents a list of `IDebugPortSupplier` interfaces (the `IEnumDebugPortSuppliers` interface is obtained from [EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md), representing all of the port suppliers registered with [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]).  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)表示一份`IDebugPortSupplier`介面 \( `IEnumDebugPortSuppliers`介面取自[EnumPortSuppliers](../../../extensibility/debugger/reference/idebugcoreserver2-enumportsuppliers.md)，代表所有連接埠供應商註冊的[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]\)。  
   
- A debug engine typically does not interact with a port supplier.  
+ 偵錯引擎通常不常使用的連接埠提供者。  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable Order  
- The following table shows the methods of `IDebugPortSupplier2`.  
+## 方法 Vtable 順序  
+ 下表顯示的方法`IDebugPortSupplier2`。  
   
-|Method|Description|  
-|------------|-----------------|  
-|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|Gets the port supplier name.|  
-|[GetPortSupplierId](../../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md)|Gets the port supplier identifier.|  
-|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|Gets a port from a port supplier.|  
-|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|Enumerates the ports that already exist.|  
-|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|Verifies that a port supplier supports adding new ports.|  
-|[AddPort](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|Adds a port.|  
-|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|Removes a port.|  
+|方法|描述|  
+|--------|--------|  
+|[GetPortSupplierName](../../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md)|取得連接埠的供應商名稱。|  
+|[GetPortSupplierId](../Topic/IDebugPortSupplier2::GetPortSupplierId.md)|取得連接埠的供應商的識別項。|  
+|[GetPort](../../../extensibility/debugger/reference/idebugportsupplier2-getport.md)|從連接埠提供者取得連接埠。|  
+|[EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)|列舉已存在的連接埠。|  
+|[CanAddPort](../../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md)|請確認連接埠提供者支援加入新的連接埠。|  
+|[下列](../../../extensibility/debugger/reference/idebugportsupplier2-addport.md)|新增連接埠。|  
+|[RemovePort](../../../extensibility/debugger/reference/idebugportsupplier2-removeport.md)|移除連接埠。|  
   
-## <a name="remarks"></a>Remarks  
- A port supplier can identify itself by name and ID, add and remove ports, and enumerate all ports that the port supplier provides.  
+## 備註  
+ 連接埠提供者可以辨別它自己的名字和 ID、 新增和移除連接埠，並列舉連接埠提供者所提供的所有連接埠。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
- [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)   
+## 請參閱  
+ [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
+ [GetPortSupplier](../Topic/IDebugPort2::GetPortSupplier.md)   
  [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)   
  [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

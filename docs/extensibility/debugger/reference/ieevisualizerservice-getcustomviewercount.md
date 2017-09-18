@@ -1,69 +1,52 @@
 ---
-title: IEEVisualizerService::GetCustomViewerCount | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEEVisualizerService::GetCustomViewerCount
-helpviewer_keywords:
-- IEEVisualizerService::GetCustomViewerCount method
+title: "IEEVisualizerService::GetCustomViewerCount | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEEVisualizerService::GetCustomViewerCount"
+helpviewer_keywords: 
+  - "IEEVisualizerService::GetCustomViewerCount 方法"
 ms.assetid: f7b095c2-e538-4352-8cad-d4c6d4f6bdbc
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4ed857941c2e6305a47269f4ad150e13116d8647
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
-This method gets the number of type visualizers available from this service.  
+# IEEVisualizerService::GetCustomViewerCount
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會取得可用的型別視覺化檢視的數目，此服務。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetCustomViewerCount(  
-   ULONG* pcelt  
+HRESULT GetCustomViewerCount(  
+   ULONG* pcelt  
 );  
 ```  
   
-```csharp  
-int GetCustomViewerCount(  
-   out uint pcelt  
+```c#  
+int GetCustomViewerCount(  
+   out uint pcelt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pcelt`  
- [out] Returns the number of type visualizers available.  
+ \[\] out傳回型別視覺化檢視可用的數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) passes the request to this method in its support for type visualizers.  
+## 備註  
+ [GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md)將要求傳遞給這個方法在其支援型別視覺化檢視。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)
+ [GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md)

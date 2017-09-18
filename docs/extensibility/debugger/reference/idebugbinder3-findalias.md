@@ -1,74 +1,57 @@
 ---
-title: IDebugBinder3::FindAlias | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBinder3::FindAlias
-helpviewer_keywords:
-- IDebugBinder3::FindAlias method
+title: "IDebugBinder3::FindAlias | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBinder3::FindAlias"
+helpviewer_keywords: 
+  - "IDebugBinder3::FindAlias 方法"
 ms.assetid: b8333701-2718-4983-8513-0875fb7cb730
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 277b755c5dae6061ae224e4541683c4524df0a84
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
-This method locates an alias, given a name. This will search all aliases in the program.  
+# IDebugBinder3::FindAlias
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會找出一個給定名稱的別名。  在程式中，它將會搜尋所有的別名。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT FindAlias(  
-   LPCOLESTR     pcstrName,  
-   IDebugAlias** ppAlias  
+HRESULT FindAlias(  
+   LPCOLESTR     pcstrName,  
+   IDebugAlias** ppAlias  
 );  
 ```  
   
-```csharp  
-int FindAlias(  
-   string          pcstrName,  
-   out IDebugAlias ppAlias  
+```c#  
+int FindAlias(  
+   string          pcstrName,  
+   out IDebugAlias ppAlias  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pcstrName`  
- [in] Name of alias to find.  
+ \[in\]若要尋找的別名的名稱。  
   
  `ppAlias`  
- [out] Alias found (if any) represented by the [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interface.  
+ \[\] out別名 \(如果有的話\) 找到由[IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)介面。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns `S_FALSE` (if alias is not found) or an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE` \(如果找不到別名\) 或錯誤代碼。  
   
-## <a name="remarks"></a>Remarks  
- This method initializes the destination object to null before calling; then it tests for a null value afterward to determine whether or not the alias was found.  
+## 備註  
+ 這個方法會初始化為 null 前電話 ； 目的地物件 然後它會測試之後，以判斷找不到別名為空值。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

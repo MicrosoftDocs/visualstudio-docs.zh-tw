@@ -9,14 +9,16 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - WPF, data binding in Visual Studio
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 caps.latest.revision: 32
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -34,35 +36,35 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: 0ecbdbcc5588c2ef1d6a213bfc2116c024f182dd
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c67929edfa1b81cf6b8da9b8aea816277e9ddfa1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Bind WPF controls to a dataset
 In this walkthrough, you will create a WPF application that contains data-bound controls. The controls are bound to product records that are encapsulated in a dataset. You will also add buttons to browse through products and save changes to product records.  
   
-This walkthrough illustrates the following tasks:  
+ This walkthrough illustrates the following tasks:  
   
-- Creating a WPF application and a dataset that is generated from data in the AdventureWorksLT sample database.  
+-   Creating a WPF application and a dataset that is generated from data in the AdventureWorksLT sample database.  
   
-- Creating a set of data-bound controls by dragging a data table from the **Data Sources** window to a window in the WPF Designer.  
+-   Creating a set of data-bound controls by dragging a data table from the **Data Sources** window to a window in the WPF Designer.  
   
-- Creating buttons that navigate forward and backward through product records.  
+-   Creating buttons that navigate forward and backward through product records.  
   
-- Creating a button that saves changes that users make to the product records to the data table and the underlying data source.  
+-   Creating a button that saves changes that users make to the product records to the data table and the underlying data source.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+     [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisites  
-You need the following components to complete this walkthrough:  
+ You need the following components to complete this walkthrough:  
   
 -   [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  
   
 -   Access to a running instance of SQL Server or SQL Server Express that has the AdventureWorksLT sample database attached to it. You can download the AdventureWorksLT database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?linkid=87843).  
   
-Prior knowledge of the following concepts is also helpful, but not required to complete the walkthrough:  
+ Prior knowledge of the following concepts is also helpful, but not required to complete the walkthrough:  
   
 -   Datasets and TableAdapters. For more information, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md) and [TableAdapter](../data-tools/create-and-configure-tableadapters.md).  
   
@@ -152,7 +154,7 @@ Prior knowledge of the following concepts is also helpful, but not required to c
   
 2.  In the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] view of the designer, add the following code between the `<Grid>` tags:  
   
-    ```xaml  
+    ```  
     <Grid.RowDefinitions>  
         <RowDefinition Height="75" />  
         <RowDefinition Height="625" />  
@@ -209,20 +211,20 @@ Prior knowledge of the following concepts is also helpful, but not required to c
   
 2.  Modify the `Window_Loaded` event handler, so the `ProductViewSource`, `AdventureWorksLTDataSet`, and `AdventureWorksLTDataSetProductTableAdapter` are outside of the method and accessible to the entire form. Declare only these to be global to the form, and assign them within the `Window_Loaded` event handler similar to the following:  
   
-     [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]  [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]  
+     [!code-cs[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]  [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]  
   
 3.  Add the following code to the `backButton_Click` event handler:  
   
-     [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]  [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
+     [!code-cs[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]  [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]  
   
 4.  Return to the designer and double-click the **>** button.  
   
 5.  Add the following code to the `nextButton_Click` event handler:  
   
-     [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]  [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]  
+     [!code-cs[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]  [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]  
   
 ## <a name="save-changes-to-product-records"></a>Save changes to product records  
-Add code that enables users to save changes to product records by using the **Save changes** button.  
+ Add code that enables users to save changes to product records by using the **Save changes** button.  
   
 #### <a name="to-add-the-ability-to-save-changes-to-product-records"></a>To add the ability to save changes to product records  
   
@@ -232,7 +234,7 @@ Add code that enables users to save changes to product records by using the **Sa
   
 2.  Add the following code to the `saveButton_Click` event handler:  
   
-     [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]  [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]  
+     [!code-cs[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]  [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]  
   
     > [!NOTE]
     >  This example uses the `Save` method of the `TableAdapter` to save the changes. This is appropriate in this walkthrough, because only one data table is being changed. If you need to save changes to multiple data tables, you can alternatively use the `UpdateAll` method of the `TableAdapterManager` that Visual Studio generates with your dataset. For more information, see [TableAdapters](../data-tools/create-and-configure-tableadapters.md).  

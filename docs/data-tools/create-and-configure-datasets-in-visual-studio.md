@@ -6,13 +6,18 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - typed datasets, creating
 - datasets [Visual Basic], creating
 ms.assetid: 58f33b43-24e1-43b1-b08b-b74329960bd6
 caps.latest.revision: 36
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -30,10 +35,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 93357e06e1c31f5eba0f2a883709932be7d4338d
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: c598bcc7d591f14a0854e5a53c76a219146de933
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Create and configure datasets in Visual Studio

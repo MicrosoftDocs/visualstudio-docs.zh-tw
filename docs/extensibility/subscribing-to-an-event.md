@@ -1,5 +1,5 @@
 ---
-title: Subscribing to an Event | Microsoft Docs
+title: "訂閱事件 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -29,30 +29,29 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 623f9f765c4abd6d22f1db386f7c3e0e57580f95
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+translationtype: Machine Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 6bd1dd320ad5366ef494a8db958614d837529320
+ms.lasthandoff: 02/22/2017
 
 ---
-# <a name="subscribing-to-an-event"></a>Subscribing to an Event
-This walkthrough explains how to create a tool window that responds to events in a running document table (RDT). A tool window hosts a user control that implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method connects the interface to the events.  
+# <a name="subscribing-to-an-event"></a>訂閱事件
+本逐步解說說明如何建立回應事件而執行的文件資料表 (RDT) 中的工具視窗。 工具視窗裝載使用者控制項實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法會將介面連接到事件。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## <a name="prerequisites"></a>必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="subscribing-to-rdt-events"></a>Subscribing to RDT Events  
+## <a name="subscribing-to-rdt-events"></a>訂閱 RDT 事件  
   
-#### <a name="to-create-an-extension-with-a-tool-window"></a>To create an extension with a tool window  
+#### <a name="to-create-an-extension-with-a-tool-window"></a>若要建立的擴充功能與工具視窗  
   
-1.  Create a project named **RDTExplorer** using the VSIX template, and add a custom tool window item template named **RDTExplorerWindow**.  
+1.  建立專案，名為**RDTExplorer**使用 VSIX 的範本，並新增名為的自訂工具視窗項目範本**RDTExplorerWindow**。  
   
-     For more information about creating an extension with a tool window, see [Creating an Extension with a Tool Window](../extensibility/creating-an-extension-with-a-tool-window.md).  
+     如需使用工具視窗建立擴充功能的詳細資訊，請參閱[建立擴充功能與工具視窗](../extensibility/creating-an-extension-with-a-tool-window.md)。  
   
-#### <a name="to-subscribe-to-rdt-events"></a>To subscribe to RDT events  
+#### <a name="to-subscribe-to-rdt-events"></a>訂閱 RDT 事件  
   
-1.  Open the RDTExplorerWindowControl.xaml file and delete the button named `button1`. Add a <xref:System.Windows.Forms.ListBox> control and accept the default name. The Grid element should look like this:  
+1.  開啟 RDTExplorerWindowControl.xaml 檔案，並刪除名為的按鈕`button1`。 新增<xref:System.Windows.Forms.ListBox>控制，並接受預設名稱。</xref:System.Windows.Forms.ListBox> 格線項目看起來應該像這樣︰  
   
     ```xml  
     <Grid>  
@@ -63,42 +62,42 @@ This walkthrough explains how to create a tool window that responds to events in
     </Grid>  
     ```  
   
-2.  Open the RDTExplorerWindow.cs file in code view. Add the following using statements to the start of the file.  
+2.  在程式碼檢視中開啟 RDTExplorerWindow.cs 檔案。 新增下列 using 陳述式開頭的檔案。  
   
-    ```csharp  
+    ```c#  
     using Microsoft.VisualStudio;  
     using Microsoft.VisualStudio.Shell;  
     using Microsoft.VisualStudio.Shell.Interop;  
     ```  
   
-3.  Modify the `RDTExplorerWindow` class so that, in addition to deriving from the <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> class, it implements the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.  
+3.  修改`RDTExplorerWindow`類別，因此，除了衍生自<xref:Microsoft.VisualStudio.Shell.ToolWindowPane>類別，它會實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>介面。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> </xref:Microsoft.VisualStudio.Shell.ToolWindowPane>  
   
-    ```csharp  
+    ```c#  
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents  
     {. . .}  
     ```  
   
-4.  Implement <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.  
+4.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>  
   
-    -   Implement the interface. Place the cursor on the IVsRunningDocTableEvents name. You should see a light bulb in the left margin. Click the Down arrow to the right of the light bulb and select **Implement interface**.  
+    -   實作介面。 將游標置於 IVsRunningDocTableEvents 名稱。 您應該會看到燈泡左邊界中。 按一下燈泡右邊的向下箭頭，然後選取**實作介面**。  
   
-5.  In each method in the interface, replace the line `throw new NotImplementedException();` with this:  
+5.  在介面中的每個方法，將這一行`throw new NotImplementedException();`與這個︰  
   
-    ```csharp  
+    ```c#  
     return VSConstants.S_OK;  
     ```  
   
-6.  Add a cookie field to the RDTExplorerWindow class.  
+6.  Cookie 將欄位加入至 RDTExplorerWindow 類別。  
   
-    ```csharp  
+    ```c#  
     private uint rdtCookie;   
     ```  
   
-     This holds the cookie that is returned by the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method.  
+     這個屬性所傳回的 cookie 會存放<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
   
-7.  Override the RDTExplorerWindow's Initialize() method to register for RDT events. You should always get services in the ToolWindowPane's Initialize() method, not in the constructor.  
+7.  覆寫 RDTExplorerWindow initialize （） 方法，以註冊 RDT 事件。 務必要先取得服務在 ToolWindowPane initialize （） 方法中，不是在建構函式。  
   
-    ```csharp  
+    ```c#  
     protected override void Initialize()  
     {  
         IVsRunningDocumentTable rdt = (IVsRunningDocumentTable)  
@@ -107,11 +106,11 @@ This walkthrough explains how to create a tool window that responds to events in
     }  
     ```  
   
-     The <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> service is called to obtain an <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> interface. The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> method connects RDT events to an object that implements <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, in this case, a RDTExplorer object.  
+     <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>服務呼叫以取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable>介面。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> </xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>方法連線到該物件會實作的 RDT 事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>，在此情況下，RDTExplorer 物件。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> </xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A>  
   
-8.  Update the RDTExplorerWindow's Dispose() method.  
+8.  更新 RDTExplorerWindow dispose （） 方法。  
   
-    ```csharp  
+    ```c#  
     protected override void Dispose(bool disposing)  
     {  
         // Release the RDT cookie.  
@@ -123,11 +122,11 @@ This walkthrough explains how to create a tool window that responds to events in
     }  
     ```  
   
-     The <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A> method deletes the connection between `RDTExplorer` and RDT event notification.  
+     <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A>方法會刪除之間的連線`RDTExplorer`和 RDT 事件通知。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnadviseRunningDocTableEvents%2A>  
   
-9. Add the following line to the body of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A> handler, just before the `return` statement.  
+9. 將下行新增至主體<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A>處理常式之前`return`陳述式。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnBeforeLastDocumentUnlock%2A>  
   
-    ```csharp  
+    ```c#  
     public int OnBeforeLastDocumentUnlock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)  
     {  
         ((RDTExplorerWindowControl)this.Content).listBox.Items.Add("Entering OnBeforeLastDocumentUnlock");  
@@ -135,9 +134,9 @@ This walkthrough explains how to create a tool window that responds to events in
     }  
     ```  
   
-10. Add a similar line to the body of the <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A> handler and to other events that you want to see in the list box.  
+10. 將類似的一行加入至主體<xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A>處理常式和其他您想要在清單方塊中看見的事件。</xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterFirstDocumentLock%2A>  
   
-    ```csharp  
+    ```c#  
     public int OnAfterFirstDocumentLock(uint docCookie, uint dwRDTLockType, uint dwReadLocksRemaining, uint dwEditLocksRemaining)  
     {  
         ((RDTExplorerWindowControl)this.Content).listBox.Items.Add("Entering OnAfterFirstDocumentLock");  
@@ -145,12 +144,12 @@ This walkthrough explains how to create a tool window that responds to events in
     }  
     ```  
   
-11. Build the project and start debugging. The Visual Studio experimental instance appears.  
+11. 建置此專案並開始偵錯。 Visual Studio 的實驗執行個體隨即出現。  
   
-12. Open the **RDTExplorerWindow** (**View / Other Windows / RDTExplorerWindow**).  
+12. 開啟**RDTExplorerWindow** (**檢視 / 其他視窗 / RDTExplorerWindow**)。  
   
-     The **RDTExplorerWindow** window opens with an empty event list.  
+     **RDTExplorerWindow**開啟空的事件清單 視窗。  
   
-13. Open or create a solution.  
+13. 開啟或建立的方案。  
   
-     As `OnBeforeLastDocument` and `OnAfterFirstDocument` events are fired, notification of each event appears in the event list.
+     做為`OnBeforeLastDocument`和`OnAfterFirstDocument`會引發事件，每個事件通知就會出現在事件清單。

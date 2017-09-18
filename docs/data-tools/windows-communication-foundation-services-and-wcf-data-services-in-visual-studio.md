@@ -6,9 +6,6 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
 helpviewer_keywords:
 - services, WCF Data
 - WCF services, binding to
@@ -35,8 +32,8 @@ helpviewer_keywords:
 - service method, called asynchronously[Visual Studio]
 ms.assetid: d56f12cb-e139-4fec-b3e4-488383356642
 caps.latest.revision: 26
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -54,10 +51,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 303f9520856c81823e064b59517db4c8fafe3d0c
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 50cb8e237165ddd27d6b98c9bc403ad7debea81c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Windows Communication Foundation Services and WCF Data Services in Visual Studio
@@ -75,9 +72,9 @@ Visual Studio provides tools for working with Windows Communication Foundation (
 #### <a name="wcf-service"></a>WCF Service  
  A WCF service is based on an interface that defines a contract between the service and the client. It is marked with a <xref:System.ServiceModel.ServiceContractAttribute> attribute, as shown in the following code:  
   
- [!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)] [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
+ [!code-cs[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)] [!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]  
   
- [!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)] [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
+ [!code-cs[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)] [!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]  
   
  You define functions or methods that are exposed by a WCF service by marking them with a <xref:System.ServiceModel.OperationContractAttribute> attribute. In addition, you can expose serialized data by marking a composite type with a <xref:System.Runtime.Serialization.DataContractAttribute> attribute. This enables data binding in a client.  
   
@@ -94,7 +91,7 @@ Visual Studio provides tools for working with Windows Communication Foundation (
   
  After a WCF client has been created, you reference the service in your code just as you would any other object. For example, to call the `GetData` method shown earlier, you would write code that resembles the following:  
   
- [!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)] [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
+ [!code-cs[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)] [!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]  
   
 ## <a name="wcf-tools-in-visual-studio"></a>WCF Tools in Visual Studio  
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] provides tools to help you create both WCF services and WCF clients. For a walkthrough that demonstrates the tools, see [Walkthrough: Creating a simple WCF Service in Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).  
@@ -131,11 +128,11 @@ Visual Studio provides tools for working with Windows Communication Foundation (
  The **Configure Service References** dialog box enables you to customize the configuration for a service. You can change the address for a service, specify access level, asynchronous behavior, and message contract types, and configure type reuse.  
   
 ## <a name="how-to-select-a-service-endpoint"></a>How to: Select a Service Endpoint  
-Some Windows Communication Foundation (WCF) services expose multiple endpoints through which a client may communicate with the service. For example, a service might expose one endpoint that uses an HTTP binding and user name / password security and a second endpoint that uses FTP and Windows Authentication. The first endpoint might be used by applications that access the service from outside a firewall, whereas the second might be used on an intranet.  
+ Some Windows Communication Foundation (WCF) services expose multiple endpoints through which a client may communicate with the service. For example, a service might expose one endpoint that uses an HTTP binding and user name / password security and a second endpoint that uses FTP and Windows Authentication. The first endpoint might be used by applications that access the service from outside a firewall, whereas the second might be used on an intranet.  
   
-In such a case, you can specify the `endpointConfigurationName` as a parameter to the constructor for a service reference.  
+ In such a case, you can specify the `endpointConfigurationName` as a parameter to the constructor for a service reference.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 #### <a name="to-select-a-service-endpoint"></a>To select a service endpoint  
   
@@ -143,11 +140,11 @@ In such a case, you can specify the `endpointConfigurationName` as a parameter t
   
 2.  In the Code Editor, add a constructor for the service reference:  
   
-    ```vb  
+    ```vb#  
     Dim proxy As New ServiceReference.Service1Client(  
     ```  
   
-    ```csharp  
+    ```c#  
     ServiceReference.Service1Client proxy = new ServiceReference.Service1Client(  
     ```  
   
@@ -174,14 +171,14 @@ In such a case, you can specify the `endpointConfigurationName` as a parameter t
 4.  Inside the `<EndPoint>` tag you will find a `name="`*SomeService*`"` parameter (where *SomeService* represents an endpoint name). This is the name for the endpoint that can be passed to the `endpointConfigurationName As String` overload of a constructor for a service reference.  
   
 ## <a name="how-to-call-a-service-method-asynchronously"></a>How to: Call a Service Method Asynchronously  
-Most methods in Windows Communication Foundation (WCF) services may be called either synchronously or asynchronously. Calling a method asynchronously enables your application to continue to work while the method is being called when it operates over a slow connection.  
+ Most methods in Windows Communication Foundation (WCF) services may be called either synchronously or asynchronously. Calling a method asynchronously enables your application to continue to work while the method is being called when it operates over a slow connection.  
   
-By default, when a service reference is added to a project it is configured to call methods synchronously. You can change the behavior to call methods asynchronously by changing a setting in the **Configure Service Reference** dialog box.  
+ By default, when a service reference is added to a project it is configured to call methods synchronously. You can change the behavior to call methods asynchronously by changing a setting in the **Configure Service Reference** dialog box.  
   
 > [!NOTE]
 >  This option is set on a per-service basis. If one method for a service is called asynchronously, all methods must be called asynchronously.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 #### <a name="to-call-a-service-method-asynchronously"></a>To call a service method asynchronously  
   
@@ -192,7 +189,7 @@ By default, when a service reference is added to a project it is configured to c
 3.  In the **Configure Service Reference** dialog box, select the **Generate asynchronous operations** check box.  
   
 ## <a name="how-to-bind-data-returned-by-a-service"></a>How to: Bind Data Returned by a Service  
-You can bind data returned by a Windows Communication Foundation (WCF) service to a control just as you can bind any other data source to a control. When you add a reference to a WCF service, if the service contains composite types that return data, they are automatically added to the **Data Sources** window.  
+ You can bind data returned by a Windows Communication Foundation (WCF) service to a control just as you can bind any other data source to a control. When you add a reference to a WCF service, if the service contains composite types that return data, they are automatically added to the **Data Sources** window.  
   
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>To bind a control to single data field returned by a WCF service  
   
@@ -223,9 +220,9 @@ You can bind data returned by a Windows Communication Foundation (WCF) service t
 5.  Drag the node onto the form. The controls will be added to the form together with a <xref:System.Windows.Forms.BindingSource> component and a <xref:System.Windows.Forms.BindingNavigator> component.  
   
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>How to: Configure a Service to Reuse Existing Types  
-When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types or when types are defined in a shared library.  
+ When a service reference is added to a project, any types defined in the service are generated in the local project. In many cases, this creates duplicate types when a service uses common [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] types or when types are defined in a shared library.  
   
-To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the **Configure Service References** dialog box.  
+ To avoid this problem, types in referenced assemblies are shared by default. If you want to disable type sharing for one or more assemblies, you can do so in the **Configure Service References** dialog box.  
   
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>To disable type sharing in a single assembly  
   

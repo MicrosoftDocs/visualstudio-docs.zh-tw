@@ -1,84 +1,67 @@
 ---
-title: IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-helpviewer_keywords:
-- IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+title: "IDebugSymbolSearchEvent2::GetSymbolSearchInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugSymbolSearchEvent2::GetSymbolSearchInfo"
+helpviewer_keywords: 
+  - "IDebugSymbolSearchEvent2::GetSymbolSearchInfo"
 ms.assetid: ae9eb72b-f2aa-43b8-87ca-da19d2e78d17
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 923693683194b452881a562e5957ccc036deda45
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
-Called by an event handler to retrieve results about a symbol load process.  
+# IDebugSymbolSearchEvent2::GetSymbolSearchInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+呼叫事件處理常式來擷取相關符號的載入程序的結果。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
 HRESULT GetSymbolSearchInfo(  
-   IDebugModule3**    pModule,  
-   BSTR*              pbstrDebugMessage,  
-   MODULE_INFO_FLAGS* pdwModuleInfoFlags  
+   IDebugModule3**    pModule,  
+   BSTR*              pbstrDebugMessage,  
+   MODULE_INFO_FLAGS* pdwModuleInfoFlags  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetSymbolSearchInfo(  
-   IDebugModule3              pModule,   
-   ref string                 pbstrDebugMessage,   
-   out enum_MODULE_INFO_FLAGS pdwModuleInfoFlags  
+   IDebugModule3              pModule,   
+   ref string                 pbstrDebugMessage,   
+   out enum_MODULE_INFO_FLAGS pdwModuleInfoFlags  
 );  
   
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pModule`  
- [out] An IDebugModule3 object representing the module for which the symbols were loaded.  
+ \[\] outIDebugModule3 物件，表示已載入符號的模組。  
   
  `pbstrDebugMessage`  
- [in, out] Returns a string containing any error messages from the module. If there is no error, then this string will just contain the module's name but it is never empty.  
+ 輸入 \[、 輸出\]傳回字串，包含從模組的任何錯誤訊息。  如果沒有任何錯誤訊息，然後這個字串只會包含模組的名稱，但不會是空。  
   
 > [!NOTE]
->  [C++] `pbstrDebugMessage` cannot be `NULL` and must be freed with `SysFreeString`.  
+>  \[C\+\+\]`pbstrDebugMessage`不能`NULL` ，必須釋放與`SysFreeString`。  
   
  `pdwModuleInfoFlags`  
- [out] A combination of flags from the [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeration indicating whether any symbols were loaded.  
+ \[\] out從的旗標組合[MODULE\_INFO\_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)列舉型別，指出是否已載入任何符號。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- When a handler receives the [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md) event after an attempt is made to load debugging symbols for a module, the handler can call thismethod to determine the results of that load.  
+## 備註  
+ 當處理常式會收到[IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)事件之後嘗試載入模組的偵錯符號，這個處理常式可以呼叫 thismethod，以判斷該負載的結果。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)   
- [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
+ [MODULE\_INFO\_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md)   
  [IDebugSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugsymbolsearchevent2.md)

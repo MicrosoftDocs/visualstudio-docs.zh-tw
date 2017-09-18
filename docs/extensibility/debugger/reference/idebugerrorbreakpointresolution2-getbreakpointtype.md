@@ -1,71 +1,54 @@
 ---
-title: IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugErrorBreakpointResolution2::GetBreakpointType
-helpviewer_keywords:
-- IDebugErrorBreakpointResolution2::GetBreakpointType
+title: "IDebugErrorBreakpointResolution2::GetBreakpointType | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
+helpviewer_keywords: 
+  - "IDebugErrorBreakpointResolution2::GetBreakpointType"
 ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ca89ded5a6d66f000525941671ffeee8365961d8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
-Gets the breakpoint type.  
+# IDebugErrorBreakpointResolution2::GetBreakpointType
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得中斷點的類型。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetBreakpointType(   
-   BP_TYPE* pBPType  
+```cpp#  
+HRESULT GetBreakpointType(   
+   BP_TYPE* pBPType  
 );  
 ```  
   
-```csharp  
-int GetBreakpointType(   
-   out enum_BP_TYPE pBPType  
+```c#  
+int GetBreakpointType(   
+   out enum_BP_TYPE pBPType  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pBPType`  
- [out] Returns a value from the [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeration that describes the type of breakpoint.  
+ \[\] out傳回值，從[BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)將告訴您的中斷點類型的列舉型別。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- This method returns the type of the breakpoint that failed to bind, thus requiring an error breakpoint event.  
+## 備註  
+ 這個方法會傳回類型的中斷點無法繫結，因此需要錯誤中斷點事件加以表示。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CDebugErrorBreakpointResolution` object that exposes the [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如`CDebugErrorBreakpointResolution`物件，公開 \(expose\) [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)介面。  
   
 ```  
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)    
@@ -98,6 +81,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)   
- [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
+ [BP\_TYPE](../../../extensibility/debugger/reference/bp-type.md)

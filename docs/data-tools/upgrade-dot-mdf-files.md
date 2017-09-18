@@ -1,133 +1,114 @@
 ---
-title: Upgrade .mdf files | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Express
-- SQL Server LocalDB
-- LocalDB
-- SQLEXPRESS
-- upgrading SQLExpress to SQLExpress
-- upgrading to LocalDB
+title: "如何：升級為 LocalDB 或繼續使用 SQL Server Express | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/16/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "LocalDB"
+  - "SQL Server Express"
+  - "SQL Server LocalDB"
+  - "SQLEXPRESS"
+  - "從 SQLExpress 升級至 SQLExpress"
+  - "升級至 LocalDB"
 ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
 caps.latest.revision: 33
-author: gewarren
-ms.author: gewarren
-manager: ghogen
+caps.handback.revision: 23
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 6b5cafd570df333da80d76d95dfc152ec6c1fb2b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
 ---
-# <a name="upgrade-mdf-files"></a>Upgrade .mdf files
-This topic describes your options for upgrading your database file (.mdf) after you install a newer version of Visual Studio. It includes instructions for the following tasks:  
+# 如何：升級為 LocalDB 或繼續使用 SQL Server Express
+本主題說明升級資料庫檔案 \(.mdf\) 的選項，以便在安裝之後 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 並包含下列工作的指示:  
   
--   Upgrade a database file to use a newer version of SQL Server Express LocalDB  
+-   升級使用的資料庫檔案。LocalDB  
   
--   Upgrade a database file to use a newer version of SQL Server Express  
+-   升級資料庫檔案使用 SQL Server Express 的新版本  
   
--   Work with a database file in Visual Studio but retain compatibility with an older version of SQL Server Express or LocalDB  
+-   在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 的資料庫檔案，但保留與 [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)]的相容性  
   
--   Make SQL Server Express the default database engine  
+-   執行 SQL Server Express 預設資料庫引擎  
   
- You can use Visual Studio to open a  project that contains a database file (.mdf) that was created by using an older version of SQL Server Express or LocalDB. However, to continue to develop your project in Visual Studio, you must have that version of SQL Server Express or LocalDB  installed on the same machine as Visual Studio, or you must upgrade the database file. If you upgrade the database file, you won't be able to access it by using older versions of SQL Server Express or LocalDB.  
+ 您可以使用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 開啟包含使用 SQL Server Express，的舊版所建立的資料庫檔案的專案 \(.mdf\)  不過，繼續開發以 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]的專案，您必須先有在電腦上安裝 SQL Server Express 的版本與 Visual Studio 相同的或是必須升級資料庫檔案加入至使用 SQL Server Express LocalDB。  如果您要升級資料庫檔案，您將無法存取它與 SQL Server Express 的舊版。  
   
- You may also be prompted to upgrade a database file that was created through an earlier version of SQL Server Express or LocalDB if the version of the file isn't compatible with the instance of SQL Server Express or LocalDB that's currently installed. To resolve the issue, Visual Studio will prompt you to upgrade the file.  
+ 您也會提示您升級使用建立 [!INCLUDE[sql_Denali_exp](../data-tools/includes/sql_denali_exp_md.md)] 的資料庫檔案，如果檔案版本與目前安裝 SQL Server Express 的執行個體。  若要解決這個問題， Visual Studio 會提示您升級檔案至 SQL Server Express 的新版本。  
   
 > [!IMPORTANT]
->  We recommend that you back up the database file before you upgrade it.  
+>  建議您備份資料庫檔案，在升級之前。  
   
-> [!WARNING]
->  If you upgrade an .mdf file that was created in LocalDB 2014 (V12) 32 bit to LocalDB 2016 (V13), you will not be able to open the file again in the 32-bit version of LocalDB.  In Update 2, LocalDB V13 is 64 bit only.  
+ 在您升級資料庫之前，您應該考慮下列準則:  
   
- Before you upgrade a database, consider the following criteria:  
+-   如果您想要處理在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]的專案中，請勿升級。  
   
--   Don't upgrade if you want to work on your project in both an older version and a newer version of Visual Studio.  
+-   請勿升級，如果應用程式中使用 SQL Server Express 而不是 LocalDB 的環境。  
   
--   Don't upgrade if your application will be used in environments that use SQL Server Express rather than LocalDB.  
+-   請勿升級，如果應用程式使用遠端連接，因為不會 LocalDB 方便他們。  
   
--   Don't upgrade if your application uses remote connections, because LocalDB doesn't accept them.  
+-   如果應用程式依賴 Internet Information Services \(IIS\)，請勿升級。  
   
--   Don't upgrade if your application relies on Internet Information Services (IIS).  
+-   升級"，如果您在沙箱環境中您要測試的資料庫應用程式，但不想要執行資料庫。  
   
--   Consider upgrading if you want to test database applications in a sandbox environment but don't want to administer a database.  
+### 升級使用的資料庫檔案。LocalDB  
   
-### <a name="to-upgrade-a-database-file"></a>To upgrade a database file  
+1.  在 \[**伺服器總管**\]，選取 \[**連接到資料庫**\] 按鈕。  
   
-1.  In **Server Explorer**, select the **Connect to Database** button.  
+2.  在 \[**加入資料連接**\] 對話方塊中，指定下列資訊:  
   
-2.  In the **Add Connection** dialog box, specify the following information:  
+    -   \[**資料來源:**\] Microsoft SQL Server \(SqlClient\)  
   
-    -   **Data Source**: `Microsoft SQL Server (SqlClient)`  
+    -   \[**伺服器名稱:**\] \(LocalDB\) \\ v11.0  
   
-    -   **Server Name**:  
+    -   \[**附加資料庫檔案:**\]*路徑*，其中 *路徑* 是主要 .mdf 檔案的實體路徑。  
   
-        -   To use the default version: `(localdb)\MSSQLLocalDB`.  This will specify either ProjectV12 or ProjectV13, depending on which version of Visual Studio  is installed and when the first LocalDB instance was created. The **MSSQLLocalDB** node in **SQL Server Object Explorer** shows which version it is pointing to.  
+    -   \[**邏輯名稱:**\]*名稱**名稱* ，其中是您要使用的檔案名稱。  
   
-        -   To use a specific version: `(localdb)\ProjectsV12` or `(localdb)\ProjectsV13`, where V12 is LocalDB 2014 and V13 is LocalDB 2016.  
+3.  選取 \[**確定**\] 按鈕。  
   
-    -   **Attach a database file**: The physical path of the primary .mdf file.  
+4.  當系統提示您時，請選擇 \[**是**\] 按鈕升級檔案。  
   
-    -   **Logical Name**: The name that you want to use with the file.  
+ 資料庫升級，附加至 LocalDB 資料庫引擎和不再與 [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)]相容。  
   
-3.  Select the **OK** button.  
+ 您也可以修改 SQLExpress 連接是透過開啟捷徑功能表"連接然後選取 \[**修改連接**\] 使用 LocalDB。  在 \[**修改連接**\] 對話方塊，變更伺服器名稱 \(\) LocalDB \\ v11.0。  在 \[**進階屬性**\] 對話方塊中，確定 \[**使用者執行個體**\] 設為 False。  
   
-4.  When you're prompted, select the **Yes** button to upgrade the file.  
+### 升級為 SQL Server Express 的新版本  
   
- The database is upgraded, is attached to the LocalDB database engine, and is no longer compatible with  the older version of LocalDB.  
+1.  在連接的捷徑功能表與資料庫，請選取 \[**修改連接**\]。  
   
- You can also modify a SQL Server Express connection to use LocalDB by opening the shortcut menu for the connection and then selecting **Modify Connection**. In the **Modify Connection** dialog box, change the server name to `(LocalDB)\MSSQLLocalDB`. In the **Advanced Properties** dialog box, make sure that **User Instance** is set to **False**.  
+2.  在 \[**修改連接**\] 對話方塊中，選取 \[**進階**\] 按鈕。  
   
-### <a name="to-upgrade-to-a-newer-version-of-sql-server-express"></a>To upgrade to a newer version of SQL Server Express  
+3.  在 \[**進階屬性**\] 對話方塊中，選取 \[**確定**\] 按鈕，但不變更伺服器名稱。  
   
-1.  On the shortcut menu for the connection to the database, select **Modify Connection**.  
+ 資料庫檔案升級符合 [!INCLUDE[sql_Denali_exp](../data-tools/includes/sql_denali_exp_md.md)]版本。  
   
-2.  In the **Modify Connection** dialog box, select the **Advanced** button.  
+### 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 的資料庫，但是會保留與 [!INCLUDE[ssKatmai_exp](../data-tools/includes/sskatmai_exp_md.md)]的相容性  
   
-3.  In the **Advanced Properties** dialog box, select the **OK** button without changing the server name.  
+1.  在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]，請開啟專案，而不需要進行升級。  
   
- The database file is upgraded to match the current version of SQL Server Express.  
+    -   若要執行專案，請選取 F5 鍵。  
   
-### <a name="to-work-with-the-database-in-visual-studio-but-retain-compatibility-with-sql-server-express"></a>To work with the database in Visual Studio but retain compatibility with SQL Server Express  
+    -   您可以如同在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)]，並做了要編輯資料庫，請開啟 \[**方案總管**\] 的 .mdf 檔案，並展開 \[**伺服器總管**\] 的節點與資料庫搭配使用。  
   
--   In Visual Studio, open the project without upgrading it.  
+### 執行 SQL Server Express 預設資料庫引擎  
   
-    -   To run the project, select the F5 key.  
+1.  在功能表列上的 \[\]，然後選取 \[**工具**\]， \[**選項**\]。  
   
-    -   To edit the database, open the .mdf file in **Solution Explorer**, and expand the node in **Server Explorer** to work with your database.  
+2.  在 \[**選項**\] 對話方塊中，展開 \[**資料工具**\] \[\]，然後選取 \[**資料連接**\] 節點。  
   
-### <a name="to-make-sql-server-express-the-default-database-engine"></a>To make SQL Server Express the default database engine  
+3.  在 \[**SQL Server 執行個體名稱**\] 文字方塊中，指定您要使用 SQL Server Express 執行個體的名稱。  如果這個執行個體未命名，請指定 `. \SQLEXPRESS`。  
   
-1.  On the menu bar, select **Tools** > **Options**.  
+4.  選取 \[**確定**\] 按鈕。  
   
-2.  In the **Options** dialog box, expand the **Data Tools** options, and then select the **Data Connections** node.  
+ SQL Server Express 將成為應用程式的預設資料庫引擎。  
   
-3.  In the **SQL Server Instance Name** text box, specify the name of the instance of SQL Server Express or LocalDB that you want to use. If the instance isn't named, specify `.\SQLEXPRESS or (localdb)\MSSQLLocalDB`.  
-  
-4.  Select the **OK** button.  
-  
- SQL Server Express will be the default database engine for your applications.  
-  
-
+## 請參閱  
+ [區域資料概觀](../data-tools/local-data-overview.md)   
+ [逐步解說：連接至本機資料庫檔案中的資料 \(Windows Form\)](../Topic/Walkthrough:%20Connecting%20to%20Data%20in%20a%20Local%20Database%20File%20\(Windows%20Forms\).md)

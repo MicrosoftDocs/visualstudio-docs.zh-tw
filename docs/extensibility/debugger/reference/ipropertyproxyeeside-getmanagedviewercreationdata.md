@@ -1,5 +1,5 @@
 ---
-title: IPropertyProxyEESide::GetManagedViewerCreationData | Microsoft Docs
+title: "IPropertyProxyEESide::GetManagedViewerCreationData |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,19 +30,18 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a20a02b948bb1ee15011f99fe7071ae6af7df6b5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+translationtype: Machine Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: 221d26b43f57c5519747ef04e9ccc17fc9fad10e
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
-Retrieves information about the viewer for this property type in order to instantiate that viewer.  
+若要具現化該檢視器會擷取此內容類型的檢視器的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```cpp#  
 HRESULT GetManagedViewerCreationData(  
    BSTR*                  assemName,  
    IEEDataStorage**       assemBytes,  
@@ -53,7 +52,7 @@ HRESULT GetManagedViewerCreationData(
 );  
 ```  
   
-```csharp  
+```c#  
 int GetManagedViewerCreationData(  
    out string                     assemName,  
    out IEEDataStorage             assemBytes,  
@@ -64,32 +63,32 @@ int GetManagedViewerCreationData(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `assemName`  
- [out] Returns the name of the assembly holding this object.  
+ [out]傳回保存此物件的組件的名稱。  
   
  `assemBytes`  
- [out] Returns an [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) object containing the assembly bytes of this object (this is a null value if no bytes are available).  
+ [out]傳回[IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)物件，其中包含這個物件 （如果不可用的任何位元組，這是 null 值） 的組件位元組。  
   
  `assemPdb`  
- [out] Returns an `IEEDataStorage` object containing the symbol store information for this object (this is a null value if no symbol store is available).  
+ [out]傳回`IEEDataStorage`物件，其中包含符號儲存這個物件的資訊 （如果沒有符號存放區功能，這是 null 值）。  
   
  `className`  
- [out] Returns the class name containing this object.  
+ [out]傳回包含此物件的類別名稱。  
   
  `alr`  
- [out] Returns a value from the [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeration indicating the location of the assembly.  
+ [out]傳回值，從[ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)列舉類型，表示組件的位置。  
   
  `replacementOk`  
- [out] Returns nonzero (`TRUE`) if this object's value can be changed; zero (`FALSE`) if the object is read-only.  
+ [out]傳回非零值 (`TRUE`) 可以變更此物件的值; 如果為零 (`FALSE`) 的物件是否唯讀。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- This method is used by type visualizers to instantiate a managed viewer.  
+## <a name="remarks"></a>備註  
+ 類型的視覺化檢視使用這個方法來具現化的受管理的檢視器。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)   
  [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)   
  [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

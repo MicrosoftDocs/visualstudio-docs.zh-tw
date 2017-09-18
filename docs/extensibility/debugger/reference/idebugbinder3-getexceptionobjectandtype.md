@@ -1,73 +1,56 @@
 ---
-title: IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBinder3::GetExceptionObjectAndType
-helpviewer_keywords:
-- IDebugBinder3::GetExceptionObjectAndType method
+title: "IDebugBinder3::GetExceptionObjectAndType | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBinder3::GetExceptionObjectAndType"
+helpviewer_keywords: 
+  - "IDebugBinder3::GetExceptionObjectAndType 方法"
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a2464bd638f57c059755fbe2659a4317af0ec0de
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
-This method retrieves the exception associated with an object, if any.  
+# IDebugBinder3::GetExceptionObjectAndType
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+如果有的話，這個方法會擷取與物件相關聯的例外狀況。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetExceptionObjectAndType(  
-   IDebugObject** ppException,  
-   IDebugField**  ppField  
+HRESULT GetExceptionObjectAndType(  
+   IDebugObject** ppException,  
+   IDebugField**  ppField  
 );  
 ```  
   
-```csharp  
-int GetExceptionObjectAndType(  
-   out IDebugObject ppException,  
-   out IDebugField  ppField  
+```c#  
+int GetExceptionObjectAndType(  
+   out IDebugObject ppException,  
+   out IDebugField  ppField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ppException`  
- [out] Returns the object representing the exception.  
+ \[\] out傳回物件，表示例外狀況。  
   
  `ppField`  
- [out] Returns the object representing a specific field that may have caused the exception (this may be a null value).  
+ \[\] out傳回代表特定的欄位可能會造成例外狀況 \(這可能是空值\) 的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
 > [!NOTE]
->  To verify whether there is an exception, check the value returned by `ppException`: if it is a null value, then no exception is associated with this object.  
+>  如果要確認是否有例外狀況，請檢查所傳回的值`ppException`： 如果是 null 值，那麼任何例外狀況就不是這個物件相關聯。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,172 +1,169 @@
 ---
-title: Customizing Element Creation and Movement | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.dsltools.dsldesigner.elementmergedirective
-helpviewer_keywords:
-- Domain-Specific Language, element merge directives
+title: "自訂項目的建立和移動 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.dsltools.dsldesigner.elementmergedirective"
+helpviewer_keywords: 
+  - "定義域專屬語言，項目合併指示詞"
 ms.assetid: cbd28f15-dfd7-46bd-ab79-5430e3ed83c8
 caps.latest.revision: 36
-author: alancameronwills
-ms.author: awills
-manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d678e05046a367a722a586d13a50ef7bf0aabc79
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 36
 ---
-# <a name="customizing-element-creation-and-movement"></a>Customizing Element Creation and Movement
-You can allow an element to be dragged onto another, either from the toolbox or in a paste or move operation. You can have the moved elements linked to the target elements, using the relationships that you specify.  
+# 自訂項目的建立和移動
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以允許的項目拖曳到另一個，從 [工具箱]，或是在貼上或移動作業。 您可以移動的項目連結至目標項目中，使用您指定的關聯性。  
   
- An element merge directive (EMD) specifies what happens when one model element is *merged* into another model element. This happens when:  
+ 項目合併指示詞 (EMD) 可讓您指定一個模型項目時，會發生什麼事 *合併* 到另一個模型項目。 發生這種情況時︰  
   
--   The user drags from the toolbox onto the diagram or a shape.  
+-   使用者將從 [工具箱] 拖曳至圖表或圖形。  
   
--   The user creates an element by using an Add menu in the explorer or a compartment shape.  
+-   使用者建立的項目，使用 [總管] 或 [區間圖形中的 [加入] 功能表。  
   
--   The user moves an item from one swimlane to another.  
+-   使用者會從一個泳道項目移到另一個。  
   
--   The user pastes an element.  
+-   使用者貼上項目。  
   
--   Your program code calls the element merge directive.  
+-   您的程式碼會呼叫項目合併指示詞。  
   
- Although the creation operations might seem to be different from the copy operations, they actually work in the same way. When an element is added, for example from the toolbox, a prototype of it is replicated. The prototype is merged into the model in the same manner as elements that have been copied from another part of the model.  
+ 雖然建立作業似乎與複製作業不同，它們實際運作方式相同。 已新增的項目，例如從 [工具箱] 中，它的原型會複寫時。 原型併入模型中，做為模型的另一個組件已複製的項目相同的方式。  
   
- The responsibility of an EMD is to decide how an object or group of objects should be merged into a particular location in the model. In particular, it decides what relationships should be instantiated to link the merged group into the model. You can also customize it to set properties and to create additional objects.  
+ EMD 的責任是決定如何將物件群組應該合併至模型中的特定位置。 特別是，它會決定哪些關聯性應該具現化，將合併的群組連結至模型。 您也可以自訂，以設定屬性，並建立其他物件。  
   
- ![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
-The role of an Element Merge Directive  
+ ![DSL & #45。EMD &#95;合併](../modeling/media/dsl-emd_merge.png "DSL-EMD_Merge")  
+角色的項目合併指示詞  
   
- An EMD is generated automatically when you define an embedding relationship. This default EMD creates an instance of the relationship when users add new child instances to the parent. You can modify these default EMDs, for example by adding custom code.  
+ 當您定義內嵌關聯性時，會自動產生 EMD。 EMD 這個預設值建立關聯性的執行個體，當使用者將新的子執行個體加入父代。 您可以修改這些預設 EMDs，例如加入自訂程式碼。  
   
- You can also add your own EMDs in the DSL definition, to let users drag or paste different combinations of merged and receiving classes.  
+ 您也可以加入您自己 EMDs 在 DSL 定義中，若要讓使用者拖曳或貼上合併和接收類別的不同組合。  
   
-## <a name="defining-an-element-merge-directive"></a>Defining an Element Merge Directive  
- You can add element merge directives to domain classes, domain relationships, shapes, connectors, and diagrams. You can add or find them in DSL Explorer under the receiving domain class. The receiving class is the domain class of the element that is already in the model, and onto which the new or copied element will be merged.  
+## <a name="defining-an-element-merge-directive"></a>定義項目合併指示詞  
+ 您可以將項目合併指示詞加入至網域類別、 網域關聯性、 圖形、 連接器和圖表。 您可以新增或 DSL 總管] 中的接收網域類別底下找到它們。 接收的類別是網域類別已在模型中，並拖曳至新的或複製的項目合併的項目。  
   
- ![DSL&#45;EMD&#95;Details](../modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
+ ![DSL & #45。EMD &#95; 詳細資料](~/modeling/media/dsl-emd_details.png "DSL-EMD_Details")  
   
- The **Indexing Class** is the domain class of elements that can be merged into members of the receiving class. Instances of subclasses of the Indexing Class will also be merged by this EMD, unless you set **Applies to subclasses** to False.  
+  **索引類別** 是項目，可以合併到接收類別成員的網域類別。 編製索引的類別的子類別的執行個體將也由這個 EMD，合併，除非您將設定 **子類別化適用於** 為 False。  
   
- There are two kinds of merge directive:  
+ 有兩種類型的合併指示詞︰  
   
--   A **Process Merge** directive specifies the relationships by which the new element should be linked into the tree.  
+-   A **合併程序** 指示詞會指定到樹狀結構中，新的項目應連結的關聯性。  
   
--   A **Forward Merge** directive redirects the new element to another receiving element, typically a parent.  
+-   A **向前合併** 指示詞將新的項目重新導向至另一個接收項目，通常是父代。  
   
- You can add custom code to merge directives:  
+ 您可以加入自訂程式碼來合併指示詞︰  
   
--   Set **Uses custom accept** to add your own code to determine whether a particular instance of the indexing element should be merged into the target element. When the user drags from the toolbox, the "invalid" pointer shows if your code disallows the merge.  
+-   設定 **使用自訂接受** 加入您自己的程式碼，以判斷特定的執行個體，編製索引的項目是否應該合併至目標項目。 當使用者從 [工具箱] 拖曳時，「 無效 」 的指標會顯示是否您的程式碼就不允許合併。  
   
-     For example, you could allow the merge only when the receiving element is in a particular state.  
+     例如，您可以在接收的項目處於特定狀態時，才允許合併。  
   
--   Set **Uses custom merge** to add provide own code to define the changes that are made to the model when the merge is performed.  
+-   設定 **使用自訂合併** 將提供自己的程式碼來定義時執行合併模型所做的變更。  
   
-     For example, you could set properties in the merged element by using data from its new location in the model.  
+     比方說，您可以使用從模型中的新位置的資料，合併的項目中設定屬性。  
   
 > [!NOTE]
->  If you write custom merge code, it affects only merges that are performed by using this EMD. If there are other EMDs that merge the same type of object, or if there is other custom code that creates these objects without using the EMD, then they will not be affected by your custom merge code.  
+>  如果您撰寫自訂的合併程式碼，它會影響可利用此 EMD 來執行的唯一合併。 如果合併相同類型的物件，其他 EMDs，或如果沒有其他自訂程式碼會建立這些物件，而不需使用 EMD，則它們將不會受到您的自訂合併程式碼。  
 >   
->  If you want to make sure that a new element or new relationship is always processed by your custom code, consider defining an `AddRule` on the embedding relationship and a `DeleteRule` on the element's domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+>  如果您想要確保新的項目或新的關聯性一律處理您的自訂程式碼，請考慮定義 `AddRule` 上內嵌關聯性和 `DeleteRule` 上的項目網域類別。 如需詳細資訊，請參閱 [規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-## <a name="example-defining-an-emd-without-custom-code"></a>Example: Defining an EMD without custom code  
- The following example lets users create an element and a connector at the same time by dragging from the toolbox onto an existing shape. The example adds an EMD to the DSL Definition. Before this modification, users can drag tools onto the diagram, but not onto existing shapes.  
+## <a name="example-defining-an-emd-without-custom-code"></a>範例︰ 定義 EMD 不需要自訂程式碼  
+ 下列範例可讓使用者在同一時間建立項目連接器，從 [工具箱] 拖曳到現有的圖形拖曳。 此範例會將 EMD 加入至 DSL 定義。 之前這個修改之後，使用者可以將工具拖曳至圖表，但不是到現有的圖形。  
   
- Users can also paste elements onto other elements.  
+ 使用者也可以貼上項目拖曳至其他項目。  
   
-#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>To let users create an element and a connector at the same time  
+#### <a name="to-let-users-create-an-element-and-a-connector-at-the-same-time"></a>若要讓使用者能夠同時建立一個項目和連接器  
   
-1.  Create a new DSL by using the **Minimal Language** solution template.  
+1.  使用建立新的 DSL **最小語言** 方案範本。  
   
-     When you run this DSL, it lets you create shapes and connectors between the shapes. You cannot drag a new **ExampleElement** shape from the toolbox onto an existing shape.  
+     當您執行這個 DSL 時，它可讓您建立的圖形及圖形之間的連接器。 您無法將新 **ExampleElement** 圖形從工具箱拖曳到現有的圖形。  
   
-2.  To let users merge elements onto `ExampleElement` shapes, create a new EMD in the `ExampleElement` domain class:  
+2.  若要讓使用者合併項目拖曳至 `ExampleElement` 圖形，建立在新 EMD `ExampleElement` 網域類別︰  
   
-    1.  In **DSL Explorer**, expand **Domain Classes**. Right-click `ExampleElement` and then click **Add New Element Merge Directive**.  
+    1.  在 **DSL Explorer**, ，依序展開 **網域類別**。 以滑鼠右鍵按一下 `ExampleElement` 然後按一下 [ **加入新項目合併指示詞**。  
   
-    2.  Make sure that the **DSL Details** window is open, so that you can see the details of the new EMD. (Menu: **View**, **Other Windows**, **DSL Details**.)  
+    2.  請確定 **DSL 詳細資料** 視窗已開啟，以便您可以檢視新 EMD 的詳細資訊。 (功能表︰ **檢視**, ，**其他 Windows**, ，**DSL 詳細資料**。)  
   
-3.  Set the **Indexing class** in the DSL Details window, to define what class of elements can be merged onto `ExampleElement` objects.  
+3.  設定 **索引類別** 在 DSL 詳細資料視窗中，以定義哪些類別的項目可以合併到 `ExampleElement` 物件。  
   
-     For this example, select `ExampleElements`, so that the user can drag new elements onto existing elements.  
+     此範例中，選取 `ExampleElements`, ，好讓使用者可以將新項目拖曳至現有的項目。  
   
-     Notice that the Indexing class becomes the name of the EMD in DSL Explorer.  
+     請注意索引類別會變成 EMD DSL 總管] 中的名稱。  
   
-4.  Under **Process merge by creating links**, add two paths:  
+4.  在 **藉由建立連結的程序合併**, ，新增兩個路徑︰  
   
-    1.  One path links the new element to the parent model. The path expression that you need to enter navigates from the existing element, up through the embedding relationship to the parent model. Finally, it specifies the role in the new link to which the new element will be assigned. The path is as follows:  
+    1.  一個路徑會將新的項目連結至父模型。 您必須輸入的路徑運算式巡覽從現有的項目，透過內嵌關聯性的父模型。 最後，它會指派新項目的新連結中指定的角色。 路徑為，如下所示︰  
   
          `ExampleModelHasElements.ExampleModel/!ExampleModel/.Elements`  
   
-    2.  The other path links the new element to the existing element. The path expression specifies the reference relationship and the role to which the new element will be assigned. This path is as follows:  
+    2.  在另一個路徑指向現有項目連結的新項目。 路徑運算式指定的參考關聯性和角色指派新的項目。 此路徑如下所示︰  
   
          `ExampleElementReferencesTargets.Sources`  
   
-     You can use the path navigation tool to create each path:  
+     您可以使用路徑瀏覽工具來建立每個路徑︰  
   
-    1.  Under **Process merge by creating links at paths**, click **\<add path>**.  
+    1.  在 **在路徑中建立連結的程序合併**, ，按一下 [ **\< 新增路徑>**。  
   
-    2.  Click the drop-down arrow to the right of the list item. A tree view appears.  
+    2.  按一下下拉式箭號右邊的清單項目。 樹狀結構檢視會顯示。  
   
-    3.  Expand the nodes in the tree to form the path that you want to specify.  
+    3.  展開成您想要指定的路徑樹狀目錄中的節點。  
   
-5.  Test the DSL:  
+5.  測試 DSL:  
   
-    1.  Press F5 to rebuild and run the solution.  
+    1.  按 F5 以重新建置並執行方案。  
   
-         Rebuilding will take longer than usual because the generated code will be updated from text templates to conform to the new DSL Definition.  
+         重建將會需要較長的時間，因為產生的程式碼會從文字範本，以符合新的 DSL 定義更新。  
   
-    2.  When the experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] has started, open a model file of your DSL. Create some example elements.  
+    2.  當實驗執行個體 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已啟動，請開啟您的 DSL 模型檔。 建立一些範例項目。  
   
-    3.  Drag from the **Example Element** tool onto an existing shape.  
+    3.  拖曳 **範例項目** 工具拖曳到現有的圖形。  
   
-         A new shape appears, and it is linked to the existing shape with a connector.  
+         建立新的圖形會出現，並會連結至現有圖形與連接器。  
   
-    4.  Copy an existing shape. Select another shape and paste.  
+    4.  複製現有的圖形。 選取另一個圖形，並貼上。  
   
-         A copy of the first shape is created.  It has a new name and it is linked to the second shape with a connector.  
+         會建立一份的第一個圖形。  它具有新名稱，它會連結至第二個圖形的連接線。  
   
- Notice the following points from this procedure:  
+ 請注意此程序中的下列各點︰  
   
--   By creating Element Merge Directives, you can allow any class of element to accept any other. The EMD is created in the receiving domain class, and the accepted domain class is specified in the **Index class** field.  
+-   藉由建立項目合併指示詞，您可以允許任何類別接受任何其他項目。 EMD 建立在接收網域類別中，並在指定公認的網域類別 **Index 類別** 欄位。  
   
--   By defining paths, you can specify what links should be used to connect the new element to the existing model.  
+-   藉由定義路徑，您可以指定哪些連結應該用來將新的項目連接到現有的模型。  
   
-     The links that you specify should include one embedding relationship.  
+     您指定的連結應該包含一個內嵌關聯性。  
   
--   The EMD affects both creation from the toolbox and also paste operations.  
+-   EMD 會影響這兩種建立從工具箱以及貼上作業。  
   
-     If you write custom code that creates new elements, you can explicitly invoke the EMD by using the `ElementOperations.Merge` method. This makes sure that your code links new elements into the model in the same way as other operations. For more information, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md).  
+     如果您撰寫自訂程式碼會建立新的項目，您可以明確叫用 EMD 使用 `ElementOperations.Merge` 方法。 如此可確保，您的程式碼中的連結新的項目到模型其他作業相同的方式。 如需詳細資訊，請參閱 [自訂複製行為](../modeling/customizing-copy-behavior.md)。  
   
-## <a name="example-adding-custom-accept-code-to-an-emd"></a>Example: Adding Custom Accept code to an EMD  
- By adding custom code to an EMD, you can define more complex merge behavior. This simple example prevents the user from adding more than a fixed number of elements to the diagram. The example modifies the default EMD that accompanies an embedding relationship.  
+## <a name="example-adding-custom-accept-code-to-an-emd"></a>範例︰ 接受自訂的程式碼加入至 EMD  
+ 將自訂程式碼新增至 EMD，您可以定義更複雜的合併行為。 這個簡單的範例會防止使用者從多個固定數目的項目加入至圖表。 下列範例會修改預設 EMD 隨附一個內嵌關聯性。  
   
-#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>To write Custom Accept code to restrict what the user can add  
+#### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>撰寫自訂接受以限制使用者可以新增的程式碼  
   
-1.  Create a DSL by using the **Minimal Language** solution template. Open the DSL Definition diagram.  
+1.  藉由建立 DSL **最小語言** 方案範本。 開啟 DSL 定義圖。  
   
-2.  In DSL Explorer, expand **Domain Classes**, `ExampleModel`, **Element Merge Directives**. Select the element merge directive that is named `ExampleElement`.  
+2.  在 [DSL 總管] 中，展開 **網域類別**, ，`ExampleModel`, ，**項目合併指示詞**。 選取名為項目合併指示詞 `ExampleElement`。  
   
-     This EMD controls how the user can create new `ExampleElement` objects in the model, for example by dragging from the toolbox.  
+     此 EMD 控制使用者如何建立新 `ExampleElement` 在模型中，例如藉由從 [工具箱] 拖曳的物件。  
   
-3.  In the **DSL Details** window, select **Uses custom accept**.  
+3.  在 **DSL 詳細資料** 視窗中，選取 **使用自訂接受**。  
   
-4.  Rebuild the solution. This will take longer than usual because the generated code will be updated from the model.  
+4.  重建方案。 這會需要較長的時間，因為產生的程式碼將會從模型中更新。  
   
-     A build error will be reported, similar to: "Company.ElementMergeSample.ExampleElement does not contain a definition for CanMergeExampleElement..."  
+     建置錯誤會報告，類似於: 「 Company.ElementMergeSample.ExampleElement 未包含定義 CanMergeExampleElement...」  
   
-     You must implement the method `CanMergeExampleElement`.  
+     您必須實作方法 `CanMergeExampleElement`。  
   
-5.  Create a new code file in the **Dsl** project. Replace its content with the following code and change the namespace to the namespace of your project.  
+5.  建立新的程式碼檔案中 **Dsl** 專案。 以下列程式碼取代其內容，並變更您的專案的命名空間的命名空間。  
   
-    ```csharp  
+    ```c#  
     using Microsoft.VisualStudio.Modeling;  
   
     namespace Company.ElementMergeSample // EDIT.  
@@ -192,48 +189,48 @@ The role of an Element Merge Directive
   
     ```  
   
-     This simple example restricts the number of elements that can be merged into the parent model. For more interesting conditions, the method can inspect any of the properties and links of the receiving object. It can also inspect the properties of the merging elements, which are carried in a <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. For more information about `ElementGroupPrototypes`, see [Customizing Copy Behavior](../modeling/customizing-copy-behavior.md). For more information about how to write code that reads a model, see [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+     這個簡單的範例會限制可以合併到父模型的項目數。 更有趣的條件，此方法可以檢查任何屬性，以及接收物件的連結。 它也可以檢查執行中的合併項目屬性 <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>。 如需詳細資訊 `ElementGroupPrototypes`, ，請參閱 [自訂複製行為](../modeling/customizing-copy-behavior.md)。 如需如何撰寫讀取模型的程式碼的詳細資訊，請參閱 [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
-6.  Test the DSL:  
+6.  測試 DSL:  
   
-    1.  Press F5 to rebuild the solution. When the experimental instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] opens, open an instance of your DSL.  
+    1.  按 F5 以重新建置方案。 當實驗執行個體 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 隨即開啟，並開啟您的 DSL 的執行個體。  
   
-    2.  Create new elements in several ways:  
+    2.  透過數種方式建立新項目︰  
   
-        1.  Drag from the **Example Element** tool onto the diagram.  
+        1.  拖曳 **範例項目** 工具拖曳至圖表。  
   
-        2.  In the **Example Model Explorer**, right-click the root node and then click **Add New Example Element**.  
+        2.  在 **範例模型總管**, ，以滑鼠右鍵按一下根節點，然後按一下 **加入新的範例項目**。  
   
-        3.  Copy and paste an element on the diagram.  
+        3.  複製並貼在圖表上的項目。  
   
-    3.  Verify that you cannot use any of these ways to add more than four elements to the model. This is because they all use the Element Merge Directive.  
+    3.  請確認您無法使用任何這些方法可將四個以上的項目加入至模型。 這是因為它們都使用項目合併指示詞。  
   
-## <a name="example-adding-custom-merge-code-to-an-emd"></a>Example: Adding Custom Merge code to an EMD  
- In custom merge code, you can define what happens when the user drags a tool or pastes onto an element. There are two ways to define a custom merge:  
+## <a name="example-adding-custom-merge-code-to-an-emd"></a>範例︰ 將自訂合併程式碼加入至 EMD  
+ 在自訂的合併程式碼，您可以定義當使用者拖曳工具或貼到項目時，會發生什麼事。 有兩種方式來定義自訂合併︰  
   
-1.  Set **Uses Custom Merge** and supply the required code. Your code replaces the generated merge code. Use this option if you want to completely redefine what the merge does.  
+1.  設定 **使用自訂合併** ，並提供必要的程式碼。 您的程式碼取代產生的合併程式碼。 如果您想要完全重新定義合併的用途，請使用此選項。  
   
-2.  Override the `MergeRelate` method, and optionally the `MergeDisconnect` method. To do this, you must set the **Generates Double Derived** property of the domain class. Your code can call the generated merge code in the base class. Use this option if you want to perform additional operations after the merge has been performed.  
+2.  覆寫 `MergeRelate` 方法，並選擇性地 `MergeDisconnect` 方法。 若要這樣做，您必須設定 **產生雙衍生** 網域類別的屬性。 您的程式碼可以呼叫產生的合併程式碼基底類別中。 如果您想要在執行合併之後，執行額外的操作，請使用此選項。  
   
- These approaches only affect merges that are performed by using this EMD. If you want to affect all ways in which the merged element can be created, an alternative is to define an `AddRule` on the embedding relationship and a `DeleteRule` on the merged domain class. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+ 這些方法只會影響可利用此 EMD 來執行的合併。 如果您想要影響所有的方法可以在其中建立合併的項目，另一個方法是定義 `AddRule` 上內嵌關聯性和 `DeleteRule` 合併的網域類別上。 如需詳細資訊，請參閱 [規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-#### <a name="to-override-mergerelate"></a>To override MergeRelate  
+#### <a name="to-override-mergerelate"></a>若要覆寫 MergeRelate  
   
-1.  In the DSL definition, make sure that you have defined the EMD to which you want to add code. If you want, you can add paths and define custom accept code as described in the previous sections.  
+1.  在 DSL 定義中，請確定您已定義您要加入程式碼的 EMD。 如果您想，您可以將路徑，並定義自訂接受的程式碼，如前一節中所述。  
   
-2.  In the DslDefinition diagram, select the receiving class of the merge. Typically it is the class at the source end of an embedding relationship.  
+2.  在 DslDefinition 圖表中，選取接收合併的類別。 通常它是在來源端的內嵌關聯性類別。  
   
-     For example, in a DSL generated from the Minimal Language solution, select `ExampleModel`.  
+     例如，從最小語言方案所產生的 DSL，在選取 `ExampleModel`。  
   
-3.  In the **Properties** window, set **Generates Double Derived** to **true**.  
+3.  在 **屬性** 視窗中，設定 **產生雙衍生** 至 **true**。  
   
-4.  Rebuild the solution.  
+4.  重建方案。  
   
-5.  Inspect the content of **Dsl\Generated Files\DomainClasses.cs**. Search for methods named `MergeRelate` and examine their contents. This will help you write your own versions.  
+5.  檢查的內容 **Dsl\Generated Files\DomainClasses.cs**。 搜尋方法命名為 `MergeRelate` ，並檢查其內容。 這將協助您撰寫您自己的版本。  
   
-6.  In a new code file, write a partial class for the receiving class, and override the `MergeRelate` method. Remember to call the base method. For example:  
+6.  在新的程式碼檔案中，撰寫接收類別的部分類別並覆寫 `MergeRelate` 方法。 請務必呼叫基底方法。 例如：  
   
-    ```csharp  
+    ```c#  
     partial class ExampleModel  
     {  
       /// <summary>  
@@ -258,66 +255,66 @@ The role of an Element Merge Directive
   
     ```  
   
-#### <a name="to-write-custom-merge-code"></a>To write Custom Merge code  
+#### <a name="to-write-custom-merge-code"></a>撰寫自訂合併程式碼  
   
-1.  In **Dsl\Generated Code\DomainClasses.cs**, inspect methods named `MergeRelate`. These methods create links between a new element and the existing model.  
+1.  在 **Dsl\Generated Code\DomainClasses.cs**, ，檢查方法命名為 `MergeRelate`。 這些方法會建立新的項目與現有的模型之間的連結。  
   
-     Also, inspect methods named `MergeDisconnect`. These methods unlink an element from the model when it is to be deleted.  
+     同時，檢查方法命名為 `MergeDisconnect`。 刪除時，這些方法取消連結從模型項目。  
   
-2.  In **DSL Explorer**, select or create the Element Merge Directive that you want to customize. In the **DSL Details** window, set **Uses Custom Merge**.  
+2.  在 **DSL Explorer**, ，選取或建立項目合併指示詞，您想要自訂。 在 **DSL 詳細資料** 視窗中，設定 **使用自訂合併**。  
   
-     When you set this option, the **Process Merge** and **Forward Merge** options are ignored. Your code is used instead.  
+     當您設定此選項， **合併程序** 和 **向前合併** 選項都會被忽略。 您的程式碼會使用。  
   
-3.  Rebuild the solution. It will take longer than usual because the generated code files will be updated from the model.  
+3.  重建方案。 因為產生的程式碼檔案將會更新模型，它需要較長的時間。  
   
-     Error messages will appear. Double-click the error messages to see the instructions in the generated code. These instructions ask you to supply two methods, `MergeRelate`*YourDomainClass* and `MergeDisconnect`*YourDomainClass*  
+     會出現錯誤訊息。 按兩下錯誤訊息，若要查看產生的程式碼中的指示。 這些指示會要求您提供兩種方法， `MergeRelate`*YourDomainClass* 和 `MergeDisconnect`*YourDomainClass*  
   
-4.  Write the methods in a partial class definition in a separate code file. The examples you inspected earlier should suggest what you need.  
+4.  在不同的程式碼檔案中的部分類別定義中撰寫方法。 應該建議您檢查先前的範例，您的需要。  
   
- Custom merge code will not affect code that creates objects and relationships directly, and it will not affect other EMDs. To make sure that your additional changes are implemented regardless of how the element is created, consider writing an `AddRule` and a `DeleteRule` instead. For more information, see [Rules Propagate Changes Within the Model](../modeling/rules-propagate-changes-within-the-model.md).  
+ 自訂的合併程式碼將不會影響程式碼會直接建立物件和關聯性並不會影響其他 EMDs。 若要確定不論如何建立項目已經實作了其他的變更，請考慮撰寫 `AddRule` 和 `DeleteRule` 改。 如需詳細資訊，請參閱 [規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
-## <a name="redirecting-a-merge-operation"></a>Redirecting a Merge Operation  
- A forward merge directive redirects the target of a merge operation. Typically, the new target is the embedding parent of the initial target.  
+## <a name="redirecting-a-merge-operation"></a>重新導向合併作業  
+ 正向合併指示詞會重新導向合併作業的目標。 一般而言，新的目標是內嵌的初始目標的父系。  
   
- For example, in a DSL that was created with the component diagram template, Ports are embedded in Components. Ports are displayed as small shapes on the edge of a component shape. The user creates ports by dragging the Port tool onto a Component shape. But sometimes, the user mistakenly drags the Port tool onto an existing port, instead of the component, and the operation fails. This is an easy mistake when there are several existing ports. To help the user to avoid this nuisance, you can allow ports to be dragged onto an existing port, but have the action redirected to the parent component. The operation works as if the target element were the component.  
+ 比方說，在使用元件圖範本建立 DSL 連接埠會內嵌在元件中。 連接埠會顯示為 「 元件 」 圖形的邊緣上的小圖形。 使用者建立通訊埠工具拖曳到元件圖形的連接埠。 但某些情況下，使用者不小心拖曳通訊埠工具拖曳至現有的連接埠，而不是元件，以及作業失敗。 有數個現有的連接埠時，這是種易犯錯誤。 為了要避免這個討厭的使用者，您可以允許連接埠，以將它們拖曳至現有的連接埠，但有重新導向至父元件的動作。 運算的運作方式如同目標項目是元件。  
   
- You can create a forward merge directive in the Component Model solution. If you compile and run the original solution, you should see that users can drag any number of **Input Port** or **Output Port** elements from the **Toolbox** to a **Component** element. However, they cannot drag a port to an existing port. The Unavailable pointer alerts them that this move is not enabled. However, you can create a forward merge directive so that a port that is unintentionally dropped on an existing **Input Port** is forwarded to the **Component** element.  
+ 您可以建立正向合併指示詞元件模型方案中。 如果您編譯並執行原始的方案，您應該會看到使用者可以將任何數目的 **輸入連接埠** 或 **輸出連接埠** 項目從 **工具箱** 至 **元件** 項目。 不過，它們無法將連接埠拖曳至現有的連接埠。 無法使用指標警示它們，不會啟用此移動。 不過，您可以建立正向合併指示詞，讓連接埠，會在無意中卸除現有 **輸入連接埠** 轉送到 **元件** 項目。  
   
-#### <a name="to-create-a-forward-merge-directive"></a>To create a forward merge directive  
+#### <a name="to-create-a-forward-merge-directive"></a>若要建立正向合併指示詞  
   
-1.  Create a [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solution by using the Component Model template.  
+1.  建立 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 方案使用 [元件模型] 範本。  
   
-2.  Display the **DSL Explorer** by opening DslDefinition.dsl.  
+2.  顯示 **DSL Explorer** 開啟 DslDefinition.dsl。  
   
-3.  In the **DSL Explorer**, expand **Domain Classes**.  
+3.  在 **DSL Explorer**, ，依序展開 **網域類別**。  
   
-4.  The **ComponentPort** abstract domain class is the base class of both **InPort** and **OutPort**. Right-click **ComponentPort** and then click **Add New Element Merge Directive**.  
+4.   **ComponentPort** 抽象網域類別是基底類別，這兩者的 **InPort** 和 **OutPort**。 以滑鼠右鍵按一下 **ComponentPort** 然後按一下 [ **加入新項目合併指示詞**。  
   
-     A new **Element Merge Directive** node appears under the **Element Merge Directives** node.  
+     新 **項目合併指示詞** 節點會顯示在 **項目合併指示詞** 節點。  
   
-5.  Select the **Element Merge Directive** node and open the **DSL Details** window.  
+5.  選取 **項目合併指示詞** 節點並開啟 **DSL 詳細資料** 視窗。  
   
-6.  In the Indexing class list, select **ComponentPort**.  
+6.  在索引類別清單中，選取 **ComponentPort**。  
   
-7.  Select **Forward merge to a different domain class**.  
+7.  選取 **轉寄到另一個網域類別合併**。  
   
-8.  In the path selection list, expand **ComponentPort**, expand **ComponentHasPorts**, and then select **Component**.  
+8.  在 [路徑] 選取項目清單中，依序展開 **ComponentPort**, ，依序展開 **ComponentHasPorts**, ，然後選取 **元件**。  
   
-     The new path should resemble this one:  
+     新的路徑看起來應該像這一個︰  
   
      **ComponentHasPorts.Component/!Component**  
   
-9. Save the solution, and then transform the templates by clicking the rightmost button on the **Solution Explorer** toolbar.  
+9. 儲存方案，並接著轉換範本最右邊的按鈕，即可 **方案總管] 中** 工具列。  
   
-10. Build and run the solution. A new instance of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] appears.  
+10. 建置並執行方案。 新執行個體 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 隨即出現。  
   
-11. In **Solution Explorer**, open Sample.mydsl. The diagram and the **ComponentLanguage Toolbox** appear.  
+11. 在 **方案總管] 中**, ，開啟 Sample.mydsl。 圖表和 **ComponentLanguage 工具箱** 出現。  
   
-12. Drag an **Input Port** from the **Toolbox** to another **Input Port.** Next, drag an **OutputPort** to an **InputPort** and then to another **OutputPort**.  
+12. 拖放到 **輸入連接埠** 從 **工具箱** 到另一個 **輸入連接埠。** 接著，您可以拖曳 **OutputPort** 至 **InputPort** ，然後將另一個 **OutputPort**。  
   
-     You should not see the Unavailable pointer, and you should be able to drop the new **Input Port** on the existing one. Select the new **Input Port** and drag it to another point on the **Component**.  
+     就不會看到無法使用的指標，而且您應該可以卸除新 **輸入連接埠** 上現有的交易。 選取新 **輸入連接埠** 並將其拖曳至另一個點 **元件**。  
   
-## <a name="see-also"></a>See Also  
- [Navigating and Updating a Model in Program Code](../modeling/navigating-and-updating-a-model-in-program-code.md)   
- [Customizing Tools and the Toolbox](../modeling/customizing-tools-and-the-toolbox.md)   
- [Circuit Diagrams sample DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+## <a name="see-also"></a>請參閱  
+ [巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)   
+ [自訂工具和工具箱](../modeling/customizing-tools-and-the-toolbox.md)   
+ [電路圖表範例 DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

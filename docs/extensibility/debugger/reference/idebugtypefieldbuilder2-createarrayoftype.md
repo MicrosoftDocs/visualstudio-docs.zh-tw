@@ -1,74 +1,57 @@
 ---
-title: IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugTypeFieldBuilder2::CreateArrayOfType
-- CreateArrayOfType
+title: "IDebugTypeFieldBuilder2::CreateArrayOfType | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugTypeFieldBuilder2::CreateArrayOfType"
+  - "CreateArrayOfType"
 ms.assetid: 85166ac9-0bff-49a0-b2fd-ca7f7a8eae4b
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f80332fc2980f18240004507b54c4cbfac731d60
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
-Creates an array of the specified type and size.  
+# IDebugTypeFieldBuilder2::CreateArrayOfType
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+建立指定型別和大小的陣列。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT CreateArrayOfType (  
-   IDebugField*  pTypeField,  
-   DWORD         rank,  
-   IDebugField** pArrayOfTypeField  
+   IDebugField*  pTypeField,  
+   DWORD         rank,  
+   IDebugField** pArrayOfTypeField  
 );  
 ```  
   
-```csharp  
+```c#  
 int CreateArrayOfType (  
-   IDebugField     pTypeField,  
-   uint            rank,  
-   out IDebugField pArrayOfTypeField  
+   IDebugField     pTypeField,  
+   uint            rank,  
+   out IDebugField pArrayOfTypeField  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pTypeField`  
- [in] Type of elements the array will hold.  
+ \[in\]將含有陣列的元素型別。  
   
  `rank`  
- [in] Number of elements in the array.  
+ \[in\]陣列中的項目數目。  
   
  `pArrayOfTypeField`  
- [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objects that represent the new array.  
+ \[\] out傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)代表新陣列的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

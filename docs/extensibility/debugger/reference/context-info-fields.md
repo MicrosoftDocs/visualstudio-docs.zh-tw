@@ -1,106 +1,89 @@
 ---
-title: CONTEXT_INFO_FIELDS | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- CONTEXT_INFO_FIELDS
-helpviewer_keywords:
-- CONTEXT_INFO_FIELDS enumeration
+title: "CONTEXT_INFO_FIELDS | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "CONTEXT_INFO_FIELDS"
+helpviewer_keywords: 
+  - "CONTEXT_INFO_FIELDS 列舉型別"
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 92b8a9e4fa544018e6cfa2baa5e57a9c978dde25
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
-Specifies what information to retrieve about a memory context.  
+# CONTEXT_INFO_FIELDS
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+指定要擷取記憶體內容的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-enum enum_CONTEXT_INFO_FIELDS {   
-   CIF_MODULEURL =       0x00000001,  
-   CIF_FUNCTION =        0x00000002,  
-   CIF_FUNCTIONOFFSET =  0x00000004,  
-   CIF_ADDRESS =         0x00000008,  
-   CIF_ADDRESSOFFSET =   0x00000010,  
-   CIF_ADDRESSABSOLUTE = 0x00000020,  
-   CIF_ALLFIELDS =       0x0000003f  
+```cpp#  
+enum enum_CONTEXT_INFO_FIELDS {   
+   CIF_MODULEURL =       0x00000001,  
+   CIF_FUNCTION =        0x00000002,  
+   CIF_FUNCTIONOFFSET =  0x00000004,  
+   CIF_ADDRESS =         0x00000008,  
+   CIF_ADDRESSOFFSET =   0x00000010,  
+   CIF_ADDRESSABSOLUTE = 0x00000020,  
+   CIF_ALLFIELDS =       0x0000003f  
 };  
 typedef DWORD CONTEXT_INFO_FIELDS;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_CONTEXT_INFO_FIELDS {  
-   CIF_MODULEURL =       0x00000001,  
-   CIF_FUNCTION =        0x00000002,  
-   CIF_FUNCTIONOFFSET =  0x00000004,  
-   CIF_ADDRESS =         0x00000008,  
-   CIF_ADDRESSOFFSET =   0x00000010,  
-   CIF_ADDRESSABSOLUTE = 0x00000020,  
-   CIF_ALLFIELDS =       0x0000003f  
+   CIF_MODULEURL =       0x00000001,  
+   CIF_FUNCTION =        0x00000002,  
+   CIF_FUNCTIONOFFSET =  0x00000004,  
+   CIF_ADDRESS =         0x00000008,  
+   CIF_ADDRESSOFFSET =   0x00000010,  
+   CIF_ADDRESSABSOLUTE = 0x00000020,  
+   CIF_ALLFIELDS =       0x0000003f  
 };  
 ```  
   
-## <a name="members"></a>Members  
- CIF_MODULEURL  
- Initialize/use the `bstrModuleUrl` field of the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure.  
+## Members  
+ CIF\_MODULEURL  
+ 初始化\/使用`bstrModuleUrl`欄位的[CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)結構。  
   
- CIF_FUNCTION  
- Initialize/use the `bstrFunction` field of the `CONTEXT_INFO` structure.  
+ CIF\_FUNCTION  
+ 初始化\/使用`bstrFunction`欄位的`CONTEXT_INFO`結構。  
   
- CIF_FUNCTIONOFFSET  
- Initialize/use the `posFunctionOffset` field of the `CONTEXT_INFO` structure.  
+ CIF\_FUNCTIONOFFSET  
+ 初始化\/使用`posFunctionOffset`欄位的`CONTEXT_INFO`結構。  
   
- CIF_ADDRESS  
- Initialize/use the `bstrAddress` field of the `CONTEXT_INFO` structure.  
+ CIF\_ADDRESS  
+ 初始化\/使用`bstrAddress`欄位的`CONTEXT_INFO`結構。  
   
- CIF_ADDRESSOFFSET  
- Initialize/use the `bstrAddressOffset` field of the `CONTEXT_INFO` structure.  
+ CIF\_ADDRESSOFFSET  
+ 初始化\/使用`bstrAddressOffset`欄位的`CONTEXT_INFO`結構。  
   
- CIF_ALLFIELDS  
- Initialize/use all fields of the `CONTEXT_INFO` structure.  
+ CIF\_ALLFIELDS  
+ 初始化\/使用所有欄位的`CONTEXT_INFO`結構。  
   
-## <a name="remarks"></a>Remarks  
- These values are passed a parameter to the [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) method to indicate which fields of the [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) structure are to be initialized.  
+## 備註  
+ 這些值會傳遞該參數用於[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)方法，以指出哪一個欄位的[CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)結構會進行初始化。  
   
- These flags are also used to indicate which fields of the `CONTEXT_INFO` structure are used and valid when the structure is returned.  
+ 這些旗標也可以用來指出哪一個欄位的`CONTEXT_INFO`結構使用和有效時，會在傳回的結構。  
   
- These values may be combined with a bitwise OR.  
+ 這些值可以結合使用位元 OR。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)   
+## 請參閱  
+ [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)

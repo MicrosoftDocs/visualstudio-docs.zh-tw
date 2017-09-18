@@ -1,105 +1,88 @@
 ---
-title: SccSetOption Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccSetOption
-helpviewer_keywords:
-- SccSetOption function
+title: "SccSetOption 函式 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccSetOption"
+helpviewer_keywords: 
+  - "SccSetOption 函式"
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 66161c3f6de473b51f18b2318d96953c6705e7ef
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccsetoption-function"></a>SccSetOption Function
-This function sets options that control the behavior of the source control plug-in.  
+# SccSetOption 函式
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此函式會將控制的原始檔控制外掛程式行為的選項。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 SCCRTN SccSetOption(  
-   LPVOID pvContext,  
-   LONG   nOption,  
-   LONG   dwVal  
+   LPVOID pvContext,  
+   LONG   nOption,  
+   LONG   dwVal  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[\] in原始檔控制外掛程式內容結構。  
   
  nOption  
- [in] The option that is being set.  
+ \[\] in正在設定選項。  
   
  dwVal  
- [in] Settings for the option.  
+ \[\] in選項的設定。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## 傳回值  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The option was successfully set.|  
-|SCC_I_SHARESUBPROJOK|Returned if `nOption` was `SCC_OPT_SHARESUBPROJ` and the source control plug-in allows the IDE to set the destination folder.|  
-|SCC_E_OPNOTSUPPORTED|The option was not set and should not be relied upon.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|已成功設定選項。|  
+|SCC\_I\_SHARESUBPROJOK|如果傳回 `nOption` 已 `SCC_OPT_SHARESUBPROJ` 和原始檔控制外掛程式可讓 IDE 設定目的地資料夾。|  
+|SCC\_E\_OPNOTSUPPORTED|選項未設定，並不能指望。|  
   
-## <a name="remarks"></a>Remarks  
- The IDE calls this function to control the behavior of the source control plug-in. The first parameter, `nOption`, indicates the value that is being set, while the second, `dwVal`, indicates what to do with that value. The plug-in stores this information associated with a `pvContext``,` so the IDE must call this function after calling the [SccInitialize](../extensibility/sccinitialize-function.md) (but not necessarily after each call to the [SccOpenProject](../extensibility/sccopenproject-function.md)).  
+## 備註  
+ IDE 會呼叫此函式可控制行為的原始檔控制外掛程式。 第一個參數， `nOption`, ，表示正在設定值，第二個， `dwVal`, ，指出如何處理該值。 外掛程式會儲存這項資訊與相關聯 `pvContext``,` 讓 IDE 必須呼叫此函式之後呼叫 [SccInitialize](../extensibility/sccinitialize-function.md) \(但不是一定在每次呼叫之後 [SccOpenProject](../extensibility/sccopenproject-function.md)\)。  
   
- Summary of the options and their values:  
+ 選項及其值的摘要:  
   
-|`nOption`|`dwValue`|Description|  
-|---------------|---------------|-----------------|  
-|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|Enables/disables background event queuing.|  
-|`SCC_OPT_USERDATA`|Arbitrary value|Specifies a user value to be passed to the [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) callback function.|  
-|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|Indicates whether the IDE currently supports canceling an operation.|  
-|`SCC_OPT_NAMECHANGEPFN`|Pointer to the [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) callback function|Sets a pointer to a name-change callback function.|  
-|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|Indicates whether the IDE allows the checking out of its files manually (through the source control user interface) or whether they must be checked out only through the source control plug-in.|  
-|`SCC_OPT_SHARESUBPROJ`|N/A|If the source control plug-in allows the IDE to specify the local project folder, the plug-in returns `SCC_I_SHARESUBPROJOK`.|  
+|`nOption`|`dwValue`|描述|  
+|---------------|---------------|--------|  
+|`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|啟用\/停用背景事件佇列。|  
+|`SCC_OPT_USERDATA`|任意值|指定要傳遞給使用者值 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回呼函式。|  
+|`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指出是否在 IDE 目前支援取消作業。|  
+|`SCC_OPT_NAMECHANGEPFN`|指標 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回呼函式|設定名稱變更的回呼函式的指標。|  
+|`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|表示 IDE 允許超出其檔以手動方式 \(透過原始檔控制使用者介面\) 檢查，或是否它們必須先簽出只能透過原始檔控制外掛程式。|  
+|`SCC_OPT_SHARESUBPROJ`|N\/A|如果原始檔控制外掛程式可讓 IDE，以指定的本機專案資料夾，此外掛程式會傳回 `SCC_I_SHARESUBPROJOK`。|  
   
-## <a name="sccopteventqueue"></a>SCC_OPT_EVENTQUEUE  
- If `nOption` is `SCC_OPT_EVENTQUEUE`, the IDE is disabling (or re-enabling) background processing. For instance, during a compile, the IDE might instruct the source control plug-in to stop on-idle processing of any kind. After the compile, it would re-enable background processing to keep the plug-in's event queue up to date. Corresponding to the `SCC_OPT_EVENTQUEUE` value of `nOption`, there are two possible values for `dwVal`, namely, `SCC_OPT_EQ_ENABLE` and `SCC_OPT_EQ_DISABLE`.  
+## SCC\_OPT\_EVENTQUEUE  
+ 如果 `nOption` 是 `SCC_OPT_EVENTQUEUE`, ，IDE 會停用 \(或重新啟用\) 背景處理。 比方說，在編譯期間 IDE 可能會指示外掛程式，以停止在閒置處理任何種類的原始檔控制。 之後在編譯時，它會重新啟用背景處理來保持最新的隨插即用中的事件佇列。 對應至 `SCC_OPT_EVENTQUEUE` 值 `nOption`, ，有兩個可能的值，如 `dwVal`, ，也就是 `SCC_OPT_EQ_ENABLE` 和 `SCC_OPT_EQ_DISABLE`。  
   
-## <a name="sccopthascancelmode"></a>SCC_OPT_HASCANCELMODE  
- If the value for `nOption` is `SCC_OPT_HASCANCELMODE`, the IDE allows users to cancel long operations. Setting `dwVal` to `SCC_OPT_HCM_NO` (the default) indicates that the IDE has no cancel mode. The source control plug-in must offer its own Cancel button if it wants the user to be able to cancel. `SCC_OPT_HCM_YES` indicates that the IDE provides the ability to cancel an operation, so the SCC plug-in does not need to display its own Cancel button. If the IDE sets `dwVal` to `SCC_OPT_HCM_YES`, it is prepared to respond to `SCC_MSG_STATUS` and `DOCANCEL` messages sent to the `lpTextOutProc` callback function (see [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)). If the IDE does not set this variable, the plug-in should not send these two messages.  
+## SCC\_OPT\_HASCANCELMODE  
+ 如果值 `nOption` 是 `SCC_OPT_HASCANCELMODE`, ，IDE 會允許使用者取消長時間作業。 設定 `dwVal` 至 `SCC_OPT_HCM_NO` \(預設值\) 表示 IDE 有無取消模式。 原始檔控制外掛程式必須在想要能夠取消使用者提供其 \[取消\] 按鈕。`SCC_OPT_HCM_YES` 表示 IDE 可讓您取消作業，因此 SCC 外掛程式不需要以顯示其 \[取消\] 按鈕。 如果在 IDE 設定 `dwVal` 至 `SCC_OPT_HCM_YES`, ，它已準備好要回應 `SCC_MSG_STATUS` 和 `DOCANCEL` 訊息傳送至 `lpTextOutProc` 回呼函式 \(請參閱 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)\)。 如果在 IDE 不會設定這個變數，外掛程式應該傳送這兩個訊息。  
   
-## <a name="sccoptnamechangepfn"></a>SCC_OPT_NAMECHANGEPFN  
- If nOption is set to `SCC_OPT_NAMECHANGEPFN`, and both the source control plug-in and the IDE allow it, the plug-in can actually rename or move a file during a source control operation. The `dwVal` will be set to a function pointer of type [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md). During a source control operation, the plug-in can call this function, passing in three parameters. These are the old name (with fully qualified path) of a file, the new name (with fully qualified path) of that file, and a pointer to information that has relevance to the IDE. The IDE sends in this last pointer by calling `SccSetOption` with `nOption` set to `SCC_OPT_USERDATA`, with `dwVal` pointing to the data. Support for this function is optional. A VSSCI plug-that uses this ability must initialize its function pointer and user data variables to `NULL`, and it must not call a rename function unless it has been given one. It should also be prepared to hold the value it was given or to change it in response to a new call to `SccSetOption`. This will not happen in the middle of a source control command operation, but it may happen between commands.  
+## SCC\_OPT\_NAMECHANGEPFN  
+ 如果 nOption 設為 `SCC_OPT_NAMECHANGEPFN`, ，和原始檔控制外掛程式和 IDE 可讓它、 外掛程式可以實際重新命名或移動檔案在原始檔控制作業。`dwVal` 將型別的函式指標 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md)。 在原始檔控制作業時，外掛程式可以呼叫此函式，在三個參數中傳遞。 這些是舊名稱 \(以完整路徑\) 之檔案的新名稱 \(以完整路徑\) 該檔案，並具有 IDE 的相關資訊的指標。 在 IDE 中這個最後一個指標傳送藉由呼叫 `SccSetOption` 與 `nOption` 設為 `SCC_OPT_USERDATA`, ，與 `dwVal` 指向資料。 此函式的支援是選擇性的。 VSSCI 隨插即用的會使用這項功能必須初始化它函式指標和使用者資料的變數來 `NULL`, ，和它必須呼叫 rename 函式，除非它已被授與其中一個。 它應該也準備好來保留它的值，或變更以回應新的呼叫 `SccSetOption`。 這將不會在原始檔控制命令作業，但是命令之間可能發生的時機。  
   
-## <a name="sccoptscccheckoutonly"></a>SCC_OPT_SCCCHECKOUTONLY  
- If nOption is set to `SCC_OPT_SCCCHECKOUTONLY`, the IDE is indicating that the files in the currently open project should never be checked out manually through the source control system's user interface. Instead, the files should be checked out only through the source control plug-in under IDE control. If `dwValue` is set to `SCC_OPT_SCO_NO`, it means that the files should be treated normally by the plug-in and can be checked out through the source control UI. If `dwValue` is set to `SCC_OPT_SCO_YES`, then only the plug-in is allowed to check out files, and the source control system's UI should not be invoked. This is for situations where the IDE might have "pseudo-files" that make sense to check out only through the IDE.  
+## SCC\_OPT\_SCCCHECKOUTONLY  
+ 如果設定為 nOption `SCC_OPT_SCCCHECKOUTONLY`, ，IDE 會指示，目前開啟的專案中的檔案應該永遠不會被簽出以手動方式透過原始檔控制系統的使用者介面。 相反地，檔案應該只能透過外掛程式 IDE 控制下的原始檔控制簽出。 如果 `dwValue` 設為 `SCC_OPT_SCO_NO`, ，這表示檔案通常外掛程式中處理，並且可以透過 UI 原始檔控制簽出。 如果 `dwValue` 設為 `SCC_OPT_SCO_YES`, ，然後只外掛程式允許簽出檔案，而原始檔控制系統 UI 應該不會叫用。 這是針對的 IDE 可能具有 「 虛擬檔案 」 對簽出，只能透過 IDE 的情況。  
   
-## <a name="sccoptsharesubproj"></a>SCC_OPT_SHARESUBPROJ  
- If`nOption` is set to `SCC_OPT_SHARESUBPROJ`, the IDE is testing whether the source control plug-in can use a specified local folder when adding files from source control. The value of the `dwVal` parameter does not matter in this case. If the plug-in allows the IDE to specify the local destination folder where the files will be added from source control when the [SccAddFromScc](../extensibility/sccaddfromscc-function.md) is called, then the plug-in must return `SCC_I_SHARESUBPROJOK` when the `SccSetOption` function is called. The IDE then uses the `lplpFileNames` parameter of the `SccAddFromScc` function to pass in the destination folder. The plug-in uses that destination folder to place the files added from source control. If the plug-in does not return `SCC_I_SHARESUBPROJOK` when the `SCC_OPT_SHARESUBPROJ` option is set, the IDE assumes that the plug-in is able to add files only in the current local folder.  
+## SCC\_OPT\_SHARESUBPROJ  
+ 如果`nOption` 設為 `SCC_OPT_SHARESUBPROJ`, ，IDE 會測試是否從原始檔控制新增檔案時，原始檔控制外掛程式可以使用指定的本機資料夾。 值 `dwVal` 在此情況下並不重要參數。 如果外掛程式可讓 IDE，來指定本機目的地資料夾所在的檔案會新增從來源控制何時 [SccAddFromScc](../extensibility/sccaddfromscc-function.md) 呼叫，則必須傳回外掛程式 `SCC_I_SHARESUBPROJOK` 時 `SccSetOption` 函式呼叫。 接著會使用 IDE `lplpFileNames` 參數 `SccAddFromScc` 傳遞目的地資料夾中的函式。 外掛程式會使用該目的地資料夾將加入從原始檔控制的檔案。 如果外掛程式不會傳回 `SCC_I_SHARESUBPROJOK` 時 `SCC_OPT_SHARESUBPROJ` 設定選項時，IDE 會假設外掛程式是能夠將檔案加入只在目前的本機資料夾中。  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## 請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)   
  [SccAddFromScc](../extensibility/sccaddfromscc-function.md)   

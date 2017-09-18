@@ -1,74 +1,57 @@
 ---
-title: IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- CreateStringObjectWithLength
-- IDebugFunctionObject2::CreateStringObjectWithLength
+title: "IDebugFunctionObject2::CreateStringObjectWithLength | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "CreateStringObjectWithLength"
+  - "IDebugFunctionObject2::CreateStringObjectWithLength"
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7db805085c5b5a81b37be04f4eabeacefee0a684
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-Creates a string object that has the specified length.  
+# IDebugFunctionObject2::CreateStringObjectWithLength
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+建立具有指定之長度的字串物件。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT CreateStringObjectWithLength (  
-   LPCOLESTR      pcstrString,  
-   UINT           uiLength,  
-   IDebugObject** ppObject  
+   LPCOLESTR      pcstrString,  
+   UINT           uiLength,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```csharp  
+```c#  
 int CreateStringObjectWithLength (  
-   string           pcstrString,  
-   uint             uiLength,  
-   out IDebugObject ppObject  
+   string           pcstrString,  
+   uint             uiLength,  
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pcstrString`  
- [in] The string value for the string object.  
+ \[in\]字串物件的字串值。  
   
  `uiLength`  
- [in] The length of the string in bytes.  
+ \[in\]字串，以位元組為單位的長度。  
   
  `ppObject`  
- [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object that represents the newly created string object.  
+ \[\] out傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件，表示新建立的字串物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

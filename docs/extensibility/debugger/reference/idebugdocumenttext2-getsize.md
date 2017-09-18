@@ -1,75 +1,58 @@
 ---
-title: IDebugDocumentText2::GetSize | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugDocumentText2::GetSize
-helpviewer_keywords:
-- IDebugDocumentText2::GetSize
+title: "IDebugDocumentText2::GetSize | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugDocumentText2::GetSize"
+helpviewer_keywords: 
+  - "IDebugDocumentText2::GetSize"
 ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b017d9a867dd9d441eade16a980f605f3ef40c45
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
-Retrieves the size of the text at this position in the document.  
+# IDebugDocumentText2::GetSize
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取文件中的該位置的文字大小。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetSize(   
-   ULONG* pcNumLines,  
-   ULONG* pcNumChars  
+```cpp#  
+HRESULT GetSize(   
+   ULONG* pcNumLines,  
+   ULONG* pcNumChars  
 );  
 ```  
   
-```csharp  
-int GetSize(   
-   ref uint pcNumLines,  
-   ref uint pcNumChars  
+```c#  
+int GetSize(   
+   ref uint pcNumLines,  
+   ref uint pcNumChars  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pcNumLines`  
- [out] Returns the number of lines of text.  
+ \[\] out傳回的文字行數。  
   
  `pcNumChars`  
- [out] Returns the number of characters of text.  
+ \[\] out傳回文字的字元數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- [C++ only] If a particular value is not desired, pass a NULL for the parameter.  
+## 備註  
+ \[只有 c \+ \+\]如果不需要特定的值，傳遞 null 值的參數。  
   
- [C# only] Both parameters must be specified.  
+ \[C\# 只\]必須指定兩個參數。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

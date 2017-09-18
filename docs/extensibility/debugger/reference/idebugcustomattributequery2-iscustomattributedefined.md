@@ -1,68 +1,51 @@
 ---
-title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
+helpviewer_keywords: 
+  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4ba562b125d9a619957c460a32ce00b8c2698e30
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Determines whether a custom attribute exists by name.  
+# IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+判斷自訂屬性是否存在的名稱。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp#  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```csharp  
+```c#  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pszCustomAttributeName`  
- [in] A string containing the name of the custom attribute to find.  
+ \[in\]字串，包含要尋找的自訂屬性的名稱。  
   
-## <a name="return-value"></a>Return Value  
- Returns S_OK if the custom attribute is defined on this field, otherwise returns S_FALSE.  
+## 傳回值  
+ 傳回 S\_OK 如果自訂屬性定義在此欄位中，否則會傳回 S\_FALSE。  
   
-## <a name="remarks"></a>Remarks  
- To obtain the attribute bytes associated with the custom attribute, call the [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) method.  
+## 備註  
+ 若要取得屬性的位元組相關聯的自訂屬性，呼叫[GetCustomAttributeByName](../Topic/IDebugCustomAttributeQuery2::GetCustomAttributeByName.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

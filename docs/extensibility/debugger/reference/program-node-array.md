@@ -1,80 +1,63 @@
 ---
-title: PROGRAM_NODE_ARRAY | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- PROGRAM_NODE_ARRAY
-helpviewer_keywords:
-- PROGRAM_NODE_ARRAY structure
+title: "PROGRAM_NODE_ARRAY | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "PROGRAM_NODE_ARRAY"
+helpviewer_keywords: 
+  - "PROGRAM_NODE_ARRAY 結構"
 ms.assetid: 8eeea600-eda5-4b7c-868a-0b86d177b0a5
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c99a11588cca832e15d82ff147f8900588494db6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="programnodearray"></a>PROGRAM_NODE_ARRAY
-Contains an array of objects that describe programs of interest.  
+# PROGRAM_NODE_ARRAY
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+包含描述感興趣的程式的物件陣列。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-typedef struct tagPROGRAM_NODE_ARRAY {  
-   DWORD                dwCount;  
-   IDebugProgramNode2** Members;  
-} PROGRAM_NODE_ARRAY;  
+typedef struct tagPROGRAM_NODE_ARRAY {  
+   DWORD                dwCount;  
+   IDebugProgramNode2** Members;  
+} PROGRAM_NODE_ARRAY;  
 ```  
   
-```csharp  
-public struct tagPROGRAM_NODE_ARRAY {  
-   public uint                 dwCount;  
-   public IDebugProgramNode2[] Members;  
+```c#  
+public struct tagPROGRAM_NODE_ARRAY {  
+   public uint                 dwCount;  
+   public IDebugProgramNode2[] Members;  
 }  
 ```  
   
-## <a name="members"></a>Members  
+## Members  
  dwCount  
- Number of objects in the `Members` array.  
+ 在 \[物件數目`Members`陣列。  
   
  Members  
- An array of [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objects describing the programs requested.  
+ 陣列的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件描述所要求的程式。  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure which in turn is filled in by a call to the [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) method.  
+## 備註  
+ 在這種結構屬於[PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)結構，以便依序填入呼叫[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
+## 請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

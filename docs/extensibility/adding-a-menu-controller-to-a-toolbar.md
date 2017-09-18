@@ -1,65 +1,48 @@
 ---
-title: Adding a Menu Controller to a Toolbar | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- toolbars [Visual Studio], adding menu controllers
-- menus, adding menu controllers to toolbars
-- menu controllers, adding to toolbars
+title: "加入至工具列功能表控制器 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "工具列 [Visual Studio]，新增功能表控制器"
+  - "將功能表控制器加入至工具列功能表"
+  - "功能表控制站，將加入至工具列"
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 38
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 998583202afcbf9c99f87d6bbdfcbb5747718bfa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 38
 ---
-# <a name="adding-a-menu-controller-to-a-toolbar"></a>Adding a Menu Controller to a Toolbar
-This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) walkthrough and shows how to add a menu controller to the tool window toolbar. The steps shown here also can be applied to the toolbar that is created in the [Adding a Toolbar](../extensibility/adding-a-toolbar.md) walkthrough.  
+# 加入至工具列功能表控制器
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此逐步解說建立於 [將工具列新增至工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md) 逐步解說，並示範如何將功能表控制站新增至工具\] 視窗工具列。 如下所示的步驟也可以套用至中建立的工具列 [新增工具列](../extensibility/adding-a-toolbar.md) 逐步解說。  
   
- A menu controller is a split control. The left side of the menu controller shows the last-used command, and it can be run by clicking it. The right side of the menu controller is an arrow that, when clicked, opens a list of additional commands. When you click a command on the list, the command runs, and it replaces the command on the left side of the menu controller. In this way, the menu controller operates like a command button that always shows the last-used command from a list.  
+ 功能表控制器是分割控制項。 功能表控制站的左側顯示上次使用的命令，並按一下就可以執行。 右側功能表控制器是箭號，按一下就會開啟其他命令的清單。 當您按一下清單中，執行命令的命令，且會取代左側功能表控制站上的命令。 如此一來，功能表控制器的運作方式相似一定會顯示上次使用的命令，從清單中的命令按鈕。  
   
- Menu controllers can appear on menus but they are most often used on toolbars.  
+ 功能表控制器可以出現在功能表上，但他們最常使用工具列上。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## 必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-menu-controller"></a>Creating a Menu Controller  
+## 建立功能表控制站  
   
-#### <a name="to-create-a-menu-controller"></a>To create a menu controller  
+#### 建立功能表控制站  
   
-1.  Follow the procedures described in [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md) to create a tool window that has a toolbar.  
+1.  請依照下列所述的程序 [將工具列新增至工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md) 來建立具有工具列的工具視窗。  
   
-2.  In TWTestCommandPackage.vsct, go to the Symbols section. In the GuidSymbol element named **guidTWTestCommandPackageCmdSet**, declare your menu controller, menu controller group, and three menu items.  
+2.  在 TWTestCommandPackage.vsct，移至 \[符號\] 區段。 在名為 GuidSymbol 元素 **guidTWTestCommandPackageCmdSet**, ，宣告您\] 功能表上的控制器、 功能表控制站群組，以及三個功能表項目。  
   
     ```xml  
     <IDSymbol name="TestMenuController" value="0x1300" /><IDSymbol name="TestMenuControllerGroup" value="0x1060" /><IDSymbol name="cmdidMCItem1" value="0x0130" /><IDSymbol name="cmdidMCItem2" value="0x0131" /><IDSymbol name="cmdidMCItem3" value="0x0132" />  
     ```  
   
-3.  In the Menus section, after the last menu entry, define the menu controller as a menu.  
+3.  在 \[功能表\] 區段中，在最後一個功能表項目之後定義功能表控制器為功能表。  
   
     ```xml  
     <Menu guid="guidTWTestCommandPackageCmdSet" id="TestMenuController" priority="0x0100" type="MenuController">  
@@ -74,9 +57,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Menu>  
     ```  
   
-     The `TextChanges` and `TextIsAnchorCommand` flags must be included to enable the menu controller to reflect the last selected command.  
+     `TextChanges` 和 `TextIsAnchorCommand` 旗標必須是包含啟用功能表控制器，以反映所選取的最後一個命令。  
   
-4.  In the Groups section, after the last group entry, add the menu controller group.  
+4.  群組中一節，在最後一個群組項目之後加入功能表控制站群組。  
   
     ```xml  
     <Group guid="guidTWTestCommandPackageCmdSet" id="TestMenuControllerGroup" priority="0x000">  
@@ -84,9 +67,9 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Group>  
     ```  
   
-     By setting the menu controller as the parent, any commands placed in this group will appear in the menu controller. The `priority` attribute is omitted, which sets it to the default value of 0, because it will be the only group on the menu controller.  
+     藉由設定功能表控制站做為父系，放在這個群組中任何命令會出現在功能表上的控制器。`priority` 省略屬性，則可設定為預設值為 0，因為它將會在功能表上的控制站上唯一的群組。  
   
-5.  In the Buttons section, after the last button entry, add a Button element for each of your menu items.  
+5.  在按鈕\] 區段中，在最後一個按鈕項目之後加入按鈕項目每個功能表項目。  
   
     ```xml  
     <Button guid="guidTWTestCommandPackageCmdSet" id="cmdidMCItem1" priority="0x0000" type="Button">  
@@ -118,35 +101,35 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     </Button>  
     ```  
   
-6.  At this point, you can look at the menu controller. Build the project and start debugging. You should see the experimental instance.  
+6.  此時，您可以查看功能表控制站。 建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
   
-    1.  On the **View / Other Windows** menu, open **Test ToolWindow**.  
+    1.  在 **檢視 \/ 其他視窗** \] 功能表上，開啟 **測試工具視窗**。  
   
-    2.  The menu controller appears on the toolbar in the tool window.  
+    2.  功能表控制站會出現在 \[工具\] 視窗工具列上。  
   
-    3.  Click the arrow on the right-hand side of the menu controller to see the three possible commands.  
+    3.  按一下功能表控制站，以查看可能的三個命令的右邊的箭號。  
   
-     Notice that when you click a command, the title of the menu controller changes to display that command. In the next section, we will add the code to activate these commands.  
+     請注意當您按一下命令，以顯示該命令變更功能表控制器的標題。 下一節中，我們將新增程式碼啟動這些命令。  
   
-## <a name="implementing-the-menu-controller-commands"></a>Implementing the Menu Controller Commands  
+## 實作功能表控制器命令  
   
-1.  In TWTestCommandPackageGuids.cs, add command IDs for your three menu items after the existing command IDs.  
+1.  在 TWTestCommandPackageGuids.cs，加入三個功能表項目的命令 Id 後現有的命令 Id。  
   
-    ```csharp  
-    public const int cmdidMCItem1 = 0x130;  
-    public const int cmdidMCItem2 = 0x131;  
-    public const int cmdidMCItem3 = 0x132;  
+    ```c#  
+    public const int cmdidMCItem1 = 0x130;  
+    public const int cmdidMCItem2 = 0x131;  
+    public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  In TWTestCommand.cs, add the following code at the top of the TWTestCommand class.  
+2.  在 TWTestCommand.cs，加入下列程式碼頂端的 TWTestCommand 類別。  
   
-    ```csharp  
-    private int currentMCCommand; // The currently selected menu controller command  
+    ```c#  
+    private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  In the TWTestCommand constructor, after the last call to the `AddCommand` method, add code to route the events for each command through the same handlers.  
+3.  在 TWTestCommand 建構函式的最後一個通話之後 `AddCommand` 方法中，加入程式碼來路由傳送每個命令相同的處理常式的事件。  
   
-    ```csharp  
+    ```c#  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
         TWTestCommandPackageGuids.cmdidMCItem3; i++)  
     {  
@@ -156,7 +139,7 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
           EventHandler(OnMCItemClicked), cmdID);  
         mc.BeforeQueryStatus += new EventHandler(OnMCItemQueryStatus);  
         commandService.AddCommand(mc);  
-        // The first item is, by default, checked.   
+        // The first item is, by default, checked.   
         if (TWTestCommandPackageGuids.cmdidMCItem1 == i)  
         {  
             mc.Checked = true;  
@@ -165,10 +148,10 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-4.  Add an event handler to the TWTestCommand class to mark the selected command as checked.  
+4.  將事件處理常式加入 TWTestCommand 類別標示為已檢查選取的命令。  
   
-    ```csharp  
-    private void OnMCItemQueryStatus(object sender, EventArgs e)  
+    ```c#  
+    private void OnMCItemQueryStatus(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -178,10 +161,10 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-5.  Add an event handler that displays a MessageBox when the user selects a command on the menu controller:  
+5.  加入事件處理常式，會顯示訊息方塊，當使用者選取功能表控制站上的命令 ︰  
   
-    ```csharp  
-    private void OnMCItemClicked(object sender, EventArgs e)  
+    ```c#  
+    private void OnMCItemClicked(object sender, EventArgs e)  
     {  
         OleMenuCommand mc = sender as OleMenuCommand;  
         if (null != mc)  
@@ -228,20 +211,20 @@ This walkthrough builds on the [Adding a Toolbar to a Tool Window](../extensibil
     }  
     ```  
   
-## <a name="testing-the-menu-controller"></a>Testing the Menu Controller  
+## 測試功能表控制器  
   
-1.  Build the project and start debugging. You should see the experimental instance.  
+1.  建置此專案並開始偵錯。 您應該會看到的實驗執行個體。  
   
-2.  Open the **Test ToolWindow** on the **View / Other Windows** menu.  
+2.  開啟 **測試工具視窗** 上 **檢視 \/ 其他視窗** 功能表。  
   
-     The menu controller appears in the toolbar in the tool window and displays **MC Item 1**.  
+     會出現在 \[工具\] 視窗中的工具列\] 功能表上的控制器，並顯示 **MC 項目 1**。  
   
-3.  Click the menu controller button to the left of the arrow.  
+3.  按一下功能表控制器按鈕向左箭號。  
   
-     You should see three items, the first of which is selected and has a highlight box around its icon. Click **MC Item 3**.  
+     您應該會看到三個項目，其中第一個選取和已反白顯示周圍的方塊圖示。 按一下 \[ **MC 項目 3**。  
   
-     A dialog box appears with the message **You selected Menu controller Item 3**. Notice that the message corresponds to the text on the menu controller button. The menu controller button now displays **MC Item 3**.  
+     訊息會出現一個對話方塊 **選取功能表控制器項目 3**。 請注意，訊息就會對應到功能表控制器按鈕上的文字。 現在會顯示功能表控制器按鈕 **MC 項目 3**。  
   
-## <a name="see-also"></a>See Also  
- [Adding a Toolbar to a Tool Window](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Adding a Toolbar](../extensibility/adding-a-toolbar.md)
+## 請參閱  
+ [將工具列新增至工具視窗](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [新增工具列](../extensibility/adding-a-toolbar.md)

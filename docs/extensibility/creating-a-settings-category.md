@@ -1,82 +1,65 @@
 ---
-title: Creating a Settings Category | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- profile settings, creating categories
+title: "建立設定分類 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "設定檔設定，建立類別目錄"
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 39
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6a5d6b839eb021bded2627241b6f7cbfdbfcbac3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 39
 ---
-# <a name="creating-a-settings-category"></a>Creating a Settings Category
-In this walkthrough you create a Visual Studio settings category and use it to save values to and restore values from a settings file. A settings category is a group of related properties that appear as a "custom settings point"; that is, as a check box in the **Import and Exports Settings** Wizard. (You can find it on the **Tools** menu.) Settings are saved or restored as a category, and individual settings are not displayed in the wizard. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+# 建立設定分類
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+在本逐步解說您建立 Visual Studio 設定類別目錄，並使用它來儲存值，並從設定檔還原值。 設定類別是一群相關的屬性顯示為 「 自訂設定點 」。也就是為核取方塊，在 **匯入和匯出設定** 精靈。 \(您可以找到 **工具** 功能表。\) 設定會儲存或還原為類別，並個別設定不會顯示在精靈中。 如需詳細資訊，請參閱[在 Visual Studio 中自訂開發設定](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
   
- You create a settings category by deriving it from the <xref:Microsoft.VisualStudio.Shell.DialogPage> class.  
+ 從建立設定分類 <xref:Microsoft.VisualStudio.Shell.DialogPage> 類別。  
   
- To start this walkthrough, you must first complete the first section of [Creating an Options Page](../extensibility/creating-an-options-page.md). The resulting Options property grid lets you examine and change the properties in the category. After you save the property category in a settings file, you examine the file to see how the property values are stored.  
+ 若要開始本逐步解說，您必須先完成的第一個區段 [建立選項\] 頁面](../Topic/Creating%20an%20Options%20Page.md)。 產生的選項屬性方格可讓您檢查及變更的類別中的屬性。 設定檔中儲存屬性類別目錄之後，您會檢查檔案以查看儲存屬性值的方式。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## 必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-settings-category"></a>Creating a Settings Category  
- In this section, you use a custom settings point to save and restore the values of the settings category.  
+## 建立設定分類  
+ 本節中，您可以使用自訂設定點來儲存和還原類別設定的值。  
   
-#### <a name="to-create-a-settings-category"></a>To create a settings category  
+#### 若要建立設定類別  
   
-1.  Complete the [Creating an Options Page](../extensibility/creating-an-options-page.md).  
+1.  完成 [建立選項\] 頁面](../Topic/Creating%20an%20Options%20Page.md)。  
   
-2.  Open the VSPackage.resx file and add these three string resources:  
+2.  開啟 VSPackage.resx 檔案並新增下列三個字串資源︰  
   
-    |Name|Value|  
-    |----------|-----------|  
-    |106|My Category|  
-    |107|My Settings|  
-    |108|OptionInteger and OptionFloat|  
+    |名稱|值|  
+    |--------|-------|  
+    |106|我的類別|  
+    |107|我的設定|  
+    |108|OptionInteger 和 OptionFloat|  
   
-     This creates resources that name the category "My Category", the object "My Settings", and the category description "OptionInteger and OptionFloat".  
+     這會建立資源，該名稱為 「 My Category 」 的類別、 物件 「 我的設定 」 和類別描述 「 OptionInteger 和 OptionFloat 」。  
   
     > [!NOTE]
-    >  Of these three, only the category name does not appear in the Import and Export Settings wizard.  
+    >  三者之中，只有類別名稱不在 \[匯入和匯出設定精靈\]。  
   
-3.  In MyToolsOptionsPackage.cs, add a `float` property named `OptionFloat` to the `OptionPageGrid` class, as shown in the following example.  
+3.  在 MyToolsOptionsPackage.cs，加入 `float` 屬性名為 `OptionFloat` 到 `OptionPageGrid` 類別，如下列範例所示。  
   
-    ```csharp  
-    public class OptionPageGrid : DialogPage  
+    ```c#  
+    public class OptionPageGrid : DialogPage  
     {  
-        private int optionInt = 256;  
-        private float optionFloat = 3.14F;  
+        private int optionInt = 256;  
+        private float optionFloat = 3.14F;  
   
         [Category("My Options")]  
         [DisplayName("My Integer option")]  
         [Description("My integer option")]  
-        public int OptionInteger  
+        public int OptionInteger  
         {  
             get { return optionInt; }  
             set { optionInt = value; }  
@@ -84,7 +67,7 @@ In this walkthrough you create a Visual Studio settings category and use it to s
         [Category("My Options")]  
         [DisplayName("My Float option")]  
         [Description("My float option")]  
-        public float OptionFloat  
+        public float OptionFloat  
         {  
             get { return optionFloat; }  
             set { optionFloat = value; }  
@@ -93,81 +76,81 @@ In this walkthrough you create a Visual Studio settings category and use it to s
     ```  
   
     > [!NOTE]
-    >  The `OptionPageGrid` category named "My Category" now consists of the two properties, `OptionInteger` and `OptionFloat`.  
+    >  `OptionPageGrid` 現在名為 「 My Category 」 類別目錄包含兩個屬性， `OptionInteger` 和 `OptionFloat`。  
   
-4.  Add a <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> to the `MyToolsOptionsPackage` class and give it the CategoryName "My Category", give it the ObjectName "My Settings", and set isToolsOptionPage to true. Set the categoryResourceID, objectNameResourceID, and DescriptionResourceID to the corresponding string resource IDs created earlier.  
+4.  新增 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 至 `MyToolsOptionsPackage` 類別和類別名稱 「 My Category 」 給它，讓它 ObjectName 「 我的設定\]，再 isToolsOptionPage 設為 true。 CategoryResourceID、 objectNameResourceID 和 DescriptionResourceID 設對應識別碼稍早建立的字串資源。  
   
-    ```csharp  
+    ```c#  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Build the project and start debugging. In the experimental instance you should see that **My Grid Page** now has both integer and float values.  
+5.  建置此專案並開始偵錯。 實驗執行個體中您應該會看到 **我的格線頁** 現在具有整數和浮點值。  
   
-## <a name="examining-the-settings-file"></a>Examining the Settings File  
- In this section, you export property category values to a settings file. You examine the file and then import the values back into the property category.  
+## 檢查設定檔  
+ 本節中，您可以匯出屬性類別目錄值來設定檔案。 檢查檔案，並再匯入回屬性類別目錄的值。  
   
-1.  Start the project in debug mode by pressing F5. This starts the experimental instance.  
+1.  按 F5 偵錯模式中啟動專案。 這會啟動實驗執行個體。  
   
-2.  Open the **Tools / Options** dialog.  
+2.  開啟 **工具 \/ 選項** \] 對話方塊。  
   
-3.  In the tree view in the left pane, expand **My Category** and then click **My Grid Page**.  
+3.  在樹狀檢視中的左窗格中，依序展開 **My Category** 然後按一下 \[ **我的格線頁**。  
   
-4.  Change the value of **OptionFloat** to 3.1416 and **OptionInteger** to 12. Click **OK**.  
+4.  值變更 **OptionFloat** 至 3.1416 和 **OptionInteger** 到 12。 按一下 \[確定\]。  
   
-5.  On the **Tools** menu, click **Import and Export Settings**.  
+5.  按一下 \[**工具**\] 功能表上的 \[**匯入和匯出設定**\]。  
   
-     The **Import and Export Settings** wizard appears.  
+     **匯入和匯出設定** 精靈\] 隨即出現。  
   
-6.  Make sure **Export selected environment settings** is selected, and then click **Next**.  
+6.  請確定 **匯出選取的環境設定** 已選取，然後按一下 \[ **下一步**。  
   
-     The **Choose Settings to Export** page appears.  
+     **選擇要匯出的設定** \] 頁面隨即出現。  
   
-7.  Click **My Settings**.  
+7.  按一下 \[ **我的設定**。  
   
-     The **Description** changes to **OptionInteger and OptionFloat**.  
+     **描述** 變成 **OptionInteger 和 OptionFloat**。  
   
-8.  Make sure that **My Settings** is the only category that is selected, and then click **Next**.  
+8.  請確定 **我的設定** 是唯一的類別，已選取，然後按一下 \[ **下一步**。  
   
-     The **Name Your Settings File** page appears.  
+     **程式設定檔名稱** \] 頁面隨即出現。  
   
-9. Name the new settings file `MySettings.vssettings` and save it in an appropriate directory. Click **Finish**.  
+9. 新的設定檔命名 `MySettings.vssettings` 並將它儲存在適當的目錄中。 按一下 \[**完成**\]。  
   
-     The **Export Complete** page reports that your settings were successfully exported.  
+     **匯出完成** 頁面會報告已順利匯出您的設定。  
   
-10. On the **File** menu, point to **Open**, and then click **File**. Locate `MySettings.vssettings` and open it.  
+10. 在 **檔案** 功能表上，指向 **開啟**, ，然後按一下 \[ **檔案**。 找出 `MySettings.vssettings` 並開啟它。  
   
-     You can find the property category you exported in the following section of the file (your GUIDs will differ).  
+     您可以找到您匯出的檔案 （您的 Guid 會有所不同） 的下一節中的屬性類別目錄。  
   
     ```  
     <Category name="My Category_My Settings"   
-          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
-          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
-          RegisteredName="My Category_My Settings">  
-          PackageName="MyToolsOptionsPackage">  
-       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
-       <PropertyValue name="OptionInteger">12</PropertyValue>   
+          Category="{4802bc3e-3d9d-4591-8201-23d1a05216a6}"   
+          Package="{6bb6942e-014c-489e-a612-a935680f703d}"   
+          RegisteredName="My Category_My Settings">  
+          PackageName="MyToolsOptionsPackage">  
+       <PropertyValue name="OptionFloat">3.1416</PropertyValue>   
+       <PropertyValue name="OptionInteger">12</PropertyValue>   
     </Category>  
     ```  
   
-     Notice that the full category name is formed by the addition of an underscore to the category name followed by the object name. OptionFloat and OptionInteger appear in the category, together with their exported values.  
+     請注意完整類別名稱的前面加上底線後接物件名稱的類別名稱加入正確的。 OptionFloat 和 OptionInteger 會出現在類別中，以及其匯出值。  
   
-11. Close the settings file without changing it.  
+11. 關閉 \[設定檔，而不變更它。  
   
-12. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and then change the value of **OptionFloat** to 1.0 and **OptionInteger** to 1. Click **OK**.  
+12. 上 **工具** \] 功能表上，按一下 \[ **選項**, ，展開 **My Category**, ，按一下 \[ **我的格線頁** ，然後變更的值 **OptionFloat** 為 1.0 和 **OptionInteger** 為 1。 按一下 \[確定\]。  
   
-13. On the **Tools** menu, click **Import and Export Settings**, select **Import selected environment settings**, and then click **Next**.  
+13. 在 **工具** \] 功能表上，按一下 \[ **匯入和匯出設定**, ，請選取 **匯入選取的環境設定**, ，然後按一下 \[ **下一步**。  
   
-     The **Save Current Settings** page appears.  
+     **儲存目前設定** \] 頁面隨即出現。  
   
-14. Select **No, just import new settings** and then click **Next**.  
+14. 選取 **否，只需匯入新設定** 然後按一下 \[ **下一步**。  
   
-     The **Choose a Collection of Settings to Import** page appears.  
+     **選擇的設定集合匯入** \] 頁面隨即出現。  
   
-15. Select the `MySettings.vssettings` file in the **My Settings** node of the tree view. If the file does not appear in the tree view, click **Browse** and find it. Click **Next**.  
+15. 選取 `MySettings.vssettings` 檔案中 **我的設定** 樹狀結構檢視中的節點。 如果檔案不在樹狀檢視中，按一下 \[ **瀏覽** 找到它。 按 \[**下一步**\]。  
   
-     The **Choose Settings to Import** dialog box appears.  
+     **選擇要匯入的設定** \] 對話方塊隨即出現。  
   
-16. Make sure that **My Settings** is selected, and then click **Finish**. When the **Import Complete** page appears, click **Close**.  
+16. 請確定 **我的設定** 已選取，然後按一下 \[ **完成**。 當 **匯入完成** 頁面出現時，按一下 **關閉**。  
   
-17. On the **Tools** menu, click **Options**, expand **My Category**, click **My Grid Page** and verify that the property category values have been restored.
+17. 在 **工具** \] 功能表上，按一下 \[ **選項**, ，展開 **My Category**, ，按一下 **我的格線頁** 並確認已還原屬性類別目錄值。

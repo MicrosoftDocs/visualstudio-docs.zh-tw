@@ -1,67 +1,50 @@
 ---
-title: 'How to: Use Rule-based UI Context for Visual Studio Extensions | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "如何︰ 使用 Visual Studio 擴充功能的規則為基礎的 UI 的內容 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 7
-ms.author: gregvanl
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5845c428716cc4b28f117151dc71a42f8cfa2587
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+caps.handback.revision: 7
 ---
-# <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>How to: Use Rule-based UI Context for Visual Studio Extensions
-Visual Studio allows loading of VSPackages when certain well-known <xref:Microsoft.VisualStudio.Shell.UIContext>s are activated. However, these UI Contexts are not very fine grained, leaving extension authors no choice but to pick an available UI Context that activates before the point they really wanted the VSPackage to load. For a list of well-known UI contexts, see <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>.  
+# 如何︰ 使用 Visual Studio 擴充功能的規則為基礎的 UI 的內容
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+Visual Studio 可讓載入 Vspackage 時，某些已知 <xref:Microsoft.VisualStudio.Shell.UIContext>s 會啟動。 不過，這些 UI 內容不是非常精細精細，離開延伸模組作者沒有其他選擇，但選擇可用的 UI 內容啟動點之前，他們其實想要載入 VSPackage。 如需已知 UI 的內容，請參閱 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts>。  
   
- Loading packages can have a performance impact and loading them sooner than they are needed is not the best practice. Visual Studio 2015 introduced the concept of Rules-based UI Contexts, a mechanism that allows extension authors to define the precise conditions under which a UI Context is activated and associated VSPackages loaded.  
+ 載入封裝可能會造成效能影響，比在需要更快載入它們不是最佳做法。 Visual Studio 2015 導入以規則為基礎 UI 的內容，一種機制，讓延伸模組作者可以定義在其下就會啟用 UI 內容和相關聯的 VSPackages 載入的精確條件的概念。  
   
-## <a name="rule-based-ui-context"></a>Rule-based UI Context  
- A "Rule" consists of a new UI Context (a GUID) and a Boolean expression that references one or more "Terms" combined with logical "and", "or", "not" operations. "Terms" are evaluated dynamically at runtime and the expression is re-evaluated whenever any of its terms changes. When the expression evaluates to true, the associated UI Context is activated. Otherwise, the UI Context is de-activated.  
+## 以規則為基礎的 UI 的內容  
+ 「 規則 」，其中包含新的 UI 內容 \(GUID\) 並參考一個或多個 「 詞彙 」 的布林運算式結合邏輯"and"、"，"not"作業。 「 詞彙 」 會在執行階段以動態方式評估，每當任何其條款變更也會重新評估運算式。 當運算式評估為 true 時，就會啟用相關聯的 UI 內容。 否則，UI 是取消啟動。  
   
- Rule-based UI Context can be used in a variety of ways:  
+ 可以使用規則為基礎的 UI 內容中有許多種︰  
   
-1.  Specify visibility constraints for commands and tool windows. You can hide the commands/tools windows until the UI Context rule is met.  
+1.  指定命令和工具視窗的可見性條件約束。 您可以隱藏命令\/工具 windows，直到符合 UI 內容規則。  
   
-2.  As auto load constraints: auto load packages only when the rule is met  
+2.  以自動載入條件約束︰ 符合規則時，才會自動載入封裝  
   
-3.  Delayed task: delay loading until a specified interval has passed and the rule is still met.  
+3.  延遲的工作︰ 載入指定的間隔時間經過，並仍然符合規則之前的延遲時間。  
   
- The mechanism may be used by any Visual Studio extension.  
+ 此機制可供任何 Visual Studio 擴充功能。  
   
-## <a name="create-a-rule-based-ui-context"></a>Create a Rule-based UI Context  
- Suppose you have an extension called TestPackage, which offers a menu command which applies only to files with ".config" extension. Before VS2015, the best option was to load TestPackage when <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI Context was activated. This is not efficient, since the loaded solution may not even contain a .config file. Let us see how rules-based UI Context can be used to activate a UI Context only when a file with .config extension is selected, and load TestPackage when that UI Context is activated.  
+## 建立規則為基礎的 UI 的內容  
+ 假設您有稱為 TestPackage，它提供了功能表命令，就僅適用於 「.config"副檔名的檔案副檔名。 之前 VS2015，最好的選擇是要載入 TestPackage 時 <xref:Microsoft.VisualStudio.Shell.KnownUIContexts.SolutionExistsAndFullyLoadedContext%2A> UI 內容已啟動。 這不是有效的因為載入的方案可能甚至沒有.config 檔案。 讓我們，請參閱如何以規則為基礎的 UI 內容可以用來啟用在 UI 的內容時，才具有.config 副檔名的檔案已選取，並載入 TestPackage 時就會啟用該 UI 的內容。  
   
-1.  Define a new UIContext GUID and add to the VSPackage class <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> and <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>.  
+1.  定義新的 UIContext GUID，並加入 VSPackage 類別 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideUIContextRuleAttribute>。  
   
-     For example, let's assume a new UIContext "UIContextGuid" is to be added. The GUID created (you can create a GUID by clicking on Tools -> create guid) is "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B". You then add the following inside your package class:  
+     例如，假設新 UIContext"UIContextGuid"是要加入。 建立的 GUID \(您可以建立 GUID，依序按一下 \[工具\]\-\> \[建立 guid\) 是 「 8B40D5E2\-5626\-42AE\-99EF\-3DD1EFF46E7B 」。 然後，請將下列套件類別內︰  
   
-    ```csharp  
+    ```c#  
     public const string UIContextGuid = "8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B";  
     ```  
   
-     For the attributes, add the following: (Details of these attributes will be explained later)  
+     針對屬性，加入下列: （這些屬性的詳細資料將會稍後說明）  
   
-    ```csharp  
+    ```c#  
     [ProvideAutoLoad(TestPackage.UIContextGuid)]      
     [ProvideUIContextRule(TestPackage.UIContextGuid,  
         name: "Test auto load",   
@@ -70,17 +53,17 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
         termValues: new[] { "HierSingleSelectionName:.config$" })]  
     ```  
   
-     These metadata define the new UIContext GUID (8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B) and an expression referring to a single term, "DotConfig". The "DotConfig" term evaluates to true whenever the current selection in the active hierarchy has a name that matches the regular expression pattern "\\.config$" (ends with ".config"). The (Default) value defines an optional name for the rule useful for debugging.  
+     這些中繼資料定義新的 UIContext GUID \(8B40D5E2\-5626\-42AE\-99EF\-3DD1EFF46E7B\) 和運算式參考的 「 DotConfig 」 的詞彙。 「 DotConfig 」 一詞評估為 true，只要在使用中的階層架構中目前選取範圍有符合規則運算式模式"\\.config$"（".config"結尾） 的名稱。 （預設） 值定義規則適用於偵錯的選擇性名稱。  
   
-     The values of the attribute are added to pkgdef generated during build time afterwards.  
+     屬性的值會加入至 pkgdef 在建置階段之後產生。  
   
-2.  In the VSCT file for the TestPackage's commands, add the "DynamicVisibility" flag to the appropriate commands:  
+2.  在 TestPackage 命令 VSCT 檔案中，加入適當的命令中的 「 DynamicVisibility 」 旗標︰  
   
     ```xml  
     <CommandFlag>DynamicVisibility</CommandFlag>  
     ```  
   
-3.  In the Visibilities section of the VSCT, tie the appropriate commands to the new UIContext GUID defined in #1:  
+3.  在 VSCT 可視性區段中，將繫結適當的命令，以新 UIContext \#1 中所定義的 GUID:  
   
     ```xml  
     <VisibilityConstraints>   
@@ -88,32 +71,32 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
     </VisibilityConstraints>  
     ```  
   
-4.  In the Symbols section, add the definition of the UIContext:  
+4.  在 \[符號\] 區段中，加入 UIContext 的定義︰  
   
     ```xml  
     <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />  
     ```  
   
-     Now, the context menu commands for *.config files will be visible only when the selected item in the solution explorer is a ".config" file and the package will not be loaded until one of those commands is selected.  
+     現在，\*.config 檔案的內容功能表命令會顯示在 \[方案總管\] 中選取的項目，是一個 「.config 」 檔案中選取其中一個這些命令之前，將不會載入封裝時，才。  
   
- Next, let's use a debugger to confirm that the package loads only when we expect it to. To debug TestPackage:  
+ 接下來，我們要使用偵錯工具來確認只有在我們預期當它載入封裝。 若要偵錯 TestPackage:  
   
-1.  Set a breakpoint in the <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> method.  
+1.  在設定中斷點 <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> 方法。  
   
-2.  Build the TestPackage and start debugging.  
+2.  建置 TestPackage 並開始偵錯。  
   
-3.  Create a project or open one.  
+3.  建立專案或開啟其中一個。  
   
-4.  Select any file with an extension other than .config. The breakpoint should not be hit.  
+4.  選取副檔名為.config 以外的任何檔案。 應該不會叫用中斷點。  
   
-5.  Select the App.Config file.  
+5.  選取的 App.Config 檔案。  
   
- The TestPackage loads and stops at the breakpoint.  
+ TestPackage 載入，並在中斷點停止。  
   
-## <a name="adding-more-rules-for-ui-context"></a>Adding More Rules for UI Context  
- Since the UI Context rules are Boolean expressions, you can add more restricted rules for a UI Context. For example, in the above UI Context, you can specify that the rule applies only when a solution with a project is loaded. In this way, the commands won't show up if you open up a ".config" file as a standalone file, not as part of a project.  
+## 新增更多的規則適用於 UI 的內容  
+ 由於 UI 內容規則是布林運算式，您可以針對 UI 的內容加入限制更嚴格的規則。 例如，在上述的 UI 內容中，您可以指定只有在載入專案的方案時才套用規則。 如此一來，命令不會顯示是否您開啟 「.config"檔案以獨立檔案，而非專案的一部分。  
   
-```csharp  
+```c#  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]      
 [ProvideUIContextRule(TestPackage.UIContextGuid,    
     name: "Test auto load",  
@@ -122,14 +105,14 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
     termValues: new[] { VSConstants.UICONTEXT_SolutionHasSingleProject_string , VSConstants.UICONTEXT_SolutionHasMultipleProjects_string , "HierSingleSelectionName:.config$" })]  
 ```  
   
- Now the expression references three terms. The first two terms, "SingleProject" and "MultipleProjects", refer to other well-known UI Contexts (by their GUIDs). The third term, "DotConfig" is the rule-based UI Context we defined earlier.  
+ 現在運算式參考了三個詞彙。 前兩個詞彙，「 SingleProject 」 和 「 MultipleProjects 」，請參閱其他已知的 UI 內容 （藉由其 Guid\)。 第三個詞彙，「 DotConfig 」 是以規則為基礎的 UI 內容，而此一我們稍早定義。  
   
-## <a name="delayed-activation"></a>Delayed Activation  
- Rules can have an optional "Delay". The delay is specified in milliseconds. If present, the delay causes the activation or deactivation of a Rule's UI Context to be delayed by that time interval. If the rule changes back before the delay interval, then nothing happens. This mechanism can be used to "stagger" initialization steps - especially one-time initialization without relying on timers or registering for idle notifications.  
+## 延遲的啟用  
+ 規則可以有選擇性的 「 延遲 」。 延遲是以毫秒為單位指定。 如果有的話，啟用或停用規則的 UI 內容延遲該時間間隔的會導致延遲。 如果規則變更回之前的延遲間隔，則會發生任何事。 這項機制可以用來 「 錯開 」 初始化步驟\-尤其是單次初始化，而不需依賴計時器或註冊閒置通知。  
   
- For example, you can specify your test load rule to have a delay of 100 milliseconds:  
+ 例如，您可以指定您的測試負載規則有 100 毫秒的延遲︰  
   
-```csharp  
+```c#  
 [ProvideAutoLoad(TestPackage.UIContextGuid)]  
 [ProvideUIContextRule(TestPackage.UIContextGuid,   
     name: "Test auto load",  
@@ -139,31 +122,28 @@ Visual Studio allows loading of VSPackages when certain well-known <xref:Microso
     delay: 100)]  
 ```  
   
-## <a name="term-types"></a>Term Types  
- Here are the various types of term that are supported:  
+## 詞彙類型  
+ 以下是詞彙的所支援的各種類型:  
   
 |||  
 |-|-|  
-|{nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn}|The GUID refers to a UI Context. The term will be true whenever the UI Context is active and false otherwise.|  
-|HierSingleSelectionName:\<pattern>|The term will be true whenever the selection in the active hierarchy is a single item and the name of the selected item matches the .Net regular expression given by "pattern".|  
-|UserSettingsStoreQuery:\<query>|"query" represents a full path into the user settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
-|ConfigSettingsStoreQuery:\<query>|"query" represents a full path into the config settings store which must evaluate to a non-zero value. The query is split into a "collection" and "propertyName" at the last slash.|  
-|ActiveProjectFlavor:\<projectTypeGuid>|The term will be true whenever the currently selected project is flavored (aggregated) and has a flavor matching the given project type GUID.|  
-|ActiveEditorContentType:\<contentType>|The term will be true when the selected document is a text editor with the given content type.|  
-|ActiveProjectCapability:\<Expression>|The term is true when active project capabilities matches the provided expression. An expression can be something like VB &#124; CSharp|  
-|SolutionHasProjectCapability:\<Expression>|Similar to above but term is true when solution has any loaded project that matches to the expression.|  
-|SolutionHasProjectFlavor:\<projectTypeGuid>|The term will be true whenever a solution has project that is flavored (aggregated) and has a flavor matching the given project type GUID.|
-
-
+|{nnnnnnnn\-nnnn\-nnnn\-nnnn\-nnnnnnnnnnnn nnnn\-nnnn\-如下}|GUID 是指在 UI 的內容。 每當 UI 內容處於使用中則為 false，則一詞將是 true。|  
+|HierSingleSelectionName: \< 模式 \>|每當使用中的階層中的選擇是單一項目和選取的項目名稱符合.Net 規則運算式提供 「 模式 」 一詞將是 true。|  
+|UserSettingsStoreQuery: \< 查詢 \>|「 查詢 」 到使用者設定存放區必須評估為非零值表示的完整路徑。 查詢會分割為 「 集合 」 和 「 propertyName 」，在最後一個斜線。|  
+|ConfigSettingsStoreQuery: \< 查詢 \>|「 查詢 」 到組態設定存放區必須評估為非零值表示的完整路徑。 查詢會分割為 「 集合 」 和 「 propertyName 」，在最後一個斜線。|  
+|ActiveProjectFlavor: \< projectTypeGuid \>|每當目前選取的專案特定詞彙將會是 true （彙總） 且具有類別比對指定的專案類型的 GUID。|  
+|ActiveEditorContentType: \< contentType \>|選取的文件時指定的內容類型的文字編輯器，將會是 true 一詞。|  
+|ActiveProjectCapability: \< 運算式 \>|作用中專案功能符合提供的運算式時，條件為 true。 運算式可以是像是 VB &#124;CSharp|  
+|SolutionHasProjectCapability: \< 運算式 \>|方案中有運算式比對任何載入的專案時，與上述類似，但是一詞是如此。|  
   
-## <a name="compatibility-with-cross-version-extension"></a>Compatibility with cross-version extension  
- Rule based UI Contexts is a new feature in Visual Studio 2015 and would not be ported to earlier versions. This creates a problem with extensions/packages that target multiple versions of Visual Studio which would have to be auto-loaded in Visual Studio 2013 and earlier, but can benefit from rule based UI Contexts to prevent being auto-loaded in Visual Studio 2015.  
+## 副檔名跨版本相容性  
+ 根據的 UI 內容是在 Visual Studio 2015 的新功能並不會移植到較早版本的規則。 這會建立為目標的 Visual Studio 會自動載入，在 Visual Studio 2013 及之前版本，但可以受益於以規則為基礎的 UI 內容以避免被自動載入 Visual Studio 2015 中的多個版本的延伸模組\/套件有問題。  
   
- In order to support such packages, AutoLoadPackages entries in the registry can now provide a flag in its value field to indicate that the entry should be skipped in Visual Studio 2015 and above. This can be done by adding a flags option to <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>. VSPackages can now add **SkipWhenUIContextRulesActive** option to their <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> attribute to indicate the entry should be ignored in Visual Studio 2015 and above.  
+ 為了支援此類封裝，AutoLoadPackages 在登錄中的項目現在可以提供其值欄位，以指出在 Visual Studio 2015 及以上版本，應該略過項目中的旗標。 可以新增的旗標選項來做到這 <xref:Microsoft.VisualStudio.Shell.PackageAutoLoadFlags>。 現在可以新增 VSPackages **SkipWhenUIContextRulesActive** 選項及其 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 屬性來指出應該忽略的項目，在 Visual Studio 2015 及以上版本。  
   
-## <a name="extensible-ui-context-rules"></a>Extensible UI Context Rules  
- Sometimes, packages cannot use static UI Context rules. For example, suppose you have a package supporting extensibility such that the command state is based on editor types that are supported by imported MEF providers. The command is enabled if there is an extension supporting the current edit type. In such cases the package itself cannot use a static UI Context rule, since the terms would change depending on which MEF extensions are available.  
+## 可延伸的 UI 內容規則  
+ 有時候，封裝無法使用 UI 內容的靜態規則。 例如，假設您有支援擴充性，使得命令狀態根據匯入的 MEF 提供者所支援的編輯器類型的封裝。 此命令會在支援目前的編輯類型擴充功能是否啟用。 在這種情況下封裝本身無法使用靜態 UI 內容規則，因為條款將會變更哪些 MEF 根據延伸模組都會提供。  
   
- In order to support such packages, rule based UI Contexts support a hardcoded expression "*" that indicates all the terms below it will be joined with OR. This allows for the master package to define a known rule based UI Context and tie its command state to this context. Afterwards any MEF extension targeted for the master package can add its terms for editors it supports without impacting other terms or the master expression.  
+ 為了支援此類封裝，以規則為基礎的 UI 內容支援硬式編碼運算式"\*"，指出所有條款將會使用已加入或者。 這可定義主要封裝已知的規則基礎 UI 的內容，並將繫結命令狀態給此內容。 之後針對主要封裝任何 MEF 延伸模組可以新增的編輯器不會影響其他條款或主要運算式支援條款。  
   
- The constructor <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> documentation shows the syntax for extensible UI Context rules.
+ 建構函式 <xref:Microsoft.VisualStudio.Shell.ProvideExtensibleUIContextRuleAttribute.%23ctor%2A> 文件所示的語法可延伸的 UI 內容規則。

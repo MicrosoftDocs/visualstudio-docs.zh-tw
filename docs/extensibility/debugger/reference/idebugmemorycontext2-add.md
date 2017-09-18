@@ -1,76 +1,59 @@
 ---
-title: IDebugMemoryContext2::Add | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugMemoryContext2::Add
-helpviewer_keywords:
-- IDebugMemoryContext2::Add method
-- Add method
+title: "IDebugMemoryContext2::Add | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugMemoryContext2::Add"
+helpviewer_keywords: 
+  - "IDebugMemoryContext2::Add 方法"
+  - "Add 方法"
 ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 489dbaeb57edb9e0b47917223e98a8427bf4081c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
-Adds the specified value to the current context and returns a new context.  
+# IDebugMemoryContext2::Add
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+將指定的值加入至目前的內容，並傳回新的內容。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT Add(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+```cpp#  
+HRESULT Add(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```csharp  
+```c#  
 int Add(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwCount`  
- [in] The value to add to the current context.  
+ \[in\]若要新增到目前的內容值。  
   
  `ppMemCxt`  
- [out] Returns a new [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object.  
+ \[\] out傳回新的[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- A memory context is an address, so adding a value to an address produces a new address that requires a new context interface.  
+## 備註  
+ 記憶體內容是地址，所以新增值至地址產生新的地址，需要新的內容介面。  
   
- This method must always produce a new context, even if the resulting address is outside the memory space associated with this context. The only exception to this is if no memory can be allocated for the new context or if `ppMemCxt` is a null value (which is an error).  
+ 這個方法必須產生新的內容，即使產生地址超出此內容相關聯的記憶體空間。  唯一的例外是如果無記憶體可配置新的內容，或是`ppMemCxt`為 null 值 \(也就是錯誤\)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

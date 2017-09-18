@@ -1,78 +1,61 @@
 ---
-title: IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEELocalObject
+title: "IDebugSettingsCallback2::GetEELocalObject | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugSettingsCallback2::GetEELocalObject"
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0a1e7f1f257a8bed2d11d5ebf819cdf45b3612c6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
-Retrieves a expression evaluator local object given the metric name.  
+# IDebugSettingsCallback2::GetEELocalObject
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取運算式評估工具本機物件指定單位的名稱。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetEELocalObject(  
-   REFGUID     guidLang,  
-   REFGUID     guidVendor,  
-   LPCWSTR     pszMetric,  
-   IUnknown ** ppUnk  
+   REFGUID     guidLang,  
+   REFGUID     guidVendor,  
+   LPCWSTR     pszMetric,  
+   IUnknown ** ppUnk  
 );  
 ```  
   
-```csharp  
+```c#  
 private int GetEELocalObject(  
-   ref Guid          guidLang,  
-   ref Guid          guidVendor,  
-   string            pszMetric,  
-   out System.Object ppUnk  
+   ref Guid          guidLang,  
+   ref Guid          guidVendor,  
+   string            pszMetric,  
+   out System.Object ppUnk  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `guidLang`  
- [in] Unique identifier of the programming language.  
+ \[in\]唯一的識別項的程式語言。  
   
  `guidVendor`  
- [in] Unique identifier of the vendor.  
+ \[in\]廠商的唯一的識別項。  
   
  `pszMetric`  
- [in] Name of the metric.  
+ \[in\]計量值的名稱。  
   
  `ppUnk`  
- [out] Returns the expression evaluator local object.  
+ \[\] out傳回運算式評估工具區域的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

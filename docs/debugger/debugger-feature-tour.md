@@ -31,10 +31,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: b2a317028022194e1b5b4e5cbbaf13893170ac2d
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 069527b283e3b2c6e08fdb83b911d357f1aa295b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="feature-tour-of-the-visual-studio-debugger"></a>Feature Tour of the Visual Studio Debugger
@@ -123,9 +123,8 @@ Press F5 until you reach the line of code where you selected **Run to Cursor**.
 
 This command is useful when you are editing code and want to quickly set a temporary breakpoint and start the debugger.
 
-
-> [!NOTE]
-> You can use **Run to Cursor** in the **Call Stack** window while you are debugging.
+    > [!NOTE]
+    > You can use **Run to Cursor** in the **Call Stack** window while you are debugging.
 
 ## <a name="restart-your-app-quickly"></a>Restart your app quickly
 

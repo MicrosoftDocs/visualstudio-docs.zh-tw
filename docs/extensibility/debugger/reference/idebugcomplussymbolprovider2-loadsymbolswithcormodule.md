@@ -1,47 +1,30 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-- LoadSymbolsWithCorModule
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule"
+  - "LoadSymbolsWithCorModule"
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 39f15841f2b577d88e913e8a59216c16a3f5116f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-Loads debug symbols given the **ICorDebugModule** object.  
+# IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+載入偵錯符號 **ICorDebugModule** 物件。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```cpp#  
 HRESULT LoadSymbolsWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -53,7 +36,7 @@ HRESULT LoadSymbolsWithCorModule(
 );  
 ```  
   
-```csharp  
+```c#  
 int LoadSymbolsWithCorModule(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -65,35 +48,35 @@ int LoadSymbolsWithCorModule(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- [in] Identifier of the application domain.  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in]模組的唯一識別碼。  
   
  `baseAddress`  
- [in] Base memory address.  
+ [in]基底的記憶體位址。  
   
  `pUnkMetadataImport`  
- [in] Object that contains the debug symbol metadata.  
+ [in]包含偵錯符號的中繼資料的物件。  
   
  `pUnkCorDebugModule`  
- [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in]實作物件 [ICorDebugModule 介面](ICorDebugModule%20Interface.xml)。  
   
  `bstrModuleName`  
- [in] Name of the module.  
+ [in]模組名稱。  
   
  `bstrSymSearchPath`  
- [in] Path to search for the symbol file.  
+ [in]搜尋符號檔的路徑。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -185,5 +168,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

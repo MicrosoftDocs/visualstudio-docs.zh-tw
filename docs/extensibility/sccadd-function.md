@@ -1,115 +1,98 @@
 ---
-title: SccAdd Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccAdd
-helpviewer_keywords:
-- SccAdd function
+title: "SccAdd 函式 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccAdd"
+helpviewer_keywords: 
+  - "SccAdd 函式"
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 17
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 25b3dbc61b4fb57471737e41d3904effa9ed87be
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 17
 ---
-# <a name="sccadd-function"></a>SccAdd Function
-This function adds new files to the source control system.  
+# SccAdd 函式
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此函式會將新檔案加入至原始檔控制系統。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 SCCRTN SccAdd(  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LPCSTR    lpComment,  
-   LONG*     pfOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LPCSTR    lpComment,  
+   LONG*     pfOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[\] in原始檔控制外掛程式內容結構。  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
   
  nFiles  
- [in] Number of files selected to be added to the current project as given in the `lpFileNames` array.  
+ \[\] in選取要新增至目前專案中所指定的檔案數目 `lpFileNames` 陣列。  
   
  lpFileNames  
- [in] Array of fully qualified local names of files to be added.  
+ \[\] in要加入的檔案的完整限定本機名稱的陣列。  
   
  lpComment  
- [in] The comment to be applied to all of the files being added.  
+ \[\] in要套用到所有的檔案加入註解。  
   
  pfOptions  
- [in] Array of command flags, provided on a per-file basis.  
+ \[\] in命令旗標，提供每個檔案為基礎的陣列。  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[\] in原始檔控制外掛程式專屬選項。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## 傳回值  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The add operation was successful.|  
-|SCC_E_FILEALREADYEXISTS|The selected file is already under source control.|  
-|SCC_E_TYPENOTSUPPORTED|The type of the file (for example, binary) is not supported by the source control system.|  
-|SCC_E_OPNOTSUPPORTED|The source control system does not support this operation.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure; add not performed.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
-|SCC_I_RELOADFILE|A file or project needs to be reloaded.|  
-|SCC_E_FILENOTEXIST|Local file was not found.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|加入作業成功。|  
+|SCC\_E\_FILEALREADYEXISTS|選取的檔案已經在原始檔控制中。|  
+|SCC\_E\_TYPENOTSUPPORTED|\(例如，二進位\) 檔案的類型不受到原始檔控制系統。|  
+|SCC\_E\_OPNOTSUPPORTED|原始檔控制系統不支援這項作業。|  
+|SCC\_E\_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
+|SCC\_E\_NOTAUTHORIZED|不允許使用者執行這項作業。|  
+|SCC\_E\_NONSPECIFICERROR|非特定的失敗。將不會執行。|  
+|SCC\_I\_OPERATIONCANCELED|在完成之前已取消作業。|  
+|SCC\_I\_RELOADFILE|需要重新載入檔案或專案。|  
+|SCC\_E\_FILENOTEXIST|找不到本機檔案。|  
   
-## <a name="remarks"></a>Remarks  
- The usual `fOptions` are replaced here by an array, `pfOptions`, with one `LONG` option specification per file. This is because the file type may vary from file to file.  
+## 備註  
+ 一般 `fOptions` 陣列，來取代以下 `pfOptions`, ，其中一個 `LONG` 選項每個檔案規格。 這是因為檔案類型而異檔案。  
   
 > [!NOTE]
->  It is invalid to specify both `SCC_FILETYPE_TEXT` and `SCC_FILETYPE_BINARY` options for the same file, but it is valid to specify neither. Setting neither is the same as setting `SCC_FILETYPE_AUTO`, in which case the source control plug-in autodetects the file type.  
+>  不能同時指定 `SCC_FILETYPE_TEXT` 和 `SCC_FILETYPE_BINARY` 選項相同的檔案，但卻是適用於指定兩者。 設定都不是設定相同 `SCC_FILETYPE_AUTO`, ，在此情況下的原始檔控制外掛程式 autodetects 檔案類型。  
   
- Below is the list of flags used in the `pfOptions` array:  
+ 以下是使用的旗標的清單 `pfOptions` 陣列:  
   
-|Option|Value|Meaning|  
-|------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0x00|The source control plug-in should detect the file type.|  
-|SCC_FILETYPE_TEXT|0x01|Indicates an ASCII text file.|  
-|SCC_FILETYPE_BINARY|0x02|Indicates a file type other than ASCII text.|  
-|SCC_ADD_STORELATEST|0x04|Stores only the latest copy of the file, no deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0x08|Treats the file as ANSI text.|  
-|SCC_FILETYPE_UTF8|0x10|Treats the file as Unicode text in UTF8 format.|  
-|SCC_FILETYPE_UTF16LE|0x20|Treats the file as Unicode text in UTF16 Little Endian format.|  
-|SCC_FILETYPE_UTF16BE|0x40|Treats the file as Unicode text in UTF16 Big Endian format.|  
+|選項|值|意義|  
+|--------|-------|--------|  
+|SCC\_FILETYPE\_AUTO|0x00|原始檔控制外掛程式應該會偵測到的檔案類型。|  
+|SCC\_FILETYPE\_TEXT|0x01|表示一個 ASCII 文字檔。|  
+|SCC\_FILETYPE\_BINARY|0x02|指出 ASCII 文字以外的檔案類型。|  
+|SCC\_ADD\_STORELATEST|0x04|儲存檔案，沒有差異的最新複本。|  
+|SCC\_FILETYPE\_TEXT\_ANSI|0x08|您可以將檔案視為 ANSI 文字。|  
+|SCC\_FILETYPE\_UTF8|0x10|將檔案視為 Unicode UTF8 格式的文字。|  
+|SCC\_FILETYPE\_UTF16LE|0x20|將檔案視為 Unicode 文字 UTF16 Little Endian 格式。|  
+|SCC\_FILETYPE\_UTF16BE|0x40|視為成 UTF16 Big Endian Unicode 文字檔案格式。|  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## 請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

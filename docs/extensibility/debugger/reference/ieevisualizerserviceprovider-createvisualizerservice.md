@@ -1,90 +1,73 @@
 ---
-title: IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEEVisualizerServiceProvider::CreateVisualizerService
-helpviewer_keywords:
-- IEEVisualizerServiceProvider::CreateVisualizerService method
+title: "IEEVisualizerServiceProvider::CreateVisualizerService | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEEVisualizerServiceProvider::CreateVisualizerService"
+helpviewer_keywords: 
+  - "IEEVisualizerServiceProvider::CreateVisualizerService 方法"
 ms.assetid: f366f7c9-358d-46c8-993f-32ff86539833
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c9860fadecc05cd992e46a64619315c0d9e766e0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="ieevisualizerserviceprovidercreatevisualizerservice"></a>IEEVisualizerServiceProvider::CreateVisualizerService
-This method creates a visualizer service.  
+# IEEVisualizerServiceProvider::CreateVisualizerService
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會建立視覺化檢視的服務。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT CreateVisualizerService(  
-   IDebugBinder*              binder,  
-   IDebugSymbolProvider*      pSymProv,  
-   IDebugAddress*             pAddress,  
-   IEEVisualizerDataProvider* dataProvider,  
-   IEEVisualizerService**     ppService  
+HRESULT CreateVisualizerService(  
+   IDebugBinder*              binder,  
+   IDebugSymbolProvider*      pSymProv,  
+   IDebugAddress*             pAddress,  
+   IEEVisualizerDataProvider* dataProvider,  
+   IEEVisualizerService**     ppService  
 );  
 ```  
   
-```csharp  
-int CreateVisualizerService(  
-   IDebugBinder binder,  
-   IDebugSymbolProvider      pSymProv,  
-   IDebugAddress             pAddress,  
-   IEEVisualizerDataProvider dataProvider,  
-   out IEEVisualizerService  ppService  
+```c#  
+int CreateVisualizerService(  
+   IDebugBinder binder,  
+   IDebugSymbolProvider      pSymProv,  
+   IDebugAddress             pAddress,  
+   IEEVisualizerDataProvider dataProvider,  
+   out IEEVisualizerService  ppService  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `binder`  
- [in] The [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) object passed to [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md).  
+ \[in\][IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件傳遞至[EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)。  
   
  `pSymProv`  
- [in] The [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) object passed to `IDebugParsedExpression::EvaluateSync`.  
+ \[in\][IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件傳遞至`IDebugParsedExpression::EvaluateSync`。  
   
  `pAddress`  
- [in] The [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) object passed to `IDebugParsedExression::EvaluateSync`.  
+ \[in\][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件傳遞至`IDebugParsedExression::EvaluateSync`。  
   
  `dataProvider`  
- [in] An object implementing the [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) interface (supplied by the expression evaluator).  
+ \[in\]物件實作[IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md) \(運算式評估工具所提供\) 的介面。  
   
  `ppService`  
- [out] The created service.  
+ \[\] out建立的服務。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The `binder`, `pSymProv`, and `pAddress` parameters were all passed to the `IDebugParsedExpression::EvaluateSync` method. `CreateVisualizerService` is to be called only from `IDebugParsedExpression::EvaluateSync` as part of an expression evaluator's support for type visualizers.  
+## 備註  
+ `binder`， `pSymProv`，以及`pAddress`參數已傳遞至`IDebugParsedExpression::EvaluateSync`方法。  `CreateVisualizerService`只從呼叫是`IDebugParsedExpression::EvaluateSync`做為型別視覺化檢視的運算式評估工具支援的一部分。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   

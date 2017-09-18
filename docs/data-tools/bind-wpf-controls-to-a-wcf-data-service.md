@@ -9,14 +9,16 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - WPF, data binding in Visual Studio
 - WPF data binding [Visual Studio], walkthroughs
 - WPF Designer, data binding
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 caps.latest.revision: 40
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -34,10 +36,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: c5be625379ce3c833f5d8ef73c5b8614dfe0d0f2
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 6bfcb07427cf14f29764d30e4ebed7009f45d856
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Bind WPF controls to a WCF data service
@@ -45,17 +47,17 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
  This walkthrough illustrates the following tasks:  
   
-- Creating an Entity Data Model that is generated from data in the AdventureWorksLT sample database.  
+-   Creating an Entity Data Model that is generated from data in the AdventureWorksLT sample database.  
   
-- Creating a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] that exposes the data in the Entity Data Model to a WPF application.  
+-   Creating a [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] that exposes the data in the Entity Data Model to a WPF application.  
   
-- Creating a set of data-bound controls by dragging items from the **Data Sources** window to the WPF designer.  
+-   Creating a set of data-bound controls by dragging items from the **Data Sources** window to the WPF designer.  
   
-- Creating buttons that navigate forward and backward through customer records.  
+-   Creating buttons that navigate forward and backward through customer records.  
   
-- Creating a button that saves changes to data in the controls to the [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] and the underlying data source.  
+-   Creating a button that saves changes to data in the controls to the [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] and the underlying data source.  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+     [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -142,7 +144,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 1.  In the `AdventureWorks.svc` code file, replace the `AdventureWorksService` class declaration with the following code.  
   
-     [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]  [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]  
+     [!code-cs[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]  [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]  
   
      This code updates the `AdventureWorksService` class, so that it derives from a <xref:System.Data.Services.DataService%601> that operates on the `AdventureWorksLTEntities` object context class in your Entity Data Model. It also updates the `InitializeService` method to allow clients of the service full read/write access to the `SalesOrderHeader` entity.  
   
@@ -198,7 +200,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 2.  In the [!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)] view of the designer, add the following code between the `<Grid>` tags:  
   
-    ```xaml  
+    ```  
     <Grid.RowDefinitions>  
         <RowDefinition Height="75" />  
         <RowDefinition Height="525" />  
@@ -258,7 +260,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 2.  Replace the event handler with the following code. Make sure that you replace the *localhost* address in this code with the local host address on your development computer.  
   
-     [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]  [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
+     [!code-cs[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]  [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]  
   
 ## <a name="navigate-sales-records"></a>Navigate sales records  
  Add code that enables users to scroll through sales records by using the **\<** and **>** buttons.  
@@ -271,7 +273,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 2.  Add the following code to the generated `backButton_Click` event handler:  
   
-     [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]  [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
+     [!code-cs[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]  [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]  
   
 3.  Return to the designer, and double-click the **>** button.  
   
@@ -279,7 +281,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 4.  Add the following code to the generated `nextButton_Click` event handler:  
   
-     [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]  [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]  
+     [!code-cs[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]  [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]  
   
 ## <a name="saving-changes-to-sales-records"></a>Saving changes to sales records  
  Add code that enables users to both view and save changes to sales records by using the **Save changes** button.  
@@ -292,7 +294,7 @@ In this walkthrough, you will create a WPF application that contains data-bound 
   
 2.  Add the following code to the `saveButton_Click` event handler.  
   
-     [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]  [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]  
+     [!code-cs[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]  [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]  
   
 ## <a name="testing-the-application"></a>Testing the application  
  Build and run the application to verify that you can view and update customer records.  

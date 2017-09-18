@@ -1,71 +1,54 @@
 ---
-title: IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugDocumentTextEvents2::OnUpdateTextAttributes
-helpviewer_keywords:
-- IDebugDocumentTextEvents2::onUpdateTextAttributes
+title: "IDebugDocumentTextEvents2::onUpdateTextAttributes | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugDocumentTextEvents2::OnUpdateTextAttributes"
+helpviewer_keywords: 
+  - "IDebugDocumentTextEvents2::onUpdateTextAttributes"
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ab0908d784ddbc64f3c1ffd3b72566913372395b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-Notifies the debug package that text attributes have been updated in the document.  
+# IDebugDocumentTextEvents2::onUpdateTextAttributes
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+告知偵錯封裝文字屬性，已更新文件中。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT onUpdateTextAttributes(   
-   TEXT_POSITION pos,  
-   DWORD         dwNumToUpdate  
+```cpp#  
+HRESULT onUpdateTextAttributes(   
+   TEXT_POSITION pos,  
+   DWORD         dwNumToUpdate  
 );  
 ```  
   
-```csharp  
-int onUpdateTextAttributes(   
-   enum_TEXT_POSITION pos,  
-   uint               dwNumToUpdate  
+```c#  
+int onUpdateTextAttributes(   
+   enum_TEXT_POSITION pos,  
+   uint               dwNumToUpdate  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pos`  
- [in] A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure that indicates where the text attributes were updated.  
+ \[in\]A [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md) ，表示已文字屬性的結構。  
   
  `dwNumToUpdate`  
- [in] Specifies the number of characters of text that were updated.  
+ \[in\]指定字元的文字已更新的數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)   
- [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)

@@ -1,68 +1,51 @@
 ---
-title: IDebugArrayField::GetRank | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugArrayField::GetRank
-helpviewer_keywords:
-- IDebugArrayField::GetRank method
+title: "IDebugArrayField::GetRank | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugArrayField::GetRank"
+helpviewer_keywords: 
+  - "IDebugArrayField::GetRank 方法"
 ms.assetid: 2364b876-5be1-4bab-9b8f-3b6121da35c6
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b410db9d146397242ffbafd0ca7314c0fcea30bc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
-Gets the rank or number of dimensions of the array.  
+# IDebugArrayField::GetRank
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得的順位或陣列的維度數目。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetRank(   
-   DWORD* pdwRank  
+```cpp#  
+HRESULT GetRank(   
+   DWORD* pdwRank  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetRank(  
-   out uint pdwRank  
+   out uint pdwRank  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pdwRank`  
- [out] Returns the rank.  
+ \[\] out傳回陣序規範。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The rank of an array corresponds to the number of dimensions. In C++ and C#, multi-dimensional arrays are really arrays of arrays and can therefore be considered just a one-dimensional array (and the `GetRank` method always returns 1). In [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)], on the other hand, multi-dimensional arrays are handled differently and the rank of such an array reflects the number of dimensions (and the `GetRank` method always returns the number of dimensions).  
+## 備註  
+ 陣列的陣序規範會對應到維度的數目。  在 c \+ \+ 和 C\#，多維陣列其實是陣列的陣列，因此可以視為只是一維陣列 \(和`GetRank`方法一定會傳回 1\)。  在[!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]，相反地，多維陣列會以不同方式處理，而且這類陣列的陣序規範的反應的維度數目 \(和`GetRank`方法一定會傳回的維度數目\)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

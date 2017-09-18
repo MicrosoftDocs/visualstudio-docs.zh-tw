@@ -1,67 +1,50 @@
 ---
-title: SccUninitialize Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccUninitialize
-helpviewer_keywords:
-- SccUninitialize function
+title: "SccUninitialize 函式 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccUninitialize"
+helpviewer_keywords: 
+  - "SccUninitialize 函式"
 ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7b88c889b66314cec269efd68f0f1d00ce4c1f8d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="sccuninitialize-function"></a>SccUninitialize Function
-This function cleans up any allocations or open connections created by a previous call to the [SccInitialize](../extensibility/sccinitialize-function.md) in preparation for shutting down the source control plug-in.  
+# SccUninitialize 函式
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此函式會清除任何先前呼叫所建立的開啟連接或配置 [SccInitialize](../extensibility/sccinitialize-function.md) 以準備關閉原始檔控制外掛程式。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 SCCRTN SccUninitialize (  
-   LPVOID pvContext  
+   LPVOID pvContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  pvContext  
- [in] The pointer to the source control plug-in context structure created in the [SccInitialize](../extensibility/sccinitialize-function.md).  
+ \[\] in在建立原始檔控制外掛程式內容結構的指標， [SccInitialize](../extensibility/sccinitialize-function.md)。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## 傳回值  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|The clean-up completed successfully.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|清除工作順利完成。|  
   
-## <a name="remarks"></a>Remarks  
- The source control plug-in is responsible for preparing to be shut down and for freeing memory that the plug-in has allocated for the context structure. The function is called once for each given instance of a plug-in. A call to the [SccInitialize](../extensibility/sccinitialize-function.md) precedes this call. No projects can still be open at the time of the call to `SccUninitialize`.  
+## 備註  
+ 原始檔控制外掛程式會負責準備即將關閉並釋放外掛程式配置內容結構的記憶體。 每個外掛程式的特定執行個體一次呼叫函式。 呼叫 [SccInitialize](../extensibility/sccinitialize-function.md) 之前呼叫。 沒有專案仍然可以開啟時呼叫的 `SccUninitialize`。  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
+## 請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)

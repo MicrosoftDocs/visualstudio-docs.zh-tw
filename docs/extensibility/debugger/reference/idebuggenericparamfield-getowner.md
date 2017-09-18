@@ -1,68 +1,51 @@
 ---
-title: IDebugGenericParamField::GetOwner | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugGenericParamField::GetOwner
+title: "IDebugGenericParamField::GetOwner | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugGenericParamField::GetOwner"
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 50cb3a7374e800d6df4380001d9063564a248abc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
-Retrieves the type or method owner of this generic parameter.  
+# IDebugGenericParamField::GetOwner
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取這個泛用參數的型別或方法擁有者。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetOwner(  
-   IDebugField** ppOwner  
+   IDebugField** ppOwner  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetOwner(  
-   out IDebugField ppOwner  
+   out IDebugField ppOwner  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ppOwner`  
- [out] Returns the [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object that owns this generic parameter.  
+ \[\] out傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)擁有這個泛用參數的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugGenericParamFieldType** object that exposes the [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)  
 {  
     HRESULT hr = S_OK;  
@@ -110,5 +93,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

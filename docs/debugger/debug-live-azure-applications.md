@@ -30,10 +30,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 65a9abd386e014f46532f74d3da88b75f2472b41
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 688e2ebfbf146c0a82f65ebd7a2b8bef4eeaef00
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="debug-live-aspnet-apps-running-in-azure-app-service"></a>Debug live ASP.NET apps running in Azure App Service
@@ -52,9 +52,9 @@ Additionally, the Snapshot Debugger is only available for **Visual Studio Enterp
 
 ## <a name="start-the-snapshot-debugger"></a>Start the Snapshot Debugger
 
-1. Install the [Visual Studio Enterprise 15.4 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes) or later.
+1. Install the [Visual Studio Enterprise 15.4 Preview](http://www.microsoft.com) or later.
 
-2. Install the [Snapshot Debugger extension](http://aka.ms/snapshotdebuggervsix) for Visual Studio. This extension will enable you to set snappoints and logpoints against apps running in Azure App Services.
+2. Install the [Snapshot Debugger extension](https://aka.ms/snappoint) for Visual Studio. This extension will enable you to set snappoints and logpoints against apps running in Azure App Services.
 
 3. Open the project you would like to snapshot debug. 
 

@@ -36,14 +36,14 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: 3ffb550707280d76756cbd144ed03f4143ce144b
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5c5aa0df75451fe829b0d6849d8c9d1672e677b0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Get started debugging a multithreaded application in Visual Studio
-Visual Studio provides several tools and user interface elements to help you debug multithreaded applications. This tutorial shows how to use thread markers, the **Parallel Stacks** window, the **Parallel Watch** window, conditional breakpoints, and filter breakpoints . This tutorial takes only a few minutes, but completing it will familiarize you with the features for debugging multithreaded applications.
+Visual Studio provides several tools and user interface elements to help you debug multithreaded applications. This tutorial shows how to use conditional breakpoints and filter breakpoints, the **Parallel Stacks** window, and **Parallel Watch** window. This tutorial takes only a few minutes, but completing it will familiarize you with the features for debugging multithreaded applications.
 
 |         |         |
 |---------|---------|
@@ -75,7 +75,7 @@ To begin this tutorial, you need a multithreaded application project. Follow the
   
 6.  Delete the code that appears in the source file and replace it with the example code shown here.
 
-    ```csharp
+    ```C#
     using System;
     using System.Threading;
 

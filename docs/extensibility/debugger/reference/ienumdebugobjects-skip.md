@@ -1,68 +1,51 @@
 ---
-title: IEnumDebugObjects::Skip | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEnumDebugObjects::Skip
-helpviewer_keywords:
-- IEnumDebugObjects::Skip method
+title: "IEnumDebugObjects::Skip | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEnumDebugObjects::Skip"
+helpviewer_keywords: 
+  - "IEnumDebugObjects::Skip 方法"
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
 caps.latest.revision: 4
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 91351143b6983708845e72860d8b4b53df47ce29
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 4
 ---
-# <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
-This method skips over the specified number of elements.  
+# IEnumDebugObjects::Skip
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會略過指定的項目數。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT Skip(  
-   [in] ULONG celt  
+   [in] ULONG celt  
 );  
 ```  
   
-```csharp  
+```c#  
 int Skip(  
-   [In] uint celt  
+   [In] uint celt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `celt`  
- [in] Number of elements to skip.  
+ \[in\]若要跳過的項目數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if `celt` is greater than the number of remaining elements; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果`celt`大於其餘的項目 ； 數目 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- If `celt` specifies a value greater than the number of remaining elements, the enumeration is set to the end and `S_FALSE` is returned.  
+## 備註  
+ 如果`celt`指定的值是無效的其餘的項目，列舉型別設定為 \[結束和`S_FALSE`會傳回。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

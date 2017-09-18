@@ -1,81 +1,64 @@
 ---
-title: IDebugProgram2::GetDisassemblyStream | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgram2::GetDisassemblyStream
-helpviewer_keywords:
-- IDebugProgram2::GetDisassemblyStream
+title: "IDebugProgram2::GetDisassemblyStream | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgram2::GetDisassemblyStream"
+helpviewer_keywords: 
+  - "IDebugProgram2::GetDisassemblyStream"
 ms.assetid: beda0da5-267e-4bf3-96c4-b659d29e2254
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 50655e8d565fe08c4ea918d69f5eeb8780d43c55
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
-Gets the disassembly stream for this program or a part of this program.  
+# IDebugProgram2::GetDisassemblyStream
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得此程式或這個程式的組件的反組譯碼資料流。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetDisassemblyStream(   
-   DISASSEMBLY_STREAM_SCOPE   dwScope,  
-   IDebugCodeContext2*        pCodeContext,  
-   IDebugDisassemblyStream2** ppDisassemblyStream  
+```cpp#  
+HRESULT GetDisassemblyStream(   
+   DISASSEMBLY_STREAM_SCOPE   dwScope,  
+   IDebugCodeContext2*        pCodeContext,  
+   IDebugDisassemblyStream2** ppDisassemblyStream  
 );  
 ```  
   
-```csharp  
-int GetDisassemblyStream(   
-   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
-   IDebugCodeContext2             pCodeContext,  
-   out IDebugDisassemblyStream2   ppDisassemblyStream  
+```c#  
+int GetDisassemblyStream(   
+   enum_DISASSEMBLY_STREAM_SCOPE  dwScope,  
+   IDebugCodeContext2             pCodeContext,  
+   out IDebugDisassemblyStream2   ppDisassemblyStream  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwScope`  
- [in] Specifies a value from the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration that defines the scope of the disassembly stream.  
+ \[in\]指定值，從[DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)定義範圍的反組譯碼資料流的列舉型別。  
   
  `pCodeContext`  
- [in] An [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the position of where to start the disassembly stream.  
+ \[in\][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示要從何處開始反組譯碼資料流的位置。  
   
  `ppDisassemblyStream`  
- [out] Returns an [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md) object that represents the disassembly stream.  
+ \[\] out傳回[IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)代表反組譯碼資料流的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_DISASM_NOTSUPPORTED` if disassembly is not supported for this particular architecture.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_DISASM_NOTSUPPORTED`這個特定的架構不支援反組譯碼。  
   
-## <a name="remarks"></a>Remarks  
- If the `dwScopes` parameter has the `DSS_HUGE` flag of the [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) enumeration set, then the disassembly is expected to return a large number of disassembly instructions, for example, for an entire file or module. If the `DSS_HUGE` flag is not set, then the disassembly is expected to be confined to a small region, typically that of a single function.  
+## 備註  
+ 如果`dwScopes`參數有`DSS_HUGE`加上旗標的[DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)列舉型別設定，然後反組譯碼預期會傳回整個檔案或模組的反組譯碼指示，比方說，很多。  如果`DSS_HUGE`未設定旗標，然後反組譯碼預期侷限於小型的區域，通常是，在單一函式。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
+ [DISASSEMBLY\_STREAM\_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)

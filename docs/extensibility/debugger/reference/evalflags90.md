@@ -1,121 +1,104 @@
 ---
-title: EVALFLAGS90 | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- EVALFLAGS90 enumeration
+title: "EVALFLAGS90 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "EVALFLAGS90 列舉型別"
 ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 25ff118d4cb3388798b456c516869d62b47ef4e3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="evalflags90"></a>EVALFLAGS90
-Enumerates the valid values for flags that control expression evaluation. This enumeration extends the [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) enumeration.  
+# EVALFLAGS90
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+列舉控制運算式評估的旗標的有效值。  這個列舉型別擴充[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 enum enum_EVALFLAGS90  
 {  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
+   // VS 8.0 values  
+   EVAL90_RETURNVALUE                 = 0x0002,  
+   EVAL90_NOSIDEEFFECTS               = 0x0004,  
+   EVAL90_ALLOWBPS                    = 0x0008,  
+   EVAL90_ALLOWERRORREPORT            = 0x0010,  
+   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
+   EVAL90_NOFUNCEVAL                  = 0x0080,  
+   EVAL90_NOEVENTS                    = 0x1000,  
+   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
+   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
   
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
+   // Values added in VS 9.0  
+   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
 };  
 typedef DWORD EVALFLAGS90;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_EVALFLAGS90  
 {  
-   // VS 8.0 values  
-   EVAL90_RETURNVALUE                 = 0x0002,  
-   EVAL90_NOSIDEEFFECTS               = 0x0004,  
-   EVAL90_ALLOWBPS                    = 0x0008,  
-   EVAL90_ALLOWERRORREPORT            = 0x0010,  
-   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
-   EVAL90_NOFUNCEVAL                  = 0x0080,  
-   EVAL90_NOEVENTS                    = 0x1000,  
-   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
-   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
+   // VS 8.0 values  
+   EVAL90_RETURNVALUE                 = 0x0002,  
+   EVAL90_NOSIDEEFFECTS               = 0x0004,  
+   EVAL90_ALLOWBPS                    = 0x0008,  
+   EVAL90_ALLOWERRORREPORT            = 0x0010,  
+   EVAL90_FUNCTION_AS_ADDRESS         = 0x0040,  
+   EVAL90_NOFUNCEVAL                  = 0x0080,  
+   EVAL90_NOEVENTS                    = 0x1000,  
+   EVAL90_DESIGN_TIME_EXPR_EVAL       = 0x2000,  
+   EVAL90_ALLOW_IMPLICIT_VARS         = 0x4000,  
   
-   // Values added in VS 9.0  
-   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
+   // Values added in VS 9.0  
+   EVAL90_FORCE_EVALUATION_NOW        = 0x8000  
 };  
 ```  
   
-#### <a name="parameters"></a>Parameters  
- EVAL90_RETURNVALUE  
- Specifies that the return value, if any, be evaluated.  
+#### 參數  
+ EVAL90\_RETURNVALUE  
+ 指定傳回的值，如果有的話，進行評估。  
   
- EVAL90_NOSIDEEFFECTS  
- Specifies that side effects not be allowed.  
+ EVAL90\_NOSIDEEFFECTS  
+ 指定不允許副作用。  
   
- EVAL90_ALLOWBPS  
- Specifies stopping on breakpoints.  
+ EVAL90\_ALLOWBPS  
+ 指定中斷點停止。  
   
- EVAL90_ALLOWERRORREPORT  
- Specifies that error reporting to the host to be allowed. Primarily used for expression evaluation in script in Internet Explorer.  
+ EVAL90\_ALLOWERRORREPORT  
+ 指定允許主應用程式報告該錯誤。  主要用於在 Internet Explorer 中的指令碼中運算式的評估。  
   
- EVAL90_FUNCTION_AS_ADDRESS  
- Forces functions to be evaluated as addresses, instead of invoking the function.  
+ EVAL90\_FUNCTION\_AS\_ADDRESS  
+ 要評估的地址，而不是叫用函式的部隊函式。  
   
- EVAL90_NOFUNCEVAL  
- Prevents function from being evaluated. For example, consider the `int` token in the expression `myExpression(int) + 10`. This function can be correctly evaluated as an address, but not as a value.  
+ EVAL90\_NOFUNCEVAL  
+ 函式會防止進行評估。  例如，假設`int`運算式中的語彙基元`myExpression(int) + 10`。  為地址，但不是以一個值，就可以正確地評估此函式。  
   
- EVAL90_NOEVENTS  
- Flag to indicate that events that occur during the expression evaluation should not be sent to the session debug manager (SDM) or to the IDE.  
+ EVAL90\_NOEVENTS  
+ 旗標，表示 \[工作階段偵錯管理員 \(SDM\) 或 IDE，您不應該傳送運算式的評估期間發生的事件。  
   
- EVAL90_DESIGN_TIME_EXPR_EVAL  
- Enables design-time expression evaluation.  
+ EVAL90\_DESIGN\_TIME\_EXPR\_EVAL  
+ 可讓設計階段運算式評估。  
   
- EVAL90_ALLOW_IMPLICIT_VARS  
- Allows implicit variable creation.  
+ EVAL90\_ALLOW\_IMPLICIT\_VARS  
+ 允許隱含變數的建立。  
   
- EVAL90_FORCE_EVALUATION_NOW  
- Forces evaluation to occur immediately. This is useful when servicing a request, such as a user request.  
+ EVAL90\_FORCE\_EVALUATION\_NOW  
+ 若要立即強制評估。  在處理要求，如使用者要求時，這非常有用。  
   
-## <a name="requirements"></a>Requirements  
- Header: Msdbg90.h  
+## 需求  
+ 標頭: Msdbg90.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
+## 請參閱  
+ [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

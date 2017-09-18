@@ -41,10 +41,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: d54015ef6c1d73b4cefed55aa9577a23d4b24f04
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 5ea933bbd72e720c56ddf74490c77298133a1305
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="intellitrace-features"></a>IntelliTrace Features
@@ -68,7 +68,7 @@ You can use IntelliTrace to record events and method calls your application, whi
  This isn't enabled by default, but IntelliTrace can record method calls along with events. To enable collection of method calls go to **Tools > Options > IntelliTrace > General**, and select **IntelliTrace events and call information**.
 
 > [!NOTE]
-> Call information is not currently available for .NET Core apps. 
+> Call information is not currently available for ASP.NET Core apps. 
   
  This lets you see the call stack history and step backward and forward through calls in your code. IntelliTrace records data such as method names, method entry and exit points, and certain parameter values and return values.  
   
@@ -135,4 +135,3 @@ You can use IntelliTrace to record events and method calls your application, whi
  [IntelliTrace Experience](https://channel9.msdn.com/Series/Visual-Studio-2015-Enterprise-Videos/IntelliTrace-Experience)  
   
  [Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/events/Ignite/2015/BRK3716)
-

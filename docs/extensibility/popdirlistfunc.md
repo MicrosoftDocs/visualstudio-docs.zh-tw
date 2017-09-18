@@ -1,80 +1,59 @@
 ---
-title: POPDIRLISTFUNC | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- POPLISTFUNC
-helpviewer_keywords:
-- POPDIRLISTFUNC callback function
+title: "POPDIRLISTFUNC | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "POPLISTFUNC"
+helpviewer_keywords: 
+  - "POPDIRLISTFUNC 回呼函式"
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cb56a3e8f90ed31d051f28fe7cfe99be154d2696
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-This is a callback function given to the [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) function to update a collection of directories and (optionally) file names to find out which are under source control.  
+# POPDIRLISTFUNC
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+這是提供給回呼函式 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函式來更新目錄以及 \(選擇性\) 若要找出哪些是原始檔控制下的檔案名稱的集合。  
   
- The `POPDIRLISTFUNC` callback should be called only for those directories and file names (in the list given to the `SccPopulateDirList` function) that are actually under source control.  
+ `POPDIRLISTFUNC` 應該呼叫回呼，僅適用於這些目錄和檔案名稱 \(在清單中指定給 `SccPopulateDirList` 函式\)，實際上是原始檔控制下。  
   
-## <a name="signature"></a>Signature  
+## 簽章  
   
-```cpp  
-typedef BOOL (*POPDIRLISTFUNC)(  
-   LPVOID pvCallerData,  
-   BOOL bFolder,  
-   LPCSTR lpDirectoryOrFileName  
-);  
+```cpp#  
+typedef BOOL (*POPDIRLISTFUNC)( LPVOID pvCallerData, BOOL bFolder, LPCSTR lpDirectoryOrFileName );  
 ```  
   
-## <a name="parameters"></a>Parameters  
+## 參數  
  pvCallerData  
- [in] User value given to [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md).  
+ \[\] in提供給使用者值 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)。  
   
  bFolder  
- [in] `TRUE` if the name in `lpDirectoryOrFileName` is a directory; otherwise the name is a file name.  
+ \[in\] `TRUE` 如果在名稱 `lpDirectoryOrFileName` 是一個目錄中; 否則名稱會是檔案名稱。  
   
  lpDirectoryOrFileName  
- [in] Full local path to a directory or file name that is under source code control.  
+ \[\] in完整的本機路徑是在原始檔控制下的目錄或檔案名稱。  
   
-## <a name="return-value"></a>Return Value  
- The IDE returns an appropriate error code:  
+## 傳回值  
+ IDE 會傳回適當的錯誤程式碼:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Continue processing.|  
-|SCC_I_OPERATIONCANCELED|Stop processing.|  
-|SCC_E_xxx|Any appropriate source control error should stop processing.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|繼續處理。|  
+|SCC\_I\_OPERATIONCANCELED|停止處理。|  
+|SCC\_E\_xxx|任何適當的原始檔控制錯誤應該停止處理。|  
   
-## <a name="remarks"></a>Remarks  
- If the `fOptions` parameter of the `SccPopulateDirList` function contains the `SCC_PDL_INCLUDEFILES` flag, then the list will possibly contain file names as well as directory names.  
+## 備註  
+ 如果 `fOptions` 參數 `SccPopulateDirList` 函式包含 `SCC_PDL_INCLUDEFILES` 旗標，清單可能包含檔案名稱，以及目錄名稱。  
   
-## <a name="see-also"></a>See Also  
- [Callback Functions Implemented by the IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
+## 請參閱  
+ [IDE 所實作的回呼函式](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)   
- [Error Codes](../extensibility/error-codes.md)
+ [錯誤代碼](../extensibility/error-codes.md)

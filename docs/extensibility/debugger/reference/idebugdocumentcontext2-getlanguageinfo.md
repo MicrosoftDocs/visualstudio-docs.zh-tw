@@ -1,75 +1,58 @@
 ---
-title: IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugDocumentContext2::GetLanguageInfo
-helpviewer_keywords:
-- IDebugDocumentContext2::GetLanguageInfo
+title: "IDebugDocumentContext2::GetLanguageInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugDocumentContext2::GetLanguageInfo"
+helpviewer_keywords: 
+  - "IDebugDocumentContext2::GetLanguageInfo"
 ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 36f39f83a1929c656fe541dc511beb0fad376831
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
-Gets the language associated with this document context.  
+# IDebugDocumentContext2::GetLanguageInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得與這個文件內容相關聯的語言。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetLanguageInfo(   
-   BSTR* pbstrLanguage,  
-   GUID* pguidLanguage  
+```cpp#  
+HRESULT GetLanguageInfo(   
+   BSTR* pbstrLanguage,  
+   GUID* pguidLanguage  
 );  
 ```  
   
-```csharp  
-int GetLanguageInfo(   
-   out string pbstrLanguage,  
-   out Guid   pguidLanguage  
+```c#  
+int GetLanguageInfo(   
+   out string pbstrLanguage,  
+   out Guid   pguidLanguage  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pbstrLanguage`  
- [out] Returns the name of the language that implements the code at this document context.  
+ \[\] out傳回實作此文件內容的程式碼的語言名稱。  
   
  `pguidLanguage`  
- [out] Returns the GUID of the language that implements the code at this document context. For example, `guidVBScriptLang` or `guidCPPLang`. This GUID is not limited to the languages supplied by [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].  
+ \[\] out傳回的 GUID 會實作此文件內容的程式碼的語言。  例如，`guidVBScriptLang` 或 `guidCPPLang`。  此 GUID 並不僅限於所提供的語言[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CDebugContext` object that exposes the [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如`CDebugContext`物件，公開 \(expose\) [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)    
 {    
    HRESULT hr;    
@@ -98,5 +81,5 @@ HRESULT CDebugContext::GetLanguageInfo(BSTR* pbstrLanguage, GUID* pguidLanguage)
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

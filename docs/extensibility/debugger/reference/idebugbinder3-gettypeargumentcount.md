@@ -1,5 +1,5 @@
 ---
-title: IDebugBinder3::GetTypeArgumentCount | Microsoft Docs
+title: "IDebugBinder3::GetTypeArgumentCount |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -30,17 +30,16 @@ translation.priority.mt:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9e676597c96441d0a33a190d45d78a5b4129ccfe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
+translationtype: Machine Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: fcb2dec4b7ea626035af5b6db4205b70d8c2b7e3
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
-This method returns the number of argument types associated with this object.  
+這個方法會傳回這個物件相關聯的引數類型的數目。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetTypeArgumentCount(  
@@ -48,22 +47,22 @@ HRESULT GetTypeArgumentCount(
 );  
 ```  
   
-```csharp  
+```c#  
 int GetTypeArgumentCount(  
    out uint uCount  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `uCount`  
- [out] Number of argument types associated with this object.  
+ [out]此物件相關聯的引數類型的數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The value returned by this method can be used to allocate an array for use with the [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md) method.  
+## <a name="remarks"></a>備註  
+ 這個方法所傳回的值可以用來配置陣列搭配[GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [GetTypeArguments](../../../extensibility/debugger/reference/idebugbinder3-gettypearguments.md)

@@ -1,47 +1,30 @@
 ---
-title: IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- GetFormalTypeParams
-- IDebugGenericFieldDefinition::GetFormalTypeParams
+title: "IDebugGenericFieldDefinition::GetFormalTypeParams | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "GetFormalTypeParams"
+  - "IDebugGenericFieldDefinition::GetFormalTypeParams"
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 577be76306d4fe54f3a5e95e9d494f82653ecebc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
-Retrieves the type parameters given the number of parameters.  
+# IDebugGenericFieldDefinition::GetFormalTypeParams
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取指定的參數數目的型別參數。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```cpp#  
 HRESULT GetFormalTypeParams(  
    ULONG32                   cParams,  
    IDebugGenericParamField** ppParams,  
@@ -49,7 +32,7 @@ HRESULT GetFormalTypeParams(
 );  
 ```  
   
-```csharp  
+```c#  
 int GetFormalTypeParams(  
    uint                          cParams,  
    out IDebugGenericParamField[] ppParams,  
@@ -57,21 +40,21 @@ int GetFormalTypeParams(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `cParams`  
- [in] Number of parameters.  
+ [in]參數的數目。  
   
  `ppParams`  
- [out] Array of type parameters.  
+ [out]型別參數的陣列。  
   
  `pcParams`  
- [in, out] Number of parameters in the `ppParams` array.  
+ [in、 out]中的參數數目 `ppParams` 陣列。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Return the type parameters in order from left to right. For example, Dictionary\<K,V> returns IDebugFormalGenericParameters {K,V}.  
+## <a name="remarks"></a>備註  
+ 傳回型別參數的順序從左到右。 例如，字典 \< K，V > 會傳回 IDebugFormalGenericParameters {K，V}。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>請參閱  
  [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

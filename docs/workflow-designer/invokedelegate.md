@@ -1,58 +1,39 @@
 ---
-title: InvokeDelegate | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-f1_keywords:
-- InvokeDelegate Designer
-- System.Activities.Statements.InvokeDelegate.UI
+title: "InvokeDelegate | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "reference"
+f1_keywords: 
+  - "InvokeDelegate Designer"
+  - "System.Activities.Statements.InvokeDelegate.UI"
 ms.assetid: 289a7498-5127-453f-beb5-05f05b80d26f
 caps.latest.revision: 3
-ms.author: sdanie
-manager: erikre
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 9ee20847f0ee80ce8aef2800fed1c5a120166cd6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.author: "sdanie"
+manager: "erikre"
+caps.handback.revision: 3
 ---
-# <a name="invokedelegate"></a>InvokeDelegate
-The **InvokeDelegate** designer is used to create and configure an <xref:System.Activities.Statements.InvokeDelegate> activity.  
+# InvokeDelegate
+\[**InvokeDelegate**\] 活動設計工具是用來建立及設定 <xref:System.Activities.Statements.InvokeDelegate> 活動。  
   
-## <a name="the-invokedelegate-activity"></a>The InvokeDelegate Activity  
- The <xref:System.Activities.Statements.InvokeDelegate> calls a public delegate.  
+## InvokeDelegate 活動  
+ <xref:System.Activities.Statements.InvokeDelegate> 會呼叫公用委派。  
   
-### <a name="using-the-invokedelegate-activity-designer"></a>Using the InvokeDelegate Activity Designer  
- The **InvokeDelegate** activity designer can be found in the **Primitives** category of the **Toolbox**, which is accessed by clicking the **Toolbox** tab [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] (Alternatively, select **Toolbar** from the **View** menu, or CRTL+ALT+X.)  
+### 使用 InvokeDelegate 活動設計工具  
+ \[**InvokeDelegate**\] 活動設計工具位於 \[**工具箱**\] 的 \[**基本**\] 類別中，按一下 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 中的 \[**工具箱**\] 索引標籤可存取此工具 \(也可以從 \[**檢視**\] 功能表選取 \[**工具箱**\]，或是按 CTRL\+ALT\+X\)。  
   
- The **InvokeDelegate** activity designer can be dragged from the **Toolbox** and dropped on to the [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] surface where ever activities are usually placed, such as inside a <xref:System.Activities.Statements.Sequence>. This creates an <xref:System.Activities.Statements.InvokeDelegate> activity with a default <xref:System.Activities.Activity.DisplayName%2A> of InvokeDelegate. The <xref:System.Activities.Activity.DisplayName%2A> can be edited in the header of the **InvokeDelegate** activity designer or in the **DisplayName** box of the property grid.  
+ \[**InvokeDelegate**\] 活動設計工具可以從 \[**工具箱**\] 拖曳出來，放到 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 介面上通常用來放置活動的任一處，例如 <xref:System.Activities.Statements.Sequence> 內部。這會建立一個 <xref:System.Activities.Statements.InvokeDelegate> 活動，具有 InvokeDelegate 的預設 <xref:System.Activities.Activity.DisplayName%2A>。<xref:System.Activities.Activity.DisplayName%2A> 可以在 \[**InvokeDelegate**\] 活動設計工具的標頭中編輯，或是在屬性方格的 \[**DisplayName**\] 方塊中編輯。  
   
-### <a name="the-invokedelegate-properties"></a>The InvokeDelegate Properties  
- The following table shows the <xref:System.Activities.Statements.InvokeDelegate> properties and describes how they are used in the designer. These properties can be edited in property grid and some can be edited on [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]designer surface.  
+### InvokeDelegate 屬性  
+ 下表顯示 <xref:System.Activities.Statements.InvokeDelegate> 屬性，並且描述屬性在設計工具中的使用方式。這些屬性可以在屬性方格中進行編輯，其中有一些可以在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 設計工具介面上編輯。  
   
-|Property Name|Required|Usage|  
-|-------------------|--------------|-----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|The friendly name of the <xref:System.Activities.Statements.InvokeDelegate> activity. The default value is InvokeDelegate.<br /><br /> Although the <xref:System.Activities.Activity.DisplayName%2A> is not strictly required, it is a best practice to use one.|  
-|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|The name of the <xref:System.Activities.ActivityDelegate> to be called when the activity executes. This property can be edited on designer surface. This is a mandatory property.|  
-|<xref:System.Activities.Statements.InvokeDelegate.DelegateArguments%2A>|False|The argument collection of the called delegate. The keys are the names of the parameter objects on the <xref:System.Activities.ActivityDelegate> and the values are the arguments whose expressions are evaluated and assigned to the corresponding parameter objects. In the property grid, click the ellipsis button in the **DelegateArguments** field, it displays the **DelegateArguments** dialog to let you set this property. Click the **Create Argument** field to add the arguments.|  
+|屬性名稱|必要|使用方式|  
+|----------|--------|----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.InvokeDelegate> 活動的易記名稱。預設值為 InvokeDelegate。<br /><br /> 雖然 <xref:System.Activities.Activity.DisplayName%2A> 並非絕對必要，但建議您盡量使用。|  
+|<xref:System.Activities.Statements.InvokeDelegate.Delegate%2A>|True|活動執行時要呼叫之 <xref:System.Activities.Statements.ActivityDelegate> 的名稱。此屬性也可以在設計工具介面上編輯。這是必要的屬性。|  
+|<xref:System.Activities.Statements.InvokeMethod.DelegateArguments%2A>|False|被呼叫之委派的引數集合。金鑰是 <xref:System.Activities.Statements.ActivityDelegate> 上 <xref:System.Activities.Statements.ActivityDelegateParameter> 物件的名稱，而值是評估所屬運算式並將其指派至對應 <xref:System.Activities.Statements.ActivityDelegateParameter> 物件的引數。在屬性方格中，按一下 \[**DelegateArguments**\] 欄位中的省略符號按鈕，隨即顯示可讓您設定此屬性的 \[**DelegateArguments**\] 對話方塊。按一下 \[**建立引數**\] 欄位來加入引數。|  
   
-## <a name="see-also"></a>See Also  
- [How to: Define and consume activity delegates in the Workflow Designer](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+## 請參閱  
+ [HOW TO：定義並取用工作流程設計工具中的活動委派](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

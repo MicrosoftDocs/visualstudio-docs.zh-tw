@@ -1,77 +1,60 @@
 ---
-title: 'Walkthrough: Creating a Custom Text Template Host | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- walkthroughs [text templates], custom host
-- text templates, custom host walkthrough
+title: "逐步解說：建立自訂文字範本主機 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "文字範本, 自訂主機逐步解說"
+  - "逐步解說 [文字範本], 自訂主機"
 ms.assetid: d00bc366-65ed-4229-885a-196ef9625f05
 caps.latest.revision: 51
-author: alancameronwills
-ms.author: awills
-manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6a14023a35884ed742535872a649927770e93072
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+author: "alancameronwills"
+ms.author: "awills"
+manager: "douge"
+caps.handback.revision: 51
 ---
-# <a name="walkthrough-creating-a-custom-text-template-host"></a>Walkthrough: Creating a Custom Text Template Host
-A *text template**host* provides an environment that enables the *text template transformation engine* to run. The host is responsible for managing the engine's interaction with the file system. The engine or *directive processor* that needs a file or an assembly can request a resource from the host. The host can then search directories and the global assembly cache to locate the requested resource. For more information, see [The Text Template Transformation Process](../modeling/the-text-template-transformation-process.md).  
+# 逐步解說：建立自訂文字範本主機
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+「*文字範本**主應用程式*」\(Text Template Host\) 會提供可供執行「*文字範本轉換引擎*」\(Text Template Transformation Engine\) 的環境。  這個主應用程式負責管理引擎與檔案系統之間的互動。  需要檔案或組件的引擎或「*指示詞處理器*」\(Directive Processor\) 可以向主應用程式要求資源。  主機便會搜尋目錄和全域組件快取來找出要求的資源。  如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
- You can write a custom host if you want to use the *text template transformation* functionality from outside [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] or if you want to integrate that functionality into custom tools. To create a custom host, you must create a class that inherits from <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. For the documentation of the individual methods, see <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
+ 如果您要從外部 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用「*文字範本轉換*」，或是想要將這個功能整合到自訂工具，您可以撰寫自訂主機。  若要建立自訂主機，您必須建立一個繼承自 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> 的類別。  如需個別方法的說明文件，請參閱 <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  
   
 > [!WARNING]
->  If you are writing a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extension or package, consider using the text templating service instead of creating your own host. For more information, see [Invoking Text Transformation in a VS Extension](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+>  如果您要撰寫 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充功能或封裝，請考慮使用文字範本化服務，而不是建立自己的主應用程式。  如需詳細資訊，請參閱[叫用 VS 擴充功能中的文字轉換](../modeling/invoking-text-transformation-in-a-vs-extension.md)。  
   
- Tasks illustrated in this walkthrough include the following:  
+ 本逐步解說所述的工作包括下列各項：  
   
--   Creating a custom text template host.  
+-   建立自訂文字範本主應用程式。  
   
--   Testing the custom host.  
+-   測試自訂主應用程式。  
   
-## <a name="prerequisites"></a>Prerequisites  
- To complete this walkthrough, you must have the following:  
+## 必要條件  
+ 若要完成這個逐步解說，您必須具有下列各項：  
   
--   Visual Studio 2010 or later  
+-   Visual Studio 2010 \(含\) 以後版本  
   
 -   Visual Studio SDK  
   
-## <a name="creating-a-custom-text-template-host"></a>Creating a Custom Text Template Host  
- In this walkthrough, you create a custom host in an executable application that can be called from the command line. The application accepts a text template file as an argument, reads the template, calls the engine to transform the template, and displays any errors that occur in the command prompt window.  
+## 建立自訂文字範本主應用程式  
+ 在本逐步解說中，您將會在可從命令列呼叫執行的應用程式 \(Application\) 中建立自訂主應用程式 \(Custom Host\)。  此應用程式會接受文字範本檔做為引數、讀取範本、呼叫引擎以轉換範本，然後在命令提示字元視窗中顯示發生的任何錯誤。  
   
-#### <a name="to-create-a-custom-host"></a>To create a custom host  
+#### 若要建立自訂主應用程式  
   
-1.  In Visual Studio, create a new Visual Basic or a C# console application named CustomHost.  
+1.  在 Visual Studio 中建立新的 Visual Basic 或 C\# 主控台應用程式，並命名為 CustomHost。  
   
-2.  Add references to the following assemblies:  
+2.  加入下列組件的參考：  
   
     -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 and later versions**  
+    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 \(含\) 以後版本**  
   
-3.  Replace the code in the Program.cs or Module1.vb file with the following code:  
+3.  以下列程式碼取代 Program.cs 或 Module1.vb 檔案中的程式碼：  
   
-    ```csharp  
+    ```c#  
     using System;  
     using System.IO;  
     using System.CodeDom.Compiler;  
@@ -421,7 +404,7 @@ A *text template**host* provides an environment that enables the *text template 
     }  
     ```  
   
-    ```vb  
+    ```vb#  
     Imports System  
     Imports System.IO  
     Imports System.CodeDom.Compiler  
@@ -728,27 +711,27 @@ A *text template**host* provides an environment that enables the *text template 
     End Namespace  
     ```  
   
-4.  For [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] only, open the **Project** menu, and click **CustomHost Properties**. In the **Startup object** list, click **CustomHost.Program**.  
+4.  \(僅限 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]\) 開啟 \[**專案**\] 功能表，然後按一下 \[**CustomHost 屬性**\]。  在 \[**啟始物件**\] 清單中，按一下 \[**CustomHost.Program**\]。  
   
-5.  On the **File** menu, click **Save All**.  
+5.  在 \[**檔案**\] 功能表上，按一下 \[**全部儲存**\]。  
   
-6.  On the **Build** menu, click **Build Solution**.  
+6.  在 \[**建置**\] 功能表上，按一下 \[**建置方案**\]。  
   
-## <a name="testing-the-custom-host"></a>Testing the Custom Host  
- To test the custom host, you write a text template, then you run the custom host, pass it the name of the text template, and verify that the template is transformed.  
+## 測試自訂主應用程式  
+ 若要測試自訂主應用程式，請先撰寫文字範本，接著執行自訂主應用程式、將文字範本的名稱傳遞給這個主應用程式，然後確認已轉換該範本。  
   
-#### <a name="to-create-a-text-template-to-test-the-custom-host"></a>To create a text template to test the custom host  
+#### 若要建立文字範本以測試自訂主應用程式  
   
-1.  Create a text file, and name it `TestTemplate.tt`.  
+1.  建立文字檔並命名為 `TestTemplate.tt`。  
   
-     You can use any text editor (for example, Notepad) to create the file.  
+     您可以使用任何文字編輯器 \(例如 \[記事本\]\) 來建立檔案。  
   
-2.  Add the following to the file:  
+2.  將下列內容加入至檔案中：  
   
     > [!NOTE]
-    >  The programming language of the text template does not have to match that of the custom host.  
+    >  文字範本的程式語言與自訂主應用程式的語言不一定要相符。  
   
-    ```csharp  
+    ```c#  
     Text Template Host Test  
   
     <#@ template debug="true" #>  
@@ -766,7 +749,7 @@ A *text template**host* provides an environment that enables the *text template 
     #>  
     ```  
   
-    ```vb  
+    ```vb#  
     Text Template Host Test  
   
     <#@ template debug="true" language="VB"#>  
@@ -786,41 +769,41 @@ A *text template**host* provides an environment that enables the *text template 
   
     ```  
   
-3.  Save and close the file.  
+3.  儲存並關閉檔案。  
   
-#### <a name="to-test-the-custom-host"></a>To test the custom host  
+#### 若要測試自訂主應用程式  
   
-1.  Open the Command Prompt window.  
+1.  開啟 \[命令提示字元\] 視窗。  
   
-2.  Type the path of the executable file for the custom host, but do not press ENTER yet.  
+2.  輸入自訂主應用程式可執行檔的路徑，但是還不要按 ENTER。  
   
-     For example, type:  
+     例如，輸入：  
   
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file CustomHost.exe in **Windows Explorer** and then drag the file into the Command Prompt window.  
+    >  如果不要輸入位置路徑，您可以在 \[**Windows 檔案總管**\] 中瀏覽至 CustomHost.exe 檔，然後將該檔案拖曳到 \[命令提示字元\] 視窗中。  
   
-3.  Type a space.  
+3.  輸入空格。  
   
-4.  Type the path of the text template file, and then press ENTER.  
+4.  輸入文字範本檔的路徑，然後按 ENTER。  
   
-     For example, type:  
+     例如，輸入：  
   
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  Instead of typing the address, you can browse to the file TestTemplate.tt in **Windows Explorer** and then drag the file into the Command Prompt window.  
+    >  如果不要輸入位置路徑，您可以在 \[**Windows 檔案總管**\] 中瀏覽至 TestTemplate.tt 檔，然後將該檔案拖曳到 \[命令提示字元\] 視窗中。  
   
-     The custom host application runs and completes the text template transformation process.  
+     自訂主應用程式隨即執行並完成文字範本轉換流程。  
   
-5.  In **Windows Explorer**, browse to the folder that contains the file TestTemplate.tt.  
+5.  在 \[**Windows 檔案總管**\] 中，瀏覽至包含檔案 TestTemplate.tt 的資料夾。  
   
-     That folder also contains the file TestTemplate1.txt.  
+     該資料夾也會包含 TestTemplate1.txt 檔。  
   
-6.  Open this file to see the results of the text template transformation.  
+6.  開啟這個檔案來查看文字範本轉換的結果。  
   
-     The generated text output appears and looks like this:  
+     產生的文字輸出隨即出現，看起來如下所示：  
   
     ```  
     Text Template Host Test  
@@ -830,8 +813,8 @@ A *text template**host* provides an environment that enables the *text template 
     This is a test  
     ```  
   
-## <a name="next-steps"></a>Next Steps  
- In this walkthrough, you created a text template transformation host that supports the basic transformation functionality. You can expand your host to support text templates that call custom or generated directive processors. For more information, see [Walkthrough: Connecting a Host to a Generated Directive Processor](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md).  
+## 後續步驟  
+ 在本逐步解說中，您已經建立支援基本轉換功能的文字範本轉換主應用程式。  您可以擴充這個主應用程式，支援呼叫自訂或產生之指示詞處理器的文字範本。  如需詳細資訊，請參閱[逐步解說：將主機連接至產生的指示詞處理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>

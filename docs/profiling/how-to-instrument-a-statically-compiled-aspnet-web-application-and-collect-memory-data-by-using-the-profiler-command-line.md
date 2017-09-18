@@ -1,135 +1,119 @@
 ---
-title: 'How to: Instrument a Statically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "如何：使用程式碼剖析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料 | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
 caps.latest.revision: 16
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: c8425115daa79062250fd6418496643005d1c703
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
-
+caps.handback.revision: 16
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
 ---
-# <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>How to: Instrument a Statically Compiled ASP.NET Web Application and Collect Memory Data by Using the Profiler Command Line
-This topic describes how to use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Profiling Tools command-line tools to instrument a pre-compiled [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web component or Web site and collect .NET memory allocation, object lifetime, and detailed timing data.  
+# 如何：使用程式碼剖析工具命令列檢測靜態編譯的 ASP.NET Web 應用程式並收集記憶體資料
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+本主題說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具檢測預先編譯的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件或網站，以及收集 .NET 記憶體配置、物件存留期和詳細的執行時間資料。  
   
 > [!NOTE]
->  Command-line tools of the Profiling Tools are located in the \Team Tools\Performance Tools subdirectory of the [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] installation directory. On 64 bit computers, both 64 bit and 32 bit versions of the tools are available. To use the profiler command-line tools, you must add the tools path to the PATH environment variable of the command prompt window or add it to the command itself. For more information, see [Specifying the Path to Command Line Tools](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+>  程式碼剖析工具的命令列工具位於 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。  若要使用程式碼剖析工具的命令列工具，必須將工具路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
- To collect data from a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web component by using the instrumentation method, you use the [VSInstr.exe](../profiling/vsinstr.md) tool to generate an instrumented version of the component. On the computer that hosts the component, you replace the non-instrumented version of the component with the instrumented version. You then use the [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) tool to initialize the global profiling environment variables and restart the host computer. You then start the profiler.  
+ 若要使用檢測方法收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 元件中的資料，您可以使用 [VSInstr.exe](../profiling/vsinstr.md) 工具產生元件的已檢測版本。  在裝載該元件的電腦上，以檢測過的元件版本取代未經檢測的元件。  使用 [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) 工具初始化全域程式碼剖析環境變數，然後重新啟動主機電腦。  接著啟動程式碼剖析工具。  
   
- When the instrumented component is executed, timing data is automatically collected to a data file. You can pause and resume data collection during the profiling session.  
+ 當執行檢測元件時，時間資料會自動收集至資料檔案。  您可以在程式碼剖析工作階段期間暫停和繼續資料收集。  
   
- To end a profiling session, you close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process that hosts the component and then explicitly shut down the profiler. In most cases, we recommend clearing the profiling environment variables at the end of a session.  
+ 若要結束程式碼剖析工作階段，請關閉裝載元件的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序，然後明確地關閉程式碼剖析工具。  在許多情況下，我們建議在工作階段結尾清除程式碼剖析環境變數。  
   
-## <a name="starting-to-profile"></a>Starting to Profile  
+## 啟動程式碼剖析  
   
-#### <a name="to-instrument-an-aspnet-web-component-and-start-profiling"></a>To instrument an ASP.NET Web component and start profiling  
+#### 若要檢測 ASP.NET Web 元件並啟動程式碼剖析  
   
-1.  Use the **VSInstr** tool to generate an instrumented version of the target application. If necessary, replace the application binaries on the ASP.NET host computer with the instrumented binaries.  
+1.  使用 **VSInstr** 工具產生目標應用程式的檢測版本。  如有必要，請以檢測過的二進位檔來取代 ASP.NET 主機電腦上的應用程式二進位檔。  
   
-2.  Open a command prompt window  
+2.  開啟命令提示字元視窗。  
   
-3.  Initialize the .NET profiling environment variables. In a command prompt window, type:  
+3.  初始化 .NET 程式碼剖析環境變數。  在命令提示字元視窗中，輸入：  
   
-     **VSPerfClrEnv /globaltracegc**  
+     **VSPerfClrEnv \/globaltracegc**  
   
-     -or-  
+     \-或\-  
   
-     **VSPerfClrEnv /globaltracegclife**  
+     **VSPerfClrEnv \/globaltracegclife**  
   
-    -   **/globaltracegc** collects .NET memory allocation and timing data.  
+    -   **\/globaltracegc** 收集 .NET 記憶體配置和執行時間資料。  
   
-    -   **/globaltracegclife** collects .NET memory allocation, object lifetime, and detailed timing data.  
+    -   **\/globaltracegclife** 收集 .NET 記憶體配置、物件存留期和詳細的執行時間資料。  
   
-4.  Restart the computer.  
+4.  重新啟動電腦。  
   
-5.  Open a command prompt window.  
+5.  開啟命令提示字元視窗。  
   
-6.  Start the profiler. In a command prompt window, type:  
+6.  啟動程式碼剖析工具。  在命令提示字元視窗中，輸入：  
   
-     **VSPerfCmd /start:trace /output:** `OutputFile` [`Options`]  
+     **VSPerfCmd \/start:trace \/output:**`OutputFile` \[`Options`\]  
   
-    -   The [/start](../profiling/start.md)**:trace** option initializes the profiler.  
+    -   [\/start](../profiling/start.md) **:trace** 選項會初始化程式碼剖析工具。  
   
-    -   The [/output](../profiling/output.md)**:**`OutputFile` option is required with **/start**. `OutputFile` specifies the name and location of the profiling data (.vsp) file.  
+    -   [\/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **\/start** 使用。  `OutputFile` 指定程式碼剖析資料 \(.vsp\) 檔案的名稱和位置。  
   
-     You can use any of the following options with the **/start:trace** option.  
+     下列任何選項都可以搭配 **\/start:trace** 選項使用。  
   
     > [!NOTE]
-    >  The **/user** and **/crosssession** options are usually required for ASP.NET applications.  
+    >  ASP.NET 應用程式通常需要 **\/user** 和 **\/crosssession** 選項。  
   
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|Specifies the optional domain and user name of the account that owns the ASP.NET worker process. This option is required if the process is running as a user that is different than the logged on user.The name is listed in the User Name column on the Processes tab of Windows Task Manager.|  
-    |[/crosssession](../profiling/crosssession.md)|Enables profiling of processes in other sessions. This option is required if the application is running in a different session. The session id is listed in the Session ID column on the Processes tab of Windows Task Manager. **/CS** can be specified as an abbreviation for **/crosssession**.|  
-    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|Specifies a Windows performance counter to be collected during profiling.|  
-    |[/automark](../profiling/automark.md) **:** `Interval`|Use with **/wincounter** only. Specifies the number of milliseconds between Windows performance counter collection events. Default is 500 ms.|  
-    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|Specifies an Event Tracing for Windows (ETW) event to be collected during profiling. ETW events are collected in a separate (.etl) file.|  
-    |[/globaloff](../profiling/globalon-and-globaloff.md)|To start the profiler with data collection paused, add the **/globaloff** option to the **/start** command line. Use **/globalon** to resume profiling.|  
+    |選項|描述|  
+    |--------|--------|  
+    |[\/user](../profiling/user-vsperfcmd.md) **:**\[`Domain`**\\**\]`UserName`|指定擁有 ASP.NET 背景工作處理序之帳戶的選擇性網域和使用者名稱。  如果處理序是以非登入使用者的身分執行，則這個選項是必要的。名稱會列在 \[Windows 工作管理員\] 的 \[處理程序\] 索引標籤上的 \[使用者名稱\] 欄中。|  
+    |[\/crosssession](../profiling/crosssession.md)|對其他工作階段中的處理序啟用程式碼剖析。  如果應用程式在不同的工作階段中執行，就必須有這個選項。  工作階段 ID 列於 \[Windows 工作管理員\] 之 \[處理程序\] 索引標籤上的 \[工作階段識別碼\] 資料行。  **\/CS** 可以當做 **\/crosssession** 的縮寫來指定。|  
+    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
+    |[\/automark](../profiling/automark.md) **:** `Interval`|僅能與 **\/wincounter** 搭配使用。  指定 Windows 效能計數器收集事件之間的毫秒數。  預設為 500 毫秒。|  
+    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 \(ETW\) 事件。  ETW 事件是在不同的 \(.etl\) 檔案中收集的。|  
+    |[\/globaloff](../profiling/globalon-and-globaloff.md)|若要在暫停資料收集的情況下啟動程式碼剖析工具，請將 **\/globaloff** 選項加入至 **\/start** 命令列。  使用 **\/globalon** 繼續程式碼剖析。|  
   
-7.  Open the Web site that contains the instrumented component.  
+7.  開啟包含已檢測之元件的網站。  
   
-## <a name="controlling-data-collection"></a>Controlling Data Collection  
- While the target application is running, you can control data collection by starting and stopping the writing of data to the file by using **VSPerfCmd.exe** options. Controlling data collection enables you to collect data for a specific part of program execution, such as starting or shutting down the application.  
+## 控制資料收集  
+ 當目標應用程式正在執行時，您可以使用 **VSPerfCmd.exe** 選項啟動及停止將資料寫入檔案，以控制資料收集。  資料收集控制可讓您收集程式執行中特定組件的資料，例如應用程式的開始與結束。  
   
-#### <a name="to-start-and-stop-data-collection"></a>To start and stop data collection  
+#### 若要啟動和停止資料收集  
   
--   The following pairs of options start and stop data collection. Specify each option on a separate command line. You can turn data collection on and off multiple times.  
+-   下列選項配對會啟動和停止資料收集。  在不同的命令列上指定每個選項。  您可以多次開啟或關閉資料收集。  
   
-    |Option|Description|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Starts (**/globalon**) or stops (**/globaloff**) data collection for all processes.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Starts (**/processon**) or stops (**/processoff**) data collection for the process specified by the process ID (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Starts (**/threadon**) or stops (**/threadoff**) data collection for the thread specified by the thread ID (`TID`).|  
+    |選項|描述|  
+    |--------|--------|  
+    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|啟動 \(**\/globalon**\) 或停止 \(**\/globaloff**\) 所有處理序的資料收集。|  
+    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID` [\/processoff](../profiling/processon-and-processoff.md)**:**`PID`|針對處理序 ID \(`PID`\) 所指定的處理序，啟動 \(**\/processon**\) 或停止 \(**\/processoff**\) 資料收集。|  
+    |[\/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [\/threadoff](../profiling/threadon-and-threadoff.md)**:**`TID`|針對執行緒 ID \(`TID`\) 所指定的執行緒，啟動 \(**\/threadon**\) 或停止 \(**\/threadoff**\) 資料收集。|  
   
-## <a name="ending-the-profiling-session"></a>Ending the Profiling Session  
- To end a profiling session, close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application, and then use the Internet Information Services (IIS) **IISReset** command to close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process. Call the **VSPerfCmd** [/shutdown](../profiling/shutdown.md) option to turn the profiler off and close the profiling data file. The **VSPerfClrEnv /globaloff** command clears the profiling environment variables. You must restart the computer for the new environment settings to be applied.  
+## 結束程式碼剖析工作階段  
+ 若要結束程式碼剖析工作階段，請關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式，然後使用網際網路資訊服務 \(IIS\) **IISReset** 命令關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。  呼叫 **VSPerfCmd** [\/shutdown](../profiling/shutdown.md) 選項，關閉程式碼剖析工具並關閉程式碼剖析資料檔案。  **VSPerfClrEnv \/globaloff** 命令會清除程式碼剖析環境變數。  您必須重新啟動電腦，才能套用新的環境設定。  
   
-#### <a name="to-end-a-profiling-session"></a>To end a profiling session  
+#### 若要結束程式碼剖析工作階段  
   
-1.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web application.  
+1.  關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。  
   
-2.  Close the [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] worker process. Type:  
+2.  關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。  型別：  
   
-     **IISReset /stop**  
+     **IISReset \/stop**  
   
-3.  Shut down the profiler. Type:  
+3.  關閉程式碼剖析工具。  型別：  
   
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd \/shutdown**  
   
-4.  (Optional). Clear the profiling environment variables. Type:  
+4.  \(選擇性\)  清除程式碼剖析環境變數。  型別：  
   
-     **VSPerfCmd /globaloff**  
+     **VSPerfCmd \/globaloff**  
   
-5.  Restart the computer. If necessary, restart IIS. Type:  
+5.  重新啟動電腦。  若有必要，請重新啟動 IIS。  型別：  
   
-     **IISReset /start**  
+     **IISReset \/start**  
   
-## <a name="see-also"></a>See Also  
- [Profiling ASP.NET Web Applications](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
- [.NET Memory Data Views](../profiling/dotnet-memory-data-views.md)
+## 請參閱  
+ [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

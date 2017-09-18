@@ -1,78 +1,61 @@
 ---
-title: IDebugThread2::GetThreadProperties | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugThread2::GetThreadProperties
-helpviewer_keywords:
-- IDebugThread2::GetThreadProperties
+title: "IDebugThread2::GetThreadProperties | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugThread2::GetThreadProperties"
+helpviewer_keywords: 
+  - "IDebugThread2::GetThreadProperties"
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 232ab20a60f9638bc7f629ff21e30432dbc83410
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
-Gets the properties that describe this thread.  
+# IDebugThread2::GetThreadProperties
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得描述這個執行緒的屬性。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetThreadProperties (   
-   THREADPROPERTY_FIELDS dwFields,  
-   THREADPROPERTIES*     ptp  
+```cpp#  
+HRESULT GetThreadProperties (   
+   THREADPROPERTY_FIELDS dwFields,  
+   THREADPROPERTIES*     ptp  
 );  
 ```  
   
-```csharp  
-int GetThreadProperties (   
-   enum_THREADPROPERTY_FIELDS dwFields,  
-   THREADPROPERTIES[]         ptp  
+```c#  
+int GetThreadProperties (   
+   enum_THREADPROPERTY_FIELDS dwFields,  
+   THREADPROPERTIES[]         ptp  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwFields`  
- [in] A combination of flags from the [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeration that determines which fields of `ptp` are to be filled in.  
+ \[in\]從的旗標組合[THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉型別，以判斷哪一個欄位的`ptp`將會自動填入。  
   
  `ptp`  
- [in, out] A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) structure that that is filled in with the properties of the thread.  
+ 輸入 \[、 輸出\]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構，會填入這些執行緒的屬性。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The information returned from this method is typically shown in the **Threads** debug window.  
+## 備註  
+ 這個方法傳回的資訊通常顯示在**執行緒**偵錯\] 視窗。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a simple `CProgram` object that implements the [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如`CProgram`實作物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。  
   
-```cpp  
+```cpp#  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  
                                       THREADPROPERTIES *ptp)  
 {  
@@ -108,7 +91,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }    
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
+ [THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

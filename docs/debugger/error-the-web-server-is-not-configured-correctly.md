@@ -1,56 +1,39 @@
 ---
-title: 'Error: The web server is not configured correctly | Microsoft Docs'
-ms.custom: 
-ms.date: 06/08/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.debug.remote.projnotconfigured
-dev_langs:
-- CSharp
-- VB
-- FSharp
-- C++
-helpviewer_keywords:
-- debugger, Web application errors
+title: "錯誤：未正確設定 Web 伺服器 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-debug"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "vs.debug.remote.projnotconfigured"
+dev_langs: 
+  - "FSharp"
+  - "VB"
+  - "CSharp"
+  - "C++"
+helpviewer_keywords: 
+  - "偵錯工具, Web 應用程式錯誤"
 ms.assetid: 875ba87f-c372-4126-8fe3-e33931cf26c0
 caps.latest.revision: 22
-author: mikejo5000
-ms.author: mikejo
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: e98410b3b60f2f7259adf7de930ec32fb72fb376
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+author: "mikejo5000"
+ms.author: "mikejo"
+manager: "ghogen"
+caps.handback.revision: 22
 ---
-# <a name="error-the-web-server-is-not-configured-correctly"></a>Error: The web server is not configured correctly
-Possible causes of this error include:  
+# 錯誤：未正確設定 Web 伺服器
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+可能導致本錯誤的原因包括：  
   
--   Trying to debug a .NET Web application that was copied to a different machine, manually renamed, or moved.  
+-   嘗試偵錯已複製到不同電腦、已手動重新命名或已移動的 .NET Web 應用程式。  
   
--   Not having enough IIS connections. For more information about deploying a web site to IIS, see [IIS 8.0 Using ASP.NET 3.5 and ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45) and, for ASP.NET Core, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).  
+-   沒有足夠的 IIS 連接。 如需將網站部署至 IIS 的詳細資訊，請參閱[建立網站](http://www.iis.net/learn/get-started/getting-started-with-iis/create-a-web-site)。  
   
-## <a name="see-also"></a>See Also  
- [Remote Debugging ASP.NET on a Remote IIS Computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)   
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+-   如果您嘗試偵錯 ASP.NET 應用程式，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)，取得部署到執行 IIS 8 或更高版本之遠端電腦的指示，或參閱[在執行 IIS 7.5 的遠端電腦上遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)取得部署到執行 IIS 7.5 之遠端電腦的指示。  
+  
+## 請參閱  
+ [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -1,74 +1,57 @@
 ---
-title: IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugSymbolProvider::GetNamespacesUsedAtAddress
-helpviewer_keywords:
-- IDebugSymbolProvider::GetNamespacesUsedAtAddress method
+title: "IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress"
+helpviewer_keywords: 
+  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress 方法"
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2e40f549fe18dbdd8a91be2cb27fff121e6eace3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
-This method creates an enumerator for namespaces associated with the debug address.  
+# IDebugSymbolProvider::GetNamespacesUsedAtAddress
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會建立偵錯的地址相關聯的命名空間的列舉值。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
+```cpp#  
+HRESULT GetNamespacesUsedAtAddress(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
+   IDebugAddress        pAddress,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pAddress`  
- [in] The debug address.  
+ \[in\]偵錯的地址。  
   
  `ppEnum`  
- [out] Returns an [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerator for the namespaces.  
+ \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- There may be several namespaces associated with a given debug address, for example, nested namespaces or multiple `using` statements.  
+## 備註  
+ 可能有數個命名空間關聯到特定的偵錯位址，比方說，巢狀命名空間或多個`using`陳述式。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

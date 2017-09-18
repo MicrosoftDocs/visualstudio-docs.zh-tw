@@ -1,72 +1,55 @@
 ---
-title: IDebugCanStopEvent2::GetCodeContext | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugCanStopEvent2::GetCodeContext
-helpviewer_keywords:
-- IDebugCanStopEvent2::GetCodeContext
+title: "IDebugCanStopEvent2::GetCodeContext | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugCanStopEvent2::GetCodeContext"
+helpviewer_keywords: 
+  - "IDebugCanStopEvent2::GetCodeContext"
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9c7c91cd7e52c7201b135772977c4d5191608cad
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
-Gets the code context that describes the location of this event.  
+# IDebugCanStopEvent2::GetCodeContext
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得程式碼內容說明這個事件的位置。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetCodeContext(   
-   IDebugCodeContext2** ppCodeContext  
+```cpp#  
+HRESULT GetCodeContext(   
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```csharp  
-int GetCodeContext(   
-   out IDebugCodeContext2 ppCodeContext  
+```c#  
+int GetCodeContext(   
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ppCodeContext`  
- [out] Returns the [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object that represents the current code location.  
+ \[\] out傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前的程式碼位置。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- For most run-time architectures, a code context can be thought of as an address in a program's execution stream, pointing to a specific instruction.  
+## 備註  
+ 大部分的執行階段架構的程式碼內容可以被想像成指向特定的指令程式的執行資料流中的地址。  
   
- To get the document context, which is oriented towards lines of source code, call the [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md) method.  
+ 若要取得文件內容中的角度為向原始程式碼，呼叫[GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
  [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)

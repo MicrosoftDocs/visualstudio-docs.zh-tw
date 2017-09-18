@@ -1,83 +1,66 @@
 ---
-title: BP_PASSCOUNT | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- BP_PASSCOUNT
-helpviewer_keywords:
-- BP_PASSCOUNT structure
+title: "BP_PASSCOUNT | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "BP_PASSCOUNT"
+helpviewer_keywords: 
+  - "BP_PASSCOUNT 結構"
 ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2b486a8ef06c557c45e565f49017a45710df359d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="bppasscount"></a>BP_PASSCOUNT
-Describes the count and conditions upon which a conditional breakpoint is fired.  
+# BP_PASSCOUNT
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+描述計數和條件的項目，在其引發條件中斷點。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-typedef struct _BP_PASSCOUNT {   
-   DWORD              dwPassCount;  
-   BP_PASSCOUNT_STYLE stylePassCount;  
+```cpp#  
+typedef struct _BP_PASSCOUNT {   
+   DWORD              dwPassCount;  
+   BP_PASSCOUNT_STYLE stylePassCount;  
 } BP_PASSCOUNT;  
 ```  
   
-```csharp  
-public struct BP_PASSCOUNT {   
-   public uint dwPassCount;  
-   public uint stylePassCount;  
+```c#  
+public struct BP_PASSCOUNT {   
+   public uint dwPassCount;  
+   public uint stylePassCount;  
 };  
 ```  
   
-## <a name="members"></a>Members  
+## Members  
  `dwPassCount`  
- The number of times to pass over the breakpoint before firing it.  
+ 通過中斷點之前引發它次數。  
   
  `stylePassCount`  
- A value from the [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) enumeration that specifies the style of the breakpoint pass count.  
+ 介於[BP\_PASSCOUNT\_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)指定的樣式，這個中斷點的列舉型別通過計數。  
   
-## <a name="remarks"></a>Remarks  
- This structure is a member of the [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) structure.  
+## 備註  
+ 這個結構屬於[BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構。  
   
- This structure is also passed as a parameter to the[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) and[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) methods.  
+ 此結構也會當做參數傳遞[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)和[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
+## 請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)   
  [SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md)   
- [BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)
+ [BP\_PASSCOUNT\_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)

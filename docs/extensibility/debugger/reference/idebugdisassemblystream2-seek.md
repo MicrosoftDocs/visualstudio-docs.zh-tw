@@ -1,86 +1,69 @@
 ---
-title: IDebugDisassemblyStream2::Seek | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugDisassemblyStream2::Seek
-helpviewer_keywords:
-- IDebugDisassemblyStream2::Seek
+title: "IDebugDisassemblyStream2::Seek | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugDisassemblyStream2::Seek"
+helpviewer_keywords: 
+  - "IDebugDisassemblyStream2::Seek"
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e82c5eab1099ba2d72fe69e3e28a98405b05af0f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
-Moves the read pointer in the disassembly stream a given number of instructions relative to a specified position.  
+# IDebugDisassemblyStream2::Seek
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+將讀取的指標移至反組譯碼資料流指定數目之指示相對於指定的位置中。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT Seek(   
-   SEEK_START          dwSeekStart,  
-   IDebugCodeContext2* pCodeContext,  
-   UINT64              uCodeLocationId,  
-   INT64               iInstructions  
+```cpp#  
+HRESULT Seek(   
+   SEEK_START          dwSeekStart,  
+   IDebugCodeContext2* pCodeContext,  
+   UINT64              uCodeLocationId,  
+   INT64               iInstructions  
 );  
 ```  
   
-```csharp  
-int Seek(   
-   enum_SEEK_START    dwSeekStart,  
-   IDebugCodeContext2 pCodeContext,  
-   ulong              uCodeLocationId,  
-   long               iInstructions  
+```c#  
+int Seek(   
+   enum_SEEK_START    dwSeekStart,  
+   IDebugCodeContext2 pCodeContext,  
+   ulong              uCodeLocationId,  
+   long               iInstructions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwSeekStart`  
- [in] A value from the [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) enumeration that specifies the relative position to begin the seek process.  
+ \[in\]介於[SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)列舉型別，指定開始搜尋程序的相對位置。  
   
  `pCodeContext`  
- [in] The [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) object representing the code context that the seek operation is relative to. This parameter is used only if `dwSeekStart` = `SEEK_START_CODECONTEXT`; otherwise, this parameter is ignored and can be a null value.  
+ \[in\][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示搜尋作業是相對於程式碼內容。  只有當使用這個參數`dwSeekStart` \= `SEEK_START_CODECONTEXT`。 否則，這個參數會被忽略，並可為 null 值。  
   
  `uCodeLocationId`  
- [in] The code location identifier that the seek operation is relative to. This parameter is used if `dwSeekStart` = `SEEK_START_CODELOCID`; otherwise, this parameter is ignored and can be set to 0. See the Remarks section for the [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) method for a description of a code location identifier.  
+ \[in\]搜尋作業是相對於程式碼的位置識別碼。  如果使用這個參數`dwSeekStart` \= `SEEK_START_CODELOCID`。 否則，這個參數會被忽略，並且可以設為 0。  請參閱 \[備註\] 部份的[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)的程式碼的位置識別碼說明的方法。  
   
  `iInstructions`  
- [in] The number of instructions to move relative to the position specified in `dwSeekStart`. This value can be negative to move backwards.  
+ \[in\]移至指定的位置相對的指令數目`dwSeekStart`。  這個值可以是負向後移動。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`. Returns `S_FALSE` if the seek position was to a point beyond the list of available instructions. Otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果搜尋位置清單以外的可用指令的點。  否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- If the seek was to a position before the beginning of the list, the read position is set to the first instruction in the list. If the see was to a position after the end of the list, the read position is set to the last instruction in the list.  
+## 備註  
+ 如果搜尋不到清單的開頭之前的位置，則會將讀取的位置設定為在清單中的第一個指令。  如果查看到的位置在清單結尾之後，則讀取的位置設至最後一個指令清單中。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
+ [SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)
+ [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)

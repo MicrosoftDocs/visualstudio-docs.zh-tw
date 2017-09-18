@@ -1,60 +1,43 @@
 ---
-title: SDK Helpers for Debugging | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- dbgmetric.lib
-- registry, Debugging SDK
-- Debugging SDK, registry locations
-- dbgmetric.h
-- metrics [Debugging SDK]
+title: "SDK 協助程式進行偵錯 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "dbgmetric.lib"
+  - "登錄中，偵錯 sdk 》"
+  - "偵錯 SDK，登錄位置"
+  - "dbgmetric.h"
+  - "度量 [偵錯 SDK]"
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 28
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 36ca85f08c86a38f2400a10387b031d77721c4b7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 28
 ---
-# <a name="sdk-helpers-for-debugging"></a>SDK Helpers for Debugging
-These functions and declarations are global helper functions for implementing debug engines, expression evaluators, and symbol providers in C++.  
+# SDK 協助程式進行偵錯
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這些函式和宣告都是通用的 helper 函式，來實作 \[c \+ \+ 中的 \[偵錯引擎、 運算式評估工具和符號的提供者。  
   
 > [!NOTE]
->  There are no managed versions of these functions and declarations at this time.  
+>  此時有不受管理的版本，這些函式和宣告。  
   
-## <a name="overview"></a>Overview  
- In order for debug engines, expression evaluators, and symbol providers to be used by Visual Studio, they must be registered. This is done by setting registry subkeys and entries, otherwise known as "setting metrics." The following global functions are designed to ease the process of updating these metrics. See the section on Registry Locations to find out the layout of each registry subkey that is updated by these functions.  
+## 概觀  
+ 為了讓偵錯引擎、 運算式評估工具和符號的提供者所 Visual Studio 的使用，它們必須先註冊。  這是藉由設定登錄子機碼和項目，或稱為 「 設定度量資訊 」。 下列的全域函式的設計，被為了簡化更新這些測量標準程序。  在登錄位置，以找出每一個登錄子機碼所更新這些函式的版面配置，請參閱\] 區段。  
   
-## <a name="general-metric-functions"></a>General Metric Functions  
- These are general functions used by debug engines. Specialized functions for expression evaluators and symbol providers are detailed later.  
+## 一般公制函式  
+ 這些是偵錯引擎所使用的一般功能。  運算式評估工具來進行特製化函式，並稍後會詳細說明符號提供者。  
   
-### <a name="getmetric-method"></a>GetMetric Method  
- Retrieves a metric value from the registry.  
+### GetMetric 方法  
+ 從登錄中擷取一個公制值。  
   
-```cpp  
+```cpp#  
 HRESULT GetMetric(  
    LPCWSTR pszMachine,  
    LPCWSTR pszType,  
@@ -65,19 +48,19 @@ HRESULT GetMetric(
 );  
 ```  
   
-|Parameter|Description|  
-|---------------|-----------------|  
-|pszMachine|[in] Name of a possibly remote machine whose register will be written (`NULL` means local machine).|  
-|pszType|[in] One of the metric types.|  
-|guidSection|[in] GUID of a specific engine, evaluator, exception, etc. This specifies a subsection under a metric type for a specific element.|  
-|pszMetric|[in] The metric to be obtained. This corresponds to a specific value name.|  
-|pdwValue|[in] The storage location of the value from the metric. There are several flavors of GetMetric that can return a DWORD (as in this example), a BSTR, a GUID, or an array of GUIDs.|  
-|pszAltRoot|[in] An alternate registry root to use. Set to `NULL` to use the default.|  
+|參數|描述|  
+|--------|--------|  
+|pszMachine|\[in\]將寫入的暫存器的可能是遠端機器名稱 \(`NULL`表示本機電腦\)。|  
+|pszType|\[in\]一種單位類型。|  
+|guidSection|\[in\]特定的引擎、 評估工具、 例外等等的 GUID。  這會指定特定項目的的單位類型\] 下的子區段。|  
+|pszMetric|\[in\]取得度量資訊。  這會對應到特定值的名稱。|  
+|pdwValue|\[in\]度量的值之儲存位置。  有多種類別的 DWORD \(如下例所示\)、 BSTR、 GUID 或一系列的 Guid 可以傳回的 GetMetric。|  
+|pszAltRoot|\[in\]若要使用替代的登錄根目錄。  設定成`NULL`若要使用預設值。|  
   
-### <a name="setmetric-method"></a>SetMetric Method  
- Sets the specified metric value in the registry.  
+### SetMetric 方法  
+ 設定登錄中指定的單位值。  
   
-```cpp  
+```cpp#  
 HRESULT SetMetric(  
          LPCWSTR pszType,  
          REFGUID guidSection,  
@@ -88,19 +71,19 @@ HRESULT SetMetric(
 );  
 ```  
   
-|Parameter|Description|  
-|---------------|-----------------|  
-|pszType|[in] One of the metric types.|  
-|guidSection|[in] GUID of a specific engine, evaluator, exception, etc. This specifies a subsection under a metric type for a specific element.|  
-|pszMetric|[in] The metric to be obtained. This corresponds to a specific value name.|  
-|dwValue|[in] The storage location of the value in the metric. There are several flavors of SetMetric that can store a DWORD (in this example), a BSTR, a GUID, or an array of GUIDs.|  
-|fUserSpecific|[in] TRUE if the metric is user-specific and if it should be written to the user's hive instead of the local machine hive.|  
-|pszAltRoot|[in] An alternate registry root to use. Set to `NULL` to use the default.|  
+|參數|描述|  
+|--------|--------|  
+|pszType|\[in\]一種單位類型。|  
+|guidSection|\[in\]特定的引擎、 評估工具、 例外等等的 GUID。  這會指定特定項目的的單位類型\] 下的子區段。|  
+|pszMetric|\[in\]取得度量資訊。  這會對應到特定值的名稱。|  
+|dwValue|\[in\]儲存位置的計量值中的值。  有多種類別的 DWORD \(在本例中\)、 BSTR、 GUID 或 Guid 的陣列可儲存的 SetMetric。|  
+|fUserSpecific|\[in\]如果度量是特定的使用者，而且應該寫入使用者的 hive，而不是本機電腦 hive 的則為 TRUE。|  
+|pszAltRoot|\[in\]若要使用替代的登錄根目錄。  設定成`NULL`若要使用預設值。|  
   
-### <a name="removemetric-method"></a>RemoveMetric Method  
- Removes the specified metric from the registry.  
+### RemoveMetric 方法  
+ 從登錄中移除指定的度量資訊。  
   
-```cpp  
+```cpp#  
 HRESULT RemoveMetric(  
    LPCWSTR pszType,  
    REFGUID guidSection,  
@@ -109,17 +92,17 @@ HRESULT RemoveMetric(
 );  
 ```  
   
-|Parameter|Description|  
-|---------------|-----------------|  
-|pszType|[in] One of the metric types.|  
-|guidSection|[in] GUID of a specific engine, evaluator, exception, etc. This specifies a subsection under a metric type for a specific element.|  
-|pszMetric|[in] The metric to be removed. This corresponds to a specific value name.|  
-|pszAltRoot|[in] An alternate registry root to use. Set to `NULL` to use the default.|  
+|參數|描述|  
+|--------|--------|  
+|pszType|\[in\]一種單位類型。|  
+|guidSection|\[in\]特定的引擎、 評估工具、 例外等等的 GUID。  這會指定特定項目的的單位類型\] 下的子區段。|  
+|pszMetric|\[in\]要移除計量值。  這會對應到特定值的名稱。|  
+|pszAltRoot|\[in\]若要使用替代的登錄根目錄。  設定成`NULL`若要使用預設值。|  
   
-### <a name="enummetricsections-method"></a>EnumMetricSections Method  
- Enumerates the various metric sections in the registry.  
+### EnumMetricSections 方法  
+ 列舉的公制的各章節，在登錄中。  
   
-```cpp  
+```cpp#  
 HRESULT EnumMetricSections(  
    LPCWSTR pszMachine,  
    LPCWSTR pszType,  
@@ -129,318 +112,318 @@ HRESULT EnumMetricSections(
 );  
 ```  
   
-|Parameter|Description|  
-|---------------|-----------------|  
-|pszMachine|[in] Name of a possibly remote machine whose register will be written (`NULL` means local machine).|  
-|pszType|[in] One of the metric types.|  
-|rgguidSections|[in, out] Preallocated array of GUIDs to be filled in.|  
-|pdwSize|[in] The maximum number of GUIDs that can be stored in the `rgguidSections` array.|  
-|pszAltRoot|[in] An alternate registry root to use. Set to `NULL` to use the default.|  
+|參數|描述|  
+|--------|--------|  
+|pszMachine|\[in\]將寫入的暫存器的可能是遠端機器名稱 \(`NULL`表示本機電腦\)。|  
+|pszType|\[in\]一種單位類型。|  
+|rgguidSections|輸入 \[、 輸出\]預先配置的 Guid，以填入的陣列。|  
+|pdwSize|\[in\]可以儲存在中的 Guid 的最大數目`rgguidSections`陣列。|  
+|pszAltRoot|\[in\]若要使用替代的登錄根目錄。  設定成`NULL`若要使用預設值。|  
   
-## <a name="expression-evaluator-functions"></a>Expression Evaluator Functions  
+## 運算式評估工具功能  
   
-|Function|Description|  
-|--------------|-----------------|  
-|GetEEMetric|Retrieves a metric value from the registry.|  
-|SetEEMetric|Sets the specified metric value in the registry.|  
-|RemoveEEMetric|Removes the specified metric from the registry.|  
-|GetEEMetricFile|Gets a file name from the specified metric and loads it, returning the file contents as a string.|  
+|Function|描述|  
+|--------------|--------|  
+|GetEEMetric|從登錄中擷取一個公制值。|  
+|SetEEMetric|設定登錄中指定的單位值。|  
+|RemoveEEMetric|從登錄中移除指定的度量資訊。|  
+|GetEEMetricFile|取得檔案名稱，從指定的度量資訊，並載入，以字串形式傳回檔案內容。|  
   
-## <a name="exception-functions"></a>Exception Functions  
+## 例外狀況的函式  
   
-|Function|Description|  
-|--------------|-----------------|  
-|GetExceptionMetric|Retrieves a metric value from the registry.|  
-|SetExceptionMetric|Sets the specified metric value in the registry.|  
-|RemoveExceptionMetric|Removes the specified metric from the registry.|  
-|RemoveAllExceptionMetrics|Removes all exception metrics from the registry.|  
+|Function|描述|  
+|--------------|--------|  
+|GetExceptionMetric|從登錄中擷取一個公制值。|  
+|SetExceptionMetric|設定登錄中指定的單位值。|  
+|RemoveExceptionMetric|從登錄中移除指定的度量資訊。|  
+|RemoveAllExceptionMetrics|從登錄中移除所有的例外狀況度量資訊。|  
   
-## <a name="symbol-provider-functions"></a>Symbol Provider Functions  
+## 符號提供者函式  
   
-|Function|Description|  
-|--------------|-----------------|  
-|GetSPMetric|Retrieves a metric value from the registry.|  
-|SetSPMetric|Sets the specified metric value in the registry.|  
-|RemoveSPMetric|Removes the specified metric from the registry.|  
+|Function|描述|  
+|--------------|--------|  
+|GetSPMetric|從登錄中擷取一個公制值。|  
+|SetSPMetric|設定登錄中指定的單位值。|  
+|RemoveSPMetric|從登錄中移除指定的度量資訊。|  
   
-## <a name="enumeration-functions"></a>Enumeration Functions  
+## 列舉型別函式  
   
-|Function|Description|  
-|--------------|-----------------|  
-|EnumMetricSections|Enumerates all metrics for a specified metric type.|  
-|EnumDebugEngine|Enumerates the registered debug engines.|  
-|EnumEEs|Enumerates the registered expression evaluators.|  
-|EnumExceptionMetrics|Enumerates all exception metrics.|  
+|Function|描述|  
+|--------------|--------|  
+|EnumMetricSections|列舉指定的單位類型的所有度量資訊。|  
+|EnumDebugEngine|列舉已註冊的偵錯引擎。|  
+|EnumEEs|列舉已註冊的運算式評估工具。|  
+|EnumExceptionMetrics|列舉所有的例外狀況度量資訊。|  
   
-## <a name="metric-definitions"></a>Metric Definitions  
- These definitions can be used for predefined metric names. The names correspond to various registry keys and value names and are all defined as wide character strings: for example, `extern LPCWSTR metrictypeEngine`.  
+## 公制定義  
+ 這些定義可用的預先定義的單位名稱。  名稱對應到不同的登錄機碼和值的名稱都定義為寬字元字串： 例如， `extern LPCWSTR metrictypeEngine`。  
   
-|Predefined Metric Types|Description: The base key for....|  
-|-----------------------------|---------------------------------------|  
-|metrictypeEngine|All debug engine metrics.|  
-|metrictypePortSupplier|All port supplier metrics.|  
-|metrictypeException|All exception metrics.|  
-|metricttypeEEExtension|All expression evaluator extensions.|  
+|預先定義的單位類型|描述: 主要機碼。...|  
+|---------------|------------------|  
+|metrictypeEngine|所有偵錯引擎度量資訊。|  
+|metrictypePortSupplier|所有連接埠的供應商度量資訊。|  
+|metrictypeException|所有例外狀況的度量資訊。|  
+|metricttypeEEExtension|所有的運算式評估工具擴充功能。|  
   
-|Debug Engine Properties|Description|  
-|-----------------------------|-----------------|  
-|metricAddressBP|Set to nonzero to indicate support for address breakpoints.|  
-|metricAlwaysLoadLocal|Set to nonzero in order to always load the debug engine locally.|  
-|metricLoadInDebuggeeSession|NOT USED|  
-|metricLoadedByDebuggee|Set to nonzero to indicate that the debug engine will always be loaded with or by the program being debugged.|  
-|metricAttach|Set to nonzero to indicate support for attachment to existing programs.|  
-|metricCallStackBP|Set to nonzero to indicate support for call stack breakpoints.|  
-|metricConditionalBP|Set to nonzero to indicate support for the setting of conditional breakpoints.|  
-|metricDataBP|Set to nonzero to indicate support for the setting of breakpoints on changes in data.|  
-|metricDisassembly|Set to nonzero to indicate support for the production of a disassembly listing.|  
-|metricDumpWriting|Set to nonzero to indicate support for dump writing (the dumping of memory to an output device).|  
-|metricENC|Set to nonzero to indicate support for Edit and Continue. **Note:**  A custom debug engine should never set this or should always set it to 0.|  
-|metricExceptions|Set to nonzero to indicate support for exceptions.|  
-|metricFunctionBP|Set to nonzero to indicate support for named breakpoints (breakpoints that break when a certain function name is called).|  
-|metricHitCountBP|Set to nonzero to indicate support for the setting of "hit point" breakpoints (breakpoints that are triggered only after being hit a certain number of times).|  
-|metricJITDebug|Set to nonzero to indicate support for just-in-time debugging (the debugger is launched when an exception occurs in a running process).|  
-|metricMemory|NOT USED|  
-|metricPortSupplier|Set this to the CLSID of the port supplier if one is implemented.|  
-|metricRegisters|NOT USED|  
-|metricSetNextStatement|Set to nonzero to indicate support for setting the next statement (which skips execution of intermediate statements).|  
-|metricSuspendThread|Set to nonzero to indicate support for suspending thread execution.|  
-|metricWarnIfNoSymbols|Set to nonzero to indicate that the user should be notified if there are no symbols.|  
-|metricProgramProvider|Set this to the CLSID of the program provider.|  
-|metricAlwaysLoadProgramProviderLocal|Set this to nonzero to indicate that the program provider should always be loaded locally.|  
-|metricEngineCanWatchProcess|Set this to nonzero to indicate that the debug engine will watch for process events instead of the program provider.|  
-|metricRemoteDebugging|Set this to nonzero to indicate support for remote debugging.|  
-|metricEncUseNativeBuilder|Set this to nonzero to indicate that the Edit and Continue Manager should use the debug engine's encbuild.dll to build for Edit and Continue. **Note:**  A custom debug engine should never set this or should always set it to 0.|  
-|metricLoadUnderWOW64|Set this to nonzero to indicate that the debug engine should be loaded in the debuggee process under WOW when debugging a 64-bit process; otherwise, the debug engine will be loaded in the Visual Studio process (which is running under WOW64).|  
-|metricLoadProgramProviderUnderWOW64|Set this to nonzero to indicate that the program provider should be loaded in the debuggee process when debugging a 64-bit process under WOW; otherwise, it will be loaded in the Visual Studio process.|  
-|metricStopOnExceptionCrossingManagedBoundary|Set this to nonzero to indicate that the process should stop if an unhandled exception is thrown across managed/unmanaged code boundaries.|  
-|metricAutoSelectPriority|Set this to a priority for automatic selection of the debug engine (higher values equals higher priority).|  
-|metricAutoSelectIncompatibleList|Registry key containing entries that specify GUIDs for debug engines to be ignored in automatic selection. These entries are a number (0, 1, 2, and so on) with a GUID expressed as a string.|  
-|metricIncompatibleList|Registry key containing entries that specify GUIDs for debug engines that are incompatible with this debug engine.|  
-|metricDisableJITOptimization|Set this to nonzero to indicate that just-in-time optimizations (for managed code) should be disabled during debugging.|  
+|偵錯引擎屬性|描述|  
+|------------|--------|  
+|metricAddressBP|設定為非零值以指示支援位址中斷點。|  
+|metricAlwaysLoadLocal|設定為非零值，除了永遠載入偵錯引擎在本機上。|  
+|metricLoadInDebuggeeSession|保留至以後使用|  
+|metricLoadedByDebuggee|設定為非零值以表示使用或正在偵錯的程式，一定會載入偵錯引擎。|  
+|metricAttach|設定為零指示以便附加到現有的程式的支援。|  
+|metricCallStackBP|設定為非零值，表示呼叫堆疊中斷點的支援。|  
+|metricConditionalBP|設定為非零值以指示支援條件式中斷點的設定值。|  
+|metricDataBP|設定為非零值以指示支援的資料變更的中斷點設定。|  
+|metricDisassembly|設定為非零值，指出反組譯碼清單的生產環境的支援。|  
+|metricDumpWriting|設定為零指示傾印寫入 \(傾的輸出裝置的記憶體\) 的支援。|  
+|metricENC|設定為非零值，指出支援編輯後繼續\]。 **Note:**  自訂的偵錯引擎應該永遠不會設定這個值，或應該一律設為 0。|  
+|metricExceptions|設定為非零值以指出例外狀況的支援。|  
+|metricFunctionBP|設定為非零值以指示為具名中斷點 \(中斷呼叫特定函式名稱時的中斷點\) 的支援。|  
+|metricHitCountBP|設定為非零值來指示 「 點擊點"中斷點 \(只有在被叫用特定次數後，便會觸發中斷點\) 設定的支援。|  
+|metricJITDebug|設定為非零值以指示只要精準偵錯 \(正在執行的程序中發生例外狀況時，就會啟動偵錯工具\) 的支援。|  
+|metricMemory|保留至以後使用|  
+|metricPortSupplier|如果其中一個實作後，請將此設定為連接埠提供者的 CLSID。|  
+|metricRegisters|保留至以後使用|  
+|metricSetNextStatement|設定為零指示設定下一個陳述式 \(這會略過執行中繼的陳述式\) 的支援。|  
+|metricSuspendThread|設定為零指示暫止執行緒執行的支援。|  
+|metricWarnIfNoSymbols|設定為零表示沒有符號時，會通知使用者。|  
+|metricProgramProvider|設定為程式提供者的 CLSID。|  
+|metricAlwaysLoadProgramProviderLocal|將此設為非零值，表示該程式提供者應永遠排在載入本機的。|  
+|metricEngineCanWatchProcess|設定為非零值，指出偵錯引擎會等待處理程序事件，而不程式提供者。|  
+|metricRemoteDebugging|設定為非零值，指出遠端偵錯支援。|  
+|metricEncUseNativeBuilder|將此設為非零值，指出編輯後繼續的管理員應該使用偵錯引擎的 encbuild.dll 來編輯後繼續建置的。 **Note:**  自訂的偵錯引擎應該永遠不會設定這個值，或應該一律設為 0。|  
+|metricLoadUnderWOW64|將它設定為非零值以表示在 WOW 下偵錯項目程序中應該載入偵錯引擎，當偵錯 64 位元的處理程序。 否則，偵錯引擎會載入 Visual Studio 的程序 \(這在 WOW64 下執行\)。|  
+|metricLoadProgramProviderUnderWOW64|將它設定為非零值，指出偵錯 64 位元處理程序在 WOW ； 下時，程式提供者應該在偵錯項處理程序中載入 否則，將它們載入 Visual Studio 的程序中。|  
+|metricStopOnExceptionCrossingManagedBoundary|設定為非零值，指出如果跨越的界限管理\/不受管理的程式碼擲回未處理的例外狀況，應該停止處理程序。|  
+|metricAutoSelectPriority|將此設為自動選擇偵錯引擎 \(較高值等於較高優先順序\) 的優先順序。|  
+|metricAutoSelectIncompatibleList|登錄機碼含有指定 Guid 的偵錯引擎，以略過自動選取範圍中的項目。  這些項目是一個數字 \(0、 1、 2，依此類推\) 以表示為字串的 GUID。|  
+|metricIncompatibleList|登錄機碼包含與這個偵錯引擎不相容的偵錯引擎指定 Guid 的項目。|  
+|metricDisableJITOptimization|設定為非零值表示應該停用偵錯期間只精準最佳化 \(適用於 managed 程式碼\)。|  
   
-|Expression Evaluator Properties|Description|  
-|-------------------------------------|-----------------|  
-|metricEngine|This holds the number of debug engines that support the specified expression evaluator.|  
-|metricPreloadModules|Set this to nonzero to indicate that modules should be preloaded when an expression evaluator is launched against a program.|  
-|metricThisObjectName|Set this to the "this" object name.|  
+|運算式評估工具內容|描述|  
+|---------------|--------|  
+|metricEngine|這會保留偵錯引擎數的支援指定的運算式評估工具。|  
+|metricPreloadModules|設定為非零值表示的運算式評估工具對程式啟動時，預先載入的模組。|  
+|metricThisObjectName|設定為"this"的物件名稱。|  
   
-|Expression Evaluator Extension Properties|Description|  
-|-----------------------------------------------|-----------------|  
-|metricExtensionDll|Name of the dll that supports this extension.|  
-|metricExtensionRegistersSupported|List of registers supported.|  
-|metricExtensionRegistersEntryPoint|Entry point for accessing registers.|  
-|metricExtensionTypesSupported|List of types supported.|  
-|metricExtensionTypesEntryPoint|Entry point for accessing types.|  
+|運算式評估工具的擴充屬性|描述|  
+|------------------|--------|  
+|metricExtensionDll|支援此副檔名的 dll 名稱。|  
+|metricExtensionRegistersSupported|支援的暫存器的清單。|  
+|metricExtensionRegistersEntryPoint|用來存取暫存器的進入點。|  
+|metricExtensionTypesSupported|支援的類型清單。|  
+|metricExtensionTypesEntryPoint|進入點，用於存取型別。|  
   
-|Port Supplier Properties|Description|  
-|------------------------------|-----------------|  
-|metricPortPickerCLSID|The CLSID of the port picker (a dialog box the user can use to select ports and add ports to use for debugging).|  
-|metricDisallowUserEnteredPorts|Nonzero if the user-entered ports cannot be added to the port supplier (this makes the port-picker dialog box essentially read-only).|  
-|metricPidBase|The base process ID used by the port supplier when allocating process IDs.|  
+|連接埠的供應商內容|描述|  
+|---------------|--------|  
+|metricPortPickerCLSID|\(對話方塊，使用者可以使用選取的連接埠，並將用來偵錯的連接埠\) 的連接埠選擇器的 CLSID。|  
+|metricDisallowUserEnteredPorts|非零值，如果使用者輸入的連接埠不能加入連接埠提供者 \(本質上是唯讀，這使得連接埠選擇器對話方塊\)。|  
+|metricPidBase|配置處理序 Id 時使用的連接埠提供者的基底的處理序 ID。|  
   
-|Predefined SP Store Types|Description|  
-|-------------------------------|-----------------|  
-|storetypeFile|The symbols are stored in a separate file.|  
-|storetypeMetadata|The symbols are stored as metadata in an assembly.|  
+|預先定義的預存程序存放區類型|描述|  
+|--------------------|--------|  
+|storetypeFile|這些符號會儲存在不同的檔案。|  
+|storetypeMetadata|這些符號會儲存為組件中的中繼資料。|  
   
-|Miscellaneous Properties|Description|  
-|------------------------------|-----------------|  
-|metricShowNonUserCode|Set this to nonzero to show nonuser code.|  
-|metricJustMyCodeStepping|Set this to nonzero to indicate that stepping can occur only in user code.|  
-|metricCLSID|CLSID for an object of a specific metric type.|  
-|metricName|User-friendly name for an object of a specific metric type.|  
-|metricLanguage|Language name.|  
+|其他的屬性|描述|  
+|-----------|--------|  
+|metricShowNonUserCode|設定為非零值，以顯示 nonuser 的程式碼。|  
+|metricJustMyCodeStepping|設定為非零值來表示逐步執行可以只能出現在使用者程式碼。|  
+|metricCLSID|特定的公制型別的物件的 CLSID。|  
+|metricName|特定的公制型別的物件的使用者易記名稱。|  
+|metricLanguage|語言名稱。|  
   
-## <a name="registry-locations"></a>Registry Locations  
- The metrics are read from and written to the registry, specifically in the `VisualStudio` subkey.  
-  
-> [!NOTE]
->  Most of the time, the metrics will be written to the HKEY_LOCAL_MACHINE key. However, sometimes HKEY_CURRENT_USER will be the destination key. Dbgmetric.lib handles both keys. When getting a metric, it searches HKEY_CURRENT_USER first, then HKEY_LOCAL_MACHINE. When it is setting a metric, a parameter specifies which top-level key to use.  
-  
- *[registry key]*\  
-  
- `Software`\  
-  
- `Microsoft`\  
-  
- `VisualStudio`\  
-  
- *[version root]*\  
-  
- *[metric root]*\  
-  
- *[metric type]*\  
-  
- *[metric] = [metric value]*  
-  
- *[metric] = [metric value]*  
-  
- *[metric] = [metric value]*  
-  
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[registry key]*|`HKEY_CURRENT_USER` or `HKEY_LOCAL_MACHINE`.|  
-|*[version root]*|The version of Visual Studio (for example, `7.0`, `7.1`, or `8.0`). However, this root can also be modified using the **/rootsuffix** switch to **devenv.exe**. For VSIP, this modifier is typically **Exp**, so the version root would be, for example, 8.0Exp.|  
-|*[metric root]*|This is either `AD7Metrics` or `AD7Metrics(Debug)`, depending on whether the debug version of dbgmetric.lib is used. **Note:**  Whether or not dbgmetric.lib is used, this naming convention should be adhered to if you have differences between debug and release versions that must be reflected in the registry.|  
-|*[metric type]*|The type of metric to be written: `Engine`, `ExpressionEvaluator`, `SymbolProvider`, etc. These are all defined as in dbgmetric.h as `metricTypeXXXX`, where `XXXX` is the specific type name.|  
-|*[metric]*|The name of an entry to be assigned a value in order to set the metric. The actual organization of the metrics depends on the metric type.|  
-|*[metric value]*|The value assigned to the metric. The type the value should have (string, number, etc.) depends on the metric.|  
+## 登錄位置  
+ 度量資訊會讀取和寫入至登錄中，特別是在`VisualStudio`子機碼。  
   
 > [!NOTE]
->  All GUIDs are stored in the format of `{GUID}`. For example, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+>  大多數情況下，度量資訊會寫入的作用中計時間索引鍵。  不過，有時候 HKEY\_CURRENT\_USER 會目的索引鍵。  Dbgmetric.lib 會處理這兩個機碼。  當取得度量資訊，它會搜尋 HKEY\_CURRENT\_USER： 首先，那麼作用中計時間。  當它正在設定度量單位時，參數會指定要使用哪一個最上層機碼。  
   
-### <a name="debug-engines"></a>Debug Engines  
- The following is the organization of the debug engines metrics in the registry. `Engine` is the metric type name for a debug engine and corresponds to *[metric type]* in the above registry subtree.  
+ *\[登錄機碼\]*\\  
   
- `Engine`\  
+ `Software`\\  
   
- *[engine guid]*\  
+ `Microsoft`\\  
   
- `CLSID` = *[class guid]*  
+ `VisualStudio`\\  
   
- *[metric] = [metric value]*  
+ *\[版本 root\]*\\  
   
- *[metric] = [metric value]*  
+ *\[公制 root\]*\\  
   
- *[metric] = [metric value]*  
+ *\[公制類型\]*\\  
   
- `PortSupplier`\  
+ *\[公制\] \= \[公制值\]*  
   
- `0` = *[port supplier guid]*  
+ *\[公制\] \= \[公制值\]*  
   
- `1` = *[port supplier guid]*  
+ *\[公制\] \= \[公制值\]*  
   
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[engine guid]*|The GUID of the debug engine.|  
-|*[class guid]*|The GUID of the class that implements this debug engine.|  
-|*[port supplier guid]*|The GUID of the port supplier, if any. Many debug engines use the default port supplier and therefore do not specify their own supplier. In this case, the subkey `PortSupplier` will be absent.|  
-  
-### <a name="port-suppliers"></a>Port Suppliers  
- The following is the organization of the port supplier metrics in the registry. `PortSupplier` is the metric type name for a port supplier and corresponds to *[metric type]*.  
-  
- `PortSupplier`\  
-  
- *[port supplier guid]*\  
-  
- `CLSID` = *[class guid]*  
-  
- *[metric] = [metric value]*  
-  
- *[metric] = [metric value]*  
-  
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[port supplier guid]*|The GUID of the port supplier|  
-|*[class guid]*|The GUID of the class that implements this port supplier|  
-  
-### <a name="symbol-providers"></a>Symbol Providers  
- The following is the organization of the symbol supplier metrics in the registry. `SymbolProvider` is the metric type name for the symbol provider and corresponds to *[metric type]*.  
-  
- `SymbolProvider`\  
-  
- *[symbol provider guid]*\  
-  
- `file`\  
-  
- `CLSID` = *[class guid]*  
-  
- *[metric] = [metric value]*  
-  
- *[metric] = [metric value]*  
-  
- `metadata`\  
-  
- `CLSID` = *[class guid]*  
-  
- *[metric] = [metric value]*  
-  
- *[metric] = [metric value]*  
-  
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[symbol provider guid]*|The GUID of the symbol provider|  
-|*[class guid]*|The GUID of the class that implements this symbol provider|  
-  
-### <a name="expression-evaluators"></a>Expression Evaluators  
- The following is the organization of the expression evaluator metrics in the registry. `ExpressionEvaluator` is the metric type name for the expression evaluator and corresponds to *[metric type]*.  
+|預留位置|描述|  
+|----------|--------|  
+|*\[登錄鍵\]*|`HKEY_CURRENT_USER` 或 `HKEY_LOCAL_MACHINE`。|  
+|*\[版本 root\]*|Visual Studio 的版本 \(例如， `7.0`， `7.1`，或`8.0`\)。  不過，這個根目錄也可以修改使用 **\/rootsuffix**切換到**devenv.exe**。  VSIP，如這個修飾詞通常是到期，因此版本根目錄，例如，8.0Exp。|  
+|*\[公制 root\]*|這可能是`AD7Metrics`或`AD7Metrics(Debug)`，視是否使用 dbgmetric.lib 的偵錯版本。 **Note:**  是否使用 dbgmetric.lib 時，此命名慣例應遵守偵錯和發行版本之間的差異，才必須反映在登錄中的版本。|  
+|*\[公制類型\]*|量測可寫入的型別： `Engine`， `ExpressionEvaluator`， `SymbolProvider`等。  這些都定義為在 dbgmetric.h 與`metricTypeXXXX`，其中`XXXX`是特定型別名稱。|  
+|*\[公制\]*|若要設定度量指派值的項目名稱。  計量的實際的組織單位的型別而定。|  
+|*\[公制值\]*|硌巖緻公制值。  值應該有 \(字串，數字，等\) 的型別而定計量值。|  
   
 > [!NOTE]
->  The metric type for `ExpressionEvaluator` is not defined in dbgmetric.h, as it is assumed that all metric changes for expression evaluators will go through the appropriate expression evaluator metric functions (the layout of the `ExpressionEvaluator` subkey is somewhat complicated, so the details are hidden inside dbgmetric.lib).  
+>  所有的 Guid 格式儲存在的`{GUID}`。  例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。  
   
- `ExpressionEvaluator`\  
+### 偵錯引擎  
+ 以下是在登錄中的偵錯引擎度量資訊的組織。  `Engine`偵錯引擎的公制的型別名稱，而對應的 *\[公制類型\]* 在上述的登錄樹狀子目錄中。  
   
- *[language guid]*\  
+ `Engine`\\  
   
- *[vendor guid]*\  
+ *\[發動機 guid\]*\\  
   
- `CLSID` = *[class guid]*  
+ `CLSID`\=  *\[類別 guid\]*  
   
- *[metric] = [metric value]*  
+ *\[公制\] \= \[公制值\]*  
   
- *[metric] = [metric value]*  
+ *\[公制\] \= \[公制值\]*  
   
- `Engine`\  
+ *\[公制\] \= \[公制值\]*  
   
- `0` = *[debug engine guid]*  
+ `PortSupplier`\\  
   
- `1` = *[debug engine guid]*  
+ `0`\=  *\[連接埠的供應商 guid\]*  
   
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[language guid]*|The GUID of a language|  
-|*[vendor guid]*|The GUID of a vendor|  
-|*[class guid]*|The GUID of the class that implements this expression evaluator|  
-|*[debug engine guid]*|The GUID of a debug engine that this expression evaluator works with|  
+ `1`\=  *\[連接埠的供應商 guid\]*  
   
-### <a name="expression-evaluator-extensions"></a>Expression Evaluator Extensions  
- The following is the organization of the expression evaluator extension metrics in the registry. `EEExtensions` is the metric type name for the expression evaluator extensions and corresponds to *[metric type]*.  
+|預留位置|描述|  
+|----------|--------|  
+|*\[引擎 guid\]*|偵錯引擎的 GUID。|  
+|*\[類別 guid\]*|實作這個偵錯引擎的類別的 GUID。|  
+|*\[連接埠的供應商 guid\]*|如果有任何連接埠提供者的 GUID。  許多偵錯引擎會使用預設連接埠提供者，並因此未指定他們自己的供應商。  在此情況下，子機碼`PortSupplier`將會不存在。|  
   
- `EEExtensions`\  
+### 連接埠的供應商  
+ 以下是在登錄中的連接埠的供應商度量資訊的組織。  `PortSupplier`連接埠提供者的公制的型別名稱，而對應的 *\[公制類型\]*。  
   
- *[extension guid]*\  
+ `PortSupplier`\\  
   
- *[metric] = [metric value]*  
+ *\[連接埠的供應商 guid\]*\\  
   
- *[metric] = [metric value]*  
+ `CLSID`\=  *\[類別 guid\]*  
   
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[extension guid]*|The GUID of an expression evaluator extension|  
+ *\[公制\] \= \[公制值\]*  
   
-### <a name="exceptions"></a>Exceptions  
- The following is the organization of the exceptions metrics in the registry. `Exception` is the metric type name for the exceptions and corresponds to *[metric type]*.  
+ *\[公制\] \= \[公制值\]*  
   
- `Exception`\  
+|預留位置|描述|  
+|----------|--------|  
+|*\[連接埠的供應商 guid\]*|連接埠提供者的 GUID 來|  
+|*\[類別 guid\]*|實作這個連接埠提供者類別的 GUID|  
   
- *[debug engine guid]*\  
+### 符號提供者  
+ 以下是在登錄中的符號供應商度量資訊的組織。  `SymbolProvider`符號提供者的公制的型別名稱，而對應的 *\[公制類型\]*。  
   
- *[exception types]*\  
+ `SymbolProvider`\\  
   
- *[exception]*\  
+ *\[提供者的 guid 的符號\]*\\  
   
- *[metric] = [metric value]*  
+ `file`\\  
   
- *[metric] = [metric value]*  
+ `CLSID`\=  *\[類別 guid\]*  
   
- *[exception]*\  
+ *\[公制\] \= \[公制值\]*  
   
- *[metric] = [metric value]*  
+ *\[公制\] \= \[公制值\]*  
   
- *[metric] = [metric value]*  
+ `metadata`\\  
   
-|Placeholder|Description|  
-|-----------------|-----------------|  
-|*[debug engine guid]*|The GUID of a debug engine that supports exceptions.|  
-|*[exception types]*|A general title for the subkey identifying the class of exceptions that can be handled. Typical names are **C++ Exceptions**, **Win32 Exceptions**, **Common Language Runtime Exceptions**, and **Native Run-Time Checks**. These names are also used to identify a particular class of exception to the user.|  
-|*[exception]*|A name for an exception: for example, **_com_error** or **Control-Break**. These names are also used to identify a particular exception to the user.|  
+ `CLSID`\=  *\[類別 guid\]*  
   
-## <a name="requirements"></a>Requirements  
- These files are located in the [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK installation directory (by default, *[drive]*\Program Files\Microsoft Visual Studio 2010 SDK\\).  
+ *\[公制\] \= \[公制值\]*  
   
- Header: includes\dbgmetric.h  
+ *\[公制\] \= \[公制值\]*  
   
- Library: libs\ad2de.lib, libs\dbgmetric.lib  
+|預留位置|描述|  
+|----------|--------|  
+|*\[提供者的 guid 的符號\]*|符號提供者的 GUID|  
+|*\[類別 guid\]*|實作此符號的提供者類別的 GUID|  
   
-## <a name="see-also"></a>See Also  
- [API Reference](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
+### 運算式評估工具  
+ 以下是在登錄中的運算式評估工具度量資訊的組織。  `ExpressionEvaluator`運算式評估工具的公制的型別名稱，而對應的 *\[公制類型\]*。  
+  
+> [!NOTE]
+>  公制的型別，如`ExpressionEvaluator`不定義在 dbgmetric.h，因為它會假設所有的運算式評估工具計量的變更都會經過適當的運算式評估工具公制函式 \(版面配置的`ExpressionEvaluator`子機碼是有點複雜，因此詳細資料會隱藏在 dbgmetric.lib 內\)。  
+  
+ `ExpressionEvaluator`\\  
+  
+ *\[語言 guid\]*\\  
+  
+ *\[供應商 guid\]*\\  
+  
+ `CLSID`\=  *\[類別 guid\]*  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ `Engine`\\  
+  
+ `0`\=  *\[偵錯引擎 guid\]*  
+  
+ `1`\=  *\[偵錯引擎 guid\]*  
+  
+|預留位置|描述|  
+|----------|--------|  
+|*\[語言 guid\]*|一種語言的 GUID 來|  
+|*\[供應商 guid\]*|廠商的 GUID 來|  
+|*\[類別 guid\]*|實作這個運算式評估工具類別的 GUID|  
+|*\[偵錯引擎 guid\]*|此運算式評估工具所使用的偵錯引擎的 GUID 來|  
+  
+### 運算式評估工具擴充功能  
+ 以下是在登錄中的運算式評估工具擴充功能度量資訊的組織。  `EEExtensions`是公制的型別名稱的運算式評估工具擴充功能，而對應的 *\[公制類型\]*。  
+  
+ `EEExtensions`\\  
+  
+ *\[延伸 guid\]*\\  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+|預留位置|描述|  
+|----------|--------|  
+|*\[延伸 guid\]*|運算式評估工具擴充功能的 GUID|  
+  
+### 例外狀況  
+ 以下是在登錄中的例外狀況度量資訊的組織。  `Exception`例外狀況的公制的型別名稱，而對應的 *\[公制類型\]*。  
+  
+ `Exception`\\  
+  
+ *\[偵錯引擎 guid\]*\\  
+  
+ *\[例外狀況型別\]*\\  
+  
+ *\[例外\]*\\  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ *\[例外\]*\\  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+ *\[公制\] \= \[公制值\]*  
+  
+|預留位置|描述|  
+|----------|--------|  
+|*\[偵錯引擎 guid\]*|支援例外狀況的偵錯引擎的 GUID。|  
+|*\[例外狀況型別\]*|用來識別可處理的例外狀況的類別之子機碼的一般標題。  Typical names are **C\+\+ Exceptions**, **Win32 Exceptions**, **Common Language Runtime Exceptions**, and **Native Run\-Time Checks**.  這些名稱也用來識別使用者的例外狀況的特定類別中。|  
+|*\[例外\]*|例外狀況的名稱： 例如， **\_com\_error**或**Control\-Break**。  這些名稱也用來識別特定的例外狀況，向使用者中。|  
+  
+## 需求  
+ 這些檔案都位於[!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)] SDK 的安裝目錄 \(預設情況下，  *\[磁碟機\]*\\Program Files\\Microsoft Visual Studio 2010 SDK\\\)。  
+  
+ 標頭: includes\\dbgmetric.h  
+  
+ 圖書館: libs\\ad2de.lib、 libs\\dbgmetric.lib  
+  
+## 請參閱  
+ [應用程式開發介面參考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
