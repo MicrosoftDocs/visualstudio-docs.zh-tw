@@ -19,8 +19,8 @@ helpviewer_keywords:
 - mail items [Office development in Visual Studio], about mail items
 ms.assetid: e5c82974-d302-49dc-9487-9b265125af03
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511

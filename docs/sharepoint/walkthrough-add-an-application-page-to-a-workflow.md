@@ -19,8 +19,8 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 ms.assetid: e4845d07-917b-45cb-a569-4ecdd602fbd9
 caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

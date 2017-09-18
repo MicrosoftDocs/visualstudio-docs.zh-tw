@@ -19,8 +19,8 @@ helpviewer_keywords:
 - exposing code to VBA
 ms.assetid: 56d5894b-4823-42f4-8c7e-d8739b859c52
 caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

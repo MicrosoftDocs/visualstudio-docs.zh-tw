@@ -31,8 +31,8 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], document-level customizations
 ms.assetid: 6c421055-7bea-4db4-a4c9-539b8c78d4ee
 caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

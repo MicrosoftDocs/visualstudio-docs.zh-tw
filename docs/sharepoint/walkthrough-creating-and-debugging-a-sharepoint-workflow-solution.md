@@ -22,8 +22,8 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 ms.assetid: 81756490-ab5a-4fa4-96c6-eed2cfbf8374
 caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

@@ -16,8 +16,8 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], migrating to .NET Framework 4
 ms.assetid: 3b7c8ad4-a616-4b42-9d62-9658fdefe6a3
 caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

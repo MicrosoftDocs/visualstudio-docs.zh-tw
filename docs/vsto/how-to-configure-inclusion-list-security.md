@@ -17,8 +17,8 @@ helpviewer_keywords:
 - inclusion lists [Office development in Visual Studio]
 ms.assetid: 0609d8f0-4630-4e17-aeb3-14f3134165cf
 caps.latest.revision: 26
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

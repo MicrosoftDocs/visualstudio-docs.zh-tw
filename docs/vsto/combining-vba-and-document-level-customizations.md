@@ -28,8 +28,8 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 ms.assetid: 2c10feeb-38af-4802-bbf4-d637db81a884
 caps.latest.revision: 36
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

@@ -18,8 +18,8 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 ms.assetid: 7afc9bad-1d31-486e-beea-91e6d308cd67
 caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
