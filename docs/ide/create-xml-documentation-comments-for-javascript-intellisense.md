@@ -87,7 +87,7 @@ manager: "ghogen"
   
 ### 若要建立的多載的函式的 XML 文件註解  
   
-1.  在函式，加入[\<signature\>](../Topic/%3Csignature%3E%20\(JavaScript\).md)每一個多載的項目。  在上述項目，加入其他項目，例如`<summary>`， `<param>`，以及`<returns>`前三個斜線 \(\/ \/\) 與每個項目。  
+1.  在函式，加入[\<signature\>](../ide/signature-javascript.md)每一個多載的項目。  在上述項目，加入其他項目，例如`<summary>`， `<param>`，以及`<returns>`前三個斜線 \(\/ \/\) 與每個項目。  
   
      下列範例示範多載的 JavaScript 函式。  在這個範例中，多載參數型別不同。  
   
