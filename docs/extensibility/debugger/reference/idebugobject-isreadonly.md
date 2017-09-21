@@ -1,68 +1,51 @@
 ---
-title: IDebugObject::IsReadOnly | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject::IsReadOnly
-helpviewer_keywords:
-- IDebugObject::IsReadOnly method
+title: "IDebugObject::IsReadOnly | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject::IsReadOnly"
+helpviewer_keywords: 
+  - "IDebugObject::IsReadOnly 方法"
 ms.assetid: c460f772-d08a-4b36-81f3-dff6a51a93fd
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 13ede24192408b7b5a68c13d37a4535ccf352fed
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
-Determines if this object is read-only.  
+# IDebugObject::IsReadOnly
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+判斷這個物件是否為唯讀。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT IsReadOnly(   
-   BOOL* pfIsReadOnly  
+```cpp#  
+HRESULT IsReadOnly(   
+   BOOL* pfIsReadOnly  
 );  
 ```  
   
-```csharp  
+```c#  
 int IsReadOnly(  
-   out int pfIsReadOnly  
+   out int pfIsReadOnly  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pfIsReadOnly`  
- [out] Returns non-zero (`TRUE`) if this object is read-only; otherwise, returns zero (`FALSE`).  
+ \[\] out傳回非零 \(`TRUE`\) 如果這個物件是唯讀的。 否則，會傳回零 \(`FALSE`\)。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- A read-only object cannot have its value changed after it is created.  
+## 備註  
+ 唯讀屬性的物件不能建立後變更其值。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

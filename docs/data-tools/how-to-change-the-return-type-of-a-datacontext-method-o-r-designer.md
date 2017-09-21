@@ -1,64 +1,45 @@
 ---
-title: 'How to: Change the return type of a DataContext method (O-R Designer) | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "HOW TO：變更 DataContext 方法的傳回型別 (O/R 設計工具) | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/15/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: c5b66bff-6dbb-43c0-bffa-317133ca5b9e
 caps.latest.revision: 2
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: b130e051a4c7a312b2be952c1ef27e97c101cd1b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+caps.handback.revision: 2
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 ---
-# <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>How to: Change the return type of a DataContext method (O/R Designer)
-The return type of a <xref:System.Data.Linq.DataContext> method (created based on a stored procedure or function) differs depending on where you drop the stored procedure or function in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. If you drop an item directly onto an existing entity class, a <xref:System.Data.Linq.DataContext> method that has the return type of the entity class is created (if the schema of the data returned by the stored procedure or function matches the shape of the entity class). If you drop an item onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)], a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type is created. You can change the return type of a <xref:System.Data.Linq.DataContext> method after you add it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and click the **Return Type** property in the **Properties** window.  
+# HOW TO：變更 DataContext 方法的傳回型別 (O/R 設計工具)
+<xref:System.Data.Linq.DataContext> 方法 \(根據預存程序 \(Stored Procedure\) 或函式所建立\) 的傳回型別，會隨預存程序或函式在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中的置放位置而不同。如果將項目直接放入現有的實體類別，且預存程序或函式所傳回資料的結構描述符合實體類別的型態，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。如果您將項目放入 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]的空白區域，則建立的 <xref:System.Data.Linq.DataContext> 方法會傳回自動產生的型別。您可以在將 <xref:System.Data.Linq.DataContext> 方法加入至方法窗格後，變更方法的傳回型別。若要檢查或變更 <xref:System.Data.Linq.DataContext> 方法的傳回型別，請選取該方法，然後按一下 \[**屬性**\] 視窗中的 \[**傳回型別**\] 屬性。  
   
 > [!NOTE]
->  You cannot revert <xref:System.Data.Linq.DataContext> methods that have a return type set to an entity class to return the auto-generated type by using the **Properties** window. To revert a <xref:System.Data.Linq.DataContext> method to return an auto-generated type, you must drag the original database object onto the O/R Designer again.  
+>  您不可以使用 \[**屬性**\] 視窗，將傳回型別設定為實體類別的 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的型別。若要將 <xref:System.Data.Linq.DataContext> 方法還原成傳回自動產生的型別，則必須再次將原始資料庫物件拖曳至 O\/R 設計工具。  
   
-[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+ [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>To change the return type of a DataContext method from the auto-generated type to an entity class  
+### 若要將 DataContext 方法的傳回型別從自動產生的型別變更為實體類別  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane.  
+1.  選取方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
   
-2.  Select **Return Type** in the **Properties** window and then select an available entity class in the **Return Type** list. If the desired entity class is not in the list, add it to or create it in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] to add it to the list.  
+2.  選取 \[**屬性**\] 視窗中的 \[**傳回型別**\]，然後在 \[**傳回型別**\] 清單中選取可用的實體類別。如果所要的實體類別不在清單中，請在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中加入或建立它，以將它加入至清單。  
   
-3.  Save the .dbml file.  
+3.  儲存 .dbml 檔案。  
   
-### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>To change the return type of a DataContext method from an entity class back to the auto-generated type  
+### 若要將 DataContext 方法的傳回型別從實體類別變更為自動產生的型別  
   
-1.  Select the <xref:System.Data.Linq.DataContext> method in the methods pane and delete it.  
+1.  選取並刪除方法窗格中的 <xref:System.Data.Linq.DataContext> 方法。  
   
-2.  Drag the database object from **Server Explorer**/**Database Explorer** onto an empty area of the O/R Designer.  
+2.  將資料庫物件從 \[**伺服器總管**\]\/\[**資料庫總管**\] 拖曳至 O\/R 設計工具的空白區域。  
   
-3.  Save the .dbml file.  
+3.  儲存 .dbml 檔案。  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+## 請參閱  
+ [物件關聯式設計工具 \(O\/R 設計工具\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
+ [DataContext 方法 \(O\/R 設計工具\)](../data-tools/datacontext-methods-o-r-designer.md)   
+ [HOW TO：建立對應到預存程序和函式的 DataContext 方法 \(O\/R 設計工具\)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

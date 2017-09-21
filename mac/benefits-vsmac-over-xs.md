@@ -6,10 +6,10 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6ACF5FD4-D5C1-4050-95E3-467C753F25F1
 ms.translationtype: HT
-ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
-ms.openlocfilehash: 655795fd64958805e0137d7e231391c59f676776
+ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
+ms.openlocfilehash: bccf6e4fdb3983c3fbfd937817b558d4b61a8a44
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/11/2017
 
 ---
 
@@ -150,16 +150,16 @@ Unity 的工具包括：
 
 ### <a name="android"></a>Android 
 
-* [Android SDK manager](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/)  
+* [Android SDK 管理員](https://developer.xamarin.com/guides/android/application_fundamentals/using-the-sdk-manager/) (**預覽**) 
 * 只有 Visual Studio for Mac (而不是 Xamarin Studio) 才支援 Android O 
 
 ### <a name="ios-and-mac"></a>iOS 和 Mac 
 
 * [iOS 簽署工作流程更新](https://developer.xamarin.com/guides/cross-platform/macios/apple-account-management/) 
     * 建立簽署身分識別，然後將它們安裝至本機金鑰鏈。 
-    * 建立佈建設定檔。 
-    * 將簽署身分識別新增至現有設定檔。
-    *  佈建裝置：在 Apple Developer 入口網站中註冊裝置，並將它們新增至佈建設定檔。
+    * 建立佈建設定檔。 (**預覽**)
+    * 將簽署身分識別新增至現有設定檔。 (**預覽**)
+    *  佈建裝置：在 Apple Developer 入口網站中註冊裝置，並將它們新增至佈建設定檔。 (**預覽**)
 * 只有 Visual Studio for Mac (而不是 Xamarin Studio) 才支援 iOS 11、watchOS 4 和 tvOS 2 
 * 只有 Visual Studio for Mac (而不是 Xamarin Studio) 才支援 MacOS High Sierra 
 

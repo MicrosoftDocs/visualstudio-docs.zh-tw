@@ -1,78 +1,61 @@
 ---
-title: IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::GetEEMetricFile
+title: "IDebugSettingsCallback2::GetEEMetricFile | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugSettingsCallback2::GetEEMetricFile"
 ms.assetid: 3a0bf9e5-bbd2-4d15-840d-8244732787fc
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3e2d0ec99c2bb4e166b949a082aea6928ee5023d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
-Retrieves the expression evaluator metric file given the name or the metric.  
+# IDebugSettingsCallback2::GetEEMetricFile
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取運算式評估工具公制檔案指定名稱\] 或 \[公制。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetEEMetricFile(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   BSTR*   pbstrValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   BSTR*   pbstrValue  
 );  
 ```  
   
-```csharp  
+```c#  
 private int GetEEMetricFile(  
-   ref Guid   guidLang,  
-   ref Guid   guidVendor,  
-   string     pszMetric,  
-   out string pbstrValue  
+   ref Guid   guidLang,  
+   ref Guid   guidVendor,  
+   string     pszMetric,  
+   out string pbstrValue  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `guidLang`  
- [in] Unique identifier of the programming language.  
+ \[in\]唯一的識別項的程式語言。  
   
  `guidVendor`  
- [in] Unique identifier of the vendor.  
+ \[in\]廠商的唯一的識別項。  
   
  `pszMetric`  
- [in] Name of the metric.  
+ \[in\]計量值的名稱。  
   
  `pbstrValue`  
- [out] Returns the contents of the metric file as a string.  
+ \[\] out以字串傳回公制檔案的內容。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

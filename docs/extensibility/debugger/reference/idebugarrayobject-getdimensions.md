@@ -1,73 +1,56 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugArrayObject::GetDimensions
-helpviewer_keywords:
-- IDebugArrayObject::GetDimensions method
+title: "IDebugArrayObject::GetDimensions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugArrayObject::GetDimensions"
+helpviewer_keywords: 
+  - "IDebugArrayObject::GetDimensions 方法"
 ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 05ff3521879afe821fbac681a89ad993f5a18000
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
-Gets the dimensions of the array.  
+# IDebugArrayObject::GetDimensions
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得陣列的維度。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetDimensions(   
-   DWORD dwCount,  
-   DWORD dwDimensions[]  
+```cpp#  
+HRESULT GetDimensions(   
+   DWORD dwCount,  
+   DWORD dwDimensions[]  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetDimensions(  
-   [In] uint    dwCount,   
-   [Out] uint[] dwDimensions  
+   [In] uint    dwCount,   
+   [Out] uint[] dwDimensions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwCount`  
- [in] The number of dimensions to retrieve.  
+ \[in\]若要擷取的維度數目。  
   
  `dwDimensions`  
- [in, out] An array that is filled in with the sizes of each dimension. `dwCount` specifies the maximum size of the `dwDimensions` array.  
+ 輸入 \[、 輸出\]這類陣列會被填入每個維度的大小。  `dwCount`指定的最大`dwDimensions`陣列。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- A multi-dimensional array can have different sizes for each dimension. For example, given the three-dimensional array `myarray[3][2][6]`, this method would return 3, 2, and 6 in the `dwDimensions` parameter in that order.  
+## 備註  
+ 多維陣列可以有不同的大小，每個維度。  例如，假設三維陣列`myarray[3][2][6]`，3、 2 和 6 中的，這個方法會傳回`dwDimensions`參數的順序。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

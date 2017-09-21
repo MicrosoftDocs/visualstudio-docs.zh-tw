@@ -1,86 +1,69 @@
 ---
-title: IDebugBinder3::GetEEService | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBinder3::GetEEService
-helpviewer_keywords:
-- IDebugBinder3::GetEEService method
+title: "IDebugBinder3::GetEEService | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBinder3::GetEEService"
+helpviewer_keywords: 
+  - "IDebugBinder3::GetEEService 方法"
 ms.assetid: eb07aa40-8cd9-4a52-a4c7-4affd2307a01
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: db110733d543ac797d84c323c1d9f7b96b4ef8be
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
-This method returns a requested service.  
+# IDebugBinder3::GetEEService
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會傳回要求的服務。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetEEService(  
-   [in] GUID        vendor,  
-   [in] GUID        language,  
-   [in] GUID        iid,  
-   [out] IUnknown** ppService  
+HRESULT GetEEService(  
+   [in] GUID        vendor,  
+   [in] GUID        language,  
+   [in] GUID        iid,  
+   [out] IUnknown** ppService  
 );  
 ```  
   
-```csharp  
-Int GetEEService(  
-   Guid       vendor,  
-   Guid       language,  
-   Guid       iid,  
-   out object ppService  
+```c#  
+Int GetEEService(  
+   Guid       vendor,  
+   Guid       language,  
+   Guid       iid,  
+   out object ppService  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `vendor`  
- [in] `GUID` of a vendor (a null value is acceptable).  
+ \[in\]`GUID`的供應商 \(null 值是可接受的\)。  
   
  `language`  
- [in] `GUID` of a language (a null value is acceptable).  
+ \[in\]`GUID` \(null 值是可接受的\) 的語言。  
   
  `iid`  
- [in] `IID` of the service to obtain.  
+ \[in\]`IID`要取得的服務。  
   
  `ppService`  
- [out] An interface to the requested service.  
+ \[\] out要求的服務介面。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Pass the `IID` for the [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) interface (`IID_IEEVisualizerServiceProvider`) to see if the Type Visualizer service is available. If so, the expression evaluator can obtain the [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) interface to support type visualizers. See [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md) for details.  
+## 備註  
+ 傳遞`IID`的[IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)介面 \(`IID_IEEVisualizerServiceProvider`\)，看看是否可以使用型別視覺化檢視的服務。  如果運算式評估工具可以取得， [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面以支援型別視覺化檢視。  如需詳細資訊，請參閱[視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
  [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [Visualizing and Viewing Data](../../../extensibility/debugger/visualizing-and-viewing-data.md)
+ [視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)

@@ -1,89 +1,72 @@
 ---
-title: dwTYPE_KIND | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- dwTYPE_KIND
-helpviewer_keywords:
-- dwTYPE_KIND enumeration
+title: "dwTYPE_KIND | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "dwTYPE_KIND"
+helpviewer_keywords: 
+  - "dwTYPE_KIND 列舉型別"
 ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 699f842ffc8fa14f7674a49671f9ac2b8ada6117
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="dwtypekind"></a>dwTYPE_KIND
-Specifies how to interpret the type of an [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object.  
+# dwTYPE_KIND
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+指定如何解譯的型別[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 enum enum_dwTYPE_KIND {  
-   TYPE_KIND_METADATA = 0x0001,  
-   TYPE_KIND_PDB      = 0x0002,  
-   TYPE_KIND_BUILT    = 0x0003,  
+   TYPE_KIND_METADATA = 0x0001,  
+   TYPE_KIND_PDB      = 0x0002,  
+   TYPE_KIND_BUILT    = 0x0003,  
 };  
   
 typedef DWORD dwTYPE_KIND;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_dwTYPE_KIND {  
-   TYPE_KIND_METADATA = 0x0001,  
-   TYPE_KIND_PDB      = 0x0002,  
-   TYPE_KIND_BUILT    = 0x0003,  
+   TYPE_KIND_METADATA = 0x0001,  
+   TYPE_KIND_PDB      = 0x0002,  
+   TYPE_KIND_BUILT    = 0x0003,  
 };  
 ```  
   
-#### <a name="parameters"></a>Parameters  
- TYPE_KIND_METADATA  
- The [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) union should be interpreted as a [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) structure.  
+#### 參數  
+ TYPE\_KIND\_METADATA  
+ [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)等位應該解譯成[METADATA\_TYPE](../../../extensibility/debugger/reference/metadata-type.md)結構。  
   
- TYPE_KIND_PDB  
- The `TYPE_INFO` union should be interpreted as a [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) structure.  
+ TYPE\_KIND\_PDB  
+ `TYPE_INFO`等位應該解譯成[PDB\_TYPE](../../../extensibility/debugger/reference/pdb-type.md)結構。  
   
- TYPE_KIND_BUILT  
- The `TYPE_INFO` union should be interpreted as a [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) structure.  
+ TYPE\_KIND\_BUILT  
+ `TYPE_INFO`等位應該解譯成[BUILT\_TYPE](../../../extensibility/debugger/reference/built-type.md)結構。  
   
-## <a name="remarks"></a>Remarks  
- The values of this enumeration appear in the `dwKind` field of the [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure and are used to determine how to interpret the `type` union member. The `TYPE_INFO` structure is returned by a call to the [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) method.  
+## 備註  
+ 這個列舉型別的值會出現在`dwKind`欄位的[TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)架構，用來決定如何解譯`type`等位成員。  `TYPE_INFO`結構就會傳回由呼叫[GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## 需求  
+ 標頭: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
+## 請參閱  
+ [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)   
  [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)   
- [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   
- [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md)   
- [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)
+ [METADATA\_TYPE](../../../extensibility/debugger/reference/metadata-type.md)   
+ [PDB\_TYPE](../../../extensibility/debugger/reference/pdb-type.md)   
+ [BUILT\_TYPE](../../../extensibility/debugger/reference/built-type.md)

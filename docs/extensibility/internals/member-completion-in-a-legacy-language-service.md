@@ -1,83 +1,66 @@
 ---
-title: Member Completion in a Legacy Language Service | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IntelliSense, Member Completion tool tip
-- Member Completion, supporting in language services [managed package framework]
-- language services [managed package framework], IntelliSense Member Completion
+title: "在舊版語言服務中的成員完成 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IntelliSense、 成員完成工具提示"
+  - "成員完成時，支援的語言服務 [受管理的封裝 framework]"
+  - "語言服務 [受管理的封裝 framework] 成員的 IntelliSense 完成"
 ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 21
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 36dcb076c0a7e1f8448eebf9a0ff18ff3c199183
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
-# <a name="member-completion-in-a-legacy-language-service"></a>Member Completion in a Legacy Language Service
-The IntelliSense Member Completion is a tool tip that displays a list of possible members of a particular scope such as a class, structure, enumeration, or namespace. For example, in C#, if the user types "this" followed by a period, a list of all members of the class or structure at the current scope is presented in a list from which the user can select.  
+# 在舊版語言服務中的成員完成
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+完成 IntelliSense 成員是會顯示一份可能的成員，例如類別、 結構、 列舉型別或命名空間的特定範圍的工具提示。 比方說，在 C\# 中，如果使用者輸入"this"，後面接著句點，類別或結構，在目前範圍內的所有成員的清單會顯示使用者可以從中選取的清單中。  
   
- The managed package framework (MPF) provides support for the tool tip and managing the list in the tool tip; all that is needed is cooperation from the parser to supply the data that appears in the list.  
+ 受管理的封裝架構 \(MPF\) 提供支援的工具提示和管理清單中的工具提示。所需要的全部是由剖析器來提供資料出現在清單中的合作。  
   
- Legacy language services are implemented as part of a VSPackage, but the newer way to implement language service features is to use MEF extensions. To find out more, see [Extending the Editor and Language Services](../../extensibility/extending-the-editor-and-language-services.md).  
+ 舊版的語言服務會實作成，VSPackage 的一部分，但實作語言服務功能的較新的方法是使用 MEF 延伸模組。 若要深入了解，請參閱 [擴充編輯器和語言服務](../../extensibility/extending-the-editor-and-language-services.md)。  
   
 > [!NOTE]
->  We recommend that you begin to use the new editor API as soon as possible. This will improve the performance of your language service and let you take advantage of new editor features.  
+>  我們建議您開始使用新的編輯器 API 儘速。 這會改善語言服務的效能，並可讓您充分利用新編輯器功能。  
   
-## <a name="how-it-works"></a>How It Works  
- The following are the two ways in which a member list is shown using the MPF classes:  
+## 它的運作方式  
+ 以下是在其成員清單會顯示使用 MPF 類別的兩種方法︰  
   
--   Positioning the caret on an identifier or after a member completion character and selecting **List Members** from the **IntelliSense** menu.  
+-   識別項 （含） 之後成員完成字元位置插入號，然後選取 **列出成員** 從 **IntelliSense** 功能表。  
   
--   The <xref:Microsoft.VisualStudio.Package.IScanner> scanner detects a member completion character and sets a token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers> for that character.  
+-   <xref:Microsoft.VisualStudio.Package.IScanner> 掃描器會偵測成員完成字元，並設定權杖觸發程序的 <xref:Microsoft.VisualStudio.Package.TokenTriggers> ，該字元。  
   
- A member completion character indicates that a member of a class, structure, or enumeration is to follow. For example, in C# or Visual Basic the member completion character is a `.`, while  in C++ the character is either a `.` or a `->`. The trigger value is set when the member select character is scanned.  
+ 成員完成字元表示的類別、 結構或列舉型別成員是遵循。 例如，在 C\# 或 Visual Basic 成員完成字元是 `.`, ，而 c \+ \+ 中的字元是其中 `.` 或 `->`。 成員選取字元會掃描時，會設定觸發程序的值。  
   
-### <a name="the-intellisense-member-list-command"></a>The IntelliSense Member List Command  
- The <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> command initiates a call to the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class and the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method, in turn, calls the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method parser with the parse reason of <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+### IntelliSense 成員 List 命令  
+ <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 命令開始呼叫 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法 <xref:Microsoft.VisualStudio.Package.Source> 類別和 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法，接著呼叫 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法剖析器剖析原因為 <xref:Microsoft.VisualStudio.Package.ParseReason>。  
   
- The parser determines the context of the current position as well as the token under or immediately before the current position. Based on this token, a list of declarations is presented. For example, in C#, if you position the caret on a class member and select **List Members**, you get a list of all members of the class. If you position the caret after a period that follows an object variable, you get a list of all members of the class that object represents. Note that if the caret is positioned on a member when the member list is shown, selecting a member from the list replaces the member the caret is on with the one in the list.  
+ 剖析器會判斷目前的位置，以及在或之前的目前位置的語彙基元的內容。 根據這個語彙基元，會顯示宣告的清單。 例如，在 C\# 中，如果您的類別成員，然後選取插入號 **列出成員**, ，取得類別的所有成員的清單。 如果您插入號後面物件變數的句點之後，您會取得類別的物件所代表的所有成員的清單。 請注意，是否插入號位於成員顯示成員的清單時，從清單中選取的成員會取代插入號是一個清單中的成員。  
   
-### <a name="the-token-trigger"></a>The Token Trigger  
- The <xref:Microsoft.VisualStudio.Package.TokenTriggers> trigger initiates a call to the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method on the <xref:Microsoft.VisualStudio.Package.Source> class and the <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> method, in turn, calls the parser with the parse reason of <xref:Microsoft.VisualStudio.Package.ParseReason> (if the token trigger also included the <xref:Microsoft.VisualStudio.Package.TokenTriggers> flag, the parse reason is <xref:Microsoft.VisualStudio.Package.ParseReason> which combines member selection and brace highlighting).  
+### 語彙基元的觸發程序  
+ <xref:Microsoft.VisualStudio.Package.TokenTriggers> 觸發程序開始呼叫 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法 <xref:Microsoft.VisualStudio.Package.Source> 類別和 <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> 方法，轉而呼叫的剖析器剖析原因為 <xref:Microsoft.VisualStudio.Package.ParseReason> \(如果語彙基元的觸發程序也包含 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 旗標，剖析的原因是 <xref:Microsoft.VisualStudio.Package.ParseReason> 其中結合了成員選取範圍和大括號反白顯示\)。  
   
- The parser determines the context of the current position as well as what has been typed before the member select character. From this information, the parser creates a list of all members of the requested scope. This list of declarations is stored in the <xref:Microsoft.VisualStudio.Package.AuthoringScope> object that is returned from the <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> method. If any declarations are returned, the member completion tool tip is displayed. The tool tip is managed by an instance of the <xref:Microsoft.VisualStudio.Package.CompletionSet> class.  
+ 剖析器會判斷目前的內容以及成員選取字元之前具有已輸入位置。 這項資訊，從剖析器會建立要求的範圍中的所有成員的清單。 此宣告的清單儲存在 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 所傳回的物件 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 方法。 如果傳回的任何宣告，則會顯示成員完成工具提示。 執行個體所管理的工具提示 <xref:Microsoft.VisualStudio.Package.CompletionSet> 類別。  
   
-## <a name="enabling-support-for-member-completion"></a>Enabling Support for Member Completion  
- You must have the `CodeSense` registry entry set to 1 to support any IntelliSense operation. This registry entry can be set with a named parameter passed to the <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> user attribute associated with the language package. The language service classes read the value of this registry entry from the <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> property on the <xref:Microsoft.VisualStudio.Package.LanguagePreferences> class.  
+## 啟用支援成員完成  
+ 您必須擁有 `CodeSense` 登錄項目設為 1，以支援 IntelliSense 的任何作業。 此登錄項目可以設定具名參數，傳遞至 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> 語言套件相關聯的使用者屬性。 語言服務類別會讀取此登錄項目的值從 <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> 屬性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 類別。  
   
- If your scanner returns the token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers>, and your parser returns a list of declarations, then the member completion list is displayed.  
+ 如果您的掃描器傳回的語彙基元的觸發程序 <xref:Microsoft.VisualStudio.Package.TokenTriggers>, ，和您剖析器會傳回一份宣告，就不會顯示成員的完成清單。  
   
-## <a name="supporting-member-completion-in-the-scanner"></a>Supporting Member Completion in the Scanner  
- The scanner must be able to detect a member completion character and set the token trigger of <xref:Microsoft.VisualStudio.Package.TokenTriggers> when that character is parsed.  
+## 掃描器的支援成員完成  
+ 掃描器必須能夠偵測成員完成字元及設定的語彙基元的觸發程序 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 剖析該字元時。  
   
-### <a name="example"></a>Example  
- Here is a simplified example of detecting the member completion character and setting the appropriate <xref:Microsoft.VisualStudio.Package.TokenTriggers> flag. This example is for illustrative purposes only. It assumes that your scanner contains a method `GetNextToken` that identifies and returns tokens from a line of text. The example code simply sets the trigger whenever it sees the right kind of character.  
+### 範例  
+ 以下是一個簡單的例子，偵測成員完成字元，並設定適當的 <xref:Microsoft.VisualStudio.Package.TokenTriggers> 旗標。 這個範例是僅供示範用途。 它會假設您的掃描器都包含一種方法 `GetNextToken` ，識別，並傳回權杖，從一行文字。 每當它看見正確類型的字元時，範例程式碼只需設定觸發程序。  
   
-```csharp  
+```c#  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  
   
@@ -108,17 +91,17 @@ namespace TestLanguagePackage
 }  
 ```  
   
-## <a name="supporting-member-completion-in-the-parser"></a>Supporting Member Completion in the Parser  
- For member completion, the <xref:Microsoft.VisualStudio.Package.Source> class calls the <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> method. You must implement the list in a class that is derived from the <xref:Microsoft.VisualStudio.Package.Declarations> class. See the <xref:Microsoft.VisualStudio.Package.Declarations> class for details about the methods you must implement.  
+## 剖析器中支援成員完成  
+ 成員完成 <xref:Microsoft.VisualStudio.Package.Source> 類別會呼叫 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A> 方法。 您必須從衍生類別中實作清單 <xref:Microsoft.VisualStudio.Package.Declarations> 類別。 請參閱 <xref:Microsoft.VisualStudio.Package.Declarations> 類別必須實作的方法的相關詳細資料。  
   
- The parser is called with <xref:Microsoft.VisualStudio.Package.ParseReason> or <xref:Microsoft.VisualStudio.Package.ParseReason> when a member select character is typed. The location given in the <xref:Microsoft.VisualStudio.Package.ParseRequest> object is immediately after the member select character. The parser must collect the names of all members that can appear in a member list at that particular point in the source code. Then the parser must parse the current line to determine the scope the user wants associated with the member select character.  
+ 剖析器會以呼叫 <xref:Microsoft.VisualStudio.Package.ParseReason> 或 <xref:Microsoft.VisualStudio.Package.ParseReason> 成員選取的字元型別。 指定位置 <xref:Microsoft.VisualStudio.Package.ParseRequest> 物件後立即成員選取字元。 剖析器必須收集可以在原始程式碼中的特定點的成員清單中出現的所有成員的名稱。 然後，剖析器必須剖析目前這一行來決定使用者想要的成員選取字元相關聯的範圍。  
   
- This scope is based on the type of the identifier before the member select character. For example, in C#, given the member variable `languageService` that has a type of `LanguageService`, typing **languageService.** produces a list of all the members of the `LanguageService` class. Also in C#, typing **this.** produces a list of all the members of the class in the current scope.  
+ 成員選取字元之前，此範圍根據識別項的類型。 例如，在 C\# 中，指定的成員變數 `languageService` 具有一種 `LanguageService`, ，輸入 **languageService。** ，產生的所有成員的清單 `LanguageService` 類別。 也在 C\# 中，輸入 **這。** 會產生一份目前範圍中類別的所有成員。  
   
-### <a name="example"></a>Example  
- The following example shows one way to populate a <xref:Microsoft.VisualStudio.Package.Declarations> list. This code assumes that the parser constructs a declaration and adds it to the list by calling an `AddDeclaration` method on the `TestAuthoringScope` class.  
+### 範例  
+ 下列範例將示範一種方式填入 <xref:Microsoft.VisualStudio.Package.Declarations> 清單。 此程式碼假設剖析器建構宣告，並將它加入至清單中，藉由呼叫 `AddDeclaration` 方法 `TestAuthoringScope` 類別。  
   
-```csharp  
+```c#  
 using System.Collections;  
 using Microsoft.VisualStudio.Package;  
 using Microsoft.VisualStudio.TextManager.Interop;  

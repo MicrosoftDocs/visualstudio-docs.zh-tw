@@ -1,67 +1,50 @@
 ---
-title: IDebugObject::IsProxy | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugObject::IsProxy
-- IsProxy
+title: "IDebugObject::IsProxy | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugObject::IsProxy"
+  - "IsProxy"
 ms.assetid: 06c66b87-db95-4400-ab26-5d33e743a439
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d7dd6cbad8d57ff68d5346f949429eb01414f5b2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugobjectisproxy"></a>IDebugObject::IsProxy
-Determines if the object is a transparent proxy.  
+# IDebugObject::IsProxy
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+判斷物件是否為透明 proxy。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT IsProxy (  
-   BOOL* pfIsProxy  
+   BOOL* pfIsProxy  
 );  
 ```  
   
-```csharp  
+```c#  
 int IsProxy (  
-   out bool pfIsProxy  
+   out bool pfIsProxy  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pfIsProxy`  
- [out] `TRUE` if the object is a transparent proxy; otherwise, `FALSE`.  
+ \[\] out`TRUE`如果物件是透明的 proxy。 否則， `FALSE`。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- This method is implemented by the default C++ debug engine.  
+## 備註  
+ 預設的 c \+ \+ 偵錯引擎實作這個方法。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

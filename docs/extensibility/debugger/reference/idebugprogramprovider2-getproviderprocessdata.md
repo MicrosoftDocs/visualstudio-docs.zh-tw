@@ -1,101 +1,84 @@
 ---
-title: IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2::GetProviderProcessData
-helpviewer_keywords:
-- IDebugProgramProvider2::GetProviderProcessData
+title: "IDebugProgramProvider2::GetProviderProcessData | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgramProvider2::GetProviderProcessData"
+helpviewer_keywords: 
+  - "IDebugProgramProvider2::GetProviderProcessData"
 ms.assetid: 90cf7b7f-53d2-487e-b793-94501a6e24dd
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8ccb246ee73119f063f1d92059bfdb938fe483d4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
-Retrieves a list of running programs from a specified process.  
+# IDebugProgramProvider2::GetProviderProcessData
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取與指定的處理序中執行程式的清單。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetProviderProcessData(  
-   PROVIDER_FLAGS         Flags,  
-   IDebugDefaultPort2*    pPort,  
-   AD_PROCESS_ID          processId,  
-   CONST_GUID_ARRAY       EngineFilter,  
-   PROVIDER_PROCESS_DATA* pProcess  
+HRESULT GetProviderProcessData(  
+   PROVIDER_FLAGS         Flags,  
+   IDebugDefaultPort2*    pPort,  
+   AD_PROCESS_ID          processId,  
+   CONST_GUID_ARRAY       EngineFilter,  
+   PROVIDER_PROCESS_DATA* pProcess  
 );  
 ```  
   
-```csharp  
-int GetProviderProcessData(  
-   enum_PROVIDER_FLAGS     Flags,  
-   IDebugDefaultPort2      pPort,  
-   AD_PROCESS_ID           ProcessId,  
-   CONST_GUID_ARRAY        EngineFilter,  
-   PROVIDER_PROCESS_DATA[] pProcess  
+```c#  
+int GetProviderProcessData(  
+   enum_PROVIDER_FLAGS     Flags,  
+   IDebugDefaultPort2      pPort,  
+   AD_PROCESS_ID           ProcessId,  
+   CONST_GUID_ARRAY        EngineFilter,  
+   PROVIDER_PROCESS_DATA[] pProcess  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `Flags`  
- [in] A combination of flags from the [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeration. The following flags are typical for this call:  
+ \[in\]從的旗標組合[PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)列舉型別。  下列旗標為這個呼叫一般項目：  
   
-|Flag|Description|  
-|----------|-----------------|  
-|`PFLAG_REMOTE_PORT`|Caller is running on remote machine.|  
-|`PFLAG_DEBUGGEE`|Caller is currently being debugged (additional information about marshalling will be returned for each node).|  
-|`PFLAG_ATTACHED_TO_DEBUGGEE`|Caller was attached to but not launched by the debugger.|  
-|`PFLAG_GET_PROGRAM_NODES`|Caller is asking for a list of program nodes to be returned.|  
+|旗標|描述|  
+|--------|--------|  
+|`PFLAG_REMOTE_PORT`|呼叫者正在遠端機器上執行。|  
+|`PFLAG_DEBUGGEE`|呼叫端是否目前正在偵錯 \(每個節點會傳回封送處理的其他資訊\)。|  
+|`PFLAG_ATTACHED_TO_DEBUGGEE`|已附加至呼叫端，但不是啟動偵錯工具。|  
+|`PFLAG_GET_PROGRAM_NODES`|要傳回呼叫端要求程式節點的清單。|  
   
  `pPort`  
- [in] The port the calling process is running on.  
+ \[in\]呼叫的處理程序的連接埠上執行。  
   
  `processId`  
- [in] An [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure holding the ID of the process that contains the program in question.  
+ \[in\][AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構保留包含該程式的處理序 ID 有問題。  
   
  `EngineFilter`  
- [in] An array of GUIDs for debug engines assigned to debug this process (these will be used to filter the programs that are actually returned based on what the supplied engines support; if no engines are specified, then all programs will be returned).  
+ \[in\]陣列的 Guid，以便指派給偵錯 \(這些將用來篩選程式，實際上會傳回根據所提供的引擎支援 ； 此程序的偵錯引擎 如果未不指定任何引擎，然後所有程式將會都傳回\)。  
   
  `pProcess`  
- [out] A [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure that is filled in with the requested information.  
+ \[\] outA [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)會被填入所要求的資訊的結構。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- This method is normally called by a process to obtain a list of programs running in that process. The returned information is a list of [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objects.  
+## 備註  
+ 若要取得一份該程序中執行的程式處理程序通常呼叫這個方法。  傳回的資訊是一份[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)   
  [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)   
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
- [CONST_GUID_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
- [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
- [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
+ [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)   
+ [CONST\_GUID\_ARRAY](../../../extensibility/debugger/reference/const-guid-array.md)   
+ [PROVIDER\_FLAGS](../../../extensibility/debugger/reference/provider-flags.md)   
+ [PROVIDER\_PROCESS\_DATA](../../../extensibility/debugger/reference/provider-process-data.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

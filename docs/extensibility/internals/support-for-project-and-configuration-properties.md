@@ -1,54 +1,37 @@
 ---
-title: Support for Project and Configuration Properties | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- project properties, supporting with Visual Studio SDK
-- configuration properties, suppporting with Visual Studio SDK
+title: "專案和組態屬性的支援 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "專案屬性中，以 Visual Studio SDK 支援"
+  - "組態屬性，Visual Studio sdk suppporting"
 ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 25
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c7bc33b716b304d75f5b1eeb7dadbeba1fe89377
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 25
 ---
-# <a name="support-for-project-and-configuration-properties"></a>Support for Project and Configuration Properties
-The **Properties** window in the [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE) can display project and configuration properties. You can provide a property page for your own project type so that the user can set properties for your application.  
+# 專案和組態屬性的支援
+[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
+
+**屬性** \] 視窗中的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式的開發環境 \(IDE\) 可顯示專案和設定屬性。 使用者可設定您的應用程式的屬性，您可以提供您自己的專案類型屬性頁。  
   
- By selecting a project node in **Solution Explorer** and then clicking **Properties** on the **Project** menu, you can open a dialog box that includes project and configuration properties. In [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] and [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], and project types derived from these languages, this dialog box appears as a tabbed page in the [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md). For more information, see [Not in Build: Walkthrough: Exposing Project and Configuration Properties (C#)](http://msdn.microsoft.com/en-us/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ 藉由選取的專案節點中 **方案總管\] 中** ，然後按一下 \[ **屬性** 上 **專案** \] 功能表上，您可以開啟一個對話方塊，包括專案和組態屬性。 在 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], ，和專案類型衍生自這些語言的這個對話方塊會出現在索引標籤式頁面 [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)。 如需詳細資訊，請參閱 [不在建置︰ 逐步解說︰ 公開的專案和設定屬性 \(C\#\)](http://msdn.microsoft.com/zh-tw/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)。  
   
- The Managed Package Framework for Projects (MPFProj) provides helper classes for creating and managing new project system. You can find the source code and compilation instructions at [MPF for Projects - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+ 管理封裝個專案的架構 \(MPFProj\) 提供建立和管理新的專案系統的協助程式類別。 您可以在程式碼並編譯指示找出來源 [專案\-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
-## <a name="persistence-of-project-and-configuration-properties"></a>Persistence of Project and Configuration Properties  
- Project and configuration properties are persisted in a project file that has an file name extension associated with the project type, for example, .csproj, .vbproj, and .myproj. Language projects typically use a template file to generate the project file. However, there are actually several ways to associate project types and templates. For more information, see [NIB: Visual Studio Templates](http://msdn.microsoft.com/en-us/141fccaa-d68f-4155-822b-27f35dd94041) and [Template Directory Description (.Vsdir) Files](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).  
+## 專案範本和組態屬性的持續性  
+ 專案和組態屬性會保存在與專案類型，例如相關聯的檔案副檔名、.csproj、.vbproj 和.myproj 的專案檔案。 語言專案通常會使用範本檔案來產生專案檔。 不過，有很多種實際專案類型和範本建立關聯。 如需詳細資訊，請參閱 [NIB: Visual Studio 範本](http://msdn.microsoft.com/zh-tw/141fccaa-d68f-4155-822b-27f35dd94041) 和 [範本目錄描述 \(。Vsdir\) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)。  
   
- Project and configuration properties are created by adding items to the template file. These properties are then available to any project created by using the project type that uses this template. [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] projects and the MPFProj both use the [Not in Build: MSBuild Overview](http://msdn.microsoft.com/en-us/b588fd73-a45b-4706-908f-cc131bccfbde) schema for template files. These files have a PropertyGroup section for each configuration. Properties of projects are typically persisted in the first PropertyGroup section, which has a Configuration argument set to a null string.  
+ 將項目加入到範本檔案會建立專案和組態屬性。 這些屬性可使用的專案類型，會使用此範本所建立的任何專案。[!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案和兩者都使用 MPFProj [不在建置︰ MSBuild 概觀](http://msdn.microsoft.com/zh-tw/b588fd73-a45b-4706-908f-cc131bccfbde) 範本檔案的結構描述。 這些檔案都有每個組態的 PropertyGroup 區段。 專案的屬性通常會保存在第一個的 PropertyGroup 區段具有組態引數設定為 null 字串。  
   
- The following code shows the start of a basic MSBuild project file.  
+ 下列程式碼示範基本的 MSBuild 專案檔的開頭。  
   
 ```  
 <Project MSBuildVersion="2.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
@@ -64,49 +47,54 @@ The **Properties** window in the [!INCLUDE[vsprvs](../../code-quality/includes/v
     <Optimize>true</Optimize>  
 ```  
   
- In this project file, `<Name>` and `<SchemaVersion>` are project properties, and `<Optimize>` is a configuration property.  
+ 在專案檔案中， `<Name>` 和 `<SchemaVersion>` 專案屬性和 `<Optimize>` 為組態屬性。  
   
- It is the responsibility of the project to persist the project and configuration properties of the project file.  
+ 它負責保存專案和設定屬性的專案檔案的專案。  
   
 > [!NOTE]
->  A project can optimize persistence by persisting only property values that differ from their default values.  
+>  專案可以最佳化持續性保存其預設值不同的唯一屬性值。  
   
-## <a name="support-for-project-and-configuration-properties"></a>Support for Project and Configuration Properties  
- The `Microsoft.VisualStudio.Package.SettingsPage` class implements project and configuration property pages. The default implementation of `SettingsPage` offers public properties to a user in a generic property grid. The `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` method selects classes derived from `SettingsPage` for project property grids. The `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` method selects classes derived from `SettingsPage` for configuration property grids. Your project type should override these methods to select the appropriate property pages.  
+## 專案和組態屬性的支援  
+ `Microsoft.VisualStudio.Package.SettingsPage` 類別會實作專案\] 和 \[組態屬性頁。 預設實作 `SettingsPage` 泛型屬性方格中的使用者提供的公用屬性。`Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` 方法會選取衍生自類別 `SettingsPage` 專案屬性方格。`Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` 方法會選取衍生自類別 `SettingsPage` 的組態屬性方格。 您的專案類型應該覆寫這些方法來選取適當的屬性頁。  
   
- The `SettingsPage` class and the `Microsoft.VisualStudio.Package.ProjectNode` class offer these methods to persist project and configuration properties:  
+ `SettingsPage` 類別和 `Microsoft.VisualStudio.Package.ProjectNode` 類別會提供這些方法來保存專案和組態屬性︰  
   
--   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` and `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` persist project properties.  
+-   `Microsoft.VisualStudio.Package.ProjectNode.GetProjectProperty` 和 `Microsoft.VisualStudio.Package.ProjectNode.SetProjectProperty` 保存專案屬性。  
   
--   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` and `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persist configuration properties.  
+-   `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` 和 `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` 保存組態屬性。  
   
     > [!NOTE]
-    >  The implementations of the `Microsoft.VisualStudio.Package.SettingsPage` and `Microsoft.VisualStudio.Package.ProjectNode` classes use the `Microsoft.Build.BuildEngine` (MSBuild) methods to get and set project and configuration properties from the project file.  
+    >  實作 `Microsoft.VisualStudio.Package.SettingsPage` 和 `Microsoft.VisualStudio.Package.ProjectNode` 類別會使用 `Microsoft.Build.BuildEngine` \(MSBuild\) 方法來取得及設定專案和組態屬性，從專案檔。  
   
- The class you derive from `SettingsPage` must implement `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` and `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` to persist project or configuration properties of the project file.  
+ 此類別衍生自 `SettingsPage` 必須實作 `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` 和 `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` 保存專案或組態的專案檔的內容。  
   
-## <a name="provideobjectattribute-and-registry-path"></a>ProvideObjectAttribute and Registry Path  
- Classes derived from `SettingsPage` are designed to be shared across VSPackages. To make it possible for a VSPackage to create a class derived from `SettingsPage`, add a `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` to a class derived from `Microsoft.VisualStudio.Shell.Package`.  
+## ProvideObjectAttribute 以及登錄路徑  
+ 類別衍生自 `SettingsPage` 專為 VSPackages 之間共用。 若要使建立衍生自類別 VSPackage `SettingsPage`, ，加入 `Microsoft.VisualStudio.Shell.ProvideObjectAttribute` 類別衍生自 `Microsoft.VisualStudio.Shell.Package`。  
   
- [!code-csharp[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)] [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]  
+ [!code-cs[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_1.cs)]
+ [!code-vb[VSSDKSupportProjectConfigurationProperties#1](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_1.vb)]  
   
- The VSPackage to which the attribute is attached is unimportant. When a VSPackage is registered with [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], the class id (CLSID) of any object that can be created is registered so that a call to <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> can create it.  
+ VSPackage 要附加屬性並不重要。 VSPackage 向時 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], ，您可以建立任何物件的類別識別碼 \(CLSID\) 登錄，讓呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry.CreateInstance%2A> 可以建立。  
   
- The registry path of an object that can be created is determined by combining <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, the word, CLSID, and the guid of the object type. If `MyProjectPropertyPage` class has a guid of {3c693da2-5bca-49b3-bd95-ffe0a39dd723} and the UserRegistryRoot is HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp, then the registry path would be HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\CLSID\\{3c693da2-5bca-49b3-bd95-ffe0a39dd723}.  
+ 您可以建立物件的登錄路徑由合併 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A>, ，word、 CLSID、 和物件類型的 guid。 如果 `MyProjectPropertyPage` 類別具有 {3c693da2\-5bca\-49b3\-bd95\-ffe0a39dd723} 的 guid 和 UserRegistryRoot 是 HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0Exp，則登錄路徑會是 HKEY\_CURRENT\_USER\\Software\\Microsoft\\VisualStudio\\8.0Exp\\CLSID\\{3c693da2\-5bca\-49b3\-bd95\-ffe0a39dd723}。  
   
-## <a name="project-and-configuration-property-attributes-and-layout"></a>Project and Configuration Property Attributes and Layout  
- The <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, and <xref:System.ComponentModel.DescriptionAttribute> attributes determine the layout, labeling, and description of project and configuration properties in a generic property page. These attributes determine the category, display name, and description of the option, respectively.  
+## 專案和設定屬性的屬性和配置。  
+ <xref:System.ComponentModel.CategoryAttribute>, ，<xref:System.ComponentModel.DisplayNameAttribute>, ，和 <xref:System.ComponentModel.DescriptionAttribute> 屬性會決定配置、 標記、 和一般屬性頁面中的專案和設定屬性的描述。 這些屬性決定的類別，分別顯示名稱和選項的描述。  
   
 > [!NOTE]
->  Equivalent attributes, SRCategory, LocDisplayName, and SRDescription, use string resources for localization and are defined in [MPF for Projects - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+>  對等的屬性、 SRCategory、 LocDisplayName 和 SRDescription，用於當地語系化字串資源，且已定義在 [專案\-Visual Studio 2013 的 MPF](http://mpfproj12.codeplex.com/)。  
   
- Consider the following code fragment:  
+ 請考慮下列程式碼片段：  
   
- [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)] [!code-csharp[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]  
+ [!code-vb[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/VisualBasic/support-for-project-and-configuration-properties_2.vb)]
+ [!code-cs[VSSDKSupportProjectConfigurationProperties#2](../../extensibility/internals/codesnippet/CSharp/support-for-project-and-configuration-properties_2.cs)]  
   
- The `MyConfigProp` configuration property appears on the configuration property page as **My Config Property** in the category, **My Category**. If the option is selected, the description, **My Description**, appears in the description panel.  
+ `MyConfigProp` 組態屬性會出現在組態屬性\] 頁面上，做為 **我的組態屬性** 在類別中， **My Category**。 如果選取此選項，則描述 **我描述**, ，會出現在 \[描述\] 面板。  
   
-## <a name="see-also"></a>See Also  
- [Adding and Removing Property Pages](../../extensibility/adding-and-removing-property-pages.md)   
- [Projects](../../extensibility/internals/projects.md)   
- [Template Directory Description (.Vsdir) Files](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)
+## 請參閱  
+ [不在建置︰ 逐步解說︰ 公開專案和組態屬性 \(C\#\)](http://msdn.microsoft.com/zh-tw/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [加入和移除屬性頁](../../extensibility/adding-and-removing-property-pages.md)   
+ [VSPackage 狀態](/visual-cpp/misc/vspackage-state)   
+ [專案](../../extensibility/internals/projects.md)   
+ [NIB：Visual Studio 範本](http://msdn.microsoft.com/zh-tw/141fccaa-d68f-4155-822b-27f35dd94041)   
+ [範本目錄描述 \(。Vsdir\) 檔案](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

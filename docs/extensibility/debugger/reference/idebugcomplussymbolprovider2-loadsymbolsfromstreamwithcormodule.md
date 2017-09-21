@@ -1,47 +1,30 @@
 ---
-title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-- LoadSymbolsFromStreamWithCorModule
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule"
+  - "LoadSymbolsFromStreamWithCorModule"
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7169980f7acead1bdc70845c33f611cd5ea17b4d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-Load debug symbols from a data stream given the **ICorDebugModule** object.  
+# IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+從指定的資料流載入偵錯符號 **ICorDebugModule** 物件。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```cpp#  
 HRESULT LoadSymbolsFromStreamWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -52,7 +35,7 @@ HRESULT LoadSymbolsFromStreamWithCorModule(
 );  
 ```  
   
-```csharp  
+```c#  
 int LoadSymbolsFromStreamWithCorModule(  
    uint    ulAppDomainID,  
    Guid    guidModule,  
@@ -63,32 +46,32 @@ int LoadSymbolsFromStreamWithCorModule(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- [in] Identifier of the application domain.  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ [in]模組的唯一識別碼。  
   
  `baseAddress`  
- [in] Base memory address.  
+ [in]基底的記憶體位址。  
   
  `pUnkMetadataImport`  
- [in] Object that contains the symbol metadata.  
+ [in]包含符號中繼資料的物件。  
   
  `pUnkCorDebugModule`  
- [in] Object that implements the [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).  
+ [in]實作物件 [ICorDebugModule 介面](ICorDebugModule%20Interface.xml)。  
   
  `pStream`  
- [in] Data stream that contains the debug symbols to load.  
+ [in]包含要載入的偵錯符號的資料流。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -158,5 +141,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

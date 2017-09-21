@@ -1,100 +1,78 @@
 ---
-title: Adding Command-Line Switches | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- command-line switches, adding
-- command-line switches, retrieving
-- IVsAppCommandLine::GetOption method
-- command line, switches
+title: "加入命令列參數 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "新增的命令列參數"
+  - "擷取的命令列參數"
+  - "IVsAppCommandLine::GetOption 方法"
+  - "命令列參數"
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 caps.latest.revision: 21
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d7fc73fd531382f90e710fa029b90b93b6055eeb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
-# <a name="adding-command-line-switches"></a>Adding Command-Line Switches
-You can add command-line switches that apply to your VSPackage when devenv.exe is executed. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> to declare the name of the switch and its properties. In this example, the MySwitch switch is added for a subclass of VSPackage named **AddCommandSwitchPackage** with no arguments and with the VSPackage loaded automatically.  
+# 加入命令列參數
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以新增命令列參數的 devenv.exe 執行時，套用到 VSPackage。 使用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 來宣告的參數和它的屬性名稱。 在此範例中，加入名為 VSPackage 的子類別 myswitch 之交換器 **AddCommandSwitchPackage** 與任何引數和自動載入 VSPackage。  
   
-```csharp  
+```c#  
 [ProvideAppCommandLine("MySwitch", typeof(AddCommandSwitchPackage), Arguments = "0", DemandLoad = 1)]  
 ```  
   
- The named parameters are shown in the following table  
+ 下表中顯示的具名的參數  
   
- Arguments  
- The number of arguments for the switch. Can be "*", or a list of arguments.  
+ 引數  
+ 參數的引數數目。 可以是"\*"，或引數清單。  
   
  DemandLoad  
- Load the VSPackage automatically if this is set to 1, otherwise set to 0.  
+ 如果這設定為 1，否則設為 0，會自動載入 VSPackage。  
   
  HelpString  
- The help string or resource ID of the string to display with **devenv /?**.  
+ 說明字串或資源識別碼的字串來顯示具有 **devenv \/?**。  
   
- Name  
- The switch.  
+ 名稱  
+ 此參數。  
   
  PackageGuid  
- The GUID of the package.  
+ 封裝的 GUID。  
   
- The first value of Arguments is usually 0 or 1. A special value of '*' can be used to indicate that the entire remainder of the command line is the argument. This can be useful for debugging scenarios where a user must pass in a debugger command string.  
+ 第一個引數的值通常是 0 或 1。 特殊值為 ' \*' 可用來表示整個的其餘部分的命令列引數。 這可用於偵錯狀況下，使用者必須經過偵錯工具命令字串。  
   
- The DemandLoad value is either `true` (1) or `false` (0) indicates that the VSPackage should be loaded automatically.  
+ DemandLoad 值 `true` \(1\) 或 `false` \(0\) 表示應自動載入 VSPackage。  
   
- The HelpString value is the resource ID of the string that appears in the devenv /?Help display. This value should be in the form "#nnn" where nnn is an integer. The string value in the resource file should end in a new line character.  
+ HelpString 值會出現在 devenv 中字串的資源識別碼 \/?顯示 \[說明。 這個值應該是格式"\#nnn"其中 nnn 是整數。 資源檔中的字串值應該結束新行字元。  
   
- The Name value is the name of the switch.  
+ 名稱值是參數的名稱。  
   
- The PackageGuid value is the GUID of the package that implements this switch. The IDE uses this GUID to find the VSPackage in the registry to which the command-line switch applies.  
+ PackageGuid 值是可實作這個參數封裝的 GUID。 IDE 會使用此 GUID，在命令列參數適用於的登錄中尋找 VSPackage。  
   
-## <a name="retrieving-command-line-switches"></a>Retrieving Command-Line Switches  
- When your package is loaded, you can retrieve the command-line switches by completing the following steps.  
+## 擷取命令列參數  
+ 當載入封裝時，您可以藉由完成下列步驟來擷取命令列參數。  
   
-1.  In your VSPackage's <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementation, call `QueryService` on <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> to get the <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> interface.  
+1.  在您的 VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 實作中，呼叫 `QueryService` 上 <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> 取得 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> 介面。  
   
-2.  Call <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> to retrieve the command-line switches that the user entered.  
+2.  呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine.GetOption%2A> 來擷取使用者輸入的命令列參數。  
   
- The following code shows how to find out whether the MySwitch command-line switch was entered by the user:  
+ 下列程式碼顯示如何找出是否 myswitch 之命令列參數中所輸入的使用者:  
   
-```csharp  
-IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine));  
-  
-int isPresent = 0;  
-string optionValue = "";  
-  
-cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
+```c#  
+IVsAppCommandLine cmdline = (IVsAppCommandLine)GetService(typeof(SVsAppCommandLine)); int isPresent = 0; string optionValue = ""; cmdline.GetOption("MySwitch", out isPresent, out optionValue);  
 ```  
   
- It is your responsibility to check for your command-line switches each time your package is loaded.  
+ 您必須負責每次載入封裝時檢查命令列參數。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>   
- [Devenv Command Line Switches](../ide/reference/devenv-command-line-switches.md)   
- [CreatePkgDef Utility](../extensibility/internals/createpkgdef-utility.md)   
- [.Pkgdef Files](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
+ [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
+ [CreatePkgDef 公用程式](../extensibility/internals/createpkgdef-utility.md)   
+ [.Pkgdef 檔案](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

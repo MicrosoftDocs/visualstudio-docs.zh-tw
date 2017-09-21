@@ -1,71 +1,54 @@
 ---
-title: IDebugGenericParamField::GetIndex | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugGenericParamField::GetIndex
+title: "IDebugGenericParamField::GetIndex | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugGenericParamField::GetIndex"
 ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8c0a178fde278c29c0e7c1d8dffe67ff50a063ac
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
-Retrieves the index of this generic parameter.  
+# IDebugGenericParamField::GetIndex
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取這個泛用參數的索引。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetIndex(  
-   DWORD* pIndex  
+   DWORD* pIndex  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetIndex(  
-   out uint pIndex  
+   out uint pIndex  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pIndex`  
- [out] Index value of this generic parameter.  
+ \[\] out此泛型參數的索引值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- For example, for Dictionary(K,V), K is index 0, V is index 1.  
+## 備註  
+ 比方說，如 Dictionary\(K,V\)，k 是索引為 0，v 為索引 1。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugGenericParamFieldType** object that exposes the [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugGenericParamFieldType::GetIndex(DWORD* pIndex)  
 {  
     HRESULT hr = S_OK;  
@@ -83,5 +66,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

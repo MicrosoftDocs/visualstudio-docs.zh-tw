@@ -20,8 +20,8 @@ helpviewer_keywords:
 - IntelliTrace
 ms.assetid: 4bd80d2f-f680-4bf4-81c3-f14e8185f6a4
 caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

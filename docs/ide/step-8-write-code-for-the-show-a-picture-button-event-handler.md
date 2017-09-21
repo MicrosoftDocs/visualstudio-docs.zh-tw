@@ -1,5 +1,5 @@
 ---
-title: 'Step 8: Write Code for the Show a Picture Button Event Handler | Microsoft Docs'
+title: "步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -27,95 +27,95 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 52bd309ce320c3fbce265a3906a2606a3f10157d
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
+ms.openlocfilehash: 7e062ca977a85416d2e0bf0b7c2cef46b8f93cce
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 05/13/2017
 
 ---
-# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Step 8: Write Code for the Show a Picture Button Event Handler
-In this step, you make the **Show a picture** button work like this:  
+# <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼
+在這個步驟中，您會將 [顯示圖片] 按鈕變成如下的運作方式：  
   
--   When a user chooses that button, the program opens an **Open File** dialog box.  
+-   當使用者選擇該按鈕時，程式會開啟 [開啟檔案] 對話方塊。  
   
--   If a user opens a picture file, the program shows that picture in the PictureBox.  
+-   如果使用者開啟圖片檔案，程式會在 PictureBox 中顯示該圖片。  
   
- The IDE has a powerful tool called IntelliSense that helps you write code. As you enter code, the IDE opens a box with suggested completions for partial words that you enter. It tries to determine what you want to do next, and automatically jumps to the last item you choose from the list. You can use the up or down arrows to move in the list, or you can keep typing letters to narrow the choices. When you see the choice you want, choose the TAB key to select it. Or, you can ignore the suggestions, if not needed.  
+ IDE 提供一個功能強大的工具，稱為 IntelliSense，可幫助您撰寫程式碼。 當您輸入程式碼時，IDE 會根據您輸入的局部文字，開啟方塊來提供建議的完整程式碼。 它會嘗試判斷您接下來想要怎麼做，然後自動跳至您從清單中選擇的最後一個項目。 您可以利用向上或向下箭號在清單中移動，也可以繼續輸入字母來縮小選項範圍。 當您看到想要的選項時，選擇 TAB 鍵加以選取。 或者，如果不需要的話，您也可以忽略建議。  
   
- ![link to video](../data-tools/media/playvideo.gif "PlayVideo")For a video version of this topic, see [Tutorial 1: Create a Picture Viewer in Visual Basic - Video 4](http://go.microsoft.com/fwlink/?LinkId=205215) or [Tutorial 1: Create a Picture Viewer in C# - Video 4](http://go.microsoft.com/fwlink/?LinkId=205203). These videos use an earlier version of Visual Studio, so there are slight differences in some menu commands and other user interface elements. However, the concepts and procedures work similarly in the current version of Visual Studio.  
+ ![影片連結](~/data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205215) 或[教學課程 1：在 C# 中建立圖片檢視器 - 影片 4](http://go.microsoft.com/fwlink/?LinkId=205203)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
   
-### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>To write code for the Show a picture button event handler  
+### <a name="to-write-code-for-the-show-a-picture-button-event-handler"></a>若要為顯示圖片按鈕事件處理常式撰寫程式碼  
   
-1.  Go to Windows Forms Designer and double-click the **Show a picture** button. The IDE immediately goes to the code designer and moves your cursor so it's inside the `showButton_Click()` method that you added previously.  
+1.  移至 [Windows Forms 設計工具]，然後按兩下 [顯示圖片] 按鈕。 IDE 會立即移至程式碼設計工具，並將游標移至您先前加入的 `showButton_Click()` 方法內。  
   
-2.  Type an `i` on the empty line between the two braces { }. (In Visual Basic, type on the empty line between Private Sub... and End Sub.) An **IntelliSense** window opens, as shown in the following picture.  
+2.  在兩個大括弧 { } 中間的空白行上鍵入 `i` (在 Visual Basic 中，請在 Private Sub... 與 End Sub 中間的空白行上鍵入)。[IntelliSense] 視窗隨即開啟，如下圖所示。  
   
-     ![IntelliSense with Visual C&#35; code](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
-IntelliSense with Visual C# code  
+     ![包含 Visual C&#35; 程式碼的 IntelliSense](../ide/media/express_ifintellisense.png "Express_IfIntellisense")  
+包含 Visual C# 程式碼的 IntelliSense  
   
-3.  The **IntelliSense** window should be highlighting the word **if**. (If not, enter a lowercase `f`, and it will.) Notice how a little *tooltip* box next to the **IntelliSense** window appears with the description, **Code snippet for if statement**. (In Visual Basic, the tooltip also states that this is a snippet, but with slightly different wording.) You want to use that snippet, so choose the TAB key to insert **if** into your code. Then choose the TAB key again to use the **if** snippet. (If you chose somewhere else and your **IntelliSense** window disappeared, backspace over the **i** and retype it, and the **IntelliSense** window opens again.)  
+3.  [IntelliSense] 視窗應該會反白顯示 **if** 這個字 (如果沒有，請輸入小寫 `f`，這樣就會反白顯示)。請注意 [IntelliSense] 視窗旁邊很小的「工具提示」方塊，如何顯示描述 [if 陳述式的程式碼片段]。 (在 Visual Basic 中，該工具提示也會指出這是程式碼片段，只是說法稍微不同)。您要使用該程式碼片段，因此選擇 TAB 鍵將 **if** 插入至程式碼。 然後再次選擇 TAB 鍵，使用 **if** 程式碼片段 (如果您選擇其他位置造成 [IntelliSense] 視窗消失，請按退格鍵刪除 **i** 並重新鍵入，[IntelliSense] 視窗就會再次開啟)。  
   
-     ![Visual C&#35; code](../ide/media/express_highlighttrue.png "Express_HighlightTrue")  
-Visual C# code  
+     ![Visual C&#35; 程式碼](~/ide/media/express_highlighttrue.png "Express_HighlightTrue")  
+Visual C# 程式碼  
   
-4.  Next, you use IntelliSense to enter more code to open an **Open File** dialog box. If the user chose the **OK** button, the PictureBox loads the file that the user selected. The following steps show how to enter the code, and although it's numerous steps, it's just a few keystrokes:  
+4.  接下來，您使用 IntelliSense 輸入更多程式碼，以開啟 [開啟檔案] 對話方塊。 如果使用者選擇 [確定] 按鈕，則 PictureBox 會載入使用者選取的檔案。 下列步驟顯示如何輸入程式碼，雖然步驟很多，但也只是輸入幾個按鍵而已。  
   
-    1.  Start with the selected text **true** in the snippet. Type `op` to overwrite it. (In Visual Basic, you start with an initial cap, so type `Op`.)  
+    1.  從程式碼片段中選取的文字 **true** 開始。 鍵入 `op` 覆寫它 (在 Visual Basic 中，開頭是大寫，因此請鍵入 `Op`)。  
   
-    2.  The **IntelliSense** window opens and displays **openFileDialog1**. Choose the TAB key to select it. (In Visual Basic, it starts with an initial cap, so you see **OpenFileDialog1**. Ensure that **OpenFileDialog1** is selected.)  
+    2.  [IntelliSense] 視窗隨即開啟並顯示 [openFileDialog1]。 選擇 TAB 鍵加以選取。 (在 Visual Basic 中，它的開頭是大寫，因此您會看到 [OpenFileDialog1]。 確定已選取 [OpenFileDialog1])。  
   
-         To learn more about `OpenFileDialog`, see [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx).  
+         若要深入了解 `OpenFileDialog`，請參閱 [OpenFileDialog](http://msdn.microsoft.com/library/system.windows.forms.openfiledialog.aspx)。  
   
-    3.  Type a period (`.`) (Many programmers call this a dot.) Because you typed a dot right after **openFileDialog1**, an **IntelliSense** window opens, filled in with all of the **OpenFileDialog** component's properties and methods. These are the same properties that appear in the **Properties** window when you choose it in Windows Forms Designer. You can also choose methods that tell the component to do things (like open a dialog box).  
-  
-        > [!NOTE]
-        >  The **IntelliSense** window can show you both properties and methods. To determine what is being shown, look at the icon on the left side of each item in the **IntelliSense** window. You see a picture of a block next to each method, and a picture of a wrench (or spanner) next to each property. There's also a lightning bolt icon next to each event. These pictures display as follows.  
-  
-         ![Method icon](../ide/media/express_iconmethod.png "Express_IconMethod")  
-Method icon  
-  
-         ![Property icon](../ide/media/express_iconproperty.png "Express_IconProperty")  
-Property icon  
-  
-         ![Event icon](../ide/media/express_iconevent.png "Express_IconEvent")  
-Event icon  
-  
-    4.  Start to type `ShowDialog` (capitalization is unimportant to IntelliSense). The `ShowDialog()` method will show the **Open File** dialog box. After the window has highlighted **ShowDialog**, choose the TAB key. You can also highlight "ShowDialog" and choose the F1 key to get help for it.  
-  
-         To learn more about the `ShowDialog()` method, see [ShowDialog Method](http://msdn.microsoft.com/library/c7ykbedk.aspx).  
-  
-    5.  When you use a method on a control or a component (referred to as *calling a method*), you need to add parentheses. So enter opening and closing parentheses immediately after the "g" in `ShowDialog`: `()` It should now look like "openFileDialog1.ShowDialog()".  
+    3.  鍵入句號 (`.`) (許多程式設計人員會說是一個點)。因為您在 **openFileDialog1** 後面鍵入一個點，所以 [IntelliSense] 視窗隨即開啟並填入 **OpenFileDialog** 元件的所有屬性和方法。 當您在 [Windows Forms 設計工具] 中選擇該元件時，[屬性] 視窗中也會顯示相同的屬性。 您也可以選擇指示元件執行動作 (例如開啟對話方塊) 的方法。  
   
         > [!NOTE]
-        >  Methods are an important part of any program, and this tutorial has shown several ways to use methods. You can call a component's method to tell it to do something, like how you called the **OpenFileDialog** component's `ShowDialog()` method. You can create your own methods to make your program do things, like the one you're building now, called the `showButton_Click()` method, which opens a dialog box and a picture when a user chooses a button.  
+        >  [IntelliSense] 視窗可以同時顯示屬性和方法。 若要判斷顯示的內容，請查看 [IntelliSense] 視窗中每個項目左方的圖示。 您在每個方法旁邊會看到方塊圖片，而在每個屬性旁邊會看到扳手 (或扳鉗) 的圖片。 每一個事件旁邊也會出現閃電圖示。 這些圖片如下所示。  
   
-    6.  For Visual C#, add a space, and then add two equal signs (`==`). For Visual Basic, add a space, and then use a single equal sign (`=`). (Visual C# and Visual Basic use different equality operators.)  
+         ![方法圖示](~/ide/media/express_iconmethod.png "Express_IconMethod")  
+方法圖示  
   
-    7.  Add another space. As soon as you do, another **IntelliSense** window opens. Start to type `DialogResult` and choose the TAB key to add it.  
+         ![屬性圖示](~/ide/media/express_iconproperty.png "Express_IconProperty")  
+屬性圖示  
+  
+         ![事件圖示](~/ide/media/express_iconevent.png "Express_IconEvent")  
+事件圖示  
+  
+    4.  開始鍵入 `ShowDialog` (大小寫對 IntelliSense 而言不重要)。 `ShowDialog()` 方法會顯示 [開啟檔案] 對話方塊。 視窗反白顯示 **ShowDialog** 後，請選擇 TAB 鍵。 您也可以反白顯示 "ShowDialog" 並選擇 F1 鍵以取得其說明。  
+  
+         若要深入了解 `ShowDialog()` 方法，請參閱 [ShowDialog 方法](http://msdn.microsoft.com/library/c7ykbedk.aspx)。  
+  
+    5.  當您在控制項或元件上使用方法時 (稱為「呼叫方法」)，需要新增括號。 因此，在 `ShowDialog` 中緊接 "g" 之後輸入左括弧和右括弧：`()`。現在這應該看起來像 "openFileDialog1.ShowDialog()"。  
   
         > [!NOTE]
-        >  When you write code to call a method, sometimes it returns a value. In this case, the **OpenFileDialog** component's `ShowDialog()` method returns a DialogResult value. DialogResult is a special value that tells you what happened in a dialog box. An **OpenFileDialog** component can result in the user choosing **OK** or **Cancel**, so its `ShowDialog()` method returns either DialogResult.OK or DialogResult.Cancel.  
+        >  方法在任何程式中都很重要，本教學課程已展示幾種使用方法的做法。 您可以呼叫元件的方法來指示元件執行動作，就像您呼叫 **OpenFileDialog** 元件的 `ShowDialog()` 方法一樣。 您可以建立自己的方法來指示程式執行動作，例如您正在建置名為 `showButton_Click()` 的方法，當使用者選擇按鈕時，就會開啟對話方塊和圖片。  
   
-    8.  Type a dot to open the DialogResult value **IntelliSense** window. Enter the letter `O` and choose the TAB key to insert **OK**.  
+    6.  在 Visual C# 中，新增空格，然後新增兩個等號 (`==`)。 在 Visual Basic 中，新增空格，然後使用單一等號 (`=`) (Visual C# 和 Visual Basic 使用不同的相等運算子)。  
   
-         To learn more about `DialogResult`, see [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx).  
+    7.  加入另一個空格。 這樣做之後，另一個 [IntelliSense] 視窗會隨即開啟。 開始鍵入 `DialogResult`，並選擇 TAB 鍵將其新增。  
   
         > [!NOTE]
-        >  The first line of code should be complete. For Visual C#, it should be the following.  
+        >  當您撰寫程式碼來呼叫方法時，有時會傳回一個值。 在這個案例中，**OpenFileDialog** 元件的 `ShowDialog()` 方法會傳回 DialogResult 值。 DialogResult 是特殊值，可讓您得知對話方塊中發生的情形。 **OpenFileDialog** 元件可讓使用者選擇 [確定] 或 [取消]，因此其 `ShowDialog()` 方法會傳回 DialogResult.OK 或 DialogResult.Cancel。  
+  
+    8.  鍵入一個點來開啟 DialogResult 值 [IntelliSense] 視窗。 輸入字母 `O`，然後選擇 TAB 鍵插入 **OK**。  
+  
+         若要深入了解 `DialogResult`，請參閱 [DialogResult](http://msdn.microsoft.com/library/system.windows.forms.dialogresult.aspx)。  
+  
+        > [!NOTE]
+        >  第一行程式碼應該就完成。 在 Visual C# 中，程式碼應該如下所示。  
         >   
         >  `if (openFileDialog1.ShowDialog() == DialogResult.OK)`  
         >   
-        >  For Visual Basic, it should be the following.  
+        >  在 Visual Basic 中，程式碼應該如下所示。  
         >   
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`  
   
-    9. Now add one more line of code. You can type it (or copy and paste it), but consider using IntelliSense to add it. The more familiar you are with IntelliSense, the more quickly you can write your own code. Your final `showButton_Click()` method looks like the following. (Choose the **VB** tab to view the Visual Basic version of the code.)  
+    9. 現在再加入另一行程式碼。 您可以直接輸入它 (或複製並貼上)，但建議使用 IntelliSense 來加入它。 只要愈熟悉 IntelliSense，您自己撰寫程式碼的速度就會愈快。 最終的 `showButton_Click()` 方法看起來如下。 (選擇 [VB] 索引標籤以檢視 Visual Basic 版本的程式碼)。  
   
-         [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]   [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
+         [!code-cs[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]   [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+### <a name="to-continue-or-review"></a>繼續或檢視  
   
--   To go to the next tutorial step, see [Step 9: Review, Comment, and Test Your Code](../ide/step-9-review-comment-and-test-your-code.md).  
+-   若要移到下一個教學課程步驟，請參閱[步驟 9：檢閱、註解和測試您的程式碼](../ide/step-9-review-comment-and-test-your-code.md)。  
   
--   To return to the previous tutorial step, see [Step 7: Add Dialog Components to Your Form](../ide/step-7-add-dialog-components-to-your-form.md).
+-   若要返回上一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。

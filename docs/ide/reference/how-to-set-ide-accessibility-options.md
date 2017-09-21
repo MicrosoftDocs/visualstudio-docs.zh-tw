@@ -1,7 +1,7 @@
 ---
-title: 'How to: Set IDE Accessibility Options | Microsoft Docs'
+title: "如何：設定 IDE 協助工具選項 | Microsoft Docs"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -11,110 +11,121 @@ ms.topic: article
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
+caps.latest.revision: 21
 author: kempb
-ms.author: tglee
+ms.author: kempb
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 0bf8db1f5cd1d163edffc7f3673d5b74c40ef8ec
+translation.priority.ht:
+- cs-cz
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- pl-pl
+- pt-br
+- ru-ru
+- tr-tr
+- zh-cn
+- zh-tw
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
+ms.openlocfilehash: e55dee12df295fe794cad089a84897e36a90a1c8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/23/2017
+ms.lasthandoff: 05/24/2017
 
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>How to: Set IDE Accessibility Options
-> [!TIP]
-> To learn more about recent accessibility updates, see the [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) blog post.
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contains features that make it easier for people who have low vision to read and for people who have limited dexterity to write. These features include changing the size and color of text in editors, changing the size of text and buttons on toolbars, and auto-completion for methods and parameters, to name a few.  
-
- In addition, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] supports Dvorak keyboard layouts, which make the most frequently typed characters more accessible. You can also customize the default shortcut keys available with [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. For more information, see [Identifying and Customizing Keyboard Shortcuts](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
-
+# <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含功能，可讓視力障礙人士更容易閱讀，讓靈活度有限的人士更容易書寫。 這些功能包括在編輯器中變更文字的大小和色彩、變更工具列上的文字和按鈕大小，和自動完成方法及參數等等。  
+  
+ 此外，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支援 Dvorak 鍵盤配置，這會讓最常鍵入的字元更容易存取。 您也可以自訂 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供的預設快速鍵。 如需詳細資訊，請參閱[識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
+  
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../../ide/personalizing-the-visual-studio-ide.md).  
-
-## <a name="editors-dialogs-and-tool-windows"></a>Editors, Dialogs, and Tool Windows  
- By default, dialog boxes and tool windows in [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] use the same font size and colors as the operating system. The color settings for the frame of the IDE, dialog boxes, toolbars, and tool windows are based a color scheme: light or dark. You can change the current color theme in the [General, Environment, Options Dialog Box](../../ide/reference/general-environment-options-dialog-box.md).  
-
- You can also display pop-up windows in the Code view of the editor. These windows can prompt you with available members on the current object and the parameters to complete a function or statement. These windows can be helpful if you have difficulty typing. However, they interfere with focus in the code editor, which can be problematic for some users. You can turn off these windows by opening the Options dialog box and clearing **Auto list members** and **Parameter information** in the **Text Editor**, **All Languages**, **General** page in the **Options** dialog box. For more information, see [How to: Set General Editor Options](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
-
- You can rearrange the windows in the integrated development environment (IDE) to best suit the way you work. You can dock, float, hide, or automatically hide each tool window.  
-
- For more information about how to change window layouts, see [Customizing window layouts](../../ide/customizing-window-layouts-in-visual-studio.md).  
-
-### <a name="changing-the-size-of-text"></a>Changing the Size of Text  
- You can change the settings for text-based tool windows, such as the **Command** window, **Immediate** window, and **Output** window, in the **Fonts and Colors** pane of the **Environment** options in the **Tools** dialog box. When **[All Text Tool Windows]** is selected in the **Show settings for** drop-down list, the default setting is listed as **Default** in the **Item foreground** and **Item background** drop-down lists. You can also change the settings for how text is displayed in the editor.  
-
-##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>To change the size of text in text-based tool windows and editors  
-
-1.  From the **Tools** menu, choose **Options**.  
-
-2.  Choose **Fonts and Colors** on the **Environment** folder.  
-
-3.  Select an option on the **Show settings for** drop-down menu.  
-
-     To change the font size for text in an editor, choose **Text Editor**.  
-
-     To change the font size for text in text-based tool windows, choose **[All Text Tool Windows]**.  
-
-     To change the font size for ToolTip text in an editor, choose **Editor Tooltip**.  
-
-     To change the font size for text in statement completion pop-ups, choose **Statement Completion**.  
-
-4.  From **Display items**, select **Plain Text**.  
-
-5.  In **Font**, select a new font type.  
-
-6.  In **Size**, select a new font size.  
-
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
+  
+## <a name="editors-dialogs-and-tool-windows"></a>編輯器、對話方塊和工具視窗  
+ 根據預設，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的對話方塊和工具視窗使用與作業系統相同的字型大小和色彩。 IDE 框架、對話方塊、工具列和工具視窗的色彩設定，是以色彩配置為基礎：淡或暗。 您可以在[一般、環境、選項對話方塊](../../ide/reference/general-environment-options-dialog-box.md)變更目前的色彩佈景主題。  
+  
+ 您也可以在編輯器的 [程式碼] 檢視中顯示快顯視窗。 這些視窗可以提示您目前物件上的可用成員和參數，以便完成函式或陳述式。 如果您不方便鍵入，這些視窗會很有用。 不過，它們會干擾程式碼編輯器中的焦點，可能會對某些使用者造成問題。 您可以關閉這些視窗，方法是開啟 [選項] 對話方塊，並在 [選項] 對話方塊的 [文字編輯器]、[所有語言]、[一般] 頁面中，清除 [自動列出成員] 和 [參數資訊]。 如需詳細資訊，請參閱[如何：設定一般編輯器選項](http://msdn.microsoft.com/en-us/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)。  
+  
+ 您可以在整合式開發環境 (IDE) 中重新排列視窗，以符合您的工作方式。 您可以停駐、浮動、隱藏或自動隱藏每個工具視窗。  
+  
+ 如需如何變更視窗配置的詳細資訊，請參閱[自訂視窗配置](../../ide/customizing-window-layouts-in-visual-studio.md)。  
+  
+### <a name="changing-the-size-of-text"></a>變更文字大小  
+ 您可以為以文字為基礎的工具視窗變更設定，例如 [命令] 視窗、[即時運算] 視窗，和 [輸出] 視窗，請使用 [工具] 對話方塊的 [環境] 選項中的 [字型和色彩] 窗格。 在 [顯示設定] 下拉式清單中選取 [所有文字工具視窗] 時，預設值會列為 [項目前景] 和 [項目背景] 下拉式清單中的 [預設]。 您也可以在編輯器中變更文字顯示方式的設定。  
+  
+##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>變更以文字為基礎的工具視窗和編輯器中的文字大小  
+  
+1.  從 [工具]  功能表選擇 [選項] 。  
+  
+2.  在 [環境] 資料夾上選擇 [字型和色彩]。  
+  
+3.  在 [顯示設定] 下拉式功能表上選取選項。  
+  
+     若要變更編輯器中文字的字型大小，請選擇 [文字編輯器]。  
+  
+     若要變更以文字為基礎之工具視窗中的文字字型大小，請選擇 [所有文字工具視窗]。  
+  
+     若要變更編輯器中工具提示文字的字型大小，請選擇 [編輯器工具提示]。  
+  
+     若要變更陳述式完成快顯視窗中文字的字型大小，請選擇 [陳述式完成]。  
+  
+4.  從 [顯示項目]，選取 [純文字]。  
+  
+5.  在 [字型] 中，選取新的字型類型。  
+  
+6.  在 [大小] 中，選取新的字型大小。  
+  
     > [!NOTE]
-    >  To reset the text size for text-based tool windows and editors, choose **Use Defaults**.  
-
-7.  Choose **OK**.  
-
-### <a name="changing-the-colors-used-in-the-ide"></a>Changing the Colors used in the IDE  
- You can also choose to change the default colors for text, margin indicators, white space, and code elements in the editor.  
-
+    >  若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。  
+  
+7.  選擇 [ **確定**]。  
+  
+### <a name="changing-the-colors-used-in-the-ide"></a>變更 IDE 中使用的色彩  
+ 您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。  
+  
 > [!NOTE]
->  To use high contrast colors for all application windows on your operating system, press Left **ALT+**Left **SHIFT+PRINT SCREEN**. If [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] is open, close and reopen [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] to fully implement high contrast colors.  
-
-##### <a name="to-change-the-color-of-items-in-the-editor"></a>To change the color of items in the editor  
-
-1.  From the **Tools** menu, choose **Options**.  
-
-2.  Choose **Fonts and Colors** from the **Environment** folder.  
-
-3.  In **Show settings for**, choose **Text Editor**.  
-
-4.  From **Display items**, select an item whose display you need to change, such as **Plain Text**, **Indicator Margin**, **Visible White Space**, **HTML Attribute Name**, or **XML Attribute**.  
-
-5.  Select display settings from the following options: **Item foreground**, **Item background**, and **Bold**.  
-
-6.  Choose **OK**.  
-
-## <a name="toolbars"></a>Toolbars  
- To improve toolbar usability and accessibility, you can add text to toolbar buttons.  
-
-#### <a name="to-assign-text-to-toolbar-buttons"></a>To assign text to toolbar buttons  
-
-1.  From the **Tools** menu, choose **Customize**.  
-
-2.  In the **Customize** dialog box, select the **Commands** tab.  
-
-3.  Select **Toolbar** and then choose the toolbar name that contains the button you intend to display text for.  
-
-4.  In the list, select the command you intend to change.  
-
-5.  Choose **Modify Selection**.  
-
-6.  Choose **Image and Text**.  
-
-#### <a name="to-modify-the-buttons-displayed-text"></a>To modify the button's displayed text  
-
-1.  Re-select **Modify Selection**.  
-
-2.  Adjacent to In **Name**, insert provide a new caption for the selected button.  
-
-## <a name="see-also"></a>See Also  
- [Accessibility Features of Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   
- [Resources for Designing Accessible Applications](../../ide/reference/resources-for-designing-accessible-applications.md)
-
+>  若要對您作業系統上的所有應用程式視窗使用高對比的色彩，請按左 **ALT+**左 **SHIFT+PRINT SCREEN**。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 已開啟，請關閉並重新開啟 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，完整實作高對比色彩。  
+  
+##### <a name="to-change-the-color-of-items-in-the-editor"></a>變更編輯器中項目的色彩  
+  
+1.  從 [工具]  功能表選擇 [選項] 。  
+  
+2.  從 [環境] 資料夾選擇 [字型和色彩]。  
+  
+3.  在 [顯示設定] 中，選擇 [文字編輯器]。  
+  
+4.  從 [顯示項目]，選取您要變更其顯示的項目，例如 [純文字]、[指示區邊界]、[可見的空白字元]、[HTML 屬性名稱] 或 [XML 屬性]。  
+  
+5.  從下列選項選取顯示設定：[項目前景]、[項目背景] 和 [粗體]。  
+  
+6.  選擇 [ **確定**]。  
+  
+## <a name="toolbars"></a>工具列  
+ 若要改善工具列的可用性和協助工具，您可以為工具列按鈕新增文字。  
+  
+#### <a name="to-assign-text-to-toolbar-buttons"></a>將文字指派給工具列按鈕  
+  
+1.  從 [工具] 功能表選擇 [自訂]。  
+  
+2.  在 [自訂] 對話方塊中，選取 [命令] 索引標籤。  
+  
+3.  選取 [工具列]，然後選擇包含您想要顯示文字之按鈕的工具列名稱。  
+  
+4.  在清單中，選取您想要變更的命令。  
+  
+5.  選擇 [修改選取項目]。  
+  
+6.  選擇 [影像和文字]。  
+  
+#### <a name="to-modify-the-buttons-displayed-text"></a>修改按鈕的顯示文字  
+  
+1.  重新選取 [修改選取項目]。  
+  
+2.  在相鄰 [名稱] 處，提供選取按鈕的新標題。  
+  
+## <a name="see-also"></a>另請參閱  
+ [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)   
+ [設計可及性應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)

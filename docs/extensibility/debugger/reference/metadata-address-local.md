@@ -1,96 +1,79 @@
 ---
-title: METADATA_ADDRESS_LOCAL | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- METADATA_ADDRESS_LOCAL
-helpviewer_keywords:
-- METADATA_ADDRESS_LOCAL structure
+title: "METADATA_ADDRESS_LOCAL | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "METADATA_ADDRESS_LOCAL"
+helpviewer_keywords: 
+  - "METADATA_ADDRESS_LOCAL 結構"
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4ab3de98485fba8cd3761cbdce988b253f8884c8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
-This structure represents the address of a local variable within a scope (usually a function or method).  
+# METADATA_ADDRESS_LOCAL
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個結構是表示 \(通常是函式或方法\) 的範圍內的區域變數的位址。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_LOCAL {  
-   _mdToken  tokMethod;  
-   IUnknown* pLocal;  
-   DWORD     dwIndex;  
+   _mdToken  tokMethod;  
+   IUnknown* pLocal;  
+   DWORD     dwIndex;  
 } METADATA_ADDRESS_LOCAL;  
 ```  
   
-```csharp  
+```c#  
 public struct METADATA_ADDRESS_LOCAL {  
-   public int    tokMethod;  
-   public object pLocal;  
-   public uint   dwIndex;  
+   public int    tokMethod;  
+   public object pLocal;  
+   public uint   dwIndex;  
 }  
 ```  
   
-## <a name="terms"></a>Terms  
+## 詞彙  
  tokMethod  
- The ID of the method or function the local variable is part of.  
+ 方法或函式的 ID 區域變數是部份。  
   
- [C++] `_mdToken` is a `typedef` for a 32-bit `int`.  
+ \[C\+\+\]`_mdToken` is a `typedef` for a 32\-bit `int`.  
   
  pLocal  
- The token whose address this structure represents.  
+ 這個結構是表示其地址之語彙基元。  
   
  dwIndex  
- Can be the index of this local variable in the method or function, or some other value (language-specific).  
+ 可以是這個區域變數之方法或函式，或其他值 \(特定語言\) 的索引。  
   
-## <a name="remarks"></a>Remarks  
- This structure is part of the union in the [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) structure when the `dwKind` field of the `DEBUG_ADDRESS_UNION` structure is set to `ADDRESS_KIND_LOCAL` (a value from the [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeration).  
+## 備註  
+ 這個結構屬於等位中的[DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位的`DEBUG_ADDRESS_UNION`結構設定為 \[ `ADDRESS_KIND_LOCAL` \(介於[ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別\)。  
   
- `Warning:` [C++ only]  If `pLocal` is not null, then you must call `Release` on the token pointer (`addr` is a field in the [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) structure):  
+ `Warning:` \[只有 c \+ \+\]如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 \(`addr`是一個欄位，在[DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構\)：  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
 {  
-    addr.addr.addrLocal.pLocal->Release();  
+    addr.addr.addrLocal.pLocal->Release();  
 }  
 ```  
   
-## <a name="requirements"></a>Requirements  
- Header: sh.h  
+## 需求  
+ 標頭: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
- [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)
+## 請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
+ [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)

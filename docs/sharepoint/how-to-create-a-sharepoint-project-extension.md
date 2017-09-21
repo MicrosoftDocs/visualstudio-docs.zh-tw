@@ -18,8 +18,8 @@ helpviewer_keywords:
 - SharePoint projects, extending
 ms.assetid: ceecb9cb-4a5d-44c9-992f-9624737ac996
 caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

@@ -1,66 +1,49 @@
 ---
-title: IDebugEngine3::SetAllExceptions | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugEngine3::SetAllExceptions
-helpviewer_keywords:
-- IDebugEngine3::SetAllExceptions
+title: "IDebugEngine3::SetAllExceptions | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugEngine3::SetAllExceptions"
+helpviewer_keywords: 
+  - "IDebugEngine3::SetAllExceptions"
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 63873031c8a6acfbb24f51694b2d415998a6e220
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
-This method sets the state of all outstanding exceptions.  
+# IDebugEngine3::SetAllExceptions
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會設定所有未處理的例外狀況的狀態。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT SetAllExceptions(  
-   EXCEPTION_STATE dwState  
+HRESULT SetAllExceptions(  
+   EXCEPTION_STATE dwState  
 );  
 ```  
   
-```csharp  
+```c#  
 int SetAllExceptions(  
-   enum_EXCEPTION_STATE dwState  
+   enum_EXCEPTION_STATE dwState  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwState`  
- [in] One of the [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) values.  
+ \[in\]其中[EXCEPTION\_STATE](../../../extensibility/debugger/reference/exception-state.md)的值。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)   
- [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)
+ [EXCEPTION\_STATE](../../../extensibility/debugger/reference/exception-state.md)

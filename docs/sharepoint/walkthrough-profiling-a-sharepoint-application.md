@@ -19,8 +19,8 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 ms.assetid: 0b19d4b7-5fcc-42a2-b411-96eccd00137f
 caps.latest.revision: 16
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

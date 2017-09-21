@@ -9,6 +9,8 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - data [Visual Studio], saving
 - data [Visual Studio], TableAdapters
@@ -18,8 +20,8 @@ helpviewer_keywords:
 - saving data
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 caps.latest.revision: 15
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -37,10 +39,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 949c283d48d8d2fd7e3c3e1e54a814b175b28304
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: 01b4ce90aa021ba48a8f719cd6b3f58a59e028f8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Update data by using a TableAdapter
@@ -64,7 +66,7 @@ After the data in your dataset has been modified and validated, you can send the
   
 -   Enclose the TableAdapter's`Update` method in a `try`/`catch` block. The following example shows how to  update  the contents of the `Customers` table in `NorthwindDataSet` from within a `try`/`catch` block .  
   
-     [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]  [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
+     [!code-cs[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]  [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]  
   
 ## <a name="see-also"></a>See Also  
  [Save data back to the database](../data-tools/save-data-back-to-the-database.md)

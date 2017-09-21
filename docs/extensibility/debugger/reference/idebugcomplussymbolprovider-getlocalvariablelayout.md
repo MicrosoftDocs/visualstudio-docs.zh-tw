@@ -1,89 +1,72 @@
 ---
-title: IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- GetLocalVariablelayout
-- IDebugComPlusSymbolProvider::GetLocalVariablelayout
+title: "IDebugComPlusSymbolProvider::GetLocalVariablelayout | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "GetLocalVariablelayout"
+  - "IDebugComPlusSymbolProvider::GetLocalVariablelayout"
 ms.assetid: b7328d85-e5e9-4d9f-bcd1-e7711fd33878
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4776f56ea10c6b99cc59761139e9112d9a8780b2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-Retrieves the layout of local variables for a set of methods.  
+# IDebugComPlusSymbolProvider::GetLocalVariablelayout
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取的一組方法的區域變數的配置。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetLocalVariablelayout(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONG32   cMethods,  
-   _mdToken  rgMethodTokens[],  
-   IStream** pStreamLayout  
+   ULONG32   ulAppDomainID,  
+   GUID      guidModule,  
+   ULONG32   cMethods,  
+   _mdToken  rgMethodTokens[],  
+   IStream** pStreamLayout  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetLocalVariablelayout(  
-   uint        ulAppDomainID,  
-   Guid        guidModule,  
-   uint        cMethods,  
-   int[]       rgMethodTokens,  
-   out IStream pStreamLayout  
+   uint        ulAppDomainID,  
+   Guid        guidModule,  
+   uint        cMethods,  
+   int[]       rgMethodTokens,  
+   out IStream pStreamLayout  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ulAppDomainID`  
- [in] Identifier of the application domain.  
+ \[in\]應用程式定義域的識別項。  
   
  `guidModule`  
- [in] Unique identifier of the module.  
+ \[in\]模組的唯一的識別項。  
   
  `cMethods`  
- [in] Number of method tokens in the `rgMethodTokens` array.  
+ \[in\]方法的語彙基元在`rgMethodTokens`陣列。  
   
  `rgMethodTokens`  
- [in] Array of method tokens.  
+ \[in\]方法語彙基元的陣列。  
   
  `pStreamLayout`  
- [out] A text stream that contains the variable layout.  
+ \[\] out包含變數的版面配置的文字資料流。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetLocalVariablelayout(  
     ULONG32 ulAppDomainID,   
     GUID guidModule,   
@@ -128,5 +111,5 @@ HRESULT CDebugSymbolProvider::GetLocalVariablelayout(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

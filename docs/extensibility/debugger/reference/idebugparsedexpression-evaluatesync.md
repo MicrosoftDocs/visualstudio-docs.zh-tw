@@ -1,100 +1,83 @@
 ---
-title: IDebugParsedExpression::EvaluateSync | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugParsedExpression::EvaluateSync
-helpviewer_keywords:
-- IDebugParsedExpression::EvaluateSync method
+title: "IDebugParsedExpression::EvaluateSync | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugParsedExpression::EvaluateSync"
+helpviewer_keywords: 
+  - "IDebugParsedExpression::EvaluateSync 方法"
 ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5afd11ea876e30a16a1eedf3c7cc0968096ad8e7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
-This method evaluates the parsed expression and optionally casts the result to another data type.  
+# IDebugParsedExpression::EvaluateSync
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會剖析的運算式的評估，並選擇性地轉換到另一種資料類型的結果。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT EvaluateSync(   
-   DWORD                 dwEvalFlags,  
-   DWORD                 dwTimeout,  
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BSTR                  bstrResultType,  
-   IDebugProperty2**     ppResult  
+```cpp#  
+HRESULT EvaluateSync(   
+   DWORD                 dwEvalFlags,  
+   DWORD                 dwTimeout,  
+   IDebugSymbolProvider* pSymbolProvider,  
+   IDebugAddress*        pAddress,  
+   IDebugBinder*         pBinder,  
+   BSTR                  bstrResultType,  
+   IDebugProperty2**     ppResult  
 );  
 ```  
   
-```csharp  
+```c#  
 int EvaluateSync(  
-   uint                 dwEvalFlags,   
-   uint                 dwTimeout,   
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   string               bstrResultType,   
-   out IDebugProperty2  ppResult  
+   uint                 dwEvalFlags,   
+   uint                 dwTimeout,   
+   IDebugSymbolProvider pSymbolProvider,   
+   IDebugAddress        pAddress,   
+   IDebugBinder         pBinder,   
+   string               bstrResultType,   
+   out IDebugProperty2  ppResult  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwEvalFlags`  
- [in] A combination of [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) constants that control how the expression is to be evaluated.  
+ \[in\]結合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)的常數，控制要評估的運算式的方式。  
   
  `dwTimeout`  
- [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ \[in\]以毫秒為單位，這個方法傳回之前等待指定的最長的時間。  使用`INFINITE`無限期地等待。  
   
  `pSymbolProvider`  
- [in] The symbol provider, expressed as an [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) interface.  
+ \[in\]符號提供者，以表示[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)介面。  
   
  `pAddress`  
- [in] The current execution location within a method, expressed as an [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.  
+ \[in\]在方法中，以表示目前的執行位置[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
  `pBinder`  
- [in] The binder, expressed as an [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) interface.  
+ \[in\]繫結器，以表示[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面。  
   
  `bstrResultType`  
- [in] The type the result should be cast to. This argument can be a null value.  
+ \[in\]結果的型別必須可以轉換成。  此引數可以是 null 值。  
   
  `ppResult`  
- [out] Returns the [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface that represents the results of evaluation.  
+ \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)介面，表示評估的結果。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The expression evaluation context is given by `pAddress`, which makes it possible to determine the containing method and then use language scoping rules to determine the value of the symbols in the expression.  
+## 備註  
+ 運算式評估內容由提供 `pAddress`，因而可以判斷包含的方法，然後使用語言範圍規則來決定在運算式中的符號值。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

@@ -1,79 +1,62 @@
 ---
-title: AD_PROCESS_ID_TYPE | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- AD_PROCESS_ID_TYPE
-helpviewer_keywords:
-- AD_PROCESS_ID_TYPE enumeration
+title: "AD_PROCESS_ID_TYPE | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "AD_PROCESS_ID_TYPE"
+helpviewer_keywords: 
+  - "AD_PROCESS_ID_TYPE 列舉型別"
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
 caps.latest.revision: 6
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 694582e69e19f155842e13e5f23314aa244d72b4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 6
 ---
-# <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
-Specifies how to interpret a process ID in the [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure.  
+# AD_PROCESS_ID_TYPE
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+指定如何解譯在某個處理序識別碼[AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
+   AD_PROCESS_ID_SYSTEM = 0,  
+   AD_PROCESS_ID_GUID   = 1  
 };  
 typedef DWORD AD_PROCESS_ID_TYPE;  
 ```  
   
-```csharp  
+```c#  
 public enum enum_AD_PROCESS_ID {  
-   AD_PROCESS_ID_SYSTEM = 0,  
-   AD_PROCESS_ID_GUID   = 1  
+   AD_PROCESS_ID_SYSTEM = 0,  
+   AD_PROCESS_ID_GUID   = 1  
 };  
 ```  
   
-## <a name="members"></a>Members  
- AD_PROCESS_ID_SYSTEM  
- Process ID is a system identifier. Use the `ProcessId.dwProcessId` field of the [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure.  
+## Members  
+ AD\_PROCESS\_ID\_SYSTEM  
+ 處理程序識別碼是系統識別項。  使用`ProcessId.dwProcessId`欄位的[AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構。  
   
- AD_PROCESS_ID_GUID  
- Process ID is a GUID. Use the `ProcessId.guidProcessId` field of the `AD_PROCESS_ID` structure.  
+ AD\_PROCESS\_ID\_GUID  
+ 處理序 ID 是 GUID。  使用`ProcessId.guidProcessId`欄位的`AD_PROCESS_ID`結構。  
   
-## <a name="remarks"></a>Remarks  
- Used for the `ProcessIdType` member of the [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure to identify the type of process ID that is contained in the structure. Determines how to interpret the `ProcessId` union in the structure.  
+## 備註  
+ 用於`ProcessIdType`成員的[AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)結構來識別包含在結構中的處理序 ID 的型別。  決定如何解譯`ProcessId`結構中的聯集。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Enumerations](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md)
+## 請參閱  
+ [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [AD\_PROCESS\_ID](../../../extensibility/debugger/reference/ad-process-id.md)

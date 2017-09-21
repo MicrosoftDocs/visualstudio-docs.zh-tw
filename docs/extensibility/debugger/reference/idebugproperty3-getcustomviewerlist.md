@@ -1,90 +1,73 @@
 ---
-title: IDebugProperty3::GetCustomViewerList | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty3::GetCustomViewerList
-helpviewer_keywords:
-- IDebugProperty3::GetCustomViewerList
+title: "IDebugProperty3::GetCustomViewerList | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty3::GetCustomViewerList"
+helpviewer_keywords: 
+  - "IDebugProperty3::GetCustomViewerList"
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 084fad34ce3b6414506df23fb32777008f0f3302
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
-Gets a list of custom viewers associated with this property.  
+# IDebugProperty3::GetCustomViewerList
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得這個屬性相關聯的自訂檢視器的清單。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
-```csharp  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+```c#  
+int GetCustomViewerList(  
+   uint                  celtSkip,  
+   uint                  celtRequested,  
+   DEBUG_CUSTOM_VIEWER[] rgViewers,  
+   out uint              pceltFetched  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `celtSkip`  
- [in] The number of viewers to skip over.  
+ \[in\]略過的檢視器的數目而定。  
   
  `celtRequested`  
- [in] The number of viewers to retrieve (also specifies the size of the `rgViewers` array).  
+ \[in\]若要擷取的檢視器的數目 \(也會指定大小的`rgViewers`陣列\)。  
   
  `rgViewers`  
- [in, out] Array of [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures to be filled in.  
+ 輸入 \[、 輸出\]陣列的[DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構，以填入。  
   
  `pceltFetched`  
- [out] The actual number of viewers returned.  
+ \[\] out「 檢視器傳回實際數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- To support type visualizers, this method forwards the call to the [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) method. If the expression evaluator also supports custom viewers for this property's type, this method can append the appropriate custom viewers to the list.  
+## 備註  
+ 若要支援型別視覺化檢視，這個方法會傳送呼叫至[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)方法。  如果運算式評估工具也支援自訂的檢視器，這個屬性的型別，這個方法可以將適當的自訂檢閱者共處附加至清單。  
   
- See [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) for details on the differences between type visualizers and custom viewers.  
+ 請參閱[類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)如需詳細資訊，在型別視覺化檢視和自訂的檢視器之間的差異。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CProperty** object that exposes the [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CProperty** 物件，公開 \(expose\) [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)  
 {  
     if (NULL == prgViewers)  
@@ -103,8 +86,8 @@ STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested,
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
+ [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)   
- [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

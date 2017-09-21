@@ -1,68 +1,51 @@
 ---
-title: IDebugPortSupplierDescription2::GetDescription | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugPortSupplierDescription2::GetDescription
+title: "IDebugPortSupplierDescription2::GetDescription | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugPortSupplierDescription2::GetDescription"
 ms.assetid: bff5f536-1cd1-4313-8856-db7b05818305
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 675685e143078906623c3487ee4c108cd1d5fa87
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="idebugportsupplierdescription2getdescription"></a>IDebugPortSupplierDescription2::GetDescription
-Retrieves the description and description metadata for the port supplier.  
+# IDebugPortSupplierDescription2::GetDescription
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取連接埠提供者的說明和描述中繼資料。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT GetDescription(  
-   PORT_SUPPLIER_DESCRIPTION_FLAGS *pdwFlags,  
-   BSTR *pbstrText  
+   PORT_SUPPLIER_DESCRIPTION_FLAGS *pdwFlags,  
+   BSTR *pbstrText  
 );  
 ```  
   
-```csharp  
+```c#  
 public int GetDescription(  
-   out enum_PORT_SUPPLIER_DESCRIPTION_FLAGS pdwFlags,  
-   out string pbstrText  
+   out enum_PORT_SUPPLIER_DESCRIPTION_FLAGS pdwFlags,  
+   out string pbstrText  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pdwFlags`  
- [out] Metadata flags for the description.  
+ \[\] out描述中繼資料旗標。  
   
  `pbstrText`  
- [out] Description of the port supplier.  
+ \[\] out連接埠提供者的描述。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugPortSupplierDescription2](../../../extensibility/debugger/reference/idebugportsupplierdescription2.md)

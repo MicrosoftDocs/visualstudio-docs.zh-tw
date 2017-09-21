@@ -1,65 +1,48 @@
 ---
-title: Saving Data | Microsoft Docs
-ms.custom: 
-ms.date: 10/19/2016
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- DataRow.RowState
-- DataSet.GetChanges
-helpviewer_keywords:
-- DBDirect methods
-- updating data
-- data [Visual Studio], saving
-- TableAdapter DBDirect methods
-- databases, updating
-- TableAdapter.Update method
-- data [Visual Studio], updating
-- saving data
-- updating databases
+title: "儲存資料 | Microsoft Docs"
+ms.custom: ""
+ms.date: "12/14/2016"
+ms.prod: "visual-studio-dev14"
+ms.reviewer: ""
+ms.suite: ""
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "DataRow.RowState"
+  - "DataSet.GetChanges"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "aspx"
+helpviewer_keywords: 
+  - "資料 [Visual Studio], 儲存"
+  - "資料 [Visual Studio], 更新"
+  - "資料庫, 更新"
+  - "DBDirect 方法"
+  - "儲存資料"
+  - "TableAdapter DBDirect 方法"
+  - "TableAdapter.Update 方法"
+  - "更新資料"
+  - "更新資料庫"
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
 caps.latest.revision: 13
-author: gewarren
-ms.author: gewarren
-manager: ghogen
+caps.handback.revision: 13
+author: "mikeblome"
+ms.author: "mblome"
+manager: "ghogen"
 robots: noindex,nofollow
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: be46f7044ca55841ae2fbbfed2e9ea334e263134
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
 ---
-# <a name="saving-data"></a>Saving Data
-Saving data is the process of persisting changed data in an application's data model back to the original data store, typically a relational database such as SQL Server.  
+# 儲存資料
+儲存資料是將應用程式之資料模型中已變更的資料維持在原始資料存放區 \(通常是關聯式資料庫，例如 SQL Server\) 中的程序。  
   
- Updating a data source by means of a data model is typically a two-step process. The first step is to update the data model with new information — new records, changed records, or deleted records. The second step is to save the changes in your data model back to the database.  
+ 透過資料模型更新資料來源的程序一般需要兩個步驟。  第一個步驟是以新資訊 \(新增的記錄、變更的記錄或刪除的記錄\) 來更新資料模型。  第二個步驟是將您資料模型中的變更存回資料庫。  
   
- The following topics describe the concepts and tasks associated with saving data.  
+ 下列主題描述與儲存資料相關聯的概念和工作。  
   
-## <a name="related-topics"></a>Related Topics  
-[Save data back to the database](../data-tools/save-data-back-to-the-database.md)  
- Provides an overview of how changes are made in a dataset and how the dataset tracks information about changes in order to save those changes to a database.  
+## 相關主題  
+ [儲存資料集中的資料](../data-tools/save-data-back-to-the-database.md)  
+ 概述如何在資料集進行變更，以及資料集如何追蹤變更資訊，以將那些變更儲存至資料庫。  
   
-[How to: Add, Modify, and Delete Entities (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
-Shows how to create, update, and delete entity data in a data service.  
-  
-[How to: Execute Data Service Queries (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
-Shows how to query a data service from a data service application.  
-
+ [儲存實體資料](../data-tools/saving-entity-data.md)  
+ 描述如何在 [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md) 和 [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md)應用程式中儲存變更。

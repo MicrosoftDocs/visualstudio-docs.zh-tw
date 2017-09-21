@@ -1,78 +1,61 @@
 ---
-title: IDebugSettingsCallback2::EnumEEs | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- IDebugSettingsCallback2::EnumEEs
+title: "IDebugSettingsCallback2::EnumEEs | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "IDebugSettingsCallback2::EnumEEs"
 ms.assetid: 9f884c49-426f-461b-b547-9d909486e73f
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 352f465ead2af45be120a78b2bea025dd72892dd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
-Enumerates the available expression evaluators given the language and vendor identifiers.  
+# IDebugSettingsCallback2::EnumEEs
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+列舉給定語言和廠商的識別項使用的運算式評估工具。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 HRESULT EnumEEs(  
-   DWORD  celtBuffer,  
-   GUID*  rgguidLang,  
-   GUID*  rgguidVendor,  
-   DWORD* pceltEEs  
+   DWORD  celtBuffer,  
+   GUID*  rgguidLang,  
+   GUID*  rgguidVendor,  
+   DWORD* pceltEEs  
 );  
 ```  
   
-```csharp  
+```c#  
 public int EnumEEs(  
-   uint       celtBuffer,  
-   ref Guid   rgguidLang,  
-   ref Guid   rgguidVendor,  
-   ref uint[] pceltEEs  
+   uint       celtBuffer,  
+   ref Guid   rgguidLang,  
+   ref Guid   rgguidVendor,  
+   ref uint[] pceltEEs  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `celtBuffer`  
- [in] Number of elements in the `pceltEEs` buffer.  
+ \[in\]中的項目數`pceltEEs`的緩衝區。  
   
  `rgguidLang`  
- [in, out] Unique identifier for the programming language.  
+ 輸入 \[、 輸出\]程式語言的唯一識別項。  
   
  `rgguidVendor`  
- [in, out] Unique identifier for the vendor.  
+ 輸入 \[、 輸出\]供應商的唯一識別項。  
   
  `pceltEEs`  
- [in, out] Array of expression evaluators.  
+ 輸入 \[、 輸出\]運算式評估工具的陣列。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

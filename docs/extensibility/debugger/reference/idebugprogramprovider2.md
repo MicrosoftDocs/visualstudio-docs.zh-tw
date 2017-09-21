@@ -1,79 +1,62 @@
 ---
-title: IDebugProgramProvider2 | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProgramProvider2
-helpviewer_keywords:
-- IDebugProgramProvider2 interface
+title: "IDebugProgramProvider2 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProgramProvider2"
+helpviewer_keywords: 
+  - "IDebugProgramProvider2 介面"
 ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 caps.latest.revision: 14
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a5263ebcd63110697ee34b279b1a1a995cab205c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 14
 ---
-# <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
-This registered interface allows the session debug manager (SDM) to obtain information about programs that have been "published" through the [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) interface.  
+# IDebugProgramProvider2
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+已註冊的介面可讓工作階段偵錯管理員 」 \(SDM\) 取得的是 「 發行 」 透過程式的相關資訊[IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)介面。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```  
 IDebugProgramProvider2 : IUnknown  
 ```  
   
-## <a name="notes-for-implementers"></a>Notes for Implementers  
- The debug engine (DE) implements this interface to provide information about programs being debugged. This interface is registered in the DE section of the registry using the metric `metricProgramProvider`, as described in [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
+## 實作器注意事項  
+ 偵錯引擎 \(DE\) 會實作這個介面來提供偵錯的程式的相關資訊。  此介面係使用公制登錄 DE 部分中`metricProgramProvider`中所述， [SDK 協助程式進行偵錯](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)。  
   
-## <a name="notes-for-callers"></a>Notes for Callers  
- Call COM's `CoCreateInstance` function with the `CLSID` of the program provider that is obtained from the registry. See the Example.  
+## 呼叫者的備忘稿  
+ 呼叫 COM 的`CoCreateInstance`函式與`CLSID`取自登錄的程式提供者。  請參閱範例。  
   
-## <a name="methods-in-vtable-order"></a>Methods in Vtable order  
+## 方法 Vtable 順序  
   
-|Method|Description|  
-|------------|-----------------|  
-|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|Obtains information about programs running, filtered in a variety of ways.|  
-|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|Gets a program node, given a specific process ID.|  
-|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|Establishes a callback to watch for provider events associated with specific kinds of processes.|  
-|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|Establishes a locale for any language-specific resources needed by the DE.|  
+|方法|描述|  
+|--------|--------|  
+|[GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)|取得有關程式執行，篩選過的各種方式的資訊。|  
+|[GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md)|取得程式\] 節點中，指定一個特定的處理序 id。|  
+|[WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md)|建立用來監看特定類型的處理程序相關聯的提供者事件回呼。|  
+|[SetLocale](../../../extensibility/debugger/reference/idebugprogramprovider2-setlocale.md)|建立所需的 DE 任何語言特定資源的地區設定。|  
   
-## <a name="remarks"></a>Remarks  
- Normally, a process uses this interface to find out about the programs running in that process.  
+## 備註  
+ 一般情況下，處理程序會使用這個介面，以找出有關該程序中執行的程式。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="example"></a>Example  
+## 範例  
   
-```cpp  
+```cpp#  
 IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)  
 {  
     // This is typically defined globally.  For this example, it is  
@@ -100,7 +83,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
- [Core Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
+## 請參閱  
+ [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)   
- [SDK Helpers for Debugging](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+ [SDK 協助程式進行偵錯](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

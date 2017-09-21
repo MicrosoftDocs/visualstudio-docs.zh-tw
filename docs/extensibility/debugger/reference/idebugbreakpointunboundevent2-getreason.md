@@ -1,73 +1,56 @@
 ---
-title: IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBreakpointUnboundEvent2::GetReason
-helpviewer_keywords:
-- IDebugBreakpointUnboundEvent2::GetReason
+title: "IDebugBreakpointUnboundEvent2::GetReason | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBreakpointUnboundEvent2::GetReason"
+helpviewer_keywords: 
+  - "IDebugBreakpointUnboundEvent2::GetReason"
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 73fdb52435b4aa727b19786c99774f455bca579d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
-Gets the reason the breakpoint was unbound.  
+# IDebugBreakpointUnboundEvent2::GetReason
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得中斷點是未繫結的原因。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetReason(   
-   BP_UNBOUND_REASON* pdwUnboundReason  
+```cpp#  
+HRESULT GetReason(   
+   BP_UNBOUND_REASON* pdwUnboundReason  
 );  
 ```  
   
-```csharp  
-int GetReason(   
-   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
+```c#  
+int GetReason(   
+   out enum_ BP_UNBOUND_REASON pdwUnboundReason  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pdwUnboundReason`  
- [out] Returns a value from the [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) enumeration specifying the reason the breakpoint was unbound.  
+ \[\] out傳回值，從[BP\_UNBOUND\_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md)列舉型別指定中斷點是未繫結的原因。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Reasons include a breakpoint being rebound to a different location after an edit-and-continue operation, or a determination that a breakpoint was bound in error.  
+## 備註  
+ 原因包括正在不同的位置編輯後繼續作業或判斷，中斷點已繫結錯誤後重新繫結中斷點。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CBreakpointUnboundDebugEventBase** object that exposes the [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CBreakpointUnboundDebugEventBase** 物件，公開 \(expose\) [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)介面。  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(  
     BP_UNBOUND_REASON* pdwUnboundReason)  
 {  
@@ -86,5 +69,5 @@ STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)

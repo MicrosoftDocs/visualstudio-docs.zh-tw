@@ -1,74 +1,57 @@
 ---
-title: IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBoundBreakpoint2::SetPassCount
-helpviewer_keywords:
-- SetPassCount method
-- IDebugBoundBreakpoint2::SetPassCount method
+title: "IDebugBoundBreakpoint2::SetPassCount | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBoundBreakpoint2::SetPassCount"
+helpviewer_keywords: 
+  - "SetPassCount 方法"
+  - "IDebugBoundBreakpoint2::SetPassCount 方法"
 ms.assetid: b32c12f9-b34d-43bd-a1b9-61af6cf8e51b
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a817d4d2a6ce10259de9c8749b5e2ecb61d5ad5a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
-Sets or changes the pass count associated with this bound breakpoint.  
+# IDebugBoundBreakpoint2::SetPassCount
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+設定或變更此繫結中斷點相關聯的行程計數。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+```cpp#  
+HRESULT SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-```csharp  
-int SetPassCount(   
-   BP_PASSCOUNT bpPassCount  
+```c#  
+int SetPassCount(   
+   BP_PASSCOUNT bpPassCount  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `bpPassCount`  
- [in] The [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) structure that specifies the pass count.  
+ \[in\][BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)指定行程計數的結構。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code. Returns `E_BP_DELETED` if the state of the bound breakpoint object is set to `BPS_DELETED` (part of the [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) enumeration).  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態會設定為`BPS_DELETED` \(屬於[BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別\)。  
   
-## <a name="remarks"></a>Remarks  
- The pass count determines when the breakpoint is fired. The current pass or hit count can be obtained by calling the [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md) method.  
+## 備註  
+ 通過計數會決定中斷點時引發。  目前的階段或叫用的次數可由呼叫[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)方法。  
   
- Any pass count that was previously associated with this breakpoint is lost.  
+ 任何先前關聯此中斷點的行程計數將會遺失。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
  [GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)   
- [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
- [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP\_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)   
+ [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)

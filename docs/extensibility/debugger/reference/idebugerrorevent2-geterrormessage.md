@@ -1,94 +1,77 @@
 ---
-title: IDebugErrorEvent2::GetErrorMessage | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugErrorEvent2::GetErrorMessage
-helpviewer_keywords:
-- IDebugErrorEvent2::GetErrorMessage
+title: "IDebugErrorEvent2::GetErrorMessage | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugErrorEvent2::GetErrorMessage"
+helpviewer_keywords: 
+  - "IDebugErrorEvent2::GetErrorMessage"
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a4c15d3a000a1b960bfcf3f7f3a0d46708718bda
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-Returns information that allows construction of a human-readable error message.  
+# IDebugErrorEvent2::GetErrorMessage
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+傳回可讓建構的人們可讀取的錯誤訊息的資訊。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetErrorMessage(  
-   MESSAGETYPE* pMessageType,  
-   BSTR*        pbstrErrorFormat,  
-   HRESULT*     hrErrorReason,  
-   DWORD*       pdwType,  
-   BSTR*        pbstrHelpFileName,  
-   DWORD*       pdwHelpId  
+```cpp#  
+HRESULT GetErrorMessage(  
+   MESSAGETYPE* pMessageType,  
+   BSTR*        pbstrErrorFormat,  
+   HRESULT*     hrErrorReason,  
+   DWORD*       pdwType,  
+   BSTR*        pbstrHelpFileName,  
+   DWORD*       pdwHelpId  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetErrorMessage(  
-   out enum_MESSAGETYPE   pMessageType,  
-   out string             pbstrErrorFormat,  
-   out int                phrErrorReason,  
-   out uint               pdwType,  
-   out string             pbstrHelpFileName,  
-   out uint               pdwHelpId  
+   out enum_MESSAGETYPE   pMessageType,  
+   out string             pbstrErrorFormat,  
+   out int                phrErrorReason,  
+   out uint               pdwType,  
+   out string             pbstrHelpFileName,  
+   out uint               pdwHelpId  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pMessageType`  
- [out] Returns a value from the [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeration, describing the type of message.  
+ \[\] out傳回值，從[訊息類型](../../../extensibility/debugger/reference/messagetype.md)列舉型別，描述訊息的型別。  
   
  `pbstrErrorFormat`  
- [out] The format of the final message to the user (see "Remarks" for details).  
+ \[\] out最後的訊息給使用者的格式 \(如需詳細資訊，請參閱 「 備註 」\)。  
   
  `hrErrorReason`  
- [out] The error code the message is about.  
+ \[\] out錯誤碼訊息是有關。  
   
  `pdwType`  
- [out] Severity of the error (use the MB_XXX constants for `MessageBox`; for example, `MB_EXCLAMATION` or `MB_WARNING`).  
+ \[\] out錯誤的嚴重性 \(使用 MB\_XXX 常數，如`MessageBox`。 for example, `MB_EXCLAMATION` or `MB_WARNING`\).  
   
  `pbstrHelpFileName`  
- [out] Path to a help file (set to a null value if there is no help file).  
+ \[\] out\(設定為 null 值，如果沒有說明檔\) 中的 \[說明\] 檔案的路徑。  
   
  `pdwHelpId`  
- [out] ID of the help topic to display (set to 0 if there is no help topic).  
+ \[\] out要顯示 \(設為 0，如果沒有任何 \[說明\] 主題\) 的 \[說明\] 主題的 ID。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The error message should be formatted along the lines of `"What I was doing.  %1"`. The `"%1"` would then be replaced by the caller with the error message derived from the error code (which is returned in `hrErrorReason`). The `pMessageType` parameter tells the caller how the final error message should be displayed.  
+## 備註  
+ 錯誤訊息應設定的格式像`"What I was doing.  %1"`。  `"%1"`會接著由呼叫端以取代衍生自錯誤代碼的錯誤訊息 \(它會傳回`hrErrorReason`\)。  `pMessageType`參數會告訴呼叫者應如何顯示最後的錯誤訊息。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)   
- [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)
+ [訊息類型](../../../extensibility/debugger/reference/messagetype.md)

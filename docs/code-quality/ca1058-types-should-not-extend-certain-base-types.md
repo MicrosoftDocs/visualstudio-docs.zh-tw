@@ -1,55 +1,38 @@
 ---
-title: 'CA1058: Types should not extend certain base types | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- TypesShouldNotExtendCertainBaseTypes
-- CA1058
-helpviewer_keywords:
-- CA1058
-- TypesShouldNotExtendCertainBaseTypes
+title: "CA1058：類型不應該擴充特定的基底類型 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-devops-test"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "TypesShouldNotExtendCertainBaseTypes"
+  - "CA1058"
+helpviewer_keywords: 
+  - "CA1058"
+  - "TypesShouldNotExtendCertainBaseTypes"
 ms.assetid: 8446ee40-beb1-49fa-8733-4d8e813471c0
 caps.latest.revision: 24
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: def196d568d99947219baf406b7cbf922f95e387
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+caps.handback.revision: 24
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Types should not extend certain base types
+# CA1058：類型不應該擴充特定的基底類型
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
 |||  
 |-|-|  
-|TypeName|TypesShouldNotExtendCertainBaseTypes|  
+|型別名稱|TypesShouldNotExtendCertainBaseTypes|  
 |CheckId|CA1058|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- An externally visible type extends certain base types. Currently, this rule reports types that derive from the following types:  
+## 原因  
+ 外部可見的型別會延伸某些基底型別 \(Base Type\)。  這項規則目前會報告衍生自下列型別的型別：  
   
 -   <xref:System.ApplicationException?displayProperty=fullName>  
   
@@ -67,17 +50,17 @@ ms.lasthandoff: 08/28/2017
   
 -   <xref:System.Collections.Stack?displayProperty=fullName>  
   
-## <a name="rule-description"></a>Rule Description  
- For [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version 1, it was recommended to derive new exceptions from <xref:System.ApplicationException>. The recommendation has changed and new exceptions should derive from <xref:System.Exception?displayProperty=fullName> or one of its subclasses in the <xref:System> namespace.  
+## 規則描述  
+ 若是 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1 版，建議從 <xref:System.ApplicationException> 衍生新的例外狀況。  建議已變更，而新的例外狀況應該衍生自 <xref:System.Exception?displayProperty=fullName> 或在 <xref:System> 命名空間中的其中一個子類別 \(Subclass\)。  
   
- Do not create a subclass of <xref:System.Xml.XmlDocument> if you want to create an XML view of an underlying object model or data source.  
+ 如果您想建立基礎物件模型或資料來源的 XML 檢視，請勿建立 <xref:System.Xml.XmlDocument> 的子類別。  
   
-### <a name="non-generic-collections"></a>Non-generic Collections  
- Use and/or extend generic collections whenever possible. Do not extend non-generic collections in your code, unless you shipped it previously.  
+### 非泛型集合  
+ 請盡量使用和 \(或\) 擴充泛型集合。  除非過去曾經發行過，否則請勿在程式碼中擴充非泛型集合。  
   
- **Examples of Incorrect Usage**  
+ **不正確使用的範例**  
   
-```csharp  
+```c#  
 public class MyCollection : CollectionBase  
 {  
 }  
@@ -87,9 +70,9 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }  
 ```  
   
- **Examples of Correct Usage**  
+ **正確使用的範例**  
   
-```csharp  
+```c#  
 public class MyCollection : Collection<T>  
 {  
 }  
@@ -99,8 +82,8 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 }  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, derive the type from a different base type or a generic collection.  
+## 如何修正違規  
+ 若要修正這項規則的違規情形，請從其他基底型別或泛型集合來衍生型別。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule for violations about <xref:System.ApplicationException>. It is safe to suppress a warning from this rule for violations about <xref:System.Xml.XmlDocument>. It is safe to suppress a warning about a non-generic collection if the code was released previously.
+## 隱藏警告的時機  
+ 對於 <xref:System.ApplicationException> 的違規情形，請勿隱藏此規則的警告。  對於 <xref:System.Xml.XmlDocument> 的相關違規情形，請放心地隱藏此規則的警告。  如果事先已經發行過程式碼，則可以放心地隱藏關於非泛型集合的警告。

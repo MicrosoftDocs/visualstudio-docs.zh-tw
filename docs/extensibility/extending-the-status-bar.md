@@ -1,60 +1,43 @@
 ---
-title: Extending the Status Bar | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- status bars, about status bars
-- status bars, overview
+title: "擴充 [狀態] 列 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "狀態列關於狀態列"
+  - "狀態列概觀"
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 caps.latest.revision: 23
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 350703e1b6de2c43ecabd1d86d719aa6bf62cb11
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 23
 ---
-# <a name="extending-the-status-bar"></a>Extending the Status Bar
-You can use the Visual Studio status bar at the bottom of the IDE to display information.  
+# 擴充 [狀態] 列
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以使用 Visual Studio 的 \[狀態\] 列在 IDE 底部，以顯示資訊。  
   
- When you extend the status bar, you can display information and UI in four regions: the feedback region, the progress bar, the animation region, and the designer region. The feedback region allows you to display text and highlight the displayed text. The progress bar shows incremental progress for short-running operations such as saving a file. The animation region displays a continuously-looped animation for long-running operations or operation of undetermined length, such as building multiple projects in a solution. And the designer region shows the line and column number of the cursor location.  
+ 當您擴充 \[狀態\] 列時，您可以在四個區域中顯示資訊和 UI: 意見區域、 進度列、 動畫區域和設計工具區域。 意見反應區域可讓您顯示文字並反白顯示的文字。 進度列顯示短時間執行作業，例如儲存檔案的累加進度。 動畫區域會顯示針對長時間執行作業或作業尚無法確定的長度，如建置方案中的多個專案的連續形成迴路動畫。 與設計工具區域顯示的游標位置列和資料行數目。  
   
- You can get the status bar by using the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> interface (from the <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> service). In addition, any object sited on a window frame can register as a status bar client object by implementing the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> interface. Whenever a window is activated, Visual Studio queries the object sited on that window for the `IVsStatusbarUser` interface. If found, it calls the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> method on the returned interface and the object can update the status bar from within that method. Document windows, for example, can use the <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> method to update information in the designer region when they become active.  
+ 您可以使用，以取得狀態列 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 介面 \(從 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 服務\)。 此外，任何物件上的視窗框架的地方可註冊為用戶端物件的狀態列實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 介面。 每次啟動視窗時，Visual Studio 會查詢物件上的該視窗的地方 `IVsStatusbarUser` 介面。 如果找到，則會呼叫 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 方法傳回的介面和物件可以更新從該方法內的狀態列。 例如文件視窗中，可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 方法來更新設計工具區域中的資訊，當它們變成使用中時。  
   
- The following procedures assume that you understand how to create a VSIX project and add a custom menu command. For information, see [Creating an Extension with a Menu Command](../extensibility/creating-an-extension-with-a-menu-command.md).  
+ 下列程序假設您了解如何建立 VSIX 專案，並加入自訂的功能表命令。 如需詳細資訊，請參閱 [建立擴充功能的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-## <a name="modifying-the-status-bar"></a>Modifying the Status Bar  
- This procedure shows you how to set and get text, display static text, and highlight the displayed text in the feedback region of the status bar.  
+## 修改 \[狀態\] 列  
+ 此程序會示範如何設定並取得文字、 顯示靜態文字，以及 \[狀態\] 列的意見區域中顯示的文字反白顯示。  
   
-#### <a name="reading-and-writing-to-the-status-bar"></a>Reading and writing to the status bar  
+#### 讀取和寫入至 \[狀態\] 列  
   
-1.  Create a VSIX project named **TestStatusBarExtension** and add a menu command named **TestStatusBarCommand**.  
+1.  建立 VSIX 專案，名為 **TestStatusBarExtension** ，並新增名為功能表命令 **TestStatusBarCommand**。  
   
-2.  In TestStatusBarCommand.cs, replace the command handler method code (MenuItemCallback) with the following:  
+2.  在 TestStatusBarCommand.cs，取代命令處理常式方法程式碼 \(MenuItemCallback\) 下列:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -86,19 +69,19 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  編譯程式碼，並開始偵錯。  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio. Click the **Invoke TestStatusBarCommand** button.  
+4.  開啟 **工具** \] 功能表中的 Visual Studio 的實驗執行個體。 按一下 \[ **叫用 TestStatusBarCommand** \] 按鈕。  
   
-     You should see that the text in the status bar now reads **"We just wrote to the status bar."** and the message box that appears has the same text.  
+     您應該會看到現在讀取狀態列中的文字 **「 我們剛剛寫入狀態列 」** 而且會出現訊息方塊具有相同的文字。  
   
-#### <a name="updating-the-progress-bar"></a>Updating the progress bar  
+#### 更新進度列  
   
-1.  In this procedure we will show how to initialize and update the progress bar.  
+1.  在此程序中，我們將說明如何初始化及更新進度列。  
   
-2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
+2.  開啟 TestStatusBarCommand.cs 檔案，並使用下列程式碼來取代 MenuItemCallback 方法:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar = (IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -120,23 +103,23 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  編譯程式碼，並開始偵錯。  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio. Click **Invoke TestStatusBarCommand** button.  
+4.  開啟 **工具** \] 功能表中的 Visual Studio 的實驗執行個體。 按一下 \[ **叫用 TestStatusBarCommand** \] 按鈕。  
   
-     You should see that the text in the status bar now reads **"Writing to the progress bar."** You should also see the progress bar get updated every second for 20 seconds. After that the status bar and the progress bar are cleared.  
+     您應該會看到現在讀取狀態列中的文字 **「 進度列寫入 「**您也應該會看到進度列會更新每秒 20 秒。 之後，會清除 \[狀態\] 列及進度列。  
   
-#### <a name="displaying-an-animation"></a>Displaying an animation  
+#### 顯示動畫  
   
-1.  The status bar displays a looping animation that indicates either a long-running operation (for example, building multiple projects in a solution). If you do not see this animation, make sure you have the correct **Tools / Options** settings:  
+1.  狀態列會顯示迴圈的動畫，表示一長時間執行的作業 \(例如，建置方案中的多個專案\)。 如果看不到這個動畫，請確定您有正確 **工具 \/ 選項** 設定:  
   
-     Go to the **Tools/Options / General** tab and uncheck **Automatically adjust visual experience based on client performance**. Then check the sub-option **Enable rich client visual experience**. You should now be able to see the animation when you build the project in your experimental instance of Visual Studio.  
+     移至 **工具\/選項 \/ 一般** 索引標籤，然後取消核取 **自動調整根據用戶端效能的視覺效果**。 然後檢查子選項 **啟用豐富型用戶端視覺體驗**。 此外，您現在應該可以看到此動畫，當您建置您的 Visual Studio 的實驗性執行個體中的專案。  
   
-     In this procedure we display the standard Visual Studio animation which represents building a project or solution.  
+     此程序中，我們會顯示標準的 Visual Studio 動畫代表建置專案或方案。  
   
-2.  Open the TestStatusBarCommand.cs file and replace the MenuItemCallback method with the following code:  
+2.  開啟 TestStatusBarCommand.cs 檔案，並使用下列程式碼來取代 MenuItemCallback 方法:  
   
-    ```csharp  
+    ```c#  
     private void MenuItemCallback(object sender, EventArgs e)  
     {  
         IVsStatusbar statusBar =(IVsStatusbar)ServiceProvider.GetService(typeof(SVsStatusbar));  
@@ -155,8 +138,8 @@ You can use the Visual Studio status bar at the bottom of the IDE to display inf
     }  
     ```  
   
-3.  Compile the code and start debugging.  
+3.  編譯程式碼，並開始偵錯。  
   
-4.  Open the **Tools** menu in the experimental instance of Visual Studio and click **Invoke TestStatusBarCommand**.  
+4.  開啟 **工具** 實驗性執行個體的 Visual Studio，然後按一下功能表 **叫用 TestStatusBarCommand**。  
   
-     When you see the message box, you should also see the animation in the status bar on the far right. When you dismiss the message box, the animation disappears.
+     當您看到訊息方塊時，應該還會看到 \[狀態\] 列中的動畫最右邊。 當您關閉訊息方塊時，就會消失動畫。

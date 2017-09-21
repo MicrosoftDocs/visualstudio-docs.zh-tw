@@ -1,68 +1,51 @@
 ---
-title: IDebugObject::GetMemoryContext | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject::GetMemoryContext
-helpviewer_keywords:
-- IDebugObject::GetMemoryContext method
+title: "IDebugObject::GetMemoryContext | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject::GetMemoryContext"
+helpviewer_keywords: 
+  - "IDebugObject::GetMemoryContext 方法"
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: dd4c9a72faec7d5b5142a8d10dd3ad6723e8fa64
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
-Gets the memory context that represents the address of the value of the object.  
+# IDebugObject::GetMemoryContext
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得表示物件的值的位址的記憶體內容。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetMemoryContext(   
-   IDebugMemoryContext2** pContext  
+```cpp#  
+HRESULT GetMemoryContext(   
+   IDebugMemoryContext2** pContext  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetMemoryContext(  
-   ref IDebugMemoryContext2 pContext  
+   ref IDebugMemoryContext2 pContext  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pContext`  
- [out] Returns an [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object representing the address of the value of the object.  
+ \[\] out傳回[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件，表示物件的值的位址。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The returned memory context specifies the address of the value as represented by this [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) object.  
+## 備註  
+ 傳回的記憶體內容會指定值的位址，這表示[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)物件。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

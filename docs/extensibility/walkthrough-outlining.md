@@ -1,132 +1,128 @@
 ---
-title: 'Walkthrough: Outlining | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - outlining
+title: "逐步解說: 大綱 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "編輯器 [Visual Studio SDK]，新的大綱"
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 30
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a8288452954ee0969f2a358ccdcca9f5dc6b7b07
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 30
 ---
-# <a name="walkthrough-outlining"></a>Walkthrough: Outlining
-You can implement language-based features such as outlining by defining the kinds of text regions you want to expand or collapse. You can define regions in the context of a language service, or you can define your own file name extension and content type and apply the region definition to only that type, or you can apply the region definitions to an existing content type (such as "text"). This walkthrough shows how to define and display outlining regions.  
+# 逐步解說: 大綱
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以實作語言為基礎的功能，例如藉由定義您想要展開或摺疊的文字區域的大綱。 您可以定義區域中的內容語言服務，您可以定義您的檔案名稱副檔名和內容類型，並區定義套用至該類型，或您可以將區域定義套用至現有的內容類型 \(例如 「 文字 」\)。 此逐步解說示範如何定義及顯示大綱區域。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## 必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
+## Managed Extensibility Framework \(MEF\)  
   
-#### <a name="to-create-a-mef-project"></a>To create a MEF project  
+#### 建立 MEF 專案  
   
-1.  Create an VSIX project. Name the solution `OutlineRegionTest`.  
+1.  建立 VSIX 專案。 將方案命名為 `OutlineRegionTest`。  
   
-2.  Add an Editor Classifier item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  將編輯器分類項目範本加入至專案。 如需詳細資訊，請參閱[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  Delete the existing class files.  
+3.  刪除現有類別檔案。  
   
-## <a name="implementing-an-outlining-tagger"></a>Implementing an Outlining Tagger  
- Outlining regions are marked by a kind of tag (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). This tag provides the standard outlining behavior. The outlined region can be expanded or collapsed. The outlined region is marked by a PLUS SIGN if it is collapsed or a MINUS SIGN if it is expanded, and the expanded region is demarcated by a vertical line.  
+## 實作大綱標註器  
+ 一種標記標示大綱區域 \(<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>\)。 此標記會提供標準大綱行為。 可以展開或摺疊的大綱的區域。 外框的區域會標示為如果已摺疊的加號或減號展開，並展開的區域由一條垂直線區分哪些。  
   
- The following steps show how to define a tagger that creates outlining regions for all the regions that are delimited by "[" and "]".  
+ 下列步驟示範如何定義建立大綱區域所分隔的所有區域的標註器"\["和"\]"。  
   
-#### <a name="to-implement-an-outlining-tagger"></a>To implement an outlining tagger  
+#### 若要實作大綱標註器  
   
-1.  Add a class file and name it `OutliningTagger`.  
+1.  將類別檔案，並將它 `OutliningTagger`。  
   
-2.  Import the following namespaces.  
+2.  匯入下列命名空間。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]  [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]  
   
-3.  Create a class named `OutliningTagger`, and have it implement <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3.  建立一個名為 `OutliningTagger`, ，並將它實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
-     [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]  [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]  
   
-4.  Add some fields to track the text buffer and snapshot and to accumulate the sets of lines that should be tagged as outlining regions. This code includes a list of Region objects (to be defined later) that represent the outlining regions.  
+4.  加入一些欄位來追蹤文字緩衝區和快照集，並累積的行應該標記為大綱區域集合。 這個程式碼包含代表大綱區域的區域物件 \(若要稍後定義\) 的清單。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]  [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]  
   
-5.  Add a tagger constructor that initializes the fields, parses the buffer, and adds an event handler to the <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> event.  
+5.  加入標註器建構函式初始化欄位，剖析緩衝區，並加入至事件處理常式 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 事件。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]  [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]  
   
-6.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> method, which instantiates the tag spans. This example assumes that the spans in the <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passed in to the method are contiguous, although this may not always be the case. This method instantiates a new tag span for each of the outlining regions.  
+6.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> 方法，它會具現化該標記延伸。 這個範例假設在範圍 <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> 方法中傳遞是連續的雖然這不一定如此。 這個方法會產生新的標記範圍每個大綱區域。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]  [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]  
   
-7.  Declare a `TagsChanged` event handler.  
+7.  宣告 `TagsChanged` 事件處理常式。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]  [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]  
   
-8.  Add a `BufferChanged` event handler that responds to <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> events by parsing the text buffer.  
+8.  新增 `BufferChanged` 回應的事件處理常式 <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> 剖析文字緩衝區的事件。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]  [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]  
   
-9. Add a method that parses the buffer. The example given here is for illustration only. It synchronously parses the buffer into nested outlining regions.  
+9. 加入的方法，會剖析緩衝區。 此處提供的範例是僅供說明。 以同步方式將緩衝區剖析成巢狀的大綱區域。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]   [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/CSharp/walkthrough-outlining_8.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_8.vb)]  
   
-10. The following helper method gets an integer that represents the level of the outlining, such that 1 is the leftmost brace pair.  
+10. 下列 helper 方法會取得代表的大綱層級 1 是最左邊的大括號組的整數。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]  [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/CSharp/walkthrough-outlining_9.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_9.vb)]  
   
-11. The following helper method translates a Region (defined later in this topic) into a SnapshotSpan.  
+11. 下列 helper 方法會轉譯 SnapshotSpan \(本主題稍後的定義\) 的區域。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]  [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/CSharp/walkthrough-outlining_10.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_10.vb)]  
   
-12. The following code is for illustration only. It defines a PartialRegion class that contains the line number and offset of the start of an outlining region, and also a reference to the parent region (if any). This enables the parser to set up nested outlining regions. A derived Region class contains a reference to the line number of the end of an outlining region.  
+12. 下列程式碼是僅供說明。 它會定義 PartialRegion 類別，其中包含行號和位移開始的大綱區域，以及 \(如果有的話\) 的上層區域的參考。 這可讓剖析器設定巢狀大綱區域。 在衍生的 Region 類別包含的大綱區域結尾的行號的參考。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]  [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/CSharp/walkthrough-outlining_11.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_11.vb)]  
   
-## <a name="implementing-a-tagger-provider"></a>Implementing a Tagger Provider  
- You must export a tagger provider for your tagger. The tagger provider creates an `OutliningTagger` for a buffer of the "text" content type, or else returns an `OutliningTagger` if the buffer already has one.  
+## 實作標註器提供者  
+ 您必須針對您的標註器匯出標註器提供者。 標註器提供者會建立 `OutliningTagger` 的 「 文字 」 內容類型，或其他的傳回緩衝區 `OutliningTagger` 如果緩衝區已經有一個。  
   
-#### <a name="to-implement-a-tagger-provider"></a>To implement a tagger provider  
+#### 若要實作標註器提供者  
   
-1.  Create a class named `OutliningTaggerProvider` that implements <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>, and export it with the ContentType and TagType attributes.  
+1.  建立一個名為 `OutliningTaggerProvider` 實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>, ，並將它匯出以 ContentType 與 TagType 屬性。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]  [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]  
   
-2.  Implement the <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> method by adding an `OutliningTagger` to the properties of the buffer.  
+2.  實作 <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> 方法藉由新增 `OutliningTagger` 緩衝區的內容。  
   
-     [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]  [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]  
+     [!code-cs[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
+     [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
- To test this code, build the OutlineRegionTest solution and run it in the experimental instance.  
+## 建置和測試程式碼  
+ 若要測試這段程式碼，OutlineRegionTest 方案中建置並執行它的實驗執行個體。  
   
-#### <a name="to-build-and-test-the-outlineregiontest-solution"></a>To build and test the OutlineRegionTest solution  
+#### 若要建置和測試 OutlineRegionTest 方案  
   
-1.  Build the solution.  
+1.  建置方案。  
   
-2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
+2.  當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3.  Create a text file. Type some text that includes both the opening brace and the closing brace.  
+3.  建立文字檔 輸入一些文字，其中包含左括號和右括號。  
   
     ```  
     [  
@@ -134,7 +130,7 @@ You can implement language-based features such as outlining by defining the kind
     ]  
     ```  
   
-4.  There should be an outlining region that includes both braces. You should be able to click the MINUS SIGN to the left of the open brace to collapse the outlining region. When the region is collapsed, the ellipsis symbol (...) should appear to the left of the collapsed region, and a popup containing the text **hover text** should appear when you move the pointer over the ellipsis.  
+4.  應該包含這兩個大括號中的大綱區域。 您可以按一下減號左邊的左大括號來摺疊的大綱區域。 當區域摺疊，請省略符號 \(...\) 應該會出現已摺疊的區域，並包含文字的快顯視窗的左邊 **暫留文字** 應該會出現省略符號上移動指標時。  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## 請參閱  
+ [逐步解說: 將內容類型連結至檔案名稱副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

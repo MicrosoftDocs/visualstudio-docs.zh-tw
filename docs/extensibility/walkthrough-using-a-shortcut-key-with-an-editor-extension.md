@@ -1,53 +1,36 @@
 ---
-title: 'Walkthrough: Using a Shortcut Key with an Editor Extension | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - link keystrokes to commands
+title: "逐步解說︰ 使用快速鍵的編輯器延伸模組 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "編輯器 [Visual Studio SDK]，新的命令連結按鍵"
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 32
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: af4e580195d4867aebe6579bb4a4de15eaee1a8b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 32
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Walkthrough: Using a Shortcut Key with an Editor Extension
-You can respond to shortcut keys in your editor extension. The following walkthrough shows how to add a view adornment to a text view by using a shortcut key. This walkthrough is based on the viewport adornment editor template, and it allows you to add the adornment by using the + character.  
+# 逐步解說︰ 使用快速鍵的編輯器延伸模組
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以在您的編輯器延伸模組中回應快速鍵。 下列逐步解說示範如何使用快速鍵，將檢視裝飾新增至文字檢視。 本逐步解說根據檢視區裝飾編輯器範本，並可讓您使用新增裝飾 \+ 字元。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## 必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-managed-extensibility-framework-mef-project"></a>Creating a Managed Extensibility Framework (MEF) Project  
+## Managed Extensibility Framework \(MEF\)  
   
-1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `KeyBindingTest`.  
+1.  建立 C\# VSIX 專案。 \(在 **新的專案** 對話方塊中，選取 **Visual C\# \/ 擴充性**, ，然後 **VSIX 專案**。\) 將方案命名為 `KeyBindingTest`。  
   
-2.  Add an Editor Text Adornment item template to the project and name it `KeyBindingTest`. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  編輯器文字裝飾項目範本加入至專案，並將它 `KeyBindingTest`。 如需詳細資訊，請參閱[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  Add the following references and set **CopyLocal** to `false`:  
+3.  加入下列參考，並設定 **CopyLocal** 至 `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -57,20 +40,20 @@ You can respond to shortcut keys in your editor extension. The following walkthr
   
      Microsoft.VisualStudio.TextManager.Interop  
   
- In the KeyBindingTest class file, change the class name to PurpleCornerBox. Use the light bulb that appears in the left margin to make the other appropriate changes. Inside the constructor, change the name of the adornment layer from **KeyBindingTest** to **PurpleCornerBox**:  
+ 在 KeyBindingTest 類別檔案中，類別名稱的內容變更為 PurpleCornerBox。 使用在左邊界出現燈泡，進行適當變更。 內部建構函式，將變更從裝飾圖層名稱 **KeyBindingTest** 至 **PurpleCornerBox**:  
   
-```csharp  
+```c#  
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");  
 ```  
   
-## <a name="defining-the-command-filter"></a>Defining the Command Filter  
- The command filter is an implementation of <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, which handles the command by instantiating the adornment.  
+## 定義命令的篩選  
+ 命令篩選器是實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, ，以處理命令，以具現化的裝飾。  
   
-1.  Add a class file and name it `KeyBindingCommandFilter`.  
+1.  將類別檔案，並將它 `KeyBindingCommandFilter`。  
   
-2.  Add the following using statements.  
+2.  使用陳述式加入下列程式碼。  
   
-    ```csharp  
+    ```c#  
     using System;  
     using System.Runtime.InteropServices;  
     using Microsoft.VisualStudio.OLE.Interop;  
@@ -79,24 +62,24 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  The class named KeyBindingCommandFilter should inherit from <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3.  名為 KeyBindingCommandFilter 的類別應該繼承自 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>。  
   
-    ```csharp  
-    internal class KeyBindingCommandFilter : IOleCommandTarget  
+    ```c#  
+    internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Add private fields for the text view, the next command in the command chain, and a flag to represent whether the command filter has already been added.  
+4.  加入私用欄位的文字檢視、 下一個命令中的命令鏈結和旗標，表示是否已加入命令篩選器。  
   
-    ```csharp  
+    ```c#  
     private IWpfTextView m_textView;  
     internal IOleCommandTarget m_nextTarget;  
-    internal bool m_added;  
-    internal bool m_adorned;  
+    internal bool m_added;  
+    internal bool m_adorned;  
     ```  
   
-5.  Add a constructor that sets the text view.  
+5.  新增設定文字檢視的建構函式。  
   
-    ```csharp  
+    ```c#  
     public KeyBindingCommandFilter(IWpfTextView textView)  
     {  
         m_textView = textView;  
@@ -104,7 +87,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implement the `QueryStatus()` method as follows.  
+6.  實作 `QueryStatus()` 方法，如下所示。  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -113,9 +96,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implement the `Exec()` method so that it adds a purple box to the view if a + character is typed.  
+7.  實作 `Exec()` 方法，使它會新增至檢視紫色方塊如果 \+ 輸入字元。  
   
-    ```csharp  
+    ```c#  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
     {  
         if (m_adorned == false)  
@@ -137,12 +120,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-## <a name="adding-the-command-filter"></a>Adding the Command Filter  
- The adornment provider must add a command filter to the text view. In this example, the provider implements <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> to listen to text view creation events. This adornment provider also exports the adornment layer, which defines the Z-order of the adornment.  
+## 在新增命令篩選器  
+ 文字檢視裝飾提供者必須加入命令篩選器。 在此範例中，提供者會實作 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 來接聽文字檢視建立事件。 此裝飾的提供者也會匯出裝飾圖層，亦即定義裝飾 Z 順序。  
   
-1.  In the KeyBindingTestTextViewCreationListener file, add the following using statements:  
+1.  在 KeyBindingTestTextViewCreationListener 檔案中，新增下列 using 陳述式︰  
   
-    ```csharp  
+    ```c#  
     using System;  
     using System.Collections.Generic;  
     using System.ComponentModel.Composition;  
@@ -155,35 +138,35 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  In the adornment layer definition, change the name of the AdornmentLayer from **KeyBindingTest** to **PurpleCornerBox**.  
+2.  在裝飾層定義中，變更的名稱從 AdornmentLayer **KeyBindingTest** 至 **PurpleCornerBox**。  
   
-    ```csharp  
+    ```c#  
     [Export(typeof(AdornmentLayerDefinition))]  
     [Name("PurpleCornerBox")]  
     [Order(After = PredefinedAdornmentLayers.Selection, Before = PredefinedAdornmentLayers.Text)]  
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  To get the text view adapter, you must import the <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3.  若要取得文字檢視配接器，您必須匯入 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>。  
   
-    ```csharp  
+    ```c#  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
     internal IVsEditorAdaptersFactoryService editorFactory = null;  
   
     ```  
   
-4.  Change the <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> method so that it adds the `KeyBindingCommandFilter`.  
+4.  變更 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> 方法，使其將 `KeyBindingCommandFilter`。  
   
-    ```csharp  
+    ```c#  
     public void TextViewCreated(IWpfTextView textView)  
     {  
         AddCommandFilter(textView, new KeyBindingCommandFilter(textView));  
     }  
     ```  
   
-5.  The `AddCommandFilter` handler gets the text view adapter and adds the command filter.  
+5.  `AddCommandFilter` 取得文字檢視配接器處理常式，並新增命令篩選器。  
   
-    ```csharp  
+    ```c#  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
     {  
         if (commandFilter.m_added == false)  
@@ -205,12 +188,12 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-## <a name="making-the-adornment-appear-on-every-line"></a>Making the Adornment Appear on Every Line  
- The original adornment appeared on every character 'a' in a text file. Now that we have changed the code to add the adornment in response to the '+' character, it adds the adornment only on the line where the '+' is typed. We can change the adornment code so that the adornment once more appears on every 'a'.  
+## 讓裝飾出現在每一行  
+ 原始裝飾出現在每個字元 'a' 文字檔案中。 既然我們已變更的程式碼，以加入裝飾回應 '\+' 字元，只能在一行上加入裝飾其中 '\+' 型別。 我們可以變更裝飾程式碼，就會出現一次的裝飾每 'a'。  
   
- In the KeyBindingTest.cs file, change the CreateVisuals() method to iterate through all the lines in the view to decorate the 'a' character.  
+ 在 KeyBindingTest.cs 檔案中，變更 CreateVisuals\(\) 方法來逐一查看裝飾 'a' 字元檢視中的所有行。  
   
-```csharp  
+```c#  
 private void CreateVisuals(ITextViewLine line)  
 {  
     IWpfTextViewLineCollection textViewLines = this.view.TextViewLines;  
@@ -252,10 +235,10 @@ private void CreateVisuals(ITextViewLine line)
 }  
 ```  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
+## 建置和測試程式碼  
   
-1.  Build the KeyBindingTest solution and run it in the experimental instance.  
+1.  KeyBindingTest 方案中建置並執行它的實驗執行個體。  
   
-2.  Create or open a text file. Type some words containing the character 'a', and then type + anywhere in the text view.  
+2.  建立或開啟文字檔案。 輸入一些文字，包含字元 'a'，然後輸入 \+ 文字檢視中的任何位置。  
   
-     A purple square should appear on every 'a' character in the file.
+     紫色方應該會出現在每個檔案中的 'a' 字元。

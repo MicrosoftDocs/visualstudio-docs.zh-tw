@@ -1,5 +1,5 @@
 ---
-title: Tips and Tricks for Visual Studio | Microsoft Docs
+title: "Visual Studio 秘訣和訣竅 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -28,121 +28,122 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 8413523efb6291b033447e5ea41eea824228f45f
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
+ms.openlocfilehash: 27dc4d56a0608ddf031b47775bd9aaef20e24194
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 06/23/2017
 
 ---
-# <a name="tips-and-tricks-for-visual-studio"></a>Tips and Tricks for Visual Studio
-You can navigate in [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] more easily by using the shortcuts in this topic. This topic is only a subset of the available keyboard shortcuts. For a more complete list, see [Default Keyboard Shortcuts in Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md). For information about how to optimize Visual Studio for accessibility, see [Accessibility Tips and Tricks](../ide/reference/accessibility-tips-and-tricks.md).  
+# <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
+您可以使用本主題的捷徑，更輕鬆地在 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。  
 
-##  <a name="BKMK_WindowMgmt"></a> Window Management  
-
-|||  
-|-|-|  
-|Drag Off Floating Tab Wells|Ctrl+click for multi-select|  
-|Maximize Floating Window|Double-click on title bar|  
-|Re-dock Floating Window|Ctrl+double-click title bar|  
-|Close Active Document|Ctrl+F4|  
-|Show Open File List|Ctrl+Alt+Down|  
-|Show All Floating Windows|Ctrl+Shift+M|  
-
-##  <a name="BKMK_WindowShortcuts"></a> Window Shortcuts  
+##  <a name="BKMK_WindowMgmt"></a> 視窗管理  
 
 |||  
 |-|-|  
-|Move/Dock Floating Windows|Win+Left / Win+Right|  
-|Maximize/Minimize Windows|Win+Up / Win+Down|  
-|Show Jump List|Win+Alt+n|  
-|Start New Instance|Win+Shift+n|  
-|Switch Between Windows|Win+n|  
+|將浮動索引標籤井拖曳出來|多重選取的 Ctrl+按一下|  
+|最大化浮動視窗|按兩下標題列|  
+|重新停駐浮動視窗|Ctrl+按兩下標題列|  
+|關閉使用中的文件|Ctrl+F4|  
+|顯示開啟檔案清單|Ctrl+Alt+向下鍵|  
+|顯示所有浮動視窗|Ctrl+Shift+M|  
 
-##  <a name="BKMK_Search"></a> Visual Studio Search  
-
-|||  
-|-|-|  
-|Solution Explorer Search|Ctrl+;|  
-|Place Focus in Search box in any tool window|Alt+` when the tool window has focus|  
-|Quick Launch|Ctrl+Q|  
-|Quick Launch Scope Results|-   @opt Options<br />-   @cmd Commands<br />-   @mru Most recently used<br />-   @doc Open documents|  
-|Search in Tools Options|Ctrl+E|  
-
-##  <a name="BKMK_EditorFind"></a> Editor Find  
+##  <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵  
 
 |||  
 |-|-|  
-|Quick Find|Ctrl+F|  
-|Quick Find Next Result|Enter|  
-|Quick Find Previous Result|Shift+Enter|  
-|Quick Find Expand Drop Down|Alt+Down|  
-|Dismiss Find|Esc|  
-|Quick Replace|Ctrl+H|  
-|Quick Replace Replace Next|Alt+R|  
-|Quick Replace Replace All|Alt+A|  
-|Find in Files|Ctrl+Shift+F|  
-|Replace in Files|Ctrl+Shift+H|  
+|移動/停駐浮動視窗|Win+向左鍵 / Win+向右鍵|  
+|最大化/最小化視窗|Win+向上鍵 / Win+向下鍵|  
+|顯示捷徑清單|Win+Alt+n|  
+|開始新執行個體|Win+Shift+n|  
+|切換視窗|Win+n|  
 
-##  <a name="BKMK_CodeEditor"></a> Code Editor  
+##  <a name="BKMK_Search"></a> Visual Studio 搜尋  
 
 |||  
 |-|-|  
-|IntelliSense Suggestion Mode|Ctrl+Alt+Space (Toggle)|  
-|Force Show IntelliSense|Ctrl+J|  
-|Smart Tags|Ctrl+.|  
-|Snippet Picker|Ctrl+K,X or ?,Tab (VB)|  
-|Surround With|Ctrl+K,S|  
-|Show Quick Info|Ctrl+K,I|  
-|Navigate To|Ctrl+,|  
-|Navigate Highlighted References|Ctrl+Shift+Up (Previous), Ctrl+Shift+Down (Next)|  
-|Editor Zoom|Ctrl+Shift+> (In), Ctrl+Shift+< (Out)|  
-|Block Selection|Hold Alt and drag mouse, Shift+Alt+Arrow Keys|  
-|Move Line Up/Down|Alt+Up / Alt+Down|  
-|Go To Definition|F12|  
-|Peek Definition|Alt+F12|  
-|Go To Definition Stack|Ctrl+Shift+8 (Back), Ctrl+Shift+7 (Forward)|  
-|Close the Peek Definition window|Esc|  
-|Promote the Peek Definition window to a regular document tab|Ctrl+Alt+Home|  
-|Navigate between multiple Peek Definition windows|Ctrl+Alt+- and Ctrl+Alt+=|  
-|Navigate between multiple Peek results|F8 and Shift+F8|  
-|Toggle between the code editor window and the Peek Definition window|Shift+Esc|  
+|方案總管搜尋|Ctrl+;|  
+|將焦點放在任何工具視窗的搜尋方塊|Alt+ `，當工具視窗有焦點時|  
+|快速啟動|Ctrl+Q|  
+|快速啟動範圍結果|-   @opt 選項<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 開啟文件|  
+|在工具選項中搜尋|Ctrl+E|  
 
-##  <a name="BKMK_Toolbars"></a> Toolbars  
+##  <a name="BKMK_EditorFind"></a> 編輯器尋找  
 
 |||  
 |-|-|  
-|Add Buttons|Click toolbar overflow button|  
-|Find Combo in Standard toolbar|Ctrl+D|  
-|Find Textbox Command Mode|Type ">"|  
-|Create new alias|>alias NewAlias Command|  
+|快速尋找|Ctrl+F|  
+|快速尋找下一個結果|Enter|  
+|快速尋找上一個結果|Shift+Enter|  
+|快速尋找展開下拉式清單|Alt+向下鍵|  
+|關閉尋找|Esc|  
+|快速取代|Ctrl+H|  
+|快速取代取代下一個|Alt+R|  
+|快速取代全部取代|Alt+A|  
+|檔案中尋找|Ctrl+Shift+F|  
+|檔案中取代|Ctrl+Shift+H|  
 
-##  <a name="BKMK_Debugging"></a> Debugging  
+##  <a name="BKMK_CodeEditor"></a> 程式碼編輯器  
 
 |||  
 |-|-|  
-|Start Debugging|F5|  
-|Stop Debugging|Shift+F5|  
-|Restart Debugging|Ctrl+Shift+F5|  
-|Step Over|F10|  
-|Step Into|F11|  
-|Step Out|Shift+F11|  
-|Run To Cursor|Ctrl+F10|  
-|Set Next Statement|Ctrl+Shift+F10|  
-|Set and Toggle Breakpoint|F9|  
-|Disable Breakpoint|Ctrl+F9|  
-|Immediate Window|Ctrl+Alt+I|  
-|Immediate Window Command Mode|Type ">"|  
-|Immediate Window Clear Buffer|>cls|  
-|Immediate Window Print Value|?varname|  
+|IntelliSense 建議模式|Ctrl+Alt+Space (切換)|  
+|強制顯示 IntelliSense|Ctrl+J|  
+|智慧標籤|Ctrl+.|  
+|程式碼片段選擇器|Ctrl+K、X 或 ?、Tab (VB)|  
+|以此環繞|Ctrl+K、S|  
+|顯示快速諮詢|Ctrl+K、I|  
+|巡覽至|Ctrl+,|  
+|移至定義|F12|  
+|查看定義|Alt+F12|  
+|移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)|  
+|巡覽反白顯示的參考|Ctrl+Shift+Up (上一步)、Ctrl+Shift+Down (下一步)|  
+|編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)|  
+|區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵|  
+|將行上移/下移|Alt+向上鍵 / Alt+向下鍵|  
+|查看定義|Alt+F12|  
+|關閉 [查看定義] 視窗|Esc|  
+|將 [查看定義] 視窗升級到一般文件索引標籤|Ctrl+Alt+Home|  
+|在多個 [查看定義] 視窗之間巡覽|Ctrl+Alt+- 和 Ctrl+Alt+=|  
+|在多個查看結果之間巡覽|F8 和 Shift+F8|  
+|在程式碼編輯器視窗和 [查看定義] 視窗之間切換|Shift+Esc|  
 
-##  <a name="BKMK_ALM"></a> Application Lifecycle Management  
- See [Keyboard shortcuts: Visual Studio Online, TFS web portal, and Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4).  
+##  <a name="BKMK_Toolbars"></a> 工具列  
 
-## <a name="see-also"></a>See Also  
- [Visual Studio Blog](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab)   
- [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)   
+|||  
+|-|-|  
+|加入按鈕|按一下工具列溢位按鈕|  
+|尋找標準工具列中的下拉式方塊|Ctrl+D|  
+|尋找文字方塊命令模式|鍵入 ">"|  
+|建立新別名|>alias NewAlias 命令|  
+
+##  <a name="BKMK_Debugging"></a> 偵錯  
+
+|||  
+|-|-|  
+|開始偵錯|F5|  
+|停止偵錯|Shift+F5|  
+|重新啟動偵錯|Ctrl+Shift+F5|  
+|不進入函式|F10|  
+|逐步執行|F11|  
+|跳離函式|Shift+F11|  
+|執行至游標處|Ctrl+F10|  
+|設定 Next 陳述式|Ctrl+Shift+F10|  
+|設定和切換中斷點|F9|  
+|停用中斷點|Ctrl+F9|  
+|即時運算視窗|CTRL+ALT+I|  
+|即時運算視窗命令模式|鍵入 ">"|  
+|即時運算視窗清除緩衝區|>cls|  
+|即時運算視窗列印值|?varname|  
+
+##  <a name="BKMK_ALM"></a> 應用程式生命週期管理  
+ 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
+
+## <a name="see-also"></a>另請參閱  
+ [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)   
+ [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab)  (Visual Studio 秘訣和訣竅部落格)  
+ [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  (Channel 9 上的 Visual Studio 工具箱)  
  [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio Connect Bugs](http://connect.microsoft.com/VisualStudio)
+ [Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)
 

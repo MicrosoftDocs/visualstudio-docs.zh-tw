@@ -1,53 +1,39 @@
 ---
-title: 'Walkthrough: Creating a Code Snippet | Microsoft Docs'
-ms.custom: 
-ms.date: 09/11/2017
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- code snippets, creating
-- code snippets, shortcut
-- code snippets, template
-- code snippets, replacements
-- code snippets, references
-- code snippets, imports
+title: "逐步解說：建立程式碼片段 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "程式碼片段, 建立"
+  - "程式碼片段, 匯入"
+  - "程式碼片段, 參考"
+  - "程式碼片段, 取代"
+  - "程式碼片段, 捷徑"
+  - "程式碼片段, 範本"
 ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 caps.latest.revision: 21
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: bf9f2084ffcdce85a2f1bdb2617ae2c39c6d1e44
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 21
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Walkthrough: Creating a Code Snippet
-You can create a code snippet with only a few steps. All you need to do is create an XML file, fill in the appropriate elements, and add your code to it. You can also add references and replacement parameters to your code. You can add the snippet to your Visual Studio installation by using the Import button on the Code Snippets Manager (**Tools**, **Code Snippets Manager...**).  
+# 逐步解說：建立程式碼片段
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以建立只有少數步驟的程式碼片段。  您所要做的只是建立 XML 檔案、填入適當的項目並加入您的程式碼。  您也可以加入參考和取代參數至您的程式碼。  您可以在程式碼片段管理員 \(\[**工具\/程式碼片段管理員**\]\) 中使用匯入按鈕將程式碼片段加入到 Visual Studio 安裝中。  
   
-## <a name="snippet-template"></a>Snippet Template  
- The following is the basic snippet template:  
+> [!TIP]
+>  如需如何更輕鬆撰寫程式碼片段的詳細資訊，請在 CodePlex 網站搜尋社群工具，例如[程式碼片段編輯器](http://go.microsoft.com/fwlink/?LinkId=251033) \(英文\)。  
   
-```xml  
+## 程式碼片段範本  
+ 下列是基本程式碼片段範本：  
+  
+```  
 <?xml version="1.0" encoding="utf-8"?>  
 <CodeSnippets  
     xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -65,52 +51,52 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
 ```  
   
-### <a name="to-create-a-code-snippet"></a>To Create a Code Snippet  
+### 建立程式碼片段  
   
-1.  Create a new XML file in Visual Studio and add the template shown above.  
+1.  在 Visual Studio 建立新的 XML 檔案，並加入上面顯示的範本。  
   
-2.  Fill in the title of the snippet, e.g. "Hello World VB", in the Title element.  
+2.  在 Title 項目中填入程式碼片段的標題，例如 "Hello World VB"。  
   
-3.  Fill in the language of the snippet in the Languages attribute of the Code element. For this example, use "VB".  
+3.  在 Code 項目的 Languages 屬性中填入程式碼片段的語言。  在這個範例中使用 "VB"。  
   
-4.  Add some code in the CDATA section inside the Code element, for example:  
+4.  在程式碼項目內的 CDATA 區段中加入一些程式碼，例如：  
   
-    ```xml  
+    ```  
     <Code Language="VB">  
         <![CDATA[Console.WriteLine("Hello, World!")]]>  
     </Code>  
   
     ```  
   
-5.  Save the snippet as VBCodeSnippet.snippet.  
+5.  將這個程式碼片段儲存為 VBCodeSnippet.snippet。  
   
-### <a name="to-add-a-code-snippet-to-visual-studio"></a>To Add a Code Snippet to Visual Studio  
+### 若要將程式碼片段加入至 Visual Studio  
   
-1.  You can add your own snippets to your Visual Studio installation by using the Code Snippets Manager. Open the Code Snippets Manager (**Tools**, **Code Snippets Manager...**).  
+1.  使用程式碼片段管理員，您可以將您的程式碼片段加入至 Visual Studio 安裝。  開啟程式碼片段管理員 \(\[**工具\/程式碼片段管理員**\]\)。  
   
-2.  Click the **Import** button.  
+2.  按一下 \[**匯入**\] 按鈕。  
   
-3.  Go to the location where you saved the code snippet in the previous procedure, select it, and click **Open**.  
+3.  移至您在先前程序中儲存程式碼片段的位置，選取它，然後按一下 \[**開啟**\]。  
   
-4.  The **Import Code Snippet** dialog opens, asking you to choose where to add the snippet from the choices in the right pane. One of the choices should be **My Code Snippets**. Select it and click **Finish**, then **OK**.  
+4.  \[**匯入程式碼片段**\] 對話方塊隨即開啟，要求您從右窗格的選項中選擇在哪裡加入程式碼片段。  其中一個選擇應為 \[**My Code 程式碼片段**\]。  選取並按一下 \[**完成**\]，再按一下 \[**確定**\]。  
   
-5.  The snippet is copied to the following location:  
+5.  這個程式碼片段複製到下列位置：  
   
-     `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets`  
+     `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Test your snippet by opening a Visual Basic project and opening a code file. In the file click **Insert Snippet** on the context menu, then **My Code Snippets**. You should see a snippet named **My Visual Basic Code Snippet**. Double-click it.  
+6.  開啟 Visual Basic 專案並開啟程式碼檔，測試您的程式碼片段。  在檔案中，按一下內容功能表上的 \[**插入程式碼片段**\]，然後按一下 \[**My Code 程式碼片段**\]。  您應該會看到名為 \[**我的 Visual Basic 程式碼片段**\] 的程式碼片段。  按兩下它。  
   
-7.  You should see `Console.WriteLine("Hello, World!")` inserted in the code.  
+7.  您應會看到 `Console.WriteLine("Hello, World!")` 插入在程式碼中。  
   
-### <a name="adding-description-and-shortcut-fields"></a>Adding Description and Shortcut Fields  
+### 加入描述和捷徑欄位  
   
-1.  Description fields give more information about your code snippet when viewed in the Code Snippets Manager. The shortcut is a tag that users can type in order to insert your snippet. Edit the snippet you have added by opening the file `%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
+1.  描述當您在程式碼片段管理員中檢視時，提供程式碼片段詳細資訊的欄位。  捷徑是標記，使用者可以輸入標記，以插入您的程式碼片段。  編輯您開啟檔案 `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet` 所加入的程式碼片段。  
   
-2.  Add Author and Description elements to the Header element, and fill them in.  
+2.  將作者和描述項目加入至標頭項目，並將資料填入。  
   
-3.  The Header element should look something like this:  
+3.  標頭項目看起來會類似下列所示：  
   
-    ```xml  
+    ```  
     <Header>  
         <Title>Hello World VB</Title>  
         <Author>Myself</Author>  
@@ -119,11 +105,11 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  Open the Code Snippets Manager and select your code snippet. In the right pane you should see that the Description and Author fields are now populated.  
+4.  開啟程式碼片段管理員並選取您的程式碼片段。  在右窗格中，您應該會看到 \[描述\] 和 \[作者\] 欄位現在已填入。  
   
-5.  To add a shortcut, add a Shortcut element alongside the Author and Description element:  
+5.  若要加入捷徑，請加入 Shortcut 項目，以及 Author 和 Description 項目:  
   
-    ```xml  
+    ```  
     <Header>  
         <Title>Hello World VB</Title>  
         <Author>Myself</Author>  
@@ -133,19 +119,19 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-6.  Save the snippet file again.  
+6.  再次儲存程式碼片段檔案。  
   
-7.  To test the shortcut, open a Visual Basic project and open a code file. Type `hello` in the file and press TAB. The snippet code should be inserted.  
+7.  若要測試捷徑，開啟 Visual Basic 專案並開啟程式碼檔。  在檔案中輸入 `hello`，然後按 TAB。  應該插入程式碼片段。  
   
-### <a name="to-add-references-and-imports"></a>To Add References and Imports  
+### 加入參考和匯入  
   
-1.  With Visual Basic snippets you can add a reference to a project by using the References element, and add an Imports declaration by using the Imports element. (Snippets in other languages do not have this feature.) For example, if you change `Console.WriteLine` in the code example to `MessageBox.Show`, you may need to add the System.Windows.Forms.dll assembly to the project.  
+1.  Visual Basic 程式碼片段可讓您使用參考項目在專案中加入參考，以及使用匯入項目加入匯入宣告。\(其他語言中的程式碼片段沒有這項功能\)。例如，如果您將程式碼範例中的 `Console.WriteLine` 變更為 `MessageBox.Show`，則可能需要將 System.Windows.Forms.dll 組件加入至專案。  
   
-2.  Open your snippet.  
+2.  開啟您的程式碼片段。  
   
-3.  Add the References element under the Snippet element:  
+3.  在 Snippet 項目之下加入 References 項目：  
   
-    ```xml  
+    ```  
     <References>  
         <Reference>  
             <Assembly>System.Windows.Forms.dll</Assembly>  
@@ -154,9 +140,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  Add the Imports element under the Snippet element:  
+4.  在 Snippet 項目之下加入 Imports 項目：  
   
-    ```xml  
+    ```  
     <Imports>  
         <Import>  
            <Namespace>System.Windows.Forms</Namespace>  
@@ -165,34 +151,34 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-5.  Change the CDATA section to the following:  
+5.  將 CDATA 區段變更為下列項目：  
   
-    ```xml  
+    ```  
     <![CDATA[MessageBox.Show("Hello, World!")]]>  
     ```  
   
-6.  Save the snippet.  
+6.  儲存程式碼片段。  
   
-7.  Open a Visual Basic project and add the snippet.  
+7.  開啟 Visual Basic 專案並加入程式碼片段。  
   
-8.  You will see an Imports statement at the top of the code file:  
+8.  您會在程式碼行的頂端看見 Imports 陳述式：  
   
-    ```vb  
+    ```  
     Imports System.Windows.Forms  
   
     ```  
   
-9. Look at the project's properties. The References tab includes a reference to System.Windows.Forms.dll.  
+9. 查看專案的屬性。  \[參考\] 索引標籤包括 System.Windows.Forms.dll 的參考。  
   
-### <a name="adding-replacements"></a>Adding Replacements  
+### 加入取代文字  
   
-1.  You may want parts of your code snippets to be replaced by the user, for example if you add a variable and want the user to replace the variable with one in the current project. You can provide two types of replacements: literals and objects. Literals are strings of some type (string literals, variable names, or string representations of numeric values). Objects are instances of some type other than a string. In this procedure you will declare a literal replacement and an object replacement, and change the code to reference these replacements.  
+1.  您可以讓使用者取代部份程式碼片段，例如如果您加入變數並且希望使用者以目前專案中的變數取代該變數。  您可以提供兩種類型的取代:常值和物件。  常值是某個類型的字串 \(字串常值、變數名稱或數值字串表示\)。  物件是字串以外的某個類型的執行個體。  在這個程序中，您將宣告常值取代和物件取代，並變更程式碼以參考這些取代。  
   
-2.  Open your snippet.  
+2.  開啟您的程式碼片段。  
   
-3.  This example uses a SQL connection string, so you need to change the Imports and References elements to add the appropriate references:  
+3.  這個範例使用 SQL 連接字串，因此，您必須變更 Imports 和 References 項目加入適當的參考：  
   
-    ```xml  
+    ```  
     <References>  
         <Reference>  
             <Assembly>System.Data.dll</Assembly>  
@@ -212,9 +198,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-4.  To declare a literal replacement for the SQL connection string, add a Declarations element under the Snippet element, and in it add a Literal element with subelements for the ID, the tooltip, and the default value for the replacement:  
+4.  若要宣告 SQL 連接字串的常值取代，請在 Snippet 項目下方加入 Declarations 項目，在其中加入 Literal 項目與 ID、工具提示和取代預設值的子項目：  
   
-    ```xml  
+    ```  
     <Declarations>  
         <Literal>  
             <ID>SqlConnString</ID>  
@@ -225,9 +211,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-5.  To declare an object replacement for the SQL connection, add an Object element inside the Declarations element, and add sub-elements for the ID, the type of the object, the tooltip, and the default value. The resulting Declarations element should look like this:  
+5.  若要宣告 SQL 連接的物件取代，在 Declarations 項目內加入 Object 項目，然後加入 ID、物件類型、工具提示和預設值的子項目。  產生的 Declarations 項目看起來應該如下所示：  
   
-    ```xml  
+    ```  
     <Declarations>  
         <Literal>  
             <ID>SqlConnString</ID>  
@@ -243,9 +229,9 @@ You can create a code snippet with only a few steps. All you need to do is creat
     </Declarations>  
     ```  
   
-6.  In the code section, you reference the replacements with surrounding $ signs, for example `$replacement$`:  
+6.  在程式碼區段中，使用周圍 $ 符號參考取代文字，例如 `$replacement$`：  
   
-    ```xml  
+    ```  
     <Code Language="VB" Kind="method body">  
         <![CDATA[Dim daCustomers As SqlDataAdapter  
             Dim selectCommand As SqlCommand  
@@ -257,13 +243,13 @@ You can create a code snippet with only a few steps. All you need to do is creat
     </Code>  
     ```  
   
-7.  Save the snippet.  
+7.  儲存程式碼片段。  
   
-8.  Open a Visual Basic project and add the snippet.  
+8.  開啟 Visual Basic 專案並加入程式碼片段。  
   
-9. The code should look like the following, where the replacements `SQL connection string` and `dcConnection` are highlighted in light orange. Press TAB to navigate from one to the other.  
+9. 程式碼應該看起來如下，其中取代 `SQL connection string` 和 `dcConnection` 以淺橙反白顯示。  按 TAB 鍵從一個巡覽至另一個。  
   
-    ```vb  
+    ```  
     Dim daCustomers As SqlDataAdapter  
     Dim selectCommand As SqlCommand  
   
@@ -274,5 +260,5 @@ You can create a code snippet with only a few steps. All you need to do is creat
   
     ```  
   
-## <a name="see-also"></a>See Also  
- [Code Snippets Schema Reference](../ide/code-snippets-schema-reference.md)
+## 請參閱  
+ [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

@@ -1,89 +1,72 @@
 ---
-title: IEEVisualizerService::GetCustomViewerList | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IEEVisualizerService::GetCustomViewerList
-helpviewer_keywords:
-- IEEVisualizerService::GetCustomViewerList method
+title: "IEEVisualizerService::GetCustomViewerList | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IEEVisualizerService::GetCustomViewerList"
+helpviewer_keywords: 
+  - "IEEVisualizerService::GetCustomViewerList 方法"
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 9301d27a921ab549fd99c8d679f7c2601535d04e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
-This method returns a list of type visualizers that this service knows about.  
+# IEEVisualizerService::GetCustomViewerList
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法會傳回這項服務所知的型別視覺化檢視的清單。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetCustomViewerList(  
-   ULONG                celtSkip,  
-   ULONG                celtRequested,  
-   DEBUG_CUSTOM_VIEWER* rgViewers,  
-   ULONG*               pceltFetched  
+HRESULT GetCustomViewerList(  
+   ULONG                celtSkip,  
+   ULONG                celtRequested,  
+   DEBUG_CUSTOM_VIEWER* rgViewers,  
+   ULONG*               pceltFetched  
 );  
 ```  
   
-```csharp  
-int GetCustomViewerList(  
-   uint                  celtSkip,  
-   uint                  celtRequested,  
-   DEBUG_CUSTOM_VIEWER[] rgViewers,  
-   out uint              pceltFetched  
+```c#  
+int GetCustomViewerList(  
+   uint                  celtSkip,  
+   uint                  celtRequested,  
+   DEBUG_CUSTOM_VIEWER[] rgViewers,  
+   out uint              pceltFetched  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `celtSkip`  
- [in] Number of visualizers to skip over.  
+ \[in\]略過的視覺化檢視的數目。  
   
  `celRequested`  
- [in] Number of visualizers to retrieve (also specifies size of the `rgViewers` array).  
+ \[in\]若要擷取的視覺化檢視的數目 \(也會指定大小的`rgViewers`陣列\)。  
   
  `rgViewers`  
- [in, out] Array of [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures to be filled in.  
+ 輸入 \[、 輸出\]陣列的[DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)結構，以填入。  
   
  `pceltFetched`  
- [out] Number of visualizers actually retrieved.  
+ \[\] out實際擷取的視覺化檢視的數目。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) passes the request to this method as part of its support for type visualizers. If the expression evaluator also supplies custom viewers for the same type, it can append appropriately filled-out [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) structures for those custom viewers to the list. Make sure that [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) reflects those additional viewers.  
+## 備註  
+ [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)型別視覺化檢視，將要求傳遞至這個方法做為其支援的一部分。  如果運算式評估工具也會提供相同類型的自訂檢視器，可以將附加適當填寫[DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)這些自訂的檢視器清單的結構。  請確定[GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md)會反映這些額外的檢視器。  
   
- See [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) for details on the differences between visualizers and viewers.  
+ 請參閱[類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)如需詳細資訊，在視覺化檢視和檢視器之間的差異。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   
- [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
+ [DEBUG\_CUSTOM\_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)   
  [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)   
- [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md)   
- [Type Visualizer and Custom Viewer](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
+ [GetCustomViewerCount](../Topic/IDebugProperty3::GetCustomViewerCount.md)   
+ [類型的視覺化檢視和自訂檢視器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

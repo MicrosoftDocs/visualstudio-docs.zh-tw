@@ -8,13 +8,18 @@ ms.tgt_pltfrm:
 ms.topic: article
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
+dev_langs:
+- VB
+- CSharp
+- C++
+- aspx
 helpviewer_keywords:
 - data [Visual Studio], data sources
 - data sources
 ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 56
-author: gewarren
-ms.author: gewarren
+author: mikeblome
+ms.author: mblome
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -32,10 +37,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 9a66d0ffd2ed77b8b64a3dc0000db81bc7270ae5
+ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
+ms.openlocfilehash: b8e9d2a517e673cd7f44f1a392d6179f1c6b0801
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 08/22/2017
 
 ---
 # <a name="add-new-data-sources"></a>Add new data sources
@@ -89,7 +94,7 @@ In the context of .NET data tools in Visual Studio, the term *data source* refer
   
 -   WCF Data Services. For more information, see [Overview](/dotnet/framework/data/wcf/wcf-data-services-overview).  
   
--   WCF services. For more information, see [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+-   WCF data services. For more information, see [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
 -   Web services.  
   

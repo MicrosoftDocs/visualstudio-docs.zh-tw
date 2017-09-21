@@ -98,7 +98,7 @@ ms.lasthandoff: 09/06/2017
         test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d]')
     ```
 
-1. 使用 [偵錯] > [啟動但不偵錯] (Ctrl + F5) 執行程式，來查看結果。 每個基準測試需要數秒才能完成。
+1. 使用 [偵錯] > [啟動但不偵錯]\(Ctrl + F5) 執行程式，來查看結果。 每個基準測試需要數秒才能完成。
 
 ## <a name="create-the-core-c-project"></a>建立核心 C++ 專案
 

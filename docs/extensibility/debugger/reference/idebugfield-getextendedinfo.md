@@ -1,83 +1,66 @@
 ---
-title: IDebugField::GetExtendedInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugField::GetExtendedInfo
-helpviewer_keywords:
-- IDebugField::GetExtendedInfo method
+title: "IDebugField::GetExtendedInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugField::GetExtendedInfo"
+helpviewer_keywords: 
+  - "IDebugField::GetExtendedInfo 方法"
 ms.assetid: 46c0dd4d-4fd5-4efd-a908-71e4248e8e8d
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3610a9e61d6140fee11a6db4a30060fa02207981
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
-This method gets extended information about a field.  
+# IDebugField::GetExtendedInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+這個方法取得擴充欄位的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetExtendedInfo(   
-   REFGUID guidExtendedInfo,  
-   BYTE**  prgBuffer,  
-   DWORD*  pdwLen  
+```cpp#  
+HRESULT GetExtendedInfo(   
+   REFGUID guidExtendedInfo,  
+   BYTE**  prgBuffer,  
+   DWORD*  pdwLen  
 );  
 ```  
   
-```csharp  
+```c#  
 int GetExtendedInfo(  
-   ref Guid guidExtendedInfo,   
-   IntPtr[] prgBuffer,   
-   ref uint pdwLen  
+   ref Guid guidExtendedInfo,   
+   IntPtr[] prgBuffer,   
+   ref uint pdwLen  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `guidExtendedInfo`  
- [in] Selects the information to be returned. Valid values are:  
+ \[in\]選取要傳回的資訊。  有效值為：  
   
-|Value|Description|  
-|-----------|-----------------|  
-|`guidConstantValue`|The value as a sequence of bytes.|  
-|`guidConstantType`|The type as a type signature.|  
+|值|描述|  
+|-------|--------|  
+|`guidConstantValue`|成為一連串的位元組的值。|  
+|`guidConstantType`|型別簽名碼為型別。|  
   
  `prgBuffer`  
- [out] Returns the extended information.  
+ \[\] out傳回額外的資訊。  
   
  `pdwLen`  
- [in, out] Returns the size of the extended information, in bytes.  
+ 輸入 \[、 輸出\]會傳回大小的額外的資訊，以位元組為單位。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Currently, this method returns only the type or value of a constant. The caller must free the buffer returned in `prgBuffer` by calling COM's `CoTaskMemFree` function (C++) or <xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> (C#).  
+## 備註  
+ 目前，這個方法會傳回只有型別或常數的值。  呼叫端必須釋放傳回在緩衝區`prgBuffer`地呼叫 COM 的`CoTaskMemFree`函式 \(c \+ \+\) 或<xref:System.Runtime.InteropServices.Marshal.FreeCoTaskMem%2A> \(C\#\)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

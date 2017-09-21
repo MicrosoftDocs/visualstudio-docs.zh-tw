@@ -16,8 +16,8 @@ dev_langs:
 - CSharp
 ms.assetid: 92d55e68-8f3f-4bf7-a21b-801c298b04c4
 caps.latest.revision: 21
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

@@ -1,70 +1,53 @@
 ---
-title: IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-helpviewer_keywords:
-- IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+title: "IDebugBreakpointBoundEvent2::GetPendingBreakpoint | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
+helpviewer_keywords: 
+  - "IDebugBreakpointBoundEvent2::GetPendingBreakpoint"
 ms.assetid: 6da7ed86-b412-4964-b6a3-0687a66f63fe
 caps.latest.revision: 11
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bfbcd8bcdedc11a65076defef7fc66f0fe964d9b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 11
 ---
-# <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
-Gets the pending breakpoint that is being bound.  
+# IDebugBreakpointBoundEvent2::GetPendingBreakpoint
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得正在進行繫結的暫止中斷點。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetPendingBreakpoint(   
-   IDebugPendingBreakpoint2** ppPendingBP  
+```cpp#  
+HRESULT GetPendingBreakpoint(   
+   IDebugPendingBreakpoint2** ppPendingBP  
 );  
 ```  
   
-```cpp  
-int GetPendingBreakpoint(   
-   out IDebugPendingBreakpoint2 ppPendingBP  
+```cpp#  
+int GetPendingBreakpoint(   
+   out IDebugPendingBreakpoint2 ppPendingBP  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ppPendingBP`  
- [out] Returns the [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) object that represents the pending breakpoint being bound.  
+ \[\] out傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示要繫結的暫止中斷點。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CBreakpointSetDebugEventBase** object that exposes the [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md) interface.  
+## 範例  
+ 下列範例會示範如何實作這個方法，如 **CBreakpointSetDebugEventBase** 物件，公開 \(expose\) [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)介面。  
   
-```cpp  
+```cpp#  
 STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(  
     IDebugPendingBreakpoint2 **ppPendingBP)  
 {  
@@ -90,6 +73,6 @@ STDMETHODIMP CBreakpointSetDebugEventBase::GetPendingBreakpoint(
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

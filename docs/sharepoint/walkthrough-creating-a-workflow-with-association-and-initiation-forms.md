@@ -23,8 +23,8 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 ms.assetid: c8666d8c-b173-4245-8014-9c1cd6acb071
 caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8

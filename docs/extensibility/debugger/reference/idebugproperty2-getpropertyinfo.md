@@ -1,93 +1,76 @@
 ---
-title: IDebugProperty2::GetPropertyInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugProperty2::GetPropertyInfo
-helpviewer_keywords:
-- IDebugProperty2::GetPropertyInfo
+title: "IDebugProperty2::GetPropertyInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugProperty2::GetPropertyInfo"
+helpviewer_keywords: 
+  - "IDebugProperty2::GetPropertyInfo"
 ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8c89d4df9385e65d3230c4c7ead961d5a5286aa8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-Gets the [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure that describes a property.  
+# IDebugProperty2::GetPropertyInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得[DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)結構描述屬性。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetPropertyInfo (   
-   DEBUGPROP_INFO_FLAGS dwFields,  
-   DWORD                nRadix,  
-   DWORD                dwTimeout,  
-   IDebugReference2**   rgpArgs,  
-   DWORD                dwArgCount,  
-   DEBUG_PROPERTY_INFO* pPropertyInfo  
+```cpp#  
+HRESULT GetPropertyInfo (   
+   DEBUGPROP_INFO_FLAGS dwFields,  
+   DWORD                nRadix,  
+   DWORD                dwTimeout,  
+   IDebugReference2**   rgpArgs,  
+   DWORD                dwArgCount,  
+   DEBUG_PROPERTY_INFO* pPropertyInfo  
 );  
 ```  
   
-```cpp  
-int GetPropertyInfo (   
-   enum_DEBUGPROP_INFO_FLAGS dwFields,  
-   uint                      nRadix,  
-   uint                      dwTimeout,  
-   IDebugReference2[]        rgpArgs,  
-   uint                      dwArgCount,  
-   DEBUG_PROPERTY_INFO[]     pPropertyInfo  
+```cpp#  
+int GetPropertyInfo (   
+   enum_DEBUGPROP_INFO_FLAGS dwFields,  
+   uint                      nRadix,  
+   uint                      dwTimeout,  
+   IDebugReference2[]        rgpArgs,  
+   uint                      dwArgCount,  
+   DEBUG_PROPERTY_INFO[]     pPropertyInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwFields`  
- [in] A combination of values from the [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeration that specifies which fields are to be filled out in the `pPropertyInfo` structure.  
+ \[in\]從值的組合[DEBUGPROP\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)列舉型別會指定哪一個欄位中填寫， `pPropertyInfo`結構。  
   
  `nRadix`  
- [in] Radix to be used in formatting any numerical information.  
+ \[in\]要用於格式化數字的任何資訊的基數。  
   
  `dwTimeout`  
- [in] Specifies the maximum time, in milliseconds, to wait before returning from this method. Use `INFINITE` to wait indefinitely.  
+ \[in\]以毫秒為單位，這個方法傳回之前等待指定的最長的時間。  使用`INFINITE`無限期地等待。  
   
  `rgpArgs`  
- [in, out] Reserved for future use; set to a null value.  
+ 輸入 \[、 輸出\]保留供日後使用。 設定為 null 值。  
   
  `dwArgCount`  
- [in] Reserved for future use; set to zero.  
+ \[in\]保留供日後使用。 設為零。  
   
  `pPropertyInfo`  
- [out] A [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure that is filled in with the description of the property.  
+ \[\] outA [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)會填入這些屬性的描述的結構。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise returns error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
- [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
+ [DEBUGPROP\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
+ [DEBUG\_PROPERTY\_INFO](../../../extensibility/debugger/reference/debug-property-info.md)

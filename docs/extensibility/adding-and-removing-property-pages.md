@@ -1,54 +1,37 @@
 ---
-title: Adding and Removing Property Pages | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- property pages, adding
-- property pages, project subtypes
-- property pages, removing
+title: "加入和移除屬性頁 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "屬性頁中加入"
+  - "屬性頁中的專案子類型"
+  - "屬性頁中移除"
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 29
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c3071e70c34a139dad20484f783ab32e6bd081e9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 29
 ---
-# <a name="adding-and-removing-property-pages"></a>Adding and Removing Property Pages
-The Project Designer provides a centralized location for managing project properties, settings, and resources in [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. It appears as a single window in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] integrated development environment (IDE) and contains a number of panes on the right that are accessed through the tabs on the left. The panes (often referred to as property pages) in the Project Designer vary by project type and language. The Project Designer can be accessed with the **Properties** command on the **Project** menu.  
+# 加入和移除屬性頁
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+專案設計工具提供集中的位置，來管理專案屬性、 設定和資源在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  它會以單一視窗中出現[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合開發環境 \(IDE\)，並包含在右邊窗格，可以透過左邊的索引標籤存取的數字。  \(時常被稱為屬性頁\)\] 在專案設計工具窗格會因專案類型和語言而定。  專案設計工具可以使用存取**屬性** 命令 **專案**功能表。  
   
- A project subtype frequently needs to display additional property pages in the Project Designer. Likewise, some project subtypes might require that built-in property pages be removed. To do either, your project subtype must implement the <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> interface and override the <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> method. By overriding this method and using `propId` parameter containing one of the values of the <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> enumeration, you can filter, add or remove project properties. For example, you might need to add a page to the configuration-dependent property pages. To do this, you need to filter configuration-dependent property pages and then add a new page to the existing list.  
+ 專案子類型 」 常需要在專案設計工具中顯示額外的屬性頁。  同樣地，某些專案子類型可能需要移除內建屬性頁。  如果要執行兩項作業，您的專案子類型必須實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>介面，並覆寫<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>方法。  藉由覆寫這個方法，並使用`propId`參數包含的值的其中一個<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>列舉型別，您可以篩選、 新增或移除專案屬性。  例如，您可能需要組態相關屬性頁中加入頁面。  若要這樣做，您要篩選組態相關屬性頁，然後將新頁面新增至現有的清單。  
   
-## <a name="adding-and-removing-property-pages-in-project-designer"></a>Adding and Removing Property Pages in Project Designer  
+## 加入和移除專案設計工具中的 \[屬性頁  
   
-#### <a name="to-remove-a-property-page-in-project-designer"></a>To remove a property page in Project Designer  
+#### 若要移除 \[專案設計工具中的 \[屬性頁  
   
-1.  Override the `GetProperty(uint itemId, int propId, out object property)` method to filter property pages and obtain a `clsids` list.  
+1.  覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁，並取得`clsids`清單。  
   
-    ```vb  
+    ```vb#  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
         'Use propId to filter configuration-independent property pages.  
@@ -68,7 +51,7 @@ The Project Designer provides a centralized location for managing project proper
   
     ```  
   
-    ```csharp  
+    ```c#  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-independent property pages.  
@@ -91,9 +74,9 @@ The Project Designer provides a centralized location for managing project proper
     }  
     ```  
   
-2.  Remove the **Build Events** page from obtained `clsids` list.  
+2.  移除**建置事件**從網頁取得`clsids`清單。  
   
-    ```vb  
+    ```vb#  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
     Private index As Integer = propertyPagesList.IndexOf(buildEventsPageGuid)  
     If index <> -1 Then  
@@ -109,7 +92,7 @@ The Project Designer provides a centralized location for managing project proper
     property = propertyPagesList  
     ```  
   
-    ```csharp  
+    ```c#  
     string buildEventsPageGuid = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}";  
     int index = propertyPagesList.IndexOf(buildEventsPageGuid);  
     if (index != -1)  
@@ -125,11 +108,11 @@ The Project Designer provides a centralized location for managing project proper
     property = propertyPagesList;  
     ```  
   
-#### <a name="to-add-a-property-page-in-project-designer"></a>To add a property page in Project Designer  
+#### 若要在專案設計工具中加入一個屬性頁  
   
-1.  Create a property page you want to add.  
+1.  建立您想要新增的屬性頁。  
   
-    ```vb  
+    ```vb#  
     Class DeployPropertyPage  
             Inherits Form  
             Implements Microsoft.VisualStudio.OLE.Interop.IPropertyPage  
@@ -151,7 +134,7 @@ The Project Designer provides a centralized location for managing project proper
     End Class  
     ```  
   
-    ```csharp  
+    ```c#  
     class DeployPropertyPage : Form, Microsoft.VisualStudio.OLE.Interop.IPropertyPage  
     {  
         . . . .   
@@ -172,19 +155,19 @@ The Project Designer provides a centralized location for managing project proper
     }  
     ```  
   
-2.  Register your new property page.  
+2.  註冊新的屬性頁。  
   
-    ```vb  
+    ```vb#  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
     ```  
   
-    ```csharp  
+    ```c#  
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Override the `GetProperty(uint itemId, int propId, out object property)` method to filter property pages, obtain a `clsids` list and add a new property page.  
+3.  覆寫`GetProperty(uint itemId, int propId, out object property)`方法，以篩選屬性頁、 取得`clsids`清單，並加入新的屬性頁。  
   
-    ```vb  
+    ```vb#  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
         'Use propId to filter configuration-dependent property pages.  
         Select Case propId  
@@ -200,7 +183,7 @@ The Project Designer provides a centralized location for managing project proper
     End Function  
     ```  
   
-    ```csharp  
+    ```c#  
     protected override int GetProperty(uint itemId, int propId, out object property)  
     {  
         //Use propId to filter configuration-dependent property pages.  
@@ -221,7 +204,7 @@ The Project Designer provides a centralized location for managing project proper
     ```  
   
 > [!NOTE]
->  All code examples provided in this topic are parts of a larger example in [VSSDK Samples](http://aka.ms/vs2015sdksamples).  
+>  本主題提供的所有程式碼範例是 「 組件的較大的範例中， [VSSDK 範例](../misc/vssdk-samples.md)。  
   
-## <a name="see-also"></a>See Also  
- [Project Subtypes](../extensibility/internals/project-subtypes.md)
+## 請參閱  
+ [專案子類型](../extensibility/internals/project-subtypes.md)

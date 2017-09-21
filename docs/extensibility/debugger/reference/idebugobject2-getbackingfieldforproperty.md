@@ -1,68 +1,51 @@
 ---
-title: IDebugObject2::GetBackingFieldForProperty | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugObject2::GetBackingFieldForProperty
-helpviewer_keywords:
-- IDebugObject2::GetBackingFieldForProperty method
+title: "IDebugObject2::GetBackingFieldForProperty | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugObject2::GetBackingFieldForProperty"
+helpviewer_keywords: 
+  - "IDebugObject2::GetBackingFieldForProperty 方法"
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 caps.latest.revision: 7
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: efc582a0eaf5a4e3ccfb0f976ce7dbc60d665f9a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 7
 ---
-# <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
-Gets the field or variable (if any) that may be backing the property represented by this object.  
+# IDebugObject2::GetBackingFieldForProperty
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得變數的欄位 \(如果有的話\)，可能會支援這個物件所表示的屬性。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
 ```cpp  
-HRESULT GetBackingFieldForProperty(  
-   IDebugObject2** ppObject  
+HRESULT GetBackingFieldForProperty(  
+   IDebugObject2** ppObject  
 );  
 ```  
   
-```csharp  
-int GetBackingFieldForProperty(  
-   out IDebugObject2 ppObject  
+```c#  
+int GetBackingFieldForProperty(  
+   out IDebugObject2 ppObject  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `ppObject`  
- [out] An [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) object describing the backing field.  
+ \[\] out[IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)物件，描述支援的欄位。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) object represents a managed code class property, that is, a method with a get and/or set accessor. Such properties generally require a variable to contain the value manipulated by the property. This variable is known as the backing field. If there is no backing field for the object, then make sure to return a null value: some callers may not pay attention to the return value but will instead look to see if a null value was returned in `ppObject`.  
+## 備註  
+ [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)物件代表一個 managed 程式碼類別屬性，也就是使用 get 方法和 \(或\) set 存取子。  這類屬性通常會需要變數來包含操作屬性的值。  這個變數就是所謂的支援欄位。  如果物件不支援欄位，請務必傳回 null 值： 某些呼叫端可能不會注意到傳回的值，但會看起來中已傳回了 null 值，請參閱`ppObject`。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

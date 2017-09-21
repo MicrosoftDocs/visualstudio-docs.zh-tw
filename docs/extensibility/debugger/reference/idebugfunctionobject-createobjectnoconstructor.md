@@ -1,77 +1,60 @@
 ---
-title: IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugFunctionObject::CreateObjectNoConstructor
-helpviewer_keywords:
-- IDebugFunctionObject::CreateObjectNoConstructor method
+title: "IDebugFunctionObject::CreateObjectNoConstructor | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugFunctionObject::CreateObjectNoConstructor"
+helpviewer_keywords: 
+  - "IDebugFunctionObject::CreateObjectNoConstructor 方法"
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 caps.latest.revision: 9
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7e739ec710320cf6c0cfa9a6e75ef4626652d5dd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 9
 ---
-# <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
-Creates an object with no constructor.  
+# IDebugFunctionObject::CreateObjectNoConstructor
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+沒有建構函式以建立物件。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT CreateObjectNoConstructor(   
-   IDebugField*   pClassObject,  
-   IDebugObject** ppObject  
+```cpp#  
+HRESULT CreateObjectNoConstructor(   
+   IDebugField*   pClassObject,  
+   IDebugObject** ppObject  
 );  
 ```  
   
-```csharp  
+```c#  
 int CreateObjectNoConstructor(  
-   IDebugField      pClassField,   
-   out IDebugObject ppObject  
+   IDebugField      pClassField,   
+   out IDebugObject ppObject  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `pClassObject`  
- [in] An [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) object representing the type of the object to be created.  
+ \[in\][IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，表示要建立物件的型別。  
   
  `ppObject`  
- [out] Returns an [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) representing the newly created object.  
+ \[\] out傳回[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表剛建立的物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns S_OK; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- Call this method to create an object that represents an instance of a structure or complex type (that does not require a constructor) that is a parameter to the function which is represented by the [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.  
+## 備註  
+ 呼叫這個方法來建立物件，表示執行個體的結構或複雜型別 \(也就不需要建構函式\) 是函式的參數，這由[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)介面。  
   
- If the object parameter requires a constructor, call the [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md) method.  
+ 如果物件參數需要一個建構函式，呼叫[建立物件](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)方法。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)   
- [CreateObject](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)
+ [建立物件](../../../extensibility/debugger/reference/idebugfunctionobject-createobject.md)

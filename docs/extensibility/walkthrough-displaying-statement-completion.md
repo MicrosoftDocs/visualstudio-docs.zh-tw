@@ -1,61 +1,44 @@
 ---
-title: 'Walkthrough: Displaying Statement Completion | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- editors [Visual Studio SDK], new - statement completion
+title: "逐步解說: 顯示陳述式完成 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "編輯器 [Visual Studio SDK]，新的陳述式完成"
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 36
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4398bccf0f043871237a7b41a3454537bb08abd5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 36
 ---
-# <a name="walkthrough-displaying-statement-completion"></a>Walkthrough: Displaying Statement Completion
-You can implement language-based statement completion by defining the identifiers for which you want to provide completion and then triggering a completion session. You can define statement completion in the context of a language service, define your own file name extension and content type and then display completion for just that type, or you can trigger completion for an existing content type—for example, "plaintext". This walkthrough shows how to trigger statement completion for the "plaintext" content type, which is the content type of text files. The "text" content type is the ancestor of all other content types, including code and XML files.  
+# 逐步解說: 顯示陳述式完成
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+您可以定義您要提供完成的識別項，然後觸發完成的工作階段，以實作語言為基礎的陳述式完成。 您可以語言服務內容中定義陳述式完成、 定義您自己的檔案名稱副檔名和內容類型，然後顯示完成只是該型別，或者完成現有的內容類型的觸發程序 — 例如，「 純文字 」。 本逐步解說示範如何觸發陳述式完成 「 純文字 」 內容類型，也就是文字檔案的內容類型。 「 文字 」 內容類型是所有其他內容類型，包括程式碼和 XML 檔案的上階。  
   
- Statement completion is typically triggered by typing certain characters—for example, by typing the beginning of an identifier such as "using". It is typically dismissed by pressing the Spacebar, Tab, or Enter key to commit a selection. You can implement the IntelliSense features that are triggered by typing a character by using a command handler for the keystrokes (the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface) and a handler provider that implements the <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> interface. To create the completion source, which is the list of identifiers that participate in completion, implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> interface and a completion source provider (the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> interface). The providers are Managed Extensibility Framework (MEF) component parts. They are responsible for exporting the source and controller classes and importing services and brokers—for example, the <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, which enables navigation in the text buffer, and the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, which triggers the completion session.  
+ 陳述式完成通常會觸發輸入特定的字元 — 例如，藉由輸入的識別碼，例如 「 使用 」 的開頭。 它通常被按下空格鍵、 Tab 或 Enter 鍵，確認選取項目。 您可以實作 IntelliSense 功能所觸發的輸入字元的按鍵輸入使用的命令處理常式 \( <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面\) 和處理常式提供者實作 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> 介面。 若要建立完成來源時，這是參與完成的識別項的清單，實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource> 介面和完成來源提供者 \( <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider> 介面\)。 提供者是 Managed Extensibility Framework \(MEF\) 元件組件。 他們要負責匯出的來源和控制器類別和匯入服務和代理程式 — 例如， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, ，可讓文字緩衝區中，瀏覽和 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, ，而觸發完成的工作階段。  
   
- This walkthrough shows how to implement statement completion for a hard-coded set of identifiers. In full implementations, the language service and the language documentation are responsible for providing that content.  
+ 本逐步解說示範如何實作硬式編碼的組的識別項的陳述式完成。 在完整的實作中，語言服務和語言文件有責任提供該內容。  
   
-## <a name="prerequisites"></a>Prerequisites  
- Starting in Visual Studio 2015, you do not install the Visual Studio SDK from the download center. It is included as an optional feature in Visual Studio setup. You can also install the VS SDK later on. For more information, see [Installing the Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
+## 必要條件  
+ 啟動 Visual Studio 2015 中，您未安裝 Visual Studio SDK 從 「 下載中心 」。 它是 Visual Studio 安裝程式的選用功能。 您也可以在稍後安裝 VS SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。  
   
-## <a name="creating-a-mef-project"></a>Creating a MEF Project  
+## 建立 MEF 專案  
   
-#### <a name="to-create-a-mef-project"></a>To create a MEF project  
+#### 建立 MEF 專案  
   
-1.  Create a C# VSIX project. (In the **New Project** dialog, select **Visual C# / Extensibility**, then **VSIX Project**.) Name the solution `CompletionTest`.  
+1.  建立 C\# VSIX 專案。 \(在 **新的專案** 對話方塊中，選取 **Visual C\# \/ 擴充性**, ，然後 **VSIX 專案**。\) 將方案命名為 `CompletionTest`。  
   
-2.  Add an Editor Classifier item template to the project. For more information, see [Creating an Extension with an Editor Item Template](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2.  將編輯器分類項目範本加入至專案。 如需詳細資訊，請參閱[使用編輯器項目範本建立擴充功能](../extensibility/creating-an-extension-with-an-editor-item-template.md)。  
   
-3.  Delete the existing class files.  
+3.  刪除現有類別檔案。  
   
-4.  Add the following references to the project and make sure that **CopyLocal** is set to `false`:  
+4.  下列參考加入至專案，並確定 **CopyLocal** 設為 `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -69,134 +52,155 @@ You can implement language-based statement completion by defining the identifier
   
      Microsoft.VisualStudio.TextManager.Interop  
   
-## <a name="implementing-the-completion-source"></a>Implementing the Completion Source  
- The completion source is responsible for collecting the set of identifiers and adding the content to the completion window when a user types a completion trigger, such as the first letters of an identifier. In this example, the identifiers and their descriptions are hard-coded in the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> method. In most real-world uses, you would use your language's parser to get the tokens to populate the completion list.  
+## 實作完成來源  
+ 完成來源負責收集組的識別項，並將內容加入至完成視窗中，當使用者輸入完成觸發程序，例如識別項的第一個字母。 在此範例中，識別項和其描述是硬式編碼 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> 方法。 在大部分的實際用途，您會使用您的語言剖析器取得的權杖來擴展完成清單。  
   
-#### <a name="to-implement-the-completion-source"></a>To implement the completion source  
+#### 若要實作完成來源  
   
-1.  Add a class file and name it `TestCompletionSource`.  
+1.  將類別檔案，並將它 `TestCompletionSource`。  
   
-2.  Add these imports:  
+2.  新增這些匯入:  
   
-     [!code-csharp[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]  [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]  
+     [!code-cs[VSSDKCompletionTest#1](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_1.cs)]
+     [!code-vb[VSSDKCompletionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_1.vb)]  
   
-3.  Modify the class declaration for `TestCompletionSource` so that it implements <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3.  修改的類別宣告 `TestCompletionSource` ，使其實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
   
-     [!code-csharp[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]  [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]  
+     [!code-cs[VSSDKCompletionTest#2](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_2.cs)]
+     [!code-vb[VSSDKCompletionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_2.vb)]  
   
-4.  Add private fields for the source provider, the text buffer, and a list of <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objects (which correspond to the identifiers that will participate in the completion session):  
+4.  加入私用欄位的來源提供者、 文字緩衝區，以及一份 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 物件 \(對應至要參與完成的工作階段識別項\):  
   
-     [!code-csharp[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]  [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]  
+     [!code-cs[VSSDKCompletionTest#3](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_3.cs)]
+     [!code-vb[VSSDKCompletionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_3.vb)]  
   
-5.  Add a constructor that sets the source provider and buffer. The `TestCompletionSourceProvider` class is defined in later steps:  
+5.  新增設定的來源提供者和緩衝區的建構函式。`TestCompletionSourceProvider` 類別定義於稍後的步驟:  
   
-     [!code-csharp[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]  [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]  
+     [!code-cs[VSSDKCompletionTest#4](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_4.cs)]
+     [!code-vb[VSSDKCompletionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_4.vb)]  
   
-6.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> method by adding a completion set that contains the completions you want to provide in the context. Each completion set contains a set of <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> completions, and corresponds to a tab of the completion window. (In Visual Basic projects, the completion window tabs are named **Common** and **All**.) The FindTokenSpanAtPosition method is defined in the next step.  
+6.  實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> 您想要提供的內容中加入一個完成集合，包含所完成的方法。 每個完成集包含一組 <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> 完成項數目，而對應的索引標籤的 \[完成\] 視窗。 \(在 Visual Basic 專案完成視窗索引標籤會命名為 **常見** 和 **所有**。\) FindTokenSpanAtPosition 方法被定義在下一個步驟。  
   
-     [!code-csharp[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]  [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]  
+     [!code-cs[VSSDKCompletionTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_5.cs)]
+     [!code-vb[VSSDKCompletionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_5.vb)]  
   
-7.  The following method is used to find the current word from the position of the cursor:  
+7.  若要尋找目前的文字從游標的位置使用下列方法:  
   
-     [!code-csharp[VSSDKCompletionTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_6.cs)]  [!code-vb[VSSDKCompletionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_6.vb)]  
+     [!code-cs[VSSDKCompletionTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_6.cs)]
+     [!code-vb[VSSDKCompletionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_6.vb)]  
   
-8.  Implement the `Dispose()` method:  
+8.  實作 `Dispose()` 方法:  
   
-     [!code-csharp[VSSDKCompletionTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_7.cs)]  [!code-vb[VSSDKCompletionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_7.vb)]  
+     [!code-cs[VSSDKCompletionTest#7](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_7.cs)]
+     [!code-vb[VSSDKCompletionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_7.vb)]  
   
-## <a name="implementing-the-completion-source-provider"></a>Implementing the Completion Source Provider  
- The completion source provider is the MEF component part that instantiates the completion source.  
+## 實作完成來源提供者  
+ 完成來源提供者已具現化完成來源 MEF 元件組件。  
   
-#### <a name="to-implement-the-completion-source-provider"></a>To implement the completion source provider  
+#### 若要實作完成來源提供者  
   
-1.  Add a class named `TestCompletionSourceProvider` that implements <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Export this class with a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "plaintext" and a <xref:Microsoft.VisualStudio.Utilities.NameAttribute> of "test completion".  
+1.  新增名為 `TestCompletionSourceProvider` 實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>。 匯出與這個類別 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 「 純文字 」 和 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 的 「 測試完成 」。  
   
-     [!code-csharp[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]  [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]  
+     [!code-cs[VSSDKCompletionTest#8](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_8.cs)]
+     [!code-vb[VSSDKCompletionTest#8](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_8.vb)]  
   
-2.  Import a <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, which is used to find the current word in the completion source.  
+2.  匯入 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, ，用來尋找目前的文字完成來源中。  
   
-     [!code-csharp[VSSDKCompletionTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_9.cs)]  [!code-vb[VSSDKCompletionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_9.vb)]  
+     [!code-cs[VSSDKCompletionTest#9](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_9.cs)]
+     [!code-vb[VSSDKCompletionTest#9](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_9.vb)]  
   
-3.  Implement the <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> method to instantiate the completion source.  
+3.  實作 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> 方法具現化完成來源。  
   
-     [!code-csharp[VSSDKCompletionTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_10.cs)]  [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]  
+     [!code-cs[VSSDKCompletionTest#10](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_10.cs)]
+     [!code-vb[VSSDKCompletionTest#10](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_10.vb)]  
   
-## <a name="implementing-the-completion-command-handler-provider"></a>Implementing the Completion Command Handler Provider  
- The completion command handler provider is derived from a <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, which listens for a text view creation event and converts the view from an <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>—which enables the addition of the command to the command chain of the Visual Studio shell—to an <xref:Microsoft.VisualStudio.Text.Editor.ITextView>. Because this class is a MEF export, you can also use it to import the services that are required by the command handler itself.  
+## 實作完成命令處理常式提供者  
+ 完成命令處理常式提供者衍生自 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>, ，其文字檢視建立事件接聽，並將從檢視轉換 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>— 可讓 Visual Studio shell 的命令鏈結的命令加入 — 至 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>。 因為這個類別是 MEF 匯出，您也可以使用它來匯入命令處理常式本身所需的服務。  
   
-#### <a name="to-implement-the-completion-command-handler-provider"></a>To implement the completion command handler provider  
+#### 若要實作完成命令處理常式提供者  
   
-1.  Add a file named `TestCompletionCommandHandler`.  
+1.  新增名為 `TestCompletionCommandHandler`。  
   
-2.  Add these using statements:  
+2.  加入下列 using 陳述式:  
   
-     [!code-csharp[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]  [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]  
+     [!code-cs[VSSDKCompletionTest#11](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_11.cs)]
+     [!code-vb[VSSDKCompletionTest#11](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_11.vb)]  
   
-3.  Add a class named `TestCompletionHandlerProvider` that implements <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Export this class with a <xref:Microsoft.VisualStudio.Utilities.NameAttribute> of "token completion handler", a <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> of "plaintext", and a <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> of <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
+3.  新增名為 `TestCompletionHandlerProvider` 實作 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>。 匯出與這個類別 <xref:Microsoft.VisualStudio.Utilities.NameAttribute> 「 語彙基元的完成處理常式 」 的 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 「 純文字 」 和 <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> 的 <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>。  
   
-     [!code-csharp[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]  [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]  
+     [!code-cs[VSSDKCompletionTest#12](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_12.cs)]
+     [!code-vb[VSSDKCompletionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_12.vb)]  
   
-4.  Import the <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, which enables conversion from a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> to a <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, a <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, and a <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> that enables access to standard Visual Studio services.  
+4.  匯入 <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, ，可讓從 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 到 <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, 、 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>, ，和 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> ，可讓您存取標準的 Visual Studio 服務。  
   
-     [!code-csharp[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]  [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]  
+     [!code-cs[VSSDKCompletionTest#13](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_13.cs)]
+     [!code-vb[VSSDKCompletionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_13.vb)]  
   
-5.  Implement the <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> method to instantiate the command handler.  
+5.  實作 <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> 方法具現化的命令處理常式。  
   
-     [!code-csharp[VSSDKCompletionTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_14.cs)]  [!code-vb[VSSDKCompletionTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_14.vb)]  
+     [!code-cs[VSSDKCompletionTest#14](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_14.cs)]
+     [!code-vb[VSSDKCompletionTest#14](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_14.vb)]  
   
-## <a name="implementing-the-completion-command-handler"></a>Implementing the Completion Command Handler  
- Because statement completion is triggered by keystrokes, you must implement the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface to receive and process the keystrokes that trigger, commit, and dismiss the completion session.  
+## 實作完成命令處理常式  
+ 因為按鍵動作所觸發陳述式完成時，您必須實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面來接收及處理觸發程序、 認可和關閉完成的工作階段的按鍵。  
   
-#### <a name="to-implement-the-completion-command-handler"></a>To implement the completion command handler  
+#### 若要實作完成命令處理常式  
   
-1.  Add a class named `TestCompletionCommandHandler` that implements <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
+1.  新增名為 `TestCompletionCommandHandler` 實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>:  
   
-     [!code-csharp[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]  [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
+     [!code-cs[VSSDKCompletionTest#15](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_15.cs)]
+     [!code-vb[VSSDKCompletionTest#15](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_15.vb)]  
   
-2.  Add private fields for the next command handler (to which you pass the command), the text view, the command handler provider (which enables access to various services), and a completion session:  
+2.  加入私用欄位 \(要您傳遞的命令\) 的下一個命令處理常式、 文字檢視、 命令處理常式提供者 \(這可讓您存取各種服務\)，並完成工作階段:  
   
-     [!code-csharp[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]  [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
+     [!code-cs[VSSDKCompletionTest#16](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_16.cs)]
+     [!code-vb[VSSDKCompletionTest#16](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_16.vb)]  
   
-3.  Add a constructor that sets the text view and the provider fields, and adds the command to the command chain:  
+3.  新增的建構函式，設定文字檢視和 \[提供者\] 欄位中，並將命令加到命令鏈結:  
   
-     [!code-csharp[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]  [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
+     [!code-cs[VSSDKCompletionTest#17](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_17.cs)]
+     [!code-vb[VSSDKCompletionTest#17](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_17.vb)]  
   
-4.  Implement the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> method by passing the command along:  
+4.  實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法傳遞沿著命令:  
   
-     [!code-csharp[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]  [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
+     [!code-cs[VSSDKCompletionTest#18](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_18.cs)]
+     [!code-vb[VSSDKCompletionTest#18](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_18.vb)]  
   
-5.  Implement the <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> method. When this method receives a keystroke, it must do one of these things:  
+5.  實作 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法。 當這個方法會接收按鍵動作時，它必須執行這些動作的其中一個動作:  
   
-    -   Allow the character to be written to the buffer, and then trigger or filter completion. (Printing characters do this.)  
+    -   允許寫入緩衝區，並接著觸發程序或篩選完成的字元。 \(列印的字元進行。\)  
   
-    -   Commit the completion, but do not allow the character to be written to the buffer. (Whitespace, Tab, and Enter do this when a completion session is displayed.)  
+    -   認可完成，但不是允許寫入緩衝區的字元。 \(空格、 定位及 Enter 時執行此動作會顯示完成的工作階段。\)  
   
-    -   Allow the command to be passed on to the next handler. (All other commands.)  
+    -   允許命令傳遞至下一個處理常式。 \(所有其他命令\)。  
   
-     Because this method may display UI, call <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> to make sure that it is not called in an automation context:  
+     因為這個方法可能會顯示 UI，所以呼叫 <xref:Microsoft.VisualStudio.Shell.VsShellUtilities.IsInAutomationFunction%2A> 確保不會呼叫內容中的自動化:  
   
-     [!code-csharp[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)] [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
+     [!code-cs[VSSDKCompletionTest#19](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_19.cs)]
+     [!code-vb[VSSDKCompletionTest#19](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_19.vb)]  
   
-6.  This code is a private method that triggers the completion session:  
+6.  此程式碼是觸發程序完成的工作階段的私用方法:  
   
-     [!code-csharp[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]  [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
+     [!code-cs[VSSDKCompletionTest#20](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_20.cs)]
+     [!code-vb[VSSDKCompletionTest#20](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_20.vb)]  
   
-7.  The next example is a private method that unsubscribes from the <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> event:  
+7.  下一個範例會從取消訂閱的私用方法 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseSession.Dismissed> 事件:  
   
-     [!code-csharp[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]  [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
+     [!code-cs[VSSDKCompletionTest#21](../extensibility/codesnippet/CSharp/walkthrough-displaying-statement-completion_21.cs)]
+     [!code-vb[VSSDKCompletionTest#21](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-statement-completion_21.vb)]  
   
-## <a name="building-and-testing-the-code"></a>Building and Testing the Code  
- To test this code, build the CompletionTest solution and run it in the experimental instance.  
+## 建置和測試程式碼  
+ 若要測試這段程式碼，CompletionTest 方案中建置並執行它的實驗執行個體。  
   
-#### <a name="to-build-and-test-the-completiontest-solution"></a>To build and test the CompletionTest solution  
+#### 若要建置和測試 CompletionTest 方案  
   
-1.  Build the solution.  
+1.  建置方案。  
   
-2.  When you run this project in the debugger, a second instance of Visual Studio is instantiated.  
+2.  當您在偵錯工具中執行這個專案時，會具現化第二個 Visual Studio 執行個體。  
   
-3.  Create a text file and type some text that includes the word "add".  
+3.  建立文字檔案，並輸入一些文字，其中包含單字"add"。  
   
-4.  As you type first "a" and then "d", a list that contains "addition" and "adaptation" should be displayed. Notice that addition is selected. When you type another "d", the list should contain only "addition", which is now selected. You can commit "addition" by pressing the Spacebar, Tab, or Enter key, or dismiss the list by typing Esc or any other key.  
+4.  當您第一次輸入"a"，然後 「 d 的"，應該會顯示包含 「 加法 」 和 「 調整 」 的清單。 請注意已選取 \[新增。 當您輸入另一個"d"時，此清單應包含只有 「 加法 」，其中已選取。 您可以按下空格鍵、 Tab 或 Enter 鍵，以認可 「 加法 」，或輸入其他索引鍵或 Esc 來關閉清單。  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Linking a Content Type to a File Name Extension](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+## 請參閱  
+ [逐步解說: 將內容類型連結至檔案名稱副檔名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -1,136 +1,119 @@
 ---
-title: FRAMEINFO | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- FRAMEINFO
-helpviewer_keywords:
-- FRAMEINFO structure
+title: "FRAMEINFO | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "FRAMEINFO"
+helpviewer_keywords: 
+  - "FRAMEINFO 結構"
 ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 caps.latest.revision: 8
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e89914747024ad23185ed1f6cc92e808d7703702
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 8
 ---
-# <a name="frameinfo"></a>FRAMEINFO
-Describes a stack frame.  
+# FRAMEINFO
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+說明堆疊框架。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-typedef struct tagFRAMEINFO {   
-   FRAMEINFO_FLAGS    m_dwValidFields;  
-   BSTR               m_bstrFuncName;  
-   BSTR               m_bstrReturnType;  
-   BSTR               m_bstrArgs;  
-   BSTR               m_bstrLanguage;  
-   BSTR               m_bstrModule;  
-   UINT64             m_addrMin;  
-   UINT64             m_addrMax;  
-   IDebugStackFrame2* m_pFrame;  
-   IDebugModule2*     m_pModule;  
-   BOOL               m_fHasDebugInfo;  
-   BOOL               m_fStaleCode;  
-   BOOL               m_fAnnotatedFrame;  
+```cpp#  
+typedef struct tagFRAMEINFO {   
+   FRAMEINFO_FLAGS    m_dwValidFields;  
+   BSTR               m_bstrFuncName;  
+   BSTR               m_bstrReturnType;  
+   BSTR               m_bstrArgs;  
+   BSTR               m_bstrLanguage;  
+   BSTR               m_bstrModule;  
+   UINT64             m_addrMin;  
+   UINT64             m_addrMax;  
+   IDebugStackFrame2* m_pFrame;  
+   IDebugModule2*     m_pModule;  
+   BOOL               m_fHasDebugInfo;  
+   BOOL               m_fStaleCode;  
+   BOOL               m_fAnnotatedFrame;  
 } FRAMEINFO;  
 ```  
   
-```csharp  
-public struct FRAMEINFO {   
-   public uint              m_dwValidFields;  
-   public string            m_bstrFuncName;  
-   public string            m_bstrReturnType;  
-   public string            m_bstrArgs;  
-   public string            m_bstrLanguage;  
-   public string            m_bstrModule;  
-   public ulong             m_addrMin;  
-   public ulong             m_addrMax;  
-   public IDebugStackFrame2 m_pFrame;  
-   public IDebugModule2     m_pModule;  
-   public int               m_fHasDebugInfo;  
-   public int               m_fStaleCode;  
-   public int               m_fAnnotatedFrame;  
+```c#  
+public struct FRAMEINFO {   
+   public uint              m_dwValidFields;  
+   public string            m_bstrFuncName;  
+   public string            m_bstrReturnType;  
+   public string            m_bstrArgs;  
+   public string            m_bstrLanguage;  
+   public string            m_bstrModule;  
+   public ulong             m_addrMin;  
+   public ulong             m_addrMax;  
+   public IDebugStackFrame2 m_pFrame;  
+   public IDebugModule2     m_pModule;  
+   public int               m_fHasDebugInfo;  
+   public int               m_fStaleCode;  
+   public int               m_fAnnotatedFrame;  
 } FRAMEINFO;  
 ```  
   
-## <a name="members"></a>Members  
- m_dwValidFields  
- A combination of flags from the [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeration that specifies which fields are filled in.  
+## Members  
+ m\_dwValidFields  
+ 從的旗標組合[FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)列舉型別，指定要填入哪些欄位。  
   
- m_bstrFuncName  
- The function name associated with the stack frame.  
+ m\_bstrFuncName  
+ 函式名稱的堆疊框架相關聯。  
   
- m_bstrReturnType  
- The return type associated with the stack frame.  
+ m\_bstrReturnType  
+ 堆疊框架相關聯的傳回型別。  
   
- m_bstrArgs  
- The arguments to the function associated with the stack frame.  
+ m\_bstrArgs  
+ 堆疊框架相關聯的函式引數。  
   
- m_bstrLanguage  
- The language in which the function is implemented.  
+ m\_bstrLanguage  
+ 語言功能執行。  
   
- m_bstrModule  
- The module name associated with the stack frame.  
+ m\_bstrModule  
+ 堆疊框架相關聯的模組名稱。  
   
- m_addrMin  
- The minimum physical stack address.  
+ m\_addrMin  
+ 最小實體的堆疊位址。  
   
- m_addrMAX  
- The maximum physical stack address.  
+ m\_addrMAX  
+ 最大實體的堆疊位址。  
   
- m_pFrame  
- The [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) object that represents this stack frame.  
+ m\_pFrame  
+ [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)物件，表示此堆疊框架。  
   
- m_pFrame  
- The [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) object that represents the module that contains this stack frame.  
+ m\_pFrame  
+ [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)物件，代表包含此堆疊框架的模組。  
   
- m_fHasDebugInfo  
- Non-zero (`TRUE`) if debug information exists in the given frame.  
+ m\_fHasDebugInfo  
+ 非零值 \(`TRUE`\) 如果偵錯資訊存在於指定的框架。  
   
- m_fHasDebugInfo  
- Non-zero (`TRUE`) if the stack frame is associated with code that is no longer valid.  
+ m\_fHasDebugInfo  
+ 非零值 \(`TRUE`\) 如果堆疊框架已經不存在於正確的程式碼與相關聯。  
   
- m_fHasDebugInfo  
- Non-zero (`TRUE`) if the stack frame is annotated by the session debug manager (SDM).  
+ m\_fHasDebugInfo  
+ 非零值 \(`TRUE`\) 如果堆疊框架將附註的工作階段偵錯管理員 \(SDM\)。  
   
-## <a name="remarks"></a>Remarks  
- This structure is passed to the [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) method to be filled in. This structure is also contained in a list that is contained in the [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface which, in turn, is returned from a call to the [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) method.  
+## 備註  
+ 這個結構會傳遞至[GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)方法，會自動填入。  此結構也包含在清單中包含的[IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)介面，反而會傳回從呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)方法。  
   
-## <a name="requirements"></a>Requirements  
- Header: msdbg.h  
+## 需求  
+ 標頭: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
- Assembly: Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## <a name="see-also"></a>See Also  
- [Structures and Unions](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
+## 請參閱  
+ [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
+ [FRAMEINFO\_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md)   

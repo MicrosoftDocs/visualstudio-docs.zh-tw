@@ -1,83 +1,66 @@
 ---
-title: SccGetEvents Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccGetEvents
-helpviewer_keywords:
-- SccGetEvents function
+title: "SccGetEvents 函式 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccGetEvents"
+helpviewer_keywords: 
+  - "SccGetEvents 函式"
 ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 caps.latest.revision: 13
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 8db1e74d8529192408be12c9f87ca4f3ea086516
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 13
 ---
-# <a name="sccgetevents-function"></a>SccGetEvents Function
-This function retrieves a queued status event.  
+# SccGetEvents 函式
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此函式會擷取已排入佇列的狀態事件。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 SCCRTN SccGetEvents (  
-   LPVOID pvContext,  
-   LPSTR  lpFileName,  
-   LPLONG lpStatus,  
-   LPLONG pnEventsRemaining  
+   LPVOID pvContext,  
+   LPSTR  lpFileName,  
+   LPLONG lpStatus,  
+   LPLONG pnEventsRemaining  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[\] in原始檔控制外掛程式內容結構。  
   
  lpFileName  
- [in, out] Buffer where the source control plug-in puts the returned file name (up to _MAX_PATH characters).  
+ \[in、 out\]原始檔控制外掛程式傳回的檔名 \(最多 \_MAX\_PATH 字元\) 的放置位置的緩衝區。  
   
  lpStatus  
- [in, out] Returns status code (see [File Status Code](../extensibility/file-status-code-enumerator.md) for possible values).  
+ \[in、 out\]會傳回狀態碼 \(請參閱 [檔案狀態碼](../extensibility/file-status-code-enumerator.md) 提供可能的值\)。  
   
  pnEventsRemaining  
- [in, out] Returns number of entries left in the queue after this call. If this number is large, the caller may decide to call the [SccQueryInfo](../extensibility/sccqueryinfo-function.md) to get all the information at once.  
+ \[in、 out\]傳回在這個呼叫之後保留在佇列中的項目數目。 如果這個數字很大，呼叫端可能會決定呼叫 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 取得的所有資訊一次。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## 傳回值  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Get events succeeded.|  
-|SCC_E_OPNOTSUPPORTED|This function is not supported.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|取得成功的事件。|  
+|SCC\_E\_OPNOTSUPPORTED|不支援此函式。|  
+|SCC\_E\_NONSPECIFICERROR|非特定的失敗。|  
   
-## <a name="remarks"></a>Remarks  
- This function is called during idle processing to see if there have been any status updates for files under source control. The source control plug-in maintains status of all the files it knows about, and whenever a change of status is noted by the plug-in, the status and the associated file are stored in a queue. When `SccGetEvents` is called, the top element of the queue is retrieved and returned. This function is constrained to return only previously cached information and must have a very quick turnaround (that is, no reading of the disk or asking the source control system for status); otherwise the performance of the IDE may start to degrade.  
+## 備註  
+ 閒置處理，以查看是否有任何更新原始檔控制下的檔案的狀態時，會呼叫此函數。 原始檔控制外掛程式會維護它所知，所有檔案的狀態和變更的狀態會註明外掛程式，狀態和相關聯的檔案會儲存在佇列中。 當 `SccGetEvents` 呼叫時，最上層項目佇列會擷取並傳回。 此函式限制要傳回唯一先前快取的資訊，而且必須非常快速的作業 \(也就是沒有磁碟的讀取或詢問原始檔控制系統的狀態\)。否則可能會開始 IDE 的效能降低。  
   
- If there is no status update to report, the source control plug-in stores an empty string in the buffer pointed to by `lpFileName`. Otherwise, the plug-in stores the full path name of the file for which the status information has changed and returns the appropriate status code (one of the values detailed in [File Status Code](../extensibility/file-status-code-enumerator.md)).  
+ 如果沒有報告狀態更新，原始檔控制外掛程式會將空字串儲存在所指向的緩衝區 `lpFileName`。 否則外掛程式儲存檔案的完整路徑名稱的狀態資訊已變更，並傳回適當的狀態碼為 \(其中一個值的詳細說明 [檔案狀態碼](../extensibility/file-status-code-enumerator.md)\)。  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)   
- [File Status Code](../extensibility/file-status-code-enumerator.md)
+## 請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)   
+ [檔案狀態碼](../extensibility/file-status-code-enumerator.md)

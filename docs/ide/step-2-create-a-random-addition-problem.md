@@ -1,114 +1,101 @@
 ---
-title: 'Step 2: Create a Random Addition Problem | Microsoft Docs'
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
+title: "步驟 2：建立隨機加法問題 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-general"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 caps.latest.revision: 27
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 800b113b78da57b4bd0a3a760c884b96c9b138c2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+author: "kempb"
+ms.author: "kempb"
+manager: "ghogen"
+caps.handback.revision: 27
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Step 2: Create a Random Addition Problem
-In the second part of this tutorial, you make the quiz challenging by adding math problems that are based on random numbers. You also create a method that's named `StartTheQuiz()` and that fills in the problems and starts the countdown timer. Later in this tutorial, you'll add the subtraction, multiplication, and division problems.  
+# 步驟 2：建立隨機加法問題
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。  您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。  稍後在本教學課程中，您將加入減法、乘法和除法問題。  
   
 > [!NOTE]
->  This topic is part of a tutorial series about basic coding concepts. For an overview of the tutorial, see [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  這個主題是有關基本程式碼撰寫概念的教學課程系列的一部分。  如需教學課程的概觀，請參閱[教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)。  
   
-### <a name="to-create-a-random-addition-problem"></a>To create a random addition problem  
+### 若要建立隨機加法問題  
   
-1.  In the form designer, choose the form (Form1).  
+1.  在表單設計工具中選擇表單 \(Form1\)。  
   
-2.  On the menu bar, choose **View**, **Code**.  
+2.  在功能表列上選擇 \[**檢視**\]、\[**程式碼**\]。  
   
-     Form1.cs or Form1.vb appears, depending on the programming language that you're using, so that you can view the code behind the form.  
+     依您使用的程式設計語言而定，會出現 Form1.cs 或 Form1.vb，如此您就可以檢視表單的後置程式碼。  
   
-3.  Create a `Random` object by adding a `new` statement near the top of the code, like the following.  
+3.  在靠近程式碼頂端的位置加入 `new` 陳述式建立 `Random` 物件，如下所示。  
   
-     [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]  [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]  
+     [!code-cs[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
+     [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]  
   
-     You've added a `Random` object to your form and named the object **randomizer**.  
+     您已將 `Random` 物件加入至表單，並將物件命名為 **randomizer**。  
   
-     `Random` is known as an object. You've probably heard that word before, and you learn more about what it means for programming in the next tutorial. For now, just remember that you can use `new` statements to create buttons, labels, panels, OpenFileDialogs, ColorDialogs, SoundPlayers, Randoms, and even forms, and those items are referred to as objects. When you run your program, the form is started, and the code behind it creates a `Random` object and names it **randomizer**.  
+     `Random` 稱為物件。  您以前或許聽過這個名詞，在接下來的教學課程中，您將進一步了解它對程式設計的意義。  現在只要記得您可以使用 `new` 陳述式建立按鈕、標籤、面板、OpenFileDialogs、ColorDialogs、SoundPlayers、Randoms，甚至表單，而這些項目都稱為物件。  當您執行程式時，表單就會啟動，而表單的後置程式碼會建立 `Random` 物件並將它命名為 **randomizer**。  
   
-     Soon you'll build a method to check the answers, so your quiz must use variables to store the random numbers that it generates for each problem. See [Variables](/dotnet/visual-basic/programming-guide/language-features/variables/index) or [Types](/dotnet/csharp/programming-guide/types/index). To properly use variables, you must declare them, which means listing their names and data types.  
+     您很快就要建置檢查答案的方法，因此您的測驗必須使用變數來儲存為每個問題產生的隨機數字。  請參閱 [Variables](/dotnet/visual-basic/programming-guide/language-features/variables/index)或 [類型](/dotnet/csharp/programming-guide/types/index)。  若要正確使用變數，您必須宣告變數，這表示將它們的名稱和資料類型列出。  
   
-4.  Add two integer variables to the form, and name them **addend1** and **addend2**.  
-  
-    > [!NOTE]
-    >  An integer variable is known as an int in C# or an Integer in Visual Basic. This kind of variable stores a positive or negative number from -2147483648 through 2147483647 and can store only whole numbers, not decimals.  
-  
-     You use a similar syntax to add an integer variable as you did to add the `Random` object, as the following code shows.  
-  
-     [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]  [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]  
-  
-5.  Add a method that's named `StartTheQuiz()` and that uses the `Random` object's `Next()` method to show the random numbers in the labels. `StartTheQuiz()` will eventually fill in all of the problems and then start the timer, so add a comment. The function should look like the following.  
-  
-     [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]  [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]  
-  
-     Notice that when you enter the dot (.) after **randomizer** in the code, an IntelliSense window opens and shows you all of the `Random` object's methods that you can call. For example, Intellisense lists the `Next()` method, as follows.  
-  
-     ![Next method](../ide/media/express_randomwhite.png "Express_RandomWhite")  
-Next method  
-  
-     When you enter a dot after an object, IntelliSense shows a list of the object's members, such as properties, methods, and events.  
+4.  將兩個整數變數加入至表單，並命名為 **addend1** 和 **addend2**。  
   
     > [!NOTE]
-    >  When you use the `Next()` method with the `Random` object, such as when you call `randomizer.Next(50)`, you get a random number that's less than 50 (from 0 through 49). In this example, you called `randomizer.Next(51)`. You used 51 and not 50 so that the two random numbers will add up to an answer that's from 0 through 100. If you pass 50 to the `Next()` method, it chooses a number from 0 through 49, so the highest possible answer is 98, not 100. After the first two statements in the method run, each of the two integer variables, `addend1` and `addend2`, hold a random number from 0 through 50. This screenshot shows Visual C# code, but IntelliSense works the same way for Visual Basic.  
+    >  整數變數在 C\# 中稱為 int，在 Visual Basic 中則稱為 Integer。  這類變數會儲存從 \-2147483648 到 2147483647 的正數或負數，但是只能儲存整數，不包括小數。  
   
-     Take a closer look at these statements.  
+     您可以使用類似的語法加入整數變數，就像加入 `Random` 物件一般，如下列程式碼所示。  
   
-     [!code-csharp[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]  [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]  
+     [!code-cs[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
+     [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]  
   
-     The statements set the **Text** properties of **plusLeftLabel** and **plusRightLabel** so that they display the two random numbers. You must use the integer's `ToString()` method to convert the numbers to text. (In programming, string means text. Label controls display only text, not numbers.  
+5.  加入名為 `StartTheQuiz()` 的方法，這個方法會使用 `Random` 物件的 `Next()` 方法在標籤中顯示隨機數字。  `StartTheQuiz()` 最後會填入所有問題，然後啟動計時器，所以請加入註解。  函式看起來應該如下所示。  
   
-6.  In the design window, either double-click the **Start** button, or choose it and then choose the Enter key.  
+     [!code-cs[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
+     [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]  
   
-     When a quiz taker chooses this button, the quiz should start, and you've just added a Click event handler to implement that behavior.  
+     請注意，您在程式碼中的 randomizer 後面輸入點 \(.\) 時，\[IntelliSense\] 視窗便會開啟，並顯示可以呼叫的所有 `Random` 物件的方法。  例如，IntelliSense 會列出 `Next()` 方法，如下所示。  
   
-7.  Add the following two statements.  
+     ![Next 方法](~/ide/media/express_randomwhite.png "Express\_RandomWhite")  
+Next 方法  
   
-     [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]  [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]  
+     您在物件後面輸入一個點時，IntelliSense 會顯示物件的成員清單，例如屬性、方法和事件。  
   
-     The first statement calls the new `StartTheQuiz()` method. The second statement sets the **Enabled** property of the **startButton** control to **False** so that the quiz taker can't choose the button during a quiz.  
+    > [!NOTE]
+    >  當您使用 `Next()` 方法搭配 `Random` 物件時 \(例如，當您呼叫 `randomizer.Next(50)` 時\)，會得到小於 50 \(從 0 到 49\) 的隨機數字。  在這個範例中，您呼叫了 `randomizer.Next(51)`。  您使用 51 而不是 50，如此這兩個數字就會相加並得出從 0 到 100 的答案。  如果您將 50 傳給 `Next()` 方法，它會選擇 0 至 49 的數字，所以可能的最大答案是 98，而不是 100。  當方法中的前兩個陳述式執行之後，`addend1` 和 `addend2` 這兩個整數變數會各自保存一個從 0 至 50 的隨機數字。  這個螢幕擷取畫面會顯示 Visual C\# 程式碼，不過，IntelliSense 對於 Visual Basic 運作的方式一樣。  
   
-8.  Save your code, run it, and then choose the **Start** button.  
+     仔細查看這些陳述式。  
   
-     A random addition problem appears, as the following illustration shows.  
+     [!code-cs[VbExpressTutorial3Step2#18](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_4.cs)]
+     [!code-vb[VbExpressTutorial3Step2#18](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_4.vb)]  
   
-     ![Random addition problem](../ide/media/express_additionproblem.png "Express_AdditionProblem")  
-Random addition problem  
+     陳述式會設定 \[**plusLeftLabel**\] 和 \[**plusRightLabel**\] 的 \[**Text**\] 屬性，讓它們顯示兩個隨機數字。  您必須使用整數的 `ToString()` 方法將數字轉換為文字。在程式設計中，字串表示文字。  Label 控制項只會顯示文字，不會顯示數字。  
   
-     In the next step of the tutorial, you'll add the sum.  
+6.  在設計視窗中，按兩下 \[**開始**\] 按鈕，或是選擇該按鈕，然後選擇 Enter 鍵。  
   
-### <a name="to-continue-or-review"></a>To continue or review  
+     當受測者選擇這個按鈕時，測驗就會開始，而您剛加入了 Click 事件處理常式來實作該行為。  
   
--   To go to the next tutorial step, see [Step 3: Add a Countdown Timer](../ide/step-3-add-a-countdown-timer.md).  
+7.  加入下面兩個陳述式。  
   
--   To return to the previous tutorial step, see [Step 1: Create a Project and Add Labels to Your Form](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+     [!code-cs[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
+     [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]  
+  
+     第一個陳述式會呼叫新的 `StartTheQuiz()` 方法。  第二個陳述式會將 **startButton** 控制項的 \[**Enabled**\] 屬性設定為 \[**False**\]，如此受測者就無法在測驗期間選擇該按鈕。  
+  
+8.  儲存您的程式碼，執行程式碼，然後選擇 \[**開始**\] 按鈕。  
+  
+     隨機加法問題就會出現，如下圖所示。  
+  
+     ![隨機加法問題](../ide/media/express_additionproblem.png "Express\_AdditionProblem")  
+隨機加法問題  
+  
+     在本教學課程的下一個步驟中，您將加入總和。  
+  
+### 若要繼續或檢視  
+  
+-   若要移到下一個教學課程步驟，請參閱[步驟 3：加入倒數計時器](../Topic/Step%203:%20Add%20a%20Countdown%20Timer.md)。  
+  
+-   若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤加入至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

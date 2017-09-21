@@ -1,47 +1,30 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- GetTypesByName
-- IDebugComPlusSymbolProvider2::GetTypesByName
+title: "IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+helpviewer_keywords: 
+  - "GetTypesByName"
+  - "IDebugComPlusSymbolProvider2::GetTypesByName"
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: f98975b514ae00b8d029776f1cea0715247f7035
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Retrieves a type given its name.  
+# IDebugComPlusSymbolProvider2::GetTypesByName
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+擷取指定其名稱的型別。  
   
-## <a name="syntax"></a>Syntax  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```cpp#  
 HRESULT GetTypesByName(  
    LPCOLESTR          pszClassName,  
    NAME_MATCH         nameMatch,  
@@ -49,7 +32,7 @@ HRESULT GetTypesByName(
 );  
 ```  
   
-```csharp  
+```c#  
 int GetTypesByName(  
    string               pszClassName,  
    enum_ NAME_MATCH     nameMatch,  
@@ -57,26 +40,26 @@ int GetTypesByName(
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### <a name="parameters"></a>參數  
  `pszClassName`  
- [in] Name of the type.  
+ [in]型別的名稱。  
   
  `nameMatch`  
- [in] Selects the type of match, for example, case-sensitive. A value from the [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeration.  
+ [in]選取型的別相符項目，例如，區分大小寫。 介於 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 列舉型別。  
   
  `ppEnum`  
- [out] An enumerator that contains the type or types with the given name.  
+ [out]列舉值，其中包含具有指定名稱的類型。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- For generic types, the name to look up for 'List\<int>' or 'List\<int,int>' would be 'List'. If types of the same name appear in multiple modules, the `ppEnum` paramter will contain all copies. You have to use [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) and distinguish based on the `guidModule` parameter.  
+## <a name="remarks"></a>備註  
+ 泛型型別，要尋找的名稱為 '清單 \< int>' 或 'List \< int、 int >' 「 清單 」。 如果具有相同名稱的類型會出現在多個模組， `ppEnum` 參數會包含所有複本。 您必須使用 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 和區分根據 `guidModule` 參數。  
   
-## <a name="example"></a>Example  
- The following example shows how to implement this method for a **CDebugSymbolProvider** object that exposes the [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 介面。  
   
-```cpp  
+```cpp#  
 HRESULT CDebugSymbolProvider::GetTypesByName(  
     LPCOLESTR pszClassName,  
     NAME_MATCH nameMatch,  
@@ -139,5 +122,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

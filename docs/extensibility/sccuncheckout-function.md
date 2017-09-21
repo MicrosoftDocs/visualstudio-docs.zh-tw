@@ -1,93 +1,76 @@
 ---
-title: SccUncheckout Function | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- SccUncheckout
-helpviewer_keywords:
-- SccUncheckout function
+title: "SccUncheckout 函式 | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "SccUncheckout"
+helpviewer_keywords: 
+  - "SccUncheckout 函式"
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5db90c033a03605369c19bf358b0642f9f80163b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="sccuncheckout-function"></a>SccUncheckout Function
-This function undoes a previous checkout operation, thereby restoring the contents of the selected file or files to the state prior to the checkout. All changes made to the file since the checkout are lost.  
+# SccUncheckout 函式
+[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+
+此函式會復原先前的簽出作業，藉此還原為之前簽出狀態的 \[選取的檔案或檔案的內容。 所有的檔案簽出之後所做的變更都會遺失。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
+```cpp#  
 SCCRTN SccUncheckout (  
-   LPVOID    pvContext,  
-   HWND      hWnd,  
-   LONG      nFiles,  
-   LPCSTR*   lpFileNames,  
-   LONG      fOptions,  
-   LPCMDOPTS pvOptions  
+   LPVOID    pvContext,  
+   HWND      hWnd,  
+   LONG      nFiles,  
+   LPCSTR*   lpFileNames,  
+   LONG      fOptions,  
+   LPCMDOPTS pvOptions  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  pvContext  
- [in] The source control plug-in context structure.  
+ \[\] in原始檔控制外掛程式內容結構。  
   
  hWnd  
- [in] A handle to the IDE window that the source control plug-in can use as a parent for any dialog boxes that it provides.  
+ \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
   
  nFiles  
- [in] Number of files specified in the `lpFileNames` array.  
+ \[\] in中指定的檔案數目 `lpFileNames` 陣列。  
   
  lpFileNames  
- [in] Array of fully qualified local path names of files for which to undo a checkout.  
+ \[\] in這是要復原簽出檔案的完整格式的本機路徑名稱的陣列。  
   
- fOptions  
- [in] Command flags (not used).  
+ Stored  
+ \[\] in\(未使用\) 的命令旗標。  
   
  pvOptions  
- [in] Source control plug-in-specific options.  
+ \[\] in原始檔控制外掛程式專屬選項。  
   
-## <a name="return-value"></a>Return Value  
- The source control plug-in implementation of this function is expected to return one of the following values:  
+## 傳回值  
+ 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
   
-|Value|Description|  
-|-----------|-----------------|  
-|SCC_OK|Undo checkout was successful.|  
-|SCC_E_FILENOTCONTROLLED|The selected file is not under source code control.|  
-|SCC_E_ACCESSFAILURE|There was a problem accessing the source control system, probably due to network or contention issues. A retry is recommended.|  
-|SCC_E_NONSPECIFICERROR|Nonspecific failure. Undo checkout did not succeed.|  
-|SCC_E_NOTCHECKEDOUT|The user does not have the file checked out.|  
-|SCC_E_NOTAUTHORIZED|The user is not allowed to perform this operation.|  
-|SCC_E_PROJNOTOPEN|The project has not been opened from source control.|  
-|SCC_I_OPERATIONCANCELED|The operation was cancelled before completion.|  
+|值|描述|  
+|-------|--------|  
+|SCC\_OK|復原簽出成功。|  
+|SCC\_E\_FILENOTCONTROLLED|選取的檔案不是原始程式碼控制之下。|  
+|SCC\_E\_ACCESSFAILURE|無法存取原始檔控制系統，可能是因為網路或競爭問題。 建議使用重試。|  
+|SCC\_E\_NONSPECIFICERROR|非特定的失敗。 復原簽出失敗。|  
+|SCC\_E\_NOTCHECKEDOUT|使用者沒有簽出檔案。|  
+|SCC\_E\_NOTAUTHORIZED|不允許使用者執行這項作業。|  
+|SCC\_E\_PROJNOTOPEN|無法從原始檔控制開啟專案。|  
+|SCC\_I\_OPERATIONCANCELED|在完成之前已取消作業。|  
   
-## <a name="remarks"></a>Remarks  
- After this operation, the `SCC_STATUS_CHECKEDOUT` and `SCC_STATUS_MODIFIED` flags will both be cleared for the files on which the undo checkout was performed.  
+## 備註  
+ 這個作業之後， `SCC_STATUS_CHECKEDOUT` 和 `SCC_STATUS_MODIFIED` 旗標會同時清除在其上執行復原簽出檔案。  
   
-## <a name="see-also"></a>See Also  
- [Source Control Plug-in API Functions](../extensibility/source-control-plug-in-api-functions.md)
+## 請參閱  
+ [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

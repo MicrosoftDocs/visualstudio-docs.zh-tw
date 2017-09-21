@@ -1,76 +1,59 @@
 ---
-title: IDebugModule2::GetInfo | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugModule2::GetInfo
-helpviewer_keywords:
-- GetInfo method
-- IDebugModule2::GetInfo method
+title: "IDebugModule2::GetInfo | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugModule2::GetInfo"
+helpviewer_keywords: 
+  - "GetInfo 方法"
+  - "IDebugModule2::GetInfo 方法"
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 caps.latest.revision: 10
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 6ae7b1c8b5fa76f288a90af5efbbbb63d6663475
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 10
 ---
-# <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
-Gets information about this module.  
+# IDebugModule2::GetInfo
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+取得本單元的相關資訊。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT GetInfo(   
-   MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO*       pInfo  
+```cpp#  
+HRESULT GetInfo(   
+   MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO*       pInfo  
 );  
 ```  
   
-```cpp  
-int GetInfo(   
-   enum_MODULE_INFO_FIELDS dwFields,  
-   MODULE_INFO[]           pInfo  
+```cpp#  
+int GetInfo(   
+   enum_MODULE_INFO_FIELDS dwFields,  
+   MODULE_INFO[]           pInfo  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwFields`  
- [in] A combination of flags from the [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) enumeration that specify which fields of `pInfo` are to be filled out.  
+ \[in\]從的旗標組合[MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)指定的欄位的列舉型別`pInfo`都必須填寫。  
   
  `pInfo`  
- [in, out] A [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure that is filled in with a description of the module.  
+ 輸入 \[、 輸出\]A [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)會被填入的模組描述的結構。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- The [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure contains the name of the module that is displayed in the **Modules** window.  
+## 備註  
+ [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)結構包含中所顯示的模組名稱**模組**視窗。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)   
- [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
- [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)
+ [MODULE\_INFO\_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)   
+ [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)

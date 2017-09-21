@@ -1,76 +1,59 @@
 ---
-title: IDebugMemoryContext2::Subtract | Microsoft Docs
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- IDebugMemoryContext2::Subtract
-helpviewer_keywords:
-- Subtract method
-- IDebugMemoryContext2::Subtract method
+title: "IDebugMemoryContext2::Subtract | Microsoft Docs"
+ms.custom: ""
+ms.date: "11/04/2016"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "vs-ide-sdk"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+f1_keywords: 
+  - "IDebugMemoryContext2::Subtract"
+helpviewer_keywords: 
+  - "減去方法"
+  - "IDebugMemoryContext2::Subtract 方法"
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 caps.latest.revision: 12
-ms.author: gregvanl
-manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 43704f0c63c2ae08b759a3a7648f81dc8d682236
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.author: "gregvanl"
+manager: "ghogen"
+caps.handback.revision: 12
 ---
-# <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-Subtracts the specified value from the current context and returns a new context.  
+# IDebugMemoryContext2::Subtract
+[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
+
+減去指定的值，從目前的內容，並傳回新的內容。  
   
-## <a name="syntax"></a>Syntax  
+## 語法  
   
-```cpp  
-HRESULT Subtract(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+```cpp#  
+HRESULT Subtract(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```csharp  
+```c#  
 int Subtract(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### <a name="parameters"></a>Parameters  
+#### 參數  
  `dwCount`  
- [in] The number of memory bytes to decrement.  
+ \[in\]以遞減的記憶體位元組數目。  
   
  `ppMemCxt`  
- [out] Returns a new [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) object.  
+ \[\] out傳回新的[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。  
   
-## <a name="return-value"></a>Return Value  
- If successful, returns `S_OK`; otherwise, returns an error code.  
+## 傳回值  
+ 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
   
-## <a name="remarks"></a>Remarks  
- A memory context is an address, so subtracting a value from an address produces a new address that requires a new context interface.  
+## 備註  
+ 記憶體內容是地址，所以減去一個地址產生新的地址，需要新的內容介面。  
   
- This method must always produce a new context, even if the resulting address is outside the memory space associated with this context. The only exception to this is if no memory can be allocated for the new context or if `ppMemCxt` is a null value (which is an error).  
+ 這個方法必須產生新的內容，即使產生地址超出此內容相關聯的記憶體空間。  唯一的例外是如果無記憶體可配置新的內容，或是`ppMemCxt`為 null 值 \(也就是錯誤\)。  
   
-## <a name="see-also"></a>See Also  
+## 請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
