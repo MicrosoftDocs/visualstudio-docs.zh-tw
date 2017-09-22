@@ -28,8 +28,8 @@ helpviewer_keywords:
 - code
 ms.assetid: cb53bb9b-5b76-4759-b9b8-7bf32298bcbb
 caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -46,9 +46,10 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: 3a8be04b4d2c927dc296753420ff736b993343c9
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/07/2017
 
 ---
@@ -73,7 +74,7 @@ ms.lasthandoff: 03/07/2017
 1. 移至您想要複製的儲存機制。
 1. 在該儲存機制的 GitHub 頁面上，選擇 [Clone or Download (複製或下載)] 按鈕，然後選擇下拉式清單中的 [Copy to Clipboard (複製到剪貼簿)] 按鈕，以複製 GitHub 網站的安全 URL。
 
-  ![GitHub 複製按鈕](~/ide/media/VSIDE_Code_Clone.png)
+  ![GitHub 複製按鈕](./media/VSIDE_Code_Clone.png)
 
     > [!NOTE]
     >  雖然您也可以選擇在您的桌上型電腦上開啟該專案，或下載該專案的 .zip 檔案，但此範例會示範如何使用安全 URL 方法來複製儲存機制。
@@ -81,12 +82,12 @@ ms.lasthandoff: 03/07/2017
 1. 在 Visual Studio 中，選擇 [Team Explorer] 索引標籤以開啟 [Team Explorer]。
 1. 在 [Team Explorer] 中的 [本機 Git 儲存機制] 區段底下，選擇 [複製] 命令，然後將 GitHub 頁面的 URL 貼到文字方塊中。
 
-  ![複製專案](~/ide/media/VSIDE_Code_Clone2.png)
+  ![複製專案](./media/VSIDE_Code_Clone2.png)
 
 1. 選擇 [複製] 按鈕，以將專案的檔案複製到本機 Git 儲存機制。 視儲存機制的大小而定，此程序可能會花費數分鐘的時間。
 1. 將儲存機制複製到您的系統之後，在 [Team Explorer] 中，從新複製之專案 (按一下滑鼠右鍵) 的操作功能表上，選擇 [開啟]。
 
-  ![複製的專案](~/ide/media/VSIDE_Code_Clone3.png)
+  ![複製的專案](./media/VSIDE_Code_Clone3.png)
 
 1. 選擇 [顯示資料夾檢視] 命令，以在 [方案總管] 中檢視檔案
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 03/07/2017
 
   您現在可以瀏覽所複製專案中的資料夾和檔案，並在 Visual Studio 程式碼編輯器中檢視及搜尋程式碼，其中會包含語法色彩標示及其他功能。
 
-    ![搜尋已複製的專案程式碼](~/ide/media/VSIDE_Code_Clone4.png)
+    ![搜尋已複製的專案程式碼](./media/VSIDE_Code_Clone4.png)
 
 
 ## <a name="debug-your-code"></a>偵錯程式碼
@@ -102,7 +103,7 @@ ms.lasthandoff: 03/07/2017
 
 工具列上 [開始] 按鈕旁邊的下拉式清單除了會列出您在資料夾中特別選擇的項目之外，也會列出 Visual Studio 偵測到的所有啟動項目。
 
-![執行按鈕](~/ide/media/VSIDE_Code_Run_Button.png)
+![執行按鈕](./media/VSIDE_Code_Run_Button.png)
 
 Visual Studio 會自動辨識專案，但指令碼 (例如 Python 和 JavaScript) 則必須在您明確選取來作為啟動項目之後，它們才會顯示在清單中。
 此外，有些啟動項目 (例如 MSBuild 和 CMake) 可以有多個組建組態，這些組態會顯示在「執行按鈕」的下拉式清單中。
@@ -138,11 +139,11 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
 
 1. 選擇 [方案總管] 中您想要使用工作的專案檔案或資料夾，然後在該檔案或資料夾 (按一下滑鼠右鍵) 的操作功能表上，選擇 [設定工作]。
 
-  ![設定工作](~/ide/media/VSIDE_Code_Config_Task.png)
+  ![設定工作](./media/VSIDE_Code_Config_Task.png)
 
   選擇 [設定工作] 會開啟名為 tasks.vs.json 的檔案。 如果此檔案不存在，系統便會建立它。 此檔案會包含所選檔案或資料夾的建置工作。
 
-  ![Tasks.vs.json 檔案](~/ide/media/VSIDE_Code_Tasks_JSON.png)
+  ![Tasks.vs.json 檔案](./media/VSIDE_Code_Tasks_JSON.png)
 
 1. 將下列建置工作新增到 tasks.vs.json。 針對這個範例，我們將新增一個名為 "List outputs" 的簡單工作，它會在 [輸出] 視窗中列出所選資料夾的檔案和子資料夾。 (您應該在現有的 "tasks" 陣列內新增新的工作)。
 
@@ -159,12 +160,12 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
   ```
   整個建置工作應該會看起來如下。
 
-  ![任意建置工作](~/ide/media/VSIDE_Code_Tasks_ArbTask.png)
+  ![任意建置工作](./media/VSIDE_Code_Tasks_ArbTask.png)
 
 1. 儲存專案。
 1. 開啟所選資料夾的操作功能表。 您應該會看到新的任意建置工作出現在操作功能表的底部。
 
-  ![任意建置工作命令](~/ide/media/VSIDE_Code_Tasks_ArbTask2.png)
+  ![任意建置工作命令](./media/VSIDE_Code_Tasks_ArbTask2.png)
 
 1. 選擇新的 [List outputs] 命令來執行工作。
 
@@ -174,7 +175,7 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
 
 1. 選擇 [方案總管] 中您想要稍後指定為啟動項目的專案檔案。 在該檔案 (按一下滑鼠右鍵) 的操作功能表上，選擇 [設定工作]。
 
-  ![自訂建置工作命令](~/ide/media/VSIDE_Code_Tasks_CustTask1.png)
+  ![自訂建置工作命令](./media/VSIDE_Code_Tasks_CustTask1.png)
 
 1. 將下列建置工作新增到 tasks.vs.json。 針對這個範例，我們將新增兩個工作：一個叫做 "makefile-build"，另一個叫做 "makefile-clean"，前者會使用 nMake 命令來建置專案，後者會使用 "clean" 引數來呼叫 nMake 命令。 您應該在現有的 "tasks" 陣列內新增這些工作。 (請注意，這些只是範例建置工作。 若要讓它們實際運作，您的系統上必須安裝包含 [nMake](https://docs.microsoft.com/en-us/cpp/build/nmake-reference) 的工作負載)。
 
@@ -199,12 +200,12 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
   ```
   整個自訂建置工作應該會看起來如下。
 
-  ![自訂建置工作](~/ide/media/VSIDE_Code_Tasks_CustTask2.png)
+  ![自訂建置工作](./media/VSIDE_Code_Tasks_CustTask2.png)
 
 1. 儲存專案。
 1. 開啟所選檔案的操作功能表。 新的自訂建置工作應該會出現在操作功能表的中間。
 
-  ![自訂建置工作命令](~/ide/media/VSIDE_Code_Tasks_CustTask3.png)
+  ![自訂建置工作命令](./media/VSIDE_Code_Tasks_CustTask3.png)
 
   > [!NOTE]
   > 由於這些命令的 `contextType` 設定緣故，因此它們會顯示在 [設定工作] 命令底下；"build" 和 "clean" 是建置命令，因此它們會顯示在操作功能表中間的建置區段中。
@@ -213,11 +214,11 @@ Visual Studio 知道如何執行許多不同的語言，但不是所有語言它
 
 1. 在檔案的操作功能表上，選擇 [設定為啟動項目]。
 
-  ![自訂建置工作命令](~/ide/media/VSIDE_Code_Tasks_CustTask4.png)
+  ![自訂建置工作命令](./media/VSIDE_Code_Tasks_CustTask4.png)
 
 1. 在工具列上，選擇 [開始] 按鈕旁邊的下拉式箭號。 啟動項目現在已顯示為選項。
 
-  ![自訂建置工作命令](~/ide/media/VSIDE_Code_Tasks_CustTask5.png)
+  ![自訂建置工作命令](./media/VSIDE_Code_Tasks_CustTask5.png)
 
 您現在可以選擇 [開始] 按鈕或 F5 鍵來執行程式碼基底。 即使 Visual Studio 無法辨識程式碼基底的建置工作，您仍然可以在 Visual Studio 中進行程式碼基底編輯和偵錯。 來自建置工作的輸出會顯示在 [輸出] 視窗中，而建置錯誤則會顯示在 [錯誤清單] 中。 tasks.vs.json 建置工作檔案會將 Visual Studio 內部開發迴圈與您程式碼基底所使用的自訂建置工具結合。
 
@@ -237,7 +238,7 @@ Visual Studio 除了環境變數 (例如 `$env.var`) 或機碼之外，也支援
 
 tasks.vs.json 檔案預設會位於名為 `.vs` 的隱藏資料夾中。 若要在 Visual Studio 中檢視隱藏的檔案，請選擇 [方案總管] 工具列上的 [顯示所有檔案] 按鈕。
 
-![任意建置工作命令](~/ide/media/VSIDE_Code_Tasks_FileLocation.png)
+![任意建置工作命令](./media/VSIDE_Code_Tasks_FileLocation.png)
 
 tasks.vs.json 檔案會隱藏，因為大多數使用者通常都不會想要將它簽入原始檔控制。 不過，如果您想要能夠將它簽入原始檔控制，請將檔案拖曳到您專案的根目錄中，這樣便能夠顯示它。
 

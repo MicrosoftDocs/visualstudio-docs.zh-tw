@@ -15,8 +15,8 @@ helpviewer_keywords:
 - editor
 ms.assetid: 
 caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -32,9 +32,12 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.technology:
+- vs-ide-general
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
 ms.openlocfilehash: f377ada139d9c0e8b01b640cf603cf349dc1c3c3
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/27/2017
 
 ---
@@ -51,7 +54,7 @@ EditorConfig 檔案中的設定可讓您在程式碼基底中維護語言的一�
 ## <a name="override-editorconfig-settings"></a>覆寫 EditorConfig 設定
 當您將 .editorconfig 檔案新增到檔案階層中的資料夾時，其設定會適用於該層級和以下的所有適用檔案。 若要覆寫特定專案或程式碼基底的 EditorConfig 設定，並使用與最上層 .editorconfig 檔案不同的值或覆寫值，只要將 .editorconfig 檔案新增至您想要變更的層級。
 
-![EditorConfig 階層](~/ide/media/vside_editorconfig_hierarchy.png)
+![EditorConfig 階層](../ide/media/vside_editorconfig_hierarchy.png)
 
 新的 .editorconfig 檔案設定將適用於它所在的層級和其所有子檔案。
 
@@ -70,19 +73,19 @@ Visual Studio 中的編輯器支援核心 EditorConfig 選項集合的下列值�
 ## <a name="example"></a>範例
 以下範例顯示 C# 程式碼片段在將 .editorconfig 檔案新增至專案之前和之後的縮排狀態。 Visual Studio 文字編輯器 [選項] 對話方塊的 [定位字元] 設定已設為在您於程式碼中按下 TAB 鍵時，會產生空白字元。
 
-![文字編輯器定位字元設定](~/ide/media/vside_editorconfig_tabsetting.png)
+![文字編輯器定位字元設定](../ide/media/vside_editorconfig_tabsetting.png)
 
 如同預期，在下一行按下 TAB 鍵會藉由新增四個額外的空白字元來縮排該行。
 
-![使用 EditorConfig 前的程式碼](~/ide/media/vside_editorconfig_before.png)
+![使用 EditorConfig 前的程式碼](../ide/media/vside_editorconfig_before.png)
 
 我們會將下列內容新增到專案中的新檔案，稱為 .editorconfig。 (`[*.cs]` 設定表示這項變更將只會適用於此專案中的 .cs 檔案。)
 
-![新增 .editorconfig 檔案至專案](~/ide/media/vside_editorconfig_addconfig.png)
+![新增 .editorconfig 檔案至專案](../ide/media/vside_editorconfig_addconfig.png)
 
 現在，當您按下 TAB 鍵，您會得到定位點字元，而不是空白。
 
-![TAB 新增定位字元](~/ide/media/vside_editorconfig_tab.png)
+![TAB 新增定位字元](../ide/media/vside_editorconfig_tab.png)
 
 > [!NOTE]
 >  將 .editorconfig 檔案新增到專案或程式碼基底並不會將現有的樣式轉換為新樣式，它只適用於剛剛新增的行。 如果您從專案或程式碼基底移除 .editorconfig 檔案，必須重新載入程式碼檔案，編輯器設定才會還原成全域設定。 在 Visual Studio 中的 [錯誤] 視窗裡會報告 .editorconfig 檔案中的任何錯誤。

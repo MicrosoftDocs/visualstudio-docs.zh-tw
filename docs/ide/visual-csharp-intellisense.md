@@ -14,8 +14,8 @@ helpviewer_keywords:
 - IntelliSense [C#]
 ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -108,11 +108,11 @@ ms.lasthandoff: 05/24/2017
   
  若要起始加入 using 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，智慧標籤將會出現在 `XmlTextReader` 最右邊的字元下方，因為它會顯示為無法解析的類型參考。  
   
- ![新增 using 智慧標籤影像](~/ide/media/addusesmart.gif "AddUseSmart")  
+ ![新增 using 智慧標籤影像](../ide/media/addusesmart.gif "AddUseSmart")  
   
  若要叫用 [加入 using]，您可以從 [IntelliSense] 功能表中的 [解析] 子功能表或操作功能表加以選取，或透過智慧標籤叫用 [加入 using]。 只有當游標位於未繫結類型的上方或旁邊時，才會顯示智慧標籤。  
   
- ![加入 using，智慧標籤展開的影像](~/ide/media/addusesmartexp.gif "AddUseSmartExp")  
+ ![加入 using，智慧標籤展開的影像](../ide/media/addusesmartexp.gif "AddUseSmartExp")  
   
 ### <a name="organize-usings"></a>組合管理 Using  
  [組合管理 Using]**`extern` 選項會排序並移除**  和 `using` 宣告，但不變更原始程式碼的行為。 不必要且缺乏組織的 `using` 指示詞會使原始程式碼隨著時間而變得繁雜難以閱讀。 [組合管理 Using] 選項可移除未使用的 `using` 指示詞來精簡原始程式碼，並加以排序來改善可讀性。  
@@ -161,11 +161,11 @@ ms.lasthandoff: 05/24/2017
   
  當您在 .cs 檔案的事件欄位後輸入 `+=` 運算子時，IntelliSense 會提示您按下 TAB 鍵的選項。 這會插入委派的新執行個體，指向處理事件的方法。  
   
- ![按鈕自動連結](~/ide/media/vxautohookup.gif "vxAutoHookUp")  
+ ![按鈕自動連結](../ide/media/vxautohookup.gif "vxAutoHookUp")  
   
  如果按下 TAB，IntelliSense 會自動為您完成陳述式，並在程式碼編輯器中將事件處理常式參考顯示為選取的文字。 若要完成自動事件連結，IntelliSense 會提示您再次按下 TAB 鍵，為事件處理常式建立空白的虛設常式 。  
   
- ![產生事件處理常式](~/ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
+ ![產生事件處理常式](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
 >  如果 IntelliSense 建立的新委派，參考的是現有的事件處理常式，IntelliSense 就會在工具提示中傳達這項資訊。 接著您就可以修改此參考，程式碼編輯器中已選取該文字。 否則，自動事件連結即於此刻完成。  

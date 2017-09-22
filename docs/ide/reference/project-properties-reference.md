@@ -13,8 +13,8 @@ helpviewer_keywords:
 - projects [Visual Studio], user interface
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -37,12 +37,10 @@ ms.contentlocale: zh-tw
 ms.lasthandoff: 05/24/2017
 
 ---
-# 專案屬性參考
-<a id="project-properties-reference" class="xliff"></a>
+# <a name="project-properties-reference"></a>專案屬性參考
 深入了解如何設定和自訂專案屬性。  
   
-## 專案屬性頁面
-<a id="project-properties-pages" class="xliff"></a>  
+## <a name="project-properties-pages"></a>專案屬性頁面  
   
 |標題|描述|  
 |-----------|-----------------|  
@@ -59,9 +57,7 @@ ms.lasthandoff: 05/24/2017
 |[專案設計工具、參考頁面 (Visual Basic)](../../ide/reference/references-page-project-designer-visual-basic.md)|使用這個頁面來管理專案所使用的參考。|  
 |[專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md)|使用這個頁面來設定使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署之應用程式的程式碼存取安全性設定。|  
 |[專案設計工具、簽署頁面](../../ide/reference/signing-page-project-designer.md)|使用這個頁面來簽署應用程式和部署資訊清單，以及簽署組件。|  
-|||  
-|||  
   
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另請參閱  
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)
+

@@ -18,8 +18,8 @@ helpviewer_keywords:
 - relationships, visualizing
 ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
 caps.latest.revision: 33
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -35,9 +35,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: e4d056e8e2819c89eec52ebb29747acc49a08654
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---

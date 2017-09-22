@@ -15,6 +15,8 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.technology:
+- vs-acquisition
 ms.translationtype: HT
 ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
 ms.openlocfilehash: 5bf00b7e5ed79f8679b837d0dcabf03550d2b849

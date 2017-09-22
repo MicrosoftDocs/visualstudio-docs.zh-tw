@@ -5,13 +5,13 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -28,16 +28,17 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 07048d1ab89599609d7ece1e69056e6dd1dd7eea
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入至您的表單
 在這個步驟中，您要將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 接著，您要將按鈕加入至表單。  
   
- ![影片連結](~/data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或 [教學課程 1：在 C# 中建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
+ ![影片連結](../data-tools/media/playvideo.gif "PlayVideo")如需觀看本主題的影片版本，請參閱[教學課程 1：在 Visual Basic 中建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205211) 或 [教學課程 1：在 C# 中建立圖片檢視器 - 影片 2](http://go.microsoft.com/fwlink/?LinkId=205200)。 這些影片使用舊版 Visual Studio，因此有一些功能表命令以及某些使用者介面項目會有些微差異。 不過，概念和程序在目前 Visual Studio 版本中的運作方式雷同。  
   
 ### <a name="to-add-controls-to-your-form"></a>若要將控制項加入至表單  
   
@@ -49,7 +50,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  選擇新的 PictureBox 控制項以選取該項目，然後選擇新的 PictureBox 控制項的黑色三角形顯示其工作清單，如下圖所示。  
   
-     ![PictureBox 工作](~/ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
+     ![PictureBox 工作](../ide/media/express_pictureboxtasks.png "Express_PictureBoxTasks")  
 PictureBox 工作  
   
     > [!NOTE]
@@ -64,7 +65,7 @@ PictureBox 工作
   
 7.  選擇表單上的 [TableLayoutPanel]，然後將 **CheckBox** 控制項新增至表單。 按兩下 [工具箱] 中的 [CheckBox] 項目，將新的 CheckBox 控制項新增至資料表的下一個可用儲存格。 由於 PictureBox 會佔用 TableLayoutPanel 的前兩個儲存格，因此 CheckBox 控制項會加入至左下方儲存格。 選擇 [Text] 屬性，並輸入 **Stretch** 這個字，如下圖所示。  
   
-     ![包含 Stretch 屬性的 TextBox 控制項](~/ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
+     ![包含 Stretch 屬性的 TextBox 控制項](../ide/media/express_pictureviewercheckbox.png "Express_PictureViewerCheckbox")  
 包含 Stretch 屬性的 TextBox 控制項  
   
 8.  選擇表單上的 [TableLayoutPanel]，並移至 [工具箱] 中的 [容器] 群組 (您取得 TableLayoutPanel 控制項的位置)，然後按兩下 [FlowLayoutPanel] 項目將新的控制項新增至 PictureBox (右下方) 中的最後一個儲存格。 接著將 FlowLayoutPanel 停駐在 TableLayoutPanel 中 (藉由選擇 FlowLayoutPanel 的黑色三角形工作清單上的 [停駐於父容器中]，或將 FlowLayoutPanel 的 [Dock] 屬性設定為 [Fill])。  
@@ -90,7 +91,7 @@ PictureBox 工作
   
 5.  選擇 [關閉] 按鈕選取它。 按住 CTRL 鍵並選擇其他三個按鈕，將它們全部選取。 選取所有按鈕後，請移至 [屬性] 視窗並向下捲動至 [AutoSize] 屬性。 此屬性會指示按鈕自動調整本身的大小，以容納其所有文字。 將此屬性設定為 [true]。 您的按鈕現在應該具有適當的大小且順序正確  (只要將四個按鈕全部選取，您就可以同時將四個 **AutoSize** 屬性全部變更)。下列圖片顯示這四個按鈕。  
   
-     ![包含四個按鈕的圖片檢視器](~/ide/media/express_autosize.png "Express_AutoSize")  
+     ![包含四個按鈕的圖片檢視器](../ide/media/express_autosize.png "Express_AutoSize")  
 包含四個按鈕的圖片檢視器  
   
 6.  現在，重新執行程式來查看新配置的表單。 選擇按鈕和核取方塊並不會執行任何動作，不過很快就會有作用。  

@@ -5,7 +5,7 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,8 +13,8 @@ f1_keywords:
 - VS.XamlDesigner.EditResource
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -50,7 +50,7 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
   
      這會顯示用於建立資源的適當對話方塊。 例如，當您從筆刷建立資源時，會顯示下列對話方塊：  
   
-     ![建立資源對話方塊](~/designers/media/xaml_create_resource.png "xaml_create_resource")  
+     ![建立資源對話方塊](../designers/media/xaml_create_resource.png "xaml_create_resource")  
   
 3.  在 [名稱 (索引鍵)] 方塊中，輸入索引鍵名稱。 如果您要讓其他項目參考這個資源，這會是您使用的名稱。  
   

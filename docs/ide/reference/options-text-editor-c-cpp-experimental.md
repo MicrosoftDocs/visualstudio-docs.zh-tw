@@ -12,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Experimental
 ms.assetid: b9e9dda2-350c-460d-b368-37d6c5342eee
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -30,6 +30,8 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
+ms.technology:
+- vs-ide-general
 ms.translationtype: HT
 ms.sourcegitcommit: 8a544bd1e1242bb6fabe00f7842ac33ed9d9d444
 ms.openlocfilehash: 1677db7d5af93db8a378d598332e6a6d52f09bdd
