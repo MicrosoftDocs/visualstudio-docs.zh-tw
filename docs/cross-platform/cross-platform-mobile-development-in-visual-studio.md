@@ -2,7 +2,6 @@
 title: "Visual Studio 中的跨平台行動裝置應用程式開發 | Microsoft Docs"
 ms.custom: 
 ms.date: 12/06/2016
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -58,7 +57,7 @@ ms.lasthandoff: 05/13/2017
 -   [使用 Visual Studio Tools for Unity 建置 Android、iOS 和 Windows 的跨平台遊戲](#Unity)
 
 ##  <a name="NET"></a> 建置 Android、iOS 和 Windows 的應用程式 (.NET Framework)
- ![裝置](~/cross-platform/media/homedevices.png "HomeDevices")
+ ![裝置](../cross-platform/media/homedevices.png "HomeDevices")
 
  利用 Xamarin，您可以在同一個方案中將目標設為 Android、iOS 及 Windows，來共用程式碼，甚至共用 UI。
 
@@ -89,7 +88,7 @@ ms.lasthandoff: 05/13/2017
 ####  <a name="ShareHTML"></a> 在 Android、iOS 和 Windows 應用程式之間共用程式碼
  如果您不使用 Xamarin.Forms，並選擇針對每個平台個別設計，您可以在平台專案 (Android、iOS 和 Windows) 之間共用大部分的非 UI 程式碼。 這包括任何商務邏輯、雲端整合、資料庫存取，或以 .NET Framework 為目標的其他任何程式碼。 唯一無法共用的程式碼是以特定平台為目標的程式碼。
 
- ![在 Windows、iOS 和 Android UI 之間共用程式碼](~/cross-platform/media/sharecode.png "ShareCode")
+ ![在 Windows、iOS 和 Android UI 之間共用程式碼](../cross-platform/media/sharecode.png "ShareCode")
 
  您可以使用共用專案和 (或) 可攜式類別庫專案來共用您的程式碼。 您可能會發現某些程式碼最適合用於共用專案，而某些程式碼在可攜式類別庫專案內較有意義。
 
@@ -98,7 +97,7 @@ ms.lasthandoff: 05/13/2017
 |選擇是否使用共用專案和 (或) 可攜式類別庫專案，來共用程式碼。<br /><br /> [跨平台共用程式碼](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (.NET Framework 部落格)<br /><br /> [共用程式碼選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [使用 .NET Framework 時的程式碼共用選項](http://msdn.microsoft.com/library/dn720832.aspx) (MSDN Library)|
 
 ###  <a name="WindowsHTML"></a> 以 Windows 10 裝置為目標
- ![Windows 裝置](~/cross-platform/media/windowsdevices.png "WindowsDevices")
+ ![Windows 裝置](../cross-platform/media/windowsdevices.png "WindowsDevices")
 
  如果您想要建立以 Windows 10 裝置的完整範圍為目標的單一應用程式，請建立通用 Windows 應用程式。 您會使用單一專案來設計應用程式，您的網頁將正確轉譯，無論是使用哪一種裝置來檢視。
 
@@ -114,7 +113,7 @@ ms.lasthandoff: 05/13/2017
 |[將應用程式移轉至通用 Windows 平台 (UWP)](https://msdn.microsoft.com/en-us/library/mt148501.aspx)|
 
 ##  <a name="HTML"></a> 建置 Android、iOS 和 Windows 的應用程式 (HTML/JavaScript)
- ![裝置](~/cross-platform/media/homedevices.png "HomeDevices")
+ ![裝置](../cross-platform/media/homedevices.png "HomeDevices")
 
  如果您是熟悉 HTML 和 JavaScript 的 Web 開發人員，則可使用 Visual Studio Tools for Apache Cordova，以 Windows、Android 和 iOS 為目標。 這些應用程式可以全部三個平台為目標，且您可以使用最熟悉的技巧和程序來建置它們。
 
@@ -122,7 +121,7 @@ ms.lasthandoff: 05/13/2017
 
  因為這些 API 是跨平台的，您可以在所有三個平台之間共用您撰寫的大部分內容。 這會降低開發與維護的成本。 另外，也不需要從頭開始。 如果您已建立其他類型的 Web 應用程式，可以與 Cordova 應用程式共用那些檔案，而不需要以任何方式修改或重新設計。
 
- ![多重裝置混合式應用程式](~/cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
+ ![多重裝置混合式應用程式](../cross-platform/media/multidevicehybridapps.png "MultiDeviceHybridApps")
 
  若要開始，請安裝 Visual Studio 2015，然後在設定期間選擇 **HTML/JavaScript (Apache Cordova)** 功能。 如果您使用的是 Visual Studio 2013，請安裝 Visual Studio Tools for Apache Cordova 延伸模組。 無論何種方式，Cordova 工具都會自動安裝建置多重平台應用程式所需的所有協力廠商軟體。
 
@@ -139,13 +138,13 @@ ms.lasthandoff: 05/13/2017
 |[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> 建置 Android 和 Windows 的應用程式 (C++)
- ![使用 C&#43;&#43; 為 Android、 iOS 和 Windows 建置](~/cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
+ ![使用 C&#43;&#43; 為 Android、 iOS 和 Windows 建置](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
 
  首先，安裝 Visual Studio 2015 和適用於跨平台行動裝置應用程式開發的 Visual C++ 工具。 然後，您可以建置 Android 的 Native-Activity 應用程式，或以 Windows 為目標的應用程式。 目前尚未提供以 iOS 為目標的 C++ 範本。 您可以視需要在同一個方案以 Android 和 Windows 為目標，然後使用跨平台靜態或動態共用程式庫，在這兩者間共用程式碼。
 
  如果您必須建置需要任何進階圖形操作類型 (例如遊戲) 的 Android 應用程式，可使用 C++ 來執行此動作。 從**原生活動應用程式 (Android)** 專案開始。 這個專案提供對 Clang 工具鏈的完整支援。
 
- ![Native-Activity 專案範本](~/cross-platform/media/cross-plat_cpp_native.png "Cross-Plat_CPP_Native")
+ ![Native-Activity 專案範本](../cross-platform/media/cross-plat_cpp_native.png "Cross-Plat_CPP_Native")
 
  當您準備好要執行應用程式及查看其外觀時，請使用適用於 Android 的 Visual Studio 模擬器。 這項工具不僅快速可靠，而且容易安裝及設定。
 
@@ -153,7 +152,7 @@ ms.lasthandoff: 05/13/2017
 
  您可以藉由建立靜態或動態共用程式庫，在 Android 和 Windows 之間共用 C++ 程式碼。
 
- ![靜態和動態共用程式庫](~/cross-platform/media/cross_plat_cpp_libraries.png "Cross_Plat_CPP_Libraries")
+ ![靜態和動態共用程式庫](../cross-platform/media/cross_plat_cpp_libraries.png "Cross_Plat_CPP_Libraries")
 
  您可以如本節稍早所述，在 Windows 或 Android 專案中使用該程式庫。 您也可以在使用 Xamarin、Java 或任何語言建置的應用程式中使用該程式庫，讓您叫用 Unmanaged DLL 中的函式。
 
@@ -173,7 +172,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="Unity"></a> 使用 Visual Studio Tools for Unity 建置 Android、iOS 和 Windows 的跨平台遊戲
  Visual Studio Tools for Unity 是將 Visual Studio 的強大程式碼編輯、生產力和偵錯工具與 *Unity* 整合的免費 Visual Studio 延伸模組，這個熱門的跨平台遊戲/圖形引擎和開發環境適用於以 Windows、iOS、Android 和其他平台為目標的沉浸式應用程式。
 
- ![VSTU 開發環境](~/cross-platform/media/vstu_overview.png "VSTU_Overview")
+ ![VSTU 開發環境](../cross-platform/media/vstu_overview.png "VSTU_Overview")
 
  透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含對 Unity 5 的支援，且包括 Unity 的 ShaderLab 著色器語言的語法著色、與 Unity 的更佳同步化、更豐富的偵錯，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。
 

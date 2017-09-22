@@ -3,7 +3,6 @@ title: "Visual Studio 系統管理員指南 | Microsoft Docs"
 description: "深入了解如何在企業環境中部署 Visual Studio。"
 ms.custom: 
 ms.date: 05/15/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

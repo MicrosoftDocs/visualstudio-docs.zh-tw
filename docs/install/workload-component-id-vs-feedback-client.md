@@ -11,7 +11,6 @@ helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.prod: visual-studio-dev15
 ms.service: 
 ms.technology:
 - vs-ide-install

@@ -2,7 +2,6 @@
 title: "對 Visual Studio 中的 Python 進行 Azure 遠端偵錯疑難排解 | Microsoft Docs"
 ms.custom: 
 ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

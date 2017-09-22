@@ -2,7 +2,6 @@
 title: "Azure SDK for Python |Microsoft 文件"
 ms.custom: 
 ms.date: 3/7/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

@@ -2,7 +2,6 @@
 title: "針對 Mac 使用者的設定、安裝和驗證 | Microsoft Docs"
 ms.custom: 
 ms.date: 04/13/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
