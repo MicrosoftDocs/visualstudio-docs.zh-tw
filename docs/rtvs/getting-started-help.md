@@ -2,7 +2,6 @@
 title: "Visual Studio R 工具中的 [說明] 視窗 | Microsoft Docs"
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

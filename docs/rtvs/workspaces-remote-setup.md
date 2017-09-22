@@ -2,7 +2,6 @@
 title: "使用 Visual Studio R 工具的遠端工作區 | Microsoft Docs"
 ms.custom: 
 ms.date: 6/30/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

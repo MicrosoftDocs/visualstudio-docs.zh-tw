@@ -2,7 +2,6 @@
 title: "Visual Studio R 工具 | Microsoft Docs"
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -102,7 +101,7 @@ Visual Studio R 工具 (RTVS) 為適用於 Visual Studio 2017 和 Visual Studio 
 
 答： RTVS 的 1.0 版僅支援英文。 1.1 版將會針對和 Visual Studio 本身相同的語言集進行當地語系化。 在此期間，請使用[適用於 Visual Studio 2015 的英文語言套件](https://www.microsoft.com/download/details.aspx?id=48157)。針對 Visual Studio 2017，請執行安裝程式，並在 [語言套件] 索引標籤中選取 [英文]。
 
-![適用於 Visual Studio 2017 的國際設定](~/rtvs/media/FAQ-international-settings.png)
+![適用於 Visual Studio 2017 的國際設定](media/FAQ-international-settings.png)
 
 **問：RTVS 是否能搭配 32 位元版本的 R 運作？**
 

@@ -2,7 +2,6 @@
 title: "使用 Visual Studio R 工具的 R Markdown | Microsoft Docs"
 ms.custom: 
 ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

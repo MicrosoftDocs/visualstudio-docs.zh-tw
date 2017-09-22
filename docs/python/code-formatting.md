@@ -2,7 +2,6 @@
 title: "在 Visual Studio 中格式化 Python 程式碼 | Microsoft Docs"
 ms.custom: 
 ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:

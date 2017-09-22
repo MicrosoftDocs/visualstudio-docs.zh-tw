@@ -3,7 +3,6 @@ title: "將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方 | Microsof
 description: 
 ms.custom: 
 ms.date: 08/01/2017
-ms.prod: visual-studio-dev15
 ms.reviewer: 
 ms.suite: 
 ms.technology:
