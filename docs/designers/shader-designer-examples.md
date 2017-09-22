@@ -5,17 +5,18 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 caps.latest.revision: 9
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: b028c5493f58c3a0f6fbb2dac517c1ed9cf0d318
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---

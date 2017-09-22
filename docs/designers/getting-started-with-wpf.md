@@ -5,13 +5,13 @@ ms.date: 7/17/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 caps.latest.revision: 5
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
 ms.sourcegitcommit: 0387b9a656f97d9354f95f121cad8422e93a69bc

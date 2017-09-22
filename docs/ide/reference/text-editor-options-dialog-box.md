@@ -22,8 +22,8 @@ helpviewer_keywords:
 - editor settings
 ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -39,9 +39,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 7d7257c2c82cb07edef81d52ea6f7364835fe81d
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---

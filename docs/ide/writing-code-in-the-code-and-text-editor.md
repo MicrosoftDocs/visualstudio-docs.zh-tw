@@ -61,8 +61,8 @@ helpviewer_keywords:
 - code
 ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -141,11 +141,11 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 ## <a name="navigate-and-find-code"></a>巡覽並尋找程式碼  
 有數種不同的方式可讓您在文件中四處移動。 除了標準作業之外，您還可以使用工具列上的 [向後巡覽]\(CTRL+減號) 和 [向前巡覽]\ (CTRL+SHIFT+減號) 按鈕，將插入點移至上一個位置或返回使用中文件之最近使用的位置。 這些按鈕會保留插入點的最後 20 個位置。
 
-![[向前] 及 [向後] 導覽按鈕](~/ide/media/vs2017_nav_buttons.png)
+![[向前] 及 [向後] 導覽按鈕](../ide/media/vs2017_nav_buttons.png)
 
 程式碼編輯器中的結構視覺化檢視功能會顯示「結構輔助線」，這是垂直虛線，用來指出程式碼基底中的成對大括弧。 這可讓您更輕鬆地查看邏輯區塊的開始和結束位置。
 
-![結構視覺化檢視](~/ide/media/vside_structure_visualizer.png)
+![結構視覺化檢視](../ide/media/vside_structure_visualizer.png)
 
 若要停用結構輔助線，請依序移至 [工具]、[選項]、[文字編輯器] 和 [一般]，並清除 [顯示結構輔助線] 方塊。
 
@@ -167,7 +167,7 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
  您也可以使用「巡覽列」，也就是程式碼視窗頂端的下拉式清單方塊，在程式碼基底中尋找程式碼。 只要選擇類型或成員，就可以直接移至類型或成員。 編輯 Visual Basic、C# 或 C++ 程式碼基底中的程式碼時，會顯示巡覽列。
 
- ![程式碼巡覽列](~/ide/media/vside_navigation_bar.png)
+ ![程式碼巡覽列](../ide/media/vside_navigation_bar.png)
 
  若要隱藏巡覽列，請在 [文字編輯器] 的 [所有語言] 設定 ([工具]、[選項]、[文字編輯器]和 [所有語言]，或變更各個語言的設定) 中變更 [巡覽列] 選項。 您可以巡覽下拉式方塊，如下所示：  
 
@@ -194,7 +194,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 1. 在主功能表上，依序選擇 [編輯] 和 [移至]。 小型文字方塊會出現在程式碼編輯器的上方。
 1. 在此文字方塊中，輸入您想要尋找之程式碼項目的名稱。
 
-    ![[巡覽至] 視窗](~/ide/media/vside_navigatetowindow.png "[巡覽至] 視窗")
+    ![[巡覽至] 視窗](../ide/media/vside_navigatetowindow.png "[巡覽至] 視窗")
 
     當您輸入時，結果會出現在文字方塊下方的下拉式清單中。
 1. 若要移至項目，請在清單中選擇它。
@@ -217,11 +217,11 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 
 您也可以選擇 [移至] 對話方塊工具列上的按鈕，快速變更搜尋篩選。 變更篩選的按鈕是在左邊，變更搜尋範圍的按鈕則是在右邊。
 
-![](~/ide/media/vside_navigation_toolbar.png)
+![](../ide/media/vside_navigation_toolbar.png)
 
 如果您在程式碼中使用 [camel casing](https://en.wikipedia.org/wiki/Camel_case) (駝峰式命名法)，則只要輸入程式碼項目名稱的大寫字母，就可以更快速地找到程式碼項目。 例如，如果您的程式碼有一個稱為 `CredentialViewModel` 的類型，則選擇類型篩選 ("t")，並且只要在 [移至] 對話方塊中輸入名稱的大寫字母 (`CVM`)，就可以縮小搜尋範圍。
 
-![[巡覽至] 視窗 - 使用大寫搜尋](~/ide/media/vside_capitalsearch.png)
+![[巡覽至] 視窗 - 使用大寫搜尋](../ide/media/vside_capitalsearch.png)
 
 如果您的程式碼名稱很長，則這個功能十分有用。
 
@@ -239,7 +239,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 
 您也可以將滑鼠游標停留在任何搜尋結果上方，以查看所傳回項目的預覽。
 
-![[尋找所有參考] 工具視窗](~/ide/media/vside_findallreferences.png)
+![[尋找所有參考] 工具視窗](../ide/media/vside_findallreferences.png)
 
 若要保存您的搜尋結果，請選擇 [保存結果] 按鈕。 當您選擇此按鈕時，目前搜尋結果會停留在此視窗中，而新的搜尋結果會出現在新的工具視窗中。
 

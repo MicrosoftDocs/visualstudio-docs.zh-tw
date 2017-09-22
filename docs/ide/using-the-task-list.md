@@ -17,8 +17,8 @@ helpviewer_keywords:
 - Visual Studio, task list
 ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
 caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - de-de
@@ -66,7 +66,7 @@ ms.lasthandoff: 02/22/2017
   
 -   在 [檢視] 功能表上，選擇 [工作清單]\(鍵盤：Ctrl+\\、T)。  
   
-     ![[工作清單] 視窗](~/ide/media/vs2015_task_list.png "vs2015_task_list")  
+     ![[工作清單] 視窗](../ide/media/vs2015_task_list.png "vs2015_task_list")  
   
 #### <a name="to-change-the-sort-order-of-the-list"></a>變更清單的排序順序  
   
@@ -115,7 +115,7 @@ ms.lasthandoff: 02/22/2017
   
      [[選項] 對話方塊、[環境]、[工作清單]](../ide/reference/task-list-environment-options-dialog-box.md) 隨即顯示。  
   
-     ![Visual Studio 工作清單](~/ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
+     ![Visual Studio 工作清單](../ide/media/vs2015_task_list_options.png "vs2015_task_list_options")  
   
 3.  在 [語彙基元]  分類的 [名稱]  文字方塊中，輸入您的語彙基元名稱，例如 "BUG"。  
   
@@ -135,7 +135,7 @@ ms.lasthandoff: 02/22/2017
 ##  <a name="shortcuts"></a> 捷徑  
  *捷徑* 是在 [工作清單] 內所追蹤程式碼中的書籤；它的圖示與一般書籤不同。 按兩下 [ **工作清單** ] 中的捷徑可移至程式碼中對應的位置。  
   
- ![Visual Studio 工作清單捷徑圖示](~/ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
+ ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  
   
 #### <a name="to-create-a-shortcut"></a>建立捷徑  
   

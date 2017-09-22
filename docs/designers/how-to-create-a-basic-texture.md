@@ -1,19 +1,39 @@
 ---
 title: "如何：建立基本材質 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology:
+- vs-ide-designers
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 caps.latest.revision: 15
-author: "BrianPeek"
-ms.author: "brpeek"
-manager: "ghogen"
-caps.handback.revision: 15
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
+ms.openlocfilehash: e8455a68a2be88e177746433ad3b41e412c8de38
+ms.contentlocale: zh-tw
+ms.lasthandoff: 02/22/2017
+
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
 本文件將示範如何使用影像編輯器來建立基本材質。  
@@ -35,7 +55,7 @@ caps.handback.revision: 15
   
  下列步驟示範如何建立代表「靶心」目標的材質。當您完成時，材質看起來應該類似下列圖片。 設定影像編輯器使用綠色棋盤式圖樣顯示材質，更能展現出材質中的透明度。  
   
- ![以綠色顯示透明度的「靶心」目標](~/designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
+ ![以綠色顯示透明度的「靶心」目標](../designers/media/digit-bullseye-texture-in-editor.png "Digit-Bullseye-Texture-In-Editor")  
   
  開始之前，請確定已顯示 [屬性] 視窗。 您可以在工作時，使用 [屬性] 視窗來設定影像大小、變更工具屬性，以及指定色彩。  
   
@@ -83,14 +103,9 @@ caps.handback.revision: 15
   
  完成「靶心」目標材質。 以下是呈現透明度的最終影像。  
   
- ![完整的「靶心」目標材質](~/designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
+ ![完整的「靶心」目標材質](../designers/media/gfx_image_demo_bullseye.png "gfx_image_demo_bullseye")  
   
  下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
   
 ## <a name="see-also"></a>另請參閱  
  [影像編輯器](../designers/image-editor.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

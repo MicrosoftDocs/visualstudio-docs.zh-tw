@@ -15,8 +15,8 @@ helpviewer_keywords:
 - projects [Visual Studio], multi-targeting
 ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
 caps.latest.revision: 26
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -39,22 +39,19 @@ ms.contentlocale: zh-tw
 ms.lasthandoff: 05/30/2017
 
 ---
-# 以特定的 .NET Framework 版本為目標
-<a id="targeting-a-specific-net-framework-version" class="xliff"></a>
+# <a name="targeting-a-specific-net-framework-version"></a>以特定的 .NET Framework 版本為目標
 在 Visual Studio 中，您可以指定要讓專案使用的目標 .NET Framework 版本或設定檔。 如果應用程式會在另一部電腦上執行，則該應用程式的目標 Framework 版本必須與該電腦上安裝的 Framework 版本相容。  
   
  本節的主題說明如何在專案中，以特定的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本為目標。  
   
-## 本章節內容
-<a id="in-this-section" class="xliff"></a>  
+## <a name="in-this-section"></a>本章節內容  
  [Visual Studio 多目標概觀](../ide/visual-studio-multi-targeting-overview.md)  
  提供 Visual Studio 中多目標功能的概觀。  
   
  [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  詳細說明如何為 Visual Basic、Visual C# 或 Visual F# 專案指定特定的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-## 相關章節
-<a id="related-sections" class="xliff"></a>  
+## <a name="related-sections"></a>相關章節  
  [ASP.NET Web 專案的 .NET Framework 多目標](http://msdn.microsoft.com/Library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  說明如何使用這一版 Visual Studio 來開發在舊版 .NET Framework 下執行的 Web 應用程式。  
   

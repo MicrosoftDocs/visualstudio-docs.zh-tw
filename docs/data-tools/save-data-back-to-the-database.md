@@ -1,219 +1,244 @@
 ---
-title: "儲存資料集中的資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 儲存"
-  - "資料驗證, 資料集"
-  - "資料集 [Visual Basic], 關於資料集"
-  - "資料集 [Visual Basic], 條件約束"
-  - "資料集 [Visual Basic], 合併"
-  - "資料集 [Visual Basic], 驗證資料"
-  - "資料列版本"
-  - "儲存資料, 有關儲存資料"
-  - "TableAdapter"
-  - "更新, 資料集條件約束"
-  - "更新資料集, 條件約束"
+title: Save data back to the database | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- datasets [Visual Basic], validating data
+- data validation, datasets
+- data [Visual Studio], saving
+- row version
+- updating datasets, constraints
+- datasets [Visual Basic], about datasets
+- datasets [Visual Basic], merging
+- updates, constraints in datasets
+- saving data, about saving data
+- datasets [Visual Basic], constraints
+- TableAdapters
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 27
-caps.handback.revision: 18
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+translation.priority.ht:
+- de-de
+- es-es
+- fr-fr
+- it-it
+- ja-jp
+- ko-kr
+- ru-ru
+- zh-cn
+- zh-tw
+translation.priority.mt:
+- cs-cz
+- pl-pl
+- pt-br
+- tr-tr
+ms.technology: vs-data-tools
+ms.translationtype: HT
+ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
+ms.openlocfilehash: 2a8553c23c805d6e8acddaf4ba264a915c2795bc
+ms.contentlocale: zh-tw
+ms.lasthandoff: 09/08/2017
+
 ---
-# 儲存資料集中的資料
-儲存資料是將應用程式中已變更的資料維持在原始資料存放區 \(通常是關聯式資料庫，例如 SQL Server\) 中的程序。  
+# <a name="save-data-back-to-the-database"></a>Save data back to the database
+The dataset is an in-memory copy of data. If you modify that data, it's a good practice to save those changes back to the database. You do this in one of three ways:  
   
- 由於資料集實際上就是資料的快取 \(記憶體內的複本\)，因此將資訊寫入原始資料來源的處理序和修改資料集中資料的處理序是分別進行的。  您可以將資料集的更新資料送回資料庫，只需要呼叫其中一個 TableAdapter `Update` 方法，或呼叫其中一個 TableAdapter DBDirect 方法即可。  
+-   By calling one of the Update methods of a TableAdapter  
   
- 如需將資料集的變更送回資料庫的詳細資訊，請參閱 [如何：使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)和 [如何：將資料集變更儲存至資料庫](../Topic/How%20to:%20Save%20Dataset%20Changes%20to%20a%20Database.md)。  
+-   By calling one of DBDirect methods of the TableAdapter  
   
- Visual Studio 提供 `TableAdapterManager` 元件，可協助您儲存關聯資料表中的資料。  這個元件可確保根據資料庫中所定義的外部索引鍵條件約束，按照適當的順序執行儲存。  如需詳細資訊，請參閱[階層式更新概觀](../Topic/Hierarchical%20Update%20Overview.md)。  
+-   By calling the UpdateAll method on the TableAdapterManager that Visual Studio generates for you when the dataset contains tables that are related to other tables in the dataset  
   
- 如需修改資料集中資料的詳細資訊，請參閱[在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)。  
+When you data bind dataset tables to controls on a Windows Form or XAML page, the data binding architecture does all the work for you.  
   
-## 兩階段更新  
- 透過資料集更新資料來源需要兩個步驟。  第一個步驟是以新資訊 \(新增的資料錄、變更的資料錄或刪除的資料錄\) 更新資料集。  如果您的應用程式只需處理資料集，例如在更新資料集之後，您會將它傳送到另一個應用程式來進一步處理資料集，那麼您這時就已完成更新。  
+If you're familiar with TableAdapters, you can jump directly to one of these topics:  
   
-> [!NOTE]
->  在 Windows Form 中，將變更從資料繫結控制項傳送至資料集的工作，是由資料繫結架構處理，您不需要使用您自己的程式碼來明確更新資料集。  如需詳細資訊，請參閱[Windows Form 資料繫結](../Topic/Windows%20Forms%20Data%20Binding.md)。  
+|Topic|Description|  
+|-----------|-----------------|  
+|[Insert new records into a database](../data-tools/insert-new-records-into-a-database.md)|How to perform updates and inserts using TableAdapters or Command objects|  
+|[Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|How to perform updates with TableAdapters|  
+|[Hierarchical update](../data-tools/hierarchical-update.md)|How to perform updates from a dataset with two or more related tables|  
+|[Handle a concurrency exception](../data-tools/handle-a-concurrency-exception.md)|How to handle exceptions when two users attempt to change the same data in a database at the same time|  
+|[How to: Save data by using a transaction](../data-tools/save-data-by-using-a-transaction.md)|How to save data in a transaction using the System.Transactions namespace and a TransactionScope object|  
+|[Walkthrough: Save data in a transaction](../data-tools/save-data-in-a-transaction.md)|Walkthrough that creates a Windows Forms application to demonstrate saving data to a database inside a transaction|  
+|[Save data to a database (multiple tables)](../data-tools/save-data-to-a-database-multiple-tables.md)|How to edit records and save changes in multiple tables back to the database|  
+|[Save data from an object to a database](../data-tools/save-data-from-an-object-to-a-database.md)|How to pass data from an object that is not in a dataset to a database by using a TableAdapter DbDirect method|  
+|[Save data with the TableAdapter DBDirect methods](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|How to use the TableAdapter to send SQL queries directly to the database|  
+|[Save a dataset as XML](../data-tools/save-a-dataset-as-xml.md)|How to save a dataset to an XML document|  
   
- 如果您要更新資料來源 \(例如資料庫\)，第二個步驟就是將變更從資料集傳送至原始資料來源。  也就是說，更新資料集的處理序並不會同時將變更寫入基礎資料來源；您必須明確執行第二個步驟。  通常可以藉由呼叫您用來填入資料集那個 TableAdapter \(或資料配接器\) 的 Update 方法來完成這項處理，不過您也可以使用不同的配接器，將資料從某個資料來源移至另一個，或是更新多個資料來源。  
+## <a name="two-stage-updates"></a>Two-stage updates  
+ Updating a data source is a two-step process. The first step is to update the dataset with new records, changed records, or deleted records. If your application never sends those changes back to the data source, then you are finished with the update.  
   
- ![Visual Basic 資料集更新](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
-兩階段更新過程以及 DataRowVersion 在成功更新中所扮演的角色  
+ If you do send the changes back to the database, then a second step is required. If you aren't using data-bound controls, then you have to manually call the Update method of the same TableAdapter (or data adapter) that you used to populate the dataset. However, you can also use different adapters, for example, to move data from one data source to another or to update multiple data sources. If you aren't using data binding, and are saving changes for related tables, you have to manually instantiate a variable of the auto-generated TableAdapterManager class, and then call its UdpateAll method.  
   
- 以結構來說，資料集會讓資料變成一組集合來使用。  資料集包含資料表的集合。  資料表又包含資料列的集合。  資料表會公開為 <xref:System.Data.DataSet> 物件的集合，而資料錄可從 <xref:System.Data.DataTable> 物件的 <xref:System.Data.DataTable.Rows%2A> 集合取得。  只要使用基底集合方法來操作這些集合就可變更資料集中的資料，但如果您要更新基礎資料來源，您就必須使用特別設計來修改資料集的方法。  
+ ![Visual Basic Dataset Updates](../data-tools/media/vbdatasetupdates.gif "vbDatasetUpdates")  
+Two-stage update process and the role of the DataRowVersion in a successful update  
   
- 例如，若要將資料錄從資料表中移除，您應該呼叫資料表之 <xref:System.Data.DataTable.Rows%2A> 集合的 [RemoveAt 方法](https://msdn.microsoft.com/en-us/library/system.data.datarowcollection.removeat.aspx)，這樣就能夠實際將該資料錄從資料集刪除。  如果您只是將資料集當做資料的結構化存放區使用，而且不考慮將變更資訊傳送至其他應用程式，那麼就可以這種方式操作集合來更新資料集。  
+ A dataset contains collections of tables, which contain a collections of rows. If you intend to  update an underlying data source later, you must use the methods on the DataTable.DataRowCollection property when adding or removing rows. Those methods perform the change tracking that's needed for updating the data source. If you call the RemoveAt collection on the Rows property, the deletion won't be communicated back to the database.  
   
- 不過，如果您要將變更傳送至資料來源或其他應用程式，您就需要在每次更新時維護變更資訊 \(即中繼資料，Metadata\)。  稍後當您將變更傳送至資料來源或應用程式時，處理序就具有找出和更新適當資料錄所需的資訊。  例如，如果您刪除資料集中的資料錄，就必須在此資料集中維護與刪除的資料錄有關的資訊。  如此一來，當叫用 TableAdapter 的 `DeleteCommand` 時，就有足夠的歷程資訊可以找出資料來源中的原始資料錄，以便將它刪除。  如需詳細資訊，請參閱以下的「維護變更的資訊」。  
+## <a name="merge-datasets"></a>Merge datasets  
+ You can update the contents of a dataset by *merging* it with another dataset. This involves copying the contents of a *source* dataset into the calling dataset (referred to as the *target* dataset). When you merge datasets, new records in the source dataset are added to the target dataset. Additionally, extra columns in the source dataset are added to the target dataset. Merging datasets is useful when you have a local dataset and you get a second dataset from another application. It's also useful when you get a second dataset  from a component such as an XML web service, or when you need to integrate data from multiple datasets.  
   
-## 合併資料集  
- 您可藉由「*合併*」\(Merging\) 的方式來更新資料集的內容，也就是說，將某資料集 \(稱為「*來源*」資料集\) 的內容複製到呼叫資料集 \(稱為「*目標*」\(Target\) 資料集\)。  當您合併資料集時，來源資料集中的新資料錄會加入目標資料集中。  除此之外，來源資料集中額外的資料行也會加入目標資料集中。  當您具有區域資料集，並從其他應用程式或從類似 XML Web Service 的元件中取得第二個資料集時，合併資料集會特別實用。  當您需要整合多個資料集的資料時，這樣的處理方式也會很有用處。  
+ When merging datasets, you can pass a Boolean argument (`preserveChanges`) that tells the <xref:System.Data.DataSet.Merge%2A> method whether to retain existing modifications in the target dataset. Because datasets maintain multiple versions of records, it's important to keep in mind that more than one version of the records is being merged. The following table shows how a record in two datasets is merged:  
   
- 當合併資料集時，您也可以傳遞選擇性布林值引數 \(`preserveChanges`\)，告知 <xref:System.Data.DataSet.Merge%2A> 方法是否要在目標資料集中保留現有的修改。  由於資料集維護資料錄的多個版本，因此請注意這時是合併超過一個以上的資料錄版本。  下列資料表會顯示將合併之兩資料集當中的一筆資料錄：  
+|DataRowVersion|Target dataset|Source dataset|  
+|--------------------|--------------------|--------------------|  
+|Original|James Wilson|James C. Wilson|  
+|Current|Jim Wilson|James C. Wilson|  
   
-|DataRowVersion|目標資料集|來源資料集|  
-|--------------------|-----------|-----------|  
-|原始|James Wilson|James C.   Wilson|  
-|Current|Jim Wilson|James C.   Wilson|  
+ Calling the <xref:System.Data.DataSet.Merge%2A> method on the previous table with `preserveChanges=false targetDataset.Merge(sourceDataset)` results in the following:  
   
- 利用 `preserveChanges=false targetDataset.Merge(sourceDataset)` 在上面的資料表上呼叫 <xref:System.Data.DataSet.Merge%2A> 方法時，將產生以下的結果：  
+|DataRowVersion|Target dataset|Source dataset|  
+|--------------------|--------------------|--------------------|  
+|Original|James C. Wilson|James C. Wilson|  
+|Current|James C. Wilson|James C. Wilson|  
   
-|DataRowVersion|目標資料集|來源資料集|  
-|--------------------|-----------|-----------|  
-|原始|James C.   Wilson|James C.   Wilson|  
-|Current|James C.   Wilson|James C.   Wilson|  
+ Calling the <xref:System.Data.DataSet.Merge%2A> method with `preserveChanges = true targetDataset.Merge(sourceDataset, true)` results in the following:  
   
- 利用 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 呼叫 <xref:System.Data.DataSet.Merge%2A> 方法時，將產生以下的結果：  
-  
-|DataRowVersion|目標資料集|來源資料集|  
-|--------------------|-----------|-----------|  
-|原始|James C.   Wilson|James C.   Wilson|  
-|Current|Jim Wilson|James C.   Wilson|  
+|DataRowVersion|Target dataset|Source dataset|  
+|--------------------|--------------------|--------------------|  
+|Original|James C. Wilson|James C. Wilson|  
+|Current|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  在 `preserveChanges = true` 案例中，如果在目標資料集中的資料錄上呼叫 <xref:System.Data.DataSet.RejectChanges%2A> 方法，則它會還原成「*來源*」\(Source\) 資料集的原始資料。  這表示，如果您嘗試利用目標資料集更新原始資料來源，它可能會找不到要更新的原始資料列。  但是，您可以防止並行違規的發生，其方式是將資料來源的更新資料錄填入另一個資料集，然後執行合併，這樣就可以防止並行違規的發生 \(當另一位使用者在填入資料集之後修改了資料來源中的資料錄時，即會發生並行違規\)。  
+>  In the `preserveChanges = true` scenario, if the <xref:System.Data.DataSet.RejectChanges%2A> method is called on a record in the target dataset, then it reverts to the original data from the *source* dataset. This means that if you try to update the original data source with the target dataset, it might not be able to find the original row to update. You can prevent a concurrency violation by filling another dataset with the updated records from the data source and then performing a merge to prevent a concurrency violation. (A concurrency violation occurs when another user modifies a record in the data source after the dataset has been filled.)  
   
-## 更新條件約束  
- 若要變更現有資料列，您可加入或更新個別資料行中的資料。  如果資料集包含條件約束 \(例如，外部索引鍵或不可為 Null 的條件約束\)，那麼當您更新資料錄時 \(在您已完成一個資料行的更新，但在嘗試更新下一個資料行之前\)，資料錄有可能暫時處於錯誤狀態。  
+## <a name="update-constraints"></a>Update constraints  
+ To make changes to an existing data row,  add or update data in the individual columns. If the dataset contains constraints (such as foreign keys or non-nullable constraints), it's possible that the record can temporarily be in an error state as you update it. That is, it can be in an error state after you finish updating one column but before you get to the next one.  
   
- 若要避免不當條件約束違規，您可暫止使用更新條件約束。  這麼做的目的有二：  
+ To prevent premature constraint violations you can temporarily suspend update constraints. This serves two purposes:  
   
--   當您在資料行之間進行更新時，可避免擲回錯誤。  
+-   It prevents an error from being thrown after  you've finished updating one column but haven't started updating another.  
   
--   可暫止引發特定更新事件 \(通常供驗證之用的事件\)。  
-  
- 在完成更新之後，您可重新啟用條件約束檢查，如此一來也會重新啟用並引發更新事件。  
-  
+-   It prevents certain update events from being raised (events that are often used for validation).  
+   
 > [!NOTE]
->  在 Windows Form 中，將焦點移出資料列之前，內建在資料格中的資料繫結架構會暫止條件約束檢查，而您並不需要明確呼叫 <xref:System.Data.DataRow.BeginEdit%2A>、<xref:System.Data.DataRow.EndEdit%2A> 或 <xref:System.Data.DataRow.CancelEdit%2A> 方法。  
+>  In Windows Forms, the data binding architecture that's built into the datagrid suspends constraint checking until focus moves out of a row, and you do not have to explicitly call the <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, or <xref:System.Data.DataRow.CancelEdit%2A> methods.  
   
- 當在資料集上叫用 <xref:System.Data.DataSet.Merge%2A> 方法時，會自動停用條件約束。  當合併完成時，如果資料集上的任一條件約束無法啟用，就會擲回 <xref:System.Data.ConstraintException>。  在這種情況下，<xref:System.Data.DataSet.EnforceConstraints%2A> 屬性會設定為 `false`，且必須先解決所有條件約束的違規情況後，才能將 <xref:System.Data.DataSet.EnforceConstraints%2A> 屬性設定為 `true`。  
+ Constraints are automatically disabled when the <xref:System.Data.DataSet.Merge%2A> method is invoked on a dataset. When the merge is complete, if there are any constraints on the dataset that cannot be enabled,  a <xref:System.Data.ConstraintException> is thrown. In this situation, the <xref:System.Data.DataSet.EnforceConstraints%2A> property is set to `false,` and all constraint violations must be resolved before resetting the <xref:System.Data.DataSet.EnforceConstraints%2A> property to `true`.  
   
- 在完成更新之後，您可重新啟用條件約束檢查，如此一來也會重新啟用並引發更新事件。  
+ After you complete an update, you can re-enable constraint checking, which also re-enables update events and raises them.  
   
- 如需暫止事件的詳細資訊，請參閱 [如何：填入 DataSet 時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)。  
+ For more information about suspending events, see [Turn off constraints while filling a dataset](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
-## 資料集更新錯誤  
- 當您更新資料集中的資料錄時，有可能會發生錯誤。  例如，您可能不慎將錯誤資料型別、太大或是具有其他完整性問題的資料寫入資料行。  除此之外，有些特定應用程式的驗證檢查也可能會在更新事件的任一階段引發自訂錯誤。  如需詳細資訊，請參閱[驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)。  
+## <a name="dataset-update-errors"></a>Dataset update errors  
+ When you update a record in a dataset, there is the possibility of an error. For example, you might inadvertently write data of the wrong type to a column, or data that's too long, or data that has some other integrity problem. Or you might have application-specific validation checks that can raise custom errors during any stage of an update event. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
   
-## 維護變更的資訊  
- 資料集中有關變更的資訊可利用以下兩種方式維護：一是將資料列標示旗標，以表示它是否已變更 \(<xref:System.Data.DataRow.RowState%2A>\)，另一種則是保留資料錄的多個複本 \(<xref:System.Data.DataRowVersion>\)。  藉由使用這些資訊，處理序就可判斷資料集中有哪些部分變更，並且將適當的更新傳送至資料來源。  
+## <a name="maintaining-information-about-changes"></a>Maintaining information about changes  
+ Information about the changes in a dataset is maintained in two ways: by flagging rows that indicate that they have changed (<xref:System.Data.DataRow.RowState%2A>), and by keeping multiple copies of a record (<xref:System.Data.DataRowVersion>). By using this information, processes can determine what has changed in the dataset and can send appropriate updates to the data source.  
   
-### RowState 屬性  
- <xref:System.Data.DataRow> 物件的 <xref:System.Data.DataRow.RowState%2A> 屬性是一個值，可提供有關資料的特定資料列狀態之資訊。  
+### <a name="rowstate-property"></a>RowState property  
+ The <xref:System.Data.DataRow.RowState%2A> property of a <xref:System.Data.DataRow> object is a value that provides information about the status of a particular row of data.  
   
- 下表將詳述 <xref:System.Data.DataRowState> 列舉型別的可能值：  
+ The following table details the possible values of the <xref:System.Data.DataRowState> enumeration:  
   
-|DataRowState 值|描述|  
-|--------------------|--------|  
-|<xref:System.Data.DataRowState>|資料列已被當做項目加入到 <xref:System.Data.DataRowCollection> \(這種狀態中的資料列並沒有對應的原始版本，因為最後一次呼叫 <xref:System.Data.DataRow.AcceptChanges%2A> 方法時，它並不存在\)。|  
-|<xref:System.Data.DataRowState>|使用 <xref:System.Data.DataRow> 物件的 <xref:System.Data.DataRow.Delete%2A> 來刪除資料列。|  
-|<xref:System.Data.DataRowState>|資料列已建立，但它不屬於任何 <xref:System.Data.DataRowCollection>。  <xref:System.Data.DataRow> 物件在建立之後且加入到集合之前，或是從集合中移除時，就會立即處於這種狀態。|  
-|<xref:System.Data.DataRowState>|資料列中的資料行值已經變更。|  
-|<xref:System.Data.DataRowState>|資料列從上次呼叫 <xref:System.Data.DataRow.AcceptChanges%2A> 之後就未變更。|  
+|DataRowState Value|Description|  
+|------------------------|-----------------|  
+|<xref:System.Data.DataRowState.Added>|The row has been added as an item to a <xref:System.Data.DataRowCollection>. (A row in this state does not have a corresponding original version since it did not exist when the last <xref:System.Data.DataRow.AcceptChanges%2A> method was called).|  
+|<xref:System.Data.DataRowState.Deleted>|The row was deleted using the <xref:System.Data.DataRow.Delete%2A> of a <xref:System.Data.DataRow> object.|  
+|<xref:System.Data.DataRowState.Detached>|The row has been created but is not part of any <xref:System.Data.DataRowCollection>. A <xref:System.Data.DataRow> object is in this state immediately after it has been created, before it has been added to a collection, and after it has been removed from a collection.|  
+|<xref:System.Data.DataRowState.Modified>|A column value in the row has changed in some way.|  
+|<xref:System.Data.DataRowState.Unchanged>|The row has not changed since <xref:System.Data.DataRow.AcceptChanges%2A> was last called.|  
   
-### DataRowVersion 列舉型別  
- 資料集會維護資料錄的多個版本。  <xref:System.Data.DataRow> 物件的 <xref:System.Data.DataRowVersion> 列舉型別是一個值，可用來傳回 <xref:System.Data.DataRow> 物件的特定版本。  
+### <a name="datarowversion-enumeration"></a>DataRowVersion enumeration  
+Datasets maintain multiple versions of records. The <xref:System.Data.DataRowVersion> fields can be used when retrieving the value found in a <xref:System.Data.DataRow> using the <xref:System.Data.DataRow.Item%2A> property or the <xref:System.Data.DataRow.GetChildRows%2A> method of the <xref:System.Data.DataRow> object.  
   
- 下表將詳述 <xref:System.Data.DataRowVersion> 列舉型別可能出現的值：  
+The following table details the possible values of the <xref:System.Data.DataRowVersion> enumeration:  
   
-|DataRowVersion 值|描述|  
-|----------------------|--------|  
-|<xref:System.Data.DataRowVersion>|資料錄的目前版本包含上次呼叫 <xref:System.Data.DataRow.AcceptChanges%2A> 之後在資料錄上執行過的所有修改。  如果資料列已被刪除，則無目前的版本。|  
-|<xref:System.Data.DataRowVersion>|資料錄的預設值，由資料集結構描述 \(Schema\) 或資料來源定義。|  
-|<xref:System.Data.DataRowVersion>|資料錄的原始版本，是上次資料集中之變更被認可後的版本。  實際上這通常也就是從資料來源讀取的資料錄版本。|  
-|<xref:System.Data.DataRowVersion>|資料錄的建議版本，供您在更新期間，也就是在您呼叫 <xref:System.Data.DataRow.BeginEdit%2A> 方法和 <xref:System.Data.DataRow.EndEdit%2A> 方法之間的這一段時間暫時使用的。  您通常會在類似 <xref:System.Data.DataTable.RowChanging> 事件的處理常式中存取資料錄的建議版本。  叫用 <xref:System.Data.DataRow.CancelEdit%2A> 方法可復原變更，並刪除資料列的建議版本。|  
+|DataRowVersion Value|Description|  
+|--------------------------|-----------------|  
+|<xref:System.Data.DataRowVersion.Current>|The current version of a record contains all modifications that have been performed on the record since the last time <xref:System.Data.DataRow.AcceptChanges%2A> was called. If the row has been deleted, there is no current version.|  
+|<xref:System.Data.DataRowVersion.Default>|The default value of a record, as defined by the dataset schema or data source.|  
+|<xref:System.Data.DataRowVersion.Original>|The original version of a record is a copy of the record as it was the last time changes were committed in the dataset. In practical terms, this is typically the version of a record as read from a data source.|  
+|<xref:System.Data.DataRowVersion.Proposed>|The proposed version of a record that is available temporarily while you are in the middle of an update — that is, between the time you called the <xref:System.Data.DataRow.BeginEdit%2A> method and the <xref:System.Data.DataRow.EndEdit%2A> method. You typically access the proposed version of a record in a handler for an event such as <xref:System.Data.DataTable.RowChanging>. Invoking the <xref:System.Data.DataRow.CancelEdit%2A> method reverses the changes and deletes the proposed version of the data row.|  
   
- 當將更新資訊傳送至資料來源時，原始和目前版本是相當有用的。  一般來說，將更新傳送到資料來源時，新的資料庫資訊會位於資料錄的目前版本中；  原始版本的資訊則是用來尋找要更新的資料錄。  例如，在資料錄的主索引鍵變更的情況下，您必須能夠找出資料來源中的適當資料錄以更新變更。  如果沒有原始版本存在，則資料錄很可能會附加在資料來源之後，這樣不但會產生多餘的資料錄，而且產生的資料錄是不正確且過期的。  這兩個版本也可用在並行存取控制項中；您可將原始版本與資料來源中的資料錄比較，判斷資料錄在載入資料集之後是否變更過。  
+ The original and current versions are useful when update information is transmitted to a data source. Typically, when an update is sent to the data source, the new information for the database is in the current version of a record. Information from the original version is used to locate the record to update.  
   
- 當您在實際認可資料集的變更之前需要執行驗證時，建議版本就會相當有用。  
+ For example, in a case where the primary key of a record is changed, you need a way to locate the correct record in the data source in order to update the changes. If no original version existed, then the record would most likely be appended to the data source, resulting not only in an extra unwanted record, but in one record that is inaccurate and out of date. The two versions are also used in concurrency control. You can compare the original version against a record in the data source to determine if the record has changed since it was loaded into the dataset.  
   
- 即使資料錄已變更，也不一定會有該資料列的原始或目前版本存在。  當您將新資料列插入資料表時，原始版本就不存在，只有目前版本。  同樣地，如果您呼叫資料表的 `Delete` 方法來刪除資料列，那麼就只有原始版本，而無目前版本。  
+ The proposed version is useful when you need to perform validation before actually committing the changes to the dataset.  
   
- 您可以查詢資料列的 <xref:System.Data.DataRow.HasVersion%2A> 方法，以測試檢查資料錄的特定版本是否存在。  當您要求資料行的值時，您可將 <xref:System.Data.DataRowVersion> 列舉值當做選擇性引數傳遞，以存取資料錄的任一版本。  
+ Even if records have changed, there are not always original or current versions of that row. When you insert a new row into the table, there is no original version, only a current version. Similarly, if you delete a row by calling the table's `Delete` method, there is an original version, but no current version.  
   
-## 取得變更的資料錄  
- 在一般情況下，您可能不需要更新資料集中的每個資料錄。  例如，使用者可能會使用可顯示許多資料錄的 Windows Form <xref:System.Windows.Forms.DataGridView> 控制項。  不過，這位使用者可能只要更新一些資料錄、刪除一個資料錄並插入一個資料錄。  資料集和資料表提供一個方法 \(`GetChanges`\) 來只傳回已修改的資料列。  
+ You can test to see if a specific version of a record exists by querying a data row's <xref:System.Data.DataRow.HasVersion%2A> method. You can access either version of a record by passing a <xref:System.Data.DataRowVersion> enumeration value as an optional argument when you request the value of a column.  
   
- 您可使用資料表 \(<xref:System.Data.DataTable.GetChanges%2A>\) 或資料集本身 \(<xref:System.Data.DataSet.GetChanges%2A>\) 的 `GetChanges` 方法，建立變更的資料錄子集。  如果您呼叫資料表的方法，它會傳回只有變更資料錄的資料表。  同樣地，如果您在資料集上呼叫此方法，您就會取得只包含變更之資料錄的新資料集。  `GetChanges` 本身將會傳回所有變更的資料錄。  相較之下，將所需的 <xref:System.Data.DataRowState> 當做參數傳遞到 `GetChanges` 方法時，您可以指定您所要的已變更資料錄之子集為何：新加入的資料錄、標記為要刪除的資料錄、中斷連結的資料錄，或是已修改的資料錄。  
+## <a name="getting-changed-records"></a>Getting changed records  
+ It's a common practice not to update every record in a dataset. For example, a user might be working with a Windows Forms <xref:System.Windows.Forms.DataGridView> control that displays many records. However, the user might update only a few records, delete one, and insert a new one. Datasets and data tables provide a method (`GetChanges`) for returning only the rows that have been modified.  
   
- 當您要將資料錄傳送至其他元件進行處理時，取得變更資料錄的子集會是相當有用的做法。  藉由只取得元件所需的資料錄，您就不需傳送整個資料集，因而降低與其他元件通訊的負荷量。  如需詳細資訊，請參閱[如何：擷取已變更的資料列](../Topic/How%20to:%20Retrieve%20Changed%20Rows.md)。  
+ You can create subsets of changed records using the `GetChanges` method of either the data table (<xref:System.Data.DataTable.GetChanges%2A>) or of the dataset (<xref:System.Data.DataSet.GetChanges%2A>) itself. If you call the method for the data table, it returns a copy of the table with only the changed records. Similarly, if you call the method on the dataset, you get a new dataset with only changed records in it.  
   
-## 認可資料集中的變更  
- 由於變更都是在資料集中進行，因此會設定變更之資料列的 <xref:System.Data.DataRow.RowState%2A> 屬性。  資料錄的原始和目前版本是透過 <xref:System.Data.DataRowView.RowVersion%2A> 屬性來建立和維護，而您也是透過這個屬性取得這兩個版本。  將適當的更新傳送至資料來源時，需要使用儲存在這些屬性中表示變更的中繼資料。  
+ `GetChanges` by itself  returns all changed records. In contrast, by passing the desired <xref:System.Data.DataRowState> as a parameter to the `GetChanges` method, you can specify what subset of changed records you want: newly added records, records that are marked for deletion, detached records, or modified records.  
   
- 如果變更反映資料來源的目前狀態，您就不再需要維護這項資訊。  一般來說，資料集與其來源會在下列兩種情況下保持同步：  
+ Getting a subset of changed records is useful when you want to send records to another component for processing. Instead of sending the entire dataset, you can reduce the overhead of communicating with the other component by getting only the records that the component needs.   
   
--   在您將資訊載入資料集之後即為同步，例如當您從來源讀取資料時。  
+## <a name="committing-changes-in-the-dataset"></a>Committing changes in the dataset  
+ As changes are made in the dataset, the <xref:System.Data.DataRow.RowState%2A> property of changed rows is set. The original and current versions of records are established, maintained, and made available to you by the <xref:System.Data.DataRowView.RowVersion%2A> property. The metadata that's stored in the properties of these changed rows is necessary for sending the correct updates to the data source.  
   
--   在將變更從資料集傳送至資料來源之後 \(不是之前，因為您會遺失將變更傳送至資料庫所需的變更資訊\)。  
+ If the changes reflect the current state of the data source, you no longer need to maintain this information. Typically, there are two times when the dataset and its source are in sync:  
   
- 您可呼叫 <xref:System.Data.DataSet.AcceptChanges%2A> 方法來認可對資料集的暫止變更。  一般來說，您的應用程式會在下列時機呼叫 <xref:System.Data.DataSet.AcceptChanges%2A>。  
+-   Immediately after you have loaded information into the dataset, such as when you read data from the source.  
   
--   在您載入資料集之後。  如果您是呼叫 TableAdapter 的 `Fill` 方法來載入資料集，則配接器會自動為您認可變更。  不過，如果您是以合併其他資料集的方式載入資料集，您就需要手動認可變更。  
+-   After sending changes from the dataset to the data source (but not before, because you would lose the change information that's required to send changes to the database).  
+  
+You can commit the pending changes to the dataset by calling the <xref:System.Data.DataSet.AcceptChanges%2A> method. Typically, <xref:System.Data.DataSet.AcceptChanges%2A> is called at the following times:  
+  
+-   After you load the dataset. If you load a dataset by calling a TableAdapter's `Fill` method, then the adapter automatically commits changes for you. However, if you load a dataset by merging another dataset into it, then you have to commit the changes manually.  
   
     > [!NOTE]
-    >  您可以在呼叫 `Fill` 方法時防止配接器自動認可變更，其方式是將配接器的 `AcceptChangesDuringFill` 屬性設定為 `false`。  如果設定為 `false`，則每個插入之資料列的 <xref:System.Data.DataRow.RowState%2A> 在填入期間會設定為 <xref:System.Data.DataRowState>。  
+    >  You can prevent the adapter from automatically committing the changes when you call the `Fill` method by setting the `AcceptChangesDuringFill` property of the adapter to `false`. If it's set to `false`, then the <xref:System.Data.DataRow.RowState%2A> of each row that's inserted during the fill is set to <xref:System.Data.DataRowState.Added>.  
   
--   在您將資料集變更傳送至其他處理序 \(例如 XML Web Service\) 之後。  
+-   After you send dataset changes to another process, such as an XML Web service.  
   
     > [!CAUTION]
-    >  利用這種方式認可變更會清除任何變更資訊。  直到您已執行任何應用程式需知道資料集中變更部分的作業之後，再認可變更。  
+    >  Committing the change this way erases any change information. Do not commit changes until after you  finish performing operations that require your application to know what changes have been made in the dataset.  
   
- 這個方法會產生下列結果：  
+This method accomplishes the following:  
   
--   將資料錄的 <xref:System.Data.DataRowVersion> 版本寫入其 <xref:System.Data.DataRowVersion> 版本，並覆寫原始版本。  
+-   Writes the <xref:System.Data.DataRowVersion.Current> version of a record into its <xref:System.Data.DataRowVersion.Original> version and overwrites the original version.  
   
--   移除任何 <xref:System.Data.DataRow.RowState%2A> 屬性設定為 <xref:System.Data.DataRowState> 的資料列。  
+-   Removes any row where the <xref:System.Data.DataRow.RowState%2A> property is set to <xref:System.Data.DataRowState.Deleted>.  
   
--   將資料錄的 <xref:System.Data.DataRow.RowState%2A> 屬性設定為 <xref:System.Data.DataRowState>。  
+-   Sets the <xref:System.Data.DataRow.RowState%2A> property of a record to <xref:System.Data.DataRowState.Unchanged>.  
   
- 您可在三個層次上使用 <xref:System.Data.DataSet.AcceptChanges%2A> 方法。  您可在 <xref:System.Data.DataRow> 物件上呼叫它，這樣就會為這個資料列認可變更。  您也可在 <xref:System.Data.DataTable> 物件上呼叫它來認可資料表中的所有資料列，或是在 <xref:System.Data.DataSet> 物件上呼叫它來認可資料集中，所有資料表之所有資料錄中的所有暫止變更。  
+The <xref:System.Data.DataSet.AcceptChanges%2A> method is available at three levels. You can call it on a <xref:System.Data.DataRow> object to commits changes for just that row. You can also call it on a <xref:System.Data.DataTable> object to commit all rows in a table. Finally, you can call it on the <xref:System.Data.DataSet> object to commit all pending changes in all records of all tables of the dataset.  
   
- 下列資料表將依據呼叫方法所在的物件，說明認可的變更為何。  
+The following table describes which changes are committed based on what object the method is called on.  
   
-|方法|結果|  
-|--------|--------|  
-|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|只認可特定資料列上的變更|  
-|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|認可特定資料表中所有資料列上的變更|  
-|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|認可資料集中所有資料表的所有資料列上的變更|  
+|Method|Result|  
+|------------|------------|  
+|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Changes are committed only on the specific row.|  
+|<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Changes are committed on all rows in the specific table.|  
+|<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Changes are committed on all rows in all tables of the dataset.|  
   
 > [!NOTE]
->  如果您是呼叫 TableAdapter 的 `Fill` 方法來載入資料集，則您不需要明確接受變更；`Fill` 方法在完成資料表的填入時，預設會呼叫 `AcceptChanges` 方法。  
+>  If you load a dataset by calling a TableAdapter's `Fill` method, you don't have to explicitly accept changes. By default, the `Fill` method calls the `AcceptChanges` method after it finishes populating the data table.  
   
- 相關的方法 `RejectChanges` 會復原變更的作用，其方式是透過將 <xref:System.Data.DataRowVersion> 版本複製回資料錄的 <xref:System.Data.DataRowVersion> 版本，並將每一個資料錄的 <xref:System.Data.DataRow.RowState%2A> 設回 <xref:System.Data.DataRowState>。  
+ A related method, <xref:System.Data.DataSet.RejectChanges%2A>, undoes the effect of changes by copying the <xref:System.Data.DataRowVersion.Original> version back into the <xref:System.Data.DataRowVersion.Current> version of records. It also sets the <xref:System.Data.DataRow.RowState%2A> of each record back to <xref:System.Data.DataRowState.Unchanged>.  
   
-## 資料驗證  
- 為了驗證您應用程式中的資料是否符合接收到之處理序的需求，您通常需要加入驗證。  這可能需要檢查使用者輸入表單的內容是否正確、驗證其他應用程式傳送到您應用程式的資料，甚至是檢查在您元件內計算的資訊是否符合資料來源和應用程式需求的條件約束。  
+## <a name="data-validation"></a>Data validation  
+ In order to verify that the data in your application meets the requirements of the processes that it is passed to, you often have to add validation. This might involve checking that a user's entry in a form is correct, validating data that's sent to your application by another application, or even checking that information that's calculated within your component falls within the constraints of your data source and application requirements.  
   
- 您可利用下列幾種方式驗證資料：  
+ You can validate data in several ways:  
   
--   在商務層 \(Business Layer\) 中，將驗證資料的程式碼加入您的應用程式。  資料集是您可以進行這項程序的一個地方，  因為資料集提供了後端驗證的某些優點，例如當資料行和資料列的值變更時，提供驗證變更的能力。  如需詳細資訊，請參閱[驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)。  
+-   In the business layer, by adding code to your application to validate data. The dataset is one place you can do this. The dataset provides some of the advantages of back-end validation — such as the ability to validate changes as column and row values are changing. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
   
--   在展示層 \(Presentation Layer\) 中，將驗證加入表單中。  如需詳細資訊，請參閱[Windows Form 中的使用者輸入驗證](../Topic/User%20Input%20Validation%20in%20Windows%20Forms.md)。  
+-   In the presentation layer, by adding validation to forms. For more information, see [User Input Validation in Windows Forms](/dotnet/framework/winforms/user-input-validation-in-windows-forms).  
   
--   在資料後端 \(Back End\) 中，將資料傳送至資料來源 \(例如資料庫\)，並允許它接受或拒絕資料。  如果您使用的資料庫具有驗證資料和提供錯誤訊息的精密功能，則這會是相當實用的方法，因為您可驗證各種來源的資料。  不過，它可能無法符合特定應用程式的驗證需求。  除此之外，根據您應用程式如何協助解決由後端引發的驗證錯誤而定，由資料來源驗證資料可能會造成與資料來源之間不斷往返。  
+-   In the data back end, by sending data to the data source — for example, the database — and allowing it to accept or reject the data. If you are working with a database that has sophisticated facilities for validating data and providing error information, this can be a practical approach because you can validate the data no matter where it comes from. However, this approach might not accommodate application-specific validation requirements. Additionally, having the data source validate data can result in numerous round trips to the data source, depending on how your application facilitates the resolution of validation errors raised by the back end.  
   
     > [!IMPORTANT]
-    >  使用 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> 屬性設為 <xref:System.Data.CommandType> 的資料命令時，請先仔細檢查用戶端傳送出來的資訊，然後再將這些資訊傳遞至資料庫。  惡意使用者會嘗試傳送 \(插入\) 修改過或額外的 SQL 陳述式 \(Statement\)，以獲取未經授權的存取權，或損壞資料庫。  在將使用者輸入傳輸到資料庫之前，一定要確認資訊是有效的；最好的做法是盡可能使用參數型查詢或預存程序。  如需詳細資訊，請參閱[Script Exploits Overview](../Topic/Script%20Exploits%20Overview.md)。  
+    >  When using data commands with a <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> property that's set to <xref:System.Data.CommandType.Text>, carefully check information that is sent from a client before passing it to your database. Malicious users might try to send (inject) modified or additional SQL statements in an effort to gain unauthorized access or damage the database. Before you transfer user input to a database, always verify that the information is valid. It's a best practice to always use parameterized queries or stored procedures when possible. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
- 在資料集中進行變更之後，您可將變更傳送至資料來源。  常見的做法是呼叫 TableAdapter \(或資料配接器\) 的 `Update` 方法。  這個方法會在資料表中的每個資料錄執行迴圈，判斷需要哪種類型的變更 \(更新、插入或刪除\)，若有的話，接著就執行適當的命令。  
-  
-## 如何將更新傳送至資料來源  
- 為了示範如何進行更新，讓我們假設您的應用程式使用內含一個單一資料表的資料集。  應用程式從資料庫擷取兩個資料列。  在擷取之後，記憶體中的資料表外觀應該會像這樣：  
+## <a name="transmitting-updates-to-the-data-source"></a>Transmitting updates to the data source  
+After changes have been made in a dataset, you can transmit the changes to a data source. Most commonly, you do this by calling the `Update` method of a TableAdapter (or data adapter). The method loops through each record in a data table, determines what type of update is required (update, insert, or delete), if any, and then runs the appropriate command.  
+
+ As an illustration of how updates are made, suppose your application uses a dataset that contains a single data table. The application fetches two rows from the database. After the retrieval, the in-memory data table looks like this:  
   
 ```  
 (RowState)     CustomerID   Name             Status  
@@ -221,7 +246,7 @@ manager: "ghogen"
 (Unchanged)    c400         Nancy Buchanan    Pending  
 ```  
   
- 您的應用程式將 Nancy Buchanan 的狀態變更為 "Preferred"。在這項變更的結果中，該資料列的 <xref:System.Data.DataRow.RowState%2A> 屬性值會從 <xref:System.Data.DataRowState> 變更為 <xref:System.Data.DataRowState>。  第一個資料列的 <xref:System.Data.DataRow.RowState%2A> 屬性值還是維持 <xref:System.Data.DataRowState>。  資料表現在應該像這樣：  
+ Your application changes Nancy Buchanan's status to "Preferred." As a result of this change, the value of the <xref:System.Data.DataRow.RowState%2A> property for that row changes from <xref:System.Data.DataRowState.Unchanged> to <xref:System.Data.DataRowState.Modified>. The value of the <xref:System.Data.DataRow.RowState%2A> property for the first row remains <xref:System.Data.DataRowState.Unchanged>. The data table now looks like this:  
   
 ```  
 (RowState)     CustomerID   Name             Status  
@@ -229,57 +254,34 @@ manager: "ghogen"
 (Modified)     c400         Nancy Buchanan    Preferred  
 ```  
   
- 您的應用程式現在會呼叫 `Update` 方法來將資料集傳送至資料庫。  這個方法會依序檢視每個資料列。  針對第一個資料列，方法不會將任何 SQL 陳述式傳送至資料庫，因為這個資料列從資料庫擷取之後就未變更過。  
+ Your application now calls the `Update` method to transmit the dataset to the database. The method inspects each row in turn. For the first row, the method transmits no SQL statement to the database because that row has not changed since it was originally fetched from the database.  
   
- 不過對第二個資料列而言，`Update` 方法就會自動叫用適當的資料命令，並將其傳送至資料庫。  SQL 陳述式的特定語法要視基礎資料來源支援哪種 SQL 語言而定。  但是傳送的 SQL 陳述式有些相通特性是值得注意的：  
+ For the second row, however, the `Update` method automatically invokes the correct data command and transmits it to the database. The specific syntax of the SQL statement depends on the dialect of SQL that's supported by the underlying data store. But the following general traits of the transmitted SQL statement are noteworthy:  
   
--   傳送的 SQL 陳述式是 UPDATE 陳述式。  該配接器知道要使用 UPDATE 陳述式，這是因為 <xref:System.Data.DataRow.RowState%2A> 屬性的值是 <xref:System.Data.DataRowState>。  
+-   The transmitted SQL statement is an UPDATE statement. The adapter knows to use an UPDATE statement because the value of the <xref:System.Data.DataRow.RowState%2A> property is <xref:System.Data.DataRowState.Modified>.  
   
--   傳送的 SQL 陳述式包含 WHERE 子句，表示 UPDATE 陳述式的目標是 `CustomerID = 'c400'` 的資料列。  SELECT 陳述式的這個部分能夠將目標資料列與其他所有資料列區分，因為 `CustomerID` 是目標資料表的主索引鍵。  WHERE 子句的資訊是衍生自資料錄的原始版本 \(`DataRowVersion.Original`\)，這麼做是為了預防用來辨識資料列所需要的值遭到變更。  
+-   The transmitted SQL statement includes a WHERE clause indicating that the target of the UPDATE statement is the row where `CustomerID = 'c400'`. This part of the SELECT statement distinguishes the target row from all others because the `CustomerID` is the primary key of the target table. The information for the WHERE clause is derived from the original version of the record (`DataRowVersion.Original`), in case the values that are required to identify the row have  changed.  
   
--   傳送的 SQL 陳述式包含 SET 子句，用來設定修改資料行的新值。  
+-   The transmitted SQL statement includes the SET clause, to set the new values of the modified columns.  
   
     > [!NOTE]
-    >  如果 TableAdapter 的 `UpdateCommand` 屬性已設為預存程序的名稱，則配接器不會建構 SQL 陳述式。  相反地，它會以適當的傳入參數來叫用預存程序。  
+    >  If the TableAdapter's `UpdateCommand` property has been set to the name of a stored procedure, the adapter does not construct an SQL statement. Instead, it invokes the stored procedure with the appropriate parameters passed in.  
   
-## 傳遞參數  
- 資料庫中要更新資料錄的值通常是使用參數來傳遞。  當 TableAdapter 的 `Update` 方法執行 UPDATE 陳述式時，它需要填入參數值。  它會針對適當的資料命令 \(此例為 TableAdapter 中的 `UpdateCommand` 物件\)，從 `Parameters` 集合中取得這些值。  
+## <a name="passing-parameters"></a>Passing parameters  
+ You usually use parameters to pass the values for records that are going to be updated in the database.  When the TableAdapter's `Update` method runs an UPDATE statement, it needs to fill in the parameter values. It gets these values from the `Parameters` collection for the appropriate data command — in this case, the `UpdateCommand` object in the TableAdapter.  
   
- 如果您是使用 Visual Studio 工具來產生資料配接器，`UpdateCommand` 物件將會包含參數的集合，其中的參數會對應到陳述式中的每個參數替代符號。  
+ If you've used the Visual Studio tools to generate a data adapter, the `UpdateCommand` object  contains a collection of parameters that correspond to each parameter placeholder in the statement.  
   
- 每一個參數的 <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> 屬性會指向資料的資料表中的某個資料行。  例如，`au_id` 和 `Original_au_id` 參數的 `SourceColumn` 屬性就是設定為資料表中包含作者 ID 的資料行。  當配接器的 `Update` 方法執行時，它就會從要更新的資料錄讀取作者 ID 資料行，接著將值填入陳述式。  
+ The <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> property of each parameter points to a column in the data table. For example, the `SourceColumn` property for the `au_id` and `Original_au_id` parameters is set to whatever column in the data table contains the author id. When the adapter's `Update` method runs, it reads the author id column from the record that's being updated and fills the values into the statement.  
   
- 在 UPDATE 陳述式中，您需要指定新值 \(將寫入資料錄的值\) 和舊值 \(以便在資料庫中找出要更新的資料錄\)。  因此每個值都有兩個參數：一是供 SET 子句使用，另一則是供 WHERE 子句使用。  這兩個參數都會從要更新的資料錄讀取資料，但是它們會根據參數的 [SqlParameter.SourceVersion 屬性](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)而取得資料行值的不同版本。  SET 子句的參數會取得目前版本，而 WHERE 子句的參數會取得原始版本。  
+ In an UPDATE statement, you need to specify both the new values (those that will be written to the record) as well as the old values (so that the record can be located in the database). There are therefore two parameters for each value: one for the SET clause and a different one for the WHERE clause. Both parameters read data from the record that's being updated, but they get different versions of the column value based on the parameter's [SqlParameter.SourceVersion Property](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). The parameter for the SET clause gets the current version, and the parameter for the WHERE clause gets the original version.  
   
 > [!NOTE]
->  您也可以在程式碼中自行設定 `Parameters` 集合中的值，您通常會在為資料配接器之 <xref:System.Data.DataTable.RowChanging> 事件建立的事件處理常式中這麼做。  
+>  You can also set values in the `Parameters` collection yourself in code, which you would typically do in an event handler for the data adapter's <xref:System.Data.DataTable.RowChanging> event.  
   
-## 更新關聯資料表  
- 如果您的資料集包含多個資料表，則您需要分別呼叫每個資料配接器的 `Update` 方法來個別加以更新。  如果資料表具有父\-子關係 \(Parent\-Child Relationship\)，那麼您可能需要以特殊順序將更新傳送至資料庫。  常見的案例是，您已將父資料錄和關聯子資料錄都加入資料集，例如一個新的客戶資料錄和一個或多個關聯訂單資料錄。  如果資料庫本身強制執行關聯完整性規則，則當您在建立父資料錄之前將新的子資料錄傳送至資料庫時，就會引發錯誤。  
-  
- 相反地，如果您要刪除資料集中的關聯資料錄，您通常需要以相反順序傳送更新：先是子資料表，然後才是父資料表。  否則，資料庫可能會引發錯誤，因為參考完整性 \(Referential Integrity\) 規則在關聯子資料錄還存在的情況下不會讓您刪除父資料錄。  
-  
- 傳送關聯資料表更新的一般規則是依照下列順序進行：  
-  
-1.  子資料表：刪除資料錄。  
-  
-2.  父資料表：插入、更新及刪除資料錄。  
-  
-3.  子資料表：插入和更新資料錄。  
-  
-4.  如需詳細資訊，請參閱[逐步解說：儲存資料至資料庫 \(多個資料表\)](../data-tools/save-data-to-a-database-multiple-tables.md)。  
-  
-## 並行存取控制項  
- 由於資料集是與資料來源中斷連接的，因此您不會鎖定資料來源中的資料錄。  因此，如果要更新資料庫，而且如果您的應用程式需要維護並行存取控制項，您就必須協調資料集和資料庫中的資料錄。  例如，您可能要在資料庫中尋找上次填入資料集之後已變更的資料錄。  在這種情況下，您必須執行適當應用程式的邏輯，指定如何處理您資料集中的資料庫資料錄或是變更資料錄。  
-  
-## 請參閱  
- [TableAdapter 概觀](../data-tools/tableadapter-overview.md)   
- [如何：使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="see-also"></a>See Also  
+ [Create and Configure TableAdapters](create-and-configure-tableadapters.md)    
+ [Update data by using a TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
+ [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+ [Validating Data](validate-data-in-datasets.md)   
+ [Saving Data](../data-tools/saving-data.md)

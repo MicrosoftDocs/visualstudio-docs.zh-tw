@@ -28,6 +28,8 @@ translation.priority.mt:
 - pl-pl
 - pt-br
 - tr-tr
+ms.technology:
+- vs-acquisition
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 99d1cfc816d5fd64367ff4524de89776ef25a4b8

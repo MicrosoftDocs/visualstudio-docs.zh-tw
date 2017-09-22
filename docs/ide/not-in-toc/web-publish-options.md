@@ -5,15 +5,15 @@ ms.date: 03/09/2017
 ms.reviewer: riande
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-deployment
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - ASP.NET, web applications, deployment, publishing
 ms.assetid: 3A13F685-531C-457D-A98E-631888011E4B
 caps.latest.revision: 1
-author: kraigb
-ms.author: kraigb
+author: Mikejo5000
+ms.author: mikejo
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -29,14 +29,15 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5951e9c6b61e1cb868d792a5aee9389235cfef30
 ms.openlocfilehash: 6bc4d5116517402825317611c44d4b594ee79b2a
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/10/2017
 
 ---
 
-# <a name="what-publishing-options-are-right-for-me"></a>適合我的發行選項為何？
+# 適合我的發行選項為何？
 
 在 Visual Studio 內，可以直接將 Web 應用程式發行到下列目標：
 
@@ -47,7 +48,7 @@ ms.lasthandoff: 03/10/2017
 
 在 [發行] 索引標籤上，您可以選取現有的發行設定檔、匯入現有的發行設定檔，或使用這裡所述的選項建立新的發行設定檔。
 
-## <a name="azure-app-service"></a>Azure App Service
+## Azure App Service
 
 [Azure App Service](https://azure.microsoft.com/documentation/articles/app-service-value-prop-what-is/) 可協助開發人員快速建立各種可調整的 Web 應用程式和服務，而不需要維護基礎結構。
 
@@ -57,7 +58,7 @@ ms.lasthandoff: 03/10/2017
 
 App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管理這些虛擬機器。 App Service 中的每個 Web 應用程式都會獲指派唯一的 \*.azurewebsites.net URL；「免費」以外的所有定價層都允許為網站指派自訂網域名稱。
 
-### <a name="when-to-choose-azure-app-service"></a>選擇 Azure App Service 的時機
+### 選擇 Azure App Service 的時機
 
 - 您想要部署可透過網際網路存取的 Web 應用程式。
 - 您想要依據需求自動調整 Web 應用程式，而不需要重新部署。
@@ -68,7 +69,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure App Service，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
 
-## <a name="azure-virtual-machines"></a>Azure 虛擬機器
+## Azure 虛擬機器
 
 [Azure 虛擬機器 (VM)](https://azure.microsoft.com/documentation/services/virtual-machines/) 可讓您建立和管理雲端中任意數目的計算資源。 若負有 VM 上所有軟體和更新的責任，即可依 Web 應用程式要求視需要進行自訂。 您可以透過「遠端桌面」直接存取虛擬機器，每部機器都會依需要維持其獲指派的 IP 位址。
 
@@ -76,7 +77,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 如需其他資訊，請參閱 Azure App Service、Azure 虛擬機器以及其他 Azure 服務之間的[詳細比較](https://azure.microsoft.com/documentation/articles/choose-web-site-cloud-service-vm/)，而您可以使用 Visual Studio 中的 [自訂] 選項將這些 Azure 服務用作部署目標。
 
-### <a name="when-to-choose-azure-app-virtual-machines"></a>選擇 Azure App 虛擬機器的時機
+### 選擇 Azure App 虛擬機器的時機
 
 - 您想要部署可透過網際網路存取的 Web 應用程式，並完整控制所指派 IP 位址的存留期。
 - 您需要在伺服器上進行電腦層級自訂，包括特定資料庫系統、特定網路組態、磁碟分割等這類額外軟體。
@@ -86,7 +87,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 > 如果您想要在自己的資料中心或其他內部部署電腦中使用 Azure 虛擬機器，則做法是使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。
 
 
-## <a name="file-system"></a>檔案系統
+## 檔案系統
 
 部署至檔案系統，表示只需要將 Web 應用程式的檔案複製到您自己電腦上的特定資料夾。 這最常用於進行測試，或者，如果電腦也執行 Web 伺服器，則用來部署應用程式以供有限數目的人員使用。 如果在網路上共用目標資料夾，則部署至檔案系統之後，其他可能接著將它部署至特定伺服器的人員將可使用 Web 應用程式檔案。
 
@@ -94,7 +95,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 請注意，如果您因任何原因 (例如電腦存取) 而無法使用 Azure App Service 或 Azure 虛擬機器這類雲端服務，則可以在自己的資料中心內使用 [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)。 Azure Stack 既可讓您透過 Azure App Service 和「Azure 虛擬機器」來管理和使用計算資源，又可讓所有項目保留在內部部署環境中。
 
-### <a name="when-to-choose-file-system-deployment"></a>選擇檔案系統部署的時機
+### 選擇檔案系統部署的時機
 
 - 您只需要將應用程式部署至檔案共用，而其他人將從該檔案共用部署至不同伺服器。
 - 您只需要本機測試部署。
@@ -102,7 +103,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 
 
-## <a name="custom-targets"></a>自訂目標
+## 自訂目標
 
 自訂目標可讓您將 Web 應用程式部署至 Azure App Service、Azure 虛擬機器或本機檔案系統以外的目標。 它可以部署至檔案系統或您具有存取權的任何其他伺服器 (網際網路或內部網路)，包括其他雲端服務上的伺服器。 它可以使用 Web 部署 (檔案或 .ZIP) 和 FTP。
 
@@ -115,7 +116,7 @@ App Service 會在 Azure 中裝載雲端的虛擬機器上執行，並自動管�
 
 您可以在 Visual Studio 中建立任意數目的自訂部署設定檔，這可讓您利用不同的設定來管理設定檔。
 
-### <a name="when-to-choose-custom-deployment"></a>選擇自訂部署的時機
+### 選擇自訂部署的時機
 
 - 您是在非 Azure 且可透過 URL 存取的提供者上使用雲端服務。
 - 您想要使用認證進行部署，但這些認證不是您在 Visual Studio 內使用的認證或直接繫結至 Azure 帳戶的認證。

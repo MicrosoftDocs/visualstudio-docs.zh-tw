@@ -9,8 +9,8 @@ ms.technology:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
-author: BrianPeek
-ms.author: brpeek
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -26,9 +26,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
 ms.openlocfilehash: 59ed01aa24468dd7b08a10389f91580321fe9b82
+ms.contentlocale: zh-tw
 ms.lasthandoff: 03/27/2017
 
 ---
@@ -51,7 +52,7 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>快速動作
-快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。  這些可以藉由當您的游標位於適當程式碼行時使用燈泡圖示 ![小燈泡圖示](~/ide/media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Ctrl + .** 來套用。 when your cursor is on the appropriate line of code.
+快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。  這些可以藉由當您的游標位於適當程式碼行時使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Ctrl + .** 來套用。 when your cursor is on the appropriate line of code.
 
 * [快速動作](quick-actions.md)
 * [程式碼樣式及快速動作](code-styles-and-quick-actions.md)

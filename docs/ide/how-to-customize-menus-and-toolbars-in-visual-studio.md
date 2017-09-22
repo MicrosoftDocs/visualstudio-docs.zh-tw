@@ -29,8 +29,8 @@ helpviewer_keywords:
 - toolbars [Visual Studio], customizing in the IDE
 ms.assetid: b570ae2f-5302-45dc-9cc9-8d4d1ad50603
 caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -46,9 +46,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 0ca0020fa9025e57df874f8fa8b5eb41e63a8c29
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---
@@ -68,7 +69,7 @@ ms.lasthandoff: 02/22/2017
   
 -   [重設功能表或工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md#bkmk_reset)  
   
-##  <a name="a-namebkmkaddmenua-adding-removing-or-moving-a-menu-on-the-menu-bar"></a><a name="bkmk_addmenu"></a>加入、移除或移動功能表列上的功能表  
+##  <a name="bkmk_addmenu"></a>加入、移除或移動功能表列上的功能表  
   
 1.  在功能表列上選擇 [工具] 和 [自訂]。  
   
@@ -78,13 +79,13 @@ ms.lasthandoff: 02/22/2017
   
     -   若要加入功能表，請選擇 [新增功能表] 按鈕，選擇 [修改選取範圍] 按鈕，然後為您要新增的功能表命名。  
   
-         ![自訂顯示如何加入功能表的對話方塊](~/ide/media/addmenu.png "AddMenu")  
+         ![自訂顯示如何加入功能表的對話方塊](../ide/media/addmenu.png "AddMenu")  
   
     -   若要移除功能表，請在 [控制項] 清單中選擇該功能表，然後選擇 [刪除] 按鈕。  
   
     -   若要在功能表列內移動功能表，請在 [控制項] 清單中選擇該功能表，然後選擇 [上移] 或 [下移] 按鈕。  
   
-##  <a name="a-namebkmkaddtoolbara-adding-removing-or-moving-a-toolbar"></a><a name="bkmk_addtoolbar"></a>加入、移除或移動工具列  
+##  <a name="bkmk_addtoolbar"></a>加入、移除或移動工具列  
   
 1.  在功能表列上選擇 [工具] 和 [自訂]。  
   
@@ -94,7 +95,7 @@ ms.lasthandoff: 02/22/2017
   
     -   若要新增工具列，請選擇 [新增] 按鈕，為您要新增的工具列指定一個名稱，然後選擇 [確定] 按鈕。  
   
-         ![自訂顯示如何加入工具列的對話方塊](~/ide/media/addtoolbar.png "AddToolbar")  
+         ![自訂顯示如何加入工具列的對話方塊](../ide/media/addtoolbar.png "AddToolbar")  
   
     -   若要移除自訂工具列，請在 [工具列] 清單中選擇該工具列，然後選擇 [刪除] 按鈕。  
   
@@ -108,7 +109,7 @@ ms.lasthandoff: 02/22/2017
         > [!NOTE]
         >  如需如何改進工具列的可用性和協助工具的詳細資訊，請參閱[如何：設定 IDE 協助工具選項](../ide/reference/how-to-set-ide-accessibility-options.md)。  
   
-##  <a name="a-namebkmkcustomizea-customizing-a-menu-or-a-toolbar"></a><a name="bkmk_customize"></a> 自訂功能表或工具列  
+##  <a name="bkmk_customize"></a> 自訂功能表或工具列  
   
 1.  在功能表列上選擇 [工具] 和 [自訂]。  
   
@@ -122,7 +123,7 @@ ms.lasthandoff: 02/22/2017
   
          在 [加入命令] 對話方塊中，選擇 [分類] 清單中的某個項目，選擇 [命令] 清單中的某個項目，然後選擇 [確定] 按鈕。  
   
-         ![Visual Studio 中的 [加入命令] 對話方塊](~/ide/media/addcommand.png "AddCommand")  
+         ![Visual Studio 中的 [加入命令] 對話方塊](../ide/media/addcommand.png "AddCommand")  
   
     -   若要刪除命令，請在 [控制項] 清單中選擇該命令，然後選擇 [刪除] 按鈕。  
   
@@ -130,7 +131,7 @@ ms.lasthandoff: 02/22/2017
   
     -   若要將命令分成群組，請在 [控制項] 清單中選擇命令，選擇 [修改選取範圍] 按鈕，然後在出現的功能表中選擇 [開始群組]。  
   
-##  <a name="a-namebkmkreseta-resetting-a-menu-or-a-toolbar"></a><a name="bkmk_reset"></a> 重設功能表或工具列  
+##  <a name="bkmk_reset"></a> 重設功能表或工具列  
   
 1.  在功能表列上選擇 [工具] 和 [自訂]。  
   

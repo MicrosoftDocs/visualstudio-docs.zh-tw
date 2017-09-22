@@ -15,8 +15,8 @@ helpviewer_keywords:
 - accessibility, Web applications
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -32,9 +32,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
 ms.openlocfilehash: ac4fc2eedd3ed12afca471f0dc946c0b016fdc67
+ms.contentlocale: zh-tw
 ms.lasthandoff: 02/22/2017
 
 ---
