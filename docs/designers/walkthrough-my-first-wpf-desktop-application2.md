@@ -29,10 +29,10 @@ translation.priority.mt:
 - pt-br
 - tr-tr
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: d823714b04af8afc7c8b7d988ab746f41dc4ba68
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: d0e8435092fb5f7090c3631fd079e28de351704d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
@@ -253,7 +253,7 @@ ms.lasthandoff: 09/06/2017
     </Page>  
     ```  
   
-5.  在功能表列上，選擇 [偵錯] 、[開始偵錯]\(或按 F5) 執行應用程式。  
+5.  在功能表列上，選擇 [偵錯] 、[開始偵錯]  (或按 F5) 執行應用程式。  
   
      下圖顯示具有瀏覽視窗按鈕的應用程式。  
   

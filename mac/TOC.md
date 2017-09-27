@@ -12,7 +12,6 @@
 
 # [自訂 IDE](customizing-the-ide.md)
 ## [擴充 Visual Studio for Mac](extending-visual-studio-mac.md)
-### [擴充 Visual Studio for Mac 逐步解說](extending-visual-studio-mac-walkthrough.md)
 
 
 # [專案和方案](projects-and-solutions.md)
@@ -54,6 +53,8 @@
 ## [Unity 遊戲開發](unity-tools.md)
 ### [安裝](setup-vsmac-tools-unity.md)
 ### [使用 Unity 工具](using-vsmac-tools-unity.md)
+
+# [協助工具選項](accessibility.md)
 
 # [疑難排解](troubleshooting.md)
 ## [回報問題](report-a-problem.md)

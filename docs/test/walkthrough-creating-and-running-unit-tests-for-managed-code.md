@@ -37,7 +37,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
@@ -254,7 +254,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 修正程式碼並重新執行測試  
  **分析測試結果**  
   
- 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*> **參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
+ 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*>** 參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
   
  重新對 Debit 程式碼執行檢查後發現了 Bug，單元測試現在已成功了。 提領的金額應該從帳戶餘額減去，但卻被加入至帳戶餘額。  
   

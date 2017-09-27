@@ -7,10 +7,10 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 3A130EC1-DD8C-4125-9034-B08D7AF7EA65
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 836c4995feb8f24214eac81cc50836863a6931da
+ms.sourcegitcommit: f6c7e290f0abc2c32456e076420a7695ae868ba6
+ms.openlocfilehash: ffbd08a4a6765c2cc38329325e91f4aed12d88d5
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 
@@ -22,9 +22,9 @@ Visual Studio for Mac 是現代化的尖端 IDE，具備建立行動裝置、桌
 * Mac 桌面應用程式
 * .NET Core 應用程式
 * ASP.NET Core Web 應用程式
-* 跨平台的 Unity 遊戲
+* 跨平台 Unity 遊戲
 
-它包含多功能的編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，而整合式原始檔控制和名稱只是眾多功能的一小部分。
+它擁有許多功能，包含多功能編輯器、偵錯、整合 iOS、Mac 及 Android 的原生平台，以及整合式原始檔控制等等，只是其眾多功能的一小部分。
 
 本主題審視 Visual Studio for Mac 的各個部分，提供一些功能的相關資訊，讓它成為建立跨平台應用程式的強大工具。
 
