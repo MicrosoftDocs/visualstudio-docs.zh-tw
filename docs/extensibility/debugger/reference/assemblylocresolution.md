@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1357a55b240872237a9c838d1387cf07f14c6f92
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION

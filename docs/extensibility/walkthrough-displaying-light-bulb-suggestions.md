@@ -30,7 +30,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 1096b04fee06415e65a93b0ecd8a6257de64edfc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>逐步解說： 顯示燈泡建議

@@ -13,14 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
+ms.translationtype: HT
 ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: 893ce4d5b8441ddadeafd61579d05f51d96b5eff
+ms.contentlocale: zh-tw
 
 ---
 ClickOnce
-
-
-<!--HONumber=Feb17_HO4-->
-
-

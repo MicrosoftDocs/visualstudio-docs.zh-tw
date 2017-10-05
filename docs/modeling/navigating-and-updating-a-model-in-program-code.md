@@ -31,7 +31,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 40f3a1d56019a8bcab4a11ffaf3aa7d37b02d262
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="navigating-and-updating-a-model-in-program-code"></a>巡覽及更新程式碼中的模型

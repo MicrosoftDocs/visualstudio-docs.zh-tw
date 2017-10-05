@@ -34,7 +34,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ed511fa58ca0d98d38ed2ab1ed3bc24bed642170
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="adding-user-control-to-the-start-page"></a>將使用者控制項加入至 [開始] 頁面
@@ -190,7 +190,7 @@ ms.lasthandoff: 09/06/2017
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>測試手動建立的自訂起始頁  
   
-1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\** 資料夾。  
+1.  將您的 XAML 檔案，並支援文字檔或標記檔案，以複製**%USERPROFILE%\My Documents\Visual Studio 2015 \startpages\\ **資料夾。  
   
 2.  如果您的起始頁參考任何控制項或在 Visual Studio 不會安裝的組件中的類型，將組件複製和貼在*Visual Studio 安裝資料夾***\Common7\IDE\在 PrivateAssemblies\\**。  
   

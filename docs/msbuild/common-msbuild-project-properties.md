@@ -41,7 +41,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 1c2afd23f9f6a7444b723a0f7d93ababad2624e7
 ms.openlocfilehash: 15e453ace87993aae4ecf80e37cf97e4afce2f28
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性

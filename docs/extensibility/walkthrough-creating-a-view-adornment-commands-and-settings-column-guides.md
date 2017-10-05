@@ -30,7 +30,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: c1836489b1845bca9e57daf83fc97bafeaf9da72
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （資料行指南）

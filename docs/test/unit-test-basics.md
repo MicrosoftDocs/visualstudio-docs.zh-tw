@@ -33,7 +33,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ff2a1dc934083bb237189a1ebdfa25d42612433e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="unit-test-basics"></a>單元測試基本概念
@@ -134,7 +134,7 @@ public void Withdraw(double amount)
   
  **將單元測試專案加入方案：**  
   
-1.  在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]\(鍵盤 Ctrl + Shift + N)。  
+1.  在 [檔案]  功能表上，選擇 [新增]  ，然後選擇 [專案]  (鍵盤 Ctrl + Shift + N)。  
   
 2.  在 [新增專案] 對話方塊中，展開 [已安裝]  節點，選擇您想要用於測試專案的語言，然後選擇 [測試] 。  
   
@@ -248,7 +248,7 @@ public void My_Test ()
   
  ![從 [測試總管] 的工具列執行測試](../test/media/ute_toolbar.png "UTE_ToolBar")  
   
- 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]\(鍵盤：F12) 以顯示所選測試的原始程式碼。  
+ 您可以選擇 [全部執行]  以執行所有測試，或選擇 [執行]  以選擇要執行的一小組測試。 執行一組測試之後，測試回合的摘要會出現在 [測試總管] 視窗的底部。 在底部窗格中選取某個測試以檢視該測試的詳細資料。 從內容功能表中選擇 [開啟測試]  (鍵盤：F12) 以顯示所選測試的原始程式碼。  
   
  如果個別測試之間沒有任何相依性，因此可依任意順序執行，請使用工具列上的 ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png "UTE_parallelicon-small") 切換按鈕，以開啟平行測試的執行。 這可大幅縮短執行所有測試所需的時間。  
   

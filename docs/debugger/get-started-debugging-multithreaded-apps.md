@@ -1,5 +1,5 @@
 ---
-title: Get started debugging multithreaded applications | Microsoft Docs
+title: "開始偵錯多執行緒應用程式 |Microsoft 文件"
 ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
@@ -36,46 +36,46 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 5c5aa0df75451fe829b0d6849d8c9d1672e677b0
+ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
+ms.openlocfilehash: 3ffb550707280d76756cbd144ed03f4143ce144b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/26/2017
 
 ---
-# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>Get started debugging a multithreaded application in Visual Studio
-Visual Studio provides several tools and user interface elements to help you debug multithreaded applications. This tutorial shows how to use conditional breakpoints and filter breakpoints, the **Parallel Stacks** window, and **Parallel Watch** window. This tutorial takes only a few minutes, but completing it will familiarize you with the features for debugging multithreaded applications.
+# <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
+Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
 
 |         |         |
 |---------|---------|
-| ![Watch a video](../install/media/video-icon.png "WatchVideo") | [Watch a video](#video) on multithreaded debugging that shows similar steps. |
+| ![觀看影片](../install/media/video-icon.png "WatchVideo") | [觀看影片](#video)多執行緒偵錯，顯示類似的步驟。 |
 
-Other topics provide additional information on using other multithreaded debugging tools:
+其他主題提供使用其他的多執行緒偵錯工具的其他資訊：
 
-- For a similar topic that shows how to use the **Debug Location** toolbar and the **Threads** window, see [Walkthrough: Debug a Multithreaded Application](../debugger/how-to-use-the-threads-window.md).
+- 示範如何使用的類似主題**偵錯位置**工具列和**執行緒**視窗中，請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
-- For a similar topic with a sample that uses <xref:System.Threading.Tasks.Task> (managed code) and the concurrency runtime (C++), see [Walkthrough: Debugging a Parallel Application](../debugger/walkthrough-debugging-a-parallel-application.md). For general debugging tips that apply to most multithreaded application types, read both this topic and the linked topic.
+- 範例會使用具有類似主題的<xref:System.Threading.Tasks.Task>(managed 程式碼) 和並行執行階段 （c + +），請參閱[逐步解說： 偵錯平行應用程式](../debugger/walkthrough-debugging-a-parallel-application.md)。 如需適用於最多執行緒應用程式類型的一般偵錯秘訣，閱讀本主題和連結的主題。
   
-To begin this tutorial, you need a multithreaded application project. Follow the steps listed here to create that project.  
+若要開始本教學課程，您需要的多執行緒應用程式專案。 請依照下列步驟建立專案。  
   
-#### <a name="to-create-the-multithreaded-app-project"></a>To create the multithreaded app project  
+#### <a name="to-create-the-multithreaded-app-project"></a>若要建立多執行緒應用程式專案  
   
-1.  On the **File** menu, choose **New** and then click **Project**.  
+1.  在**檔案**功能表上，選擇**新增**，然後按一下 **專案**。  
   
-     The **New Project** dialog box appears.  
+     [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  In the **Project Type**s box, click the language of your choice: **Visual C#**, **Visual C++**, or **Visual Basic**.  
+2.  在**專案類型**s 方塊中，按一下您所選擇的語言： **Visual C#**， **Visual c + +**，或**Visual Basic**。  
   
-3.  In the **Templates** box, choose **Console App**.  
+3.  在**範本**方塊中，選擇**主控台應用程式**。  
   
-4.  In the **Name** box, type the name MyThreadWalkthroughApp.  
+4.  在**名稱**方塊中，輸入名稱 MyThreadWalkthroughApp。  
   
-5.  Click **OK**.  
+5.  按一下 [確定]。  
   
-     A new console project appears. When the project has been created, a source file appears. Depending on the language you have chosen, the source file might be called Program.cs, MyThreadWalkthroughApp.cpp, or Module1.vb.  
+     新的主控台專案隨即出現。 專案建立之後，便會出現原始程式檔 (Source File)。 根據您選擇的語言，而可能 Program.cs、 MyThreadWalkthroughApp.cpp 或 Module1.vb 呼叫原始程式檔。  
   
-6.  Delete the code that appears in the source file and replace it with the example code shown here.
+6.  刪除原始程式檔中出現的程式碼，如下所示的範例程式碼取代它。
 
-    ```C#
+    ```csharp
     using System;
     using System.Threading;
 
@@ -208,11 +208,11 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     End Class
     ```
   
-7.  On the **File** menu, click **Save All**.  
+7.  在**檔案**功能表上，按一下 **全部儲存**。  
   
-#### <a name="to-begin-the-tutorial"></a>To begin the tutorial  
+#### <a name="to-begin-the-tutorial"></a>若要開始本教學課程  
   
--   In the source code editor, look for the following code: 
+-   在原始碼程式碼編輯器中，尋找下列程式碼： 
   
     ```CSharp  
     Thread.Sleep(3000);  
@@ -228,20 +228,20 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     Console.WriteLine()
     ```
   
-#### <a name="to-start-debugging"></a>To start debugging  
+#### <a name="to-start-debugging"></a>若要啟動偵錯  
   
-1.  Click in the left gutter of the `Thread.Sleep` or `Thread::Sleep` statement to insert a new breakpoint.  
+1.  按一下左邊的裝訂邊的`Thread.Sleep`或`Thread::Sleep`陳述式來插入新的中斷點。  
   
-     In the gutter on the left side of the source code editor, a red circle appears. This indicates that a breakpoint is now set at this location. 
+     在原始碼程式碼編輯器左側裝訂邊上，會出現一個紅色圓圈。 這表示這個位置現在已設定中斷點。 
   
-2.  On the **Debug** menu, click **Start Debugging** (**F5**).  
+2.  在**偵錯**功能表上，按一下 **開始偵錯**(**F5**)。  
   
-     Visual Studio builds the solution, the app starts to run with the debugger attached, and then the app stops at the breakpoint.  
+     Visual Studio 會建置方案，應用程式啟動偵錯工具附加，以執行，然後在中斷點停止應用程式。  
   
     > [!NOTE]
-    > If you switch focus to the console window, click in the [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] window to return focus to [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
+    > 如果您將焦點切換到主控台視窗，按一下 在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視窗將焦點還給[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-4.  In the source code editor, locate the line that contains the breakpoint:  
+4.  在原始碼程式碼編輯器中，找出包含中斷點的那一行：  
   
     ```CSharp  
     Thread.Sleep(3000);  
@@ -255,153 +255,153 @@ To begin this tutorial, you need a multithreaded application project. Follow the
     Thread.Sleep(3000)
     ```    
   
-#### <a name="ShowThreadsInSource"></a>To discover the thread marker  
+#### <a name="ShowThreadsInSource"></a>若要尋找執行緒標記  
 
-1.  In the Debug Toolbar, click the **Show Threads in Source** button ![Show Threads in Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1.  在 [偵錯] 工具列上，按一下 **在來源中顯示執行緒**按鈕![在來源中顯示執行緒](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 
-2. Press **F11** once to advance the debugger one line of code.
+2. 按**F11**前進一行程式碼偵錯工具一次。
   
-3.  Look at the gutter on the left side of the window. On this line, you will see a *thread marker* icon  ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker") that resembles two cloth threads. The thread marker indicates that a thread is stopped at this location.
+3.  查看來源視窗左邊的裝訂邊。 在這行中，您會看到*執行緒標記*圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker")類似於兩條布條。 執行緒標記表示執行緒會停在這個位置上。
 
-    Notice that a thread marker may be partially concealed by a breakpoint. 
+    請注意，可能會在中斷點部分隱藏執行緒標記。 
   
-4.  Hover the pointer over the thread marker. A DataTip appears. The DataTip tells you the name and thread ID number for each stopped thread. In this case, the name is probably `<noname>`. 
+4.  將指標移到執行緒標記上。 資料提示方塊就會出現。 資料提示方塊會指出每個已停止的執行緒的名稱和執行緒 ID 編號。 名稱在此情況下，可能是`<noname>`。 
   
-5.  Right-click the thread marker to see the available options on the shortcut menu.
+5.  以滑鼠右鍵按一下執行緒標記，若要查看的捷徑功能表上的可用選項。
     
-## <a name="ParallelStacks"></a>View the Location of Threads
+## <a name="ParallelStacks"></a>檢視執行緒的位置
 
-In the **Parallel Stacks** window, you can switch between a Threads view and (for task-based programming) Tasks view, and you can view call stack information for each thread. In this app, we can use the Threads view.
+在**平行堆疊**視窗中，您可以切換執行緒 檢視之間，並 （適用於以工作為基礎的程式設計） 工作 檢視中，而且您可以檢視每個執行緒的呼叫堆疊資訊。 在此應用程式中，我們可以使用 [執行緒] 檢視。
 
-1. Open the **Parallel Stacks** window by choosing **Debug > Windows > Parallel Stacks**. You should see something similar to this (the exact information will be different depending on the current location of each thread, your hardware, and your programming language).
+1. 開啟**平行堆疊**選擇視窗**偵錯 > Windows > 平行堆疊**。 您應該會看到類似這樣的項目 （確切的資訊將會根據每個執行緒、 硬體和您的程式語言的目前位置而不同）。
 
-    ![Parallel Stacks Window](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
+    ![平行堆疊 視窗](../debugger/media/dbg-multithreaded-parallel-stacks.png "ParallelStacksWindow")
 
-    In this example, from left to right we get this information:
+    在此範例中，從左到右我們取得這項資訊：
     
-    - The Main thread (left side) has stopped on `Thread.Start` (the stop point is indicated by the thread marker icon ![Thread Marker](../debugger/media/dbg-thread-marker.png "ThreadMarker")).
-    - Two threads have entered the `ServerClass.InstanceMethod`, one of which is the current thread (yellow arrow), while the other thread has stopped in `Thread.Sleep`.
-    - A new thread (on the right) is also starting (stopped on `ThreadHelper.ThreadStart`).
+    - 主執行緒 （左側） 已停止上`Thread.Start`(停止點會以執行緒標記圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker"))。
+    - 兩個執行緒已進入`ServerClass.InstanceMethod`，其中是目前的執行緒 （黃色箭號），而另一個執行緒已停止在`Thread.Sleep`。
+    - 新的執行緒 （右側） 也正在啟動 (停止`ThreadHelper.ThreadStart`)。
 
-2.  Right-click entries in the **Parallel Stacks** window to see the available options on the shortcut menu.
+2.  以滑鼠右鍵按一下中的項目**平行堆疊**視窗來查看的捷徑功能表上的可用選項。
 
-    You can take various actions from these right-click menus, but for this tutorial we will show more of these details in the **Parallel Watch** window (next sections).
+    您可以採取各種動作，從這些上按一下滑鼠右鍵功能表中，但本教學課程中我們會顯示更多詳細資料中**平行監看式**視窗 （下一節）。
 
     > [!NOTE]
-    > If you are more interested in seeing a list view with information on each thread, use the **Threads** window instead. See [Walkthrough: Debug a Multithreaded Application](../debugger/how-to-use-the-threads-window.md).
+    > 如果您是更有興趣查看清單檢視每個執行緒的相關資訊，請使用**執行緒**視窗改為。 請參閱[逐步解說： 偵錯多執行緒應用程式](../debugger/how-to-use-the-threads-window.md)。
 
-## <a name="set-a-watch-on-a-variable"></a>Set a Watch on a Variable
+## <a name="set-a-watch-on-a-variable"></a>在變數上設定監看式
 
-1. Open the **Parallel Watch** window by choosing **Debug > Windows > Parallel Watch > Parallel Watch 1**.
+1. 開啟**平行監看式**選擇視窗**偵錯 > Windows > 平行監看式 > 平行監看式 1**。
 
-2. Click in the cell where you see the `<Add Watch>` text (or the empty header cell in the 4th column), type `data`, and press Enter.
+2. 按一下儲存格，您看到`<Add Watch>`文字 （或空的標頭中的儲存格第 4 個資料行），型別`data`，然後按 Enter。
 
-    The values for the data variable for each thread appear in the window.
+    每個執行緒資料變數的值會出現在視窗中。
 
-3. Click again in the cell where you see the `<Add Watch>` text (or the empty header cell in the 5th column), type `count`, and press Enter.
+3. 再次按一下儲存格，您看到`<Add Watch>`文字 （或空的標頭中的儲存格第 5 個資料行），型別`count`，然後按 Enter。
 
-    The values for the count variable for each thread appear in the window. (If you don't see this much information yet, try pressing F11 a few more times to advance the execution of the threads in the debugger.)
+    每個執行緒計數變數的值會出現在視窗中。 （如果您沒有看到這麼多資訊，請嘗試按下 F11 數次，若要繼續的偵錯工具中的執行緒執行。）
 
-    ![Parallel Watch Window](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
+    ![[平行監看式] 視窗](../debugger/media/dbg-multithreaded-parallel-watch.png "ParallelWatchWindow")
 
-4. Right-click one of the rows in the window to see available options.
+4. 以滑鼠右鍵按一下其中一個資料列在視窗中，若要查看可用的選項。
 
-## <a name="flagging-and-unflagging-threads"></a>Flagging and Unflagging Threads  
-You can flag threads that you want to give special attention. Flagging threads is a good way to keep track of important threads and to ignore threads that you do not care about.  
+## <a name="flagging-and-unflagging-threads"></a>將執行緒加上旗標和取消旗標  
+您可以標示您要特別注意的執行緒。 加上旗標的執行緒是一個好的方法來追蹤重要的執行緒，並略過您不在意的執行緒。  
   
-#### <a name="to-flag-threads"></a>To flag threads  
+#### <a name="to-flag-threads"></a>若要為執行緒加上旗標  
 
-1. In the **Parallel Watch** window, hold down the SHIFT key and select multiple rows.
+1. 在**平行監看式**視窗中，按住 SHIFT 鍵並選取多個資料列。
 
-2. Right-click and choose **Flag**.
+2. 以滑鼠右鍵按一下，然後選擇 **旗標**。
 
-    Now, all the selected threads are flagged. Now, you can filter to show only flagged threads.
+    現在，所有選取的執行緒會加上旗標。 現在，您可以篩選要顯示已標幟的執行緒。
   
-3.  In the **Parallel Watch** window, find the **Show Only Flagged Threads** button ![Show Flagged Threads](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").  
+3.  在**平行監看式**視窗中，尋找**僅顯示已標幟的執行緒**按鈕![顯示已標幟執行緒](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker")。  
   
-4.  Click the **Show Only Flagged Threads** button.  
+4.  按一下**僅顯示已標幟的執行緒** 按鈕。  
   
-    Only the flagged thread appears in the list now.
+    現在清單中只會出現加上旗標的執行緒。
 
     > [!TIP]
-    > When you have flagged some threads, you can right-click a line of code in the code editor and choose **Run Flagged Threads to Cursor** (make sure that you choose code that all flagged threads will reach). This will pause threads on the selected line of code, making it easier to control the order of execution by [freezing and thawing threads](#bkmk_freeze).
+    > 當您有某些執行緒加上標幟時，您可以在程式碼編輯器的程式碼行上按一下滑鼠右鍵並選擇**執行至游標處加上旗標的執行緒**（請確定您選擇的所有已標幟的執行緒程式碼會到達）。 這將會暫停程式碼，讓您更輕鬆地控制所執行的順序選取行上的執行緒[凍結和解除凍結執行緒](#bkmk_freeze)。
 
-5.  Click the **Show Only Flagged Threads** button to toggle back to **Show All Threads** mode.
+5.  按一下**僅顯示已標幟的執行緒**按鈕，切換回**顯示所有執行緒**模式。
     
-#### <a name="to-unflag-threads"></a>To unflag threads
+#### <a name="to-unflag-threads"></a>若要取消執行緒的旗標
 
-To unflag threads, you can right-click one or more flagged threads in the **Parallel Watch** window and choose **Unflag**.
+若要取消執行緒的旗標，您可以以滑鼠右鍵按一下一個或多個已標幟的執行緒，在**平行監看式**視窗，然後選擇 **取消旗標**。
 
-## <a name="bkmk_freeze"></a> Freezing and thawing thread execution 
+## <a name="bkmk_freeze"></a>凍結和解除凍結執行緒的執行 
 
 > [!TIP]
-> You can freeze and thaw (suspend and resume) threads to control the order in which threads perform work. This can help you resolve concurrency issues such as deadlocks and race conditions.
+> 您可以凍結和解除凍結 （暫止和繼續） 控制執行緒執行工作順序的執行緒。 這可協助您解決並行存取問題，像是死結和競爭情形。
   
-#### <a name="to-freeze-and-unfreeze-threads"></a>To freeze and unfreeze threads  
+#### <a name="to-freeze-and-unfreeze-threads"></a>若要凍結和解除凍結執行緒  
   
-1.  In the **Parallel Watch** window, with all the rows selected, right-click and select **Freeze**.
+1.  在**平行監看式**視窗中，所有選取的資料列，以滑鼠右鍵按一下並選取內含**凍結**。
 
-    In the second column, a pause icon now appears for each row. The pause icon indicates that the thread is frozen.
+    在第二個資料行，暫停圖示現在會顯示每個資料列。 暫停圖示表示已凍結執行緒。
 
-2.  Deselect the rows by clicking one row only.
+2.  取消資料列選取一個資料列，即可。
 
-3.  Right-click a row and select **Thaw**.
+3.  以滑鼠右鍵按一下資料列，然後選取**解除凍結**。
 
-    The pause icon goes away on this row, indicating that the thread is no longer frozen.
+    暫停圖示消失在此資料列，指出已不再凍結執行緒。
 
-4.  Switch to the code editor and click **F11**. Only the unfrozen thread runs.
+4.  切換至程式碼編輯器中，按一下**F11**。 只有未凍結的執行緒會執行。
 
-    The app may also instantiate some new threads. Notice that any new threads are unflagged and are not frozen.
+    應用程式可能也會執行個體化一些新的執行緒。 請注意，任何新的執行緒是未標示，並不會凍結。
 
-## <a name="bkmk_follow_a_thread"></a> Follow a Single Thread by using Conditional Breakpoints
+## <a name="bkmk_follow_a_thread"></a>請依照下列單一執行緒，使用條件式中斷點
 
-Sometimes, it can be helpful to follow the execution of a single thread in the debugger. One way you can do that is by freezing threads that you are not interested in, but in some scenarios you may wish to follow a single thread without freezing other threads (to repro a particular bug, for example). To follow a thread without freezing other threads, you must avoid breaking into code except on the thread that you are interested in. You can do this by setting a [conditional breakpoint](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression).
+有時候，可能很有用的偵錯工具中的單一執行緒執行。 您可以執行的一種方法是凍結的執行緒，您不感興趣，但在某些情況下您可能想要在不凍結 （若要重現特定問題，例如） 的其他執行緒的情況下遵循單一執行緒。 若要依照沒有凍結的其他執行緒的執行緒，您必須避免中斷您感興趣的執行緒上的程式碼除外。 您可以藉由設定[條件中斷點](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression)。
 
-You can set breakpoints on different conditions, such as the thread name or the thread ID. Another method that may be helpful is to set the condition on data that you know will be unique to each thread. This is a common debugging scenario, in which you are more interested in some particular data value than in any particular thread.
+您可以設定中斷點，在不同的狀況，例如執行緒名稱或執行緒 id。 可能會很有幫助的另一個方法是在您知道將會是唯一的每個執行緒的資料上設定的條件。 這是常見的偵錯案例，您會更有興趣在任何特定的執行緒中某些特定的資料值。
 
-#### <a name="to-follow-a-single-thread"></a>To follow a single thread
+#### <a name="to-follow-a-single-thread"></a>若要遵循單一執行緒
 
-1. Right-click the breakpoint you previously created and choose **Conditions**.
+1. 以滑鼠右鍵按一下您先前建立的中斷點，然後選擇 **條件**。
 
-2. In the **Breakpoint Settings** window, type `data == 5` for the conditional expression.
+2. 在**中斷點設定**視窗中，輸入`data == 5`條件運算式。
 
-    ![Conditional Breakpoint](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
+    ![條件式中斷點](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
     > [!TIP]
-    > If you are more interested in a specific thread, then use a thread name or thread ID for the condition. To do this in the **Breakpoint Settings** window, select **Filter** instead of **Conditional expression**, and follow the filter tips. You may want to name your threads in your app code (since threads IDs change when you restart the debugger).
+    > 如果您是更有興趣的特定的執行緒，然後使用執行緒名稱或執行緒 ID 的條件。 若要這樣在**中斷點設定**視窗中，選取**篩選**而不是**條件運算式**，並依照篩選器的秘訣。 若要命名您的應用程式程式碼中的執行緒 （因為當您重新啟動偵錯工具時，就會變更執行緒 Id）。
 
-3. Close the **Breakpoint Settings** window.
+3. 關閉**中斷點設定**視窗。
 
-4. Click the Restart ![Restart App](../debugger/media/dbg-tour-restart.png "RestartApp") button to restart your debugging session.
+4. 按一下 重新啟動![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "RestartApp")按鈕以重新啟動您的偵錯工作階段。
 
-    You will break into code on the thread for which the data variable is 5. Look for the yellow arrow (current debugger context) in the **Parallel Watch** window to verify that.
+    您將會中斷資料變數的 5 的執行緒上的程式碼。 黃色箭號 （目前的偵錯工具內容） 尋找**平行監看式**視窗可讓您確認。
 
-5. Now, you can step over code (F10) and step into code (F11) and follow the execution of the single thread.
+5. 現在，您可以不進入程式碼 (F10) 和逐步執行程式碼 (F11) 並遵循單一執行緒的執行。
 
-    As long as the breakpoint condition is unique to the thread, and the debugger doesn't hit any other breakpoints on other threads (you may need to disable them), you can step over code and step into code without switching to other threads.
+    只要中斷點條件是唯一的執行緒，且偵錯工具不會叫用 （您可能需要停用它們） 的其他執行緒上的任何其他中斷點，您可以不進入程式碼，並逐步執行程式碼不需要切換到其他的執行緒。
 
     > [!NOTE]
-    > When you advance the debugger, all threads will run. However, the debugger won't break into code on other threads unless one of the other threads hits a breakpoint. 
+    > 當您進入偵錯工具時，會執行所有執行緒。 不過，偵錯工具不會中斷其他執行緒上的程式碼，除非其中一個其他的執行緒叫用中斷點。 
   
-## <a name="more-about-the-multithreaded-debugging-windows"></a>More about the multithreaded debugging windows 
+## <a name="more-about-the-multithreaded-debugging-windows"></a>進一步了解多執行緒偵錯視窗 
 
-#### <a name="to-switch-to-another-thread"></a>To switch to another thread 
+#### <a name="to-switch-to-another-thread"></a>若要切換至另一個執行緒 
 
-- To switch to another thread, see [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
+- 若要切換至另一個執行緒，請參閱[如何： 切換到另一個執行緒時偵錯](../debugger/how-to-switch-to-another-thread-while-debugging.md) 
 
-## <a name="video"></a> Watch a video on multithreaded debugging
+## <a name="video"></a>請觀看影片，以在多執行緒偵錯
 
 <div style="padding-top: 56.25%; position: relative; width: 100%;">
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugging-Multi-threaded-Apps-in-Visual-Studio-2017-MoZPKMD6D_111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>To learn more about the Parallel Stack and Parallel Watch windows  
+#### <a name="to-learn-more-about-the-parallel-stack-and-parallel-watch-windows"></a>若要深入了解 平行堆疊 和 平行監看式視窗  
   
-- See [How to: Use the Parallel Stack Window](../debugger/using-the-parallel-stacks-window.md) 
+- 請參閱[How to： 使用平行堆疊視窗](../debugger/using-the-parallel-stacks-window.md) 
 
-- See [How to: Use the Parallel Watch Window](../debugger/how-to-use-the-parallel-watch-window.md) 
+- 請參閱[How to： 使用平行監看式視窗](../debugger/how-to-use-the-parallel-watch-window.md) 
   
-## <a name="see-also"></a>See Also  
- [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [How to: Switch to Another Thread While Debugging](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+## <a name="see-also"></a>另請參閱  
+ [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)
 

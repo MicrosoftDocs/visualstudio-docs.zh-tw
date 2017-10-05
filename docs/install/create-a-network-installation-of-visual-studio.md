@@ -1,7 +1,7 @@
 ---
-title: Create a network-based installation of Visual Studio | Microsoft Docs
-description: Describes how to create a network install point for deploying Visual Studio within an enterprise
-ms.date: 08/30/2017
+title: "建立 Visual Studio 的網路型安裝 | Microsoft Docs"
+description: '{{PLACEHOLDER}}'
+ms.date: 08/29/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology:
@@ -16,145 +16,145 @@ author: timsneath
 ms.author: tims
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 13659103061c6054698f4579b4b71d2669d2356d
-ms.openlocfilehash: 3f66c3f0cf93a4357ee53219171219d52a1851a3
+ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
+ms.openlocfilehash: 54b0b6541764d95bacc8590bdb85c98e2f7681ca
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
+ms.lasthandoff: 09/06/2017
 
 ---
 
-# <a name="create-a-network-installation-of-visual-studio-2017"></a>Create a network installation of Visual Studio 2017
+# <a name="create-a-network-installation-of-visual-studio-2017"></a>建立 Visual Studio 2017 的網路安裝
 
-Commonly, an enterprise administrator creates a network install point for deployment to client workstations. We've designed Visual Studio 2017 to enable you to cache the files for the initial installation along with all product updates to a single folder. (This process is also referred to as _creating a layout_.) We've done this so that client workstations can use the same network location to manage their installation even if they haven't yet updated to the latest servicing update.
+通常，企業系統管理員會針對用戶端工作站部署來建立網路安裝點。 我們已經設計 Visual Studio 2017，讓您可以快取初始安裝的檔案以及單一資料夾的所有產品更新 (這個程序也稱為「建立配置」)。我們已完成這項作業，因此，用戶端工作站可以使用相同的網路位置來管理其安裝，即使它們尚未更新為最新的服務更新也是一樣。
 
 > [!NOTE]
-> If you have multiple editions of Visual Studio in use within your enterprise (for example, both Visual Studio Professional and Visual Studio Enterprise), you must create a separate network install share for each edition.
+> 如果您的企業內使用多個 Visual Studio 版本 (例如，同時有 Visual Studio Professional 和 Visual Studio Enteprise)，則必須針對每個版本建立個別的網路安裝共用。
 
-## <a name="download-the-visual-studio-bootstrapper"></a>Download the Visual Studio bootstrapper
+## <a name="download-the-visual-studio-bootstrapper"></a>下載 Visual Studio 啟動載入器
+**下載**您要的 Visual Studio 版本。 請務必按一下 [儲存]，然後按一下 [開啟資料夾]。
 
-**Download** the edition of Visual Studio you want. Make sure to click **Save**, and then click **Open folder**.
+您的安裝程式可執行檔 (具體而言，即為啟動載入器檔案) 應該符合下列其中一個檔案。
 
-Your setup executable&mdash;or to be more specific, a bootstrapper file&mdash;should match one of the following.
-
-|Edition | Download|
+|版本 | 下載|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://aka.ms/vs/15/release/vs_enterprise.exe) |
 |Visual Studio Professional | [**vs_professional.exe**](https://aka.ms/vs/15/release/vs_professional.exe) |
-|Visual Studio Community | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
+|Visual Studio 社群 | [**vs_community.exe**](https://aka.ms/vs/15/release/vs_community.exe) |
 
-Other supported bootstrappers include [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe), and [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+其他支援的啟動載入器包括 [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe)、[vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe)、[vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe)、[vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe)、[vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) 及 [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe)。
 
-## <a name="create-an-offline-installation-folder"></a>Create an offline installation folder
+## <a name="create-an-offline-installation-folder"></a>建立離線安裝資料夾
+若要建立包含所有語言和所有功能的離線安裝，請使用下列範例中的其中一個命令：
 
-To create an offline installation with all languages and all features, use one of the commands from the following examples:
+(請確定您是從 [下載] 目錄執行命令。 通常在執行 Windows 10 的電腦上，這會是 `C:\Users\<username>\Downloads`)。
 
-(Make sure that you run the command from your Download directory. Typically, that's `C:\Users\<username>\Downloads` on a computer running Windows 10).
+- 針對 Visual Studio Enterprise，請執行：
+  ```
+  vs_enterprise.exe --layout c:\vs2017offline
+  ```
 
-- For Visual Studio Enterprise, run:
-
-  ```vs_enterprise.exe --layout c:\vs2017offline```
-
-- For Visual Studio Professional, run:
-
-  ```vs_professional.exe --layout c:\vs2017offline```
-
-- For Visual Studio Community, run:
-
-  ```vs_community.exe --layout c:\vs2017offline```
+- 針對 Visual Studio Professional，請執行：
+  ```
+  vs_professional.exe --layout c:\vs2017offline
+    ```
+    
+- 針對 Visual Studio Community，請執行：
+  ```
+  vs_community.exe --layout c:\vs2017offline
+  ```
 
 > [!IMPORTANT]
-> A complete Visual Studio 2017 layout requires at least 20 GB of disk space and can take some time to download.  See the [Customizing the network layout](#customizing-the-network-layout) section for details on how to create a layout with only the components you want to install.
+> 完整的 Visual Studio 2017 配置至少需要 20 GB 的磁碟空間，並可能需要花費一些時間才能完成下載。  請參閱[自訂網路配置](#customizing-the-network-layout)一節，以了解僅搭配想要安裝的元件來建立配置的方式。
 
-## <a name="modify-the-responsejson-file"></a>Modify the response.json file
+## <a name="modify-the-responsejson-file"></a>修改 response.json 檔案
+您可以修改 response.json，以設定安裝程式執行時所使用的預設值。  例如，您可以設定 `response.json` 檔案來自動選取所選的一組特定工作負載。
+如需詳細資訊，請參閱[使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)。
 
-You can modify the response.json to set default values that are used when setup is run.  For example, you can configure the `response.json` file to select a specific set of workloads selected automatically.
-See [Automate Visual Studio installation with a response file](automated-installation-with-response-file.md) for details.
+## <a name="copy-the-layout-to-a-network-share"></a>將配置複製到網路共用
 
-## <a name="copy-the-layout-to-a-network-share"></a>Copy the layout to a network share
-
-Host the layout on a network share so it can be run from other machines.
-* Example:<br>
+在網路共用上裝載配置，以便能夠從其他電腦執行。
+* 範例：<br>
 ```xcopy /e c:\vs2017offline \\server\products\VS2017```
 
-## <a name="customizing-the-network-layout"></a>Customizing the network layout
+## <a name="customizing-the-network-layout"></a>自訂網路配置
+有數個選項可供您用來自訂網路配置。 您可以建立部分配置，以便只包含一組特定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)、[工作負載、元件，及其建議或選擇性相依性](workload-and-component-ids.md)。 如果您知道只會將一部分工作負載部署到用戶端工作站，則這可能十分有用。 用於自訂配置的一般命令列參數包括：
 
-There are several options you can use to customize your network layout. You can create a partial layout that only contains a specific set of [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [workloads, components, and their recommended or optional dependencies](workload-and-component-ids.md). This might be useful if you know that you are going to deploy only a subset of workloads to client workstations. Typical command-line parameters for customizing the layout include:
+ * ```--add``` 可指定[工作負載或元件識別碼](workload-and-component-ids.md)。  如果使用 `--add`，則只會下載使用 `--add` 指定的工作負載和元件。  如果未使用 `--add`，則會下載所有工作負載和元件。
+ * ```--includeRecommended``` 可包含指定工作負載識別碼的所有建議元件
+ * ```--includeOptional``` 可包含指定工作負載識別碼的所有建議和選擇性元件。
+ * ```--lang``` 可指定[語言地區設定](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)。
 
-* ```--add``` to specify [workload or component IDs](workload-and-component-ids.md).  If `--add` is used, only those workloads and components specified with `--add` are downloaded.  If `--add` is not used, all workload and components are downloaded.
-* ```--includeRecommended``` to include all the recommended  components for the specified workload IDs
-* ```--includeOptional``` to include all the recommended and optional components for the specified workload IDs.
-* ```--lang``` to specify [language locales](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales).
+下列範例示範如何建立自訂部分配置。
 
-Here are a few examples of how to create a custom partial layout.
+ * 若要下載僅適用於一種語言的所有工作負載和元件，請執行： <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
+ * 若要下載適用於多種語言的所有工作負載和元件，請執行： <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
+ * 若要下載適用於所有語言的一個工作負載，請執行： <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
+ * 若要下載適用於三種語言的兩個工作負載和一個選擇性元件，請執行： <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
+ * 若要下載兩個工作負載及其所有建議元件，請執行： <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
+ * 若要下載兩個工作負載及其所有建議和選擇性原件，請執行： <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
 
-* To download all workloads and components for only one language, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US```
-* To download all workloads and components for multiple languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP```
-* To download one workload for all languages, run <br> ```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended```
-* To download two workloads and one optional component for three languages, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP ```
-* To download two workloads and all of their recommended components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended ```
-* To download two workloads and all of their recommended and optional components, run: <br>```vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional ```
+### <a name="new-in-153"></a>15.3 的新功能
+當您執行配置命令時，會儲存您指定的選項 (例如工作負載和語言)。 後續配置命令會包含所有先前的選項。  以下是只包含一份英文工作負載的配置範例：
 
-### <a name="new-in-153"></a>New in 15.3
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+```
+當您想要將該配置更新為較新版本時，不需要指定任何其他命令列參數。 會儲存先前的設定，並供這個配置資料夾中的任何後續配置命令使用。  下列命令會更新現有的部分配置。  
 
-When you run a layout command, the options that you specify are saved (such as the workloads and languages). Subsequent layout commands will include all of the previous options.  Here is an example of a layout with one workload for English only:
+```
+vs_enterprise.exe --layout c:\VS2017Layout  
+```
 
-```vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US```
+當您想要新增額外的工作負載時，以下是做法範例。 在此情況下，我們將新增 Azure 工作負載和當地語系化語言。  現在，Managed 桌面和 Azure 都會包含在此配置中。  所有這些工作負載都會包含英文和德文的語言資源。 配置會更新為最新的可用版本。
 
-When you want to update that layout to a newer version, you don't have to specify any additional command line parameters. The previous settings are saved and used by any subsequent layout commands in this layout folder.  The following command will update the existing partial layout.
+```
+vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+```
 
-```vs_enterprise.exe --layout c:\VS2017Layout```
+如果您想要將現有配置更新為完整配置，請使用 --all 選項，如下列範例所示。
 
-When you want to add an additional workload, here's an example of how to do so. In this case, we'll add the Azure workload and a localized language.  Now, both Managed Desktop and Azure are included in this layout.  The language resources for English and German are include for all these workloads. The layout is updated to the latest available version.
-
-```vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE```
-
-If you want to update an existing layout to a full layout, use the --all option, as shown in the following example.
-
-```vs_enterprise.exe --layout c:\VS2017Layout --all```
+```
+vs_enterprise.exe --layout c:\VS2017Layout --all  
+```
 
 
-## <a name="deploying-from-a-network-installation"></a>Deploying from a network installation
+## <a name="deploying-from-a-network-installation"></a>從網路安裝部署
+系統管理員可以在執行安裝指令碼時，將 Visual Studio 部署到用戶端工作站。 或者，具有系統管理員權限的使用者可以直接從共用執行安裝程式，以在其電腦上安裝 Visual Studio。
 
-Administrators can deploy Visual Studio onto client workstations as part of an installation script. Or, users who have administrator rights can run setup directly from the share to install Visual Studio on their machine.
-
-- Users can install by running: <br>```\\server\products\VS2017\vs_enterprise.exe```
-- Administrators can install in an unattended mode by running: <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
+- 使用者可以執行如下來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe```
+- 系統管理員可以執行如下，以便使用自動模式來安裝： <br>```\\server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart```
 
 > [!TIP]
-> When executed as part of a batch file, the `--wait` option ensures that the `vs_enterprise.exe` process waits until the installation is complete before it returns an exit code. This is useful if an enterprise administrator wants to perform further actions on a completed installation (for example, to [apply a product key to a successful installation](automatically-apply-product-keys-when-deploying-visual-studio.md)) but must wait for the installation to finish to handle the return code from that installation.  If you do not use `--wait`, the `vs_enterprise.exe` process exits before the installation is complete and returns an inaccurate exit code that doesn't represent the state of the install operation.
+> 作為批次檔的一部分執行時，`--wait` 選項可確保 `vs_enterprise.exe` 程序先等到安裝完成，再傳回結束代碼。 如果企業系統管理員想要對已完成的安裝執行進一步動作 (例如，[將產品金鑰套用至成功安裝](automatically-apply-product-keys-when-deploying-visual-studio.md))，則這十分有用，但是必須等待安裝完成才能處理來自該安裝的傳回碼。  如果您未使用 `--wait`，則 `vs_enterprise.exe` 程序會在安裝完成之前結束，並傳回未代表安裝作業狀態的不正確結束代碼。
 
-When you install from a layout, the content that is installed is acquired from the layout. However, if you select a component that is not in the layout, it will be acquired from the internet.  If you want to prevent Visual Studio setup from downloading any content that is missing in your layout, use the `--noWeb` option.  If `--noWeb` is used and the layout is missing any content that is selected to be installed, setup fails.  
+當您從配置進行安裝時，會從配置中取得已安裝的內容。  不過，如果配置中遺漏選取要安裝的項目，則會從網際網路取得它。  如果您想要防止 Visual Studio 安裝程式下載您配置中遺漏的任何內容，請使用 `--noWeb` 選項。  如果使用 `--noWeb`，而且配置遺失已選取要安裝的任何內容，則安裝程式會失敗。  
 
-### <a name="error-codes"></a>Error codes
+### <a name="error-codes"></a>錯誤碼
+如果已使用 `--wait` 參數，則會根據作業的結果，將 `%ERRORLEVEL%` 環境變數設定為下列其中一個值：
 
-If you used the `--wait` parameter, then depending on the result of the operation, the `%ERRORLEVEL%` environment variable is set to one of the following values:
-
-  | **Value** | **Result** |
+  | **值** | **結果** |
   | --------- | ---------- |
-  | 0 | Operation completed successfully |
-  | 3010 | Operation completed successfully, but install requires reboot before it can be used |
-  | Other | Failure condition occurred - check the logs for more information |
+  | 0 | 作業成功完成 |
+  | 3010 | 作業成功完成，但安裝需要重新開機才能使用 |
+  | 其他 | 發生失敗狀況 - 請檢查記錄檔以取得詳細資訊 |
 
-## <a name="updating-a-network-install-layout"></a>Updating a network install layout
+## <a name="updating-a-network-install-layout"></a>更新網路安裝配置
+當產品更新可用時，您可以[更新網路安裝配置](update-a-network-installation-of-visual-studio.md)，以納入更新的套件。
 
-As product updates become available, you might want to [update the network install layout](update-a-network-installation-of-visual-studio.md) to incorporate updated packages.
-
-## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>How to create a layout for a previous Visual Studio 2017 release
-
+## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>如何建立舊版 Visual Studio 2017 的配置
 > [!NOTE]
-> The Visual Studio 2017 bootstrappers that are available on [VisualStudio.com](http://www.visualstudio.com) download and install the latest Visual Studio 2017 release available whenever they are run. If you download a Visual Studio bootstrapper today and run it six months from now, it installs the Visual Studio 2017 release that is available at that later time. If you create a layout, installing Visual Studio from that layout installs the specific version of Visual Studio that exists in the layout. Even though a newer version might exist online, you get the version of Visual Studio that is in the layout.
+> 可在 [VisualStudio.com](http://www.visualstudio.com) 上取得的 Visual Studio 2017 啟動載入器，會下載並安裝執行時所能取得的最新版 Visual Studio 2017。 如果您今天下載 Visual Studio 啟動載入器，並在六個月後執行，則會安裝六個月後可取得的 Visual Studio 2017 版本。 如果您建立配置，則從該配置安裝 Visual Studio 時會安裝存在於該配置中的特定 Visual Studio 版本。 即使線上可能有較新的版本，您仍會取得該配置中的 Visual Studio 版本。
 
-If you need to create a layout for an older version of Visual Studio 2017, you can go to https://my.visualstudio.com to download "fixed" versions of the Visual Studio 2017 bootstrappers.
+如果您需要建立舊版 Visual Studio 2017 的配置，則可以移至 https://my.visualstudio.com，針對支援的版本下載「固定」版本的 Visual Studio 2017 啟動載入器，這樣您就能建立舊版本的網路安裝配置。
 
-### <a name="how-to-get-support-for-your-offline-installer"></a>How to get support for your offline installer
+### <a name="how-to-get-support-for-your-offline-installer"></a>如何取得離線安裝程式的支援
+如果您的離線安裝發生問題，我們會想要進行了解。 告訴我們的最簡單方式就是使用[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具。 使用此工具時，您可以將我們所需的遙測和記錄檔傳送給我們，來協助我們診斷及修正問題。
 
-If you experience a problem with your offline installation, we want to know about it. The best way to tell us is by using the [Report a Problem](../ide/how-to-report-a-problem-with-visual-studio-2017.md) tool. When you use this tool, you can send us the telemetry and logs we need to help us diagnose and fix the problem.
+我們也提供其他支援選項。 如需清單，請參閱[告訴我們](../ide/how-to-report-a-problem-with-visual-studio-2017.md)頁面。
 
-We have other support options available, too. For a list, see our [Talk to us](../ide/how-to-report-a-problem-with-visual-studio-2017.md) page.
-
-## <a name="see-also"></a>See also
-* [Install Visual Studio](install-visual-studio.md)
-* [Visual Studio administrator guide](visual-studio-administrator-guide.md)
-* [Use command-line parameters to install Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio workload and component IDs](workload-and-component-ids.md)
+## <a name="see-also"></a>請參閱
+* [安裝 Visual Studio](install-visual-studio.md)
+* [Visual Studio 系統管理員指南](visual-studio-administrator-guide.md)
+* [使用命令列參數安裝 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+* [Visual Studio 工作負載與元件識別碼](workload-and-component-ids.md)
 

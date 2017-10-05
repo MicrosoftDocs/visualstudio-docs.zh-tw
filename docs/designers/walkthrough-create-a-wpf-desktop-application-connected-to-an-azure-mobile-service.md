@@ -5,19 +5,19 @@ ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.technology:
-- vs-ide-general
+- vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d42620f-553b-4b04-a38b-f6b306d73a50
 caps.latest.revision: 7
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5027ce1affd22c88af18301d51304958c819249a
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: d21c7fcc7c22c3a260d79856c66bb15d5166c444
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
@@ -490,14 +490,14 @@ ms.lasthandoff: 09/06/2017
   
 4.  在 [資料庫]  清單中，選擇資料庫選項。 由於這個應用程式應該不常使用，所以您可以選擇 [建立免費的 20MB SQL 資料庫] 選項，或選擇已與訂閱建立關聯的免費資料庫。  
   
-5.  在 [區域]  清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]\(向右箭號) 按鈕。  
+5.  在 [區域]  清單中，選擇您要部署行動服務的資料中心，然後選擇 [下一步]  (向右箭號) 按鈕。  
   
     > [!NOTE]
     >  針對這項服務，您要使用預設 [後端]  設定與 [JavaScript] 。  
   
-6.  如果您要建立新的資料庫，請在 [指定資料庫設定]  頁面上的 [伺服器]  清單中選擇 [新的 SQL 資料庫伺服器] ，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]\(勾選記號) 按鈕。  
+6.  如果您要建立新的資料庫，請在 [指定資料庫設定]  頁面上的 [伺服器]  清單中選擇 [新的 SQL 資料庫伺服器] ，輸入您的 **SQL 登入名稱** 和 **密碼**，然後選擇 [完成]  (勾選記號) 按鈕。  
   
-7.  如果您選擇現有的資料庫，請在 [資料庫設定]  頁面上，輸入您的 **登入密碼** ，然後選擇 [完成]\(勾選記號) 按鈕。  
+7.  如果您選擇現有的資料庫，請在 [資料庫設定]  頁面上，輸入您的 **登入密碼** ，然後選擇 [完成]  (勾選記號) 按鈕。  
   
      建立行動服務的程序隨即開始。 程序完成時，狀態會變更為 [就緒]  ，您即可移至下一個步驟。  
   
@@ -517,7 +517,7 @@ ms.lasthandoff: 09/06/2017
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>若要加入行動服務的宣告  
   
-1.  返回 Visual Studio。 在 **方案總管**中，展開 [App.xaml]\(C#) 或 [Application.xaml]\(Visual Basic) 節點並開啟 **App.xaml.cs** 檔或 **App.xaml.vb** 檔。  
+1.  返回 Visual Studio。 在 **方案總管**中，展開 [App.xaml]  (C#) 或 [Application.xaml]  (Visual Basic) 節點並開啟 **App.xaml.cs** 檔或 **App.xaml.vb** 檔。  
   
 2.  在程式碼編輯器中，將 `using` 或 **Imports** 指示詞加入檔案的頂端：  
   

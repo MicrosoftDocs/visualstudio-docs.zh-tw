@@ -23,7 +23,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: 5bfeb8ea94b457114d7ba6ab74b783972e64350c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>逐步解說：將主機連接至產生的指示詞處理器
@@ -96,7 +96,7 @@ ms.lasthandoff: 09/06/2017
   
 1.  開啟 CustomHost 方案。  
   
-2.  在**專案**功能表上，按一下 **加入參考**。  
+2.  在 [專案] 功能表上，按一下 [新增參考]。  
   
      **加入參考**對話方塊隨即開啟與**.NET**顯示索引標籤。  
   

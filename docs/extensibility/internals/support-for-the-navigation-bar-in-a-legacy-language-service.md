@@ -33,7 +33,7 @@ ms.translationtype: MT
 ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: eb5212c4828ad24256447bc1c75f85ec0d9d9579
 ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>導覽列的舊版語言服務的支援

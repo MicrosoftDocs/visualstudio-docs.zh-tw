@@ -1,4 +1,3 @@
-
 ---
 title: "在 Visual Studio 中同步處理設定 | Microsoft Docs"
 ms.custom: 
@@ -13,8 +12,8 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+author: gewarren
+ms.author: gewarren
 manager: ghogen
 translation.priority.ht:
 - cs-cz
@@ -31,10 +30,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.translationtype: HT
-ms.sourcegitcommit: cc949cae43fe524771f43fe7e9261de3b4325649
-ms.openlocfilehash: 8b8a7587687579e074d1b9ea1c9ae52a5f857fce
+ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
+ms.openlocfilehash: 1882e191caa027e7a6e2b52c766135b240b309a1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="synchronize-your-settings-in-visual-studio"></a>在 Visual Studio 中同步處理設定
@@ -82,7 +81,7 @@ Visual Studio 的同步設定預設為開啟。 您可以關閉電腦的同步�
 **注意**：若要使用新的安裝特定設定，您必須完成全新安裝。 當您將現有的 Visual Studio 2017 安裝升級為最新的更新時，它會使用現有的共用位置。 如果您目前有 Visual Studio 2017 的並存安裝，並決定進行升級，而且想要使用新的安裝特定設定檔案位置，請遵循這些步驟：
 
 1. 升級後，請使用 [匯入/匯出設定精靈] 將所有現有設定匯出至 `%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx` 資料夾外的某個位置。
-2. 開啟已升級 Visual Studio 安裝的「VS 2017 開發人員命令提示字元」，並從中 "run devenv resetuserdata"。
+2. 開啟已升級 Visual Studio 安裝的**適用於 VS 2017 的開發人員命令提示字元**，並從中執行 `devenv /resetuserdata`。
 3. 啟動 Visual Studio，並從匯出的設定檔匯入儲存的設定。
 
 ## <a name="see-also"></a>請參閱

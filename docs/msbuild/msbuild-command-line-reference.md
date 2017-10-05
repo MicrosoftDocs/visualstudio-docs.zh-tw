@@ -40,7 +40,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 1c2afd23f9f6a7444b723a0f7d93ababad2624e7
 ms.openlocfilehash: 24103f33bb7d2157560801f70dbe7c1b8f0a9989
 ms.contentlocale: zh-tw
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/26/2017
 
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
