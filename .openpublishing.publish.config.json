@@ -50,7 +50,7 @@
     "CnE_Content_Brno@moravia.com",
     "CnE_UE_Bugfixing_ENG@moravia.com"
   ],
-  "branches_to_filter": [],
+  "branches_to_filter": ["live"],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/visualstudio-docs.zh-tw",
   "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
