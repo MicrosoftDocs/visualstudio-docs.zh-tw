@@ -96,6 +96,6 @@ Next 方法
   
 ### 若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 3：加入倒數計時器](../Topic/Step%203:%20Add%20a%20Countdown%20Timer.md)。  
+-   若要移到下一個教學課程步驟，請參閱[步驟 3：加入倒數計時器](../ide/step-3-add-a-countdown-timer.md)。  
   
 -   若要回到上一個教學課程步驟，請參閱[步驟 1：建立專案並將標籤加入至表單](../ide/step-1-create-a-project-and-add-labels-to-your-form.md)。

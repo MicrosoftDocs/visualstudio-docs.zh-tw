@@ -82,6 +82,6 @@ IntelliSense 中 Next\(\) 方法的多載
   
 ### 若要繼續或檢視  
   
--   若要移到下一個教學課程步驟，請參閱[步驟 7：加入乘法和除法問題](../Topic/Step%207:%20Add%20Multiplication%20and%20Division%20Problems.md)。  
+-   若要移到下一個教學課程步驟，請參閱[步驟 7：加入乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../Topic/Step%205:%20Add%20Enter%20Event%20Handlers%20for%20the%20NumericUpDown%20Controls.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)。

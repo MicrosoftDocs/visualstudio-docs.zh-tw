@@ -32,4 +32,4 @@ caps.handback.revision: 12
   
 -   若要移到下一個教學課程，請參閱[教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)。  
   
--   若要回到上一個教學課程步驟，請參閱[步驟 7：加入乘法和除法問題](../Topic/Step%207:%20Add%20Multiplication%20and%20Division%20Problems.md)。
+-   若要回到上一個教學課程步驟，請參閱[步驟 7：加入乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。
