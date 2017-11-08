@@ -1,55 +1,9 @@
 ---
-title: "如何：變更圖形診斷播放電腦 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
-caps.latest.revision: 11
-caps.handback.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
----
-# 如何：變更圖形診斷播放電腦
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+redirect_url: /visualstudio/debugger/graphics/how-to-change-the-graphics-diagnostics-playback-machine
+ms.translationtype: HT
+ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
+ms.openlocfilehash: 59d2a763d40f268d043bff7059bf553061fdd24d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 11/08/2017
 
-您可以使用本機電腦或遠端電腦或裝置播放圖形資訊。  
-  
-## 選擇播放電腦  
- 播放電腦是用來從圖形記錄檔播放圖形事件的電腦或裝置。  通常，本機電腦是最方便的選項，不過，若電腦硬體或驅動程式版本不同於擷取問題的電腦，可能無法重現轉譯問題；發生這種情況時，您可以選擇更好重現問題的遠端播放電腦和仍然使用您的開發電腦進行診斷。  
-  
-#### 若要使用本機電腦播放圖形資訊  
-  
-1.  在 \[圖形記錄文件\] 視窗中，選擇 \[**播放電腦**\] 連結。  \[**遠端偵錯工具連接**\] 對話方塊隨即出現。  
-  
-2.  在 \[**手動組態**\] 下的 \[**位址**\] 屬性，輸入 `localhost`。  
-  
-3.  將 \[**驗證模式**\] 屬性設定成 \[**無**\]。  
-  
-4.  選擇 \[**選取**\] 按鈕。  
-  
-#### 若要使用遠端電腦播放圖形資訊  
-  
-1.  在 \[圖形記錄文件\] 視窗中，選擇 \[**播放電腦**\] 連結。  \[**遠端偵錯工具連接**\] 對話方塊隨即出現。  
-  
-2.  在 \[**手動組態**\] 下的 \[**位址**\] 屬性，輸入您要用來播放圖形資訊之電腦或裝置的 Windows 網域名稱或 IP 位址。  
-  
-3.  指定您要用來保護播放電腦連接的授權種類。  
-  
-    -   如需 Windows 驗證，請將 \[**驗證模式**\] 屬性設定為 \[**Windows**\]。  
-  
-    -   不使用任何驗證時，將 \[**驗證模式**\] 屬性設定為 \[**無**\]。  
-  
-4.  選擇 \[**選取**\] 按鈕。  
-  
-> [!NOTE]
->  \[**遠端偵錯工具連接**\] 對話方塊可能也會顯示直接連接至開發電腦或在相同子網路的遠端偵錯目標。  您可以使用這些遠端偵錯目標的其中之一做為圖形診斷播放電腦，而不需要手動設定它。  在 \[**遠端偵錯工具連接**\] 對話方塊中，選取您想要的目標，然後選擇 \[**選取**\] 按鈕。  
-  
-## 請參閱  
- [圖形記錄文件](../debugger/graphics-log-document.md)
+---
