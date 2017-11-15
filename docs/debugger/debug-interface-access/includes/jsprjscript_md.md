@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 22fb870618b769bf1b0fed9002bb152662e7e279
+ms.openlocfilehash: 48fb0065961d358725c6862910111f035e2fc527
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
 ---
-.NET Framework 2.0
+JScript
