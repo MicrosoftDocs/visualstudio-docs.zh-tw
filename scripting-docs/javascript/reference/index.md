@@ -1,10 +1,8 @@
 ---
 redirect_url: /script/javascript/reference/javascript-reference
-ms.translationtype: HT
-ms.sourcegitcommit: af92b825b9a2b342571e8aa84c36a17bfe4aa464
 ms.openlocfilehash: 762d371e67d40523d8e2963f5432407c4f396f52
-ms.contentlocale: zh-tw
-ms.lasthandoff: 11/08/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-

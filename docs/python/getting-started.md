@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/python/vs-tutorial-01-01
-ms.translationtype: HT
-ms.sourcegitcommit: d8bed0e26ffc12ebd86a690ffe27f64c9171482e
 ms.openlocfilehash: e2e20cc953ae906bcb1568dc11c8d3810b062306
-ms.contentlocale: zh-tw
-ms.lasthandoff: 10/01/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

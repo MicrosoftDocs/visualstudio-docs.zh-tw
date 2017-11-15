@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a744fccb3aedc4672af170a8220a2ec4b6d2a6b0
+ms.openlocfilehash: 3eeb7999b5e2933f8fbe7d738ea4292da75fcbe2
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
 ---
-Visual C++
+Visual Studio 應用程式生命週期管理

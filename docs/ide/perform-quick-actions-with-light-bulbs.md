@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/ide/quick-actions.md
-translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
 ms.openlocfilehash: b7ba1be5f38abf92370796656fc6cb8fffc80e11
-ms.lasthandoff: 03/27/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-

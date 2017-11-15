@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/profiling/profiling-feature-tour
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
 ms.openlocfilehash: 593add2bf287c481780281a0b3d89fef77b6c327
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

@@ -1,8 +1,8 @@
 ---
 redirect_url: /visualstudio/python/publishing-to-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: 3587252b0f4ad700f013f71f11ba67a76cc03b41
-ms.lasthandoff: 03/07/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

@@ -1,10 +1,8 @@
 ---
 redirect_url: /script/javascript/misc/expected-left-curly-brace
-ms.translationtype: HT
-ms.sourcegitcommit: af92b825b9a2b342571e8aa84c36a17bfe4aa464
 ms.openlocfilehash: 176b368641821f6f804bb24e8a046f196b3d84dc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 11/08/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-

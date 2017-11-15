@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/python/interactive-repl
-ms.translationtype: HT
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
 ms.openlocfilehash: dc6629181d6fa0ea50fb0536c72c163a93b6d6df
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/22/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

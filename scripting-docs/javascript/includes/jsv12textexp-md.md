@@ -1,1 +1,1 @@
-啟用實驗 JavaScript 功能的 Microsoft Edge \(about:flags\)
+啟用實驗 JavaScript 功能的 Microsoft Edge (about:flags)

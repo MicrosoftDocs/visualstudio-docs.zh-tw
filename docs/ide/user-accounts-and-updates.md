@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/ide/connected-environment
-ms.translationtype: HT
-ms.sourcegitcommit: 36c7cd947b87a06314542fc120e0501b1ca71a28
 ms.openlocfilehash: 867de03da87c15ed0ba7b50aaba3a8779f864480
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

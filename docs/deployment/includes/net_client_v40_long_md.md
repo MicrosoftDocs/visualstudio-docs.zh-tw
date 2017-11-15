@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a744fccb3aedc4672af170a8220a2ec4b6d2a6b0
+ms.openlocfilehash: 51c0390cdace363381a030931fe0b8451161c0d4
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
 ---
-Visual C++
+.NET Framework 4 Client Profile
