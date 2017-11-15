@@ -1,27 +1,24 @@
 ---
 title: "整合 SQL Server 與 Visual Studio R 工具 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 919dfc34-234a-489e-91bf-74a4cefae26c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8c26ad4d9df3fb8b84c5d8c93e213858bc2ccb67
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: fa4f6a27eeacd2f016a248daa74074392b1137f2
-ms.openlocfilehash: b7afc0b2e62245e30814a0bc00d455400ae1b2d8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/20/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
 Visual Studio 的極佳 SQL Server 支援可協助資料科學家透過建立和執行 SQL 查詢以及使用預存程序的能力來使用 R 和 SQL 資料庫。
@@ -159,4 +156,3 @@ WITH RESULT SETS ((medallion NVARCHAR(max), hack_license NVARCHAR(max)));
 
 > [!Tip]
 > 如果您在 Visual Studio 中開啟 SQL Server 物件總管，則會在資料庫的 [可程式性] > [預存程序] 資料夾中出現您已發行的預存程序。 以滑鼠右鍵按一下並選取 [執行程序]，或在 `.sql` 查詢視窗中以互動方式呼叫它，即可從物件總管中執行它。
-

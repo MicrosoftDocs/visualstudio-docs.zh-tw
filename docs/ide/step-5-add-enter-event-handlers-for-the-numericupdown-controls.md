@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b5f12c71a894937ad452a31bf53e19e4fbb2d7a2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式
 在本教學課程的第五個部分中，您將加入 Enter 事件處理常式，讓輸入測驗問題的答案時更加容易。 只要受測者選擇並開始輸入不同的值，這個程式碼就會選取並清除每個 NumericUpDown 控制項中的目前值。  
@@ -70,7 +53,8 @@ ms.lasthandoff: 09/06/2017
   
 3.  在 **answer_Enter** 事件處理常式的方法中新增下列程式碼。  
   
-     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]  [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
+     [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
+     [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]  
   
      這個程式碼看似複雜，但是逐步查看後就能了解它。 首先，查看方法的頂端：C# 中的 `object sender` 或 Visual Basic 中的 `sender As System.Object`。 這個參數會參考要引發其事件的物件，稱為 sender。 在這個案例中，sender 物件為 NumericUpDown 控制項。 因此，在方法的第一行中，您會指定 sender 不是一般物件，而是更具體的 NumericUpDown 控制項  (每一個 NumericUpDown 控制項都是物件，但不是每一個物件都是 NumericUpDown 控制項)。NumericUpDown 控制項在這個方法中名為 **answerBox**，因為它會供表單上的所有 NumericUpDown 控制項使用，而不只是 sum NumericUpDown 控制項。 由於您是在這個方法中宣告 answerBox 變數，因此其範圍僅適用於這個方法。 換句話說，變數只能夠在這個方法內使用。  
   

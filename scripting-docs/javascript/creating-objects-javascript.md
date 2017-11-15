@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -27,16 +26,15 @@ helpviewer_keywords:
 - custom objects
 - initializing objects, using constructors
 ms.assetid: 58d1baa5-4fe8-4a56-a926-5b11765df704
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
 ms.openlocfilehash: 0ba7962179cc2f0fcb972caee692edabee368c7d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="creating-objects-javascript"></a>建立物件 (JavaScript)
 您有數種方式可以使用 JavaScript 建立專屬物件。 您可以直接具現化 [Object 物件](../javascript/reference/object-object-javascript.md)，然後新增專屬屬性和方法。 或者，您可以使用物件常值標記法來定義物件。 您也可以使用建構函式來定義物件。 如需使用建構函式的詳細資訊，請參閱[使用建構函式定義類型](../javascript/advanced/using-constructors-to-define-types.md)。  
@@ -162,4 +160,3 @@ const obj = {
     [ 'prop_' + (() => 42)() ]: 42  
 };  
 ```
-

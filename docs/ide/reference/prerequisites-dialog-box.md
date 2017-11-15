@@ -4,53 +4,32 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
+f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
 dev_langs:
 - VB
 - CSharp
 - C++
-helpviewer_keywords:
-- Prerequisites dialog box
+helpviewer_keywords: Prerequisites dialog box
 ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: 75
-author: kempb
-ms.author: kempb
+caps.latest.revision: "75"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 5a8237e5c437878b22bd3c67a3a4ba2cdc3fa126
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Prerequisites Dialog Box
-<a id="prerequisites-dialog-box" class="xliff"></a>
+# <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 這個對話方塊可指定已安裝的必要條件元件、安裝方式，以及套件的安裝順序。  
   
- 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。 在 [發行] 頁面上，按一下 [必要條件]。 針對安裝專案，按一下 [專案] 功能表上的 [屬性]。 出現 [屬性頁] 對話方塊時，按一下 [必要條件]。  
+ 若要存取這個對話方塊，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 當 [ **專案設計工具** ] 出現時，請按一下 [ **發行** ] 索引標籤。在 [發行] 頁面上，按一下 [必要條件]。 針對安裝專案，按一下 [專案] 功能表上的 [屬性]。 出現 [屬性頁] 對話方塊時，按一下 [必要條件]。  
   
-## UIElement 清單
-<a id="uielement-list" class="xliff"></a>  
+## <a name="uielement-list"></a>UIElement 清單  
   
 |項目|說明|  
 |-------------|-----------------|  
@@ -61,8 +40,7 @@ ms.lasthandoff: 05/26/2017
 |**從應用程式的相同位置下載必要條件**|指定從應用程式的相同位置安裝必要條件元件。 這個選項會將所有的必要條件套件複製到發行位置。 必要條件套件必須放在開發電腦上，這個選項才能正常運作。|  
 |**從下列位置下載必要條件**|指定從您選取的位置安裝必要條件元件。 您可以使用 [瀏覽] 按鈕來選取位置。|  
   
-## 必要條件資訊
-<a id="prerequisites-information" class="xliff"></a>  
+## <a name="prerequisites-information"></a>必要條件資訊  
  [必要條件] 對話方塊中顯示的必要條件元件，可能和以下所列的不同。 第一次開啟該對話方塊時，會自動設定**必要條件對話方塊**中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。  
   
 |項目|說明|  
@@ -85,8 +63,7 @@ ms.lasthandoff: 05/26/2017
 |**Windows Installer 3.1**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 3.1 版，以允許安裝 Windows Installer 安裝專案。 Windows Server 2003 SP1 (含) 以後版本都會預先安裝這個套件。<br /><br /> 這個項目預設為選取。|  
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|  
   
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另請參閱  
  [專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)   
  [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)   
  [轉散發 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

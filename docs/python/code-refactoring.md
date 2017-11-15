@@ -1,27 +1,24 @@
 ---
 title: "在 Visual Studio 中重構 Python 程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 76ebcb29-72d1-4958-9a63-8984c03d5c22
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 8964ed1401a855fc60fdf0a25b9974bf34b1bebb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 8826722a80f97de3b6e2e56600f6aaa9cb5d6134
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="refactoring-python-code"></a>重構 Python 程式碼
 
 Visual Studio 提供數個可自動轉換和清除 Python 原始程式碼的命令︰

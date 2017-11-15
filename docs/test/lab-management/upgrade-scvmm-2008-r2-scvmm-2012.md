@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Upgrade SCVMM 2008 R2 to SCVMM 2012, test lab
+helpviewer_keywords: Upgrade SCVMM 2008 R2 to SCVMM 2012, test lab
 ms.assetid: 5be92444-c701-43c7-8b2a-77df8e02bc27
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: b7874e87ea81bf6b0818b4b9eefba0f86bd2a2e2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 281cf7b876c67d3c9eefa0aa7a56621de1ea791c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="upgrade-scvmm-2008-r2-to-scvmm-2012"></a>將 SCVMM 2008 R2 升級至 SCVMM 2012
 
@@ -77,4 +60,3 @@ Lab Management **不**支援 SCVMM 2016。
 ## <a name="see-also"></a>請參閱
 
 * [變更現有 Lab Management 組態](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)
-

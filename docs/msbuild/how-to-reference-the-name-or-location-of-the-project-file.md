@@ -1,27 +1,30 @@
 ---
 title: "如何：參考專案檔的名稱或位置 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "參考的位置"
-  - "位置"
-  - "MSBuildProjectName 屬性"
-  - "MSBuild 參考專案檔"
-  - "參考的名稱"
-  - "保留的屬性"
-  - "參考的專案檔"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- locations, referencing
+- locations
+- MSBuildProjectName property
+- MSBuild, referencing the project file
+- names, referencing
+- reserved properties
+- project files, referencing
 ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 9186b98b482b101254e70def9285d9bbad2ca254
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：參考專案檔的名稱或位置
 您可以在專案檔中使用專案的名稱或位置，而不需建立自己的屬性。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供保留的屬性，來參考專案檔的名稱和其他專案相關的屬性。 如需保留屬性的詳細資訊，請參閱 [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)。  
@@ -75,8 +78,3 @@ caps.handback.revision: 13
 ## <a name="see-also"></a>另請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
  [MSBuild 保留和已知屬性](../msbuild/msbuild-reserved-and-well-known-properties.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

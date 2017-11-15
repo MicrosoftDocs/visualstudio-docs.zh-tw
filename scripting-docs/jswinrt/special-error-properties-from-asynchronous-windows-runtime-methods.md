@@ -5,21 +5,19 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45155584-06d8-4e7f-93a6-8564a93f643d
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 120d8f699c8bedd0fe5762300203c5d5ec18e73e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="special-error-properties-from-asynchronous-windows-runtime-methods"></a>來自非同步 Windows 執行階段方法的特殊錯誤屬性
 可能很難針對 JavaScript 中的非同步 Windows 執行階段方法進行偵錯，因為可能會從呼叫堆疊深層擲回錯誤。 應用程式以偵錯模式執行時，JavaScript `Error` 物件有些額外屬性只會出現在從非同步 Windows 執行階段方法擲回錯誤時。  

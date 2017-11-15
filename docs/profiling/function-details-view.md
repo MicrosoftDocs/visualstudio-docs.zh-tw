@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.functiondetails
+f1_keywords: vs.performance.view.functiondetails
 helpviewer_keywords:
 - Function Details view
 - Profiling Tools, Function Details view
 ms.assetid: 8806954f-cf28-48d5-81b2-d722ceaf7d27
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: c45571132fb06a63a8193d21941bbd50ccad4f42
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ff4c94b079d58cab51ec0539e17ada8696ebca89
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="function-details-view"></a>函式詳細資料檢視
 [函式詳細資料檢視] 視窗會顯示下列資訊︰  

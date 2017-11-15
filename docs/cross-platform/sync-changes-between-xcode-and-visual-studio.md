@@ -7,19 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
-caps.latest.revision: 7
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "7"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 0bb84ea6c47764aa0429fdebf160dae0fd47e570
-
+ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>同步處理 XCode 和 Visual Studio 之間的變更
 適用於行動裝置開發的 Microsoft Visual C++ 元件，包含可在您的電腦與 Mac 之間同步處理工作的遠端功能。 當您將 Visual Studio 和 Mac 電腦配對之後，Visual Studio 中就會提供適用於 iOS 應用程式專案的新選項，讓您可用來在 XCode 中開啟專案、在 XCode 和 Visual Studio 之間移動程式碼，以及清除暫存的 XCode 專案目錄。  
@@ -36,7 +32,7 @@ ms.openlocfilehash: 0bb84ea6c47764aa0429fdebf160dae0fd47e570
 ### <a name="open-in-xcode"></a>在 XCode 中開啟  
  若要從 Visual Studio 在 XCode 中開啟專案，在 [遠端電腦] 子功能表上，選擇 [在 XCode 中開啟]，以便在配對的遠端電腦上開啟選取的專案。 vcremote 伺服器可用來在您的 Mac 上開啟 XCode，並瀏覽至您 Mac 上所建立且包含專案複本的暫存目錄。 Visual Studio 會出現一個對話方塊，顯示用於專案的暫存目錄。 遠端電腦上所採取的動作也會顯示在 Visual Studio 的 [輸出] 視窗中。 若要查看它們，您可能需要在 [輸出] 視窗頂端的 [顯示輸出來源] 下拉式清單中，選取 [Visual C++ 遠端電腦]。  
   
- ![[輸出] 視窗會顯示遠端電腦的動作。] (~/cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
+ ![[輸出] 視窗會顯示遠端電腦的動作。] (../cross-platform/media/cppmdd_u2_remotemachine_output.png "CPPMDD_U2_RemoteMachine_Output")  
   
  在 Mac 上，您可以使用所有的 XCode 工具來編輯您的程式碼和資源、分鏡腳本和動作。 在 Visual Studio 中，您的 iOS 應用程式專案會加上「已在 XCode 中開啟」的註解，以指出可能會在遠端電腦上進行變更。 當您完成編輯之後，可以使用 [從遠端提取] 或 [從遠端累加提取] 命令，將變更複製回您的 Visual Studio 專案。  
   
@@ -54,8 +50,3 @@ ms.openlocfilehash: 0bb84ea6c47764aa0429fdebf160dae0fd47e570
  您可以使用 [清除遠端] 命令，來刪除遠端電腦上暫存專案目錄中的檔案。 這會在您的 Mac 上移除目錄的內容，包括任何原始程式檔或組建產品。 使用 [清除遠端] 命令之前，請確定您已經使用 [從遠端擷取] 或 [從遠端累加提取]，將所有變更同步處理回到 Visual Studio。  
   
  若要清除遠端電腦上的暫存專案目錄，在 Visual Studio 的 [方案總管] 視窗中，以滑鼠右鍵按一下 iOS 應用程式專案，以開啟操作功能表。 選取 [遠端電腦]，然後選擇 [清除遠端]，以便從 Mac 移除專案目錄檔案。
-
-
-<!--HONumber=Feb17_HO4-->
-
-

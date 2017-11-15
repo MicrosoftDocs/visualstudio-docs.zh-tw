@@ -5,23 +5,20 @@ ms.date: 02/03/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- javascript
+ms.technology: javascript
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- JavaScript, Windows Runtime
+helpviewer_keywords: JavaScript, Windows Runtime
 ms.assetid: 90658546-f746-4e34-a7d1-71cf9ee322a2
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
 ms.openlocfilehash: c81f5d83056ceb87987e263f09c0d5e5017dbb6f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-the-windows-runtime-in-javascript"></a>在 JavaScript 中使用 Windows 執行階段
 當您撰寫通用 Windows 平台 (UWP) 應用程式時，您可以透過使用原生 JavaScript 物件、方法和屬性的大致相同方式，來使用 Windows 執行階段類別、方法和屬性。 本主題提供簡介資訊及說明在 JavaScript 中使用 Windows 執行階段應用程式開發介面之基本概念的主題連結，包括如何表示 Windows 執行階段類型、如何使用非同步 Windows 執行階段方法，以及如何接聽和處理 Windows 執行階段事件等的說明。  

@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Surround-with snippets
 - snippets [C#], using Surround With
 ms.assetid: 23e5288e-7897-417a-9ded-cf60dfc889ee
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: ef49e2d41d0f234a77963960f6bf6f39a4ad0f3f
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 775cafd5f8fc5bb2908447d7f34b13e0377d6711
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>如何：使用範圍陳述式程式碼片段
 下列程序說明如何使用範圍陳述式程式碼片段。 有三種方式可取得範圍陳述式程式碼片段︰透過鍵盤快速鍵、透過 [編輯] 功能表，以及透過操作功能表。  

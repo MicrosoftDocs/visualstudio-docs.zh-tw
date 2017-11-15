@@ -1,50 +1,51 @@
 ---
-title: "程式碼剖析工具報表檢視 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "報表，程式碼剖析工具"
-  - "程式碼剖析工具報表"
-  - "程式碼剖析工具，報表檢視"
+title: "效能報告檢視 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- reports, profiling tools
+- profiling tools reports
+- profiling tools, report views
 ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 程式碼剖析工具報表檢視
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。  程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 \(IDE\) 中，  而報表是由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具所產生的。  
+# <a name="performance-report-views"></a>效能報告檢視
+本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。 程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中， 報表則由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具產生。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [一般資料檢視](../profiling/common-data-views.md)  
- 針對程式碼剖析方法中常見的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 所有程式碼剖析方法中常見的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)  
- 針對使用取樣方法所產生的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 使用取樣方法所產生的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)  
- 針對使用檢測方法所產生的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 使用檢測方法所產生的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
- 針對包含 .NET 記憶體資料的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 包含 .NET 記憶體資料的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
- 針對使用並行方法所產生的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 使用並行方法所產生的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)  
- 針對使用並行方法並包含執行緒執行資料的程式碼剖析資料檔案，提供其檢視和報告的參考資訊。  
+ 使用並行方法所產生且包含執行緒執行資料的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
  [階層互動檢視](../profiling/tier-interactions-view.md)  
- 針對包含層互動資料的程式碼剖析資料檔案，提供其互動檢視和報告的參考資訊。  
+ 包含階層互動資料的程式碼剖析資料檔案之互動檢視和報告的參考資訊。  
   
-## 請參閱  
- [分析程式碼剖析工具資料](../profiling/analyzing-performance-tools-data.md)
+## <a name="see-also"></a>另請參閱  
+ [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

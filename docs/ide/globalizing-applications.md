@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - globalization [Visual Studio], international applications
 - Visual C#, international applications
 ms.assetid: 8e1b9920-e1ac-4691-928e-cd95bfc6550b
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: e77d5d86e16dd360759c8e289ad545efaa6a4870
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: f7edc6e37b21b8810e8967c160e44e82c0903b24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="globalizing-applications"></a>全球化應用程式
 「全球化」是針對多種文化特性，設計和開發軟體產品的程序。 本節同時適用於 Windows Forms 和 Web Forms 頁面。  

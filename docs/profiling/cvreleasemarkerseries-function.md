@@ -1,30 +1,29 @@
 ---
 title: "CvReleaseMarkerSeries 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvReleaseMarkerSeries"
-helpviewer_keywords: 
-  - "CvReleaseMarkerSeries 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvReleaseMarkerSeries
+helpviewer_keywords: CvReleaseMarkerSeries method
 ms.assetid: 3b4711ee-e534-411d-9128-f69cd7932a48
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d295d73560a560caa7f374965a280cf48ad66c2d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CvReleaseMarkerSeries 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-釋放標記系列。  請勿在原本發行應用程式之後使用簽章，否則系列物件可能會損毀。  無法釋放標記系列造成記憶體遺漏 \(Memory Leak\)。  
+# <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函式
+釋放標記系列。 不要在釋放之後使用標記系列物件，否則應用程式可能會當機。 釋放標記系列失敗會造成記憶體流失。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CvReleaseMarkerSeries(  
@@ -32,15 +31,15 @@ HRESULT CvReleaseMarkerSeries(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pMarkerSeries`  
- 提供者物件變數位址。  位址不能為 null，變數可以有任何值。  
+ 提供者物件變數的位址。 位址不能是 NULL，變數可以是任何值。  
   
-## 傳回值  
- S\_OK，當一系列標記已成功建立或以防萬一有任何錯誤碼錯誤。   使用 SUCCEEDED\/FAILED 巨集來檢查錯誤條件。  
+## <a name="return-value"></a>傳回值  
+ 成功釋放標記系列時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
-## 需求  
- **標題:** cvmarkers.h  
+## <a name="requirements"></a>需求  
+ **標頭︰**cvmarkers.h  
   
-## 請參閱  
- [C\+\+ 程式庫參考](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>另請參閱  
+ [C++ 程式庫參考](../profiling/cpp-library-reference.md)

@@ -4,42 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-apiname:
-- WriteContextTLogs
-apilocation:
-- filetracker.dll
+apiname: WriteContextTLogs
+apilocation: filetracker.dll
 apitype: COM
-helpviewer_keywords:
-- WriteContextTLogs
+helpviewer_keywords: WriteContextTLogs
 ms.assetid: ffc6c7be-3f22-4624-9ffc-0122fe72b6ec
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: 8f602f0951ba1cffe14eeb79b6c4e779a563e4c8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 30c3c96a0999fe65c6fe0fa95163feaf526adfbf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 寫入目前內容的記錄檔。  
@@ -61,7 +42,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** FileTracker.h  
+ **標頭：**FileTracker.h  
   
 ## <a name="see-also"></a>另請參閱  
  [WriteAllTLogs](../msbuild/writealltlogs.md)

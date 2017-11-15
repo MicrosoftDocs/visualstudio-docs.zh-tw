@@ -1,11 +1,10 @@
 ---
 title: "選項對話方塊、專案和方案 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,19 +14,17 @@ helpviewer_keywords:
 - Projects and Solutions Options dialog box
 - Options dialog box, Projects and Solutions
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 2778964a6d5e4f478422727b02e15a058868e644
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>專案和方案、選項對話方塊
-
 設定與專案和解決方案有關的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後按一下 [一般]。
 
 專案和範本資料夾的預設路徑會透過相同對話方塊中的 [位置] 索引標籤進行設定。
@@ -86,5 +83,5 @@ ms.lasthandoff: 09/06/2017
 指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。 
 
 ## <a name="see-also"></a>另請參閱  
-- [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)
-- - [選項對話方塊、專案和解決方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)
+- [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)  
+- [選項對話方塊、專案和解決方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

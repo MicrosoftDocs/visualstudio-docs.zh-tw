@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio 中的 IPython REPL | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c9bd06b0-2021-4e55-b933-8346476224a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: fce859ff47d28a7de44c63f5dd4e52cfb58478f1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9553aa4944f652c7b8505b0d99d5c2b88167f872
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="using-ipython-in-the-interactive-window"></a>在互動式視窗中使用 IPython
 
 IPython 模式的 Visual Studio 互動式視窗，是個進階但容易使用的互動式開發環境，且具有「互動式平行計算」功能。 本主題引導在 Visual Studio 互動式視窗中使用 IPython，其中所有的一般[互動式視窗](interactive-repl.md)功能也都可使用。
@@ -87,4 +84,3 @@ IPython 有許多其他實用功能，例如逸出到系統殼層、變數替換
 - 若要輕鬆使用 Jupyter，且不需安裝，請嘗試免費的 [Azure Notebooks 託管服務](https://notebooks.azure.com/)，可讓您保留並與其他人共用您的筆記。
 
 - 您也可以在 Azure 上自己的 Windows 或 Linux 虛擬機器執行 Jupyter (之前稱為 IPython)。 如需詳細資訊，請參閱[在 Azure 上建立 Azure VM、安裝 Jupyter 並執行 Jupyter Notebook](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-linux-jupyter-notebook)。
-

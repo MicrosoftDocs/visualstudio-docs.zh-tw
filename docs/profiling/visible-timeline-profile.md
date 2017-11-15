@@ -1,28 +1,27 @@
 ---
 title: "可見時間表分析 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.activelegend"
-helpviewer_keywords: 
-  - "vs.cv.threads.activelegend 並行視覺化檢視，執行緒檢視作用中圖例"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.activelegend
+helpviewer_keywords: vs.cv.threads.activelegendConcurrency Visualizer, Threads View Active Legend
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 91de09a8fda024c07d5ccff147c5b826896e8638
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 可見時間表分析
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-「執行緒封鎖檢視」的作用中圖例可提供統計資訊和報告的連結。   當您放大、縮小、水平捲動、隱藏通道或顯示通道時，作用中圖例裡的數字會隨之變更，以反映檢視中的目前項目。  若要檢視圖例中某個項目的報告，請按一下該項目。  
+# <a name="visible-timeline-profile"></a>可見時間表分析
+執行緒封鎖檢視的可見時間表分析提供統計資訊和報表連結。 當您放大、縮小、水平捲動、隱藏通道或顯示通道時，作用中圖例中的數字會隨之變更，反映目前在檢視中的項目。 若要檢視有關圖例中項目的報表，按一下該項目。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

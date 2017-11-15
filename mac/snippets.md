@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 1f2ee1d440ad1c7d8cd75ae9194c651f2fc16a41
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="code-snippets"></a>程式碼片段 
 
 程式碼片段通常稱為「程式碼範本」，適用於具效率的程式設計，因為它們允許插入和編輯預先撰寫的程式碼區塊。 使用程式碼片段可能特別方便於迅速新增常見模式，或甚至在您是開發人員但不確定語法時學習新的模式。 有針對 C#、F#、HTML、XML、Python 和 Razor 提供的範本。
@@ -40,4 +38,3 @@ ms.lasthandoff: 08/11/2017
 雖然您可以使用和編輯多個各種語言的現有範本，但也可以新增範本，方法是巡覽至 [Visual Studio] > [喜好設定] > [文字編輯器] > [程式碼片段]：
 
 ![插入新範本](media/source-editor-image12.png)
-

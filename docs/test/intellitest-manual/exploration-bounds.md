@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IntelliTest, Exploration bounds
+helpviewer_keywords: IntelliTest, Exploration bounds
 ms.assetid: 9E0751B3-CE7E-49D4-833E-F1C2709E57C1
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: e3b4ddd14bf150f17966f52862e2a4c392fd55ce
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: bc3574dac776d7cb84dc31a9c6cb4d306409ee5b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="exploration-bounds"></a>探索界限
 
@@ -145,8 +128,8 @@ IntelliTest 在測試探索期間將嘗試的執行數上限。
 **MaxRuns** 和 **MaxRunsWithUniquePaths** 這兩項設定相關，如下所示： 
 
 * IntelliTest 將以不同的測試輸入呼叫參數化測試方法最多 **MaxRuns** 次。
-* 如果已執行的程式碼具決定性，IntelliTest 會在每次採用不同的執行路徑。 
-  不過，在某些情況下，已執行的程式碼可能會以不同的輸入，依循它之前已採用的執行路徑。 
+* 如果已執行的程式碼具決定性，則 IntelliTest 會每次採用不同的執行路徑。 
+  不過，在某些情況下，已執行的程式碼可能會以不同的輸入且依循它之前已採用的執行路徑。 
 * IntelliTest 會計算找到的唯一執行路徑數目；此數目是透過 **MaxRunsWithUniquePaths** 選項進行限制。
 
 <a name="maxrunswithoutnewtests"></a>
@@ -209,5 +192,4 @@ IntelliTest 在探索期間將考慮使用的唯一路徑數目上限。
 
 ## <a name="got-feedback"></a>有任何意見反應嗎？
 
-您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能提議。
-
+您可以在 **[UserVoice](https://visualstudio.uservoice.com/forums/121579-visual-studio-2015/category/157869-test-tools?query=IntelliTest)** 張貼想法和功能要求。

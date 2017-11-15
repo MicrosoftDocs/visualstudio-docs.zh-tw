@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
-caps.latest.revision: 9
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e6ee75cded8cefe4f2e46c4e53edd0f050273a5d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 本逐步解說示範如何在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用著色器設計工具與影像編輯器，建立逼真的 3D 撞球。 結合數種著色器技術與適當的紋理資源，達成 3D 撞球的外觀。  
@@ -178,7 +176,7 @@ ms.lasthandoff: 05/13/2017
   
 4.  將您為紋理立方體面建立的紋理載入到立方體面。 在主功能表上依序選擇 [檔案] 及 [Open Onto This Cubemap Face]\(在這個立方體面開啟)，選取您為此立方體面建立的紋理，然後選擇 [開啟]。  
   
-5.  對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face]\(立方體貼圖面)，然後選取您想要檢視的立方體面。  
+5.  對 **負 X**、**正 Z** 和**負 Z** 立方體面重複步驟 4。 若要這樣做，您必須檢視想要載入的立方體面。 若要檢視不同的立方體貼圖面，請在主功能表上依序選擇 [檢視] 和 [Cube Map Face] (立方體貼圖面)，然後選取您想要檢視的立方體面。  
   
 6.  在**正 Y** 立方體面載入您為紋理立方體頂面建立的紋理。  
   

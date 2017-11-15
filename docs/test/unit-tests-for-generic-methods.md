@@ -4,36 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - generics, and unit tests
 - unit tests, and generics
 ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 14850bf6bf761060cd1e276d1bc38668d04f6b3c
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 2a93a2af3f3d89a4970a949b42bea79b3641d53f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的單元測試
 您可以產生泛型方法的單元測試，就像您為其他方法所進行的測試一樣，如同[如何：建立及執行單元測試](http://msdn.microsoft.com/en-us/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48)中所述。 下列章節提供建立泛型方法之單元測試的相關資訊與範例。  
@@ -215,4 +200,3 @@ namespace ClassLibrary2
 ## <a name="see-also"></a>另請參閱  
  [單元測試的結構](http://msdn.microsoft.com/en-us/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)
-

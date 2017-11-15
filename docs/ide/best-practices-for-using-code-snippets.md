@@ -4,38 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
 ms.assetid: a293ec17-4dd7-4a99-8eeb-99f44a822a8b
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 165fe357bd9849ca2588542614449558eae52740
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 34424ae13a47008eaefa3634f2bf25d31daf285e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
 程式碼片段中的程式碼只會顯示最基本的做法。 對於大部分的應用程式，此程式碼必須經過修改以符合應用程式。  

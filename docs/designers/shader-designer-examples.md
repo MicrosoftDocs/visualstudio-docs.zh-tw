@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b028c5493f58c3a0f6fbb2dac517c1ed9cf0d318
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4cdf1abe2e031950966342edfec3466388db3ae7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="shader-designer-examples"></a>著色器設計工具範例
 文件中本節的文章包含示範如何使用著色器設計工具來建立各種圖形效果的範例。  

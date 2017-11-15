@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 884014b1-5208-45ec-b0da-ad0070d2c24d
-caps.latest.revision: 3
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "3"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 4d970c4b028981760d74ec797b87aeae07853fc4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bf42c5b05ec68546bee938746f3e3b774303e5fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="create-an-android-native-activity-app"></a>建立 Android Native Activity 應用程式
 當您安裝適用於跨平台行動裝置開發的 Visual C++ 選項時，Visual Studio 2015 可用來建立功能完整的 Android Native Activity 應用程式。 Android 原生開發套件 (NDK) 是一個可讓您實作大部分完全使用 C/C++ 程式碼之 Android 應用程式的工具集。 一些 Java JNI 程式碼可做為讓 C/C++ 程式碼與 Android 互動的黏著劑。 Android NDK 引進了使用 Android 應用程式開發介面層級 9 建立 Native Activity 應用程式的功能。 Native Activity 程式碼在建立使用 Unreal 引擎或 OpenGL 的遊戲和圖形密集應用程式方面很受歡迎。 本主題會引導您建立使用 OpenGL 的簡易 Native Activity 應用程式。 其他主題會引導您逐步了解開發人員編輯、建置、偵錯和部署 Native Activity 程式碼的週期。  
@@ -93,7 +75,7 @@ ms.lasthandoff: 05/13/2017
   
      以下是預設應用程式在 Visual Studio Emulator for Android 中的外觀。  
   
-     ![執行您應用程式的模擬器](~/cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
+     ![執行您應用程式的模擬器](../cross-platform/media/cppmdd_emulator_running_app.PNG "CppMDD_Emulator_Running_App")  
   
      Visual Studio 啟動模擬器，這需要幾秒的時間來載入及部署您的程式碼。 在您的應用程式啟動之後，您可以設定中斷點，並使用偵錯工具，以逐步執行程式碼、檢查本機及監看值。  
   

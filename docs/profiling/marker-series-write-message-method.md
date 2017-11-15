@@ -1,30 +1,29 @@
 ---
 title: "marker_series::write_message 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersobj/Concurrency::diagnostic::marker_series::write_message"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_message 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersobj/Concurrency::diagnostic::marker_series::write_message
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_message method
 ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c322fb6f4419aad732db3aa02940edeab6850f10
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::write_message 方法
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-將訊息寫入至並行視覺化檢視追蹤檔案。  
+# <a name="markerserieswritemessage-method"></a>marker_series::write_message 方法
+將訊息寫入並行視覺化檢視追蹤檔。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 void write_message(  
@@ -49,20 +48,20 @@ void write_message(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `_Format`  
- 複合格式字串包含混合零或多個格式項目的文字，其與陣列中的物件相對應。  
+ 複合格式字串，其中包含混合零或多個格式項目的文字，並與引數清單中的物件相對應。  
   
  `_Importance`  
- 重要性等級。  
+ 重要性層級。  
   
  `_Category`  
- Category.Importance 層級。  
+ 分類。重要性層級。  
   
-## 需求  
- **標題:** cvmarkersobj.h  
+## <a name="requirements"></a>需求  
+ **標頭：**cvmarkersobj.h  
   
- **命名空間:** Concurrency::diagnostic  
+ **命名空間：**Concurrency::diagnostic  
   
-## 請參閱  
- [marker\_series 類別](../profiling/marker-series-class.md)
+## <a name="see-also"></a>另請參閱  
+ [marker_series 類別](../profiling/marker-series-class.md)

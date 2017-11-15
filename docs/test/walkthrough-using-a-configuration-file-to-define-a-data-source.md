@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,31 +12,17 @@ helpviewer_keywords:
 - unit tests, walkthrough
 - data sources, defining with configuration files
 ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
-caps.latest.revision: 32
+caps.latest.revision: "32"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 212b8bd6e6c6e695bcc7a4486cbcde59e7309446
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3f7ea8032efa4b35603568afd8b17107c293f2e6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>逐步解說：使用組態檔定義資料來源
-這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，而此檔案定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
+這個逐步解說會示範如何使用 app.config 檔案中所定義的資料來源來進行單元測試。 您會學到如何建立 app.config 檔案，它會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別可以使用的資料來源。 本逐步解說將說明的工作包括下列項目：  
   
 -   建立 app.config 檔案。  
   
@@ -47,7 +32,7 @@ ms.lasthandoff: 04/04/2017
   
 -   定義資料來源。  
   
--   使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別來存取資料來源。  
+-   使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 類別存取資料來源。  
   
 ## <a name="prerequisites"></a>必要條件  
  若要完成這個逐步解說，您將需要：  
@@ -127,7 +112,7 @@ ms.lasthandoff: 04/04/2017
 ## <a name="define-data-sources"></a>定義資料來源  
  資料來源區段會包含四個屬性，測試引擎會利用這些屬性，從資料來源中擷取資料。  
   
--   `name` 定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 所使用的身分識別來指定要使用的資料來源。  
+-   `name` 會定義 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> 所使用的識別，以指定要使用哪一個資料來源。  
   
 -   `connectionString` 可識別在先前＜定義連接字串＞小節中所建立的連接字串。  
   
@@ -288,4 +273,3 @@ ms.lasthandoff: 04/04/2017
  [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [測試應用程式](/devops-test-docs/test/test-apps-early-and-often)   
  [如何：建立資料驅動型單元測試](../test/how-to-create-a-data-driven-unit-test.md)
-

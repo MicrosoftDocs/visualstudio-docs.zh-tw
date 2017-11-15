@@ -1,9 +1,8 @@
 ---
 title: Dotfuscator Community Edition (CE) | Microsoft Docs
-ms.date: 2017-06-22
+ms.date: 2017-10-10
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, free, Visual Studio 2017, 保護, 免費"
 helpviewer_keywords:
@@ -17,28 +16,12 @@ description: "了解如何使用 Visual Studio 2017 中免費的 Dotfuscator Com
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: 15dd6127493b9977732fdb891a086f931e002459
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 59510eeb4bc0b7a8636a14b8c2ca0a597b7c93b7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="dotfuscator-community-edition-ce"></a>Dotfuscator Community Edition (CE)
 
 *PreEmptive Protection - Dotfuscator* 可為 .NET 應用程式提供全方位的保護，而且很容易就能夠整合到您的軟體開發生命週期中。
@@ -84,7 +67,7 @@ Dotfuscator CE 提供現成的基本保護。
 
 ## <a name="getting-started"></a>快速入門
 
-若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動]\(Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
+若要開始從 Visual Studio 使用 Dotfuscator CE，請在 [快速啟動] (Ctrl+Q) 搜尋列中輸入 `dotfuscator`。
 
 * 如果已經安裝 Dotfuscator CE，將會顯示啟動 Dotfuscator CE 使用者介面的 [功能表] 選項。 如需詳細資訊，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
 * 如果您尚未安裝 Dotfuscator CE，將會顯示相關的 [安裝] 選項。 如需詳細資訊，請參閱[安裝頁面][install]。
@@ -120,9 +103,8 @@ Dotfuscator CE 提供現成的基本保護。
 [debug]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html
 [shelflife]: https://www.preemptive.com/dotfuscator/ce/docs/help/checks_shelflife.html
 
-[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_exceptions.html
-[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_sessions.html
-[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/analytics_features.html
+[exceptions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_exceptions.html
+[sessions]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_sessions.html
+[features]: https://www.preemptive.com/dotfuscator/ce/docs/help/instrumentation_features.html
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/index.html
-

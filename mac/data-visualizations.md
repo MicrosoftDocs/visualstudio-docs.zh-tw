@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 5f1eda5ccf6f308c626d525bbe7069a84ce3154b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="data-visualizations"></a>資料視覺效果
 
 Visual Studio for Mac 包含支援偵錯工具的 UI，允許在偵錯時將變數、欄位或屬性值視覺化。 這些資料視覺化檢視會顯示資料的擴充版本，且可讓開發人員檢查已知的結構，例如顯示色彩結構的色彩。
@@ -106,4 +104,3 @@ IEnumerable 會列舉所有值；透過按一下 [顯示值] 按鈕，即可檢�
     *   這會顯示可按式超連結。
 *   **IntPtr**
     *   這會顯示 IntPtr 的十六進位表示法。
-

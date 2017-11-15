@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: a00b4a38c0e1aeaf520ba84278109feb1758f2f0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="editor-themes"></a>編輯器佈景主題
 編輯器佈景主題可以變更為 Visual Studio for Mac 中預設提供的十種色彩配置的任何一種，方法是透過 [Visual Studio] > [喜好設定] > [文字編輯器] > [色彩佈景主題] 功能表選項：
 
@@ -35,4 +33,3 @@ ms.lasthandoff: 08/11/2017
 2. 在您本機電腦瀏覽佈景主題，，並按下 [開啟]。
 3. 這會將佈景主題新增到預先安裝的佈景主題清單底部。 選取它即可進行預覽。 這將會在背景中更新您的編輯器：![色彩佈景主題預覽](media/source-editor-image21.png)
 4. 若要套用它，請按 [確定] 按鈕。 
-

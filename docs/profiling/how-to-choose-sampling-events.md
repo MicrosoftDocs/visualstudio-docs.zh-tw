@@ -1,29 +1,31 @@
 ---
 title: "如何：選擇取樣事件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.sampling"
-helpviewer_keywords: 
-  - "時脈週期範例事件"
-  - "範例事件，選擇"
-  - "程式碼剖析工具，取樣事件"
-  - "分頁錯誤範例事件"
-  - "系統呼叫範例事件"
-  - "效能計數器範例事件"
-  - "效能工具，範例事件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.sampling
+helpviewer_keywords:
+- clock cycles sample event
+- sample events, choosing
+- profiling tools, sample events
+- page faults sample event
+- system calls sample event
+- performance counter sample event
+- performance tools, sample events
 ms.assetid: ce7cb734-80ac-4930-a4ef-e24395e1cc07
-caps.latest.revision: 23
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4903a3c8373c0ce9c6119176649ba793caf27c27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-choose-sampling-events"></a>如何：選擇取樣事件
 根據預設，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具收集效能資料的間隔，是分析程序使用的處理器週期數。 一個間隔的預設週期數是 10,000,000，在 1 GH 電腦上約為 0.01 秒。 您可以變更間隔中的週期數，而且可以變更取樣事件。 下列是可用的取樣事件︰  
@@ -64,8 +66,3 @@ caps.handback.revision: 23
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)   
  [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

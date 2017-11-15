@@ -4,37 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.unittesting.testexplorer.overview
+f1_keywords: vs.unittesting.testexplorer.overview
 ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
-caps.latest.revision: 27
+caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b6b865f51ca12312ad439d059097c328576dfa4e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6ba82358dd7aea8bfd8f3497e5dff87091fbf9d5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。  
@@ -54,7 +36,7 @@ ms.lasthandoff: 05/13/2017
   
  [外部資源](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>單元測試架構和測試專案  
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案  
  Visual Studio 2015 包含 Managed 程式碼和機器碼皆適用的 Microsoft 單元測試架構。 不過，測試總管也可以執行任何已實作測試總管配接器的單元測試架構。 如需安裝協力廠商單元測試架構的詳細資訊，請參閱[安裝協力廠商單元測試架構](../test/install-third-party-unit-test-frameworks.md)。  
   
  [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以使用不同的單元測試架構。 當進行測試的程式碼是為 .NET Framework 撰寫時，測試專案可以用任何同樣以 .NET Framework 為目標的語言撰寫，而不管目標程式碼的語言為何。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。  
@@ -129,7 +111,7 @@ ms.lasthandoff: 05/13/2017
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
 ###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> 檢視測試方法的原始程式碼  
- 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [開啟測試]\ (鍵盤：按 F12)。  
+ 若要在 Visual Studio 編輯器顯示測試方法的原始程式碼，請選取測試，然後選擇內容功能表上的 [開啟測試]  (鍵盤：按 F12)。  
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -150,7 +132,7 @@ ms.lasthandoff: 05/13/2017
 |**持續期間**|依據執行時間群組測試：[快] 、[中] 和 [慢] 。|  
 |**結果**|依據執行結果群組測試：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|  
 |**特性**|依據您定義的分類/值組群組測試。 指定特性分類和值的語法是由單元測試架構所定義。|  
-|**Project**|依據名稱專案群組測試。|  
+|**專案**|依據名稱專案群組測試。|  
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
@@ -159,7 +141,7 @@ ms.lasthandoff: 05/13/2017
   
  **Microsoft Managed 程式碼單元測試架構中的特性**  
   
- Microsoft Managed 程式碼單元測試架構中，您可在 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：  
+ Microsoft Managed 程式碼單元測試架構中，您可在  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute> 屬性中定義特性名稱/值組。 測試架構也包含下列預先定義的特性：  
   
 |特性|描述|  
 |-----------|-----------------|  
@@ -223,11 +205,11 @@ TEST_METHOD(Method1)
 |限定詞|描述|  
 |---------------|-----------------|  
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|  
-|**Project**|在測試專案名稱中搜尋相符項目。|  
+|**專案**|在測試專案名稱中搜尋相符項目。|  
 |**錯誤訊息**|在失敗的判斷提示所傳回之使用者定義錯誤訊息中搜尋相符項目。|  
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|  
 |**完整名稱**|在測試命名空間、類別和方法的完整檔案名稱中搜尋相符項目。|  
-|**Output**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|  
+|**輸出**|搜尋寫入標準輸出 (stdout) 或標準錯誤 (stderr) 的使用者定義錯誤訊息。 指定輸出訊息的語法是由單元測試架構所定義。|  
 |**結果**|在測試總管分類名稱中搜尋相符項目：[失敗的測試] 、[略過的測試] 、[成功的測試] 。|  
   
  若要排除篩部分選條件的結果，請使用下列語法：  
@@ -312,4 +294,3 @@ FullName:"MyClass" - FullName:"PerfTest"
 ## <a name="see-also"></a>另請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [以 64 位元處理序的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)
-

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- C++
+dev_langs: C++
 ms.assetid: 0bb872d6-981b-4c96-9143-fcec5336bf0d
-caps.latest.revision: 9
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "9"
+author: corob-msft
+ms.author: corob
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 591fc488e2a2801fd6acb6e065038d11aaa13b67
-
+ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 您可以建置 iOS、Android 和 Windows 裝置的原生 C++ 應用程式，以及使用跨平台行動裝置開發的 Visual C++，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。 這是為共用程式庫和原生應用程式的跨平台開發工具安裝了所需 SDK 和工具的 Visual Studio 2015 提供的選項。 安裝好後，您就可以使用 Visual C++ 建立程式碼，除了 Windows、Windows Phone 和 Xbox 之外，還可在 iOS 和 Android 裝置及平台上執行。  
@@ -49,10 +33,10 @@ ms.openlocfilehash: 591fc488e2a2801fd6acb6e065038d11aaa13b67
 3.  **一致的偵錯體驗。** 使用 Visual Studio 中的世界級偵錯工具在所有平台上監看和逐步執行 C++ 程式碼，包括 Android 裝置和模擬器、iOS 模擬器和裝置，以及 Windows 或 Windows Phone 裝置和模擬器。  
   
 ## <a name="get-the-tools"></a>取得工具  
- 適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio 2015 的可安裝選項。 如需必要條件和安裝指示，請參閱[安裝適用於跨平台行動裝置開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置 iOS 程式碼，您也需要 Mac 電腦和 Apple iOS 開發人員帳戶。 如需詳細資訊，請參閱[安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。  
+ 適用於跨平台行動裝置開發的 Visual C++ 是隨附於 Visual Studio 2015 的可安裝選項。 如需必要條件和安裝指示，請參閱 [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)。 若要建置 iOS 程式碼，您也需要 Mac 電腦和 Apple iOS 開發人員帳戶。 如需詳細資訊，請參閱 [Install And Configure Tools to Build using iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)。  
   
 ## <a name="come-up-to-speed"></a>加速前進  
- 如果您原來使用的是 Android 或 iOS 程式開發，我們有一些很棒的材料協助您開始使用。 Visual Studio 是出色且強大的開發環境。 若要了解如何使用它，請嘗試 [Android 開發人員快速入門](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) 或 [iOS 開發人員快速入門](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx)。 這些主題會為您介紹 Visual Studio 和開發 Windows 和 Windows Phone 跨平台應用程式所需要的概念。 若要開始撰寫第一個 iOS 和 Android 跨平台應用程式，請參閱[在 Android 和 iOS 上建置 OpenGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
+ 如果您原來使用的是 Android 或 iOS 程式開發，我們有一些很棒的材料協助您開始使用。 Visual Studio 是出色且強大的開發環境。 若要了解如何使用它，請嘗試 [Android 開發人員快速入門](https://msdn.microsoft.com/en-us/library/windows/apps/dn275875.aspx) 或 [iOS 開發人員快速入門](https://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj657966.aspx)。 這些主題會為您介紹 Visual Studio 和開發 Windows 和 Windows Phone 跨平台應用程式所需要的概念。 若要開始撰寫第一個 iOS 和 Android 跨平台應用程式，請參閱 [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)。  
   
  適用於跨平台行動裝置開發的 Visual C++ 包含數個範本，可幫助您開始建立應用程式：  
   
@@ -109,11 +93,11 @@ ms.openlocfilehash: 591fc488e2a2801fd6acb6e065038d11aaa13b67
      為自己的 Android Makefile 專案建立專案包裝函式。  
   
 ## <a name="try-out-sample-code"></a>試驗範例程式碼  
- 下載範例，示範如何建立可用在 Windows、Android 和 iOS 應用程式中的共用程式碼程式庫，以及如何建立完整的 Android Native Activity 應用程式。 若要開始使用，請參閱[跨平台行動開發範例](../cross-platform/cross-platform-mobile-development-examples.md)。  
+ 下載範例，示範如何建立可用在 Windows、Android 和 iOS 應用程式中的共用程式碼程式庫，以及如何建立完整的 Android Native Activity 應用程式。 若要開始使用，請參閱 [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)。  
   
 ## <a name="in-this-section"></a>本節內容  
   
-1.  [安裝適用於跨平台行動裝置開發的 Visual C++](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
+1.  [Install Visual C++ for Cross-Platform Mobile Development](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md)  
   
 2.  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)  
   
@@ -121,9 +105,4 @@ ms.openlocfilehash: 591fc488e2a2801fd6acb6e065038d11aaa13b67
   
 4.  [在 Android 和 iOS 上建置 OpenGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
-5.  [跨平台行動開發範例](../cross-platform/cross-platform-mobile-development-examples.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
+5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

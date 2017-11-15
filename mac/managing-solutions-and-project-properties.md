@@ -1,20 +1,19 @@
 ---
-title: "管理專案和方案屬性"
+title: "管理專案和方案屬性 | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
+ms.openlocfilehash: 8871ab002a94a9c0bbc0063a25b4dea9cb271142
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: fefb6c5e67b21907150611b3639cc16c05812e1a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-project-and-solution-properties"></a>管理專案和方案屬性
 
-## <a name="project-options"></a>專案選項 
+## <a name="project-options"></a>專案選項
 
 專案選項專屬於每個專案，並影響如何撰寫、建置和執行專案。 這對照於 Visual Studio for Mac 喜好設定 (其設定使用者特有選項) 以及方案選項 (其設定整個方案的選項)。 專案選項儲存在專案 (.csproj) 檔案中，讓其他開發人員可以正確地建置和執行專案。 這可讓多位開發人員處理相同的文件，而不影響檔案格式。
 
@@ -45,4 +44,3 @@ Xamarin.iOS 將包含套件組合簽署相關選項 (例如要使用的必要佈
 方案選項就像專案選項，但涵蓋整個方案的範圍。 它們提供方法來設定作者資訊、組建設定、程式碼格式樣式和版本控制，並且允許在方案中指派啟始專案的方法。  從 [專案] > [解決方案選項] 功能表項目、從 Solution Pad [解決方案] 上的 [選項] 操作功能表項目，或按兩下 Solution Pad 中的 [解決方案]，即可存取 [解決方案選項] 對話方塊：
 
  ![方案選項](media/projects-and-solutions-image7.png)
-

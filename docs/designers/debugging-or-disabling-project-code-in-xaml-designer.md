@@ -7,31 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 138f318b84044a1ed8a92f9b2ee7b47b2211cdb7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 XAML 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼，解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止這些例外狀況發生。  

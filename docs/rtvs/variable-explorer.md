@@ -1,30 +1,27 @@
 ---
 title: "Visual Studio R 工具中的變數總管 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/30/2017
+ms.date: 06/30/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 6c669434-40d8-4970-92cc-502a98c8b5ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1d86bca24d9e8d4d1bde8d62cd0be25c485b9253
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 92396808161886cf3b15f7e8e0ab23a0a35e26b9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="variable-explorer"></a>變數總管
 
-使用 [R 工具] > [Windows] > [變數總管]\(如果曾使用 [R 工具] > [資料科學設定] 則為 Ctrl+8) 開啟的 [變數總管] 視窗，會在目前的 R 工作階段中顯示指定範圍內的所有變數。 例如，如果您要開啟變數總管，並在[互動視窗](interactive-repl.md)中輸入下列行：
+使用 [R 工具] > [Windows] > [變數總管] (如果曾使用 [R 工具] > [資料科學設定] 則為 Ctrl+8) 開啟的 [變數總管] 視窗，會在目前的 R 工作階段中顯示指定範圍內的所有變數。 例如，如果您要開啟變數總管，並在[互動視窗](interactive-repl.md)中輸入下列行：
 
 ```R
 x <- 42
@@ -82,4 +79,3 @@ n <- c(1,2,3,5,8,13)
 一旦找到要匯入的 CSV 檔案，Visual Studio 就會顯示 [匯入資料集] 對話方塊，您可在此選擇如何控制該資料檔案的剖析方式 (也就是欄位分隔符號為何以及如何處理引號)。 您也可以預覽匯入的資料框架和原始資料檔案：
 
 ![匯入資料集對話方塊](media/variable-explorer-import-dataset-dialog.png)
-

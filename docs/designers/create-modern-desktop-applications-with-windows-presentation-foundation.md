@@ -1,24 +1,22 @@
 ---
 title: "使用 Windows Presentation Foundation 建立新式桌面應用程式 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/17/2017
+ms.date: 07/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8d6c7295-ff64-4681-b01c-5056e8504569
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 0b3edbec07777c8843e10ac64f7611de0ee3137e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: c454fae0dd607c0fddfe84add6d51d683dea1b46
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="create-modern-desktop-applications-with-windows-presentation-foundation"></a>使用 Windows Presentation Foundation 建立新式桌面應用程式
 

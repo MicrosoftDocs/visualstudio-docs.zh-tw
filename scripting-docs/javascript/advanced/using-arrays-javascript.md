@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - arrays [JavaScript]
 - arrays [JavaScript], objects
 ms.assetid: 785c5acd-b8b3-4152-af9a-dd42ecdd75ba
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 4c5218a8353a796128d8b672ecc781665c6bde20
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-arrays-javascript"></a>使用陣列 (JavaScript)
 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 中的陣列是「鬆散的」。 也就是說，如果您有編號 0、1 和 2 三個元素的陣列，您可以建立元素 50，不用擔心元素 3 到 49。 如果陣列中有自動長度變數 (請參閱[內建物件](../../javascript/intrinsic-objects-javascript.md)取得自動監視陣列長度的說明)，長度變數要設為 51，不是 4。 您可以建立元素編號無間距的陣列，但沒必要這麼做。  

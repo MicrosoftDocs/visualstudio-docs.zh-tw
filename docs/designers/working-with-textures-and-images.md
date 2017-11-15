@@ -4,42 +4,25 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2cb4836ae868d56147a82fcefa0c5546bfcf8cad
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="working-with-textures-and-images"></a>使用紋理和影像
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的影像編輯器來建立和修改紋理和影像。 影像編輯器支援豐富的紋理和影像格式，如同在 DirectX 應用程式開發中所使用的一樣。  
   
 > [!NOTE]
->  影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這種影像，請使用[圖示影像編輯器](/cpp/windows/image-editor-for-icons)。  
+>  影像編輯器不支援圖示或游標等低色影像。 若要建立或修改這種影像，請使用 [Image Editor for Icons](/cpp/windows/image-editor-for-icons)。  
   
 ## <a name="textures-and-images"></a>紋理和影像  
  紋理和影像在基本層級只是資料的資料表，可用來在圖形應用程式中提供視覺詳細資料。 紋理或影像所提供的詳細資料類型取決於其使用方式，但色彩範例、alpha (投影片) 值、曲面法線和高度值都是常見範例。 紋理和影像的主要差異在於紋理必須要與圖形表示法搭配使用 (通常為 3-D 模型) 以表達完整的物件或場景，但影像通常是物件或場景的獨立表示法。  

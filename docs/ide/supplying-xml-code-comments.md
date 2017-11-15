@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vc.tools.viewing.comments
+f1_keywords: vc.tools.viewing.comments
 helpviewer_keywords:
 - comments
 - XML documentation comments
 - code comments
 ms.assetid: f36b46af-443a-4fa6-a2c3-0c4962bbd4aa
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 9e45ed816d117a21ca680e101e0beaabb41da6d3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 程式碼註解
 您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。  

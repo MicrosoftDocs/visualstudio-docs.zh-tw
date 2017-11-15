@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -599,31 +598,16 @@ helpviewer_keywords:
 - MSB3102
 - MSB3284
 ms.assetid: 29dd85ee-1530-43c1-b085-bb2330ac5a48
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c559290c8e88c8b4e37feabc7014188fad15434d
-ms.openlocfilehash: b4d933c8c0f84ca72913b507dea9c1d11f34e6ee
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
+ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
 如果您嘗試解決問題，但在文件中找不到所需的資訊，則可以參閱知識庫文章、開發人員社群或產品支援等其他資源。  
@@ -641,4 +625,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="see-also"></a>另請參閱  
  [進行 .NET Framework 目標錯誤的疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)
-

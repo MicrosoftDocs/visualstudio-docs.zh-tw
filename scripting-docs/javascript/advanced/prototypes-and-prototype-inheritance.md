@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - prototype [JavaScript]
 - prototype inheritance [JavaScript]
 ms.assetid: 1e1d0631-2a9f-4011-b9fe-fa338e1ef34c
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 3fb5627d2cc92c36e9dcf34f4b94796b6620321f
 ms.openlocfilehash: ade60bcbbfad166bae18b650daa6906f9983d4cd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="prototypes-and-prototype-inheritance"></a>原型和原型繼承
 在 JavaScript 中，`prototype` 是函式的屬性，也是由建構函式所建立之物件的屬性。 函式的原型就是物件。 當函式本身就是建構函式時，原型就會派上用場。  
@@ -114,4 +112,3 @@ if (console && console.log) {
     console.log(player.ally === "Tom");             // Returns true  
 }  
 ```
-

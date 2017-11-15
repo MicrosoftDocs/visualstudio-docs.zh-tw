@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
-caps.latest.revision: 23
+caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28ce78165492b6f74cdd85ba79eae26e4d68d32c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 自動程式化 UI 測試可以使用 Internet Explorer 錄製測試，以自動測試 Web 應用程式。 之後，您可以自訂測試再使用 Internet Explorer 或其他瀏覽器類型的 Web 應用程式進行播放。  
@@ -117,17 +101,17 @@ ms.lasthandoff: 05/13/2017
  *我還應該知道什麼？*  
  **備註**  
   
--   ![必要條件](~/test/media/prereq.png "Prereq") 不支援 Apple Safari 網頁瀏覽器。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 不支援 Apple Safari 網頁瀏覽器。  
   
--   ![必要條件](~/test/media/prereq.png "Prereq") 自動程式碼 UI 測試必須包含啟動網頁瀏覽器的動作。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 自動程式碼 UI 測試必須包含啟動網頁瀏覽器的動作。  
   
      如果您已開啟一個 Web 瀏覽器，並且想要在其中執行步驟，除非使用 Internet Explorer，否則會播放失敗。 因此，最佳作法是在自動程式化 UI 測試中包含啟動 Web 瀏覽器的動作。  
   
--   ![必要條件](~/test/media/prereq.png "Prereq") 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。  
+-   ![必要條件](../test/media/prereq.png "Prereq") 不支援自動化瀏覽器架構專用的 UI 動作，例如最大化、最小化和還原。  
   
  **祕訣**  
   
--   ![祕訣](~/test/media/tip.png "祕訣") 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：  
+-   ![祕訣](../test/media/tip.png "祕訣") 您可以設定輸出，在自動程式碼 UI 記錄中包含螢幕擷取畫面。 若要這麼做，您需要完成 QTAgent32.exe.config 檔案的某些組態設定。 根據預設，這個檔案會安裝在下列位置：  
   
      **C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE**  
   
@@ -160,9 +144,9 @@ ms.lasthandoff: 05/13/2017
  [使用 Visual Studio 2012 測試持續傳遞 - 第 5 章：自動化系統測試](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
 ### <a name="faq"></a>常見問題集  
- [自動程式化 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
+ [自動程式碼 UI 測試常見問題集 - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
- [自動程式化 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
+ [自動程式碼 UI 測試常見問題集 - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
   
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
@@ -171,4 +155,3 @@ ms.lasthandoff: 05/13/2017
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)
-

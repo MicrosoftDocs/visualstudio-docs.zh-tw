@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- coded UI tests, best practices
+helpviewer_keywords: coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
-caps.latest.revision: 39
+caps.latest.revision: "39"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 444f6bf46c3eac65a2771655616fd67d8ed83b32
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 76727d06b3f7c41436ae2939518986baba4b8e5c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>自動程式化 UI 測試的最佳作法
 本主題說明在開發自動程式化 UI 測試時所應遵循的最佳作法。  
@@ -60,7 +44,7 @@ ms.lasthandoff: 04/04/2017
   
 -   如果使用者介面 (UI) 有所變更，請重新錄製測試方法或判斷提示方法，或重新錄製現有測試方法受影響的區段。  
   
--   建立受測應用程式中每個模組的個別 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。  
+-   為您受測試之應用程式中的每個模組建立個別的 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 檔案。 如需詳細資訊，請參閱[測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)。  
   
 -   當您建立 UI 控制項時，應在受測試的應用程式中使用有意義的名稱。 這可讓自動產生的控制項名稱有更多的意義和可用性。  
   
@@ -70,7 +54,7 @@ ms.lasthandoff: 04/04/2017
   
  自動程式碼 UI 測試會隨著使用者介面中的許多變更自動調整。 例如，如果 UI 元素已變更位置或色彩，大多數情況下，自動程式化 UI 測試仍可找到正確的元素。  
   
- 在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含可用來識別控制項之屬性名稱和屬性值的名稱/值組，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式化 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
+ 在測試執行期間，測試架構會使用一組套用至每個控制項類別的搜尋屬性 (在 `UIMap.Designer.cs` 檔案中的自動程式碼 UI 測試產生器所建立的定義中) 來定位 UI 控制項。 搜尋屬性包含屬性名稱和屬性值的名稱/值組，可用來識別控制項，例如控制項的 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.FriendlyName%2A>、<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.Name%2A> 和 <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.ControlType%2A> 屬性。 如果搜尋屬性未變更，自動程式碼 UI 測試將會在 UI 中成功找出控制項。 如果搜尋屬性已變更，自動程式碼 UI 測試會以套用啟發學習法的智慧比對演算法來尋找 UI 中的控制項和視窗。 當 UI 已變更時，您可以修改先前已識別之元素的搜尋屬性，以確定已找到這些元素。  
   
 ## <a name="what-to-do-if-your-user-interface-changes"></a>使用者介面已變更時的因應作法  
  使用者介面在開發期間會經常變更。 下列方法可以減少這些變更的影響：  
@@ -88,7 +72,7 @@ ms.lasthandoff: 04/04/2017
  如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)。  
   
 ## <a name="what-to-do-if-a-background-process-needs-to-complete-before-the-test-can-continue"></a>必須先完成背景處理序才能繼續執行測試時的因應作法  
- 您可能必須等到處理序完成，才能繼續進行下一個 UI 動作。 若要這麼做，您可以使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> 等到測試繼續，如下列範例所示。  
+ 您可能必須等到處理序完成，才能繼續進行下一個 UI 動作。 若要這樣做，您可以使用 <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.WaitForReadyLevel%2A> 以在測試繼續前等待，如下列範例所示。  
   
 ```  
 // Set the playback to wait for all threads to finish  
@@ -108,4 +92,3 @@ Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.UIThreadOnly;
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [測試含有多個 UI 對應的大型應用程式](../test/testing-a-large-application-with-multiple-ui-maps.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

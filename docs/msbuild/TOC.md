@@ -1,390 +1,195 @@
 # [MsBuild](msbuild.md)
-
 ## [MSBuild 15.0 的新功能](what-s-new-in-msbuild-15-0.md)
-
 ## [MSBuild 概念](msbuild-concepts.md)
-
 ### [MSBuild 屬性](msbuild-properties.md)
-
 #### [如何：在組建中使用環境變數](how-to-use-environment-variables-in-a-build.md)
-
 #### [如何：參考專案檔的名稱或位置](how-to-reference-the-name-or-location-of-the-project-file.md)
-
 #### [如何：使用不同選項來建置相同的原始程式檔](how-to-build-the-same-source-files-with-different-options.md)
-
 #### [屬性函式](property-functions.md)
-
 ### [MSBuild 項目](msbuild-items.md)
-
 #### [如何：選取要建置的檔案](how-to-select-the-files-to-build.md)
-
 #### [如何：從組建中排除檔案](how-to-exclude-files-from-the-build.md)
-
 #### [如何：顯示以逗號分隔的項目清單](how-to-display-an-item-list-separated-with-commas.md)
-
 #### [項目定義](item-definitions.md)
-
 #### [項目函式](item-functions.md)
-
 #### [檔案追蹤](file-tracking.md)
-
 ##### [EndTrackingContext](endtrackingcontext.md)
-
 ##### [ResumeTracking](resumetracking.md)
-
 ##### [SetThreadCount](setthreadcount.md)
-
 ##### [StartTrackingContext](starttrackingcontext.md)
-
 ##### [StartTrackingContextWithRoot](starttrackingcontextwithroot.md)
-
 ##### [StopTrackingAndCleanup](stoptrackingandcleanup.md)
-
 ##### [SuspendTracking](suspendtracking.md)
-
 ##### [WriteAllTLogs](writealltlogs.md)
-
 ##### [WriteContextTLogs](writecontexttlogs.md)
-
 ### [MSBuild 目標](msbuild-targets.md)
-
 #### [目標建置順序](target-build-order.md)
-
 #### [累加建置](incremental-builds.md)
-
 #### [如何：指定要優先建置的目標](how-to-specify-which-target-to-build-first.md)
-
 #### [如何：使用多個專案檔內相同的目標](how-to-use-the-same-target-in-multiple-project-files.md)
-
 #### [如何：使用 MSBuild.exe 在方案中建置特定目標](how-to-build-specific-targets-in-solutions-by-using-msbuild-exe.md)
-
 #### [如何：累加建置](how-to-build-incrementally.md)
-
 #### [如何：清除組建](how-to-clean-a-build.md)
-
 ### [MSBuild 工作](msbuild-tasks.md)
-
 #### [工作撰寫](task-writing.md)
-
 #### [如何：忽略工作中的錯誤](how-to-ignore-errors-in-tasks.md)
-
 #### [如何：建置包含資源的專案](how-to-build-a-project-that-has-resources.md)
-
 #### [MSBuild 內嵌工作](msbuild-inline-tasks.md)
-
 ##### [逐步解說：建立內嵌工作](walkthrough-creating-an-inline-task.md)
-
 ### [比較屬性和項目](comparing-properties-and-items.md)
-
 ### [MSBuild 特殊字元](msbuild-special-characters.md)
-
 #### [如何：在 MSBuild 中逸出特殊字元](how-to-escape-special-characters-in-msbuild.md)
-
 #### [如何：在專案檔中使用保留的 XML 字元](how-to-use-reserved-xml-characters-in-project-files.md)
-
 ## [MSBuild 進階概念](msbuild-advanced-concepts.md)
-
 ### [MSBuild 批次處理](msbuild-batching.md)
-
 #### [工作批次處理中的項目中繼資料](item-metadata-in-task-batching.md)
-
 #### [目標批次處理中的項目中繼資料](item-metadata-in-target-batching.md)
-
 ### [MSBuild 轉換](msbuild-transforms.md)
-
 ### [Visual Studio 整合 (MSBuild)](visual-studio-integration-msbuild.md)
-
 #### [如何：擴充 Visual Studio 建置流程](how-to-extend-the-visual-studio-build-process.md)
-
 #### [從 IDE 中啟動組建](starting-a-build-from-within-the-ide.md)
-
 #### [登錄 .NET Framework 的擴充功能](registering-extensions-of-the-dotnet-framework.md)
-
 ### [使用 MSBuild 同時建置多個專案](building-multiple-projects-in-parallel-with-msbuild.md)
-
 #### [使用多個處理器來建置專案](using-multiple-processors-to-build-projects.md)
-
 #### [在建置大型專案時有效使用記憶體](using-memory-efficiently-when-you-build-large-projects.md)
-
 ### [MSBuild 多目標概觀](msbuild-multitargeting-overview.md)
-
 #### [MSBuild 工具組 (ToolsVersion)](msbuild-toolset-toolsversion.md)
-
 ##### [標準和自訂工具組的組態](standard-and-custom-toolset-configurations.md)
-
 ##### [覆寫 ToolsVersion 設定](overriding-toolsversion-settings.md)
-
 #### [MSBuild 目標 Framework 和目標平台](msbuild-target-framework-and-target-platform.md)
-
 #### [在設計階段時解析組件](resolving-assemblies-at-design-time.md)
-
 #### [設定目標和工作](configuring-targets-and-tasks.md)
-
 ##### [如何：設定目標和工作](how-to-configure-targets-and-tasks.md)
-
 #### [進行 .NET Framework 目標錯誤的疑難排解](troubleshooting-dotnet-framework-targeting-errors.md)
-
 ### [自訂組建](customize-your-build.md)
-
 ### [MSBuild 最佳做法](msbuild-best-practices.md)
-
 ## [MSBuild 中的記錄](logging-in-msbuild.md)
-
 ### [使用 MSBuild 取得組建記錄檔](obtaining-build-logs-with-msbuild.md)
-
 ### [組建記錄器](build-loggers.md)
-
 ### [在多處理器環境中記錄](logging-in-a-multi-processor-environment.md)
-
 ### [撰寫能夠辨識多處理器的記錄器](writing-multi-processor-aware-loggers.md)
-
 ### [建立轉送記錄器](creating-forwarding-loggers.md)
-
 ## [逐步解說：使用 MSBuild](walkthrough-using-msbuild.md)
-
 ## [逐步解說：從頭開始建立 MSBuild 專案檔案](walkthrough-creating-an-msbuild-project-file-from-scratch.md)
-
 ## [MSBuild 參考](msbuild-reference.md)
-
 ### [MSBuild 專案檔案結構描述參考](msbuild-project-file-schema-reference.md)
-
 #### [Choose 項目 (MSBuild)](choose-element-msbuild.md)
-
 #### [Import 項目 (MSBuild)](import-element-msbuild.md)
-
 #### [ImportGroup 項目](importgroup-element.md)
-
 #### [Item 項目 (MSBuild)](item-element-msbuild.md)
-
 #### [ItemDefinitionGroup 項目 (MSBuild)](itemdefinitiongroup-element-msbuild.md)
-
 #### [ItemGroup 項目 (MSBuild)](itemgroup-element-msbuild.md)
-
 #### [ItemMetadata 項目 (MSBuild)](itemmetadata-element-msbuild.md)
-
 #### [OnError 項目 (MSBuild)](onerror-element-msbuild.md)
-
 #### [Otherwise 項目 (MSBuild)](otherwise-element-msbuild.md)
-
 #### [Output 項目 (MSBuild)](output-element-msbuild.md)
-
 #### [Parameter 項目](parameter-element.md)
-
 #### [ParameterGroup 項目](parametergroup-element.md)
-
 #### [Project 項目 (MSBuild)](project-element-msbuild.md)
-
 #### [ProjectExtensions 項目 (MSBuild)](projectextensions-element-msbuild.md)
-
 #### [Property 項目 (MSBuild)](property-element-msbuild.md)
-
 #### [PropertyGroup 項目 (MSBuild)](propertygroup-element-msbuild.md)
-
 #### [Target 項目 (MSBuild)](target-element-msbuild.md)
-
 #### [Task 項目 (MSBuild)](task-element-msbuild.md)
-
 #### [TaskBody 項目 (MSBuild)](taskbody-element-msbuild.md)
-
 #### [UsingTask 項目 (MSBuild)](usingtask-element-msbuild.md)
-
 #### [When 項目 (MSBuild)](when-element-msbuild.md)
-
 ### [MSBuild 工作參考](msbuild-task-reference.md)
-
 #### [Visual C++ 特有的 MSBuild 工作](msbuild-tasks-specific-to-visual-cpp.md)
-
 ##### [BscMake 工作](bscmake-task.md)
-
 ##### [CL 工作](cl-task.md)
-
 ##### [CPPClean 工作](cppclean-task.md)
-
 ##### [LIB 工作](lib-task.md)
-
 ##### [Link 工作](link-task.md)
-
 ##### [MIDL 工作](midl-task.md)
-
 ##### [MT 工作](mt-task.md)
-
 ##### [RC 工作](rc-task.md)
-
 ##### [SetEnv 工作](setenv-task.md)
-
 ##### [VCMessage 工作](vcmessage-task.md)
-
 ##### [XDCMake 工作](xdcmake-task.md)
-
 ##### [XSD 工作](xsd-task.md)
-
 #### [工作基底類別](task-base-class.md)
-
 #### [TaskExtension 基底類別](taskextension-base-class.md)
-
 #### [ToolTaskExtension 基底類別](tooltaskextension-base-class.md)
-
 #### [AL (組件連結器) 工作](al-assembly-linker-task.md)
-
 #### [AspNetCompiler 工作](aspnetcompiler-task.md)
-
 #### [AssignCulture 工作](assignculture-task.md)
-
 #### [AssignProjectConfiguration 工作](assignprojectconfiguration-task.md)
-
 #### [AssignTargetPath 工作](assigntargetpath-task.md)
-
 #### [CallTarget 工作](calltarget-task.md)
-
 #### [CombinePath 工作](combinepath-task.md)
-
 #### [ConvertToAbsolutePath 工作](converttoabsolutepath-task.md)
-
 #### [Copy 工作](copy-task.md)
-
 #### [CreateCSharpManifestResourceName 工作](createcsharpmanifestresourcename-task.md)
-
 #### [CreateItem 工作](createitem-task.md)
-
 #### [CreateProperty 工作](createproperty-task.md)
-
 #### [CreateVisualBasicManifestResourceName 工作](createvisualbasicmanifestresourcename-task.md)
-
 #### [Csc 工作](csc-task.md)
-
 #### [Delete 工作](delete-task.md)
-
 #### [Error 工作](error-task.md)
-
 #### [Exec 工作](exec-task.md)
-
 #### [FindAppConfigFile 工作](findappconfigfile-task.md)
-
 #### [FindInList 工作](findinlist-task.md)
-
 #### [FindUnderPath 工作](findunderpath-task.md)
-
 #### [FormatUrl 工作](formaturl-task.md)
-
 #### [FormatVersion 工作](formatversion-task.md)
-
 #### [GenerateApplicationManifest 工作](generateapplicationmanifest-task.md)
-
 #### [GenerateBootstrapper 工作](generatebootstrapper-task.md)
-
 #### [GenerateDeploymentManifest 工作](generatedeploymentmanifest-task.md)
-
 #### [GenerateResource 工作](generateresource-task.md)
-
 #### [GenerateTrustInfo 工作](generatetrustinfo-task.md)
-
 #### [GetAssemblyIdentity 工作](getassemblyidentity-task.md)
-
 #### [GetFrameworkPath 工作](getframeworkpath-task.md)
-
 #### [GetFrameworkSdkPath 工作](getframeworksdkpath-task.md)
-
 #### [GetReferenceAssemblyPaths 工作](getreferenceassemblypaths-task.md)
-
 #### [LC 工作](lc-task.md)
-
 #### [MakeDir 工作](makedir-task.md)
-
 #### [Message 工作](message-task.md)
-
 #### [Move 工作](move-task.md)
-
 #### [MSBuild 工作](msbuild-task.md)
-
 #### [ReadLinesFromFile 工作](readlinesfromfile-task.md)
-
 #### [RegisterAssembly 工作](registerassembly-task.md)
-
 #### [RemoveDir 工作](removedir-task.md)
-
 #### [RemoveDuplicates 工作](removeduplicates-task.md)
-
 #### [RequiresFramework35SP1Assembly 工作](requiresframework35sp1assembly-task.md)
-
 #### [ResolveAssemblyReference 工作](resolveassemblyreference-task.md)
-
 #### [ResolveComReference 工作](resolvecomreference-task.md)
-
 #### [ResolveKeySource 工作](resolvekeysource-task.md)
-
 #### [ResolveManifestFiles 工作](resolvemanifestfiles-task.md)
-
 #### [ResolveNativeReference 工作](resolvenativereference-task.md)
-
 #### [ResolveNonMSBuildProjectOutput 工作](resolvenonmsbuildprojectoutput-task.md)
-
 #### [SGen 工作](sgen-task.md)
-
 #### [SignFile 工作](signfile-task.md)
-
 #### [Touch 工作](touch-task.md)
-
 #### [UnregisterAssembly 工作](unregisterassembly-task.md)
-
 #### [UpdateManifest 工作](updatemanifest-task.md)
-
 #### [Vbc 工作](vbc-task.md)
-
 #### [Warning 工作](warning-task.md)
-
 #### [WriteCodeFragment 工作](writecodefragment-task.md)
-
 #### [WriteLinesToFile 工作](writelinestofile-task.md)
-
 #### [XmlPeek 工作](xmlpeek-task.md)
-
 #### [XmlPoke 工作](xmlpoke-task.md)
-
 #### [XslTransformation 工作](xsltransformation-task.md)
-
 ### [MSBuild 條件](msbuild-conditions.md)
-
 ### [MSBuild 條件式建構](msbuild-conditional-constructs.md)
-
 ### [MSBuild 保留和已知屬性](msbuild-reserved-and-well-known-properties.md)
-
 ### [通用的 MSBuild 專案屬性](common-msbuild-project-properties.md)
-
 ### [通用的 MSBuild 專案項目](common-msbuild-project-items.md)
-
 ### [MSBuild 命令列參考](msbuild-command-line-reference.md)
-
 ### [MSBuild .Targets 檔案](msbuild-dot-targets-files.md)
-
 ### [MSBuild 已知的項目中繼資料](msbuild-well-known-item-metadata.md)
-
 ### [MSBuild 回應檔](msbuild-response-files.md)
-
 ### [WPF MSBuild 參考](wpf-msbuild-reference.md)
-
 #### [WPF .Targets 檔案](wpf-dot-targets-files.md)
-
 #### [WPF MSBuild 工作參考](wpf-msbuild-task-reference.md)
-
 ##### [FileClassifier 工作](fileclassifier-task.md)
-
 ##### [GenerateTemporaryTargetAssembly 工作](generatetemporarytargetassembly-task.md)
-
 ##### [GetWinFXPath 工作](getwinfxpath-task.md)
-
 ##### [MarkupCompilePass1 工作](markupcompilepass1-task.md)
-
 ##### [MarkupCompilePass2 工作](markupcompilepass2-task.md)
-
 ##### [MergeLocalizationDirectives 工作](mergelocalizationdirectives-task.md)
-
 ##### [ResourcesGenerator 工作](resourcesgenerator-task.md)
-
 ##### [UidManager 工作](uidmanager-task.md)
-
 ##### [UpdateManifestForBrowserApplication 工作](updatemanifestforbrowserapplication-task.md)
-
 ### [要逸出的特殊字元](special-characters-to-escape.md)
-
 ## [MSBuild 字彙表](msbuild-glossary.md)
-

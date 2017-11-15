@@ -1,65 +1,64 @@
 ---
-title: "資源詳細資料檢視 - 程式碼剖析工具：爭用資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.resourcedetails"
-helpviewer_keywords: 
-  - "資源詳細資料檢視"
+title: "資源詳細資料檢視 - 爭用資料 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.resourcedetails
+helpviewer_keywords: Resource Details view
 ms.assetid: a4ecfe1c-abbc-4fb3-9ab2-34de50486901
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eaf87be0e921d0e86818c29c078d8b214591418d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 資源詳細資料檢視 - 程式碼剖析工具：爭用資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[資源詳細資料\] 檢視會呈現因爭用所選取資源造成之封鎖事件的時間表圖形。  封鎖事件是在執行緒因為另一個執行緒鎖定資源存取而強制暫停執行時發生。  
+# <a name="resource-details-view---contention-data"></a>資源詳細資料檢視 - 爭用資料
+資源詳細資料檢視會在時間軸圖形顯示因爭用所選取的資源而造成的封鎖事件。 因為另一個執行緒已鎖定資源的存取權時，所以會強制執行緒暫停執行而發生封鎖事件。  
   
- 此檢視以水平列表示每個執行緒的執行時間表，並且在執行緒時間表上以垂直列表示每個封鎖事件。  必要時，您可以放大時間表的某個區段，以檢視個別事件。  若要檢視造成該事件之函式的執行路徑 \(呼叫堆疊\)，請按一下事件列。  函式會出現在 \[**呼叫堆疊**\] 視窗中。  當函式的原始程式碼可供使用時，您可以按一下函式名稱，在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中編輯原始程式檔。  
+ 此檢視會在執行緒時間軸上，以橫條表示每個執行緒的執行時間軸，並以直條表示每個封鎖事件。 如有必要，您可以放大時間軸的某區段來檢視個別事件。 若要檢視造成該事件的函式執行路徑 (呼叫堆疊)，請按一下事件列。 該函式隨即出現在 [呼叫堆疊] 視窗中。 當函式的原始程式碼可供使用時，您可以按一下函式名稱，在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的介面中編輯原始程式檔。  
   
-## 程序  
+## <a name="procedures"></a>程序  
   
-#### 若要放大時間表區段  
+#### <a name="to-magnify-a-timeline-segment"></a>放大時間軸區段  
   
--   拖曳滑鼠指標到時間表的某個區域上方。  
+-   將滑鼠指標拖曳時間軸的某一區域上方。  
   
-     放開滑鼠按鈕時，檢視會縮放至選取的時間區段。  您可以重複此程序進一步放大此區段。  時間捲軸上的捲動方塊表示檢視中出現的時間區段相對大小。  
+     放開滑鼠按鈕之後，檢視就會縮放為選取的時間區段。 您可以重複此流程，以進一步放大該區段。 時間捲軸的捲動方塊代表出現在檢視中的時間區段相對大小。  
   
-#### 若要縮小時間表  
+#### <a name="to-zoom-out-on-a-timeline"></a>在時間軸上縮小  
   
 -   請執行下列其中一個步驟：  
   
-    -   按一下 \[**縮小**\] 返回前一個縮放層級。  
+    -   按一下 [縮小] 以返回上一個縮放層級。  
   
-    -   按一下 \[**顯示比例重設**\]，在檢視中顯示完整的時間表。  
+    -   按一下 [顯示比例重設]，在檢視中顯示所有的時間軸。  
   
-#### 若要檢視事件的呼叫堆疊  
+#### <a name="to-view-the-call-stack-of-an-event"></a>檢視事件的呼叫堆疊  
   
--   在時間表圖形中按一下事件列。  
+-   在時間軸圖形中，按一下事件列。  
   
-#### 若要檢視或編輯呼叫堆疊中函式的原始程式碼  
+#### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>檢視或編輯呼叫堆疊中函式的原始程式碼  
   
--   在 \[**呼叫堆疊**\] 視窗中按一下函式名稱。  
+-   在 [呼叫堆疊] 視窗中，按一下該函式名稱。  
   
- 函式的原始程式碼必須是目前專案的一部分。  
+ 該函式的原始程式碼必須是目前專案的一部分。  
   
-#### 若要檢視資源爭用事件的呼叫樹狀圖  
+#### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>檢視資源的爭用事件呼叫樹狀圖  
   
--   在時間表圖形中按一下 \[**總計**\]。  
+-   在時間軸圖形中，按一下 [總計]。  
   
-     資源的 \[爭用\] 檢視隨即出現。  如需詳細資訊，請參閱[資源爭用檢視](../profiling/resource-contentions-view-contention-data.md)。  
+     資源的爭用檢視隨即顯示。 如需詳細資訊，請參閱[資源爭用檢視](../profiling/resource-contentions-view-contention-data.md)  
   
-#### 若要檢視執行緒的所有爭用事件  
+#### <a name="to-view-all-the-contention-events-of-a-thread"></a>檢視執行緒的所有爭用事件  
   
--   在時間表圖形中，按一下執行緒的名稱或識別碼。  
+-   在時間軸圖形中，按一下該執行緒的名稱或 ID。  
   
-     所選取執行緒的 \[執行緒詳細資料\] 檢視隨即出現。  如需詳細資訊，請參閱[執行緒詳細資料檢視](../profiling/thread-details-view-contention-data.md)。
+     所選取執行緒的執行緒詳細資料檢視隨即顯示。 如需詳細資訊，請參閱[執行緒詳細資料檢視](../profiling/thread-details-view-contention-data.md)。

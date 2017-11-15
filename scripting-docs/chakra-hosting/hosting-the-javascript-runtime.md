@@ -8,16 +8,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 30ec744e-57cc-4ef5-8fe1-d2c27b946548
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
 ms.openlocfilehash: 2bf213bf262ede7642e05c66e424b860238dc57f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="hosting-the-javascript-runtime"></a>裝載 JavaScript 執行階段
 JavaScript Runtime (JsRT) API 藉由可同時在 Microsoft Edge 及 Internet Explorer 上使用的標準 Chakra JavaScript 引擎，為 Windows 作業系統上執行的桌面、Windows 市集及伺服器端應用程式提供加入指令碼的功能。 這些 API 可以在已安裝 Internet Explorer 11.0 的 Windows 10 及任何 Windows 作業系統版本上取得。 如需詳細資訊，請參閱 [Reference (JavaScript Runtime)](../chakra-hosting/reference-javascript-runtime.md). 如需在 Windows 市集應用程式中使用 JsRT 的相關資訊，請參閱 [JsRT and the Universal Windows Platform](#Windows)。  

@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 2e4d2794e60653f5c34c4bde2dfbe69b08e5da27
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的常用鍵盤快速鍵
 
 ## <a name="show-code-generation-window"></a>顯示程式碼產生視窗

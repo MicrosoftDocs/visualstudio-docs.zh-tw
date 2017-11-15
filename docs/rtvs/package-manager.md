@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio R 工具中的套件管理員 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 93accb9a-1ef8-4806-baa4-02477c2d7ef0
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 87f4c97941a55bd378a72681200748f28e8dd236
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 5170c170f8d087319a8240831237965ca4d252db
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="package-manager"></a>套件管理員
 
 Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 若要開啟它，請選取 [R 工具] > [Windows] > [套件]，或按 Ctrl+7。
@@ -49,4 +46,3 @@ Visual Studio R 工具 (RTVS) 套件管理員是用來管理 R 套件的 UI。 �
 
 - RTVS 隨附的核心套件會安裝在 `C:\Program Files\Microsoft\R Client\R_SERVER\library`
 - 其他套件會安裝到 `%userprofile%\Documents\R\win-library\3.3`
-

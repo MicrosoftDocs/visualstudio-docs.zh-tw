@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vb.ProjectPropertiesMyExtensions
+f1_keywords: vb.ProjectPropertiesMyExtensions
 helpviewer_keywords:
 - Project Designer, My Extensions page
 - My Extensions page in Project Designer
 ms.assetid: 2f08494e-84c1-444b-872b-900fbbcf0364
-caps.latest.revision: 6
-author: kempb
-ms.author: kempb
+caps.latest.revision: "6"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f13e1fcd7a443d7179f474f9cfb6ef9b7febc639
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>專案設計工具、My 擴充頁 (Visual Basic)
 使用 [專案設計工具] 的 [My 延伸模組] 頁面管理專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組可讓您自訂 `My` 命名空間，新增您自己的自訂成員。 如需建立自訂 `My` 命名空間延伸模組的資訊，請參閱[擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。  

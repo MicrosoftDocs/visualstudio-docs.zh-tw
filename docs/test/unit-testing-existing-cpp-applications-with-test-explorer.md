@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: 11
+caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: badc5d3077ddfe8f76f24cbbf7a52869fde8f318
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>使用測試總管針對現有 C++ 應用程式執行單元測試
 我們建議在變更現有的應用程式之前，您要確定它能夠良好地涵蓋單元測試。 這會讓您對於變更不會產生 Bug 有信心。 如果應用程式尚未具有單元測試，您可以使用本主題中所示範的技術來加入單元測試。 本主題說明如何為現有的 Visual C++ 程式碼加入單元測試，從決定如何測試程式碼開始，然後建立、撰寫測試，最後則執行測試。  
@@ -182,4 +167,3 @@ ms.lasthandoff: 04/04/2017
 2.  在 [測試總管] 中，選擇 [ **全部執行**]。  
   
  如需詳細資訊，請參閱[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)。
-

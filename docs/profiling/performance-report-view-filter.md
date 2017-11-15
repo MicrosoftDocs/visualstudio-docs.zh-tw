@@ -1,22 +1,25 @@
 ---
-title: "程式碼剖析工具報告檢視篩選條件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具，分析工具報表檢視篩選條件"
-  - "分析工具報表檢視篩選條件，程式碼剖析工具"
+title: "效能報告檢視篩選條件 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, Profiler Report view filter
+- Profiler Report View filter, profiling tools
 ms.assetid: 35f89d86-4683-4db1-aa0c-ae0ce65fa524
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8a7bee6cb18fee301dfab5e7c08c58521eac4e84
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [程式碼剖析工具報告檢視篩選條件] 視窗位於 [效能報告] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
@@ -39,8 +42,3 @@ caps.handback.revision: 16
 ## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

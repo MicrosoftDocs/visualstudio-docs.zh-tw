@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 03/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a42f5a30375192c89c9984e40ba0104da98d7253
-ms.openlocfilehash: 620d5739c450ddece13257bf7efa249ebf9c2a6a
-ms.lasthandoff: 03/07/2017
-
+ms.openlocfilehash: e31746567a300ea8f9a62079ab1392fe9f1e0ec8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 的新功能
 MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/download/core) 的一部分來取得，並且可以在 Windows、macOS 和 Linux 上建置 .NET Core 專案。  
@@ -67,4 +52,3 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 
 ## <a name="see-also"></a>另請參閱
 [ MSBuild](../msbuild/msbuild.md)
-

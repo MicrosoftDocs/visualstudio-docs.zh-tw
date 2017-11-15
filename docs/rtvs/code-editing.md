@@ -1,28 +1,24 @@
 ---
 title: "使用 Visual Studio R 工具編輯程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
-ms.prod: visual-studio-dev15
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 261cced8583b751d74701a8903a10a4584928940
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="editing-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
  
 Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體驗，同時保留所有功能和使用延伸模組的能力。 (例如，如果您偏好 VIM 按鍵繫結，您可以從 Visual Studio 組件庫安裝免費的 [VsVim 延伸模組](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)。)
@@ -96,7 +92,7 @@ Visual Studio 也會在編輯器中的語法錯誤加上底線︰
 
 ## <a name="formatting-code"></a>格式化程式碼
 
-Visual Studio 的自動格式化會讓您撰寫的程式碼以及您貼到編輯器中的程式碼，保持為您的喜好設定所設的格式。 您也可以進行選取、按一下滑鼠右鍵，然後選取 [格式化選取範圍]\(Ctrl + K、F)，以套用這些喜好設定。 例如，如果您的函式定義全都在同一行︰
+Visual Studio 的自動格式化會讓您撰寫的程式碼以及您貼到編輯器中的程式碼，保持為您的喜好設定所設的格式。 您也可以進行選取、按一下滑鼠右鍵，然後選取 [格式化選取範圍](Ctrl + K、F)，以套用這些喜好設定。 例如，如果您的函式定義全都在同一行︰
 
 ```R
 f<-function  (a){  return(a + 1) }
@@ -108,11 +104,11 @@ f<-function  (a){  return(a + 1) }
 f <- function(a) { return(a + 1) }
 ```
 
-若要重新格式化整個程式碼檔案，請選取 [編輯] > [進階] > [格式化文件]\(Ctrl+E、D)。
+若要重新格式化整個程式碼檔案，請選取 [編輯] > [進階] > [格式化文件] (Ctrl+E、D)。
 
 自動格式化是可以復原的個別作業。 例如，如果您將程式碼貼入編輯器，以及它套用的格式化，則選取 [編輯] > [復原] 或按 Ctrl+Z，會反轉格式化，第二次 [復原] 則會反轉貼上作業本身。
  
-格式化選項 (包括關閉格式化) 是透過 [文字編輯器] > [R] > [進階] 索引標籤的 [工具] > [選項] 設定。 您可以使用 [R 工具] > [編輯器選項] 命令，或在編輯器中按一下滑鼠右鍵，然後選取 [格式選項]，直接移至此頁面。 如需詳細資訊，請參閱[編輯器選項](#editor-options)一節。
+格式化選項 (包括關閉格式化) 是透過 [文字編輯器] > [R] > [進階] 索引標籤的 [工具] > [選項] 設定。您可以使用 [R 工具] > [編輯器選項] 命令，或在編輯器中按一下滑鼠右鍵，然後選取 [格式選項]，直接移至此頁面。如需詳細資訊，請參閱[編輯器選項](#editor-options)一節。
  
 ## <a name="inserting-roxygen-comments"></a>插入 Roxygen 註解
 
@@ -144,10 +140,9 @@ RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解�
 | | = 前後的空格 | 開啟 | 在等號前後放置空格。 |
 | IntelliSense | 使用 Enter 鍵認可 | Off | 按下 Enter 鍵時認可自動完成選取範圍。 |
 | | 使用空格鍵認可 | Off | 按下空格鍵時認可自動完成選取範圍。|
-| | 第一個字元即出現自動完成清單 | 開啟 | 在鍵入第一個字元時顯示自動完成清單。 關閉時，在按一下 [編輯] > [IntelliSense] > [列出成員]\(Ctrl + J) 時會顯示完成清單。 |
+| | 第一個字元即出現自動完成清單 | 開啟 | 在鍵入第一個字元時顯示自動完成清單。 關閉時，在按一下 [編輯] > [IntelliSense] > [列出成員] (Ctrl + J) 時會顯示完成清單。 |
 | | 按 Tab 鍵時會出現自動完成清單 | Off | 鍵入一或多個字元並按 Tab 鍵來叫用完成清單。 |
 | | 符合部分鍵入的引數名稱 | Off | 在函式呼叫中鍵入引數名稱時，特徵標記可協助顯示最貼切的引數描述。 |
 | 互動式視窗 | R Console 中的語法檢查 | Off | 在 Interactive 視窗中套用語法檢查。 語法檢查可能無法正確運作於多行陳述式。 | 
 | 大綱 | 程式碼大綱 | 開啟 | 自動為多行陳述式等區域建立可摺疊區域。 | 
 | 語法檢查 | 顯示語法錯誤 | 開啟 | 啟用程式碼的自動語法檢查。 |
-

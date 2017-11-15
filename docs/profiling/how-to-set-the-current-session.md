@@ -1,27 +1,30 @@
 ---
-title: "如何：設定目前的程式碼剖析工作階段 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "目前的效能工作階段"
-  - "效能總管，選取工作階段"
-  - "程式碼剖析工具，設定工作階段"
-  - "多個效能工作階段"
-  - "效能工作階段，設定多個"
-  - "效能工具，設定目前的效能工作階段"
-  - "工作階段，設定多個"
+title: "如何：設定目前的工作階段 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- current performance sessions
+- Performance Explorer, selecting sessions
+- profiling tools, setting sessions
+- multiple performance sessions
+- performance sessions, setting multiple
+- performance tools, setting current performance session
+- sessions, setting multiple
 ms.assetid: a593e551-18ec-46fd-bfd5-8a045165a334
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 800b3f24db41ae2a76da5e3f2d1c1417b7486416
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-set-the-current-session"></a>如何：設定目前的工作階段
 您可以在 [效能總管]中開啟多個效能工作階段，然後選取其中一個可見的效能工作階段來設為目前的工作階段。  
@@ -43,8 +46,3 @@ caps.handback.revision: 16
  [效能總管視窗](../profiling/performance-explorer-window.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)   
  [效能工作階段概觀](../profiling/performance-session-overview.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

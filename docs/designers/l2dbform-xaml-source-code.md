@@ -4,59 +4,43 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-csharp
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
-caps.latest.revision: 2
-author: kempb
-ms.author: kempb
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: b62eac5ab4b057e26ed4a0a34551655984449cf1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c3ccc6fcfa8471d767356f1e30d1e5f8b0ed15d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="l2dbformxaml-source-code"></a>L2DBForm.xaml 原始程式碼
-本主題包含並描述[使用 LINQ to XML 進行 WPF 資料繫結範例](../designers/wpf-data-binding-using-linq-to-xml-example.md)的 XAML 原始程式檔 L2DBForm.xaml。  
+本主題包含並描述 [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md)L2DBForm.xaml 的 XAML 原始程式檔。  
   
 ## <a name="overall-ui-structure"></a>UI 的整體結構  
- 如同典型的 WPF 專案，這個檔案包含一個父元素，也就是與 `LinqToXmlDataBinding` 命名空間中的衍生類別 `L2XDBFrom` 關聯的 <xref:System.Windows.Window> XML 元素。  
+ 如同 WPF 專案般，這個檔案包含一個父項目，也就是 <xref:System.Windows.Window> 命名空間中，與衍生類別 `L2XDBFrom` 相關聯的 `LinqToXmlDataBinding` XML 項目。  
   
- 用戶端區域包含在淡藍色背景的 <xref:System.Windows.Controls.StackPanel> 中。 此面板包含四個以 <xref:System.Windows.Controls.Separator> 線分隔的 <xref:System.Windows.Controls.DockPanel> UI 區段。 如需了解這些區段的用途，請參閱[上一個主題](../designers/walkthrough-linqtoxmldatabinding-example.md)中的＜備註＞。  
+ 用戶端區域包含在淡藍色背景的 <xref:System.Windows.Controls.StackPanel> 中。 這個面板包含四個 <xref:System.Windows.Controls.DockPanel> UI 區段，以 <xref:System.Windows.Controls.Separator> 列分隔。 這些區段的目的詳述於 **上一個主題** 的＜ [備註](../designers/walkthrough-linqtoxmldatabinding-example.md)＞中。  
   
- 每個區段都包含一個可以識別自身的標籤。 在前兩個區段中，會透過使用 <xref:System.Windows.FrameworkElement.LayoutTransform%2A> 將此標籤旋轉 90 度。 區段的剩餘部分則包含適用於該區段目的的 UI 項目：文字區塊、文字方塊、按鈕等等。 有時，子系 <xref:System.Windows.Controls.StackPanel> 會用來對齊這些子控制項。  
+ 每個區段都包含一個可以識別自身的標籤。 在前兩個區段中，這個標籤會透過使用 <xref:System.Windows.FrameworkElement.LayoutTransform%2A>而旋轉 90 度。 區段的剩餘部分則包含適用於該區段目的的 UI 項目：文字區塊、文字方塊、按鈕等等。 有時候，子系 <xref:System.Windows.Controls.StackPanel> 用於調整這些子控制項。  
   
 ## <a name="window-resource-section"></a>視窗資源區段  
  第 9 行的 `<Window.Resources>` 開頭標記表示視窗資源區段的開頭， 並以第 35 行的結束標記表示結尾。  
   
- 跨第 11 行到第 25 行的 `<ObjectDataProvider>` 標記會宣告一個名為 `LoadedBooks` 並使用 <xref:System.Xml.Linq.XElement> 作為來源的 <xref:System.Windows.Data.ObjectDataProvider>。 這個 <xref:System.Xml.Linq.XElement> 會藉由剖析內嵌的 XML 文件 (`CDATA` 元素) 來初始化。 請注意，宣告內嵌的 XML 文件以及進行剖析時，會保留空白字元。 之所以這麼做，是因為用來顯示原始 XML 的 <xref:System.Windows.Controls.TextBlock> 控制項沒有任何特殊的 XML 格式化功能。  
+ 跨越第 11 行到第 25 行的 `<ObjectDataProvider>` 標記會宣告名稱為 <xref:System.Windows.Data.ObjectDataProvider>的 `LoadedBooks`，並使用 <xref:System.Xml.Linq.XElement> 當做來源。 這個 <xref:System.Xml.Linq.XElement> 會藉由剖析內嵌的 XML 文件 ( `CDATA` 項目) 來初始化。 請注意，宣告內嵌的 XML 文件以及進行剖析時，會保留空白字元。 這會因為用於顯示原始 XML 的 <xref:System.Windows.Controls.TextBlock> 控制項沒有特殊的 XML 格式化功能而完成。  
   
- 最後，在第 28 到 34 行會定義名為 `BookTemplate` 的 <xref:System.Windows.DataTemplate>。 這個範本將用於顯示 [ **書籍清單** ] UI 區段中的項目。 它會使用資料繫結和 LINQ to XML 動態屬性，透過下列指派，擷取書籍 ID 和書籍名稱：  
+ 最後在第 28 到 34 行會定義名稱為 <xref:System.Windows.DataTemplate> 的 `BookTemplate` 。 這個範本將用於顯示 [ **書籍清單** ] UI 區段中的項目。 它會使用資料繫結和 LINQ to XML 動態屬性，透過下列指派，擷取書籍 ID 和書籍名稱：  
   
 ```  
 Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"  
 ```  
   
 ## <a name="data-binding-code"></a>資料繫結程式碼  
- 除了 <xref:System.Windows.DataTemplate> 元素之外，在此檔案中的幾個其他地方也會使用資料繫結。  
+ 除了 <xref:System.Windows.DataTemplate> 項目之外，資料繫結也會用在這個檔案的其他多個地方。  
   
  在第 38 行的 `<StackPanel>` 開頭標記中，此面板的 <xref:System.Windows.FrameworkElement.DataContext%2A> 屬性會設定為 `LoadedBooks` 資料提供者。  
   
@@ -64,13 +48,13 @@ Text="{Binding Path=Attribute[id].Value}"Text="{Binding Path=Value}"
 DataContext="{Binding Source={StaticResource LoadedBooks}}  
 ```  
   
- 這可以讓 (第 46 行) 名為 `tbRawXml` 的 <xref:System.Windows.Controls.TextBlock> 藉由繫結至此資料提供者的 `Xml` 屬性來顯示原始 XML：  
+ 這可以讓 (第 46 行) 名稱為 <xref:System.Windows.Controls.TextBlock> 的 `tbRawXml` 繫結至此資料提供者的 `Xml` 屬性以顯示原始 XML：  
   
 ```  
 Text="{Binding Path=Xml}"   
 ```  
   
- 第 58 到 62 行 **Book List** UI 區段中的 <xref:System.Windows.Controls.ListBox> 會將其顯示項目的範本設定為視窗資源區段中定義的 `BookTemplate`：  
+ 第 58 到 62 行 [書籍清單] <xref:System.Windows.Controls.ListBox>**UI 區段中的** 會將其顯示項目的範本設定為視窗資源區段中定義的 `BookTemplate` ：  
   
 ```  
 ItemTemplate ="{StaticResource BookTemplate}"   
@@ -84,7 +68,7 @@ ItemTemplate ="{StaticResource BookTemplate}"
 </ListBox.ItemsSource>  
 ```  
   
- 第三個 UI 區段 **Edit Selected Book** 會先將父系 <xref:System.Windows.Controls.StackPanel> 的 <xref:System.Windows.FrameworkElement.DataContext%2A> 繫結到目前從 **Book List** UI 區段選取的項目 (第 82 行)：  
+ 第三個 UI 區段，也就是 [ **編輯選取的書籍**] 會先將父代 <xref:System.Windows.FrameworkElement.DataContext%2A> 的 <xref:System.Windows.Controls.StackPanel> 繫結到目前從 [ **書籍清單** ] UI 區段 (第 82 行) 選取的項目：  
   
 ```  
 DataContext="{Binding ElementName=lbBooks, Path=SelectedItem}"  

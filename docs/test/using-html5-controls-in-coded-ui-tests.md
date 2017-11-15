@@ -4,33 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
-caps.latest.revision: 17
+caps.latest.revision: "17"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 834f53c8d75a06de69f1afe682a0a0b1863dfde0
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3e2e14748e27d965762b3245908382b278e6e132
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>在自動程式化 UI 測試中使用 HTML5 控制項
 自動程式化 UI 測試支援 Internet Explorer 9 和 Internet Explorer 10 所含的一些 HTML5 控制項。  
@@ -59,7 +44,7 @@ ms.lasthandoff: 04/04/2017
 ###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> 音訊控制項  
  **音訊控制項：**正確記錄和播放 HTML5 Audio 控制項上的動作。  
   
- ![HTML5 Audio 控制項](~/test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
+ ![HTML5 Audio 控制項](../test/media/codedui_html5_audio.png "CodedUI_HTML5_Audio")  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -102,7 +87,7 @@ string Volume
 ###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> 視訊控制項  
  **視訊控制項：**正確記錄和播放 HTML5 Video 控制項上的動作。  
   
- ![HTML5 Video 控制項](~/test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
+ ![HTML5 Video 控制項](../test/media/codedui_html5_video.png "CodedUI_HTML5_Video")  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -132,7 +117,7 @@ string VideoWidth
 ###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> 滑桿  
  **滑桿控制項：**正確記錄和播放 HTML5 Slider 控制項上的動作。  
   
- ![HTML5 Slider 控制項](~/test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
+ ![HTML5 Slider 控制項](../test/media/codedui_html5_slider.png "CodedUI_HTML5_Slider")  
   
 |動作|錄製|產生的程式碼|  
 |------------|---------------|--------------------|  
@@ -152,7 +137,7 @@ string ValueAsNumber
 ###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> 進度列  
  **進度列控制項：**進度列是不可互動的控制項。 您可以在此控制項的 `Value` 和 `Max` 屬性上加入判斷提示。  
   
- ![HTML5 ProgressBar 控制項](~/test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![HTML5 ProgressBar 控制項](../test/media/codedui_html5_progressbar.png "CodedUI_HTML5_ProgressBar")  
   
 ## <a name="see-also"></a>另請參閱  
  [HTML 項目](http://go.microsoft.com/fwlink/?LinkID=232441)   
@@ -160,4 +145,3 @@ string ValueAsNumber
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [自訂您的自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-

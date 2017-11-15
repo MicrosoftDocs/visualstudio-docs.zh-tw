@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 17AB4F31-4921-4B4E-8D9D-95FB84294521
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 943839be61cba45b430a92ee0eaf833f4a35c9a8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="user-accounts"></a>使用者帳戶
 
 在您下載並安裝 Visual Studio for Mac 之後，必須登入才能啟用授權以及存取 Xamarin Studio 的 Community、Professional 或 Enterprise Edition。

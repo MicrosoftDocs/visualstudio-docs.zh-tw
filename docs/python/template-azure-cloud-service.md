@@ -1,27 +1,24 @@
 ---
 title: "適用於 Python 的 Azure 雲端服務專案範本 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a2ce82ee-8c73-419a-bbd2-4c3513fd394d
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 3a8f7d9a21a65a8e63ee47cb0783b7345b28d632
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: b90240dbb25e45827cbe8cd728dfcff23b1a8884
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="azure-cloud-service-projects-for-python"></a>適用於 Python 的 Azure 雲端服務專案
 
 Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端服務。
@@ -72,7 +69,7 @@ Visual Studio 提供的範本有助您使用 Python 以開始建立 Azure 雲端
 
 撰寫角色時，您可以使用雲端服務模擬器在本機上測試雲端專案。 該模擬器隨附於 Azure SDK 工具，而且是您的雲端服務發佈至 Azure 時使用之環境的精簡版本。
 
-若要啟動模擬器，請先確定您的雲端專案在方案中是啟始專案，方法是以滑鼠右鍵按一下並選取 [設定為啟始專案]。 接著選取 [偵錯] > [開始偵錯]\(F5) 或 [偵錯] > [啟動但不偵錯]\(Ctrl+F5)。
+若要啟動模擬器，請先確定您的雲端專案在方案中是啟始專案，方法是以滑鼠右鍵按一下並選取 [設定為啟始專案]。 接著選取 [偵錯] > [開始偵錯] (F5) 或 [偵錯] > [啟動但不偵錯] (Ctrl+F5)。
 
 請注意，由於模擬器的限制，您將無法針對 Python 程式碼進行偵錯。 因此建議您獨立地執行角色來對角色進行偵錯，然後在發佈前使用模擬器進行整合測試。
 

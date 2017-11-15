@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- automated testing, lab management, test lab
+helpviewer_keywords: automated testing, lab management, test lab
 ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 77a0339e1aae3036990f0d9d133a1fcb68844486
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build and Release Management 而非 Lab Management 進行自動化測試
 
@@ -102,4 +85,3 @@ XAML 組建依賴各種以 MTM 建立的建構，例如實驗室環境、測試�
 * 隔離網路的動機之一，曾是容易設定的多個複製品。 因為每個複製品都確實是和原版完全一樣的複本，所以電腦名稱和組態設定會保留原狀，這讓設定新環境變得更容易。 不過，相同的優點在稍後的生命週期 (例如，生產環境) 中也引起了很多問題，因為最後部署應用程式的方式不相同。 所以，請**改為**考慮以設定生產環境的相同方式設定新環境，避免使用網路隔離。
 
 * 請針對您的測試需求使用公用雲端基礎結構，如 [Microsoft Azure](https://azure.microsoft.com/)。 您可以輕鬆使用[Azure Resource Manager 範本](https://azure.microsoft.com/documentation/templates/)，從 [Azure Marketplace](https://azure.microsoft.com/marketplace/) 或從 [Azure 快速入門範本](https://azure.microsoft.com/documentation/templates/)設定透過私人網路連線的虛擬機器群組，並只使用 Proxy 或 'jumpbox' 公開至公用網路。
-

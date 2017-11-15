@@ -4,21 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-designers
+ms.technology: vs-ide-designers
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 2176086d813109a92f1e2467498d3f1ad4b18c5e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 04d150c517d4ac0b4f3c47c5e9e4758e24d697c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：匯出包含 Mipmap 的材質
 影像內容管線可以在您的專案建置階段中，從來源影像產生 mipmap 。 當您不需要手動指定每個 MIP 層級的影像內容時 — 您可能會為了取得特定的效果而這麼做 — 在建置時產生 mipmap 可確保 mipmap 內容永遠不會變成不同步，並且能消除在執行階段產生 mipmap 的效能成本。  
@@ -38,7 +36,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  設定您剛剛建立的材質檔案，以便供「影像內容管線」處理。 在 [方案總管] 中，開啟您剛建立之材質檔案的捷徑功能表，然後選擇 [屬性]。 在 [組態屬性] > [一般] 頁面上，將 [項目類型] 屬性設定為 [影像內容管線]。 確定 [內容] 屬性是設定為 [是]，且 [從組建中排除] 是設定為 [否]，然後選擇 [套用] 按鈕。 此時會顯示 [影像內容管線] 組態屬性頁面。  
   
-3.  設定影像內容管線以產生 mipmap。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 **產生 Mips** 屬性設定為 [是]\ (/generatemips)。  
+3.  設定影像內容管線以產生 mipmap。 在 [組態屬性] > [影像內容管線] > [一般] 頁面上，將 **產生 Mips** 屬性設定為 [是] (/generatemips)。  
   
 4.  選擇 [確定]  按鈕。  
   

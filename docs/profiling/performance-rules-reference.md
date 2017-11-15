@@ -1,19 +1,22 @@
 ---
-title: "程式碼剖析工具效能規則參考 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "效能規則參考 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 59fc9424-76ca-4365-ae47-bb14a736c9c2
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-rules-reference"></a>效能規則參考
 程式碼剖析工具的效能規則提供關於應用程式效能的額外警告和資訊。 效能規則會分析從 Windows 和處理器效能計數器等來源收集到的程式碼剖析執行資料。 規則訊息會出現在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境的 [錯誤輸出] 視窗。 訊息會隨下列其中一項規則層級同時列出：  
@@ -35,8 +38,3 @@ caps.handback.revision: 14
 |[記憶體和分頁效能規則](../profiling/memory-and-paging-performance-rules.md)|分析 Managed 記憶體和應用程式分頁行為的規則。|  
 |[程式碼剖析工具使用規則](../profiling/profiling-tools-usage-rules.md)|可協助您有效地使用程式碼剖析工具的規則。|  
 |[資源監視效能規則](../profiling/resource-monitoring-performance-rules.md)|程式碼剖析執行中的處理器和記憶體使用率相關的資訊訊息。|
-
-
-<!--HONumber=Feb17_HO4-->
-
-

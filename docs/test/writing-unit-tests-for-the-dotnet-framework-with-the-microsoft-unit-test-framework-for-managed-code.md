@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 474e1bc75b8c0615e5da66b27e74b8c5964dedf5
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 3242c3361638651cf4760eb7971630205e5bb893
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試
 ## <a name="in-this-section"></a>本節內容  
@@ -50,4 +34,3 @@ ms.lasthandoff: 04/04/2017
  [如何：以舊版 .NET 為目標](../test/how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md)  
   
  [用於建立單元測試的範例專案](../test/sample-project-for-creating-unit-tests.md)
-

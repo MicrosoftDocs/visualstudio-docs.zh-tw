@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 03/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,15 @@ helpviewer_keywords:
 - referencing files from projects
 - referencing components, troubleshooting
 ms.assetid: 00a9ade9-652e-40de-8ada-85f63cd183ee
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 61a074110e0a3730c971c319f98498324868067d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 7a6216f70f6e9eab3887439dee2f35aa59de37c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="troubleshoot-broken-references"></a>針對中斷參考進行疑難排解
 如果您的應用程式嘗試使用中斷的參考，則會產生例外狀況錯誤。 此錯誤的主要原因是找不到參考的元件，但在某些情況下也可能將參考視為中斷。 下列清單顯示這些情況：  
@@ -106,4 +90,3 @@ ms.lasthandoff: 05/30/2017
 
 ## <a name="see-also"></a>請參閱  
  [專案設計工具、參考頁面 (Visual Basic)](../ide/reference/references-page-project-designer-visual-basic.md)   
-

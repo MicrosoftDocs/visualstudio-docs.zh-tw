@@ -1,27 +1,24 @@
 ---
 title: "使用 Visual Studio R 工具進行偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: cb5fe5f8-03bc-42bf-8346-c845036a9c6c
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7927e897a63b8b06cda9670701f44bc59296fd01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: e4b8d7fb27407bf8ef4463524e9da66bac591ff4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="debugging-r-in-visual-studio"></a>在 Visual Studio 中對 R 進行偵錯
 
 Visual Studio R 工具整合了完整的 Visual Studio 偵錯體驗 (請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。 這項支援包括中斷點、附加至執行中處理序、檢查和監看變數，以及檢查呼叫堆疊。 本主題會瀏覽 R 和 RTVS 特有的偵錯觀點。
@@ -73,4 +70,3 @@ add <- function(x, y) {
 | &lt;expr&gt; | 評估 *expr* 中的運算式。 |
 
 ![互動式視窗中的環境瀏覽器](media/debugger-environment-browser.png)
-

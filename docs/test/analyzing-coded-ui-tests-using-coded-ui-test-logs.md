@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
-caps.latest.revision: 13
+caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5f32c2bc9f289a69a5ef9e7acfc1a973017fec0f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 39ed1ba397fd1c0a9ff1f30acea1cff4a38529a2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 自動程式化 UI 測試記錄會篩選和錄製您自動程式化 UI 測試執行的重要資訊。  
@@ -96,11 +80,11 @@ ms.lasthandoff: 05/13/2017
   
 4.  選擇 [測試總管] 結果中的 [輸出] 連結。  
   
-     ![[測試總管] 中的 [輸出] 連結](~/test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")  
+     ![[測試總管] 中的 [輸出] 連結](../test/media/cuit_htmlactionlog1.png "CUIT_HTMLActionLog1")  
   
      這會顯示將包括動作記錄連結的測試輸出。  
   
-     ![自動程式化 UI 測試的結果和輸出連結](~/test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")  
+     ![自動程式化 UI 測試的結果和輸出連結](../test/media/cuit_htmlactionlog2.png "CUIT_HTMLActionLog2")  
   
 5.  選擇 UITestActionLog.html 連結。  
   
@@ -126,4 +110,3 @@ ms.lasthandoff: 05/13/2017
 ## <a name="see-also"></a>另請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [如何：從 Microsoft Visual Studio 執行測試](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)
-

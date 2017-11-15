@@ -1,24 +1,27 @@
 ---
 title: "DA0014：極高比率的使用中記憶體分頁到磁碟 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DAMemoryBound"
-  - "vs.performance.DA0014"
-  - "vs.performance.14"
-  - "vs.performance.rules.DA0014"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DAMemoryBound
+- vs.performance.DA0014
+- vs.performance.14
+- vs.performance.rules.DA0014
 ms.assetid: a7fa3749-9191-437a-9331-9d917181e62f
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1aacc90a1d85186922fd6b5c13648c77286b02f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014：極高比率的使用中記憶體分頁到磁碟
 |||  
@@ -48,8 +51,3 @@ caps.handback.revision: 11
  如果您在負載測試情節中收集 ASP.NET 應用程式的分析資料，請嘗試在設定額外實體記憶體 (或 RAM) 的機器上再次執行負載測試。  
   
  請考慮修改演算法減少記憶體配置，以及避免需要大量記憶體的 API，例如 String.Concat 和 String.Substring。
-
-
-<!--HONumber=Feb17_HO4-->
-
-

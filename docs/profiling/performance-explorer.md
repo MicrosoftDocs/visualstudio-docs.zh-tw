@@ -4,41 +4,23 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
 - vs.performance
 - vs.performance.wizard.website
-helpviewer_keywords:
-- performance tools [Visual Studio ALM]
+helpviewer_keywords: performance tools [Visual Studio ALM]
 ms.assetid: df52b717-a55d-4b1d-8c2e-d5a6a38042f4
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: 1c3893e6028dd0efeee8d4f4b62d73765a8d2e18
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: 6547c139df10498c7be7c2ad13401001d38c067d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-explorer"></a>效能總管
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具可讓開發人員測量、評估和標定程式碼中與效能有關的問題。 這些工具已經完全整合到 IDE，藉此提供順暢無礙又平易近人的使用者體驗。  

@@ -2,8 +2,7 @@
 title: Dotfuscator Community Edition (CE) | Microsoft Docs
 ms.date: 2017-06-22
 ms.devlang: dotnet
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.topic: article
 keywords: "Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, 保護, community edition, obfuscation, .NET, 免費, Visual Studio 2017, 安裝"
 helpviewer_keywords:
@@ -22,28 +21,12 @@ description: "了解如何安裝 Visual Studio 2017 中隨附的免費 Dotfuscat
 ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: Joe-Sewell-PreEmptive
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8ce85525f6af336682f6f8547c2f6c13dde73c8c
-ms.openlocfilehash: fb5356632ecf8183945b1d50ba940ed05abcf96f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 6e3151a7ce26fcc998df7fbce1cefda54249a384
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="install-dotfuscator-community-edition-ce"></a>安裝 Dotfuscator Community Edition (CE)
 
 Visual Studio 2017 推出新的低影響安裝體驗。
@@ -58,7 +41,7 @@ Visual Studio 2017 推出新的低影響安裝體驗。
 
 您可以從 Visual Studio IDE 安裝 Dotfuscator CE：
 
-1. 在 [快速啟動] \(Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
+1. 在 [快速啟動] (Ctrl + Q) 搜尋列中鍵入 `dotfuscator`。 <br/> <br/> ![](media/install_from_vs_12.png) <br/> <br/>
 2. 在 [快速啟動] 結果顯示畫面的「安裝」標題下，選取 [PreEmptive Protection - Dotfuscator (個別元件)]。
   * 但若看到「功能表」標題下的 [工具] - [PreEmptive Protection - Dotfuscator]，則已安裝 Dotfuscator CE。 如需使用方式詳細資料，請參閱[完整 Dotfuscator CE 使用者指南的入門頁面][get-started]。
 3. [Visual Studio 安裝程式] 視窗即會啟動，預先設定安裝 Dotfuscator CE。
@@ -97,4 +80,3 @@ Visual Studio 2017 推出新的低影響安裝體驗。
 [download]: https://www.preemptive.com/products/dotfuscator/downloads
 
 [full]: https://www.preemptive.com/dotfuscator/ce/docs/help/intro_install.html
-

@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio R 工具中的 [說明] 視窗 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: ef9c04d4-0d5e-405a-842e-8d47fa0e8781
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: cf63def0503e885b1c6ab42584f9f1932b77127f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 2542682ecab54235a236a93c9906185547017c4c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="help-in-r-tools-for-visual-studio"></a>Visual Studio R 工具中的說明
 
 R 說明已直接整合至 Visual Studio 的互動式視窗。 每當您使用 `?` 命令，例如 `?mtcars` 時，R 文件中的說明會出現在 Visual Studio 視窗︰

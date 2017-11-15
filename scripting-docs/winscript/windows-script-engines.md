@@ -7,19 +7,17 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Windows script engines
+helpviewer_keywords: Windows script engines
 ms.assetid: e576853d-7252-4eb9-81eb-9d5bb7626ab4
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 6fbf89668d47d55d1d77a1d7f11765567fc73405
 ms.openlocfilehash: 2191b8e76e2b96d05633156d09a08b5416faae90
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="windows-script-engines"></a>Windows 指令碼引擎
 若要實作 Microsoft Windows 指令碼引擎，請建立支援下列介面的 OLE COM 物件。  

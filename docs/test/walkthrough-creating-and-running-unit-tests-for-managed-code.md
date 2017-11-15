@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,30 +14,14 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
-caps.latest.revision: 83
+caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cbde644f9248935c73bb75b8b2de9573588867f5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
 本逐步解說會引導您使用適用於 Managed 程式碼的 Microsoft 單元測試架構和 Visual Studio 測試總管，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以修改專案程式碼並重新執行測試。  
@@ -254,7 +237,7 @@ using BankAccountNS;
 ##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> 修正程式碼並重新執行測試  
  **分析測試結果**  
   
- 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*>** 參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
+ 測試結果會包含說明失敗的訊息。 如果是 `AreEquals` 方法，訊息會顯示預期 (**預期的 \<*XXX*> **參數) 和實際收到的參數 (**實際的 \<*YYY*>** 參數)。 我們預期餘額會低於一開始的餘額，但相反地，它卻增加了提領金額。  
   
  重新對 Debit 程式碼執行檢查後發現了 Bug，單元測試現在已成功了。 提領的金額應該從帳戶餘額減去，但卻被加入至帳戶餘額。  
   
@@ -435,4 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  在這最後一節中，我們所做的測試程式碼改善工作，產生了更強固且更具資訊性的測試方法。 但更重要的是，額外的分析也會讓我們的受測專案得到更好的程式碼。
-

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.performance.view.marks
+f1_keywords: vs.performance.view.marks
 helpviewer_keywords:
 - profiling tools, Marks view
 - profiling tools reports, Marks view
 ms.assetid: b2773344-8081-4116-85a1-58f770448f6a
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a4eb45e8e0548ead5d99c441abcfa7baf3ffde4f
-ms.openlocfilehash: db99ec8ab99c4bd34f9df043cb4361444c0c8e6b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 57f6cf279bc20514aa16d7da422a22349d2b792e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。  

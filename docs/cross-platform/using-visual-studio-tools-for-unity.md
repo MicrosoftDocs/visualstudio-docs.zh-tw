@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 28bbc6d742a072f1305b0daed7720816492083fd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 93259c1a1afe33cb16be9bd6bbf8fdc1cfd3a8cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 在本節中，您將了解如何使用 Visual Studio Tools for Unity 的整合和產能功能，以及如何針對 Unity 開發使用 Visual Studio 偵錯工具。  
@@ -50,7 +34,7 @@ ms.lasthandoff: 05/13/2017
 ### <a name="unity-monobehavior-scripting-wizard"></a>Unity MonoBehavior 指令碼精靈  
  在 Unity 中，大部分指令碼的實作方式，不是透過衍生自 MonoBehavior 類別，就是透過覆寫其中一些方法。 您可以使用 MonoBehavior 精靈，為要多載的 MonoBehavior 方法快速建立空白定義。 透過這個精靈，您可以從可用方法清單中指定一個或多個要多載的方法、選擇要在程式碼中插入這些方法的位置，以及決定是否要包含這些方法的使用方式註解。  
   
- ![MonoBehavior 精靈對話方塊。](~/cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")  
+ ![MonoBehavior 精靈對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")  
   
 ##### <a name="to-create-empty-monobehavior-method-definitions-by-using-the-monobehavior-wizard"></a>使用 MonoBehavior 精靈建立空白 MonoBehavior 方法定義  
   
@@ -71,7 +55,7 @@ ms.lasthandoff: 05/13/2017
 #### <a name="quick-monobehavior-scripting-wizard"></a>Quick MonoBehavior 指令碼精靈  
  當您熟悉 Unity 應用程式開發介面之後，您可以使用 Quick MonoBehavior 精靈更快地實作多載方法。 透過這個精靈，您可以指定已插入游標位置之不含方法註解的單獨一個方法。  
   
- ![Quick MonoBehavior 精靈對話方塊。](~/cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")  
+ ![Quick MonoBehavior 精靈對話方塊。](../cross-platform/media/vstu_monobehavior_wizard_quick.png "vstu_monobehavior_wizard_quick")  
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>使用 Quick MonoBehavior 精靈建立空白 MonoBehavior 方法定義  
   
@@ -86,13 +70,13 @@ ms.lasthandoff: 05/13/2017
 ### <a name="unity-project-explorer"></a>Unity Project Explorer  
  您可以在 Visual Studio 中，使用 Unity Project Explorer 來巡覽 Unity 專案。  
   
- ![Unity 專案總管視窗。](~/cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")  
+ ![Unity 專案總管視窗。](../cross-platform/media/vstu_unity_project_explorer.png "vstu_unity_project_explorer")  
   
 ##### <a name="to-view-the-unity-project-explorer"></a>檢視 Unity Project Explorer  
   
 -   在 Visual Studio 主功能表上，選擇 [檢視]、[Unity 專案總管]。 鍵盤：**Alt+Shift+E**  
   
-     ![檢視 Unity 專案總管視窗。](~/cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")  
+     ![檢視 Unity 專案總管視窗。](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")  
   
  Unity 專案總管使用與 [Unity 編輯器] 相同的方式，來顯示所有 Unity 專案檔和目錄。這不同於使用方案總管來巡覽 Unity 指令碼，方案總管只會包含您的指令碼檔案，並將這些檔案顯示為 Visual Studio Tools for Unity 所產生、用於組織檔案的專案和方案。 特別是在大型專案中，使用 Unity Project Explorer 通常更容易找到您要修改的指令碼；在 Visual Studio 中修改其他類型的檔案 (例如文字型組態檔) 也很輕鬆，您不需要將這些檔案加入 Visual Studio 方案的其中一個專案。  
   
@@ -126,18 +110,18 @@ ms.lasthandoff: 05/13/2017
   
 -   在 Visual Studio 主功能表上，選擇 [偵錯]、[附加 Unity 偵錯工具]。  
   
-     ![附加 Unity 的偵錯工具。](~/cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")  
+     ![附加 Unity 的偵錯工具。](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")  
   
 -   或者，在 Visual Studio 中，選擇 Visual Studio 右下角狀態列上的插頭圖示。  
   
-     ![這個圖示顯示 VSTU 已連接到 Unity。](~/cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")  
+     ![這個圖示顯示 VSTU 已連接到 Unity。](../cross-platform/media/vstu_connection_connected.png "vstu_connection_connected")  
   
 > [!TIP]
 >  如果插頭圖示顯示一個勾選記號，則表示您已連接到 Unity 執行個體。  
   
  [選取 Unity 執行個體] 對話方塊會顯示您可連接之每個 Unity 執行個體的一些資訊。  
   
- ![選擇要連接到的 Unity 執行個體。](~/cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")  
+ ![選擇要連接到的 Unity 執行個體。](../cross-platform/media/vstu_connection_to_unity.png "vstu_connection_to_unity")  
   
  **Project**  
  在這個 Unity 執行個體中執行的 Unity 專案名稱。  
@@ -146,7 +130,7 @@ ms.lasthandoff: 05/13/2017
  這個 Unity 執行個體執行所在的電腦或裝置名稱。  
   
  **Type**  
-如果這個 Unity 執行個體當做 Unity Editor 的一部分來執行，則為  **Editor**；如果這個 Unity 執行個體是獨立播放器，則為 **Player**。  
+ 如果這個 Unity 執行個體當做 Unity Editor 的一部分來執行，則為 **Editor**；如果這個 Unity 執行個體是獨立播放器，則為 **Player**。  
   
  **連接埠**  
  這個 Unity 執行個體用於通訊之 UDP 通訊端的通訊埠編號。  
@@ -186,13 +170,13 @@ ms.lasthandoff: 05/13/2017
   
 1.  將現有的 DLL 專案加入 Visual Studio Tools for Unity 所產生的 Visual Studio 方案。 在較不常見的情況下，您可能會啟動新的 Managed DLL 專案來包含 Unity 專案中的程式碼元件；如果是這種情況，您可以改為將新的 Managed DLL 專案加入 Visual Studio 方案。 如需將新的或現有的專案加入至方案的詳細資訊，請參閱[作法：將專案加入至方案](https://msdn.microsoft.com/en-us/library/vstudio/ff460187.aspx)。  
   
-     ![將現有的 DLL 專案加入至方案。](~/cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")  
+     ![將現有的 DLL 專案加入至方案。](../cross-platform/media/vstu_debugging_dll_add_existing.png "vstu_debugging_dll_add_existing")  
   
      不論是哪一種情況，Visual Studio Tools for Unity 都會保留專案參考 (即使必須再次重新產生專案和方案檔亦然)，因此您只需要執行這些步驟一次。  
   
 2.  參考 DLL 專案中的正確 Unity Framework 設定檔。 在 Visual Studio 的 DLL 專案屬性中，將 [目標 Framework] 屬性設定為您所使用的 Unity Framework 版本。 這是與專案的目標應用程式開發介面相容的 Unity 基底類別庫，例如 Unity 完整、微型或 Web 基底類別庫。 如此可防止 DLL 呼叫存在於其他 Framework 或相容性層級中，但可能不存在於您所使用之 Unity Framework 版本的 Framework 方法。  
   
-     ![將 DLL 的目標 Framework 設定為 Unity 架構。](~/cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
+     ![將 DLL 的目標 Framework 設定為 Unity 架構。](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")  
   
 3.  將 DLL 複製到 Unity 專案的 Assets 資料夾。 在 Unity 中，資產是與 Unity 應用程式一起封裝及部署的檔案，以便可以在執行階段載入。 由於 DLL 是在執行階段連結，因此您必須將 DLL 部署為資產。 為了將 DLL 部署為資產，Unity Editor 會要求將 DLL 放在 Unity 專案的 [Assets] 資料夾中。 有兩種方式可讓您完成這個步驟：  
   

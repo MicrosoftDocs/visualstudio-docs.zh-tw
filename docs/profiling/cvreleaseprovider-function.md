@@ -1,30 +1,29 @@
 ---
 title: "CvReleaseProvider 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvReleaseProvider"
-helpviewer_keywords: 
-  - "CvReleaseProvider 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvReleaseProvider
+helpviewer_keywords: CvReleaseProvider method
 ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6a6adcdd1be3b14ec4dbb9462ebddd82d9835e4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CvReleaseProvider 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-釋放標記提供者。  釋放標記提供者並不會影響這個提供者先前建立的標記系列。  標記數列必須分別由 CvReleaseMarkerSeries 呼叫釋放。  無法釋放提供者會造成記憶體遺漏 \(Memory Leak\)。  
+# <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函式
+釋放標記提供者。 釋放標記提供者不會影響此提供者先前建立的標記系列。 標記系列必須個別由 CvReleaseMarkerSeries 呼叫釋放。 釋放提供者失敗會造成記憶體流失。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CvReleaseProvider(  
@@ -32,15 +31,15 @@ HRESULT CvReleaseProvider(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pProvider`  
- 提供者內容。  不可為 NULL 。  
+ 提供者的內容。 不可以是 NULL。  
   
-## 傳回值  
- S\_OK，當成功釋放提供者或有任何錯誤時顯示錯誤碼。  使用 SUCCEEDED\/FAILED 巨集來檢查錯誤條件。  
+## <a name="return-value"></a>傳回值  
+ 成功釋放提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
-## 需求  
- **標題:** cvmarkers.h  
+## <a name="requirements"></a>需求  
+ **標頭︰**cvmarkers.h  
   
-## 請參閱  
- [C\+\+ 程式庫參考](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>另請參閱  
+ [C++ 程式庫參考](../profiling/cpp-library-reference.md)

@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 07/13/2017
 ms.topic: article
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
+ms.openlocfilehash: b494128a26691f9916a0fe2380a5f403e61d21d4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 9e7d7314240688c1acbf064a53ba182b92833a60
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="getting-started-with-aspnet-core"></a>開始使用 ASP.NET Core
 
  Visual Studio for Mac 可藉由支援最新的 ASP.NET Core Web 程式開發平台，讓您輕鬆地開發應用程式的服務。 ASP.NET Core 在 .NET Core 上執行，而 .NET Core 是 .NET Framework 和執行階段的最新演進。 它已針對快速效能進行調整、分解成小型安裝大小，並重新設想為在 Linux 與 macOS 及 Windows 上執行。
@@ -63,7 +61,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
-ASP.NET Core 應用程式會透過 [`WebHostBuilder`](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
+ASP.NET Core 應用程式會透過 [`WebHostBuilder`](https://docs.microsoft.com/aspnet/core/fundamentals/hosting) 的執行個體設定和啟動主機，在其 Main 方法中建立 Web 伺服器。 這個建立器提供了一些方法來允許設定主機。 在範本應用程式中會使用下列組態：
 
  * `UseKestrel`：指定應用程式將使用的 Kestrel 伺服器
  * `UseContentRoot(Directory.GetCurrentDirectory())`：當應用程式從 Web 專案的根資料夾啟動時，使用這個資料夾作為應用程式的內容根目錄
@@ -109,7 +107,7 @@ public class Startup
 
 `ConfigureServices` 方法會定義您的應用程式將使用的服務。
 
-`Configure` 可讓您使用[中介軟體](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware)撰寫要求管線。 這些是 ASP.NET 應用程式管線中用來處理要求和回應的元件。 HTTP 管線包含許多要求委派，這些委派將依順序呼叫。 每個委派可以選擇處理要求本身，或將它傳遞至下一個委派。
+`Configure` 可讓您使用[中介軟體](https://docs.microsoft.com/aspnet/core/fundamentals/middleware)撰寫要求管線。 這些是 ASP.NET 應用程式管線中用來處理要求和回應的元件。 HTTP 管線包含許多要求委派，這些委派將依順序呼叫。 每個委派可以選擇處理要求本身，或將它傳遞至下一個委派。
 
 您可以在 `IApplicationBuilder` 上使用 `Run`、`Map` 和 `Use` 方法來設定委派，但 `Run` 方法永遠不會呼叫下一個委派，因此應該一律在管線結尾處使用。
 
@@ -135,7 +133,7 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 - **檢視**：顯示應用程式的使用者介面 (這通常是模型資料)。
 - **控制器**：用來處理瀏覽器要求、回應使用者輸入和互動的類別。
 
-如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview)指南。
+如需使用 MVC 的詳細資訊，請參閱 [ASP.NET Core MVC 的概觀](https://docs.microsoft.com/aspnet/core/mvc/overview)指南。
 
 若要新增控制器，請執行下列作業：
 
@@ -237,4 +235,3 @@ ASP.NET Core 應用程式使用「模型-檢視-控制器 (MVC)」設計模式�
 - [ASP.NET Core](https://docs.microsoft.com/aspnet/core/#build-web-ui-and-web-apis-using-aspnet-core-mvc) 文件。
 - [建立原生行動應用程式的後端服務](https://docs.microsoft.com/aspnet/core/mobile/native-mobile-backend)，其示範如何使用 Xamarin.Forms 應用程式的 ASP.NET Core 來建置 REST 服務。
 - [ASP.NET Core 實習實驗室](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started)。
-

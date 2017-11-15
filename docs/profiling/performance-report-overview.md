@@ -1,23 +1,26 @@
 ---
-title: "分析工具報告概觀 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "分析工具, 關於效能報告"
-  - "效能, 報告"
-  - "效能報告, 關於效能報告"
+title: "效能報告概觀 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, about performance rerports
+- performance, reports
+- performance reports, about performance reports
 ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
-caps.latest.revision: 45
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 45
+caps.latest.revision: "45"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0244cbae9a331303434db89a42518812efc2677b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="performance-report-overview"></a>效能報告概觀
 您可以在 Visual Studio Team System Development Edition 整合式開發環境 (IDE) 的 [效能報告] 視窗中檢視效能工作階段的程式碼剖析資料。 程式碼剖析資料儲存在 .vsp 和 .vsps 檔案中。 [報表檢視] 視窗可讓您檢視和分析應用程式效能問題。  
@@ -96,8 +99,3 @@ caps.handback.revision: 45
 ## <a name="see-also"></a>另請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [效能報告檢視](../profiling/performance-report-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

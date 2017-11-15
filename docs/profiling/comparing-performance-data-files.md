@@ -1,22 +1,25 @@
 ---
-title: "比較程式碼剖析工具資料檔案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具，比較程式碼剖析工具報告檔"
-  - "程式碼剖析工具報告，比較"
+title: "比較效能資料檔案 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, comparing profiling tools report files
+- profiling tools reports, comparing
 ms.assetid: e6fda144-f21d-4912-9d16-1b8d3555a210
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 586665565126dc67fe3fbeb7d3eda3e7061e4650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-performance-data-files"></a>比較效能資料檔案
 分析工具資料檔案比較功能可讓您選取兩個報表檔案 (.VSP 或 .VSPS) 檔案，然後產生報告以顯示一個分析工作階段到另一個之間發生的差異、效能衰退和改進。  
@@ -33,8 +36,3 @@ caps.handback.revision: 12
   
 ## <a name="in-this-section"></a>本章節內容  
  [如何：比較效能資料檔案](../profiling/how-to-compare-performance-data-files.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

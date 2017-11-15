@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
-caps.latest.revision: 5
-author: kempb
-ms.author: kempb
+caps.latest.revision: "5"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: fa857220def2da9b05f1bbed70e906034727b8af
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 82bce617eec0f5038499a2eed370efa33d817e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-debugging-in-visual-studio"></a>Visual Studio 中的使用者偵錯入門
 Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在本主題中，可了解如何開始使用最基本的偵錯 UI 功能。  
@@ -47,15 +31,15 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  預設建置組態是 [偵錯]。  
 
- ![Visual Studio 偵錯建置按鈕](~/ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
+ ![Visual Studio 偵錯建置按鈕](../ide/media/vs_ide_gs_debug_build_type1.PNG "Vs_ide_gs_debug_build_type1")  
 
  您也可以指定特定的建置平台為目標，例如 **x86** (32 位元 Intel CPU)、**x64** (64 位元 Intel CPU) 和 **ARM** (ARM CPU，只支援特定的應用程式類型)。 Managed 和原生專案的預設值是 **x86**。 若要變更，請按一下建置平台下拉式清單，然後選取不同的平台或 [組態管理員...]。  
 
- ![Visual Studio 組態檔管理員視窗](~/ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
+ ![Visual Studio 組態檔管理員視窗](../ide/media/vs_ide_gs_debug_build_cf_mgr.PNG "Vs_ide_gs_debug_build_cf_mgr")  
 
  您可以使用 [組態管理員] 來指定目標的建置組態。 請啟動它，並按一下 [組態] 或 [CPU] 下拉式清單，然後選取 [新增...] 來建立新的建置或平台。  
 
- ![Visual Studio 組態管理員視窗](~/ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
+ ![Visual Studio 組態管理員視窗](../ide/media/vs_ide_gs_debug_build_cf_mgr_2.PNG "Vs_ide_gs_debug_build_cf_mgr_2")  
 
  開始之後，只要使用 [偵錯] 和 [x86] 分別作為您的建置組態和平台。 完成程式碼撰寫和偵錯時，請將組態變更為 [發行]，並且以特定平台為目標 (舊版 Visual Studio 提供 .Net 程式碼專案的 **AnyCPU** 預設平台)。  
 
@@ -64,7 +48,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 ### <a name="building-your-code"></a>建置您的程式碼  
  當您的建置設定完之後，就可以真正開始建置您的專案。 最簡單的作法是按下 F7，但您也可以從主功能表選取 [建置] -> [建置方案] 來開始建置。  
 
- ![Visual Studio 建置專案功能表選取項目](~/ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
+ ![Visual Studio 建置專案功能表選取項目](../ide/media/vs_ide_gs_debug_build_menu_item.png "Vs_ide_gs_debug_build_menu_item")  
 
  您可以在 Visual Studio UI 底部的 [輸出] 狀態視窗觀察建置程序。 這裡會顯示錯誤、警告和建置作業。 如果有錯誤 (或者如果您有高於已設定層級的警告)，您的建置將會失敗。 您可以按一下這些錯誤和警告，移至發生錯誤和警告的程式行。 請再按 **F7** 一次 (只重新編譯有錯誤的檔案) 來重建專案，或是按 **Ctrl+Alt+F7** (對於全新且完整的重建)。  
 
@@ -72,33 +56,33 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  成功後，您會在 [輸出] 視窗中看到與這個類似的結果。  
 
- ![Visual Studio 成功組建輸出](~/ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
+ ![Visual Studio 成功組建輸出](../ide/media/vs_ide_gs_debug_success_build.PNG "vs_ide_gs_debug_success_build")  
 
 ### <a name="reviewing-the-error-list"></a>檢閱錯誤清單  
- 除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地檢視問題，請巡覽至組建 [輸出] 視窗底部，然後按一下 [錯誤清單] 索引標籤。 這會讓您更有組織地檢視專案的錯誤和警告，並提供您一些額外的選項。  
+ 除非您不修改先前編譯成功的程式碼，否則可能還是會有錯誤。 如果您是撰寫程式碼的新手，您可能會有許多錯誤。 錯誤有時會很明顯，例如簡單的語法錯誤或不正確的變數名稱，但有時候它們會很難了解，只有隱密的程式碼引導您。 如需更清楚地檢視問題，請巡覽至組建 [輸出] 視窗底部，然後按一下 [錯誤清單] 索引標籤。這會讓您更有組織地檢視專案的錯誤和警告，並提供您一些額外的選項。  
 
- ![Visual Studio 輸出和錯誤清單](~/ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
+ ![Visual Studio 輸出和錯誤清單](../ide/media/vs_ide_gs_debug_bad_build_error_list.PNG "Vs_ide_gs_debug_bad_build_error_list")  
 
  在 [錯誤清單] 視窗中按一下錯誤行，然後跳至發生錯誤的行。 (或者，按一下右上方的 [快速啟動] 列，並鍵入「行號」，然後按 Enter 鍵，來開啟行號。 這是到達 [選項] 視窗項目的最快速方式，您可以在其中開啟行號。 了解如何使用 [快速啟動] 列，並且替您省下很多的 UI 點選！)  
 
- ![使用行號的 Visual Studio 編輯器](~/ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
+ ![使用行號的 Visual Studio 編輯器](../ide/media/vs_ide_gs_debug_line_numbers.png "Vs_ide_gs_debug_line_numbers")  
 
- ![Visual Studio 行號選項](~/ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
+ ![Visual Studio 行號選項](../ide/media/vs_ide_gs_debug_options_line_numbers.png "Vs_ide_gs_debug_options_line_numbers")  
 
  使用 Ctrl+G 快速跳至發生錯誤的行號。  
 
  錯誤會用紅色「波浪線」的底線加以識別。 如需其他詳細資料，請將滑鼠游標暫留在這上面。 請予以修正，然後它就會消失 (儘管您在修正時可能會導入新的錯誤)。 (這稱為「迴歸」)。  
 
- ![Visual Studio 錯誤動態顯示](~/ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
+ ![Visual Studio 錯誤動態顯示](../ide/media/vs_ide_gs_debug_error_hover1.png "Vs_ide_gs_debug_error_hover1")  
 
  逐一查核錯誤清單，並處理您程式碼中的所有錯誤。  
 
- ![Visual Studio 偵錯錯誤視窗](~/ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
+ ![Visual Studio 偵錯錯誤視窗](../ide/media/vs_ide_gs_debug_error_list.PNG "Vs_ide_gs_debug_error_list")  
 
 ### <a name="reviewing-errors-in-detail"></a>詳細檢閱錯誤  
  有許多錯誤以編譯器的術語敘述時，可能會對您沒有任何意義。 在這種情況下，您會需要其他資訊。 在 [錯誤清單] 視窗中，您可以滑鼠右鍵按一下對應的項目行，然後從操作功能表中選取 [顯示錯誤說明]，以自動到 Bing 搜尋更多錯誤 (或警告) 的相關資訊。  
 
- ![Visual Studio 錯誤清單 Bing 搜尋](~/ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
+ ![Visual Studio 錯誤清單 Bing 搜尋](../ide/media/vs_ide_gs_debug_error_list_error_help.png "Vs_ide_gs_debug_error_list_error_help")  
 
  這樣會在 Visual Studio 內啟動索引標籤，其中裝載錯誤碼和文字的 Bing 搜尋結果。 這些結果可能來自網際網路上的許多不同來源，並非全部都有幫助。  
 
@@ -109,28 +93,28 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  按 Alt+F11 (或從上方功能表選取 [分析] -> [針對方案執行程式碼分析]) 來啟動靜態程式碼分析。 如果您有大量程式碼，這可能需要一些時間。  
 
- ![Visual Studio 程式碼分析功能表項目](~/ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
+ ![Visual Studio 程式碼分析功能表項目](../ide/media/vs_ide_gs_debug_run_code_analysis.png "Vs_ide_gs_debug_run_code_analysis")  
 
  任何新的或已更新的警告都會出現在 IDE 底部的 [錯誤清單] 索引標籤中。 按一下以移至這些警告。  
 
- ![Visual Studio 錯誤清單 (含警告)](~/ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
+ ![Visual Studio 錯誤清單 (含警告)](../ide/media/vs_ide_gs_debug_code_analysis_warning_error_list.PNG "vs_ide_gs_debug_code_analysis_warning_error_list")  
 
  警告會以亮黃綠色波浪線識別，而非紅色。 如需詳細資訊，請將滑鼠游標暫留於此，並以滑鼠右鍵按一下以取得操作功能表，這有助於修正或重構選項。  
 
- ![Visual Studio 程式碼分析警告動態顯示](~/ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
+ ![Visual Studio 程式碼分析警告動態顯示](../ide/media/vs_ide_gs_debug_code_analysis_warning_hover.png "vs_ide_gs_debug_code_analysis_warning_hover")  
 
 ### <a name="using-light-bulbs-to-fix-or-refactor-code"></a>使用燈泡來修正或重構程式碼。  
  燈泡是 Visual Studio 的新功能，可讓您重構程式碼內嵌。 這是可迅速有效地修正常見警告之簡單方式。 若要存取，請以滑鼠右鍵按一下警告波浪線 (按 Ctrl+. ，若滑鼠游標在波浪線上暫留)，然後選取 [快速動作]。  
 
- ![Visual Studio 燈泡快速選項](~/ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
+ ![Visual Studio 燈泡快速選項](../ide/media/vs_ide_gs_debug_light_bulb1.png "Vs_ide_gs_debug_light_bulb1")  
 
  您會看到一份可能的修正或重構清單，可套用至該程式碼行。  
 
- ![Visual Studio 燈泡預覽](~/ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
+ ![Visual Studio 燈泡預覽](../ide/media/vs_ide_gs_debug_light_bulb_preview_changes.PNG "Vs_ide_gs_debug_light_bulb_preview_changes")  
 
  只要程式碼分析器判斷有修正、重構或改善程式碼的機會，即可使用燈泡。 按一下任何一行程式碼，再按一下滑鼠右鍵開啟操作功能表，然後選取 [快速選項]\ (或者同樣地，如果您偏重效率，請按 Ctrl+.)。 如果有可用的區域重構或改善選項，就會顯示它們；否則，`No quick options available here` 訊息會顯示在 IDE 的左下角邊框。  
 
- ![Visual Studio 燈泡「無選項」文字](~/ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
+ ![Visual Studio 燈泡「無選項」文字](../ide/media/vs_ide_gs_debug_light_bulb_no_options.PNG "Vs_ide_gs_debug_light_bulb_no_options")  
 
  有經驗之後，您可以快速地使用方向鍵和 Ctrl+. 來檢查 [快速選項] 重構機會，並清除程式碼！  
 
@@ -139,15 +123,15 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 ### <a name="debugging-your-running-code"></a>偵錯您執行的程式碼  
  既然您已成功建置程式碼並已稍加清除，請按 F5 或選取 [偵錯] -> [開始偵錯] 予以執行。 這會在偵錯環境中啟動您的應用程式，如此一來您可詳細觀察其行為。 應用程式執行時，Visual Studio IDE 就會變更：[輸出] 視窗由兩個新的視窗所取代 (在預設視窗組態中)、[自動變數/區域變數/模組/監看式] 索引標籤式視窗和 [呼叫堆疊/中斷點/例外狀況設定/輸出] 索引標籤式視窗。 這些視窗有多個索引標籤，可讓您在執行時檢查和評估應用程式變數、執行緒、呼叫堆疊以及各種其他行為。  
 
- ![Visual Studio 自動變數和呼叫堆疊視窗](~/ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
+ ![Visual Studio 自動變數和呼叫堆疊視窗](../ide/media/vs_ide_gs_debug_autos_and_call_stack.PNG "Vs_ide_gs_debug_autos_and_call_stack")  
 
  請嘗試使用應用程式的各種動作，並觀察變更。 如果某些內容出現異常，請按 Ctrl+Alt+Break (或按一下 [暫停] 按鈕) 暫停應用程式。  
 
- ![Visual Studio 全部中斷按鈕](~/ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
+ ![Visual Studio 全部中斷按鈕](../ide/media/vs_ide_gs_debug_break_all_button.png "vs_ide_gs_debug_break_all_button")  
 
  按 F5 繼續執行應用程式 (或按一下 [繼續] 按鈕)。  
 
- ![Visual Studio 偵錯繼續按鈕](~/ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
+ ![Visual Studio 偵錯繼續按鈕](../ide/media/vs_ide_gs_debug_continue_button.png "Vs_ide_gs_debug_continue_button")  
 
  您可以按 Shift+F5 或按一下 [停止] 按鈕停止應用程式。 或者，您只需關閉應用程式的主視窗 (或命令列對話方塊)。  
 
@@ -158,7 +142,7 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  按一下您想讓中斷發生的程式碼行最旁邊的邊界，以設定中斷點，或是選取該行程式碼，然後按 F9。 當您執行程式碼時，在執行這行程式碼的指令之前，它會先停止。  
 
- ![Visual Studio 中斷點](~/ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
+ ![Visual Studio 中斷點](../ide/media/vs_ide_gs_debug_breakpoint1.png "Vs_ide_gs_debug_breakpoint1")  
 
  當程式碼中斷時，有標示的這行程式碼仍尚未執行。 此時，您或許想要執行標示有中斷點的程式碼指令，並查看其變更的值。 這稱為「逐步執行」程式碼。 如果所標示的程式碼為方法呼叫，您可以按 F11 逐步執行。 您也可以按 F10，讓這行程式碼「不進入函式」。 如需程式碼逐步執行的詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。  
 
@@ -179,24 +163,24 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
 
  當變數設定為特定值或傳遞特定閾值時，若要設定條件中斷點並暫停程式碼，請按一下邊界來設定中斷點，然後從出現的停留功能表中選取「齒輪」。  
 
- ![Visual Studio 中斷點設定](~/ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
+ ![Visual Studio 中斷點設定](../ide/media/vs_ide_gs_debug_breakpoint_settings.png "Vs_ide_gs_debug_breakpoint_settings")  
 
  您會看到一個看起來像這樣的對話方塊，您可以在此設定讓中斷發生的特定條件。  
 
- ![Visual Studio 條件中斷點](~/ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
+ ![Visual Studio 條件中斷點](../ide/media/vs_ide_gs_debug_breakpoint_conditional.PNG "Vs_ide_gs_debug_breakpoint_conditional")  
 
  如需宣告運算式用於評估條件中斷點之方式的詳細資訊，請看 Channel9 的影片 [Breakpoint Configuration Experience in Visual Studio](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/711) (Visual Studio 的中斷點組態體驗)。  
 
 ### <a name="inspecting-your-code-at-run-time"></a>在執行階段檢查您的程式碼  
  當您執行的程式碼叫用中斷點而且中止時，您可以檢查變數和呼叫堆疊來判斷發生了什麼狀況。 這些是在您預期會看見的範圍內的值嗎？ 呼叫的順序正確嗎？  
 
- ![Visual Studio 執行階段值檢查](~/ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
+ ![Visual Studio 執行階段值檢查](../ide/media/vs_ide_gs_debug_inspect_value.PNG "vs_ide_gs_debug_inspect_value")  
 
  將滑鼠停留在變數，以查看變數的值和目前包含的參考。 如果您看到非預期的值，則前面的程式碼或呼叫行程式碼可能有 Bug。 請將中斷點往上移，或將條件加入現有的中斷點，以進一步縮小搜尋條件。  
 
  此外，Visual Studio 會顯示 [診斷工具] 視窗，其中您可以觀察隨時間推移的應用程式之 CPU 和記憶體使用量。 請使用它們來尋找非預期的繁重 CPU 使用量或記憶體配置。 搭配 [監看式] 視窗和中斷點使用，以判斷是什麼造成非預期的繁重使用量或資源未釋放。  
 
- ![Visual Studio 診斷工具視窗](~/ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
+ ![Visual Studio 診斷工具視窗](../ide/media/vs_ide_gs_debug_diagnostic_tools.PNG "Vs_ide_gs_debug_diagnostic_tools")  
 
 ### <a name="running-unit-tests"></a>執行單元測試  
  單元測試是在應用程式或服務中執行程式碼路徑的程式。 Visual Studio 會安裝 Managed 和原生程式碼的 Microsoft 單元測試架構。 請使用單元測試架構來建立並執行單元測試，然後報告這些測試的結果。 當您進行變更來測試程式碼是否仍正常運作時，請重新執行單元測試。 當您使用 Visual Studio Enterprise 版本時，可以在每次建置後自動執行測試。  
@@ -210,4 +194,3 @@ Visual Studio 提供一組強大的整合式專案建置和偵錯工具。 在�
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)   
  [偵錯 64 位元應用程式](../debugger/debug-64-bit-applications.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)
-

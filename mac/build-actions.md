@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 347378da197b5c6d22bbd145c2ac8673d53a63bf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="build-actions"></a>建置動作 
 
 Visual Studio for Mac 專案中的所有檔案都有一個建置動作，用以控制檔案在建置期間所發生的狀況。 透過在任何檔案上按一下滑鼠右鍵，並瀏覽至 [建置動作] 即可進行設定，如下所示：

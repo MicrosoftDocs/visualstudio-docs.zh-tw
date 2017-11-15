@@ -1,23 +1,26 @@
 ---
-title: "如何：從檢測排除或包含 Short 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具，檢測事件"
-  - "程式碼剖析工具，包含精簡函式"
-  - "程式碼剖析工具，排除精簡函式"
+title: "如何：從檢測排除或包含精簡函式 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, instrument events
+- profiling tools, include short functions
+- profiling tools, exclude short functions
 ms.assetid: eaeead79-aafe-4490-86ff-6ed4cad9c15f
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 22b6705c295a8a738645d163dd982b22061cabf2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-exclude-or-include-short-functions-from-instrumentation"></a>如何：從檢測排除或包含 Short 函式
 根據預設，程式碼剖析工具會從檢測排除*小型函式*。 小型函式是不會進行任何函式呼叫的精簡函式。 排除這些小型函式可減少檢測負荷，並能因此改善檢測速度。 排除小型函式也能減少效能程式碼剖析資料檔 (.vsp) 大小和分析所需的時間。 如果已排除小型函式，小型函式所花費的時間會算在其父函式的專有和內含時間。 小型函式可以排除或包含在檢測中，如下列程序所述。  
@@ -41,8 +44,3 @@ caps.handback.revision: 13
 ## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

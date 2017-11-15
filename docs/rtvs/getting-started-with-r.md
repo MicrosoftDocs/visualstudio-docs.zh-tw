@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio 中的 R 使用者入門 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 39228cf0-8d21-43bb-a2ce-5e5fdc81ec41
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 616b39cdd355e6a795a4b4e2929586ba233ab8da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: b9fb38bf7e21924d7fbece72978e99d298a42b74
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="getting-started-with-r-tools-for-visual-studio"></a>Visual Studio R 工具使用者入門
 
 一旦安裝了 Visual Studio R 工具 (RTVS) (請參閱[安裝](installation.md))，便可以快速體驗一下這些工具提供的體驗。 下列各節將引導您完成簡短的教學課程︰
@@ -35,7 +32,7 @@ ms.lasthandoff: 07/12/2017
 ## <a name="create-an-r-project"></a>建立 R 專案
 
 1. 啟動 Visual Studio。
-1. 選擇 [檔案] > [新增] > [專案...]\(Ctrl+Shift+N)
+1. 選擇 [檔案] > [新增] > [專案...](Ctrl+Shift+N)
 1. 從 [範本] > [R] 下選取 [R 專案]、提供專案名稱和位置，然後選取 [確定]：
 
    ![Visual Studio R (在 VS2017 中為 RTVS) 的 [新增專案] 對話方塊](media/getting-started-01-new-project.png)
@@ -170,7 +167,7 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 
     ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
 
-1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。\
+1. 您可以繼續逐步執行程式行，或選取 [繼續]\(F5) 來執行到完成 (或下一個中斷點)。
 
 若要深入資訊，請參閱[偵錯](debugging.md)和[變數總管](variable-explorer.md)。
 
@@ -183,4 +180,3 @@ Visual Studio 的其中一項主要優點是其偵錯 UI。 RTVS 建置在這項
 - [偵錯](debugging.md)
 - [工作區](workspaces.md)
 - [視覺化資料](visualizing-data.md)
-

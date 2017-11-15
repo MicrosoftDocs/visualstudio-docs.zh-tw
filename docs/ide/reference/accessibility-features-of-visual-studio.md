@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 08/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -15,12 +14,11 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 2f74439a5814d9939d9a4a3cd76cb430194375a6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 > [!TIP]
@@ -55,4 +53,3 @@ ms.lasthandoff: 09/06/2017
 
 ## <a name="see-also"></a>另請參閱  
  [Microsoft 提供的協助工具產品和服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md)
-

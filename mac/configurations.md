@@ -6,14 +6,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: e435418c0c77f1577e9db8ab35d76d6bd54f8447
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="understanding-build-configurations"></a>了解組建組態
 
 ## <a name="project-build-configurations"></a>專案組建組態 
@@ -69,4 +67,3 @@ Android 專案的回合組態可讓您指定執行專案或對專案進行偵錯
 * WatchKit 專案
     * 模式 (概覽、通知)
     * 通知承載
-

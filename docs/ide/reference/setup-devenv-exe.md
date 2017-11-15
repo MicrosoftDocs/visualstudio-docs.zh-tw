@@ -1,28 +1,28 @@
 ---
-title: "-Setup (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "setup Devenv 參數"
-  - "/setup Devenv 參數"
-  - "Devenv, /setup 參數"
+title: -Setup (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- setup Devenv switch
+- /setup Devenv switch
+- Devenv, /setup switch
 ms.assetid: 87608b7f-a156-400c-80f5-fc823f843e61
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e63b69c9d97edf5049dfb6e55b8f9d5010984d4d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# /Setup (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="setup-devenvexe"></a>/Setup (devenv.exe)
 強制 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合併所有來自可用 Vspackage 的資源中繼資料 (其描述功能表、工具列和命令群組)。  
   
 ## <a name="syntax"></a>語法  

@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio R 工具的範例專案 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: aa52ed0e-cdb5-4fb2-814c-c94cac2ffc6f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 6ceedfff067f245de4b159728bd34a3a849fe9dc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: ec9862f9e7fcbd084d5e12c0467c8b608a5b4956
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Visual Studio R 工具範例專案
 
 此範例集合能讓您開始使用 R、Visual Studio R 工具 (RTVS) 和 Microsoft R 伺服器︰
@@ -93,4 +90,3 @@ ms.lasthandoff: 07/12/2017
 然後，下圖比較建立使用羅吉斯迴歸模型來預測航班延遲超過 15 分鐘時，耗用的時間 (以秒為單位)。  當增加少量的資料列時，CRAN R 中使用的已耗用時間會大幅增加，而 MRS 則只增加大約兩倍。 如需此基準測試的詳細資料，請參閱 `Benchmarks/rxGlm_benchmark.R` 範例。
 
 ![rxGlm 基準測試](media/samples-rxGLM-benchmark.png)
-

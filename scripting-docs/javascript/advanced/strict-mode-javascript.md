@@ -5,8 +5,7 @@ ms.date: 01/18/2017
 ms.prod: windows-client-threshold
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-javascript
+ms.technology: devlang-javascript
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - strict mode
 - use strict
 ms.assetid: 0f27022a-f41c-4504-965c-5a2701f342cd
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 29eb97427c2c5a29ee9a66e8e2a85953fd797efd
 ms.openlocfilehash: 77ee7d54dd265026b2bf4c9af52a71cccf9a7675
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="strict-mode-javascript"></a>strict 模式 (JavaScript)
 檢查程式碼錯誤時，使用 strict 模式可獲得較佳的效果。 例如，當您使用 strict 模式時，就不能使用隱含宣告的變數或將值指派給唯讀屬性，也不能為無法擴充的物件添加屬性。 本主題稍後的[程式碼在 strict 模式下的限制](../../javascript/advanced/strict-mode-javascript.md#rest)一節中會列出這些限制。 如需 strict 模式的詳細資訊，請參閱 [ECMAScript 語言規格，第 5 版](http://www.ecma-international.org/publications/standards/Ecma-262.htm)。  

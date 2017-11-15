@@ -1,31 +1,31 @@
 ---
 title: "Visual Studio 範例 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/16/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "範例應用程式 [Visual Studio]"
+ms.custom: 
+ms.date: 11/16/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-acquisition
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: sample applications [Visual Studio]
 ms.assetid: 3070fa13-46c7-4252-a1c2-857b4a2c9528
-caps.latest.revision: 51
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
-caps.handback.revision: 51
+caps.latest.revision: "51"
+author: TerryGLee
+ms.author: tglee
+manager: ghogen
+ms.openlocfilehash: a69ac4580d14546211fb65b19e05b6766b07af91
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-samples"></a>Visual Studio Samples
 您可以在 [MSDN Code Gallery](http://go.microsoft.com/fwlink/?LinkID=127810) 網站找到 Visual Studio 範例。  
   
- 您可以使用 [新增專案]  對話方塊來瀏覽範例。 (若要開啟對話方塊，請在功能表列上選擇 [檔案] 、[新增] 、[專案] 。)  
-  
 ## <a name="finding-samples"></a>尋找範例  
  以下是可以尋找範例的一些其他地方。  
   
-|區域|說明|  
+|區域|描述|  
 |----------|-----------------|  
 |[Windows 開發人員中心範例](http://go.microsoft.com/fwlink/?LinkID=255278)|示範如何開發 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式。|  
 |[.NET Framework 範例](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)|顯示使用 C# 和 Visual Basic 之 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的各種層面。|  
@@ -40,8 +40,3 @@ caps.handback.revision: 51
   
 ## <a name="see-also"></a>另請參閱  
  [Visual C# 和 Visual Basic 使用者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -1,47 +1,47 @@
 ---
-title: "呼叫端/被呼叫端檢視 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.callercallee"
-helpviewer_keywords: 
-  - "程式碼剖析工具，報表，呼叫端/被呼叫端檢視"
-  - "程式碼剖析工具，呼叫端/被呼叫端檢視"
-  - "效能報告，呼叫端/被呼叫端檢視"
-  - "呼叫端/被呼叫端檢視"
+title: "呼叫端-被呼叫端檢視 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.callercallee
+helpviewer_keywords:
+- profiling tools, reports, Caller/Callee view
+- profiling tools, Caller/Callee view
+- performance reports, Caller/Callee view
+- Caller/Callee view
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
-caps.latest.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0792f59f02c5b75247d5066b132cf1072d37c76a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 呼叫端/被呼叫端檢視
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[呼叫端\/被呼叫端\] 檢視會顯示所選取函式以及其父函式和子函式的程式碼剖析資訊。  \[呼叫端\/被呼叫端\] 檢視包含 3 個方格：  
+# <a name="callercallee-view"></a>呼叫端/被呼叫端檢視
+[呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的分析資訊。 [呼叫端/被呼叫端] 檢視包含三個方格：  
   
- 中間的方格顯示 \[**目前的函式**\]，會列出所選取函式的程式碼剖析資訊。  這些值包括執行程式碼剖析期間所收集之函式的所有呼叫。  
+ **目前的函式**會顯示在中間方格中，顯示所選取函式的分析資訊。 值包含在分析執行中所收集的所有函式呼叫。  
   
- \[**呼叫目前函式的函式**\] 會顯示在上方的方格中，並列出呼叫端 \(父\) 函式呼叫所產生的選取 \(目前\) 函式值的數目。  
+ **呼叫目前函式的函式**會顯示在上方方格中，顯示所選取 (目前) 函式 (從呼叫端 (父) 函式的呼叫所產生) 的值數目。  
   
- 下方的方格顯示 \[**目前的函式所呼叫的函式**\]，會列出目前函式在呼叫所選取函式的子函式 \(即被呼叫端\) 時，該子函式的程式碼剖析資訊。  
+ **目前的函式所呼叫的函式**會顯示在下方方格中，顯示所選取函式之被呼叫端 (子) 函式 (由目前函式所呼叫) 的分析資訊。  
   
- \[呼叫端\/被呼叫端\] 檢視中會出現的資料行，取決於收集資料時使用的程式碼剖析方法 \(取樣或檢測\)，以及在執行程式碼剖析期間是否有收集 .NET 記憶體資料。  
+ [呼叫端/被呼叫端] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及分析執行是否收集 .NET 記憶體資料。  
   
- 您可以按兩下檢視中其他兩個部分列出的任何一個函式，以選擇讓不同的函式變成 \[報告\] 檢視中間部分的 \[目前的函式\]。  \[報告\] 檢視將會自動更新以反映變更。  
+ 您可以選取不同的函式，讓函式成為 [報表] 檢視中間[目前的函式]，只要連按兩下檢視其他兩個部分中所列出的其中一個函式即可。 [報表] 檢視會自動更新以反映變更。  
   
- 您可按一下資料行名稱以排序資料。  您可以在 \[呼叫端\/被呼叫端\] 檢視中加入其他資料行。  如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
+ 您可以按一下資料行名稱來排序資料。 [呼叫端/被呼叫端] 檢視可以加入其他資料行。 如需詳細資訊，請參閱[如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)。  
   
-## 請參閱  
- [呼叫端\/被呼叫端檢視](../profiling/caller-callee-view-sampling-data.md)   
- [呼叫端\/被呼叫端檢視](../profiling/caller-callee-view-instrumentation-data.md)   
- [呼叫端\/被呼叫端檢視 \- 檢測](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
- [呼叫端\/被呼叫端檢視 \- 取樣](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
- [呼叫端\/被呼叫端檢視](../profiling/caller-callee-view-contention-data.md)
+## <a name="see-also"></a>另請參閱  
+ [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   
+ [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)   
+ [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
+ [呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
+ [呼叫端/被呼叫端檢視 - 爭用資料](../profiling/caller-callee-view-contention-data.md)

@@ -1,27 +1,24 @@
 ---
 title: "使用 Visual Studio 中的 Python 進行 Azure 遠端偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d68fdc53-65a1-423c-8964-9815dbb3387e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 1ce80ecdc38075b048c8ae0a7f5773de965355f5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a4ddd2d52aa1a1e4437c0d1f7821761700c2a91e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-azure"></a>對 Azure 上的 Python 程式碼進行遠端偵錯
 
 [Visual Studio 中的 Python 支援](installation.md)包括能夠對 Azure App Service 上執行的 Python 程式碼進行遠端偵錯。 不同於簡單的遠端偵錯，此案例中的目標電腦無法透過 TCP 直接存取；因此，Visual Studio 提供可透過 HTTP 公開偵錯工具通訊協定的 Proxy。 使用網站範本建立的專案會在產生的 `web.debug.config` 檔案中自動設定此 Proxy。 當您發佈您專案的偵錯組態時，也會啟用遠端偵錯，如[發佈至 Azure App Service](template-web.md#publishing-to-azure-app-service) 所述。
@@ -55,4 +52,3 @@ Visual Studio 可能會直接提供您一連串的指示來直接附加，如以
 若要附加偵錯工具，請選取 [偵錯 (Debug)] > [附加至處理序 (Attach to Process)]，選取 [傳輸 (Transport)] 下拉式清單中的 [Python 遠端偵錯 (Python remote debugging)]，在 [限定詞文字方塊 (Qualifier textbox)] 中輸入該 URL，然後按 Enter。 如果 Visual Studio 可以成功連線至 App Service，它會在清單中顯示一個 Python 處理序。 依序選取該處理序、[附加 (Attach)] 以開始偵錯︰
 
 ![使用 [附加至處理序 (Attach to Process)] 對話方塊附加至 Azure 網站](media/azure-remote-debugging-manual-attach.png)
-

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- unit testing, create unit test plans
+helpviewer_keywords: unit testing, create unit test plans
 ms.assetid: 2171CD69-FBB1-4994-9DCC-3BFFDFD26662
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 576b8b744d24a456c16724cb5ae7e65a73a769db
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 17113215615ff87ef0af611a5bc2061ca0126911
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="get-started-with-unit-testing"></a>開始使用單元測試
 
@@ -187,4 +170,3 @@ ms.lasthandoff: 06/02/2017
 * [使用測試總管執行測試](run-unit-tests-with-test-explorer.md)
 * [判斷程式碼涵蓋範圍](using-code-coverage-to-determine-how-much-code-is-being-tested.md)
 * [改善程式碼品質](improve-code-quality.md)
-

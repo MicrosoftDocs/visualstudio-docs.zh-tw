@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.CannotShowBaseType
+f1_keywords: vs.classdesigner.CannotShowBaseType
 helpviewer_keywords:
 - class diagrams
 - types [Visual Studio], visualizing
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - types [Visual Studio], class diagrams
 - relationships, visualizing
 ms.assetid: c4f46d94-9972-42ac-ae63-6ff306369965
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: e4d056e8e2819c89eec52ebb29747acc49a08654
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 78d7dba3bb799e15b1a609cd5f7bd50e2089195c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>檢視類型和關聯性 (類別設計工具)
 [類別設計工具] 使用類別圖表來顯示類型的詳細資料 (例如其構成成員)，以及類型共有的關聯性。 這些實體在視覺化後，實際上就是程式碼中的動態檢視。 這表示您可以在設計工具上編輯類型，然後就能看到編輯的結果反映在實體的原始程式碼中。 同樣地，類別圖表會與您對程式碼中的實體所做的變更保持同步。  

@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ReferenceManager
+f1_keywords: VS.ReferenceManager
 helpviewer_keywords:
 - Visual C# projects, references
 - references [Visual Studio], adding
@@ -23,30 +21,15 @@ helpviewer_keywords:
 - references [Visual Studio], removing
 - referencing components, assemblies not listed
 ms.assetid: 1aabb520-99b0-46c6-9368-21b4d84793eb
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: b2141a16d27725c54b3407e92151e0ed7afd745e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 3c5e414ab56641171e9d3f5cddf758b6a13a6458
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用參考管理員新增或移除參考
 針對由您本身、Microsoft 或其他公司所開發的元件，您可以使用 [參考管理員] 對話方塊新增並管理這些元件的參考。 如果您正在開發通用 Windows app，您的專案會自動參考所有正確的 Windows SDK DLL。 如果您正在開發 .NET 應用程式，您的專案會自動參考 mscorlib.dll。 某些 .NET API 是在您手動加入的元件中公開。 您必須手動加入對 COM 元件或自訂元件的參考。  
@@ -147,7 +130,7 @@ ms.lasthandoff: 06/23/2017
 
      在 HKEY_LOCAL_MACHINE 節點下建立登錄機碼，可讓所有使用者都能在 [加入參考] 對話方塊中看到指定位置的組件。 在 HKEY_CURRENT_USER 節點下建立登錄機碼，只會影響目前使用者的設定。  
 
-     再次開啟 [加入參考] 對話方塊。 組件應該會出現在 [.NET] 索引標籤上。 如果沒有顯示，請確認組件位於指定的 <組件位置> 目錄中，然後重新啟動 Visual Studio 並再試一次。  
+     再次開啟 [加入參考] 對話方塊。 組件應該會出現在 [.NET] 索引標籤上。如果沒有顯示，請確認組件位於指定的 <組件位置> 目錄中，然後重新啟動 Visual Studio 並再試一次。  
 
 ## <a name="com-tab"></a>COM 索引標籤  
  [COM] 索引標籤會列出所有可供參考的 COM 元件。 如果您要將參考加入包含內部資訊清單的已註冊 COM DLL，請先移除註冊 DLL。 否則 Visual Studio 會將組件參考加入為 ActiveX 控制項，而不是原生 DLL。  
@@ -233,4 +216,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>另請參閱  
  [管理專案中的參考](../ide/managing-references-in-a-project.md)
-

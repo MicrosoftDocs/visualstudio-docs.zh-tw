@@ -1,30 +1,29 @@
 ---
 title: "CvInitProvider 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvInitProvider"
-helpviewer_keywords: 
-  - "CvInitProvider 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkers/CvInitProvider
+helpviewer_keywords: CvInitProvider method
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f0ddb249c825048b5bb98dd5b648902663ccd85a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CvInitProvider 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-初始化符號提供者。  必須在任何其他並行視覺化檢視SDK 函式之前呼叫。  
+# <a name="cvinitprovider-function"></a>CvInitProvider 函式
+初始化標記提供者。 必須在其他並行視覺化檢視 SDK 函式之前呼叫。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CvInitProvider(  
@@ -33,18 +32,18 @@ HRESULT CvInitProvider(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pGuid`  
- 提供者 GUID。  不可為 NULL 。  
+ 提供者的 GUID。 不可以是 NULL。  
   
  `ppProvider`  
- 要儲存提供者內容輸出變數的位址。  不可為 NULL 。  
+ 將儲存提供者內容的輸出變數位址。 不可以是 NULL。  
   
-## 傳回值  
- S\_OK，當提供者已成功初始化或以防萬一有任何錯誤的錯誤碼。  使用 SUCCEEDED\/FAILED 巨集來檢查錯誤條件。  
+## <a name="return-value"></a>傳回值  
+ 成功初始化提供者時傳回 S_OK，發生任何錯誤時則傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
-## 需求  
- **標題:** cvmarkers.h  
+## <a name="requirements"></a>需求  
+ **標頭︰**cvmarkers.h  
   
-## 請參閱  
- [C\+\+ 程式庫參考](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>另請參閱  
+ [C++ 程式庫參考](../profiling/cpp-library-reference.md)

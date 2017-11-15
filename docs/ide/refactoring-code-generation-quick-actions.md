@@ -4,34 +4,18 @@ ms.custom:
 ms.date: 03/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 46846db26bee30841e6cb35913d533b512d01ba0
-ms.openlocfilehash: 59ed01aa24468dd7b08a10389f91580321fe9b82
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: 7d987cc154f912b8b93bd79365ef3939da1e0457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Visual Studio 中的重構、程式碼產生和快速動作
 Visual Studio 提供各種不同的工具，可協助您撰寫程式碼。  由於這些工具的功能與語言語法緊密相關，Visual Studio 中的每個語言服務會提供它自己的功能。
@@ -52,7 +36,7 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 
 <a name="#quick-actions"></a>
 ## <a name="quick-actions"></a>快速動作
-快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。  這些可以藉由當您的游標位於適當程式碼行時使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Ctrl + .** 來套用。 when your cursor is on the appropriate line of code.
+快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。  當您的游標位於適當程式碼行時，這些可以使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Ctrl + .** 來套用 。
 
 * [快速動作](quick-actions.md)
 * [程式碼樣式及快速動作](code-styles-and-quick-actions.md)
@@ -60,5 +44,4 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 ## <a name="see-also"></a>另請參閱  
 [Visual Studio IDE](../ide/visual-studio-ide.md)   
 [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)  
-
 

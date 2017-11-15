@@ -5,14 +5,12 @@ ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
-ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
 ms.openlocfilehash: 30f6c99c6ac827b7da94fd228a7034e9ce0b0fac
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-
 # <a name="managing-references-in-a-project"></a>管理專案中的參考
 
 Visual Studio for Mac 提供三種方式來新增專案的其他參考：
@@ -44,4 +42,3 @@ NuGet 是適用於 .NET 開發最受歡迎的套件管理員。 Visual Studio fo
 若要這樣做，請以滑鼠右鍵按一下 Solution Pad 中的 [套件] 資料夾，然後選取 [新增套件]。
 
 如需使用 NuGet 套件的詳細資訊，請參閱[在專案中包含 NuGet 套件](~/nuget-walkthrough.md)逐步解說。
-

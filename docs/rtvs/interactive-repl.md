@@ -1,27 +1,24 @@
 ---
 title: "使用 Visual Studio R 工具的互動 REPL | Microsoft Docs"
 ms.custom: 
-ms.date: 6/28/2017
+ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 45d7c6ff-abd3-42a4-8376-0e9c8f7226d5
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: f6dc59ef35c468e746ce183aaf131eed14e56038
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 50d5a1e4ae1eaf5bd680a1709876962feeeb3548
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-the-r-interactive-window"></a>使用 R 互動視窗
 
 Visual Studio R 工具 (RTVS) 所提供的 R 互動視窗也稱為 **REPL** (Read-Evaluate-Print-Loop) 視窗，您可以在其中輸入 R 程式碼，並立即查看結果。 所有模組、語法和變數以及 IntelliSense 都可以在互動式視窗中使用。

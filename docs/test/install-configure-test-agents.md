@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 05/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- configure test agents, test lab
+helpviewer_keywords: configure test agents, test lab
 ms.assetid: EBAA2E04-A97A-4047-B739-8DBA7F2D5074
-caps.latest.revision: 56
+caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 45d36934cf1c46902cac566203cddf4a118b7fe4
-ms.openlocfilehash: 5d9aec436c00bc999356e402facf605c194c9d1a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 738cdab9bcc93408e1bb53df205328d2bc5e917f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="install-and-configure-test-agents"></a>安裝和設定測試代理程式
 
@@ -61,7 +44,7 @@ ms.lasthandoff: 06/02/2017
 
   * 使用 TFS 2013 的連續測試。
 
-這些安裝程式會以 ISO 檔案 (虛擬 CD)提供，方便安裝在虛擬機器上。 
+這些安裝程式會以 ISO 檔案 (虛擬 CD) 提供，方便安裝在虛擬機器上。 
 
 [可以混合使用 TFS、Microsoft Test Manager、測試控制器和測試代理程式的版本嗎？](#MixedVersions)
 
@@ -107,4 +90,3 @@ ms.lasthandoff: 06/02/2017
 ## <a name="see-also"></a>請參閱
 
 * [使用測試設定設定電腦和收集診斷資訊](https://msdn.microsoft.com/library/dd286743%28v=vs.140%29.aspx)
-
