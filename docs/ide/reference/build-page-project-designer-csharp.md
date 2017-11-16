@@ -4,40 +4,23 @@ ms.custom:
 ms.date: 06/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- cs.ProjectPropertiesBuild
+f1_keywords: cs.ProjectPropertiesBuild
 helpviewer_keywords:
 - Build options [C#]
 - Project Designer, Build page
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
-caps.latest.revision: 43
+caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b7b29ffadcb069b6c918dfbe89f0ae49d0da172a
-ms.openlocfilehash: 7325918e8be0f7a8da3a0b2d055a3ebee110572e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/20/2017
-
+ms.openlocfilehash: abf6598cd18661575c0c6bcf6be3c70fffbd21f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="build-page-project-designer-c"></a>專案設計工具、建置頁 (C#)
 您可以使用 [專案設計工具] 的 [建置] 頁面，來指定專案的組建組態屬性。 此頁面只適用於 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 專案。  
@@ -128,7 +111,7 @@ ms.lasthandoff: 06/20/2017
 指定將要在其中處理文件註解之檔案的名稱。 如需詳細資訊，請參閱 [/doc (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。  
 
 **註冊 COM Interop**  
-表示您的 Managed 應用程式將會公開 COM 物件 (COM 可呼叫包裝函式)，讓 COM 物件可與 Managed 應用程式互動。 您必須在 [專案設計工具] 的 [應用程式][](../../ide/reference/application-page-project-designer-visual-basic.md) 頁面中，將此應用程式的 [輸出類型] 屬性設定為 [類別庫]，才能使用 [註冊 COM Interop] 屬性。 如需您想要加入 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 應用程式並公開為 COM 物件的範例類別，請參閱[範例 COM 類別](/dotnet/csharp/programming-guide/interop/example-com-class)。  
+表示您的 Managed 應用程式將會公開 COM 物件 (COM 可呼叫包裝函式)，讓 COM 物件可與 Managed 應用程式互動。 您必須在 [專案設計工具] 的 [[應用程式]](../../ide/reference/application-page-project-designer-visual-basic.md) 頁面中，將此應用程式的 [輸出類型] 屬性設定為 [類別庫]，才能使用 [註冊 COM Interop] 屬性。 如需您想要加入 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 應用程式並公開為 COM 物件的範例類別，請參閱[範例 COM 類別](/dotnet/csharp/programming-guide/interop/example-com-class)。  
 
 **產生序列化組件**  
 指定編譯器是否會使用 XML 序列化程式產生器工具 (Sgen.exe) 來建立 XML 序列化組件。 如果您已在程式碼中使用該類別將類型序列化，則序列化組件可提升 <xref:System.Xml.Serialization.XmlSerializer> 的啟動效能。 此選項預設為 [自動]，指定只有您已在程式碼中使用 <xref:System.Xml.Serialization.XmlSerializer> 將類型編碼為 XML 時，才會產生序列化組件。 [關閉] 指定不論您的程式碼是否使用 <xref:System.Xml.Serialization.XmlSerializer>，永遠不會產生序列化組件。 **On** 指定永遠會產生序列化組件。 序列化組件將命名為 `TypeName`.XmlSerializers.dll。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。  
@@ -139,4 +122,3 @@ ms.lasthandoff: 06/20/2017
 ## <a name="see-also"></a>另請參閱  
 [專案屬性參考](../../ide/reference/project-properties-reference.md)   
 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)
-
