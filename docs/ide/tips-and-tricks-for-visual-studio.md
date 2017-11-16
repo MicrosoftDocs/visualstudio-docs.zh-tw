@@ -95,14 +95,13 @@ ms.lasthandoff: 06/23/2017
 |以此環繞|Ctrl+K、S|  
 |顯示快速諮詢|Ctrl+K、I|  
 |巡覽至|Ctrl+,|  
-|移至定義|F12|  
-|查看定義|Alt+F12|  
-|移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)|  
 |巡覽反白顯示的參考|Ctrl+Shift+Up (上一步)、Ctrl+Shift+Down (下一步)|  
 |編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)|  
 |區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵|  
 |將行上移/下移|Alt+向上鍵 / Alt+向下鍵|  
+|移至定義|F12|  
 |查看定義|Alt+F12|  
+|移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)|  
 |關閉 [查看定義] 視窗|Esc|  
 |將 [查看定義] 視窗升級到一般文件索引標籤|Ctrl+Alt+Home|  
 |在多個 [查看定義] 視窗之間巡覽|Ctrl+Alt+- 和 Ctrl+Alt+=|  
