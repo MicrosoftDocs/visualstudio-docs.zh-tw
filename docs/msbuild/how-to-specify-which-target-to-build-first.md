@@ -1,23 +1,26 @@
 ---
 title: "如何：指定要優先建置的目標 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "DefaultTargets 屬性 [MSBuild]"
-  - "MSBuild 中，指定預設目標"
-  - "MSBuild，DefaultTargets 屬性"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- DefaultTargets attribute [MSBuild]
+- MSBuild, specifying the defalut target
+- MSBuild, DefaultTargets attribute
 ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 22c307129e1c0295b041180f475c3d905cc43539
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定要優先建置的目標
 專案檔可以包含一或多個 `Target` 項目來定義專案的建置方式。 除非專案檔內含 `DefaultTargets` 屬性、`InitialTargets` 屬性，或在命令列中使用 **/target** 參數來指定目標，否則 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 引擎會建置它找到的第一個專案以及任何相依性。  
@@ -75,8 +78,3 @@ caps.handback.revision: 17
   [ MSBuild](../msbuild/msbuild.md)  
  [目標](../msbuild/msbuild-targets.md)   
  [如何：清除組建](../msbuild/how-to-clean-a-build.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,30 +19,15 @@ helpviewer_keywords:
 - line numbers
 - virtual space
 ms.assetid: 49ee7306-9d46-4170-850f-a1716171752d
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 00829d499ae9d5a52e94094eed15b1ae39894075
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 61b3ab54929cdd7e6a584737f8963302335c4fd1
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。  
@@ -79,7 +63,7 @@ ms.lasthandoff: 05/24/2017
  顯示自動換行的視覺化圖像  
  選取時，會在長行換行至下一行之處顯示返回箭號指標。  
   
- ![LineBreakSymbol 螢幕擷取畫面](~/ide/reference/media/linebreak.gif "linebreak")  
+ ![LineBreakSymbol 螢幕擷取畫面](../../ide/reference/media/linebreak.gif "linebreak")  
   
  如果您不想顯示這些指示器，請清除這個選項。  
   
@@ -93,7 +77,7 @@ ms.lasthandoff: 05/24/2017
   
 -   清除此選項時，則「剪下」命令會移除空白行。 不過，會保留剪貼簿裡的資料。 因此，如果您稍後使用 [貼上] 命令，則會貼上最近複製到剪貼簿的內容。 如果先前沒有複製任何項目，則不會貼上任何內容。  
   
- 某行不是空白行時，這個設定對複製或剪下沒有作用。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。  
+某行不是空白行時，這個設定對複製或剪下沒有作用。 如果沒有選取任何範圍，則會複製或剪下整行。 如果您稍後貼上，則會貼上整行的文字及其行尾字元。  
   
 > [!TIP]
 >  若要顯示空格、定位點和行尾的指示器，並進而區分縮排行與完全空白的行，請從 [編輯] 功能表選取 [進階]，並選擇 [檢視空格]。  

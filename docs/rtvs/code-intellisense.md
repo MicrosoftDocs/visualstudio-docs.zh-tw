@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio R 程式碼的 IntelliSense | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 06/29/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: d96e3677-e5ec-4e11-82a8-d914a93b1aa9
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 821f92f7a3cf0e5ca1d647890602ec17e580b36b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 4e96184aa9a7711a7c046eb886049563dd308433
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="intellisense"></a>IntelliSense
 
 在您撰寫程式碼時，Visual Studio IntelliSense 會直接顯示您可以呼叫的函式、物件成員、函式引數和[程式碼片段](code-snippets.md)等相關資訊。 它也會在您輸入時顯示可能的完整命令，並在您按 Tab 鍵或 Enter 鍵時完成 (請參閱 [進階] 索引標籤的[編輯器選項](code-editing.md#editor-options))。 在編輯器與 [Interactive 視窗](interactive-repl.md)中皆能使用 IntelliSense。
@@ -69,4 +66,3 @@ IntelliSense 也適用於相同檔案與目前工作階段中的變數︰
 當燈泡 (稱為「智慧標籤」) 出現在邊界時，表示 Visual Studio 提醒有常用動作的捷徑可以使用。 例如，將滑鼠停留在編輯器中包含 `library` 陳述式的行，您會看到燈泡。 選取燈泡會顯示可用的選項︰
 
 ![編輯器中的 R 智慧標籤](media/intellisense-smart-tags.png)
-

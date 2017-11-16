@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - solutions [Visual Studio], multi-targeting
 - projects [Visual Studio], multi-targeting
 ms.assetid: 91e77ad4-4da3-419d-85fb-9036f0e5c330
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 45e9bb684e7f1f83c41b04dd4b9e9b3218df8358
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 2b4c985671abddb294351a2f66a24ef00e2d44e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>以特定的 .NET Framework 版本為目標
 在 Visual Studio 中，您可以指定要讓專案使用的目標 .NET Framework 版本或設定檔。 如果應用程式會在另一部電腦上執行，則該應用程式的目標 Framework 版本必須與該電腦上安裝的 Framework 版本相容。  

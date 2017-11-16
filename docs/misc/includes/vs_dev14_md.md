@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 866c0f4d27720f0084673b385c711b27246d21ec
+ms.openlocfilehash: a2e260a646b8da0e3348d5d912fe3ed683c5c5b8
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
 ---
-Visual Studio Ultimate
+Visual Studio 2015

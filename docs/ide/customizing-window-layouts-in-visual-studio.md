@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,31 +23,15 @@ helpviewer_keywords:
 - debug mode
 - custom layouts
 ms.assetid: 7517ff13-76de-4ecf-9c1b-eb9b7ff4d718
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 8ab795965dc205cd783f469d134d64fb2b5dacf6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 85881bf35fb89f753eb4110d7b1128b4761a73a3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自訂視窗版面配置
 在 Visual Studio 中，您可自訂視窗的位置、大小和行為，以建立最適合各種開發工作流程的視窗版面配置。 IDE 會記住您自訂的版面配置。 例如，若您變更 [方案總管]  的固定位置，然後再關閉 Visual Studio，則下次啟動時即使您在另一台電腦上操作，[方案總管]  亦會固定於相同位置。 您亦可命名和儲存自訂配置，然後使用單一命令切換各個配置。 例如，您可以建立一個編輯配置和一個偵錯配置，然後使用 [視窗] &#124; [套用視窗配置] 功能表命令在兩者間切換。  
@@ -56,7 +39,7 @@ ms.lasthandoff: 05/24/2017
 ## <a name="kinds-of-windows"></a>視窗種類  
 
 ### <a name="tool-and-document-windows"></a>工具和文件視窗  
- IDE 提供兩種基本的視窗型別：「工具視窗」  與「文件視窗」 。 工具視窗包含「方案總管」、「伺服器總管」、「輸出視窗」、「錯誤清單」、設計工具、偵錯工具視窗等等。 文件視窗包含原始程式碼檔案、任意文字檔、設定檔等等。 您可使用標題列將工具視窗調整大小和拖曳。 您可使用索引標籤來拖曳文件視窗。 您可在索引標籤或標題列上按一下滑鼠右鍵，以在視窗上設定其他選項。  
+ IDE 提供兩種基本的視窗型別：「工具視窗」  與「文件視窗」 。 工具視窗包含「方案總管」、「伺服器總管」、「輸出視窗」、「錯誤清單」、設計工具、偵錯工具視窗等等。 文件視窗包含原始程式碼檔案、任意文字檔、設定檔等等。 您可使用標題列將工具視窗調整大小和拖曳。 您可使用索引標籤來拖曳文件視窗。您可在索引標籤或標題列上按一下滑鼠右鍵，以在視窗上設定其他選項。  
 
  [視窗]  功能表會顯示關於在 IDE 中固定、浮動和隱藏視窗的選項。 在視窗索引標籤或標題列上按一下滑鼠右鍵，以查看該特定視窗的其他選項。 您可一次顯示多個特定工具視窗的執行個體。 例如，您可顯示多個網頁瀏覽器視窗，並可在 [視窗]  功能表上選擇 [開新視窗]  ，以建立部分工具視窗的其他執行個體。  
 
@@ -105,22 +88,22 @@ ms.lasthandoff: 05/24/2017
 
  下圖顯示文件視窗的輔助方塊，其僅可固定於編輯框架當中：  
 
- ![文件視窗的輔助方塊](~/ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
+ ![文件視窗的輔助方塊](../ide/media/documentwindowguidediamonds.png "Documentwindowguidediamonds")  
 
  工具視窗可固定至 IDE 框架的其中一邊或是編輯框架內部。 當您將工具視窗拖曳至另一個位置時會顯示輔助方塊，其可協助您輕鬆重新固定視窗。  
 
  工具視窗的輔助方塊  
 
- ![工具視窗的輔助方塊](~/ide/media/vs10guidediamond.png "VS10GuideDiamond")  
+ ![工具視窗的輔助方塊](../ide/media/vs10guidediamond.png "VS10GuideDiamond")  
 
  下圖顯示 [方案總管] 正固定於新的位置，其會顯示藍色陰影區域：  
 
- ![將方案總管停駐在新位置](~/ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
+ ![將方案總管停駐在新位置](../ide/media/vs2015_dock_diamond.png "VS2017_Dock_diamond")  
 
 ### <a name="close-and-auto-hide-tool-windows"></a>關閉並自動隱藏工具視窗  
  您可按一下標題列右上角的 [X] 關閉工具視窗；若要重新開啟視窗，請使用其鍵盤快速鍵或功能表命令。 工具視窗支援 [自動隱藏] 功能，其可在您使用另一個視窗時自動隱藏視窗。 若您自動隱藏視窗，則在 IDE 邊緣的索引標籤上會顯示其名稱。 若要再次使用視窗，請指向索引標籤以重新顯示視窗。  
 
- ![自動隱藏](~/ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
+ ![自動隱藏](../ide/media/vs2015_auto_hide.png "vs2017_auto_hide")  
 
 > [!NOTE]
 >  若要設定以個別或固定群組方式「自動隱藏」工具視窗，請在 [選項]  對話方塊中選取或清除 [自動隱藏按鈕僅對使用中的工具視窗生效]  。 如需詳細資訊，請參閱 [General, Environment, Options Dialog Box](../ide/reference/general-environment-options-dialog-box.md)。  
@@ -180,13 +163,13 @@ ms.lasthandoff: 05/24/2017
 
      如果您在辦公室具有多監視器設定，在家單一監視器膝上型電腦，您可以建立針對各電腦最佳化的配置。  
 
-     注意：如果您在單一監視器系統上套用多監視器配置，您放在第二個監視器上的浮動視窗現在會隱藏在 Visual Studio 視窗後面。 您可以按 Alt + Tab，將這些視窗帶到前面來。 如果您稍後以多個監視器來開啟 Visual Studio，可以重新套用配置，將視窗還原至其指定位置。  
+     注意：如果您在單一監視器系統上套用多監視器配置，您放在第二個監視器上的浮動視窗現在會隱藏在 Visual Studio 視窗後面。 您可以按 Alt + Tab，將這些視窗帶到前面來。如果您稍後以多個監視器來開啟 Visual Studio，可以重新套用配置，將視窗還原至其指定位置。  
 
 ##### <a name="manage-and-roam-your-layouts"></a>管理及漫遊您的配置  
 
 1.  您可以選擇 [視窗] > [管理視窗配置] 來移除、重新命名或重新排序您的自訂配置。 如果您移動配置，則會自動調整按鍵繫結來反映清單中的新位置。 這些繫結不能修改，所以您一次可以儲存最多 10 個配置。  
 
-     ![管理視窗配置](~/ide/media/managewindowlayouts.png "ManageWindowLayouts")  
+     ![管理視窗配置](../ide/media/managewindowlayouts.png "ManageWindowLayouts")  
 
      若要提醒自己哪個鍵盤快速鍵指派給哪個配置，請選擇 [視窗] > [套用視窗配置]。  
 
@@ -195,4 +178,3 @@ ms.lasthandoff: 05/24/2017
 ## <a name="related-topics"></a>相關主題  
 
 [何：在 IDE 中四處移動](../ide/how-to-move-around-in-the-visual-studio-ide.md)
-

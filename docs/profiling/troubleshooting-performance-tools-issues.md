@@ -1,50 +1,51 @@
 ---
-title: "疑難排解程式碼剖析工具問題 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "效能工具問題疑難排解 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4dc0567a9bd51c7f7cb5051a4e5086310a5a86ac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 疑難排解程式碼剖析工具問題
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="troubleshooting-performance-tools-issues"></a>效能工具問題疑難排解
 當您使用程式碼剖析工具時，可能會遇到下列其中一個問題：  
   
--   [程式碼剖析工具沒有收集任何資料](#NoDataCollected)  
+-   [程式碼剖析工具沒有收集到任何資料](#NoDataCollected)  
   
--   [效能檢視和報告顯示編號來代表函式名稱](#NoSymbols)  
+-   [效能檢視和報表將函式名稱顯示為數字](#NoSymbols)  
   
-##  <a name="NoDataCollected"></a> 程式碼剖析工具沒有收集任何資料  
- 當您對應用程式進行程式碼剖析之後，系統沒有建立程式碼剖析資料 \(.vsp\) 檔案，而且您在 \[輸出\] 視窗或命令視窗中收到下列警告：  
+##  <a name="NoDataCollected"></a>程式碼剖析工具沒有收集到任何資料  
+ 在您分析應用程式之後，並未建立程式碼剖析資料 (.vsp) 檔案，而且您在輸出視窗或命令視窗中收到下列警告：  
   
- PRF0025：未收集任何資料。  
+ PRF0025: 未收集任何資料。  
   
- 發生這個問題的原因可能有許多個：  
+ 有幾個問題會造成這個問題︰  
   
--   運用取樣或 .NET 記憶體方法進行程式碼剖析的處理序，啟動了一個子處理序，真正的應用程式工作是由這個子處理序執行。  例如，某些應用程式讀取命令列來判斷它們已啟動為 Windows 應用程式或命令列應用程式。  如果您要求 Windows 應用程式，原始處理序就會啟動設定為 Windows 應用程式的新處理序，然後原始處理序便結束。  因為程式碼剖析工具不會自動收集子處理序的資料，所以不會收集任何資料。  
+-   使用取樣或 .NET 記憶體方法分析的處理序，啟動的子處理序會成為執行應用程式工作的處理序。 例如，一些應用程式會讀取該命令列，判斷其要啟動為 Windows 應用程式或命令列應用程式。 如果要求 Windows 應用程式時，原始的處理序會啟動設定為 Windows 應用程式的新處理序，然後結束原始的處理序。 因為程式碼剖析工具不會自動收集子處理序的資料，所以不會收集到任何資料。  
   
-     若要在這種情況下收集程式碼剖析資料，請將程式碼剖析工具附加至子處理序，而非使用程式碼剖析工具來啟動應用程式。  如需詳細資訊，請參閱 [如何：為執行中的處理序附加和中斷連結程式碼剖析工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和 [Attach \(VSPerfCmd\)](../profiling/attach.md)。  
+     若要在這種情況下收集程式碼剖析資料，請將分析工具附加至子處理序，而不是使用分析工具來啟動應用程式。 如需詳細資訊，請參閱[如何：為執行中的處理序附加和中斷連結效能工具](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md)和[附加 (VSPerfCmd)](../profiling/attach.md)  
   
-##  <a name="NoSymbols"></a> 效能檢視和報告顯示編號來代表函式名稱  
- 當您對應用程式進行程式碼剖析之後，在報告和檢視中看到編號而非函式名稱。  
+##  <a name="NoSymbols"></a>效能檢視和報表將函式名稱顯示為數字  
+ 在您分析應用程式之後，您在報表和檢視中看到數字，而不是函式名稱。  
   
- 發生這個問題的原因是程式碼剖析工具分析引擎找不到包含符號資訊的 .pdb 檔案，這種資訊會將函式名稱和行號等原始程式碼資訊對應至已編譯的檔案。  根據預設，編譯器會在建置應用程式時建立 .pdb 檔案。  已編譯好的應用程式中，會存有對本機目錄中 .pdb 檔案的參考。  分析引擎會先在參考的目錄中尋找 .pdb 檔案，然後在目前包含應用程式檔案的檔案中尋找。  如果找不到 .pdb 檔案，分析引擎就會使用函式位移而非函式名稱。  
+ 這是由程式碼剖析工具分析引擎造成的問題，因其無法找到所含的符號資訊和原始程式碼資訊對應的 .pdb 檔，例如已編譯檔案的函式名稱和行號。 根據預設，編譯器會在建置應用程式檔案時建立 .pdb 檔。 .pdb 檔案的本機目錄參考會儲存在已編譯的應用程式中。 分析引擎會在參考的目錄中尋找 .pdb 檔，然後在目前包含應用程式檔案的檔案中尋找。 如果找不到 .pdb 檔，分析引擎會使用函式位移，而不是函式名稱。  
   
- 您可以用下列其中一種方式來修正此問題：  
+ 您可以下列兩種方式解決這個問題︰  
   
--   尋找 .pdb 檔案，並將它們與應用程式檔案放在相同的目錄中。  
+-   找到 .pdb 檔，並放入和應用程式檔案相同的目錄。  
   
--   將符號資訊內嵌在程式碼剖析資料 \(.vsp\) 檔案中。  如需詳細資訊，請參閱[使用程式碼剖析資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。  
+-   在程式碼剖析資料 (.vsp) 檔案中內嵌符號資訊。 如需詳細資訊，請參閱[使用效能資料檔案儲存符號資訊](../profiling/saving-symbol-information-with-performance-data-files.md)。  
   
 > [!NOTE]
->  分析引擎會要求 .pdb 檔案與已編譯的應用程式檔案具有相同的版本。  來自應用程式檔案較舊或較新組建的 .pdb 檔案將無法運作。
+>  分析引擎所需的 .pdb 檔版本要和編譯的應用程式檔案相同。 來自舊版或更新版本的應用程式檔案的 .pdb 檔不適用。

@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8aa067bb-e8bf-4081-aff0-cfbcf65934a0
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: d4d0e04c439f5e677cbbbdcfcf560ec976c6257b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 237acc5cc58646bc9f4e1ab6d2fbe976bb7ac124
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：從命令列指定符號檔位置
-<a id="how-to-specify-symbol-file-locations-from-the-command-line" class="xliff"></a>
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>如何：從命令列指定符號檔位置
 若要顯示符號資訊 (例如函式名稱和行號)，VSPerfReport 命令列工具需要存取已進行程式碼剖析之元件的符號 (.pdb) 檔案和 Windows 系統檔。 符號檔是在元件編譯時建立。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。 VSPerfReport 會自動搜尋下列位置中是否有符號檔：  
   
 -   **/SymbolPath** 選項或 **_NT_SYMBOL_PATH** 環境變數中指定的路徑。  
@@ -58,11 +40,9 @@ ms.lasthandoff: 07/14/2017
 > [!NOTE]
 >  如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 安裝在本機電腦上，則可能已指定 Windows 符號檔的位置。 如需詳細資訊，請參閱[如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)。 您仍然必須按照本主題之後描述的方式來設定 VSPerfReport 使用位置和伺服器。  
   
-## 指定 Windows 符號檔案
-<a id="specifying-windows-symbol-files" class="xliff"></a>  
+## <a name="specifying-windows-symbol-files"></a>指定 Windows 符號檔案  
   
-#### 設定使用 Windows 符號伺服器
-<a id="to-configure-the-use-of-the-windows-symbol-server" class="xliff"></a>  
+#### <a name="to-configure-the-use-of-the-windows-symbol-server"></a>設定使用 Windows 符號伺服器  
   
 1.  如有需要，請建立目錄以在本機儲存符號檔。  
   
@@ -72,12 +52,10 @@ ms.lasthandoff: 07/14/2017
   
      其中 *LocalStore* 代表您建立的本機目錄路徑。  
   
-## 指定元件符號檔
-<a id="specifying-component-symbol-files" class="xliff"></a>  
+## <a name="specifying-component-symbol-files"></a>指定元件符號檔  
  針對要進行程式碼剖析之元件的 .pdb 檔，程式碼剖析工具會在其原始位置 (可能儲存於元件或包含程式碼剖析資料檔的資料夾中) 進行搜尋。 您可以加入一或多個路徑至 **_NT_SYMBOL_PATH** 或 **/SymbolPath** 選項，以指定其他要搜尋的位置。 請使用分號分隔路徑。  
   
-## 範例
-<a id="example" class="xliff"></a>  
+## <a name="example"></a>範例  
  下列命令列會將 **_NT_SYMBOL_PATH** 環境變數設定為 Windows 符號伺服器，以及將本機目錄設定為 **C:\Symbols**。  
   
  **set  _NT_SYMBOL_PATH=srv\*C:\symbols\*http://msdl.microsoft.com/downloads/symbols**  

@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: 10
-author: kempb
-ms.author: kempb
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 27dc4d56a0608ddf031b47775bd9aaef20e24194
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 您可以使用本主題的捷徑，更輕鬆地在 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。  
@@ -90,19 +73,18 @@ ms.lasthandoff: 06/23/2017
 |-|-|  
 |IntelliSense 建議模式|Ctrl+Alt+Space (切換)|  
 |強制顯示 IntelliSense|Ctrl+J|  
-|智慧標籤|Ctrl+.|  
+|快速動作|Ctrl+.|  
 |程式碼片段選擇器|Ctrl+K、X 或 ?、Tab (VB)|  
 |以此環繞|Ctrl+K、S|  
 |顯示快速諮詢|Ctrl+K、I|  
 |巡覽至|Ctrl+,|  
-|移至定義|F12|  
-|查看定義|Alt+F12|  
-|移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)|  
 |巡覽反白顯示的參考|Ctrl+Shift+Up (上一步)、Ctrl+Shift+Down (下一步)|  
 |編輯器縮放|Ctrl+Shift+> (In)、Ctrl+Shift+< (Out)|  
 |區塊選取|按住 Alt 並拖曳滑鼠、Shift+Alt+方向鍵|  
 |將行上移/下移|Alt+向上鍵 / Alt+向下鍵|  
+|移至定義|F12|  
 |查看定義|Alt+F12|  
+|移至定義堆疊|Ctrl+Shift+8 (上一頁)、Ctrl+Shift+7 (下一頁)|  
 |關閉 [查看定義] 視窗|Esc|  
 |將 [查看定義] 視窗升級到一般文件索引標籤|Ctrl+Alt+Home|  
 |在多個 [查看定義] 視窗之間巡覽|Ctrl+Alt+- 和 Ctrl+Alt+=|  
@@ -146,4 +128,3 @@ ms.lasthandoff: 06/23/2017
  [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  (Channel 9 上的 Visual Studio 工具箱)  
  [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
  [Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)
-

@@ -1,36 +1,37 @@
 ---
 title: "CvWriteAlert 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkers/CvWriteAlertVA"
-  - "cvmarkers/CvWriteAlertVW"
-  - "cvmarkers/CvWriteAlertA"
-  - "cvmarkers/CvWriteAlertW"
-helpviewer_keywords: 
-  - "CvWriteAlertVW 方法"
-  - "CvWriteAlertA 方法"
-  - "CvWriteAlertVA 方法"
-  - "CvWriteAlertW 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- cvmarkers/CvWriteAlertVA
+- cvmarkers/CvWriteAlertVW
+- cvmarkers/CvWriteAlertA
+- cvmarkers/CvWriteAlertW
+helpviewer_keywords:
+- CvWriteAlertVW method
+- CvWriteAlertA method
+- CvWriteAlertVA method
+- CvWriteAlertW method
 ms.assetid: 937aa9d6-278a-4df3-bef7-151441df16d5
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6a9faf31dea1eeb7b7a613b8e0c963620bc644af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CvWriteAlert 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-寫入並行視覺化檢視追蹤檔案的警示。  
+# <a name="cvwritealert-function"></a>CvWriteAlert 函式
+將警示寫入並行視覺化檢視追蹤檔。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CvWriteAlertW(  
@@ -56,25 +57,25 @@ HRESULT CvWriteAlertVA(
     _In_ va_list argList);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `argList`  
- 引數清單。  
+ 列出引數。  
   
  `pMarkerSeries`  
- 有效的符號系列內容。  不可為 NULL 。  
+ 有效的標記系列內容。 不可以是 NULL。  
   
  `pMessage`  
- 訊息的格式字串。  不可為 NULL 。  
+ 訊息格式字串。 不可以是 NULL。  
   
-## 傳回值  
- 當訊息成功寫入時S\_OK。  錯誤碼，以防萬一有任何錯誤。  使用 SUCCEEDED\/FAILED 巨集來檢查錯誤條件。  
+## <a name="return-value"></a>傳回值  
+ 當訊息成功寫入時傳回 S_OK。 發生任何錯誤時傳回錯誤碼。 您可以使用 SUCCEEDED/FAILED 巨集檢查是否有錯誤狀況。  
   
-## 需求  
- **標題:** cvmarkers.h  
+## <a name="requirements"></a>需求  
+ **標頭︰**cvmarkers.h  
   
- **Unicode:** CvWriteAlertW， CvWriteAlertVW  
+ **Unicode：**CvWriteAlertW、CvWriteAlertVW  
   
- **ANSI:** CvWriteAlertA， CvWriteAlertVA  
+ **ANSI：**CvWriteAlertA、CvWriteAlertVA  
   
-## 請參閱  
- [C\+\+ 程式庫參考](../profiling/cpp-library-reference.md)
+## <a name="see-also"></a>另請參閱  
+ [C++ 程式庫參考](../profiling/cpp-library-reference.md)

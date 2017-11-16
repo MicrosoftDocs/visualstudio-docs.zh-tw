@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,33 +18,17 @@ helpviewer_keywords:
 - wavy underlines
 - Text Editor Options dialog box, IntelliSense
 ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: b34b280b3558003c5c3ad92515d773bc7d45fdda
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: ac32cd3946e6d244f6ff658bb636c9ecfd89e197
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IntelliSense、C#、文字編輯器、選項
-<a id="options-text-editor-c-intellisense" class="xliff"></a>
+# <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 使用 [IntelliSense] 屬性頁修改影響 Visual C# 之 IntelliSense 行為的設定。 您可以存取 [IntelliSense] 屬性頁，方法是按一下 [工具] 功能表上的 [選項]，並按一下 [文字編輯器] 資料夾中的 [C#]，然後按一下 [IntelliSense]。  
   
 > [!NOTE]
@@ -53,8 +36,7 @@ ms.lasthandoff: 05/24/2017
   
  [IntelliSense] 屬性頁包含下列屬性：  
   
-## 完成清單
-<a id="completion-lists" class="xliff"></a>  
+## <a name="completion-lists"></a>完成清單  
  **輸入一個字元後顯示完成清單**  
  選取這個選項時，IntelliSense 會在您開始輸入時自動顯示完成清單。 未選取這個選項時，仍然可以從 [IntelliSense] 功能表或按「CTRL+空格鍵」來使用 IntelliSense 完成。  
   
@@ -64,8 +46,7 @@ ms.lasthandoff: 05/24/2017
  **將程式碼片段置於完成清單中**  
  選取這個選項時，IntelliSense 會將 C# 程式碼片段的別名新增至完成清單。 如果程式碼片段別名與關鍵字相同 (例如 [class](/dotnet/csharp/language-reference/keywords/class))，則會將關鍵字取代為快速鍵。 如需詳細資訊，請參閱 [Visual C# 程式碼片段](../../ide/visual-csharp-code-snippets.md)。  
   
-## 完成清單中的選取範圍
-<a id="selection-in-completion-lists" class="xliff"></a>  
+## <a name="selection-in-completion-lists"></a>完成清單中的選取範圍  
  **輸入下列字元予以認可:**  
  指定在輸入字元之後，這些字元即會對完成清單中的所選取項目執行 IntelliSense 自動完成。  
   
@@ -85,13 +66,11 @@ ms.lasthandoff: 05/24/2017
   
  `else|` (游標位置)  
   
-## IntelliSense 成員選取
-<a id="intellisense-member-selection" class="xliff"></a>  
+## <a name="intellisense-member-selection"></a>IntelliSense 成員選取  
  **預先選取最近使用的成員**  
  選取這個選項時，IntelliSense 會預先選取您最近在 [列出成員] 快顯方塊中選取的成員，以在整合式開發環境 (IDE) 中於目前工作階段期間自動補齊物件名稱。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。 如需詳細資訊，請參閱[用於最近一次使用之成員的 IntelliSense](../../ide/visual-csharp-intellisense.md#most-recently-used-members)。  
   
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML 文件註解](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [使用 IntelliSense](../../ide/using-intellisense.md)

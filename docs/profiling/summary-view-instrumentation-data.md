@@ -1,51 +1,51 @@
 ---
-title: "摘要檢視 - 程式碼剖析工具：檢測資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "摘要檢視"
+title: "摘要檢視 - 檢測資料 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 摘要檢視 - 程式碼剖析工具：檢測資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[摘要\] 檢視顯示執行程式碼剖析時，高度耗費效能之函式的相關資訊。  如需詳細資訊，包括通知連結和報表清單的說明，請參閱[摘要檢視](../profiling/summary-view.md)。  
+# <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
+[摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
   
-## 時間表圖形  
- \[摘要\] 檢視中的時間表圖形會顯示程式碼剖析期間，程式碼剖析的應用程式使用處理器 \(CPU\) 的情形。  您可以使用時間表圖形，將檢視篩選至選取的時間範圍。  如需詳細資訊，請參閱[如何：從摘要時間表篩選報表檢視](../Topic/How%20to:%20Filter%20Report%20Views%20from%20the%20Summary%20Timeline.md)。  
+## <a name="timeline-graph"></a>時間軸圖形  
+ [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的處理器 (CPU) 使用率。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
-## 最忙碌路徑  
- \[**最忙碌路徑**\] 會顯示佔用最多時間的執行路徑。  您可以按一下函式，顯示函式的 \[函式詳細資料\] 檢視。  若要顯示函式的其他檢視，請以滑鼠右鍵按一下該函式，然後按一下清單中的檢視。  
+## <a name="hot-path"></a>最忙碌路徑  
+ [最忙碌路徑] 顯示耗用最多時間的執行路徑。 您可以按一下函式來顯示該函式的 [函式詳細資料] 檢視。 若要顯示該函式的其他檢視，以滑鼠右鍵按一下函式，然後按一下清單中的檢視。  
   
- \[**最忙碌路徑**\] 包括每個函式的下列資料：  
+ [最忙碌路徑] 的每個函式都包含下列資料︰  
   
 |資料行|描述|  
-|---------|--------|  
-|**名稱**|函式的名稱。|  
-|**整體內含時間百分比**|在程式碼剖析資料中，函式在其函式主體及所呼叫函式中執行程式碼所花費之總時間的百分比。|  
-|**整體專有時間百分比**|在程式碼剖析資料中，函式在其函式主體中執行程式碼所花費之總時間的百分比。  花費在函式所呼叫函式中的時間不包括在內。|  
+|------------|-----------------|  
+|**Name**|函式的名稱。|  
+|**功能內含耗用 (Elapsed Inclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體和其所呼叫函式中程式碼的所有時間百分比。|  
+|**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|  
   
-## 含有最多個別工作的函式  
- 在函式主體中佔用最多時間執行程式碼的函式清單，但不包含在所呼叫函式中執行程式碼的時間。  
+## <a name="functions-with-most-individual-work"></a>含有最多個別工作的函式  
+ 這份函式清單列出耗用最多時間在執行函式主體中程式碼 (而不是其所呼叫函式中的程式碼) 的函式。  
   
- \[**含有最多個別工作的函式**\] 包括每個函式的下列資料：  
+ [含有最多個別工作的函式] 的每個函式都包含下列資料︰  
   
 |資料行|描述|  
-|---------|--------|  
-|**名稱**|函式的名稱。|  
-|**專有時間 %**|在程式碼剖析資料中，函式在其函式主體中執行程式碼所花費之總時間的百分比。  花費在函式所呼叫函式中的時間不包括在內。|  
+|------------|-----------------|  
+|**Name**|函式的名稱。|  
+|**專有時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)

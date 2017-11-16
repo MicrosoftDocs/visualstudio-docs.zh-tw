@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 04/07/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a923d3fa962ee826d86a1c6946ae87a469b728d6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 03fd3a4cc84852ad922dec417850a0f4a0b1ea1c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。  
@@ -50,26 +33,26 @@ ms.lasthandoff: 05/13/2017
 
 -   **Unity** 4.0.0 版或更高版本；若要利用對 Visual Studio Tools for Unity 2.1 版或更高版本的內建支援則必須有 **Unity** 5.2.0 版或更高版本。  
 
-     [下載 Unity (英文)](https://unity3d.com/get-unity/download)  
+     [下載 Unity](https://unity3d.com/get-unity/download)  
 
 ## <a name="install-visual-studio-tools-for-unity"></a>安裝 Visual Studio Tools for Unity  
  從 Visual Studio 組件庫下載並安裝 Visual Studio Tools for Unity。 您必須安裝適用於您 Visual Studio 版本的封裝。 確定安裝 Visual Studio Tools for Unity 2.1 版或更高版本，以利用 Unity 5.2 版或更高版本中的內建 VSTU 支援。  
 
 -   針對 Visual Studio 2015 Community、Visual Studio 2015 Professional 或 Visual Studio 2015 Enterprise：  
 
-     [下載 Visual Studio 2015 Tools for Unity (英文)](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
+     [下載 Visual Studio 2015 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
 
 -   針對 Visual Studio 2013 Community、Visual Studio 2013 Professional 或 Visual Studio 2013 Premium：  
 
-     [下載 Visual Studio 2013 Tools for Unity (英文)](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
+     [下載 Visual Studio 2013 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
 
 -   針對 Visual Studio 2012 Professional 或 Visual Studio 2012 Premium：  
 
-     [下載 Visual Studio 2012 Tools for Unity (英文)](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
+     [下載 Visual Studio 2012 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
 
 -   針對 Visual Studio 2010 Professional 或 Visual Studio 2010 Premium：  
 
-     [下載 Visual Studio 2010 Tools for Unity (英文)](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
+     [下載 Visual Studio 2010 Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
 
 > [!NOTE]
 >  Visual Studio 的 Express 版不支援 Visual Studio Tools for Unity 等擴充功能。 Visual Studio Community 是支援 Visual Studio Tools for Unity 及其他擴充功能的免費 Visual Studio 版本。 對於大多數使用者而言，Visual Studio Community 是比 Express 更好的選擇。  
@@ -113,7 +96,7 @@ ms.lasthandoff: 05/13/2017
  [Tutorials - Unity Learn page](http://unity3d.com/learn/tutorials/modules) (教學課程 – Unity Learn 頁面)  
 
 #### <a name="2---configure-unity-editor-to-use-visual-studio-tools-for-unity"></a>2 - 設定 Unity Editor 使用 Visual Studio Tools for Unity  
- 如果您從現有的專案開始，或在建立專案時未匯入 Visual Studio Tools unitypackage，則需要立即匯入 unitypackage。 在 Unity 編輯器主功能表上，選擇 [資產]、[匯入封裝]、[Visual Studio 2015 Tools] \(您應該會看到已安裝之 Visual Studio 版本的選項)。  
+ 如果您從現有的專案開始，或在建立專案時未匯入 Visual Studio Tools unitypackage，則需要立即匯入 unitypackage。 在 Unity 編輯器主功能表上，選擇 [資產]、[匯入封裝]、[Visual Studio 2015 Tools]  (您應該會看到已安裝之 Visual Studio 版本的選項)。  
 
  ![將 VSTU 封裝匯入 Unity 專案。] (../cross-platform/media/vstu_configure_unity_import_vstu.png "vstu_configure_unity_import_vstu")  
 
@@ -129,8 +112,8 @@ ms.lasthandoff: 05/13/2017
  ![在 Visual Studio 中開啟 Unity 專案。] (../cross-platform/media/vstu_configure_open_in_visual_studio.png "vstu_configure_open_in_visual_studio")  
 
 ## <a name="next-steps"></a>後續步驟  
+
  如需了解如何在 Visual Studio 中使用及偵錯 Unity 專案，請參閱[使用 Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)。  
 
 ## <a name="see-also"></a>另請參閱  
  [Unity 首頁 (英文)](http://unity3d.com)
-

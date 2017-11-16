@@ -1,56 +1,57 @@
 ---
-title: "認識程式碼剖析工具中的取樣資料值 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "取樣程式碼剖析方法"
-  - "程式碼剖析工具，取樣"
+title: "了解取樣資料值 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- sampling profiling method
+- Profiling Tools, sampling
 ms.assetid: fad540a8-24b6-4ff9-91ce-e67e9a58399d
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 761f08adead5037056e07031903517e4f5d76744
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 認識程式碼剖析工具中的取樣資料值
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的「*取樣*」\(Sampling\) 程式碼剖析方法會定期中斷電腦處理序，並收集函式呼叫堆疊。  「*呼叫堆疊*」\(Call Stack\) 是一種動態結構，存放有關處理器正在執行的函式之資訊。  
+# <a name="understanding-sampling-data-values"></a>認識取樣資料值
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的「取樣」分析方法會依設定的間隔來中斷電腦處理器，並收集函式呼叫堆疊。 「呼叫堆疊」是一個動態結構，其中儲存在處理器上執行的函式相關資訊。  
   
- **需求**  
+ **Requirements**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
- 程式碼剖析工具分析會判斷處理器是否正在執行目標處理序中的程式碼。  如果處理器並未在執行目標處理序中的程式碼，將捨棄此樣本。  
+ 分析工具分析會判斷處理器是否正在執行目標處理序中的程式碼。 如果處理器未在執行目標處理序中的程式碼，則會捨棄此樣本。  
   
- 如果處理器正在執行目標程式碼，分析工具就會針對呼叫堆疊上的每一個函式遞增對應的樣本計數。  取樣時，呼叫堆疊上只有一個函式是目前正在執行的程式碼。  堆疊上的其他函式是函式呼叫階層中，等待其子系回傳的父系。  
+ 如果處理器在執行目標程式碼，分析工具會讓呼叫堆疊上每個函式的樣本計數遞增。 取樣時，呼叫堆疊上只能有一個函式正在執行程式碼。 堆疊上的其他函式則是函式呼叫階層中的父代，會等候其子系傳回。  
   
- 針對取樣事件，分析工具會累加目前執行其指令之函式的「*專有*」\(Exclusive\) 樣本計數。  由於專有樣本也是函式樣本總計 \(「*內含*」\(Inclusive\)\) 的一部分，因此目前使用中函式的內含樣本計數也會累加。  
+ 對於樣本事件，該分析工具會讓目前正在執行其指示的函式「專有」樣本計數遞增。 因為專有樣本也是函式總 (內含) 樣本數的一部分，所以目前作用中函式的內含樣本計數也會遞增。  
   
- 程式碼剖析工具會針對呼叫堆疊上所有其他函式遞增內含樣本計數。  
+ 分析工具會讓呼叫堆疊上所有其他函式的內含樣本計數遞增。  
   
-## 內含樣本  
- 目標函式執行期間收集的總樣本數。  
+## <a name="inclusive-samples"></a>內含樣本  
+ 目標函式執行期間所收集的樣本總數。  
   
- 這包括函式程式碼直接執行期間收集的樣本，以及目標函式呼叫的子函式執行期間收集的樣本。  
+ 這包括在直接執行函式程式碼期間收集的樣本，以及在執行目標函式所呼叫子函式期間收集的樣本。  
   
-## 專有樣本  
- 目標函式指令直接執行期間收集的樣本數。  
+## <a name="exclusive-samples"></a>專有樣本  
+ 目標函式直接執行指示期間所收集的樣本數。  
   
- 專有樣本並不包括目標函式呼叫之函式的執行期間收集的樣本。  
+ 專有樣本不包含目標函式所呼叫的函式執行期間所收集的樣本。  
   
-## 內含百分比  
- 程式碼剖析執行期間收集的所有內含樣本數中，此函式或資料範圍的內含樣本數所佔的百分比。  
+## <a name="inclusive-percent"></a>內含百分比  
+ 就程式碼剖析執行時的內含樣本總數，函式或資料範圍的內含樣本所佔的百分比。  
   
-## 專有百分比  
- 程式碼剖析執行期間收集的所有專有樣本數中，此函式或資料範圍的專有樣本數所佔的百分比。  
+## <a name="exclusive-percent"></a>專有百分比  
+ 就程式碼剖析執行時的專有樣本總數，函式或資料範圍的專有樣本所佔的百分比。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
- [分析程式碼剖析工具資料](../profiling/analyzing-performance-tools-data.md)
+ [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -13,31 +12,15 @@ f1_keywords:
 - vs.performance.23
 - vs.performance.rules.DA0023
 ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: f6c92673d3e8e1db37d547a466dcee127f190ca5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: b1675f6e090de5b1e3fdcd3e30d706a38481a16a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：高 GC CPU 時間
 |||  
@@ -66,4 +49,4 @@ ms.lasthandoff: 05/13/2017
 ## <a name="how-to-investigate-a-warning"></a>如何調查警告  
  按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **.NET CLR Memory\\% Time in GC** 欄。 判斷是否有特定的程式執行階段，當中的 Managed 記憶體回收負荷比其他階段還繁重。 比較 % Time in GC 的值與在 **# of Gen 0 Collections**、**# of Gen 1 Collections**、**# of Gen 2 Collections** 值中報告的記憶體回收速率。  
   
- % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告非常高的值，但不是因為有過多記憶體回收。 如需 % Time in GC 值計算方式的詳細資訊，請參閱 MSDN 上 **Maoni 部落格**的 [Difference Between Perf Data Reported by Different Tools - 4](http://go.microsoft.com/fwlink/?LinkId=177863) (不同工具報告的效能資料之間的差異 - 4) 文章。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。
+ % Time in GC 值會嘗試報告應用程式花費在執行記憶體回收的時間量與處理總量成比例的時間。 請注意，有時候 % Time in GC 值可能會報告非常高的值，但不是因為有過多記憶體回收。 如需 % Time in GC 值計算方式的詳細資訊，請參閱 MSDN 上 **Maoni 部落格**中的 [Difference Between Perf Data Reported by Different Tools - 4](http://go.microsoft.com/fwlink/?LinkId=177863) (不同工具報告的效能資料之間的差異 - 4) 。 如果發生分頁錯誤或應用程式在記憶體回收期間由電腦上其他較高優先順序的工作優先佔用，% Time in GC 計數器會反映這些額外的延遲。

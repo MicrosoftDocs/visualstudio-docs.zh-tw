@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8c26ad4d9df3fb8b84c5d8c93e213858bc2ccb67
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dfccd737ae7017823fdf7f2a5112fd05c8900559
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="working-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
@@ -68,7 +68,7 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 ### <a name="add-a-database-connection"></a>新增資料庫連接
 
 1. 選取 [R 工具] > [資料] > [新增資料庫連線]，啟動 [連接屬性] 對話方塊。 您可以在這裡指定資料來源名稱 (在此情況下是 SQL Server)、伺服器名稱、驗證模式，以及資料庫名稱。 選取 [測試連接] 先驗證您的輸入，再關閉對話方塊。
- 
+
     ![SQL 連線對話方塊](media/sql-connection-string-dialog.png)
 
 1. 一旦您對有效的連線選取 [確定]，Visual Studio 就會在新的 `settings.R` 檔案中產生名為 `dbConnection` 的連接字串。 RTVS 自動將此檔案設為來源 (執行)，因此您可以立即使用 R 指令碼中的連接︰
@@ -78,7 +78,7 @@ Transact-SQL 編輯器支援各種不同的其他功能，例如檢視查詢執�
 ### <a name="write-and-test-a-sql-stored-procedure"></a>撰寫及測試 SQL 預存程序
 
 若要新增新的 SQL 預存程序，請以滑鼠右鍵按一下您的專案，選取 [新增] > [新增項目...]，然後從範本清單中選取 [使用 R 的 SQL 預存程序]，指定檔案的名稱 (本例中為 `StoredProcedure.R`)，再選取 [確定]。
- 
+
 RTVS 會為預存程序建立三個檔案：`.R` 檔案供 R 程式碼使用、`.Query.sql` 檔案供 SQL 程式碼使用，而 `.Template.sql` 檔案則結合兩者。 後面兩個會出現在方案總管中，作為 `.R` 檔案的子系︰
 
 ![使用 R 之 SQL 預存程序的方案總管展開檢視](media/sql-solution-explorer-expanded.png)

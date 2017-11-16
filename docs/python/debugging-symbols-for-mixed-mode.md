@@ -1,33 +1,29 @@
 ---
 title: "Visual Studio 中的 Python/C++ 混和模式符號偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: be5fdf2f-b55f-488a-9772-58adfe07a7ab
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 365131bf30f57c90715bd04cded0f7c4c5761797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 1be4e28055f0501433f85325870654671c12f961
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="installing-debugging-symbols-for-python-interpreters"></a>安裝 Python 解譯器的偵錯符號
 
 為提供完整的偵錯體驗，Visual Studio 中的[混合模式 Python 偵錯工具](debugging-mixed-mode.md)需要使用 Python 解譯器的偵錯符號，以便剖析許多內部資料結構。 以 python27.dll 為例，對應的符號檔為 python27.pdb；若是 python36.dll，符號檔則為 python36.pdb。 每個版本的解譯器也提供各種不同模組的符號檔。
 
-使用 Visual Studio 2017 時，"Python 3" 和 "Anaconda 3" 解譯器會自動安裝其個別符號，而 Visual Studio 會自動尋找那些符號。 若為 Visual Studio 2015 和更早版本，或使用其他轉譯器時，您必須個別下載符號，然後透過 [偵錯] > [符號] 索引標籤中的 [工具] > [選項] 對話方塊，將 Visual Studio 指向這些符號。 下面各節將有詳細的步驟說明。
+使用 Visual Studio 2017 時，"Python 3" 和 "Anaconda 3" 解譯器會自動安裝其個別符號，而 Visual Studio 會自動尋找那些符號。 若為 Visual Studio 2015 和更早版本，或使用其他轉譯器時，您必須個別下載符號，然後透過 [偵錯] > [符號] 索引標籤中的 [工具] > [選項] 對話方塊，將 Visual Studio 指向這些符號。下面各節將有詳細的步驟說明。
 
 Visual Studio 會在需要符號時提示您，一般來說，這是指啟動混合模式偵錯工作階段的時候。 在此情況下，它會顯示內含兩個選擇的對話方塊：
 

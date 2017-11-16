@@ -1,46 +1,46 @@
 ---
-title: "標記報告 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.report.markers"
+title: "標記報告 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.report.markers
 ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1d9d546e96d92c26725bc8a169c413bc7b96feb7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 標記報告
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-標記報表會透過時間圖文框的方式顯示標記的清單。平移或縮放或隱藏歸位字元，可能會導致標記出現或消失。  報告包含每個標記的資訊:  
+# <a name="markers-report"></a>標記報告
+標記報告會列出所顯示時間範圍內的標記。  移動瀏覽、縮放或隱藏通道可能會造成標記顯示或消失。 報表包含每個標記的下列資訊：  
   
--   在啟動後相對於追蹤的開頭的時間。  
+-   相對於開始追蹤的開始時間。  
   
--   它的持續期間。  因為它們代表暫時性，期間的旗標和訊息都為零。  
+-   時間長度。 旗標和訊息的時間長度為零，因為它們表示一瞬間。  
   
--   產生它執行緒的 ID。  
+-   產生標記的執行緒識別碼。  
   
--   提供者產生的 Windows 事件追蹤 \(ETW\) 。  
+-   產生標記的 Windows 事件追蹤 (ETW) 提供者。  
   
--   從標記系列所寫的。  
+-   撰寫標記的標記系列。  
   
--   事件分類所屬的。  
+-   標記所屬的事件分類。  
   
--   它的重要性程度。  
+-   標記的重要性層級。  
   
--   其型別 \(間距、旗標、訊息\)。  
+-   標記的類型 (範圍、旗標或訊息)。  
   
--   代表意義的高階說明  
+-   標記所表示意義的高階描述  
   
- 選取 \[**匯出**\] 按鈕儲存標記報告為 CSV 檔案。  您可以在其他應用程式或工具的 CSV 檔中使用資料。  
+ 選擇 [匯出] 按鈕來將標記報表儲存為 CSV 檔案。 您可以搭配其他 App 或工具使用 CSV 檔案中的資料。  
   
 > [!NOTE]
->  標記報表可以顯示 1,000 個標記。  若要查看所有的資料標記，匯出報告全文為 CSV 檔案。
+>  標記報表可以顯示 1,000 個標記。 若要查看所有標記，請將完整的報表匯出成 CSV 檔案。

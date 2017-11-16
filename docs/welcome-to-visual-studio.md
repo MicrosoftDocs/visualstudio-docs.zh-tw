@@ -4,39 +4,24 @@ ms.custom:
 ms.date: 03/02/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- msdnstart
+f1_keywords: msdnstart
 helpviewer_keywords:
 - Visual Studio
 - Visual Studio 2017
 ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
-caps.latest.revision: 125
-author: kempb
-ms.author: kempb
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 2cf7d1e79ccf79b652dbb730e7ac7fd6a9c984b5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: 81942228cd8ee30ac8ea990af072ace0ce626c5b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="welcome-to-visual-studio-2017"></a>歡迎使用 Visual Studio 2017！
 我們將為您提供建立強大的裝置應用程式 (桌面應用程式)、Web 應用程式和雲端應用程式所需的一切。 在單一整合式開發環境 (IDE) 中，撰寫適用於 iOS、Android、Linux、Windows 及其他平台的程式碼。 不僅可以取得強大的互動式程式碼協助 (*IntelliSense*)，還可以輕鬆巡覽程式碼及偵錯、快速建置和快速部署。 Visual Studio 可提升您的產能，不論您是單獨工作或以大型小組成員的身分工作，都很輕鬆。  
@@ -120,4 +105,3 @@ ms.lasthandoff: 05/26/2017
 您可以使用 .NET 編譯器平台 (Roslyn) 來撰寫自己的程式碼分析器和程式碼產生器。 前往 [Roslyn](https://github.com/dotnet/Roslyn)尋找您所需要的各項資源。  
 
 尋找 Microsoft 開發人員及開發社群所建立之 [現有 VS IDE 擴充功能](https://visualstudiogallery.msdn.microsoft.com/) 。  
-

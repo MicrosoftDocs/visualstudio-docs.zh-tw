@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
-caps.latest.revision: 4
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 795bf9746c4ae48ac04141a05ba56462ecb90482
-ms.openlocfilehash: 7b69cc5d96a1b51a3d58f688a53bb0156ec3b713
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 使用「Visual Studio 效能及診斷中樞」中的「GPU 使用量」工具，適當地了解 Direct3D 應用程式的高階硬體使用率。 您可以使用它來判斷您應用程式的效能是 CPU-bound 還是 GPU-bound，並深入了解如何更有效地使用平台的硬體。 GPU 使用量支援使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的應用程式；它不支援其他圖形 API (例如 Direct2D 或 OpenGL)。  
@@ -56,7 +40,7 @@ ms.lasthandoff: 06/23/2017
   
 #### <a name="to-start-the-gpu-usage-tool"></a>啟動 GPU 使用量工具：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
+1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
   
 2.  在 [效能及診斷] 中樞中，核取 [GPU 使用量] 旁邊的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能與診斷工具，以取得更完整的應用程式效能。  
   
@@ -85,7 +69,7 @@ ms.lasthandoff: 06/23/2017
   
      ![收集後，選取範圍以檢視詳細資料](media/gfx_diag_gpu_usage_select1.png "gfx_diag_gpu_usage_select1")  
   
-3.  在報告的下半部，選擇 [...click here to view details of GPU usage for that range]\(...按一下這裡以檢視該範圍的 GPU 使用量詳細資料) 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
+3.  在報告的下半部，選擇 [...click here to view details of GPU usage for that range] (...按一下這裡以檢視該範圍的 GPU 使用量詳細資料) 訊息中的 [檢視詳細資料] 連結，以檢視您選取項目的詳細時間軸。  
   
      ![收集後，已選取範圍](media/gfx_diag_gpu_usage_select2.png "gfx_diag_gpu_usage_select2")  
   
@@ -140,7 +124,7 @@ ms.lasthandoff: 06/23/2017
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>從啟動應用程式延後程式碼剖析：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
+1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
   
 2.  在 [效能及診斷] 中樞，遵循 [GPU 使用量] 旁的 [設定] 連結。  
   

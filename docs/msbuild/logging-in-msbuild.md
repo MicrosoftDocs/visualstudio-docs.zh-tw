@@ -1,43 +1,43 @@
 ---
 title: "MSBuild 中的記錄 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild，記錄"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, logging
 ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 26a166779ae0a217e9522e7c3b577ec85507c0a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild 中的記錄
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-記錄提供讓您監視建置進度的方式。  記錄會將建置事件、訊息、警告和錯誤擷取到記錄檔中。  
+# <a name="logging-in-msbuild"></a>MSBuild 中的記錄
+記錄功能提供一種方式讓您能夠監視組建的進度。 記錄功能會擷取記錄檔中建置事件、訊息、警告和錯誤。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)  
- 描述 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中記錄的各個方面。  
+ 說明 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中各個層面的記錄。  
   
  [組建記錄器](../msbuild/build-loggers.md)  
- 概述建立單一處理器記錄器所需步驟。  
+ 概述建立單一處理器的記錄器時所需的步驟。  
   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)  
- 描述記錄如何在多處理器的環境下運作，以及兩個多處理器記錄模型。  
+ 說明記錄功能在多處理器環境中的運作方式，以及兩個多處理器記錄模型。  
   
  [撰寫能夠辨識多處理器的記錄器](../msbuild/writing-multi-processor-aware-loggers.md)  
- 概述如何建立能夠辨識多處理器的記錄器，以及如何使用 ConfigurableForwardingLogger。  
+ 概述如何建立能夠辨識多處理器的記錄器以及如何使用 ConfigurableForwardingLogger。  
   
  [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)  
- 概述如何建立自訂轉送記錄器。  
+ 概述如何建立自訂的轉送記錄器。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)  
- 說明如何透過平行執行這些快速地建立多個專案。
+ 說明如何透過讓專案平行執行的方式，加快建置多個專案的速度。

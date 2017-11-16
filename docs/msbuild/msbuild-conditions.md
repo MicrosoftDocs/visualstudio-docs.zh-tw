@@ -1,27 +1,30 @@
 ---
-title: "MSBuild Conditions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "MSBuild, conditions"
-  - "conditions [MSBuild]"
+title: "MSBuild 條件 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- MSBuild, conditions
+- conditions [MSBuild]
 ms.assetid: 9d7aa308-b667-48ed-b4c9-a61e49eb0a85
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "14"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: f3e4590a2623d05b78f4c62e877b0ff3783ceec9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-conditions"></a>MSBuild 條件
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援一組只要允許 `Condition` 屬性就能套用的特定條件。 下表說明這些條件。  
@@ -43,8 +46,3 @@ caps.handback.revision: 12
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -1,23 +1,26 @@
 ---
 title: "逐步解說：使用取樣進行命令列剖析 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具，逐步解說"
-  - "效能工具，逐步解說"
-  - "效能工具，命令列工具"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- profiling tools, walkthroughs
+- performance tools, walkthroughs
+- performance tools, command-line tools
 ms.assetid: 1d53972f-6f35-4842-8c74-1b627f18c70a
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 338b79cfe5dbdb812b385d237523d2a79d8cc965
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
 本逐步解說將示範如何使用命令列工具和取樣來剖析應用程式，以識別效能問題。  
@@ -108,8 +111,3 @@ caps.handback.revision: 21
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [效能報告檢視](../profiling/performance-report-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

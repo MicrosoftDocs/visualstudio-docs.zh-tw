@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.classdesigner.cpplimitation
+f1_keywords: vs.classdesigner.cpplimitation
 helpviewer_keywords:
 - Visual C++, Class Designer
 - Class Designer, Visual C++ support
@@ -19,33 +17,17 @@ helpviewer_keywords:
 - C++, class diagrams
 - C++, Class Designer
 ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 0d974e9af7d22c5d02b1313cb2e46c873592f4d3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: ef75c8108b7d86367e69ab7eead8a3a282596560
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用 Visual C++ 程式碼 (類別設計工具)
-<a id="working-with-visual-c-code-class-designer" class="xliff"></a>
+# <a name="working-with-visual-c-code-class-designer"></a>使用 Visual C++ 程式碼 (類別設計工具)
 類別設計工具會顯示名為「類別圖表」的視覺化設計介面，以視覺表示法提供專案中的程式碼項目。 您可以使用類別圖表來設計和視覺化類別和專案中的其他類型。  
 
  類別設計工具支援下列 C++ 程式碼元素：  
@@ -67,21 +49,17 @@ ms.lasthandoff: 06/23/2017
 > [!NOTE]
 >  這與 UML 類別圖不同，後者可在「模型專案」中建立。 如需詳細資訊，請參閱 [UML 類別圖表：參考](../modeling/uml-class-diagrams-reference.md)。  
 
-## 類型解析與顯示問題的疑難排解
-<a id="troubleshooting-type-resolution-and-display-issues" class="xliff"></a>  
+## <a name="troubleshooting-type-resolution-and-display-issues"></a>類型解析與顯示問題的疑難排解  
 
-### 原始程式檔的位置
-<a id="location-of-source-files" class="xliff"></a>  
+### <a name="location-of-source-files"></a>原始程式檔的位置  
  類別設計工具不會追蹤原始程式檔的位置。 因此，如果您修改專案結構或移動專案中的原始程式檔，類別設計工具可能會遺失類型的追蹤 (特別是 typedef、基底類別或關聯類型的來源類型)。 您可能會收到錯誤，例如：**類別設計工具無法顯示這個類型**。 如果您收到錯誤訊息，請將已修改或重新配置的原始程式碼再次拖曳到類別圖表中，以重新顯示。  
 
-### 更新和效能問題
-<a id="update-and-performance-issues" class="xliff"></a>  
+### <a name="update-and-performance-issues"></a>更新和效能問題  
  在 Visual C++ 專案中，可能需要 30 到 60 秒，原始程式檔的變更才會出現在類別圖中。 此延遲也可能會導致類別設計工具擲回錯誤：**選取範圍中找不到任何類型**。 如果您收到這類錯誤，請在錯誤訊息中按一下 [取消]，並等候程式碼項目出現在 [類別檢視] 中。 執行這項操作後，類別設計工具即應能夠顯示類型。  
 
  如果類別圖未以您在程式碼中所做的變更進行更新，您可能需要關閉圖表，再加以重新開啟。  
 
-### 類型解析問題
-<a id="type-resolution-issues" class="xliff"></a>  
+### <a name="type-resolution-issues"></a>類型解析問題  
  類別設計工具無法解析類型的可能原因如下：  
   
 -   類型所屬的專案或組件不是從包含類別圖的專案中參考的。 若要更正這個錯誤，請在包含類型的專案或組件中加入參考。 如需詳細資訊，請參閱[管理專案中的參考](managing-references-in-a-project.md)。  
@@ -104,8 +82,7 @@ ms.lasthandoff: 06/23/2017
   
 -   確定類型位於正確的範圍內，讓類別設計工具能夠找到它。 確定程式碼未遺漏 `using`、`imports` 或 `#include` 陳述式。 也請確定您未將該類型 (或相關類型) 從它最初建立所在的命名空間中移出。  
 
-### 其他錯誤訊息的疑難排解
-<a id="troubleshooting-other-error-messages" class="xliff"></a>  
+### <a name="troubleshooting-other-error-messages"></a>其他錯誤訊息的疑難排解  
  您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 請參閱 [Visual Studio 類別設計工具論壇](http://go.microsoft.com/fwlink/?linkid=160754)。  
 
 ##  <a name="limitations"></a> C++ 程式碼項目限制  
@@ -130,8 +107,7 @@ ms.lasthandoff: 06/23/2017
 
 -   類別設計工具無法顯示 void 類型或衍生自 void 類型的類型。  
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另請參閱  
  [設計和檢視類別與類型](../ide/designing-and-viewing-classes-and-types.md)   
  [使用類別和其他類型 (類別設計工具)](../ide/working-with-classes-and-other-types-class-designer.md)   
  [使用類別圖表 (類別設計工具)](../ide/working-with-class-diagrams-class-designer.md)   
@@ -141,4 +117,3 @@ ms.lasthandoff: 06/23/2017
  [類別設計工具中的 Visual C++ 結構](../ide/visual-cpp-structures-in-class-designer.md)   
  [類別設計工具中的 Visual C++ 列舉](../ide/visual-cpp-enumerations-in-class-designer.md)   
  [類別設計工具中的 Visual C++ Typedef](../ide/visual-cpp-typedefs-in-class-designer.md)
-

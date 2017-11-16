@@ -1,89 +1,89 @@
 ---
 title: "目標建置順序 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild，建置順序"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, build order
 ms.assetid: f4a26339-9f9a-497a-9aa6-0797183d450d
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 目標建置順序
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-如果某個目標的輸入相依於其他目標的輸出，則必須將目標排序。  您可以使用這些屬性來指定目標的執行順序:  
+# <a name="target-build-order"></a>目標建置順序
+如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
   
--   `InitialTargets`.  這個 `Project` 屬性指定最先執行的目標，，即使目標指定在命令列上或 `DefaultTargets` 屬性。  
+-   `InitialTargets`. 這個 `Project` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。  
   
--   `DefaultTargets`.  這個 `Project` atttribute 指定哪些目標執行目標，則在命令列上未明確指定。  
+-   `DefaultTargets`. 如果未在命令列上明確指定目標，則這個 `Project` 屬性會指定要執行哪些目標。  
   
--   `DependsOnTargets`.  這個 `Target` 屬性必須執行的目標，在此目標可執行之前。  
+-   `DependsOnTargets`. 這個 `Target` 屬性會指定必須在此目標執行之前執行的目標。  
   
--   `BeforeTargets` 和 `AfterTargets`。  這些 `Target` 屬性指定這個目標應該在指定的目標 \(MSBuild 4.0\) 之前或之後執行。  
+-   `BeforeTargets` 和 `AfterTargets`。 這些 `Target` 屬性會指定此目標應該在指定的目標之前或之後執行 (MSBuild 4.0)。  
   
- 在建置期間一個目標只能執行一次，即使組建中的後續目標對此目標具有相依性亦是如此。  一旦執行目標後，其對於組建的貢獻便已完成。  
+ 目標絕對不會在建置期間執行兩次，即使組建中的後續目標相依於它也一樣。 一旦執行目標之後，它對組建而言就已功成身退了。  
   
- 目標可以具有 `Condition` 屬性。  如果對 `false`的指定條件評估為，此目標則不會執行而且對組建沒有任何影響。  如需條件的詳細資訊，請參閱 [Conditions](../msbuild/msbuild-conditions.md)。  
+ 目標可能會有 `Condition` 屬性。 如果指定的條件評估為 `false`，則不會執行目標，且不會對組建產生任何作用。 如需條件的詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。  
   
-## 初始目標  
- [專案](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性指定最先執行的目標，，即使目標指定在命令列上或 `DefaultTargets` 屬性。  初始目標通常用於檢查錯誤。  
+## <a name="initial-targets"></a>初始目標  
+ [Project](../msbuild/project-element-msbuild.md) 項目的 `InitialTargets` 屬性會指定優先執行的目標，即使已在命令列上或 `DefaultTargets` 屬性中指定目標也一樣。 初始目標通常用於錯誤檢查。  
   
- `InitialTargets` 屬性的值可以是以分號分隔，目標排序清單。  下列範例指定 `Warm` 目標執行， `Eject` 物件會執行。  
+ `InitialTargets` 屬性的值可以是以分號分隔且已排序的目標清單。 下列範例會指定 `Warm` 目標執行，然後 `Eject` 目標執行。  
   
-```  
+```xml  
 <Project InitialTargets="Warm;Eject" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 匯入的專案可能有自己的 `InitialTargets` 屬性。  所有初始目標會彙總在一起並依序執行。  
+ 匯入的專案可能會有自己的 `InitialTargets` 屬性。 所有的初始目標都會彙總在一起，並依序執行。  
   
  如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
-## 預設目標  
- [專案](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性指定一個或多個目標建置目標，則在命令列上未明確指定。  
+## <a name="default-targets"></a>預設目標  
+ 如果未在命令列上明確指定目標，則 [Project](../msbuild/project-element-msbuild.md) 項目的 `DefaultTargets` 屬性會指定要建置哪些目標。  
   
- `DefaultTargets` 屬性的值可以是以分號分隔\)，預設目標排序清單。  下列範例指定 `Clean` 目標執行， `Build` 物件會執行。  
+ `DefaultTargets` 屬性的值可以是以分號分隔且已排序的預設目標清單。 下列範例會指定 `Clean` 目標執行，然後 `Build` 目標執行。  
   
-```  
+```xml  
 <Project DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
 ```  
   
- 您可以在命令列中， **\/target** 參數可以覆寫預設目標。  下列範例指定 `Build` 目標執行， `Report` 物件會執行。  當您以此方式指定目標，所有預設目標被忽略。  
+ 您可以在命令列上使用 **/target** 參數來覆寫預設目標。 下列範例會指定 `Build` 目標執行，然後 `Report` 目標執行。 當您以這種方式指定目標時，就會忽略任何預設目標。  
   
  `msbuild /target:Build;Report`  
   
- 如果初始目標和預設目標，，和，如果命令未指定目標，則 MSBuild 會先執行初始目標，然後執行預設目標。  
+ 如果未指定初始目標和預設目標，以及如果未指定任何命令列目標，MSBuild 就會先執行初始目標，接著執行預設目標。  
   
- 匯入的專案可能有自己的 `DefaultTargets` 屬性。  第一個遇到的 `DefaultTargets` 屬性會決定將執行哪些預設目標。  
+ 匯入的專案可能會有自己的 `DefaultTargets` 屬性。 第一個遇到的 `DefaultTargets` 屬性會判斷將執行哪些預設目標。  
   
  如需詳細資訊，請參閱[如何：指定要優先建置的目標](../msbuild/how-to-specify-which-target-to-build-first.md)。  
   
-## 第一個目標  
+## <a name="first-target"></a>第一個目標  
  如果沒有初始目標、預設目標或命令列目標，則 MSBuild 會執行它在專案檔或任何匯入的專案檔中遇到的第一個目標。  
   
-## 目標相依性  
- 目標可以描述彼此的相依性關係。  `DependsOnTargets` 屬性表示某個目標相依於其他目標。  例如：  
+## <a name="target-dependencies"></a>目標相依性  
+ 目標可以說明彼此間的相依性關係。 `DependsOnTargets` 屬性會指出某一個目標相依於其他目標。 例如：  
   
-```  
+```xml  
 <Target Name="Serve" DependsOnTargets="Chop;Cook" />  
 ```  
   
- 告知 MSBuild `Serve` 目標相依於 `Chop` 物件和 `Cook` 物件。  在執行 `Serve` 目標之前， MSBuild 會執行 `Chop` 目標，然後執行 `Cook` 目標。  
+ 告知 MSBuild，`Serve` 目標相依於 `Chop` 目標和 `Cook` 目標。 MSBuild 會執行 `Chop` 目標，然後在執行 `Serve` 目標之前先執行 `Cook` 目標。  
   
-## 在目標之前並在目標之後  
- 在 MSBuild 4.0 中，您可以使用 `BeforeTargets` 和 `AfterTargets` 屬性指定目標順序。  
+## <a name="beforetargets-and-after-targets"></a>BeforeTargets 和 AfterTargets  
+ 在 MSBuild 4.0 中，您可以使用 `BeforeTargets` 和 `AfterTargets` 屬性來指定目標順序。  
   
  請考慮下列指令碼。  
   
-```  
+```xml  
 <Project DefaultTargets="Compile;Link" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     <Target Name="Compile">  
         <Message Text="Compiling" />  
@@ -94,31 +94,31 @@ caps.handback.revision: 18
 </Project>  
 ```  
   
- 建立執行時，在 `Compile` 目標之後，不過，中的目標 `Optimize` ，在 `Link` 物件中，將下列目標任何 `Project` 項目之前。  
+ 若要建立中繼目標 `Optimize`，在 `Compile` 目標之後，但在 `Link` 目標之前執行，請 在 `Project` 項目中的任一處加入下列目標。  
   
-```  
+```xml  
 <Target Name="Optimize"   
     AfterTargets="Compile" BeforeTargets="Link">  
     <Message Text="Optimizing" />  
 </Target>  
 ```  
   
-## 決定目標建置順序  
- MSBuild 決定的目標建置順序如下所示：  
+## <a name="determining-the-target-build-order"></a>判斷目標建置順序  
+ MSBuild 會以如下方式判斷目標建置順序：  
   
-1.  `InitialTargets` 執行目標。  
+1.  執行 `InitialTargets` 目標。  
   
-2.  會執行由 **\/target** 參數在命令列上指定的目標。  如果您在命令列上未指定目標，則 `DefaultTargets` 執行目標。  如果都不存在，則為遇到的第一個目標執行。  
+2.  執行命令列上使用 **/target** 參數指定的目標。 如果您未在命令列上指定目標，則會執行 `DefaultTargets` 目標。 如果兩者都不存在，則會執行第一個遇到的目標。  
   
-3.  會評估目標的 `Condition` 屬性。  如果 `Condition` 屬性是 `false`的存在和評估，此目標則不會執行並沒有對組建的進一步作用。  
+3.  評估目標的 `Condition` 屬性。 如果 `Condition` 屬性存在且評估為 `false`，則不會執行目標，且不會對組建產生任何進一步的作用。  
   
-4.  在執行目標之前，會先執行其 `DependsOnTargets` 目標。  
+4.  執行目標之前，會執行它的 `DependsOnTargets` 目標。  
   
-5.  在執行目標之前，會先執行列於 `BeforeTargets` 屬性中的任何目標。  
+5.  執行目標之前，會執行在 `BeforeTargets` 屬性中列出它的任何目標。  
   
-6.  在執行目標之前，會先比較其 `Inputs` 屬性和 `Outputs` 屬性。  如果 MSBuild 判斷所有輸出檔已過期的參考對應的輸入檔案，則 MSBuild 會執行目標。  否則，MSBuild 會略過此目標。  
+6.  執行目標之前，會將它的 `Inputs` 屬性和 `Outputs` 屬性進行比較。 如果 MSBuild 判斷有任何與一或多個對應輸入檔相關的輸出檔過時，則 MSBuild 會執行目標。 否則，MSBuild 會略過目標。  
   
-7.  在執行或略過目標之後，會執行列於 `AfterTargets` 屬性中的任何目標。  
+7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [目標](../msbuild/msbuild-targets.md)

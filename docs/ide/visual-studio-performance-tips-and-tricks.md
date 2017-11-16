@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 173811a4f2d9974755e2432822c801388403ab7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 936d0df8c838227c5d6c99b0f04f1069eae8a277
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 效能祕訣和訣竅
 
@@ -36,14 +36,6 @@ Visual Studio 效能建議是要針對記憶體不足的情況，但這極少發
 ## <a name="configure-solution-and-projects"></a>設定方案和專案
 
 如果您的極大型方案包含多個專案，則進行下列最佳化會有所助益：
-
-- **啟用輕量型解決方案載入**
-
-    使用 [輕量型解決方案載入] 時，延後載入方案內的一些專案，即可改善記憶體和 CPU 效能。 您也可以針對個別方案啟用此功能。 根據預設，這個選項為關閉狀態。
-
-    若要啟用 [輕量型解決方案載入]，請選擇 [工具] > [選項] > [專案和方案] > [輕量型解決方案載入]。
-
-    在此模式中，不會啟用某些 IDE 功能。 若要判斷此選項是否有幫助，請參閱[較短的方案載入時間](https://blogs.msdn.microsoft.com/visualstudio/2016/10/11/shorter-solution-load-time-in-visual-studio-15/) \(英文\) 和[最佳化方案載入](../ide/optimize-solution-loading-in-visual-studio.md)。
 
 - **卸載專案**
 

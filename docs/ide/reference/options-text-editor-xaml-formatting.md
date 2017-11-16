@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 01/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -31,40 +30,23 @@ helpviewer_keywords:
 - WPF Designer, XAML formatting
 - XAML view settings, attribute spacing
 ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 0d087d735f3db1f1d8fa7f37f049b6208e5242c0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-# 格式、XAML、文字編輯器、選項
-<a id="options-text-editor-xaml-formatting" class="xliff"></a>
+# <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。  
 
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
 
-## 自動格式化事件
-<a id="auto-formatting-events" class="xliff"></a>  
+## <a name="auto-formatting-events"></a>自動格式化事件  
  偵測到下列任一事件時，可能會進行自動格式化。  
 
 -   結束標記或簡單標記完成。  
@@ -75,7 +57,7 @@ ms.lasthandoff: 05/30/2017
 
 -   格式化鍵盤命令。  
 
- 您可以指定哪些事件會導致自動格式化。  
+您可以指定哪些事件會導致自動格式化。  
 
 |||  
 |-|-|  
@@ -83,8 +65,7 @@ ms.lasthandoff: 05/30/2017
 |**開始標記完成時**|完成鍵入開始標記時，會進行自動格式化。|  
 |**從剪貼簿貼上**|將 XAML 從剪貼簿貼入 XAML 檢視時，會進行自動格式化。|  
 
-## 引號樣式
-<a id="quotation-mark-style" class="xliff"></a>  
+## <a name="quotation-mark-style"></a>引號樣式  
  這個設定表示以單引號還是雙引號括住屬性值。 自動格式器和 IntelliSense 自動完成都會使用此設定。  
 
  設定此選項之後，只會影響使用設計工具所後續新增的屬性或在 XAML 檢視中手動新增的屬性。  
@@ -94,8 +75,7 @@ ms.lasthandoff: 05/30/2017
 |**雙引號 (")**|屬性值會括在雙引號中。<br /><br /> `<Button Name="button1">Hello</Button>`|  
 |**單引號 (')**|屬性值會括在單引號中。<br /><br /> `<Button Name='button1'>Hello</Button>`|  
 
-## 標記換行
-<a id="tag-wrapping" class="xliff"></a>  
+## <a name="tag-wrapping"></a>標記換行  
  您可以指定進行標記換行的行長度。 啟用標記換行時，使用設計工具所後續新增的任何 XAML 都會適當地換行。  
 
 |||  
@@ -103,8 +83,7 @@ ms.lasthandoff: 05/30/2017
 |**將超過指定長度的標記換行**|指定是否在 [長度] 所指定的行長度處換行。|  
 |**長度**|一行可以包含的字元數。 必要時，有些 XAML 行可能會超過指定的行長度。|  
 
-## 屬性間距
-<a id="attribute-spacing" class="xliff"></a>  
+## <a name="attribute-spacing"></a>屬性間距  
  使用此設定可控制 XAML 文件中的屬性排列方式  
 
 |||  
@@ -114,8 +93,7 @@ ms.lasthandoff: 05/30/2017
 |**將每個屬性置於不同行**|每個屬性都會佔用它自己的一行。 有許多屬性時，這非常有用。<br /><br /> `<Button`<br /><br /> `Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 |**將第一個屬性置於開始標記的同一行**|核取時，第一個屬性會出現在項目之開始標記的同一行。<br /><br /> `<Button Height="23"`<br /><br /> `Name="button1"`<br /><br /> `Width="75">Hello</Button>`|  
 
-## 項目間距
-<a id="element-spacing" class="xliff"></a>  
+## <a name="element-spacing"></a>項目間距  
  使用此設定可控制 XAML 文件中的項目排列方式  
 
 |||  
@@ -124,8 +102,7 @@ ms.lasthandoff: 05/30/2017
 |**將內容中的多個空白行摺疊成一行**|項目內容中的空白行會摺疊成一行。<br /><br /> `<Grid>`<br /><br /> ``<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> ``<br /><br /> `</Grid>`|  
 |**移除內容中的空白行**|移除項目內容中的所有空白行。<br /><br /> `<Grid>`<br /><br /> `<Button Name="button1">Hello</Button>`<br /><br /> `</Grid>`|  
 
-## 其他區段、自動插入
-<a id="miscellaneous-section-auto-insert" class="xliff"></a>  
+## <a name="miscellaneous-section-auto-insert"></a>其他區段、自動插入  
  使用此設定可控制標記和引號的自動產生時機。  
 
 |||  
@@ -135,9 +112,7 @@ ms.lasthandoff: 05/30/2017
 |**MarkupExtension 的右大括弧**|指定當您輸入左大括弧字元 ({) 時，是否自動產生標記延伸的右大括弧 (})。|  
 |**分隔 MarkupExtension 參數的逗號**|指定是否在您於標記延伸中輸入多個參數時產生逗號。|  
 
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>另請參閱  
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [如何︰變更 XAML 檢視設定](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [XAML 和程式碼逐步解說](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)
-

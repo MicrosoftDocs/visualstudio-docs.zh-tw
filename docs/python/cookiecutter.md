@@ -1,27 +1,24 @@
 ---
 title: "Visual Studio 中適用於 Python 的 Cookiecutter 擴充功能 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 783da5fd-726c-4716-994e-aa04d6b75896
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: da14e15713e7c02dbd99bc0595e6ca19217a5cbb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 6db7e2efc54414dcb72899ab3238a9b7a0390921
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="using-the-cookiecutter-extension"></a>使用 Cookiecutter 延伸模組
 
 [Cookiecutter (英文)](https://cookiecutter.readthedocs.io/en/latest/) 提供尋找範本、輸入範本選項和建立專案及檔案的圖形化使用者介面。 它隨附於 Visual Studio 2017，並可在舊版的 Visual Studio 中獨立安裝。
@@ -228,4 +225,3 @@ Cookiecutter 有一個稱為 *Post-Generate Hook* (產生後置掛勾) 的功能
 使用 bash (不嚴重)：
 
 - **openstack-dev/cookiecutter**
-

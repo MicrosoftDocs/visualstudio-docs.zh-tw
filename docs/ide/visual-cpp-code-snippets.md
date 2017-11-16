@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 74e26fd4-e5ca-4611-a816-0a521b4947a0
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: b4d0801f9e3924fd801f30b750d0f5dbfca634fd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 0d9a34e371797317d3163f8288474e7a902b4f82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 在 Visual Studio 中，您可以使用程式碼片段將常用的程式碼加入您的 C++ 程式碼檔案。 一般而言，您可以用和在 C# 中相同的方式來使用程式碼片段，但是預設程式碼片段的集合不同。  

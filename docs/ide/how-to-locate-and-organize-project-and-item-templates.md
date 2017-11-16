@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - project templates [Visual Studio], displaying
 - templates [Visual Studio], locations
 ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
-caps.latest.revision: 25
-author: kempb
-ms.author: kempb
+caps.latest.revision: "25"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 07ff2413503209d6ade252ac89dbfbe2589e7e85
-ms.openlocfilehash: 2ca380e99f820f99fbcd5059e271fa34c8ce1a72
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/02/2017
-
+ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並組織專案範本和項目範本
 範本檔案必須放在 Visual Studio 可以辨識的位置，以便範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 您可以建立範本的自訂子類別，因此子類別也會出現在使用者介面中。  
@@ -194,4 +178,3 @@ ms.lasthandoff: 06/02/2017
  [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)
-

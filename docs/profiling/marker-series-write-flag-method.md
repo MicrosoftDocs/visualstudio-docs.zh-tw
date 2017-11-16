@@ -1,30 +1,29 @@
 ---
 title: "marker_series::write_flag 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag"
-helpviewer_keywords: 
-  - "Concurrency::diagnostic::marker_series::write_flag 方法"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: cvmarkersojb/Concurrency::diagnostic::marker_series::write_flag
+helpviewer_keywords: Concurrency::diagnostic::marker_series::write_flag method
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c50ce91ca1759d6d4768dec2a487e2ca169b2d64
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# marker_series::write_flag 方法
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-將旗標寫入至並行視覺化檢視追蹤檔案。  
+# <a name="markerserieswriteflag-method"></a>marker_series::write_flag 方法
+將旗標寫入並行視覺化檢視追蹤檔。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 void write_flag(  
@@ -49,20 +48,20 @@ void write_flag(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `_Format`  
- 複合格式字串包含混合零或多個格式項目的文字，其與陣列中的物件相對應。  
+ 複合格式字串，其中包含混合零或多個格式項目的文字，並與引數清單中的物件相對應。  
   
  `_Importance`  
- 重要性。  
+ 重要性層級。  
   
  `_Category`  
- 分類  
+ 分類。  
   
-## 需求  
- **標題:** cvmarkersobj.h  
+## <a name="requirements"></a>需求  
+ **標頭：**cvmarkersobj.h  
   
- **命名空間:** Concurrency::diagnostic  
+ **命名空間：**Concurrency::diagnostic  
   
-## 請參閱  
- [marker\_series 類別](../profiling/marker-series-class.md)
+## <a name="see-also"></a>另請參閱  
+ [marker_series 類別](../profiling/marker-series-class.md)

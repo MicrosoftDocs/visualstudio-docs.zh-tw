@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/28/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -26,30 +25,15 @@ helpviewer_keywords:
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
 ms.assetid: af1a3171-c9d8-45a3-9c96-a763e3b163ef
-caps.latest.revision: 63
+caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 694e747f09e38a2dc363057ccdb43ac55f4c61ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 359e1eb5df8f19774d352ace631802367b6dd8c9
-ms.openlocfilehash: 759ffc281b8c673f5987afc6512b225434b69dec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 提供現成可用的強大 JavaScript 編輯體驗。 由 TypeScript 型語言服務提供，Visual Studio 提供更豐富的 IntelliSense、支援最新的 JavaScript 功能，並改善如移至定義、重構及更多的生產力功能。
@@ -150,6 +134,5 @@ _**JavaScript 中使用的 TypeScript 宣告**_
 自動偵測目前處理從 npm (藉由讀取 `package.json` 檔案)、Bower (藉由讀取 `bower.json` 檔案)，以及比對前 400 多個熱門 JavaScript 程式庫清單的專案中的鬆散式檔案下載的相依性。 例如，如果您的專案中有 `jquery-1.10.min.js`，則會擷取並載入檔案 `jquery.d.ts` 以提供更好的編輯體驗。 此 `.d.ts` 檔案對您的專案沒有任何影響。 
 
 如果您不想使用自動擷取，請如下所示新增組態檔來停用這項功能。 您仍然放置定義檔案，以手動方式直接在專案中使用它。
-
 
 

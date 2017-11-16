@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - multi-targeting [Visual Studio]
 - multitargeting [Visual Studio]
 ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
-caps.latest.revision: 36
-author: kempb
-ms.author: kempb
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8bf0b097be929b30627e0f1139c6e0b145933ab4
-ms.openlocfilehash: 93e0c6676d48a0164dcf3b184bcb886934372787
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/26/2017
-
+ms.openlocfilehash: ad2917a1cf0a620f2e228828a152d91ec8948734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visual Studio 多目標概觀
 在這個版本的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，您可以指定應用程式所需的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 因此，如果您要使用這個版本的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 繼續開發您在舊版中開始的專案，您不必變更 Framework 目標。 您也可以建立包含以不同 Framework 版本為目標之專案的方案。 Framework 目標也有助於確保應用程式只使用指定的 Framework 版本中可供使用的功能。  
@@ -92,7 +76,7 @@ ms.lasthandoff: 05/26/2017
  如需組件參考的詳細資訊，請參閱[在設計階段時解析組件](../msbuild/resolving-assemblies-at-design-time.md)。  
   
 ## <a name="enabling-linq"></a>啟用 LINQ  
- 當您以 .NET Framework 3.5 或更新版本為目標時，會自動新增 System.Core 的參考與 System.Linq 的專案層級匯入 (僅限 Visual Basic)。 如果要使用 LINQ 功能，您必須同時開啟 [推斷選項]\ (僅限 Visual Basic)。 如果將目標變更為舊版 .NET Framework，就會自動移除參考和匯入。 如需詳細資訊，請參閱[使用 LINQ](/dotnet/csharp/tutorials/working-with-linq)。  
+ 當您以 .NET Framework 3.5 或更新版本為目標時，會自動新增 System.Core 的參考與 System.Linq 的專案層級匯入 (僅限 Visual Basic)。 如果要使用 LINQ 功能，您必須同時開啟 [推斷選項] (僅限 Visual Basic)。 如果將目標變更為舊版 .NET Framework，就會自動移除參考和匯入。 如需詳細資訊，請參閱[使用 LINQ](/dotnet/csharp/tutorials/working-with-linq)。  
   
 ## <a name="see-also"></a>另請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)   

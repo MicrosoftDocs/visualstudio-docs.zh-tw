@@ -1,22 +1,25 @@
 ---
-title: "使用程式碼剖析資料檔案儲存符號資訊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "packsymbols，在程式碼剖析工具報表中"
-  - "程式碼剖析工具，packsymbols"
+title: "使用效能資料檔案儲存符號資訊 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- packsymbols, in profiling tools reports
+- profiling tools, packsymbols
 ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 分析檔案，並打算將 VSP 檔移至不同的電腦，您必須將效能專案設定設為儲存或「序列化」報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰  
@@ -65,8 +68,3 @@ caps.handback.revision: 13
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

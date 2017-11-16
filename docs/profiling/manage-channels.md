@@ -1,66 +1,65 @@
 ---
 title: "管理通道 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.tools.managechannels"
-helpviewer_keywords: 
-  - "並行視覺化檢視，管理通道"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.tools.managechannels
+helpviewer_keywords: Concurrency Visualizer, Manage Channels
 ms.assetid: 507b06e9-bb56-4a72-8fd5-f91f958da6fc
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 管理通道
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-在"並行視覺化檢視"的 \[**執行緒檢視**\] 中，您可以組織的流程的通道，讓您檢查特定的樣式。  您可以排序通道，上下移動它們並隱藏或顯示這些值。  
+# <a name="manage-channels"></a>管理通道
+在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。  
   
-## 排序依據  
- 您可以根據目前的縮放層級，使用控制項排序執行緒。  這對於您在尋找特殊模式時非常有用。  您可以依照這些準則來做排序:  
+## <a name="sort-by"></a>排序依據  
+ 您可以就目前的縮放層級，使用 [排序依據] 控制項來依據不同準則排序執行緒。 此方法對於尋找特定模式非常有幫助。 您可以根據這些準則來排序：  
   
 |準則|定義|  
-|--------|--------|  
-|開始時間|依開始時間來排序執行緒。  這是預設排序次序。|  
-|結束時間|以它們的結束時間來排序執行緒。|  
-|執行|依執行所花費的時間百分比來排序執行緒。|  
-|同步處理|依同步處理所花費的時間百分比來排序執行緒。|  
-|I\/O|依 I\/O \(讀取和寫入資料\) 所花費的時間百分比來排序執行緒。|  
-|睡眠|依睡眠所花費的時間百分比來排序執行緒。|  
-|分頁|依分頁所花費的時間百分比來排序執行緒。|  
-|先佔|依先佔所花費的時間百分比來排序執行緒。|  
-|UI 處理|由使用者介面處理所花費的時間百分比排序執行緒。|  
+|--------------|----------------|  
+|開始時間|依據開始時間來排序執行緒。 這是預設的排序順序。|  
+|結束時間|依據結束時間來排序執行緒。|  
+|執行|依據執行時間花費百分比來排序執行緒。|  
+|同步處理|依據同步時間花費百分比來排序執行緒。|  
+|I/O|依據 I/O 時間花費百分比來排序執行緒。|  
+|Sleep|依據睡眠時間花費百分比來排序執行緒。|  
+|分頁|依據分頁時間花費百分比來排序執行緒。|  
+|先佔|依據先佔時間花費百分比來排序執行緒。|  
+|UI 處理|依據使用者介面處理時間花費百分比來排序執行緒。|  
   
-## 上下移動所選取的執行緒  
- 您可以使用這些控制項上下移動清單中的通道。  例如，您可以組成彼此相鄰的相關通道，以協助您檢查特殊模式或跨執行緒關聯性。  
+## <a name="move-selected-channel-up-or-down"></a>向上或向下移動選取的通道  
+ 您可以使用這些控制項在清單中向上或向下移動通道。 例如，您可以將相關的通道放置在一起，以便檢查特定模式或跨執行緒的關係。  
   
-## 將選取的通道移至最上方或最下方  
- 您可以將選取的通道移至清單頂端或底部，讓您檢查特定的模式，或是在檢查其他時移動部分的通道。  
+## <a name="move-selected-channel-to-top-or-bottom"></a>將選取的通道移動到頂端或底部  
+ 您可以將選取的通道移動到清單的頂端或底部，以便檢查特定模式，或是在檢查的時候排除不相關的通道。  
   
-## 隱藏選取的通道。  
- 例如，當您想要隱藏通道時，請選擇這個控制項。  例如，如果您看到某個執行緒在 Managed 處理序存留期為 100% 同步處理，您便可隱藏它來分析其他執行緒。  
+## <a name="hide-selected-channels"></a>隱藏選取的通道  
+ 當您想要隱藏通道時，請選取此控制項。 例如，如果某個執行緒百分之百與您的受管理處理序同步，則您可以在分析其他執行緒的時候隱藏它。  
   
 > [!NOTE]
->  隱藏執行緒也會將它從作用中的圖例和程式碼剖析報告中顯示的計算時間移除。  
+>  隱藏的執行緒不會顯示在作用中圖例和分析報表中的計算時間。  
   
-## 顯示所有通道  
- 將一或多個通道隱藏時，這個控制項被設為作用中。  如果您選取他，則所有隱藏的項目顯示並回到時間計算。  
+## <a name="show-all-channels"></a>顯示所有通道  
+ 此控制項會在有一個以上的隱藏通道時顯示。 若選取它，所有隱藏的元素就都會顯示，並且再次回到計算時間。  
   
-## 移動標記移至頂端  
- 如果您追蹤包含標記事件，使用這個命令會將標記通道移至時刻表的頂端。  它們的相對順序被儲存了。  
+## <a name="move-markers-to-top"></a>將標記移至最上  
+ 如果追蹤包含標記事件，則您可以使用此命令將標記通道移動到時間軸的頂端。 系統會保留他們的相對順序。  
   
-## 由執行緒的群組來做標記  
- 如果追蹤包含標記事件，您可以使用在產生標記事件的執行緒中的命令群組標記通道。磁碟通道被移至通道清單頂端，而GPU 通道被移至底部。  
+## <a name="group-markers-by-thread"></a>依據執行緒來分組標記  
+ 如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。  
   
-## 請參閱  
- [縮放控制 \(執行緒檢視\)](../profiling/zoom-control-threads-view.md)   
- [開啟\/關閉測量模式](../profiling/measure-mode-on-off.md)   
+## <a name="see-also"></a>另請參閱  
+ [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
+ [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

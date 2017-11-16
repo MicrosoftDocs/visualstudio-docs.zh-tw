@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#GenerateApplicationManifest
 dev_langs:
 - VB
 - CSharp
@@ -20,30 +18,15 @@ helpviewer_keywords:
 - HostInBrowser property (MSBuild)
 - GenerateApplicationManifest task [MSBuild]
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: a936c177318808278bffb361ebba49b861a2acb3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
@@ -67,7 +50,7 @@ ms.lasthandoff: 06/03/2017
 |`IconFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 表示應用程式圖示檔。 應用程式圖示會在產生的應用程式資訊清單中顯示，並在 [開始] 功能表和 [新增/移除程式] 對話方塊中使用。 如果未指定這項輸入，便會使用預設圖示。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這可讓結構化資料 (例如應用程式安全性或自訂資訊清單定義) 能夠反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|  
 |`IsolatedComReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要在所產生資訊清單中隔離的 COM 元件。 這個參數支援可在「免註冊的 COM」部署中隔離 COM 元件的功能。 其運作方式是利用標準的 COM 註冊定義來自動產生資訊清單。 不過，必須在建置電腦上註冊 COM 元件，才能讓這項功能正常運作。|  
-|`ManifestType`|選擇性的 `String` 參數。<br /><br /> 指定要產生的資訊清單類型。 此參數的值如下：<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> 如果未指定此參數，工作便會預設為 `ClickOnce`。|  
+|`ManifestType`|選擇性的 `String` 參數。<br /><br /> 指定要產生的資訊清單類型。 此參數的值如下：<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> 如果未指定此參數，工作會預設為 `ClickOnce`。|  
 |`MaxTargetPath`|選擇性的 `String` 參數。<br /><br /> 指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署中允許的檔案路徑長度上限。 如果指定這個值，則會根據這項限制來檢查應用程式中的每個檔案路徑長度。 任何超過限制的項目都會引發建置警告。 如果這項輸入未指定或為零，則不會執行任何檢查。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
 |`OSVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小必要作業系統 (OS) 版本。 例如，"5.1.2600.0" 的值表示作業系統是 Windows XP。 如果未指定此參數，便會使用表示 Windows 98 Second Edition 的值 "4.10.0.0"，也就是 .NET Framework 支援的最小 OS 版本。 如果工作是要產生原生資訊清單，則會忽略這項輸入。|  
 |`OutputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。|  

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,34 +15,18 @@ helpviewer_keywords:
 - task list
 - Visual Studio, task list
 ms.assetid: f46a75a8-47b3-4cb6-bb59-b72e3356a664
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 01e8f3cc1bbcc2bc4b2fc94df1dad7d248b67290
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: a380d0e1503a0a0a0683d6088a1ca2f9c085184d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-the-task-list"></a>使用工作清單
-使用 [工作清單]  追蹤使用語彙基元 (例如 `TODO` 、 `HACK`, or custom tokens, 、 to manage shortcuts that will take you directly to a predefined location in the code. 按一下清單中的項目，以移至它在原始程式碼中的位置。  
+使用 [工作清單]  追蹤使用 `TODO` 和 `HACK`等語彙基元或自訂語彙基元的程式碼註解，以及管理會引導您直接移至程式碼中預先定義位置的捷徑。 按一下清單中的項目，以移至它在原始程式碼中的位置。  
   
  本主題內容：  
   
@@ -53,11 +36,11 @@ ms.lasthandoff: 02/22/2017
   
 -   [語彙基元和註解](../ide/using-the-task-list.md#tokensComments)  
   
--   [自訂語彙基元](../ide/using-the-task-list.md#customTokens)  
+-   [自訂權杖](../ide/using-the-task-list.md#customTokens)  
   
 -   [C++ TODO 註解](../ide/using-the-task-list.md#cppComments)  
   
--   [捷徑](../ide/using-the-task-list.md#shortcuts)  
+-   [快速鍵](../ide/using-the-task-list.md#shortcuts)  
   
 ##  <a name="taskListWindow"></a> 工作清單視窗  
  當 [工作清單]  開啟時，會出現在應用程式視窗的底部。  
@@ -102,7 +85,7 @@ ms.lasthandoff: 02/22/2017
   
  因為 `TODO` 是預先定義的語彙基元，此註解會顯示為清單中的 `TODO` 工作。  
   
-###  <a name="customTokens"></a> 自訂語彙基元  
+###  <a name="customTokens"></a> 自訂權杖  
  根據預設，Visual Studio 包含下列語彙基元：HACK、TODO、UNDONE、NOTE。 這些語彙基元不區分大小寫。  
   
  您也可以建立自己的自訂語彙基元。  
@@ -132,7 +115,7 @@ ms.lasthandoff: 02/22/2017
   
 3.  在 [C/C++] 下方，選擇 [檢視] ，然後將 [列舉註解工作]  設定為 **False**。  
   
-##  <a name="shortcuts"></a> 捷徑  
+##  <a name="shortcuts"></a> 快速鍵  
  *捷徑* 是在 [工作清單] 內所追蹤程式碼中的書籤；它的圖示與一般書籤不同。 按兩下 [ **工作清單** ] 中的捷徑可移至程式碼中對應的位置。  
   
  ![Visual Studio 工作清單捷徑圖示](../ide/media/vs2015_task_list_bookmark.png "vs2015_task_list_bookmark")  

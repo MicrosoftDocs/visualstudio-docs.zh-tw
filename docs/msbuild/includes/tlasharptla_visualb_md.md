@@ -13,14 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: ebbaac6449f131fdad03d0ed8eb3686e8f66c074
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 Microsoft Visual Basic
-
-
-<!--HONumber=Feb17_HO4-->
-
-

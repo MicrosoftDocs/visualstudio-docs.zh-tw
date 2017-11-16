@@ -18,11 +18,11 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f912a0aa6588895fb99da83396e2e5caf976e223
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>專案和方案、選項對話方塊
 設定與專案和解決方案有關的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後按一下 [一般]。
@@ -32,15 +32,7 @@ ms.lasthandoff: 11/02/2017
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊可用選項，以及功能表命令的名稱和位置，可能會與 [說明] 中描述的有所不同。 撰寫這個說明網頁時，會考慮到 [一般開發設定]。 若要檢視或變更您的設定，請選擇 [工具] 功能表上的 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="general-tab-options"></a>[一般] 索引標籤選項  
- 
-**輕量型解決方案載入**可減少在 IDE 中載入大型解決方案所需的時間和記憶體量。 包含許多 C#、Visual Basic 或 C++ 專案的大型解決方案可能會因使用輕量型解決方案載入而反映可觀的效能效益。
-
-- **讓 Visual Studio 選擇最適合方案的方式**：讓 Visual Studio 自動依據方案特性判斷是否要套用輕量型解決方案載入。
-- **啟用**：載入解決方案時，一律套用輕量型解決方案載入。
-- **停用**：永不套用輕量型解決方案載入。
-
-如需詳細資訊，請參閱[最佳化 Visual Studio 啟動時間](../optimize-visual-studio-startup-time.md#speed_up_solution_load)
+## <a name="general-tab-options"></a>[一般] 索引標籤選項
 
 **建置完成但發生錯誤時一律顯示錯誤清單**  
 只有在無法建置專案時，才在建置完成時開啟 [錯誤清單]。 這樣會顯示在建置過程中發生的錯誤。 清除此選項時，仍然會發生錯誤，但是建置完成時不會開啟視窗。 這個選項預設為啟用。  

@@ -1,21 +1,23 @@
 ---
-title: "程式行檢視 - 程式碼剖析工具：爭用資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式行檢視"
+title: "程式行檢視 - 爭用資料 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Lines view
 ms.assetid: 859b02d2-eddf-4ad3-95de-0df67ee2ab03
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 爭用資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。 在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。  
@@ -67,8 +69,3 @@ caps.handback.revision: 9
  [程式行檢視](../profiling/lines-view.md)   
  [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [程式行檢視](../profiling/lines-view-sampling-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

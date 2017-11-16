@@ -4,39 +4,21 @@ ms.custom:
 ms.date: 02/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
-caps.latest.revision: 8
-author: BrianPeek
-ms.author: brpeek
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
 manager: ghogen
-dev_langs:
-- C++
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+dev_langs: C++
+ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: f2a659347823fee4b933463011c0b69c07fa937f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
 Visual Studio 包含各種[分析與診斷工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)，包括原生記憶體分析工具。  此分析工具會從堆積提供者攔截 [ETW 事件](/windows-hardware/drivers/devtest/event-tracing-for-windows--etw-)，並提供記憶體的配置與使用現況分析。  此工具預設只能分析透過標準 Windows 堆積所進行的配置，而不會顯示此原生堆積以外的任何配置。
@@ -176,6 +158,5 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt + F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl+Alt+F2** 鍵盤組合，加以啟用)。
 
 ## <a name="see-also"></a>另請參閱
-* [程式碼剖析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)
-* [記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)
-
+[程式碼剖析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+[記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

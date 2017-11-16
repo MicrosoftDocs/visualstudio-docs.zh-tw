@@ -13,14 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
 ms.openlocfilehash: a41791f3cbc247bff04fe33b6bacd5689c979216
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 Microsoft Visual Studio 2005
-
-
-<!--HONumber=Feb17_HO4-->
-
-

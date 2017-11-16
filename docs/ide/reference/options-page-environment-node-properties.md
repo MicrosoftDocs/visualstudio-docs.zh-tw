@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
 ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: ac450b7e414596632d56117813907ee4406ad69d
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [環境] 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
@@ -50,7 +35,7 @@ ms.lasthandoff: 02/22/2017
 |Animations|Get/Set (布林值)|決定整合式開發環境 (IDE) 是否在狀態列中使用動畫。|  
 |AnimationSpeed|Get/Set (短整數)||  
 |AutoAdjustExperience|Get/Set (布林值)|自動根據用戶端效能調整視覺效果。|  
-|RichClientExperienceOptions|Get/Set (列舉)|使用 <xref:EnvDTE100.vsRichClientExperienceOptions> 中的值可豐富用戶端的視覺效果。|  
+|RichClientExperienceOptions|Get/Set (列舉)|透過 <xref:EnvDTE100.vsRichClientExperienceOptions> 中的值提供豐富的用戶端視覺效果。|  
 |CloseButtonActiveTabOnly|Get/Set (布林值)|決定是否只在使用中的索引標籤上顯示 [關閉] 按鈕。|  
 |AutohidePinActiveTabOnly|Get/Set (布林值)|決定 [自動隱藏] 按鈕是否只會影響使用中的索引標籤。|  
   
@@ -78,7 +63,7 @@ ms.lasthandoff: 02/22/2017
 |SaveDocsAsUnicodeWhenDataLoss|Get/Set (布林值)|無法以字碼頁儲存資料時，將文件儲存為 Unicode。|  
 |DontShowGlobalUndoChangeLossDialog|Get/Set (布林值)|全域復原要修改其他已編輯的檔案時顯示警告。|  
 |AllowEditingReadOnlyFiles|Get/Set (布林值)|允許編輯唯讀檔案，但是在嘗試儲存檔案時顯示警告。|  
-|DocumentDockPreference|Get/Set (列舉)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>。 放置在索引標籤中適合插入已開啟文件的位置。|  
+|DocumentDockPreference|Get/Set (列舉)|<xref:EnvDTE100.vsDocumentDockPreferenceOptions>. 放置在索引標籤中適合插入已開啟文件的位置。|  
   
 ## <a name="extension-manager"></a>擴充管理員  
  `DTE.Properties("Environment", "ExtensionManager")`  
@@ -163,7 +148,7 @@ ms.lasthandoff: 02/22/2017
 |ConfirmTaskDeletion|Get/Set (布林值)|指定在刪除 [工作清單] 中的工作時，是否顯示確認方塊。|  
 |WarnOnAddingHiddenItem|Get/Set (布林值)|指定加入不會顯示的使用者工作時，是否對您發出警告。|  
 |DontShowFilePaths|Get/Set (布林值)|指定是否在 [工作清單] 中顯示完整檔案路徑。|  
-|CommentTokens|SafeArray|傳回註解語彙基元值的 SafeArray。 每個都有欄位 `Name` (字串) 和 `Priority` (<xref:EnvDTE.vsTaskPriority>、高、中或低)。|  
+|CommentTokens|SafeArray|傳回註解語彙基元值的 SafeArray。 各有各的欄位、`Name` (字串) 和 `Priority` (<xref:EnvDTE.vsTaskPriority>、高、中或低)。|  
   
 ## <a name="web-browser"></a>網頁瀏覽器  
  `DTE.Properties("Environment", "WebBrowser")`  
@@ -172,7 +157,7 @@ ms.lasthandoff: 02/22/2017
 |------------------------|-----------|-----------------|  
 |HomePage|Get/Set (字串)|代表首頁 URL。|  
 |SearchPage|Get/Set (字串)|代表搜尋網頁 URL。|  
-|ViewSourceIn|Get/Set (列舉)|<xref:EnvDTE.vsBrowserViewSource> (來源、設計、外部)。|  
+|ViewSourceIn|Get/Set (列舉)|<xref:EnvDTE.vsBrowserViewSource> (原始檔、設計、外部)。|  
 |ViewSourceExternalProgram|Get/Set (字串)|外部來源檢視器的路徑。|  
   
 ## <a name="see-also"></a>另請參閱  

@@ -1,19 +1,22 @@
 ---
-title: "如何：篩選程式碼剖析工具報告檢視以顯示 Just My Code | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "如何：篩選程式碼剖析工具報表檢視以顯示 Just My Code | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e45c7903-f945-495d-b43b-11cdd09052aa
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6bb2da222b566362a069eaa9ab59d959a0c5b71d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>如何：篩選程式碼剖析工具報告檢視以顯示 Just My Code
 Visual Studio 2010 Premium 提供效能報告篩選，可以只顯示您已實作的程式碼。 此功能 (名為 Just My Code) 預設為啟用。 它是透過 [選項] 對話方塊中的 [Just My Code] 選項設定。  
@@ -36,8 +39,3 @@ Visual Studio 2010 Premium 提供效能報告篩選，可以只顯示您已實�
   
 ## <a name="see-also"></a>另請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

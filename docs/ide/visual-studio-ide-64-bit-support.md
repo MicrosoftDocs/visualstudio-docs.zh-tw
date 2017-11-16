@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Visual Studio, 64-bit support
 - 64-bit programming [C++]
 ms.assetid: b08ff3ad-c6fd-468f-94d5-01a61aab6833
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5658ecf52637a38bc3c2a5ad9e85b2edebf7d445
-ms.openlocfilehash: 0b3d0e23ac673c30ff1b598f9aff009f4c206ff5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 191c70b205969def7e5645b3c0fdbb52adf0f049
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位元支援
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  

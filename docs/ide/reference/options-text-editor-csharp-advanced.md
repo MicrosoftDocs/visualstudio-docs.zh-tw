@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -20,30 +19,15 @@ helpviewer_keywords:
 - outlining options [J#]
 - XML documentation, creating
 ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
-caps.latest.revision: 22
-author: kempb
-ms.author: kempb
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 61a061b6a58b18451fc53c8d53f77889cc1ea253
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 7537b4fc3fec90808c6bdc4a982fe3b7ff37a1d5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 使用這個對話方塊來修改 Visual C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並依序展開 [文字編輯器] 資料夾和 [C#]，然後按一下 [進階]。  
@@ -67,13 +51,13 @@ ms.lasthandoff: 05/24/2017
   
 -   無效的[編輯後繼續](../../debugger/edit-and-continue.md)編輯為紫色。  
   
- 將指標移至加底線程式碼區段上方，來查看具有錯誤資訊的工具提示。  
+將指標移至加底線程式碼區段上方，來查看具有錯誤資訊的工具提示。  
   
- 顯示即時語意錯誤  
- 識別未進行明確編譯的特定編譯錯誤，例如，宣告和使用未知類型，或是參考未知屬性。  
+顯示即時語意錯誤  
+識別未進行明確編譯的特定編譯錯誤，例如，宣告和使用未知類型，或是參考未知屬性。  
   
- 反白顯示游標下的符號參考  
- 如果將游標置入符號內，或按一下符號，則會反白顯示該符號在程式碼檔中的所有執行個體。  
+反白顯示游標下的符號參考  
+如果將游標置入符號內，或按一下符號，則會反白顯示該符號在程式碼檔中的所有執行個體。  
   
 ## <a name="refactoring"></a>重構  
  驗證重構結果  

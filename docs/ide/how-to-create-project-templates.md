@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ExportTemplateWizard
+f1_keywords: VS.ExportTemplateWizard
 helpviewer_keywords:
 - Visual Studio templates, creating project templates
 - project templates, metadata files
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - project templates, custom template locations
 - project templates, creating
 ms.assetid: a1a6999d-a34c-48a8-b1cf-027eb5c76398
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9713f09b7379b14b9362e3853a910948935c501e
-ms.openlocfilehash: 279a123088308a54dccfa9abe0bfbcdb18e5aaf1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/31/2017
-
+ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
 此程序可讓您使用 [匯出範本精靈] 建立範本，此精靈會將您的範本封裝在 .zip 檔案中。 您也可以使用 [匯出範本精靈] 延伸模組，或是使用 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 中包含的範本，以 VSIX 檔案格式建立範本以改進部署，也可以手動建立範本。  
@@ -75,4 +58,3 @@ ms.lasthandoff: 05/31/2017
 ## <a name="see-also"></a>另請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)
-

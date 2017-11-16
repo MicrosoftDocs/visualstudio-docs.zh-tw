@@ -1,30 +1,29 @@
 ---
 title: "記憶體管理時間 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.paging"
-helpviewer_keywords: 
-  - "並行視覺化檢視，分頁時間"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.paging
+helpviewer_keywords: Concurrency Visualizer, Paging Time
 ms.assetid: 67af3509-3a7d-435d-bc37-5262448da915
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c04bdfd537a57bc4578b122d45b6b86eedc6e603
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 記憶體管理時間
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-時間表中的這些區段是與分類為 \[記憶體管理\] 的封鎖時間相關聯。  這表示執行緒遭到與記憶體管理作業 \(例如分頁\) 相關聯的事件封鎖。  在這段時間，執行緒在「並行視覺化檢視」計為記憶體管理的 API 或核心狀態中被封鎖。  這些包括分頁和記憶體配置等事件。  
+# <a name="memory-management-time"></a>記憶體管理時間
+時間軸中的這些區段會和分類為記憶體管理的封鎖時間相關聯。 這表示，和記憶體管理作業 (例如分頁) 相關聯的事件會封鎖執行緒。 在這段期間內，會在並行視覺化檢視當作記憶體管理分類計數的 API 或核心狀態中封鎖執行緒。 像是分頁和記憶體配置等事件都包括在內。  
   
- 若要進一步了解分類為分頁之封鎖的基本原因，請檢查相關聯的呼叫堆疊和程式碼剖析報告。  
+ 請檢查相關聯的呼叫堆疊並分析報表，以深入了解分類為記憶體管理的根本封鎖原因。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

@@ -1,45 +1,46 @@
 ---
-title: "DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.DA0504"
-  - "vs.performance.504"
-  - "vs.performance.rules.DA0504"
+title: "DA0504：所分析之處理序的最大工作集 (以位元組為單位) | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.DA0504
+- vs.performance.504
+- vs.performance.rules.DA0504
 ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c239330da74b670382501ff5d09df79e35470b4c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：進行程式碼剖析之處理序的最大工作集 (以位元組為單位)
 |||  
 |-|-|  
 |規則 ID|DA0504|  
 |分類|資源管理|  
 |程式碼剖析方法|全部|  
-|Message|蒐集這項資訊僅供參考之用。  Process Working Set 計數器會測量您要分析的處理序的實際記憶體使用量。  回報的值就是在所有測量間隔中觀察到的最大值。|  
+|訊息|收集此資訊僅供參考之用。 「處理序工作集」計數器會依您分析的處理序測量實體記憶體的使用方式。 報告的值是所有測量間隔所觀察到最大值。|  
 |規則型別|資訊|  
   
- 當您使用取樣、.NET 記憶體或資源爭用方法進行程式碼剖析時，必須至少收集 10 個範本才能觸發此規則。  
+ 當您使用取樣、.NET 記憶體或資源爭用方法進行分析時，必須至少收集 10 個樣本才能觸發此規則。  
   
-## 規則描述  
- 這個訊息回報處理序目前所使用的最大實體記憶體量 \(以位元組為單位\)。  處理序工作集代表處理序位址空間中目前位於實體記憶體內的頁面。  這個規則回報程式碼剖析處於作用中狀態時處理序工作集的最大值。  
+## <a name="rule-description"></a>規則描述  
+ 此訊息報告處理序目前使用的實體記憶體最大數量，以位元組為單位。 處理序工作集表示目前位於實體記憶體中之處理序位址空間的頁面。 此規則回報分析進行時，處理序工作集的最大值。  
   
- 回報的值包含處理序所參考之共用記憶體區段的常駐頁面。  處理序所參考的共用 DLL 會包含在計入的共用記憶體區段中。  由於共用記憶體區段，處理序工作集的值可能比處理序已配置的虛擬記憶體量更高。  
+ 報告的值包含處理序參考之共用記憶體區段的固有頁面。 處理序參考的共用 DLL 包含在計算的共用記憶體區段中。 處理序工作集的值可以高於處理序因為共用記憶體區段而配置的虛擬記憶體數量。  
   
- 處理序工作集大小反映處理序目前正在使用的虛擬記憶體量。  它也會受到用來執行應用程式的實體記憶體 \(或 RAM\) 數量以及其他執行中處理序對該實體記憶體的爭用所影響。  如需處理序工作集的詳細資訊，請參閱MSDN 中的 Windows 記憶體管理文件 [工作集](http://go.microsoft.com/fwlink/?LinkId=177830) 。  
+ 處理序工作集大小會反映處理序正在使用多少虛擬記憶體。 它也會受到執行應用程式可用的實體記憶體 (或 RAM) 數量，以及其他執行中處理序對該實體記憶體的爭用的影響。 如需處理序工作集的詳細資訊，請參閱 MSDN 網站上＜Windows 記憶體管理＞文件中的[工作集](http://go.microsoft.com/fwlink/?LinkId=177830)。  
   
-## 如何使用規則資料  
- 規則會從 Windows 效能監視設備收集此度量資料，並回報僅供參考之用。  使用時可以比較程式之不同版本或組建間的效能，或了解應用程式在不同測試情節下的效能。  
+## <a name="how-to-use-rule-data"></a>如何使用規則資料  
+ 此規則會從 Windows 效能監視功能收集這個測量資料，但只報告做為參考資訊。 使用此資料可比較程式不同版本或組建的效能，或了解不同測試情節中的應用程式效能。  
   
- 按兩下 \[錯誤清單\] 視窗中的訊息，即可巡覽至程式碼剖析資料的[標記檢視](../profiling/marks-view.md)。  尋找 **Process\\Working Set** 和 **Memory\\Pages\/sec** 計數器資料行。  然後，尋找 **Process\\Working Set** 的最大值，並將它和 **Memory\\Pages\/sec** 值相比較。  工作集最大值通常與分頁 IO 活動減少的間隔相關聯，特別是在電腦記憶體受限制時。
+ 按兩下 [錯誤清單] 視窗中的訊息，瀏覽至分析資料的[標記檢視](../profiling/marks-view.md)。 尋找 **Process\Working Set** 和 **Memory\Pages/sec** 計數器欄。 然後找出 **Process\Working Set** 的最大值並與 **Memory\Pages/sec** 值比較。 工作集最大值通常與分頁 IO 活動減少的間隔相關，如果機器的記憶體受到限制時尤其如此。

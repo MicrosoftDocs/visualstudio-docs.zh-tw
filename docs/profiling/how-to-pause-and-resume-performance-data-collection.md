@@ -1,21 +1,23 @@
 ---
-title: "如何：暫停和繼續程式碼剖析 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼剖析工具, 遠端分析"
+title: "如何︰暫停和繼續效能資料收集 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
-caps.latest.revision: 16
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d80aa5c71651fc6540711dc23ee2f9c8d45415b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  
@@ -40,8 +42,3 @@ caps.handback.revision: 16
 ## <a name="see-also"></a>另請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

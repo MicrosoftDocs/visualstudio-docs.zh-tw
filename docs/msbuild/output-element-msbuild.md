@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 03/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#Output
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#Output
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - <Output> Element [MSBuild]
 - Output Element [MSBuild]
 ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 0e5a449ef396e7b9fd23a2c018bdc7f8791b7b38
-ms.openlocfilehash: 7a72f1faa5cfda2efb650f037ffdfcab072760c7
-ms.lasthandoff: 03/13/2017
-
+ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 在項目或屬性中儲存工作輸出值。  
@@ -59,8 +43,8 @@ ms.lasthandoff: 03/13/2017
     Condition = "'String A' == 'String B'" />  
 ```  
 
-## <a name="attributes-and-elements"></a>屬性和元素  
- 下列章節說明屬性、子元素和父元素。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
 
 ### <a name="attributes"></a>屬性  
 
@@ -71,12 +55,12 @@ ms.lasthandoff: 03/13/2017
 |`ItemName`|需要 `PropertyName` 或 `ItemName` 屬性。<br /><br /> 接收工作輸出參數值的項目。 然後您的專案即可用 `@(`*ItemName*`)` 語法來參考該項目。 項目名稱可以是新的項目名稱，或是已經在專案中定義的名稱。<br /><br /> 如果同時也使用 `PropertyName`，就不能使用這個屬性。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
-### <a name="child-elements"></a>子元素  
+### <a name="child-elements"></a>子項目  
  無。  
 
-### <a name="parent-elements"></a>父元素  
+### <a name="parent-elements"></a>父項目  
 
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。|  
 
@@ -103,4 +87,3 @@ ms.lasthandoff: 03/13/2017
 ## <a name="see-also"></a>另請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)
-
