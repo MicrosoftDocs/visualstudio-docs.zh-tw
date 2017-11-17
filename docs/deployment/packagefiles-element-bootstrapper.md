@@ -1,33 +1,33 @@
 ---
-title: "&lt;PackageFiles&gt; 項目 (啟動載入器) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<PackageFiles> 項目 [啟動載入器]"
+title: "&lt;請為 PackageFiles&gt;元素 （啟動載入器） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <PackageFiles> element [bootstrapper]
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: a85b06bfc5c82e7d4bd08bef8f768ad2e28a2ab0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;PackageFiles&gt; 項目 (啟動載入器)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`PackageFiles` 項目包含 `PackageFile` 項目，定義 `Command` 項目所產生的安裝套件 \(Package\)。  
+# <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;請為 PackageFiles&gt;元素 （啟動載入器）
+`PackageFiles`元素包含`PackageFile`項目，可定義執行的安裝封裝`Command`項目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <PackageFiles  
@@ -43,28 +43,28 @@ caps.handback.revision: 16
 </PackageFiles>  
 ```  
   
-## 項目和屬性  
- `PackageFiles` 項目具有下列屬性。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `PackageFiles`項目具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`CopyAllPackageFiles`|選擇項。  如果設定為 `false`，安裝程式只會從 `Command` 項目下載所參考的檔案。  如果設定為 `true`，將會下載所有檔案。<br /><br /> 如果設定為 `IfNotHomesite`，安裝程式的行為會與設定為 `False` 時相同 \(如果 `ComponentsLocation` 設定為 `HomeSite`\)，否則安裝程式的行為將會與設定為 `True` 時相同。  這項設定可用來讓本身即為啟動載入器 \(Bootstrapper\) 的套件在 HomeSite 案例下執行自己的行為。<br /><br /> 預設值為 `true`。|  
+|---------------|-----------------|  
+|`CopyAllPackageFiles`|選擇項。 如果設定為`false`，安裝程式只會下載檔案，從參考`Command`項目。 如果設定為`true`，將下載的所有檔案。<br /><br /> 如果設為`IfNotHomesite`，安裝程式將有相同的行為如同`False`如果`ComponentsLocation`設為`HomeSite`，否則的行為相同，如同`True`。 此設定可讓封裝自行只要 HomeSite 案例中執行本身的行為。<br /><br /> 預設為 `true`。|  
   
-## PackageFile  
- `PackageFile` 項目是 `PackageFiles` 項目的子系。  `PackageFiles` 項目必須至少有一個 `PackageFile` 項目。  
+## <a name="packagefile"></a>PackageFile  
+ `PackageFile`元素是子系`PackageFiles`項目。 A`PackageFiles`元素必須至少一個`PackageFile`項目。  
   
- `PackageFile` 具有下列屬性。  
+ `PackageFile`具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`Name`|必要項。  封裝檔案的名稱。  這是 `Command` 在定義套件的安裝條件時，將會參考的名稱。  這個值也可用來做為 `Strings` 資料表的索引鍵，藉以擷取當地語系化的名稱，讓 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具在描述套件時可以使用。|  
-|`HomeSite`|選擇項。  套件在遠端伺服器上的位置 \(如果安裝程式未隨附套件的話\)。|  
-|`CopyOnBuild`|選擇項。  指定啟動載入器是否應在建置階段將封裝檔案複製到磁碟上。  預設值是 true。|  
-|`PublicKey`|套件之憑證簽署者的加密公開金鑰 \(Public Key\)。  如果使用 `HomeSite` 則為必要項，否則為選擇項。|  
-|`Hash`|選擇項。  封裝檔案的 SHA1 雜湊資料。  這個雜湊資料用於在安裝階段驗證檔案的完整性。  如果無法從封裝檔案計算出相符的雜湊資料，則不會安裝該封裝。|  
+|---------------|-----------------|  
+|`Name`|必要項。 封裝檔案的名稱。 這是名稱，`Command`時它會定義用以安裝封裝的條件，將會參考項目。 此值也會用做為索引鍵到`Strings`資料表，以擷取之類的工具的當地語系化的名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]用來描述封裝。|  
+|`HomeSite`|選擇項。 在遠端伺服器上，如果不是隨附於安裝程式封裝的位置。|  
+|`CopyOnBuild`|選擇項。 指定啟動載入器是否應該在建置階段複製封裝檔案在磁碟上。 預設值為 true。|  
+|`PublicKey`|加密的封裝的憑證簽署人公開金鑰。 若`HomeSite`使用; 否則為選擇性。|  
+|`Hash`|選擇項。 封裝檔案的 SHA1 雜湊。 這用來在安裝期間確認檔案的完整性。 如果無法計算相同的雜湊，從套件檔案，將不會安裝封裝。|  
   
-## 範例  
- 下列程式碼範例為 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 可轉散發套件及其相依性 \(例如 Windows Installer\) 定義套件。  
+## <a name="example"></a>範例  
+ 下列程式碼範例會定義封裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可轉散發套件及其相依性，例如 Windows Installer。  
   
 ```  
 <PackageFiles>  
@@ -75,7 +75,7 @@ caps.handback.revision: 16
 </PackageFiles>  
 ```  
   
-## 請參閱  
- [\<Product\> 項目](../deployment/product-element-bootstrapper.md)   
- [\<Package\> 項目](../deployment/package-element-bootstrapper.md)   
+## <a name="see-also"></a>另請參閱  
+ [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
+ [\<封裝 > 項目](../deployment/package-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

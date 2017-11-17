@@ -1,86 +1,87 @@
 ---
-title: "從命令列建置 ClickOnce 應用程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce 部署, 從命令列"
-  - "發行"
-  - "發行, ClickOnce"
+title: "建立 ClickOnce 應用程式，從命令列 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, from command line
+- publishing
+- publishing, ClickOnce
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 86dba79e6e8b7e3f3b2837e494cfeddd2692d0cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 從命令列建置 ClickOnce 應用程式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，您可以從命令列建置專案，即使專案是在整合式開發環境 \(IDE\) 中建立的。  事實上，您可以在只安裝 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的另一部電腦上，重新建置以 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 所建立的專案。  這可讓您使用自動化處理序 \(例如在集中建置實驗室，或使用超越建置專案本身範圍的進階指令碼技術\)，重新產生組建。  
+# <a name="building-clickonce-applications-from-the-command-line"></a>從命令列建置 ClickOnce 應用程式
+在[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]，即使它們建立在整合式的開發環境 (IDE) 中，您可以建置專案，從命令列。 事實上，您可以重建專案，以建立[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]只剩的另一部電腦上[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安裝。 這可讓您重現組建，使用自動化程序，比方說，在集中建置實驗室，或使用進階指令碼技術建置專案本身的範圍之外。  
   
-## 使用 MSBuild 重新產生 ClickOnce 應用程式部署  
- 當您在命令列叫用 msbuild \/target:publish，它會告訴 MSBuild 系統，建置專案並在發行資料夾中建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式。  這相當於在 IDE 中選取 \[**發行**\] 命令。  
+## <a name="using-msbuild-to-reproduce-clickonce-application-deployments"></a>使用 MSBuild 來重現 ClickOnce 應用程式部署  
+ 當您叫用 msbuild /target:publish 在命令列時，它會告訴 MSBuild 系統建置專案，並建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式的發行資料夾中。 這相當於選取**發行**命令在 IDE 中。  
   
- 這個命令會執行 msbuild.exe，它位於 Visual Studio 命令提示字元環境中的路徑。  
+ 此命令會執行 msbuild.exe，位於 Visual Studio 命令提示字元環境中的路徑。  
   
- "target" 向 MSBuild 指示如何處理命令。  主要目標為「建置」目標和「發行」目標。  建置目標相當於在 IDE 中選取 \[建置\] \(或按 F5\) 命令。  如果您只要建置專案，可以輸入 `msbuild`，完成此作業。  因為建置目標是所有由 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 所產生專案的預設目標，所以這個命令有作用。  這表示您不必明確指定建置目標。  因此，輸入 `msbuild` 與輸入 `msbuild /target:build` 會執行相同作業。  
+ 「 目標 」 是 MSBuild 中的指標如何處理命令。 主要目標是 「 建置 」 目標和 「 發行 」 目標。 「 建置 」 目標相當於選取的組建在 IDE 中命令 （或按 F5）。 如果您只想要建置您的專案，您就可以達成此目標輸入`msbuild`。 這個命令可以運作，因為 「 建置 」 目標所產生的所有專案的預設目標[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。 這表示您明確地不需要指定 「 建置 」 目標。 因此，輸入`msbuild`是相同的操作，因為輸入`msbuild /target:build`。  
   
- `/target:publish` 命令告訴 MSBuild，叫用發行目標。  發行目標相依於建置目標。  這表示發行作業是建置作業的超集。  例如，如果您變更其中一個 Visual Basic 或 C\# 原始程式檔，則發行作業會自動重新建置對應的組件。  
+ `/target:publish`命令會告知 MSBuild 叫用發行的目標。 發行目標取決於 「 建置 」 目標。 這表示發行作業是建置作業的超集。 例如，如果您對其中一個 Visual Basic 或 C# 原始程式檔進行變更，對應的組件會自動重建，藉以發行作業。  
   
- 如需使用 Mage.exe 命令列工具建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資料清單，產生完整 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的詳細資訊，請參閱[逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
+ 如需產生完整資訊[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署使用 Mage.exe 命令列工具來建立您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單，請參閱[逐步解說： 手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  
   
-## 使用 MSBuild 建立和建置基本的 ClickOnce 應用程式  
+## <a name="creating-and-building-a-basic-clickonce-application-using-msbuild"></a>呤堙冓呤基本 ClickOnce 應用程式使用 MSBuild  
   
-#### 若要建立和發行 ClickOnce 專案  
+#### <a name="to-create-and-publish-a-clickonce-project"></a>建立和發行 ClickOnce 專案  
   
-1.  從 \[**檔案**\] 功能表中，按一下 \[**新增專案**\]。  \[**新增專案**\] 對話方塊隨即出現。  
+1.  按一下**新專案**從**檔案**功能表。 [ **新增專案** ] 對話方塊隨即出現。  
   
-2.  選取 \[**Windows 應用程式**\]，並為它命名為 `CmdLineDemo`。  
+2.  選取**Windows 應用程式**並將其命名`CmdLineDemo`。  
   
-3.  從 \[**建置**\] 功能表中，按一下 \[**發行**\] 命令。  
+3.  從**建置**功能表上，按一下 **發行**命令。  
   
-     這個步驟可確保專案正確設定為產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署。  
+     這個步驟可確保此專案是否已正確設定來產生[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式部署。  
   
-     \[發行精靈\] 隨即出現。  
+     [發行精靈] 隨即出現。  
   
-4.  在 \[發行精靈\] 中，按一下 \[**完成**\]。  
+4.  在 [發行精靈] 中，按一下**完成**。  
   
-     Visual Studio 隨即會產生和顯示名稱為 Publish.htm 的預設 Web 網頁。  
+     Visual Studio 會產生，並顯示預設 Web 網頁呼叫 Publish.htm。  
   
-5.  儲存專案，並記下儲存專案的資料夾位置。  
+5.  儲存專案，並記下儲存所在的資料夾位置。  
   
- 上面的步驟會建立 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 專案，這個專案已經第一次發行。  現在您可以在 IDE 以外重新產生組建。  
+ 上述的步驟建立[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]專案已發行的第一次。 現在就可以重現組建在 IDE 外面。  
   
-#### 若要從命令列重新產生組建  
+#### <a name="to-reproduce-the-build-from-the-command-line"></a>若要重新產生從命令列組建  
   
 1.  結束 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。  
   
-2.  從 Windows \[**開始**\] 功能表，依序按一下 \[**所有程式**\]、\[**Microsoft Visual Studio**\]、\[**Visual Studio Tools**\] 和 \[**Visual Studio 命令提示字元**\]。  這應該會開啟一個命令提示字元，其位置便在目前使用者的根資料夾中。  
+2.  從 Windows**啟動**功能表上，按一下 **所有程式**，然後**Microsoft Visual Studio**，然後**Visual Studio Tools**，然後**Visual Studio 命令提示字元**。 這應該會在目前使用者的根資料夾中開啟命令提示字元。  
   
-3.  在 \[**Visual Studio 命令提示字元**\]，將目前目錄切換到前面剛建置好的專案位置。  例如，輸入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
+3.  在**Visual Studio 命令提示字元**，將目前目錄變更到您剛才建置以上專案的位置。 例如，輸入`chdir My Documents\Visual Studio\Projects\CmdLineDemo`。  
   
-4.  若要移除上面＜若要建立和建置 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 專案＞中產生的現有檔案，請輸入 `rmdir /s publish`。  
+4.  要移除現有的檔案所產生的 「 建立和發行[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]專案中，「 類型`rmdir /s publish`。  
   
-     這個步驟是選擇性，但這個動作會確保所有新檔案都是由此命令列組建產生的。  
+     這個步驟是選擇性的但它可確保，新的檔案所有所產生的命令列組建。  
   
 5.  輸入 `msbuild /target:publish`。  
   
- 上面的步驟將會在專案中名稱為 \[**Publish**\] 的子資料夾，產生完整的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署。  CmdLineDemo.application 是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。  資料夾 CmdLineDemo\_1.0.0.0 包含檔案 CmdLineDemo.exe 和 CmdLineDemo.exe.manifest \([!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單\)。  Setup.exe 是啟動載入器 \(Bootstrapper\)，預設為安裝 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  DotNetFX 資料夾包含 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的可轉散發套件。  這些就是透過 Web、UNC 或 CD\/DVD 部署應用程式所需的完整檔案集。  
+ 上述的步驟將會產生完整[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]子資料夾中的應用程式部署，您的專案名為 P**ublish**。 CmdLineDemo.application 是[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署資訊清單。 資料夾 CmdLineDemo_1.0.0.0 包含檔案 CmdLineDemo.exe 和 CmdLineDemo.exe.manifest，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 Setup.exe 是在啟動載入器，其預設值設定為安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 DotNetFX 資料夾包含的可轉散發套件[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這是完整的部署您的應用程式，透過網頁或透過 UNC 或 CD/DVD 所需的檔案。  
   
-## 發行屬性  
- 當您用以上的程序發行應用程式時，\[發行精靈\] 會將下列屬性插入專案檔。  這些屬性直接影響 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的產生方式。  
+## <a name="publishing-properties"></a>發行內容  
+ 當您發行應用程式中的上述程序時，下列屬性會插入到專案檔，發行精靈。 這些屬性會直接影響如何[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]產生的應用程式。  
   
- CmdLineDemo.vbproj \/ CmdLineDemo.csproj：  
+ 在 CmdLineDemo.vbproj / CmdLineDemo.csproj:  
   
 ```  
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>  
@@ -102,71 +103,71 @@ caps.handback.revision: 23
 <BootstrapperEnabled>true</BootstrapperEnabled>  
 ```  
   
- 您可以在命令列覆寫這些屬性，而不需變更專案檔本身。  例如，下列將會建置不含啟動載入器的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署：  
+ 您可以覆寫這些屬性在命令列而不會變更專案檔本身。 例如，下列會建置[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不啟動載入器的應用程式部署：  
   
 ```  
 msbuild /target:publish /property:BootstrapperEnabled=false  
 ```  
   
- 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中，從 \[**專案設計工具**\] 的 \[**發行**\]、\[**安全性**\] 和 \[**簽章**\] 屬性頁面，控制發行屬性。  以下是發行屬性的描述，以及在應用程式設計工具的各個屬性頁中如何設定屬性的指示：  
+ 在控制發行內容[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]從**發行**，**安全性**，和**簽署**屬性頁的**專案設計工具**. 以下是發行的內容，並指出每個應用程式的設計工具的各種屬性頁面中的設定方式的描述：  
   
--   `AssemblyOriginatorKeyFile` 決定簽署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單所使用的金鑰檔。  這個金鑰也可以用來簽署組件的強式名稱。  在 \[**專案設計工具**\] 的 \[**簽章**\] 頁面中，設定這個屬性。  
+-   `AssemblyOriginatorKeyFile`用來簽署的金鑰檔會決定您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 此相同金鑰也可用來將強式名稱指派給您的組件。 設定此屬性**簽署**頁面**專案設計工具**。  
   
- 下列屬性在 \[**安全性**\] 頁中設定：  
+ 下列屬性會設**安全性**頁面：  
   
--   \[**啟用 ClickOnce 安全性設定**\] 可決定是否產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單。  最初建立專案時，產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 資訊清單的功能預設為關閉。  當您第一次發行時，精靈會自動開啟這個旗標。  
+-   **啟用 ClickOnce 安全性設定**決定是否[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]產生資訊清單。 一開始建立專案時，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]資訊清單產生預設為關閉。 精靈會自動開啟當您發行第一次這個旗標。  
   
--   **TargetZone** 決定發出給 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單的信任層級。  可能值為 "Internet"、"LocalIntranet" 和 "Custom"。  Internet 和 LocalIntranet 將會造成預設權限集發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。  LocalIntranet 為預設值，基本上表示完全信任。  Custom 指定只有基底 app.manifest 檔案中明確指定的權限，才會發出至 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。  app.manifest 檔案是部分資訊清單檔案，只包含信任資訊定義。  它是隱藏檔案，當您在 \[**安全性**\] 頁面中設定權限時，便會自動加入至專案。  
+-   **TargetZone**發出至信任的層級會決定您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 可能的值為"Internet"，"LocalIntranet"，"Custom"。 網際網路和 LocalIntranet 會導致發出至設定的預設權限您[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 LocalIntranet 是預設值，而且基本上表示完全信任。 自訂指定基底資訊清單檔案中明確指定的權限會發出至[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單。 部分的資訊清單檔包含只信任資訊定義為 app.manifest 檔案。 這是隱藏的檔案，自動加入至您的專案上設定權限時**安全性**頁面。  
   
- 下列屬性在 \[**發行**\] 頁面中設定：  
+ 下列屬性會設**發行**頁面：  
   
--   `PublishUrl` 是應用程式在 IDE 中發行時的目標位置。  如果未指定 `InstallUrl` 或 `UpdateUrl` 屬性，就會將它插入 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單。  
+-   `PublishUrl`是其中的應用程式將會發行至 IDE 中的位置。 它會插入至[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式資訊清單，如果沒有`InstallUrl`或`UpdateUrl`指定屬性。  
   
--   `ApplicationVersion` 指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式的版本。  這是四碼版本號碼。  如果最後一碼是 "\*"，則在建置時間 `ApplicationRevision` 會取代資訊清單中所插入的值。  
+-   `ApplicationVersion`指定的版本[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式。 這是四位數的版本號碼。 如果最後一個數字是"*"，則`ApplicationRevision`替換為在建立時期插入資訊清單的值。  
   
--   `ApplicationRevision` 會指定修訂。  這是整數，每次您在 IDE 發行時，這個整數會累加。  請注意，對於在命令列執行的組建，它不會自動累加。  
+-   `ApplicationRevision`指定修訂版本。 這是為您在 IDE 中發行每次遞增的整數。 請注意，它不會自動累加建置在命令列執行。  
   
--   `Install` 可以判斷應用程式是安裝的應用程式還是從 Web 執行的應用程式。  
+-   `Install`判斷應用程式是否已安裝的應用程式或執行從 Web 應用程式。  
   
--   `InstallUrl` \(未顯示\) 是使用者安裝應用程式的來源位置。  如果指定，這個值就會燒錄至 setup.exe 啟動載入器 \(如果已啟用 `IsWebBootstrapper` 屬性\)。  如果未指定 `UpdateUrl`，也會將此值插入應用程式資訊清單。  
+-   `InstallUrl`（未顯示） 是使用者安裝應用程式的位置。 如果指定，如果將這個值燒錄到 setup.exe 的啟動載入器`IsWebBootstrapper`屬性已啟用。 它也會插入至應用程式資訊清單 if`UpdateUrl`未指定。  
   
--   `SupportUrl` \(未顯示\) 是 \[**新增或移除程式**\] 對話方塊中已安裝程式的連結位置。  
+-   `SupportUrl`（未顯示） 已位置連結，以**新增/移除程式**安裝的應用程式 對話方塊。  
   
- 下列屬性在 \[**應用程式更新**\] 對話方塊 \(從 \[**發行**\] 頁存取\) 中設定。  
+ 下列屬性設定**應用程式更新**對話方塊中，從存取**發行**頁面。  
   
--   `UpdateEnabled` 指出應用程式是否應該檢查更新檔。  
+-   `UpdateEnabled`指出是否應該檢查更新的應用程式。  
   
--   `UpdateMode` 指定前景更新或背景更新。  
+-   `UpdateMode`指定更新前景或背景更新。  
   
--   `UpdateInterval` 指定應用程式應該檢查更新檔的頻率。  
+-   `UpdateInterval`指定應用程式應該要檢查更新的頻率。  
   
--   `UpdateIntervalUnits` 指定 `UpdateInterval` 值的單位：小時、天數或週數。  
+-   `UpdateIntervalUnits`指定是否`UpdateInterval`值是以小時、 天或週為單位。  
   
--   `UpdateUrl` \(未顯示\) 是應用程式將接收更新檔的來源位置。  如果指定，這個值會插入應用程式資訊清單。  
+-   `UpdateUrl`（未顯示） 是應用程式將從其接收更新的位置。 如果指定，這個值會插入應用程式資訊清單中。  
   
--   下列屬性在 \[**發行選項**\] 對話方塊 \(從 \[**發行**\] 頁面存取\) 中設定。  
+-   下列屬性設定**發行選項**對話方塊中，從存取**發行**頁面。  
   
--   `PublisherName` 指定發行者的名稱，當安裝或執行應用程式時，它會顯示在提示中。  在安裝的應用程式案例中，它也用來指定 \[**開始**\] 功能表上的資料夾名稱。  
+-   `PublisherName`指定在安裝或執行應用程式時所顯示的提示中顯示 「 發行者 」 的名稱。 如果是已安裝的應用程式，它也用來指定資料夾名稱上**啟動**功能表。  
   
--   `ProductName` 指定產品的名稱，當安裝或執行應用程式時，它會顯示在提示中。  在安裝的應用程式案例中，它也用來指定 \[**開始**\] 功能表上的捷徑名稱。  
+-   `ProductName`指定在安裝或執行應用程式時所顯示的提示中顯示的產品名稱。 如果是已安裝的應用程式，它也用於指定捷徑名稱上**啟動**功能表。  
   
--   下列屬性在 \[**必要條件**\] 對話方塊 \(從 \[**發行**\] 頁面存取\) 中設定。  
+-   下列屬性設定**必要條件**對話方塊中，從存取**發行**頁面。  
   
--   `BootstrapperEnabled` 能夠判斷是否要產生 setup.exe 啟動載入器。  
+-   `BootstrapperEnabled`決定是否要產生的 setup.exe 啟動載入器。  
   
--   `IsWebBootstrapper` 能夠判斷 setup.exe 啟動載入器是透過 Web 還是以磁碟架構的模式運作。  
+-   `IsWebBootstrapper`決定 setup.exe 啟動載入器是否可透過網頁或以磁碟為基礎的模式。  
   
-## InstallURL、SupportUrl、PublishURL 和 UpdateURL  
- 下表顯示 ClickOnce 部署的四個 URL 選項。  
+## <a name="installurl-supporturl-publishurl-and-updateurl"></a>InstallURL、 SupportUrl、 PublishURL 和 UpdateURL  
+ 下表顯示四個 ClickOnce 部署的 URL 選項。  
   
-|URL 選項|描述|  
-|------------|--------|  
-|`PublishURL`|如果您要將 ClickOnce 應用程式發行至網站時需要。|  
-|`InstallURL`|選擇項。  如果安裝網站不同於 `PublishURL` 時，請設定這個 URL 選項。  例如，您可以將 `PublishURL` 設為 FTP 路徑，並且將 `InstallURL` 設為 Web URL。|  
-|`SupportURL`|選擇項。  如果支援網站不同於 `PublishURL` 時，請設定這個 URL 選項。  例如，您可以將 `SupportURL` 設定為您公司的客戶支援網站。|  
-|`UpdateURL`|選擇項。  如果更新位置不同於 `InstallURL` 時，請設定這個 URL 選項。  例如，您可以將 `PublishURL` 設為 FTP 路徑，並且將 `UpdateURL` 設為 Web URL。|  
+|URL 選項|說明|  
+|----------------|-----------------|  
+|`PublishURL`|如果您要發行 ClickOnce 應用程式至網站的必要項。|  
+|`InstallURL`|選擇項。 設定此 URL 選項，如果安裝站台不同`PublishURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`InstallURL`至網頁的 URL。|  
+|`SupportURL`|選擇項。 設定此 URL 選項，如果支援站台不同`PublishURL`。 例如，您可以設定`SupportURL`至貴公司的客戶支援的網站。|  
+|`UpdateURL`|選擇項。 設定此 URL 選項，如果不同的更新位置`InstallURL`。 例如，您可以設定`PublishURL`FTP 路徑並集中`UpdateURL`至網頁的 URL。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.Build.Tasks.GenerateBootstrapper>   
  <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>   
  <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>   

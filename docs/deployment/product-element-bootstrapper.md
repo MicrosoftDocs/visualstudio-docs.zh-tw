@@ -1,33 +1,33 @@
 ---
-title: "&lt;Product&gt; 項目 (啟動載入器) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<product> 項目 [啟動載入器]"
+title: "&lt;產品&gt;元素 （啟動載入器） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <product> element [bootstrapper]
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: c115fa5cb7191ab1edcff3005620d9ac7835f8a0
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Product&gt; 項目 (啟動載入器)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`Product` 項目是產品檔案內最上層的 XML 項目。  
+# <a name="ltproductgt-element-bootstrapper"></a>&lt;產品&gt;元素 （啟動載入器）
+`Product`元素是產品檔案內的最上層 XML 元素。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Product  
@@ -139,15 +139,15 @@ ProductCode
 </Package>  
 ```  
   
-## 項目和屬性  
- 產品檔案中必須有 `Product` 項目。  它具有下列屬性：  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `Product`項目必要的產品檔案中。 它有下列屬性。  
   
-|屬性|描述|  
-|--------|--------|  
-|`ProductCode`|產品的唯一識別項。|  
+|屬性|說明|  
+|---------------|-----------------|  
+|`ProductCode`|產品的唯一識別碼。|  
   
-## 範例  
- 在下列程式碼範例中，會示範安裝 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的完整產品檔案。  
+## <a name="example"></a>範例  
+ 下列程式碼範例會顯示完整的產品檔案安裝[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -251,5 +251,5 @@ ProductCode
 </Product>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

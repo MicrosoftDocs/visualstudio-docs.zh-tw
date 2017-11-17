@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/debugger/graphics/walkthrough-missing-objects-due-to-misconfigured-pipeline
-ms.translationtype: HT
-ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
 ms.openlocfilehash: 109664be5854ae2f66e53356d62224c704c0ebd1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 11/08/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

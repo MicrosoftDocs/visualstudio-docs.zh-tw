@@ -11,34 +11,20 @@ helpviewer_keywords:
 - diagrams - modeling, saving modeling diagrams
 - UML diagrams, saving
 ms.assetid: 0df68943-4c60-4f00-b1e8-b1cdee13762e
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 861aa139eeec3577497bfd1d34957bd19bba31b7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: b4eb0abb91ee8cfb5e3406c6211ef5934b4db0ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="export-diagrams-as-images"></a>將圖表匯出為影像
-在 Visual Studio 中，您可以將模型圖表儲存成唯讀格式，讓您可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 專案小組成員共用這些。  
+在 Visual Studio 中，您可以儲存模型圖表在唯讀的格式，如此您就可以與專案關係人、 使用者或不使用相同版本的 Visual Studio 的專案小組成員共用它們。  
   
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>將圖表或部分圖表複製到另一個應用程式  
   
@@ -50,14 +36,14 @@ ms.lasthandoff: 02/22/2017
   
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>將模型圖表儲存為 XML 文件規格 (.xps) 檔案  
   
-1.  在**檔案**] 功能表上，按一下 [**列印**開啟**列印**對話方塊。  
+1.  在**檔案**功能表上，按一下 [**列印**開啟**列印**] 對話方塊。  
   
 2.  在**名稱**清單中，選取**Microsoft XPS Document Writer**，然後按一下 **確定**。  
   
-3.  在**檔案儲存為**對話方塊中的，將檔案儲存為**XPS 文件 (\*.xps)**檔案。  
+3.  在**將檔案儲存為**對話方塊中的，以將檔案**XPS 文件 (\*.xps)**檔案。  
   
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
   
 ## <a name="see-also"></a>另請參閱  
- [建立您的應用程式模型](../modeling/create-models-for-your-app.md)   
+ [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
  [共用模型及匯出圖表](../modeling/share-models-and-exporting-diagrams.md)

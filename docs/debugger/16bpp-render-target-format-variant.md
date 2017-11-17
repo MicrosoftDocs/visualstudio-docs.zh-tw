@@ -1,9 +1,8 @@
 ---
 redirect_url: /visualstudio/debugger/graphics/16bpp-render-target-format-variant
-ms.translationtype: HT
-ms.sourcegitcommit: 9b332c2a5fdb1cd14b28a2280a5d0b109f2abc11
 ms.openlocfilehash: 3c40368a8b109ac32d63aa21498ae2bf523b1f62
-ms.contentlocale: zh-tw
-ms.lasthandoff: 11/08/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---

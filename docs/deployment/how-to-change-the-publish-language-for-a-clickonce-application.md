@@ -1,50 +1,51 @@
 ---
-title: "如何：變更 ClickOnce 應用程式的發行語言 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce 部署, 變更發行語言"
-  - "發行語言屬性"
-  - "發行, ClickOnce"
+title: "如何： 變更 ClickOnce 應用程式發行語言 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Publish language property
+- ClickOnce deployment, changing publish language
+- publishing, ClickOnce
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1643a3bec79b6f0e1b89548ab1a62c3dfd6c6e9a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 如何：變更 ClickOnce 應用程式的發行語言
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-發行 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式時，在安裝期間顯示的使用者介面預設為開發電腦的語言和文化特性 \(Culture\)。  如果您要發行當地語系化的應用程式，您需要指定與當地語系化版本相符的語言和文化特性。  這是由專案的 `Publish language` 屬性決定的。  
+# <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>如何：變更 ClickOnce 應用程式的發行語言
+發行時[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]應用程式，在安裝語言與您的開發電腦的文化特性的預設值時顯示的使用者介面。 如果您要發行當地語系化的應用程式，您必須指定的語言和文化特性，以符合當地語系化的版本。 這取決於`Publish language`專案的屬性。  
   
- 在 \[**發行選項**\] 對話方塊中可以設定 `Publish language` 屬性 \(從 \[**專案設計工具**\] 的 \[**發行**\] 頁存取\)。  
+ `Publish language`屬性可以設定**發行選項**對話方塊中，從存取**發行**頁面**專案設計工具**。  
   
 > [!NOTE]
->  根據您目前使用的設定或版本，您所看到的對話方塊與功能表指令可能會與 \[說明\] 中描述的不同。  若要變更設定，請從 \[**工具**\] 功能表中選擇 \[**匯入和匯出設定**\]。  如需詳細資訊，請參閱 [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/zh-tw/22c4debb-4e31-47a8-8f19-16f328d7dcd3)。  
+>  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-### 若要變更發行語言  
+### <a name="to-change-the-publish-language"></a>若要變更發行語言  
   
-1.  在 \[**方案總管**\] 中選取專案之後，請在 \[**專案**\] 功能表上，按一下 \[**屬性**\]。  
+1.  在方案總管 中選取專案之後，按一下 [專案]  功能表中 [屬性] 。  
   
-2.  按一下 \[**發行**\] 索引標籤。  
+2.  按一下**發行** 索引標籤。  
   
-3.  按一下 \[**選項**\] 按鈕，開啟 \[**發行選項**\] 對話方塊。  
+3.  按一下**選項** 按鈕以開啟**發行選項** 對話方塊。  
   
-4.  按一下 \[**描述**\]。  
+4.  按一下**描述**。  
   
-5.  在 \[**發行選項**\] 對話方塊中，從 \[**發行語言**\] 下拉式清單中選取語言和文化特性，再按 \[**確定**\]。  
+5.  中**發行選項**對話方塊方塊中，選取語言和文化特性從**發行語言**下拉式清單，然後按一下**確定**。  
   
-## 請參閱  
- [發行 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
- [如何：使用發行精靈發行 ClickOnce 應用程式](../Topic/How%20to:%20Publish%20a%20ClickOnce%20Application%20using%20the%20Publish%20Wizard.md)
+## <a name="see-also"></a>另請參閱  
+ [發佈 ClickOnce 應用程式](../deployment/publishing-clickonce-applications.md)   
+ [如何：使用發行精靈發行 ClickOnce 應用程式](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

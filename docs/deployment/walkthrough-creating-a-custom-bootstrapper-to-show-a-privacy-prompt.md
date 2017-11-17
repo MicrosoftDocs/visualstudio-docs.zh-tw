@@ -1,170 +1,171 @@
 ---
-title: "逐步解說：建立自訂啟動載入器以顯示隱私權提示 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "ClickOnce 部署, 必要條件"
-  - "相依性 [.NET Framework], 自訂啟動載入器套件"
-  - "部署應用程式 [Visual Studio], 自訂必要條件"
-  - "必要條件 [.NET Framework], 自訂啟動載入器套件"
-  - "Windows Installer 部署, 必要條件"
+title: "逐步解說： 建立自訂啟動載入器以顯示隱私權提示 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- ClickOnce deployment, prerequisites
+- dependencies [.NET Framework], custom bootstrapper package
+- deploying applications [Visual Studio], custom prerequisites
+- Windows Installer deployment, prerequisites
+- prerequisites [.NET Framework], custom bootstrapper package
 ms.assetid: 2f3edd6a-84d1-4864-a1ae-6a13c5732aae
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: f84abe8354f1affc566cc05d119edc4cbc030712
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 逐步解說：建立自訂啟動載入器以顯示隱私權提示
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以將 ClickOnce 應用程式設定成在組件有更新版本的檔案和組件時自動更新。  為確認您的客戶同意此行為，您可以向他們顯示隱私權提示。  然後，他們可以選擇是否要授權讓應用程式自動更新。  如果不允許應用程式自動更新，則不會進行安裝。  
+# <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>逐步解說：建立自訂啟動載入器以顯示隱私權提示
+您可以設定 ClickOnce 應用程式與較新的檔案版本和組件版本的組件變成可用時自動更新。 若要確定您的客戶同意此行為，您可以顯示隱私權提示給他們。 然後，他們可以選擇是否要自動更新應用程式的權限授與。 如果應用程式不允許自動更新，並不會安裝。  
   
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## 必要條件  
+## <a name="prerequisites"></a>必要條件  
  您需要下列元件才能完成此逐步解說：  
   
 -   Visual Studio 2010。  
   
-## 建立更新同意對話方塊  
- 若要顯示隱私權提示，請建立要求讀者同意應用程式自動更新的應用程式。  
+## <a name="creating-an-update-consent-dialog-box"></a>建立更新程式的同意對話方塊  
+ 若要顯示隱私權提示，請建立應用程式詢問讀取器同意應用程式的自動更新。  
   
-#### 若要建立同意對話方塊  
+#### <a name="to-create-a-consent-dialog-box"></a>若要建立顯示同意對話方塊  
   
-1.  在 \[**檔案**\] 功能表上，指向 \[**新增**\]，然後按一下 \[**專案**\]。  
+1.  在 [檔案]  功能表中，指向 [新增] ，然後按一下 [專案] 。  
   
-2.  在 \[**新增專案**\] 對話方塊中，按一下 \[**Windows**\]，然後按一下 \[**Windows Form 應用程式**\]。  
+2.  在**新專案**對話方塊中，按一下  **Windows**，然後按一下  **WindowsFormsApplication**。  
   
-3.  在 \[**名稱**\] 中，輸入 ConsentDialog，然後按一下 \[**確定**\]。  
+3.  如**名稱**，型別**ConsentDialog**，然後按一下 **確定**。  
   
-4.  在設計工具中按一下表單。  
+4.  在設計師中，按一下 [表單]。  
   
-5.  在 \[**屬性**\] 視窗中，將 \[**Text**\] 屬性變更為 Update Consent Dialog。  
+5.  在**屬性**視窗中，變更**文字**屬性**更新同意對話方塊**。  
   
-6.  在 \[**工具箱**\] 中，展開 \[**所有 Windows Form**\]，並將 \[**Label**\] 控制項拖曳至表單中。  
+6.  在**工具箱**，依序展開**所有 Windows Form**，並拖曳**標籤**控制項加入表單。  
   
 7.  在設計工具中，按一下標籤控制項。  
   
-8.  在 \[**屬性**\] 視窗中，將 \[**外觀**\] 下的 \[**Text**\] 屬性變更為下列文字：  
+8.  在**屬性**視窗中，變更**文字**下的屬性**外觀**如下：  
   
-     您即將安裝的應用程式會在 Web 檢查是否有最新更新。  按一下 \[我同意\]，表示您授權應用程式從網際網路自動檢查並安裝更新。  
+     您即將安裝的應用程式會檢查在網站上最新的更新。 按一下 [我同意]，您可以授權檢查，並自動安裝更新，從網際網路應用程式。  
   
-9. 在 \[**工具箱**\] 中，將 \[**Checkbox**\] 控制項拖曳至表單中央。  
+9. 在**工具箱**，拖曳**核取方塊**中間的表單控制項。  
   
-10. 在 \[**屬性**\] 視窗中，將 \[**版面配置**\] 下的 \[**Text**\] 屬性變更為 \[我同意\]。  
+10. 在**屬性**視窗中，變更**文字**下的屬性**配置**至**我同意**。  
   
-11. 在 \[**工具箱**\] 中，將 \[**Button**\] 控制項拖曳至表單左下方。  
+11. 在**工具箱**，拖曳**按鈕**左下方的表單控制項。  
   
-12. 在 \[**屬性**\] 視窗中，將 \[**版面配置**\] 下的 \[**Text**\] 屬性變更為 \[繼續\]。  
+12. 在**屬性**視窗中，變更**文字**下的屬性**配置**至**繼續**。  
   
-13. 在 \[**屬性**\] 視窗中，將 \[**設計**\] 下的 \[**\(名稱\)**\] 屬性變更為 ProceedButton。  
+13. 在**屬性**視窗中，變更**（名稱）**下的屬性**設計**至**ProceedButton**。  
   
-14. 在 \[**工具箱**\] 中，將 \[**Button**\] 控制項拖曳至表單右下方。  
+14. 在**工具箱**，拖曳**按鈕**右下方的表單控制項。  
   
-15. 在 \[**屬性**\] 視窗中，將 \[**版面配置**\] 下的 \[**Text**\] 屬性變更為 \[取消\]。  
+15. 在**屬性**視窗中，變更**文字**下的屬性**配置**至**取消**。  
   
-16. 在 \[**屬性**\] 視窗中，將 \[**設計**\] 下的 \[**\(名稱\)**\] 屬性變更為 CancelButton。  
+16. 在**屬性**視窗中，變更**（名稱）**下的屬性**設計**至**CancelButton**。  
   
-17. 在設計工具中，按兩下 \[**我同意**\] 核取方塊，產生 CheckedChanged 事件處理常式。  
+17. 在設計師中，按兩下**我同意**核取方塊以產生 CheckedChanged 事件處理常式。  
   
-18. 在 Form1 程式碼檔案中，為 CheckedChanged 事件處理常式加入下列程式碼。  
+18. 在 Form1 程式碼檔案中，加入下列程式碼 CheckedChanged 事件處理常式。  
   
-     [!code-cs[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
+     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
      [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]  
   
-19. 將類別建構函式更新成預設停用 \[**繼續**\] 按鈕。  
+19. 更新類別建構函式來停用**繼續**預設按鈕。  
   
-     [!code-cs[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
+     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
      [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]  
   
-20. 在 Form1 程式碼檔案中，加入下列程式碼，讓布林值變數檢查使用者是否已經同意線上更新。  
+20. 在 Form1 程式碼檔案中，加入下列程式碼的布林值變數，來追蹤，如果終端使用者同意線上更新。  
   
-     [!code-cs[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
+     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
      [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]  
   
-21. 在設計工具中，按兩下 \[**繼續**\] 按鈕，產生 Click 事件處理常式。  
+21. 在設計師中，按兩下**繼續**按鈕以產生 Click 事件處理常式。  
   
-22. 在 Form1 程式碼檔案中，將下列程式碼加入至 \[**繼續**\] 按鈕的 Click 事件處理常式。  
+22. 在 Form1 程式碼檔案中，將下列程式碼加入至 Click 事件處理常式，如**繼續** 按鈕。  
   
-     [!code-cs[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
+     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
      [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]  
   
-23. 在設計工具中，按兩下 \[**取消**\] 按鈕，產生 Click 事件處理常式。  
+23. 在設計師中，按兩下**取消**按鈕以產生 Click 事件處理常式。  
   
-24. 在 Form1 程式碼檔案中，為 \[**取消**\] 按鈕的 Click 事件處理常式加入下列程式碼。  
+24. 在 Form1 程式碼檔案中，加入 [Click 事件處理常式，如下列程式碼**取消**] 按鈕。  
   
-     [!code-cs[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
+     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
      [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]  
   
-25. 將應用程式更新成在使用者不同意線上更新時傳回錯誤。  
+25. 更新傳回錯誤，如果使用者不同意線上更新應用程式。  
   
-     僅限 Visual Basic 開發人員：  
+     只有 Visual Basic 開發：  
   
-    1.  按一下 \[**方案總管**\] 中的 \[**ConsentDialog**\]。  
+    1.  在**方案總管] 中**，按一下 [ **ConsentDialog**。  
   
-    2.  按一下 \[**專案**\] 功能表上的 \[**加入模組**\]，再按一下 \[**加入**\]。  
+    2.  在**專案**功能表上，按一下 **加入模組**，然後按一下 **新增**。  
   
-    3.  在 Module1.vb 程式碼檔案中，加入下列程式碼。  
+    3.  在 Module1.vb 檔案中，加入下列程式碼。  
   
          [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]  
   
-    4.  在 \[**專案**\] 功能表上，按一下 \[**ConsentDialog 屬性**\]，然後按一下 \[**應用程式**\] 索引標籤。  
+    4.  在**專案**功能表上，按一下  **ConsentDialog 屬性**，然後按一下 **應用程式** 索引標籤。  
   
-    5.  取消核取 \[**啟用應用程式架構**\]。  
+    5.  取消核取**啟用應用程式架構**。  
   
-    6.  選取 \[**啟始物件**\] 下拉式功能表中的 \[**Module1**\]。  
+    6.  在**啟始物件**下拉式選單中，選取**Module1**。  
   
         > [!NOTE]
-        >  停用應用程式架構會停用諸如 Windows XP 視覺化樣式、應用程式事件、啟動顯示畫面、單一執行個體應用程式等功能。  如需詳細資訊，請參閱 [應用程式頁面，專案設計工具 \(Visual Basic\)](../ide/reference/application-page-project-designer-visual-basic.md)。  
+        >  停用應用程式架構，會停用功能，例如 Windows XP 視覺化樣式、 應用程式事件、 啟動顯示畫面中，單一執行個體的應用程式等等。 如需詳細資訊，請參閱[專案設計工具、應用程式頁 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)。  
   
-     僅限 Visual C\# 開發人員：  
+     Visual C# 開發人員只：  
   
-     開啟 Program.cs 程式碼檔案並加入下列程式碼。  
+     開啟 Program.cs 程式碼檔案中，並加入下列程式碼。  
   
-     [!code-cs[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
+     [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]  
   
-26. 按一下 \[**建置**\] 功能表上的 \[**建置方案**\]。  
+26. 在**建置**功能表上，按一下 **和 BuildSolution**。  
   
-## 建立自訂啟動載入器套件  
- 若要對使用者顯示隱私權提示，您可以建立 Update Consent Dialog 應用程式的自訂啟動載入器套件，並將它包含在所有 ClickOnce 應用程式中做為必要條件。  
+## <a name="creating-the-custom-bootstrapper-package"></a>建立自訂啟動載入器套件  
+ 若要顯示隱私權提示給使用者，您可以建立更新同意對話方塊應用程式的自訂啟動載入器套件，並將它做為必要條件包含在所有 ClickOnce 應用程式。  
   
- 這個程序將示範如何透過建立下列文件來建立自訂啟動載入器套件：  
+ 此程序示範如何透過建立下列文件來建立自訂啟動載入器套件：  
   
--   product.xml 資訊清單檔案，用以描述啟動載入器的內容。  
+-   Product.xml 資訊清單檔案，以說明啟動載入器的內容。  
   
--   package.xml 資訊清單檔案，用以列出套件的當地語系化特定資訊，例如字串和軟體授權合約。  
+-   若要列出您的封裝，例如字串和軟體授權條款的當地語系化特定層面的 package.xml 資訊清單檔案。  
   
--   軟體授權合約文件。  
+-   文件的軟體授權條款。  
   
-#### 步驟 1：建立啟動載入器目錄  
+#### <a name="step-1-to-create-the-bootstrapper-directory"></a>步驟 1： 建立啟動載入器目錄  
   
-1.  在 %PROGRAMFILES%\\Microsoft SDKs\\Windows\\v7.0A\\Bootstrapper\\Packages 目錄中，建立名為 UpdateConsentDialog 的目錄。  
-  
-    > [!NOTE]
-    >  您需要有管理權限才能建立這個資料夾。  
-  
-2.  在 UpdateConsentDialog 目錄中，建立名為 en 的子目錄。  
+1.  建立名為目錄**UpdateConsentDialog** %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages 中。  
   
     > [!NOTE]
-    >  為每個地區設定建立新目錄。  例如，您可以加入 fr 和 de 地區設定的子目錄。  如有需要，這些目錄會包含法文和德文字串與語言套件。  
+    >  您可能需要先建立這個資料夾的系統管理權限。  
   
-#### 步驟 2：建立 product.xml 資訊清單檔案  
+2.  在 UpdateConsentDialog 目錄中，建立名為 en-us 的子目錄。  
   
-1.  建立名為 `product.xml` 的文字檔。  
+    > [!NOTE]
+    >  建立新的目錄，每個地區設定。 比方說，您可以新增 fr-fr，以 de 地區設定中的子目錄。 如有必要，法文及德文字串和語言套件，會包含這些目錄。  
   
-2.  在 product.xml 檔案中，加入下列 XML 程式碼。  請確認您並未覆寫現有的 XML 程式碼。  
+#### <a name="step-2-to-create-the-productxml-manifest-file"></a>步驟 2： 建立 product.xml 資訊清單檔案  
+  
+1.  建立文字檔案，稱為`product.xml`。  
+  
+2.  在 product.xml 檔案中，加入下列 XML 程式碼。 請確定您不要覆寫現有的 XML 程式碼。  
   
     ```  
     <Product  
@@ -192,11 +193,11 @@ caps.handback.revision: 10
   
 3.  將檔案儲存至 UpdateConsentDialog 啟動載入器目錄。  
   
-#### 步驟 3：建立 package.xml 資訊清單檔案和軟體授權合約  
+#### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>步驟 3： 建立 package.xml 資訊清單檔案和軟體授權條款  
   
-1.  建立名為 `package.xml` 的文字檔。  
+1.  建立文字檔案，稱為`package.xml`。  
   
-2.  在 package.xml 檔案中，加入下列 XML 程式碼，以定義地區設定並包含軟體授權合約。  請確認您並未覆寫現有的 XML 程式碼。  
+2.  在 package.xml 檔中，加入下列 XML 程式碼定義地區設定，並包括軟體授權條款。 請確定您不要覆寫現有的 XML 程式碼。  
   
     ```  
     <Package   
@@ -218,91 +219,91 @@ caps.handback.revision: 10
     </Package>  
     ```  
   
-3.  將檔案儲存至 UpdateConsentDialog 啟動載入器目錄中的 en 子目錄。  
+3.  將檔案儲存至 UpdateConsentDialog 啟動載入器目錄的 en-us 子目錄。  
   
-4.  為軟體授權合約文件建立名為 eula.rtf 的文件。  
-  
-    > [!NOTE]
-    >  軟體授權合約應該包含授權、擔保、損害賠償責任和當地法律。  這些檔案應該是地區設定特定的，因此請確認檔案以支援 MBCS 或 UNICODE 字元的格式儲存。  關於軟體授權合約的內容，請洽詢您的法務部門。  
-  
-5.  將文件儲存至 UpdateConsentDialog 啟動載入器目錄中的 en 子目錄。  
-  
-6.  如有必要，為每個地區設定的授權合約建立新的 package.xml 資訊清單檔案和新的 eula.rtf 文件。  例如，如果您建立 fr 和 de 地區設定的子目錄，請分別建立 package.xml 資訊清單檔案和軟體授權合約並將它們儲存至 fr 和 de 子目錄。  
-  
-## 將 Update Consent 應用程式設定為必要條件  
- 在 Visual Studio 中，您可以將 Update Consent 應用程式設定為必要條件。  
-  
-#### 若要將 Update Consent 應用程式設定為必要條件  
-  
-1.  在 \[**方案總管**\] 中，按一下您想要部署的應用程式名稱。  
-  
-2.  按一下 \[**專案**\] 功能表上的 \[*ProjectName* **屬性**\]。  
-  
-3.  按一下 \[**發行**\] 頁面，再按一下 \[**必要條件**\]。  
-  
-4.  選取 \[**Update Consent Dialog**\]。  
+4.  建立文件稱為條款的軟體授權條款。  
   
     > [!NOTE]
-    >  您可能必須關閉並重新開啟 Visual Studio，才能在 \[必要條件對話方塊\] 中看到 \[Update Consent Dialog\]。  
+    >  軟體授權條款都應該包含授權、 擔保、 負債，以及用戶所在地法律相關資訊。 這些檔案應該是地區設定特定，因此請確定該檔案會儲存在支援 MBCS 或 UNICODE 字元格式。 請參閱您的法務部門的內容相關的軟體授權條款。  
   
-5.  按一下 \[**確定**\]。  
+5.  將文件儲存至 UpdateConsentDialog 啟動載入器目錄的 en-us 子目錄。  
   
-## 建立並測試安裝程式  
- 將 Update Consent 應用程式設定為必要條件之後，您可以產生應用程式的安裝程式和啟動載入器。  
+6.  如有必要，建立新 package.xml 資訊清單檔案，以及新 eula.rtf 文件的每個地區設定的軟體授權條款。 例如，如果您建立子目錄 fr 和 de 地區設定，建立個別的 package.xml 資訊清單檔案和軟體授權條款，並將它們儲存到 fr 和 de 子目錄。  
   
-#### 若要建立安裝程式，但不按一下我同意進行測試  
+## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>設定更新同意應用程式的必要條件  
+ 在 Visual Studio 中，您可以設定更新同意應用程式的必要元件。  
   
-1.  在 \[**方案總管**\] 中，按一下您想要部署的應用程式名稱。  
+#### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>若要設定更新同意應用程式的必要條件  
   
-2.  按一下 \[**專案**\] 功能表上的 \[*ProjectName* **屬性**\]。  
+1.  在**方案總管 中**，按一下您想要部署的應用程式的名稱。  
   
-3.  按一下 \[**發行**\] 頁，然後按一下 \[**立即發行**\]。  
+2.  在**專案**功能表上，按一下  *ProjectName* **屬性**。  
   
-4.  如果發行輸出未自動開啟，請巡覽至發行輸出。  
+3.  按一下**發行**頁面，然後再按一下**必要條件**。  
+  
+4.  選取**更新同意對話方塊**。  
+  
+    > [!NOTE]
+    >  您可能要關閉並重新開啟 Visual Studio 以查看更新的同意對話方塊中 [必要條件] 對話方塊。  
+  
+5.  按一下 [確定]。  
+  
+## <a name="creating-and-testing-the-setup-program"></a>建立並測試安裝程式  
+ 設定更新同意應用程式的必要元件之後，您可以產生應用程式的安裝程式並啟動載入器。  
+  
+#### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>建立及測試安裝程式沒有按一下 我同意  
+  
+1.  在**方案總管 中**，按一下您想要部署的應用程式的名稱。  
+  
+2.  在**專案**功能表上，按一下  *ProjectName* **屬性**。  
+  
+3.  按一下**發行**頁面，然後再按一下**立即發行**。  
+  
+4.  如果發行輸出不會自動開啟，導覽至發行輸出。  
   
 5.  執行 Setup.exe 程式。  
   
-     安裝程式隨即顯示 Update Consent Dialog 軟體授權合約。  
+     安裝程式會顯示更新的同意對話方塊軟體授權合約。  
   
-6.  閱讀軟體授權合約，然後按一下 \[**接受**\]。  
+6.  讀取軟體授權合約，然後按一下**接受**。  
   
-     Update Consent Dialog 應用程式隨即出現並顯示下列文字：您即將安裝的應用程式會在 Web 檢查是否有最新更新。  按一下 \[我同意\]，表示您授權應用程式從網際網路自動檢查並安裝更新。  
+     應用程式更新同意對話方塊隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 按一下我同意，您可以授權要檢查更新，會自動在網際網路上的應用程式。  
   
-7.  關閉應用程式或按一下 \[取消\]。  
+7.  關閉應用程式，或按一下 [取消]。  
   
-     應用程式隨即顯示錯誤：安裝 \<*應用程式名稱*\> 的系統元件時發生錯誤。  必須成功安裝所有系統元件，否則安裝程式無法繼續。  
+     應用程式便會顯示錯誤： 安裝的系統元件時發生錯誤*ApplicationName*。 已成功安裝所有系統元件安裝程式無法繼續。  
   
-8.  按一下 \[詳細資料\] 顯示下列錯誤訊息：無法安裝元件 Update Consent Dialog，並出現下列錯誤訊息: "The automatic update agreement is not accepted" \(使用者未接受自動更新授權合約\)。 無法安裝下列元件: \- Update Consent Dialog  
+8.  按一下 詳細資料，以顯示下列錯誤訊息： 元件更新同意對話方塊無法安裝下列的錯誤訊息: 「 自動更新協議無法接受 」。 無法安裝下列元件:-更新同意對話方塊  
   
-9. 按一下 \[**關閉**\]。  
+9. 按一下 [ **關閉**]。  
   
-#### 若要建立安裝程式，並按一下我同意進行測試  
+#### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>建立及測試安裝程式，即可我同意  
   
-1.  在 \[**方案總管**\] 中，按一下您想要部署的應用程式名稱。  
+1.  在**方案總管 中**，按一下您想要部署的應用程式的名稱。  
   
-2.  按一下 \[**專案**\] 功能表上的 \[*ProjectName* **屬性**\]。  
+2.  在**專案**功能表上，按一下  *ProjectName* **屬性**。  
   
-3.  按一下 \[**發行**\] 頁，然後按一下 \[**立即發行**\]。  
+3.  按一下**發行**頁面，然後再按一下**立即發行**。  
   
-4.  如果發行輸出未自動開啟，請巡覽至發行輸出。  
+4.  如果發行輸出不會自動開啟，導覽至發行輸出。  
   
 5.  執行 Setup.exe 程式。  
   
-     安裝程式隨即顯示 Update Consent Dialog 軟體授權合約。  
+     安裝程式會顯示更新的同意對話方塊軟體授權合約。  
   
-6.  閱讀軟體授權合約，然後按一下 \[**接受**\]。  
+6.  讀取軟體授權合約，然後按一下**接受**。  
   
-     Update Consent Dialog 應用程式隨即出現並顯示下列文字：您即將安裝的應用程式會在 Web 檢查是否有最新更新。  按一下 \[我同意\]，表示您授權應用程式從網際網路自動檢查並安裝更新。  
+     應用程式更新同意對話方塊隨即出現並顯示下列文字： 您即將安裝應用程式會檢查在網站上最新的更新。 按一下我同意，您可以授權要檢查更新，會自動在網際網路上的應用程式。  
   
-7.  按一下 \[**我同意**\]，然後按一下 \[**繼續**\]。  
+7.  按一下**我同意**，然後按一下 **繼續**。  
   
-     應用程式隨即開始安裝。  
+     在應用程式開始安裝。  
   
-8.  如果出現 \[應用程式安裝\] 對話方塊，請按一下 \[**安裝**\]。  
+8.  如果出現 [安裝應用程式] 對話方塊中，按一下**安裝**。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)   
  [建立啟動載入器套件](../deployment/creating-bootstrapper-packages.md)   
- [如何：建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
- [如何：建立封裝資訊清單](../deployment/how-to-create-a-package-manifest.md)   
+ [如何： 建立產品資訊清單](../deployment/how-to-create-a-product-manifest.md)   
+ [如何： 建立套件資訊清單](../deployment/how-to-create-a-package-manifest.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)
