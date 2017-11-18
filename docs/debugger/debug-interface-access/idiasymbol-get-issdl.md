@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isSdl | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_isSdl |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 6aa0e116-da75-4643-a4d7-d8e142231e21
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5fdffdc4f5f86077d50ac46e1888206d18bf98cb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isSdl
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-指定模組是否使用\/SDL選項編譯。  
+# <a name="idiasymbolgetissdl"></a>IDiaSymbol::get_isSdl
+指定是否使用 /SDL 選項編譯的模組。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT get_isSdl(  
    BOOL *pRetVal);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[out\] 指派給 `BOOL` 指標模組是否使用\/SDL 選項編譯。  
+ [out]指標`BOOL`，指定是否使用 /SDL 選項編譯的模組。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

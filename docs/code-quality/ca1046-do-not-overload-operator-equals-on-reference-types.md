@@ -1,11 +1,10 @@
 ---
-title: 'CA1046: Do not overload operator equals on reference types | Microsoft Docs'
+title: "CA1046： 請勿多載參考類型上的等號比較運算子 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,70 +14,55 @@ helpviewer_keywords:
 - CA1046
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 ms.assetid: c1dfbfe3-63f9-4005-a81a-890427b77e79
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0677ccd263ae3cd2a171eb99ef9aaf006d0dd88e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 344dfe7a4e35bf42e9e0a4efb2ca9bdf1b8f5d6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Do not overload operator equals on reference types
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046：請勿多載參考類型上的等號比較運算子
 |||  
 |-|-|  
 |TypeName|DoNotOverloadOperatorEqualsOnReferenceTypes|  
 |CheckId|CA1046|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public or nested public reference type overloads the equality operator.  
+## <a name="cause"></a>原因  
+ 公用或巢狀公用參考型別多載等號比較運算子。  
   
-## <a name="rule-description"></a>Rule Description  
- For reference types, the default implementation of the equality operator is almost always correct. By default, two references are equal only if they point to the same object.  
+## <a name="rule-description"></a>規則描述  
+ 對參考類型而言，等號比較運算子的預設實作 (Implementation) 永遠都是正確的。 根據預設，只有當兩項參考都指向相同物件時才會相等。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, remove the implementation of the equality operator.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請移除等號比較運算子的實作。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the reference type behaves like a built-in value type. If it is meaningful to do addition or subtraction on instances of the type, it is probably correct to implement the equality operator and suppress the violation.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告，當參考類型的行為類似的內建實值類型。 如果是類型的有意義的加法或減法運算執行個體上的執行，則可能是類型的正確實作等號比較運算子和隱藏違規。  
   
-## <a name="example"></a>Example  
- The following example demonstrates the default behavior when comparing two references.  
+## <a name="example"></a>範例  
+ 比較兩個參考時，下列範例會示範預設行為。  
   
  [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]  
   
-## <a name="example"></a>Example  
- The following application compares some references.  
+## <a name="example"></a>範例  
+ 下列應用程式比較部分的參考。  
   
  [!code-csharp[FxCop.Design.TestRefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_2.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **a = new (2,2) and b = new (2,2) are equal? No**  
-**c and a are equal? Yes**  
-**b and a are == ? No**  
-**c and a are == ? Yes**   
-## <a name="related-rules"></a>Related Rules  
- [CA1013: Overload operator equals on overloading add and subtract](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
+ **= 新 (2，2) 且 b = 相等的新 (2，2)？否**  
+**c 和相等嗎？[是]**  
+**b 和 a = = 嗎？否**  
+**c 和 a = = 嗎？[是]**   
+## <a name="related-rules"></a>相關的規則  
+ [CA1013：多載加號和減號運算子時必須一併多載等號比較運算子](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

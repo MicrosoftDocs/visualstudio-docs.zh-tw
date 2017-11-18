@@ -1,11 +1,10 @@
 ---
-title: 'CA2224: Override equals on overloading operator equals | Microsoft Docs'
+title: "CA2224： 多載等號比較運算子的覆寫 equals |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,125 +15,110 @@ helpviewer_keywords:
 - OverrideEqualsOnOverloadingOperatorEquals
 - CA2224
 ms.assetid: 7312afd9-84ba-417f-923e-7a159b53bf70
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5cd11628a50f44413118c7004c11201c26297f86
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 44ba1c444d9348babcf07bfd807d6b0767bf3de9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Override equals on overloading operator equals
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224：多載等號比較運算子時必須一併覆寫 Equals
 |||  
 |-|-|  
 |TypeName|OverrideEqualsOnOverloadingOperatorEquals|  
 |CheckId|CA2224|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Usage|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public type implements the equality operator, but does not override <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+## <a name="cause"></a>原因  
+ 公用類型會實作等號比較運算子，但不會覆寫<xref:System.Object.Equals%2A?displayProperty=fullName>。  
   
-## <a name="rule-description"></a>Rule Description  
- The equality operator is intended to be a syntactically convenient way to access the functionality of the <xref:System.Object.Equals%2A> method. If you implement the equality operator, its logic must be identical to that of <xref:System.Object.Equals%2A>.  
+## <a name="rule-description"></a>規則描述  
+ 等號比較運算子要用語法便利的方式來存取功能的<xref:System.Object.Equals%2A>方法。 如果您實作等號比較運算子，其邏輯必須是相同的<xref:System.Object.Equals%2A>。  
   
- The C# compiler issues a warning if your code violates this rule.  
+ 如果您的程式碼違反此規則，C# 編譯器會發出警告。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, you should either remove the implementation of the equality operator, or override <xref:System.Object.Equals%2A> and have the two methods return the same values. If the equality operator does not introduce inconsistent behavior, you can fix the violation by providing an implementation of <xref:System.Object.Equals%2A> that calls the <xref:System.Object.Equals%2A> method in the base class.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，您應該移除等號比較運算子的實作，或覆寫<xref:System.Object.Equals%2A>和有兩種方法會傳回相同的值。 如果等號比較運算子不會產生不一致的行為，您可以藉由提供的實作來修正違規<xref:System.Object.Equals%2A>呼叫<xref:System.Object.Equals%2A>基底類別中的方法。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the equality operator returns the same value as the inherited implementation of <xref:System.Object.Equals%2A>. The Example section includes a type that could safely suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全地隱藏此規則的警告，等號比較運算子傳回的繼承實作相同的值如果<xref:System.Object.Equals%2A>。 範例 > 一節包含類型，可放心地隱藏此規則的警告。  
   
-## <a name="examples-of-inconsistent-equality-definitions"></a>Examples of Inconsistent Equality Definitions  
+## <a name="examples-of-inconsistent-equality-definitions"></a>不一致的等號比較定義的範例  
   
-### <a name="description"></a>Description  
- The following example shows a type with inconsistent definitions of equality. `BadPoint` changes the meaning of equality by providing a custom implementation of the equality operator, but does not override <xref:System.Object.Equals%2A> so that it behaves identically.  
+### <a name="description"></a>描述  
+ 下列範例示範具有相等的定義不一致的類型。 `BadPoint`藉由提供自訂實作等號比較運算子中，變更是否相等的意義，但不會覆寫<xref:System.Object.Equals%2A>，讓它運作方式完全相同。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Usage.OperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_1.cs)]  
   
-## <a name="example"></a>Example  
- The following code tests the behavior of `BadPoint`.  
+## <a name="example"></a>範例  
+ 下列程式碼測試的行為`BadPoint`。  
   
  [!code-csharp[FxCop.Usage.TestOperatorEqualsRequiresEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_2.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **a =  ([0] 1,1) and b = ([1] 2,2) are equal? No**  
-**a == b ? No**  
-**a1 and a are equal? Yes**  
-**a1 == a ? Yes**  
-**b and bcopy are equal ? No**  
-**b == bcopy ? Yes**   
-## <a name="example"></a>Example  
- The following example shows a type that technically violates this rule, but does not behave in an inconsistent manner.  
+ **= ([0] 1，1) 和 b = ([1] 2，2) 相等嗎？否**  
+**= = b？否**  
+**a1 和相等嗎？[是]**  
+**a1 = = 嗎？[是]**  
+**b 和 bcopy 相等嗎？否**  
+**b = = bcopy 嗎？[是]**   
+## <a name="example"></a>範例  
+ 下列範例會示範技術上來說，違反了這項規則，但不是會不一致的方式運作的型別。  
   
  [!code-csharp[FxCop.Usage.ValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_3.cs)]  
   
-## <a name="example"></a>Example  
- The following code tests the behavior of `GoodPoint`.  
+## <a name="example"></a>範例  
+ 下列程式碼測試的行為`GoodPoint`。  
   
  [!code-csharp[FxCop.Usage.TestValueTypeEquals#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_4.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **a =  (1,1) and b = (2,2) are equal? No**  
-**a == b ? No**  
-**a1 and a are equal? Yes**  
-**a1 == a ? Yes**  
-**b and bcopy are equal ? Yes**  
-**b == bcopy ? Yes**   
-## <a name="class-example"></a>Class Example  
+ **a = (1，1) 和 b = (2，2) 相等嗎？否**  
+**= = b？否**  
+**a1 和相等嗎？[是]**  
+**a1 = = 嗎？[是]**  
+**b 和 bcopy 相等嗎？[是]**  
+**b = = bcopy 嗎？[是]**   
+## <a name="class-example"></a>類別的範例  
   
-### <a name="description"></a>Description  
- The following example shows a class (reference type) that violates this rule.  
+### <a name="description"></a>描述  
+ 下列範例顯示違反此規則的類別 （參考型別）。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Usage.OverrideEqualsClassViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_5.cs)]  
   
-## <a name="example"></a>Example  
- The following example fixes the violation by overriding <xref:System.Object.Equals%2A?displayProperty=fullName>.  
+## <a name="example"></a>範例  
+ 下列範例會藉由覆寫修正違規<xref:System.Object.Equals%2A?displayProperty=fullName>。  
   
  [!code-csharp[FxCop.Usage.OverrideEqualsClassFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_6.cs)]  
   
-## <a name="structure-example"></a>Structure Example  
+## <a name="structure-example"></a>結構範例  
   
-### <a name="description"></a>Description  
- The following example shows a structure (value type) that violates this rule.  
+### <a name="description"></a>描述  
+ 下列範例顯示違反此規則的結構 （實值型別）。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Usage.OverrideEqualsStructViolation#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_7.cs)]  
   
-## <a name="example"></a>Example  
- The following example fixes the violation by overriding <xref:System.ValueType.Equals%2A?displayProperty=fullName>.  
+## <a name="example"></a>範例  
+ 下列範例會藉由覆寫修正違規<xref:System.ValueType.Equals%2A?displayProperty=fullName>。  
   
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../code-quality/codesnippet/CSharp/ca2224-override-equals-on-overloading-operator-equals_8.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1046: Do not overload operator equals on reference types](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225: Operator overloads have named alternates](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
+ [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
- [CA2226: Operators should have symmetrical overloads](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
+ [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
- [CA2218: Override GetHashCode on overriding Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
+ [CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
- [CA2231: Overload operator equals on overriding ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
+ [CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

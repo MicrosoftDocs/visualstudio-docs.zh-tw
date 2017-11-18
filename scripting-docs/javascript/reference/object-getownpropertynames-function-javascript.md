@@ -1,56 +1,59 @@
 ---
-title: "Object.getOwnPropertyNames 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getOwnPropertyNames 方法 [JavaScript]"
-  - "Object.getOwnPropertyNames 方法 [JavaScript]"
+title: "Object.getOwnPropertyNames 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getOwnPropertyNames method [JavaScript]
+- Object.getOwnPropertyNames method [JavaScript]
 ms.assetid: 59f4b6b1-02be-44b3-a06c-a5ca8f70c3d8
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 76ca0036b9dedf7b4cee7b543469939e35dfe8d1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Object.getOwnPropertyNames 函式 (JavaScript)
-傳回物件之擁有屬性的名稱。  物件的擁有屬性是指在該物件上直接定義的屬性，而且不是從物件的原型繼承而來的屬性。  物件的屬性包含欄位 \(物件\) 和函式。  
+# <a name="objectgetownpropertynames-function-javascript"></a>Object.getOwnPropertyNames 函式 (JavaScript)
+傳回物件本身屬性的名稱。 物件的自己的屬性是指定義直接於該物件，而且不繼承自物件的原型。 物件的屬性包括欄位 （物件） 和函式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 Object.getOwnPropertyNames(object)  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
 |參數|定義|  
-|--------|--------|  
-|`object`|必要項。  包含擁有屬性的物件。|  
+|---------------|----------------|  
+|`object`|必要項。 物件，其中包含自己的屬性。|  
   
-## 傳回值  
- 包含物件之擁有屬性名稱的陣列。  
+## <a name="return-value"></a>傳回值  
+ 陣列，其中包含自己的屬性物件的名稱。  
   
-## 例外狀況  
- 如果為 `object` 引數提供的值並不是物件的名稱，則會擲回 `TypeError` 例外狀況。  
+## <a name="exceptions"></a>例外狀況  
+ 如果值提供給`object`引數不是物件的名稱，`TypeError`擲回例外狀況。  
   
-## 備註  
- `getOwnPropertyNames` 方法會傳回可列舉和不可列舉之屬性和方法的名稱。  如果只要傳回可列舉之屬性和方法的名稱，您可以使用 [Object.keys 函式](../../javascript/reference/object-keys-function-javascript.md)。  
+## <a name="remarks"></a>備註  
+ `getOwnPropertyNames`方法會傳回可列舉和非可列舉屬性及方法的名稱。 若要傳回可列舉的屬性及方法的名稱，您可以使用[Object.keys 函式](../../javascript/reference/object-keys-function-javascript.md)。  
   
-## 範例  
- 下列範例會建立具有三個屬性和方法的物件。  然後會使用 `getOwnPropertyNames` 方法取得物件的擁有屬性 \(包括此方法\)。  
+## <a name="example"></a>範例  
+ 下列範例會建立具有三個屬性和方法的物件。 然後它會使用`getOwnPropertyNames`方法，以取得物件的屬性 （包括方法）。  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, width, shape) {  
     // Define properties.  
     this.grain = grain;  
@@ -72,10 +75,10 @@ document.write (arr);
 //   grain,width,shape,toString  
 ```  
   
-## 範例  
- 下列範例會顯示以 Pasta 建構函式建構的 spaghetti 物件中，以 's' 字母開頭的屬性名稱。  
+## <a name="example"></a>範例  
+ 下列範例會顯示以字母為開頭的屬性名稱 ' 中**雜亂無章**物件以建構**義大利麵**建構函式。  
   
-```javascript  
+```JavaScript  
 function Pasta(grain, size, shape) {  
     this.grain = grain;   
     this.size = size;   
@@ -99,8 +102,8 @@ function CheckKey(value) {
 // size,shape  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Object.keys 函式](../../javascript/reference/object-keys-function-javascript.md)

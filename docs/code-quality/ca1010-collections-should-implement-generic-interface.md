@@ -1,11 +1,10 @@
 ---
-title: 'CA1010: Collections should implement generic interface | Microsoft Docs'
+title: "CA1010： 集合應該實作泛型介面 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,45 +14,29 @@ helpviewer_keywords:
 - CA1010
 - CollectionsShouldImplementGenericInterface
 ms.assetid: c7d7126f-fa70-40be-8f93-3243e1760dc5
-caps.latest.revision: 24
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4fa28f832773e41ee976cba7ba26494231cfd6ba
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f0cefdb203011a24769b5b180a442d22a90d0b5c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010: Collections should implement generic interface
+# <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010：集合應該實作泛型介面
 |||  
 |-|-|  
 |TypeName|CollectionsShouldImplementGenericInterface|  
 |CheckId|CA1010|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- An externally visible type implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface but does not implement the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName> interface, and the containing assembly targets [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. This rule ignores types that implement <xref:System.Collections.IDictionary?displayProperty=fullName>.  
+## <a name="cause"></a>原因  
+ 外部可見的型別會實作<xref:System.Collections.IEnumerable?displayProperty=fullName>介面，但未實作<xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>介面和包含組件目標[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。 此規則會忽略實作的型別<xref:System.Collections.IDictionary?displayProperty=fullName>。  
   
-## <a name="rule-description"></a>Rule Description  
- To broaden the usability of a collection, implement one of the generic collection interfaces. Then the collection can be used to populate generic collection types such as the following:  
+## <a name="rule-description"></a>規則描述  
+ 若要放寬集合的可用性，請實作其中一個泛型集合介面。 集合可以用來填入泛型集合類型，如下所示：  
   
 -   <xref:System.Collections.Generic.List%601?displayProperty=fullName>  
   
@@ -61,8 +44,8 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Collections.Generic.Stack%601?displayProperty=fullName>  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement one of the following generic collection interfaces:  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請實作下列的泛型集合介面的其中一個：  
   
 -   <xref:System.Collections.Generic.IEnumerable%601?displayProperty=fullName>  
   
@@ -70,53 +53,53 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Collections.Generic.IList%601?displayProperty=fullName>  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule; however, the collection will have a more limited use.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全地隱藏的警告，這項規則。不過，集合中會有更多限制的使用。  
   
-## <a name="example-violation"></a>Example Violation  
+## <a name="example-violation"></a>範例違規  
   
-### <a name="description"></a>Description  
- The following example shows a class (reference type) that derives from the non-generic `CollectionBase` class, which violates this rule.  
+### <a name="description"></a>描述  
+ 下列範例示範衍生自非泛型類別 （參考型別）`CollectionBase`違反此規則的類別。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Design.CollectionsGenericViolation#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_1.cs)]  
   
-### <a name="comments"></a>Comments  
- To fix a violation of this violation, you should either implement the generic interfaces or change the base class to a type that already implements both the generic and non-generic interfaces, such as the `Collection<T>` class.  
+### <a name="comments"></a>註解  
+ 若要修正這種違規的違規情形，您應該實作泛型介面，或變更的基底類別的型別，已實作這兩個泛型和非泛型介面，例如`Collection<T>`類別。  
   
-## <a name="fix-by-base-class-change"></a>Fix by Base Class Change  
+## <a name="fix-by-base-class-change"></a>修正變更基底類別  
   
-### <a name="description"></a>Description  
- The following example fixes the violation by changing the base class of the collection from the non-generic `CollectionBase` class to the generic `Collection<T>` (`Collection(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) class.  
+### <a name="description"></a>描述  
+ 下列範例會藉由變更非泛型集合的基底類別修正違規`CollectionBase`至泛型類別`Collection<T>`(`Collection(Of T)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 類別。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Design.CollectionsGenericBase#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_2.cs)]  
   
-### <a name="comments"></a>Comments  
- Changing the base class of an already released class is considered a breaking change to existing consumers.  
+### <a name="comments"></a>註解  
+ 變更已發行的類別的基底類別會被視為現有消費者的中斷變更。  
   
-## <a name="fix-by-interface-implementation"></a>Fix by Interface Implementation  
+## <a name="fix-by-interface-implementation"></a>修正介面實作  
   
-### <a name="description"></a>Description  
- The following example fixes the violation by implementing these generic interfaces: `IEnumerable<T>`, `ICollection<T>`, and `IList<T>` (`IEnumerable(Of T)`, `ICollection(Of T)`, and `IList(Of T)` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).  
+### <a name="description"></a>描述  
+ 下列範例會藉由實作這些泛型介面修正違規： `IEnumerable<T>`， `ICollection<T>`，和`IList<T>`(`IEnumerable(Of T)`， `ICollection(Of T)`，和`IList(Of T)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Design.CollectionsGenericInterface#1](../code-quality/codesnippet/CSharp/ca1010-collections-should-implement-generic-interface_3.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1005: Avoid excessive parameters on generic types](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)  
   
- [CA1000: Do not declare static members on generic types](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
+ [CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)  
   
- [CA1002: Do not expose generic lists](../code-quality/ca1002-do-not-expose-generic-lists.md)  
+ [CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)  
   
- [CA1006: Do not nest generic types in member signatures](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
+ [CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)  
   
- [CA1004: Generic methods should provide type parameter](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
+ [CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)  
   
- [CA1003: Use generic event handler instances](../code-quality/ca1003-use-generic-event-handler-instances.md)  
+ [CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)  
   
- [CA1007: Use generics where appropriate](../code-quality/ca1007-use-generics-where-appropriate.md)  
+ [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>See Also  
- [Generics](/dotnet/csharp/programming-guide/generics/index)
+## <a name="see-also"></a>另請參閱  
+ [泛型](/dotnet/csharp/programming-guide/generics/index)

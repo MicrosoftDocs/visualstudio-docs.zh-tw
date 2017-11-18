@@ -1,48 +1,47 @@
 ---
-title: "字型對話方塊 (Microsoft Spy++ 說明) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "字型對話方塊"
+title: "字型對話方塊 （Microsoft Spy + + 說明） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Font dialog box
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8eee6cf523fe7c327c5be0e5e34d805da80177b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 字型對話方塊 (Microsoft Spy++ 說明)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用這個對話方塊可以設定 [Spy\+\+ 檢視](../debugger/spy-increment-views.md)視窗中所使用的字元字型。  若要顯示這個對話方塊，請展開 \[**檢視**\] 功能表並選擇 \[**字型**\]。  
+# <a name="font-dialog-box-microsoft-spy-help"></a>字型對話方塊 (Microsoft Spy++ 說明)
+使用此對話方塊來設定中使用的字元字型[Spy + + 檢視](../debugger/spy-increment-views.md)視窗。 若要顯示此對話方塊中，展開 **檢視**功能表，然後選擇 **字型**。  
   
- 下列為可用的設定：  
+ 可用的設定如下：  
   
- **Font**  
- 獲得焦點的 \[Spy\+\+ 檢視\] 視窗的字元字型。  
+ **字型**  
+ Spy + + 檢視視窗具有焦點之字元的字型。  
   
  **字型樣式**  
- 獲得焦點的 \[Spy\+\+ 檢視\] 視窗的字元樣式。  
+ Spy + + 檢視視窗具有焦點的字型樣式。  
   
  **Size**  
- 獲得焦點的 \[Spy\+\+ 檢視\] 視窗的字型大小。  
+ Spy + + 檢視視窗具有焦點的字型大小。  
   
- **將字型存成預設值**  
- 將目前的字型設定儲存為開啟 \[Spy\+\+ 檢視\] 時的偏好設定。  
+ **將字型儲存為預設值**  
+ 開啟 Spy + + 檢視時，請將目前的字型設定儲存為您的喜好設定中。  
   
-## 相關章節  
- [Spy\+\+ 檢視](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+## <a name="related-sections"></a>相關章節  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。  
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。

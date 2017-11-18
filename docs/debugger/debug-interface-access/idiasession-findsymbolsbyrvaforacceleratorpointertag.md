@@ -1,58 +1,58 @@
 ---
-title: "IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findSymbolsByRVAForAcceleratorPointerTag |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: a073cc45-0c7b-417e-b5fc-a3b08beccdbc
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ebeb2ae079845c55c1903afdbcef381a5b4d379c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-將對應的標記值，這個方法會傳回在指定的相對虛擬位址的指定父快速 Stub 函式包含符號的列舉型別。  
+# <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
+指定對應的標記值，這個方法會傳回列舉包含的符號的函式中指定的父 Accelerator 虛設常式在指定的相對虛擬位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsByRVAForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
    DWORD                 rva,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `parent`  
- \[in\] 對應至要搜尋的快速 Stub 函式的 `IDiaSymbol` 。  
+ [in]`IDiaSymbol`對應於要搜尋的快速鍵虛設常式函式。  
   
  `tagValue`  
- \[in\] 指標標記值。  
+ [in]指標的標記值。  
   
  `rva`  
- \[in\] 相對虛擬位址。  
+ [in]相對虛擬位址。  
   
  `ppResult`  
- \[out\] 會使用這個結果的 `IDiaEnumSymbols` 介面指標的指標。  
+ [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`，否則傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 呼叫這個方法只在對應至快速Stub函式的 `IDiaSymbol` 介面。  
+## <a name="remarks"></a>備註  
+ 只有在呼叫這個方法`IDiaSymbol`Accelerator 虛設常式函式對應的介面。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

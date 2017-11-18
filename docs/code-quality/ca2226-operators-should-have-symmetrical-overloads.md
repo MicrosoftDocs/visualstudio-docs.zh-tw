@@ -1,54 +1,55 @@
 ---
-title: "CA2226：運算子應該有對稱的多載 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "OperatorsShouldHaveSymmetricalOverloads"
-  - "CA2226"
-helpviewer_keywords: 
-  - "CA2226"
-  - "OperatorsShouldHaveSymmetricalOverloads"
+title: "CA2226： 運算子應該有對稱的多載 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
+helpviewer_keywords:
+- OperatorsShouldHaveSymmetricalOverloads
+- CA2226
 ms.assetid: d202401a-ea14-4559-b15e-0ea4f5b68789
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 209741d29e3607f268fff6963723c59bc2221cb0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2226：運算子應該有對稱的多載
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226：運算子應該有對稱的多載
 |||  
 |-|-|  
-|型別名稱|OperatorsShouldHaveSymmetricalOverloads|  
+|TypeName|OperatorsShouldHaveSymmetricalOverloads|  
 |CheckId|CA2226|  
 |分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 型別實作等號比較運算子或不等比較運算子，但未實作相反的運算子。  
+## <a name="cause"></a>原因  
+ 類型實作等號比較運算子或不等比較運算子，但未實作相反的運算子。  
   
-## 規則描述  
- 在所有情況下，只要等號比較運算子或不等比較運算子可以套用到型別的執行個體，就必須定義相反的運算子。  通常型別實作不等比較運算子的方式是傳回與等號比較運算子相反的值。  
+## <a name="rule-description"></a>規則描述  
+ 沒有任何情況下，其中相等或不等會套用到執行個體的型別，且相反的運算子未定義。 型別通常會實作不等比較運算子所傳回的等號比較運算子的相反的值。  
   
- C\# 編譯器會產生違反此規則的錯誤。  
+ C# 編譯器會發出錯誤，而此規則的違規。  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請同時實作等號比較運算子和不等比較運算子，或移除現有的運算子。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，實作等號和不等比較運算子，或移除存在於其中一個。  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  如果您的型別與 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 一致，就會無法運作。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。 您的型別將無法運作的一致方式[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1046：請勿多載參考類型上的等號比較運算子](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)  
   
- [CA2225：運算子多載必須有具名的替代方法](../Topic/CA2225:%20Operator%20overloads%20have%20named%20alternates.md)  
+ [CA2225：運算子多載必須有具名的替代方法](../code-quality/ca2225-operator-overloads-have-named-alternates.md)  
   
  [CA2224：多載等號比較運算子時必須一併覆寫 Equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)  
   

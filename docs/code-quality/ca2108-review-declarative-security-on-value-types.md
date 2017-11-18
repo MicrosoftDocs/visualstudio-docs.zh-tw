@@ -1,11 +1,10 @@
 ---
-title: 'CA2108: Review declarative security on value types | Microsoft Docs'
+title: "： Ca2108 實值型別宣告式安全性 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,66 +14,51 @@ helpviewer_keywords:
 - ReviewDeclarativeSecurityOnValueTypes
 - CA2108
 ms.assetid: d62bffdd-3826-4d52-a708-1c646c5d48c2
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a4aa6fa02329c6d82800f3a45f8002bf8a4f10e7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a2d7ecd899b4da51e6ff200f1e18b00366db6669
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Review declarative security on value types
+# <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108：必須檢查實值類型上的宣告式安全性
 |||  
 |-|-|  
 |TypeName|ReviewDeclarativeSecurityOnValueTypes|  
 |CheckId|CA2108|  
-|Category|Microsoft.Security|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected value type is secured by a [Data and Modeling](/dotnet/framework/data/index) or [Link Demands](/dotnet/framework/misc/link-demands).  
+## <a name="cause"></a>原因  
+ 在公用或受保護的實值類型受到[資料與模型化](/dotnet/framework/data/index)或[連結要求](/dotnet/framework/misc/link-demands)。  
   
-## <a name="rule-description"></a>Rule Description  
- Value types are allocated and initialized by their default constructors before other constructors execute. If a value type is secured by a Demand or LinkDemand, and the caller does not have permissions that satisfy the security check, any constructor other than the default will fail, and a security exception will be thrown. The value type is not deallocated; it is left in the state set by its default constructor. Do not assume that a caller that passes an instance of the value type has permission to create or access the instance.  
+## <a name="rule-description"></a>規則描述  
+ 配置及其他建構函式執行之前，由其預設建構函式初始化實值類型。 如果實值類型受到 Demand 或 LinkDemand，而且呼叫端沒有滿足安全性檢查，任何建構函式以外的權限預設值將會失敗，並將擲回安全性例外狀況。 實值型別不會取消配置。它會處於其預設建構函式所設定的狀態。 請勿假設呼叫端傳遞實值類型的執行個體具有建立或存取執行個體的權限。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- You cannot fix a violation of this rule unless you remove the security check from the type, and use method level security checks in its place. Note that fixing the violation in this manner will not prevent callers with inadequate permissions from obtaining instances of the value type. You must ensure that an instance of the value type, in its default state, does not expose sensitive information, and cannot be used in a harmful manner.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 您無法修正此規則的違規情形，除非您移除安全性檢查從型別，並使用方法層級安全性檢查其所在位置。 請注意，違規修正這種方式將不會防止呼叫者以取得實值類型的執行個體的權限不足。 您必須確定執行個體的值類型，在其預設狀態下，不會公開機密資訊，也不能有害的方式。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- You can suppress a warning from this rule if any caller can obtain instances of the value type in its default state without posing a threat to security.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果任何呼叫端可以取得其預設狀態中之值型別的執行個體，而不造成安全性威脅，您可以隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows a library containing a value type that violates this rule. Note that the `StructureManager` type assumes that a caller that passes an instance of the value type has permission to create or access the instance.  
+## <a name="example"></a>範例  
+ 下列範例會示範包含違反此規則的實值類型的程式庫。 請注意，`StructureManager`類型假設傳遞實值類型的執行個體的呼叫端若要建立或存取執行個體的權限。  
   
  [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]  
   
-## <a name="example"></a>Example  
- The following application demonstrates the library's weakness.  
+## <a name="example"></a>範例  
+ 下列應用程式示範媒體櫃中的弱點。  
   
  [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **Structure custom constructor: Request failed.**  
-**New values SecuredTypeStructure 100 100**  
-**New values SecuredTypeStructure 200 200**   
-## <a name="see-also"></a>See Also  
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+ **結構的自訂建構函式： 要求失敗。**  
+**新值 SecuredTypeStructure 100 100**  
+**新值 SecuredTypeStructure 200 200**   
+## <a name="see-also"></a>另請參閱  
+ [連結要求](/dotnet/framework/misc/link-demands)   
+ [資料與模型化](/dotnet/framework/data/index)

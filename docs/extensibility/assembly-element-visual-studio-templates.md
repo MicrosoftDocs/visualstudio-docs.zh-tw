@@ -1,56 +1,63 @@
 ---
-title: "Assembly 項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Assembly"
-helpviewer_keywords: 
-  - "Assembly 項目 [Visual Studio 樣板]"
-  - "<Assembly> 項目 [Visual Studio 樣板]"
+title: "Assembly 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+helpviewer_keywords:
+- Assembly element [Visual Studio templates]
+- <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9032fa397e8fb4cb443d0209853ba4cfe7a5e53f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Assembly 項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定組件的相關資訊，範本將利用這個資訊將此組件的參考加入至專案。  
+# <a name="assembly-element-visual-studio-templates"></a>Assembly 項目 (Visual Studio 範本)
+指定的組件範本會使用該組件的參考加入專案的相關資訊。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<參考 >  
+ \<參考 >  
+ \<組件 >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <Assembly> AssemblyName </Assembly>  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
 |項目|描述|  
-|--------|--------|  
-|[參考資料](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入至專案時要加入的組件參考。|  
+|-------------|-----------------|  
+|[參考](../extensibility/reference-element-visual-studio-templates.md)|指定項目加入專案時要加入的組件參考。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字指定當項目範本具現化 \(Instantiated\) 時，要加入至專案的組件。  這個組件名稱必須以下列其中一種方式指定：  
+ 此文字會指定要加入至專案，當項目樣板具現化的組件。 這個組件名稱必須指定下列方式之一：  
   
--   以完整組件名稱指定。  例如：  
+-   做為完整的組件名稱。 例如：  
   
     ```  
     <Assembly>  
@@ -58,19 +65,19 @@ caps.handback.revision: 10
     </Assembly>  
     ```  
   
--   以簡單文字參考指定。  例如：  
+-   以簡單文字的參考。 例如:   
   
     ```  
     <Assembly> System </Assembly>  
     ```  
   
-## 備註  
+## <a name="remarks"></a>備註  
  `Assembly` 是 `Reference` 的必要子項目。  
   
- `Reference` 項目、`References,` 項目和 `Assembly` 項目只能用於具有 `Item` 之 `Type` 屬性值的 .vstemplate 檔。  
+ `Reference`，`References,`和`Assembly`元素只用於.vstemplate 檔案中所`Type`屬性值為`Item`。  
   
-## 範例  
- 下列程式碼範例會解說項目範本的 `TemplateContent` 項目。  這個 XML 加入對 System.dll 和 System.Data.dll 組件的參考。  
+## <a name="example"></a>範例  
+ 下列範例說明`TemplateContent`項目範本的元素。 這段 XML 會加入 System.dll 和 System.Data.dll 組件的參考。  
   
 ```  
 <TemplateContent>  
@@ -90,6 +97,6 @@ caps.handback.revision: 10
 </TemplateContent>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

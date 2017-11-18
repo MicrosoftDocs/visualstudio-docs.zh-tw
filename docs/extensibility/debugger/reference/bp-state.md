@@ -1,72 +1,72 @@
 ---
-title: "BP_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_STATE"
-helpviewer_keywords: 
-  - "BP_STATE 列舉型別"
+title: "BP_STATE |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_STATE
+helpviewer_keywords: BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 51574fd91a338f7d05d38755884412202d33637b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# BP_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定的繫結中斷點存在，也會指定是否啟用。  
+# <a name="bpstate"></a>BP_STATE
+指定的繫結中斷點存在，也會指定是否已啟用。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```cpp  
+enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 typedef DWORD BP_STATE;  
 ```  
   
-```c#  
-public enum enum_BP_STATE {   
-   BPS_NONE     = 0x0000,  
-   BPS_DELETED  = 0x0001,  
-   BPS_DISABLED = 0x0002,  
-   BPS_ENABLED  = 0x0003  
+```csharp  
+public enum enum_BP_STATE {   
+   BPS_NONE     = 0x0000,  
+   BPS_DELETED  = 0x0001,  
+   BPS_DISABLED = 0x0002,  
+   BPS_ENABLED  = 0x0003  
 };  
 ```  
   
-## Members  
- BPS\_NONE  
- 不指定任何中斷點。  
+## <a name="members"></a>成員  
+ BPS_NONE  
+ 指定中斷點不存在。  
   
- BPS\_DELETED  
- 指定中斷點已被刪除。  
+ BPS_DELETED  
+ 指定已刪除中斷點。  
   
- BPS\_DISABLED  
- 指定的已停用中斷點。  
+ BPS_DISABLED  
+ 指定停用中斷點。  
   
- BPS\_ENABLED  
- 指定已經啟用中斷點。  
+ BPS_ENABLED  
+ 指定啟用中斷點。  
   
-## 備註  
- 所傳回的[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。  
+## <a name="remarks"></a>備註  
+ 傳回從[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)

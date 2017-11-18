@@ -1,51 +1,51 @@
 ---
-title: "IDiaSymbol::get_acceleratorPointerTags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_acceleratorPointerTags |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 30e13cee-e511-49ec-affd-99b0097071b2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e8467c25c8665dfb3fc91ea29d9b99c184b7ecce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_acceleratorPointerTags
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-傳回對應於C \+\+. AMP快速Stub函式的所有快速指標標記值。  
+# <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
+傳回所有 accelerator 指標的標記值對應至 c + + AMP 加速器虛設常式函式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT get_acceleratorPointerTags(   
    DWORD          cnt,  
    DWORD*         pcnt,  
    DWORD*         pPointerTags);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `cnt`  
- \[in\] 輸出陣列 `pPointerTags`的大小。  
+ [in]輸出陣列的大小`pPointerTags`。  
   
  `pcnt`  
- \[out\] 計算速度比C\+\+ AMP快速Stub函式指標的標記。  
+ [out]在 c + + AMP 加速器虛設常式函式中的對應鍵指標標記計數。  
   
  `pPointerTags`  
- \[out\] 填滿快速指標標記的 `DWORD` 陣列指標在C\+\+ AMP快速Stub函式值。  
+ [out]A`DWORD`填滿 accelerator 指標標記值，在 c + + AMP 加速器虛設常式函式中的陣列指標。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## 備註  
- 呼叫這個方法對應至. C \+\+ AMP快速Stub函式的 `IDiaSymbol` 介面。  
+## <a name="remarks"></a>備註  
+ 這個方法會在呼叫`IDiaSymbol`對應至 c + + AMP 加速器虛設常式函式的介面。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

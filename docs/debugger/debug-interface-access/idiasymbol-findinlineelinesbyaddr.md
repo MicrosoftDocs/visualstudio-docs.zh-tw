@@ -1,55 +1,55 @@
 ---
-title: "IDiaSymbol::findInlineeLinesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::findInlineeLinesByAddr |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: f1ab47ca-c851-48ea-9c12-47fb80b31102
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1f714e42156cb4f7889cae52b8a5968a1a7d71f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findInlineeLinesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取可讓用戶端透過指定的行號資訊重複內嵌，直接或間接，在指定的位址範圍內的這個符號的列舉型別。  
+# <a name="idiasymbolfindinlineelinesbyaddr"></a>IDiaSymbol::findInlineeLinesByAddr
+擷取可讓用戶端來逐一查看的是內嵌的直接或間接指定的位址範圍內的這個符號中的所有函式的行號資訊的列舉。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT findInlineeLinesByAddr (   
+```C++  
+HRESULT findInlineeLinesByAddr (   
    DWORD                 isect,  
    DWORD                 offset,  
    DWORD                 length,  
-   IDiaEnumLineNumbers** ppResult  
+   IDiaEnumLineNumbers** ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `isect`  
- \[in\] 指定電子郵件地址的部分元件。  
+ [in]指定位址的區段元件。  
   
  `offset`  
- \[in\] 指定位址的位移元件。  
+ [in]指定的位址位移的元件。  
   
  `length`  
- \[in\] 指定位址範圍，位元組數，而此查詢範圍。  
+ [in]指定的位址範圍，在與此查詢所涵蓋的位元組數目。  
   
  `ppResult`  
- \[out\] 物件所包含資料列編號清單中擷取的 `IDiaEnumLineNumbers` 物件。  
+ [out]保存`IDiaEnumLineNumbers`物件，其中包含所擷取的行號的清單。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`，否則傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   

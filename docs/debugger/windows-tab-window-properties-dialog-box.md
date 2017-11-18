@@ -1,33 +1,33 @@
 ---
-title: "視窗屬性對話方塊、視窗索引標籤 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "[視窗屬性] 對話方塊, [視窗] 索引標籤"
+title: "Windows 索引標籤、 視窗屬性對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, Windows Tab
 ms.assetid: 9001342a-09a8-4f5e-b6ed-881a3b9d7246
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a49ec9b52d2eaf6dc336ed28d5b4e531bb3b25cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 視窗屬性對話方塊、視窗索引標籤
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用 \[**視窗**\] 索引標籤可以顯示與選取視窗相關之視窗的資訊。  若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至[視窗檢視](../debugger/windows-view.md)視窗。  選取樹狀結構中的任何視窗節點，然後從 \[**檢視**\] 功能表選取 \[**屬性**\]。  
+# <a name="windows-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、視窗索引標籤
+使用**Windows**索引標籤，以顯示在 windows 上的資訊與選取的視窗。 若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，焦點移至[視窗檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗中的任何節點，然後選擇 **屬性**從**檢視**功能表。  
   
- \[**視窗**\] 索引標籤中的可用設定如下：  
+ 下列設定都適用於**Windows**  索引標籤：  
   
-|Entry|描述|  
-|-----------|--------|  
-|**下一個視窗**|下一個同層級視窗的控制代碼，依相同順序 \(圖層順序\) 顯示於視窗樹狀檢視中 \(如果沒有下一個視窗，則為「無」\)。  選擇這個項目可以檢視下一個視窗的屬性。|  
-|**上一個視窗**|上一個同層級視窗的控制代碼，依相同順序 \(圖層順序\) 顯示於視窗樹狀檢視中 \(如果沒有上一個視窗，則為「無」\)。  選擇這個項目可以檢視上一個視窗的屬性。|  
-|**父視窗**|這個視窗之父視窗的控制代碼 \(如果沒有父代則為「無」\)。  選擇這個項目可以檢視父視窗的屬性。|  
-|**第一個子系**|這個視窗的第一個子視窗的控制代碼，依序 \(圖層順序\) 顯示於視窗樹狀檢視中 \(如果沒有子視窗，則為「無」\)。  選擇這個值可以檢視第一個子視窗的屬性。|  
-|**主控視窗**|這個視窗之主控視窗的控制代碼。  例如，應用程式的主視窗通常擁有系統強制回應對話方塊視窗 \(如果沒有主控視窗則為「無」\)。  選擇這個項目可以檢視主控視窗的屬性。|
+|進入|說明|  
+|-----------|-----------------|  
+|**下一個視窗**|下一個同層級視窗 （如果沒有下一個視窗 「 無 」） 的視窗樹狀檢視中顯示的相同順序 (z-order) 的控制代碼。 選擇此項目以檢視下一個視窗的內容。|  
+|**前一個視窗**|前一個同層級視窗 （如果沒有上一個視窗 「 無 」） 的視窗樹狀檢視中顯示的相同順序 (z-order) 的控制代碼。 選擇此項目以檢視前一個視窗的內容。|  
+|**父視窗**|這個視窗的父視窗 （如果沒有父 「 無 」） 的控制代碼。 選擇此項目以檢視父視窗的內容。|  
+|**第一個子系**|這個視窗的第一個子視窗，順序 (z-order) 中顯示的視窗樹狀目錄檢視 （如果不有任何子視窗 「 無 」） 中的控制代碼。 選擇此值，以檢視第一個子視窗的內容。|  
+|**主控視窗**|此視窗的擁有者視窗的控制代碼。 應用程式的主視窗通常擁有系統強制回應對話方塊視窗，例如 （如果沒有擁有者 「 無 」）。 選擇此項目以檢視擁有者視窗的內容。|

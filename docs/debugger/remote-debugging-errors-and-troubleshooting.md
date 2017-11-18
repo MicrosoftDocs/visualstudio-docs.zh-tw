@@ -1,48 +1,46 @@
 ---
-title: "遠端偵錯錯誤和疑難排解 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯工具，錯誤"
-  - "偵錯錯誤"
-  - "遠端偵錯，疑難排解"
-  - "遠端偵錯疑難排解"
-  - "錯誤 [偵錯工具]，遠端偵錯"
-  - "遠端偵錯，錯誤"
+title: "遠端偵錯錯誤和疑難排解 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- debugger, errors
+- debugging errors
+- remote debugging, troubleshooting
+- troubleshooting remote debugging
+- errors [debugger], remote debugging
+- remote debugging, errors
 ms.assetid: b2f41a80-e3e0-4064-a487-8e8446270dec
-caps.latest.revision: 22
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 22
+caps.latest.revision: "22"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fea0a39532b7edbbe5f8419f1d5588b8a5d73471
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 遠端偵錯錯誤和疑難排解
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="remote-debugging-errors-and-troubleshooting"></a>遠端偵錯錯誤和疑難排解
 您可能會在嘗試進行遠端偵錯時，發生下列錯誤。  
   
--   [錯誤：無法自動逐步執行至伺服器](../debugger/error-unable-to-automatically-step-into-the-server.md)  
+-   [Error: Unable to Automatically Step Into the Server](../debugger/error-unable-to-automatically-step-into-the-server.md)  
   
--   [錯誤：Microsoft Visual Studio 遠端偵錯監視 \(MSVSMON.EXE\) 似乎沒有在遠端電腦上執行。](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
+-   [錯誤：Microsoft Visual Studio 遠端偵錯監視 (MSVSMON.EXE) 似乎沒有在遠端電腦上執行](../debugger/error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmon-exe-does-not-appear-to-be-running-on-the-remote-computer.md)  
   
--   [無法連接至 Microsoft Visual Studio 遠端偵錯監視](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
+-   [Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor](../debugger/unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor.md)  
   
--   [錯誤：遠端電腦未顯示於 \[遠端連線\] 對話方塊](../Topic/Error:%20Remote%20machine%20does%20not%20appear%20in%20a%20Remote%20Connections%20dialog.md)  
+-   [錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊](../debugger/error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

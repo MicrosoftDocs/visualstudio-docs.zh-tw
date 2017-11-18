@@ -1,33 +1,34 @@
 ---
-title: "number 屬性 (錯誤) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Number"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Number 屬性"
+title: "number 屬性 （錯誤） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Number
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Number property
 ms.assetid: 8697e20b-a2b0-4e26-85c0-ab07ddfe8281
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bbc229e7d0572e1a3dbed056b344da7ff9ce7292
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# number 屬性 (錯誤) (JavaScript)
-傳回或設定與特定錯誤相關的數值。  `Error` 物件的預設屬性是 **number**。  
+# <a name="number-property-error-javascript"></a>number 屬性 (錯誤) (JavaScript)
+傳回或設定與特定的錯誤相關聯的數值。 `Error`物件的預設屬性是**數目**。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
@@ -35,20 +36,20 @@ object
 .number [= errorNumber]  
 ```  
   
-## 參數  
- *Object*  
- `Error` 物件的任何執行個體。  
+## <a name="parameters"></a>參數  
+ *物件*  
+ 任何執行個體`Error`物件。  
   
- *errorNumber*  
+ *錯誤號碼*  
  表示錯誤的整數。  
   
-## 備註  
- 錯誤號碼是一個 32 位元的值。  前 16 個位元代表設備代碼，後 16 個位元才是錯誤碼。  若要找出錯誤碼，請使用 `&` \(位元 And\) 運算子，以結合 number 屬性與十六進位數字 `0xFFFF`。  
+## <a name="remarks"></a>備註  
+ 錯誤代碼是一個 32 位元的值。 上方的 16 位元字組是設備碼和 facility 為該錯誤碼。 若要判斷錯誤的程式碼，請使用`&`(位元和) 運算子來結合的十六進位數字的數字屬性`0xFFFF`。  
   
-## 範例  
- 下列範例會導致例外狀況的擲回，並顯示從錯誤代碼所衍生的錯誤碼。  
+## <a name="example"></a>範例  
+ 下列範例會擲回例外狀況，並顯示錯誤碼，衍生自的錯誤號碼。  
   
-```javascript  
+```JavaScript  
 try  
     {  
     // Cause an error.  
@@ -69,21 +70,21 @@ catch(e)
     }  
 ```  
   
-## 範例  
- 這個程式碼的輸出如下。  
+## <a name="example"></a>範例  
+ 此程式碼的輸出如下所示。  
   
-```javascript  
+```JavaScript  
 Error Code: 5009  
 Facility Code: 10  
 Error Message: 'y' is undefined  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv5](../../javascript/reference/includes/jsv5-md.md)]  
   
- **適用於**：[Error 物件](../../javascript/reference/error-object-javascript.md)  
+ **適用於**:[物件時發生錯誤](../../javascript/reference/error-object-javascript.md)  
   
-## 請參閱  
- [description 屬性 \(錯誤\)](../../javascript/reference/description-property-error-javascript.md)   
- [message 屬性 \(錯誤\)](../../javascript/reference/message-property-error-javascript.md)   
- [name 屬性 \(錯誤\)](../../javascript/reference/name-property-error-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [description 屬性 （錯誤）](../../javascript/reference/description-property-error-javascript.md)   
+ [message 屬性 （錯誤）](../../javascript/reference/message-property-error-javascript.md)   
+ [name 屬性 (Error)](../../javascript/reference/name-property-error-javascript.md)

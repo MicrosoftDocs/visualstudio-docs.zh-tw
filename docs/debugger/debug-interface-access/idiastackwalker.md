@@ -1,53 +1,52 @@
 ---
-title: "IDiaStackWalker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalker 介面"
+title: "IDiaStackWalker |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalker interface
 ms.assetid: 4a61a22a-9cf8-4ea1-9e6e-b42f96872d40
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e651c8ba8bee152121b96b14613144768a56cc2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalker
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiastackwalker"></a>IDiaStackWalker
 提供方法，以執行堆疊查核行程使用.pdb 檔案中的資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDiaStackWalker: IUnknown  
 ```  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaStackWalker`。  
   
-|方法|描述|  
-|--------|--------|  
-|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|擷取列舉堆疊框架值 x 86 的平台。|  
-|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|擷取特定的平台類型的堆疊框架列舉器。|  
+|方法|說明|  
+|------------|-----------------|  
+|[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|擷取堆疊框架的列舉值適用於 x86 平台。|  
+|[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|擷取特定平台類型的堆疊框架的列舉值。|  
   
-## 備註  
- 這個介面用來取得已載入的模組的堆疊框架的清單中。  每個方法會傳遞[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) \(由用戶端應用程式\) 的物件會提供所需的資訊建立堆疊框架的清單。  
+## <a name="remarks"></a>備註  
+ 這個介面用來取得載入模組的堆疊框架的清單。 每個方法傳遞[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) （用戶端應用程式所實作） 會提供所需的資訊建立堆疊框架的清單物件。  
   
-## 呼叫者的備忘稿  
- 這個介面藉由呼叫`CoCreateInstance`方法與類別識別項`CLSID_DiaStackWalker`的介面識別碼`IID_IDiaStackWalker`。  此範例顯示如何取得這個介面。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 這個介面透過呼叫`CoCreateInstance`方法與類別識別項`CLSID_DiaStackWalker`而介面 ID 的`IID_IDiaStackWalker`。 此範例示範如何取得此介面。  
   
-## 範例  
- 本範例示範如何取得`IDiaStackWalker`介面。  
+## <a name="example"></a>範例  
+ 這個範例示範如何取得`IDiaStackWalker`介面。  
   
-```cpp#  
+```C++  
   
       IDiaStackWalker* pStackWalker;  
 HRESULT hr = CoCreateInstance(CLSID_DiaStackWalker,  
@@ -61,13 +60,13 @@ if (FAILED(hr))
 }  
 ```  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia80.dll  
+ DLL: msdia80.dll  
   
-## 請參閱  
- [介面 \(偵錯介面存取 SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>另請參閱  
+ [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

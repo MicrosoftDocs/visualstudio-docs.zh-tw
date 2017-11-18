@@ -1,63 +1,63 @@
 ---
-title: "如何：以程式碼分析簽入原則強制程式碼的可維護性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼分析，簽入原則"
+title: "如何： 強制執行維護的程式碼與程式碼分析簽入原則 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 39d9697c7d6a216c08e34eb19287d22a76d67a55
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：以程式碼分析簽入原則強制程式碼的可維護性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-開發人員可以使用程式碼度量工具，測量程式碼的複雜度和維護性，但無法叫用程式碼度量做為簽入原則的一部分。  不過，小組可以啟用程式碼分析規則以驗證程式碼是否符合程式碼度量標準，並以簽入原則來強制執行規則。  如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。  
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：以程式碼分析簽入原則強制程式碼的可維護性
+開發人員可以使用程式碼度量資訊工具來測量的複雜度和維護的程式碼，但它們不能做為簽入原則的一部分叫用程式碼度量。 不過，小組可以啟用，並強制執行規則，透過簽入原則以符合他們的程式碼的程式碼度量標準的程式碼分析規則。 如需程式碼度量的詳細資訊，請參閱[程式碼度量值](../code-quality/code-metrics-values.md)。  
   
- 開發人員可以啟用繼承深度、類別結合程度、可維護性指數和複雜度規則，以透過程式碼分析簽入原則來強制執行可維護性程式碼。  上述四種規則都可以在程式碼分析原則編輯器的「維護性規則」分類下找到。  
+ 開發人員可以啟用的繼承深度、 類別結合程度、 可維護性指數和複雜性規則來強制執行維護的程式碼，透過程式碼分析簽入原則。 這些規則的所有四個程式碼分析原則編輯器中，找到 [可維護性規則] 類別底下。  
   
- [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 版本控制的系統管理員可以將程式碼分析的維護性規則加入到簽入原則要求。  這些簽入原則會要求開發人員在初始化簽入之前，先依據這些規則變更執行程式碼分析。  
+ 系統管理員的版本控制[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)]可以加入程式碼分析可維護性規則的簽入原則需求。 這些簽入原則需要開發人員執行程式碼分析簽入初始化之前，根據這些規則變更。  
   
-### 若要開啟程式碼分析原則編輯器  
+### <a name="to-open-the-code-analysis-policy-editor"></a>若要開啟程式碼分析原則編輯器  
   
-1.  在 \[**Team 總管**\] 中，以滑鼠右鍵按一下 Team 專案，按一下 \[**Team 專案設定**\]，然後按一下 \[**原始檔控制**\]。  
+1.  在**Team Explorer**、 team 專案上按一下滑鼠右鍵、 按一下**Team 專案設定**，然後按一下 **原始檔控制**。  
   
-     \[**原始檔控制**\] 對話方塊隨即出現。  
+     **原始檔控制** 對話方塊隨即出現。  
   
-2.  在 \[**簽入原則**\] 索引標籤上，按一下 \[**加入**\]。  
+2.  在**簽入原則**索引標籤，然後按一下**新增**。  
   
-     \[**加入簽入原則**\] 對話方塊隨即出現。  
+     **新增簽入原則** 對話方塊隨即出現。  
   
-3.  選取 \[**簽入原則**\] 清單中的 \[**程式碼分析**\] 核取方塊，然後按一下 \[**確定**\]。  
+3.  在**簽入原則**清單中，選取**程式碼分析**核取方塊，然後**確定**。  
   
-     \[**程式碼分析原則編輯器**\] 對話方塊隨即出現。  
+     **程式碼分析原則編輯器** 對話方塊隨即出現。  
   
-### 若要啟用程式碼分析維護性規則  
+### <a name="to-enable-code-analysis-maintainability-rules"></a>若要啟用程式碼分析可維護性規則  
   
-1.  在 \[**程式碼分析原則編輯器**\] 對話方塊的 \[**規則設定**\] 底下，展開 \[**維護性規則**\] 節點。  
+1.  在**程式碼分析原則編輯器**對話方塊的 **規則設定**，依序展開**可維護性規則**節點。  
   
-2.  選取下列規則的核取方塊：  
+2.  選取核取方塊，下列規則：  
   
-    -   繼承深度：\[**CA1501 AvoidExcessiveInheritance**\] \- 臨界值：深度超過 5 層時發出警告  
+    -   繼承深度： **CA1501 AvoidExcessiveInheritance** -臨界值： 警告位於層級的深度超過 5  
   
-    -   複雜度：\[**CA1502 AvoidExcessiveComplexity**\] \- 臨界值：超過 25 時發出警告  
+    -   複雜度： **CA1502 AvoidExcessiveComplexity** -臨界值： 在多個 25 警告  
   
-    -   可維護性指數：\[**CA1505 AvoidUnmaintainableCode**\] \- 臨界值：低於 20 時發出警告  
+    -   可維護性指數： **ca1505 應 AvoidUnmaintainableCode** -臨界值： 警告少於 20  
   
-    -   類別結合程度：\[**CA1506 AvoidExcessiveClassCoupling**\] \- 臨界值：類別結合程度超過 80 和方法結合程度超過 30 時發出警告  
+    -   結合的類別： **CA1506 AvoidExcessiveClassCoupling** -臨界值： 警告位於多個類別 80 和超過 30 方法  
   
-    -   另外，如果您想在禁止違反規則處進行組建動作，請選取規則描述旁邊的 \[**視警告為錯誤**\] 核取方塊。  
+    -   此外，如果您想防止組建的規則違規時，選取**將警告視為錯誤**規則說明旁邊的核取方塊。  
   
-3.  按一下 \[**確定**\]。  新的簽入原則就會套用至未來的簽入。  
+3.  按一下 [確定]。 新的簽入原則現在會套用至未來的簽入。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式碼度量值](../code-quality/code-metrics-values.md)   
  [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

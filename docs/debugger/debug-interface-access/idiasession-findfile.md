@@ -1,64 +1,63 @@
 ---
-title: "IDiaSession::findFile | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::findFile 方法"
+title: "Idiasession:: Findfile |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::findFile method
 ms.assetid: a215dc21-b316-40d7-9923-55bfa014976b
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef230d1b82992f769011e0cb1d9d4ff11145b82d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findFile
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-以編譯和名稱擷取原始程式檔。  
+# <a name="idiasessionfindfile"></a>IDiaSession::findFile
+擷取原始程式檔的編譯模組和名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT findFile (   
-   IDiaSymbol*           pCompiland,  
-   LPCOLESTR             name,  
-   DWORD                 option,  
-   IDiaEnumSourceFiles** ppResult  
+```C++  
+HRESULT findFile (   
+   IDiaSymbol*           pCompiland,  
+   LPCOLESTR             name,  
+   DWORD                 option,  
+   IDiaEnumSourceFiles** ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pCompiland`  
- \[in\] 表示編譯的 [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) 物件會使用做為內容的搜尋。  將參數設定為 `NULL` 尋找在所有編譯的原始程式檔。  
+ [in][IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，代表要做為內容搜尋的編譯。 這個參數設定為`NULL`若要在所有編譯中都尋找原始程式檔。  
   
  `name`  
- \[in\] 指定要擷取的原始程式檔 \(Source File\) 的名稱。  將參數設定為包含要擷取的所有原始程式檔的 `NULL` 。  
+ [in]指定要擷取的來源檔案的名稱。 這個參數設定為`NULL`所有原始程式檔，來擷取。  
   
  `option`  
- \[in\] 指定比較選項套用到名稱搜尋。  從 [NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md) 列舉型別的值可單獨使用或在組合。  
+ [in]指定套用至搜尋名稱的比較選項。 從數值[NameSearchOptions 列舉](../../debugger/debug-interface-access/namesearchoptions.md)列舉型別可以單獨或合併使用。  
   
  `ppResult`  
- \[out\] 傳回包含擷取的原始程式檔清單的 [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md) 物件。  
+ [out]傳回[IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)擷取物件，其中包含來源檔案的清單。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`，否則傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
+## <a name="example"></a>範例  
   
-```cpp#  
+```C++  
 IDiaEnumSourceFiles* pEnum;  
 pSession->findFile( NULL, L"sourcefile.cpp", nsFNameExt, &pEnum );  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   

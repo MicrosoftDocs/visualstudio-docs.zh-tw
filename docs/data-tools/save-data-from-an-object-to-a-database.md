@@ -1,90 +1,81 @@
 ---
-title: "如何：從物件中將資料儲存至資料庫 | Microsoft Docs"
-ms.custom: ""
-ms.date: "09/21/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 儲存"
-  - "資料存取 [Visual Studio], 物件"
-  - "儲存資料"
+title: "將資料從物件儲存至資料庫 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- data [Visual Studio], saving
+- data access [Visual Studio], objects
+- saving data
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
-caps.latest.revision: 9
-caps.handback.revision: 6
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：從物件中將資料儲存至資料庫
-您可以將物件的資料儲存至資料庫中，方法是將物件的值傳遞至其中一個 TableAdapter 的 DBDirect 方法 \(例如 `TableAdapter.Insert`\)。  如需詳細資訊，請參閱 [TableAdapter 概觀](../data-tools/tableadapter-overview.md)。  
+# <a name="save-data-from-an-object-to-a-database"></a>將資料從物件儲存至資料庫
+您也可以從物件的值傳遞至 TableAdapter 的 DBDirect 方法的其中一個資料庫物件中儲存資料 (例如， `TableAdapter.Insert`)。 如需詳細資訊，請參閱[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。  
   
- 若要儲存物件集合的資料，請在物件的集合中執行迴圈 \(Loop\) \(例如，for\-next 迴圈\)，然後使用其中一個 TableAdapter 的 DBDirect 方法，將每個物件的值傳送至資料庫中。  
+ 若要將資料從物件的集合儲存，迴圈的集合物件 （例如下, 一步的迴圈），並使用其中一種 TableAdapter 的 DBDirect 方法傳送至資料庫的每個物件的值。  
   
- 根據預設，DBDirect 方法是在 TableAdapter 上建立的，而且這些方法可直接對資料庫執行。  您可以直接呼叫這些方法，而不需要 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> 物件來調整變更，以便將更新傳送至資料庫。  
+ 根據預設，會建立 DBDirect 方法，可以直接對資料庫執行 TableAdapter 上。 這些方法可以直接呼叫，且不需要<xref:System.Data.DataSet>或<xref:System.Data.DataTable>協調變更，才能將更新傳送至資料庫的物件。  
   
 > [!NOTE]
->  當您在設定 TableAdapter 時，主查詢必須提供足夠的資訊，才會建立 DBDirect 方法。  例如，如果 TableAdapter 設定為從並未定義主索引鍵資料行的資料表查詢資料時，它就不會產生 DBDirect 方法。  
+>  當您設定 TableAdapter 時，主要的查詢必須提供足以 DBDirect 方法，以建立資訊。 例如，如果沒有定義主索引鍵資料行的資料表，TableAdapter 設定為查詢資料，它不會產生 DBDirect 方法。  
   
-|TableAdapter DBDirect 方法|描述|  
-|------------------------------|--------|  
-|`TableAdapter.Insert`|將新資料錄加入至資料庫，並讓您傳入個別的資料行值做為方法參數。|  
-|`TableAdapter.Update`|更新資料庫中的現有資料錄。  此 `Update` 方法會採用原始和新的資料行值做為方法參數。  原始值是用來找出原始資料錄，而新值則是用來更新該資料錄。<br /><br /> 此外，`TableAdapter.Update` 方法也會用來將資料集的變更調整回資料庫中，方式是採用 <xref:System.Data.DataSet>、<xref:System.Data.DataTable>、<xref:System.Data.DataRow> 或 <xref:System.Data.DataRow> 的陣列做為方法參數。|  
-|`TableAdapter.Delete`|根據傳入做為方法參數的原始資料行值，從資料庫刪除現有的資料錄。|  
+|TableAdapter DBDirect 方法|說明|  
+|----------------------------------|-----------------|  
+|`TableAdapter.Insert`|將新記錄新增至資料庫，並讓您在個別資料行值做為方法參數中傳遞。|  
+|`TableAdapter.Update`|更新現有的資料庫中的記錄。 `Update`方法會採用原始和新的資料行值做為方法參數。 用來尋找原始記錄中，原始值和新值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也用來協調回資料庫的變更集中的資料，採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或一組<xref:System.Data.DataRow>做為方法參數。|  
+|`TableAdapter.Delete`|刪除現有記錄為方法參數傳入的原始資料行值為基礎的資料庫。|  
   
-### 若要將物件的新資料錄儲存至資料庫中  
+### <a name="to-save-new-records-from-an-object-to-a-database"></a>將新的記錄從物件儲存至資料庫  
   
--   將值傳遞至 `TableAdapter.Insert` 方法，藉以建立資料錄。  
+-   藉由傳遞的值來建立記錄`TableAdapter.Insert`方法。  
   
-     下列範例會在 `Customers` 資料表中建立新的客戶資料錄，方法是將 `currentCustomer` 物件中的值傳遞至 `TableAdapter.Insert` 方法。  
+     下列範例會建立新的客戶記錄中`Customers`資料表中的值傳遞`currentCustomer`物件`TableAdapter.Insert`方法。  
   
-     [!code-cs[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
+     [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_1.cs)]
      [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_1.vb)]  
   
-### 若要將物件的現有資料錄更新至資料庫中  
+### <a name="to-update-existing-records-from-an-object-to-a-database"></a>若要更新現有的資料錄從物件到資料庫  
   
--   修改資料錄，方法是呼叫 `TableAdapter.Update` 方法、傳入新值以更新資料錄，並傳入原始值以找出資料錄。  
+-   藉由呼叫修改記錄`TableAdapter.Update`方法中，傳入新值來更新記錄，然後在原始的值，以找出記錄中傳遞。  
   
     > [!NOTE]
-    >  您的物件必須維護原始值，才能將它們傳遞至 `Update` 方法。  這個範例會使用含有 `orig` 前置詞的屬性，儲存原始值。  
+    >  您的物件需要維護原始值，才能將其傳遞給`Update`方法。 這個範例會使用具有屬性`orig`來儲存原始值的前置詞。  
   
-     下列範例會在 `Customers` 資料表中更新現有的資料錄，方法是將 `Customer` 物件中的新和原始值傳遞至 `TableAdapter.Update` 方法。  
+     下列範例會更新中的現有記錄`Customers`資料表中的新增和原始值傳遞`Customer`物件`TableAdapter.Update`方法。  
   
-     [!code-cs[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
+     [!code-csharp[VbRaddataSaving#24](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_2.cs)]
      [!code-vb[VbRaddataSaving#24](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_2.vb)]  
   
-### 若要從資料庫刪除現有的資料錄  
+### <a name="to-delete-existing-records-from-a-database"></a>若要從資料庫刪除現有的記錄  
   
--   刪除資料錄，方法是呼叫 `TableAdapter.Delete` 方法，並傳入原始值以找出資料錄。  
+-   刪除記錄，藉由呼叫`TableAdapter.Delete`方法並傳入要尋找記錄的原始值。  
   
     > [!NOTE]
-    >  您的物件必須維護原始值，才能將它們傳遞至 `Delete` 方法。  這個範例會使用含有 `orig` 前置詞的屬性，儲存原始值。  
+    >  您的物件需要維護原始值，才能將其傳遞給`Delete`方法。 這個範例會使用具有屬性`orig`來儲存原始值的前置詞。  
   
-     下列範例會從 `Customers` 資料表刪除資料錄，方法是將 `Customer` 物件中的原始值傳遞至 `TableAdapter.Delete` 方法。  
+     下列範例會刪除記錄，以從`Customers`藉由傳遞中的原始值的資料表`Customer`物件`TableAdapter.Delete`方法。  
   
-     [!code-cs[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
+     [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]  
   
-## .NET Framework 安全性  
- 您必須擁有在資料庫的資料表上執行選取 INSERT、UPDATE 或 DELETE 的使用權限。  
+## <a name="net-framework-security"></a>.NET Framework 安全性  
+ 您必須擁有權限來執行選取的 INSERT、 UPDATE 或 DELETE 上的資料庫中的資料表。  
   
-## 請參閱  
- [Visual Studio 中的物件繫結](../data-tools/bind-objects-in-visual-studio.md)   
- [如何：連接至物件中的資料](../Topic/How%20to:%20Connect%20to%20Data%20in%20Objects.md)   
- [逐步解說：連接至物件中的資料 \(Windows Form\)](../Topic/Walkthrough:%20Connecting%20to%20Data%20in%20Objects%20\(Windows%20Forms\).md)   
- [如何：以 TableAdapter 直接存取資料庫](../data-tools/directly-access-the-database-with-a-tableadapter.md)   
- [將 Windows Form 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)
+## <a name="see-also"></a>另請參閱  
+ [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

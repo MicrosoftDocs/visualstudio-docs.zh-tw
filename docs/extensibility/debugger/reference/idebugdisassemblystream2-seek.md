@@ -1,69 +1,69 @@
 ---
-title: "IDebugDisassemblyStream2::Seek | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::Seek"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::Seek"
+title: "IDebugDisassemblyStream2::Seek |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::Seek
+helpviewer_keywords: IDebugDisassemblyStream2::Seek
 ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 61ef1e649a80fcda5ec3ce4be6c74b154c17f9a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::Seek
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-將讀取的指標移至反組譯碼資料流指定數目之指示相對於指定的位置中。  
+# <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
+讀取的指標在中移動反組譯碼資料流給定的指示，相對於指定的位置數目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Seek(   
-   SEEK_START          dwSeekStart,  
-   IDebugCodeContext2* pCodeContext,  
-   UINT64              uCodeLocationId,  
-   INT64               iInstructions  
+```cpp  
+HRESULT Seek(   
+   SEEK_START          dwSeekStart,  
+   IDebugCodeContext2* pCodeContext,  
+   UINT64              uCodeLocationId,  
+   INT64               iInstructions  
 );  
 ```  
   
-```c#  
-int Seek(   
-   enum_SEEK_START    dwSeekStart,  
-   IDebugCodeContext2 pCodeContext,  
-   ulong              uCodeLocationId,  
-   long               iInstructions  
+```csharp  
+int Seek(   
+   enum_SEEK_START    dwSeekStart,  
+   IDebugCodeContext2 pCodeContext,  
+   ulong              uCodeLocationId,  
+   long               iInstructions  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwSeekStart`  
- \[in\]介於[SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)列舉型別，指定開始搜尋程序的相對位置。  
+ [in]中的值[SEEK_START](../../../extensibility/debugger/reference/seek-start.md)列舉，指定相對的位置開始搜尋程序。  
   
  `pCodeContext`  
- \[in\][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示搜尋作業是相對於程式碼內容。  只有當使用這個參數`dwSeekStart` \= `SEEK_START_CODECONTEXT`。 否則，這個參數會被忽略，並可為 null 值。  
+ [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表相對於搜尋作業的程式碼內容。 只有當使用這個參數`dwSeekStart`  =  `SEEK_START_CODECONTEXT`; 否則這個參數會被忽略，而且可以是 null 值。  
   
  `uCodeLocationId`  
- \[in\]搜尋作業是相對於程式碼的位置識別碼。  如果使用這個參數`dwSeekStart` \= `SEEK_START_CODELOCID`。 否則，這個參數會被忽略，並且可以設為 0。  請參閱 \[備註\] 部份的[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)的程式碼的位置識別碼說明的方法。  
+ [in]搜尋作業是相對於程式碼位置識別項。 如果使用這個參數`dwSeekStart`  =  `SEEK_START_CODELOCID`; 否則這個參數會被忽略，可以設定為 0。 請參閱 < 備註 > 一節的[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。  
   
  `iInstructions`  
- \[in\]移至指定的位置相對的指令數目`dwSeekStart`。  這個值可以是負向後移動。  
+ [in]如何移動相對於指定的位置數目`dwSeekStart`。 這個值可以是負數向後移動。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果搜尋位置清單以外的可用指令的點。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`搜尋位置是否可用的指示清單以外的點。 反之則傳回錯誤碼。  
   
-## 備註  
- 如果搜尋不到清單的開頭之前的位置，則會將讀取的位置設定為在清單中的第一個指令。  如果查看到的位置在清單結尾之後，則讀取的位置設至最後一個指令清單中。  
+## <a name="remarks"></a>備註  
+ 如果搜尋到清單的位置開始之前，讀取的位置是設定為清單中的第一個指令。 如果此，請參閱為到位置清單的結尾之後，讀取的位置會設定到最後一個指示清單中。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
- [SEEK\_START](../../../extensibility/debugger/reference/seek-start.md)   
+ [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)
+ [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)

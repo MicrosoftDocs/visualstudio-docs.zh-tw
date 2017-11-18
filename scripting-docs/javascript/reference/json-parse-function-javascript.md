@@ -1,40 +1,42 @@
 ---
-title: "JSON.parse 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "JSON.parse"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "JSON.parse 方法"
-  - "parse JSON 方法"
+title: "JSON.parse 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: JSON.parse
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parse JSON method
+- JSON.parse method
 ms.assetid: 20f00d31-5ab5-4c3c-ab49-2534fc39a9b4
-caps.latest.revision: 41
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 41
+caps.latest.revision: "41"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3d66aee32a191c8cc1879c9436788c196c05e7bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# JSON.parse 函式 (JavaScript)
-將以 JavaScript 物件標記法 \(JavaScript Object Notation，JSON\) 表示的字串轉換成物件。  
+# <a name="jsonparse-function-javascript"></a>JSON.parse 函式 (JavaScript)
+將以 JavaScript 物件標記法 (JavaScript Object Notation，JSON) 表示的字串轉換成物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 JSON.parse(text [, reviver])  
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `text`  
  必要項。 有效的 JSON 字串。  
   
@@ -47,29 +49,29 @@ JSON.parse(text [, reviver])
   
 -   如果 `reviver` 傳回 `null` 或 `undefined`，表示成員已刪除。  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  物件或陣列。  
   
-## 例外狀況  
- 如果這個函式導致 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 剖析器錯誤 \(例如「SCRIPT1014：無效的字元」\)，表示輸入的文字不符合 JSON 語法。 若要修正錯誤，請執行下列一項動作：  
+## <a name="exceptions"></a>例外狀況  
+ 如果這個函式導致 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 剖析器錯誤 (例如「SCRIPT1014：無效的字元」)，表示輸入的文字不符合 JSON 語法。 若要修正錯誤，請執行下列一項動作：  
   
--   修改 `text` 引數，使其符合 JSON 語法。 如需詳細資訊，請參閱 JSON 物件的 [BNF 語法標記法](http://go.microsoft.com/fwlink/?LinkId=125203)。  
+-   修改 `text` 引數，使其符合 JSON 語法。 如需詳細資訊，請參閱 JSON 物件的 [BNF 語法標記法](http://go.microsoft.com/fwlink/?LinkId=125203) 。  
   
      例如，如果回應採用 JSONP 格式而不是純 JSON，請在回應物件上嘗試此程式碼：  
   
-    ```javascript  
+    ```JavaScript  
     var fixedResponse = response.responseText.replace(/\\'/g, "'");  
     var jsonObj = JSON.parse(fixedResponse);  
     ```  
   
--   請確定已透過 JSON 相容實作 \(例如 `text`\) 來序列化 `JSON.stringify` 引數。  
+-   請確定已透過 JSON 相容實作 (例如 `text` ) 來序列化 `JSON.stringify`引數。  
   
--   在 JSON 驗證程式 \(例如 [JSLint](http://www.jslint.com/)\) 中執行 `text` 引數來協助識別語法錯誤。  
+-   在 JSON 驗證程式 (例如 `text` JSLint [) 中執行](http://www.jslint.com/) 引數來協助識別語法錯誤。  
   
-## 範例  
+## <a name="example"></a>範例  
  下面範例會使用 `JSON.parse` 將 JSON 字串轉換為物件。  
   
-```javascript  
+```JavaScript  
 var jsontext = '{"firstname":"Jesper","surname":"Aaberg","phone":["555-0100","555-0120"]}';  
 var contact = JSON.parse(jsontext);  
 document.write(contact.surname + ", " + contact.firstname);  
@@ -79,10 +81,10 @@ document.write(contact.phone[1]);
 // 555-0100  
 ```  
   
-## 範例  
- 下面範例會使用 `JSON.stringify` 將陣列轉換為 JSON 字串，然後使用 `JSON.parse` 將字串轉換回陣列。  
+## <a name="example"></a>範例  
+ 下面範例會使用 `JSON.stringify`將陣列轉換為 JSON 字串，然後使用 `JSON.parse`將字串轉換回陣列。  
   
-```javascript  
+```JavaScript  
 var arr = ["a", "b", "c"];  
 var str = JSON.stringify(arr);  
 document.write(str);  
@@ -101,10 +103,10 @@ while (newArr.length > 0) {
 // a  
 ```  
   
-## 範例  
- `reviver` 函式通常是用來將以 JSON 字串表示的國際標準組織 \(ISO\) 日期字串轉換成具有國際標準時間 \(UTC\) 格式的 `Date` 物件。 此範例使用 `JSON.parse` 將具有 ISO 格式的日期字串還原序列化。`dateReviver` 函式會針對格式如同 ISO 日期字串格式的成員傳回 `Date` 物件。  
+## <a name="example"></a>範例  
+ `reviver` 函式通常是用來將以 JSON 字串表示的「國際標準組織」(International Organization for Standardization，ISO) 日期字串轉換成具有「國際標準時間」(Coordinated Universal Time，UTC) 格式的 `Date` 物件。 下面這個範例會使用 `JSON.parse` 還原序列化具有 ISO 格式的日期字串。 `dateReviver` 函式會針對格式如同 ISO 日期字串格式的成員傳回 `Date` 物件。  
   
-```javascript  
+```JavaScript  
 var jsontext = '{ "hiredate": "2008-01-01T12:00:00Z", "birthdate": "2008-12-25T12:00:00Z" }';  
 var dates = JSON.parse(jsontext, dateReviver);  
 document.write(dates.birthdate.toUTCString());  
@@ -126,10 +128,10 @@ function dateReviver(key, value) {
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv58](../../javascript/reference/includes/jsv58-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [JSON.stringify 函式](../../javascript/reference/json-stringify-function-javascript.md)   
- [toJSON 方法 \(日期\)](../../javascript/reference/tojson-method-date-javascript.md)   
- [中樞範本範例應用程式 \(Windows 市集\)](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)
+ [toJSON 方法 （日期）](../../javascript/reference/tojson-method-date-javascript.md)   
+ [中樞範本範例應用程式 （Windows 市集）](http://code.msdn.microsoft.com/Hub-template-sample-with-4b70002d)

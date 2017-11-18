@@ -1,47 +1,46 @@
 ---
-title: "IDiaSymbol::get_udtKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_udtKind 方法"
+title: "Idiasymbol:: Get_udtkind |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_udtKind method
 ms.assetid: 4002f887-aea6-4475-b302-67c57079fe0a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7dc4a95e3dd8752601172f268bd9b15f099182e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_udtKind
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取的各種不同的使用者定義的型別 \(UDT\)。  
+# <a name="idiasymbolgetudtkind"></a>IDiaSymbol::get_udtKind
+擷取各種不同的使用者定義型別 (UDT)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_udtKind (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_udtKind (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回值，從[UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)指定的 UDT 類型的列舉型別： 結構、 類別或等位。  
+ [out]傳回值，從[UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)指定 UDT 類型的列舉型別： 結構、 類別或等位。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤的程式碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [UdtKind 列舉](../../debugger/debug-interface-access/udtkind.md)

@@ -1,79 +1,78 @@
 ---
-title: "IDiaSymbol::get_undecoratedNameEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_undecoratedNameEx 方法"
+title: "Idiasymbol:: Get_undecoratednameex |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_undecoratedNameEx method
 ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1dac35a0e01890488e6290759b563d25f7067067
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_undecoratedNameEx
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取部分或全部的 C\+\+ 的未裝飾名稱裝飾 \(連結\) 名稱。  
+# <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
+擷取部分或全部的 c + + 未裝飾名稱裝飾 （連結） 名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_undecoratedNameEx(   
-   DWORD undecorateOptions,  
-   BSTR* pRetval  
+```C++  
+HRESULT get_undecoratedNameEx(   
+   DWORD undecorateOptions,  
+   BSTR* pRetval  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `undecoratedOptions`  
- \[in\]指定的旗標組合傳回該控制項。  請參閱 \[備註\] 部份的特定值和它們的功用。  
+ [in]指定旗標的組合傳回該控制項。 請參閱 < 備註 > 一節的特定值和它們的功用。  
   
  `pRetVal`  
- \[\] out傳回未裝飾的 C\+\+ 名稱裝飾名稱。  
+ [out]傳回的未裝飾的名稱的 c + + 裝飾名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  `undecorateOptions`可以是下列旗標的組合。  
   
 > [!NOTE]
->  旗標名稱未定義在 DIA SDK 中，因此您必須加入程式碼中的宣告，或使用未經處理的值。  
+>  旗標名稱未定義在 DIA SDK 中，因此您需要將宣告加入至您的程式碼，或使用未經處理的值。  
   
 |旗標|值|描述|  
-|--------|-------|--------|  
-|UNDNAME\_COMPLETE|0x0000|啟用完全 undecoration。|  
-|UNDNAME\_NO\_LEADING\_UNDERSCORES|0x0001|移除前置底線 Microsoft 擴充關鍵字。|  
-|UNDNAME\_NO\_MS\_KEYWORDS|0x0002|停用擴充的 Microsoft 擴充關鍵字。|  
-|UNDNAME\_NO\_FUNCTION\_RETURNS|0x0004|停用擴充的主要宣告的傳回型別。|  
-|UNDNAME\_NO\_ALLOCATION\_MODEL|0x0008|停用宣告模型的擴充。|  
-|UNDNAME\_NO\_ALLOCATION\_LANGUAGE|0x0010|停用宣告語言規範的擴充。|  
-|UNDNAME\_RESERVED1|0x0020|保留。|  
-|UNDNAME\_RESERVED2|0x0040|保留。|  
-|UNDNAME\_NO\_THISTYPE|0x0060|停用所有的修飾詞，在`this`型別。|  
-|UNDNAME\_NO\_ACCESS\_SPECIFIERS|0x0080|停用擴充成員的存取規範。|  
-|UNDNAME\_NO\_THROW\_SIGNATURES|0x0100|停用擴充"throw\-"的簽章函式和函式的指標。|  
-|UNDNAME\_NO\_MEMBER\_TYPE|0x0200|停用擴充的`static`或`virtual`成員。|  
-|UNDNAME\_NO\_RETURN\_UDT\_MODEL|0x0400|對 UDT 傳回，請停用 Microsoft 模型的擴充。|  
-|UNDNAME\_32\_BIT\_DECODE|0x0800|Undecorates 32 位元的裝飾的名稱。|  
-|UNDNAME\_NAME\_ONLY|0x1000|取得名稱的主要宣告; 只會傳回 \[範圍::\] 名稱。  展開 \[範本參數。|  
-|UNDNAME\_TYPE\_ONLY|0x2000|輸入是只是型別支援的編碼。 會將委派撰寫抽象的宣告子。|  
-|UNDNAME\_HAVE\_PARAMETERS|0x4000|真正的範本參數是可用的。|  
-|UNDNAME\_NO\_ECSU|0x8000|抑制列舉\/類別\/結構\/等位。|  
-|UNDNAME\_NO\_IDENT\_CHAR\_CHECK|0x10000|抑制檢查有有效的識別項字元。|  
-|UNDNAME\_NO\_PTR64|0x20000|不包括在輸出中的 ptr64。|  
+|----------|-----------|-----------------|  
+|UNDNAME_COMPLETE|0x0000|啟用完整 undecoration。|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|移除 Microsoft 擴充關鍵字前置底線。|  
+|UNDNAME_NO_MS_KEYWORDS|0x0002|停用擴充的 Microsoft 擴充關鍵字。|  
+|UNDNAME_NO_FUNCTION_RETURNS|0x0004|停用擴充的主要宣告傳回型別。|  
+|UNDNAME_NO_ALLOCATION_MODEL|0x0008|停用擴充的宣告模型。|  
+|UNDNAME_NO_ALLOCATION_LANGUAGE|0x0010|停用擴充的宣告語言規範。|  
+|UNDNAME_RESERVED1|0x0020|保留。|  
+|UNDNAME_RESERVED2|0x0040|保留。|  
+|UNDNAME_NO_THISTYPE|0x0060|停用上的所有修飾詞`this`型別。|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|停用擴充成員的存取規範。|  
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|停用擴充 」 throw-簽章中的 「 函式和函式的指標。|  
+|UNDNAME_NO_MEMBER_TYPE|0x0200|停用擴充`static`或`virtual`成員。|  
+|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|針對 UDT 傳回，會停用擴充的 Microsoft 模型。|  
+|UNDNAME_32_BIT_DECODE|0x0800|Undecorates 32 位元的裝飾的名稱。|  
+|UNDNAME_NAME_ONLY|0x1000|取得主要宣告; 的名稱只會傳回 [範圍::] 名稱。  展開 範本參數。|  
+|UNDNAME_TYPE_ONLY|0x2000|輸入是只要類型的編碼。撰寫抽象宣告子。|  
+|UNDNAME_HAVE_PARAMETERS|0x4000|使用真實的樣板參數。|  
+|UNDNAME_NO_ECSU|0x8000|會隱藏列舉/類別/結構/等位。|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|隱藏檢查有效的識別項字元。|  
+|UNDNAME_NO_PTR64|0x20000|不包含 ptr64 輸出中。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,5 +1,5 @@
 ---
-title: Entity Data Model Tools in Visual Studio | Microsoft Docs
+title: "Visual Studio 中的 entity Framework 工具 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,64 +7,51 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
-caps.latest.revision: 21
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 4306111cd49a5299bfa5d4e5e22b212bc7799fe2
-ms.openlocfilehash: a4a5a571ede6554f2e601e571568fc17bc101943
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/02/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: eb4ca4445af3970828f4212c69c11d9d173d5650
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model Tools in Visual Studio
-Entity Framework is an object-relational mapping technology that enables .NET developers to work with relational data by using domain-specific objects. It eliminates the need for most of the data-access code that developers usually need to write. Entity Framework is the recommended object-relational mapping (ORM) modeling technology for new .NET applications.  
+# <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 entity Framework 工具
+Entity Framework 是一種物件關聯式對應技術，可讓.NET 開發人員使用網域特有物件來處理關聯式資料。 它不必將大部分的開發通常需要撰寫資料存取程式碼。 Entity Framework 是模型對於新的.NET 應用程式的技術建議的物件關聯式對應 (ORM)。  
   
- [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools are designed to help you build Entity Framework (EF) applications. The complete documentation for Entity Framework is here: [EF Core and EF 6](https://docs.microsoft.com/en-us/ef/).  
+Entity Framework 工具專門設計來協助您建置 Entity Framework (EF) 應用程式。 以下是 Entity Framework 的完整文件： [EF 核心和 EF 6](https://docs.microsoft.com/ef/)。  
   
- With [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, you can create a *conceptual model* from an existing database and then graphically visualize and edit your conceptual model. Or, you can graphically create a conceptual model first, and then generate a database that supports your model. In either case, you can automatically update your model when the underlying database changes and automatically generate object-layer code for your application. Database generation and object-layer code generation are customizable.  
+您可以使用 Entity Framework 工具，建立*概念模型*從現有資料庫以及然後以圖形方式以視覺化方式檢視和編輯您的概念模型。 或者，您可以先以圖形方式建立概念模型，然後產生可支援該模型的資料庫。 無論使用哪一種方式，當基礎資料庫變更時，您都可以自動更新模型，而且可以自動產生應用程式的物件層程式碼。 資料庫產生和物件層程式碼產生皆可自訂。  
   
- These are the specific tools that make up Entity Data Model Tools in Visual Studio 2015:  
+Entity Framework 工具會安裝的一部分**資料儲存和處理**在 Visual Studio 安裝程式工作負載。 您也可以安裝為 indvidual 元件下**Sdk、 程式庫，以及架構**類別目錄。  
+ 
+這些是 Visual Studio 中的 Entity Framework 工具所組成的特定工具：  
   
--   You can use the [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Designer** (**Entity Designer**) to visually create and modify entities, associations, mappings, and inheritance relationships. The **Entity Designer** also generates [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] or [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] object-layer code.  
+-   您可以使用[!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)]  **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]設計師**(**Entity Designer**) 以視覺化方式建立及修改實體、 關聯、 對應和繼承關聯性。 **Entity Designer**也會產生[!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)]或[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]物件層程式碼。  
   
--   You can use the **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Wizard** to generate a conceptual model from an existing database and add database connection information to your application.  
+-   您可以使用**[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]精靈**產生概念模型，從現有的資料庫，並將資料庫連接資訊加入至您的應用程式。  
   
--   You can use the **Create Database Wizard** to create a conceptual model first and then create a database that supports the model.  
+-   您可以使用**建立資料庫精靈**第一次建立概念模型，然後建立支援模型的資料庫。  
   
--   You can use the **Update Model Wizard** to update your conceptual model, storage model, and mappings when changes have been made to the underlying database.  
+-   您可以使用**更新模型精靈**變更已對基礎資料庫時，更新您的概念模型、 儲存體模型和對應。  
   
     > [!NOTE]
-    >  Starting with Visual Studio 2010, [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools do not support [!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)].  
+    >  從 Visual Studio 2010 開始，Entity Framework 工具不支援[!INCLUDE[ss2k](../data-tools/includes/ss2k_md.md)]。  
   
- The tools generate or modify an .edmx file. This file contains information that describes the conceptual model, the storage model, and the mappings between them. For more information, see  [EDMX](https://msdn.microsoft.com/en-us/data/jj650889.aspx).  
+這些工具產生，或修改.edmx 檔案。 這個.edmx 檔案包含描述概念模型、 儲存模型，以及它們之間的對應資訊。 如需詳細資訊，請參閱[EDMX](https://msdn.microsoft.com/data/jj650889.aspx)。  
   
- Entity Framework Power Tools help you build applications that use the Entity Data Model. The tools can generate a conceptual model, validate an existing model, produce source-code files that contain object classes based on the conceptual model, and produce source-code files that contain views that the model generates. For detailed information, see [Pre-Generated Mapping Views](https://msdn.microsoft.com/en-us/data/dn469601.aspx).  
+[Entity Framework Power Tools](https://marketplace.visualstudio.com/items?itemName=EntityFrameworkTeam.EntityFrameworkPowerToolsBeta4)幫助您建立使用實體資料模型的應用程式。 電源工具可以產生概念模型、 驗證現有模型、 產生含有以概念模型中，為基礎的物件類別的原始程式檔和產生包含檢視模型所產生的原始程式碼檔案。 如需詳細資訊，請參閱[Pre-Generated 對應檢視](https://msdn.microsoft.com/data/dn469601.aspx)。  
   
-## <a name="related-topics"></a>Related topics  
+## <a name="related-topics"></a>相關主題  
   
-|Title|Description|  
+|標題|說明|  
 |-----------|-----------------|  
-|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|Describes how to use [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] Tools, which [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] provides, to create applications.|  
-|[Entity Data Model](/dotnet/framework/data/adonet/entity-data-model)|Provides links and information for working with data that is used by applications built on [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)].|  
-|[Getting Started on Full .NET (Console, WinForms, WPF, etc.)](https://docs.efproject.net/en/latest/platforms/full-dotnet/getting-started.html)|Provides tutorials on how to create .NET desktop applications that use Entity Framework 7.|  
-|[ASP.NET 5 Application to New Database](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Describes how to create a new ASP.NET 5 application by using Entity Framework 7.|  
+|[ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index)|描述如何使用[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]工具，其中[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]提供，若要建立應用程式。|  
+|[實體資料模型](/dotnet/framework/data/adonet/entity-data-model)|提供使用上建置的應用程式所使用的資料的資訊和連結[!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]。|  
+|[Entity Framework (EF) 文件）](https://msdn.microsoft.com/library/ee712907(v=vs.113).aspx)|提供視訊、 教學課程和進階文件可協助您充分利用 Entity Framework 的索引。|  
+|[ASP.NET 5 應用程式到新的資料庫](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|描述如何使用 Entity Framework 7，建立新的 ASP.NET 5 應用程式。|  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
+## <a name="see-also"></a>另請參閱  
+ [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

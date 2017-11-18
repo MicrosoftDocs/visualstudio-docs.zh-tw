@@ -1,54 +1,56 @@
 ---
-title: "__proto__ 屬性 (Object) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "__proto__"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "__proto__ 屬性 (Object) (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: __proto__
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 97c3f84d-125e-4905-b921-b021264964ee
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e38669c400acba6f4ed3c4ee3fb5836c31b1bc00
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# __proto__ 屬性 (Object) (JavaScript)
-包含指定之物件內部原型的參考。  
+# <a name="proto-property-object-javascript"></a>__proto__屬性 (Object) (JavaScript)
+包含指定之物件的內部原型的參考。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 object.__proto__  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `object`  
- 必要項。  要在其上設定原型的物件。  
+ 必要項。 要設定的原型物件。  
   
-## 備註  
- `__proto__` 屬性可用來設定物件的原型。  
+## <a name="remarks"></a>備註  
+ `__proto__`屬性可以用來設定物件的原型。  
   
- 物件或函式會繼承新原型的所有方法和屬性，以及在新原型的原型鏈結中的所有方法和屬性。  物件只能有一個原型 \(不包括原型鏈結中的繼承原型\)，因此在呼叫 `__proto__` 屬性時，您會取代上一個原型。  
+ 物件或函式會繼承所有方法和屬性以及所有方法和屬性的新原型的原型鏈結中的新原型。 物件可以有只有單一的原型 （不包括繼承的原型的原型鏈結中），因此當您呼叫`__proto__`屬性，取代先前的原型。  
   
- 您只能對可延伸物件設定原型。  如需詳細資訊，請參閱 [Object.preventExtensions 函式](../../javascript/reference/object-preventextensions-function-javascript.md)。  
+ 您可以只在可延伸的物件上設定原型。 如需詳細資訊，請參閱[Object.preventExtensions 函式](../../javascript/reference/object-preventextensions-function-javascript.md)。  
   
 > [!NOTE]
->  `__proto__` 屬性名稱的開頭和結尾是兩個底線。  
+>  `__proto__`屬性名稱開頭和結尾是兩個底線。  
   
-## 範例  
- 下列程式碼範例會示範如何設定物件的原型。  
+## <a name="example"></a>範例  
+ 下列程式碼範例示範如何設定物件的原型。  
   
-```javascript  
+```JavaScript  
 function Rectangle() {  
 }  
   
@@ -61,10 +63,10 @@ if (console && console.log) {
 }  
 ```  
   
-## 範例  
- 下列程式碼範例會示範如何藉由將屬性加入至原型，將屬性加入至物件。  
+## <a name="example"></a>範例  
+ 下列程式碼範例示範如何透過將屬性新增至原則，以將屬性新增至物件。  
   
-```javascript  
+```JavaScript  
 var proto = { y: 2 };  
   
 var obj = { x: 10 };  
@@ -80,10 +82,10 @@ if (console && console.log) {
 }  
 ```  
   
-## 範例  
- 下列程式碼範例會在 `String` 物件上設定新原型，將屬性加入至這個物件。  
+## <a name="example"></a>範例  
+ 下列程式碼範例會將屬性新增至 `String` 物件，方法是對此物件設定新原型。  
   
-```javascript  
+```JavaScript  
 var stringProp = { desc: "description" };  
   
 String.__proto__ = stringProp;  
@@ -104,8 +106,8 @@ if (console && console.log) {
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## 請參閱  
- [原型與原型繼承](../../javascript/advanced/prototypes-and-prototype-inheritance.md)
+## <a name="see-also"></a>另請參閱  
+ [原型和原型繼承](../../javascript/advanced/prototypes-and-prototype-inheritance.md)

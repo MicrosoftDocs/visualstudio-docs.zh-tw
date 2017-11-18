@@ -1,48 +1,49 @@
 ---
-title: "lastParen 屬性 ($+) (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$+"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "lastParen 屬性 ($+)"
+title: "lastParen 屬性 （$ +） (RegExp) (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $+
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: lastParen property ($+)
 ms.assetid: 18aca591-a97a-48da-8b06-422346804b16
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 059cfc6556873d770798eff59bf7415426526626
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# lastParen 屬性 ($+) (RegExp) (JavaScript)
-利用規則運算式搜尋比對，傳回最後一個括住的子相符項目 \(如果有的話\)。  唯讀。  
+# <a name="lastparen-property--regexp-javascript"></a>lastParen 屬性 ($+) (RegExp) (JavaScript)
+如果有的話，請從任何規則運算式搜尋，傳回最後的括號括住子相符項目。 唯讀。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 RegExp.lastParen  
 ```  
   
-## 備註  
- 與這個屬性相關聯的物件一律為 `RegExp` 物件。  
+## <a name="remarks"></a>備註  
+ 這個屬性與關聯的物件永遠是全域`RegExp`物件。  
   
- `lastParen` 屬性的初始值是空字串。  每次比對成功時，`lastParen` 屬性的值就會變更。  
+ 初始值`lastParen`屬性為空字串。 值`lastParen`屬性變更時比對成功。  
   
-## 範例  
- 下列範例說明 `lastParen` 屬性的使用方式：  
+## <a name="example"></a>範例  
+ 下面範例會說明 `lastParen` 屬性的使用：  
   
-```javascript  
+```JavaScript  
 // Create the regular expression pattern.  
 var re = new RegExp("d(b+)(d)","ig");  
 var str = "cdbBdbsbdbdz";  
@@ -64,16 +65,16 @@ s += "lastParen: " + RegExp.lastParen + "<br />";
 document.write(s);  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
- **適用於**：[RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
+ **適用於**: [RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
   
-## 請參閱  
- [$1...$9 屬性 \(RegExp\)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
- [index 屬性 \(RegExp\)](../../javascript/reference/index-property-regexp-javascript.md)   
- [input 屬性 \($\_\) \(RegExp\)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
- [lastIndex 屬性 \(RegExp\)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
- [lastMatch 屬性 \($&\) \(RegExp\)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
- [leftContext 屬性 \($\`\) \(RegExp\)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
- [rightContext 屬性 \($'\) \(RegExp\)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [$1...$9 屬性 (RegExp)](../../javascript/reference/dollar-1-dot-dot-dot-dollar-9-properties-regexp-javascript.md)   
+ [索引屬性 (RegExp)](../../javascript/reference/index-property-regexp-javascript.md)   
+ [input 屬性 ($_) (RegExp)](../../javascript/reference/input-property-dollar-regexp-javascript.md)   
+ [lastIndex 屬性 (RegExp)](../../javascript/reference/lastindex-property-regexp-javascript.md)   
+ [lastMatch 屬性 ($&) (RegExp)](../../javascript/reference/lastmatch-property-dollar-regexp-javascript.md)   
+ [leftContext 屬性 ($') (RegExp)](../../javascript/reference/leftcontext-property-dollar-grave-regexp-javascript.md)   
+ [rightContext 屬性 ($') (RegExp)](../../javascript/reference/rightcontext-property-dollar-regexp-javascript.md)

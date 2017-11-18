@@ -1,41 +1,42 @@
 ---
-title: "使用 SuppressMessage 屬性隱藏警告 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VC.Project.VCFxCopTool.InputAssemblyFileName"
-  - "VC.Project.VCFxCopTool.FxCopModuleSuppressionsFile"
-  - "VC.Project.VCFxCopTool.FxCopUseTypeNameInSuppression"
-  - "VC.Project.VCFxCopTool.OutputFile"
-helpviewer_keywords: 
-  - "程式碼分析, 來源隱藏"
-  - "程式碼分析, SuppressMessage 屬性"
-  - "來源隱藏"
-  - "SuppressMessage 屬性"
+title: "使用 SuppressMessage 屬性隱藏警告 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VC.Project.VCFxCopTool.InputAssemblyFileName
+- VC.Project.VCFxCopTool.FxCopModuleSuppressionsFile
+- VC.Project.VCFxCopTool.FxCopUseTypeNameInSuppression
+- VC.Project.VCFxCopTool.OutputFile
+helpviewer_keywords:
+- code analysis, source suppression
+- source suppression
+- SuppressMessage attribute
+- code analysis, SuppressMessage attribute
 ms.assetid: a38c57a2-d29d-43c0-84ff-3308b2484ce6
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用 SuppressMessage 屬性隱藏警告
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指出某個警告不適用，讓小組成員知道程式碼已經過檢閱並且被判定為應該隱藏的警告，通常是很有效的作法。  原始檔中隱藏項目 \(In Source Suppression，ISS\) 可以讓開發人員在接近產生警告的位置放置會隱藏警告的屬性 \(Attribute\)。  您可以直接將 ISS 屬性加入到原始程式檔，也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中的捷徑功能表。  
+# <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>使用 SuppressMessage 屬性隱藏警告
+通常會很有用，表示這項警告是 nonapplicable，讓小組成員知道此程式碼已檢閱，並發現，應該隱藏的警告。 在 原始檔 (ISS) 可讓開發人員將會隱藏的警告接近產生警告的位置的屬性。 您可以將 ISS 屬性直接加入原始程式檔，或者您可以使用中的捷徑功能表[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
   
 |||  
 |-|-|  
-|[原始檔中隱藏項目概觀](../code-quality/in-source-suppression-overview.md)|了解 ISS 以及如何在程式碼中使用它。|  
-|[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|了解如何使用捷徑功能表來隱藏 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中的警告。|  
+|[原始檔中隱藏項目概觀](../code-quality/in-source-suppression-overview.md)|深入了解 ISS 以及如何在您的程式碼中使用它。|  
+|[如何：使用功能表項目隱藏警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)|了解如何隱藏警告中的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE 使用捷徑功能表。|  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

@@ -1,51 +1,52 @@
 ---
-title: "CA2006：使用 SafeHandle 封裝原生資源 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2006"
-  - "UseSafeHandleToEncapsulateNativeResources"
-helpviewer_keywords: 
-  - "UseSafeHandleToEncapsulateNativeResources"
-  - "CA2006"
+title: "CA2006： 使用 SafeHandle 封裝原生資源 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2006
+- UseSafeHandleToEncapsulateNativeResources
+helpviewer_keywords:
+- UseSafeHandleToEncapsulateNativeResources
+- CA2006
 ms.assetid: a71950bd-bcc1-463d-b1f2-5233bc451456
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b83aec0a44e0762ed2d65f9bbbd39318b1b1b942
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2006：使用 SafeHandle 封裝原生資源
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006：使用 SafeHandle 封裝原生資源
 |||  
 |-|-|  
-|型別名稱|UseSafeHandleToEncapsulateNativeResources|  
+|TypeName|UseSafeHandleToEncapsulateNativeResources|  
 |CheckId|CA2006|  
 |分類|Microsoft.Reliability|  
-|中斷變更|中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- Managed 程式碼使用 <xref:System.IntPtr> 存取原生資源。  
+## <a name="cause"></a>原因  
+ Managed 程式碼使用<xref:System.IntPtr>存取原生資源。  
   
-## 規則描述  
- 在 Managed 程式碼中使用 `IntPtr` 可能會有潛在的安全性和可靠性問題。  對於 `IntPtr` 的所有使用情況，都必須檢閱以判斷是否需要在該處使用 <xref:System.Runtime.InteropServices.SafeHandle> 或類似技術。  如果 `IntPtr` 代表某些應是 Managed 程式碼擁有的原生資源 \(例如記憶體、檔案控制代碼或通訊端\) 時，便會發生問題。  如果 Managed 程式碼擁有資源，它也必須釋放與其相關聯的原生資源，因為若無法執行這項作業就會造成資源流失。  
+## <a name="rule-description"></a>規則描述  
+ 使用`IntPtr`在 managed 程式碼可能表示有潛在的安全性和可靠性問題。 所有使用`IntPtr`必須檢視，以決定是否使用<xref:System.Runtime.InteropServices.SafeHandle>，或類似的技術，需要在該處。 如果將會發生問題`IntPtr`代表某些原生資源，例如記憶體、 檔案控制代碼或通訊端，managed 程式碼會被視為擁有。 如果 managed 程式碼擁有的資源，它也必須釋放與它相關聯的原生資源因為若要這樣做會造成資源流失。  
   
- 在這類案例中，如果允許對 `IntPtr` 進行多執行緒存取，而又提供釋放 `IntPtr` 所表示之資源的方法，也會存在安全性和可靠性問題。  在另一個執行緒上正在使用資源的同時釋放該資源的情況下，這些問題牽涉到 `IntPtr` 值的回收。  這可能會造成競爭條件，使其中一個執行緒可以讀取或寫入與錯誤資源相關聯的資料。  例如，若您的型別將 OS 控制代碼儲存為 `IntPtr`，並且允許使用者使用該控制代碼同時呼叫 **Close** 和任何其他方法 \(未經同步處理\)，則您的程式碼會有控制代碼回收問題。  
+ 在這種情況下，安全性或可靠性會也存在問題如果允許多執行緒的存取`IntPtr`和釋出資源所代表的方式`IntPtr`提供。 這些問題牽涉到回收`IntPtr`時正在進行另一個執行緒上同時使用的資源，資源釋放值。 這可能會造成競爭情形，其中一個執行緒可以讀取或寫入錯誤的資源相關聯的資料。 例如，如果您的型別會儲存為將 OS 控制代碼`IntPtr`並允許使用者同時呼叫**關閉**和任何其他方法，會使用該控制代碼，同時並沒有某種類型的同步處理，您的程式碼已回收的控制代碼發生問題。  
   
- 這個控制代碼回收問題可能導致資料損毀，並經常導致安全性弱點。  `SafeHandle` 和其同層級類別 <xref:System.Runtime.InteropServices.CriticalHandle> 提供機制，將原生控制代碼封裝到資源，以便能夠避免這類執行緒的問題。  此外，您還可以將 `SafeHandle` 及其同層級類別 `CriticalHandle` 用於處理其他執行緒問題，例如，對包含呼叫原生方法之原生控制代碼複本的 Managed 物件，小心控制它們的存留期 \(Lifetime\)。  在此情況下，您通常可以移除對 `GC.KeepAlive` 的呼叫。  當您使用 `SafeHandle` 時造成的效能負荷 \(使用 `CriticalHandle` 的情況會稍微好一些\)，通常可以透過小心設計來減輕。  
+ 此回收問題的控制代碼可能會導致資料損毀，通常有安全性弱點。 `SafeHandle`和其同層級類別<xref:System.Runtime.InteropServices.CriticalHandle>提供機制來封裝資源的原生控制代碼，讓您可以避免這類執行緒的問題。 此外，您可以使用`SafeHandle`和其同層級類別`CriticalHandle`的其他執行緒的問題，例如，若要小心控制對原生方法的呼叫中包含的原生控制代碼複本的 managed 物件的存留期。 在此情況下，您經常可以移除呼叫`GC.KeepAlive`。 當您使用您帶來的效能負擔 thay`SafeHandle`和壓縮的程度， `CriticalHandle`，通常可以透過謹慎設計降低。  
   
-## 如何修正違規  
- 將 `IntPtr` 用法轉換成 `SafeHandle`，以便安全地管理原生資源的存取。  如需範例，請參閱 <xref:System.Runtime.InteropServices.SafeHandle> 參考主題。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 轉換`IntPtr`使用量`SafeHandle`，安全管理原生資源的存取權。 請參閱<xref:System.Runtime.InteropServices.SafeHandle>參考主題的範例。  
   
-## 隱藏警告的時機  
- 您不應該隱藏這項警告。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 您不應該隱藏這個警告。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IDisposable>

@@ -1,11 +1,10 @@
 ---
-title: 'CA2116: APTCA methods should only call APTCA methods | Microsoft Docs'
+title: "CA2116: APTCA 方法應該只呼叫 APTCA 方法 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,87 +14,72 @@ helpviewer_keywords:
 - AptcaMethodsShouldOnlyCallAptcaMethods
 - CA2116
 ms.assetid: 8b91637e-891f-4dde-857b-bf8012270ec4
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: c3e531c91ec7a321c7ddc1130df7a0e8efa7323c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: APTCA methods should only call APTCA methods
+# <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法應該只呼叫 APTCA 方法
 |||  
 |-|-|  
 |TypeName|AptcaMethodsShouldOnlyCallAptcaMethods|  
 |CheckId|CA2116|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A method in an assembly with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribute calls a method in an assembly that does not have the attribute.  
+## <a name="cause"></a>原因  
+ 中的組件的方法<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性沒有屬性的組件中呼叫的方法。  
   
-## <a name="rule-description"></a>Rule Description  
- By default, public or protected methods in assemblies with strong names are implicitly protected by a [Link Demands](/dotnet/framework/misc/link-demands) for full trust; only fully trusted callers can access a strong-named assembly. Strong-named assemblies marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute do not have this protection. The attribute disables the link demand, making the assembly accessible to callers that do not have full trust, such as code executing from an intranet or the Internet.  
+## <a name="rule-description"></a>規則描述  
+ 根據預設，公用或受保護的方法，以強式名稱組件中會以隱含方式受到[連結要求](/dotnet/framework/misc/link-demands)完全信任。 只有完全受信任的呼叫端可以存取的強式名稱組件。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用連結需求，讓呼叫端沒有完全信任，例如從近端內部網路或網際網路執行的程式碼可以存取組件。  
   
- When the APTCA attribute is present on a fully trusted assembly, and the assembly executes code in another assembly that does not allow partially trusted callers, a security exploit is possible. If two methods `M1` and `M2` meet the following conditions, malicious callers can use the method `M1` to bypass the implicit full trust link demand that protects `M2`:  
+ 當 APTCA 屬性完全受信任的組件，並且組件中不允許部分信任呼叫端的另一個組件中執行程式碼時，就可以 安全性弱點攻擊。 如果兩個方法`M1`和`M2`符合下列條件，惡意呼叫端可以使用此方法`M1`略過隱含完全信任的連結要求保護`M2`:  
   
--   `M1` is a public method declared in a fully trusted assembly that has the APTCA attribute.  
+-   `M1`具有 APTCA 屬性的完全信任組件中宣告的公用方法。  
   
--   `M1` calls a method `M2` outside `M1`'s assembly.  
+-   `M1`呼叫的方法`M2`外`M1`的組件。  
   
--   `M2`'s assembly does not have the APTCA attribute and, therefore, should not be executed by or on behalf of callers that are partially trusted.  
+-   `M2`組件沒有 APTCA 屬性，因此，不應執行的身分或代表部分信任的呼叫端。  
   
- A partially trusted caller `X` can call method `M1`, causing `M1` to call `M2`. Because `M2` does not have the APTCA attribute, its immediate caller (`M1`) must satisfy a link demand for full trust; `M1` has full trust and therefore satisfies this check. The security risk is because `X` does not participate in satisfying the link demand that protects `M2` from untrusted callers. Therefore, methods with the APTCA attribute must not call methods that do not have the attribute.  
+ 部分信任呼叫端`X`可以呼叫方法`M1`，因而導致`M1`呼叫`M2`。 因為`M2`沒有 APTCA 屬性，其立即呼叫端 (`M1`) 必須滿足連結要求完全信任。`M1`具有完全信任，因此會滿足這項檢查。 安全性風險是因為`X`不會參與滿足連結要求保護`M2`來自不受信任的呼叫端。 因此，使用 APTCA 屬性的方法不可以呼叫不具有屬性的方法。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- If the APCTA attribute is required, use a demand to protect the method that calls into the full trust assembly. The exact permissions you demand will depend on the functionality exposed by your method. If it is possible, protect the method with a demand for full trust to ensure that the underlying functionality is not exposed to partially trusted callers. If this is not possible, select a set of permissions that effectively protects the exposed functionality. For more information about demands, see [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48).  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 如果需要 APCTA 屬性，使用需求來保護完全信任組件呼叫的方法。 您的需求將取決於您的方法所公開的功能完全權限。 如果可能的話，保護具有完全信任，以確保基礎功能，不會公開給部分信任呼叫端要求的方法。 如果不可行，請選取一組權限可有效保護公開的功能。 如需有關需求的詳細資訊，請參閱[要求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- To safely suppress a warning from this rule, you must ensure that the functionality exposed by your method does not directly or indirectly allow callers to access sensitive information, operations, or resources that can be used in a destructive manner.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 若要安全地隱藏此規則的警告，您必須確定，您的方法所公開的功能不會直接或間接允許來電者存取機密資訊、 作業或資源，可用於破壞性的方式。  
   
-## <a name="example"></a>Example  
- The following example uses two assemblies and a test application to illustrate the security vulnerability detected by this rule. The first assembly does not have the APTCA attribute and should not be accessible to partially trusted callers (represented by `M2` in the previous discussion).  
+## <a name="example"></a>範例  
+ 下列範例會使用兩個組件和測試應用程式，說明這個規則偵測到的安全性弱點。 第一個組件並沒有 APTCA 屬性，而不應存取部分信任呼叫端 (由`M2`在先前的討論內容)。  
   
  [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]  
   
-## <a name="example"></a>Example  
- The second assembly is fully trusted and allows partially trusted callers (represented by `M1` in the previous discussion).  
+## <a name="example"></a>範例  
+ 第二個組件是完全受信任，並允許部分信任呼叫端 (由`M1`在先前的討論內容)。  
   
  [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]  
   
-## <a name="example"></a>Example  
- The test application (represented by `X` in the previous discussion) is partially trusted.  
+## <a name="example"></a>範例  
+ 測試應用程式 (由`X`在先前的討論內容) 受到部分信任。  
   
  [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **Demand for full trust:Request failed.**  
-**ClassRequiringFullTrust.DoWork was called.**   
-## <a name="related-rules"></a>Related Rules  
- [CA2117: APTCA types should only extend APTCA base types](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
+ **要求完全信任： 要求失敗。**  
+**呼叫 ClassRequiringFullTrust.DoWork。**   
+## <a name="related-rules"></a>相關的規則  
+ [CA2117：APTCA 類型應該只擴充 APTCA 基底類型](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)  
   
-## <a name="see-also"></a>See Also  
- [Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET Framework Assemblies Callable by Partially Trusted Code](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
- [Using Libraries from Partially Trusted Code](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [Demands](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+## <a name="see-also"></a>另請參閱  
+ [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
+ [.NET framework 組件可由部分信任程式碼](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
+ [從部分受信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
+ [要求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
+ [連結要求](/dotnet/framework/misc/link-demands)   
+ [資料與模型化](/dotnet/framework/data/index)

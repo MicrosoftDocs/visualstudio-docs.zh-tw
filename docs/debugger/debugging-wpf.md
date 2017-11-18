@@ -1,39 +1,40 @@
 ---
-title: "偵錯 WPF | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯, WPF"
-  - "WPF, 偵錯"
+title: "偵錯 WPF |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- WPF, debugging
+- debugging, WPF
 ms.assetid: 7948e8a6-40b2-4ebb-8461-e220a9e78cd7
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 02eeb34427c6742847aef4035aef428838cc0e23
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯 WPF
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-wpf"></a>偵錯 WPF
 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 提供了額外的功能，可讓 WPF 應用程式偵錯變得更輕鬆。  
   
-## 相關主題  
+## <a name="related-topics"></a>相關主題  
   
 |標題|說明|  
-|--------|--------|  
-|[如何：使用 WPF 樹狀架構視覺化檢視](../debugger/how-to-use-the-wpf-tree-visualizer.md)|您可以使用 \[WPF 樹狀架構視覺化檢視\] 瀏覽 WPF 物件的視覺化樹狀結構，以及檢視該樹狀結構中物件的 WPF 相依性屬性。  本主題描述 \[WPF 樹狀架構視覺化檢視\] 的使用者介面。|  
-|[如何：顯示 WPF 追蹤資訊](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可以從 WPF 應用程式接收偵錯追蹤資訊，並將該資訊顯示在 \[**輸出**\] 視窗中。  此主題描述如何啟用和自訂 WPF 追蹤資訊的顯示。|  
+|-----------|-----------------|  
+|[如何：使用 WPF 樹狀架構視覺化檢視](../debugger/how-to-use-the-wpf-tree-visualizer.md)|您可以使用 [WPF 樹狀架構視覺化檢閱] 瀏覽 WPF 物件的視覺化樹狀，以及檢閱該樹狀中物件的 WPF 相依性屬性。 本主題描述 [WPF 樹狀架構視覺化檢閱] 的使用者介面。|  
+|[如何：顯示 WPF 追蹤資訊](../debugger/how-to-display-wpf-trace-information.md)|[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]可以從 WPF 應用程式接收偵錯追蹤資訊，並顯示該資訊**輸出**視窗。 此主題描述如何啟用和自訂 WPF 追蹤資訊的顯示。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)

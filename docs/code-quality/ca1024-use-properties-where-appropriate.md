@@ -1,11 +1,10 @@
 ---
-title: 'CA1024: Use properties where appropriate | Microsoft Docs'
+title: "CA1024： 在適當時使用屬性 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,75 +14,60 @@ helpviewer_keywords:
 - CA1024
 - UsePropertiesWhereAppropriate
 ms.assetid: 3a04f765-af7c-4872-87ad-9cc29e8e657f
-caps.latest.revision: 21
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1a7ce15f3b5fbdb759733250467a928715f6fedf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 42fb569dbf469ed91f96b25818b717353d53bf0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Use properties where appropriate
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024：建議在適當時使用屬性
 |||  
 |-|-|  
 |TypeName|UsePropertiesWhereAppropriate|  
 |CheckId|CA1024|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected method has a name that starts with `Get`, takes no parameters, and returns a value that is not an array.  
+## <a name="cause"></a>原因  
+ 公用或受保護的方法有名稱開頭為`Get`、 不採用任何參數和傳回值，不是陣列。  
   
-## <a name="rule-description"></a>Rule Description  
- In most cases, properties represent data and methods perform actions. Properties are accessed like fields, which makes them easier to use. A method is a good candidate to become a property if one of these conditions is present:  
+## <a name="rule-description"></a>規則描述  
+ 在大部分情況下，內容表示資料，方法會執行動作。 屬性存取欄位，使其更容易使用類似。 方法是成為屬性，如果其中一種情形存在的良好候選項目：  
   
--   Takes no arguments and returns the state information of an object.  
+-   不接受引數，並傳回物件的狀態資訊。  
   
--   Accepts a single argument to set some part of the state of an object.  
+-   接受單一引數來設定物件狀態的某些部分。  
   
- Properties should behave as if they are fields; if the method cannot, it should not be changed to a property. Methods are better than properties in the following situations:  
+ 屬性應有的行為如同這些欄位。如果方法無法處理，它應該不會變更的屬性。 方法會比在下列情況中的屬性：  
   
--   The method performs a time-consuming operation. The method is perceivably slower than the time that is required to set or get the value of a field.  
+-   此方法會執行耗時的作業。 這個方法是設定或取得欄位的值所需的時間比感覺。  
   
--   The method performs a conversion. Accessing a field does not return a converted version of the data that it stores.  
+-   此方法會執行轉換。 存取欄位不會傳回儲存的資料轉換的版本。  
   
--   The Get method has an observable side effect. Retrieving the value of a field does not produce any side effects.  
+-   Get 方法有副作用。 擷取欄位的值不會產生任何副作用。  
   
--   The order of execution is important. Setting the value of a field does not rely on the occurrence of other operations.  
+-   執行的順序很重要。 設定欄位的值不會依賴其他作業的相符項目。  
   
--   Calling the method two times in succession creates different results.  
+-   連續兩次呼叫方法會建立不同的結果。  
   
--   The method is static but returns an object that can be changed by the caller. Retrieving the value of a field does not allow the caller to change the data that is stored by the field.  
+-   方法是靜態的但是會傳回呼叫者可以變更的物件。 擷取欄位的值不允許呼叫端將變更儲存欄位的資料。  
   
--   The method returns an array.  
+-   方法會傳回陣列。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the method to a property.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請將方法變更為屬性。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if the method meets at least one of the previously listed criteria.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果方法符合至少其中一個先前所列的準則，則隱藏此規則的警告。  
   
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlling Property Expansion in the Debugger  
- One reason programmers avoid using a property is because they do not want the debugger to auto-expand it. For example, the property might involve allocating a large object or calling a P/Invoke, but it might not actually have any observable side effects.  
+## <a name="controlling-property-expansion-in-the-debugger"></a>偵錯工具中控制屬性展開  
+ 程式設計人員請避免使用屬性的其中一個原因是因為不想要偵錯工具自動展開。 例如，屬性可能牽涉到配置大型物件或呼叫 P/Invoke，但它可能實際上沒有任何副作用。  
   
- You can prevent the debugger from auto-expanding properties by applying <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. The following example shows this attribute being applied to an instance property.  
+ 您可以避免在偵錯工具自動擴充屬性，藉由套用<xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>。 下列範例會示範這個屬性套用至執行個體屬性。  
   
 ```vb  
 Imports System   
@@ -132,7 +116,7 @@ namespace Microsoft.Samples
 }  
 ```  
   
-## <a name="example"></a>Example  
- The following example contains several methods that should be converted to properties, and several that should not because they do not behave like fields.  
+## <a name="example"></a>範例  
+ 下列範例包含數種方法，應該轉換成屬性，以及數個應該就不會報告它們行為不像欄位。  
   
  [!code-csharp[FxCop.Design.MethodsProperties#1](../code-quality/codesnippet/CSharp/ca1024-use-properties-where-appropriate_1.cs)]

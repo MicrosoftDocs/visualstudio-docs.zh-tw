@@ -1,11 +1,10 @@
 ---
-title: 'CA1035: ICollection implementations have strongly typed members | Microsoft Docs'
+title: "CA1035: ICollection 實作包含強類型成員 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,66 +14,51 @@ helpviewer_keywords:
 - CA1035
 - ICollectionImplementationsHaveStronglyTypedMembers
 ms.assetid: ad404eb5-cf6a-44b7-b78a-8ebfb654bc7f
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a955a69791704d9c179c53a353e08a4ad37a10c0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035: ICollection implementations have strongly typed members
+# <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035：ICollection 實作包含強類型成員
 |||  
 |-|-|  
 |TypeName|ICollectionImplementationsHaveStronglyTypedMembers|  
 |CheckId|CA1035|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected type implements <xref:System.Collections.ICollection?displayProperty=fullName> but does not provide a strongly typed method for <xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>. The strongly typed version of <xref:System.Collections.ICollection.CopyTo%2A> must accept two parameters and cannot have a <xref:System.Array?displayProperty=fullName> or an array of <xref:System.Object?displayProperty=fullName> as its first parameter.  
+## <a name="cause"></a>原因  
+ 公用或受保護的型別會實作<xref:System.Collections.ICollection?displayProperty=fullName>，但不是提供強型別的方法<xref:System.Collections.ICollection.CopyTo%2A?displayProperty=fullName>。 強類型的版本<xref:System.Collections.ICollection.CopyTo%2A>必須接受兩個參數，而且不能有<xref:System.Array?displayProperty=fullName>或陣列<xref:System.Object?displayProperty=fullName>做為其第一個參數。  
   
-## <a name="rule-description"></a>Rule Description  
- This rule requires <xref:System.Collections.ICollection> implementations to provide strongly typed members so that users are not required to cast arguments to the <xref:System.Object> type when they use the functionality that is provided by the interface. This rule assumes that the type that implements <xref:System.Collections.ICollection> does so to manage a collection of instances of a type that is stronger than <xref:System.Object>.  
+## <a name="rule-description"></a>規則描述  
+ 這項規則要求<xref:System.Collections.ICollection>實作提供強類型成員，如此使用者不需將引數轉換<xref:System.Object>輸入使用介面所提供的功能時。 這項規則假設的實作類型<xref:System.Collections.ICollection>因此來管理比更強型別的執行個體的集合<xref:System.Object>。  
   
- <xref:System.Collections.ICollection> implements the <xref:System.Collections.IEnumerable?displayProperty=fullName> interface. If the objects in the collection extend <xref:System.ValueType?displayProperty=fullName>, you must provide a strongly typed member for <xref:System.Collections.IEnumerable.GetEnumerator%2A> to avoid the decrease in performance that is caused by boxing. This is not required when the objects of the collection are a reference type.  
+ <xref:System.Collections.ICollection> 會實作 <xref:System.Collections.IEnumerable?displayProperty=fullName> 介面。 如果集合中的物件延伸<xref:System.ValueType?displayProperty=fullName>，您必須提供強類型的成員<xref:System.Collections.IEnumerable.GetEnumerator%2A>以避免 boxing 所造成的效能降低。 當集合的物件參考型別時，這是不需要。  
   
- To implement a strongly typed version of an interface member, implement the interface members explicitly by using names in the form `InterfaceName.InterfaceMemberName`, such as <xref:System.Collections.ICollection.CopyTo%2A>. The explicit interface members use the data types that are declared by the interface. Implement the strongly typed members by using the interface member name, such as <xref:System.Collections.ICollection.CopyTo%2A>. Declare the strongly typed members as public, and declare parameters and return values to be of the strong type that is managed by the collection. The strong types replace weaker types such as <xref:System.Object> and <xref:System.Array> that are declared by the interface.  
+ 若要實作介面成員的強類型的版本，來實作介面成員明確地在表單中使用名稱`InterfaceName.InterfaceMemberName`，例如<xref:System.Collections.ICollection.CopyTo%2A>。 明確介面成員會使用介面所宣告的資料類型。 實作強類型的成員所使用的介面成員名稱，例如<xref:System.Collections.ICollection.CopyTo%2A>。 宣告為公用，強類型的成員宣告的參數和傳回值都由集合所管理的強型別。 強式型別取代較弱的類型例如<xref:System.Object>和<xref:System.Array>介面所宣告的。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the interface member explicitly (declare it as <xref:System.Collections.ICollection.CopyTo%2A>). Add the public strongly typed member, declared as `CopyTo`, and have it take a strongly typed array as its first parameter.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，實作介面成員明確 (將它宣告為<xref:System.Collections.ICollection.CopyTo%2A>)。 新增公用的強類型的成員，宣告為`CopyTo`，並且做為其第一個參數的強類型的陣列。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if you implement a new object-based collection, such as a binary tree, where types that extend the new collection determine the strong type. These types should comply with this rule and expose strongly typed members.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果您實作新的物件架構集合，例如二進位樹狀目錄中，擴充新集合的型別決定強型別，則隱藏此規則的警告。 這些類型應該符合此規則，並公開強類型的成員。  
   
-## <a name="example"></a>Example  
- The following example demonstrates the correct way to implement <xref:System.Collections.ICollection>.  
+## <a name="example"></a>範例  
+ 下列範例會示範正確的方式來實作<xref:System.Collections.ICollection>。  
   
  [!code-csharp[FxCop.Design.ICollectionStrongTypes#1](../code-quality/codesnippet/CSharp/ca1035-icollection-implementations-have-strongly-typed-members_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1038: Enumerators should be strongly typed](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1038：列舉程式應該是強類型](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
- [CA1039: Lists are strongly typed](../code-quality/ca1039-lists-are-strongly-typed.md)  
+ [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   

@@ -1,42 +1,40 @@
 ---
-title: "逐步解說：在設計階段進行偵錯 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "中斷點, 設計階段偵錯"
-  - "偵錯 [Visual Studio], 設計階段"
-  - "設計階段偵錯"
-  - "即時運算視窗, 設計階段偵錯"
+title: "逐步解說： 在設計階段偵錯 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+helpviewer_keywords:
+- debugging [Visual Studio], design-time
+- breakpoints, design-time debugging
+- Immediate window, design-time debugging
+- design-time debugging
 ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
-caps.latest.revision: 20
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1d497535f8511c3f9e6c55e80157507ed36184b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 逐步解說：在設計階段進行偵錯
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-應用程式沒有在執行時，您可以使用 Visual Studio \[**即時運算**\] 視窗來執行函式或副程式。  如果函式或副程式含有中斷點，Visual Studio 就會在適當的點中斷執行。  然後，您就可以使用偵錯工具視窗來檢查程式的狀態。  這個功能在設計階段稱為偵錯。  
+# <a name="walkthrough-debugging-at-design-time"></a>逐步解說：在設計階段進行偵錯
+您可以使用 Visual Studio**即時運算**視窗執行函式或副程式時不執行您的應用程式。 如果函式或副程式包含中斷點，Visual Studio 會在適當處中斷執行。 您接著可以使用偵錯工具視窗檢查程式狀態。 這項功能稱為設計階段偵錯。  
   
- 下列程序向您示範如何使用這個功能。  
+ 下列程序示範如何使用這項功能。  
   
-### 若要從即時運算視窗叫用中斷點  
+### <a name="to-hit-breakpoints-from-the-immediate-window"></a>若要叫用中斷點，從即時運算視窗  
   
 1.  將下列程式碼貼到 Visual Basic 主控台應用程式：  
   
@@ -62,24 +60,24 @@ caps.handback.revision: 20
     End Module  
     ```  
   
-2.  在顯示 `s="Add BreakPoint Here"` 的那一行設定中斷點。  
+2.  讀取的行上設定中斷點`s="Add BreakPoint Here"`。  
   
-3.  在下列 \[**即時運算**\] 視窗中輸入：`?MyFunction<enter>`  
+3.  輸入中的下列**即時運算**視窗：`?MyFunction<enter>`  
   
-4.  確認已叫用中斷點，並且呼叫堆疊是正確的。  
+4.  請確認，叫用中斷點，和呼叫堆疊正確無誤。  
   
-5.  在 \[**偵錯**\] 功能表上，按一下 \[**繼續**\]，並確認您仍在設計模式中。  
+5.  在**偵錯**功能表上，按一下 **繼續**，並確認您是否仍在設計模式。  
   
-6.  在下列 \[**即時運算**\] 視窗中輸入：`?MyFunction<enter>`  
+6.  輸入中的下列**即時運算**視窗：`?MyFunction<enter>`  
   
-7.  在 \[**即時運算**\] 視窗中輸入下列：`?MySub<enter>`  
+7.  輸入中的下列**即時運算**視窗：`?MySub<enter>`  
   
-8.  確認已叫用中斷點，並檢查 \[**區域變數**\] 視窗中靜態變數 `i` 的值。  該變數的值應該是 3。  
+8.  請確定您叫用中斷點，然後檢查靜態變數的值`i`中**區域變數**視窗。 它應該有值為 3。  
   
-9. 確認呼叫堆疊是正確的。  
+9. 驗證正確的呼叫堆疊。  
   
-10. 在 \[**偵錯**\] 功能表上，按一下 \[**繼續**\]，並確認您仍在設計模式中。  
+10. 在**偵錯**功能表上，按一下 **繼續**，並確認您是否仍在設計模式。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯工具基礎](../debugger/debugger-basics.md)

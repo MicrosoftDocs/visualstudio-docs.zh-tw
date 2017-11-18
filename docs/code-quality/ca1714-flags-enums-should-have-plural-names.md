@@ -1,56 +1,56 @@
 ---
-title: "CA1714：旗標列舉應該使用複數名稱 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "FlagsEnumsShouldHavePluralNames"
-  - "CA1714"
-helpviewer_keywords: 
-  - "CA1714"
-  - "FlagsEnumsShouldHavePluralNames"
+title: ": Ca1714 旗標列舉應該使用複數名稱 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- FlagsEnumsShouldHavePluralNames
+- CA1714
+helpviewer_keywords:
+- CA1714
+- FlagsEnumsShouldHavePluralNames
 ms.assetid: 95ef5b43-7681-49e9-a5a3-ac0357cf1be7
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b83cb82dab5f723c656b51a5322df7d7aad4570c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1714：旗標列舉應該使用複數名稱
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714：旗標列舉應該使用複數名稱
 |||  
 |-|-|  
-|型別名稱|FlagsEnumsShouldHavePluralNames|  
+|TypeName|FlagsEnumsShouldHavePluralNames|  
 |CheckId|CA1714|  
 |分類|Microsoft.Naming|  
 |中斷變更|中斷|  
   
-## 原因  
- 公用的 \(Public\) 列舉型別 \(Enumeration\) 具有 <xref:System.FlagsAttribute?displayProperty=fullName>，而且其名稱不能以 's' 做結尾。  
+## <a name="cause"></a>原因  
+ 公用列舉型別的<xref:System.FlagsAttribute?displayProperty=fullName>其名稱結尾不是和中的 '。  
   
-## 規則描述  
- 以 <xref:System.FlagsAttribute> 標記的型別擁有複數形的名稱，因為這個屬性表示可以指定一個以上的值。  例如，定義該星期之天數的列舉型別可能適用於可以指定不只一天的應用程式。  這個列舉型別應該有 <xref:System.FlagsAttribute>，而其名稱可能是 'Days'。  只能指定一天的類似列舉型別不會有這個屬性，而且名稱可能是 'Day'。  
+## <a name="rule-description"></a>規則描述  
+ 與標記的型別<xref:System.FlagsAttribute>為複數，因為此屬性會指出，可以指定多個值的名稱。 例如，定義一周天數的列舉可能被適用於應用程式中您可以在此指定多天。 這個列舉型別應該具有<xref:System.FlagsAttribute>和天' 呼叫。 類似的列舉型別，可讓某一天指定沒有屬性，且可能 ' day '。  
   
- 命名慣例會為針對 Common Language Runtime 的程式庫提供通用的外觀。  如此可縮短新軟體程式庫的學習過程，並讓客戶深信程式庫是由學有專長的人員以不斷開發的 Managed 程式碼開發而成。  
+ 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。  
   
-## 如何修正違規  
- 請將列舉型別的名稱變成複數詞，而如果不可同時指定多個列舉值，則請移除 <xref:System.FlagsAttribute> 屬性。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 讓列舉型別的名稱複數單字，或移除<xref:System.FlagsAttribute>屬性如果不能同時指定多個列舉值。  
   
-## 隱藏警告的時機  
- 如果名稱是複數詞但不是以 's' 結尾，您可以放心地隱藏違規。  例如，如果前述的多天列舉名稱為 'DaysOfTheWeek'，雖然這違反了規則的邏輯，但卻不是它的意圖。  這種違規應該隱藏起來。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它是以隱藏違規情形，如果名稱為複數的字，但結尾不是安全的 '。 比方說，如果先前已詳述於多天列舉已命名為 'DaysOfTheWeek'，這會違反此規則，但不是其對應方式的邏輯。 這類違規應該計數器。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1027：必須以 FlagsAttribute 標記列舉](../code-quality/ca1027-mark-enums-with-flagsattribute.md)  
   
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
- [列舉設計](../Topic/Enum%20Design.md)
+ [列舉設計](/dotnet/standard/design-guidelines/enum)

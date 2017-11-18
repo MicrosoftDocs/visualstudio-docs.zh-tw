@@ -1,65 +1,68 @@
 ---
-title: "Object.create 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "create 函式 [JavaScript]"
-  - "Object.create 函式 [JavaScript]"
+title: "Object.create 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- create function [JavaScript]
+- Object.create function [JavaScript]
 ms.assetid: 0ad31f36-a9ee-444e-b0fe-c87843d03196
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f359908c5c836743e22390580f542df27d7b98e7
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Object.create 函式 (JavaScript)
-建立具有指定之原型且選擇性包含指定之屬性的物件。  
+# <a name="objectcreate-function-javascript"></a>Object.create 函式 (JavaScript)
+建立具有指定的原型，並選擇性地包含指定之屬性的物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Object.create(prototype, descriptors)  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `prototype`  
- 必要項。  要當做原型使用的物件。  可能是 `null`。  
+ 必要項。 要做為原型的物件。 可以是 `null`。  
   
  `descriptors`  
- 選擇項。  包含一個或多個屬性描述元的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 物件。  
+ 選擇項。 A[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]物件，其中包含一或多個屬性描述項。  
   
- 「*資料屬性*」\(Data Property\) 是可以取得並設定其值的屬性。  資料屬性 \(Property\) 描述元包含 `value` 屬性 \(Attribute\)，以及 `writable`、`enumerable` 和 `configurable` 屬性 \(Attribute\)。  如果未指定最後三個屬性，則會預設為 `false`。  每當擷取或設定值時，「*存取子屬性*」\(Accessor Property\) 都會呼叫使用者提供的函式。  存取子屬性 \(Property\) 描述元包含 `set` 屬性 \(Attribute\) 或 `get` 屬性 \(Attribute\)，或兩者都包含。  如需詳細資訊，請參閱[Object.defineProperty 函式](../../javascript/reference/object-defineproperty-function-javascript.md)。  
+ 「資料屬性」是可取得和設定值的屬性。 包含資料的屬性描述元`value`屬性，加上`writable`， `enumerable`，和`configurable`屬性。 如果未指定的最後三個屬性，其預設`false`。 *存取子屬性*呼叫使用者提供函式，每次擷取或設定值。 存取子屬性描述元包含`set`屬性`get`屬性，或兩者。 如需詳細資訊，請參閱[Object.defineProperty 函式](../../javascript/reference/object-defineproperty-function-javascript.md)。  
   
-## 傳回值  
- 具有指定之內部原型且包含指定之屬性 \(如果有的話\) 的新物件。  
+## <a name="return-value"></a>傳回值  
+ 新的物件具有指定的內部原型，並包含指定的內容，如果有的話。  
   
-## 例外狀況  
- 如果下列任何一個條件成立，就會擲回 `TypeError` 例外狀況：  
+## <a name="exceptions"></a>例外狀況  
+ A`TypeError`如果下列任何一個狀況成立，會擲回例外狀況：  
   
--   `prototype` 引數既不是物件也不是 `null`。  
+-   `prototype`引數不是物件，並不是`null`。  
   
--   `descriptors` 引數中的描述元含有 `value` 或 `writable` 屬性，並且含有 `get` 或 `set` 屬性。  
+-   中的描述元`descriptors`引數必須具有`value`或`writable`屬性，且具有`get`或`set`屬性。  
   
--   `descriptors` 引數中的描述元包含不是函式的 `get` 或 `set` 屬性。  
+-   中的描述元`descriptors`引數必須具有`get`或`set`不是函式的屬性。  
   
-## 備註  
- 您可以使用這個函式並搭配 `null` `prototype` 參數以停止原型鏈結，  建立的物件就沒有原型。  
+## <a name="remarks"></a>備註  
+ 您可以使用這個函式使用`null``prototype`參數，以停止的原型鏈結。 建立的物件會有任何原型。  
   
-## 範例  
- 下列範例會使用 `null` 原型建立物件，並加入兩個 enumerable 屬性。  
+## <a name="example"></a>範例  
+ 下列範例會建立物件使用`null`原型，並將兩個可列舉屬性。  
   
-```javascript  
+```JavaScript  
 var newObj = Object.create(null, {  
             size: {  
                 value: "large",  
@@ -82,10 +85,10 @@ document.write(Object.getPrototypeOf(newObj));
   
 ```  
   
-## 範例  
- 下列範例會建立與 Object 物件具有相同內部原型的物件。  您可以看見它和使用物件常值常值建立的物件有相同的原型。  [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md) 函式會取得原始物件的原型。  若要取得物件的屬性描述元，您可以使用 [Object.getOwnPropertyDescriptor 函式](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)。  
+## <a name="example"></a>範例  
+ 下列範例會建立具有相同的內部原型為物件的物件。 您可以看到它具有的相同原型為使用物件常值所建立的物件。 [Object.getPrototypeOf](../../javascript/reference/object-getprototypeof-function-javascript.md)函式會取得原始物件的原型。 若要取得物件的屬性描述元，您可以使用[Object.getOwnPropertyDescriptor 函式](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)。  
   
-```javascript  
+```JavaScript  
 var firstLine = { x: undefined, y: undefined };  
   
 var secondLine = Object.create(Object.prototype, {  
@@ -112,10 +115,10 @@ document.write("second line prototype = " + Object.getPrototypeOf(secondLine));
 // second line prototype = [object Object]  
 ```  
   
-## 範例  
- 下列範例會建立與 Shape 物件具有相同內部原型的物件。  
+## <a name="example"></a>範例  
+ 下列範例會建立具有相同的內部原型為圖形物件的物件。  
   
-```javascript  
+```JavaScript  
   
 // Create the shape object.  
 var Shape = { twoDimensional: true, color: undefined, hasLineSegments: undefined };  
@@ -124,10 +127,10 @@ var Square = Object.create(Object.getPrototypeOf(Shape));
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Object.getPrototypeOf 函式](../../javascript/reference/object-getprototypeof-function-javascript.md)   
- [isPrototypeOf 方法 \(Object\)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
+ [isPrototypeOf 方法 (Object)](../../javascript/reference/isprototypeof-method-object-javascript.md)   
  [建立物件](../../javascript/creating-objects-javascript.md)

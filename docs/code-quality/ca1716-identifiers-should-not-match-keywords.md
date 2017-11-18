@@ -1,54 +1,55 @@
 ---
-title: "CA1716：識別項名稱不應該和關鍵字相符 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotMatchKeywords"
-  - "CA1716"
+title: "CA1716： 識別項不應該符合關鍵字 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
+helpviewer_keywords:
+- IdentifiersShouldNotMatchKeywords
+- CA1716
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
-caps.latest.revision: 21
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 619fc7867d14a26f2c3b674b4b8ac8b2d8fba114
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1716：識別項名稱不應該和關鍵字相符
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716：識別項名稱不應該和關鍵字相符
 |||  
 |-|-|  
-|型別名稱|IdentifiersShouldNotMatchKeywords|  
+|TypeName|IdentifiersShouldNotMatchKeywords|  
 |CheckId|CA1716|  
 |分類|Microsoft.Naming|  
 |中斷變更|中斷|  
   
-## 原因  
- 命名空間、型別、虛擬成員或介面成員的名稱符合程式語言中的保留關鍵字。  
+## <a name="cause"></a>原因  
+ 命名空間、 型別或 viritual 或介面成員的名稱符合程式語言中的保留的關鍵字。  
   
-## 規則描述  
- 命名空間、型別、虛擬成員及介面成員的識別項不應該符合以 Common Language Runtime 為目標之語言所定義的關鍵字。  視使用的語言和關鍵字而定，編譯器錯誤和模稜兩可 \(Ambiguity\) 會使程式庫變得難以使用。  
+## <a name="rule-description"></a>規則描述  
+ 命名空間、 類型、 識別碼和虛擬和介面成員不應該符合 common language runtime 為目標的語言所定義的關鍵字。 根據所使用的語言和關鍵字，編譯器錯誤模稜兩可以對程式庫難以使用。  
   
- 這個規則會檢查下列語言中的關鍵字：  
+ 此規則會檢查對下列語言的關鍵字：  
   
 -   Visual Basic  
   
--   C\#  
+-   C#  
   
--   C\+\+\/CLI  
+-   C++/CLI  
   
- 對於 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 關鍵字會使用不區分大小寫比較，對其他語言則會使用區分大小寫比較。  
+ 不區分大小寫用於[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]關鍵字，且區分大小寫比較用於其他語言。  
   
-## 如何修正違規  
- 選取沒有出現在關鍵字清單中的名稱。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 關鍵字的清單中選取名稱，不會出現。  
   
-## 隱藏警告的時機  
- 如果您相信識別項不會造成使用者對 API 的混淆，以及程式庫可在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 中以所有可用的語言來使用，則可以隱藏這項規則的警告。
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果您相信識別項不會混淆的 API，使用者和程式庫是可用於所有可用的語言中，您可以隱藏此規則的警告[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。

@@ -1,44 +1,45 @@
 ---
-title: "CA1900：實值類型欄位應該為可移植的 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1900"
-  - "ValueTypeFieldsShouldBePortable"
-helpviewer_keywords: 
-  - "ValueTypeFieldsShouldBePortable"
-  - "CA1900"
+title: "Ca1900： 實值類型欄位應該為可移植 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1900
+- ValueTypeFieldsShouldBePortable
+helpviewer_keywords:
+- ValueTypeFieldsShouldBePortable
+- CA1900
 ms.assetid: 1787d371-389f-4d39-b305-12b53bc0dfb9
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7f2d948d78f6b12352a3e4cfcb28aab41db3e873
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1900：實值類型欄位應該為可移植的
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900：實值類型欄位應該為可移植的
 |||  
 |-|-|  
-|型別名稱|ValueTypeFieldsShouldBePortable|  
+|TypeName|ValueTypeFieldsShouldBePortable|  
 |CheckId|CA1900|  
 |分類|Microsoft.Portability|  
-|中斷變更|中斷 \- 如果可以在組件外部看見該欄位。<br /><br /> 非中斷 \- 如果無法在組件外部看見型別。|  
+|中斷變更|中斷-可以看到在組件外部的欄位。<br /><br /> 非中斷-如果欄位不是組件外部可見。|  
   
-## 原因  
- 這個規則會檢查在 64 位元作業系統上封送處理 Unmanaged 程式碼時，宣告為明確配置的結構是否會正確地配置。  IA\-64 不允許存取未配置的記憶體，而且如果無法修正此項違規，則此處理序 \(Process\) 會造成當機。  
+## <a name="cause"></a>原因  
+ 此規則會檢查封送處理至 unmanaged 程式碼在 64 位元作業系統上時具有明確配置宣告的結構會正確地對齊。 Ia-64 不允許存取未配置的記憶體和處理程序將會損毀，如果沒有修正這種違規。  
   
-## 規則描述  
- 具有明確配置的結構，其配置中包含會造成 64 位元作業系統當機的不當欄位。  
+## <a name="rule-description"></a>規則描述  
+ 具有明確配置，其中包含不當欄位會造成當機，在 64 位元作業系統上的結構。  
   
-## 如何修正違規  
- 小於 8 個位元組的所有欄位，都必須要有自身大小的倍數的位移，具有 8 個位元組或以上大小的欄位，則必須要有 8 的倍數的位移。  另一個解決方法是在合理情況下，使用 `LayoutKind.Sequential` 而非 `LayoutKind.Explicit`。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 小於 8 個位元組的所有欄位都必須是其大小的倍數的位移和 8 個位元組的欄位或多個都必須是 8 的倍數的位移。 另一個解決方案是使用`LayoutKind.Sequential`而不是`LayoutKind.Explicit`，如果合理。  
   
-## 隱藏警告的時機  
- 這則警告只有在發生錯誤時才能隱藏。
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 在發生錯誤時，才應該隱藏這個警告。

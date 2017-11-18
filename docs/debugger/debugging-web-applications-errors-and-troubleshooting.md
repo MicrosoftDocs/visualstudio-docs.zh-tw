@@ -1,48 +1,49 @@
 ---
-title: "偵錯 Web 應用程式：錯誤和疑難排解 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯工具, 錯誤"
-  - "偵錯 [Visual Studio], 錯誤"
-  - "偵錯 ASP.NET Web 應用程式, 疑難排解"
-  - "偵錯指令碼, 疑難排解"
-  - "偵錯 Web 應用程式, 疑難排解"
-  - "偵錯 Web 服務, 疑難排解"
-  - "錯誤 [偵錯工具], Web 應用程式"
-  - "錯誤 [Visual Studio], 偵錯 Web 應用程式"
-  - "指令碼, 偵錯"
-  - "Web 應用程式疑難排解"
-  - "Web 應用程式, 錯誤和疑難排解"
-  - "Web 服務, 偵錯時逾時"
+title: "偵錯 Web 應用程式： 錯誤和疑難排解 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging script, troubleshooting
+- errors [debugger], Web applications
+- debugging ASP.NET Web applications, troubleshooting
+- scripts, debugging
+- errors [Visual Studio], debugging Web applications
+- debugging Web services, troubleshooting
+- Web services, timeout error when debugging
+- Web applications, errors and troubleshooting
+- debugging [Visual Studio], errors
+- debugger, errors
+- debugging Web applications, troubleshooting
+- troubleshooting Web applications
 ms.assetid: 63f2742e-2031-48a8-9773-d9b547c62230
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6958776655f48fe22ef97f193ddffafe12da6cbb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯 Web 應用程式：錯誤和疑難排解
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications-errors-and-troubleshooting"></a>偵錯 Web 應用程式：錯誤和疑難排解
 當您嘗試對 Web 應用程式進行偵錯時，可能會遇到下列錯誤。  
   
 -   [疑難排解](../debugger/debugging-web-applications-troubleshooting.md)  
   
--   [錯誤：站台使用 IP 位址](../Topic/Error:%20Site%20Uses%20IP%20Address.md)  
+-   [錯誤：站台使用 IP 位址](../debugger/error-site-uses-ip-address.md)  
   
--   [錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應](../Topic/Error:%20A%20Security%20Check%20Failed%20Because%20the%20IIS%20Admin%20Service%20Did%20Not%20Respond.md)  
+-   [錯誤：安全性檢查失敗，因為 IIS 管理服務沒有回應](../debugger/error-a-security-check-failed-because-the-iis-admin-service-did-not-respond.md)  
   
 -   [錯誤：尚未安裝 ASP.NET](../debugger/error-aspnet-not-installed.md)  
   
@@ -56,6 +57,6 @@ caps.handback.revision: 11
   
 -   [錯誤：無法在 Web 伺服器上啟動偵錯](../debugger/error-unable-to-start-debugging-on-the-web-server.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯 Web 應用程式和指令碼](../debugger/debugging-web-applications-and-script.md)

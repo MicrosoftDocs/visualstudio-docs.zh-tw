@@ -1,50 +1,51 @@
 ---
-title: "CA1309：使用循序的 StringComparison | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
-helpviewer_keywords: 
-  - "UseOrdinalStringComparison"
-  - "CA1309"
+title: "CA1309： 使用循序的 StringComparison |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UseOrdinalStringComparison
+- CA1309
+helpviewer_keywords:
+- UseOrdinalStringComparison
+- CA1309
 ms.assetid: 19be0854-cb6e-4efd-a4c8-a5c1fc6f7a71
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ba777ea4cd272a1392413a2ecbb52b9f45a3d71b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1309：使用循序的 StringComparison
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309：使用循序的 StringComparison
 |||  
 |-|-|  
-|型別名稱|UseOrdinalStringComparison|  
+|TypeName|UseOrdinalStringComparison|  
 |CheckId|CA1309|  
 |分類|Microsoft.Globalization|  
-|中斷變更|中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 非語言的字串比較作業未將 <xref:System.StringComparison> 參數設定為 **Ordinal** 或 **OrdinalIgnoreCase**。  
+## <a name="cause"></a>原因  
+ 非語言的字串比較作業不會設定<xref:System.StringComparison>參數設為 **序數**或**OrdinalIgnoreCase**。  
   
-## 規則描述  
- 許多字串作業 \(最重要的是 <xref:System.String.Compare%2A?displayProperty=fullName> 和 <xref:System.String.Equals%2A?displayProperty=fullName> 方法\) 現在都提供接受 <xref:System.StringComparision?displayProperty=fullName> 列舉值做為參數的多載。  
+## <a name="rule-description"></a>規則描述  
+ 許多字串作業，最重要<xref:System.String.Compare%2A?displayProperty=fullName>和<xref:System.String.Equals%2A?displayProperty=fullName>方法，現在會提供可接受的多載<xref:System.StringComparison?displayProperty=fullName>做為參數的列舉值。  
   
- 當您指定 **StringComparison.Ordinal** 或 **StringComparison.OrdinalIgnoreCase** 時，字串比較將是非語言性質。  也就是說，在決定比較結果時，會忽略自然語言專有的功能。  這表示結果是根據比較簡單的位元組而決定，並忽略依照文化特性所參數化之大小寫或對等的表格。  因此，藉由明確地將參數設定為 **StringComparison.Ordinal** 或 **StringComparison.OrdinalIgnoreCase**，您的程式碼通常會在速度和正確性方面獲得提升，並且更加可靠。  
+ 當您指定**StringComparison.Ordinal**或**StringComparison.OrdinalIgnoreCase**，將非語言的字串比較。 也就是比較決定時，會忽略自然語言特有的功能。 這表示的決策根據簡單全半形比較，忽略大小寫或對等會由文化特性參數化的資料表。 如此一來，由明確地將參數設為  **StringComparison.Ordinal**或**StringComparison.OrdinalIgnoreCase**，您的程式碼通常可以提升速度、 增加正確性，而且會變成更可靠。  
   
-## 如何修正違規  
- 若要修正這個規則的違規情形，請將字串比較方法變更為接受 <xref:System.StringComparison?displayProperty=fullName> 列舉做為參數的多載，並指定 **Ordinal** 或 **OrdinalIgnoreCase**。  例如，將 `String.Compare(str1, str2)` 變更為 `String.Compare(str1, str2, StringComparison.Ordinal)`。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，將字串比較方法變更為可接受的多載<xref:System.StringComparison?displayProperty=fullName>列舉型別做為參數，並指定**序數**或**OrdinalIgnoreCase**。 例如，變更`String.Compare(str1, str2)`至`String.Compare(str1, str2, StringComparison.Ordinal)`。  
   
-## 隱藏警告的時機  
- 當程式庫或應用程式適用於有限制的地區設定使用者，或者應使用目前文化特性的語意時，您可以放心地隱藏此規則的警告。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告，當程式庫或應用程式適用於有限制的本機使用者，或應該使用目前文化特性的語意。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [全球化警告](../code-quality/globalization-warnings.md)   
- [CA1307：指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)
+ [CA1307：必須指定 StringComparison](../code-quality/ca1307-specify-stringcomparison.md)

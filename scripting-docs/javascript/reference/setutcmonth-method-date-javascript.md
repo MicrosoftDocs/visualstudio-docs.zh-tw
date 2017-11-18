@@ -1,63 +1,65 @@
 ---
-title: "setUTCMonth 方法 (日期) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCMonth"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "日期, UTC"
-  - "Month 方法"
-  - "setUTCMonth 方法"
-  - "UTC 日期, 設定"
+title: "setUTCMonth 方法 （日期） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCMonth
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- setUTCMonth method
+- Month method
+- UTC dates, setting
 ms.assetid: cdac5f64-c4fd-44cc-ba3a-9a8dd3dd3fad
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 02cb69026b66e3f307a8709ab3f5b23d9518643a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# setUTCMonth 方法 (日期) (JavaScript)
-使用全球定位時間 \(UTC\) 設定 `Date` 物件中的月份值。  
+# <a name="setutcmonth-method-date-javascript"></a>setUTCMonth 方法 (日期) (JavaScript)
+設定中的月份值`Date`物件使用國際標準時間 (UTC)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 dateObj.setUTCMonth(numMonth[, dateVal])   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `dateObj`  
- 必要項。  任何 `Date` 物件。  
+ 必要項。 任何 `Date` 物件。  
   
  `numMonth`  
- 必要項。  等於月份的數值。  一月份的值為 0，而其他月份值則為相繼的連續值。  
+ 必要項。 數值等於月份。 年 1 月的值為 0，並由左至右連續遵循其他月份值。  
   
  `dateVal`  
- 選擇項。  表示月份日期的數值。  如果未提供的話，將使用呼叫 `getUTCDate` 方法所得的值。  
+ 選擇項。 數字的值，表示月份天數。 如果未提供，呼叫值`getUTCDate`使用方法。  
   
-## 備註  
- 若要利用本地時間設定月份值，請使用 `setMonth` 方法。  
+## <a name="remarks"></a>備註  
+ 若要設定使用本地時間的月份值，請使用`setMonth`方法。  
   
- 如果 `numMonth` 的值大於 11 \(一月是月份 0\) 或者是負數，儲存的年份會跟著適量遞增或遞減。  例如，儲存的日期如果是 "Jan 5, 1996 00:00:00.00"，這時若呼叫 **setUTCMonth\(14\)**，則日期會變成 "Mar 5, 1997 00:00:00.00"。  
+ 如果值`numMonth`大於 11 （年 1 月是月份 0），或為負數，儲存的年份會以遞增或遞減適當。 例如，如果預存的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCMonth(14)**是呼叫，日期變更為"1997 年 3 月 5 日 00:00:00.00。 」  
   
- **setUTCFullYear** 方法可用來設定年、月和日期。  
+ **SetUTCFullYear**方法可以用來設定年、 月和月份天數。  
   
-## 範例  
- 在下列範例中，說明了如何使用 `setUTCMonth` 方法。  
+## <a name="example"></a>範例  
+ 在下列程式碼中，說明了如何使用 `setUTCMonth` 方法。  
   
-```javascript  
+```JavaScript  
 function SetUTCMonthDemo(newmonth){  
    var d, s;                       // Declare variables.  
    d = new Date();                 // Create Date object.  
@@ -68,12 +70,12 @@ function SetUTCMonthDemo(newmonth){
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **適用於**：[Date 物件](../../javascript/reference/date-object-javascript.md)  
+ **適用於**： [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## 請參閱  
- [getMonth 方法 \(日期\)](../../javascript/reference/getmonth-method-date-javascript.md)   
- [getUTCMonth 方法 \(日期\)](../../javascript/reference/getutcmonth-method-date-javascript.md)   
- [setMonth 方法 \(日期\)](../../javascript/reference/setmonth-method-date-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [getMonth 方法 （日期）](../../javascript/reference/getmonth-method-date-javascript.md)   
+ [getUTCMonth 方法 （日期）](../../javascript/reference/getutcmonth-method-date-javascript.md)   
+ [setMonth 方法 (Date)](../../javascript/reference/setmonth-method-date-javascript.md)

@@ -1,13 +1,12 @@
 ---
-title: Add custom controls to the Data Sources window | Microsoft Docs
+title: "將自訂控制項加入至資料來源視窗 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.datasource.howtoaddcustomcontrol
+f1_keywords: vs.datasource.howtoaddcustomcontrol
 helpviewer_keywords:
 - Data Sources Window, adding controls
 - controls [Visual Studio], adding to Data Sources Window
@@ -16,96 +15,80 @@ helpviewer_keywords:
 - ComplexBindingPropertiesAttribute class, using
 - Data Sources Window, selecting controls
 ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
-caps.latest.revision: 42
+caps.latest.revision: "42"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.technology: vs-data-tools
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: 76a0405f5c13a1dbab5899a1806d8c3dc54e6e56
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.openlocfilehash: d1efd7051d9119c4d0e6643c1d42e78d9cdde7cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="add-custom-controls-to-the-data-sources-window"></a>Add custom controls to the Data Sources window
-When you drag an item from the **Data Sources** window to a design surface to create a data-bound control, you can select the type of control that you create. Each item in the window has a drop-down list that displays the controls that you can choose from. The set of controls associated with each item is determined by the data type of the item. If the control that you want to create does not appear in the list, you can follow the instructions in this topic to add the control to the list.  
+# <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
+當您拖曳的項目**資料來源**至設計介面來建立資料繫結控制項視窗中的，您可以選取您建立的控制項類型。 在視窗中的每個項目有會顯示您可以選擇從控制項下拉式清單。 項目的資料類型所決定的每個項目相關聯的控制項集合。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
   
- For more information about selecting data-bound controls to create for items in the **Data Sources** window, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+ 如需有關選取資料繫結控制項中的項目建立**資料來源**視窗中，請參閱[設定要從資料來源視窗拖曳時建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or edition. To change your settings, on the **Tools** menu, select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  根據目前使用的設定與版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中所描述的不同。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-##  <a name="customizinglist"></a> Customize the list of bindable controls for a data type  
- To add or remove controls from the list of available controls for items in the **Data Sources** window that have a specific data type, perform the following steps.  
+##  <a name="customizinglist"></a>自訂繫結控制項的資料類型的清單  
+ 若要加入或移除控制項，從可用的控制項清單中的項目**資料來源**視窗具有特定資料類型，請執行下列步驟。  
   
-#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>To select the controls to be listed for a data type  
+#### <a name="to-select-the-controls-to-be-listed-for-a-data-type"></a>若要選取要列出的資料類型的控制項  
   
-1.  Make sure that the WPF Designer or the Windows Forms Designer is open.  
+1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
   
-2.  In the **Data Sources** window, click an item that is part of a data source you added to the window, and then click the drop-down menu for the item.  
+2.  在**資料來源**視窗中，按一下您新增至視窗中，資料來源的一部分的項目，然後按一下 下拉式清單項目的功能表。  
   
-3.  In the drop-down menu, click **Customize**. One of the following dialog boxes opens:  
+3.  在下拉式功能表中，按一下**自訂**。 其中一個下列對話方塊隨即開啟：  
   
-    -   If the Windows Forms Designer is open, the **Data UI Customization** page of the **Options** dialog box opens.  
+    -   如果 Windows Form 設計工具開啟，請**自訂資料欄位 UI**頁面**選項**對話方塊隨即開啟。  
   
-    -   If the WPF Designer is open, the **Customize Control Binding** dialog box opens.  
+    -   如果 WPF 設計工具開啟，請**自訂控制項繫結**對話方塊隨即開啟。  
   
-4.  In the dialog box, select a data type from the **Data type** drop-down list.  
+4.  在對話方塊中，選取 將資料類型從**資料型別**下拉式清單。  
   
-    -   To customize the list of controls for a table or object, select **[List]**.  
+    -   若要自訂控制項的資料表或物件清單，請選取**[清單]**。  
   
-    -   To customize the list of controls for a column of a table or a property of an object, select the data type of the column or property in the underlying data store.  
+    -   若要自訂控制項的資料行的資料表或物件的屬性清單，選取在基礎資料存放區中的資料行或屬性的資料類型。  
   
-    -   To customize the list of controls to display data objects that have user-defined shapes, select **[Other]**. For example, select **[Other]** if your application has a custom control that displays data from more than one property of a particular object.  
+    -   若要自訂控制項以顯示具有使用者定義的圖形資料物件的清單，請選取**[其他]**。 例如，選取**[其他]**如果您的應用程式具有自訂控制項以顯示來自多個特定物件屬性的資料。  
   
-5.  In the **Associated controls** box, select each control that you want to be available for the selected data type, or clear the selection of any controls that you want to remove from the list.  
+5.  在**相關聯控制項**方塊中，選取您想要選取的資料類型，可用的每個控制項或清除您想要從清單中移除任何控制項的選取項目。  
   
     > [!NOTE]
-    >  If the control that you want to select does not appear in the **Associated controls** box, you must add the control to the list. For more information, see [Adding Controls to the List of Associated Controls for a Data Type](#addingcontrols).  
+    >  如果您想要選取的控制項不會顯示在**相關聯控制項** 方塊中，您必須將控制項加入至清單。 如需詳細資訊，請參閱[將控制項加入清單的相關聯控制項的資料型別](#addingcontrols)。  
   
-6.  Click **OK**.  
+6.  按一下 [確定]。  
   
-7.  In the **Data Sources** window, click an item of the data type that you just associated one or more controls, and then click the drop-down menu for the item.  
+7.  在**資料來源**視窗中，按一下資料的項目輸入只相關一或多個控制項，然後按一下 下拉式清單項目的功能表。  
   
-     The controls you selected in the **Associated controls** box now appear in the drop-down menu for the item.  
+     您在選取的控制項**相關聯控制項**方塊現在會出現在下拉式清單項目的功能表。  
   
-##  <a name="addingcontrols"></a> Add controls to the list of associated controls for a data type  
- If you want to associate a control with a data type, but the control does not appear in the **Associated controls** box, you must add the control to the list. The control must be located in the current solution or in a referenced assembly. It must also be available in the **Toolbox**, and have an attribute that specifies the control's data binding behavior.  
+##  <a name="addingcontrols"></a>將控制項加入至相關聯控制項的資料類型清單  
+ 如果您想要將控制項與資料型別產生關聯，但是控制項不在**相關聯控制項** 方塊中，您必須將控制項加入至清單。 控制項必須位於目前的方案中，或參考的組件。 它也必須用於**工具箱**，並具有指定控制項的資料繫結行為的屬性。  
   
-#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>To add controls to the list of associated controls  
+#### <a name="to-add-controls-to-the-list-of-associated-controls"></a>將控制項加入至相關聯的控制項的清單  
   
-1.  Add the desired control to the **Toolbox** by right-clicking the **Toolbox** and selecting **Choose Items**.  
+1.  將所需的控制項加入**工具箱**以滑鼠右鍵按一下**工具箱**，然後選取**選擇項目**。  
   
-     The control must have one of the following attributes.  
+     控制項必須具有下列屬性。  
   
-    |Attribute|Description|  
+    |屬性|說明|  
     |---------------|-----------------|  
-    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|Implement this attribute on simple controls that display a single column (or property) of data, such as a <xref:System.Windows.Forms.TextBox>.|  
-    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, such as a <xref:System.Windows.Forms.DataGridView>.|  
-    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|Implement this attribute on controls that display lists (or tables) of data, but also need to present a single column or property, such as a <xref:System.Windows.Forms.ComboBox>.|  
+    |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|實作此屬性顯示的資料，單一資料行 （或屬性） 的簡單控制項，例如<xref:System.Windows.Forms.TextBox>。|  
+    |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|實作這個屬性的控制項，顯示清單 （或資料表） 的資料，例如<xref:System.Windows.Forms.DataGridView>。|  
+    |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|實作這個屬性的控制項，顯示清單 （或資料表） 的資料，但是也需要呈現單一資料行或屬性，例如<xref:System.Windows.Forms.ComboBox>。|  
   
-2.  For Windows Forms, on the      **Options** dialog box, open the **Data UI Customization** page. Or, for WPF, open the **Customize Control Binding** dialog box. For more information, see [Customizing the List of Bindable Controls for a Data Type](#customizinglist).  
+2.  Windows form 上**選項**對話方塊中，開啟**自訂資料欄位 UI**頁面。 或者，為 WPF 中，開啟**自訂控制項繫結** 對話方塊。 如需詳細資訊，請參閱[自訂資料類型的清單的可繫結控制項](#customizinglist)。  
   
-3.  In the **Associated controls** box, the control that you just added to the **Toolbox** should now appear.  
+3.  在**相關聯控制項**方塊中，您剛剛加入的控制項**工具箱**現在應該會出現。  
   
     > [!NOTE]
-    >  Only controls that are located within the current solution or in a referenced assembly can be added to the list of associated controls. (The controls must also implement one of the data-binding attributes in the previous table.) To bind data to a custom control that is not available in the **Data Sources** window, drag the control from the **Toolbox** onto the design surface, and then drag the item to bind to from the **Data Sources** window onto the control.  
+    >  只有位於目前的方案內，或參考的組件的控制項可以加入至相關聯的控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結中沒有的自訂控制項**資料來源**視窗中，拖曳控制項**工具箱**拖曳至設計介面，然後拖曳的項目，從繫結至**資料來源**視窗拖曳至控制項。  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱  
+ [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

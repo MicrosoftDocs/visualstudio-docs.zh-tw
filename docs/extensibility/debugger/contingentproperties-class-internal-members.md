@@ -1,50 +1,52 @@
 ---
-title: "ContingentProperties 類別-內部成員 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ContingentProperties 類別 [.NET Framework 偵錯引擎]"
-  - "偵錯引擎，ContingentProperties 類別 [.NET Framework]"
+title: "ContingentProperties 類別-內部成員 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ContingentProperties class [.NET Framework debug engines]
+- debug engines, ContingentProperties class [.NET Framework]
 ms.assetid: c49d1362-ab1c-4b6d-9950-fcae40e0e66b
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3d5d929f41a40d986aafa8150e68fadcb46f3469
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# ContingentProperties 類別-內部成員
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-包含的其他屬性 <xref:System.Threading.Tasks.Task> 物件。  
+# <a name="contingentproperties-class---internal-members"></a>ContingentProperties 類別-內部成員
+包含的其他屬性<xref:System.Threading.Tasks.Task>物件。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件︰** mscorlib （在 mscorlib.dll\)  
+ **組件：** mscorlib （在 mscorlib.dll)  
   
- 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 \(CIL\)。  
+ 因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 .class auto ansi nested assembly beforefieldinit ContingentProperties  
        extends System.Object  
 ```  
   
-## 成員  
+## <a name="members"></a>成員  
   
-### 欄位  
+### <a name="fields"></a>欄位  
   
-|名稱|描述|  
-|--------|--------|  
-|[m\_children](../../extensibility/debugger/m-children-field.md)|註冊這項工作的子工作的清單。|  
+|名稱|說明|  
+|----------|-----------------|  
+|[m_children](../../extensibility/debugger/m-children-field.md)|使用這項工作中註冊的子工作的清單。|  
   
-## 備註  
- .NET Framework 初始化這個類別的欄位，只在需要時才。  
+## <a name="remarks"></a>備註  
+ 只有在需要時，這個類別的欄位初始化.NET Framework。  
   
-## 請參閱  
- [.NET Framework 的平行擴充內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+## <a name="see-also"></a>另請參閱  
+ [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

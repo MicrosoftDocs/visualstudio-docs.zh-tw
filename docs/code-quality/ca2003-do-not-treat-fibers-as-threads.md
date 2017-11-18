@@ -1,44 +1,45 @@
 ---
-title: "CA2003：不要將 Fiber 視為執行緒 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
-helpviewer_keywords: 
-  - "CA2003"
-  - "DoNotTreatFibersAsThreads"
+title: "CA2003： 不要將 fiber 視為執行緒 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
+helpviewer_keywords:
+- CA2003
+- DoNotTreatFibersAsThreads
 ms.assetid: 15398fb1-f384-4bcc-ad93-00e1c0fa9ddf
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4ca9b0649950be50dcff5103258d60f6f924f12a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2003：不要將 Fiber 視為執行緒
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003：不要將 Fiber 視為執行緒
 |||  
 |-|-|  
-|型別名稱|DoNotTreatFibersAsThreads|  
+|TypeName|DoNotTreatFibersAsThreads|  
 |CheckId|CA2003|  
 |分類|Microsoft.Reliability|  
-|中斷變更|中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- Managed 執行緒已視為 Win32 執行緒。  
+## <a name="cause"></a>原因  
+ Managed 的執行緒會被視為 Win32 執行緒。  
   
-## 規則描述  
- 不要假設 Managed 執行緒是 Win32 執行緒。  它是一個 Fiber。  Common Language Runtime \(CLR\) 會在 SQL 擁有的即時執行緒內容中，以 Fiber 的方式執行 Managed 執行緒。  這些執行緒可以在 AppDomains 間，或甚至 SQL Server 處理序中的資料庫間共用。  可以使用 Managed 執行緒區域儲存區 \(Thread Local Storage\)，但是可能無法使用 Unmanaged 執行緒區域儲存區，而您的程式碼可能會在目前的 OS 執行緒上再次執行。  不要變更設定，例如執行緒的地區設定。  也不要透過 P\/Invoke 呼叫 CreateCriticalSection 或 CreateMutex，因為它們會要求進入鎖定的執行緒也必須結束鎖定。  由於使用 Fiber 時不會是這種情況，所以 Win32 關鍵區段 \(Critical Section\) 和 Mutex 在 SQL 中不會有任何作用。  您可以安全地使用 Managed System.Thread 物件上的大部分狀態。  這包括 Managed 執行緒區域儲存區和執行緒目前的使用者介面 \(UI\) 文化特性。  但是，由於使用程式撰寫模型 \(Programming Model\) 的緣故，您在使用 SQL 時，將無法變更執行緒目前的文化特性 \(這個部分將透過新的權限來強制執行\)。  
+## <a name="rule-description"></a>規則描述  
+ 請勿假設 managed 的執行緒是 Win32 執行緒。 它是 fiber。 Common language runtime (CLR) 會以 fiber 的 SQL 所擁有的實際執行緒內容中執行的 managed 的執行緒。 這些執行緒可以在 SQL Server 處理序中的跨 Appdomain 和甚至資料庫共用。 使用受管理的執行緒區域儲存區也能運作，但您可能無法使用未受管理的執行緒區域儲存區，或假設您的程式碼將會再次執行目前的作業系統執行緒上。 不會變更設定，例如執行緒的地區設定。 請勿呼叫 CreateCriticalSection 或 CreateMutex 透過 P/Invoke，因為它們需要進入鎖定的執行緒，也必須結束鎖定。 因為這不會看到當您使用 fiber，Win32 關鍵區段和 mutex 會是毫無用處的 SQL。 您安全地可能受管理的 System.Thread 物件上使用大部分的狀態。 這包括受管理的執行緒區域儲存區和執行緒的目前使用者介面 (UI) 文化特性。 不過，程式設計模型的理由，您將無法變更目前執行緒的文化特性，當您使用 SQL;這會透過新的權限來強制執行。  
   
-## 如何修正違規  
- 檢查執行緒的使用方式，並據以變更您的程式碼。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 檢查您的執行緒之使用量，並據以變更您的程式碼。  
   
-## 隱藏警告的時機  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  您不應該隱藏此規則。

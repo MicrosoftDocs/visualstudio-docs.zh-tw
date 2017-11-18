@@ -1,60 +1,59 @@
 ---
-title: "IDiaStackWalkHelper::readMemory | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper2::readMemory 方法"
+title: "IDiaStackWalkHelper::readMemory |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper2::readMemory method
 ms.assetid: e1eb90aa-49b7-476c-9e70-7e8f08994cbe
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cccec7df8428db0a1e7c1fe2274475c2b723d760
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::readMemory
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在記憶體中的可執行檔映像可讀取資料的區塊。  
+# <a name="idiastackwalkhelperreadmemory"></a>IDiaStackWalkHelper::readMemory
+讀取的可執行檔映像，在記憶體中的資料區塊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT readMemory(   
-   enum MemoryTypeEnum type,  
-   ULONGLONG           va,  
-   DWORD               cbData,  
-   DWORD*              pcbData,  
-   BYTE*               pbData  
+```C++  
+HRESULT readMemory(   
+   enum MemoryTypeEnum type,  
+   ULONGLONG           va,  
+   DWORD               cbData,  
+   DWORD*              pcbData,  
+   BYTE*               pbData  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `type`  
- \[in\]介於[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)指定的記憶體讀取型別列舉型別。  
+ [in]中的值[MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)指定類型的記憶體讀取的列舉。  
   
  va  
- \[in\]要開始讀取映像中的虛擬位址。  
+ [in]從此處開始讀取映像中的虛擬位址。  
   
  `cbData`  
- \[in\]資料緩衝區的大小以位元組為單位。  
+ [in]以位元組為單位的資料緩衝區的大小。  
   
  `pcbData`  
- \[\] out傳回實際讀取的位元組數目。  如果`pbData`是`NULL`，那麼這就是可以使用資料的位元組總數。  
+ [out]傳回實際讀取的位元組數目。 如果`pbData`是`NULL`，則這是可用的資料的位元組總數。  
   
  `pbData`  
- 輸入 \[、 輸出\]這種緩衝區會填入這些讀取的記憶體。  
+ [in、 out]讀取的記憶體填入緩衝區。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [MemoryTypeEnum 列舉](../../debugger/debug-interface-access/memorytypeenum.md)

@@ -1,55 +1,54 @@
 ---
-title: "IDiaTable::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaTable::Item 方法"
+title: "Idiatable:: Item |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaTable::Item method
 ms.assetid: eae11b26-4807-400c-be25-e85bbc0c6b20
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e5c0c810dfd1a17f2fa63e64bf199a5882174aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaTable::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的項目，在資料表中的參考。  
+# <a name="idiatableitem"></a>IDiaTable::Item
+擷取指定的項目資料表中的參考。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Item (   
-   DWORD      index,  
-   IUnknown** element  
+```C++  
+HRESULT Item (   
+   DWORD      index,  
+   IUnknown** element  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `index`  
- \[in\]索引的資料表中的項目範圍從 0 到`count`\-1，其中`count`傳回的[IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)方法。  
+ [in]索引的資料表中的項目介於範圍 0 到`count`-1，其中`count`傳回[idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)方法。  
   
  `element`  
- \[\] out傳回`IUnknown`物件，代表指定的表格項目。  
+ [out]傳回`IUnknown`物件，代表指定之資料表的項目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 資料表代表物件的集合。  這些物件中，根據項目參數就可以轉換成適當的介面。  例如，如果資料表含有[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，然後將項目參數就可以轉換成`IDiaSegment`介面。  
+## <a name="remarks"></a>備註  
+ 資料表代表物件的集合。 根據這些物件中，項目參數可轉換成適當的介面。 例如，如果資料表包含[IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)物件，則項目參數可轉換成`IDiaSegment`介面。  
   
- 它是較常見的方法，呼叫`QueryInterface`中的方法[IDiaTable](../../debugger/debug-interface-access/idiatable.md)為適當的列舉值介面的介面，並使用列舉值的特定方法來存取目錄。  請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
+ 它是更常見的方法呼叫`QueryInterface`方法中的[IDiaTable](../../debugger/debug-interface-access/idiatable.md)適當的列舉程式介面的介面，並透過列舉值的特定方式來存取資料表內容。 請參閱[IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)介面的範例。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaTable](../../debugger/debug-interface-access/idiatable.md)   
- [IDiaTable::get\_Count](../../debugger/debug-interface-access/idiatable-get-count.md)   
+ [Idiatable:: Get_count](../../debugger/debug-interface-access/idiatable-get-count.md)   
  [IDiaSegment](../../debugger/debug-interface-access/idiasegment.md)   
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)

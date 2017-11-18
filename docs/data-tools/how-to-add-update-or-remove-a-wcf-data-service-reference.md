@@ -1,5 +1,5 @@
 ---
-title: 'How to: Add, Update, or Remove a WCF Data Service Reference | Microsoft Docs'
+title: "如何： 加入、 更新或移除 WCF 資料服務參考 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,100 +13,85 @@ helpviewer_keywords:
 - ADO.NET service references
 - ADO.NET Data Service reference
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
-caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: f2edd0bb4c3bab71317df6fae6dddb05a20397d5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: c6a46a506ecbe0ca461de927f2ec1297d43c710b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>How to: Add, Update, or Remove a WCF Data Service Reference
-A *service reference* enables a project to access one or more [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use the **Add Service Reference** dialog box to search for [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] in the current solution, locally, on a local area network, or on the Internet.  
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：加入、更新或移除 WCF 資料服務參考
+A*服務參考*允許存取一或多個專案[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]。 使用**加入服務參考**對話方塊來搜尋[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]在目前方案中，區域網路上，在本機，或在網際網路上。  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="adding-a-service-reference"></a>Adding a Service Reference  
+## <a name="adding-a-service-reference"></a>加入服務參考  
   
-#### <a name="to-add-a-reference-to-an-external-service"></a>To add a reference to an external service  
+#### <a name="to-add-a-reference-to-an-external-service"></a>若要加入到外部服務的參考  
   
-1.  In **Solution Explorer**, right-click the name of the project that you want to add the service to, and then click **Add Service Reference**.  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下您想要加入服務，然後按一下 [專案名稱**加入服務參考**。  
   
-     The **Add Service Reference** dialog box appears.  
+     **加入服務參考** 對話方塊隨即出現。  
   
-2.  In the **Address** box, enter the URL for the service, and then click **Go** to search for the service. If the service implements user name and password security, you may be prompted for a user name and password.  
-  
-    > [!NOTE]
-    >  You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.  
-  
-     You can also select the URL from the **Address** list, which stores the previous 15 URLs at which valid service metadata was found.  
-  
-     A progress bar is displayed when the search is being performed. You can stop the search at any time by clicking **Stop**.  
-  
-3.  In the **Services** list, expand the node for the service that you want to use and select an entity set.  
-  
-4.  In the **Namespace** box, enter the namespace that you want to use for the reference.  
-  
-5.  Click **OK** to add the reference to the project.  
-  
-     A service client (proxy) is generated, and metadata that describes the service is added to the app.config file.  
-  
-#### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>To add a reference to a service in the current solution  
-  
-1.  In **Solution Explorer**, right-click the name of the project that you want to add the service to, and then click **Add Service Reference**.  
-  
-     The **Add Service Reference** dialog box appears.  
-  
-2.  Click **Discover**.  
-  
-     All services (both [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] and WCF services) in the current solution are added to the **Services** list.  
-  
-3.  In the **Services** list, expand the node for the service that you want to use and select an entity set.  
-  
-4.  In the **Namespace** box, enter the namespace that you want to use for the reference.  
-  
-5.  Click **OK** to add the reference to the project.  
-  
-     A service client (proxy) is generated, and metadata that describes the service is added to the app.config file.  
-  
-## <a name="updating-a-service-reference"></a>Updating a Service Reference  
- The Entity Data Model for a [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] will sometimes change. When this happens, the service reference must be updated.  
-  
-#### <a name="to-update-a-service-reference"></a>To update a service reference  
-  
--   In **Solution Explorer**, right-click the service reference and then click **Update Service Reference**.  
-  
-     A progress dialog box is displayed while the reference is updated from its original location, and the service client is regenerated to reflect any changes in the metadata.  
-  
-## <a name="removing-a-service-reference"></a>Removing a Service Reference  
- If a service reference is no longer being used, you can remove it from your solution.  
-  
-#### <a name="to-remove-a-service-reference"></a>To remove a service reference  
-  
--   In **Solution Explorer**, right-click the service reference and then click **Delete**.  
-  
-     The service client will be removed from the solution, and the metadata that describes the service will be removed from the app.config file.  
+2.  在**位址**方塊中，輸入服務的 URL，然後按一下**移**搜尋服務。 如果服務實作使用者名稱和密碼的安全性，您可能會提示輸入使用者名稱和密碼。  
   
     > [!NOTE]
-    >  Any code that references the service reference will have to be removed manually.  
+    >  您只應參考服務來自信任的來源。 將參考加入受信任的來源可能會危及安全性。  
   
-## <a name="see-also"></a>See Also  
- [Windows Communication Foundation Services and WCF Data Services in Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+     您也可以選取從 URL**位址**清單，會儲存先前的 15 個 Url，找到有效的服務中繼資料的位置。  
+  
+     執行搜尋時，會顯示進度列。 您可以按一下來停止隨時搜尋**停止**。  
+  
+3.  在**服務**清單中，展開您想要使用選取的實體集之服務節點。  
+  
+4.  在**命名空間**方塊中，輸入您想要針對參考使用的命名空間。  
+  
+5.  按一下**確定**將參考加入至專案。  
+  
+     服務用戶端 (proxy) 會產生，並描述服務的中繼資料新增至 app.config 檔案。  
+  
+#### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>若要加入服務參考目前方案中  
+  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下您想要加入服務，然後按一下 [專案名稱**加入服務參考**。  
+  
+     **加入服務參考** 對話方塊隨即出現。  
+  
+2.  按一下**探索**。  
+  
+     所有服務 (兩者[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]和 WCF 服務) 在目前的方案會加入至**服務**清單。  
+  
+3.  在**服務**清單中，展開您想要使用選取的實體集之服務節點。  
+  
+4.  在**命名空間**方塊中，輸入您想要針對參考使用的命名空間。  
+  
+5.  按一下**確定**將參考加入至專案。  
+  
+     服務用戶端 (proxy) 會產生，並描述服務的中繼資料新增至 app.config 檔案。  
+  
+## <a name="updating-a-service-reference"></a>更新服務參考  
+ 實體資料模型[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]有時候會將變更。 當發生這種情況時，就必須更新服務參考。  
+  
+#### <a name="to-update-a-service-reference"></a>若要更新服務參考  
+  
+-   在**方案總管] 中**，以滑鼠右鍵按一下 [服務參考，然後按一下**更新服務參考**。  
+  
+     參考從其原始位置，更新和服務用戶端會重新產生以反映在中繼資料中的任何變更時，會顯示進度對話方塊。  
+  
+## <a name="removing-a-service-reference"></a>移除服務參考  
+ 如果不再使用的服務參考，您可以從您的方案中移除它。  
+  
+#### <a name="to-remove-a-service-reference"></a>若要移除服務參考  
+  
+-   在**方案總管] 中**，以滑鼠右鍵按一下 [服務參考，然後按一下**刪除**。  
+  
+     服務用戶端將會從方案中移除，並描述服務的中繼資料將會從 app.config 檔案中移除。  
+  
+    > [!NOTE]
+    >  參考服務參考的任何程式碼必須以手動方式移除。  
+  
+## <a name="see-also"></a>另請參閱  
+ [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

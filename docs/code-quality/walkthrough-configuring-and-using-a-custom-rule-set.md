@@ -1,81 +1,82 @@
 ---
-title: "逐步解說：設定和使用自訂規則集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼分析, 逐步解說"
-  - "程式碼分析, 規則集"
+title: "逐步解說： 設定及使用自訂規則集 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code analysis, walkthroughs
+- code analysis, rule sets
 ms.assetid: 7fe0a4e3-1ce0-4f38-a87a-7d81238ec7cd
-caps.latest.revision: 40
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 40
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 逐步解說：設定和使用自訂規則集
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-本逐步解說會示範如何使用已設定在類別庫上使用自訂「*規則集*」\(Rule Set\) 的程式碼分析工具。  您可以選取與方案所指定之專案類型相關的規則集，也可以選取其他規則集來滿足特定需求，例如掃描舊版程式碼來找出可利用非中斷方式解決的問題。  在任一種情況下，您都可以自訂規則集，微調它們來配合專案需求。  
+# <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
+本逐步解說示範如何使用已設定為使用自訂的程式碼分析工具*規則集*類別庫。 您可以選取規則集相關的專案類型，您可以選取或指定您的解決方案，替代的規則集來滿足特定需求，例如掃描舊版程式碼中斷的方式，可以修正的問題。 在任一情況下，規則集也可以自訂來微調他們自己專案的需求。  
   
- 在這個逐步解說中，您將逐步完成下列程序：  
+ 在本逐步解說中，您將逐步執行這些程序：  
   
 -   建立類別庫。  
   
--   選取 \[**Microsoft 基本設計方針規則**\] 程式碼分析規則集。  
+-   選取**Microsoft 基本設計方針規則**程式碼分析規則集。  
   
--   將自己的程式碼加入至類別。  
+-   將您自己的程式碼加入至類別。  
   
 -   執行程式碼分析。  
   
 -   自訂規則集。  
   
--   執行程式碼分析並查看規則集自訂的效果。  
+-   執行程式碼分析，請參閱如何在規則中設定自訂表現方式。  
   
-## 必要條件  
+## <a name="prerequisites"></a>必要條件  
   
--   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
-## 使用規則集搭配程式碼分析  
- 首先，建立簡單的類別庫。  
+## <a name="using-rule-sets-with-code-analysis"></a>使用規則集的程式碼分析  
+ 首先，建立簡單類別庫。  
   
-#### 建立類別庫  
+#### <a name="create-a-class-library"></a>建立類別庫  
   
-1.  按一下 \[**檔案**\] 功能表上的 \[**新增**\]，然後按一下 \[**專案**\]。  
+1.  在 [檔案]  功能表上，按一下 [新增]  及 [專案] 。  
   
-2.  在 \[新增專案\] 對話方塊的 \[專案類型\] 下，按一下 \[Visual C\#\]。  
+2.  在**新專案**對話方塊的 **專案類型**，按一下  **Visual C#**。  
   
-3.  在 \[**Visual C\#**\] 底下，選取 \[**類別庫**\]。  
+3.  在下**Visual C#**，選取**類別庫**。  
   
-4.  在 \[**名稱**\] 文字方塊中輸入 RuleSetSample，然後按一下 \[**確定**\]。  
+4.  在**名稱**文字方塊中，輸入**RuleSetSample** ，然後按一下 **確定**。  
   
- 接下來將選取 \[**Microsoft 基本設計方針規則**\] 規則集並與專案一起儲存。  
+ 接下來，您會選取**Microsoft 基本設計方針規則**規則集，並將它儲存您的專案。  
   
-#### 選取程式碼分析規則集  
+#### <a name="select-a-code-analysis-rule-set"></a>選取程式碼分析規則集  
   
-1.  在 \[**分析**\] 功能表上，按一下 \[**為 RuleSetSample 設定程式碼分析**\]。  
+1.  上**分析**功能表上，按一下 **設定程式碼分析 RuleSetSample**。  
   
-     程式碼分析的組態設定隨即出現。  
+     程式碼分析的組態設定會出現。  
   
-2.  在 \[**執行此規則集**\] 下拉式清單中，選取 \[**Microsoft 所有規則**\]。  
+2.  在**執行此規則集**下拉式清單中，選取**Microsoft 所有規則**。  
   
-     如需可用規則集的詳細資訊，請參閱[程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)。  
+     如需可用的規則集的詳細資訊，請參閱[程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)。  
   
-     在 \[檔案\] 功能表上按一下 \[**儲存選取項目**\]，以使用您所選取的規則集及其設定的相關資訊更新專案檔。  
+     在 [檔案] 功能表上按一下**儲存選取項目**與您選取的規則集的相關資訊和其設定更新專案檔。  
   
     > [!TIP]
-    >  在實際狀況中，要使用程式碼分析來設定解決問題的優先權，最好先從 \[**最小建議規則**\] 規則集開始，更正了所要解決的問題後，再逐步加入更多規則或規則集來找出並更正其他問題。  
+    >  在真實世界的情況下，最好的作法是用於設定優先權的問題，您想要使用程式碼分析的目標是，開始**最小建議規則**規則集和所需的問題，然後再以累加方式加入更多的規則設定為找出並解決其他問題。  
   
- 接下來將加入一些程式碼到類別庫，這將用來示範 CA1704「識別項應該使用正確的拼字」程式碼分析規則的違規情形。  如需詳細資訊，請參閱[CA1704：識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
+ 接下來，您會加入一些程式碼，到將用來示範違規的 CA1704 類別庫 」 的識別項應該使用正確的拼字 」 程式碼分析規則。 如需詳細資訊，請參閱[CA1704： 識別項應該使用正確的拼字](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)。  
   
-#### 加入自己的程式碼  
+#### <a name="add-your-own-code"></a>加入您自己的程式碼  
   
--   在 \[方案總管\] 中，開啟 Class1.cs 檔並以下列程式碼取代現有的程式碼：  
+-   在 [方案總管] 中開啟 Class1.cs 檔並以下列內容取代現有的程式碼：  
   
     ```  
     using System;  
@@ -101,56 +102,56 @@ caps.handback.revision: 40
   
     ```  
   
- 現在您可以對 RuleSetSample 專案執行程式碼分析，並在 \[錯誤清單\] 視窗中查看任何產生的錯誤和警告。  
+ 現在您可以 RuleSetSample 專案執行程式碼分析，並尋找任何錯誤和錯誤清單 視窗中產生的警告。  
   
-#### 對 RuleSetSample 專案執行程式碼分析  
+#### <a name="run-code-analysis-on-the-rulesetsample-project"></a>RuleSetSample 專案執行程式碼分析  
   
-1.  在 \[**分析**\] 功能表上，按一下 \[**針對 RuleSetSample 執行程式碼分析**\]。  
+1.  在**分析**功能表上，按一下  **RuleSetSample 上執行程式碼分析**。  
   
-2.  在 \[錯誤清單\] 視窗中，按一下 \[**警告**\]，然後按一下 \[**描述**\] 資料行標題，按英數字元順序排序警告。  
+2.  在 錯誤清單 視窗中，按一下 **警告**，然後按一下 **描述**行標頭以便排序警告文數字順序。  
   
-     在實際應用中，這時可以解決任何值得解決的違規情形，若認為不值得解決，則可以選擇關閉或隱藏規則。  如需詳細資訊，請參閱[使用 SuppressMessage 屬性隱藏警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
+     在真實世界應用程式中，您修正值得此時，修正任何規則違規或選擇性地關閉或隱藏的規則，如果您決定不需要處理。 如需詳細資訊，請參閱[使用 SuppressMessage 屬性所隱藏的警告](../code-quality/suppress-warnings-by-using-the-suppressmessage-attribute.md)。  
   
-3.  請注意 CA1704 警告。  此規則的這些違規情形表示您應該「為參數提供更具有意義的名稱」。您可以在程式碼中更正此問題，或可以依下面程序所述停用規則。  
+3.  請注意 CA1704 警告。 這些違規這個規則表示，您應該 「 請考慮提供更有意義的名稱，參數。 」 您無法更正問題，您的程式碼中或下一個程序中所述，您可以停用規則。  
   
- 接下來將自訂規則集來排除 CA1704 警告「識別項應該使用正確的拼字」。  
+ 接下來，您將自訂的規則集排除 CA1704 警告、 」 識別項應該使用正確的拼字"。  
   
-#### 自訂專案的規則集來停用特定規則  
+#### <a name="customize-the-rule-set-for-your-project-to-disable-a-specific-rule"></a>自訂規則集的專案，以停用特定的規則  
   
-1.  在 \[**分析**\] 功能表上，按一下 \[**為 RuleSetSample 設定程式碼分析**\]。  
+1.  上**分析**功能表上，按一下 **設定程式碼分析 RuleSetSample**。  
   
-2.  在 \[**執行此規則集**\] 下拉式清單中，確認仍反白顯示 \[**Microsoft 所有規則**\] 規則集，然後按一下 \[**開啟**\]。  規則集頁面隨即顯示。  
+2.  在**執行此規則集**下拉式清單中，確認**Microsoft 所有規則**規則集仍會反白顯示，然後按一下 **開啟**。 規則設定頁面會顯示。  
   
-3.  展開 \[Microsoft.Naming\] 分類節點，然後選取 CA1704 警告。  
+3.  展開 Microsoft.Naming 類別目錄節點，然後選取 CA1704 警告。  
   
-4.  在 \[**動作**\] 欄底下，選取 \[**無**\]。如此一來，CA1704 就不會顯示為 \[錯誤清單\] 視窗中的警告或錯誤。  
+4.  在下**動作**欄中，選取**None。** 這可防止 CA1704 顯示為警告或錯誤清單 視窗中的錯誤。  
   
-     您現在可以試試各個工具列按鈕和篩選選項來熟悉它們。  例如，您可以使用 \[**群組依據**\] 下拉式清單，協助找出特定規則或規則類別。  另外一個例子是可以使用規則集頁面工具列中的 \[**隱藏停用的規則**\] 按鈕，隱藏或顯示 \[**動作**\] 欄設為 \[**無**\] 的所有規則。  如果您想掃描已關閉的任何規則，以確認是否仍想停用它們，這會非常有用。  
+     現在會造成試驗不同的工具列按鈕的好時機，並篩選選項來熟悉它們。 例如，您可以使用**Group By**下拉式清單，協助找出特定的規則的類別。 另一個例子是，您可以使用**隱藏停用的規則**來隱藏或顯示的所有規則規則集頁面工具列中的按鈕**動作**資料行設為**無**。 這很有用，如果您想要掃描以確認您仍然想要將它們停用已關閉的任何規則。  
   
-5.  在 \[檢視\] 功能表中，按一下 \[屬性視窗\]。  在 \[屬性\] 工具視窗的 \[名稱\] 方塊中，輸入 **My Custom Rule Set**。  這會變更新規則集在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] IDE 中的顯示名稱。  
+5.  在 [檢視] 功能表中，按一下 [屬性] 視窗。 型別**我自訂規則集**屬性的 [工具] 視窗的 [名稱] 方塊中。 這會變更新規則中設定的顯示名稱[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]IDE。  
   
-6.  在 \[**檔案**\] 功能表上，按一下 \[**儲存 Microsoft 所有規則.ruleset**\] 儲存您的自訂規則集。  巡覽至專案的根資料夾。  在 \[**檔名**\] 文字方塊中，輸入 MyCustomRuleSet。  您現在就可以選取自訂規則集來搭配專案使用。  
+6.  在**檔案**功能表上，按一下 **儲存 Microsoft 所有 Rules.ruleset**儲存您的自訂的規則集。 瀏覽至您的專案的根資料夾。 在**FileName**文字方塊中，輸入**MyCustomRuleSet**。 自訂規則集現在可以選取用於您的專案。  
   
- 建立新規則集之後，現在必須設定專案設定，以指定想要搭配它使用新的規則集。  
+ 使用建立新規則集，現在需要設定您的專案設定來指定您想要使用您設定它的新規則。  
   
-#### 指定新規則集來搭配專案使用  
+#### <a name="specify-the-new-rule-set-for-use-with-your-project"></a>指定新的規則集，以便使用您的專案  
   
-1.  在 \[方案總管\] 中，以滑鼠右鍵按一下專案，然後選取 \[**屬性**\]。  
+1.  在方案總管 中，以滑鼠右鍵按一下專案，然後選取**屬性**。  
   
-2.  在 \[**屬性**\] 索引標籤中，按一下 \[**程式碼分析**\]。  
+2.  在**屬性**索引標籤上，按一下 **程式碼分析**。  
   
-     在 \[**執行此規則集**\] 下拉式清單中，按一下 \[**\<瀏覽\>**\]。  巡覽至程式碼專案的根資料夾，然後選取 MyCustomRuleSet.ruleset。  這是您在前面程序中建立的新規則集。  
+     在**執行此規則集**下拉式清單中，按一下  **\<瀏覽...>**。 瀏覽至您的程式碼專案的根資料夾，然後選取**MyCustomRuleSet.ruleset**。 這是您在上一個程序中建立新規則集。  
   
-3.  在 \[**檔案**\] 功能表上，按一下 \[**儲存**\] 儲存您的專案組態。  您現在就可以使用自訂規則集來搭配專案。  
+3.  在**檔案**功能表上，按一下 **儲存**儲存您的專案組態。 自訂規則集現在可以搭配您的專案。  
   
- 最後將使用 MyCustomRuleSet 規則集再次執行程式碼分析。  請注意，\[錯誤清單\] 視窗不會顯示 CA1704 效能規則違規情形。  
+ 最後，您將執行一次使用 MyCustomRuleSet 規則集的程式碼分析。 請注意，[錯誤清單] 視窗不會顯示 CA1704 效能規則違規。  
   
-#### 第二次對 RuleSetSample 專案執行程式碼分析  
+#### <a name="run-code-analysis-on-the-rulesetsample-project-for-the-second-time"></a>第二次 RuleSetSample 專案執行程式碼分析  
   
-1.  在 \[**分析**\] 功能表上，按一下 \[**針對 RuleSetSample 執行程式碼分析**\]。  
+1.  在**分析**功能表上，按一下  **RuleSetSample 上執行程式碼分析**。  
   
-2.  請注意，當您在 \[錯誤清單\] 視窗中按一下 \[**警告**\] 時，就不會再看到「識別項應該使用正確的拼字」規則的 CA1704 警告違規。  
+2.  在 [錯誤清單] 視窗中，請注意，當您按一下**警告**，您不會再看見 CA1704 警告違規 」 的識別項應該使用正確的拼字 」 規則。  
   
-## 請參閱  
- [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)

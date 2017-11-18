@@ -1,64 +1,66 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAssemblyName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetAssemblyName"
-  - "GetAssemblyName"
+title: "IDebugComPlusSymbolProvider::GetAssemblyName |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetAssemblyName
+- GetAssemblyName
 ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7fd4239f3cad937354ebbba2b5a28fc5e5006724
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetAssemblyName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的模組和應用程式定義域的組件的名稱。  
+# <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
+擷取指定其模組和應用程式網域的組件名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 [C++]  
 HRESULT GetAssemblyName(  
-   ULONG32 ulAppDomainID,  
-   GUID    guidModule,  
-   BSTR*   pbstrName  
+   ULONG32 ulAppDomainID,  
+   GUID    guidModule,  
+   BSTR*   pbstrName  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAssemblyName(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   string pbstrName  
+   uint   ulAppDomainID,  
+   Guid   guidModule,  
+   string pbstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- \[in\]應用程式定義域的識別項。  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- \[in\]模組的唯一識別項。  
+ [in]模組的唯一識別碼。  
   
  `pbstrName`  
- \[\] out傳回組件的名稱。  
+ [out]傳回組件的名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAssemblyName(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -84,5 +86,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

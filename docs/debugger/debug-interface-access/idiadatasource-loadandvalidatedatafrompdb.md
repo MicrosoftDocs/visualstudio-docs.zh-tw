@@ -1,77 +1,76 @@
 ---
-title: "IDiaDataSource::loadAndValidateDataFromPdb | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaDataSource::loadAndValidateDataFromPdb 方法"
+title: "Idiadatasource:: Loadandvalidatedatafrompdb |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaDataSource::loadAndValidateDataFromPdb method
 ms.assetid: d66712dd-6c24-4192-919a-cce262066f0e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb140470e45f49806087941127638f56ce5d7150
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaDataSource::loadAndValidateDataFromPdb
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會開啟，並驗證程式資料庫 \(.pdb\) 檔案符合簽章提供的資訊，並準備.pdb 檔做為偵錯資料來源。  
+# <a name="idiadatasourceloadandvalidatedatafrompdb"></a>IDiaDataSource::loadAndValidateDataFromPdb
+開啟和驗證的程式資料庫 (.pdb) 檔案符合簽章提供的資訊，並準備做為偵錯資料來源的.pdb 檔案。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT loadAndValidateDataFromPdb (   
-   LPCOLESTR pdbPath,  
-   GUID*     pcsig70,  
-   DWORD     sig,  
-   DWORD     age  
+```C++  
+HRESULT loadAndValidateDataFromPdb (   
+   LPCOLESTR pdbPath,  
+   GUID*     pcsig70,  
+   DWORD     sig,  
+   DWORD     age  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdbPath`  
- \[in\].pdb 檔的路徑。  
+ [in].Pdb 檔案的路徑。  
   
  `pcsig70`  
- \[in\]GUID 簽章以供驗證的.pdb 檔案簽章。  只有.pdb 檔案的[!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)] ，稍後有 GUID 簽章。  
+ [in]若要驗證的.pdb 檔案簽章的 GUID 簽章。 只有.pdb 檔案中[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]和更新版本有 GUID 簽章。  
   
  `sig`  
- \[in\]32 位元簽章以供驗證的.pdb 檔案簽章。  
+ [in]32 位元簽章來進行驗證的.pdb 檔案簽章。  
   
  `age`  
- \[in\]若要確認有效期的值。  年齡不一定對應到任何已知的時間值，它用來判斷這是否為與相對應的.exe 檔案不同步的.pdb 檔。  
+ [in]若要驗證的年齡值。 存在時間不一定會對應到任何已知的時間值，它用來判斷是否與對應的.exe 檔案同步處理的.pdb 檔案。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  下表顯示可能的傳回值，這個方法。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 下表顯示可能的傳回值，這個方法。  
   
 |值|描述|  
-|-------|--------|  
-|E\_PDB\_NOT\_FOUND|無法開啟檔案，或檔案格式無效。|  
-|E\_PDB\_FORMAT|嘗試存取的檔案格式太舊。|  
-|E\_PDB\_INVALID\_SIG|簽章不符。|  
-|E\_PDB\_INVALID\_AGE|時代不符。|  
-|E\_INVALIDARG|不正確的參數。|  
-|E\_UNEXPECTED|已完成資料來源。|  
+|-----------|-----------------|  
+|E_PDB_NOT_FOUND|無法開啟檔案或檔案格式無效。|  
+|E_PDB_FORMAT|嘗試存取的檔案已經過時的格式。|  
+|E_PDB_INVALID_SIG|簽章不符。|  
+|E_PDB_INVALID_AGE|年齡不符。|  
+|E_INVALIDARG|無效的參數。|  
+|E_UNEXPECTED|已備妥資料來源。|  
   
-## 備註  
- .Pdb 檔案包含簽章\] 和 \[年齡\] 值。  這些值會複寫中的.exe 或.dll 檔案符合.pdb 檔。  準備資料來源，這個方法會驗證已命名的.pdb 檔案的簽章和年齡符合提供的值。  
+## <a name="remarks"></a>備註  
+ .Pdb 檔案中包含簽章和年齡的值。 這些值中的.exe 或.dll 檔案符合.pdb 檔複寫。 準備之前的資料來源，這個方法會驗證具名的.pdb 檔案的簽章和年齡符合所提供的值。  
   
- 若要載入而不需驗證的.pdb 檔案，請使用[IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
+ 若要載入的.pdb 檔不需要驗證，使用[idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)方法。  
   
- 若要存取資料載入程序 \(透過回呼機制\)，請使用[IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
+ 若要存取的資料載入程序 （透過回呼機制），請使用[idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)方法。  
   
- 若要直接從記憶體載入.pdb 檔，請使用[IDiaDataSource::loadDataFromIStream](../Topic/IDiaDataSource::loadDataFromIStream.md)方法。  
+ 若要直接從記憶體載入.pdb 檔案，請使用[idiadatasource:: Loaddatafromistream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)方法。  
   
-## 範例  
+## <a name="example"></a>範例  
   
-```cpp#  
+```C++  
 IDiaDataSource* pSource;  // Previously created data source.  
 DEFINE_GUID(expectedGUIDSignature,0x1234,0x5678,0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08);  
 DWORD expectedFileSignature = 0x12345678;  
@@ -89,8 +88,8 @@ if (FAILED(hr))
   
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)   
- [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
- [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
- [IDiaDataSource::loadDataFromIStream](../Topic/IDiaDataSource::loadDataFromIStream.md)
+ [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
+ [Idiadatasource:: Loaddatafrompdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md)   
+ [IDiaDataSource::loadDataFromIStream](../../debugger/debug-interface-access/idiadatasource-loaddatafromistream.md)

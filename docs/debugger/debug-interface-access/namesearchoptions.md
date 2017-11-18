@@ -1,70 +1,69 @@
 ---
-title: "NameSearchOptions | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "NameSearchOptions 列舉"
+title: "NameSearchOptions |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: NameSearchOptions enumeration
 ms.assetid: 67dfbede-2678-47df-b664-5c49841d0b9b
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ceadd085a3099721e73e04dd09ea5a0b81ad1d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# NameSearchOptions
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-指定符號和檔案名稱的搜尋的選項。  
+# <a name="namesearchoptions"></a>NameSearchOptions
+指定符號和檔案名稱的搜尋選項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum NameSearchOptions {   
-   nsNone,  
-   nsfCaseSensitive     = 0x1,  
-   nsfCaseInsensitive   = 0x2,  
-   nsfFNameExt          = 0x4,  
-   nsfRegularExpression = 0x8,  
-   nsfUndecoratedName   = 0x10,  
+```C++  
+enum NameSearchOptions {   
+   nsNone,  
+   nsfCaseSensitive     = 0x1,  
+   nsfCaseInsensitive   = 0x2,  
+   nsfFNameExt          = 0x4,  
+   nsfRegularExpression = 0x8,  
+   nsfUndecoratedName   = 0x10,  
   
 // For backward compatibility:  
-   nsCaseSensitive           = nsfCaseSensitive,  
-   nsCaseInsensitive         = nsfCaseInsensitive,  
-   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
-   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
-   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
+   nsCaseSensitive           = nsfCaseSensitive,  
+   nsCaseInsensitive         = nsfCaseInsensitive,  
+   nsFNameExt                = nsfCaseInsensitive | nsfFNameExt,  
+   nsRegularExpression       = nsfRegularExpression | nsfCaseSensitive,  
+   nsCaseInRegularExpression = nsfRegularExpression | nsfCaseInsensitive  
 };  
 ```  
   
-## 項目  
+## <a name="elements"></a>項目  
  `nsNone`  
  未指定任何選項。  
   
  `nsfCaseSensitive`  
- 套用大小寫視為相異的名稱相符的項目。  
+ 適用於區分大小寫名稱相符。  
   
  `nsfCaseInsensitive`  
- 適用於不區分大小寫的名稱相符的項目。  
+ 適用於不區分大小寫的名稱相符。  
   
  `nsfFNameExt`  
- 將名稱視為路徑，並套用 filename.ext 名稱相符的項目。  
+ 視為路徑名稱，並套用 filename.ext 名稱相符。  
   
  `nsfRegularExpression`  
- 套用大小寫視為相異的名稱相符項目使用星號 \(\*\) 和問號 \(?\) 作為萬用字元。  
+ 適用於使用星號 （*） 和問號 （？） 做為萬用字元區分大小寫名稱相符。  
   
  `nsfUndecoratedName`  
- 僅適用於符號的有兩個裝飾和裝飾名稱。  
+ 僅適用於具有未裝飾和裝飾名稱的符號。  
   
-## 備註  
- 這個列舉型別中的值會傳遞至下列方法：  
+## <a name="remarks"></a>備註  
+ 這個列舉的值傳遞給下列方法：  
   
 -   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
@@ -72,11 +71,11 @@ enum NameSearchOptions { 
   
 -   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
-## 需求  
- 標頭: dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： dia2.h  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)   
+ [Idiasession:: Findchildren](../../debugger/debug-interface-access/idiasession-findchildren.md)   
+ [Idiasession:: Findfile](../../debugger/debug-interface-access/idiasession-findfile.md)   
  [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)

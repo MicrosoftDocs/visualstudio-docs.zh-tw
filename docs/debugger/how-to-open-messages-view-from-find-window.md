@@ -1,56 +1,57 @@
 ---
-title: "如何：從尋找視窗開啟訊息檢視 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++ 中的訊息檢視, 開啟"
-  - "開啟 Spy++ 中的訊息檢視"
+title: "如何： 從尋找視窗開啟訊息檢視 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Messages View in Spy++, opening
+- opening Messages View in Spy++
 ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f69a79cbc80df206cd1c12abc9a34aa78eeb6194
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：從尋找視窗開啟訊息檢視
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您會發現使用 \[**尋找視窗**\] 對話方塊來選取目標視窗，接著開啟該視窗的 \[訊息\] 檢視，非常方便。  
+# <a name="how-to-open-messages-view-from-find-window"></a>如何：從尋找視窗開啟訊息檢視
+您可能會發現很方便使用**尋找視窗**對話方塊來選取目標視窗中，然後再開啟該視窗的訊息檢視。  
   
-### 若要使用尋找視窗對話方塊來開啟訊息檢視視窗  
+### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>若要開啟 訊息 檢視視窗使用 尋找視窗對話方塊  
   
-1.  將視窗排列成可以同時顯示 Spy\+\+ 及目標視窗。  
+1.  排列您的 windows，讓 Spy + + 和目標視窗會顯示。  
   
-2.  選擇 \[**Spy**\] 功能表中的 \[**尋找視窗**\]。  
+2.  從**Spy**功能表上，選擇**尋找視窗**。  
   
      [尋找視窗對話方塊](../debugger/find-window-dialog-box.md)隨即開啟。  
   
-3.  從 \[**視窗**\] 索引標籤，將 \[**搜尋工具**\] 拖曳到目標視窗上。  當您拖曳工具時，\[**尋找視窗**\] 對話方塊會顯示選取之視窗的詳細資訊。  
+3.  從**Windows**索引標籤，拖曳**搜尋工具**目標視窗之上。 當您拖曳工具，**尋找視窗** 對話方塊上選取的視窗中顯示詳細資料。  
   
-     \-或\-  
+     - 或 -  
   
-     如果您具有要檢查之視窗的控制代碼 \(例如，從偵錯工具複製\)，可以在 \[**控制代碼**\] 文字方塊中輸入該控制代碼。  
+     如果您有想要檢查 （例如，從 偵錯工具複製） 的視窗控制代碼時，您可以輸入到**處理**文字方塊。  
   
-4.  選取 \[**顯示**\] 底下的 \[**訊息**\]。  
+4.  在下**顯示**，選取**訊息**。  
   
-5.  按 \[**確定**\]。  
+5.  Press **OK**.  
   
-     空白的[訊息檢視](../debugger/messages-view.md)視窗隨即開啟，並且 \[**訊息**\] 功能表會加入至 \[Spy\+\+\] 工具列。  
+     空白[訊息檢視](../debugger/messages-view.md)視窗隨即開啟，並**訊息**功能表會加入至 Spy + + 工具列。  
   
-6.  從 \[**訊息**\] 功能表中選擇 \[**記錄選項**\]。  
+6.  從**訊息**功能表上，選擇**記錄選項**。  
   
      [訊息選項對話方塊](../debugger/message-options-dialog-box.md)隨即開啟。  
   
-7.  選取您要顯示之訊息的選項。  
+7.  選取您想要顯示之訊息的選項。  
   
-8.  按 \[**確定**\] 開始記錄訊息。  
+8.  按**確定**開始記錄訊息。  
   
-     視所選取的選項而定，訊息會開始資料流處理至作用中的 \[訊息\] 檢視視窗。  
+     選取的選項而定，訊息就會開始串流處理到作用中的 [訊息] 檢視視窗。  
   
-9. 當您有足夠的訊息時，選擇 \[**訊息**\] 功能表中的 \[**停止記錄**\]。
+9. 當您有足夠的訊息時，選擇**停止記錄**從**訊息**功能表。

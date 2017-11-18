@@ -1,44 +1,45 @@
 ---
-title: "CA1600：不要使用 Idle 處理序優先權 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DoNotUseIdleProcessPriority"
-  - "CA1600"
-helpviewer_keywords: 
-  - "CA1600"
-  - "DoNotUseIdleProcessPriority"
+title: "CA1600： 不要使用 idle 處理序優先權 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DoNotUseIdleProcessPriority
+- CA1600
+helpviewer_keywords:
+- CA1600
+- DoNotUseIdleProcessPriority
 ms.assetid: 9b0d073b-78b6-41be-8ef3-14692a735283
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e52a658bd6161542ce909b8294f33d6e4bf140ba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1600：不要使用 Idle 處理序優先權
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600：不要使用 Idle 處理序優先權
 |||  
 |-|-|  
-|型別名稱|DoNotUseIdleProcessPriority|  
+|TypeName|DoNotUseIdleProcessPriority|  
 |CheckId|CA1600|  
 |分類|Microsoft.Mobility|  
 |中斷變更|中斷|  
   
-## 原因  
- 當處理序設定為 `ProcessPriorityClass.Idle` 時，會引發這項規則。  
+## <a name="cause"></a>原因  
+ 此規則會發生於處理序會設定為`ProcessPriorityClass.Idle`。  
   
-## 規則描述  
- 請勿將處理序優先權設定為 Idle。  具有 `System.Diagnostics.ProcessPriorityClass.Idle` 的處理序會在應該閒置的時候佔用 CPU，因而阻礙 CPU 待命。  
+## <a name="rule-description"></a>規則描述  
+ 請勿將處理序優先權設定為 Idle。 處理程序`System.Diagnostics.ProcessPriorityClass.Idle`原本是閒置時，因而阻礙待命時，會佔用 CPU。  
   
-## 如何修正違規  
- 將處理序設定為 `ProcessPriorityClass.BelowNormal`。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要設定處理程序`ProcessPriorityClass.BelowNormal`。  
   
-## 隱藏警告的時機  
- 在必須有 Idle 處理序優先權，而且可以放心地忽略行動力考量時，才能隱藏這項規則。
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 閒置處理序優先權，且可以安全地忽略行動考量時，才應該隱藏此規則。

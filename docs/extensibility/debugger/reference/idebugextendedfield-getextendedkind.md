@@ -1,47 +1,49 @@
 ---
-title: "IDebugExtendedField::GetExtendedKind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExtendedField::GetExtendedKind"
-  - "GetExtendedKind"
+title: "IDebugExtendedField::GetExtendedKind |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugExtendedField::GetExtendedKind
+- GetExtendedKind
 ms.assetid: 20dc1c13-3cc0-4bb4-9c99-fa85587c86c3
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cebaf8348f31a2f5b95a7ce40bd1c41f3d76b6dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExtendedField::GetExtendedKind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的延伸的欄位種類。  
+# <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
+擷取指定的擴充的欄位類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetExtendedKind(  
-   FIELD_KIND_EX* pdwKind  
+   FIELD_KIND_EX* pdwKind  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetExtendedKind(  
-   ref enum_FIELD_KIND_EX pdwKind  
+   ref enum_FIELD_KIND_EX pdwKind  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdwKind`  
- 輸入 \[、 輸出\]從數值[FIELD\_KIND\_EX](../../../extensibility/debugger/reference/field-kind-ex.md)定義的欄位類型的列舉型別。  
+ [in、 out]從值[FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md)定義的欄位類型的列舉。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

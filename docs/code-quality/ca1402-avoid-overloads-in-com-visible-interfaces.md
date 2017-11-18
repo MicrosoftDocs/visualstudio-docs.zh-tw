@@ -1,11 +1,10 @@
 ---
-title: 'CA1402: Avoid overloads in COM visible interfaces | Microsoft Docs'
+title: "CA1402： 避免在 COM 可見介面中的多載 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,45 +14,29 @@ helpviewer_keywords:
 - AvoidOverloadsInComVisibleInterfaces
 - CA1402
 ms.assetid: 2724c1f9-d5d3-4704-b124-21c4d398e5df
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 59c167ccc0b33dade808b3537443de0c2ac18b82
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: fdba95f57b969173cdcbfecbb8c2d8bcbc298d32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Avoid overloads in COM visible interfaces
+# <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402：避免在 COM 可見介面中多載
 |||  
 |-|-|  
 |TypeName|AvoidOverloadsInComVisibleInterfaces|  
 |CheckId|CA1402|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Interoperability|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A Component Object Model (COM) visible interface declares overloaded methods.  
+## <a name="cause"></a>原因  
+ 元件物件模型 (COM) 可見的介面會宣告多載的方法。  
   
-## <a name="rule-description"></a>Rule Description  
- When overloaded methods are exposed to COM clients, only the first method overload retains its name. Subsequent overloads are uniquely renamed by appending to the name an underscore character '_' and an integer that corresponds to the order of declaration of the overload. For example, consider the following methods.  
+## <a name="rule-description"></a>規則描述  
+ 當多載方法會對 COM 用戶端公開 (Expose) 時，只有第一個方法多載會保留它的名稱。 後續的多載會重新命名為唯一的附加至底線字元 '_' 和對應的多載的宣告順序的整數。 例如，請考慮下列方法。  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -61,7 +44,7 @@ void SomeMethod(int valueOne, int valueTwo, int valueThree);
 void SomeMethod(int valueOne, int valueTwo);  
 ```  
   
- These methods are exposed to COM clients as the following.  
+ 這些方法會公開給 COM 用戶端，如下所示。  
   
 ```  
 void SomeMethod(int valueOne);  
@@ -69,26 +52,27 @@ void SomeMethod_2(int valueOne, int valueTwo, int valueThree);
 void SomeMethod_3(int valueOne, int valueTwo);  
 ```  
   
- Visual Basic 6 COM clients cannot implement interface methods by using an underscore in the name.  
+ Visual Basic 6 COM 用戶端無法實作介面方法名稱中使用底線。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, rename the overloaded methods so that the names are unique. Alternatively, make the interface invisible to COM by changing the accessibility to `internal` (`Friend` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) or by applying the <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> attribute set to `false`.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，多載的方法重新命名，是唯一的名稱。 或者，讓介面看不到 COM 藉由變更至協助工具`internal`(`Friend`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 或透過套用<xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName>屬性設為`false`。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows an interface that violates the rule and an interface that satisfies the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的介面與介面，可滿足規則。  
   
- [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)] [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
+ [!code-vb[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/VisualBasic/ca1402-avoid-overloads-in-com-visible-interfaces_1.vb)]
+ [!code-csharp[FxCop.Interoperability.OverloadsInterface#1](../code-quality/codesnippet/CSharp/ca1402-avoid-overloads-in-com-visible-interfaces_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1413：避免在 COM 可見實值型別中使用非公用欄位](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
- [CA1407: Avoid static members in COM visible types](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
+ [CA1407：避免在 COM 可見類型中使用靜態成員](../code-quality/ca1407-avoid-static-members-in-com-visible-types.md)  
   
- [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+ [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)   
- [Long Data Type](/dotnet/visual-basic/language-reference/data-types/long-data-type)
+## <a name="see-also"></a>另請參閱  
+ [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)   
+ [Long 資料類型](/dotnet/visual-basic/language-reference/data-types/long-data-type)

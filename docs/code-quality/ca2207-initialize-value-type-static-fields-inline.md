@@ -1,49 +1,50 @@
 ---
-title: "CA2207：必須初始化實值類型的靜態欄位內嵌 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "InitializeValueTypeStaticFieldsInline"
-  - "CA2207"
-helpviewer_keywords: 
-  - "CA2207"
-  - "InitializeValueTypeStaticFieldsInline"
+title: "CA2207： 必須初始化實值類型的靜態欄位內嵌 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- InitializeValueTypeStaticFieldsInline
+- CA2207
+helpviewer_keywords:
+- CA2207
+- InitializeValueTypeStaticFieldsInline
 ms.assetid: d1ea9d8b-ecc2-46ca-86e2-c41dd0e76658
-caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7f22975ba591e4300e54a4bda01f3802b393ae59
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2207：必須初始化實值類型的靜態欄位內嵌
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2207-initialize-value-type-static-fields-inline"></a>CA2207：必須初始化實值類型的靜態欄位內嵌
 |||  
 |-|-|  
-|型別名稱|InitializeValueTypeStaticFieldsInline|  
+|TypeName|InitializeValueTypeStaticFieldsInline|  
 |CheckId|CA2207|  
 |分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 實值型別會宣告明確的靜態建構函式。  
+## <a name="cause"></a>原因  
+ 實值類型會宣告明確靜態建構函式。  
   
-## 規則描述  
- 宣告實值型別時，它會經歷預設的初始設定，所有的實值型別欄位都會設為零，而所有參考型別 \(Reference Type\) 欄位都會設為 `null` \(Visual Basic 中為 `Nothing`\)。  明確的靜態建構函式只保證會在呼叫型別的執行個體建構函式或靜態成員之前執行。  因此，如果未呼叫執行個體建構函式就建立型別，則不保證會執行靜態建構函式。  
+## <a name="rule-description"></a>規則描述  
+ 實值型別宣告時，它會進行預設初始化其中所有的實值型別欄位會設定為零，而所有參考型別欄位會都設定為`null`(`Nothing`在 Visual Basic 中)。 明確的靜態建構函式只保證執行個體建構函式之前，或呼叫靜態成員的類型。 因此，如果型別而不需要呼叫的執行個體建構函式建立時，靜態建構函式不一定會執行。  
   
- 如果已初始化所有的靜態資料，而且未宣告明確的靜態建構函式，C\# 編譯器 \(Compiler\) 和 Visual Basic 編譯器就會將 `beforefieldinit` 旗標加入至 MSIL 類別 \(Class\) 定義。  編譯器也會加入包含靜態初始設定程式碼的私用靜態建構函式。  這個私用靜態建構函式保證會在存取型別的任何靜態欄位之前執行。  
+ 如果所有靜態資料會初始化的內嵌宣告，且沒有明確的靜態建構函式，C# 和 Visual Basic 編譯器新增`beforefieldinit`MSIL 類別定義的旗標。 編譯器也會加入私用靜態建構函式，其中包含靜態初始設定程式碼。 此私用靜態建構函式一定會執行前存取任何類型的靜態欄位。  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請在宣告所有靜態資料時將靜態資料初始化，並移除靜態建構函式。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形時宣告，因此移除靜態建構函式初始化的所有靜態資料。  
   
-## 隱藏警告的時機  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請勿隱藏此規則的警告。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1810：必須初始化參考類型內部的靜態欄位](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)

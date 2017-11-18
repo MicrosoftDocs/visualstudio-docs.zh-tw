@@ -1,63 +1,62 @@
 ---
-title: "Windows View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.externaltools.spyplus.windowsview"
-helpviewer_keywords: 
-  - "Windows view"
+title: "視窗檢視 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.externaltools.spyplus.windowsview
+helpviewer_keywords: Windows view
 ms.assetid: 154786ce-c803-4bfb-8198-f7962a900363
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d52dbe2dd362f657db4f974d81f418b4d26fd4f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Windows View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-初次開啟 Spy\+\+ 時，\[視窗\] 檢視會顯示系統中所有視窗和控制項的樹狀結構，  其中會顯示視窗控制代碼及類別名稱。  目前的桌面視窗是在樹狀結構的頂端。  所有其他視窗都是桌面的子系，並且會根據標準視窗階層架構列出。  同層級視窗會顯示在可展開的清單中，縮排於父代底下。  
+# <a name="windows-view"></a>視窗檢視
+當您第一次開啟 Spy + + 時，Windows 檢視會顯示系統中的所有視窗和控制項的樹狀結構。 視窗控制代碼和類別名稱會顯示。 目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層。 同層級視窗會顯示在其父代下方縮排的 expansible 清單。  
   
- 下圖顯示一般 Spy\+\+ \[視窗\] 檢視，其中頂層節點已展開。  
+ 下圖顯示典型的 Spy + + 視窗檢視以展開最上層節點。  
   
- ![Spy&#43;&#43; 視窗檢視](../debugger/media/spy--_windowsview.png "Spy\+\+\_WindowsView")  
-Spy\+\+ 視窗檢視  
+ ![Spy #43; &#43;視窗檢視](../debugger/media/spy--_windowsview.png "Spy + + _WindowsView")  
+Spy++ 視窗檢視  
   
- 目前的桌面視窗是在樹狀結構的頂端。  所有其他視窗都是桌面的子系，並且會根據標準視窗階層架構列出，而同層級視窗是依圖層順序排序。  您可以按一下節點旁的加號 \(\+\) 或減號 \(\-\)，以展開或摺疊樹狀結構的任何父節點。  
+ 目前的桌面視窗是樹狀結構的頂端。 所有其他 windows 桌面的子系，並列出根據標準的視窗階層中，依 z 軸順序排序的同層級視窗。 您可以展開或摺疊樹狀結構的任何父節點，只要按一下 + 或-之節點旁的符號。  
   
- 當 \[視窗\] 檢視取得焦點時，您可以使用[視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)中的 \[搜尋\] 工具，來顯示系統中任何已開啟視窗的資訊。  
+ 當視窗檢視有焦點時，您可以使用搜尋工具中的[視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)顯示資訊從任何視窗中開啟您的系統上。  
   
-## 本章節內容  
- [How to: Use the Finder Tool](../Topic/How%20to:%20Use%20the%20Finder%20Tool.md)  
- 示範這個工具如何掃描視窗中的屬性或訊息。  
+## <a name="in-this-section"></a>本章節內容  
+ [如何：使用搜尋工具](../debugger/how-to-use-the-finder-tool.md)  
+ 顯示此工具會用於屬性或訊息期間，所進行的掃描。  
   
- [How to: Search for a Window in Windows View](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- 說明如何在 \[視窗\] 檢視中尋找特定的視窗。  
+ [如何：在視窗檢視中搜尋視窗](../debugger/how-to-search-for-a-window-in-windows-view.md)  
+ 說明如何在視窗檢視中尋找特定的視窗。  
   
- [How to: Display Window Properties](../debugger/how-to-display-window-properties.md)  
- 開啟 \[視窗屬性\] 對話方塊的程序。  
+ [如何： 顯示視窗內容](../debugger/how-to-display-window-properties.md)m  
+ 開啟視窗屬性對話方塊中的程序。  
   
-## 相關章節  
- [Spy\+\+ Views](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+## <a name="related-sections"></a>相關章節  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [Using Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。  
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。  
   
  [尋找視窗對話方塊](../debugger/find-window-dialog-box.md)  
- 用來從特定視窗檢視屬性或訊息。  
+ 用來檢視屬性或從特定的視窗訊息。  
   
  [視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)  
- 用來在 \[視窗\] 檢視中尋找特定視窗的節點。  
+ 用來尋找特定的視窗，在視窗檢視中的節點。  
   
  [視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)  
- 用來在 \[視窗\] 檢視中顯示所選視窗的屬性。  
+ 用來顯示視窗，在視窗檢視中選取的屬性。  
   
- [Spy\+\+ Reference](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。

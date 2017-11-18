@@ -1,11 +1,10 @@
 ---
-title: 'CA2112: Secured types should not expose fields | Microsoft Docs'
+title: "CA2112： 受保護的類型不應該公開欄位 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,77 +14,62 @@ helpviewer_keywords:
 - SecuredTypesShouldNotExposeFields
 - CA2112
 ms.assetid: 9eb13a78-3487-49f2-81d1-3c3866db132f
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b57c27397fc28536aade5bb5907a0b8d6ad28aab
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d60784b92d414b6a226605cd406378c1686529dd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Secured types should not expose fields
+# <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112：受保護類型不應公開欄位
 |||  
 |-|-|  
 |TypeName|SecuredTypesShouldNotExposeFields|  
 |CheckId|CA2112|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected type contains public fields and is secured by a [Link Demands](/dotnet/framework/misc/link-demands).  
+## <a name="cause"></a>原因  
+ 公用或受保護的類型包含公用欄位，而且受到[連結要求](/dotnet/framework/misc/link-demands)。  
   
-## <a name="rule-description"></a>Rule Description  
- If code has access to an instance of a type that is secured by a link demand, the code does not have to satisfy the link demand to access the type's fields.  
+## <a name="rule-description"></a>規則描述  
+ 如果程式碼可存取受連結要求保護的類型執行個體，則程式碼不必滿足連結要求即可存取類型的欄位。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the fields nonpublic and add public properties or methods that return the field data. LinkDemand security checks on types protect access to the type's properties and methods. However, code access security does not apply to fields.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，讓非公用欄位和加入公用屬性或方法傳回的欄位資料。 在類型上的 LinkDemand 安全性檢查保護類型的屬性和方法的存取權。 不過，程式碼存取安全性並不會套用至欄位。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Both for security issues and for good design, you should fix violations by making the public fields nonpublic. You can suppress a warning from this rule if the field does not hold information that should remain secured, and you do not rely on the contents of the field.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全性問題和良好的設計，您應藉由公用欄位 nonpublic 修復違規。 如果欄位不會儲存資訊應該保持安全，您可以隱藏此規則的警告，您不會依賴欄位的內容。  
   
-## <a name="example"></a>Example  
- The following example is composed of a library type (`SecuredTypeWithFields`) with unsecured fields, a type (`Distributor`) that can create instances of the library type and mistaken passes instances to types do not have permission to create them, and application code that can read an instance's fields even though it does not have the permission that secures the type.  
+## <a name="example"></a>範例  
+ 下列範例由程式庫類型所組成 (`SecuredTypeWithFields`) 不安全的欄位，型別 (`Distributor`)，可以建立程式庫類型的執行個體和誤用了的傳遞至類型的執行個體沒有權限來建立它們，而且應用程式程式碼的可以讀取執行個體欄位，即使它沒有權限，可保護類型。  
   
- The following library code violates the rule.  
+ 下列程式庫程式碼違反此規則。  
   
  [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]  
   
-## <a name="example"></a>Example  
- The application cannot create an instance because of the link demand that protects the secured type. The following class enables the application to obtain an instance of the secured type.  
+## <a name="example"></a>範例  
+ 應用程式無法建立執行個體，因為連結要求保護受保護的型別。 下列類別可讓應用程式取得安全類型的執行個體。  
   
  [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]  
   
-## <a name="example"></a>Example  
- The following application illustrates how, without permission to access a secured type's methods, code can access its fields.  
+## <a name="example"></a>範例  
+ 下列應用程式會說明如何，沒有權限來存取安全的類型的方法，程式碼可以存取其欄位。  
   
  [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **Creating an instance of SecuredTypeWithFields.**  
-**Secured type fields: 22, 33**  
-**Changing secured type's field...**  
-**Cached Object fields: 99, 33**   
-## <a name="related-rules"></a>Related Rules  
- [CA1051: Do not declare visible instance fields](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
+ **建立 SecuredTypeWithFields 的執行個體。**  
+**保護類型欄位： 22、 33**  
+**變更受保護的型別欄位...**  
+**快取物件欄位： 99、 33**   
+## <a name="related-rules"></a>相關的規則  
+ [CA1051：不要宣告可見的執行個體欄位](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)  
   
-## <a name="see-also"></a>See Also  
- [Link Demands](/dotnet/framework/misc/link-demands)   
- [Data and Modeling](/dotnet/framework/data/index)
+## <a name="see-also"></a>另請參閱  
+ [連結要求](/dotnet/framework/misc/link-demands)   
+ [資料與模型化](/dotnet/framework/data/index)

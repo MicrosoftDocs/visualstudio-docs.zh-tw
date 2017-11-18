@@ -1,5 +1,5 @@
 ---
-title: Bind objects in Visual Studio | Microsoft Docs
+title: "在 Visual Studio 中的物件繫結 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,140 +15,131 @@ helpviewer_keywords:
 - object binding
 - binding, to objects
 ms.assetid: ed743ce6-73af-45e5-a8ff-045eddaccc86
-caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: edf6d3725453c16666cfeb61c8a7d8817e652044
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="bind-objects-in-visual-studio"></a>Bind objects in Visual Studio
-Visual Studio provides design-time tools for working with custom objects as the data source in your application. When you want to store data from a database in an object that you bind to UI controls, the recommended approach is to use Entity Framework to generate the class or classes. Entity Framework auto-generates all the boilerplate change-tracking code, which means that any changes to the local objects are automatically persisted to the database when you call AcceptChanges on the DbSet object. For more information, see [Entity Framework Documentation](https://ef.readthedocs.org/en/latest/).  
+# <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
+Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂物件。 當您想要將資料庫的資料儲存在您繫結至 UI 控制項的物件時，建議的方法就是使用 Entity Framework 來產生類別。 Entity Framework 自動產生所有重複使用變更追蹤程式碼，這表示，本機物件的任何變更會自動保存至資料庫時您 DbSet 物件上呼叫 AcceptChanges。 如需詳細資訊，請參閱[Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。  
   
 > [!TIP]
->  The approaches to object binding in this article should only be considered if your application is already based on datasets.These approaches can also be used if you are already familiar with datasets, and the data you will be processing is tabular and not too complex or too big. For an even simpler example, involving loading data directly into objects by using a DataReader and manually updating the UI without databinding, see [Create a simple data application by using ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
+>  如果您的應用程式已經根據資料集，應該只考慮這篇文章中的物件繫結的方法。如果您已熟悉的資料集，而且您要處理的資料是表格式和太複雜或太大，也可以使用這些方法。 如需甚至更簡單的範例，牽涉到將資料載入直接物件藉由使用 DataReader 手動更新 UI 而不進行資料繫結，請參閱[使用 ADO.NET 建立簡單資料應用程式](../data-tools/create-a-simple-data-application-by-using-adonet.md)。  
   
-## <a name="object-requirements"></a>Object requirements  
- The only requirement for custom objects to work with the data design tools in Visual Studio is that the object needs at least one public property.  
+## <a name="object-requirements"></a>物件的需求  
+ 若要使用資料設計工具，Visual Studio 中的自訂物件的唯一需求是需要至少一個公用屬性，該物件。  
   
- Generally, custom objects do not require any specific interfaces, constructors, or attributes to act as a data source for an application. However, if you want to drag the object from the **Data Sources** window to a design surface to create a data-bound control, and if the object implements the <xref:System.ComponentModel.ITypedList> or <xref:System.ComponentModel.IListSource> interface, the object must have a default constructor. Otherwise, Visual Studio cannot instantiate the data source object, and it displays an error when you drag the item to the design surface.  
+ 一般而言，自訂物件不需要任何特定介面、 建構函式或做為應用程式的資料來源的屬性。 不過，如果您想要將物件從**資料來源**視窗至設計介面，以建立資料繫結控制項，而且如果物件實作<xref:System.ComponentModel.ITypedList>或<xref:System.ComponentModel.IListSource>介面，物件必須有預設值建構函式。 否則，Visual Studio 無法具現化的資料來源物件，而且它會顯示錯誤，當您將項目拖曳至設計介面。  
   
-## <a name="examples-of-using-custom-objects-as-data-sources"></a>Examples of using custom objects as data sources  
- While there are countless ways to implement your application logic when working with objects as a data source, for SQL databases there are a few standard operations that can be simplified by using the Visual Studio-generated TableAdapter objects. This page explains how to implement these standard processes using TableAdapters.It is not intended as a guide for creating your custom objects. For example, you will typically perform the following standard operations regardless of the specific implementation of your objects, or application's logic:  
+## <a name="examples-of-using-custom-objects-as-data-sources"></a>使用自訂物件做為資料來源的範例  
+ 有無數的方式來實作您的應用程式邏輯，做為資料來源使用物件時，sql database 有。 一些標準的作業，可簡化使用 Visual Studio 產生的 TableAdapter 物件 此頁面說明如何實作這些標準處理程序使用 TableAdapters.It 不適合做為指南建立自訂物件。 例如，您通常會執行下列標準作業，不論特定實作的物件或應用程式的邏輯：  
   
--   Loading data into objects (typically from a database).  
+-   將資料載入物件 （通常是從資料庫中）。  
   
--   Creating a typed collection of objects.  
+-   建立具類型的物件集合。  
   
--   Adding objects to and removing objects from a collection.  
+-   將物件新增至，並從集合中移除物件。  
   
--   Displaying the object data to users on a form.  
+-   顯示在表單上的使用者物件資料。  
   
--   Changing/editing the data in an object.  
+-   變更/編輯的資料物件中。  
   
--   Saving data from objects back to the database.   
+-   將資料從物件儲存回資料庫。   
   
-### <a name="load-data-into-objects"></a>Load data into objects  
- For this example, you load data into your objects by using TableAdapters. By default, TableAdapters are created with two kinds of methods that fetch data from a database and populate data tables.  
+### <a name="load-data-into-objects"></a>將資料載入物件  
+ 例如，您將資料載入物件使用 Tableadapter。 根據預設，Tableadapter 會建立具有兩種方法，從資料庫擷取資料並填入資料的資料表。  
   
--   The `TableAdapter.Fill` method fills an existing data table with the data returned.  
+-   `TableAdapter.Fill`方法傳回的資料填入現有資料表。  
   
--   The `TableAdapter.GetData` method returns a new data table populated with data.  
+-   `TableAdapter.GetData`方法會傳回新的資料表會填入資料。  
   
- The easiest way to load your custom objects with data is to call the `TableAdapter.GetData` method, loop through the collection of rows in the returned data table, and populate each object with the values in each row. You can create a `GetData` method that returns a populated data table for any query added to a TableAdapter.  
-  
-> [!NOTE]
->  Visual Studio names the TableAdapter queries `Fill` and `GetData` by default, but those names can be changed to any valid method name.  
-  
- The following example shows how to loop through the rows in a data table, and populate an object with data:  
-  
- [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)] [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]  
-  
-### <a name="create-a-typed-collection-of-objects"></a>Create a typed collection of objects  
- You can create collection classes for your objects, or use the typed collections that are automatically provided by the [BindingSource Component](/dotnet/framework/winforms/controls/bindingsource-component).  
-  
- When you are creating a custom collection class for objects, we suggest that you inherit from <xref:System.ComponentModel.BindingList%601>. This generic class provides functionality to administer your collection, as well as the ability to raise events that send notifications to the data-binding infrastructure in Windows Forms.  
-  
- The automatically-generated collection in the <xref:System.Windows.Forms.BindingSource> uses a <xref:System.ComponentModel.BindingList%601> for its typed collection. If your application does not require additional functionality, then you can maintain your collection within the <xref:System.Windows.Forms.BindingSource>. For more information, see the <xref:System.Windows.Forms.BindingSource.List%2A> property of the <xref:System.Windows.Forms.BindingSource> class.  
+ 載入自訂資料物件的最簡單方式是呼叫`TableAdapter.GetData`方法，傳回的資料表中的資料列集合執行迴圈，並將填入每個物件中每個資料列的值。 您可以建立`GetData`傳回已填入的資料的資料表加入至 TableAdapter 的任何查詢的方法。  
   
 > [!NOTE]
->  If your collection requires functionality not provided by the base implementation of the <xref:System.ComponentModel.BindingList%601>, you should create a custom collection so you can add to the class as needed.  
+>  Visual Studio 命名 TableAdapter 查詢`Fill`和`GetData`根據預設，但是可以變更這些名稱的任何有效的方法名稱。  
   
- The following code shows how to create the class for a strongly-typed collection of `Order` objects:  
+ 下列範例會示範如何重複使用的資料表資料列資料，並填入具有資料的物件：  
   
- [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)] [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]  
+ [!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
+ [!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]  
   
-### <a name="add-objects-to-a-collection"></a>Add objects to a collection  
- You add objects to a collection by calling the `Add` method of your custom collection class or of the <xref:System.Windows.Forms.BindingSource>.  
+### <a name="create-a-typed-collection-of-objects"></a>建立物件的集合型別  
+ 您可以建立的集合類別的物件，或使用由自動提供的類型的集合[BindingSource 元件](/dotnet/framework/winforms/controls/bindingsource-component)。  
+  
+ 當您建立之物件的自訂集合類別時，我們建議您繼承自<xref:System.ComponentModel.BindingList%601>。 此泛型類別提供功能來管理您的集合，以及引發事件會傳送通知給 Windows Form 中的資料繫結基礎結構的能力。  
+  
+ 中的自動產生集合<xref:System.Windows.Forms.BindingSource>使用<xref:System.ComponentModel.BindingList%601>其類型的集合。 如果您的應用程式不需要額外的功能，則您可以維護您的集合內<xref:System.Windows.Forms.BindingSource>。 如需詳細資訊，請參閱<xref:System.Windows.Forms.BindingSource.List%2A>屬性<xref:System.Windows.Forms.BindingSource>類別。  
+  
+> [!NOTE]
+>  如果您的集合需要的功能未提供的基底實作<xref:System.ComponentModel.BindingList%601>，因此您可以依需要新增至類別，您應該建立自訂的集合。  
+  
+ 下列程式碼示範如何建立強型別集合的類別`Order`物件：  
+  
+ [!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
+ [!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]  
+  
+### <a name="add-objects-to-a-collection"></a>將物件加入至集合  
+ 將物件加入至集合的呼叫`Add`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。  
   
  
 > [!NOTE]
->  The `Add` method is automatically provided for your custom collection when you inherit from <xref:System.ComponentModel.BindingList%601>.  
+>  `Add`方法會自動提供給您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。  
   
- The following code shows how to add objects to the typed collection in a <xref:System.Windows.Forms.BindingSource>:  
+ 下列程式碼示範如何將物件加入至具型別集合中<xref:System.Windows.Forms.BindingSource>:  
   
- [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)] [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]  
+ [!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
+ [!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]  
   
- The following code shows how to add objects to a typed collection that inherits from <xref:System.ComponentModel.BindingList%601>:  
-  
-> [!NOTE]
->  In this example the `Orders` collection is a property of the `Customer` object.  
-  
- [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)] [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]  
-  
-### <a name="remove-objects-from-a-collection"></a>Remove objects from a collection  
- You remove objects from a collection by calling the `Remove` or `RemoveAt` method of your custom collection class or of <xref:System.Windows.Forms.BindingSource>.  
+ 下列程式碼示範如何將物件加入至繼承的型別集合<xref:System.ComponentModel.BindingList%601>:  
   
 > [!NOTE]
->  The `Remove` and `RemoveAt` methods are automatically provided for your custom collection when you inherit from <xref:System.ComponentModel.BindingList%601>.  
+>  在此範例中`Orders`集合是屬性的`Customer`物件。  
   
- The following code shows how to locate and remove objects from the typed collection in a <xref:System.Windows.Forms.BindingSource> with the <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> method:  
+ [!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
+ [!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]  
   
- [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)] [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]  
+### <a name="remove-objects-from-a-collection"></a>從集合中移除物件  
+ 從集合移除物件藉由呼叫`Remove`或`RemoveAt`方法，或您的自訂集合類別的<xref:System.Windows.Forms.BindingSource>。  
   
-### <a name="display-object-data-to-users"></a>Display object data to users  
- To display the data in objects to users, create an object data source using the **Data Source Configuration** wizard, and then drag the entire object or individual properties onto your form from the **Data Sources** window.  
+> [!NOTE]
+>  `Remove`和`RemoveAt`方法會自動提供為您自訂的集合。 當您繼承自<xref:System.ComponentModel.BindingList%601>。  
   
-### <a name="modify-the-data-in-objects"></a>Modify the data in objects  
- To edit data in custom objects that are data-bound to Windows Forms controls, simply edit the data in the bound control (or directly in the object's properties). Data-binding architecture updates the data in the object.  
+ 下列程式碼示範如何找出並從具型別集合中移除物件<xref:System.Windows.Forms.BindingSource>與<xref:System.Windows.Forms.BindingSource.RemoveAt%2A>方法：  
   
- If your application requires the tracking of changes and the rolling back of proposed changes to their original values, then you must implement this functionality in your object model. For examples of how data tables keep track of proposed changes, see <xref:System.Data.DataRowState>, <xref:System.Data.DataSet.HasChanges%2A>, and <xref:System.Data.DataTable.GetChanges%2A>.  
+ [!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
+ [!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]  
   
-### <a name="save-data-in-objects-back-to-the-database"></a>Save data in objects back to the database  
- Save data back to the database by passing the values from your object to the TableAdapter's DBDirect methods.  
+### <a name="display-object-data-to-users"></a>向使用者顯示物件資料  
+ 若要顯示給使用者物件資料，建立物件資料來源使用**資料來源組態**精靈，然後將整個物件或個別屬性拖曳至表單，從**資料來源**視窗。  
   
- Visual Studio creates DBDirect methods that can be executed directly against the database. These methods do not require DataSet or DataTable objects.  
+### <a name="modify-the-data-in-objects"></a>修改物件中的資料  
+ 若要編輯的資料繫結至 Windows Form 控制項的自訂物件中的資料，只需編輯繫結控制項 （或直接在物件內容中） 中的資料。 資料繫結架構更新物件中的資料。  
   
-|TableAdapter DBDirect method|Description|  
+ 如果您的應用程式需要追蹤變更，並建議變更復原為其原始值，您必須在物件模型中實作這項功能。 如需如何資料資料表追蹤的建議的變更的範例，請參閱<xref:System.Data.DataRowState>， <xref:System.Data.DataSet.HasChanges%2A>，和<xref:System.Data.DataTable.GetChanges%2A>。  
+  
+### <a name="save-data-in-objects-back-to-the-database"></a>將資料儲存在資料庫物件  
+ 從物件的值傳遞至 TableAdapter 的 DBDirect 方法，將資料儲存回資料庫。  
+  
+ Visual Studio 會建立可以直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。  
+  
+|TableAdapter DBDirect 方法|說明|  
 |----------------------------------|-----------------|  
-|`TableAdapter.Insert`|Adds new records to a database, allowing you to pass in individual column values as method parameters.|  
-|`TableAdapter.Update`|Updates existing records in a database. The Update method takes original and new column values as method parameters. The original values are used to locate the original record, and the new values are used to update that record.<br /><br /> The `TableAdapter.Update` method is also used to reconcile changes in a dataset back to the database, by taking a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, <xref:System.Data.DataRow>, or array of <xref:System.Data.DataRow>s as method parameters.|  
-|`TableAdapter.Delete`|Deletes existing records from the database based on the original column values passed in as method parameters.|  
+|`TableAdapter.Insert`|將新記錄新增至資料庫，讓您在個別資料行值做為方法參數中傳遞。|  
+|`TableAdapter.Update`|更新現有的資料庫中的記錄。 更新方法會接受原始和新的資料行值做為方法參數。 用來尋找原始記錄中，原始值和新值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也用來協調回資料庫，變更集中的資料，採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或陣列<xref:System.Data.DataRow>做為方法參數。|  
+|`TableAdapter.Delete`|刪除現有記錄為方法參數傳入的原始資料行值為基礎的資料庫。|  
   
- To save data from a collection of objects, loop through the collection of objects (for example, using a for-next loop).Send the values for each object to the database by using the TableAdapter's DBDirect methods.  
+ 若要將資料儲存從物件的集合，循環 （例如，使用迴圈的下一步） 物件的集合。使用 TableAdapter 的 DBDirect 方法，每個物件的值傳送至資料庫。  
   
- The following example shows how to use the `TableAdapter.Insert` DBDirect method to add a new customer directly into the database:  
+ 下列範例示範如何使用`TableAdapter.Insert`DBDirect 方法，將新的客戶，直接在資料庫：  
   
- [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)] [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
+ [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
+ [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱  
+ [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)
