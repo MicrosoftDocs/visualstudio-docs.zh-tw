@@ -1,48 +1,51 @@
 ---
-title: "InitializeCorrelation 活動設計工具 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "System.ServiceModel.Activities.InitializeCorrelation.UI"
+title: "InitializeCorrelation 活動設計工具 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: System.ServiceModel.Activities.InitializeCorrelation.UI
 ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
-caps.latest.revision: 6
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 387b5420614fed3f4d5f956f5a91fe2ece70d53a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# InitializeCorrelation 活動設計工具
-\[**InitializeCorrelation**\] 活動設計工具會用來建立及設定 <xref:System.ServiceModel.Activities.InitializeCorrelation> 活動，而該活動是用來在傳送或接受訊息前，先建立訊息之間的相互關聯。  
+# <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活動設計工具
+**InitializeCorrelation**活動設計工具用來建立及設定<xref:System.ServiceModel.Activities.InitializeCorrelation>用來建立訊息之前傳送或接收它們之間的相互關聯的活動。  
   
-## InitializeCorrelation 活動  
- <xref:System.ServiceModel.Activities.InitializeCorrelation> 活動會用來在不傳送或接收訊息的情況下初始化相互關聯。相互關聯通常會在傳送或接收訊息時初始化。如果必須在傳送或接收訊息之前建立相互關聯，請使用 <xref:System.ServiceModel.Activities.InitializeCorrelation> 來初始化相互關聯。  
+## <a name="the-initializecorrelation-activity"></a>InitializeCorrelation 活動  
+ <xref:System.ServiceModel.Activities.InitializeCorrelation> 活動會用來在不傳送或接收訊息的情況下初始化相互關聯。 相互關聯通常會在傳送或接收訊息時初始化。 如果必須在傳送或接收訊息之前建立相互關聯，請使用 <xref:System.ServiceModel.Activities.InitializeCorrelation> 來初始化相互關聯。  
   
-### 使用 InitializeCorrelation 活動設計工具  
- \[**InitializeCorrelation**\] 活動設計工具位於 \[**工具箱**\] 的 \[**傳訊**\] 類別中，若要存取，請按一下 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 上的 \[**工具箱**\] 索引標籤 \(也可以從 \[**檢視**\] 功能表選取 \[**工具列**\]，或是按 CTRL\+ALT\+X\)。  
+### <a name="using-the-initializecorrelation-activity-designer"></a>使用 InitializeCorrelation 活動設計工具  
+ **InitializeCorrelation**活動設計工具位於**傳訊**分類**工具箱**，即可存取的哪一個**工具箱**索引標籤上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)](或者，選取**工具列**從**檢視**功能表或 CTRL + ALT + X。)  
   
- \[**InitializeCorrelation**\] 活動設計工具可以從 \[**工具箱**\] 拖曳至 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 介面上。這會建立一個 <xref:System.ServiceModel.Activities.InitializeCorrelation> 活動，具有 InitializeCorrelation 的預設 <xref:System.Activities.Activity.DisplayName%2A>。<xref:System.Activities.Activity.DisplayName%2A> 可以在 \[**InitializeCorrelation**\] 活動設計工具的標頭中編輯，或是在 \[**屬性**\] 視窗的 \[**DisplayName**\] 方塊中編輯。  
+ **InitializeCorrelation**活動設計工具可以從拖曳**工具箱**，置放到上[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面。 這會建立<xref:System.ServiceModel.Activities.InitializeCorrelation>預設值的活動<xref:System.Activities.Activity.DisplayName%2A>的 InitializeCorrelation.The<xref:System.Activities.Activity.DisplayName%2A>可編輯的標頭中**InitializeCorrelation**活動設計工具或在**DisplayName**方塊**屬性**視窗。  
   
- <xref:System.ServiceModel.Activities.CorrelationHandle> 可以在 \[**InitializeCorrelation**\] 活動設計工具介面上 \[**屬性**\] 視窗的 \[**相互關聯**\] 欄位中指定。  
+ <xref:System.ServiceModel.Activities.CorrelationHandle>可以是指定在**相互關聯**欄位**屬性**視窗上的**InitializeCorrelation**活動設計工具介面。  
   
- 按一下 \[**屬性**\] 視窗中 \[**CorrelationData**\] 欄位上的省略符號按鈕，或 \[**InitializeCorrelation**\] 活動設計工具介面上的 \[檢視\] 提示文字，就會顯示 \[**InitializeCorrelation**\] 對話方塊，您可從中指定相互關聯控制代碼，以及用來初始化的索引鍵值組。[!INCLUDE[crabout](../test/includes/crabout_md.md)]以進一步了解如何使用此對話方塊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。  
+ 按一下省略符號按鈕，除了**CorrelationData**欄位**屬性**視窗或 檢視 提示文字上的**InitializeCorrelation**活動設計工具介面會顯示**初始化相互關聯** 對話方塊可指定相互關聯控制代碼，用來初始化它的索引鍵-值組。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]使用此對話方塊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。  
   
-### InitializeCorrelation 屬性  
- 下表顯示 <xref:System.ServiceModel.Activities.InitializeCorrelation> 屬性，並且描述屬性在設計工具中的使用方式。這些屬性可以在 \[**屬性**\] 視窗中或在 [!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)] 介面上編輯。  
+### <a name="the-initializecorrelation-properties"></a>InitializeCorrelation 屬性  
+ 下表顯示 <xref:System.ServiceModel.Activities.InitializeCorrelation> 屬性，並且描述屬性在設計工具中的使用方式。 這些屬性可以在編輯**屬性**視窗或在[!INCLUDE[wfd2](../workflow-designer/includes/wfd2_md.md)]介面。  
   
-|屬性名稱|必要|使用方式|  
-|----------|--------|----------|  
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活動的易記名稱。預設值為 InitializeCorrelation。<br /><br /> 雖然不是必須使用非預設值做為易記 <xref:System.Activities.Activity.DisplayName%2A>，但建議您盡量使用這類型的值。|  
+|屬性名稱|必要項|使用方式|  
+|-------------------|--------------|-----------|  
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活動的易記名稱。 預設值為 InitializeCorrelation。<br /><br /> 雖然不是必須使用非預設值做為易記 <xref:System.Activities.Activity.DisplayName%2A>，但建議您盡量使用這類型的值。|  
 |<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|用於與相互關聯中工作流程活動相關聯的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|  
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|相互關聯資料的字典，該字典會使訊息與工作流程執行個體產生關聯。<br /><br /> 使用 \[**初始化相互關聯**\] 對話方塊可以設定 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>。[!INCLUDE[crabout](../test/includes/crabout_md.md)]以進一步了解此對話方塊的用法，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。|  
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|相互關聯資料的字典，該字典會使訊息與工作流程執行個體產生關聯。<br /><br /> 使用**初始化相互關聯**對話方塊來設定<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]使用此對話方塊，請參閱[型別集合編輯器對話方塊](../workflow-designer/type-collection-editor-dialog-box.md)主題。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
- [Receive](../workflow-designer/receive-activity-designer.md)   
+ [接收](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
- [Send](../workflow-designer/send-activity-designer.md)   
+ [傳送](../workflow-designer/send-activity-designer.md)   
  [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)   
  [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

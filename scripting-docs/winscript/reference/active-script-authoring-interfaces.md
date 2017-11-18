@@ -1,27 +1,31 @@
 ---
-title: "動態指令碼撰寫的介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "ActivAut.h"
-  - "動態指令碼撰寫的介面"
+title: "使用中指令碼撰寫介面 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- Active Script Authoring interfaces
+- ActivAut.h
 ms.assetid: 7bc6e64d-1291-4b4f-86b7-ab906252a109
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8140ba8991b02879d2fc586001f4ea8f7d1d004b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 動態指令碼撰寫的介面
-ActivAut.h 標頭檔提供一節所列的介面。  
+# <a name="active-script-authoring-interfaces"></a>動態指令碼撰寫的介面
+ActivAut.h 標頭檔會提供本章節所列的介面。  
   
-## 在本節中  
- 下列介面啟用網頁建立:  
+## <a name="in-this-section"></a>本章節內容  
+ 下列的介面可讓網頁撰寫：  
   
 -   [IActiveScriptAuthor 介面](../../winscript/reference/iactivescriptauthor-interface.md)  
   
@@ -33,5 +37,5 @@ ActivAut.h 標頭檔提供一節所列的介面。
   
 -   [IScriptScriptlet 介面](../../winscript/reference/iscriptscriptlet-interface.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Windows 指令碼介面參考](../../winscript/reference/windows-script-interfaces-reference.md)

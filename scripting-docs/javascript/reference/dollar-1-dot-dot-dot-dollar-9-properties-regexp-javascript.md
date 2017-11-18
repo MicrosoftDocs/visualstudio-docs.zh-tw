@@ -1,53 +1,54 @@
 ---
-title: "$1...$9 屬性 (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "$1...$9"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "$1...$9 屬性"
+title: "$1...$9 屬性 (RegExp) (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: $1...$9
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: $1...$9 properties
 ms.assetid: 8bd84851-f62f-4eb1-a93d-b67135ea091a
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fc1926d6281c9003c432c9c9e89a73a48a584ef4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# $1...$9 屬性 (RegExp) (JavaScript)
-傳回模式比對期間所找到的九個最近的記憶部分。  唯讀。  
+# <a name="19-properties-regexp-javascript"></a>$1...$9 屬性 (RegExp) (JavaScript)
+傳回所九個最近記憶模式比對期間發現的部分。 唯讀。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 RegExp.$n   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `RegExp`  
- 一定是全域 `RegExp` 物件。  
+ 一律將全域`RegExp`物件。  
   
  `n`  
  從 1 到 9 的任何整數。  
   
-## 備註  
- 只要括號中的項目比對成功，就會修改 **$1...$9** 屬性的值。  在規則運算式模式中可指定加上括號的任何子字串數目，但只能儲存最近的九個子字串。  
+## <a name="remarks"></a>備註  
+ 值**$1...$9**成功括以括號比對時，會修改的屬性。 在規則運算式模式中，可指定任意數目的括號括住的子字串，但會儲存只有最近的九個。  
   
-## 範例  
- 下列範例會執行規則運算式搜尋。  它會顯示全域 `RegExp` 物件中的相符項目與子相符項目。  子相符項目是 `$1…$9` 屬性中所包含的成功比對括號中項目。  此範例也會顯示 `exec` 方法所傳回之陣列中的相符項目與子相符項目。  
+## <a name="example"></a>範例  
+ 下列範例會執行規則運算式搜尋。 它會顯示相符項目，並從全域 submatches`RegExp`物件。 子相符項目是成功的括號括住相符項目中所包含的`$1...$9`屬性。 此範例也會顯示相符項目，並且 submatches 從傳回的陣列`exec`方法。  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var re = /(\w+)@(\w+)\.(\w+)/g  
@@ -103,10 +104,10 @@ document.write(s);
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
- **適用於**：[RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
+ **適用於**: [RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
   
-## 請參閱  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/zh-tw/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>另請參閱  
+ [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

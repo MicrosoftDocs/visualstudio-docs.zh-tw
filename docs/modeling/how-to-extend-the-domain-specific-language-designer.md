@@ -1,49 +1,51 @@
 ---
-title: "如何︰ 擴充網域指定的語言設計工具 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "如何： 擴充網域特定語言設計工具 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
-caps.latest.revision: 9
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 44b3ea3d3997ac781b02220316810f00826f2beb
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 如何︰ 擴充網域指定的語言設計工具
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以對您用來編輯 DSL 定義設計工具的擴充功能。 類型的擴充功能，可讓您加入功能表命令加入處理常式拖曳和按兩下筆勢，與特定類型的值或關聯性變更時觸發的規則。 擴充功能可以封裝為 Visual Studio 整合擴充功能 \(VSIX\)，並散發給其他使用者。  
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>如何：擴充網域指定的語言設計工具
+您可以對您用來編輯 DSL 定義設計工具的擴充功能。 類型的擴充功能，可讓您加入功能表命令加入處理常式拖放軌跡，以及觸發特定類型的值或關聯性變更時的規則，連按兩下。 的擴充功能可以封裝成 Visual Studio 整合擴充功能 (VSIX)，並散發給其他使用者。  
   
- 程式碼範例及有關這項功能的詳細資訊，請參閱 Visual Studio [Visualization and Modeling SDK \(VMSDK\) 網站](http://go.microsoft.com/fwlink/?LinkID=186128)。  
+ 程式碼範例及有關這項功能的詳細資訊，請參閱 Visual Studio [Visualization and Modeling SDK (VMSDK) 網站](http://go.microsoft.com/fwlink/?LinkID=186128)。  
   
-## 設定方案  
- 設定包含您的擴充功能的程式碼的專案，並將專案匯出的 VSIX 專案。 方案可以包含相同的 VSIX 會納入其他專案。  
+## <a name="setting-up-the-solution"></a>設定解決方案  
+ 設定專案包含您的擴充功能的程式碼和 VSIX 專案，專案會匯出。 方案可以包含相同的 VSIX 會納入其他專案。  
   
-#### 若要建立 DSL 設計工具擴充功能方案  
+#### <a name="to-create-a-dsl-designer-extension-solution"></a>若要建立 DSL 設計工具擴充功能方案  
   
-1.  建立新的專案使用類別庫專案範本。 在 **新的專案** 對話方塊中，按一下 \[ **Visual C\#** ，然後在中間視窗中，按一下 \[ **類別庫**。  
+1.  建立新專案使用類別庫專案範本。 在**新專案**對話方塊中，按一下  **Visual C#** ，然後在中間視窗中，按一下 **類別庫**。  
   
      這個專案會包含您的擴充功能的程式碼。  
   
-2.  建立新的專案使用 VSIX 專案範本。 在 **新的專案** 對話方塊方塊中，展開 **Visual C\#**, ，按一下 \[ **擴充性**, ，然後在中間視窗中選取 **VSIX 專案**。  
+2.  建立新專案使用 VSIX 專案範本。 在**新專案**對話方塊方塊中，展開  **Visual C#**，按一下 **擴充性**，然後在中間視窗中選取**VSIX 專案**。  
   
-     選取 **將加入至方案**。  
+     選取**將加入至方案**。  
   
-     Source.extension.vsixmanifest 會在 VSIX 資訊清單編輯器中開啟。  
+     在 VSIX 資訊清單編輯器中，開啟 Source.extension.vsixmanifest。  
   
-3.  上方的 \[內容\] 欄位中，按一下 **加入內容**。  
+3.  上方的 [內容] 欄位中按一下**將內容加入**。  
   
-4.  在 **加入內容** \] 對話方塊中，將 **內容類型\] 選取** 至 **MEF 元件**, ，並設定 **專案** 您類別庫專案。  
+4.  在**將內容加入** 對話方塊中，將**選取內容類型**至**MEF 元件**，並設定**專案**您類別庫專案。  
   
-5.  按一下 \[ **選取版本** 並確定 **Visual Studio 企業版** 已核取。  
+5.  按一下**選取版本**並確定**Visual Studio Enterprise**已核取。  
   
 6.  請確定 VSIX 專案方案的啟始專案。  
   
-7.  在類別庫專案中，加入下列組件的參考︰  
+7.  在類別庫專案中，加入下列組件的參考：  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -63,27 +65,27 @@ caps.handback.revision: 9
   
      System.Windows.Forms  
   
-## 測試和部署  
- 若要測試本主題中的任何擴充功能，建置並執行方案。[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在此例中，開啟 DSL 方案。 編輯 DslDefinition 圖表。 可以看到延伸模組行為。  
+## <a name="testing-and-deployment"></a>測試和部署  
+ 若要測試本主題中的任何擴充功能，建置並執行方案。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本例中，開啟 DSL 方案。 編輯 DslDefinition 圖表。 可以看到延伸模組行為。  
   
- 若要部署的延伸模組的主要 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], ，和其他電腦，請執行下列步驟︰  
+ 若要部署的擴充功能的主要[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，和其他電腦，請遵循下列步驟：  
   
-1.  VSIX 安裝檔案時，尋找 VSIX 專案中 bin\\\*\\\*.vsix  
+1.  VSIX 安裝檔案，尋找 VSIX 專案中分類收納\\*\\\*.vsix  
   
-2.  這個檔案複製到目標電腦，並在 Windows 檔案總管\] （或檔案總管） 中，按兩下它。  
+2.  將這個檔案複製到目標電腦，並在 Windows 檔案總管 （或檔案總管） 中，按兩下它。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擴充管理員隨即開啟，確認已安裝延伸模組。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]擴充管理員隨即開啟，確認已安裝擴充功能。  
   
- 若要解除安裝擴充功能，請遵循下列步驟︰  
+ 若要解除安裝擴充功能，請遵循下列步驟：  
   
-1.  在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], 上 **工具** \] 功能表上，按一下 \[ **擴充管理員**。  
+1.  在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]上**工具**功能表上，按一下 **擴充管理員**。  
   
-2.  選取的擴充功能，並將它刪除。  
+2.  選取擴充功能，並將它刪除。  
   
-## 加入快顯功能表命令  
- 若要讓 DSL 設計工具介面上或在 \[DSL 總管\] 視窗中顯示的捷徑功能表命令，撰寫類別，如下列所示。  
+## <a name="adding-a-shortcut-menu-command"></a>加入快顯功能表命令  
+ 若要讓 DSL 設計工具介面上或 [DSL 總管] 視窗中顯示的捷徑功能表命令，請撰寫類別，如下列所示。  
   
- 此類別必須實作 `ICommandExtension` 而且必須具有屬性 `DslDefinitionModelCommandExtension`。  
+ 此類別必須實作`ICommandExtension`必須要有屬性和`DslDefinitionModelCommandExtension`。  
   
 ```  
 using System.Collections.Generic;  
@@ -145,8 +147,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
 }  
 ```  
   
-## 處理滑鼠動作  
- 程式碼是類似功能表命令的程式碼。  
+## <a name="handling-mouse-gestures"></a>處理滑鼠動作  
+ 與功能表命令的程式碼相似的程式碼。  
   
 ```  
 [DslDefinitionModelGestureExtension]  
@@ -206,8 +208,8 @@ namespace Fabrikam.SimpleDslDesignerExtension
  }  
 ```  
   
-## 回應值變更  
- 這個處理常式必須在網域模型，才能正確地運作。 我們提供一個簡單的網域模型。  
+## <a name="responding-to-value-changes"></a>回應值變更  
+ 這個處理常式必須在網域模型，才能正確運作。 我們提供一個簡單的網域模型。  
   
 ```  
 using System.Diagnostics;  

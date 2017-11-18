@@ -1,37 +1,39 @@
 ---
-title: "在規則運算式中必須是 &#39;]&#39; (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT5019"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "必須是 &#39;]&#39;在規則運算式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT5019
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4c59dcbeea91a1bc01e870d0a49fd22cace6562d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 在規則運算式中必須是 &#39;]&#39; (JavaScript)
-您嘗試建立用於規則運算式比對的字元類別，但是卻遺漏右方括弧。  用方括弧括住個別的常值字元組合，就能將它們組合成字元類別。  字元類別會針對內含的字元逐一進行比對。  例如，內含字元為 \/\[abc\]\/，則 "a"、"b" 或 "c" 都屬於比對符合的字母。  
+# <a name="expected-3939-in-regular-expression-javascript"></a>必須是 &#39;]&#39;在規則運算式 (JavaScript)
+您嘗試建立的規則運算式比對的字元類別，但未包含右方括號。 可以將它們放入方括號內，將個別的常值字元組合組合成字元類別。 字元類別符合其中任何一個字元。 例如，/ [abc] / 符合任何一個字母"a"、"b"或"c"。  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   將右方括弧加入至規則運算式。  
+-   加入的規則運算式的右括號。  
   
     > [!NOTE]
-    >  如果您希望比對單一方括弧，請使用反斜線逸出該方括弧 \(例如 \\\[\)，如此 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 就不會將其解譯為特殊字元。  
+    >  如果您想要比對單一括號，逸出反斜線- \\[，讓它將不會解譯為特殊字元的[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/zh-tw/ab0766e1-7037-45ed-aa23-706f58358c0e)
+ [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

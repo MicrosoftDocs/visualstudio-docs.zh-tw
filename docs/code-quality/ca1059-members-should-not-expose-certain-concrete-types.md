@@ -1,55 +1,56 @@
 ---
-title: "CA1059：成員不應該公開特定的具象類型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
-helpviewer_keywords: 
-  - "CA1059"
-  - "MembersShouldNotExposeCertainConcreteTypes"
+title: "CA1059： 成員不應該公開特定的具象類型 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1059
+- MembersShouldNotExposeCertainConcreteTypes
+helpviewer_keywords:
+- MembersShouldNotExposeCertainConcreteTypes
+- CA1059
 ms.assetid: 59f61f52-8d6c-49cb-aefb-191910523a3c
-caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d5b8b4a50ce23a7ed50f2e608334f9b438a0b090
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1059：成員不應該公開特定的具象類型
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059：成員不應該公開特定的具象類型
 |||  
 |-|-|  
-|型別名稱|MembersShouldNotExposeCertainConcreteTypes|  
+|TypeName|MembersShouldNotExposeCertainConcreteTypes|  
 |CheckId|CA1059|  
 |分類|Microsoft.Design|  
 |中斷變更|中斷|  
   
-## 原因  
- 外部可見的成員是特定的具象型別，或者會透過它的其中一個參數或傳回值公開特定的具象型別。  此規則目前會報告下列具象型別的公開：  
+## <a name="cause"></a>原因  
+ 外部可見成員是特定具象型別或公開特定的具象類型，透過的其中一個參數或傳回值。 目前，此規則會回報下列的具象類型的風險：  
   
--   衍生自 <xref:System.Xml.XmlNode?displayProperty=fullName> 的型別。  
+-   型別衍生自<xref:System.Xml.XmlNode?displayProperty=fullName>。  
   
-## 規則描述  
- 具象型別就是具有完整實作 \(Implementation\) 且因此能加以具現化 \(Instantiated\) 的型別。  若要讓成員能廣泛使用，請使用建議的介面取代具象型別。  如此可讓成員接受任何會實作此介面的型別，或是用於預期要有實作介面之型別的地方。  
+## <a name="rule-description"></a>規則描述  
+ 具象類型就是具有完整實作 (Implementation) 且因此能加以具現化 (Instantiated) 的類型。 若要允許的成員能廣泛使用，請使用建議的介面取代具象型別。 這可讓成員接受任何實作介面的型別，或是使用所實作之介面的型別。  
   
- 下表會列出目標具象型別及其建議的取代介面。  
+ 下表列出的目標的具象類型，以及其建議的取代項目。  
   
-|具象型別|取代型|  
-|----------|---------|  
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> 使用此介面以減少 XML 資料來源之特定實作的成員|  
+|具象型別|Replacement|  
+|-------------------|-----------------|  
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> 使用介面，以減少從 XML 資料來源的特定實作的成員。|  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將具象型別變更為建議的介面。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，變更至建議的介面的具象型別。  
   
-## 隱藏警告的時機  
- 如果必須由具象型別提供特定功能，則您可以放心地隱藏此規則的訊息。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的訊息是否需要提供具象類型的特定功能。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1011：建議將基底類型當做參數傳遞](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

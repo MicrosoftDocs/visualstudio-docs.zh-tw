@@ -1,50 +1,52 @@
 ---
-title: "caller 屬性 (函式) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "caller"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "caller 屬性"
-  - "函式呼叫，正在執行的函式"
+title: "caller 屬性 （函式） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: caller
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- caller property
+- function calls, functions that are executing
 ms.assetid: ae210853-7160-4102-9cfd-ab489f180ce1
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8c6eef1b8304612c2ed16a4cc389bf3b2a28b70f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# caller 屬性 (函式) (JavaScript)
-取得叫用目前函式的函式。  
+# <a name="caller-property-function-javascript"></a>caller 屬性 (函式) (JavaScript)
+取得叫用目前的函式的函式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 functionName.caller  
 ```  
   
-## 備註  
- `functionName` 物件是任何執行中函式的名稱。  
+## <a name="remarks"></a>備註  
+ `functionName`物件名稱的任何執行函式。  
   
- `caller` 屬性只會定義給正在執行的函式。  如果從 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 程式的頂層呼叫函式，則 `caller` 會包含 `null`。  
+ `caller`屬性定義的函式只有時，函式正在執行。 如果呼叫此函式會從最上方的層級[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]程式`caller`包含`null`。  
   
- 如果 `caller` 屬性使用於字串內容中，則其結果與 `functionName`.`toString` 相同，也就是說，會顯示出函式的解譯文字。  
+ 如果`caller`屬性內容中所用的字串，則結果為相同`functionName`。`toString`，也就是反編譯函式的顯示文字。  
   
- 下列範例說明 `caller` 屬性的使用方式：  
+ 下面範例會說明 `caller` 屬性的使用：  
   
-```javascript  
+```JavaScript  
 function CallLevel(){  
    if (CallLevel.caller == null)  
       return("CallLevel was called from the top level.");  
@@ -57,8 +59,8 @@ document.write(CallLevel());
 // Output: CallLevel was called from the top level.  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv2](../../javascript/reference/includes/jsv2-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [function 陳述式](../../javascript/reference/function-statement-javascript.md)

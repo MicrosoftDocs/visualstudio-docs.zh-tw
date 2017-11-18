@@ -1,53 +1,56 @@
 ---
-title: "slice 方法 (ArrayBuffer) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "slice 方法 (ArrayBuffer) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 2dcc51ff-f444-4d51-80ba-3bcd845ba0ae
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 25fc10a02b4a3422a6720ad91c8bba29906da0e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# slice 方法 (ArrayBuffer)
-傳回 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) 的一個區段。  
+# <a name="slice-method-arraybuffer"></a>slice 方法 (ArrayBuffer)
+傳回的一個區段[ArrayBuffer](../../javascript/reference/arraybuffer-object.md)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 arrayBufferObj.slice(start, [end])   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `arrayBufferObj`  
- 必要項。  從中複製區段的 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) 物件。  
+ 必要項。 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) > 一節將會從複製的物件。  
   
  `start`  
- 必要項。  要複製之區段開頭的位元組索引。  
+ 必要項。 要複製之區段開頭的位元組索引。  
   
  `end`  
- 選擇項。  要複製之區段結尾的位元組索引。  
+ 選擇項。 要複製之區段結尾的位元組索引。  
   
-## 備註  
- `slice` 方法傳回 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) 物件，內含 `arrayBufferObj` 的指定部分。  
+## <a name="remarks"></a>備註  
+ `slice`方法會傳回[ArrayBuffer](../../javascript/reference/arraybuffer-object.md)物件，其中包含的指定的部分`arrayBufferObj`。  
   
- `slice` 方法會複製到 \(但不含\) `end` 所指出的位元組。  如果 `start` 或 `end` 是負值，則會分別將指定的索引視為 `length` \+ `start` 或 `end`，其中 `length` 是 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md) 的長度。  如果省略 `end`，則會一直擷取到 `arrayBufferObj` 的結尾。  如果 `end` 位在 `start` 的前面，則不會將位元組複製至新的 [ArrayBuffer](../../javascript/reference/arraybuffer-object.md)。  
+ `slice` 方法會複製到 (但不含) `end` 所指出的位元組。 如果`start`或`end`是負數，指定的索引會被視為`length`  +  `start`或`end`分別其中`length`段[ArrayBuffer](../../javascript/reference/arraybuffer-object.md). 如果省略 `end`，則會一直擷取到 `arrayBufferObj` 的結尾。 如果`end`之前發生`start`，不會將位元組複製到新[ArrayBuffer](../../javascript/reference/arraybuffer-object.md)。  
   
-## 範例  
+## <a name="example"></a>範例  
  下列範例顯示如何使用 `slice` 方法。  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -67,8 +70,8 @@ var req = new XMLHttpRequest();
     }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11_winonly](../../javascript/reference/includes/jsv11-winonly-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [ArrayBuffer 物件](../../javascript/reference/arraybuffer-object.md)

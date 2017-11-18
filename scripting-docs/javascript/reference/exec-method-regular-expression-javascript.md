@@ -1,58 +1,60 @@
 ---
-title: "exec 方法 (規則運算式) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "exec"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Exec 方法"
-  - "比對字串"
+title: "exec 方法 （規則運算式） 的 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: exec
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- matching strings
+- Exec method
 ms.assetid: 83092452-60cc-4218-b4ae-af9e3cb96c34
-caps.latest.revision: 17
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 426cc1a8162b03090289cf737a03d64a75df77e9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# exec 方法 (規則運算式) (JavaScript)
-利用規則運算式模式執行字串搜尋，然後傳回包含該搜尋結果的陣列。  
+# <a name="exec-method-regular-expression-javascript"></a>exec 方法 (規則運算式) (JavaScript)
+使用規則運算式模式，在字串上執行搜尋並傳回陣列，其中包含該搜尋的結果。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 rgExp.exec(str)   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `rgExp`  
- 必要項。  包含規則運算式模式和適用旗標之**規則運算式**物件的執行個體。  
+ 必要項。 執行個體**規則運算式**物件，其中包含規則運算式模式和適用旗標。  
   
  `str`  
- 必要項。  要執行搜尋的目標 `String` 物件或字串常值。  
+ 必要項。 `String`物件或字串常值在其上執行搜尋。  
   
-## 備註  
- 如果 `exec` 方法找不到符合的項目，便會傳回 `null`。  如果找到符合的項目，則 `exec` 會傳回一個陣列，然後更新全域 `RegExp` 物件的屬性來反映符合項目的結果。  陣列的元素零包含所有相符項目，而元素 1 – *n* 則包含了相符項目中的任何子相符項目。  此行為相當於不設定全域旗標 \(**g**\) 的 `match` 方法。  
+## <a name="remarks"></a>備註  
+ 如果`exec`方法找不到相符項目，它會傳回`null`。 如果找到相符項目，`exec`的全域屬性和陣列，會傳回`RegExp`物件會更新以反映比對的結果。 陣列的零個項目包含整個相符項目，而元素 1-  *n* 包含相符項目內所發生的任何子相符項目。 此行為是相同的行為`match`方法，而不全域旗標 (**g**) 設定。  
   
- 如果規則運算式已經設定了全域旗標，`exec` 將會從 `lastIndex` 值指定的位置開始搜尋字串。  如果未設定全域旗標，`exec` 則會略過 `lastIndex` 值，並從字串開頭開始搜尋。  
+ 如果規則運算式，設定全域旗標`exec`搜尋字串開頭的值所指示之位置`lastIndex`。 如果未設定全域旗標，`exec`會忽略此值的`lastIndex`和從字串的開頭進行搜尋。  
   
- `exec` 方法傳回的陣列有三種屬性：**input**、**index** 及 **lastIndex**。 **input** 屬性包含整個搜尋的字串。  **index** 屬性包含了在整個搜尋字串中相符子字串的位置。  `lastIndex` 屬性則包含了相符項目中跟著最後一個字元的位置。  
+ 所傳回的陣列`exec`方法有三個屬性，**輸入**，**索引**和**lastIndex。** **輸入**屬性包含整個搜尋的字串。 **索引**屬性包含在完整的搜尋字串中相符的子字串的位置。 `lastIndex`屬性包含在比對最後一個字元之後的位置。  
   
-## 範例  
- 在下列範例中，說明了如何使用 `exec` 方法：  
+## <a name="example"></a>範例  
+ 下列範例說明使用`exec`方法：  
   
-```javascript  
+```JavaScript  
 function RegExpTest()  
 {  
    var ver = Number(ScriptEngineMajorVersion() + "." + ScriptEngineMinorVersion())  
@@ -79,15 +81,15 @@ function RegExpTest()
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **適用於**：[規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)  
+ **適用於**:[規則運算式物件](../../javascript/reference/regular-expression-object-javascript.md)  
   
-## 請參閱  
- [match 方法 \(字串\)](../../javascript/reference/match-method-string-javascript.md)   
+## <a name="see-also"></a>另請參閱  
+ [match 方法 （字串）](../../javascript/reference/match-method-string-javascript.md)   
  [RegExp 物件](../../javascript/reference/regexp-object-javascript.md)   
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/zh-tw/ab0766e1-7037-45ed-aa23-706f58358c0e)   
- [search 方法 \(字串\)](../../javascript/reference/search-method-string-javascript.md)   
- [test 方法 \(規則運算式\)](../../javascript/reference/test-method-regular-expression-javascript.md)   
- [Regular Expression Programming \(JavaScript\)](http://msdn.microsoft.com/zh-tw/3b62e27c-4f07-4726-a95b-6e841807bfaf)
+ [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)   
+ [search 方法 （字串）](../../javascript/reference/search-method-string-javascript.md)   
+ [測試方法 （規則運算式）](../../javascript/reference/test-method-regular-expression-javascript.md)   
+ [規則運算式程式設計 (JavaScript)](http://msdn.microsoft.com/en-us/3b62e27c-4f07-4726-a95b-6e841807bfaf)

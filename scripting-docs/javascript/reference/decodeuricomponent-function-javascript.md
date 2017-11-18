@@ -1,49 +1,50 @@
 ---
-title: "decodeURIComponent 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "decodeURIComponent"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "decodeURIComponent 方法"
+title: "decodeURIComponent 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: decodeURIComponent
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: decodeURIComponent method
 ms.assetid: 486ccee2-afd7-4863-97ce-4adb50cf39c0
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ef7bdcd374a328bad632381d19e9823853d37f01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# decodeURIComponent 函式 (JavaScript)
-取得已編碼之統一資源識別元 \(Uniform Resource Identifier，URI\) 元件的未編碼版本。  
+# <a name="decodeuricomponent-function-javascript"></a>decodeURIComponent 函式 (JavaScript)
+取得解碼的編碼元件的統一資源識別元 (URI) 版本。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 decodeURIComponent(encodedURIString)  
 ```  
   
-## 備註  
- 必要的 `encodedURIString` 引數的值表示已編碼的 URI 元件。  
+## <a name="remarks"></a>備註  
+ 所需`encodedURIString`引數是代表編碼的 URI 元件的值。  
   
- URIComponent 是完整 URI 的一部分。  
+ URIComponent 是完整的 URI 的一部分。  
   
- 如果 `encodedURIString` 無效，就會發生 URIError。  
+ 如果`encodedURIString`不正確，就會發生 URIError。  
   
-## 範例  
- 下列程式碼會先編碼 URI 字串，然後加以解碼。  
+## <a name="example"></a>範例  
+ 下列程式碼第一次編碼，並再將解碼的 URI。  
   
-```javascript  
+```JavaScript  
 var uriEncode = encodeURI ("http://www.Not a URL.com");  
 var uriDecode = decodeURIComponent(uriEncode);  
   
@@ -56,9 +57,9 @@ document.write (uriDecode);
 // http://www.Not a URL.com  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv55](../../javascript/reference/includes/jsv55-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [decodeURI 函式](../../javascript/reference/decodeuri-function-javascript.md)   
  [encodeURI 函式](../../javascript/reference/encodeuri-function-javascript.md)

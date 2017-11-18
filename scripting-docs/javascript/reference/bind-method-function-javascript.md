@@ -1,60 +1,63 @@
 ---
-title: "bind 方法 (函式) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "引數 [JavaScript], bind 方法"
-  - "bind 方法 [JavaScript]"
-  - "參數 [JavaScript], bind 方法"
-  - "this 關鍵字 [JavaScript], bind 方法"
+title: "bind 方法 （函式） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- parameters [JavaScript], bind method
+- arguments [JavaScript], bind method
+- bind method [JavaScript]
+- this keyword [JavaScript], bind method
 ms.assetid: 28946f47-b758-48cf-b508-610a0f2f6e19
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: dd7fc752df9bd41f8625ac2cb484486dfd19558d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# bind 方法 (函式) (JavaScript)
-針對指定的函式，建立具有與原始函式相同主體的繫結函式。  在繫結函式中，`this` 物件會解析為傳入的物件。  繫結函式具有指定的初始參數。  
+# <a name="bind-method-function-javascript"></a>bind 方法 (函式) (JavaScript)
+針對指定的函式，建立具有與原始函式相同主體的繫結函式。 在繫結函式中，`this` 物件會解析為傳入的物件。 繫結函式具有指定的初始參數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 function.bind(thisArg[,arg1[,arg2[,argN]]])  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `function`  
- 必要項。  函式物件。  
+ 必要項。 函式物件。  
   
  `thisArg`  
- 必要項。  `this` 關鍵字可在新函式中參考的物件。  
+ 必要項。 `this` 關鍵字可在新函式中參考的物件。  
   
- `arg1`\[,`arg2`\[,`argN`\]\]\]  
- 選擇項。  要傳遞給新函式的引數清單。  
+ `arg1`[,`arg2`[,`argN`]]]  
+ 選擇項。 要傳遞給新函式的引數清單。  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  與 `function` 函式相同，但是 `thisArg` 物件和初始引數不同的新函式。  
   
-## 例外狀況  
+## <a name="exceptions"></a>例外狀況  
  如果指定的 `function` 引數不是函式，就會擲回 `TypeError` 例外狀況。  
   
-## 範例  
+## <a name="example"></a>範例  
  下列程式碼將示範如何使用 `bind` 方法。  
   
-```javascript  
+```JavaScript  
 // Define the original function.  
 var checkNumericRange = function (value) {  
     if (typeof value !== 'number')  
@@ -76,10 +79,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## 範例  
+## <a name="example"></a>範例  
  在下列範例中，`thisArg` 物件與包含原始方法的物件不同。  
   
-```javascript  
+```JavaScript  
 // Create an object that contains the original function.  
 var originalObject = {  
     minimum: 50,  
@@ -109,10 +112,10 @@ document.write(result);
 // Output: true  
 ```  
   
-## 範例  
- 下列程式碼將示範如何使用 `arg1[,arg2[,argN]]]` 引數。  繫結函式會使用 `bind` 方法中指定的參數做為第一個和第二個參數。  呼叫繫結函式時指定的所有參數都會當做第三個、第四個 \(依此類推\) 參數使用。  
+## <a name="example"></a>範例  
+ 下列程式碼將示範如何使用 `arg1[,arg2[,argN]]]` 引數。 繫結函式會使用 `bind` 方法中指定的參數做為第一個和第二個參數。 呼叫繫結函式時指定的所有參數都會當做第三個、第四個 (依此類推) 參數使用。  
   
-```javascript  
+```JavaScript  
 // Define the original function with four parameters.  
 var displayArgs = function (val1, val2, val3, val4) {  
     document.write(val1 + " " + val2 + " " + val3 + " " + val4);  
@@ -130,11 +133,11 @@ displayArgs2("b", "c");
 // Output: 12 a b c   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## 請參閱  
- [Function 物件](../../javascript/reference/function-object-javascript.md)   
- [filter 方法 \(陣列\)](../../javascript/reference/filter-method-array-javascript.md)   
+## <a name="see-also"></a>另請參閱  
+ [函式物件](../../javascript/reference/function-object-javascript.md)   
+ [filter 方法 （陣列）](../../javascript/reference/filter-method-array-javascript.md)   
  [使用 bind 方法](../../javascript/advanced/using-the-bind-method-javascript.md)   
- [Hilo JavaScript 範例應用程式 \(Windows 市集\)](http://hilojs.codeplex.com/SourceControl/latest)
+ [Hilo JavaScript 範例應用程式 （Windows 市集）](http://hilojs.codeplex.com/SourceControl/latest)
