@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDisassemblyStream2::GetCodeLocationId
-helpviewer_keywords:
-- IDebugDisassemblyStream2::GetCodeLocationId
+f1_keywords: IDebugDisassemblyStream2::GetCodeLocationId
+helpviewer_keywords: IDebugDisassemblyStream2::GetCodeLocationId
 ms.assetid: 567adfb8-2f54-499a-a027-e4ecb82277ef
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 2757130ec88cee8d9bdfe28008a8e19834f9f8fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0614509685436f46a2f48eb8b6a6299321f84901
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 傳回特定的程式碼內容的程式碼位置識別項。  

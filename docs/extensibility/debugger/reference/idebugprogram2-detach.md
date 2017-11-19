@@ -1,45 +1,45 @@
 ---
-title: "IDebugProgram2::Detach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Detach"
-helpviewer_keywords: 
-  - "IDebugProgram2::Detach"
+title: "IDebugProgram2::Detach |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Detach
+helpviewer_keywords: IDebugProgram2::Detach
 ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3d916bf047471e506166610882313d66177448fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Detach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-卸離與該程式的偵錯引擎。  
+# <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
+中斷連結的程式的偵錯引擎。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Detach(   
-   void   
+```cpp  
+HRESULT Detach(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Detach();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 已中斷的程式仍繼續執行，但不偵錯工作階段的一部份。  一旦偵錯引擎中斷連結，就會不傳送任何程式偵錯事件。  
+## <a name="remarks"></a>備註  
+ 中斷連結的程式會繼續執行，但卻不會再偵錯工作階段的一部分。 一旦卸離的偵錯引擎時，會不傳送任何程式偵錯事件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

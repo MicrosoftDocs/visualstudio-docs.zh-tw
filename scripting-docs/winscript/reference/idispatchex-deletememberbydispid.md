@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::DeleteMemberByDispID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::DeleteMemberByDispID |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.DeleteMemberByDispID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DeleteMemberByDispID 方法"
+helpviewer_keywords: DeleteMemberByDispID method
 ms.assetid: f61231e5-ba93-4ac3-bde8-d363548356b3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 573eb60dc901e43706835c4d627b25bd54bbe751
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::DeleteMemberByDispID
-由 DISPID 刪除成員。  
+# <a name="idispatchexdeletememberbydispid"></a>IDispatchEx::DeleteMemberByDispID
+刪除成員的 DISPID。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT DeleteMemberByDispID(  
@@ -29,24 +32,24 @@ HRESULT DeleteMemberByDispID(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `id`  
- 成員識別項。  使用 `GetDispID` 或 `GetNextDispID` 取得分派識別項。  
+ 成員識別碼。 使用`GetDispID`或`GetNextDispID`取得的分派識別項。  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
 |`S_FALSE`|成員存在，但無法刪除。|  
   
-## 備註  
- 如果成員刪除，用做需要會持續有效。 `GetNextDispID`。  
+## <a name="remarks"></a>備註  
+ 如果刪除的成員，則必須一直保持有效的 DISPID `GetNextDispID`。  
   
- 如果具有指定名稱的成員刪除，並具有相同名稱的成員之後重新建立，用做應該是相同的。  \(只有大小寫不同的成員名稱是「相同的」是物件而定\)。  
+ 如果已刪除具有指定名稱的成員之後重新建立具有相同名稱的成員，DISPID 應相同。 （只有大小寫不同的成員名稱是否是 「 相同 」 是物件而定）。  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
 BSTR bstrName;  
@@ -58,7 +61,7 @@ if (SUCCEEDED(pdex->GetDispID(bstrName, fdexNameCaseSensitive, &dispid)))
     pdex->DeleteMemberByDispID(dispid);  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

@@ -1,52 +1,54 @@
 ---
-title: "IDebugGenericParamField::GetNameOfFormalParam | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetNameOfFormalParam"
-  - "GetNameOfFormalParam"
+title: "IDebugGenericParamField::GetNameOfFormalParam |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugGenericParamField::GetNameOfFormalParam
+- GetNameOfFormalParam
 ms.assetid: 05032a83-49ce-4007-b5d6-7b56945b956c
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e524c03536296107aad7ebfd5250a9b28043f5d5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetNameOfFormalParam
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取這個泛用參數的名稱。  
+# <a name="idebuggenericparamfieldgetnameofformalparam"></a>IDebugGenericParamField::GetNameOfFormalParam
+擷取這個泛型參數的名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetNameOfFormalParam (  
-   BSTR* pbstrName  
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNameOfFormalParam (  
-   string pbstrName  
+   string pbstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pbstrName`  
- \[\] out這個泛用參數的名稱。  
+ [out]這個泛型參數的名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugGenericParamFieldType**公開物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetNameOfFormalParam(BSTR *pbstrName)  
 {  
     HRESULT hr = S_OK;  
@@ -65,5 +67,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

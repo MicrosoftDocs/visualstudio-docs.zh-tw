@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPort2::EnumProcesses
-helpviewer_keywords:
-- IDebugPort2::EnumProcesses
+f1_keywords: IDebugPort2::EnumProcesses
+helpviewer_keywords: IDebugPort2::EnumProcesses
 ms.assetid: aafb32c5-5790-4807-a448-878a80256438
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f233c26695a0209ba9987865fc370ca28ad27c2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e16d46d63ee6f2cac5998c84c62299bb2e909948
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 傳回所有連接埠上執行的處理序清單。  

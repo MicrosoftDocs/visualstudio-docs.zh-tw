@@ -1,74 +1,73 @@
 ---
-title: "IDiaSectionContrib | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib 介面"
+title: "IDiaSectionContrib |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib interface
 ms.assetid: 371d40f6-ca0e-4d7e-9210-64d3768996c6
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f7effcc96286fc548b42c810789d1cb902bb3c18
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-描述區段中所佔比重的擷取資料，也就是連續的記憶體區塊至映像所產生的編譯。  
+# <a name="idiasectioncontrib"></a>IDiaSectionContrib
+描述區段比重的擷取資料，也就是連續的記憶體區塊至映像所提供的編譯模組。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
-IDiaSectionContrib : IUnknown  
+IDiaSectionContrib : IUnknown  
 ```  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaSectionContrib`。  
   
-|方法|描述|  
-|--------|--------|  
-|[IDiaSectionContrib::get\_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|擷取提供本章節的編譯符號的參考。|  
-|[IDiaSectionContrib::get\_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|擷取所佔比重的地址\] 區段部份。|  
-|[IDiaSectionContrib::get\_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|擷取位移所佔比重的地址部份。|  
-|[IDiaSectionContrib::get\_relativeVirtualAddress](../Topic/IDiaSectionContrib::get_relativeVirtualAddress.md)|擷取的映像相對虛擬位址 \(RVA\) 的比重。|  
-|[IDiaSectionContrib::get\_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|擷取所佔比重的虛擬位址 \(VA\)。|  
-|[IDiaSectionContrib::get\_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|擷取一節中的位元組的數目。|  
-|[IDiaSectionContrib::get\_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|會擷取旗標，指出是否區段無法分頁記憶體用完。|  
-|[IDiaSectionContrib::get\_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|會擷取旗標，表示是否區段應該不會填補接下來的記憶體界限。|  
-|[IDiaSectionContrib::get\_code](../Topic/IDiaSectionContrib::get_code.md)|會擷取旗標，指出是否區段包含可執行程式碼。|  
-|[IDiaSectionContrib::get\_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|會擷取旗標，指出是否區段包含 16 位元的程式碼。|  
-|[IDiaSectionContrib::get\_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|會擷取旗標，指出是否區段包含初始化的資料。|  
-|[IDiaSectionContrib::get\_uninitializedData](../Topic/IDiaSectionContrib::get_uninitializedData.md)|會擷取旗標，指出是否區段包含未初始化的資料。|  
-|[IDiaSectionContrib::get\_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|會擷取旗標，指出是否一個區段包含註解或類似的資訊。|  
-|[IDiaSectionContrib::get\_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|會擷取旗標，表示它由記憶體中影像的一部份之前，是否要移除區段。|  
-|[IDiaSectionContrib::get\_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|會擷取旗標，指示區段是否為衝突的記錄。|  
-|[IDiaSectionContrib::get\_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|會擷取旗標，指出是否可以捨棄一節。|  
-|[IDiaSectionContrib::get\_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|會擷取旗標，指出是否無法快取的區段。|  
-|[IDiaSectionContrib::get\_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|會擷取旗標，指出是否可以在記憶體中共用區段。|  
-|[IDiaSectionContrib::get\_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|會擷取旗標，指出是否可執行程式碼區段。|  
-|[IDiaSectionContrib::get\_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|會擷取旗標，指出是否可讀取的區段。|  
-|[IDiaSectionContrib::get\_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|會擷取旗標，指出是否可寫入區段。|  
-|[IDiaSectionContrib::get\_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|擷取的資料區段中的循環冗餘檢查 \(CRC\)。|  
-|[IDiaSectionContrib::get\_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|擷取的 CRC 時的區段的重新配置資訊。|  
-|[IDiaLineNumber::get\_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|擷取一節的編譯時識別項。|  
+|方法|說明|  
+|------------|-----------------|  
+|[IDiaSectionContrib::get_compiland](../../debugger/debug-interface-access/idiasectioncontrib-get-compiland.md)|擷取造成本節編譯模組符號的參考。|  
+|[IDiaSectionContrib::get_addressSection](../../debugger/debug-interface-access/idiasectioncontrib-get-addresssection.md)|擷取的比重位址的區段部分。|  
+|[IDiaSectionContrib::get_addressOffset](../../debugger/debug-interface-access/idiasectioncontrib-get-addressoffset.md)|擷取比重的位址位移的一部分。|  
+|[IDiaSectionContrib::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-relativevirtualaddress.md)|擷取的映像相對虛擬位址 (RVA) 的比重。|  
+|[IDiaSectionContrib::get_virtualAddress](../../debugger/debug-interface-access/idiasectioncontrib-get-virtualaddress.md)|擷取比重的虛擬位址 (VA)。|  
+|[IDiaSectionContrib::get_length](../../debugger/debug-interface-access/idiasectioncontrib-get-length.md)|擷取 > 一節中的位元組數目。|  
+|[IDiaSectionContrib::get_notPaged](../../debugger/debug-interface-access/idiasectioncontrib-get-notpaged.md)|擷取指出區段是否無法分頁記憶體不足的旗標。|  
+|[IDiaSectionContrib::get_nopad](../../debugger/debug-interface-access/idiasectioncontrib-get-nopad.md)|擷取旗標，指出是否應不到下一個記憶體界限填補一節。|  
+|[IDiaSectionContrib::get_code](../../debugger/debug-interface-access/idiasectioncontrib-get-code.md)|擷取指出區段是否包含可執行程式碼的旗標。|  
+|[IDiaSectionContrib::get_code16bit](../../debugger/debug-interface-access/idiasectioncontrib-get-code16bit.md)|擷取指出區段是否包含 16 位元程式碼的旗標。|  
+|[IDiaSectionContrib::get_initializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-initializeddata.md)|擷取的旗標，指出區段是否包含初始化的資料。|  
+|[IDiaSectionContrib::get_uninitializedData](../../debugger/debug-interface-access/idiasectioncontrib-get-uninitializeddata.md)|擷取的旗標，指出區段是否包含未初始化的資料。|  
+|[IDiaSectionContrib::get_informational](../../debugger/debug-interface-access/idiasectioncontrib-get-informational.md)|擷取旗標，指出區段包含註解或類似的資訊。|  
+|[IDiaSectionContrib::get_remove](../../debugger/debug-interface-access/idiasectioncontrib-get-remove.md)|擷取指出區段是否已移除，才能進行記憶體中的映像的一部分的旗標。|  
+|[IDiaSectionContrib::get_comdat](../../debugger/debug-interface-access/idiasectioncontrib-get-comdat.md)|擷取指出區段是否為 COMDAT 記錄旗標。|  
+|[IDiaSectionContrib::get_discardable](../../debugger/debug-interface-access/idiasectioncontrib-get-discardable.md)|擷取的旗標，指出是否可以捨棄 > 一節。|  
+|[IDiaSectionContrib::get_notCached](../../debugger/debug-interface-access/idiasectioncontrib-get-notcached.md)|擷取指出區段是否無法快取的旗標。|  
+|[IDiaSectionContrib::get_share](../../debugger/debug-interface-access/idiasectioncontrib-get-share.md)|擷取指出區段是否可以共用記憶體中的旗標。|  
+|[IDiaSectionContrib::get_execute](../../debugger/debug-interface-access/idiasectioncontrib-get-execute.md)|擷取的旗標，指出是否可執行檔當做程式碼 > 一節。|  
+|[IDiaSectionContrib::get_read](../../debugger/debug-interface-access/idiasectioncontrib-get-read.md)|擷取旗標，指出是否可以讀取一節。|  
+|[IDiaSectionContrib::get_write](../../debugger/debug-interface-access/idiasectioncontrib-get-write.md)|擷取指出是否可寫入區段的旗標。|  
+|[IDiaSectionContrib::get_dataCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-datacrc.md)|擷取資料的區段中的循環冗餘檢查 (CRC)。|  
+|[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|擷取 > 一節的重新配置資訊的 CRC。|  
+|[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|擷取 > 一節的編譯模組識別項。|  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 呼叫者的備忘稿  
- 這個介面藉由呼叫[IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)和[IDiaEnumSectionContribs::Next](../Topic/IDiaEnumSectionContribs::Next.md)方法。  請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面取得的例如`IDiaSectionContrib`介面。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 這個介面透過呼叫[idiaenumsectioncontribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)和[idiaenumsectioncontribs:: Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)方法。 請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面取得的範例`IDiaSectionContrib`介面。  
   
-## 範例  
- 這個函式會顯示每個區段，以及任何相關符號的位址。  請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面，請參閱如何`IDiaSectionContrib`介面會取得。  
+## <a name="example"></a>範例  
+ 此函數會顯示每個區段，以及任何相關聯的符號的位址。 請參閱[IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)介面，以查看如何`IDiaSectionContrib`介面取得。  
   
-```cpp#  
+```C++  
 void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)  
 {  
     if (pSecContrib != NULL && pSession != NULL)  
@@ -128,15 +127,15 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 }  
 ```  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia80.dll  
+ DLL: msdia80.dll  
   
-## 請參閱  
- [介面 \(偵錯介面存取 SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>另請參閱  
+ [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)   
- [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
- [IDiaEnumSectionContribs::Next](../Topic/IDiaEnumSectionContribs::Next.md)
+ [Idiaenumsectioncontribs:: Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md)   
+ [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md)

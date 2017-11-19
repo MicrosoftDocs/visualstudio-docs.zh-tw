@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-caps.latest.revision: 48
+caps.latest.revision: "48"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 4cdcd1fd772505ff4536968290ca87a85a501f6a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: b094a04a9d2e273418edaa7cc4bc2d36f89e9d29
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-a-toolbar-to-a-tool-window"></a>新增工具列加入工具視窗
 本逐步解說示範如何將工具列加入工具視窗。  

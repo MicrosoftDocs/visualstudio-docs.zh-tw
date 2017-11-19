@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptProperty::GetProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptProperty::GetProperty |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptProperty.GetProperty
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetProperty 方法, IActiveScriptProperty 介面"
+helpviewer_keywords: GetProperty method, IActiveScriptProperty interface
 ms.assetid: a43383db-b148-4d76-83bd-4f0e899b7cb1
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d55fb2d816931a74827d318e13860b3f97f0fd23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProperty::GetProperty
-取得由參數所指定的屬性。  
+# <a name="iactivescriptpropertygetproperty"></a>IActiveScriptProperty::GetProperty
+取得參數所指定的屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetProperty(  
@@ -34,40 +37,40 @@ HRESULT GetProperty(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwProperty`  
- 要取得的屬性值。  
+ 要取得之屬性值。  
   
  `pvarIndex`  
- 不適用。  
+ 未使用。  
   
  `pvarValue`  
  屬性的值。  
   
- `dwProperty` 允許的值列在下表中說明。  
+ 允許值`dwProperty`下表所述。  
   
 |常數|值|意義|  
-|--------|-------|--------|  
-|SCRIPTPROP\_INTEGERMODE|0x00003000|在整數模式強制指令碼引擎分割 \(而不是浮點數模式。|  
-|SCRIPTPROP\_STRINGCOMPAREINSTANCE|0x00003001|允許字串比較要取代的指令碼引擎的函式。|  
-|SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION|0x70000002|告知指令碼引擎沒有其他指令碼引擎所存在的全域物件。|  
-|SCRIPTPROP\_INVOKEVERSIONING|0x00004000|強制指令碼引擎的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 選取一組語言功能的支援。  預設的一組 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 支援的語言功能指令碼引擎將會出現在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 版本的用戶端指令碼引擎的 5.7 設定的語言功能相當於。|  
+|--------------|-----------|-------------|  
+|SCRIPTPROP_INTEGERMODE|0x00003000|會強制將整數模式，而不是浮動點模式中的指令碼引擎。|  
+|SCRIPTPROP_STRINGCOMPAREINSTANCE|0x00003001|可讓指令碼引擎要被取代的字串比較函式。|  
+|SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION|0x70000002|通知其他指令碼引擎存在參與為全域物件的指令碼引擎。|  
+|SCRIPTPROP_INVOKEVERSIONING|0x00004000|強制[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]來選取一組支援的語言功能的指令碼引擎。 支援的語言功能的預設集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎就相當於出現在 5.7 版的語言功能集[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。|  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |傳回值|意義|  
-|---------|--------|  
+|------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_INVALIDARG`|引數是無效的。|  
-|`E_UNEXPECTED`|這個呼叫不需要 \(例如，指令碼引擎尚未載入或未初始化\)。|  
+|`E_INVALIDARG`|引數無效。|  
+|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
   
-## 備註  
- 主應用程式可以使用屬性 SCRIPTPROP\_ABBREVIATE\_GLOBALNAME\_RESOLUTION 告知一個指令碼引擎沒有其他指令碼引擎所存在的全域物件。  例如， Internet Explorer 可能會告知 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎所呈現網頁只包含 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 指令碼。  因此，只 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎可將新屬性加入至全域物件視窗中，而且沒有 Scripting Edition \(VBScript\) 引擎的 Visual Basic 是相同的。  引擎會忽略這個旗標或可以使用以最佳化加入全域物件新成員的管理。  
+## <a name="remarks"></a>備註  
+ 主機可以使用 SCRIPTPROP_ABBREVIATE_GLOBALNAME_RESOLUTION 屬性，來通知其他指令碼引擎存在參與為全域物件的指令碼引擎。 例如，Internet Explorer 可以通知[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]僅包含所呈現頁面的引擎[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼。 因此，只有[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎可以將新屬性加入至全域物件的視窗，並沒有要執行相同的 Visual Basic Scripting Edition (VBScript) 引擎。 引擎可以忽略此旗標，或可以使用它來最佳化的新成員加入至全域物件管理。  
   
- 在指令碼引擎的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 啟動時，主應用程式可以使用 SCRIPTPROP\_INVOKEVERSIONING 屬性選取一組語言功能的支援。  如果這個屬性設為 1 \(SCRIPTLANGUAGEVERSION\_5\_7\)， 可用語言的語言功能是為那些出現在 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 版本的用戶端指令碼引擎的 5.7 一樣。  如果設定為 2 \(SCRIPTLANGUAGEVERSION\_5\_8\)，可用語言的語言功能是出現在 5.7 版的功能不在 5.8 版中加入的項目。  根據預設，這個屬性設為 0 \(SCRIPTLANGUAGEVERSION\_DEFAULT\)，並搭配語言功能相當於出現在 5.7 版中，除非，主應用程式支援不同的預設行為。  例如，根據預設，在 Internet Explorer 8 文件的方式為「Internet Explorer 8 個標準模式時， Internet Explorer 8 選取到版本所支援的語言功能 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 5.8 指令碼引擎的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  
+ 主機可以選擇的語言功能集使用 SCRIPTPROP_INVOKEVERSIONING 屬性時，支援[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎已啟動。 如果這個屬性設為 1 (SCRIPTLANGUAGEVERSION_5_7)，可用的語言功能都一樣出現在新版 5.7[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]指令碼引擎。 如果它設定為 2 (SCRIPTLANGUAGEVERSION_5_8)，可用的語言功能則是出現在 5.7 版以及 5.8 版本中所加入的功能。 根據預設，這個屬性會設定為 0 (SCRIPTLANGUAGEVERSION_DEFAULT)，除非主機支援不同的預設行為，這是相當於出現在 5.7，版的語言功能集。 比方說，Internet Explorer 8 opts 到[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]5.8 版本所支援的語言功能[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]Internet Explorer 8 的文件模式是 「 Internet Explorer 8 標準 」 模式時，預設的指令碼引擎。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [定義文件相容性](http://msdn.microsoft.com/library/cc288325)   
  [IActiveScriptProperty](../../winscript/reference/iactivescriptproperty.md)   
  [版本資訊](../../javascript/reference/javascript-version-information.md)

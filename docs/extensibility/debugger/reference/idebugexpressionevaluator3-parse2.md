@@ -1,89 +1,90 @@
 ---
-title: "IDebugExpressionEvaluator3::Parse2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator3::Parse2"
+title: "IDebugExpressionEvaluator3::Parse2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugExpressionEvaluator3::Parse2
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f8b170a0031374bcd9ecb2a63d72586797bfdbce
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator3::Parse2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-要剖析的運算式，根據指定的符號提供者和鑑定的畫面格的位址，將轉換的運算式字串。  
+# <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
+將運算式字串轉換成剖析的運算式指定的符號提供者和鑑定框架的位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Parse2 (  
-   LPCOLESTR                upstrExpression,  
-   PARSEFLAGS               dwFlags,  
-   UINT                     nRadix,  
-   IDebugSymbolProvider*    pSymbolProvider,  
-   IDebugAddress*           pAddress,  
-   BSTR*                    pbstrError,  
-   UINT*                    pichError,  
-   IDebugParsedExpression** ppParsedExpression  
+   LPCOLESTR                upstrExpression,  
+   PARSEFLAGS               dwFlags,  
+   UINT                     nRadix,  
+   IDebugSymbolProvider*    pSymbolProvider,  
+   IDebugAddress*           pAddress,  
+   BSTR*                    pbstrError,  
+   UINT*                    pichError,  
+   IDebugParsedExpression** ppParsedExpression  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT Parse2 (  
-   string                     upstrExpression,  
-   enum_PARSEFLAGS            dwFlags,  
-   uint                       nRadix,  
-   IDebugSymbolProvider       pSymbolProvider,  
-   IDebugAddress              pAddress,  
-   out string                 pbstrError,  
-   out uint                   pichError,  
-   out IDebugParsedExpression ppParsedExpression  
+   string                     upstrExpression,  
+   enum_PARSEFLAGS            dwFlags,  
+   uint                       nRadix,  
+   IDebugSymbolProvider       pSymbolProvider,  
+   IDebugAddress              pAddress,  
+   out string                 pbstrError,  
+   out uint                   pichError,  
+   out IDebugParsedExpression ppParsedExpression  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `upstrExpression`  
- \[in\]要剖析的運算式字串。  
+ [in]要剖析的運算式字串。  
   
  `dwFlags`  
- \[in\]一堆[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，以決定要剖析的運算式的方式。  
+ [in]集合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)常數，決定要如何剖析運算式。  
   
  `nRadix`  
- \[in\]要用來解譯數字的任何資訊的基數。  
+ [in]用來解譯任何數字資訊的基數。  
   
  `pSymbolProvider`  
- \[in\]符號提供者的介面。  
+ [in]符號提供者的介面。  
   
  `pAddress`  
- \[in\]鑑定的框架位址。  
+ [in]評估的畫面格的位址。  
   
  `pbstrError`  
- \[\] out為人們可讀取的文字會傳回錯誤。  
+ [out]以人類看得懂的文字會傳回錯誤。  
   
  `pichError`  
- \[\] out運算式字串中傳回之錯誤開頭的字元位置。  
+ [out]傳回字元位置開始的錯誤中的運算式字串。  
   
  `ppParsedExpression`  
- \[\] out傳回剖析的運算式，在[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。  
+ [out]傳回剖析的運算式中[IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 這個方法會產生剖析的運算式，不是實際的值。  剖析的運算式已準備好進行評估，也就是轉換為值。  
+## <a name="remarks"></a>備註  
+ 這個方法會產生已剖析的運算式，而不實際的值。 剖析的運算式已準備好進行評估，也就是轉換成的值。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CEE** 物件，公開 \(expose\) [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CEE**公開物件[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,  
   PARSEFLAGS in_FLAGS,  
   UINT in_RADIX,  
@@ -135,5 +136,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

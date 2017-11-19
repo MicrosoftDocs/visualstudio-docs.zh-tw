@@ -4,44 +4,29 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - interop assemblies, command handlers
 - command handling with interop assemblies, registering
 ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 774266bbcd64e87229f8f97626cdff1462b27fcb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 6f359c8bcad7bdc32b481fa6fc30a96a8669129f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>註冊 Interop 組件命令處理常式
 VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使整合式的開發環境 (IDE) 適當地路由傳送它的命令。  
   
  手動編輯，或使用的註冊機構 (.rgs) 檔案，可以更新登錄。 如需詳細資訊，請參閱[建立登錄器指令碼](/cpp/atl/creating-registrar-scripts)。  
   
- Managed Package Framework (MPF) 提供這項功能透過<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>類別。</xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>  
+ Managed Package Framework (MPF) 提供這項功能透過<xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute>類別。  
   
  [命令資料表格式參考](http://msdn.microsoft.com/en-us/09e9c6ef-9863-48de-9483-d45b7b7c798f)資源位於 unmanaged 附屬 UI dll。  
   
@@ -52,7 +37,7 @@ VSPackage 必須向[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]�
 >  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio 的根路徑\\*\<版本 >*會覆寫以替代根時[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]殼層會初始化。 如需根路徑的詳細資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
   
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 的資源登錄項目  
- 登錄項目結構是︰  
+ 登錄項目結構是：  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\  
@@ -62,20 +47,20 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
   
  \<*GUID*> 是`GUID`{XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} 形式 VSPackage。  
   
- *\<資源資訊 >*三個以逗號分隔的項目所組成。 這些元素，順序如下︰  
+ *\<資源資訊 >*三個以逗號分隔的項目所組成。 這些元素，順序如下：  
   
  \<*資源 DLL 路徑*>， \<*功能表資源識別碼*>， \<*功能表版本*>  
   
  下表描述的欄位\<*資源資訊*>。  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
 |\<*資源 DLL 路徑*>|這是資源包含功能表資源 DLL 的完整路徑，或保留為空白，表示 VSPackage 的資源 DLL 使用 （如同在其中註冊自己的 VSPackage 的封裝子機碼中指定）。<br /><br /> 它是可將此欄位保留空白。|  
 |\<*功能表資源識別碼*>|這是資源識別碼`CTMENU`資源，因為從編譯的所有 UI 項目包含 vspackage [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)檔案。|  
 |\<*功能表版本*>|這是用做為版本號碼`CTMENU`資源。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用此值來判斷它是否需要 remerge 內容`CTMENU`快取的所有資源`CTMENU`資源。 Remerge 會觸發執行 devenv 安裝命令。<br /><br /> 這個值應該一開始設定為 1 而且在每次變更後遞增`CTMENU`資源和 remerge 發生之前。|  
   
 ### <a name="example"></a>範例  
- 以下是幾個資源項目範例︰  
+ 以下是幾個資源項目範例：  
   
 ```  
 HKEY_LOCAL_MACHINE\Software\VisualStudio\9.0Exp\  

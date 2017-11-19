@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDisassemblyStream2::GetCurrentLocation
-helpviewer_keywords:
-- IDebugDisassemblyStream2::GetCurrentLocation
+f1_keywords: IDebugDisassemblyStream2::GetCurrentLocation
+helpviewer_keywords: IDebugDisassemblyStream2::GetCurrentLocation
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ee82866b4938faaa14e591a2ac11c5e23bf2ab99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: af95543052f0fd0a48f2f5c1e71b584e8902925f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 傳回表示目前的程式碼位置的程式碼位置識別項。  

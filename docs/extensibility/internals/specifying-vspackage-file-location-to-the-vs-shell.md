@@ -1,33 +1,35 @@
 ---
-title: "指定 VS Shell VSPackage 檔案位置 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "managed 的 VSPackages，檔案位置"
-  - "VSPackages，管理封裝檔案位置"
+title: "指定 VS Shell VSPackage 的檔案位置 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- managed VSPackages, file location
+- VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b987d5e88bcbcf02bfd80ddf5c3ed0d67a149b53
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 指定 VS Shell VSPackage 檔案位置
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必須能夠找出組件 DLL 載入 VSPackage。 您可以找到以各種方式下, 表中所述。  
+# <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>VS Shell 指定 VSPackage 的檔案位置
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]必須是能夠找出組件載入 VSPackage 的 DLL。 您可以找出它以各種方式下, 表中所述。  
   
-|方法|描述|  
-|--------|--------|  
-|使用程式碼基底登錄機碼。|程式碼基底的索引鍵可用來直接 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 從任何完整的檔案路徑載入 VSPackage 的組件。 索引鍵的值應該是 DLL 的檔案路徑。 這是最好的方式有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 載入您的封裝組件。 這項技術有時稱為 「 程式碼基底\/私密金鑰安裝目錄技術。 」 在註冊期間的程式碼基底值透過傳遞至註冊屬性類別的執行個體 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> 型別。|  
-|將放入 DLL **PrivateAssemblies** 目錄。|將組件中的 **PrivateAssemblies** 子目錄 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 目錄。 組件位於 **PrivateAssemblies** 會自動偵測，但不是會顯示在 **加入參考** 對話方塊。 之間的差異 **PrivateAssemblies** 和 **PublicAssemblies** 是組件中 **PublicAssemblies** 會列舉在 **加入參考** 對話方塊。 如果您選擇不使用 「 私用程式碼基底\/安裝目錄 」 的技術，則您應安裝到 **PrivateAssemblies** 目錄。|  
-|使用強式名稱組件和組件登錄機碼。|組件金鑰可用來明確導向 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 載入強式名稱為 VSPackage 組件。 索引鍵的值應該是強式名稱組件。|  
-|將放入 DLL **PublicAssemblies** 目錄。|最後，組件也可以放入 **PublicAssemblies** 子目錄。 組件位於 **PublicAssemblies** 會自動偵測，也會出現在 **加入參考** 對話方塊 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。<br /><br /> VSPackage 組件應該只放在 **PublicAssemblies** 如果它們包含的目錄管理要由其他 VSPackage 開發人員重複使用的元件。 大部分的組件不符合此準則。|  
+|方法|說明|  
+|------------|-----------------|  
+|使用程式碼基底登錄機碼。|程式碼基底的索引鍵可以用來直接[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]從任何完整的檔案路徑載入 VSPackage 組件。 索引鍵的值應該是 DLL 的檔案路徑。 這是最佳的方式有[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]將封裝組件載入。 這項技術有時稱為 「 程式碼基底/私密金鑰安裝目錄技術。 」 在註冊期間的程式碼基底值透過傳遞至註冊屬性類別的執行個體<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext>型別。|  
+|將放入 DLL **PrivateAssemblies**目錄。|將組件中的**PrivateAssemblies**子目錄[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]目錄。 組件位於**PrivateAssemblies**會自動偵測，但不是會顯示在**加入參考** 對話方塊。 之間的差異**PrivateAssemblies**和**PublicAssemblies**是組件中**PublicAssemblies**會列舉在**加入參考**  對話方塊。 如果您選擇不使用 「 程式碼基底/私密金鑰安裝目錄 」 的技術，則您應安裝到**PrivateAssemblies**目錄。|  
+|使用強式名稱組件和組件登錄機碼。|組件金鑰可用來明確地直接[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]載入強式命名 VSPackage 組件。 索引鍵的值應該是強式名稱組件。|  
+|將放入 DLL **PublicAssemblies**目錄。|最後，組件也可置於**PublicAssemblies**子目錄。 組件位於**PublicAssemblies**會自動偵測和也會出現在**加入參考** 對話方塊中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。<br /><br /> VSPackage 組件只應該放在**PublicAssemblies**目錄，如果它們包含受管理的要由其他 VSPackage 開發人員可重複使用的元件。 大部分的組件不符合此準則。|  
   
 > [!NOTE]
->  使用強式名稱的所有相依組件的已簽署組件。 這些組件也應該安裝在您的目錄或全域組件快取 \(GAC\) 中。 這樣可防止具有相同的主檔名，所謂的弱式名稱繫結的組件的衝突。
+>  所有相依組件使用強式名稱、 帶正負號的組件。 這些組件也應該安裝在您的目錄或全域組件快取 (GAC) 中。 這可防止與具有相同的基底檔案名稱，又稱為弱式名稱繫結的組件發生衝突。

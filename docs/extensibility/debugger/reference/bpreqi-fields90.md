@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BPREQI_FIELDS90 enumeration
+helpviewer_keywords: BPREQI_FIELDS90 enumeration
 ms.assetid: bf6f7efc-39f2-46a2-906d-c3647bf89995
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 496f529118f44ec573983362d792b0c68213b05b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2de27fc0c3ea470e63c82c8116e34e450eb08bb2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpreqifields90"></a>BPREQI_FIELDS90
 列舉有效的值，指定要擷取有關中斷點要求的資訊。 這個列舉型別擴充[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別。  

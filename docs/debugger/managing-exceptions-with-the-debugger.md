@@ -1,11 +1,10 @@
 ---
-title: Manage exceptions with the Visual Studio debugger | Microsoft Docs
+title: "管理 Visual Studio 偵錯工具例外 |Microsoft 文件"
 ms.custom: 
 ms.date: 04/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -33,65 +32,49 @@ helpviewer_keywords:
 - native run-time checks
 - exceptions, debugging
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
-caps.latest.revision: 35
+caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 3bc9b2136518d46060e81fd1c5ff150f53e969d8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: a0504ba8229e67284d4f54032dbbce3cef42d6e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Manage exceptions with the debugger in Visual Studio
+# <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>管理 Visual Studio 中偵錯工具的例外狀況
 
-An exception is an indication of an error state that occurs while a program is being executed. You can tell the debugger which exceptions (or sets of exceptions) to break on, and at which point you want the debugger to break (when the debugger breaks, it shows you where the exception was thrown). You can also add or delete exceptions. With a solution open in Visual Studio, use **Debug > Windows > Exception Settings** to open the **Exception Settings** window. 
+例外狀況是程式執行時發生之錯誤狀態的指示。 要中斷，哪一個例外狀況 （或例外狀況的集合），則可以告知偵錯工具，此時，您要偵錯工具中斷 （偵錯工具中斷時，它會顯示您已在擲回例外狀況）。 您也可以新增或刪除的例外狀況。 使用 Visual Studio 中開啟方案，**偵錯 > Windows > 例外狀況設定**開啟**例外狀況設定**視窗。 
 
-You can and should provide handlers that respond to the most important exceptions, but it's important to know how to configure the debugger to always break execution for some exceptions.
+您可以也應該提供回應的最重要的例外狀況的處理常式，但請務必了解如何設定偵錯工具一定中斷執行的某些例外狀況。
   
-When an exception occurs, the debugger writes an exception message to the Output window. It may break execution in the following cases:  
+發生例外狀況時，偵錯工具都會將例外狀況訊息寫入至 [輸出] 視窗。 在下列情況下，它可能會中斷執行：  
   
--   When an exception is thrown and is not handled.  
+-   當例外狀況已擲回且未處理。  
   
--   When the debugger is configured to break execution before any handler is invoked.  
+-   當偵錯工具設定為在叫用任何處理常式之前中斷執行。  
   
--   If you have set [Just My Code](../debugger/just-my-code.md), and the debugger is configured to break on any exception that is not handled in user code.  
+-   如果您已將[Just My Code](../debugger/just-my-code.md)，而且偵錯工具已設定為任何使用者程式碼中未處理的例外狀況中斷。  
   
 > [!NOTE]
->  ASP.NET has a top-level exception handler that shows error pages in a browser. It does not break execution unless **Just My Code** is turned on. For an example, see [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) below.  
+>  ASP.NET 具有最上層例外狀況處理常式，這會在瀏覽器中顯示錯誤頁面。 它不會中斷執行，除非 [Just My Code]  已開啟。 如需範例，請參閱下列 [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) 。  
   
 > [!NOTE]
->  In a Visual Basic application, the debugger manages all errors as exceptions, even if you use On Error-style error handlers.    
+>  在 Visual Basic 應用程式偵錯工具會管理所有錯誤當成例外狀況，即使使用 On Error 類型錯誤處理常式。    
   
-## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>Tell the debugger to break when an exception is thrown  
-The debugger can break execution at the point where an exception is thrown, giving you a chance to examine the exception before a handler is invoked.  
+## <a name="tell-the-debugger-to-break-when-an-exception-is-thrown"></a>告知偵錯工具中斷時擲回例外狀況  
+偵錯工具可以在擲回例外狀況的位置中斷執行，讓您可以在叫用處理常式之前有機會檢查例外狀況。  
   
-In the **Exception Settings** window (**Debug > Windows > Exception Settings**), expand the node for a category of exceptions (for example, **Common Language Runtime Exceptions**, meaning .NET exceptions), and select the check box for a specific exception within that category (for example **System.AccessViolationException**). You can also select an entire category of exceptions.  
+在**例外狀況設定**視窗 (**偵錯 > Windows > 例外狀況設定**)，展開某個例外狀況分類的節點 (例如， **Common Language Runtime 例外狀況**，表示.NET 例外狀況)，然後選取核取方塊，該類別目錄內的特定例外狀況 (例如**System.AccessViolationException**)。 您也可以選取例外狀況的整個類別。  
   
-![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
+![核取了 AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")  
 
 > [!TIP]
-> You can find specific exceptions by using the **Search** window in the **Exception Settings** toolbar, or use search to filter for specific namespaces (for example **System.IO**).
+> 您可以使用 [例外狀況設定]  工具列中的 [搜尋]  視窗，尋找特定的例外狀況，或使用搜尋來篩選特定命名空間 (例如 [System.IO] )。
   
-If you select an exception in the **Exception Settings** window, debugger execution will break wherever the exception is thrown, regardless of whether it is handled or unhandled. At this point the exception is called a first chance exception. For example, here are a couple of scenarios:  
+如果您選取中的例外狀況**例外狀況設定**視窗中，執行偵錯工具會中斷任何擲回例外狀況，無論它是在處理或未處理的地方。 此時該例外狀況稱為第一個可能發生的例外狀況。 例如，以下是幾個情節：  
   
-*  In the following C# console application, the Main method throws an **AccessViolationException** inside a `try/catch` block:  
+*  在下列 C# 主控台應用程式中，Main 方法會在 **try/catch** 區塊內部擲回 `try/catch` ：  
   
     ```CSharp  
     static void Main(string[] args)  
@@ -109,18 +92,18 @@ If you select an exception in the **Exception Settings** window, debugger execut
     }  
     ```  
   
-     If you have **AccessViolationException** checked in **Exception Settings**, when you run this code in the debugger execution will break on the `throw` line. You can then continue execution. The console should display both lines:  
+     當您在偵錯工具中執行此程式碼時，如果您在 [例外狀況設定] **try/catch** 中核取了 [AccessViolationException] ，則執行會在 `throw` 行中斷。 然後，您可以繼續執行。 主控台應該會顯示這兩行：  
   
     ```  
     caught exception  
     goodbye  
     ```  
   
-     but it does not display the `here` line.  
+     但它不會顯示 `here` 行。  
   
-*  A C# console application references a class library with a class that has two methods, a method that throws an exception and handles it and a second method that throws the same exception and doesn't handle it:  
+*  C# 主控台應用程式會參考具有兩個方法、 的方法擲回例外狀況，並加以處理和擲回相同的例外狀況，且不會加以處理的第二個方法的類別，類別庫：  
   
-    ```c# 
+    ```csharp 
     public class Class1  
     {  
         public void ThrowHandledException()  
@@ -142,7 +125,7 @@ If you select an exception in the **Exception Settings** window, debugger execut
     }  
     ```  
   
-     Here's the Main() method of the console application:  
+     以下是主控台應用程式的 main （） 方法：  
   
     ```CSharp  
     static void Main(string[] args)  
@@ -153,38 +136,38 @@ If you select an exception in the **Exception Settings** window, debugger execut
     }  
     ```  
   
-     If you have **AccessViolationException** checked in **Exception Settings**, when you run this code in the debugger execution will break on the `throw` line in both **ThrowHandledException()** and **ThrowUnhandledException()**.  
+     如果您有**了 AccessViolationException**簽入**例外狀況設定**，當您執行此程式碼在偵錯工具執行會在 throwhandledexception`throw`在這兩行**Throwunhandledexception （)**和**Throwunhandledexception**。  
   
- If you would like to restore the exception settings to the defaults, you can click the **Restore** button on the toolbar:  
+ 如果您想要將例外狀況設定還原為預設值，您可以按一下工具列上的 [還原]  按鈕：  
   
- ![Restore defaults in Exception Settings](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
+ ![還原成預設值例外狀況設定](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-##  <a name="BKMK_UserUnhandled"></a> Tell the debugger to continue on user-unhandled exceptions  
- If you are debugging .NET or JavaScript code with [Just My Code](../debugger/just-my-code.md), you can tell the debugger not to break on exceptions that are not handled in user code but are handled somewhere else.  
+##  <a name="BKMK_UserUnhandled"></a>告知偵錯工具繼續處理使用者未處理的例外狀況  
+ 如果您正在偵錯具有 [Just My Code](../debugger/just-my-code.md)的 .NET 或 JavaScript 程式碼，則可以告知偵錯工具不中斷使用者程式碼中未處理，但在其他地方處理的例外狀況。  
   
-1.  In the **Exception Settings** window, open the context menu by right-clicking in window and then selecting **Show Columns**. (If you have turned off **Just My Code**, you will not see this command.)  
+1.  在 [例外狀況設定]  視窗中，開啟內容功能表，方法是在視窗中按一下滑鼠右鍵，然後選取 [顯示行] 。 (如果您關閉了 [Just My Code] ，您就不會看到這個命令。)  
   
-2.  You should see a second column named **Additional Actions**. This column displays **Continue when unhandled by user code** on specific exceptions, meaning that the debugger does not break if that exception is not handled in user code but is handled in external code.  
+2.  您應該會看到名為 [其他動作] 的第二個資料行。 這個資料行會在特定的例外狀況顯示 [當使用者程式碼中未處理時繼續]  ，這表示如果在使用者程式碼中未處理例外狀況，但會在外部程式碼中處理，則偵錯工具不會中斷。  
   
-3.  You can change this setting either for a particular exception (select the exception, right-click, and select/deselect **Continue when Unhandled in User Code**) or for an entire category of exceptions (for example, all the Common Language Runtime exceptions).  
+3.  您可以針對特定的例外狀況 (選取此例外狀況，以滑鼠右鍵按一下，並選取/取消選取 [當使用者程式碼中未處理時繼續] )，或整個例外狀況分類 (例如，所有 Common Language Runtime 例外狀況)，來變更此設定。  
   
- For example, ASP.NET web applications handle exceptions by converting them to an HTTP 500 status code ([Exception Handling in ASP.NET API](http://www.asp.net/web-api/overview/error-handling/exception-handling)), which may not help you to determine the source of the exception. In the example below, the user code makes a call to `String.Format()` that throws a <xref:System.FormatException>. Execution breaks as follows:  
+ 例如，ASP.NET Web 應用程式將例外狀況轉換成 HTTP 500 狀態碼 ([Exception Handling in ASP.NET API (在 ASP.NET 應用程式開發介面中的例外狀況處理)](http://www.asp.net/web-api/overview/error-handling/exception-handling)) 加以處理，這可能無法幫助您判斷例外狀況的來源。 在下列範例中，使用者程式碼會呼叫擲回 `String.Format()` 的 <xref:System.FormatException>。 執行中斷，如下所示：  
   
- ![breaks on user&#45;unhanlded exception](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
+ ![使用者 &#45;符號，則為例外狀況時中斷](../debugger/media/exceptionunhandledbyuser.png "ExceptionUnhandledByUser")  
   
-## <a name="add-and-delete-exceptions"></a>Add and delete exceptions  
- You can add and delete exceptions. You can delete any type of exception from any category by selecting the exception and clicking the **Delete** button (the minus sign) on the **Exception Settings** toolbar, or right-clicking the exception and selecting **Delete** from the context menu. Deleting an exception has the same effect as having the exception unchecked, which is that the debugger will not break when it is thrown.  
+## <a name="add-and-delete-exceptions"></a>加入及刪除例外狀況  
+ 您可以新增及刪除例外狀況。 您可以從任何類別目錄刪除任何類型的例外狀況，方法是選取此例外狀況，並按下 [例外狀況設定]  工具列上的 [刪除]  按鈕 (減號)，或以滑鼠右鍵按一下此例外狀況，然後從內容功能表選取 [刪除]  。 刪除例外狀況和未核取例外狀況有相同的效果，也就是偵錯工具並不會在其擲回時中斷。  
   
- To add an exception: in the **Exception Settings** window, select one of the exception categories (for example, **Common Language Runtime**) and click the **Add** button. Type the name of the exception (for example. **System.UriTemplateMatchException**). The exception is added to the list (in alphabetical order), and is automatically checked.  
+ 若要加入例外狀況：在 [例外狀況設定]  視窗中，選取其中一個例外狀況類別 (例如，[Common Language Runtime] )，然後按一下 [新增]  按鈕。 輸入例外狀況的名稱 (例如 [])。 此例外狀況隨即加入清單 (依字母順序)，且會自動核取。  
   
- If you want to add an exception to the GPU Memory Access Exceptions, JavaScript Runtime Exceptions, or Win32 Exceptions categories, you need to include the error code as well as the description.  
+ 如果您想要將例外狀況加入 [GPU 記憶體存取例外狀況]、[JavaScript 執行階段例外狀況] 或 [Win32 例外狀況] 類別，您需要包含此錯誤碼和描述。  
   
 > [!TIP]
->  Check your spelling! The **Exception Settings** window doesn't check for the existence of an added exception. So if you type **Sytem.UriTemplateMatchException**, you'll get an entry for that exception (and not for **System.UriTemplateMatchException**).  
+>  請檢查您的拼字！ **例外狀況設定**視窗並不會檢查加入的例外狀況是否存在。 因此，如果您輸入**Sytem.UriTemplateMatchException**，您會得到針對該例外狀況的項目 (而非針對**System.UriTemplateMatchException**)。  
   
- Exception settings are persisted in the solution's .suo file, so they apply to a particular solution. You can't reuse specific exception settings across solutions. At this point, only added exceptions are persisted; deleted exceptions are not. In other words, you can add an exception, close and reopen the solution, and the exception will still be there. But if you delete an exception and close/reopen the solution, the exception will reappear.  
+ 例外狀況設定會保存在方案的.suo 檔案中，因此可套用至特定的方案。 您無法跨解決方案，以重複使用特定的例外狀況設定。 此時，會保存已加入的例外狀況；但已刪除的例外狀況除外。 換句話說，您可以加入例外狀況，關閉並重新開啟方案，然後該例外狀況仍不會消失。 但是，如果您刪除例外狀況，然後關閉/重新開啟此方案，則該例外狀況會重新出現。  
   
- The **Exception Settings** window supports generic exception types in C# but not in Visual Basic. To break on exceptions like `MyNamespace.GenericException<T>`, you must add the exception as **MyNamespace.GenericException`1**. That is, if you have created an exception like this:  
+ [例外狀況設定]  視窗在 C# 中支援泛型例外狀況類型，但在 Visual Basic 中不支援。 若要中斷類似 `MyNamespace.GenericException<T>`的例外狀況，您必須新增例外狀況為 [MyNamespace.GenericException'1] 。 也就是說，如果您已經建立這類例外狀況：  
   
 ```CSharp  
 public class GenericException<T> : Exception  
@@ -195,24 +178,24 @@ public class GenericException<T> : Exception
 }  
 ```  
   
- You can add the exception to **Exception Settings** like this:  
+ 您可以將此例外狀況加入 [例外狀況設定]  ，如下所示：  
   
- ![adding generic exception](../debugger/media/addgenericexception.png "AddGenericException")  
+ ![加入泛型例外狀況](../debugger/media/addgenericexception.png "AddGenericException")  
 
-## <a name="add-conditions-to-an-exception"></a>Add conditions to an exception
+## <a name="add-conditions-to-an-exception"></a>將條件加入至例外狀況
 
-You can set conditions on exceptions in the **Exception Settings** dialog box. Currently supported conditions include the module name(s) to include or exclude for the exception. By setting module names as conditions, you can choose to break for the exception only on particular code modules, or you can avoid breaking on particular modules.
+您可以設定條件中的例外狀況上**例外狀況設定** 對話方塊。 目前支援的狀況包括要包含或排除例外狀況的模組名稱。 藉由設定模組名稱作為條件，您可以選擇只在特定的程式碼模組，例外狀況中斷，或可以避免在特定的模組上中斷。
 
 > [!NOTE]
-> Adding conditions to an exception is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+> 將條件加入至例外狀況的新功能[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
-To add conditional exceptions, choose the **Edit condition** icon in the Exception Settings dialog box or right-click the exception and choose **Edit Conditions**.
+若要加入條件式的例外狀況，請選擇**編輯條件**例外狀況設定 對話方塊中的圖示方塊或以滑鼠右鍵按一下 例外狀況，並選擇 **編輯條件**。
 
-![Conditions on an Exception](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
+![例外狀況的條件](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
   
-## <a name="see-also"></a>See Also  
- [Continuing Execution After an Exception](../debugger/continuing-execution-after-an-exception.md)   
- [How to: Examine System Code After an Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [How to: Use Native Run-Time Checks](../debugger/how-to-use-native-run-time-checks.md)   
- [Using Run-Time Checks Without the C Run-Time Library](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Debugger Basics](../debugger/debugger-basics.md)
+## <a name="see-also"></a>另請參閱  
+ [例外狀況之後繼續執行](../debugger/continuing-execution-after-an-exception.md)   
+ [如何： 在例外狀況後檢查系統程式碼](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [如何： 使用原生執行階段檢查](../debugger/how-to-use-native-run-time-checks.md)   
+ [C 執行階段程式庫不使用執行階段檢查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
+ [偵錯工具基礎](../debugger/debugger-basics.md)

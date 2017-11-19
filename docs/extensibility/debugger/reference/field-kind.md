@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- FIELD_KIND
-helpviewer_keywords:
-- FIELD_KIND enumeration
+f1_keywords: FIELD_KIND
+helpviewer_keywords: FIELD_KIND enumeration
 ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5a4d74e6ff0d3532c3aed199da841a56270195af
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 533365fcdaa14a3178809cf04116a4358cd0ba51
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="fieldkind"></a>FIELD_KIND
 指定欄位中所包含的類型[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件。  

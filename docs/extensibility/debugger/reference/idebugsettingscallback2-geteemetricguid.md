@@ -1,61 +1,62 @@
 ---
-title: "IDebugSettingsCallback2::GetEEMetricGuid | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugSettingsCallback2::GetEEMetricGuid"
+title: "IDebugSettingsCallback2::GetEEMetricGuid |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugSettingsCallback2::GetEEMetricGuid
 ms.assetid: 3d70c19a-595d-44f1-a7b3-a0cf8f15e371
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4ff78fe1aee2a0f9b72f5b90544fb936f4075c4f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSettingsCallback2::GetEEMetricGuid
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取運算式評估工具的度量單位，指定其名稱的唯一識別項。  
+# <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
+擷取指定之名稱的運算式評估工具度量的唯一識別碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetEEMetricGuid(  
-   REFGUID guidLang,  
-   REFGUID guidVendor,  
-   LPCWSTR pszMetric,  
-   GUID*   pguidValue  
+   REFGUID guidLang,  
+   REFGUID guidVendor,  
+   LPCWSTR pszMetric,  
+   GUID*   pguidValue  
 );  
 ```  
   
-```c#  
+```csharp  
 HRESULT GetEEMetricGuid(  
-   ref Guid guidLang,  
-   ref Guid guidVendor,  
-   string   pszMetric,  
-   out Guid pguidValue  
+   ref Guid guidLang,  
+   ref Guid guidVendor,  
+   string   pszMetric,  
+   out Guid pguidValue  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `guidLang`  
- \[in\]唯一的識別項的程式語言。  
+ [in]程式設計語言的唯一識別碼。  
   
  `guidVendor`  
- \[in\]廠商的唯一的識別項。  
+ [in]廠商的唯一識別碼。  
   
  `pszMetric`  
- \[in\]計量值的名稱。  
+ [in]標準的名稱。  
   
  `pguidValue`  
- \[\] out傳回計量值的唯一識別項。  
+ [out]傳回度量的唯一識別碼。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

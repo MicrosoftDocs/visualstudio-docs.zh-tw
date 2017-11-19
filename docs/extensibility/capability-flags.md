@@ -4,38 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- source control plug-ins, capability flags
+helpviewer_keywords: source control plug-ins, capability flags
 ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
-caps.latest.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: a438320fbfefac1e0104cd13012ace9573aa3742
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5104bff319f4a6517ddccde1da1407156797928e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="capability-flags"></a>功能旗標
-SCC_CAP_*xxx*旗標是用來表示的原始檔控制外掛程式功能的位元旗標。 SCC_EXCAP_*xxx*旗標是累加的旗標，表示擴充的功能，並解析為整數值。  
+SCC_CAP_*xxx*旗標是用來表示功能的原始檔控制外掛程式的位元旗標。 SCC_EXCAP_*xxx*旗標是累加式的旗標，表示擴充的功能，並解析為整數值。  
   
 |功能的程式碼|值|說明|  
 |---------------------|-----------|-----------------|  
@@ -51,21 +36,21 @@ SCC_CAP_*xxx*旗標是用來表示的原始檔控制外掛程式功能的位元�
 |`SCC_CAP_GETPROJPATH`|0x00000200L|支援[SccGetProjPath](../extensibility/sccgetprojpath-function.md)和命令。|  
 |`SCC_CAP_ADDFROMSCC`|0x00000400L|支援[SccAddFromScc](../extensibility/sccaddfromscc-function.md)和命令。|  
 |`SCC_CAP_COMMENTCHECKOUT`|0x00000800L|簽出項目的支援註解。|  
-|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|支援簽入註解。|  
-|`SCC_CAP_COMMENTADD`|0x00002000L|支援新增註解。|  
+|`SCC_CAP_COMMENTCHECKIN`|0x00001000L|支援在簽入的註解。|  
+|`SCC_CAP_COMMENTADD`|0x00002000L|在新增支援註解。|  
 |`SCC_CAP_COMMENTREMOVE`|0x00004000L|支援移除註解。|  
 |`SCC_CAP_TEXTOUT`|0x00008000L|將文字寫入至 IDE 所提供的輸出函式。|  
-|`SCC_CAP_ADD_STORELATEST`|0x00200000L|儲存檔案，但差異的支援。|  
+|`SCC_CAP_ADD_STORELATEST`|0x00200000L|儲存檔案，而差異的支援。|  
 |`SCC_CAP_HISTORY_MULTFILE`|0x00400000L|支援多個檔案歷程記錄。|  
 |`SCC_CAP_IGNORECASE`|0x00800000L|支援不區分大小寫的檔案比較。|  
-|`SCC_CAP_IGNORESPACE`|0x01000000L|支援檔案的比較，會忽略泛空白字元。|  
-|`SCC_CAP_POPULATELIST`|0x02000000L|支援尋找額外的檔案。|  
+|`SCC_CAP_IGNORESPACE`|0x01000000L|支援檔案會忽略空白字元的比較。|  
+|`SCC_CAP_POPULATELIST`|0x02000000L|支援尋找的額外檔案。|  
 |`SCC_CAP_COMMENTPROJECT`|0x04000000L|支援的註解建立專案。|  
-|`SCC_CAP_DIFFALWAYS`|0x10000000L|支援所有狀態中的差異，控制下。|  
-|`SCC_CAP_GET_NOUI`|0x20000000L|外掛程式不支援的 UI get，但可能仍會呼叫 IDE [SccGet](../extensibility/sccget-function.md)。|  
-|`SCC_CAP_REENTRANT`|0x40000000L|外掛程式是可重新進入和安全執行緒。 在 1.0 版中，沒有外掛程式已假設為可重新進入，且具備執行緒安全。 若 1.1 外掛程式會設定此位元，主機就可以同時開啟多個專案。|  
+|`SCC_CAP_DIFFALWAYS`|0x10000000L|支援的所有狀態中的差異，控制下。|  
+|`SCC_CAP_GET_NOUI`|0x20000000L|外掛程式不支援 UI 的 Get，但可能仍然會呼叫 IDE [SccGet](../extensibility/sccget-function.md)。|  
+|`SCC_CAP_REENTRANT`|0x40000000L|外掛程式是可重新進入及具備執行緒安全。 沒有外掛程式 1.0 版中，假設為可重新進入且具備執行緒安全。 1.1 外掛程式會設定此位元，如果主機可同時開啟多個專案。|  
   
-## <a name="capability-bits-added-in-version-12"></a>在 1.2 版中新增的功能位元  
+## <a name="capability-bits-added-in-version-12"></a>在 1.2 版中加入功能位元  
   
 |功能的程式碼|值|說明|  
 |---------------------|-----------|-----------------|  
@@ -78,9 +63,9 @@ SCC_CAP_*xxx*旗標是用來表示的原始檔控制外掛程式功能的位元�
 |`SCC_CAP_SCCFILE`|0x80000000L|支援 MSSCCPRJ。SCC 檔案 （受限於使用者/系統管理員覆寫） 和[SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)。|  
   
 ## <a name="capability-bits-added-in-version-13"></a>1.3 版中新增的功能位元  
- 這些旗標會傳遞一次[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函式來判斷是否支援功能。  
+ 這些旗標會傳遞一次一個[SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md)函式來判斷是否支援功能。  
   
-|擴充的功能程式碼|值|說明|  
+|擴充的功能的程式碼|值|說明|  
 |------------------------------|-----------|-----------------|  
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支援`SCC_CHECKOUT_LOCALVER`簽出選項。|  
 |`SCC_EXCAP_BACKGROUND_GET`|2|支援[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|  

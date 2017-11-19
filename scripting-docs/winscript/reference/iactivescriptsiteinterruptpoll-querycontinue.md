@@ -1,48 +1,51 @@
 ---
-title: "IActiveScriptSiteInterruptPoll::QueryContinue | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSiteInterruptPoll::QueryContinue |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSiteInterruptPoll.QueryContinue
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSiteInterruptPoll::QueryContinue"
+helpviewer_keywords: IActiveScriptSiteInterruptPoll::QueryContinue
 ms.assetid: 41ac3807-f8b4-4a0e-bcc6-556bc89f3904
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93323d500ae7e99957c365d60741fa612ba0fc34
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSiteInterruptPoll::QueryContinue
-允許主應用程式指定指令碼應該結束。  
+# <a name="iactivescriptsiteinterruptpollquerycontinue"></a>IActiveScriptSiteInterruptPoll::QueryContinue
+可讓主應用程式指定指令碼應該結束。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT QueryContinue();  
 ```  
   
-#### 參數  
- 這個方法不採用參數。  
+#### <a name="parameters"></a>參數  
+ 這個方法會採用任何參數。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
-|`S_OK`|這個呼叫成功，而主應用程式允許指令碼會繼續執行。|  
-|`S_FALSE`|這個呼叫成功和指令碼結束的主機要求。|  
+|值|說明|  
+|-----------|-----------------|  
+|`S_OK`|呼叫成功，且主機可允許繼續執行指令碼。|  
+|`S_FALSE`|成功的呼叫和指令碼終止主機要求。|  
   
-## 備註  
- 除非 `QueryContinue` 方法的傳回值是 `S_OK`，裝載的指令碼應該結束。  傳回值 `S_FALSE` 表示指令碼結束的主應用程式明確要求。  
+## <a name="remarks"></a>備註  
+ 裝載的指令碼應該結束，除非傳回值`QueryContinue`方法`S_OK`。 傳回值為`S_FALSE`指出，在主機明確要求指令碼結束。  
   
- 多執行緒的主應用程式可能會使用 `IActiveScript::InterruptScriptThread` 方法結束指令碼。  
+ 多執行緒的主機可能會使用`IActiveScript::InterruptScriptThread`終止指令碼的方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptSiteInterruptPoll 介面](../../winscript/reference/iactivescriptsiteinterruptpoll-interface.md)   
  [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)

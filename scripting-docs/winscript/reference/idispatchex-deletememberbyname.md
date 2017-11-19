@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::DeleteMemberByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::DeleteMemberByName |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.DeleteMemberByName
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DeleteMemberByName 方法"
+helpviewer_keywords: DeleteMemberByName method
 ms.assetid: a01b4e6a-d989-4b29-bb3f-04554f8c39f7
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5cb9a9dfd979954c42101fde41819d7e12db59e1
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::DeleteMemberByName
+# <a name="idispatchexdeletememberbyname"></a>IDispatchEx::DeleteMemberByName
 依名稱刪除成員。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT DeleteMemberByName(  
@@ -30,32 +33,32 @@ HRESULT DeleteMemberByName(
   
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `bstrName`  
- 成員的名稱會刪除。  
+ 要刪除的成員名稱。  
   
  `grfdex`  
- 判斷成員名稱是否區分大小寫。  這可以是下列其中一個值:  
+ 決定是否區分大小寫的成員名稱。 這可以是下列值之一：  
   
 |值|意義|  
-|-------|--------|  
-|fdexNameCaseSensitive|該要求的名稱搜尋完成以區分大小寫。  可以支援不區分大小寫的查詢的物件會忽略。|  
-|fdexNameCaseInsensitive|該名稱的要求完成搜尋不區分大小寫的方式。  可以由不支援不區分大小寫的查詢的物件會忽略。|  
+|-----------|-------------|  
+|fdexNameCaseSensitive|區分大小寫的方式進行名稱查閱的要求。 您可以忽略不支援區分大小寫對應的物件。|  
+|fdexNameCaseInsensitive|不區分大小寫的方式進行名稱查閱的要求。 您可以忽略不支援不區分大小寫對應的物件。|  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
 |`S_FALSE`|成員存在，但無法刪除。|  
   
-## 備註  
- 如果成員刪除，用做需要會持續有效。 `GetNextDispID`。  
+## <a name="remarks"></a>備註  
+ 如果刪除的成員，則必須一直保持有效的 DISPID `GetNextDispID`。  
   
- 如果具有指定名稱的成員刪除，並具有相同名稱的成員之後重新建立，用做應該是相同的。  \(只有大小寫不同的成員是「相同的」是物件而定\)。  
+ 如果已刪除具有指定名稱的成員之後重新建立具有相同名稱的成員，DISPID 應相同。 （只有大小寫不同的成員是否 「 相同 」 是物件而定）。  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
 BSTR bstrName;  
@@ -65,5 +68,5 @@ IDispatchEx *pdex;
 pdex->DeleteMemberByName(bstrName, fdexNameCaseSensitive);  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)

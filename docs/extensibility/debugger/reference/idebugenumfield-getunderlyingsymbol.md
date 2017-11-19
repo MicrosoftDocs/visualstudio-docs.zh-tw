@@ -1,53 +1,53 @@
 ---
-title: "IDebugEnumField::GetUnderlyingSymbol | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetUnderlyingSymbol"
-helpviewer_keywords: 
-  - "IDebugEnumField::GetUnderlyingSymbol 方法"
+title: "IDebugEnumField::GetUnderlyingSymbol |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEnumField::GetUnderlyingSymbol
+helpviewer_keywords: IDebugEnumField::GetUnderlyingSymbol method
 ms.assetid: c3b8a117-6708-4cfd-8ffc-5f007d706bc5
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fdfec41092d974be90f1b376089fa4a66c45c955
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEnumField::GetUnderlyingSymbol
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，表示此列舉型別的名稱。  
+# <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
+這個方法會傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示列舉型別的名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetUnderlyingSymbol(  
-   IDebugField** ppField  
+   IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetUnderlyingSymbol(  
-   out IDebugField ppField  
+   out IDebugField ppField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppField`  
- \[\] out傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述這個列舉型別的名稱。  
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述這個列舉型別的名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 列舉型別的名稱雷同的列舉型別，會使用繫結至的記憶體位置的型別[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)。  
+## <a name="remarks"></a>備註  
+ 列舉名稱也包含之型別的列舉型別，使用繫結至記憶體位置[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)

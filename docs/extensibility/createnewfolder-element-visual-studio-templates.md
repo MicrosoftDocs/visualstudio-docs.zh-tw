@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#CreateNewFolder
-helpviewer_keywords:
-- CreateNewFolder element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateNewFolder
+helpviewer_keywords: CreateNewFolder element [Visual Studio project templates]
 ms.assetid: acef2016-4140-45d6-ace8-b8160eabd676
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: f9696ebfb29877319b9c7edee259f6de81249d74
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 60659adc2c261f498b0e5ffeebe3831faf7e6402
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 項目 (Visual Studio 範本)
 決定是否要檢查建立專案的目標目錄是否不存在。 如果目錄不存在，則可為專案建立全新的目錄。 此設定通常會由 `NewProjectRequiresNewFolder(VsTemplate)` 登錄旗標 (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) 覆寫，所有一般專案類型都會使用此設定來決定是否要在新目錄中建立新專案。  
@@ -60,12 +44,12 @@ ms.lasthandoff: 02/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   

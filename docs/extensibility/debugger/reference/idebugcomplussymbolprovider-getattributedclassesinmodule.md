@@ -1,69 +1,71 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetAttributedClassesinModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetAttributedClassesinModule"
-  - "GetAttributedClassesinModule"
+title: "IDebugComPlusSymbolProvider::GetAttributedClassesinModule |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+- GetAttributedClassesinModule
 ms.assetid: d8b087f3-1d32-4570-9eb0-7e0f7b051bc8
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0784887b769ccb70ef323376cb3200f575fb807c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetAttributedClassesinModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取與指定的模組中指定的屬性類別。  
+# <a name="idebugcomplussymbolprovidergetattributedclassesinmodule"></a>IDebugComPlusSymbolProvider::GetAttributedClassesinModule
+擷取與指定的屬性，指定模組中的類別。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 [C++]  
 HRESULT GetAttributedClassesinModule (  
-   ULONG32            ulAppDomainID,  
-   GUID               guidModule,  
-   LPOLESTR           pstrAttribute,  
-   IEnumDebugFields** ppEnum  
+   ULONG32            ulAppDomainID,  
+   GUID               guidModule,  
+   LPOLESTR           pstrAttribute,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
 ```  
 [C#]  
 int GetAttributedClassesinModule (  
-   uint                 ulAppDomainID,  
-   Guid                 guidModule,  
-   string               pstrAttribute,  
-   out IEnumDebugFields ppEnum  
+   uint                 ulAppDomainID,  
+   Guid                 guidModule,  
+   string               pstrAttribute,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- \[in\]應用程式定義域的識別項。  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- \[in\]模組的唯一的識別項。  
+ [in]模組的唯一識別碼。  
   
  `pstrAttribute`  
- \[in\]屬性字串。  
+ [in]屬性的字串。  
   
  `ppEnum`  
- \[\] out傳回屬性化類別的列舉型別。  
+ [out]傳回列舉的屬性化類別。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetAttributedClassesinModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -151,5 +153,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

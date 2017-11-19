@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- AD_PROCESS_ID
-helpviewer_keywords:
-- AD_PROCESS_ID union
+f1_keywords: AD_PROCESS_ID
+helpviewer_keywords: AD_PROCESS_ID union
 ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: ad5307134851e23e482daff5f0d8520cf7b0658e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: fa7b4f24cf215b3cab1bee47ed665d62336fb519
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adprocessid"></a>AD_PROCESS_ID
 指定的處理序識別碼，這可能是系統識別碼或 GUID。  

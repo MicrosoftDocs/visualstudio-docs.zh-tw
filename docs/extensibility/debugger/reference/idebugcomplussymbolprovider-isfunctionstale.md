@@ -1,51 +1,52 @@
 ---
-title: "IDebugComPlusSymbolProvider::IsFunctionStale | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::IsFunctionStale"
+title: "IDebugComPlusSymbolProvider::IsFunctionStale |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugComPlusSymbolProvider::IsFunctionStale
 ms.assetid: dcffc090-4ed8-47b2-ba51-bce1a6b6428d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 107eb5b3d33fcba0e06a015e2859342786cc7d2c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::IsFunctionStale
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-決定是否在指定的偵錯位址的函式會被視為過期。  
+# <a name="idebugcomplussymbolproviderisfunctionstale"></a>IDebugComPlusSymbolProvider::IsFunctionStale
+決定是否在指定的偵錯位址函式會被視為過時。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT IsFunctionStale(  
-   IDebugAddress* pAddress  
+   IDebugAddress* pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsFunctionStale(  
-   IDebugAddress pAddress  
+   IDebugAddress pAddress  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- \[in\]偵錯位址所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  這個地址必須是 METHOD\_ADDRESS。  
+ [in]由偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。 此位址必須是 METHOD_ADDRESS。  
   
-## 傳回值  
- 如果函式會被視為過時的會傳回`S_OK`。  如果函式不是過時的會傳回`S_FALSE`。  
+## <a name="return-value"></a>傳回值  
+ 如果函式會被視為過時，會傳回`S_OK`。 如果未過時的函式時，會傳回`S_FALSE`。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::IsFunctionStale(  
     IDebugAddress* pAddress  
 )  
@@ -89,5 +90,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

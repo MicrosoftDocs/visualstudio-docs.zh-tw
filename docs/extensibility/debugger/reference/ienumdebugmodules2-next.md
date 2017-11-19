@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugModules2::Next
-helpviewer_keywords:
-- IEnumDebugModules2::Next
+f1_keywords: IEnumDebugModules2::Next
+helpviewer_keywords: IEnumDebugModules2::Next
 ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 0742d25681f3f43c4975848b93bbbfad1ed4eb44
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: bb4ebd3c5392114ba95e5cdbbfb71e8b5e7cdb5a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 列舉中傳回下一個項目的集合。  

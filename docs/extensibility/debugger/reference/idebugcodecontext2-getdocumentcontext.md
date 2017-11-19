@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCodeContext2::GetDocumentContext
-helpviewer_keywords:
-- IDebugCodeContext2::GetDocumentContext
+f1_keywords: IDebugCodeContext2::GetDocumentContext
+helpviewer_keywords: IDebugCodeContext2::GetDocumentContext
 ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 335b8f7a2c92b299d62cda0f23c7d727cad653b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0caebddd60fa3b61bf1471f83e827ff367ce3cc6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 取得對應於這個程式碼內容的文件內容。 文件內容表示原始程式碼產生此指示對應的原始程式檔中的位置。  

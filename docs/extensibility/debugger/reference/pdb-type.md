@@ -1,67 +1,67 @@
 ---
-title: "PDB_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PDB_TYPE"
-helpviewer_keywords: 
-  - "PDB_TYPE 結構"
+title: "PDB_TYPE |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PDB_TYPE
+helpviewer_keywords: PDB_TYPE structure
 ms.assetid: 1c1bb772-77d6-4870-90b2-fd9247d0004e
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eadfeb8ffdf7cdb1b51951c466f0cb94283da6a2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# PDB_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個結構指定取自 PDB 符號的欄位型別相關的資訊。  
+# <a name="pdbtype"></a>PDB_TYPE
+此結構會指定取自 PDB 符號的欄位類型的相關資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 typedef struct _tagTYPE_PDB {  
-   ULONG32 ulAppDomainID;  
-   GUID    guidModule;  
-   DWORD   symid;  
+   ULONG32 ulAppDomainID;  
+   GUID    guidModule;  
+   DWORD   symid;  
 } PDB_TYPE;  
 ```  
   
-```c#  
+```csharp  
 public struct PDB_TYPE {  
-   public uint ulAppDomainID;  
-   public Guid guidModule;  
-   public uint symid;  
+   public uint ulAppDomainID;  
+   public Guid guidModule;  
+   public uint symid;  
 };  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  ulAppDomainID  
- 該符號的來源應用程式的識別碼。  這用來唯一地識別應用程式的執行個體。  
+ 應用程式的來源符號的識別碼。 這用來唯一識別應用程式的執行個體。  
   
  guidModule  
- 模組包含此欄位的 GUID。  
+ 包含此欄位之模組的 GUID。  
   
  symid  
- 符號這個欄位的對應的識別碼。  
+ 此欄位的對應符號的識別碼。  
   
-## 備註  
- 這個結構就會出現在 \[聯集的一部分[TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位的`TYPE_INFO`結構設定為 \[ `TYPE_KIND_PDB` \(介於[dwTYPE\_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別\)。  
+## <a name="remarks"></a>備註  
+ 此結構會顯示過程中的等位[TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)結構時`dwKind`欄位`TYPE_INFO`結構設為`TYPE_KIND_PDB`(介於[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)列舉型別）。  
   
-## 需求  
- 標頭: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [TYPE\_INFO](../../../extensibility/debugger/reference/type-info.md)   
- [dwTYPE\_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
+ [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)   
+ [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

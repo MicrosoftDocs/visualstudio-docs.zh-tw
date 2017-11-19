@@ -1,72 +1,72 @@
 ---
-title: "PENDING_BP_STATE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "PENDING_BP_STATE"
-helpviewer_keywords: 
-  - "PENDING_BP_STATE 列舉型別"
+title: "PENDING_BP_STATE |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: PENDING_BP_STATE
+helpviewer_keywords: PENDING_BP_STATE enumeration
 ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: de7ac105f7dea0c57297c29a4bdb8d5c85f62321
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# PENDING_BP_STATE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定的暫止中斷點 \(中斷點不尚未已繫結\) 的狀態。  
+# <a name="pendingbpstate"></a>PENDING_BP_STATE
+指定的暫止中斷點 （具有尚未已繫結中斷點） 的狀態。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
+```cpp  
+enum enum_PENDING_BP_STATE {   
+   PBPS_NONE     = 0x0000,  
+   PBPS_DELETED  = 0x0001,  
+   PBPS_DISABLED = 0x0002,  
+   PBPS_ENABLED  = 0x0003  
 };  
 typedef DWORD PENDING_BP_STATE;  
 ```  
   
-```c#  
-public enum enum_PENDING_BP_STATE {   
-   PBPS_NONE     = 0x0000,  
-   PBPS_DELETED  = 0x0001,  
-   PBPS_DISABLED = 0x0002,  
-   PBPS_ENABLED  = 0x0003  
+```csharp  
+public enum enum_PENDING_BP_STATE {   
+   PBPS_NONE     = 0x0000,  
+   PBPS_DELETED  = 0x0001,  
+   PBPS_DISABLED = 0x0002,  
+   PBPS_ENABLED  = 0x0003  
 };  
 ```  
   
-## Members  
- PBPS\_NONE  
- 零的預留位置。  永遠不會傳回這個值。  
+## <a name="members"></a>成員  
+ PBPS_NONE  
+ 零的的預留位置。 絕對不會傳回此值。  
   
- PBPS\_DELETED  
- 表示已刪除的暫止中斷點。  
+ PBPS_DELETED  
+ 表示已刪除暫止中斷點。  
   
- PBPS\_DISABLED  
- 指示已停用 \[暫止中斷點。  
+ PBPS_DISABLED  
+ 表示暫止中斷點已停用。  
   
- PBPS\_ENABLED  
- 表示已啟用 \[暫止中斷點。  
+ PBPS_ENABLED  
+ 指出已啟用 暫止中斷點。  
   
-## 備註  
- 作為`state`成員的[PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。  
+## <a name="remarks"></a>備註  
+ 使用做為`state`隸屬[PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)結構。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [PENDING\_BP\_STATE\_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

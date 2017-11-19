@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugStepCompleteEvent2
-helpviewer_keywords:
-- IDebugStepCompleteEvent2 interface
+f1_keywords: IDebugStepCompleteEvent2
+helpviewer_keywords: IDebugStepCompleteEvent2 interface
 ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: d6c18c36b205ada9fa64eb7786de9c6f16e03dde
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: b0b96a1156d736332bdc8110ae2244fdfc9aad1b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 這個介面是由偵錯引擎 (DE) 的工作階段偵錯的經理 (SDM) 完成時傳送程式偵錯時逐步執行、 不進入函式或跳離一行程式碼或陳述式或指令。  
@@ -55,11 +39,11 @@ IDebugStepCompleteEvent2 : IUnknown
  完成此步驟之後，一次暫停正在偵錯的程式和 IDE 更新其所有的 windows。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

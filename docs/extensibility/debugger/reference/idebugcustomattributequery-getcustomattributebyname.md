@@ -1,62 +1,64 @@
 ---
-title: "IDebugCustomAttributeQuery::GetCustomAttributeByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery::GetCustomAttributeByName"
-  - "GetCustomAttributeByName"
+title: "IDebugCustomAttributeQuery::GetCustomAttributeByName |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugCustomAttributeQuery::GetCustomAttributeByName
+- GetCustomAttributeByName
 ms.assetid: 6779727c-d10a-4abe-9acd-d0a1eb0737e7
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: fa8a3bb56b9391b8b668394e0a01cb21e2da44ea
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery::GetCustomAttributeByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取自訂屬性，指定其名稱。  
+# <a name="idebugcustomattributequerygetcustomattributebyname"></a>IDebugCustomAttributeQuery::GetCustomAttributeByName
+擷取指定之名稱的自訂屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetCustomAttributeByName(  
-   LPCOLESTR pszCustomAttributeName,  
-   BYTE*     ppBlob,  
-   DWORD*    pdwLen  
+   LPCOLESTR pszCustomAttributeName,  
+   BYTE*     ppBlob,  
+   DWORD*    pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCustomAttributeByName(  
-   string    pszCustomAttributeName,  
-   ref int[] ppBlob,  
-   out uint  pdwLen  
+   string    pszCustomAttributeName,  
+   ref int[] ppBlob,  
+   out uint  pdwLen  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszCustomAttributeName`  
- \[in\]自訂屬性的名稱。  
+ [in]自訂屬性的名稱。  
   
  `ppBlob`  
- 輸入 \[、 輸出\]包含自訂屬性資料的位元組陣列。  
+ [in、 out]包含自訂屬性資料的位元組陣列。  
   
  `pdwLen`  
- \[\] out以位元組為單位的長度`ppBlob`參數。  
+ [out]以位元組為單位的長度`ppBlob`參數。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  如果自訂屬性不存在，會傳回`S_FALSE`。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 如果自訂屬性不存在，就會傳回`S_FALSE`。 反之則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugClassFieldSymbol** 物件，公開 \(expose\) [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugClassFieldSymbol**公開物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugClassFieldSymbol::GetCustomAttributeByName(  
     LPCOLESTR pszCustomAttributeName,  
     BYTE *pBlob,  
@@ -91,5 +93,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

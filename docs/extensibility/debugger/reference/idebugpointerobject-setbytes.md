@@ -1,67 +1,67 @@
 ---
-title: "IDebugPointerObject::SetBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerObject::SetBytes"
-helpviewer_keywords: 
-  - "IDebugPointerObject::SetBytes 方法"
+title: "IDebugPointerObject::SetBytes |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPointerObject::SetBytes
+helpviewer_keywords: IDebugPointerObject::SetBytes method
 ms.assetid: 8c578b38-38d7-46f3-bb2e-8a730fccd334
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 91e11f0e321e286eaf669b50d2fa564fa29df314
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPointerObject::SetBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-設定一系列連續的位元組數所指向的值。  
+# <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
+設定從一系列的連續位元組所指向的值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT SetBytes(   
-   DWORD  dwStart,  
-   DWORD  dwCount,  
-   BYTE*  pBytes,  
-   DWORD* pdwBytes  
+```cpp  
+HRESULT SetBytes(   
+   DWORD  dwStart,  
+   DWORD  dwCount,  
+   BYTE*  pBytes,  
+   DWORD* pdwBytes  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetBytes(  
-   uint     dwStart,   
-   uint     dwCount,   
-   byte[]   pBytes,   
-   out uint pdwBytes  
+   uint     dwStart,   
+   uint     dwCount,   
+   byte[]   pBytes,   
+   out uint pdwBytes  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwStart`  
- \[in\]位移，以位元組為單位，從一開始所指向的物件。  
+ [in]以位元組為單位，從指向物件的開始位移。  
   
  `dwCount`  
- \[in\]若要設定的位元組數目。  
+ [in]若要設定的位元組數目。  
   
  `pBytes`  
- \[in\]表示新值的位元組陣列。  這個值會儲存到物件，開始於指定的位移。  
+ [in]代表新值的位元組陣列。 這個值會儲存的物件中指定位移處開始。  
   
  `pdwBytes`  
- \[\] out會傳回實際設定的位元組數目。  
+ [out]傳回實際設定的位元組數目。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 如果使用這個方法的指標，以這[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)所指向的點的基本型別或基本型別 \(也就是物件只能透過簡單的一連串的位元組陣列\) 的簡單陣列。  這`IDebugPointerObject`物件不能是 null 參考 \(它必須指向在記憶體中的地址\)。  
+## <a name="remarks"></a>備註  
+ 如果這個方法會使用指標所表示的這[IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)指向基本型別或基本型別 （也就是可以由簡單的一連串的位元組陣列） 的簡單陣列。 這`IDebugPointerObject`物件不可為 null 參考 （它必須指向記憶體中的位址）。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [GetBytes](../../../extensibility/debugger/reference/idebugpointerobject-getbytes.md)   
  [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)

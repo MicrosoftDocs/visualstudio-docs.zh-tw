@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptStringCompare::StrComp | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptStringCompare::StrComp |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptStringCompare.StrComp
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "StrComp 方法, IActiveScriptStringCompare 介面"
+helpviewer_keywords: StrComp method, IActiveScriptStringCompare interface
 ms.assetid: 124d1281-8037-4766-a2a1-61244ac1f114
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1b92b29f4e40f5e8de567337957aabbcb3c057fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptStringCompare::StrComp
+# <a name="iactivescriptstringcomparestrcomp"></a>IActiveScriptStringCompare::StrComp
 定義指令碼引擎的字串比較方法。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT StrComp(  
@@ -34,7 +37,7 @@ HRESULT StrComp(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `bszStr1`  
  第一個字串。  
   
@@ -42,22 +45,22 @@ HRESULT StrComp(
  第二個字串。  
   
  `iRet`  
- 比較的結果。  如果為 0，則 `bszStr1` 和 `bszStr2`相同，如果為 \-1，則 `bszStr1` \< `bszStr2`;如果為 1，則 `bszStr1` \> `bszStr2`。  
+ 比較的結果。 0 代表`bszStr1`和`bszStr2`都是一樣，則為-1 如果`bszStr1`  <  `bszStr2`; 1，否則`bszStr1`  >  `bszStr2`。  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |傳回值|意義|  
-|---------|--------|  
+|------------------|-------------|  
 |`S_OK`|成功。|  
-|`E_INVALIDARG`|引數是無效的。|  
-|`E_UNEXPECTED`|這個呼叫不需要 \(例如，指令碼引擎尚未載入或未初始化\)。|  
+|`E_INVALIDARG`|引數無效。|  
+|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎有尚未載入或初始化）。|  
   
-## 備註  
- 這個方法會在每次呼叫字串比較實作。  
+## <a name="remarks"></a>備註  
+ 每次執行字串比較時，會呼叫這個方法。  
   
-## 範例  
- 下列範例說明如何多載字串比較函式。  因此，使用 [IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md) 設定 SCRIPTPROP\_STRINGCOMPAREINSTANCE 時，多載允許。  
+## <a name="example"></a>範例  
+ 下列範例會示範如何多載字串比較函式。 當您使用多載允許[IActiveScriptProperty::SetProperty](../../winscript/reference/iactivescriptproperty-setproperty.md)設定 SCRIPTPROP_STRINGCOMPAREINSTANCE。  
   
 ```cpp#  
 cpp_quote("// {58562769-ED52-42f7-8403-4963514E1F11}")  
@@ -94,5 +97,5 @@ interface IActiveScriptStringCompare : IUnknown
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptStringCompare 介面](../../winscript/reference/iactivescriptstringcompare-interface.md)

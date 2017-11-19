@@ -1,70 +1,70 @@
 ---
-title: "訊息屬性對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "訊息選項"
-  - "訊息選項, 一般"
+title: "訊息屬性 對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- message options
+- message options, General
 ms.assetid: 58e9dc24-baf6-4ab8-916c-aea28b72e3b0
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e4a1516219df404b6447a9e95ae676d482cea7f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 訊息屬性對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用這個對話方塊可以尋找更多有關特定訊息的資訊。  若要顯示這個對話方塊，請將焦點移至[訊息檢視](../debugger/messages-view.md)視窗。  選取樹狀結構中的任何訊息節點，然後從 \[**檢視**\] 功能表中選擇 \[**屬性**\]。  
+# <a name="message-properties-dialog-box"></a>訊息屬性對話方塊
+使用此對話方塊來找出有關特定訊息的詳細資訊。 若要顯示此對話方塊中，焦點移至[訊息檢視](../debugger/messages-view.md)視窗。 在樹狀目錄中，選取訊息的任何節點，然後選擇 **屬性**從**檢視**功能表。  
   
- \[**一般**\] 索引標籤是唯一顯示的索引標籤。  下列為可用的設定：  
+ **一般** 索引標籤會顯示 唯一 索引標籤。 可用的設定如下：  
   
  **視窗控制代碼**  
- 此視窗的唯一 ID。  視窗控制代碼編號會重複使用，因此只在視窗的存留期識別視窗。  按一下這個值即可檢視這個視窗的屬性。  
+ 此視窗的唯一識別碼。 視窗控制代碼數字會重複使用。這些識別視窗只會針對該視窗的存留期。 按一下此值，以檢視此視窗的內容。  
   
- **巢狀層次**  
- 這個訊息的巢狀深度，其中 0 表示沒有巢狀。  
+ **巢狀層級**  
+ 此訊息，其中 0 表示無巢狀的巢狀深度。  
   
  **訊息**  
- 所選取之視窗訊息的編號、狀態及名稱。  
+ 數字、 狀態，以及選取的 windows 訊息的名稱。  
   
  **lResult**  
- *lResult* 參數的值 \(如果有的話\)。  
+ 值*lResult*參數，如果有的話。  
   
  **wParam**  
- *wParam* 參數的值 \(如果有的話\)。  
+ 值*wParam*參數，如果有的話。  
   
  **lParam**  
- *lParam* 參數的值 \(如果有的話\)。  如果這個值是字串或結構的指標，就會被解碼。  
+ 值*lParam*參數，如果有的話。 如果這是字串或結構的指標，這個值會解碼。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [訊息選項對話方塊](../debugger/message-options-dialog-box.md)  
- 用來選取要列在作用中 \[訊息\] 檢視中的訊息。  
+ 用來選取哪一個訊息會列在作用中的訊息檢視。  
   
  [訊息搜尋對話方塊](../debugger/message-search-dialog-box.md)  
- 用來尋找 \[訊息\] 檢視中特定訊息的節點。  
+ 用來尋找特定訊息在訊息檢視中的節點。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。  
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。  
   
- [從尋找視窗開啟訊息檢視](_asug_choosing_message_options)  
- 說明如何從 \[尋找視窗\] 對話方塊開啟 \[訊息\] 檢視。  
+ [從尋找視窗開啟訊息檢視](../debugger/how-to-open-messages-view-from-find-window.md)  
+ 說明如何從尋找視窗對話方塊開啟訊息檢視。  
   
- [在 &#91;訊息檢視&#93; 中搜尋訊息](../Topic/How%20to:%20Search%20for%20a%20Message%20in%20Messages%20View.md)  
- 說明如何在 \[訊息\] 檢視中尋找特定的訊息。  
+ [搜尋訊息檢視中的訊息](../debugger/how-to-search-for-a-message-in-messages-view.md)  
+ 說明如何在訊息檢視中找到特定的訊息。  
   
  [訊息檢視](../debugger/messages-view.md)  
- 顯示與視窗、處理序或執行緒關聯的訊息資料流。  
+ 顯示視窗、 處理序或執行緒相關聯的訊息資料流。  
   
- [Spy\+\+ 檢視](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。

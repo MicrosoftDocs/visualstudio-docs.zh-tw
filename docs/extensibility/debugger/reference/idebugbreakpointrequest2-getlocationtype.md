@@ -1,51 +1,51 @@
 ---
-title: "IDebugBreakpointRequest2::GetLocationType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointRequest2::GetLocationType"
-helpviewer_keywords: 
-  - "IDebugBreakpointRequest2::GetLocationType"
+title: "IDebugBreakpointRequest2::GetLocationType |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointRequest2::GetLocationType
+helpviewer_keywords: IDebugBreakpointRequest2::GetLocationType
 ms.assetid: b6d14c59-d3aa-48ff-8278-f6b5bba9c2f3
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9a286d0d8faafaca9b646daecceab8fa165bcd02
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointRequest2::GetLocationType
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得此中斷點要求的中斷點位置類型。  
+# <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
+取得此要求的中斷點位置類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetLocationType(   
-   BP_LOCATION_TYPE* pBPLocationType  
+```cpp  
+HRESULT GetLocationType(   
+   BP_LOCATION_TYPE* pBPLocationType  
 );  
 ```  
   
-```c#  
-int GetLocationType(   
-   out enum_BP_LOCATION_TYPE pBPLocationType  
+```csharp  
+int GetLocationType(   
+   out enum_BP_LOCATION_TYPE pBPLocationType  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pBPLocationType`  
- \[\] out傳回值，從[BP\_LOCATION\_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉型別，描述此中斷點要求的位置。  
+ [out]傳回值，從[BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)列舉，可描述此中斷點要求的位置。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_FAIL`如果`bpLocation`個相關的[BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構不正確。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_FAIL`如果`bpLocation`欄位相關聯[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構不正確。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CDebugBreakpointRequest`物件，公開 \(expose\)[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)    
@@ -78,8 +78,8 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BP\_LOCATION\_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+ [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)   
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

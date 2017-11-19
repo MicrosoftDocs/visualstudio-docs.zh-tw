@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugProcesses2::Clone
-helpviewer_keywords:
-- IEnumDebugProcesses2::Clone
+f1_keywords: IEnumDebugProcesses2::Clone
+helpviewer_keywords: IEnumDebugProcesses2::Clone
 ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d6b52a58486084b1c92f35b234ce053fd7276621
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cdb9368df08c54d5b02ce99fcf81c30739da8670
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 傳回目前的列舉，為個別物件的複本。  

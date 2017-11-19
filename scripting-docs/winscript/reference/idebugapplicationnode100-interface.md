@@ -1,32 +1,35 @@
 ---
-title: "IDebugApplicationNode100 介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDebugApplicationNode100 介面"
+title: "IDebugApplicationNode100 介面 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: IDebugApplicationNode100 Interface
 ms.assetid: 43966d4e-5f89-4a04-a08d-782347d00c2d
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: af79614d38ef55776b660329f51931be70b7f52e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplicationNode100 介面
-`IDebugApplicationNode100` 介面 [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)擴充的功能。  您可以呼叫 [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)之實作的 QueryInterface 取得此介面的執行個體。  
+# <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 介面
+`IDebugApplicationNode100`介面延伸功能的[IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)。 您可以取得此介面的執行個體的實作上呼叫 QueryInterface [IDebugApplicationNode 介面](../../winscript/reference/idebugapplicationnode-interface.md)。  
   
 > [!IMPORTANT]
->  這個介面是由 PDM v10.0 實作和更大。  位於 activdbg100.h。  
+>  這個介面會實作由 PDM v10.0 和更新版本。 可在 activdbg100.h 中找到。  
   
-## 方法  
+## <a name="methods"></a>方法  
  `IDebugApplicationNode100` 介面公開下列方法。  
   
-|方法|描述|  
-|--------|--------|  
-|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|取得由指定之篩選條件隱藏的文字文件。|  
-|[IDebugApplicationNode100::QueryIsChildNode](../../winscript/reference/idebugapplicationnode100-queryischildnode.md)|判斷指定的檔案是否屬於其中一個節點的子節點。|  
-|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|設定在特定 [IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md) 實作的篩選條件。  它允許指令碼偵錯工具會篩選掉編譯器產生的子應用程式節點，使 PDM 不再傳送事件，當節點建立或移除時。  根據預設，所有節點會傳送。|
+|方法|說明|  
+|------------|-----------------|  
+|[IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md)|取得所指定的篩選條件會隱藏文字文件。|  
+|[IDebugApplicationNode100::QueryIsChildNode](../../winscript/reference/idebugapplicationnode100-queryischildnode.md)|判斷指定的文件是否屬於這個節點的子節點的其中一個。|  
+|[IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)|在特定設定的篩選條件[IDebugApplicationNodeEvents 介面](../../winscript/reference/idebugapplicationnodeevents-interface.md)實作。 它可讓指令碼偵錯工具若要篩選出編譯器產生的子應用程式節點，使 PDM 將不會再傳送事件時建立或移除節點。 根據預設，會傳送所有節點。|

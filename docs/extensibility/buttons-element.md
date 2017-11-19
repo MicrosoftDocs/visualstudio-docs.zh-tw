@@ -1,28 +1,30 @@
 ---
-title: "按鈕項目 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "按鈕項目 (VSCT XML 結構描述)"
-  - "VSCT XML 結構描述項目: 按鈕"
+title: "按鈕項目 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Buttons element (VSCT XML schema)
+- VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8b2933f82c4088735f4203d947bad66c71aeb3e1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 按鈕項目
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-群組 [按鈕](../extensibility/button-element.md) 項目，則表示個別的命令。  
+# <a name="buttons-element"></a>按鈕項目
+群組[按鈕](../extensibility/button-element.md)項目，則表示個別的命令。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Buttons>  
@@ -31,34 +33,42 @@ caps.handback.revision: 12
 </Buttons>  
 ```  
   
-## 屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和項目  
  下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
-|--------|--------|  
-|條件|選擇項。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|---------------|-----------------|  
+|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
-|--------|--------|  
-|[Buttons Element](../extensibility/buttons-element.md)|分組按鈕項目。|  
-|[Button 元素](../extensibility/button-element.md)|定義使用者可以互動的命令。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[Buttons 元素](../extensibility/buttons-element.md)|群組按鈕項目。|  
+|[Button 元素](../extensibility/button-element.md)|定義命令，以互動使用者。|  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
-|--------|--------|  
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令集合。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具列上的命令的集合。|  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
-<Buttons> <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button"> <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/> <Icon guid="guidGenericCmdBmp" id="bmpArrow"/> <Strings> <ButtonText>C# Command Sample</ButtonText> </Strings> </Button> </Buttons>  
+<Buttons>  
+  <Button guid="guidMenuAndCommandsCmdSet" id="cmdidMyCommand"     priority="0x100" type="Button">  
+    <Parent guid="guidMenuAndCommandsCmdSet" id="MyMenuGroup"/>  
+    <Icon guid="guidGenericCmdBmp" id="bmpArrow"/>  
+    <Strings>  
+      <ButtonText>C# Command Sample</ButtonText>  
+    </Strings>  
+  </Button>  
+</Buttons>  
 ```  
   
-## 請參閱  
- [VSPackages 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [命令、 功能表和工具列](../extensibility/internals/commands-menus-and-toolbars.md)
+## <a name="see-also"></a>另請參閱  
+ [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [命令、功能表及工具列](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -1,56 +1,55 @@
 ---
-title: "IDiaSymbol::get_arrayIndexTypeId | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_arrayIndexTypeId 方法"
+title: "Idiasymbol:: Get_arrayindextypeid |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_arrayIndexTypeId method
 ms.assetid: 124f86e2-6f66-4541-87c3-799f435b731e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cdc3b6737d66e599da21766897148252269820e8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_arrayIndexTypeId
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取陣列索引型別識別項的符號。  
+# <a name="idiasymbolgetarrayindextypeid"></a>IDiaSymbol::get_arrayIndexTypeId
+擷取符號的陣列索引類型識別碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_arrayIndexTypeId (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_arrayIndexTypeId (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回的陣列索引型別 ID 的符號。  
+ [out]傳回的符號的陣列索引類型識別碼。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 備註  
- 識別項是唯一的值，由 DIA SDK 將標示為唯一的所有符號。  
+## <a name="remarks"></a>備註  
+ 識別碼是由 DIA SDK，以將標示為唯一的所有符號的唯一值。  
   
-## 需求  
+## <a name="requirements"></a>需求  
   
 |需求|描述|  
-|--------|--------|  
-|標頭：|dia2.h|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

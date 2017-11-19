@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_framePointerPresent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_framePointerPresent 方法"
+title: "Idiasymbol:: Get_framepointerpresent |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_framePointerPresent method
 ms.assetid: d036090a-1651-454d-9130-b798f58ba053
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f49db544894fe5ce393922e989757ffb3bf4022e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_framePointerPresent
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指定是否為框架指標。  何時使用[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設定為 \[ `SymTagFunction`。  
+# <a name="idiasymbolgetframepointerpresent"></a>IDiaSymbol::get_framePointerPresent
+擷取指定的框架指標是否存在的旗標。 使用時機[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)設`SymTagFunction`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_framePointerPresent(   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_framePointerPresent(   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\]\] out傳回`TRUE`如果框架指標會出現。 否則，會傳回`FALSE`。  
+ [out]]傳回`TRUE`如果框架指標會存在，否則會傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia100.dll  
+ DLL: msdia100.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

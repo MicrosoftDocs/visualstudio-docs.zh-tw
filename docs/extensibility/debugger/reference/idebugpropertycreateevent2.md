@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPropertyCreateEvent2
-helpviewer_keywords:
-- IDebugPropertyCreateEvent2 interface
+f1_keywords: IDebugPropertyCreateEvent2
+helpviewer_keywords: IDebugPropertyCreateEvent2 interface
 ms.assetid: 33b3082b-a42e-488a-a1e4-dadf506f922c
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: f8925c755189dbf6392534e1463e799ed5e01889
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: afe91b8dfa6321d046b7bdeb301e426d1083263f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時，它會建立與特定文件相關聯的屬性。  
@@ -54,7 +38,7 @@ IDebugPropertyCreateEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugPropertyCreateEvent2`介面。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetDebugProperty](../../../extensibility/debugger/reference/idebugpropertycreateevent2-getdebugproperty.md)|取得新的屬性。|  
   
@@ -62,11 +46,11 @@ IDebugPropertyCreateEvent2 : IUnknown
  如果屬性具有特定文件或與它相關聯的指令碼，DE 可以傳送此事件至 SDM 以更新**指令碼文件**視窗與文件的名稱。 會呼叫 SDM [GetExtendedInfo](../../../extensibility/debugger/reference/idebugproperty2-getextendedinfo.md)與引數`guidDocument`擷取`VARIANT`包含[IUnknown](/cpp/atl/iunknown)指標。 會呼叫 SDM [QueryInterface](/cpp/atl/queryinterface)擷取此指標上[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面，可用來更新**指令碼文件**視窗。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

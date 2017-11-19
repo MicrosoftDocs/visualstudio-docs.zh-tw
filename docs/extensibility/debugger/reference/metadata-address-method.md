@@ -1,69 +1,69 @@
 ---
-title: "METADATA_ADDRESS_METHOD | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "METADATA_ADDRESS_METHOD"
-helpviewer_keywords: 
-  - "METADATA_ADDRESS_METHOD 結構"
+title: "METADATA_ADDRESS_METHOD |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: METADATA_ADDRESS_METHOD
+helpviewer_keywords: METADATA_ADDRESS_METHOD structure
 ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d94087b9408afcc82dda8715faa643fa4f348cf0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# METADATA_ADDRESS_METHOD
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個結構是表示類別的方法的位址。  
+# <a name="metadataaddressmethod"></a>METADATA_ADDRESS_METHOD
+此結構表示的類別方法的位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_METHOD {  
-   _mdToken tokMethod;  
-   DWORD    dwOffset;  
-   DWORD    dwVersion;  
+   _mdToken tokMethod;  
+   DWORD    dwOffset;  
+   DWORD    dwVersion;  
 } METADATA_ADDRESS_METHOD;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_METHOD {  
-   public int  tokMethod;  
-   public uint dwOffset;  
-   public uint dwVersion;  
+   public int  tokMethod;  
+   public uint dwOffset;  
+   public uint dwVersion;  
 }  
 ```  
   
-## 詞彙  
+## <a name="terms"></a>詞彙  
  tokMethod  
  方法的識別碼。  
   
- \[C\+\+\]`_mdToken` is a `typedef` for a 32\-bit `int`.  
+ [C + +]`_mdToken`是`typedef`32 位元`int`。  
   
  dwOffset  
- \(可以 vtable 中表示的位移\) 這個方法從類別開始的位移。  
+ 從起始位移，類別 （可以代表位移 vtable） 這個方法。  
   
  dwVersion  
- \(這個值是唯一的符號提供者\) 的方法版本。  
+ 方法 （此值是唯一的符號提供者） 的版本。  
   
-## 備註  
- 這個結構屬於等位中的[DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位的`DEBUG_ADDRESS_UNION`結構設定為 \[ `ADDRESS_KIND_METHOD` \(介於[ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別\)。  
+## <a name="remarks"></a>備註  
+ 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_METHOD`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
-## 需求  
- 標頭: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

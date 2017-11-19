@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugDocumentTextEvents2
-helpviewer_keywords:
-- IDebugDocumentTextEvents2 interface
+f1_keywords: IDebugDocumentTextEvents2
+helpviewer_keywords: IDebugDocumentTextEvents2 interface
 ms.assetid: a10cbb6b-11a8-4056-b42a-2ecebf0e690d
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 242c15cc456c3a27ba7b7da45a11031b026c02d3
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: bd875edda076035d5c243fc4bfe83dceda61ac42
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
 這個介面用來偵錯引擎所提供的來源文件變更的相關通知 Visual Studio。  
@@ -49,12 +33,12 @@ IDebugDocumentTextEvents2 : IUnknown
  DE 實作這個介面來支援變更原始碼。 通常會實作這個介面會實作在相同物件上[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]取得此介面，透過呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。</xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面取自呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。</xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> </xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint> <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面透過呼叫[QueryInterface](/cpp/atl/queryinterface)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。</xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>  
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]取得此介面，透過呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面取自呼叫<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A>方法。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面透過呼叫[QueryInterface](/cpp/atl/queryinterface)方法[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugDocumentTextEvents2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|表示已終結整份文件。|  
 |[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|已加入文件中插入文字會告知偵錯封裝。|  
@@ -67,11 +51,11 @@ IDebugDocumentTextEvents2 : IUnknown
  僅提供自己的文件的偵錯引擎會利用`IDebugDocumentTextEvent2`介面。 這個範例是指令碼的偵錯引擎。 在解譯指令碼，新的原始程式碼可以產生，但不存在於任何磁碟檔案中只有知道 DE。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)   

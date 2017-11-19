@@ -1,60 +1,53 @@
 ---
-title: "SOURCE_TEXT_ATTR 列舉 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "SOURCE_TEXT_ATTR 的常數"
+title: "SOURCE_TEXT_ATTR 列舉 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords: SOURCE_TEXT_ATTR constants
 ms.assetid: 459384b0-1463-4841-a2b3-a993207163bf
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f21bbfacc4918ff0e67731d5efd5521f371cbdf9
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# SOURCE_TEXT_ATTR 列舉
-描述原始程式文字單一字元的屬性。  
+# <a name="sourcetextattr-enumeration"></a>SOURCE_TEXT_ATTR 列舉
+描述原始程式文字的單一字元的屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
-enum enum_SOURCE_TEXT_ATTR  
-{  
-    SOURCETEXT_ATTR_KEYWORD    = 0x0001,  
-    SOURCETEXT_ATTR_COMMENT    = 0x0002,  
-    SOURCETEXT_ATTR_NONSOURCE    = 0x0004,  
-    SOURCETEXT_ATTR_OPERATOR   = 0x0008,  
-    SOURCETEXT_ATTR_NUMBER    = 0x0010,  
-    SOURCETEXT_ATTR_STRING    = 0x0020,  
-    SOURCETEXT_ATTR_FUNCTION_START  = 0x0040  
-};  
-  
+enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEXT_ATTR_COMMENT    = 0x0002,    SOURCETEXT_ATTR_NONSOURCE    = 0x0004,    SOURCETEXT_ATTR_OPERATOR   = 0x0008,    SOURCETEXT_ATTR_NUMBER    = 0x0010,    SOURCETEXT_ATTR_STRING    = 0x0020,    SOURCETEXT_ATTR_FUNCTION_START  = 0x0040};  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
   
 |成員|值|描述|  
-|--------|-------|--------|  
-|SOURCETEXT\_ATTR\_KEYWORD|0x0001|字元是語言關鍵字，例如 VBScript，關鍵字 `While`的一部分。|  
-|SOURCETEXT\_ATTR\_COMMENT|0x0002|字元是註解區塊的一部分。|  
-|SOURCETEXT\_ATTR\_NONSOURCE|0x0004|字元不屬於編譯的語言來源文字的一部分。  例如，圍繞指令碼區塊的 HTML。|  
-|SOURCETEXT\_ATTR\_OPERATOR|0x0008|字元是語言運算子的一部分。  例如: ，算術運算子 **\+**。|  
-|SOURCETEXT\_ATTR\_NUMBER|0x0010|字元與語言和數值常數的一部分。  例如，常數 3.14159。|  
-|SOURCETEXT\_ATTR\_STRING|0x0020|字元是語言字串常數的一部分。  例如，字串「Hello World」。|  
-|SOURCETEXT\_ATTR\_FUNCTION\_START|0x0040|字元表示函式區塊的開頭。|  
+|------------|-----------|-----------------|  
+|SOURCETEXT_ATTR_KEYWORD|0x0001|字元是語言關鍵字，例如，VBScript 關鍵字的一部分`While`。|  
+|SOURCETEXT_ATTR_COMMENT|0x0002|字元是註解區塊的一部分。|  
+|SOURCETEXT_ATTR_NONSOURCE|0x0004|字元不是語言編譯的原始程式文字的一部分。 例如，HTML 周圍的指令碼區塊。|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|字元是語言運算子的一部分。 例如:，算術運算子 **+** 。|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|字元是語言數值常數的一部分。  例如，常數 3.14159。|  
+|SOURCETEXT_ATTR_STRING|0x0020|字元是語言的字串常數的一部分。 例如，字串"Hello World"。|  
+|SOURCETEXT_ATTR_FUNCTION_START|0x0040|字元表示函式區塊的開始|  
   
-## 備註  
- 通常， `IDebugDocumentHost::GetScriptTextAttributes`、 `IActiveScriptDebug::GetScriptletTextAttributes`和 `IActiveScriptDebug::GetScriptTextAttributes` 方法傳回的文字屬性，每一個字元，除非:  
+## <a name="remarks"></a>備註  
+ 一般而言， `IDebugDocumentHost::GetScriptTextAttributes`， `IActiveScriptDebug::GetScriptletTextAttributes`，和`IActiveScriptDebug::GetScriptTextAttributes`方法會傳回一個文字屬性，每個字元，除非：  
   
--   在中，方法可能會傳回 SOURCETEXT\_ATTR\_IDENTIFIER 和 SOURCETEXT\_ATTR\_MEMBERLOOKUP 旗標的情況下， GETATTRTYPE\_DEPSCAN 旗標設定，  
+-   設定 GETATTRTYPE_DEPSCAN 旗標，方法可能會在此情況下傳回 SOURCETEXT_ATTR_IDENTIFIER 和 SOURCETEXT_ATTR_MEMBERLOOKUP 旗標，  
   
--   在中，方法可能會傳回 SOURCETEXT\_ATTR\_THIS 旗標的情況下， GETATTRFLAG\_THIS 旗標設定，  
+-   設定 GETATTRFLAG_THIS 旗標，方法可能會在此情況下傳回 SOURCETEXT_ATTR_THIS 旗標  
   
--   在中，方法可能會傳回 SOURCETEXT\_ATTR\_HUMANTEXT 旗標的情況下， GETATTRFLAG\_HUMANTEXT 旗標設定為。  
+-   已設定 GETATTRFLAG_HUMANTEXT 旗標，方法可能會在此情況下傳回 SOURCETEXT_ATTR_HUMANTEXT 旗標。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,47 +1,46 @@
 ---
-title: "IDiaSymbol::get_slot | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_slot 方法"
+title: "Idiasymbol:: Get_slot |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_slot method
 ms.assetid: 97e405b8-483f-4da0-91e7-ca4d88251ecd
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d188cf52d2250e2a58665b1fe27999a956846159
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_slot
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取介面槽編號的位置。  Use when the [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) is `LocIsSlot`.  
+# <a name="idiasymbolgetslot"></a>IDiaSymbol::get_slot
+擷取位置的位置數目。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsSlot`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_slot (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_slot (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回介面槽編號位置。  
+ [out]傳回插槽編號的位置。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

@@ -1,49 +1,49 @@
 ---
-title: "IDebugProgramEx2::GetProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgramEx2::Attach"
+title: "IDebugProgramEx2::GetProgramNode |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramEx2::Attach
+helpviewer_keywords: IDebugProgramEx2::Attach
 ms.assetid: 1545ffbf-1422-4b5d-9bb9-314ba8665041
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 363526a29e3ad490b3041149c2c2186bbe94738a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramEx2::GetProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得與程式相關的 \[程式\] 節點。  
+# <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
+取得與程式相關聯的程式節點。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetProgramNode(   
-   IDebugProgramNode2** ppProgramNode  
+```cpp  
+HRESULT GetProgramNode(   
+   IDebugProgramNode2** ppProgramNode  
 );  
 ```  
   
-```c#  
-int GetProgramNode(   
-   out IDebugProgramNode2 ppProgramNode  
+```csharp  
+int GetProgramNode(   
+   out IDebugProgramNode2 ppProgramNode  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppProgramNode`  
- \[\] out傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示此程式相關聯的 \[程式\] 節點。  
+ [out]傳回[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，代表與這個程式相關聯的程式節點。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

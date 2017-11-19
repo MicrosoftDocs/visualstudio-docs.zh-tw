@@ -1,51 +1,53 @@
 ---
-title: "將圖示加入至功能表命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "圖示 [Visual Studio]，將加入至工具列"
-  - "工具列 [Visual Studio]，將圖示加入至命令"
-  - "命令 [Visual Studio]，加入圖示"
+title: "將圖示加入至功能表命令 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- icons [Visual Studio], adding to toolbars
+- toolbars [Visual Studio], adding icons to commands
+- commands [Visual Studio], adding icons
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1cdf521228a1878fa94343418bd6a182f9707a2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 將圖示加入至功能表命令
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-命令可以出現在功能表和工具列。 在工具列上很常見的命令與只是圖示 （為了節省空間） 時在功能表上顯示命令通常會出現的圖示和文字。  
+# <a name="adding-icons-to-menu-commands"></a>將圖示加入至功能表命令
+命令可以出現在功能表和工具列。 在工具列上很常見的只是圖示 （為了節省空間） 時功能表上顯示命令通常會顯示圖示和文字的命令。  
   
- 圖示是 16 像素寬 x 16 像素高，而且可以是 8 位元色彩深度 （256 色彩） 或 32 位元色彩深度 （全彩）。 偏好採用的 32 位元色彩圖示。 雖然允許多個點陣圖圖示通常會排列在單一點陣圖，水平的單一資料列。 此點陣圖以及個別的圖示的點陣圖中，您可以使用.vsct 檔中宣告。 請參閱參考 [點陣圖的項目](../extensibility/bitmaps-element.md) 如需詳細資訊。  
+ 圖示是 16 像素寬 x 16 像素高，而且可以是 8 位元色彩深度 （256 色） 或 32 位元色彩深度 （全彩）。 偏好採用的 32 位元色彩圖示。 雖然允許多個點陣圖圖示通常會排列在單一的點陣圖，單一水平列。 .Vsct 檔，以及個別點陣圖中可用的圖示中宣告這個點陣圖。 請參閱參考[點陣圖項目](../extensibility/bitmaps-element.md)如需詳細資訊。  
   
-## 將圖示加入至命令  
- 下列程序假設您有現有的功能表命令的 VSPackage 專案。 若要了解如何執行這項操作，請參閱 [建立擴充功能的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
+## <a name="adding-an-icon-to-a-command"></a>將圖示加入至命令  
+ 下列程序假設您有現有的 VSPackage 專案中的功能表命令。 若要了解如何執行這項操作，請參閱[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
   
-1.  建立點陣圖的 32 位元色彩深度。 圖示永遠是 16 x 16，因此這個點陣圖必須是 16 像素高和 16 像素寬的倍數。  
+1.  建立點陣圖的 32 位元色彩深度。 圖示永遠是 16 x 16，所以此點陣圖必須是 16 像素高和 16 個像素寬的倍數。  
   
-     每個圖示會放在彼此點陣圖中的單一資料列。 您可以使用 alpha 色頻來表示透明度中每個圖示的位置。  
+     每個圖示會放在相鄰點陣圖中的單一資料列。 您可以使用 alpha 色板，表示透明度中每個圖示的位置。  
   
-     如果您使用 8 位元色彩深度，使用的洋紅色、 `RGB(255,0,255)`, ，做為透明。 不過，32 位元色彩圖示是慣用的。  
+     如果您使用 8 位元色彩深度，使用洋紅色、 `RGB(255,0,255)`，做為透明。 不過，32 位元色彩圖示是慣用的。  
   
-2.  將圖示檔複製到 VSPackage 專案中的 \[資源\] 目錄。 在 \[方案總管\] 中，將圖示新增至專案。 （選取的資源，並在內容功能表上按一下 \[加入\] 和 \[現有項目，然後選取圖示檔。）  
+2.  將圖示檔複製到您的 VSPackage 專案中的 [資源] 目錄。 在 [方案總管] 中，將圖示新增至專案。 （選取資源，並在內容功能表上按一下 加入 和 現有項目，並選取圖示檔。）  
   
 3.  在編輯器中開啟.vsct 檔。  
   
-4.  新增 `GuidSymbol` 項目名稱為 **testIcon**。 建立 GUID \(**工具\] \/ \[建立 GUID**, ，然後選取 **登錄格式** 並按一下 \[複製\]\) 並將它貼到 `value` 屬性。 結果應該如下所示︰  
+4.  新增`GuidSymbol`元素名稱為**testIcon**。 建立 GUID (**工具 / 建立 GUID**，然後選取**登錄格式**然後按一下 複製) 並將它貼入`value`屬性。 結果看起來應該像這樣：  
   
     ```xml  
     <!-- Create your own GUID -->  
     <GuidSymbol name="testIcon" value="{00000000-0000-0000-0000-0000}">  
     ```  
   
-5.  新增 `<IDSymbol>` 圖示。`name` 屬性是圖示的識別碼，而 `value` 指出在功能表列上的位置，如果有的話。 如果有一個圖示，將 1 加入。 結果應該如下所示︰  
+5.  新增`<IDSymbol>`圖示。 `name`屬性是圖示的識別碼，而`value`指出在區域上的位置，如果有的話。 如果有一個圖示，會加 1。 結果看起來應該像這樣：  
   
     ```xml  
     <!-- Create your own GUID -->  
@@ -54,21 +56,21 @@ caps.handback.revision: 13
     </GuidSymbol>  
     ```  
   
-6.  建立 `<Bitmap>` 中 `<Bitmaps>` 來代表包含圖示的點陣圖.vsct 檔的區段。  
+6.  建立`<Bitmap>`中`<Bitmaps>`來代表包含圖示的點陣圖.vsct 檔的區段。  
   
-    -   設定 `guid` 值的名稱 `<GuidSymbol>` 您在上一個步驟中建立的項目。  
+    -   設定`guid`值的名稱`<GuidSymbol>`您在上一個步驟中建立的項目。  
   
-    -   設定 `href` 點陣圖檔案的相對路徑的值 \(在此情況下 **資源 \< 圖示檔檔名 \>**。  
+    -   設定`href`點陣圖檔案的相對路徑的值 (在此情況下**資源\\< 圖示檔檔名\>**。  
   
-    -   設定 `usedList` IDSymbol 您稍早建立的值。 這個屬性指定圖示，即可在 VSPackage 中使用逗號分隔的清單。 不在清單上的圖示會編譯排除的表單。  
+    -   設定`usedList`IDSymbol 您稍早建立的值。 這個屬性會指定以逗號分隔的清單圖示，即可在 VSPackage 中使用。 排除的表單編譯是不在清單上的圖示。  
   
-         點陣圖區塊看起來應該像這樣︰  
+         點陣圖區塊應該看起來像這樣：  
   
         ```xml  
         <Bitmap guid="testIcon" href="Resources\<icon file name>" usedList="testIcon1"/>  
         ```  
   
-7.  在現有 `<Button>` 元素中，將 `Icon` 的 GUIDSymbol 和 IDSymbol 值您稍早建立的項目。 使用這些值的 Button 元素的範例如下︰  
+7.  在現有`<Button>`項目，設定`Icon`GUIDSymbol 和 IDSymbol 值您稍早建立的項目。 按鈕項目使用這些值的範例如下：  
   
     ```xml  
     <Button guid="guidAddIconCmdSet" id="cmdidMyCommand" priority="0x0100" type="Button">  
@@ -82,6 +84,6 @@ caps.handback.revision: 13
   
 8.  測試您的圖示。 建置此專案並開始偵錯。 在實驗性執行個體中，找到的命令。 它應該會顯示圖示您加入。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [擴充的功能表和命令](../extensibility/extending-menus-and-commands.md)   
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)

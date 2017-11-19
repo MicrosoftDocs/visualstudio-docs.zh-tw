@@ -1,92 +1,92 @@
 ---
-title: "DEBUG_REFERENCE_INFO | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_REFERENCE_INFO"
-helpviewer_keywords: 
-  - "DEBUG_REFERENCE_INFO 結構"
+title: "DEBUG_REFERENCE_INFO |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_REFERENCE_INFO
+helpviewer_keywords: DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b6bb8d088b86c0e0af22e1ebde61d7084e46e238
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_REFERENCE_INFO
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 描述的參考。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-typedef struct tagDEBUG_REFERENCE_INFO {   
-   DEBUGREF_INFO_FLAGS dwFields;  
-   BSTR                bstrName;  
-   BSTR                bstrType;  
-   BSTR                bstrValue;  
-   DBG_ATTRIB_FLAGS    dwAttrib;  
-   REFERENCE_TYPE.     dwRefType;  
-   IDebugReference2*   m_pReference;  
+```cpp  
+typedef struct tagDEBUG_REFERENCE_INFO {   
+   DEBUGREF_INFO_FLAGS dwFields;  
+   BSTR                bstrName;  
+   BSTR                bstrType;  
+   BSTR                bstrValue;  
+   DBG_ATTRIB_FLAGS    dwAttrib;  
+   REFERENCE_TYPE.     dwRefType;  
+   IDebugReference2*   m_pReference;  
 } DEBUG_REFERENCE_INFO;  
 ```  
   
-```c#  
-public struct DEBUG_REFERENCE_INFO {   
-   public uint             dwFields;  
-   public string           bstrName;  
-   public string           bstrType;  
-   public string           bstrValue;  
-   public ulong            dwAttrib;  
-   public uint.            dwRefType;  
-   public IDebugReference2 m_pReference;  
+```csharp  
+public struct DEBUG_REFERENCE_INFO {   
+   public uint             dwFields;  
+   public string           bstrName;  
+   public string           bstrType;  
+   public string           bstrValue;  
+   public ulong            dwAttrib;  
+   public uint.            dwRefType;  
+   public IDebugReference2 m_pReference;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
  dwFields  
- 從的旗標組合[DEBUGREF\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)指定哪些欄位已填寫的列舉型別。  
+ 從旗標的組合[DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)列舉，指定哪些欄位都已填寫。  
   
  bstrName  
- 使用者定義名稱的[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。  
+ 指定使用者名稱[IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件。  
   
  bstrType  
- 參考型別當做格式化的字串。  
+ 格式化字串為參考類型。  
   
  bstrValue  
- 參考值，做為格式化的字串  
+ 參考值的格式化字串為  
   
  dwAttrib  
- 從的旗標組合[DBG\_ATTRIB\_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) ，可指定偵錯\] 屬性的屬性的旗標列舉型別。  
+ 從旗標的組合[DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)列舉，指定偵錯屬性的屬性的旗標。  
   
  dwRefType  
- 介於[REFERENCE\_TYPE](../../../extensibility/debugger/reference/reference-type.md)指定參考型別是否為強式或安全性不足的列舉型別。  
+ 中的值[REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)列舉，指定參考型別是強的還是弱式。  
   
- m\_pReference  
- [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)指定的參考資訊的物件。  
+ m_pReference  
+ [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)物件，指定的參考資訊。  
   
-## 備註  
- 這個結構會傳遞至呼叫[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)方法，會自動填入。  從清單的一部分，也會傳回此結構[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)介面，反而會傳回從呼叫[EnumChildren](../Topic/IDebugReference2::EnumChildren.md)方法。  
+## <a name="remarks"></a>備註  
+ 此結構會傳遞至呼叫[GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)要填入的方法。 從清單的一部分，也會傳回這個結構[IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)介面，亦會從呼叫傳回[EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
- [DEBUGREF\_INFO\_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
- [DBG\_ATTRIB\_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
- [REFERENCE\_TYPE](../../../extensibility/debugger/reference/reference-type.md)   
+ [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)   
+ [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md)   
+ [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)   
  [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md)   
- [EnumChildren](../Topic/IDebugReference2::EnumChildren.md)   
+ [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md)   
  [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

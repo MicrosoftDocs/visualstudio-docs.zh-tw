@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBoundBreakpoint2::SetCondition
+f1_keywords: IDebugBoundBreakpoint2::SetCondition
 helpviewer_keywords:
 - SetCondition method
 - IDebugBoundBreakpoint2::SetCondition method
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5d5d6f04e420ed7268c009467f74c020d429ab2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2b4e7fa667bfd5c0956233588210bc87e55d02bd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 設定或變更與此繫結中斷點相關聯的條件。  

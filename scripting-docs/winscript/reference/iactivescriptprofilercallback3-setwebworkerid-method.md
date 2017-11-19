@@ -1,32 +1,35 @@
 ---
-title: "IActiveScriptProfilerCallback3::SetWebWorkerId 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Iactivescriptprofilercallback3:: Setwebworkerid 方法 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 47744746-1276-441e-ab60-2a78f550e8e2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 426767b8d4d23964d6bfaa7102ee53b550e7ab9b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerCallback3::SetWebWorkerId 方法
-通知背景工作 ID 的分析工具對程式碼剖析工作階段使用。  如果函式不會執行在頁面中，則這個方法不會叫用。  `webWorkerId` 的值除以 1 加入每個背景工作的開始， 1。  ID 值也不會穩定的在工作階段以後，並且只在對應至背景工作的建立順序。  
+# <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>IActiveScriptProfilerCallback3::SetWebWorkerId 方法
+通知分析工具有關要用於此程式碼剖析工作階段的背景工作識別碼。 如果函式未在頁面的內容中執行，則這個方法是不叫用。 值`webWorkerId`會遞增每個背景工作，從 1 開始的 1。 ID 值不適合穩定超過工作階段，並只會對應至背景工作建立的順序。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT SetWebWorkerId([in] DWORD webWorkerId);  
-  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `webWorkerId`  
- 網路背景工作 ID.  
+ Web 背景工作識別碼。  
   
-## 傳回值  
- 這個方法的傳回值是由指令碼引擎會忽略。
+## <a name="return-value"></a>傳回值  
+ 這個方法的傳回值會忽略指令碼引擎。

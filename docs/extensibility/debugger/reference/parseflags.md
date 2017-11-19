@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- PARSEFLAGS
-helpviewer_keywords:
-- PARSEFLAGS enumeration
+f1_keywords: PARSEFLAGS
+helpviewer_keywords: PARSEFLAGS enumeration
 ms.assetid: 47943f0a-54cb-4493-a62e-5dba97bd4c35
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9c96eb60c397093fb5ec3291a0b02ee7cbd07e34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 86589a8f3886592ad1659b646b0a983a9f31f48b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何剖析的運算式。  

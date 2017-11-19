@@ -1,52 +1,53 @@
 ---
-title: "IDebugBoundBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBoundBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "Enable 方法"
-  - "IDebugBoundBreakpoint2::Enable 方法"
+title: "IDebugBoundBreakpoint2::Enable |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBoundBreakpoint2::Enable
+helpviewer_keywords:
+- Enable method
+- IDebugBoundBreakpoint2::Enable method
 ms.assetid: 1b4e3f73-c94d-4aa3-9aa8-0d8cb8a6c5ca
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8f08ed8088e2b068b753209f7749d330c000221f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBoundBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugboundbreakpoint2enable"></a>IDebugBoundBreakpoint2::Enable
 啟用或停用中斷點。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+```cpp  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```csharp  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `fEnable`  
- \[in\]設定為非零 \(`TRUE`\) 來啟用，或為零 \(`FALSE`\) 若要停用中斷點。  
+ [in]設定為非零 (`TRUE`) 來啟用，或為零 (`FALSE`) 若要停用中斷點。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態會設定為`BPS_DELETED` \(屬於[BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別\)。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`如果繫結的中斷點物件的狀態設定為`BPS_DELETED`(屬於[BP_STATE](../../../extensibility/debugger/reference/bp-state.md)列舉型別)。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CBoundBreakpoint`物件，公開 \(expose\) [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CBoundBreakpoint`公開物件[IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)介面。  
   
 ```  
 HRESULT CBoundBreakpoint::Enable(BOOL fEnable)    
@@ -95,6 +96,6 @@ HRESULT CBoundBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)   
- [BP\_STATE](../../../extensibility/debugger/reference/bp-state.md)
+ [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakEvent2
-helpviewer_keywords:
-- IDebugBreakEvent2 interface
+f1_keywords: IDebugBreakEvent2
+helpviewer_keywords: IDebugBreakEvent2 interface
 ms.assetid: 57dfdbc2-4e68-4dbf-9579-006cd6fb1c62
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 3eb66792461f9b31b1af5415a212130a07bb7b2c
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 41c63d947d1c59e041aef051fffc4def85e0bded
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 這個介面會告知工作階段的偵錯管理員 (SDM) 確認已成功完成非同步的中斷。  
@@ -55,11 +39,11 @@ IDebugBreakEvent2 : IUnknown
  例如，使用者可以選取**全部中斷**命令**偵錯**功能表來中斷程式執行無限迴圈。 SDM 會告訴程式停止藉由呼叫[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)。 DE 傳送`IDebugBreakEvent2`最後停止程式。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)   

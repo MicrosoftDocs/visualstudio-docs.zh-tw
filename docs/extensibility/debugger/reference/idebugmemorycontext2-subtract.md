@@ -1,59 +1,60 @@
 ---
-title: "IDebugMemoryContext2::Subtract | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::Subtract"
-helpviewer_keywords: 
-  - "減去方法"
-  - "IDebugMemoryContext2::Subtract 方法"
+title: "IDebugMemoryContext2::Subtract |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMemoryContext2::Subtract
+helpviewer_keywords:
+- Subtract method
+- IDebugMemoryContext2::Subtract method
 ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9b1dc686846e0ca1e60f6bfce03dc5976c0d1d34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMemoryContext2::Subtract
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 減去指定的值，從目前的內容，並傳回新的內容。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Subtract(   
-   UINT64                 dwCount,  
-   IDebugMemoryContext2** ppMemCxt  
+```cpp  
+HRESULT Subtract(   
+   UINT64                 dwCount,  
+   IDebugMemoryContext2** ppMemCxt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Subtract(  
-   ulong                    dwCount,   
-   out IDebugMemoryContext2 ppMemCxt  
+   ulong                    dwCount,   
+   out IDebugMemoryContext2 ppMemCxt  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwCount`  
- \[in\]以遞減的記憶體位元組數目。  
+ [in]要遞減的記憶體位元組數目。  
   
  `ppMemCxt`  
- \[\] out傳回新的[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。  
+ [out]傳回新[IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 記憶體內容是地址，所以減去一個地址產生新的地址，需要新的內容介面。  
+## <a name="remarks"></a>備註  
+ 記憶體內容會是一個位址，因此減去位址的值會產生需要新的內容介面的新位址。  
   
- 這個方法必須產生新的內容，即使產生地址超出此內容相關聯的記憶體空間。  唯一的例外是如果無記憶體可配置新的內容，或是`ppMemCxt`為 null 值 \(也就是錯誤\)。  
+ 這個方法必須永遠會產生新的內容，即使產生的位址超出此內容相關聯的記憶體空間。 唯一的例外是，如果沒有記憶體可以配置給新的內容或`ppMemCxt`是空值 （這是錯誤）。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

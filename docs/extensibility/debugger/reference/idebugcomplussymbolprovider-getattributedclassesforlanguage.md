@@ -4,37 +4,22 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - GetAttributedClassesForLanguage
 - IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e5841da14748977a48576d72c64e66dbf266d2a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0868998a43c48bc985c4801deddcf089c73f01bf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 擷取具有指定屬性中指定的程式語言所實作的類別。  

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugObject
-helpviewer_keywords:
-- IDebugObject interface
+f1_keywords: IDebugObject
+helpviewer_keywords: IDebugObject interface
 ms.assetid: 05cd8bf4-c9ee-4b49-b782-2263c33067d6
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 4707784dcccfa85f0edee277bc40ed19013509b5
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 7dd6df32ce98aa88f2eb511dc664be7f7c3c675c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugobject"></a>IDebugObject
 > [!IMPORTANT]
@@ -57,7 +41,7 @@ IDebugObject : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugObject`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetSize](../../../extensibility/debugger/reference/idebugobject-getsize.md)|取得物件的大小。|  
 |[GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)|取得物件的值做為一系列連續的位元組。|  
@@ -74,11 +58,11 @@ IDebugObject : IUnknown
  運算式評估工具會使用此介面的基底類別來表示剖析樹狀目錄中的物件。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ ee.h  
+ 標頭： ee.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   

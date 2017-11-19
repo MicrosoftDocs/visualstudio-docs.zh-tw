@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugAddresses::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugAddresses::Clone"
-helpviewer_keywords: 
-  - "IEnumDebugAddresses::Clone 方法"
+title: "IEnumDebugAddresses::Clone |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugAddresses::Clone
+helpviewer_keywords: IEnumDebugAddresses::Clone method
 ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 89ad14a37966b81235a100d3102e80bddb978782
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugAddresses::Clone
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回一份目前的列舉型別為個別物件。  
+# <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
+這個方法會傳回目前列舉為個別物件的複本。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
-   IEnumDebugAddresses** ppEnum  
+   IEnumDebugAddresses** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
-   out IEnumDebugAddresses ppEnum  
+   out IEnumDebugAddresses ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppEnum`  
- \[\] out傳回這個列舉型別，為個別物件的複本。  
+ [out]傳回這個列舉型別為個別物件的複本。  
   
-## 屬性值\/傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="property-valuereturn-value"></a>屬性值/傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 列舉型別的複製，會呼叫這個方法只有在有與原始檔案相同的狀態。  不過，副本和原本的狀態是分開，且可以個別變更。  
+## <a name="remarks"></a>備註  
+ 列舉的副本會呼叫這個方法只有在有相同的原始狀態。 不過，複製和原始的狀態分開的而且可以個別變更。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugActivateDocumentEvent2::GetDocument
+f1_keywords: IDebugActivateDocumentEvent2::GetDocument
 helpviewer_keywords:
 - GetDocument method
 - IDebugActivateDocumentEvent2::GetDocument method
 ms.assetid: b3c32f1b-f3de-409d-920d-ba7b3fa84fcd
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7d28ed72c33365aadd2f1db696dcefda536b3f48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 3d2df4b83030e71030ac84df52e9bf998ba554ec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 取得要啟動的文件。  

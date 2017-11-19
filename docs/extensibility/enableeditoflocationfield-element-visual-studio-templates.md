@@ -4,35 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- EnableEditOfLocationField (Visual Studio project templates)
+helpviewer_keywords: EnableEditOfLocationField (Visual Studio project templates)
 ms.assetid: 51a91963-8a3f-4741-928e-bc90c11473bb
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 620243fa3c764ed5d6b045f240cbf5b10c4bdedb
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 99916d3affa41d90c9fcfb912e2d3f94c743d87c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField 項目 (Visual Studio 範本)
 指定使用者是否可以編輯 [位置] 欄位。  
@@ -58,19 +43,19 @@ ms.lasthandoff: 02/22/2017
   
 ### <a name="parent-elements"></a>父項目  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須`true`或`false`，這表示使用者是否可以編輯**位置**上的文字方塊**新的專案**對話方塊。  
+ 此文字必須`true`或`false`，這表示使用者是否可以編輯**位置**上的文字方塊**新專案** 對話方塊。  
   
 ## <a name="remarks"></a>備註  
- `EnableEditOfLocationField` 是選擇性項目。 預設值是`true`，可讓使用者編輯中的值**位置**文字方塊中**新的專案**對話方塊。  
+ `EnableEditOfLocationField` 是選擇性項目。 預設值是`true`，可讓使用者編輯中的值**位置**文字方塊中**新專案** 對話方塊。  
   
- 在**新的專案**] 對話方塊的 [**位置**文字方塊中指定儲存新的專案的目錄。  
+ 在**新專案**對話方塊中，**位置**文字方塊中指定儲存新專案的目錄。  
   
 ## <a name="example"></a>範例  
  下列範例說明的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  

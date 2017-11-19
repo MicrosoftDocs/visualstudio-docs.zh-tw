@@ -1,46 +1,48 @@
 ---
-title: "進入中斷模式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "中斷模式"
-  - "偵錯 [偵錯 SDK]，請進入中斷模式"
+title: "進入中斷模式 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- break mode
+- debugging [Debugging SDK], entering break mode
 ms.assetid: e9a8a241-cd21-4d4e-999a-283554c288b1
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 33dd97cf627ae10e71a2aa2213a9763e86818b70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 進入中斷模式
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-下列將描述當遇到中斷點逐步執行函式、 執行中，有的資料指標的原始程式碼行或執行到中斷點之後，就會發生的處理程序。  
+# <a name="entering-break-mode"></a>進入中斷模式
+以下描述逐步執行函式、 執行中，有資料指標的原始碼的行，或執行到中斷點之後遇到中斷點時所發生的程序。  
   
-## 中斷模式處理程序  
+## <a name="break-mode-process"></a>中斷模式程序  
   
-1.  偵錯引擎 \(DE\) 傳送 [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)，  [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)，或任何其他停止事件會造成 IDE 進入中斷模式。  
+1.  偵錯引擎 (DE) 傳送[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)， [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)，或任何其他停止事件，讓 IDE 進入中斷模式。  
   
-2.  SDM 從執行緒中，取得的呼叫堆疊資訊的如下所示：  
+2.  SDM 從執行緒取得呼叫堆疊資訊的如下所示：  
   
     -   [IDebugThread2::EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)  
   
-    -   [IEnumDebugFrameInfo2::GetCount](../Topic/IEnumDebugFrameInfo2::GetCount.md)  
+    -   [IEnumDebugFrameInfo2::GetCount](../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)  
   
-    -   [IEnumDebugFrameInfo2::Next](../Topic/IEnumDebugFrameInfo2::Next.md)  
+    -   [IEnumDebugFrameInfo2::Next](../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)  
   
-    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) 以取得原始檔程式碼的資訊  
+    -   [IDebugStackFrame2::GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)取得來源的程式碼資訊  
   
-    -   [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) 取得檔名  
+    -   [IDebugDocumentContext2::GetName](../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)取得檔案名稱  
   
-    -   [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md) 以取得陳述式範圍  
+    -   [IDebugDocumentContext2::GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)取得陳述式範圍  
   
-    -   [IDebugStackFrame2::GetCodeContext](../Topic/IDebugStackFrame2::GetCodeContext.md) 以取得記憶體資訊  
+    -   [IDebugStackFrame2::GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)取得記憶體資訊  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [呼叫偵錯工具事件](../../extensibility/debugger/calling-debugger-events.md)

@@ -1,58 +1,58 @@
 ---
-title: "IDebugCustomAttribute::GetAttributeBytes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
-helpviewer_keywords: 
-  - "IDebugCustomAttribute::GetAttributeBytes"
+title: "IDebugCustomAttribute::GetAttributeBytes |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttribute::GetAttributeBytes
+helpviewer_keywords: IDebugCustomAttribute::GetAttributeBytes
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1258b2b7fdc1c91eaaa6265ce74a3891deda8ab0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttribute::GetAttributeBytes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得屬性資訊，以位元組為單位的 blob。  
+# <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
+取得 blob （位元組) 的屬性資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetAttributeBytes(   
-   BYTE*  ppBlob,  
-   DWORD* pdwLen  
+```cpp  
+HRESULT GetAttributeBytes(   
+   BYTE*  ppBlob,  
+   DWORD* pdwLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAttributeBytes(  
-   ref byte[] ppBlob,   
-   ref uint   pdwLen  
+   ref byte[] ppBlob,   
+   ref uint   pdwLen  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppBlob`  
- 輸入 \[、 輸出\]會填入這些屬性的位元組陣列。  
+ [in、 out]陣列，其中會填入屬性位元組。  
   
  `pdwLen`  
- 輸入 \[、 輸出\]指定要傳回的位元組數目上限`ppBlob`陣列，並傳回實際寫入陣列的位元組數目。  
+ [in、 out]指定要傳回的位元組數目上限`ppBlob`陣列並傳回實際寫入至陣列的位元組數目。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 設定`ppBlob` ，傳回的數字為 null 值的參數屬性可用位元組。  然後配置一個陣列，並傳遞該陣列中的`ppBlob`參數。  
+## <a name="remarks"></a>備註  
+ 設定`ppBlob`參數為 null 的值，傳回的數字屬性可用位元組。 配置陣列，然後將陣列中的傳送`ppBlob`參數。  
   
- 屬性代表自訂屬性的未經處理的資料。  
+ 屬性代表自訂屬性的未經處理資料。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -1,57 +1,57 @@
 ---
-title: "IDebugEnumField::GetValueFromString | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEnumField::GetValueFromString"
-helpviewer_keywords: 
-  - "IDebugEnumField::GetValueFromString 方法"
+title: "IDebugEnumField::GetValueFromString |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEnumField::GetValueFromString
+helpviewer_keywords: IDebugEnumField::GetValueFromString method
 ms.assetid: 1ef8ac5e-a3e0-4078-b876-7f5615aedcbb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d88956f9ccdfef82f98de0b93d33c39b12955286
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEnumField::GetValueFromString
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回列舉型別常數的名稱相關聯的值。  
+# <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
+這個方法傳回的列舉常數的名稱相關聯的值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetValueFromString(  
-   LPCOLESTR  pszValue,  
-   ULONGLONG* pvalue  
+   LPCOLESTR  pszValue,  
+   ULONGLONG* pvalue  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetValueFromString(  
-   string    pszValue,  
-   out ulong pValue  
+   string    pszValue,  
+   out ulong pValue  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszValue`  
- \[in\]字串，指定用來取得值的名稱。  請注意，c \+ \+，這是一個寬字元字串。  
+ [in]字串，指定要取得其值的名稱。 請注意，c + +，這是寬字元字串。  
   
  `pValue`  
- \[\] out傳回相關聯的數值。  
+ [out]傳回相關聯的數值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`，如果名稱不是列舉型別或錯誤程式碼的一部份。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`，如果名稱不屬於列舉型別，則為錯誤碼。  
   
-## 備註  
- 這個方法會區分大小寫。  如果不區分大小寫的搜尋需要 \(例如，在這類的 Visual Basic 名稱沒有區分大小寫的語言\)，請使用[GetValueFromStringCaseInsensitive](../Topic/IDebugEnumField::GetValueFromStringCaseInsensitive.md)。  
+## <a name="remarks"></a>備註  
+ 這個方法會區分大小寫。 如果需要區分大小寫的搜尋 （例如，在 Visual Basic 名稱不區分大小寫之類的語言），使用[GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)   
- [GetValueFromStringCaseInsensitive](../Topic/IDebugEnumField::GetValueFromStringCaseInsensitive.md)
+ [GetValueFromStringCaseInsensitive](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstringcaseinsensitive.md)

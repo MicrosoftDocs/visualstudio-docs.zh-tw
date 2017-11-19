@@ -1,27 +1,30 @@
 ---
-title: "IDebugStackFrame::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugStackFrame::GetCodeContext |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugStackFrame.GetCodeContext
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugStackFrame::GetCodeContext"
+helpviewer_keywords: IDebugStackFrame::GetCodeContext
 ms.assetid: 3dd378f3-e4b7-413e-8812-0f6c72952544
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b872e63169f6c2d70cd3476324b3d0071718350
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugStackFrame::GetCodeContext
-傳回目前程式碼內容與堆疊框架。  
+# <a name="idebugstackframegetcodecontext"></a>IDebugStackFrame::GetCodeContext
+傳回目前的堆疊框架相關聯的程式碼內容。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetCodeContext(  
@@ -29,19 +32,19 @@ HRESULT GetCodeContext(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppcc`  
- \[in\] 程式碼內容與堆疊框架。  
+ [out]程式碼相關聯的內容與堆疊框架。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 這個方法會傳回目前程式碼內容與堆疊框架。  
+## <a name="remarks"></a>備註  
+ 這個方法會傳回目前的堆疊框架相關聯的程式碼內容。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugStackFrame 介面](../../winscript/reference/idebugstackframe-interface.md)

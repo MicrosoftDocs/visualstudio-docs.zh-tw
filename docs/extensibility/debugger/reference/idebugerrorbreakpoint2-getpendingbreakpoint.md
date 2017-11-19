@@ -1,49 +1,49 @@
 ---
-title: "IDebugErrorBreakpoint2::GetPendingBreakpoint | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugErrorBreakpoint2::GetPendingBreakpoint"
-helpviewer_keywords: 
-  - "IDebugErrorBreakpoint2::GetPendingBreakpoint"
+title: "IDebugErrorBreakpoint2::GetPendingBreakpoint |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugErrorBreakpoint2::GetPendingBreakpoint
+helpviewer_keywords: IDebugErrorBreakpoint2::GetPendingBreakpoint
 ms.assetid: 59d0defc-99fd-445c-bdac-8224d5dea3f9
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c92a8463d0a92293dc448272a889524127d703e9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugErrorBreakpoint2::GetPendingBreakpoint
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugerrorbreakpoint2getpendingbreakpoint"></a>IDebugErrorBreakpoint2::GetPendingBreakpoint
 取得造成錯誤的暫止中斷點。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetPendingBreakpoint (   
-   IDebugPendingBreakpoint2** ppPendingBreakpoint  
+```cpp  
+HRESULT GetPendingBreakpoint (   
+   IDebugPendingBreakpoint2** ppPendingBreakpoint  
 );  
 ```  
   
-```c#  
-int GetPendingBreakpoint (   
-   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
+```csharp  
+int GetPendingBreakpoint (   
+   out IDebugPendingBreakpoint2 ppPendingBreakpoint  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppPendingBreakpoint`  
- \[\] out傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)物件，表示無法繫結的暫止中斷點。  
+ [out]傳回[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)表示暫止中斷點無法繫結的物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugObject::SetValue
-helpviewer_keywords:
-- IDebugObject::SetValue method
+f1_keywords: IDebugObject::SetValue
+helpviewer_keywords: IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 4e4a4311d5e115e20d23096a6ca1e3bce2dcbea6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 7249c2bc64afea2ca1037cc7fa1cf617357341d7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 設定物件的值從一系列連續的位元組。  

@@ -1,57 +1,56 @@
 ---
-title: "IDiaSymbol::get_offset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_offset 方法"
+title: "Idiasymbol:: Get_offset |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_offset method
 ms.assetid: 8292bb08-4dc8-4663-beb4-258f5d5a448d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bd3fa794da188e228f44b0930bcf5b27f4b3a0fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_offset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取符號位置的位移。  Use when the [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md) is `LocIsRegRel` or `LocIsBitField`.  
+# <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
+擷取符號位置的位移。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)是`LocIsRegRel`或`LocIsBitField`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_offset (   
-   LONG* pRetVal  
+```C++  
+HRESULT get_offset (   
+   LONG* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回的位移，以位元組為單位之符號的位置。  
+ [out]傳回以位元組為單位的符號位置的位移。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
- 位移是從某個已知的時候，如上所述。  比方說的位移`LocIsBitField`位置類型通常是從包含類別的開頭。  
+## <a name="remarks"></a>備註  
+ 此位移為從一些已知的起點，如上所述。 例如，位移`LocIsBitField`位置型別通常是從包含類別的開始。  
   
-## 需求  
+## <a name="requirements"></a>需求  
   
 |需求|描述|  
-|--------|--------|  
-|標頭：|dia2.h|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)

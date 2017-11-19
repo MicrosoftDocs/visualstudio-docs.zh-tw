@@ -4,39 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPendingBreakpoint2::EnumErrorBreakpoints
+f1_keywords: IDebugPendingBreakpoint2::EnumErrorBreakpoints
 helpviewer_keywords:
 - IDebugPendingBreakpoint2::EnumErrorBreakpoints method
 - EnumErrorBreakpoints method
 ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 7d82cd464cbd3d325fc688a7add0f501223fd3eb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 0d6601d9c6bd6e3ad269bd3f6d902033b1682385
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 取得導致此暫止中斷點的所有錯誤中斷點的清單。  

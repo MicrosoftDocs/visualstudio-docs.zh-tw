@@ -1,48 +1,48 @@
 ---
-title: "IDebugProperty3::DestroyObjectID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
-helpviewer_keywords: 
-  - "IDebugProperty3::DestroyObjectID"
+title: "IDebugProperty3::DestroyObjectID |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::DestroyObjectID
+helpviewer_keywords: IDebugProperty3::DestroyObjectID
 ms.assetid: bd08f356-cc67-4717-98c9-c3d00cad2040
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ceae63b77f0797e0781318cfa362e735d995eb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::DestroyObjectID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-終結與此屬性，相關指示呼叫者不會再在乎來識別唯一所有的其他屬性的這個屬性的專一識別碼。  
+# <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
+終結與這個屬性，相關聯指出呼叫端不再想要識別唯一來自其他所有屬性的這個屬性的唯一識別碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT DestroyObjectID(  
-   void  
+HRESULT DestroyObjectID(  
+   void  
 );  
 ```  
   
-```c#  
-int DestroyObjectID();  
+```csharp  
+int DestroyObjectID();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 如果偵錯引擎不需要支援屬性的唯一識別碼 \(因為它已追蹤它們唯一內部\)，則可以只傳回`E_NOTIMPL`這個方法。  
+## <a name="remarks"></a>備註  
+ 如果偵錯引擎不需要支援屬性的唯一識別碼 （因為它已追蹤這些唯一內部），則可以只傳回`E_NOTIMPL`，此方法。  
   
- 專一識別碼由呼叫[CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)方法，當呼叫端想要確定這個屬性唯一的識別之間所有其他屬性。  
+ 呼叫以建立唯一的 Id [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)方法呼叫端想要確定在所有其他屬性間唯一識別出此屬性時。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [CreateObjectID](../../../extensibility/debugger/reference/idebugproperty3-createobjectid.md)

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugThreadDestroyEvent2
-helpviewer_keywords:
-- IDebugThreadDestroyEvent2
+f1_keywords: IDebugThreadDestroyEvent2
+helpviewer_keywords: IDebugThreadDestroyEvent2
 ms.assetid: fca3f603-9432-457b-9ddd-8b0ec17da046
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 2e6cd8ce3c2091fc83ceb16e1f97da9066108074
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 090c44d021d8852ecc33e9db1db7d5d5e9ff6557
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 時在執行緒執行到完成為止。  
@@ -62,11 +46,11 @@ IDebugThreadDestroyEvent2 : IUnknown
  Visual Studio 會使用此事件更新**執行緒**視窗。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

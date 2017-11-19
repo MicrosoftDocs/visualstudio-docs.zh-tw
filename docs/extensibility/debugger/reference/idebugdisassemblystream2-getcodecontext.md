@@ -1,62 +1,62 @@
 ---
-title: "IDebugDisassemblyStream2::GetCodeContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetCodeContext"
+title: "IDebugDisassemblyStream2::GetCodeContext |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::GetCodeContext
+helpviewer_keywords: IDebugDisassemblyStream2::GetCodeContext
 ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1c40a76ffeae198a9d4a5a41b438262a342d877e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::GetCodeContext
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-傳回指定的程式碼的位置識別碼相對應的程式碼內容物件。  
+# <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
+傳回指定的程式碼位置識別碼相對應的程式碼內容物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetCodeContext(   
-   UINT64               uCodeLocationId,  
-   IDebugCodeContext2** ppCodeContext  
+```cpp  
+HRESULT GetCodeContext(   
+   UINT64               uCodeLocationId,  
+   IDebugCodeContext2** ppCodeContext  
 );  
 ```  
   
-```c#  
-int GetCodeContext(   
-   ulong                  uCodeLocationId,  
-   out IDebugCodeContext2 ppCodeContext  
+```csharp  
+int GetCodeContext(   
+   ulong                  uCodeLocationId,  
+   out IDebugCodeContext2 ppCodeContext  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `uCodeLocationId`  
- \[in\]指定的程式碼的位置識別碼。  請參閱 \[備註\] 部份的[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)的程式碼的位置識別碼說明的方法。  
+ [in]指定程式碼位置識別項。 請參閱 < 備註 > 一節的[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法的程式碼的位置識別項的描述。  
   
  `ppCodeContext`  
- \[\] out傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相關聯的程式碼內容。  
+ [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，表示相關聯的程式碼內容。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 可以從呼叫傳回的程式碼的位置識別碼[GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)方法，而且可以出現在[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
+## <a name="remarks"></a>備註  
+ 可從呼叫傳回之程式碼位置識別碼[GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)方法且可以出現在[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構。  
   
- 若要將程式碼內容轉換成程式碼的位置識別碼時，呼叫[GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)方法。  
+ 若要轉換的程式碼位置識別項程式碼內容，請呼叫[GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   
- [GetCodeLocationId](../Topic/IDebugDisassemblyStream2::GetCodeLocationId.md)   
- [GetCurrentLocation](../Topic/IDebugDisassemblyStream2::GetCurrentLocation.md)   
+ [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md)   
+ [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

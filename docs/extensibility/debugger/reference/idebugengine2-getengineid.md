@@ -1,56 +1,56 @@
 ---
-title: "IDebugEngine2::GetEngineID | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngine2::GetEngineID"
-helpviewer_keywords: 
-  - "IDebugEngine2::GetEngineID"
+title: "IDebugEngine2::GetEngineID |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngine2::GetEngineID
+helpviewer_keywords: IDebugEngine2::GetEngineID
 ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 008c3cb2f2c4f8e12eedbae347515099524da2c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngine2::GetEngineID
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得偵錯引擎 \(DE\) 的 GUID。  
+# <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
+取得偵錯引擎 (DE) 的 GUID。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetEngineID(   
-   GUID* pguidEngine  
+```cpp  
+HRESULT GetEngineID(   
+   GUID* pguidEngine  
 );  
 ```  
   
-```c#  
-int GetEngineID(   
-   out Guid pguidEngine  
+```csharp  
+int GetEngineID(   
+   out Guid pguidEngine  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pguidEngine`  
- \[\] out傳回 DE 的 GUID。  
+ [out]傳回 DE GUID。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 典型的 Guid 的一些範例是`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。  新的偵錯引擎會建立自己的 GUID 來識別身分。  
+## <a name="remarks"></a>備註  
+ 典型的 Guid 的一些範例包括`guidScriptEng`， `guidNativeEng`，或`guidSQLEng`。 新的偵錯引擎會建立自己的 GUID 來識別。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CEngine`實作物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CEngine`實作物件[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CEngine::GetEngineId(GUID *pguidEngine){    
    if (pguidEngine) {    
       // Set pguidEngine to guidBatEng, as defined in the Batdbg.idl file.    
@@ -64,5 +64,5 @@ HRESULT CEngine::GetEngineId(GUID *pguidEngine){
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

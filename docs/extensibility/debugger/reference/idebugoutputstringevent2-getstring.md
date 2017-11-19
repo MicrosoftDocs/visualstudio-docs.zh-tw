@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugOutputStringEvent2::GetString
-helpviewer_keywords:
-- IDebugOutputStringEvent2::GetString
+f1_keywords: IDebugOutputStringEvent2::GetString
+helpviewer_keywords: IDebugOutputStringEvent2::GetString
 ms.assetid: f059f8e0-ad44-49ac-ba90-73576ada5e06
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: d00c14c120aa282ce36de3a16db91029c1e08c99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e9ec7bb7fcb63e613a3a0e45e37f101390ba3d75
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugoutputstringevent2getstring"></a>IDebugOutputStringEvent2::GetString
 取得可顯示的訊息。  

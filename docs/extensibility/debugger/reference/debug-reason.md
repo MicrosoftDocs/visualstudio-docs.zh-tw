@@ -1,77 +1,77 @@
 ---
-title: "DEBUG_REASON | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DEBUG_REASON"
-helpviewer_keywords: 
-  - "DEBUG_REASON 列舉型別"
+title: "DEBUG_REASON |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: DEBUG_REASON
+helpviewer_keywords: DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9607afd765e1ddbc9fb2be97a0b7694aed7d493d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# DEBUG_REASON
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugreason"></a>DEBUG_REASON
 指定處理程序已啟動偵錯的原因。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```cpp  
+enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
-typedef DWORD DEBUG_REASON;  
+typedef DWORD DEBUG_REASON;  
 ```  
   
-```c#  
-public enum enum_DEBUG_REASON {  
-   DEBUG_REASON_ERROR         = 0,  
-   DEBUG_REASON_USER_LAUNCHED = 1,  
-   DEBUG_REASON_USER_ATTACHED = 2,  
-   DEBUG_REASON_AUTO_ATTACHED = 3,  
-   DEBUG_REASON_CAUSALITY     = 4  
+```csharp  
+public enum enum_DEBUG_REASON {  
+   DEBUG_REASON_ERROR         = 0,  
+   DEBUG_REASON_USER_LAUNCHED = 1,  
+   DEBUG_REASON_USER_ATTACHED = 2,  
+   DEBUG_REASON_AUTO_ATTACHED = 3,  
+   DEBUG_REASON_CAUSALITY     = 4  
 };  
 ```  
   
-#### 參數  
- DEBUG\_REASON\_ERROR  
- 發生不明的錯誤 \(做為預設條件時使用的其他任何原因調整\)。  
+#### <a name="parameters"></a>參數  
+ DEBUG_REASON_ERROR  
+ 發生非特定的錯誤 （這用做為預設值條件時沒有其他的理由，調整）。  
   
- DEBUG\_REASON\_USER\_LAUNCHED  
- 處理程序已啟動使用者的要求。  
+ DEBUG_REASON_USER_LAUNCHED  
+ 在使用者的要求已啟動的處理序。  
   
- DEBUG\_REASON\_USER\_ATTACHED  
- 使用者未附加已執行的程序。  
+ DEBUG_REASON_USER_ATTACHED  
+ 已執行的處理序已附加至使用者。  
   
- DEBUG\_REASON\_AUTO\_ATTACHED  
- 則啟動時，處理程序是自動附加到。  
+ DEBUG_REASON_AUTO_ATTACHED  
+ 處理序已自動附加至其啟動時。  
   
- DEBUG\_REASON\_CAUSALITY  
- 處理程序因為啟動*正精準* \(JIT\) 偵錯事件。  
+ DEBUG_REASON_CAUSALITY  
+ 由於已啟動的處理程序*時間恰好*(JIT) 偵錯事件。  
   
-## 備註  
- 所傳回的[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。  
+## <a name="remarks"></a>備註  
+ 傳回從[GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md)

@@ -1,27 +1,30 @@
 ---
-title: "ISimpleConnectionPoint::Advise | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "ISimpleConnectionPoint::Advise |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ISimpleConnectionPoint.Advise
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "ISimpleConnectionPoint::Advise"
+helpviewer_keywords: ISimpleConnectionPoint::Advise
 ms.assetid: 59ded60d-b938-4110-aca3-e69ba234ca9a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ec43d135401386a3f54f2c047040897f038ba19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# ISimpleConnectionPoint::Advise
-建立簡單的連接點物件和用戶端的接收之間的連接。  
+# <a name="isimpleconnectionpointadvise"></a>ISimpleConnectionPoint::Advise
+建立簡單的連接點物件與用戶端接收器之間的連接。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT Advise(  
@@ -30,23 +33,23 @@ HRESULT Advise(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdisp`  
- \[out\] 介面的指標 `IDispatch` 用戶端上的通知接收。  用戶端的接收收到來自簡單連接點的傳出呼叫。  
+ [in]指標`IDispatch`介面在用戶端上的通知接收。 用戶端接收器接收連出呼叫從簡單的連接點。  
   
  `pdwCookie`  
- \[out\] 可唯一識別此連接的傳回的語彙基元的指標。  呼叫端之後使用語彙基元傳遞給刪除連接至 `ISimpleConnectionPoint::Unadvise` 方法。  如果連接成功建立，這個值是零。  
+ [out]傳回的權杖可唯一識別這個連接的指標。 呼叫端會使用此 token 稍後要傳遞至刪除連接`ISimpleConnectionPoint::Unadvise`方法。 如果未成功建立連接，這個值會是零。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 這個方法會建立簡單的連接點物件和用戶端的接收之間的連接。  
+## <a name="remarks"></a>備註  
+ 這個方法會建立簡單的連接點物件與用戶端接收器之間的連線。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)   
  [ISimpleConnectionPoint::Unadvise](../../winscript/reference/isimpleconnectionpoint-unadvise.md)

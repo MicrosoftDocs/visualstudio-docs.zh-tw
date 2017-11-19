@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentHost::GetScriptTextAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentHost::GetScriptTextAttributes |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentHost.GetScriptTextAttributes
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IDebugDocumentHost::GetScriptTextAttributes"
+helpviewer_keywords: IDebugDocumentHost::GetScriptTextAttributes
 ms.assetid: fe459d0d-937f-4176-be81-99d5cca121a1
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 517b228bb46594d19ba6d2fdf41a68e22ac03c75
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentHost::GetScriptTextAttributes
-傳回文件文字區塊的文字屬性變更為。  
+# <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
+傳回的文件的文字區塊的文字屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetScriptTextAttributes(  
@@ -33,39 +36,39 @@ HRESULT GetScriptTextAttributes(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pstrCode`  
- \[in\] 指令碼區塊文字。  不需要是以 null 結束之字串。  
+ [in]指令碼區塊的文字。 這個字串不需要以 null 結尾。  
   
  `uNumCodeChars`  
- \[in\] 字元數指令碼區塊的文字。  
+ [in]指令碼區塊文字的字元數。  
   
  `pstrDelimiter`  
- \[in\] 結束指令碼區塊符號的位址。  當 `pstrCode` 從文字資料流剖析時，主應用程式通常會使用分隔符號 \(例如，兩個單引號 \("\)，偵測指令碼區塊的結尾。  這個參數指定 \(例如使用的主機，允許指令碼引擎提供了一些條件約束基底前置處理符號 \(，取代使用單引號 \(『\) 與兩個單引號做為分隔符號\)。  \(和\)，如果指令碼引擎正確方式使用這項資訊決定指令碼引擎。  如果未使用分隔符號指示指令碼區塊的結尾，請將此參數設定為 NULL。  
+ [in]結束的指令碼區塊分隔符號的位址。 當`pstrCode`剖析文字資料流，從主應用程式通常會使用分隔符號，例如兩個單引號 （'），來偵測指令碼區塊的結尾。 這個參數會指定使用主機，允許以提供一些條件的基本前置處理指令碼引擎的分隔符號 （例如，取代單引號 ['] 具有兩個單引號做為分隔符號使用）。 方式 （和 if） 這項資訊取決於指令碼引擎的指令碼引擎使用。 如果主機未使用的分隔符號來標示指令碼區塊的結尾，請設定此參數為 NULL。  
   
  `dwFlags`  
- \[in\] 旗標與指令碼區塊。  可以是下列值的組合:  
+ [in]指令碼區塊相關聯的旗標。 可以是下列值的組合：  
   
 |常數|值|描述|  
-|--------|-------|--------|  
-|GETATTRTYPE\_DEPSCAN|0x0001|分別表示識別項和點運算子應該識別與 SOURCETEXT\_ATTR\_IDENTIFIER，並 SOURCETEXT\_ATTR\_MEMBERLOOKUP 旗標。|  
-|GETATTRFLAG\_THIS|0x0100|表示應該識別目前物件的識別項與 SOURCETEXT\_ATTR\_THIS 旗標。|  
-|GETATTRFLAG\_HUMANTEXT|0x8000|表示應該識別字串內容和註解文字 SOURCETEXT\_ATTR\_HUMANTEXT 旗標。|  
+|--------------|-----------|-----------------|  
+|GETATTRTYPE_DEPSCAN|0x0001|表示識別項和點運算子應該能識別出使用 SOURCETEXT_ATTR_IDENTIFIER 和 SOURCETEXT_ATTR_MEMBERLOOKUP 旗標，分別。|  
+|GETATTRFLAG_THIS|0x0100|表示目前物件的識別項，應該識別 SOURCETEXT_ATTR_THIS 旗標。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|表示字串的內容和註解文字應該能識別出 SOURCETEXT_ATTR_HUMANTEXT 旗標。|  
   
  `pattr`  
- \[in， out\] 包含所傳回之屬性的緩衝區。  
+ [in、 out]包含傳回的屬性的緩衝區。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
-|`E_NOTIMPL`|主應用程式只使用預設的屬性。|  
+|`E_NOTIMPL`|主機會使用預設屬性。|  
   
-## 備註  
- 這個方法會傳回檔案任意文字區塊的文字屬性變更為。  在此情況下，會使用傳回 `E_NOTIMPL`主機可接受預設屬性。  
+## <a name="remarks"></a>備註  
+ 這個方法會傳回文件文字的任意區塊的文字屬性。 它是可接受的主機，以傳回`E_NOTIMPL`，在此情況下使用預設屬性。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentHost 介面](../../winscript/reference/idebugdocumenthost-interface.md)   
- [SOURCE\_TEXT\_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

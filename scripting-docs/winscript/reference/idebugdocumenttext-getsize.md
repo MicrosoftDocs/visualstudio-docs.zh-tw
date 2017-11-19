@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentText::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentText::GetSize |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentText.GetSize
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentText::GetSize"
+helpviewer_keywords: IDebugDocumentText::GetSize
 ms.assetid: 9da53856-613a-44b2-a84c-99454a2a1548
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3152150c46793a71ec7a46b6ab2097efa06f6fc8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentText::GetSize
-傳回字元的行數和數字在文件中。  
+# <a name="idebugdocumenttextgetsize"></a>IDebugDocumentText::GetSize
+傳回文件中的行數和字元數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetSize(  
@@ -30,22 +33,22 @@ HRESULT GetSize(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pcNumLines`  
- \[in\] 層文件中位元組的數目。  如果這個參數為 null，則方法不會傳回值。  
+ [out]文件中的總行數。 這個參數是 NULL，如果方法沒有傳回值。  
   
  `pcNumChars`  
- \[in\] 字元數文件中的。  如果這個參數為 null，則方法不會傳回值。  
+ [out]文件中的字元數。 這個參數是 NULL，如果方法沒有傳回值。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 這個方法會傳回字元的行數和數字在文件中。  
+## <a name="remarks"></a>備註  
+ 這個方法會傳回文件中的行數和字元數。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)

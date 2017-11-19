@@ -1,27 +1,30 @@
 ---
-title: "IDebugApplication::HandleRuntimeError | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugApplication::HandleRuntimeError |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugApplication.HandleRuntimeError
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugApplication::HandleRuntimeError"
+helpviewer_keywords: IDebugApplication::HandleRuntimeError
 ms.assetid: f8f3bbaf-09e5-4d01-8a35-f380bc7ff8ed
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: eead4780ff061ff9c7280aeee0936c8f64741981
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugApplication::HandleRuntimeError
-導致目前的執行緒封鎖並傳送錯誤的通知至偵錯工具 IDE。  
+# <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
+會導致目前的執行緒可封鎖，並將錯誤的通知傳送至 IDE 偵錯工具。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT HandleRuntimeError(  
@@ -33,36 +36,36 @@ HRESULT HandleRuntimeError(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pErrorDebug`  
- \[in\] 所發生的錯誤。  
+ [in]發生的錯誤。  
   
  `pScriptSite`  
- \[in\] 執行緒的指令碼網站。  
+ [in]執行緒的指令碼站台。  
   
  `pbra`  
- \[in\] 要採取的動作，在偵錯工具繼續執行應用程式。  
+ [out]偵錯工具會繼續執行應用程式時要採取的動作。  
   
  `perra`  
- \[in\] 要採取的動作，在偵錯工具繼續執行應用程式，如果有錯誤則為。  
+ [out]偵錯工具繼續應用程式，如果發生錯誤時要採取的動作。  
   
  `pfCallOnScriptError`  
- \[in\] 要 `TRUE` 的旗標，如果引擎應該呼叫 `IActiveScriptSite::OnScriptError` 方法。  
+ [out]這是旗標`TRUE`如果應該呼叫引擎`IActiveScriptSite::OnScriptError`方法。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 語言引擎呼叫這個方法會造成執行階段錯誤的執行緒中。  這個方法會使目前執行緒封鎖並傳送會傳送的錯誤通知給偵錯工具 IDE。  當偵錯工具 IDE 重新啟動應用程式，與要採取的動作。這個方法會傳回。  
+## <a name="remarks"></a>備註  
+ 語言引擎會呼叫這個方法會導致執行階段錯誤的執行緒內容中。 這個方法會導致目前的執行緒可封鎖，並將傳送至偵錯工具 IDE 錯誤通知。 當 IDE 偵錯工具會繼續執行應用程式時，這個方法會傳回與所要採取的動作。  
   
 > [!NOTE]
->  在執行階段錯誤，語言引擎可能由執行緒呼叫執行一些工作與列舉型別或堆疊框架來評估運算式時。  
+>  執行階段錯誤中, 語言引擎可能會被呼叫執行緒來執行這類工作，因為列舉堆疊框架，或評估的運算式。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugApplication 介面](../../winscript/reference/idebugapplication-interface.md)   
  [IActiveScriptErrorDebug 介面](../../winscript/reference/iactivescripterrordebug-interface.md)   
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)   

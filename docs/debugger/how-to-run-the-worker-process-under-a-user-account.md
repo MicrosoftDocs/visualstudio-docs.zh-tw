@@ -1,36 +1,39 @@
 ---
-title: "如何：在使用者帳戶下執行背景工作處理序 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "使用者帳戶、 aspnet_wp.exe"
-  - "ASP.NET 中，偵錯 Web 應用程式"
-  - "工具、 aspnet_wp.exe"
-  - "ASP.NET 中工具"
-  - "aspnet_wp.exe"
+title: "如何： 執行背景工作處理序的使用者帳戶 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- user accounts, aspnet_wp.exe
+- ASP.NET, debugging Web applications
+- tools, aspnet_wp.exe
+- ASP.NET, tools
+- aspnet_wp.exe
 ms.assetid: b58e97b1-e62a-4318-aea4-52276ea20735
-caps.latest.revision: 32
-caps.handback.revision: 32
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8b823675623f20df49edb87582f3e40695aec50e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：在使用者帳戶下執行背景工作處理序
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在使用者帳戶下執行背景工作處理序
 若要設定電腦以便在某個使用者帳戶下執行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序 (aspnet_wp.exe 或 w3wp.exe)，請依照下列步驟執行。  
+
+ > [!IMPORTANT]
+ > 從 Windows Server 2008 R2 開始，我們建議使用[ApplicationPoolIdentity](https://docs.microsoft.com/en-us/iis/manage/configuring-security/application-pool-identities)做為每個應用程式集區身分識別。
   
 ## <a name="procedure"></a>程序  
   
@@ -38,11 +41,11 @@ manager: "ghogen"
   
 1.  開啟 machine.config 檔，這個檔案位於電腦中安裝執行階段之路徑下的 CONFIG 資料夾內。  
   
-2.  尋找 &lt;processModel&gt; 區段，然後將 user 和 password 屬性變更為名稱和您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼。  
+2.  尋找&lt;processModel&gt;區段，然後將 user 和 password 屬性變更為的名稱和您要用來執行 aspnet_wp.exe 的使用者帳戶的密碼。  
   
 3.  儲存 machine.config 檔。  
   
-4.  在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)]中，預設是安裝 IIS 6.0。 對應的背景工作處理序是 w3wp.exe。若要以 aspnet_wp.exe 做為背景工作處理序在 IIS 6.0 模式中執行，您必須執行下列步驟：  
+4.  在 [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)] 中，預設是安裝 IIS 6.0。 對應的背景工作處理序是 w3wp.exe。若要以 aspnet_wp.exe 做為背景工作處理序在 IIS 6.0 模式中執行，您必須執行下列步驟：  
   
     1.  依序按一下 [ **開始**]、[ **系統管理工具** ]，然後選擇 [ **網際網路資訊服務**]。  
   
@@ -66,7 +69,7 @@ manager: "ghogen"
     net start w3svc  
     ```  
   
-6.  找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 [Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files] 資料夾，然後選擇捷徑功能表上的 [屬性]  。  
+6.  找出 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，它應該與 CONFIG 資料夾位於相同的路徑中。 以滑鼠右鍵按一下 Temporary [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Files 資料夾，然後選擇**屬性**快顯功能表。  
   
 7.  在 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊內，按一下 [ **安全性** ] 索引標籤。  
   
@@ -85,5 +88,6 @@ manager: "ghogen"
 13. 按一下 [ **確定** ] 以關閉此 [ **暫存 ASP.NET 檔案屬性** ] 對話方塊。  
   
 ## <a name="see-also"></a>另請參閱  
-[ASP.NET 偵錯︰ 系統需求](../debugger/aspnet-debugging-system-requirements.md)  
+[偵錯 ASP.NET 應用程式](../debugger/how-to-enable-debugging-for-aspnet-applications.md)   
+[ASP.NET 偵錯：系統需求](../debugger/aspnet-debugging-system-requirements.md)  
   

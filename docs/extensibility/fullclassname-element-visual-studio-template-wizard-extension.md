@@ -1,59 +1,64 @@
 ---
-title: "FullClassName 項目 (Visual Studio 範本精靈擴充) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName"
-helpviewer_keywords: 
-  - "FullClassName 項目 [Visual Studio 專案範本]"
+title: "FullClassName 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
+helpviewer_keywords: FullClassName element [Visual Studio project template]
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a94a6d95bee32da52d484bc4203433b092ef2b82
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# FullClassName 項目 (Visual Studio 範本精靈擴充)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-實作 `IWizard` 介面之類別的完整名稱。  
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 項目 (Visual Studio 範本精靈擴充)
+實作類別的完整的名稱`IWizard`介面。  
   
-## 語法  
+ \<VSTemplate >  
+ \<WizardExtension >  
+ ...  
+ \<FullClassName >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <FullClassName>ClassName</FullClassName>  
 ```  
   
-## 屬性和項目  
- 下列小節將說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節將說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
+|項目|說明|  
+|-------------|-----------------|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本精靈的註冊項目。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字指定用來實作 `IWizard` 介面的類別。  指定的類別必須存在於 [Assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 項目所指定的組件中。  
+ 此文字會指定實作的類別`IWizard`介面。 指定的類別必須存在於所指定的組件[組件](../extensibility/assembly-element-visual-studio-template-wizard-extension.md)項目。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  `FullClassName` 是 `WizardExtension` 的必要子項目。  
   
-## 範例  
- 下列程式碼範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 應用程式標準專案範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例說明標準的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -83,7 +88,7 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

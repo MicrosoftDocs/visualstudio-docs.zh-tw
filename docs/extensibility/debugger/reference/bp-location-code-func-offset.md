@@ -1,57 +1,57 @@
 ---
-title: "BP_LOCATION_CODE_FUNC_OFFSET | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_CODE_FUNC_OFFSET"
-helpviewer_keywords: 
-  - "BP_LOCATION_CODE_FUNC_OFFSET 結構"
+title: "BP_LOCATION_CODE_FUNC_OFFSET |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_LOCATION_CODE_FUNC_OFFSET
+helpviewer_keywords: BP_LOCATION_CODE_FUNC_OFFSET structure
 ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ccaf1b9c4aee385f26000bb6a397f32984dfe1a7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# BP_LOCATION_CODE_FUNC_OFFSET
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-描述在程式碼中的函式中的中斷點的位移的位置。  
+# <a name="bplocationcodefuncoffset"></a>BP_LOCATION_CODE_FUNC_OFFSET
+描述中斷點在程式碼中的函式中的位移的位置。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
-   BSTR                     bstrContext;  
-   IDebugFunctionPosition2* pFuncPos;  
+```cpp  
+typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {   
+   BSTR                     bstrContext;  
+   IDebugFunctionPosition2* pFuncPos;  
 } BP_LOCATION_CODE_FUNC_OFFSET;  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
  `bstrContext`  
- 這個中斷點的內容，通常為 \[呼叫堆疊上看到的方法或函式的名稱。  
+ 中斷點的內容，通常為呼叫堆疊上所見的方法或函式名稱。  
   
  `pFuncPos`  
- [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式從一開始的相對位置的名稱。  
+ [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)物件，描述函式和函式開頭的相對位置的名稱。  
   
-## 備註  
- 這個結構屬於[BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)的聯集一部分的結構。  
+## <a name="remarks"></a>備註  
+ 這個結構是屬於[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構做為聯集的一部分。  
   
- `pFuncPos`成員表示設定函式中斷點的位置。  
+ `pFuncPos`成員指出設定函式中斷點的位置。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

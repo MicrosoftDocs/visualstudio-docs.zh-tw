@@ -1,48 +1,48 @@
 ---
-title: "IDebugCoreServer2::GetMachineName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCoreServer2::GetName"
-helpviewer_keywords: 
-  - "IDebugCoreServer2::GetName"
+title: "IDebugCoreServer2::GetMachineName |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCoreServer2::GetName
+helpviewer_keywords: IDebugCoreServer2::GetName
 ms.assetid: 693bd794-7215-4f07-8651-b57366d39953
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d44fa397423d4b7c50f3eac0ae860e4c84cc938a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCoreServer2::GetMachineName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得核心的伺服器執行的機器名稱。  
+# <a name="idebugcoreserver2getmachinename"></a>IDebugCoreServer2::GetMachineName
+取得核心伺服器執行的電腦名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
+```cpp  
+HRESULT GetName(   
+   BSTR* pbstrName  
 );  
 ```  
   
-```c#  
-int GetName(   
-   out string pbstrName  
+```csharp  
+int GetName(   
+   out string pbstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pbstrName`  
- \[\] out傳回字串，包含電腦的名稱。  
+ [out]傳回字串，包含電腦的名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

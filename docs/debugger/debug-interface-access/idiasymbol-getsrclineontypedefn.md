@@ -1,41 +1,41 @@
 ---
-title: "IDiaSymbol::getSrcLineOnTypeDefn | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::getSrcLineOnTypeDefn |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0627d02c41fb1564037c56725d3ba26e9ffa2cfe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::getSrcLineOnTypeDefn
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的原始程式檔和行號一個指定的使用者定義型別中定義。  
+# <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
+擷取指出指定的使用者定義型別定義所在的來源檔案和行號。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT getSrcLineOnTypeDefn(  
    IDiaLineNumber **ppResult);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppResult`  
- \[out\] 包含原始程式檔和行號使用者定義的 `IDiaLineNumber` 物件。  
+ [out]A`IDiaLineNumber`物件，其中包含來源檔案和行號位置的使用者定義。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

@@ -1,53 +1,53 @@
 ---
-title: "執行緒搜尋對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "執行緒搜尋"
+title: "執行緒搜尋對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Thread Search
 ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9887fef89ea78665a64eead02f4d7ea11a28d890
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 執行緒搜尋對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用這個對話方塊可以尋找並選取[執行緒檢視](../debugger/threads-view.md)中特定執行緒的節點。  若要顯示這個對話方塊，請將焦點移至 \[**執行緒**\] 檢視視窗。  接著，選擇 \[**搜尋**\] 功能表中的 \[**尋找執行緒**\]。  
+# <a name="thread-search-dialog-box"></a>執行緒搜尋對話方塊
+使用此對話方塊，即可尋找並選取特定的執行緒中的節點[執行緒檢視](../debugger/threads-view.md)。 若要顯示此對話方塊中，焦點移至**執行緒**檢視 視窗中。 然後選擇 **尋找執行緒**從**搜尋**功能表。  
   
- 下列為可用的設定：  
+ 可用的設定如下：  
   
- **執行緒**  
- 要搜尋的執行緒 ID。  
+ **Thread**  
+ 要搜尋的執行緒識別碼。  
   
  **模組**  
  要搜尋的模組字串。  
   
- **向上搜尋或向下搜尋**  
- 搜尋的初始方向。  
+ **向上或向下搜尋方向**  
+ 搜尋開始的方向。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [執行緒屬性對話方塊](../debugger/thread-properties-dialog-box.md)  
- 用來在 \[執行緒\] 檢視中顯示所選執行緒的屬性。  
+ 用來顯示執行緒的執行緒 檢視中選取的屬性。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。  
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。  
   
- [在執行緒檢視中搜尋執行緒](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
- 說明如何在 \[執行緒\] 檢視中尋找特定的執行緒。  
+ [執行緒檢視中的執行緒搜尋](../debugger/how-to-search-for-a-thread-in-threads-view.md)  
+ 說明如何在執行緒檢視中找到特定的執行緒。  
   
  [執行緒檢視](../debugger/threads-view.md)  
- 顯示作用中執行緒的樹狀檢視。  
+ 顯示樹狀檢視的使用中執行緒  
   
- [Spy\+\+ 檢視](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。

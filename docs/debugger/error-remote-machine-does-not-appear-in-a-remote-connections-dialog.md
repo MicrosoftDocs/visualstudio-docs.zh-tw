@@ -1,42 +1,42 @@
 ---
-title: "錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "錯誤： 遠端電腦不會顯示在 [遠端連線] 對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 5fd98a5b-2cf3-4438-8b0f-6f1a742a62ce
-caps.latest.revision: 2
-caps.handback.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: e0d8c28f2be735ebb1063715e19a6f2cae55753a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-如果遠端電腦沒有出現在 \[遠端連接\] 對話方塊中，請檢查下列常見的原因。  
+# <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>錯誤：遠端電腦未顯示於 [遠端連線] 對話方塊
+如果遠端電腦沒有出現在 [遠端連接] 對話方塊中，請檢查下列常見的原因。  
   
- 如果您使用 Managed 相容性模式，請參閱 Visual Studio 2010 文件：[疑難排解遠端偵錯 \- Visual Studio 2010](https://msdn.microsoft.com/en-us/library/2ys11ead\(v=vs.100\).aspx)。  
+ 如果您使用 Managed 相容性模式，請參閱 Visual Studio 2010 文件： [疑難排解遠端偵錯 - Visual Studio 2010](https://msdn.microsoft.com/en-us/library/2ys11ead\(v=vs.100\).aspx) 。  
   
-### 這項錯誤的常見原因  
+### <a name="common-causes-for-this-error"></a>這項錯誤的常見原因  
   
--   執行遠端機器的電腦位於不同的子網路中。 若要修正此問題，請在 \[限定詞\] 對話方塊中手動輸入電腦名稱或 IP 位址  
+-   執行遠端機器的電腦位於不同的子網路中。 若要修正此問題，請在 [限定詞] 對話方塊中手動輸入電腦名稱或 IP 位址  
   
 -   遠端電腦上並未執行遠端偵錯工具。 若要修正此問題，請啟動遠端偵錯工具。  
   
--   防火牆封鎖 Visual Studio 和遠端電腦之間的通訊。 若要修正此問題，請設定防火牆允許 Visual Studio 和遠端偵錯工具 \(msvsmon\) 進行通訊。  
+-   防火牆封鎖 Visual Studio 和遠端電腦之間的通訊。 若要修正此問題，請設定防火牆允許 Visual Studio 和遠端偵錯工具 (msvsmon) 進行通訊。  
   
--   防毒軟體封鎖 Visual Studio 和遠端電腦之間的通訊。 若要修正此問題，請設定防毒軟體允許 Visual Studio 和遠端偵錯工具 \(msvsmon\) 進行通訊。  
+-   防毒軟體封鎖 Visual Studio 和遠端電腦之間的通訊。 若要修正此問題，請設定防毒軟體允許 Visual Studio 和遠端偵錯工具 (msvsmon) 進行通訊。  
   
-## 請參閱  
- [在裝置上設定遠端工具](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)
+## <a name="see-also"></a>另請參閱  
+ [遠端偵錯](../debugger/remote-debugging.md)

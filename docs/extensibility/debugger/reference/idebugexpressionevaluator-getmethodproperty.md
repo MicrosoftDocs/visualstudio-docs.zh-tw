@@ -1,73 +1,73 @@
 ---
-title: "IDebugExpressionEvaluator::GetMethodProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionEvaluator::GetMethodProperty"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator::GetMethodProperty 方法"
+title: "IDebugExpressionEvaluator::GetMethodProperty |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionEvaluator::GetMethodProperty
+helpviewer_keywords: IDebugExpressionEvaluator::GetMethodProperty method
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b80507a0ac3406474f26c6e206ac4d69c43ce27c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator::GetMethodProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會取得屬性的物件，包含區域變數、 引數及其他屬性的方法。  
+# <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
+這個方法會取得包含區域變數、 引數，以及方法的其他屬性的屬性物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetMethodProperty(   
-   IDebugSymbolProvider* pSymbolProvider,  
-   IDebugAddress*        pAddress,  
-   IDebugBinder*         pBinder,  
-   BOOL                  fIncludeHiddenLocals,  
-   IDebugProperty2**     ppProperty  
+```cpp  
+HRESULT GetMethodProperty(   
+   IDebugSymbolProvider* pSymbolProvider,  
+   IDebugAddress*        pAddress,  
+   IDebugBinder*         pBinder,  
+   BOOL                  fIncludeHiddenLocals,  
+   IDebugProperty2**     ppProperty  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMethodProperty(  
-   IDebugSymbolProvider pSymbolProvider,   
-   IDebugAddress        pAddress,   
-   IDebugBinder         pBinder,   
-   int                  fIncludeHiddenLocals,   
-   out IDebugProperty2  ppProperty  
+   IDebugSymbolProvider pSymbolProvider,   
+   IDebugAddress        pAddress,   
+   IDebugBinder         pBinder,   
+   int                  fIncludeHiddenLocals,   
+   out IDebugProperty2  ppProperty  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pSymbolProvider`  
- \[in\]符號提供者，以供使用，表示成[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
+ [in]要使用的符號提供者以[IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)物件。  
   
  `pAddress`  
- \[in\]在 \[程式碼，以表示位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，應該解析為最接近的包含函式。  
+ [in]在程式碼，以表示位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件應該是解析成最接近包含函式。  
   
  `pBinder`  
- \[in\]繫結器使用，表示成[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
+ [in]要使用的繫結器表示為[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)物件。  
   
  `fIncludeHiddenLocals`  
- \[in\]非零值 \(`TRUE`\) 表示要包含隱藏的區域變數。 零 \(`FALSE`\) 表示要排除隱藏的區域變數  
+ [in]非零 (`TRUE`) 表示要包含隱藏 [區域變數]; 零 (`FALSE`) 表示要排除隱藏的區域變數  
   
  `ppProperty`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ，其表示方法的物件。  
+ [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件表示的方法。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 隱藏的區域變數通常是由編譯器所產生的變數。  
+## <a name="remarks"></a>備註  
+ 隱藏 [區域變數] 通常是由編譯器產生的變數。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)   
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   

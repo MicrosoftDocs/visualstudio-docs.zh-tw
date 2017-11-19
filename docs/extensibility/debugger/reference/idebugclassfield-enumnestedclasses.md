@@ -1,53 +1,53 @@
 ---
-title: "IDebugClassField::EnumNestedClasses | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugClassField::EnumNestedClasses"
-helpviewer_keywords: 
-  - "IDebugClassField::EnumNestedClasses 方法"
+title: "IDebugClassField::EnumNestedClasses |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugClassField::EnumNestedClasses
+helpviewer_keywords: IDebugClassField::EnumNestedClasses method
 ms.assetid: 2ba5ef0c-395e-4006-9e3c-9b06e1d711d0
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 51b8c582d221ced72380cf5450fc0af9b014d148
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugClassField::EnumNestedClasses
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-建立這個類別中巢狀類別列舉值。  
+# <a name="idebugclassfieldenumnestedclasses"></a>IDebugClassField::EnumNestedClasses
+建立這個類別中的巢狀類別的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumNestedClasses(   
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT EnumNestedClasses(   
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumNestedClasses(  
-   out IEnumDebugFields ppEnum  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppEnum`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示巢狀類別的清單。  如果沒有巢狀的類別，則傳回 null 值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表巢狀類別的清單。 如果沒有巢狀的類別會傳回 null 值。  
   
-## 傳回值  
- 如果成功的話，傳回 S\_OK 則會傳回 S\_FALSE，如果沒有巢狀的類別。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功的話，會傳回 S_OK，或如果沒有巢狀的類別，則傳回 S_FALSE。 反之則傳回錯誤碼。  
   
-## 備註  
- 列舉型別的每個元素都是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)物件，描述巢狀的類別。  
+## <a name="remarks"></a>備註  
+ 列舉型別的每個項目是[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)描述巢狀的類別的物件。  
   
- 巢狀的類別是在另一個類別內定義的類別。  例如：  
+ 巢狀的類別是另一個類別中定義的類別。 例如:   
   
 ```  
 class RootClass {  
@@ -55,8 +55,8 @@ class RootClass {
 };  
 ```  
   
- [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉型別會包含另一個物件代表`NestedClass`類別。  
+ [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)列舉會包含一個物件，代表`NestedClass`類別。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

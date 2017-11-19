@@ -1,27 +1,30 @@
 ---
-title: "IDebugDocumentText::GetPositionOfContext | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugDocumentText::GetPositionOfContext |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugDocumentText.GetPositionOfContext
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugDocumentText::GetPositionOfContext"
+helpviewer_keywords: IDebugDocumentText::GetPositionOfContext
 ms.assetid: 90fec730-c3fb-45fb-92ef-05ecc90dca38
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f843d71096dea4c22eda757a4d6975dfda94180
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugDocumentText::GetPositionOfContext
-傳回字元位置的範圍與文件內容的。  
+# <a name="idebugdocumenttextgetpositionofcontext"></a>IDebugDocumentText::GetPositionOfContext
+傳回對應至文件內容的字元位置範圍。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetPositionOfContext(  
@@ -31,25 +34,25 @@ HRESULT GetPositionOfContext(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `psc`  
- \[in\] 文件內容物件。  
+ [in]文件內容物件。  
   
  `pcCharacterPosition`  
- \[in\] 開始字元位置範圍內的位置。  
+ [out]開始位置的字元位置範圍。  
   
  `cNumChars`  
- \[in\] 字元的數值範圍中。  
+ [out]在範圍內的字元數。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 必須與文件內容提供給這個方法與文件。  
+## <a name="remarks"></a>備註  
+ 提供給這個方法的文件內容必須是與這份文件相關聯。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)

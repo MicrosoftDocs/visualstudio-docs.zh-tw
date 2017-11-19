@@ -1,57 +1,57 @@
 ---
-title: "IDebugMethodField::EnumParameters | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumParameters"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumParameters 方法"
+title: "IDebugMethodField::EnumParameters |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumParameters
+helpviewer_keywords: IDebugMethodField::EnumParameters method
 ms.assetid: d77b1197-deb6-4144-8d1b-8b09949ccfac
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a29f39c28651de1053f4fa7e229eab5505896ecc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumParameters
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-建立列舉值的方法的參數。  
+# <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
+建立方法的參數的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumParameters(   
-   IEnumDebugFields** ppParams  
+```cpp  
+HRESULT EnumParameters(   
+   IEnumDebugFields** ppParams  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumParameters(  
-   out IEnumDebugFields ppParams  
+   out IEnumDebugFields ppParams  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppParams`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件的參數清單的方法。 如果沒有參數，否則傳回 null 值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)表示方法的參數清單的物件; 否則傳回 null 值，如果沒有任何參數。  
   
-## 傳回值  
- 如果成功的話，會傳回 S\_OK，或傳回 S\_FALSE，如果沒有參數。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK，或如果沒有任何參數，則傳回 S_FALSE。 反之則傳回錯誤碼。  
   
-## 備註  
- 每個元素是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的參數。  呼叫[GetKind](../Topic/IDebugField::GetKind.md)方法來判斷到底什麼樣的參數物件所表示的每個物件上。  
+## <a name="remarks"></a>備註  
+ 每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的參數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)每個物件，以判斷正確的參數類型所代表的物件上的方法。  
   
- 參數會包含其變數的名稱和其型別。  類別方法的第一個參數通常是"this"指標。  
+ 參數包含其變數名稱和其型別。 類別方法的第一個參數通常是"this"指標。  
   
- 如果只需要參數型別時，呼叫[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)方法。  
+ 如果只需要參數的類型時，呼叫[EnumArguments](../../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   

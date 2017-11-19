@@ -1,52 +1,54 @@
 ---
-title: "IDebugGenericParamField::ConstraintCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "ConstraintCount"
-  - "IDebugGenericParamField::ConstraintCount"
+title: "IDebugGenericParamField::ConstraintCount |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- ConstraintCount
+- IDebugGenericParamField::ConstraintCount
 ms.assetid: 76bef0cb-8a3c-4ce5-87cc-1809de229f33
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58c266beca272a13399a97378c9be14792912f60
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::ConstraintCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-傳回這個泛型參數相關聯的限制式的個數。  
+# <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
+傳回與此泛型參數相關聯的條件約束的數目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT ConstraintCount(  
-   ULONG32* pcConst  
+   ULONG32* pcConst  
 );  
 ```  
   
-```c#  
+```csharp  
 int ConstraintCount(  
-   ref uint pcConst  
+   ref uint pcConst  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pcConst`  
- 輸入 \[、 輸出\]此欄位相關聯的條件約束的數目。  
+ [in、 out]這個欄位相關聯的條件約束數目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugGenericParamFieldType**公開物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::ConstraintCount(ULONG32* pcConst)  
 {  
     HRESULT hr = S_OK;  
@@ -79,5 +81,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

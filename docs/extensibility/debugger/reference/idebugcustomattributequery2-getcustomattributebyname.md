@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCustomAttributeQuery2::GetCustomAttributeByName
-helpviewer_keywords:
-- IDebugCustomAttributeQuery2::GetCustomAttributeByName
+f1_keywords: IDebugCustomAttributeQuery2::GetCustomAttributeByName
+helpviewer_keywords: IDebugCustomAttributeQuery2::GetCustomAttributeByName
 ms.assetid: 7428dfeb-8929-41b2-9b99-cb343a86c02d
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 47f3f7529d8c0646016b46b01c9f6411b69e5aca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4d3b06a21b70934863403289fc549815ed515883
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 取得指定的自訂屬性名稱的自訂屬性位元組。  

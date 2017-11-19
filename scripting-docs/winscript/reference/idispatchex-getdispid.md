@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::GetDispID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::GetDispID |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.GetDispID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetDispID 方法"
+helpviewer_keywords: GetDispID method
 ms.assetid: a288d63d-b08a-4540-9d9d-0bcd182eff9a
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 93595cd2d0f88244866ab7363ecd68c6d8073b48
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::GetDispID
-將單一成員名稱與其對應的 DISPID，在 \[ `IDispatchEx::InvokeEx`的後續呼叫會接著使用。  
+# <a name="idispatchexgetdispid"></a>IDispatchEx::GetDispID
+單一成員名稱對應到其對應的 DISPID，則可在後續呼叫`IDispatchEx::InvokeEx`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
  HRESULT GetDispID(  
@@ -31,40 +34,40 @@ caps.handback.revision: 8
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `bstrName`  
- 藉由在要對應的名稱。  
+ 傳入要對應的名稱。  
   
  `grfdex`  
- 判斷取得成員識別項的選項。  這可以是下列值的組合:  
+ 判斷取得成員識別碼的選項。 這可以是下列值的組合：  
   
 |值|意義|  
-|-------|--------|  
-|fdexNameCaseSensitive|該要求的名稱搜尋完成以區分大小寫。  支援以不區分大小寫的查詢的物件會忽略。|  
-|fdexNameEnsure|這個成員建立的要求，如果檔案不存在。  新的成員應該會以的值 `VT_EMPTY`。|  
-|fdexNameImplicit|指示呼叫端搜尋物件特定名稱的成員，而基底物件未明確指定。|  
-|fdexNameCaseInsensitive|該名稱的要求完成搜尋不區分大小寫的方式。  由不支援不區分大小寫的查詢的物件會忽略。|  
+|-----------|-------------|  
+|fdexNameCaseSensitive|區分大小寫的方式進行名稱查閱的要求。 可能不支援區分大小寫對應的物件會被忽略。|  
+|fdexNameEnsure|要求的成員不存在時，才能建立。 應該使用的值建立新成員`VT_EMPTY`。|  
+|fdexNameImplicit|指出，未明確指定基底物件時，呼叫者正在搜尋的特定名稱的成員物件。|  
+|fdexNameCaseInsensitive|不區分大小寫的方式進行名稱查閱的要求。 可能不支援不區分大小寫對應的物件會被忽略。|  
   
  `pid`  
- out 接收 DISPID 結果的呼叫端配置之位置的指標。  如果發生錯誤， `pid` 包含 DISPID\_UNKNOWN。  
+ 呼叫端配置的位置來接收 DISPID 結果指標。 如果發生錯誤，`pid`包含 DISPID_UNKNOWN。  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
 |`E_OUTOFMEMORY`|記憶體不足。|  
-|`DISP_E_UNKNOWNNAME`|名稱不明。|  
+|`DISP_E_UNKNOWNNAME`|不知道名稱。|  
   
-## 備註  
- `GetDispID` 可以用來代替 `GetIDsOfNames` 取得指定成員的 DISPID。  
+## <a name="remarks"></a>備註  
+ `GetDispID`可以使用而不是`GetIDsOfNames`DISPID 取得指定的成員。  
   
- 由於 `IDispatchEx` 允許成員的加入和刪除，這組 DISPID 維持不變在物件的存留期。  
+ 因為`IDispatchEx`可讓您新增和刪除成員的 Dispid 集無法維持不常數物件的存留期間。  
   
- 移除在 `IDispatch::GetIDsOfNames` 中未使用的 `riid` 參數。  
+ 未使用`riid`中的參數`IDispatch::GetIDsOfNames`已移除。  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
 BSTR bstrName;  
@@ -76,5 +79,5 @@ BSTR bstrName;
    // Use dispid  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)
