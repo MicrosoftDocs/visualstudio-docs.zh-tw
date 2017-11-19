@@ -13,10 +13,10 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 6c49541f0993e3989aa3291fc5bbc851132f3061
+ms.openlocfilehash: 36e827c0a4eda91081da349e7832ed19369963ee
 ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2017
 ---
-適用於 JavaScript 的 Windows Library (WinJS)
+SQL Server 2005
