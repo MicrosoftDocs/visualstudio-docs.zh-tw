@@ -1,60 +1,60 @@
 ---
-title: "IDebugProgram2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgram2::Attach"
+title: "IDebugProgram2::Attach |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Attach
+helpviewer_keywords: IDebugProgram2::Attach
 ms.assetid: de069fbf-a565-4905-b102-f5658c55aacd
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 60127ceb0cb177bd8532d2e20ebc1afebeb90937
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 將附加至程式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugEventCallback2* pCallback  
+```cpp  
+HRESULT Attach(   
+   IDebugEventCallback2* pCallback  
 );  
 ```  
   
-```c#  
-int Attach(   
-   IDebugEventCallback2 pCallback  
+```csharp  
+int Attach(   
+   IDebugEventCallback2 pCallback  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pCallback`  
- \[in\][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)要用於偵錯事件告知的物件。  
+ [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)来用於偵錯事件通知的物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  下表顯示一些可能的錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 下表顯示一些可能發生的錯誤代碼。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的程式已附加偵錯工具。|  
-|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加程序期間，發生安全性違規。|  
+|`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|Attach 程序期間，發生安全性違規。|  
 |`E_ATTACH_CANNOT_ATTACH_TO_DESKTOP`|桌面的程式無法附加至偵錯工具。|  
   
-## 備註  
- 偵錯引擎 \(DE\) 永遠不會呼叫這個方法，以附加至程式。  如果是執行中程式的位址空間、 [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) ，會呼叫方法。  如果是執行中工作階段偵錯管理員 」 \(SDM\) 位址空間， [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md) ，會呼叫方法。  
+## <a name="remarks"></a>備註  
+ 偵錯引擎 (DE) 永遠不會呼叫此方法來附加至程式。 如果在程式的位址空間中，執行 DE [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)方法呼叫。 如果 DE 執行中工作階段偵錯管理員 (SDM) 位址空間，[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法呼叫。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   
  [OnAttach](../../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
- [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)
+ [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md)

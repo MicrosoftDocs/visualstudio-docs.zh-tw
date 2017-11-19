@@ -1,36 +1,37 @@
 ---
-title: "如何: 引發事件時，編輯器會失去焦點 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "編輯器 [Visual Studio SDK]，舊版-引發事件，在失去焦點"
+title: "如何： 引發事件，當編輯器失去焦點時 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9a566d52dc1aabb9895e2f1f9751fdb37ae016d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何: 引發事件時，編輯器會失去焦點
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-有時候，它就必須知道當編輯器失去焦點放在視窗框架。  例如，您可能需要在編輯器\] 中的焦點不再位於它之後，從程式碼\] 視窗中擷取程式碼。  下列的程序提供相關步驟，以便接收通知的編輯器失去焦點。  
+# <a name="how-to-fire-events-when-the-editor-loses-focus"></a>如何： 引發事件，當編輯器失去焦點時
+有時則需要知道當編輯器失去焦點視窗框架上。 例如，您可能需要擷取從程式碼視窗的程式碼編輯器不會再著重於它之後。 下列程序會提供要接收通知的編輯器失去焦點遵循的步驟。  
   
-### 若要引發編輯器失去焦點來回應事件  
+### <a name="to-fire-an-event-in-response-to-an-editor-losing-focus"></a>引發事件以回應編輯器失去焦點  
   
-1.  取得監視選取事件<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>獲取<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
+1.  監視選取的事件取得<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>物件從<xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection>。  
   
-2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A> ，並提供您<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>物件。  
+2.  呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.AdviseSelectionEvents%2A>，並提供您<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents>物件。  
   
 3.  在您呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A>，尋找`elementid==SEID_WindowFrame`。  
   
 4.  測試`varValueNew`參數兩件事：  
   
-    1.  您要尋找的視窗框架。  
+    1.  您所需的視窗框架。  
   
-    2.  您的程式遺失了該視窗外框至選取範圍點。
+    2.  在您的程式失去該視窗框架選取範圍點。

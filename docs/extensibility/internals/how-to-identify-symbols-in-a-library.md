@@ -1,28 +1,30 @@
 ---
-title: "如何: 識別文件庫中的符號 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "呼叫瀏覽器工具，用來識別文件庫中的符號"
-  - "呼叫瀏覽器工具"
+title: "如何： 識別文件庫中的符號 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Call Browser tool, identifying symbols in the library
+- Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
-caps.latest.revision: 21
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 6e7f810ff5ad1654081cd061edbc4360eb988402
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何: 識別文件庫中的符號
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-符號瀏覽工具會顯示符號的階層式檢視。  符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。  
+# <a name="how-to-identify-symbols-in-a-library"></a>如何： 識別文件庫中的符號
+符號瀏覽工具中顯示符號的階層式的檢視。 符號代表命名空間、 物件、 類別、 類別成員和其他語言項目。  
   
- 在階層中的每個符號可以由傳至符號集瀏覽資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，透過下列介面：  
+ 可以使用符號程式庫所傳遞的瀏覽資訊來識別階層中的每個符號[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員，透過下列介面：  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo>  
   
@@ -30,11 +32,11 @@ caps.handback.revision: 21
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes>.  
   
- 階層架構中符號的位置來區別符號。  它可讓瀏覽至特定符號的符號瀏覽工具。  唯一且完整的路徑，該符號的位置來決定的。  在路徑中的每個項目是一個節點。  路徑開頭為最上層的節點，並結束該特定的符號。  比方說，如果 M1 方法 C1 類別的成員則 C1 是 N1 命名空間中，M1 方法的完整路徑是 N1。C1。M1。  此路徑包含三個節點： N1，C1，和 M1。  
+ 在階層中符號的位置區分的符號。 它可讓符號瀏覽工具來瀏覽至特定的符號。 符號的唯一、 完整路徑位置來決定。 在路徑中的每個項目是一個節點。 路徑的最上層節點的開頭和結尾是特定的符號。 例如，如果 M1 方法是 C1 類別的成員，而且 C1 N1 命名空間中，M1 方法的完整路徑是 N1。C1。M1。 此路徑包含三個節點： N1、 C1、 和 M1。  
   
- 瀏覽資訊可以讓[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員來找出，請選取階層架構中的符號。  它可讓兩個瀏覽工具巡覽到另一個。  在使用時**物件瀏覽器**來瀏覽中的符號[!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)]專案，方法上按一下滑鼠右鍵，並開始**呼叫瀏覽器**工具，以顯示呼叫圖形中的方法。  
+ 瀏覽資訊可讓[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員來尋找、 選取並保留在階層中選取符號。 它可讓巡覽到另一個瀏覽工具。 同時使用**物件瀏覽器**瀏覽中的符號[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)]專案中，您可以以滑鼠右鍵按一下的方法，並開始**呼叫瀏覽器**工具以顯示方法的呼叫歷程圖中。  
   
- 兩種形式描述符號位置。  標準的格式根據符號的完整路徑。  它所代表的符號階層架構中唯一的位置。  很獨立於符號瀏覽\] 工具。  若要取得標準格式的資訊， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>方法。  展示表單將告訴您在特定的符號瀏覽工具中符號的位置。  符號的位置是相對於其他符號在 hierarchicy 中的位置。  指定的符號可能會有數個簡報的路徑，但只有一個標準的路徑。  例如，假設 C1 類別從 C2 類別繼承，而這兩個類別是 N1 命名空間中**物件瀏覽器**會顯示以下的階層式樹狀目錄：  
+ 兩種形式說明符號位置。 標準格式根據符號的完整路徑。 它表示符號的階層中唯一的位置。 它是獨立的符號瀏覽工具。 若要取得的標準格式的資訊，[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A>方法。 簡報表單描述的特定符號瀏覽工具內符號的位置。 符號的位置是相對於 hierarchicy 中的其他符號位置。 指定的符號可能有數個展示檔路徑，但只有一個正式路徑。 例如，如果 C1 類別繼承自 C2 類別，這兩個類別位於 N1 命名空間，**物件瀏覽器**會顯示下列階層樹狀結構：  
   
 ```  
 N1  
@@ -47,19 +49,19 @@ N1
   
 ```  
   
- C2 類別，在這個範例中，標準路徑是 N1 \+ C2。  C2 的簡報路徑包括 C1 與 「 基底和介面 」 的節點： N1 \+ C1 \+"基底和介面"\+ C2。  
+ C2 類別，在此範例中，正式路徑為 N1 + C2。 C2 的展示檔路徑包含 C1 和 「 基底和介面 」 節點： N1 + C1 + 「 基底和介面"+ C2。  
   
- 若要取得簡報表單資訊的物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。  
+ 若要取得簡報表單資訊物件管理員呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A>方法。  
   
-## 用來識別的階層架構中的符號  
+## <a name="identifying-a-symbol-in-the-hierarchy"></a>識別階層中的符號  
   
-#### 若要取得正式而且簡報表單資訊  
+#### <a name="to-obtain-canonical-and-presentation-forms-information"></a>若要取得標準簡報 form 資訊和  
   
 1.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> 方法。  
   
-     物件管理員會呼叫這個方法，以取得正式的符號路徑中所含的節點清單。  
+     物件管理員呼叫此方法來取得標準的符號路徑中包含的節點清單。  
   
-    ```vb#  
+    ```vb  
     Public Function EnumCanonicalNodes(ByRef ppEnum As Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes) As Integer  
         Dim EnumNavInfoNodes As CallBrowserEnumNavInfoNodes = _New CallBrowserEnumNavInfoNodes(m_strMethod)  
         ppEnum = CType(EnumNavInfoNodes, IVsEnumNavInfoNodes)  
@@ -67,7 +69,7 @@ N1
     End Function  
     ```  
   
-    ```c#  
+    ```csharp  
     public int EnumCanonicalNodes(out Microsoft.VisualStudio.Shell.Interop.IVsEnumNavInfoNodes ppEnum)  
     {  
         CallBrowserEnumNavInfoNodes EnumNavInfoNodes =  
@@ -80,9 +82,9 @@ N1
   
 2.  實作 <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> 方法。  
   
-     物件管理員會呼叫這個方法，以取得該符號的簡報路徑中所含的節點清單。  
+     物件管理員呼叫此方法來取得符號的簡報路徑中包含的節點清單。  
   
-## 請參閱  
- [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [如何: 使用物件管理員註冊程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [如何: 公開 \(expose\) 的程式庫物件管理員提供的符號清單](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
+## <a name="see-also"></a>另請參閱  
+ [支援的符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
+ [如何： 註冊物件管理員與程式庫](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [如何︰將程式庫提供的符號清單公開至物件管理員](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

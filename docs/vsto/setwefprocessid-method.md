@@ -1,28 +1,30 @@
 ---
-title: "SetWefProcessId 方法"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "SetWefProcessId 方法 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 404eec23-a67e-4f5b-b27d-86651f08be03
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "8"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0821c799a4d6385997704724c00a2aff4669eb17
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# SetWefProcessId 方法
-  提供會執行 Web Extension Framework \(WEF\) 內容的處理序識別項。  
+# <a name="setwefprocessid-method"></a>SetWefProcessId 方法
+  提供將執行 Web 擴充功能架構 (WEF) 內容的處理序識別碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT SetWefProcessId(  
@@ -30,18 +32,18 @@ HRESULT SetWefProcessId(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
-|參數|描述|  
-|--------|--------|  
-|*dwProcessId*|要用來執行 WEF 內容的處理序識別項。|  
+|參數|說明|  
+|---------------|-----------------|  
+|*dwProcessId*|將用來執行 WEF 內容處理序識別碼。|  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  HRESULT 值，表示此方法是否已順利完成。  
   
-## 備註  
- 必須先呼叫這個方法，在 WEF 內容流程建立之後，但在中，所有 WEF 內容執行之前。  
+## <a name="remarks"></a>備註  
+ WEF 內容處理程序建立後，但任何 WEF 內容執行之前，必須呼叫這個方法。  
   
- 如果您要開發環境將偵錯工具附加至 WEF 內容流程，環境在這個方法的實作必須執行這項作業。  
+ 如果您想要將偵錯工具附加至 WEF 內容處理程序的開發環境，環境就必須實作這個方法中執行此作業。  
   
   

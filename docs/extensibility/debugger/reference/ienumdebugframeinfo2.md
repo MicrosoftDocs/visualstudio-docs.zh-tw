@@ -1,62 +1,62 @@
 ---
-title: "IEnumDebugFrameInfo2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFrameInfo2"
-helpviewer_keywords: 
-  - "IEnumDebugFrameInfo2"
+title: "IEnumDebugFrameInfo2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugFrameInfo2
+helpviewer_keywords: IEnumDebugFrameInfo2
 ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c9c0cd58c069989b9516d707ba4c9a35faf53013
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugFrameInfo2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 這個介面會列舉[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IEnumDebugFrameInfo2 : IUnknown  
 ```  
   
-## 實作器注意事項  
- 偵錯引擎 \(DE\) 會實作這個介面來提供一份結構描述目前呼叫堆疊。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 偵錯引擎 (DE) 會實作這個介面可提供一份結構描述目前的呼叫堆疊。  
   
-## 呼叫者的備忘稿  
- Visual Studio 的呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)以取得這個介面的存取中斷點，例外狀況或停止發生在偵錯的程式。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ Visual Studio 呼叫[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)若要取得此介面，每當中斷點，例外狀況或停止，就會發生在程式中進行偵錯。  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugFrameInfo2`。  
   
-|方法|描述|  
-|--------|--------|  
-|[下一步](../Topic/IEnumDebugFrameInfo2::Next.md)|擷取指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉型別序列中的結構。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|略過指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉型別序列中的結構。|  
-|[重設](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|將列舉型別序列重設至開頭。|  
-|[複製](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態。|  
-|[GetCount](../Topic/IEnumDebugFrameInfo2::GetCount.md)|取得的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉值中的結構。|  
+|方法|說明|  
+|------------|-----------------|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|擷取指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉順序中的結構。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|略過指定的數目的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)列舉順序中的結構。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugframeinfo2-reset.md)|列舉序列重設為開頭。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugframeinfo2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugframeinfo2-getcount.md)|取得數目[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)中查看的列舉值的結構。|  
   
-## 備註  
- Visual Studio 會取得這個介面來處理中斷點、 例外狀況或在偵錯程式使用者所產生的暫停的第一個步驟。  清單中的[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構表示的目前呼叫堆疊、 目前的函式呼叫，在清單\] 及 \[最舊的函式的開頭與呼叫的清單結尾。  每個`FRAMEINFO`表示堆疊框架上，在其中可以評估運算式，區域變數在觀看過的內容。  
+## <a name="remarks"></a>備註  
+ Visual Studio 會處理中斷點、 例外狀況或使用者產生的暫停正在進行偵錯程式的第一個步驟中取得此介面。 清單[FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)結構代表目前的呼叫堆疊，在清單的結尾呼叫目前函式呼叫的清單，最舊的函式開頭。 每個`FRAMEINFO`代表堆疊框架，其中的運算式可以評估，而且在查看本機變數的內容。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)   
  [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

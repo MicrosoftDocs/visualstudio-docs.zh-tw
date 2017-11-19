@@ -1,83 +1,83 @@
 ---
-title: "IDebugExpressionContext2::ParseText | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExpressionContext2::ParseText"
-helpviewer_keywords: 
-  - "IDebugExpressionContext2::ParseText"
+title: "IDebugExpressionContext2::ParseText |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExpressionContext2::ParseText
+helpviewer_keywords: IDebugExpressionContext2::ParseText
 ms.assetid: f58575db-f926-4ac8-83ff-7b3b86ab61e2
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4418dc3503f710701b50c37e0869a4b80c160a5f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionContext2::ParseText
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-剖析文字形式進行後續的評估運算式。  
+# <a name="idebugexpressioncontext2parsetext"></a>IDebugExpressionContext2::ParseText
+剖析文字形式，供稍後評估的運算式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT ParseText(   
-   LPCOLESTR           pszCode,  
-   PARSEFLAGS          dwFlags,  
-   UINT                nRadix,  
-   IDebugExpression2** ppExpr,  
-   BSTR*               pbstrError,  
-   UINT*               pichError  
+```cpp  
+HRESULT ParseText(   
+   LPCOLESTR           pszCode,  
+   PARSEFLAGS          dwFlags,  
+   UINT                nRadix,  
+   IDebugExpression2** ppExpr,  
+   BSTR*               pbstrError,  
+   UINT*               pichError  
 );  
 ```  
   
-```c#  
-int ParseText(   
-   string                pszCode,  
-   enum_PARSEFLAGS       dwFlags,  
-   uint                  nRadix,  
-   out IDebugExpression2 ppExpr,  
-   out string            pbstrError,  
-   out uint              pichError  
+```csharp  
+int ParseText(   
+   string                pszCode,  
+   enum_PARSEFLAGS       dwFlags,  
+   uint                  nRadix,  
+   out IDebugExpression2 ppExpr,  
+   out string            pbstrError,  
+   out uint              pichError  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszCode`  
- \[in\]要剖析的運算式。  
+ [in]要剖析的運算式。  
   
  `dwFlags`  
- \[in\]從的旗標組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)控制剖析的列舉型別。  
+ [in]從旗標的組合[PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)列舉，用於控制剖析。  
   
  `nRadix`  
- \[in\]若要使用於剖析中的任何數字資訊的基數`pszCode`。  
+ [in]要用於剖析中的任何數字資訊基數`pszCode`。  
   
  `ppExpr`  
- \[\] out傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，代表已剖析的運算式中，已準備好進行繫結和評估。  
+ [out]傳回[IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)物件，表示已剖析的運算式，可供繫結和評估。  
   
  `pbstrError`  
- \[\] out如果運算式包含錯誤，則傳回的錯誤訊息。  
+ [out]如果運算式包含錯誤，則傳回錯誤訊息。  
   
  `pichError`  
- \[\] out傳回字元的索引中的錯誤訊息`pszCode`如果運算式包含錯誤。  
+ [out]傳回字元的索引中的錯誤`pszCode`如果運算式包含錯誤。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 當呼叫這個方法時，偵錯引擎 \(DE\) 應該剖析運算式，並驗證它正確。  `pbstrError`和`pichError`可能會在填寫參數，如果運算式是不正確。  
+## <a name="remarks"></a>備註  
+ 呼叫這個方法時，偵錯引擎 (DE) 應該剖析運算式，並驗證正確。 `pbstrError`和`pichError`參數可能會自動填入如果運算式無效。  
   
- 請注意無法評估運算式，只剖析。  稍後呼叫[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法會計算已剖析的運算式。  
+ 請注意，不會評估運算式，只會剖析。 稍後呼叫[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)或[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)方法評估剖析的運算式。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CEnvBlock`物件，公開 \(expose\) [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。  本範例會考慮要剖析為環境變數名稱的運算式，並擷取來自該變數的值。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CEnvBlock`公開物件[IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)介面。 這個範例會考慮運算式無法剖析為環境變數的名稱，並從該變數中擷取值。  
   
-```cpp#  
+```cpp  
 HRESULT CEnvBlock::ParseText(  
    LPCOLESTR           pszCode,  
    PARSEFLAGS          dwFlags,  
@@ -123,7 +123,7 @@ HRESULT CEnvBlock::ParseText(
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)   
  [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)   
  [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)   

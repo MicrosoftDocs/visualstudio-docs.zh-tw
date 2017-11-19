@@ -1,57 +1,59 @@
 ---
-title: "如何：以不執行程式碼的方式開啟 Office 方案"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "組件 [Visual Studio 中的 Office 程式開發], 略過"
-  - "略過組件"
-  - "文件 [Visual Studio 中的 Office 程式開發], 開啟但不執行程式碼"
-  - "Office 文件 [Visual Studio 中的 Office 程式開發], 開啟但不執行程式碼"
-  - "Office 方案 [Visual Studio 中的 Office 程式開發], 開啟"
-  - "開啟 Office 方案"
-  - "方案 [Visual Studio 中的 Office 程式開發], 開啟"
+title: "如何： 開啟 Office 方案，但不執行程式碼 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office solutions [Office development in Visual Studio], opening
+- opening Office solutions
+- bypassing assemblies
+- solutions [Office development in Visual Studio], opening
+- assemblies [Office development in Visual Studio], bypassing
+- Office documents [Office development in Visual Studio, opening without running code
+- documents [Office development in Visual Studio], opening without running code
 ms.assetid: a853d91c-9fd6-421a-b3a2-956b6b494b96
-caps.latest.revision: 23
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 74cc162e0323656bea9d48c8458eaf77519fdc14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：以不執行程式碼的方式開啟 Office 方案
-  即使在使用者的 Office 應用程式中將 \[安全性\] 設定為 \[高\]，使用 Managed 程式碼擴充建立的 Microsoft Office 方案仍然會執行。  這是因為 .NET 組件程式碼安全性是由 Microsoft .NET Framework 管理，而非由 Microsoft Office 管理。  
+# <a name="how-to-open-office-solutions-without-running-code"></a>如何：以不執行程式碼的方式開啟 Office 方案
+  建立具有 managed 程式碼擴充的 Microsoft Office 方案時仍會執行使用者的 Office 應用程式中的安全性設定設定為高。 這是因為.NET 組件程式碼安全性由 Microsoft.NET Framework 中，不是由 Microsoft Office 管理。  
   
- 但是，您有時候會想開啟文件，卻不執行程式碼。  例如，在文件開啟時執行的程式碼可能會改變內容，但是您要在程式碼進行變更以前，先更新文件的外觀。  或者是，您可能要傳送附特定資訊的文件給某人，而不要讓程式碼執行，免得內容遭到變更。  
+ 不過，但有些的時候您可能想要開啟的文件，但不執行程式碼。 例如，文件開啟時執行的程式碼可能修改的內容中，但您想要更新的文件之前的程式碼變更並尋找的方式。 您可能想要接收文件的特定資訊的某人，或不想讓程式碼來執行和可能修改的內容。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 有幾種方式可以開啟含有 Managed 程式碼擴充的文件或活頁簿，而不執行組件程式碼。  
+ 有幾種方式開啟文件或不執行組件程式碼中包含 managed 程式碼擴充的活頁簿。  
   
-### 若要使用 SHIFT 鍵略過組件  
+### <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>若要使用 SHIFT 鍵，以略過組件  
   
--   按住 SHIFT，同時從 \[**檔案**\] 功能表開啟文件和活頁簿，以防止 Word 和 Excel 在文件開啟時引發初始設定事件。  
+-   開啟文件和活頁簿**檔案**功能表上，按住 SHIFT 鍵可防止 Word 和 Excel 文件開啟時引發的事件初始化。  
   
     > [!NOTE]  
-    >  如果從 \[**快速入門**\] 工作窗格開啟文件或活頁簿，則按住 SHIFT 不能略過程式碼。  而且，按住 SHIFT 也不能防止文件開啟後引發事件。  
+    >  如果您開啟文件或活頁簿**入門**工作窗格中，按住 shift 鍵不略過程式碼。 此外，按住 shift 鍵不會阻止事件後的文件開啟時引發。  
   
-     如果您要開啟文件進行變更，而不想讓程式碼先執行而變更了文件，這個方法很有用。  
+     這個方法很有用，如果您想要開啟的文件不會執行，而且第一次修改文件的程式碼進行變更。  
   
-### 若要透過重新命名或移除略過組件  
+### <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>若要重新命名或移除它略過組件  
   
--   如果擁有組件所在電腦的必要使用權限，可以重新命名或移除組件，讓文件或活頁簿找不到它。  這樣會造成每次開啟 Office 文件都引發錯誤。  
+-   如果您有必要的權限的組件所在的電腦上，您可以重新命名或移除組件，因此文件或活頁簿將無法找到它。 這會導致每次開啟 Office 文件時都會引發錯誤。  
   
-     如果有多人使用同一個方案，這個方法可以防止所有人執行方案。  如果程式碼或參考的伺服器中發現問題，而您要阻止所有使用者執行方案，這個方法很有用。  
+     如果方案由多人使用，這個方法會防止執行所有這些方案。 如果問題位於程式碼或參考的伺服器，而且您想要停止執行它的所有使用者，這可能會很有用。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [保護 Office 方案](../vsto/securing-office-solutions.md)   
  [部署 Office 方案](../vsto/deploying-an-office-solution.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   

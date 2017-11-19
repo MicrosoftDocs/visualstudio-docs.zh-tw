@@ -1,64 +1,64 @@
 ---
-title: "SccProperties 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "SccProperties"
-helpviewer_keywords: 
-  - "SccProperties 函式"
+title: "SccProperties 函式 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: SccProperties
+helpviewer_keywords: SccProperties function
 ms.assetid: 1bed38c9-73d2-4474-9717-f9dc26a89cbe
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aebe2ee8e0122db6777a341a96731398bf25b8ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# SccProperties 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="sccproperties-function"></a>SccProperties 函式
 此函式會顯示檔案或專案的原始檔控制屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 SCCRTN SccProperties (  
-   LPVOID pvContext,  
-   HWND   hWnd,  
-   LPCSTR lpFileName  
+   LPVOID pvContext,  
+   HWND   hWnd,  
+   LPCSTR lpFileName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  pvContext  
- \[\] in原始檔控制外掛程式內容結構。  
+ [in]原始檔控制外掛程式的內容結構。  
   
  hWnd  
- \[\] in原始檔控制外掛程式可以使用為父代，它會提供任何對話方塊 IDE 視窗控制代碼。  
+ [in]原始檔控制外掛程式之任何它所提供的對話方塊，可以使用為父代 IDE 視窗的控制代碼。  
   
  lpFileName  
- \[\] in檔案或專案的完整的路徑名稱。  
+ [in]檔案或專案的完整的路徑名稱。  
   
-## 傳回值  
- 此函式的原始檔控制外掛程式實作應該會傳回下列值之一:  
+## <a name="return-value"></a>傳回值  
+ 此函式的原始檔控制外掛程式實作預期會傳回下列值之一：  
   
-|值|描述|  
-|-------|--------|  
-|SCC\_OK|已成功地顯示屬性。|  
-|SCC\_I\_RELOADFILE|版本控制系統已修改的檔案內容，因此 IDE 應重新載入此檔案。|  
-|SCC\_E\_PROJNOTOPEN|尚未在原始檔控制開啟指定的專案。|  
-|SCC\_E\_NOTAUTHORIZED|使用者未獲授權檢視此檔案或專案的屬性。|  
-|SCC\_E\_FILENOTCONTROLLED|指定的檔案或專案不是原始檔控制下。|  
-|SCC\_E\_NONSPECIFICERROR<br /><br /> SCC\_E\_UNKNOWNERROR|發生未知或一般錯誤。|  
+|值|說明|  
+|-----------|-----------------|  
+|SCC_OK|已成功顯示內容。|  
+|SCC_I_RELOADFILE|在版本控制系統已修改檔案內容中，因此 IDE 應重新載入此檔案。|  
+|SCC_E_PROJNOTOPEN|指定的專案尚未開啟原始檔控制中。|  
+|SCC_E_NOTAUTHORIZED|使用者沒有檢視此檔案或專案的屬性。|  
+|SCC_E_FILENOTCONTROLLED|指定的檔案或專案不是原始檔控制之下。|  
+|SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|發生未知或一般錯誤。|  
   
-## 備註  
+## <a name="remarks"></a>備註  
  原始檔控制外掛程式在它自己的對話方塊中顯示的屬性。  
   
- 屬性會由原始檔控制外掛程式和外掛程式的外掛程式可能不同。 如果外掛程式可讓使用者變更檔案的原始檔控制屬性，它應該傳回 `SCC_I_RELOAD` 發出信號，此檔案或專案需要重新載入的 IDE。  
+ 屬性由原始檔控制外掛程式所定義，而且可能會有所不同外掛程式外掛程式。 如果外掛程式可讓使用者變更原始檔控制的內容檔案，它應該傳回`SCC_I_RELOAD`來表示此檔案或專案需要重新載入在 IDE。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式 API 函式](../extensibility/source-control-plug-in-api-functions.md)

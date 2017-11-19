@@ -1,37 +1,41 @@
 ---
-title: "您從不支援的資料庫提供者選取了資料庫物件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "您已選取的資料庫物件不支援的資料庫提供者從 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: c0f1298e-31aa-471e-ae19-1bafffd2ae40
-caps.latest.revision: 3
-caps.handback.revision: 1
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "3"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 05e638be5cc11f66052e5a1f6116e7205b824106
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# 您從不支援的資料庫提供者選取了資料庫物件
-[!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] \([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]\) 只支援使用 .NET Framework Data Provider for SQL Server \(<xref:System.Data.SqlClient>\)。雖然您可以按一下 \[**確定**\] 繼續使用來自不支援之資料庫提供者的物件，但是在執行階段可能會發生非預期的行為。  
+# <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>您已從不支援的資料提供者選取資料庫物件
+O/R 設計工具支援的 SQL Server 的.NET Framework 資料提供者 (<xref:System.Data.SqlClient>)。 雖然您可以按一下**確定** 繼續使用來自不受支援的資料庫提供者的物件，您可能會在執行階段遇到未預期的行為。  
   
 > [!NOTE]
 >  只支援使用 .NET Framework Data Provider for SQL Server 的資料連接。  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   按一下 \[**確定**\] 繼續設計實體類別 \(Class\)，以對應至使用不支援之資料庫提供者的連接。如果使用不支援的資料庫提供者，則可能會發生非預期的行為。  
+- 按一下 [確定]。
+
+   您可以繼續設計實體類別對應至使用不支援的資料庫提供者的連接。 如果使用不支援的資料庫提供者，則可能會發生非預期的行為。  
   
-     \-或\-  
+     -或-  
   
--   按一下 \[**取消**\]。  
+- 按一下**取消**。
+
+   會停止動作。 請建立或使用 .NET Framework Provider for SQL Server 提供的資料連接。  
   
-     會停止動作。請建立或使用 .NET Framework Provider for SQL Server 提供的資料連接。  
-  
-## 請參閱  
- [物件關聯式設計工具 \(O\/R 設計工具\)](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [LINQ to SQL](../Topic/LINQ%20to%20SQL.md)   
- [.NET Framework 資料提供者](../Topic/.NET%20Framework%20Data%20Providers.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+[O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
+[LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

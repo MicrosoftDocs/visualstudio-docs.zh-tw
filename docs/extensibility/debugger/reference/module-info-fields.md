@@ -1,122 +1,122 @@
 ---
-title: "MODULE_INFO_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO_FIELDS"
-helpviewer_keywords: 
-  - "MODULE_INFO_FIELDS 列舉型別"
+title: "MODULE_INFO_FIELDS |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO_FIELDS
+helpviewer_keywords: MODULE_INFO_FIELDS enumeration
 ms.assetid: 8bed85f4-235f-4192-b58f-5fad7a4d7a78
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 807c49d6bbfba4cec3a87e07e851c73723cf0792
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定偵錯模組資訊的旗標。  
+# <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
+指定偵錯模組資訊旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
+```cpp  
+enum enum_MODULE_INFO_FIELDS {   
+   MIF_NONE              = 0x0000,  
+   MIF_NAME              = 0x0001,  
+   MIF_URL               = 0x0002,  
+   MIF_VERSION           = 0x0004,  
+   MIF_DEBUGMESSAGE      = 0x0008,  
+   MIF_LOADADDRESS       = 0x0010,  
+   MIF_PREFFEREDADDRESS  = 0x0020,  
+   MIF_SIZE              = 0x0040,  
+   MIF_LOADORDER         = 0x0080,  
+   MIF_TIMESTAMP         = 0x0100,  
+   MIF_URLSYMBOLLOCATION = 0x0200,  
+   MIF_FLAGS             = 0x0400,  
+   MIF_ALLFIELDS         = 0x07ff  
 };  
 typedef DWORD MODULE_INFO_FIELDS;  
 ```  
   
-```c#  
-public enum enum_MODULE_INFO_FIELDS {   
-   MIF_NONE              = 0x0000,  
-   MIF_NAME              = 0x0001,  
-   MIF_URL               = 0x0002,  
-   MIF_VERSION           = 0x0004,  
-   MIF_DEBUGMESSAGE      = 0x0008,  
-   MIF_LOADADDRESS       = 0x0010,  
-   MIF_PREFFEREDADDRESS  = 0x0020,  
-   MIF_SIZE              = 0x0040,  
-   MIF_LOADORDER         = 0x0080,  
-   MIF_TIMESTAMP         = 0x0100,  
-   MIF_URLSYMBOLLOCATION = 0x0200,  
-   MIF_FLAGS             = 0x0400,  
-   MIF_ALLFIELDS         = 0x07ff  
+```csharp  
+public enum enum_MODULE_INFO_FIELDS {   
+   MIF_NONE              = 0x0000,  
+   MIF_NAME              = 0x0001,  
+   MIF_URL               = 0x0002,  
+   MIF_VERSION           = 0x0004,  
+   MIF_DEBUGMESSAGE      = 0x0008,  
+   MIF_LOADADDRESS       = 0x0010,  
+   MIF_PREFFEREDADDRESS  = 0x0020,  
+   MIF_SIZE              = 0x0040,  
+   MIF_LOADORDER         = 0x0080,  
+   MIF_TIMESTAMP         = 0x0100,  
+   MIF_URLSYMBOLLOCATION = 0x0200,  
+   MIF_FLAGS             = 0x0400,  
+   MIF_ALLFIELDS         = 0x07ff  
 };  
 ```  
   
-## Members  
- MIF\_NONE  
- 初始化\/使用無結構中的欄位。  
+## <a name="members"></a>成員  
+ MIF_NONE  
+ 初始化/使用無結構中的欄位。  
   
- MIF\_NAME  
- 初始化\/使用`m_bstrName`個[MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)結構。  
+ MIF_NAME  
+ 初始化/使用`m_bstrName`欄位[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構。  
   
- MIF\_URL  
- 初始化\/使用`m_bstrUrl`個`MODULE_INFO`結構。  
+ MIF_URL  
+ 初始化/使用`m_bstrUrl`欄位`MODULE_INFO`結構。  
   
- MIF\_VERSION  
- 初始化\/使用`m_bstrVersion`個`MODULE_INFO`結構。  
+ MIF_VERSION  
+ 初始化/使用`m_bstrVersion`欄位`MODULE_INFO`結構。  
   
- MIF\_DEBUGMESSAGE  
- 初始化\/使用`m_bstrDebugMessage`個`MODULE_INFO`結構。  
+ MIF_DEBUGMESSAGE  
+ 初始化/使用`m_bstrDebugMessage`欄位`MODULE_INFO`結構。  
   
- MIF\_LOADADDRESS  
- 初始化\/使用`m_addrLoadAddress`個`MODULE_INFO`結構。  
+ MIF_LOADADDRESS  
+ 初始化/使用`m_addrLoadAddress`欄位`MODULE_INFO`結構。  
   
- MIF\_PREFFEREDADDRESS  
- 初始化\/使用`m_addrPreferredLoadAddress`個`MODULE_INFO`結構。  
+ MIF_PREFFEREDADDRESS  
+ 初始化/使用`m_addrPreferredLoadAddress`欄位`MODULE_INFO`結構。  
   
- MIF\_SIZE  
- 初始化\/使用`m_dwSize`個`MODULE_INFO`結構。  
+ MIF_SIZE  
+ 初始化/使用`m_dwSize`欄位`MODULE_INFO`結構。  
   
- MIF\_LOADORDER  
- 初始化\/使用`m_dwLoadOrder`個`MODULE_INFO`結構。  
+ MIF_LOADORDER  
+ 初始化/使用`m_dwLoadOrder`欄位`MODULE_INFO`結構。  
   
- MIF\_TIMESTAMP  
- 初始化\/使用`m_TimeStamp`個`MODULE_INFO`結構。  
+ MIF_TIMESTAMP  
+ 初始化/使用`m_TimeStamp`欄位`MODULE_INFO`結構。  
   
- MIF\_URLSYMBOLLOCATION  
- 初始化\/使用`m_bstrUrlSymbolLocation`個`MODULE_INFO`結構。  
+ MIF_URLSYMBOLLOCATION  
+ 初始化/使用`m_bstrUrlSymbolLocation`欄位`MODULE_INFO`結構。  
   
- MIF\_FLAGS  
- 初始化\/使用`m_dwModuleFlags`個`MODULE_INFO`結構。  
+ MIF_FLAGS  
+ 初始化/使用`m_dwModuleFlags`欄位`MODULE_INFO`結構。  
   
- MIF\_ALLFIELDS  
- 初始化\/使用所有的欄位，在`MODULE_INFO`結構。  
+ MIF_ALLFIELDS  
+ 初始化/使用中的欄位的所有`MODULE_INFO`結構。  
   
-## 備註  
- 這些值會當做引數傳遞[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以指出哪一個欄位的[MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)結構會進行初始化。  
+## <a name="remarks"></a>備註  
+ 這些值會傳遞做為引數[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以表示的哪些欄位[MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)結構會進行初始化。  
   
- 這些值也可用在`MODULE_INFO` ，表示哪些欄位已使用和有效的結構。  
+ 這些值也會在`MODULE_INFO`結構，以指出哪些欄位是使用且有效。  
   
- 這些旗標可以使用位元和結合`OR`。  
+ 這些旗標可能會合併使用位元`OR`。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [MODULE\_INFO](../../../extensibility/debugger/reference/module-info.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md)   
  [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)

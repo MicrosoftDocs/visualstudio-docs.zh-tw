@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Collecting Data Using a Windows Form | Microsoft Docs'
+title: "逐步解說： 收集資料，使用 Windows Form |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,134 +16,136 @@ helpviewer_keywords:
 - forms [Office development in Visual Studio], walkthroughs
 - worksheets [Office development in Visual Studio], collecting data
 ms.assetid: 40e87f7f-cfbb-4761-bf1b-d042f45f4f09
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d69e91088401857391c935f768e171153a50faeb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 32156e4d2c9e8e5f809a4de64478667e7133aeb1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-collecting-data-using-a-windows-form"></a>Walkthrough: Collecting Data Using a Windows Form
-  This walkthrough demonstrates how to open a Windows Form from a document-level customization for Microsoft Office Excel, collect information from the user, and write that information into a worksheet cell.  
+# <a name="walkthrough-collecting-data-using-a-windows-form"></a>逐步解說：使用 Windows Form 收集資料
+  本逐步解說示範如何從 Microsoft Office Excel 的文件層級自訂開啟 Windows Form、向使用者收集資訊，以及將該資訊寫入工作表儲存格。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- Although this walkthrough uses a document-level project for Excel specifically, the concepts demonstrated by the walkthrough are applicable to other Office projects.  
+ 雖然本逐步解說特別使用 Excel 的文件層級專案，但是所示範的概念也適用於其他 Office 專案。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create an Excel Workbook project.  
+## <a name="creating-a-new-project"></a>建立新專案  
+ 第一步是建立 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create an Excel Workbook project with the name **WinFormInput**, and select **Create a new document** in the wizard. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立名為 **WinFormInput**的 Excel 活頁簿專案，然後選取精靈中的 [建立新文件]  。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **WinFormInput** project to **Solution Explorer**.  
+     Visual Studio 會在設計工具中開啟新的 Excel 活頁簿，並將 **WinFormInput** 專案加入方案總管 。  
   
-## <a name="adding-a-namedrange-control-to-the-worksheet"></a>Adding a NamedRange Control to the Worksheet  
+## <a name="adding-a-namedrange-control-to-the-worksheet"></a>將 NamedRange 控制項加入工作表  
   
-#### <a name="to-add-a-named-range-to-sheet1"></a>To add a named range to Sheet1  
+#### <a name="to-add-a-named-range-to-sheet1"></a>將指定範圍加入 Sheet1  
   
-1.  Select cell **A1** on `Sheet1`.  
+1.  選取 **上的儲存格** A1 `Sheet1`。  
   
-2.  In the **Name** box, type **formInput**.  
+2.  在 [名稱]  方塊中，輸入 **formInput**。  
   
-     The **Name** box is located to the left of the formula bar, just above column **A** of the worksheet.  
+     [名稱]  方塊位於工作表 **A** 欄正上方的公式列左側。  
   
-3.  Press ENTER.  
+3.  請按 ENTER 鍵。  
   
-     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control is added to cell **A1**. There is no visible indication on the worksheet, but **formInput** appears in the **Name** box (just above the worksheet on the left side) and in the **Properties** window when cell **A1** is selected.  
+     <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項會加入儲存格 **A1**。 工作表上不會明顯表示，不過當選取儲存格 **A1** 時， **formInput** 會出現在 [名稱]  方塊 (工作表左上方) 和 [屬性]  視窗中。  
   
-## <a name="adding-a-windows-form-to-the-project"></a>Adding a Windows Form to the Project  
- Create a Windows Form to prompt the user for information.  
+## <a name="adding-a-windows-form-to-the-project"></a>將 Windows Form 加入專案  
+ 建立 Windows Form 以提示使用者輸入資訊。  
   
-#### <a name="to-add-a-windows-form"></a>To add a Windows Form  
+#### <a name="to-add-a-windows-form"></a>加入 Windows Form  
   
-1.  Select the project **WinFormInput** in **Solution Explorer**.  
+1.  在方案總管  中，選取專案 **WinFormInput**。  
   
-2.  On the **Project** menu, click **Add Windows Form**.  
+2.  在 [專案]  功能表上，按一下 [加入 Windows Form] 。  
   
-3.  Name the form **GetInputString.vb** or **GetInputString.cs**, and then click **Add**.  
+3.  將表單命名 **GetInputString.vb** 或 **GetInputString.cs**，然後按一下 [加入] 。  
   
-     The new form opens in the designer.  
+     新表單隨即在設計工具中開啟。  
   
-4.  Add a <xref:System.Windows.Forms.TextBox> and a <xref:System.Windows.Forms.Button> to the form.  
+4.  將 <xref:System.Windows.Forms.TextBox> 和 <xref:System.Windows.Forms.Button> 加入表單。  
   
-5.  Select the button, find the property **Text** in the **Properties** window, and change the text to **OK**.  
+5.  選取按鈕，在 [屬性]  視窗中找到 [文字]  屬性，然後將文字變更為 [確定] 。  
   
- Next, add code to `ThisWorkbook.vb` or `ThisWorkbook.cs` to collect the user's information.  
+ 接下來，將程式碼加入 `ThisWorkbook.vb` 或 `ThisWorkbook.cs` ，以收集使用者的資訊。  
   
-## <a name="displaying-the-windows-form-and-collecting-information"></a>Displaying the Windows Form and Collecting Information  
- Create an instance of the `GetInputString` Windows Form and display it, and then write the user's information into a cell in the worksheet.  
+## <a name="displaying-the-windows-form-and-collecting-information"></a>顯示 Windows Form 並收集資訊  
+ 建立並顯示 `GetInputString` Windows Form 的執行個體，然後將使用者的資訊寫入工作表中的儲存格。  
   
-#### <a name="to-display-the-form-and-collect-information"></a>To display the form and collect information  
+#### <a name="to-display-the-form-and-collect-information"></a>顯示表單並收集資訊  
   
-1.  Right-click **ThisWorkbook.vb** or **ThisWorkbook.cs** in **Solution Explorer**, and then click **View Code**.  
+1.  以滑鼠右鍵按一下方案總管  中的 **ThisWorkbook.vb** 或 **ThisWorkbook.cs**，然後按一下 [檢視程式碼] 。  
   
-2.  In the <xref:Microsoft.Office.Tools.Excel.Workbook.Open> event handler of `ThisWorkbook`, add the following code to declare a variable for the form `GetInputString` and then show the form.  
+2.  在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件處理常式，加入下列程式碼以宣告表單 `GetInputString` 的變數，然後顯示表單。  
   
     > [!NOTE]  
-    >  In C#, you must add an event handler as shown in the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event below. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+    >  在 C# 中，您必須加入事件處理常式，如以下 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件所示。 如需建立事件處理常式的詳細資訊，請參閱[How to： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#1)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#1](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#1)]  
   
-3.  Create a method called `WriteStringToCell` that writes text to a named range. This method is called from the form, and the user's input is passed to the <xref:Microsoft.Office.Tools.Excel.NamedRange> control, `formInput`, on cell **A1**.  
+3.  建立名為 `WriteStringToCell` 的方法，以將文字寫入指定範圍。 系統會從表單呼叫這個方法，並將使用者的輸入傳遞至儲存格 <xref:Microsoft.Office.Tools.Excel.NamedRange> A1 `formInput`上的 **控制項**。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs#2)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#2](../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb#2)]  
   
- Next, add code to the form to handle the button's click event.  
+ 接下來，將程式碼加入表單以處理按鈕的 Click 事件。  
   
-## <a name="sending-information-to-the-worksheet"></a>Sending Information to the Worksheet  
+## <a name="sending-information-to-the-worksheet"></a>將資訊傳送至工作表  
   
-#### <a name="to-send-information-to-the-worksheet"></a>To send information to the worksheet  
+#### <a name="to-send-information-to-the-worksheet"></a>將資訊傳送至工作表  
   
-1.  Right-click **GetInputString** in **Solution Explorer**, and then click **View Designer**.  
+1.  以滑鼠右鍵按一下方案總管  中的 **GetInputString**，然後按一下 [檢視設計工具] 。  
   
-2.  Double-click the button to open the code file with the button's <xref:System.Windows.Forms.Control.Click> event handler added.  
+2.  按兩下這個按鈕，開啟已加入按鈕之 <xref:System.Windows.Forms.Control.Click> 事件處理常式的程式碼檔案。  
   
-3.  Add code to the event handler to take the input from the text box, send it to the function `WriteStringToCell`, and then close the form.  
+3.  將程式碼加入事件處理常式，以便從文字方塊取得輸入、將輸入傳送至 `WriteStringToCell`函式，然後關閉表單。  
   
-     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]  [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
+     [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
+     [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]  
   
-## <a name="testing"></a>Testing  
- You can now run the project. The Windows Form appears, and your input appears in the worksheet.  
+## <a name="testing"></a>測試  
+ 您現在可以執行專案。 Windows Form 隨即出現，且您的輸入會出現在工作表中。  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>測試您的活頁簿  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-2.  Confirm that the Windows Form appears.  
+2.  確認 Windows Form 隨即出現。  
   
-3.  Type **Hello World** in the text box, and then click **OK**.  
+3.  在文字方塊中輸入 **Hello World** ，然後按一下 [確定] 。  
   
-4.  Confirm that **Hello World** appears in cell **A1** of the worksheet.  
+4.  確認 **Hello World** 出現在工作表的儲存格 **A1** 中。  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of showing a Windows Form and passing data to a worksheet. Other tasks you may want to perform include:  
+## <a name="next-steps"></a>後續步驟  
+ 本逐步解說說明顯示 Windows Form 並將資料傳遞至工作表的基本概念。 您還可以執行下列其他工作：  
   
--   Use Windows Forms controls on an Excel workbook or a Word document. For more information, see [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md).  
+-   使用 Excel 活頁簿或 Word 文件上的 Windows Form 控制項。 如需詳細資訊，請參閱 [Windows Forms Controls on Office Documents Overview](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
--   Modify the user interface of a Microsoft Office application from a document-level customization or an VSTO Add-in. For more information, see [Office UI Customization](../vsto/office-ui-customization.md).  
+-   從文件層級自訂或 VSTO 增益集，修改 Microsoft Office 應用程式的使用者介面。 如需詳細資訊，請參閱[Office UI 自訂](../vsto/office-ui-customization.md)。  
   
-## <a name="see-also"></a>See Also  
- [Developing Office Solutions](../vsto/developing-office-solutions.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [開發 Office 方案](../vsto/developing-office-solutions.md)   
+ [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)  
+ [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
+ [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
+ [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)  
   
   

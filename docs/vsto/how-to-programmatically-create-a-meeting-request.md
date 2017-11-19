@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Create a Meeting Request | Microsoft Docs'
+title: "如何： 以程式設計方式建立會議邀請 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,27 +15,27 @@ helpviewer_keywords:
 - appointments [Office development in Visual Studio]
 - calendars [Office development in Visual Studio], meeting requests
 ms.assetid: 889f8fa4-c0d0-42be-9c16-9987b43008ab
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8a19f6437108e898b174101cb0965a280b9fd335
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: a8bf894d8dc68e951333c517ddc1708b9b277582
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-create-a-meeting-request"></a>How to: Programmatically Create a Meeting Request
-  This example creates a meeting request in Microsoft Office Outlook and sends the request to a required attendee.  
+# <a name="how-to-programmatically-create-a-meeting-request"></a>如何：以程式設計方式建立會議邀請
+  本範例會在 Microsoft Office Outlook 中建立會議邀請，並傳送要求給必要的與會者。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)] [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]  
+## <a name="example"></a>範例  
+ [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
+ [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Calendar Items](../vsto/working-with-calendar-items.md)   
- [Getting Started Programming VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md)  
+## <a name="see-also"></a>另請參閱  
+ [使用行事曆項目](../vsto/working-with-calendar-items.md)   
+ [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  
   
   

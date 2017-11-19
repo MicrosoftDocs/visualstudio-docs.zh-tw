@@ -1,30 +1,31 @@
 ---
-title: "VisibilityConstraints 項目 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VisibilityConstraints"
-helpviewer_keywords: 
-  - "VisibilityConstraints，VSCT XML 結構描述項目"
-  - "VisibilityConstraints 項目 (VSCT XML 結構描述)"
+title: "VisibilityConstraints 項目 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VisibilityConstraints
+helpviewer_keywords:
+- VSCT XML schema elements, VisibilityConstraints
+- VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f26268e6168379632868c07a9d9c58f9485c8ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# VisibilityConstraints 項目
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VisibilityConstraints 項目決定靜態群組的命令和工具列可見。 可見性會先受到 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 不載入 VSPackage 的整合式的開發環境 \(IDE\)。  
+# <a name="visibilityconstraints-element"></a>VisibilityConstraints 項目
+VisibilityConstraints 元素決定的命令和工具列群組的靜態可見性。 由第一次控制可見性[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]而不必載入 VSPackage 的整合式的開發環境 (IDE)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <VisibilityConstraints>  
@@ -33,34 +34,37 @@ VisibilityConstraints 項目決定靜態群組的命令和工具列可見。 可
 </VisibilityConstraint>  
 ```  
   
-## 屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和項目  
  下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
-|--------|--------|  
-|條件|選擇項。 請參閱 [條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
+|---------------|-----------------|  
+|條件|選擇項。 請參閱[條件式屬性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
   
-|項目|描述|  
-|--------|--------|  
-|[VisibilityItem 項目](../extensibility/visibilityitem-element.md)|決定命令和工具列的靜態的可見性。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[VisibilityItem 元素](../extensibility/visibilityitem-element.md)|決定命令和工具列的靜態可見性。|  
 |[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|決定靜態群組的命令和工具列可見。|  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
-|--------|--------|  
-|[CommandTable 項目](../extensibility/commandtable-element.md)|定義代表 VSPackage 會提供 IDE 的命令 \(例如，功能表項目、 功能表、 工具列和下拉式方塊\) 的所有項目。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定義代表 VSPackage 提供給 IDE 的命令 （例如，功能表項目、 功能表、 工具列和下拉式方塊） 的所有項目。|  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
-<VisibilityConstraints> <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget" context="guidNotViewSourceMode"/> </VisibilityConstraints>  
+<VisibilityConstraints>  
+  <VisibilityItem guid="cmdSetGuidMyProductCommands"     id="cmdidAddWidget"  
+    context="guidNotViewSourceMode"/>  
+</VisibilityConstraints>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VisibilityItem 項目](../extensibility/visibilityitem-element.md)   
- [Visual Studio 命令資料表 \(。Vsct\) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+ [Visual Studio 命令表檔案 (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

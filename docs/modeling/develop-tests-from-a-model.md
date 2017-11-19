@@ -6,41 +6,25 @@ ms.reviewer:
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- tests and requirements
+helpviewer_keywords: tests and requirements
 ms.assetid: 40f87192-ba85-4552-8804-314a678261ae
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 08aabdfe0e268f93ef7723076375b7f65b15ccf3
-ms.openlocfilehash: b7cb109d11669f411b5ca3bdf3c4c32a63ac53a1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ea0753130b6fa1da60cf83cf15c0ee5c7f4010c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="develop-tests-from-a-model"></a>透過模型開發測試
 您可以使用需求和架構模型來協助您組織整理系統及其元件的測試。 這種做法有助於確保測試使用者和其他利害關係人的重要需求，並且可協助您在需求變更時快速更新測試。 如果您使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，則也可以維護模型與測試之間的連結。  
   
- 若要查看哪些版本的 Visual Studio 支援這些功能，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援這些功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="system-and-subsystem-testing"></a>系統和子系統測試  
- *系統測試，*也稱為*接受度測試*，表示測試是否符合使用者的需求。 這類測試關注系統的外部可見行為，而非內部設計。  
+ *系統測試，*也稱為*接受度測試*、 測試是否符合使用者需求的方法。 這類測試關注系統的外部可見行為，而非內部設計。  
   
  擴充或重新設計系統時，系統測試極為重要。 它們可協助您在變更程式碼時避免造成錯誤。  
   
@@ -71,17 +55,17 @@ ms.lasthandoff: 02/22/2017
 -   設計測試時，請分開選擇測試資料與判斷是否達到後置條件的程式碼或指令碼。 例如，簡單算術函式的測試可能是：輸入 4；驗證輸出是 2。 而是將指令碼設計為：選擇輸入；將輸出乘上它自己，並驗證結果是原始輸入。 這個樣式可讓您有不同的測試輸入，而不變更測試的主體。  
   
 #### <a name="linking-tests-to-use-cases"></a>將測試連結至使用案例  
- 如果您使用[!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]來設計和執行測試，您可以將測試組織需求、 使用案例，或使用者劇本工作項目。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。  
+ 如果您使用[!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]來設計和執行測試，您可以組織您的測試需求、 使用案例或使用者劇本工作項目底下。 您可以將這些工作項目連結至模型中的使用案例。 這可讓您快速追蹤測試的需求變更，並協助您追蹤每個使用案例的進度。  
   
 ###### <a name="to-link-tests-to-a-use-case"></a>將測試連結至使用案例  
   
 1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。
   
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱[追蹤工作使用 Visual Studio Team Services 或 Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱[使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2.  將需求工作項目連結至模型中的一個或多個使用案例。  
   
-     在使用案例圖中，以滑鼠右鍵按一下使用案例，然後按一下 **連結至工作項目**。 如需詳細資訊，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
+     在使用案例圖中，一個使用案例，以滑鼠右鍵按一下，然後按一下 **連結至工作項目**。 
   
 3.  加入測試套件 (驗證使用案例的測試案例)。  
   
@@ -128,7 +112,7 @@ Assert (countAfter == countBefore = 1);
 ## <a name="deriving-subsystem-tests-from-models"></a>從模型衍生子系統測試  
  在大型系統的高階設計中，您可以識別元件或子系統。 這些代表可個別設計或位於不同電腦的組件，或是可以使用許多方式重新合併的可重複使用模組。 
   
- 您可以將用於整個系統的相同準則套用至每個主要元件。 在大型專案中，每個元件都可以有它自己的需求模型。 在較小的專案中，可以建立架構模型或高階設計，以顯示主要元件和其互動。 如需詳細資訊，請參閱[模型應用程式架構](../modeling/model-your-app-s-architecture.md)。  
+ 您可以將用於整個系統的相同準則套用至每個主要元件。 在大型專案中，每個元件都可以有它自己的需求模型。 在較小的專案中，可以建立架構模型或高階設計，以顯示主要元件和其互動。 如需詳細資訊，請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
  在任一情況下，您都可以建立模型項目與子系統測試之間的關聯性，方法與建立需求模型與系統測試之間的關聯性相同。  
   
@@ -146,7 +130,7 @@ Assert (countAfter == countBefore = 1);
   
  從測試的觀點，需求模型可以視為測試的縮寫。 因此，務必維護測試與整個專案中模型之間的關聯性。  
   
-##  <a name="Attaching"></a>將測試案例附加至模型項目  
+##  <a name="Attaching"></a>附加至模型項目測試案例  
  如果您的專案使用 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)]，則可以將測試連結至模型中的項目。 這可讓您快速找出需求中變更所影響的測試，並協助您追蹤已實現需求的範圍。  
   
  您可以將測試連結至所有類型的項目。 以下是一些範例：  
@@ -165,17 +149,16 @@ Assert (countAfter == countBefore = 1);
   
 1.  在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，建立需求，並以它為測試套件的基礎。 
   
-     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱[追蹤工作使用 Visual Studio Team Services 或 Team Foundation Server](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
+     您所建立的需求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作項目。 根據您的專案與 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 搭配使用的流程範本，它可能是使用者劇本、需求或使用案例工作項目。 如需詳細資訊，請參閱[使用 Visual Studio Team Services 或 Team Foundation Server 追蹤工作](http://msdn.microsoft.com/Library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)。  
   
 2.  將需求工作項目連結至模型中的一個或多個項目。  
   
-     在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下**連結至工作項目**。 如需詳細資訊，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
+     在模型圖中，以滑鼠右鍵按一下項目、 註解或關聯性，然後按一下 **連結至工作項目**。
   
 3.  加入測試套件 (驗證模型項目中所表示的需求的測試案例)。  
   
 ## <a name="see-also"></a>另請參閱  
- [建立您的應用程式模型](../modeling/create-models-for-your-app.md)   
- [模型的使用者需求](../modeling/model-user-requirements.md)   
- [建立您的應用程式架構的模型](../modeling/model-your-app-s-architecture.md)   
+ [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
+ [模型使用者需求](../modeling/model-user-requirements.md)   
+ [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
  [分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)
-

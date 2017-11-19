@@ -1,11 +1,10 @@
 ---
-title: Attach to Running Processes with the Debugger in Visual Studio | Microsoft Docs
+title: "附加至執行中處理程序與 Visual Studio 中偵錯工具 |Microsoft 文件"
 ms.custom: H1Hack27Feb2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,172 +27,171 @@ helpviewer_keywords:
 - debugging [Visual Studio], attaching to processes
 - debugger, processes
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 32cb47a722f5cae7eeebb72dbfba60e1762b8fe3
-ms.openlocfilehash: 75bc58e8ab31863b2adb30fee1c905191be568fd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
-
+ms.openlocfilehash: e7ed9c7f362399d9cd256b02af9f1fe1bcecf8ce
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Attach to Running Processes with the Visual Studio Debugger
-You can attach the Visual Studio debugger to a running process on a local or remote computer. After the process is running, click **Debug > Attach to Process** (or press **CTRL+ALT+P**) to open the **Attach to Process** dialog box.
+# <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
+您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 處理序執行之後，請按一下**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**) 若要開啟**附加至處理序** 對話方塊。
 
-You can use this capability to debug apps that are running on a local or remote computer, debug multiple processes simultaneously, or debug an application that was not created in Visual Studio. It is often useful when you want to debug an app, but (for whatever reason) you did not start the app from Visual Studio with the debugger attached. For example, if you are running the app without the debugger and hit an exception, you might then attach to the process running the app to begin debugging.
+偵錯在本機或遠端電腦執行的應用程式，同時偵錯多個處理序或偵錯不是 Visual Studio 中的應用程式，您可以使用這項功能。 因此，通常適用於您想要偵錯應用程式，但 （無論基於任何理由） 未啟動應用程式從 Visual Studio 附加偵錯工具。 例如，如果您正在執行的應用程式，而不偵錯工具，並叫用例外狀況，您可能會再附加至執行應用程式，以開始偵錯的處理序。
 
 > [!TIP]
-> Not sure whether you need to use **Attach to Process** for your debugging scenario? See [Common debugging scenarios](#BKMK_Scenarios). If you want to debug ASP.NET applications that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
+> 不確定是否需要使用**附加至處理序**偵錯情節？ 請參閱[常見偵錯情節](#BKMK_Scenarios)。 如果您想要偵錯 ASP.NET 應用程式已部署至 IIS，請參閱[遠端 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Attach to a running process on the local machine  
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names).
+##  <a name="BKMK_Attach_to_a_running_process"></a>附加至本機電腦上執行的處理序  
+ 為了附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯情節](#BKMK_Scenarios)幾個一般程序名稱)。
   
-1.  In Visual Studio, select **Debug > Attach to Process** (or press **CTRL+ALT+P**).
+1.  在 Visual Studio 中，選取**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**)。
 
-    If you want to quickly reattach to a process instead, see [Reattach to Process](#BKMK_reattach).
+    如果您想要快速地重新附加至處理程序相反地，請參閱[重新附加至處理序](#BKMK_reattach)。
   
-2.  In the **Attach to Process** dialog box, find the program that you want to attach to from the **Available Processes** list.  
+2.  請在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，尋找您要附加的程式。  
 
-     To quickly select the process you want, type the first letter of the process name. If you don't know the process name, see [Common debugging scenarios](#BKMK_Scenarios).
+     若要快速地選取您想要的程序，請輸入處理序名稱的第一個字母。 如果您不知道處理序名稱，請參閱[常見偵錯情節](#BKMK_Scenarios)。
      
      ![DBG_Basics_Attach_To_Process](../debugger/media/DBG_Basics_Attach_To_Process.png "DBG_Basics_Attach_To_Process") 
   
-     If the process is running under a different user account, select the **Show processes from all users** check box.
+     如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。
   
-3.  In the **Attach to** box, make sure that the type of code you will debug is listed. The default **Automatic** setting tries to determine what type of code you want to debug. To set the type of code manually, do the following  
+3.  在 [附加至]  方塊中，確定其中已列出您要偵錯的程式碼類型。 預設的 [自動]  設定會自動判斷您要偵錯的程式碼類型。 若要手動設定程式碼類型，請執行下列程序  
   
-    1.  In the **Attach to** box, click **Select**.  
+    1.  按一下 [附加至]  方塊中的 [選取] 。  
   
-    2.  In the **Select Code Type** dialog box, click **Debug these code types** and select the types to debug.  
+    2.  在 [選取程式碼類型]  對話方塊中，按一下 [偵錯這些程式碼類型]  ，然後選取要偵錯的類型。  
   
-    3.  Click **OK**.  
+    3.  按一下 [確定] 。  
   
-4.  Click **Attach**.
+4.  按一下 [附加] 。
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Attach to a process on a remote computer  
- In order to attach to a process, you must know the name of the process (see [Common debugging scenarios](#BKMK_Scenarios) for a few common process names). For more complete guidance for ASP.NET apps that have been deployed to IIS, see [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). For other apps, you may be able to find the name of the process in the Task Manager.
+##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a>附加至遠端電腦上的處理序  
+ 為了附加至處理序，您必須知道處理序名稱 (請參閱[常見偵錯情節](#BKMK_Scenarios)幾個一般程序名稱)。 如需更完整的已部署至 IIS 的 ASP.NET 應用程式的詳細指引，請參閱[遠端 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)。 若為其他應用程式，您或許可在 [工作管理員] 中找到處理序名稱。
   
- When you use the **Attach to Process** dialog box, you can select another computer that has been set up for remote debugging. For more information, see [Remote Debugging](../debugger/remote-debugging.md). When you have selected a remote computer, you can view a list of available processes running on that computer and attach to one or more of the processes for debugging.
+ 使用 [附加至處理序]  對話方塊時，您可以選取已針對遠端偵錯設定的其他電腦。 如需詳細資訊，請參閱[遠端偵錯](../debugger/remote-debugging.md)。 當您選取了遠端電腦時，您可以檢視該電腦上正在執行的可使用處理序清單，並附加至其中一個或多個處理序進行偵錯。
   
- **To select a remote computer:**  
+ **若要選取遠端電腦：**  
 
-1. In Visual Studio, select **Debug > Attach to Process** (or press **CTRL+ALT+P**).
+1. 在 Visual Studio 中，選取**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**)。
 
-    If you want to quickly reattach to a process instead, see [Reattach to Process](#BKMK_reattach).
+    如果您想要快速地重新附加至處理程序相反地，請參閱[重新附加至處理序](#BKMK_reattach)。
 
-2.  In the **Attach to Process** dialog box, select the appropriate connection type from the **Transport** list. **Default** is the correct setting for most cases.
+2.  在 [附加至處理序]  對話方塊中，從 [傳輸]  清單選取適當的連接類型。 [預設值] 是適合大部分情況的正確設定
 
-    The **Transport** setting persists between debugging sessions. 
+    [傳輸]  設定在偵錯工作階段之間持續維持。 
   
-3.  Use the **Qualifier** list box to choose the remote computer name by one of the following methods:  
+3.  利用下列其中一種方法，使用 [限定詞]  清單方塊選擇遠端電腦名稱：  
   
-    1.  Type the name in the **Qualifier** list box.
+    1.  在 [限定詞]  清單方塊中輸入名稱。
     
-        >**Note** If, in later steps, you can't connect using the remote computer name, use the IP address. (The port number may appear automatically after selecting the process. You can also enter it manually. In the illustration below, 4020 is the default port for the remote debugger.)  
+        >**請注意**於稍後步驟中，您無法使用連接的遠端電腦名稱，如果使用的 IP 位址。 （連接埠號碼可能會顯示自動選取處理程序之後。 您也可以輸入它以手動方式。 在下面的圖例 4020 是遠端偵錯工具的預設通訊埠）。  
 
-        If you want to use the **Find** button, you may need to [open UDP port 3702](../debugger/remote-debugger-port-assignments.md) on the server.
+        如果您想要使用**尋找** 按鈕，您可能需要[開啟 UDP 連接埠 3702](../debugger/remote-debugger-port-assignments.md)在伺服器上。
   
-    2.  Click the drop-down arrow attached to the **Qualifier** list box and select the computer name from the drop-down list.  
+    2.  按一下附加至 [限定詞]  清單方塊的下拉箭號，然後從下拉式清單中選取電腦名稱。  
   
-    3.  Click the **Find** button next to the**Qualifier** list to open the **Select Remote Debugger Connection** dialog box. The **Select Remote Debugger Connection** dialog box lists all the devices that are on your local sub-net, and any device that is directly attached to your computer through an Ethernet cable. Click the computer or device that you want, and then click **Select**. 
+    3.  按一下 [限定詞]  清單旁的 [尋找] 按鈕，開啟 [遠端偵錯工具連接]  對話方塊。 [選取遠端偵錯工具連接]  對話方塊會列出位於您本機子網路上的所有裝置，以及透過乙太網路纜線直接附加至電腦的裝置。 按一下您想要的電腦或裝置，然後按一下 [選取] 。 
   
-     The **Qualifier** setting persists between debugging sessions only if a successful debugging connection occurs with that qualifier.
+     [限定詞]  設定只有在使用該限定詞成功產生偵錯連接時，才會在偵錯工作階段之間持續維持。
      
-4.  Click **Refresh**.
+4.  按一下**重新整理**。
 
-      The **Available Processes** list is displayed automatically when you open the **Processes** dialog box. Processes can start and stop in the background while the dialog box is open. However, the contents are not always current. You can refresh the list at any time to see the current list of processes by clicking **Refresh**. 
+      [可使用的處理序]  清單會在您開啟 [處理序]  對話方塊時自動顯示。 當對話方塊開啟時，處理序可以在背景中啟動和停止。 但內容不一定是最新的。 您可以隨時按一下 [重新整理] 以重新整理該清單，查看目前的處理序清單。 
      
-4.  In the **Attach to Process** dialog box, find the program that you want to attach to from the **Available Processes** list.
+4.  請在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，尋找您要附加的程式。
 
-     To quickly select the process you want, type the first letter of the process name. If you don't know the process name, see [Common debugging scenarios](#BKMK_Scenarios).
+     若要快速地選取您想要的程序，請輸入處理序名稱的第一個字母。 如果您不知道處理序名稱，請參閱[常見偵錯情節](#BKMK_Scenarios)。
   
-     If the process is running under a different user account, select the **Show processes from all users** check box.
+     如果該處理序正在不同的使用者帳戶下執行，請選取 [顯示所有使用者的處理序]  核取方塊。
      
-5.  Click **Attach**.
+5.  按一下 [附加] 。
 
-## <a name="BKMK_reattach"></a> Reattach to process
+## <a name="BKMK_reattach"></a>重新附加至處理程序
 
-You can quickly reattach to processes that you were previously attached to by choosing **Debug > Reattach to Process...** (**Shift+Alt+P**). When you choose this command, the debugger will immediately try to attach to the last processes you attached to using the **Attach to Process** dialog box.
+您可以快速地重新附加至您先前選擇附加至處理程序**偵錯 > 重新附加至處理序...**(**Shift + Alt + P**)。 當您選擇此命令時，偵錯工具將會立即嘗試附加到最後一個處理程序，您附加至使用**附加至處理序** 對話方塊。
 
-The debugger will reattach by first attempting to match the previous process ID and then, if that fails, by matching to the previous process name. If no matches are found, or if there are multiple processes found with the same name, then the **Attach to Process** dialog box will appear so that you can select the correct process.
+第一次嘗試比對上一個處理序識別碼將會重新附加偵錯工具，然後，如果失敗，請藉由比對上一個程序名稱。 如果找不到相符的項目，或者如果有多個處理程序找到具有相同的名稱，然後在**附加至處理序**對話方塊隨即出現，因此您可以選取正確的處理序。
 
 > [!NOTE]
-> The **Reattach to Process** command is new in Visual Studio 2017.
+> **重新附加至處理序**命令的新功能 Visual Studio 2017。
 
-## <a name="additional-info"></a>Additional info
+## <a name="additional-info"></a>其他資訊
 
-You can be attached to multiple programs when you are debugging, but only one program is active in the debugger at any time. You can set the active program in the **Debug Location** toolbar or the **Processes** window. For more information, see [How to: Set the Current Program](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).  
+偵錯時，您可以附加至多個程式，但是無論在任何時間，偵錯工具一次只能有一個使用中程式。 您可以在 [偵錯位置]  工具列或 [處理序]  視窗中設定使用中的程式。 如需詳細資訊，請參閱[How to： 設定目前的程式](http://msdn.microsoft.com/en-us/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e)。  
   
-If you try to attach to a process owned by an untrusted user account, a security warning dialog box confirmation will appear. For more information see [Security Warning: Attaching to a process owned by an untrusted user can be dangerous. If the following information looks suspicious or you are unsure, do not attach to this process](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md).  
+如果您嘗試附加至未受信任的使用者帳戶所擁有的處理序，會出現安全性警告對話方塊確認訊息。 如需詳細資訊，請參閱[安全性警告： 將附加至不受信任的使用者所擁有的處理序可能會造成危險。如果下列資訊看起來有問題，或您不確定，不會附加至這個處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)。  
   
-In some cases, when you debug in a Remote Desktop (Terminal Services) session, the **Available Processes** list will not display all available processes. If you are running Visual Studio as a user who has a limited user account, the **Available Processes** list will not show processes that are running in Session 0, which is used for services and other server processes, including w3wp.exe. You can solve the problem by running [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] under an administrator account or by running [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] from the server console instead of a Terminal Services session. If neither of those workarounds is possible, a third option is to attach to the process by running `vsjitdebugger.exe -p` *ProcessId* from the Windows command line. You can determine the process id using tlist.exe. To obtain tlist.exe, download and install Debugging Tools for Windows, available at  [WDK and WinDbg downloads](http://go.microsoft.com/fwlink/?LinkId=168279).
+在某些情況下，在遠端桌面 (終端機服務) 工作階段中進行偵錯時，[可使用的處理序]  清單並不會顯示所有可使用的處理序。 如果您是以受限制的使用者身分執行 Visual Studio，則 [可使用的處理序]  清單不會顯示在工作階段 0 中執行的處理序，因為工作階段 0 是用於服務以及其他包括 w3wp.exe 的伺服器處理序。 您可藉由使用系統管理員帳戶來執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或是從伺服器主控台 (而非終端機服務工作階段) 執行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，來解決這個問題。 如果這些解決方法都沒有效，第三個方法就是從 Windows 命令列執行 `vsjitdebugger.exe -p` *ProcessId* 以連結至流程。 您可以使用 tlist.exe 來判斷處理序 ID。 若要取得 tlist.exe，您可以從  [WDK 和 WinDbg 下載](http://go.microsoft.com/fwlink/?LinkId=168279)來下載並安裝 Debugging Tools for Windows。
 
-## <a name="BKMK_Scenarios"></a> Common debugging scenarios
+## <a name="BKMK_Scenarios"></a>常見的偵錯案例
 
-To help you identify whether you need to use **Attach to process** and what process to attach to, a few common debugging scenarios are shown here (the list is not exhaustive). Where more instructions are available, we provide links.
+若要可協助您找出您需要使用**附加至處理序**和附加什麼程序如下所示為一些常見的偵錯案例 （清單未全部列出）。 中可用的詳細指示，我們會提供連結。
 
-For some app types (like Windows Store apps), you don't attach directly to a process name, but use the **Debug Installed App Package** menu option instead (see table).
+對於某些應用程式類型 （例如 UWP 應用程式） 中，不要直接附加到處理序名稱，但使用**偵錯已安裝的應用程式套件**功能表選項 （請參閱資料表）。
 
 > [!NOTE]
-> For information about basic debugging in Visual Studio, see [Getting started with the debugger](../debugger/getting-started-with-the-debugger.md).
+> 如需 Visual Studio 中的基本偵錯資訊，請參閱[偵錯工具使用者入門](../debugger/getting-started-with-the-debugger.md)。
 
-|Scenario|Debug Method|Process Name|Notes and Links|
+|情節|偵錯方法|處理序名稱|附註和連結|
 |-|-|-|-|
-|Debug a managed or native app on the local machine|Use attach to process or [standard debugging](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|To quickly access the dialog box, use **CTRL+ALT+P** and then type the first letter of the process name.|
-|Debug ASP.NET apps on the local machine after starting the app without the debugger|Use attach to process|iiexpress.exe|This may be helpful to make your app load faster, such as (for example) when profiling. |
-|Remote debug ASP.NET 4 or 4.5 on an IIS server|Use remote tools and attach to process|w3wp.exe|See [Remote Debugging ASP.NET on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
-|Remote debug ASP.NET Core on an IIS server|Use remote tools and attach to process|dotnet.exe|For app deployment, see [Publish to IIS](https://docs.asp.net/en/latest/publishing/iis.html). For debugging, see [Remote Debugging ASP.NET Core on a remote IIS computer](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
-|Debug other supported app types on a server process|Use remote tools (if server is remote) and attach to process|iexplore.exe or other processes|If necessary, use Task Manager to help identify the process. See [Remote Debugging](../debugger/remote-debugging.md) and later sections in this topic|
-|Remote debug a Windows desktop app|Remote Tools and F5|N/A| See [Remote Debugging](../debugger/remote-debugging.md)|
-|Remote debug a Universal (UWP), OneCore, HoloLens, or IoT app|Debug installed app package|N/A|See [Debug an Installed App Package](debug-installed-app-package.md) instead of using **Attach to process**|
-|Debug a Universal Windows App (UWP), OneCore, HoloLens, or IoT app that you didn't start from Visual Studio|Debug installed app package|N/A|See [Debug an Installed App Package](debug-installed-app-package.md) instead of using **Attach to process**|
+|偵錯在本機電腦上的 managed 或原生應用程式|使用附加至處理序或[標準偵錯](../debugger/getting-started-with-the-debugger.md)|*appname*.exe|若要快速存取對話方塊中，請使用**CTRL + ALT + P** ，然後輸入處理序名稱的第一個字母。|
+|之後啟動應用程式，而不偵錯工具偵錯在本機電腦上的 ASP.NET 應用程式|使用附加至處理序|iiexpress.exe|這可能是很有幫助您載入的應用程式更快，例如 （例如） 當程式碼剖析。 |
+|遠端偵錯 ASP.NET 4 或 4.5 上的 IIS 伺服器|使用遠端工具，並附加至處理序|w3wp.exe|請參閱[遠端 IIS 電腦上的遠端偵錯 ASP.NET](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md)|
+|在 IIS 伺服器上遠端偵錯 ASP.NET Core|使用遠端工具，並附加至處理序|dotnet.exe|應用程式部署，請參閱[發行至 IIS](https://docs.asp.net/en/latest/publishing/iis.html)。 偵錯，請參閱[遠端偵錯 ASP.NET Core 遠端 IIS 電腦上](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)|
+|伺服器處理序上的其他支援的應用程式類型進行偵錯|（如果伺服器位於遠端），請使用遠端工具，附加至處理序|iexplore.exe 或其他處理程序|如有必要，請使用工作管理員，找出程序。 請參閱[遠端偵錯](../debugger/remote-debugging.md)和本主題稍後的章節|
+|遠端偵錯 Windows 桌面應用程式|遠端工具和 F5|N/A| 請參閱[遠端偵錯](../debugger/remote-debugging.md)|
+|遠端偵錯的通用 (UWP)、 OneCore、 HoloLens 或 IoT 應用程式|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
+|您從 Visual Studio 未啟動的通用 Windows 應用程式 (UWP)、 OneCore、 HoloLens 或 IoT 應用程式進行偵錯|偵錯已安裝的應用程式套件|N/A|請參閱[偵錯已安裝的應用程式套件](debug-installed-app-package.md)而不是使用**附加至處理序**|
   
 > [!WARNING]
->  To attach to a UWP that is written in JavaScript, you must first enable debugging for the app. See [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) in the Windows Dev Center.  
+>  若要附加至以 JavaScript 撰寫的 UWP，您必須先啟用應用程式的偵錯。 請參閱[附加偵錯工具](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger)Windows 開發人員中心。  
   
 > [!NOTE]
->  For the debugger to attach to code written in C++, the code needs to emit `DebuggableAttribute`. You can add this to your code automatically by linking with the [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) linker option.
+>  偵錯工具若要附加至以 C++ 撰寫的程式碼，該程式碼必須發出 `DebuggableAttribute`。 您可以使用 [/ASSEMBLYDEBUG](/cpp/build/reference/assemblydebug-add-debuggableattribute) 連結器選項連結，將其自動加入程式碼。
 
-## <a name="what-debugger-features-can-i-use"></a>What debugger features can I use?
+## <a name="what-debugger-features-can-i-use"></a>可以使用哪些偵錯工具功能？
 
-To use the full features of the Visual Studio debugger (like hitting breakpoints) when attaching to a process, the executable must exactly match your local source and symbols (that is, the debugger must be able to load the correct [symbol (.pbd) files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). By default, this requires a debug build.
+若要使用 Visual Studio 偵錯工具 （例如，叫用中斷點） 的完整功能時附加至處理序，可執行檔必須完全符合您的本機來源和符號 (也就是偵錯工具必須能夠載入正確[符號 (.pbd) 檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)). 根據預設，這需要偵錯組建。
 
-For remote debugging scenarios, you must have the source code (or a copy of the source code) already open in Visual Studio. The compiled app binaries on the remote machine must come from the same build as on the local machine.
+遠端偵錯的情況下，您必須擁有原始碼 （或一份原始碼） 已在 Visual Studio 中開啟。 在本機電腦上，在遠端電腦上的已編譯的應用程式二進位檔必須來自同一個組建。
 
-In some local debugging scenarios, you can debug in Visual Studio with no access to the source if the correct symbol files are present with the app (by default, this requires a debug build). For more info, see [Specify Symbol and Source Files](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
+在本機偵錯案例，您可以偵錯 Visual Studio 中而無法存取來源如果與應用程式沒有正確的符號檔 （根據預設，這需要偵錯組建）。 如需詳細資訊，請參閱[指定符號和原始程式檔](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。
   
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Troubleshoot attach errors  
- When the debugger attaches to a running process, the process can contain one or more types of code. The code types the debugger can attach to are displayed and selected in the **Select Code Type** dialog box.  
+##  <a name="BKMK_Troubleshoot_attach_errors"></a>疑難排解附加錯誤  
+ 當偵錯工具附加至執行中的處理序時，該處理序可以包含一種或多種程式碼類型。 偵錯工具可附加的程式碼類型會在 [選取程式碼類型]  對話方塊中顯示並供您選取。  
   
- Sometimes, the debugger can successfully attach to one code type, but not to another code type. This might occur if you are trying to attach to a process that is running on a remote computer. The remote computer might have remote debugging components installed for some code types but not for others. It can also occur if you try to attach to two or more processes for direct database debugging. SQL debugging supports attaching to a single process only.  
+ 有時候，偵錯工具可以成功附加至一種程式碼類型，而無法附加至另一種程式碼類型。 如果您嘗試附加至遠端電腦上正在執行的處理序，可能會發生這種狀況。 遠端電腦可能為某些程式碼類型安裝了遠端偵錯元件，但沒有安裝其他程式碼類型的遠端偵錯元件。 如果您嘗試附加至兩個或多個處理序以進行直接的資料庫偵錯，也可能會發生這種狀況。 (SQL 偵錯僅支援附加至單一處理序)。  
   
- If the debugger is able to attach to some, but not all, code types, you will see a message identifying which types failed to attach.  
+ 如果偵錯工具能附加至某些程式碼類型 (而非所有程式碼類型)，您可能會看到識別無法附加之類型的訊息。  
   
- If the debugger successfully attaches to at least one code type, you can proceed to debug the process. You will be able to debug only the code types that were successfully attached. The preceding example message shows that the script code type failed to attach. Therefore, you would not be able to debug script code within the process. The script code in the process would still run, but you would not be able to set breakpoints, view data, or perform other debugging operations in the Script.  
+ 如果偵錯工具成功附加到至少一種程式碼類型，您可以繼續偵錯該處理序。 您只能偵錯已附加成功的程式碼類型。 上述範例訊息顯示該指令碼類型附加失敗。 因此，您無法在處理序內偵錯指令碼。 處理序中的指令碼仍可執行，但是您將無法在指令碼內設定中斷點、檢視資料，或執行其他的偵錯作業。  
   
- If you want more specific information about why the debugger failed to attach to a code type, you can try to reattach to only that code type.  
+ 如果您需要更多相關資訊以了解偵錯工具無法附加至程式碼類型的原因，可以嘗試重新附加至該程式碼。  
   
- **To obtain specific information about why a code type failed to attach**  
+ **若要取得程式碼類型為何無法附加的相關資訊**  
   
-1.  Detach from the process. On the **Debug** menu, click **Detach All**.  
+1.  與處理序中斷連結。 在 [偵錯]  功能表上按一下 [中斷所有連結] 。  
   
-2.  Reattach to the process, selecting only a single code type.  
+2.  重新附加至處理序，並只選取單一程式碼類型。  
   
-    1.  In the **Attach to Process** dialog box, select the process in the **Available Processes** list.  
+    1.  在 [附加至處理序]  對話方塊的 [可使用的處理序]  清單中，選取該處理序。  
   
-    2.  Click **Select**.  
+    2.  按一下 [選取] 。  
   
-    3.  In the **Select Code Type** dialog box, select **Debug these code types** and the code type that failed to attach. Clear any other code.  
+    3.  在 [選取程式碼類型]  對話方塊中，選取 [偵錯這些程式碼類型]  以及之前附加失敗的程式碼類型。 清除任何其他程式碼。  
   
-    4.  Click **OK**. The **Select Code Type** dialog box closes.  
+    4.  按一下 [確定] 。 [選取程式碼類型]  對話框會關閉。  
   
-    5.  In the **Attach to Process** dialog box, click **Attach**.  
+    5.  在 [附加至處理序]  對話方塊中按一下 [附加] 。  
   
-     This time, the attach will fail completely, and you will get a specific error message.  
+     這時，該附加將完全失敗，您將取得特定的錯誤訊息。  
   
-## <a name="see-also"></a>See Also  
- [Debug Multiple Processes](../debugger/debug-multiple-processes.md)   
- [Just-In-Time Debugging](../debugger/just-in-time-debugging-in-visual-studio.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+## <a name="see-also"></a>另請參閱  
+ [偵錯多個處理序](../debugger/debug-multiple-processes.md)   
+ [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
+ [遠端偵錯](../debugger/remote-debugging.md)

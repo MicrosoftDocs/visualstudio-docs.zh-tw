@@ -1,49 +1,51 @@
 ---
-title: "沙箱化方案與伺服器陣列方案之間的差異"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "陣列方案 [Visual Studio 中的 SharePoint 開發]"
-  - "沙箱化方案 [Visual Studio 中的 SharePoint 開發]"
-  - "Visual Studio 中的 SharePoint 開發, 陣列方案"
-  - "Visual Studio 中的 SharePoint 開發, 沙箱化方案"
+title: "差異沙箱化方案與伺服器陣列方案 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, sandboxed solutions
+- sandboxed solutions [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, farm solutions
+- farm solutions [SharePoint development in Visual Studio]
 ms.assetid: 43beb7e7-0cd9-4a8f-bb72-6b1e0cba5be8
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: d82bc012b2be9736b83fc07f7d0a83d354dda002
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 沙箱化方案與伺服器陣列方案之間的差異
-  當編譯 SharePoint 方案時，它會部署至 SharePoint 伺服器，並附加偵錯工具進行偵錯。  用來對方案進行偵錯的方式取決於「沙箱化方案」屬性的設定：沙箱化方案或陣列方案。  
+# <a name="differences-between-sandboxed-and-farm-solutions"></a>沙箱化方案與伺服器陣列方案之間的差異
+  當您編譯 SharePoint 方案時，將部署至 SharePoint 伺服器，並偵錯工具附加至偵錯。 沙箱化方案屬性的設定取決於用於方案進行偵錯的程序： 沙箱化方案或伺服器陣列方案。  
   
  如需詳細資訊，請參閱[沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)。  
   
-## 陣列方案  
- 陣列方案在 IIS 背景工作處理序 \(W3WP.exe\) 中進行管理，會執行可影響整個陣列的程式碼。  當偵錯「沙箱化方案」屬性設定為「陣列方案」的 SharePoint 專案時，會在 SharePoint 擷取或部署功能之前，首先回收系統的 IIS 應用程式集區，以便釋放由 IIS 背景工作處理封鎖的任何檔案。  只會回收提供 SharePoint 專案網站 URL 的 IIS 應用程式集區。  
+## <a name="farm-solutions"></a>伺服器陣列方案  
+ 伺服器陣列方案，其裝載在 IIS 工作者處理序 (W3WP.exe) 中，執行程式碼可能會影響到整部伺服器陣列。 當您偵錯 SharePoint 專案的沙箱化方案屬性設定為 「 伺服器陣列解決方案 」 時，系統的 IIS 應用程式集區回收之前 SharePoint 中撤銷，或部署功能，以釋出鎖定 IIS 工作者處理序的任何檔案。 只有 IIS 應用程式集區處理 SharePoint 專案的網站 URL 就會回收。  
   
-## 沙箱化方案  
- 沙箱化方案在 SharePoint 使用者程式碼方案背景工作處理序 \(SPUCWorkerProcess.exe\) 中進行管理，執行只影響方案網站集合的程式碼。  因為沙箱化方案不會在 IIS 背景工作處理序中執行，所以無需重新啟動 IIS 應用程式集區或 IIS 伺服器。  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會將偵錯工具附加至 SPUCWorkerProcess 處理序，該處理序可由 SharePoint 中的 SPUserCodeV4 服務自動觸發和控制。  SPUCWorkerProcess 處理序不需要回收即可載入方案的最新版本。  
+## <a name="sandboxed-solutions"></a>沙箱化方案  
+ 沙箱化方案，其裝載在 SharePoint 使用者程式碼解決方案背景工作處理序 (SPUCWorkerProcess.exe) 中，執行只會影響方案的網站集合的程式碼。 原因是 IIS 背景工作處理序中未執行沙箱化方案，則必須重新啟動 IIS 應用程式集區都 IIS 伺服器。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將偵錯工具附加至 SPUCWorkerProcess 程序，在 SharePoint 中的 SPUserCodeV4 服務都會自動觸發和控制項。 您不需要 SPUCWorkerProcess 處理序回收載入最新版的方案。  
   
-## 其中一種方案  
- 使用其中一種方案，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會將偵錯工具附加至瀏覽器，以啟用用戶端指令碼偵錯。  為了達成這個目的，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會使用指令碼偵錯引擎。  若要啟用指令碼偵錯，您必須在收到提示時變更預設瀏覽器設定。  
+## <a name="either-type-of-solution"></a>任一種方案類型  
+ 使用任一個解決方案類型，[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]也將偵錯工具附加至瀏覽器以啟用用戶端指令碼偵錯。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用指令碼偵錯引擎會針對此目的。 若要啟用指令碼偵錯，您必須變更預設瀏覽器設定，當系統提示您。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 只會將偵錯工具附加至正在執行目前網站的 W3WP 或 SPUCWorkerProcess 處理序。  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 也會附加 Managed COM Plus 和工作流程偵錯引擎。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]附加偵錯工具，才能執行目前的站台的 W3WP 或 SPUCWorkerProcess 處理序。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]也會將附加 managed COM 加號和工作流程偵錯引擎。  
   
-## 請參閱  
- [對 SharePoint 方案進行偵錯](../sharepoint/debugging-sharepoint-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [偵錯 SharePoint 方案](../sharepoint/debugging-sharepoint-solutions.md)   
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)   
  [沙箱化方案考量](../sharepoint/sandboxed-solution-considerations.md)  
   

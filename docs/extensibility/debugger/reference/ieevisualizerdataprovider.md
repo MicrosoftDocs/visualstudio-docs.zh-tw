@@ -1,63 +1,63 @@
 ---
-title: "IEEVisualizerDataProvider | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEEVisualizerDataProvider"
-helpviewer_keywords: 
-  - "IEEVisualizerDataProvider 介面"
+title: "IEEVisualizerDataProvider |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEEVisualizerDataProvider
+helpviewer_keywords: IEEVisualizerDataProvider interface
 ms.assetid: 5fdfe6e3-b94e-4edb-acc5-41d8773d8ca5
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9ffe7e33b4652c0f0d3bd506e28d14c5b0949983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEEVisualizerDataProvider
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
->  在 Visual Studio 2015，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱 [CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 這個介面會提供變更物件的值類型的視覺化檢視的能力。  
+ 這個介面會提供變更的物件值，透過類型視覺化檢視的能力。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IEEVisualizerDataProvider : IUnknown  
 ```  
   
-## 實作者注意事項  
- 運算式評估工具會實作這個介面以支援透過型別視覺化檢視的屬性物件上修改資料。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 運算式評估工具會實作這個介面來支援在類型視覺化檢視透過屬性物件上修改資料。  
   
-## 呼叫端資訊  
- 這個介面會用於建立 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 物件，用來呼叫 [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)。 如需詳細資訊，請參閱 [視覺化及檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 這個介面會用於建立[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)物件，用來呼叫[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)。 請參閱[Visualizing 和檢視資料](../../../extensibility/debugger/visualizing-and-viewing-data.md)如需詳細資訊。  
   
-## 依照 Vtable 順序的方法  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
   
-|方法|描述|  
-|--------|--------|  
-|[CanSetObjectForVisualizer](../Topic/IEEVisualizerDataProvider::CanSetObjectForVisualizer.md)|判斷是否可以更新物件 （和之後，其值），代表這個視覺化檢視。|  
-|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|這個視覺化檢視的強制重新評估的物件。|  
-|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|取得這個視覺化檢視 （不進行評估完成） 的現有物件。|  
-|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|這個視覺化檢視，藉此變更視覺化檢視所顯示的值會更新物件。|  
+|方法|說明|  
+|------------|-----------------|  
+|[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|判斷是否可以更新物件 （和接下來，其值），代表這個視覺化檢視。|  
+|[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|強制重新評估的物件為這個視覺化檢視。|  
+|[GetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getobjectforvisualizer.md)|（沒有評估執行） 這個視覺化檢視中取得現有物件。|  
+|[SetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-setobjectforvisualizer.md)|這個視覺化檢視，藉此變更視覺化檢視所顯示的值，更新物件。|  
   
-## 備註  
- 視覺化檢視服務 \(所表示的 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 介面，並傳回 [CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)\) 保留參考物件實作 `IEEVisualizerDataProvider` 介面。 如此一來， `IEEVisualizerDataProvider` 不應該實作的相同物件上實作介面 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 如果該物件會維護的參考 `IEEVisualizerService` 物件︰ 產生循環參考，以及當物件終結時，就會發生死結。 建議的方法是實作 `IEEVisualizerDataProvider` 上的個別物件的 `IDebugProperty2` 物件而不需呼叫委派 `IUnknown::AddRef` 在其上。  
+## <a name="remarks"></a>備註  
+ 視覺化檢視服務 (所表示的[IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)介面，並傳回[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) 會保留參考物件實作`IEEVisualizerDataProvider`介面. 如此一來，`IEEVisualizerDataProvider`不應該實作在相同物件上實作介面[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)如果該物件會維護的參考`IEEVisualizerService`物件： 循環參考結果和當物件被終結時，就會發生死結。 建議的方法是實作`IEEVisualizerDataProvider`上的個別物件`IDebugProperty2`物件而不會呼叫委派`IUnknown::AddRef`在其上。  
   
-## 需求  
- 標頭︰ ee.h  
+## <a name="requirements"></a>需求  
+ 標頭： ee.h  
   
- 命名空間 ︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件 ︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)   

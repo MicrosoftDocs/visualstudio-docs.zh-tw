@@ -1,56 +1,58 @@
 ---
-title: "如何：允許程式碼在具有限制使用權限的文件背後執行"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "程式碼 [Visual Studio 中的 Office 程式開發], 在限制的文件背後執行"
-  - "文件 [Visual Studio 中的 Office 程式開發], 受限制的使用權限"
-  - "資訊版權管理 [Visual Studio 中的 Office 程式開發]"
-  - "IRM [Visual Studio 中的 Office 程式開發]"
-  - "Office 文件 [Visual Studio 中的 Office 程式開發], 受限制的使用權限"
-  - "使用權限 [Visual Studio 中的 Office 程式開發]"
+title: "如何： 允許程式碼在具有限制權限的文件背後執行 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Information Rights Management [Office development in Visual Studio]
+- permissions [Office development in Visual Studio]
+- IRM [Office development in Visual Studio]
+- code [Office development in Visual Studio], running behind restricted documents
+- documents [Office development in Visual Studio], restricted permissions
+- Office documents [Office development in Visual Studio, restricted permissions
 ms.assetid: d037eae5-cf83-4be0-85ba-05e9f7d570e1
-caps.latest.revision: 27
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 1d5ab02ea2eb2d34a82607b8f7fd4fbf3f02dd76
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：允許程式碼在具有限制使用權限的文件背後執行
-  您可以使用 Microsoft Office 的資訊版權管理 \(IRM\) 功能，限制文件或活頁簿的使用權限。  預設不允許執行受限制之 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿後置的程式碼。  您可以變更這個預設值，讓 Managed 程式碼擴充可以存取物件模型，而方案也能夠執行。  
+# <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允許程式碼在具有限制使用權限的文件背後執行
+  若要限制的文件或活頁簿的權限，您可以使用 Microsoft Office 的資訊版權管理 (IRM) 功能。 根據預設，受限制的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿背後的程式碼不允許執行。 您可以變更預設值，使您的 managed 程式碼擴充功能可以存取的物件模型，您的方案可以。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 您必須是文件或活頁簿的作者或者具有「完全控制」存取權限，才可以變更使用權限設定。  
+ 您必須是文件或活頁簿的作者，或具有完整控制存取權可以變更權限設定。  
   
-### 若要允許程式碼以限制的權限在文件背後執行  
+### <a name="to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>若要允許程式碼以有限權限的文件背後執行  
   
-1.  在 Word 或 Excel 中開啟文件或活頁簿。  
+1.  在 Word 或 Excel 中開啟的文件或活頁簿。  
   
-2.  按一下索引標籤， \[**檔案**\] 指向 \[**準備**\]，指向 \[**限制使用權限**\]，然後按一下 \[**受限制的存取**\]。  
+2.  按一下**檔案**索引標籤上，指向 **準備**，指向 **限制權限**，然後按一下 **限制存取**。  
   
     > [!NOTE]  
-    >  第一次使用時，會提示您安裝 Windows Rights Management 用戶端。  而在安裝用戶端之後，可能就需要重複這些步驟。  
+    >  在第一次使用時，系統會提示您安裝 Windows 的 Rights Management 用戶端。 安裝用戶端之後，您可能需要重複步驟。  
   
-3.  選取 \[**使用權限**\] 對話方塊中的 \[**限制此文件的權限**\]，然後按一下 \[**更多選項**\]。  
+3.  在**權限**對話方塊中，選取**限制此文件的權限**，然後按一下 **更多選項**。  
   
-4.  在 \[**使用者的其他權限**\] 之下，選取 \[**以程式存取內容**\]。  
+4.  在下**其他使用者的權限**，選取**以程式設計方式存取內容**。  
   
- Word 或 Excel 就會允許以程式設計方式存取物件模型。  
+ Word 或 Excel 會允許以程式設計方式存取物件模型。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
- [文件層級方案的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
+ [在文件層級方案中的文件保護](../vsto/document-protection-in-document-level-solutions.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [保護 Office 方案](../vsto/securing-office-solutions.md)   

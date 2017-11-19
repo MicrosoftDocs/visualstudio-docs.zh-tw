@@ -1,44 +1,45 @@
 ---
-title: "字串長度限制 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "原始檔控制外掛程式，字串長度限制"
+title: "字串長度限制 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control plug-ins, restrictions on string lengths
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 302d36a968561f9823a5d36177e21c9698fc9e2b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 字串長度限制
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-原始檔控制外掛程式 API 限制各種函式中使用的字串的長度。  
+# <a name="restrictions-on-string-lengths"></a>字串長度限制
+原始檔控制外掛程式 API 限制使用不同的函式中之字串的長度。  
   
-## 字串長度值  
+## <a name="string-length-values"></a>字串長度值  
   
 |常數|值|  
-|--------|-------|  
+|--------------|-----------|  
 |`SCC_NAME_LEN`|31|  
 |`SCC_AUXLABEL_LEN`|31|  
 |`SCC_USER_LEN`|31|  
 |`SCC_PRJPATH_LEN`|300|  
   
 > [!NOTE]
->  長度不包括結尾的 `null`。 其他常數"\_SIZE"後置詞，而不是 「 \_LEN 」 就是包含空間終止 `null`。  
+>  長度不包括結尾的`null`。 其他以 「 _SIZE"尾碼而不是"_LEN"常數就是包含空間終止`null`。  
   
 |常數|值|  
-|--------|-------|  
-|SCC\_NAME\_SIZE|32|  
-|SCC\_AUXLABEL\_SIZE|32|  
-|SCC\_USER\_SIZE|32|  
-|SCC\_PRJPATH\_SIZE|301|  
+|--------------|-----------|  
+|SCC_NAME_SIZE|32|  
+|SCC_AUXLABEL_SIZE|32|  
+|SCC_USER_SIZE|32|  
+|SCC_PRJPATH_SIZE|301|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../extensibility/source-control-plug-ins.md)

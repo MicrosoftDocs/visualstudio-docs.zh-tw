@@ -1,107 +1,81 @@
 ---
-title: "將 Windows Form 控制項繫結至 Visual Studio 中的資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Windows Form], 資料來源"
-  - "資料 [Windows Form], 顯示"
-  - "資料來源, 顯示資料"
-  - "顯示表單上的資料"
-  - "顯示資料, Windows Form"
-  - "表單, 顯示資料"
-  - "Windows Form, 資料繫結"
-  - "Windows Form, 顯示資料"
+title: "Windows Form 控制項繫結至 Visual Studio 中的資料 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/03/2017
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Windows Forms], data sources
+- Windows Forms, data binding
+- Windows Forms, displaying data
+- displaying data on forms
+- forms, displaying data
+- data sources, displaying data
+- displaying data, Windows Forms
+- data [Windows Forms], displaying
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
-caps.latest.revision: 37
-caps.handback.revision: 31
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "37"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# 將 Windows Form 控制項繫結至 Visual Studio 中的資料
-您可以透過將資料繫結至 Windows Form，對應用程式的使用者顯示資料。  若要建立這些資料繫結控制項，您可以從 \[**資料來源**\] 視窗將項目拖曳至 Visual Studio 中的 Windows Form 設計工具。  本主題描述建立資料繫結 Windows Form 應用程式相關的一些最常用工作、工具和類別。  
+# <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Form 控制項繫結至 Visual Studio 中的資料
+您可以加入 Windows Form 資料繫結，您的應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至 Visual Studio 中的 Windows Form 設計工具。
   
- 如需如何在 Visual Studio 中建立資料繫結控制項的一般資訊，請參閱[將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  如需 Windows Form 資料繫結的詳細資訊，請參閱 [Windows Form 資料繫結](../Topic/Windows%20Forms%20Data%20Binding.md)。  
+![資料來源拖曳作業](../data-tools/media/raddata-data-source-drag-operation.png "raddata 資料來源拖曳作業")
+
+您拖曳項目之前，您可以設定您想要繫結至控制項的類型。 根據您選擇本身，或個別的資料行的資料表會出現不同的值。  您也可以設定自訂值。 [詳細資料] 資料表，表示每個資料行的繫結至個別的控制項。  
+
+![資料來源繫結至 DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "DataGridView raddata 繫結資料來源")  
   
-## 與在 Windows 應用程式之表單上顯示資料有關的工作  
- 下表列出與 Windows 應用程式的表單上顯示資料相關的一般工作。  
+## <a name="bindingsource-and-bindingnavigator-controls"></a>BindingSource 和 BindingNavigator 控制項
+<xref:System.Windows.Forms.BindingSource> 元件有兩種用途。 首先，它會提供一個抽象層時將控制項繫結至資料。 表單上的控制項繫結至<xref:System.Windows.Forms.BindingSource>元件而不是直接到資料來源。 第二，它可以管理物件的集合。 將類型加入<xref:System.Windows.Forms.BindingSource>建立該類型的清單。  
   
-|工作|詳細資訊|  
-|--------|----------|  
-|建立資料繫結控制項。<br /><br /> 將現有控制項繫結至資料。|[如何：將 Windows Form 控制項繫結至資料](../data-tools/bind-windows-forms-controls-to-data.md)|  
-|建立可顯示父子關係中相關資料的控制項：當使用者選取某個控制項中的資料記錄時，另一個控制項會顯示選取之記錄的相關資料。|[如何：在 Windows Form 應用程式中顯示相關的資料](../Topic/How%20to:%20Display%20Related%20Data%20in%20a%20Windows%20Forms%20Application.md)|  
-|建立「*查閱資料表*」\(Lookup Table\)。  查閱資料表是根據另一個資料表中的外部索引鍵欄位值，顯示某個資料表的資訊。|[如何：在 Windows Form 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-windows-forms-applications.md)|  
-|將控制項顯示資料的方式格式化。|[Formatting and Advanced Binding Dialog Box](http://msdn.microsoft.com/zh-tw/42638120-9e6f-436b-985f-4036664230fd)|  
-|變更 \[**資料來源**\] 視窗中智慧型標題功能的行為。|[如何：自訂 Visual Studio 為資料繫結的控制項建立標題的方式](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
-|加入執行參數型查詢的控制項。|[如何：將參數型查詢加入至 Windows Form 應用程式](../Topic/How%20to:%20Add%20a%20Parameterized%20Query%20to%20a%20Windows%20Forms%20Application.md)|  
-|設定資料行來使用影像控制，以顯示資料庫中的影像。|[如何：從資料庫將控制項繫結至圖片](../data-tools/bind-controls-to-pictures-from-a-database.md)|  
-|篩選或排序資料集中的資料。|[如何：在 Windows Form 應用程式中篩選和排序資料](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
+如需有關<xref:System.Windows.Forms.BindingSource>元件，請參閱：  
   
- 下列主題提供將 Windows Form 控制項繫結至資料的範例。  
+-   [BindingSource 元件](/dotnet/framework/winforms/controls/bindingsource-component)  
   
- [逐步解說：顯示 Windows Form 上的資料](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)  
- 提供有關查詢資料庫中的資料以及將資料顯示在 Windows Form 上的逐步細節。  
+-   [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
- [逐步解說：顯示 Windows Form 上的相關資料](../Topic/Walkthrough:%20Displaying%20Related%20Data%20on%20a%20Windows%20Form.md)  
- 提供有關顯示兩個關聯資料表中的資料以及將資料顯示在 Windows Form 上的逐步細節。  
+-   [BindingSource 元件架構](/dotnet/framework/winforms/controls/bindingsource-component-architecture)  
   
- [逐步解說：建立 Windows Form 以搜尋資料](../data-tools/create-a-windows-form-to-search-data.md)  
- 提供逐步詳細資訊，說明如何建立 Windows Form，根據使用者輸入來執行資料庫搜尋。  
+[BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)提供使用者介面來瀏覽 Windows 應用程式所顯示的資料。
+
+## <a name="bind-to-data-in-a-datagridview-control"></a>繫結至 DataGridView 控制項中的資料  
+如[DataGridView 控制項](/dotnet/framework/winforms/controls/datagridview-control-overview-windows-forms)，整個資料表繫結至該單一的控制項。 當您將 DataGridView 拖曳至表單時，工具帶狀用於巡覽資料錄 (<xref:System.Windows.Forms.BindingNavigator>) 也會出現。 A[資料集](../data-tools/dataset-tools-in-visual-studio.md)， [TableAdapter](../data-tools/create-and-configure-tableadapters.md)， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>出現在元件匣中。 在下圖中，因為客戶資料表 Orders 資料表的關聯性，也會加入 TableAdapterManager。 這些變數是所有宣告在自動產生程式碼為表單類別中的私用成員。 自動產生的程式碼，以便填滿 DataGridView 位於 form_load 事件處理常式。 儲存更新的資料庫資料的程式碼位於 BindingNavigator 儲存事件處理常式。 您可以移動，或視需要修改這個程式碼。  
   
- [逐步解說：在 Windows Form 應用程式中建立查閱資料表](../Topic/Walkthrough:%20Creating%20a%20Lookup%20Table%20in%20a%20Windows%20Forms%20Application.md)  
- 提供逐步詳細資訊，說明根據某一個資料表中所選的資料，來顯示另一個資料表中的資料。  
+![GridView BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView BindingNavigator")  
   
- [逐步解說：在 Windows Form 之間傳遞資料](../data-tools/pass-data-between-forms.md)  
- 提供逐步詳細資訊，說明如何在應用程式的表單之間傳遞值。  
+您可以自訂和行為的 DataGridView BindingNavigator 上的每個右角的智慧標籤，即可：  
   
- [逐步解說：建立支援簡單資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)  
- 提供有關如何建立可以在 \[**資料來源**\] 視窗中使用之自訂控制項的逐步詳細資料。  
+![DataGridView 和繫結導覽智慧標籤](../data-tools/media/raddata-datagridview-and-binding-navigator-smart-tags.png "raddata DataGridView 和繫結導覽智慧標籤")  
   
- [逐步解說：建立支援複雜資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)  
- 提供有關如何建立可以在 \[**資料來源**\] 視窗中使用之自訂控制項的逐步詳細資料。  
+如果控制項應用程式需求不是可從**資料來源**視窗中，您可以將控制項。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
- [逐步解說：建立支援查閱資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)  
- 提供有關如何建立可以在 \[**資料來源**\] 視窗中使用之自訂控制項的逐步詳細資料。  
+您也可以拖曳項目從**資料來源**視窗拖曳至表單，以將控制項繫結至資料上的控制項。 已繫結至資料的控制項已的資料繫結重設為最近拖曳至其本身的項目。 若要有效置放目標，控制項必須是可顯示基礎資料類型的項目拖曳到從**資料來源**視窗。 例如，不能將具有資料類型的項目拖曳<xref:System.DateTime>到<xref:System.Windows.Forms.CheckBox>，因為<xref:System.Windows.Forms.CheckBox>不是可顯示日期。  
   
-## 資料智慧標籤  
- 許多控制項有專門處理資料的智慧標籤。  特定控制項加入至表單時，智慧標籤上會有一組與資料相關的可能動作。  
+## <a name="bind-to-data-in-individual-controls"></a>繫結至個別控制項中的資料  
+當您將資料來源繫結至 [詳細資料] 會在資料集中的每個資料行繫結至個別的控制項。  
   
-## BindingSource 元件  
- <xref:System.Windows.Forms.BindingSource> 元件有兩個用途。  第一，將表單上的控制項繫結至資料時，它提供抽象層。  表單上的控制項會繫結至 <xref:System.Windows.Forms.BindingSource> 元件 \(而不是直接繫結至資料來源\)。  
+![資料來源繫結詳細資料](../data-tools/media/raddata-bind-data-source-to-details.png "raddata 繫結資料來源詳細資料")  
   
- 第二，它可以管理物件的集合。  將某個型別加入至 <xref:System.Windows.Forms.BindingSource>，會建立該型別清單。  
+> [!IMPORTANT]
+> 請注意，在上圖中，您將從 Customers 資料表中，不是從 「 訂單 」 資料表中的 [訂單] 屬性。 繫結至 Customer.Orders 屬性，在 DataGridView 中進行巡覽命令會立即反映在詳細資料控制項。 如果您拖曳 Orders 資料表中，控制項仍然會繫結至資料集，但沒有它們就不會同步 DataGridView。  
   
- 如需 <xref:System.Windows.Forms.BindingSource> 元件的詳細資訊，請參閱：  
+下圖顯示預設資料繫結控制項的 Customers 資料表中的 Orders 屬性繫結至 [詳細資料] 之後才加入至表單中**資料來源**視窗。  
   
--   [BindingSource 元件](../Topic/BindingSource%20Component.md)  
+![Orders 資料表繫結至詳細資料](../data-tools/media/raddata-orders-table-bound-to-details.png "raddata Orders 資料表繫結至詳細資料")  
   
--   [BindingSource 元件概觀](../Topic/BindingSource%20Component%20Overview.md)  
+請注意每個控制項具有智慧標籤。 這個標記可讓該控制項只會套用的自訂項目。
   
--   [BindingSource 元件架構](../Topic/BindingSource%20Component%20Architecture.md)  
-  
-## BindingNavigator 控制項  
- 這個元件提供巡覽 Windows 應用程式所顯示之資料的使用者介面。  如需詳細資訊，請參閱[BindingNavigator 控制項](../Topic/BindingNavigator%20Control%20\(Windows%20Forms\).md)。  
-  
-## DataGridView 控制項  
- <xref:System.Windows.Forms.DataGridView> 控制項讓您顯示和編輯來自各種不同資料來源的表格式資料。  您可以使用 <xref:System.Windows.Forms.DataGridView.DataSource%2A> 屬性將資料繫結至 <xref:System.Windows.Forms.DataGridView>。  如需詳細資訊，請參閱[DataGridView 控制項概觀](../Topic/DataGridView%20Control%20Overview%20\(Windows%20Forms\).md)。  
-  
-## 請參閱  
- [資料逐步解說](../Topic/Data%20Walkthroughs.md)   
- [資料來源視窗](../Topic/Data%20Sources%20Window.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [逐步解說：顯示 Windows Form 上的資料](../data-tools/walkthrough-displaying-data-on-a-windows-form.md)   
- [建立和編輯具類型資料集](../data-tools/creating-and-editing-typed-datasets.md)   
- [資料來源概觀](../data-tools/add-new-data-sources.md)   
- [逐步解說：建立支援簡單資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)   
- [逐步解說：建立支援複雜資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)   
- [逐步解說：建立支援查閱資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+## <a name="see-also"></a>請參閱
+[將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+[在 Windows Form (.NET Framework) 中的資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)

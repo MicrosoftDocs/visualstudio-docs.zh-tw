@@ -1,56 +1,58 @@
 ---
-title: "建立 SharePoint 的網站資料行、內容類型和清單"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.ListDesigner.ContentTypeSetting"
-  - "VS.SharePointTools.ContentTypeDesigner.CommonPropertiesPage"
-  - "VS.SharePointTools.ListDesigner.CreatingLists"
-  - "VS.SharePointTools.ListDesigner.ListPage"
-  - "VS.SharePointTools.ListDesigner.ViewPage"
-  - "VS.SharePointTools.ListDesigner.CommonPropertiesPage"
-  - "VS.SharePointTools.ContentTypeDesigner.ColumnsPage"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "建立 SharePoint 的網站資料行、 內容類型和清單 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.ListDesigner.ContentTypeSetting
+- VS.SharePointTools.ContentTypeDesigner.CommonPropertiesPage
+- VS.SharePointTools.ListDesigner.CreatingLists
+- VS.SharePointTools.ListDesigner.ListPage
+- VS.SharePointTools.ListDesigner.ViewPage
+- VS.SharePointTools.ListDesigner.CommonPropertiesPage
+- VS.SharePointTools.ContentTypeDesigner.ColumnsPage
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 9ceed263-3aec-41dc-8708-63cb37a08fa8
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a5f111efa5c2276adcc76fdf13cdf5a805929c63
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 建立 SharePoint 的網站資料行、內容類型和清單
-  Visual Studio 為許多不同的基本 SharePoint 項目提供專案項目範本，包含 *清單* 和 *內容類型*，兩者都可以合併網站欄 \(或 *欄位*\)。  內容類型和清單的新設計工具讓您可以容易的建立這些項目。  
+# <a name="creating-site-columns-content-types-and-lists-for-sharepoint"></a>建立 SharePoint 的網站資料行、內容類型和清單
+  Visual Studio 為許多不同的基本 SharePoint 項目，包括提供專案項目範本*列出*和*內容類型*，兩者都可以合併網站資料行 (或*欄位*)。 內容類型和清單的新設計工具讓您就以往更容易建立這些項目。  
   
-## 網站資料行  
- 網站欄是您可以加入至 SharePoint 專案的其中一個最基本項目。  網站資料行表示資料的型別，例如電話號碼、註解、或是連絡人清單中連絡人的居住縣市。  
+## <a name="site-columns"></a>網站資料行  
+ 網站資料行是可以加入至 SharePoint 專案的其中一種最基本的項目。 網站資料行代表資料類型，例如電話號碼、註解，或是連絡人清單中連絡人居住的城市。  
   
- 新網站欄專案項目範本讓您比在舊版 Visual Studio 中更容易的建立網站欄。  在建立新的網站資料行之後，您可以修改在網站欄 Elements.xml 檔案中的 XML，以包含您想要的資訊，例如它的顯示名稱、資料型別的資訊和您想要在 SharePoint 中顯示的群組。  如需網站欄的詳細資訊，請參閱 [資料欄的簡介](http://go.microsoft.com/fwlink/?LinkId=224996)。  
+ 新的網站資料行專案項目範本可讓您比在舊版 Visual Studio 中更容易建立網站資料行。 在建立新的網站資料行之後，您可以修改在網站資料行的 Elements.xml 檔案中的 XML，以包含您想要的資訊，例如它的顯示名稱、資料類型，以及網站資料行在 SharePoint 中顯示時所屬的群組。 如需網站資料行的詳細資訊，請參閱[Introduction to 資料行](http://go.microsoft.com/fwlink/?LinkId=224996)。  
   
-## 內容類型和清單  
- 內容類型和清單是 SharePoint 中經常使用的項目。  
+## <a name="content-types-and-lists"></a>內容類型和清單  
+ 內容類型和清單是 SharePoint 中最常使用的項目。  
   
- 內容型別在 SharePoint 清單或文件庫中定義中繼資料、工作流程和項目分類的行為。  例如，您可以為連絡人清單或工作清單的資訊建立一個內容型別。  連絡人內容型別可能包含資料行 \(例如名稱、電子郵件、電話號碼和位址\)。  您在網站層級定義的內容類型與任何網站的清單或文件庫是沒有相依性的。  您可以在 SharePoint 網站上使用相同的內容類型搭配不同的清單或文件庫。  您也可以使用幾個內容類型搭配相同的清單或文件庫。  
+ 內容類型負責定義 SharePoint 清單或文件庫中項目分類的中繼資料、工作流程和行為。 例如，您可以為連絡人清單或工作清單中的資訊建立內容類型。 連絡人內容類型可能包含像是名稱、電子郵件、電話號碼和位址等資料行。 您在網站層級定義的內容類型與網站中的任何清單或文件庫並不相關。 您可以對 SharePoint 網站上不同的清單或文件庫使用相同的內容類型。 您也可以在相同的清單或文件庫上使用數種內容類型。  
   
- 清單是您在 SharePoint 中可以與其他人共用的資訊集合。  清單由包含資料的資料行與欄所組成。  清單的範例包括：工作清單、連絡人清單，以及公告清單。  
+ 清單是指 SharePoint 中您可與其他人共用的資訊集合。 清單是由包含資料的數列資料行所組成。 清單的範例包括：工作清單、連絡人清單以及公告清單。  
   
- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的新內容類型和清單設計工具，讓建立網站內容類型和清單比在舊版 Visual Studio 中更簡單而直覺。  UI 可讓您以視覺化及熟悉的方式建構內容類型和清單，並且讓您可以在清單排序和分組資料，以及使用群組標頭。  如需內容類型的詳細資訊，請參閱 [內容類型](http://go.microsoft.com/fwlink/?LinkId=224997)。  如需清單的詳細資訊，請參閱 [清單形式](http://go.microsoft.com/fwlink/?LinkId=224998) 和 [清單檢視](http://go.microsoft.com/fwlink/?LinkId=224999)。  
+ [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中新的內容類型和清單設計工具，讓建立網站內容類型和清單的工作比在舊版 Visual Studio 中更簡單而直覺。 UI 可讓您以視覺化且熟悉的方式建構內容類型和清單，並且讓您排序和分組清單中的資料，以及使用群組標頭。 如需有關內容類型的詳細資訊，請參閱[內容型別](http://go.microsoft.com/fwlink/?LinkId=224997)。 如需清單的詳細資訊，請參閱[清單表單](http://go.microsoft.com/fwlink/?LinkId=224998)和[清單檢視](http://go.microsoft.com/fwlink/?LinkId=224999)。  
   
-## 相關主題  
+## <a name="related-topics"></a>相關主題  
   
 |標題|說明|  
-|--------|--------|  
-|[逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|示範如何建立用於自訂內容類型的網站欄。  這個內容類型之後可在自訂清單中使用。|  
+|-----------|-----------------|  
+|[逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|示範如何建立用於自訂內容類型的網站資料行。 這個內容類型之後可在自訂清單中使用。|  
   
-## 請參閱  
- [開始在 SharePoint 2010 開發](http://go.microsoft.com/fwlink/?LinkId=225000)  
+## <a name="see-also"></a>另請參閱  
+ [SharePoint 2010 上開發快速入門](http://go.microsoft.com/fwlink/?LinkId=225000)  
   
   

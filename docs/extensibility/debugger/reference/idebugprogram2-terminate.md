@@ -1,48 +1,48 @@
 ---
-title: "IDebugProgram2::Terminate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Terminate"
-helpviewer_keywords: 
-  - "IDebugProgram2::Terminate"
+title: "IDebugProgram2::Terminate |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Terminate
+helpviewer_keywords: IDebugProgram2::Terminate
 ms.assetid: 4d3127d3-b1e9-4b28-ac22-2f2eea255f86
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 16f9e718eaebbb1ab82ea96c08661622ef7e1cd1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Terminate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 結束程式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Terminate(   
-   void   
+```cpp  
+HRESULT Terminate(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Terminate();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 如果可能的話，程式將而終止或從處理序 ； 卸載 否則，偵錯引擎 \(DE\) 會執行任何必要的清除。  
+## <a name="remarks"></a>備註  
+ 程式可能的話，會終止並從處理序; 卸載否則，偵錯引擎 (DE) 會執行任何必要的清除作業。  
   
- 這個方法或[結束](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) IDE 時，通常是在回應停止所有的偵錯的使用者會呼叫方法。  這個方法的實作應該在理想的情況下，終止處理序中的程式。  如果不這麼做，DE 應該防止程式執行更多進行這項工作並進行任何必要的清除。  如果`IDebugProcess2::Terminate`方法受呼叫時 ide、 有時之後，將會終止整個處理序`IDebugProgram2::Terminate` ，會呼叫方法。  
+ 這個方法或[Terminate](../../../extensibility/debugger/reference/idebugprocess2-terminate.md) IDE，通常是在回應停止偵錯的所有使用者所呼叫方法。 這個方法的實作應該在理想情況下，終止處理序內的程式。 如果不可行，DE 應該阻止程式執行此程序更多，並執行任何必要的清除。 如果`IDebugProcess2::Terminate`IDE 所呼叫方法，整個程序將會終止一段時間之後`IDebugProgram2::Terminate`方法呼叫。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [結束](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)
+ [終止](../../../extensibility/debugger/reference/idebugprocess2-terminate.md)

@@ -1,76 +1,77 @@
 ---
-title: "Extending SharePoint Project Items"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "project items [SharePoint development in Visual Studio], extending"
-  - "SharePoint project items, extending"
-  - "SharePoint development in Visual Studio, extending project items"
+title: "擴充 SharePoint 專案項目 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- project items [SharePoint development in Visual Studio], extending
+- SharePoint project items, extending
+- SharePoint development in Visual Studio, extending project items
 ms.assetid: f09f6664-196d-46d6-819f-3c6500f23536
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8f17e43e2fe98e36939c91b37e72b185cb14d09e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Extending SharePoint Project Items
-  如果您要將功能加入至 Visual Studio 中已安裝的 SharePoint 專案項目類型時，請建立專案項目擴充功能。  例如，您可以在 Visual Studio 中建立內建 \[**事件接收器**\] 或 \[**清單定義**\] 專案項目的擴充功能，或您可以建立自訂專案項目類型的擴充功能。  您也可以建立所有類型 SharePoint 專案項目的擴充功能。  
+# <a name="extending-sharepoint-project-items"></a>擴充 SharePoint 專案項目
+  建立專案項目擴充功能，當您想要將功能加入至已安裝 Visual Studio 中的 SharePoint 專案項目的型別。 例如，您可以建立擴充功能為內建**事件接收器**或**清單定義**專案項目在 Visual Studio 中，或者您可以建立自訂專案項目類型的擴充功能。 您也可以建立適用於所有類型的 SharePoint 專案項目延伸模組。  
   
-## 擴充 SharePoint 專案項目的工作  
- 若要擴充專案項目，請組建 Visual Studio 擴充功能組件，以實作 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 介面。  如需詳細資訊，請參閱[How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+## <a name="tasks-for-extending-sharepoint-project-items"></a>擴充 SharePoint 專案項目工作  
+ 若要擴充的專案項目，建置 Visual Studio 延伸模組組件可實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>介面。 如需詳細資訊，請參閱[How to： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
- 當您擴充專案項目時，您也可以將下列功能加入至專案項目：  
+ 當您擴充專案項目時，您也可以加入下列功能的專案項目：  
   
--   將捷徑功能表項目加入至專案項目。  功能表項目會在您開啟專案項目的捷徑功能表上 \[**方案總管**\]。  您開啟捷徑功能表中以滑鼠右鍵按一下專案項目或藉由選取然後選擇 SHIFT \+ F10 鍵。  如需詳細資訊，請參閱[How to: Add a Shortcut Menu Item to a SharePoint Project Item Extension](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
+-   將捷徑功能表項目加入至專案項目。 當您開啟專案項目中的捷徑功能表，出現的功能表項目**方案總管 中**。 以滑鼠右鍵按一下專案項目開啟捷徑功能表，或選擇它，然後選擇 Shift + F10 鍵。 如需詳細資訊，請參閱[How to： 將捷徑功能表項目加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)。  
   
--   將自訂屬性加入至專案項目。  當您在 \[ \[**方案總管**\] 時，專案項目的屬性會出現在 \[**屬性**\] 視窗。  如需詳細資訊，請參閱[How to: Add a Property to a SharePoint Project Item Extension](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
+-   將自訂屬性加入至專案項目。 屬性會出現在**屬性**視窗時選擇的專案項目**方案總管 中**。 如需詳細資訊，請參閱[How to： 將屬性加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)。  
   
- 如需示範如何建立、部署和測試專案項目擴充功能的逐步解說，請參閱[Walkthrough: Extending a SharePoint Project Item Type](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
+ 如需示範如何建立、 部署和測試專案項目擴充功能的逐步解說，請參閱[逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。  
   
-## 了解專案項目擴充功能和專案項目執行個體之間的關聯性  
- 當您建立專案項目擴充功能時，Visual Studio 會在將相關類型的專案項目加入至 SharePoint 專案時載入擴充功能。  例如，如果您建立 \[**事件接收器**\] 專案項目的擴充功能，則當使用者將 \[**事件接收器**\] 專案項目加入至專案時，Visual Studio 會載入擴充功能。  Visual Studio 會針對相關專案項目類型的所有執行個體，使用您的擴充功能中相同的執行個體。  在前述範例中，如果使用者將第二個 \[**事件接收器**\] 專案項目加入至專案，則會使用擴充功能的相同執行個體來自訂第二個專案項目。  
+## <a name="understanding-the-relationship-between-project-item-extensions-and-project-item-instances"></a>了解專案項目擴充功能和專案項目執行個體之間的關聯性  
+ 當您建立專案項目擴充功能時，Visual Studio 的專案項目相關聯的類型加入至 SharePoint 專案時，就會載入您的擴充功能。 例如，如果您建立的延伸模組**事件接收器**專案項目，Visual Studio 會載入您的擴充功能時，使用者將**事件接收器**專案項目加入專案。 Visual Studio 會使用您的擴充功能的相同執行個體相關聯的專案項目類型的所有執行個體。 在上述範例中，如果使用者加入第二個**事件接收器**專案項目加入專案中，您的擴充功能的相同執行個體用於自訂的第二個專案項目。  
   
- 若要存取正在擴充的專案項目類型執行個體，請在您的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> 方法實作中，處理 *projectItemType* 參數的其中一個 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> 事件。  例如，若要判斷何時將正在擴充的專案項目加入至專案，請處理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> 事件。  如需詳細資訊，請參閱[How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
+ 若要存取所擴充的專案項目類型的特定執行個體，處理其中<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents>事件*projectItemType*的實作中的參數<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A>方法。 例如，若要判斷所擴充之類型的專案項目加入至專案時，處理<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded>事件。 如需詳細資訊，請參閱[How to： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。  
   
-## SharePoint 專案項目的識別項  
- 每一個 SharePoint 專案項目都有對應的字串識別項。  您必須知道專案項目的識別項，才能執行下列工作：  
+## <a name="identifiers-for-sharepoint-project-items"></a>SharePoint 專案項目識別碼  
+ 每個 SharePoint 專案項目都有對應的字串識別碼。 您必須知道的識別項的專案項目，如果您想要執行下列工作：  
   
--   建立專案項目的擴充功能。  在此情況下，您必須將要擴充之專案項目的識別項傳遞至 <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> 的建構函式。  托要建立所有專案項目類型的擴充功能，請傳遞 **\*** 字串值。  
+-   建立專案項目擴充功能。 在此情況下，您必須傳遞專案項目，您想要延伸的建構函式的識別項<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>。 若要建立所有專案項目類型擴充功能，將傳遞 **\*** 字串值。  
   
--   以程式設計方式將專案項目加入至專案。  在此情況下，您必須將專案項目的識別項傳遞至 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> 方法。  
+-   以程式設計方式將專案項目加入專案。 在此情況下，您必須傳遞的專案項目識別項<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A>方法。  
   
- 下表列出隨附於 Visual Studio 中的 SharePoint 專案項目的識別項。  
+ 下表列出隨附於 Visual Studio SharePoint 專案項目識別項。  
   
 |專案項目名稱|字串識別項|  
-|------------|-----------|  
+|-----------------------|-----------------------|  
 |商務資料目錄模型|Microsoft.VisualStudio.SharePoint.BusinessDataConnectivity|  
 |內容類型|Microsoft.VisualStudio.SharePoint.ContentType|  
 |事件接收器|Microsoft.VisualStudio.SharePoint.EventHandler|  
 |空元素|Microsoft.VisualStudio.SharePoint.GenericElement|  
-|清單定義<br /><br /> 內容類型中的清單定義|Microsoft.VisualStudio.SharePoint.ListDefinition|  
+|清單定義<br /><br /> 從內容類型的清單定義|Microsoft.VisualStudio.SharePoint.ListDefinition|  
 |清單執行個體|Microsoft.VisualStudio.SharePoint.ListInstance|  
 |模組|Microsoft.VisualStudio.SharePoint.Module|  
-|循序工作流程<br /><br /> 狀態機器工作流程|Microsoft.VisualStudio.SharePoint.Workflow|  
+|循序性工作流程<br /><br /> 狀態機器工作流程|Microsoft.VisualStudio.SharePoint.Workflow|  
 |網站定義|Microsoft.VisualStudio.SharePoint.SiteDefinition|  
 |視覺 Web 組件|Microsoft.VisualStudio.SharePoint.VisualWebPart|  
 |Web 組件|Microsoft.VisualStudio.SharePoint.WebPart|  
 |工作流程關聯表單|Microsoft.VisualStudio.SharePoint.WorkflowAssociation|  
   
-## 請參閱  
- [How to: Create a SharePoint Project Item Extension](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
- [How to: Add a Shortcut Menu Item to a SharePoint Project Item Extension](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
- [How to: Add a Property to a SharePoint Project Item Extension](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
- [Walkthrough: Extending a SharePoint Project Item Type](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
- [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md)  
-  
+## <a name="see-also"></a>另請參閱  
+ [如何： 建立 SharePoint 專案項目擴充功能](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)   
+ [如何： 將捷徑功能表項目加入至 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)   
+ [如何： 將屬性加入 SharePoint 專案項目擴充功能](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)   
+ [逐步解說： 擴充 SharePoint 專案項目類型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)   
+ [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)  
   

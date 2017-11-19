@@ -1,53 +1,53 @@
 ---
-title: "IDebugPropertyField::GetPropertyGetter | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPropertyField::GetPropertyGetter"
-helpviewer_keywords: 
-  - "IDebugPropertyField::GetPropertyGetter 方法"
+title: "IDebugPropertyField::GetPropertyGetter |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPropertyField::GetPropertyGetter
+helpviewer_keywords: IDebugPropertyField::GetPropertyGetter method
 ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 41754cbd9ddbf5864db12ad777c2c93fbee0da7b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPropertyField::GetPropertyGetter
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 取得取得屬性的方法。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetPropertyGetter(   
-   IDebugMethodField** ppField  
+```cpp  
+HRESULT GetPropertyGetter(   
+   IDebugMethodField** ppField  
 );  
 ```  
   
-```cpp#  
+```cpp  
 int GetPropertyGetter(  
-   out IDebugMethodField ppField  
+   out IDebugMethodField ppField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppField`  
- \[\] out傳回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件，表示取得屬性的方法。  
+ [out]傳回[IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件代表取得屬性的方法。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 若要取得的方法會設定屬性， [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)呼叫方法。  
+## <a name="remarks"></a>備註  
+ 若要取得設定的屬性，方法[GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)呼叫方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)   
  [GetPropertySetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertysetter.md)   
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

@@ -1,29 +1,32 @@
 ---
-title: "TemplateContent 項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent"
-helpviewer_keywords: 
-  - "TemplateContent 項目 [Visual Studio 專案範本]"
+title: "TemplateContent 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateContent
+helpviewer_keywords: TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1f083097ae79d045891b64d806820a58686b4c95
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# TemplateContent 項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent 項目 (Visual Studio 範本)
 指定範本的內容。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateContent >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <TemplateContent>  
@@ -31,36 +34,36 @@ caps.handback.revision: 14
 </TemplateContent>  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|--------|--------|  
-|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|指定當您從範本建立專案時，是否要建置方案。|  
+|屬性|說明|  
+|---------------|-----------------|  
+|[BuildOnLoad](../extensibility/buildprojectonload-visual-studio-templates.md)|指定是否要建置此方案，從範本建立專案。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
-|--------|--------|  
-|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多個專案範本的組織和內容。|  
-|[專案](../extensibility/project-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案的檔案或目錄。|  
-|[參考](../extensibility/references-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定項目範本所需的組件參考。|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|選擇性項目。<br /><br /> 指定範本中所包含的檔案。|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定要使用的任何自訂參數，當專案或項目從範本建立。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定多專案範本的組織和內容。|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定要加入至專案檔案或目錄。|  
+|[參考](../extensibility/references-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定所需的項目範本的組件參考。|  
+|[專案項目](../extensibility/projectitem-element-visual-studio-item-templates.md)|選擇性項目。<br /><br /> 指定範本中包含的檔案。|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定從範本建立專案或項目時要使用的任何自訂參數。|  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、項目範本或入門套件的所有中繼資料。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本或入門套件的所有中繼資料。|  
   
-## 備註  
- `TemplateContent` 是必要項目。  
+## <a name="remarks"></a>備註  
+ `TemplateContent`是必要項目。  
   
-## 範例  
- 下列程式碼範例會示範 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 應用程式專案範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -86,6 +89,6 @@ caps.handback.revision: 14
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

@@ -1,58 +1,58 @@
 ---
-title: "IDebugProperty3::GetStringCharLength | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty3::GetStringCharLength"
-helpviewer_keywords: 
-  - "IDebugProperty3::GetStringCharLength"
+title: "IDebugProperty3::GetStringCharLength |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty3::GetStringCharLength
+helpviewer_keywords: IDebugProperty3::GetStringCharLength
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 139cb6deac5afc3f4b174673d623c56d3929071a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty3::GetStringCharLength
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-相關聯的屬性字串中傳回字元的數。  
+# <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
+傳回相關聯的屬性的字串中的字元數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetStringCharLength(  
-   ULONG *pLen  
+   ULONG *pLen  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetStringCharLength(  
-   out uint pLen  
+   out uint pLen  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
-|參數|描述|  
-|--------|--------|  
-|`pLen`|\[\] out屬性的字串中傳回字元的數。|  
+|參數|說明|  
+|---------------|-----------------|  
+|`pLen`|[out]傳回屬性的字串中的字元數。|  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。  
   
-## 備註  
- 一般而言，這個方法時，會呼叫配置一個緩衝區的 prelude [GetStringChars](../Topic/IDebugProperty3::GetStringChars.md)方法。  
+## <a name="remarks"></a>備註  
+ 一般而言，這個方法用做為配置緩衝區來呼叫 prelude [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)方法。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CProperty** 物件，公開 \(expose\) [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CProperty**公開物件[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)介面。  
   
-```cpp#  
+```cpp  
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)  
 {  
     HRESULT hr = E_INVALIDARG;  
@@ -92,6 +92,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }  
 ```  
   
-## 請參閱  
- [GetStringChars](../Topic/IDebugProperty3::GetStringChars.md)   
+## <a name="see-also"></a>另請參閱  
+ [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)   
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

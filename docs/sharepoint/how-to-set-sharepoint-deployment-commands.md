@@ -1,52 +1,53 @@
 ---
-title: "如何：設定 SharePoint 部署命令"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visual Studio 中的 SharePoint 開發, 部署"
+title: "如何： 設定 SharePoint 部署命令 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, deploying
 ms.assetid: 289c8c33-a603-434e-889f-a0d0a1736ecb
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 65c67972dddedcd05338d793883b2dcba0789d48
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：設定 SharePoint 部署命令
-  您可以設定預先部署和部署後命令來自訂部署程序。  當您從 Visual Studio 偵錯 SharePoint 方案時，這些命令會在其他部署動作之前和之後執行。  
+# <a name="how-to-set-sharepoint-deployment-commands"></a>如何：設定 SharePoint 部署命令
+  您可以藉由設定預先部署和部署後命令自訂部署程序。 這些命令之前和之後執行其他部署動作時進行偵錯 SharePoint 方案，從 Visual Studio。  
   
-### 若要加入預先部署命令  
+### <a name="to-add-a-pre-deployment-command"></a>若要加入預先部署命令  
   
-1.  在功能表列上，選擇 \[**專案**\]、*ProjectName*\[**Properties**\]。  
+1.  在功能表列上選擇 **專案**， *ProjectName***屬性**。  
   
-2.  選擇 \[**SharePoint**\] 索引標籤。  
+2.  選擇**SharePoint**  索引標籤。  
   
-3.  在 \[**部署前命令列**\] 文字方塊中，輸入 MS\-DOS 或 MSBuild 命令以自訂此步驟。  
+3.  在**預先部署命令列**文字方塊中，輸入或 MSBuild 命令，以自訂此步驟。  
   
-     例如，若要在部署完成前列出目錄內容，請輸入 **dir**。  
+     例如，若要部署完成之前，請列出目錄內容，輸入**dir**。  
   
-### 若要加入部署後命令  
+### <a name="to-add-a-post-deployment-command"></a>若要加入部署後命令  
   
-1.  在功能表列上，選擇 \[**專案**\]、*ProjectName*\[**Properties**\]。  
+1.  在功能表列上選擇 **專案**， *ProjectName***屬性**。  
   
-2.  選擇 \[**SharePoint**\] 索引標籤。  
+2.  選擇**SharePoint**  索引標籤。  
   
-3.  在 \[**部署後命令列**\] 文字方塊中，輸入 MS\-DOS 或 MSBuild 命令以自訂此步驟。  
+3.  在**部署後命令列**文字方塊中，輸入或 MSBuild 命令，以自訂此步驟。  
   
-     例如，若要在部署完成後列出目錄內容，請輸入 **dir**。  若要使用 MSBuild 變數從組建目錄複製組件，請輸入 **copy $\(TargetPath\) c:\\DeploymentDirectory**。  
+     例如，若要完成部署之後列出目錄內容，輸入**dir**。 若要使用 MSBuild 變數從組建目錄複製組件，請輸入**複製 $ （targetpath) c:\DeploymentDirectory**。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

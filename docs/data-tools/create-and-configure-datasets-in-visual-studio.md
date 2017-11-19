@@ -1,110 +1,93 @@
 ---
-title: Create and configure datasets in Visual Studio | Microsoft Docs
+title: "建立和設定 Visual Studio 中的資料集 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
 ms.topic: article
-dev_langs:
-- VB
-- CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - typed datasets, creating
 - datasets [Visual Basic], creating
 ms.assetid: 58f33b43-24e1-43b1-b08b-b74329960bd6
-caps.latest.revision: 36
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: c598bcc7d591f14a0854e5a53c76a219146de933
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 5dd27f35bdfd0ee2f576c1a4ac2fe3fde5a357e6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Create and configure datasets in Visual Studio
-A *dataset* is a set of objects that store data from a database in memory and support change tracking to enable create, read, update and delete (CRUD) operations on that data without the need to be always connected to the database. Datasets were designed for simple *forms over data* business applications. For new applications, consider using Entity Framework to store and model data in memory. To work with datasets, you should have a basic knowledge of database concepts.  
+# <a name="create-and-configure-datasets-in-visual-studio"></a>建立和設定 Visual Studio 中的資料集
+A*資料集*是一組儲存在記憶體中的資料庫中的資料，並且支援變更追蹤，若要啟用之物件的建立、 讀取、 更新和刪除 (CRUD) 作業，而不需要永遠連接到資料庫的資料。 資料集所設計的簡單*表單 forms over data*商務應用程式。 對於新的應用程式，請考慮使用 Entity Framework 來儲存和記憶體中的資料模型。 若要使用的資料集，您應該有基本了解資料庫概念。  
   
- You create a typed <xref:System.Data.DataSet> class in Visual Studio at design time by using the **Data Source Configuration Wizard**. For information on creating datasets programmatically, see [Creating a DataSet](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset).  
+ 您建立具類型<xref:System.Data.DataSet>Visual Studio 中的類別在設計階段使用**資料來源組態精靈**。 如需以程式設計方式建立資料集資訊，請參閱[建立資料集](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset)。  
   
-## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Create a new dataset by using the Data Source Configuration Wizard  
+## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>使用資料來源組態精靈建立新的資料集  
   
-1.  On the **Project** menu, click **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+1.  在**專案**功能表上，按一下 **加入新資料來源**啟動**資料來源組態精靈**。  
   
-2.  Choose the type of data source that you will be connecting to.  
+2.  選擇您要連接到資料來源的類型。  
   
-     ![Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png "Data Source Configuration Wizard")  
+     ![資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png "資料來源組態精靈")  
   
-3.  For databases, choose the database or databases that will be the data source for your dataset.  
+3.  資料庫中，選擇將您的資料集的資料來源的資料庫。  
   
-     ![Data source choose a connection](../data-tools/media/data-source-choose-a-connection.png "Data source choose a connection")  
+     ![資料來源選擇連接](../data-tools/media/data-source-choose-a-connection.png "資料來源選擇的連接")  
   
-4.  Choose the tables (or individual columns), stored procedures, functions, and views from the database that you want to be represented in the dataset.  
+4.  選擇資料表 （或個別資料行），預存程序、 函數和檢視表從資料庫中，您想要在 dataset 中表示。  
   
-     ![Choose database objects](../data-tools/media/raddata-chose-objects.png "raddata Chose objects")  
+     ![選擇的資料庫物件](../data-tools/media/raddata-chose-objects.png "raddata 選擇物件")  
   
-5.  Click **Finish**.  
+5.  按一下 [ **完成**]。  
   
-6.  The dataset appears as a node in **Solution Explorer**:  
+6.  資料集會以節點形式出現**方案總管 中**:  
   
-     ![DataSet in Solution Explorer](../data-tools/media/dataset-in-solution-explorer.png "DataSet in Solution Explorer")  
+     ![在 [方案總管] 中的資料集](../data-tools/media/dataset-in-solution-explorer.png "方案總管 中的資料集")  
   
-     Click that node, and the dataset appears in the **DataSet Designer**. Note that each table in the dataset has an associated TableAdapter object, which is represented at the bottom. The table adapter is used to populate the dataset and optionally to send commands to the database.  
+     按一下該節點，然後資料集會出現在**DataSet 設計工具**。 請注意，在資料集中的每個資料表相關聯的 TableAdapter 物件，表示底部。 資料表配接器用來填入資料集以及 （選擇性） 將命令傳送至資料庫。  
   
-     ![DataSet Designer](../data-tools/media/dataset-designer.png "DataSet Designer")  
+     ![DataSet 設計工具](../data-tools/media/dataset-designer.png "DataSet 設計工具")  
   
-7.  The relation lines that connect the tables represent table relationships, as defined in the database. By default, foreign-key constraints in a database are represented as a relation only, with the update and delete rules set to none. Typically, that is what you want. However, you can click the lines to bring up the **Relation** dialog, where you can change the behavior of  hierarchical updates. For more information, see [Relationships in datasets](../data-tools/relationships-in-datasets.md) and [Hierarchical update](../data-tools/hierarchical-update.md).  
+7.  連接的資料表的關聯性線條則代表資料表關聯性，因為資料庫中定義。 根據預設，在資料庫中的 foreign key 條件約束關聯，以表示更新和刪除規則設定為 none。 一般而言，這是您想要。 不過，您可以按一下以顯示線條**關聯**對話方塊中，您可以在其中變更階層式更新的行為。 如需詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)和[階層式更新](../data-tools/hierarchical-update.md)。  
   
-     ![Dataset Relation dialog](../data-tools/media/raddata-relation-dialog.png "raddata Relation dialog")  
+     ![資料集的關聯性對話方塊](../data-tools/media/raddata-relation-dialog.png "raddata 關聯性對話方塊")  
   
-8.  Click a table, table adapter, or column name in a table to see its properties in the **Properties** window. You can modify some of the values here. Just remember that you are modifying the dataset, not the source database.  
+8.  按一下資料表、 資料表配接器或在資料表中的資料行名稱中查看其內容**屬性**視窗。 您可以修改部分的值。 請記得您要修改資料集，而不是來源資料庫。  
   
-     ![DataSet column properties](../data-tools/media/dataset-column-properties.png "DataSet column properties")  
+     ![資料集資料行屬性](../data-tools/media/dataset-column-properties.png "資料集資料行屬性")  
   
-9. You can add new tables or table adapters to the dataset, or add new queries for existing table adapters, or specify new relations between tables by dragging those items from the **Toolbox** tab. This tab appears when the **DataSet Designer** is in focus.  
+9. 您可以將新的資料表或資料表配接器加入至資料集，或加入新的查詢，現有的資料表配接器，或指定這些項目從資料表間的新關聯性**工具箱** 索引標籤。此索引標籤時會出現**DataSet 設計工具**進入焦點。  
   
-     ![Dataset Toolbox](../data-tools/media/raddata-dataset-toolbox.png "raddata Dataset Toolbox")  
+     ![資料集工具箱](../data-tools/media/raddata-dataset-toolbox.png "raddata 資料集 [工具箱]")  
   
-10. Next, you probably want to specify how to populate the dataset with data. For that, you use the **TableAdapter Configuration Wizard**. For more information, see [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md) .  
+10. 接下來，您可能想要指定如何填入資料集的資料。 因此，您使用**TableAdapter 組態精靈**。 如需詳細資訊，請參閱[填滿資料集，使用 Tableadapter](../data-tools/fill-datasets-by-using-tableadapters.md) 。  
   
-## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Add a database table or other object to an existing dataset  
- This procedure shows how to add a table from the same database that you used to first create the dataset.  
+## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>將資料庫資料表或其他物件加入至現有的資料集  
+ 此程序示範如何將資料表加入從與您用來先建立資料集相同的資料庫。  
   
-1.  Click the dataset node in **Solution Explorer** to bring the dataset designer into focus.  
+1.  按一下中的資料集節點**方案總管 中**讓 dataset 設計工具成為焦點。  
   
-2.  Click the **Data Sources** tab in the left margin of Visual Studio, or enter `Data Sources` in **QuickLaunch**.  
+2.  按一下**資料來源**索引標籤的左邊界的 Visual Studio 中，或輸入`Data Sources`中**Environment**。  
   
-3.  Right-click the dataset node and select **Configure Data Source with Wizard** .  
+3.  以滑鼠右鍵按一下資料集節點，然後選取**使用精靈設定資料來源**。  
   
-     ![Data Source context menu](../data-tools/media/data-source-context-menu.png "Data Source context menu")  
+     ![資料來源 內容功能表](../data-tools/media/data-source-context-menu.png "資料來源 內容功能表")  
   
-4.  Use the wizard to specify which additional tables, or stored procedures or other database object, to add to the dataset.  
+4.  使用精靈來指定哪些其他的資料表或預存程序或其他資料庫物件，若要加入至資料集。  
   
-## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Add a stand-alone data table to a dataset  
+## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>將獨立的資料表加入資料集  
   
-1.  Open your dataset in the **Dataset Designer**.  
+1.  開啟您的資料集在**Dataset 設計工具**。  
   
-2.  Drag a <xref:System.Data.DataTable> class from the **DataSet** tab of the **Toolbox** onto the **Dataset Designer**.  
+2.  拖曳<xref:System.Data.DataTable>類別從**資料集** 索引標籤**工具箱**到**Dataset 設計工具**。  
   
-3.  Add columns to define your data table. Right-click on the table and choose **Add > Column**. Use the **Properties** window to set the data type of the column and a key if necessary.  
+3.  加入資料行來定義您的資料表。 以滑鼠右鍵按一下資料表，然後選擇 **新增 > 資料行**。 使用**屬性**視窗來設定資料行和索引鍵的資料類型，如有必要。  
   
-4.  Stand-alone tables need to Implement `Fill` logic in stand-alone tables so that you can fill them with data. For information on filling stand-alone data tables, see [Populating a DataSet from a DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter).
+4.  獨立的資料表必須實作`Fill`獨立資料表中的邏輯，讓您可以填入資料。 如需填滿獨立資料的資料表資訊，請參閱[填入資料集從 DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)。
+
+## <a name="see-also"></a>請參閱
+[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

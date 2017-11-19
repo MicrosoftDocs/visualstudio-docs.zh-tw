@@ -4,43 +4,27 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
-helpviewer_keywords:
-- ProjectType element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
+helpviewer_keywords: ProjectType element [Visual Studio project templates]
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
-caps.latest.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: d23be61b83cd3c62b6ab33a271968f500ad8ff81
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: fb177139491236cf518aba4e7f2effd213c1a469
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType 項目 (Visual Studio 範本)
-將專案範本分類，使其出現在指定的群組中**新的專案**或**加入新項目**對話方塊。  
+將專案範本分類，使其出現在中指定的群組**新專案**或**加入新項目** 對話方塊。  
   
 > [!WARNING]
->  啟動 Visual Studio 2012 中的 c + + 支援專案範本。 它們不支援 c + + 在 Visual Studio 2010 及較早版本中。  
+>  啟動 Visual Studio 2012 中的 c + + 支援專案範本。 不支援 c + + 在 Visual Studio 2010 和舊版中。  
   
  \<VSTemplate >  
  \<TemplateData >  
@@ -58,7 +42,7 @@ ms.lasthandoff: 02/22/2017
 ### <a name="attributes"></a>屬性  
  無。  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
 ### <a name="parent-elements"></a>父項目  
@@ -70,20 +54,20 @@ ms.lasthandoff: 02/22/2017
 ## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 這個值會指定將建立的專案範本類型，並必須包含下列值之一︰  
+ 這個值會指定的專案範本類型將會建立，而且必須包含下列值之一：  
   
--   `CSharp`︰ 指定此範本會建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案或項目。  
+-   `CSharp`： 指定這個範本會建立[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]專案或項目。  
   
--   `VisualBasic`︰ 指定此範本會建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案或項目。  
+-   `VisualBasic`： 指定這個範本會建立[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]專案或項目。  
   
--   `Web`︰ 指定此範本會建立 Web 專案或項目。 如果`ProjectType`項目會包含此值、 專案或項目的語言定義於[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
+-   `Web`： 指定此範本建立 Web 專案或項目。 如果`ProjectType`項目包含此值，語言的專案或項目會定義在[ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)。  
   
 ## <a name="remarks"></a>備註  
  `ProjectType` 是 `TemplateData` 的必要子項目。  
   
- 值`ProjectType`項目會指定當範本位於**新的專案**或**加入新項目**對話方塊。 比方說，使用範本`ProjectType`值`CSharp`之下**Visual C#**節點**新的專案**對話方塊。  
+ 值`ProjectType`項目會指定範本所在**新專案**或**加入新項目** 對話方塊。 比方說，與範本`ProjectType`值`CSharp`之下**Visual C#**中的節點**新專案**對話方塊。  
   
- 可以透過指定範本的子型別[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)項目。  
+ 範本子類型可以指定使用[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)項目。  
   
 ## <a name="example"></a>範例  
  下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
@@ -115,4 +99,4 @@ ms.lasthandoff: 02/22/2017
 ## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
- [ProjectSubType 項目 （Visual Studio 範本）](../extensibility/projectsubtype-element-visual-studio-templates.md)
+ [ProjectSubType 元素 (Visual Studio 範本)](../extensibility/projectsubtype-element-visual-studio-templates.md)

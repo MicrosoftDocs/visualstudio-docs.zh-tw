@@ -1,51 +1,51 @@
 ---
-title: "IDebugProgram2::GetENCUpdate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::GetENCUpdate"
-helpviewer_keywords: 
-  - "IDebugProgram2::GetENCUpdate"
+title: "IDebugProgram2::GetENCUpdate |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::GetENCUpdate
+helpviewer_keywords: IDebugProgram2::GetENCUpdate
 ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1d0d14d407dbff9493af0206369cfd8b9c8d556c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::GetENCUpdate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會取得編輯後繼續 \(ENC\) 的更新程式。  自訂的偵錯引擎一定會傳回`E_NOTIMPL`。  
+# <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
+這個方法會取得此程式的 編輯後繼續 (ENC) 更新。 自訂偵錯引擎一律會傳回`E_NOTIMPL`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetENCUpdate(   
-   IUnknown** ppUpdate  
+```cpp  
+HRESULT GetENCUpdate(   
+   IUnknown** ppUpdate  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetENCUpdate(  
-   out object ppUpdate  
+   out object ppUpdate  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppUpdate`  
- \[\] out傳回內部介面，可用來更新這個程式。  
+ [out]傳回可以用來更新此程式的內部介面。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
 > [!NOTE]
->  自訂的偵錯引擎應該永遠會傳回`E_NOTIMPL`。  
+>  應該會一律傳回的自訂偵錯引擎`E_NOTIMPL`。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

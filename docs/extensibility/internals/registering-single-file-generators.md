@@ -4,45 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
-caps.latest.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 239f68b8bdbaf910f25b9fbe6e0fdd7061fe0f16
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f9c75258f24ba86b1ff8d2f3fcd4a16cc4faf5c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="registering-single-file-generators"></a>註冊單一檔案產生器
-若要啟用自訂工具在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必須註冊，因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以具現化，並將它關聯的特定專案類型。  
+若要啟用自訂的工具在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，必須註冊，因此[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]可以具現化，並與特定專案類型關聯。  
   
-### <a name="to-register-a-custom-tool"></a>若要註冊自訂工具  
+### <a name="to-register-a-custom-tool"></a>若要註冊自訂的工具  
   
-1.  請註冊自訂工具 DLL 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本機登錄或在系統登錄中，其內。  
+1.  請註冊自訂的工具 DLL 中[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]本機登錄或在系統登錄中，其內。  
   
-     例如，以下是 managed MSDataSetGenerator 自訂工具，隨附的註冊資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
+     例如，以下是 managed MSDataSetGenerator 自訂工具，隨附於的註冊資訊[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]:  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\CLSID\{E76D53CC-3D4F-40A2-BD4D-4F3419755476}]  
@@ -53,24 +39,24 @@ ms.lasthandoff: 02/22/2017
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  建立所需的登錄機碼[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]下產生器的 hive\\*GUID*其中*GUID* GUID 定義特定語言專案系統或服務。 索引鍵的名稱會變成您的自訂工具的程式設計名稱。 自訂工具的索引鍵具有下列值︰  
+2.  建立所需的登錄機碼[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]產生器下的登錄區\\*GUID*其中*GUID* GUID 所定義的特定語言專案系統或服務。 索引鍵的名稱會變成您的自訂工具的程式設計名稱。 自訂工具的索引鍵具有下列值：  
   
     -   (預設值)  
   
-         選擇項。 提供自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。  
+         選擇項。 提供的自訂工具的使用者易記描述。 這個參數是選擇性的但建議使用。  
   
     -   CLSID  
   
-         必要項。 指定的類別庫實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.</xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> COM 元件的識別碼  
+         必要項。 指定的類別庫實作的 COM 元件的識別碼<xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>。  
   
     -   GeneratesDesignTimeSource  
   
-         必要項。 指出是否從這個自訂工具所產生的檔案類型就可以使用視覺化設計工具。 此參數的值必須是型別不適用於視覺化設計工具 （零） 0 或提供給視覺化設計工具的型別 (one) 1。  
+         必要項。 指出是否從這個自訂的工具所產生的檔案類型都會提供給視覺化設計工具。 此參數的值必須為類型不適用於視覺化設計工具 （零） 0 或 1 （一） 可以使用視覺化設計工具類型。  
   
     > [!NOTE]
-    >  您必須註冊自訂的工具，分別為每個想自訂的工具，使其可用的語言。  
+    >  您必須註冊自訂的工具，分別為每個想要使用自訂工具的語言。  
   
-     例如，MSDataSetGenerator 將自己註冊一次針對每種語言︰  
+     例如，MSDataSetGenerator 自行註冊一次針對每個語言：  
   
     ```  
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0\Generators\{164b10b9-b200-11d0-8c61-00a0c91e29d5}\MSDataSetGenerator]  
@@ -90,8 +76,7 @@ ms.lasthandoff: 02/22/2017
     ```  
   
 ## <a name="see-also"></a>另請參閱  
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator></xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>   
  [實作單一檔案產生器](../../extensibility/internals/implementing-single-file-generators.md)   
- [決定專案的預設命名空間](../../misc/determining-the-default-namespace-of-a-project.md)   
- [公開型別，以視覺化設計工具](../../extensibility/internals/exposing-types-to-visual-designers.md)   
+ [若要公開的視覺化設計工具的類型](../../extensibility/internals/exposing-types-to-visual-designers.md)   
  [BuildManager 物件簡介](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

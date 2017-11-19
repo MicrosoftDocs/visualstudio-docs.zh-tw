@@ -1,52 +1,52 @@
 ---
-title: "IDebugPointerField::GetDereferencedField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPointerField::GetDereferencedField"
-helpviewer_keywords: 
-  - "IDebugPointerField::GetDereferencedField 方法"
+title: "IDebugPointerField::GetDereferencedField |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPointerField::GetDereferencedField
+helpviewer_keywords: IDebugPointerField::GetDereferencedField method
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 35081931fcb87c73ca6643002a09b43c3ab674b9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPointerField::GetDereferencedField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回這個指標物件所指向的物件型別。  
+# <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
+這個方法會傳回這個指標物件指向的物件類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetDereferencedField(  
-   IDebugField** ppField  
+   IDebugField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetDereferencedField(  
-   out IDebugField ppField  
+   out IDebugField ppField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppField`  
- \[\] out傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述型別的目標物件。  
+ [out]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述的目標物件類型。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 例如，如果[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)物件是指為一個整數， [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)這個方法傳回型別告訴您，該整數型別。  
+## <a name="remarks"></a>備註  
+ 例如，如果[IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)物件指向一個整數， [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)這個方法所傳回的類型描述該整數類型。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

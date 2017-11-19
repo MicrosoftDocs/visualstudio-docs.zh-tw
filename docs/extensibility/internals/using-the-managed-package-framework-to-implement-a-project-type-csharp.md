@@ -1,11 +1,10 @@
 ---
-title: "為專案類型 (C#) 使用受管理的封裝架構 |Microsoft 文件"
+title: "使用 Managed 的封裝架構的專案類型 (C#) |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,40 +12,27 @@ helpviewer_keywords:
 - MPF projects
 - managed package framework, creating projects
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: d5bc147592bfc36247c35f23ac2885055d096af3
-ms.openlocfilehash: 1d70a70b942b3722ed61e1e8a2f2e54d96b916e4
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 16e1d301e5a3977f656c52f9c97eb43ee216075f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用受管理的封裝架構實作專案型別 (C#)
-管理封裝架構 (MPF) 提供 C# 類別，您可以使用或繼承自以實作您自己的專案類型。 MPF 實作許多介面 Visual Studio 會要求專案類型提供，讓您專心實作您的專案類型的特定項目。  
+# <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用 Managed 的封裝架構實作專案型別 (C#)
+Managed Package Framework (MPF) 提供的 C# 類別可以使用或來實作您自己的專案類型繼承。 MPF 實作許多介面 Visual Studio 必須是專案類型提供，讓您自由地專注於實作您的專案類型的軟體。  
   
 ## <a name="using-the-mpf-project-source-code"></a>使用 MPF 專案的原始程式碼  
- 管理封裝個專案的架構 (MPFProj) 提供建立和管理新的專案系統的協助程式類別。 不同於其他類別中的 MPF，專案類別不包含在 Visual Studio 隨附的組件中。 相反地，以在原始碼提供專案類別[2013 專案的 MPF](http://mpfproj12.codeplex.com)。  
+ Managed Package Framework 的專案 (MPFProj) 提供建立和管理新的專案系統的 helper 類別。 不同於其他 MPF 類別時，專案類別不包含在 Visual Studio 隨附的組件中。 相反地，提供在原始碼專案類別[2013 專案的 MPF](http://mpfproj12.codeplex.com)。  
   
- 若要將此專案新增至 VSPackage 方案中，執行下列作業︰  
+ 若要將這個專案加入 VSPackage 方案中，執行下列作業：  
   
 1.  下載 MPFProj 檔案， *MPFProjectDir*。  
   
-2.  在*MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區段︰  
+2.  在*MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file，變更下列區塊：  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -59,7 +45,7 @@ ms.lasthandoff: 02/22/2017
   
 2.  卸載 VSPackage 專案。  
   
-3.  加入下列區塊之前另編輯 VSPackage.csproj 檔案`<Import>`區塊︰  
+3.  藉由新增下列區塊之前的其他編輯 VSPackage.csproj 檔案`<Import>`區塊：  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -75,15 +61,15 @@ ms.lasthandoff: 02/22/2017
   
 2.  關閉並重新開啟 VSPackage 方案。  
   
-3.  重新開啟 VSPackage 專案。 您應該會看到名為 ProjectBase 的新目錄。  
+3.  重新開啟 VSPackage 專案。 您應該會看到一個名為 ProjectBase 的新目錄。  
   
-4.  加入下列參考到 VSPackage 專案︰  
+4.  加入 VSPackage 專案的下列參考：  
   
      Microsoft.Build.Tasks.4.0  
   
 5.  建置專案。  
   
-## <a name="hierarchy-classes"></a>類別階層  
+## <a name="hierarchy-classes"></a>階層架構類別  
  下表摘要說明 MPFProj 支援專案階層架構的類別。 如需詳細資訊，請參閱[階層和選取範圍](../../extensibility/internals/hierarchies-and-selection.md)。  
   
 |類別名稱|  
@@ -101,7 +87,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.BuildDependency`|  
   
 ## <a name="document-handling-classes"></a>文件處理類別  
- 下表列出支援文件處理 MPF 中的類別。 如需詳細資訊，請參閱[開啟和儲存專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
+ 下表列出在 MPF 類別，可支援文件處理。 如需詳細資訊，請參閱[開啟和儲存的專案項目](../../extensibility/internals/opening-and-saving-project-items.md)。  
   
 |類別名稱|  
 |----------------|  
@@ -109,7 +95,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|  
   
 ## <a name="configuration-and-output-classes"></a>組態和輸出類別  
- 下表列出 MPF，可讓專案類型支援多個組態，例如偵錯和發行版本，以及專案輸出的集合中的類別。 如需詳細資訊，請參閱[管理組態選項](../../extensibility/internals/managing-configuration-options.md)。  
+ 下表列出 MPF 可讓專案類型支援多個組態，例如偵錯和發行版本，以及專案輸出的集合中的類別。 如需詳細資訊，請參閱[管理組態選項](../../extensibility/internals/managing-configuration-options.md)。  
   
 |類別名稱|  
 |----------------|  
@@ -120,7 +106,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.ProjectElement`|  
   
 ## <a name="automation-support-classes"></a>自動化支援類別  
- 下表列出 MPF 支援自動化，讓您的專案類型的使用者可以撰寫增益集的類別。  
+ 下表列出 MPF 支援自動化，以便您的專案類型的使用者可以撰寫增益集的類別。  
   
 |類別名稱|  
 |----------------|  
@@ -131,7 +117,7 @@ ms.lasthandoff: 02/22/2017
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|  
   
 ## <a name="properties-classes"></a>屬性類別  
- 下表列出 MPF，可讓專案類型中的類別加入的使用者可以瀏覽並修改屬性瀏覽器中的屬性。  
+ 下表列出 MPF 可讓專案類型中的類別加入的使用者可以瀏覽並修改屬性瀏覽器中的屬性。  
   
 |類別名稱|  
 |----------------|  

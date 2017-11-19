@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Forms user control with data binding | Microsoft Docs
+title: "建立資料繫結 Windows Form 使用者控制項 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -14,179 +14,175 @@ helpviewer_keywords:
 - data binding, complex
 - user controls [Visual Studio], complex data binding
 ms.assetid: c8f29c2b-b49b-4618-88aa-33b6105880b5
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 6505ddc5e76be8e60a747a7b62d28e519f098046
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 8b23bfe7c30988a80904377e583a5a5f6d4cd2ff
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>Create a Windows Forms user control that supports complex data binding
-When displaying data on forms in Windows applications, you can choose existing controls from the **Toolbox**, or you can author custom controls if your application requires functionality that is not available in the standard controls. This walkthrough shows how to create a control that implements the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>. Controls that implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> contain a `DataSource` and `DataMember` property that can be bound to data. Such controls are similar to a <xref:System.Windows.Forms.DataGridView> or <xref:System.Windows.Forms.ListBox>  
+# <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>建立支援複雜資料繫結的 Windows Form 使用者控制項
+在 Windows 應用程式的表單上顯示資料，您可以選擇從現有的控制項**工具箱**，或如果您的應用程式需要標準控制項中所沒有的功能，您可以編寫自訂控制項。 這個逐步解說顯示如何建立可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項。 可實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> 的控制項包含可繫結至資料的 `DataSource` 和 `DataMember` 屬性。 這類控制項是類似於<xref:System.Windows.Forms.DataGridView>或<xref:System.Windows.Forms.ListBox>  
   
- For more information on control authoring, see [Developing Windows Forms Controls at Design Time](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time).  
+ 如需有關撰寫控制項的詳細資訊，請參閱[在設計階段開發 Windows Form 控制項](/dotnet/framework/winforms/controls/developing-windows-forms-controls-at-design-time)。  
   
- When authoring controls for use in data-binding scenarios you need to implement one of the following data-binding attributes:  
+ 製作控制項以用於資料繫結情節時您需要實作下列的資料繫結屬性的其中一個：  
   
-|Data-binding attribute usage|  
+|資料繫結屬性使用方式|  
 |-----------------------------------|  
-|Implement the <xref:System.ComponentModel.DefaultBindingPropertyAttribute> on simple controls, like a <xref:System.Windows.Forms.TextBox>, that display a single column (or property) of data. For more information, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).|  
-|Implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.DataGridView>, that display lists (or tables) of data. (This process is described in this walkthrough page.)|  
-|Implement the <xref:System.ComponentModel.LookupBindingPropertiesAttribute> on controls, like a <xref:System.Windows.Forms.ComboBox>, that display lists (or tables) of data but also need to present a single column or property. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).|  
+|對顯示資料之單一資料行 (或屬性) 的簡單控制項 (如 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>)，實作 <xref:System.Windows.Forms.TextBox>  如需詳細資訊，請參閱[建立支援簡單資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)。|  
+|對顯示資料之清單 (或資料表) 的控制項 (如 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.DataGridView>  (這個逐步解說頁面會描述此流程)。|  
+|對顯示資料之清單 (或資料表) 但也需要呈現單一資料行或屬性的控制項 (如 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>)，實作 <xref:System.Windows.Forms.ComboBox>。 如需詳細資訊，請參閱[建立支援查閱資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|  
   
- This walkthrough creates a complex control that displays rows of data from a table. This example uses the `Customers` table from the Northwind sample database. The complex user control will display the customers table in a <xref:System.Windows.Forms.DataGridView> in the custom control.  
+ 這個逐步解說會建立顯示資料表中資料列的複雜控制項。 此範例使用 Northwind 範例資料庫中的 `Customers` 資料表。 複雜使用者控制項將會在自訂控制項的 <xref:System.Windows.Forms.DataGridView> 中顯示 customers 資料表。  
   
- During this walkthrough, you will learn how to:  
+ 在這個逐步解說期間，您將了解如何：  
   
--   Create a new **Windows Forms Application**.  
+-   建立新**Windows Forms 應用程式**。  
   
--   Add a new **User Control** to your project.  
+-   加入新**使用者控制項**至您的專案。  
   
--   Visually design the user control.  
+-   透過視覺化方式設計使用者控制項。  
   
--   Implement the `ComplexBindingProperty` attribute.  
+-   實作 `ComplexBindingProperty` 屬性。  
   
--   Create a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
+-   建立資料集與[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。  
   
--   Set the **Customers** table in the [Data Sources Window](add-new-data-sources.md) to use the new complex control.  
+-   設定**客戶**資料表中[資料來源視窗](add-new-data-sources.md)來使用新的複雜控制項。  
   
--   Add the new control by dragging it from the **Data Sources Window** onto **Form1**.  
+-   加入新的控制項，方法是將它從**資料來源視窗**到**Form1**。  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>必要條件  
+本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
--   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
   
-## <a name="create-a-windows-forms-application"></a>Create a Windows Forms Application  
- The first step is to create a **Windows Forms Application**.  
-  
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  安裝 Northwind 範例資料庫執行下列步驟：  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中安裝的一部份**資料儲存和處理**在 Visual Studio 安裝程式工作負載。)展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢...**.  
 
-4. Name the project **ComplexControlWalkthrough**, and then choose **OK**. 
+       查詢編輯器視窗隨即開啟。  
+
+    2. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。  
+
+    3. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。  
+
+       在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。  
   
-     The **ComplexControlWalkthrough** project is created, and added to **Solution Explorer**.  
+## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式  
+ 第一個步驟是建立**Windows Forms 應用程式**。  
   
-## <a name="add-a-user-control-to-the-project"></a>Add a user control to the project  
- Because this walkthrough creates a complex data-bindable control from a **User Control**, you must add a **User Control** item to the project.  
+#### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案  
   
-#### <a name="to-add-a-user-control-to-the-project"></a>To add a user control to the project  
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
-1.  From the **Project** menu, choose **Add User Control**.  
+2. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。  
+
+3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。  
+
+4. 將專案命名**命名為 ComplexControlWalkthrough**，然後選擇 **確定**。 
   
-2.  Type **ComplexDataGridView** in the **Name** area, and then click **Add**.  
+     **命名為 ComplexControlWalkthrough**專案時建立，並加入至**方案總管 中**。  
   
-     The **ComplexDataGridView** control is added to **Solution Explorer**, and opens in the designer.  
+## <a name="add-a-user-control-to-the-project"></a>將使用者控制項加入專案  
+ 因為這個逐步解說會建立複雜的資料繫結控制項，從**使用者控制項**，您必須新增**使用者控制項**項目加入專案。  
   
-## <a name="design-the-complexdatagridview-control"></a>Design the ComplexDataGridView control  
- This step adds a <xref:System.Windows.Forms.DataGridView> to the user control.  
+#### <a name="to-add-a-user-control-to-the-project"></a>將使用者控制項加入至專案  
   
-#### <a name="to-design-the-complexdatagridview-control"></a>To design the ComplexDataGridView control  
+1.  從**專案**功能表上，選擇**加入使用者控制項**。  
   
--   Drag a <xref:System.Windows.Forms.DataGridView> from the **Toolbox** onto the user control's design surface.  
+2.  型別**ComplexDataGridView**中**名稱**區域，，然後按一下**新增**。  
   
-## <a name="add-the-required-data-binding-attribute"></a>Add the required data-binding attribute  
- For complex controls that support data binding, you can implement the <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>.  
+     **ComplexDataGridView**控制項加入至**方案總管 中**，並在設計工具中開啟。  
   
-#### <a name="to-implement-the-complexbindingproperties-attribute"></a>To implement the ComplexBindingProperties attribute  
+## <a name="design-the-complexdatagridview-control"></a>設計 ComplexDataGridView 控制項  
+ 此步驟會將 <xref:System.Windows.Forms.DataGridView> 加入至使用者控制項。  
   
-1.  Switch the **ComplexDataGridView** control to code view. (On the **View** menu, select **Code**.)  
+#### <a name="to-design-the-complexdatagridview-control"></a>設計 ComplexDataGridView 控制項  
   
-2.  Replace the code in the `ComplexDataGridView` with the following:  
+-   拖曳<xref:System.Windows.Forms.DataGridView>從**工具箱**拖曳至使用者控制項的設計介面。  
+  
+## <a name="add-the-required-data-binding-attribute"></a>加入必要的資料繫結屬性  
+ 針對支援資料繫結的複雜控制項，您可以實作 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>。  
+  
+#### <a name="to-implement-the-complexbindingproperties-attribute"></a>實作 ComplexBindingProperties 屬性  
+  
+1.  交換器**ComplexDataGridView**程式碼 檢視的控制項。 (在**檢視**功能表上，選取**程式碼**。)  
+  
+2.  將 `ComplexDataGridView` 中的程式碼取代為下列內容：  
   
      [!code-csharp[VbRaddataDisplaying#4](../data-tools/codesnippet/CSharp/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.cs)]
      [!code-vb[VbRaddataDisplaying#4](../data-tools/codesnippet/VisualBasic/create-a-windows-forms-user-control-that-supports-complex-data-binding_1.vb)]  
   
-3.  From the **Build** menu, choose **Build Solution**.  
+3.  從 [ **建置** ] 功能表中，選擇 [ **建置方案**]。  
   
-## <a name="creating-a-data-source-from-your-database"></a>Creating a data source from your database  
- This step uses the **Data Source Configuration** wizard to create a data source based on the `Customers` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information on setting up the Northwind sample database, see [Install SQL Server sample databases](../data-tools/install-sql-server-sample-databases.md).  
+## <a name="creating-a-data-source-from-your-database"></a>從資料庫建立資料來源  
+這個步驟會使用**資料來源組態**精靈來建立資料來源為基礎`Customers`Northwind 範例資料庫中的資料表。  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+#### <a name="to-create-the-data-source"></a>若要建立資料來源  
   
-1.  On the **Data** menu, click **Show Data Sources**.  
+1.  按一下 [ **資料** ] 功能表上的 [ **顯示資料來源**]。  
   
-2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration** wizard.  
+2.  在**資料來源**視窗中，選取**加入新資料來源**啟動**資料來源組態**精靈。  
   
-3.  Select **Database** on the **Choose a Data Source Type** page, and then click **Next**.  
+3.  請選取 [ **選擇資料來源類型** ] 頁面上的 [ **資料庫** ]，再按 [ **下一步**]。  
   
-4.  On the **Choose your Data Connection** page do one of the following:  
+4.  在**選擇資料連線**頁面上，執行下列其中之一：  
   
-    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
+    -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。  
   
-    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
+    -   選取**新連線**啟動**新增/修改連接** 對話方塊。  
   
-5.  If your database requires a password, select the option to include sensitive data, and then click **Next**.  
+5.  如果您的資料庫需要密碼，選取選項來加入敏感性資料，然後按一下 **下一步**。  
   
-6.  On the **Save connection string to the Application Configuration file** page, click **Next**.  
+6.  在**將連接字串儲存到應用程式組態檔**頁面上，按一下**下一步**。  
   
-7.  On the **Choose your Database Objects** page, expand the **Tables** node.  
+7.  在**選擇您的資料庫物件**頁面上，展開**資料表**節點。  
   
-8.  Select the `Customers` table, and then click **Finish**.  
+8.  選取`Customers`資料表，然後按一下 **完成**。  
   
-     The **NorthwindDataSet** is added to your project, and the `Customers` table appears in the **Data Sources** window.  
+     **NorthwindDataSet**加入至您的專案，而`Customers`資料表會出現在**資料來源**視窗。  
   
-## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>Set the Customers table to use the ComplexDataGridView control  
- Within the **Data Sources** window, you can set the control to be created prior to dragging items onto your form.  
+## <a name="set-the-customers-table-to-use-the-complexdatagridview-control"></a>設定 Customers 資料表使用 ComplexDataGridView 控制項  
+ 內**資料來源**視窗中，您可以設定在將項目拖曳至表單之前建立控制項。  
   
-#### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>To set the Customers table to bind to the ComplexDataGridView control  
+#### <a name="to-set-the-customers-table-to-bind-to-the-complexdatagridview-control"></a>設定要繫結至 ComplexDataGridView 控制項的 Customers 資料表  
   
-1.  Open **Form1** in the designer.  
+1.  開啟**Form1**設計工具中。  
   
-2.  Expand the **Customers** node in the **Data Sources** window.  
+2.  展開**客戶**節點**資料來源**視窗。  
   
-3.  Click the drop-down arrow on the **Customers** node, and choose **Customize**.  
+3.  按一下下拉箭號**客戶**] 節點，然後選擇 [**自訂**。  
   
-4.  Select the **ComplexDataGridView** from the list of **Associated Controls** in the **Data UI Customization Options** dialog box.  
+4.  選取**ComplexDataGridView**從清單中**關聯的控制項**中**資料的 UI 自訂選項** 對話方塊。  
   
-5.  Click the drop-down arrow on the `Customers` table, and choose **ComplexDataGridView** from the control list.  
+5.  按一下下拉箭號`Customers`資料表，然後選擇  **ComplexDataGridView**的控制項清單中。  
   
-## <a name="add-controls-to-the-form"></a>Add controls to the form  
- You can create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
+## <a name="add-controls-to-the-form"></a>將控制項加入表單  
+ 您可以建立資料繫結控制項項目從**資料來源**視窗拖曳至表單。  
   
-#### <a name="to-create-data-bound-controls-on-the-form"></a>To create data-bound controls on the form  
+#### <a name="to-create-data-bound-controls-on-the-form"></a>在表單上建立資料繫結控制項  
   
--   Drag the main **Customers** node from the **Data Sources** window onto the form.Verify that the **ComplexDataGridView** control is used to display the table's data.  
+-   將主要**客戶**節點從**資料來源**視窗拖曳至表單。確認**ComplexDataGridView**控制項用來顯示資料表的資料。  
   
-## <a name="running-the-application"></a>Running the application  
+## <a name="running-the-application"></a>執行應用程式  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>若要執行應用程式  
   
--   Press F5 to run the application.  
+-   按 F5 執行應用程式。  
   
-## <a name="next-steps"></a>Next Steps  
- Depending on your application requirements, there are several steps you may want to perform after creating a control that supports databinding. Some typical next steps include:  
+## <a name="next-steps"></a>後續步驟  
+ 根據應用程式的需求，在建立支援資料繫結程序的控制項之後，可能會有幾個想要執行的步驟。 一些一般後續步驟包括：  
   
--   Placing your custom controls in a control library so you can reuse them in other applications.  
+-   將自訂控制項放入控制項程式庫，讓您可以在其他應用程式中重複予以使用。  
   
--   Creating controls that support lookup scenarios. For more information, see [Create a Windows Forms user control that supports lookup data binding](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md).  
+-   建立支援查閱情節的控制項。 如需詳細資訊，請參閱[建立支援查閱資料繫結的 Windows Form 使用者控制項](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。  
   
-## <a name="see-also"></a>See Also  
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
- [Windows Forms Controls](/dotnet/framework/winforms/controls/index)
-
+## <a name="see-also"></a>另請參閱  
+ [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [設定要從資料來源視窗拖曳時建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)   
+ [Windows Forms 控制項](/dotnet/framework/winforms/controls/index)

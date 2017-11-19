@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button | Microsoft Docs'
+title: "逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,107 +16,107 @@ helpviewer_keywords:
 - text boxes, displaying text in worksheets
 - text [Office development in Visual Studio], text boxes
 ms.assetid: 59b73159-aab7-4f61-9ace-1723c18d78d6
-caps.latest.revision: 56
-author: kempb
-ms.author: kempb
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 18f5bccd1e9ee54ac759e8815ed71c87e4a06eb7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 1b95eb6eeb5f8615f8f471ad33139afa49d5633f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Walkthrough: Displaying Text in a Text Box in a Worksheet Using a Button
-  This walkthrough shows the basics of using buttons and text boxes on Microsoft Office Excel worksheets, and how to create Excel projects using Office development tools in Visual Studio. To see the result as a completed sample, see the Excel Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+# <a name="walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button"></a>逐步解說：使用按鈕在工作表的文字方塊中顯示文字
+  本逐步解說示範使用 Microsoft Office Excel 工作表，以及如何建立 Excel 專案中使用 Visual Studio 中的 Office 程式開發工具的按鈕和文字方塊的基本概念。 若要查看結果為已完成的範例，請參閱 Excel 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ 在這個逐步解說期間，您將了解如何：  
   
--   Add controls to a worksheet.  
+-   將控制項加入工作表。  
   
--   Populate a text box when a button is clicked.  
+-   按一下按鈕時填入文字方塊。  
   
--   Test your project.  
+-   測試您的專案。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>Creating the Project  
- In this step, you will create an Excel Workbook project using Visual Studio.  
+## <a name="creating-the-project"></a>建立專案  
+ 在此步驟中，您將建立使用 Visual Studio 的 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create an Excel Workbook project with the name **My Excel Button**. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立名稱的 Excel 活頁簿專案**我的 Excel 按鈕**。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     Visual Studio opens the new Excel workbook in the designer and adds the **My Excel Button** project to **Solution Explorer**.  
+     Visual Studio 設計工具中開啟新 Excel 活頁簿，並將**我的 Excel 按鈕**專案加入**方案總管 中**。  
   
-## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
- For this walkthrough, you will need a button and a text box on the first worksheet.  
+## <a name="adding-controls-to-the-worksheet"></a>將控制項加入工作表  
+ 這個逐步解說中，您必須按鈕和第一個工作表上的文字方塊。  
   
-#### <a name="to-add-a-button-and-a-text-box"></a>To add a button and a text box  
+#### <a name="to-add-a-button-and-a-text-box"></a>新增按鈕和文字方塊  
   
-1.  Verify that the **My Excel Button.xlsx** workbook is open in the Visual Studio designer, with `Sheet1` displayed.  
+1.  確認**我的 Excel Button.xlsx**活頁簿是在 Visual Studio 設計工具中開啟與`Sheet1`顯示。  
   
-2.  From the **Common Controls** tab of the Toolbox, drag a <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> to `Sheet1`.  
+2.  從**通用控制項** 索引標籤的 工具箱 拖曳<xref:Microsoft.Office.Tools.Excel.Controls.TextBox>至`Sheet1`。  
   
-3.  From the **View** menu, select **Properties Window**.  
+3.  從**檢視**功能表上，選取**屬性 視窗**。  
   
-4.  Be sure that **TextBox1** is visible in the **Properties** window drop-down box and change the **Name** property of the text box to **displayText**.  
+4.  確定**TextBox1**會顯示在**屬性**視窗下拉式方塊，並變更**名稱**文字方塊的屬性**displayText**.  
   
-5.  Drag a **Button** control onto `Sheet1` and change the following properties:  
+5.  拖曳**按鈕**控制項拖曳至`Sheet1`並變更下列屬性：  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
     |**Name**|**insertText**|  
-    |**Text**|**Insert Text**|  
+    |**Text**|**插入文字**|  
   
- Now write the code to run when the button is clicked.  
+ 現在撰寫在按一下按鈕時執行的程式碼。  
   
-## <a name="populating-the-text-box-when-the-button-is-clicked"></a>Populating the Text Box when the Button is Clicked  
- Each time the user clicks the button, **Hello World!** is appended to the text box.  
+## <a name="populating-the-text-box-when-the-button-is-clicked"></a>按一下按鈕時填入文字方塊  
+ 每次使用者按一下按鈕， **Hello World ！** 會附加到文字方塊中。  
   
-#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>To write to the text box when the button is clicked  
+#### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>在按一下按鈕時寫入至文字方塊  
   
-1.  In **Solution Explorer**, right-click **Sheet1**, and then click **View Code** on the shortcut menu.  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下**Sheet1**，然後按一下 [**檢視程式碼**快顯功能表。  
   
-2.  Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler of the button:  
+2.  將下列程式碼加入<xref:System.Windows.Forms.Control.Click>按鈕的事件處理常式：  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]  [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]  
   
-3.  In C#, you must add an event handler to the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event as shown below. For information on creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+3.  在 C# 中，您必須加入事件處理常式<xref:Microsoft.Office.Tools.Excel.Worksheet.Startup>事件，如下所示。 如需建立事件處理常式的詳細資訊，請參閱[How to： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your workbook to make sure that the message **Hello World!** appears in the text box when you click the button.  
+## <a name="testing-the-application"></a>測試應用程式  
+ 您現在可以測試您的活頁簿，確定訊息**Hello World ！** 當您按一下按鈕時，會出現在文字方塊中。  
   
-#### <a name="to-test-your-workbook"></a>To test your workbook  
+#### <a name="to-test-your-workbook"></a>測試您的活頁簿  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-2.  Click the button.  
+2.  按一下按鈕。  
   
-3.  Confirm that **Hello World!** appears in the text box.  
+3.  確認**Hello World ！** 會出現在文字方塊中。  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of using buttons and text boxes on Excel worksheets. Here are some tasks that might come next:  
+## <a name="next-steps"></a>後續步驟  
+ 本逐步解說示範在 Excel 工作表上使用按鈕和文字方塊的基本概念。 接著可以執行下列一些工作：  
   
--   Deploying the project. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md).  
+-   部署專案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)。  
   
--   Using check boxes to change formatting. For more information, see [Walkthrough: Changing Worksheet Formatting Using CheckBox Controls](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).  
+-   使用核取方塊變更格式。 如需詳細資訊，請參閱[逐步解說： 變更工作表格式使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>See Also  
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [Walkthroughs Using Excel](../vsto/walkthroughs-using-excel.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [使用 Excel 的逐步解說](../vsto/walkthroughs-using-excel.md)   
+ [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

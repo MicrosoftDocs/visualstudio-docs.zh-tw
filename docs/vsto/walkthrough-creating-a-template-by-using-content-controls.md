@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Template By Using Content Controls | Microsoft Docs'
+title: "逐步解說： 使用內容控制項建立範本 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,229 +15,234 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating documents
 - content controls [Office development in Visual Studio], adding to documents
 ms.assetid: 88fb9a60-dcc3-4a5f-a8c9-7aff01ca4b4b
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3876ec91cb4872e2a08ee83b60aeca7ce974ad0d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7edb589551f888427be6abcbb8f86c2e86b4349c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>Walkthrough: Creating a Template By Using Content Controls
-  This walkthrough demonstrates how to create a document-level customization that uses content controls to create structured and reusable content in a Microsoft Office Word template.  
+# <a name="walkthrough-creating-a-template-by-using-content-controls"></a>逐步解說：使用內容控制項建立範本
+  本逐步解說示範如何建立文件層級自訂，這個自訂會使用內容控制項在 Microsoft Office Word 範本中建立可重複使用的結構化內容。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Word enables you to create a collection of reusable document parts, named *building blocks*. This walkthrough shows how to create two tables as building blocks. Each table contains several content controls that can hold different types of content, such as plain text or dates. One of the tables contains information about an employee, and the other table contains customer feedback.  
+ Word 可讓您建立一組可重複使用的文件組件，名為*建置組塊*。 這個逐步解說顯示如何建立兩個資料表做為建置組塊。 每個資料表包含數個內容控制項，可以有不同的內容類型，例如純文字或日期。 其中一個資料表包含員工的資訊，另一個資料表則包含客戶回函。  
   
- After you create a document from the template, you can add either of the tables to the document by using several <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> objects, which display the available building blocks in the template.  
+ 從範本建立文件之後，您可以將任一個資料表加入至文件，方法是使用數個 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件，這些物件會顯示範本中可用的建置組塊。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Creating tables that contain content controls in a Word template at design time.  
+-   在設計階段建立包含 Word 範本中內容控制項的資料表。  
   
--   Populating a combo box content control and a drop-down list content control programmatically.  
+-   以程式設計方式填入下拉式方塊內容控制項和下拉式清單內容控制項。  
   
--   Preventing users from editing a specified table.  
+-   防止使用者編輯指定的資料表。  
   
--   Adding tables to the building block collection of a template.  
+-   將資料表加入範本的建置組塊集合。  
   
--   Creating a content control that displays the available building blocks in the template.  
+-   建立會顯示範本中可用建置組塊的內容控制項。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Word.  
+-   Microsoft Word。  
   
-## <a name="creating-a-new-word-template-project"></a>Creating a New Word Template Project  
- Create a Word template so that users can create their own copies easily.  
+## <a name="creating-a-new-word-template-project"></a>建立新的 Word 範本專案  
+ 建立 Word 範本，讓使用者可以輕鬆建立自己的複本。  
   
-#### <a name="to-create-a-new-word-template-project"></a>To create a new Word template project  
+#### <a name="to-create-a-new-word-template-project"></a>建立新的 Word 範本專案  
   
-1.  Create a Word template project with the name **MyBuildingBlockTemplate**. In the wizard, create a new document in the solution. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  Word 範本專案建立名稱**MyBuildingBlockTemplate**。 在精靈中，於方案中建立新文件。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the new Word template in the designer and adds the **MyBuildingBlockTemplate** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在設計工具中開啟新的 Word 範本，並將**MyBuildingBlockTemplate**專案加入**方案總管 中**。  
   
-## <a name="creating-the-employee-table"></a>Creating the Employee Table  
- Create a table that contains four different types of content controls where the user can enter information about an employee.  
+## <a name="creating-the-employee-table"></a>建立員工資料表  
+ 建立含有四種不同內容控制項的資料表，使用者可以在這個資料表中輸入員工資訊。  
   
-#### <a name="to-create-the-employee-table"></a>To create the employee table  
+#### <a name="to-create-the-employee-table"></a>建立員工資料表  
   
-1.  In the Word template that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, on the Ribbon, click the **Insert** tab.  
+1.  在裝載的 Word 範本[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]設計工具中的，在功能區中，按一下**插入** 索引標籤。  
   
-2.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 4 rows.  
+2.  在**資料表**群組中，按一下**資料表**，然後插入具有 2 個資料行和 4 個資料列的資料表。  
   
-3.  Type text in the first column so that it resembles the following column:  
+3.  在第一個資料行中輸入文字，讓它類似下面資料行：  
   
     ||  
     |-|  
-    |**Employee Name**|  
-    |**Hire Date**|  
-    |**Title**|  
-    |**Picture**|  
+    |**員工名稱**|  
+    |**雇用日期**|  
+    |**標題**|  
+    |**圖片**|  
   
-4.  Click in the first cell in the second column (next to **Employee Name**).  
+4.  按一下第二個資料行中第一個資料格中 (旁**員工姓名**)。  
   
-5.  On the Ribbon, click the **Developer** tab.  
+5.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
-6.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
+6.  在**控制項**群組中，按一下**文字**按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
-7.  Click the second cell in the second column (next to **Hire Date**).  
+7.  按一下第二個資料行中的第二個資料格 (旁**雇用日期**)。  
   
-8.  In the **Controls** group, click the **Date Picker** button ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") to add a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to the second cell.  
+8.  在**控制項**群組中，按一下**日期選擇器**按鈕![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")新增<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二個資料格。  
   
-9. Click the third cell in the second column (next to **Title**).  
+9. 按一下第二個資料行中的第三個資料格 (旁**標題**)。  
   
-10. In the **Controls** group, click the **Combo Box** button ![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl") to add a <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> to the third cell.  
+10. 在**控制項**群組中，按一下**下拉式方塊**按鈕![ComboBoxContentControl](../vsto/media/combobox.gif "ComboBoxContentControl")新增<xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>到第三個資料格。  
   
-11. Click the last cell in the second column (next to **Picture**).  
+11. 按一下第二個資料行中的最後一個資料格 (旁**圖片**)。  
   
-12. In the **Controls** group, click the **Picture Content Control** button ![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl") to add a <xref:Microsoft.Office.Tools.Word.PictureContentControl> to the last cell.  
+12. 在**控制項**群組中，按一下**圖片內容控制項**按鈕![PictureContentControl](../vsto/media/pictcontentcontrol.gif "PictureContentControl")新增<xref:Microsoft.Office.Tools.Word.PictureContentControl>最後一個儲存格。  
   
-## <a name="creating-the-customer-feedback-table"></a>Creating the Customer Feedback Table  
- Create a table that contains three different types of content controls where the user can enter customer feedback information.  
+## <a name="creating-the-customer-feedback-table"></a>建立客戶回函資料表  
+ 建立含有三種不同內容控制項類型的資料表，使用者可以在這個資料表中輸入客戶回函資訊。  
   
-#### <a name="to-create-the-customer-feedback-table"></a>To create the customer feedback table  
+#### <a name="to-create-the-customer-feedback-table"></a>建立客戶回函資料表  
   
-1.  In the Word template, click in the line after the employee table that you added earlier, and press ENTER to add a new paragraph.  
+1.  在 Word 範本中，按一下您稍早加入之員工資料表的後面一行，然後按下 ENTER 鍵加入新段落。  
   
-2.  On the Ribbon, click the **Insert** tab.  
+2.  在功能區中，按一下 [**插入**] 索引標籤。  
   
-3.  In the **Tables** group, click **Table**, and insert a table with 2 columns and 3 rows.  
+3.  在**資料表**群組中，按一下**資料表**，然後插入具有 2 個資料行和 3 個資料列的資料表。  
   
-4.  Type text in the first column so that it resembles the following column:  
+4.  在第一個資料行中輸入文字，讓它類似下面資料行：  
   
     ||  
     |-|  
-    |**Customer Name**|  
-    |**Satisfaction Rating**|  
-    |**Comments**|  
+    |**客戶名稱**|  
+    |**滿意度評等**|  
+    |**註解**|  
   
-5.  Click in the first cell of the second column (next to **Customer Name**).  
+5.  按一下第二個資料行的第一個資料格中 (旁**客戶名稱**)。  
   
-6.  On the Ribbon, click the **Developer** tab.  
+6.  按一下 [功能區] 上的 [開發人員]  索引標籤。  
   
-7.  In the **Controls** group, click the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
+7.  在**控制項**群組中，按一下**文字**按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
-8.  Click in the second cell of the second column (next to **Satisfaction Rating**).  
+8.  按一下第二個資料行的第二個儲存格 (旁**滿意度評等**)。  
   
-9. In the **Controls** group, click the **Drop-Down List** button ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") to add a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to the second cell.  
+9. 在**控制項**群組中，按一下**下拉式選單**按鈕![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl")新增<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>到第二個資料格。  
   
-10. Click in the last cell of the second column (next to **Comments**).  
+10. 按一下第二個資料行的最後一個儲存格 (旁**註解**)。  
   
-11. In the **Controls** group, click the **Rich Text** button ![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the last cell.  
+11. 在**控制項**群組中，按一下**Rtf**按鈕![RichTextContentControl](../vsto/media/richtextcontrol.gif "RichTextContentControl")新增<xref:Microsoft.Office.Tools.Word.RichTextContentControl>最後一個儲存格。  
   
-## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>Populating the Combo Box and Drop Down List Programmatically  
- You can initialize content controls at design time by using the **Properties** window in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. You can also initialize them at run time, which enables you to set their initial states dynamically. For this walkthrough, use code to populate the entries in the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> at run time so that you can see how these objects work.  
+## <a name="populating-the-combo-box-and-drop-down-list-programmatically"></a>以程式設計方式填入下拉式方塊和下拉式清單  
+ 您可以在設計階段初始化內容控制項使用**屬性**視窗[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 也可以在執行階段再進行初始化，這樣可讓您動態設定其初始狀態。 這個逐步解說中，使用程式碼中的將項目填入<xref:Microsoft.Office.Tools.Word.ComboBoxContentControl>和<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>在執行階段，讓您可以查看這些物件運作的方式。  
   
-#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>To modify the UI of the content controls programmatically  
+#### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>以程式設計方式修改內容控制項的 UI  
   
-1.  In **Solution Explorer**, right-click **ThisDocument.cs** or **ThisDocument.vb**, and then click **View Code**.  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下**ThisDocument.cs**或**ThisDocument.vb**，然後按一下 [**檢視程式碼**。  
   
-2.  Add the following code to the `ThisDocument` class. This code declares several objects that you will use later in this walkthrough.  
+2.  將下列程式碼加入 `ThisDocument` 類別。 這個程式碼會宣告數個物件，您稍後於此逐步解說中會用到。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]  
   
-3.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class. This code adds entries to the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> and <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> in the tables, and sets the placeholder text that is displayed in each of these controls before the user edits them.  
+3.  將下面程式碼加入 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 此程式碼會將項目加入資料表中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，然後設定預留位置文字，在使用者編輯這些控制項之前先行顯示在控制項中。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]  
   
-## <a name="preventing-users-from-editing-the-employee-table"></a>Preventing Users from Editing the Employee Table  
- Use the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier to protect the employee table. After protecting the table, users can still edit the content controls in the table. However, they cannot edit text in the first column or modify the table in other ways, such as adding or deleting rows and columns. For more information about how to use a <xref:Microsoft.Office.Tools.Word.GroupContentControl> to protect a part of a document, see [Content Controls](../vsto/content-controls.md).  
+## <a name="preventing-users-from-editing-the-employee-table"></a>防止使用者編輯員工資料表  
+ 使用您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件可保護員工資料表。 保護資料表之後，使用者仍然可以編輯資料表中的內容控制項。 但是，無法編輯第一欄中的文字或以其他方式修改資料表，例如加入或刪除資料列和資料行。 如需有關如何使用<xref:Microsoft.Office.Tools.Word.GroupContentControl>來保護文件的一部分，請參閱[內容控制項](../vsto/content-controls.md)。  
   
-#### <a name="to-prevent-users-from-editing-the-employee-table"></a>To prevent users from editing the employee table  
+#### <a name="to-prevent-users-from-editing-the-employee-table"></a>防止使用者編輯員工資料表  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code prevents users from editing the employee table by putting the table inside the <xref:Microsoft.Office.Tools.Word.GroupContentControl> object that you declared earlier.  
+1.  請將下列程式碼加入 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會將資料表放到您稍早宣告的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 物件內，藉以防止使用者編輯員工資料表。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]  
   
-## <a name="adding-the-tables-to-the-building-block-collection"></a>Adding the Tables to the Building Block Collection  
- Add the tables to a collection of document building blocks in the template so that users can insert the tables that you have created into the document. For more information about document building blocks, see [Content Controls](../vsto/content-controls.md).  
+## <a name="adding-the-tables-to-the-building-block-collection"></a>將資料表加入至建置組塊集合  
+ 將資料表加入至範本中文件建置組塊的集合，以便使用者可以將您建立的資料表插入至文件。 如需文件建置組塊的詳細資訊，請參閱[內容控制項](../vsto/content-controls.md)。  
   
-#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>To add the tables to the building blocks in the template  
+#### <a name="to-add-the-tables-to-the-building-blocks-in-the-template"></a>將資料表加入至範本中的建置組塊  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code adds new building blocks that contain the tables to the Microsoft.Office.Interop.Word.BuildingBlockEntries collection, which contains all the reusable building blocks in the template. The new building blocks are defined in a new category named **Employee and Customer Information** and are assigned the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 這個程式碼會加入包含要 Microsoft.Office.Interop.Word.BuildingBlockEntries 集合，其中包含所有可重複使用的建置組塊範本中的資料表的新建置組塊。 名為新的類別中定義新的建置組塊**Employee and Customer Information** ，系統會指派建置組塊類型 Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]  
   
-2.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code deletes the tables from the template. The tables are no longer necessary, because you have added them to the gallery of reusable building blocks in the template. The code first puts the document into design mode so that the protected employee table can be deleted.  
+2.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會從範本刪除資料表。 因為您已將資料表加入至範本中可重複使用的建置組塊庫，所以不再需要它們了。 程式碼會先讓文件進入設計模式，如此就可以刪除受保護的員工資料表。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]  
   
-## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>Creating a Content Control That Displays the Building Blocks  
- Create a content control that provides access to the building blocks (that is, the tables) that you created earlier. Users can click this control to add the tables to the document.  
+## <a name="creating-a-content-control-that-displays-the-building-blocks"></a>建立會顯示建置組塊的內容控制項  
+ 建立內容控制項，用來存取您稍早建立的建置組塊 (亦即資料表)。 使用者可以按一下此控制項，將資料表加入文件。  
   
-#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>To create a content control that displays the building blocks  
+#### <a name="to-create-a-content-control-that-displays-the-building-blocks"></a>建立會顯示建置組塊的內容控制項  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class, after the code that you added in the previous step. This code initializes the <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> object that you declared earlier. The <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> displays all building blocks that are defined in the category **Employee and Customer Information** and that have the building block type Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1.  
+1.  請將下列程式碼加入至 `ThisDocument` 類別的 `ThisDocument_Startup` 方法，在您於上一個步驟中所加入的程式碼之後。 此程式碼會初始化您稍早宣告的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 物件。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>會顯示所有類別目錄中所定義的建置組塊**Employee and Customer Information**且具有建置組塊類型 Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1。  
   
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]  [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
+     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
+     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]  
   
-## <a name="testing-the-project"></a>Testing the Project  
- Users can click the building block gallery controls in the document to insert the employee table or the customer feedback table. Users can type or select responses in the content controls in both of the tables. Users can modify other parts of the customer feedback table, but they should not be able to modify other parts of the employee table.  
+## <a name="testing-the-project"></a>測試專案  
+ 使用者可以按一下文件中的建置組塊庫控制項，插入員工資料表或客戶回函資料表。 使用者可以在這兩個資料表的內容控制項中輸入或選取回應。 使用者可以修改客戶回函資料表的其他部分，但是應該無法修改員工資料表的其他部分。  
   
-#### <a name="to-test-the-employee-table"></a>To test the employee table  
+#### <a name="to-test-the-employee-table"></a>測試員工資料表  
   
-1.  Press F5 to run the project.  
+1.  按 F5 執行專案。  
   
-2.  Click **Choose your first building block** to display the first building block gallery content control.  
+2.  按一下**選擇第一個的建置組塊**顯示第一個的建置組塊庫內容控制項。  
   
-3.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Employee Table**.  
+3.  按一下下拉箭號旁**自訂圖庫 1**標題在控制項中，並選取**Employee 資料表**。  
   
-4.  Click in the cell to the right of the **Employee Name** cell and type a name.  
+4.  按一下右邊的儲存格**員工姓名**資料格，然後輸入的名稱。  
   
-     Verify that you can add only text to this cell. The <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> allows users to add only text, not other types of content such as art or a table.  
+     驗證您是否只能將文字加入此儲存格。 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 只允許使用者加入文字，不允許其他類型的內容，例如圖片或資料表。  
   
-5.  Click in the cell to the right of the **Hire Date** cell and select a date in the date picker.  
+5.  按一下右邊的儲存格**雇用日期**資料格，然後在 日期選擇器中選取日期。  
   
-6.  Click in the cell to the right of the **Title** cell and select one of the job titles in the combo box.  
+6.  按一下右邊的儲存格**標題**資料格，然後在下拉式方塊中選取其中一個工作職稱。  
   
-     Optionally, type the name of a job title that is not in the list. This is possible because the <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> enables users to select from a list of entries or to type their own entries.  
+     (選擇性) 輸入不在清單中的工作職稱。 這是可行的，因為 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 可以讓使用者從項目清單中選取或自行輸入。  
   
-7.  Click the icon in the cell to the right of the **Picture** cell and browse to an image to display it.  
+7.  按一下右邊的儲存格的圖示**圖片**資料格，然後瀏覽至要顯示的影像。  
   
-8.  Try to add rows or columns to the table, and try to delete rows and columns from the table. Verify that you cannot modify the table. The <xref:Microsoft.Office.Tools.Word.GroupContentControl> prevents you from making any modifications.  
+8.  嘗試將資料列或資料行加入資料表，並嘗試從資料表刪除資料列和資料行。 驗證您是否無法修改資料表。 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 會防止您進行任何修改。  
   
-#### <a name="to-test-the-customer-feedback-table"></a>To test the customer feedback table  
+#### <a name="to-test-the-customer-feedback-table"></a>測試客戶回函資料表  
   
-1.  Click **Choose your second building block** to display the second building block gallery content control.  
+1.  按一下**選擇第二個的建置組塊**顯示第二個建置組塊庫內容控制項。  
   
-2.  Click the drop-down arrow next to the **Custom Gallery 1** heading in the control, and select **Customer Table**.  
+2.  按一下下拉箭號旁**自訂圖庫 1**標題在控制項中，並選取**Customer 資料表**。  
   
-3.  Click in the cell to the right of the **Customer Name** cell and type a name.  
+3.  按一下右邊的儲存格**客戶名稱**資料格，然後輸入的名稱。  
   
-4.  Click in the cell to the right of the **Satisfaction Rating** cell and select one of the available options.  
+4.  按一下右邊的儲存格**滿意度評等**資料格，然後選取其中一個可用的選項。  
   
-     Verify that you cannot type your own entry. The <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> allows users only to select from a list of entries.  
+     驗證您是否無法輸入自己的項目。 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 只允許使用者從項目清單中選取。  
   
-5.  Click in the cell to the right of the **Comments** cell and type some comments.  
+5.  按一下右邊的儲存格**註解**資料格，然後輸入一些註解。  
   
-     Optionally, add some content other than text, such as art or an embedded table. This is possible because the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> enables users to add content other than text.  
+     (選擇性) 加入文字以外的內容，例如圖片或內嵌資料表。 這是可行的，因為 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 可以讓使用者加入文字以外的內容。  
   
-6.  Verify that you can add rows or columns to the table, and that you can delete rows and columns from the table. This is possible because you have not protected the table by putting it in a <xref:Microsoft.Office.Tools.Word.GroupContentControl>.  
+6.  驗證您是否可以將資料列或資料行加入資料表，以及是否可以從資料表刪除資料列和資料行。 這是可行的，因為您尚未將資料表放入 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 進行保護。  
   
-7.  Close the template.  
+7.  關閉範本。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to use content controls from this topic:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以透過下列主題，進一步了解如何使用內容控制項：  
   
--   Bind content controls to pieces of XML, also named custom XML parts, that are embedded in a document. For more information, see [Walkthrough: Binding Content Controls to Custom XML Parts](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md).  
+-   將內容控制項繫結至內嵌於文件的 XML 片段，也稱為自訂 XML 組件。 如需詳細資訊，請參閱[逐步解說： 內容控制項繫結至自訂 XML 組件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Content Controls](../vsto/content-controls.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
+ [內容控制項](../vsto/content-controls.md)   
+ [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何： 使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  
