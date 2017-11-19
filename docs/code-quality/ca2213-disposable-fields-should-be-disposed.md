@@ -1,11 +1,10 @@
 ---
-title: 'CA2213: Disposable fields should be disposed | Microsoft Docs'
+title: "CA2213： 應該處置可處置的欄位 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,46 @@ helpviewer_keywords:
 - CA2213
 - DisposableFieldsShouldBeDisposed
 ms.assetid: e99442c9-70e2-47f3-b61a-d8ac003bc6e5
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 538f013849b8e3391fdc3cdad7fee707e9cbb072
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 77cd32f97e3798362371fc21f8b38c14ce22c7fb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Disposable fields should be disposed
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213：可處置的欄位應該受到處置
 |||  
 |-|-|  
 |TypeName|DisposableFieldsShouldBeDisposed|  
 |CheckId|CA2213|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Usage|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A type that implements <xref:System.IDisposable?displayProperty=fullName> declares fields that are of types that also implement <xref:System.IDisposable>. The <xref:System.IDisposable.Dispose%2A> method of the field is not called by the <xref:System.IDisposable.Dispose%2A> method of the declaring type.  
+## <a name="cause"></a>原因  
+ 實作的型別<xref:System.IDisposable?displayProperty=fullName>宣告了也實作之類型的欄位<xref:System.IDisposable>。 <xref:System.IDisposable.Dispose%2A>欄位方法不由呼叫<xref:System.IDisposable.Dispose%2A>宣告型別的方法。  
   
-## <a name="rule-description"></a>Rule Description  
- A type is responsible for disposing of all its unmanaged resources; this is accomplished by implementing <xref:System.IDisposable>. This rule checks to see whether a disposable type `T` declares a field `F` that is an instance of a disposable type `FT`. For each field `F`, the rule attempts to locate a call to `FT.Dispose`. The rule searches the methods called by `T.Dispose`, and one level lower (the methods called by the methods called by `FT.Dispose`).  
+## <a name="rule-description"></a>規則描述  
+ 型別會負責處理這些項目及其所有 unmanaged 資源;這是藉由實作<xref:System.IDisposable>。 此規則會檢查以查看是否可處置的類型`T`宣告欄位`F`也就是可處置的類型執行個體`FT`。 每個欄位`F`，此規則會嘗試找出呼叫`FT.Dispose`。 此規則會搜尋呼叫的方法`T.Dispose`，和一個較低的層級 (呼叫的方法呼叫的方法`FT.Dispose`)。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, call <xref:System.IDisposable.Dispose%2A> on fields that are of types that implement <xref:System.IDisposable> if you are responsible for allocating and releasing the unmanaged resources held by the field.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，呼叫<xref:System.IDisposable.Dispose%2A>實作之類型的欄位上<xref:System.IDisposable>如果您是負責配置及釋放 unmanaged 的資源保留的欄位。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if you are not responsible for releasing the resource held by the field, or if the call to <xref:System.IDisposable.Dispose%2A> occurs at a deeper calling level than the rule checks.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全地隱藏此規則的警告，如果您就要負責無法釋放資源保留的欄位，或呼叫<xref:System.IDisposable.Dispose%2A>比這個規則會檢查更深入的呼叫層級，就會發生。  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeA` that implements <xref:System.IDisposable> (`FT` in the previosu discussion).  
+## <a name="example"></a>範例  
+ 下列範例顯示型別`TypeA`實作<xref:System.IDisposable>(`FT` previosu 討論中)。  
   
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example shows a type `TypeB` that violates this rule by declaring a field `aFieldOfADisposableType` (`F` in the previous discussion) as a disposable type (`TypeA`) and not calling <xref:System.IDisposable.Dispose%2A> on the field. `TypeB` corresponds to `T` in the previous discussion.  
+## <a name="example"></a>範例  
+ 下列範例顯示型別`TypeB`，藉由宣告欄位違反此規則`aFieldOfADisposableType`(`F`在先前的討論內容) 做為可處置的類型 (`TypeA`) 並不會呼叫<xref:System.IDisposable.Dispose%2A>欄位上。 `TypeB`對應至`T`中先前的討論。  
   
  [!code-csharp[FxCop.Usage.IDisposableFields#1](../code-quality/codesnippet/CSharp/ca2213-disposable-fields-should-be-disposed_2.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.IDisposable?displayProperty=fullName>   
- [Dispose Pattern](/dotnet/standard/design-guidelines/dispose-pattern)
+ [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)

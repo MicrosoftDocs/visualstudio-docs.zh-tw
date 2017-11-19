@@ -1,53 +1,53 @@
 ---
-title: "CA2220：完成項應該呼叫基底類別完成項 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
-helpviewer_keywords: 
-  - "CA2220"
-  - "FinalizersShouldCallBaseClassFinalizer"
+title: "CA2220： 完成項應該呼叫基底類別完成項 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
+helpviewer_keywords:
+- CA2220
+- FinalizersShouldCallBaseClassFinalizer
 ms.assetid: 48329f42-170d-45ee-a381-e33f55a240c5
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: aa5ed3329d4168a0781243a4faf021de3488e77c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2220：完成項應該呼叫基底類別完成項
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：完成項應該呼叫基底類別完成項
 |||  
 |-|-|  
-|型別名稱|FinalizersShouldCallBaseClassFinalizer|  
+|TypeName|FinalizersShouldCallBaseClassFinalizer|  
 |CheckId|CA2220|  
 |分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 覆寫 <xref:System.Object.Finalize%2A?displayProperty=fullName> 的型別不會在它的基底類別中呼叫 <xref:System.Object.Finalize%2A> 方法。  
+## <a name="cause"></a>原因  
+ 覆寫的型別<xref:System.Object.Finalize%2A?displayProperty=fullName>不會呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。  
   
-## 規則描述  
- 最終化必須透過繼承階層架構 \(Inheritance Hierarchy\) 進行傳播。  若要確定這一點，則型別必須從它們自己的 <xref:System.Object.Finalize%2A> 方法呼叫基底類別 <xref:System.Object.Finalize%2A>。  C\# 編譯器會自動將呼叫加入到基底類別完成項。  
+## <a name="rule-description"></a>規則描述  
+ 最終化必須透過繼承階層架構 (Inheritance Hierarchy) 進行傳播。 若要確保這種情況，類型必須呼叫其基底類別<xref:System.Object.Finalize%2A>方法從其本身內<xref:System.Object.Finalize%2A>方法。 C# 編譯器會自動新增呼叫基底類別完成項。  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請從您的 <xref:System.Object.Finalize%2A> 方法呼叫基底型別的 <xref:System.Object.Finalize%2A> 方法。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，呼叫基底型別<xref:System.Object.Finalize%2A>方法，從您<xref:System.Object.Finalize%2A>方法。  
   
-## 隱藏警告的時機  
- 請勿隱藏此規則的警告。  有些目標為 Common Language Runtime 的編譯器會將基底型別的完成項插入 Microsoft Intermediate Language \(MSIL\)。  如果報告這項規則的警告，則編譯器不會插入該呼叫，而您必須將它加入至程式碼。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。 某些以 common language runtime 為目標的編譯器插入的 Microsoft intermediate language (MSIL) 中呼叫基底類型完成項。 如果此規則的警告報告時，編譯器不會插入該呼叫，您必須將它加入您的程式碼。  
   
-## 範例  
- 下列 Visual Basic 範例會顯示在它的基底類別中正確呼叫 <xref:System.Object.Finalize%2A> 方法的型別 `TypeB`。  
+## <a name="example"></a>範例  
+ 下列 Visual Basic 範例顯示型別`TypeB`正確呼叫<xref:System.Object.Finalize%2A>其基底類別中的方法。  
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
   
-## 請參閱  
- [處置模式](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>另請參閱  
+ [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -1,40 +1,40 @@
 ---
-title: "IDiaSymbol::get_isAcceleratorStubFunction | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::get_isAcceleratorStubFunction |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: cc4ea375-76f6-4ba8-baed-c5fa82108137
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f6a7d2f27e776b37c392eb0116425ceeb6916031
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isAcceleratorStubFunction
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-表示符號是否對應於為對應到 `parallel_for_each` 呼叫的快速編譯著色器的最上層函式符號。  
+# <a name="idiasymbolgetisacceleratorstubfunction"></a>IDiaSymbol::get_isAcceleratorStubFunction
+指出是否符號對應至最上層函式符號的著色器編譯對應於 accelerator`parallel_for_each`呼叫。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT get_isAcceleratorStubFunction(   
    BOOL* pFlag);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pFlag`  
- \[out\] 表示 `BOOL` 指標符號是否對應於為對應到 `parallel_for_each` 呼叫的快速編譯著色器的最上層函式符號。  
+ [out]指標`BOOL`，指出是否符號對應至最上層函式符號的著色器編譯對應於 accelerator`parallel_for_each`呼叫。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`;否則，會傳回 `S_FALSE` 或錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,56 +1,40 @@
 ---
-title: Inspect XAML properties while debugging | Microsoft Docs
+title: "偵錯時檢查 XAML 屬性 |Microsoft 文件"
 ms.custom: 
 ms.date: 03/06/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 24dc103b195fbf0110a6c760beb9eb8e3ce305ba
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: f587c0241452d995a6676ca16d878c775da4750f
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
-# <a name="inspect-xaml-properties-while-debugging"></a>Inspect XAML properties while debugging
-You can get a real-time view of your running XAML code with the **Live Visual Tree** and the **Live Property Explorer**. These tools give you a tree view of the UI elements of your running XAML application, and show you the runtime properties of any UI element you select.  
+# <a name="inspect-xaml-properties-while-debugging"></a>在偵錯時檢查 XAML 屬性
+您可以取得與您執行的 XAML 程式碼的即時檢視**即時視覺化樹狀結構**和**即時屬性總管**。 這些工具提供您執行中之 XAML 應用程式 UI 項目的樹狀檢閱，並且顯示任何您所選取之 UI 項目的執行階段屬性。  
   
- You can use these tools in the following configurations:  
+ 您可以在下列設定中使用這些工具：  
   
-|Type of App|Operating System and Tools|  
+|應用程式類型|作業系統與工具|  
 |-----------------|--------------------------------|  
-|Windows Presentation Foundation (4.0 and above) applications|Windows 7 and above|  
-|Windows Store and Windows Phone 8.1 apps|Windows 10 and above, with the [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
-|Universal Windows apps|Windows 10 and above, with the [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
+|Windows Presentation Foundation (4.0 和更新版本) 應用程式|Windows 7 和更新版本|  
+|Windows 8.1 和 Windows Phone 8.1 應用程式|Windows 10 和更新版本，與[Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
+|通用 Windows 應用程式|Windows 10 和更新版本，與[Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|  
   
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>Looking at Elements in the Live Visual Tree  
- Let's get started with a very simple WPF application that has a list view and a button. Every time you click the button, another item is added to the list. Even-numbered items are colored gray, and odd-numbered items are colored yellow.  
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>查看即時視覺化樹狀中的項目  
+ 讓我們開始使用非常簡單的 WPF 應用程式具有清單檢視和按鈕。 每當您按一下按鈕，就會將另一個項目加入清單。 偶數的項目以灰色顯示，而奇數項目則以黃色顯示。  
   
- Create a new C# WPF application (File > New > Project, then select C# and find WPF Application). Name it **TestXAML**.  
+ 建立新的 C# WPF 應用程式 (檔案 > 新增 > 專案，然後選取 C# 和尋找 WPF 應用程式)。 命名**TestXAML**。  
   
- Change MainWindow.xaml to the following:  
+ 將 MainWindow.xaml 變更成如下：  
   
 ```xaml  
 <Window x:Class="TestXAML.MainWindow"  
@@ -68,9 +52,9 @@ You can get a real-time view of your running XAML code with the **Live Visual Tr
 </Window>  
 ```  
   
- Add the following command handler to the MainWindow.xaml.cs file:  
+ 將下列的命令處理常式加入 MainWindow.xaml.cs 檔案：  
   
-```C# 
+```csharp 
 int count;
 
 private void button_Click(object sender, RoutedEventArgs e)  
@@ -89,37 +73,37 @@ private void button_Click(object sender, RoutedEventArgs e)
 }  
 ```  
   
- Build the project and start debugging. (The build configuration must be Debug, not Release. For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).)  
+ 建置此專案並開始偵錯。 (組建組態必須為偵錯，而非發行。 如需建置組態的詳細資訊，請參閱[了解建置組態](../ide/understanding-build-configurations.md)。)  
   
- When the window comes up, click the **Add Item** button a couple of times. You should see something like this:  
+ 當視窗出現時，按一下 **加入項目**按鈕數次。 您應該會看到類似下面的內容：  
   
- ![Main window of the app](../debugger/media/livevisualtree-app.png "LiveVIsualTree-App")  
+ ![應用程式的主視窗](../debugger/media/livevisualtree-app.png "LiveVIsualTree 應用程式")  
   
- Now open the **Live Visual Tree** window (**Debug > Windows > Live Visual Tree**, or find it along the left side of the IDE). Drag it away from its docking position so we can look at this window and the **Live Properties** window side by side. In the **Live Visual Tree** window, expand the **ContentPresenter** node. It should contain nodes for the button and the list box. Expand the list box (and then the **ScrollContentPresenter** and the **ItemsPresenter**) to find the list box items. The window should look like this:  
+ 現在開啟**即時視覺化樹狀結構**視窗 (**偵錯 > Windows > 即時視覺化樹狀結構**，或沿著此 IDE 的左側尋找)。 將它拖曳離開停駐位置，讓我們來看看此視窗和**即時屬性**視窗並排顯示。 在**即時視覺化樹狀結構**視窗中，展開  **ContentPresenter**節點。 其應包含按鈕和清單方塊的節點。 展開清單方塊 (然後**展開 ScrollContentPresenter**和**ItemsPresenter**) 來尋找清單方塊項目。 視窗類似下圖所示：  
   
- ![ListBoxItems in the Live Visual Tree](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree-ListBoxItems")  
+ ![即時視覺化樹狀結構中的 ListBoxItems](../debugger/media/livevisualtree-listboxitems.png "LiveVisualTree ListBoxItems")  
   
- Go back to the application window and add a few more items. You should see more list box items appear in the **Live Visual Tree**.  
+ 回到應用程式視窗並再加入一些項目。 您應該會看到更多的清單方塊項目，會出現在**即時視覺化樹狀結構**。  
   
- Now let's look at the properties of one of the list box items. Select the first list box item in the **Live Visual Tree** and click the **Show Properties** icon on the toolbar. The **Live Property Explorer** should appear. Note that the **Content** field is "Item1", and the **Background** field is **#FFFFFFE0** (light yellow). Go back to the **Live Visual Tree** and select the second list box item. The **Live Property Explorer** should show that the **Content** field is "Item2", and the **Background** field is **#FFD3D3D3** (light gray).  
+ 現在讓我們看看其中一個清單方塊項目的屬性。 選取第一個清單方塊項目中的**即時視覺化樹狀結構**按一下**顯示屬性**工具列上的圖示。 **即時屬性總管**應該會出現。 請注意，**內容**欄位是"Item1"，而**背景**欄位是**#FFFFFFE0** （淺黃色）。 請返回**即時視覺化樹狀結構**並選取第二個清單方塊項目。 **即時屬性總管**應該會顯示**內容**欄位是"Item2"，而**背景**欄位是**#FFD3D3D3** （淺灰色).  
   
- The actual structure of the XAML has a lot of elements that you're probably not directly interested in, and if you don't know the code well you might have a hard time navigating the tree to find what you're looking for. So the **Live Visual Tree** has a couple of ways that let you use the application's UI to help you find the element you want to examine.  
+ XAML 的實際結構有許多您可能不是直接興趣的項目，如果您不熟悉程式碼您可能會很難在巡覽樹狀結構時找到您要尋找的。 所以**即時視覺化樹狀結構**有好幾種方式可讓您使用應用程式的 UI 來協助您找出您想要檢查的項目。  
   
- **Enable selection in the running application**. You can enable this mode when you select the leftmost button on the **Live Visual Tree** toolbar. With this mode on, you can select a UI element in the application, and the **Live Visual Tree** (and the **Live Property Viewer**) automatically updates to show the node in the tree corresponding to that element, and its properties.  
+ **在執行中應用程式中啟用選取**。 當您選取最左邊的按鈕上時，即可啟用此模式**即時視覺化樹狀結構**工具列。 使用此模式後，您可以選取 UI 項目在應用程式，而**即時視覺化樹狀結構**(和**即時屬性檢閱器**) 會自動更新以顯示的節點在樹狀目錄中對應至該項目，和其屬性。  
   
- **Display layout adorners in the running application**. You can enable this mode when you select the button that is immediately to the right of the Enable selection button. When **Display layout adorners** is on, it causes the application window to show horizontal and vertical lines along the bounds of the selected object so you can see what it aligns to, as well as rectangles showing the margins. For example, turn both **Enable selection** and **Display layout** on, and select the **Add Item** text block in the application. You should see the text block node in the **Live Visual Tree** and the text block properties in the **Live Property Viewer**, as well as the horizontal and vertical lines on the bounds of the text block.  
+ **在執行中應用程式顯示版面配置提示**。 只要選取緊鄰 [啟用選取範圍] 按鈕右邊的按鈕時，即可啟用此模式。 當**顯示版面配置提示**已開啟，它會導致應用程式視窗以顯示所選物件的界限沿著水平和垂直線條，好讓您可以看到什麼其向何處對齊，以及顯示此邊界的矩形。 例如，同時開啟**啟用選取**和**顯示版面配置**，並選取**加入項目**應用程式中的文字區塊。 您應該會看到中的文字區塊節點**即時視覺化樹狀結構**和中的文字區塊屬性**即時屬性檢閱器**，以及文字區塊界限內的水平和垂直線條。  
   
- ![LivePropertyViewer in DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")  
+ ![在 DisplayLayout LivePropertyViewer](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer DisplayLayout")  
   
- **Preview Selection**. You can enable this mode by selecting the third button from the left on the Live Visual Tree toolbar. This mode shows the XAML where the element was declared, if you have access to the source code of the application. Select **Enable selection** and **Preview selection**, and then you select the button in our test application. The MainWindow.xaml file opens in Visual Studio and the cursor is placed on the line where the button is defined.  
+ **預覽選取範圍**。 只要選取 [即時視覺化樹狀] 工具列上從左邊數來的第三個按鈕，即可啟用這個模式。 如果您可存取該應用程式的原始程式碼，則此模式會顯示宣告此項目的 XAML。 選取**啟用選取**和**預覽選取範圍**，然後在測試應用程式中選取 [] 按鈕。 MainWindow.xaml 檔案會在 Visual Studio 中開啟，而且游標會置於定義按鈕位置的那一行。  
   
-## <a name="using-xaml-tools-with-running-applications"></a>Using XAML tools with running applications  
- You can use these XAML tools even when you don't have the source code. When you attach to a running XAML application, you can use the **Live Visual Tree** on the UI elements of that application too. Here's an example, using the same WPF test application we used before.  
+## <a name="using-xaml-tools-with-running-applications"></a>搭配執行中的應用程式使用 XAML 工具  
+ 即使沒有原始程式碼，您可以使用這些 XAML 工具。 當您附加至執行中 XAML 應用程式時，您可以使用**即時視覺化樹狀結構**上該應用程式的 UI 項目太。 以下是使用相同我們之前使用的 WPF 測試應用程式的範例。  
   
-1.  Start the **TestXaml** application in the Release configuration. You cannot attach to a process that is running in a **Debug** configuration.  
+1.  啟動**TestXaml**發行組態中的應用程式。 您無法附加至執行中的處理序**偵錯**組態。  
   
-2.  Open a second instance of Visual Studio and click **Debug > Attach to Process**. Find **TestXaml.exe** in the list of available processes, and click **Attach**.  
+2.  開啟 Visual Studio 的第二個執行個體，然後按一下**偵錯 > 附加至處理序**。 尋找**TestXaml.exe**可用的處理序，然後按一下清單中**附加**。  
   
-3.  The application starts running.  
+3.  應用程式會開始執行。  
   
-4.  In the second instance of Visual Studio, open the **Live Visual Tree** (**Debug > Windows > Live Visual Tree**). You should see the **TestXaml** UI elements, and you should be able to manipulate them as you did while debugging the application directly.
+4.  在 Visual Studio 的第二個執行個體，開啟**即時視覺化樹狀結構**(**偵錯 > Windows > 即時視覺化樹狀結構**)。 您應該會看到**TestXaml** UI 項目，而且您應該要能夠直接偵錯應用程式時一樣管理它們。

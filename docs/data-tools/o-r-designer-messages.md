@@ -1,5 +1,5 @@
 ---
-title: O-R Designer Messages | Microsoft Docs
+title: "O R 設計工具訊息 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,72 +7,57 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
 ms.technology: vs-data-tools
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: bf4ba5fbd5b8183a5b5155ca49b33fabe21e8446
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="or-designer-messages"></a>O/R Designer Messages
-This topic lists the messages that you can encounter when you work with the O/R Designer.  
+# <a name="or-designer-messages"></a>O/R 設計工具訊息
+本主題列出使用 O/R 設計工具時可能會出現的訊息。  
   
-## <a name="in-this-section"></a>In This Section  
- [Cannot create an association \<association name> - property listed twice](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
+## <a name="in-this-section"></a>本章節內容  
+ [無法建立關聯\<關聯名稱 >-屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
- [Cannot create an association \<association name> - property types do not match](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
+ [無法建立關聯\<關聯名稱 >-屬性類型不相符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  
   
- [Changing the return type of a DataContext method cannot be undone](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
+ [變更 DataContext 方法的傳回型別將無法復原](../data-tools/changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md)  
   
- [Could not retrieve schema information for database object \<object name>](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
+ [無法擷取資料庫物件的結構描述資訊\<物件名稱 >](../data-tools/could-not-retrieve-schema-information-for-database-object-object-name.md)  
   
- [One or more selected database objects return a schema that does not match the schema of the target class](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
+ [一個或多個選取的資料庫物件傳回的結構描述與目標類別的結構描述不相符](../data-tools/one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class.md)  
   
- [One or more selected items contain a data type that is not supported by the designer](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
+ [一個或多個選取的項目包含設計工具不支援的資料類型](../data-tools/one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md)  
   
- [The connection property in the Application Settings file is missing or incorrect](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
+ [應用程式設定檔中的連線屬性遺漏或不正確](../data-tools/the-connection-property-in-the-application-settings-file-is-missing-or-incorrect.md)  
   
- [The designer cannot be modified while debugging](../data-tools/the-designer-cannot-be-modified-while-debugging.md)  
+ [偵錯期間無法修改設計工具](../data-tools/the-designer-cannot-be-modified-while-debugging.md)  
   
- [The objects you are adding to the designer use a different data connection than the designer is currently using](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
+ [您要新增至此設計工具的物件使用了不同於設計工具目前所使用的資料連線](../data-tools/the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer-is-currently-using.md)  
   
- [The property \<property name> cannot be deleted](../data-tools/the-property-property-name-cannot-be-deleted.md)  
+ [屬性\<屬性名稱 > 無法刪除](../data-tools/the-property-property-name-cannot-be-deleted.md)  
   
- [The property \<property name> cannot be deleted because it is participating in the association \<association name>](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
+ [屬性\<屬性名稱 > 無法刪除，因為它正參與關聯\<關聯名稱 >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)  
   
- [The selected class cannot be deleted because it is used as a return type for one or more DataContext methods](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
+ [無法刪除所選取的類別，因為它是用來當做一或多個 DataContext 方法的傳回型別](../data-tools/the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods.md)  
   
- [The selected connection uses an unsupported database provider](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
+ [選取的連線使用不支援的資料庫提供者](../data-tools/the-selected-connection-uses-an-unsupported-database-provider.md)  
   
- [This related method is the backing method for the following default insert, update, or delete methods](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
+ [此關聯方法是下列預設插入、更新或刪除方法的支援方法](../data-tools/this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md)  
   
- [Warning. Changes have been made to the Configure Behavior dialog box that have not been applied](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
+ [警告。尚未套用的設定行為對話方塊已經變更了](../data-tools/warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied.md)  
   
- [You have selected a database object from an unsupported database provider](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
+ [您已從不支援的資料庫提供者選取資料庫物件](../data-tools/you-have-selected-a-database-object-from-an-unsupported-database-provider.md)  
   
-## <a name="reference"></a>Reference  
+## <a name="reference"></a>參考資料  
  <xref:System.Data.Linq>  
   
-## <a name="related-sections"></a>Related Sections  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+## <a name="related-sections"></a>相關章節  
+ [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Visual Studio 中的 LINQ to SQL 工具)  
   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

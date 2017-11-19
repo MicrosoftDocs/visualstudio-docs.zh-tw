@@ -1,47 +1,48 @@
 ---
-title: "CA1308：必須將字串標準化為大寫字母 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1308"
-  - "NormalizeStringsToUppercase"
-helpviewer_keywords: 
-  - "NormalizeStringsToUppercase"
-  - "CA1308"
+title: "Ca1308： 必須將字串標準化為大寫字母 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1308
+- NormalizeStringsToUppercase
+helpviewer_keywords:
+- NormalizeStringsToUppercase
+- CA1308
 ms.assetid: 7e9a7457-3f93-4938-ac6f-1389fba8d9cc
-caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8c9746d150fb2a47b1ce874ad003afd86d178e9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1308：必須將字串標準化為大寫字母
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1308-normalize-strings-to-uppercase"></a>CA1308：必須將字串標準化為大寫字母
 |||  
 |-|-|  
-|型別名稱|NormalizeStringsToUppercase|  
+|TypeName|NormalizeStringsToUppercase|  
 |CheckId|CA1308|  
 |分類|Microsoft.Globalization|  
-|中斷變更|中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 作業會將字串正常化為小寫。  
+## <a name="cause"></a>原因  
+ 作業會正規化為小寫的字串。  
   
-## 規則描述  
- 字串應該標準化為大寫字母。  有一小組的字元在轉換成小寫字母時無法達成來回行程。  達成來回行程即代表將字元從一個地區設定轉換為以不同方式表示字元資料的其他地區設定，再從所轉換的字元中正確地擷取原始字元。  
+## <a name="rule-description"></a>規則描述  
+ 字串應該標準化為大寫字母。 小組的字元，它們會轉換成小寫字母時，無法構成來回行程。 若要進行來回轉換字元從一個地區設定為以不同的方式，代表字元資料的另一個地區設定，然後以精確地表示會從已轉換的字元擷取原始字元。  
   
-## 如何修正違規  
- 變更將字串轉換為小寫字母的運算，讓字串改為轉換成大寫字母。  例如，將 `String.ToLower(CultureInfo.InvariantCulture)` 變更為 `String.ToUpper(CultureInfo.InvariantCulture)`。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 變更操作，將字串轉換成小寫，以便將字串轉換成改為大寫。 例如，變更`String.ToLower(CultureInfo.InvariantCulture)`至`String.ToUpper(CultureInfo.InvariantCulture)`。  
   
-## 隱藏警告的時機  
- 當您不是依據結果進行安全性決策時 \(例如，將結果顯示在 UI 中\)，可以放心地隱藏警告訊息。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可安全地隱藏警告訊息，當您不會進行安全性決策 （例如，當您要將它顯示在 UI 中） 的結果。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [全球化警告](../code-quality/globalization-warnings.md)

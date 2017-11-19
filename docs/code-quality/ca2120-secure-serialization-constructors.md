@@ -1,11 +1,10 @@
 ---
-title: 'CA2120: Secure serialization constructors | Microsoft Docs'
+title: "Ca2120： 必須保護序列化建構函式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,62 +14,47 @@ helpviewer_keywords:
 - SecureSerializationConstructors
 - CA2120
 ms.assetid: e9989da1-55a0-43f8-9aa9-da86afae3b41
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8183854c3fce2d3f838435696786355b0e94f5c8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9e1896bc8f2c9c15c4aa7b9c7ec323412d494db0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2120-secure-serialization-constructors"></a>CA2120: Secure serialization constructors
+# <a name="ca2120-secure-serialization-constructors"></a>CA2120：必須保護序列化建構函式
 |||  
 |-|-|  
 |TypeName|SecureSerializationConstructors|  
 |CheckId|CA2120|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- The type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, is not a delegate or interface, and is declared in an assembly that allows partially trusted callers. The type has a constructor that takes a <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> object and a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> object (the signature of the serialization constructor). This constructor is not secured by a security check, but one or more of the regular constructors in the type is secured.  
+## <a name="cause"></a>原因  
+ 型別實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面、 委派或介面，並不允許部分信任呼叫端的組件中宣告。 類型具有的建構函式<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。 這個建構函式未受到安全性檢查，但一個或多個規則建構函式類型中受到保護。  
   
-## <a name="rule-description"></a>Rule Description  
- This rule is relevant for types that support custom serialization. A type supports custom serialization if it implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface. The serialization constructor is required and is used to de-serialize, or re-create objects that have been serialized using the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> method. Because the serialization constructor allocates and initializes objects, security checks that are present on regular constructors must also be present on the serialization constructor. If you violate this rule, callers that could not otherwise create an instance could use the serialization constructor to do this.  
+## <a name="rule-description"></a>規則描述  
+ 此規則是關於支援自訂序列化的類型。 型別支援自訂序列化，如果它實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面。 序列化建構函式需要，而用來還原序列化，或重新建立使用序列化的物件<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。 因為序列化建構函式配置，並初始化物件，也必須存在於上序列化建構函式都存在於規則建構函式的安全性檢查。 如果您違反此規則，否則不可以建立執行個體的呼叫端可以使用序列化建構函式若要這樣做。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, protect the serialization constructor with security demands that are identical to those protecting other constructors.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，保護序列化建構函式具有相同的保護其他建構函式的安全性要求。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a violation of the rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的違規。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的類型。  
   
  [!code-csharp[FxCop.Security.SerialCtors#1](../code-quality/codesnippet/CSharp/ca2120-secure-serialization-constructors_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

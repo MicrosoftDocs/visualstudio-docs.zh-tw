@@ -1,11 +1,10 @@
 ---
-title: 'CA2230: Use params for variable arguments | Microsoft Docs'
+title: "Ca2230： 必須使用 params 做為變數引數 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,43 @@ helpviewer_keywords:
 - CA2230
 - UseParamsForVariableArguments
 ms.assetid: bf98b733-4855-4110-9f16-eba5a9e79421
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8e7037e7b642aa36bb1a351113e7d09dc1ea2537
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 10920c4ff9083b52e2d35f7fa151644b89bb1102
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Use params for variable arguments
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230：必須使用 params 做為變數引數
 |||  
 |-|-|  
 |TypeName|UseParamsForVariableArguments|  
 |CheckId|CA2230|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Usage|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected type contains a public or protected method that uses the `VarArgs` calling convention.  
+## <a name="cause"></a>原因  
+ 公用或受保護的類型包含公用或受保護的方法使用`VarArgs`呼叫慣例。  
   
-## <a name="rule-description"></a>Rule Description  
- The `VarArgs` calling convention is used with certain method definitions that take a variable number of parameters. A method using the `VarArgs` calling convention is not Common Language Specification (CLS) compliant and might not be accessible across programming languages.  
+## <a name="rule-description"></a>規則描述  
+ `VarArgs`呼叫慣例會搭配接受可變數目的參數數特定方法定義。 方法使用`VarArgs`呼叫慣例不是 Common Language Specification (CLS) 相容，而且可能無法存取跨程式設計語言。  
   
- In C#, the `VarArgs` calling convention is used when a method's parameter list ends with the `__arglist` keyword. Visual Basic does not support the `VarArgs` calling convention, and Visual C++  allows its use only in unmanaged code that uses the ellipse `...` notation.  
+ 在 C# 中，`VarArgs`方法的參數清單的結尾時，呼叫慣例會使用`__arglist`關鍵字。 Visual Basic 不支援`VarArgs`呼叫慣例和 Visual c + + 中使用橢圓形的 unmanaged 程式碼只允許其使用`...`標記法。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule in C#, use the [params](/dotnet/csharp/language-reference/keywords/params) keyword instead of `__arglist`.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，C# 中，使用[params](/dotnet/csharp/language-reference/keywords/params)關鍵字取代`__arglist`。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows two methods, one that violates the rule and one that satisfies the rule.  
+## <a name="example"></a>範例  
+ 下列範例會示範兩種方法違反此規則，一個符合規則。  
   
  [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Reflection.CallingConventions?displayProperty=fullName>   
- [Language Independence and Language-Independent Components](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

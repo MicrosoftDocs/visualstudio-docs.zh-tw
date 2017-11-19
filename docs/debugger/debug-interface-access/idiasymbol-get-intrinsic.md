@@ -1,55 +1,54 @@
 ---
-title: "IDiaSymbol::get_intrinsic | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_intrinsic 方法"
+title: "Idiasymbol:: Get_intrinsic |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_intrinsic method
 ms.assetid: f969f595-d9f9-48b9-adaa-63a6e4e09575
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 717413e6e3a00167bcc4cbdf6d7b67812b1a71cf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_intrinsic
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指定類別是否為內建的型別。  
+# <a name="idiasymbolgetintrinsic"></a>IDiaSymbol::get_intrinsic
+擷取指定類別是否為內建類型的旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_intrinsic(   
-   BOOL* pRetVal)  
+```C++  
+HRESULT get_intrinsic(   
+   BOOL* pRetVal)  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回`TRUE`如果類別是內建的型別 ； 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`如果類別是內建類型; 否則傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia100.dll  
+ DLL: msdia100.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

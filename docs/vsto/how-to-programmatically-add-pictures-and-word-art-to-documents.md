@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Add Pictures and Word Art to Documents | Microsoft Docs'
+title: "如何： 以程式設計方式將圖片及文字藝術師加入文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,93 +17,97 @@ helpviewer_keywords:
 - graphics, adding to Word documents
 - WordArt, adding to documents
 ms.assetid: 944e1858-bc7c-471f-b5e7-adf3b0fa574d
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 921234bb8d2e226035730c676d72b0162b255b2b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: a30c865a1bee9f3e8a75d5362688f1a83baba02a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>How to: Programmatically Add Pictures and Word Art to Documents
-  You can add pictures and drawing objects to your documents at design time or during run time. WordArt enables you to add decorative text to Microsoft Office Word documents. These special text effects are drawing objects that you can customize and insert into your document.  
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以程式設計方式將圖片及文字藝術師加入至文件
+  您可以在設計階段或執行階段，將圖片和繪圖物件加入至您的文件。 文字藝術師可讓您將裝飾文字加入至 Microsoft Office Word 文件。 這些特殊文字效果是繪圖物件，您可自訂並將它們插入至文件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="adding-a-picture-at-design-time"></a>Adding a Picture at Design Time  
- If you are developing a document-level customization, you can add a picture to the document at design time.  
+## <a name="adding-a-picture-at-design-time"></a>在設計階段加入圖片  
+ 如果您正在開發文件層級自訂，可以在設計階段將圖片加入至文件。  
   
-#### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>To add a picture to a Word document at design time  
+#### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>在設計階段將圖片加入至 Word 文件  
   
-1.  Place your cursor where you want to insert the picture in the document.  
+1.  請將游標置於想要在文件中插入圖片的位置。  
   
-2.  Click the **Insert** tab of the Ribbon.  
+2.  按一下**插入**功能區 索引標籤。  
   
-3.  In the **Illustrations** group, click **Picture**.  
+3.  在**圖例**群組中，按一下**圖片**。  
   
-4.  In the **Insert Picture** dialog box, navigate to the picture you want to insert, and click **Insert**.  
+4.  在**插入圖片**對話方塊中，導覽至您想要插入的圖片，然後按一下**插入**。  
   
-     The picture is added to your document at the current cursor location.  
+     圖片隨即加入文件中目前的游標位置。  
   
-## <a name="adding-a-picture-at-run-time"></a>Adding a Picture at Run Time  
- You can insert a picture into a document at the current cursor location.  
+## <a name="adding-a-picture-at-run-time"></a>在執行階段加入圖片  
+ 您可以將圖片插入文件中目前游標的位置。  
   
-#### <a name="to-add-a-picture-at-the-cursor-location"></a>To add a picture at the cursor location  
+#### <a name="to-add-a-picture-at-the-cursor-location"></a>在游標位置加入圖片  
   
-1.  Call the <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> method of the <xref:Microsoft.Office.Interop.Word.InlineShapes> collection and pass in the name of the file.  
+1.  呼叫 <xref:Microsoft.Office.Interop.Word.InlineShapes> 集合的 <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> 方法，並傳入檔案的名稱。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]  [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]  
+     [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
+     [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]  
   
-## <a name="adding-wordart-at-design-time"></a>Adding WordArt at Design Time  
- If you are developing a document-level customization, you can add WordArt to the document at design time.  
+## <a name="adding-wordart-at-design-time"></a>在設計階段加入文字藝術師  
+ 如果您正在開發文件層級自訂，可以在設計階段將文字藝術師加入至文件。  
   
-#### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>To add WordArt to a Word document at design time  
+#### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>在設計階段將文字藝術師加入至 Word 文件  
   
-1.  Place your cursor where you want to insert the WordArt in the document.  
+1.  請將游標置於想要在文件中插入文字藝術師的位置。  
   
-2.  Click the **Insert** tab of the Ribbon.  
+2.  按一下**插入**功能區 索引標籤。  
   
-3.  In the **Text** group, click **WordArt**, and then select a WordArt style.  
+3.  在**文字**群組中，按一下**文字藝術師**，然後選取 文字藝術師樣式。  
   
-4.  Add the text that you want to appear in the document to the **Edit WordArt Text** dialog box and click **OK**.  
+4.  新增您想要顯示之文件中的文字**編輯文字藝術師文字**對話方塊，按一下**確定**。  
   
-     The text is added to your document with the selected WordArt style applied.  
+     加入至文件的文字即會套用選取的文字藝術師樣式。  
   
-## <a name="adding-wordart-at-run-time"></a>Adding WordArt at Run Time  
- You can insert WordArt into a document at the current cursor location. The procedure is different for document-level customizations and VSTO Add-ins.  
+## <a name="adding-wordart-at-run-time"></a>在執行階段加入文字藝術師  
+ 您可以將文字藝術師插入至文件中目前游標的位置。 文件層級自訂與 VSTO 增益集的程序不同。  
   
-#### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>To add WordArt at the cursor location in a document-level customization  
+#### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>在文件層級自訂的游標位置加入文字藝術師  
   
-1.  Get the left and top position of the current cursor location.  
+1.  取得目前游標位置的左端和頂端位置。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]  [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]  
+     [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
+     [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]  
   
-2.  Call the <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> method of the <xref:Microsoft.Office.Interop.Word.Shapes> object in the document.  
+2.  請呼叫文件中 <xref:Microsoft.Office.Interop.Word.Shapes> 物件的 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 方法。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]  [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]  
+     [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
+     [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]  
   
-#### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>To add WordArt at the cursor location in a VSTO Add-in  
+#### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>在 VSTO 增益集的游標位置加入文字藝術師  
   
-1.  Get the left and top position of the current cursor location.  
+1.  取得目前游標位置的左端和頂端位置。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]  
   
-2.  Call the <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> method of the <xref:Microsoft.Office.Interop.Word.Shapes> object of the active document (or a different document that you specify).  
+2.  請呼叫使用中文件 (或您所指定的不同文件) 之 <xref:Microsoft.Office.Interop.Word.Shapes> 物件的 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 方法。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
+## <a name="compiling-the-code"></a>編譯程式碼  
   
--   A picture named **SamplePicture.jpg** must exist on drive C.  
+-   名為圖片**SamplePicture.jpg**必須同時位於 c 磁碟機。  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Open Existing Documents](../vsto/how-to-programmatically-open-existing-documents.md)   
- [How to: Programmatically Insert Text into Word Documents](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
- [How to: Programmatically Restore Selections After Searches](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
- [How to: Programmatically Save Documents](../vsto/how-to-programmatically-save-documents.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計方式開啟現有文件](../vsto/how-to-programmatically-open-existing-documents.md)   
+ [如何： 以程式設計方式將文字插入 Word 文件](../vsto/how-to-programmatically-insert-text-into-word-documents.md)   
+ [如何： 以程式設計方式搜尋後還原選取](../vsto/how-to-programmatically-restore-selections-after-searches.md)   
+ [如何： 以程式設計方式儲存文件](../vsto/how-to-programmatically-save-documents.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

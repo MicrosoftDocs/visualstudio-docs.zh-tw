@@ -1,11 +1,10 @@
 ---
-title: 'CA1032: Implement standard exception constructors | Microsoft Docs'
+title: "Ca1032： 必須實作標準例外狀況建構函式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,63 +14,47 @@ helpviewer_keywords:
 - CA1032
 - ImplementStandardExceptionConstructors
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 42fd1ecaab987ba35fe180c99a6f54f48a30067c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7300465ce9cef97cf322a7667e775852e22edb4e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implement standard exception constructors
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032：必須實作標準例外狀況建構函式
 |||  
 |-|-|  
 |TypeName|ImplementStandardExceptionConstructors|  
 |CheckId|CA1032|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A type extends <xref:System.Exception?displayProperty=fullName> and does not declare all the required constructors.  
+## <a name="cause"></a>原因  
+ 型別擴充<xref:System.Exception?displayProperty=fullName>並不會宣告所有必要的建構函式。  
   
-## <a name="rule-description"></a>Rule Description  
- Exception types must implement the following constructors:  
+## <a name="rule-description"></a>規則描述  
+ 例外狀況類型必須實作下列建構函式：  
   
--   public NewException()  
+-   公用 NewException()  
   
--   public NewException(string)  
+-   公用 NewException(string)  
   
--   public NewException(string, Exception)  
+-   公用 NewException （字串、 例外狀況）  
   
--   protected or private NewException(SerializationInfo, StreamingContext)  
+-   受保護或私用 NewException （SerializationInfo，StreamingContext）  
   
- Failure to provide the full set of constructors can make it difficult to correctly handle exceptions. For example, the constructor that has the signature `NewException(string, Exception)` is used to create exceptions that are caused by other exceptions. Without this constructor you cannot create and throw an instance of your custom exception that contains an inner (nested) exception, which is what managed code should do in such a situation. The first three exception constructors are public by convention. The fourth constructor is protected in unsealed classes, and private in sealed classes. For more information, see [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
+ 無法提供整組的建構函式會導致難以正確地處理例外狀況。 例如，建構函式的簽章`NewException(string, Exception)`用來建立其他的例外狀況所造成的例外狀況。 沒有這個建構函式無法建立及擲回自訂例外狀況，其中包含內部 （巢狀） 例外狀況的執行個體，這是 managed 程式碼應該在這種情況下。 第三個例外狀況建構函式是公用的慣例。 第四個建構函式是在未密封的類別中，受保護與私用在密封類別。 如需詳細資訊，請參閱[CA2229： 實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, add the missing constructors to the exception, and make sure that they have the correct accessibility.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，加入遺漏的建構函式的例外狀況，並確定它們有正確的存取範圍。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the violation is caused by using a different access level for the public constructors.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告，違規因使用不同的存取層級的公用建構函式。  
   
-## <a name="example"></a>Example  
- The following example contains an exception type that violates this rule and an exception type that is correctly implemented.  
+## <a name="example"></a>範例  
+ 下列範例包含違反此規則的例外狀況類型以及已正確地實作的例外狀況類型。  
   
  [!code-csharp[FxCop.Design.ExceptionMultipleCtors#1](../code-quality/codesnippet/CSharp/ca1032-implement-standard-exception-constructors_1.cs)]

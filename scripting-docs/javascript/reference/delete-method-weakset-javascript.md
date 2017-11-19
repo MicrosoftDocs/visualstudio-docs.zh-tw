@@ -1,48 +1,51 @@
 ---
-title: "delete 方法 (WeakSet) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "delete 方法 (WeakSet) (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 19e93366-7d42-4abf-b7b9-fcf943fa17a3
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 46eeac8ddd0072712c1867bc2a419a4e3255ffd6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# delete 方法 (WeakSet) (JavaScript)
+# <a name="delete-method-weakset-javascript"></a>delete 方法 (WeakSet) (JavaScript)
 將指定的項目從 `WeakSet` 中移除。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 weaksetObj.delete(obj)  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `weaksetObj`  
- 必要項。  `WeakSet` 物件。  
+ 必要項。 `WeakSet` 物件。  
   
  `obj`  
- 必要項。  要移除的項目。  
+ 必要項。 要移除的項目。  
   
-## 屬性值\/傳回值  
+## <a name="property-valuereturn-value"></a>屬性值/傳回值  
  如果已移除項目，則為 `true`。  
   
-## 範例  
+## <a name="example"></a>範例  
  下列範例示範如何加入和刪除 `WeakSet` 的項目。  
   
-```javascript  
+```JavaScript  
 var ws = new WeakSet();  
   
 var str = new String("Thomas Jefferson");  
@@ -63,5 +66,5 @@ console.log(ws.has(str));
 // false  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv12](../../javascript/reference/includes/jsv12-md.md)]

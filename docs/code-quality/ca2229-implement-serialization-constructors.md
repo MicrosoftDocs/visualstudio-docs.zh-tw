@@ -1,11 +1,10 @@
 ---
-title: 'CA2229: Implement serialization constructors | Microsoft Docs'
+title: "CA2229： 實作序列化建構函式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,66 +14,51 @@ helpviewer_keywords:
 - CA2229
 - ImplementSerializationConstructors
 ms.assetid: 8e04d5fe-dfad-445a-972e-0648324fac45
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d604f1d7d1acdbf72681378dd5780d5e76c6aec6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5d262718e6728a87cb955019fff0ce95db2b49d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implement serialization constructors
+# <a name="ca2229-implement-serialization-constructors"></a>CA2229：請實作序列化建構函式
 |||  
 |-|-|  
 |TypeName|ImplementSerializationConstructors|  
 |CheckId|CA2229|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Usage|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- The type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, is not a delegate or interface, and one of the following conditions is true:  
+## <a name="cause"></a>原因  
+ 型別實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面、 不是委派或介面，而且下列條件的其中一種情況：  
   
--   The type does not have a constructor that takes a <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> object and a <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> object (the signature of the serialization constructor).  
+-   類型沒有建構函式之<xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>物件和<xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>物件 （序列化建構函式的簽章）。  
   
--   The type is unsealed and the access modifier for its serialization constructor is not protected (family).  
+-   類型是密封，而且其序列化建構函式的存取修飾詞不是受保護 （系列）。  
   
--   The type is sealed and the access modifier for its serialization constructor is not private.  
+-   型別密封格式，其序列化建構函式的存取修飾詞不是私用。  
   
-## <a name="rule-description"></a>Rule Description  
- This rule is relevant for types that support custom serialization. A type supports custom serialization if it implements the <xref:System.Runtime.Serialization.ISerializable> interface. The serialization constructor is required to deserialize, or re-create objects that have been serialized using the <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> method.  
+## <a name="rule-description"></a>規則描述  
+ 此規則是關於支援自訂序列化的類型。 型別支援自訂序列化，如果它實作<xref:System.Runtime.Serialization.ISerializable>介面。 序列化建構函式，才能還原序列化，或重新建立使用序列化的物件<xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName>方法。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the serialization constructor. For a sealed class, make the constructor private; otherwise, make it protected.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請實作序列化建構函式。 針對密封類別，讓建構函式成為 private，否則為 protected。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a violation of the rule. The type will not be deserializable, and will not function in many scenarios.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的違規。 型別將無法還原序列化，並在許多情況下將無法運作。  
   
-## <a name="example"></a>Example  
- The following example shows a type that satisfies the rule.  
+## <a name="example"></a>範例  
+ 下列範例會示範符合規則的類型。  
   
  [!code-csharp[FxCop.Usage.ISerializableCtor#1](../code-quality/codesnippet/CSharp/ca2229-implement-serialization-constructors_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2237: Mark ISerializable types with SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

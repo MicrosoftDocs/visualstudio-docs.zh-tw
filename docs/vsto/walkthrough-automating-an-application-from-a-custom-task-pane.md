@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Automating an Application from a Custom Task Pane | Microsoft Docs'
+title: "逐步解說： 自動化從自訂工作窗格應用程式 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,132 +18,136 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], PowerPoint
 - task panes [Office development in Visual Studio], automating applications
 ms.assetid: 77be5ab5-e330-4564-87ec-9cba564ba8f9
-caps.latest.revision: 37
-author: kempb
-ms.author: kempb
+caps.latest.revision: "37"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0b8ae724f9104943782583c523cffb3c1e6836da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c08f04af21e42761b9b9c7e1a760e71fe79d025a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>Walkthrough: Automating an Application from a Custom Task Pane
-  This walkthrough demonstrates how to create a custom task pane that automates PowerPoint. The custom task pane inserts dates into a slide when the user clicks a <xref:System.Windows.Forms.MonthCalendar> control that is on the custom task pane.  
+# <a name="walkthrough-automating-an-application-from-a-custom-task-pane"></a>逐步解說：運用自訂工作窗格自動化應用程式
+  此逐步解說示範如何建立會自動化 PowerPoint 的自訂工作窗格。 自訂工作窗格會在使用者按一下自訂工作窗格上的 <xref:System.Windows.Forms.MonthCalendar> 控制項時，將日期插入投影片。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Although this walkthrough uses PowerPoint specifically, the concepts demonstrated by the walkthrough are applicable to any applications that are listed above.  
+ 雖然這個逐步解說特地使用 PowerPoint，但所示範的概念同樣適用以上所列的任何應用程式。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Designing the user interface of the custom task pane.  
+-   設計自訂工作窗格的使用者介面。  
   
--   Automating PowerPoint from the custom task pane.  
+-   從自訂工作窗格自動化 PowerPoint。  
   
--   Displaying the custom task pane in PowerPoint.  
+-   在 PowerPoint 中顯示自訂工作窗格。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft PowerPoint 2010 or [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)].  
+-   Microsoft PowerPoint 2010 或 [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)]。  
   
-## <a name="creating-the-add-in-project"></a>Creating the Add-in Project  
- The first step is to create an VSTO Add-in project for PowerPoint.  
+## <a name="creating-the-add-in-project"></a>建立增益集專案  
+ 第一個步驟是建立 PowerPoint 的 VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create a PowerPoint VSTO Add-in project with the name **MyAddIn**, by using the PowerPoint Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  使用 [PowerPoint 增益集] 專案範本建立名為 **MyAddIn**的 PowerPoint VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **MyAddIn** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **MyAddIn** 專案加入 [方案總管] 。  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
- There is no visual designer for custom task panes, but you can design a user control with the layout you want. Later in this walkthrough, you will add the user control to the custom task pane.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
+ 自訂工作窗格沒有視覺化的設計工具，但是您可以根據需要設計使用者控制項的版面配置。 稍後在本逐步解說中，您會在自訂工作窗格中加入使用者控制項。  
   
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
   
-1.  On the **Project** menu, click **Add User Control**.  
+1.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。  
   
-2.  In the **Add New Item** dialog box, change the name of the user control to **MyUserControl**, and click **Add**.  
+2.  在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **MyUserControl**，然後按一下 [加入] 。  
   
-     The user control opens in the designer.  
+     使用者控制項隨即在設計工具中開啟。  
   
-3.  From the **Common Controls** tab of the **Toolbox**, drag a **MonthCalendar** control to the user control.  
+3.  從 [工具箱]  的 [通用控制項] 索引標籤，將 **MonthCalendar** 控制項拖曳至使用者控制項。  
   
-     If the **MonthCalendar** control is larger than the design surface of the user control, resize the user control to fit the **MonthCalendar** control.  
+     如果 **MonthCalendar** 控制項大於使用者控制項的設計介面，請配合 **MonthCalendar** 控制項調整使用者控制項的大小。  
   
-## <a name="automating-powerpoint-from-the-custom-task-pane"></a>Automating PowerPoint from the Custom Task Pane  
- The purpose of the VSTO Add-in is to put a selected date on the first slide of the active presentation. Use the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event of the control to add the selected date whenever it changes.  
+## <a name="automating-powerpoint-from-the-custom-task-pane"></a>從自訂工作窗格自動化 PowerPoint  
+ VSTO 增益集的用途是要在現用簡報的第一張投影片上放入選取的日期。 請使用控制項的 <xref:System.Windows.Forms.MonthCalendar.DateChanged> 事件，在選取的日期變更時加入該日期。  
   
-#### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>To automate PowerPoint from the custom task pane  
+#### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>若要從自訂工作窗格自動化 PowerPoint  
   
-1.  In the designer, double-click the <xref:System.Windows.Forms.MonthCalendar> control.  
+1.  在設計工具中，按兩下 <xref:System.Windows.Forms.MonthCalendar> 控制項。  
   
-     The **MyUserControl.cs** or **MyUserControl.vb** file opens, and an event handler for the <xref:System.Windows.Forms.MonthCalendar.DateChanged> event is created.  
+     **MyUserControl.cs** 或 **MyUserControl.vb** 檔案隨即開啟，而且系統也會建立 <xref:System.Windows.Forms.MonthCalendar.DateChanged> 事件的事件處理常式。  
   
-2.  Add the following code to the top of the file. This code creates aliases for the <xref:Microsoft.Office.Core> and <xref:Microsoft.Office.Interop.PowerPoint> namespaces.  
+2.  將下列程式碼加入檔案的頂端。 此程式碼會建立 <xref:Microsoft.Office.Core> 和 <xref:Microsoft.Office.Interop.PowerPoint> 命名空間的別名。  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]  [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#1)]
+     [!code-vb[Trin_TaskPaneMonthCalendar#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#1)]  
   
-3.  Add the following code to the `MyUserControl` class. This code declares a <xref:Microsoft.Office.Interop.PowerPoint.Shape> object as a member of `MyUserControl`. In the following step, you will use this <xref:Microsoft.Office.Interop.PowerPoint.Shape> to add a text box to a slide in the active presentation.  
+3.  將下列程式碼加入 `MyUserControl` 類別。 此程式碼會將 <xref:Microsoft.Office.Interop.PowerPoint.Shape> 物件宣告為 `MyUserControl`的成員。 在下列步驟中，您會使用此 <xref:Microsoft.Office.Interop.PowerPoint.Shape> ，在現用簡報的投影片中加入文字方塊。  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]  [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#2)]
+     [!code-vb[Trin_TaskPaneMonthCalendar#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#2)]  
   
-4.  Replace the `monthCalendar1_DateChanged` event handler with the following code. This code adds a text box to the first slide in the active presentation, and then adds the currently selected date to the text box. This code uses the `Globals.ThisAddIn` object to access the object model of PowerPoint.  
+4.  以下列程式碼取代 `monthCalendar1_DateChanged` 事件處理常式。 此程式碼會在現用簡報的第一張投影片中加入文字方塊，然後在文字方塊中加入目前選取的日期。 這段程式碼會使用 `Globals.ThisAddIn` 物件來存取 PowerPoint 的物件模型。  
   
-     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]  [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]  
+     [!code-csharp[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs#3)]
+     [!code-vb[Trin_TaskPaneMonthCalendar#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb#3)]  
   
-5.  In **Solution Explorer**, right-click the **MyAddIn** project and then click **Build**. Verify that the project builds without errors.  
+5.  在 [方案總管] 中，以滑鼠右鍵按一下 **MyAddIn** 專案，然後按一下 [建置] 。 確認專案建置無誤。  
   
-## <a name="displaying-the-custom-task-pane"></a>Displaying the Custom Task Pane  
- To display the custom task pane when the VSTO Add-in starts, add the user control to the task pane in the <xref:Microsoft.Office.Tools.AddIn.Startup> event handler of the VSTO Add-in.  
+## <a name="displaying-the-custom-task-pane"></a>顯示自訂工作窗格  
+ 若要在 VSTO 增益集啟動時顯示自訂工作窗格，請在 VSTO 增益集的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式中，將使用者控制項加入工作窗格。  
   
-#### <a name="to-display-the-custom-task-pane"></a>To display the custom task pane  
+#### <a name="to-display-the-custom-task-pane"></a>若要顯示自訂工作窗格  
   
-1.  In **Solution Explorer**, expand **PowerPoint**.  
+1.  展開 [方案總管] 中的 [PowerPoint] 。  
   
-2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb** and click **View Code**.  
+2.  以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb** ，然後按一下 [檢視程式碼] 。  
   
-3.  Add the following code to the `ThisAddIn` class. This code declares instances of `MyUserControl` and <xref:Microsoft.Office.Tools.CustomTaskPane> as members of the `ThisAddIn` class.  
+3.  將下列程式碼加入 `ThisAddIn` 類別。 此程式碼會將 `MyUserControl` 和 <xref:Microsoft.Office.Tools.CustomTaskPane> 的執行個體宣告為 `ThisAddIn` 類別的成員。  
   
-     [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]  [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]  
+     [!code-vb[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#4)]
+     [!code-csharp[Trin_TaskPaneMonthCalendar#4](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#4)]  
   
-4.  Replace the `ThisAddIn_Startup` event handler with the following code. This code creates a new <xref:Microsoft.Office.Tools.CustomTaskPane> by adding the `MyUserControl` object to the `CustomTaskPanes` collection. The code also displays the task pane.  
+4.  以下列程式碼取代 `ThisAddIn_Startup` 事件處理常式。 此程式碼會建立新的 <xref:Microsoft.Office.Tools.CustomTaskPane> ，方法是將 `MyUserControl` 物件加入 `CustomTaskPanes` 集合。 程式碼也會顯示工作窗格。  
   
-     [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]  [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
+     [!code-vb[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/ThisAddIn.vb#5)]
+     [!code-csharp[Trin_TaskPaneMonthCalendar#5](../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/ThisAddIn.cs#5)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you run the project, PowerPoint opens and the VSTO Add-in displays the custom task pane. Click the <xref:System.Windows.Forms.MonthCalendar> control to test the code.  
+## <a name="testing-the-add-in"></a>測試增益集  
+ 當您執行專案時，PowerPoint 會開啟且 VSTO 增益集會顯示自訂工作窗格。 請按一下 <xref:System.Windows.Forms.MonthCalendar> 控制項來測試程式碼。  
   
-#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
+#### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-2.  Confirm that the custom task pane is visible.  
+2.  確認自訂工作窗格已顯示。  
   
-3.  Click a date in the <xref:System.Windows.Forms.MonthCalendar> control on the task pane.  
+3.  在工作窗格上的 <xref:System.Windows.Forms.MonthCalendar> 控制項中，按一下日期。  
   
-     The date is inserted into the first slide in the active presentation.  
+     現用簡報的第一張投影片中隨即會插入該日期。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to create custom task panes from these topics:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以透過下列主題，進一步了解如何建立自訂工作窗格：  
   
--   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
+-   在 VSTO 增益集中為不同應用程式建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   Create a Ribbon button that can be used to hide or display a custom task pane. For more information, see [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md).  
+-   建立可用來隱藏或顯示自訂工作窗格的功能區按鈕。 如需詳細資訊，請參閱 [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。  
   
--   Create a custom task pane for every e-mail message that is opened in Outlook. For more information, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱 [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
-## <a name="see-also"></a>See Also  
- [Custom Task Panes](../vsto/custom-task-panes.md)   
- [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
- [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
+## <a name="see-also"></a>另請參閱  
+ [自訂工作窗格](../vsto/custom-task-panes.md)   
+ [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [逐步解說： 使用功能區按鈕同步處理自訂工作窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)   
+ [逐步解說：在 Outlook 中的電子郵件訊息顯示自訂工作窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)  
   
   

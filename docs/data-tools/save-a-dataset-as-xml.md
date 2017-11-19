@@ -1,5 +1,5 @@
 ---
-title: Save a dataset as XML | Microsoft Docs
+title: "將資料集儲存為 XML |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,50 +15,37 @@ helpviewer_keywords:
 - datasets [Visual Basic], saving as XML
 - saving data
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
-caps.latest.revision: 11
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6d8749d35693a61d34aeb3e252fd69e9c575cacb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 1e41e0481325838b5de60b76ed1c7c1fc617f48e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="save-a-dataset-as-xml"></a>Save a dataset as XML
-The XML data in a dataset can be accessed by calling the available XML methods  on the dataset. To save the data in XML format, you can call either the <xref:System.Data.DataSet.GetXml%2A> method or the <xref:System.Data.DataSet.WriteXml%2A> method of a <xref:System.Data.DataSet>.  
+# <a name="save-a-dataset-as-xml"></a>將資料集儲存為 XML
+資料集內的 XML 資料可以存取的資料集上呼叫使用 XML 方法。 若要以 XML 格式儲存資料，您可以呼叫任何一個<xref:System.Data.DataSet.GetXml%2A>方法或<xref:System.Data.DataSet.WriteXml%2A>方法<xref:System.Data.DataSet>。  
   
- Calling the <xref:System.Data.DataSet.GetXml%2A> method returns a string that contains the data from all data tables in the dataset that's formatted as XML.  
+ 呼叫<xref:System.Data.DataSet.GetXml%2A>方法會傳回字串，包含所有資料的格式為 XML 的資料集內的資料表中的資料。  
   
- Calling the <xref:System.Data.DataSet.WriteXml%2A> method sends the XML-formatted data to a file that  you specify.  
+ 呼叫<xref:System.Data.DataSet.WriteXml%2A>方法會以 XML 格式的資料傳送給您指定的檔案。  
   
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>To save the data in a dataset as XML to a variable  
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>若要將資料集中的資料儲存為 XML，變數  
   
--   The <xref:System.Data.DataSet.GetXml%2A> method returns a <xref:System.String>.This means that you declare a variable of type <xref:System.String> and assign it the results of the <xref:System.Data.DataSet.GetXml%2A> method.  
+-   <xref:System.Data.DataSet.GetXml%2A>方法會傳回<xref:System.String>。這表示您宣告型別的變數<xref:System.String>並將其指派的結果<xref:System.Data.DataSet.GetXml%2A>方法。  
   
-     [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]  [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]  
+     [!code-vb[VbRaddataSaving#12](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_1.vb)]
+     [!code-csharp[VbRaddataSaving#12](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_1.cs)]  
   
-### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>To save the data in a dataset as XML to a file  
+### <a name="to-save-the-data-in-a-dataset-as-xml-to-a-file"></a>若要將資料集中的資料為 XML 儲存至檔案  
   
--   The <xref:System.Data.DataSet.WriteXml%2A> method has several overloads. The following code shows how to save the data to a file.Declare a variable and assign it a valid path to save the file to.  
+-   <xref:System.Data.DataSet.WriteXml%2A>方法有數個多載。 下列程式碼會示範如何將資料儲存至檔案。宣告變數，並將它指派有效的路徑儲存至檔案。  
   
-     [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]  [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]  
+     [!code-vb[VbRaddataSaving#13](../data-tools/codesnippet/VisualBasic/save-a-dataset-as-xml_2.vb)]
+     [!code-csharp[VbRaddataSaving#13](../data-tools/codesnippet/CSharp/save-a-dataset-as-xml_2.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>另請參閱  
+ [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

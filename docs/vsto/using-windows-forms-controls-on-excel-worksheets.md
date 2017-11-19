@@ -1,50 +1,52 @@
 ---
-title: "在 Excel 工作表中使用 Windows Form 控制項"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "控制項 [Visual Studio 中的 Office 程式開發], Windows Form 控制項"
-  - "Excel [Visual Studio 中的 Office 程式開發], Windows Form 控制項"
-  - "Windows Form 控制項 [Visual Studio 中的 Office 程式開發], Excel"
+title: "使用 Windows Form 控制項中的 Excel 工作表上 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Windows Forms controls [Office development in Visual Studio], Excel
+- Excel [Office development in Visual Studio], Windows Forms controls
+- controls [Office development in Visual Studio], Window Forms controls
 ms.assetid: bbda7461-0d69-4b56-8ba3-418d63ba49db
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7bbd9c19698a9c81b5af29d27bba91b8aa36dcd2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 在 Excel 工作表中使用 Windows Form 控制項
-  您可以使用將控制項加入至 Windows Form 的相同方式，將 Windows Form 控制項加入至 Microsoft Office Excel 活頁簿。  如需在文件上使用控制項的一般資訊，請參閱 [Office 文件上的 Windows Forms 控制項概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
+# <a name="using-windows-forms-controls-on-excel-worksheets"></a>在 Excel 工作表中使用 Windows Form 控制項
+  您可以加入 Windows Form 控制項 Microsoft Office Excel 活頁簿，您會將控制項加入 Windows Form 的方式相同。 如需有關文件上的控制項使用的一般資訊，請參閱[Windows Form 控制項，在 Office 文件概觀](../vsto/windows-forms-controls-on-office-documents-overview.md)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## Excel 的控制項考量  
- 在 Excel 中，需要特別考量某些事項。  
+## <a name="control-considerations-for-excel"></a>適用於 Excel 的控制項考量  
+ 有幾個考量專屬於 Excel。  
   
-### 將控制項大小調整為儲存格大小  
- 您可以將控制項設定為在父儲存格大小變更時，自動調整大小。  如需詳細資訊，請參閱[如何：在工作表儲存格中調整控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
+### <a name="matching-control-size-to-cell-size"></a>比對控制項大小的儲存格大小  
+ 您可以設定在父儲存格的大小變更時自動調整控制項的大小。 如需詳細資訊，請參閱[如何： 調整大小的控制項內工作表儲存格](../vsto/how-to-resize-controls-within-worksheet-cells.md)。  
   
-### 加入所有工作表共用的元件  
- 您可以將想要讓所有工作表共用的元件 \(例如 <xref:System.Data.DataSet>\) 加入至活頁簿設計工具而不是工作表。  元件就會出現在元件匣裡。  
+### <a name="adding-components-that-are-shared-by-all-worksheets"></a>加入所有工作表共用的元件  
+ 您可以將想要在所有工作表之間共用的元件，例如 <xref:System.Data.DataSet>，加入活頁簿設計工具，而不是加入工作表。 元件會出現在元件匣中。  
   
-### 控制項內嵌公式  
- 在 Excel 中選取控制項時，您會在 \[**資料編輯列**\] 看到 \[**\=EMBED\("WinForms.Control.Host",""\)**\]。  這個文字是必要的，不應該刪除。  
+### <a name="formula-for-embedding-controls"></a>內嵌控制項的公式  
+ 在 Excel 中選取控制項時，您會在 [資料編輯列]  看到 **=EMBED("WinForms.Control.Host","")**。 這個文字是必要的，不應該刪除。  
   
-## 請參閱  
- [如何：在工作表儲存格中調整控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
- [如何：列印時隱藏工作表的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
- [逐步解說：使用 CheckBox 控制項來變更工作表格式](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
- [逐步解說：使用按鈕在工作表的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何： 調整工作表儲存格內的控制項的大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)   
+ [如何： 列印時隱藏工作表上的控制項](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)   
+ [逐步解說： 變更工作表使用核取方塊控制項](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)   
+ [逐步解說： 使用按鈕在工作表中的文字方塊中顯示文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)   
  [逐步解說：使用選項按鈕更新工作表中的圖表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)  
   
   

@@ -1,59 +1,60 @@
 ---
-title: "CA1700：不要在列舉值名稱中包含 &#39;Reserved&#39; | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1700"
-  - "DoNotNameEnumValuesReserved"
-helpviewer_keywords: 
-  - "DoNotNameEnumValuesReserved"
-  - "CA1700"
+title: "CA1700： 不要在名稱的列舉值 &#39;保留 &#39; |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1700
+- DoNotNameEnumValuesReserved
+helpviewer_keywords:
+- DoNotNameEnumValuesReserved
+- CA1700
 ms.assetid: 7a7e01c3-ae7d-4c82-a646-91b58864a749
-caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2acfafaec213f619dbe8c3077ab5cc72bdfde88d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1700：不要在列舉值名稱中包含 &#39;Reserved&#39;
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700： 不要在名稱的列舉值 &#39;保留 &#39;
 |||  
 |-|-|  
-|型別名稱|DoNotNameEnumValuesReserved|  
+|TypeName|DoNotNameEnumValuesReserved|  
 |CheckId|CA1700|  
 |分類|Microsoft.Naming|  
 |中斷變更|中斷|  
   
-## 原因  
- 列舉型別成員的名稱會包含 "reserved" 這個字。  
+## <a name="cause"></a>原因  
+ 列舉成員的名稱包含 「 保留 」 這個字。  
   
-## 規則描述  
- 這項規則假設名稱中包含 "reserved" 的列舉成員目前並未使用，但是在未來版本會是重新命名或移除的替代符號 \(Placeholder\)。  重新命名或移除成員是中斷變更。  您不應該預期使用者會只因成員名稱包含 "reserved" 就會忽略該成員，也不能依賴使用者讀取或遵守文件。  此外，由於保留的成員會出現在物件瀏覽器和智慧型整合式開發環境中，所以在不知道真正使用哪些成員的情況下，它們可能會導致混淆。  
+## <a name="rule-description"></a>規則描述  
+ 這項規則假設名稱中包含 "reserved" 的列舉成員目前並未使用，但是在未來版本會是重新命名或移除的替代符號 (Placeholder)。 重新命名或移除成員是中斷變更。 您不應預期使用者會忽略該成員，因為其名稱包含 「 保留 」，也不能依賴使用者讀取或遵守文件。 此外，由於保留的成員會顯示在物件瀏覽器和智慧型整合的開發環境中，它們可能造成的混淆的成員會實際正在使用。  
   
- 因此不是使用保留的成員，而是在未來版本將新的成員加入到列舉型別。  在大部分情況下，只要新成員的加入不會導致原始成員值的變更，則這個加入便不是中斷變更。  
+ 不要使用保留的成員，將新成員加入未來版本中列舉。 在大部分情況下加入新成員不是一項重大變更，只要加入不會造成要變更之原始成員的值。  
   
- 只有在某些情況下，即使原始成員仍然保持它的原始值，加入成員的作業仍是中斷變更。  主要是因為呼叫端在包含整個成員清單的傳回值，以及在預設情況下發生例外狀況的傳回值上使用 `switch` \(在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 `Select`\)，若沒有中斷這個呼叫端，將無法從現有的程式碼路徑傳回新的成員。  其次是因為用戶端程式碼可能無法從反映 \(Reflection\) 方法 \(例如 <xref:System.Enum.IsDefined%2A?displayProperty=fullName>\) 處理行為中的變更。  因此，如果現有的方法必須傳回新成員，或已知的應用程式因為不良的反映使用方式而發生不相容，則唯一非中斷的解決方案就是：  
+ 在少數的情況下加入成員是中斷變更，即使原始成員保留其原始值。 主要是新的成員不能傳回從現有的程式碼路徑而不會中斷使用的呼叫端`switch`(`Select`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 傳回的值，包含整個成員清單，並會在擲回例外狀況的陳述式預設的情況。 次要的問題是，用戶端程式碼可能不處理反映方法的行為變更例如<xref:System.Enum.IsDefined%2A?displayProperty=fullName>。 因此，若已從現有的方法傳回的新成員，或因為不佳的反映已知的應用程式不相容，唯一不分行解決方法是：  
   
-1.  新增包含原始和新成員的新列舉。  
+1.  加入新的列舉，其中包含原始和新的成員。  
   
-2.  使用 <xref:System.ObsoleteAttribute?displayProperty=fullName> 屬性標示原始列舉。  
+2.  將標記與在原始列舉<xref:System.ObsoleteAttribute?displayProperty=fullName>屬性。  
   
- 對於任何公開 \(Expose\) 原始列舉型別的外部可見型別或成員，請遵循相同程序。  
+ 請遵循相同的程序的任何外部可見類型或公開原始列舉的成員。  
   
-## 如何修正違規  
- 若要修正違反此規則的情形，請移除或重新命名該成員。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，移除或重新命名的成員。  
   
-## 隱藏警告的時機  
- 對於目前所使用的成員或先前提供的程式庫，您可以放心地隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告目前使用的成員或是先前所提供的程式庫。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
  [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  

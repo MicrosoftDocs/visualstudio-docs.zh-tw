@@ -1,47 +1,46 @@
 ---
-title: "IDiaStackWalkHelper::imageForVA | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalkHelper::imageForVA 方法"
+title: "Idiastackwalkhelper:: Imageforva |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalkHelper::imageForVA method
 ms.assetid: 8d4edabf-3c01-4fef-8b61-4779f3371067
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: df2b5f938d136a3013c3128f3e32c583c109708e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalkHelper::imageForVA
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會傳回可執行檔映像的起始虛擬位址某處的可執行檔的記憶體空間中的記憶體中。  
+# <a name="idiastackwalkhelperimageforva"></a>IDiaStackWalkHelper::imageForVA
+傳回在指定的虛擬位址某處的可執行檔的記憶體空間中的記憶體中的可執行檔映像。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```C++  
 HRESULT imageForVA(  
-   ULONGLONG  vaContext,  
-   ULONGLONG *pvaImageStart  
+   ULONGLONG  vaContext,  
+   ULONGLONG *pvaImageStart  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `vaContext`  
- \[in\]位於可執行檔的空間中的某處的虛擬位址。  
+ [in]可執行檔的空間中某處在於虛擬位址。  
   
  `pvaImageStart`  
- \[\] out傳回的可執行檔映像的起始虛擬位址。  
+ [out]傳回開始的可執行檔映像的虛擬位址。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)

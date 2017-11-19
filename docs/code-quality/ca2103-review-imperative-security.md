@@ -1,51 +1,51 @@
 ---
-title: "CA2103：必須檢視命令式安全性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
-helpviewer_keywords: 
-  - "CA2103"
-  - "ReviewImperativeSecurity"
+title: "Ca2103： 必須檢閱命令式安全性 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2103
+- ReviewImperativeSecurity
+helpviewer_keywords:
+- CA2103
+- ReviewImperativeSecurity
 ms.assetid: d24fde71-bdf6-46c0-8965-9a73dc33c1aa
-caps.latest.revision: 18
-caps.handback.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b6047df9ea1b5454d4c4c689a5baef887907779a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2103：必須檢視命令式安全性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2103-review-imperative-security"></a>CA2103：必須檢視命令式安全性
 |||  
 |-|-|  
-|型別名稱|ReviewImperativeSecurity|  
+|TypeName|ReviewImperativeSecurity|  
 |CheckId|CA2103|  
 |分類|Microsoft.Security|  
 |中斷變更|中斷|  
   
-## 原因  
+## <a name="cause"></a>原因  
  方法會使用命令式安全性，而且可能會利用只要要求正在使用中就可能變更的狀態資訊或傳回值建構權限。  
   
-## 規則描述  
- 在程式碼執行期間，命令式安全性會使用 Managed 物件指定使用權限和安全性動作，相較於宣告式安全性，後者會使用屬性 \(Attribute\) 儲存中繼資料 \(Metadata\) 中的使用權限和動作。  命令式安全性非常有彈性，讓您能使用無法在執行階段之前取得的資訊，設定權限物件的狀態並選取安全性動作。  這種彈性會有風險隨之而來，也就是說只要動作生效，您用於決定使用權限狀態的執行階段資訊就無法維持不變。  
+## <a name="rule-description"></a>規則描述  
+ 命令式安全性會使用受管理的物件指定的權限和安全性動作程式碼在執行期間，相較於使用屬性來儲存中繼資料中的權限和動作中的宣告式安全性。 命令式安全性相當富彈性，因為您可以設定權限物件的狀態，並選取安全性動作會使用不到執行階段的資訊。 一起彈性會伴隨的執行階段資訊您用來判斷權限的狀態無法維持不變，只要的動作是作用中的風險。  
   
- 請盡可能使用宣告式安全性。  宣告式要求比較容易了解。  
+ 請盡可能使用宣告式安全性。 宣告式要求較容易了解。  
   
-## 如何修正違規  
- 檢查命令式安全性要求，確保使用權限的狀態不會依賴因使用權限正在使用中而變更的資訊。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 檢閱命令式安全性要求，並確定權限的狀態不會依賴只要正在使用的權限可以變更的資訊。  
   
-## 隱藏警告的時機  
- 如果使用權限不依賴變更資料，則您可以放心地隱藏這項規則的警告。  但是，最好是將命令式要求變更為其宣告式的對等用法。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告，如果權限不需要變更資料。 不過，最好命令式要求變更為相等的宣告式。  
   
-## 請參閱  
- [Secure Coding Guidelines](../Topic/Secure%20Coding%20Guidelines.md)   
- [資料與模型化](../Topic/Data%20and%20Modeling%20in%20the%20.NET%20Framework.md)
+## <a name="see-also"></a>另請參閱  
+ [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
+ [資料與模型化](/dotnet/framework/data/index)

@@ -1,45 +1,47 @@
 ---
-title: "比較運算子 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "Comparison"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "比較運算子，指令碼"
-  - "大於運算子"
-  - "比較運算子"
-  - "大於或等於運算子"
-  - "不同比較運算子"
-  - "相同比較運算子"
+title: "比較運算子 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: Comparison
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- comparison operators, script
+- greater than operator
+- comparison operators
+- greater than or equal to operator
+- inequity operator
+- identity operator
 ms.assetid: 084f90f0-d010-47cf-96dd-13d637fc9b68
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 067d570523fc2241b4f2e0442785a49aedb15200
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 比較運算子 (JavaScript)
-傳回的布林值將說明比較的結果。  
+# <a name="comparison-operators-javascript"></a>比較運算子 (JavaScript)
+傳回表示比較結果的布林值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 expression1 comparisonoperator expression2  
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `expression1`  
  任何運算式。  
   
@@ -49,46 +51,46 @@ expression1 comparisonoperator expression2
  `expression2`  
  任何運算式。  
   
-## 備註  
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 比較字串時，會使用字串的 Unicode 字元值來進行比較。  
+## <a name="remarks"></a>備註  
+ 比較字串時[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]會使用 Unicode 字元值的字串運算式。  
   
- 以下敘述可說明根據 `expression1` 和 `expression2` 的型別和值，不同的運算子群組會有不同的行為方式：  
+ 下列程式碼說明不同的運算子的群組行為根據型別和值的方式`expression1`和`expression2`:  
   
- 關係運算子：`<`、`>`、`<=`、`>=`  
+ 關係運算子： `<`， `>`， `<=`，`>=`  
   
--   嘗試將 `expression1` 及 `expression2` 兩者皆轉換為數字。  
+-   嘗試轉換同時`expression1`和`expression2`為數字。  
   
--   如果這兩個運算式皆是字串，則會進行字串比較。  
+-   如果這兩個運算式都是字串，請執行字串比較。  
   
--   如果其中一個運算式為 `NaN`，則會傳回 `false`。  
+-   如果任一個運算式是`NaN`，則傳回`false`。  
   
--   負數零與正數零相等。  
+-   負零等於零的正數。  
   
--   負無限大皆小於任何一個數字 \(包含其本身\)。  
+-   負的無限值小於包括它自己的所有項目。  
   
--   正無限大皆大於任何一個數字 \(包含其本身\)。  
+-   正無限值大於包括它自己的所有項目。  
   
- 等號比較運算子：`==`、`!=`  
+ 等號比較運算子： `==`，`!=`  
   
--   如果兩個運算式的型別不同，則會嘗試將它們轉換為字串、數字或布林值。  
+-   如果兩個運算式的類型不同，則會嘗試將它們轉換成字串、 數字或布林值。  
   
--   `NaN` 不等於任何型別內容 \(包含其本身\)。  
+-   `NaN`不等於任何包括它自己的項目。  
   
--   負數零與正數零相等。  
+-   負零等於零的正數。  
   
--   `null` 同時等於 `null` 和 `undefined`。  
+-   `null`等於兩者`null`和`undefined`。  
   
--   如果兩個值是完全相同的字串、數值上相等的數字、相同的物件、同樣的布林值，或者 \(如果型別不同\) 可強制型轉為上述其中一種情況，則兩值視為相等。  
+-   值會被視為相等，如果它們是完全相同的字串、 數字相等的數字、 相同的物件、 相同的布林值，或 (如果不同類型) 會強制轉成其中一種情況。  
   
--   其他所有的比較都視為不相等。  
+-   其他所有的比較會被視為不相等。  
   
- 識別運算子：`===`、`!==`  
+ 識別運算子： `===`，`!==`  
   
- 這些運算子的行為方式和等號比較運算子相同，但是有一點例外，就是不會進行型別轉換。  如果兩個運算式的型別不同，這些運算式一定會傳回 `false`。  
+ 這些運算子的行為相同的等號比較運算子，不同之處在於，會執行任何類型轉換。 如果這兩個運算式的類型不相同，這些運算式一律會傳回`false`。  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)   
- [運算子摘要 \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [運算子摘要 (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

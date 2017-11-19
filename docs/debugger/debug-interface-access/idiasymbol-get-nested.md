@@ -1,46 +1,45 @@
 ---
-title: "IDiaSymbol::get_nested | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_nested 方法"
+title: "Idiasymbol:: Get_nested |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_nested method
 ms.assetid: 6ae46d43-8486-48d6-a6f2-d73ebf4023e3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 276747eb3abbb72eed95b3ab4209c640895b2e1c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_nested
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指定使用者自訂資料型別巢狀結構。  
+# <a name="idiasymbolgetnested"></a>IDiaSymbol::get_nested
+擷取指定的使用者定義資料類型巢狀結構的旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_nested (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_nested (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回`TRUE`如果巢狀使用者自訂資料型別 ； 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`如果在使用者定義資料類型巢狀; 否則會傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

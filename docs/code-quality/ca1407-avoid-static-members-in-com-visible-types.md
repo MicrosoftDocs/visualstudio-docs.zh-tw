@@ -1,11 +1,10 @@
 ---
-title: 'CA1407: Avoid static members in COM visible types | Microsoft Docs'
+title: "CA1407： 避免在 COM 可見類型中的靜態成員 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,51 +14,35 @@ helpviewer_keywords:
 - CA1407
 - AvoidStaticMembersInComVisibleTypes
 ms.assetid: bebd0776-ad04-453c-bca8-8c124c2d7840
-caps.latest.revision: 23
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 54c8639bd6968b3a9e6c2497376ba91cd7cdf071
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 43240b8969026a8bbec18528230d3ca97bcb2236
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Avoid static members in COM visible types
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407：避免在 COM 可見類型中使用靜態成員
 |||  
 |-|-|  
 |TypeName|AvoidStaticMembersInComVisibleTypes|  
 |CheckId|CA1407|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Interoperability|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A type that is specifically marked as visible to Component Object Model (COM) contains a `public``static` method.  
+## <a name="cause"></a>原因  
+ 包含特別標示為可見元件物件模型 (COM) 的類型`public``static`方法。  
   
-## <a name="rule-description"></a>Rule Description  
- COM does not support `static` methods.  
+## <a name="rule-description"></a>規則描述  
+ COM 不支援`static`方法。  
   
- This rule ignores property and event accessors, operator overloading methods, or methods that are marked by using either the <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> attribute or the <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> attribute.  
+ 此規則會忽略屬性和事件存取子、 運算子多載方法或使用標記的方法可<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>屬性或<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>屬性。  
   
- By default, the following are visible to COM: assemblies, public types, public instance members in public types, and all members of public value types.  
+ 根據預設，以下是為 COM 可見： 組件、 公用型別、 公用的型別中的公用執行個體成員和公用實值型別的所有成員。  
   
- For this rule to occur, an assembly-level <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `false` and the class- <xref:System.Runtime.InteropServices.ComVisibleAttribute> must be set to `true`, as the following code shows.  
+ 此規則，若要進行的組件層級<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須設為`false`和類別-<xref:System.Runtime.InteropServices.ComVisibleAttribute>必須設為`true`，如下列程式碼所示。  
   
 ```csharp  
 using System;  
@@ -78,39 +61,39 @@ namespace Samples
 }  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the design to use an instance method that provides the same functionality as the `static` method.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，變更要使用提供的相同功能與執行個體方法設計`static`方法。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if a COM client does not require access to the functionality that is provided by the `static` method.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全地隱藏此規則的警告，如果 COM 用戶端不需要存取所提供的功能`static`方法。  
   
-## <a name="example-violation"></a>Example Violation  
+## <a name="example-violation"></a>範例違規  
   
-### <a name="description"></a>Description  
- The following example shows a `static` method that violates this rule.  
+### <a name="description"></a>描述  
+ 下列範例所示`static`違反此規則的方法。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]  
   
-### <a name="comments"></a>Comments  
- In this example, the **Book.FromPages** method cannot be called from COM.  
+### <a name="comments"></a>註解  
+ 在此範例中， **Book.FromPages**方法不能從 COM 呼叫  
   
-## <a name="example-fix"></a>Example Fix  
+## <a name="example-fix"></a>修正範例  
   
-### <a name="description"></a>Description  
- To fix the violation in the previous example, you could change the method to an instance method, but that does not make sense in this instance. A better solution is to explicitly apply `ComVisible(false)` to the method to make it clear to other developers that the method cannot be seen from COM.  
+### <a name="description"></a>描述  
+ 若要修正上述範例中的違規，您無法將方法變更為執行個體方法，但是，不具意義這個執行個體中。 更好的解決方案是明確地套用`ComVisible(false)`清除給其他開發人員方法看從 COM 方法  
   
- The following example applies <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> to the method.  
+ 下列範例會套用<xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute>方法。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1017: Mark assemblies with ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
- [CA1406: Avoid Int64 arguments for Visual Basic 6 clients](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
+ [CA1406：避免對 Visual Basic 6 用戶端使用 Int64 引數](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)  
   
- [CA1413: Avoid non-public fields in COM visible value types](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
+ [CA1413：避免在 COM 可見實值型別中使用非公用欄位](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)  
   
-## <a name="see-also"></a>See Also  
- [Interoperating with Unmanaged Code](/dotnet/framework/interop/index)
+## <a name="see-also"></a>另請參閱  
+ [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

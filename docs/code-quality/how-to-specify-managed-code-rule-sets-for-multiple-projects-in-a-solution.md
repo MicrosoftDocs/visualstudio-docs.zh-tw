@@ -1,44 +1,44 @@
 ---
-title: "如何：對方案中的多個專案指定 Managed 程式碼規則集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.codeanalysis.propertypages.solution"
+title: "如何： 個方案中的多個專案指定 Managed 程式碼規則集 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.codeanalysis.propertypages.solution
 ms.assetid: 92dc3250-a010-4396-b515-f03a0b30cd2a
-caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b1434e095fbf5c20286626cdc4cdc96716f2b9e6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：對方案中的多個專案指定 Managed 程式碼規則集
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-根據預設，方案的所有 Managed 專案都指派了「Microsoft 最小建議規則」程式碼分析「*規則集*」\(Rule Set\)。  您可以在方案的 \[屬性\] 對話方塊中，變更指派至方案中專案的規則集。  
+# <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>如何：對方案中的多個專案指定 Managed 程式碼規則集
+根據預設，方案的所有 managed 的專案都會被指派 Microsoft 最小建議規則程式碼分析*規則集*。 您可以變更規則集指派給專案的方案的 [屬性] 對話方塊中的解決方案。  
   
 > [!NOTE]
->  預設不會將專案程式碼分析當做建置步驟執行。  若要啟用程式碼分析做為建置步驟，請參閱 [如何：設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)。  
+>  根據預設，專案程式碼分析不會以建置步驟執行。 若要啟用程式碼分析做為建置步驟，請參閱[How to： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)。  
   
-### 若要為 Managed 程式碼方案中的多個專案指定規則集  
+### <a name="to-specify-a-rule-set-for-multiple-projects-in-a-managed-code--solution"></a>若要指定的規則集在 managed 程式碼解決方案中的多個專案  
   
-1.  在 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中。  在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] 中開啟方案。  
+1.  在[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]。 在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)] 中開啟方案。  
   
-2.  在 \[**分析**\] 功能表上，按一下 \[**為方案設定程式碼分析**\]。  
+2.  在**分析**功能表上，按一下 **設定方案的程式碼分析**。  
   
-3.  如有需要，展開 \[**通用屬性**\]，然後按一下 \[**程式碼分析設定**\]。  
+3.  如果有必要，請展開**通用屬性**，然後按一下 **程式碼分析設定**。  
   
-4.  您可以指定一個或多個專案的規則集。  
+4.  您可以指定規則集的一個或多個專案。  
   
-    -   若要為個別專案指定規則集，請按一下專案名稱。  
+    -   若要指定個別的專案中設定的規則，請按一下專案名稱。  
   
-    -   若要為多個專案指定規則集，請按住 CTRL 並按一下各個專案名稱。  
+    -   若要指定規則集的多個專案，請按住 ctrl 鍵並按一下 專案名稱。  
   
-    -   若要指定方案中的所有專案，請按住 SHIFT 並按一下專案清單。  
+    -   若要指定的所有專案方案中，按住 shift 鍵並按一下清單中的專案。  
   
-5.  按一下專案的 \[**規則集**\] 欄位，然後按一下要套用的規則集名稱。
+5.  按一下**規則集**欄位的專案，然後按一下您想要套用的規則的名稱設定。

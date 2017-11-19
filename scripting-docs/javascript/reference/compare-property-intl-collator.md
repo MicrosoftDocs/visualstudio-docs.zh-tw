@@ -1,53 +1,56 @@
 ---
-title: "compare 屬性 (Intl.Collator) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "compare 屬性 (Intl.Collator) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 59f274dc-6e52-4344-8d5c-b9f0000b66e0
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5bfd222ac8d2c94efe279177e7f4d8ffdf850f44
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# compare 屬性 (Intl.Collator)
-傳回函式，透過使用自動分頁器的排序次序比較兩個字串。  
+# <a name="compare-property-intlcollator"></a>compare 屬性 (Intl.Collator)
+傳回函數，比較兩個字串，使用 自動分頁器的排序次序。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 collatorObj.compare  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `collatorObj`  
- 必要項。  比較所用之 `Collator` 物件的名稱。  
+ 必要項。 名稱`Collator`来用於比較的物件。  
   
-## 備註  
- `compare` 屬性傳回的函式採用兩個引數 `x` 和 `y`，並使用 `Collator` 物件指定的選項，傳回 `x` 和 `y` 地區設定特定比較的結果。  
+## <a name="remarks"></a>備註  
+ 所傳回的函式`compare`屬性接受兩個引數，`x`和`y`，並傳回地區設定特性的比較結果`x`和`y`使用指定的選項`Collator`物件。  
   
  比較的結果會是：  
   
--   如果 `x` 的排序次序在 `y` 之前，則為 \-1。  
+-   -1，否則`x`之前`y`在排序次序。  
   
--   如果 `x` 的排序次序中等於 `y`，則為 0 \(零\)。  
+-   0 （零） 如果`x`等於`y`在排序次序。  
   
--   如果 `x` 的排序次序在 `y` 之後，則為 1。  
+-   1，否則`x`之後`y`在排序次序。  
   
-## 範例  
- 在下列範例中會建立 `Collator` 物件，並執行比較。  
+## <a name="example"></a>範例  
+ 下列範例會建立`Collator`物件，並執行的比較。  
   
-```javascript  
+```JavaScript  
 var co = new Intl.Collator(["de-DE-u-co-phonebk"]);  
   
 if (console && console.log) {  
@@ -55,10 +58,10 @@ if (console && console.log) {
 }  
 ```  
   
-## 範例  
- 下列範例使用 `Collator` 物件來排序陣列。  這個範例示範地區設定特定的差異。  
+## <a name="example"></a>範例  
+ 下列範例會使用`Collator`排序陣列的物件。 此範例示範地區設定特定的差異。  
   
-```javascript  
+```JavaScript  
 var co1 = new Intl.Collator(["de-DE-u-co-phonebk"]);  
 var co2 = new Intl.Collator(["de-DE"]);  
 var co3 = new Intl.Collator(["en-US"]);  
@@ -72,10 +75,10 @@ if (console && console.log) {
 }  
 ```  
   
-## 範例  
- 下列範例使用 `Collator` 物件來搜尋字串。  
+## <a name="example"></a>範例  
+ 下列範例會使用`Collator`来搜尋的字串物件。  
   
-```javascript  
+```JavaScript  
 // String to search  
 var arr = ["ä", "ad", "af", "a"];  
 // String searched for  
@@ -91,8 +94,8 @@ if (console && console.log) {
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Intl.Collator 物件](../../javascript/reference/intl-collator-object-javascript.md)

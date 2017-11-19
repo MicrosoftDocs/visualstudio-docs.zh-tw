@@ -1,34 +1,35 @@
 ---
-title: "偵錯 HTML、CSS 和 JavaScript 範例程式碼 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "偵錯 HTML、 CSS 和 JavaScript 範例程式碼 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 51893967-98c8-4141-ba40-03646f221760
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 762caca321cdda941fd295306fdfdf73e03b0aae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯 HTML、CSS 和 JavaScript 範例程式碼
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![適用於 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows\_and\_phone\_content")  
+# <a name="debug-html-css-and-javascript-sample-code"></a>偵錯 HTML、CSS 和 JavaScript 範例程式碼
+![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 本主題中的程式碼是下列項目的範例檔案：[快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md).  快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。  
+ 本主題中的程式碼是範例檔案[快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)。 快速入門在設計上出現的錯誤，會在此版本的程式碼中修正。  
   
-## 範例程式碼  
- 下列 HTML 程式碼用於快速入門的 \<body\> 標記中。  
+## <a name="sample-code"></a>程式碼範例  
+ 下列 HTML 程式碼用於\<主體 > 快速入門中的標記。  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -52,7 +53,7 @@ caps.handback.revision: 13
 }  
 ```  
   
- 下列程式碼範例會顯示 default.js 中的完整 JavaScript 程式碼。  此程式碼之 WinJS 命名空間的參考位於範本的 default.html 檔案中。  
+ 下列程式碼範例會顯示 default.js 中的完整 JavaScript 程式碼。 此程式碼之 WinJS 命名空間的參考位於範本的 default.html 檔案中。  
   
 ```javascript  
 (function () {  
@@ -103,5 +104,5 @@ caps.handback.revision: 13
 })();  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

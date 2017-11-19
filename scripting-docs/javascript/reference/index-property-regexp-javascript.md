@@ -1,49 +1,51 @@
 ---
-title: "index 屬性 (RegExp) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "index"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Index 屬性"
-  - "比對字串"
+title: "索引屬性 (RegExp) (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: index
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- Index property
+- matching strings
 ms.assetid: d8be1ef6-1bf2-43cd-b0b5-567a61eabaad
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9c6b11a5caf6e727b4d525b9a2d51eddd4542bc4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# index 屬性 (RegExp) (JavaScript)
-傳回字元位置，也就是第一個成功比對項目於搜尋字串的位置。  唯讀。  
+# <a name="index-property-regexp-javascript"></a>index 屬性 (RegExp) (JavaScript)
+搜尋字串中傳回第一個成功的比對的開始處的字元位置。 唯讀。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 RegExp.index   
 ```  
   
-## 備註  
- 與這個屬性相關聯的物件一律為 `RegExp` 物件。  
+## <a name="remarks"></a>備註  
+ 這個屬性與關聯的物件永遠是全域`RegExp`物件。  
   
- **index** 屬性以零為起始。  **index** 屬性的初始值是 –1。  無論何時只要比對成功，都會變更它的值。  
+ **索引**屬性是以零為起始。 初始值**索引**屬性為-1。 比對成功時，就會變更其值。  
   
-## 範例  
- 以下範例說明 **index** 屬性的用法。  這個函式會重複搜尋字串，並印出字串中每個字的 **index** 和 `lastIndex` 值。  
+## <a name="example"></a>範例  
+ 下列範例說明使用**索引**屬性。 此函式逐一查看搜尋字串，並列印**索引**和`lastIndex`字串中的每個字的值。  
   
-```javascript  
+```JavaScript  
 function RegExpTest()  
 {  
    var ver = Number(ScriptEngineMajorVersion() + "." + ScriptEngineMinorVersion())  
@@ -70,10 +72,10 @@ function RegExpTest()
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **適用於**：[RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
+ **適用於**: [RegExp 物件](../../javascript/reference/regexp-object-javascript.md)  
   
-## 請參閱  
- [Regular Expression Syntax \(JavaScript\)](http://msdn.microsoft.com/zh-tw/ab0766e1-7037-45ed-aa23-706f58358c0e)
+## <a name="see-also"></a>另請參閱  
+ [規則運算式語法 (JavaScript)](http://msdn.microsoft.com/en-us/ab0766e1-7037-45ed-aa23-706f58358c0e)

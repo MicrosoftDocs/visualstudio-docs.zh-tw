@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_comdat | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_comdat 方法"
+title: "Idiasectioncontrib:: Get_comdat |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_comdat method
 ms.assetid: 8bd9be8d-59ee-4698-b055-daba354b8dcc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d3797f60e9ca6e97da3b7b6e44c89f802b086d13
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_comdat
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指示區段是否為衝突的記錄。  
+# <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
+擷取指出區段是否為 COMDAT 記錄旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_comdat (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_comdat (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回`TRUE`如果區段是一種 COMDAT 筆記錄。 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`區段，則 COMDAT 記錄; 否則傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果這個屬性不受支援。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## 備註  
- 衝突記錄是讓封裝函式的連結器的 \[看得見的通用物件檔案格式 \(COFF\) 記錄。  
+## <a name="remarks"></a>備註  
+ COMDAT 記錄是會封裝函式使連結器看見的通用物件檔案格式 (COFF) 記錄。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

@@ -1,51 +1,51 @@
 ---
-title: "CA2221：完成項應該受到保護 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
-helpviewer_keywords: 
-  - "CA2221"
-  - "FinalizersShouldBeProtected"
+title: "CA2221： 完成項應該受到保護 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2221
+- FinalizersShouldBeProtected
+helpviewer_keywords:
+- FinalizersShouldBeProtected
+- CA2221
 ms.assetid: bda03aee-4cce-45d3-907d-17f4ee030acc
-caps.latest.revision: 14
-caps.handback.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ff2d5cd64a77f09437a07b446f486e1c2dd5024
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2221：完成項應該受到保護
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2221-finalizers-should-be-protected"></a>CA2221：完成項應該受到保護
 |||  
 |-|-|  
-|型別名稱|FinalizersShouldBeProtected|  
+|TypeName|FinalizersShouldBeProtected|  
 |CheckId|CA2221|  
 |分類|Microsoft.Usage|  
-|中斷變更|不中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 公用 \(Public\) 型別會實作未指定系列 \(protected\) 存取的完成項。  
+## <a name="cause"></a>原因  
+ 公用類型會實作完成項不會指定系列 （受保護） 的存取。  
   
-## 規則描述  
- 完成項必須使用系列存取修飾詞 \(Modifier\)。  C\#、Visual Basic 和 Visual C\+\+ 編譯器會強制使用此規則。  
+## <a name="rule-description"></a>規則描述  
+ 完成項必須使用系列存取修飾詞 (Modifier)。 此規則會強制執行的 C#、 Visual Basic 和 Visual c + + 編譯器。  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請將完成項變更為可供系列存取。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，變更系列可以存取的完成項。  
   
-## 隱藏警告的時機  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請勿隱藏此規則的警告。  
   
-## 範例  
- 在任何高階 .NET 語言中不得違反此規則。若您正在寫入 Microsoft Intermediate Language，則可違反此規則。  
+## <a name="example"></a>範例  
+ 此規則不能違反任何高層級的.NET 語言。如果您要撰寫的 Microsoft Intermediate Language，它可以是違反了。  
   
 ```  
 // =============== CLASS MEMBERS DECLARATION ===================  
@@ -80,5 +80,5 @@ manager: "wpickett"
 } // end of namespace  
 ```  
   
-## 請參閱  
- [處置模式](../Topic/Dispose%20Pattern.md)
+## <a name="see-also"></a>另請參閱  
+ [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)

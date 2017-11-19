@@ -1,11 +1,10 @@
 ---
-title: 'CA1047: Do not declare protected members in sealed types | Microsoft Docs'
+title: "CA1047： 不要宣告在密封類型中的受保護的成員 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,55 +14,40 @@ helpviewer_keywords:
 - CA1047
 - DoNotDeclareProtectedMembersInSealedTypes
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 09e385abe5443912601f1dacce8760a3882b3cec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: abdde6524f179cff3a1dd368cf218a91499f5381
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Do not declare protected members in sealed types
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047：不要在密封類型中宣告 protected 成員
 |||  
 |-|-|  
 |TypeName|DoNotDeclareProtectedMembersInSealedTypes|  
 |CheckId|CA1047|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public type is `sealed` (`NotInheritable` in Visual basic) and declares a protected member or a protected nested type. This rule does not report violations for <xref:System.Object.Finalize%2A> methods, which must follow this pattern.  
+## <a name="cause"></a>原因  
+ 公用型別是`sealed`(`NotInheritable`在 Visual basic 中)，並宣告 protected 的成員或受保護的巢狀的類型。 此規則不會報告的違規<xref:System.Object.Finalize%2A>必須遵循此模式的方法。  
   
-## <a name="rule-description"></a>Rule Description  
- Types declare protected members so that inheriting types can access or override the member. By definition, you cannot inherit from a sealed type, which means that protected methods on sealed types cannot be called.  
+## <a name="rule-description"></a>規則描述  
+ 類型會宣告 protected 成員，如此繼承的類型即可存取或覆寫成員。 根據定義，您無法繼承自密封的型別，也就是說，受保護的方法，密封類型上的無法呼叫。  
   
- The C# compiler issues a warning for this error.  
+ C# 編譯器會發出這項錯誤的警告。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the access level of the member to private, or make the type inheritable.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，該成員的存取層級變更為 私用，或是將類型繼承。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Leaving the type in its current state can cause maintenance issues and does not provide any benefits.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。 類型在目前的狀態可能會造成維護問題並不提供任何優勢。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反此規則的類型。  
   
- [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)] [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]
+ [!code-vb[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/VisualBasic/ca1047-do-not-declare-protected-members-in-sealed-types_1.vb)]
+ [!code-csharp[FxCop.Design.SealedNoProtected#1](../code-quality/codesnippet/CSharp/ca1047-do-not-declare-protected-members-in-sealed-types_1.cs)]

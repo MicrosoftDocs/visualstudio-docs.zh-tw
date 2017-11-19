@@ -1,5 +1,5 @@
 ---
-title: Hierarchical update | Microsoft Docs
+title: "階層式更新 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - saving data, changed data
 - data [Visual Basic], hierarchical update
@@ -22,118 +20,105 @@ helpviewer_keywords:
 - updated data saving
 - related tables, saving
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
-caps.latest.revision: 26
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 78f1d4a53dee7bd0e9cfe22e1ad2b1f94555f7e1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 0091e17cf24a9476dde84cf2d8ad1a34f94e2cdd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="hierarchical-update"></a>Hierarchical update
-*Hierarchical update* refers to the process of saving updated data (from a dataset with two or more related tables) back to a database while maintaining referential integrity rules. *Referential integrity* refers to the consistency rules provided by the constraints in a database that control the behavior of inserting, updating, and deleting related records. For example, it's referential integrity that enforces the creation of a customer record before allowing orders to be created for that customer.  For more information about relationships in datasets, see [Relationships in datasets](../data-tools/relationships-in-datasets.md)  
+# <a name="hierarchical-update"></a>階層式更新
+*階層式更新*指儲存回資料庫的更新的資料 （從兩個或多個相關資料表的資料集），同時維護參考完整性規則的程序。 *參考完整性*指的是提供資料庫中的條件約束來控制插入、 更新和刪除相關的記錄行為的一致性規則。 比方說，它會建立客戶記錄，才能允許該客戶的訂單建立強制執行參考完整性。  如需在資料集中的關聯性的詳細資訊，請參閱[集中的關聯性](../data-tools/relationships-in-datasets.md)  
   
- The hierarchical update feature uses a `TableAdapterManager` to manage the `TableAdapter`s in a typed dataset. The `TableAdapterManager` component is a [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-generated class, so it's not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. When you drag a table from the data sources window to a Windows Form or WPF page, Visual Studio adds a variable of type TableAdapterManager to the form or page, and you see it in the designer in the component tray. For detailed information about the `TableAdapterManager` class, see the TableAdapterManager Reference section of [TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
+ 階層式更新功能會使用`TableAdapterManager`管理`TableAdapter`中具類型資料集。 `TableAdapterManager`元件是[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]-產生類別，因此並不屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 當您將資料表從資料來源視窗拖曳至 Windows Form 或 WPF 頁面時，Visual Studio 會將類型 TableAdapterManager 的變數加入至表單或頁面上，與您在元件匣中的設計工具中看到它。 如需詳細資訊`TableAdapterManager`類別，請參閱 TableAdapterManager 參考 > 一節[Tableadapter](../data-tools/create-and-configure-tableadapters.md)。  
   
- By default, a dataset treats related tables as "relations only," which means that it doesn't enforce foreign key constraints. You can modify that setting at design time by using the Dataset Designer. Select the relation line between two tables to bring up the **Relation** dialog box. The changes you make here will determine how the TableAdapterManager behaves when it send the changes in the related tables back to the database.  
+ 根據預設，資料集視為相關的資料表 」，關聯性 」 這表示它不會強制執行 foreign key 條件約束。 您可以使用 Dataset 設計工具來修改在設計階段設定。 選取以顯示兩個資料表之間的關聯線**關聯** 對話方塊。 您所做的變更將決定 TableAdapterManager 的行為時它將變更相關的資料表中傳送回資料庫。  
   
-## <a name="enable-hierarchical-update-in-a-dataset"></a>Enable hierarchical update in a dataset  
- By default, hierarchical update is enabled for all new datasets that are added or created in a project. Turn hierarchical update on or off by setting the **Hierarchical Update** property of a typed dataset in The dataset to **True** or **False**:  
+## <a name="enable-hierarchical-update-in-a-dataset"></a>啟用資料集內的階層式更新  
+ 根據預設，會啟用階層式更新的新增或專案中建立的所有新資料集。 藉由設定開啟或關閉開啟的階層式更新**階層式更新**具類型的資料集，資料集屬性**True**或**False**:  
   
- ![Hierarchical update setting](../data-tools/media/hierarchical-update-setting.png "Hierarchical update setting")  
+ ![階層式更新設定](../data-tools/media/hierarchical-update-setting.png "階層式更新設定")  
   
-## <a name="create-a-new-relation-between-tables"></a>Create a new relation between tables  
- To create a new relation between two tables, in the Dataset Designer, select the title bar of each table, then right-click and select **Add relation**.  
+## <a name="create-a-new-relation-between-tables"></a>建立新的資料表之間的關聯性  
+ 若要建立新的關聯性，兩個資料表之間，Dataset 設計工具中選取每個資料表的標題列，然後以滑鼠右鍵按一下並選取**加入關聯**。  
   
- ![Hierarchical update add relation menu](../data-tools/media/hierarchical-update-add-relation-menu.png "Hierarchical update add relation menu")  
+ ![階層式更新將新增關聯功能表](../data-tools/media/hierarchical-update-add-relation-menu.png "階層式更新將新增關聯功能表")  
   
-## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>Understand foreign-key constraints, cascading updates, and deletes  
- It's important to understand how foreign-key constraints and cascading behavior in the database are created in the generated dataset code.  
+## <a name="understand-foreign-key-constraints-cascading-updates-and-deletes"></a>了解 foreign key 條件約束、 階層的更新和刪除  
+ 請務必了解如何 foreign key 條件約束和串聯資料庫中的行為會在產生的資料集程式碼中建立。  
   
- By default, the data tables in a dataset are generated with relationships (<xref:System.Data.DataRelation>) that match the relationships in the database. However, the relationship in the dataset is not generated as a foreign-key constraint. The <xref:System.Data.DataRelation> is configured as **Relation Only** without <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> or <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> in effect.  
+ 根據預設，資料集中的資料表產生關聯性 (<xref:System.Data.DataRelation>)，符合資料庫中的關聯性。 不過，在資料集中的關聯性不會產生做為外部索引鍵條件約束。 <xref:System.Data.DataRelation>設定為**只關聯**沒有<xref:System.Data.ForeignKeyConstraint.UpdateRule%2A>或<xref:System.Data.ForeignKeyConstraint.DeleteRule%2A>作用中。  
   
- By default, cascading updates and cascading deletes are turned off even if the database relationship is set with cascading updates and/or cascading deletes turned on. For example, creating a new customer and a new order and then trying to save the data can cause a conflict with the foreign-key constraints that are defined in the database. For more information, see [Turn off constraints while filling a dataset](turn-off-constraints-while-filling-a-dataset.md).  
+ 根據預設，階層式更新和串聯刪除已關閉，即使資料庫關聯性會以階層式更新來設定及/或串聯刪除。 例如，建立新的客戶和新的訂單，然後嘗試將資料儲存可能會造成衝突資料庫所定義的外部索引鍵條件約束。 如需詳細資訊，請參閱[填入 dataset 時關閉條件約束](turn-off-constraints-while-filling-a-dataset.md)。  
   
-## <a name="set-the-order-to-perform-updates"></a>Set the order to perform updates  
- Setting the order to perform updates sets the order of the individual inserts, updates, and deletes that are required to save all the modified data in all tables of a dataset. When hierarchical update is enabled, inserts are performed first, then updates, and then deletes. The `TableAdapterManager` provides an `UpdateOrder` property that can be set to perform updates first, then inserts, and then deletes.  
-  
-> [!NOTE]
->  It's  important to understand that the update order is all inclusive. That is, when updates are performed, inserts, and then deletes are performed for all tables in the dataset.  
-  
- To set the `UpdateOrder` property, after dragging items from the [Data Sources Window](add-new-data-sources.md) onto a form, select the `TableAdapterManager` in the component tray, and then set the `UpdateOrder` property in the **Properties** window. 
-  
-## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Create a backup copy of a dataset before performing a hierarchical update  
- When you save data (by calling the `TableAdapterManager.UpdateAll()` method), the `TableAdapterManager` attempts to update the data for each table in a single transaction. If any part of the update for any table fails, the whole transaction is rolled back. In most situations, the rollback returns your application to its original state.  
-  
- However, sometimes you might want to restore the dataset from the backup copy. One example of this might occur when you're using auto-increment values. For example, if a save operation is not successful, auto-increment values are not reset in the dataset, and the dataset  continues to create auto-incrementing values.This leaves a gap in numbering that might not be acceptable in your application. In situations where this is an issue, the `TableAdapterManager` provides a `BackupDataSetBeforeUpdate` property that replaces the existing dataset with a backup copy if the transaction fails.  
+## <a name="set-the-order-to-perform-updates"></a>設定執行更新的順序  
+ 設定的順序來執行更新設定的個別訂單插入、 更新和刪除，才能儲存修改過的所有資料集的所有資料表中。 啟用階層式更新時，插入會執行第一次，然後更新，然後再刪除。 `TableAdapterManager`提供`UpdateOrder`屬性，可以是設定為第一次，執行更新，然後插入和刪除。  
   
 > [!NOTE]
->  The backup copy is only in memory while the `TableAdapterManager.UpdateAll` method is running. Therefore, there is no programmatic access to this backup dataset because it either replaces the original dataset or goes out of scope as soon as the `TableAdapterManager.UpdateAll` method finishes running.  
+>  請務必了解更新順序是包含所有角色。 也就是更新執行時，插入和刪除執行中的資料集的所有資料表。  
   
-## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modify the generated save code to perform the hierarchical update  
- Save changes from the related data tables in the dataset to the database by calling the `TableAdapterManager.UpdateAll` method and passing in the name of the dataset that contains the related tables. For example, run the `TableAdapterManager.UpdateAll(NorthwindDataset)` method to send updates from all the tables in NorthwindDataset to the back-end database.  
+ 若要設定`UpdateOrder`屬性中，拖曳的項目之後[資料來源視窗](add-new-data-sources.md)到表單上，選取`TableAdapterManager`在元件匣中，並將其設定`UpdateOrder`中的屬性**屬性**視窗。 
   
- After you drop the items from the **Data Sources** window, code is automatically added to the `Form_Load` event to populate each table (the `TableAdapter.Fill` methods). Code is also added to the **Save** button click event of the <xref:System.Windows.Forms.BindingNavigator> to save data from the dataset back to the database (the `TableAdapterManager.UpdateAll` method).  
+## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>執行階層式更新之前先建立資料集的備份副本  
+ 當您儲存資料時 (藉由呼叫`TableAdapterManager.UpdateAll()`方法)，則`TableAdapterManager`嘗試更新在單一交易中每個資料表的資料。 如果更新任何資料表的任何部分失敗，會回復整個交易。 在大部分情況下，復原會傳回您的應用程式至其原始狀態。  
   
- The generated save code also contains a line of code that calls the `CustomersBindingSource.EndEdit` method. More specifically, it calls the <xref:System.Windows.Forms.BindingSource.EndEdit%2A> method of the first <xref:System.Windows.Forms.BindingSource>that's added to the form. In other words, this code is only generated for the first table that's dragged from the **Data Sources** window onto the form. The <xref:System.Windows.Forms.BindingSource.EndEdit%2A> call commits any changes that are in process in any data-bound controls that are currently being edited. Therefore, if a data-bound control still has focus and you click the **Save** button, all pending edits in that control are committed before the actual save (the `TableAdapterManager.UpdateAll` method).  
-  
-> [!NOTE]
->  The Dataset Designer only adds the `BindingSource.EndEdit` code for the first table that's dropped onto the form. Therefore, you have to add a line of code to call the `BindingSource.EndEdit` method for each related table on the form. For this walkthrough, this means you have to add a call to the `OrdersBindingSource.EndEdit` method.  
-  
-#### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>To update the code to commit changes to the related tables before saving  
-  
-1.  Double-click the **Save** button on the <xref:System.Windows.Forms.BindingNavigator> to open **Form1** in the Code Editor.  
-  
-2.  Add a line of code to call the `OrdersBindingSource.EndEdit` method after the line that calls the `CustomersBindingSource.EndEdit` method. The code in the **Save** button click event should resemble the following:  
-  
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]  [!code-cs[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]  
-  
- In addition to committing changes on a related child table before saving data to a database, you might also have to commit newly created parent records before adding new child records to a dataset. In other words, you might have to add the new parent record (Customer) to the dataset before foreign key constraints enable new child records (Orders) to be added to the dataset. To accomplish this, you can use the child `BindingSource.AddingNew` event.  
+ 不過，有時候您可能想要從備份副本還原資料集。 當您使用自動遞增值，可能會發生這樣的其中一個範例。 例如，如果儲存作業未順利完成，不會在資料集中，會重設自動遞增的值，而且資料集繼續建立自動遞增的值。這會保留中編號的可能無法使用應用程式中的間距。 中的情況下這是有問題，其中`TableAdapterManager`提供`BackupDataSetBeforeUpdate`若交易失敗，以備份取代現有的資料集的屬性。  
   
 > [!NOTE]
->  Whether you have to commit new parent records depends on the type of control that's used to bind to your data source. In this walkthrough, you use individual controls to bind to the parent table. This requires the additional code to commit the new parent record. If the parent records were instead displayed in a complex binding control like the <xref:System.Windows.Forms.DataGridView>, this additional <xref:System.Windows.Forms.BindingSource.EndEdit%2A> call for the parent record would not be necessary. This is because the underlying data-binding functionality of the control handles the committing of the new records.  
+>  備份副本是只能在時記憶體中`TableAdapterManager.UpdateAll`方法是否執行。 因此，沒有任何以程式設計方式存取此備份的資料集，因為它會取代原始資料集，或超出範圍儘速`TableAdapterManager.UpdateAll`方法完成執行。  
   
-#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>To add code to commit parent records in the dataset before adding new child records  
+## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>修改產生的儲存程式碼以執行階層式更新  
+ 呼叫 `TableAdapterManager.UpdateAll` 方法並傳入包含關聯資料表的資料集名稱，可將資料集內關聯資料表的變更儲存至資料庫。 例如，執行 `TableAdapterManager.UpdateAll(NorthwindDataset)` 方法，以將 NorthwindDataset 中所有資料表的更新傳送至後端資料庫。  
   
-1.  Create an event handler for the `OrdersBindingSource.AddingNew` event.  
+ 您卸除的項目之後**資料來源**視窗中，程式碼會自動加入至`Form_Load`事件，以填入每個資料表 (`TableAdapter.Fill`方法)。 程式碼也會加入至**儲存**按鈕的 click 事件的<xref:System.Windows.Forms.BindingNavigator>，將資料從資料集儲存回資料庫 (`TableAdapterManager.UpdateAll`方法)。  
   
-    -   Open **Form1** in design view, select **OrdersBindingSource** in the component tray, select **Events** in the **Properties** window, and then double-click the **AddingNew** event.  
+ 產生的儲存程式碼也包含一行會呼叫 `CustomersBindingSource.EndEdit` 方法的程式碼。 更具體來說，它會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法的第一個<xref:System.Windows.Forms.BindingSource>加入至表單。 換句話說，此程式碼只會產生第一個資料表是指從拖曳**資料來源**視窗拖曳至表單。 <xref:System.Windows.Forms.BindingSource.EndEdit%2A> 呼叫會認可目前正在編輯的所有資料繫結控制項中，所有正在進行的變更。 因此，如果資料繫結控制項還有焦點時，您可以按一下**儲存**按鈕，所有暫止的編輯控制項之前，在實際儲存先認可，(`TableAdapterManager.UpdateAll`方法)。  
   
-2.  Add a line of code to the event handler that calls the `CustomersBindingSource.EndEdit` method. The code in the `OrdersBindingSource_AddingNew` event handler should resemble the following:  
+> [!NOTE]
+>  Dataset 設計工具只會加入`BindingSource.EndEdit`放置在表單的第一個資料表的程式碼。 因此，您必須對表單上每個關聯資料表，加入一行程式碼以呼叫 `BindingSource.EndEdit` 方法。 在此逐步說明中，這表示您必須加入 `OrdersBindingSource.EndEdit` 方法的呼叫。  
   
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]  [!code-cs[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]  
+#### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>更新程式碼以在儲存前認可關聯資料表的變更  
   
-## <a name="tableadaptermanager-reference"></a>TableAdapterManager reference  
- By default, a `TableAdapterManager` class is generated when you create a dataset that contains related tables. To prevent the class from being generated, change the value of the `Hierarchical Update` property of the dataset to false. When you drag a table that has a relation onto the design surface of a Windows Form or WPF page, Visual Studio declares a member variable of the class. If you don't use databinding, you have to manually declare the variable.  
+1.  按兩下**儲存**按鈕<xref:System.Windows.Forms.BindingNavigator>開啟**Form1**在程式碼編輯器。  
   
- The `TableAdapterManager` class is not part of the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Therefore, you cannot look it up in the documentation. It is created at design time as part of the dataset creation process.  
+2.  在呼叫 `OrdersBindingSource.EndEdit` 方法的程式碼行後方，加入一行程式碼以呼叫 `CustomersBindingSource.EndEdit` 方法。 中的程式碼**儲存**按鈕 click 事件應該類似如下：  
   
- The following are the frequently used methods and properties of the `TableAdapterManager` class:  
+     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
+     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]  
   
-|Member|Description|  
+除了將資料儲存至資料庫前，先認可關聯子資料表的變更外，您可能也必須先認可新建立的父記錄，才能將子記錄加入至資料集。 換言之，您可能必須先將新的父記錄 (Customer) 加入至資料集，外部索引鍵條件約束才會允許新的子記錄 (Orders) 加入至資料集。 若要完成此工作，您可以使用子 `BindingSource.AddingNew` 事件。  
+  
+> [!NOTE]
+>  您是否必須認可新的父記錄取決於用來繫結至資料來源的控制項類型。 在本逐步解說中，您可以使用個別控制項繫結至父資料表。 這需要額外的程式碼來認可新的父記錄。 若父記錄改為顯示在複雜繫結控制項，例如<xref:System.Windows.Forms.DataGridView>、 額外<xref:System.Windows.Forms.BindingSource.EndEdit%2A>呼叫父記錄就不一定需要。 因為控制項的基礎資料繫結功能會處理新記錄的認可。  
+  
+#### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>加入程式碼以在新增子記錄前先認可資料集中的父記錄  
+  
+1.  建立 `OrdersBindingSource.AddingNew` 事件的事件處理常式。  
+  
+    -   開啟**Form1**在設計檢視中，選取**OrdersBindingSource**在元件匣中，選取**事件**中**屬性**視窗中，並然後按兩下**AddingNew**事件。  
+  
+2.  呼叫事件處理常式中加入一行程式碼`CustomersBindingSource.EndEdit`方法。 `OrdersBindingSource_AddingNew` 事件處理常式中的程式碼應該與下列類似：  
+  
+     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
+     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]  
+  
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager 參考  
+ 根據預設，`TableAdapterManager`當您建立包含相關的資料表的資料集時，會產生類別。 若要防止產生的類別，將變更的值`Hierarchical Update`屬性為 false 的資料集。 當您拖曳到設計介面上的 Windows Form 或 WPF 頁面產生關聯的資料表時，Visual Studio 會宣告類別的成員變數。 如果您不使用資料繫結，您必須以手動方式將變數宣告。  
+  
+ `TableAdapterManager`類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 因此，您無法查詢文件中。 它會建立在設計階段做為資料集的建立程序的一部分。  
+  
+ 以下是常用的方法和屬性的`TableAdapterManager`類別：  
+  
+|成員|描述|  
 |------------|-----------------|  
-|`UpdateAll` method|Saves all data from all data tables.|  
-|`BackUpDataSetBeforeUpdate` property|Determines whether to create a backup copy of the dataset before executing the `TableAdapterManager.UpdateAll` method.Boolean.|  
-|*tableName* `TableAdapter` property|Represents a `TableAdapter`. The generated `TableAdapterManager` contains a property for each `TableAdapter` it manages. For example, a dataset with a Customers and Orders table is generated with a `TableAdapterManager` that contains `CustomersTableAdapter` and `OrdersTableAdapter` properties.|  
-|`UpdateOrder` property|Controls the order of the individual insert, update, and delete commands. Set this to one of the values in the `TableAdapterManager.UpdateOrderOption` enumeration.<br /><br /> By default, the `UpdateOrder` is set to **InsertUpdateDelete**. This means that inserts, then updates, and then deletes are performed for all tables in the dataset.|  
+|`UpdateAll` 方法|所有資料表的資料儲存所有資料。|  
+|`BackUpDataSetBeforeUpdate` 屬性|決定是否要建立資料集的備份副本，再執行`TableAdapterManager.UpdateAll`方法。布林值。|  
+|*tableName* `TableAdapter`屬性|代表`TableAdapter`。 產生`TableAdapterManager`屬性包含每個`TableAdapter`其所管理。 例如，與客戶和訂單資料表的資料集就會產生含有`TableAdapterManager`包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|  
+|`UpdateOrder` 屬性|控制個別 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設**InsertUpdateDelete**。 這表示它會插入，則會更新，然後刪除執行中的資料集的所有資料表。|  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>另請參閱  
+ [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

@@ -1,39 +1,42 @@
 ---
-title: "如何：在機器碼中設定執行緒名稱 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [C++], 執行緒"
-  - "偵錯 [Visual Studio], 執行緒"
-  - "SetThreadName 函式"
-  - "執行緒名稱"
-  - "執行緒處理 [Visual Studio], 名稱"
+title: "如何： 在原生程式碼中設定執行緒名稱 |Microsoft 文件"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging [C++], threads
+- SetThreadName function
+- threading [Visual Studio], names
+- thread names
+- debugging [Visual Studio], threads
 ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
-caps.latest.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 37
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2ded01065c3971daf630fd743d0ad017e2b3d91c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：在機器碼中設定執行緒名稱
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-set-a-thread-name-in-native-code"></a>如何：在機器碼中設定執行緒名稱
+在所有 Visual Studio 版本中，都可以將執行緒命名。 執行緒命名可用於追蹤的執行緒中的**執行緒**視窗。
 
 若要在程式中設定執行緒名稱，請如下列程式碼範例所示，使用 `SetThreadName` 函式。 請注意，執行緒名稱會複製到執行緒，以便釋放 `threadName` 參數的記憶體。  
   
-## 範例  
+## <a name="example"></a>範例  
   
-```cpp  
+```C++  
 //  
 // Usage: SetThreadName ((DWORD)-1, "MainThread");  
 //  
@@ -66,7 +69,7 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
   
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
- [在偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
+ [在 偵錯工具中檢視資料](../debugger/viewing-data-in-the-debugger.md)   
  [如何：在 Managed 程式碼中設定執行緒名稱](../debugger/how-to-set-a-thread-name-in-managed-code.md)

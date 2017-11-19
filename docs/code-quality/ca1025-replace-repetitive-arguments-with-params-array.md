@@ -1,11 +1,10 @@
 ---
-title: 'CA1025: Replace repetitive arguments with params array | Microsoft Docs'
+title: "Ca1025： 必須以參數陣列取代重複的引數 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,53 +14,37 @@ helpviewer_keywords:
 - ReplaceRepetitiveArgumentsWithParamsArray
 - CA1025
 ms.assetid: f009b340-dea3-4459-8fe1-2143aa8b5d0b
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 149d34bcf1192fa93e6ee5416c8003e965f6fc3f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 910be06a7d9897f306b6bb2b89ca99b733623faf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Replace repetitive arguments with params array
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025：必須以參數陣列取代重複的引數
 |||  
 |-|-|  
 |TypeName|ReplaceRepetitiveArgumentsWithParamsArray|  
 |CheckId|CA1025|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected method in a public type has more than three parameters, and its last three parameters are the same type.  
+## <a name="cause"></a>原因  
+ 公用或受保護的方法中的公用型別有三個以上的參數，且其最後三個參數都是相同的型別。  
   
-## <a name="rule-description"></a>Rule Description  
- Use a parameter array instead of repeated arguments when the exact number of arguments is unknown and the variable arguments are the same type, or can be passed as the same type. For example, the <xref:System.Console.WriteLine%2A> method provides a general-purpose overload that uses a parameter array to accept any number of <xref:System.Object> arguments.  
+## <a name="rule-description"></a>規則描述  
+ 當引數的正確數目未知，且變數引數都是相同的型別，或可以傳遞相同的類型，請使用參數陣列而不是重複的引數。 例如，<xref:System.Console.WriteLine%2A>方法提供一般用途的多載用於接受任意數目的參數陣列<xref:System.Object>引數。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, replace the repeated arguments with a parameter array.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請以參數陣列取代重複的引數。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is always safe to suppress a warning from this rule; however, this design might cause usability issues.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 可永遠放心隱藏的警告，這項規則。不過，這項設計可能會導致可用性的問題。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates this rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反此規則的類型。  
   
  [!code-csharp[FxCop.Design.RepeatArgs#1](../code-quality/codesnippet/CSharp/ca1025-replace-repetitive-arguments-with-params-array_1.cs)]

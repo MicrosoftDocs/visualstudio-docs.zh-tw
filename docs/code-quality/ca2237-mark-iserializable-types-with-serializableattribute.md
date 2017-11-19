@@ -1,11 +1,10 @@
 ---
-title: 'CA2237: Mark ISerializable types with SerializableAttribute | Microsoft Docs'
+title: "Ca2237： 必須以 SerializableAttribute 標記 ISerializable 類型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,67 +14,53 @@ helpviewer_keywords:
 - MarkISerializableTypesWithSerializable
 - CA2237
 ms.assetid: 9bd6bb24-a527-43dd-9952-043c0c694f46
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d7bbfcec7db2104f482ba322bb8d858d42977d70
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ecb9934ddefe0458f2974af0d73560532a17cc07
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Mark ISerializable types with SerializableAttribute
+# <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237：必須以 SerializableAttribute 標記 ISerializable 類型
 |||  
 |-|-|  
 |TypeName|MarkISerializableTypesWithSerializable|  
 |CheckId|CA2237|  
-|Category|Microsoft.Usage|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Usage|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- An externally visible type implements the <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface and the type is not marked with the <xref:System.SerializableAttribute?displayProperty=fullName> attribute. The rule ignores derived types whose base type is not serializable.  
+## <a name="cause"></a>原因  
+ 外部可見的型別會實作<xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>介面以及類型未標示為<xref:System.SerializableAttribute?displayProperty=fullName>屬性。 此規則會忽略其基底類型不是可序列化的衍生型別。  
   
-## <a name="rule-description"></a>Rule Description  
- To be recognized by the common language runtime as serializable, types must be marked with the <xref:System.SerializableAttribute> attribute even if the type uses a custom serialization routine through implementation of the <xref:System.Runtime.Serialization.ISerializable> interface.  
+## <a name="rule-description"></a>規則描述  
+ 可辨識的 common language runtime 為可序列化，類型必須標記為<xref:System.SerializableAttribute>屬性即使型別會使用透過實作自訂序列化常式<xref:System.Runtime.Serialization.ISerializable>介面。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, apply the <xref:System.SerializableAttribute> attribute to the type.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，套用<xref:System.SerializableAttribute>屬性加入型別。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule for exception classes because they must be serializable to work correctly across application domains.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的例外狀況類別的警告，因為它們必須是可序列化跨應用程式定義域正常運作。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule. Uncomment the <xref:System.SerializableAttribute> attribute line to satisfy the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的類型。 請取消註解<xref:System.SerializableAttribute>屬性列，以符合下列規則。  
   
- [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)] [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]  
+ [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
+ [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2236: Call base class methods on ISerializable types](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA2236：必須呼叫 ISerializable 類型上的基底類別方法](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
- [CA2240: Implement ISerializable correctly](../code-quality/ca2240-implement-iserializable-correctly.md)  
+ [CA2240：必須正確實作 ISerializable](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
- [CA2229: Implement serialization constructors](../code-quality/ca2229-implement-serialization-constructors.md)  
+ [CA2229：必須實作序列化建構函式](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2238: Implement serialization methods correctly](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
+ [CA2238：必須正確實作序列化方法](../code-quality/ca2238-implement-serialization-methods-correctly.md)  
   
- [CA2235: Mark all non-serializable fields](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
+ [CA2235：必須標記所有不可序列化的欄位](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
- [CA2239: Provide deserialization methods for optional fields](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
+ [CA2239：必須為選擇性欄位提供還原序列化方法](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120: Secure serialization constructors](../code-quality/ca2120-secure-serialization-constructors.md)
+ [CA2120：必須保護序列化建構函式](../code-quality/ca2120-secure-serialization-constructors.md)

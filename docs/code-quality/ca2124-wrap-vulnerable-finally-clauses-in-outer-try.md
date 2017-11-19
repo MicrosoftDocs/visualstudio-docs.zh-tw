@@ -1,57 +1,58 @@
 ---
-title: "CA2124：必須將有弱點的 finally 子句包裝在外層 try 中 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
-helpviewer_keywords: 
-  - "CA2124"
-  - "WrapVulnerableFinallyClausesInOuterTry"
+title: "CA2124: Finally 子句包裝在外層 try |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
+helpviewer_keywords:
+- CA2124
+- WrapVulnerableFinallyClausesInOuterTry
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
-caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f4d30a07ed0930d5165629f7c4b468d7e5146613
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA2124：必須將有弱點的 finally 子句包裝在外層 try 中
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124：必須將有弱點的 finally 子句包裝在外層 try 中
 |||  
 |-|-|  
-|型別名稱|WrapVulnerableFinallyClausesInOuterTry|  
+|TypeName|WrapVulnerableFinallyClausesInOuterTry|  
 |CheckId|CA2124|  
 |分類|Microsoft.Security|  
-|中斷變更|不中斷|  
+|中斷變更|非中斷|  
   
-## 原因  
- 在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 和 1.1 版中，公用或保護的方法會包含 `try`\/`catch`\/`finally` 區塊。  `finally` 區塊似乎會重設安全性狀態，而且不會封入 `finally` 區塊中。  
+## <a name="cause"></a>原因  
+ 1.0 和 1.1 版中[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，公用或受保護的方法包含`try` / `catch` / `finally`區塊。 `finally`區塊似乎會重設安全性狀態，而且不會封入中`finally`區塊。  
   
-## 規則描述  
- 此規則會在以 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 1.0 和 1.1 版為目標的程式碼中找出 `try`\/`finally` 區塊，這些區塊可能很容易遭受呼叫堆疊中出現之惡意例外狀況篩選條件的攻擊。  如果在 try 區塊中發生敏感作業 \(例如模擬\) 並且擲回例外狀況，則可以在 `finally` 區塊之前執行篩選條件。  若是模擬範例，則表示篩選條件會以模擬的使用者執行。  篩選條件目前只能在 Visual Basic 中實作。  
+## <a name="rule-description"></a>規則描述  
+ 此規則會找出`try` / `finally` 1.0 和 1.1 版為目標的程式碼中封鎖[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]可能容易受到惡意的例外狀況篩選條件出現在呼叫堆疊。 如果在 try 區塊中發生敏感的作業，例如模擬，會擲回例外狀況之前，可以執行篩選條件`finally`區塊。 模擬範例中，這表示篩選條件會執行與模擬的使用者。 篩選是目前可實作只能在 Visual Basic 中。  
   
 > [!WARNING]
->  **注意**在 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 \(含\) 以後版本中，如果直接在包含例外狀況區塊的方法中進行重設，執行階段會自動保護 `try`\/`catch`\/ `finally` 區塊，避免惡意例外篩選器干擾。  
+>  **請注意**版本 2.0 和更新版本的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，執行階段自動保護`try` / `catch` /  `finally`封鎖惡意的例外狀況篩選條件，如果發生重設直接在方法中包含例外狀況區塊。  
   
-## 如何修正違規  
- 請將未包裝的 `try`\/`finally` 放置在外層 try 區塊中。  請參閱以下的第二個範例。  這會強制 `finally` 在篩選程式碼之前先執行。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 將包裝`try` / `finally`外部 try 區塊中。 接下來的第二個範例，請參閱。 這會強制`finally`篩選程式碼之前執行。  
   
-## 隱藏警告的時機  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請勿隱藏此規則的警告。  
   
-## 虛擬程式碼範例  
+## <a name="pseudo-code-example"></a>虛擬程式碼範例  
   
-### 描述  
- 下列虛擬程式碼會說明這項規則偵測到的模式。  
+### <a name="description"></a>描述  
+ 下列虛擬程式碼會說明這個規則偵測到的模式。  
   
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
 try {  
@@ -65,8 +66,8 @@ finally {
 }  
 ```  
   
-## 範例  
- 下列虛擬程式碼會顯示您可以用於保護程式碼並符合此規則的模式。  
+## <a name="example"></a>範例  
+ 下列虛擬程式碼會顯示可用來保護您的程式碼並符合此規則的模式。  
   
 ```  
 try {  

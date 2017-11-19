@@ -1,63 +1,66 @@
 ---
-title: "DebugPropertyInfo 結構 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "DebugPropertyInfo 結構 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: DebugPropertyInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "DebugPropertyInfo 結構"
+helpviewer_keywords: DebugPropertyInfo structure
 ms.assetid: 3246efbc-c212-4024-8f07-6414c2f85e75
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c9baade1a742a06c952906c05c574e752806bc9c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# DebugPropertyInfo 結構
-描述具有名稱、型別和值的階層式性質的物件。  它是用來描述區域變數偵錯屬性、參數、監看式變數和運算式和暫存器。  
+# <a name="debugpropertyinfo-structure"></a>DebugPropertyInfo 結構
+描述的階層式本質，具有名稱、 類型和值的物件。 它用來描述的本機變數、 參數、 監看變數和運算式，偵錯 屬性，並註冊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 typedef struct DebugPropertyInfo{  
-   DBGPROP_INFO_FLAGS  dwValidFields;  
-   BSTR  bstrName;  
-   BSTR  bstrType;  
-   BSTR  bstrValue;  
-   BSTR  bstrFullName;  
-   DBGPROP_ATTRIB_FLAGS  dwAttrib;  
-   IDebugProperty*  pDebugProp;  
+   DBGPROP_INFO_FLAGS  dwValidFields;  
+   BSTR  bstrName;  
+   BSTR  bstrType;  
+   BSTR  bstrValue;  
+   BSTR  bstrFullName;  
+   DBGPROP_ATTRIB_FLAGS  dwAttrib;  
+   IDebugProperty*  pDebugProp;  
 };  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
  dwValidFields  
- 用來列舉資料型別指定哪些欄位初始化。  
+ 用來指定哪些欄位會初始化列舉的資料型別。  
   
  bstrName  
- 在內容中的屬性名稱。  
+ 在內容屬性名稱。  
   
  bstrType  
- 屬性型別，做為格式化字串。  
+ 屬性類型，作為格式化字串。  
   
  bstrValue  
- 屬性值，做為格式化字串。  
+ 屬性值，作為格式化字串。  
   
  bstrFullName  
  屬性的完整名稱。  
   
  dwAttrib  
- 提供偵錯屬性旗標列舉型別的屬性。  
+ 列舉，指定偵錯屬性的屬性旗標。  
   
  pDebugProp  
- 描述資訊的 `IDebugProperty` 在這 `DebugPropertyInfo` 結構。  
+ `IDebugProperty`此資訊來描述`DebugPropertyInfo`結構。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)   
- [DBGPROP\_ATTRIB\_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
- [DBGPROP\_INFO\_FLAGS](../../winscript/reference/dbgprop-info-flags.md)
+ [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

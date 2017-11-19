@@ -1,62 +1,65 @@
 ---
-title: "lastIndexOf 方法 (Array) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "陣列 [JavaScript], lastIndexOf 方法"
-  - "lastIndexOf 方法 [JavaScript]"
+title: "lastIndexOf 方法 （陣列） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript], lastIndexOf method
+- lastIndexOf method [JavaScript]
 ms.assetid: 04f5145d-007e-498f-b06f-11ab384c2968
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 12d2a0fca7a7cd82543a83ea19aca49d3cbb93b6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# lastIndexOf 方法 (Array) (JavaScript)
-傳回陣列中最後一個符合指定值的元素索引。  
+# <a name="lastindexof-method-array-javascript"></a>lastIndexOf 方法 (Array) (JavaScript)
+傳回陣列中所指定值最後一個出現位置的索引。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 array1.lastIndexOf(searchElement[, fromIndex])  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
 |參數|定義|  
-|--------|--------|  
-|`array1`|必要項。  要搜尋的陣列物件。|  
-|`searchElement`|必要項。  要在 `array1` 中尋找的值。|  
-|`fromIndex`|選擇項。  開始搜尋時的陣列索引。  如果省略 `fromIndex`，就會從陣列的最後一個索引位置開始搜尋。|  
+|---------------|----------------|  
+|`array1`|必要項。 要搜尋的陣列物件。|  
+|`searchElement`|必要項。 要在中尋找值`array1`。|  
+|`fromIndex`|選擇項。 陣列索引處開始搜尋。 如果`fromIndex`已省略，則搜尋開始的陣列中的最後一個索引。|  
   
-## 傳回值  
- 陣列中最後一次出現 `searchElement` 的索引位置，如果找不到 `searchElement` 則為 \-1。  
+## <a name="return-value"></a>傳回值  
+ 最後一個出現的索引`searchElement`中陣列，或是-1`searchElement`找不到。  
   
-## 備註  
- `lastIndexOf` 方法會在陣列中搜尋指定的值，  並傳回第一個相符的元素，如果找不到指定值則傳回 \-1。  
+## <a name="remarks"></a>備註  
+ `lastIndexOf`方法會搜尋指定的值的陣列。 方法會傳回第一個，則為-1 的索引，如果找不到指定的值。  
   
- 搜尋時，會依遞減的索引順序進行 \(即從最後一個成員開始\)。  若要依遞增順序搜尋，請使用 [indexOf 方法 \(Array\)](../../javascript/reference/indexof-method-array-javascript.md)。  
+ 搜尋就會發生以遞減的索引順序 （最後一個成員第一次）。 若要搜尋以遞增順序，請使用[indexOf 方法 （陣列）](../../javascript/reference/indexof-method-array-javascript.md)。  
   
- 比對陣列元素時，是將元素與 `searchElement` 值進行嚴格相等比較，這就類似使用 `===` 運算子進行比較。  如需詳細資訊，請參閱[比較運算子](../../javascript/reference/comparison-operators-javascript.md)。  
+ 陣列項目會相較於`searchElement`嚴格等類似所做的比較值`===`運算子。 如需詳細資訊，請參閱[比較運算子](../../javascript/reference/comparison-operators-javascript.md)。  
   
- 選擇性的 `fromIndex` 引數會指定開始搜尋時的陣列索引。  如果 `fromIndex` 大於或等於陣列長度，則會搜尋整個陣列。  如果 `fromIndex` 是負值，那麼索引位置就是陣列長度加上 `fromIndex` 的總和，並從該位置開始搜尋。  如果總和小於 0，則會傳回 \-1。  
+ 選擇性`fromIndex`引數會指定要開始搜尋的陣列索引。 如果`fromIndex`大於或等於陣列長度，則整體陣列中搜尋。 如果`fromIndex`是負數，搜尋會從陣列長度加上`fromIndex`。 如果計算的索引小於 0，則傳回-1。  
   
-## 範例  
- 在下列範例中，說明了如何使用 `lastIndexOf` 方法。  
+## <a name="example"></a>範例  
+ 下列範例說明使用`lastIndexOf`方法。  
   
-```javascript  
+```JavaScript  
 // Create an array.  
 var ar = ["ab", "cd", "ef", "ab", "cd"];  
   
@@ -83,10 +86,10 @@ document.write(ar.lastIndexOf("ab", -3) + "<br/>");
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## 請參閱  
- [indexOf 方法 \(Array\)](../../javascript/reference/indexof-method-array-javascript.md)   
+## <a name="see-also"></a>另請參閱  
+ [indexOf 方法 （陣列）](../../javascript/reference/indexof-method-array-javascript.md)   
  [Array 物件](../../javascript/reference/array-object-javascript.md)   
  [使用陣列](../../javascript/advanced/using-arrays-javascript.md)

@@ -1,49 +1,51 @@
 ---
-title: "Date.now 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "now 方法"
+title: "Date.now 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: now method
 ms.assetid: 41beda89-1a40-4fb1-88b0-38c090af739b
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 41a098c55b8ced3c630d3724615835301b6f00c8
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Date.now 函式 (JavaScript)
+# <a name="datenow-function-javascript"></a>Date.now 函式 (JavaScript)
 取得目前的日期和時間。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 Date.now()  
 ```  
   
-## 傳回值  
- 從 1970 年 1 月 1 日午夜起直到現在日期及時間的毫秒數。  
+## <a name="return-value"></a>傳回值  
+ 1970 年 1 月 1 日午夜與目前的日期和時間之間的毫秒數。  
   
-## 備註  
- [getTime 方法](../../javascript/reference/gettime-method-date-javascript.md)會傳回從 1970 年 1 月 1 日起直到指定之日期的毫秒數。  
+## <a name="remarks"></a>備註  
+ [GetTime 方法](../../javascript/reference/gettime-method-date-javascript.md)傳回之間的毫秒數 1970 年 1 月 1 日，並在指定的日期。  
   
- 如需如何計算已經過的時間以及比較日期的詳細資訊，請參閱[計算日期和時間 \(JavaScript\)](../../javascript/calculating-dates-and-times-javascript.md)。  
+ 如需如何計算經過的時間和比較日期資訊，請參閱[計算日期和時間 (JavaScript)](../../javascript/calculating-dates-and-times-javascript.md)。  
   
-## 範例  
+## <a name="example"></a>範例  
  在下列程式碼中，說明了如何使用 `now` 方法。  
   
-```javascript  
+```JavaScript  
 var start = Date.now();  
 var response = prompt("What is your name?", "");  
 var end = Date.now();  
@@ -54,11 +56,11 @@ document.write("You took " + elapsed + " seconds" + " to type: " + response);
 // You took <seconds> seconds to type: <name>  
 ```  
   
-## 需求  
- Internet Explorer 9 之前的版本不支援。  不過，下列文件模式會提供支援：Quirks、Internet Explorer 6 標準、Internet Explorer 7 標準、Internet Explorer 8 標準、Internet Explorer 9 標準、Internet Explorer 10 標準。  也在 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 應用程式中受到支援。  
+## <a name="requirements"></a>需求  
+ 不支援在已安裝的版本早於 Internet Explorer 9。 不過，支援在文件模式如下： Quirks、 Internet Explorer 6 標準、 Internet Explorer 7 標準、 Internet Explorer 8 標準、 Internet Explorer 9 標準、 Internet Explorer 10 標準。 此外也提供支援[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]應用程式。  
   
-## 請參閱  
- [getTime 方法 \(日期\)](../../javascript/reference/gettime-method-date-javascript.md)   
+## <a name="see-also"></a>另請參閱  
+ [getTime 方法 （日期）](../../javascript/reference/gettime-method-date-javascript.md)   
  [Date 物件](../../javascript/reference/date-object-javascript.md)   
- [計算日期和時間 \(JavaScript\)](../../javascript/calculating-dates-and-times-javascript.md)   
+ [計算日期和時間 (JavaScript)](../../javascript/calculating-dates-and-times-javascript.md)   
  [JavaScript 方法](../../javascript/reference/javascript-methods.md)

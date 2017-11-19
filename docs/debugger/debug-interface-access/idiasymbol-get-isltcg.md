@@ -1,53 +1,52 @@
 ---
-title: "IDiaSymbol::get_isLTCG | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_isLTCG 方法"
+title: "Idiasymbol:: Get_isltcg |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_isLTCG method
 ms.assetid: 5f7f05b8-6b71-4958-9e1e-e4924ef9c59b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9be567714b30eea80579836b2a596bbf4f872e3f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_isLTCG
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的旗標是否[編譯模組](../../debugger/debug-interface-access/compiland.md)與連結器選項相連結[\/LTCG \(連結時間產生程式碼\)](/visual-cpp/build/reference/ltcg-link-time-code-generation)，這將會有助於在整個程式最佳化。  這個參數僅適用於 managed 程式碼。  
+# <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
+擷取指定的旗標是否[編譯](../../debugger/debug-interface-access/compiland.md)已與連結器參數連結[/LTCG （連結時間程式碼產生）](/cpp/build/reference/ltcg-link-time-code-generation)，這可以協助整個程式最佳化。 這個參數只適用於 managed 程式碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT get_iSLTCG(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  pFlag  
- \[\] out傳回`TRUE`如果`compiland`連結以 \/LTCG 連結器參數。 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`如果`compiland`連結到 /LTCG 連結器參數，否則傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 需求  
+## <a name="requirements"></a>需求  
   
 |需求|描述|  
-|--------|--------|  
-|標頭：|dia2.h|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

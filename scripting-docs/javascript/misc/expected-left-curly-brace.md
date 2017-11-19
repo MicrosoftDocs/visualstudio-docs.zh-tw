@@ -1,33 +1,35 @@
 ---
-title: "必須是 &#39;{&#39; | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.WebClient.Help.SCRIPT1008"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "必須是 &#39;{&#39; |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.WebClient.Help.SCRIPT1008
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: ffdb55c0-e361-4bcd-b1a6-6158e7d9b557
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5c72953f30ff80fcd48110afb74d628319863e99
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 必須是 &#39;{&#39;
-您並未包含標示函式主體開頭的左大括號。  組成函式主體的程式碼 \(即使只有一行\) 都必須包含在左大括號和右大括號之內。  請注意，在函式主體中使用大括號會比在迴圈中使用更為嚴格。  
+# <a name="expected-3939"></a>必須是 &#39;{&#39;
+未包含標記的函式主體開頭的左大括號。 進行主體的函式，即使它是單一行中的程式碼必須包含左邊和右邊大括號內。 請注意，使用的函式主體中的大括號比在迴圈中更嚴格。  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
--   在函式主體加入做為開頭標記的左大括號。  
+-   加入標記的函式主體開頭的左大括號。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Function 物件](../../javascript/reference/function-object-javascript.md)

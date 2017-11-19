@@ -1,5 +1,5 @@
 ---
-title: 'How to: Create DataContext methods mapped to stored procedures and functions (O-R Designer) | Microsoft Docs'
+title: "如何： 建立 DataContext 方法對應至預存程序和函式 （O R 設計工具） |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,69 +7,54 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
-caps.latest.revision: 2
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 6f0fe07b55ae0eeb57c0cc11fed047f31966cb6e
-ms.openlocfilehash: 3b94f1445a4e18bd03a102f7f49519ae344e2173
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: a162c9cb7cf7febf6e3b6e95e927a31b6591b027
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>How to: Create DataContext methods mapped to stored procedures and functions (O/R Designer)
-Stored procedures and functions can be added to the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] as <xref:System.Data.Linq.DataContext> methods. Calling the method and passing in the required parameters runs the stored procedure or function on the database and returns the data in the return type of the <xref:System.Data.Linq.DataContext> method. For detailed information about <xref:System.Data.Linq.DataContext> methods, see [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).  
+# <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>如何： 建立對應至預存程序和函式 （O/R 設計工具） 的 DataContext 方法
+預存程序和函式可以加入至[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]為<xref:System.Data.Linq.DataContext>方法。 呼叫這個方法並傳入必要的參數，在資料庫上執行的預存程序或函式，並將資料傳回的傳回型別中<xref:System.Data.Linq.DataContext>方法。 如需詳細資訊<xref:System.Data.Linq.DataContext>方法，請參閱[DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)。  
   
 > [!NOTE]
->  Stored procedures can also be used to override the default [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] runtime behavior that performs Inserts, Updates, and Deletes when changes are saved from entity classes to a database. For more information, see [How to: Assign stored procedures to perform updates, inserts, and deletes (O/R Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
+>  預存程序也可以用來覆寫當儲存實體類別 (Class) 的變更至資料庫時，用於執行插入、更新和刪除作業的預設 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 執行階段行為。 如需詳細資訊，請參閱[如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)。  
   
-## <a name="creating-datacontext-methods"></a>Creating DataContext Methods  
- You can create <xref:System.Data.Linq.DataContext> methods by dragging stored procedures or functions from **Server Explorer/Database Explorer** onto the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+## <a name="creating-datacontext-methods"></a>建立 DataContext 方法  
+ 您可以建立<xref:System.Data.Linq.DataContext>方法拖曳預存程序或函數從**伺服器總管/資料庫總管**到[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
   
 > [!NOTE]
->  The return type of the generated <xref:System.Data.Linq.DataContext> method differs depending on where you drop the stored procedure or function on the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]. Dropping items directly onto an existing entity class creates a <xref:System.Data.Linq.DataContext> method with the return type of the entity class. Dropping items onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] creates a <xref:System.Data.Linq.DataContext> method that returns an automatically generated type. You can change the return type of a <xref:System.Data.Linq.DataContext> method after adding it to the methods pane. To inspect or change the return type of a <xref:System.Data.Linq.DataContext> method, select it and inspect the **Return Type** property in the **Properties** window. For more information, see [How to: Change the return type of a DataContext method (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+>  所產生 <xref:System.Data.Linq.DataContext> 方法的傳回型別，會根據預存程序或函式在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]上的置放位置而不同。 如果將項目直接放入現有的實體類別，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 如果將項目放入 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]的空白區域，則建立的 <xref:System.Data.Linq.DataContext> 方法會傳回自動產生的型別。 您可以變更的傳回型別<xref:System.Data.Linq.DataContext>之後將它加入至方法窗格的方法。 若要檢查或變更的傳回型別<xref:System.Data.Linq.DataContext>方法中，選取它，然後檢查**傳回型別**屬性**屬性**視窗。 如需詳細資訊，請參閱[如何： 變更 DataContext 方法 （O/R 設計工具） 的傳回型別](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。  
   
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-#### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>To create DataContext methods that return automatically generated types  
+#### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>若要建立可傳回自動產生型別的 DataContext 方法  
   
-1.  In **Server Explorer**/**Database Explorer**, expand the **Stored Procedures** node of the database you are working with.  
+1.  在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
   
-2.  Locate the desired stored procedure and drag it onto an empty area of the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]的空白區域。  
   
-     The <xref:System.Data.Linq.DataContext> method is created with an automatically generated return type and appears in the **Methods** pane.  
+     <xref:System.Data.Linq.DataContext>方法會透過自動產生的傳回型別，並出現在**方法**窗格。  
   
-#### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>To create DataContext methods that have the return type of an entity class  
+#### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>若要建立具有實體類別之傳回型別的 DataContext 方法  
   
-1.  In **Server Explorer**/**Database Explorer**, expand the **Stored Procedures** node of the database you are working with.  
+1.  在**伺服器總管**/**資料庫總管**，依序展開**預存程序**您正在使用資料庫的節點。  
   
-2.  Locate the desired stored procedure and drag it onto an existing entity class in the [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)].  
+2.  尋找所要的預存程序，並將它拖曳至 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]的現有實體類別。  
   
-     The <xref:System.Data.Linq.DataContext> method is created with the return type of the selected entity class and appears in the **Methods** pane.  
+     <xref:System.Data.Linq.DataContext>方法會透過選取的實體類別的傳回型別，並出現在**方法**窗格。  
   
 > [!NOTE]
->  For information about changing the return type of existing <xref:System.Data.Linq.DataContext> methods, see [How to: Change the return type of a DataContext method (O/R Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+>  如需變更現有的傳回型別資訊<xref:System.Data.Linq.DataContext>方法，請參閱[如何： 變更 DataContext 方法 （O/R 設計工具） 的傳回型別](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md)。  
   
-## <a name="see-also"></a>See Also  
- [LINQ to SQL Tools in Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [DataContext Methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md)   
- [Walkthrough: Creating LINQ to SQL Classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
+## <a name="see-also"></a>另請參閱  
+ [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
+ [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   
+ [逐步解說： 建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
  [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
- [Introduction to LINQ in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
- [How to: Write LINQ Queries in C#](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)
+ [Visual Basic 中的 LINQ 簡介](/dotnet/visual-basic/programming-guide/language-features/linq/introduction-to-linq)   
+ [如何：在 C# 中撰寫 LINQ 查詢](http://msdn.microsoft.com/Library/45e47fcc-cfa1-4b72-b161-d038ae87bd23)

@@ -1,52 +1,54 @@
 ---
-title: "Math.exp 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "exp"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Euler 常數"
-  - "exp 方法"
-  - "exp 方法, JavaScript"
-  - "對數"
-  - "Math 物件"
+title: "Math.exp 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: exp
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- exp method
+- exp method, JavaScript
+- Math object
+- logarithms
+- Euler's constant
 ms.assetid: a36845a8-2c15-45be-83f1-b33914423201
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: aa2891b20496ceb5f740a0b94e8b5c8a0184e844
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Math.exp 函式 (JavaScript)
-傳回 e \(自然對數的基數\) 的乘冪數。  
+# <a name="mathexp-function-javascript"></a>Math.exp 函式 (JavaScript)
+傳回 e （自然對數的底數） 乘為乘冪。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 Math.exp(number)   
 ```  
   
-## 備註  
- 必要的 `number` 引數是表示 *e* 乘冪的數值運算式。  
+## <a name="remarks"></a>備註  
+ 所需`number`引數是數值運算式，代表的乘冪*e*。  
   
- 傳回值是數字。  常數 *e* 是歐拉數字 \(Euler's number\)，大約等於 2.71828，而且 `number` 是提供的引數。  
+ 傳回值為數字。 常數*e*是數字，大約等於 2.71828 euler 和`number`是提供的引數。  
   
- **適用於**：[Math 物件](../../javascript/reference/math-object-javascript.md)  
+ **適用於**: [Math 物件](../../javascript/reference/math-object-javascript.md)  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## 請參閱  
- [Math 常數](../../javascript/reference/math-constants-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [數學常數](../../javascript/reference/math-constants-javascript.md)

@@ -1,64 +1,47 @@
 ---
-title: 'CA2137: Transparent methods must contain only verifiable IL | Microsoft Docs'
+title: "CA2137： 透明方法必須包含可驗證的 IL |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2137
+f1_keywords: CA2137
 ms.assetid: cbaeb0e1-56b6-43b4-812a-596b2859c329
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 27b23ce892bea0a45adb3d7cff0a546ee0bad25f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 70a7574e0379c8e4b8dc9a888185efceb480fad4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Transparent methods must contain only verifiable IL
+# <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137：透明方法必須只包含可驗證的 IL
 |||  
 |-|-|  
 |TypeName|TransparentMethodsMustBeVerifiable|  
 |CheckId|CA2137|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A method contains unverifiable code or returns a type by reference.  
+## <a name="cause"></a>原因  
+ 方法包含無法驗證的程式碼，或以傳址方式傳回類型。  
   
-## <a name="rule-description"></a>Rule Description  
- This rule fires on attempts by security transparent code to execute unverifiable MSIL (Microsoft Intermediate Language). However, the rule does not contain a full IL verifier, and instead uses heuristics to catch most violations of MSIL verification.  
+## <a name="rule-description"></a>規則描述  
+ 當安全性透明程式碼嘗試執行無法驗證的 MSIL (Microsoft Intermediate Language) 時，就會引發此規則。 不過，此規則不包含完整的 IL 驗證器，並是使用啟發式來擷取多數的 MSIL 驗證違規情形。  
   
- To be certain that your code contains only verifiable MSIL, run [Peverify.exe (PEVerify Tool)](/dotnet/framework/tools/peverify-exe-peverify-tool) on your assembly. Run PEVerify with the **/transparent** option which limits the output to only unverifiable transparent methods which would cause an error. If the /transparent option is not used, PEVerify also verifies critical methods that are allowed to contain unverifiable code.  
+ 若要先確定您的程式碼包含只可驗證的 MSIL，執行[Peverify.exe （PEVerify 工具）](/dotnet/framework/tools/peverify-exe-peverify-tool)您的組件。 執行與 PEVerify **/ 透明**選項將輸出限制為只有無法驗證透明方法會導致錯誤。 如果 / 未使用透明選項、 PEVerify 也會確認是否允許包含無法驗證程式碼的重要方法。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, mark the method with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute, or remove the unverifiable code.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，將標記與方法<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>屬性，或移除無法驗證的程式碼。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The method in this example uses unverifiable code and should be marked with the <xref:System.Security.SecurityCriticalAttribute> or <xref:System.Security.SecuritySafeCriticalAttribute> attribute.  
+## <a name="example"></a>範例  
+ 在此範例中的方法使用未經驗證的程式碼和應該用來標記<xref:System.Security.SecurityCriticalAttribute>或<xref:System.Security.SecuritySafeCriticalAttribute>屬性。  
   
  [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

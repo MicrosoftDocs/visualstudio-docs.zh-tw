@@ -1,52 +1,51 @@
 ---
-title: "IDiaEnumStackFrames::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumStackFrames::Next 方法"
+title: "Idiaenumstackframes:: Next |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumStackFrames::Next method
 ms.assetid: 09378a21-d5e3-4213-b7e2-10f04d85295f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 784744321a76c7142c948bac5c5f83a896d443be
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumStackFrames::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取列舉型別序列中的指定的數目的堆疊框架項目。  
+# <a name="idiaenumstackframesnext"></a>IDiaEnumStackFrames::Next
+從列舉序列上擷取指定的堆疊框架項目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Next(   
-   ULONG             celt,  
-   IDiaStackFrame**  rgelt,  
-   ULONG*            pceltFetched  
+```C++  
+HRESULT Next(   
+   ULONG             celt,  
+   IDiaStackFrame**  rgelt,  
+   ULONG*            pceltFetched  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  celt  
- \[in\]要擷取的列舉值中的 stackframe 項目數目。  
+ [in]要擷取列舉值中的 stackframe 項目數目。  
   
  rgelt  
- \[\] out要填入要求陣列[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
+ [out]陣列，其中是要填入所要求[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
   
  pceltFetched  
- \[\] out傳回的堆疊框架項目中擷取的列舉值。  
+ [out]傳回框架項目堆疊的數字擷取列舉值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果沒有更多的堆疊框架。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的堆疊框架。 反之則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)

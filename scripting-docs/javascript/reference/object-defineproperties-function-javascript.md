@@ -1,64 +1,66 @@
 ---
-title: "Object.defineProperties 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "Object.defineProperties 函式 [JavaScript]"
+title: "Object.defineProperties 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords: Object.defineProperties function [JavaScript]
 ms.assetid: 2dae6658-a1c9-495f-bf06-bb3e964e6762
-caps.latest.revision: 24
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 65f4f5817a105283a26c971bd98869d000ca0bc2
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Object.defineProperties 函式 (JavaScript)
-將一個或多個屬性 \(Property\) 加入至物件，並且 \(或者\) 修改現有屬性 \(Property\) 的屬性 \(Attribute\)。  
+# <a name="objectdefineproperties-function-javascript"></a>Object.defineProperties 函式 (JavaScript)
+將一或多個屬性加入至物件，及/或修改現有屬性 (Property) 的屬性 (Attribute)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 object.defineProperties(object, descriptors)  
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `object`  
- 必要項。  要新增或修改屬性的目標物件。  這可以是原生 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 物件或 DOM 物件。  
+ 必要項。 要加入或修改的屬性物件。 這可以是原生[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]物件或 DOM 物件。  
   
  `descriptors`  
- 必要項。  包含一個或多個描述元物件的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 物件。  每個描述元物件都會描述資料屬性 \(Property\) 或存取子屬性 \(Property\)。  
+ 必要項。 A[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]物件，其中包含一或多個描述元物件。 每個描述元物件會描述資料屬性或存取子屬性。  
   
-## 傳回值  
- 已傳遞給函式的物件。  
+## <a name="return-value"></a>傳回值  
+ 已傳遞至函式物件。  
   
-## 備註  
- `descriptors` 引數是包含一個或多個描述元物件的物件。  
+## <a name="remarks"></a>備註  
+ `descriptors`引數是包含一或多個描述元物件的物件。  
   
- 「*資料屬性*」\(Data Property\) 是可儲存和擷取值的屬性。  資料屬性 \(Property\) 描述元包含 `value` 屬性 \(Attribute\)、`writable` 屬性 \(Attribute\)，或兩者都包含。  如需詳細資訊，請參閱[資料屬性和存取子屬性](../../javascript/advanced/data-properties-and-accessor-properties.md)。  
+ A*資料屬性*是可以儲存和擷取值的屬性。 包含資料的屬性描述元`value`屬性`writable`屬性，或兩者。 如需詳細資訊，請參閱[資料屬性與存取子屬性](../../javascript/advanced/data-properties-and-accessor-properties.md)。  
   
- 每當設定或擷取屬性值時，「*存取子屬性*」\(Accessor Property\) 都會呼叫使用者提供的函式。  存取子屬性 \(Property\) 描述元包含 `set` 屬性 \(Attribute\) 或 `get` 屬性 \(Attribute\)，或兩者都包含。  
+ *存取子屬性*呼叫使用者提供函式，每次設定或擷取屬性值。 存取子屬性描述元包含`set`屬性`get`屬性，或兩者。  
   
- 如果物件已包含具有指定之名稱的屬性 \(Property\)，則該屬性 \(Property\) 的屬性 \(Attribute\) 會遭修改。  如需詳細資訊，請參閱[Object.defineProperty 函式](../../javascript/reference/object-defineproperty-function-javascript.md)。  
+ 如果物件已有具有指定的名稱的屬性，會修改該屬性的屬性。 如需詳細資訊，請參閱[Object.defineProperty 函式](../../javascript/reference/object-defineproperty-function-javascript.md)。  
   
- 若要建立新物件並為其加入新屬性，可以使用 [Object.create 函式](../../javascript/reference/object-create-function-javascript.md)。  
+ 若要建立的物件，並將屬性加入至新的物件，您可以使用[Object.create 函式](../../javascript/reference/object-create-function-javascript.md)。  
   
-## 加入屬性  
- 在下列範例中，`Object.defineProperties` 函式會將資料屬性與存取子屬性加入至使用者定義的物件。  
+## <a name="adding-properties"></a>加入屬性  
+ 在下列範例中，`Object.defineProperties`函式會將資料屬性與存取子屬性加入至使用者定義的物件。  
   
- 此範例會使用物件常值建立包含 `newDataProperty` 和 `newAccessorProperty` 描述元物件的 `descriptors` 物件。  
+ 這個範例會使用物件常值建立`descriptors`物件`newDataProperty`和`newAccessorProperty`描述元物件。  
   
-```javascript  
+```JavaScript  
 var newLine = "<br />";  
   
 var obj = {};  
@@ -93,9 +95,9 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
- 如同前面範例一般，下列範例會以動態方式 \(而不使用物件常值\) 加入屬性。  
+ 就像先前範例中，下列範例會將以動態方式而不是使用物件常值的屬性。  
   
-```javascript  
+```JavaScript  
   
 var newLine = "<br />";  
   
@@ -137,8 +139,8 @@ document.write ("newAccessorProperty value: " + obj.newAccessorProperty + newLin
   
 ```  
   
-## 修改屬性  
- 若要修改物件屬性 \(Property\) 的屬性 \(Attribute\)，請加入下列程式碼。  `Object.defineProperties` 函式會修改 `newDataProperty` 的 `writable` 屬性，以及修改 `newAccessorProperty` 的 `enumerable` 屬性。  因為物件並沒有名稱為 `anotherDataProperty` 的屬性，所以函式將這個屬性加入至物件。  
+## <a name="modifying-properties"></a>修改屬性  
+ 若要修改的物件屬性的屬性，加入下列程式碼。 `Object.defineProperties`函式會修改`writable`屬性`newDataProperty`，並修改`enumerable`屬性`newAccessorProperty`。 它會新增`anotherDataProperty`物件因為該屬性名稱已經存在。  
   
 ```  
 Object.defineProperties(obj, {  
@@ -148,10 +150,10 @@ Object.defineProperties(obj, {
 });  
 ```  
   
-## 需求  
- Internet Explorer 9 標準、Internet Explorer 10 標準和 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 應用程式都支援。  Internet Explorer 8 只支援 DOM 物件，不支援其他物件。  
+## <a name="requirements"></a>需求  
+ 支援 Internet Explorer 9 標準、 Internet Explorer 10 標準和[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]應用程式。 支援 Internet Explorer 8 DOM 物件，否則不支援。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Object.getOwnPropertyDescriptor 函式](../../javascript/reference/object-getownpropertydescriptor-function-javascript.md)   
  [Object.getOwnPropertyNames 函式](../../javascript/reference/object-getownpropertynames-function-javascript.md)   
  [Object.defineProperty 函式](../../javascript/reference/object-defineproperty-function-javascript.md)   

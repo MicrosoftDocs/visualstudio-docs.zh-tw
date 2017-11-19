@@ -1,55 +1,54 @@
 ---
-title: "報告攔截函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.hooks"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "C++"
-helpviewer_keywords: 
-  - "_CrtDbgReport 函式"
-  - "_CrtSetReportHook 函式"
-  - "偵錯工具, 報告攔截函式"
-  - "偵錯 [C++], 攔截函式"
-  - "攔截, 報告"
-  - "記憶體配置, 偵錯堆積"
-  - "報告攔截函式"
+title: "報告攔截函式 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.hooks
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- hooks, report
+- _CrtDbgReport function
+- debugger, report hook functions
+- memory allocation, debug heap
+- debugging [C++], hook functions
+- _CrtSetReportHook function
+- report hook functions
 ms.assetid: 1854bca7-d7eb-4502-89bf-b1ee64cb50ef
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 51fd8ce8618dfa7b3e8adcc7326c57905d325999
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 報告攔截函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-報告攔截函式，使用 [\_CrtSetReportHook](/visual-cpp/c-runtime-library/reference/crtsetreporthook) 安裝，會在每次 [\_CrtDbgReport](/visual-cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 產生偵錯報告時呼叫。  除此之外，您可以使用它來篩選報告以專注於特定類型的配置。  報告攔截函式應該有像下列的原型：  
+# <a name="report-hook-functions"></a>報告攔截函式
+報告攔截函式，使用安裝[_CrtSetReportHook](/cpp/c-runtime-library/reference/crtsetreporthook)，每次呼叫[_CrtDbgReport](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)會產生偵錯報表。 除此之外，您可以使用它來篩選報告以專注於特定類型的配置。 報告攔截函式應該有像下列的原型：  
   
 ```  
 int YourReportHook(int nRptType, char *szMsg, int *retVal);  
 ```  
   
- 您傳入至 **\_CrtSetReportHook**  的指標是在 CRTDBG.H 裡 **\_CRT\_REPORT\_HOOK** 定義的類型：  
+ 您傳遞給指標**_CrtSetReportHook**的型別**_CRT_REPORT_HOOK**、 CRTDBG 中所定義。H:  
   
 ```  
 typedef int (__cdecl *_CRT_REPORT_HOOK)(int, char *, int *);  
 ```  
   
- 當執行階段程式庫呼叫攔截函式時，*nRptType* 引數包含報告的分類 \(**\_CRT\_WARN**、**\_CRT\_ERROR** 或 **\_CRT\_ASSERT**\)，*szMsg* 包含完整重組報告訊息字串的指標，而 *retVal* 指定 `_CrtDbgReport` 是否應該在產生報告或啟動偵錯工具繼續照常執行 \(*retVal* 值為零時會繼續執行，值為 1 時會啟動偵錯工具\)。  
+ 當執行階段程式庫呼叫攔截函式， *nRptType*引數包含報表的類別目錄 (**_CRT_WARN**， **_CRT_ERROR**，或**_CRT_ASSERT**)， *szMsg*包含完全組裝的報告訊息字串、 指標和*retVal*指定是否`_CrtDbgReport`應繼續正常執行之後產生的報表或開始偵錯工具。 (A *retVal*值為零會繼續執行，值為 1 時會啟動偵錯工具。)  
   
- 如果攔截能完整處理該訊息，而不需要進一步的報告，它應該就會傳回 **TRUE**。  如果它傳回的是 **FALSE**，`_CrtDbgReport` 會以一般方式報告訊息。  
+ 如果攔截處理問題中的訊息完全，而無須任何進一步的報告，它應該傳回**TRUE**。 如果它傳回**FALSE**，`_CrtDbgReport`通常會報告訊息。  
   
-## 請參閱  
- [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   
- [crt\_dbg2 Sample](http://msdn.microsoft.com/zh-tw/21e1346a-6a17-4f57-b275-c76813089167)
+## <a name="see-also"></a>另請參閱  
+ [偵錯攔截函式寫入](../debugger/debug-hook-function-writing.md)   
+ [crt_dbg2 範例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)

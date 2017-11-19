@@ -1,60 +1,63 @@
 ---
-title: "HOW TO：將活動新增至工具箱 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: ".net-framework-4.6"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "如何： 將活動新增至 [工具箱] |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
-caps.latest.revision: 16
-caps.handback.revision: 16
-author: "ErikRe"
-ms.author: "erikre"
-manager: "erikre"
+caps.latest.revision: "16"
+author: ErikRe
+ms.author: erikre
+manager: erikre
+ms.openlocfilehash: 23e042a7ff34163872b3a932b105bc3b452023ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# HOW TO：將活動新增至工具箱
-有幾種不同的方法可將活動加入至方案中的 \[**工具箱**\]。您可以從目前的專案內部加入活動、從不同的專案參考活動，或是從不同的組件參考活動。  
+# <a name="how-to-add-activities-to-the-toolbox"></a>HOW TO：將活動新增至工具箱
+將活動加入至**工具箱**方案中數個不同的方式。 您可以從目前的專案內部加入活動、從不同的專案參考活動，或是從不同的組件參考活動。  
   
-### 若要從目前的專案內部加入活動  
+### <a name="to-add-an-activity-from-within-your-current-project"></a>若要從目前的專案內部加入活動  
   
-1.  將新的自訂活動加入到目前的工作流程專案。[!INCLUDE[crabout](../test/includes/crabout_md.md)]以進一步了解如何將新的自訂活動加入到您的專案，請參閱 [HOW TO：將新的項目加入至工作流程專案](../Topic/How%20to:%20Add%20a%20New%20Item%20to%20a%20Workflow%20Project.md)。  
+1.  將新的自訂活動加入到目前的工作流程專案。 [!INCLUDE[crabout](../test/includes/crabout_md.md)]將新的自訂活動加入至您的專案，請參閱[How to： 將新的項目加入至工作流程專案](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。  
   
 2.  加入自訂邏輯至活動。  
   
-3.  建置專案。如果建置成功，\[**工具箱**\] 就會顯示名為 "\<*project name*\>" 的新分類和該分類包含的自訂活動。  
+3.  建置專案。 如果建置成功，新的類別目錄中**工具箱**名為"\<*專案名稱*> 」 會顯示與該類別目錄中包含的自訂活動。  
   
     > [!NOTE]
-    >  如果重設工具箱，自訂活動會移除，即使重新建置方案也一樣。如果要在重設工具箱後重新填入自訂活動，請重新啟動 [!INCLUDE[vs2010](../modeling/includes/vs2010_md.md)]。  
+    >  如果重設工具箱，自訂活動會移除，即使重新建置方案也一樣。 如果要在重設工具箱後重新填入自訂活動，請重新啟動 [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)]。  
   
     > [!NOTE]
-    >  在工具箱中，針對一個活動名稱只能顯示一個活動。如果有兩個活動來自不同的組件但類別名稱相同，就只能顯示其中一個。  
+    >  在工具箱中，針對一個活動名稱只能顯示一個活動。 如果有兩個活動來自不同的組件但類別名稱相同，就只能顯示其中一個。  
   
     > [!NOTE]
-    >  應用程式定義域在編輯器執行個體間共用，如果使用靜態變數，則它們也會在編輯器執行個體間共用如果這不是想要的行為，應該使用服務來追蹤變數執行個體。如需如何在設計工具內使用服務的詳細資訊，請參閱 [使用 ModelItem 編輯內容](../Topic/Using%20the%20ModelItem%20Editing%20Context.md)。  
+    >  應用程式定義域在編輯器執行個體間共用，如果使用靜態變數，則它們也會在編輯器執行個體間共用。 如果這不是想要的行為，應該使用服務來追蹤變數執行個體。 請參閱[使用 ModelItem 編輯內容](/dotnet/framework/windows-workflow-foundation/using-the-modelitem-editing-context)如需使用設計工具內的服務。  
   
-### 若要從不同的專案內部加入活動  
+### <a name="to-add-an-activity-from-within-a-different-project"></a>若要從不同的專案內部加入活動  
   
 1.  開啟一個方案，該方案應包含至少一個工作流程專案，以及一個自訂活動程式庫專案，或另一個定義自訂活動的工作流程專案。  
   
-2.  建置這兩個專案。如果建置成功，\[**工具箱**\] 就會顯示名為 "\<*project name*\>" 的新分類和該分類包含的自訂活動。  
+2.  建置這兩個專案。 如果建置成功，新的類別目錄中**工具箱**名為"\<*專案名稱*> 」 會顯示與該類別目錄中包含的自訂活動。  
   
-### 若要從組件將活動加入至工具箱  
+### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>若要從組件將活動加入至工具箱  
   
 1.  開啟一個工作流程方案。  
   
-2.  從 \[**工具**\] 功能表選取 \[**選擇工具箱項目**\]。  
+2.  從**工具**功能表上，選取**選擇工具箱項目...**.  
   
-3.  在 \[**選擇工具箱項目**\] 對話方塊中，選取 \[**System.Activities 元件**\] 索引標籤，然後按一下 \[**瀏覽**\] 以找到包含您要加入之自訂活動的組件。  
+3.  在**選擇工具箱項目**對話方塊中，選取**System.Activities 元件**索引標籤，然後按一下 **瀏覽...**想要新增到瀏覽至包含自訂活動組件。  
   
-4.  選取組件，然後按一下 \[**確定**\]。自訂活動元件會加到元件清單中，而且會自動選取。  
+4.  選取組件，然後按一下**確定**。 自訂活動元件會加到元件清單中，而且會自動選取。  
   
-    1.  按一下 \[**確定**\] 以關閉對話方塊。  
+    1.  按一下**確定**以關閉對話方塊。  
   
-5.  若要顯示工具箱，請從 \[**檢視**\] 功能表中選取 \[**工具箱**\]。  
+5.  若要顯示工具箱 中，選取**工具箱**從**檢視**功能表。  
   
-6.  自訂活動會出現在 \[**工具箱**\] 中，並位於該項目加入之前做為焦點的類別下方。例如，在加入工具箱項目之前，如果已在 \[**工具箱**\] 中選取 \[**一般**\] 分類，則該活動會出現在 \[**一般**\] 類別下方。  
+6.  自訂活動會出現在**工具箱**之前已新增項目為焦點 類別底下。 例如，如果**一般**類別目錄中選取**工具箱**之前加入工具箱項目，該活動會出現在**一般**類別。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用工作流程設計工具](../workflow-designer/using-the-workflow-designer.md)

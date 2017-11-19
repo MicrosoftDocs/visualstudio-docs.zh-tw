@@ -1,65 +1,55 @@
 ---
-title: "模數運算子 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "%"
-dev_langs: 
-  - "JavaScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "模數運算子，JavaScript"
-  - "% 運算子 [JavaScript]"
-  - "餘數函式 [JavaScript]"
-ms.assetid: 087d654f-623b-498d-95ff-596d26bf674d
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+title: "模數運算子 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: '%'
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- '% operator [JavaScript]'
+- modulus operator [JavaScript]
+ms.assetid: f98bf7ee-8366-4f1d-8769-dbdff82056a8
+caps.latest.revision: "0"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0310b9ab6abde2661e0e1bf27cef59b79c1c0f30
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 模數運算子 (JavaScript)
-以某運算式的值除以另一個運算式的值，並傳回餘數。  
+# <a name="modulus-operator--javascript"></a>模數運算子 (JavaScript)
+將另一個數值運算式的值的數值運算式的值除以，並產生其餘部分。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
-  
-result = number1 % number2  
+result = expression1 % expression2  
 ```  
   
-## 引數  
+## <a name="arguments"></a>引數  
  `result`  
  任何變數。  
   
- `number1`  
+ `expression1`  
  任何數值運算式。  
   
- `number2`  
+ `expression2`  
  任何數值運算式。  
   
-## 備註  
- 模數或餘數運算子會將 `number1` 除以 `number2`，並且會以 `result` 的方式只傳回餘數。  `result` 的符號與 `number1` 的符號相同。  `result` 的值會介於 0 與 `number2` 的絕對值之間。  
-  
- 下列程式碼示範如何使用模數運算子。  
-  
-```  
-var modResult = 19 % 6.7;  
-document.write(modResult);  
-  
-// Output: 5.6  
-  
-```  
-  
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
+ [模數指派運算子](../../javascript/reference/modulus-assignment-operator-decrement-javascript.md)   
  [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)   
- [運算子摘要 \(JavaScript\)](../../javascript/misc/operator-subtractsummary-javascript.md)
+ [運算子摘要 (JavaScript)](../../javascript/misc/operator-subtractsummary-javascript.md)

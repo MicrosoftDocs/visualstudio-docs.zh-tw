@@ -1,51 +1,50 @@
 ---
-title: "IDiaEnumDebugStreams::Item | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreams::Item 方法"
+title: "Idiaenumdebugstreams:: Item |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams::Item method
 ms.assetid: 6b388fe1-eabc-4720-9d59-dc09b0ceaeac
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fefec4989c649e7b4113f78948c1ce30d42f050f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreams::Item
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取索引或名稱的偵錯資料的流。  
+# <a name="idiaenumdebugstreamsitem"></a>IDiaEnumDebugStreams::Item
+擷取偵錯資料流，藉由索引或名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Item (   
-   VARIANT                   index,  
-   IDiaEnumDebugStreamData** stream  
+```C++  
+HRESULT Item (   
+   VARIANT                   index,  
+   IDiaEnumDebugStreamData** stream  
 );  
 ```  
   
-#### 參數  
- Index \- 索引  
- \[in\]索引或名稱的偵錯資料流擷取。  如果使用整數變數，則它必須是介於 0 到`count`\-1，其中`count`時傳回的[IDiaEnumDebugStreams::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。  
+#### <a name="parameters"></a>參數  
+ 索引  
+ [in]索引或名稱的偵錯資料流擷取。 如果使用整數變數，則它必須是介於 0 到`count`-1，其中`count`是所傳回[idiaenumdebugstreams:: Get_count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)方法。  
   
- Stream \- 資料流  
- \[\] out傳回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，代表指定的偵錯資料流。  
+ 資料流  
+ [out]傳回[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件，表示指定的偵錯資料流。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
+## <a name="example"></a>範例  
   
-```cpp#  
+```C++  
 IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,  
                                        LONG whichStream)  
 {  
@@ -69,6 +68,6 @@ IDiaEnumDebugStreamData *GetStreamData(IDiaEnumDebugStreams *pStreamList,
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
  [IDiaEnumDebugStreams](../../debugger/debug-interface-access/idiaenumdebugstreams.md)

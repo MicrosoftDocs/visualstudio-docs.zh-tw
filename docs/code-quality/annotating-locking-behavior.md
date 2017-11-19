@@ -1,114 +1,115 @@
 ---
-title: "註釋鎖定行為 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "_Releases_nonreentrant_lock_"
-  - "_Lock_kind_mutex_"
-  - "_Lock_kind_critical_section_"
-  - "_Acquires_lock_"
-  - "_Releases_lock_"
-  - "_Has_lock_kind_"
-  - "_Releases_exclusive_lock_"
-  - "_Post_same_lock_"
-  - "_Requires_exclusive_lock_held_"
-  - "_Requires_shared_lock_held_"
-  - "_Lock_kind_semaphore_"
-  - "_Requires_lock_held_"
-  - "_Acquires_exclusive_lock_"
-  - "_Create_lock_level_"
-  - "_Acquires_nonreentrant_lock_"
-  - "_Releases_shared_lock_"
-  - "_Has_lock_level_"
-  - "_Lock_kind_spin_lock_"
-  - "_Requires_lock_not_held_"
-  - "_Acquires_shared_lock_"
-  - "_Requires_no_locks_held_"
-  - "_Lock_level_order_"
-  - "_Lock_kind_event_"
+title: "註釋鎖定行為 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- _Releases_nonreentrant_lock_
+- _Lock_kind_mutex_
+- _Lock_kind_critical_section_
+- _Acquires_lock_
+- _Releases_lock_
+- _Has_lock_kind_
+- _Releases_exclusive_lock_
+- _Post_same_lock_
+- _Requires_exclusive_lock_held_
+- _Requires_shared_lock_held_
+- _Lock_kind_semaphore_
+- _Requires_lock_held_
+- _Acquires_exclusive_lock_
+- _Create_lock_level_
+- _Acquires_nonreentrant_lock_
+- _Releases_shared_lock_
+- _Has_lock_level_
+- _Lock_kind_spin_lock_
+- _Requires_lock_not_held_
+- _Acquires_shared_lock_
+- _Requires_no_locks_held_
+- _Lock_level_order_
+- _Lock_kind_event_
 ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
-caps.latest.revision: 9
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 0fa6ecdef564f7911e6de09ad56b5934e9231f35
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/15/2017
 ---
-# 註釋鎖定行為
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-若要避免在多執行緒程式的並行錯誤，請遵循適當的鎖定規則並使用 SAL 附註。  
+# <a name="annotating-locking-behavior"></a>註釋鎖定行為
+為了避免多執行緒程式中發生並行 Bug，請務必遵循適當的鎖定規範並使用 SAL 註釋。  
   
- 並行錯誤極難以重新產生、診斷和偵錯，因為他們是不決定性的。  當您設計的一些執行緒有更多的程式碼主體，討論執行緒交錯的問題會變得困難且不實際。  因此，最好在多執行緒應用程式中遵循鎖定規則。  例如，當擷取多個鎖定時遵循一個鎖定可以幫助避免死結，並在存取共用資源之前取得適當嚴密監控鎖定有助於避免競爭情形。  
+ 並行 Bug 極難重新產生、診斷和偵錯，因為他們並非決定性的 Bug。 如果您要設計的程式碼主體包含許多執行緒，那麼要找出造成執行緒交錯的原因更是困難且不實際。 因此，較好的做法是遵循多執行緒程式中的鎖定規範。 例如，當擷取多個鎖定時遵循鎖定順序有助於避免發生死結，而在存取共用資源之前取得適當防護的鎖定有助於避免產生競爭條件。  
   
- 可惜的是，介面上簡單鎖定的規則在實際上是難以遵循的。  在今天的程式設計語言和編譯器的基本限制並不直接支援並行要求規格和分析。  程式設計人員必須依賴非正式的程式碼註解，以表示其使用鎖定的目的。  
+ 可惜的是，看似簡單的鎖定規則在實務上可能非常不容易遵循。 在現今的程式設計語言和編譯器的基本限制是，它們不直接支援的規格和分析的並行需求。 程式設計人員必須依賴非正式的程式碼註解來表達其使用鎖定的目的。  
   
- 並行 SAL 附註可以幫助您指定鎖定副作用、鎖定責任、資料保護、鎖定命令階層架構和其他必要的鎖定行為。  藉由將隱含規則變為明確， SAL 並行附註提供一致的方式來記錄您的程式碼如何使用鎖定規則。  並行附註可以提高程式碼分析工具的能力，找出競爭情形、死結、不相符的同步處理作業和其他細小的並行存取錯誤。  
+ 並行 SAL 註釋的設計在於幫助您指定鎖定的副作用、鎖定責任、資料保護、鎖定順序階層，以及其他必要的鎖定行為。 SAL 並行註釋藉由讓隱含規則變為明確，提供了一致的方式讓您記錄程式碼使用鎖定規則的方式。 並行註釋還可以增強程式碼分析工具的能力，找出競爭條件、死結、不相符的同步處理作業及其他細小的並行錯誤。  
   
-## 一般方針  
- 藉由使用附註，您可以陳述陳述在實作 \(被呼叫端\) 和用戶端 \(呼叫端\) 之間的函式定義隱含的合約，以及表示不變項目和可進一步改善分析程式的其他屬性。  
+## <a name="general-guidelines"></a>一般方針  
+ 藉由使用註釋，您可以陳述實作 (被呼叫端) 和用戶端 (呼叫端) 之間由函式定義隱含的合約，以及表達可進一步改善分析的非變異項目和其他程式屬性。  
   
- SAL 支援各種不同的鎖定基本型別 ，例如關鍵區段、Mutexe、微調鎖定和其他資源物件。  許多並行附註採用鎖定運算式做為參數。  依照慣例，鎖定已由基礎鎖定物件的路徑運算式表示。  
+ SAL 支援多種不同的鎖定基本類型，例如關鍵區段、Mutex、微調鎖定和其他資源物件。 許多並行註釋需要參數將鎖定運算式。 依照慣例，鎖定為基礎的鎖定物件的路徑運算式所表示。  
   
- 請注意某些執行緒擁有權規則：  
+ 請記住一些執行緒擁有權規則：  
   
--   微調鎖定是擁有清除執行緒擁有權的不可計數鎖定。  
+-   微調鎖定是擁有清楚執行緒擁有權的不可計數鎖定。  
   
--   Mutex 和關鍵區域是擁有清除執行緒擁有權的計數鎖定。  
+-   Mutex 和關鍵區段是擁有清楚執行緒擁有權的計數鎖定。  
   
--   號誌和事件是未擁有清楚執行緒擁有權的計數鎖定。  
+-   信號和事件是未擁有清楚執行緒擁有權的計數鎖定。  
   
-## 鎖定附註  
- 下表列出鎖定的附註。  
+## <a name="locking-annotations"></a>鎖定的註解  
+ 下表列出的鎖定的註解。  
   
 |註釋|說明|  
-|--------|--------|  
-|`_Acquires_exclusive_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔增加名為 `expr` 的鎖定物件的排除鎖定計數。|  
-|`_Acquires_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔增加名為 `expr` 的鎖定物件的鎖定計數。|  
-|`_Acquires_nonreentrant_lock_(expr)`|取得名為 `expr` 的鎖定。如果鎖定已經被保留，會報告錯誤。|  
-|`_Acquires_shared_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔增加名為 `expr` 的鎖定物件的共享鎖定計數。|  
-|`_Create_lock_level_(name)`|宣告符號 `name` 是鎖定層級的陳述式，所以它可以用於附註 `_Has_Lock_level_` 和 `_Lock_level_order_`。|  
-|`_Has_lock_kind_(kind)`|附註任何物件去修改資源物件的型別資訊。  有時，一個常用的型別針對不同類型的資源和並不足以分辨各種資源中的語意要求的多載的型別而使用。  以下是預先定義的 `kind` 參數清單：<br /><br /> `_Lock_kind_mutex_`<br /> Mutex 的鎖定類型 ID。<br /><br /> `_Lock_kind_event_`<br /> 事件的鎖定類型 ID。<br /><br /> `_Lock_kind_semaphore_`<br /> 號誌的鎖定類型 ID。<br /><br /> `_Lock_kind_spin_lock_`<br /> 微調鎖定上的鎖定類型 ID。<br /><br /> `_Lock_kind_critical_section_`<br /> 關鍵區段的鎖定類型 ID。|  
-|`_Has_lock_level_(name)`|附註一個鎖定物件並給予 `name` 的鎖定層級。|  
-|`_Lock_level_order_(name1, name2)`|一個陳述式給定 `name1` `name2`和之間的鎖定的順序。|  
-|`_Post_same_lock_(expr1, expr2)`|附註一個函式並在兩個鎖定的後置狀態中指出， `expr1` 和 `expr2` 都會被視為它們是相同的鎖定物件。|  
-|`_Releases_exclusive_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔減少名為 `expr` 的鎖定物件的排除鎖定計數。|  
-|`_Releases_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔減少名為 `expr` 的鎖定物件的鎖定計數。|  
-|`_Releases_nonreentrant_lock_(expr)`|名為 `expr` 的鎖定已釋出。  若鎖定目前沒有被保留，會報告錯誤。|  
-|`_Releases_shared_lock_(expr)`|附註一個函式並且指出，在後製狀態，函式以 1 間隔減少名為 `expr` 的鎖定物件的共享鎖定計數。|  
-|`_Requires_lock_held_(expr)`|附註一個函式並且在前置狀態指出，名為 `expr` 的物件的鎖定計數至少為一。|  
-|`_Requires_lock_not_held_(expr)`|附註一個函式並且在前置狀態指出，名為 `expr` 的物件的鎖定計數為零。|  
-|`_Requires_no_locks_held_`|附註一個函式並且指出檢查者已知所有鎖定的鎖定計數為零。|  
-|`_Requires_shared_lock_held_(expr)`|附註一個函式並且在前置狀態指出，名為 `expr` 的物件的共享鎖定計數至少為一。|  
-|`_Requires_exclusive_lock_held_(expr)`|附註一個函式並且在前置狀態指出，名為 `expr` 的物件的排除鎖定計數至少為一。|  
+|----------------|-----------------|  
+|`_Acquires_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞增 1。|  
+|`_Acquires_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞增 1。|  
+|`_Acquires_nonreentrant_lock_(expr)`|取得由 `expr` 命名的鎖定。  如果鎖定已保留，則會報告錯誤。|  
+|`_Acquires_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞增 1。|  
+|`_Create_lock_level_(name)`|將符號 `name` 宣告為鎖定層級的陳述式，如此該符號就可以在註釋 `_Has_Lock_level_` 和 `_Lock_level_order_` 中使用。|  
+|`_Has_lock_kind_(kind)`|加上附註來精簡的資源物件的型別資訊的任何物件。 有時候一般型別用於不同種類的資源和多載的型別不是足以區別各種資源之間的語意需求。 以下是預先定義的 `kind` 參數清單：<br /><br /> `_Lock_kind_mutex_`<br /> Mutex 鎖定類型識別碼。<br /><br /> `_Lock_kind_event_`<br /> 鎖定事件種類的識別碼。<br /><br /> `_Lock_kind_semaphore_`<br /> 號誌鎖定類型識別碼。<br /><br /> `_Lock_kind_spin_lock_`<br /> 微調鎖定的鎖定類型識別碼。<br /><br /> `_Lock_kind_critical_section_`<br /> 關鍵區段的鎖定類型識別碼。|  
+|`_Has_lock_level_(name)`|為鎖定物件加上附註，並為其指定 `name` 的鎖定層級。|  
+|`_Lock_level_order_(name1, name2)`|陳述式，為鎖定之間的順序`name1`和`name2`。|  
+|`_Post_same_lock_(expr1, expr2)`|為函式加上附註，並指出並後製狀態下，`expr1` 和 `expr2` 這兩個鎖定會視為是相同的鎖定物件。|  
+|`_Releases_exclusive_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的獨佔鎖定計數遞減 1。|  
+|`_Releases_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的鎖定計數遞減 1。|  
+|`_Releases_nonreentrant_lock_(expr)`|會釋放由 `expr` 命名的鎖定。 如果目前沒有保留鎖定，則會報告錯誤。|  
+|`_Releases_shared_lock_(expr)`|為函式加上附註，並指出在後製狀態下，函式會讓 `expr` 命名之鎖定物件的共用鎖定計數遞減 1。|  
+|`_Requires_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數至少為一。|  
+|`_Requires_lock_not_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的鎖定計數為零。|  
+|`_Requires_no_locks_held_`|標註函式，並指出檢查程式已知之所有鎖定的鎖定計數為零。|  
+|`_Requires_shared_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的共用鎖定計數至少為一。|  
+|`_Requires_exclusive_lock_held_(expr)`|為函式加上附註，並指出在前置狀態下，由 `expr` 命名之物件的獨佔鎖定計數至少為一。|  
   
-## 未公開之鎖定物件的 SAL 內在變數  
- 某些鎖定物件不是由關聯的鎖定之函式實作公開。下表列出可在作業於那些未公開的鎖定物件的函式註解的 SAL 內部變數。  
+## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>未公開之鎖定物件的 SAL 內在變數  
+ 某些鎖定物件不會由相關聯的鎖定函式的實作來公開。  下表列出 SAL 內部變數，這些變數會啟用在未公開的鎖定物件上運作之函式的註釋。  
   
 |註釋|說明|  
-|--------|--------|  
-|`_Global_cancel_spin_lock_`|說明移除微調鎖定。|  
+|----------------|-----------------|  
+|`_Global_cancel_spin_lock_`|描述取消微調鎖定。|  
 |`_Global_critical_region_`|描述關鍵區域。|  
-|`_Global_interlock_`|描述繫結的作業。|  
+|`_Global_interlock_`|描述連鎖作業。|  
 |`_Global_priority_region_`|描述優先權區域。|  
   
-## 共用資料存取附註  
- 下表列出使用共用資料存取的附註。  
+## <a name="shared-data-access-annotations"></a>共用的資料存取註解  
+ 下表列出共用資料存取的註釋。  
   
 |註釋|說明|  
-|--------|--------|  
-|`_Guarded_by_(expr)`|附註一個變數並指出，每次存取變數時，以 `expr` 命名的鎖定物件的鎖定計數至少為一。|  
-|`_Interlocked_`|附註一個變數會相等於 `_Guarded_by_(_Global_interlock_)`。|  
-|`_Interlocked_operand_`|附註函式參數為目標的其中一個運算元各種連鎖的函式。這些運算元必須有特定額外屬性。|  
-|`_Write_guarded_by_(expr)`|附註一個變數並指出，每次修改變數時，以 `expr` 命名的鎖定物件的鎖定計數至少為一。|  
+|----------------|-----------------|  
+|`_Guarded_by_(expr)`|為變數加上附註，並指出只要存取變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
+|`_Interlocked_`|標註變數，而且相當於`_Guarded_by_(_Global_interlock_)`。|  
+|`_Interlocked_operand_`|標註函式參數是一個不同的連鎖函式的目標運算元。  這些運算元必須有特定的其他屬性。|  
+|`_Write_guarded_by_(expr)`|為變數加上附註，並指出只要修改變數，由 `expr` 命名之鎖定物件的鎖定計數就會至少為一。|  
   
-## 請參閱  
- [使用 SAL 註釋減少 C\/C\+\+ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

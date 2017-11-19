@@ -1,30 +1,34 @@
 ---
-title: "動態指令碼偵錯工具的介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "動態指令碼偵錯工具的介面"
-  - "activdbg.h"
+title: "動態指令碼偵錯工具介面 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- Active Script Debugger interfaces
+- activdbg.h
 ms.assetid: bf4750b1-4e58-442b-ab56-254e640de61d
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d4a3d17a8ff43bb3bd18641c2298f5436f40d925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 動態指令碼偵錯工具的介面
-activdbg.h 和 activdbg100.h 標頭檔提供一節中列出的介面、列舉型別和結構。  它們是偵錯指令碼。  
+# <a name="active-script-debugger-interfaces"></a>動態指令碼偵錯工具的介面
+Activdbg.h 和 activdbg100.h 標頭檔提供介面、 列舉和結構列在這一節。 它們是偵錯指令碼。  
   
 > [!NOTE]
->  `IJSDebug*` 介面和 `IEnumJsStackFrames` 介面在 Internet Explorer 11 先釋放了偵錯機器碼的與指令碼。  這些介面的標頭檔是 jscript9diag.h。  
+>  `IJSDebug*`介面和`IEnumJsStackFrames`介面第一次發行的 Internet Explorer 11 原生程式碼與指令碼偵錯。 這些介面的標頭檔是 jscript9diag.h。  
   
-## 在本節中  
- 下列介面允許語言中性，主應用程式中性偵錯:  
+## <a name="in-this-section"></a>本章節內容  
+ 下列介面允許語言中性、 主機中性偵錯：  
   
 -   [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
@@ -35,6 +39,8 @@ activdbg.h 和 activdbg100.h 標頭檔提供一節中列出的介面、列舉型
 -   [IActiveScriptErrorDebug110 介面](../../winscript/reference/iactivescripterrordebug110-interface.md)  
   
 -   [IActiveScriptSiteDebug 介面](../../winscript/reference/iactivescriptsitedebug-interface.md)  
+  
+-   [IActiveScriptSiteDebug32 介面](../../winscript/reference/iactivescriptsitedebug32-interface.md)  
   
 -   [IActiveScriptSiteDebugEx 介面](../../winscript/reference/iactivescriptsitedebugex-interface.md)  
   
@@ -172,9 +178,9 @@ activdbg.h 和 activdbg100.h 標頭檔提供一節中列出的介面、列舉型
   
 -   [IWebAppDiagnosticsObjectInitialization 介面](../../winscript/reference/iwebappdiagnosticsobjectinitialization-interface.md)  
   
- 下節會列出用來偵錯的常數、列舉型別和結構:  
+ 下節列出的常數、 列舉和結構用來偵錯：  
   
 -   [動態指令碼偵錯工具的常數、列舉和結構](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [動態指令碼偵錯概觀](../../winscript/active-script-debugging-overview.md)

@@ -1,57 +1,59 @@
 ---
-title: "escape 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "escape"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "編碼字串物件"
-  - "Escape 方法"
-  - "十六進位"
-  - "字串物件，編碼"
+title: "escape 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: escape
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- encoding string objects
+- Escape method
+- hexadecimal
+- String object, encoding
 ms.assetid: caa92bea-ba69-4109-a68a-6e2debda463a
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b53a447ae6dde917c12a4711d9038136dc4500cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# escape 函式 (JavaScript)
-會將字串編碼，好讓所有電腦都可以讀取。  已取代。  
+# <a name="escape-function-javascript"></a>escape 函式 (JavaScript)
+將字串編碼以讓他們可以讀取所有電腦上。 已取代。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 escape(charString)   
 ```  
   
-## 備註  
- 必要的 `charString` 引數是要編碼的任何 `String` 物件或常值。  
+## <a name="remarks"></a>備註  
+ 所需`charString`引數可以是任何`String`物件或要編碼的常值。  
   
- **escape** 函式會傳回一個字串值 \(以 Unicode 格式\)，其中包含 `charstring` 的內容。  而所有的空格、標點符號、腔調字元以及其他非 ASCII 字元均以 `%`*xx* 編碼取代，其中的 *xx* 等於表示該字元的十六進位數字。  例如，空格會當做 "%20" 傳回。  
+ **逸出**函式會傳回字串值 （以 Unicode 格式），其中包含的內容`charstring`。 全部為空格、 標點符號、 重音的字元，而且其他任何非 ASCII 字元會取代`%` *xx*編碼，其中*xx*相當的十六進位數字，代表字元。 例如，空格會傳回為"%20"。  
   
- 值大於 255 的字元則以 **%u** *xxxx* 格式儲存。  
+ 包含值大於 255 使用儲存的字元**%u** *xxxx*格式。  
   
 > [!NOTE]
->  請不要使用 **escape** 函式來編碼統一資源識別元 \(URI\)。  請改用 `encodeURI` 和 `encodeURIComponent` 函式。  
+>  **逸出**函式不應該用來編碼統一資源識別項 (URI)。 使用`encodeURI`和`encodeURIComponent`改為函式。  
   
- **適用於**：[Global 物件](../../javascript/reference/global-object-javascript.md)  
+ **適用於**:[全域物件](../../javascript/reference/global-object-javascript.md)  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [encodeURI 函式](../../javascript/reference/encodeuri-function-javascript.md)   
  [encodeURIComponent 函式](../../javascript/reference/encodeuricomponent-function-javascript.md)   
  [String 物件](../../javascript/reference/string-object-javascript.md)   

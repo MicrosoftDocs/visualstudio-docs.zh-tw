@@ -1,11 +1,10 @@
 ---
-title: 'CA1062: Validate arguments of public methods | Microsoft Docs'
+title: "CA1062： 驗證公用方法的引數 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,55 +15,40 @@ helpviewer_keywords:
 - CA1062
 - ValidateArgumentsOfPublicMethods
 ms.assetid: db1f69ca-68f7-477e-94f3-d135cc5dfcbc
-caps.latest.revision: 27
+caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c474f50a5b972fe5831c82f158f92523f84acb83
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 8f225159e551dac2327c35774db846eec4ccc6fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validate arguments of public methods
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 |||  
 |-|-|  
 |TypeName|ValidateArgumentsOfPublicMethods|  
 |CheckId|CA1062|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- An externally visible method dereferences one of its reference arguments without verifying whether that argument is `null` (`Nothing` in Visual Basic).  
+## <a name="cause"></a>原因  
+ 外部可見的方法會對其中一個參考引數不需驗證該引數是否`null`(`Nothing`在 Visual Basic 中)。  
   
-## <a name="rule-description"></a>Rule Description  
- All reference arguments that are passed to externally visible methods should be checked against `null`. If appropriate, throw a <xref:System.ArgumentNullException> when the argument is `null`.  
+## <a name="rule-description"></a>規則描述  
+ 所有傳遞至外部可見方法的參考引數應經過`null`。 如果可行，會擲回<xref:System.ArgumentNullException>引數是當`null`。  
   
- If a method can be called from an unknown assembly because it is declared public or protected, you should validate all parameters of the method. If the method is designed to be called only by known assemblies, you should make the method internal and apply the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute to the assembly that contains the method.  
+ 如果可以從未知的組件呼叫方法，因為它宣告為公用或受保護，您應該驗證方法的所有參數。 如果方法設計成只能由已知的組件呼叫中，您應該將方法設為內部，並套用<xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute>屬性設定為包含方法的組件。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, validate each reference argument against `null`.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，驗證每個參考引數的`null`。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- You can suppress a warning from this rule if you are sure that the dereferenced parameter has been validated by another method call in the function.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果您確定取值的參數已由另一個函式中的方法呼叫驗證，您可以隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows a method that violates the rule and a method that satisfies the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的方法和滿足規則的方法。  
   
  ```csharp
  using System;
@@ -132,8 +116,8 @@ Namespace DesignLibrary
 End Namespace
 ```
   
-## <a name="example"></a>Example  
- In [!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)], this rule does not detect that parameters are being passed to another method that does the validation.  
+## <a name="example"></a>範例  
+ 在[!INCLUDE[vsprvslong](../code-quality/includes/vsprvslong_md.md)]，此規則不會偵測參數，會傳遞至另一個方法，會執行驗證。  
 
 ```csharp
 public string Method(string value)
@@ -166,10 +150,10 @@ Private Sub EnsureNotNull(ByVal value As String)
 End Sub
 ```
 
-## <a name="example"></a>Example  
- Copy constructors that populate field or properties that are reference objects can also violate the CA1062 rule. The violation occurs because the copied object that is passed to the copy constructor might be `null` (`Nothing` in Visual Basic). To resolve the violation, use a static (Shared in Visual Basic) method to check that the copied object is not null.  
+## <a name="example"></a>範例  
+ 填入欄位或屬性所參考物件的複製建構函式也可能會違反 CA1062 規則。 因為複製的物件傳遞至複製建構函式可能會發生違規`null`(`Nothing`在 Visual Basic 中)。 若要解決此違規情形，使用靜態 (在 Visual Basic 中的是 Shared) 方法來檢查複製的物件不是 null。  
   
- In the following `Person` class example, the `other` object that is passed to the `Person` copy constructor might be `null`.  
+ 在下列`Person`類別範例`other`物件傳遞至`Person`複製建構函式可能`null`。  
   
 ```csharp  
 public class Person  
@@ -192,8 +176,8 @@ public class Person
 }  
 ```
   
-## <a name="example"></a>Example  
- In the following revised `Person` example, the `other` object that is passed to the copy constructor is first checked for null in the `PassThroughNonNull` method.  
+## <a name="example"></a>範例  
+ 以下修訂`Person`範例中，`other`物件傳遞至複製建構函式，會先檢查中的 null`PassThroughNonNull`方法。  
   
 ```csharp  
 public class Person  

@@ -1,11 +1,10 @@
 ---
-title: 'CA1013: Overload operator equals on overloading add and subtract | Microsoft Docs'
+title: "CA1013： 多載運算子等多載加號和減號 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -19,47 +18,31 @@ helpviewer_keywords:
 - CA1013
 - OverloadOperatorEqualsOnOverloadingAddAndSubtract
 ms.assetid: 5bd28d68-c179-49ff-af47-5250b8b18a10
-caps.latest.revision: 22
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5d5f17ca16cc28e4b0c583755f87069836a9422b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 65f8802e0eb4e06466d5178b0af56753d537dd74
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Overload operator equals on overloading add and subtract
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013：多載加號和減號運算子時必須一併多載等號比較運算子
 |||  
 |-|-|  
 |TypeName|OverloadOperatorEqualsOnOverloadingAddAndSubtract|  
 |CheckId|CA1013|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected type implements the addition or subtraction operators without implementing the equality operator.  
+## <a name="cause"></a>原因  
+ 公用或保護的類型會實作加法或減法運算，但不會實作等號比較運算子。  
   
-## <a name="rule-description"></a>Rule Description  
- When instances of a type can be combined by using operations such as addition and subtraction, you should almost always define equality to return `true` for any two instances that have the same constituent values.  
+## <a name="rule-description"></a>規則描述  
+ 型別的執行個體可以結合使用加法和減法之類的作業，您幾乎都應該定義要傳回的等號比較`true`擁有相同的構成值任何兩個執行個體。  
   
- You cannot use the default equality operator in an overloaded implementation of the equality operator. Doing so will cause a stack overflow. To implement the equality operator, use the Object.Equals method in your implementation. See the following example.  
+ 您無法使用預設等號比較運算子多載等號比較運算子的實作中。 這樣會導致堆疊溢位。 若要實作等號比較運算子，使用 Object.Equals 方法實作中。 請參閱下列範例。  
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -75,28 +58,28 @@ if (Object.ReferenceEquals(left, null))
 return left.Equals(right);  
 ```  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement the equality operator so that it is mathematically consistent with the addition and subtraction operators.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，實作等號比較運算子，使其與加法和減法運算子以數學方式一致。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the default implementation of the equality operator provides the correct behavior for the type.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告時的預設實作等號比較運算子提供正確的行為類型。  
   
-## <a name="example"></a>Example  
- The following example defines a type (`BadAddableType`) that violates this rule. This type should implement the equality operator to make any two instances that have the same field values test `true` for equality. The type `GoodAddableType` shows the corrected implementation. Note that this type also implements the inequality operator and overrides <xref:System.Object.Equals%2A> to satisfy other rules. A complete implementation would also implement <xref:System.Object.GetHashCode%2A>.  
+## <a name="example"></a>範例  
+ 下列範例定義的類型 (`BadAddableType`) 違反此規則。 這個類型應實作等號比較運算子，讓任何兩個執行個體具有相同的欄位值測試`true`是否相等。 型別`GoodAddableType`顯示更正的實作。 請注意，此類型也不等比較運算子會實作覆寫<xref:System.Object.Equals%2A>來滿足其他規則。 也會實作完整實作<xref:System.Object.GetHashCode%2A>。  
   
  [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]  
   
-## <a name="example"></a>Example  
- The following example tests for equality by using instances of the types that were previously defined in this topic to illustrate the default and correct behavior for the equality operator.  
+## <a name="example"></a>範例  
+ 下列範例會使用先前在本主題說明等號比較運算子的預設和正確的行為已定義的類型執行個體測試相等。  
   
  [!code-csharp[FxCop.Design.TestAddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_2.cs)]  
   
- This example produces the following output.  
+ 此範例會產生下列輸出。  
   
- **Bad type:  {2,2} {2,2} are equal? No**  
-**Good type: {3,3} {3,3} are equal? Yes**  
-**Good type: {3,3} {3,3} are == ?   Yes**  
-**Bad type:  {2,2} {9,9} are equal? No**  
-**Good type: {3,3} {9,9} are == ?   No**   
-## <a name="see-also"></a>See Also  
- [Equality Operators](/dotnet/standard/design-guidelines/equality-operators)
+ **不正確的類型: {2，2} {2，2} 相等嗎？否**  
+**良好的類型: {3，3} {3，3} 是否相等嗎？[是]**  
+**良好的類型: {3，3} {3，3} 有 = = 嗎？ [是]**  
+**不正確的類型: {2，2} {9,9} 相等嗎？否**  
+**良好的類型: {3，3} {9,9} 有 = = 嗎？ 否**   
+## <a name="see-also"></a>另請參閱  
+ [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

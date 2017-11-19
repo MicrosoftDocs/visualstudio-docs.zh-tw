@@ -1,32 +1,34 @@
 ---
-title: "&lt;update&gt; 元素 (Visual Studio 中的 Office 程式開發)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "update 項目"
-  - "<update> 元素"
-  - "應用程式資訊清單 [Visual Studio 中的 Office 程式開發]，<update> 元素"
+title: "&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- update element
+- <update> element
+- application manifests [Office development in Visual Studio], <update> element
 ms.assetid: bdd5dbf7-ddda-4ef6-9db5-1fb4405261a0
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3a41e7580e7c6c169554bb50c4d0c9af29a992b5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;update&gt; 元素 (Visual Studio 中的 Office 程式開發)
-  `update` 項目會指定方案檢查更新的間隔。  
+# <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;更新&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+  `update`項目會指定的方案會檢查更新的間隔。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <update  
@@ -38,44 +40,44 @@ caps.handback.revision: 24
 </update>  
 ```  
   
-## 項目和屬性  
- `update` 項目是必要項，而且位於 `vstav3` 命名空間中。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `update` 為必要元素，位於 `vstav3` 命名空間。  
   
- `update` 項目具有下列屬性。  
-  
-|屬性|描述|  
-|--------|--------|  
-|`enabled`|必要項。  請將下列其中一個值設定為啟用：<br /><br /> -   **true** 為檢查更新。<br />-   **false** 為避免檢查更新。|  
-  
- `update` 項目具有下列子項目。  
-  
-### expiration  
- `expiration` 項目是必要項，而且位於 `vstav3` 命名空間中。  這個項目會指定方案檢查更新的間隔。  
-  
- `expiration` 項目具有下列屬性。  
+ `update`元素都具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`maximumAge`|-   必要項。  將其設定為整數。|  
-|`unit`|必要項。  請將 `unit` 設定為下列其中一個值：<br /><br /> -   **hours**<br />-   **days**<br />-   **weeks**|  
+|---------------|-----------------|  
+|`enabled`|必要項。 將 enabled 設定為下列值之一：<br /><br /> -   **true**檢查更新。<br />-   **false**以防止 檢查更新。|  
   
-## 永遠檢查更新的範例  
+ `update`項目具有下列子元素。  
   
-### 描述  
- 下列程式碼範例示範在 Office 方案中設定為永遠檢查更新的 `update` 項目。  
+### <a name="expiration"></a>到期日  
+ `expiration` 為必要元素，位於 `vstav3` 命名空間。 這個項目指定的方案檢查更新的間隔。  
   
-### 程式碼  
+ `expiration`元素都具有下列屬性。  
+  
+|屬性|說明|  
+|---------------|-----------------|  
+|`maximumAge`|-必要。 將其設定為整數。|  
+|`unit`|必要項。 設定`unit`至下列值之一：<br /><br /> -   **小時**<br />-   **天**<br />-   **週**|  
+  
+## <a name="example-of-always-checking-for-updates"></a>一律檢查更新的範例  
+  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明`update`設為一律檢查更新，在 Office 方案中的項目。  
+  
+### <a name="code"></a>程式碼  
   
 ```  
 <vstav3:update enabled="true" />  
 ```  
   
-## 設定預設更新間隔的範例  
+## <a name="example-of-setting-a-default-update-interval"></a>設定預設的更新間隔的範例  
   
-### 描述  
- 下列程式碼範例示範 Office 方案應用程式資訊清單中的 `update` 項目。  這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中完整範例的一部分。  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明`update`Office 方案的應用程式資訊清單中的項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
   
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
 <vstav3:update enabled="true">  
@@ -83,10 +85,10 @@ caps.handback.revision: 24
 </vstav3:update>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 ClickOnce 部署 Office 方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)   
- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   
   

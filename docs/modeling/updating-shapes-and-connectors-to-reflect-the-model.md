@@ -7,16 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: alancameronwills
 ms.author: awills
 manager: douge
-ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
 ms.openlocfilehash: ae3a0d952b8ff88f2df4d297509d01d1a6731d56
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>更新圖案和接點來反映模型
 以網域特定語言中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以進行反映基礎模型的狀態圖形的外觀。  
@@ -158,4 +157,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()`應該呼叫一次針對每個您想要註冊的網域屬性。 已呼叫之後，會呼叫指定之屬性的任何變更`OnAssociatedPropertyChanged()`中的任何圖形都呈現屬性的模型項目。  
   
  不需要呼叫`AssociateValueWith()`每個執行個體。 雖然 InitializeResources 是執行個體方法，它會叫用一次只能針對每個圖形 」 類別。
-

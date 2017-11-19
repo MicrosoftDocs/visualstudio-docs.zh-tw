@@ -1,54 +1,53 @@
 ---
-title: "IDiaPropertyStorage::ReadPropertyNames | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaPropertyStorage::ReadPropertyNames"
+title: "IDiaPropertyStorage::ReadPropertyNames |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaPropertyStorage::ReadPropertyNames
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 338d2c4f59eb9023d8a7d8c8618585bb902785f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaPropertyStorage::ReadPropertyNames
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取相對應的字串名稱指定的屬性識別項。  
+# <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
+擷取對應的字串名稱指定屬性的識別項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp  
+```C++  
 HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
+   ULONG         cpropid,  
+   PROPID const* rgpropid,  
+   BSTR*         rglpwstrName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `cpropid`  
- \[in\]數字中的屬性 id 的`rgpropid`。  
+ [in]中的屬性識別碼的數目`rgpropid`。  
   
  `rgpropid`  
- \[in\]要取得名稱的屬性 id 的陣列 \(`PROPID`與 WTypes.h 所述`ULONG`\)。  
+ [in]要取得名稱的屬性識別碼的陣列 (`PROPID`定義為在 WTypes.h 中`ULONG`)。  
   
  `rglpwstrName`  
- 輸入 \[、 輸出\]指定的屬性 id 的屬性名稱的陣列。  陣列必須預先配置來保留要求的屬性名稱的數目，且必須能夠容納至少`cpropid``BSTR`的字串。  
+ [in、 out]指定的屬性 id 的屬性名稱的陣列。 陣列必須是預先配置來保存屬性名稱的要求的數目，必須至少保留和`cpropid``BSTR`字串。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 必須釋放傳回的屬性名稱 \(藉由呼叫`SysFreeString`函式\) 在不再需要時。  
+## <a name="remarks"></a>備註  
+ 傳回的屬性名稱，必須釋放 (藉由呼叫`SysFreeString`函式) 在不再需要時。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

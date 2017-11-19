@@ -1,38 +1,41 @@
 ---
-title: "bufferOffset 屬性 (Float64Array) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "bufferOffset 屬性 (Float64Array) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 9b566ec9-97d1-4a54-96cd-c1608f0ed330
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a2d64af7d1f7aeb9f4f42ee1854c5a6a93ad5505
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# bufferOffset 屬性 (Float64Array)
-唯讀。  這個陣列從其 ArrayBuffer 開頭起算的位移 \(以位元組為單位\)，在建構階段位移都不會改變。  
+# <a name="bufferoffset-property-float64array"></a>bufferOffset 屬性 (Float64Array)
+唯讀。 這個陣列從其 ArrayBuffer 開頭算起的位移 (以位元組為單位)，在建構階段位移都不會改變。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 var arrayOffset = float64Array.byteOffset;  
 ```  
   
-## 範例  
- 下列範例會示範如何取得陣列的位移。  
+## <a name="example"></a>範例  
+ 下列範例顯示如何取得陣列的位移。  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -49,5 +52,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

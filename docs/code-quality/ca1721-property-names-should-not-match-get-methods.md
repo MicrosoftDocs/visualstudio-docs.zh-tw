@@ -1,11 +1,10 @@
 ---
-title: 'CA1721: Property names should not match get methods | Microsoft Docs'
+title: "CA1721： 屬性名稱不應符合 get 方法 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,46 @@ helpviewer_keywords:
 - CA1721
 - PropertyNamesShouldNotMatchGetMethods
 ms.assetid: 45a0e853-1f06-4688-af1b-cc634409e295
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7020896493b641f1b2aa4c77912636554441b3fe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 91a280093d269797daa019b727bf2020462a0808
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Property names should not match get methods
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721：屬性名稱不能和其中有 get 的方法名稱相符
 |||  
 |-|-|  
 |TypeName|PropertyNamesShouldNotMatchGetMethods|  
 |CheckId|CA1721|  
-|Category|Microsoft.Naming|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Naming|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- The name of a public or protected member starts with 'Get' and otherwise matches the name of a public or protected property. For example, a type that contains a method that is named 'GetColor' and a property that is named 'Color' violates this rule.  
+## <a name="cause"></a>原因  
+ 公用或受保護的成員名稱開頭為 'Get'，否則符合名稱的公用或受保護的屬性。 例如，此型別包含名為 'GetColor' 和名為 'Color' 屬性的方法違反此規則。  
   
-## <a name="rule-description"></a>Rule Description  
- Get methods and properties should have names that clearly distinguish their function.  
+## <a name="rule-description"></a>規則描述  
+ Get 方法和屬性應該清楚區別其功能的名稱。  
   
- Naming conventions provide a common look for libraries that target the common language runtime. This reduces the time that is required to learn a new software library, and increases customer confidence that the library was developed by someone who has expertise in developing managed code.  
+ 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要學習新的軟體程式庫，而且會增加的程式庫由具備專業知識在開發 managed 程式碼開發的客戶信心的時間。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- Change the name so that it does not match the name of a method that is prefixed with 'Get'.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 變更名稱，使它不符合加上 'Get' 方法的名稱。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
 > [!NOTE]
->  This warning may be excluded if the Get method is caused by implementing IExtenderProvider interface.  
+>  如果 Get 方法因實作 IExtenderProvider 介面，可能會排除這個警告。  
   
-## <a name="example"></a>Example  
- The following example contains a method and property that violate this rule.  
+## <a name="example"></a>範例  
+ 下列範例包含的方法和違反此規則的屬性。  
   
- [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)] [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]  
+ [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
+ [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1024: Use properties where appropriate](../code-quality/ca1024-use-properties-where-appropriate.md)
+## <a name="related-rules"></a>相關的規則  
+ [CA1024：建議在適當時使用屬性](../code-quality/ca1024-use-properties-where-appropriate.md)

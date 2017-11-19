@@ -1,46 +1,45 @@
 ---
-title: "IDiaSectionContrib::get_informational | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSectionContrib::get_informational 方法"
+title: "Idiasectioncontrib:: Get_informational |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSectionContrib::get_informational method
 ms.assetid: 5351e89f-7db1-4f8e-9e57-2dd1c74002e0
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6f3c664b670625b36f25d7ff582afccb7f155c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSectionContrib::get_informational
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指出是否一個區段包含註解或類似的資訊。  
+# <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
+擷取旗標，指出區段包含註解或類似的資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```C++  
 HRESULT get_informational(  
-   BOOL* pRetVal  
+   BOOL* pRetVal  
 };  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回`TRUE`如果區段包含註解或其他資訊。 否則會傳回`FALSE`。  
+ [out]傳回`TRUE`如果區段包含註解或其他資訊; 否則會傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果這個屬性不受支援。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## 備註  
- 通常 \[.directive\] 區段中包含的資訊。  
+## <a name="remarks"></a>備註  
+ 通常.directive 區段包含資訊。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

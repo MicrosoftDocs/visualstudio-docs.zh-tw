@@ -7,30 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9b48a6d079ebe43f3d1e3c97a9272e8ad05b6735
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: a93cb843f45efffe2b8ccdb86543baf48736ed90
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="t4-template-directive"></a>T4 範本指示詞
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] T4 文字範本的開頭通常是 `template` 指示詞，用於指定範本的處理方式。 文字範本和其所包含之任何檔案中的 template 指示詞不得超過一個。  
@@ -252,4 +237,3 @@ This is the common footer.
  `internal`  
   
  在執行階段文字範本中，這個屬性會設定所產生之類別的可視性屬性。 根據預設，類別是您的程式碼公開 API 的一部分，不過，您可以藉由設定 `visibility="internal"` 來確認只有您的程式碼可以使用文字產生的類別。
-

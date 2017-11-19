@@ -1,11 +1,10 @@
 ---
-title: 'CA1306: Set locale for data types | Microsoft Docs'
+title: "CA1306： 設定地區設定的資料型別 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,42 @@ helpviewer_keywords:
 - CA1306
 - SetLocaleForDataTypes
 ms.assetid: 104297b2-5806-4de0-a8d9-c589380a796c
-caps.latest.revision: 15
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 80905172a6a64af9056945935562f7d6b3bb778b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2a8760aa983cdd798e5ea46fa4161375f0eab7fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1306-set-locale-for-data-types"></a>CA1306: Set locale for data types
+# <a name="ca1306-set-locale-for-data-types"></a>CA1306：設定資料類型的地區設定
 |||  
 |-|-|  
 |TypeName|SetLocaleForDataTypes|  
 |CheckId|CA1306|  
-|Category|Microsoft.Globalization|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Globalization|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A method or constructor created one or more <xref:System.Data.DataTable?displayProperty=fullName> or <xref:System.Data.DataSet?displayProperty=fullName> instances and did not explicitly set the locale property (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> or <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).  
+## <a name="cause"></a>原因  
+ 方法或建構函式建立一個或多個<xref:System.Data.DataTable?displayProperty=fullName>或<xref:System.Data.DataSet?displayProperty=fullName>執行個體，並沒有明確設定地區設定屬性 (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName>或<xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>)。  
   
-## <a name="rule-description"></a>Rule Description  
- The locale determines culture-specific presentation elements for data, such as formatting used for numeric values, currency symbols, and sort order. When you create a <xref:System.Data.DataTable> or <xref:System.Data.DataSet>, you should set the locale explicitly. By default, the locale for these types is the current culture. For data that is stored in a database or file and is shared globally, the locale should ordinarily be set to the invariant culture (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). When data is shared across cultures, using the default locale can cause the contents of the <xref:System.Data.DataTable> or <xref:System.Data.DataSet> to be presented or interpreted incorrectly.  
+## <a name="rule-description"></a>規則描述  
+ 地區設定會決定資料，例如用於數值、 貨幣符號和排序次序的格式設定文化特性特定展示項的目。 當您建立<xref:System.Data.DataTable>或<xref:System.Data.DataSet>，您應該明確設定地區設定。 根據預設，這些類型的地區設定為目前的文化特性。 資料會儲存在資料庫或檔案全域共用，地區設定應該通常設定為文化特性而異 (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>)。 當資料共用跨文化特性時，使用預設的地區設定可能會導致的內容<xref:System.Data.DataTable>或<xref:System.Data.DataSet>呈現或不正確地解譯。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, explicitly set the locale for the <xref:System.Data.DataTable> or <xref:System.Data.DataSet>.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請明確設定的地區設定<xref:System.Data.DataTable>或<xref:System.Data.DataSet>。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule when the library or application is for a limited local audience, the data is not shared, or the default setting yields the desired behavior in all supported scenarios.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它是安全的程式庫或應用程式適用於限制的本機使用者、 不共用的資料，或預設設定會產生所要的行為在所有支援的案例時隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example creates two <xref:System.Data.DataTable> instances.  
+## <a name="example"></a>範例  
+ 下列範例會建立兩個<xref:System.Data.DataTable>執行個體。  
   
  [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Data.DataTable?displayProperty=fullName>   
  <xref:System.Data.DataSet?displayProperty=fullName>   
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>   

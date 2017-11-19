@@ -1,11 +1,10 @@
 ---
-title: 'CA2002: Do not lock on objects with weak identity | Microsoft Docs'
+title: "CA2002： 請勿鎖定具有弱式識別的物件 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,45 +14,29 @@ helpviewer_keywords:
 - CA2002
 - DoNotLockOnObjectsWithWeakIdentity
 ms.assetid: 16100b39-c6fc-452b-8fca-8b459a26c286
-caps.latest.revision: 16
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 15e189741636255f83086e1877abad80fb3da57b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 54a7693f5e2921b7cab60278c870c456084c56f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Do not lock on objects with weak identity
+# <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002：請勿鎖定具有弱式識別的物件
 |||  
 |-|-|  
 |TypeName|DoNotLockOnObjectsWithWeakIdentity|  
 |CheckId|CA2002|  
-|Category|Microsoft.Reliability|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Reliability|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A thread attempts to acquire a lock on an object that has a weak identity.  
+## <a name="cause"></a>原因  
+ 執行緒嘗試取得鎖定具有弱式識別的物件。  
   
-## <a name="rule-description"></a>Rule Description  
- An object is said to have a weak identity when it can be directly accessed across application domain boundaries. A thread that tries to acquire a lock on an object that has a weak identity can be blocked by a second thread in a different application domain that has a lock on the same object. The following types have a weak identity and are flagged by the rule:  
+## <a name="rule-description"></a>規則描述  
+ 可以跨應用程式定義域範圍直接存取的物件，即所謂具有弱式識別的物件。 嘗試取得具有弱式識別之物件鎖定的執行緒，可以被不同應用程式定義域中具有相同物件鎖定的第二個執行緒所封鎖。 下列類型具有弱式識別，而規則所加上旗標：  
   
 -   <xref:System.MarshalByRefObject>  
   
@@ -71,22 +54,23 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Threading.Thread>  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, use an object from a type that is not in the list in the Description section.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，使用來自型別不在 [描述] 部分中的清單中的物件。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2213: Disposable fields should be disposed](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
-## <a name="example"></a>Example  
- The following example shows some object locks that violate the rule.  
+## <a name="example"></a>範例  
+ 下列範例示範一些違反規則的物件鎖定。  
   
- [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)] [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]  
+ [!code-vb[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/VisualBasic/ca2002-do-not-lock-on-objects-with-weak-identity_1.vb)]
+ [!code-csharp[FxCop.Reliability.LockWeakObjects#1](../code-quality/codesnippet/CSharp/ca2002-do-not-lock-on-objects-with-weak-identity_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Threading.Monitor>   
  <xref:System.AppDomain>   
- [lock Statement](/dotnet/csharp/language-reference/keywords/lock-statement)   
- [SyncLock Statement](/dotnet/visual-basic/language-reference/statements/synclock-statement)
+ [lock 陳述式](/dotnet/csharp/language-reference/keywords/lock-statement)   
+ [SyncLock 陳述式](/dotnet/visual-basic/language-reference/statements/synclock-statement)

@@ -1,52 +1,50 @@
 ---
-title: "擷取方法重構 (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.extractmethod"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "重構 [C#]，擷取方法"
-  - "擷取方法重構作業 [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/extract-method
+title: "擷取方法重構 (C#) |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: CSharp
+helpviewer_keywords:
+- refactoring [C#], Extract Method
+- Extract Method refactoring operation [C#]
 ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
-caps.latest.revision: 29
-caps.handback.revision: 29
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 擷取方法重構 (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[**擷取方法**\] 是一項重構作業，可讓您輕鬆地從現有成員的程式碼片段建立新方法。  
+# <a name="extract-method-refactoring-c"></a>擷取方法重構 (C#)
+**擷取方法**是重構作業，提供簡單的方法來建立新的方法，從現有成員的程式碼片段。  
   
- 您可以使用 \[**擷取方法**\] 從現有成員的程式碼區塊內擷取選取的程式碼範圍，藉此建立新的方法。  新的擷取方法會包含選取的程式碼，而在現有成員中的已選定程式碼會取代成新方法的呼叫。  將程式碼片段轉變成自己的方法，能讓您迅速和正確地重新組織程式碼，以便重複使用並提升可讀性。  
+ 使用**擷取方法**，您可以建立一個新方法，擷取選取的 從現有成員的程式碼區塊內的程式碼。 新的擷取方法包含所選的程式碼，並在現有的成員中選取的程式碼取代新方法的呼叫。 開啟的程式碼片段至它自己的方法可讓您快速和精確地重新組織程式碼更佳的重複使用並提升可讀性。  
   
- \[**擷取方法**\] 具有下列優點：  
+ **擷取方法**具有下列優點：  
   
--   強調獨立且可重複使用的方法，進而採行最佳編碼做法。  
+-   強調離散、 可重複使用的方法，也採用最佳編碼作法。  
   
--   由於組織完善，可建立自我記錄的程式碼。  
+-   可促使組織程式碼可以自我記錄。  
   
-     當使用描述性名稱時，高層次的方法讀起來就像一系列註解。  
+     當具描述性的名稱時使用的高階方法讀的起來就像一系列的註解。  
   
 -   可建立更精細的方法，以簡化覆寫。  
   
 -   減少程式碼重複。  
   
-### 若要使用擷取方法  
+### <a name="to-use-extract-method"></a>若要使用擷取方法  
   
-1.  建立名為 `ExtractMethod`的主控台應用程式，再以下列範例程式碼取代 `Program`。  
+1.  建立名為 `ExtractMethod` 的主控台應用程式，再以下列程式碼取代 `Program`。  
   
-    ```c#  
+    ```csharp  
     class A  
     {  
         const double PI = 3.141592;  
@@ -70,42 +68,41 @@ manager: "wpickett"
   
 2.  選取您想要擷取的程式碼片段：  
   
-    ```c#  
+    ```csharp  
     double area = PI * radius * radius;  
-  
     ```  
   
-3.  在 \[**重構**\] 功能表上，按一下 \[**擷取方法**\]。  
+3.  在**重構**功能表上，按一下 **擷取方法**。  
   
-     \[**擷取方法**\] 對話方塊隨即出現。  
+     **擷取方法** 對話方塊隨即出現。  
   
-     或者，您也可以輸入鍵盤快速鍵 CTRL\+R、M，以顯示 \[**擷取方法**\] 對話方塊。  
+     或者，您也可以輸入鍵盤快速鍵 CTRL + R、 M，顯示**擷取方法** 對話方塊。  
   
-     您也可以用滑鼠右鍵按一下選取的程式碼，指向 \[**重構**\]，然後按一下 \[**擷取方法**\] 顯示 \[**擷取方法**\] 對話方塊。  
+     您可以也以滑鼠右鍵按一下所選程式碼中，指向 **重構**，然後按一下 **擷取方法**顯示**擷取方法** 對話方塊。  
   
-4.  在 \[**新方法名稱**\] 方塊中指定新方法的名稱，例如 `CircleArea`。  
+4.  指定新方法的名稱，例如`CircleArea`，請在**新方法名稱**方塊。  
   
-     \[**預覽方法簽章**\] 下會顯示新方法簽章的預覽。  
+     底下會顯示新的方法簽章的預覽**預覽方法簽章**。  
   
-5.  按一下 \[**確定**\]。  
+5.  按一下 [確定]。  
   
-## 備註  
- 當您使用 \[**擷取方法**\] 命令時，新方法會插入到同一類別中來源成員之後。  
+## <a name="remarks"></a>備註  
+ 當您使用**擷取方法**命令時，新的方法就會插入下列來源中的成員相同的類別。  
   
-## 部分型別  
- 如果類別是部分型別，\[**擷取方法**\] 便會產生緊接在來源成員之後的新方法。  \[**擷取方法**\] 會判斷新方法的簽章，同時在新方法中的程式碼沒有參考任何執行個體 \(Instance\) 資料時建立靜態方法。  
+## <a name="partial-types"></a>部分型別  
+ 如果類別是部分的型別，則**擷取方法**會產生新的後置節點來源成員的方法。 **擷取方法**決定新方法，新的方法中的程式碼不參考任何執行個體資料時，建立靜態方法的簽章。  
   
-## 泛型型別參數  
- 如果您擷取的方法有不受限制的泛型型別參數，產生的程式碼就不會將 `ref` 修飾詞 \(Modifier\) 加入至參數，除非已指派值給參數。  如果擷取的方法能夠將參考型別當做泛型型別引數，則您應手動將 `ref` 修飾詞加入至方法簽章中的參數。  
+## <a name="generic-type-parameters"></a>泛型型別參數  
+ 當您擷取具有受條件約束的泛型型別參數的方法時，就不會新增產生的程式碼`ref`至該參數修飾詞除非將值指派給它。 如果擷取的方法將支援參考型別作為泛型型別引數，則您應手動將`ref`修飾詞加入方法簽章中的參數。  
   
-## 匿名方法  
- 如果嘗試擷取匿名方法 \(Anonymous Method\) 的部分，而其中參考了在該匿名方法外部宣告或參考的區域變數，則 Visual Studio 將會警告您可能發生語意變更。  
+## <a name="anonymous-methods"></a>匿名方法  
+ 如果您嘗試解壓縮包含區域變數宣告或匿名方法之外參考了參考的匿名方法的一部分，然後 Visual Studio 會警告您有關潛在語意的變更。  
   
- 若匿名方法使用區域變數的值，會在執行匿名方法時取得該值。  將匿名方法擷取至其他方法內時，則會在呼叫擷取方法時取得區域變數的值。  
+ 當匿名方法使用本機變數的值時，會取得值，此時執行匿名方法。 另一個方法擷取匿名方法時，本機變數的值被取得時的解壓縮方法的呼叫。  
   
- 下列範例將說明這個語意變更。  如果執行這段程式碼，主控台顯示的會是 **11**。  如果您使用 \[**擷取方法**\] 將程式碼註解標記的程式碼區域擷取到自己的方法內，然後執行重構的程式碼，則主控台將會顯示 **10**。  
+ 下列範例說明這個語意的變更。 如果執行的這段程式碼，然後**11**會列印到主控台。 如果您使用**擷取方法**擷取的程式碼註解標示成自己的方法的程式碼區域，並接著執行重構的程式碼，然後**10**會列印到主控台。  
   
-```c#  
+```csharp  
 class Program  
 {  
     delegate void D();  
@@ -123,7 +120,7 @@ class Program
 }  
 ```  
   
- 若要解決這種情況，請將匿名方法中使用的區域變數當做類別的欄位。  
+ 若要解決這種情況，請在匿名方法欄位之類別中可用的本機變數。  
   
-## 請參閱  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>另請參閱  
+ [重構 (C#)](refactoring-csharp.md)

@@ -1,29 +1,31 @@
 ---
-title: "如何：使用異動更新模型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "如何： 使用異動來更新模型 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
-caps.latest.revision: 7
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 3fdf24bbcfcbda2e5e6c1d8a3737d9a53ed5ae23
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 如何：使用異動更新模型
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-交易確認存放區中所做的變更會被視為一個群組。  變更群組可被認可或復原交易當成單一單位。  
+# <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用異動更新模型
+交易確認至存放區所做的變更會被視為一個群組。 變更群組可加以認可或回復，當做單一單位。  
   
- 您的程式碼修改、 加入，或刪除任何項目中的存放區中的每次[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]視覺化和模型的 SDK，則必須在交易內執行操作。  必須有使用中的例項的<xref:Microsoft.VisualStudio.Modeling.Transaction>發生變更時，與儲存區相關聯。  這適用於所有的模型項目、 關聯、 圖形、 圖表和它們的屬性。  
+ 每當您的程式碼可修改、 新增，或刪除的存放區中的任何項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]Visualization and Modeling SDK，它必須在交易內執行。 必須有使用中的執行個體<xref:Microsoft.VisualStudio.Modeling.Transaction>時變更相關聯的存放區。 這適用於所有模型項目、 關聯性、 圖形、 圖表和其屬性。  
   
- 交易的機制，可協助您避免不一致的狀態。  如果交易期間發生錯誤，會復原所有變更。  只有在使用者執行 \[復原\] 指令，每個新的交易將會被視為單一的步驟。  使用者無法復原最近的變更的部分，除非您明確地放入不同的交易。  
+ 交易機制可協助您避免不一致的狀態。 如果在交易期間發生錯誤，會回復所有變更。 如果使用者執行復原命令時，每個最近的交易將會被視為單一步驟。 除非您明確地放在個別交易中，使用者無法復原最近的變更的部分。  
   
-## 開啟交易  
- 管理交易的最方便的方法是使用`using`陳述式放在`try...catch`陳述式：  
+## <a name="opening-a-transaction"></a>開啟交易  
+ 管理交易的最方便的方法是使用`using`陳述式括住`try...catch`陳述式：  
   
 ```  
 Store store; ...  
@@ -49,37 +51,37 @@ catch (Exception ex)
 }  
 ```  
   
- 如果例外狀況會使最終`Commit()` ，就會發生進行變更時，儲存區會被重設為先前的狀態。  這可協助您確定錯誤不會在不一致的狀態使模型。  
+ 如果例外狀況會防止最終`Commit()`發生變更時，將會重設為先前的狀態存放區。 這可協助您確認該錯誤不會讓模型處於不一致的狀態。  
   
- 您可以將任何數目的一筆交易內的變更。  您可以開啟新的交易，在使用中的交易內。  巢狀的交易必須認可或復原包含交易結束之前。  如需詳細資訊，請參閱範例<xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>屬性。  
+ 您可以將任意數目的一筆交易內的變更。 您可以開啟使用中交易內的新交易。 巢狀的交易必須認可或回復包含交易結束之前。 如需詳細資訊，請參閱範例的<xref:Microsoft.VisualStudio.Modeling.Transaction.TransactionDepth%2A>屬性。  
   
- 若要維持變更後的設定，請您應該`Commit`交易之前將它處置。  如果未攔截到在交易內發生例外狀況，所做的變更前的狀態將會重設的存放區。  
+ 若要進行永久變更，您應該`Commit`交易之前加以處置。 如果未攔截到在交易內發生的例外狀況，存放區將會重設為所做的變更之前的狀態。  
   
-## 正在復原交易  
- 若要確保會保留在存放區，或還原到之前的交易狀態，您可以使用這些策略的其中一個：  
+## <a name="rolling-back-a-transaction"></a>復原交易  
+ 若要確定會保留在儲存區，或還原為其交易之前的狀態，您可以使用其中一個這些策略：  
   
-1.  引發的交易範圍內未攔截到例外狀況。  
+1.  引發交易的範圍內未攔截到例外狀況。  
   
-2.  明確地還原此交易：  
+2.  回復明確交易：  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  
     ```  
   
-## 交易不會影響非儲存區物件  
- 交易僅管理儲存區的狀態。  它們不能復原部分對外部項目，例如檔案、 資料庫或您的 DSL 定義之外的一般型別宣告的物件所做的變更。  
+## <a name="transactions-do-not-affect-non-store-objects"></a>交易不會影響非存放區物件  
+ 交易只能管理存放區的狀態。 它們無法復原至外部的項目，例如檔案、 資料庫或 DSL 定義之外的一般型別與宣告的物件所做的部分變更。  
   
- 如果例外狀況可能會讓這類變更存放區的不一致，您應該處理這個例外狀況處理常式中的可能性。  請確定外部資源保持同步使用存放區物件的一種方法是藉由使用事件處理常式，店內項目的結合每個外部物件。  如需詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+ 如果例外狀況可能會保留這類變更與存放區不一致，您應該處理該例外狀況處理常式中的可能性。 確認外部資源保持同步的存放區物件的一個方法是在存放區項目結合每個外部物件，使用事件處理常式。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
-## 在交易結尾處的規則火  
- 在交易的最後，處置交易之前，就會引發規則附加到存放區中的項目。  每個規則是一種方法套用至某個已變更的模型項目。  比方說，有更新的圖形狀態，其模型項目已變更時，「 修正 」 規則，並建立模型項目時，會建立圖形。  沒有任何指定的引發順序。  在規則所做的變更將可以觸發其他規則。  
+## <a name="rules-fire-at-the-end-of-a-transaction"></a>規則引發交易的結尾  
+ 在交易結束時，交易已處置之前，不會引發的規則附加到存放區中的項目。 每個規則會套用至模型項目已變更的方法。 比方說，有時其模型項目已變更，更新狀態圖形的 「 修復 」 規則，並將模型項目建立時，這會建立圖形。 沒有任何指定的引發順序。 由規則所做的變更可能會引發另一項規則。  
   
- 您可以定義自己的規則。  如需規則的詳細資訊，請參閱[回應及傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
+ 您可以定義您自己的規則。 如需規則的詳細資訊，請參閱[回應和傳播變更](../modeling/responding-to-and-propagating-changes.md)。  
   
- 在 \[復原\]、 \[取消復原或 \[復原\] 指令之後不要規則引發。  
+ 規則不會復原、 重做或復原命令之後引發。  
   
-## 交易內容  
- 每個交易，包含的字典，您可以在其中儲存任何您想要的資訊：  
+## <a name="transaction-context"></a>交易內容  
+ 每筆交易都有的字典，您可以在其中儲存有關的資訊：  
   
  `store.TransactionManager`  
   
@@ -87,16 +89,16 @@ catch (Exception ex)
   
  `.Context.Add(aKey, aValue);`  
   
- 這特別適用於規則間轉送資訊。  
+ 這是特別適用於規則之間傳輸資訊。  
   
-## 異動狀態  
- 在某些情況下，您必須避免傳播變更，如果變更導致復原或取消交易復原。  這可能會發生，例如，如果您撰寫可以更新存放區中的另一個值的屬性值處理常式。  復原作業會將存放區中的所有值重都設成其先前的狀態，因為它不需要以計算更新的值。  使用這段程式碼：  
+## <a name="transaction-state"></a>交易狀態  
+ 如果變更因為復原或取消復原交易，在某些情況下，您必須避免傳播變更。 此情形，例如，如果您撰寫可以更新存放區中的另一個值的屬性值處理常式。 復原作業會將存放區中的所有值重都設成其先前狀態，因為它不需要計算更新的值。 使用此程式碼：  
   
 ```  
 if (!this.Store.InUndoRedoOrRollback) {...}  
 ```  
   
- 一開始從檔案載入存放區時，就可以引發規則。  若要避免回應這些變更，請使用：  
+ 一開始從檔案載入存放區時，可以引發的規則。 若要避免回應這些變更，請使用：  
   
 ```  
 if (!this.Store.InSerializationTransaction) {...}  

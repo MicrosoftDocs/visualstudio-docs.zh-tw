@@ -1,42 +1,45 @@
 ---
-title: "Debug.setNonUserCodeExceptions 屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "Debug.setNonUserCodeExceptions 屬性 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 1dd2abee-a415-41bb-a359-017da62f9485
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3f53084d5580bc7b6b6c6356268dc60f519b2bd6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Debug.setNonUserCodeExceptions 屬性
-判斷偵錯工具是否要將此範圍內的任何 try\-catch 區塊都視為使用者未處理類型。  例外狀況可細分為擲回、使用者未處理或未處理三種類型。  
+# <a name="debugsetnonusercodeexceptions-property"></a>Debug.setNonUserCodeExceptions 屬性
+判斷是否要為使用者未處理偵錯工具來處理此領域中的任何 try catch 區塊。 可以歸類為擲回，使用者未處理或未處理的例外狀況。  
   
- 如果在指定範圍內將這個屬性設定為 `true`，那麼當此範圍內發生使用者未處理的例外狀況時，偵錯工具就能決定要採取的動作 \(如果開發人員希望中斷執行程式，偵錯工具就會執行中斷程序\)。  如果這個屬性設定為 `false`，則效果就如同從未設定一般。  
+ 如果這個屬性設定為`true`在給定範圍中，偵錯工具可以然後決定要採取某些動作 （例如，中斷） 如果開發人員想要在使用者未處理的例外狀況中斷，該範圍內擲回的例外狀況。 如果這個屬性設定為`false`會與相同永遠不會設定的屬性。  
   
- 如需偵錯的詳細資訊，請參閱[動態指令碼偵錯概觀](http://go.microsoft.com/fwlink/p/?LinkId=249469)。  
+ 如需有關偵錯的詳細資訊，請參閱[動態指令碼偵錯概觀](http://go.microsoft.com/fwlink/p/?LinkId=249469)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Debug.setNonUserCodeExceptions [= bool];  
 ```  
   
-## 範例  
- 下列程式碼示範如何設定這個屬性。  
+## <a name="example"></a>範例  
+ 下列程式碼將示範如何設定這個屬性。  
   
-```javascript  
+```JavaScript  
 (function () {  
     Debug.setNonUserCodeExceptions = true;  
     try{  
@@ -48,5 +51,5 @@ Debug.setNonUserCodeExceptions [= bool];
 })();  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

@@ -1,5 +1,5 @@
 ---
-title: Bind controls to pictures from a database | Microsoft Docs
+title: "將控制項繫結至圖片從資料庫 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -16,52 +16,37 @@ helpviewer_keywords:
 - PictureBox control [Windows Forms], data binding
 - images [Visual Basic], dragging from Data Sources window
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
-caps.latest.revision: 15
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 21a413a3e2d17d77fd83d5109587a96f323a0511
-ms.openlocfilehash: 1b5d3559267a4c3827db17d7ff666af685da4d08
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc71529f852e87ca206509e06cb80940c11ac36d
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="bind-controls-to-pictures-from-a-database"></a>Bind controls to pictures from a database
-You can use the **Data Sources** window to bind an image in a database to a control in your application. For example, you can bind an image to an <xref:System.Windows.Controls.Image> control in a WPF application, or to a <xref:System.Windows.Forms.PictureBox> control in a Windows Forms application.  
+# <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫繫結控制項至圖片
+您可以使用**資料來源**視窗來將資料庫中的映像繫結至您的應用程式中的控制項。 比方說，您可以繫結至影像<xref:System.Windows.Controls.Image>控制在 WPF 應用程式，或為<xref:System.Windows.Forms.PictureBox>Windows Forms 應用程式中的控制項。  
   
- Pictures in a database are typically stored as byte arrays. Items in the **Data Sources** window that are stored as byte arrays have their control type set to **None** by default, because byte arrays can contain anything from a simple array of bytes to the executable file of a large application. To create a data-bound control for a byte array item in the **Data Sources** window that represents an image, you must select the control to create.  
+資料庫中的圖片，通常會儲存為位元組陣列。 中的項目**資料來源**儲存為位元組陣列有輸入其控制項的視窗設定為**無**根據預設，由於位元組陣列可能包含簡單的可執行檔的位元組陣列中的任何項目大型的應用程式。 若要建立資料繫結控制項中的位元組陣列項目的**資料來源**表示影像的視窗中，您必須選取要建立的控制項。  
   
- The following procedure assumes that the **Data Sources** window is already populated with an item that is bound to your image. 
+下列程序假設**資料來源**視窗已經填入繫結至您的映像中的項目。 
   
-### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>To bind a picture in a database to a control  
+### <a name="to-bind-a-picture-in-a-database-to-a-control"></a>若要將資料庫中的圖片繫結至控制項  
   
-1.  Make sure that the design surface you want to add the control to is open in the WPF Designer or the Windows Forms Designer.  
+1.  請確定您想要將控制項加入設計介面是在 WPF 設計工具或 Windows Form 設計工具中開啟。  
   
-2.  In the **Data Sources** window, expand the desired table or object to display its columns or properties.  
+2.  在**資料來源**視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。  
   
-3.  Select the column or property that contains your image data, and select one of the following controls from its drop-down control list:  
+3.  選取的資料行或屬性，其中包含影像資料，並從它的下拉式清單控制項清單中選取下列控制項的其中一個：  
   
-    -   If the WPF designer is open, select **Image**.  
+    -   如果 WPF 設計工具開啟，請選取**映像**。  
   
-    -   If the Windows Forms designer is open, select **PictureBox**.  
+    -   如果開啟 Windows Form 設計工具，請選取**PictureBox**。  
   
-    -   Alternatively, you can select a different control that supports data binding and that can display images. If the control that you want to use is not in the list of available controls, you can add it to the list and then select it. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    -   或者，您可以選取不同的控制項可支援資料繫結，並且可以顯示的影像。 如果您想要使用的控制項不在可用的控制項清單中，您可以將其加入清單並加以選取。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
-## <a name="see-also"></a>See Also  
- [Bind WPF controls to data in Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+[將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

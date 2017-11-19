@@ -1,57 +1,56 @@
 ---
-title: "IDiaAddressMap::set_addressMap | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaAddressMap::set_addressMap 方法"
+title: "Idiaaddressmap:: Set_addressmap |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaAddressMap::set_addressMap method
 ms.assetid: 81e82073-089b-43d5-af39-49d7a4907c7a
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 49dc861b6c250c83a6c30e2dbd0fb5035671ff28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaAddressMap::set_addressMap
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-提供支援的影像配置轉譯的位址對應。  
+# <a name="idiaaddressmapsetaddressmap"></a>IDiaAddressMap::set_addressMap
+提供對應至支援映像配置翻譯的位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT set_addressMap (   
-   DWORD                     cbData,  
-   struct DiaAddressMapEntry data[],  
-   BOOL                      imagetoSymbols  
+```C++  
+HRESULT set_addressMap (   
+   DWORD                     cbData,  
+   struct DiaAddressMapEntry data[],  
+   BOOL                      imagetoSymbols  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `cbData`  
- \[in\]中的項目數`data`參數。  
+ [in]中的項目數`data`參數。  
   
  `data[]`  
- \[in\]陣列的[DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)定義轉譯對應的結構。  
+ [in]陣列[DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)結構會定義轉譯對應。  
   
  `imagetoSymbols`  
- \[in\]`TRUE`如果`data`參數會定義新的影像配置地圖上原來的版面配置 \(如所述的偵錯符號\)。  `FALSE`如果`data`是取自原始配置的新影像配置對應。  
+ [in]`TRUE`如果`data`參數定義的原始配置新的映像配置對應 （如所述的偵錯符號）。 `FALSE`如果`data`是對應至新的映像配置取自原始的版面配置。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 通常，DIA 會擷取位址轉譯對應程式資料庫 \(.pdb\) 檔案中。  如果這些值已遺失， [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法被呼叫兩次，一次是使用`imagetoSymbols`參數設為`TRUE` ，一次是使用`imagetoSymbols`參數設為`FALSE`。  無法啟用位址對應轉譯，使用[IDiaAddressMap::put\_addressMapEnabled](../Topic/IDiaAddressMap::put_addressMapEnabled.md)方法，因此除非這兩種轉譯對應所提供。  
+## <a name="remarks"></a>備註  
+ 通常，DIA 位址轉譯會從抓取對應程式資料庫 (.pdb) 檔。 如果這些值遺漏， [idiaaddressmap:: Set_imageheaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)方法呼叫兩次，一次使用`imagetoSymbols`參數設定為`TRUE`和一次使用`imagetoSymbols`參數設定為`FALSE`。 無法使用啟用位址對應翻譯[idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)方法除非兩個轉譯對應所提供。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [DiaAddressMapEntry 結構](../../debugger/debug-interface-access/diaaddressmapentry.md)   
  [IDiaAddressMap](../../debugger/debug-interface-access/idiaaddressmap.md)   
- [IDiaAddressMap::put\_addressMapEnabled](../Topic/IDiaAddressMap::put_addressMapEnabled.md)   
- [IDiaAddressMap::set\_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)
+ [Idiaaddressmap:: Put_addressmapenabled](../../debugger/debug-interface-access/idiaaddressmap-put-addressmapenabled.md)   
+ [IDiaAddressMap::set_imageHeaders](../../debugger/debug-interface-access/idiaaddressmap-set-imageheaders.md)

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Configure Inclusion List Security | Microsoft Docs'
+title: "如何： 設定內含清單的安全性 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,64 +14,63 @@ helpviewer_keywords:
 - permissions [Office development in Visual Studio
 - inclusion lists [Office development in Visual Studio]
 ms.assetid: 0609d8f0-4630-4e17-aeb3-14f3134165cf
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: ddda79fad6b114c7b91a4b05df82433fe59a0f3d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: 7032f3663be7df1a06fa4dc16d4f4473e4666cfc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-configure-inclusion-list-security"></a>How to: Configure Inclusion List Security
-  If you have Administrator permissions, you can configure the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] trust prompt to control whether end users are given the option of installing Office solutions by saving a trust decision to the inclusion list. For information about inclusion lists, see [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).  
+# <a name="how-to-configure-inclusion-list-security"></a>如何：設定內含清單的安全性
+  如果您有系統管理員權限，您可以設定[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示來控制使用者是否可以儲存至內含清單信任決策，藉以安裝 Office 方案的選項。 關於內含清單的資訊，請參閱[使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
- For solutions that are in each of five zones, you can set the following options:  
+ 如需每五個區域中的解決方案，您可以設定下列選項：  
   
--   Enable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to grant trust to Office solutions that are signed with any certificate.  
+-   啟用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以讓使用者授與信任給 Office 方案的任何憑證進行簽署。  
   
--   Restrict the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can allow end users to install Office solutions that are signed with a certificate that identifies the publisher, but that is not already trusted.  
+-   限制[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以允許使用者安裝已簽署的 Office 方案使用可識別發行者上，但已經不受信任的憑證。  
   
--   Disable the [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] Trust Prompt Key and the inclusion list. You can prevent end users from installing any Office solution that is not signed with an explicitly trusted certificate.  
+-   停用[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]信任提示的索引鍵和內含清單。 您可以防止使用者安裝未簽署的任何 Office 方案使用明確受信任的憑證。  
   
-## <a name="enabling-the-inclusion-list"></a>Enabling the Inclusion List  
- Enable the inclusion list for a zone when you want end users to be presented with the option of installing and running any Office solution that comes from that zone.  
+## <a name="enabling-the-inclusion-list"></a>啟用內含清單  
+ 當您想讓使用者安裝及執行任何來自該區域的 Office 方案的選項會呈現，請啟用區域的內含清單。  
   
-#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>To enable the inclusion list by using the registry editor  
+#### <a name="to-enable-the-inclusion-list-by-using-the-registry-editor"></a>若要使用登錄編輯程式中啟用內含清單  
   
-1.  Open the registry editor:  
+1.  開啟登錄編輯程式：  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  按一下**啟動**，然後按一下 **執行**。  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  在**開啟**方塊中，輸入**regedt32.exe**，然後按一下 **確定**。  
   
-2.  Find the following registry key:  
+2.  尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
   
-     If the key does not exist, create it.  
+     如果索引鍵不存在，建立它。  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  新增下列子機碼為**字串值**，如果它們尚不存在，與相關的值。  
   
-    |String Value subkey|Value|  
+    |字串值的子機碼|值|  
     |-------------------------|-----------|  
-    |**Internet**|**AuthenticodeRequired**|  
-    |**UntrustedSites**|**Disabled**|  
-    |**MyComputer**|**Enabled**|  
-    |**LocalIntranet**|**Enabled**|  
-    |**TrustedSites**|**Enabled**|  
+    |**網際網路**|**AuthenticodeRequired**|  
+    |**UntrustedSites**|**已停用**|  
+    |**MyComputer**|**已啟用**|  
+    |**LocalIntranet**|**已啟用**|  
+    |**TrustedSites**|**已啟用**|  
   
-     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
+     根據預設，**網際網路**值**AuthenticodeRequired**和**UntrustedSites**值**已停用**。  
   
-#### <a name="to-enable-the-inclusion-list-programmatically"></a>To enable the inclusion list programmatically  
+#### <a name="to-enable-the-inclusion-list-programmatically"></a>若要以程式設計方式啟用內含清單  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  開啟 Program.vb 或 Program.cs 檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -97,42 +94,42 @@ ms.lasthandoff: 08/28/2017
     key.Close();  
     ```  
   
-3.  Build and run the application.  
+3.  建置並執行應用程式。  
   
-## <a name="restricting-the-inclusion-list"></a>Restricting the Inclusion List  
- Restrict the inclusion list so that solutions must be signed with Authenticode certificates that have known identity before users are prompted for a trust decision.  
+## <a name="restricting-the-inclusion-list"></a>限制內含清單  
+ 限制包含清單，讓解決方案必須以提示使用者信任決策之前有已知識別的 Authenticode 憑證簽署。  
   
-#### <a name="to-restrict-the-inclusion-list"></a>To restrict the inclusion list  
+#### <a name="to-restrict-the-inclusion-list"></a>若要限制內含清單  
   
-1.  Open the registry editor:  
+1.  開啟登錄編輯程式：  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  按一下**啟動**，然後按一下 **執行**。  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  在**開啟**方塊中，輸入**regedt32.exe**，然後按一下 **確定**。  
   
-2.  Find the following registry key:  
+2.  尋找下列登錄機碼：  
   
-     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
+     \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel  
   
-     If the key does not exist, create it.  
+     如果索引鍵不存在，建立它。  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  新增下列子機碼為**字串值**，如果它們尚不存在，與相關的值。  
   
-    |String Value subkey|Value|  
+    |字串值的子機碼|值|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Disabled**|  
-    |**Internet**|**AuthenticodeRequired**|  
+    |**UntrustedSites**|**已停用**|  
+    |**網際網路**|**AuthenticodeRequired**|  
     |**MyComputer**|**AuthenticodeRequired**|  
     |**LocalIntranet**|**AuthenticodeRequired**|  
     |**TrustedSites**|**AuthenticodeRequired**|  
   
-     By default, **Internet** has the value **AuthenticodeRequired** and **UntrustedSites** has the value **Disabled**.  
+     根據預設，**網際網路**值**AuthenticodeRequired**和**UntrustedSites**值**已停用**。  
   
-#### <a name="to-restrict-the-inclusion-list-programmatically"></a>To restrict the inclusion list programmatically  
+#### <a name="to-restrict-the-inclusion-list-programmatically"></a>若要以程式設計的方式限制內含清單  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  開啟 Program.vb 或 Program.cs 檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -156,38 +153,38 @@ ms.lasthandoff: 08/28/2017
     key.Close();  
     ```  
   
-3.  Build and run the application.  
+3.  建置並執行應用程式。  
   
-## <a name="disabling-the-inclusion-list"></a>Disabling the Inclusion List  
- You can disable the inclusion list so that end users can only install solutions that are signed with a trusted and known certificate.  
+## <a name="disabling-the-inclusion-list"></a>停用內含清單  
+ 您可以停用內含清單，讓使用者只能安裝具有已知信任憑證的已簽署的解決方案。  
   
-#### <a name="to-disable-the-inclusion-list"></a>To disable the inclusion list  
+#### <a name="to-disable-the-inclusion-list"></a>若要停用內含清單  
   
-1.  Open the registry editor:  
+1.  開啟登錄編輯程式：  
   
-    1.  Click **Start**, and then click **Run**.  
+    1.  按一下**啟動**，然後按一下 **執行**。  
   
-    2.  In the **Open** box, type **regedt32.exe**, and then click **OK**.  
+    2.  在**開啟**方塊中，輸入**regedt32.exe**，然後按一下 **確定**。  
   
-2.  Create the following registry key if this does not already exist:  
+2.  如果這並不存在，請建立下列登錄機碼：  
   
-     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**  
+     **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\。NETFramework\Security\TrustManager\PromptingLevel**  
   
-3.  Add the following subkeys as **String Value**, if they do not already exist, with the associated values.  
+3.  新增下列子機碼為**字串值**，如果它們尚不存在，與相關的值。  
   
-    |String Value subkey|Value|  
+    |字串值的子機碼|值|  
     |-------------------------|-----------|  
-    |**UntrustedSites**|**Disabled**|  
-    |**Internet**|**Disabled**|  
-    |**MyComputer**|**Disabled**|  
-    |**LocalIntranet**|**Disabled**|  
-    |**TrustedSites**|**Disabled**|  
+    |**UntrustedSites**|**已停用**|  
+    |**網際網路**|**已停用**|  
+    |**MyComputer**|**已停用**|  
+    |**LocalIntranet**|**已停用**|  
+    |**TrustedSites**|**已停用**|  
   
-#### <a name="to-disable-the-inclusion-list-programmatically"></a>To disable the inclusion list programmatically  
+#### <a name="to-disable-the-inclusion-list-programmatically"></a>若要以程式設計的方式停用內含清單  
   
-1.  Create a Visual Basic or Visual C# console application.  
+1.  建立 Visual Basic 或 Visual C# 主控台應用程式。  
   
-2.  Open the Program.vb or Program.cs file for editing and add the following code.  
+2.  開啟 Program.vb 或 Program.cs 檔案進行編輯並加入下列程式碼。  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -212,10 +209,10 @@ ms.lasthandoff: 08/28/2017
   
     ```  
   
-3.  Build and run the application.  
+3.  建置並執行應用程式。  
   
-## <a name="see-also"></a>See Also  
- [Trusting Office Solutions by Using Inclusion Lists](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
- [Securing Office Solutions](../vsto/securing-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [使用內含清單信任 Office 方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)   
+ [保護 Office 方案](../vsto/securing-office-solutions.md)  
   
   

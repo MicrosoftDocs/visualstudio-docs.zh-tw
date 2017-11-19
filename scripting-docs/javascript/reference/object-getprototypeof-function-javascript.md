@@ -1,51 +1,54 @@
 ---
-title: "Object.getPrototypeOf 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "getPrototypeOf 函式 [JavaScript]"
-  - "Object.getPrototypeOf 函式 [JavaScript]"
+title: "Object.getPrototypeOf 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- getPrototypeOf function [JavaScript]
+- Object.getPrototypeOf function [JavaScript]
 ms.assetid: 1c59cd7a-a7e2-4c5c-83ec-e6bd2b104d9f
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0c752c57fcc47192bb43790b2e93dd74fcdfbb65
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Object.getPrototypeOf 函式 (JavaScript)
+# <a name="objectgetprototypeof-function-javascript"></a>Object.getPrototypeOf 函式 (JavaScript)
 傳回物件的原型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 Object.getPrototypeOf(object)  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `object`  
- 必要項。  參考原型的物件。  
+ 必要項。 參考之原型的物件。  
   
-## 傳回值  
- `object` 引數的原型。  這個原型也是物件。  
+## <a name="return-value"></a>傳回值  
+ 原型`object`引數。 原型也是一個物件。  
   
-## 例外狀況  
- 如果 `object` 不是物件，就會擲回 `TypeError` 例外狀況。  
+## <a name="exceptions"></a>例外狀況  
+ 如果`object`引數不是物件，`TypeError`擲回例外狀況。  
   
-## 範例  
- 以下範例說明 `Object.getPrototypeOf` 函式的用法。  
+## <a name="example"></a>範例  
+ 下面範例說明如何使用 `Object.getPrototypeOf` 函式：  
   
-```javascript  
+```JavaScript  
 // Create a constructor function.  
 function Pasta(grain, width) {  
     this.grain = grain;  
@@ -75,10 +78,10 @@ document.write(result);
 // Output: carbohydrates true true  
 ```  
   
-## 範例  
- 下列範例會使用 `Object.getPrototypeOf` 函式驗證資料型別。  
+## <a name="example"></a>範例  
+ 下列範例會使用`Object.getPrototypeOf`函式以驗證資料型別。  
   
-```javascript  
+```JavaScript  
 var reg = /a/;  
 var result = (Object.getPrototypeOf(reg) === RegExp.prototype);  
 document.write(result + " ");  
@@ -91,9 +94,9 @@ document.write(result);
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv9](../../javascript/includes/jsv9-md.md)]  
   
-## 請參閱  
- [prototype 屬性 \(Object\)](../../javascript/reference/prototype-property-object-javascript.md)   
- [isPrototypeOf 方法 \(Object\)](../../javascript/reference/isprototypeof-method-object-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [prototype 屬性 (Object)](../../javascript/reference/prototype-property-object-javascript.md)   
+ [isPrototypeOf 方法 (Object)](../../javascript/reference/isprototypeof-method-object-javascript.md)

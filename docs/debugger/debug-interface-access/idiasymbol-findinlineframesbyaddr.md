@@ -1,51 +1,51 @@
 ---
-title: "IDiaSymbol::findInlineFramesByAddr | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSymbol::findInlineFramesByAddr |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 36a122e6-f27e-40cd-9784-cdaf279e1905
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 48d461133065d9f73e79160648f4b0fdc0afa7d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::findInlineFramesByAddr
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取可讓用戶端透過所有在指定位址的內嵌框架逐一查看的列舉值。  
+# <a name="idiasymbolfindinlineframesbyaddr"></a>IDiaSymbol::findInlineFramesByAddr
+擷取列舉，可讓用戶端來逐一查看所有指定的位址上的內嵌框架。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT findInlineFramesByAddr (   
+```C++  
+HRESULT findInlineFramesByAddr (   
    DWORD             isect,  
-   DWORD             offset,  
-   IDiaEnumSymbols** ppResult  
+   DWORD             offset,  
+   IDiaEnumSymbols** ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `isect`  
- \[in\] 指定電子郵件地址的部分元件。  
+ [in]指定位址的區段元件。  
   
  `offset`  
- \[in\] 指定位址的位移元件。  
+ [in]指定的位址位移的元件。  
   
  `ppResult`  
- \[out\] 物件所包含的清單中擷取的 `IDiaEnumSymbols` 物件。  
+ [out]保存`IDiaEnumSymbols`物件，其中包含所擷取的畫面格的清單。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`，否則傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)   

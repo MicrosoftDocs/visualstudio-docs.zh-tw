@@ -1,49 +1,48 @@
 ---
-title: "IDiaFrameData::get_systemExceptionHandling | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaFrameData::get_systemExceptionHandling 方法"
+title: "Idiaframedata:: Get_systemexceptionhandling |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaFrameData::get_systemExceptionHandling method
 ms.assetid: e8df1972-913c-446c-9779-775575b0caa9
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ea169502699ce8509f7913659d71e4573fef0a2f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaFrameData::get_systemExceptionHandling
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指出是否系統例外狀況處理將有效用。  
+# <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
+擷取指出系統例外狀況處理是否為作用中的旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_systemExceptionHandling (   
-   BOOL* pRetVal  
+```C++  
+HRESULT get_systemExceptionHandling (   
+   BOOL* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  pRetVal  
- \[\] out傳回`TRUE`如果系統例外狀況處理將有效。 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`如果系統例外狀況處理是在作用中，否則傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果這個屬性不受支援。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## 備註  
- 系統例外狀況處理較常稱為結構化的例外處理。  
+## <a name="remarks"></a>備註  
+ 系統例外狀況處理更常稱為結構化例外狀況處理。  
   
- 若要判斷這是否作用中為 C\+\+ 例外處理，呼叫[IDiaFrameData::get\_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。  
+ 若要判斷是否實際上是 c + + 例外狀況處理，請呼叫[idiaframedata:: Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
- [IDiaFrameData::get\_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)
+ [IDiaFrameData::get_cplusplusExceptionHandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md)

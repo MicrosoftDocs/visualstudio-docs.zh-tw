@@ -1,58 +1,57 @@
 ---
-title: "IDiaEnumDebugStreams | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumDebugStreams 介面"
+title: "IDiaEnumDebugStreams |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumDebugStreams interface
 ms.assetid: 611caf4f-7a5f-4aa4-b909-52feeb3cc752
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 023cb5f92abb9c67a94eeaf0f7202c95f097248d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumDebugStreams
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idiaenumdebugstreams"></a>IDiaEnumDebugStreams
 列舉各種資料來源中所包含的偵錯資料流。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
-IDiaEnumDebugStreams : IUnknown  
+IDiaEnumDebugStreams : IUnknown  
 ```  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaEnumDebugStreams`。  
   
-|方法|描述|  
-|--------|--------|  
-|[IDiaEnumDebugStreams::get\_\_NewEnum](../Topic/IDiaEnumDebugStreams::get__NewEnum.md)|擷取`IEnumVARIANT`版的這個列舉值。|  
-|[IDiaEnumDebugStreams::get\_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|擷取偵錯資料流數目。|  
-|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|擷取的索引的偵錯資料流。|  
-|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|擷取指定的列舉型別序列中的偵錯資料流數。|  
-|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|略過指定的數目的列舉型別序列中的偵錯資料流。|  
-|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|將列舉型別序列重設至開頭。|  
-|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態。|  
+|方法|說明|  
+|------------|-----------------|  
+|[IDiaEnumDebugStreams::get__NewEnum](../../debugger/debug-interface-access/idiaenumdebugstreams-get-newenum.md)|擷取`IEnumVARIANT`這個列舉值的版本。|  
+|[IDiaEnumDebugStreams::get_Count](../../debugger/debug-interface-access/idiaenumdebugstreams-get-count.md)|擷取偵錯資料流的數目。|  
+|[IDiaEnumDebugStreams::Item](../../debugger/debug-interface-access/idiaenumdebugstreams-item.md)|透過索引擷取偵錯資料流。|  
+|[IDiaEnumDebugStreams::Next](../../debugger/debug-interface-access/idiaenumdebugstreams-next.md)|擷取指定的數目的列舉順序中的偵錯資料流。|  
+|[IDiaEnumDebugStreams::Skip](../../debugger/debug-interface-access/idiaenumdebugstreams-skip.md)|略過指定的數目的列舉順序中的偵錯資料流。|  
+|[IDiaEnumDebugStreams::Reset](../../debugger/debug-interface-access/idiaenumdebugstreams-reset.md)|列舉序列重設為開頭。|  
+|[IDiaEnumDebugStreams::Clone](../../debugger/debug-interface-access/idiaenumdebugstreams-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
   
-## 備註  
- 偵錯資料流的內容取決於實作，也未記載的資料格式。  
+## <a name="remarks"></a>備註  
+ 偵錯資料流的內容會視實作而定，而且未記載的資料格式。  
   
-## 呼叫者的備忘稿  
- 呼叫[IDiaSession::getEnumDebugStreams](../Topic/IDiaSession::getEnumDebugStreams.md)方法，以取得`IDiaEnumDebugStreams`物件。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 呼叫[idiasession:: Getenumdebugstreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)方法，以取得`IDiaEnumDebugStreams`物件。  
   
-## 範例  
- 這個範例會示範如何從這個介面存取可用的資料流。  請參閱[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)介面的實作`PrintStreamData`函式。  
+## <a name="example"></a>範例  
+ 這個範例示範如何從這個介面存取可用的資料流。 請參閱[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)介面的實作`PrintStreamData`函式。  
   
-```cpp#  
+```C++  
 void DumpAllDebugStreams( IDiaSession* pSession)  
 {  
     IDiaEnumDebugStreams* pEnumStreams;  
@@ -79,14 +78,14 @@ void DumpAllDebugStreams( IDiaSession* pSession)
 }  
 ```  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia80.dll  
+ DLL: msdia80.dll  
   
-## 請參閱  
- [介面 \(偵錯介面存取 SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>另請參閱  
+ [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)   
- [IDiaSession::getEnumDebugStreams](../Topic/IDiaSession::getEnumDebugStreams.md)
+ [IDiaSession::getEnumDebugStreams](../../debugger/debug-interface-access/idiasession-getenumdebugstreams.md)

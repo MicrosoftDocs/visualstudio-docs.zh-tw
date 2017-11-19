@@ -1,11 +1,10 @@
 ---
-title: 'CA1500: Variable names should not match field names | Microsoft Docs'
+title: "CA1500： 變數名稱不應符合欄位名稱 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,53 +14,38 @@ helpviewer_keywords:
 - VariableNamesShouldNotMatchFieldNames
 - CA1500
 ms.assetid: fa0e5029-79e9-4a33-8576-787ac3c26c39
-caps.latest.revision: 24
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1ca10e7738f912d677488264cbea2a5f4f58390c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 7825078ff4d53ad5d90cdd8765f6f4120805b60f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Variable names should not match field names
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500：變數名稱不應該與欄位名稱相符
 |||  
 |-|-|  
 |TypeName|VariableNamesShouldNotMatchFieldNames|  
 |CheckId|CA1500|  
-|Category|Microsoft.Maintainability|  
-|Breaking Change|When fired on a parameter that has the same name as a field:<br /><br /> -   Non-breaking - If both the field and method that declares the parameter cannot be seen outside the assembly, regardless of the change you make.<br />-   Breaking - If you change the name of the field and can be seen outside the assembly.<br />-   Breaking - If you change the name of the parameter and the method that declares it can be seen outside the assembly.<br /><br /> When fired on a local variable that has the same name as a field:<br /><br /> -   Non-breaking - If the field cannot be seen outside the assembly, regardless of the change you make.<br />-   Non-breaking - If you change the name of the local variable and do not change the name of the field.<br />-   Breaking - If you change the name of the field and it can be seen outside the assembly.|  
+|分類|Microsoft.Maintainability|  
+|中斷變更|當引發與欄位具有相同名稱的參數：<br /><br /> -非中斷-如果外部組件，不論您所進行的變更，則無法看到欄位和宣告該參數的方法。<br />-中斷-如果您變更欄位的名稱，而且可以看到組件之外。<br />-中斷-如果您變更參數的名稱，且會將其宣告的方法可以看到在組件外部。<br /><br /> 當引發與欄位具有相同名稱的本機變數：<br /><br /> -非中斷的組件，不論您所進行的變更之外無法看到的欄位。<br />-非中斷-如果您變更本機變數的名稱，並不會變更欄位的名稱。<br />-中斷-如果您變更欄位的名稱，並在組件外部看到它。|  
   
-## <a name="cause"></a>Cause  
- An instance method declares a parameter or a local variable whose name matches an instance field of the declaring type. To catch local variables that violate the rule, the tested assembly must be built by using debugging information and the associated program database (.pdb) file must be available.  
+## <a name="cause"></a>原因  
+ 執行個體方法宣告的參數或區域變數，其名稱符合宣告類型的執行個體欄位。 若要攔截違反規則的本機變數，必須建立測試的組件使用偵錯資訊和相關聯的程式資料庫 (.pdb) 檔案必須能夠使用。  
   
-## <a name="rule-description"></a>Rule Description  
- When the name of an instance field matches a parameter or a local variable name, the instance field is accessed by using the `this` (`Me` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) keyword when inside the method body. When maintaining code, it is easy to forget this difference and assume that the parameter/local variable refers to the instance field, which leads to errors. This is true especially for lengthy method bodies.  
+## <a name="rule-description"></a>規則描述  
+ 當執行個體欄位的名稱符合的參數或區域變數名稱時，會使用來存取執行個體欄位`this`(`Me`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) 之方法主體內的關鍵字。 當維護程式碼，很容易忘記這項差異，並假設參數/本機變數，是指執行個體欄位中，會導致發生錯誤。 這是特別為方法主體過於冗長，則為 true。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, rename either the parameter/variable or the field.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，重新命名的參數/變數或欄位。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows two violations of the rule.  
+## <a name="example"></a>範例  
+ 下列範例會示範兩個規則的違規。  
   
- [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)] [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]
+ [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)]
+ [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]

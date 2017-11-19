@@ -1,32 +1,33 @@
 ---
-title: "逐步解說：使用 XSLT 階層 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "逐步解說： 使用 XSLT 階層 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 5e60c8ec-cd05-4597-b856-55038218acf4
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0cd7d0567f12a7f1d57bdea765cbf9eb555dd8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 逐步解說：使用 XSLT 階層
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-XSLT 階層工具可簡化許多 XML 開發工作。XSLT 樣式表經常使用 `includes` 和 `imports` 指示。編譯會從主樣式表開始，但當您看見編譯 XSLT 樣式表所產生的錯誤時，該錯誤的來源可能並非主要樣式表。修復錯誤或編輯樣式表可能需要存取包含或匯入的樣式表。在偵錯工具中逐步執行樣式表會開啟包含及匯入的樣式表，您可以在一個或多個包含的樣式表中加入一些中斷點。  
+# <a name="walkthrough-using-xslt-hierarchy"></a>逐步解說：使用 XSLT 階層
+XSLT 階層工具可簡化許多 XML 開發工作。 XSLT 樣式表經常使用 `includes` 和 `imports` 指示。 編譯會從主樣式表開始，但當您看見編譯 XSLT 樣式表所產生的錯誤時，該錯誤的來源可能並非主要樣式表。 修復錯誤或編輯樣式表可能需要存取包含或匯入的樣式表。 在偵錯工具中逐步執行樣式表會開啟包含及匯入的樣式表，您可以在一個或多個包含的樣式表中加入一些中斷點。  
   
- 另一個可利用 XSLT 階層工具的案例，是在內建的範本規則中放置中斷點。範本規則是針對樣式表的每種模式所產生的特殊範本，若沒有其他範本與節點相符，`xsl:apply-templates` 就會呼叫範本規則。為了在內建範本規則中實作偵錯，XSLT 偵錯工具會在暫存資料夾中產生含有規則的檔案，然後將檔案與主樣式表一起編譯。若未從某個 `xsl:apply-template` 逐步執行程式碼，可能不容易找到已包含在主樣式表中的樣式表，也不容易找到並開啟含有內建範本規則的樣式表。  
+ 另一個可利用 XSLT 階層工具的案例，是在內建的範本規則中放置中斷點。 範本規則是針對樣式表的每種模式所產生的特殊範本，若沒有其他範本與節點相符，`xsl:apply-templates` 就會呼叫範本規則。 為了在內建範本規則中實作偵錯，XSLT 偵錯工具會在暫存資料夾中產生含有規則的檔案，然後將檔案與主樣式表一起編譯。 若未從某個 `xsl:apply-template` 逐步執行程式碼，可能不容易找到已包含在主樣式表中的樣式表，也不容易找到並開啟含有內建範本規則的樣式表。  
   
  本主題中的範例將示範參考的樣式表中的偵錯。  
   
-### 程序標題  
+### <a name="procedure-title"></a>程序標題  
   
-1.  在 Visual Studio 中開啟 XML 文件。本範例使用下列 `collection.xml` 文件。  
+1.  在 Visual Studio 中開啟 XML 文件。 本範例使用下列 `collection.xml` 文件。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -111,7 +112,7 @@ XSLT 階層工具可簡化許多 XML 開發工作。XSLT 樣式表經常使用 `
   
 5.  開始偵錯。  
   
-6.  當偵錯工具停在指示 `<xsl:include href="xslincludefile.xsl" />` 時，按下逐步執行按鈕。請注意，參考的樣式表中的偵錯可以繼續進行。您會看見階層，同時設計工具會顯示正確的路徑。  
+6.  當偵錯工具停在指示 `<xsl:include href="xslincludefile.xsl" />` 時，按下逐步執行按鈕。 請注意，參考的樣式表中的偵錯可以繼續進行。 您會看見階層，同時設計工具會顯示正確的路徑。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [逐步解說：XSLT 分析工具](../xml-tools/walkthrough-xslt-profiler.md)

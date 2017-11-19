@@ -1,62 +1,61 @@
 ---
-title: "IDiaSymbol::get_addressOffset | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_addressOffset 方法"
+title: "Idiasymbol:: Get_addressoffset |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_addressOffset method
 ms.assetid: c15639b0-7f37-46c7-891b-40273b7f6319
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3e13e130febd36f4b9bf8e0964ac00b78647b034
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_addressOffset
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取位移的組件的地址的位置。  何時使用[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設定為 \[ `LocIsStatic`。  
+# <a name="idiasymbolgetaddressoffset"></a>IDiaSymbol::get_addressOffset
+擷取位址位置的位移的部分。 使用時機[LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)設`LocIsStatic`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_addressOffset (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_addressOffset (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回的地址位置位移的部份。  
+ [out]傳回地址位置的位移的部分。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 備註  
- 對於位於外部的 DLL 中的靜態成員，這個方法所傳回的位移可能為 0，因為這個方法會依賴取得成員的虛擬位址。  是有效的虛擬位址才[IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)中的方法[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面呼叫具有非零值的參數，指定 DLL 的載入位址。  
+## <a name="remarks"></a>備註  
+ 對於位於外部 DLL 中的靜態成員，這個方法所傳回的位移可能是這個方法會依賴取得之成員的虛擬位址 0。 虛擬位址都有效才[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法中的[IDiaSession](../../debugger/debug-interface-access/idiasession.md)介面已使用指定的 dll 的載入位址則為非零參數呼叫。  
   
- 若要取得的地址\] 區段部份，呼叫[IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。  
+ 若要取得的地址區段部份，請呼叫[idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)方法。  
   
-## 需求  
+## <a name="requirements"></a>需求  
   
 |需求|描述|  
-|--------|--------|  
-|標頭：|dia2.h|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
 |版本:|DIA SDK v7.0|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [LocationType 列舉](../../debugger/debug-interface-access/locationtype.md)   
- [IDiaSymbol::get\_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
- [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
+ [Idiasymbol:: Get_addresssection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)   
+ [Idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)   
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

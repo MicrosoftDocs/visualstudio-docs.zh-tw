@@ -1,52 +1,51 @@
 ---
-title: "IDiaEnumFrameData::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaEnumFrameData::Next 方法"
+title: "Idiaenumframedata:: Next |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaEnumFrameData::Next method
 ms.assetid: 546e2e23-efb2-425a-96a1-808c67c519fb
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7ef6ba1cb860a1346db794e47a76258f80d57707
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaEnumFrameData::Next
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取指定的圖文框列舉序列中的資料元素。  
+# <a name="idiaenumframedatanext"></a>IDiaEnumFrameData::Next
+擷取框架資料元素，列舉順序中指定的數目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Next (   
-   ULONG           celt,   
-   IDiaFrameData** rgelt,  
-   ULONG*          pceltFetched  
+```C++  
+HRESULT Next (   
+   ULONG           celt,   
+   IDiaFrameData** rgelt,  
+   ULONG*          pceltFetched  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  celt  
- \[in\]框架會擷取列舉值中的資料元素的數目。  
+ [in]要擷取列舉值中的框架資料元素的數目。  
   
  rgelt  
- \[\] out陣列的[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)好填入這些要求的畫面格的資料元素的物件。  
+ [out]陣列[IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)填入要求的畫面格的資料元素的物件。  
   
  pceltFetched  
- \[\] out擷取列舉值中傳回項目數圖文框的資料。  
+ [out]擷取列舉值中傳回畫面格的資料元素的數目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果沒有更多的記錄。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果沒有更多的記錄。 反之則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)   
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

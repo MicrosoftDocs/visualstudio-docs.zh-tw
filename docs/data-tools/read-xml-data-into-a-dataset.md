@@ -1,5 +1,5 @@
 ---
-title: Read XML data into a dataset | Microsoft Docs
+title: "讀取 XML 資料至資料集 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -19,78 +19,62 @@ helpviewer_keywords:
 - XML documents, reading
 - datasets [Visual Basic], reading XML data
 ms.assetid: fae72958-0893-47d6-b3dd-9d42418418e4
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.technology: vs-data-tools
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 6c40aa7dc3e792c2feaaa60b778d874c7fc062c7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="read-xml-data-into-a-dataset"></a>Read XML data into a dataset
-ADO.NET provides simple methods for working with XML data. In this walkthrough, you  create a Windows application that  loads XML data into a dataset. The dataset is then displayed in a <xref:System.Windows.Forms.DataGridView> control. Finally, an XML schema based on the contents of the XML file is displayed in a text box.  
+# <a name="read-xml-data-into-a-dataset"></a>XML 資料讀入資料集
+ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可以建立 Windows 應用程式，可將 XML 資料載入資料集。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。  
   
- This walkthrough consists of five main steps:  
+ 這個逐步解說包含五個主要步驟：  
   
-1.  Creating a new project  
+1.  建立新的專案  
   
-2.  Creating an XML file to be read into the dataset  
+2.  建立 XML 檔案讀取至資料集  
   
-3.  Creating the user interface  
+3.  建立使用者介面  
   
-4.  Creating the dataset, reading the XML file, and displaying it in a <xref:System.Windows.Forms.DataGridView> control  
+4.  建立資料集、 讀取 XML 檔案，以及顯示在<xref:System.Windows.Forms.DataGridView>控制項  
   
-5.  Adding code to display the XML schema based on the XML file in a <xref:System.Windows.Forms.TextBox> control  
+5.  加入程式碼以顯示 XML 結構描述中的 XML 檔案為基礎<xref:System.Windows.Forms.TextBox>控制項  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition you're using. To change your settings, on the **Tools** menu, select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  對話方塊與功能表命令可能會與 [說明] 中所述，根據您目前使用的設定或版本不同，看您正在使用它。 若要變更您的設定，在**工具**功能表上，選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="create-a-new-project"></a>Create a new project  
- In this step, you  create a Visual Basic or Visual C# project that  contains this walkthrough.  
+## <a name="create-a-new-project"></a>建立新專案  
+ 在此步驟中，您可以建立包含此逐步解說的 Visual Basic 或 Visual C# 專案。  
   
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
+#### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案  
   
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。  
 
-4. Name the project **ReadingXML**, and then choose **OK**. 
+4. 將專案命名**ReadingXML**，然後選擇 **確定**。 
   
-     The **ReadingXML** project is created and added to **Solution Explorer**.  
+     **ReadingXML**建立專案並將其加入**方案總管 中**。  
   
-## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>Generate the XML file to be read into the dataset  
- Because this walkthrough focuses on reading XML data into a dataset, the contents of an XML file is provided.  
+## <a name="generate-the-xml-file-to-be-read-into-the-dataset"></a>產生 XML 檔案讀取至資料集  
+ 這個逐步解說是針對 XML 資料讀入資料集，因為提供的 XML 檔案的內容。  
   
-#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>To create the XML file that will be read into the dataset  
+#### <a name="to-create-the-xml-file-that-will-be-read-into-the-dataset"></a>若要建立的 XML 檔案，將會讀取至資料集  
   
-1.  On the **Project** menu, select **Add New Item**.  
+1.  在**專案**功能表上，選取**加入新項目**。  
   
-2.  Select **XML File**, name the file `authors.xml`, and then select **Add**.  
+2.  選取**XML 檔案**，將檔案命名`authors.xml`，然後選取**新增**。  
   
-     The XML file loads into the designer and is ready for edit.  
+     XML 檔案載入至設計工具，並可供編輯。  
   
-3.  Paste the following code into the editor below the XML declaration:  
+3.  將下列程式碼貼到編輯器 中的 XML 宣告：  
   
     ```xml  
     <Authors_Table>  
@@ -152,115 +136,115 @@ ADO.NET provides simple methods for working with XML data. In this walkthrough, 
     </Authors_Table>  
     ```  
   
-4.  On the **File** menu, select **Save authors.xml**.  
+4.  在**檔案**功能表上，選取**儲存 authors.xml**。  
   
-## <a name="create-the-user-interface"></a>Create the user interface  
- The user interface for this application consists of the following:  
+## <a name="create-the-user-interface"></a>建立使用者介面  
+ 此應用程式的使用者介面是由下列項目所組成：  
   
--   A <xref:System.Windows.Forms.DataGridView> control that displays the contents of the XML file as data.  
+-   A<xref:System.Windows.Forms.DataGridView>顯示做為資料的 XML 檔案的內容控制項。  
   
--   A <xref:System.Windows.Forms.TextBox> control that displays the XML schema for the XML file.  
+-   A<xref:System.Windows.Forms.TextBox>顯示為 XML 檔案的 XML 結構描述的控制項。  
   
--   Two <xref:System.Windows.Forms.Button> controls.  
+-   兩個<xref:System.Windows.Forms.Button>控制項。  
   
-    -   One button reads the XML file into the dataset and displays it in the <xref:System.Windows.Forms.DataGridView> control.  
+    -   其中一個按鈕讀入資料集的 XML 檔案，並顯示在<xref:System.Windows.Forms.DataGridView>控制項。  
   
-    -   A second button extracts the schema from the dataset, and through a <xref:System.IO.StringWriter> displays it in the <xref:System.Windows.Forms.TextBox> control.  
+    -   第二個按鈕會擷取結構描述集中的資料，以及透過<xref:System.IO.StringWriter>它顯示在<xref:System.Windows.Forms.TextBox>控制項。  
   
-#### <a name="to-add-controls-to-the-form"></a>To add controls to the form  
+#### <a name="to-add-controls-to-the-form"></a>若要將控制項加入至表單  
   
-1.  Open `Form1` in design view.  
+1.  開啟`Form1`設計 檢視中。  
   
-2.  From the **Toolbox**, drag the following controls onto the form:  
+2.  從**工具箱**，拖曳到表單上的下列控制項：  
   
-    -   One <xref:System.Windows.Forms.DataGridView> control  
+    -   一個<xref:System.Windows.Forms.DataGridView>控制項  
   
-    -   One <xref:System.Windows.Forms.TextBox> control  
+    -   一個<xref:System.Windows.Forms.TextBox>控制項  
   
-    -   Two <xref:System.Windows.Forms.Button> controls  
+    -   兩個<xref:System.Windows.Forms.Button>控制項  
   
-3.  Set the following properties:  
+3.  設定下列屬性：  
   
-    |Control|Property|Setting|  
+    |控制項|屬性|設定|  
     |-------------|--------------|-------------|  
-    |`TextBox1`|**Multiline**|`true`|  
-    ||**ScrollBars**|**Vertical**|  
+    |`TextBox1`|**多行**|`true`|  
+    ||**捲軸**|**垂直**|  
     |`Button1`|**Name**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
     |`Button2`|**Name**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
-## <a name="create-the-dataset-that-receives-the-xml-data"></a>Create the dataset that receives the XML data  
- In this step, you create a new dataset named `authors`. For more information about datasets, see [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).  
+## <a name="create-the-dataset-that-receives-the-xml-data"></a>建立接收 XML 資料的資料集  
+ 在此步驟中，您會建立名為新的資料集`authors`。 如需有關資料集的詳細資訊，請參閱[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)。  
   
-#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>To create a new dataset that receives the XML data  
+#### <a name="to-create-a-new-dataset-that-receives-the-xml-data"></a>若要建立新的資料集，接收 XML 資料  
   
-1.  In **Solution Explorer**, select the source file for **Form1**, and then select the **View Designer** button on the **Solution Explorer** toolbar.  
+1.  在**方案總管 中**，選取的原始程式檔**Form1**，然後選取**檢視表設計工具**按鈕上**方案總管 中**工具列。  
   
-2.  From the [Toolbox, Data Tab](../ide/reference/toolbox-data-tab.md), drag a **DataSet** onto **Form1**.  
+2.  從[工具箱、 資料索引標籤](../ide/reference/toolbox-data-tab.md)，拖曳**資料集**到**Form1**。  
   
-3.  In the **Add Dataset** dialog box, select **Untyped dataset**, and then select **OK**.  
+3.  在**加入資料集**對話方塊中，選取**不具類型資料集**，然後選取**確定**。  
   
-     **DataSet1** is added to the component tray.  
+     **DataSet1**已加入至元件匣。  
   
-4.  In the **Properties** window, set the **Name** and <xref:System.Data.DataSet.DataSetName%2A> properties for`AuthorsDataSet`.  
+4.  在**屬性**視窗中，將**名稱**和<xref:System.Data.DataSet.DataSetName%2A>屬性`AuthorsDataSet`。  
   
-## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>Create the event handler to read the XML file into the dataset  
- The **Read XML** button reads the XML file into the dataset. It then sets properties on the <xref:System.Windows.Forms.DataGridView> control that bind it to the dataset.  
+## <a name="create-the-event-handler-to-read-the-xml-file-into-the-dataset"></a>建立 XML 檔案讀入資料集的事件處理常式  
+ **讀取 XML**按鈕會將 XML 檔案讀入資料集。 它接著會設定屬性<xref:System.Windows.Forms.DataGridView>繫結至資料集的控制項。  
   
-#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>To add code to the ReadXmlButton_Click event handler  
+#### <a name="to-add-code-to-the-readxmlbuttonclick-event-handler"></a>若要將程式碼加入至 ReadXmlButton_Click 事件處理常式  
   
-1.  In **Solution Explorer**, select **Form1**,  and then select the **View Designer** button on the **Solution Explorer** toolbar.  
+1.  在**方案總管 中**，選取**Form1**，然後選取**檢視表設計工具**按鈕上**方案總管 中**工具列。  
   
-2.  Select the **Read XML** button.  
+2.  選取**讀取 XML**  按鈕。  
   
-     The **Code Editor** opens at the `ReadXmlButton_Click` event handler.  
+     **程式碼編輯器**會在開啟`ReadXmlButton_Click`事件處理常式。  
   
-3.  Type the following code into the `ReadXmlButton_Click` event handler:  
+3.  下列程式碼輸入到`ReadXmlButton_Click`事件處理常式：  
   
      [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]  
   
-4.  In the `ReadXMLButton_Click` event handler code, change the `filepath =` entry to the correct path.  
+4.  在`ReadXMLButton_Click`事件處理常式程式碼，變更`filepath =`正確路徑的項目。  
   
-## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>Create the event handler to display the schema in the textbox  
- The **Show Schema** button creates a <xref:System.IO.StringWriter> object that's filled with the schema and is displayed in the <xref:System.Windows.Forms.TextBox>control.  
+## <a name="create-the-event-handler-to-display-the-schema-in-the-textbox"></a>建立事件處理常式，在文字方塊中顯示結構描述  
+ **顯示結構描述** 按鈕會建立<xref:System.IO.StringWriter>物件，會填入結構描述，並顯示在<xref:System.Windows.Forms.TextBox>控制項。  
   
-#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>To add code to the ShowSchemaButton_Click event handler  
+#### <a name="to-add-code-to-the-showschemabuttonclick-event-handler"></a>若要將程式碼加入至 ShowSchemaButton_Click 事件處理常式  
   
-1.  In **Solution Explorer**, select **Form1**, and then select the **View Designer** button.  
+1.  在**方案總管 中**，選取**Form1**，然後選取**檢視表設計工具** 按鈕。  
   
-2.  Select the **Show Schema** button.  
+2.  選取**顯示結構描述** 按鈕。  
   
-     The **Code Editor** opens at the `ShowSchemaButton_Click` event handler.  
+     **程式碼編輯器**會在開啟`ShowSchemaButton_Click`事件處理常式。  
   
-3.  Type the following code into the `ShowSchemaButton_Click` event handler.  
+3.  下列程式碼輸入到`ShowSchemaButton_Click`事件處理常式。  
   
      [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
      [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]  
   
-## <a name="test-the-form"></a>Test the form  
- You can now test the form to make sure it behaves as expected.  
+## <a name="test-the-form"></a>測試表單  
+ 您現在可以測試表單，以確定其如預期般運作。  
   
-#### <a name="to-test-the-form"></a>To test the form  
+#### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  Select **F5** to run the application.  
+1.  選取**F5**執行應用程式。  
   
-2.  Select the **Read XML** button.  
+2.  選取**讀取 XML**  按鈕。  
   
-     The DataGridView displays the contents of the XML file.  
+     DataGridView 中顯示的 XML 檔案的內容。  
   
-3.  Select the **Show Schema** button.  
+3.  選取**顯示結構描述** 按鈕。  
   
-     The text box displays the XML schema for the XML file.  
+     在文字方塊中顯示的 XML 檔案的 XML 結構描述。  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough teaches you the basics of reading an XML file into a dataset, as well as creating a schema based on the contents of the XML file. Here are some tasks that you might do next:  
+## <a name="next-steps"></a>後續步驟  
+ 本逐步解說教導 XML 檔案讀入資料集，以及建立結構描述的 XML 檔案的內容為基礎的基本概念。 以下是接下來，您可能會執行一些工作：  
   
--   Edit the data in the dataset and write it back out as XML. For more information, see <xref:System.Data.DataSet.WriteXml%2A>.  
+-   編輯資料集並將它寫回為 XML 中的資料。 如需詳細資訊，請參閱<xref:System.Data.DataSet.WriteXml%2A>。  
   
--   Edit the data in the dataset and write it out to a database. For more information, see [Saving Data](../data-tools/saving-data.md).  
+-   編輯資料集中的資料，並寫出至資料庫。 如需詳細資訊，請參閱[儲存資料](../data-tools/saving-data.md)。  
   
-## <a name="see-also"></a>See Also  
- [Accessing data in Visual Studio](../data-tools/accessing-data-in-visual-studio.md)       
- [XML Tools in Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱  
+ [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)       
+ [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -1,45 +1,48 @@
 ---
-title: "format 屬性 (Intl.NumberFormat) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "format 屬性 (Intl.NumberFormat) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 68c3223a-023c-4fa0-aa99-d049a7a0e26a
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: be40f8e94220ad7504dd3b9736e71b3416bb3d2a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# format 屬性 (Intl.NumberFormat)
-傳回函式，透過使用指定的數字格式子設定，格式化地區設定特定的數字。  
+# <a name="format-property-intlnumberformat"></a>format 屬性 (Intl.NumberFormat)
+傳回使用指定的數字格式器設定來格式化地區設定特定的數字的函數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 numberFormatObj.format  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `numberFormatObj`  
- 必要項。  做為格式子使用之 `NumberFormat` 物件的名稱。  
+ 必要項。 名稱`NumberFormat`做為格式子物件。  
   
-## 備註  
- `format` 屬性傳回的函式採用一個引數 `value`，並使用 `NumberFormat` 物件指定的選項，傳回代表當地語系化數字的字串。  如果未提供 `value`，則函式會傳回 `NaN` \(非數字\)。  
+## <a name="remarks"></a>備註  
+ 所傳回的函式`format`屬性會接受單一引數， `value`，並傳回字串，表示當地語系化的數字，使用指定的選項`NumberFormat`物件。 如果`value`未提供，則函數會傳回`NaN`（不是數字）。  
   
-## 範例  
- 下列範例使用 `NumberFormat` 物件來建立當地語系化的數字。  
+## <a name="example"></a>範例  
+ 下列範例會使用`NumberFormat`物件建立當地語系化的數目。  
   
-```javascript  
+```JavaScript  
 var nf = new Intl.NumberFormat(["en-US"], {  
     style: "currency",  
     currency: "CNY",  
@@ -53,8 +56,8 @@ if (console && console.log) {
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Intl.NumberFormat 物件](../../javascript/reference/intl-numberformat-object-javascript.md)

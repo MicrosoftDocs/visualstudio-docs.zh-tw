@@ -1,48 +1,50 @@
 ---
-title: "儲存資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/14/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "DataRow.RowState"
-  - "DataSet.GetChanges"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 儲存"
-  - "資料 [Visual Studio], 更新"
-  - "資料庫, 更新"
-  - "DBDirect 方法"
-  - "儲存資料"
-  - "TableAdapter DBDirect 方法"
-  - "TableAdapter.Update 方法"
-  - "更新資料"
-  - "更新資料庫"
+title: "將資料儲存 |Microsoft 文件"
+ms.custom: 
+ms.date: 10/19/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- DataRow.RowState
+- DataSet.GetChanges
+helpviewer_keywords:
+- DBDirect methods
+- updating data
+- data [Visual Studio], saving
+- TableAdapter DBDirect methods
+- databases, updating
+- TableAdapter.Update method
+- data [Visual Studio], updating
+- saving data
+- updating databases
 ms.assetid: 21d2b115-62e4-4ac9-a873-dcbb535b8af8
-caps.latest.revision: 13
-caps.handback.revision: 13
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
 robots: noindex,nofollow
+ms.technology: vs-data-tools
+ms.openlocfilehash: 34ceecce635cb5388bd53ed191c0fc1fa861bc38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 儲存資料
-儲存資料是將應用程式之資料模型中已變更的資料維持在原始資料存放區 \(通常是關聯式資料庫，例如 SQL Server\) 中的程序。  
+# <a name="saving-data"></a>儲存資料
+將資料儲存為保存的程序變更回原始的資料存放區，通常是例如 SQL Server 關聯式資料庫的應用程式的資料模型中的資料。  
   
- 透過資料模型更新資料來源的程序一般需要兩個步驟。  第一個步驟是以新資訊 \(新增的記錄、變更的記錄或刪除的記錄\) 來更新資料模型。  第二個步驟是將您資料模型中的變更存回資料庫。  
+ 資料模型透過更新資料來源通常是兩步驟程序。 第一個步驟是以新資訊更新的資料模型，新的記錄，變更記錄，或刪除記錄。 第二個步驟是將變更儲存回資料庫的資料模型中。  
   
- 下列主題描述與儲存資料相關聯的概念和工作。  
+ 下列主題說明的概念和儲存資料的相關聯的工作。  
   
-## 相關主題  
- [儲存資料集中的資料](../data-tools/save-data-back-to-the-database.md)  
- 概述如何在資料集進行變更，以及資料集如何追蹤變更資訊，以將那些變更儲存至資料庫。  
+## <a name="related-topics"></a>相關主題  
+[將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)  
+ 提供如何在資料集進行變更，以及如何將資料集追蹤變更的相關資訊以便將這些變更儲存至資料庫的概觀。  
   
- [儲存實體資料](../data-tools/saving-entity-data.md)  
- 描述如何在 [ADO.NET Entity Framework](../Topic/ADO.NET%20Entity%20Framework.md) 和 [WCF Data Services 4.5](../Topic/WCF%20Data%20Services%204.5.md)應用程式中儲存變更。
+[如何： 加入、 修改及刪除實體 (WCF Data Services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)  
+示範如何建立、 更新和刪除資料服務中的實體資料。  
+  
+[如何： 執行資料服務查詢 (WCF Data Services)](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services)  
+示範如何查詢資料服務，從資料服務應用程式。  

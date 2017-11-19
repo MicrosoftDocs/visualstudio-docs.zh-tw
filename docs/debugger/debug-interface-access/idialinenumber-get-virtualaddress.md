@@ -1,43 +1,42 @@
 ---
-title: "IDiaLineNumber::get_virtualAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaLineNumber::get_virtualAddress 方法"
+title: "Idialinenumber:: Get_virtualaddress |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaLineNumber::get_virtualAddress method
 ms.assetid: 9048ef91-a59d-4ad8-90cb-4c13d0989241
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 23c2c4fe5bf638b9db9deb59db0a52b87f41ed61
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaLineNumber::get_virtualAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取此區塊的虛擬位址 \(VA\)。  
+# <a name="idialinenumbergetvirtualaddress"></a>IDiaLineNumber::get_virtualAddress
+擷取的虛擬位址 (VA) 的區塊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_virtualAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_virtualAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回此區塊的虛擬位址。  
+ [out]傳回在區塊的虛擬位址。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果這個屬性不受支援。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

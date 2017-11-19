@@ -1,11 +1,10 @@
 ---
-title: 'CA1018: Mark attributes with AttributeUsageAttribute | Microsoft Docs'
+title: "CA1018： 以 AttributeUsageAttribute 標記屬性 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,63 +14,48 @@ helpviewer_keywords:
 - CA1018
 - MarkAttributesWithAttributeUsage
 ms.assetid: 6ab70ec0-220f-4880-af31-45067703133c
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0dc155a883bc474198df5c7b489335c056fe248f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e9218d3908872871ff5dab13529e8b1cbcec0c8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Mark attributes with AttributeUsageAttribute
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018：以 AttributeUsageAttribute 標記屬性
 |||  
 |-|-|  
 |TypeName|MarkAttributesWithAttributeUsage|  
 |CheckId|CA1018|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- The <xref:System.AttributeUsageAttribute?displayProperty=fullName> attribute is not present on the custom attribute.  
+## <a name="cause"></a>原因  
+ <xref:System.AttributeUsageAttribute?displayProperty=fullName>屬性不存在於自訂屬性。  
   
-## <a name="rule-description"></a>Rule Description  
- When you define a custom attribute, mark it by using <xref:System.AttributeUsageAttribute> to indicate where in the source code the custom attribute can be applied. The meaning and intended usage of an attribute will determine its valid locations in code. For example, you might define an attribute that identifies the person who is responsible for maintaining and enhancing each type in a library, and that responsibility is always assigned at the type level. In this case, compilers should enable the attribute on classes, enumerations, and interfaces, but should not enable it on methods, events, or properties. Organizational policies and procedures would dictate whether the attribute should be enabled on assemblies.  
+## <a name="rule-description"></a>規則描述  
+ 當您定義自訂屬性時，它使用標記<xref:System.AttributeUsageAttribute>指出在原始程式碼中可以套用自訂屬性的位置。 屬性的意義和預期的用法將決定它在程式碼中的有效位置。 例如，您可以定義的屬性，識別誰負責維護和增強中程式庫中，每種類型和類型層級，永遠指派責任的人員。 在此情況下，編譯器應該啟用類別、 列舉和介面上的屬性，但應該在方法、 事件或屬性上啟用。 組織的原則和程序會指示該屬性是否應該啟用組件。  
   
- The <xref:System.AttributeTargets?displayProperty=fullName> enumeration defines the targets that you can specify for a custom attribute. If you omit <xref:System.AttributeUsageAttribute>, your custom attribute will be valid for all targets, as defined by the `All` value of <xref:System.AttributeTargets> enumeration.  
+ <xref:System.AttributeTargets?displayProperty=fullName>列舉會定義您可以指定自訂屬性的目標。 如果您省略<xref:System.AttributeUsageAttribute>，所定義，您的自訂屬性將會適用於所有目標，`All`值<xref:System.AttributeTargets>列舉型別。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, specify targets for the attribute by using <xref:System.AttributeUsageAttribute>. See the following example.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請指定目標屬性使用<xref:System.AttributeUsageAttribute>。 請參閱下列範例。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- You should fix a violation of this rule instead of excluding the message. Even if the attribute inherits <xref:System.AttributeUsageAttribute>, the attribute should be present to simplify code maintenance.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 您應該修正而不是訊息但不包括此規則的違規情形。 即使屬性繼承<xref:System.AttributeUsageAttribute>，屬性應該會出現以簡化程式碼維護。  
   
-## <a name="example"></a>Example  
- The following example defines two attributes. `BadCodeMaintainerAttribute` incorrectly omits the <xref:System.AttributeUsageAttribute> statement, and `GoodCodeMaintainerAttribute` correctly implements the attribute that is described earlier in this section. Note that the property `DeveloperName` is required by the design rule [CA1019: Define accessors for attribute arguments](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) and is included for completeness.  
+## <a name="example"></a>範例  
+ 下列範例會定義兩個屬性。 `BadCodeMaintainerAttribute`不正確地省略<xref:System.AttributeUsageAttribute>陳述式，和`GoodCodeMaintainerAttribute`正確實作本節稍早描述之屬性。 請注意，屬性`DeveloperName`設計規則所需[ca1019 必須： 定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)和隨附的完整性。  
   
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)] [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  
+ [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+ [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1019: Define accessors for attribute arguments](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
   
- [CA1813: Avoid unsealed attributes](../code-quality/ca1813-avoid-unsealed-attributes.md)  
+ [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## <a name="see-also"></a>See Also  
- [Attributes](/dotnet/standard/design-guidelines/attributes)
+## <a name="see-also"></a>另請參閱  
+ [屬性](/dotnet/standard/design-guidelines/attributes)

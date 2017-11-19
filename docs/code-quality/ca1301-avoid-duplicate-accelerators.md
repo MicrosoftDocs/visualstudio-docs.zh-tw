@@ -1,11 +1,10 @@
 ---
-title: 'CA1301: Avoid duplicate accelerators | Microsoft Docs'
+title: "CA1301： 避免使用重複的快速鍵 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,59 +14,43 @@ helpviewer_keywords:
 - CA1301
 - AvoidDuplicateAccelerators
 ms.assetid: 20570a00-864b-459c-a1fa-a6e9db5f1001
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 0e48aa6fd82a218e0184f80b1c4ec90736c46e66
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 13d2f36014ab15aea3148ab4175a89b77deb4846
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Avoid duplicate accelerators
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免使用重複的快速鍵
 |||  
 |-|-|  
 |TypeName|AvoidDuplicateAccelerators|  
 |CheckId|CA1301|  
-|Category|Microsoft.Globalization|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Globalization|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A type extends <xref:System.Windows.Forms.Control?displayProperty=fullName> and contains two or more top level controls that have identical access keys that are stored in a resource file.  
+## <a name="cause"></a>原因  
+ 型別擴充<xref:System.Windows.Forms.Control?displayProperty=fullName>和包含兩個或多個具有相同的存取金鑰儲存在資源檔中的最上層控制項。  
   
-## <a name="rule-description"></a>Rule Description  
- An access key, also known as an accelerator, enables keyboard access to a control by using the ALT key. When multiple controls have duplicate access keys, the behavior of the access key is not well defined. The user might not be able to access the intended control by using the access key and a control other than the one that is intended might be enabled.  
+## <a name="rule-description"></a>規則描述  
+ 便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項具有重複的便捷鍵時，就無法妥善定義便捷鍵的行為。 使用者可能無法存取預期的控制項使用的存取金鑰，並不是一個控制項可能會啟用。  
   
- The current implementation of this rule ignores menu items. However, menu items in the same submenu should not have identical access keys.  
+ 此規則的目前的實作會忽略功能表項目。 不過，在相同的子功能表中功能表項目不應有相同的便捷鍵。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, define unique access keys for all controls.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，定義唯一的便捷鍵的所有控制項。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows a minimal form that contains two controls that have identical access keys. The keys are stored in a resource file, which is not shown; however, their values appear in the commented out `checkBox.Text` lines. The behavior of duplicate accelerators can be examined by exchanging the `checkBox.Text` lines with their commented out counterparts. However, in this case, the example will not generate a warning from the rule.  
+## <a name="example"></a>範例  
+ 下列範例會示範最基本的表單，其中包含兩個控制項具有相同的便捷鍵。 金鑰會儲存在資源檔，不會顯示。不過，其值會出現在加上註解出`checkBox.Text`行。 可檢查重複的快速鍵的行為，藉由交換`checkBox.Text`行與其標成註解的對應項目。 不過，在此情況下，此範例不會產生警告的規則。  
   
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
- [Resources in Desktop Apps](/dotnet/framework/resources/index)
+ [桌面應用程式中的資源](/dotnet/framework/resources/index)

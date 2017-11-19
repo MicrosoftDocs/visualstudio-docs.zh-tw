@@ -1,114 +1,146 @@
 ---
-title: "逐步解說︰ 發行 Visual Studio 擴充功能 |Microsoft 文件"
+title: "逐步解說： 發行 Visual Studio 擴充功能 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-caps.latest.revision: 17
+caps.latest.revision: "17"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 574af4ff2b3858201c13121475de02a763572f6b
-ms.openlocfilehash: fcfb0724b89d60553d6686a0705ab1e9459014ce
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: d8eac89a2bdde3b0a20ea3a98775de84a503f86c
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說︰ 發行 Visual Studio 擴充功能
-本逐步解說會示範如何將 Visual Studio 擴充功能發行至 Visual Studio 組件庫。 當您將您的擴充功能加入組件庫時，開發人員可以使用**擴充功能和更新**瀏覽是否那里新的和更新的延伸模組。  
-  
-## <a name="prerequisites"></a>必要條件  
- 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[Visual Studio SDK](../extensibility/visual-studio-sdk.md)。  
-  
-## <a name="create-a-visual-studio-extension"></a>建立 Visual Studio 擴充功能  
- 在此情況下，我們將使用預設 VSPackage 擴充功能，但相同的步驟都適用於所有類型的延伸模組。  
-  
-1.  在 C# 中名為建立 VSPackage`TestPublishing`具有功能表命令。 如需詳細資訊，請參閱[建立擴充功能的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)。  
-  
-## <a name="test-the-extension"></a>測試擴充功能  
- 發佈擴充功能之前，請建置及測試以確定已正確安裝 Visual Studio 的實驗執行個體中。  
-  
-1.  在 Visual Studio 中開始偵錯。 若要開啟的 Visual Studio 的實驗執行個體。  
-  
-2.  在實驗執行個體中，移至**工具**功能表，然後按一下**擴充管理員**。 TestPublishing 擴充功能應該會出現在中間窗格中，並啟用。  
-  
-3.  在**工具** 功能表上，請確定您看到測試命令。  
-  
-## <a name="publish-the-extension-to-the-visual-studio-gallery"></a>發佈延伸至 Visual Studio 元件庫  
- 現在您可以將擴充功能發行至 Visual Studio 組件庫。  
-  
-1.  請確定您已建立您的擴充功能的版本，而且它是最新狀態。  
-  
-2.  在網頁瀏覽器中，開啟 [Visual Studio 組件庫](http://go.microsoft.com/fwlink/?LinkId=194329) 網站。  
-  
-3.  按一下右上角的 **登 IN**。  
-  
-4.  使用您的 Microsoft 帳戶登入。 如果您沒有 Microsoft 帳戶，您可以在此時建立一個。  
-  
-5.  按一下 [上傳] 。  
-  
-6.  在**步驟 1︰ 擴充功能類型**，請選取**工具**然後按一下 **下一步**。  
-  
-7.  在**步驟 2︰ 上傳**，您可以選擇直接上傳至 Visual Studio 組件庫，或只加入您自己的網站的連結。 在此情況下選取**我想要上傳我的工具**。 **選取您的控制項**方塊隨即出現。 按一下 **瀏覽**，然後選取 TestPublish.vsix \bin\Release 資料夾中的專案。 按 [下一步] 。  
-  
-8.  在**步驟 3︰ 基本資訊**，會顯示 source.extension.vsixmanifest 檔案的欄位。 選取適當**類別**，並新增**標記**可協助使用者尋找您的擴充功能。 若要新增更多詳細的摘要和描述 （描述必須至少 280 個字元）。 保留**延伸型別**為**不 Microsoft 擴充功能**和**成本類別**為**試用**。  
-  
-9. 讀取頁面的底部投稿協議，並檢查**我同意**。  
-  
-10. 按一下 **建立投稿文章**。 這會顯示您的擴充功能會對 Visual Studio 元件庫，以訊息尚未發行網頁的頁面。  
-  
-11. 按一下 [發行] 。  
-  
-12. 搜尋 Visual Studio 組件庫，您的擴充功能。 TestPublish 延伸模組的清單應該會出現。  
-  
-## <a name="install-the-extension-from-the-visual-studio-gallery"></a>安裝 Visual Studio 組件庫的擴充功能  
- 發行延伸模組時，安裝 Visual Studio 中，並那里加以測試。  
-  
-1.  在 Visual Studio 中，在**工具**] 功能表上，按一下 [**擴充功能和更新**。  
-  
-2.  按一下 **線上**TestPublish 然後搜尋。 TestPublish 延伸模組的清單應該會出現。  
-  
-3.  按一下 [ **下載**]。 下載擴充功能之後，按一下 [安裝] 。  
-  
-4.  若要完成安裝，請重新啟動 Visual Studio。  
-  
-## <a name="removing-the-extension"></a>移除延伸模組  
- 從 Visual Studio 組件庫和您的電腦，您可以移除擴充功能。  
-  
-#### <a name="to-remove-the-extension-from-the-visual-studio-gallery"></a>若要從 Visual Studio 組件庫中移除該擴充功能  
-  
-1.  開啟[Visual Studio 元件庫](http://go.microsoft.com/fwlink/?LinkId=194329)網站。  
-  
-2.  在中心]，按一下 [ **My 擴充**。 TestPublish 清單隨即出現。  
-  
-3.  按一下 **刪除**。  
-  
-#### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能  
-  
-1.  在 Visual Studio 的 [工具]  功能表上，按一下 [擴充管理員] 。  
-  
-2.  選取 TestPublish，然後按一下**解除安裝**。  
-  
-3.  若要完成解除安裝，重新啟動 Visual Studio。
+# <a name="walkthrough-publishing-a-visual-studio-extension"></a>逐步解說： 發行 Visual Studio 擴充功能
 
+本逐步解說將示範如何將 Visual Studio 擴充功能發行至 Visual Studio Marketplace。 當您將您的擴充功能加入至 Marketplace 時，開發人員可以使用**擴充功能和更新**瀏覽是否那里新的和更新擴充功能。
+
+## <a name="prerequisites"></a>必要條件
+
+ 若要依照本逐步解說執行作業，您必須安裝 Visual Studio SDK。 如需詳細資訊，請參閱[安裝 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+
+## <a name="create-a-visual-studio-extension"></a>建立 Visual Studio 擴充功能
+
+在此情況下，我們將使用預設 VSPackage 的延伸模組，但相同的步驟適用於每種延伸模組。
+
+1. 在 C# 中名為"TestPublish 」 具有功能表命令建立 VSPackage。 如需詳細資訊，請參閱[建立您的第一個延伸模組： Hello World](../extensibility/extensibility-hello-world.md)。
+
+## <a name="package-your-extension"></a>將擴充功能封裝
+
+1. 更新擴充功能 vsixmanifest 與產品名稱、 作者和版本的正確資訊。
+
+  ![更新擴充功能 vsixmanifest](media/update-extension-vsixmanifest.png)
+
+2. 建置您的擴充功能**發行**模式。 現在您的延伸模組會封裝為 VSIX \bin\Release 資料夾中。
+
+3. 您可以按兩下此 VSIX，若要確認安裝。
+
+## <a name="test-the-extension"></a>測試擴充功能
+
+ 發佈擴充功能之前，建置和測試以確定它已正確安裝 Visual Studio 的實驗執行個體中。
+
+1. 在 Visual Studio 中，開始偵錯。 若要開啟的 Visual Studio 的實驗執行個體。
+
+2. 在實驗執行個體中，移至**工具**功能表，然後按一下**擴充功能和更新...**.TestPublish 延伸應該會出現在中間窗格中，並啟用。
+
+3. 在**工具**功能表上，請確定您看到測試命令。
+
+## <a name="publish-the-extension-to-the-visual-studio-marketplace"></a>發行至 Visual Studio Marketplace 的擴充功能
+
+1. 請確定您已建立您的擴充功能的版本，而且它是最新狀態。
+
+2. 在 web 瀏覽器中，開啟[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)網站。
+
+3. 按一下右上角**登入**。
+
+4. 使用您的 Microsoft 帳戶登入。 如果您沒有 Microsoft 帳戶，您可以在此時建立一個。
+
+5. 按一下**發佈擴充功能**。  這會將您巡覽至您的擴充功能的管理頁面。  如果您沒有 「 發行者 」 帳戶，系統會提示您建立一個在這個階段。
+
+  ![上傳至 Marketplace](media/upload-to-marketplace.png)
+
+6. 選擇您要用來上傳您的擴充功能的發行者。  您可以變更 「 發行者 」，按一下左上角的發行者名稱。
+
+  ![變更 Marketplace 發行者](media/change-marketplace-publisher.png)
+
+7. 在**1： 上傳副檔名**，您可以選擇直接上傳 VSIX 檔案到 Visual Studio Marketplace 或只新增您自己的網站的連結。 在此情況下，我們會將上傳擴充功能，TestPublish.vsix。  拖放您的擴充功能，或使用**按一下**連結以瀏覽檔案。  您的擴充功能可以找到專案的 \bin\Release 資料夾中。  按一下 [ **繼續**]。
+
+8. 在**2： 提供擴充功能的詳細資料**，某些欄位 source.extension.vsixmanifest 檔案從您的延伸模組是 自動填入。  更多詳細說明每一個您可以找到下方：
+
+    * **內部名稱**將擴充功能的詳細資料頁面的 URL 中使用。 如需範例，發行在 「 發行者 」 名稱"myname 」 擴充功能和指定的內部名稱為"myextension"會產生的 URL"marketplace.visualstudio\.com/items?itemName=myname.myextension 」 您的擴充功能詳細資料頁面。
+    
+    * **顯示名稱**延伸模組。  這是自動填入 source.extension.vsixmanifest 檔案。
+   
+    * **版本**您上傳擴充功能的數字。  這是自動填入 source.extension.vsixmanifest 檔案。
+    
+    * **VSIX ID**是 Visual Studio 會使用您的擴充功能的唯一識別碼。  如果您想要有您的擴充功能會自動更新，這是必要的。  這是自動填入 source.extension.vsixmanifest 檔案。
+    
+    * **標誌**，將使用您的擴充功能。  這將會自動填入如果提供 source.extension.vsixmanifest 檔案。
+    
+    * **簡短描述**的擴充功能的用途。  這將會自動填入 source.extension.vsixmanifest 檔案。
+    
+    * **概觀**是要包含螢幕擷取畫面和您的擴充功能的執行作業的相關詳細的資訊的好地方。
+    
+    * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 會處理您的擴充功能。  您的延伸模組只會安裝這些版本。
+    
+    * **支援的 Visual Studio 版本**可讓您選擇哪一個版本的 Visual Studio 會處理您的擴充功能。  您的延伸模組只會安裝這些版本。
+    
+    * **型別**：  最常見的延伸模組類型是**工具**。
+    
+    * **類別**。  挑選最多三是適合您的擴充功能。
+    
+    * **標記**是關鍵字，幫助使用者尋找您的擴充功能。 標記可以協助提升您的擴充功能在 Marketplace 中的搜尋相關性。
+    
+    * **定價類別**是您的擴充功能的成本。
+    
+    * **原始程式碼儲存機制**可讓您與社群分享您的原始程式碼的連結。
+    
+    * **您的擴充功能允許問與答**可讓使用者離開您的延伸模組項目頁面上的問題。
+
+9. 按一下**儲存並上傳**。 這會帶您回到您的發行者管理頁面。  您的擴充功能尚未發行。  發行擴充停留擴充功能的項目，然後按一下  **...**然後**讓公用**。  您可以檢視您的擴充功能的外觀類似 Marketplace 上選取**檢視詳細資料**。  擷取的數字，按一下**報表**。  若要變更您的擴充功能，請按一下 **編輯*。
+
+  ![延伸項目功能表](media/extension-entry-menu.png)
+
+10. 按一下後**設為公用**，您的擴充功能現在是公用。  搜尋 Visual Studio Marketplace 您的擴充功能。
+
+## <a name="install-the-extension-from-the-visual-studio-marketplace"></a>從 Visual Studio Marketplace 安裝擴充功能
+
+現在已發行的擴充功能，將它安裝在 Visual Studio 並測試其存在。
+
+1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...**.
+
+2. 按一下**線上**TestPublish 然後搜尋。
+
+3. 按一下 [ **下載**]。 然後系統會排定擴充功能安裝。
+
+4. 若要完成安裝，請關閉 Visual Studio 的所有執行個體。
+
+## <a name="removing-the-extension"></a>移除延伸模組
+
+從 Visual Studio Marketplace 並從您的電腦，您可以移除擴充功能。
+
+### <a name="to-remove-the-extension-from-the-visual-studio-marketplace"></a>若要從 Visual Studio Marketplace 移除擴充功能
+
+1. 開啟[Visual Studio Marketplace](https://marketplace.visualstudio.com/vs)網站。
+
+2. 按一下右上角**發行**擴充功能。  選擇您用來發行 TestPublish 「 發行者 」。  TestPublish 的清單隨即顯示。
+
+3. 將滑鼠停留在延伸模組項目，然後按一下**...**和**移除...**系統會要求您確認要移除該擴充功能。  按一下 [確定]。
+
+### <a name="to-remove-the-extension-from-your-computer"></a>若要從電腦移除擴充功能
+
+1. 在 Visual Studio 中，在**工具**功能表上，按一下 **擴充功能和更新...**.
+
+2. 選取 TestPublish，然後按一下**解除安裝**。 然後排定解除安裝擴充功能。
+
+3. 若要完成解除安裝，請關閉所有 Visual Studio 執行個體。

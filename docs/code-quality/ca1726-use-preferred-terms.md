@@ -1,73 +1,73 @@
 ---
-title: "CA1726：建議使用慣用詞彙 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UsePreferredTerms"
-  - "CA1726"
-helpviewer_keywords: 
-  - "UsePreferredTerms"
+title: "Ca1726： 建議使用慣用的詞彙 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- UsePreferredTerms
+- CA1726
+helpviewer_keywords: UsePreferredTerms
 ms.assetid: 642b2acd-3a33-4d1f-b0a7-67073ae73be2
-caps.latest.revision: 23
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 2ae02d0eb136d45bc2b8af7dde5f897765493050
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1726：建議使用慣用詞彙
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1726-use-preferred-terms"></a>CA1726：建議使用慣用詞彙
 |||  
 |-|-|  
-|型別名稱|UsePreferredTerms|  
+|TypeName|UsePreferredTerms|  
 |CheckId|CA1726|  
 |分類|Microsoft.Naming|  
-|中斷變更|中斷 \- 在組件 \(Assembly\) 上引發時<br /><br /> 非中斷 \- 在型別參數上引發時|  
+|中斷變更|中斷-時引發的組件<br /><br /> 非-中斷-時引發型別參數|  
   
-## 原因  
- 外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。  或者該名稱包含 Flag 或 Flags 一詞。  
+## <a name="cause"></a>原因  
+ 外部可見的識別項名稱包含有替代慣用詞彙存在的詞彙。 或者，該名稱包含詞彙的旗標或旗標。  
   
-## 規則描述  
- 這個規則會將識別項剖析為語彙基元 \(Token\)。  每個單一語彙基元和每個連續的雙重語彙基元組合，都會與規則內建詞彙以及任何自訂字典之 Deprecated 區段中的詞彙進行比較。  下表會顯示建置到規則中之詞彙及其慣用的替代詞彙。  
+## <a name="rule-description"></a>規則描述  
+ 此規則會識別項剖析為語彙基元。 每個單一的語彙基元和每個連續的雙重語彙基元組合進行比較內建在規則中的任何自訂字典的已過時 > 一節中的條款。 下表顯示規則以及其慣用的替代項目內建的詞彙。  
   
 |過時的詞彙|慣用的詞彙|  
-|-----------|-----------|  
-|Arent|AreNot|  
-|已取消|Canceled|  
-|Cant|Cannot|  
+|-------------------|--------------------|  
+|不是|部署|  
+|已取消|已取消|  
+|無法|無法|  
 |ComPlus|EnterpriseServices|  
 |Couldnt|CouldNot|  
 |Didnt|DidNot|  
-|Doesnt|DoesNot|  
-|Dont|DoNot|  
-|Flag 或 Flags|沒有取代詞彙。  不要使用。|  
-|Hadnt|HadNot|  
-|Hasn’t|HasNot|  
-|Havent|HaveNot|  
-|Indices|索引|  
-|Isnt|IsNot|  
-|LogIn|LogOn|  
-|LogOut|LogOff|  
+|Doesnt|微處理器|  
+|不要|沒有|  
+|旗標或旗標|沒有任何取代詞彙。 請勿使用。|  
+|以往|HadNot|  
+|尚未|HasNot|  
+|您尚未|HaveNot|  
+|索引|Indexes|  
+|不是|IsNot|  
+|登入|登入|  
+|登出|登出|  
 |Shouldnt|ShouldNot|  
-|SignOn|SignIn|  
-|SignOff|SignOut|  
+|登入|登入|  
+|登出|登出|  
 |Wasnt|WasNot|  
-|Werent|WereNot|  
-|Wont|WillNot|  
+|未|WereNot|  
+|時會|出口|  
 |Wouldnt|WouldNot|  
-|Writeable|Writable|  
+|可寫入|可寫入|  
   
-## 如何修正違規  
- 若要修正此規則的違規情形，請以慣用的替代詞彙取代該詞彙。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請以慣用的替代詞彙取代的詞彙。  
   
-## 隱藏警告的時機  
- 如果識別項的名稱是有意的，並且特別與原始詞彙而不是與慣用詞彙相關聯時，則隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 只有當的識別項名稱是刻意設計，特別是與相關原始詞彙，而不是慣用詞彙隱藏此規則的警告。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [命名警告](../code-quality/naming-warnings.md)

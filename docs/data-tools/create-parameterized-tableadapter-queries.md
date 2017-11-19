@@ -1,5 +1,5 @@
 ---
-title: Create parameterized TableAdapter queries | Microsoft Docs
+title: "建立參數型的 TableAdapter 查詢 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,8 +9,6 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - data [Visual Studio], TableAdapters
 - TableAdapters, parameterized queries
@@ -19,105 +17,90 @@ helpviewer_keywords:
 - TableAdapters, searching data
 - queries [Visual Studio], TableAdapters
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
-caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 18e715fd31ee0777349bd771360b4d0dc23e2e11
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 6b80f370f670f4dff4b65d7c0e7658f855d5e573
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="create-parameterized-tableadapter-queries"></a>Create parameterized TableAdapter queries
-A parameterized query returns data that meets the conditions of a WHERE clause within the query. For example, you can parameterize a customer list to display only customers in a certain city by adding `WHERE City = @City` to the end of the SQL statement that returns a list of customers.  
+# <a name="create-parameterized-tableadapter-queries"></a>建立參數型的 TableAdapter 查詢
+參數型查詢會傳回符合查詢中 WHERE 子句條件的資料。 例如，您可以將 `WHERE City = @City` 加入至傳回客戶清單的 SQL 陳述式結尾，以參數化客戶清單，使其只顯示特定城市的客戶。  
   
- You create parameterized TableAdapter queries in the **Dataset Designer**.You can also create them in a Windows application with the **Parameterize Data Source** command on the **Data** menu. The **Parameterize Data Source** command  creates controls on your form where you can input the parameter values and run the query.  
-  
-> [!NOTE]
->  When constructing a parameterized query, use the parameter notation that's specific to the database you're coding against. For example, Access and OleDb data sources use the question mark '?' to denote parameters, so the WHERE clause would look like this: `WHERE City = ?`.  
+ 建立參數型的 TableAdapter 查詢中**Dataset 設計工具**。您也可以建立它們在 Windows 應用程式中使用**參數化資料來源**命令**資料**功能表。 **參數化資料來源**命令會建立您的表單，您可以在其中輸入參數值並執行查詢上的控制項。  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help, depending on your active settings or the edition you're using. To change your settings, go to the **Tools** menu and select **Import and Export Settings**. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  當建構參數化的查詢時，使用參數標記法的特定至您的撰寫語言針對資料庫。 例如，Access 和 OleDb 資料來源使用問號 '?' 代表參數，所以 WHERE 子句應該類似：`WHERE City = ?`。  
   
-## <a name="create-a-parameterized-tableadapter-query"></a>Create a parameterized TableAdapter query  
+> [!NOTE]
+>  對話方塊與功能表命令，您會看到可能與根據您目前使用的設定或版本，您所使用的 [說明] 中描述的不同。 若要變更您的設定，請移至**工具**功能表，然後選取**匯入和匯出設定**。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-#### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>To create a parameterized query in the Dataset Designer  
+## <a name="create-a-parameterized-tableadapter-query"></a>建立參數型的 TableAdapter 查詢  
   
--   Create a new TableAdapter, adding a WHERE clause with the desired parameters to the SQL statement. For more information, see [Create and configure TableAdapters](../data-tools/create-and-configure-tableadapters.md).  
+#### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>在 DataSet 設計工具中建立參數型查詢  
   
-     -or-  
+-   建立新的 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。 如需詳細資訊，請參閱[建立及設定 Tableadapter](../data-tools/create-and-configure-tableadapters.md)。  
   
--   Add a query to an existing TableAdapter, adding a WHERE clause with the desired parameters to the SQL statement.
+     -或-  
   
-#### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>To create a parameterized query while designing a data-bound form  
+-   將查詢加入至現有 TableAdapter，並將具有所需參數的 WHERE 子句加入至 SQL 陳述式。
   
-1.  Select a control on your form that is already bound to a dataset. For more information, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+#### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>在設計資料繫結表單時建立參數型查詢  
   
-2.  On the **Data** menu, select **Add Query**.  
+1.  在表單上選取已繫結至資料集的控制項。 如需詳細資訊，請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
   
-3.  Complete the **Search Criteria Builder** dialog box, adding a WHERE clause with the desired parameters to the SQL statement.  
+2.  在**資料**功能表上，選取**加入查詢**。  
   
-### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>To add a query to an existing data-bound form  
+3.  完成**搜尋準則產生器**對話方塊中，將具有所需參數的 WHERE 子句加入至 SQL 陳述式。  
   
-1.  Open the form in the **Windows Forms Designer**.  
+### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>將查詢加入至現有的資料繫結表單  
   
-2.  On the **Data** menu, select **Add Query** or **Data Smart Tags**.  
+1.  開啟表單中的**Windows Form 設計工具**。  
+  
+2.  在**資料**功能表上，選取**加入查詢**或**資料智慧標籤**。  
   
     > [!NOTE]
-    >  If **Add Query** is not available on the **Data** menu, select a control on the form that displays the data source you want to add the parameterization to. For example, if the form displays data in a <xref:System.Windows.Forms.DataGridView> control, select it. If the form displays data in individual controls, select any data-bound control.  
+    >  如果**加入查詢**並不適用於**資料**功能表中，選取想要加入參數化的顯示的資料來源您表單上的控制項。 例如，若表單以 <xref:System.Windows.Forms.DataGridView> 控制項顯示資料，請選取此控制項。 若表單以個別控制項顯示資料，請選取任何資料繫結控制項。  
   
-3.  In the **Select data source table** area, select the table that you want to add parameterization to.  
+3.  在**選取資料來源資料表**區域中，選取您想要的資料表加入至參數化。  
   
-4.  Type a name in the **New query name** box if you are creating a new query.  
+4.  中輸入名稱**新的查詢名稱**方塊，如果您要建立新的查詢。  
   
-     -or-  
+     -或-  
   
-     Select a query in the **Existing query name** box.  
+     選取查詢中的**現有的查詢名稱**方塊。  
   
-5.  In the **Query Text** box, type a query that takes parameters.  
+5.  在**查詢文字**方塊中，輸入採用參數的查詢。  
   
-6.  Select **OK**.  
+6.  選取 [確定]。  
   
-     A control to input the parameter and a **Load** button are added to the form in a <xref:System.Windows.Forms.ToolStrip> control.  
+     輸入參數的控制項和**負載**按鈕加入到表單中<xref:System.Windows.Forms.ToolStrip>控制項。  
   
- TableAdapter parameters can be assigned null values when you want to query for records that have no current value. For example, consider the following query that has a `ShippedDate` parameter in its `WHERE` clause:  
+#### <a name="querying-for-null-values"></a>Null 值的查詢  
+當您想要查詢的記錄沒有目前的值時，TableAdapter 參數可以指派 null 值。 例如，請考慮下列查詢具有`ShippedDate`參數在其`WHERE`子句：  
   
- `SELECT CustomerID, OrderDate, ShippedDate`  
+ ```sql
+SELECT CustomerID, OrderDate, ShippedDate  
+FROM Orders  
+WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
+```  
   
- `FROM Orders`  
+ 如果這是 TableAdapter 上的查詢，您無法查詢未以下列程式碼已寄出的所有訂單：  
   
- `WHERE (ShippedDate = @ShippedDate) OR`  
+ [!code-csharp[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)]
+ [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
+
+ 若要啟用查詢接受 null 值：
+
+1.  在**Dataset 設計工具**，選取要接受 null 的參數值的 TableAdapter 查詢。  
   
- `(ShippedDate IS NULL)`  
+2.  在**屬性**視窗中，選取**參數**，然後按一下省略符號 (**...**) 按鈕來開啟**參數集合編輯器**。  
   
- If this were a query on a TableAdapter, you could query for all orders that have not been shipped with the following code:  
+3.  選取 允許 null 值的參數，並設定**AllowDbNull**屬性`true`。  
   
- [!code-cs[VbRaddataTableAdapters#8](../data-tools/codesnippet/CSharp/create-parameterized-tableadapter-queries_1.cs)] [!code-vb[VbRaddataTableAdapters#8](../data-tools/codesnippet/VisualBasic/create-parameterized-tableadapter-queries_1.vb)]  
-  
-#### <a name="to-enable-a-query-to-accept-null-values"></a>To enable a query to accept null values  
-  
-1.  In the **Dataset Designer**, select the TableAdapter query that needs to accept null parameter values.  
-  
-2.  In the **Properties** window, select **Parameters**.Then press the ellipsis (**...**) button to open the **Parameters Collection Editor**.  
-  
-3.  Select the parameter that allows null values and set the **AllowDbNull** property to `true`.  
-  
-## <a name="see-also"></a>See Also  
- [Fill datasets by using TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+## <a name="see-also"></a>另請參閱  
+ [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

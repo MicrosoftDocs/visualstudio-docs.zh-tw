@@ -1,47 +1,50 @@
 ---
-title: "use strict 指示詞 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "strict_JavaScriptKeyword"
-  - "use strict"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "strict 模式"
-  - "use strict 指示詞"
-  - "use strict"
+title: "use strict 指示詞 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords:
+- strict_JavaScriptKeyword
+- use strict
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- strict mode
+- use strict directive
+- use strict
 ms.assetid: b532e8c9-548c-4bbe-b2fc-5459ebd62e56
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0bd951255f5d5719c3aa216965605840ba12010d
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# use strict 指示詞
-限制使用 JavaScript 中的某些功能。  只在 Internet Explorer 10 和 [!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)] 應用程式中支援。  
+# <a name="use-strict-directive"></a>use strict 指示詞
+限制某些功能在 JavaScript 中的使用。 在 Internet Explorer 10 中支援和[!INCLUDE[win8_appname_long](../../javascript/includes/win8-appname-long-md.md)]僅限應用程式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```javascript  
+```JavaScript  
 use strict  
 ```  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 範例  
- 下列程式碼會產生語法錯誤，因為在 strict 模式下必須以 `var` 宣告所有變數。  
+## <a name="example"></a>範例  
+ 下列程式碼會造成語法錯誤，因為在 strict 模式中所有的變數必須宣告與`var`。  
   
-```javascript  
+```JavaScript  
 "use strict";  
 function testFunction(){  
    var testvar = 4;  
@@ -51,5 +54,5 @@ intvar = 5;
   
 ```  
   
-## 請參閱  
- [strict 模式](../../javascript/advanced/strict-mode-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [Strict Mode](../../javascript/advanced/strict-mode-javascript.md)

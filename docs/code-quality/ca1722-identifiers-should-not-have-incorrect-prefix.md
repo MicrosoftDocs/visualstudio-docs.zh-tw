@@ -1,51 +1,52 @@
 ---
-title: "CA1722：識別項不應使用不正確的前置字元 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
-  - "CA1722"
-helpviewer_keywords: 
-  - "CA1722"
-  - "IdentifiersShouldNotHaveIncorrectPrefix"
+title: "： Ca1722 識別項應該不正確的前置字元 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- IdentifiersShouldNotHaveIncorrectPrefix
+- CA1722
+helpviewer_keywords:
+- CA1722
+- IdentifiersShouldNotHaveIncorrectPrefix
 ms.assetid: c3313c51-d004-4f9a-a0d1-6c4c4a1fb1e6
-caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 84cf14fc28a3de1d6ff5bff9e40216953d5d1461
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1722：識別項不應使用不正確的前置字元
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722：識別項不應使用不正確的前置字元
 |||  
 |-|-|  
-|型別名稱|IdentifiersShouldNotHaveIncorrectPrefix|  
+|TypeName|IdentifiersShouldNotHaveIncorrectPrefix|  
 |CheckId|CA1722|  
 |分類|Microsoft.Naming|  
 |中斷變更|中斷|  
   
-## 原因  
- 識別項具有不正確的前置字元。  
+## <a name="cause"></a>原因  
+ 識別項具有不正確的前置詞。  
   
-## 規則描述  
+## <a name="rule-description"></a>規則描述  
  根據慣例，只有特定程式設計項目的名稱會以特定的前置字元做為開頭。  
   
- 型別名稱不具有特定的前置字元，因此不應該以 'C' 做為前置字元。  此規則會報告型別名稱的違規情況，例如 'CMyClass'，但不會報告像是 'Cache' 的型別名稱違規。  
+ 類型名稱不前面應該要有 'C'，就不需要特定的前置詞。 此規則會報告違規的型別名稱，例如 'CMyClass' 並不會報告違規的型別名稱，例如 '快取'。  
   
- 命名慣例會為針對 Common Language Runtime 的程式庫提供通用的外觀。  如此可縮短新軟體程式庫的學習過程，並讓客戶深信程式庫是由學有專長的人員以不斷開發的 Managed 程式碼開發而成。  
+ 命名慣例提供共同的外觀文件庫目標通用語言執行平台。 這會減少需要新的軟體程式庫，而增加文件庫由具備專業知識在開發 managed 程式碼開發的客戶信心的學習曲線。  
   
-## 如何修正違規  
- 從識別項移除前置字元。  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 識別項中移除前置詞。  
   
-## 隱藏警告的時機  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  請勿隱藏此規則的警告。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1715：識別項名稱應該使用正確的前置字元](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

@@ -1,62 +1,45 @@
 ---
-title: 'CA2145: Transparent methods should not be decorated with the SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
+title: "CA2145： 透明方法不應該使用 SuppressUnmanagedCodeSecurityAttribute 裝飾 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CA2145
+f1_keywords: CA2145
 ms.assetid: 81970700-b438-4b3b-9239-16887e16f7b7
-caps.latest.revision: 11
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 119d4a5f0d27953f66fb64394bc35fa606b9bc7d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 23cf7599e4d699a6be42bae55381ffb31ce1556e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145: Transparent methods should not be decorated with the SuppressUnmanagedCodeSecurityAttribute
+# <a name="ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute"></a>CA2145：透明方法不可以使用 SuppressUnmanagedCodeSecurityAttribute 來裝飾
 |||  
 |-|-|  
 |TypeName|TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity|  
 |CheckId|CA2145|  
-|Category|Microsoft.Security|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Security|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A transparent method, a method that is marked with the <xref:System.Security.SecuritySafeCriticalAttribute> method, or a type that contains a method is marked with the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribute.  
+## <a name="cause"></a>原因  
+ 透明方法，以標記的方法<xref:System.Security.SecuritySafeCriticalAttribute>方法或包含一種方法的類型會標示<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>屬性。  
   
-## <a name="rule-description"></a>Rule Description  
- Methods decorated with the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribute have an implicit LinkDemand placed upon any method that calls it. This LinkDemand requires that the calling code be security critical. Marking the method that uses SuppressUnmanagedCodeSecurity with the <xref:System.Security.SecurityCriticalAttribute> attribute makes this requirement more obvious for callers of the method.  
+## <a name="rule-description"></a>規則描述  
+ 方法使用裝飾<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute>屬性有任何方法呼叫它時放置隱含的 LinkDemand。 這個 LinkDemand 會要求呼叫程式碼具備安全性關鍵。 標記使用 SuppressUnmanagedCodeSecurity 的方法<xref:System.Security.SecurityCriticalAttribute>屬性使這個需求更為明顯呼叫端的方法。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, mark the method or type with the <xref:System.Security.SecurityCriticalAttribute> attribute.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，將方法標示，或輸入與<xref:System.Security.SecurityCriticalAttribute>屬性。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。  
   
-### <a name="code"></a>Code  
+### <a name="code"></a>程式碼  
  [!code-csharp[FxCop.Security.CA2145.TransparentMethodsShouldNotUseSuppressUnmanagedCodeSecurity#1](../code-quality/codesnippet/CSharp/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute_1.cs)]  
   
-### <a name="comments"></a>Comments
+### <a name="comments"></a>註解

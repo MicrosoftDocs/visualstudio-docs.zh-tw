@@ -1,11 +1,10 @@
 ---
-title: 'CA1813: Avoid unsealed attributes | Microsoft Docs'
+title: "CA1813： 避免非密封的屬性 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,60 +14,46 @@ helpviewer_keywords:
 - CA1813
 - AvoidUnsealedAttributes
 ms.assetid: f5e31b4c-9f8b-49e1-a2a8-bb5f1140729a
-caps.latest.revision: 13
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 259be72c012a009d198ba96c17b56b3dd29e4a14
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5aec235494b29a21eb5a3c2de39a6933e04b0ebe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Avoid unsealed attributes
+# <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用非密封屬性
 |||  
 |-|-|  
 |TypeName|AvoidUnsealedAttributes|  
 |CheckId|CA1813|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Performance|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A public type inherits from <xref:System.Attribute?displayProperty=fullName>, is not abstract, and is not sealed (`NotInheritable` in Visual Basic).  
+## <a name="cause"></a>原因  
+ 公用類型會繼承自<xref:System.Attribute?displayProperty=fullName>、 不是抽象的而且不密封 (`NotInheritable`在 Visual Basic 中)。  
   
-## <a name="rule-description"></a>Rule Description  
- The [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] class library provides methods for retrieving custom attributes. By default, these methods search the attribute inheritance hierarchy; for example <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> searches for the specified attribute type, or any attribute type that extends the specified attribute type. Sealing the attribute eliminates the search through the inheritance hierarchy, and can improve performance.  
+## <a name="rule-description"></a>規則描述  
+ [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] Class Library 會提供擷取自訂屬性的方法。 根據預設，這些方法會搜尋屬性繼承階層架構。例如<xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName>搜尋指定的屬性類型或任何擴充指定的屬性類型的屬性類型。 密封屬性會減少對整個繼承階層架構中，搜尋，並可改善效能。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, seal the attribute type or make it abstract.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，密封屬性類型，或將它設為抽象。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule. You should do this only if you are defining an attribute hierarchy and cannot seal the attribute or make it abstract.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告。 如果您正在定義的屬性階層和無法密封屬性或不將它設為抽象，您應該這麼做。  
   
-## <a name="example"></a>Example  
- The following example shows a custom attribute that satisfies this rule.  
+## <a name="example"></a>範例  
+ 下列範例會顯示符合此規則的自訂屬性。  
   
- [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)] [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]  
+ [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
+ [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1019: Define accessors for attribute arguments](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1019：必須定義屬性引數的存取子](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)  
   
- [CA1018: Mark attributes with AttributeUsageAttribute](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
+ [CA1018：必須以 AttributeUsageAttribute 標記屬性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
   
-## <a name="see-also"></a>See Also  
- [Attributes](/dotnet/standard/design-guidelines/attributes)
+## <a name="see-also"></a>另請參閱  
+ [屬性](/dotnet/standard/design-guidelines/attributes)

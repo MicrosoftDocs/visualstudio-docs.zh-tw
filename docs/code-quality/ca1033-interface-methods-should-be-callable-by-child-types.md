@@ -1,11 +1,10 @@
 ---
-title: 'CA1033: Interface methods should be callable by child types | Microsoft Docs'
+title: "CA1033： 介面方法應該要可以由子類型呼叫 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,58 +14,42 @@ helpviewer_keywords:
 - CA1033
 - InterfaceMethodsShouldBeCallableByChildTypes
 ms.assetid: 9f171497-a5e3-4769-a77b-7aed755b2662
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ee5cfe4241fa80e435a3ceb66d7a90cc45a71d1b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4694e1dbcbcf541b502edbe5f2520229ee33f4a6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Interface methods should be callable by child types
+# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033：介面方法應該要可以由子類型呼叫
 |||  
 |-|-|  
 |TypeName|InterfaceMethodsShouldBeCallableByChildTypes|  
 |CheckId|CA1033|  
-|Category|Microsoft.Design|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- An unsealed externally visible type provides an explicit method implementation of a public interface and does not provide an alternative externally visible method that has the same name.  
+## <a name="cause"></a>原因  
+ 非密封外部可見的類型會提供公用介面的明確方法實作，但未提供同名的替代外部可見方法。  
   
-## <a name="rule-description"></a>Rule Description  
- Consider a base type that explicitly implements a public interface method. A type that derives from the base type can access the inherited interface method only through a reference to the current instance (`this` in C#) that is cast to the interface. If the derived type re-implements (explicitly) the inherited interface method, the base implementation can no longer be accessed. The call through the current instance reference will invoke the derived implementation; this causes recursion and an eventual stack overflow.  
+## <a name="rule-description"></a>規則描述  
+ 請考慮明確實作的公用介面方法的基底類型。 衍生自基底類型的型別可以存取繼承的介面方法，只能透過目前的執行個體的參考 (`this` C# 中)，會轉換成介面。 如果重新衍生的類型 （明確） 實作繼承的介面方法，可以再存取基底實作。 透過目前的執行個體參考的呼叫將會叫用的衍生的實作。這會導致遞迴和最終的堆疊溢位。  
   
- This rule does not report a violation for an explicit implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> when an externally visible `Close()` or `System.IDisposable.Dispose(Boolean)` method is provided.  
+ 此規則不會報告的明確實作違反<xref:System.IDisposable.Dispose%2A?displayProperty=fullName>外部可見時`Close()`或`System.IDisposable.Dispose(Boolean)`方法提供。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, implement a new method that exposes the same functionality and is visible to derived types or change to a nonexplicit implementation. If a breaking change is acceptable, an alternative is to make the type sealed.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，實作新的方法來公開相同的功能，而且衍生的類型可以看到或 nonexplicit 實作變更。 如果一項重大變更是接受的替代方法是讓密封類型。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if an externally visible method is provided that has the same functionality but a different name than the explicitly implemented method.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告，如果外部可見的方法具有相同的功能，但是明確實作的方法不同的名稱。  
   
-## <a name="example"></a>Example  
- The following example shows a type, `ViolatingBase`, that violates the rule and a type, `FixedBase`, that shows a fix for the violation.  
+## <a name="example"></a>範例  
+ 下列範例顯示型別， `ViolatingBase`，違反此規則，並為型別， `FixedBase`，它會顯示發生違規的修正。  
   
  [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]  
   
-## <a name="see-also"></a>See Also  
- [Interfaces](/dotnet/csharp/programming-guide/interfaces/index)
+## <a name="see-also"></a>另請參閱  
+ [介面](/dotnet/csharp/programming-guide/interfaces/index)

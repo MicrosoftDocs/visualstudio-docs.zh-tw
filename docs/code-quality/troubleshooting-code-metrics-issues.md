@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-code-analysis
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 9f3f41548412d84cd1219aae45b7c87ea5383de9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.openlocfilehash: 4ef318d7c71a5770ea7a78ff078340b4f2dff960
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
 收集程式碼度量時，可能遇到下列問題：  

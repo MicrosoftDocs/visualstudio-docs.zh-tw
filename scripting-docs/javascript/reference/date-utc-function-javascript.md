@@ -1,71 +1,73 @@
 ---
-title: "Date.UTC 函式 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "UTC"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "UTC 函式 [JavaScript]"
-  - "UTC 日期，傳回"
-  - "Date.UTC 函式 [JavaScript]"
+title: "Date.UTC 函式 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: UTC
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- UTC function [JavaScript]
+- UTC dates, returning
+- Date.UTC function [JavaScript]
 ms.assetid: c0d67ce1-a47e-4dfd-bbf4-21619c406a0f
-caps.latest.revision: 18
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a6a7c5622b74699e3d718ceb65e96638bdb6c3c5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Date.UTC 函式 (JavaScript)
-傳回全球定位時間 \(UTC\) \(或 GMT\) 1970 年 1 月 1 日午夜開始到指定日期之間的毫秒數。  
+# <a name="dateutc-function-javascript"></a>Date.UTC 函式 (JavaScript)
+傳回從 1970 年 1 月 1 日午夜之間的毫秒數國際標準時間 (UTC) （或 GMT） 和指定的日期。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Date.UTC(year, month, day[, hours[, minutes[, seconds[,ms]]]])   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `year`  
- 必要項。  為了世紀交替時的日期能夠正確，必須指定完整的年份。  如果 `year` 介於 0 到 99 之間，則 `year` 是假設為 1900 \+ `year`。  
+ 必要項。 需要跨世紀日期精確度指定完整的年份。 如果`year`介於 0 到 99 之間使用，然後`year`假設為 1900年 + `year`。  
   
  `month`  
- 必要項。  代表月份，以 0 到 11 之間的整數表示一月到十二月。  
+ 必要項。 介於 0 到 11 （一月至十二月） 的整數，表示月份。  
   
  `day`  
- 必要項。  代表日期，以介於 1 到 31 之間的整數表示。  
+ 必要項。 介於 1 到 31 之間的整數日期。  
   
  `hours`  
- 選擇項。  如果提供 `minutes`，就必須提供此引數。  以 0 到 23 之間的整數 \(表示午夜到下午 11 點\) 來指定小時。  
+ 選擇項。 如果必須提供`minutes`提供。 從 0 到 23 （午夜到下午 11 點） 的整數，指定在一小時。  
   
  `minutes`  
- 選擇項。  如果提供 `seconds`，就必須提供此引數。  以 0 到 59 之間的整數來指定分鐘。  
+ 選擇項。 如果必須提供`seconds`提供。 指定的整數從 0 到 59 分鐘的時間。  
   
  `seconds`  
- 選擇項。  如果提供 `milliseconds`，就必須提供此引數。  以 0 到 59 之間的整數來指定秒數。  
+ 選擇項。 如果必須提供`milliseconds`提供。 指定的整數從 0 到 59 的秒數。  
   
  `ms`  
- 選擇項。  以 0 到 999 之間的整數來指定毫秒數。  
+ 選擇項。 從 0 到 999 的整數來指定毫秒數。  
   
-## 備註  
- `Date.UTC` 函式會傳回 UTC 1970 年 1 月 1 日午夜開始到提供之日期之間的毫秒數。  此傳回值可用於 `setTime` 方法及 `Date` 物件建構函式中。  如果引數值大於其範圍或者是負數的話，其他的儲存值都會跟著修改。  例如，您若指定 150 秒，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 就會重新將該數字定義為 2 分 30 秒。  
+## <a name="remarks"></a>備註  
+ `Date.UTC`函式會傳回之間午夜、 UTC 1970 年 1 月 1 日和提供之日期的毫秒數。 這個傳回值可以用於`setTime`方法並在`Date`物件建構函式。 如果引數的值大於它的範圍，或為負數，就會據以修改其他的儲存的值。 例如，如果您指定 150 秒，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]重新該數字將定義為兩分鐘到 30 秒。  
   
- `Date.UTC` 函式與接受日期的 `Date` 物件建構函式之間的差別在於：`Date.UTC` 函式採用的是 UTC，而 `Date` 物件建構函式則採用本地時間。  
+ 之間的差異`Date.UTC`函式和`Date`物件建構函式可接受的日期是`Date.UTC`函式會假設 UTC，而`Date`物件建構函式會假設本機時間。  
   
-## 範例  
- 以下範例說明 `Date.UTC` 函式的用法。  
+## <a name="example"></a>範例  
+ 下面範例說明如何使用 `Date.UTC` 函式：  
   
-```javascript  
+```JavaScript  
 // Determine the milliseconds per day.  
  var MinMilli = 1000 * 60;  
 var HrMilli = MinMilli * 60;  
@@ -92,8 +94,8 @@ document.write(days);
 // Output: 10848  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv1](../../javascript/misc/includes/jsv1-md.md)]  
   
-## 請參閱  
- [setTime 方法 \(日期\)](../../javascript/reference/settime-method-date-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [setTime 方法 (Date)](../../javascript/reference/settime-method-date-javascript.md)

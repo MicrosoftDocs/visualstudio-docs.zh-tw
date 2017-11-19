@@ -1,52 +1,53 @@
 ---
-title: "匿名方法和程式碼分析 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "匿名方法, 程式碼分析"
-  - "程式碼分析, 匿名方法"
-  - "方法, 匿名"
+title: "匿名方法和程式碼分析 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- methods, anonymous
+- code analysis, anonymous methods
+- anonymous methods, code analysis
 ms.assetid: bf0a1a9b-b954-4d46-9c0b-cee65330ad00
-caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 匿名方法和程式碼分析
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-「*匿名方法*」\(Anonymous Method\) 就是沒有名稱的方法。  匿名方法是將程式碼區塊當做委派 \(Delegate\) 參數傳遞時最常使用的方法。  
+# <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
+*匿名方法*是沒有名稱的方法。 匿名方法最常用來做為委派的參數傳遞的程式碼區塊。  
   
- 本主題說明程式碼分析如何處理與匿名方法相關聯的警告和度量資訊。  
+ 本主題會說明程式碼分析會處理警告和匿名方法相關聯的度量資訊。  
   
-## 成員內宣告的匿名方法  
- 宣告在成員中的匿名方法的警告和度量資訊，例如方法或存取子，是與宣告方法的成員相關聯。  但是與呼叫該方法的成員無關。  
+## <a name="anonymous-methods-declared-in-a-member"></a>宣告為成員內的匿名方法  
+ 警告和匿名方法中的成員，例如方法或存取子，宣告的度量資訊與相關聯的宣告方法的成員。 它們不會在呼叫方法的成員與相關聯。  
   
- 例如，在下列類別中，**anonymousMethod** 宣告中出現的任何警告，都應該針對 **Method1** 引發，而不是 **Method2**。  
+ 例如，在下列類別宣告中所找到的任何警告**anonymousMethod**應該針對引發**Method1**而非**Method2**。  
   
-```vb#  
+```vb  
   
-        Delegate Function ADelegate(ByVal value As Integer) As Boolean  
+      Delegate Function ADelegate(ByVal value As Integer) As Boolean  
 Class AClass  
   
     Sub Method1()  
-        Dim anonymousMethod As ADelegate = Function(ByVal value As  Integer) value > 5  
+        Dim anonymousMethod As ADelegate = Function(ByVal value As Integer) value > 5  
         Method2(anonymousMethod)  
-    End Sub Sub Method2(ByVal anonymousMethod As ADelegate)  
+    End SubSub Method2(ByVal anonymousMethod As ADelegate)  
         anonymousMethod(10)  
-    End Sub End Class  
+    End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     void Method1()  
@@ -65,26 +66,26 @@ class Class
 }  
 ```  
   
-## 內嵌匿名方法  
- 匿名方法的警告和度量資訊如果宣告為欄位的內嵌指派，則是與建構函式相關聯的。  如果欄位宣告為 `static` \([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中的 `Shared`\)，那麼警告和度量資訊則與類別建構函式相關聯。否則他們會與執行個體建構函式相關聯。  
+## <a name="inline-anonymous-methods"></a>內嵌匿名方法  
+ 警告和匿名方法宣告為內嵌指派給欄位的度量資訊與相關聯的建構函式。 如果欄位宣告為`static`(`Shared`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])、 警告和度量資訊與相關聯的類別建構函式，否則它們的執行個體建構函式與相關聯。  
   
- 例如，在下列類別中，**anonymousMethod1** 宣告中出現的任何警告，都會針對 **Class** 隱含產生的預設建構函式來引發。  而 **anonymousMethod2** 內出現的警告將會針對隱含產生的預設建構函式來套用。  
+ 例如，在下列類別宣告中所找到的任何警告**anonymousMethod1** ，系統將產生的隱含產生的預設建構函式針對**類別**。 而這些位於**anonymousMethod2**隱含產生的類別建構函式，將會套用。  
   
-```vb#  
+```vb  
   
-    Delegate Function ADelegate(ByVal value As Integer) As Boolean Class AClass  
-Dim anonymousMethod1 As ADelegate = Function(ByVal value As     Integer) value > 5  
-Shared anonymousMethod2 As ADelegate = Function(ByVal value As      Integer) value > 5  
+  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass  
+Dim anonymousMethod1 As ADelegate = Function(ByVal value As    Integer) value > 5  
+Shared anonymousMethod2 As ADelegate = Function(ByVal value As     Integer) value > 5  
   
 Sub Method1()  
     anonymousMethod1(10)  
     anonymousMethod2(10)  
-End Sub End Class  
+End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     Delegate anonymousMethod1 = delegate()   
@@ -105,27 +106,27 @@ class Class
 }  
 ```  
   
- 類別可以包含內嵌匿名方法，用於指派值給具有多重建構函式的欄位。  在這種情況下，警告和度量資訊是與所有建構函式相關聯，除非該建構函式鏈結到相同類別中的另一個建構函式。  
+ 類別可以包含內嵌匿名方法，將值指派給具有多個建構函式的欄位。 在此情況下，警告和度量資訊與相關聯的所有建構函式除非該建構函式鏈結到相同類別中的其他建構函式。  
   
- 例如，在下列類別中，**anonymousMethod** 宣告中出現的任何警告，都應該針對 **Class\(int\)** 和 **Class\(string\)** 引發，而不是 **Class\(\)**。  
+ 例如，在下列類別宣告中所找到的任何警告**anonymousMethod**應該針對引發**Class(int)**和**Class(string)**但不是針對**Class()**。  
   
-```vb#  
+```vb  
   
-    Delegate Function ADelegate(ByVal value As Integer) As Boolean Class AClass  
+  Delegate Function ADelegate(ByVal value As Integer) As BooleanClass AClass  
   
 Dim anonymousMethod As ADelegate = Function(ByVal value As Integer)   
 value > 5  
   
-Sub New()  
+SubNew()  
     New(CStr(Nothing))  
-End Sub Sub New(ByVal a As Integer)  
-End Sub Sub New(ByVal a As String)  
-End Sub End Class  
+End SubSub New(ByVal a As Integer)  
+End SubSub New(ByVal a As String)  
+End SubEnd Class  
 ```  
   
-```c#  
+```csharp  
   
-        delegate void Delegate();  
+      delegate void Delegate();  
 class Class  
 {  
     Delegate anonymousMethod = delegate()   
@@ -147,9 +148,9 @@ class Class
 }  
 ```  
   
- 雖然這似乎不如預期，但發生這樣的原因在於編譯器會為每個沒有鏈結到另一個建構函式的建構函式，輸出唯一的方法。  因為這項行為，所以 **anonymousMethod** 內發生的任何違規都必須個別隱藏。  這也代表如果引入新的建構函式，先前針對 **Class\(int\)** 和 **Class\(string\)** 隱藏的警告，也都必須針對新建構函式隱藏。  
+ 雖然這看起來可能會非預期，這是因為編譯器會輸出未鏈結至另一個建構函式每個建構函式的唯一方法。 基於此行為，任何違規，就會發生在**anonymousMethod**必須分別隱藏。 這也表示，如果新的建構函式會導入了對已先前隱藏的警告**Class(int)**和**Class(string)**也會歸併針對新的建構函式。  
   
- 您可以採用兩種方法中的一個解決這個問題。  您可以在所有建構函式所鏈結的通用建構函式中宣告 **anonymousMethod**。  或是可以在所有建構函式呼叫的初始設定方法中宣告。  
+ 您可以暫時解決此問題，在兩種方式之一。 您無法宣告**anonymousMethod**一般建構函式中的所有建構函式鏈結。 或者，您無法在初始設定方法所呼叫的所有建構函式宣告它。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

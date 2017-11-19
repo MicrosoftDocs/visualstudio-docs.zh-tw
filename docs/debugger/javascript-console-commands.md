@@ -1,38 +1,38 @@
 ---
-title: "JavaScript Console commands | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "JavaScript 主控台命令 [Windows 市集應用程式]"
-  - "JavaScript 偵錯，主控台 [Windows 市集應用程式]"
-  - "偵錯 JavaScript，主控台 [Windows 市集應用程式]"
+title: "在 Visual Studio 中的 JavaScript 主控台命令 |Microsoft 文件"
+ms.custom: 
+ms.date: 07/17/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- JavaScript Console commands [UWP apps]
+- JavaScript debugging, console [UWP apps]
+- debugging JavaScript, console [UWP apps]
 ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
-caps.latest.revision: 47
-caps.handback.revision: 47
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "47"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d9808c664e5e3d06558faf8f9b44a6a2bb6e9b83
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
-# JavaScript Console commands
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-![適用於 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+# <a name="javascript-console-commands-in-visual-studio"></a>Visual Studio 中的 JavaScript 主控台命令
+![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需範例，示範如何使用該視窗，請參閱 [快速入門︰ 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 Windows 市集應用程式、Windows Phone 市集應用程式和使用 Visual Studio Tools for Apache Cordova 建立的應用程式。 如需 Cordova 應用程式支援的主控台命令相關資訊，請參閱 [Debug Your App](../Topic/Debug%20Your%20App%20Built%20with%20Visual%20Studio%20Tools%20for%20Apache%20Cordova.md)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
+ 您可以在 Visual Studio [JavaScript 主控台] 視窗中，使用命令傳送訊息及執行其他工作。 如需示範如何使用該視窗的範例，請參閱[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)。 本主題資訊適用於 UWP 應用程式和使用 Visual Studio Tools for Apache Cordova 所建立的應用程式。 如需 Cordova 應用程式支援的主控台命令的資訊，請參閱[偵錯應用程式](https://taco.visualstudio.com/en-us/docs/debug-using-visual-studio/)。 如需在 Internet Explorer F12 工具中使用主控台的詳細資訊，請參閱 [本主題](http://msdn.microsoft.com/library/ie/dn255006.aspx)。  
   
- 如果 [JavaScript 主控台] 視窗已關閉，您可以在 Visual Studio 中偵錯時，透過選擇 [偵錯]  >  > 。  
+ 如果 [JavaScript 主控台] 視窗已關閉，您可以開啟它偵錯時 Visual Studio 中選擇**偵錯** > **Windows** > **JavaScript主控台**。  
   
 > [!NOTE]
 >  如果在偵錯工作階段期間無法使用該視窗，請確定在專案的 [偵錯] 屬性中的偵錯工具類型已設為 [指令碼]  。  
@@ -59,10 +59,10 @@ manager: "ghogen"
 |`groupEnd()`|結束目前的群組。<br /><br /> 需求：<br /><br /> Visual Studio 2013|請參閱 `group` 命令的範例。|  
 |`info(message)`|將 `message` 傳送至主控台視窗。 訊息開頭處會有資訊符號。|`console.info("info message");`<br /><br /> 如需更多範例，請參閱本主題稍後的 [Formatting console.log output](#ConsoleLog) 。|  
 |`log(message)`|將 `message` 傳送至主控台視窗。<br /><br /> 如果您傳遞物件，這個命令會將該物件傳送至主控台視窗，並在視覺化檢視中顯示物件。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`console.log("logging message");`|  
-|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 不支援使用 JavaScript 的市集應用程式。|不支援。|  
-|`profile(reportName)`|使用於 Web 應用程式。 不支援使用 JavaScript 的市集應用程式。|不支援。|  
-|`profileEnd()`|使用於 Web 應用程式。 不支援使用 JavaScript 的市集應用程式。|不支援。|  
-|`select(element)`|選取 `element` DOM 總管 [中指定的 HTML](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
+|`msIsIndependentlyComposed(element)`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
+|`profile(reportName)`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
+|`profileEnd()`|使用於 Web 應用程式。 不支援在使用 JavaScript UWP 應用程式。|不支援。|  
+|`select(element)`|選取指定的 HTML`element`中[DOM 總管](../debugger/quickstart-debug-html-and-css.md)。|console.select(element);|  
 |`time (name)`|啟動由選擇性 `name` 參數識別的計時器。 與 `console.timeEnd`搭配使用時，計算 `time` 與 `timeEnd`之間經過的時間，並使用 `name` 字串做為前置詞，將結果 (以毫秒為單位) 傳送至主控台。 用來啟用應用程式程式碼的檢測以測量效能。|`console.time("app start");  app.start();  console.timeEnd("app start");`|  
 |`timeEnd(name)`|停止由選擇性 `name` 參數識別的計時器。 請參閱 `time` 主控台命令。|`console.time("app start"); app.start(); console.timeEnd("app start");`|  
 |`trace()`|將堆疊追蹤傳送至主控台視窗。 追蹤包括完整的呼叫堆疊和資訊，例如檔案名稱、行號和欄號。|`console.trace();`|  
@@ -77,7 +77,7 @@ manager: "ghogen"
 |`$(id)`|依 ID 傳回項目。 這是 `document.getElementById(id)`的捷徑命令，其中 `id` 是代表項目 ID 的字串。|`$("contenthost")`|  
 |`$$(selector)`|傳回項目陣列，其符合使用 CSS 選取器語法的指定選取器。 這是 `document.querySelectorAll()`的捷徑命令。|`$$(".itemlist")`|  
 |`cd()`<br /><br /> `cd(window)`|可讓您將運算式評估的內容，從頁面的預設最上層視窗變更為指定框架的視窗。 呼叫不帶參數的 `cd()` ，會將內容傳回至最上層視窗。|`cd();`<br /><br /> `cd(myframe);`|  
-|`select(element)`|選取 [DOM 總管] [](../debugger/quickstart-debug-html-and-css.md "Quickstart: Debug HTML and CSS")中指定的項目。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
+|`select(element)`|選取指定的項目中[DOM 總管](../debugger/quickstart-debug-html-and-css.md)。|`select(document.getElementById("element"));`<br /><br /> `select($("element"));`<br /><br /> `select($1);`|  
 |`dir(object)`|傳回指定物件的視覺化檢視。 您可以使用視覺化檢視在主控台視窗中檢查屬性。|`dir(obj);`|  
   
 ## <a name="checking-whether-a-console-command-exists"></a>檢查主控台命令是否存在  
@@ -91,9 +91,9 @@ if (console && console.log) {
 ```  
   
 ## <a name="examining-objects-in-the-javascript-console-window"></a>檢查 JavaScript 主控台視窗中的物件  
- 當您使用 JavaScript 主控台視窗時，可以與範圍內的任何物件互動。 若要在主控台視窗中檢查超出範圍的物件，請從您的程式碼使用 `console.log` 、 `console.dir`或其他命令。 或者，當物件在範圍內時，可以在程式碼中設定中斷點 ([中斷點] > **Insert **)，即可從主控台視窗與物件互動。  
+ 當您使用 JavaScript 主控台視窗時，可以與範圍內的任何物件互動。 若要在主控台視窗中檢查超出範圍的物件，請從您的程式碼使用 `console.log` 、 `console.dir`或其他命令。 或者，當物件在範圍內時，可以在程式碼中設定中斷點 ([中斷點] > **Insert**)，即可從主控台視窗與物件互動。  
   
-##  <a name="a-nameconsoleloga-formatting-consolelog-output"></a><a name="ConsoleLog"></a> 格式化 console.log 輸出  
+##  <a name="ConsoleLog"></a>格式化 console.log 輸出  
  如果您將多個引數傳遞至 `console.log`，主控台會將這些引數視為陣列處理並串連輸出。  
   
 ```javascript  
@@ -138,5 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [快速入門︰ 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [快速入門︰ 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)
+ [快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

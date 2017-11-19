@@ -1,11 +1,10 @@
 ---
-title: 'CA1404: Call GetLastError immediately after P-Invoke | Microsoft Docs'
+title: "Ca1404： 必須在 P Invoke 之後立即呼叫 GetLastError |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,47 +14,31 @@ helpviewer_keywords:
 - CallGetLastErrorImmediatelyAfterPInvoke
 - CA1404
 ms.assetid: 52ae9eff-50f9-4b2f-8039-ca7e49fba88e
-caps.latest.revision: 18
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fce2ed84760d5cc9daa3e84118251ea5ba934e6a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 63cd84136861b80617285a5f7f03ff4767efddca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Call GetLastError immediately after P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404：必須在 P/Invoke 之後立即呼叫 GetLastError
 |||  
 |-|-|  
 |TypeName|CallGetLastErrorImmediatelyAfterPInvoke|  
 |CheckId|CA1404|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Interoperability|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A call is made to the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> method or the equivalent Win32 `GetLastError` function, and the call that comes immediately before is not to a platform invoke method.  
+## <a name="cause"></a>原因  
+ 進行呼叫以<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName>方法或對等的 Win32`GetLastError`函式，而且來自前立即呼叫並不在平台叫用方法。  
   
-## <a name="rule-description"></a>Rule Description  
- A platform invoke method accesses unmanaged code and is defined by using the `Declare` keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] or the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> attribute. Generally, upon failure, unmanaged functions call the Win32 `SetLastError` function to set an error code that is associated with the failure. The caller of the failed function calls the Win32 `GetLastError` function to retrieve the error code and determine the cause of the failure. The error code is maintained on a per-thread basis and is overwritten by the next call to `SetLastError`. After a call to a failed platform invoke method, managed code can retrieve the error code by calling the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method. Because the error code can be overwritten by internal calls from other managed class library methods, the `GetLastError` or <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method should be called immediately after the platform invoke method call.  
+## <a name="rule-description"></a>規則描述  
+ 平台叫用方法存取 unmanaged 程式碼，並使用定義`Declare`關鍵字[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]或<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>屬性。 一般而言，在發生錯誤時，unmanaged 函式呼叫 Win32`SetLastError`函式可設定為與下列失敗相關的錯誤代碼。 失敗函式的呼叫端會呼叫 Win32`GetLastError`函式來擷取錯誤程式碼，並判斷失敗的原因。 錯誤碼會維護每個執行緒為基礎，並且會覆寫的下一個呼叫`SetLastError`。 Managed 程式碼的呼叫失敗的平台叫用方法之後，可以藉由呼叫擷取錯誤碼<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法。 因為錯誤碼將會覆寫其他受管理的類別程式庫方法，從內部呼叫`GetLastError`或<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法應該平台叫用方法呼叫之後立即呼叫。  
   
- The rule ignores calls to the following managed members when they occur between the call to the platform invoke method and the call to <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. These members do not change the error code and are useful for determining the success of some platform invoke method calls.  
+ 此規則會忽略下列呼叫 managed 的成員平台的呼叫之間發生時叫用方法，並以呼叫<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>。 這些成員不會變更錯誤程式碼，而且有助於決定是否成功的某些平台叫用方法呼叫。  
   
 -   <xref:System.IntPtr.Zero?displayProperty=fullName>  
   
@@ -65,24 +48,25 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, move the call to <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> so that it immediately follows the call to the platform invoke method.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，呼叫移至<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>，讓它緊接在後面的呼叫平台叫用方法。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule if the code between the platform invoke method call and the <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> method call cannot explicitly or implicitly cause the error code to change.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 安全地隱藏此規則的警告，如果平台之間的程式碼叫用方法呼叫和<xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>方法呼叫不明確或隱含的方式會導致的錯誤程式碼變更。  
   
-## <a name="example"></a>Example  
- The following example shows a method that violates the rule and a method that satisfies the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的方法和滿足規則的方法。  
   
- [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)] [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]  
+ [!code-vb[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/VisualBasic/ca1404-call-getlasterror-immediately-after-p-invoke_1.vb)]
+ [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA1060: Move P/Invokes to NativeMethods class](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA1060： 將 P/Invokes 到 NativeMethods 類別](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)  
   
- [CA1400: P/Invoke entry points should exist](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)  
+ [CA1400: P/Invoke 進入點應該要存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)  
   
- [CA1401: P/Invokes should not be visible](../code-quality/ca1401-p-invokes-should-not-be-visible.md)  
+ [CA1401: P/Invokes 不應該為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md)  
   
- [CA2101: Specify marshaling for P/Invoke string arguments](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
+ [Ca2101： 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
   
- [CA2205: Use managed equivalents of Win32 API](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+ [CA2205：必須使用 Win32 API 的 Managed 對應項](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)

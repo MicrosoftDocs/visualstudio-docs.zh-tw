@@ -1,45 +1,48 @@
 ---
-title: "format 屬性 (Intl.DateTimeFormat) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "format 屬性 (Intl.DateTimeFormat) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: 487930fe-a948-446f-902d-06bb0d7685d5
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2e94fcd797a63944d0162dceadf773cf9b15f943
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# format 屬性 (Intl.DateTimeFormat)
-傳回函式，透過使用指定的日期\/時間格式子設定，格式化地區設定特定的日期。  
+# <a name="format-property-intldatetimeformat"></a>format 屬性 (Intl.DateTimeFormat)
+傳回使用指定的日期/時間格式器設定來格式化地區設定特定日期的函式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 dateTimeFormatObj.format  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dateTimeFormatObj`  
- 必要項。  做為格式子使用之 `DateTimeFormat` 物件的名稱。  
+ 必要項。 名稱`DateTimeFormat`做為格式子物件。  
   
-## 備註  
- `format` 屬性傳回的函式採用一個引數 `date`，並使用 `DateTimeFormat` 物件指定的選項，傳回代表當地語系化日期的字串。  所傳回函式的 `date` 參數必須是數字、日期字串或 `Date` 物件。  如果未提供 `date`，則函式會使用 [Date.now](../../javascript/reference/date-now-function-javascript.md) 做為預設輸入值。  
+## <a name="remarks"></a>備註  
+ 所傳回的函式`format`屬性會接受單一引數， `date`，並傳回字串，代表使用指定的選項的當地語系化的日期`DateTimeFormat`物件。 `date`傳回的函式的參數必須是數字、 日期字串或`Date`物件。 如果`date`未提供，此函數會使用[Date.now](../../javascript/reference/date-now-function-javascript.md)做為預設的輸入值。  
   
-## 範例  
- 下列範例會使用 `DateTimeFormat` 物件當地語系化日期 "Dec 1, 2007" 為德文和重新格式化文字。  
+## <a name="example"></a>範例  
+ 下列範例會使用`DateTimeFormat`當地語系化成德文的日期 「 2007 年 12 月 1 日 」，並將它重新格式化的物件。  
   
-```javascript  
+```JavaScript  
 var dtFormat = new Intl.DateTimeFormat(["de"], {  
     year: "numeric",  
     month: "long",  
@@ -53,8 +56,8 @@ if (console && console.log) {
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv11](../../javascript/reference/includes/jsv11-md.md)]  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Intl.DateTimeFormat 物件](../../javascript/reference/intl-datetimeformat-object-javascript.md)

@@ -1,54 +1,53 @@
 ---
-title: "IDiaImageData | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaImageData 介面"
+title: "IDiaImageData |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaImageData interface
 ms.assetid: b696f350-fc08-4352-9287-a15e87512c1e
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c76a173f137ede589b870f5119153a4233bcd730
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaImageData
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-公開 \(expose\) 基底的位置和記憶體位移的模組或映像的詳細資料。  
+# <a name="idiaimagedata"></a>IDiaImageData
+公開的基底的位置和記憶體位移之模組的映像的詳細資料。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
-IDiaImageData : IUnknown  
+IDiaImageData : IUnknown  
 ```  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaImageData`。  
   
-|方法|描述|  
-|--------|--------|  
-|[IDiaImageData::get\_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|擷取虛擬記憶體中的位置，相對於應用程式的模組。|  
-|[IDiaImageData::get\_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|擷取虛擬記憶體中之影像的位置。|  
-|[IDiaImageData::get\_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|擷取映像應該進行計算的記憶體位置。|  
+|方法|說明|  
+|------------|-----------------|  
+|[IDiaImageData::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-relativevirtualaddress.md)|擷取虛擬記憶體中的位置，相對於應用程式的模組。|  
+|[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|擷取映像的虛擬記憶體中的位置。|  
+|[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|擷取映像應該為基礎的記憶體位置。|  
   
-## 備註  
- 有些偵錯資料流 \(XDATA、 PDATA\) 包含複本亦儲存映像中的資料。  這些資料流物件，請查詢取得的資料`IDiaImageData`介面。  請參閱本主題，如需詳細資訊的 「 備忘稿的呼叫端 」 一節。  
+## <a name="remarks"></a>備註  
+ 有些偵錯資料流 （XDATA、 PDATA） 包含也儲存映像中的資料副本。 這些物件可以查詢的資料串流處理`IDiaImageData`介面。 請參閱本主題的詳細資料 」 的呼叫端注意事項 」 一節。  
   
-## 呼叫者的備忘稿  
- 取得這個介面，藉由呼叫`QueryInterface`的[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件。  請注意，並非所有偵錯資料流處理的支援`IDiaImageData`介面。  例如，目前只有 XDATA 和 PDATA 資料流支援`IDiaImageData`介面。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 取得此介面，藉由呼叫`QueryInterface`上[IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)物件。 請注意，並非所有偵錯資料流支援`IDiaImageData`介面。 例如，目前只 XDATA 和 PDATA 資料流支援`IDiaImageData`介面。  
   
-## 範例  
- 這個範例會搜尋所有的偵錯資料流，任何支援的資料流的`IDiaImageData`介面。  如果找到這類的資料流，則會顯示此資料流中的一些資訊。  
+## <a name="example"></a>範例  
+ 下列範例會搜尋所有偵錯資料流的任何支援的資料流`IDiaImageData`介面。 如果找到這類資料流，則會顯示該資料流的一些資訊。  
   
-```cpp#  
+```C++  
 void ShowImageData(IDiaSession *pSession)  
 {  
     if (pSession != NULL)  
@@ -112,13 +111,13 @@ void ShowImageData(IDiaSession *pSession)
 }  
 ```  
   
-## 需求  
- 標頭: Dia2.h  
+## <a name="requirements"></a>需求  
+ 標頭： Dia2.h  
   
- 媒體櫃： diaguids.lib  
+ 程式庫： diaguids.lib  
   
- DLL： msdia80.dll  
+ DLL: msdia80.dll  
   
-## 請參閱  
- [介面 \(偵錯介面存取 SDK\)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+## <a name="see-also"></a>另請參閱  
+ [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

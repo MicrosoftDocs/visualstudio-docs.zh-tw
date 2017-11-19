@@ -1,54 +1,53 @@
 ---
-title: "IDiaSymbol::get_hasSecurityChecks | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_hasSecurityChecks 方法"
+title: "Idiasymbol:: Get_hassecuritychecks |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_hasSecurityChecks method
 ms.assetid: 4bb51f62-8645-41a4-bc44-1451010623fd
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: a71a57974f0c4c139fc755601c14f475b3fe0c66
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_hasSecurityChecks
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-會擷取旗標，指定是否已編譯的編譯或函式的緩衝區滿溢的安全性檢查 \(例如， [\/GS \(緩衝區安全性檢查\)](/visual-cpp/build/reference/gs-buffer-security-check)編譯器參數\)。  
+# <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
+擷取指定是否已編譯的編譯模組或函式的緩衝區滿溢安全性檢查的旗標 (例如， [/GS （緩衝區安全性檢查）](/cpp/build/reference/gs-buffer-security-check)編譯器參數)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```C++  
 HRESULT get_hasSecurityChecks(  
-   BOOL *pFlag  
+   BOOL *pFlag  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pFlag`  
- \[\] out傳回`TRUE`如果函式有任何安全性檢查。 否則，會傳回`FALSE`。  
+ [out]傳回`TRUE`如果函式的任何安全性檢查; 否則傳回`FALSE`。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示的屬性不是可用的符號。  
+>  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## 需求  
+## <a name="requirements"></a>需求  
   
 |需求|描述|  
-|--------|--------|  
-|標頭：|dia2.h|  
+|-----------------|-----------------|  
+|Header:|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [\/GS \(緩衝區安全性檢查\)](/visual-cpp/build/reference/gs-buffer-security-check)
+ [/GS （緩衝區安全性檢查）](/cpp/build/reference/gs-buffer-security-check)

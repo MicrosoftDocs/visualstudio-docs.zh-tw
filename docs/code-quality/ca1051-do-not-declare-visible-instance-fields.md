@@ -1,11 +1,10 @@
 ---
-title: 'CA1051: Do not declare visible instance fields | Microsoft Docs'
+title: "CA1051： 不要宣告可見的執行個體欄位 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,61 +14,45 @@ helpviewer_keywords:
 - CA1051
 - DoNotDeclareVisibleInstanceFields
 ms.assetid: 2805376c-824c-462c-81d1-c51aaf7cabe7
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3c4be3eb3862e462b840569460993b2ff8a1000b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c80ac321100ecc0f88811332c73bdfd99b5a6a99
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Do not declare visible instance fields
+# <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051：不要宣告可見的執行個體欄位
 |||  
 |-|-|  
 |TypeName|DoNotDeclareVisibleInstanceFields|  
 |CheckId|CA1051|  
-|Category|Microsoft.Design|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Design|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- An externally visible type has an externally visible instance field.  
+## <a name="cause"></a>原因  
+ 外部可見的類型有外部可見的執行個體欄位。  
   
-## <a name="rule-description"></a>Rule Description  
- The primary use of a field should be as an implementation detail. Fields should be `private` or `internal` and should be exposed by using properties. It is as easy to access a property as it is to access a field, and the code in the accessors of a property can change as the features of the type expand without introducing breaking changes. Properties that just return the value of a private or internal field are optimized to perform on par with accessing a field; very little performance gain is associated with the use of externally visible fields over properties.  
+## <a name="rule-description"></a>規則描述  
+ 欄位的主要用法應該是當做實作詳細資料。 欄位應該具備`private`或`internal`，而且應使用屬性公開。 很容易存取的屬性，它是存取欄位，以及展開而不會引進重大變更的類型的功能可以變更的屬性存取子中的程式碼。 只傳回私用或內部欄位的值的屬性已最佳化，以執行與同等存取欄位。很少的效能提升是使用外部可見欄位相關聯的屬性上。  
   
- Externally visible refers to `public`, `protected`, and `protected internal` (`Public`, `Protected`, and `Protected Friend` in Visual Basic) accessibility levels.  
+ 外部可見的指`public`， `protected`，和`protected internal`(`Public`， `Protected`，和`Protected Friend`在 Visual Basic) 存取範圍層級。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, make the field `private` or `internal` and expose it by using an externally visible property.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，請將欄位設定`private`或`internal`並將它公開使用的外部可見的屬性。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule. Externally visible fields do not provide any benefits that are unavailable to properties. Additionally, public fields cannot be protected by [Link Demands](/dotnet/framework/misc/link-demands). See [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md).  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 請勿隱藏此規則的警告。 外部可見的欄位不會提供屬性沒有任何優點。 此外，公用欄位無法由保護[連結要求](/dotnet/framework/misc/link-demands)。 請參閱[CA2112： 受保護的類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)。  
   
-## <a name="example"></a>Example  
- The following example shows a type (`BadPublicInstanceFields`) that violates this rule. `GoodPublicInstanceFields` shows the corrected code.  
+## <a name="example"></a>範例  
+ 下列範例顯示型別 (`BadPublicInstanceFields`) 違反此規則。 `GoodPublicInstanceFields`顯示更正的程式碼。  
   
  [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]  
   
-## <a name="related-rules"></a>Related Rules  
- [CA2112: Secured types should not expose fields](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
+## <a name="related-rules"></a>相關的規則  
+ [CA2112：受保護類型不應該公開欄位](../code-quality/ca2112-secured-types-should-not-expose-fields.md)  
   
-## <a name="see-also"></a>See Also  
- [Link Demands](/dotnet/framework/misc/link-demands)
+## <a name="see-also"></a>另請參閱  
+ [連結要求](/dotnet/framework/misc/link-demands)

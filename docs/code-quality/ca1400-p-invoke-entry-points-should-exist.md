@@ -1,11 +1,10 @@
 ---
-title: 'CA1400: P-Invoke entry points should exist | Microsoft Docs'
+title: "CA1400: P Invoke 進入點應該要存在 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,56 +14,40 @@ helpviewer_keywords:
 - PInvokeEntryPointsShouldExist
 - CA1400
 ms.assetid: 1d64e470-7b2f-4cca-8fb0-ac92829e6332
-caps.latest.revision: 19
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3f9d7230a64f1d67822e0464b7d84a9992da9251
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "19"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dd92619a652255f67c1e1558c40ea05840cd0eb5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: P/Invoke entry points should exist
+# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400：P/Invoke 進入點應該要存在
 |||  
 |-|-|  
 |TypeName|PInvokeEntryPointsShouldExist|  
 |CheckId|CA1400|  
-|Category|Microsoft.Interoperability|  
-|Breaking Change|Non-breaking|  
+|分類|Microsoft.Interoperability|  
+|中斷變更|非中斷|  
   
-## <a name="cause"></a>Cause  
- A public or protected method is marked with the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Either the unmanaged library could not be located or the method could not be matched to a function in the library. If the rule cannot find the method name exactly as it is specified, it looks for ANSI or wide-character versions of the method by suffixing the method name with 'A' or 'W'. If no match is found, the rule attempts to locate a function by using the __stdcall name format (_MyMethod@12, where 12 represents the length of the arguments). If no match is found, and the method name starts with '#', the rule searches for the function as an ordinal reference instead of a name reference.  
+## <a name="cause"></a>原因  
+ 公用或受保護的方法會標示<xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。 如果規則在完全依照其指定找不到方法名稱，它會尋找 ANSI 或寬字元版本的方法所尾碼 'A' 或 'W' 的方法名稱。 如果找到相符項目，此規則會嘗試尋找函式使用 __stdcall 名稱格式 (_MyMethod@12，其中 12 代表引數的長度)。 如果沒有找到符合的而且以 '#' 開頭的方法名稱，此規則中搜尋函式做為序數的參考，而非名稱參考。  
   
-## <a name="rule-description"></a>Rule Description  
- No compile-time check is available to make sure that methods that are marked with <xref:System.Runtime.InteropServices.DllImportAttribute> are located in the referenced unmanaged DLL. If no function that has the specified name is  in the library, or the arguments to the method do not match the function arguments, the common language runtime throws an exception.  
+## <a name="rule-description"></a>規則描述  
+ 不會產生編譯時期檢查可確定方法是，標示<xref:System.Runtime.InteropServices.DllImportAttribute>位於受參考的 unmanaged DLL。 如果沒有具有指定的名稱的函式程式庫，或方法的引數不相符的函式引數，common language runtime 會擲回例外狀況。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, correct the method that has the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute. Make sure that the unmanaged library exists and is in the same directory as the assembly that contains the method. If the library is present and correctly referenced, verify that the method name, return type, and argument signature match the library function.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，更正方法<xref:System.Runtime.InteropServices.DllImportAttribute>屬性。 請確定將 unmanaged 程式庫存在且包含方法的組件相同的目錄中。 如果媒體櫃已存在且正確的參考，請確認的方法名稱、 傳回型別和引數簽章符合程式庫函式。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Do not suppress a warning from this rule when the unmanaged library is in the same directory as the managed assembly that references it. It might be safe to suppress a warning from this rule in the case where the unmanaged library could not be located.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ Unmanaged 程式庫參考它的 managed 組件相同的目錄時，請勿隱藏此規則的警告。 它可能安全地隱藏在案例中，unmanaged 程式庫找不到此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule. No function that is named `DoSomethingUnmanaged` occurs in kernel32.dll.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的類型。 函式，名為`DoSomethingUnmanaged`kernel32.dll 中發生。  
   
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

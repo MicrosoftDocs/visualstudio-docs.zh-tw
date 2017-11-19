@@ -1,50 +1,49 @@
 ---
-title: "IDiaSymbol::get_objectPointerType | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_objectPointerType 方法"
+title: "Idiasymbol:: Get_objectpointertype |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_objectPointerType method
 ms.assetid: bce193b9-67b0-4c35-96e5-6a664937322e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 10ef86e07808edfbaf310fc9d231b2ce20502f9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_objectPointerType
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取物件指標為類別方法的型別。  
+# <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
+擷取物件的指標類別方法的型別。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_objectPointerType (   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_objectPointerType (   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示物件指標是否為類別的方法。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)物件，表示類別方法的物件指標。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤代碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
- 此屬性僅適用於使用的符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)種`SymTagFunctionType`。  
+## <a name="remarks"></a>備註  
+ 這個屬性只適用於具有符號[SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)類型`SymTagFunctionType`。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

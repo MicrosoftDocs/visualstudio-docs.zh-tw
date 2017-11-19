@@ -1,47 +1,48 @@
 ---
-title: "CA1720：識別項不應包含類型名稱 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "CA1720"
-  - "IdentifiersShouldNotContainTypeNames"
-helpviewer_keywords: 
-  - "IdentifiersShouldNotContainTypeNames"
-  - "CA1720"
+title: "CA1720： 識別項不應包含類型名稱 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- CA1720
+- IdentifiersShouldNotContainTypeNames
+helpviewer_keywords:
+- IdentifiersShouldNotContainTypeNames
+- CA1720
 ms.assetid: c95ee48f-f23a-45f0-ac9e-a3c1ecfabdea
-caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5418bc8d265c32057911df2d3a15aaddacf1398e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CA1720：識別項不應包含類型名稱
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720：識別項不應包含類型名稱
 |||  
 |-|-|  
-|型別名稱|IdentifiersShouldNotContainTypeNames|  
+|TypeName|IdentifiersShouldNotContainTypeNames|  
 |CheckId|CA1720|  
 |分類|Microsoft.Naming|  
 |中斷變更|中斷|  
   
-## 原因  
- 外部可見成員中的參數名稱會包含資料型別名稱。  
+## <a name="cause"></a>原因  
+ 外部可見成員中的參數名稱包含資料類型名稱。  
   
- \-或\-  
+ -或-  
   
- 外部可見成員的名稱會包含語言專屬的資料型別名稱。  
+ 外部可見成員的名稱包含語言特定的資料型別名稱。  
   
-## 規則描述  
- 參數與成員名稱最好是用於傳達其意義，而不是說明預期將會由開發工具提供的型別。  如果必須使用資料型別名稱，成員名稱請使用和語言無關的名稱而不是語言專屬名稱。  例如，請使用和語言無關的資料型別名稱 Int32，而不是 C\# 型別名稱 'int'。  
+## <a name="rule-description"></a>規則描述  
+ 參數和成員的名稱最好用於傳達其意義說明其預期要由開發工具提供的類型。 名稱的成員，如果必須使用資料型別名稱，會使用與語言無關的名稱而不是特定語言。 比方說，而不是 C# 類型名稱 'int'，使用的語言無關的資料型別名稱，Int32。  
   
- 對於參數或成員名稱中的每個分離權杖，會使用不區分大小寫的方式，針對下列特定語言資料型別名稱進行檢查：  
+ 每個離散的權杖參數或成員的名稱不區分大小寫的方式被檢查對下列語言專屬的資料類型名稱：  
   
 -   Bool  
   
@@ -59,7 +60,7 @@ caps.handback.revision: 15
   
 -   UInt  
   
--   Integer  
+-   整數  
   
 -   UInteger  
   
@@ -67,27 +68,27 @@ caps.handback.revision: 15
   
 -   ULong  
   
--   未簽署  
+-   不帶正負號  
   
--   經過簽署  
+-   簽署人  
   
--   Float  
+-   浮動  
   
 -   Float32  
   
 -   Float64  
   
- 此外，對於參數的名稱也會使用不區分大小寫的方式，針對下列和語言無關的資料型別名稱進行檢查：  
+ 此外，參數的名稱也會簽對下列語言無關的資料類型名稱不區分大小寫的方式：  
   
 -   物件  
   
--   Obj  
+-   obj  
   
 -   Boolean  
   
 -   Char  
   
--   字串  
+-   String  
   
 -   SByte  
   
@@ -111,7 +112,7 @@ caps.handback.revision: 15
   
 -   Ptr  
   
--   指標  
+-   Pointer  
   
 -   UInptr  
   
@@ -127,23 +128,23 @@ caps.handback.revision: 15
   
 -   Guid  
   
-## 如何修正違規  
+## <a name="how-to-fix-violations"></a>如何修正違規  
  **如果針對參數引發：**  
   
- 以更能有效描述其意義的詞彙，或是更泛型的詞彙 \(例如 'value'\) 取代參數名稱中的資料型別識別項。  
+ 進一步描述其意義的詞彙或更泛型的詞彙如 'value' 取代參數名稱的資料類型識別項。  
   
- **如果針對成員引發：**  
+ **如果成員針對引發：**  
   
- 以更能有效描述其意義的詞彙、和語言無關的對等用法，或是更泛型的詞彙 \(例如 'value'\) 取代成員名稱中的語言專屬資料型別識別項。  
+ 取代進一步描述其意義、 語言無關的同等權限或更泛型的詞彙如 'value' 的詞彙中的成員名稱的語言特定的資料類型識別項。  
   
-## 隱藏警告的時機  
- 偶爾使用以型別為基礎的參數與成員名稱可能很恰當。  但是對新的開發而言，在所有已知的案例中，您都不應該隱藏這項規則的警告。  對於之前隨附的程式庫，您可能必須隱藏這項規則的警告。  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 可能適合使用偶爾使用的類型為基礎的參數和成員的名稱。 不過，進行新開發，已知位置，您應該隱藏此規則的警告發生的狀況。 具有先前隨附的程式庫，您可能要隱藏此規則的警告。  
   
-## 相關規則  
+## <a name="related-rules"></a>相關的規則  
  [CA1709：識別項名稱應該使用正確的大小寫](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
  [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
- [CA1707：識別項不應包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)  
+ [CA1707：識別項名稱不應該包含底線](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)  
   
- [CA1719：參數名稱不應符合成員名稱](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+ [CA1719：參數名稱不應該和成員名稱相符](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

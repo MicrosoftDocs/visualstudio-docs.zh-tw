@@ -1,45 +1,47 @@
 ---
-title: "Office 方案的部署資訊清單"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發]，部署資訊清單"
-  - "部署資訊清單 [Visual Studio 中的 Office 程式開發]"
-  - "資訊清單 [Visual Studio 中的 Office 程式開發]，部署"
-  - "Visual Studio 中的 Office 程式開發，部署資訊清單"
+title: "Office 方案的部署資訊清單 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office applications [Office development in Visual Studio], deployment manifests
+- deployment manifests [Office development in Visual Studio]
+- manifests [Office development in Visual Studio], deployment
+- Office development in Visual Studio, deployment manifests
 ms.assetid: 3fb29743-fb96-4d61-a99a-9b1bbafeee13
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f6569c8c4a2420949862b8d09532c217606073d8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Office 方案的部署資訊清單
-  部署資訊清單是 XML 檔案，這個檔案會描述 Office 方案的部署設定，並識別目前的應用程式版本。  
+# <a name="deployment-manifests-for-office-solutions"></a>Office 方案的部署資訊清單
+  部署資訊清單是 XML 檔案，說明 Office 方案的部署設定，以及識別目前的應用程式版本。  
   
- Visual Studio 中的 Office 程式開發會使用 [ClickOnce 部署資訊清單](../deployment/clickonce-deployment-manifest.md)參考中定義的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 部署資訊清單結構描述。  
+ 使用 Visual Studio 中的 Office 程式開發[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單結構描述中定義[ClickOnce 部署資訊清單](/visualstudio/deployment/clickonce-deployment-manifest)參考。  
   
-## 備註  
- Office 方案的部署資訊清單檔會識別目前版本及其他部署設定。  它會參考應用程式資訊清單，其中描述了方案目前的版本，以及方案中包含的所有檔案。  
+## <a name="remarks"></a>備註  
+ Office 方案的部署資訊清單檔會識別目前的版本與其他部署設定。 它會參考應用程式資訊清單，描述目前版本的方案及其所有包含在方案中的檔案。  
   
-## 檔名語法  
- 部署資訊清單的檔名必須以 .vsto 副檔名為結尾。  雖然這是一種標準[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單，若要啟用Visual Studio工具來控制代碼檔案的 Office執行階段為不同的副檔名。  
+## <a name="file-name-syntax"></a>檔名語法  
+ 部署資訊清單檔的名稱必須以副檔名為.vsto 結尾。 雖然它是一種標準[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署資訊清單中，若要啟用 Visual Studio Tools for Office 執行階段來處理檔案不同的擴充功能。  
   
-## 範例  
- 下列程式碼範例說明Visual Studio工具 Office解決方案的部署資訊清單。  
+## <a name="example"></a>範例  
+ 下列程式碼範例會說明 Visual Studio Tools for Office 方案的部署資訊清單。  
   
 ```  
-  
+<?xml version="1.0" encoding="utf-8"?>  
 <asmv1:assembly   
   xsi:schemaLocation=  
     "urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd"   
@@ -185,7 +187,7 @@ caps.handback.revision: 21
 </asmv1:assembly>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)  
   
   

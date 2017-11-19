@@ -1,11 +1,10 @@
 ---
-title: 'CA1501: Avoid excessive inheritance | Microsoft Docs'
+title: "CA1501： 避免過度繼承 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,53 +14,38 @@ helpviewer_keywords:
 - AvoidExcessiveInheritance
 - CA1501
 ms.assetid: 9e934746-1a4d-492a-91e4-085201abafa4
-caps.latest.revision: 17
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: f91e28a9d0a44195e3a5e2c66fff14cb5bb27a6d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3c09a3367985613072944c5f74f0c708a149da15
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501: Avoid excessive inheritance
+# <a name="ca1501-avoid-excessive-inheritance"></a>CA1501：避免過度繼承
 |||  
 |-|-|  
 |TypeName|AvoidExcessiveInheritance|  
 |CheckId|CA1501|  
-|Category|Microsoft.Maintainability|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Maintainability|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A type is more than four levels deep in its inheritance hierarchy.  
+## <a name="cause"></a>原因  
+ 類型在其繼承階層架構 (Inheritance Hierarchy) 中超過四個層級的深度。  
   
-## <a name="rule-description"></a>Rule Description  
- Deeply nested type hierarchies can be difficult to follow, understand, and maintain. This rule limits analysis to hierarchies in the same module.  
+## <a name="rule-description"></a>規則描述  
+ 太深的巢狀類型階層架構可能會難以依循、了解和維護。 此規則會限制在相同模組中的階層來分析。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, derive the type from a base type that is less deep in the inheritance hierarchy or eliminate some of the intermediate base types.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，衍生自繼承階層架構中較深的基底類型的型別，或排除部分中繼的基底類型。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- It is safe to suppress a warning from this rule. However, the code might be more difficult to maintain. Note that, depending on the visibility of base types, resolving violations of this rule might create breaking changes. For example, removing public base types is a breaking change.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 它可以安全地隱藏此規則的警告。 不過，程式碼可能更難以維護。 請注意，根據基底類型的可見性，解決違反此規則可能會產生重大變更。 例如，移除公用基底型別是一項重大變更。  
   
-## <a name="example"></a>Example  
- The following example shows a type that violates the rule.  
+## <a name="example"></a>範例  
+ 下列範例顯示違反規則的類型。  
   
- [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)] [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]
+ [!code-csharp[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/CSharp/ca1501-avoid-excessive-inheritance_1.cs)]
+ [!code-vb[FxCop.Maintainability.ExcessiveInheritance#1](../code-quality/codesnippet/VisualBasic/ca1501-avoid-excessive-inheritance_1.vb)]

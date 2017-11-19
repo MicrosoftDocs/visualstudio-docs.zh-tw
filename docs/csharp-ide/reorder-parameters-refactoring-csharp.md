@@ -1,43 +1,42 @@
 ---
-title: "Reorder Parameters Refactoring (C#) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.csharp.refactoring.reorder"
-dev_langs: 
-  - "CSharp"
-helpviewer_keywords: 
-  - "refactoring [C#], Reorder Parameters"
-  - "Reorder Parameters refactoring [C#]"
+redirect_url: /visualstudio/csharp-ide/refactoring/change-method-signature
+title: "重新排列參數重構 (C#) |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.csharp.refactoring.reorder
+dev_langs: CSharp
+helpviewer_keywords:
+- refactoring [C#], Reorder Parameters
+- Reorder Parameters refactoring [C#]
 ms.assetid: 4dabf21a-a9f0-41e9-b11b-55760cf2bd90
-caps.latest.revision: 26
-caps.handback.revision: 26
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+caps.latest.revision: "26"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3469e9ae7101c9e180fba5558fce389c6dfcc72d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Reorder Parameters Refactoring (C#)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`Reorder Parameters` 是一項 Visual C\# 重構作業，提供了變更方法、索引子和委派之參數順序的簡易方式。  `Reorder Parameters` 會變更宣告，且會在任何呼叫成員的位置重新整理參數，以反映新順序。  
+# <a name="reorder-parameters-refactoring-c"></a>重新排列參數重構 (C#)
+`Reorder Parameters`為 Visual C# 重構作業，提供簡單的方法，若要變更的方法、 索引子和委派參數的順序。 `Reorder Parameters`變更宣告，以及任何位置呼叫成員，參數就會重新排列以反映新的訂單。  
   
- 若要執行 `Reorder Parameters` 作業，將資料指標放在方法、索引子或委派旁邊或上面。  資料指標就定位時，請按鍵盤快速鍵或按一下捷徑功能表中的命令，以叫用 `Reorder Parameters` 作業。  
+ 若要執行`Reorder Parameters`作業，將游標放在或旁邊方法、 索引子或委派。 資料指標位置時，叫用`Reorder Parameters`按鍵盤快速鍵，或按一下快顯功能表命令的作業。  
   
 > [!NOTE]
->  您無法在擴充方法中重新排列第一個參數。  
+>  您無法重新排列擴充方法中的第一個參數。  
   
-### 若要重新排列參數  
+### <a name="to-reorder-parameters"></a>若要重新排列參數  
   
-1.  建立名為 `ReorderParameters` 的類別庫，再以下列範例程式碼取代 `Class1`。  
+1.  建立名為的類別庫`ReorderParameters`，然後取代`Class1`取代下列範例程式碼。  
   
-    ```c#  
+    ```csharp  
     class ProtoClassA  
     {  
         // Invoke on 'MethodB'.  
@@ -56,26 +55,26 @@ manager: "wpickett"
     }  
     ```  
   
-2.  將游標放在 `MethodB` 上，可以放在方法宣告或方法呼叫中。  
+2.  將游標置於`MethodB`，有兩種方法宣告或方法呼叫。  
   
-3.  在 \[**重整**\] 功能表上按一下 \[**重新排列參數**\]。  
+3.  在**重構**功能表上，按一下 **重新排列參數**。  
   
-     隨即出現 \[**重新排列參數**\] 對話方塊。  
+     **重新排列參數** 對話方塊隨即出現。  
   
-4.  在 \[**重新排列參數**\] 對話方塊中，選取 \[**參數**\] 清單中的 `int i`，然後按一下向下按鈕。  
+4.  在**重新排列參數**對話方塊中，選取`int i`中**參數**清單，然後再按向下按鈕。  
   
-     或者，您可以將 `int i` 拖曳到 \[**參數**\] 清單中 `bool b` 的後面。  
+     或者，您可以拖曳`int i`之後`bool b`中**參數**清單。  
   
-5.  在 \[**重新排列參數**\] 對話方塊中，按一下 \[**確定**\]。  
+5.  在**重新排列參數**對話方塊中，按一下 **確定**。  
   
-     如果已在 \[**重新排列參數**\] 對話方塊中選取 \[**預覽參考變更**\] 選項，\[**預覽變更 \- 重新排列參數**\] 對話方塊便會出現。  這個對話方塊可讓您預覽 `MethodB` 的參數清單變更，包括簽章和方法呼叫。  
+     如果**預覽參考變更**中選取選項**重新排列參數**對話方塊中，**預覽變更-重新排列參數**對話方塊隨即出現。 它提供的參數清單中的變更預覽`MethodB`簽章和方法呼叫中。  
   
-    1.  如果出現 \[**預覽變更 \- 重新排列參數**\] 對話方塊，請按一下 \[**套用**\]。  
+    1.  如果**預覽變更-重新排列參數**對話方塊出現時，按一下**套用**。  
   
-         在此範例中， `MethodB` 之方法宣告和所有的方法呼叫位置都會更新。  
+         在此範例中，方法宣告和所有方法呼叫的站台`MethodB`會更新。  
   
-## 備註  
- 您可以從方法宣告或方法呼叫中重新排列參數。  將游標放置位在方法或委派宣告本身或旁邊，但不是在主體中。  
+## <a name="remarks"></a>備註  
+ 您可以重新排列從方法宣告或方法呼叫的參數。 將游標放在或旁邊的方法或委派宣告但不是在本文中。  
   
-## 請參閱  
- [Refactoring \(C\#\)](../csharp-ide/refactoring-csharp.md)
+## <a name="see-also"></a>另請參閱  
+ [重構 (C#)](refactoring-csharp.md)

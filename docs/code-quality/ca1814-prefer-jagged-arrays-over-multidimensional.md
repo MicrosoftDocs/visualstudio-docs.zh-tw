@@ -1,11 +1,10 @@
 ---
-title: 'CA1814: Prefer jagged arrays over multidimensional | Microsoft Docs'
+title: "CA1814： 偏好不規則陣列取代多維 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-ide-code-analysis
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -15,52 +14,38 @@ helpviewer_keywords:
 - PreferJaggedArraysOverMultidimensional
 - CA1814
 ms.assetid: b1ccf563-2ec8-42e5-b89c-731a9de1ea1d
-caps.latest.revision: 14
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6c9dc51ba44251c765243c55b62fdab77a446aa3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: aa1420ab01426cbfeaaf5d70238df19fde50ea9a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Prefer jagged arrays over multidimensional
+# <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814：建議使用不規則陣列取代多維陣列
 |||  
 |-|-|  
 |TypeName|PreferJaggedArraysOverMultidimensional|  
 |CheckId|CA1814|  
-|Category|Microsoft.Performance|  
-|Breaking Change|Breaking|  
+|分類|Microsoft.Performance|  
+|中斷變更|中斷|  
   
-## <a name="cause"></a>Cause  
- A member is declared as a multidimensional array.  
+## <a name="cause"></a>原因  
+ 成員宣告為多維度陣列。  
   
-## <a name="rule-description"></a>Rule Description  
- A jagged array is an array whose elements are arrays. The arrays that make up the elements can be of different sizes, leading to less wasted space for some sets of data.  
+## <a name="rule-description"></a>規則描述  
+ 不規則陣列是一種陣列，其元素也是陣列。 組成元素的陣列大小可以不相同，對於某些資料集而言較不會浪費空間。  
   
-## <a name="how-to-fix-violations"></a>How to Fix Violations  
- To fix a violation of this rule, change the multidimensional array to a jagged array.  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 若要修正此規則的違規情形，將多維陣列的內容變更為不規則的陣列。  
   
-## <a name="when-to-suppress-warnings"></a>When to Suppress Warnings  
- Suppress a warning from this rule if the multidimensional array does not waste space.  
+## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
+ 如果多維度陣列不會浪費空間，請隱藏此規則的警告。  
   
-## <a name="example"></a>Example  
- The following example shows declarations for jagged and multidimensional arrays.  
+## <a name="example"></a>範例  
+ 下列範例顯示不規則和多維度陣列的宣告。  
   
- [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)] [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
+ [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
+ [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
