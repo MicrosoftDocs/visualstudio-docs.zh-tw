@@ -1,65 +1,65 @@
 ---
-title: "IEnumDebugThreads2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugThreads2"
-helpviewer_keywords: 
-  - "IEnumDebugThreads2"
+title: "IEnumDebugThreads2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugThreads2
+helpviewer_keywords: IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ca4fedeb7e52fff627a8fab9e100c0a99792f1c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugThreads2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個 interfac 列舉目前的偵錯工作階段中執行的執行緒。  
+# <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
+此 interfac 列舉在目前的偵錯工作階段中執行的執行緒。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IEnumDebugThreads2 : IUnknown  
 ```  
   
-## 實作器注意事項  
- 偵錯引擎 \(DE\) 會實作這個介面表示一份在程式中的執行緒。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 偵錯引擎 (DE) 會實作這個介面來代表在程式中執行緒的清單。  
   
-## 呼叫者的備忘稿  
- 呼叫[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)以取得這個介面表示一份所有處理序中執行的程式中的所有執行緒。  呼叫[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)以取得這個介面表示一份在程式中執行的執行緒。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 呼叫[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)取得此介面代表所有處理序中執行的程式中的所有執行緒的清單。 呼叫[EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)取得此介面代表在程式中執行之執行緒的清單。  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugThreads2`。  
   
-|方法|描述|  
-|--------|--------|  
-|[下一步](../Topic/IEnumDebugThreads2::Next.md)|擷取指定的列舉型別序列中的執行緒數。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|略過指定的列舉型別序列中的執行緒數。|  
-|[重設](../Topic/IEnumDebugThreads2::Reset.md)|將列舉型別序列重設至開頭。|  
-|[複製](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|建立包含相同的列舉型別狀態與目前列舉值。|  
-|[GetCount](../Topic/IEnumDebugThreads2::GetCount.md)|取得列舉值中的執行緒數目。|  
+|方法|說明|  
+|------------|-----------------|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|擷取指定的列舉順序中的執行緒數目。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|略過指定的列舉順序中的執行緒數目。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugthreads2-reset.md)|列舉序列重設為開頭。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugthreads2-clone.md)|建立列舉值，包含目前的列舉型別狀態相同。|  
+|[GetCount](../../../extensibility/debugger/reference/ienumdebugthreads2-getcount.md)|取得列舉值中的執行緒數目。|  
   
-## 備註  
- Visual Studio 通常會取得這個介面來更新**執行緒**以取得清單中，第一個執行緒呼叫視窗也[執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)， [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)，以及[逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)。  
+## <a name="remarks"></a>備註  
+ Visual Studio 通常會取得此介面，以便更新**執行緒**視窗以及取得第一個執行緒的清單中，若要呼叫[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)，[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)，和[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)   
  [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)   
- [逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
+ [步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)   
  [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)   
  [執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md)

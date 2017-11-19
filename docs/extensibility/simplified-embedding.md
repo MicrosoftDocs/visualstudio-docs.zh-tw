@@ -1,41 +1,42 @@
 ---
-title: "簡化的嵌入 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "內嵌編輯器 [Visual Studio SDK]，自訂-簡單檢視"
+title: "簡化的嵌入 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d4315a55b74d938576572b0630f5dca553643a24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 簡化的嵌入
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-簡化的內嵌時，會啟用在編輯器中 \(也就是與之前的子系\) 成為其文件檢視物件的父系[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，以及<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗的命令。  簡化的內嵌編輯器不能裝載使用中的控制項。  下圖顯示用來建立編輯器與簡化的嵌入的物件。  
+# <a name="simplified-embedding"></a>簡化的嵌入
+簡化內嵌時，會啟用在編輯器中 （也就是對的子系） 父代其文件檢視物件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，而<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>介面的實作來處理其視窗命令。 簡化的嵌入編輯器無法裝載作用中的控制項。 下圖中會顯示用來建立使用簡化的嵌入編輯器的物件。  
   
- ![簡化的嵌入編輯器圖形](~/extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
-使用簡化的內嵌編輯器  
+ ![簡化的嵌入編輯器圖形](../extensibility/media/vssimplifiedembeddingeditor.gif "vsSimplifiedEmbeddingEditor")  
+使用簡化的嵌入編輯器  
   
 > [!NOTE]
->  在此圖例中，只有物件的`CYourEditorFactory`物件，才能建立標準檔案為基礎的編輯器。  如果您要建立自訂的編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用的保存性機制。  針對非自訂編輯器，不過，您必須這麼做。  
+>  在此圖中，只有物件的`CYourEditorFactory`物件，才能建立標準以檔案為基礎的編輯器。 如果您要建立自訂編輯器，您不需要實作<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>，因為您的編輯器可能會有自己的私用持續性機制。 非自訂編輯器，不過，您必須這樣做。  
   
- 所有的介面，以簡化的嵌入建立編輯器實作都包含在`CYourEditorDocument`物件。  不過，為了支援多個資料檢視的文件，分割至不同的資料\] 和 \[檢視物件的介面下表所示。  
+ 中所包含的所有介面實作，以建立使用簡化的嵌入編輯器`CYourEditorDocument`物件。 不過，若要支援多個檢視的文件資料，分割到不同的資料，以及檢視物件的介面在下表所示。  
   
-|介面|介面的位置|使用|  
-|--------|-----------|--------|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供給父視窗的連線。|  
+|介面|介面的位置|用法|  
+|---------------|---------------------------|---------|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|檢視|提供連接至父視窗。|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>|檢視|處理命令。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|檢視|啟用 \[狀態\] 列的更新。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser>|檢視|啟用狀態列更新。|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser>|檢視|可讓**工具箱**項目。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|資料|檔案變更時，會傳送通知。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|資料|啟用檔案類型的 \[另存新檔\] 功能。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|資料|可以讓文件的保存性。|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|資料|允許檔案變更事件，例如重新載入所觸發的隱藏項的目。|
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEvents>|資料|當檔案變更時，會傳送通知。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|資料|啟用檔案類型 [另存新檔] 功能。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|資料|啟用文件的持續性。|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|資料|可讓隱藏的檔案變更的事件，例如觸發重新載入。|

@@ -1,45 +1,46 @@
 ---
-title: "IDebugTypeFieldBuilder2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugTypeFieldBuilder2 介面"
+title: "IDebugTypeFieldBuilder2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugTypeFieldBuilder2 interface
 ms.assetid: 23911c5b-2bbf-4734-9976-87a0bd6ea36c
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: cee126ad63e0a50ec2b859c470c06a4f2ae07600
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugTypeFieldBuilder2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-延伸 **IDebugTypeFieldBuilder** ，才能建立陣列型別。  
+# <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
+擴充**IDebugTypeFieldBuilder**能夠建立陣列類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder  
 ```  
   
-## 呼叫者的備忘稿  
+## <a name="notes-for-callers"></a>呼叫端資訊  
  這個介面可以取自符號提供者。  
   
-## 方法  
- 除了在方法[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)介面，這個介面會實作下列方法：  
+## <a name="methods"></a>方法  
+ 除了上[IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)介面，這個介面會實作下列方法：  
   
-|方法|描述|  
-|--------|--------|  
-|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|建立指定型別和大小的陣列。|  
+|方法|說明|  
+|------------|-----------------|  
+|[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|建立指定的類型和大小的陣列。|  
   
-## 需求  
- 標頭: Sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll

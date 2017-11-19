@@ -1,63 +1,65 @@
 ---
-title: "Extending the SharePoint Project System"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "SharePoint development in Visual Studio, extending projects"
-  - "SharePoint development in Visual Studio, extending project items"
+title: "擴充 SharePoint 專案系統 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, extending projects
+- SharePoint development in Visual Studio, extending project items
 ms.assetid: 654b2973-a5c9-44be-a3d2-8bc3d15f9624
-caps.latest.revision: 38
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 38
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 99380078b2fc49bcc5e1efb7a36ac7f28028a0d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Extending the SharePoint Project System
-  使用一組專案範本和項目範本在 Visual Studio 中，您可以建立 SharePoint 方案。  這些範本符合許多開發案例的需求，不過，您可能會發現它們並未提供您需要的一些情況。  在這些情況下，您可以擴充 SharePoint 專案系統。  
+# <a name="extending-the-sharepoint-project-system"></a>擴充 SharePoint 專案系統
+  您可以使用 Visual Studio 中的一組專案範本和項目範本來建立 SharePoint 方案。 這些範本符合需求的許多開發案例，但您可能會發現某些情況下，它們不在其中提供您所需要的功能。 在這些情況下，您可以擴充 SharePoint 專案系統。  
   
-## SharePoint 專案系統概觀  
- SharePoint 專案系統以「*SharePoint 專案項目*」\(SharePoint Poject Item\) 的基本元件為基礎。  SharePoint 專案項目代表單一的 SharePoint 自訂，例如清單定義、Web 組件或內容類型。  
+## <a name="overview-of-the-sharepoint-project-system"></a>SharePoint 專案系統的概觀  
+ SharePoint 專案系統為基礎的基本元件*SharePoint 專案項目*。 SharePoint 專案項目代表單一 SharePoint 自訂，例如清單定義、 Web 組件或內容類型。  
   
- SharePoint 專案是包含一個或多個 SharePoint 專案項目的 Visual Studio 專案。  SharePoint 專案也包含其他元件，這些元件會定義專案項目如何組成「功能」或封裝以供開發之用。  
+ SharePoint 專案是 Visual Studio 專案包含一個或多個 SharePoint 專案項目。 SharePoint 專案也包含可定義如何將專案項目分組的功能和封裝部署到其他元件。  
   
- 如需 SharePoint 專案項目及 SharePoint 專案之內容的詳細資訊，請參閱[Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
+ SharePoint 專案項目和 SharePoint 專案的內容的相關資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
-## 如何擴充 SharePoint 專案系統  
- 您可以透過下列方式擴充 SharePoint 專案系統：  
+## <a name="how-to-extend-the-sharepoint-project-system"></a>如何擴充 SharePoint 專案系統  
+ 您可以下列方式來擴充 SharePoint 專案系統：  
   
--   定義自己的 SharePoint 專案項目型別，並且在 Visual Studio 中將這些型別與新的項目範本或專案範本產生關聯。  例如，您可以定義用以建立自訂動作或欄位的 SharePoint 專案項目型別。  如需詳細資訊，請參閱[Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)。  
+-   定義您自己的 SharePoint 專案項目類型，並將其與新的項目範本] 或 [Visual Studio 中的專案範本關聯。 例如，您可以建立自訂動作或欄位定義 SharePoint 專案項目類型。 如需詳細資訊，請參閱[定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)。  
   
--   擴充已安裝於 Visual Studio 中的 SharePoint 專案項目型別。  例如，在中，當開發人員選取功能表項目時，您可以將捷徑功能表項目加入至 \[**方案總管**\] 的專案項目和自訂專案項目。  如需詳細資訊，請參閱[Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md)。  
+-   擴充已安裝 Visual Studio 中的 SharePoint 專案項目類型。 例如，將快顯功能表項目加入專案項目中**方案總管 中**和自訂專案項目，當開發人員選擇功能表項目。 如需詳細資訊，請參閱[擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)。  
   
--   擴充 SharePoint 專案。  例如，在 SharePoint 專案中加入或移除項目時，您可以加入事件處理常式來執行特定工作。  如需詳細資訊，請參閱[Extending SharePoint Projects](../sharepoint/extending-sharepoint-projects.md)。  
+-   擴充 SharePoint 專案。 例如，您可以加入事件處理常式，加入或移除 SharePoint 專案項目時，執行特定工作。 如需詳細資訊，請參閱[擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)。  
   
--   擴充 SharePoint 專案項目及 SharePoint 專案的封裝和部署行為。  例如，您可以建立在部署或撤銷專案時要執行的專屬部署步驟，或是在 Visual Studio 執行特定部署步驟時，執行其他自訂工作。  如需詳細資訊，請參閱[Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
+-   擴充 SharePoint 專案項目和 SharePoint 專案的封裝和部署行為。 例如，您可以建立您自己的部署步驟，或在您部署或撤銷專案時，Visual Studio 執行特定的部署步驟時，您可以執行額外的自訂工作時執行。 如需詳細資訊，請參閱[擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。  
   
-## 一般開發工作  
- 您可以在 SharePoint 專案系統的擴充功能中執行下列一般工作：  
+## <a name="common-development-tasks"></a>常見的開發工作  
+ 擴充 SharePoint 專案系統中，您可以執行下列的一般工作：  
   
--   儲存專案項目的自訂字串資料，並以不同類型的專案檔儲存。  如需詳細資訊，請參閱[Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
+-   專案項目並在多種不同類型的專案檔中儲存自訂字串資料。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統中儲存的資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
--   將 SharePoint 專案系統中的物件轉換成 Visual Studio Automation 物件模型或整合物件模型中的對應物件，反之亦然。  如需詳細資訊，請參閱[Converting Between SharePoint Project System Types and Other Visual Studio Project Types](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。  
+-   SharePoint 專案系統中的 Visual Studio 自動化物件模型或整合物件模型中，對應的物件中轉換物件，反之亦然。 如需詳細資訊，請參閱[轉換之間 SharePoint 專案系統類型與其他 Visual Studio 專案類型](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。  
   
-## 請參閱  
- [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Extending SharePoint Project Items](../sharepoint/extending-sharepoint-project-items.md)   
- [Extending SharePoint Projects](../sharepoint/extending-sharepoint-projects.md)   
- [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
- [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
- [Converting Between SharePoint Project System Types and Other Visual Studio Project Types](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
- [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
- [Programming Concepts and Features for SharePoint Tools Extensions](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
+## <a name="see-also"></a>另請參閱  
+ [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [擴充 SharePoint 專案項目](../sharepoint/extending-sharepoint-project-items.md)   
+ [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   
+ [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)   
+ [擴充 SharePoint 專案系統中儲存資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
+ [SharePoint 專案系統類型與其他 Visual Studio 專案類型之間轉換](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)   
+ [擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)   
+ [SharePoint 工具延伸模組的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)  
   
   

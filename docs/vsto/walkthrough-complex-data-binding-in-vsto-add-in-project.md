@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Complex Data Binding in VSTO add-in Project | Microsoft Docs'
+title: "逐步解說： 複雜資料繫結在 VSTO 增益集專案 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,135 +15,139 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], binding data
 - complex data [Office development in Visual Studio]
 ms.assetid: ff52fb56-1f67-4ae2-a3d1-93038619d4e6
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 3309d011d3b74093bd38f56eb6d063ae5b2c4821
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 9b106e9d1ef1fc10c5c0cd99ceaed76f87408713
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Walkthrough: Complex Data Binding in VSTO add-in Project
-  You can bind data to host controls and Windows Forms controls in VSTO Add-in projects. This walkthrough demonstrates how to add controls to a Microsoft Office Excel worksheet and bind the controls to data at run time.  
+# <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>逐步解說：VSTO 增益集專案中的複雜資料繫結
+  您可以將資料繫結至 VSTO 增益集專案中的主控制項和 Windows Form 控制項。 本逐步解說示範如何在執行階段將控制項加入 Microsoft Office Excel 工作表，以及將控制項繫結至資料。  
   
  [!INCLUDE[appliesto_xlallapp](../vsto/includes/appliesto-xlallapp-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Adding a <xref:Microsoft.Office.Tools.Excel.ListObject> control to a worksheet at run time.  
+-   在執行階段將 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項加入工作表。  
   
--   Creating a <xref:System.Windows.Forms.BindingSource> that connects the control to an instance of a dataset.  
+-   建立將控制項連接至資料集的 <xref:System.Windows.Forms.BindingSource> 執行個體。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
--   Access to a running instance of SQL Server 2005 or SQL Server 2005 Express that has the `AdventureWorksLT` sample database attached to it. You can download the `AdventureWorksLT` database from the [CodePlex Web site](http://go.microsoft.com/fwlink/?LinkId=115611). For more information about attaching a database, see the following topics:  
+-   已附加 `AdventureWorksLT` 範例資料庫之執行中 SQL Server 2005 或 SQL Server 2005 Express 執行個體的存取權。 您可以從 `AdventureWorksLT` CodePlex 網站 [下載](http://go.microsoft.com/fwlink/?LinkId=115611)資料庫。 如需附加資料庫的詳細資訊，請參閱下列主題：  
   
-    -   To attach a database by using SQL Server Management Studio or SQL Server Management Studio Express, see [How to: Attach a Database (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa).  
+    -   若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加資料庫，請參閱 [如何：附加資料庫 (SQL Server Management Studio)](http://msdn.microsoft.com/en-us/b4efb0ae-cfe6-4d81-a4b4-6e4916885caa)。  
   
-    -   To attach a database by using the command line, see [How to: Attach a Database File to SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68).  
+    -   若要使用命令列附加資料庫，請參閱 [如何：將資料庫檔案附加到 SQL Server Express](http://msdn.microsoft.com/en-us/0f8e42b5-7a8c-4c30-8c98-7d2bdc8dcc68)。  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- The first step is to create an Excel VSTO Add-in project.  
+## <a name="creating-a-new-project"></a>建立新專案  
+ 第一步是建立 Excel VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create an Excel VSTO Add-in project with the name **Populating Worksheets from a Database**, using either Visual Basic or C#.  
+1.  使用 Visual Basic 或 C#，建立名稱為「從資料庫填入工作表」 的 Excel VSTO 增益集專案。  
   
-     For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+     如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     Visual Studio opens the `ThisAddIn.vb` or `ThisAddIn.cs` file and adds the **Populating Worksheets from a Database** project to **Solution Explorer**.  
+     Visual Studio 會開啟 `ThisAddIn.vb` 或 `ThisAddIn.cs` 檔案，然後將 [從資料庫填入工作表]  專案加入方案總管 。  
   
-## <a name="creating-a-data-source"></a>Creating a Data Source  
- Use the **Data Sources** window to add a typed dataset to your project.  
+## <a name="creating-a-data-source"></a>建立資料來源  
+ 使用 [ **資料來源** ] 視窗將型別資料集加入專案。  
   
-#### <a name="to-add-a-typed-dataset-to-the-project"></a>To add a typed dataset to the project  
+#### <a name="to-add-a-typed-dataset-to-the-project"></a>將具類型資料集加入專案  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  如果看不到 [ **資料來源** ] 視窗，請在功能表列選擇 [ **檢視**]、[ **其他視窗**]、[ **資料來源**] 即可顯示。  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
   
-3.  Click **Database**, and then click **Next**.  
+3.  按一下 [ **資料庫**]，然後按 [ **下一步**]。  
   
-4.  If you have an existing connection to the `AdventureWorksLT` database, choose this connection and click **Next**.  
+4.  如果您有 `AdventureWorksLT` 資料庫的現有連接，請選擇這個連接，然後按 [ **下一步**]。  
   
-     Otherwise, click **New Connection**, and use the **Add Connection** dialog box to create the new connection. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
+     否則，請按一下 [ **新增連接**]，然後使用 [ **加入連接** ] 對話方塊建立新的連接。 如需詳細資訊，請參閱[加入新連接](../data-tools/add-new-connections.md)。  
   
-5.  In the **Save the Connection String to the Application Configuration File** page, click **Next**.  
+5.  在 [ **將連接字串儲存到應用程式組態檔** ] 頁面上，按 [ **下一步**]。  
   
-6.  In the **Choose Your Database Objects** page, expand **Tables** and select **Address (SalesLT)**.  
+6.  在 [選擇您的資料庫物件]  頁面中，展開 [資料表]  ，然後選取 [Address (SalesLT)] 。  
   
-7.  Click **Finish**.  
+7.  按一下 [ **完成**]。  
   
-     The AdventureWorksLTDataSet.xsd file is added to **Solution Explorer**. This file defines the following items:  
+     AdventureWorksLTDataSet.xsd 檔案已加入 **方案總管**中。 這個檔案會定義下列項目：  
   
-    -   A typed dataset named `AdventureWorksLTDataSet`. This dataset represents the contents of the **Address (SalesLT)** table in the AdventureWorksLT database.  
+    -   名為 `AdventureWorksLTDataSet`的具類型資料集。 這個資料集代表 AdventureWorksLT 資料庫中 [Address (SalesLT)]  資料表的內容。  
   
-    -   A TableAdapter named `AddressTableAdapter`. This TableAdapter can be used to read and write data in the `AdventureWorksLTDataSet`. For more information, see [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).  
+    -   名為 TableAdapter `AddressTableAdapter`。 此 TableAdapter 可以用來讀取和寫入資料`AdventureWorksLTDataSet`。 如需詳細資訊，請參閱 [TableAdapter Overview](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。  
   
-     You will use both of these objects later in this walkthrough.  
+     您將在本逐步解說稍後用到這兩個物件。  
   
-## <a name="creating-controls-and-binding-controls-to-data"></a>Creating Controls and Binding Controls to Data  
- For this walkthrough, the <xref:Microsoft.Office.Tools.Excel.ListObject> control displays all the data in the table you selected as soon as the user opens the workbook. The list object uses a <xref:System.Windows.Forms.BindingSource> to connect the control to the database.  
+## <a name="creating-controls-and-binding-controls-to-data"></a>建立控制項並將控制項繫結至資料  
+ 在本逐步解說中，只要使用者開啟活頁簿， <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項便會顯示您選取的資料表中的所有資料。 清單物件使用 <xref:System.Windows.Forms.BindingSource> 將控制項連接到資料庫。  
   
- For more information about binding controls to data, see [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md).  
+ 如需將控制項繫結至資料的詳細資訊，請參閱 [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)。  
   
-#### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>To add the list object, dataset, and table adapter  
+#### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>加入清單物件、資料集和資料表配接器  
   
-1.  In the `ThisAddIn` class, declare the following controls to display the `Address` table of the `AdventureWorksLTDataSet` dataset.  
+1.  在 `ThisAddIn` 類別中，宣告下列控制項來顯示 `Address` 資料集的 `AdventureWorksLTDataSet` 資料表。  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]  [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
+     [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]  
   
-2.  In the `ThisAddIn_Startup` method, add the following code to initialize the dataset and fill the dataset with information from the `AdventureWorksLTDataSet` dataset.  
+2.  在 `ThisAddIn_Startup` 方法中，加入下列程式碼來初始化資料集，並在資料集中填入來自 `AdventureWorksLTDataSet` 資料集的資訊。  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]  [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
+     [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]  
   
-3.  Add the following code to the `ThisAddIn_Startup` method. This generates a host item that extends the worksheet. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+3.  將下列程式碼加入至 `ThisAddIn_Startup` 方法。 這會產生可擴充工作表的主項目。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]  [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
+     [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]  
   
-4.  Create a range and add the <xref:Microsoft.Office.Tools.Excel.ListObject> control.  
+4.  建立一個範圍並加入 <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項。  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]  [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
+     [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]  
   
-5.  Bind the list object to `AdventureWorksLTDataSet` by using the <xref:System.Windows.Forms.BindingSource>. Pass in the names of the columns you want to bind to the list object.  
+5.  使用 `AdventureWorksLTDataSet` 將清單物件繫結至 <xref:System.Windows.Forms.BindingSource>。 將您要繫結的資料行名稱傳入清單物件。  
   
-     [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]  [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]  
+     [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
+     [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you open Excel, the <xref:Microsoft.Office.Tools.Excel.ListObject> control displays the data from the `Address` table of the `AdventureWorksLTDataSet` dataset.  
+## <a name="testing-the-add-in"></a>測試增益集  
+ 當您開啟 Excel 時， <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項會顯示 `Address` 資料集之 `AdventureWorksLTDataSet` 資料表中的資料。  
   
-#### <a name="to-test-the-vsto-add-in"></a>To test the VSTO Add-in  
+#### <a name="to-test-the-vsto-add-in"></a>測試 VSTO 增益集  
   
--   Press **F5**.  
+-   請按 **F5**。  
   
-     A <xref:Microsoft.Office.Tools.Excel.ListObject> control named `addressListObject` is created in the worksheet. At the same time, a dataset object named `adventureWorksLTDataSet` and a <xref:System.Windows.Forms.BindingSource> named `addressBindingSource` are added to the project. The <xref:Microsoft.Office.Tools.Excel.ListObject> is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the dataset object.  
+     工作表中會建立名為 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控制項。 同時也會將名為 `adventureWorksLTDataSet` 的資料集物件和名為 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 加入專案。 <xref:Microsoft.Office.Tools.Excel.ListObject> 會繫結至 <xref:System.Windows.Forms.BindingSource>，而後者則繫結至資料集物件。  
   
-## <a name="see-also"></a>See Also  
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [How to: Populate Worksheets with Data from a Database](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from a Database](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
- [How to: Populate Documents with Data from Services](../vsto/how-to-populate-documents-with-data-from-services.md)   
- [How to: Populate Documents with Data from Objects](../vsto/how-to-populate-documents-with-data-from-objects.md)   
- [How to: Scroll Through Database Records in a Worksheet](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
- [How to: Update a Data Source with Data from a Host Control](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
- [Walkthrough: Simple Data Binding in a Document-Level Project](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
- [Walkthrough: Complex Data Binding in a Document-Level Project](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Add new data sources](/visualstudio/data-tools/add-new-data-sources)   
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Using Local Database Files in Office Solutions Overview](../vsto/using-local-database-files-in-office-solutions-overview.md)   
- [Connecting to Data in Windows Forms Applications](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
- [BindingSource Component Overview](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
+## <a name="see-also"></a>另請參閱  
+ [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
+ [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [如何： 從資料庫的資料填入工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)   
+ [如何： 從資料庫的資料填入文件](../vsto/how-to-populate-documents-with-data-from-a-database.md)   
+ [如何： 從服務的資料填入文件](../vsto/how-to-populate-documents-with-data-from-services.md)   
+ [如何： 從物件的資料填入文件](../vsto/how-to-populate-documents-with-data-from-objects.md)   
+ [如何： 捲動資料庫記錄中工作表](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)   
+ [如何： 從主控制項的資料更新資料來源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)   
+ [逐步解說： 在文件層級專案中的簡單資料繫結](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)   
+ [逐步解說： 在文件層級專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md)   
+ [使用 Office 方案概觀中的本機資料庫檔案](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [加入新的資料來源](/visualstudio/data-tools/add-new-data-sources)   
+ [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+ [使用 Office 方案概觀中的本機資料庫檔案](../vsto/using-local-database-files-in-office-solutions-overview.md)   
+ [連接到 Windows Form 應用程式中的資料](/visualstudio/data-tools/connecting-to-data-in-windows-forms-applications)   
+ [BindingSource 元件概觀](/dotnet/framework/winforms/controls/bindingsource-component-overview)  
   
   

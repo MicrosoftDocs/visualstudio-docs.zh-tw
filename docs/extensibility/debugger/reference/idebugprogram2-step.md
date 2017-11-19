@@ -1,69 +1,69 @@
 ---
-title: "IDebugProgram2::Step | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Step"
-helpviewer_keywords: 
-  - "IDebugProgram2::Step"
+title: "IDebugProgram2::Step |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Step
+helpviewer_keywords: IDebugProgram2::Step
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d0e4b8533c1b6a14c61fc556f06594945037bbbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Step
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-執行一個步驟。  
+# <a name="idebugprogram2step"></a>IDebugProgram2::Step
+會執行步驟。  
   
 > [!NOTE]
->  這個方法已被取代。  請改用 [逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md) 方法。  
+>  這個方法已被取代。 使用[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法改為。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Step(   
-   IDebugThread2*  pThread,  
-   STEPKIND        sk,  
-   STEPUNIT        step  
+```cpp  
+HRESULT Step(   
+   IDebugThread2*  pThread,  
+   STEPKIND        sk,  
+   STEPUNIT        step  
 );  
 ```  
   
-```c#  
-int Step(   
-   IDebugThread2  pThread,  
-   enum_STEPKIND  sk,  
-   enum_STEPUNIT  step  
+```csharp  
+int Step(   
+   IDebugThread2  pThread,  
+   enum_STEPKIND  sk,  
+   enum_STEPUNIT  step  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pThread`  
- \[in\][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表正在螞蟻的執行緒。  
+ [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表要逐步執行的執行緒。  
   
  `sk`  
- \[in\]介於[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)指定的步驟類型的列舉型別。  
+ [in]中的值[STEPKIND](../../../extensibility/debugger/reference/stepkind.md)列舉，指定步驟的類型。  
   
  `step`  
- \[in\]介於[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md) \(例如，藉由陳述式或指令\) 中指定的單位是步驟的列舉型別。  
+ [in]中的值[STEPUNIT](../../../extensibility/debugger/reference/stepunit.md)列舉，指定步驟的單位 （例如，陳述式所指示）。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 如果有任何的執行緒同步處理或執行緒之間的通訊，當在逐步執行特定的執行緒時，就應該會執行其他程式中的執行緒。  
+## <a name="remarks"></a>備註  
+ 萬一有任何執行緒同步處理或執行緒之間的通訊，當特定的執行緒逐步執行時，就應該會執行程式中的其他執行緒。  
   
 > [!WARNING]
->  不要傳送停止事件或立即 \(同步\) 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫。 否則偵錯工具可能會停止回應。  
+>  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
- [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

@@ -1,56 +1,57 @@
 ---
-title: "IDebugMemoryContext2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMemoryContext2::GetInfo"
-helpviewer_keywords: 
-  - "GetInfo 方法"
-  - "IDebugMemoryContext2::GetInfo 方法"
+title: "IDebugMemoryContext2::GetInfo |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMemoryContext2::GetInfo
+helpviewer_keywords:
+- GetInfo method
+- IDebugMemoryContext2::GetInfo method
 ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c5e095f8c3d786319cbdcdcc1a2b60369c0304f8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMemoryContext2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取[CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)結構描述內容。  
+# <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
+擷取[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構描述內容。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetInfo(   
-   CONTEXT_INFO_FIELDS dwFields,  
-   CONTEXT_INFO*       pInfo  
+```cpp  
+HRESULT GetInfo(   
+   CONTEXT_INFO_FIELDS dwFields,  
+   CONTEXT_INFO*       pInfo  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetInfo(  
-   enum_CONTEXT_INFO_FIELDS dwFields,   
-   CONTEXT_INFO[]           pinfo  
+   enum_CONTEXT_INFO_FIELDS dwFields,   
+   CONTEXT_INFO[]           pinfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwFields`  
- \[in\]從的旗標組合[CONTEXT\_INFO\_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉型別，會指出哪一個欄位的[CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)結構有要填滿。  
+ [in]從旗標的組合[CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)列舉型別，以指出哪些欄位的[CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)結構要填滿。  
   
  `pInfo`  
- 輸入 \[、 輸出\]`CONTEXT_INFO`將被填入的結構。  
+ [in、 out]`CONTEXT_INFO`會自動填入的結構。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)   
- [CONTEXT\_INFO\_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
- [CONTEXT\_INFO](../../../extensibility/debugger/reference/context-info.md)
+ [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)   
+ [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

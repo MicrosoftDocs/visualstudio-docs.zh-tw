@@ -1,61 +1,63 @@
 ---
-title: "&lt;document&gt; 項目 (Visual Studio 中的 Office 程式開發)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "document 項目"
-  - "應用程式資訊清單 [Visual Studio 中的 Office 程式開發]、<document> 項目"
-  - "<document> 項目"
+title: "&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- document element
+- application manifests [Office development in Visual Studio], <document> element
+- <document> element
 ms.assetid: b4525a0e-8a03-4881-a3e2-8cc019029071
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 48995b4a40d4e67b0c0e2e44d66545c4c90dd26b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;document&gt; 項目 (Visual Studio 中的 Office 程式開發)
-  `vstov4` 命名空間的 `document` 項目會儲存文件層級自訂的自訂特定資訊。  
+# <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;文件&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+  `document`元素`vstov4`命名空間儲存文件層級自訂的自訂特定資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <document solutionId />  
 ```  
   
-## 項目和屬性  
- 文件層級自訂才需要。  `document` 項目位於 `vstov4` 命名空間。  `document` 項目具有下列屬性。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ 只有需要文件層級自訂。 `document`元素為`vstov4`命名空間。 `document`元素都具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`solutionId`|必要項。  Visual Studio工具使用 Office 的執行階段的唯一識別文件層級解決方案的 GUID。  這個值會儲存為 \_AssemblyLocation 自訂文件屬性。  如需詳細資訊，請參閱[自訂文件屬性概觀](../vsto/custom-document-properties-overview.md)。|  
+|---------------|-----------------|  
+|`solutionId`|必要項。 由 Visual Studio Tools for Office runtime 用來唯一識別文件層級方案的 GUID。 這個值會儲存為 _AssemblyLocation 自訂文件屬性。 如需詳細資訊，請參閱 [Custom Document Properties Overview](../vsto/custom-document-properties-overview.md)。|  
   
- `document` 沒有子項目。  
+ `document`沒有任何子項目。  
   
-## 文件層級自訂範例  
+## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
-### 描述  
- 在下列程式碼範例中，會示範使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 所部署之文件層級 Office 方案中的 `document` 項目。  這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)中完整範例的一部分。  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明`document`所部署之文件層級 Office 方案中的項目[!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
   
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
 <vstov4:document   
   solutionId="73e" />  
 ```  
   
-## 請參閱  
- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   
   

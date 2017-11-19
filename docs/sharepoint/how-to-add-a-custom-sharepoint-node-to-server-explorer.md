@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Custom SharePoint Node to Server Explorer | Microsoft Docs'
+title: "如何： 自訂 SharePoint 節點加入至伺服器總管 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,27 +14,26 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 ms.assetid: b992a192-f926-45e6-9416-85ddfe1061d0
-caps.latest.revision: 36
-author: kempb
-ms.author: kempb
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1f54a2dd7ed96eaf34de9b6bf064baa71eb3ecec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7aa3ccbeaae231b0abf4885c592addc586ccfb28
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>How to: Add a Custom SharePoint Node to Server Explorer
-  You can add custom nodes under the **SharePoint Connections** node in **Server Explorer**. This is useful when you want to display additional SharePoint components that are not displayed in **Server Explorer** by default. For more information, see [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).  
+# <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：在伺服器總管中新增自訂 SharePoint 節點
+  您可以自訂下加入節點**SharePoint 連接**節點**伺服器總管**。 當您想要顯示其他 SharePoint 元件中不會顯示，這非常有用**伺服器總管**預設。 如需詳細資訊，請參閱[擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。  
   
- To add a custom node, first create a class that defines the new node. Then create an extension that adds the node as a child of an existing node.  
+ 若要新增自訂的節點，請先建立一個類別來定義新的節點。 然後建立擴充功能，將節點加入現有節點的子系。  
   
-### <a name="to-define-the-new-node"></a>To define the new node  
+### <a name="to-define-the-new-node"></a>若要定義新的節點  
   
-1.  Create a class library project.  
+1.  建立類別庫 (Class Library) 專案。  
   
-2.  Add references to the following assemblies:  
+2.  加入下列組件的參考：  
   
     -   Microsoft.VisualStudio.SharePoint  
   
@@ -46,49 +43,52 @@ ms.lasthandoff: 08/30/2017
   
     -   System.Drawing  
   
-3.  Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface.  
+3.  建立實作 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 介面的類別。  
   
-4.  Add the following attributes to the class:  
+4.  類別中加入下列屬性：  
   
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. This attribute enables Visual Studio to discover and load your <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> implementation. Pass the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> type to the attribute constructor.  
+    -   <xref:System.ComponentModel.Composition.ExportAttribute>. 這個屬性可讓 Visual Studio 來探索和載入您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>屬性建構函式的類型。  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. In a node definition, this attribute specifies the string identifier for the new node. We recommend that you use the format *company name*.*node name* to make sure that all nodes have a unique identifier.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>. 在節點定義中，這個屬性會指定新節點的字串識別項。 我們建議您使用格式*公司名稱*。*節點名稱*以確定所有節點都有唯一的識別項。  
   
-5.  In your implementation of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A> method, use members of the *typeDefinition* parameter to configure the behavior of the new node. This parameter is an <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition> object that provides access to the events defined in the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> interface.  
+5.  在您實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider.InitializeType%2A>方法，使用成員*typeDefinition*參數來設定新節點的行為。 這個參數是<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>物件，提供存取權中定義的事件<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents>介面。  
   
-     The following code example demonstrates how to define a new node. This example assumes that your project contains an icon named CustomChildNodeIcon as an embedded resource.  
+     下列程式碼範例示範如何定義新的節點。 這個範例假設您的專案包含名為 CustomChildNodeIcon 做為內嵌資源的圖示。  
   
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]  
+     [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
+     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]  
   
-### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>To add the new node as a child of an existing node  
+### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>將新節點新增為現有節點的子系  
   
-1.  In the same project as your node definition, create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface.  
+1.  與節點定義相同的專案，在建立類別，可實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>介面。  
   
-2.  Add the <xref:System.ComponentModel.Composition.ExportAttribute> attribute to the class. This attribute enables Visual Studio to discover and load your <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> implementation. Pass the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> type to the attribute constructor.  
+2.  新增<xref:System.ComponentModel.Composition.ExportAttribute>屬性加入該類別。 這個屬性可讓 Visual Studio 來探索和載入您<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>實作。 傳遞<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>屬性建構函式的類型。  
   
-3.  Add the <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute> attribute to the class. In a node extension, this attribute specifies the string identifier for the type of node that you want to extend.  
+3.  新增<xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypeAttribute>屬性加入該類別。 在 「 節點延伸模組，這個屬性會指定您想要擴充的節點類型的字串識別項。  
   
-     To specify built-in node types provided by Visual Studio, pass one of the following enumeration values to the attribute constructor:  
+     若要指定 Visual Studio 所提供的內建的節點型別，請將下列的列舉值的其中一個傳遞至屬性建構函式：  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>: Use these values to specify site connection nodes (the nodes that display site URLs), site nodes, or all other parent nodes in **Server Explorer**.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeTypes>： 使用這些值，指定站台連線節點 （節點顯示的網站 Url），站台的節點或在其他所有的父節點**伺服器總管**。  
   
-    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>: Use these values to specify one of the built-in nodes that represent an individual component on a SharePoint site, such as a node that represents a list, field, or content type.  
+    -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.ExtensionNodeTypes>： 若要指定其中一個內建節點表示 SharePoint 網站，例如清單、 欄位或內容類型表示的節點上的個別元件使用這些值。  
   
-4.  In your implementation of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> method, handle the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> event of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> parameter.  
+4.  在您實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A>方法時，控制代碼<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>事件<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType>參數。  
   
-5.  In the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested> event handler, add the new node to the child nodes collection of the <xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A> object that is exposed by the event arguments parameter.  
+5.  在<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>事件處理常式，將新節點加入至子節點集合的<xref:Microsoft.VisualStudio.SharePoint.Explorer.ExplorerNodeEventArgs.Node%2A>事件引數參數所公開的物件。  
   
-     The following code example demonstrates how to add the new node as a child of the SharePoint site node in **Server Explorer**.  
+     下列程式碼範例示範如何將新節點新增為子系中的 SharePoint 網站節點**伺服器總管**。  
   
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]  
+     [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
+     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]  
   
-## <a name="complete-example"></a>Complete Example  
- The following code example provides the complete code to define a simple node and add it as a child of the SharePoint site node in **Server Explorer**.  
+## <a name="complete-example"></a>完整範例  
+ 下列程式碼範例提供完整的程式碼定義簡單的節點，並將其新增為子系中的 SharePoint 網站節點**伺服器總管**。  
   
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)] [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]  
+ [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
+ [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example assumes that your project contains an icon named CustomChildNodeIcon as an embedded resource. This example also requires references to the following assemblies:  
+## <a name="compiling-the-code"></a>編譯程式碼  
+ 這個範例假設您的專案包含名為 CustomChildNodeIcon 做為內嵌資源的圖示。 這個範例也會需要下列組件的參考：  
   
 -   Microsoft.VisualStudio.SharePoint  
   
@@ -96,12 +96,12 @@ ms.lasthandoff: 08/30/2017
   
 -   System.Drawing  
   
-## <a name="deploying-the-extension"></a>Deploying the Extension  
- To deploy the **Server Explorer** extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>部署擴充功能  
+ 若要部署**伺服器總管**延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要發佈副檔名的檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>See Also  
- [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [How to: Extend a SharePoint Node in Server Explorer](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
+## <a name="see-also"></a>另請參閱  
+ [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
+ [如何： 擴充 SharePoint 節點在 伺服器總管](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)   
+ [逐步解說：擴充伺服器總管以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)  
   
   

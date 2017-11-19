@@ -1,12 +1,10 @@
 ---
-title: 'How to: Remove Managed Code Extensions from Documents | Microsoft Docs'
+title: "如何： 從文件移除 Managed 程式碼擴充 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,50 +14,51 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], removing
 - documents [Office development in Visual Studio], managed code extensions
 ms.assetid: e893d9a5-72a5-4087-b81b-04d4d3d9ebf8
-caps.latest.revision: 30
-author: kempb
-ms.author: kempb
+caps.latest.revision: "30"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2a70cf3bffc46632eaa85e8b999cd3c366d1cde2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f9da75468ae417bd835b457cdbd5219ef9462df1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-remove-managed-code-extensions-from-documents"></a>How to: Remove Managed Code Extensions from Documents
-  You can programmatically remove the customization assembly from a document or workbook that is part of a document-level customization for Microsoft Office Word or Microsoft Office Excel. Users can then open the documents and view the contents, but any custom user interface (UI) you add to the documents will not appear, and your code will not run.  
+# <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：從文件移除 Managed 程式碼擴充
+  您可以透過程式設計方式移除自訂組件的文件或 Microsoft Office Word 或 Microsoft Office Excel 文件層級自訂一部分的活頁簿。 使用者可以開啟文件並檢視其內容，但是不會出現您加入文件任何自訂使用者介面 (UI)，而且將不會執行您的程式碼。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- You can remove the customization assembly by using one of the RemoveCustomization methods provided by the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Which method you use depends on whether you want to remove the customization at run time (that is, by running code in the customization while the Word document or Excel workbook is open), or if you want to remove the customization from a closed document or a document that is on a server that does not have Microsoft Office installed.  
+ 您可以使用其中一種和快取所提供的方法來移除自訂組件[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 您使用的方法取決於您是否想要移除自訂執行階段 （也就是這個字時自訂中執行程式碼文件或 Excel 活頁簿已展開），或如果您想要移除已關閉的文件或文件的自訂 is 並沒有安裝 Microsoft Office 的伺服器上。  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Attach or Detach a VSTO Assembly from a Word Document?](http://go.microsoft.com/fwlink/?LinkId=136782).  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 附加或卸離 VSTO 組件從 Word 文件？](http://go.microsoft.com/fwlink/?LinkId=136782)。  
   
-### <a name="to-remove-the-customization-assembly-at-run-time"></a>To remove the customization assembly at run time  
+### <a name="to-remove-the-customization-assembly-at-run-time"></a>若要移除自訂組件，在執行階段  
   
-1.  In your customization code, call the <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> method (for Word) or the <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> method (for Excel). This method should be called only after the customization is no longer needed.  
+1.  在您的自訂程式碼，呼叫<xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A>（適用於 Word) 的方法或<xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A>（針對 Excel) 的方法。 不再需要自訂之後，才應該呼叫這個方法。  
   
-     Where you call this method in your code depends on how your customization is used. For example, if customers use your customization's features until they are ready to send the document to other clients that only need to the document itself (not the customization), you can provide some UI that calls RemoveCustomization when the customer clicks it. Alternatively, if your customization populates the document with data when it is first opened, but the customization doesn't provide any other features that are accessed directly by customers, then you can call RemoveCustomization as soon as your customization finishes initializing the document.  
+     程式碼中呼叫這個方法，取決於您的自訂的使用方式。 例如，如果客戶使用您的自訂功能，直到他們就可以將文件傳送至其他用戶端只需要在文件本身 （不是自訂），您可以提供呼叫和快取，當客戶按一下它時一些 UI。 或者，如果第一次開啟時，但自訂不會提供直接存取客戶的其他任何功能時，您的自訂會填入資料的文件，然後您可以呼叫和快取項目一旦您的自訂完成初始化文件。  
   
-### <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>To remove the customization assembly from a closed document or a document on a server  
+### <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>若要移除已關閉的文件或文件的伺服器上的自訂組件  
   
-1.  In a project that does not require Microsoft Office, such as a console application or Windows Forms project, add a reference to the Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll assembly.  
+1.  在不需要 Microsoft Office，例如主控台應用程式的專案或 Windows Form 專案中，加入 Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll 組件的參考。  
   
-2.  Add the following **Imports** or **using** statement to the top of your code file.  
+2.  加入下列**匯入**或**使用**陳述式加入您的程式碼檔案頂端。  
   
-     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]  [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]  
+     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
+     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]  
   
-3.  Call the static <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> method of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class, and specify the solution document path for the parameter.  
+3.  呼叫靜態<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A>方法<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別，並指定參數的方案文件路徑。  
   
-     The following code example assumes that you are removing the customization from a document named **WordDocument1.docx** that is on the desktop.  
+     下列程式碼範例假設您要從名為文件移除自訂**WordDocument1.docx** ，會在桌面上。  
   
-     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]  [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]  
+     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
+     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]  
   
-4.  Build the project and run the application on the computer where you want to remove the customization. The computer must have the Visual Studio 2010 Tools for Office Runtime installed.  
+4.  建置專案，並執行您要移除自訂應用程式的電腦上。 電腦必須有 Visual Studio 2010 Tools for Office Runtime 安裝。  
   
-## <a name="see-also"></a>See Also  
- [Managing Documents on a Server by Using the ServerDocument Class](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
- [How to: Attach Managed Code Extensions to Documents](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [使用 ServerDocument 類別管理伺服器上的文件](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)   
+ [如何：將 Managed 程式碼擴充附加至文件](../vsto/how-to-attach-managed-code-extensions-to-documents.md)  
   
   

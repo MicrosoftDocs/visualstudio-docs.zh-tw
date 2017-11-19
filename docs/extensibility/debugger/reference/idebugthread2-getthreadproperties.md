@@ -1,61 +1,61 @@
 ---
-title: "IDebugThread2::GetThreadProperties | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugThread2::GetThreadProperties"
-helpviewer_keywords: 
-  - "IDebugThread2::GetThreadProperties"
+title: "IDebugThread2::GetThreadProperties |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugThread2::GetThreadProperties
+helpviewer_keywords: IDebugThread2::GetThreadProperties
 ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5c118d8ccb4520cd63e2da91f0f807c7d6bc6ca8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugThread2::GetThreadProperties
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 取得描述這個執行緒的屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetThreadProperties (   
-   THREADPROPERTY_FIELDS dwFields,  
-   THREADPROPERTIES*     ptp  
+```cpp  
+HRESULT GetThreadProperties (   
+   THREADPROPERTY_FIELDS dwFields,  
+   THREADPROPERTIES*     ptp  
 );  
 ```  
   
-```c#  
-int GetThreadProperties (   
-   enum_THREADPROPERTY_FIELDS dwFields,  
-   THREADPROPERTIES[]         ptp  
+```csharp  
+int GetThreadProperties (   
+   enum_THREADPROPERTY_FIELDS dwFields,  
+   THREADPROPERTIES[]         ptp  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwFields`  
- \[in\]從的旗標組合[THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉型別，以判斷哪一個欄位的`ptp`將會自動填入。  
+ [in]從旗標的組合[THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)列舉，可判斷哪些欄位的`ptp`會先填入。  
   
  `ptp`  
- 輸入 \[、 輸出\]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構，會填入這些執行緒的屬性。  
+ [in、 out]A [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構，填入這些執行緒的內容。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 這個方法傳回的資訊通常顯示在**執行緒**偵錯\] 視窗。  
+## <a name="remarks"></a>備註  
+ 從這個方法傳回的資訊通常會顯示在**執行緒**偵錯視窗。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CProgram`實作物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CProgram`實作物件[IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,  
                                       THREADPROPERTIES *ptp)  
 {  
@@ -91,7 +91,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)   
- [THREADPROPERTY\_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
+ [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

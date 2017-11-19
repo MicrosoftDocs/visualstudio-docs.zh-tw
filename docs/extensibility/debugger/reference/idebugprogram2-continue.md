@@ -1,58 +1,58 @@
 ---
-title: "IDebugProgram2::Continue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Continue"
-helpviewer_keywords: 
-  - "IDebugProgram2::Continue"
+title: "IDebugProgram2::Continue |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Continue
+helpviewer_keywords: IDebugProgram2::Continue
 ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 81a8bf23ee0272f448c49b6d58d194d3ba261509
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Continue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-會繼續執行此程式從停止的狀態。  要保留任何先前的執行狀態 \(例如，一個步驟中\)，程式即開始執行一次。  
+# <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
+會繼續執行此程式從已停止的狀態。 會保留任何先前的執行狀態 （例如步驟），並在程式啟動重新執行。  
   
 > [!NOTE]
->  這個方法已被取代。  請改用 [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md) 方法。  
+>  這個方法已被取代。 使用[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法改為。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Continue(   
-   IDebugThread2* pThread  
+```cpp  
+HRESULT Continue(   
+   IDebugThread2* pThread  
 );  
 ```  
   
-```c#  
-int Continue(   
-   IDebugThread2 pThread  
+```csharp  
+int Continue(   
+   IDebugThread2 pThread  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pThread`  
- \[in\][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)表示執行緒的物件。  
+ [in][IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)物件，代表在執行緒。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 在這個程式，不論多少程式正在進行偵錯，哪一個程式所產生的停止事件，會呼叫這個方法。  實作必須保留先前的執行狀態 \(例如，一個步驟中\)，且繼續執行，就好像它永遠不會已停止之前完成之前執行。  也就是說，如果此程式中的執行緒正在執行 「 進入 」 作業，已停止，因為其他程式停止，而且會呼叫這個方法後再程式必須先完成進入函式 9。  
+## <a name="remarks"></a>備註  
+ 此程式正在進行偵錯程式數目，不論哪一個程式所產生的 「 停止 」 事件上呼叫這個方法。 實作必須保留先前的執行狀態 （例如步驟），並繼續執行，就好像它永遠不會具有停止之前完成之前執行。 也就是說，如果此程式中的執行緒正在執行之工作的步驟移轉作業，而且已停止，因為某些其他程式停止，而且而呼叫這個方法，程式必須完成原始進入作業。  
   
 > [!WARNING]
->  不要傳送停止事件或立即 \(同步\) 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫。 否則偵錯工具可能會停止回應。  
+>  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
- [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
+ [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

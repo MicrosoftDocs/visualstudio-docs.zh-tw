@@ -1,24 +1,25 @@
 ---
-title: "HOW TO：根據 XSD 結構描述建立 XML 文件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "如何： 建立根據 XSD 結構描述的 XML 文件 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
-caps.latest.revision: 2
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 5d4b4f91a6fb5b85cdd5e9bf6d9f2932c88e6ab7
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-# HOW TO：根據 XSD 結構描述建立 XML 文件
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[**產生範例 XML**\] 功能會根據 XML 結構描述 \(XSD\) 檔案產生範例 XML 檔。  
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>HOW TO：根據 XSD 結構描述建立 XML 文件
+**產生範例 XML**功能會產生範例 XML 檔案，根據 XML 結構描述 (XSD) 檔案。  
   
  您可以針對下列案例使用此選項：  
   
@@ -26,29 +27,29 @@ caps.handback.revision: 2
   
 -   確認結構描述進行預期的作業。  
   
- \[**產生範例 XML**\] 功能僅適用於全域項目，而且需要有效的 XML 結構描述設定。  
+**產生範例 XML**功能僅適用於全域項目，而且需要有效的 XML 結構描述設定。  
   
- 這項功能通常會產生有效的 XML 文件。不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：  
+這項功能通常會產生有效的 XML 文件。 不過，如果結構描述包含下列其中一個或多個項目，範例可能就會無效：  
   
 -   `xs:key`、`xs:keyref` 和 `xs:unique` 識別條件約束。  
   
 -   `xs:pattern` Facet。  
   
--   `xs:QName` 型別的列舉型別 \(Enumeration\)。  
+-   `xs:QName` 型別的列舉型別 (Enumeration)。  
   
 -   `xs:ENTITY`、`xs:ENTITIES` 和 `xs:NOTATION` 型別。  
   
- 此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。  
+此外，請注意，只有當列舉型別出現在 `xs:base64Binary` 的結構描述時，系統才會產生該型別的內容。  
   
-### 根據 XSD 檔案產生 XML 執行個體文件  
+### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>根據 XSD 檔案產生 XML 執行個體文件  
   
-1.  請依照 [HOW TO：建立和編輯 XSD 結構描述檔](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)中的步驟進行。  
+1.  請依照[How to： 建立和編輯 XSD 結構描述檔案](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md)。  
   
-2.  以滑鼠右鍵按一下 [XML 結構描述總管](../xml-tools/xml-schema-explorer.md)中的 `PurchaseOrder` 全域項目。選取 \[**產生範例 XML**\]。  
+2.  在[XML 結構描述總管](../xml-tools/xml-schema-explorer.md)，以滑鼠右鍵按一下`PurchaseOrder`全域項目。 選取**產生範例 XML**。  
   
      當您選取此選項時，會產生含有下列範例 XML 內容的 PurchaseOrder.xml 檔，並在 XML 編輯器中開啟。  
   
-    ```  
+    ```xml
     <?xml version="1.0" encoding="utf-8"?>  
     <PurchaseOrder OrderDate="1900-01-01" xmlns="http://tempuri.org/PurchaseOrderSchema.xsd">  
       <ShipTo country="US">  
@@ -75,5 +76,5 @@ caps.handback.revision: 2
     </PurchaseOrder>  
     ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用 XML 資料](../xml-tools/working-with-xml-data.md)

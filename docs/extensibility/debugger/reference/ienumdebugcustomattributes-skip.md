@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugCustomAttributes::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumCustomAttributes::Skip"
-helpviewer_keywords: 
-  - "IEnumDebugCustomAttributes::Skip"
+title: "IEnumDebugCustomAttributes::Skip |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumCustomAttributes::Skip
+helpviewer_keywords: IEnumDebugCustomAttributes::Skip
 ms.assetid: 54c72e23-cd4c-4746-935c-abea8057dd1b
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a0a29d46bc5438976830e70e5016b37831e44b45
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugCustomAttributes::Skip
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-略過指定的數目的列舉型別序列中的自訂屬性。  
+# <a name="ienumdebugcustomattributesskip"></a>IEnumDebugCustomAttributes::Skip
+略過指定的數目的列舉順序中的自訂屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Skip (   
-   ULONG celt  
+```cpp  
+HRESULT Skip (   
+   ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
-   uint celt  
+   uint celt  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `celt`  
- \[in\]若要跳過的項目數目。  
+ [in]略過的項目數目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果`celt`大於其餘的項目 ； 數目 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果`celt`其餘項目數目大於; 否則傳回錯誤碼。  
   
-## 備註  
- 如果`celt`指定的值是無效的其餘的項目，列舉型別設定為 \[結束和`S_FALSE`會傳回。  
+## <a name="remarks"></a>備註  
+ 如果`celt`指定的值大於數的其餘項目，列舉型別設定為結束和`S_FALSE`傳回。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Create a Custom Site Workflow Activity | Microsoft Docs'
+title: "逐步解說： 建立自訂站台工作流程活動 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,117 +19,117 @@ helpviewer_keywords:
 - workflow activities [SharePoint development in Visual Studio]
 - SharePoint development in Visual Studio, site workflows
 ms.assetid: 8219a779-c27b-4186-92c9-5bda03328aa9
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 794ffdffb96c7b0914c283f13ec8ca7014f425b0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 6d3579c3d537dc13723cbe285b454b24d079fe1f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>Walkthrough: Create a Custom Site Workflow Activity
-  This walkthrough demonstrates how to create a custom activity for a site-level workflow using [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. (Site-level workflows apply to the whole site, not just a list on the site.) The custom activity creates a backup Announcements list and then copies the contents of the Announcements list into it.  
+# <a name="walkthrough-create-a-custom-site-workflow-activity"></a>逐步解說：建立自訂站台工作流程活動
+  本逐步解說示範如何建立網站層級的工作流程使用的自訂活動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 （網站層級的工作流程套用至整個網站，而不只是站台上的清單）。自訂活動會建立備份公告清單，然後公告清單的內容複製到其中。  
   
- This walkthrough demonstrates the following tasks:  
+ 本逐步解說將示範下列工作：  
   
--   Creating a site-level workflow.  
+-   建立站台層級工作流程。  
   
--   Creating a custom workflow activity.  
+-   建立自訂工作流程活動。  
   
--   Creating and deleting a SharePoint list.  
+-   建立和刪除 SharePoint 清單。  
   
--   Copying items from one list to another.  
+-   一個清單項目複製到另一個。  
   
--   Displaying a list on the QuickLaunch bar.  
+-   在 快速啟動列上顯示清單。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
--   Supported editions of [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的版本[!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)]和 SharePoint。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   Visual Studio.  
+-   Visual Studio。  
   
-## <a name="creating-a-site-workflow-custom-activity-project"></a>Creating a Site Workflow Custom Activity Project  
- First, create a project to hold and test the custom workflow activity.  
+## <a name="creating-a-site-workflow-custom-activity-project"></a>建立站台工作流程自訂活動專案  
+ 首先，建立專案來保存及測試的自訂工作流程活動。  
   
-#### <a name="to-create-a-site-workflow-custom-activity-project"></a>To create a site workflow custom activity project  
+#### <a name="to-create-a-site-workflow-custom-activity-project"></a>若要建立站台工作流程自訂活動專案  
   
-1.  On the menu bar, choose **File**, **New**, **Project** to display the **New Project** dialog box.  
+1.  在功能表列上選擇 [**檔案**，**新增**，**專案**顯示**新專案**] 對話方塊。  
   
-2.  Expand the **SharePoint** node under either **Visual C#** or **Visual Basic**, and then choose the **2010** node.  
+2.  展開**SharePoint**節點之下**Visual C#**或**Visual Basic**，然後選擇  **2010年**節點。  
   
-3.  In the **Templates** pane, choose the **SharePoint 2010 Project** template.  
+3.  在**範本** 窗格中，選擇**SharePoint 2010 專案**範本。  
   
-4.  In the **Name** box, enter **AnnouncementBackup**, and then choose the **OK** button.  
+4.  在**名稱**方塊中，輸入**AnnouncementBackup**，然後選擇 [**確定**] 按鈕。  
   
-     The **SharePoint Customization Wizard** appears.  
+     **SharePoint 自訂精靈**隨即出現。  
   
-5.  On the **Specify the site and security level for debugging** page, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the trust level and default site.  
+5.  上**指定偵錯的網站和安全性層級**頁面上，選擇**部署為伺服陣列方案**選項按鈕，然後再選擇**完成**接受按鈕信任層級和預設站台。  
   
-     This step sets the trust level for the solution as farm solution, the only available option for workflow projects.  
+     此步驟會設定為伺服器陣列方案，唯一可用的選項的工作流程專案方案的信任層級。  
   
-6.  In **Solution Explorer**, choose the project node, and then, on the menu bar, choose **Project**, **Add New Item**.  
+6.  在**方案總管] 中**，選擇專案節點，然後在功能表列上選擇 [**專案**，**加入新項目**。  
   
-7.  Under either **Visual C#** or **Visual Basic**, expand the **SharePoint** node, and then choose the **2010** node.  
+7.  之下**Visual C#**或**Visual Basic**，依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
-8.  In the **Templates** pane, choose the **Sequential Workflow (Farm Solution only)** template, and then choose the **Add** button.  
+8.  在**範本** 窗格中，選擇**循序工作流程 （僅限陣列方案）**範本，然後選擇 **新增** 按鈕。  
   
-     The **SharePoint Customization Wizard** appears.  
+     **SharePoint 自訂精靈**隨即出現。  
   
-9. On the **Specify the workflow name for debugging** page, accept the default name (AnnouncementBackup - Workflow1). Change the workflow template type to **Site Workflow**, and then choose the **Next** button.  
+9. 在**指定偵錯的工作流程名稱**頁面上，接受預設名稱 (AnnouncementBackup-Workflow1)。 將工作流程範本類型變更為**站台工作流程**，然後選擇 [**下一步**] 按鈕。  
   
-10. Choose the **Finish** button to accept the remaining default settings.  
+10. 選擇**完成** 按鈕，接受其餘的預設設定。  
   
-## <a name="adding-a-custom-workflow-activity-class"></a>Adding a Custom Workflow Activity Class  
- Next, add a class to the project to contain the code for the custom workflow activity.  
+## <a name="adding-a-custom-workflow-activity-class"></a>加入自訂工作流程活動類別  
+ 接下來，將類別加入專案，以包含自訂工作流程活動的程式碼。  
   
-#### <a name="to-add-a-custom-workflow-activity-class"></a>To add a custom workflow activity class  
+#### <a name="to-add-a-custom-workflow-activity-class"></a>若要加入自訂工作流程活動類別  
   
-1.  On the menu bar, choose **Project**, **Add New Item** to display the **Add New Item** dialog box.  
+1.  在功能表列上選擇 [**專案**，**加入新項目**顯示**加入新項目**] 對話方塊。  
   
-2.  In the **Installed Templates** tree view, choose the **Code** node, and then choose the **Class** template in the list of project item templates. Use the default name Class1. Choose the **Add** button.  
+2.  在**已安裝的範本**樹狀檢視中，選擇**程式碼**] 節點，然後選擇 [**類別**專案項目範本清單中的範本。 使用預設名稱 Class1。 選擇 [ **加入** ] 按鈕。  
   
-3.  Replace all of the code in Class1 with the following:  
+3.  以下列內容取代所有 Class1 的程式碼：  
   
-     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]  [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
+     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
+     [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]  
   
-4.  Save the project, and then, on the menu bar, choose **Build**, **Build Solution**.  
+4.  儲存專案，然後在功能表列上選擇 **建置**，**建置方案**。  
   
-     Class1 appears as a custom action in the **Toolbox** on the **AnnouncementBackup Components** tab.  
+     Class1 會顯示為中的自訂動作**工具箱**上**AnnouncementBackup 元件** 索引標籤。  
   
-## <a name="adding-the-custom-activity-to-the-site-workflow"></a>Adding the Custom Activity to the Site Workflow  
- Next, add an activity to the Workflow to contain the custom code.  
+## <a name="adding-the-custom-activity-to-the-site-workflow"></a>將自訂活動新增至站台工作流程  
+ 接下來，將活動加入至工作流程，以包含自訂程式碼。  
   
-#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>To add a custom activity to the site Workflow  
+#### <a name="to-add-a-custom-activity-to-the-site-workflow"></a>將自訂活動新增至站台工作流程  
   
-1.  Open Workflow1 in the workflow designer in design view.  
+1.  在 [設計] 檢視中的工作流程設計工具中開啟 Workflow1。  
   
-2.  Drag Class1 from the **Toolbox** so that it appears under the `onWorkflowActivated1` activity, or open the shortcut menu for Class1, choose **Copy**, open the shortcut menu for the line under the `onWorkflowActivated1` activity, and then choose **Paste**.  
+2.  拖曳從 Class1**工具箱**使其出現在`onWorkflowActivated1`活動或開啟捷徑功能表的 Class1 選擇**複製**，開啟下的那一行的捷徑功能表`onWorkflowActivated1`活動，然後選擇 **貼上**。  
   
-3.  Save the project.  
+3.  儲存專案。  
   
-## <a name="testing-the-site-workflow-custom-activity"></a>Testing the Site Workflow Custom Activity  
- Next, run the project and start the site workflow. The custom activity creates a backup Announcements list and copies the contents from the current Announcements list into it. The code also checks whether a backup list already exists before creating one. If a backup list already exists, it is deleted. The code also adds a link to the new list on the SharePoint site's QuickLaunch bar.  
+## <a name="testing-the-site-workflow-custom-activity"></a>測試站台工作流程自訂活動  
+ 接下來，請執行專案，並啟動網站工作流程。 自訂活動建立備份的公告清單，並將內容從目前的公告清單複製到其中。 程式碼也會檢查備份的清單是否已存在於之前建立一個。 如果備份清單已經存在，會將它刪除。 程式碼也會加入新的清單，在 SharePoint 網站的快速啟動列上的連結。  
   
-#### <a name="to-test-the-site-workflow-custom-activity"></a>To test the site workflow custom activity  
+#### <a name="to-test-the-site-workflow-custom-activity"></a>若要測試的站台工作流程自訂活動  
   
-1.  Choose the F5 key to run the project and deploy it to SharePoint.  
+1.  選擇 F5 鍵以執行專案，並將它部署至 SharePoint。  
   
-2.  On the QuickLaunch bar, choose the **Lists** link to display all of the lists that are available in the SharePoint site. Notice there is only one list for announcements named **Announcements**.  
+2.  在 快速啟動 列上選擇 **列出**連結可以顯示所有 SharePoint 網站中可用的清單。 請注意會宣告名為只能有一個清單**公告**。  
   
-3.  At the top of the SharePoint webpage, choose the **Site Workflows** link.  
+3.  在 SharePoint 網頁的頂端，選擇 **網站工作流程**連結。  
   
-4.  Under the Start a New Workflow section, choose the **AnnouncementBackup - Workflow1** link. This starts the site workflow and runs the code in the custom action.  
+4.  在 開始新的工作流程區段中，選擇**AnnouncementBackup-Workflow1**連結。 這樣會啟動網站工作流程，並執行自訂動作的程式碼。  
   
-5.  On the QuickLaunch bar, choose the **Announcements Backup** link. Notice that all of the announcements that are contained in the **Announcements** list have been copied to this new list.  
+5.  在 快速啟動 列上選擇 **公告備份**連結。 請注意，所有的宣告中所包含的**公告**清單已複製到這個新的清單。  
   
-## <a name="see-also"></a>See Also  
- [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)   
- [Developing SharePoint Solutions](../sharepoint/developing-sharepoint-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)   
+ [開發 SharePoint 方案](../sharepoint/developing-sharepoint-solutions.md)  
   
   

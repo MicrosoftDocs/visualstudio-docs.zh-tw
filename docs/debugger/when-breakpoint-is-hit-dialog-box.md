@@ -1,46 +1,43 @@
 ---
-title: "叫用中斷點時對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.whenbreakpointishit"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "中斷點時叫用的對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.whenbreakpointishit
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
 ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 2e91841f1146d23305577cc00059f0bf9d505a90
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 叫用中斷點時對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-透過這個對話方塊，您可以自訂叫用中斷點時所發生的動作。  
+# <a name="when-breakpoint-is-hit-dialog-box"></a>叫用中斷點時對話方塊
+使用此對話方塊中，您可以自訂中斷點叫用時所發生的動作。  
   
-## UIElement 清單  
+## <a name="uielement-list"></a>UIElement 清單  
  **列印訊息**  
- 使用 DebuggerDisplay 語法列印訊息。  如需詳細資訊，請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)。  
+ 列印訊息，使用 DebuggerDisplay 語法。 如需詳細資訊，請參閱[使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)。  
   
- 這個文字方塊也支援特殊關鍵字 \(例如 $ADDRESS\)，這些關鍵字可自己使用，或在 DebuggerDisplay 運算式的大括號內。  對話方塊上會列出可用的關鍵字。  
+ 此文字方塊也支援 （例如 $ADDRESS) 可以單獨使用或使用 DebuggerDisplay 運算式的括號內的特殊關鍵字。 在對話方塊中，會列出可用的關鍵字。  
   
  **繼續執行**  
- 只有在選取 \[**列印訊息**\] 時才會啟用這個控制項。  選取這個控制項時，您可以將中斷點當做追蹤點使用以追蹤程式執行，而不是在到達位置時中斷。  
+ 啟用此控制項時，才**列印訊息**已選取。 選取這個控制項，您可以使用中斷點當做追蹤點追蹤程式執行，而不是重大時叫用的位置。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用中斷點](../debugger/using-breakpoints.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)

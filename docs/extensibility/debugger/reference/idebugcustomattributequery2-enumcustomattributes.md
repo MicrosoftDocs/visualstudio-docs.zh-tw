@@ -1,52 +1,52 @@
 ---
-title: "IDebugCustomAttributeQuery2::EnumCustomAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttributeQuery2::EnumCustomAttributes"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery2::EnumCustomAttributes"
+title: "IDebugCustomAttributeQuery2::EnumCustomAttributes |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
+helpviewer_keywords: IDebugCustomAttributeQuery2::EnumCustomAttributes
 ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 47b643c8f08de60bb873f3daf69ee93e0816d31f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery2::EnumCustomAttributes
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得附加至這個欄位的所有自訂屬性的列舉值。  
+# <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
+取得所有附加至這個欄位的自訂屬性的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumCustomAttributes(   
-   IEnumDebugCustomAttributes** ppEnum  
+```cpp  
+HRESULT EnumCustomAttributes(   
+   IEnumDebugCustomAttributes** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumCustomAttributes(  
-   out IEnumDebugCustomAttributes ppEnum  
+   out IEnumDebugCustomAttributes ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppEnum`  
- \[\] out傳回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)物件，表示清單中的自訂屬性。 如果沒有自訂屬性，否則傳回 null 值。  
+ [out]傳回[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)代表自訂屬性清單的物件; 否則如果沒有任何自訂屬性會傳回 null 值。  
   
-## 傳回值  
- 如果成功的話，傳回 S\_OK 或 S\_FALSE，如果這個欄位中沒有自訂屬性。  否則，會傳回錯誤碼 ；  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回 S_OK 或 S_FALSE，如果此欄位上沒有任何自訂屬性。 反之則傳回錯誤碼。  
   
-## 備註  
- 欄位可以擁有多個自訂屬性。  
+## <a name="remarks"></a>備註  
+ 欄位可以有多個自訂屬性。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)   
  [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

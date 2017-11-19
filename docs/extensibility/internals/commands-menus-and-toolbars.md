@@ -1,65 +1,67 @@
 ---
-title: "命令、 功能表和工具列 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "功能表 [Visual Studio SDK] 命令"
-  - "命令 [Visual Studio]"
-  - "工具列 [Visual Studio] 命令"
+title: "命令、 功能表和工具列 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- menus [Visual Studio SDK], commands
+- commands [Visual Studio]
+- toolbars [Visual Studio], commands
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
-caps.latest.revision: 60
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 60
+caps.latest.revision: "60"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8ba153c6ec1d9944e889919d1d49817dcd97c9a4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 命令、 功能表和工具列
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-功能表和工具列為使用者的方式存取 VSPackage 的命令。 命令是完成工作，例如列印文件、 重新整理檢視，或建立新檔案的功能。 功能表和工具列是方便的圖形化方式，向使用者呈現您的命令。 通常，相同的功能表或工具列上時一起叢集相關的命令。  
+# <a name="commands-menus-and-toolbars"></a>命令、 功能表和工具列
+功能表和工具列是使用者的方式存取您的 VSPackage 中的命令。 命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。 功能表和工具列是一種圖形方式，方便向使用者呈現您的命令。 通常，相關的命令會一起聚集在相同的功能表或工具列上。  
   
--   功能表通常顯示為叢集的整合式的開發環境 \(IDE\) 或工具視窗上方的資料列中的一字字串。 功能表也可以顯示為以滑鼠右鍵按一下事件的結果，而且會參照為該內容中的快顯功能表。 按一下時，功能表會展開以顯示一或多個命令。 命令中，按一下時，可以執行工作，或啟動包含其他命令的子功能表。 一些知名的功能表名稱是檔案、 編輯、 檢視和視窗。 如需詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
+-   功能表通常會顯示為聚集在整合式開發環境 (IDE) 或工具視窗頂端的一連串單字字串。 功能表也可以顯示為滑鼠右鍵事件的結果，並且指的是該內容中的快顯功能表。 按一下時，會展開功能表以顯示一個或多個命令。 按一下時，命令可以執行工作，或啟動包含其他命令的子功能表。 一些已知功能表名稱是 [檔案]、[編輯]、[檢視] 和 [視窗]。 如需詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
--   工具列通常是資料列的按鈕和其他控制項，例如下拉式方塊、 清單方塊、 文字方塊和功能表控制器。 工具列上的控制項與相關聯的命令。 當您按一下工具列按鈕時，就會啟動其相關聯的命令。 工具列按鈕通常會有建議的基礎命令，例如印表機的列印命令的圖示。 在下拉式清單控制項中，在清單中的每個項目是與不同的命令產生關聯。 功能表控制器是控制項的在其中一方是控制項的工具列按鈕和的另一面是控制項的向下箭頭，以顯示其他命令時按下的混合。 如需詳細資訊，請參閱[加入至工具列功能表控制器](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)。  
+-   工具列通常是數串的按鈕和其他控制項 (例如下拉式方塊、清單方塊、文字方塊和功能表控制器)。 所有工具列控制項都是與命令相關聯。 按一下工具列按鈕時，會啟動其相關聯的命令。 工具列按鈕通常會有圖示建議基礎命令 (例如 [列印] 命令的印表機)。 在下拉式清單控制項中，清單中的每個項目都是與不同的命令相關聯。 功能表控制器是一種混合體，其中，控制項的一邊是工具列按鈕，另一邊則是按一下時顯示其他命令的向下箭號。 如需詳細資訊，請參閱[功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)。  
   
--   當您建立的命令時，您也必須建立事件處理常式，它。 事件處理常式會判斷命令何時可見的或啟用，可讓您修改它的文字，並確保會適當地回應命令 \(「 路由 」\) 啟動。 在大部分情況下，IDE 會處理命令使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 介面。 中的命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以階層方式，從最內層的命令內容，而本機範圍，並繼續最外層的內容，而全域範圍開始的路由。 新增至主功能表命令會立即可供指令碼。 如需詳細資訊，請參閱[MenuCommand 對比 OleMenuCommand](../../misc/menucommands-vs-olemenucommands.md)與[選擇內容物件](../../extensibility/internals/selection-context-objects.md)。  
+-   建立命令時，也必須一併建立它的事件處理常式。 事件處理常式可判斷命令的顯示和啟用時間、可讓您修改其文字，並確保在啟動時適當地回應命令 (路由遞送)。 在大部分情況下，IDE 會處理命令使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 中的命令[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]路由在階層的方式，並根據本機選取範圍，並繼續到最外層的內容，根據全域選取範圍的最內層命令內容開始。 加入主功能表的命令可立即用於指令碼編寫。 如需詳細資訊，請參閱[MenuCommands Vs。OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md)和[選擇內容物件](../../extensibility/internals/selection-context-objects.md)。  
   
- 若要定義新的功能表和工具列，您必須將這些描述 Visual Studio 命令資料表 \(.vsct\) 檔案中。 在 Visual Studio 封裝範本會建立此檔案，以及必要的項目，以支援任何命令、 工具列和您在範本中選取的編輯器。 或者，您可以撰寫您自己的.vsct 檔，使用此處所描述的 xml 結構描述: [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)。  
+ 若要定義新的功能表和工具列，您必須以 Visual Studio 命令表 (.vsct) 檔案描述它們。 Visual Studio 封裝樣板會建立這個檔案以及必要項目，以支援您在樣板中所選取的任何命令、工具列和編輯器。 或者，您可以撰寫專屬.vsct 檔案中，使用此處所描述的 xml 結構描述： [VSCT XML 結構描述參考](../../extensibility/vsct-xml-schema-reference.md)。  
   
- 如需使用.vsct 檔的詳細資訊，請參閱 [Visual Studio 命令資料表 \(。Vsct\) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
+ 如需使用.vsct 檔案的詳細資訊，請參閱[Visual Studio 命令表 (。Vsct) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。  
   
- 本章節的主題說明命令、 功能表和工具列如何在 Vspackage 中運作。  
+ 本節中的主題說明命令、 功能表和工具列在 Vspackage 中運作的方式。  
   
-## 在本節中  
- [VSPackages 如何新增使用者介面項目](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
- 命令資料表格式規格的深入說明。  
+## <a name="in-this-section"></a>本章節內容  
+ [VSPackage 如何新增使用者介面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)  
+ 命令資料表格式規格的深入描述。  
   
- [Visual Studio 命令資料表 \(。Vsct\) 檔案](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
- 描述 XML 為基礎的語法和編譯器的命令資料表。  
+ [Visual Studio 命令表檔案 (.Vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)  
+ 描述 XML 為基礎的語法和命令資料表編譯器。  
   
- [預設的命令、 群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
+ [預設的命令、群組及工具列位置](../../extensibility/internals/default-command-group-and-toolbar-placement.md)  
  描述預先定義的命令、 群組、 功能表和工具列。  
   
- [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
- 指定預先定義的功能表、 命令和可供使用的命令群組 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。  
+ [IDE 定義的命令、功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)  
+ 指定預先定義的功能表、 命令及可供使用的命令群組[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
   
  [命令設計](../../extensibility/internals/command-design.md)  
- 說明如何設計的命令。  
+ 說明如何設計命令。  
   
- [最佳化功能表和工具列命令](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
- 命令會提供指導方針。  
+ [將功能表和工具列命令最佳化](../../extensibility/internals/optimizing-menu-and-toolbar-commands.md)  
+ 命令提供指導方針。  
   
  [提供可用的命令](../../extensibility/internals/making-commands-available.md)  
  說明如何讓 Visual Studio 中使用的命令。  
   
- [命令和使用 Interop 組件的功能表](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
+ [使用 Interop 組件的命令和功能表](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)  
  說明如何實作使用 interop 組件的命令。  
   
-## 相關章節  
- [Vspackage 中的命令路由](../../extensibility/internals/command-routing-in-vspackages.md)  
- 說明 VSPackages 的命令路由。
+## <a name="related-sections"></a>相關章節  
+ [在 VSPackage 中路由傳送命令](../../extensibility/internals/command-routing-in-vspackages.md)  
+ 說明在 Vspackage 中的命令路由。

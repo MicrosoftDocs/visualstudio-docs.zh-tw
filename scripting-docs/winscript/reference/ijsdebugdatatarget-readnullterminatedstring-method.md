@@ -1,25 +1,29 @@
 ---
-title: "IJsDebugDataTarget::ReadNullTerminatedString 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Ijsdebugdatatarget:: Readnullterminatedstring 方法 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IJsDebugDataTarget.ReadNullTerminatedString
 apilocation: jscript9diag.dll
 ms.assetid: 64683b39-6fc2-40c4-82ae-2a6f58d392d5
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 94cb90b8b44aa5dab13a2e916dec22ae950e77ef
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IJsDebugDataTarget::ReadNullTerminatedString 方法
-從目標讀取指定數目的字元。  
+# <a name="ijsdebugdatatargetreadnullterminatedstring-method"></a>IJsDebugDataTarget::ReadNullTerminatedString 方法
+從目標中讀取指定的字元數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT ReadNullTerminatedString(  
@@ -30,26 +34,26 @@ HRESULT ReadNullTerminatedString(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `address`  
- \[in\] 要用於讀取的位址。  
+ [in]要讀取的位址。  
   
  `characterSize`  
- \[in\] 字串中每個字元的大小。  
+ [in] 字串中的每個字元的大小  
   
  `maxCharacters`  
- \[in\] 讀取的字元數上限。maxCharacters 應是合理的。  所有超過 128MB 記憶體的要求都會失敗。如果字串大於 maxCharacters，則結果字串會在 maxCharacters 之後遭截斷。  
+ [in]要讀取的字元數目上限。 maxCharacters 應該是合理的。 任何大於 128 MB 記憶體的要求將會失敗。  如果字串為大於 maxCharacters，結果字串會截斷 maxCharacters 之後。  
   
  `pString`  
- \[out\] 從目標讀取的 BSTR。  
+ [out]從目標讀取 BSTR。  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
   
-## 備註  
- 如果已截斷，則傳回 S\_FALSE。  
+## <a name="remarks"></a>備註  
+ 如果截斷，傳回 S_FALSE。  
   
-## 需求  
- **標頭：**jscript9diag.h  
+## <a name="requirements"></a>需求  
+ **標頭：** jscript9diag.h  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IJsDebugDataTarget 介面](../../winscript/reference/ijsdebugdatatarget-interface.md)

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramPublisher2
-helpviewer_keywords:
-- IDebugProgramPublisher2 interface
+f1_keywords: IDebugProgramPublisher2
+helpviewer_keywords: IDebugProgramPublisher2 interface
 ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 287864e9e8cba0a32887122dc79f1008e403b667
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 242221c8cc3ffad51fa21f71d6209208b58ae6e6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 這個介面可讓偵錯引擎 (DE) 或自訂連接埠供應商註冊進行偵錯的程式。  

@@ -1,45 +1,46 @@
 ---
-title: "How to: Search for a Process in Processes View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Processes view"
-  - "processes, searching for"
+title: "如何： 處理序檢視中的處理序搜尋 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Processes view
+- processes, searching for
 ms.assetid: 7cb97b37-4a95-4f1b-9eee-4910aa9c115b
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 78c67ccc34d9c95914f6b46d537a4df3431c877f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# How to: Search for a Process in Processes View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以使用處理序 ID 或模組字串做為搜尋準則，在 \[處理序\] 檢視中搜尋特定處理序。  您也可以指定搜尋的初始方向。  對話方塊中的欄位會顯示處理序樹狀結構中選取之處理序的屬性。  
+# <a name="how-to-search-for-a-process-in-processes-view"></a>如何：在處理序檢視中搜尋處理序
+您可以使用它的處理序識別碼或模組字串做為搜尋準則搜尋處理序檢視中的特定處理序。 您也可以指定搜尋的初始方向。 在對話方塊中的欄位會顯示所選處理序的屬性，處理序樹狀結構中。  
   
-### 若要在處理序檢視中搜尋處理序  
+### <a name="to-search-for-a-process-in-processes-view"></a>若要搜尋的處理序檢視中的處理序  
   
-1.  將視窗排列成可以同時顯示 Spy\+\+ 及作用中的[處理序檢視](../debugger/processes-view.md)視窗。  
+1.  排列的視窗，因此該 Spy + + 和作用中[處理序檢視](../debugger/processes-view.md)視窗會顯示。  
   
-2.  選擇 \[**搜尋**\] 功能表中的 \[**尋找處理序**\]。  
+2.  從**搜尋**功能表上，選擇**尋找處理序**  
   
      [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)隨即開啟。  
   
-3.  輸入處理序 ID 或模組字串做為搜尋準則。  
+3.  輸入處理序識別碼或模組字串做為搜尋準則。  
   
-4.  清除您不要指定值的任何欄位。  
+4.  清除所有的欄位，您不想指定值。  
   
     > [!TIP]
-    >  若要尋找模組所擁有的全部處理序，請清除 \[**處理序**\] 方塊，並在 \[**模組**\] 方塊中輸入模組名稱。  然後，使用 \[**找下一個**\] 繼續搜尋處理序。  
+    >  若要尋找模組所擁有的所有處理程序，請清除**程序**方塊並輸入中的模組名稱**模組**方塊。 然後使用**找下一個**繼續搜尋程序。  
   
-5.  為搜尋的初始方向選擇 \[**上**\] 或 \[**下**\]。  
+5.  選擇**向上**或**向**搜尋初始方向。  
   
-6.  按一下 \[**確定**\]。  
+6.  按一下 [確定]。  
   
- 如果找到符合的處理序，\[**處理序**\] 檢視視窗就會反白顯示處理序。
+ 如果找到比對程序，它會反白顯示在**處理序檢視**視窗。

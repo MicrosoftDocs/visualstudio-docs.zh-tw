@@ -1,30 +1,32 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule"
-  - "LoadSymbolsWithCorModule"
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
+- LoadSymbolsWithCorModule
 ms.assetid: b6abf3a4-ce60-4e66-9637-82ce911148de
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: eea91e5898296c9f315b83ea85dee8a91cc52010
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-載入偵錯符號 **ICorDebugModule** 物件。  
+# <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
+載入偵錯符號**ICorDebugModule**物件。  
   
 ## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -36,7 +38,7 @@ HRESULT LoadSymbolsWithCorModule(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsWithCorModule(  
    uint   ulAppDomainID,  
    Guid   guidModule,  
@@ -62,21 +64,21 @@ int LoadSymbolsWithCorModule(
  [in]包含偵錯符號的中繼資料的物件。  
   
  `pUnkCorDebugModule`  
- [in]實作物件 [ICorDebugModule 介面](ICorDebugModule%20Interface.xml)。  
+ [in]物件，用於實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `bstrModuleName`  
- [in]模組名稱。  
+ [in]模組的名稱。  
   
  `bstrSymSearchPath`  
- [in]搜尋符號檔的路徑。  
+ [in]搜尋符號檔案的路徑。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 介面。  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -168,5 +170,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

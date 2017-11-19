@@ -4,38 +4,23 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- IDebugCodeContext3 interface
+helpviewer_keywords: IDebugCodeContext3 interface
 ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: da2e6011171afab54a055317c1ee9dc807200a02
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 4c7866b5a76be82e7cbfa04605ad5117a0b2a8fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
-擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，可讓模組和處理程序介面擷取。  
+擴充[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)介面，以擷取模組和處理序的介面。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,22 +29,22 @@ IDebugCodeContext3 : IDebugCodeContext2
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者注意事項  
- 偵錯引擎所實作，而且由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯封裝。  
+ 偵錯引擎所實作且由[!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]偵錯封裝。  
   
 ## <a name="methods"></a>方法  
- 除了在方法`IDebugCodeContext2`介面，這個介面會實作下列方法︰  
+ 除了上`IDebugCodeContext2`介面，這個介面會實作下列方法：  
   
 |方法|說明|  
 |------------|-----------------|  
-|[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|擷取到的偵錯模組介面的參考。|  
+|[GetModule](../../../extensibility/debugger/reference/idebugcodecontext3-getmodule.md)|擷取的偵錯模組介面的參考。|  
 |[GetProcess](../../../extensibility/debugger/reference/idebugcodecontext3-getprocess.md)|擷取偵錯處理序的介面的參考。|  
   
 ## <a name="remarks"></a>備註  
- 這是通常不需要實作的選擇性介面。  
+ 這是選擇性但通常不需要實作的介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ Msdbg.h  
+ 標頭： Msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll

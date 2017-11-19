@@ -1,60 +1,65 @@
 ---
-title: "CreateInPlace (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace"
-helpviewer_keywords: 
-  - "<CreateInPlace> 項目 [Visual Studio 樣板]"
-  - "CreateInPlace 項目 [Visual Studio 樣板]"
+title: "CreateInPlace （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CreateInPlace
+helpviewer_keywords:
+- CreateInPlace element [Visual Studio Templates]
+- <CreateInPlace> element [Visual Studio Templates]
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ce445dec4ca7d09f2fb8822fa9b5632356950042
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CreateInPlace (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定是否要建立專案並且在指定的位置上執行參數取代，或者在臨時位置上執行參數取代然後再將專案儲存到指定的位置。  
+# <a name="createinplace-visual-studio-templates"></a>CreateInPlace (Visual Studio 範本)
+指定是否要建立專案及執行參數取代在指定的位置，或執行參數取代在暫存位置，然後儲存專案到指定的位置。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<CreateInPlace >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <CreateInPlace> true/false </CreateInPlace>  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|為範本分類，並定義在 \[**新增專案**\] 或 \[**加入新項目**\] 對話方塊中範本的顯示方式。|  
+|項目|描述|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字必須是 `true` 或 `false`。  如果是 `true`，則會建立專案並且在 \[**新增專案**\] 對話方塊所指定的位置上執行參數取代。  如果是 `false`，則會在臨時位置上執行參數取代，然後再將專案複製到指定的位置。  
+ 此文字必須是 `true` 或 `false`。 如果`true`，專案會建立，而且在指定的位置上執行參數取代**新專案** 對話方塊。 如果`false`執行參數取代的暫存位置中，專案再複製到指定的位置。  
   
-## 備註  
- `CreateInPlace` 是選擇性項目。  預設值是 `true`。  
+## <a name="remarks"></a>備註  
+ `CreateInPlace` 是選擇性項目。 預設值是 `true`。  
   
-## 範例  
- 下列程式碼範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 範本的中繼資料。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -81,6 +86,6 @@ caps.handback.revision: 7
 </VSTemplate>  
 ```  
   
-## 請參閱  
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另請參閱  
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

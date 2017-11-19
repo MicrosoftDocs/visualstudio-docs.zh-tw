@@ -1,53 +1,55 @@
 ---
-title: "如何：定義方法執行個體"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "BDC [Visual Studio 中的 SharePoint 開發], 方法"
-  - "BDC [Visual Studio 中的 SharePoint 開發], 方法執行個體"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 開發], 方法"
-  - "商務資料連接服務 [Visual Studio 中的 SharePoint 開發], 方法執行個體"
+title: "如何： 定義方法執行個體 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- Business Data Connectivity service [SharePoint development in Visual Studio], method instance
+- BDC [SharePoint development in Visual Studio], method instance
+- BDC [SharePoint development in Visual Studio], method
+- Business Data Connectivity service [SharePoint development in Visual Studio], method
 ms.assetid: f0c8a686-c0de-414e-8de9-f228f59d1eb3
-caps.latest.revision: 14
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9316eaa48b11342891584e448f8bb67bdce6f682
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：定義方法執行個體
-  您必須為模型中的每個方法定義至少一個方法執行個體。  
+# <a name="how-to-define-a-method-instance"></a>如何：定義方法執行個體
+  在模型中，您必須定義至少一個的方法執行個體的每個方法。  
   
- 請使用 \[**BDC 方法詳細資料**\] 視窗來新增方法執行個體。  新增方法執行個體時，Visual Studio 會將 `<MethodInstance>` 項目加入至專案內模型檔案的 XML。  如需 `<MethodInstance>` 項目屬性的詳細資訊，請參閱 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
+ 使用新增方法執行個體**BDC 方法詳細資料**視窗。 當您新增方法執行個體時，Visual Studio 會加入`<MethodInstance>`至您的專案中的模型檔案的 XML 項目。 如需有關的屬性`<MethodInstance>`項目，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-### 若要定義方法執行個體  
+### <a name="to-define-a-method-instance"></a>若要定義的方法執行個體  
   
-1.  在 \[**BDC 方法詳細資料**\] 視窗中展開方法的節點，然後展開 \[**執行個體**\] 節點。  
+1.  在**BDC 方法詳細資料**視窗中，展開節點的方法，然後再展開**執行個體**節點。  
   
-2.  在 \[**加入方法執行個體**\] 清單中，選擇 \[**建立搜尋執行個體**\]，  
+2.  在**新增方法執行個體**清單中，選擇**建立 Finder 執行個體**。  
   
-     \[**執行個體**\] 節點下方隨即出現新的方法執行個體。  
+     新的方法執行個體隨即出現在下方**執行個體**節點。  
   
-3.  在功能表上選擇 \[**檢視**\]，然後選擇 \[**屬性視窗**\]。  
+3.  在功能表列上選擇 [**檢視**，選擇**屬性] 視窗**。  
   
-4.  在 \[**屬性視窗**\] 中設定方法執行個體的屬性。  如需個別屬性的詳細資訊，請參閱 [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
+4.  在**屬性**視窗中，將方法執行個體的屬性。 如需有關每一個屬性的詳細資訊，請參閱[MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [BDC 模型設計工具概觀](../sharepoint/bdc-model-design-tools-overview.md)   
- [如何：將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
- [如何：將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [如何： 將實體加入至模型](../sharepoint/how-to-add-an-entity-to-a-model.md)   
+ [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
  [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)  
   
   

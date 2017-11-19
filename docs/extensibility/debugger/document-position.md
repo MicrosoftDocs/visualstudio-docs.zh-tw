@@ -1,33 +1,34 @@
 ---
-title: "文件位置 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "偵錯的 [偵錯 SDK]，內容"
+title: "文件位置 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4132742177eac126a6aa67f915c16c2ff4e8c93c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 文件位置
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯時， **文件位置**：  
+# <a name="document-position"></a>文件位置
+在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**文件位置**:  
   
--   提供 IDE 已知的抽象概念的原始程式檔中的位置。  對大多數語言而言，文件位置可以視為原始程式檔中的位置。  
+-   提供抽象的原始程式檔中的位置，因為知道 IDE。 大部分語言目前文件位置可以視為的原始程式檔中的位置。  
   
--   說明偵錯引擎來源文件中的位置。  
+-   描述偵錯引擎來源文件中的位置。  
   
--   由存取關聯式資料庫 [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) 介面。  
+-   由實作[IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md)介面。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式碼內容](../../extensibility/debugger/code-context.md)   
  [文件內容](../../extensibility/debugger/document-context.md)   
  [符號提供者](../../extensibility/debugger/symbol-provider.md)   

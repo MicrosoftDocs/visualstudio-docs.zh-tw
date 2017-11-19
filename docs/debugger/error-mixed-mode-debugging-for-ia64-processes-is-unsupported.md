@@ -1,36 +1,35 @@
 ---
-title: "錯誤：不支援 IA64 處理序的混合模式偵錯 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.error.interop_unsupported_ia64"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "錯誤： 混合的模式偵錯 IA64 處理序不支援 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.error.interop_unsupported_ia64
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: b60e9660-02da-4dea-9e6d-8cb64e996bdf
-caps.latest.revision: 6
-caps.handback.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 732383397d325668ab9f26b22124700903471337
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 錯誤：不支援 IA64 處理序的混合模式偵錯
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>錯誤：不支援 IA64 處理序的混合模式偵錯
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 偵錯工具不支援對 Itanium 處理序中混合的原生和 Managed 程式碼進行偵錯。  
   
-### 若要更正這個錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
 -   建置 32 位元版本的應用程式以進行偵錯。  
   
-## 請參閱  
- [在裝置上設定遠端工具](../Topic/Set%20Up%20the%20Remote%20Tools%20on%20the%20Device.md)
+## <a name="see-also"></a>另請參閱  
+ [遠端偵錯](../debugger/remote-debugging.md)

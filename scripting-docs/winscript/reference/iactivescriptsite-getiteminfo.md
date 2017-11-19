@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptSite::GetItemInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptSite::GetItemInfo |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptSite.GetItemInfo
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptSite_GetItemInfo"
+helpviewer_keywords: IActiveScriptSite_GetItemInfo
 ms.assetid: f859ed3b-02c1-4924-99f8-5f5bf1bf8405
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ccb898c14571d1f1fd1fcae7cb0b9a6d322f2754
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptSite::GetItemInfo
-允許指令碼引擎取得項目相關資訊以 [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) 方法。  
+# <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
+可讓指令碼引擎來取得有關使用新增的項目[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetItemInfo(  
@@ -32,36 +35,36 @@ HRESULT GetItemInfo(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pstrName`  
- \[out\] 此名稱與項目，在 [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) 方法上指定。  
+ [in]使用指定的項目，在相關聯的名稱[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
  `dwReturnMask`  
- \[in\] 位元遮罩指定應該傳回關於項目的資訊。  指令碼引擎需要最少資訊量，因為某些傳回參數 \(例如， `ITypeInfo`\) 可能需要相當長的時間載入或產生。  可以是下列值的組合:  
+ [in]位元遮罩，指定應傳回哪些項目的資訊。 指令碼引擎應該要求的最小數量的資訊，因為部分傳回參數 (例如， `ITypeInfo`) 可能需要相當長的時間才能載入或產生。 可以是下列值的組合：  
   
 |值|意義|  
-|-------|--------|  
-|SCRIPTINFO\_IUNKNOWN|傳回這個項目的 `IUnknown` 介面。|  
-|SCRIPTINFO\_ITYPEINFO|傳回這個項目的 `ITypeInfo` 介面。|  
+|-----------|-------------|  
+|SCRIPTINFO_IUNKNOWN|傳回`IUnknown`此項目的介面。|  
+|SCRIPTINFO_ITYPEINFO|傳回`ITypeInfo`此項目的介面。|  
   
  `ppunkItem`  
- \[out\] 接收 `IUnknown` 介面指標變數的位址與指定項目的。  指令碼引擎可以使用 `IUnknown::QueryInterface` 方法取得項目的 `IDispatch` 介面。  如果 `dwReturnMask` 不包括 SCRIPTINFO\_IUNKNOWN 值，這個參數會收到 null。  此外，;如果沒有任何物件與項目名稱，會收到 null;，當具名項目已加入與 [IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) 方法，設定的 SCRIPTITEM\_CODEONLY 旗標這個機制來建立簡單的類別。  
+ [out]收到的指標變數的位址`IUnknown`與指定的項目相關聯的介面。 可以使用指令碼引擎`IUnknown::QueryInterface`方法，以取得`IDispatch`項目的介面。 如果這個參數會接收 NULL`dwReturnMask`不包含 SCRIPTINFO_IUNKNOWN 值。 此外，它會接收 NULL 如果沒有相關聯的項目 name; 的物件這項機制用來建立簡單的類別，加入 SCRIPTITEM_CODEONLY 旗標設定的具名項目時[IActiveScript::AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md)方法。  
   
  `ppTypeInfo`  
- \[out\] 接收 `ITypeInfo` 介面指標變數的位址相關聯的項目。  這個參數接收，則為 null `dwReturnMask` SCRIPTINFO\_ITYPEINFO 不包含值，則為，如果型別資訊對這個項目無法使用。  如果型別資訊無法使用，則該物件不能做為事件來源，，且必須實現繫結名稱與 `IDispatch::GetIDsOfNames` 方法。  請注意擷取的 `ITypeInfo` 介面描述項目的 Coclass \(TKIND\_COCLASS\)，因為物件可以支援多個介面及事件介面。  如果項目 `IProvideMultipleTypeInfo` 支援介面，擷取的 `ITypeInfo` 介面是使用 `IProvideMultipleTypeInfo::GetInfoOfIndex` 方法，做為索引以零 `ITypeInfo` 會收到的相同。  
+ [out]收到的指標變數的位址`ITypeInfo`與項目相關聯的介面。 如果這個參數會接收 NULL`dwReturnMask`不包含 SCRIPTINFO_ITYPEINFO 值中，或如果無法使用此項目的型別資訊。 如果未提供型別資訊，物件無法來源事件，而且必須與實現名稱繫結`IDispatch::GetIDsOfNames`方法。 請注意，`ITypeInfo`介面擷取說明的項目 coclass (TKIND_COCLASS)，因為此物件可能支援多個介面和事件介面。 如果項目支援`IProvideMultipleTypeInfo`介面，`ITypeInfo`介面擷取等同於索引以零為`ITypeInfo`，會使用取得`IProvideMultipleTypeInfo::GetInfoOfIndex`方法。  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |傳回值|意義|  
-|---------|--------|  
+|------------------|-------------|  
 |`S_OK`|成功。|  
 |`E_INVALIDARG`|引數無效。|  
-|`E_POINTER`|無效的指標被指定。|  
-|`TYPE_E_ELEMENTNOTFOUND`|找不到指定名稱的項目。|  
+|`E_POINTER`|指定了無效的指標。|  
+|`TYPE_E_ELEMENTNOTFOUND`|找不到指定之名稱的項目。|  
   
-## 備註  
- 這個方法會擷取 `dwReturnMask` 參數運算式的相關資訊，這會增加效能。  例如，如果 `ITypeInfo` 介面，為項目不需要，在 `dwReturnMask`未指定。  
+## <a name="remarks"></a>備註  
+ 這個方法會擷取所指定的資訊`dwReturnMask`參數; 這樣可以改善效能。 例如，如果`ITypeInfo`介面不需要的項目，它只是中未指定`dwReturnMask`。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

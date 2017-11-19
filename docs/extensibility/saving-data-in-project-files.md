@@ -1,39 +1,41 @@
 ---
-title: "將資料儲存在專案檔 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "儲存專案檔中的資料 [Visual Studio]，"
-  - "專案檔"
-  - "專案檔，將資料儲存"
+title: "將資料儲存在專案檔 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- data [Visual Studio], saving in project files
+- project files
+- project files, saving data
 ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
-caps.latest.revision: 28
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5a494b32a252a87c6863eaa6335aa1cd6b300db5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 將資料儲存在專案檔
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-專案子類型可以儲存並擷取子類型特定專案檔中的資料。  管理套件架構 \(MPF\) 提供兩個介面，以完成這項工作：  
+# <a name="saving-data-in-project-files"></a>將資料儲存在專案檔
+專案子類型可以儲存並擷取專案檔中的特定子類型的資料。 Managed Package Framework (MPF) 提供兩個介面來完成這項工作：  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面允許存取屬性值，從**MSBuild**的專案檔的區段。  提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>可由任何使用者只要載入或儲存的使用者需要建置相關的資料。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>介面允許存取屬性值從**MSBuild**專案檔的區段。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>可以被呼叫的任何使用者只要載入或儲存的使用者需求建立相關的資料。  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用來保存非建置在 XML 中自由格式的相關的資料。  提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>由呼叫[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]時[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]需要保存非建置專案檔中的相關的資料。  
+-   <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用於保存自由格式的 XML 中的非組建相關的資料。 所提供的方法<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>會呼叫[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]每當[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]需要保存的非建置在專案檔的相關的資料。  
   
- 如需有關如何將保存組建和非組建相關的資料的詳細資訊，請參閱[在 MSBuild 專案檔案中保存的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
+ 如需有關如何保存組建和非組建的相關的資料的詳細資訊，請參閱[MSBuild 專案檔中的保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。  
   
-## 儲存和擷取組建相關的資料  
+## <a name="saving-and-retrieving-build-related-data"></a>儲存和擷取組建的相關資料  
   
-#### 若要儲存組建相關的專案檔中的資料  
+#### <a name="to-save-a-build-related-data-in-the-project-file"></a>若要儲存組建的相關專案檔中的資料  
   
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法，將儲存的專案檔的完整路徑。  
+-   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法來儲存專案檔的完整路徑。  
   
     ```  
     private SpecializedProject project;  
@@ -46,9 +48,9 @@ caps.handback.revision: 28
         (uint)_PersistStorageType.PST_PROJECT_FILE, newFullPath));  
     ```  
   
-#### 若要擷取組建相關資料從專案檔  
+#### <a name="to-retrieve-build-related-data-from-the-project-file"></a>若要擷取組建從專案檔的相關資料  
   
--   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法以擷取專案檔的完整路徑。  
+-   呼叫<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A>方法來擷取專案檔的完整路徑。  
   
     ```  
     private SpecializedProject project;  
@@ -61,11 +63,11 @@ caps.handback.revision: 28
         (uint)_PersistStorageType.PST_PROJECT_FILE, out fullPath));  
     ```  
   
-## 儲存和擷取非組建相關的資料  
+## <a name="saving-and-retrieving-non-build-related-data"></a>儲存和擷取非建置相關的資料  
   
-#### 若要儲存非組建相關的專案檔中的資料  
+#### <a name="to-save-non-build-related-data-in-the-project-file"></a>若要儲存非組建的相關專案檔中的資料  
   
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，因為最後一次儲存到目前的檔案。  
+1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A>方法，以判斷是否已變更 XML 片段，自上次儲存至其目前的檔案。  
   
     ```  
     public int IsFragmentDirty(uint storage, out int pfDirty)  
@@ -144,9 +146,9 @@ caps.handback.revision: 28
     }  
     ```  
   
-#### 若要擷取非組建相關的專案檔中的資料  
+#### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>若要擷取非組建的相關專案檔中的資料  
   
-1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法以初始化專案的擴充屬性和其他建置無關的資料。  如果沒有出現在專案檔的 XML 組態資料時，會呼叫這個方法。  
+1.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A>方法來初始化專案擴充功能屬性和其他組建無關的資料。 如果沒有出現在專案檔案中的 XML 組態資料，會呼叫這個方法。  
   
     ```  
     public int InitNew(ref Guid guidFlavor, uint storage)  
@@ -162,7 +164,7 @@ caps.handback.revision: 28
         return VSConstants.S_OK;  
     ```  
   
-2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>方法，才能從專案檔中載入的 XML 資料。  
+2.  實作<xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A>從專案檔案載入 XML 資料的方法。  
   
     ```  
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)  
@@ -207,7 +209,7 @@ caps.handback.revision: 28
     ```  
   
 > [!NOTE]
->  本主題提供的所有程式碼範例是 「 組件的較大的範例中， [VSSDK 範例](../misc/vssdk-samples.md)。  
+>  本主題提供的所有程式碼範例會在較大範例的組件[VSSDK 範例](http://aka.ms/vs2015sdksamples)。  
   
-## 請參閱  
- [在 MSBuild 專案檔案中保存的資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+## <a name="see-also"></a>另請參閱  
+ [在 MSBuild 專案檔中保存資料](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

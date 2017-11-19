@@ -1,47 +1,52 @@
 ---
-title: "如何：在偵錯時切換到另一個執行緒 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "執行緒, 切換 [偵錯]"
+title: "如何： 偵錯時切換至另一個執行緒 |Microsoft 文件"
+ms.custom: 
+ms.date: 04/27/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords: threads, switching [debugging]
 ms.assetid: 5cd76c52-76fa-4fcc-b37e-e9f0ecac0e9e
-caps.latest.revision: 26
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 14432de4519ed49292810af5f96399bbf87e43cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：在偵錯時切換到另一個執行緒
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
+# <a name="how-to-switch-to-another-thread-while-debugging-in-visual-studio"></a>如何： 在 Visual Studio 中偵錯時切換至另一個執行緒
+當您偵錯多執行緒應用程式時，您可以使用數種方法的任何一個可從您已使用的其他執行緒的執行緒切換。
 
-當您偵錯多執行緒應用程式時，您可以使用數個方法中的任何一種方法，將內容從目前使用的執行緒切換至另一個執行緒。  
+> [!NOTE]
+> 如果您想要控制執行執行緒的順序，您需要[凍結和解除凍結執行緒](/debugger/get-started-debugging-multithreaded-apps.md)。
+
+當您檢查程式碼編輯器和不同的多執行緒偵錯視窗中的執行緒時，黃色箭號表示目前的執行緒。 尾端彎曲的綠色箭號表示非目前執行緒的目前偵錯工具內容。
   
-### 切換至執行緒視窗中出現的任何執行緒  
+### <a name="to-switch-to-any-thread-that-appears"></a>若要切換至出現的任何執行緒 
   
--   按兩下執行緒。  
+-   在**執行緒**或**平行監看式**視窗中，按兩下執行緒。  
   
-### 若要切換至來源視窗中的執行緒  
+### <a name="to-switch-to-a-thread-in-a-source-window"></a>若要切換至來源視窗中的執行緒  
   
--   在左側裝訂邊，以滑鼠右鍵按一下執行緒指標，再指向 \[**切換至**\]，然後按一下您要做為切換目標之執行緒的名稱。  捷徑功能表只會顯示該特定位置上的執行緒。  
+-   在左側裝訂邊上，以滑鼠右鍵按一下執行緒標記圖示![執行緒標記](../debugger/media/dbg-thread-marker.png "ThreadMarker")，指向 **切換至**，然後按一下您要切換該執行緒的名稱. 捷徑功能表只會顯示該特定位置上的執行緒。  
   
-     如果沒有指標出現，請以滑鼠右鍵按一下 \[**執行緒**\] 視窗，並確認已選取 \[**在原始程式檔中顯示執行緒**\]。  
+     如果沒有執行緒標記顯示，以滑鼠右鍵按一下**執行緒**視窗，並確認**在來源中顯示執行緒**已選取。  
   
-### 若要切換至偵錯位置工具列中的執行緒  
+### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>若要切換至偵錯位置工具列中的執行緒  
   
-1.  按一下 \[**偵錯位置**\] 工具列上的 \[**執行緒**\] 方塊。  
+1.  在**偵錯位置**工具列上，按一下 **執行緒**清單。  
   
 2.  在清單中，按一下您要切換至哪個執行緒。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)

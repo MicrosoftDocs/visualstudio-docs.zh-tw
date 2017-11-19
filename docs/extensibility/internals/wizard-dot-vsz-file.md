@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-caps.latest.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 3b1ee351d5fbe66a5d74c07c0a7e5a60661d7fcb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d7f4abe6240f799ed6db71fcf04a40774facaf6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="wizard-vsz-file"></a>精靈 (。Vsz) 檔案
 整合式的開發環境 (IDE) 會使用.vsz 檔案來啟動精靈。 這些.vsz 檔案包含用來判斷要呼叫哪一個精靈的 IDE 資訊和要傳遞給精靈的資訊。  
@@ -53,7 +38,7 @@ Param="WIZARDUI = FALSE"
   
  以下是.vsz 檔案中的組件。  
   
-|組件|描述|  
+|組件|說明|  
 |----------|-----------------|  
 |VSWizard|在檔案中的第一個參數是範本檔案格式的版本號碼。 此版本號碼必須是 6.0、 7.0、 7.1、 或 8.0。 其他數字無法啟動，並會導致不正確的格式錯誤。|  
 |精靈|此欄位會包含 OLE ProgID 的精靈，或者 cocreated ide 在精靈的 CLSID 的 GUID 字串表示。|  

@@ -1,49 +1,50 @@
 ---
-title: "使用舊版 API 的自訂程式碼視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "編輯器 [Visual Studio SDK]，舊版的程式碼視窗"
+title: "使用舊版 API 自訂程式碼視窗 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - code windows
 ms.assetid: 5328ab2f-55cb-4680-9744-ec79f55acd1b
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4a958e6f6aa815b7d5726c2c441876331fba56b8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用舊版 API 的自訂程式碼視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-程式碼視窗是支援一或多個文字檢視的文件視窗物件。 確切的程式碼視窗的功能取決於相關聯的語言服務。 在多重文件介面 \(MDI\) 模式中，程式碼視窗會是 MDI 子框架。  
+# <a name="customizing-code-windows-by-using-the-legacy-api"></a>使用舊版 API 的自訂程式碼視窗
+程式碼視窗會支援一或多個文字檢視文件視窗物件。 程式碼視窗的確切的功能取決於相關聯的語言服務。 在多重文件介面 (MDI) 模式中，程式碼視窗會是 MDI 子框架。  
   
- 程式碼視窗由語言服務所控制，而且每個語言服務可以提供它自己的程式碼視窗管理員。 這可讓語言服務，將自己裝飾新增至程式碼\] 視窗中，例如波浪線、 顏色標示、 等等。 如需如何建立核心視窗的詳細資訊，請參閱 [使用舊版 API 執行個體化核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)。  
+ 語言服務所控制的程式碼視窗，而且每個語言服務可以提供自己的程式碼視窗管理員。 這會讓它自己的裝飾加入程式碼視窗中，例如波浪線、 顏色標示，以及更多語言服務。 如需如何建立核心視窗的詳細資訊，請參閱[具現化核心編輯器使用舊版 API](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)。  
   
- 程式碼視窗是 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> 具有文字檢視和任何裝飾設置在物件的物件。 當您建立的程式碼視窗的核心程式具現化編輯器時，語言服務可以將附加 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager> 程式碼\] 視窗中，以做為顯示在下圖中。  
+ 程式碼 視窗<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>物件，其文字檢視和任何設置物件中的裝飾。 當您建立程式碼視窗的核心您具現化編輯器時，語言服務可以連接<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>至程式碼視窗中，為顯示在下圖。  
   
- ![CodeWindow 圖形](~/extensibility/media/vscodewindow.gif "vscodewindow")  
+ ![CodeWindow 圖形](../extensibility/media/vscodewindow.gif "vscodewindow")  
 程式碼視窗  
   
- 語言服務會實作程式碼視窗管理員，並負責管理裝飾，例如下拉式清單列。 程式碼的視窗呼叫 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A> 方法的程式碼視窗初始化期間。 下拉式清單列或按鈕列，進行這個呼叫時，可以新增語言服務 \(<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>\) 程式碼視窗。  
+ 語言服務實作的程式碼視窗管理員，並負責管理裝飾，如下拉式清單列。 程式碼視窗呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager.AddAdornments%2A>程式碼視窗初始化期間的方法。 下拉式清單列或一個按鈕列，進行這個呼叫時，可以新增語言服務 (<xref:Microsoft.VisualStudio.TextManager.Interop.IVsButtonBarClient>) 到程式碼視窗。  
   
-## 本章節內容  
+## <a name="in-this-section"></a>本章節內容  
  `Customizing Code Windows by Using the Legacy API`  
- 說明如何自訂程式碼視窗使用舊版的 API。  
+ 說明如何自訂程式碼視窗使用舊版 API。  
   
- [How to: 裝載在另一個編輯器中的編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [How to： 裝載在其他編輯器中的編輯器](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  說明如何裝載在編輯器視窗內的第二個編輯器。  
   
- [如何: 引發事件時，編輯器會失去焦點](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [如何： 引發事件，當編輯器失去焦點時](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  說明如何將文件檢視附加至文件資料物件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [使用舊版 API 執行個體化核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
- [使用舊版 API 存取 Text 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)
+ [執行個體化使用舊版 API 的核心編輯器](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)   
+ [使用舊版 API 存取 theText 檢視](../extensibility/accessing-thetext-view-by-using-the-legacy-api.md)

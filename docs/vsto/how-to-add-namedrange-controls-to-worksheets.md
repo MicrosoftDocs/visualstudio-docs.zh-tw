@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add NamedRange Controls to Worksheets | Microsoft Docs'
+title: "如何： 將 NamedRange 控制項加入工作表 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,94 +15,95 @@ helpviewer_keywords:
 - NamedRange control, adding to worksheets
 - controls [Office development in Visual Studio], adding to worksheets
 ms.assetid: da7ec48f-92cb-4fa3-b3e2-447c238d17a8
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 45fb2c6d6950ea462101f0c60ed2642fedec6510
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 44aefbbce0d910efc6e92f2acb75993598f098ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-namedrange-controls-to-worksheets"></a>How to: Add NamedRange Controls to Worksheets
-  You can add <xref:Microsoft.Office.Tools.Excel.NamedRange> controls to a Microsoft Office Excel worksheet at design time and at run time in document-level projects.  
+# <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何：將 NamedRange 控制項加入至工作表
+  您可以在文件層級專案中，於設計階段和執行階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入 Microsoft Office Excel 工作表。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- You can also add <xref:Microsoft.Office.Tools.Excel.NamedRange> controls at run time in VSTO Add-in projects.  
+ 您也可以在 VSTO 增益集專案中，於執行階段加入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項。  
   
- This topic describes the following tasks:  
+ 本主題說明下列工作：  
   
--   [Adding NamedRange controls at design time](#designtime)  
+-   [在設計階段加入 NamedRange 控制項](#designtime)  
   
--   [Adding NamedRange controls at run time in a document-level project](#runtimedoclevel)  
+-   [在文件層級專案中，於執行階段加入 NamedRange 控制項](#runtimedoclevel)  
   
--   [Adding NamedRange controls at run time in an VSTO Add-in project](#runtimeaddin)  
+-   [在 VSTO 增益集專案中，於執行階段加入 NamedRange 控制項](#runtimeaddin)  
   
- For more information about <xref:Microsoft.Office.Tools.Excel.NamedRange> controls, see [NamedRange Control](../vsto/namedrange-control.md).  
+ 如需 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項的詳細資訊，請參閱 [NamedRange Control](../vsto/namedrange-control.md)。  
   
 ##  <a name="designtime"></a> Adding NamedRange Controls at Design Time  
- There are several ways to add <xref:Microsoft.Office.Tools.Excel.NamedRange> controls to a worksheet in a document-level project at design time: from within Excel, from the Visual Studio **Toolbox**, and from the **Data Sources** window.  
+ 有幾種方式可在文件層級專案中，於設計階段將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表：在 Excel 中、透過 Visual Studio 的 [工具箱] ，以及透過 [資料來源]  視窗。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-name-box-in-excel"></a>To add a NamedRange control to a worksheet using the Name Box in Excel  
+#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-name-box-in-excel"></a>使用 Excel 中的名稱方塊將 NamedRange 控制項加入工作表  
   
-1.  Select the cell or cells you want to include in the named range.  
+1.  選取您要包含在指定範圍中的一或多個儲存格。  
   
-2.  In the **Name Box**, type a name for the range and press ENTER.  
+2.  在 [名稱方塊] 中，輸入範圍的名稱，然後按 ENTER 鍵。  
   
-     The **Name Box** is located beside the formula bar, just above column **A** of the worksheet.  
+     [名稱方塊]  位於工作表 **A** 欄正上方的公式列旁。  
   
-#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-toolbox"></a>To add a NamedRange control to a worksheet using the Toolbox  
+#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-toolbox"></a>使用工具箱將 NamedRange 控制項加入工作表  
   
-1.  Open the **Toolbox** and click the **Excel Controls** tab.  
+1.  開啟 [工具箱]  ，然後按一下 [Excel 控制項]  索引標籤。  
   
-2.  Click <xref:Microsoft.Office.Tools.Excel.NamedRange> and drag it to a worksheet.  
+2.  按一下 <xref:Microsoft.Office.Tools.Excel.NamedRange> 並將拖曳至工作表。  
   
-     The **Add Named Range** dialog box appears.  
+     [加入指定範圍]  對話方塊隨即出現。  
   
-3.  Select the cell or cells you want to include in the named range.  
+3.  選取您要包含在指定範圍中的一或多個儲存格。  
   
-4.  Click **OK**.  
+4.  按一下 [ **確定**]。  
   
-     If you do not want the default name that is given to the control, you can change the name in the **Properties** window.  
+     如果您不想要使用指定給控制項的預設名稱，您可以在 [屬性]  視窗中變更名稱。  
   
-#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-data-sources-window"></a>To add a NamedRange control to a worksheet using the Data Sources window  
+#### <a name="to-add-a-namedrange-control-to-a-worksheet-using-the-data-sources-window"></a>使用資料來源視窗將 NamedRange 控制項加入工作表  
   
-1.  Open the **Data Sources** window and create a data source for your project. For more information, see [Add new connections](../data-tools/add-new-connections.md).  
+1.  開啟 [資料來源]  視窗並為您的專案建立資料來源。 如需詳細資訊，請參閱[加入新連接](../data-tools/add-new-connections.md)。  
   
-2.  Drag a single field from the **Data Sources** window to your worksheet.  
+2.  將單一欄位從 [資料來源]  視窗拖曳至您的工作表。  
   
-     A data-bound <xref:Microsoft.Office.Tools.Excel.NamedRange> control is added to the worksheet. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     資料繫結 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項隨即加入工作表。 如需詳細資訊，請參閱 [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
 ##  <a name="runtimedoclevel"></a> Adding NamedRange Controls at Run Time in a Document-Level Project  
- You can add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control programmatically to your worksheet at run time. This enables you to create the host controls in response to events. Dynamically created named ranges are not persisted in the worksheet as host controls when the worksheet is closed. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ 您可以在執行階段，以程式設計方式將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入工作表。 如此可讓您建立主控制項，以回應事件。 當工作表關閉時，動態建立的指定範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
-#### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>To add a NamedRange control to a worksheet programmatically  
+#### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>以程式設計方式將 NamedRange 控制項加入工作表  
   
-1.  In the <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> event handler of `Sheet1`, insert the following code to add the <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **A1** and set its <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property to `Hello world!`  
+1.  在 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 的 `Sheet1`事件處理常式中插入下列程式碼，以將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入儲存格 **A1** 並將其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性設定為 `Hello world!`  
   
-     [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]  [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
+     [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
+     [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]  
   
 ##  <a name="runtimeaddin"></a> Adding NamedRange Controls at Run Time in an VSTO Add-in project  
- You can add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control programmatically to any open worksheet in an VSTO Add-in project. Dynamically created named ranges are not persisted in the worksheet as host controls when the worksheet is closed. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ 您可以在 VSTO 增益集專案中，以程式設計方式將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入任何開啟的工作表。 當工作表關閉時，動態建立的指定範圍不會保存為工作表中的主控制項。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-#### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>To add a NamedRange control to a worksheet programmatically  
+#### <a name="to-add-a-namedrange-control-to-a-worksheet-programmatically"></a>以程式設計方式將 NamedRange 控制項加入工作表  
   
-1.  The following code generates a worksheet host item that is based on the open worksheet, and then adds a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to cell **A1** and sets its <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> property to `Hello world`.  
+1.  下列程式碼會產生以開啟的工作表為基礎的工作表主項目，然後將 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控制項加入儲存格 **A1** 並將其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 屬性設定為 `Hello world`。  
   
-     [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]  [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
+     [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]  
   
-## <a name="see-also"></a>See Also  
- [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
- [Controls on Office Documents](../vsto/controls-on-office-documents.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Automating Excel by Using Extended Objects](../vsto/automating-excel-by-using-extended-objects.md)   
+## <a name="see-also"></a>另請參閱  
+ [在執行階段擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)   
+ [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
+ [NamedRange 控制項](../vsto/namedrange-control.md)   
+ [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [How to: Resize NamedRange Controls](../vsto/how-to-resize-namedrange-controls.md)   
- [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
+ [如何： 調整 NamedRange 控制項的大小](../vsto/how-to-resize-namedrange-controls.md)   
+ [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

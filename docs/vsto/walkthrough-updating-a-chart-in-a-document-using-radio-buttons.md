@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Updating a Chart in a Document Using Radio Buttons | Microsoft Docs'
+title: "逐步解說： 更新使用選項按鈕在文件中的圖表 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,206 +14,211 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], updating using controls
 - controls [Office development in Visual Studio], updating documents
 ms.assetid: 56e6d1f2-65a4-41f0-aff5-f0cfd96d7185
-caps.latest.revision: 60
-author: kempb
-ms.author: kempb
+caps.latest.revision: "60"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: b70182f68576ac9e142f4819ff78c2804c5be907
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 2d6fa02174a8b334b404a0a4ea84ee0e8089c584
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>Walkthrough: Updating a Chart in a Document Using Radio Buttons
-  This walkthrough demonstrates how to use radio buttons in a document-level customization for Microsoft Office Word to give users the option to select chart styles on the document.  
+# <a name="walkthrough-updating-a-chart-in-a-document-using-radio-buttons"></a>逐步解說：使用選項按鈕更新文件中的圖表
+  本逐步解說示範如何在 Microsoft Office Word 的文件層級自訂中使用選項按鈕，讓使用者可以在文件上選取圖表樣式。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Adding a chart to the document in a document-level project at design time.  
+-   在設計階段，將圖表加入至文件層級專案中的文件。  
   
--   Grouping radio buttons by adding them to a user control.  
+-   透過將選項按鈕加入至使用者控制項來分組選項按鈕。  
   
--   Changing the chart style when an option is selected.  
+-   當選取選項時變更圖表樣式。  
   
- To see the result as a completed sample, see the Word Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+ 若要查看結果為已完成的範例，請參閱 Word 控制項範例： [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
   
-## <a name="creating-the-project"></a>Creating the Project  
- The first step is to create a Word Document project.  
+## <a name="creating-the-project"></a>建立專案  
+ 第一個步驟是建立 Windows 文件專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create a Word Document project with the name **My Chart Options**. In the wizard, select **Create a new document**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立 Word 文件專案名稱**My Chart Options**。 在精靈中，選取**建立新的文件**。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     Visual Studio opens the new Word document in the designer and adds the **My Chart Options** project to **Solution Explorer**.  
+     Visual Studio 設計工具中開啟新的 Word 文件，並將**My Chart Options**專案加入**方案總管 中**。  
   
-## <a name="adding-a-chart-to-the-document"></a>Adding a Chart to the Document  
+## <a name="adding-a-chart-to-the-document"></a>將圖表加入至文件  
   
-#### <a name="to-add-a-chart"></a>To add a chart  
+#### <a name="to-add-a-chart"></a>加入圖表  
   
-1.  In the Word document that is hosted in the Visual Studio designer, on the Ribbon, click the **Insert** tab.  
+1.  在 Word 文件裝載於 Visual Studio 設計工具中，在功能區中，按一下**插入** 索引標籤。  
   
-2.  In the **Text** group, click the **Insert Object** drop-down button, and click **Object**.  
+2.  在**文字**群組中，按一下**插入物件**下拉式按鈕，然後按一下**物件**。  
   
-     The **Object** dialog box opens.  
+     **物件**對話方塊隨即開啟。  
   
-3.  In the **Object type** list on the **Create New** tab, select **Microsoft Graph Chart** and then click **OK**.  
+3.  在**物件類型**清單**建立新**索引標籤上，選取**Microsoft Graph 圖表**，然後按一下 **確定**。  
   
-     A chart is added to the document at the insertion point, and the **Datasheet** window appears with some default data.  
+     文件的插入點加入圖表和**資料工作表** 視窗隨即出現一些預設的資料。  
   
-4.  Close the **Datasheet** window to accept the default values in the chart and click inside the document to move focus away from the chart.  
+4.  關閉**資料工作表**接受圖表中的預設值，並按一下以將焦點移開圖表文件內的視窗。  
   
-5.  Right-click the chart, and then click **Format Object**.  
+5.  以滑鼠右鍵按一下圖表，然後按一下**格式化物件**。  
   
-6.  On the **Layout** tab of the **Format Object** dialog box, select **Square** and click **OK**.  
+6.  上**配置** 索引標籤**格式化物件**對話方塊中，選取**方**按一下**確定**。  
   
-## <a name="adding-a-user-control-to-the-project"></a>Adding a User Control to the Project  
- Radio buttons on a document are not mutually exclusive by default. You can make them function correctly by adding them to a user control, and then writing code to control the selection.  
+## <a name="adding-a-user-control-to-the-project"></a>將使用者控制項加入至專案  
+ 文件上的選項按鈕預設並不會互斥。 若要讓選項按鈕正常運作，您可以將選項按鈕加入至使用者控制項，再撰寫程式碼以控制選取範圖。  
   
-#### <a name="to-add-a-user-control"></a>To add a user control  
+#### <a name="to-add-a-user-control"></a>若要加入使用者控制項  
   
-1.  Select the **My Chart Options** project in **Solution Explorer**.  
+1.  選取**My Chart Options**專案中**方案總管 中**。  
   
-2.  On the **Project** menu, click **Add New Item**.  
+2.  在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-3.  In the **Add New Item** dialog box, click **User Control**, name the control **ChartOptions,** and click **Add**.  
+3.  在**加入新項目**對話方塊中，按一下 **使用者控制項**，命名控制項**ChartOptions**按一下**新增**。  
   
-#### <a name="to-add-windows-form-controls-to-the-user-control"></a>To add Windows Form controls to the user control  
+#### <a name="to-add-windows-form-controls-to-the-user-control"></a>將 Windows Form 控制項加入至使用者控制項  
   
-1.  If the user control is not visible in the designer, double-click **ChartOptions** in **Solution Explorer**.  
+1.  如果設計工具中看不到 [使用者控制項，請按兩下**ChartOptions**中**方案總管] 中**。  
   
-2.  From the **Common Controls** tab of the **Toolbox**, drag the first **Radio Button** control to the user control, and change the following properties.  
+2.  從**通用控制項** 索引標籤**工具箱**，將第一個**選項按鈕**控制項加入使用者控制項，並變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
     |**Name**|**columnChart**|  
-    |**Text**|**Column Chart**|  
+    |**Text**|**直條圖**|  
   
-3.  Add a second **Radio Button** to the user control, and change the following properties.  
+3.  新增第二個**選項按鈕**使用者控制項，並變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
     |**Name**|**barChart**|  
-    |**Text**|**Bar Chart**|  
+    |**Text**|**橫條圖**|  
   
-4.  Add a third **Radio Button** to the user control, and change the following properties.  
+4.  新增第三個**選項按鈕**使用者控制項，並變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
     |**Name**|**lineChart**|  
-    |**Text**|**Line Chart**|  
+    |**Text**|**折線圖**|  
   
-5.  Add a fourth **Radio Button** to the user control, and change the following properties.  
+5.  加入第四個**選項按鈕**使用者控制項，並變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
     |**Name**|**areaBlockChart**|  
-    |**Text**|**Area Block Chart**|  
+    |**Text**|**區塊圖**|  
   
-## <a name="adding-references"></a>Adding References  
- To access the chart from the user control on a document, you must have a reference to the Microsoft.Office.Interop.Graph assembly in your project.  
+## <a name="adding-references"></a>加入參考  
+ 若要透過文件上的使用者控制項存取圖表，您必須在專案中加入 Microsoft.Office.Interop.Graph 組件的參考。  
   
-#### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>To add a reference to the Microsoft.Office.Interop.Graph assembly  
+#### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>加入 Microsoft.Office.Interop.Graph 組件的參考  
   
-1.  On the **Project** menu, click **Add Reference**.  
+1.  在 [專案] 功能表上，按一下 [新增參考]。  
   
-     The **Add Reference** dialog box appears.  
+     [加入參考] 對話方塊隨即出現。  
   
-2.  On the **.NET** tab, select **Microsoft.Office.Interop.Graph** and click **OK**. Select the 14.0.0.0 version of the assembly.  
+2.  在**.NET**索引標籤上，選取**Microsoft.Office.Interop.Graph**按一下**確定**。 選取版本為 14.0.0.0 的組件。  
   
-## <a name="changing-the-chart-style-when-a-radio-button-is-selected"></a>Changing the Chart Style when a Radio Button is Selected  
- To make the buttons work correctly, create a public event on the user control, add a property to set the selection type, and create a procedure for the `CheckedChanged` event of each of the radio buttons.  
+## <a name="changing-the-chart-style-when-a-radio-button-is-selected"></a>當選取選項按鈕時變更圖表樣式  
+ 若要讓按鈕正常運作，請在使用者控制項上建立公用事件，加入屬性以設定選取類型，並為各個選項按鈕建立 `CheckedChanged` 事件的程序。  
   
-#### <a name="to-create-an-event-and-property-on-a-user-control"></a>To create an event and property on a user control  
+#### <a name="to-create-an-event-and-property-on-a-user-control"></a>在使用者控制項上建立事件和屬性  
   
-1.  In **Solution Explorer**, right-click the user control, and then click **View Code**.  
+1.  在**方案總管 中**，使用者控制項，以滑鼠右鍵按一下，然後按一下**檢視程式碼**。  
   
-2.  Add code to create a `SelectionChanged` event and the `Selection` property to the `ChartOptions` class.  
+2.  將用於建立 `SelectionChanged` 事件和 `Selection` 屬性的程式碼加入至 `ChartOptions` 類別。  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]  
   
-#### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>To handle the CheckedChange event of the radio buttons  
+#### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>處理選項按鈕的 CheckedChange 事件  
   
-1.  Set the chart type in the `CheckedChanged` event handler of the `areaBlockChart` radio button and then raise the event.  
+1.  在 `CheckedChanged` 選項按鈕的 `areaBlockChart` 事件處理常式中設定圖表類型，然後再引發事件。  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#10)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#10)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#10)]
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#10)]  
   
-2.  Set the chart type in the `CheckedChanged` event handler of the `barChart` radio button.  
+2.  在 `CheckedChanged` 選項按鈕的 `barChart` 事件處理常式中設定圖表類型。  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#11)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#11)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#11)]
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#11)]  
   
-3.  Set the chart type in the `CheckedChanged` event handler of the `columnChart` radio button.  
+3.  在 `CheckedChanged` 選項按鈕的 `columnChart` 事件處理常式中設定圖表類型。  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#12)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#12)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#12)]
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#12)]  
   
-4.  Set the chart type in the `CheckedChanged` event handler of the `lineChart` radio button.  
+4.  在 `CheckedChanged` 選項按鈕的 `lineChart` 事件處理常式中設定圖表類型。  
   
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]  [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]  
   
-5.  In C#, you must add event handlers for the radio buttons. You can add the code to the `ChartOptions` constructor, beneath the call to `InitializeComponent`. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  在 C# 中，您必須為選項按鈕加入事件處理常式。 您可以將程式碼加入至 `ChartOptions` 建構函式，放在 `InitializeComponent` 的呼叫下方。 如需建立事件處理常式的詳細資訊，請參閱[How to： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]  
   
-## <a name="adding-the-user-control-to-the-document"></a>Adding the User Control to the Document  
- When you build the solution, the new user control is automatically added to the **Toolbox**. You can then drag the control from the **Toolbox** to your document.  
+## <a name="adding-the-user-control-to-the-document"></a>將使用者控制項加入至文件  
+ 當您建置方案時，新的使用者控制自動加入至**工具箱**。 然後，您可以將控制項從**工具箱**文件。  
   
-#### <a name="to-add-the-user-control-your-document"></a>To add the user control your document  
+#### <a name="to-add-the-user-control-your-document"></a>將使用者控制項加入至您的文件  
   
-1.  On the **Build** menu, click **Build Solution**.  
+1.  在 [ **建置** ] 功能表上，按一下 [ **建置方案**]。  
   
-     The **ChartOptions** user control is added to the **Toolbox**.  
+     **ChartOptions**使用者控制項加入至**工具箱**。  
   
-2.  In **Solution Explorer**, right-click **ThisDocument.vb** or **ThisDocument.cs**, and then click **View Designer**.  
+2.  在**方案總管] 中**，以滑鼠右鍵按一下**ThisDocument.vb**或**ThisDocument.cs**，然後按一下 [**檢視表設計工具**。  
   
-3.  Drag the `ChartOptions` control from the **Toolbox** to the document.  
+3.  拖曳`ChartOptions`控制項從**工具箱**文件。  
   
-     In the **Properties** window, name the control that you just added to the document  `ChartOptions1`.  
+     在**屬性**視窗中，您只是將控制項加入至文件的名稱`ChartOptions1`。  
   
-## <a name="changing-the-chart-type"></a>Changing the Chart Type  
- Create an event handler to change the chart type according to the option that is selected in the user control.  
+## <a name="changing-the-chart-type"></a>變更圖表類型  
+ 建立事件處理常式，以根據在使用者控制項中選取的選項來變更圖表類型。  
   
-#### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>To change the type of chart that is displayed in the document  
+#### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-document"></a>變更顯示在文件中的圖表類型  
   
-1.  Add the following event handler to the `ThisDocument` class.  
+1.  將下列事件處理常式加入至 `ThisDocument` 類別。  
   
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]  [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]  
+     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]
+     [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]  
   
-2.  In C#, you must add an event handler for the user control to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event.  
+2.  在 C# 中，您必須將使用者控制項的事件處理常式加入至 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件。  
   
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- You can now test your document to make sure that the chart style is updated correctly when you select a radio button.  
+## <a name="testing-the-application"></a>測試應用程式  
+ 現在您可以測試文件，確定是否在選取選項按鈕時正確更新圖表樣式。  
   
-#### <a name="to-test-your-document"></a>To test your document  
+#### <a name="to-test-your-document"></a>測試文件  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-2.  Select various radio buttons.  
+2.  選取不同的選項按鈕。  
   
-3.  Confirm that the chart style changes to match the selection.  
+3.  確認圖表樣式的變更與所選的項目相符。  
   
-## <a name="next-steps"></a>Next Steps  
- Here are some tasks that might come next:  
+## <a name="next-steps"></a>後續步驟  
+ 接著可以執行下列一些工作：  
   
--   Using a button to populate a text box. For more information, see [Walkthrough: Displaying Text in a Text Box in a Document Using a Button](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md).  
+-   使用按鈕填入文字方塊。 如需詳細資訊，請參閱[逐步解說： 在文件使用按鈕的文字方塊中顯示的文字](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。  
   
--   Change formatting by selecting a style from a combo box. For more information, see [Walkthrough: Changing Document Formatting Using CheckBox Controls](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).  
+-   從下拉式方塊選取樣式，以變更格式。 如需詳細資訊，請參閱[逐步解說： 變更文件格式使用核取方塊控制項](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。  
   
-## <a name="see-also"></a>See Also  
- [Walkthroughs Using Word](../vsto/walkthroughs-using-word.md)   
- [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)   
- [Limitations of Windows Forms Controls on Office Documents](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [逐步解說使用 Word](../vsto/walkthroughs-using-word.md)   
+ [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
+ [Office 文件上的 Windows Forms 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)  
   
   

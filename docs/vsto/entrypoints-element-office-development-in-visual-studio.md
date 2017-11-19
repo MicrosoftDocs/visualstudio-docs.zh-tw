@@ -1,30 +1,31 @@
 ---
-title: "&lt;entryPoints&gt; 項目 (Visual Studio 中的 Office 程式開發)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "應用程式資訊清單 [Visual Studio 中的 Office 程式開發]，<entryPoints> 項目"
+title: "&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: application manifests [Office development in Visual Studio], <entryPoints> element
 ms.assetid: 991d7cbf-85e5-4307-a470-076b2f74d859
-caps.latest.revision: 21
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "21"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: eb219d1f88635a82efbc41acb031cdb46a6d7713
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;entryPoints&gt; 項目 (Visual Studio 中的 Office 程式開發)
-  `vstav3`  命名空間的 `entryPoints` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。  
+# <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;進入點&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+  `entryPoints` 命名空間的 `vstav3` 項目包含與 Office 方案相關聯的所有 `entryPoint` 項目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <entryPoints>  
@@ -37,56 +38,143 @@ caps.handback.revision: 20
 </entryPoints>  
 ```  
   
-## 項目和屬性  
- `entryPoints`項目是必要的，且位於 `vstav3`  命名空間。 在應用程式資訊清單中，會為每個 Office 方案定義一個 `entryPoints` 項目。 例如，如果您在多專案的部署中部署三個 Office 方案，則在應用程式資訊清單中會有三個 `entryPoints`項目。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `entryPoints` 項目是必要的，且位於 `vstav3` 命名空間。 在應用程式資訊清單中，會為每個 Office 方案定義一個 `entryPoints` 項目。 例如，如果您在多專案的部署中部署三個 Office 方案，則在應用程式資訊清單中會有三個 `entryPoints` 項目。  
   
- `entryPoints`項目具有下列屬性。  
+ `entryPoints` 項目具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|id|多專案部署所需。 Office 方案的名稱。 id 不能包含等號 \(\=\)。|  
+|---------------|-----------------|  
+|id|多專案部署所需。 Office 方案的名稱。 id 不能包含等號 (=)。|  
   
- `entryPoints`具有下列項目。  
+ `entryPoints` 具有下列項目。  
   
-### entryPoint  
- 必要項。`vstav3`  命名空間中的 `entryPoint` 項目角色會在 [&#60;進入點&#62; 項目 &#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md) 中定義。  
+### <a name="entrypoint"></a>entryPoint  
+ 必要項。 角色`entryPoint`中的項目`vstav3`命名空間中定義[&#60; 進入點 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/entrypoint-element-office-development-in-visual-studio.md).  
   
-## 文件層級自訂範例  
+## <a name="document-level-customization-example"></a>文件層級自訂範例  
   
-### 描述  
- 下列程式碼範例說明使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 所部署之文件層級方案的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md) 中所提供之較大範例的一部分。  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明使用 `entryPoints` 所部署之文件層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
   
-### 程式碼  
-  
-```  
-<vstav3:entryPoints> <vstav3:entryPoint class="ContosoExcelWorkbook.ThisWorkbook"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet1"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet2"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet3"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints>  
-```  
-  
-## VSTO 增益集範例  
-  
-### 描述  
- 下列程式碼範例說明使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 所部署之應用程式層級方案的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md) 中所提供之較大範例的一部分。  
-  
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
-<vstav3:entryPoints> <vstav3:entryPoint class="ContosoOutlookAddIn.ThisAddIn"> <assemblyIdentity name="ContosoOutlookAddIn" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints>  
+<vstav3:entryPoints>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.ThisWorkbook">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet1">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet2">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet3">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+</vstav3:entryPoints>  
 ```  
   
-## 多專案部署範例  
+## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
-### 描述  
- 下列程式碼範例說明多專案部署的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md) 中所提供之較大範例的一部分。  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明使用 `entryPoints` 所部署之應用程式層級方案的應用程式資訊清單中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
   
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
-<vstav3:entryPoints id="ContosoExcel"> <vstav3:entryPoint class="ContosoExcelWorkbook.ThisWorkbook"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet1"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet2"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> <vstav3:entryPoint class="ContosoExcelWorkbook.Sheet3"> <assemblyIdentity name="ContosoExcelWorkbook" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints> <vstav3:entryPoints id="ContosoOutlook"> <vstav3:entryPoint class="ContosoOutlookAddIn.ThisAddIn"> <assemblyIdentity name="ContosoOutlookAddIn" version="1.0.0.0" language="neutral" processorArchitecture="msil" /> </vstav3:entryPoint> </vstav3:entryPoints>  
+<vstav3:entryPoints>  
+  <vstav3:entryPoint   
+    class="ContosoOutlookAddIn.ThisAddIn">  
+    <assemblyIdentity   
+      name="ContosoOutlookAddIn"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+</vstav3:entryPoints>  
 ```  
   
-## 請參閱  
- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="multi-project-deployment-example"></a>多專案部署範例  
+  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明多專案部署的應用程式資訊清單中的 `entryPoints` 項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
+  
+### <a name="code"></a>程式碼  
+  
+```  
+<vstav3:entryPoints   
+  id="ContosoExcel">  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.ThisWorkbook">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet1">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet2">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+  <vstav3:entryPoint   
+    class="ContosoExcelWorkbook.Sheet3">  
+    <assemblyIdentity   
+      name="ContosoExcelWorkbook"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+</vstav3:entryPoints>  
+<vstav3:entryPoints   
+  id="ContosoOutlook">  
+  <vstav3:entryPoint   
+    class="ContosoOutlookAddIn.ThisAddIn">  
+    <assemblyIdentity   
+      name="ContosoOutlookAddIn"   
+      version="1.0.0.0"   
+      language="neutral"   
+      processorArchitecture="msil" />  
+  </vstav3:entryPoint>  
+</vstav3:entryPoints>  
+```  
+  
+## <a name="see-also"></a>另請參閱  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   
   

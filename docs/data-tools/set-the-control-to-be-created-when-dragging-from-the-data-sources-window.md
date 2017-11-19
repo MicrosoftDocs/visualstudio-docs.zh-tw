@@ -1,5 +1,5 @@
 ---
-title: Set the control to be created when dragging from the Data Sources window | Microsoft Docs
+title: "設定要從資料來源視窗拖曳時建立的控制項 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,75 +12,59 @@ helpviewer_keywords:
 - data [Visual Studio], displaying on Windows Forms
 - data [Visual Studio], Data Sources window
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.technology: vs-data-tools
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: d67fd06767fc8160a1a433f5e37826eeae5750fe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.openlocfilehash: 12b8c166873802e3c0e6a8d4e73ff1b686229222
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Set the control to be created when dragging from the Data Sources window
-You can create data-bound controls by dragging items from the **Data Sources** window onto the WPF designer or Windows Forms designer. Each item in the **Data Sources** window has a default control that is created when you drag it to the designer. However, you can choose to create a different control.  
+# <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
+您可以建立資料繫結控制項項目從**資料來源**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 每個項目**資料來源**視窗有時將它拖曳至設計工具所建立的預設控制項。 不過，您可以選擇建立不同的控制項。  
   
-## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>Set the controls to be created for data tables or objects  
- Before you drag items that represent data tables or objects from the **Data Sources** window, you can choose to display all the data in one control, or to display each column or property in a separate control.  
+## <a name="set-the-controls-to-be-created-for-data-tables-or-objects"></a>設定要建立的資料表或物件的控制項  
+您拖曳項目，代表資料的資料表或從物件之前**資料來源**視窗中，您可以選擇一個控制項，以顯示所有資料，或個別控制項中都顯示每個資料行或屬性。  
   
- In this context, the term *object* refers to a custom business object, an entity (in an Entity Data Model), or an object returned by a service.  
+在此內容中，詞彙*物件*指的是自訂的商務物件、 實體 （以實體資料模型） 或服務所傳回的物件。  
   
-#### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>To set the controls to be created for data tables or objects  
+### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>若要設定要針對資料表或物件建立控制項  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
   
-2.  In the **Data Sources** window, select the item that represents the data table or object you want to set.  
+2.  在**資料來源**視窗中，選取代表資料表的項目，或您想要設定的物件。  
   
-3.  Click the drop-down menu for the item, and then click one of the following items in the menu:  
+3.  按一下下拉式清單項目的功能表，並按一下功能表中的下列項目：  
   
-    -   To display each data field in a separate control, click **Details**. When you drag the data item to the designer, this action will create a different data-bound control for each column or property of the parent data table or object, along with labels for each control.  
+    -   若要在個別控制項中顯示每個資料欄位，請按一下**詳細資料**。 當您將資料的項目拖曳至設計工具時，此動作會建立不同的資料繫結控制項，每個資料行或屬性的父資料表或物件，以及每個控制項的標籤。  
   
-    -   To display all of the data in a single control, select a different control in the list, such as **DataGrid** or **List** in a WPF application, or **DataGridView** in a Windows Forms application.  
+    -   若要顯示的所有資料在單一的控制項中，選取不同的控制項在清單中，例如**DataGrid**或**清單**在 WPF 應用程式，或**DataGridView** Windows Form 中應用程式。  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and whether you have added custom controls that support data binding to the **Toolbox**. If the control you want to create is not in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及是否加入自訂控制項的支援資料繫結至**工具箱**。 如果您想要建立的控制項不在可用的控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
-     To learn how to create a custom Windows Forms control that can be added to the list of controls for data tables or objects in the **Data Sources** window, see [Create a Windows Forms user control that supports complex data binding](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).  
+    若要了解如何建立自訂的 Windows Form 控制項加入至資料的資料表或物件中的控制項清單**資料來源**視窗中，請參閱[建立支援複雜資料的 Windows Form 使用者控制項繫結](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。  
   
-## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>Set the controls to be created for data columns or properties  
- Before you drag an item that represents a column or a property of an object from the **Data Sources** window to the designer, you can set the control to be created.  
+## <a name="set-the-controls-to-be-created-for-data-columns-or-properties"></a>設定要用於建立資料行或屬性的控制項  
+拖曳的資料行或從物件的屬性所代表的項目之前**資料來源**至設計工具 視窗中的，您可以設定要建立控制項。  
   
-#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>To set the controls to be created for columns or properties  
+#### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>若要設定要用於建立資料行或屬性的控制項  
   
-1.  Make sure that the WPF designer or the Windows Forms designer is open.  
+1.  請確定 WPF 設計工具] 或 [Windows Form 設計工具已開啟。  
   
-2.  In the **Data Sources** window, expand the desired table or object to display its columns or properties.  
+2.  在**資料來源**視窗中，展開所需的資料表，或要顯示其資料行或屬性的物件。  
   
-3.  Select each column or property for which you want to set the control to be created.  
+3.  選取您要將控制項設為建立每個資料行或屬性。  
   
-4.  Click the drop-down menu for the column or property, and then select the control you want to create when the item is dragged to the designer.  
+4.  按一下下拉式功能表，針對資料行或屬性，然後選取您想要的項目拖曳至設計工具時建立的控制項。  
   
-     The list of available controls depends on which designer you have open, which version of the .NET Framework your project targets, and which custom controls that support data binding you have added to the **Toolbox**. If the control you want to create is in the list of available controls, you can add the control to the list. For more information, see [Add custom controls to the Data Sources window](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+     可用的控制項清單取決於哪一個設計工具上已開啟，.NET Framework 版本做為專案目標，以及哪些自訂控制項的支援資料繫結，您已新增至**工具箱**。 如果您想要建立的控制項的可用控制項清單中，您可以將控制項加入清單。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
-     To learn how to create a custom control that can be added to the list of controls for data columns or properties in the **Data Sources** window, see [Create a Windows Forms user control that supports simple data binding](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
+     若要了解如何建立自訂控制項加入至控制項的資料行或在屬性清單**資料來源**視窗中，請參閱[建立 Windows Form 使用者控制項支援簡單資料繫結](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).  
   
-     If you don't want to create a control for the column or property, select **None** in the drop-down menu. This is useful if you want to drag the parent table or object to the designer, but you do not want to include the specific column or property.  
+     如果您不想要建立資料行或屬性的控制項，選取**無**下拉式選單中。 如果您想要將父資料表或物件拖曳至設計工具中，但您不想要包含的特定資料行或屬性，這非常有用。  
   
-## <a name="see-also"></a>See Also  
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+[將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

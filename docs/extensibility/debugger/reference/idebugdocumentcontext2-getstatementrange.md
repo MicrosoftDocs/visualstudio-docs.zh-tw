@@ -1,63 +1,63 @@
 ---
-title: "IDebugDocumentContext2::GetStatementRange | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::GetStatementRange"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::GetStatementRange"
+title: "IDebugDocumentContext2::GetStatementRange |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::GetStatementRange
+helpviewer_keywords: IDebugDocumentContext2::GetStatementRange
 ms.assetid: bc94851a-0ec4-47ea-99c7-0a585e54e726
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 503b6cb2f9242d2d73ddfbcf14e89be7ec4528ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::GetStatementRange
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdocumentcontext2getstatementrange"></a>IDebugDocumentContext2::GetStatementRange
 取得檔案陳述式的範圍的文件內容。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetStatementRange(   
-   TEXT_POSITION* pBegPosition,  
-   TEXT_POSITION* pEndPosition  
+```cpp  
+HRESULT GetStatementRange(   
+   TEXT_POSITION* pBegPosition,  
+   TEXT_POSITION* pEndPosition  
 );  
 ```  
   
-```c#  
-int GetStatementRange(   
-   TEXT_POSITION[] pBegPosition,  
-   TEXT_POSITION[] pEndPosition  
+```csharp  
+int GetStatementRange(   
+   TEXT_POSITION[] pBegPosition,  
+   TEXT_POSITION[] pEndPosition  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pBegPosition`  
- 輸入 \[、 輸出\]A [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)會被填入的開始位置的結構。  如果不需要這項資訊，請設定此引數設為 null 值。  
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)已填入的開始位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。  
   
  `pEndPosition`  
- 輸入 \[、 輸出\]A [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)會被填入的結束位置的結構。  如果不需要這項資訊，請設定此引數設為 null 值。  
+ [in、 out]A [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)會填入結束位置的結構。 如果不需要這項資訊，請將這個引數為 null 值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 陳述式 range 是符合準則的貢獻將本文中的文件所參考的程式碼行。  
+## <a name="remarks"></a>備註  
+ 陳述式範圍是造成此文件內容所參考的程式碼行的範圍。  
   
- 若要取得這個文件內容內的來源程式碼 \(包括註解\) 的範圍，呼叫[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)方法。  
+ 若要在此文件內容中取得來源程式碼 （包括註解） 的範圍，請呼叫[GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)方法。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CDebugContext`物件，公開 \(expose\) [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  本範例會填入結束位置只有的開頭位置不是 null 值。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CDebugContext`公開物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。 此範例中會填入結束位置只有開頭位置不是 null 值。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,  
                                          TEXT_POSITION* pEndPosition)    
 {    
@@ -86,7 +86,7 @@ HRESULT CDebugContext::GetStatementRange(TEXT_POSITION* pBegPosition,
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [GetSourceRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getsourcerange.md)   
- [TEXT\_POSITION](../../../extensibility/debugger/reference/text-position.md)
+ [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

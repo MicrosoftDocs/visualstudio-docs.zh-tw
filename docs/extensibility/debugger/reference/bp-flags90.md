@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- BP_FLAGS90 enumeration
+helpviewer_keywords: BP_FLAGS90 enumeration
 ms.assetid: 3e5a06c5-fb30-4b8a-b2d5-4a0570fc80bd
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: dddedfcbfe48f6ef6ceaedcdcfb1d7089307bcd3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 5e958be77ca266af30556fa8c03c580eea94b903
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="bpflags90"></a>BP_FLAGS90
 列舉有效的選擇性旗標值。 選擇性旗標可能會用來指定當您設定中斷點的其他資訊。 這個列舉型別擴充[BP_FLAGS](../../../extensibility/debugger/reference/bp-flags.md)列舉型別。  

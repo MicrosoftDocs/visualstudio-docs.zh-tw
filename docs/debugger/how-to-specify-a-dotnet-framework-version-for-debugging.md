@@ -1,67 +1,67 @@
 ---
-title: "如何：指定偵錯的 .NET Framework 版本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/16/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - ".NET Framework, 指定偵錯版本"
-  - "偵錯 [Visual Studio], 指定 .NET Framework 版本"
+title: "如何： 指定的.NET Framework 版本進行偵錯 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- .NET Framework, specifying version for debugging
+- debugging [Visual Studio], specifying .NET Framework version
 ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
-caps.latest.revision: 9
-caps.handback.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ace7dcdf236a551725dcc60e211ca98e3753e5cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：指定偵錯的 .NET Framework 版本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 偵錯工具支援偵錯舊版 Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 以及最新的版本。  如果從 Visual Studio 啟動應用程式，偵錯工具一定可以為正在偵錯的應用程式識別正確的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。  如果應用程式已經在執行且您使用 \[**附加至**\]，偵錯工具就不一定能夠識別舊版的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。  如果發生這種情況，就會出現錯誤訊息：  
+# <a name="how-to-specify-a-net-framework-version-for-debugging"></a>如何：指定偵錯的 .NET Framework 版本
+[!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 偵錯工具支援偵錯舊版 Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 以及最新的版本。 如果您從 Visual Studio 啟動應用程式，偵錯工具可以一定能辨識的正確版本[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]您正在偵錯應用程式。 如果已在執行應用程式，並使用**附加至**，偵錯工具可能不一定能夠識別舊版[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 如果發生這種情況，就會出現錯誤訊息：  
   
  偵錯工具對於應用程式所要使用的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本做了不正確的假設。  
   
  在這些不常見的情況中，您可以設定登錄機碼指示偵錯工具要使用的版本。  
   
-### 若要指定偵錯的 .NET Framework 版本  
+### <a name="to-specify-a-net-framework-version-for-debugging"></a>若要指定偵錯的 .NET Framework 版本  
   
-1.  查詢目錄 Windows\\Microsoft.NET\\Framework 以尋找電腦上已安裝的 .NET Framework 版本。  版本號碼看起來如下所示：  
+1.  查詢目錄 Windows\Microsoft.NET\Framework 以尋找電腦上已安裝的 .NET Framework 版本。 版本號碼看起來如下所示：  
   
      `V1.1.4322`  
   
      識別正確的版本編號然後記下來。  
   
-2.  啟動 \[**登錄編輯程式**\] \(regedit\)。  
+2.  啟動**登錄編輯程式**(regedit)。  
   
-3.  在 \[**登錄編輯程式**\] 中開啟 HKEY\_LOCAL\_MACHINE 資料夾。  
+3.  在**登錄編輯程式**，開啟 HKEY_LOCAL_MACHINE 資料夾。  
   
-4.  巡覽至：HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\VisualStudio\\10.0\\AD7Metrics\\Engine\\{449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B}  
+4.  瀏覽至： HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}  
   
-     如果此機碼不存在，請以滑鼠右鍵按一下 HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\VisualStudio\\10.0\\AD7Metrics\\Engine，然後按一下 \[**新增機碼**\]。  將新增機碼命名為 `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
+     如果索引鍵不存在，以滑鼠右鍵按一下 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine，然後按一下**新金鑰**。 將新的機碼命名`{449EC4CC-30D2-4032-9256-EE18EB41B62B}`。  
   
-5.  在巡覽至 {449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B} 後，查詢 \[**名稱**\] 欄位然後尋找 CLRVersionForDebugging 機碼。  
+5.  巡覽至 {449EC4CC-30D2-4032-9256-EE18EB41B62B} 之後, 查看**名稱**欄位然後尋找 clrversionfordebugging 機碼。  
   
-    1.  如果機碼不存在，請以滑鼠右鍵按一下 {449EC4CC\-30D2\-4032\-9256\-EE18EB41B62B}，然後按一下 \[**新增字串值**\]。  然後以滑鼠右鍵按一下新的字串值，按一下 \[**重新命名**\]，再輸入 `CLRVersionForDebugging`。  
+    1.  如果索引鍵不存在，以滑鼠右鍵按一下 {449EC4CC-30D2-4032-9256-EE18EB41B62B}，然後按一下**新字串值**。 以滑鼠右鍵按一下新的字串值，請按一下**重新命名**，然後輸入`CLRVersionForDebugging`。  
   
-6.  按兩下 \[**CLRVersionForDebugging**\]。  
+6.  按兩下**CLRVersionForDebugging**。  
   
-7.  在 \[**編輯字串**\] 方塊的 \[**值**\] 方塊中輸入 .NET Framework 版本編號。  例如：V1.1.4322。  
+7.  在**編輯字串**方塊中，輸入中的.NET Framework 版本號碼**值**方塊。 例如：V1.1.4322。  
   
-8.  按一下 \[**確定**\]。  
+8.  按一下 [確定]。  
   
-9. 關閉 \[**登錄編輯程式**\]。  
+9. 關閉**登錄編輯程式**。  
   
-     如果在開始偵錯時仍然出現錯誤訊息，請確認已經在登錄中正確輸入版本編號。  同時確認是使用 Visual Studio 支援的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。  偵錯工具與 .NET Framework 的最新版本和舊版相容，但是不一定與未來的版本相容。  
+     如果在開始偵錯時仍然出現錯誤訊息，請確認已經在登錄中正確輸入版本編號。 同時確認是使用 Visual Studio 支援的 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 版本。 偵錯工具與 .NET Framework 的最新版本和舊版相容，但是不一定與未來的版本相容。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯設定和準備](../debugger/debugger-settings-and-preparation.md)

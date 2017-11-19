@@ -1,47 +1,44 @@
 ---
-title: "選取程式碼類型對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.debug.selectengines"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "JScript"
-  - "SQL"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio], 引擎選擇"
-  - "偵錯工具, 引擎選擇"
-  - "偵錯引擎選擇對話方塊"
+title: "選取程式碼類型對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.debug.selectengines
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+- JScript
+- SQL
+helpviewer_keywords:
+- debugging [Visual Studio], engine selection
+- debugger, engine selection
+- debugging engine selection dialog box
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 421c8a206091bf69e20a814a693f1b88bbb0d843
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 選取程式碼類型對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-若要開啟這個對話方塊，請開啟 \[**附加至處理序**\] 對話方塊，然後按一下 \[**選取**\] 按鈕。  
+# <a name="select-code-type-dialog-box"></a>選取程式碼類型對話方塊
+若要開啟此對話方塊中，開啟**附加至處理序**對話方塊，然後按一下**選取** 按鈕。  
   
- **自動判斷要偵錯的程式碼類型**  
+ **自動判斷要偵錯程式碼的類型**  
  將依據正在執行的程式碼類型，選取適當的偵錯工具。  
   
- **偵錯這些程式碼類型:**  
+ **偵錯這些程式碼類型：**  
  從提供的清單選擇要進行偵錯的程式碼類型。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
- [附加至執行中處理序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+ [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

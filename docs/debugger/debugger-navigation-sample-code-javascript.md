@@ -1,31 +1,32 @@
 ---
-title: "偵錯工具導覽範例程式碼 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
+title: "偵錯工具巡覽範例程式碼 (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
 ms.assetid: 4e2d1346-91d6-4935-9e70-130e369a4cb7
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c6c0642e645fa3eba284fc1e4de888916aeb4a3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯工具導覽範例程式碼 (JavaScript)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-本主題中的程式碼是[在偵錯工作階段中控制執行 \(JavaScript\)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)主題的範例檔案。  
+# <a name="debugger-navigation-sample-code-javascript"></a>偵錯工具導覽範例程式碼 (JavaScript)
+本主題中的程式碼是範例檔案[控制偵錯工作階段 (JavaScript) 中的執行](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)主題。  
   
-## default.js 範例程式碼  
+## <a name="defaultjs-sample-code"></a>default.js 範例程式碼  
   
 ```javascript  
 // For an introduction to the Blank template, see the following documentation:  

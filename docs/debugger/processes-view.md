@@ -1,63 +1,62 @@
 ---
-title: "Processes View | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.externaltools.spyplus.processesview"
-helpviewer_keywords: 
-  - "Processes view"
+title: "處理序檢視 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.externaltools.spyplus.processesview
+helpviewer_keywords: Processes view
 ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b2ca6d0d7f875e376af37fcdcfa5d4156b8f4038
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Processes View
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[處理序\] 檢視會顯示系統上所有作用中處理序的樹狀結構，  其中會顯示處理序 ID 和模組名稱。  如果您要檢查特定系統處理序，而該處理序通常對應至執行程式，請使用 \[處理序\] 檢視。  處理序可以透過模組名稱來識別，或是指定「系統處理序」。  
+# <a name="processes-view"></a>處理序檢視
+處理序檢視會顯示您系統上的所有使用中的處理序樹狀結構。 顯示處理序識別碼和模組名稱。 如果您想要檢查通常對應於正在執行之程式的特定系統處理序，請使用處理序檢視。 處理程序所識別的模組名稱，或指定 「 系統處理序 」。  
   
- Microsoft Windows 支援多個處理序。  每個處理序可以有一個或多個執行緒，並且每個執行緒可以有一個或多個相關聯的最上層視窗。  每個最上層視窗可以擁有一系列視窗。  加號 \(\+\) 代表層級為摺疊。  摺疊的檢視是由一個處理序一行所組成。  按一下加號 \(\+\) 即可展開該層。  
+ Microsoft Windows 支援多個處理序。 每個處理序可以有一或多個執行緒，以及每個執行緒可以有一個或多個相關的最上層視窗。 每個最上層視窗可以擁有一系列的視窗。 A + 符號表示層級已摺疊。 摺疊的檢視是由每個處理序的一列所組成。 按一下 + 符號展開的層級。  
   
- 如果您要檢查特定系統處理序，而該處理序通常對應至執行程式，請使用 \[處理序\] 檢視。  處理序可以透過模組名稱來識別，或是指定「系統處理序」。 若要尋找處理序，請摺疊樹狀結構並搜尋清單。  
+ 如果您想要檢查通常對應於正在執行之程式的特定系統處理序，請使用處理序檢視。 處理程序所識別的模組名稱，或指定 「 系統處理序 」。 若要尋找處理程序，摺疊樹狀結構並搜尋清單。  
   
-## 程序  
+## <a name="procedures"></a>程序  
   
-#### 若要開啟處理序檢視  
+#### <a name="to-open-the-processes-view"></a>若要開啟處理序檢視  
   
-1.  選擇 \[**Spy**\] 功能表中的 \[**處理序**\]。  
+1.  從**Spy**功能表上，選擇**處理程序**。  
   
- ![Spy&#43;&#43; 處理序檢視](../debugger/media/spy--_processes.png "Spy\+\+\_Processes")  
-Spy\+\+ 處理序檢視  
+ ![Spy #43; &#43;處理序檢視](../debugger/media/spy--_processes.png "Spy + + _Processes")  
+Spy++ 處理序檢視  
   
- 上圖顯示 \[處理序\] 檢視，其中處理序和執行緒節點已展開。  
+ 上圖顯示處理序檢視與程序和執行緒展開的節點。  
   
-### 本章節內容  
- [在 &#91;處理序檢視&#93; 中搜尋處理序](../debugger/how-to-search-for-a-process-in-processes-view.md)  
- 說明如何在 \[處理序\] 檢視中尋找特定的處理序。  
+### <a name="in-this-section"></a>本章節內容  
+ [處理序檢視中的處理序搜尋](../debugger/how-to-search-for-a-process-in-processes-view.md)  
+ 說明如何在處理程序檢視尋找特定的處理程序。  
   
  [顯示處理序屬性](../debugger/how-to-display-process-properties.md)  
- 說明如何顯示訊息的詳細資訊。  
+ 說明如何顯示一則訊息的詳細資訊。  
   
-### 相關章節  
- [Spy\+\+ 檢視](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+### <a name="related-sections"></a>相關章節  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。  
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。  
   
  [處理序搜尋對話方塊](../debugger/process-search-dialog-box.md)  
- 用來尋找 \[處理序\] 檢視中特定處理序的節點。  
+ 用來尋找特定的處理序中處理序檢視的節點。  
   
  [處理序屬性對話方塊](../debugger/process-properties-dialog-box.md)  
- 顯示 \[處理序\] 檢視中所選取處理序的屬性。  
+ 顯示處理程序中處理序檢視所選取的屬性。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。

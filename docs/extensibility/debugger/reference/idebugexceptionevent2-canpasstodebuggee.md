@@ -1,46 +1,46 @@
 ---
-title: "IDebugExceptionEvent2::CanPassToDebuggee | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
-helpviewer_keywords: 
-  - "IDebugExceptionEvent2::CanPassToDebuggee"
+title: "IDebugExceptionEvent2::CanPassToDebuggee |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugExceptionEvent2::CanPassToDebuggee
+helpviewer_keywords: IDebugExceptionEvent2::CanPassToDebuggee
 ms.assetid: ae4bbe0a-fbe1-49be-a310-ea64279a434b
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ef10fd3ca7f41c2afd1c827fb71ca2178782e3d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExceptionEvent2::CanPassToDebuggee
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-判斷偵錯引擎 \(DE\) 支援將此例外狀況傳遞給偵錯時繼續執行程式的選項。  
+# <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
+決定偵錯引擎 (DE) 支援將此例外狀況傳遞至偵錯時就會繼續執行程式的選項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT CanPassToDebuggee(  
-   void  
+```cpp  
+HRESULT CanPassToDebuggee(  
+   void  
 );  
 ```  
   
-```c#  
-int CanPassToDebuggee();  
+```csharp  
+int CanPassToDebuggee();  
 ```  
   
-## 傳回值  
- 傳回其中一個`S_OK` \(例外狀況可以傳送給程式\) 或`S_FALSE` \(不能傳遞例外狀況\)。  
+## <a name="return-value"></a>傳回值  
+ 傳回`S_OK`（例外狀況可以傳遞至程式） 或`S_FALSE`（無法傳遞的例外狀況）。  
   
-## 備註  
- DE 必須要有預設的動作，以便傳遞給偵錯項目。  IDE 可能會收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件，並呼叫[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)而不需呼叫的方法`CanPassToDebuggee`方法。  因此，DE 應該有預設理由需要或不在傳遞例外狀況。  
+## <a name="remarks"></a>備註  
+ DE 必須傳遞至偵錯工具的預設動作。 IDE，可能會收到[IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)事件和呼叫[繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)方法，而不需呼叫`CanPassToDebuggee`方法。 因此，DE 應該或未傳遞例外狀況的預設案例。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)   
- [繼續](../../../extensibility/debugger/reference/idebugprocess3-continue.md)
+ [Continue](../../../extensibility/debugger/reference/idebugprocess3-continue.md)

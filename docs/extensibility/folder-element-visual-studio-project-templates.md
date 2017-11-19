@@ -1,29 +1,34 @@
 ---
-title: "資料夾項目 (Visual Studio 專案範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Folder"
-helpviewer_keywords: 
-  - "Folder 項目 [Visual Studio 專案範本]"
+title: "資料夾項目 （Visual Studio 專案範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Folder
+helpviewer_keywords: Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 677b705015b2b12ee484db7595d6cfd919ad61d1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 資料夾項目 (Visual Studio 專案範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定將加入至專案的資料夾。  
+# <a name="folder-element-visual-studio-project-templates"></a>資料夾項目 (Visual Studio 專案範本)
+指定將會加入至專案的資料夾。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateContent >  
+ \<Project>  
+ \<資料夾 >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <Folder Name="Project Folder">  
@@ -32,35 +37,35 @@ caps.handback.revision: 11
 </Folder>  
 ```  
   
-## 屬性和項目  
- 下列小節將說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節將說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
-|--------|--------|  
+|---------------|-----------------|  
 |`Name`|必要屬性。<br /><br /> 專案資料夾的名稱。|  
-|`TargetFolderName`|選擇性屬性。<br /><br /> 指定從範本建立專案時的資料夾名稱。  使用參數取代建立資料夾名稱，或是以不能直接在 .zip 檔中使用的國際字串命名資料夾時，這個屬性很有用。|  
+|`TargetFolderName`|選擇性屬性。<br /><br /> 指定要從範本建立專案時，提供給資料夾的名稱。 這個屬性可用於使用取代參數建立的資料夾名稱或命名的資料夾有國際字串不能直接在.zip 檔案。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
   
-|元素|描述|  
-|--------|--------|  
-|`Folder`|指定要加入至專案的資料夾。  `Folder` 項目可以包含子 `Folder` 項目。|  
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
+|項目|說明|  
+|-------------|-----------------|  
+|`Folder`|指定要加入至專案的資料夾。 `Folder`項目可以包含子`Folder`項目。|  
+|[專案項目](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要加入至專案的檔案。|  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[專案](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md) 的選擇性子項目。|  
+|項目|描述|  
+|-------------|-----------------|  
+|[Project](../extensibility/project-element-visual-studio-templates.md)|選擇性子項目[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)。|  
   
-## 備註  
- `Folder` 是 `Project` 的選擇性子系。  
+## <a name="remarks"></a>備註  
+ `Folder`是選擇性的子系的`Project`。  
   
- 您可以使用下列任一方法，將專案項目組織到範本中的資料夾內：  
+ 您可以使用任何下列方法，以將專案項目組織成範本中的資料夾：  
   
--   將資料夾包含在範本檔 \(.zip\) 中，並且在 .vstemplate 檔的 `ProjectItem` 項目 \(而非 `Folder` 項目\) 中指定檔案路徑，藉此將資料夾加入至專案。  這是建議使用的方法。  例如：  
+-   在範本的.zip 檔案，包括資料夾並將它們加入至專案的.vstemplate 檔案中指定的路徑中的檔案`ProjectItem`項目，不含`Folder`項目。 這是建議的方法。 例如:   
   
      `...`  
   
@@ -70,7 +75,7 @@ caps.handback.revision: 11
   
      `...`  
   
--   將資料夾包含在範本檔 \(.zip\) 中，並且在 .vstemplate 檔中利用 `Folder` 項目將資料夾加入至專案。  例如：  
+-   將資料夾加入範本的.zip 檔案，並將它們加入使用.vstemplate 檔案中的專案`Folder`項目。 例如:   
   
      `...`  
   
@@ -84,7 +89,7 @@ caps.handback.revision: 11
   
      `...`  
   
--   請勿將資料夾包含在範本檔 \(.zip\) 中，但是請您使用 `ProjectItem` 項目的 `TargetFileName` 屬性 \(Attribute\) 加入資料夾。  例如：  
+-   在範本的.zip 檔案中，不包含資料夾，但將使用的資料夾新增`TargetFileName`屬性`ProjectItem`項目。 例如:   
   
      `...`  
   
@@ -94,8 +99,8 @@ caps.handback.revision: 11
   
      `...`  
   
-## 範例  
- 下列範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 應用程式專案範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例說明的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -123,7 +128,7 @@ caps.handback.revision: 11
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
- [ProjectItem 項目 \(Visual Studio 項目範本\)](../extensibility/projectitem-element-visual-studio-item-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [ProjectItem 元素 (Visual Studio 項目範本)](../extensibility/projectitem-element-visual-studio-item-templates.md)

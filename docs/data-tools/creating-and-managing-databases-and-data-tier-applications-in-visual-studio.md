@@ -1,5 +1,5 @@
 ---
-title: Creating and managing databases and data-tier applications | Microsoft Docs
+title: "資料庫專案、 server 專案和 Visual Studio 中的 DAC 專案 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -12,49 +12,29 @@ helpviewer_keywords:
 - databases, managing change
 - managing change, database servers
 ms.assetid: 40b51f5a-d52c-44ac-8f84-037a0917af33
-caps.latest.revision: 37
+caps.latest.revision: "37"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
 ms.technology: vs-data-tools
-ms.translationtype: HT
-ms.sourcegitcommit: 33a857c2d8585e2e8da9bcd9158190366a3b6830
-ms.openlocfilehash: 096d514ba8b6f15a539e533c26b24a5cd0692999
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creating and managing databases and data-tier applications in Visual Studio
-> [!IMPORTANT]
->  The database projects that were included in earlier versions of [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] are now provided in [!INCLUDE[sql_Denali_long](../data-tools/includes/sql_denali_long_md.md)] tools. For more information, see [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).  
+# <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>資料庫專案和 Visual Studio 中的資料層應用程式  
+您可以使用資料庫專案建立新的資料庫，新的資料層應用程式 (Dac)，並且更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案可讓您套用至您的資料庫開發工作中相同的方式將這些技術套用至 managed 或原生程式碼中的版本控制和專案管理技術。 您可以協助您建立來管理對資料庫和資料庫伺服器的開發小組*DAC 專案*，*資料庫專案*，或*伺服器專案*並將它放置版本控制。 您的小組成員可以簽出檔案，以進行、 建置和測試中的變更*隔離式的開發環境*，或沙箱，與小組共用它們之前。 為協助確保程式碼品質，您的小組可以完成，並預備環境中測試之資料庫的特定版本的所有變更，然後再部署到實際執行環境的變更。  
   
- You can use database projects to create new databases, new data-tier applications (DACs), and to update existing databases and data-tier applications. Both database projects and DAC projects enable you to apply version control and project management techniques to your database development efforts in much the same way that you apply those techniques to managed or native code. You can help your development team manage changes to databases and database servers by creating a *DAC project*, *database project*, or a *server project* and putting it under version control. Members of your team can then check out files to make, build, and test changes in an *isolated development environment*, or sandbox, before sharing them with the team. To help ensure code quality, your team can finish and test all changes for a particular release of the database in a staging environment before you deploy the changes into production.  
+如需支援的資料層應用程式的資料庫功能的清單，請參閱[資料層應用程式中支援的功能](http://go.microsoft.com/fwlink/?LinkId=164239)Microsoft 網站上。 如果您使用您的資料庫中不支援的資料層應用程式的功能，您應該改為使用資料庫專案來管理您的資料庫變更。  
   
- For a list of the database features that are supported by Data-tier Applications, see [Features Supported in Data-tier Applications](http://go.microsoft.com/fwlink/?LinkId=164239) on the Microsoft web site. If you use features in your database that are not supported by Data-tier Applications, you should instead use a database project to manage changes to your database.  
+## <a name="common-high-level-tasks"></a>高層級的一般工作  
   
-## <a name="common-high-level-tasks"></a>Common High-Level Tasks  
-  
-|High-Level Task|Supporting Content|  
+|高層級的工作|支援內容|  
 |----------------------|------------------------|  
-|**Start development of a data-tier application:** A DAC is a new concept introduced with [!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)] that contains the definition for a [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database and the supporting instance objects that are used by a client-server or 3-tier application. A DAC includes database objects, such as tables and views, together with instance entities such as logins. You can use [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] to create a DAC project, build a DAC package file, and send that DAC package file to a database administrator for deployment onto an instance of the [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] database engine.|-   [Creating and Managing Data-tier Applications](http://go.microsoft.com/fwlink/?LinkId=160741) (Microsoft web site)<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|  
-|**Performing iterative database development:** If you are a developer or a tester, you check out parts of the project and then update them in an isolated development environment. By using this type of environment, you can test  your changes without affecting other members of the team. After the changes are complete, you check the files back into version control, where other team members can obtain your changes and build and deploy them to a test server.|-   [Query and Text Editors (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)<br />-   [Transact-SQL Debugger](http://go.microsoft.com/fwlink/?LinkId=227324) (Microsoft web site)|  
-|**Prototyping, verifying test results, and modifying database scripts and objects:** You can use the [!INCLUDE[tsql](../data-tools/includes/tsql_md.md)] editor to perform any one of these common tasks.|-   [Query and Text Editors (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) (Microsoft web site)|  
+|**開始的資料層應用程式開發：** DAC 是引進的新概念[!INCLUDE[sskatmai_r2](../data-tools/includes/sskatmai_r2_md.md)]，其中包含定義[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫，並支援執行個體所使用的用戶端-伺服器或 3 層物件應用程式。 DAC 包含資料庫物件，例如資料表和檢視表，以及執行個體的實體，例如登入。 您可以使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]建立 DAC 專案，建置 DAC 封裝檔案，並將 DAC 封裝檔案傳送至部署至執行個體的資料庫管理員[!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)]資料庫引擎。|-   [建立和管理資料層應用程式](http://go.microsoft.com/fwlink/?LinkId=160741)（Microsoft 網站上）<br />-   [SQL Server Management Studio](http://go.microsoft.com/fwlink/?LinkId=227328)|  
+|**執行資料庫反覆開發：**如果您是開發人員或測試人員，您簽出專案的組件，並加以隔離式的開發環境中更新。 藉由使用這種環境，您可以測試您的變更，而不會影響小組的其他成員。 變更已完成之後，您可以檢查檔案重新加入版本控制，讓其他小組成員可以取得您的變更和建立並將其部署至測試伺服器。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）<br />-   [TRANSACT-SQL 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324)（Microsoft 網站上）|  
+|**建立原型，驗證測試的結果，並修改資料庫指令碼和物件：**您可以使用[!INCLUDE[tsql](../data-tools/includes/tsql_md.md)]編輯器執行其中一個這些常見的工作。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）|  
   
-## <a name="see-also"></a>See Also  
- [Visual Studio data tools for .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-
+## <a name="see-also"></a>請參閱
+[適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Extending Server Explorer to Display Web Parts | Microsoft Docs'
+title: "逐步解說： 擴充伺服器總管 以顯示 Web 組件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,120 +16,113 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending SharePoint Connections node in Server Explorer
 - SharePoint Connections [SharePoint development in Visual Studio], creating a new node type
 ms.assetid: 5b1f104a-0eaf-4929-9f1f-d7afcfc8b707
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 54e01f4db7fa98d808696b7ca8d85b1c4c038f02
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0dce1b5ecafbccfdf9816bbc4ef3e8fee3e5c2fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>Walkthrough: Extending Server Explorer to Display Web Parts
-  In Visual Studio, you can use the **SharePoint Connections** node of **Server Explorer** to view components on SharePoint sites. However, **Server Explorer** doesn't display some components by default. In this walkthrough, you'll extend **Server Explorer** so that it displays the Web Part gallery on each connected SharePoint site.  
+# <a name="walkthrough-extending-server-explorer-to-display-web-parts"></a>逐步解說：擴充伺服器總管以顯示 Web 組件
+  在 Visual Studio 中，您可以使用**SharePoint 連接**節點**伺服器總管**檢視 SharePoint 網站上的元件。 不過，**伺服器總管**預設不會顯示某些元件。 在本逐步解說中，您將會延長**伺服器總管**，使其顯示 Web 組件庫上每個連線的 SharePoint 網站。  
   
- This walkthrough demonstrates the following tasks:  
+ 本逐步解說將示範下列工作：  
   
--   Creating a Visual Studio extension that extends **Server Explorer** in the following ways:  
+-   建立 Visual Studio 擴充功能擴充**伺服器總管**如下：  
   
-    -   The extension adds a **Web Part Gallery** node under each SharePoint site node in **Server Explorer**. This new node contains child nodes that represent each Web Part in the Web Part gallery on the site.  
+    -   擴充功能加入**網頁組件庫**節點中的每個 SharePoint 網站 節點下**伺服器總管**。 此一新節點會包含代表站台上的 Web 組件庫中的每個 Web 組件的子節點。  
   
-    -   The extension defines a new type of node that represents a Web Part instance. This new node type is the basis for the child nodes under the new **Web Part Gallery** node. The new Web Part node type displays information in the **Properties** window about the Web Part that it represents. The node type also includes a custom shortcut menu item that you can use as a starting point for performing other tasks that relate to the Web Part.  
+    -   延伸模組會定義新類型的節點，表示 Web 組件執行個體。 這個新的節點型別是在新的子節點的基礎**網頁組件庫**節點。 新的 Web 組件節點類型會顯示在資訊**屬性**它代表 Web 組件相關的視窗。 節點型別也包含您可以使用做為起點來執行其他與 Web 組件相關聯的工作的自訂快顯功能表項目。  
   
--   Creating two custom SharePoint commands that the the extension assembly calls. SharePoint commands are methods that can be called by extension assemblies to use APIs in the server object model for SharePoint. In this walkthrough, you create commands that retrieve Web Part information from the local SharePoint site on the development computer. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   建立兩個自訂 SharePoint 命令的延伸模組組件呼叫。 SharePoint 命令是使用伺服器物件模型中的應用程式開發介面 for SharePoint 的延伸模組組件可以呼叫的方法。 在本逐步解說中，您可以建立從開發電腦上之本機 SharePoint 網站擷取 Web 組件資訊的命令。 如需詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
   
--   Building a Visual Studio Extension (VSIX) package to deploy the extension.  
+-   建置 Visual Studio 擴充功能 (VSIX) 封裝，部署延伸模組。  
   
--   Debugging and testing the extension.  
+-   偵錯和測試擴充功能。  
   
 > [!NOTE]  
->  For an alternate version of this walkthrough that uses the client object model for SharePoint instead of its server object model, see [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).  
+>  For SharePoint 會使用用戶端物件模型，而不是其伺服器物件模型本逐步解說的替代版本，請參閱[逐步解說： 呼叫 SharePoint 用戶端物件模型，在伺服器總管擴充功能](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components on the development computer to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說在開發電腦上：  
   
--   Supported editions of Windows, SharePoint and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK。 本逐步解說使用**VSIX 專案**SDK，以建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱[擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+ 了解下列概念是有幫助，但並非必要，完成此逐步解說：  
   
--   Using the server object model for SharePoint. For more information, see [Using the SharePoint Foundation Server-Side Object Model](http://go.microsoft.com/fwlink/?LinkId=177796).  
+-   使用 for SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱[使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   Web Parts in SharePoint solutions. For more information, see [Web Parts Overview](http://go.microsoft.com/fwlink/?LinkId=177803).  
+-   SharePoint 方案中的 web 組件。 如需詳細資訊，請參閱[Web 組件概觀](http://go.microsoft.com/fwlink/?LinkId=177803)。  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you must create three projects:  
+## <a name="creating-the-projects"></a>建立專案  
+ 若要完成此逐步解說，您必須建立三個專案：  
   
--   A VSIX project to create the VSIX package to deploy the extension.  
+-   若要建立 VSIX 封裝，來部署擴充功能 VSIX 專案。  
   
--   A class library project that implements the extension. This project must target the .NET Framework 4.5.  
+-   類別庫專案，可實作延伸。 此專案必須以.NET Framework 4.5 為目標。  
   
--   A class library project that defines the custom SharePoint commands. This project must target the.NET Framework 3.5.  
+-   類別庫專案來定義自訂 SharePoint 命令。 此專案必須以.net Framework 3.5 為目標。  
   
- Start the walkthrough by creating the projects.  
+ 開始本逐步解說建立的專案。  
   
-#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
+#### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  In the  **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
-  
-    > [!NOTE]  
-    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
-  
-4.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
-  
-5.  Choose the **VSIX Project** template, name the project **WebPartNode**, and then choose the **OK** button.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNode** project to **Solution Explorer**.  
-  
-#### <a name="to-create-the-extension-project"></a>To create the extension project  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
   
-2.  In the **New Project** dialog box, expand the **Visual C#** node or **Visual Basic** node, and then the choose **Windows** node.  
+4.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
-3.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
+5.  選擇**VSIX 專案**範本，將專案**WebPartNode**，然後選擇 [**確定**] 按鈕。  
   
-4.  In the list of project templates, choose **Class Library**, name the project **WebPartNodeExtension**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNode**專案加入**方案總管 中**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartNodeExtension** project to the solution and opens the default Class1 code file.  
+#### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
-5.  Delete the Class1 code file from the project.  
+1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-#### <a name="to-create-the-sharepoint-commands-project"></a>To create the SharePoint commands project  
+2.  在**新專案**對話方塊方塊中，展開 [ **Visual C#**節點或**Visual Basic** ] 節點，然後再選擇**Windows**節點。  
   
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+3.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+4.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartNodeExtension**，然後選擇 [ **[確定]** ] 按鈕。  
   
-2.  In the  **New Project** dialog box, expand the **Visual C#** node or **Visual Basic** node, and then choose the **Windows** node.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartNodeExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-3.  At the top of the dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
+5.  從專案刪除 Class1 的程式碼檔案。  
+  
+#### <a name="to-create-the-sharepoint-commands-project"></a>若要建立 SharePoint 命令專案  
+  
+1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
+  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#**節點或**Visual Basic**  節點，然後選擇  **Windows**節點。  
+  
+3.  在對話方塊頂端，選擇  **.NET Framework 3.5**清單中的.NET Framework 版本。  
   
 4.  
   
-5.  In the list of project templates, choose **Class Library**, name the project **WebPartCommands**, and then choose the **OK** button.  
+5.  在專案範本清單中選擇**類別庫**，將專案命名**WebPartCommands**，然後選擇 [ **[確定]** ] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **WebPartCommands** project to the solution and opens the default Class1 code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**WebPartCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-6.  Delete the Class1 code file from the project.  
+6.  從專案刪除 Class1 的程式碼檔案。  
   
-## <a name="configuring-the-projects"></a>Configuring the Projects  
- Before you write code to create the extension, you must add code files and assembly references, and configure the project settings.  
+## <a name="configuring-the-projects"></a>設定專案  
+ 您撰寫程式碼來建立擴充功能之前，您必須新增程式碼檔案和組件參考，並設定專案設定。  
   
-#### <a name="to-configure-the-webpartnodeextension-project"></a>To configure the WebPartNodeExtension project  
+#### <a name="to-configure-the-webpartnodeextension-project"></a>若要設定 WebPartNodeExtension 專案  
   
-1.  In the WebPartNodeExtension project, add four code files that have the following names:  
+1.  在 WebPartNodeExtension 專案中，加入四個具有下列名稱的程式碼檔案：  
   
     -   SiteNodeExtension  
   
@@ -141,248 +132,253 @@ ms.lasthandoff: 08/30/2017
   
     -   WebPartCommandIds  
   
-2.  Open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Add Reference**.  
+2.  開啟快顯功能表**WebPartNodeExtension**專案，然後再選擇**加入參考**。  
   
-3.  In the **Reference Manager - WebPartNodeExtension** dialog box, choose the **Framework** tab, and then select the check box for each of the following assemblies:  
+3.  在**參考管理員-WebPartNodeExtension**對話方塊方塊中，選擇**Framework**索引標籤，然後選取下列組件的每個核取方塊：  
   
     -   System.ComponentModel.Composition  
   
     -   System.Windows.Forms  
   
-4.  Choose the **Extensions** tab, select the check box for the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
+4.  選擇**延伸**索引標籤上，對於 Microsoft.VisualStudio.SharePoint 組件中，選取核取方塊，然後選擇**確定** 按鈕。  
   
-5.  In **Solution Explorer**, open the shortcut menu for the **WebPartNodeExtension** project node, and then choose **Properties**.  
+5.  在**方案總管 中**，開啟捷徑功能表**WebPartNodeExtension**專案節點，然後選擇**屬性**。  
   
-     The **Project Designer** opens.  
+     [專案設計工具] 隨即開啟。  
   
-6.  Choose the **Application** tab.  
+6.  選擇 [應用程式] 索引標籤。  
   
-7.  In the **Default namespace** box (C#) or **Root namespace** box ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), enter **ServerExplorer.SharePointConnections.WebPartNode**.  
+7.  在**預設命名空間**方塊 (C#) 或**根命名空間**方塊 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，輸入**ServerExplorer.SharePointConnections.WebPartNode**。  
   
-#### <a name="to-configure-the-webpartcommands-project"></a>To configure the WebPartCommands project  
+#### <a name="to-configure-the-webpartcommands-project"></a>若要設定 WebPartCommands 專案  
   
-1.  In the WebPartCommands project, add a code file that's named WebPartCommands.  
+1.  在 WebPartCommands 專案中，加入名為 WebPartCommands 的程式碼檔案。  
   
-2.  In **Solution Explorer**, open the shortcut menu for the **WebPartCommands** project node, choose **Add**, and then choose **Existing Item**.  
+2.  在**方案總管] 中**，開啟捷徑功能表**WebPartCommands**專案節點時，選擇**新增**，然後選擇 [**現有項目**.  
   
-3.  In the **Add Existing Item** dialog box, browse to the folder that contains the code files for the WebPartNodeExtension project, and then choose the WebPartNodeInfo and WebPartCommandIds code files.  
+3.  在**加入現有項目**對話方塊中，瀏覽至包含 WebPartNodeExtension 專案的程式碼檔案的資料夾，然後選擇 WebPartNodeInfo 和 WebPartCommandIds 的程式碼檔案。  
   
-4.  Choose the arrow next to the **Add** button, and then choose **Add As Link** in the menu that appears.  
+4.  選擇箭號旁**新增**按鈕，然後再選擇**加入做為連結**中出現的功能表。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the code files to the WebPartCommands project as links. As a result, the code files are located in the WebPartNodeExtension project, but the code in the files are also compiled in the WebPartCommands project.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]將程式碼檔案加入至 WebPartCommands 專案中，做為連結。 如此一來，在程式碼檔案位於 WebPartNodeExtension 專案，但檔案中的程式碼也會編譯 WebPartCommands 專案中。  
   
-5.  Open the shortcut menu for the **WebPartCommands** project again, and choose **Add Reference**.  
+5.  開啟快顯功能表**WebPartCommands**同樣地，專案，選擇**加入參考**。  
   
-6.  In the **Reference Manager - WebPartCommands** dialog box, choose the **Extensions** tab, select the check box for each of the following assemblies, and then choose the **OK** button:  
+6.  在**參考管理員-WebPartCommands**對話方塊方塊中，選擇**延伸**索引標籤上的下列組件中，每個選取核取方塊，然後選擇 **確定**按鈕：  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-7.  In **Solution Explorer**, open the shortcut menu for the **WebPartCommands** project again, and then choose **Properties**.  
+7.  在**方案總管 中**，開啟捷徑功能表**WebPartCommands**同樣地，專案，然後選擇**屬性**。  
   
-     The **Project Designer** opens.  
+     [專案設計工具] 隨即開啟。  
   
-8.  Choose the **Application** tab.  
+8.  選擇 [應用程式] 索引標籤。  
   
-9. In the **Default namespace** box (C#) or **Root namespace** box ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]), enter **ServerExplorer.SharePointConnections.WebPartNode**.  
+9. 在**預設命名空間**方塊 (C#) 或**根命名空間**方塊 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)])，輸入**ServerExplorer.SharePointConnections.WebPartNode**。  
   
-## <a name="creating-icons-for-the-new-nodes"></a>Creating Icons for the New Nodes  
- Create two icons for the **Server Explorer** extension: an icon for the new **Web Part Gallery** node, and another icon for each child Web Part node under the **Web Part Gallery** node. Later in this walkthrough, you will write code that associates these icons with the nodes.  
+## <a name="creating-icons-for-the-new-nodes"></a>建立新的節點圖示  
+ 建立兩個圖示的**伺服器總管**延伸模組： 新的圖示**網頁組件庫**節點，然後在每一個子系 Web 組件節點的另一個圖示**網頁組件庫**節點。 稍後在本逐步解說，您將撰寫將這些圖示與節點相關聯的程式碼。  
   
-#### <a name="to-create-icons-for-the-nodes"></a>To create icons for the nodes  
+#### <a name="to-create-icons-for-the-nodes"></a>若要建立節點圖示  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **WebPartNodeExtension** project, and then choose **Properties**.  
+1.  在**方案總管 中**，開啟捷徑功能表**WebPartNodeExtension**專案，然後再選擇**屬性**。  
   
-2.  The **Project Designer** opens.  
+2.  [專案設計工具] 隨即開啟。  
   
-3.  Choose the **Resources** tab, and then choose the **This project does not contain a default resources file. Click here to create one** link.  
+3.  選擇**資源**索引標籤，然後選擇 **這個專案未包含預設的資源檔。按一下這裡可建立一個**連結。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates a resource file and opens it in the designer.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立資源檔，並在設計工具中開啟。  
   
-4.  At the top of the designer, choose the arrow next to the **Add Resource** menu command, and then choose **Add New Icon** in the menu that appears.  
+4.  在設計工具的頂端，選擇箭號旁**加入資源**功能表命令，然後再選擇**加入新圖示**中出現的功能表。  
   
-5.  In the **Add New Resource** dialog box, name the new icon **WebPartsNode**, and then choose the **Add** button.  
+5.  在**加入新的資源**對話方塊中，名稱為 [新增] 圖示**WebPartsNode**，然後選擇 [**新增**] 按鈕。  
   
-     The new icon opens in the **Image Editor**.  
+     在中，開啟 [新增] 圖示**影像編輯器**。  
   
-6.  Edit the 16x16 version of the icon so that it has a design that you can easily recognize.  
+6.  編輯 16 x 16 版本的圖示，使其具有容易辨識的設計。  
   
-7.  Open the shortcut menu for the 32x32 version of the icon, and then choose **Delete Image Type**.  
+7.  開啟 32 x 32 版本圖示的捷徑功能表，然後選擇**刪除映像類型**。  
   
-8.  Repeat steps 5 through 8 to add a second icon to the project resources, and name this icon **WebPart**.  
+8.  重複步驟 5 至 8，將第二個圖示新增至專案資源，並命名此圖示**WebPart**。  
   
-9. In **Solution Explorer**, under the **Resources** folder for the **WebPartNodeExtension** project, open the shortcut menu for **WebPartsNode.ico**.  
+9. 在**方案總管 中**下**資源**資料夾**WebPartNodeExtension**專案中，開啟捷徑功能表**WebPartsNode.ico**.  
   
-10. In the **Properties** window, choose the arrow next to **Build Action**, and then choose **Embedded Resource** on the menu that appears.  
+10. 在**屬性**視窗中，選擇箭號旁**建置動作**，然後選擇 **內嵌資源**上出現的功能表。  
   
-11. Repeat the last two steps for **WebPart.ico**.  
+11. 重複最後兩個步驟**WebPart.ico**。  
   
-## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>Adding the Web Part Gallery Node to Server Explorer  
- Create a class that adds the new **Web Part Gallery** node to each SharePoint site node. To add the new node, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> interface. Implement this interface whenever you want to extend the behavior of an existing node in **Server Explorer**, such as adding a child node to a node.  
+## <a name="adding-the-web-part-gallery-node-to-server-explorer"></a>將網頁組件庫節點新增至伺服器總管  
+ 建立類別，會新增**網頁組件庫**SharePoint 站台的每個節點的節點。 若要加入新的節點，該類別會實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension>介面。 實作這個介面，每當您想要擴充現有的節點中的行為**伺服器總管**，例如新增節點的子節點。  
   
-#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>To add the Web Part Gallery node to Server Explorer  
+#### <a name="to-add-the-web-part-gallery-node-to-server-explorer"></a>若要將網頁組件庫節點新增至伺服器總管  
   
-1.  In the WebPartNodeExtension project, open the SiteNodeExtension code file, and then paste the following code into it.  
+1.  在 WebPartNodeExtension 專案中，開啟 SiteNodeExtension 程式碼檔案，並接著將下列程式碼貼入其中。  
   
     > [!NOTE]  
-    >  After you add this code, the project will have some compile errors, but they'll go away when you add code in later steps.  
+    >  加入下列程式碼，專案就會發生編譯錯誤，但它們會消失之後當您加入程式碼在稍後步驟中。  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]  
   
-## <a name="defining-a-node-type-that-represents-a-web-part"></a>Defining a Node Type that Represents a Web Part  
- Create a class that defines a new type of node that represents a Web Part. Visual Studio uses this new node type to display child nodes under the **Web Part Gallery** node. Each child node represents a single Web Part on the SharePoint site.  
+## <a name="defining-a-node-type-that-represents-a-web-part"></a>定義代表 Web 組件的節點類型  
+ 建立一個類別來定義新類型的節點，表示 Web 組件。 Visual Studio 會使用這個新的節點類型來顯示下的子節點**網頁組件庫**節點。 每個子節點都代表單一的 Web 組件在 SharePoint 網站上。  
   
- To define the new node type, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> interface. Implement this interface whenever you want to define a new type of node in **Server Explorer**.  
+ 若要定義新的節點類型，該類別會實作<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider>介面。 實作這個介面，每當您想要定義新類型的節點中**伺服器總管**。  
   
-#### <a name="to-define-the-web-part-node-type"></a>To define the Web Part node type  
+#### <a name="to-define-the-web-part-node-type"></a>若要定義 Web 組件的節點型別  
   
-1.  In the WebPartNodeExtension project, open the WebPartNodeTypeProvder code file, and then paste the following code into it.  
+1.  在 WebPartNodeExtension 專案中，開啟 WebPartNodeTypeProvder 程式碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]  [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]  
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]  
   
-## <a name="defining-the-web-part-data-class"></a>Defining the Web Part Data Class  
- Define a class that contains data about a single Web Part on the SharePoint site. Later in this walkthrough, you will create a custom SharePoint command that retrieves data about each Web Part on the site and then assigns the data to instances of this class.  
+## <a name="defining-the-web-part-data-class"></a>定義在 Web 組件的資料類別  
+ 定義包含在 SharePoint 網站上的單一 Web 組件的相關資料的類別。 稍後在本逐步解說，您將建立自訂 SharePoint 命令會擷取站台上每個 Web 組件相關的資料，然後將資料指派給此類別的執行個體。  
   
-#### <a name="to-define-the-web-part-data-class"></a>To define the Web Part data class  
+#### <a name="to-define-the-web-part-data-class"></a>若要定義 Web 組件的資料類別  
   
-1.  In the WebPartNodeExtension project, open the WebPartNodeInfo code file, and then paste the following code into it.  
+1.  在 WebPartNodeExtension 專案中，開啟 WebPartNodeInfo 程式碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]  [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]  
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]  
   
-## <a name="defining-the-ids-for-the-sharepoint-command"></a>Defining the IDs for the SharePoint Command  
- Define several strings that identify the custom SharePoint commands. You will implement these commands later in this walkthrough.  
+## <a name="defining-the-ids-for-the-sharepoint-command"></a>SharePoint 命令定義 Id  
+ 定義數個識別自訂 SharePoint 命令的字串。 您將在本逐步解說稍後實作這些命令。  
   
-#### <a name="to-define-the-command-ids"></a>To define the command IDs  
+#### <a name="to-define-the-command-ids"></a>若要定義的命令 Id  
   
-1.  In the WebPartNodeExtension project, open the WebPartCommandIds code file, and then paste the following code into it.  
+1.  在 WebPartNodeExtension 專案中，開啟 WebPartCommandIds 程式碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]  
   
-## <a name="creating-the-custom-sharepoint-commands"></a>Creating the Custom SharePoint Commands  
- Create custom commands that call into the server object model for SharePoint to retrieve data about the Web Parts on the SharePoint site. Each command is a method that has the <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> applied to it.  
+## <a name="creating-the-custom-sharepoint-commands"></a>建立自訂 SharePoint 命令  
+ 建立自訂的命令，呼叫以擷取 SharePoint 網站上的 Web 組件的相關資料的 sharepoint 伺服器物件模型。 每個命令是一種方法具有<xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute>套用到它。  
   
-#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
+#### <a name="to-define-the-sharepoint-commands"></a>若要定義 SharePoint 命令  
   
-1.  In the WebPartCommands project, open the WebPartCommands code file, and then paste the following code into it.  
+1.  在 WebPartCommands 專案中，開啟 WebPartCommands 程式碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]  [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
+     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
+     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]  
   
-## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the **Web Part Gallery** node and the SharePoint commands are now in the projects. Build the solution to make sure that both projects compile without errors.  
+## <a name="checkpoint"></a>檢查點  
+ 逐步解說中，所有的程式碼中，此時**網頁組件庫**節點和 SharePoint 命令是現在專案中。 建置方案，以確定這兩個專案編譯無誤。  
   
-#### <a name="to-build-the-solution"></a>To build the solution  
+#### <a name="to-build-the-solution"></a>若要建置方案  
   
-1.  On the menu bar, choose **Build**, **Build Solution**.  
+1.  在功能表列上，選擇 [建置] 、[建置方案] 。  
   
     > [!WARNING]  
-    >  At this point, the WebPartNode project may have a build error because the VSIX manifest file doesn't have a value for Author. This error will go away when you add a value in later steps.  
+    >  此時，WebPartNode 專案可能有建置錯誤，因為 VSIX 資訊清單檔案不會有的作者的值。 當您將在稍後步驟中的值，這個錯誤就會消失運作。  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Creating a VSIX Package to Deploy the Extension  
- To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file in the VSIX project. Then, create the VSIX package by building the solution.  
+## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝，來部署擴充功能  
+ 若要部署擴充功能，方案中使用 VSIX 專案建立 VSIX 封裝。 首先，設定 VSIX 封裝，藉由修改 source.extension.vsixmanifest 檔案中的，在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。  
   
-#### <a name="to-configure-the-vsix-package"></a>To configure the VSIX package  
+#### <a name="to-configure-the-vsix-package"></a>若要設定 VSIX 套件  
   
-1.  In **Solution Explorer**, under the WebPartNode project, open the **source.extension.vsixmanifest** file in the manifest editor.  
+1.  在**方案總管 中**，WebPartNode 專案底下開啟**source.extension.vsixmanifest**資訊清單編輯器中的檔案。  
   
-     The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Source.extension.vsixmanifest 檔案是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱[VSIX 擴充功能結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
-2.  In the **Product Name** box, enter **Web Part Gallery Node for Server Explorer**.  
+2.  在**產品名稱**方塊中，輸入**伺服器總管 的 Web 組件庫節點**。  
   
-3.  In the **Author** box, enter **Contoso**.  
+3.  在**作者**方塊中，輸入**Contoso**。  
   
-4.  In the **Description** box, enter **Adds a custom Web Part Gallery node to the SharePoint Connections node in Server Explorer. This extension uses a custom SharePoint command to call into the server object model.**  
+4.  在**描述**方塊中，輸入**將自訂的 Web 組件庫節點加入至伺服器總管中的 SharePoint 連線節點。此延伸模組會使用自訂 SharePoint 命令呼叫的伺服器物件模型。**  
   
-5.  Choose the **Assets** tab of the editor, and then choose the **New** button.  
+5.  選擇**資產** 索引標籤的編輯器，然後選擇 **新增** 按鈕。  
   
-     The **Add New Asset** dialog box appears.  
+     **加入新資產** 對話方塊隨即出現。  
   
-6.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
-  
-    > [!NOTE]  
-    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
-  
-7.  In the  **Source** list, choose **A project in current solution**.  
-  
-8.  In the **Project** list, choose **WebPartNodeExtension** and then choose the **OK** button.  
-  
-9. In the manifest editor, choose the **New** button again.  
-  
-     The **Add New Asset** dialog box appears.  
-  
-10. In the **Type** box, enter **SharePoint.Commands.v4**.  
+6.  在**類型**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  This element specifies a custom extension that you want to include in the Visual Studio extension. For more information, see [Asset Element (VSX Schema)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個項目 VSIX 封裝中指定延伸模組組件的名稱。 如需詳細資訊，請參閱[MEFComponent 元素 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
   
-11. In the **Source** list, choose the **A project in current solution** list item.  
+7.  在**來源**清單中，選擇**目前方案中的專案**。  
   
-12. In the **Project** list, choose **WebPartCommands**, and then choose the **OK** button.  
+8.  在**專案**清單中，選擇**WebPartNodeExtension** ，然後選擇 [**確定**] 按鈕。  
   
-13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
+9. 在資訊清單編輯器中，選擇 **新增**按鈕一次。  
   
-14. Make sure that the build output folder for the WebPartNode project now contains the WebPartNode.vsix file.  
+     **加入新資產** 對話方塊隨即出現。  
   
-     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
+10. 在**類型**方塊中，輸入**SharePoint.Commands.v4**。  
   
-## <a name="testing-the-extension"></a>Testing the Extension  
- You're now ready to test the new **Web Part Gallery** node in **Server Explorer**. First, start debugging the extension in an experimental instance of Visual Studio. Then, use the new **Web Parts** node in the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+    > [!NOTE]  
+    >  這個項目會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱[資產項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
-#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
+11. 在**來源**清單中，選擇**目前方案中的專案**清單項目。  
   
-1.  Restart [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] with administrative credentials, and then open the WebPartNode solution.  
+12. 在**專案**清單中，選擇**WebPartCommands**，然後選擇 [**確定**] 按鈕。  
   
-2.  In the WebPartNodeExtension project, open the SiteNodeExtension code file, and then add a breakpoint to the first line of code in the `NodeChildrenRequested` and `CreateWebPartNodes` methods.  
+13. 在功能表列上選擇 **建置**，**建置方案**，然後確認方案編譯無誤。  
   
-3.  Choose the F5 key to start debugging.  
+14. 請確定 WebPartNode 專案建置輸出資料夾現在包含 WebPartNode.vsix 檔案。  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web Part Gallery Node Extension for Server Explorer\1.0 and starts an experimental instance of Visual Studio. You will test the project item in this instance of Visual Studio.  
+     根據預設，會將組建輸出資料夾...包含專案檔的資料夾下的 \bin\Debug 資料夾。  
   
-#### <a name="to-test-the-extension"></a>To test the extension  
+## <a name="testing-the-extension"></a>測試擴充功能  
+ 您現在可以測試新**網頁組件庫**節點**伺服器總管**。 首先，開始偵錯 Visual studio 的實驗執行個體中的擴充功能。 然後，使用 新**Web 組件**實驗執行個體中的節點[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-1.  In the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], on the menu bar, choose **View**, **Server Explorer**.  
+#### <a name="to-start-debugging-the-extension"></a>若要啟動偵錯擴充功能  
   
-2.  Perform the following steps if the SharePoint site that you want to use for testing doesn't appear under the **SharePoint Connections** node in **Server Explorer**:  
+1.  重新啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]與系統管理認證，然後再開啟 WebPartNode 方案。  
   
-    1.  In **Server Explorer**, open the shortcut menu for **SharePoint Connections**, and then choose **Add Connection**.  
+2.  在 WebPartNodeExtension 專案中，開啟 SiteNodeExtension 程式碼檔案，並再將中斷點加入至程式碼中的第一行`NodeChildrenRequested`和`CreateWebPartNodes`方法。  
   
-    2.  In the **Add SharePoint Connection** dialog box, enter the URL for the SharePoint site to which you want to connect, and then choose the **OK** button.  
+3.  選擇 F5 鍵開始偵錯。  
   
-         To specify the SharePoint site on your development computer, enter **http://localhost**.  
+     Visual Studio 會伺服器 Explorer\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Web 組件庫節點的擴充功能安裝擴充功能，並啟動 Visual studio 的實驗執行個體。 您將這個執行個體的 Visual Studio 中測試的專案項目。  
   
-3.  Expand the site connection node (which displays the URL of your site), and then expand a child site node (for example, **Team Site**).  
+#### <a name="to-test-the-extension"></a>若要測試擴充功能  
   
-4.  Verify that the code in the other instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] stops on the breakpoint that you set earlier in the `NodeChildrenRequested` method, and then choose F5 to continue to debug the project.  
+1.  在實驗執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 **檢視**，**伺服器總管**。  
   
-5.  In the experimental instance of Visual Studio, verify that a new node named **Web Part Gallery** appears under the top-level site node, and then expand the **Web Part Gallery** node.  
+2.  執行下列步驟，如果您想要用於測試的 SharePoint 網站不會出現在**SharePoint 連接**節點**伺服器總管**:  
   
-6.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `CreateWebPartNodes` method, and then choose the F5 key to continue to debug the project.  
+    1.  在**伺服器總管**，開啟捷徑功能表**SharePoint 連接**，然後選擇 **加入連接**。  
   
-7.  In the experimental instance of Visual Studio, verify that all Web Parts on the connected site appear under the **Web Part Gallery** node in **Server Explorer**.  
+    2.  在**加入 SharePoint 連接**對話方塊方塊中，輸入您想要連接，再選擇 SharePoint 網站的 URL**確定** 按鈕。  
   
-8.  In **Server Explorer**, open the shortcut menu for one of the Web Parts, and then choose **Properties**.  
+         若要在開發電腦上指定的 SharePoint 網站，請輸入**http://localhost**。  
   
-9. In the instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] that you're debugging, verify that details about the Web Part appear in the **Properties** window.  
+3.  展開站台連線節點 （它會顯示您的網站的 URL），然後再展開子站台節點 (例如，**小組網站**)。  
   
-## <a name="uninstalling-the-extension-from-visual-studio"></a>Uninstalling the Extension from Visual Studio  
- After you finish testing the extension, uninstall the extension from Visual Studio.  
+4.  確認其他執行個體中的程式碼[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]您稍早在設定的中斷點上停止`NodeChildrenRequested`方法，然後選擇 f5 鍵繼續偵錯專案。  
   
-#### <a name="to-uninstall-the-extension"></a>To uninstall the extension  
+5.  在 Visual Studio 的實驗執行個體，請確認新節點名為**網頁組件庫**的頂層站台節點下，會出現，然後展開 **網頁組件庫**節點。  
   
-1.  In the experimental instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], on the menu bar, choose **Tools**, **Extensions and Updates**.  
+6.  確認 Visual Studio 的其他執行個體中的程式碼是您稍早在設定的中斷點上停止`CreateWebPartNodes`方法，然後選擇 F5 鍵以繼續進行偵錯專案。  
   
-     The **Extensions and Updates** dialog box opens.  
+7.  在 Visual Studio 的實驗執行個體，確認 已連線的站台上的所有網頁組件都出現在**網頁組件庫**節點**伺服器總管**。  
   
-2.  In the list of extensions, choose **Web Part Gallery Node Extension for Server Explorer**, and then choose the **Uninstall** button.  
+8.  在**伺服器總管**，其中一個 Web 組件中，開啟捷徑功能表，然後選擇**屬性**。  
   
-3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension, and then choose the **Restart Now** button to complete the uninstallation.  
+9. 執行個體中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]您要偵錯，請確認網頁組件的詳細資料，會出現在**屬性**視窗。  
   
-4.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the WebPartNode solution is open).  
+## <a name="uninstalling-the-extension-from-visual-studio"></a>從 Visual Studio 解除安裝擴充功能  
+ 在您完成測試擴充功能之後，解除安裝擴充功能，從 Visual Studio。  
   
-## <a name="see-also"></a>See Also  
- [Extending the SharePoint Connections Node in Server Explorer](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
- [Walkthrough: Calling into the SharePoint Client Object Model in a Server Explorer Extension](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
- [Image Editor for Icons](/cpp/windows/image-editor-for-icons)   
- [Creating an Icon or Other Image &#40;Image Editor for Icons&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
+#### <a name="to-uninstall-the-extension"></a>安裝擴充功能  
+  
+1.  在實驗執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，在功能表列上選擇 **工具**，**擴充功能和更新**。  
+  
+     [擴充功能和更新] 對話方塊隨即開啟。  
+  
+2.  在擴充功能清單中，選擇  **Web 組件 Gallery 節點擴充伺服器總管**，然後選擇 **解除安裝** 按鈕。  
+  
+3.  在出現的對話方塊中，選擇 **是**按鈕，以確認您要解除安裝擴充功能，然後選擇 **立即重新啟動**按鈕，以完成解除安裝。  
+  
+4.  關閉 Visual Studio （實驗性執行個體和 WebPartNode 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
+  
+## <a name="see-also"></a>另請參閱  
+ [擴充 SharePoint 連線節點，在 伺服器總管](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)   
+ [逐步解說： 呼叫 SharePoint 用戶端物件模型，在伺服器總管擴充功能](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md)   
+ [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
+ [建立圖示或其他影像 &#40; 影像編輯器的圖示 &#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)  
   
   

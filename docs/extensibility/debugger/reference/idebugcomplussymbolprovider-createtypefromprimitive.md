@@ -1,26 +1,28 @@
 ---
-title: "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive"
-  - "CreateTypeFromPrimitive"
+title: "IDebugComPlusSymbolProvider::CreateTypeFromPrimitive |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+- CreateTypeFromPrimitive
 ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 57b820ee1f6d7286188d8083a86be62f65e50ceb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-從指定的基本型別建立的類型。  
+# <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
+從指定的基本類型建立類型。  
   
 ## <a name="syntax"></a>語法  
   
@@ -44,21 +46,21 @@ int CreateTypeFromPrimitive(
   
 #### <a name="parameters"></a>參數  
  `dwPrimType`  
- [in]從值 [CorElementType 列舉](CorElementType%20Enumeration.xml) 表示基本類型。  
+ [in]從值[CorElementType 列舉](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration)表示基本類型。  
   
  `pAddress`  
- [in]通訊物件所表示 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 介面。  
+ [in]通訊物件所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
  `ppType`  
- [in]傳回 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 描述類型的物件。  
+ [in]傳回[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)描述類型的物件。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md) 介面。  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::CreateTypeFromPrimitive(  
     DWORD dwPrimType,  
     IDebugAddress* pAddress,  
@@ -95,5 +97,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

@@ -1,27 +1,30 @@
 ---
-title: "IDebugFormatter::GetStringForVarType | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugFormatter::GetStringForVarType |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugFormatter.GetStringForVarType
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IDebugFormatter::GetStringForVarType"
+helpviewer_keywords: IDebugFormatter::GetStringForVarType
 ms.assetid: 1c1a0499-ca57-47e0-8367-fdb4c902bca3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9e056fa2ef9613c1af776840d1dae61078e26f83
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugFormatter::GetStringForVarType
-傳回表示指定 VARTYPE 值的字串。  
+# <a name="idebugformattergetstringforvartype"></a>IDebugFormatter::GetStringForVarType
+傳回表示指定的 VARTYPE 值的字串。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetStringForVarType(  
@@ -31,25 +34,25 @@ HRESULT GetStringForVarType(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `vt`  
- \[in\] 表示的 VARTYPE 做為字串。  
+ [in]要表示為字串的 VARTYPE。  
   
  `ptdescArrayType`  
- \[out\] 描述型別的結構陣列。  
+ [in]結構描述類型的陣列。  
   
  `pbstr`  
- \[in\] 表示 `vt`的字串。  
+ [out]字串，代表`vt`。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 方法傳回表示指定 VARTYPE 值的字串。  
+## <a name="remarks"></a>備註  
+ 方法會傳回表示指定的 VARTYPE 值的字串。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugFormatter 介面](../../winscript/reference/idebugformatter-interface.md)

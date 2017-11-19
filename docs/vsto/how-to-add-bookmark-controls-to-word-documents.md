@@ -1,16 +1,13 @@
 ---
-title: 'How to: Add Bookmark Controls to Word Documents | Microsoft Docs'
+title: "如何： 將書籤控制項加入 Word 文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VST.Bookmark.Dialog
+f1_keywords: VST.Bookmark.Dialog
 dev_langs:
 - VB
 - CSharp
@@ -19,123 +16,125 @@ helpviewer_keywords:
 - Create Bookmark Control dialog box
 - controls [Office development in Visual Studio], adding to documents
 ms.assetid: 2940704e-31f5-4486-854e-76298a9e2ee4
-caps.latest.revision: 52
-author: kempb
-ms.author: kempb
+caps.latest.revision: "52"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 01a10cbc43c02d8bd0fc18fed221b33a9efd34e7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7da98e9d013f131e889c287cd1d158b3fb25e814
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-bookmark-controls-to-word-documents"></a>How to: Add Bookmark Controls to Word Documents
-  In document-level projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in your project at design time or at run time. In VSTO Add-in projects, you can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to any open document at run time.  
+# <a name="how-to-add-bookmark-controls-to-word-documents"></a>如何：將書籤控制項加入至 Word 文件
+  在文件層級的專案中，您可以於設計階段或執行階段，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入專案中的文件。 在 VSTO 增益集專案中，您可以於執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- This topic describes the following tasks:  
+ 本主題說明下列工作：  
   
--   [Adding Bookmark controls at design time](#designtime)  
+-   [在設計階段加入書籤控制項](#designtime)  
   
--   [Adding Bookmark controls at run time in a document-level project](#runtimedoclevel)  
+-   [在文件層級專案的執行階段加入書籤控制項](#runtimedoclevel)  
   
--   [Adding Bookmark controls at run time in an VSTO Add-in project](#runtimeaddin)  
+-   [在 VSTO 增益集專案中的執行階段加入書籤控制項](#runtimeaddin)  
   
- For more information about <xref:Microsoft.Office.Tools.Word.Bookmark> controls, see [Bookmark Control](../vsto/bookmark-control.md).  
+ 如需 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項的詳細資訊，請參閱 [Bookmark Control](../vsto/bookmark-control.md)。  
   
 ##  <a name="designtime"></a> Adding Bookmark Controls at Design Time  
- There are several ways to add <xref:Microsoft.Office.Tools.Word.Bookmark> controls to the document in a document-level project at design time:  
+ 在文件層級專案的設計階段，有數種方式可將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入文件：  
   
--   From the Visual Studio **Toolbox**.  
+-   從 Visual Studio [工具箱] 。  
   
-     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control from the **Toolbox** to your document. You might want to choose this way if you are already using the **Toolbox** to add Windows Forms controls to your document.  
+     您可以從 [工具箱] <xref:Microsoft.Office.Tools.Word.Bookmark>**將** 控制項拖曳至文件。 如果您已經使用 [工具箱]  將 Windows Form 控制項加入文件，您可能會想要選擇這種方式。  
   
--   From within Word.  
+-   從 Word 內部。  
   
-     You can add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document in the same manner you would add the native bookmark. The advantage of adding it this way is that you can name your control at the time you create it.  
+     您可以用加入原生書籤的方式，將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入文件。 用這種方式加入控制項的優點，是您可以在建立控制項時為其命名。  
   
--   From the **Data Sources** window.  
+-   從 [資料來源]  視窗。  
   
-     You can drag the <xref:Microsoft.Office.Tools.Word.Bookmark> control to your document from the **Data Sources** window. This is useful when you want to bind the control to data at the same time. You can add the host control in the same way you would add a Windows Form control from the **Data Sources** window. For more information, see [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms).  
+     您可以從 [資料來源] <xref:Microsoft.Office.Tools.Word.Bookmark>**視窗將** 控制項拖曳至文件。 當您想要在同一時間將控制項繫結至資料時，這會很有用。 您可以用加入 Windows Form 控制項的方式，從 [資料來源]  視窗加入主控制項。 如需詳細資訊，請參閱 [Data Binding and Windows Forms](/dotnet/framework/winforms/data-binding-and-windows-forms)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>To add a Bookmark control to a document from the Toolbox  
+#### <a name="to-add-a-bookmark-control-to-a-document-from-the-toolbox"></a>從 [工具箱] 將書籤控制項加入文件  
   
-1.  Open the **Toolbox** and click the **Word Controls** tab.  
+1.  開啟 [工具箱]  ，然後按一下 [Word 控制項]  索引標籤。  
   
-2.  Drag a <xref:Microsoft.Office.Tools.Word.Bookmark> control to the document.  
+2.  將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項拖曳至文件。  
   
-     The **Add Bookmark** dialog box appears.  
+     [加入書籤]  對話方塊隨即出現。  
   
-3.  Select the text or other items you want to include in the bookmark.  
+3.  選取您想要包含在書籤內的文字或其他項目。  
   
-4.  Click **OK**.  
+4.  按一下 [ **確定**]。  
   
-     If you do not want to keep the default bookmark name, you can change the name in the **Properties** window.  
+     如果您不想保留預設的書籤名稱，您可以在 [屬性]  視窗中變更名稱。  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>To add a Bookmark control to a document in Word  
+#### <a name="to-add-a-bookmark-control-to-a-document-in-word"></a>在 Word 文件中加入書籤控制項  
   
-1.  In the document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, put the cursor where you want to add the bookmark, or select the text that you want the bookmark to enclose.  
+1.  在裝載於 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 設計工具的文件中，將游標放在您要加入書籤的位置，或選取您希望放在書籤中的文字。  
   
-2.  On the **Insert** tab of the Ribbon, in the **Links** group, click the **Bookmark** button.  
+2.  在功能區的 [插入]  索引標籤中，按一下 [連結]  群組中的 [書籤]  按鈕。  
   
-3.  In the **Bookmark** dialog box, type the name of the new bookmark, and click **Add**.  
+3.  在 [書籤]  對話方塊中，輸入新書籤的名稱，然後按一下 [加入] 。  
   
 ##  <a name="runtimedoclevel"></a> Adding Bookmark Controls at Run Time in a Document-Level Project  
- You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to your document at run time by using methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of the `ThisDocument` class in your project. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
+ 您可以在專案中使用 <xref:Microsoft.Office.Tools.Word.Bookmark> 類別之 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 屬性的方法，藉此在執行階段以程式設計的方式將 `ThisDocument` 控制項加入文件。 有兩種方法多載可用來以下列方法加入 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項：  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
+-   在指定的範圍加入 <xref:Microsoft.Office.Tools.Word.Bookmark>  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+-   加入以文件原生書籤為基礎的 <xref:Microsoft.Office.Tools.Word.Bookmark> (也就是 <xref:Microsoft.Office.Interop.Word.Bookmark>)。  
   
- Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md).  
+ 文件關閉後，不會保存動態建立的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。 不過，原生的 <xref:Microsoft.Office.Interop.Word.Bookmark> 會保留在文件中。 下次開啟文件時，您可以重新建立以原生書籤為基礎的 <xref:Microsoft.Office.Tools.Word.Bookmark> 。 如需詳細資訊，請參閱 [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)。  
   
-#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>To add a Bookmark control to a document programmatically  
+#### <a name="to-add-a-bookmark-control-to-a-document-programmatically"></a>以程式設計的方式在文件中加入書籤控制項  
   
-1.  In the `ThisDocument_Startup` event handler in your project, insert the following code to add the <xref:Microsoft.Office.Tools.Word.Bookmark> control to the first paragraph in the document.  
+1.  在專案的 `ThisDocument_Startup` 事件處理常式中，插入下列程式碼，在文件的第一個段落加入 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。  
   
-     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]  [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#1)]
+     [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]  
   
     > [!NOTE]  
-    >  If you want create a <xref:Microsoft.Office.Tools.Word.Bookmark> control from an existing <xref:Microsoft.Office.Interop.Word.Bookmark>, use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark>.  
+    >  如果您想要從現有的 <xref:Microsoft.Office.Tools.Word.Bookmark> 建立 <xref:Microsoft.Office.Interop.Word.Bookmark>控制項，請使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法並傳入現有的 <xref:Microsoft.Office.Interop.Word.Bookmark>。  
   
 ##  <a name="runtimeaddin"></a> Adding Bookmark Controls at Run Time in an VSTO Add-in project  
- You can add <xref:Microsoft.Office.Tools.Word.Bookmark> controls programmatically to any open document at run time by using a VSTO Add-in. To do this, generate a <xref:Microsoft.Office.Tools.Word.Document> host item that is based on an open document, and then use methods of the <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> property of this host item. There are two method overloads that you can use to add a <xref:Microsoft.Office.Tools.Word.Bookmark> control in the following ways:  
+ 您可以使用 VSTO 增益集，透過程式設計的方式，在執行階段將 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項加入任何開啟的文件。 若要這麼做，請產生以開啟文件為基礎的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，然後使用這個主項目之 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 屬性的方法。 有兩種方法多載可用來以下列方法加入 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項：  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> at a specified range.  
+-   在指定的範圍加入 <xref:Microsoft.Office.Tools.Word.Bookmark>  
   
--   Add a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark in the document (that is, a <xref:Microsoft.Office.Interop.Word.Bookmark>).  
+-   加入以文件原生書籤為基礎的 <xref:Microsoft.Office.Tools.Word.Bookmark> (也就是 <xref:Microsoft.Office.Interop.Word.Bookmark>)。  
   
- Dynamically created <xref:Microsoft.Office.Tools.Word.Bookmark> controls are not persisted in the document when the document is closed. However, a native <xref:Microsoft.Office.Interop.Word.Bookmark> remains in the document. You can recreate a <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on a native bookmark the next time the document is opened. For more information, see [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md).  
+ 文件關閉後，不會保存動態建立的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控制項。 不過，原生的 <xref:Microsoft.Office.Interop.Word.Bookmark> 會保留在文件中。 下次開啟文件時，您可以重新建立以原生書籤為基礎的 <xref:Microsoft.Office.Tools.Word.Bookmark> 。 如需詳細資訊，請參閱 [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md)。  
   
- For more information about generating host items in VSTO Add-in projects, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ 如需在 VSTO 增益集專案中產生主項目的詳細資訊，請參閱[擴充 Word 文件和 Excel 活頁簿，在 VSTO 增益集在執行階段](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>To add a Bookmark control at a specified range  
+#### <a name="to-add-a-bookmark-control-at-a-specified-range"></a>在指定的範圍加入書籤控制項  
   
-1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the <xref:Microsoft.Office.Interop.Word.Range> where you want to add the <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+1.  使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，並傳入想要加入 <xref:Microsoft.Office.Interop.Word.Range> 所在的 <xref:Microsoft.Office.Tools.Word.Bookmark>。  
   
-     The following code example adds a new <xref:Microsoft.Office.Tools.Word.Bookmark> to the beginning of the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
+     下列程式碼範例會在使用中文件的開頭加入新的 <xref:Microsoft.Office.Tools.Word.Bookmark> 。 若要使用這個範例，請從 Word VSTO 增益集專案的 `ThisAddIn_Startup` 事件處理常式執行程式碼。  
   
-     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]  [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]  
+     [!code-vb[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#4)]
+     [!code-csharp[Trin_WordAddInDynamicControls#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#4)]  
   
-#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>To add a Bookmark control that is based on a native Bookmark control  
+#### <a name="to-add-a-bookmark-control-that-is-based-on-a-native-bookmark-control"></a>加入以原生書籤控制項為基礎的書籤控制項  
   
-1.  Use the <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> method, and pass in the existing <xref:Microsoft.Office.Interop.Word.Bookmark> that you want to use as the basis for the new <xref:Microsoft.Office.Tools.Word.Bookmark>.  
+1.  使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> 方法，並傳入您想要用做新 <xref:Microsoft.Office.Interop.Word.Bookmark> 之基礎的現有 <xref:Microsoft.Office.Tools.Word.Bookmark>。  
   
-     The following code example creates a new <xref:Microsoft.Office.Tools.Word.Bookmark> that is based on the first <xref:Microsoft.Office.Interop.Word.Bookmark> in the active document. To use this example, run the code from the `ThisAddIn_Startup` event handler in a Word VSTO Add-in project.  
+     下列程式碼範例會根據使用中文件的第一個 <xref:Microsoft.Office.Tools.Word.Bookmark> 建立新的 <xref:Microsoft.Office.Interop.Word.Bookmark> 若要使用這個範例，請從 Word VSTO 增益集專案的 `ThisAddIn_Startup` 事件處理常式執行程式碼。  
   
-     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]  [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
+     [!code-vb[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#5)]
+     [!code-csharp[Trin_WordAddInDynamicControls#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#5)]  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)   
- [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)   
- [How to: Resize Bookmark Controls](../vsto/how-to-resize-bookmark-controls.md)  
+ [文件層級自訂程式設計](../vsto/programming-document-level-customizations.md)   
+ [如何：調整書籤控制項的大小](../vsto/how-to-resize-bookmark-controls.md)  
   
   

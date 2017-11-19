@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,36 +12,23 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-caps.latest.revision: 30
+caps.latest.revision: "30"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 565aaeb189ad129d5e4e26d9c73c080de2e77676
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: ebba0ea11781a4b5a3d01aabb718b0ad778daab9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="inside-the-visual-studio-sdk"></a>在 Visual Studio SDK
+# <a name="inside-the-visual-studio-sdk"></a>深入探索 Visual Studio SDK
 本節提供有關 Visual Studio 擴充功能，包括 Visual Studio 架構、 元件、 服務、 結構描述、 公用程式，以及類似的深入資訊。  
   
 ## <a name="extensibility-architecture"></a>擴充性架構  
- 下圖顯示 Visual Studio 擴充性架構。 Vspackage 提供應用程式功能，以服務的形式在 IDE 之間共用。 標準 IDE 也提供廣泛的服務，例如<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，這兩個提供 IDE 視窗化功能的存取權。</xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>  
+ 下圖顯示 Visual Studio 擴充性架構。 Vspackage 提供應用程式功能，以服務的形式在 IDE 之間共用。 標準 IDE 也提供廣泛的服務，例如<xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell>，這兩個提供 IDE 視窗化功能的存取權。  
   
- ![環境架構圖形](~/extensibility/internals/media/environment.gif "environment")  
+ ![環境架構圖形](../../extensibility/internals/media/environment.gif "環境")  
 Visual Studio 架構一般化的檢視  
   
 ## <a name="vspackages"></a>VSPackages  
@@ -51,15 +37,15 @@ Visual Studio 架構一般化的檢視
 ## <a name="visual-studio-shell"></a>Visual Studio Shell  
  Visual Studio shell 提供基本功能，並支援其元件 Vspackage 和 MEF 擴充功能之間的互通。 如需詳細資訊，請參閱[Visual Studio Shell](../../extensibility/internals/visual-studio-shell.md)。  
   
-## <a name="user-experience-guidelines"></a>使用者經驗指導方針  
- 如果您計劃適用於 Visual Studio 中設計新功能，您應該看看這些指導方針來設計和可用性的秘訣︰ [Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  
+## <a name="user-experience-guidelines"></a>使用者體驗指南  
+ 如果您計劃適用於 Visual Studio 中設計新功能，您應該看看這些指導方針來設計和可用性的秘訣： [Visual Studio 使用者經驗指導方針](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)。  
   
 ## <a name="commands"></a>命令  
  命令是完成工作 (例如，列印文件、重新整理檢視，或建立新檔案) 的功能。  
   
  當您擴充 Visual Studio 時，您可以建立命令，並向 Visual Studio shell。 您可以指定這些命令中將如何顯示在 IDE 中，例如功能表或工具列上。 自訂命令通常會出現在**工具**功能表上，顯示工具視窗的命令就會出現在上**其他視窗** 子功能表**檢視**功能表。  
   
- 當您建立的命令時，您也必須為它建立事件處理常式。 事件處理常式決定命令的顯示和啟用，可讓您修改其文字，而且可保證，適當地回應命令時，它便啟動。 在大部分情況下，IDE 會處理命令使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。</xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> Visual Studio 中的命令會根據本機選取範圍，並繼續到最外層的內容，根據全域選取範圍的最內層命令內容開始進行處理。 加入主功能表的命令可立即用於指令碼編寫。  
+ 當您建立的命令時，您也必須為它建立事件處理常式。 事件處理常式決定命令的顯示和啟用，可讓您修改其文字，而且可保證，適當地回應命令時，它便啟動。 在大部分情況下，IDE 會處理命令使用<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>介面。 Visual Studio 中的命令會根據本機選取範圍，並繼續到最外層的內容，根據全域選取範圍的最內層命令內容開始進行處理。 加入主功能表的命令可立即用於指令碼編寫。  
   
  如需詳細資訊，請參閱[命令、 功能表和工具列](../../extensibility/internals/commands-menus-and-toolbars.md)。  
   
@@ -75,7 +61,7 @@ Visual Studio 架構一般化的檢視
   
  請考慮下列 Visual Studio 中，其中包含數個工具視窗的圖片。  
   
- ![螢幕擷取畫面](~/extensibility/internals/media/t1gui.png "T1gui")  
+ ![螢幕擷取畫面](../../extensibility/internals/media/t1gui.png "T1gui")  
   
  某些工具視窗會一起停駐在單一的窗格會顯示 [方案總管] 工具視窗也會隱藏其他工具視窗，但可讓它們透過按一下索引標籤上。 圖中會顯示兩個其他工具視窗，**錯誤清單**和**輸出**視窗中，一起停駐單一窗格。  
   
@@ -118,7 +104,7 @@ Visual Studio 架構一般化的檢視
  如需詳細資訊，請參閱[加入專案和專案項目範本](../../extensibility/internals/adding-project-and-project-item-templates.md)。  
   
 ## <a name="properties-and-options"></a>屬性和選項  
- **屬性**視窗會顯示單一或多個選取的項目屬性︰[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含組選項的相關特定元件，例如程式設計語言或 VSPackage:[選項和 [選項] 頁](../../extensibility/internals/options-and-options-pages.md)。 設定是通常與 UI 相關的功能，可以匯入和匯出︰[支援使用者設定](../../extensibility/internals/support-for-user-settings.md)。  
+ **屬性**視窗會顯示單一或多個選取的項目屬性：[擴充屬性](../../extensibility/internals/extending-properties.md)選項 頁面包含設定的選項，例如屬於特定元件，程式設計語言或 VSPackage:[選項和 [選項] 頁](../../extensibility/internals/options-and-options-pages.md)。 設定是通常與 UI 相關的功能，可以匯入和匯出：[支援使用者設定](../../extensibility/internals/support-for-user-settings.md)。  
   
 ## <a name="visual-studio-services"></a>Visual Studio 服務  
  提供一組特定的介面元件，以取用服務。 Visual Studio 會提供一組可供任何元件，包括擴充功能的服務。 例如，Visual Studio 服務可讓工具視窗以顯示或隱藏起來，以動態方式啟用說明、 狀態列或使用者事件的存取權。 在 Visual Studio 編輯器也提供可匯入的編輯器延伸模組的服務。 如需詳細資訊，請參閱[使用並提供服務](../../extensibility/using-and-providing-services.md)。  
@@ -139,7 +125,7 @@ Visual Studio 架構一般化的檢視
  VSSDK 包含一組公用程式，您可能需要為了使用 Vspackage 的不同層面。 如需詳細資訊，請參閱[VSSDK 公用程式](../../extensibility/internals/vssdk-utilities.md)。  
   
 ## <a name="using-windows-installer"></a>使用 Windows Installer  
- 在某些情況下，您可能需要使用 Windows Installer，而不是 VSIX 安裝程式︰ 例如，您可能需要寫入登錄。 如需使用 Windows 安裝程式搭配您的擴充功能資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
+ 在某些情況下，您可能需要使用 Windows Installer，而不是 VSIX 安裝程式： 例如，您可能需要寫入登錄。 如需使用 Windows 安裝程式搭配您的擴充功能資訊，請參閱[與 Windows Installer 安裝 Vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。  
   
 ## <a name="help-viewer"></a>說明檢視器  
  您可以整合您自己的說明和 F1 說明檢視器。 如需詳細資訊，請參閱[Microsoft 說明檢視器 SDK](../../extensibility/internals/microsoft-help-viewer-sdk.md)。

@@ -1,56 +1,55 @@
 ---
-title: "IManagedAddin::Load"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "IManagedAddin::Load"
-  - "載入方法"
+title: "IManagedAddin::Load |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
 ms.assetid: 3faf9312-8ab4-4960-b2e7-8ca9859a3dcf
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 62c1af72158c0b416942e9124003dbeb06b584ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IManagedAddin::Load
+# <a name="imanagedaddinload"></a>IManagedAddin::Load
   載入 Managed VSTO 增益集時呼叫。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT Load([in] BSTR bstrManifestURL,   
              [in] IDispatch *pdispApplication);  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
 |參數|描述|  
-|--------|--------|  
+|---------------|-----------------|  
 |*bstrManifestURL*|VSTO 增益集之資訊清單的完整路徑。|  
-|*pdispApplication*|IDispatch 的指標，代表載入 VSTO 增益集的主應用程式。|  
+|*pdispApplication*|代表載入 VSTO 增益集的主應用程式 IDispatch 指標。|  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  HRESULT 值，表示此方法是否已順利完成。  
   
-## 備註  
- 資訊清單是一種檔案 \(通常是 XML 檔案\)，可提供協助載入 VSTO 增益集的資訊。 例如，資訊清單可以指定 VSTO 增益集組件的位置，以及載入 VSTO 增益集時要具現化的進入點類別。  
+## <a name="remarks"></a>備註  
+ 資訊清單是一種檔案 (通常是 XML 檔案)，可提供協助載入 VSTO 增益集的資訊。 例如，資訊清單可以指定 VSTO 增益集組件的位置，以及載入 VSTO 增益集時要具現化的進入點類別。  
   
- *bstrManifestURL* 參數包含 `Manifest` 項目的值，該項目位於 VSTO 增益集的 HKEY\_CURRENT\_USER\\Software\\Microsoft\\Office\\*\<應用程式名稱\>*\\Addins\\*\<增益集識別碼\>* 登錄機碼下。 如需詳細資訊，請參閱[IManagedAddin 介面](../vsto/imanagedaddin-interface.md)。  
+ *BstrManifestURL*參數包含的值`Manifest`HKEY_CURRENT_USER\Software\Microsoft\Office 下的項目\\*\<應用程式名稱 >*\Addins\\*\<增益集識別碼 >* VSTO 增益集的登錄機碼。 如需詳細資訊，請參閱 [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)。  
   
  實作 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) 方法可針對所要載入之 VSTO 增益集執行工作，例如設定增益集的應用程式定義域和安全性原則。  
   
-## 請參閱  
- [IManagedAddin 介面](../vsto/imanagedaddin-interface.md)   
+## <a name="see-also"></a>另請參閱  
+ [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)   
  [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)  
   
   

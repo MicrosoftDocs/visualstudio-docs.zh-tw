@@ -1,56 +1,58 @@
 ---
-title: "開啟並儲存專案項目 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "專案 [Visual Studio SDK]，檔案持續性"
-  - "檔案 [Visual Studio]，開啟及儲存"
-  - "編輯器 [Visual Studio SDK]，檔案持續性"
+title: "開啟並儲存專案項目 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- projects [Visual Studio SDK], file persistence
+- files [Visual Studio], opening and saving
+- editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a30589591a7cef60ecfb19945366f8fcf539da02
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 開啟並儲存專案項目
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案中的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 \(IDE\)。  下列主題將討論不同的方式來開啟和儲存檔案。  
+# <a name="opening-and-saving-project-items"></a>開啟並儲存專案項目
+當您新增新的專案類型時，您必須管理的開啟和儲存您的專案檔案[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 下列主題討論不同的方法，來開啟和儲存檔案。  
   
-## 在本節中  
- [使用 \[開啟檔案\] 命令顯示檔案](../Topic/Displaying%20Files%20By%20Using%20the%20Open%20File%20Command.md)  
- 提供逐步說明如何處理 IDE **開啟的檔案**命令，並在回應此命令的專案的角色。  
+## <a name="in-this-section"></a>本章節內容  
+ [使用開啟檔案命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)  
+ 提供 IDE 的處理方式的逐步說明**開啟檔案**命令，而且此命令的回應中的專案的角色。  
   
- [顯示命令中使用 \[開啟檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
- 提供詳細的逐步說明如何處理 IDE **開啟**命令，提示的檔案有一些選擇標準編輯器開啟。  
+ [使用開啟方式命令顯示檔案](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)  
+ 提供詳細的逐步說明在 IDE 如何處理**開啟**命令，提示檔案具有一些選擇的標準編輯器開啟。  
   
- [如何: 開啟專案的特定編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
- 提供指定表示僅使用專案專用編輯器中開啟專案中特定類型的檔案的逐步指示。  
+ [如何︰開啟專案特定的編輯器](../../extensibility/how-to-open-project-specific-editors.md)  
+ 提供逐步指示，來指定特定類型在專案中的檔案，應使用專案特定編輯器開啟。  
   
- [如何: 開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
- 提供逐步的指示，來指定要如何啟動 IDE，以開啟您的專案類型\] 中的檔案之標準編輯器。  
+ [如何︰開啟標準編輯器](../../extensibility/how-to-open-standard-editors.md)  
+ 提供逐步指示，來指定如何啟用 IDE，才能在您的專案類型開啟檔案的標準編輯器。  
   
- [如何: 開啟編輯器開啟的文件](../../extensibility/how-to-open-editors-for-open-documents.md)  
- 提供逐步的指示，以開啟 \[開啟檔案之專案專用編輯器。  
+ [如何︰針對開啟的文件開啟編輯器](../../extensibility/how-to-open-editors-for-open-documents.md)  
+ 提供逐步指示，以開啟專案特定的編輯器開啟檔案。  
   
- [儲存的標準文件](../../extensibility/internals/saving-a-standard-document.md)  
- 提供 IDE 的處理方式的詳細的說明**儲存**， **另存新檔**，以及 **全部儲存**的標準的編輯器中開啟的文件的指令。  
+ [儲存標準文件](../../extensibility/internals/saving-a-standard-document.md)  
+ 提供 IDE 的處理方式的詳細的說明**儲存**，**存**，和**全部儲存**標準編輯器中開啟的文件的命令。  
   
- [儲存自訂的文件](../../extensibility/internals/saving-a-custom-document.md)  
- 提供 \[圖表\] 和 \[IDE 的處理方式的詳細的說明**儲存**， **另存新檔**，以及 **全部儲存**的自訂的編輯器中開啟的文件的指令。  
+ [儲存自訂文件](../../extensibility/internals/saving-a-custom-document.md)  
+ 提供圖表和 IDE 的處理方式的詳細的說明**儲存**，**存**，和**全部儲存**在自訂編輯器中開啟文件的命令。  
   
- [決定編輯器隨即會開啟專案中的檔案](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
- 討論 IDE 應該遵循以選取適當的編輯器或設計工具檔案的處理程序。  
+ [決定要開啟專案中檔案的編輯器](../../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md)  
+ 討論 IDE 中選取適當的編輯器或設計工具的檔案時所遵循的程序。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [建立自訂編輯器和設計工具](../../extensibility/creating-custom-editors-and-designers.md)  
- 列出四種類型的編輯器，IDE 可以裝載，並提供每種編輯器的說明。  
+ 列出四種類型的編輯器可以裝載 IDE，並提供每個編輯器的描述。  
   
  [專案類型](../../extensibility/internals/project-types.md)  
- 討論專案如何控制的程式碼會編譯和建置的方式、 編輯器開啟的方式，和專案項目格式化的方式。
+ 討論如何專案控制的程式碼進行編譯和建置的方式、 如何開啟編輯器，以及專案項目格式化的方式。

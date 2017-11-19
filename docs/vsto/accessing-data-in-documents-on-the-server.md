@@ -1,12 +1,10 @@
 ---
-title: Accessing Data in Documents on the Server | Microsoft Docs
+title: "在伺服器上的文件中存取資料 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,74 +14,75 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], accessing on server
 - data access [Office development in Visual Studio]
 ms.assetid: 14a42e96-ed2f-48a1-a0c0-e19f9eba4956
-caps.latest.revision: 32
-author: kempb
-ms.author: kempb
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2e40f5a2c4daa058dfdff06354904dc3a8a0a4fe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 8345f7d197f44455ae990c159550587bbc79de24
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessing-data-in-documents-on-the-server"></a>Accessing Data in Documents on the Server
-  You can program against the data in a document-level customization without having to use the object model of Microsoft Office Word or Microsoft Office Excel. This means that you can access data that is contained in a document on a server that does not have Word or Excel installed. For example, code on a server (for instance, in an [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] page) can customize the data in a document and send the customized document to an end user. When the end user opens the document, data binding code in the solution assembly binds the customized data into the document. This is possible because the data in the document is separated from the user interface. For more information, see [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md).  
+# <a name="accessing-data-in-documents-on-the-server"></a>存取伺服器文件中的資料
+  您可以程式設計的文件層級自訂中的資料，而不需要使用 Microsoft Office Word 或 Microsoft Office Excel 物件模型。 這表示您可以存取並沒有文字的伺服器上的文件中所包含的資料，或安裝 Excel。 例如，程式碼在伺服器上 (例如，在[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]頁面) 可以自訂文件中的資料，並將自訂文件傳送給終端使用者。 當使用者開啟文件時，方案組件中的資料繫結程式碼將自訂的資料繫結至文件。 這可能是因為文件中的資料分開的使用者介面。 如需詳細資訊，請參閱[文件層級自訂中的快取資料](../vsto/cached-data-in-document-level-customizations.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="caching-data-for-use-on-a-server"></a>Caching Data for Use on a Server  
- To cache a data object in a document, mark it with the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute at design time, or use the `StartCaching` method of a host item at run time. When you cache a data object in a document, the [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] serializes the object into an XML string that is stored in the document. Objects must meet certain requirements to be eligible for caching. For more information, see [Caching Data](../vsto/caching-data.md).  
+## <a name="caching-data-for-use-on-a-server"></a>伺服器上使用的快取資料  
+ 若要快取文件中的資料物件，請將標記與<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute>屬性在設計階段，或使用`StartCaching`在執行階段將主項目的的方法。 當您快取文件中的資料物件[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]將物件序列化成 XML 字串是儲存在文件中。 物件必須符合特定需求，才能進行快取。 如需詳細資訊，請參閱 [Caching Data](../vsto/caching-data.md)。  
   
- Server-side code can manipulate any data objects in the data cache. Controls that are bound to cached data instances are synchronized with the user interface, so that any server-side changes that are made to the data show up automatically when the document is opened on the client.  
+ 伺服器端程式碼可以使用操作資料快取中的任何資料物件。 快取的資料執行個體繫結的控制項與同步處理使用者介面，使資料所做的任何伺服器端變更時自動顯示在用戶端上開啟文件。  
   
-## <a name="accessing-data-in-the-cache"></a>Accessing Data in the Cache  
- You can access data in the cache from applications outside of Office, for example from a console application, a Windows Forms application, or a Web page. The application that accesses the cached data must have full trust; a Web application that has partial trust cannot insert, retrieve, or change data that is cached in an Office document.  
+## <a name="accessing-data-in-the-cache"></a>存取快取中的資料  
+ 您可以從辦公室外部的應用程式，例如從主控台應用程式、 Windows Forms 應用程式或網頁存取快取中的資料。 存取快取的資料的應用程式必須有完全信任。部分信任的 Web 應用程式無法插入、 擷取或變更快取 Office 文件中的資料。  
   
- The data cache is accessible through a hierarchy of collections that are exposed by the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> property of the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class:  
+ 資料快取是透過使用集合的階層架構所公開的<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>屬性<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別：  
   
--   The <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> property returns a <xref:Microsoft.VisualStudio.Tools.Applications.CachedData>, which contains all of the cached data in a document-level customization.  
+-   <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>屬性會傳回<xref:Microsoft.VisualStudio.Tools.Applications.CachedData>，其中包含所有文件層級自訂中快取的資料。  
   
--   Each <xref:Microsoft.VisualStudio.Tools.Applications.CachedData> contains one or more <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> objects. A <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> contains all of the cached data objects that are defined within a single class.  
+-   每個<xref:Microsoft.VisualStudio.Tools.Applications.CachedData>包含一或多個<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem>物件。 A<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem>包含的所有快取的資料物件定義在單一類別中。  
   
--   Each <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem> contains one or more <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> objects. A <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> represents a single cached data object.  
+-   每個<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataHostItem>包含一或多個<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>物件。 A<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>代表單一快取的資料物件。  
   
- The following code example demonstrates how to access a cached string in the `Sheet1` class of an Excel workbook project. This example is part of a larger example that is provided for the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> method.  
+ 下列程式碼範例示範如何存取快取中的字串`Sheet1`的 Excel 活頁簿專案的類別。 這個範例是所提供之較大範例的一部分<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A>方法。  
   
- [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)] [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]  
+ [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
+ [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]  
   
-## <a name="modifying-data-in-the-cache"></a>Modifying Data in the Cache  
- To modify a cached data object, you typically perform the following steps:  
+## <a name="modifying-data-in-the-cache"></a>修改快取中的資料  
+ 若要修改的快取的資料物件，您通常會執行下列步驟：  
   
-1.  Deserialize the XML representation of the cached object into a new instance of the object. You can access the XML by using the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> property of the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> that represents the cached data object.  
+1.  還原序列化之物件的新執行個體的快取物件的 XML 表示。 您可以使用來存取 XML<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A>屬性<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem>表示快取的資料物件。  
   
-2.  Make the changes to this copy.  
+2.  這個複本中進行變更。  
   
-3.  Serialize the changed object back into the data cache by using one of the following options:  
+3.  序列化回資料快取的已變更的物件，使用下列選項的其中一個：  
   
-    -   If you want to automatically serialize the changes, use the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> method. This method uses the **DiffGram** format for serializing <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, and typed dataset objects in the data cache. The **DiffGram** format ensures that changes to the data cache in an offline document are sent to the server correctly.  
+    -   如果您想要自動序列化所做的變更，使用<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A>方法。 這個方法會使用**DiffGram**格式序列化<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，及型別的資料快取中的資料集物件。 **DiffGram**格式，可確保離線的文件中的資料快取的變更會正確地傳送至伺服器。  
   
-    -   If you want to perform your own serialization for changes to cached data, you can write directly to the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> property. Specify the **DiffGram** format if you use a <xref:System.Data.Common.DataAdapter> to update a database with changes made to data in a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or typed dataset. Otherwise, the <xref:System.Data.Common.DataAdapter> will update the database by adding new rows instead of modifying existing rows.  
+    -   如果您想要變更快取資料執行您自己的序列化，您可以撰寫直接<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A>屬性。 指定**DiffGram**格式化，如果您使用<xref:System.Data.Common.DataAdapter>以更新資料庫中的資料所做的變更<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，或輸入資料集。 否則，<xref:System.Data.Common.DataAdapter>會加入新的資料列，而不修改現有的資料列來更新資料庫。  
   
-### <a name="modifying-data-without-deserializing-the-current-value"></a>Modifying Data Without Deserializing the Current Value  
- In some cases, you might want to modify the value of the cached object without first deserializing the current value. For example, you can do this if you are changing the value of an object that has a simple type, such as a string or integer, or if you are initializing a cached <xref:System.Data.DataSet> in a document on a server. In these cases, you can use the <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> method without first deserializing the current value of the cached object.  
+### <a name="modifying-data-without-deserializing-the-current-value"></a>修改資料，但不還原序列化的目前值  
+ 在某些情況下，您可能要修改的快取的物件值，而不會先還原序列化的目前值。 例如，您可以如果您要變更物件具有簡單型別，例如字串或整數值，或如果您要初始化快取<xref:System.Data.DataSet>在伺服器上的文件中。 在這些情況下，您可以使用<xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A>方法，而不先還原序列化的快取物件的目前值。  
   
- The following code example demonstrates how to change the value of a cached string in the `Sheet1` class of an Excel workbook project. This example is part of a larger example that is provided for the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> method.  
+ 下列程式碼範例示範如何變更快取中之字串值`Sheet1`的 Excel 活頁簿專案的類別。 這個範例是所提供之較大範例的一部分<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A>方法。  
   
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)] [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]  
+ [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
+ [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]  
   
-### <a name="modifying-null-values-in-the-data-cache"></a>Modifying Null Values in the Data Cache  
- The data cache does not store objects that have the value **null** when the document is saved and closed. This limitation has several consequences when you modify cached data:  
+### <a name="modifying-null-values-in-the-data-cache"></a>修改資料快取中的 Null 值  
+ 資料快取不會儲存物件具有值**null**時儲存並關閉文件。 當您修改快取的資料時，這項限制會有數個結果：  
   
--   If you set any object in the data cache to the value **null**, all of the objects in the data cache will be automatically set to **null** when the document is opened, and the entire data cache will be cleared when the document is saved and closed. That is, all of the cached objects will be removed from the data cache, and the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> collection will be empty.  
+-   如果您在資料快取的值中設定任何物件**null**，所有資料快取中的物件將會自動設定為**null**當文件開啟時，與整個資料快取都將清除的時機儲存並關閉文件。 也就是說，所有快取的物件會移除資料快取和<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A>會空的集合。  
   
--   If you build a solution with **null** objects in the data cache and you want to initialize these objects by using the <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> class before the document is opened for the first time, you must ensure that you initialize all of the objects in the data cache. If you initialize only some of the objects, all of the objects will be set to **null** when the document is opened, and the entire data cache will be cleared when the document is saved and closed.  
+-   如果您要建置在方案中的使用**null**物件資料快取，以及您想要初始化這些物件是使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>第一次開啟文件之前的類別時，您必須確定您的所有物件初始化中的資料快取中。 如果您初始化只對某些物件時，所有的物件將設定為**null**當文件開啟時，並將清除整個資料快取，儲存和關閉文件時。  
   
-## <a name="accessing-typed-datasets-in-the-cache"></a>Accessing Typed Datasets in the Cache  
- If you want to access the data in a typed dataset both from an Office solution and from an application outside of Office, such as a Windows Forms application or an [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] project, you must define the typed dataset in a separate assembly that is referenced in both projects. If you add the typed dataset to each project by using the **Data Source Configuration Wizard** or the **Dataset Designer**, the .NET Framework will treat the typed datasets in the two projects as different types. For more information about creating typed datasets, see [Create and configure datasets in Visual Studio](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio).  
+## <a name="accessing-typed-datasets-in-the-cache"></a>存取快取中的具類型資料集  
+ 如果您想要存取中具類型資料集的資料，同時從 Office 方案和 Office，外面的應用程式，例如 Windows Forms 應用程式或[!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)]專案中，您必須同時參考其他組件中定義具類型資料集專案。 如果您將具類型資料集加入每個專案使用**資料來源組態精靈**或**Dataset 設計工具**，.NET Framework 會將具類型資料集做為不同類型的兩個專案中. 如需建立具類型資料集的詳細資訊，請參閱[建立並設定 Visual Studio 中的資料集](/visualstudio/data-tools/create-and-configure-datasets-in-visual-studio)。  
   
-## <a name="see-also"></a>See Also  
- [Accessing Data in Documents on the Server](../vsto/accessing-data-in-documents-on-the-server.md)   
- [Cached Data in Document-Level Customizations](../vsto/cached-data-in-document-level-customizations.md)  
+## <a name="see-also"></a>另請參閱  
+ [在伺服器上的文件中存取資料](../vsto/accessing-data-in-documents-on-the-server.md)   
+ [文件層級自訂中的快取資料](../vsto/cached-data-in-document-level-customizations.md)  
   
   

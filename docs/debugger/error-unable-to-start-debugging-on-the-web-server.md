@@ -1,11 +1,10 @@
 ---
-title: 'Error: Unable to Start Debugging on the Web Server | Microsoft Docs'
+title: "錯誤： 無法啟動 Web 伺服器上偵錯 |Microsoft 文件"
 ms.custom: 
 ms.date: 05/23/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,124 +27,139 @@ helpviewer_keywords:
 - debugging ASP.NET Web applications, unable to start debugging error
 - remote debugging, errors
 ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 13122e526d60f7817339f481df8da3eb90354312
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 5332933bf1452ca730b5c49716e10f49851fd749
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: Unable to Start Debugging on the Web Server
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>錯誤：無法在 Web 伺服器上啟動偵錯
 
-When you try to debug an ASP.NET application running on a Web server, you may get this error message: `Unable to start debugging on the Web server`.
+當您嘗試偵錯 Web 伺服器上執行的 ASP.NET 應用程式時，您可能會收到這個錯誤訊息： `Unable to start debugging on the Web server`。
 
-Often, this error occurs because an error or configuration change has occurred that requires an update to your Application Pools, an IIS reset, or both.
+通常，因為發生錯誤或組態變更，需要更新您的應用程式集區、 IIS 重設，或兩者都發生這個錯誤。 您可以開啟提升權限的命令提示字元並輸入重設 IIS `iisreset`。 
 
-## <a name="specificerrors"></a>What is the detailed error message?
+## <a name="specificerrors"></a>什麼是詳細的錯誤訊息？
 
-The `Unable to start debugging on the Web server` message is generic. Usually, a more specific message is included in the error string and that may help you identify the cause of the problem or search for a more exact fix. Here are a few of the more common error messages that are appended to the main error message:
+`Unable to start debugging on the Web server`訊息是泛型。 通常，更特定的訊息包含在錯誤的字串，而且可以協助您找出問題或搜尋更精確的修正程式的原因。 以下是一些較常見的錯誤訊息，附加到主要的錯誤訊息：
 
-- [IIS does not list a website that matches the launch url](#IISlist)
-- [Unable to connect to the webserver](#unabletoconnect)
-- [The web server did not respond in a timely manner](#webservertimeout)
-- [The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer](#msvsmon)
-- [Could not start ASP.NET debugging](#aspnet)
+- [IIS 沒有列出符合啟動的網站 url](#IISlist)
+- [未正確設定 web 伺服器](#web_server_config)
+- [無法連線到網頁伺服器](#unabletoconnect)
+- [Web 伺服器未及時回應](#webservertimeout)
+- [Microsoft visual studio 遠端偵錯 monitor(msvsmon.exe) 似乎不在遠端電腦上執行](#msvsmon)
+- [遠端伺服器傳回錯誤](#server_error)
+- [無法啟動 ASP.NET 偵錯](#aspnet)
+- [偵錯工具無法連接到遠端電腦](#cannot_connect)
+- [請參閱常見組態錯誤的說明。執行偵錯工具外部網頁即可提供詳細資訊。](#see_help)
 
-## <a name="IISlist"></a> IIS does not list a website that matches the launch url
+## <a name="IISlist"></a>IIS 沒有列出符合啟動的網站 url
 
-- Try starting Visual Studio as an Administrator and retry. (Some ASP.NET debugging scenarios require elevated privileges.) You can configure Visual Studio to always run as an Administrator by right-clicking the Visual Studio shortcut icon, choosing **Properties > Advanced**, and then choosing to always run as an Administrator.
+- 重新啟動 Visual Studio 系統管理員身分，然後重試偵錯。 （某些 ASP.NET 偵錯的情況下需要提高的權限）。
 
-## <a name="unabletoconnect"></a> Unable to connect to the webserver
+    您可以設定 Visual Studio 一律系統管理員身分執行，以滑鼠右鍵按一下 Visual Studio 捷徑圖示中，選擇**屬性 > 進階**，然後選擇 永遠以系統管理員身分執行。
 
-- Are you running Visual Studio and the Web server on the same machine? Open your project properties and make sure that the project is configured to connect to the correct Web server or launch URL. (Open **Properties > Web > Servers** or **Properties > Debug** depending on your project type.)
+## <a name="web_server_config"></a>未正確設定 web 伺服器
 
-- If the Web server is remote, try restarting your Application Pools and then reset IIS. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+- 請參閱[錯誤： 未正確設定 web 伺服器](../debugger/error-the-web-server-is-not-configured-correctly.md)。
 
-## <a name="webservertimeout"></a> The web server did not respond in a timely manner
+## <a name="unabletoconnect"></a>無法連線到網頁伺服器
 
-- Try an IIS reset and retry debugging. Multiple debugger instances may be attached to the IIS process; a reset terminates them. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+- 為您在同一部電腦上執行 Visual Studio 和 Web 伺服器和使用偵錯**F5** (而不是**附加至處理序**)？ 開啟您專案的屬性，並確定此專案已設定連接到正確的 Web 伺服器，並啟動 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。 Web Form 專案中，開啟**屬性頁 > 起始選項 > 伺服器**。)
 
-## <a name="msvsmon"></a> The microsoft visual studio remote debugging monitor(msvsmon.exe) does not appear to be running on the remote computer
+- 否則，重新啟動應用程式集區，然後重設 IIS。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-- If you are debugging on a remote machine, make sure you have [installed and are running the remote debugger](../debugger/remote-debugging.md). If the message mentions a firewall, make sure the [correct ports in the firewall](../debugger/remote-debugger-port-assignments.md) are open, especially if you are using a third party firewall.
-- If you are using a HOSTS file, make sure it is configured correctly. For example, it needs to include the same project URL as in your project properties, **Web** tab.
+## <a name="webservertimeout"></a>Web 伺服器未及時回應
 
-## <a name="aspnet"></a> Could not start ASP.NET debugging
+- 重設 IIS，然後再次嘗試偵錯。 多個偵錯工具執行個體可能會附加至 IIS 處理序中;重設會終止它們。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
 
-- Try restarting the Application Pool and do an IIS reset. For more information, see [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
-- If you are doing URL rewrites, test a basic web.config with no URL rewrites. See the **Note** about the URL Rewrite Module in [Check your IIS Configuration](#vxtbshttpservererrorsthingstocheck).
+## <a name="msvsmon"></a>Microsoft visual studio 遠端偵錯 monitor(msvsmon.exe) 似乎不在遠端電腦上執行
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Check your IIS configuration
+- 如果您正在偵錯在遠端電腦上，請確定您有[安裝且正在執行遠端偵錯工具](../debugger/remote-debugging.md)。 如果訊息提及防火牆，請確定[修正在防火牆中的連接埠](../debugger/remote-debugger-port-assignments.md)已開啟，特別是當您使用協力廠商防火牆。
+- 如果您使用的主機檔案，請確定已正確設定。 例如，如果使用偵錯**F5** (而不是**附加至處理序**)，主機檔案必須包含相同的專案 URL，如專案屬性中所示**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型。
 
-After taking steps to resolve an issue detailed here, and before trying again to debug, you may also need to reset IIS. You can do that by opening an Administrator command prompt and typing `iisreset`, or you can perform a reset  in IIS Manager. 
+## <a name="server_error"></a>遠端伺服器傳回錯誤
 
-* Stop and restart your Application Pools, then retry.
+請檢查訊息，找出問題的原因傳回的錯誤碼。 以下是一些常見的錯誤碼。
+- (403) 禁止。 請確認您已連接到正確的伺服器類型和 URL (在**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型)。 此外，請確認伺服器的 web.config，包含`debug=true`compilation 項目中。 如果這些設定已經正確，請確認您 Web 應用程式的資料夾具有正確的資料夾權限。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
+- 無法使用 (503) 伺服器。 由於發生錯誤或組態變更，可能已停止應用程式集區。 重新啟動應用程式集區。
+- (404) 找不到。 請確定應用程式集區已設定為正確的 ASP.NET 版本。
 
-    The Application Pool may have stopped as a result of an error. Or, another configuration change that you made may require that you stop and restart your Application Pool.
+## <a name="aspnet"></a>無法啟動 ASP.NET 偵錯
+
+- 重新啟動應用程式集區，然後重設 IIS。 如需詳細資訊，請參閱[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
+- 如果您要重寫 URL，測試與任何 URL 撰寫基本 web.config。 請參閱**注意**有關 URL 重寫模組[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
+
+## <a name="cannot_connect"></a>偵錯工具無法連接到遠端電腦
+
+如果您是在本機偵錯，因為 Visual Studio 是 32 位元應用程式，因此它會使用 64 位元版本的遠端偵錯工具偵錯 64 位元應用程式，可能會發生這個錯誤。 開啟您專案的屬性，並確定此專案已設定連線到正確的 Web 伺服器和 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。)
+
+此外，如果您使用的主機檔案，請確定已正確設定。 例如，主機檔案必須包含相同的專案 URL，如專案屬性中所示**屬性 > Web > 伺服器**或**屬性 > 偵錯**，視您的專案類型。
+
+## <a name="see_help"></a>請參閱常見組態錯誤的說明。 執行偵錯工具外部網頁即可提供詳細資訊。
+
+- 會在同一部電腦上執行 Visual Studio 和 Web 伺服器嗎？ 開啟您專案的屬性，並確定此專案已設定連接到正確的 Web 伺服器，並啟動 URL。 (開啟**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**視專案類型而定。)
+
+- 如果仍然無法解決問題，或從遠端進行偵錯，遵循的步驟[檢查 IIS 組態](#vxtbshttpservererrorsthingstocheck)。
+
+##  <a name="vxtbshttpservererrorsthingstocheck"></a>請檢查您的 IIS 組態
+
+之後採取來解決問題，這裡所詳述的步驟，以及之前偵錯，請再試一次，則您可能需要重設 IIS。 您可以執行此動作開啟提升權限的命令提示字元，然後輸入`iisreset`。 
+
+* 停止並重新啟動 IIS 應用程式集區，然後再試一次。 
+
+    應用程式集區可能因錯誤而停止。 或者，您所做的其他組態變更可能需要您停止並重新啟動您的應用程式集區。
     
     > [!NOTE]
-    > If the Application Pool keeps stopping, you may need to uninstall the URL Rewrite Module from the Control Panel. You can reinstall it using the Web Platform Installer (WPI). This issue may occur after a significant system upgrade.
+    > 如果應用程式集區會停止，您可能需要從控制台解除安裝 URL Rewrite Module。 您可以使用 Web Platform Installer (WebPI) 它重新安裝。 大量的系統升級後可能會發生此問題。
 
-* Check your Application Pool configuration, correct it if needed, and then retry.
+* 請檢查您的應用程式集區組態、 更正它如有需要並再試一次。
 
-    If password credentials have changed, you may need to update them in your Application Pool. Also, if you have recently installed ASP.NET, the Application Pool may be configured for the wrong version of ASP.NET. Fix the issue and restart the Application Pool.
+    應用程式集區可能設定不符合您的 Visual Studio 專案的 ASP.NET 版本。 更新應用程式集區中的 ASP.NET 版本，然後重新啟動它。 如需詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。
+
+    此外，如果密碼認證已變更，您可能需要更新您的應用程式集區或網站。  應用程式集區中更新認證**進階設定 > 處理序模型 > 識別**。 網站中，更新中的認證**基本設定 > 做為連接...**.重新啟動應用程式集區。
     
-* Check that your Web Application folder has the right permissions.
+* 請檢查您的 Web 應用程式的資料夾具有正確的權限。
 
-    Make sure that you give IIS_IUSRS, IUSR, or the specific user associated with the Application Pool read and execute rights for the Web Application folder. Fix the issue and restart your Application Pool.
+    請確定您授與 IIS_IUSRS、 IUSR 或特定使用者相關聯的應用程式集區讀取，並執行 Web 應用程式資料夾的權限。 修正問題，然後重新啟動您的應用程式集區。
 
-* Make sure that the correct version of ASP.NET is installed on IIS.  See [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+* 請確定已在 IIS 上安裝正確的 ASP.NET 版本。
 
-    Mismatched versions of ASP.NET on IIS and in your Visual Studio project may cause this issue. You may need to set the framework version in web.config.
+    ASP.NET 在 IIS 上和您的 Visual Studio 專案中的版本不相符，可能會導致此問題。 您可能需要在 web.config 中設定的 framework 版本。在 IIS 上安裝 ASP.NET，請使用[Web Platform Installer (WebPI)](https://www.microsoft.com/web/downloads/platform.aspx)。 此外，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)或適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
   
-* Resolve authentication errors if you are using only the IP address
+* 若您只使用 IP 位址，請解決驗證錯誤
 
-     By default, IP addresses are assumed to be part of the Internet, and NTLM authentication is not done over the Internet. If your web site is configured in IIS to require authentication, this authentication fails. To correct this problem, you can specify the name of the remote computer instead of the IP address.
+     根據預設，IP 位址被假設為網際網路的一部分，且不會透過網際網路完成 NTLM 驗證。 如果您的網站設定為需要驗證的 IIS 中，這項驗證會失敗。 若要修正這個問題，您可以指定遠端電腦，而不是 IP 位址的名稱。
      
-## <a name="other-causes"></a>Other causes
+## <a name="other-causes"></a>其他原因
 
-If the IIS configuration is not causing the issue, try these steps:
+如果 IIS 設定不會造成問題，請嘗試下列步驟：
 
-- Restart Visual Studio with Administrator privileges and try again.
+- 系統管理員權限重新啟動 Visual Studio 並再試一次。
 
-    Some ASP.NET debugging scenarios such as using Web Deploy require elevated privileges for Visual Studio.
+    一些 ASP.NET 偵錯情況，例如使用 Web Deploy for Visual Studio 需要提高權限。
     
-- If multiple instances of Visual Studio are running, reopen your project in one instance of Visual Studio (with Administrator privileges), and try again.
+- 如果正在執行的 Visual Studio 的多個執行個體，重新開啟您的專案在 Visual Studio 的一個執行個體 （具有管理員權限），並再試一次。
 
-- If you are using a HOSTS file with local addresses, try using the loopback address instead of the machine's IP address.
+- 如果您正在使用本機位址的主機檔案，請嘗試使用回送位址，而不電腦的 IP 位址。
 
-    If you are not using local addresses, make sure your HOSTS file includes the same project URL as in your project properties, **Web** tab.
+    如果您未使用本機位址，請確定主機檔案包含與專案屬性中，相同的專案 URL**屬性 > 網路 > 伺服器**或**屬性 > 偵錯**，取決於您專案類型。
 
-## <a name="more-troubleshooting-steps"></a>More troubleshooting steps
+## <a name="more-troubleshooting-steps"></a>其他疑難排解步驟
 
-* Bring up the localhost page in the browser on the server.
+* 顯示 localhost 頁面，在伺服器上的瀏覽器中。
 
-     If IIS is not installed correctly, you should get errors when you type `http://localhost` in a browser.
+     若 IIS 未正確安裝，則您在瀏覽器中輸入 `http://localhost` 時應該會發生錯誤。
      
-     For more information on deploying to IIS, see [Host on Windows with IIS](https://docs.asp.net/en/latest/publishing/iis.html).
+     如需有關部署至 IIS 的詳細資訊，請參閱[IIS 8.0 使用 ASP.NET 3.5 和 ASP.NET 4.5](https://docs.microsoft.com/en-us/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)和適用於 ASP.NET Core[與 IIS 的 Windows 上的主機](https://docs.asp.net/en/latest/publishing/iis.html)。
 
-* Create a basic ASP.NET application on the server (or use a basic web.config file).
+* 在伺服器上建立基本的 ASP.NET 應用程式 （或使用基本的 web.config 檔案）。
 
-    If you can't get your app to work with the debugger, try creating a basic ASP.NET application locally on the server, and try to debug the basic app. (You might want to use the default ASP.NET MVC template.) If you can debug a basic app, that may help you identify what's different between the two configurations. Look for differences in settings in the web.config file, such as URL rewrite rules.
+    如果您無法取得您的應用程式使用偵錯工具，請嘗試在伺服器上，在本機建立基本的 ASP.NET 應用程式，並嘗試進行偵錯基本應用程式。 （您可能想要使用預設的 ASP.NET MVC 範本。）如果您可以偵錯的基本應用程式，可協助您識別兩個組態之間的差異。 尋找設定差異在 web.config 檔案中，例如 URL 重寫規則。
 
-## <a name="see-also"></a>See Also  
- [Debugging Web Applications: Errors and Troubleshooting](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+## <a name="see-also"></a>另請參閱  
+ [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

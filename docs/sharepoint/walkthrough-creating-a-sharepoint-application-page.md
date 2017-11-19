@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a SharePoint Application Page | Microsoft Docs'
+title: "逐步解說： 建立 SharePoint 應用程式頁面 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,92 +16,91 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
 ms.assetid: 5b6dd941-5c59-4a89-89d0-8e973a00ae9e
-caps.latest.revision: 42
-author: kempb
-ms.author: kempb
+caps.latest.revision: "42"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 7f3be03c1c3dd5c782c53d116c9a080d11f7d4b9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: e49e8d50905dc0bb0b3c104a7133fe7435e2e944
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-sharepoint-application-page"></a>Walkthrough: Creating a SharePoint Application Page
-  An application page is a specialized form of an ASP.NET page. Application pages contain content that's merged with a SharePoint master page. For more information, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+# <a name="walkthrough-creating-a-sharepoint-application-page"></a>逐步解說：建立 SharePoint 應用程式頁面
+  應用程式頁面是一種特殊的形式的 ASP.NET 網頁。 應用程式頁面包含合併與 SharePoint 主版頁面的內容。 如需詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
- This walkthrough shows you how to create an application page and then debug it by using a local SharePoint site. This page shows all items that each user has created or modified in all sites on the server farm.  
+ 本逐步解說將示範如何建立應用程式頁面上，並使用本機 SharePoint 網站來偵錯。 此頁面會顯示每位使用者建立或修改在伺服器陣列上的所有站台的所有項目。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Creating a SharePoint project.  
+-   建立 SharePoint 專案。  
   
--   Adding an application page to the SharePoint project.  
+-   將應用程式頁面加入 SharePoint 專案。  
   
--   Adding ASP.NET controls to the application page.  
+-   將 ASP.NET 控制項加入至應用程式頁面。  
   
--   Adding code behind the ASP.NET controls.  
+-   在 ASP.NET 控制項後面加入程式碼。  
   
--   Testing the application page.  
+-   測試應用程式頁面。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
--   Supported editions of Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Windows 版本和 SharePoint。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or an edition of Visual Studio Ultimate or Visual Studio Premium.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]或 Visual Studio Ultimate 或 Visual Studio Premium edition。  
   
-## <a name="creating-a-sharepoint-project"></a>Creating a SharePoint Project  
- First, create an **Empty SharePoint Project**. Later, you will add an **Application Page** item to this project.  
+## <a name="creating-a-sharepoint-project"></a>建立 SharePoint 專案  
+ 首先，建立**空白的 SharePoint 專案**。 稍後，您會加入**應用程式頁面**項目加入此專案。  
   
-#### <a name="to-create-a-sharepoint-project"></a>To create a SharePoint Project  
+#### <a name="to-create-a-sharepoint-project"></a>若要建立 SharePoint 專案  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  Open the **New Project** dialog box, expand the **Office/SharePoint** node under the language that you want to use, and then choose the **SharePoint Solutions** node.  
+2.  開啟**新專案**對話方塊方塊中，展開  **Office/SharePoint**節點下的語言，您想要使用，然後選擇  **SharePoint 方案**節點。  
   
-3.  In the **Visual Studio Installed Templates** pane, choose the **SharePoint 2010 - Empty Project** template. Name the project **MySharePointProject**, and then choose the **OK** button.  
+3.  在**Visual Studio 安裝的範本** 窗格中，選擇**SharePoint 2010-空專案**範本。 將專案命名**MySharePointProject**，然後選擇 [**確定**] 按鈕。  
   
-     The **SharePoint Customization Wizard** appears. This wizard enables you to select the site that you will use to debug the project and the trust level of the solution.  
+     **SharePoint 自訂精靈**隨即出現。 此精靈可讓您選取的網站，您將用於偵錯專案和方案的信任層級。  
   
-4.  Choose the **Deploy as a farm solution** option button, and then choose the **Finish** button to accept the default local SharePoint site.  
+4.  選擇**部署為伺服陣列方案**選項按鈕，然後再選擇**完成** 按鈕，接受預設的本機 SharePoint 網站。  
   
-## <a name="creating-an-application-page"></a>Creating an Application Page  
- To create an application page, add an **Application Page** item to the project.  
+## <a name="creating-an-application-page"></a>建立應用程式頁面  
+ 若要建立應用程式頁面上，新增**應用程式頁面**項目加入專案。  
   
-#### <a name="to-create-an-application-page"></a>To create an application page  
+#### <a name="to-create-an-application-page"></a>若要建立的應用程式頁面  
   
-1.  In **Solution Explorer**, choose the **MySharePointProject** project.  
+1.  在**方案總管 中**，選擇**MySharePointProject**專案。  
   
-2.  On the menu bar, choose **Project**, **Add New Item**.  
+2.  在功能表列上選擇 **專案**，**加入新項目**。  
   
-3.  In the **Add New Item** dialog box, choose the **Application Page (Farm Solution Only** template.  
+3.  在**加入新項目**對話方塊方塊中，選擇**應用程式頁面上 (僅限陣列方案**範本。  
   
-4.  Name the page **SearchItems**, and then choose the **Add** button.  
+4.  將頁面命名**SearchItems**，然後選擇 [**新增**] 按鈕。  
   
-     The Visual Web Developer designer displays the application page in **Source** view where you can see the page's HTML elements. The designer displays the markup for several <xref:System.Web.UI.WebControls.Content> controls. Each control maps to a <xref:System.Web.UI.WebControls.ContentPlaceHolder> control that is defined in the default application master page.  
+     Visual Web Developer 設計工具會顯示應用程式頁面中的**來源**檢視您可以在其中檢視網頁的 HTML 項目。 在設計工具顯示數個標記<xref:System.Web.UI.WebControls.Content>控制項。 每個控制項都對應到<xref:System.Web.UI.WebControls.ContentPlaceHolder>定義預設應用程式的主版頁面中的控制項。  
   
-## <a name="designing-the-layout-of-the-application-page"></a>Designing the Layout of the Application Page  
- The Application Page item enables you to use a designer to add ASP.NET controls to the application page. This designer is the same designer used in Visual Web Developer. Add a label, a radio button list, and a table to the **Source** view of the designer, and then set properties just as you would when you design any standard ASP.NET page.  
+## <a name="designing-the-layout-of-the-application-page"></a>設計應用程式頁面上的配置  
+ 應用程式頁面項目可讓您使用應用程式頁面加入 ASP.NET 控制項的設計工具。 這個設計工具是在 Visual Web Developer 中使用相同的設計工具。 加入標籤、 圓鈕清單中，與資料表以**來源**的設計工具中，檢視和一樣，當您設計任何標準 ASP.NET 網頁，然後設定屬性。  
   
-#### <a name="to-design-the-layout-of-the-application-page"></a>To design the layout of the application page  
+#### <a name="to-design-the-layout-of-the-application-page"></a>若要設計的應用程式頁面的版面配置  
   
-1.  On the menu bar, choose **View**, **Toolbox**.  
+1.  在功能表列上，依序選擇 [檢視] 和 [工具箱]。  
   
-2.  In the Standard node of the **Toolbox**, perform one of the following steps:  
+2.  中的標準節點**工具箱**，執行下列步驟：  
   
-    -   Open the shortcut menu for the **Label** item, choose **Copy**, open the shortcut menu for the line under the **PlaceHolderMain** content control in the designer, and then choose **Paste**.  
+    -   開啟捷徑功能表**標籤**項目，選擇**複製**，開啟下的那一行的捷徑功能表**PlaceHolderMain**內容控制項在設計師中，然後按一下選擇**貼上**。  
   
-    -   Drag the **Label** item from the **Toolbox** onto the body of the **PlaceHolderMain** content control.  
+    -   拖曳**標籤**項目從**工具箱**主體到**PlaceHolderMain**內容控制項。  
   
-3.  Repeat the previous step to add a **DropDownList** item and a **Table** item to the **PlaceHolderMain** content control.  
+3.  重複上述步驟以新增**DropDownList**項目和**資料表**項目**PlaceHolderMain**內容控制項。  
   
-4.  On the designer, change the value of the `Text` attribute of the label control to **Show All Items**.  
+4.  在設計工具中，變更的值`Text`的 label 控制項，以屬性**顯示所有項目**。  
   
-5.  On the designer, replace the `<asp:DropDownList>` element with the following XML.  
+5.  在設計工具中，將`<asp:DropDownList>`具有下列 XML 項目。  
   
     ```  
     <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true"  
@@ -113,61 +110,65 @@ ms.lasthandoff: 08/30/2017
     </asp:DropDownList>  
     ```  
   
-## <a name="handling-the-events-of-controls-on-the-page"></a>Handling the Events of Controls on the Page  
- Handle controls in an application page just as you would any ASP.NET page. In this procedure, you will handle the `SelectedIndexChanged` event of the drop-down list.  
+## <a name="handling-the-events-of-controls-on-the-page"></a>處理頁面上的控制項的事件  
+ 處理控制項的應用程式頁面中，就如同任何 ASP.NET 網頁。 在此程序，您將處理`SelectedIndexChanged`下拉式清單的事件。  
   
-#### <a name="to-handle-the-events-of-controls-on-the-page"></a>To handle the events of controls on the page  
+#### <a name="to-handle-the-events-of-controls-on-the-page"></a>若要處理的頁面上的控制項事件  
   
-1.  On the **View** menu, choose **Code**.  
+1.  在**檢視**功能表上，選擇**程式碼**。  
   
-     The application page code file opens in the Code Editor.  
+     應用程式頁面的程式碼檔隨即開啟 程式碼編輯器。  
   
-2.  Add the following method to the `SearchItems` class. This code handles the <xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged> event of the <xref:System.Web.UI.WebControls.DropDownList> by calling a method that you will create later in this walkthrough.  
+2.  將下列方法加入 `SearchItems` 類別中。 此程式碼會處理<xref:System.Web.UI.WebControls.ListControl.SelectedIndexChanged>事件<xref:System.Web.UI.WebControls.DropDownList>所呼叫的方法，您將建立稍後在本逐步解說。  
   
-     [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]  [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]  
+     [!code-vb[SP_ApplicationPage#5](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#5)]
+     [!code-csharp[SP_ApplicationPage#5](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#5)]  
   
-3.  Add the following statements to the top of the application page code file.  
+3.  應用程式頁面的程式碼檔案頂端加入下列陳述式。  
   
-     [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]  [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]  
+     [!code-vb[SP_ApplicationPage#1](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#1)]
+     [!code-csharp[SP_ApplicationPage#1](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#1)]  
   
-4.  Add the following method to the `SearchItems` class. This method iterates through all sites on the server farm and searches for items created or modified by the current user.  
+4.  將下列方法加入 `SearchItems` 類別中。 這個方法會逐一查看所有站台伺服器陣列上，搜尋由目前的使用者建立或修改項目。  
   
-     [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]  [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]  
+     [!code-vb[SP_ApplicationPage#2](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#2)]
+     [!code-csharp[SP_ApplicationPage#2](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#2)]  
   
-5.  Add the following method to the `SearchItems` class. This method displays items created or modified by the current user in the table.  
+5.  將下列方法加入 `SearchItems` 類別中。 這個方法會顯示目前的使用者資料表中所建立或修改項目。  
   
-     [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]  [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]  
+     [!code-vb[SP_ApplicationPage#3](../sharepoint/codesnippet/VisualBasic/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.vb#3)]
+     [!code-csharp[SP_ApplicationPage#3](../sharepoint/codesnippet/CSharp/sp_applicationpage/layouts/sp_applicationpage/SearchItems.aspx.cs#3)]  
   
-## <a name="testing-the-application-page"></a>Testing the Application Page  
- When you run the project, the SharePoint site opens and the application page appears.  
+## <a name="testing-the-application-page"></a>測試應用程式頁面  
+ 當您執行專案時，開啟 SharePoint 網站和應用程式 頁面隨即出現。  
   
-#### <a name="to-test-the-application-page"></a>To test the application page  
+#### <a name="to-test-the-application-page"></a>若要測試應用程式頁面  
   
-1.  In **Solution Explorer**, open the shortcut menu for the application page, and then choose **Set as Startup Item**.  
+1.  在**方案總管 中**，開啟 應用程式 頁面的捷徑功能表，然後選擇**設定為啟動項目**。  
   
-2.  Choose the F5 key.  
+2.  選擇 F5 鍵。  
   
-     The SharePoint site opens.  
+     開啟 SharePoint 網站。  
   
-3.  On the application page, choose the **Modified by me** option.  
+3.  在應用程式] 頁面上，選擇 [**修改由我**選項。  
   
-     The application page refreshes and displays all items that you've modified in all sites on the server farm.  
+     應用程式頁面重新整理，並顯示您已在伺服器陣列上的所有網站中修改的所有項目。  
   
-4.  On the application page, choose **Created by me** in the list.  
+4.  在應用程式] 頁面上，選擇 [**我所建立的**清單中。  
   
-     The application page refreshes and displays all items that you have created in all sites on the server farm.  
+     應用程式頁面重新整理，並顯示您已在伺服器陣列上的所有站台建立的所有項目。  
   
-## <a name="next-steps"></a>Next Steps  
- For more information about SharePoint application pages, see [Creating Application Pages for SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).  
+## <a name="next-steps"></a>後續步驟  
+ 如需 SharePoint 應用程式頁面的詳細資訊，請參閱[建立 SharePoint 的應用程式頁面](../sharepoint/creating-application-pages-for-sharepoint.md)。  
   
- You can learn more about how to design SharePoint page content by using the Visual Web Designer from these topics:  
+ 您可以深入了解如何使用 Visual Web 設計工具，從下列主題來設計 SharePoint 網頁內容：  
   
--   [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).  
+-   [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)。  
   
--   [Creating Reusable Controls for Web Parts or Application Pages](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md).  
+-   [為 Web 組件或應用程式頁面建立可重複使用的控制項](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。  
   
-## <a name="see-also"></a>See Also  
- [How to: Create an Application Page](../sharepoint/how-to-create-an-application-page.md)   
- [Application _layouts Page Type](http://go.microsoft.com/fwlink/?LinkID=169274)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 建立應用程式頁面](../sharepoint/how-to-create-an-application-page.md)   
+ [應用程式 _layouts 頁面中輸入](http://go.microsoft.com/fwlink/?LinkID=169274)  
   
   

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointUnboundEvent2
-helpviewer_keywords:
-- IDebugBreakpointUnboundEvent2
+f1_keywords: IDebugBreakpointUnboundEvent2
+helpviewer_keywords: IDebugBreakpointUnboundEvent2
 ms.assetid: 6b1e1863-0c64-4d85-8ab9-aface522fdea
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: e9cbfdc39915a46e31537b35c5c2b1efb8f71abf
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: aa2e9e50205a400616bf71d0e60d60f4a826bdb6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointunboundevent2"></a>IDebugBreakpointUnboundEvent2
 這個介面會告知工作階段的偵錯管理員 (SDM) 繫結的中斷點已載入的程式未繫結。  
@@ -63,11 +47,11 @@ IDebugBreakpointUnboundEvent2 : IUnknown
  當卸載 DLL 或類別的偵錯引擎時，所有中斷點繫結到該模組中的程式碼都必須從正在偵錯的程式未繫結。 `IDebugBreakpointUnboundEvent2`傳送的每個未繫結的中斷點。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

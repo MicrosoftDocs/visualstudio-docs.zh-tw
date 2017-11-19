@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugExceptionEvent2
-helpviewer_keywords:
-- IDebugExceptionEvent2 interface
+f1_keywords: IDebugExceptionEvent2
+helpviewer_keywords: IDebugExceptionEvent2 interface
 ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: c9817ca386846833ab022c5dbca3d3807bd38ef6
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 4aa1c643a07f15f361c77c618d717cc2655277c6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 偵錯引擎 (DE) 目前正在執行的程式中擲回例外狀況時，將此介面傳送至工作階段的偵錯管理員 (SDM)。  
@@ -62,11 +46,11 @@ IDebugExceptionEvent2 : IUnknown
 |[PassToDebuggee](../../../extensibility/debugger/reference/idebugexceptionevent2-passtodebuggee.md)|指定例外狀況應該傳遞給程式進行偵錯時就會繼續執行，或如果應該捨棄例外狀況。|  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="remarks"></a>備註  
  在之前傳送事件，DE 檢查是否這個例外狀況事件已指定發生第一個或第二個可能的例外狀況由先前呼叫[SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)。 如果已指定為第一個可能發生的例外狀況，`IDebugExceptionEvent2`會傳送事件至 SDM。 如果沒有，DE 可讓應用程式有機會處理此例外狀況。 如果已不提供任何例外狀況處理常式，而且例外狀況已指定為第二個可能的例外狀況，`IDebugExceptionEvent2`會傳送事件至 SDM。 否則 DE 會繼續執行程式，而且作業系統或執行階段處理的例外狀況。  

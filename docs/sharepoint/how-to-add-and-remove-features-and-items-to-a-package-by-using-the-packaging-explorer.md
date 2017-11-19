@@ -1,72 +1,72 @@
 ---
-title: "如何：使用封裝總管在套件中新增與移除功能和項目 | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.RAD.PackagingExplorer"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visual Studio 中的 SharePoint 開發, 套件"
+title: "如何： 新增與移除功能和封裝的項目使用封裝總管 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VS.SharePointTools.RAD.PackagingExplorer
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords: SharePoint development in Visual Studio, packages
 ms.assetid: 549d5848-f0c9-42c6-b7f5-bc1e626a30e6
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bafa2a4310a77f9f5a9f061e378ac05f2896d4ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：使用封裝總管在套件中新增與移除功能和項目
-  若要設定套件以部署 SharePoint 項目和功能，您可以使用「封裝總管」。  您可以調整 .wsp 檔案中的 SharePoint 專案項目和功能。  
+# <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用封裝總管在套件中新增與移除功能和項目
+  若要設定套件以部署 SharePoint 項目和功能，您可以使用 [封裝總管] 中。 您可以調整的 SharePoint 專案項目和功能.wsp 檔案內。  
   
- 除此之外，還可以使用「封裝設計工具」檢視和重新排序功能，以變更啟動順序。  如需詳細資訊，請參閱[如何：使用封裝設計工具在套件中新增與移除功能](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
+ 或者，您可以使用封裝設計工具來檢視和重新排列的功能變更的啟動順序。 如需詳細資訊，請參閱[如何： 加入和移除使用封裝設計工具的功能和封裝的項目](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)。  
   
-## 開啟封裝總管  
- 如果您的 Visual Studio 方案至少有一個 SharePoint 專案，即可透過下列程序來開啟封裝總管。  此外，當您檢視功能或封裝設計工具時，封裝總管也會自動開啟。  當您關閉所有功能和封裝設計工具之後，封裝總管也會關閉。  
+## <a name="opening-the-packaging-explorer"></a>開啟 [封裝總管]  
+ 如果您的 Visual Studio 方案中有至少一個 SharePoint 專案，您可以開啟 [封裝總管] 中，使用下列程序。 此外，[封裝總管] 會自動開啟功能或封裝的設計工具的檢視時。 關閉所有的功能和封裝設計工具之後，[封裝總管] 也會關閉。  
   
-#### 若要開啟封裝總管  
+#### <a name="to-open-the-packaging-explorer"></a>若要開啟 [封裝總管]  
   
-1.  在功能表列上選擇 \[**檢視**\]、\[**其他視窗**\]、\[**封裝總管**\]。  
+1.  在功能表列上選擇 **檢視**，**其他視窗**，**封裝總管**。  
   
-     \[**封裝總管**\] 隨即出現在 \[**工具箱**\] 中。  
+     **封裝總管**會出現在**工具箱**。  
   
-## 將功能加入至封裝  
- 您可以使用封裝總管，將新的和現有的功能加入至封裝。  
+## <a name="adding-a-feature-to-a-package"></a>將功能加入封裝  
+ 您可以使用 [封裝總管] 中，將新的和現有功能加入封裝中。  
   
-#### 若要新增 SharePoint 功能  
+#### <a name="to-add-a-sharepoint-feature"></a>若要加入 SharePoint 功能  
   
-1.  開啟 \[**封裝總管**\]，開啟專案的捷徑功能表，然後選擇 \[**新增功能**\]。  
+1.  開啟**封裝總管**，開啟專案的捷徑功能表，然後選擇**加入功能**。  
   
-#### 若要移動現有的 SharePoint 功能  
+#### <a name="to-move-an-existing-sharepoint-feature"></a>若要移動現有的 SharePoint 功能  
   
-1.  開啟 \[**封裝總管**\]，然後執行下列其中一個步驟：  
+1.  開啟**封裝總管**，然後執行下列步驟：  
   
-    -   將 \[**功能**\] 從一個專案拖曳至另一個專案。  
+    -   拖曳**功能**從某個專案到另一個專案。  
   
-    -   開啟功能的捷徑功能表，選擇 \[**剪下**\]，開啟要移動功能的專案捷徑功能表，然後選擇 \[**貼上**\]。  
+    -   開啟功能的捷徑功能表，選擇 **剪下**，開啟您想要移動功能，再選擇的專案的捷徑功能表**貼上**。  
   
     > [!NOTE]  
-    >  如果您的方案有一個以上的 SharePoint 專案，請使用此程序。  
+    >  如果您的方案中有一個以上的 SharePoint 專案，請使用此程序。  
   
-## 驗證功能或封裝  
- 您可以藉由驗證檔案，識別 SharePoint 功能和封裝中可能的問題。  警告和錯誤會顯示在 \[輸出\] 視窗和 \[錯誤清單\] 視窗中。  
+## <a name="validating-a-feature-or-package"></a>驗證功能或封裝  
+ 您可以識別潛在問題的 SharePoint 功能和封裝驗證的檔案。 警告和錯誤會顯示在輸出視窗 和 錯誤清單 視窗中。  
   
-#### 若要驗證 SharePoint 功能或封裝  
+#### <a name="to-validate-a-sharepoint-feature-or-package"></a>若要驗證的 SharePoint 功能或封裝  
   
-1.  開啟 \[**封裝總管**\]。  
+1.  開啟**封裝總管**。  
   
-2.  開啟功能或封裝的捷徑功能表，然後選擇 \[**驗證**\]。  
+2.  功能或封裝中，開啟捷徑功能表，然後選擇**驗證**。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

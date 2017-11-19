@@ -1,77 +1,79 @@
 ---
-title: "IDebugComPlusSymbolProvider::LoadSymbols | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "LoadSymbols"
-  - "IDebugComPlusSymbolProvider::LoadSymbols"
+title: "IDebugComPlusSymbolProvider::LoadSymbols |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- LoadSymbols
+- IDebugComPlusSymbolProvider::LoadSymbols
 ms.assetid: 3499680d-0b9a-4f20-8432-c89a41b29b87
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a70d09160feb2101edec6ae4f1ff24a1cc8c435b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::LoadSymbols
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-載入指定的偵錯符號，在記憶體中。  
+# <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
+載入記憶體中指定的偵錯符號。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbols(  
-   ULONG32   ulAppDomainID,  
-   GUID      guidModule,  
-   ULONGLONG baseAddress,  
-   IUnknown* pUnkMetadataImport,  
-   BSTR      bstrModuleName,  
-   BSTR      bstrSymSearchPath  
+   ULONG32   ulAppDomainID,  
+   GUID      guidModule,  
+   ULONGLONG baseAddress,  
+   IUnknown* pUnkMetadataImport,  
+   BSTR      bstrModuleName,  
+   BSTR      bstrSymSearchPath  
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbols(  
-   uint   ulAppDomainID,  
-   Guid   guidModule,  
-   ulong  baseAddress,  
-   object pUnkMetadataImport,  
-   string bstrModuleName,  
-   string bstrSymSearchPath  
+   uint   ulAppDomainID,  
+   Guid   guidModule,  
+   ulong  baseAddress,  
+   object pUnkMetadataImport,  
+   string bstrModuleName,  
+   string bstrSymSearchPath  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ulAppDomainID`  
- \[in\]應用程式定義域的識別項。  
+ [in]應用程式定義域的識別項。  
   
  `guidModule`  
- \[in\]Mondule 唯一識別項。  
+ [in]Mondule 唯一識別項。  
   
  `baseAddress`  
- \[in\]基底記憶體位址。  
+ [in]基底的記憶體位址。  
   
  `pUnkMetadataImport`  
- \[in\]包含符號的中繼資料的物件。  
+ [in]物件，其中包含的符號中繼資料。  
   
  `bstrModuleName`  
- \[in\]模組的名稱。  
+ [in]模組的名稱。  
   
  `bstrSymSearchPath`  
- \[in\]若要搜尋符號檔案的路徑。  
+ [in]搜尋符號檔案的路徑。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbols(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -84,5 +86,5 @@ HRESULT CDebugSymbolProvider::LoadSymbols(
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

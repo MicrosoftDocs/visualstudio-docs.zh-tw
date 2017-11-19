@@ -1,58 +1,58 @@
 ---
-title: "IDebugDocumentText2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentText2"
-helpviewer_keywords: 
-  - "IDebugDocumentText2 介面"
+title: "IDebugDocumentText2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentText2
+helpviewer_keywords: IDebugDocumentText2 interface
 ms.assetid: e85f50a3-211c-4220-a9f4-789950ba2782
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ebcb90f570ad29f38eabe8712928b484fd6961c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentText2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個介面表示文字文件。  
+# <a name="idebugdocumenttext2"></a>IDebugDocumentText2
+此介面代表文字文件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
-IDebugDocumentText2 : IDebugDocument2  
+IDebugDocumentText2 : IDebugDocument2  
 ```  
   
-## 實作器注意事項  
- 以文字形式提供所需的原始程式碼時，偵錯引擎 \(DE\) 會實作這個介面。  因為如果將 DE 實作，這是最常見的情況下， [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面，它也應該實作`IDebugDocumentText2`介面。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 它必須提供的原始程式碼是以文字格式時，偵錯引擎 (DE) 會實作這個介面。 由於這是最常見的情況下，如果 DE 實作[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)介面，它也應該實作`IDebugDocumentText2`介面。  
   
-## 呼叫者的備忘稿  
- 使用`QueryInterface`方法，以取得這個介面，從`IDebugDocument2`介面。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 使用`QueryInterface`方法，以取得從這個介面`IDebugDocument2`介面。  
   
-## 方法 Vtable 順序  
- 除了在方法`IDebugDocument2`介面，這個介面會實作下列方法：  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
+ 除了上`IDebugDocument2`介面，這個介面會實作下列方法：  
   
-|方法|描述|  
-|--------|--------|  
-|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|擷取文件中的該位置的文字大小。|  
-|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|從指定的位置，文件中擷取的文字。|  
+|方法|說明|  
+|------------|-----------------|  
+|[GetSize](../../../extensibility/debugger/reference/idebugdocumenttext2-getsize.md)|擷取文件中的此位置的文字的大小。|  
+|[GetText](../../../extensibility/debugger/reference/idebugdocumenttext2-gettext.md)|從指定的位置，在文件中擷取的文字。|  
   
-## 備註  
- 實作這個介面的物件也必須實作<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面，哪些材料<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>之介面[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)物件。  
+## <a name="remarks"></a>備註  
+ 實作這個介面的物件，也必須實作<xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>介面，提供哪些<xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>介面[IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)物件。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)   
  [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

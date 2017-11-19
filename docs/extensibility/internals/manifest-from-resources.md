@@ -1,88 +1,163 @@
 ---
-title: "從資源資訊清單 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "從資源資訊清單 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 297d9535a8e9655ed87230d4f947faeb29e08487
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 從資源資訊清單
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-從資源工具資訊清單是根據影像資源 \(.png 或.xaml 檔案\) 的清單，並產生.imagemanifest 檔，好讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可以用來將影像加入至現有的.imagemanifest。 這項工具可用於加入至 Visual Studio 擴充功能的映像支援高 DPI 和主題設定。 應該包含在產生的.imagemanifest 檔案，而且部署 Visual Studio 擴充功能 \(.vsix\) 的一部分。  
+# <a name="manifest-from-resources"></a>從資源資訊清單
+從資源工具資訊清單是根據影像資源 （.png 或.xaml 檔案） 的清單，並產生.imagemanifest 檔，好讓這些映像來搭配 Visual Studio 映像服務的主控台應用程式。 此外，此工具可以用來將影像加入至現有的.imagemanifest。 此工具可用於加入至 Visual Studio 擴充功能的映像支援的高 DPI 與主題。 產生的.imagemanifest 檔案應包含在和 Visual Studio 擴充功能 (.vsix) 的一部分部署。  
   
-## 如何使用工具  
+## <a name="how-to-use-the-tool"></a>如何使用工具  
  **語法**  
   
- ManifestFromResources \/resources: \< Dir1 \>; \< Img1 \> \/assembly: \< AssemblyName \>\< 選擇性引數 \>  
+ ManifestFromResources /resources:\<Dir1 >;\<Img1 > /assembly:\<AssemblyName >\<選擇性引數 >  
   
  **引數**  
   
 ||||  
 |-|-|-|  
 |**參數名稱**|**備註**|**必要或選用**|  
-|\/resources|映像或目錄的分號分隔清單。 這份清單一律應包含會在資訊清單中的映像的完整清單。 如果只指定的部分清單，不包含的項目將會遺失。<br /><br /> 如果指定的資源檔案是一個影像區，工具會分成它不同的映像然後再將每個 subimage 新增至資訊清單。<br /><br /> 如果影像是.png 檔案，我們建議，使得此工具可以填入適當的映像的屬性，格式如下的名稱: \< 名稱 \>。 \< 寬度 \>。 \< 高度 \>.png。|必要項|  
-|\/assembly|Managed 組件 \(不包括副檔名\) 或執行階段原生組件的路徑裝載 \(相對於在資訊清單的執行階段的位置\) 的資源名稱。|必要項|  
-|\/manifest|若要提供產生的.imagemanifest 檔案的名稱。 這也可以包含不同的位置中建立檔案的絕對或相對路徑。 預設名稱會符合組件名稱。<br /><br /> 預設值: \< 目前的目錄 \> \\ \< 組件 \>.imagemanifest|選擇性|  
-|\/guidName|要提供給所有產生的資訊清單中的映像的 GUID 符號名稱。<br /><br /> 預設: AssetsGuid|選擇性|  
-|\/rootPath|要建立受管理的資源 Uri 之前去除根路徑。 \(這個旗標是協助工具位置取得相對 URI 的路徑錯誤，導致無法載入資源的情況下\)。<br /><br /> 預設值: \< 目前的目錄 \>|選擇性|  
-|\/recursive|設定這個旗標告訴工具要以遞迴方式搜尋 \/resources 引數中的任何目錄。 省略此旗標將會導致頂層\-級專用搜尋的目錄。|選擇性|  
-|\/isNative|當組件引數為原生組件的路徑，請設定此旗標。 當組件引數是 managed 組件的名稱時，請略過這個旗標。 \(請參閱附註\] 區段，如需有關這個旗標\)。|選擇性|  
-|\/newGuids|設定這個旗標會告訴工具，以建立新的映像 GUID 符號，而不是合併現有的資訊清單中的一個值。|選擇性|  
-|\/newIds|設定這個旗標，告訴工具来建立新的 ID 符號值，而不是將值從現有的資訊清單合併的每個映像。|選擇性|  
-|\/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|選擇性|  
-|\/?|列印說明資訊。|選擇性|  
-|\/help|列印說明資訊。|選擇性|  
+|/resources|以分號分隔清單的映像檔或目錄。 這份清單一律應包含將會在資訊清單中的映像的完整清單。 如果只指定的部分清單，未包含的項目將會遺失。<br /><br /> 如果影像區域指定的資源檔，此工具將分割它成個別的映像加入資訊清單中的每個 subimage 之前先。<br /><br /> 如果影像是.png 檔案，我們建議，讓此工具可以填滿影像的權限屬性，格式如下的名稱：\<名稱 >。\<寬度 >。\<高度 >.png。|必要|  
+|/assembly 選項|（不含副檔名） 的 managed 組件或裝載的資源 （相對於在資訊清單的執行階段位置） 的原生組件的執行階段路徑的名稱。|必要|  
+|/manifest|若要提供產生的.imagemanifest 檔案的名稱。 這也可以包含在不同的位置建立檔案的絕對或相對路徑。 預設名稱比對組件名稱。<br /><br /> 預設值：\<目前的目錄 >\\< 組件\>.imagemanifest|Optional|  
+|/guidName|提供給所有產生的資訊清單中的映像之 GUID 符號的名稱。<br /><br /> 預設： AssetsGuid|Optional|  
+|/rootPath|需要去除之前建立受管理的資源 Uri 根路徑。 （這個旗標是協助工具位置取得相對 URI 路徑錯誤，導致無法載入資源的情況下）。<br /><br /> 預設值：\<目前的目錄 >|Optional|  
+|/recursive|設定這個旗標會告訴工具以遞迴方式搜尋 /resources 引數中的任何目錄。 省略這個旗標將會導致 top-級僅搜尋的目錄。|Optional|  
+|/isNative|當組件引數為原生組件的路徑，請設定此旗標。 Managed 組件名稱的組件引數時，請省略這個旗標。 （請參閱附註 > 一節，如需有關這個旗標）。|Optional|  
+|/newGuids|設定這個旗標會告訴工具，以建立新的映像 GUID 符號，而不是合併現有的資訊清單中的一個值。|Optional|  
+|/newIds|設定這個旗標會告訴工具建立的每個映像，而不是合併現有的資訊清單中值的新識別碼符號值。|Optional|  
+|/noLogo|設定這個旗標，就會停止列印的產品和著作權資訊。|Optional|  
+|/?|列印說明資訊。|Optional|  
+|/help|列印說明資訊。|Optional|  
   
  **範例**  
   
--   ManifestFromResources \/resources:D:\\Images \/assembly:My.Assembly.Name \/isNative  
+-   ManifestFromResources /resources:D:\Images /assembly:My.Assembly.Name /isNative  
   
--   ManifestFromResources \/resources:D:\\Images\\Image1.png;D:\\Images\\Image1.xaml \/assembly:My.Assembly.Name \/manifest:MyImageManifest.imagemanifest  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources \/resources:D:\\Images\\Image1.png;D:\\Images\\Image1.xaml \/assembly:My.Assembly.Name \/guidName:MyImages \/newGuids \/newIds  
+-   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
-## 備註  
+## <a name="notes"></a>注意  
   
--   此工具僅支援.png 和.xaml 檔案。 將忽略任何其他映像或檔案類型。 所有不支援的類型剖析資源時，會產生警告。 如果不支援映像會找到此工具完成時的剖析資源時，將會產生錯誤  
+-   此工具僅支援.png 和.xaml 檔案。 將忽略任何其他映像或檔案類型。 所有不受支援的類型，剖析資源時，會產生警告。 如果不支援映像會找到此工具完成時的剖析資源時，將會產生錯誤  
   
--   遵循建議的格式為.png 影像，此工具將大小\/維度值設為.png 格式所指定的大小，即使其不同於映像的實際大小。  
+-   遵循建議的格式為.png 影像，此工具將會設定.png 大小/維度值的格式指定的大小，即使它不同於映像的實際大小。  
   
--   寬度\/高度格式可以省略.png 映像，但此工具會讀取映像的實際寬度\/高度，並使用這些映像的大小\/維度值。  
+-   寬度/高度格式可以省略.png 映像，但此工具會讀取映像的實際寬度/高度，並使用這些映像的大小/維度值。  
   
--   針對相同.imagemanifest 多次相同的影像區域上執行此工具將會導致重複的資訊清單項目，因為工具會嘗試將影像區域分割成獨立的映像，並將它們新增至現有的資訊清單。  
+-   針對相同.imagemanifest 多次相同的影像區域上執行此工具會導致重複的資訊清單項目，因為此工具會嘗試將影像區域分割成獨立映像並將它們新增至現有的資訊清單。  
   
--   合併 \(省略 \/newGuids 或 \/newIds\) 應該只有執行工具所產生的資訊清單中。 自訂或透過其他方式產生資訊清單可能不正確合併。  
+-   合併 （省略 /newGuids 或 /newIds），才應該工具所產生資訊清單。 已自訂或透過其他方式產生資訊清單可能不正確合併。  
   
--   所產生的原生組件資訊清單可能需要透過手動編輯產生進行比對的資源 Id 從原生組件的.rc 檔的識別碼符號之後。  
+-   所產生的原生組件資訊清單可能需要透過手動編輯產生若要讓比對的資源 Id 從原生組件的.rc 檔的識別碼符號之後。  
   
-## 範例輸出  
- **簡單的映像的資訊清單**  
+## <a name="sample-output"></a>範例輸出  
+ **簡單的映像資訊清單**  
   
- 映像資訊清單會類似於此.xml 檔案:  
+ 影像資訊清單將會類似於這個.xml 檔案：  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15197 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/Images" /> <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" /> <ID Name="MyImage" Value="0" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImage)"> <Source Uri="$(Resources)/Xaml/MyImage.xaml" /> <Source Uri="$(Resources)/Png/MyImage.16.16.png"> <Size Value="16" /> </Source> </Image> </Images> <ImageLists /> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15197 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/Images" />  
+    <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" />  
+    <ID Name="MyImage" Value="0" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage)">  
+      <Source Uri="$(Resources)/Xaml/MyImage.xaml" />  
+      <Source Uri="$(Resources)/Png/MyImage.16.16.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists />  
+</ImageManifest>  
 ```  
   
  **影像區域的影像資訊清單**  
   
- 影像區域的影像資訊清單會類似於此.xml 檔案:  
+ 影像區域的影像資訊清單將會類似於這個.xml 檔案：  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15197 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/ImageStrip" /> <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" /> <ID Name="MyImageStrip_0" Value="1" /> <ID Name="MyImageStrip_1" Value="2" /> <ID Name="MyImageStrip" Value="3" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)"> <Source Uri="$(Resources)/MyImageStrip_0.png"> <Size Value="16" /> </Source> </Image> <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)"> <Source Uri="$(Resources)/MyImageStrip_1.png"> <Size Value="16" /> </Source> </Image> </Images> <ImageLists> <ImageList Guid="$(AssetsGuid)" ID="$(MyImageStrip)"> <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)" /> <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)" /> </ImageList> </ImageLists> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15197 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="/My.Assembly.Name;Component/Resources/ImageStrip" />  
+    <Guid Name="AssetsGuid" Value="{fb41b7ef-6587-480c-aa27-5b559d42cfc9}" />  
+    <ID Name="MyImageStrip_0" Value="1" />  
+    <ID Name="MyImageStrip_1" Value="2" />  
+    <ID Name="MyImageStrip" Value="3" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)">  
+      <Source Uri="$(Resources)/MyImageStrip_0.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)">  
+      <Source Uri="$(Resources)/MyImageStrip_1.png">  
+        <Size Value="16" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists>  
+    <ImageList Guid="$(AssetsGuid)" ID="$(MyImageStrip)">  
+      <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_0)" />  
+      <ContainedImage Guid="$(AssetsGuid)" ID="$(MyImageStrip_1)" />  
+    </ImageList>  
+  </ImageLists>  
+</ImageManifest>  
 ```  
   
- **原生組件影像資源的影像資訊清單**  
+ **原生組件映像資源的影像資訊清單**  
   
- 原生映像的映像資訊清單會類似於此.xml 檔案:  
+ 原生映像的映像資訊清單將會類似於這個.xml 檔案：  
   
 ```xml  
-<?xml version="1.0" encoding="utf-8"?> <!-- This file was generated by the ManifestFromResources tool.--> <!-- Version: 14.0.15198 --> <ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014"> <Symbols> <String Name="Resources" Value="..\Assembly\Folder\My.Assembly.Name" /> <Guid Name="AssetsGuid" Value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}" /> <ID Name="MyImage1" Value="0" /> <ID Name="MyImage2" Value="1" /> </Symbols> <Images> <Image Guid="$(AssetsGuid)" ID="$(MyImage1)"> <Source Uri="$(Resources)"> <Size Value="16" /> <NativeResource ID="$(MyImage1)" Type="PNG" /> </Source> </Image> <Image Guid="$(AssetsGuid)" ID="$(MyImage2)"> <Source Uri="$(Resources)"> <Size Value="16" /> <NativeResource ID="$(MyImage2)" Type="PNG" /> </Source> </Image> </Images> <ImageLists /> </ImageManifest>  
+<?xml version="1.0" encoding="utf-8"?>  
+<!-- This file was generated by the ManifestFromResources tool.-->  
+<!-- Version: 14.0.15198 -->  
+<ImageManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/VisualStudio/ImageManifestSchema/2014">  
+  <Symbols>  
+    <String Name="Resources" Value="..\Assembly\Folder\My.Assembly.Name" />  
+    <Guid Name="AssetsGuid" Value="{442d8739-efde-46a4-8f29-e3a1e5e7f8b4}" />  
+    <ID Name="MyImage1" Value="0" />  
+    <ID Name="MyImage2" Value="1" />  
+  </Symbols>  
+  <Images>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage1)">  
+      <Source Uri="$(Resources)">  
+        <Size Value="16" />  
+        <NativeResource ID="$(MyImage1)" Type="PNG" />  
+      </Source>  
+    </Image>  
+    <Image Guid="$(AssetsGuid)" ID="$(MyImage2)">  
+      <Source Uri="$(Resources)">  
+        <Size Value="16" />  
+        <NativeResource ID="$(MyImage2)" Type="PNG" />  
+      </Source>  
+    </Image>  
+  </Images>  
+  <ImageLists />  
+</ImageManifest>  
 ```

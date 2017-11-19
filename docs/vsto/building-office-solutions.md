@@ -1,74 +1,79 @@
 ---
-title: "建置 Office 方案"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "偵錯 [Visual Studio 中的 Office 程式開發]"
-  - "偵錯 Visual Studio 中的 Office 應用程式"
-  - "解決方案 [Visual Studio 中的 Office 程式開發]，偵錯"
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發]，偵錯"
-  - "應用程式部署 [Visual Studio 中的 Office 程式開發]，建置"
-  - "Office 應用程式 [Visual Studio 中的 Office 程式開發]，建置"
-  - "專案 [Visual Studio 中的 Office 程式開發]，偵錯"
-  - "Office 解決方案 [Visual Studio 中的 Office 程式開發]，建置"
-  - "解決方案 [Visual Studio 中的 Office 程式開發]，建置"
-  - "Office 專案 [Visual Studio 中的 Office 程式開發]，偵錯"
-  - "專案 [Visual Studio 中的 Office 程式開發]，建置"
-  - "組建 [Visual Studio 中的 Office 程式開發]"
-  - "Office 專案 [Visual Studio 中的 Office 程式開發]，建置"
-  - "應用程式部署 [Visual Studio 中的 Office 程式開發]，偵錯"
-  - "Office 解決方案 [Visual Studio 中的 Office 程式開發]，偵錯"
+title: "建置 Office 解決方案 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- debugging [Office development in Visual Studio]
+- debugging Office applications in Visual Studio
+- solutions [Office development in Visual Studio], debugging
+- Office applications [Office development in Visual Studio], debugging
+- application development [Office development in Visual Studio], building
+- Office applications [Office development in Visual Studio], building
+- projects [Office development in Visual Studio], debugging
+- Office solutions [Office development in Visual Studio], building
+- solutions [Office development in Visual Studio], building
+- Office projects [Office development in Visual Studio], debugging
+- projects [Office development in Visual Studio], building
+- builds [Office development in Visual Studio]
+- Office projects [Office development in Visual Studio], building
+- application development [Office development in Visual Studio], debugging
+- Office solutions [Office development in Visual Studio], debugging
 ms.assetid: c4b79ea8-df70-4a72-b76e-26e337d65727
-caps.latest.revision: 39
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "39"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: a3df5fca6d41070b09ceb8b8be9b05212b7caa69
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 建置 Office 方案
-  一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱 [Compiling and Building in Visual Studio](../ide/compiling-and-building-in-visual-studio.md)。  
+# <a name="building-office-solutions"></a>建置 Office 方案
+  一般而言，建置和偵錯 Office 專案，和在 Visual Studio 中建置和偵錯其他類型的專案是相同的，例如 Windows Forms。 本節主題會說明兩者之間的差異。 如需如何建置應用程式的一般資訊，請參閱[編譯和 Visual Studio 中建置](/visualstudio/ide/compiling-and-building-in-visual-studio)。  
   
-## Office 專案的專案輸出  
- Office 專案的輸出位置是 *projectname*\\bin\\release 或 *projectname*\\bin\\debug。 無法建立到部署目錄。  
+> [!NOTE]  
+>  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
   
-### 文件層級專案  
+## <a name="project-output-for-office-projects"></a>Office 專案的專案輸出  
+ Office 專案的輸出位置是 *projectname*\bin\release 或 *projectname*\bin\debug。 無法建立到部署目錄。  
+  
+### <a name="document-level-projects"></a>文件層級專案  
  當您建置文件層級專案時，專案輸出會包含下列項目：  
   
 -   一份專案文件的複本。  
   
--   其 \[複製到本機\] 屬性設定為 **true** 的專案組件和所有參考組件。  
+-   其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。  
   
--   副檔名為 .manifest 的應用程式資訊清單。 如需詳細資訊，請參閱[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+-   副檔名為 .manifest 的應用程式資訊清單。 如需詳細資訊，請參閱 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)。  
   
--   副檔名為 .vsto 的部署資訊清單。 如需詳細資訊，請參閱[Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。  
+-   副檔名為 .vsto 的部署資訊清單。 如需詳細資訊，請參閱 [Deployment Manifests for Office Solutions](../vsto/deployment-manifests-for-office-solutions.md)。  
   
--   程式資料庫 \(PDB\) 檔。  
+-   程式資料庫 (PDB) 檔。  
   
 > [!NOTE]  
->  文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 \[信任位置\] 清單中加入完整的路徑。 如需詳細資訊，請參閱 [保護 Office 方案](../vsto/securing-office-solutions.md) 的＜授與信任給文件＞一節。  
+>  文件層級解決方案如果建立在遠端位置而不是本機電腦，請在應用程式信任中心的 [信任位置] 清單中加入完整的路徑。 如需詳細資訊，請參閱 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
-### 應用程式層級專案  
+### <a name="application-level-projects"></a>應用程式層級專案  
  當您建置 VSTO 增益集專案時，專案輸出會包含下列項目：  
   
--   其 \[複製到本機\] 屬性設定為 **true** 的專案組件和所有參考組件。  
+-   其 [複製到本機]  屬性設定為 **true**的專案組件和所有參考組件。  
   
--   副檔名為 .manifest 的應用程式資訊清單。 如需詳細資訊，請參閱[Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)。  
+-   副檔名為 .manifest 的應用程式資訊清單。 如需詳細資訊，請參閱 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)。  
   
--   副檔名為 .vsto 的部署資訊清單。 如需詳細資訊，請參閱[Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)。  
+-   副檔名為 .vsto 的部署資訊清單。 如需詳細資訊，請參閱 [Deployment Manifests for Office Solutions](../vsto/deployment-manifests-for-office-solutions.md)。  
   
--   專案組件的程式資料庫 \(PDB\) 檔案。  
+-   專案組件的程式資料庫 (PDB) 檔案。  
   
- VSTO 增益集專案的建置程序也會在需要載入 VSTO 增益集的開發電腦上建立一組登錄項目。 如需詳細資訊，請參閱[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。  
+ VSTO 增益集專案的建置程序也會在需要載入 VSTO 增益集的開發電腦上建立一組登錄項目。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。  
   
  如果您建置了包含表單區域的 Outlook VSTO 增益集專案，建置程序會在登錄中加入以下額外的資訊：  
   
@@ -78,35 +83,35 @@ caps.handback.revision: 35
   
  Outlook 需要這項資訊載入表單區域。  
   
-## 參考的組件  
- 您可以參考您「建置 Office 解決方案」專案的組件 \(包括類別庫專案\)。 每個參考的組件都有稱為 \[複製到本機\] 的屬性。 \[複製到本機\] 指出組件是否要複製到輸出目錄。 根據預設，此屬性設定為 **true**。 每個將 \[複製到本機\] 設為 **true** 的參考組件都會複製到輸出目錄。  
+## <a name="referenced-assemblies"></a>參考的組件  
+ 您可以參考您「建置 Office 解決方案」專案的組件 (包括類別庫專案)。 每個參考的組件都有稱為 [複製到本機] 的屬性。 [複製到本機] 指出組件是否要複製到輸出目錄。 根據預設，此屬性設定為 **true**。 每個將 [複製到本機]  設為 **true** 的參考組件都會複製到輸出目錄。  
   
-## 建置程序期間的安全性  
+## <a name="security-during-the-build-process"></a>建置程序期間的安全性  
  Visual Studio 會自動設定開發電腦的安全性設定，在建置程序期間將信任授與解決方案。 這讓解決方案在被偵錯時依然執行。  
   
  Office 專案使用憑證來驗證發行者。 Visual Studio 會自動建立暫時憑證以識別 Office 解決方案，並設定開發電腦信任暫時的憑證。  
   
- 如需詳細資訊，請參閱[保護 Office 方案](../vsto/securing-office-solutions.md)。  
+ 如需詳細資訊，請參閱 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
-### 網路專案  
- 如果組件或文件位置位在網路共用上，則本機 \(使用者層級\) 的安全性原則更新將不足以允許解決方案執行。 系統管理員必須先將電腦層級的完全信任授與網路共用上的組件和文件，解決方案才會執行。 如需如何設定安全性原則的詳細資訊，請參閱 [保護 Office 方案](../vsto/securing-office-solutions.md)。  
+### <a name="network-projects"></a>網路專案  
+ 如果組件或文件位置位在網路共用上，則本機 (使用者層級) 的安全性原則更新將不足以允許解決方案執行。 系統管理員必須先將電腦層級的完全信任授與網路共用上的組件和文件，解決方案才會執行。 如需如何設定安全性原則的詳細資訊，請參閱 [Securing Office Solutions](../vsto/securing-office-solutions.md)。  
   
- 針對文件層級專案，您也必須在 Office 的信任資料夾清單中加入文件的完整路徑位置。 如需詳細資訊，請參閱[授與信任給文件](../vsto/granting-trust-to-documents.md)。  
+ 針對文件層級專案，您也必須在 Office 的信任資料夾清單中加入文件的完整路徑位置。 如需詳細資訊，請參閱 [Granting Trust to Documents](../vsto/granting-trust-to-documents.md)。  
   
-## 變更平台目標  
- Office 專案的平台目標預設是**任何 CPU**。 通常不應該變更這項設定。 使用平台目標設定為**任何 CPU** 所建置的 Office 解決方案，可在 32 位元和 64 位元版本的 Microsoft  [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 中執行。  
+## <a name="changing-the-platform-target"></a>變更平台目標  
+ Office 專案的平台目標預設是 **任何 CPU**。 通常不應該變更這項設定。 使用平台目標設定為 **任何 CPU** 所建置的 Office 解決方案，可在 32 位元和 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]中執行。  
   
- 只有建立只能在 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 中執行的解決方案時，才將平台目標設定為 x64，而這種解決方案需要原生的 64 位元應用程式開發介面。 如需變更平台目標設定的詳細資訊，請參閱 [NIB：如何：為特定的 CPU 類型最佳化應用程式](http://msdn.microsoft.com/zh-tw/294a75d2-4279-4b72-8298-2bea05be907a)。  
+ 只有建立只能在 64 位元版本的 Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 或 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]中執行的解決方案時，才將平台目標設定為 x64，而這種解決方案需要原生的 64 位元應用程式開發介面。 如需變更平台目標設定的詳細資訊，請參閱[How to： 設定專案的目標平台](../ide/how-to-configure-projects-to-target-platforms.md)。  
   
  如果平台目標設定為 x64，解決方案就不能在 32 位元版本的 Windows 或 Office 中執行。 X64 平台目標需要解決方案在 64 位元處理序中執行。  
   
-## 使用 \[清除\] 命令  
- 若要從開發電腦中移除已建置的專案檔案，您可以使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 之 \[建置\] 功能表的 \[清除\] 命令。 \[清除\] 命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，\[清除\] 命令也會移除建置程序所建立的登錄項目。  
+## <a name="using-the-clean-command"></a>使用 [清除] 命令  
+ 若要從開發電腦中移除已建置的專案檔案，您可以使用 **之 [建置]****功能表的 [清除]**[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]命令。 [清除]  命令會刪除建置輸出位置的所有檔案。 至於應用程式層級專案，[清除]  命令也會移除建置程序所建立的登錄項目。  
   
-## 相關主題  
+## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
-|--------|--------|  
+|標題|說明|  
+|-----------|-----------------|  
 |[偵錯 Office 專案](../vsto/debugging-office-projects.md)|列出偵錯 Office 專案的相關問題。|  
 |[逐步解說：建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|示範如何建立 Excel 的基本文件層級自訂。|  
 |[如何：重新啟用已停用的 VSTO 增益集](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|描述如何重新啟用已強制或非強制停用的 VSTO 增益集。|  

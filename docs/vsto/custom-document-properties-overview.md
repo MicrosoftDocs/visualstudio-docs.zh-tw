@@ -1,59 +1,61 @@
 ---
-title: "自訂文件屬性概觀"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "_AssemblyLocation 屬性"
-  - "_AssemblyName 屬性"
-  - "自訂文件屬性"
-  - "文件層級自訂 [Visual Studio 中的 Office 程式開發], 自訂屬性"
-  - "文件 [Visual Studio 中的 Office 程式開發], 自訂屬性"
-  - "Office 文件 [Visual Studio 中的 Office 程式開發], 自訂屬性"
+title: "自訂文件屬性概觀 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- documents [Office development in Visual Studio], custom properties
+- custom document properties
+- document-level customizations [Office development in Visual Studio], custom properties
+- Office documents [Office development in Visual Studio], custom properties
+- _AssemblyLocation property
+- _AssemblyName property
 ms.assetid: 9a215904-b760-4a49-93e8-a1a708ce0526
-caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ee19d6fd6bd84f344a205b0e508abbede63cdebb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 自訂文件屬性概觀
-  當您建置文件層級專案時，Visual Studio 會在專案的文件中加入兩個自訂屬性：\_AssemblyLocation 和 \_AssemblyName。  當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。  如果這些屬性存在文件中，則應用程式會載入 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 以啟動自訂。  如需詳細資訊，請參閱[Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)。  
+# <a name="custom-document-properties-overview"></a>Custom Document Properties Overview
+  當您建置文件層級專案時，Visual Studio 會將兩個自訂屬性加入至專案中的文件： _AssemblyLocation 和 _AssemblyName。 當使用者開啟文件時，Microsoft Office 應用程式會檢查這些自訂文件屬性。 如果它們存在文件中，應用程式載入[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，以便啟動自訂。 如需詳細資訊，請參閱[Office 方案的架構在 Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## \_AssemblyName  
- 這個屬性包含 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的 Office 方案載入器元件中介面的 CLSID。  CLSID 值為 4E3C66D5\-58D4\-491E\-A7D4\-64AF99AF6E8B。  您不得變更此值。  
+## <a name="assemblyname"></a>_AssemblyName  
+ 此屬性包含的介面中的 Office 方案載入器元件的 CLSID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]。 CLSID 值是 4E3C66D5-58 D 4-491E-A7D4-64AF99AF6E8B。 您應該永遠不會變更此值。  
   
-## \_AssemblyLocation  
- 這個屬性包含了可提供自訂之部署資訊清單相關詳細資訊的字串。  如需資訊清單的詳細資訊，請參閱[Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)。  
+## <a name="assemblylocation"></a>_AssemblyLocation  
+ 此屬性包含自訂提供詳細的部署資訊清單的字串。 如需詳細資訊清單的詳細資訊，請參閱[應用程式和部署資訊清單在 Office 方案中](../vsto/application-and-deployment-manifests-in-office-solutions.md)。  
   
- 根據方案的部署方式而定，\_AssemblyLocation 屬性值可以有不同的格式：  
+ The_AssemblyLocation 屬性值可以有不同的格式，方案部署的方式：  
   
--   如果發行的方案要從網站、UNC 路徑或 CD 或 USB 磁碟機進行安裝，則 \_AssemblyLocation 屬性的格式為 *DeploymentManifestPath*|*SolutionID*。  以下字串即為一個範例：  
+-   如果從網站、 UNC 路徑或 CD 或 USB 磁碟機上安裝發行方案，則 _AssemblyLocation 屬性具有格式*DeploymentManifestPath*|*方案識別碼已*。 下列字串是一個範例：  
   
-     file:\/\/deployserver\/MyShare\/ExcelWorkbook1.vsto|74744e4b\-e4d6\-41eb\-84f7\-ad20346fe2d9  
+     file://deployserver/MyShare/ExcelWorkbook1.vsto | 74744e4b-e4d6-41eb-84f7-ad20346fe2d9  
   
--   如果您正從 Visual Studio 執行方案或進行偵錯，則 \_AssemblyLocation 屬性的格式為 *DeploymentManifestName*|*SolutionID*|vstolocal。  以下字串即為一個範例：  
+-   如果您要執行，或從 Visual Studio 方案進行偵錯，_AssemblyLocation 屬性具有格式*DeploymentManifestName*|*方案識別碼已*| vstolocal。 下列字串是一個範例：  
   
-     ExcelWorkbook1.vsto|74744e4b\-e4d6\-41eb\-84f7\-ad20346fe2d9|vstolocal  
+     ExcelWorkbook1.vsto|74744e4b-e4d6-41eb-84f7-ad20346fe2d9 | vstolocal  
   
- *SolutionID* 是 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 用來識別方案的 GUID。  會在您建置專案時， *SolutionID* 自動產生。**vstolocal** 詞彙表示對 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 詞彙表示應從與文件相同的資料夾載入組件的。  
+ *方案識別碼已*是 GUID，[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]用來識別解決方案。 *方案識別碼已*會建置專案時自動產生。 **Vstolocal**詞彙來表示[!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]從相同的資料夾和文件應該在載入組件。  
   
-## 請參閱  
- [Office 方案在 Visual Studio 中的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
+## <a name="see-also"></a>另請參閱  
+ [在 Visual Studio 中的 Office 方案的架構](../vsto/architecture-of-office-solutions-in-visual-studio.md)   
  [文件層級自訂的架構](../vsto/architecture-of-document-level-customizations.md)   
- [Office 方案中的應用程式和部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
- [HOW TO：使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/zh-tw/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
+ [應用程式和 Office 方案中的部署資訊清單](../vsto/application-and-deployment-manifests-in-office-solutions.md)   
+ [如何： 使用 ClickOnce 發行 Office 方案](http://msdn.microsoft.com/en-us/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)   
  [如何：建立及修改自訂文件屬性](../vsto/how-to-create-and-modify-custom-document-properties.md)  
   
   

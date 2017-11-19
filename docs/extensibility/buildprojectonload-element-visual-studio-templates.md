@@ -1,55 +1,61 @@
 ---
-title: "BuildProjectOnload 項目 (Visual Studio 樣板) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "BuildProjectOnload 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: b07d3074-0fc9-45e1-baf5-da6bd4f3f1c0
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 362dd868e6f9c273e9495295a453d8da4e2183cd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# BuildProjectOnload 項目 (Visual Studio 樣板)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-只建置新專案中，您建立並加入至方案。  整個方案不會建立。  
+# <a name="buildprojectonload-element-visual-studio-templates"></a>BuildProjectOnload 項目 (Visual Studio 樣板)
+當您建立並將其加入至方案，請建置新的專案。 不會建置整個方案。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<BuildProjectOnLoad >  
+  
+## <a name="syntax"></a>語法  
   
 ```vb  
 <BuildProjectOnLoad> true/false </BuildOnLoad>  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|TemplateData|將範本分類並定義如何出現在 \[**新增專案**\] 和 \[**新增項目**\] 對話方塊。|  
+|項目|描述|  
+|-------------|-----------------|  
+|TemplateData|將範本分類，以及定義它如何出現在同時**新專案**和**加入新項目**對話方塊。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 當從範本建立時，文字是否必須是 `true` 或 `false` 表示只會建立新的專案。  
+ 此文字必須`true`或`false`用以表示是否要從範本建立時建立新的專案。  
   
-## 備註  
- `BuildProjectOnLoad` 是選擇性項目。  預設值是 `false`。  
+## <a name="remarks"></a>備註  
+ `BuildProjectOnLoad` 是選擇性項目。 預設值是 `false`。  
   
-## 範例  
- 下列範例說明 Visual C\# 範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例會說明 Visual C# 範本的中繼資料。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -74,9 +80,8 @@ caps.handback.revision: 8
         </Project>  
     </TemplateContent>  
 </VSTemplate>  
-  
 ```  
   
-## 請參閱  
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另請參閱  
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

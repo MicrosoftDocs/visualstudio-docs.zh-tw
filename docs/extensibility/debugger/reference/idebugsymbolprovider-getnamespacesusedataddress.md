@@ -1,57 +1,57 @@
 ---
-title: "IDebugSymbolProvider::GetNamespacesUsedAtAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetNamespacesUsedAtAddress 方法"
+title: "IDebugSymbolProvider::GetNamespacesUsedAtAddress |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetNamespacesUsedAtAddress
+helpviewer_keywords: IDebugSymbolProvider::GetNamespacesUsedAtAddress method
 ms.assetid: 392de54b-9af0-4567-953b-1b41acd1e05c
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ca03fd4430c3cfcb9474cfd4c420ec5ab560aa94
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetNamespacesUsedAtAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會建立偵錯的地址相關聯的命名空間的列舉值。  
+# <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
+這個方法會建立與偵錯位址相關聯的命名空間的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetNamespacesUsedAtAddress(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppEnum  
+```cpp  
+HRESULT GetNamespacesUsedAtAddress(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNamespacesUsedAtAddress(  
-   IDebugAddress        pAddress,  
-   out IEnumDebugFields ppEnum  
+   IDebugAddress        pAddress,  
+   out IEnumDebugFields ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- \[in\]偵錯的地址。  
+ [in]偵錯的位址。  
   
  `ppEnum`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)命名空間的列舉值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 可能有數個命名空間關聯到特定的偵錯位址，比方說，巢狀命名空間或多個`using`陳述式。  
+## <a name="remarks"></a>備註  
+ 可能有數個與指定的偵錯位址，例如，相關聯的命名空間的命名空間或多個巢狀`using`陳述式。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

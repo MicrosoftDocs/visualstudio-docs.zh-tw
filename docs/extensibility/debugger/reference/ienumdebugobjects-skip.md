@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugObjects::Skip | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::Skip"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::Skip 方法"
+title: "IEnumDebugObjects::Skip |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugObjects::Skip
+helpviewer_keywords: IEnumDebugObjects::Skip method
 ms.assetid: 957cead8-0a9c-4403-b190-b9fbadc49d42
-caps.latest.revision: 4
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1a605a2e8380852310035ea9ba3cf39554a27ff7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugObjects::Skip
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會略過指定的項目數。  
+# <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
+這個方法會略過指定的項目數目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Skip(  
-   [in] ULONG celt  
+   [in] ULONG celt  
 );  
 ```  
   
-```c#  
+```csharp  
 int Skip(  
-   [In] uint celt  
+   [In] uint celt  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `celt`  
- \[in\]若要跳過的項目數目。  
+ [in]略過的項目數目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果`celt`大於其餘的項目 ； 數目 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`如果`celt`其餘項目數目大於; 否則傳回錯誤碼。  
   
-## 備註  
- 如果`celt`指定的值是無效的其餘的項目，列舉型別設定為 \[結束和`S_FALSE`會傳回。  
+## <a name="remarks"></a>備註  
+ 如果`celt`指定的值大於數的其餘項目，列舉型別設定為結束和`S_FALSE`傳回。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

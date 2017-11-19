@@ -1,76 +1,78 @@
 ---
-title: "使用字型和色彩 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "控制在 IDE 中的字型"
-  - "控制文字色彩和字型的 IDE，"
-  - "字型和色彩] 屬性頁"
-  - "字型和色彩的控制項 [Visual Studio SDK]"
-  - "IDE 的文字"
+title: "使用字型和色彩 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- fonts, controlling in IDE
+- IDE, controlling text color and fonts
+- Fonts and Colors property page
+- font and color control [Visual Studio SDK]
+- text, IDE
 ms.assetid: d1a9b99f-fbdc-45ed-920a-e08c3d931ac9
-caps.latest.revision: 27
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0ce64c7cac36319d1e55efb0ddf2216dc218805c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用字型和色彩
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供支援使用來顯示文字的字型和色彩。  
+# <a name="using-fonts-and-colors"></a>使用字型和色彩
+[!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]支援使用顯示文字的字型和色彩。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [字型和色彩概觀](../extensibility/font-and-color-overview.md)  
- 討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 \(IDE\)。  也介紹的概念分類和顯示的項目，並說明 \[VSPackages\] 和 \[核心編輯器如何使用文字屬性。  
+ 討論中的文字字型和色彩設定[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式的開發環境 (IDE)。 也介紹的概念分類和顯示項目，並說明如何 Vspackage 和核心編輯器使用 文字屬性。  
   
- [取得字型和色彩資訊文字顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
- 提供指導方針中管理的 VSPackages 實作文字顏色標示**類別** 而非 **文字編輯器**。  
+ [取得字型和色彩資訊文字的顏色標示](../extensibility/getting-font-and-color-information-for-text-colorization.md)  
+ 提供的指導方針中管理的 Vspackage 實作文字的顏色標示**類別**以外**文字編輯器**。  
   
  [存取預存的字型和色彩設定](../extensibility/accessing-stored-font-and-color-settings.md)  
- 說明如何在目前的字型和色彩設定可以存放、 擷取和套用。  
+ 說明如何在目前的字型和色彩設定可儲存、 擷取及套用。  
   
- [實作自訂分類和顯示項目](../extensibility/implementing-custom-categories-and-display-items.md)  
- 描述的基本步驟，讓視窗可以建立，並使用它自己的**顯示項目** 和 **類別**支援文字顯示。  
+ [實作自訂的分類和顯示項目](../extensibility/implementing-custom-categories-and-display-items.md)  
+ 描述的基本步驟，藉以視窗可以建立並使用它自己的**顯示項目**和**類別**支援文字顯示。  
   
- 這種方法需要實作 VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面和相關的介面。  
+ 這個方法會要求實作 VSPackage<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>介面和相關的介面。  
   
- [如何︰ 存取內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
- 討論如何定義和使用內建的字型和色彩，來註冊類別並開始使用系統提供的字型和色彩。  
+ [如何： 存取的內建的字型和色彩配置](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ 討論如何定義和使用內建的字型和色彩、 註冊一個分類，並起始使用系統提供的字型和色彩。  
   
-## 參考  
+## <a name="reference"></a>參考資料  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>  
- 提供的執行個體`IVsFontAndColorDefaults`或<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>相對於特定的項目中所列的介面**顯示設定為**列入**字型和色彩**頁**選項**對話方塊。  
+ 提供的執行個體`IVsFontAndColorDefaults`或<xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>對應至特定項目中所列的介面**顯示設定為**清單中**字型和色彩**頁面**選項** 對話方塊。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>  
- 可讓支援 IDE 的 VSPackage **字型和色彩**藉由定義預設字型和色彩\] 視窗或 UI 元件的網頁。  
+ 可讓 VSPackage 也可以支援 IDE**字型和色彩**藉由定義預設字型和色彩 視窗或 UI 元件的頁面。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup>  
- 提供一種機制來提供字型和色彩的支援可以指定顯示項目群組的代表兩個或多個類別的聯集的 super\-category VSPackage。  
+ 提供一個機制，藉以提供字型和色彩的支援，可以指定顯示項目群組-超級類別，表示兩個或多個類別的聯集的 VSPackage。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>  
- 啟用 VSPackage，以擷取字型和色彩的資料，或將它儲存到登錄。  
+ 可讓 VSPackage 也可以擷取字型和色彩的資料，或將它儲存至登錄。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>  
- 通知變更的字型和色彩資訊使用的字型和色彩設定中的 VSPackages。  
+ 告知 Vspackage 使用字型和色彩設定中變更的字型和色彩資訊。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorUtilities>  
- 提供工具讓您使用與輸入和輸出資料的方法使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**字型和色彩**的機制。  
+ 提供的工具使用的方法使用輸入和輸出資料[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]**字型和色彩**機制。  
   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager>  
- 控制快取的字型和色彩設定。  
+ 控制字型和色彩設定的快取。  
   
-## 相關章節  
- [開發語言服務](../extensibility/internals/developing-a-legacy-language-service.md)  
- 將告訴您如何 VSPackages 可用語言服務來自訂[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。  
+## <a name="related-sections"></a>相關章節  
+ [開發舊版語言服務](../extensibility/internals/developing-a-legacy-language-service.md)  
+ 討論 Vspackage 如何使用語言服務來自訂[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器。  
   
- [語法著色中自訂編輯器](../extensibility/syntax-coloring-in-custom-editors.md)  
- Descries 如何[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器使用語言服務實作語法標色。  
+ [自訂編輯器中的語法著色](../extensibility/syntax-coloring-in-custom-editors.md)  
+ Descries 如何[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]編輯器所使用語言服務實作的語法著色。  
   
  [擴充 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)  
- 說明如何使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服務來建立 UI 項目，以符合其他的[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
+ 說明如何使用[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]服務建立符合的其餘部分的 UI 項目[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。

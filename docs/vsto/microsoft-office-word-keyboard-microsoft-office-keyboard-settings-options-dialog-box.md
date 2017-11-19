@@ -1,45 +1,46 @@
 ---
-title: "選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤 | Microsoft Docs"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.ToolsOptionsPages.Microsoft_Office_Tools.Microsoft_Office_Word.Keyboard"
-  - "VS.ToolsOptionsPages.Microsoft_Office_Keyboard_Settings.Microsoft_Office_Word_Keyboard"
-  - "VST.WordOptions.KeyboardMappingScheme"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "鍵盤快速鍵，Visual Studio 中的 Office 程式開發"
+title: "選項對話方塊、 Microsoft Office Word 鍵盤，Microsoft Office 鍵盤設定、 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.ToolsOptionsPages.Microsoft_Office_Tools.Microsoft_Office_Word.Keyboard
+- VS.ToolsOptionsPages.Microsoft_Office_Keyboard_Settings.Microsoft_Office_Word_Keyboard
+- VST.WordOptions.KeyboardMappingScheme
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: keyboard shortcuts, Office development in Visual Studio
 ms.assetid: d98edaab-846a-4baa-b190-702b1134754c
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bbce725246356086ac64b1810b80b91839caea3c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤
-  Microsoft Office Word 和 Visual Studio 都可處理快速鍵。  相同的快速鍵組合可以在 Word 和 Visual Studio 中代表不同的命令。  當 Word 在 Visual Studio 中的文件層級專案內開啟時，一次只有一個應用程式可接收快速鍵命令。  根據預設，Visual Studio 會接受所有快速鍵命令，不過您可選取 \[**動態鍵盤配置**\]，使 Word 在文件取得焦點時接收快速鍵命令。  
+# <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤
+  Microsoft Office Word 和 Visual Studio 同時處理快顯的索引鍵。 針對不同的命令，在 Word 和 Visual Studio 中，可以獨立相同快速鍵組合。 在 Visual Studio 中的文件層級專案中開啟 Word 時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會收到所有捷徑命令，但您可以讓 Word 文件選取具有焦點時，接收這些**動態鍵盤配置**。  
   
- 如果您使用的快速鍵未指派給應用程式中目前正在處理快速鍵的命令，則該快速鍵就會傳遞至其他應用程式。  
+ 如果您使用未指派給目前正在處理的快速鍵的應用程式中命令的快速鍵，攠摝坫會傳遞給其他應用程式。  
   
- 您選取的選項在您變更之前，在 Word 專案中都還是有效的。  而且，選取的結果不會影響 Microsoft Office Excel 專案。您必須使用 Microsoft Office Excel 鍵盤選項為 Excel 進行任何變更。  
+ 您選取的選項會保持作用中的 Word 專案直到變更為止。 選取項目不會影響 Microsoft Office Excel 專案的專案。您必須使用 Microsoft Office Excel 鍵盤選項進行適用於 Excel 的任何變更。  
   
-## UIElement 清單  
+## <a name="uielement-list"></a>UIElement 清單  
  **Visual Studio 鍵盤配置**  
- Visual Studio 會接收所有快速鍵命令，即使 Word 文件取得焦點也一樣。  例如，如果您在文件取得焦點時按功能鍵 F5，Visual Studio 會開始偵錯方案。  
+ Visual Studio 會收到所有捷徑命令，即使 Word 文件具有焦點。 例如，如果您在文件具有焦點時按 F5 功能鍵，Visual Studio 會啟動偵錯您的方案。  
   
  **動態鍵盤配置**  
- Visual Studio 只會在其取得焦點時接收快速鍵命令。  當 Word 文件取得焦點時，Word 會接收所有快速鍵命令。  例如，當 Word 文件具有焦點時，如果您按下功能鍵 F5，Word 會開啟已選取的 \[**尋找和取代**\] 對話方塊的 \[**到**\] 索引標籤。  如果您在 Visual Studio 取得焦點時按 F5，Visual Studio 會開始偵錯方案。  
+ Visual Studio 會在有焦點時，才收到快顯命令。 當 Word 文件具有焦點時，Word 就會收到所有的捷徑命令。 例如，如果您在 Word 文件具有焦點時按 F5 功能鍵，Word 會開啟**尋找和取代**對話方塊**移至**選取的索引標籤。 如果您按下 F5，Visual Studio 焦點時，Visual Studio 會啟動偵錯您的方案。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Excel 鍵盤](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)  
   
   

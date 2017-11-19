@@ -1,78 +1,78 @@
 ---
-title: "IDebugProgram2::EnumCodePaths | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::EnumCodePaths"
-helpviewer_keywords: 
-  - "IDebugProgram2::EnumCodePaths"
+title: "IDebugProgram2::EnumCodePaths |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::EnumCodePaths
+helpviewer_keywords: IDebugProgram2::EnumCodePaths
 ms.assetid: fb100c3c-9c29-4d63-bd1f-a3e531cb395f
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d9aec7791092d8e3c531bf9ad0cb6f50d3d8ab22
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::EnumCodePaths
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取一份原始程式檔中指定位置的程式碼路徑。  
+# <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
+擷取原始程式檔中指定位置之程式碼路徑的清單。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumCodePaths(   
-   LPCOLESTR            pszHint,  
-   IDebugCodeContext2*  pStart,  
-   IDebugStackFrame2*   pFrame,  
-   BOOL                 fSource,  
-   IEnumCodePaths2**    ppEnum,  
-   IDebugCodeContext2** ppSafety  
+```cpp  
+HRESULT EnumCodePaths(   
+   LPCOLESTR            pszHint,  
+   IDebugCodeContext2*  pStart,  
+   IDebugStackFrame2*   pFrame,  
+   BOOL                 fSource,  
+   IEnumCodePaths2**    ppEnum,  
+   IDebugCodeContext2** ppSafety  
 );  
 ```  
   
-```c#  
-int EnumCodePaths(   
-   string                 pszHint,  
-   IDebugCodeContext2     pStart,  
-   IDebugStackFrame2      pFrame,  
-   Int                    fSource,  
-   out IEnumCodePaths2    ppEnum,  
-   out IDebugCodeContext2 ppSafety  
+```csharp  
+int EnumCodePaths(   
+   string                 pszHint,  
+   IDebugCodeContext2     pStart,  
+   IDebugStackFrame2      pFrame,  
+   Int                    fSource,  
+   out IEnumCodePaths2    ppEnum,  
+   out IDebugCodeContext2 ppSafety  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszHint`  
- \[in\]在游標下的 word **來源** 或 **反組譯碼**在 IDE 中的檢視。  
+ [in]將游標置於下面的字**來源**或**反組譯碼**在 IDE 中的檢視。  
   
  `pStart`  
- \[in\][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前的程式碼內容。  
+ [in][IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件，代表目前的程式碼內容。  
   
  `pFrame`  
- \[in\][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)與目前的中斷點表示的堆疊框架相關聯的物件。  
+ [in][IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)代表堆疊框架與目前中斷點相關聯的物件。  
   
  `fSource`  
- \[in\]非零值 \(`TRUE`\) 如果在**來源** 檢視中，則為零 \(`FALSE`\) 如果在**反組譯碼**檢視。  
+ [in]非零 (`TRUE`) 如果在**來源** 檢視中，則為零 (`FALSE`) 如果在**反組譯碼**檢視。  
   
  `ppEnum`  
- \[\] out傳回[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)物件，其中包含程式碼路徑的清單。  
+ [out]傳回[IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)物件，其中包含的程式碼路徑清單。  
   
  `ppSafety`  
- \[\] out傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)物件代表設定為中斷點，如果選擇的程式碼路徑不額外的程式碼的內容就會遭到省略。  這可能會發生的最少運算的布林運算式，例如。  
+ [out]傳回[IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)代表額外的程式碼內容，如果所選的程式碼路徑設定為中斷點會略過的物件。 這可能會發生在最少運算的布林運算式，例如。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 程式碼路徑則描述方法或函式所呼叫以取得目前程式的執行點的名稱。  一份程式碼路徑表示的呼叫堆疊。  
+## <a name="remarks"></a>備註  
+ 程式碼路徑描述方法或函式呼叫來取得目前程式的執行點的名稱。 程式碼路徑的清單表示的呼叫堆疊。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)   
  [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)   

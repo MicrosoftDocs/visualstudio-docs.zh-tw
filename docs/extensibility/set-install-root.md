@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1b604a70c44b6fd25888ee5419efbb95f95a0a4a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: da7f91cc71eb6d0bc403089a0e34b6d81165e026
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="installing-outside-the-extensions-folder"></a>安裝擴充功能資料夾外
 
@@ -90,4 +74,3 @@ ms.lasthandoff: 09/06/2017
 ## <a name="extra-information"></a>額外的資訊
 
 將屬性設計工具變更套用到不只是專案參考。您可以設定`InstallRoot`內以及專案項目的中繼資料 （使用上面所述的相同方法）。
-

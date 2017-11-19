@@ -1,51 +1,51 @@
 ---
-title: "IDebugProgramCreateEvent2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramCreateEvent2"
-helpviewer_keywords: 
-  - "IDebugProgramCreateEvent2 介面"
+title: "IDebugProgramCreateEvent2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramCreateEvent2
+helpviewer_keywords: IDebugProgramCreateEvent2 interface
 ms.assetid: b19a7934-6179-4a68-9075-bd7dcd640b05
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2e61b838c922d0b25a7b0bef71c3cf1f15ec8843
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramCreateEvent2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個介面會傳送偵錯引擎 \(DE\) 給工作階段的偵錯專案經理 \(SDM\) 如果程式附加到。  
+# <a name="idebugprogramcreateevent2"></a>IDebugProgramCreateEvent2
+這個介面是由傳送偵錯引擎 (DE) 工作階段的偵錯管理員 (SDM) 連結至程式時。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugProgramCreateEvent2 : IUnknown  
 ```  
   
-## 實作器注意事項  
- DE 或自訂的連接埠提供者實作這個介面來報告某個程式已經建立的通常在程式附加到的時間。  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作這個介面以相同的物件。  SDM 會使用`QueryInterface`方法來存取`IDebugEvent2`介面。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ DE 或自訂連接埠供應商實作這個介面可報告程式已經建立的通常程式附加到次。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)介面必須實作此介面為相同的物件。 SDM 使用`QueryInterface`方法來存取`IDebugEvent2`介面。  
   
-## 呼叫者的備忘稿  
- DE 或自訂的連接埠提供者會建立，並傳送此報告建立計劃的事件物件。  DE 傳送這個事件使用[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加至正在偵錯程式時，會將 SDM 所提供的回呼函式。  自訂的連接埠提供者會傳送這個事件使用[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ DE 或自訂連接埠供應商建立並傳送報告的程式建立此事件物件。 DE 使用來傳送此事件[IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)它附加到正在偵錯程式時，會將 SDM 所提供的回呼函式。 此事件使用自訂連接埠供應商將傳送[IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)介面。  
   
-## 備註  
- DE 或自訂的連接埠提供者發行新的[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面，藉由呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。  
+## <a name="remarks"></a>備註  
+ DE 或自訂連接埠供應商發行新[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面，藉由呼叫[PublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogramnode.md)。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

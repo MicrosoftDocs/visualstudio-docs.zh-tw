@@ -1,16 +1,13 @@
 ---
-title: 'How to: Add an Entity to a Model | Microsoft Docs'
+title: "如何： 將實體加入至模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- EntityTool
+f1_keywords: EntityTool
 dev_langs:
 - VB
 - CSharp
@@ -22,44 +19,44 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity
 - BDC [SharePoint development in Visual Studio], adding an entity
 ms.assetid: 139a6639-dabe-4e14-bb64-e5f4efb6f2fb
-caps.latest.revision: 23
-author: kempb
-ms.author: kempb
+caps.latest.revision: "23"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 16dc2a7c05f1b7290596be337cdec0fe2637bf32
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: d8cc1bf4871ef91c5b08cb77963a70e422ee3cdc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-an-entity-to-a-model"></a>How to: Add an Entity to a Model
-  To create an entity, add an entity control from the Visual Studio **Toolbox** onto the Business Data Connectivity (BDC) designer.  
+# <a name="how-to-add-an-entity-to-a-model"></a>如何：將實體加入至模型
+  若要建立實體時，將 Visual Studio 的實體控制項**工具箱**商務資料連線 (BDC) 設計工具上。  
   
-### <a name="to-add-an-entity-to-the-model"></a>To add an entity to the model  
+### <a name="to-add-an-entity-to-the-model"></a>若要將實體加入至模型  
   
-1.  Create a BDC project, or open an existing BDC project. For more information, see [Creating a Business Data Connectivity Model](../sharepoint/creating-a-business-data-connectivity-model.md).  
+1.  建立 BDC 專案，或開啟現有的 BDC 專案。 如需詳細資訊，請參閱[建立商務資料連接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。  
   
-2.  In the **Toolbox**, from the **BusinessDataCatalog** group, add an **Entity** control onto the designer.  
+2.  在**工具箱**，從**BusinessDataCatalog**群組中，加入**實體**控制項拖曳至設計工具。  
   
-     The new entity appears on the designer. Visual Studio adds an `<Entity>` element to the XML of the BDC model file in your project. For more information about the attributes of an Entity element, see [Entity](http://go.microsoft.com/fwlink/?LinkId=169296).  
+     新的實體會出現在設計工具。 Visual Studio 會加入`<Entity>`BDC 模型檔案，在您的專案中的 xml 項目。 實體項目之屬性的相關資訊，請參閱[實體](http://go.microsoft.com/fwlink/?LinkId=169296)。  
   
-3.  On the designer, open the shortcut menu for the entity, choose **Add**, and then choose **Identifier**.  
+3.  在設計工具中，開啟實體的捷徑功能表，選擇 **新增**，然後選擇 **識別碼**。  
   
-     A new identifier appears on the entity.  
+     新的識別碼會出現在實體上。  
   
     > [!NOTE]  
-    >  You can change the name of the entity and the identifier in the **Properties** window.  
+    >  您可以變更實體和中的識別項名稱**屬性**視窗。  
   
-4.  Define the fields of the entity in a class. You can either add a new class to the project or use an existing class created by using other tools such as the Object Relational Designer (O/R Designer). The following example shows an entity class named Contact.  
+4.  類別中定義實體的欄位。 您可以將新類別加入至專案，或使用現有的類別使用物件關聯式設計工具 （O/R 設計工具） 等其他工具所建立。 下列範例會示範名為連絡人的實體類別。  
   
-     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]  [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
+     [!code-csharp[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/CSharp/sp_bdc_entity_data_class/bdcmodel1/contact.cs#1)]
+     [!code-vb[SP_BDC_Entity_Data_Class#1](../sharepoint/codesnippet/VisualBasic/sp_bdc_entity_data_class/bdcmodel1/contact.vb#1)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Add a Creator Method](../sharepoint/how-to-add-a-creator-method.md)   
- [How to: Add a Deleter Method](../sharepoint/how-to-add-a-deleter-method.md)   
- [How to: Add an Updater Method](../sharepoint/how-to-add-an-updater-method.md)   
- [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
- [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 加入建立者方法](../sharepoint/how-to-add-a-creator-method.md)   
+ [如何： 加入刪除者方法](../sharepoint/how-to-add-a-deleter-method.md)   
+ [如何： 加入 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)   
+ [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何：新增特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)  
   
   

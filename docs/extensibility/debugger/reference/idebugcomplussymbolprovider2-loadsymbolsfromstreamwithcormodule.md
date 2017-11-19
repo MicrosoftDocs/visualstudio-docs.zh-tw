@@ -1,30 +1,32 @@
 ---
-title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule"
-  - "LoadSymbolsFromStreamWithCorModule"
+title: "IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
+- LoadSymbolsFromStreamWithCorModule
 ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 13edb3af701c1f1c7dbcd17cc10cc02cb5d90fc3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-從指定的資料流載入偵錯符號 **ICorDebugModule** 物件。  
+# <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
+從指定的資料流載入偵錯符號**ICorDebugModule**物件。  
   
 ## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT LoadSymbolsFromStreamWithCorModule(  
    ULONG32   ulAppDomainID,  
    GUID      guidModule,  
@@ -35,7 +37,7 @@ HRESULT LoadSymbolsFromStreamWithCorModule(
 );  
 ```  
   
-```c#  
+```csharp  
 int LoadSymbolsFromStreamWithCorModule(  
    uint    ulAppDomainID,  
    Guid    guidModule,  
@@ -57,21 +59,21 @@ int LoadSymbolsFromStreamWithCorModule(
  [in]基底的記憶體位址。  
   
  `pUnkMetadataImport`  
- [in]包含符號中繼資料的物件。  
+ [in]物件，其中包含的符號中繼資料。  
   
  `pUnkCorDebugModule`  
- [in]實作物件 [ICorDebugModule 介面](ICorDebugModule%20Interface.xml)。  
+ [in]物件，用於實作[ICorDebugModule 介面](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。  
   
  `pStream`  
  [in]包含要載入的偵錯符號的資料流。  
   
 ## <a name="return-value"></a>傳回值  
- 如果成功，傳回 `S_OK`; 否則傳回錯誤碼。  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
 ## <a name="example"></a>範例  
- 下列範例示範如何實作這個方法的 **CDebugSymbolProvider** 公開物件 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) 介面。  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(  
     ULONG32 ulAppDomainID,  
     GUID guidModule,  
@@ -141,5 +143,5 @@ Error:
 }  
 ```  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

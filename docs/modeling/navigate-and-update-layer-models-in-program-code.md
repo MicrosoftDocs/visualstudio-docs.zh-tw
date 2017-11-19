@@ -10,30 +10,15 @@ helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
 ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 50da0b90dd1c8924d8772eabd83265ff3827c2c2
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: cfe4f389516a3421bdc0d8643790dbb9c7cc2733
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>巡覽及更新程式碼中的圖層模型
 本主題描述圖層模型中的項目和關聯性，而您可以使用程式碼巡覽和更新它們。 如需從使用者的觀點來看的相依性圖表的詳細資訊，請參閱[相依性圖表： 參考](../modeling/layer-diagrams-reference.md)和[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。  
@@ -137,7 +122,7 @@ public void ... (...)
   
  ![每個 ilayerelement 都是由 IShape 呈現。] (../modeling/media/layerapi_shapes.png "LayerApi_Shapes")  
   
- <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 也用來顯示 UML 模型。 如需詳細資訊，請參閱[圖表上顯示 UML 模型](../modeling/display-a-uml-model-on-diagrams.md)。  
+ <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape> 和 <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IDiagram> 也用來顯示 UML 模型。 
   
 ## <a name="see-also"></a>另請參閱  
  [將命令和軌跡加入至相依性圖表](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
@@ -145,4 +130,3 @@ public void ... (...)
  [將自訂屬性加入至相依性圖表](../modeling/add-custom-properties-to-layer-diagrams.md)   
  [相依性圖表： 參考](../modeling/layer-diagrams-reference.md)   
  [相依性圖表︰方針](../modeling/layer-diagrams-guidelines.md)   
-

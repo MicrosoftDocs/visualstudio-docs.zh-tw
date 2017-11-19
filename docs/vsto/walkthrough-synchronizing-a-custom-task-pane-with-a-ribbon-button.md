@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button | Microsoft Docs'
+title: "逐步解說： 使用功能區按鈕同步處理自訂工作窗格 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -26,158 +24,162 @@ helpviewer_keywords:
 - task panes [Office development in Visual Studio], creating
 - task panes [Office development in Visual Studio], synchronizing with Ribbon button
 ms.assetid: 00ce8b1e-1370-42f2-9dc9-609cada392f1
-caps.latest.revision: 38
-author: kempb
-ms.author: kempb
+caps.latest.revision: "38"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 091d7614ecf9fa764b9099e3ce6350d48a68eeb8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: ea382f4da2e89003f045976e44d186f7c5c8ba31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>Walkthrough: Synchronizing a Custom Task Pane with a Ribbon Button
-  This walkthrough demonstrates how to create a custom task pane that users can hide or display by clicking a toggle button on the Ribbon. You should always create a user interface (UI) element, such as a button, that users can click to display or hide your custom task pane, because Microsoft Office applications do not provide a default way for users to show or hide custom task panes.  
+# <a name="walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button"></a>逐步解說：使用功能區按鈕同步處理自訂工作窗格
+  這項逐步解說示範如何建立使用者按一下功能區上的切換按鈕以隱藏或顯示的自訂工作窗格。 您應該一律建立使用者介面 (UI) 元素，例如按鈕，讓使用者按一下即可顯示或隱藏自訂工作窗格；因為 Microsoft Office 應用程式不提供使用者顯示或隱藏自訂工作窗格的預設方式。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
- Although this walkthrough uses Excel specifically, the concepts demonstrated by the walkthrough are applicable to any applications that are listed above.  
+ 雖然這個逐步解說特地使用 Excel，但所示範的概念同樣適用以上所列的任何應用程式。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Designing the UI of the custom task pane.  
+-   設計自訂工作窗格的 UI。  
   
--   Adding a toggle button to the Ribbon.  
+-   在功能區加入切換按鈕。  
   
--   Synchronizing the toggle button with the custom task pane.  
+-   同步處理切換按鈕和自訂工作窗格。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Excel or Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)].  
+-   Microsoft Excel 或 Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]。  
   
-## <a name="creating-the-add-in-project"></a>Creating the Add-in Project  
- In this step, you will create an VSTO Add-in project for Excel.  
+## <a name="creating-the-add-in-project"></a>建立增益集專案  
+ 在這個步驟中，您會建立 Excel VSTO 增益集專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create an Excel Add-in project with the name **SynchronizeTaskPaneAndRibbon**, using the Excel Add-in project template. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  使用 Excel 增益集專案範本建立名為 **SynchronizeTaskPaneAndRibbon**的 Excel 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the **ThisAddIn.cs** or **ThisAddIn.vb** code file and adds the **SynchronizeTaskPaneAndRibbon** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 會開啟 **ThisAddIn.cs** 或 **ThisAddIn.vb** 程式碼檔案，並將 **SynchronizeTaskPaneAndRibbon** 專案加入 [方案總管] 。  
   
-## <a name="adding-a-toggle-button-to-the-ribbon"></a>Adding a Toggle Button to the Ribbon  
- One of the Office application design guidelines is that users should always have control of the Office application UI. To enable users to control the custom task pane, you can add a Ribbon toggle button that shows and hides the task pane. To create a toggle button, add a **Ribbon (Visual Designer)** item to the project. The designer helps you add and position controls, set control properties, and handle control events. For more information, see [Ribbon Designer](../vsto/ribbon-designer.md).  
+## <a name="adding-a-toggle-button-to-the-ribbon"></a>在功能區加入切換按鈕  
+ 其中一個 Office 應用程式設計方針是使用者應一律具有 Office 應用程式 UI 的控制項。 為讓使用者能夠控制自訂工作窗格，您可以加入會顯示和隱藏工作窗格的功能區切換按鈕。 若要建立切換按鈕，請將 [功能區 (視覺化設計工具)]  項目加入專案。 設計工具可協助您加入及定位控制項、設定控制項屬性及處理控制項事件。 如需詳細資訊，請參閱 [Ribbon Designer](../vsto/ribbon-designer.md)。  
   
-#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>To add a toggle button to the Ribbon  
+#### <a name="to-add-a-toggle-button-to-the-ribbon"></a>在功能區加入切換按鈕  
   
-1.  On the **Project** menu, click **Add New Item**.  
+1.  在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
+2.  選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。  
   
-3.  Change the name of the new Ribbon to **ManageTaskPaneRibbon**, and click **Add**.  
+3.  將新功能區的名稱變更為 **ManageTaskPaneRibbon**，然後按一下 [加入] 。  
   
-     The **ManageTaskPaneRibbon.cs** or **ManageTaskPaneRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
+     **ManageTaskPaneRibbon.cs** 或 **ManageTaskPaneRibbon.vb** 檔案會在功能區設計工具中開啟，並顯示預設的索引標籤和群組。  
   
-4.  In the Ribbon Designer, click **group1**.  
+4.  在功能區設計工具中，按一下 [group1] 。  
   
-5.  In the **Properties** window, set the **Label** property to **Task Pane Manager**.  
+5.  在 [屬性]  視窗中，將 [標籤]  屬性設定為「工作窗格管理員」 。  
   
-6.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **ToggleButton** onto the **Task Pane Manager** group.  
+6.  從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 **ToggleButton** 拖曳至 [工作窗格管理員]  群組。  
   
-7.  Click **toggleButton1**.  
+7.  按一下 [toggleButton1] 。  
   
-8.  In the **Properties** window, set the **Label** property to **Show Task Pane**.  
+8.  在 [屬性]  視窗中，將 [標籤]  屬性設定為「顯示工作窗格」 。  
   
-## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>Designing the User Interface of the Custom Task Pane  
- There is no visual designer for custom task panes, but you can design a user control with the layout you want. Later in this walkthrough, you will add the user control to the custom task pane.  
+## <a name="designing-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
+ 自訂工作窗格沒有視覺化的設計工具，但是您可以根據需要設計使用者控制項的版面配置。 稍後在本逐步解說中，您會在自訂工作窗格中加入使用者控制項。  
   
-#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>To design the user interface of the custom task pane  
+#### <a name="to-design-the-user-interface-of-the-custom-task-pane"></a>設計自訂工作窗格的使用者介面  
   
-1.  On the **Project** menu, click **Add User Control**.  
+1.  在 [專案]  功能表上，按一下 [加入使用者控制項] 。  
   
-2.  In the **Add New Item** dialog box, change the name of the user control to **TaskPaneControl**, and click **Add**.  
+2.  在 [加入新項目]  對話方塊中，將使用者控制項的名稱變更為 **TaskPaneControl**，然後按一下 [加入] 。  
   
-     The user control opens in the designer.  
+     使用者控制項隨即在設計工具中開啟。  
   
-3.  From the **Common Controls** tab of the **Toolbox**, drag a **TextBox** control to the user control.  
+3.  從 [工具箱]  的 [通用控制項] 索引標籤，將 **TextBox** 控制項拖曳至使用者控制項。  
   
-## <a name="creating-the-custom-task-pane"></a>Creating the Custom Task Pane  
- To create the custom task pane when the VSTO Add-in starts, add the user control to the task pane in the <xref:Microsoft.Office.Tools.AddIn.Startup> event handler of the VSTO Add-in. By default, the custom task pane will not be visible. Later in this walkthrough, you will add code that will display or hide the task pane when the user clicks the toggle button you added to the Ribbon.  
+## <a name="creating-the-custom-task-pane"></a>建立自訂工作窗格  
+ 若要在 VSTO 增益集啟動時建立自訂工作窗格，請在 VSTO 增益集的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件處理常式中，將使用者控制項加入工作窗格。 自訂工作窗格預設不顯示。 稍後在本逐步解說中，您將加入在使用者按一下您在功能區加入的切換按鈕時，會顯示或隱藏工作窗格的程式碼。  
   
-#### <a name="to-create-the-custom-task-pane"></a>To create the custom task pane  
+#### <a name="to-create-the-custom-task-pane"></a>建立自訂工作窗格  
   
-1.  In **Solution Explorer**, expand **Excel**.  
+1.  展開 [方案總管] 中的 [Excel] 。  
   
-2.  Right-click **ThisAddIn.cs** or **ThisAddIn.vb** and click **View Code**.  
+2.  以滑鼠右鍵按一下 **ThisAddIn.cs** 或 **ThisAddIn.vb** ，然後按一下 [檢視程式碼] 。  
   
-3.  Add the following code to the `ThisAddIn` class. This code declares an instance of `TaskPaneControl` as a member of `ThisAddIn`.  
+3.  將下列程式碼加入 `ThisAddIn` 類別。 這段程式碼會宣告 `TaskPaneControl` 執行個體為 `ThisAddIn`成員。  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]  
   
-4.  Replace the `ThisAddIn_Startup` event handler with the following code. This code adds the `TaskPaneControl` object to the `CustomTaskPanes` field, but it does not display the custom task pane (by default, the <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> property of the <xref:Microsoft.Office.Tools.CustomTaskPane> class is **false**). The Visual C# code also attaches an event handler to the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event.  
+4.  以下列程式碼取代 `ThisAddIn_Startup` 事件處理常式。 這段程式碼將 `TaskPaneControl` 物件加入 `CustomTaskPanes` 欄位，但它不顯示自訂工作窗格 ( <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 類別的 <xref:Microsoft.Office.Tools.CustomTaskPane> 屬性預設是 **false**)。 Visual C# 程式碼也會將事件處理常式連結到 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 事件。  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]  
   
-5.  Add the following method to the `ThisAddIn` class. This method handles the <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> event. When the user closes the task pane by clicking the **Close** button (X), this method updates the state of the toggle button on the Ribbon.  
+5.  將下列方法加入 `ThisAddIn` 類別中。 這個方法會處理 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 事件。 當使用者按一下 [關閉]  按鈕 (X) 關閉工作窗格時，這個方法會更新功能區的切換按鈕狀態。  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]  
   
-6.  Add the following property to the `ThisAddIn` class. This property exposes the private `myCustomTaskPane1` object to other classes. Later in this walkthrough, you will add code to the `MyRibbon` class that uses this property.  
+6.  將下列屬性加入 `ThisAddIn` 類別。 這個屬性會向其他類別公開私用的 `myCustomTaskPane1` 物件。 稍後在本逐步解說中，您會將程式碼加入使用這個屬性的 `MyRibbon` 類別。  
   
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]  [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]  
   
-## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>Hiding and Showing the Custom Task Pane by Using the Toggle Button  
- The last step is to add code that displays or hides the custom task pane when the user clicks the toggle button on the Ribbon.  
+## <a name="hiding-and-showing-the-custom-task-pane-by-using-the-toggle-button"></a>使用切換按鈕隱藏和顯示自訂工作窗格  
+ 最後一個步驟是加入在使用者按一下功能區的切換按鈕時，顯示或隱藏自訂工作窗格的程式碼。  
   
-#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>To display and hide the custom task pane by using the toggle button  
+#### <a name="to-display-and-hide-the-custom-task-pane-by-using-the-toggle-button"></a>使用切換按鈕顯示和隱藏自訂工作窗格  
   
-1.  In the Ribbon Designer, double-click the **Show Task Pane** toggle button.  
+1.  在功能區設計工具中，按兩下 [顯示工作窗格]  切換按鈕。  
   
-     Visual Studio automatically generates an event handler named `toggleButton1_Click`, which handles the <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> event of the toggle button. Visual Studio also opens the **MyRibbon.cs** or **MyRibbon.vb** file in the Code Editor.  
+     Visual Studio 會自動產生名為 `toggleButton1_Click`的事件處理常式，以處理切換按鈕的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 Visual Studio 也會在程式碼編輯器中開啟 **MyRibbon.cs** 或 **MyRibbon.vb** 檔案。  
   
-2.  Replace the `toggleButton1_Click` event handler with the following code. When the user clicks the toggle button, this code displays or hides the custom task pane, depending on whether the toggle button is pressed or not pressed.  
+2.  以下列程式碼取代 `toggleButton1_Click` 事件處理常式。 當使用者按一下切換按鈕時，這段程式碼會顯示或隱藏自訂工作窗格，取決於按下或不按切換按鈕。  
   
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]  [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
+     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
+     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]  
   
-## <a name="testing-the-add-in"></a>Testing the Add-In  
- When you run the project, Excel opens without displaying the custom task pane. Click the toggle button on the Ribbon to test the code.  
+## <a name="testing-the-add-in"></a>測試增益集  
+ 當您執行專案時，Excel 會開啟但不顯示自訂工作窗格。 按一下功能區的切換按鈕以測試程式碼。  
   
-#### <a name="to-test-your-vsto-add-in"></a>To test your VSTO Add-in  
+#### <a name="to-test-your-vsto-add-in"></a>測試 VSTO 增益集  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-     Confirm that Excel opens, and the **Add-Ins** tab appears on the Ribbon.  
+     確認 Excel 開啟，而且 [增益集]  索引標籤出現在功能區上。  
   
-2.  Click the **Add-Ins** tab on the Ribbon.  
+2.  按一下功能區的 [增益集]  索引標籤。  
   
-3.  In the **Task Pane Manager** group, click the **Show Task Pane** toggle button.  
+3.  在 [工作窗格管理員]  群組中，按一下 [顯示工作窗格]  切換按鈕。  
   
-     Verify that the task pane is alternately displayed and hidden when you click the toggle button.  
+     請確認當您按一下切換按鈕時，工作窗格會切換顯示和隱藏。  
   
-4.  When the task pane is visible, click the **Close** button (X) in the corner of the task pane.  
+4.  當工作窗格出現時，請按一下工作窗格角落的 [關閉]  按鈕 (X)。  
   
-     Verify that the toggle button appears to be not pressed.  
+     確認切換按鈕出現時未被按下。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to create custom task panes from these topics:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以透過下列主題，進一步了解如何建立自訂工作窗格：  
   
--   Create a custom task pane in an VSTO Add-in for a different application. For more information about the applications that support custom task panes, see [Custom Task Panes](../vsto/custom-task-panes.md).  
+-   在 VSTO 增益集中為不同應用程式建立自訂工作窗格。 如需支援自訂工作窗格之應用程式的詳細資訊，請參閱[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
--   Automate an application from a custom task pane. For more information, see [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md).  
+-   運用自訂工作窗格自動化應用程式。 如需詳細資訊，請參閱 [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。  
   
--   Create a custom task pane for every e-mail message that is opened in Outlook. For more information, see [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md).  
+-   針對在 Outlook 中開啟的每一封電子郵件建立自訂工作窗格。 如需詳細資訊，請參閱 [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。  
   
-## <a name="see-also"></a>See Also  
- [Custom Task Panes](../vsto/custom-task-panes.md)   
- [How to: Add a Custom Task Pane to an Application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
- [Walkthrough: Automating an Application from a Custom Task Pane](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
- [Walkthrough: Displaying Custom Task Panes with E-Mail Messages in Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
- [Ribbon Overview](../vsto/ribbon-overview.md)  
+## <a name="see-also"></a>另請參閱  
+ [自訂工作窗格](../vsto/custom-task-panes.md)   
+ [如何： 應用程式中加入自訂工作窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)   
+ [逐步解說： 自動化從自訂工作窗格應用程式](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)   
+ [逐步解說： 在 Outlook 中顯示電子郵件訊息的自訂工作的窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)   
+ [功能區概觀](../vsto/ribbon-overview.md)  
   
   

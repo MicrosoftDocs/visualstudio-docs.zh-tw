@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::GetNextDispID | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::GetNextDispID |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.GetNextDispID
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "GetNextDispID 方法"
+helpviewer_keywords: GetNextDispID method
 ms.assetid: 8263d441-85ee-47f4-bdba-fbf2ad07e85f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ece7bde3230da370c8434cef7f780a92604df34c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::GetNextDispID
+# <a name="idispatchexgetnextdispid"></a>IDispatchEx::GetNextDispID
 列舉物件的成員。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetNextDispID(  
@@ -31,32 +34,32 @@ HRESULT GetNextDispID(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `grfdex`  
- 判斷哪一組項目時的列舉型別。  這可以是下列值的組合:  
+ 決定要列舉的項目集。 這可以是下列值的組合：  
   
 |值|意義|  
-|-------|--------|  
-|fdexEnumDefault|要求物件列舉型別預設項目。  物件允許列舉型別的項目。|  
-|fdexEnumAll|要求物件列舉所有項目。  物件允許列舉型別的項目。|  
+|-----------|-------------|  
+|fdexEnumDefault|要求物件列舉的預設項目。 允許物件列舉任何項目組。|  
+|fdexEnumAll|要求物件列舉的所有項目。 允許物件列舉任何項目組。|  
   
  `id`  
- 識別目前成員。  GetNextDispID 在這個節點之後會擷取列舉型別的項目。  使用 GetDispID 或為 GetNextDispID\) 的呼叫取得此識別項。  使用 DISPID\_STARTENUM 值取得第一個項目的第一個識別項。  
+ 識別目前的成員。 GetNextDispID 擷取之後此列舉型別中的項目。 若要取得這個識別碼，會使用 GetDispID 或 GetNextDispID 先前呼叫。 若要取得第一個項目的第一個識別項使用 DISPID_STARTENUM 值。  
   
  `pid`  
- 接收到下一個項目識別項的列舉型別中的物件變數的位址。  
+ 列舉中接收的下一個項目識別項的 DISPID 變數的位址。  
   
- 如果成員是由 `DeleteMemberByName` 或 `DeleteMemberByDispID`刪除， `DISPID` 需要會持續有效。 `GetNextDispID`。  
+ 如果成員已遭刪除`DeleteMemberByName`或`DeleteMemberByDispID`、`DISPID`必須一直保持有效`GetNextDispID`。  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|`S_FALSE`|列舉型別 \(Enumeration\) 完成。|  
+|`S_FALSE`|已完成列舉。|  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
 HRESULT hr;  
@@ -79,7 +82,7 @@ HRESULT hr;
    }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](#lrfidispatchexgetnextdispid)   

@@ -1,70 +1,74 @@
 ---
-title: "IDispatchEx 介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-helpviewer_keywords: 
-  - "IDispatchEx 介面"
-  - "IDispatchEx 介面, 關於 IDispatchEx"
+title: "IDispatchEx 介面 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+helpviewer_keywords:
+- IDispatchEx interface, about IDispatchEx
+- IDispatchEx interface
 ms.assetid: 37a3303f-f78e-4b5b-aac8-b836c92819de
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9a100a193f5e3abcb076fb8aaf3d64a0d0c38833
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx 介面
-`IDispatchEx`， `IDispatch` 介面的擴充功能，以支援適合動態語言 \(如指令碼語言。  本節說明 `IDispatchEx` 介面，在 `IDispatch` 和 `IDispatchEx`之間的差異和副檔名的理由。  預期讀取器熟悉 `IDispatch` 和存取 `IDispatch` 文件的。  
+# <a name="idispatchex-interface"></a>IDispatchEx 介面
+`IDispatchEx`副檔名為`IDispatch`介面，適用於動態語言，例如指令碼語言的支援功能。 本章節描述`IDispatchEx`介面本身之間的差異`IDispatch`和`IDispatchEx`，和擴充功能的基本原理。 它預期讀者已熟悉`IDispatch`並存取`IDispatch`文件。  
   
-## 備註  
- `IDispatch` 為 Microsoft Visual Basic 基本上已開發出。  `IDispatch` 的主要限制在於它假設，物件是靜態的。  換句話說，，因為在執行階段，物件不會變更，型別資訊可完整描述它們在編譯時期。  在指令碼語言中 \(例如 Scripting Edition 的動態執行階段模型 \(VBScript\) 和 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 和物件模型 \(例如動態 HTML 的 Visual Basic 需要更有彈性的介面。  
+## <a name="remarks"></a>備註  
+ `IDispatch`基本上被開發的 Microsoft Visual Basic。 主要限制`IDispatch`是，假設物件都是靜態。 換句話說，執行階段期間不會變更物件，因為型別資訊可以完全說明它們在編譯時期。 動態指令碼語言，例如 Visual Basic Scripting Edition (VBScript) 中找到的執行階段模型和[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]和物件模型，例如動態 HTML 需要更有彈性的介面。  
   
- `IDispatchEx` 所開發提供更動態的晚期繫結語言適用的例如指令碼語言 `IDispatch` 以及一些副檔名的所有服務。  `IDispatchEx` 額外功能。 `IDispatch` 所提供以外的是:  
+ `IDispatchEx`所提供的所有服務開發`IDispatch`以及適用於更具動態晚期繫結的語言，例如指令碼語言的某些延伸模組。 其他功能的`IDispatchEx`以外所提供`IDispatch`是：  
   
--   將新的成員加入至物件 \(「expando」\) 搭配 `fdexNameEnsure` 旗標的 `GetDispID` 。  
+-   將新成員加入至物件 (「 expando")-使用`GetDispID`與`fdexNameEnsure`旗標。  
   
--   刪除物件使用 `DeleteMemberByName` 或 `DeleteMemberByDispID`的成員。  
+-   刪除物件的成員 — 使用`DeleteMemberByName`或`DeleteMemberByDispID`。  
   
--   區分大小寫的分派作業所使用 `fdexNameCaseSensitive` 或 `fdexNameCaseInsensitive`。  
+-   區分大小寫的分派作業-使用`fdexNameCaseSensitive`或`fdexNameCaseInsensitive`。  
   
--   搜尋具有隱含使用 `fdexNameImplicit`名稱的成員。  
+-   搜尋具有隱含的名稱的成員 — 使用`fdexNameImplicit`。  
   
--   列舉物件使用 `GetNextDispID`的 DISPID。  
+-   列舉物件的 Dispid — 使用`GetNextDispID`。  
   
--   從 DISPID 對應至項目名稱使用 `GetMemberName`。  
+-   DISPID 項目名稱的地圖 — 使用`GetMemberName`。  
   
--   取得物件成員使用 `GetMemberProperties`屬性。  
+-   取得物件的成員屬性 — 使用`GetMemberProperties`。  
   
--   使用 `this` 指標使用 `InvokeEx` 的方法引動過程的 DISPATCH\_METHOD。  
+-   以方法引動過程`this`指標 — 使用`InvokeEx`DISPATCH_METHOD 與。  
   
--   允許支援命名空間的概念 `GetNameSpaceParent`取得物件所使用的命名空間之父代的瀏覽器。  
+-   允許瀏覽器支援的命名空間，若要取得之物件的名稱空間父系概念 — 使用`GetNameSpaceParent`。  
   
- 支援 `IDispatchEx` 的物件也可以支援回溯相容性 \(Backward Compatibility\) 的 `IDispatch` 。  支援 `IDispatchEx` 物件的動態本質與這些物件 `IDispatch` 介面的幾種影響。  例如， `IDispatch` 假設下列幾點:  
+ 物件支援`IDispatchEx`也支援`IDispatch`回溯相容性。 支援之物件的動態本質`IDispatchEx`有幾個含意`IDispatch`這些物件的介面。 例如，`IDispatch`讓下列假設：  
   
--   成員和參數 DISPID 必須保持固定在物件的存留期。  這可讓用戶端一次衍生介面和快取它們以供日後使用。  
+-   成員和參數 Dispid 必須保持不變的存留期的物件。 這可讓用戶端一次取得 Dispid 及快取它們供日後使用。  
   
- 因為 `IDispatchEx` 允許成員的加入和刪除，一組有效 DISPID 維持不變。  不過， `IDispatchEx` 要求物件和成員名稱之間的對應維持不變。  如果成員刪除，這表示:  
+ 因為`IDispatchEx`允許的新增和刪除成員，有效的 Dispid 的組無法維持不變。 不過，`IDispatchEx`需要 DISPID 和成員名稱之間的對應保持不變。 這表示，如果在刪除成員：  
   
--   無法重複使用 DISPID，直到有相同名稱的成員建立。  
+-   建立具有相同名稱的成員之前，不能重複使用 DISPID。  
   
--   物件必須維持有效。 `GetNextDispID`。  
+-   DISPID 必須保持有效`GetNextDispID`。  
   
--   必須由方法它們必須辨認這個成員為已刪除和將傳回適當的錯誤碼的適當地接受任何 DISPID `IDispatch` 或 `IDispatchEx` \(通常 DISP\_E\_MEMBERNOTFOUND 或 S\_FALSE\)。  
+-   DISPID 必須依正常程序接受由任一`IDispatch`或`IDispatchEx`方法-它們必須辨識為已刪除的成員，並傳回適當的錯誤或程式碼 （通常 DISP_E_MEMBERNOTFOUND S_FALSE）。  
   
-## 範例  
- 在這個 test\(\) 函式的 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 程式碼會執行下列動作:  
+## <a name="examples"></a>範例  
+ 這[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]函式 test （） 中的程式碼會執行下列：  
   
--   藉由呼叫 `Object` 建構函式建立新物件並將指標指派給變數 Obj 的新物件。  
+-   建立新的物件，藉由呼叫`Object`建構函式和指派至變數物件的新物件的指標  
   
--   建立物件中名為的 Elem 新的項目並指派給這個項目的函式的指標貓。  
+-   建立新的物件中名為 Elem 元素並將指派給這個項目函式 cat 的指標。  
   
--   呼叫此函式。  因為它會呼叫方法，以 `this` 指標參考物件 Obj。  函式會將新的項目，列，加入至物件。  
+-   呼叫此函式。 因為它做為方法中，呼叫`this`指標參考物件的物件此函式會加入新項目列，該物件。  
   
- 完整的 HTML 程式碼為:  
+ 完整 HTML 程式碼是：  
   
 ```  
 <html>  
@@ -95,7 +99,7 @@ test();
 </html>  
 ```  
   
- 此相同 Web 網頁上的控制項可以取得分派指標至瀏覽器的指令碼引擎。  控制項可以實作函式 test\(\):  
+ 放在這個相同的 Web 網頁上控制項無法從瀏覽器，以取得指令碼引擎來分派指標。 控制項無法再實作函式 test （）：  
   
 ```  
 <html>  
@@ -113,25 +117,25 @@ function cat()
 </html>  
 ```  
   
- 從控制項的程式碼，測試，在命令提示字元 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 函式 `test()`相同。  請注意這些分派呼叫的執行 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 引擎及變更引擎的狀態:  
+ 從控制項的程式碼、 測試、 會執行相同動作[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]函式`test()`。 請注意，這些 dispatch 呼叫會結合成為執行[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]引擎和引擎的狀態變更：  
   
--   使用 `GetDispID()`，取得分派指標貓函式。  
+-   取得分派指標 cat 函式使用`GetDispID()`。  
   
--   使用 `GetDispID()`，其可分派物件指標函式。  
+-   取得物件的函式使用分派指標`GetDispID()`。  
   
--   可藉由呼叫物件的 `InvokeEx()` 函式建構物件並取得分派指標指向新建構的物件。  
+-   由呼叫物件函式會建構一個物件`InvokeEx()`並取得新建構的物件的分派指標。  
   
--   使用 `fdexNameEnsure` 旗標的 `GetDispID()` ，建立新的項目， Elem，物件中。  
+-   建立新的項目，Elem，在物件中使用`GetDispID()`與`fdexNameEnsure`旗標。  
   
--   使用，將 `InvokeEx()`分派指標貓在項目。  
+-   將分派指標，以在項目中使用 cat `InvokeEx()`。  
   
--   呼叫分派指標貓當做方法呼叫 `InvokeEx()` 並傳入分派指標至建構的物件做為 `this` 指標。  
+-   藉由呼叫會做為方法呼叫分派指標以 cat`InvokeEx()`和分派指標傳遞至建構的物件做為`this`指標。  
   
--   貓方法建立新的項目，列，在目前 `this` 物件。  
+-   Cat 方法會建立新的項目，在目前的列`this`物件。  
   
--   驗證使用 `GetNextDispID()`，新項目，列，在建構的物件建立透過列舉項目。  
+-   確認新的項目，列中建立已建構的物件所使用的項目列舉`GetNextDispID()`。  
   
- 測試控制項的程式碼:  
+ 測試控制項的程式碼：  
   
 ```  
    BOOL test(IDispatchEx *pdexScript)  
@@ -232,5 +236,5 @@ LDone:
    }  
 ```  
   
-## 方法  
+## <a name="methods"></a>方法  
  [IDispatchEx 方法](../../winscript/reference/idispatchex-methods.md)

@@ -1,52 +1,52 @@
 ---
-title: "IDebugStackFrame2::GetDebugProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
-helpviewer_keywords: 
-  - "IDebugStackFrame2::GetDebugProperty"
+title: "IDebugStackFrame2::GetDebugProperty |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugStackFrame2::GetDebugProperty
+helpviewer_keywords: IDebugStackFrame2::GetDebugProperty
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1340313a66a3c58759f1cd91bc967a3d95ac93ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugStackFrame2::GetDebugProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得堆疊框架的屬性描述。  
+# <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
+取得內容的堆疊框架的描述。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetDebugProperty (   
-   IDebugProperty2** ppDebugProp  
+```cpp  
+HRESULT GetDebugProperty (   
+   IDebugProperty2** ppDebugProp  
 );  
 ```  
   
-```c#  
-int GetDebugProperty (   
-   out IDebugProperty2 ppDebugProp  
+```csharp  
+int GetDebugProperty (   
+   out IDebugProperty2 ppDebugProp  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppDebugProp`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，描述此堆疊框架的內容。  
+ [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，描述此堆疊框架的內容。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 呼叫[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)與適當的篩選器的方法可以擷取區域變數、 方法參數、 暫存器和堆疊框架相關聯"this"指標。  
+## <a name="remarks"></a>備註  
+ 呼叫[EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)本機變數、 方法參數、 暫存器和相關聯的堆疊框架"this"指標，可以擷取與適當的篩選器的方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

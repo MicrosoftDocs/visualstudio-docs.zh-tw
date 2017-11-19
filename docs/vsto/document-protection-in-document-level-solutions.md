@@ -1,65 +1,67 @@
 ---
-title: "文件層級方案的文件保護"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "文件 [Visual Studio 中的 Office 程式開發], 受限制的使用權限"
-  - "Office 文件 [Visual Studio 中的 Office 程式開發], 受限制的使用權限"
-  - "使用權限 [Visual Studio 中的 Office 程式開發]"
-  - "受限制的使用權限 [Visual Studio 中的 Office 程式開發]"
-  - "活頁簿 [Visual Studio 中的 Office 程式開發], 受限制的使用權限"
+title: "文件保護文件層級方案中的 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- restricted permissions [Office development in Visual Studio]
+- permissions [Office development in Visual Studio]
+- workbooks [Office development in Visual Studio], restricted permissions
+- Office documents [Office development in Visual Studio], restricted permissions
+- documents [Office development in Visual Studio], restricted permissions
 ms.assetid: a25472ad-03f0-4804-9d19-e5ff71340d49
-caps.latest.revision: 36
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 35
+caps.latest.revision: "36"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ceecad94d3f9bb910f47484e5deab0f20876a0d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 文件層級方案的文件保護
-  您可以在文件層級專案中使用 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。  這些功能會防止未授權的使用者變更文件中受保護的部分。  
+# <a name="document-protection-in-document-level-solutions"></a>文件層級方案的文件保護
+  您可以使用文件層級專案中的 Microsoft Office Word 和 Microsoft Office Excel 的保護功能。 這些功能會封鎖未經授權的使用者變更受保護的文件部分。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- 使用 Excel，可以於活頁簿在設計工具中開啟時開啟及關閉保護；  使用 Word，則只能在設計工具之外開啟保護。  您可以在執行階段，以程式啟用或停用 Word 和 Excel 的保護功能。  
+ 使用 Excel，您可以開啟保護開啟和關閉設計工具中開啟活頁簿時。 使用 Word，您可以開啟保護只在設計工具外。 在執行階段，您可以啟用或停用保護，以程式設計方式針對 Word 和 Excel。  
   
- 設計工具中，開啟的文件之文件保護功能啟用時，所有控制項都會從 \[**工具箱**\] 移除，或是變成無法使用，如此您就無法從 \[**資料來源**\] 視窗拖曳任何項目至文件中。  
+ 所有控制項設計工具中開啟文件上啟用文件保護時，會都移除從**工具箱**或會變成無法使用，您無法將任何項目從**資料來源**文件視窗。  
   
-## ServerDocument 和受保護的文件  
- 如果文件受到保護，就無法從文件外部存取資料快取。  您不能使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 類別擷取或操作受保護文件中快取的資料，也不能使用 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument> 類別的其他方法。  
+## <a name="serverdocument-and-protected-documents"></a>ServerDocument 和受保護的文件  
+ 如果文件受到保護，無法存取資料快取從外部文件。 您無法使用<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>類別來擷取或操作資料快取的受保護的文件，或使用其他方法的<xref:Microsoft.VisualStudio.Tools.Applications.Runtime.ServerDocument>類別。  
   
-## 設計工具中的 Word 文件保護  
- 在 Visual Studio 中開啟 Word 文件或範本時，如果加上保護，就不能在設計工具中開始強制使用保護功能。  Visual Studio 中，文件在開啟的期間是處於設計模式，必須在執行模式中，才可以開始強制使用保護功能。  
+## <a name="word-document-protection-in-the-designer"></a>在設計工具中的 Word 文件保護  
+ 如果在 Visual Studio 中開啟時，您可以加入至 Word 文件或範本的保護，您無法開始強制執行在設計工具中的保護。 文件是設計模式，但它是在 Visual Studio 中，開啟且必須在執行模式之前，您可以開始強制執行保護。  
   
- 不過，如果您所建立的專案是使用已啟用保護功能的現有 Word 文件，則在設計工具中開啟文件時，文件就會受到保護。  您不能編輯文件中受保護的部分，但是仍然可以在程式碼編輯器中撰寫程式碼，讓文件自動化。  Visual Studio 中，文件在開啟的期間如果已經啟用保護功能，也不能建置專案。  
+ 不過，如果您建立使用現有的 Word 文件已啟用保護的專案，文件會受到保護，同時設計工具中開啟。 您無法編輯受保護的文件中，部分，但您仍然可以撰寫程式碼在程式碼編輯器來自動化文件。 您也無法建置專案時如果在 Visual Studio 中開啟文件時，會啟用保護。  
   
- 文件在設計工具中開啟的期間，您可以關閉保護功能，以便編輯文件並建置專案。  進行偵錯時，則不能在設計工具中關閉文件複本的保護功能；在偵錯期間開啟的文件與設計工具中所開啟的文件複本不同 \(輸出複本是存放在 Visual Basic 的 \\bin 目錄中，以及 C\# 的 \\bin\\debug 目錄中\)。  
+ 您可以關閉保護文件開啟時在設計工具，讓您能夠編輯文件，並建置專案。 您無法關閉設計工具中複製的保護時進行偵錯。在偵錯期間開啟的文件是從設計工具 （輸出複本會儲存在 \bin 目錄，適用於 Visual Basic 和 C# 的 \bin\debug 目錄） 中開啟單一另一份複本。  
   
- 如果要在以設計工具開啟的文件複本上啟用保護功能，請在 Visual Studio 中關閉專案，然後開啟專案目錄中的文件複本，再開啟保護功能。  
+ 您可以啟用保護在複本上的關閉 Visual Studio 中的專案、 開啟位於專案目錄中，文件的複本和保護開啟在設計工具中開啟的文件。  
   
-## 建置時強制使用 Word 文件保護  
- Visual Studio 會在建置程序中開始強制使用 Word 文件和範本的保護功能，以便在開啟文件進行偵錯時啟用保護功能。  文件是以空白密碼進行保護。  
+## <a name="enforcing-word-document-protection-on-build"></a>強制執行組建的 Word 文件保護  
+ Visual Studio 啟動強制執行保護的 Word 文件和範本建置程序期間，讓文件開啟時進行偵錯時，會啟用保護。 文件受到使用空白的密碼。  
   
- 要在建置期間啟用保護功能，是因為如果文件 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件中有程式碼，而此事件可能會導致例外狀況或變更應用程式的行為，此程式碼就能正確進行偵錯。  如果在開啟文件以後才啟用保護功能，就無法偵錯或測試初始化程式碼。  
+ 保護已啟用在建置期間，如果文件中的程式碼<xref:Microsoft.Office.Tools.Word.Document.Startup>可能造成例外狀況，或變更應用程式行為的事件，此程式碼能夠偵錯正確。 如果文件開啟之後，您可以啟用保護，無法偵錯或測試初始化程式碼。  
   
-## 設定密碼  
- Visual Studio 會自動啟用保護功能，但預設不提供密碼。  如果要用密碼保護文件，您必須在部署方案以前先加入密碼。  加入密碼可以讓獲得授權的使用者從文件中移除保護，而沒有密碼，就無法輕易移除保護。  如需設定密碼的詳細資訊，請參閱特定 Office 應用程式中的 \[說明\]。  
+## <a name="setting-the-password"></a>設定密碼  
+ Visual Studio 會自動啟用保護，但根據預設會提供任何密碼。 如果您想要有密碼保護文件時，您必須新增它，才能在您部署方案。 新增密碼可讓授權的使用者文件; 移除保護沒有密碼便無法輕易移除保護。 如需設定密碼的詳細資訊，請參閱特定 Office 應用程式中的說明。  
   
-## 請參閱  
- [如何：以程式設計方式保護文件及部分的文件](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計方式保護文件及部分的文件](../vsto/how-to-programmatically-protect-documents-and-parts-of-documents.md)   
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)   
  [資訊版權管理和 Managed 程式碼擴充概觀](../vsto/information-rights-management-and-managed-code-extensions-overview.md)   
  [Office 文件上的密碼保護](../vsto/password-protection-on-office-documents.md)   
- [如何：允許程式碼在具有限制使用權限的文件背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
+ [如何： 允許程式碼在具有限制權限的文件背後執行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
   
   

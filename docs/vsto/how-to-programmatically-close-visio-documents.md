@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Close Visio Documents | Microsoft Docs'
+title: "如何： 以程式設計方式關閉 Visio 文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,38 +14,38 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], closing Visio documents
 - Visio [Office development in Visual Studio], closing Visio documents
 ms.assetid: 59c0e215-a4c1-4b39-a491-37534f172705
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5005047476f5622391f8a163d71e1f44394d7d7d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: f59d4178e82cde6c476d9cab8d20a37dcb698262
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-close-visio-documents"></a>How to: Programmatically Close Visio Documents
-  You can close the active Microsoft Office Visio document by using the Microsoft.Office.Interop.Visio.Document.Close method.  
+# <a name="how-to-programmatically-close-visio-documents"></a>如何：以程式設計方式關閉 Visio 文件
+  您可以使用 Microsoft.Office.Interop.Visio.Document.Close 方法來關閉使用中的 Microsoft Office Visio 文件。  
   
- For details about this method, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) method.  
+ 如需這個方法的詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Close](http://msdn.microsoft.com/library/office/ff767415.aspx) 方法的 VBA 參考文件。  
   
-## <a name="closing-the-active-document"></a>Closing the Active Document  
+## <a name="closing-the-active-document"></a>關閉使用中的文件  
   
-#### <a name="to-close-the-active-document"></a>To close the active document  
+#### <a name="to-close-the-active-document"></a>關閉使用中的文件  
   
--   Call the Microsoft.Office.Interop.Visio.Document.Close method to close the active document.  
+-   呼叫 Microsoft.Office.Interop.Visio.Document.Close 方法來關閉使用中文件。  
   
-     To use the following code example, run it in the `ThisAddIn` class in an VSTO Add-in project for Visio.  
+     若要使用下列程式碼範例，請在 Visio VSTO 增益集專案的 `ThisAddIn` 類別中執行程式碼。  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#7)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#7)]  
   
-## <a name="see-also"></a>See Also  
- [Visio Solutions](../vsto/visio-solutions.md)   
- [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
- [How to: Programmatically Create New Visio Documents](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [How to: Programmatically Open Visio Documents](../vsto/how-to-programmatically-open-visio-documents.md)   
- [How to: Programmatically Save Visio Documents](../vsto/how-to-programmatically-save-visio-documents.md)   
- [How to: Programmatically Print Visio Documents](../vsto/how-to-programmatically-print-visio-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [Visio 方案](../vsto/visio-solutions.md)   
+ [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
+ [如何： 以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何： 以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [如何： 以程式設計方式儲存 Visio 文件](../vsto/how-to-programmatically-save-visio-documents.md)   
+ [如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

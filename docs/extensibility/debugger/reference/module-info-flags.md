@@ -1,57 +1,57 @@
 ---
-title: "MODULE_INFO_FLAGS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "MODULE_INFO_FLAGS"
-helpviewer_keywords: 
-  - "MODULE_INFO_FLAGS 列舉型別"
+title: "MODULE_INFO_FLAGS |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: MODULE_INFO_FLAGS
+helpviewer_keywords: MODULE_INFO_FLAGS enumeration
 ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 37c607089b548486e1df23f64f60d45f37f23978
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# MODULE_INFO_FLAGS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定模組的符號狀態。  
+# <a name="moduleinfoflags"></a>MODULE_INFO_FLAGS
+指定的符號之模組的狀態。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
+   MIF_SYMBOLS_LOADED = 0x0001  
 };  
 typedef DWORD MODULE_INFO_FLAGS;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_MODULE_INFO_FLAGS {  
-   MIF_SYMBOLS_LOADED = 0x0001  
+   MIF_SYMBOLS_LOADED = 0x0001  
 };  
 ```  
   
-## Members  
- MIF\_SYMBOLS\_LOADED  
- 至少一組符號已載入的模組 \(否則未已載入符號\)。  
+## <a name="members"></a>成員  
+ MIF_SYMBOLS_LOADED  
+ 模組載入符號的至少一組 （否則載入任何符號）。  
   
-## 備註  
- 這個值會傳回由[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)方法。  
+## <a name="remarks"></a>備註  
+ 這個值由[GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md)

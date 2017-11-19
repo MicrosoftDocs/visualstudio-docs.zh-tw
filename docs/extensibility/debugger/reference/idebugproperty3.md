@@ -4,40 +4,24 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProperty3
-helpviewer_keywords:
-- IDebugProperty3 interface
+f1_keywords: IDebugProperty3
+helpviewer_keywords: IDebugProperty3 interface
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 295baf524d3b1261826090164ccdf657b9672122
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 091ebddc0c3424bdbf8126257fe56e6959bc28c8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
-這個介面提供的支援︰  
+這個介面提供的支援：  
   
 -   擷取與屬性相關聯的任意長度字串。  
   
@@ -62,7 +46,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  除了繼承自`IDebugProperty2`、`IDebugProperty3`介面會公開下列方法。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)|傳回與屬性相關聯的字串長度。|  
 |[GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)|使用者提供的緩衝區中傳回的字串。|  
@@ -76,11 +60,11 @@ IDebugProperty3 : IDebugProperty2
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)慣用的方法為工作階段的偵錯管理員 (SDM) 來設定屬性的值。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

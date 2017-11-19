@@ -1,43 +1,45 @@
 ---
-title: "偵錯的工作階段管理員 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "此工作階段檢視的工作階段偵錯管理員"
-  - "工作階段偵錯管理員廣播"
-  - "偵錯 [偵錯 SDK]，偵錯的工作階段管理員"
-  - "偵錯的工作階段管理員"
-  - "工作階段偵錯管理員] 中，偵錯引擎多工作業"
-  - "委派的工作階段偵錯管理員"
+title: "工作階段偵錯 Manager |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- session debug manager, unifying session views
+- session debug manager, broadcasting
+- debugging [Debugging SDK], session debug manager
+- session debug manager
+- session debug manager, debug engine multiplexing
+- session debug manager, delegating
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8100c43578c11ae73f26764df74aa17caccc3611
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯的工作階段管理員
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-工作階段偵錯管理員 \(SDM\) 管理任何偵錯任何數量的程式中任何數目的電腦上的多個處理序的偵錯引擎 \(DE\) 的數目。  除了多工器偵錯引擎，SDM 會提供對 IDE 統一的檢視偵錯工作階段。  
+# <a name="session-debug-manager"></a>工作階段偵錯管理員
+工作階段的偵錯管理員 (SDM) 會管理任何數目的偵錯引擎 (DE) 偵錯任意數目的任意數目的機器上的多個處理程序中的程式。 除了多工器偵錯引擎，SDM 會提供 ide 偵錯工作階段的統一的檢視。  
   
-## 工作階段偵錯管理員作業  
- 工作階段偵錯管理員 \(SDM\) 管理 DE。  可能有一個以上的電腦上執行一次的偵錯引擎。  Multiplex DEs，SDM 會包裝從 DEs 的介面數目與公開這些屬性的 IDE，做為單一的介面。  
+## <a name="session-debug-manager-operation"></a>工作階段偵錯管理員作業  
+ 工作階段的偵錯管理員 (SDM) 管理 DE。 可能有多部電腦上同時執行的偵錯引擎。 多工處理 DEs，SDM 包裝的 DEs 介面的數字，其公開為單一介面 ide。  
   
- 多工來提升效能，某些介面不是處理。  相反地，直接從 DE，使用它們，並呼叫這些介面不會通過 SDM。  多工，例如記憶體、 程式碼，與文件內容所使用的介面不是處理，因為它們參考特定的指令、 記憶體或在偵錯特定 DE 特定程式中的文件。  沒有其他 DE 必須涉及在該層級的通訊。  
+ 若要增加效能，某些介面不是多工。 相反地，其使用直接從 DE，以及這些介面的呼叫不會通過 SDM。 例如，用於記憶體、 程式碼，以及文件內容的介面都是不多工，因為兩者參考特定指令、 記憶體或文件中的特定 DE 偵錯的特定程式。 沒有其他 DE 必須涉及在該層級的通訊。  
   
- 這不是所有的內容之內，則為 true。  運算式評估內容介面的呼叫會經過 SDM。  運算式評估期間 SDM 會換行[IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) ，因為該運算式評估時，它可能包含多個正在偵錯程式可能在相同執行緒上執行的處理序的 DEs 提供 IDE 的介面。  
+ 這不是所有內容的則為 true。 運算式評估內容介面呼叫移到 SDM。 在運算式評估期間包裝 SDM [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md)介面，它可讓在 IDE 因為評估該運算式時，它可能包含多個正在偵錯程式可能之同一處理序的 DEs在相同執行緒上執行。  
   
- SDM 通常會做為一種委派機制，但它可能扮演廣播的機制。  例如，運算式的評估期間 SDM 扮演廣播的機制，來通知所有 DEs 他們可以在指定的執行緒上執行程式碼。  同樣地，當 SDM 收到停止事件時，它會廣播給他們應該停止執行的所有程式。  呼叫一個步驟時，SDM 廣播到所有的程式就可以繼續執行。  中斷點也會為每個 DE 廣播。  
+ SDM 通常是做為委派機制，但它可能會做為廣播機制。 例如，在運算式評估期間 SDM 做為廣播機制來通知所有 DEs，它們可以在指定的執行緒上執行程式碼。 同樣地，當 SDM 收到停止事件，它會廣播，應停止執行的所有程式。 呼叫步驟時，SDM 廣播到所有程式，他們可以繼續執行。 中斷點也已廣播給每個 DE 中。  
   
- SDM 不會追蹤目前的程式、 執行緒或堆疊框架。  處理程序、 程式及執行緒資訊傳送到特定的偵錯事件搭配 SDM。  
+ SDM 不會追蹤目前的處理序、 執行緒或堆疊框架。 處理程序、 程式和執行緒資訊傳送給特定的偵錯事件搭配 SDM。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [偵錯引擎](../../extensibility/debugger/debug-engine.md)   
  [偵錯工具元件](../../extensibility/debugger/debugger-components.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

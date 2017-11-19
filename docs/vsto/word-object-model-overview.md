@@ -1,12 +1,10 @@
 ---
-title: Word Object Model Overview | Microsoft Docs
+title: "Word 物件模型概觀 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,128 +18,128 @@ helpviewer_keywords:
 - objects [Office development in Visual Studio], Office object models
 - Office object models
 ms.assetid: b66a7d9e-0a51-4ef5-8754-b2b899f9094c
-caps.latest.revision: 78
-author: kempb
-ms.author: kempb
+caps.latest.revision: "78"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cc4d99791bcd98dc57bb55cf21f65d7e9634360e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: bd89a4cd713e4cdff22ffbbd570ee2e0bf60ef37
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="word-object-model-overview"></a>Word Object Model Overview
-  When you develop Word solutions in Visual Studio, you interact with the Word object model. This object model consists of classes and interfaces that are provided in the primary interop assembly for Word, and are defined in the <xref:Microsoft.Office.Interop.Word> namespace.  
+# <a name="word-object-model-overview"></a>Word 物件模型概觀
+  當您在 Visual Studio 中開發 Word 解決方案時，會與 Word 物件模型互動。 組成這個物件模型的類別和介面，是由 Word 的主要 Interop 組件所提供，並在 <xref:Microsoft.Office.Interop.Word> 命名空間中定義。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- This topic provides a brief overview of the Word object model. For resources where you can learn more about the entire Word object model, see [Using the Word Object Model Documentation](#WordOMDocumentation).  
+ 本主題提供 Word 物件模型的簡短概觀。 如需可以了解整個 Word 物件模型的資源，請參閱 [使用 Word 物件模型文件](#WordOMDocumentation)。  
   
- For information about using the Word object model to perform specific tasks, see the following topics:  
+ 如需使用 Word 物件模型執行特定工作的詳細資訊，請參閱下列主題：  
   
--   [Working with Documents](../vsto/working-with-documents.md)  
+-   [使用文件](../vsto/working-with-documents.md)  
   
--   [Working with Text in Documents](../vsto/working-with-text-in-documents.md)  
+-   [處理文件中的文字](../vsto/working-with-text-in-documents.md)  
   
--   [Working with Tables](../vsto/working-with-tables.md)  
+-   [處理資料表](../vsto/working-with-tables.md)  
   
-##  <a name="understanding"></a> Understanding the Word Object Model  
- Word provides hundreds of objects with which you can interact. These objects are organized in a hierarchy that closely follows the user interface. At the top of the hierarchy is the <xref:Microsoft.Office.Interop.Word.Application> object. This object represents the current instance of Word. The <xref:Microsoft.Office.Interop.Word.Application> object contains the <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, and <xref:Microsoft.Office.Interop.Word.Range> objects. Each of these objects has many methods and properties that you can access to manipulate and interact with the object.  
+##  <a name="understanding"></a> 了解 Word 物件模型  
+ Word 提供數百個您可與之互動的物件。 這些物件是在密切遵循使用者介面的階層內組合管理。 階層的頂端是 <xref:Microsoft.Office.Interop.Word.Application> 物件。 這個物件代表 Word 目前的執行個體。 <xref:Microsoft.Office.Interop.Word.Application> 物件包含 <xref:Microsoft.Office.Interop.Word.Document>、 <xref:Microsoft.Office.Interop.Word.Selection>、 <xref:Microsoft.Office.Interop.Word.Bookmark>和 <xref:Microsoft.Office.Interop.Word.Range> 物件。 這些物件每個都有許多方法和屬性，您可存取它們以操作物件並與之互動。  
   
- The following illustration shows one view of these objects in the hierarchy of the Word object model.  
+ 下圖中的檢視顯示這些物件在 Word 物件模型中的階層。  
   
- ![Word Object Model graphic](../vsto/media/wrwordobjectmodel.gif "Word Object Model graphic")  
+ ![Word 物件模型圖形](../vsto/media/wrwordobjectmodel.gif "Word 物件模型圖形")  
   
- At first glance, objects appear to overlap. For example, the <xref:Microsoft.Office.Interop.Word.Document> and <xref:Microsoft.Office.Interop.Word.Selection> objects are both members of the <xref:Microsoft.Office.Interop.Word.Application> object, but the <xref:Microsoft.Office.Interop.Word.Document> object is also a member of the <xref:Microsoft.Office.Interop.Word.Selection> object. Both the <xref:Microsoft.Office.Interop.Word.Document> and <xref:Microsoft.Office.Interop.Word.Selection> objects contain <xref:Microsoft.Office.Interop.Word.Bookmark> and <xref:Microsoft.Office.Interop.Word.Range> objects. The overlap exists because there are multiple ways you can access the same type of object. For example, you apply formatting to a <xref:Microsoft.Office.Interop.Word.Range> object; but you may want to access the range of the current selection, of a particular paragraph, of a section, or of the entire document.  
+ 乍看之下，物件會出現重疊。 例如， <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.Selection> 兩個物件是 <xref:Microsoft.Office.Interop.Word.Application> 物件的成員，但 <xref:Microsoft.Office.Interop.Word.Document> 物件也是 <xref:Microsoft.Office.Interop.Word.Selection> 物件的成員。 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.Selection> 兩個物件包含 <xref:Microsoft.Office.Interop.Word.Bookmark> 和 <xref:Microsoft.Office.Interop.Word.Range> 物件。 因為存取同型別物件的方法很多，所以會有重疊。 例如，您將格式套用至 <xref:Microsoft.Office.Interop.Word.Range> 物件，但是您可能想要存取目前選取範圍、特定段落、某個區段或整份文件的範圍。  
   
- The following sections briefly describe the top-level objects and how they interact with each other. These objects include the following five:  
+ 下列各節簡述最上層物件，以及它們彼此之間的互動方式。 這些物件有五種：  
   
--   Application object  
+-   Application 物件  
   
--   Document object  
+-   Document 物件  
   
--   Selection object  
+-   Selection 物件  
   
--   Range object  
+-   Range 物件  
   
--   Bookmark object  
+-   Bookmark 物件  
   
- In addition to the Word object model, Office projects in Visual Studio provide *host items* and *host controls* that extend some objects in the Word object model. Host items and host controls behave like the Word objects they extend, but they also have additional functionality such as data-binding capabilities and extra events. For more information, see [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md) and [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ 除了 Word 物件模型之外，Visual Studio 中的 Office 專案還提供 *「主項目」* (Host Item) 和 *「主控制項」* (Host Control)，以擴充 Word 物件模型中的部分物件。 主項目和主控制項的行為與它們所擴充的 Word 物件相同，但還具有其他功能，例如資料繫結功能和額外事件。 如需詳細資訊，請參閱 [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md) 與 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
-### <a name="application-object"></a>Application Object  
- The <xref:Microsoft.Office.Interop.Word.Application> object represents the Word application, and is the parent of all of the other objects. Its members usually apply to Word as a whole. You can use its properties and methods to control the Word environment.  
+### <a name="application-object"></a>Application 物件  
+ <xref:Microsoft.Office.Interop.Word.Application> 物件代表 Word 應用程式，而且是所有其他物件的父系。 其成員通常會整體套用至 Word。 您可以使用其屬性和方法控制 Word 環境。  
   
- In VSTO Add-in projects, you can access the <xref:Microsoft.Office.Interop.Word.Application> object by using the `Application` field of the `ThisAddIn` class. For more information, see [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).  
+ 在 VSTO 增益集專案中，您可以使用 <xref:Microsoft.Office.Interop.Word.Application> 類別的 `Application` 欄位存取 `ThisAddIn` 物件。 如需詳細資訊，請參閱 [Programming VSTO Add-Ins](../vsto/programming-vsto-add-ins.md)。  
   
- In document-level projects, you can access the <xref:Microsoft.Office.Interop.Word.Application> object by using the <xref:Microsoft.Office.Tools.Word.Document.Application%2A> property of the `ThisDocument` class.  
+ 在文件層級專案中，您可以使用 <xref:Microsoft.Office.Interop.Word.Application> 類別的 <xref:Microsoft.Office.Tools.Word.Document.Application%2A> 屬性存取 `ThisDocument` 物件。  
   
-### <a name="document-object"></a>Document Object  
- The <xref:Microsoft.Office.Interop.Word.Document> object is central to programming Word. It represents a document and all of its contents. When you open a document or create a new document, you create a new <xref:Microsoft.Office.Interop.Word.Document> object, which is added to the <xref:Microsoft.Office.Interop.Word.Documents> collection of the <xref:Microsoft.Office.Interop.Word.Application> object. The document that has the focus is called the active document. It is represented by the <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> property of the <xref:Microsoft.Office.Interop.Word.Application> object.  
+### <a name="document-object"></a>Document 物件  
+ <xref:Microsoft.Office.Interop.Word.Document> 物件是 Word 程式設計的核心。 它代表文件及其所有內容。 當您開啟文件或建立新文件時，即建立新的 <xref:Microsoft.Office.Interop.Word.Document> 物件，它會加入 <xref:Microsoft.Office.Interop.Word.Documents> 物件的 <xref:Microsoft.Office.Interop.Word.Application> 集合。 具有焦點的文件稱為使用中文件。 它是由 <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Application> 屬性所代表。  
   
- The Office development tools in Visual Studio extend the <xref:Microsoft.Office.Interop.Word.Document> object by providing the <xref:Microsoft.Office.Tools.Word.Document> type. This type is a *host item* that gives you access to all features of a <xref:Microsoft.Office.Interop.Word.Document> object, and adds additional events and the ability to add managed controls.  
+ Visual Studio 中的 Office 程式開發工具會藉由提供 <xref:Microsoft.Office.Interop.Word.Document> 類型，來擴充 <xref:Microsoft.Office.Tools.Word.Document> 物件。 這個型別是 *「主項目」* (host item)，可讓您存取 <xref:Microsoft.Office.Interop.Word.Document> 物件的所有功能、加入其他事件，以及能夠加入 Managed 控制項。  
   
- When you create a document-level project, you can access <xref:Microsoft.Office.Tools.Word.Document> members by using the generated `ThisDocument` class in your project. You can access members of the <xref:Microsoft.Office.Tools.Word.Document> host item by using the **Me** or **this** keywords from code in the `ThisDocument` class, or by using `Globals.ThisDocument` from code outside the `ThisDocument` class. For more information, see [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md). For example, to select the first paragraph in the document, use the following code.  
+ 當您建立文件層級專案時，您可以使用在專案中產生的 <xref:Microsoft.Office.Tools.Word.Document> 類別，存取 `ThisDocument` 成員。 您可以使用 <xref:Microsoft.Office.Tools.Word.Document> 類別之程式碼的 **Me** 或 **this** 關鍵字，或使用 `ThisDocument` 類別外程式碼的 `Globals.ThisDocument` ，存取 `ThisDocument` 物件。 如需詳細資訊，請參閱 [Programming Document-Level Customizations](../vsto/programming-document-level-customizations.md)。 例如，若要選取文件中的第一個段落，請使用下列程式碼。  
   
- [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)] [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
+ [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
+ [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]  
   
- In VSTO Add-in projects, you can generate <xref:Microsoft.Office.Tools.Word.Document> host items at run time. You can use the generated host item to add controls to the associated document. For more information, see [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).  
+ 在 VSTO 增益集專案中，您可以在執行階段產生 <xref:Microsoft.Office.Tools.Word.Document> 主項目。 您可以使用產生的主項目，在相關聯的文件中加入控制項。 如需詳細資訊，請參閱 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。  
   
-### <a name="selection-object"></a>Selection Object  
- The <xref:Microsoft.Office.Interop.Word.Selection> object represents the area that is currently selected. When you perform an operation in the Word user interface, such as bolding text, you select, or highlight the text and then apply the formatting. The <xref:Microsoft.Office.Interop.Word.Selection> object is always present in a document. If nothing is selected, then it represents the insertion point. In addition, a selection can encompass multiple blocks of text that are not contiguous.  
+### <a name="selection-object"></a>Selection 物件  
+ <xref:Microsoft.Office.Interop.Word.Selection> 物件都代表目前選取的區域。 當您在 Word 使用者介面執行粗體文字等作業時，您要先選取或反白顯示文字，然後再套用格式設定。 文件一律有 <xref:Microsoft.Office.Interop.Word.Selection> 物件。 如不選取任何文字，則表示插入點。 此外，還可選取多個不連續的文字區塊。  
   
-### <a name="range-object"></a>Range Object  
- The <xref:Microsoft.Office.Interop.Word.Range> object represents a contiguous area in a document, and is defined by a starting character position and an ending character position. You are not limited to a single <xref:Microsoft.Office.Interop.Word.Range> object. You can define multiple <xref:Microsoft.Office.Interop.Word.Range> objects in the same document. A <xref:Microsoft.Office.Interop.Word.Range> object has the following characteristics:  
+### <a name="range-object"></a>Range 物件  
+ <xref:Microsoft.Office.Interop.Word.Range> 物件代表文件中的連續區域，由起始字元位置和結束字元位置所定義。 不限於單一 <xref:Microsoft.Office.Interop.Word.Range> 物件。 在同一份文件中，您可以定義多個 <xref:Microsoft.Office.Interop.Word.Range> 物件。 <xref:Microsoft.Office.Interop.Word.Range> 物件具有下列特性：  
   
--   It can consist of the insertion point alone, a range of text, or the entire document.  
+-   可由單獨的插入點、文字範圍或整份文件組成。  
   
--   It includes non-printing characters such as spaces, tab characters, and paragraph marks.  
+-   包括空格等非列印字元，tab 字元和段落標記。  
   
--   It can be the area represented by the current selection, or it can represent an area different from the current selection.  
+-   可以是目前選取的區域範圍，也可以是目前選取範圍以外的區域。  
   
--   It is not visible in a document, unlike a selection, which is always visible.  
+-   與一定會顯示的選項不同，它不會顯示在文件中。  
   
--   It is not saved with a document and exists only while the code is running.  
+-   不隨文件儲存，僅程式碼執行時才會存在。  
   
- When you insert text at the end of a range, Word automatically expands the range to include the inserted text.  
+ 當您在範圍結尾插入文字時，Word 會自動擴展範圍以包含插入的文字。  
   
-### <a name="content-control-objects"></a>Content Control Objects  
- A <xref:Microsoft.Office.Interop.Word.ContentControl> provides a way for you to control the input and presentation of text and other types of content in Word documents. A <xref:Microsoft.Office.Interop.Word.ContentControl> can display several different types of UI that are optimized for use in Word documents, such as a rich text control, a date picker, or a combo box. You can also use a <xref:Microsoft.Office.Interop.Word.ContentControl> to prevent users from editing sections of the document or template.  
+### <a name="content-control-objects"></a>內容控制項物件  
+ <xref:Microsoft.Office.Interop.Word.ContentControl> 提供的方法，可讓您控制 Word 文件文字和其他類型內容的輸入和簡報。 <xref:Microsoft.Office.Interop.Word.ContentControl> 可以顯示數種不同型別的 UI，最佳化 Word 文件的運用，例如 RTF 文字控制項、日期選擇器或下拉式方塊。 您也可以使用 <xref:Microsoft.Office.Interop.Word.ContentControl> 防止使用者編輯文件或範本的區段。  
   
- Visual Studio extends the <xref:Microsoft.Office.Interop.Word.ContentControl> object into several different host controls. Whereas the <xref:Microsoft.Office.Interop.Word.ContentControl> object can display any of the different types of UI that are available for content controls, Visual Studio provides a different type for each content control. For example, you can use a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to create a rich text control, or you can use a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to create a date picker. These host controls behave like the native <xref:Microsoft.Office.Interop.Word.ContentControl>, but they have additional events and data-binding capabilities. For more information, see [Content Controls](../vsto/content-controls.md).  
+ Visual Studio 會將 <xref:Microsoft.Office.Interop.Word.ContentControl> 物件擴充成數種不同的主控制項。 雖然 <xref:Microsoft.Office.Interop.Word.ContentControl> 物件可以顯示內容控制項可用的任何不同型別的 UI，但 Visual Studio 卻可為每個內容控制項提供不同的型別。 例如，您可以使用 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 建立 RTF 文字控制項，或使用 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 建立日期選擇器。 這些主控制項行如原生 <xref:Microsoft.Office.Interop.Word.ContentControl>，卻又具有事件和資料繫結功能。 如需詳細資訊，請參閱 [Content Controls](../vsto/content-controls.md)。  
   
-### <a name="bookmark-object"></a>Bookmark Object  
- The <xref:Microsoft.Office.Interop.Word.Bookmark> object represents a contiguous area in a document, with both a starting position and an ending position. You can use bookmarks to mark a location in a document, or as a container for text in a document. A <xref:Microsoft.Office.Interop.Word.Bookmark> object can consist of the insertion point, or be as large as the entire document. A <xref:Microsoft.Office.Interop.Word.Bookmark> has the following characteristics that set it apart from the <xref:Microsoft.Office.Interop.Word.Range> object:  
+### <a name="bookmark-object"></a>Bookmark 物件  
+ <xref:Microsoft.Office.Interop.Word.Bookmark> 物件代表文件中的連續區域，具備起始位置和結束位置。 您可以使用書籤在文件中標記位置，或用為文件的文字容器。 <xref:Microsoft.Office.Interop.Word.Bookmark> 物件可由插入點組成，或和整份文件一樣大。 <xref:Microsoft.Office.Interop.Word.Bookmark> 具有下列特性，使其和 <xref:Microsoft.Office.Interop.Word.Range> 物件有所區別：  
   
--   You can name the bookmark at design time.  
+-   您可以在設計階段命名書籤。  
   
--   <xref:Microsoft.Office.Interop.Word.Bookmark> objects are saved with the document, and thus are not deleted when the code stops running or your document is closed.  
+-   <xref:Microsoft.Office.Interop.Word.Bookmark> 物件與文件一起儲存，因此不會在程式碼停止執行或文件關閉刪除。  
   
--   Bookmarks can be hidden or made visible by setting the <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> property of the <xref:Microsoft.Office.Interop.Word.View> object to **false** or **true**.  
+-   將 <xref:Microsoft.Office.Interop.Word.View.ShowBookmarks%2A> 屬性存取 <xref:Microsoft.Office.Interop.Word.View> 屬性設為 **false** 或 **true**。  
   
- Visual Studio extends the <xref:Microsoft.Office.Interop.Word.Bookmark> object by providing the <xref:Microsoft.Office.Tools.Word.Bookmark> host control. The <xref:Microsoft.Office.Tools.Word.Bookmark> host control behaves like a native <xref:Microsoft.Office.Interop.Word.Bookmark>, but has additional events and data-binding capabilities. You can bind data to a bookmark control on a document in the same way that you bind data to a text box control on a Windows Form. For more information, see [Bookmark Control](../vsto/bookmark-control.md).  
+ Visual Studio 會提供 <xref:Microsoft.Office.Interop.Word.Bookmark> 主控制項，藉以擴充 <xref:Microsoft.Office.Tools.Word.Bookmark> 物件。 <xref:Microsoft.Office.Tools.Word.Bookmark> 主控制項行如原生 <xref:Microsoft.Office.Interop.Word.Bookmark>，卻又具有事件和資料繫結功能。 您可以用將資料繫結至 Windows 表單文字方塊控制項的方式，將資料繫結至文件的書籤控制項。 如需詳細資訊，請參閱 [Bookmark Control](../vsto/bookmark-control.md)。  
   
-##  <a name="WordOMDocumentation"></a> Using the Word Object Model Documentation  
- For complete information about the Word object model, you can refer to the Word primary interop assembly (PIA) reference and the Visual Basic for Applications (VBA) object model reference.  
+##  <a name="WordOMDocumentation"></a> 使用 Word 物件模型文件  
+ 如需 Word 物件模型的完整資訊，您可以參閱 Word 主要 Interop 組件 (PIA) 參考和 Visual Basic for Applications (VBA) 物件模型參考。  
   
-### <a name="primary-interop-assembly-reference"></a>Primary Interop Assembly Reference  
- The Word PIA reference documentation describes the types in the primary interop assembly for Word. This documentation is available from the following location: [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
+### <a name="primary-interop-assembly-reference"></a>主要 Interop 組件參考  
+ Word PIA 參考文件說明 Word 主要 Interop 組件中的類型。 您可以從下列位置取得這份文件： [Word 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
- For more information about the design of the Word PIA, such as the differences between classes and interfaces in the PIA and how events in the PIA are implemented, see [Overview of Classes and Interfaces in the Office Primary Interop Assemblies](http://go.microsoft.com/fwlink/?LinkId=189592).  
+ 如需 Word PIA 設計的詳細資訊，例如 PIA 中類別和介面的差異以及 PIA 中實作事件的方式，請參閱 [Office 主要 Interop 組件中的類別和介面概觀](http://go.microsoft.com/fwlink/?LinkId=189592)。  
   
-### <a name="vba-object-model-reference"></a>VBA Object Model Reference  
- The VBA object model reference documents the Word object model as it is exposed to VBA code. For more information, see [Word 2010 Object Model Reference](http://go.microsoft.com/fwlink/?LinkId=199772).  
+### <a name="vba-object-model-reference"></a>VBA 物件模型參考  
+ VBA 物件模型參考記載公開給 VBA 程式碼時的 Word 物件模型。 如需詳細資訊，請參閱 [Word 2010 物件模型參考](http://go.microsoft.com/fwlink/?LinkId=199772)。  
   
- All of the objects and members in the VBA object model reference correspond to types and members in the Word PIA. For example, the Document object in the VBA object model reference corresponds to the <xref:Microsoft.Office.Interop.Word.Document> object in the Word PIA. Although the VBA object model reference provides code examples for most properties, methods, and events, you must translate the VBA code in this reference to Visual Basic or Visual C# if you want to use them in a Word project that you create by using Visual Studio.  
+ VBA 物件模型參考中的所有物件和成員都會對應至 Word PIA 中的類型和成員。 例如，VBA 物件模型參考中的文件物件對應至<xref:Microsoft.Office.Interop.Word.Document>Word PIA 中的物件。 雖然 VBA 物件模型參考提供大部分屬性、方法和事件的程式碼範例，但如果您想要在以 Visual Studio 建立的 Word 專案中使用這些程式碼範例，則必須將這個參考中的 VBA 程式碼轉譯為 Visual Basic 或 Visual C#。  
   
-## <a name="see-also"></a>See Also  
- [Office Primary Interop Assemblies](../vsto/office-primary-interop-assemblies.md)   
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Working with Documents](../vsto/working-with-documents.md)   
- [Working with Text in Documents](../vsto/working-with-text-in-documents.md)   
- [Working with Tables](../vsto/working-with-tables.md)   
+## <a name="see-also"></a>另請參閱  
+ [Office 主要 Interop 組件](../vsto/office-primary-interop-assemblies.md)   
+ [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
+ [使用文件](../vsto/working-with-documents.md)   
+ [處理文件中的文字](../vsto/working-with-text-in-documents.md)   
+ [使用資料表](../vsto/working-with-tables.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

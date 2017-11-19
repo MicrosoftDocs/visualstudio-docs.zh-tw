@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Web Part for SharePoint by Using a Designer | Microsoft Docs'
+title: "逐步解說： 建立 sharepoint Web 組件，使用設計工具 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,188 +17,191 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
 ms.assetid: 3dd62654-ada2-468f-b7da-eb5704a2ff7a
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 58ffc130a6b339d101cb24b582420d78f892aaa5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 55da85b9740216cefe55911d79dab2c16b035695
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>Walkthrough: Creating a Web Part for SharePoint by Using a Designer
-  If you create web parts for a SharePoint site, your users can directly modify the content, appearance, and behavior of pages in that site by using a browser. This walkthrough shows you how to create a web part visually by using the SharePoint **Visual Web Part** project template in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+# <a name="walkthrough-creating-a-web-part-for-sharepoint-by-using-a-designer"></a>逐步解說：使用設計工具建立 SharePoint 的 Web 組件
+  如果您建立 SharePoint 網站的 web 組件，您的使用者可以直接使用瀏覽器修改內容、 外觀和行為，該網站中的頁數。 本逐步解說會示範如何使用 SharePoint，以視覺化方式建立的 web 組件**視覺 Web 組件**中的專案範本[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
- The web part that you'll create displays a monthly calendar view and a check box for each calendar list on the site. Users can specify which calendar lists to include in the monthly calendar view by selecting the check boxes.  
+ 您將建立的 web 組件的網站上顯示每月的行事曆檢視並為每個行事曆清單 核取方塊。 使用者可以指定哪些行事曆列出要包含在每月的行事曆檢視中的核取方塊。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Creating a web part by using the **Visual Web Part** project template.  
+-   使用建立的 web 組件**視覺 Web 組件**專案範本。  
   
--   Designing the web part by using the Visual Web Developer designer in Visual Studio.  
+-   使用 Visual Studio 中的 Visual Web Developer 設計工具設計的 web 組件。  
   
--   Adding code to handle the events of controls on the web part.  
+-   加入程式碼來處理的 web 組件上的控制項事件。  
   
--   Testing the web part in SharePoint.  
+-   在 SharePoint 中測試 web 組件。  
   
     > [!NOTE]  
-    >  Your computer might show different names or locations for some elements of the user interface for Visual Studio in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. See [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+    >  在下列指示您的電腦可能會顯示不同的名稱或位置 for Visual Studio 使用者介面的某些項目。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
--   Supported editions of Windows and SharePoint. See [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Windows 版本和 SharePoint。 請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)] or greater.  
+-   [!INCLUDE[vsPro](../sharepoint/includes/vspro-md.md)]或更新版本。  
   
-## <a name="creating-a-web-part-project"></a>Creating a web part project  
- First, create a web part project by using the **Visual Web Part** project template.  
+## <a name="creating-a-web-part-project"></a>建立 web 組件專案  
+ 首先，建立使用的 web 組件專案**視覺 Web 組件**專案範本。  
   
-#### <a name="to-create-a-visual-web-part-project"></a>To create a Visual Web Part project  
+#### <a name="to-create-a-visual-web-part-project"></a>若要建立視覺 Web 組件專案  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] by using the **Run as Administrator** option.  
+1.  啟動[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用**系統管理員身分執行**選項。  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-     The **New Project** dialog box appears.  
+     [ **新增專案** ] 對話方塊隨即出現。  
   
-3.  In the **New Project** dialog box, under either **Visual C#** or **Visual Basic**, expand **Office/SharePoint**, and then choose the **SharePoint Solutions** category.  
+3.  在**新專案**對話方塊之下**Visual C#**或**Visual Basic**，依序展開**Office/SharePoint**，然後選擇  **SharePoint 方案**類別目錄。  
   
-4.  In the list of templates, choose the **SharePoint 2013 - Visual Web Part** template, and then choose the **OK** button.  
+4.  在範本清單中，選擇  **SharePoint 2013-視覺 Web 組件**範本，然後選擇 **確定** 按鈕。  
   
-     The **SharePoint Customization Wizard** appears. By using this wizard, you can specify the site that you'll use to debug the project and the trust level of the solution.  
+     **SharePoint 自訂精靈**隨即出現。 使用此精靈，您可以指定要用來偵錯專案和方案的信任層級的站台。  
   
-5.  In the **What is the trust level for this SharePoint solution?** section, choose the **Deploy as a farm solution** option button.  
+5.  在**此 SharePoint 方案的信任層級為何？**區段中，選擇**部署為伺服陣列方案**選項按鈕。  
   
-6.  Choose the **Finish** button to accept the default local SharePoint site.  
+6.  選擇**完成** 按鈕，接受預設的本機 SharePoint 網站。  
   
-## <a name="designing-the-web-part"></a>Designing the web part  
- Design the web part by adding controls from the **Toolbox** to the surface of the Visual Web Developer designer.  
+## <a name="designing-the-web-part"></a>設計網頁組件  
+ 將控制項從設計網頁組件**工具箱**Visual Web Developer 設計工具介面。  
   
-#### <a name="to-design-the-layout-of-the-web-part"></a>To design the layout of the web part  
+#### <a name="to-design-the-layout-of-the-web-part"></a>若要設計的 web 組件配置  
   
-1.  On the Visual Web Developer designer, choose the **Design** tab to switch to Design view.  
+1.  在 Visual Web Developer 設計工具中，選擇 **設計**切換至 設計 檢視中的索引標籤。  
   
-2.  On the menu bar, choose **View**, **Toolbox**.  
+2.  在功能表列上，依序選擇 [檢視] 和 [工具箱]。  
   
-3.  In the **Standard** node of the **Toolbox**, choose the **CheckBoxList** control, and then perform one of the following steps:  
+3.  在**標準**節點**工具箱**，選擇**CheckBoxList**控制項，然後再執行下列步驟：  
   
-    -   Open the shortcut menu for the **CheckBoxList** control, choose **Copy**, open the shortcut menu for the first line in the designer, and then choose **Paste**.  
+    -   開啟快顯功能表**CheckBoxList**控制項、 選擇 **複製**，在設計師中，開啟的第一行的捷徑功能表，然後選擇**貼上**。  
   
-    -   Drag the **CheckBoxList** control from the **Toolbox**, and connect the control to the first line in the designer.  
+    -   拖曳**CheckBoxList**控制項從**工具箱**，並將控制項連接至設計工具中的第一行。  
   
-4.  Repeat the previous step, but move a Button to the next line of the designer.  
+4.  重複上述步驟，但將按鈕移至下一行的設計工具。  
   
-5.  In the designer, choose the **Button1** button.  
+5.  在設計工具中，選擇 [ **Button1** ] 按鈕。  
   
-6.  On the menu bar, choose **View**, **Properties Window**.  
+6.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
   
-     The **Properties** window opens.  
+     **屬性**視窗隨即開啟。  
   
-7.  In the **Text** property of the button, enter **Update**.  
+7.  在**文字**按鈕的屬性中輸入**更新**。  
   
-## <a name="handling-the-events-of-controls-on-the-web-part"></a>Handling the events of controls on the web part  
- Add code that enables the user to add calendars to the master calendar view.  
+## <a name="handling-the-events-of-controls-on-the-web-part"></a>處理 web 組件上的控制項的事件  
+ 加入程式碼，讓使用者新增至主要行事曆檢視行事曆。  
   
-#### <a name="to-handle-events-of-controls-on-the-web-part"></a>To handle events of controls on the web part  
+#### <a name="to-handle-events-of-controls-on-the-web-part"></a>若要處理的 web 組件上的控制項事件  
   
-1.  Perform one of the following sets of steps:  
+1.  請執行下列其中一組步驟：  
   
-    -   In the designer, double-click the **Update** button.  
+    -   在設計師中，按兩下**更新** 按鈕。  
   
-    -   In the **Properties** window for the **Update** button, choose the **Events** button. In the **Click** property, enter **Button1_Click**, and then choose the Enter key.  
+    -   在**屬性**視窗**更新**按鈕，選擇**事件** 按鈕。 在**按一下**屬性中，輸入**Button1_Click**，然後選擇 Enter 鍵。  
   
-     The user control code file opens in Code Editor and the `Button1_Click` event handler appears. Later, you'll add code to this event handler.  
+     使用者控制項程式碼檔案會開啟在程式碼編輯器和`Button1_Click`事件處理常式隨即出現。 稍後，您會將程式碼加入此事件處理常式。  
   
-2.  Add the following statements to the top of the user control code file.  
+2.  加入使用者控制項程式碼檔案頂端加入下列陳述式。  
   
-     [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]  [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
+     [!code-vb[SP_VisualWebPart#1](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
+     [!code-csharp[SP_VisualWebPart#1](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]  
   
-3.  Add the following line of code to the `VisualWebPart1` class. This code declares a monthly calendar view control.  
+3.  加入下列一行程式碼`VisualWebPart1`類別。 此程式碼會宣告的每月的行事曆檢視控制項。  
   
-     [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]  [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
+     [!code-vb[SP_VisualWebPart#2](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#2)]
+     [!code-csharp[SP_VisualWebPart#2](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#2)]  
   
-4.  Replace the `Page_Load` method of the `VisualWebPart1` class with the following code. This code performs the following tasks:  
+4.  取代`Page_Load`方法`VisualWebPart1`為下列程式碼的類別。 這個程式碼會執行下列工作：  
   
-    -   Adds a monthly calendar view to the user control.  
+    -   將每月的行事曆檢視加入至使用者控制項。  
   
-    -   Adds a check box for each calendar list on the site.  
+    -   新增站台上的核取方塊，為每個行事曆清單。  
   
-    -   Specifies a template for each type of item that appears in the calendar view.  
+    -   行事曆 檢視中，指定每一種顯示的項目範本。  
   
-     [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)] [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]  
+     [!code-vb[SP_VisualWebPart#3](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#3)]
+     [!code-csharp[SP_VisualWebPart#3](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#3)]  
   
-5.  Replace the `Button1_Click` method of the `VisualWebPart1` class with the following code. This code adds items from each selected calendar to the master calendar view.  
+5.  取代`Button1_Click`方法`VisualWebPart1`為下列程式碼的類別。 此程式碼會從每個選取的行事曆項目加入主要行事曆檢視。  
   
-     [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]  [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]  
+     [!code-vb[SP_VisualWebPart#4](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1usercontrol.ascx.vb#4)]
+     [!code-csharp[SP_VisualWebPart#4](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1usercontrol.ascx.cs#4)]  
   
-## <a name="testing-the-web-part"></a>Testing the web part  
- When you run the project, the SharePoint site opens. The web part is automatically added to the Web Part Gallery in SharePoint. To test this project, you'll perform the following tasks:  
+## <a name="testing-the-web-part"></a>測試 web 組件  
+ 當您執行專案時，會開啟 SharePoint 網站。 Web 組件會自動加入至 sharepoint 網頁組件庫。 若要測試此專案，您會執行下列工作：  
   
--   Add an event to each of two separate calendar lists.  
+-   將事件加入至每兩個不同的行事曆清單。  
   
--   Add the web part to a web part page.  
+-   將 web 組件加入至網頁組件。  
   
--   Specify the lists to include in the monthly calendar view.  
+-   指定要包含在每月的行事曆檢視清單。  
   
-#### <a name="to-add-events-to-calendar-lists-on-the-site"></a>To add events to calendar lists on the site  
+#### <a name="to-add-events-to-calendar-lists-on-the-site"></a>若要將事件新增至站台上的行事曆清單  
   
-1.  In Visual Studio, choose the F5 key.  
+1.  在 Visual Studio 中，選擇 F5 鍵。  
   
-     The SharePoint site opens, and the [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] Quick Launch bar appears on the page.  
+     SharePoint 網站隨即開啟，而[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]快速啟動 列會出現在頁面上。  
   
-2.  On the Quick Launch bar, under **Lists**, choose the **Calendar** link.  
+2.  在 [快速啟動] 工具列上底下**列出**，選擇**行事曆**連結。  
   
-     The **Calendar** page appears.  
+     **行事曆**頁面隨即出現。  
   
-     If you no Calendar link appears on the Quick Launch bar, choose the **Site Contents** link. If the Site Contents page doesn't show a **Calendar** item, create one.  
+     如果您沒有行事曆] 連結出現在 [快速啟動] 列上，選擇 [**網站內容**連結。 如果沒有顯示 [站台內容] 頁面**行事曆**項目，請建立一個。  
   
-3.  On the Calendar page, choose a day, and then choose the **Add** link in the selected day to add an event.  
+3.  在行事曆 頁面上，選擇一天、，然後選擇**新增**中選取的日期，若要加入事件的連結。  
   
-4.  In the **Title** box, enter **Event in the default calendar**, and then choose the **Save** button.  
+4.  在**標題**方塊中，輸入**中預設的行事曆事件**，然後選擇 [**儲存**] 按鈕。  
   
-5.  Choose the **Site Contents** link, and then choose the **Add an app** tile.  
+5.  選擇**網站內容**連結，，然後選擇 **新增應用程式**磚。  
   
-6.  On the **Create** page, choose the **Calendar** type, name the calendar, and then choose the **Create** button.  
+6.  在**建立**頁面上，選擇**行事曆**類型、 命名行事曆，然後選擇**建立** 按鈕。  
   
-7.  Add an event to the new calendar, name the event **Event in the custom calendar**, and then choose the **Save** button.  
+7.  中，將事件加入至新的行事曆事件**中自訂行事曆事件**，然後選擇 [**儲存**] 按鈕。  
   
-#### <a name="to-add-the-web-part-to-a-web-part-page"></a>To add the web part to a web part page  
+#### <a name="to-add-the-web-part-to-a-web-part-page"></a>若要將 web 組件加入至網頁組件  
   
-1.  On the **Site Contents** page, open the **Site Pages** folder.  
+1.  在**網站內容**頁面上，開啟**網站頁面**資料夾。  
   
-2.  On the ribbon, choose the **Files** tab, open the **New Document** menu, and then choose the **Web Part Page** command.  
+2.  在功能區中，選擇 **檔案**索引標籤上，開啟**新文件**功能表，然後選擇  **Web 組件頁面**命令。  
   
-3.  On the **New Web Part Page** page, name the page **SampleWebPartPage.aspx**, and then choose the **Create** button.  
+3.  上**新增 Web 組件頁面**頁面上，將頁面**SampleWebPartPage.aspx**，然後選擇 [**建立**] 按鈕。  
   
-     The web part page appears.  
+     Web 組件頁面隨即出現。  
   
-4.  In the top zone of the web part page, choose the **Insert** tab, and then choose the **Web Part** button.  
+4.  在 網頁組件的最上層區域中，選擇 **插入**索引標籤，然後選擇  **Web 組件** 按鈕。  
   
-5.  Choose the **Custom** folder, choose the **VisualWebPart1** web part, and then choose the **Add** button.  
+5.  選擇**自訂**資料夾中，選擇**VisualWebPart1** web 組件，，然後選擇 [**新增**] 按鈕。  
   
-     The web part appears on the page. The following controls appear on the web part:  
+     Web 組件會出現在頁面上。 下列控制項顯示 web 組件上：  
   
-    -   A monthly calendar view.  
+    -   每月的行事曆檢視。  
   
-    -   An **Update** button.  
+    -   **更新** 按鈕。  
   
-    -   A **Calendar** check box.  
+    -   A**行事曆**核取方塊。  
   
-    -   A **Custom Calendar** check box.  
+    -   A**自訂行事曆**核取方塊。  
   
-#### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>To specify lists to include in the monthly calendar view  
+#### <a name="to-specify-lists-to-include-in-the-monthly-calendar-view"></a>若要指定列出要包含在每月的行事曆檢視  
   
-1.  In the web part, specify calendars that you want to include in the monthly calendar view, and then choose the **Update** button.  
+1.  在 web 組件中，指定您想要納入每月的行事曆檢視，然後選擇 [行事曆**更新**] 按鈕。  
   
-     Events from all calendars that you specified appear in the monthly calendar view.  
+     從您指定的所有行事曆事件會出現在每月的行事曆檢視。  
   
-## <a name="see-also"></a>See Also  
- [Creating Web Parts for SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)   
- [How to: Create a SharePoint Web Part](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
- [How to: Create a SharePoint Web Part by Using a Designer](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
- [Walkthrough: Creating a Web Part for SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
+## <a name="see-also"></a>另請參閱  
+ [建立 SharePoint Web 組件](../sharepoint/creating-web-parts-for-sharepoint.md)   
+ [如何： 建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part.md)   
+ [如何： 使用設計工具建立 SharePoint Web 組件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)   
+ [逐步解說：建立 SharePoint 的 Web 組件](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)  
   
   

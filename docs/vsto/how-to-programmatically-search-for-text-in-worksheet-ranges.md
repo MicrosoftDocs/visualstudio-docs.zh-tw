@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Search for Text in Worksheet Ranges | Microsoft Docs'
+title: "如何： 以程式設計方式搜尋工作表範圍中的文字 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,68 +15,75 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], searching in worksheets
 - text searches, worksheets
 ms.assetid: a6902711-fefb-450a-a76b-b1446d11c423
-caps.latest.revision: 48
-author: kempb
-ms.author: kempb
+caps.latest.revision: "48"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 03bfc47234606d1892f098ef89ecc2f0cba7e6a3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 031894a3307a40af981ad974898ae819ba68d24a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>How to: Programmatically Search for Text in Worksheet Ranges
-  The <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> method of the <xref:Microsoft.Office.Interop.Excel.Range> object enables you to search for text within the range. This text can also be any of the error strings that can appear in a worksheet cell such as `#NULL!` or `#VALUE!`. For more information about error strings, see [Cell Error Values](http://msdn.microsoft.com/library/office/ff839168.aspx).  
+# <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以程式設計方式在工作表範圍中搜尋文字
+  <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>方法<xref:Microsoft.Office.Interop.Excel.Range>物件可讓您搜尋的範圍內的文字。 此文字也可以是任何錯誤字串，例如可以出現在工作表儲存格`#NULL!`或`#VALUE!`。 如需錯誤字串的詳細資訊，請參閱[儲存格錯誤值](http://msdn.microsoft.com/library/office/ff839168.aspx)。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- The following example searches a range named `Fruits` and modifies the font for cells that contain the word "apples". This procedure also uses the <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> method, which uses the previously set search settings to repeat the search. You specify the cell after which to search, and the <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> method handles the rest.  
+ 下列範例會搜尋範圍，名為`Fruits`並修改包含 「 蘋果 」 一詞的資料格的字型。 此程序也會使用<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法，會使用先前設定搜尋設定，以重複的搜尋。 指定要搜尋，請在後面的資料格和<xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法會處理其餘部分。  
   
 > [!NOTE]  
->  The <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> method's search wraps back to the beginning of the search range after it has reached the end of the range. Your code must ensure that the search does not wrap around in an infinite loop. The sample procedure shows one way to handle this using the <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> property.  
+>  <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A>方法的搜尋會繞回搜尋範圍的開頭，它已達到範圍的結尾之後。 您的程式碼必須確保搜尋不會無限迴圈環繞。 此範例程序示範一種方式處理這種使用<xref:Microsoft.Office.Interop.Excel.Range.Address%2A>屬性。  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Use the Find Method in an Excel Add-in?](http://go.microsoft.com/fwlink/?LinkID=130294).  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何： 使用 Find 方法中的 Excel 增益集？](http://go.microsoft.com/fwlink/?LinkID=130294)。  
   
-### <a name="to-search-for-text-in-a-worksheet-range"></a>To search for text in a worksheet range  
+### <a name="to-search-for-text-in-a-worksheet-range"></a>若要在工作表範圍中搜尋文字  
   
-1.  Declare variables for tracking the entire range, the first found range, and the current found range.  
+1.  宣告變數，用於追蹤的整個範圍、 第一個找到的範圍，以及目前找到的範圍。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]  [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#58)]
+     [!code-vb[Trin_VstcoreExcelAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#58)]  
   
-2.  Search for the first match, specifying all the parameters except the cell to search after.  
+2.  搜尋第一個符合的項目，指定要搜尋的資料格以外的所有參數。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]  [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#59)]
+     [!code-vb[Trin_VstcoreExcelAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#59)]  
   
-3.  Continue searching as long as there are matches.  
+3.  繼續搜尋，只要相符的項目。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]  [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#60)]
+     [!code-vb[Trin_VstcoreExcelAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#60)]  
   
-4.  Compare the first found range (`firstFind`) to **Nothing**. If `firstFind` contains no value, the code stores away the found range (`currentFind`).  
+4.  比較的第一個找到的範圍 (`firstFind`) 至**Nothing**。 如果`firstFind`找到的範圍不包含任何值，離開程式碼儲存區 (`currentFind`)。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]  [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#61)]
+     [!code-vb[Trin_VstcoreExcelAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#61)]  
   
-5.  Exit the loop if the address of the found range matches the address of the first found range.  
+5.  如果找到的範圍的位址符合找到的第一個範圍的位址，請結束迴圈。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]  [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#62)]
+     [!code-vb[Trin_VstcoreExcelAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#62)]  
   
-6.  Set the appearance of the found range.  
+6.  設定找到範圍的外觀。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]  [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#63)]
+     [!code-vb[Trin_VstcoreExcelAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#63)]  
   
-7.  Perform another search.  
+7.  執行另一個搜尋。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]  [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#64)]
+     [!code-vb[Trin_VstcoreExcelAutomation#64](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#64)]  
   
- The following example shows the complete method.  
+ 下列範例示範完整的方法：  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)] [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]  
+## <a name="example"></a>範例  
+ [!code-csharp[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#57)]
+ [!code-vb[Trin_VstcoreExcelAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#57)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Ranges](../vsto/working-with-ranges.md)   
- [How to: Programmatically Apply Styles to Ranges in Workbooks](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
- [How to: Programmatically Refer to Worksheet Ranges in Code](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [使用範圍](../vsto/working-with-ranges.md)   
+ [如何： 以程式設計方式將樣式套用至活頁簿中的範圍](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)   
+ [如何： 以程式設計方式參考程式碼中的工作表範圍](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3db7dea958fb3d80a109c021ffb20260f0748bba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: c1836489b1845bca9e57daf83fc97bafeaf9da72
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-a-view-adornment-commands-and-settings-column-guides"></a>逐步解說： 建立檢視裝飾、 命令和設定 （資料行指南）
 您可以擴充 Visual Studio 文字/程式碼編輯器與命令和檢視效果。  本主題會示範如何開始使用常見的延伸模組功能，資料行的指南。  資料行的輔助線是以視覺化方式淺色文字編輯器的檢視，可協助您管理您的程式碼的特定資料行寬度上繪製的直線。  特別是格式化程式碼可能很重要的範例包含在文件，部落格文章，或錯誤報告。  

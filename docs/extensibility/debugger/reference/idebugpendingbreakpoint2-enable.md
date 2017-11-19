@@ -1,59 +1,60 @@
 ---
-title: "IDebugPendingBreakpoint2::Enable | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Enable"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::Enable 方法"
-  - "Enable 方法"
+title: "IDebugPendingBreakpoint2::Enable |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Enable
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::Enable method
+- Enable method
 ms.assetid: 09e32d05-464b-40a6-a41d-76f2759cf2cd
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: bd29134d2326f6c366bc24bcb00c0778082c77e7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Enable
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugpendingbreakpoint2enable"></a>IDebugPendingBreakpoint2::Enable
 切換暫止中斷點的啟用的狀態。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Enable(   
-   BOOL fEnable  
+```cpp  
+HRESULT Enable(   
+   BOOL fEnable  
 );  
 ```  
   
-```c#  
-int Enable(   
-   int fEnable  
+```csharp  
+int Enable(   
+   int fEnable  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `fEnable`  
- \[in\]設定為非零值 \(`TRUE`\) 來啟用暫止中斷點，或為零 \(`FALSE`\) 若要停用。  
+ [in]設定為非零 (`TRUE`) 若要啟用暫止中斷點的行，或為零 (`FALSE`) 若要停用。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_BP_DELETED`如果已刪除中斷點。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
   
-## 備註  
- 暫止中斷點是啟用或停用時，繫結從它的所有中斷點會都設定為相同的狀態中。  
+## <a name="remarks"></a>備註  
+ 暫止中斷點啟用或停用時，它從繫結的所有中斷點都設定成相同的狀態。  
   
  可能會視需要多次呼叫這個方法，即使已啟用或停用中斷點。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CPendingBreakpoint`物件，公開 \(expose\) [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Enable(BOOL fEnable)    
 {    
    HRESULT hr;    
@@ -83,5 +84,5 @@ HRESULT CPendingBreakpoint::Enable(BOOL fEnable)
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

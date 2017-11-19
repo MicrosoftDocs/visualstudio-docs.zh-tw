@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 09/05/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.debug.gputthreads
+f1_keywords: vs.debug.gputthreads
 dev_langs:
 - CSharp
 - VB
@@ -22,30 +20,15 @@ helpviewer_keywords:
 - multithreaded debugging
 - high-performance debugging
 ms.assetid: 9d175bc2-1d95-4c47-9bc3-9755af968a9c
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: c5a123ccb276e01953b2168d50e0d633640d384a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.openlocfilehash: 3f8798616d9a39d46150f039ffe4340302439f31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中偵錯多執行緒應用程式
 執行緒是作業系統配置處理器時間的指令序列。 在作業系統中執行的每個處理序都包含至少一個執行緒。 具有一個以上執行緒的處理序就稱為多執行緒。  

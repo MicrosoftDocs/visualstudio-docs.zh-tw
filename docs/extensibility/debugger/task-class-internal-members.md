@@ -1,46 +1,32 @@
 ---
-title: "工作類別的內部成員 |Microsoft 文件"
+title: "Task 類別-內部成員 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debug engines, Task class [.NET Framework]
 - Task class [.NET Framework debug engines]
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 21acb0a52dfde7ad565e9764e2a333a9925a2171
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5937d37cfed89ee7f10779f764b8d78d370eb362
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="task-class---internal-members"></a>工作類別的內部成員
-本主題描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。</xref:System.Threading.Tasks.Task?displayProperty=fullName> 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考主題。</xref:System.Threading.Tasks.Task>  
+本主題描述的內部成員<xref:System.Threading.Tasks.Task?displayProperty=fullName>類別可協助您實作自訂的偵錯工具。 如需此類別的一般資訊，請參閱<xref:System.Threading.Tasks.Task>參考主題。  
   
- **命名空間︰**<xref:System.Threading.Tasks?displayProperty=fullName></xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件︰** mscorlib （在 mscorlib.dll)  
+ **組件：** mscorlib （在 mscorlib.dll)  
   
  因為您無法從.NET Framework 來存取這些內部成員，下列語法提供通用中繼語言 (CIL)。  
   
@@ -55,7 +41,7 @@ ms.lasthandoff: 02/22/2017
                   System.Threading.ICancelableOperation  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="methods"></a>方法  
   
@@ -68,21 +54,21 @@ ms.lasthandoff: 02/22/2017
   
 |名稱|說明|  
 |----------|-----------------|  
-|[m_action 的呼叫看似](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。</xref:System.Threading.Tasks.Task>|  
-|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。</xref:System.Threading.Tasks.Task>|  
-|[m_parent](../../extensibility/debugger/m-parent-field.md)|支援欄位，如<xref:System.Threading.Tasks.Task?displayProperty=fullName>父屬性。</xref:System.Threading.Tasks.Task?displayProperty=fullName>|  
-|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。</xref:System.Threading.Tasks.Task>|  
+|[m_action](../../extensibility/debugger/m-action-field.md)|委派，表示程式碼中執行<xref:System.Threading.Tasks.Task>物件。|  
+|[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|儲存的其他屬性<xref:System.Threading.Tasks.Task>物件。|  
+|[m_parent](../../extensibility/debugger/m-parent-field.md)|支援欄位的<xref:System.Threading.Tasks.Task?displayProperty=fullName>父屬性。|  
+|[m_stateFlags](../../extensibility/debugger/m-stateflags-field.md)|儲存的目前狀態的相關資訊<xref:System.Threading.Tasks.Task>物件。|  
 |[m_stateObject](../../extensibility/debugger/m-stateobject-field.md)|物件，表示將動作所使用的資料。|  
-|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|支援欄位，如<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。</xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>|  
-|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|下一個可用的識別項的<xref:System.Threading.Tasks.Task>物件。</xref:System.Threading.Tasks.Task>|  
-|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|表示工作已取消之前就達到執行中狀態，或確認其取消工作，並且完成而沒有例外狀況。|  
+|[m_taskId](../../extensibility/debugger/m-taskid-field.md)|支援欄位的<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。|  
+|[s_taskIdCounter](../../extensibility/debugger/s-taskidcounter-field.md)|下一個可用的識別項，如<xref:System.Threading.Tasks.Task>物件。|  
+|[TASK_STATE_CANCELED](../../extensibility/debugger/task-state-canceled-field.md)|指出已取消工作之前它已達到執行狀態，, 或確認其取消工作，並完成而沒有例外狀況。|  
 |[TASK_STATE_EXECUTED](../../extensibility/debugger/task-state-executed-field.md)|指出工作執行。|  
 |[TASK_STATE_FAULTED](../../extensibility/debugger/task-state-faulted-field.md)|表示工作已完成，因為發生未處理的例外狀況。|  
-|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|表示工作已成功完成執行。|  
+|[TASK_STATE_RAN_TO_COMPLETION](../../extensibility/debugger/task-state-ran-to-completion-field.md)|表示工作已順利完成執行。|  
 |[TASK_STATE_WAITING_ON_CHILDREN](../../extensibility/debugger/task-state-waiting-on-children-field.md)|表示工作已完成執行其委派，而且在暗中等候附加的子工作完成。|  
   
 ## <a name="remarks"></a>備註  
- 下列的內部方法可用來偵錯工具引擎因為這些檔案會標示入口<xref:System.Threading.Tasks.Task>程式碼執行︰</xref:System.Threading.Tasks.Task>  
+ 下列內部方法是偵錯工具引擎很有用，因為它們標示的入口<xref:System.Threading.Tasks.Task>程式碼執行：  
   
 -   `Execute`  
   
@@ -97,5 +83,5 @@ ms.lasthandoff: 02/22/2017
 -   `InternalWait`  
   
 ## <a name="see-also"></a>另請參閱  
- <xref:System.Threading.Tasks.Task?displayProperty=fullName></xref:System.Threading.Tasks.Task?displayProperty=fullName>   
- [.NET Framework 的平行擴充內部](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+ <xref:System.Threading.Tasks.Task?displayProperty=fullName>   
+ [.NET Framework 適用的平行擴充內部資訊](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

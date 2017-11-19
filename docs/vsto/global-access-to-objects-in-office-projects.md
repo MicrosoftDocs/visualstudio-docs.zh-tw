@@ -1,12 +1,10 @@
 ---
-title: Global Access to Objects in Office Projects | Microsoft Docs
+title: "全域存取 Office 專案中的物件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -33,36 +31,35 @@ helpviewer_keywords:
 - events [Office development in Visual Studio]
 - ThisAddIn_Shutdown
 ms.assetid: f6a7f0ef-75d0-4a9b-9aec-be95ffa26adf
-caps.latest.revision: 55
-author: kempb
-ms.author: kempb
+caps.latest.revision: "55"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a166e8ce7dc6315d9e150e8c7a1a11d135fd5517
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c8119ccf0c6715d1c18957fcf8cac92d9872a27e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="global-access-to-objects-in-office-projects"></a>Global Access to Objects in Office Projects
-  When you create an Office project, Visual Studio automatically generates a class named `Globals` in the project. You can use the `Globals` class to access several different project items at run time from any code in the project.  
+# <a name="global-access-to-objects-in-office-projects"></a>全域存取 Office 專案中的物件
+  當您建立 Office 專案時，Visual Studio 會在專案中自動產生名為 `Globals` 的類別。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取數個不同的專案項目。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## <a name="how-to-use-the-globals-class"></a>How to Use the Globals Class  
- `Globals` is a static class that keeps references to certain items in your project. By using the `Globals` class, you can access the following items from any code in the project at run time:  
+## <a name="how-to-use-the-globals-class"></a>如何使用 Globals 類別  
+ `Globals` 是靜態類別，會將某些項目的參考保留在專案中。 您可以使用 `Globals` 類別，在執行階段從專案的任何程式碼存取下列項目：  
   
--   The `ThisWorkbook` and `Sheet`*n* classes in an Excel workbook or template project. You can access these objects by using the `Globals.ThisWorkbook` and `Sheet`*n* properties.  
+-   Excel 活頁簿或範本專案中的 `ThisWorkbook` 和 `Sheet`*n* 類別。 您可以使用 `Globals.ThisWorkbook` 和 `Sheet`*n* 屬性來存取這些物件。  
   
--   The `ThisDocument` class in a Word document or template project. You can access this object by using the `Globals.ThisDocument` property.  
+-   Word 文件或範本專案中的 `ThisDocument` 類別。 您可以使用 `Globals.ThisDocument` 屬性來存取這個物件。  
   
--   The `ThisAddIn` class in an VSTO Add-in project. You can access this object by using the `Globals.ThisAddIn` property.  
+-   VSTO 增益集專案中的 `ThisAddIn` 類別。 您可以使用 `Globals.ThisAddIn` 屬性來存取這個物件。  
   
--   All Ribbons in your project that you customized by using the Ribbon Designer. You can access the Ribbons by using the `Globals.Ribbons` property. For more information, see [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md).  
+-   專案中使用 [功能區設計工具] 自訂的所有功能區。 您可以使用 `Globals.Ribbons` 屬性來存取功能區。 如需詳細資訊，請參閱 [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)。  
   
--   All Outlook form regions in an Outlook VSTO Add-in project. You can access the form regions by using the `Globals.FormRegions` property. For more information, see [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md).  
+-   Outlook VSTO 增益集專案中的所有 Outlook 表單區域。 您可以使用 `Globals.FormRegions` 屬性來存取表單區域。 如需詳細資訊，請參閱 [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)。  
   
--   A factory object that enables you to create Ribbon controls, and host items at run time in projects that target the [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] or the [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. You can access this object by using the `Globals.Factory` property. This object is an instance of a class that implements one the following interfaces:  
+-   Factory 物件，可讓您在執行階段於 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]目標專案中建立功能區控制項和主項目。 您可以使用 `Globals.Factory` 屬性來存取這個物件。 這個物件是可實作下列其中一個介面的類別執行個體：  
   
     -   <xref:Microsoft.Office.Tools.Factory>  
   
@@ -72,23 +69,24 @@ ms.lasthandoff: 08/30/2017
   
     -   <xref:Microsoft.Office.Tools.Word.Factory>  
   
- For example, you can use the `Globals.Sheet1` property to insert text into a <xref:Microsoft.Office.Tools.Excel.NamedRange> control on `Sheet1` when a user clicks a button on the actions pane in a document-level project for Excel.  
+ 例如，您可以使用 `Globals.Sheet1` 屬性在使用者按一下 Excel 文件層級專案中執行窗格上的按鈕時，將文字插入 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控制項。  
   
- [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)] [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
+ [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
+ [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]  
   
-## <a name="initializing-the-globals-class"></a>Initializing the Globals Class  
- Code that attempts to use the `Globals` class before the document or VSTO Add-in is completely initialized might throw a run time exception. For example, using `Globals` when declaring a class-level variable might fail because the `Globals` class might not be initialized with references to all of the host items before the declared object is instantiated.  
+## <a name="initializing-the-globals-class"></a>初始化 Globals 類別  
+ 嘗試在文件或 VSTO 增益集完全初始化之前使用 `Globals` 類別的程式碼，可能會擲回執行階段例外狀況。 例如，在宣告類別層級變數時使用 `Globals` 可能會失敗，因為 `Globals` 類別可能不會在宣告的物件具現化之前，使用所有主項目的參考進行初始化。  
   
 > [!NOTE]  
->  The `Globals` class is never initialized at design time, but control instances are created by the designer. This means that if you create a user control that uses a property of the `Globals` class from inside a user control class, you must whether the property returns **null** before you try to use the returned object.  
+>  雖然 `Globals` 類別絕對不會在設計階段初始化，但是設計工具卻會建立控制項執行個體。 這表示如果您建立的使用者控制項會在使用者控制項類別中使用 `Globals` 類別的某個屬性，您必須先檢查該屬性是否傳回 **null** ，再嘗試使用傳回的物件。  
   
-## <a name="see-also"></a>See Also  
+## <a name="see-also"></a>另請參閱  
  [Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Accessing a Form Region at Run Time](../vsto/accessing-a-form-region-at-run-time.md)   
+ [在執行階段存取表單區域](../vsto/accessing-a-form-region-at-run-time.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
- [Document Host Item](../vsto/document-host-item.md)   
- [Workbook Host Item](../vsto/workbook-host-item.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Writing Code in Office Solutions](../vsto/writing-code-in-office-solutions.md)  
+ [Document 主項目](../vsto/document-host-item.md)   
+ [Workbook 主項目](../vsto/workbook-host-item.md)   
+ [工作表主項目](../vsto/worksheet-host-item.md)   
+ [撰寫 Office 方案中的程式碼](../vsto/writing-code-in-office-solutions.md)  
   
   

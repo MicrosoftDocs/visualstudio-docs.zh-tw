@@ -1,57 +1,63 @@
 ---
-title: "RequiredFrameworkVersion 項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "<RequiredFrameworkVersion> (Visual Studio 範本)"
-  - "RequiredFrameworkVersion (Visual Studio 範本)"
+title: "RequiredFrameworkVersion 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- <RequiredFrameworkVersion> (Visual Studio Templates)
+- RequiredFrameworkVersion (Visual Studio Templates)
 ms.assetid: 08a4f609-51a5-4723-b89f-99277fb18871
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dfbcc45198381cb111714dfdd52d8846f019e741
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# RequiredFrameworkVersion 項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定 template.Schema Hierarchy 所需的最早 .NET Framework 版本。  
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion 項目 (Visual Studio 範本)
+指定範本所需的最低.NET Framework 版本。結構描述階層架構。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<RequiredFrameworkVersion >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <RequiredFrameworkVersion> .... </RequiredFrameworkVersion>  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 為範本分類，並定義在 \[**新增專案**\] 或 \[**加入新項目**\] 對話方塊中範本的顯示方式。|  
+|項目|描述|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義要如何顯示在**新專案**或**加入新項目** 對話方塊。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 文字必須是範本所需要的 .NET Framework 最小版本號碼。  
+ 文字必須是.NET Framework 所需的範本的最小版本號碼。  
   
-## 備註  
- `RequiredFrameworkVersion` 是選擇性項目。  如果範本僅支援 .NET Framework 的特定最小版本和更新版本 \(如果有\)，請使用這個項目。  
+## <a name="remarks"></a>備註  
+ `RequiredFrameworkVersion` 是選擇性項目。 如果範本只支援特定的最小版本和更新的版本，如果有的話，.NET framework，請使用此項目。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)

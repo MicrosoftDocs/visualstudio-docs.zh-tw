@@ -1,36 +1,37 @@
 ---
-title: "程式碼內容 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "偵錯的 [偵錯 SDK]，內容"
+title: "程式碼內容 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debugging [Debugging SDK], contexts
 ms.assetid: 65e4d37a-086b-426e-9394-a3534967fd59
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 92d6ed317bcf6ceead42db850ee61969409eb136
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 程式碼內容
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯時， **程式碼內容**：  
+# <a name="code-context"></a>程式碼內容
+在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]偵錯，**程式碼內容**:  
   
--   提供已知偵錯引擎 \(DE\) 的抽象概念的程式碼中的位置。  大部分的執行階段架構的今天，程式碼內容可以視為該應用程式的指令資料流中的地址。  為非語言設計的程式碼可能不會表示的地方指示，程式碼的內容可能會不以其他方式。  
+-   已知的偵錯引擎 (DE)，提供抽象的程式碼中的位置。 大部分的執行階段架構，程式碼內容可以視為程式的指令資料流中的位址。 對於非語言，其中程式碼可能不由指示，程式碼內容都可以透過其他方式來表示。  
   
--   將告訴您正在偵錯程式執行資料流中目前的位置。  
+-   描述偵錯程式的執行資料流中目前的位置。  
   
--   只有當程式停止於中斷點的存在。  
+-   存在僅當程式已停止於中斷點。  
   
--   有關聯的文件內容。  
+-   有相關聯的文件內容。  
   
--   由存取關聯式資料庫 [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) 介面。  
+-   由實作[IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md)介面。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [文件內容](../../extensibility/debugger/document-context.md)   
  [偵錯工具內容](../../extensibility/debugger/debugger-contexts.md)

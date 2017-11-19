@@ -1,30 +1,34 @@
 ---
-title: "WizardData 項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#WizardData"
-helpviewer_keywords: 
-  - "<WizardData> 項目 [Visual Studio 樣板]"
-  - "WizardData 項目 [Visual Studio 樣板]"
+title: "WizardData 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#WizardData
+helpviewer_keywords:
+- WizardData element [Visual Studio Templates]
+- <WizardData> element [Visual Studio Templates]
 ms.assetid: d0403a16-5d07-4fe5-b474-19ae3d9fd3ab
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 44d74aff60e4b53c223795e6cadc32a30270c8c0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# WizardData 項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="wizarddata-element-visual-studio-templates"></a>WizardData 項目 (Visual Studio 範本)
 指定自訂 XML  
   
-## 語法  
+ \<VSTemplate >  
+ \<WizardData >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <WizardData>  
@@ -33,33 +37,33 @@ caps.handback.revision: 9
 </WizardData>  
 ```  
   
-## 屬性和項目  
- 下列小節將說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節將說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、項目範本或入門套件的所有中繼資料。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必要項目。<br /><br /> 包含專案範本、 項目範本或入門套件的所有中繼資料。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  可選擇使用文字值。  
   
- 此文字指定要傳遞至 [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md) 項目所指定之自訂精靈擴充功能的自訂 XML。  
+ 此文字會指定要傳遞至指定的自訂精靈副檔名的自訂 XML [WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)項目。  
   
-## 備註  
- 任何 XML 皆可在這個項目中指定。  XML 將會當做參數傳遞至自訂精靈擴充功能，讓此擴充功能運用這個項目的內容。  這個資料未經過驗證。  
+## <a name="remarks"></a>備註  
+ 此元素中，可以指定任何 XML。 XML 將會傳遞做為參數給自訂精靈擴充功能，讓此擴充功能使用此元素的內容。 此資料上不進行任何驗證。  
   
- `WizardData` 項目的內容會原封不動地傳遞至 `IWizard.RunStarted` 方法中，當做參數字串字典內的參數。  此參數的名稱是 $WizardData$。  
+ 內容`WizardData`傳遞項目，不變，做為參數字串字典中的參數內`IWizard.RunStarted`方法。 參數名稱為 $WizardData$。  
   
-## 範例  
- 下列程式碼範例說明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 應用程式標準專案範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例說明標準的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -92,8 +96,8 @@ caps.handback.revision: 9
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
- [WizardExtension 項目 \(Visual Studio 範本\)](../extensibility/wizardextension-element-visual-studio-templates.md)   
- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [WizardExtension 項目 （Visual Studio 範本）](../extensibility/wizardextension-element-visual-studio-templates.md)   
+ [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

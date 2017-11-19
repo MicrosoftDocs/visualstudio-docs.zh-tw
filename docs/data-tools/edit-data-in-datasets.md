@@ -1,5 +1,5 @@
 ---
-title: Edit data in datasets | Microsoft Docs
+title: "編輯資料集中 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -13,107 +13,102 @@ helpviewer_keywords:
 - datasets [Visual Basic], editing data
 - data [Visual Studio], editing in datasets
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
-caps.latest.revision: 15
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: ae39fe6c1a740f29793141b7a3ac4aa285e42ec3
-ms.openlocfilehash: f0ef03210ae578073b9716f0147f04bcf8525e1b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="edit-data-in-datasets"></a>Edit data in datasets
-You edit data in data tables much like you edit the data in a table in any database. The process can include inserting, updating, and deleting records in the table. In a data-bound form, you can specify which fields are user-editable. In those cases, the data-binding infrastructure handles all the change tracking so that the changes can be sent back to the database later. If you programmatically make edits to data, and you intend to send those changes back to the database, you must use the objects and methods that do the change tracking for you.  
+# <a name="edit-data-in-datasets"></a>編輯資料集中的資料
+方式一樣編輯任何資料庫中的資料表中的資料，您可以編輯資料的資料表中的資料。 處理程序可以包含插入、 更新和刪除資料表中的記錄。 在資料繫結表單中，您可以指定哪些欄位是使用者可編輯。 在這些情況下，資料繫結基礎結構會處理所有變更追蹤，以便所做的變更可以傳送回資料庫更新版本。 如果您以程式設計方式進行編輯的資料，而且您想要將這些變更傳送回資料庫，您必須使用的物件和方法讓您進行變更追蹤。  
   
- In addition to changing the actual data, you can also query a <xref:System.Data.DataTable> to return specific rows of data. For example, you might query for individual rows, specific versions of rows (original and proposed),  rows that have changed, or rows that have errors.  
+除了變更的實際資料，您也可以查詢<xref:System.Data.DataTable>傳回特定的資料列。 例如，您可能會查詢個別資料列、 特定版本的資料列 （原始及提議）、 已變更的資料列或資料列中有錯誤。  
   
-## <a name="to-edit-rows-in-a-dataset"></a>To edit rows in a dataset  
- To edit an existing row in a <xref:System.Data.DataTable>, you need to locate the <xref:System.Data.DataRow> you want to edit, and then assign the updated values to the desired columns.  
+## <a name="to-edit-rows-in-a-dataset"></a>若要編輯資料集內的資料列  
+若要編輯現有的資料列中<xref:System.Data.DataTable>，您需要尋找<xref:System.Data.DataRow>您想要編輯，然後將更新的值指派給需要的資料行。  
   
- If you don't know the index of the row you want to edit, use the `FindBy` method to search by the primary key:  
+如果您不知道的資料列索引，您想要編輯，請使用`FindBy`方法來搜尋主索引鍵：  
   
- [!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)] [!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
+[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
+[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]  
   
- If you know the row index, you can access and edits rows as follows:  
+如果您知道的資料列索引，您可以存取及編輯資料列，如下所示：  
   
- [!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)] [!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
+[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
+[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]  
   
-## <a name="to-insert-new-rows-into-a-dataset"></a>To insert new rows into a dataset  
- Applications that use data-bound controls typically add new records through the **Add New** button on a [BindingNavigator Control](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms).  
+## <a name="to-insert-new-rows-into-a-dataset"></a>將新的資料列插入資料集  
+通常使用資料繫結控制項的應用程式新增到新的記錄**加入新**按鈕[BindingNavigator 控制項](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)。  
   
- To manually add new records to a dataset, create a new data row by calling the method on the DataTable. Then add the row to the <xref:System.Data.DataRow> collection (<xref:System.Data.DataTable.Rows%2A>) of the <xref:System.Data.DataTable>:  
+若要以手動方式加入資料集的新記錄，建立新的資料列在 DataTable 上呼叫方法。 然後新增列<xref:System.Data.DataRow>集合 (<xref:System.Data.DataTable.Rows%2A>) 的<xref:System.Data.DataTable>:  
   
- [!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)] [!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
+[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
+[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]  
   
- In order to retain the information that the dataset needs to send updates to the data source, use the <xref:System.Data.DataRow.Delete%2A> method to remove rows in a data table. For example, if your application uses a TableAdapter (or <xref:System.Data.Common.DataAdapter>), the TableAdapter's `Update` method deletes rows in the database that have a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Deleted>.  
+若要保留資料集需要將更新傳送至資料來源的資訊，請使用<xref:System.Data.DataRow.Delete%2A>方法來移除資料表中的資料列。 例如，如果您的應用程式使用 TableAdapter (或<xref:System.Data.Common.DataAdapter>)，TableAdapter 的`Update`方法刪除資料庫中的有資料列<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。  
   
- If your application does not need to send updates back to a data source, then it's possible to remove records by directly accessing the data row collection (<xref:System.Data.DataRowCollection.Remove%2A>).  
+如果您的應用程式不需要將更新送回資料來源，則可以藉由直接存取資料列集合移除的記錄 (<xref:System.Data.DataRowCollection.Remove%2A>)。  
   
-#### <a name="to-delete-records-from-a-data-table"></a>To delete records from a data table  
+#### <a name="to-delete-records-from-a-data-table"></a>從資料表刪除記錄  
   
--   Call the <xref:System.Data.DataRow.Delete%2A> method of a <xref:System.Data.DataRow>.  
+-   呼叫<xref:System.Data.DataRow.Delete%2A>方法<xref:System.Data.DataRow>。  
   
-     This method doesn't physically remove the record. Instead, it marks the record for deletion.  
+     這個方法不會實際移除記錄。 相反地，它會將記錄標示為刪除。  
   
     > [!NOTE]
-    >  If you get the count property of a <xref:System.Data.DataRowCollection>, the resulting count includes records that have been marked for deletion. To get an accurate count of records that aren't marked for deletion, you can loop through the collection looking at the <xref:System.Data.DataRow.RowState%2A> property of each record. (Records marked for deletion have a <xref:System.Data.DataRow.RowState%2A> of <xref:System.Data.DataRowState.Deleted>.) Alternatively, you can create a data view of a dataset that filters based on row state and get the count property from there.  
+    >  如果您收到的 count 屬性<xref:System.Data.DataRowCollection>，得出的計數會包含已標示為刪除的記錄。 若要取得精確的計數，而不標示為刪除的記錄，您可以逐一查看集合<xref:System.Data.DataRow.RowState%2A>每一筆記錄的屬性。 (標記為要刪除的記錄都有<xref:System.Data.DataRow.RowState%2A>的<xref:System.Data.DataRowState.Deleted>。)或者，您可以建立資料檢視的資料列狀態為基礎的篩選條件的資料集，並從該處取得計數屬性。  
   
-     The following example shows how to call the <xref:System.Data.DataRow.Delete%2A> method to mark the first row in the `Customers` table as deleted:  
+下列範例示範如何呼叫<xref:System.Data.DataRow.Delete%2A>方法，以將標記中的第一個資料列`Customers`資料表為已刪除：  
   
-     [!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]  [!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
+[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
+[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]  
   
-## <a name="determine-if-there-are-changed-rows"></a>Determine if there are changed rows  
- When changes are made to records in a dataset, information about those changes is stored until you commit them. You commit the changes  when you call the `AcceptChanges` method of a dataset or data table, or when you call the `Update` method of a TableAdapter or data adapter.  
+## <a name="determine-if-there-are-changed-rows"></a>判斷是否有變更的資料列  
+資料錄集中的資料變更時，您認可之前，會儲存這些變更的相關資訊。 當您呼叫時，會認可變更`AcceptChanges`方法的資料集或資料的資料表，或當您呼叫`Update`TableAdapter 或資料配接器的方法。  
   
- Changes are tracked two ways in each data row:  
+變更會追蹤每個資料列中的兩種方式：  
   
--   Each data row contains information related to its <xref:System.Data.DataRow.RowState%2A> (for example, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, or <xref:System.Data.DataRowState.Unchanged>).  
+-   每個資料列包含有關其<xref:System.Data.DataRow.RowState%2A>(例如， <xref:System.Data.DataRowState.Added>， <xref:System.Data.DataRowState.Modified>， <xref:System.Data.DataRowState.Deleted>，或<xref:System.Data.DataRowState.Unchanged>)。  
   
--   Each changed data row contains multiple versions of that row (<xref:System.Data.DataRowVersion>), the original version (before changes) and the current version (after changes). During the period when a change is pending (the time when you can respond to the <xref:System.Data.DataTable.RowChanging> event), a third version — the proposed version— is available as well. 
+-   每個已變更的資料列包含該資料列的多個版本 (<xref:System.Data.DataRowVersion>)，變更前的原始版本和最新版本 （變更後）。 期間暫止變更時 (當您可以回應的時間<xref:System.Data.DataTable.RowChanging>事件)、 第三個版本 — 建議的版本，也可以時。 
   
- The <xref:System.Data.DataSet.HasChanges%2A> method of a dataset returns `true` if changes have been made in the dataset. After determining that changed rows exist, you can call the `GetChanges` method of a <xref:System.Data.DataSet> or <xref:System.Data.DataTable> to return a set of changed rows.   
+<xref:System.Data.DataSet.HasChanges%2A>資料集的方法會傳回`true`如果已變更資料集內。 決定之後變更的資料列存在，您可以呼叫`GetChanges`方法<xref:System.Data.DataSet>或<xref:System.Data.DataTable>傳回一組已變更的資料列。   
   
-#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>To determine if changes have been made to any rows  
+#### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>若要判斷是否有任何資料列進行變更  
   
--   Call the <xref:System.Data.DataSet.HasChanges%2A> method of a dataset to check for changed rows.  
+-   呼叫<xref:System.Data.DataSet.HasChanges%2A>方法的資料集，以檢查是否有變更的資料列。  
   
-     The following example shows how to check the return value from the <xref:System.Data.DataSet.HasChanges%2A> method to detect whether there are any changed rows in a dataset named `NorthwindDataset1`:  
+下列範例示範如何檢查傳回的值從<xref:System.Data.DataSet.HasChanges%2A>方法來偵測是否有任何變更的資料列的資料集中名為`NorthwindDataset1`:  
   
-     [!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]  [!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
+[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
+[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]  
   
-## <a name="determine-the-type-of-changes"></a>Determine the type of changes  
- You can also check to see what type of changes were made in a dataset by passing a value from the <xref:System.Data.DataRowState> enumeration to the <xref:System.Data.DataSet.HasChanges%2A> method.  
+## <a name="determine-the-type-of-changes"></a>判斷變更的類型  
+您也可以檢查以查看哪種類型的變更集中的資料所做傳遞的值從<xref:System.Data.DataRowState>列舉<xref:System.Data.DataSet.HasChanges%2A>方法。  
   
-#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>To determine what type of changes have been made to a row  
+#### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>若要判斷何種變更已對資料列  
   
--   Pass a <xref:System.Data.DataRowState> value to the <xref:System.Data.DataSet.HasChanges%2A> method.  
+-   傳遞<xref:System.Data.DataRowState>值設定為<xref:System.Data.DataSet.HasChanges%2A>方法。  
   
-     The following example shows how to check a dataset named `NorthwindDataset1` to determine if any new rows have been added to it:  
+下列範例示範如何檢查名為資料集`NorthwindDataset1`來判斷是否有已任何新資料列新增到它：  
   
-     [!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]  [!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
+[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
+[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]  
   
-## <a name="to-locate-rows-that-have-errors"></a>To locate rows that have errors  
- When working with individual columns and rows of data, you might encounter errors. You can check the `HasErrors` property to determine if errors exist in a <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, or <xref:System.Data.DataRow>.  
+## <a name="to-locate-rows-that-have-errors"></a>若要找出有錯誤的資料列  
+當使用個別資料行和資料列，您可能會遇到錯誤。 您可以檢查`HasErrors`屬性來判斷是否中有錯誤<xref:System.Data.DataSet>， <xref:System.Data.DataTable>，或<xref:System.Data.DataRow>。  
   
-1.  Check the `HasErrors` property to see if there are any errors in the dataset.  
+1.  請檢查`HasErrors`屬性來查看資料集是否有任何錯誤。  
   
-2.  If the `HasErrors` property is `true`, iterate through the collections of tables, and then the through the rows, to find the row with the error.  
-  
-     [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]  [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+2.  如果`HasErrors`屬性是`true`，逐一查看的集合，這些資料表，然後透過資料列，以尋找具有錯誤的資料列。  
+
+[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
+[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+
+## <a name="see-also"></a>請參閱
+[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

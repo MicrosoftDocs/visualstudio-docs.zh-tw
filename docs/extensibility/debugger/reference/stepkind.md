@@ -1,72 +1,72 @@
 ---
-title: "STEPKIND | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "STEPKIND"
-helpviewer_keywords: 
-  - "STEPKIND 列舉型別"
+title: "STEPKIND |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: STEPKIND
+helpviewer_keywords: STEPKIND enumeration
 ms.assetid: d3d8cf76-24bf-455e-803e-0e3e28f0b262
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 57bbce476883e90a569f5174ef46e3f8c1d0380b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# STEPKIND
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定逐步執行的步驟類型。  
+# <a name="stepkind"></a>STEPKIND
+逐步執行指定的步驟類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
+```cpp  
+enum enum_STEPKIND {   
+   STEP_INTO      = 0,  
+   STEP_OVER      = 1,  
+   STEP_OUT       = 2,  
+   STEP_BACKWARDS = 3  
 };  
 typedef DWORD STEPKIND;  
 ```  
   
-```c#  
-public enum enum_STEPKIND {   
-   STEP_INTO      = 0,  
-   STEP_OVER      = 1,  
-   STEP_OUT       = 2,  
-   STEP_BACKWARDS = 3  
+```csharp  
+public enum enum_STEPKIND {   
+   STEP_INTO      = 0,  
+   STEP_OVER      = 1,  
+   STEP_OUT       = 2,  
+   STEP_BACKWARDS = 3  
 };  
 ```  
   
-## Members  
- STEP\_INTO  
+## <a name="members"></a>成員  
+ STEP_INTO  
  逐步執行函式。  
   
- STEP\_OVER  
+ STEP_OVER  
  不是進入函式。  
   
- STEP\_OUT  
- 函式的步驟。  
+ STEP_OUT  
+ 跳離函式。  
   
- STEP\_BACKWARDS  
- \[逐步執行回溯函式。  
+ STEP_BACKWARDS  
+ 向後逐步執行函式。  
   
-## 備註  
- 當做引數傳遞[逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
+## <a name="remarks"></a>備註  
+ 做為引數傳遞[步驟](../../../extensibility/debugger/reference/idebugprocess3-step.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
- [逐步執行](../../../extensibility/debugger/reference/idebugprocess3-step.md)
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+ [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md)

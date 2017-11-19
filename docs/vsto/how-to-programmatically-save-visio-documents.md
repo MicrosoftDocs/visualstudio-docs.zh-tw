@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Save Visio Documents | Microsoft Docs'
+title: "如何： 以程式設計方式儲存 Visio 文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,74 +14,76 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], saving Visio documents
 - Visio [Office development in Visual Studio], saving Visio documents
 ms.assetid: 1a29ac7e-1da4-4c7a-87a5-d3d16897fe7c
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 148409aa0f4489c2eb8e7a1637cb5ac294d49aa6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: a100a573f26a774c58083cb82b07c50792908f45
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-save-visio-documents"></a>How to: Programmatically Save Visio Documents
-  There are several ways to save Microsoft Office Visio documents:  
+# <a name="how-to-programmatically-save-visio-documents"></a>如何：以程式設計方式儲存 Visio 文件
+  儲存 Microsoft Office Visio 文件的方式有很多種：  
   
--   Save changes in an existing document.  
+-   在現有的文件中儲存變更。  
   
--   Save a new document, or save a document with a new name.  
+-   儲存新的文件，或以新名稱儲存文件。  
   
--   Save a document with specified arguments.  
+-   以指定的引數儲存文件。  
   
- For more information, see the VBA reference documentation for the [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) method, [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) method, and [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) method.  
+ 如需詳細資訊，請參閱 [Microsoft.Office.Interop.Visio.Document.Save](https://msdn.microsoft.com/library/office/ff766478.aspx) 方法、 [Microsoft.Office.Interop.Visio.Document.SaveAs](https://msdn.microsoft.com/library/office/ff765824.aspx) 方法和 [Microsoft.Office.Interop.Visio.Document.SaveAsEx](https://msdn.microsoft.com/library/office/ff768149.aspx) 方法的 VBA 參考文件。  
   
-## <a name="saving-an-existing-document"></a>Saving an Existing Document  
+## <a name="saving-an-existing-document"></a>儲存現有的文件  
   
-#### <a name="to-save-a-document"></a>To save a document  
+#### <a name="to-save-a-document"></a>儲存文件  
   
--   Call the Microsoft.Office.Interop.Visio.Document.Save method of the Microsoft.Office.Tools.Visio.Document class of a document that has been previously saved.  
+-   呼叫 Microsoft.Office.Interop.Visio.Document.Save 方法 Microsoft.Office.Tools.Visio.Document 類別的已儲存的文件。  
   
-     To use this code example, run it from the `ThisAddIn` class in your project.  
+     若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。  
   
     > [!NOTE]  
-    >  The Microsoft.Office.Interop.Visio.Document.Save method throws an exception if a new Visio document has not yet been saved.  
+    >  如果尚未儲存新的 Visio 文件 Microsoft.Office.Interop.Visio.Document.Save 方法會擲回例外狀況。  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]  
   
-## <a name="saving-a-document-with-a-new-name"></a>Saving a Document with a New Name  
- Use the Microsoft.Office.Interop.Visio.Document.SaveAs method to save a new document, or a document that has a new name. This method requires that you specify the new file name.  
+## <a name="saving-a-document-with-a-new-name"></a>以新名稱儲存文件  
+ 您可以使用 Microsoft.Office.Interop.Visio.Document.SaveAs 方法來儲存新的文件或具有新名稱的文件。 這個方法需要指定新的檔案名稱。  
   
-#### <a name="to-save-the-active-visio-document-with-a-new-name"></a>To save the active Visio document with a new name  
+#### <a name="to-save-the-active-visio-document-with-a-new-name"></a>以新名稱儲存使用中的 Visio 文件  
   
--   Call the Microsoft.Office.Interop.Visio.Document.SaveAs method of the Microsoft.Office.Tools.Visio.Document that you want to save, by using a fully qualified path including a file name. If a file by that name already exists in that folder, it is silently overwritten.  
+-   呼叫您要使用包括檔案名稱的完整的路徑來儲存 Microsoft.Office.Tools.Visio.Document Microsoft.Office.Interop.Visio.Document.SaveAs 方法。 如果該資料夾中已有同名的檔案，即會以無訊息方式覆寫。  
   
-     To use this code example, run it from the `ThisAddIn` class in your project.  
+     若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#10)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#10](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#10)]  
   
-## <a name="saving-a-document-with-a-new-name-and-specified-arguments"></a>Saving a Document with a New Name and Specified Arguments  
- Use the Microsoft.Office.Interop.Visio.Document.SaveAsEx method to save a document with a new name, and specify any applicable arguments to apply to the document.  
+## <a name="saving-a-document-with-a-new-name-and-specified-arguments"></a>以新名稱和指定的引數儲存文件  
+ 具有新名稱儲存文件使用 Microsoft.Office.Interop.Visio.Document.SaveAsEx 方法並指定任何適用的引數套用至文件。  
   
-#### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>To save document with a new name and specified arguments  
+#### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>以新名稱和指定的引數儲存文件  
   
--   Call the Microsoft.Office.Interop.Visio.Document.SaveAsEx method of the Microsoft.Office.Tools.Visio.Document that you want to save, by using a fully qualified path including a file name. If a file by that name already exists in that folder, an exception is thrown.  
+-   呼叫您要使用包括檔案名稱的完整的路徑來儲存 Microsoft.Office.Tools.Visio.Document Microsoft.Office.Interop.Visio.Document.SaveAsEx 方法。 如果該資料夾中已有同名的檔案，即擲回例外狀況。  
   
-     The following code example saves the active document with a new name, marks the document as read-only, and shows the document in the Most Recently Used list of documents. To use this code example, run it from the `ThisAddIn` class in your project.  
+     下列程式碼範例會以新名稱儲存使用中的文件、將文件標示為唯讀，以及在 [最近使用的清單] 中顯示文件。 若要使用此程式碼範例，請從專案的 `ThisAddIn` 類別中執行它。  
   
-     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#12)]  [!code-vb[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#12)]  
+     [!code-csharp[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#12)]
+     [!code-vb[Trin_VstcoreVisioAutomationAddIn#12](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#12)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This code example requires the following:  
+## <a name="compiling-the-code"></a>編譯程式碼  
+ 這個程式碼範例需要下列項目：  
   
--   To save a document that has a new name, a directory named `Test` must be located in the My Documents folder (for Windows XP and earlier) or the Documents folder (for Windows Vista).  
+-   若要儲存具有新名稱的文件，[我的文件] 資料夾 (Windows XP 及更早版本) 或 [文件] 資料夾 (Windows Vista) 中必須要有名為 `Test` 的目錄。  
   
-## <a name="see-also"></a>See Also  
- [Visio Solutions](../vsto/visio-solutions.md)   
- [Visio Object Model Overview](../vsto/visio-object-model-overview.md)   
- [How to: Programmatically Create New Visio Documents](../vsto/how-to-programmatically-create-new-visio-documents.md)   
- [How to: Programmatically Open Visio Documents](../vsto/how-to-programmatically-open-visio-documents.md)   
- [How to: Programmatically Close Visio Documents](../vsto/how-to-programmatically-close-visio-documents.md)   
- [How to: Programmatically Print Visio Documents](../vsto/how-to-programmatically-print-visio-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [Visio 方案](../vsto/visio-solutions.md)   
+ [Visio 物件模型概觀](../vsto/visio-object-model-overview.md)   
+ [如何： 以程式設計方式建立新的 Visio 文件](../vsto/how-to-programmatically-create-new-visio-documents.md)   
+ [如何： 以程式設計方式開啟 Visio 文件](../vsto/how-to-programmatically-open-visio-documents.md)   
+ [如何： 以程式設計方式關閉 Visio 文件](../vsto/how-to-programmatically-close-visio-documents.md)   
+ [如何：以程式設計方式列印 Visio 文件](../vsto/how-to-programmatically-print-visio-documents.md)  
   
   

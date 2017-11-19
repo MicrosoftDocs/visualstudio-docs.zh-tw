@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugFunctionObject
-helpviewer_keywords:
-- IDebugFunctionObject interface
+f1_keywords: IDebugFunctionObject
+helpviewer_keywords: IDebugFunctionObject interface
 ms.assetid: 8d94e97c-a9d1-400c-8a98-a44b5385b33a
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 6188a5dad827abf76d22441706e6600f1dd3781a
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 69b0556712ddea8570b2a06fba09538649a06e9c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugfunctionobject"></a>IDebugFunctionObject
 > [!IMPORTANT]
@@ -70,11 +54,11 @@ IDebugFunctionObject : IDebugObject
  此介面可讓運算式評估工具，來代表剖析樹狀目錄中的函式。 `Create`這個介面中的方法用來建構物件，代表方法的輸入的參數。 然後藉由呼叫執行函式[評估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)方法，這個方法會傳回代表函式的傳回值的物件。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ ee.h  
+ 標頭： ee.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   

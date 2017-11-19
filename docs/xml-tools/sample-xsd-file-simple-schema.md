@@ -1,24 +1,25 @@
 ---
-title: "範例 XSD 檔案：簡單結構描述 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "範例 XSD 檔案： 簡單的結構描述 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: b0178c64c72584ad2a3fe4692294a4877990423e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 範例 XSD 檔案：簡單結構描述
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。這個檔案是簡單的採購單結構描述。  
+# <a name="sample-xsd-file-simple-schema"></a>範例 XSD 檔案：簡單結構描述
+XSD 結構描述設計工具文件中的數個範例使用下列 XSD 檔案。 這個檔案是簡單的採購單結構描述。  
   
 ```xml  
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"   

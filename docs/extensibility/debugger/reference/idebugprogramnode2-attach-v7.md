@@ -1,73 +1,74 @@
 ---
-title: "IDebugProgramNode2::Attach_V7 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::Attach"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::Attach_V7"
-  - "IDebugProgramNode2::Attach"
+title: "IDebugProgramNode2::Attach_V7 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramNode2::Attach
+helpviewer_keywords:
+- IDebugProgramNode2::Attach_V7
+- IDebugProgramNode2::Attach
 ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 9ba26d779d89944cb4f8852cbb7354f31c54cd8e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramNode2::Attach_V7
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-被取代。  請勿使用。  
+# <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
+已被取代。 請勿使用。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Attach_V7 (   
-   IDebugProgram2*       pMDMProgram,  
-   IDebugEventCallback2* pCallback,  
-   DWORD                 dwReason  
+```cpp  
+HRESULT Attach_V7 (   
+   IDebugProgram2*       pMDMProgram,  
+   IDebugEventCallback2* pCallback,  
+   DWORD                 dwReason  
 );  
 ```  
   
-```c#  
-int Attach_V7 (   
-   IDebugProgram2       pMDMProgram,  
-   IDebugEventCallback2 pCallback,  
-   uint                 dwReason  
+```csharp  
+int Attach_V7 (   
+   IDebugProgram2       pMDMProgram,  
+   IDebugEventCallback2 pCallback,  
+   uint                 dwReason  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pMDMProgram`  
- \[in\][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表附加至程式的介面。  
+ [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)代表要附加至程式的介面。  
   
  `pCallback`  
- \[in\][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)是用來將偵錯事件傳送至 SDM 的介面。  
+ [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)介面，以用來偵錯事件傳送至 SDM。  
   
  `dwReason`  
- \[in\]介於[ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)指定的原因，讓您附加的列舉型別。  
+ [in]中的值[ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)列舉，指定可附加的原因。  
   
-## 傳回值  
- 實作應該一律會傳回`E_NOTIMPL`。  
+## <a name="return-value"></a>傳回值  
+ 實作應該會一律傳回`E_NOTIMPL`。  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
 > [!WARNING]
->  起[!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)]，這個方法已不再使用，而且應該永遠會傳回`E_NOTIMPL`。  請參閱[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)介面的另一個方法，如果需要指出不能將它附加至 \[程式\] 節點，或 \[程式\] 節點就只需要設定程式`GUID`。否則，實作[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。  
+>  從[!INCLUDE[vsprvslong](../../../code-quality/includes/vsprvslong_md.md)]，此方法已不再使用，而且應該會一律傳回`E_NOTIMPL`。 請參閱[IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)介面如需替代方法，如果需要表示無法附加至程式節點，或 [程式] 節點只需要設定程式`GUID`。 否則，實作[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法。  
   
-## Visual Studio 2005年之前  
- 這個方法只需要 DE 會在位址空間正在偵錯程式時，才需要實作。  否則，這個方法會傳回`S_FALSE`。  
+## <a name="prior-to-visual-studio-2005"></a>在 Visual Studio 2005 之前  
+ 這個方法需要 DE 執行偵錯程式的位址空間中時，才實作。 否則，此方法應傳回`S_FALSE`。  
   
- 呼叫這個方法時，必須傳送 DE [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)事件物件，如果它沒有已傳送之執行個體的[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面，以及[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)和[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)事件的物件。  [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)事件物件，然後送出如果`dwReason`參數是`ATTACH_REASON_LAUNCH`。  
+ 呼叫這個方法時，必須傳送 DE [IDebugEngineCreateEvent2](../../../extensibility/debugger/reference/idebugenginecreateevent2.md)事件物件，如果它已經尚未傳送的這個執行個體[IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)介面，並將[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)和[IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)事件物件。 [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)事件物件會接著傳送`dwReason`參數是`ATTACH_REASON_LAUNCH`。  
   
- 必須呼叫 DE [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)上的方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件所提供的[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件物件，而且必須將該程式的 GUID 儲存在的執行個體資料`IDebugProgram2` DE 所實作的物件。  
+ 必須先呼叫 DE [GetProgramId](../../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)方法[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)提供的物件[IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件物件，而且必須儲存該程式的 GUID中的執行個體資料`IDebugProgram2`DE 所實作的物件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
@@ -77,4 +78,4 @@ int Attach_V7 ( 
  [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)   
  [IDebugLoadCompleteEvent2](../../../extensibility/debugger/reference/idebugloadcompleteevent2.md)   
  [IDebugEntryPointEvent2](../../../extensibility/debugger/reference/idebugentrypointevent2.md)   
- [ATTACH\_REASON](../../../extensibility/debugger/reference/attach-reason.md)
+ [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md)

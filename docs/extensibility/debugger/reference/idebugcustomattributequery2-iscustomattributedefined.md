@@ -1,51 +1,51 @@
 ---
-title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery2::IsCustomAttributeDefined"
+title: "IDebugCustomAttributeQuery2::IsCustomAttributeDefined |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+helpviewer_keywords: IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2f1311beccfb36364bb8039f75bbe2955cbc9fca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-判斷自訂屬性是否存在的名稱。  
+# <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
+判斷名稱是否存在的自訂屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
+```cpp  
+HRESULT IsCustomAttributeDefined(   
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
+   [In] string pszCustomAttributeName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszCustomAttributeName`  
- \[in\]字串，包含要尋找的自訂屬性的名稱。  
+ [in]字串，包含要尋找的自訂屬性的名稱。  
   
-## 傳回值  
- 傳回 S\_OK 如果自訂屬性定義在此欄位中，否則會傳回 S\_FALSE。  
+## <a name="return-value"></a>傳回值  
+ 傳回 S_OK 如果自訂屬性定義此欄位中，否則會傳回 S_FALSE。  
   
-## 備註  
- 若要取得屬性的位元組相關聯的自訂屬性，呼叫[GetCustomAttributeByName](../Topic/IDebugCustomAttributeQuery2::GetCustomAttributeByName.md)方法。  
+## <a name="remarks"></a>備註  
+ 若要取得自訂屬性相關聯的屬性位元組，請呼叫[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

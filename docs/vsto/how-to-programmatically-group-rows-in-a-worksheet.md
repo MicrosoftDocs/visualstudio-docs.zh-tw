@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Group Rows in a Worksheet | Microsoft Docs'
+title: "如何： 以程式設計方式分組的工作表中的資料列 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,50 +21,51 @@ helpviewer_keywords:
 - rows [Office development in Visual Studio], ungrouping
 - columns [Office development in Visual Studio], ungrouping
 ms.assetid: 48037dca-35a2-4df2-918b-6a9f568fae91
-caps.latest.revision: 46
-author: kempb
-ms.author: kempb
+caps.latest.revision: "46"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 996904cfea85793c2359e6fc5264b8e8dd973024
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: c11911d6d9e7b92b7a86b21723c8788afe15a57b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>How to: Programmatically Group Rows in a Worksheet
-  You can group one or more whole rows. To create a group in a worksheet, use a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>如何：以程式設計方式在工作表中分組資料列
+  您可以分組一或多個整個資料列。 若要在工作表中建立群組時，使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
- If you add a <xref:Microsoft.Office.Tools.Excel.NamedRange> control to a document-level project at design time, you can use the control to programmatically create a group. The following example assumes that there are three <xref:Microsoft.Office.Tools.Excel.NamedRange> controls on the same worksheet: `data2001`, `data2002`, and `dataAll`. Each named range refers to a whole row in the worksheet.  
+## <a name="using-a-namedrange-control"></a>使用 NamedRange 控制項  
+ 如果您將加入<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項加入文件層級專案，在設計階段，您可以使用的控制項，以程式設計方式建立群組。 下列範例假設有三個<xref:Microsoft.Office.Tools.Excel.NamedRange>相同的工作表上的控制項： `data2001`， `data2002`，和`dataAll`。 每個具名的範圍會參考工作表中的整個資料列。  
   
-#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>To create a group of NamedRange controls on a worksheet  
+#### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>若要建立一組工作表上的 NamedRange 控制項  
   
-1.  Group three named ranges by calling the <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> method of each range. This code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+1.  藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A>每個範圍的方法。 這個程式碼必須放置在工作表類別中，而不是 `ThisWorkbook` 類別中。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]  [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
-  
-    > [!NOTE]  
-    >  To ungroup rows, call the <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> method.  
-  
-## <a name="using-native-excel-ranges"></a>Using Native Excel Ranges  
- The code assumes that you have three Excel ranges named `data2001`, `data2002`, and `dataAll` on a worksheet.  
-  
-#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>To create a group of Excel ranges in a worksheet  
-  
-1.  Group three named ranges by calling the <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> method of each range. The following example assumes that there are three <xref:Microsoft.Office.Interop.Excel.Range> controls named `data2001`, `data2002`, and `dataAll` on the same worksheet. Each named range refers to a whole row in the worksheet.  
-  
-     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]  [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
+     [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]  
   
     > [!NOTE]  
-    >  To ungroup rows, call the <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> method.  
+    >  若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A>方法。  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [How to: Add NamedRange Controls to Worksheets](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="using-native-excel-ranges"></a>使用原生 Excel 範圍  
+ 此程式碼假設您有三個名為的 Excel 範圍`data2001`， `data2002`，和`dataAll`工作表上。  
+  
+#### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>若要在工作表中建立的 Excel 範圍群組  
+  
+1.  藉由呼叫群組三個具名的範圍<xref:Microsoft.Office.Interop.Excel.Range.Group%2A>每個範圍的方法。 下列範例假設有三個<xref:Microsoft.Office.Interop.Excel.Range>控制項名為`data2001`， `data2002`，和`dataAll`上相同的工作表。 每個具名的範圍會參考工作表中的整個資料列。  
+  
+     [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
+     [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]  
+  
+    > [!NOTE]  
+    >  若要取消群組的資料列，請呼叫<xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A>方法。  
+  
+## <a name="see-also"></a>另請參閱  
+ [使用工作表](../vsto/working-with-worksheets.md)   
+ [NamedRange 控制項](../vsto/namedrange-control.md)   
+ [如何： 將 NamedRange 控制項加入工作表](../vsto/how-to-add-namedrange-controls-to-worksheets.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

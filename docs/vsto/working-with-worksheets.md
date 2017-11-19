@@ -1,33 +1,35 @@
 ---
-title: "使用工作表"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Excel [Visual Studio 中的 Office 程式開發], 工作表"
-  - "工作表 [Visual Studio 中的 Office 程式開發], 一般工作"
+title: "使用工作表 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Excel [Office development in Visual Studio], worksheets
+- worksheets [Office development in Visual Studio], common tasks
 ms.assetid: d9204916-6471-4cf0-89a1-d46dae0e2599
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: bc188299dbc5fe6f8f048b4971fa4973ba2f72f2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用工作表
+# <a name="working-with-worksheets"></a>使用工作表
   <xref:Microsoft.Office.Tools.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Worksheet> 類別包含您用來執行工作表工作的方法和屬性。  
   
 |工作|程序|  
-|--------|--------|  
-|在活頁簿中加入新的工作表。|[如何：以程式設計方式在活頁簿中加入新的工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
+|----------|---------------|  
+|在活頁簿中加入新的工作表。|[如何：以程式設計方式在活頁簿中新增工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)|  
 |在活頁簿中的指定位置複製工作表。|[如何：以程式設計方式複製工作表](../vsto/how-to-programmatically-copy-worksheets.md)|  
 |刪除指定的工作表。|[如何：以程式設計方式從活頁簿中刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)|  
 |將使用者的選取範圍移至指定的工作表。|[如何：以程式設計方式選取工作表](../vsto/how-to-programmatically-select-worksheets.md)|  
@@ -37,7 +39,7 @@ caps.handback.revision: 12
 |變更一或多個工作表的可見性。|[如何：以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)|  
 |鎖定所有或部分的工作表，使其無法被編輯。|[如何：以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)|  
 |移除工作表的鎖定，使其可被編輯。|[如何：以程式設計方式移除工作表的保護](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)|  
-|加入與刪除註解。|[如何：以程式設計方式加入及刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
+|加入與刪除註解。|[如何：以程式設計方式新增及刪除工作表註解](../vsto/how-to-programmatically-add-and-delete-worksheet-comments.md)|  
 |顯示或隱藏所有註解。|[如何：以程式設計方式顯示工作表註解](../vsto/how-to-programmatically-display-worksheet-comments.md)|  
 |在工作表中建立群組。|[如何：以程式設計方式在工作表中分組資料列](../vsto/how-to-programmatically-group-rows-in-a-worksheet.md)|  
 |只有當資料列包含選取的儲存格時才粗體化。|[如何：以程式設計方式在包含選取儲存格的工作表列中變更格式](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)|  
@@ -45,14 +47,14 @@ caps.handback.revision: 12
 |檢查工作表拼字。|[如何：以程式設計方式在工作表中檢查拼字](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)|  
 |排序命名範圍和清單物件的資料。|[如何：以程式設計方式在工作表中排序資料](../vsto/how-to-programmatically-sort-data-in-worksheets.md)|  
   
- 如需 Excel 工作和 Excel 物件模型的詳細資訊，請參閱 [Excel 物件模型概觀](../vsto/excel-object-model-overview.md)。  
+ 如需 Excel 工作和 Excel 物件模型的詳細資訊，請參閱 [Excel Object Model Overview](../vsto/excel-object-model-overview.md)。  
   
  在某些情況下，您在 VSTO 增益集中執行這些工作的方式，不同於您在文件層級自訂中的執行方式。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
  [使用活頁簿](../vsto/working-with-workbooks.md)   
  [使用範圍](../vsto/working-with-ranges.md)   
- [在 Excel 工作表中使用 Windows Form 控制項](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
+ [在 Excel 工作表中使用 Windows Forms 控制項](../vsto/using-windows-forms-controls-on-excel-worksheets.md)  
   
   

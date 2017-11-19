@@ -1,65 +1,65 @@
 ---
-title: "IDebugBinder | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder"
-helpviewer_keywords: 
-  - "IDebugBinder 介面"
+title: "IDebugBinder |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder
+helpviewer_keywords: IDebugBinder interface
 ms.assetid: d1f31e5b-c6e2-4e02-8959-b3e86041b29c
-caps.latest.revision: 16
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 614133a72e05f8bd412216d466bbfc90a197ff07
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]
->  在 Visual Studio 2015，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱 [CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 這個介面會繫結 \[符號\] 欄位中，通常要記憶體內容或物件，其中包含符號的目前值的符號提供者，所傳回。  
+ 這個介面會繫結 [符號] 欄位中，通常是傳回的符號提供者，記憶體內容或包含符號的目前值的物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugBinder : IUnknown  
 ```  
   
-## 實作者注意事項  
- 此介面支援運算式評估，而且必須由偵錯引擎 \(DE\) 實作。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 此介面支援運算式評估，而且必須由偵錯引擎 (DE) 實作。  
   
-## 呼叫端資訊  
- 此介面用在運算式評估，而且通常用於實作 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 和 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)。  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ 此介面運算式評估所使用，而且通常用於實作[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)和[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)。  
   
-## 依照 Vtable 順序的方法  
- 下表顯示的方法 `IDebugBinder`。  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
+ 下表顯示的方法`IDebugBinder`。  
   
-|方法|描述|  
-|--------|--------|  
-|[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)|取得記憶體內容或物件，其中包含符號的目前值。|  
+|方法|說明|  
+|------------|-----------------|  
+|[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)|取得的記憶體內容或包含符號的目前值的物件。|  
 |[ResolveRuntimeType](../../../extensibility/debugger/reference/idebugbinder-resolveruntimetype.md)|決定物件的執行階段類型。|  
-|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|將記憶體內容的物件位置或記憶體位址。|  
-|[GetFunctionObject](../Topic/IDebugBinder::GetFunctionObject.md)|取得 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 用來建立函式參數的物件。|  
-|[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|取得變數的實際類型。|  
+|[GetMemoryContext](../../../extensibility/debugger/reference/idebugbinder-getmemorycontext.md)|將記憶體內容物件的位置或記憶體位址。|  
+|[GetFunctionObject](../../../extensibility/debugger/reference/idebugbinder-getfunctionobject.md)|取得[IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)用來建立函式參數的物件。|  
+|[ResolveDynamicType](../../../extensibility/debugger/reference/idebugbinder-resolvedynamictype.md)|取得變數的確切類型。|  
   
-## 備註  
- 此介面會傳回物件，以供在運算式評估工具剖析樹狀結構。 運算式評估工具剖析運算式所使用的符號提供者的執行個體轉換成運算式中的符號 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md), ，描述以其類型和位置的原始程式碼中的每個符號。[繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md) 方法將 `IDebugField` 物件加入至 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 連接或繫結符號的物件類型在記憶體中的實際值。 這些 `IDebugObject` 物件然後會儲存供稍後評估剖析樹狀結構中。  
+## <a name="remarks"></a>備註  
+ 此介面會傳回所使用的運算式評估工具中的物件只有剖析樹狀目錄。 運算式評估工具剖析運算式所使用的符號提供者的執行個體轉換成運算式中的符號[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)，描述根據其類型和位置的原始程式碼中的每個符號。 [繫結](../../../extensibility/debugger/reference/idebugbinder-bind.md)方法轉換`IDebugField`物件加入至[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)連接或繫結符號的物件類型為記憶體中的實際值。 這些`IDebugObject`物件然後會儲存供稍後評估剖析樹狀目錄中。  
   
-## 需求  
- 標頭︰ ee.h  
+## <a name="requirements"></a>需求  
+ 標頭： ee.h  
   
- 命名空間 ︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件 ︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   
  [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)   
  [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)   

@@ -1,92 +1,92 @@
 ---
-title: "THREADPROPERTY_FIELDS | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "THREADPROPERTY_FIELDS"
-helpviewer_keywords: 
-  - "THREADPROPERTY_FIELDS 列舉型別"
+title: "THREADPROPERTY_FIELDS |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: THREADPROPERTY_FIELDS
+helpviewer_keywords: THREADPROPERTY_FIELDS enumeration
 ms.assetid: 5b88acb9-03ea-4c29-a788-f0087dccbe23
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 626c4aa309c7ce68eaf5d97c734ec4fd731148c1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# THREADPROPERTY_FIELDS
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 指定要擷取執行緒的相關資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_THREADPROPERTY_FIELDS {   
-   TPF_ID           = 0x0001,  
-   TPF_SUSPENDCOUNT = 0x0002,  
-   TPF_STATE        = 0x0004,  
-   TPF_PRIORITY     = 0x0008,  
-   TPF_NAME         = 0x0010,  
-   TPF_LOCATION     = 0x0020,  
-   TPF_ALLFIELDS    = 0xffffffff  
+```cpp  
+enum enum_THREADPROPERTY_FIELDS {   
+   TPF_ID           = 0x0001,  
+   TPF_SUSPENDCOUNT = 0x0002,  
+   TPF_STATE        = 0x0004,  
+   TPF_PRIORITY     = 0x0008,  
+   TPF_NAME         = 0x0010,  
+   TPF_LOCATION     = 0x0020,  
+   TPF_ALLFIELDS    = 0xffffffff  
 };  
 typedef DWORD THREADPROPERTY_FIELDS;  
 ```  
   
-```c#  
-public enum enum_THREADPROPERTY_FIELDS {   
-   TPF_ID           = 0x0001,  
-   TPF_SUSPENDCOUNT = 0x0002,  
-   TPF_STATE        = 0x0004,  
-   TPF_PRIORITY     = 0x0008,  
-   TPF_NAME         = 0x0010,  
-   TPF_LOCATION     = 0x0020,  
-   TPF_ALLFIELDS    = 0xffffffff  
+```csharp  
+public enum enum_THREADPROPERTY_FIELDS {   
+   TPF_ID           = 0x0001,  
+   TPF_SUSPENDCOUNT = 0x0002,  
+   TPF_STATE        = 0x0004,  
+   TPF_PRIORITY     = 0x0008,  
+   TPF_NAME         = 0x0010,  
+   TPF_LOCATION     = 0x0020,  
+   TPF_ALLFIELDS    = 0xffffffff  
 };  
 ```  
   
-## Members  
- TPF\_ID  
- 初始化\/使用`dwThreadId`欄位的[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  
+## <a name="members"></a>成員  
+ TPF_ID  
+ 初始化/使用`dwThreadId`欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構。  
   
- TPF\_SUSPENDCOUNT  
- 初始化\/使用`dwSuspendCount`欄位的`THREADPROPERTIE`s 的結構。  
+ TPF_SUSPENDCOUNT  
+ 初始化/使用`dwSuspendCount`欄位`THREADPROPERTIE`結構。  
   
- TPF\_STATE  
- 初始化\/使用`dwThreadState`欄位的`THREADPROPERTIE`s 的結構。  
+ TPF_STATE  
+ 初始化/使用`dwThreadState`欄位`THREADPROPERTIE`結構。  
   
- TPF\_PRIORITY  
- 初始化\/使用`bstrPriority`欄位的`THREADPROPERTIE`s 的結構。  
+ TPF_PRIORITY  
+ 初始化/使用`bstrPriority`欄位`THREADPROPERTIE`結構。  
   
- TPF\_NAME  
- 初始化\/使用`bstrName`欄位的`THREADPROPERTIE`s 的結構。  
+ TPF_NAME  
+ 初始化/使用`bstrName`欄位`THREADPROPERTIE`結構。  
   
- TPF\_LOCATION  
- 初始化\/使用`bstrLocation`欄位的`THREADPROPERTIE`s 的結構。  
+ TPF_LOCATION  
+ 初始化/使用`bstrLocation`欄位`THREADPROPERTIE`結構。  
   
- TPF\_ALLFIELDS  
- 指定所有的欄位。  
+ TPF_ALLFIELDS  
+ 指定所有欄位。  
   
-## 備註  
- 這些值會當做引數傳遞[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以指出哪一個欄位的[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。  
+## <a name="remarks"></a>備註  
+ 這些值會傳遞做為引數[GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)方法，以表示的哪些欄位[THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)結構會進行初始化。  
   
- 這些值也可用在`dwFields`成員的`THREADPROPERTIES` ，表示哪些欄位已使用和有效的結構。  
+ 這些值也會在`dwFields`隸屬`THREADPROPERTIES`結構，以指出哪些欄位是使用且有效。  
   
- 這些旗標可以使用位元和結合`OR`。  
+ 這些旗標可能會合併使用位元`OR`。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)   
  [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)

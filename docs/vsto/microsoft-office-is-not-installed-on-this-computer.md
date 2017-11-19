@@ -1,35 +1,36 @@
 ---
-title: "這部電腦未安裝 Microsoft Office"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VST.SelectDocWizard.OfficeNotInstalled"
-dev_langs: 
-  - "VB"
-  - "CSharp"
+title: "在此電腦上沒有安裝 Microsoft Office |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: VST.SelectDocWizard.OfficeNotInstalled
+dev_langs:
+- VB
+- CSharp
 ms.assetid: da023863-721c-4e1a-96e1-6345dd12011e
-caps.latest.revision: 22
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "22"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: af9a13a72aed42f46a755520802f8688bc962161
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 這部電腦未安裝 Microsoft Office
+# <a name="microsoft-office-is-not-installed-on-this-computer"></a>這部電腦未安裝 Microsoft Office
   Visual Studio 找不到對應至這種專案類型的 Microsoft Office 應用程式。 如果您正在開發 VSTO 增益集專案，這表示您無法偵錯或執行專案。 如果您嘗試建立文件層級專案，這表示您無法建立專案。  
   
-### 更正這個錯誤  
+### <a name="to-correct-this-error"></a>更正這個錯誤  
   
-1.  請安裝與這種專案類型相關聯的 Microsoft Office 應用程式，包括主要 Interop 組件。 如需支援之 Microsoft Office 版本的詳細資訊，請參閱[設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
+1.  請安裝與這種專案類型相關聯的 Microsoft Office 應用程式，包括主要 Interop 組件。 如需支援之 Microsoft Office 版本的詳細資訊，請參閱 [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)。  
   
-## 請參閱  
- [設定電腦以開發 Office 方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
- [如何：設定電腦來開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [Configuring a Computer to Develop Office Solutions](../vsto/configuring-a-computer-to-develop-office-solutions.md)   
+ [如何：設定電腦以開發 Office 方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)  
   
   

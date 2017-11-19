@@ -1,66 +1,67 @@
 ---
-title: "IDebugFunctionObject2::Evaluate | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugFunctionObject2::Evaluate"
+title: "IDebugFunctionObject2::Evaluate |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugFunctionObject2::Evaluate
 ms.assetid: bc54c652-904b-4297-a6db-faa329684881
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58c15872b035660c2e0103a1a9ff69822b250a45
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugFunctionObject2::Evaluate
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-呼叫函式，並傳回產生的值做為物件。  
+# <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
+呼叫此函式並傳回產生的值當做物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Evaluate (  
-   IDebugObject** ppParams,  
-   DWORD          dwParams,  
-   DWORD          dwEvalFlags,  
-   DWORD          dwTimeout,  
-   IDebugObject** ppResult  
+   IDebugObject** ppParams,  
+   DWORD          dwParams,  
+   DWORD          dwEvalFlags,  
+   DWORD          dwTimeout,  
+   IDebugObject** ppResult  
 );  
 ```  
   
-```c#  
+```csharp  
 int Evaluate (  
-   IDebugObject     ppParams,  
-   uint             dwParams,  
-   uint             dwEvalFlags,  
-   uint             dwTimeout,  
-   out IDebugObject ppResult  
+   IDebugObject     ppParams,  
+   uint             dwParams,  
+   uint             dwEvalFlags,  
+   uint             dwTimeout,  
+   out IDebugObject ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppParams`  
- \[in\]陣列的[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ，表示輸入的參數的物件。  這些參數被建立使用這個介面中的其中一個建立方法。  
+ [in]陣列[IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)代表輸入的參數的物件。 這個介面中使用其中一種建立方法的每一個這些參數所建立。  
   
  `dwParams`  
- \[in\]中的參數數目`ppParams`陣列。  
+ [in]中的參數數目`ppParams`陣列。  
   
  `dwEvalFlags`  
- \[in\]從的旗標組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別，指定要如何進行評估。  
+ [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定評估的執行方式的列舉。  
   
  `dwTimeout`  
- \[in\]以毫秒為單位，這個方法傳回之前等待指定的最長的時間。  使用**無限**無限期地等待。  
+ [in]指定的時間上限，以毫秒為單位，從這個方法返回之前等候。 使用**無限**無限期地等待。  
   
  `ppResult`  
- \[\] out傳回 **IDebugObject** ，表示為物件的函式的值。  
+ [out]傳回**IDebugObject**表示為物件函式的值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

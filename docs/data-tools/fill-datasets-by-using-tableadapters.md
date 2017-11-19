@@ -1,121 +1,131 @@
 ---
-title: "將資料填入資料集 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "aspx"
-helpviewer_keywords: 
-  - "資料 [Visual Studio], 資料集"
-  - "資料 [Visual Studio], 擷取"
-  - "資料擷取"
-  - "資料集 [Visual Basic]"
-  - "資料集 [Visual Basic], 填滿"
-  - "資料集 [Visual Basic], 載入資料"
-  - "擷取資料"
+title: "使用 Tableadapter 填入資料集 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- datasets [Visual Basic]
+- datasets [Visual Basic], loading data
+- data retrieval
+- retrieving data
+- datasets [Visual Basic], filling
+- data [Visual Studio], retrieving
+- data [Visual Studio], datasets
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
-caps.latest.revision: 32
-caps.handback.revision: 14
-author: "mikeblome"
-ms.author: "mblome"
-manager: "ghogen"
+caps.latest.revision: "32"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.technology: vs-data-tools
+ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# 將資料填入資料集
-TableAdapter 是用來執行 Transact\-SQL 查詢及填入資料集的典型 Visual Studio 機制。  
-  
- 您可以使用 TableAdapter 或命令物件 \(例如 <xref:System.Data.SqlClient.SqlCommand>\)，對資料來源執行 SQL 陳述式或預存程序。  若要將資料載入以 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 設計工具所建立的資料集，請使用 TableAdapter。  若要將資料載入以程式設計方式建立的資料集，則請使用資料配接器。  如果應用程式不使用資料集，請使用命令物件，直接對資料庫執行 SQL 陳述式或預存程序。  
-  
- 下列主題提供有關在 Visual Studio 中以資料填入資料集的詳細資訊：  
-  
-|主題|描述|  
-|--------|--------|  
-|[如何：以資料填入資料集](../data-tools/how-to-fill-a-dataset-with-data.md)|詳細說明如何使用 TableAdapter 和 DataAdapter 將資料載入資料集。|  
-|[如何：建立及執行傳回資料列的 SQL 陳述式](../Topic/How%20to:%20Create%20and%20Execute%20an%20SQL%20Statement%20that%20Returns%20Rows.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，建立及執行傳回資料列的 SQL 陳述式。|  
-|[如何：建立及執行傳回單一值的 SQL 陳述式](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-a-single-value.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，建立及執行傳回單一值的 SQL 陳述式。|  
-|[如何：建立及執行未傳回值的 SQL 陳述式](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-no-value.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，建立及執行不傳回值的 SQL 陳述式。|  
-|[如何：執行傳回資料列的預存程序](../Topic/How%20to:%20Execute%20a%20Stored%20Procedure%20that%20Returns%20Rows.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，執行傳回資料列的預存程序。|  
-|[如何：執行傳回單一值的預存程序](../data-tools/how-to-execute-a-stored-procedure-that-returns-a-single-value.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，執行傳回單一值的預存程序。|  
-|[如何：執行未傳回值的預存程序](../data-tools/how-to-execute-a-stored-procedure-that-returns-no-value.md)|詳細說明如何使用 TableAdapter 查詢和命令物件，執行不傳回值的預存程序。|  
-|[如何：設定及取得命令物件的參數](../Topic/How%20to:%20Set%20and%20Get%20Parameters%20for%20Command%20Objects.md)|詳細說明如何指派值給查詢和預存程序中的參數，以及讀取執行命令後傳回的參數值。|  
-|[逐步解說：以資料填入資料集](../Topic/Walkthrough:%20Filling%20a%20Dataset%20with%20Data.md)|提供建立資料集以及將資料庫的資料填入其中的細節。|  
-|[逐步解說：將 XML 資料讀入資料集](../data-tools/read-xml-data-into-a-dataset.md)|詳細說明如何建立 Windows 應用程式，以便將 XML 資料載入資料集，然後在 <xref:System.Windows.Forms.DataGridView> 控制項中顯示資料集。|  
-  
-## 填入資料集  
- 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 設計階段工具 \(例如 [Dataset 設計工具](../data-tools/creating-and-editing-typed-datasets.md)或[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)\) 建立資料集，則要使用 TableAdapter 來填入此資料集。  TableAdapter 會執行 SQL 陳述式或預存程序。  
-  
- 如果您在不使用設計階段工具的情況下建立資料集，則必須使用資料配接器來填入及更新資料   \(TableAdapter 在 [.NET Framework 4.6 和 4.5](../Topic/.NET%20Framework%204.6%20and%204.5.md) 中並不是實際的類別，所以不適用於未使用設計階段工具所建立的資料集\)。  如需以 TableAdapter 或資料配接器將資料載入資料集的詳細資訊，請參閱 [如何：以資料填入資料集](../data-tools/how-to-fill-a-dataset-with-data.md)。  
-  
-## TableAdapter 查詢  
- 您可以執行 TableAdapter 查詢，將資料填入資料集 \(更精確地說，將資料載入組成資料集的 DataTable\)。  使用 \[**DataSet 設計工具**\] 中的 [TableAdapter 查詢組態精靈](../data-tools/editing-tableadapters.md)建立 TableAdapter 查詢。  TableAdapter 查詢在 TableAdapter 中顯示為具名方法，透過呼叫 TableAdapter 方法予以執行。  如需建立和執行 TableAdapter 查詢的詳細資訊，請參閱下列頁面：  
-  
--   [如何：建立及執行傳回資料列的 SQL 陳述式](../Topic/How%20to:%20Create%20and%20Execute%20an%20SQL%20Statement%20that%20Returns%20Rows.md)  
-  
--   [如何：建立及執行傳回單一值的 SQL 陳述式](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-a-single-value.md)  
-  
--   [如何：建立及執行未傳回值的 SQL 陳述式](../data-tools/how-to-create-and-execute-an-sql-statement-that-returns-no-value.md)  
-  
--   [如何：執行傳回資料列的預存程序](../Topic/How%20to:%20Execute%20a%20Stored%20Procedure%20that%20Returns%20Rows.md)  
-  
--   [如何：執行傳回單一值的預存程序](../data-tools/how-to-execute-a-stored-procedure-that-returns-a-single-value.md)  
-  
--   [如何：執行未傳回值的預存程序](../data-tools/how-to-execute-a-stored-procedure-that-returns-no-value.md)  
-  
-## 命令物件  
- 命令物件讓您能夠直接對資料庫執行 SQL 陳述式和預存程序，而不需要 <xref:System.Data.DataSet>、TableAdapter 或 <xref:System.Data.Common.DataAdapter> \(*命令物件* \(Command Object\) 一詞指的是應用程式所使用的 .NET Framework Data Provider 的特定命令。  例如，如果您的應用程式使用 .NET Framework Data Provider for SQL Server，則命令物件會是 <xref:System.Data.SqlClient.SqlCommand>\)。  
-  
- 將資料命令的 `CommandType` 屬性設為其中一個 <xref:System.Data.IDbCommand.CommandType%2A> 列舉值，設定命令使用 SQL 陳述式或預存程序查詢資料。  若命令將要執行 SQL 陳述式，請將 `CommandType` 設為 <xref:System.Data.CommandType>；若執行預存程序，則將它設為 <xref:System.Data.CommandType>。  然後將 `CommandText` 屬性設為 SQL 陳述式或預存程序名稱。  之後，可以呼叫資料命令的其中一個執行方法 \(`ExecuteReader`、`ExecuteScalar`、`ExecuteNonQuery`\)，執行資料命令。  
-  
- 各版本的 [.NET Framework 資料提供者](../Topic/.NET%20Framework%20Data%20Providers.md)都會提供適合特定資料庫的命令物件。  
-  
- 透過資料命令的使用，您可在應用程式中進行下列作業：  
-  
--   執行 Select 命令，傳回您可直接讀取的結果，而非將其載入資料集。  若要讀取結果，請使用資料讀取器 \(<xref:System.Data.OleDb.OleDbDataReader>、<xref:System.Data.SqlClient.SqlDataReader>、<xref:System.Data.Odbc.OdbcDataReader> 或 <xref:System.Data.OracleClient.OracleDataReader> 物件\)，其運作方式類似唯讀、順向游標，您可以繫結控制項給它。  這對於減少記憶體用量和迅速載入唯讀資料是相當有用的做法。  
-  
--   執行資料庫定義語言 \(DDL\) 命令，以建立、編輯和移除資料表、預存程序和其他的資料庫結構   \(當然，您必須擁有執行這些動作的使用權限\)。  
-  
--   執行命令以取得資料庫目錄資訊。  
-  
--   執行動態 SQL 命令以更新、插入或刪除資料錄，而不是在更新資料集資料表後，再將變更部分複製到資料庫。  
-  
--   執行可傳回純量值 \(也就是單一值\) 的命令，例如彙總函式 \(SUM、COUNT、AVG 等\) 的結果。  
-  
--   執行命令，從 SQL Server 資料庫 \(7.0 或更新的版本\) 以 XML 格式傳回資料。  典型的用途如：執行查詢並以 XML 格式取回資料，對其套用 XSLT 轉換以將資料轉換成 HTML，再將結果傳送至瀏覽器。  
-  
- 命令的屬性包含針對資料庫執行命令時所需的一切資訊。  它們包括：  
-  
--   **連接**：資料命令參考至一特定的連接，以便與資料庫通訊。  
-  
--   **命令的名稱或文字**：命令包含所要執行 SQL 陳述式中實際的文字，或者是預存程序的名稱。  
-  
--   **參數**：命令可能會要求同時傳遞參數值 \(輸入參數\)。  命令所傳回的值，也可能是以傳回值或輸出參數值的格式。  每個命令都有一參數集合，可個別設定或讀取以傳遞或取得值。  如需詳細資訊，請參閱 [如何：設定及取得命令物件的參數](../Topic/How%20to:%20Set%20and%20Get%20Parameters%20for%20Command%20Objects.md)。  
-  
- 使用適用於所要取回結果的方法，執行命令。  例如，如果您要取回資料列，必須呼叫命令的 `ExecuteReader` 方法，將資料錄傳回資料讀取器。  如果您要執行 UPDATE、INSERT 或 DELETE 命令，請呼叫命令的 `ExecuteNonQuery` 方法，它將傳回指出受影響之資料列數目的值。  如果您要執行彙總函式 \(例如傳回客戶訂單數\)，則呼叫 `ExecuteScalar` 方法。  
-  
-### 多重結果集  
- 命令物件通常用來傳回單一資料表 \(一組資料列\)。  然而命令也可以執行傳回多重結果集的程序。  這可能出現於幾種情況。  其一是命令參考傳回多重結果集的預存程序。  或者，命令可包含兩個 \(或更多\) 陳述式或預存程序的名稱。  這種情況下，陳述式或程序會依序執行，而且可藉由單一呼叫傳回多重結果集。  
-  
- 如果為某一命令指定多個陳述式或程序，則它們必須屬於同一資料型別。  例如，您可執行連續的 SQL 陳述式或連續的預存程序，  但不能在同一命令中混用預存程序呼叫和 SQL 陳述式。  如需詳細資訊，請參閱[使用 DataReader 擷取資料](../Topic/Retrieving%20Data%20Using%20a%20DataReader.md)。  
+# <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
+TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定的預存程序的資料庫中的資料。 也可以執行 Tableadapter 加入、 更新和刪除的資料庫來保存您對資料集的變更。 您也可以發出與任何特定資料表無關的通用命令。  
   
 > [!NOTE]
->  對於 Oracle 而言，.NET Framework Data Provider for Oracle 不支援批次處理的 SQL 陳述式。  然而，卻能讓您使用多個 REF CURSOR 輸出參數來填入資料集，並分別置於個別的資料表中。  必須定義參數，將其標示為輸出參數，並將其指示為 REF CURSOR 資料型別。  請注意，將 <xref:System.Data.OracleClient.OracleDataAdapter> 物件從 REF CURSOR 參數填入到預存程序時，將無法使用 `Update` 方法，因為當執行 SQL 陳述式時，Oracle 並不會提供決定資料表名稱和資料行名稱所需的資訊。  
+>  Tableadapter 會由 Visual Studio 設計工具產生。 如果您要以程式設計方式建立資料集，然後使用資料配接器，這是.NET Framework 類別。  
   
-## 安全性  
- 使用 `CommandType` 屬性設為 <xref:System.Data.CommandType> 的資料命令時，請先仔細檢查用戶端傳送出來的資訊，然後再將這些資訊傳遞至資料庫。  惡意使用者會嘗試傳送 \(插入\) 修改過或額外的 SQL 陳述式 \(Statement\)，以獲取未經授權的存取權，或損壞資料庫。  在將使用者輸入傳輸到資料庫前，一定要確認資訊是有效的。  最好的做法是盡可能使用參數型查詢或預存程序。  
+ 如需 TableAdapter 作業的詳細資訊，您可以略過直接以其中一個主題：  
   
-## 請參閱  
- [Visual Studio 資料應用程式的概觀](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [連接至 Visual Studio 中的資料](../data-tools/connecting-to-data-in-visual-studio.md)   
- [準備您的應用程式以接收資料](../Topic/Preparing%20Your%20Application%20to%20Receive%20Data.md)   
- [將資料擷取至您的應用程式中](../data-tools/fetching-data-into-your-application.md)   
- [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [在您的應用程式中編輯資料](../data-tools/editing-data-in-your-application.md)   
- [驗證資料](../Topic/Validating%20Data.md)   
- [儲存資料](../data-tools/saving-data.md)   
- [用來在 Visual Studio 中使用資料來源的工具](../Topic/Tools%20for%20Working%20with%20Data%20Sources%20in%20Visual%20Studio.md)
+|主題|說明|  
+|-----------|-----------------|  
+|[建立和設定 TableAdapter](../data-tools/create-and-configure-tableadapters.md)|如何使用設計工具來建立及設定 TableAdapters|  
+|[建立參數型 TableAdapter 查詢](../data-tools/create-parameterized-tableadapter-queries.md)|如何讓使用者以引數提供給 TableAdapter 程序或查詢|  
+|[以 TableAdapter 直接存取資料庫](../data-tools/directly-access-the-database-with-a-tableadapter.md)|如何使用 Tableadapter 的 Dbdirect 方法|  
+|[填入資料集時關閉條件約束](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|如何更新資料時，使用 foreign key 條件約束|  
+|[如何擴充 TableAdapter 的功能](../data-tools/fill-datasets-by-using-tableadapters.md)|如何將自訂程式碼加入至 Tableadapter|  
+|[將 XML 資料讀入資料集](../data-tools/read-xml-data-into-a-dataset.md)|如何使用 XML|  
+  
+<a name="tableadapter-overview"></a>  
+  
+## <a name="tableadapter-overview"></a>TableAdapter 概觀  
+ Tableadapter 會連接到資料庫、 執行的查詢或預存程序，並使用傳回的資料填入其 DataTable 設計工具產生的元件。 Tableadapter 也會傳送更新的資料從您的應用程式資料庫。 您可以執行您希望在 TableAdapter 上，只要它們會傳回包含符合與 TableAdapter 相關聯之資料表的結構描述的查詢。 下圖顯示 Tableadapter 資料庫和記憶體中的其他物件之間的互動：  
+  
+ ![用戶端應用程式中的資料流程](../data-tools/media/clientdatadiagram.gif "ClientDataDiagram")  
+  
+ 雖然 Tableadapter 專搭配**Dataset 設計工具**，TableAdapter 類別不會產生為巢狀類別的<xref:System.Data.DataSet>。 它們位於專屬於每個資料集的個別命名空間中。 例如，如果您擁有名為的資料集`NorthwindDataSet`，相關聯的 Tableadapter<xref:System.Data.DataTable>中`NorthwindDataSet`就會產生`NorthwindDataSetTableAdapters`命名空間。 若要以程式設計方式存取特定的 TableAdapter，您必須宣告 TableAdapter 的新執行個體。 例如:   
+  
+ [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
+ [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]  
+  
+## <a name="associated-datatable-schema"></a>相關聯的 DataTable 結構描述  
+ 當您建立的 TableAdapter，您使用初始查詢或預存程序來定義 TableAdapter 的結構描述的相關聯<xref:System.Data.DataTable>。 您執行這項初始查詢或預存程序，透過呼叫 TableAdapter 的`Fill`方法 (其中會填入 TableAdapter 的相關聯<xref:System.Data.DataTable>)。 TableAdapter 的主查詢所做的任何變更會反映在相關聯的資料資料表的結構描述。 例如，從主查詢移除資料行也會移除資料行從相關聯的資料表。 如果在 TableAdapter 上的任何其他查詢使用傳回主要查詢中的資料行的 SQL 陳述式，在設計工具會嘗試同步處理資料行之間的變更主查詢和其他查詢。 
+  
+## <a name="tableadapter-update-commands"></a>TableAdapter 更新命令  
+ TableAdapter 的更新功能會相依於多少資訊會顯示在 [TableAdapter 精靈] 中的主查詢。 例如，設定為擷取值，從多個資料表 （聯結）、 純量值、 檢視或彙總函式的結果的 Tableadapter 不會一開始建立將更新送回基礎資料庫的能力。 不過，您可以設定的 INSERT、 UPDATE 和 DELETE 命令，以手動方式在**屬性**視窗。  
+  
+## <a name="tableadapter-queries"></a>TableAdapter 查詢  
+ ![具有多個查詢的 TableAdapter](../data-tools/media/tableadapter.gif "TableAdapter")  
+  
+ Tableadapter 可以包含多個查詢，以填滿其相關聯的資料表格。 只要每個查詢會傳回相同的結構描述為其相關聯的資料的資料表符合的資料，您可以定義您的應用程式要求時，最多 TableAdapter 查詢。 此功能可讓您載入不同的結果，根據不同準則 TableAdapter。  
+  
+ 比方說，如果您的應用程式包含客戶名稱的資料表，您可以建立位於相同的狀態中的所有客戶資料都填入資料表都填入每個客戶名稱開頭為特定字母，而另一個資料表的查詢。 填滿`Customers`資料表具有給定狀態中的客戶，您可以建立`FillByState`查詢參數的狀態的值，如下所示： `SELECT * FROM Customers WHERE State = @State`。 您執行查詢，藉由呼叫`FillByState`方法並傳遞參數值中的以這種方式： `CustomerTableAdapter.FillByState("WA")`。  
+  
+ 除了新增傳回的相同 TableAdapter 的資料表結構描述資料的查詢，您可以加入傳回純量 （單一） 值的查詢。 例如，查詢所傳回的客戶計數 (`SELECT Count(*) From Customers`) 適用於`CustomersTableAdapter,`即使傳回的資料不符合資料表的結構描述。  
+  
+## <a name="clearbeforefill-property"></a>ClearBeforeFill 屬性  
+ 根據預設，每次您執行查詢以填入 TableAdapter 的資料表，清除現有的資料，並將查詢的結果載入資料表。 設定 TableAdapter 的`ClearBeforeFill`屬性`false`如果您想要新增或合併的資料查詢所傳回的資料表中現有的資料。 不論是否要清除資料，您需要明確地將更新送回資料庫，如果您想要將其保存。 所以，請記得在資料表中的資料儲存任何變更，然後再執行另一個填入資料表的查詢。 如需詳細資訊，請參閱[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。  
+  
+## <a name="tableadapter-inheritance"></a>TableAdapter 繼承  
+ Tableadapter 擴充功能的標準資料配接器藉由設定封裝<xref:System.Data.Common.DataAdapter>類別。 根據預設，繼承自 TableAdapter<xref:System.ComponentModel.Component>類別，而且無法轉換成<xref:System.Data.Common.DataAdapter>類別。 轉型至 TableAdapter<xref:System.Data.Common.DataAdapter>類別中的結果<xref:System.InvalidCastException>錯誤。 若要變更 TableAdapter 的基底類別，您可以指定的類別，衍生自<xref:System.ComponentModel.Component>中**基底類別**的 TableAdapter 屬性**Dataset 設計工具**。  
+  
+## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和屬性  
+ TableAdapter 類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 這表示您無法進行查詢文件中或**物件瀏覽器**。 它會建立在設計階段，當您使用其中一個先前所述精靈。 您在建立時指派給 TableAdapter 的名稱根據您正在使用的資料表名稱。 例如，當您建立的資料庫中的資料表為基礎的 TableAdapter `Orders`，名為 TableAdapter `OrdersTableAdapter`。 TableAdapter 的類別名稱可以使用變更**名稱**屬性**Dataset 設計工具**。  
+  
+ 以下是常用的方法和 Tableadapter 的屬性：  
+  
+|成員|說明|  
+|------------|-----------------|  
+|`TableAdapter.Fill`|填入 TableAdapter 的相關聯的資料表格 TableAdapter 的 SELECT 命令的結果。|  
+|`TableAdapter.Update`|將變更傳送回資料庫，並傳回整數，表示更新作業所影響的資料列數目。 如需詳細資訊，請參閱[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。|  
+|`TableAdapter.GetData`|傳回新<xref:System.Data.DataTable>填入資料。|  
+|`TableAdapter.Insert`|資料表中的資料建立新的資料列。 如需詳細資訊，請參閱[新記錄插入資料庫](../data-tools/insert-new-records-into-a-database.md)。|  
+|`TableAdapter.ClearBeforeFill`|判斷資料表是否會清空之前呼叫其中一種`Fill`方法。|  
+  
+## <a name="tableadapter-update-method"></a>TableAdapter update 方法  
+ Tableadapter 會使用資料命令來讀取和寫入資料庫中。 TableAdapter 的初始`Fill`（主要） 查詢為基礎用來建立資料表的結構描述相關聯的資料，並將`InsertCommand`， `UpdateCommand`，和`DeleteCommand`相關聯的命令`TableAdapter.Update`方法。 呼叫 TableAdapter 的`Update`方法執行時 TableAdapter 原本所建立的陳述式設定，不是其中一個已新增的其他查詢**TableAdapter 查詢組態精靈**.  
+  
+ 當您使用的 TableAdapter 時，實際上會執行相同的作業，您通常會執行的命令。 比方說，當您呼叫配接器的`Fill`方法時，配接器會執行資料命令其`SelectCommand`屬性，並使用資料讀取器 (例如， <xref:System.Data.SqlClient.SqlDataReader>) 載入結果集中的資料表。 同樣地，當您呼叫配接器的`Update`方法，它會執行適當的命令 (在`UpdateCommand`， `InsertCommand`，和`DeleteCommand`屬性) 針對每個變更資料表中的資料記錄。  
+  
+> [!NOTE]
+>  如果沒有足夠的資訊，在主要的查詢中， `InsertCommand`， `UpdateCommand`，和`DeleteCommand`TableAdapter 產生時，依預設會建立命令。 如果 TableAdapter 的主要查詢多個單一資料表的 SELECT 陳述式，就可以在設計工具將無法再產生`InsertCommand`， `UpdateCommand`，和`DeleteCommand`。 這些命令不會產生，如果執行時，您可能會收到錯誤`TableAdapter.Update`方法。  
+  
+## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
+ 除了`InsertCommand`， `UpdateCommand`，和`DeleteCommand`，可以直接對資料庫執行的方法以建立 TableAdapters。 這些方法 (`TableAdapter.Insert`， `TableAdapter.Update`，和`TableAdapter.Delete`) 可以呼叫直接操作資料庫中的資料。 這表示您可以呼叫這些個別的方法，從您的程式碼，而不是呼叫`TableAdapter.Update`來處理插入、 更新和刪除擱置中的資料表相關聯的資料。  
+  
+ 如果您不想要建立這些直接的方法，設定 TableAdapter 的**GenerateDbDirectMethods**屬性`false`(在**屬性**視窗)。 會加入至 TableAdapter 的其他查詢都是獨立查詢-它們不會產生這些方法。  
+  
+## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 支援可為 null 的型別  
+ Tableadapter 支援可為 null 的型別`Nullable(Of T)`和`T?`。 如需 Visual Basic 可為 Null 型別的詳細資訊，請參閱[可為 Null 的實值類型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 如需 C# 中的可為 null 類型的詳細資訊，請參閱[使用可為 Null 的型別](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。  
+  
+<a name="tableadaptermanager-reference"></a>  
+  
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager 參考  
+ 根據預設，`TableAdapterManager`當您建立包含相關的資料表的資料集時，會產生類別。 若要防止產生的類別，將變更的值`Hierarchical Update`屬性為 false 的資料集。 當您拖曳到設計介面上的 Windows Form 或 WPF 頁面產生關聯的資料表時，Visual Studio 會宣告類別的成員變數。 如果您不使用資料繫結，您必須以手動方式將變數宣告。  
+  
+ `TableAdapterManager`類別不是屬於[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]。 因此，您無法查詢文件中。 它會建立在設計階段做為資料集的建立程序的一部分。  
+  
+ 以下是常用的方法和屬性的`TableAdapterManager`類別：  
+  
+|成員|描述|  
+|------------|-----------------|  
+|`UpdateAll` 方法|所有資料表的資料儲存所有資料。|  
+|`BackUpDataSetBeforeUpdate` 屬性|決定是否要建立資料集的備份副本，再執行`TableAdapterManager.UpdateAll`方法。布林值。|  
+|*tableName* `TableAdapter`屬性|代表`TableAdapter`。 產生`TableAdapterManager`屬性包含每個`TableAdapter`其所管理。 例如，與客戶和訂單資料表的資料集就會產生含有`TableAdapterManager`包含`CustomersTableAdapter`和`OrdersTableAdapter`屬性。|  
+|`UpdateOrder` 屬性|控制個別 insert、 update 和 delete 命令的順序。 將此設定中的值的其中一個`TableAdapterManager.UpdateOrderOption`列舉型別。<br /><br /> 根據預設，`UpdateOrder`設**InsertUpdateDelete**。 這表示它會插入，則會更新，然後刪除執行中的資料集的所有資料表。|
+
+## <a name="security"></a>安全性  
+當 CommandType 屬性設定為使用資料命令<xref:System.Data.CommandType.Text>，仔細檢查之前將它傳遞給您的資料庫從用戶端傳送的資訊。 惡意使用者可能會嘗試傳送 （插入） 已修改或額外的 SQL 陳述式，來取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，一定要驗證的資訊有效。 最佳做法是永遠使用參數型的查詢或預存程序時可能。  
+  
+## <a name="see-also"></a>請參閱
+[資料集的工具](../data-tools/dataset-tools-in-visual-studio.md)

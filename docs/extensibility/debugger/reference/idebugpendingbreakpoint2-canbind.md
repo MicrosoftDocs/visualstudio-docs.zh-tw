@@ -1,57 +1,58 @@
 ---
-title: "IDebugPendingBreakpoint2::CanBind | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::CanBind"
-helpviewer_keywords: 
-  - "IDebugPendingBreakpoint2::CanBind 方法"
-  - "CanBind 方法"
+title: "IDebugPendingBreakpoint2::CanBind |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::CanBind
+helpviewer_keywords:
+- IDebugPendingBreakpoint2::CanBind method
+- CanBind method
 ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c1e64de7048f071437b6166b8cc9a6cc5cd920b2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::CanBind
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-決定是否暫止中斷點可以繫結至程式碼的位置。  
+# <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
+決定是否此暫止中斷點可以繫結至程式碼位置。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT CanBind (   
-   IEnumDebugErrorBreakpoints2** ppErrorEnum  
+```cpp  
+HRESULT CanBind (   
+   IEnumDebugErrorBreakpoints2** ppErrorEnum  
 );  
 ```  
   
-```c#  
-int CanBind (   
-   out IEnumDebugErrorBreakpoints2 ppErrorEnum  
+```csharp  
+int CanBind (   
+   out IEnumDebugErrorBreakpoints2 ppErrorEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppErrorEnum`  
- \[\] out傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件如果可能有錯誤。  
+ [out]傳回[IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)物件，其中包含一份[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)物件 如果可能有錯誤。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK.` 會傳回`S_FALSE`如果中斷點無法繫結，在此情況下會傳回錯誤的`ppErrorEnum`參數。  否則，會傳回錯誤碼。  傳回`E_BP_DELETED`如果已刪除中斷點。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK.`傳回`S_FALSE`中斷點無法繫結，如果在此情況下會傳回錯誤由`ppErrorEnum`參數。 反之則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
   
-## 備註  
- 這個方法會呼叫來決定會發生什麼事情如果這暫止中斷點已繫結。  呼叫[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)實際繫結的暫止中斷點的方法。  
+## <a name="remarks"></a>備註  
+ 若要判斷時會發生什麼情況會呼叫這個方法如果這個暫止中斷點繫結。 呼叫[繫結](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)實際繫結暫止中斷點的方法。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CPendingBreakpoint`物件，公開 \(expose\) [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)    
 {    
    HRESULT hr;    
@@ -136,7 +137,7 @@ HRESULT CPendingBreakpoint::CanBind(IEnumDebugErrorBreakpoints2** ppErrorEnum)
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)   
  [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)   
  [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)   

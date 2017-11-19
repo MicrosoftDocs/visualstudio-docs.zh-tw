@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2 | Microsoft Docs'
+title: "逐步解說： 使用專案範本建立網站欄專案項目，第 2 部分 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,127 +12,123 @@ helpviewer_keywords:
 - SharePoint project items, creating template wizards
 - SharePoint development in Visual Studio, defining new project item types
 ms.assetid: da14207d-ac09-41ba-b387-c7f881b2a366
-caps.latest.revision: 54
-author: kempb
-ms.author: kempb
+caps.latest.revision: "54"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: cc33e878acb87deac73190e6b590b58f59ce8ffd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 82a3793920b1e35f9077ee68eaa2f18db07d2d04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2
-  After you define a custom type of SharePoint project item and associate it with a project template in Visual Studio, you might also want to provide a wizard for the template. You can use the wizard to collect information from users when they use your template to create a new project that contains the project item. The information that you collect can be used to initialize the project item.  
+# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2"></a>逐步解說：使用專案範本建立網站資料行專案項目 (第 2 部分)
+  定義自訂 SharePoint 專案項目類型，並將它與 Visual Studio 中的專案範本產生關聯之後，您也可以範本提供的精靈。 您可以使用精靈在使用您的範本建立新的專案，其中包含的專案項目時，從使用者收集資訊。 您收集的資訊可以用來初始化專案項目。  
   
- In this walkthrough, you will add a wizard to the Site Column project template that is demonstrated in [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md). When a user creates a Site Column project, the wizard collects information about the site column (such as its base type and group) and adds this information to the Elements.xml file in the new project.  
+ 在本逐步解說，您將會加入精靈中示範的網站資料行專案範本[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 當使用者建立網站欄專案時，精靈會收集站台資料行 （例如其基底類型和群組） 的相關資訊，並將這項資訊加入至新的專案中的 Elements.xml 檔案。  
   
- This walkthrough demonstrates the following tasks:  
+ 本逐步解說將示範下列工作：  
   
--   Creating a wizard for a custom SharePoint project item type that is associated with a project template.  
+-   建立自訂 SharePoint 專案項目類型相關聯的專案範本精靈。  
   
--   Defining a custom wizard UI that resembles the built-in wizards for SharePoint projects in Visual Studio.  
+-   定義自訂精靈 UI 類似 Visual Studio 中的 SharePoint 專案的內建的精靈。  
   
--   Creating two *SharePoint commands* that are used to call into the local SharePoint site while the wizard is running. SharePoint commands are methods that can be used by Visual Studio extensions to call APIs in the SharePoint server object model. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   建立兩個*SharePoint 命令*，用於執行精靈時呼叫之本機 SharePoint 網站。 SharePoint 命令是可以由 Visual Studio 擴充功能呼叫 SharePoint 伺服器物件模型中的 應用程式開發介面的方法。 如需詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
   
--   Using replaceable parameters to initialize SharePoint project files with data that you collect in the wizard.  
+-   您可以使用可置換的參數來初始化 SharePoint 專案檔案，與您在精靈中所收集的資料。  
   
--   Creating a new .snk file in each new Site Column project instance. This file is used to sign the project output so that the SharePoint solution assembly can be deployed to the global assembly cache.  
+-   每個新的網站資料行專案執行個體中建立新的.snk 檔案。 這個檔案用來簽署專案輸出，以便在 SharePoint 方案組件可以部署到全域組件快取。  
   
--   Debugging and testing the wizard.  
+-   偵錯和測試的精靈。  
   
 > [!NOTE]  
->  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location:  [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- To perform this walkthrough, you must first create the SiteColumnProjectItem solution by completing [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).  
+## <a name="prerequisites"></a>必要條件  
+ 若要執行本逐步解說，您必須先建立 SiteColumnProjectItem 解決方案完成[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。  
   
- You also need the following components on the development computer to complete this walkthrough:  
+ 您還需要下列元件才能完成此逐步解說在開發電腦上：  
   
--   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK。 本逐步解說使用**VSIX 專案**SDK，以建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱[擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+ 了解下列概念是有幫助，但並非必要，完成此逐步解說：  
   
--   Wizards for project and item templates in Visual Studio. For more information, see [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md) and the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface.  
+-   Visual Studio 中的專案和項目範本的精靈。 如需詳細資訊，請參閱[How to： 使用專案範本的精靈](../extensibility/how-to-use-wizards-with-project-templates.md)和<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。  
   
--   Site columns in SharePoint. For more information, see [Columns](http://go.microsoft.com/fwlink/?LinkId=183547).  
+-   在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱[資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
-##  <a name="wizardcomponents"></a> Understanding the Wizard Components  
- The wizard that is demonstrated in this walkthrough contains several components. The following table describes these components.  
+##  <a name="wizardcomponents"></a>了解精靈元件  
+ 精靈在此逐步解說示範包含數個元件。 下表說明這些元件。  
   
-|Component|Description|  
+|元件|描述|  
 |---------------|-----------------|  
-|Wizard implementation|This is a class, named `SiteColumnProjectWizard`, which implements the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface. This interface defines the methods that Visual Studio calls when the wizard starts and finishes, and at certain times while the wizard runs.|  
-|Wizard UI|This is a WPF-based window, named `WizardWindow`. This window includes two user controls, named `Page1` and `Page2`. These user controls represent the two pages of the wizard.<br /><br /> In this walkthrough, the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> method of the wizard implementation displays the wizard UI.|  
-|Wizard data model|This is an intermediary class, named `SiteColumnWizardModel`, which provides a layer between the wizard UI and the wizard implementation. This sample uses this class to help abstract the wizard implementation and the wizard UI from each other; this class is not a required component of all wizards.<br /><br /> In this walkthrough, the wizard implementation passes a `SiteColumnWizardModel` object to the wizard window when it displays the wizard UI. The wizard UI uses methods of this object to save the values of controls in the UI, and to perform tasks like verifying that the input site URL is valid. After the user finishes the wizard, the wizard implementation uses the `SiteColumnWizardModel` object to determine the final state of the UI.|  
-|Project signing manager|This is a helper class, named `ProjectSigningManager`, which is used by the wizard implementation to create a new key.snk file in each new project instance.|  
-|SharePoint commands|These are methods that are used by the wizard data model to call into the local SharePoint site while the wizard is running. Because SharePoint commands must target the .NET Framework 3.5, these commands are implemented in a different assembly than the rest of the wizard code.|  
+|精靈實作|這是類別，名為`SiteColumnProjectWizard`，它會實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。 這個介面會定義當精靈開始和完成，而且在某些精靈時的時間執行 Visual Studio 會呼叫的方法。|  
+|精靈使用者介面|這是以 WPF 為基礎的視窗，名為`WizardWindow`。 此視窗包含兩個使用者控制項，名為`Page1`和`Page2`。 這些使用者控制項代表的兩個精靈頁面。<br /><br /> 在本逐步解說，<xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A>精靈實作的方法會顯示精靈使用者介面。|  
+|精靈資料模型|這是中繼類別，名為`SiteColumnWizardModel`，這樣會提供精靈使用者介面和程式精靈實作之間的層級。 這個範例會使用這個類別可協助精靈實作和精靈使用者介面與彼此;這個類別不是所有精靈的必要的元件。<br /><br /> 在本逐步解說中，精靈實作通過`SiteColumnWizardModel`精靈視窗時，它會顯示精靈使用者介面的物件。 精靈使用者介面會使用這個物件的方法，在 UI 中，儲存控制項的值，以及執行工作，例如驗證輸入的站台 URL 有效。 使用者完成精靈之後，精靈實作會使用`SiteColumnWizardModel`物件來判斷 UI 的最終狀態。|  
+|專案的簽章經理|這是協助程式類別，名為`ProjectSigningManager`，這由精靈實作每個新的專案執行個體中建立新的 key.snk 檔案。|  
+|SharePoint 命令|這些是用來執行精靈時呼叫之本機 SharePoint 網站的精靈資料模型的方法。 SharePoint 命令必須以.NET Framework 3.5 為目標，因為這些命令都實作比精靈程式碼的其餘部分的不同組件中。|  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you need to add several projects to the SiteColumnProjectItem solution that you created in [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
+## <a name="creating-the-projects"></a>建立專案  
+ 若要完成此逐步解說，您要將數個專案加入至您在建立 SiteColumnProjectItem 方案[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md):  
   
--   A WPF project. You will implement the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface and define the wizard UI in this project.  
+-   WPF 專案。 您將實作<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面，並在此專案中定義精靈使用者介面。  
   
--   A class library project that defines the SharePoint commands. This project must target the.NET Framework 3.5.  
+-   類別庫專案可定義 SharePoint 命令。 此專案必須以.net Framework 3.5 為目標。  
   
- Start the walkthrough by creating the projects.  
+ 開始本逐步解說建立的專案。  
   
-#### <a name="to-create-the-wpf-project"></a>To create the WPF project  
+#### <a name="to-create-the-wpf-project"></a>若要建立 WPF 專案  
   
-1.  In [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], open the SiteColumnProjectItem solution.  
+1.  在[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，開啟 SiteColumnProjectItem 方案。  
   
-2.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectItem** solution node, choose **Add**, and then choose **New Project**.  
+2.  在**方案總管] 中**，開啟捷徑功能表**SiteColumnProjectItem**方案節點，選擇**新增**，然後選擇 [ **新的專案**.  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+3.  在頂端**加入新的專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-3.  At the top of the **Add New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+4.  展開**Visual C#**節點或**Visual Basic** ] 節點，然後選擇 [ **Windows**節點。  
   
-4.  Expand the **Visual C#** node or the **Visual Basic** node, and choose the **Windows** node.  
+5.  在專案範本清單中選擇**WPF 使用者控制項程式庫**，將專案命名**ProjectTemplateWizard**，然後選擇 [ **[確定]** ] 按鈕。  
   
-5.  In the list of project templates, choose **WPF User Control Library**, name the project **ProjectTemplateWizard**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ProjectTemplateWizard**專案加入方案，並開啟預設 UserControl1.xaml 檔案。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ProjectTemplateWizard** project to the solution and opens the default UserControl1.xaml file.  
+6.  從專案刪除 UserControl1.xaml 檔案。  
   
-6.  Delete the UserControl1.xaml file from the project.  
+#### <a name="to-create-the-sharepoint-commands-project"></a>若要建立 SharePoint 命令專案  
   
-#### <a name="to-create-the-sharepoint-commands-project"></a>To create the SharePoint commands project  
+1.  在**方案總管] 中**，開啟 SiteColumnProjectItem 方案節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-1.  In **Solution Explorer**, open the shortcut menu for the SiteColumnProjectItem solution node, choose **Add**, and then choose **New Project**.  
+2.  在頂端**加入新的專案**對話方塊方塊中，選擇**.NET Framework 3.5**清單中的.NET Framework 版本。  
   
-2.  At the top of the **Add New Project** dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
+3.  展開**Visual C#**節點或**Visual Basic** ] 節點，然後選擇 [ **Windows**節點。  
   
-3.  Expand the **Visual C#** node or the  **Visual Basic** node, and then choose the **Windows** node.  
+4.  選擇**類別庫**專案範本，將專案命名**SharePointCommands**，然後選擇 [**確定**] 按鈕。  
   
-4.  Choose the **Class Library** project template, name the project **SharePointCommands**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SharePointCommands** project to the solution and opens the default Class1 code file.  
+5.  從專案刪除 Class1 的程式碼檔案。  
   
-5.  Delete the Class1 code file from the project.  
+## <a name="configuring-the-projects"></a>設定專案  
+ 建立此精靈之前，您必須加入某些程式碼檔案和專案的組件參考。  
   
-## <a name="configuring-the-projects"></a>Configuring the Projects  
- Before you create the wizard, you must add some code files and assembly references to the projects.  
+#### <a name="to-configure-the-wizard-project"></a>若要設定精靈專案  
   
-#### <a name="to-configure-the-wizard-project"></a>To configure the wizard project  
+1.  在**方案總管 中**，開啟捷徑功能表**ProjectTemplateWizard**專案節點，然後選擇**屬性**。  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **ProjectTemplateWizard** project node, and then choose **Properties**.  
+2.  在**專案設計工具**，選擇**應用程式**] 索引標籤的 [Visual C# 專案或**編譯**] 索引標籤的 [Visual Basic 專案。  
   
-2.  In the **Project Designer**, choose the **Application** tab for a Visual C# project or the **Compile** tab for a Visual Basic project.  
+3.  請確定目標架構設為.NET Framework 4.5，而非.NET Framework 4.5 Client Profile。  
   
-3.  Make sure that the target framework is set to the .NET Framework 4.5, not the .NET Framework 4.5 Client Profile.  
+     如需詳細資訊，請參閱[如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)。  
   
-     For more information, see [How to: Target a Version of the .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+4.  開啟快顯功能表**ProjectTemplateWizard**專案，選擇**新增**，然後選擇 **新項目**。  
   
-4.  Open the shortcut menu for the **ProjectTemplateWizard** project, choose **Add**, and then choose **New Item**.  
+5.  選擇**視窗 (WPF)**項目，將項**WizardWindow**，然後選擇 [**新增**] 按鈕。  
   
-5.  Choose the **Window (WPF)** item, name the item **WizardWindow**, and then choose the **Add** button.  
+6.  加入兩個**使用者控制項 (WPF)**項目至專案，並將它們命名**Page1**和**Page2**。  
   
-6.  Add two **User Control (WPF)** items to the project, and name them **Page1** and **Page2**.  
-  
-7.  Add four code files to the project, and give them the following names:  
+7.  將四個程式碼檔案加入專案，並提供下列名稱：  
   
     -   SiteColumnProjectWizard  
   
@@ -144,9 +138,9 @@ ms.lasthandoff: 08/30/2017
   
     -   CommandIds  
   
-8.  Open the shortcut menu for the **ProjectTemplateWizard** project node, and then choose **Add Reference**.  
+8.  開啟快顯功能表**ProjectTemplateWizard**專案節點，然後選擇**加入參考**。  
   
-9. Expand the **Assemblies** node, choose the **Extensions** node, and then select the check boxes next to the following assemblies:  
+9. 展開**組件** 節點，選擇**延伸**節點，然後再選取下列組件旁邊的核取方塊：  
   
     -   EnvDTE  
   
@@ -162,186 +156,191 @@ ms.lasthandoff: 08/30/2017
   
     -   Microsoft.VisualStudio.TemplateWizardInterface  
   
-10. Choose the **OK** button to add the assemblies to the project.  
+10. 選擇**確定**按鈕，將組件加入至專案。  
   
-11. In **Solution Explorer**, under the **References** folder for the **ProjectTemplateWizard** project, choose **EnvDTE**.  
+11. 在**方案總管 中**下**參考**資料夾**ProjectTemplateWizard**專案，選擇**EnvDTE**。  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the **References** folder appears only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+12. 在**屬性**視窗中，變更的值**內嵌 Interop 類型**屬性**False**。  
   
-12. In the **Properties** window, change the value of the **Embed Interop Types** property to **False**.  
+13. 如果您正在開發的 Visual Basic 專案，ProjectTemplateWizard 命名空間匯入您的專案使用**專案設計工具**。  
   
-13. If you're developing a Visual Basic project, import the ProjectTemplateWizard namespace into your project by using the **Project Designer**.  
+     如需詳細資訊，請參閱[如何： 加入或移除已匯入命名空間 &#40;Visual Basic &#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
   
-     For more information, see [How to: Add or Remove Imported Namespaces &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md).  
+#### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointCommands 專案  
   
-#### <a name="to-configure-the-sharepointcommands-project"></a>To configure the SharePointCommands project  
+1.  在**方案總管 中**，選擇**SharePointCommands**專案節點。  
   
-1.  In **Solution Explorer**, choose the **SharePointCommands** project node.  
+2.  在功能表列上選擇 **專案**，**加入現有項目**。  
   
-2.  On the menu bar, choose **Project**,  **Add Existing Item**.  
+3.  在**加入現有項目**對話方塊中，瀏覽至包含 ProjectTemplateWizard 專案的程式碼檔案的資料夾，然後選擇**CommandIds**程式碼檔案。  
   
-3.  In the **Add Existing Item** dialog box, browse to the folder that contains the code files for the ProjectTemplateWizard project, and then choose the **CommandIds** code file.  
+4.  選擇箭號旁**新增**按鈕，然後再選擇**加入做為連結**上出現的功能表選項。  
   
-4.  Choose the arrow next to the **Add** button, and then choose the **Add As Link** option on the menu that appears.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]加入程式碼檔案， **SharePointCommands**為連結的專案。 程式碼檔案位於**ProjectTemplateWizard**中的專案，但是檔案中的程式碼也編譯**SharePointCommands**專案。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the code file to the **SharePointCommands** project as a link. The code file is located in the **ProjectTemplateWizard** project, but the code in the file is also compiled in the **SharePointCommands** project.  
+5.  在**SharePointCommands**專案中，加入另一個名為命令的程式碼檔案。  
   
-5.  In the **SharePointCommands** project, add another code file that's named Commands.  
+6.  選擇 SharePointCommands 專案，然後在功能表列上選擇 **專案**，**加入參考**。  
   
-6.  Choose the SharePointCommands project, and then, on the menu bar, choose **Project**, **Add Reference**.  
-  
-7.  Expand the **Assemblies** node, choose the **Extensions** node, and then select the check boxes next to the following assemblies:  
+7.  展開**組件** 節點，選擇**延伸**節點，然後再選取下列組件旁邊的核取方塊：  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-8.  Choose the **OK** button to add the assemblies to the project.  
+8.  選擇**確定**按鈕，將組件加入至專案。  
   
-## <a name="creating-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>Creating the Wizard Model, Signing Manager, and SharePoint Command IDs  
- Add code to the ProjectTemplateWizard project to implement the following components in the sample:  
+## <a name="creating-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>建立精靈模型，簽署管理員和 SharePoint 的命令 Id  
+ 將程式碼加入至 ProjectTemplateWizard 專案，以在此範例中實作下列元件：  
   
--   The SharePoint command IDs. These strings identify the SharePoint commands that the wizard uses. Later in this walkthrough, you'll add code to the SharePointCommands project to implement the commands.  
+-   SharePoint 命令 Id。 這些字串會識別此精靈會使用 SharePoint 命令。 稍後在本逐步解說中，您將專案加入程式碼 SharePointCommands 實作命令。  
   
--   The wizard data model.  
+-   精靈資料模型。  
   
--   The project signing manager.  
+-   專案的簽章管理員。  
   
- For more information about these components, see [Understanding the Wizard Components](#wizardcomponents).  
+ 如需有關這些元件的詳細資訊，請參閱[了解精靈元件](#wizardcomponents)。  
   
-#### <a name="to-define-the-sharepoint-command-ids"></a>To define the SharePoint command IDs  
+#### <a name="to-define-the-sharepoint-command-ids"></a>若要定義 SharePoint 命令 Id  
   
-1.  In the ProjectTemplateWizard project, open the CommandIds code file, and then replace the entire contents of this file with the following code.  
+1.  在 ProjectTemplateWizard 專案中，開啟 CommandIds 程式碼檔案，並再將這個檔案的整個內容取代下列程式碼。  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]  [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]  
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs#5)]
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#5](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb#5)]  
   
-#### <a name="to-create-the-wizard-model"></a>To create the wizard model  
+#### <a name="to-create-the-wizard-model"></a>若要建立精靈模型  
   
-1.  Open the SiteColumnWizardModel code file, and replace the entire contents of this file with the following code.  
+1.  開啟 SiteColumnWizardModel 程式碼檔案，並以下列程式碼取代此檔案的整個內容。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb#6)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#6](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs#6)]  
   
-#### <a name="to-create-the-project-signing-manager"></a>To create the project signing manager  
+#### <a name="to-create-the-project-signing-manager"></a>若要建立專案的簽章經理  
   
-1.  Open the ProjectSigningManager code file, and then replace the entire contents of this file with the following code.  
+1.  ProjectSigningManager 碼檔案中，開啟，並以下列程式碼取代此檔案的整個內容。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb#8)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#8](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs#8)]  
   
-## <a name="creating-the-wizard-ui"></a>Creating the Wizard UI  
- Add XAML to define the UI of the wizard window and the two user controls that provide the UI for the wizard pages, and add code to define the behavior of the window and user controls. The wizard that you create resembles the built-in wizard for SharePoint projects in Visual Studio.  
+## <a name="creating-the-wizard-ui"></a>建立精靈使用者介面  
+ 加入 XAML 來定義 UI 的精靈視窗和兩個使用者控制項以提供 UI 的精靈頁面，並加入程式碼定義視窗和使用者控制項的行為。 精靈所建立類似 Visual Studio 中的 SharePoint 專案的內建的精靈。  
   
 > [!NOTE]  
->  In the following steps, your project will have some compile errors after you add XAML or code to your project. These errors will go away when you add code in later steps.  
+>  在下列步驟中，您可以將 XAML 或程式碼加入至專案之後您的專案時，就能某些編譯錯誤。 當您在稍後步驟中加入程式碼，這些錯誤就會消失運作。  
   
-#### <a name="to-create-the-wizard-window-ui"></a>To create the wizard window UI  
+#### <a name="to-create-the-wizard-window-ui"></a>若要建立將精靈視窗 UI  
   
-1.  In the ProjectTemplateWizard project, open the shortcut menu for the WizardWindow.xaml file, and then choose **Open** to open the window in the designer.  
+1.  在 ProjectTemplateWizard 專案中，開啟 WizardWindow.xaml 檔案的捷徑功能表，然後選擇 **開啟**設計工具中開啟視窗。  
   
-2.  In the XAML view of the designer, replace the current XAML with the following XAML. The XAML defines a UI that includes a heading, a <xref:System.Windows.Controls.Grid> that contains the wizard pages, and navigation buttons at the bottom of the window.  
+2.  在設計工具的 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，包括標題、 <xref:System.Windows.Controls.Grid> ，其中包含的精靈頁面和導覽按鈕在視窗底部。  
   
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]  
   
     > [!NOTE]  
-    >  The window that's created in this XAML is derived from the <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> base class. When you add a custom WPF dialog box to Visual Studio, we recommend that you derive your dialog box from this class to have consistent styling with other Visual Studio dialog boxes and to avoid modal dialog issues that might otherwise occur. For more information, see [Creating and Managing Modal Dialog Boxes](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).  
+    >  在此 XAML 中建立的視窗衍生自<xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>基底類別。 當您將自訂 WPF 對話方塊加入 Visual Studio 時，我們建議您從有一致的樣式，與其他 Visual Studio 對話方塊，並避免強制回應對話方塊可能會發生的問題，這個類別衍生您的對話方塊。 如需詳細資訊，請參閱[建立和管理的強制回應對話方塊](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes)。  
   
-3.  If you're developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `WizardWindow` class name in the `x:Class` attribute of the `Window` element. This element is in the first line of the XAML. When you're done, the first line should look like the following example.  
+3.  如果您正在開發的 Visual Basic 專案，移除`ProjectTemplateWizard`命名空間從`WizardWindow`中的類別名稱`x:Class`屬性`Window`項目。 此元素為 XAML 的第一行。 當您完成時，第一行看起來應該像下列的範例。  
   
     ```  
     <Window x:Class="WizardWindow"  
     ```  
   
-4.  Open the code-behind file for the WizardWindow.xaml file.  
+4.  開啟 WizardWindow.xaml 檔案的程式碼後置檔案。  
   
-5.  Replace the contents of this file, except for the `using` declarations at the top of the file, with the following code.  
+5.  取代此檔案中的內容，除了`using`檔案，以下列程式碼頂端的宣告。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb#4)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#4](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs#4)]  
   
-#### <a name="to-create-the-first-wizard-page-ui"></a>To create the first wizard page UI  
+#### <a name="to-create-the-first-wizard-page-ui"></a>若要建立第一個精靈頁面 UI  
   
-1.  In the ProjectTemplateWizard project, open the shortcut menu for the Page1.xaml file, and then choose **Open** to open the user control in the designer.  
+1.  在 ProjectTemplateWizard 專案中，開啟 Page1.xaml 檔案的捷徑功能表，然後選擇 **開啟**開啟設計工具中的使用者控制項。  
   
-2.  In the XAML view of the designer, replace the current XAML with the following XAML. The XAML defines a UI that includes a text box where users can enter the URL of the local sites that they want to use for debugging. The UI also includes option buttons with which users can specify whether the project is sandboxed.  
+2.  在設計工具的 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，它會包含一個文字方塊，使用者可以在其中輸入他們想要用於偵錯的本機網站的 URL。 UI 也包含與使用者可以指定專案是否沙箱化的選項按鈕。  
   
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#11](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml#11)]  
   
-3.  If you are developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `Page1` class name in the `x:Class` attribute of the `UserControl` element. This is in the first line of the XAML. When you are done, the first line should look like the following.  
+3.  如果您正在開發的 Visual Basic 專案，移除`ProjectTemplateWizard`命名空間從`Page1`中的類別名稱`x:Class`屬性`UserControl`項目。 這是在第一行中的 XAML。 當您完成時的第一行看起來應該如下所示。  
   
     ```  
     <UserControl x:Class="Page1"  
     ```  
   
-4.  Replace the contents of the Page1.xaml file, except for the `using` declarations at the top of the file, with the following code.  
+4.  除了取代檔案的內容 Page1.xaml，`using`檔案，以下列程式碼頂端的宣告。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb#2)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#2](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs#2)]  
   
-#### <a name="to-create-the-second-wizard-page-ui"></a>To create the second wizard page UI  
+#### <a name="to-create-the-second-wizard-page-ui"></a>若要建立第二個精靈頁面 UI  
   
-1.  In the ProjectTemplateWizard project, open the shortcut menu for the Page2.xaml file, and then choose **Open**.  
+1.  在 ProjectTemplateWizard 專案中，開啟 Page2.xaml 檔案的捷徑功能表，然後選擇 **開啟**。  
   
-     The user control opens in the designer.  
+     使用者控制項隨即在設計工具中開啟。  
   
-2.  In the XAML view, replace the current XAML with the following XAML. The XAML defines a UI that includes a drop-down list for choosing the base type of the site column, a combo box for specifying a built-in or custom group under which to display the site column in the gallery, and a text box for specifying the name of the site column.  
+2.  在 XAML 檢視中，請以下列 XAML 取代目前的 XAML。 XAML 定義 UI，它會包含下拉式清單中選擇網站資料行、 下拉式方塊來指定要顯示在圖庫中，網站資料行在底下的內建或自訂群組和文字方塊，用於指定之名稱的網站資料行的基底類型。  
   
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#12](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml#12)]  
   
-3.  If you are developing a Visual Basic project, remove the `ProjectTemplateWizard` namespace from the `Page2` class name in the `x:Class` attribute of the `UserControl` element. This is in the first line of the XAML. When you are done, the first line should look like the following.  
+3.  如果您正在開發的 Visual Basic 專案，移除`ProjectTemplateWizard`命名空間從`Page2`中的類別名稱`x:Class`屬性`UserControl`項目。 這是在第一行中的 XAML。 當您完成時的第一行看起來應該如下所示。  
   
     ```  
     <UserControl x:Class="Page2"  
     ```  
   
-4.  Replace the contents of the code-behind file for the Page2.xaml file, except for the `using` declarations at the top of the file, with the following code.  
+4.  取代 Page2.xaml 檔案的程式碼後置檔案的內容，除了`using`檔案，以下列程式碼頂端的宣告。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb#3)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#3](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs#3)]  
   
-## <a name="implementing-the-wizard"></a>Implementing the Wizard  
- Define the main functionality of the wizard by implementing the <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> interface. This interface defines the methods that Visual Studio calls when the wizard starts and finishes, and at certain times while the wizard runs.  
+## <a name="implementing-the-wizard"></a>實作精靈  
+ 藉由實作定義精靈的主要功能<xref:Microsoft.VisualStudio.TemplateWizard.IWizard>介面。 這個介面會定義當精靈開始和完成，而且在某些精靈時的時間執行 Visual Studio 會呼叫的方法。  
   
-#### <a name="to-implement-the-wizard"></a>To implement the wizard  
+#### <a name="to-implement-the-wizard"></a>若要實作精靈  
   
-1.  In the ProjectTemplateWizard project, open the SiteColumnProjectWizard code file.  
+1.  在 ProjectTemplateWizard 專案中，開啟 SiteColumnProjectWizard 程式碼檔案。  
   
-2.  Replace the entire contents of this file with the following code.  
+2.  下列程式碼取代此檔案的整個內容。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb#7)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#7](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs#7)]  
   
-## <a name="creating-the-sharepoint-commands"></a>Creating the SharePoint Commands  
- Create two custom commands that call into the SharePoint server object model. One command determines whether the site URL that the user types in the wizard is valid. The other command gets all of the field types from the specified SharePoint site so that users can select which one to use as the basis for their new site column.  
+## <a name="creating-the-sharepoint-commands"></a>建立 SharePoint 命令  
+ 建立兩個呼叫 SharePoint 伺服器物件模型的自訂命令。 一個命令會判斷使用者類型在精靈中的網站 URL 是否有效。 其他命令會取得所有的欄位型別從指定之 SharePoint 網站，讓使用者可以選取要用於新的網站資料行做為基礎的哪一個。  
   
-#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
+#### <a name="to-define-the-sharepoint-commands"></a>若要定義 SharePoint 命令  
   
-1.  In the **SharePointCommands** project, open the Commands code file.  
+1.  在**SharePointCommands**專案中，開啟指令碼檔案。  
   
-2.  Replace the entire contents of this file with the following code.  
+2.  下列程式碼取代此檔案的整個內容。  
   
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]  [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]  
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]  
   
-## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the wizard is now in the project. Build the project to make sure that it compiles without errors.  
+## <a name="checkpoint"></a>檢查點  
+ 此時在逐步解說中，所有的程式碼精靈現在是在專案中。 建置專案，以確定編譯無誤。  
   
-#### <a name="to-build-your-project"></a>To build your project  
+#### <a name="to-build-your-project"></a>建置您的專案  
   
-1.  On the menu bar, choose **Build**, **Build Solution**.  
+1.  在功能表列上，選擇 [建置] 、[建置方案] 。  
   
-## <a name="removing-the-keysnk-file-from-the-project-template"></a>Removing the key.snk File from the Project Template  
- In [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md), the project template that you created contains a key.snk file that is used to sign each Site Column project instance. This key.snk file is no longer necessary because the wizard now generates a new key.snk file for each project. Remove the key.snk file from the project template and remove references to this file.  
+## <a name="removing-the-keysnk-file-from-the-project-template"></a>移除專案範本中的 key.snk 檔案  
+ 在[逐步解說： 使用專案範本，第 1 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)，您所建立的專案範本包含用於簽署每個網站欄專案執行個體的 key.snk 檔案。 此 key.snk 檔案不再是必要的因為精靈現在會產生新的 key.snk 檔案，每個專案。 移除專案範本中的 key.snk 檔案，並移除此檔案的參考。  
   
-#### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>To remove the key.snk file from the project template  
+#### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>若要移除的 key.snk 檔案從專案範本  
   
-1.  In **Solution Explorer**, under the **SiteColumnProjectTemplate** node, open the shortcut menu for the **key.snk** file, and then choose **Delete**.  
+1.  在**方案總管 中**下**SiteColumnProjectTemplate**  節點，開啟捷徑功能表**key.snk**檔案，然後再選擇**刪除**.  
   
-2.  In the confirmation dialog box that appears, choose the **OK** button.  
+2.  在出現確認對話方塊中選擇**確定** 按鈕。  
   
-3.  Under the **SiteColumnProjectTemplate** node, open the SiteColumnProjectTemplate.vstemplate file, and then remove the following element from it.  
+3.  在下**SiteColumnProjectTemplate**節點，開啟 SiteColumnProjectTemplate.vstemplate 檔案，然後再從中移除下列項目。  
   
     ```  
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>  
     ```  
   
-4.  Save and close the file.  
+4.  儲存並關閉檔案。  
   
-5.  Under the **SiteColumnProjectTemplate** node, open the ProjectTemplate.csproj or ProjectTemplate.vbproj file, and then remove the following `PropertyGroup` element from it.  
+5.  在下**SiteColumnProjectTemplate**節點，開啟 ProjectTemplate.csproj 或 ProjectTemplate.vbproj 檔案，然後再移除下列`PropertyGroup`從它的項目。  
   
     ```  
     <PropertyGroup>  
@@ -350,56 +349,56 @@ ms.lasthandoff: 08/30/2017
     </PropertyGroup>  
     ```  
   
-6.  Remove the following `None` element.  
+6.  移除下列`None`項目。  
   
     ```  
     <None Include="key.snk" />  
     ```  
   
-7.  Save and close the file.  
+7.  儲存並關閉檔案。  
   
-## <a name="associating-the-wizard-with-the-project-template"></a>Associating the Wizard with the Project Template  
- Now that you have implemented the wizard, you must associate the wizard with the **Site Column** project template. There are three procedures you must complete to do this:  
+## <a name="associating-the-wizard-with-the-project-template"></a>關聯的專案範本的精靈  
+ 既然您已實作的精靈，您必須使精靈**網站資料行**專案範本。 有三個程序，您必須完成才能執行這項操作：  
   
-1.  Sign the wizard assembly with a strong name.  
+1.  精靈組件簽署為強式名稱。  
   
-2.  Get the public key token for the wizard assembly.  
+2.  取得精靈的組件的公開金鑰語彙基元。  
   
-3.  Add a reference to the wizard assembly in the .vstemplate file for the **Site Column** project template.  
+3.  .Vstemplate 檔案中加入至精靈的組件參考**網站資料行**專案範本。  
   
-#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>To sign the wizard assembly with a strong name  
+#### <a name="to-sign-the-wizard-assembly-with-a-strong-name"></a>若要簽署為強式名稱的組件精靈  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **ProjectTemplateWizard** project, and then choose **Properties**.  
+1.  在**方案總管 中**，開啟捷徑功能表**ProjectTemplateWizard**專案，然後再選擇**屬性**。  
   
-2.  On the **Signing** tab, select the **Sign the assembly** check box.  
+2.  在**簽署**索引標籤上，選取**簽署組件**核取方塊。  
   
-3.  In the **Choose a strong name key file** list, choose **\<New...>**.  
+3.  在**選擇強式名稱金鑰檔**清單中，選擇**\<新增...>**。  
   
-4.  In the **Create Strong Name Key** dialog box, enter a name for the new key file, clear the **Protect my key file with a password** check box, and then choose the **OK** button.  
+4.  在**建立強式名稱金鑰**對話方塊方塊中，輸入新的金鑰檔案的名稱，清除**保護我的密碼金鑰檔**核取方塊，，然後選擇 **確定**按鈕。  
   
-5.  Open the shortcut menu for the **ProjectTemplateWizard** project, and then choose **Build** to create the ProjectTemplateWizard.dll file.  
+5.  開啟快顯功能表**ProjectTemplateWizard**專案，然後再選擇**建置**建立 ProjectTemplateWizard.dll 檔案。  
   
-#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>To get the public key token for the wizard assembly  
+#### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>若要取得的公開金鑰語彙基元精靈組件  
   
-1.  On the **Start Menu**, choose **All Programs**, choose **Microsoft Visual Studio**, choose **Visual Studio Tools**, and then choose **Developer Command Prompt**.  
+1.  在**開始功能表**，選擇**所有程式**，選擇**Microsoft Visual Studio**，選擇**Visual Studio Tools**，然後選擇  **開發人員命令提示字元**。  
   
-     A Visual Studio Command Prompt window opens.  
+     Visual Studio 命令提示字元視窗隨即開啟。  
   
-2.  Run the following command, replacing *PathToWizardAssembly* with the full path to the built ProjectTemplateWizard.dll assembly for the ProjectTemplateWizard project on your development computer:  
+2.  執行下列命令，取代*PathToWizardAssembly* ProjectTemplateWizard 專案在開發電腦上的內建 ProjectTemplateWizard.dll 組件的完整路徑：  
   
     ```  
     sn.exe -T PathToWizardAssembly  
     ```  
   
-     The public key token for the ProjectTemplateWizard.dll assembly is written to the Visual Studio Command Prompt window.  
+     Visual Studio 命令提示字元 視窗會寫入 ProjectTemplateWizard.dll 組件公開金鑰語彙基元。  
   
-3.  Keep the Visual Studio Command Prompt window open. You will need the public key token during the next procedure.  
+3.  Visual Studio 命令提示字元視窗保持開啟。 在下一個程序期間，您將需要的公開金鑰 token。  
   
-#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>To add a reference to the wizard assembly in the .vstemplate file  
+#### <a name="to-add-a-reference-to-the-wizard-assembly-in-the-vstemplate-file"></a>若要加入至精靈的組件的參考.vstemplate 檔案中  
   
-1.  In **Solution Explorer**, expand the **SiteColumnProjectTemplate** project node and open the SiteColumnProjectTemplate.vstemplate file.  
+1.  在**方案總管 中**，依序展開**SiteColumnProjectTemplate**專案節點並開啟 SiteColumnProjectTemplate.vstemplate 檔案。  
   
-2.  Near the end of the file, add the following `WizardExtension` element between the `</TemplateContent>` and `</VSTemplate>` tags. Replace the *your token* value of the `PublicKeyToken` attribute with the public key token that you obtained in the previous procedure.  
+2.  接近檔案結尾，加入下列`WizardExtension`之間的項目`</TemplateContent>`和`</VSTemplate>`標記。 取代*您語彙基元*值`PublicKeyToken`屬性與您在上一個程序中取得的公開金鑰 token。  
   
     ```  
     <WizardExtension>  
@@ -408,18 +407,18 @@ ms.lasthandoff: 08/30/2017
     </WizardExtension>  
     ```  
   
-     For more information about the `WizardExtension` element, see [WizardExtension Element &#40;Visual Studio Templates&#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
+     如需有關`WizardExtension`項目，請參閱[WizardExtension 項目 &#40;Visual Studio 範本 &#41;](/visualstudio/extensibility/wizardextension-element-visual-studio-templates).  
   
-3.  Save and close the file.  
+3.  儲存並關閉檔案。  
   
-## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>Adding Replaceable Parameters to the Elements.xml File in the Project Template  
- Add several replaceable parameters to the Elements.xml file in the SiteColumnProjectTemplate project. These parameters are initialized in the `RunStarted` method in the `SiteColumnProjectWizard` class that you defined earlier. When a user creates a Site Column project, Visual Studio automatically replaces these parameters in the Elements.xml file in the new project with the values that they specified in the wizard.  
+## <a name="adding-replaceable-parameters-to-the-elementsxml-file-in-the-project-template"></a>可置換的參數加入 Elements.xml 檔案中的專案範本  
+ SiteColumnProjectTemplate 專案中的 Elements.xml 檔案中加入數個可取代參數。 這些參數會初始化`RunStarted`方法中的`SiteColumnProjectWizard`先前定義的類別。 當使用者建立網站欄專案時，Visual Studio 會自動取代 Elements.xml 檔案，在新的專案中的這些參數不在精靈中指定的值。  
   
- A replaceable parameter is a token that begins and ends with the dollar sign ($) character. In addition to defining your own replaceable parameters, you can use built-in parameters that are defined and initialized by the SharePoint project system. For more information, see [Replaceable Parameters](../sharepoint/replaceable-parameters.md).  
+ 可取代的參數是語彙基元開頭且結尾為貨幣符號 （$） 字元。 除了定義您自己可置換的參數，您可以使用內建參數所定義且由 SharePoint 專案系統初始化。 如需詳細資訊，請參閱[可置換的參數](../sharepoint/replaceable-parameters.md)。  
   
-#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>To add replaceable parameters to the Elements.xml file  
+#### <a name="to-add-replaceable-parameters-to-the-elementsxml-file"></a>可置換的參數加入 Elements.xml 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the Elements.xml file with the following XML.  
+1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Elements.xml 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -433,121 +432,121 @@ ms.lasthandoff: 08/30/2017
     </Elements>  
     ```  
   
-     The new XML changes the values of the `Name`, `DisplayName`, `Type`, and `Group` attributes to custom replaceable parameters.  
+     新的 XML 會變更值`Name`， `DisplayName`， `Type`，和`Group`屬性，將自訂可置換的參數。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-## <a name="adding-the-wizard-to-the-vsix-package"></a>Adding the Wizard to the VSIX Package  
- To deploy the wizard with the VSIX package that contains the Site Column project template, add references to the wizard project and the SharePoint commands project to the source.extension.vsixmanifest file in the VSIX project.  
+## <a name="adding-the-wizard-to-the-vsix-package"></a>將精靈加入 VSIX 封裝  
+ 若要部署含有 VSIX 封裝，其中包含網站欄專案範本的精靈，將參考加入精靈專案和 SharePoint 命令專案至 source.extension.vsixmanifest 檔案中，在 VSIX 專案。  
   
-#### <a name="to-add-the-wizard-to-the-vsix-package"></a>To add the wizard to the VSIX package  
+#### <a name="to-add-the-wizard-to-the-vsix-package"></a>若要加入 VSIX 封裝精靈  
   
-1.  In **Solution Explorer**, in the **SiteColumnProjectItem** project, open the shortcut menu for the **source.extension.vsixmanifest** file, and then choose **Open**.  
+1.  在**方案總管] 中**，請在**SiteColumnProjectItem**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇 [ **開啟**。  
   
-     Visual Studio opens the file in the manifest editor.  
+     Visual Studio 會在資訊清單編輯器中開啟檔案。  
   
-2.  On the **Assets** tab of the editor, choose the **New** button.  
+2.  上**資產** 索引標籤的 編輯器 中，選擇 **新增** 按鈕。  
   
-     The **Add New Asset** dialog box opens.  
+     **加入新資產**對話方塊隨即開啟。  
   
-3.  In the **Type** list, choose **Microsoft.VisualStudio.Assembly**.  
+3.  在**類型**清單中，選擇**Microsoft.VisualStudio.Assembly**。  
   
-4.  In the **Source** list, choose **A project in current solution**.  
+4.  在**來源**清單中，選擇**目前方案中的專案**。  
   
-5.  In the **Project** list, choose **ProjectTemplateWizard**, and then choose the **OK** button.  
+5.  在**專案**清單中，選擇**ProjectTemplateWizard**，然後選擇 [**確定**] 按鈕。  
   
-6.  On the **Assets** tab of the editor, choose the **New** button again.  
+6.  上**資產**] 索引標籤的 [編輯器] 中，選擇 [**新增**按鈕一次。  
   
-     The **Add New Asset** dialog box opens.  
+     **加入新資產**對話方塊隨即開啟。  
   
-7.  In the **Type** list, enter **SharePoint.Commands.v4**.  
+7.  在**類型**清單中，輸入**SharePoint.Commands.v4**。  
   
-8.  In the **Source** list, choose **A project in current solution**.  
+8.  在**來源**清單中，選擇**目前方案中的專案**。  
   
-9. In the **Project** list, choose the **SharePointCommands** project, and then choose the **OK** button.  
+9. 在**專案**清單中，選擇**SharePointCommands**專案，然後再選擇**確定** 按鈕。  
   
-10. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution builds without errors.  
+10. 在功能表列上選擇 **建置**，**建置方案**，然後確認方案建置無誤。  
   
-## <a name="testing-the-wizard"></a>Testing the Wizard  
- You are now ready to test the wizard. First, start debugging the SiteColumnProjectItem solution in the experimental instance of Visual Studio. Then, test the wizard for the Site Column project in the experimental instance of Visual Studio. Finally, build and run the project to verify that the site column works as expected.  
+## <a name="testing-the-wizard"></a>測試精靈  
+ 現在您已經準備好進行測試的精靈。 首先，開始偵錯 SiteColumnProjectItem 方案在 Visual Studio 的實驗執行個體。 然後，在 Visual Studio 的實驗執行個體中測試網站欄專案精靈。 最後，建置並執行專案，以確認站台的資料行可以正常運作。  
   
-#### <a name="to-start-debugging-the-solution"></a>To start debugging the solution  
+#### <a name="to-start-debugging-the-solution"></a>若要啟動偵錯方案  
   
-1.  Restart Visual Studio with administrative credentials, and then open the SiteColumnProjectItem solution.  
+1.  系統管理認證，以重新啟動 Visual Studio，然後開啟 SiteColumnProjectItem 方案。  
   
-2.  In the ProjectTemplateWizard project, open the SiteColumnProjectWizard code file, and then add a breakpoint to the first line of code in the `RunStarted` method.  
+2.  在 ProjectTemplateWizard 專案中，開啟 SiteColumnProjectWizard 程式碼檔案，並再將中斷點加入至程式碼中的第一行`RunStarted`方法。  
   
-3.  On the menu bar, choose **Debug**, **Exceptions**.  
+3.  在功能表列上選擇 **偵錯**，**例外狀況**。  
   
-4.  In the **Exceptions** dialog box, make sure that the **Thrown** and **User-unhandled** check boxes for **Common Language Runtime Exceptions** are cleared, and then choose the **OK** button.  
+4.  在**例外狀況**對話方塊方塊中，請確定**擲回**和**user-unhandled**核取方塊**Common Language Runtime 例外狀況**已清除，，然後選擇 [**確定**] 按鈕。  
   
-5.  Start debugging by choosing the **F5** key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
+5.  開始偵錯選擇**F5**索引鍵或是，在功能表列選擇**偵錯**，**開始偵錯**。  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 and starts an experimental instance of Visual Studio. You'll test the project item in this instance of Visual Studio.  
+     Visual Studio %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Site Column\1.0 來安裝擴充功能，並啟動 Visual studio 的實驗執行個體。 您將這個執行個體的 Visual Studio 中測試的專案項目。  
   
-#### <a name="to-test-the-wizard-in-visual-studio"></a>To test the wizard in Visual Studio  
+#### <a name="to-test-the-wizard-in-visual-studio"></a>若要測試 Visual Studio 中的精靈  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  Expand the **Visual C#** node or the **Visual Basic** node (depending on the language that your project template supports), expand the **SharePoint** node, and then choose the **2010** node.  
+2.  展開**Visual C#**節點或**Visual Basic**節點 （取決於您的專案範本支援語言），依序展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
   
-3.  In the list of project templates, choose **Site Column**, name the project **SiteColumnWizardTest**, and then choose the **OK** button.  
+3.  在專案範本清單中選擇**網站資料行**，將專案命名**SiteColumnWizardTest**，然後選擇 [ **[確定]** ] 按鈕。  
   
-4.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `RunStarted` method.  
+4.  確認 Visual Studio 的其他執行個體中的程式碼是您稍早在設定的中斷點上停止`RunStarted`方法。  
   
-5.  Continue to debug the project by choosing the **F5** key or, on the menu bar, choosing **Debug**, **Continue**.  
+5.  繼續偵錯專案時選擇**F5**索引鍵或是，在功能表列選擇**偵錯**，**繼續**。  
   
-6.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging, and then choose the **Next** button.  
+6.  在**SharePoint 自訂精靈**，輸入您想要用於偵錯，網站的 URL，然後選擇**下一步** 按鈕。  
   
-7.  In the second page of the **SharePoint Customization Wizard**, make the following selections:  
+7.  中的第二頁**SharePoint 自訂精靈**，進行下列選擇：  
   
-    -   In the **Type** list, choose **Boolean**.  
+    -   在**類型**清單中，選擇**布林**。  
   
-    -   In the **Group** list, choose **Custom Yes/No Columns**.  
+    -   在**群組**清單中，選擇**自訂/否資料行**。  
   
-    -   In the **Name** box, enter **My Yes/No Column**, and then choose the **Finish** button.  
+    -   在**名稱**方塊中，輸入**我/否資料行**，然後選擇 [**完成**] 按鈕。  
   
-     In **Solution Explorer**, a new project appears and contains a project item that's named **Field1**, and Visual Studio opens the project's Elements.xml file in the editor.  
+     在**方案總管 中**，新的專案隨即出現，並包含名為專案項目**Field1**，和 Visual Studio 編輯器中開啟專案的 Elements.xml 檔案。  
   
-8.  Verify that Elements.xml contains the values that you specified in the wizard.  
+8.  請確認 Elements.xml 包含您在精靈中指定的值。  
   
-#### <a name="to-test-the-site-column-in-sharepoint"></a>To test the site column in SharePoint  
+#### <a name="to-test-the-site-column-in-sharepoint"></a>若要在 SharePoint 中測試網站資料行  
   
-1.  In the experimental instance of Visual Studio, choose the F5 key.  
+1.  在 Visual Studio 的實驗執行個體，選擇 F5 鍵。  
   
-     The site column is packaged and deployed to the SharePoint site that the **Site URL** property of the project specifies. The web browser opens to the default page of this site.  
+     網站資料行封裝和部署到 SharePoint 網站**網站 URL**指定專案屬性。 網頁瀏覽器會開啟此站台的預設頁面。  
   
     > [!NOTE]  
-    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button to continue to debug the project.  
+    >  如果**指令碼偵錯已停用**對話方塊出現時，選擇 **是**按鈕以繼續進行偵錯專案。  
   
-2.  On the **Site Actions** menu, choose **Site Settings**.  
+2.  在**網站動作**功能表上，選擇**站台設定**。  
   
-3.  On the Site Settings page, under **Galleries**, choose the **Site columns** link.  
+3.  在站台設定 頁面上，在**圖庫**，選擇**站台的資料行**連結。  
   
-4.  In the list of site columns, verify that a **Custom Yes/No Columns** group contains a column that's named **My Yes/No Column**, and then close the web browser.  
+4.  在站台的資料行清單中，確認**自訂/否資料行**群組包含資料行名為**我/否資料行**，然後關閉網頁瀏覽器。  
   
-## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
- After you finish testing the project item, remove the project template from the experimental instance of Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
+ 在您完成測試的專案項目之後，請從 Visual Studio 的實驗執行個體中移除專案範本。  
   
-#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
+#### <a name="to-clean-up-the-development-computer"></a>清除開發電腦  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**工具**，**擴充功能和更新**。  
   
-     The **Extensions and Updates** dialog box opens.  
+     [擴充功能和更新] 對話方塊隨即開啟。  
   
-2.  In the list of extensions, choose **Site Column**, and then choose the **Uninstall** button.  
+2.  在 擴充功能的清單中，選擇 **網站資料行**，然後選擇 **解除安裝** 按鈕。  
   
-3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension, and then choose the **Restart Now** button to complete the uninstallation.  
+3.  在出現的對話方塊中，選擇 **是**按鈕，以確認您要解除安裝擴充功能，然後選擇 **立即重新啟動**按鈕，以完成解除安裝。  
   
-4.  Close both the experimental instance of Visual Studio and the instance in which the CustomActionProjectItem solution is open.  
+4.  關閉 Visual Studio 的實驗執行個體和 CustomActionProjectItem 方案已開啟的執行個體。  
   
-     For information about how to deploy [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensions, see [Shipping Visual Studio Extensions](/visualstudio/extensibility/shipping-visual-studio-extensions).  
+     如需有關如何部署資訊[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能，請參閱[傳送 Visual Studio 擴充功能](/visualstudio/extensibility/shipping-visual-studio-extensions)。  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
- [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference)   
- [How to: Use Wizards with Project Templates](../extensibility/how-to-use-wizards-with-project-templates.md)  
+## <a name="see-also"></a>另請參閱  
+ [逐步解說： 建立網站欄專案項目以專案範本，第 1 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)   
+ [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)   
+ [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)  
   
   

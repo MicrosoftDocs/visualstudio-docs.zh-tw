@@ -1,27 +1,30 @@
 ---
-title: "IDispatchEx::InvokeEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDispatchEx::InvokeEx |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDispatchEx.InvokeEx
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "InvokeEx 方法"
+helpviewer_keywords: InvokeEx method
 ms.assetid: d90783e6-4b89-4423-8a56-a9c8b4b2c813
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6302228b110e2b0a6296190079bf60b3d92980bd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDispatchEx::InvokeEx
-提供對 `IDispatchEx` 物件公開的屬性和方法。  
+# <a name="idispatchexinvokeex"></a>IDispatchEx::InvokeEx
+提供公開的屬性和方法的存取`IDispatchEx`物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT InvokeEx(  
@@ -35,84 +38,84 @@ HRESULT InvokeEx(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `id`  
- 辨識成員。  使用 `GetDispID` 或 `GetNextDispID` 取得分派識別項。  
+ 辨識成員。 使用`GetDispID`或`GetNextDispID`取得的分派識別項。  
   
  `lcid`  
- 地區設定內容，用於解譯引數。  `lcid` 傳遞至 `InvokeEx` 允許物件解譯其引數特有的地區設定。  
+ 地區設定內容，用於解譯引數。 `lcid`傳遞至`InvokeEx`允許要解譯成地區設定特定的引數的物件。  
   
  `wFlags`  
- `wFlags` 的合法值為:  
+ 合法值`wFlags`是：  
   
- DISPATCH\_PROPERTYGET&#124;DISPATCH\_METHOD&#124;DISPATCH\_PROPERTYPUT&#124;DISPATCH\_PROPERTYPUTREF&#124;DISPATCH\_CONSTRUCT  
+ DISPATCH_PROPERTYGET &#124;DISPATCH_METHOD &#124;DISPATCH_PROPERTYPUT &#124;DISPATCH_PROPERTYPUTREF &#124;DISPATCH_CONSTRUCT  
   
- 描述 `InvokeEx` 呼叫之內容的旗標:  
+ 描述之內容的旗標`InvokeEx`呼叫：  
   
 |值|意義|  
-|-------|--------|  
-|DISPATCH\_METHOD|這個成員做為叫用方法。  如果屬性具有相同的名稱，這個，並 DISPATCH\_PROPERTYGET 旗標可設定 \(定義 `IDispatch`\)。|  
-|DISPATCH\_PROPERTYGET|這個成員擷取當做屬性或資料成員 \(定義 `IDispatch`\)。|  
-|DISPATCH\_PROPERTYPUT|這個成員變更為屬性或資料成員 \(定義 `IDispatch`\)。|  
-|DISPATCH\_PROPERTYPUTREF|參考指派 \(Assignment\) 變更成員而不是值的指派。  這個旗標，則只有在屬性接受物件時的參考 \(定義 `IDispatch`\)。|  
-|DISPATCH\_CONSTRUCT|這個成員會當做建構函式。  \(這是 `IDispatchEx`定義新的值\)。  `wFlags` 的合法值為:<br /><br /> DISPATCH\_PROPERTYGET DISPATCH\_METHOD DISPATCH\_PROPERTYPUT DISPATCH\_PROPERTYPUTREF DISPATCH\_CONSTRUCT|  
+|-----------|-------------|  
+|DISPATCH_METHOD|方法會叫用成員。 如果屬性具有相同的名稱，可以設定這和 DISPATCH_PROPERTYGET 旗標 (由`IDispatch`)。|  
+|DISPATCH_PROPERTYGET|成員會擷取為屬性或資料成員 (由`IDispatch`)。|  
+|DISPATCH_PROPERTYPUT|成員已變更屬性或資料成員 (由`IDispatch`)。|  
+|DISPATCH_PROPERTYPUTREF|變更成員時會參考指派，而不是值的指派。 這個旗標無效，屬性會接受物件的參考時，才 (由`IDispatch`)。|  
+|DISPATCH_CONSTRUCT|正在使用該成員是建構函式。 (這是所定義的新值`IDispatchEx`)。 合法值`wFlags`是：<br /><br /> DISPATCH_PROPERTYGET DISPATCH_METHOD DISPATCH_PROPERTYPUT DISPATCH_PROPERTYPUTREF DISPATCH_CONSTRUCT|  
   
  `pdp`  
- 結構的指標，此結構包含引數陣列、指名引數之 DISPID 引數的陣列，以及陣列中元素數目的計數。  提供 DISPPARAMS 結構的完整說明請參閱 `IDispatch` 文件。  
+ 結構的指標，此結構包含引數陣列、指名引數之 DISPID 引數的陣列，以及陣列中項目數目的計數。 請參閱`IDispatch`DISPPARAMS 結構的完整描述的文件。  
   
  `pVarRes`  
- 至結果是儲存位置的指標或空白，如果呼叫端無法預期的結果。  如果 DISPATCH\_PROPERTYPUT 或 DISPATCH\_PROPERTYPUTREF，指定這個引數會被忽略。  
+ 可以是預存或 Null，如果呼叫端必須確保沒有結果結果之位置的指標。 如果指定了 DISPATCH_PROPERTYPUT 或 DISPATCH_PROPERTYPUTREF，會忽略這個引數。  
   
  `pei`  
- 包含例外狀況資訊的結構指標。  如果傳回， `DISP_E_EXCEPTION` ，應填入這個結構。  可以是空白。  提供 `EXCEPINFO` 結構的完整說明請參閱 `IDispatch` 文件。  
+ 包含例外狀況資訊的結構指標。 如果此結構必須填滿`DISP_E_EXCEPTION`傳回。 可以是 Null。 請參閱`IDispatch`文件的完整說明`EXCEPINFO`結構。  
   
  `pspCaller`  
- 為呼叫端提供的服務提供者物件的指標，其允許物件從呼叫端的服務。  可以是空白。  
+ 呼叫端，可讓物件從呼叫者取得服務所提供的服務提供者物件的指標。 可以是 Null。  
   
- `IDispatchEx::InvokeEx` 提供所有功能 `IDispatch::Invoke` 並將一些副檔名:  
+ `IDispatchEx::InvokeEx`提供所有與相同的功能`IDispatch::Invoke`並加入一些擴充功能：  
   
 |||  
 |-|-|  
-|DISPATCH\_CONSTRUCT|指出項目會當做建構函式。|  
-|`pspCaller`|`pspCaller` 允許呼叫端提供的服務物件的存取。  特定服務可能由呼叫端處理或委派的呼叫端進一步呼叫鏈結。  例如，在中，如果在瀏覽器中指令碼引擎進行 `InvokeEx` 呼叫外部物件，物件可以跟隨 `pspCaller` 鏈結從指令碼引擎或瀏覽器的服務。  \(請注意呼叫鏈結與稱為容器鏈結或網站鏈結的撰寫鏈結也。  撰寫鏈結會透過某種其他機制 \(例如 `IObjectWithSite`\)。|  
-|`this` 指標|當 DISPATCH\_METHOD 在 `wFlags`時設定，可能會有一個名為「參數」「this」的值。  物件會 DISPID\_THIS，並且必須是第一個具名參數。|  
+|DISPATCH_CONSTRUCT|指出項目做建構函式。|  
+|`pspCaller`|`pspCaller`允許呼叫端提供的服務物件存取。 特定服務可能由呼叫端本身或委派給其他呼叫端呼叫鏈結。 例如，如果指令碼引擎內瀏覽器可讓您`InvokeEx`至外部物件，該物件的呼叫可以依照`pspCaller`從指令碼引擎或瀏覽器取得服務的鏈結。 (請注意，呼叫鏈結無法建立鏈結相同，也稱為容器鏈結或站台鏈結。 建立鏈結可透過其他機制例如`IObjectWithSite`。)|  
+|`this` 指標|當設定 DISPATCH_METHOD `wFlags`，可能有 「 具名的參數 」 為"this"值。 DISPID 將 DISPID_THIS，它必須是第一個具名的參數。|  
   
- 移除在 `IDispatch::Invoke` 中未使用的 `riid` 參數。  
+ 未使用`riid`中的參數`IDispatch::Invoke`已移除。  
   
- 移除在 `IDispatch::Invoke` 的 `puArgArr` 參數。  
+ `puArgArr`中的參數`IDispatch::Invoke`已移除。  
   
- 在下列範例 `IDispatch::Invoke` 參閱文件:  
+ 請參閱`IDispatch::Invoke`文件，如下列範例：  
   
- 「呼叫方法沒有任何引數」  
+ 「 呼叫沒有引數的方法 」  
   
- 「取得和設定屬性」  
+ 「 取得和設定屬性"  
   
- 「傳遞參數」。  
+ 「 傳遞參數 」  
   
- 「索引屬性」  
+ [索引的屬性]  
   
- 「引發例外狀況在期間叫用」  
+ 「 叫用期間引發例外狀況 」  
   
- 傳回「false」  
+ 「 傳回的錯誤 」  
   
-## 傳回值  
- 下列值的傳回一個值:  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |||  
 |-|-|  
 |`S_OK`|成功。|  
-|DISP\_E\_BADPARAMCOUNT|項目數目提供給 DISPPARAMS 與方法或屬性接受的引數數目不同。|  
-|DISP\_E\_BADVARTYPE|其中一個 `rgvarg` 的引數不是有效的不同型別。|  
-|DISP\_E\_EXCEPTION|應用程式需要引發例外狀況。  在這種情況下，應填入在 `pei` 傳入的結構。|  
-|DISP\_E\_MEMBERNOTFOUND|這個要求的成員存在，則為 `InvokeEx` 的呼叫會嘗試設定唯讀屬性的值。|  
-|DISP\_E\_NONAMEDARGS|`IDispatch` 的這個實作不支援具名引數。|  
-|DISP\_E\_OVERFLOW|其中一個 `rgvarg` 的引數不可以強制轉型為指定的型別。|  
-|DISP\_E\_PARAMNOTFOUND|一個參數 DISPID 未對應到方法的參數。|  
-|DISP\_E\_TYPEMISMATCH|一個或多個引數不可以強制轉型為。|  
-|DISP\_E\_UNKNOWNLCID|成員叫用會依據 LCID 解譯字串引數， LCID，而且無法辨識。  如果不需要 LCID 來解譯引數，應該不會傳回這個錯誤。|  
-|DISP\_E\_PARAMNOTOPTIONAL|遺漏必要參數。|  
+|DISP_E_BADPARAMCOUNT|提供給 DISPPARAMS 項目數與不同的方法或屬性接受的引數。|  
+|DISP_E_BADVARTYPE|其中一個引數中`rgvarg`不是有效的 variant 類型。|  
+|DISP_E_EXCEPTION|應用程式需要引發例外狀況。 在此情況下，結構會傳入`pei`應填入。|  
+|DISP_E_MEMBERNOTFOUND|要求的成員不存在，或是呼叫`InvokeEx`嘗試設定唯讀屬性的值。|  
+|DISP_E_NONAMEDARGS|這項實作`IDispatch`不支援具名引數。|  
+|DISP_E_OVERFLOW|其中一個引數中`rgvarg`不會強制轉成指定的型別。|  
+|DISP_E_PARAMNOTFOUND|其中一個參數 Dispid 不對應上之方法的參數。|  
+|DISP_E_TYPEMISMATCH|無法套用一或多個引數。|  
+|DISP_E_UNKNOWNLCID|所叫用的成員會解譯字串引數，根據 LCID、 LCID 不能辨識。 如果 LCID 不需要用於解譯引數，應不會傳回這個錯誤。|  
+|DISP_E_PARAMNOTOPTIONAL|已省略必要的參數。|  
   
-## 範例  
+## <a name="example"></a>範例  
   
 ```  
 VARIANT var;  
@@ -130,7 +133,7 @@ VARIANT var;
    }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDispatchEx 介面](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

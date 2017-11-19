@@ -1,51 +1,51 @@
 ---
-title: "IDebugAlias::GetICorDebugValue | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAlias::GetICorDebugValue"
-helpviewer_keywords: 
-  - "IDebugAlias::GetICorDebugValue 方法"
+title: "IDebugAlias::GetICorDebugValue |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugAlias::GetICorDebugValue
+helpviewer_keywords: IDebugAlias::GetICorDebugValue method
 ms.assetid: b9eb39ee-84af-4ace-9cfe-236b3d48aff5
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 603f24f89463b9eb9f7c67ed3d05662870e41bf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAlias::GetICorDebugValue
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取的 managed 程式碼介面，表示此別名相關聯的值。  
+# <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
+擷取的 managed 程式碼介面，表示與此別名相關聯的值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetICorDebugValue(  
-   IUnknown** ppUnk  
+HRESULT GetICorDebugValue(  
+   IUnknown** ppUnk  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetICorDebugValue(  
-   out object ppUnk  
+   out object ppUnk  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppUnk`  
- \[out\] `IUnknown` 介面，代表與此別名相關聯的值。 您可以查詢此介面 `ICorDebugValue` 介面。  
+ [out]`IUnknown`介面，表示與此別名相關聯的值。 這個介面可以查詢`ICorDebugValue`介面。  
   
-## 傳回值  
- 如果成功，會傳回 S\_OK。否則，傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 這個方法只適用於受管理的值 \( `ICorDebugValue` 在可用介面 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] 並定義於 [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK cordebug.idl 檔案中的\)。  
+## <a name="remarks"></a>備註  
+ 這個方法只適用於受管理的值 (`ICorDebugValue`是一種介面中可用[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]而定義在[!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)]SDK cordebug.idl 檔案中的)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

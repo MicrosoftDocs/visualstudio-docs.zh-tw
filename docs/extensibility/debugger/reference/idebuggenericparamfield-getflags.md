@@ -1,55 +1,57 @@
 ---
-title: "IDebugGenericParamField::GetFlags | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetFlags"
-  - "IDebugGenericParamField::GetFlags"
+title: "IDebugGenericParamField::GetFlags |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetFlags
+- IDebugGenericParamField::GetFlags
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5241889fc3a64a251295504a3d491168f725beac
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetFlags
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取這個泛用參數的旗標。  
+# <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
+擷取這個泛型參數的旗標。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetFlags(  
-   DWORD* pdwFlags  
+   DWORD* pdwFlags  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetFlags(  
-   ref uint pdwFlags  
+   ref uint pdwFlags  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdwFlags`  
- \[\] out傳回這個泛用參數的旗標。  
+ [out]傳回這個泛型參數的旗標。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 這些旗標可包含各種特殊的條件約束的相關資訊。  
+## <a name="remarks"></a>備註  
+ 這些旗標包含各種特殊條件約束的相關資訊。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugGenericParamFieldType**公開物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)  
 {  
     HRESULT hr = S_OK;  
@@ -67,5 +69,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

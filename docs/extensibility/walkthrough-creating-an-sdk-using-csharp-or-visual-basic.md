@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-caps.latest.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: f5f944dad46225a70192bbfb0dbd0d1dc6dc861a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: d40de5bedbb0e77aee2a0dbed34f8dc22d3835c9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-an-sdk-using-c-or-visual-basic"></a>逐步解說： 建立使用 C# 或 Visual Basic 的 SDK
 在本逐步解說，您將學習如何使用 Visual C# 來建立簡單的數學程式庫 SDK，然後再封裝 SDK 為 Visual Studio 擴充功能 (VSIX)。 您將完成下列程序：  
@@ -57,7 +42,8 @@ ms.lasthandoff: 09/06/2017
   
 5.  重新命名**Class1.cs**至**Arithmetic.cs**並更新其符合下列程式碼：  
   
-     [!code-csharp[CreatingAnSDKUsingWinRT #3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)][!code-vb[CreatingAnSDKUsingWinRT #3  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]  
   
 6.  在**方案總管 中**，開啟捷徑功能表**方案 'SimpleMath'**  節點，然後選擇  **Configuration Manager**。  
   
@@ -86,7 +72,7 @@ ms.lasthandoff: 09/06/2017
   
 6.  以下列 XML 取代現有的 XML:  
   
-     [!code-xml[CreatingAnSDKUsingWinRT # 1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
+     [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
   
 7.  在**方案總管 中**，選擇**SimpleMathVSIX**專案。  
   
@@ -245,7 +231,8 @@ ms.lasthandoff: 09/06/2017
   
 11. 將 MainPage.xaml.cs 更新以符合下列程式碼：  
   
-     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp #2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)][!code-vb[CreatingAnSDKUsingWinRTDemoApp #2  ](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
+     [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
+     [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]  
   
 12. 選擇 F5 鍵執行應用程式。  
   

@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Display a String in a Worksheet Cell | Microsoft Docs'
+title: "如何： 以程式設計方式在工作表儲存格中顯示字串 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,45 +14,46 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], adding to worksheets
 - worksheets, displaying text in cells
 ms.assetid: b19870ad-e132-49fd-994e-0a91710fa4c9
-caps.latest.revision: 45
-author: kempb
-ms.author: kempb
+caps.latest.revision: "45"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4667c2fe28cf927b6192cd1011a4570838425d7b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3e297a2f6c1752053557dd7bcea5adab1c2184aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>How to: Programmatically Display a String in a Worksheet Cell
-  This example demonstrates how to display text in a cell programmatically. To display text in cell, use either a <xref:Microsoft.Office.Tools.Excel.NamedRange> control or a native Excel range object.  
+# <a name="how-to-programmatically-display-a-string-in-a-worksheet-cell"></a>如何：以程式設計方式在工作表儲存格中顯示字串
+  此範例示範如何以程式設計方式在資料格中顯示文字。 若要在資料格中顯示文字，請使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項或原生 Excel 範圍物件。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
-## <a name="using-a-namedrange-control"></a>Using a NamedRange Control  
- This example uses a <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `message`. The control must be added to a document-level customization at design time. The following code must be placed in a sheet class, not in the `ThisWorkbook` class.  
+## <a name="using-a-namedrange-control"></a>使用 NamedRange 控制項  
+ 這個範例會使用<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`message`。 必須加入文件層級自訂在設計階段加入控制項。 下列程式碼必須放置在工作表類別中，不在`ThisWorkbook`類別。  
   
-#### <a name="to-display-text-in-a-namedrange-control"></a>To display text in a NamedRange control  
+#### <a name="to-display-text-in-a-namedrange-control"></a>NamedRange 控制項中顯示文字  
   
-1.  Set the value of the <xref:Microsoft.Office.Tools.Excel.NamedRange> control to **Hello World**.  
+1.  值設定<xref:Microsoft.Office.Tools.Excel.NamedRange>控制權傳輸至**Hello World**。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]  [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#68)]
+     [!code-vb[Trin_VstcoreExcelAutomation#68](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#68)]  
   
-## <a name="using-a-native-excel-range"></a>Using a Native Excel Range  
- The following code creates a new range programmatically and then assigns a value to it.  
+## <a name="using-a-native-excel-range"></a>使用原生 Excel 範圍  
+ 下列程式碼以程式設計方式建立新的範圍，然後將值指派給它。  
   
-#### <a name="to-display-text-in-an-excel-range"></a>To display text in an Excel range  
+#### <a name="to-display-text-in-an-excel-range"></a>在 Excel 範圍中顯示文字  
   
-1.  Retrieve the range at cell **A1** on `Sheet1` and set the value to **Hello World**.  
+1.  擷取的資料格範圍**A1**上`Sheet1`並將值設定為**Hello World**。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]  [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#69)]
+     [!code-vb[Trin_VstcoreExcelAutomation#69](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#69)]  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Collecting Data Using a Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
- [Troubleshooting Office Solutions](../vsto/troubleshooting-office-solutions.md)   
- [NamedRange Control](../vsto/namedrange-control.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [逐步解說： 收集資料，使用 Windows Form](../vsto/walkthrough-collecting-data-using-a-windows-form.md)   
+ [Office 方案疑難排解](../vsto/troubleshooting-office-solutions.md)   
+ [NamedRange 控制項](../vsto/namedrange-control.md)   
+ [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -1,62 +1,62 @@
 ---
-title: "GETHOSTNAME_TYPE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "GETHOSTNAME_TYPE"
-helpviewer_keywords: 
-  - "GETHOSTNAME_TYPE 列舉型別"
+title: "GETHOSTNAME_TYPE |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: GETHOSTNAME_TYPE
+helpviewer_keywords: GETHOSTNAME_TYPE enumeration
 ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ba4c0eb77d1eb2a902c9db1288785cf2b6d0ac7a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# GETHOSTNAME_TYPE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定主機名稱的型的別。  
+# <a name="gethostnametype"></a>GETHOSTNAME_TYPE
+指定主機名稱類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
+```cpp  
+enum enum_GETHOSTNAME_TYPE {   
+   GHN_FRIENDLY_NAME = 0,  
+   GHN_FILE_NAME     = 1  
 };  
 typedef DWORD GETHOSTNAME_TYPE;  
 ```  
   
-```c#  
-public enum enum_GETHOSTNAME_TYPE {   
-   GHN_FRIENDLY_NAME = 0,  
-   GHN_FILE_NAME     = 1  
+```csharp  
+public enum enum_GETHOSTNAME_TYPE {   
+   GHN_FRIENDLY_NAME = 0,  
+   GHN_FILE_NAME     = 1  
 };  
 ```  
   
-## Members  
- GHN\_FRIENDLY\_NAME  
- 指定主應用程式的好記的名稱。  
+## <a name="members"></a>成員  
+ GHN_FRIENDLY_NAME  
+ 指定主機的易記名稱。  
   
- GHN\_FILE\_NAME  
- 指定的檔名的主應用程式。  
+ GHN_FILE_NAME  
+ 指定主機的檔案名稱。  
   
-## 備註  
- 這些值會當做引數傳遞[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法，以擷取不同格式的主機名稱。  
+## <a name="remarks"></a>備註  
+ 這些值會傳遞做為引數[GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)方法來擷取主機名稱格式不同。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Custom Deployment Step for SharePoint Projects | Microsoft Docs'
+title: "逐步解說： 建立 SharePoint 專案的自訂部署步驟 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,303 +14,299 @@ helpviewer_keywords:
 - SharePoint commands
 - SharePoint development in Visual Studio, extending deployment
 ms.assetid: 4ba2d120-06b8-4ef3-84eb-c6c50ced9d82
-caps.latest.revision: 63
-author: kempb
-ms.author: kempb
+caps.latest.revision: "63"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 884ff540c52d6ea684e5fbd84af6289cd461e4f7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b7375071522ea59c9c00a5fa94277a3817438d25
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>Walkthrough: Creating a Custom Deployment Step for SharePoint Projects
-  When you deploy a SharePoint project, Visual Studio executes a series of deployment steps in a specific order. Visual Studio includes many built-in deployment steps, but you can also create your own.  
+# <a name="walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects"></a>逐步解說：建立 SharePoint 專案的自訂部署步驟
+  當您部署 SharePoint 專案時，Visual Studio 會執行一系列的部署步驟，以特定順序。 Visual Studio 包含許多的內建部署步驟，但您也可以建立您自己。  
   
- In this walkthrough, you will create a custom deployment step to upgrade solutions on a server that's running SharePoint. Visual Studio includes built-in deployment steps for many tasks, such retracting or adding solutions, but it doesn't include a deployment step for upgrading solutions. By default, when you deploy a SharePoint solution, Visual Studio first retracts the solution (if it's already deployed) and then redeploys the entire solution. For more information about the built-in deployment steps, see [Deploying, Publishing, and Upgrading SharePoint Solution Packages](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md).  
+ 在本逐步解說中，您將建立的自訂部署步驟，以升級執行 SharePoint 的伺服器上的方案。 Visual Studio 包含許多工作，這類撤銷或新增解決方案，內建部署步驟，但它不會包含如升級方案的部署步驟。 根據預設，當您部署 SharePoint 方案，Visual Studio 第一次會撤銷方案 （如果已部署），然後重新部署整個方案。 如需有關內建部署步驟的詳細資訊，請參閱[部署、 發行和升級 SharePoint 方案套件](../sharepoint/deploying-publishing-and-upgrading-sharepoint-solution-packages.md)。  
   
- This walkthrough demonstrates the following tasks:  
+ 本逐步解說將示範下列工作：  
   
--   Creating a Visual Studio extension that performs two main tasks:  
+-   建立 Visual Studio 擴充功能會執行兩個主要工作：  
   
-    -   The extension defines a custom deployment step to upgrade SharePoint solutions.  
+    -   延伸模組會定義要升級 SharePoint 方案的自訂部署步驟。  
   
-    -   The extension creates a project extension that defines a new deployment configuration, which is a set of deployment steps that are executed for a given project. The new deployment configuration includes the custom deployment step and several built-in deployment steps.  
+    -   延伸模組建立定義新的部署組態，這是一組部署步驟，針對指定的專案中執行的專案擴充功能。 新的部署組態包括自訂部署步驟和數個內建部署步驟。  
   
--   Creating two custom SharePoint commands that the extension assembly calls. SharePoint commands are methods that can be called by extension assemblies to use APIs in the server object model for SharePoint. For more information, see [Calling into the SharePoint Object Models](../sharepoint/calling-into-the-sharepoint-object-models.md).  
+-   建立兩個延伸模組組件呼叫的自訂 SharePoint 命令。 SharePoint 命令是使用伺服器物件模型中的應用程式開發介面 for SharePoint 的延伸模組組件可以呼叫的方法。 如需詳細資訊，請參閱[呼叫 SharePoint 物件模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。  
   
--   Building a Visual Studio Extension (VSIX) package to deploy both of the assemblies.  
+-   建立要部署這兩個組件的 Visual Studio 擴充功能 (VSIX) 封裝。  
   
--   Testing the new deployment step.  
+-   測試新的部署步驟。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components on the development computer to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說在開發電腦上：  
   
--   Supported editions of Windows, SharePoint, and Visual Studio. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Windows、 SharePoint 和 Visual Studio 版本。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   The Visual Studio SDK. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the extension. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   Visual Studio SDK。 本逐步解說使用**VSIX 專案**建立 VSIX 封裝，來部署擴充功能 SDK 中的範本。 如需詳細資訊，請參閱[擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- Knowledge of the following concepts is helpful, but not required, to complete the walkthrough:  
+ 了解下列概念是有幫助，但並非必要，完成此逐步解說：  
   
--   Using the server object model for SharePoint. For more information, see [Using the SharePoint Foundation Server-Side Object Model](http://go.microsoft.com/fwlink/?LinkId=177796).  
+-   使用 for SharePoint 的伺服器物件模型。 如需詳細資訊，請參閱[使用 SharePoint Foundation 伺服器端物件模型](http://go.microsoft.com/fwlink/?LinkId=177796)。  
   
--   SharePoint solutions. For more information, see [Solutions Overview](http://go.microsoft.com/fwlink/?LinkId=169422).  
+-   SharePoint 方案。 如需詳細資訊，請參閱[方案概觀](http://go.microsoft.com/fwlink/?LinkId=169422)。  
   
--   Upgrading SharePoint solutions. For more information, see [Upgrading a Solution](http://go.microsoft.com/fwlink/?LinkId=177802).  
+-   升級 SharePoint 方案。 如需詳細資訊，請參閱[升級方案](http://go.microsoft.com/fwlink/?LinkId=177802)。  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you must create three projects:  
+## <a name="creating-the-projects"></a>建立專案  
+ 若要完成此逐步解說，您必須建立三個專案：  
   
--   A VSIX project to create the VSIX package to deploy the extension.  
+-   若要建立 VSIX 封裝，來部署擴充功能 VSIX 專案。  
   
--   A class library project that implements the extension. This project must target the .NET Framework 4.5.  
+-   類別庫專案，可實作延伸。 此專案必須以.NET Framework 4.5 為目標。  
   
--   A class library project that defines the custom SharePoint commands. This project must target the .NET Framework 3.5.  
+-   類別庫專案來定義自訂 SharePoint 命令。 此專案必須以.NET Framework 3.5 為目標。  
   
- Start the walkthrough by creating the projects.  
+ 開始本逐步解說建立的專案。  
   
-#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
+#### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Extensibility** node.  
-  
-    > [!NOTE]  
-    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
-  
-4.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
-  
-5.  Choose the **VSIX Project** template, name the project **UpgradeDeploymentStep**, and then choose the **OK** button.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **UpgradeDeploymentStep** project to **Solution Explorer**.  
-  
-#### <a name="to-create-the-extension-project"></a>To create the extension project  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the UpgradeDeploymentStep solution node, choose **Add**, and then choose **New Project**.  
+3.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
   
-2.  In the **New Project** dialog box, expand the **Visual C#** or **Visual Basic** nodes, and then choose the **Windows** node.  
+4.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
-3.  At the top of the dialog box, choose **.NET Framework 4.5** in the list of versions of the .NET Framework.  
+5.  選擇**VSIX 專案**範本，將專案**UpgradeDeploymentStep**，然後選擇 [**確定**] 按鈕。  
   
-4.  Choose the **Class Library** project template, name the project **DeploymentStepExtension**, and then choose the **OK** button.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**UpgradeDeploymentStep**專案加入**方案總管 中**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **DeploymentStepExtension** project to the solution and opens the default Class1 code file.  
+#### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
-5.  Delete the Class1 code file from the project.  
+1.  在**方案總管] 中**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-#### <a name="to-create-the-sharepoint-command-project"></a>To create the SharePoint command project  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**節點，然後選擇  **Windows**節點。  
   
-1.  In **Solution Explorer**, open the shortcut menu for the UpgradeDeploymentStep solution node, choose **Add**, and then choose **New Project**.  
+3.  在對話方塊頂端，選擇  **.NET Framework 4.5**清單中的.NET Framework 版本。  
   
-    > [!NOTE]  
-    >  In Visual Basic projects, the solution node only appears in **Solution Explorer** when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+4.  選擇**類別庫**專案範本，將專案命名**DeploymentStepExtension**，然後選擇 [**確定**] 按鈕。  
   
-2.  In the **New Project** dialog box, expand **Visual C#** or **Visual Basic**, and then choose the **Windows** node.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**DeploymentStepExtension**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-3.  At the top of the dialog box, choose **.NET Framework 3.5** in the list of versions of the .NET Framework.  
+5.  從專案刪除 Class1 的程式碼檔案。  
   
-4.  Choose the **Class Library** project template, name the project **SharePointCommands**, and then choose the **OK** button.  
+#### <a name="to-create-the-sharepoint-command-project"></a>若要建立 SharePoint 命令專案  
   
-     Visual Studio adds the **SharePointCommands** project to the solution and opens the default Class1 code file.  
+1.  在**方案總管] 中**，開啟 UpgradeDeploymentStep 方案節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-5.  Delete the Class1 code file from the project.  
+2.  在**新專案**對話方塊方塊中，展開  **Visual C#**或**Visual Basic**，然後選擇  **Windows**節點。  
   
-## <a name="configuring-the-projects"></a>Configuring the Projects  
- Before you write code to create the custom deployment step, you must add code files and assembly references, and you must configure the projects.  
+3.  在對話方塊頂端，選擇  **.NET Framework 3.5**清單中的.NET Framework 版本。  
   
-#### <a name="to-configure-the-deploymentstepextension-project"></a>To configure the DeploymentStepExtension project  
+4.  選擇**類別庫**專案範本，將專案命名**SharePointCommands**，然後選擇 [**確定**] 按鈕。  
   
-1.  In the **DeploymentStepExtension** project, add two code files that have the following names:  
+     Visual Studio 會加入**SharePointCommands**專案加入方案，並開啟預設 Class1 的程式碼檔。  
+  
+5.  從專案刪除 Class1 的程式碼檔案。  
+  
+## <a name="configuring-the-projects"></a>設定專案  
+ 您撰寫程式碼來建立自訂部署步驟之前，您必須加入程式碼檔案和組件參考，而且您必須設定專案。  
+  
+#### <a name="to-configure-the-deploymentstepextension-project"></a>若要設定 DeploymentStepExtension 專案  
+  
+1.  在**DeploymentStepExtension**專案中，加入兩個具有下列名稱的程式碼檔案：  
   
     -   UpgradeStep  
   
     -   DeploymentConfigurationExtension  
   
-2.  Open the shortcut menu on the DeploymentStepExtension project, and then choose **Add Reference**.  
+2.  開啟於 DeploymentStepExtension 專案，並在專案的捷徑功能表，然後選擇**加入參考**。  
   
-3.  On the **Framework** tab, select the check box for the System.ComponentModel.Composition assembly.  
+3.  在**Framework**索引標籤上，選取核取方塊，針對 System.ComponentModel.Composition 組件。  
   
-4.  On the **Extensions** tab, select the check box for the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
+4.  在**延伸**索引標籤上，對於 Microsoft.VisualStudio.SharePoint 組件中，選取核取方塊，然後選擇**確定** 按鈕。  
   
-#### <a name="to-configure-the-sharepointcommands-project"></a>To configure the SharePointCommands project  
+#### <a name="to-configure-the-sharepointcommands-project"></a>若要設定 SharePointCommands 專案  
   
-1.  In the **SharePointCommands** project, add a code file that's named Commands.  
+1.  在**SharePointCommands**專案中，加入名為命令的程式碼檔案。  
   
-2.  In **Solution Explorer**, open the shortcut menu on the **SharePointCommands** project node, and then choose **Add Reference**.  
+2.  在**方案總管 中**，開啟捷徑功能表上**SharePointCommands**專案節點，然後選擇**加入參考**。  
   
-3.  On the **Extensions** tab, select the check boxes for the following assemblies, and then click choose the **OK** button  
+3.  在**延伸**索引標籤上的下列組件中，選取核取方塊，然後按一下 選擇**確定**按鈕  
   
     -   Microsoft.SharePoint  
   
     -   Microsoft.VisualStudio.SharePoint.Commands  
   
-## <a name="defining-the-custom-deployment-step"></a>Defining the Custom Deployment Step  
- Create a class that defines the upgrade deployment step. To define the deployment step, the class implements the <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep> interface. Implement this interface whenever you want to define a custom deployment step.  
+## <a name="defining-the-custom-deployment-step"></a>定義自訂部署步驟  
+ 建立一個類別來定義升級部署步驟。 若要定義部署步驟，此類別會實作<xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentStep>介面。 每當您想要定義的自訂部署步驟，請實作這個介面。  
   
-#### <a name="to-define-the-custom-deployment-step"></a>To define the custom deployment step  
+#### <a name="to-define-the-custom-deployment-step"></a>若要定義自訂部署步驟  
   
-1.  In the **DeploymentStepExtension** project, open the UpgradeStep code file, and then paste the following code into it.  
+1.  在**DeploymentStepExtension**專案中，開啟 UpgradeStep 程式碼檔案，並接著將下列程式碼貼入其中。  
   
     > [!NOTE]  
-    >  After you add this code, the project will have some compile errors, but they'll go away when you add code in later steps.  
+    >  加入下列程式碼，專案就會發生編譯錯誤，但它們會消失之後當您加入程式碼在稍後步驟中。  
   
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
+     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]  
   
-## <a name="creating-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>Creating a Deployment Configuration that Includes the Custom Deployment Step  
- Create a project extension for the new deployment configuration, which includes several built-in deployment steps and the new upgrade deployment step. By creating this extension, you help SharePoint developers to use the upgrade deployment step in SharePoint projects.  
+## <a name="creating-a-deployment-configuration-that-includes-the-custom-deployment-step"></a>建立部署組態，包括自訂部署步驟  
+ 建立新的部署組態，其中包括數個內建部署步驟和新的升級部署步驟專案擴充功能。 藉由建立此擴充功能，您可以協助使用升級的部署步驟，在 SharePoint 專案中的 SharePoint 開發人員。  
   
- To create the deployment configuration, the class implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface. Implement this interface whenever you want to create a SharePoint project extension.  
+ 若要建立的部署組態，該類別會實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>介面。 每當您想要建立 SharePoint 專案擴充功能時，請實作這個介面。  
   
-#### <a name="to-create-the-deployment-configuration"></a>To create the deployment configuration  
+#### <a name="to-create-the-deployment-configuration"></a>若要建立的部署組態  
   
 1.  
   
-2.  In the **DeploymentStepExtension** project, open the DeploymentConfigurationExtension code file, and then paste the following code into it.  
+2.  在**DeploymentStepExtension**專案中，開啟 DeploymentConfigurationExtension 程式碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/deploymentconfigurationextension.cs#2)]
+     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#2](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/deploymentconfigurationextension.vb#2)]  
   
-## <a name="creating-the-custom-sharepoint-commands"></a>Creating the Custom SharePoint Commands  
- Create two custom commands that call into the server object model for SharePoint. One command determines whether a solution is already deployed; the other command upgrades a solution.  
+## <a name="creating-the-custom-sharepoint-commands"></a>建立自訂 SharePoint 命令  
+ 建立兩個 sharepoint 伺服器物件模型呼叫的自訂命令。 一個命令會判斷是否已部署方案。另一個命令會升級方案。  
   
-#### <a name="to-define-the-sharepoint-commands"></a>To define the SharePoint commands  
+#### <a name="to-define-the-sharepoint-commands"></a>若要定義 SharePoint 命令  
   
-1.  In the **SharePointCommands** project, open the Commands code file, and then paste the following code into it.  
+1.  在**SharePointCommands**專案中，開啟指令碼檔案，並接著將下列程式碼貼入其中。  
   
-     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]  [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]  
+     [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#4)]
+     [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#4](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#4)]  
   
-## <a name="checkpoint"></a>Checkpoint  
- At this point in the walkthrough, all the code for the custom deployment step and the SharePoint commands are now in the projects. Build them to make sure that they compile without errors.  
+## <a name="checkpoint"></a>檢查點  
+ 此時在逐步解說中，自訂部署步驟和 SharePoint 命令的所有程式碼現在都會是專案。 建置，以確保它們編譯無誤。  
   
-#### <a name="to-build-the-projects"></a>To build the projects  
+#### <a name="to-build-the-projects"></a>若要建置的專案  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **DeploymentStepExtension** project, and then choose **Build**.  
+1.  在**方案總管 中**，開啟捷徑功能表**DeploymentStepExtension**專案，然後再選擇**建置**。  
   
-2.  Open the shortcut menu for the **SharePointCommands** project, and then choose **Build**.  
+2.  開啟快顯功能表**SharePointCommands**專案，然後再選擇**建置**。  
   
-## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>Creating a VSIX Package to Deploy the Extension  
- To deploy the extension, use the VSIX project in your solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file in the VSIX project. Then create the VSIX package by building the solution.  
+## <a name="creating-a-vsix-package-to-deploy-the-extension"></a>建立 VSIX 封裝，來部署擴充功能  
+ 若要部署擴充功能，方案中使用 VSIX 專案建立 VSIX 封裝。 首先，設定 VSIX 封裝，藉由修改 source.extension.vsixmanifest 檔案中的，在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。  
   
-#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
+#### <a name="to-configure-and-create-the-vsix-package"></a>若要設定，並建立 VSIX 封裝  
   
-1.  In **Solution Explorer**, under the **UpgradeDeploymentStep** project, open the shortcut menu for the **source.extension.vsixmanifest** file, and then choose **Open**.  
+1.  在**方案總管] 中**下**UpgradeDeploymentStep**專案中，開啟捷徑功能表**source.extension.vsixmanifest**檔案，然後再選擇 [ **開啟**。  
   
-     Visual Studio opens the file in the manifest editor. The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Visual Studio 會在資訊清單編輯器中開啟檔案。 Source.extension.vsixmanifest 檔案是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱[VSIX 擴充功能結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
-2.  In the **Product Name** box, enter **Upgrade Deployment Step for SharePoint Projects**.  
+2.  在**產品名稱**方塊中，輸入**升級 SharePoint 專案的部署步驟**。  
   
-3.  In the **Author** box, enter **Contoso**.  
+3.  在**作者**方塊中，輸入**Contoso**。  
   
-4.  In the **Description** box, enter **Provides a custom upgrade deployment step that can be used in SharePoint projects**.  
+4.  在**描述**方塊中，輸入**提供可以在 SharePoint 專案中使用的自訂升級的部署步驟**。  
   
-5.  In the **Assets** tab of the editor, choose the **New** button.  
+5.  在**資產** 索引標籤的編輯器中，選擇 **新增** 按鈕。  
   
-     The **Add New Asset** dialog box appears.  
+     **加入新資產** 對話方塊隨即出現。  
   
-6.  In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
-  
-    > [!NOTE]  
-    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
-  
-7.  In the **Source** list, choose **A project in current solution**.  
-  
-8.  In the **Project** list, choose **DeploymentStepExtension**, and then choose the **OK** button.  
-  
-9. In the manifest editor, choose the **New** button again.  
-  
-     The **Add New Asset** dialog box appears.  
-  
-10. In the **Type** list, enter **SharePoint.Commands.v4**.  
+6.  在**類型**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
     > [!NOTE]  
-    >  This element specifies a custom extension that you want to include in the Visual Studio extension. For more information, see [Asset Element (VSX Schema)](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737).  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個項目 VSIX 封裝中指定延伸模組組件的名稱。 如需詳細資訊，請參閱[MEFComponent 元素 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
   
-11. In the **Source** list, choose **A project in current solution**.  
+7.  在**來源**清單中，選擇**目前方案中的專案**。  
   
-12. In the **Project** list, choose **SharePointCommands**, and then choose the **OK** button.  
+8.  在**專案**清單中，選擇**DeploymentStepExtension**，然後選擇 [**確定**] 按鈕。  
   
-13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the solution compiles without errors.  
+9. 在資訊清單編輯器中，選擇 **新增**按鈕一次。  
   
-14. Make sure that the build output folder for the UpgradeDeploymentStep project now contains the UpgradeDeploymentStep.vsix file.  
+     **加入新資產** 對話方塊隨即出現。  
   
-     By default, the build output folder is the ..\bin\Debug folder under the folder that contains your project file.  
-  
-## <a name="preparing-to-test-the-upgrade-deployment-step"></a>Preparing to Test the Upgrade Deployment Step  
- To test the upgrade deployment step, you must first deploy a sample solution to the SharePoint site. Start by debugging the extension in the experimental instance of Visual Studio. Then create a list definition and list instance to use to test the deployment step, and then deploy them to the SharePoint site. Next, modify the list definition and list instance and redeploy them to demonstrate how the default deployment process overwrites solutions on the SharePoint site.  
-  
- Later in this walkthrough, you'll modify the list definition and list instance, and then you'll upgrade them on the SharePoint site.  
-  
-#### <a name="to-start-debugging-the-extension"></a>To start debugging the extension  
-  
-1.  Restart Visual Studio with administrative credentials, and then open the UpgradeDeploymentStep solution.  
-  
-2.  In the DeploymentStepExtension project, open the UpgradeStep code file, and then add a breakpoint to the first line of code in the `CanExecute` and `Execute` methods.  
-  
-3.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
-  
-4.  Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade Deployment Step for SharePoint Projects\1.0 and starts an experimental instance of Visual Studio. You'll test the upgrade deployment step in this instance of Visual Studio.  
-  
-#### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>To create a SharePoint project with a list definition and a list instance  
-  
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
-  
-2.  In the **New Project** dialog box, expand the **Visual C#** node or the **Visual Basic** node, expand the **SharePoint** node, and then choose the **2010** node.  
-  
-3.  At the top of the dialog box, make sure that **.NET Framework 3.5** appears in the list of versions of the .NET Framework.  
-  
-     Projects for [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] and [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] require this version of the .NET Framework.  
-  
-4.  In the list of project templates, choose **SharePoint 2010 Project**, name the project **EmployeesListDefinition**, and then choose the **OK** button.  
-  
-5.  In the **SharePoint Customization Wizard**, enter the URL of the site that you want to use for debugging.  
-  
-6.  Under **What is the trust level for this SharePoint solution**, choose the **Deploy as a farm solution** option button.  
+10. 在**類型**清單中，輸入**SharePoint.Commands.v4**。  
   
     > [!NOTE]  
-    >  The upgrade deployment step doesn't support sandboxed solutions.  
+    >  這個項目會指定您想要包含在 Visual Studio 擴充功能的自訂延伸模組。 如需詳細資訊，請參閱[資產項目 （VSX 結構描述）](http://msdn.microsoft.com/en-us/9fcfc098-edc7-484b-9d4c-acd17829d737)。  
   
-7.  Choose the **Finish** button.  
+11. 在**來源**清單中，選擇**目前方案中的專案**。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the EmployeesListDefinition project.  
+12. 在**專案**清單中，選擇**SharePointCommands**，然後選擇 [**確定**] 按鈕。  
   
-8.  Open the shortcut menu for the EmployeesListDefinition project, choose **Add**, and then choose **New Item**.  
+13. 在功能表列上選擇 **建置**，**建置方案**，然後確認方案編譯無誤。  
   
-9. In the **Add New Item - EmployeesListDefinition** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
+14. 請確定 UpgradeDeploymentStep 專案建置輸出資料夾現在包含 UpgradeDeploymentStep.vsix 檔案。  
   
-10. Choose the **List** item template, name the item **Employees List**, and then choose the **Add** button.  
+     根據預設，會將組建輸出資料夾...包含專案檔的資料夾下的 \bin\Debug 資料夾。  
   
-     The SharePoint Customization Wizard appears  
+## <a name="preparing-to-test-the-upgrade-deployment-step"></a>準備要測試升級的部署步驟  
+ 若要測試升級的部署步驟，您必須先在 SharePoint 網站部署範例方案。 開始偵錯 Visual Studio 的實驗執行個體中的擴充功能。 接著建立清單定義和清單執行個體，用來測試部署步驟，並再將其部署至 SharePoint 網站。 接下來，修改的清單定義和清單執行個體，然後重新部署，示範如何在預設部署程序會覆寫 SharePoint 網站上的方案。  
   
-11. On the **Choose List Settings** page, verify the following settings, and then choose the **Finish** button:  
+ 稍後在本逐步解說中，您將修改的清單定義和清單執行個體，然後您會升級它們，然後在 SharePoint 網站上。  
   
-    1.  **Employees List** appears in the **What name do you want to display for your list?** box.  
+#### <a name="to-start-debugging-the-extension"></a>若要啟動偵錯擴充功能  
   
-    2.  The **Create a customizable list based on:** option button is chosen.  
+1.  系統管理認證，以重新啟動 Visual Studio，然後開啟 UpgradeDeploymentStep 方案。  
   
-    3.  **Default (Blank)** is chosen in the **Create a customizable list based on:** list.  
+2.  在 DeploymentStepExtension 專案中，開啟 UpgradeStep 程式碼檔案，並再將中斷點加入至程式碼中的第一行`CanExecute`和`Execute`方法。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] creates the Employees List item with a Title column and a single empty instance and opens the List Designer.  
+3.  開始偵錯方法選擇 F5 鍵，或是在功能表列上，選擇**偵錯**，**開始偵錯**。  
   
-12. In the List Designer, on the **Columns** tab, choose the **Type a new or existing column name** row, and then add the following columns in the **Column Display Name** list:  
+4.  Visual Studio 會擴充功能安裝 SharePoint Projects\1.0 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Upgrade 部署步驟，並啟動 Visual studio 的實驗執行個體。 您將這個執行個體的 Visual Studio 中測試升級的部署步驟。  
   
-    1.  First Name  
+#### <a name="to-create-a-sharepoint-project-with-a-list-definition-and-a-list-instance"></a>若要建立 SharePoint 專案使用清單定義和清單執行個體  
   
-    2.  Company  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-    3.  Business Phone  
+2.  在**新的專案**對話方塊方塊中，展開 [ **Visual C#**節點或**Visual Basic** ] 節點，展開**SharePoint** ] 節點，然後選擇 [**2010年**節點。  
   
-    4.  E-Mail  
+3.  在對話方塊頂端，請確定**.NET Framework 3.5**會出現在.NET Framework 版本的清單。  
   
-13. Save all files, and then close the List Designer.  
+     專案[!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)]和[!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)]需要這個版本的.NET Framework。  
   
-14. In **Solution Explorer**, expand the **Employees List** node, and then expand the **Employees List Instance** child node.  
+4.  在專案範本清單中選擇**SharePoint 2010 專案**，將專案命名**EmployeesListDefinition**，然後選擇 [ **[確定]** ] 按鈕。  
   
-15. In the Elements.xml file, replace the default XML in this file with the following XML. This XML changes the name of the list to **Employees** and adds information for an employee who's named Jim Hance.  
+5.  在**SharePoint 自訂精靈**，輸入您想要用於偵錯的網站 URL。  
+  
+6.  在下**此 SharePoint 方案的信任層級為何**，選擇**部署為伺服陣列方案**選項按鈕。  
+  
+    > [!NOTE]  
+    >  升級部署步驟並不支援沙箱化方案。  
+  
+7.  選擇**完成** 按鈕。  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立 EmployeesListDefinition 專案。  
+  
+8.  開啟 EmployeesListDefinition 專案的捷徑功能表，選擇 **新增**，然後選擇 **新項目**。  
+  
+9. 在**加入新項目-EmployeesListDefinition**對話方塊方塊中，展開  **SharePoint**  節點，然後選擇  **2010年**節點。  
+  
+10. 選擇**清單**項目範本，將項**員工清單**，然後選擇 [**新增**] 按鈕。  
+  
+     SharePoint 自訂精靈 隨即出現  
+  
+11. 在**選擇清單設定**頁面上，確認下列設定，然後選擇 **完成**按鈕：  
+  
+    1.  **員工清單**會出現在**您想要清單顯示什麼名稱？**方塊。  
+  
+    2.  **建立自訂的清單為基礎：**會選擇選項按鈕。  
+  
+    3.  **預設值 （空白）**中選擇**建立自訂的清單為基礎：**清單。  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]建立員工清單項目的標題欄與單一的空執行個體，並開啟清單設計工具。  
+  
+12. 在清單設計工具上**資料行**索引標籤上，選擇**輸入新的或現有的資料行名稱**資料列，然後再加入下列資料行中的**資料行的顯示名稱**清單：  
+  
+    1.  名字  
+  
+    2.  公司  
+  
+    3.  公司電話  
+  
+    4.  電子郵件  
+  
+13. 儲存所有檔案，然後再關閉 清單設計工具。  
+  
+14. 在**方案總管 中**，依序展開**員工清單** 節點，然後展開**員工清單執行個體**子節點。  
+  
+15. 在 Elements.xml 檔案中，取代預設的 XML 檔案中以下列 XML。 這段 XML 會變更的清單名稱**員工**，並將具有名為 Jim 宗翰的員工的資訊。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -337,33 +331,33 @@ ms.lasthandoff: 08/30/2017
     </Elements>  
     ```  
   
-16. Save and close the Elements.xml file.  
+16. 儲存並關閉 Elements.xml 檔案。  
   
-17. Open the shortcut menu for the EmployeesListDefinition project, and then choose **Open** or **Properties**.  
+17. 開啟 EmployeesListDefinition 專案的捷徑功能表，然後選擇**開啟**或**屬性**。  
   
-     The Properties Designer opens.  
+     屬性設計工具隨即開啟。  
   
-18. On the **SharePoint** tab, clear the **Auto-retract after debugging** check box, and then save the properties.  
+18. 在**SharePoint**索引標籤上，清除**偵錯後自動撤銷**核取方塊，然後再儲存屬性。  
   
-#### <a name="to-deploy-the-list-definition-and-list-instance"></a>To deploy the list definition and list instance  
+#### <a name="to-deploy-the-list-definition-and-list-instance"></a>若要部署的清單定義和清單執行個體  
   
-1.  In **Solution Explorer**, choose the **EmployeesListDefinition** project node.  
+1.  在**方案總管 中**，選擇**EmployeesListDefinition**專案節點。  
   
-2.  In the **Properties** window, make sure that the **Active Deployment Configuration** property is set to **Default**.  
+2.  在**屬性**視窗中，請確定**現用部署組態**屬性設定為**預設**。  
   
-3.  Choose the F5 key or, on the menu bar, choose **Debug**, **Start Debugging**.  
+3.  選擇 F5 鍵，或在功能表列上選擇 **偵錯**，**開始偵錯**。  
   
-4.  Verify that the project builds successfully, that the web browser opens to the SharePoint site, that the **Lists** item in the Quick Launch bar includes the new **Employees** list, and that the **Employees** list includes the entry for Jim Hance.  
+4.  確認專案建置成功，網頁瀏覽器會開啟 SharePoint 網站，**列出**快速啟動 列中的項目中包括新**員工** 清單中，而且**員工**Jim 宗翰清單包含項目。  
   
-5.  Close the web browser.  
+5.  關閉 web 瀏覽器。  
   
-#### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>To modify the list definition and list instance and redeploy them  
+#### <a name="to-modify-the-list-definition-and-list-instance-and-redeploy-them"></a>若要修改的清單定義和清單執行個體，並將其重新佈署  
   
-1.  In the EmployeesListDefinition project, open the Elements.xml file that's a child of the **Employee List Instance** project item.  
+1.  在 EmployeesListDefinition 專案中，開啟 子系的 Elements.xml 檔案**員工清單執行個體**專案項目。  
   
-2.  Remove the `Data` element and its children to remove the entry for Jim Hance from the list.  
+2.  移除`Data`元素和其子系的 Jim 宗翰移除項目，從清單中。  
   
-     When you finish, the file should contain the following XML.  
+     當您完成時，此檔案應該包含下列 XML。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -377,125 +371,125 @@ ms.lasthandoff: 08/30/2017
     </Elements>  
     ```  
   
-3.  Save and close the Elements.xml file.  
+3.  儲存並關閉 Elements.xml 檔案。  
   
-4.  Open the shortcut menu for the **Employees List** project item, and then choose **Open** or **Properties**.  
+4.  開啟快顯功能表**員工清單**項目、 專案，然後選擇**開啟**或**屬性**。  
   
-5.  In the List Designer, choose the **Views** tab.  
+5.  在清單設計工具中，選擇 [**檢視**] 索引標籤。  
   
-6.  In the **Selected columns** list, choose **Attachments**, and then choose the < key to move that column to the **Available columns** list.  
+6.  在**選取的資料行**清單中，選擇**附件**，然後選擇 < 鍵以移至該資料行**可用的資料行**清單。  
   
-7.  Repeat the previous step to move the **Business Phone** column from the **Selected columns** list to the **Available columns** list.  
+7.  重複上述步驟來移動**公司電話**資料行從**選取的資料行**清單**可用的資料行**清單。  
   
-     This action removes these fields from the default view of the **Employees** list on the SharePoint site.  
+     這個動作會移除這些欄位的預設檢視從**員工**SharePoint 網站上的清單。  
   
-8.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
+8.  開始偵錯方法選擇 F5 鍵，或是在功能表列上，選擇**偵錯**，**開始偵錯**。  
   
-9. Verify that the **Deployment Conflicts** dialog box appears.  
+9. 確認**部署衝突** 對話方塊隨即出現。  
   
-     This dialog box appears when Visual Studio tries to deploy a solution (the list instance) to a SharePoint site to which that solution has already been deployed. This dialog box won't appear when you execute the upgrade deployment step later in this walkthrough.  
+     這個對話方塊就會出現 Visual Studio 嘗試部署方案 （清單執行個體） 的方案已經部署在 SharePoint 網站。 當您執行升級的部署步驟稍後在本逐步解說中，不會出現此對話方塊。  
   
-10. In the **Deployment Conflicts** dialog box, choose the **Resolve Automatically** option button.  
+10. 在**部署衝突**對話方塊方塊中，選擇**自動解決**選項按鈕。  
   
-     Visual Studio deletes the list instance on the SharePoint site, deploys the list item in the project, and then opens the SharePoint site.  
+     Visual Studio 刪除 SharePoint 網站上的清單執行個體、 將部署在專案中，清單項目，然後開啟 SharePoint 網站。  
   
-11. In the **Lists** section of the Quick Launch bar, choose the **Employees** list, and then verify the following details:  
+11. 在**列出**區段的 快速啟動 列中，選擇 **員工**清單，並確認下列詳細資料：  
   
-    -   The **Attachments** and **Home Phone** columns don't appear in this view of the list.  
+    -   **附件**和**住家電話**資料行不會出現在這個檢視的清單。  
   
-    -   The list is empty. When you used the **Default** deployment configuration to redeploy the solution, the **Employees** list was replaced with the new empty list in your project.  
+    -   清單是空的。 當您使用**預設**重新部署方案的部署組態**員工**清單取代您的專案中的新空白清單。  
   
-## <a name="testing-the-deployment-step"></a>Testing the Deployment Step  
- You are now ready to test the upgrade deployment step. First, add an item to the list instance in SharePoint. Then change the list definition and list instance, upgrade them on the SharePoint site, and confirm that the upgrade deployment step doesn't overwrite the new item.  
+## <a name="testing-the-deployment-step"></a>測試部署步驟  
+ 現在您已經準備好進行測試升級的部署步驟。 首先，在 SharePoint 中的清單執行個體中加入項目。 然後變更 清單定義和清單執行個體中，將它們升級 SharePoint 網站，並確認升級部署步驟，不會覆寫新增的項目。  
   
-#### <a name="to-manually-add-an-item-to-the-list"></a>To manually add an item to the list  
+#### <a name="to-manually-add-an-item-to-the-list"></a>若要以手動方式將項目加入清單  
   
-1.  In the ribbon on the SharePoint site, under the **List Tools** tab, choose the **Items** tab.  
+1.  在功能區中，於 SharePoint 網站上底下**清單工具**索引標籤上，選擇**項目** 索引標籤。  
   
-2.  In the **New** group, choose **New Item**.  
+2.  在**新增**群組中，選擇**新項目**。  
   
-     As an alternative, you can choose the **Add new item** link in the item list itself.  
+     或者，您可以選擇**加入新項目**本身的項目清單中的連結。  
   
-3.  In the **Employees - New Item** window, in the **Title** box, enter **Facilities Manager**.  
+3.  在**員工-新項目**視窗，請在**標題**方塊中，輸入**設備經理**。  
   
-4.  In the **First Name** box, enter **Andy**.  
+4.  在**名字**方塊中，輸入**Andy**。  
   
-5.  In the **Company** box, type **Contoso**.  
+5.  在**公司**方塊中，輸入**Contoso**。  
   
-6.  Choose the **Save** button, verify that the new item appears in the list, and then close the web browser.  
+6.  選擇**儲存**按鈕，確認新的項目出現在清單中，然後再關閉網頁瀏覽器。  
   
-     Later in this walkthrough, you will use this item to verify that the upgrade deployment step doesn't overwrite the contents of this list.  
+     稍後在本逐步解說中，您將使用此項目，若要確認升級的部署步驟，不會覆寫此清單的內容。  
   
-#### <a name="to-test-the-upgrade-deployment-step"></a>To test the upgrade deployment step  
+#### <a name="to-test-the-upgrade-deployment-step"></a>若要測試升級的部署步驟  
   
-1.  In the experimental instance of Visual Studio, in **Solution Explorer**, open the shortcut menu for the **EmployeesListDefinition** project node, and then choose **Properties**.  
+1.  在 Visual Studio 的實驗執行個體中**方案總管 中**，開啟捷徑功能表**EmployeesListDefinition**專案節點，然後選擇**屬性**.  
   
-     The Properties Editor/Designer opens.  
+     屬性編輯器/設計工具隨即開啟。  
   
-2.  On the **SharePoint** tab, set the **Active Deployment Configuration** property to **Upgrade**.  
+2.  在**SharePoint**索引標籤上，設定**現用部署組態**屬性**升級**。  
   
-     This custom deployment configuration includes the new upgrade deployment step.  
+     這項自訂部署設定包括新的升級部署步驟。  
   
-3.  Open the shortcut menu for the **Employees List** project item, and then choose **Properties** or **Open**.  
+3.  開啟快顯功能表**員工清單**項目、 專案，然後選擇**屬性**或**開啟**。  
   
-     The Properties Editor/Designer opens.  
+     屬性編輯器/設計工具隨即開啟。  
   
-4.  On the **Views** tab, choose the **E-Mail** column, and then choose the **<** key to move that column from the **Selected columns** list to the **Available columns** list.  
+4.  上**檢視**索引標籤上，選擇**電子郵件**資料行，然後選擇   **<** 移動從該資料行的索引鍵**選取的資料行**清單**可用的資料行**清單。  
   
-     This action removes these fields from the default view of the **Employees** list on the SharePoint site.  
+     這個動作會移除這些欄位的預設檢視從**員工**SharePoint 網站上的清單。  
   
-5.  Start debugging by choosing the F5 key or, on the menu bar, choosing **Debug**, **Start Debugging**.  
+5.  開始偵錯方法選擇 F5 鍵，或是在功能表列上，選擇**偵錯**，**開始偵錯**。  
   
-6.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `CanExecute` method.  
+6.  確認 Visual Studio 的其他執行個體中的程式碼是您稍早在設定的中斷點上停止`CanExecute`方法。  
   
-7.  Choose the F5 key again or, on the menu bar, choose **Debug**, **Continue**.  
+7.  再次選擇 F5 鍵，或在功能表列上選擇 **偵錯**，**繼續**。  
   
-8.  Verify that the code stops on the breakpoint that you set earlier in the `Execute` method.  
+8.  請確認程式碼是您稍早在設定的中斷點上停止`Execute`方法。  
   
-9. Choose the F5 key or, on the menu bar, choose **Debug**, **Continue** a final time.  
+9. 選擇 F5 鍵，或在功能表列上選擇 **偵錯**，**繼續**最後一次。  
   
-     The web browser opens the SharePoint site.  
+     網頁瀏覽器會開啟 SharePoint 網站。  
   
-10. In the **Lists** section of the Quick Launch area, choose the **Employees** list, and then verify the following details:  
+10. 在**列出**區段的 快速啟動 區域中，選擇 **員工**清單，並確認下列詳細資料：  
   
-    -   The item that you manually added earlier (for Andy, the facilities manager) is still in the list.  
+    -   您稍早 （針對 Andy 設備經理) 中以手動方式加入的項目是仍在清單中。  
   
-    -   The **Business Phone** and **E-mail Address** columns don't appear in this view of the list.  
+    -   **公司電話**和**電子郵件地址**資料行不會出現在這個檢視的清單。  
   
-     The **Upgrade** deployment configuration modifies the existing **Employees** list instance on the SharePoint site. If you used the **Default** deployment configuration instead of the **Upgrade** configuration, you would encounter a deployment conflict. Visual Studio would resolve the conflict by replacing the **Employees** list, and the item for Andy, the facilities manager, would be deleted.  
+     **升級**部署組態可讓您修改現有**員工**SharePoint 網站上的清單執行個體。 如果您使用**預設**部署組態，而不是**升級**組態中，您會遇到部署衝突。 Visual Studio 會解決此衝突，取代**員工** 清單中，與 Andy，設備管理員 中，項目，就會刪除。  
   
-## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
- After you finish testing the upgrade deployment step, remove the list instance and list definition from the SharePoint site, and remove the deployment step extension from Visual Studio.  
+## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
+ 完成測試升級的部署步驟之後，從 SharePoint 網站中，移除清單執行個體和清單定義，並移除 Visual Studio 中的部署步驟延伸模組。  
   
-#### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>To remove the list instance from the SharePoint site  
+#### <a name="to-remove-the-list-instance-from-the-sharepoint-site"></a>若要移除的清單執行個體從 SharePoint 網站  
   
-1.  Open the **Employees** list on the SharePoint site, if the list isn't already open.  
+1.  開啟**員工**列出 SharePoint 網站上，如果還沒有開啟的清單。  
   
-2.  In the ribbon on the SharePoint site, choose the **List Tools** tab, and then choose the **List** tab.  
+2.  在功能區中的 SharePoint 網站上，選擇 **清單工具**索引標籤，然後選擇 **清單** 索引標籤。  
   
-3.  In the **Settings** group, choose the **List Settings** item.  
+3.  在**設定**群組中，選擇**清單設定**項目。  
   
-4.  Under **Permissions and Management**, choose the **Delete this list** command, choose **OK** to confirm that you want to send the list to the Recycle Bin, and then close the web browser.  
+4.  下**權限與管理**，選擇**刪除這份清單**命令中，選擇**確定**來確認您要將清單傳送至資源回收筒，然後關閉 web瀏覽器。  
   
-#### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>To remove the list definition from the SharePoint site  
+#### <a name="to-remove-the-list-definition-from-the-sharepoint-site"></a>若要從 SharePoint 網站移除清單定義  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Build**, **Retract**.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**建置**， **Retract**。  
   
-     Visual Studio retracts the list definition from the SharePoint site.  
+     Visual Studio 會撤銷從 SharePoint 網站的清單定義。  
   
-#### <a name="to-uninstall-the-extension"></a>To uninstall the extension  
+#### <a name="to-uninstall-the-extension"></a>安裝擴充功能  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**工具**，**擴充功能和更新**。  
   
-     The **Extensions and Updates** dialog box opens.  
+     [擴充功能和更新] 對話方塊隨即開啟。  
   
-2.  In the list of extensions, choose **Upgrade Deployment Step for SharePoint Projects**, and then choose the **Uninstall** command.  
+2.  在 擴充功能的清單中，選擇 **升級 SharePoint 專案的部署步驟**，然後選擇 **解除安裝**命令。  
   
-3.  In the dialog box that appears, choose **Yes** to confirm that you want to uninstall the extension, and then choose **Restart Now** to complete the uninstallation.  
+3.  在出現的對話方塊中，選擇 **是**來確認您要解除安裝擴充功能，然後選擇 **立即重新啟動**完成解除安裝。  
   
-4.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the UpgradeDeploymentStep solution is open).  
+4.  關閉 Visual Studio （實驗性執行個體和 UpgradeDeploymentStep 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
   
-## <a name="see-also"></a>See Also  
- [Extending SharePoint Packaging and Deployment](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
+## <a name="see-also"></a>另請參閱  
+ [擴充 SharePoint 封裝和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)  
   
   

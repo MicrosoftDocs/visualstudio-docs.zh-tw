@@ -1,31 +1,33 @@
 ---
-title: "使用 Excel 的逐步解說"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "逐步解說 [Visual Studio 中的 Office 程式開發]，Excel"
-  - "Excel [Visual Studio 中的 Office 程式開發]，逐步解說"
+title: "Excel 用法逐步解說 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- walkthroughs [Office development in Visual Studio], Excel
+- Excel [Office development in Visual Studio], walkthroughs
 ms.assetid: 0a113292-02e2-4156-b5a2-9bb252f788cd
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 423d7691d76bb9f14fb4cd728d932bc3bb2ddaad
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用 Excel 的逐步解說
-  下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Excel 以及自訂使用者介面 \(UI\) 的方式。  
+# <a name="walkthroughs-using-excel"></a>使用 Excel 的逐步解說
+  下列逐步解說示範您可以使用文件層級自訂和 VSTO 增益集來自動化 Microsoft Office Excel 以及自訂使用者介面 (UI) 的方式。  
   
-## 文件層級逐步解說  
+## <a name="document-level-walkthroughs"></a>文件層級逐步解說  
  [逐步解說：建立 Excel 的第一個文件層級自訂](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)  
  示範如何建立 Excel 的基本文件層級自訂。  
   
@@ -59,11 +61,11 @@ caps.handback.revision: 28
  [逐步解說：將資料繫結至 Excel 執行窗格上的控制項](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)  
  描述如何將繫結至資料來源的控制項新增至 Excel 中的執行窗格。  
   
-## 應用程式層級逐步解說  
+## <a name="application-level-walkthroughs"></a>應用程式層級逐步解說  
  [逐步解說：建立 Excel 的第一個 VSTO 增益集](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)  
  示範如何建立 Excel 的基本 VSTO 增益集。  
   
- [逐步解說：在執行階段於 VSTO 增益集專案中，將控制項加入工作表中](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
+ [逐步解說：在執行階段於 VSTO 增益集專案中，將控制項新增至工作表](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)  
  示範如何使用 VSTO 增益集，將控制項新增至工作表。  
   
  [逐步解說：從 VBA 呼叫 VSTO 增益集的程式碼](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)  
@@ -73,6 +75,6 @@ caps.handback.revision: 28
  示範如何建立使用者按一下功能區上的切換按鈕以隱藏或顯示的自訂工作窗格。  
   
  [逐步解說：VSTO 增益集專案中的複雜資料繫結](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)  
- 示範如何將 SQL Server 資料庫中的資料表繫結至 Excel 之 VSTO 增益集中的 <xref:Microsoft.Office.Tools.Excel.ListObject>。  
+ 示範如何將 SQL Server 資料庫中的資料表繫結至 Excel 之 VSTO 增益集中的 <xref:Microsoft.Office.Tools.Excel.ListObject> 。  
   
   

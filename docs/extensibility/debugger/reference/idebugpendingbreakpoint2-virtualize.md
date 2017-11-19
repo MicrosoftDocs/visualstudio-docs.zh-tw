@@ -1,57 +1,58 @@
 ---
-title: "IDebugPendingBreakpoint2::Virtualize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPendingBreakpoint2::Virtualize"
-helpviewer_keywords: 
-  - "虛擬化方法"
-  - "IDebugPendingBreakpoint2::Virtualize 方法"
+title: "IDebugPendingBreakpoint2::Virtualize |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPendingBreakpoint2::Virtualize
+helpviewer_keywords:
+- Virtualize method
+- IDebugPendingBreakpoint2::Virtualize method
 ms.assetid: 58c8e9a5-4494-47c2-bddb-56f628da6a2d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 93c9b09b7a9356687707837d818b9a603f8961b4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPendingBreakpoint2::Virtualize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-切換虛擬化的狀態的暫止中斷點。  當暫止中斷點虛擬化時，偵錯引擎會嘗試將其繫結，每次新的程式碼載入程式。  
+# <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
+切換這個暫止中斷點虛擬化的狀態。 當為虛擬化的暫止中斷點時，偵錯引擎會嘗試每次新的程式碼載入程式，將它繫結。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Virtualize(   
-   BOOL fVirtualize  
+```cpp  
+HRESULT Virtualize(   
+   BOOL fVirtualize  
 );  
 ```  
   
-```cpp#  
-int Virtualize(   
-   int fVirtualize  
+```cpp  
+int Virtualize(   
+   int fVirtualize  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `fVirtualize`  
- \[in\]設定為非零值 \(`TRUE`\) 要虛擬化的暫止中斷點，或為零 \(`FALSE`\) 若要關閉虛擬化。  
+ [in]設定為非零 (`TRUE`) 虛擬化暫止中斷點，或為零 (`FALSE`) 若要關閉 虛擬化。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  傳回`E_BP_DELETED`如果已刪除中斷點。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。 傳回`E_BP_DELETED`若已刪除中斷點。  
   
-## 備註  
- 每次載入的程式碼，則會繫結虛擬化的中斷點。  
+## <a name="remarks"></a>備註  
+ 每次載入的程式碼時，虛擬化的中斷點會繫結。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CPendingBreakpoint`物件，公開 \(expose\) [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CPendingBreakpoint`公開物件[IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)    
 {    
    HRESULT hr;    
@@ -83,5 +84,5 @@ HRESULT CPendingBreakpoint::Virtualize(BOOL fVirtualize)
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

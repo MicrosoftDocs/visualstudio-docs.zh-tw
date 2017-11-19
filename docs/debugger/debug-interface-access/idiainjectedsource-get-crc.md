@@ -1,43 +1,42 @@
 ---
-title: "IDiaInjectedSource::get_crc | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaInjectedSource::get_crc 方法"
+title: "Idiainjectedsource:: Get_crc |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaInjectedSource::get_crc method
 ms.assetid: 2ecdda93-950e-40d6-b79b-4ae3c55b6cfc
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 34a3f5c0add8085556fd1e8e8efe6bdcaaac79ee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaInjectedSource::get_crc
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取從來源程式碼中的位元組計算的循環冗餘檢查 \(CRC\)。  
+# <a name="idiainjectedsourcegetcrc"></a>IDiaInjectedSource::get_crc
+擷取循環冗餘檢查 (CRC) 計算從來源程式碼的位元組。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_crc (   
-   DWORD* pRetVal  
+```C++  
+HRESULT get_crc (   
+   DWORD* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回的 CRC 的計算方式從來源程式碼中的位元組。  
+ [out]傳回 CRC 計算從來源程式碼的位元組。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。  傳回`S_FALSE`如果這個屬性不受支援。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

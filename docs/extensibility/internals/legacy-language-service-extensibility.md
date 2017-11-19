@@ -1,53 +1,55 @@
 ---
-title: "舊版的語言服務擴充性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "語言服務"
-  - "Visual Studio 中，語言服務"
+title: "舊版語言服務擴充性 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- language services
+- Visual Studio, language services
 ms.assetid: 2700cd4d-5f68-43fc-b62f-dc80c3f3aa85
-caps.latest.revision: 42
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 42
+caps.latest.revision: "42"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a5072aef90e08d645bff2a1bb6800e409e7d2104
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 舊版的語言服務擴充性
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-語言服務提供編輯原始程式碼在 IDE 中的特定語言的支援。  
+# <a name="legacy-language-service-extensibility"></a>舊版語言服務擴充性
+語言服務提供編輯原始程式碼，IDE 中的特定語言的支援。  
   
- 舊版的語言服務會實作成，VSPackage 的一部分，但實作語言服務功能的較新的方法是使用 MEF 延伸模組。 若要了解有關實作語言服務的新方法的詳細資訊，請參閱 [編輯器和語言服務擴充功能](../../extensibility/editor-and-language-service-extensions.md)。  
+ 舊版語言服務會實作成 VSPackage 的一部分，但實作語言服務功能的較新方法是使用 MEF 擴充功能。 若要了解有關實作語言服務的新方法的詳細資訊，請參閱[編輯器和語言服務延伸](../../extensibility/editor-and-language-service-extensions.md)。  
   
- 本節討論的結構與舊版語言服務的實作。  
+ 本節討論的結構與舊版語言服務實作。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [移轉舊版語言服務](../../extensibility/internals/migrating-a-legacy-language-service.md)  
  說明如何更新語言服務從 Visual Studio 2008 的最新版本。  
   
- [舊版的語言服務的基本資訊](../../extensibility/internals/legacy-language-service-essentials.md)  
- 提供有關如何開發整合 Visual Studio 中的程式語言的語言服務的重要資訊。  
+ [舊版語言服務的基本資訊](../../extensibility/internals/legacy-language-service-essentials.md)  
+ 提供有關如何開發整合到 Visual Studio 程式設計語言的語言服務的重要資訊。  
   
- [開發語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)  
- 提供可協助您建立語言服務的主題連結。  
+ [開發舊版語言服務](../../extensibility/internals/developing-a-legacy-language-service.md)  
+ 提供主題連結，可協助您建立語言服務。  
   
- [語法著色在舊版語言服務](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
- 提供有關支援語法反白顯示的語言服務中的資訊。  
+ [舊版語言服務中的語法著色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)  
+ 提供關於支援語法反白顯示語言服務中的資訊。  
   
- [實作傳統語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
- 提供如何使用受管理的封裝架構 \(MPF\)，在 managed 程式碼中實作功能完整的語言服務的相關資訊。  
+ [實作舊版語言服務](../../extensibility/internals/implementing-a-legacy-language-service1.md)  
+ 提供有關如何使用 managed 的 package framework (MPF) 來實作在 managed 程式碼的完整語言服務的資訊。  
   
  [支援符號瀏覽工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)  
- 描述程式庫和工具，可讓您瀏覽樹狀檢視的 IDE 中的符號。  
+ 描述程式庫和工具，可讓您瀏覽樹狀檢視，在 IDE 中的符號。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [編輯器和語言服務擴充功能](../../extensibility/editor-and-language-service-extensions.md)  
  提供 Visual Studio 編輯器的概觀。  
   
  [語言服務支援偵錯](../../extensibility/internals/language-service-support-for-debugging.md)  
- Visual Studio 偵錯 sdk 》，其中包含建立和自訂用來偵錯程式的偵錯工具元件需要的資訊來提供資訊和連結。
+ 提供 Visual Studio 偵錯 SDK，其中包含的資訊，才能建立和自訂用於偵錯程式的偵錯工具元件的相關資訊和連結。

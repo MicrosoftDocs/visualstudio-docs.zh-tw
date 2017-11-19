@@ -1,61 +1,62 @@
 ---
-title: "GUID_ARRAY | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GUID_ARRAY 結構"
+title: "GUID_ARRAY |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: GUID_ARRAY structure
 ms.assetid: 9e12500c-2c1c-49b1-a0ba-e08366c97eb8
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 689285d73881ce4556b859c799a0f923a300d373
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# GUID_ARRAY
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-說明可用的偵錯引擎的唯一識別項的陣列。  
+# <a name="guidarray"></a>GUID_ARRAY
+描述可用的偵錯引擎的唯一識別碼的陣列。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 typedef struct tagGUID_ARRAY  
 {  
-   DWORD dwCount;  
-   GUID *Members;  
+   DWORD dwCount;  
+   GUID *Members;  
 } GUID_ARRAY;  
 ```  
   
-```c#  
+```csharp  
 public struct GUID_ARRAY  
 {  
-   public uint dwCount;  
-   public Guid Members;  
+   public uint dwCount;  
+   public Guid Members;  
 }  
 ```  
   
-## 詞彙  
+## <a name="terms"></a>詞彙  
  dwCount  
- 陣列中的唯一識別項的數目。  
+ 陣列中的唯一識別碼的數目。  
   
- Members  
- 包含唯一識別項的陣列。  
+ 成員  
+ 陣列，其中包含唯一識別碼。  
   
-## 備註  
- 傳回此結構[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法。  
+## <a name="remarks"></a>備註  
+ 這個結構由[GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)方法。  
   
-## 需求  
- 標頭: Msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
  [GetEngineFilter](../../../extensibility/debugger/reference/idebugprocess3-getenginefilter.md)

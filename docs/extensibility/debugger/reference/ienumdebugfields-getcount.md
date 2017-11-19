@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugFields::GetCount | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugFields::GetCount"
-helpviewer_keywords: 
-  - "IEnumDebugFields::GetCount 方法"
+title: "IEnumDebugFields::GetCount |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugFields::GetCount
+helpviewer_keywords: IEnumDebugFields::GetCount method
 ms.assetid: 3f471b40-4db3-49f7-b504-58b2476eef74
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0dbbafda528d88f84f9796037faa6587e8789fcc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugFields::GetCount
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回列舉型別中的項目數。  
+# <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
+這個方法會傳回在列舉中的項目數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetCount(  
-   [out] ULONG* pcelt  
+   [out] ULONG* pcelt  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetCount(  
-   out uint pcelt  
+   out uint pcelt  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pcelt`  
- \[\] out傳回列舉型別中的項目數。  
+ [out]列舉中傳回的項目數。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 這個方法不會指定只有下一步\]、 複製、 跳過及重設必須實作 COM 習慣性列舉型別介面的一部分。  
+## <a name="remarks"></a>備註  
+ 這個方法不是慣用的 COM 列舉介面會指定只有下一步、 複製、 Skip 和重設需要實作的一部分。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

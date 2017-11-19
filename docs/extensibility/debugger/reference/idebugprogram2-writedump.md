@@ -1,56 +1,56 @@
 ---
-title: "IDebugProgram2::WriteDump | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::WriteDump"
-helpviewer_keywords: 
-  - "IDebugProgram2::WriteDump"
+title: "IDebugProgram2::WriteDump |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::WriteDump
+helpviewer_keywords: IDebugProgram2::WriteDump
 ms.assetid: 375afb8c-882d-44db-bfa7-e2c9eb555122
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b68392d94b16f13106e421c5d466e3fbdf4a2b27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::WriteDump
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-寫入檔案傾印。  
+# <a name="idebugprogram2writedump"></a>IDebugProgram2::WriteDump
+寫入傾印至檔案。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT WriteDump(   
-   DUMPTYPE  DumpType,  
-   LPCOLESTR pszDumpUrl  
+```cpp  
+HRESULT WriteDump(   
+   DUMPTYPE  DumpType,  
+   LPCOLESTR pszDumpUrl  
 );  
 ```  
   
-```c#  
-int WriteDump(   
-   enum_DUMPTYPE  DumpType,  
-   string         pszDumpUrl  
+```csharp  
+int WriteDump(   
+   enum_DUMPTYPE  DumpType,  
+   string         pszDumpUrl  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `DumpType`  
- \[in\]介於[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)列舉型別，指定傾印，型別，例如，短或長時間。  
+ [in]中的值[DUMPTYPE](../../../extensibility/debugger/reference/dumptype.md)列舉，指定的傾印，型別，例如、 short 或 long。  
   
  `pszDumpUrl`  
- \[in\]要寫入傾印的 URL。  這通常是在表單中的 `file://c:\path\filename.ext`，不過也可能是任何有效的 URL。  
+ [in]要寫入傾印的 URL。 一般而言，這種形式的`file://c:\path\filename.ext`，但可能是任何有效的 URL。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 目前的堆疊框架、 堆疊本身、 在該程式，而且可能是由程式所擁有的任何記憶體上執行的執行緒的清單，通常會包括程式傾印。  
+## <a name="remarks"></a>備註  
+ 目前的堆疊框架，本身的堆疊、 執行中的程式，可能是由程式擁有的任何記憶體的執行緒清單，通常會包含程式傾印。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

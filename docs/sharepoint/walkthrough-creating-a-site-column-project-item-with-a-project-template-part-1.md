@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1 | Microsoft Docs'
+title: "逐步解說： 使用專案範本建立網站欄專案項目，第 1 部分 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,98 +16,94 @@ helpviewer_keywords:
 - SharePoint projects, creating custom templates
 - SharePoint development in Visual Studio, defining new project item types
 ms.assetid: b53d48d7-cbf2-45c2-9537-06a6819be397
-caps.latest.revision: 60
-author: kempb
-ms.author: kempb
+caps.latest.revision: "60"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: bdd07cb266972a638d064a802b7ec635f6813af8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 1033f33835dfdeefbb4791e356ca50a577b789ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>Walkthrough: Creating a Site Column Project Item with a Project Template, Part 1
-  SharePoint projects are containers for one or more SharePoint project items. You can extend the SharePoint project system in Visual Studio by creating your own SharePoint project item types and then associating them with a project template. In this walkthrough, you will define a project item type for creating a site column, and then you will create a project template that can be used to create a new project that contains a site column project item.  
+# <a name="walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1"></a>逐步解說：使用專案範本建立網站欄專案項目 (第 1 部分)
+  SharePoint 專案的一或多個 SharePoint 專案項目的容器。 您可以擴充 SharePoint 專案系統，在 Visual Studio 中的建立您自己的 SharePoint 專案項目類型，然後將它們產生關聯的專案範本。 在本逐步解說中，您將建立網站資料行定義的專案項目類型，然後您將建立的專案範本，可用來建立新的專案，其中包含網站欄專案項目。  
   
- This walkthrough demonstrates the following tasks:  
+ 本逐步解說將示範下列工作：  
   
--   Creating a Visual Studio extension that defines a new type of SharePoint project item for a site column. The project item type includes a simple custom property that appears in the **Properties** window.  
+-   建立 Visual Studio 擴充功能，可定義新的網站資料行的 SharePoint 專案項目類型。 專案項目類型包括簡單的自訂屬性會出現在**屬性**視窗。  
   
--   Creating a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] project template for the project item.  
+-   建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]專案範本的專案項目。  
   
--   Building a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Extension (VSIX) package to deploy the project template and the extension assembly.  
+-   建置[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝來部署專案範本和延伸模組組件。  
   
--   Debugging and testing the project item.  
+-   偵錯和測試專案項目。  
   
- This is a stand-alone walkthrough. After you complete this walkthrough, you can enhance the project item by adding a wizard to the project template. For more information, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+ 這是獨立的逐步解說。 完成此逐步解說之後，您可以將精靈加入專案範本來增強專案項目。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
 > [!NOTE]  
->  You can download a sample that contains the completed projects, code, and other files for this walkthrough from the following location: [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369).  
+>  您可以下載範例，其中包含已完成的專案、 程式碼和其他檔案對於此逐步解說，請從下列位置： [http://go.microsoft.com/fwlink/?LinkId=191369](http://go.microsoft.com/fwlink/?LinkId=191369)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components on the development computer to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說在開發電腦上：  
   
--   Supported editions of Microsoft Windows, SharePoint and [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的版本的 Microsoft Windows，SharePoint 和[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   The [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. This walkthrough uses the **VSIX Project** template in the SDK to create a VSIX package to deploy the project item. For more information, see [Extending the SharePoint Tools in Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).  
+-   [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本逐步解說使用**VSIX 專案**SDK，以建立 VSIX 封裝，來部署專案項目中的範本。 如需詳細資訊，請參閱[擴充 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。  
   
- Knowledge of the following concept is helpful, but not required, to complete the walkthrough:  
+ 下列概念的知識會很有幫助，但並非必要，完成此逐步解說：  
   
--   Site columns in SharePoint. For more information, see [Columns](http://go.microsoft.com/fwlink/?LinkId=183547).  
+-   在 SharePoint 中的網站資料行。 如需詳細資訊，請參閱[資料行](http://go.microsoft.com/fwlink/?LinkId=183547)。  
   
--   Project templates in Visual Studio. For more information, see [Creating Project and Item Templates](/visualstudio/ide/creating-project-and-item-templates).  
+-   Visual Studio 中的專案範本。 如需詳細資訊，請參閱[建立專案和項目範本](/visualstudio/ide/creating-project-and-item-templates)。  
   
-## <a name="creating-the-projects"></a>Creating the Projects  
- To complete this walkthrough, you need to create three projects:  
+## <a name="creating-the-projects"></a>建立專案  
+ 若要完成此逐步解說，您需要建立三個專案：  
   
--   A VSIX project. This project creates the VSIX package to deploy the site column project item and the project template.  
+-   VSIX 專案。 此專案會建立 VSIX 封裝來部署網站欄專案項目和專案範本。  
   
--   A project template project. This project creates a project template that can be used to create a new SharePoint project that contains the site column project item.  
+-   專案範本專案。 此專案會建立的專案範本，可用來建立新的 SharePoint 專案，其中包含網站欄專案項目。  
   
--   A class library project. This project that implements a Visual Studio extension that defines the behavior of the site column project item.  
+-   類別庫專案。 Visual Studio 擴充功能，定義行為的網站欄專案項目會實作這個專案。  
   
- Start the walkthrough by creating the projects.  
+ 開始本逐步解說建立的專案。  
   
-#### <a name="to-create-the-vsix-project"></a>To create the VSIX project  
+#### <a name="to-create-the-vsix-project"></a>若要建立 VSIX 專案  
   
-1.  Start [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+1.  啟動 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-2.  On the menu bar, choose **File**, **New**, **Project**.  
+2.  在功能表列上，選擇 [檔案] 、[新增] 、[專案] 。  
   
-3.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+3.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-4.  Expand the **Visual Basic** or **Visual C#** nodes, and then choose the **Extensibility** node.  
-  
-    > [!NOTE]  
-    >  The **Extensibility** node is available only if you install the Visual Studio SDK. For more information, see the prerequisites section earlier in this topic.  
-  
-5.  In the list of project templates, choose **VSIX Project**.  
-  
-6.  In the **Name** box, enter **SiteColumnProjectItem**, and then choose the **OK** button.  
-  
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SiteColumnProjectItem** project to **Solution Explorer**.  
-  
-#### <a name="to-create-the-project-template-project"></a>To create the project template project  
-  
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+4.  展開**Visual Basic**或**Visual C#**節點，然後選擇 **擴充性**節點。  
   
     > [!NOTE]  
-    >  In Visual Basic projects, the solution node appears in **Solution Explorer** only when the **Always show solution** check box is selected in the [NIB: General, Projects and Solutions, Options Dialog Box](http://msdn.microsoft.com/en-us/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+    >  **擴充性**節點才會提供您安裝 Visual Studio SDK。 如需詳細資訊，請參閱稍早在本主題中的必要條件 > 一節。  
   
-2.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+5.  在專案範本清單中選擇**VSIX 專案**。  
   
-3.  Expand the **Visual C#** or **Visual Basic** node, and then choose the **Extensibility** node.  
+6.  在**名稱**方塊中，輸入**SiteColumnProjectItem**，然後選擇 [**確定**] 按鈕。  
   
-4.  In the list of project templates, choose the **C# Project Template** or **Visual Basic Project Template** template.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SiteColumnProjectItem**專案加入**方案總管 中**。  
   
-5.  In the **Name** box, enter **SiteColumnProjectTemplate**, and then choose the **OK** button.  
+#### <a name="to-create-the-project-template-project"></a>若要建立專案範本  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **SiteColumnProjectTemplate** project to the solution.  
+1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-6.  Delete the Class1 code file from the project.  
+2.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-7.  If you created a Visual Basic project, also delete the following files from the project:  
+3.  展開**Visual C#**或**Visual Basic** ] 節點，然後選擇 [**擴充性**節點。  
+  
+4.  在專案範本清單中選擇**C# 專案範本**或**Visual Basic 專案範本**範本。  
+  
+5.  在**名稱**方塊中，輸入**SiteColumnProjectTemplate**，然後選擇 [**確定**] 按鈕。  
+  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**SiteColumnProjectTemplate**專案加入方案。  
+  
+6.  從專案刪除 Class1 的程式碼檔案。  
+  
+7.  如果您建立 Visual Basic 專案，也從專案刪除下列檔案：  
   
     -   MyApplication.Designer.vb  
   
@@ -123,70 +117,71 @@ ms.lasthandoff: 08/30/2017
   
     -   Settings.settings  
   
-#### <a name="to-create-the-extension-project"></a>To create the extension project  
+#### <a name="to-create-the-extension-project"></a>若要建立擴充功能專案  
   
-1.  In **Solution Explorer**, open the shortcut menu for the solution node, choose **Add**, and then choose **New Project**.  
+1.  在**方案總管] 中**，開啟 [解決方案] 節點的捷徑功能表，選擇**新增**，然後選擇 [**新專案**。  
   
-2.  At the top of the **New Project** dialog box, make sure that **.NET Framework 4.5** is chosen in the list of versions of the .NET Framework.  
+2.  在頂端**新專案**對話方塊方塊中，請確定**.NET Framework 4.5**選擇清單中的.NET Framework 版本。  
   
-3.  Expand the **Visual C#** or **Visual Basic** nodes, choose the **Windows** node, and then choose the **Class Library** template.  
+3.  展開**Visual C#**或**Visual Basic**節點，並選擇**Windows** ] 節點，然後選擇 [**類別庫**範本。  
   
-4.  In the **Name** box, enter **ProjectItemTypeDefinition** and then choose the **OK** button.  
+4.  在**名稱**方塊中，輸入**ProjectItemTypeDefinition** ，然後選擇 [**確定**] 按鈕。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adds the **ProjectItemTypeDefinition** project to the solution and opens the default Class1 code file.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]新增**ProjectItemTypeDefinition**專案加入方案，並開啟預設 Class1 的程式碼檔。  
   
-5.  Delete the Class1 code file from the project.  
+5.  從專案刪除 Class1 的程式碼檔案。  
   
-## <a name="configuring-the-extension-project"></a>Configuring the Extension Project  
- Add code files and assembly references to configure the extension project.  
+## <a name="configuring-the-extension-project"></a>設定擴充功能專案  
+ 加入程式碼檔案和設定擴充功能專案中的組件參考。  
   
-#### <a name="to-configure-the-project"></a>To configure the project  
+#### <a name="to-configure-the-project"></a>若要設定專案  
   
-1.  In the ProjectItemTypeDefinition project, add a code file that's named **SiteColumnProjectItemTypeProvider**.  
+1.  在 ProjectItemTypeDefinition 專案，加入名為的程式碼檔案**SiteColumnProjectItemTypeProvider**。  
   
-2.  On the menu bar, choose **Project**, **Add Reference**.  
+2.  在功能表列上，依序選擇 [專案] 和 [加入參考]。  
   
-3.  In the **Reference Manager - ProjectItemTypeDefinition** dialog box, expand the **Assemblies** node, choose the **Framework** node, and then select the System.ComponentModel.Composition check box.  
+3.  在**參考管理員-ProjectItemTypeDefinition**對話方塊方塊中，展開 [**組件**] 節點，選擇**Framework**節點，然後再選取System.ComponentModel.Composition 核取方塊。  
   
-4.  Choose the **Extensions** node, select the check box next to the Microsoft.VisualStudio.SharePoint assembly, and then choose the **OK** button.  
+4.  選擇**延伸** 節點，選取 Microsoft.VisualStudio.SharePoint 組件旁邊的核取方塊，然後選擇**確定** 按鈕。  
   
-## <a name="defining-the-new-sharepoint-project-item-type"></a>Defining the New SharePoint Project Item Type  
- Create a class that implements the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface to define the behavior of the new project item type. Implement this interface whenever you want to define a new type of project item.  
+## <a name="defining-the-new-sharepoint-project-item-type"></a>定義新的 SharePoint 專案項目類型  
+ 建立類別，實作<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>介面來定義新的專案項目類型的行為。 每當您想要定義新的專案項目類型時，請實作這個介面。  
   
-#### <a name="to-define-the-new-sharepoint-project-item-type"></a>To define the new SharePoint project item type  
+#### <a name="to-define-the-new-sharepoint-project-item-type"></a>若要定義新的 SharePoint 專案項目類型  
   
-1.  In the **SiteColumnProjectItemTypeProvider** code file, replace the default code with the following code, and then save the file.  
+1.  在**SiteColumnProjectItemTypeProvider**程式碼檔案，以下列程式碼，取代預設程式碼並儲存檔案。  
   
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]  [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]  
+     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
+     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]  
   
-## <a name="creating-a-visual-studio-project-template"></a>Creating a Visual Studio Project Template  
- By creating a project template, you enable other developers to create SharePoint projects that contain site column project items. A SharePoint project template includes files that are required for all projects in Visual Studio, such as .csproj or .vbproj and .vstemplate files, and files that are specific to SharePoint projects. For more information, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+## <a name="creating-a-visual-studio-project-template"></a>建立 Visual Studio 專案範本  
+ 藉由建立專案範本，您可以啟用其他開發人員建立網站欄專案項目所含的 SharePoint 專案。 SharePoint 專案範本包含所需的所有專案在 Visual Studio 中，例如.csproj 或.vbproj 和.vstemplate 檔案和檔案的 SharePoint 專案特定的檔案。 如需詳細資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
- In this procedure, you create an empty SharePoint project to generate the files that are specific to SharePoint projects. You then add these files to the SiteColumnProjectTemplate project so that they're included in the template that's generated from this project. You also configure the SiteColumnProjectTemplate project file to specify where the project template appears in the **New Project** dialog box.  
+ 在此程序，您可以建立空白的 SharePoint 專案來產生 SharePoint 專案特定的檔案。 您再將這些檔案加入 SiteColumnProjectTemplate 專案，如此，它們是從這個專案會產生的範本。 您也可以設定 SiteColumnProjectTemplate 專案檔，以指定的專案範本出現在**新專案** 對話方塊。  
   
-#### <a name="to-create-the-files-for-the-project-template"></a>To create the files for the project template  
+#### <a name="to-create-the-files-for-the-project-template"></a>若要建立專案範本的檔案  
   
-1.  Start a second instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] with administrative credentials.  
+1.  開始的第二個執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]具有系統管理認證。  
   
-2.  Create a SharePoint 2010 project that's named **BaseSharePointProject**.  
+2.  建立名為 SharePoint 2010 專案**BaseSharePointProject**。  
   
     > [!IMPORTANT]  
-    >  In the **SharePoint Customization Wizard**, don't select the **Deploy as a farm solution** option button.  
+    >  在**SharePoint 自訂精靈**，不要選取**部署為伺服陣列方案**選項按鈕。  
   
-3.  Add an Empty Element item to the project, and then name the item **Field1**.  
+3.  空白項目項目加入專案，然後項目**Field1**。  
   
-4.  Save the project, and then close the second instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+4.  儲存專案，然後關閉 第二個執行個體[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-5.  In the instance of [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] that has the SiteColumnProjectItem solution open, in **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project node, choose **Add**, and then choose **Existing Item**.  
+5.  執行個體中[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在具有 SiteColumnProjectItem 方案開啟、**方案總管] 中**，開啟捷徑功能表**SiteColumnProjectTemplate**專案節點、 選擇**新增**，然後選擇 [**現有項目**。  
   
-6.  In the **Add Existing Item** dialog box, open the list of file extensions, and then choose **All Files (\*.\*)**.  
+6.  在**加入現有項目**對話方塊中，開啟檔案的副檔名清單，然後選擇**所有檔案 (\*。\*)**.  
   
-7.  In the directory that contains the BaseSharePointProject project, select the key.snk file, and then choose the **Add** button.  
+7.  在包含 BaseSharePointProject 專案目錄中，選取 key.snk 檔案，然後選擇**新增** 按鈕。  
   
     > [!NOTE]  
-    >  In this walkthrough, the project template that you create uses the same key.snk file to sign each project that's created by using the template. To learn how to expand this sample to create a different key.snk file for each project instance, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+    >  在本逐步解說中，您所建立的專案範本會使用相同的 key.snk 檔案簽署使用範本建立的每個專案。 若要深入了解如何擴充這個範例，以建立不同的 key.snk 檔案以供每個專案的執行個體，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-8.  Repeat steps 5-8 to add the following files from the specified subfolders in the BaseSharePointProject directory:  
+8.  重複步驟 5 至 8 BaseSharePointProject 目錄中指定的子資料夾將下列檔案：  
   
     -   \Field1\Elements.xml  
   
@@ -200,21 +195,21 @@ ms.lasthandoff: 08/30/2017
   
     -   \Package\Package.Template.xml  
   
-     Add these files directly to the SiteColumnProjectTemplate project; don't recreate the Field1, Features, or Package subfolders in the project. For more information about these files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     將這些檔案直接加入 SiteColumnProjectTemplate 專案;不重新建立專案中的 Field1、 功能或封裝的子資料夾。 如需有關這些檔案的詳細資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
-#### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>To configure how developers discover the project template in the New Project dialog box  
+#### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>若要設定開發人員如何探索新的專案 對話方塊中的專案範本  
   
-1.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project node, and then choose **Unload Project**. If you are prompted to save changes to any files, choose the **Yes** button.  
+1.  在**方案總管 中**，開啟捷徑功能表**SiteColumnProjectTemplate**專案節點，然後選擇**卸載專案**。 如果提示您將變更儲存至任何檔案時，請選擇**是** 按鈕。  
   
-2.  Open the shortcut menu for the **SiteColumnProjectTemplate** node again, and then choose **Edit SiteColumnProjectTemplate.csproj** or **Edit SiteColumnProjectTemplate.vbproj**.  
+2.  開啟快顯功能表**SiteColumnProjectTemplate**節點，然後選擇 **編輯 SiteColumnProjectTemplate.csproj**或**編輯 SiteColumnProjectTemplate.vbproj**.  
   
-3.  In the project file, locate the following `VSTemplate` element.  
+3.  在專案檔中，找出下列`VSTemplate`項目。  
   
     ```  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
     ```  
   
-4.  Replace this element with the following XML.  
+4.  以下列 XML 取代此項目。  
   
     ```  
     <VSTemplate Include="SiteColumnProjectTemplate.vstemplate">  
@@ -222,16 +217,16 @@ ms.lasthandoff: 08/30/2017
     </VSTemplate>  
     ```  
   
-     The `OutputSubPath` element specifies additional folders in the path under which the project template is created when you build the project. The folders specified here ensure that the project template will be available only when customers open the **New Project** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
+     `OutputSubPath`項目會指定其他資料夾中建置專案時，專案範本建立所在的路徑。 此處指定的資料夾，確保專案範本會可用，只有當客戶**新專案**對話方塊方塊中，展開  **SharePoint**  節點，然後選擇  **2010年**節點。  
   
-5.  Save and close the file.  
+5.  儲存並關閉檔案。  
   
-6.  In **Solution Explorer**, open the shortcut menu for the **SiteColumnProjectTemplate** project, and then choose **Reload Project**.  
+6.  在**方案總管 中**，開啟捷徑功能表**SiteColumnProjectTemplate**專案，然後再選擇**重新載入專案**。  
   
-## <a name="editing-the-project-template-files"></a>Editing the Project Template Files  
- In the SiteColumnProjectTemplate project, edit the following files to define the behavior of the project template:  
+## <a name="editing-the-project-template-files"></a>編輯專案範本檔案  
+ 在 SiteColumnProjectTemplate 專案中，編輯下列檔案，以定義專案範本的行為：  
   
--   AssemblyInfo.cs or AssemblyInfo.vb  
+-   AssemblyInfo.cs 或 AssemblyInfo.vb  
   
 -   Elements.xml  
   
@@ -239,17 +234,17 @@ ms.lasthandoff: 08/30/2017
   
 -   Feature1.feature  
   
--   Package.package  
+-   中  
   
 -   SiteColumnProjectTemplate.vstemplate  
   
--   ProjectTemplate.csproj or ProjectTemplate.vbproj  
+-   ProjectTemplate.csproj 或 ProjectTemplate.vbproj  
   
- In the following procedures, you'll add replaceable parameters to some of these files. A replaceable parameter is a token that starts and ends with the dollar sign ($) character. When a user uses this project template to create a project, Visual Studio automatically replaces these parameters in the new project with specific values. For more information, see [Replaceable Parameters](../sharepoint/replaceable-parameters.md).  
+ 在下列程序中，您會加入至這當中有些檔案的可置換的參數。 可取代的參數是權杖的開始和結束都貨幣符號 （$） 字元。 當使用者使用這個專案範本建立專案時，Visual Studio 會自動取代新的專案中的這些參數具有特定值。 如需詳細資訊，請參閱[可置換的參數](../sharepoint/replaceable-parameters.md)。  
   
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>To edit the AssemblyInfo.cs or AssemblyInfo.vb file  
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>若要編輯的 AssemblyInfo.cs 或 AssemblyInfo.vb 檔案  
   
-1.  In the SiteColumnProjectTemplate project, open the AssemblyInfo.cs or AssemblyInfo.vb file, and then add the following statement to the top of it:  
+1.  在 SiteColumnProjectTemplate 專案中，開啟 AssemblyInfo.cs 或 AssemblyInfo.vb 檔案，並將加入下列陳述式的頂端：  
   
     ```vb  
     Imports System.Security  
@@ -259,13 +254,13 @@ ms.lasthandoff: 08/30/2017
     using System.Security;  
     ```  
   
-     When the **Sandboxed Solution** property of a SharePoint project is set to **True**, Visual Studio adds the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> to the AssemblyInfo code file. However, the AssemblyInfo code file in the project template doesn't import the <xref:System.Security> namespace by default. You must add this **using** or **Imports** statement to prevent compile errors.  
+     當**沙箱化方案**SharePoint 專案的屬性設定為**True**，Visual Studio 會加入<xref:System.Security.AllowPartiallyTrustedCallersAttribute>AssemblyInfo 程式碼檔案。 不過，不會匯入 AssemblyInfo 程式碼檔案中的專案範本<xref:System.Security>預設命名空間。 您必須將這個加入**使用**或**匯入**陳述式，以避免編譯錯誤。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-elementsxml-file"></a>To edit the Elements.xml file  
+#### <a name="to-edit-the-elementsxml-file"></a>若要編輯的 Elements.xml 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the Elements.xml file with the following XML.  
+1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Elements.xml 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -279,13 +274,13 @@ ms.lasthandoff: 08/30/2017
     </Elements>  
     ```  
   
-     The new XML adds a `Field` element that defines the name of the site column, its base type, and the group in which to list the site column in the gallery. For more information about the contents of this file, see [Field Definition Schema](http://go.microsoft.com/fwlink/?LinkId=184290).  
+     加入新的 XML`Field`定義的網站資料行、 其基底類型和要列出網站中的資料行組件庫中的群組名稱的項目。 這個檔案的內容的相關資訊，請參閱[欄位定義結構描述](http://go.microsoft.com/fwlink/?LinkId=184290)。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>To edit the SharePointProjectItem.spdata file  
+#### <a name="to-edit-the-sharepointprojectitemspdata-file"></a>若要編輯 SharePointProjectItem.spdata 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the SharePointProjectItem.spdata file with the following XML.  
+1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 SharePointProjectItem.spdata 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -297,19 +292,19 @@ ms.lasthandoff: 08/30/2017
     </ProjectItem>  
     ```  
   
-     The new XML makes the following changes to the file:  
+     新的 XML 會對檔案進行下列變更：  
   
-    -   Changes the `Type` attribute of the `ProjectItem` element to the same string that's passed to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> on the project item definition (the `SiteColumnProjectItemTypeProvider` class that you created earlier in this walkthrough).  
+    -   變更`Type`屬性`ProjectItem`項目相同的字串傳遞至<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>專案項目定義上 (`SiteColumnProjectItemTypeProvider`您稍早在本逐步解說中建立的類別)。  
   
-    -   Removes the `SupportedTrustLevels` and `SupportedDeploymentScopes` attributes from the `ProjectItem` element. These attribute values are unnecessary because the trust levels and deployment scopes are specified in the `SiteColumnProjectItemTypeProvider` class in the ProjectItemTypeDefinition project.  
+    -   移除`SupportedTrustLevels`和`SupportedDeploymentScopes`屬性從`ProjectItem`項目。 這些屬性的值是不必要的因為在指定的信任層級和部署範圍`SiteColumnProjectItemTypeProvider`ProjectItemTypeDefinition 專案中的類別。  
   
-     For more information about the contents of .spdata files, see [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md).  
+     .Spdata 檔案的內容的相關資訊，請參閱[SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-feature1feature-file"></a>To edit the Feature1.feature file  
+#### <a name="to-edit-the-feature1feature-file"></a>若要編輯 Feature1.feature 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the Feature1.feature file with the following XML.  
+1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Feature1.feature 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -323,19 +318,19 @@ ms.lasthandoff: 08/30/2017
     </feature>  
     ```  
   
-     The new XML makes the following changes to the file:  
+     新的 XML 會對檔案進行下列變更：  
   
-    -   Changes the values of the `Id` and `featureId` attributes of the `feature` element to `$guid4$`.  
+    -   值變更`Id`和`featureId`屬性`feature`元素`$guid4$`。  
   
-    -   Changes the values of the `itemId` attribute of the `projectItemReference` element to `$guid2$`.  
+    -   值變更`itemId`屬性`projectItemReference`元素`$guid2$`。  
   
-     For more information about .feature files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     如需.feature 檔案的詳細資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-packagepackage-file"></a>To edit the Package.package file  
+#### <a name="to-edit-the-packagepackage-file"></a>若要編輯 Package.package 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the Package.package file with the following XML.  
+1.  在 SiteColumnProjectTemplate 專案中，請以下列 XML 取代 Package.package 檔案的內容。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -348,21 +343,21 @@ ms.lasthandoff: 08/30/2017
     </package>  
     ```  
   
-     The new XML makes the following changes to the file:  
+     新的 XML 會對檔案進行下列變更：  
   
-    -   Changes the values of the `Id` and `solutionId` attributes of the `package` element to `$guid3$`.  
+    -   值變更`Id`和`solutionId`屬性`package`元素`$guid3$`。  
   
-    -   Changes the values of the `itemId` attribute of the `featureReference` element to `$guid4$`.  
+    -   值變更`itemId`屬性`featureReference`元素`$guid4$`。  
   
-     For more information about .package files, see [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).  
+     如需.package 檔案的詳細資訊，請參閱[建立項目範本和專案範本，為 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>To edit the SiteColumnProjectTemplate.vstemplate file  
+#### <a name="to-edit-the-sitecolumnprojecttemplatevstemplate-file"></a>若要編輯 SiteColumnProjectTemplate.vstemplate 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the SiteColumnProjectTemplate.vstemplate file with one of the following sections of XML.  
+1.  在 SiteColumnProjectTemplate 專案中，取代 SiteColumnProjectTemplate.vstemplate 檔案的內容的下列區段的 XML。  
   
-    -   If you're creating a Visual C# project template, use the following XML.  
+    -   如果您要建立 Visual C# 專案範本，請使用下列 XML。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -398,7 +393,7 @@ ms.lasthandoff: 08/30/2017
     </VSTemplate>  
     ```  
   
-    -   If you're creating a Visual Basic project template, use the following XML.  
+    -   如果您要建立 Visual Basic 專案範本，請使用下列 XML。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -434,23 +429,23 @@ ms.lasthandoff: 08/30/2017
     </VSTemplate>  
     ```  
   
-     The new XML makes the following changes to the file:  
+     新的 XML 會對檔案進行下列變更：  
   
-    -   Sets the `Name` element to the value **Site Column**. (This name appears in the **New Project** dialog box).  
+    -   設定`Name`值的項目**網站資料行**。 (這個名稱會出現在**新專案**對話方塊)。  
   
-    -   Adds `ProjectItem` elements for each filethat's included in each project instance.  
+    -   新增`ProjectItem`filethat 每個元素的包含在每個專案的執行個體。  
   
-    -   Uses the namespace "http://schemas.microsoft.com/developer/vstemplate/2005". Other project files in this solution use the "http://schemas.microsoft.com/developer/msbuild/2003" namespace. Therefore, XML schema warning messages will be generated, but you can disregard them in this walkthrough.  
+    -   使用命名空間"http://schemas.microsoft.com/developer/vstemplate/2005"。 這個方案中的其他專案檔案會使用 「 http://schemas.microsoft.com/developer/msbuild/2003"命名空間。 因此，將會產生 XML 結構描述警告訊息，但是您可以忽略這些在本逐步解說。  
   
-     For more information about the contents of .vstemplate files, see [Visual Studio Template Schema Reference](/visualstudio/extensibility/visual-studio-template-schema-reference).  
+     這個.vstemplate 檔案的內容的相關資訊，請參閱[Visual Studio 範本結構描述參考](/visualstudio/extensibility/visual-studio-template-schema-reference)。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-#### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>To edit the ProjectTemplate.csproj or ProjectTemplate.vbproj file  
+#### <a name="to-edit-the-projecttemplatecsproj-or-projecttemplatevbproj-file"></a>若要編輯的 ProjectTemplate.csproj 或 ProjectTemplate.vbproj 檔案  
   
-1.  In the SiteColumnProjectTemplate project, replace the contents of the ProjectTemplate.csproj file or ProjectTemplate.vbproj file with one of the following sections of XML.  
+1.  在 SiteColumnProjectTemplate 專案中，取代 ProjectTemplate.csproj 檔案或 ProjectTemplate.vbproj 檔案的內容的下列區段的 XML。  
   
-    -   If you're creating a Visual C# project template, use the following XML.  
+    -   如果您要建立 Visual C# 專案範本，請使用下列 XML。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -530,7 +525,7 @@ ms.lasthandoff: 08/30/2017
     </Project>  
     ```  
   
-    1.  If you're creating a Visual Basic project template, use the following XML.  
+    1.  如果您要建立 Visual Basic 專案範本，請使用下列 XML。  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -629,145 +624,145 @@ ms.lasthandoff: 08/30/2017
     </Project>  
     ```  
   
-     The new XML makes the following changes to the file:  
+     新的 XML 會對檔案進行下列變更：  
   
-    -   Uses the `TargetFrameworkVersion` element to specify the .NET Framework 3.5, not 4.5.  
+    -   使用`TargetFrameworkVersion`項目來指定.NET Framework 3.5，而非 4.5。  
   
-    -   Adds `SignAssembly` and `AssemblyOriginatorKeyFile` elements to sign the project output.  
+    -   新增`SignAssembly`和`AssemblyOriginatorKeyFile`来簽署專案輸出項目。  
   
-    -   Adds `Reference` elements for assembly references that SharePoint projects use.  
+    -   新增`Reference`的組件元素參考 SharePoint 專案使用。  
   
-    -   Adds elements for each default file in the project, such as Elements.xml and SharePointProjectItem.spdata.  
+    -   在專案中，例如 Elements.xml 和 SharePointProjectItem.spdata 加入每個預設檔案的項目。  
   
-2.  Save and close the file.  
+2.  儲存並關閉檔案。  
   
-## <a name="creating-a-vsix-package-to-deploy-the-project-template"></a>Creating a VSIX Package to Deploy the Project Template  
- To deploy the extension, use the VSIX project in the **SiteColumnProjectItem** solution to create a VSIX package. First, configure the VSIX package by modifying the source.extension.vsixmanifest file that is included in the VSIX project. Then, create the VSIX package by building the solution.  
+## <a name="creating-a-vsix-package-to-deploy-the-project-template"></a>建立 VSIX 封裝，來部署專案範本  
+ 若要部署擴充功能，使用中的 VSIX 專案**SiteColumnProjectItem**方案以建立 VSIX 封裝。 首先，設定 VSIX 封裝，藉由修改 source.extension.vsixmanifest 檔案中包含在 VSIX 專案。 建立方案，然後建立 VSIX 封裝。  
   
-#### <a name="to-configure-and-create-the-vsix-package"></a>To configure and create the VSIX package  
+#### <a name="to-configure-and-create-the-vsix-package"></a>若要設定，並建立 VSIX 封裝  
   
-1.  In **Solution Explorer**, in the **SiteColumnProjectItem** project, open the source.extension.vsixmanifest file in the manifest editor.  
+1.  在**方案總管 中**，請在**SiteColumnProjectItem**專案中，資訊清單編輯器 中，開啟 source.extension.vsixmanifest 檔案。  
   
-     The source.extension.vsixmanifest file is the basis for the extension.vsixmanifest file that all VSIX packages require. For more information about this file, see [VSIX Extension Schema 1.0 Reference](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+     Source.extension.vsixmanifest 檔案是所有的 VSIX 套件需要 extension.vsixmanifest 檔案的基礎。 如需有關這個檔案的詳細資訊，請參閱[VSIX 擴充功能結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)。  
   
-2.  In the **Product Name** box, enter **Site Column**.  
+2.  在**產品名稱**方塊中，輸入**網站資料行**。  
   
-3.  In the **Author** box, enter **Contoso**.  
+3.  在**作者**方塊中，輸入**Contoso**。  
   
-4.  In the **Description** box, enter **A SharePoint project for creating site columns**.  
+4.  在**描述**方塊中，輸入**用來建立網站資料行的 SharePoint 專案**。  
   
-5.  Choose the **Assets** tab, and then choose the **New** button.  
+5.  選擇**資產**索引標籤，然後選擇 [**新增**] 按鈕。  
   
-     The **Add New Asset** dialog box opens.  
+     **加入新資產**對話方塊隨即開啟。  
   
-6.  In the **Type** list, choose **Microsoft.VisualStudio.ProjectTemplate**.  
-  
-    > [!NOTE]  
-    >  This value corresponds to the `ProjectTemplate` element in the extension.vsixmanifest file. This element identifies the subfolder in the VSIX package that contains the project template. For more information, see [NIB: ProjectTemplate Element (VSX Schema)](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1).  
-  
-7.  In the **Source** list, choose **A project in current solution**.  
-  
-8.  In the **Project** list, and choose **SiteColumnProjectTemplate**, and then choose the **OK** button.  
-  
-9. Choose the **New** button again.  
-  
-     The **Add New Asset** dialog box opens.  
-  
-10. In the **Type** list, choose **Microsoft.VisualStudio.MefComponent**.  
+6.  在**類型**清單中，選擇**Microsoft.VisualStudio.ProjectTemplate**。  
   
     > [!NOTE]  
-    >  This value corresponds to the `MefComponent` element in the extension.vsixmanifest file. This element specifies the name of an extension assembly in the VSIX package. For more information, see [NIB: MEFComponent Element (VSX Schema)](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551).  
+    >  這個值會對應到`ProjectTemplate`extension.vsixmanifest 檔案中的項目。 此項目會識別的子資料夾中包含的專案範本的 VSIX 套件。 如需詳細資訊，請參閱[ProjectTemplate 元素 （VSX 結構描述）](http://msdn.microsoft.com/en-us/87add64c-9dcd-495f-8815-209dab182cb1)。  
   
-11. In the **Source** list, choose **A project in current solution**.  
+7.  在**來源**清單中，選擇**目前方案中的專案**。  
   
-12. In the **Project** list, choose **ProjectItemTypeDefinition**, and then choose the **OK** button.  
+8.  在**專案**清單，並選擇**SiteColumnProjectTemplate**，然後選擇 [**確定**] 按鈕。  
   
-13. On the menu bar, choose **Build**, **Build Solution**, and then make sure that the project compiles without errors.  
+9. 選擇**新增**按鈕一次。  
   
-## <a name="testing-the-project-template"></a>Testing the Project Template  
- You are now ready to test the project template. First, start debugging the SiteColumnProjectItem solution in the experimental instance of Visual Studio. Then, test the **Site Column** project in the experimental instance of Visual Studio. Finally, build and run the SharePoint project to verify that the site column works as expected.  
+     **加入新資產**對話方塊隨即開啟。  
   
-#### <a name="to-start-debugging-the-solution"></a>To start debugging the solution  
+10. 在**類型**清單中，選擇**Microsoft.VisualStudio.MefComponent**。  
   
-1.  Restart Visual Studio with administrative credentials, and then open the SiteColumnProjectItem solution.  
+    > [!NOTE]  
+    >  這個值會對應到`MefComponent`extension.vsixmanifest 檔案中的項目。 這個項目 VSIX 封裝中指定延伸模組組件的名稱。 如需詳細資訊，請參閱[MEFComponent 元素 （VSX 結構描述）](http://msdn.microsoft.com/en-us/8a813141-8b73-44c9-b80b-ca85bbac9551)。  
+  
+11. 在**來源**清單中，選擇**目前方案中的專案**。  
+  
+12. 在**專案**清單中，選擇**ProjectItemTypeDefinition**，然後選擇 [**確定**] 按鈕。  
+  
+13. 在功能表列上選擇 **建置**，**建置方案**，然後確認專案編譯無誤。  
+  
+## <a name="testing-the-project-template"></a>測試專案範本  
+ 現在您已經準備好進行測試的專案範本。 首先，開始偵錯 SiteColumnProjectItem 方案在 Visual Studio 的實驗執行個體。 然後，測試**網站資料行**Visual Studio 的實驗執行個體中的專案。 最後，建置並執行 SharePoint 專案，以確認站台的資料行可以正常運作。  
+  
+#### <a name="to-start-debugging-the-solution"></a>若要啟動偵錯方案  
+  
+1.  系統管理認證，以重新啟動 Visual Studio，然後開啟 SiteColumnProjectItem 方案。  
   
 2.  
   
-3.  In the SiteColumnProjectItemTypeProvider code file, add a breakpoint to the first line of code in the `InitializeType` method, and then choose the **F5** key to start debugging.  
+3.  在 SiteColumnProjectItemTypeProvider 程式碼檔案中，將中斷點加入至程式碼中的第一行`InitializeType`方法，然後選擇  **F5**鍵開始偵錯。  
   
-     Visual Studio installs the extension to %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0 and starts an experimental instance of Visual Studio. You will test the project item in this instance of Visual Studio.  
+     Visual Studio %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0 來安裝擴充功能，並啟動 Visual studio 的實驗執行個體。 您將這個執行個體的 Visual Studio 中測試的專案項目。  
   
-#### <a name="to-test-the-project-in-visual-studio"></a>To test the project in Visual Studio  
+#### <a name="to-test-the-project-in-visual-studio"></a>在 Visual Studio 測試專案  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **File**, **New**, **Project**.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**檔案**，**新增**，**專案**。  
   
-2.  Expand the **Visual C#** or **Visual Basic** node (depending on the language that your project template supports), expand the **SharePoint** node, and then choose the **2010** node.  
+2.  展開**Visual C#**或**Visual Basic**節點 （取決於您的專案範本支援語言），依序展開**SharePoint** ] 節點，然後選擇 [ **2010年**節點。  
   
-3.  In the list of project templates, choose the **Site Column** template.  
+3.  在專案範本清單中選擇**網站資料行**範本。  
   
-4.  In the **Name** box, enter **SiteColumnTest** and then choose the **OK** button.  
+4.  在**名稱**方塊中，輸入**SiteColumnTest** ，然後選擇 [**確定**] 按鈕。  
   
-     In **Solution Explorer**, a new project appears with a project item that's named **Field1**.  
+     在**方案總管 中**，新的專案隨即出現，並命名為專案項目**Field1**。  
   
-5.  Verify that the code in the other instance of Visual Studio stops on the breakpoint that you set earlier in the `InitializeType` method, and then choose the **F5** key to continue to debug the project.  
+5.  確認 Visual Studio 的其他執行個體中的程式碼是您稍早在設定的中斷點上停止`InitializeType`方法，然後選擇  **F5**鍵繼續偵錯專案。  
   
-6.  In **Solution Explorer**, choose the **Field1** node, and then choose the **F4** key.  
+6.  在**方案總管 中**，選擇**Field1**  節點，然後選擇  **F4**索引鍵。  
   
-     The **Properties** window opens.  
+     **屬性**視窗隨即開啟。  
   
-7.  In the properties list, verify that the property **Example Property** appears.  
+7.  在 [屬性] 清單中，確認屬性**範例屬性**隨即出現。  
   
-#### <a name="to-test-the-site-column-in-sharepoint"></a>To test the site column in SharePoint  
+#### <a name="to-test-the-site-column-in-sharepoint"></a>若要在 SharePoint 中測試網站資料行  
   
-1.  In **Solution Explorer**, choose the **SiteColumnTest** node.  
+1.  在**方案總管 中**，選擇**SiteColumnTest**節點。  
   
-2.  In the **Properties** window, in the text box that's next to the **Site URL** property, enter **http://localhost**.  
+2.  在**屬性**視窗中，旁邊的文字方塊中**網站 URL**屬性中，輸入**http://localhost**。  
   
-     This step specifies the local SharePoint site on the development computer that you want to use for debugging.  
-  
-    > [!NOTE]  
-    >  The **Site URL** property is empty by default because the Site Column project template doesn't provide a wizard for collecting this value when the project is created. To learn how to add a wizard that asks the developer for this value and then configures this property in the new project, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
-  
-3.  Choose the **F5** key.  
-  
-     The site column is packaged and deployed to the SharePoint site that's specified in the **Site URL** property of the project. The web browser opens to the default page of this site.  
+     此步驟會指定您想要用於偵錯在開發電腦上之本機 SharePoint 網站。  
   
     > [!NOTE]  
-    >  If the **Script Debugging Disabled** dialog box appears, choose the **Yes** button to continue to debug the project.  
+    >  **網站 URL**屬性預設是空的網站資料行專案範本並不提供精靈來建立專案時，收集此值。 若要了解如何加入精靈，這個值會要求開發人員，並接著在新的專案中設定這個屬性，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
   
-4.  On the **Site Actions** menu, choose **Site Settings**.  
+3.  選擇**F5**索引鍵。  
   
-5.  On the **Site Settings** page, under the **Galleries** list, choose the **Site columns** link.  
+     封裝和部署到 SharePoint 網站中所指定的站台的資料行**網站 URL**專案的屬性。 網頁瀏覽器會開啟此站台的預設頁面。  
   
-6.  In the list of site columns, verify that a **Custom Columns** group contains a column that's named **SiteColumnTest**.  
+    > [!NOTE]  
+    >  如果**指令碼偵錯已停用**對話方塊出現時，選擇 **是**按鈕以繼續進行偵錯專案。  
   
-7.  Close the web browser.  
+4.  在**網站動作**功能表上，選擇**站台設定**。  
   
-## <a name="cleaning-up-the-development-computer"></a>Cleaning up the Development Computer  
- After you finish testing the project, remove the project template from the experimental instance of Visual Studio.  
+5.  在**站台設定**頁面的 **圖庫**清單中，選擇**站台的資料行**連結。  
   
-#### <a name="to-clean-up-the-development-computer"></a>To clean up the development computer  
+6.  在站台的資料行清單中，確認**自訂資料行**群組包含資料行名為**SiteColumnTest**。  
   
-1.  In the experimental instance of Visual Studio, on the menu bar, choose **Tools**, **Extensions and Updates**.  
+7.  關閉 web 瀏覽器。  
   
-     The **Extensions and Updates** dialog box opens.  
+## <a name="cleaning-up-the-development-computer"></a>清除開發電腦  
+ 完成測試專案之後，請從 Visual Studio 的實驗執行個體中移除專案範本。  
   
-2.  In the list of extensions, choose the **Site Column** extension, and then choose the **Uninstall** button.  
+#### <a name="to-clean-up-the-development-computer"></a>清除開發電腦  
   
-3.  In the dialog box that appears, choose the **Yes** button to confirm that you want to uninstall the extension.  
+1.  在功能表列上的 Visual Studio 實驗執行個體選擇**工具**，**擴充功能和更新**。  
   
-4.  Choose the **Close** button to complete the uninstallation.  
+     [擴充功能和更新] 對話方塊隨即開啟。  
   
-5.  Close both instances of Visual Studio (the experimental instance and the instance of Visual Studio in which the SiteColumnProjectItem solution is open).  
+2.  在擴充功能清單中，選擇 **網站資料行**延伸模組，然後選擇 **解除安裝** 按鈕。  
   
-## <a name="next-steps"></a>Next Steps  
- After you complete this walkthrough, you can add a wizard to the project template. When a user creates a Site Column project, the wizard asks the user for the site URL to use for debugging and whether the new solution is sandboxed, and the wizard configures the new project with this information. The wizard also collects information about the column (such as the base type and the group in which to list the column in the site column gallery) and adds this information to the Elements.xml file in the new project. For more information, see [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).  
+3.  在出現的對話方塊中，選擇 **是**按鈕，以確認您想要解除安裝擴充功能。  
   
-## <a name="see-also"></a>See Also  
- [Walkthrough: Creating a Site Column Project Item with a Project Template, Part 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
- [Defining Custom SharePoint Project Item Types](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
- [Creating Item Templates and Project Templates for SharePoint Project Items](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
- [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
- [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
+4.  選擇**關閉**按鈕，以完成解除安裝。  
+  
+5.  關閉 Visual Studio （實驗性執行個體和 SiteColumnProjectItem 方案已開啟的 Visual Studio 執行個體） 的兩個執行個體。  
+  
+## <a name="next-steps"></a>後續步驟  
+ 完成此逐步解說之後，精靈可以加入的專案範本。 當使用者建立網站欄專案時，精靈會要求使用者輸入要用於偵錯，以及是否沙箱，新方案的網站 URL 和精靈設定新的專案，這項資訊。 精靈也會收集的資料行 （例如基底類型和要列出站台的資料行組件庫中的資料行中的群組） 的相關資訊，並將這項資訊加入至新的專案中的 Elements.xml 檔案。 如需詳細資訊，請參閱[逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。  
+  
+## <a name="see-also"></a>另請參閱  
+ [逐步解說： 使用專案範本，第 2 部分建立網站欄專案項目](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)   
+ [定義自訂 SharePoint 專案項目類型](../sharepoint/defining-custom-sharepoint-project-item-types.md)   
+ [建立項目範本和專案範本的 SharePoint 專案項目](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)   
+ [擴充 SharePoint 專案系統中儲存資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)   
+ [讓自訂資料與 SharePoint 工具延伸模組產生關聯](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)  
   
   

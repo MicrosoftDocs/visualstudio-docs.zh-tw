@@ -1,56 +1,56 @@
 ---
-title: "IDebugBreakpointResolution2::GetResolutionInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointResolution2::GetResolutionInfo"
-helpviewer_keywords: 
-  - "IDebugBreakpointResolution2::GetResolutionInfo"
+title: "IDebugBreakpointResolution2::GetResolutionInfo |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointResolution2::GetResolutionInfo
+helpviewer_keywords: IDebugBreakpointResolution2::GetResolutionInfo
 ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ada7f0ea6a4cf16900d20739b56c424beba20117
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointResolution2::GetResolutionInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得描述這個中斷點的中斷點解析資訊。  
+# <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
+取得描述此中斷點的中斷點解析資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetResolutionInfo(   
-   BPRESI_FIELDS       dwFields,  
-   BP_RESOLUTION_INFO* pBPResolutionInfo  
+```cpp  
+HRESULT GetResolutionInfo(   
+   BPRESI_FIELDS       dwFields,  
+   BP_RESOLUTION_INFO* pBPResolutionInfo  
 );  
 ```  
   
-```c#  
-int GetResolutionInfo(   
-   enum BPRESI_FIELDS   dwFields,  
-   BP_RESOLUTION_INFO[] pBPResolutionInfo  
+```csharp  
+int GetResolutionInfo(   
+   enum BPRESI_FIELDS   dwFields,  
+   BP_RESOLUTION_INFO[] pBPResolutionInfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwFields`  
- \[in\]從的旗標組合[BPRESI\_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，決定哪一個欄位的`pBPResolutionInfo`參數都必須填寫。  
+ [in]從旗標的組合[BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)列舉型別，以決定哪些欄位的`pBPResolutionInfo`參數會填入。  
   
  `pBPResolutionInfo`  
- \[\] out[BP\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)結構，以填入此中斷點的相關資訊。  
+ [out][BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)會利用此中斷點的相關資訊填入結構。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會實作這個方法的簡單的`CDebugBreakpointResolution`物件，公開 \(expose\) [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例會實作這個方法來簡單`CDebugBreakpointResolution`公開物件[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)介面。  
   
 ```  
 HRESULT CDebugBreakpointResolution::GetResolutionInfo(  
@@ -139,7 +139,7 @@ HRESULT CDebugBreakpointResolution::CopyBP_RESOLUTION_INFO(
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)   
- [BPRESI\_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
- [BP\_RESOLUTION\_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)
+ [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)   
+ [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

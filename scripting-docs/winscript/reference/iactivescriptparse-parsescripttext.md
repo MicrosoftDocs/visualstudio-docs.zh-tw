@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptParse::ParseScriptText | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptParse::ParseScriptText |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptParse.ParseScriptText
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IActiveScriptParse_ParseScriptText"
+helpviewer_keywords: IActiveScriptParse_ParseScriptText
 ms.assetid: 2d237d6c-cc65-415b-8808-72791304a136
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 70d17807b47468f2238c0254cc39b339df616411
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptParse::ParseScriptText
-解析指定的程式碼片段，加入宣告至命名空間並視情況評估程式碼。  
+# <a name="iactivescriptparseparsescripttext"></a>IActiveScriptParse::ParseScriptText
+剖析指定的程式碼程式碼片段，新增到命名空間宣告，並評估為適當的程式碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT ParseScriptText(  
@@ -37,50 +40,50 @@ HRESULT ParseScriptText(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
   
 |||  
 |-|-|  
-|`pstrCode`|\[in\] 評估的 scriptlet 文字的位址。  這個字串的解譯取決於指令碼語言。|  
-|`pstrItemName`|\[in\] 提供評估 scriptlet 的內容之項目名稱的位址。  如果這個參數為 NULL，則會在指令碼引擎的全域內容中評估程式碼。|  
-|`punkContext`|\[in\] 內容物件的位址。  這個物件是保留用於偵錯環境，這類內容可由偵錯工具提供以表示現用執行階段內容。  如果這個參數為 NULL，則引擎會使用 `pstrItemName` 識別內容。|  
-|`pstrDelimiter`|\[in\] scriptlet 結束分隔符號的位址。  當 `pstrCode` 從文字資料流剖析時，主應用程式通常會使用分隔符號，例如兩個單引號 \(''\)，偵測 scriptlet 結尾。  這個參數指定主機使用的分隔符號，允許指令碼引擎提供一些條件式基本前置處理 \(例如，將單引號 \['\] 取代為兩個單引號以做為分隔符號\)。  指令碼引擎實際使用這項資訊的方式 \(如果有的話\) 取決於指令碼引擎。  如果主應用程式不使用分隔符號標示程式碼片段的結束，請將此參數設定為 `NULL`。|  
-|`dwSourceContextCookie`|\[in\] 用於偵錯的 Cookie。|  
-|`ulStartingLineNumber`|\[in\] 以零為起始的值，指定剖析將從哪一行開始。|  
-|`dwFlags`|\[in\] 與 scriptlet 相關的旗標。  可以是下列值的組合：|  
+|`pstrCode`|[in]要評估的程式碼片段文字的位址。 這個字串的解譯取決於指令碼語言。|  
+|`pstrItemName`|[in]提供要評估程式碼片段的內容項目名稱的位址。 如果這個參數是 NULL，就會在指令碼引擎的全域內容中評估程式碼。|  
+|`punkContext`|[in]內容物件的位址。 此物件被保留供在偵錯環境，其中這類內容可能會提供偵錯工具，來代表作用中的執行階段內容中使用。 如果這個參數是 NULL，引擎會使用`pstrItemName`來識別內容。|  
+|`pstrDelimiter`|[in]結尾的程式碼片段分隔符號的位址。 當`pstrCode`剖析文字資料流，從主應用程式通常會使用分隔符號，例如兩個單引號 （'），來偵測程式碼片段的結尾。 這個參數會指定使用主機，允許以提供一些條件的基本前置處理指令碼引擎的分隔符號 （例如，取代單引號 ['] 具有兩個單引號做為分隔符號使用）。 方式 （和 if） 指令碼的引擎會使用這項資訊取決於指令碼引擎。 這個參數設定為`NULL`若主機未使用分隔符號來標示程式碼片段的結尾。|  
+|`dwSourceContextCookie`|[in]Cookie 用於偵錯之用。|  
+|`ulStartingLineNumber`|[in]以零為起始的值，指定會在開始剖析那一行。|  
+|`dwFlags`|[in]程式碼片段相關聯的旗標。 可以是下列值的組合：|  
   
 |值|意義|  
-|-------|--------|  
-|SCRIPTTEXT\_ISEXPRESSION|如果計算運算式和陳述式之間的差異很重要，但在指令碼語言中語法上模稜兩可，則這個旗標會指定將 scriptlet 解譯成運算式，而不是陳述式或陳述式清單。  預設會假設陳述式, 除非可以從 scriptlet 文字的語法判斷正確選擇。|  
-|SCRIPTTEXT\_ISPERSISTENT|表示如果指令碼引擎已儲存 \(例如，藉由呼叫 `IPersist*::Save`\)，或者指令碼引擎透過轉換重設為初始狀態時，則應儲存此呼叫期間加入的程式碼。|  
-|SCRIPTTEXT\_ISVISIBLE|表示指令碼文字應做為可見於指令碼命名空間中 \(因此可依據名稱呼叫\) 的全域方法。|  
+|-----------|-------------|  
+|SCRIPTTEXT_ISEXPRESSION|如果計算的運算式和陳述式之間的差別是很重要，但語法模稜兩可的指令碼語言中，此旗標會指定程式碼片段會被解譯為運算式，而不是陳述式或陳述式的清單。 根據預設，除非您可以從程式碼片段文字的語法判斷正確的選擇，會假設陳述式。|  
+|SCRIPTTEXT_ISPERSISTENT|表示是否儲存指令碼引擎時，會儲存此通話期間加入的程式碼 (例如，透過呼叫`IPersist*::Save`)，或如果指令碼引擎會重設透過初始化的狀態轉換。|  
+|SCRIPTTEXT_ISVISIBLE|指出應該顯示指令碼文字 (，因此，可依名稱) 做為指令碼的命名空間中的全域方法。|  
   
 |||  
 |-|-|  
-|`pvarResult`|\[ou\] 接收 scriptlet 處理序結果的緩衝區的位址，若呼叫端不預期結果則為 `NULL` \(即 SCRIPTTEXT\_ISEXPRESSION 值未設定\)。|  
-|`pexcepinfo`|\[out\] 接收例外狀況資訊的結構的位址。  如果 `IActiveScriptParse::ParseScriptText` 傳回 DISP\_E\_EXCEPTION，會填入這個結構。|  
+|`pvarResult`|[out]接收的程式碼片段處理結果的緩衝區位址或`NULL`如果呼叫端必須確保沒有結果 （也就是未設定 SCRIPTTEXT_ISEXPRESSION 值）。|  
+|`pexcepinfo`|[out]接收到的例外狀況資訊結構的位址。 此結構會填滿，如果`IActiveScriptParse::ParseScriptText`傳回 DISP_E_EXCEPTION。|  
   
-## 傳回值  
- 傳回下列其中一個值：  
+## <a name="return-value"></a>傳回值  
+ 會傳回下列值之一：  
   
 |傳回值|意義|  
-|---------|--------|  
+|------------------|-------------|  
 |`S_OK`|成功。|  
-|`DISP_E_EXCEPTION`|處理 scriptlet 時發生的例外狀況。  包含例外狀況相關資訊的 `pexcepinfo` 參數。|  
+|`DISP_E_EXCEPTION`|在程式碼片段的處理時發生例外狀況。 `pexcepinfo`參數包含例外狀況的相關資訊。|  
 |`E_INVALIDARG`|引數無效。|  
 |`E_POINTER`|指定了無效的指標。|  
-|`E_NOTIMPL`|不支援這個方法。  指令碼引擎不支援運算式或陳述式的執行階段評估。|  
-|`E_UNEXPECTED`|不需要呼叫 \(例如，指令碼引擎處於未初始化或關閉狀態，或者 SCRIPTTEXT\_ISEXPRESSION 旗標已設定，而且指令碼引擎處於初始化狀態\)。|  
-|`OLESCRIPT_E_SYNTAX`|scriptlet 中發生未指定的語法錯誤。|  
+|`E_NOTIMPL`|不支援這個方法。 指令碼引擎不支援執行階段評估的運算式或陳述式。|  
+|`E_UNEXPECTED`|不應該呼叫 （例如，指令碼引擎會處於未初始化或已關閉狀態，或 SCRIPTTEXT_ISEXPRESSION 旗標已設定和指令碼引擎正在初始化的狀態）。|  
+|`OLESCRIPT_E_SYNTAX`|在程式碼片段中發生未指定的語法錯誤。|  
   
-## 備註  
- 如果指令碼引擎處於初始化狀態，則在此呼叫期間不會實際評估程式碼；而這類程式碼會佇列，並且在指令碼引擎轉換為 \(或是經過\) 啟動狀態時執行。  由於不允許在初始化狀態中執行，因此在初始化狀態中以 SCRIPTTEXT\_ISEXPRESSION 旗標呼叫這個方法是錯誤的。  
+## <a name="remarks"></a>備註  
+ 如果指令碼引擎在初始化的狀態，將實際在這個呼叫; 期間評估沒有程式碼這類程式碼會排入佇列而執行指令碼引擎轉換至 （或透過） 時啟動的狀態。 因為初始化的狀態不允許執行時，會呼叫這個方法與 SCRIPTTEXT_ISEXPRESSION 中的旗標時初始化的狀態錯誤。  
   
- 程式碼片斷可以是運算式、陳述式清單或指令碼語言允許的任何項目。  例如，這個方法用於評估 HTML \<SCRIPT\>，它允許在建構 HTML 頁面時執行陳述式，而不只是將它們編譯成指令碼狀態。  
+ 程式碼片段可以是運算式、 陳述式，清單或指令碼語言所允許的任何項目。 例如，這個方法用於評估的 HTML\<指令碼 > 標記，允許執行，因為正在建構的 HTML 網頁，而不是只將其編譯至指令碼狀態的陳述式。  
   
- 傳遞至此方法的程式碼必須是程式碼的有效完整部分。  例如，在 VBScript 中使用 Sub Function\(x\) 呼叫這個方法第一次，然後使用 `End Sub` 呼叫第二次是不合法的。  由於副程式宣告已啟動但未完成，剖析器無法等候第二個呼叫完成副程式，而是必須產生剖析錯誤。  
+ 傳遞至此方法的程式碼必須是有效而完整的一部分的程式碼。 例如，在 VBScript 中不合法呼叫這個方法一次使用 Sub Function(x)，然後第二次使用`End Sub`。 剖析器必須等候完成的副程式，第二個呼叫，但而是必須產生剖析錯誤，因為副程式宣告已啟動，但未完成。  
   
- 如需指令碼狀態的詳細資訊，請參閱 [Windows 指令碼引擎](../../winscript/windows-script-engines.md)的＜指令碼引擎狀態＞一節。  
+ 如需指令碼狀態的詳細資訊，請參閱 > 一節指令碼引擎狀態[Windows 指令碼引擎](../../winscript/windows-script-engines.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptParse](../../winscript/reference/iactivescriptparse.md)

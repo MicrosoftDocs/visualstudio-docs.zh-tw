@@ -1,5 +1,5 @@
 ---
-title: "共用模型和圖表匯出 |Microsoft 文件"
+title: "共用模型及匯出圖表 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,50 +10,34 @@ helpviewer_keywords:
 - UML model, sharing
 - UML diagrams, saving
 ms.assetid: 22e47b4d-c185-478c-9535-56d292b45984
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 34f02436b78137eac62a204a969467dfa6f88fd6
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 982a4f54788e38129adaf5b23c15609f3ccad53d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共用模型及匯出圖表
 在 Visual Studio 中，有多種方式可與同事共用模型和圖表。  
   
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="working-on-a-model-as-a-team"></a>以小組型態處理模型  
- Visual Studio 的使用者可以建立及編輯模型、 相依性圖表和有向的圖形。  
+ Visual Studio 的使用者可以建立及編輯模型、 相依性圖表和圖形。  
   
- 不同的使用者可以在模型中，同時搭配使用，但應該可在不同的封裝上。  
+ 不同的使用者可以在模型中，同時搭配使用，但應處理不同的套件。  
   
  建議您使用 [!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]。  
   
- 如需詳細資訊，請參閱[管理模型與版本控制下的圖表](../modeling/manage-models-and-diagrams-under-version-control.md)。  
-  
- 如需有關組織中型或大型專案中的模型的建議，請參閱[結構模型化方案](../modeling/structure-your-modeling-solution.md)。  
+ 如需有關組織模型中型或大型專案中的建議，請參閱[建構模型方案](../modeling/structure-your-modeling-solution.md)。  
   
 ## <a name="reading-and-reviewing-models"></a>讀取和檢閱模型  
- 使用某些版本的 Visual Studio （這就無法建立模型） 的小組成員可以讀取模型，模型化圖表和有向的圖形，但無法加以編輯。  若要查看哪些版本的 Visual Studio 支援此功能，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 使用某些版本的 Visual Studio (無法建立模型） 的小組成員可以讀取模型，模型圖表和圖形，但無法加以編輯。  若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 相依性圖表可以只在建立所在之模型內開啟。 若要提供圖表的存取，即必須提供所有模型化專案檔案的存取，或其複本的存取。  
+ 只有在建立所在模型內，您可以開啟相依性圖表。 若要提供圖表的存取，即必須提供所有模型化專案檔案的存取，或其複本的存取。  
   
  如需詳細資訊，請參閱[讀取模型和其他 Visual Studio 版本中的圖表](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)。  
   
@@ -64,16 +48,11 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
+|標題|說明|  
 |-----------|-----------------|  
-|[在版本控制下管理模型與圖表](../modeling/manage-models-and-diagrams-under-version-control.md)|Visual Studio 的使用者可以在共用模型上工作。|  
 |[建構模型方案](../modeling/structure-your-modeling-solution.md)|共用大型或中型專案中的模型。|  
-|[在其他 Visual Studio 版本中讀取模型和圖表](../modeling/read-models-and-diagrams-in-other-visual-studio-editions.md)|某些無法建立模型的 Visual Studio 版本使用者可以讀取模型和圖表。|  
 |[將圖表匯出為影像](../modeling/export-diagrams-as-images.md)|您可以將部分圖表複製到應用程式，例如 PowerPoint 或 Word，或將圖表列印到 XPS 檔案。|  
 |[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)|模型和圖表概觀。|  
-|[使用設定檔和造型自訂您的模型](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|如果在模型中使用 UML 設定檔，然後將此模型傳送給其他人，他們必須安裝相同的設定檔。|  
   
 ## <a name="see-also"></a>另請參閱  
- [建立您的應用程式模型](../modeling/create-models-for-your-app.md)   
  [在開發程序中使用模型](../modeling/use-models-in-your-development-process.md)
-

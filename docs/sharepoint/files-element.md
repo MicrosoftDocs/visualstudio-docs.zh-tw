@@ -1,30 +1,31 @@
 ---
-title: "Files Element"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Files element"
+title: "檔案項目 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Files element
 ms.assetid: 3c611d5b-28f1-48a7-a068-63e01fa2f3aa
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: dcb3e7e81d9897f23742eda83c72bb64caed65da
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Files Element
-  指定要以 SharePoint 專案項目部署的檔案，例如 Feature 項目檔案，以及相依非 SharePoint 專案的輸出檔案。  
+# <a name="files-element"></a>Files 項目
+  指定要部署的 SharePoint 專案項目，例如功能項目檔案，以及相依的非 SharePoint 專案的輸出檔案。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Files>  
@@ -33,38 +34,38 @@ caps.handback.revision: 11
 </Files>  
 ```  
   
-## 類型  
+## <a name="type"></a>類型  
  **FileCollectionType**  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子項目  
   
-|項目|描述|  
-|--------|--------|  
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性 **ProjectItemFileType** 項目。<br /><br /> 表示將專案項目部署至 SharePoint 時專案項目中所含的 SharePoint 檔案，例如「功能」項目檔案。|  
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性 **ProjectOutputFileType** 項目。<br /><br /> 表示將專案項目部署至 SharePoint 時專案項目中所含的專案輸出。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|選擇性**ProjectItemFileType**項目。<br /><br /> 代表 SharePoint 檔案，例如功能項目檔中，以部署至 SharePoint 時，包含與專案項目。|  
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|選擇性**ProjectOutputFileType**項目。<br /><br /> 表示要部署至 SharePoint 時，與專案項目包含專案的輸出。|  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
-|--------|--------|  
-|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 專案項目。  這是 .spdata 檔案必要的根項目。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[專案項目](../sharepoint/projectitem-element.md)|代表 SharePoint 專案項目。 這是必要的根元素的.spdata 檔案。|  
   
-## 項目資訊  
+## <a name="element-information"></a>項目資訊  
   
 |||  
 |-|-|  
-|**命名空間**|http:\/\/schemas.microsoft.com\/VisualStudio\/2010\/SharePointTools\/SharePointProjectItemModel|  
+|**Namespace**|http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel|  
 |**結構描述名稱**|SharePoint 專案項目結構描述|  
 |**驗證檔**|ProjectItemModelSchema.xsd|  
-|**可否空白**|否|  
+|**可以是空的**|否|  
   
-## 請參閱  
- [SharePoint Project Item Schema Reference](../sharepoint/sharepoint-project-item-schema-reference.md)  
+## <a name="see-also"></a>另請參閱  
+ [SharePoint 專案項目結構描述參考](../sharepoint/sharepoint-project-item-schema-reference.md)  
   
   

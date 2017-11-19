@@ -1,79 +1,79 @@
 ---
-title: "METADATA_ADDRESS_LOCAL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "METADATA_ADDRESS_LOCAL"
-helpviewer_keywords: 
-  - "METADATA_ADDRESS_LOCAL 結構"
+title: "METADATA_ADDRESS_LOCAL |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: METADATA_ADDRESS_LOCAL
+helpviewer_keywords: METADATA_ADDRESS_LOCAL structure
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a9d5e32f6f99cddcd3d04d8c10bda958e58fbbf3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# METADATA_ADDRESS_LOCAL
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個結構是表示 \(通常是函式或方法\) 的範圍內的區域變數的位址。  
+# <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
+此結構表示 （通常是函式或方法） 的範圍內的區域變數的位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagMETADATA_ADDRESS_LOCAL {  
-   _mdToken  tokMethod;  
-   IUnknown* pLocal;  
-   DWORD     dwIndex;  
+   _mdToken  tokMethod;  
+   IUnknown* pLocal;  
+   DWORD     dwIndex;  
 } METADATA_ADDRESS_LOCAL;  
 ```  
   
-```c#  
+```csharp  
 public struct METADATA_ADDRESS_LOCAL {  
-   public int    tokMethod;  
-   public object pLocal;  
-   public uint   dwIndex;  
+   public int    tokMethod;  
+   public object pLocal;  
+   public uint   dwIndex;  
 }  
 ```  
   
-## 詞彙  
+## <a name="terms"></a>詞彙  
  tokMethod  
- 方法或函式的 ID 區域變數是部份。  
+ 識別碼的方法或函式本機變數是的一部分。  
   
- \[C\+\+\]`_mdToken` is a `typedef` for a 32\-bit `int`.  
+ [C + +]`_mdToken`是`typedef`32 位元`int`。  
   
  pLocal  
- 這個結構是表示其地址之語彙基元。  
+ 此結構表示的位址語彙基元。  
   
  dwIndex  
- 可以是這個區域變數之方法或函式，或其他值 \(特定語言\) 的索引。  
+ 可以是這個方法或函式，或其他值 （語言特有） 的本機變數的索引。  
   
-## 備註  
- 這個結構屬於等位中的[DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位的`DEBUG_ADDRESS_UNION`結構設定為 \[ `ADDRESS_KIND_LOCAL` \(介於[ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別\)。  
+## <a name="remarks"></a>備註  
+ 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_LOCAL`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
- `Warning:` \[只有 c \+ \+\]如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 \(`addr`是一個欄位，在[DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構\)：  
+ `Warning:`[只有 c + +] 如果`pLocal`不是 null，則您必須呼叫`Release`語彙基元的指標 (`addr`是中的欄位[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構):  
   
 ```  
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL &&  addr.addr.addrLocal.pLocal != NULL)  
 {  
-    addr.addr.addrLocal.pLocal->Release();  
+    addr.addr.addrLocal.pLocal->Release();  
 }  
 ```  
   
-## 需求  
- 標頭: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
- [ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)   
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)   
+ [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

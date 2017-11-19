@@ -1,52 +1,54 @@
 ---
-title: "IDebugCustomAttributeQuery::IsCustomAttributeDefined | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugCustomAttributeQuery::IsCustomAttributeDefined"
-  - "IsCustomAttributeDefined"
+title: "IDebugCustomAttributeQuery::IsCustomAttributeDefined |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugCustomAttributeQuery::IsCustomAttributeDefined
+- IsCustomAttributeDefined
 ms.assetid: c7425db6-4347-4f69-8f88-337ddaa34fa6
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1b3a98d0d2b1ade880004f8c4853f8609bed76d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugCustomAttributeQuery::IsCustomAttributeDefined
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-判斷指定的自訂屬性是否所定義。  
+# <a name="idebugcustomattributequeryiscustomattributedefined"></a>IDebugCustomAttributeQuery::IsCustomAttributeDefined
+決定是否定義指定之自訂屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT IsCustomAttributeDefined(  
-   LPCOLESTR pszCustomAttributeName  
+   LPCOLESTR pszCustomAttributeName  
 );  
 ```  
   
-```c#  
+```csharp  
 int IsCustomAttributeDefined(  
-   string pszCustomAttributeName  
+   string pszCustomAttributeName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszCustomAttributeName`  
- \[in\]自訂屬性的名稱。  
+ [in]自訂屬性的名稱。  
   
-## 傳回值  
- 如果定義自訂屬性時，會傳回`S_OK`。 否則，會傳回`S_FALSE`。  
+## <a name="return-value"></a>傳回值  
+ 如果定義自訂屬性，則會傳回`S_OK`; 否則傳回`S_FALSE`。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugClassFieldSymbol** 物件，公開 \(expose\) [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugClassFieldSymbol**公開物件[IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugClassFieldSymbol::IsCustomAttributeDefined(  
     LPCOLESTR pszCustomAttribute  
 )  
@@ -83,5 +85,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugCustomAttributeQuery](../../../extensibility/debugger/reference/idebugcustomattributequery.md)

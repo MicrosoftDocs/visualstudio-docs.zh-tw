@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugContainerField
-helpviewer_keywords:
-- IDebugContainerField interface
+f1_keywords: IDebugContainerField
+helpviewer_keywords: IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a91b491aeb234a20dc601950c5ff8a436b1be90a
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 8260266f43be7a6887aea45f5012a1924fd35c77
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 此介面代表符號或其他符號或類型的容器類型。  
@@ -52,9 +36,9 @@ IDebugContainerField : IDebugField
  在許多介面上的許多方法會傳回此介面。 因為這是所有容器的基底類別，更具特製化的介面可以從這個介面取得使用[QueryInterface](/cpp/atl/queryinterface)。 這類介面包括[IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)， [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)， [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)，和[IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 除了上[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，這個介面會實作下列方法︰  
+ 除了上[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，這個介面會實作下列方法：  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[EnumFields](../../../extensibility/debugger/reference/idebugcontainerfield-enumfields.md)|建立容器的欄位的列舉值。|  
   
@@ -62,11 +46,11 @@ IDebugContainerField : IDebugField
  陣列 （容器的變數）、 （容器方法和變數） 的類別和方法 （在容器中的參數和區域變數） 都是容器的範例。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ sh.h  
+ 標頭： sh.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [符號提供者介面](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)   

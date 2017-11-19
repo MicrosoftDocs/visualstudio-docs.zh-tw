@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBreakpointErrorEvent2
-helpviewer_keywords:
-- IDebugBreakpointErrorEvent2
+f1_keywords: IDebugBreakpointErrorEvent2
+helpviewer_keywords: IDebugBreakpointErrorEvent2
 ms.assetid: adee79df-8db5-4510-a7df-c50f4dbf5e35
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 94ab4dfbe72d28f52767c6dde259483d6905e401
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 92a7d4207e18b661452c52a25a1c079b5feac734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbreakpointerrorevent2"></a>IDebugBreakpointErrorEvent2
 這個介面會告知工作階段的偵錯管理員 (SDM) 的暫止中斷點無法繫結到載入的程式，可能是因為警告或錯誤。  
@@ -54,7 +38,7 @@ IDebugBreakpointErrorEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDebugBreakpointErrorEvent2`。  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetErrorBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md)|取得[IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md)描述警告或錯誤的介面。|  
   
@@ -64,11 +48,11 @@ IDebugBreakpointErrorEvent2 : IUnknown
  例如，暫止中斷點具有相關聯的條件失敗時要剖析或評估，警告會傳送暫止中斷點不能繫結在這個階段。 如果不有尚未載入中斷點的程式碼，也可能會發生。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   

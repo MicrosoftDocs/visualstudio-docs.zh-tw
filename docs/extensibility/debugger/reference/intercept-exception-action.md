@@ -1,59 +1,59 @@
 ---
-title: "INTERCEPT_EXCEPTION_ACTION | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "INTERCEPT_EXCEPTION_ACTION"
-helpviewer_keywords: 
-  - "INTERCEPT_EXCEPTION_ACTION 列舉型別"
+title: "INTERCEPT_EXCEPTION_ACTION |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: INTERCEPT_EXCEPTION_ACTION
+helpviewer_keywords: INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a6804e4991c8707e619c96d6945d120b2fb37ffb
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# INTERCEPT_EXCEPTION_ACTION
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-指定當攔截例外狀況時要採取什麼動作。  
+# <a name="interceptexceptionaction"></a>INTERCEPT_EXCEPTION_ACTION
+指定要攔截例外狀況時所採取的動作。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 typedef DWORD INTERCEPT_EXCEPTION_ACTION;  
 ```  
   
-```c#  
+```csharp  
 public enum enum_INTERCEPT_EXCEPTION_ACTION  
 {  
-   IEA_INTERCEPT = 0x0001  
+   IEA_INTERCEPT = 0x0001  
 }  
 ```  
   
-#### 參數  
- IEA\_INTERCEPT  
- 可以攔截目前例外狀況。  這是唯一支援目前的值，而且必須指定。  
+#### <a name="parameters"></a>參數  
+ IEA_INTERCEPT  
+ 啟用攔截目前的例外狀況。 這是唯一支援目前的值，而且必須指定。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  這些值會傳遞至[InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
- [列舉](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
+## <a name="see-also"></a>另請參閱  
+ [列舉型別](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)   
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

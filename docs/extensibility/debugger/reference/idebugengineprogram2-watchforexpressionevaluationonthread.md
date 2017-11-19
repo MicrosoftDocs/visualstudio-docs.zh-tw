@@ -1,75 +1,75 @@
 ---
-title: "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread"
+title: "IDebugEngineProgram2::WatchForExpressionEvaluationOnThread |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
+helpviewer_keywords: IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: dbb3437edc8d357e6a4e96eed9bf9881970a01c9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-允許 \(或不允許\) 運算式評估在指定的執行緒上發生，即使該程式已停止。  
+# <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
+允許 （或不允許），在給定的執行緒上發生，即使程式已停止的運算式評估。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT WatchForExpressionEvaluationOnThread(   
-   IDebugProgram2*       pOriginatingProgram,  
-   DWORD                 dwTid,  
-   DWORD                 dwEvalFlags,  
-   IDebugEventCallback2* pExprCallback,  
-   BOOL                  fWatch  
+```cpp  
+HRESULT WatchForExpressionEvaluationOnThread(   
+   IDebugProgram2*       pOriginatingProgram,  
+   DWORD                 dwTid,  
+   DWORD                 dwEvalFlags,  
+   IDebugEventCallback2* pExprCallback,  
+   BOOL                  fWatch  
 );  
 ```  
   
-```c#  
-int WatchForExpressionEvaluationOnThread(   
-   IDebugProgram2       pOriginatingProgram,  
-   uint                  dwTid,  
-   uint                  dwEvalFlags,  
-   IDebugEventCallback2 pExprCallback,  
-   int                   fWatch  
+```csharp  
+int WatchForExpressionEvaluationOnThread(   
+   IDebugProgram2       pOriginatingProgram,  
+   uint                  dwTid,  
+   uint                  dwEvalFlags,  
+   IDebugEventCallback2 pExprCallback,  
+   int                   fWatch  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pOriginatingProgram`  
- \[in\][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，表示評估運算式的程式。  
+ [in][IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)物件，代表已評估運算式的程式。  
   
  `dwTid`  
- \[in\]指定執行緒的識別項。  
+ [in]指定執行緒的識別項。  
   
  `dwEvalFlags`  
- \[in\]從的旗標組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)列舉型別，指定要如何進行評估。  
+ [in]從旗標的組合[EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)指定評估的執行方式的列舉。  
   
  `pExprCallback`  
- \[in\][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)是用來傳送運算式的評估期間所發生的偵錯事件的物件。  
+ [in][IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)用來傳送在運算式評估期間發生的偵錯事件的物件。  
   
  `fWatch`  
- \[in\]如果是非零值 \(`TRUE`\)，讓運算式評估所識別的執行緒上`dwTid`。 否則，零 \(`FALSE`\) 不允許在該執行緒上的運算式評估。  
+ [in]如果不是零 (`TRUE`)，讓運算式評估所識別的執行緒上`dwTid`，否則為零 (`FALSE`) 不允許在該執行緒上的運算式評估。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 當工作階段偵錯管理員 \(SDM\) 會要求程式中，由`pOriginatingProgram`參數，以評估運算式，它藉由呼叫這個方法會告知所有其他附加的程式。  
+## <a name="remarks"></a>備註  
+ 工作階段的偵錯管理員 (SDM) 要求時所識別的程式`pOriginatingProgram`參數，以評估運算式，它會呼叫這個方法來通知其他所有附加的程式。  
   
- 在一個程式中的運算式評估可能會造成程式碼受限於函式評估或評估的任何執行中， `IDispatch`屬性。  有鑑於此，這個方法會允許執行並完成雖然可能會停止執行緒，此程式中的運算式評估。  
+ 運算式評估在一個程式中的可能會造成執行位於另一個，因為函式評估或評估的任何程式碼`IDispatch`屬性。 因為這個緣故，這個方法可讓執行並完成即使執行緒可能會停止此程式中的運算式評估。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)   

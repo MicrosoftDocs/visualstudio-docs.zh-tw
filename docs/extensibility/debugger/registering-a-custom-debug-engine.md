@@ -1,39 +1,40 @@
 ---
-title: "註冊自訂的偵錯引擎 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "偵錯引擎註冊"
+title: "登錄的自訂偵錯引擎 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 58f58a1a6ec80331fd5cf6f735098c16c35db82e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 註冊自訂的偵錯引擎
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-偵錯引擎必須本身登錄為 class factory 遵循 COM 慣例，以及註冊使用 Visual Studio 透過 Visual Studio 登錄子機碼。  
+# <a name="registering-a-custom-debug-engine"></a>註冊的自訂偵錯引擎
+偵錯引擎必須註冊為 class factory 遵循 COM 慣例，以及透過 Visual Studio 登錄子機碼來註冊使用 Visual Studio。  
   
 > [!NOTE]
->  舉例說明如何註冊偵錯引擎可以找到在 TextInterpreter 範例中，建置的 [Tutorial: Building a Debug Engine Using ATL COM](http://msdn.microsoft.com/zh-tw/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
+>  如何註冊偵錯引擎的範例，請參閱 TextInterpreter 範例中，建立成一部分[教學課程： 建立偵錯引擎使用 ATL COM](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)。  
   
-## DLL 伺服器處理序  
- 一般而言，偵錯引擎會在它自己的 DLL 中實作為 COM 伺服器。 這表示，Visual Studio 才能存取它，偵錯引擎必須註冊 com 其 class factory 的 CLSID。 然後偵錯引擎必須登錄本身的 Visual Studio 以建立任何屬性 （也稱為度量） 偵錯引擎支援。 偵錯引擎支援的功能而不同的度量資訊會寫入至 Visual Studio 登錄子機碼的偵錯引擎選擇。  
+## <a name="dll-server-process"></a>DLL 伺服器處理序  
+ 一般而言，偵錯引擎會在它自己的 DLL 中實作為 COM 伺服器。 這表示，偵錯引擎必須登錄至其 class factory 的 CLSID COM Visual Studio 才能存取它。 然後偵錯引擎必須向 Visual Studio 本身才能建立任何內容 （否則稱為度量） 偵錯引擎支援。 Visual Studio 登錄子機碼的偵錯引擎寫入度量的選擇取決於偵錯引擎支援的功能。  
   
- [SDK 協助程式進行偵錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 描述不只登錄位置需要註冊偵錯引擎。此外也說明 dbgmetric.lib 程式庫，其中包含一些實用的函式和 c \+ \+ 開發人員，讓管理更容易登錄的宣告。  
+ [SDK 進行偵錯的協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)描述不僅的登錄位置需要註冊偵錯引擎; 它也會描述 dbgmetric.lib 程式庫，其中包含許多有用的函式和 c + + 開發人員，讓宣告管理更容易登錄。  
   
-### 範例  
- 以下是典型的範例 （來自 TextInterpreter 的範例） 示範如何使用 `SetMetric` 函式 （dbgmetric.lib\) 來註冊使用 Visual Studio 偵錯引擎。 Dbgmetric.lib 中，也會定義傳入的度量。  
+### <a name="example"></a>範例  
+ 以下是典型的範例 （來自 TextInterpreter 範例） 示範如何使用`SetMetric`函式 （從 dbgmetric.lib)，以註冊使用 Visual Studio 偵錯引擎。 傳入的度量也定義在 dbgmetric.lib。  
   
 > [!NOTE]
->  TextInterpreter 是基本的偵錯引擎。不會實作，因此不會註冊和 — 任何其他功能。 更完整的偵錯引擎會有一整份 `SetMetric` 呼叫或其對等項目，一個用於偵錯引擎的每項功能支援。  
+>  TextInterpreter 是基本的偵錯引擎。未實作，並因此不會註冊 — 任何其他功能。 更完整的偵錯引擎會有整個清單`SetMetric`呼叫或其對等項目，其中每項功能的偵錯引擎支援。  
   
 ```  
 // Define base registry subkey to Visual Studio.  
@@ -49,7 +50,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立自訂的偵錯引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)   
- [SDK 協助程式進行偵錯](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
- [Tutorial: Building a Debug Engine Using ATL COM](http://msdn.microsoft.com/zh-tw/9097b71e-1fe7-48f7-bc00-009e25940c24)
+ [SDK 進行偵錯的協助程式](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
+ [教學課程： 建立使用 ATL COM 偵錯引擎](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)

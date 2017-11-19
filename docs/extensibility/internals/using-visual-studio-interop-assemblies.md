@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-caps.latest.revision: 33
+caps.latest.revision: "33"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 298caf0b1c65ecb3612b927859b4d7d01720fc27
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 5d4b825b33339367ee331eb74aa2eb210c85206c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio Interop 組件
 Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，提供 Visual Studio 擴充性。 有一些直線的 COM 介面和其 interop 的版本之間的差異。 例如，Hresult 通常會表示為 int 值需要處理的例外狀況，以相同的方式和參數 (特別是 out 參數） 的處理方式不同。  
@@ -50,11 +35,13 @@ Visual Studio interop 組件可讓受管理的應用程式存取 COM 介面，�
   
  例如，請考慮下列函式呼叫，其中<xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>是可接受的傳回值，但任何其他 HRESULT 小於零代表發生錯誤。  
   
- [!code-vb[VSSDKHRESULTInformation #1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb) ] [!code-csharp [VSSDKHRESULTInformation #1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]  
+ [!code-vb[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_1.vb)]
+ [!code-csharp[VSSDKHRESULTInformation#1](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_1.cs)]  
   
  如果有多個可接受的傳回值，其他 HRESULT 值只附加到清單中的呼叫<xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>。  
   
- [!code-vb[VSSDKHRESULTInformation #2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb) ] [!code-csharp [VSSDKHRESULTInformation #2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]  
+ [!code-vb[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/VisualBasic/using-visual-studio-interop-assemblies_2.vb)]
+ [!code-csharp[VSSDKHRESULTInformation#2](../../extensibility/internals/codesnippet/CSharp/using-visual-studio-interop-assemblies_2.cs)]  
   
 ## <a name="returning-hresults-to-com-from-managed-code"></a>透過 Managed 程式碼將 HRESULT 傳回給 COM  
  如果沒有發生例外狀況，管理程式碼傳回<xref:Microsoft.VisualStudio.VSConstants.S_OK>至呼叫它的 COM 函式。 COM Interop 支援透過 Managed 程式碼進行強類型處理的常見例外狀況。 例如，收到無法接受方法`null`引數會擲回<xref:System.ArgumentNullException>。  

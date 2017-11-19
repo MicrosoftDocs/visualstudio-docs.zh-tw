@@ -1,46 +1,48 @@
 ---
-title: "如何: 產生安裝程式的登錄資訊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "註冊、 Vspackage"
-  - "VSPackages 註冊"
-  - "VSPackages，註冊資訊清單"
+title: "如何： 產生的安裝程式的登錄資訊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- registration, VSPackages
+- VSPackages, registering
+- VSPackages, registration manifests
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c31184a78bae612e4341c3210a1f34f993a0581f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何: 產生安裝程式的登錄資訊
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-RegPkg.exe 公用程式可用來產生註冊資訊清單的受管理的 VSPackage。  Windows 安裝程式安裝套件可以加入資訊清單。  RegPkg 也可產生基礎的安裝來源檔案中可包含檔案[Windows 安裝程式的 XML 工具組](完整.嗎？LinkId%20=%2062238)。  
+# <a name="how-to-generate-registry-information-for-an-installer"></a>如何： 產生的安裝程式的登錄資訊
+RegPkg.exe 公用程式，可以用來產生 managed VSPackage 的登錄資訊清單。 資訊清單可以併入 Windows Installer 安裝程式套件。 RegPkg 也可以產生的檔案，可以包含在安裝程式來源檔案是根據[Windows Installer XML 工具組](http://go.microsoft.com/fwlink/?LinkId=62238)。  
   
 > [!IMPORTANT]
->  RegPkg 產生專屬於您的開發系統的路徑名稱，所以每次您使用 RegPkg 時，您必須編輯要使用的輸出適當的 Windows 安裝程式格式化屬性。  比方說，InprocServer32 值應該**\[SystemFolder\]mscoree.dll** ，以及路徑應該使用**\[\#filekey\]**和**\[$componentkey\]**。  調整輸出，如此一來支援電腦與 Windows 安裝在不同的磁碟機，或在不同的目錄、 當地語系化的目錄名稱，以及使用者可以選擇的路徑。  如需詳細資訊，請參閱[格式比對](完整.嗎？LinkId%20=%2071120)的 Windows 安裝程式 SDK 中。  如果您遵循 RegPkg 慣例您開發的系統路徑 — 例如，檔案 Id 的表單 File\_*檔名*— 您需要變更較少。  
+>  RegPkg 產生專屬於您的開發系統路徑名稱，因此每次您使用 RegPkg，您必須編輯輸出使用適當的 Windows Installer 格式屬性。 例如，InprocServer32 值應該是**[SystemFolder]mscoree.dll**和路徑應該使用**[#filekey]**和**[$componentkey]**。 調整的輸出，如此一來支援的電腦與 Windows 安裝在不同的磁碟機或不同的目錄、 本地化的目錄名稱，以及使用者可以選擇的路徑。 如需詳細資訊，請參閱[格式化](http://go.microsoft.com/fwlink/?LinkId=71120)Windows Installer SDK 中。 如果您遵循針對您的開發系統路徑 RegPkg 慣例 — 比方說，檔案識別碼的表單 File_*filename*— 您需要進行較少的變更。  
   
-### 若要建立註冊資訊清單  
+### <a name="to-create-a-registration-manifest"></a>若要建立的註冊資訊清單  
   
--   執行與 RegPkg **\/regfile**切換。  提供其他任何參數、 輸出檔名和 VSPackage 的路徑。  
+-   執行與 RegPkg **/regfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
   
-     比方說，在命令提示字元中，您可以鍵入項目，如下所示：  
+     例如，在命令提示字元中，您會輸入像下面這樣：  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /regfile:MyRegFile.reg MyPackage.dll  
     ```  
   
-### 若要檢視註冊資訊清單  
+### <a name="to-view-a-registration-manifest"></a>若要檢視 註冊資訊清單  
   
--   在任何文字編輯器中開啟的註冊資訊清單。  
+-   註冊資訊清單任何文字編輯器中開啟。  
   
-     下列範例是 RegPkg IronPython 語言服務所建立的登錄資訊清單：  
+     下列範例是 RegPkg 建立 IronPython 語言服務的註冊資訊清單：  
   
     ```  
     REGEDIT4  
@@ -97,21 +99,21 @@ RegPkg.exe 公用程式可用來產生註冊資訊清單的受管理的 VSPackag
   
     ```  
   
-### 若要建立 Windows 安裝程式的 XML 工具組包含檔  
+### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>若要建立 Windows Installer XML 工具組包含檔案  
   
--   執行與 RegPkg **\/wixfile**切換。  提供其他任何參數、 輸出檔名和 VSPackage 的路徑。  
+-   執行與 RegPkg **/wixfile**切換。 提供任何其他參數、 輸出檔的名稱和路徑的 VSPackage。  
   
-     比方說，在命令提示字元中，您可以鍵入項目，如下所示：  
+     例如，在命令提示字元中，您會輸入像下面這樣：  
   
     ```  
     [Visual Studio SDK installation path]\VisualStudioIntegration\Tools\Bin\RegPkg /codebase /wixfile:IronPython.LanguageService.wxi ..\bin\Release\IronPython.LanguageService.dll  
     ```  
   
-### 若要檢視 Windows 安裝程式的 XML 工具組包含檔  
+### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>若要檢視 Windows Installer XML 工具組包含檔案  
   
--   開啟 Windows 安裝程式的 XML 工具組檔案中包含任何文字編輯器。  
+-   開啟 Windows Installer XML 工具組包含檔案中任何文字編輯器。  
   
-     下列範例是包含檔案建立 RegPkg IronPython 語言服務：  
+     下列範例是針對 IronPython 語言服務 RegPkg 建立的 include 檔案：  
   
     ```  
     <Include>  
@@ -181,6 +183,6 @@ RegPkg.exe 公用程式可用來產生註冊資訊清單的受管理的 VSPackag
     </Include>  
     ```  
   
-## 請參閱  
- [Registering VSPackages](http://msdn.microsoft.com/zh-tw/31e6050f-1457-4849-944a-a3c36b76f3dd)   
- [Vspackage](../../extensibility/internals/vspackages.md)
+## <a name="see-also"></a>另請參閱  
+ [註冊 Vspackage](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [VSPackage](../../extensibility/internals/vspackages.md)

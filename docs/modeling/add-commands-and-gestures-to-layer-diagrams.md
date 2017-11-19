@@ -1,5 +1,5 @@
 ---
-title: "相依性圖表中加入命令和軌跡 |Microsoft 文件"
+title: "將命令和軌跡加入至相依性圖表 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,41 +10,26 @@ helpviewer_keywords:
 - dependency diagrams, adding custom commands
 - dependency diagrams, adding custom gestures
 ms.assetid: ac9c417b-0b40-4a90-86f5-ee3cbdce030b
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 6f833612aaa1859c312a5343fe12a209780e3ee3
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 40bad32ef38fb99032690804d572f630bb60ac6d
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>將命令和軌跡加入至相依性圖表
-您可以定義內容功能表命令和軌跡處理常式，在 Visual Studio 中的相依性圖表上。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。  
+您可以定義內容功能表命令和軌跡處理常式，在 Visual Studio 中的相依性圖表。 您可以將這些擴充功能封裝成 Visual Studio 整合擴充功能 (VSIX)，您可將這整合擴充功能散發給其他 Visual Studio 使用者。  
   
- 您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義單一 VSIX，其中包含圖層指令和定義域專屬語言。  
+ 您可以視需要在相同的 Visual Studio 專案中定義許多命令和軌跡處理常式。 您也可以將許多這類專案合併成單一 VSIX。 例如，您可以定義單一 VSIX，其中包含圖層指令，以及特定領域語言。  
   
 > [!NOTE]
->  您也可以自訂架構驗證，讓使用者原始程式碼中的程式碼與相依性圖表。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱[相依性圖表中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
+>  您也可以自訂架構驗證讓使用者原始程式碼中的程式碼進行比較的相依性圖表。 您應該要在個別的 Visual Studio 專案中定義架構驗證。 您可以將它加入相同的 VSIX，就像其他擴充功能一樣。 如需詳細資訊，請參閱[與相依性圖表中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)。  
   
 ## <a name="requirements"></a>需求  
- 請參閱[需求](../modeling/extend-layer-diagrams.md#prereqs)。  
+ 請參閱 [需求](../modeling/extend-layer-diagrams.md#prereqs)。  
   
 ## <a name="defining-a-command-or-gesture-in-a-new-vsix"></a>在新的 VSIX 中定義命令或軌跡  
  建立擴充功能最快速的方法是使用專案範本。 這樣做會將程式碼和 VSIX 資訊清單放入相同的專案中。  
@@ -59,9 +44,9 @@ ms.lasthandoff: 02/22/2017
   
 3.  若要測試此擴充功能，請按下 **CTRL+F5** 或 **F5**。  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即啟動。 在此例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
+     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即啟動。 在本例中，建立相依性圖表。 您的命令或軌跡擴充功能應該會在此圖表中運作。  
   
-4.  關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱[巡覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+4.  關閉此實驗執行個體並修改此範例程式碼。 如需詳細資訊，請參閱[巡覽和更新分層中的程式碼模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
 5.  您可以將其他命令或軌跡處理常式加入相同的專案。 如需詳細資訊，請參閱下列其中一節：  
   
@@ -69,7 +54,7 @@ ms.lasthandoff: 02/22/2017
   
      [定義軌跡處理常式](#gesture)  
   
-6.  若要安裝擴充功能中的主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或其他電腦上，尋找**.vsix**檔案中**bin\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
+6.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 中尋找 **.vsix\\\***。 將它複製到您要安裝它的電腦上，然後按兩下該檔案。 若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>將命令或軌跡加入個別 VSIX  
  如果您想要建立包含命令、圖層驗證程式和其他擴充功能的單一 VSIX，建議您應建立單一專案來定義此 VSIX，並且針對此處理常式建立個別專案。
@@ -101,7 +86,7 @@ ms.lasthandoff: 02/22/2017
   
 4.  返回此命令或軌跡處理常式專案，然後加入下列專案參考。  
   
-|**參考**|**這可讓您執行**|  
+|**參考資料**|**這可讓您執行**|  
 |-------------------|------------------------------------|  
 |Program Files\Microsoft Visual Studio [版本]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.dll|建立和編輯圖層|  
 |Microsoft.VisualStudio.Uml.Interfaces|建立和編輯圖層|  
@@ -116,16 +101,15 @@ ms.lasthandoff: 02/22/2017
   
      [定義軌跡處理常式](#gesture)  
   
-     另請參閱[巡覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+     另請參閱[巡覽和更新分層中的程式碼模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
-2.  若要測試此功能，請按下 CTRL+F5 或 F5。 
-          [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在此例中，建立或開啟相依性圖表。  
+2.  若要測試此功能，請按下 CTRL+F5 或 F5。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的實驗執行個體隨即開啟。 在本例中，建立或開啟相依性圖表。  
   
-3.  若要安裝 VSIX 中的主要執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，或其他電腦上，尋找**.vsix**檔案中**bin** VSIX 專案的目錄。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
+3.  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的主要執行個體或其他電腦上安裝此擴充功能，請在 **bin\*** 目錄中尋找 **.vsix** 檔案。 將它複製到您想要安裝 VSIX 的電腦。 在 Windows 檔案總管中按兩下此 VSIX 檔案 (在 Windows 8 中為檔案總管)。  
   
      若要對其解除安裝，請使用 [工具]  功能表上的 [擴充功能和更新]  。  
   
-##  <a name="a-namecommanda-defining-a-menu-command"></a><a name="command"></a>定義功能表命令  
+##  <a name="command"></a> 定義功能表命令  
  您可以將其他功能表命令定義加入現有的軌跡或命令專案。 每個命令都由具有下列特性的類別加以定義：  
   
 -   此類別的宣告方式如下：  
@@ -156,7 +140,7 @@ ms.lasthandoff: 02/22/2017
   
      `DiagramContext.CurrentDiagram.SelectedShapes.Count()...`  
   
- 如需詳細資訊，請參閱[巡覽和更新圖層的程式碼中的模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
+ 如需詳細資訊，請參閱[巡覽和更新分層中的程式碼模型](../modeling/navigate-and-update-layer-models-in-program-code.md)。  
   
  若要加入新的命令，請建立包含下列範例的新程式碼檔案。 然後，測試並編輯此檔案。  
   
@@ -230,8 +214,8 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="a-namegesturea-defining-a-gesture-handler"></a><a name="gesture"></a>定義軌跡處理常式  
- 當使用者拖曳項目拖曳至相依性圖表，以及當使用者按兩下圖表中的任何位置，則會回應軌跡處理常式。  
+##  <a name="gesture"></a> 定義軌跡處理常式  
+ 當使用者拖曳項目拖曳到相依性圖表中，以及當使用者按兩下圖表中的任何位置，則會回應軌跡處理常式。  
   
  對於現有的命令或軌跡處理常式 VSIX 專案，您可以加入定義軌跡處理常式的程式碼檔案：  
   
@@ -275,12 +259,9 @@ namespace MyLayerExtensions // change to your preference
     }  
     ```  
   
--   針對某些拖曳項目類型的處理常式早已受到定義。 比方說，使用者可以將項目從 [方案總管] 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。  
+-   針對某些拖曳項目類型的處理常式早已受到定義。 例如，使用者可以將項目從方案總管 拖曳至相依性圖表。 您無法針對這些項目類型定義拖曳處理常式。 在這些情況下，不會叫用您的 `DragDrop` 方法。  
   
- 如需如何解碼其他項目拖曳到圖表時，請參閱[模型圖上定義軌跡處理常式](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- [巡覽和更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   
- [相依性圖表中加入自訂架構驗證](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
- [定義和安裝模型擴充功能](../modeling/define-and-install-a-modeling-extension.md)
-
+ [巡覽及更新程式碼中的圖層模型](../modeling/navigate-and-update-layer-models-in-program-code.md)   
+ [將自訂架構驗證加入至相依性圖表](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   

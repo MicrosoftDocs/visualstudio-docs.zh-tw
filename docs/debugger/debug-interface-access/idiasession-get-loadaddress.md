@@ -1,47 +1,46 @@
 ---
-title: "IDiaSession::get_loadAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::get_loadAddress 方法"
+title: "Idiasession:: Get_loadaddress |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::get_loadAddress method
 ms.assetid: 5162ae1a-38e3-4571-8995-4ed9be1dec3e
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 131ad3ffdcaae554f6892119755de840023de154
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::get_loadAddress
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取這個符號存放區中的符號與相對應的可執行檔的載入位址。  
+# <a name="idiasessiongetloadaddress"></a>IDiaSession::get_loadAddress
+擷取對應至這個符號存放區中的符號的可執行檔的負載位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_loadAddress (   
-   ULONGLONG* pRetVal  
+```C++  
+HRESULT get_loadAddress (   
+   ULONGLONG* pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回一個虛擬位址 \(VA\) 載入一個.exe 或.dll 檔案的位置。  
+ [out]傳回虛擬位址 (VA) 載入.exe 檔或.dll 檔案的位置。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 傳回的載入位址永遠是零除非特別使用來設定[IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法。  
+## <a name="remarks"></a>備註  
+ 傳回的負載位址永遠是零除非特別設定使用[idiasession:: Put_loadaddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
- [IDiaSession::put\_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)
+ [IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)

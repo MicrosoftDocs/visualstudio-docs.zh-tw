@@ -4,34 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-caps.latest.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c246c8be1d10893b018d5d0c5727d4af42efdc6b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 21fcc9388b40baa9e003b4beb876ba2f0f23fbaf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-managing-multiple-threads-in-managed-code"></a>如何： 管理多個執行緒在 Managed 程式碼
 如果您有受管理的 VSPackage 擴充功能呼叫非同步方法或在 Visual Studio UI 執行緒以外的執行緒執行的作業，您應該遵循下面提供的指導方針。 您可以將 UI 執行緒能繼續回應，因為它不需要等候另一個執行緒完成的工作。 您可以讓您的程式碼更有效率，因為您不需要額外的執行緒所佔用的堆疊空間，您還可以讓更可靠且更容易偵錯，因為您避免死結和當機。  

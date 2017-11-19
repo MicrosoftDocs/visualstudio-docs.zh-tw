@@ -1,27 +1,30 @@
 ---
-title: "IDebugHelper::CreatePropertyBrowserEx | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IDebugHelper::CreatePropertyBrowserEx |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IDebugHelper.CreatePropertyBrowserEx
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "IDebugHelper::CreatePropertyBrowserEx"
+helpviewer_keywords: IDebugHelper::CreatePropertyBrowserEx
 ms.assetid: 87ad322f-09da-4ce8-bb68-0b0bbeec645b
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f9bc219ea5c2ff9ff2860d36cd475985d825ae59
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IDebugHelper::CreatePropertyBrowserEx
-傳回包裝變數並允許不同的 VARTYPE 值或型別的自訂轉換為字串的屬性瀏覽器中。  
+# <a name="idebughelpercreatepropertybrowserex"></a>IDebugHelper::CreatePropertyBrowserEx
+傳回屬性瀏覽器，包裝 VARIANT，並允許 VARIANT 值或 VARTYPE 類型的自訂轉換成字串。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CreatePropertyBrowserEx(  
@@ -33,33 +36,33 @@ HRESULT CreatePropertyBrowserEx(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pvar`  
- \[in\] 要瀏覽的根 Variant。  
+ [in]若要瀏覽的根 variant。  
   
  `bstrName`  
- \[in\] 要寫入根目錄的名稱。  
+ [in]提供根名稱。  
   
  `pdat`  
- \[in\] 執行緒在哪些需求屬性。  如果這個參數為 null，構成不執行任何動作。  
+ [in]執行緒的要求內容。 如果這個參數是 NULL，會執行任何的封送處理。  
   
  `pdf`  
- \[in\] 則為 Variant 提供自訂格式化。  
+ [in]物件，提供自訂格式的變異。  
   
  `ppdob`  
- \[in\] 屬性瀏覽器。  
+ [out]屬性瀏覽器中。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 這個方法會傳回包裝變數並允許不同的 VARTYPE 值或型別的自訂轉換為字串的屬性瀏覽器中。  
+## <a name="remarks"></a>備註  
+ 這個方法會傳回屬性瀏覽器，包裝 VARIANT，並允許 VARIANT 值或 VARTYPE 類型的自訂轉換成字串。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugHelper::CreatePropertyBrowser](../../winscript/reference/idebughelper-createpropertybrowser.md)   
  [IDebugHelper 介面](../../winscript/reference/idebughelper-interface.md)   
  [IDebugProperty 介面](../../winscript/reference/idebugproperty-interface.md)

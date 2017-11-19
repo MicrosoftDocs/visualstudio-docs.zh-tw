@@ -1,53 +1,53 @@
 ---
-title: "IDebugPortNotify2::AddProgramNode | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugPortNotify2::AddProgramNode"
-helpviewer_keywords: 
-  - "IDebugPortNotify2::AddProgramNode"
+title: "IDebugPortNotify2::AddProgramNode |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugPortNotify2::AddProgramNode
+helpviewer_keywords: IDebugPortNotify2::AddProgramNode
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: edaa591e79f48c86188510be90ebefc0690adad5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortNotify2::AddProgramNode
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-註冊連接埠執行的程式，才能進行偵錯。  
+# <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
+註冊可偵錯的程式與連接埠執行。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT AddProgramNode(   
-   IDebugProgramNode2* pProgramNode  
+```cpp  
+HRESULT AddProgramNode(   
+   IDebugProgramNode2* pProgramNode  
 );  
 ```  
   
-```c#  
-int AddProgramNode(   
-   IDebugProgramNode2 pProgramNode  
+```csharp  
+int AddProgramNode(   
+   IDebugProgramNode2 pProgramNode  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pProgramNode`  
- \[in\][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要註冊的程式。  
+ [in][IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)物件，表示要登錄的程式。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 程式節點可以取消登錄從連接埠藉由呼叫[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)方法。  
+## <a name="remarks"></a>備註  
+ 程式節點可以取消註冊該連接埠從藉由呼叫[RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)   
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)   
  [RemoveProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md)

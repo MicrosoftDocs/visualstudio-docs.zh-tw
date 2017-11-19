@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- tool windows, adding search
+helpviewer_keywords: tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-caps.latest.revision: 38
+caps.latest.revision: "38"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 4f30c28b7255769be97ba6063e7c1ce435dfbe9f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: ecaa03757b5b40e92d343fa9328f9d3f9e584ba3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="adding-search-to-a-tool-window"></a>加入工具視窗搜尋
 當您建立或更新您的擴充功能中的工具視窗時，您可以在 Visual Studio 中加入相同出現的其他位置的搜尋功能。 這項功能包含下列功能：  
@@ -126,7 +110,8 @@ ms.lasthandoff: 09/06/2017
     }  
     ```  
   
-     [!code-csharp[ToolWindowSearch #1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)][!code-vb[ToolWindowSearch #1  ](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]  
+     [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
+     [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]  
   
 5.  建置此專案並開始偵錯。 Visual Studio 的實驗執行個體隨即出現。  
   

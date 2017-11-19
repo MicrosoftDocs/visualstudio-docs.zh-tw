@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Creating a Master Detail Relation Using a Cached Dataset | Microsoft Docs'
+title: "逐步解說： 建立主版詳細資料的關聯性，使用快取的資料集 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,186 +14,188 @@ helpviewer_keywords:
 - master-detail tables [Office development in Visual Studio], walkthroughs
 - data caching [Office development in Visual Studio], Master/Detail Relation
 ms.assetid: 419f4e07-c67f-4fc9-973a-bc794f349ac3
-caps.latest.revision: 41
-author: kempb
-ms.author: kempb
+caps.latest.revision: "41"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fb02770a5cb607cc13a5db2be2cc7128a699d569
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b392b4de0288478c73fba8cecd88be1f701cd5ae
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>Walkthrough: Creating a Master Detail Relation Using a Cached Dataset
-  This walkthrough demonstrates creating a master/detail relation on a worksheet, and caching the data so that the solution can be used offline.  
+# <a name="walkthrough-creating-a-master-detail-relation-using-a-cached-dataset"></a>逐步解說： 建立主版詳細資料的關聯性，使用快取的資料集
+  本逐步解說示範 」 的工作表上建立主從式關聯，以便可以離線使用方案快取資料。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- During this walkthrough, you will learn how to:  
+ 在這個逐步解說期間，您將了解如何：  
   
--   Add controls to a worksheet.  
+-   將控制項加入工作表。  
   
--   Set up a dataset to be cached in a worksheet.  
+-   設定要快取的工作表中的資料集。  
   
--   Add code to enable scrolling through the records.  
+-   加入程式碼，以啟用捲動記錄。  
   
--   Test your project.  
+-   測試您的專案。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] or [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].  
+-   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。  
   
--   Access to the Northwind SQL Server sample database. The database can be on your development computer or on a server.  
+-   Northwind SQL Server 範例資料庫的存取。 資料庫可以在開發電腦或伺服器上。  
   
--   Permissions to read from and write to the SQL Server database.  
+-   讀取和寫入至 SQL Server 資料庫的權限。  
   
-## <a name="creating-a-new-project"></a>Creating a New Project  
- In this step, you will create an Excel Workbook project.  
+## <a name="creating-a-new-project"></a>建立新專案  
+ 在此步驟中，您將建立的 Excel 活頁簿專案。  
   
-#### <a name="to-create-a-new-project"></a>To create a new project  
+#### <a name="to-create-a-new-project"></a>若要建立新的專案  
   
-1.  Create an Excel Workbook project with the name **My Master-Detail**, using either Visual Basic or C#. Make sure that **Create a new document** is selected. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立名稱的 Excel 活頁簿專案**我的主檔/明細**，使用 Visual Basic 或 C#。 請確定**建立新的文件**已選取。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
- Visual Studio opens the new Excel workbook in the designer and adds the **My Master-Detail** project to **Solution Explorer**.  
+ Visual Studio 設計工具中開啟新 Excel 活頁簿，並將**我的主檔/明細**專案加入**方案總管 中**。  
   
-## <a name="creating-the-data-source"></a>Creating the Data Source  
- Use the **Data Sources** window to add a typed dataset to your project.  
+## <a name="creating-the-data-source"></a>建立資料來源  
+ 使用 [ **資料來源** ] 視窗將型別資料集加入專案。  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+#### <a name="to-create-the-data-source"></a>若要建立資料來源  
   
-1.  If the **Data Sources** window is not visible, display it by, on the menu bar, choosing **View**, **Other Windows**, **Data Sources**.  
+1.  如果看不到 [ **資料來源** ] 視窗，請在功能表列選擇 [ **檢視**]、[ **其他視窗**]、[ **資料來源**] 即可顯示。  
   
-2.  Choose **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+2.  選擇 [ **加入新資料來源** ] 以啟動 [ **資料來源組態精靈**]。  
   
-3.  Select **Database** and then click **Next**.  
+3.  選取**資料庫**，然後按一下 **下一步**。  
   
-4.  Select a data connection to the Northwind sample SQL Server database, or add a new connection by using the **New Connection** button.  
+4.  選取資料連接至 Northwind 範例 SQL Server 資料庫，或加入新的連接使用**新連線** 按鈕。  
   
-5.  After selecting or creating a connection, click **Next**.  
+5.  選取或建立連接之後, 按**下一步**。  
   
-6.  Clear the option to save the connection if it is selected, and then click **Next**.  
+6.  如果已選取，儲存連接選項，然後按清除**下一步**。  
   
-7.  Expand the **Tables** node in the **Database objects** window.  
+7.  展開**資料表**節點**資料庫物件**視窗。  
   
-8.  Select the **Orders** table and the **Order Details** table.  
+8.  選取**訂單**資料表和**Order Details**資料表。  
   
-9. Click **Finish**.  
+9. 按一下 [ **完成**]。  
   
- The wizard adds the two tables to the **Data Sources** window. It also adds a typed dataset to your project that is visible in **Solution Explorer**.  
+ 精靈會新增兩個資料表**資料來源**視窗。 它也會將具類型資料集加入至您的專案中可見的**方案總管 中**。  
   
-## <a name="adding-controls-to-the-worksheet"></a>Adding Controls to the Worksheet  
- In this step, you will add a named range, a list object, and two buttons to the first worksheet. First, add the named range and the list object from the **Data Sources** window so that they are automatically bound to the data source. Next, add the buttons from the **Toolbox**.  
+## <a name="adding-controls-to-the-worksheet"></a>將控制項加入工作表  
+ 在此步驟中，您將會加入具名的範圍、 清單物件，以及兩個按鈕第一個工作表。 首先，新增的已命名的範圍和清單物件從**資料來源**視窗，讓它們自動繫結至資料來源。 接下來，加入按鈕等，從**工具箱**。  
   
-#### <a name="to-add-a-named-range-and-a-list-object"></a>To add a named range and a list object  
+#### <a name="to-add-a-named-range-and-a-list-object"></a>若要加入的具名的範圍和清單物件  
   
-1.  Verify that the **My Master-Detail.xlsx** workbook is open in the Visual Studio designer, with **Sheet1** displayed.  
+1.  確認**我的主要 Detail.xlsx**活頁簿是在 Visual Studio 設計工具中開啟與**Sheet1**顯示。  
   
-2.  Open the **Data Sources** window and expand the **Orders** node.  
+2.  開啟**資料來源**視窗中，展開 **訂單**節點。  
   
-3.  Select the **OrderID** column, and then click the drop-down arrow that appears.  
+3.  選取**OrderID**資料行，然後按一下出現的下拉式箭號。  
   
-4.  Click **NamedRange** in the drop-down list, and then drag the **OrderID** column to cell **A2**.  
+4.  按一下**NamedRange**下拉式清單中，然後拖曳**OrderID**儲存格的資料行**A2**。  
   
-     A <xref:Microsoft.Office.Tools.Excel.NamedRange> control named `OrderIDNamedRange` is created in cell **A2**. At the same time, a <xref:System.Windows.Forms.BindingSource> named `OrdersBindingSource`, a table adapter, and a <xref:System.Data.DataSet> instance are added to the project. The control is bound to the <xref:System.Windows.Forms.BindingSource>, which in turn is bound to the <xref:System.Data.DataSet> instance.  
+     A<xref:Microsoft.Office.Tools.Excel.NamedRange>控制項，名為`OrderIDNamedRange`建立在資料格中**A2**。 同時，<xref:System.Windows.Forms.BindingSource>名為`OrdersBindingSource`，資料表配接器和<xref:System.Data.DataSet>執行個體加入至專案。 控制項繫結至<xref:System.Windows.Forms.BindingSource>，它接著會繫結至<xref:System.Data.DataSet>執行個體。  
   
-5.  Scroll down past the columns that are under the **Orders** table. At the bottom of the list is the **Order Details** table; it is here because it is a child of the **Orders** table. Select this **Order Details** table, not the one that is at the same level as the **Orders** table, and then click the drop-down arrow that appears.  
+5.  向下捲動，超過的資料行下**訂單**資料表。 在清單底部**Order Details**資料表; 這裡是因為它的子系**訂單**資料表。 選取此選項**Order Details**資料表，不是位於相同的層級**訂單**資料表，然後會出現下拉箭號。  
   
-6.  Click **ListObject** in the drop-down list, and then drag the **OrderDetails** table to cell **A6**.  
+6.  按一下**ListObject**下拉式清單中，然後拖曳**OrderDetails**表格儲存格**A6**。  
   
-7.  A <xref:Microsoft.Office.Tools.Excel.ListObject> control named **Order_DetailsListObject** is created in cell **A6**, and bound to the <xref:System.Windows.Forms.BindingSource>.  
+7.  A<xref:Microsoft.Office.Tools.Excel.ListObject>控制項，名為**Order_DetailsListObject**建立在資料格中**A6**，而且繫結至<xref:System.Windows.Forms.BindingSource>。  
   
-#### <a name="to-add-two-buttons"></a>To add two buttons  
+#### <a name="to-add-two-buttons"></a>若要加入兩個按鈕  
   
-1.  From the **Common Controls** tab of the **Toolbox**, add a <xref:System.Windows.Forms.Button> control to cell **A3** of the worksheet.  
+1.  從**通用控制項** 索引標籤**工具箱**，新增<xref:System.Windows.Forms.Button>控制項加入儲存格**A3**工作表。  
   
-     This button is named `Button1`.  
+     這個按鈕名為`Button1`。  
   
-2.  Add another <xref:System.Windows.Forms.Button> control to cell **B3** of the worksheet.  
+2.  加入另一個<xref:System.Windows.Forms.Button>控制項加入儲存格**B3**工作表。  
   
-     This button is named `Button2`.  
+     這個按鈕名為`Button2`。  
   
- Next, mark the dataset to be cached in the document.  
+ 接下來，將標示要快取文件中的資料集。  
   
-## <a name="caching-the-dataset"></a>Caching the Dataset  
- Mark the dataset to be cached in the document by making the dataset public and setting the **CacheInDocument** property.  
+## <a name="caching-the-dataset"></a>快取資料集  
+ 將標示要藉由公用和設定資料集快取文件中的資料集**CacheInDocument**屬性。  
   
-#### <a name="to-cache-the-dataset"></a>To cache the dataset  
+#### <a name="to-cache-the-dataset"></a>快取資料集  
   
-1.  Select **NorthwindDataSet** in the component tray.  
+1.  選取**NorthwindDataSet**在元件匣中。  
   
-2.  In the **Properties** window, change the **Modifiers** property to **Public**.  
+2.  在**屬性**視窗中，變更**修飾詞**屬性**公用**。  
   
-     Datasets must be public before caching is enabled.  
+     之前已啟用快取資料集必須是公用的。  
   
-3.  Change the **CacheInDocument** property to **True**.  
+3.  變更**CacheInDocument**屬性**True**。  
   
- The next step is to add text to the buttons, and in C# add code to hook up the event handlers.  
+ 下一個步驟是將文字加入至按鈕，並在 C# 中，加入程式碼來攔截 (hook) 事件處理常式。  
   
-## <a name="initializing-the-controls"></a>Initializing the Controls  
- Set the button text and add event handlers during the <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> event.  
+## <a name="initializing-the-controls"></a>初始化控制項  
+ 設定按鈕文字和新增事件處理常式期間<xref:Microsoft.Office.Tools.Excel.Workbook.Startup>事件。  
   
-#### <a name="to-initialize-the-data-and-the-controls"></a>To initialize the data and the controls  
+#### <a name="to-initialize-the-data-and-the-controls"></a>初始化資料和控制項  
   
-1.  In **Solution Explorer**, right-click **Sheet1.vb** or **Sheet1.cs**, and then click **View Code** on the shortcut menu.  
+1.  在**方案總管] 中**，以滑鼠右鍵按一下**Sheet1.vb**或**Sheet1.cs**，然後按一下 [**檢視程式碼**快顯功能表。  
   
-2.  Add the following code to the `Sheet1_Startup` method to set the text for the buttons.  
+2.  將下列程式碼加入`Sheet1_Startup`方法，以設定按鈕的文字。  
   
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]  [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]  
+     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
+     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]  
   
-3.  For C# only, add event handlers for the button click events to the `Sheet1_Startup` method.  
+3.  僅適用 C#，加入事件處理常式按鈕的按一下事件`Sheet1_Startup`方法。  
   
      [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]  
   
-## <a name="adding-code-to-enable-scrolling-through-the-records"></a>Adding Code to Enable Scrolling Through the Records  
- Add code to the <xref:System.Windows.Forms.Control.Click> event handler of each button to move through the records.  
+## <a name="adding-code-to-enable-scrolling-through-the-records"></a>加入程式碼，以啟用捲動記錄  
+ 將程式碼加入<xref:System.Windows.Forms.Control.Click>記錄間移動的每個按鈕事件處理常式。  
   
-#### <a name="to-scroll-through-the-records"></a>To scroll through the records  
+#### <a name="to-scroll-through-the-records"></a>捲動資料列  
   
-1.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button1`, and add the following code to move backwards through the records:  
+1.  加入事件處理常式<xref:System.Windows.Forms.Control.Click>事件`Button1`，並加入下列程式碼，向後移動記錄：  
   
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]  [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]  
+     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
+     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]  
   
-2.  Add an event handler for the <xref:System.Windows.Forms.Control.Click> event of `Button2`, and add the following code to advance through the records:  
+2.  加入事件處理常式<xref:System.Windows.Forms.Control.Click>事件`Button2`，並加入下列的程式碼，以記錄中向前推進：  
   
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]  [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
+     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
+     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]  
   
-## <a name="testing-the-application"></a>Testing the Application  
- Now you can test your workbook to make sure that the data appears as expected, and that you can use the solution offline.  
+## <a name="testing-the-application"></a>測試應用程式  
+ 現在您可以測試您的活頁簿，確定資料會顯示如預期般，而且您可以離線使用方案。  
   
-#### <a name="to-test-the-data-caching"></a>To test the data caching  
+#### <a name="to-test-the-data-caching"></a>若要測試資料的快取  
   
-1.  Press **F5**.  
+1.  請按 **F5**。  
   
-2.  Verify that the named range and the list object are filled with data from the data source.  
+2.  請確認已命名的範圍和清單物件會填入來自資料來源。  
   
-3.  Scroll through some of the records by clicking the buttons.  
+3.  捲動的部分記錄的按鈕，即可。  
   
-4.  Save the workbook, and then close the workbook and Visual Studio.  
+4.  儲存活頁簿，，，然後關閉 活頁簿和 Visual Studio。  
   
-5.  Disable the connection to the database. Unplug the network cable from your computer if the database is located on a server, or stop the SQL Server service if the database is on your development computer.  
+5.  停用資料庫的連接。 如果資料庫位於伺服器上，請拔除網路纜線從您的電腦，或如果資料庫是在開發電腦上停止 SQL Server 服務。  
   
-6.  Open Excel, and then open **My Master-Detail.xlsx** from the \bin directory (\My Master-Detail\bin in Visual Basic or \My Master-Detail\bin\debug in C#).  
+6.  開啟 Excel，然後再開啟**我的主要 Detail.xlsx**從 \bin 目錄 （在 Visual Basic 中的 \My Master-Detail\bin 或 \My Master-Detail\bin\debug C# 中的）。  
   
-7.  Scroll through some of the records to see that the worksheet operates normally when disconnected.  
+7.  捲動瀏覽一些查看工作表運作正常中斷連線時的記錄。  
   
-8.  Reconnect to the database. Connect your computer to the network again if the database is located on a server, or start the SQL Server service if the database is on your development computer.  
+8.  重新連接到資料庫。 您的電腦重新連線到網路如果資料庫位於伺服器上，或如果資料庫是在開發電腦上啟動 SQL Server 服務。  
   
-## <a name="next-steps"></a>Next Steps  
- This walkthrough shows the basics of creating a master/detail data relationship on a worksheet and caching a dataset. Here are some tasks that might come next:  
+## <a name="next-steps"></a>後續步驟  
+ 這個逐步解說會顯示在工作表上建立主要/詳細資料關聯性以及快取資料集的基本概念。 接著可以執行下列一些工作：  
   
--   Deploy the solution. For more information, see [Deploying an Office Solution](../vsto/deploying-an-office-solution.md)  
+-   部署方案。 如需詳細資訊，請參閱[部署 Office 方案](../vsto/deploying-an-office-solution.md)  
   
-## <a name="see-also"></a>See Also  
- [Binding Data to Controls in Office Solutions](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [Data in Office Solutions](../vsto/data-in-office-solutions.md)   
- [Caching Data](../vsto/caching-data.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+## <a name="see-also"></a>另請參閱  
+ [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [在 Office 方案中的資料](../vsto/data-in-office-solutions.md)   
+ [快取資料](../vsto/caching-data.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
   
   

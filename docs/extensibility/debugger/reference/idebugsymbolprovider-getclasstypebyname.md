@@ -1,60 +1,60 @@
 ---
-title: "IDebugSymbolProvider::GetClassTypeByName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugSymbolProvider::GetClassTypeByName"
-helpviewer_keywords: 
-  - "IDebugSymbolProvider::GetClassTypeByName 方法"
+title: "IDebugSymbolProvider::GetClassTypeByName |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugSymbolProvider::GetClassTypeByName
+helpviewer_keywords: IDebugSymbolProvider::GetClassTypeByName method
 ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0d11c12c6820475314912eea48dbc5ab96ee5a14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProvider::GetClassTypeByName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會取得表示完整的類別名稱的類別欄位型別。  
+# <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
+這個方法會取得代表完整的類別名稱的類別欄位型別。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetClassTypeByName(   
-   LPCOLESTR          pszClassName,  
-   NAME_MATCH         nameMatch,  
-   IDebugClassField** ppField  
+```cpp  
+HRESULT GetClassTypeByName(   
+   LPCOLESTR          pszClassName,  
+   NAME_MATCH         nameMatch,  
+   IDebugClassField** ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetClassTypeByName(  
-   string               pszClassName,   
-   NAME_MATCH           nameMatch,   
-   out IDebugClassField ppField  
+   string               pszClassName,   
+   NAME_MATCH           nameMatch,   
+   out IDebugClassField ppField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszClassName`  
- \[in\]類別名稱。  
+ [in]類別名稱。  
   
  `nameMatch`  
- \[in\]選取的型別符合的項目，例如，區分大小寫。  [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md) 列舉中的值。  
+ [in]選取類型的相符項目，例如，區分大小寫。 中的值[NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)列舉型別。  
   
  `ppField`  
- \[\] out傳回類別的型別，如同由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。  
+ [out]傳回類別類型所表示的[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [NAME\_MATCH](../../../extensibility/debugger/reference/name-match.md)   
+ [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)   
  [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

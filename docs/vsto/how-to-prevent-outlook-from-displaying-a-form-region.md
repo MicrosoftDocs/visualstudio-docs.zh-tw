@@ -1,12 +1,10 @@
 ---
-title: 'How to: Prevent Outlook from Displaying a Form Region | Microsoft Docs'
+title: "如何： 防止 Outlook 顯示表單區域 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,40 +14,40 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], canceling display
 - canceling form region display
 ms.assetid: 82a25def-776a-476a-a72d-d0a48a827d3c
-caps.latest.revision: 24
-author: kempb
-ms.author: kempb
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: e1b1d6af0009b071618cf2611f8198b04a64044b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: fb181ba7bd408194bec52224496ebef7f343f5d6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>How to: Prevent Outlook from Displaying a Form Region
-  There might be situations in which you do not want Microsoft Office Outlook to display a form region for a particular item. For example, if a contact item does not contain a business address, you can prevent a form region that shows the location of the business in a map from appearing.  
+# <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：防止 Outlook 顯示表單區域
+  可能會有不想要顯示特定項目的表單區域的 Microsoft Office Outlook 中的情況。 例如，如果連絡人項目沒有商務地址，您可以防止顯示企業的位置，在地圖中出現的表單區域。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-### <a name="to-prevent-outlook-from-displaying-a-form-region"></a>To prevent Outlook from displaying a form region  
+### <a name="to-prevent-outlook-from-displaying-a-form-region"></a>若要避免 Outlook 顯示表單區域  
   
-1.  Open the code file for the form region you want to modify.  
+1.  開啟您想要修改表單區域的程式碼檔案。  
   
-2.  Expand the **Form Region Factory** code region.  
+2.  展開**表單區域 Factory**程式碼區域。  
   
-3.  Add code to the `FormRegionInitializing` event handler that sets the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> class to **true**.  
+3.  將程式碼加入`FormRegionInitializing`設定的事件處理常式<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>屬性<xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs>類別**true**。  
   
- In this example, if the contact item does not contain an address, the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property is set to **true**, and the form region does not appear.  
+ 在此範例中，如果連絡人項目不包含地址，<xref:System.ComponentModel.CancelEventArgs.Cancel%2A>屬性設定為**true**，而且沒有出現在表單區域。  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)] [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
+## <a name="example"></a>範例  
+ [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
+ [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]  
   
-## <a name="see-also"></a>See Also  
- [Creating Outlook Form Regions](../vsto/creating-outlook-form-regions.md)   
- [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [How to: Add a Form Region to an Outlook Add-in Project](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
- [Walkthrough: Designing an Outlook Form Region](../vsto/walkthrough-designing-an-outlook-form-region.md)   
- [Walkthrough: Importing a Form Region That Is Designed in Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
+## <a name="see-also"></a>另請參閱  
+ [建立 Outlook 表單區域](../vsto/creating-outlook-form-regions.md)   
+ [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [如何： 在 Outlook 增益集專案中加入表單區域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)   
+ [逐步解說： 設計 Outlook 表單區域](../vsto/walkthrough-designing-an-outlook-form-region.md)   
+ [逐步解說：匯入在 Outlook 中設計的表單區域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)  
   
   

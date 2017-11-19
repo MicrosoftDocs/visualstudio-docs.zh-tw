@@ -1,12 +1,10 @@
 ---
-title: Ribbon Overview | Microsoft Docs
+title: "功能區概觀 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -21,122 +19,122 @@ helpviewer_keywords:
 - toolbars [Office development in Visual Studio]
 - custom Ribbon, multiple Ribbons
 ms.assetid: 2bdef092-190d-47e3-9440-e862b95dacaa
-caps.latest.revision: 64
-author: kempb
-ms.author: kempb
+caps.latest.revision: "64"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 4335f1f397d8497ca0aaa359e443b823d7441dbe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 52583bdbf6edf4f2a698bc8662a0faf659841926
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-overview"></a>Ribbon Overview
-  The Ribbon is a way to organize related commands so that they are easier to find. Commands appear as controls on the Ribbon. Controls are organized into *groups* along a horizontal strip at the top edge of an application window. Related groups are organized on tabs.  
+# <a name="ribbon-overview"></a>功能區概觀
+  功能區可組織相關的命令，以便輕鬆找到它們。 命令會顯示為功能區上的控制項。 控制項會組織成*群組*沿著在應用程式視窗的頂端邊緣的水平區域。 相關的群組會組織在索引標籤上。  
   
- Most of the features that were accessed by using menus and toolbars in earlier versions of the Microsoft Office system can now be accessed by using the Ribbon. For more information, see the technical article [Developer Overview of the User Interface for the 2007 Microsoft Office System](http://go.microsoft.com/fwlink/?LinkID=70860).  
+ 在較舊版本的 Microsoft Office 系統中，使用功能表和工具列存取的大多數功能，現在可以使用功能區來存取。 如需詳細資訊，請參閱技術文件[2007 Microsoft Office system 使用者介面的開發人員概觀](http://go.microsoft.com/fwlink/?LinkID=70860)。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="customizing-the-microsoft-office-ribbon"></a>Customizing the Microsoft Office Ribbon  
- To customize the Ribbon, add one of the following Ribbon items to your Office project:  
+## <a name="customizing-the-microsoft-office-ribbon"></a>自訂 Microsoft Office 功能區  
+ 若要自訂功能區，請在 Office 專案中加入下列功能區項目之一：  
   
--   **Ribbon (Visual Designer)**  
+-   **功能區 （視覺化設計工具）**  
   
--   **Ribbon (XML)**  
+-   **功能區 (XML)**  
   
- For example, to customize the Excel Ribbon, add a Ribbon item to an Excel VSTO Add-in project.  
+ 例如，若要自訂 Excel 功能區，請將功能區項目加入 Excel VSTO 增益集專案。  
   
-### <a name="ribbon-visual-designer-item"></a>Ribbon (Visual Designer) Item  
- The **Ribbon (Visual Designer)** item provides advanced tools that make it easier for you to design and develop a custom Ribbon. Use the **Ribbon (Visual Designer)** item to customize the Ribbon in the following ways:  
+### <a name="ribbon-visual-designer-item"></a>功能區 (視覺化設計工具) 項目  
+ **功能區 （視覺化設計工具）**項目提供進階的工具，可讓您更輕鬆地設計和開發自訂功能區。 使用**功能區 （視覺化設計工具）**以下列方式自訂功能區項目：  
   
--   Add custom or built-in tabs to a Ribbon.  
+-   在功能區加入自訂或內建索引標籤。  
   
--   Add custom groups to a custom or built-in tab.  
-  
-    > [!NOTE]  
-    >  A built-in tab or group is one that already exists on the Ribbon of a Microsoft Office application. For example, the **Data** tab is a built-in tab in Excel. The **Connections** group is a built-in group on the **Data** tab.  
-  
--   Add custom controls to a custom group.  
-  
--   Add custom controls to the Backstage View.  
-  
- For more information about how to customize a Ribbon by using the **Ribbon (Visual Designer)** item, see [Ribbon Designer](../vsto/ribbon-designer.md).  
-  
-### <a name="ribbon-xml-item"></a>Ribbon (XML) Item  
- Use the **Ribbon (XML)** item if you want to customize the Ribbon in a way that is not supported by the **Ribbon (Visual Designer)** item. Use the **Ribbon (XML)** item to customize the Ribbon in the following ways:  
-  
--   Add *built-in* groups to a custom tab or built-in tab.  
-  
--   Add built-in controls to a custom group.  
-  
--   Add custom code to override the event handlers of built-in controls.  
-  
--   Customize the Quick Access Toolbar.  
-  
--   Share a Ribbon customization between VSTO Add-in by using a qualified ID.  
-  
- For more information about how to customize the Ribbon by using the **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exporting a Ribbon from the Ribbon Designer to Ribbon XML  
- If you create a Ribbon by using the Ribbon Designer, and then decide that you want to customize the Ribbon in ways that the **Ribbon (Visual Designer)** item does not support, you can export the Ribbon to XML.  
-  
- Visual Studio automatically creates a **Ribbon (XML)** item and populates the Ribbon XML file with elements and attributes for each control on the Ribbon.  
-  
- Not all of the properties that are in the **Properties** window of the Ribbon designer are transferred to the Ribbon XML file.  For example, Visual Studio does not export the value of the **Image** or **Text** property. That is because you must create a callback method in the Ribbon code file of the exported project to assign an image or set the text of a control. Visual Studio does not automatically generate callback methods as part of the export process.  
-  
- In addition, any unchanged default property values do not appear in the resulting Ribbon XML file.  
-  
- For more information about how to export the Ribbon to XML, see [How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).  
-  
-### <a name="updating-the-code"></a>Updating the Code  
- A new Ribbon code file is added to **Solution Explorer**. This file contains the Ribbon XML class. You must create callback methods in the `Ribbon Callbacks` region of this class to handle user actions, such as clicking a button. Move your code from the event handlers to these callback methods and modify the code to work with the Ribbon extensibility (RibbonX) programming model. For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
- You must also add code to the `ThisAddIn`, `ThisWorkbook`, or `ThisDocument` class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
-  
- For more information, see [Ribbon XML](../vsto/ribbon-xml.md).  
-  
-## <a name="adding-multiple-ribbon-items-to-a-project"></a>Adding Multiple Ribbon Items to a Project  
- You can add more than one Ribbon item to a single project. This is useful if you want to perform either of the following two tasks:  
-  
--   Create Ribbons for Outlook *Inspectors*. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+-   將自訂群組加入自訂或內建的索引標籤。  
   
     > [!NOTE]  
-    >  An Inspector is a window that opens when users perform certain tasks, such as creating an e-mail message.  
+    >  內建的索引標籤或群組是已位在 Microsoft Office 應用程式功能區的索引標籤。 例如，**資料** 索引標籤是在 Excel 中的內建索引標籤。 **連線**群組是內建群組上**資料** 索引標籤。  
   
--   Select which Ribbon to display at run time.  
+-   將自訂控制項加入自訂群組。  
   
-### <a name="selecting-which-ribbons-to-display-at-run-time"></a>Selecting Which Ribbons to Display at Run Time  
- Because a project can contain more than one Ribbon, you can select which Ribbon to display at run time.  
+-   將自訂控制項加入 Backstage 檢視。  
   
- To select a Ribbon to display at run time, override the CreateRibbonExtensibilityObject method in the `ThisAddin`, `ThisWorkbook`, or `ThisDocument` class of your project and return the Ribbon that you want to display. The following example checks the value of a field named `myCondition` and returns the appropriate Ribbon.  
+ 如需有關如何使用自訂功能區**功能區 （視覺化設計工具）**項目，請參閱[功能區設計工具](../vsto/ribbon-designer.md)。  
+  
+### <a name="ribbon-xml-item"></a>功能區 (XML) 項目  
+ 使用**功能區 (XML)**項目，如果您想要自訂功能區中不支援的方式**功能區 （視覺化設計工具）**項目。 使用**功能區 (XML)**以下列方式自訂功能區項目：  
+  
+-   新增*內建*群組，以自訂索引標籤或內建索引標籤。  
+  
+-   將內建控制項加入自訂群組。  
+  
+-   加入自訂程式碼來覆寫內建控制項的事件處理常式。  
+  
+-   自訂快速存取工具列。  
+  
+-   使用限定 ID 在 VSTO 增益集之間共用功能區自訂。  
+  
+ 如需有關如何使用自訂功能區**功能區 (XML)**項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
+  
+## <a name="exporting-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>將功能區設計工具的功能區匯出至功能區 XML  
+ 如果您使用功能區設計工具中，建立功能區，然後決定您想要自訂功能區的方式，**功能區 （視覺化設計工具）**項目不支援，您可以將功能區匯出至 XML。  
+  
+ Visual Studio 會自動建立**功能區 (XML)**項目，並於其中填入功能區上的每個控制項具有項目和屬性的功能區 XML 檔案。  
+  
+ 並非所有屬性都在**屬性**功能區設計工具 視窗會傳送到功能區 XML 檔案。  例如，Visual Studio 不會匯出的值**映像**或**文字**屬性。 這是因為您必須在已匯出專案的功能區程式碼檔中建立回呼方法，才能指派映像或設定控制項的文字。 Visual Studio 不會自動產生回呼方法作為匯出程序的一部分。  
+  
+ 此外，任何未經變更的預設屬性值都不會出現在產生的功能區 XML 檔案中。  
+  
+ 如需如何將功能區匯出至 XML 的詳細資訊，請參閱[How to： 將功能區設計工具功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)。  
+  
+### <a name="updating-the-code"></a>更新程式碼  
+ 新的功能區程式碼檔案加入至**方案總管 中**。 這個檔案包含功能區 XML 類別。 您必須在這個類別的 `Ribbon Callbacks` 區域中建立回呼方法以處理使用者動作，例如按一下某個按鈕。 從這些回呼方法的事件處理常式中移除您的程式碼，並修改程式碼以使用功能區擴充功能 (RibbonX) 程式設計模型。 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。  
+  
+ 您也必須將程式碼加入`ThisAddIn`， `ThisWorkbook`，或`ThisDocument`類別，覆寫 CreateRibbonExtensibilityObject 方法，並在功能區 XML 類別傳回 Office 應用程式。  
+  
+ 如需詳細資訊，請參閱 [Ribbon XML](../vsto/ribbon-xml.md)。  
+  
+## <a name="adding-multiple-ribbon-items-to-a-project"></a>在專案中加入多個功能區項目  
+ 一個專案中可以加入多個功能區項目。 如果您想要執行下列兩項工作的其中之一，這會很有用：  
+  
+-   建立 Outlook 的功能區*偵測器*。 如需詳細資訊，請參閱[自訂 Outlook 功能區](../vsto/customizing-a-ribbon-for-outlook.md)。  
+  
+    > [!NOTE]  
+    >  [偵測器] 是使用者執行特定工作時開啟的視窗，例如建立電子郵件訊息。  
+  
+-   選取要在執行階段顯示的功能區。  
+  
+### <a name="selecting-which-ribbons-to-display-at-run-time"></a>選取要在執行階段顯示的功能區  
+ 因為一個專案可以包含多個功能區，所以您可以選取要在執行階段顯示的功能區。  
+  
+ 若要選取要顯示在執行階段的功能區，覆寫中的 CreateRibbonExtensibilityObject 方法`ThisAddin`， `ThisWorkbook`，或`ThisDocument`您的專案，並將您想要顯示在功能區的類別。 下列範例會檢查名為 `myCondition` 之欄位的值，並傳回適當的功能區。  
   
 > [!NOTE]  
->  The syntax used in this example returns a Ribbon that was created by using the **Ribbon (Visual Designer)** item. The syntax for returning a Ribbon that is created by using a **Ribbon (XML)** item is slightly different. For more information about returning a **Ribbon (XML)** item, see [Ribbon XML](../vsto/ribbon-xml.md).  
+>  此範例中使用的語法會傳回使用所建立的功能區**功能區 （視覺化設計工具）**項目。 傳回功能區所建立的使用語法**功能區 (XML)**項目會有些許不同。 如需有關傳回**功能區 (XML)**項目，請參閱[功能區 XML](../vsto/ribbon-xml.md)。  
   
- Add the following code:  
+ 加入下列程式碼：  
   
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)] [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
+ [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
+ [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]  
   
-### <a name="related-topics"></a>Related Topics  
+### <a name="related-topics"></a>相關主題  
   
-|Title|Description|  
+|標題|說明|  
 |-----------|-----------------|  
-|[How to: Get Started Customizing the Ribbon](../vsto/how-to-get-started-customizing-the-ribbon.md)|Shows you how to customize the Ribbon of a Microsoft Office application, add a **Ribbon (Visual Designer)** or **Ribbon (XML)** item to an Office project.|  
-|[Ribbon Designer](../vsto/ribbon-designer.md)|Describes how you can use the Ribbon Designer to add custom tabs, groups, and controls to the Ribbon of a Microsoft Office application.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Shows you how to create a custom Ribbon tab by using the Ribbon Designer. You can use the Ribbon Designer to add and position controls on the custom tab.|  
-|[Ribbon Object Model Overview](../vsto/ribbon-object-model-overview.md)|Provides an overview of the strongly typed object model that you can use to get and set the properties of Ribbon controls at run time.|  
-|[Walkthrough: Updating the Controls on a Ribbon at Run Time](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstrates how to use the Ribbon object model to update the controls on a Ribbon after the Ribbon is loaded into the Office application.|  
-|[Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Provides guidance for customizing the Ribbon in Microsoft Office Outlook.|  
-|[Customizing a Ribbon for InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Provides guidance for customizing the Ribbon in Microsoft Office InfoPath.|  
-|[Accessing the Ribbon at Run Time](../vsto/accessing-the-ribbon-at-run-time.md)|Shows how to show, hide, and modify the Ribbon, and enable users to run the code from controls in a custom task pane, actions pane, or Outlook form region.|  
-|[How to: Change the Position of a Tab on the Ribbon](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Shows how to change the order of tabs on a Ribbon.|  
-|[How to: Customize a Built-in Tab](../vsto/how-to-customize-a-built-in-tab.md)|Shows how to add groups and controls to a built-in tab.|  
-|[How to: Add Controls to the Backstage View](../vsto/how-to-add-controls-to-the-backstage-view.md)|Shows how to add controls to the menu that opens when you click the **File**.|  
-|[How to: Add a Dialog Box Launcher to a Ribbon Group](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Shows to add a dialog box launcher to any group on a Ribbon.|  
-|[How to: Export a Ribbon from the Ribbon Designer to Ribbon XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Shows how to customize the Ribbon in advanced ways by exporting the Ribbon from the designer to Ribbon XML.|  
-|[Ribbon XML](../vsto/ribbon-xml.md)|Explains how you can customize a Ribbon by using Ribbon XML.|  
-|[Walkthrough: Creating a Custom Tab by Using the Ribbon Designer](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstrates how to create a custom Ribbon tab by using the **Ribbon (XML)** item.|  
+|[如何：開始自訂功能區](../vsto/how-to-get-started-customizing-the-ribbon.md)|示範如何自訂 Microsoft Office 應用程式的功能區、 新增**功能區 （視覺化設計工具）**或**功能區 (XML)**項目加入 Office 專案。|  
+|[功能區設計工具](../vsto/ribbon-designer.md)|說明如何使用功能區設計工具，在 Microsoft Office 應用程式的功能區中加入自訂的索引標籤、群組和控制項。|  
+|[逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|示範如何使用功能區設計工具建立自訂的功能區索引標籤。 您可以使用功能區設計工具，在自訂的索引標籤中加入和放置控制項。|  
+|[功能區物件模型概觀](../vsto/ribbon-object-model-overview.md)|提供可在執行階段取得和設定功能區控制項屬性之強類型物件模型的概觀。|  
+|[逐步解說：在執行階段更新功能區中的控制項](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|示範如何使用功能區物件模型，在功能區載入至 Office 應用程式之後，更新功能區上的控制項。|  
+|[自訂 Outlook 的功能區](../vsto/customizing-a-ribbon-for-outlook.md)|提供自訂 Microsoft Office Outlook 功能區的指導。|  
+|[自訂 InfoPath 的功能區](../vsto/customizing-a-ribbon-for-infopath.md)|提供自訂 Microsoft Office InfoPath 功能區的指導。|  
+|[在執行階段存取功能區](../vsto/accessing-the-ribbon-at-run-time.md)|示範如何顯示、隱藏和修改功能區，並且讓使用者從自訂工作窗格、執行窗格或 Outlook 表單區域中的控制項執行程式碼。|  
+|[如何：變更功能區索引標籤的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|示範如何變更功能區上的索引標籤順序。|  
+|[如何：自訂內建索引標籤](../vsto/how-to-customize-a-built-in-tab.md)|示範如何在內建索引標籤中加入群組和控制項。|  
+|[如何：將控制項新增至 Backstage 檢視](../vsto/how-to-add-controls-to-the-backstage-view.md)|示範如何將控制項加入至後按一下開啟功能表**檔案**。|  
+|[如何：在功能區群組中新增對話方塊啟動器](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|示範在功能區的任一群組中加入對話方塊啟動程式。|  
+|[如何：將功能區設計工具的功能區匯出至功能區 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|示範如何將設計工具的功能區匯出至功能區 XML，以使用進階方式自訂功能區。|  
+|[功能區 XML](../vsto/ribbon-xml.md)|說明如何使用功能區 XML 自訂功能區。|  
+|[逐步解說：使用功能區設計工具建立自訂的索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|示範如何建立自訂功能區索引標籤使用**功能區 (XML)**項目。|  
   
   

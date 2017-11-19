@@ -1,7 +1,7 @@
 ---
-title: Handle a concurrency exception | Microsoft Docs
+title: "處理並行例外狀況 |Microsoft 文件"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -17,215 +17,211 @@ helpviewer_keywords:
 - updating datasets, errors
 - concurrency control, walkthroughs
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 2108f18ae65e5ea5e6d12bcfc09aa1c5a1d3d4e3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 9162274d234c22e8bbe299389d2b41f57a69d714
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="handle-a-concurrency-exception"></a>Handle a concurrency exception
-Concurrency exceptions (<xref:System.Data.DBConcurrencyException>) are raised when two users attempt to change the same data in a database at the same time. In this walkthrough, you create a Windows application that illustrates how to catch a <xref:System.Data.DBConcurrencyException>, locate the row that caused the error, and learn a strategy for how to handle it.  
+# <a name="handle-a-concurrency-exception"></a>處理並行例外狀況
+並行存取例外狀況 (<xref:System.Data.DBConcurrencyException>) 兩位使用者試圖同時變更資料庫中相同的資料時，會引發。 在本逐步解說中，您可以建立 Windows 應用程式示範如何攔截<xref:System.Data.DBConcurrencyException>，找出造成錯誤之資料列，並了解如何處理它的策略。  
   
- This walkthrough takes you through the following process:  
+ 本逐步解說會引導您完成下列程序：  
   
-1.  Create a new **Windows Forms Application** project.  
+1.  建立新的 [Windows Forms 應用程式] 專案。  
   
-2.  Create a new dataset based on the Northwind `Customers` table.  
+2.  建立新的資料集，根據 Northwind`Customers`資料表。  
   
-3.  Create a form with a <xref:System.Windows.Forms.DataGridView> to display the data.  
+3.  建立的表單具有<xref:System.Windows.Forms.DataGridView>來顯示資料。  
   
-4.  Fill a dataset with data from the `Customers` table in the Northwind database.  
+4.  資料集填入來自資料`Customers`Northwind 資料庫中的資料表。  
   
-5.  Use the [Visual Database Tools](http://msdn.microsoft.com/en-us/6b145922-2f00-47db-befc-bf351b4809a1) in Visual Studio to directly access the `Customers` data table and change a record.  
+5.  使用**顯示資料表資料**功能**伺服器總管**存取`Customers`資料表的資料，以及變更記錄。  
   
-6.  Change the same record to a different value, update the dataset, and attempt to write the changes to the database, which results in a concurrency error being raised.  
+6.  將相同的記錄變更為不同的值，更新資料集，並嘗試將變更寫入至資料庫時，會導致引發並行錯誤。  
   
-7.  Catch the error, then display the different versions of the record, allowing the user to determine whether to continue and update the database, or to cancel the update.  
+7.  攔截到錯誤，然後顯示不同版本的記錄，讓使用者決定是否要繼續，並更新資料庫，或是取消更新。  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you need:  
+## <a name="prerequisites"></a>必要條件  
+本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
--   Access to the Northwind sample database with permission to perform updates. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
+  
+2.  安裝 Northwind 範例資料庫執行下列步驟：  
+
+    1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中安裝的一部份**資料儲存和處理**在 Visual Studio 安裝程式工作負載。)展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢...**.  
+
+       查詢編輯器視窗隨即開啟。  
+
+    2. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。  
+
+    3. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。  
+
+       在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or the edition that you're using. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  對話方塊與功能表命令，您會看到可能與根據您目前使用的設定或版本，您所使用的 [說明] 中描述的不同。 若要變更設定，請從 [ **工具** ] 功能表中選取 [ **匯入和匯出設定** ]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-## <a name="create-a-new-project"></a>Create a new project  
- You begin your walkthrough by creating a new Windows Forms application.  
+## <a name="create-a-new-project"></a>建立新專案  
+ 您開始您逐步解說中建立新的 Windows Form 應用程式。  
   
-#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms application project  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>若要建立新的 Windows Forms 應用程式專案  
   
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。  
 
-4. Name the project **ConcurrencyWalkthrough**, and then choose **OK**. 
+4. 將專案命名**ConcurrencyWalkthrough**，然後選擇 **確定**。 
   
-     The **ConcurrencyWalkthrough** project is created and added to **Solution Explorer**, and a new form opens in the designer.  
+     **ConcurrencyWalkthrough**建立專案並將其加入**方案總管 中**，並在設計工具中開啟新表單。  
   
-## <a name="create-the-northwind-dataset"></a>Create the Northwind dataset  
- In this section, you create a dataset named `NorthwindDataSet`.  
+## <a name="create-the-northwind-dataset"></a>建立 Northwind 資料集  
+ 在本節中，您會建立名為資料集`NorthwindDataSet`。  
   
-#### <a name="to-create-the-northwinddataset"></a>To create the NorthwindDataSet  
+#### <a name="to-create-the-northwinddataset"></a>若要建立 NorthwindDataSet  
   
-1.  On the **Data** menu, choose **Add New Data source**.  
+1.  在**資料**功能表上，選擇**加入新的資料來源**。  
   
-     The [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) opens.  
+     [資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)隨即開啟。  
   
-2.  On the **Choose a Data Source Type** screen, select **Database**.  
+2.  在**選擇資料來源類型**畫面上，選取**資料庫**。  
   
-3.  Select a connection to the Northwind sample database from the list of available connections. If the connection is not available in the list of connections, select **New Connection**  
+3.  從選取連接至 Northwind 範例資料庫的可用連線清單。 如果連接無法使用的連接清單中，選取**新連線**  
   
     > [!NOTE]
-    >  If you are connecting to a local database file, select **No** when asked if you would you like to add the file to your project.  
+    >  如果您要連接到本機資料庫檔案中，選取**否**當系統詢問您是否要將檔案加入您的專案。  
   
-4.  On the **Save connection string to the application configuration file** screen, select **Next**.  
+4.  在**將連接字串儲存到應用程式組態檔**畫面上，選取**下一步**。  
   
-5.  Expand the **Tables** node and select the `Customers` table. The default name for the dataset should be `NorthwindDataSet`.  
+5.  展開**資料表**節點，然後選取`Customers`資料表。 資料集的預設名稱應該是`NorthwindDataSet`。  
   
-6.  Select **Finish** to add the dataset to the project.  
+6.  選取**完成**將資料集加入至專案。  
   
-## <a name="create-a-data-bound-datagridview-control"></a>Create a data-bound DataGridView control  
- In this section, you create a <xref:System.Windows.Forms.DataGridView> by dragging the **Customers** item from the **Data Sources** window onto your Windows Form.  
+## <a name="create-a-data-bound-datagridview-control"></a>建立資料繫結 DataGridView 控制項  
+ 在本節中，您會建立<xref:System.Windows.Forms.DataGridView>拖曳**客戶**項目從**資料來源**視窗拖曳至 Windows 表單。  
   
-#### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>To create a DataGridView control that is bound to the Customers table  
+#### <a name="to-create-a-datagridview-control-that-is-bound-to-the-customers-table"></a>若要建立繫結至 Customers 資料表的 DataGridView 控制項  
   
-1.  On the **Data** menu, choose **Show Data Sources** to open the **Data Sources Window**.  
+1.  在**資料**功能表上，選擇**顯示資料來源**開啟**資料來源視窗**。  
   
-2.  In the **Data Sources** window, expand the **NorthwindDataSet** node, and then select the **Customers** table.  
+2.  在**資料來源**視窗中，展開  **NorthwindDataSet**節點，然後再選取**客戶**資料表。  
   
-3.  Select the down arrow on the table node, and then select **DataGridView** in the drop-down list.  
+3.  選取的資料表節點上，向下箭號，然後選取**DataGridView**下拉式清單中。  
   
-4.  Drag the table onto an empty area of your form.  
+4.  將資料表拖曳至表單的空白區域。  
   
-     A <xref:System.Windows.Forms.DataGridView> control named `CustomersDataGridView` and a <xref:System.Windows.Forms.BindingNavigator> named `CustomersBindingNavigator` are added to the form that's bound to the <xref:System.Windows.Forms.BindingSource>.This, is in, is turn bound to the `Customers` table in the `NorthwindDataSet`.  
+     A<xref:System.Windows.Forms.DataGridView>控制項，名為`CustomersDataGridView`和<xref:System.Windows.Forms.BindingNavigator>名為`CustomersBindingNavigator`加入至表單繫結至<xref:System.Windows.Forms.BindingSource>。這是在中，開啟繫結至`Customers`資料表中`NorthwindDataSet`。  
   
-## <a name="test-the-form"></a>Test the form  
- You can now test the form to make sure it behaves as expected up to this point.  
+## <a name="test-the-form"></a>測試表單  
+ 您現在可以測試表單，請確定它的行為如預期般為止。  
   
-#### <a name="to-test-the-form"></a>To test the form  
+#### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  Select **F5** to run the application  
+1.  選取**F5**執行應用程式  
   
-     The form appears with a <xref:System.Windows.Forms.DataGridView> control on it that's filled with data from the `Customers` table.  
+     表單隨即出現，並<xref:System.Windows.Forms.DataGridView>控制項在其上的填滿資料`Customers`資料表。  
   
-2.  On the **Debug** menu, select **Stop Debugging**.  
+2.  在**偵錯**功能表上，選取**停止偵錯**。  
   
-## <a name="handle-concurrency-errors"></a>Handle concurrency errors  
- How you handle errors depends on the specific business rules that govern your application. For this walkthrough, we use the following strategy as an example for how to handle the concurrency error.  
+## <a name="handle-concurrency-errors"></a>處理並行存取錯誤  
+ 處理錯誤的方式取決於特定的商務規則，以管理您的應用程式。 這個逐步解說中，我們可以使用下列策略做為並行錯誤的處理方式的範例。  
   
- The application presents the user with three versions of the record:  
+ 應用程式會對使用者顯示三個版本的記錄：  
   
--   The current record in the database  
+-   在資料庫中目前的記錄  
   
--   The original record that's loaded into the dataset  
+-   原始記錄中載入資料集  
   
--   The proposed changes in the dataset  
+-   在資料集中所提出之變更  
   
-The user is then able to either overwrite the database with the proposed version, or cancel the update and refresh the dataset with the new values from the database.  
+然後，使用者將能夠覆寫資料庫，以建議的版本，或取消更新並重新整理資料集與資料庫中的新值。  
   
-#### <a name="to-enable-the-handling-of-concurrency-errors"></a>To enable the handling of concurrency errors  
+#### <a name="to-enable-the-handling-of-concurrency-errors"></a>若要啟用的並行錯誤處理  
   
-1.  Create a custom error handler.  
+1.  建立自訂錯誤處理常式。  
   
-2.  Display choices to the user.  
+2.  選擇顯示給使用者。  
   
-3.  Process the user's response.  
+3.  處理使用者的回應。  
   
-4.  Resend the update, or reset the data in the dataset.  
+4.  重新傳送更新，或重設資料集內。  
   
-### <a name="add-code-to-handle-the-concurrency-exception"></a>Add code to handle the concurrency exception  
- When you attempt to perform an update and an exception gets raised, you generally want to do something with the information that's provided by the raised exception.  
+### <a name="add-code-to-handle-the-concurrency-exception"></a>加入程式碼來處理並行例外狀況  
+ 當您嘗試執行更新，並引發例外狀況時，您通常會想要運用提供所引發的例外狀況的資訊。  
   
- In this section, you add code that  attempts to update the database. You also handle any <xref:System.Data.DBConcurrencyException> that might get raised, as well as any other exceptions.  
+ 在本節中，您可以加入嘗試更新資料庫的程式碼。 您也處理任何<xref:System.Data.DBConcurrencyException>，可能會取得會引發，以及任何其他例外狀況。  
   
 > [!NOTE]
->  The `CreateMessage` and `ProcessDialogResults` methods will be added later in this walkthrough.  
+>  `CreateMessage`和`ProcessDialogResults`方法將會加入稍後在本逐步解說。  
   
-##### <a name="to-add-error-handling-for-the-concurrency-error"></a>To add error handling for the concurrency error  
+##### <a name="to-add-error-handling-for-the-concurrency-error"></a>若要加入的並行錯誤錯誤處理  
   
-1.  Add the following code below the `Form1_Load` method:  
+1.  加入下列程式碼下方`Form1_Load`方法：  
   
      [!code-csharp[VbRaddataConcurrency#1](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_1.cs)]
      [!code-vb[VbRaddataConcurrency#1](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_1.vb)]  
   
-2.  Replace the `CustomersBindingNavigatorSaveItem_Click` method to call the `UpdateDatabase` method so it looks like the following:  
+2.  取代`CustomersBindingNavigatorSaveItem_Click`方法呼叫`UpdateDatabase`方法，使它看起來如下：  
   
      [!code-csharp[VbRaddataConcurrency#2](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_2.cs)]
      [!code-vb[VbRaddataConcurrency#2](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_2.vb)]  
   
-### <a name="display-choices-to-the-user"></a>Display choices to the user  
- The code you just wrote calls the `CreateMessage` procedure to display error information to the user. For this walkthrough, you use a message box to display the different versions of the record to the user. This enables the user to choose whether to overwrite the record with the changes or cancel the edit. Once the user selects an option (clicks a button) on the message box, the response is passed to the `ProcessDialogResult` method.  
+### <a name="display-choices-to-the-user"></a>選擇顯示給使用者  
+ 您剛才的程式碼撰寫呼叫`CreateMessage`程序，以向使用者顯示資訊時發生錯誤。 這個逐步解說中，您可以使用訊息方塊向使用者顯示不同的版本記錄。 這可讓使用者選擇是否要覆寫記錄，以變更或取消編輯。 一旦使用者訊息方塊上，選取 （按下按鈕） 的選項，回應會傳遞至`ProcessDialogResult`方法。  
   
-##### <a name="to-create-the-message-to-display-to-the-user"></a>To create the message to display to the user  
+##### <a name="to-create-the-message-to-display-to-the-user"></a>若要建立要向使用者顯示的訊息  
   
--   Create the message by adding the following code to the **Code Editor**. Enter this code below the `UpdateDatabase` method.  
+-   加入下列程式碼來建立的訊息**程式碼編輯器**。 輸入以下這個程式碼`UpdateDatabase`方法。  
   
      [!code-csharp[VbRaddataConcurrency#4](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_3.cs)]
      [!code-vb[VbRaddataConcurrency#4](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_3.vb)]  
   
-### <a name="process-the-users-response"></a>Process the user's response  
- You also need code to process the user's response to the message box. The options are either to overwrite the current record in the database with the proposed change, or abandon the local changes and refresh the data table with the record that's currently in the database. If the user chooses yes, the <xref:System.Data.DataTable.Merge%2A> method is called with the *preserveChanges* argument set to `true`. This causes the update attempt to be successful, because the original version of the record now matches the record in the database.  
+### <a name="process-the-users-response"></a>處理使用者的回應  
+ 您也需要處理使用者的回應訊息方塊的程式碼。 有兩個選項提議的變更，以覆寫在資料庫中目前的記錄或放棄本機變更並重新整理與目前資料庫中的記錄資料表。 如果使用者選擇 [是]，<xref:System.Data.DataTable.Merge%2A>方法呼叫*preserveChanges*引數設定為`true`。 這會導致更新嘗試會成功，因為該記錄的原始版本現在符合資料庫中的記錄。  
   
-##### <a name="to-process-the-user-input-from-the-message-box"></a>To process the user input from the message box  
+##### <a name="to-process-the-user-input-from-the-message-box"></a>若要處理使用者輸入的訊息方塊  
   
--   Add the following code below the code that was added in the previous section.  
+-   加入下列程式碼是在上一節中新增的程式碼底下。  
   
      [!code-csharp[VbRaddataConcurrency#3](../data-tools/codesnippet/CSharp/handle-a-concurrency-exception_4.cs)]
      [!code-vb[VbRaddataConcurrency#3](../data-tools/codesnippet/VisualBasic/handle-a-concurrency-exception_4.vb)]  
   
-## <a name="test-the-form"></a>Test the form  
- You can now test the form to make sure it behaves as expected. To simulate a concurrency violation you need to change data in the database after filling the NorthwindDataSet.  
+## <a name="test-the-form"></a>測試表單  
+ 您現在可以測試表單，以確定其如預期般運作。 若要模擬並行存取違規，您需要變更資料庫中的資料之後填入 NorthwindDataSet。  
   
-#### <a name="to-test-the-form"></a>To test the form  
+#### <a name="to-test-the-form"></a>若要測試表單  
   
-1.  Select **F5** to run the application.  
+1.  選取**F5**執行應用程式。  
   
-2.  After the form appears, leave it running and switch to the Visual Studio IDE.  
+2.  顯示表單後，讓它繼續執行，並切換至 Visual Studio IDE。  
   
-3.  On the **View** menu, choose **Server Explorer**.  
+3.  在**檢視**功能表上，選擇**伺服器總管**。  
   
-4.  In **Server Explorer**, expand the connection your application is using, and then expand the **Tables** node.  
+4.  在**伺服器總管**，依序展開 的連線您的應用程式是使用，然後展開**資料表**節點。  
   
-5.  Right-click the **Customers** table, and then select **Show Table Data**.  
+5.  以滑鼠右鍵按一下**客戶**資料表，，然後選取**顯示資料表資料**。  
   
-6.  In the first record (`ALFKI`) change `ContactName` to `Maria Anders2`.  
+6.  在第一筆記錄 (`ALFKI`) 變更`ContactName`至`Maria Anders2`。  
   
     > [!NOTE]
-    >  Navigate to a different row to commit the change.  
+    >  瀏覽至不同的資料列，以認可變更。  
   
-7.  Switch to the `ConcurrencyWalkthrough`'s running form.  
+7.  切換至`ConcurrencyWalkthrough`執行表單。  
   
-8.  In the first record on the form (`ALFKI`), change`ContactName` to `Maria Anders1`.  
+8.  在表單上的第一個資料錄 (`ALFKI`)，變更`ContactName`至`Maria Anders1`。  
   
-9. Select the **Save** button.  
+9. 選取**儲存** 按鈕。  
   
-     The concurrency error is raised, and the message box appears.  
+     並行引發錯誤，而且會出現訊息方塊。  
   
-10. Selecting **No** cancels the update and updates the dataset with the values that are currently in the database. Selecting **Yes** writes the proposed value to the database.  
+10. 選取**否**取消更新並更新資料集是目前資料庫中的值。 選取**是**寫入資料庫中的建議的值。  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
-
+## <a name="see-also"></a>另請參閱  
+ [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

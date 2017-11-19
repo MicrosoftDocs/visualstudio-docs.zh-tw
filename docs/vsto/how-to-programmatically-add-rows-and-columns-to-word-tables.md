@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Add Rows and Columns to Word Tables | Microsoft Docs'
+title: "如何： 以程式設計方式將資料列和資料行加入至 Word 表格 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,70 +15,73 @@ helpviewer_keywords:
 - tables [Office development in Visual Studio], adding rows and columns
 - columns [Office development in Visual Studio], adding to Word tables
 ms.assetid: 01a9b6ca-1373-4a6e-b9e6-2225a1321daf
-caps.latest.revision: 42
-author: kempb
-ms.author: kempb
+caps.latest.revision: "42"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2fa335afd18ffb43341b4fcd64d97903071484e4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: bbe1ad8bea69f7d91b7796bae7cc03880fef7b04
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>How to: Programmatically Add Rows and Columns to Word Tables
-  In a Microsoft Office Word table, the cells are organized into rows and columns. You can use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Rows> object to add rows to the table and the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method of the <xref:Microsoft.Office.Interop.Word.Columns> object to add columns.  
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以程式設計方式在 Word 表格中加入列和欄
+  在 Microsoft Office Word 表格中，儲存格會組織成資料列和資料行。 您可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 物件的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法新增資料表的資料列，以及使用 <xref:Microsoft.Office.Interop.Word.Columns> 物件的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法來新增資料行。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="document-level-customization-examples"></a>Document-Level Customization Examples  
- The following code examples can be used in a document-level customization. To use these examples, run them from the `ThisDocument` class in your project. These examples assume that the document associated with your customization already has at least one table.  
+## <a name="document-level-customization-examples"></a>文件層級自訂範例  
+ 下列程式碼範例可以用於文件層級自訂。 若要使用這些範例，請從專案的 `ThisDocument` 類別中執行它們。 這些範例假設與您自訂相關聯的文件已經有至少一張資料表。  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using any of the following project templates:  
+>  只有在使用下列任何專案範本建立的專案中，才能執行此程式碼：  
 >   
->  -   Word 2013 Document  
-> -   Word 2013 Template  
-> -   Word 2010 Document  
-> -   Word 2010 Template  
+>  -   Word 2013 文件  
+> -   Word 2013 範本  
+> -   Word 2010 文件  
+> -   Word 2010 範本  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Word** assembly, and then you must use classes from that assembly to add rows and columns to tables. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱[How to： 目標 Office 應用程式透過主要 Interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
-#### <a name="to-add-a-row-to-a-table"></a>To add a row to a table  
+#### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method to add a row to the table.  
+1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]  [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]  
+     [!code-vb[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#95)]
+     [!code-csharp[Trin_VstcoreWordAutomation#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>To add a column to a table  
+#### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method, and then use the <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> method to make all the columns the same width.  
+1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]  [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]  
+     [!code-vb[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#96)]
+     [!code-csharp[Trin_VstcoreWordAutomation#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#96)]  
   
-## <a name="vsto-add-in-examples"></a>VSTO Add-in Examples  
- The following code examples can be used in a VSTO Add-in. To use the examples, run them from the `ThisAddIn` class in your project. These examples assume that the active document already has at least one table.  
+## <a name="vsto-add-in-examples"></a>VSTO 增益集範例  
+ 下列程式碼範例可以用於 VSTO 增益集。 若要使用這些範例，請從專案的 `ThisAddIn` 類別中執行它們。 這些範例假設使用中文件已經有至少一張資料表。  
   
 > [!IMPORTANT]  
->  This code runs only in projects that you create by using Word VSTO Add-in templates.  
+>  只有在使用 Word VSTO 增益集範本建立的專案中，才能執行此程式碼。  
 >   
->  If you want to perform this task in any other type of project, you must add a reference to the **Microsoft.Office.Interop.Word** assembly, and then you must use classes from that assembly to add rows and columns to tables. For more information, see [How to: Target Office Applications Through Primary Interop Assemblies](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) and [Word 2010 Primary Interop Assembly Reference](http://go.microsoft.com/fwlink/?LinkId=189588).  
+>  如果您想要執行這項工作中任何其他類型的專案，您必須加入參考**Microsoft.Office.Interop.Word**組件，然後必須使用該組件中的類別來加入資料表中的資料列和資料行。 如需詳細資訊，請參閱[How to： 目標 Office 應用程式透過主要 Interop 組件](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)和[Word 2010 主要 Interop 組件參考](http://go.microsoft.com/fwlink/?LinkId=189588)。  
   
-#### <a name="to-add-a-row-to-a-table"></a>To add a row to a table  
+#### <a name="to-add-a-row-to-a-table"></a>在資料表中新增群組  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> method to add a row to the table.  
+1.  使用 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法，以在資料表中新增資料列。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#95)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#95](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#95)]  
   
-#### <a name="to-add-a-column-to-a-table"></a>To add a column to a table  
+#### <a name="to-add-a-column-to-a-table"></a>在資料表中新增資料行  
   
-1.  Use the <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> method, and then use the <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> method to make all the columns the same width.  
+1.  使用 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法，然後使用 <xref:Microsoft.Office.Interop.Word.Columns.DistributeWidth%2A> 方法將所有資料行都設為相同寬度。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#96)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#96](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#96)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Create Word Tables](../vsto/how-to-programmatically-create-word-tables.md)   
- [How to: Programmatically Add Text and Formatting to Cells in Word Tables](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
- [How to: Programmatically Populate Word Tables with Document Properties](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計方式建立 Word 表格](../vsto/how-to-programmatically-create-word-tables.md)   
+ [如何： 以程式設計方式加入文字和格式在 Word 表格的儲存格](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)   
+ [如何：以程式設計方式將文件屬性填入 Word 表格](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)  
   
   

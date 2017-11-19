@@ -1,64 +1,65 @@
 ---
-title: "組件項目 (Visual Studio 範本精靈擴充) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Assembly"
-helpviewer_keywords: 
-  - "Assembly 項目 [Visual Studio 範本精靈擴充]"
-  - "< y > 項目 [Visual Studio 範本精靈擴充]"
+title: "Assembly 項目 （Visual Studio 範本精靈擴充） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Assembly
+helpviewer_keywords:
+- Assembly element [Visual Studio Template Wizard Extension]
+- <Assembly> element [Visual Studio Template Wizard Extension]
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2adc2113d9ce1fbc2a80c9465ce403f03fc42db5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 組件項目 (Visual Studio 範本精靈擴充)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定的名稱或實作的組件的強式名稱 `IWizard` 介面。  
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>組件項目 (Visual Studio 範本精靈擴充)
+指定的名稱或實作的組件的強式名稱`IWizard`介面。  
   
- \<VSTemplate\>  
-\<WizardExtension\>  
-\<Assembly\>  
+ \<VSTemplate >  
+\<WizardExtension >  
+\<組件 >  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Assembly>AssemblyName</Assembly>  
 ```  
   
-## 屬性和項目  
+## <a name="attributes-and-elements"></a>屬性和項目  
  下列章節將說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
  無。  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
-|--------|--------|  
+|項目|說明|  
+|-------------|-----------------|  
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|包含自訂範本精靈的註冊項目。|  
   
-## 文字值  
+## <a name="text-value"></a>文字值  
  需要文字值。  
   
- 此文字會指定實作的組件 `IWizard` 介面。 必須指定這個組件名稱做為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
+ 此文字會指定實作的組件`IWizard`介面。 必須指定這個組件名稱做為完整的組件名稱。 例如，`MyAssembly, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11dd0a3a, Custom = null`。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  `Assembly` 是 `WizardExtension` 的必要子項目。  
   
-## 範例  
- 下列範例說明標準的專案範本的中繼資料 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 應用程式。  
+## <a name="example"></a>範例  
+ 下列範例說明標準的專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]Windows 應用程式。  
   
 ```  
 <VSTemplate Version="3.0.0" Type="Item"  
@@ -88,7 +89,7 @@ caps.handback.revision: 12
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
- [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
+ [如何︰搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)

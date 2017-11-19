@@ -1,56 +1,56 @@
 ---
-title: "UNMANAGED_ADDRESS_PHYSICAL | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "UNMANAGED_ADDRESS_PHYSICAL"
-helpviewer_keywords: 
-  - "UNMANAGED_ADDRESS_PHYSICAL 結構"
+title: "UNMANAGED_ADDRESS_PHYSICAL |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: UNMANAGED_ADDRESS_PHYSICAL
+helpviewer_keywords: UNMANAGED_ADDRESS_PHYSICAL structure
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 2a553d785f0602ccc2bb785e32d7cebfe131b3e7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# UNMANAGED_ADDRESS_PHYSICAL
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個結構是表示實體的位址。  
+# <a name="unmanagedaddressphysical"></a>UNMANAGED_ADDRESS_PHYSICAL
+此結構表示的實體位址。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 typedef struct _tagUNMANAGED_ADDRESS_PHYSICAL {  
-   ULONGLONG offset;  
+   ULONGLONG offset;  
 } UNMANAGED_ADDRESS_PHYSICAL;  
 ```  
   
-```c#  
+```csharp  
 public struct UNMANAGED_ADDRESS_PHYSICAL {  
-   public ulong offset;  
+   public ulong offset;  
 }  
 ```  
   
-## 詞彙  
+## <a name="terms"></a>詞彙  
  位移  
- 64 位元位移，在實體位址空間中。  
+ 64 位元位移的實體位址空間。  
   
-## 備註  
- 這個結構屬於等位中的[DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位的`DEBUG_ADDRESS_UNION`結構設定為 \[ `ADDRESS_KIND_UNMANAGED_PHYSICAL` \(介於[ADDRESS\_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別\)。  
+## <a name="remarks"></a>備註  
+ 這個結構是中的等位的一部分[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)結構時`dwKind`欄位`DEBUG_ADDRESS_UNION`結構設為`ADDRESS_KIND_UNMANAGED_PHYSICAL`(介於[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)列舉型別）。  
   
-## 需求  
- 標頭: sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [DEBUG\_ADDRESS\_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
+ [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

@@ -1,34 +1,36 @@
 ---
-title: "方案 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Vspackage 的解決方案"
-  - "VSPackages 解決方案"
+title: "解決方案 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- solutions, VSPackages
+- VSPackages, solutions
 ms.assetid: 78c6ac4b-6817-4bf3-ae2f-053e4ff96d17
-caps.latest.revision: 19
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 19
+caps.latest.revision: "19"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 8b4bc84546daaa6e2404707b6663aa65e8309870
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 方案
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-解決方案是一群共同建立應用程式的一個或多個專案。 屬於方案的專案和狀態資訊會儲存在兩個方案檔案、 文字為基礎的方案 \(.sln\) 檔和二進位方案使用者選項 \(.suo\) 檔案。  
+# <a name="solutions"></a>方案
+方案是建立應用程式一起運作的一或多個專案的群組。 屬於方案的專案和狀態資訊會儲存在兩個方案檔案，以文字為基礎的方案 (.sln) 檔案和二進位的解決方案使用者選項 (.suo) 檔案。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [概觀](../../extensibility/internals/solutions-overview.md)  
  討論方案，並開啟方案時所發生的程序中所包含的方案檔類型。  
   
-## 相關章節  
- [方案 \(。Sln\) 檔案](../../extensibility/internals/solution-dot-sln-file.md)  
+## <a name="related-sections"></a>相關章節  
+ [方案檔 (.Sln)](../../extensibility/internals/solution-dot-sln-file.md)  
  說明.sln 檔案的結構。  
   
- [方案使用者選項 \(。Suo\) 檔案](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
+ [方案使用者選項檔 (.Suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md)  
  說明.suo 檔案。

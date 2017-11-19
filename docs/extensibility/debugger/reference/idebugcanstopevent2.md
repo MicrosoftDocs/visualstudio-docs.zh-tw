@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugCanStopEvent2
-helpviewer_keywords:
-- IDebugBreakpointRequest2 interface
+f1_keywords: IDebugCanStopEvent2
+helpviewer_keywords: IDebugBreakpointRequest2 interface
 ms.assetid: 784bd5b1-4a3f-4455-b313-c4c9a82555a5
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 00cfe8409762119c15cbe188b1a20b7a6466ea4a
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 585e1c8760152c9c42e1950c45d3e3821bbe93df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 這個介面用來要求工作階段的偵錯管理員 (SDM) 是否要停止在目前的程式碼位置。  
@@ -67,11 +51,11 @@ IDebugCanStopEvent2 : IUknown
  如果使用者會逐步執行函式，以 DE 尋找那里無偵錯資訊，或是偵錯資訊存在但是 DE 不知道如果可以顯示該位置的原始程式碼，DE 傳送這個介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)   

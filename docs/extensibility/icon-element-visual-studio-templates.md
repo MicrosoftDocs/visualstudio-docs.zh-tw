@@ -1,29 +1,33 @@
 ---
-title: "圖示項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#Icon"
-helpviewer_keywords: 
-  - "Icon 項目 [Visual Studio 專案範本]"
+title: "圖示項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#Icon
+helpviewer_keywords: Icon element [Visual Studio project templates]
 ms.assetid: ec01d903-f4c2-4ca2-9cbc-e939ec84016c
-caps.latest.revision: 14
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 00dd81c93e089a840c99efbd6165f005aff88b57
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 圖示項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-指定影像檔的路徑和檔名，這個影像檔將出現在 \[**新增專案**\] 或 \[**加入新項目**\] 對話方塊中做為範本圖示。  
+# <a name="icon-element-visual-studio-templates"></a>圖示項目 (Visual Studio 範本)
+指定的路徑和檔名做為圖示時，它會出現在 映像檔的**新專案**或**加入新項目**對話方塊範本。  
   
-## 語法  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<圖示 >  
+  
+## <a name="syntax"></a>語法  
   
 ```  
 <Icon>  
@@ -35,35 +39,35 @@ caps.handback.revision: 14
 <Icon Package="{PackageID}" ID="ResourceID" />  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
-|屬性|描述|  
-|--------|--------|  
-|`Package`|選擇性屬性，適用於進階使用者案例。<br /><br /> 指定 Visual Studio 封裝識別碼的 GUID。|  
-|`ID`|選擇性屬性，適用於進階使用者案例。<br /><br /> 指定 Visual Studio 資源 ID。|  
+|屬性|說明|  
+|---------------|-----------------|  
+|`Package`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 封裝的 GUID 識別碼。|  
+|`ID`|選擇性屬性，進階的使用者案例。<br /><br /> 指定 Visual Studio 的資源 id。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|元素|描述|  
-|--------|--------|  
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 為範本分類，並定義在 \[**新增專案**\] 或 \[**加入新項目**\] 對話方塊中範本的顯示方式。|  
+|項目|描述|  
+|-------------|-----------------|  
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必要項目。<br /><br /> 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。|  
   
-## 文字值  
- 除非使用 `Package` 和 `ID` 屬性，否則需要文字值。  
+## <a name="text-value"></a>文字值  
+ 需要文字值，除非`Package`和`ID`屬性可用。  
   
- 此文字提供將在 \[**新增專案**\] 對話方塊中出現的範本圖示之路徑和檔名。  
+ 文字提供路徑和檔案的名稱會出現在範本圖示**新專案** 對話方塊。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  `Icon` 是 `TemplateData` 的必要子項目。  
   
-## 範例  
- 下列程式碼範例會示範 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 應用程式專案範本的中繼資料。  
+## <a name="example"></a>範例  
+ 下列範例會顯示專案範本的中繼資料[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]應用程式。  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  
@@ -89,6 +93,6 @@ caps.handback.revision: 14
 </VSTemplate>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)

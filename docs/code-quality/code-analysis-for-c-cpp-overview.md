@@ -1,55 +1,55 @@
 ---
-title: "C/C++ 程式碼分析概觀 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-devops-test"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "#pragma 指示詞, 程式碼分析"
-  - "附註, 程式碼分析"
-  - "建置整合, 程式碼分析"
-  - "C, 程式碼分析"
-  - "C/C++ 程式碼分析"
-  - "C++, 程式碼分析"
-  - "簽入原則, 程式碼分析"
-  - "程式碼分析工具"
-  - "程式碼分析, C/C++"
-  - "命令列, 程式碼分析"
-  - "IDE, 程式碼分析"
-  - "pragma 指示詞, 程式碼分析"
+title: "程式碼分析 C/c + + 的概觀 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-code-analysis
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- annotations, code analysis
+- build integration, code analysis
+- C/C++ code analysis
+- IDE, code analysis
+- pragma directive, code analysis
+- code analysis, C/C++
+- code analysis tool
+- command line, code analysis
+- C++, code analysis
+- check-in policies, code analysis
+- '#pragma directives, code analysis'
+- C, code analysis
 ms.assetid: 81f0c9e8-f471-4de5-aac4-99db336a8809
-caps.latest.revision: 25
-caps.handback.revision: 25
-author: "corob-msft"
-ms.author: "corob"
-manager: "ghogen"
+caps.latest.revision: "25"
+author: mikeblome
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/15/2017
 ---
-# C/C++ 程式碼分析概觀
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-C\/C\+\+ 程式碼分析工具會將 C\/C\+\+ 原始程式碼中可能的缺失資訊提供給程式開發人員。  由這個工具所報告的常見程式碼錯誤包括：緩衝區滿溢、未初始化的記憶體、null 指標取值以及記憶體和資源流失。  
+# <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
+C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相關資訊提供給開發人員。 這個工具所報告的常見程式碼撰寫錯誤包括緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。  
   
-## IDE \(整合式開發環境\) 整合  
- 為了讓程式開發人員可以自然而然地加以使用，分析工具已經完整地整合在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中。  在建置程序期間，針對原始程式碼所產生的警告都會出現在 \[錯誤清單\] 中。  您可以巡覽至造成警告的原始程式碼，而且可以檢視關於原因以及可行解決方法的其他資訊。  
+## <a name="ide-integrated-development-environment-integration"></a>IDE (整合式開發環境) 整合  
+ 若要讓自然適用於開發人員分析工具的用法，它會完整地整合在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 建置程序期間所產生的原始碼的警告會出現在錯誤清單。 您可以瀏覽至造成警告的原始程式碼，您可以檢視有關原因和可能的解決方案，問題的其他資訊。  
   
-## \#pragma 支援  
- 程式開發人員可以使用 `#pragma` 指示詞將警告視為錯誤、啟用或停用警告，以及隱藏個別程式碼行的警告。  如需詳細資訊，請參閱[How to: Enable and Disable Code Analysis for Specific C\/C\+\+ Warnings](http://msdn.microsoft.com/zh-tw/910b8518-71f1-4b2e-b012-70647795642a)。  
+## <a name="pragma-support"></a>#pragma 支援  
+ 開發人員可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行的警告。 如需詳細資訊，請參閱[How to： 啟用和停用特定的 C/c + + 警告的程式碼分析](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a)。  
   
-## 附註支援  
- 附註能夠提升程式碼分析的準確性，  因為它們會提供函式參數和傳回值型別之 Pre 和 Post 條件的額外資訊。  如需詳細資訊，請參閱[如何：使用 \_\_analysis\_assume 指定其他程式碼資訊](../Topic/How%20to:%20Specify%20Additional%20Code%20Information%20by%20Using%20__analysis_assume.md)。  
+## <a name="annotation-support"></a>附註支援  
+ 註解改善程式碼分析的精確度。 註釋提供前置和後置條件的其他資訊在函式參數和傳回型別。 如需詳細資訊，請參閱[How to： 使用 __analysis_assume 指定其他的程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  
   
-## 執行分析工具做為簽入原則的一部分  
- 您可能想指定所有的原始程式碼簽入都要滿足特定的原則，  尤其是您會想要確定分析會做為最新本機組建的步驟之一執行。  如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
+## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>簽入原則的一部分執行分析工具  
+ 您可以在需要所有來源的程式碼簽入都滿足特定的原則。 特別是，您會想要確定在步驟中的最新的本機組建已執行分析。 如需啟用程式碼分析簽入原則的詳細資訊，請參閱[建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
-## Team Build 整合  
- 您可以使用建置系統的整合式功能，執行程式碼分析工具做為 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)] 建置程序的步驟之一。  如需詳細資訊，請參閱[建置應用程式](../Topic/Build%20the%20application.md)。  
+## <a name="team-build-integration"></a>Team Build 整合  
+ 您可以使用建置系統的整合式的功能的步驟執行程式碼分析工具[!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]建置程序。 如需詳細資訊，請參閱[建置應用程式](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)。  
   
-## 命令列支援  
- 除了完全整合在開發環境中之外，程式開發人員也可以從命令列使用分析工具，如以下範例所示：  
+## <a name="command-line-support"></a>命令列支援  
+ 除了在開發環境中完整的整合，開發人員也可以使用分析工具，從命令列中，如下列範例所示：  
   
  `C:\>cl /analyze Sample.cpp`

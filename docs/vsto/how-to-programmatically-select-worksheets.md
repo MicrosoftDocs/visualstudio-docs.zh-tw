@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Select Worksheets | Microsoft Docs'
+title: "如何： 以程式設計方式選取工作表 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,52 +14,53 @@ helpviewer_keywords:
 - worksheets, selecting
 - Excel projects, selecting worksheets
 ms.assetid: 9e7cdb11-e825-4c9f-abcd-d46fd20dc5e0
-caps.latest.revision: 44
-author: kempb
-ms.author: kempb
+caps.latest.revision: "44"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9330eb3deebcd7eb254b0f664b222566c29271b8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 2dcd68c96d06613e67b4fdafafecdbbff780eae4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-select-worksheets"></a>How to: Programmatically Select Worksheets
-  The <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> method selects the specified object, which moves the user's selection to the new object. Use the <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> method if you want to bring focus to the object without changing the user's selection.  
+# <a name="how-to-programmatically-select-worksheets"></a>如何：以程式設計方式選取工作表
+  <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 方法會選取指定的物件，將使用者選取的項目移到新物件。 如果您要將焦點置於這個物件而不變更使用者的選取範圍，請使用 <xref:Microsoft.Office.Tools.Excel.Worksheet.Activate%2A> 方法。  
   
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]  
   
- If you want to select an existing worksheet in a VSTO Add-in or if the worksheet was created at run time in a document-level customization, you must access it by using the Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection of the Excel workbook; otherwise, you can access the <xref:Microsoft.Office.Tools.Excel.Worksheet> host item directly.  
+ 如果要選取 VSTO 增益集中的現有工作表，或者該工作表是在執行階段於文件層級自訂中所建立，則您必須使用 Excel 活頁簿的 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取該工作表，否則就要直接存取 <xref:Microsoft.Office.Tools.Excel.Worksheet> 主項目。  
   
-## <a name="using-the-worksheet-host-item"></a>Using the Worksheet Host Item  
- In a document-level customization, add the following code to **Sheet1.vb** or **Sheet1.cs**.  
+## <a name="using-the-worksheet-host-item"></a>使用工作表主項目  
+ 文件層級自訂時，加入下列程式碼加入**Sheet1.vb**或**Sheet1.cs**。  
   
-#### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>To select the first worksheet in a workbook using a host item  
+#### <a name="to-select-the-first-worksheet-in-a-workbook-using-a-host-item"></a>使用主項目選取活頁簿中的第一個工作表  
   
-1.  Call the <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> method of `Sheet1`.  
+1.  呼叫 <xref:Microsoft.Office.Tools.Excel.Worksheet.Select%2A> 的 `Sheet1` 方法。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]  [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#19)]
+     [!code-vb[Trin_VstcoreExcelAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#19)]  
   
-## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>Using the Sheets Collection of the Excel Workbook  
- Access the worksheet by using the Excel <xref:Microsoft.Office.Interop.Excel.Sheets> collection.  
+## <a name="using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的工作表集合  
+ 請使用 Excel <xref:Microsoft.Office.Interop.Excel.Sheets> 集合存取工作表。  
   
-#### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>To select the first worksheet in a workbook using the Sheets collection of the Excel workbook  
+#### <a name="to-select-the-first-worksheet-in-a-workbook-using-the-sheets-collection-of-the-excel-workbook"></a>使用 Excel 活頁簿的 Sheets 集合選取活頁簿中的第一份工作表  
   
-1.  Call the <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> method of the <xref:Microsoft.Office.Interop.Excel.Sheets> collection to select the first worksheet of the active workbook.  
+1.  請呼叫 <xref:Microsoft.Office.Interop.Excel.Sheets> 集合的 <xref:Microsoft.Office.Interop.Excel.Sheets.Select%2A> 方法，選取現用活頁簿中的第一份工作表。  
   
-     [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]  [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]  
+     [!code-csharp[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#20)]
+     [!code-vb[Trin_VstcoreExcelAutomation#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#20)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Worksheets](../vsto/working-with-worksheets.md)   
- [How to: Programmatically Print Worksheets](../vsto/how-to-programmatically-print-worksheets.md)   
- [How to: Programmatically Delete Worksheets from Workbooks](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
- [How to: Programmatically Hide Worksheets](../vsto/how-to-programmatically-hide-worksheets.md)   
- [How to: Programmatically Protect Worksheets](../vsto/how-to-programmatically-protect-worksheets.md)   
- [Worksheet Host Item](../vsto/worksheet-host-item.md)   
- [Global Access to Objects in Office Projects](../vsto/global-access-to-objects-in-office-projects.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用工作表](../vsto/working-with-worksheets.md)   
+ [如何： 以程式設計方式列印工作表](../vsto/how-to-programmatically-print-worksheets.md)   
+ [如何： 以程式設計方式從活頁簿刪除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)   
+ [如何： 以程式設計方式隱藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)   
+ [如何： 以程式設計方式保護工作表](../vsto/how-to-programmatically-protect-worksheets.md)   
+ [工作表主項目](../vsto/worksheet-host-item.md)   
+ [全域存取 Office 專案中的物件](../vsto/global-access-to-objects-in-office-projects.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)   
- [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)  
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)   
+ [主項目和主控制項概觀](../vsto/host-items-and-host-controls-overview.md)  
   
   

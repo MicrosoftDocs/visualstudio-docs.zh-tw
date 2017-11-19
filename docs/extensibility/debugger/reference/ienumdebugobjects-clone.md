@@ -1,51 +1,51 @@
 ---
-title: "IEnumDebugObjects::Clone | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugObjects::Clone"
-helpviewer_keywords: 
-  - "IEnumDebugObjects::Clone 方法"
+title: "IEnumDebugObjects::Clone |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugObjects::Clone
+helpviewer_keywords: IEnumDebugObjects::Clone method
 ms.assetid: cb7df109-d29a-4218-b900-6809091459dd
-caps.latest.revision: 5
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 19d36d2e08d6cb284e08083ec1d1fe14cd48caec
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugObjects::Clone
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會傳回一份目前的列舉型別為個別物件。  
+# <a name="ienumdebugobjectsclone"></a>IEnumDebugObjects::Clone
+這個方法會傳回目前列舉為個別物件的複本。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Clone(  
-   IEnumDebugObjects** ppEnum  
+   IEnumDebugObjects** ppEnum  
 );  
 ```  
   
-```c#  
+```csharp  
 int Clone(  
-   out IEnumDebugObjects ppEnum  
+   out IEnumDebugObjects ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppEnum`  
- \[\] out傳回這個列舉型別，為個別物件的複本。  
+ [out]傳回這個列舉型別為個別物件的複本。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 列舉型別的複製，會呼叫這個方法只有在有與原始檔案相同的狀態。  不過，副本和原本的狀態是分開，且可以個別變更。  
+## <a name="remarks"></a>備註  
+ 列舉的副本會呼叫這個方法只有在有相同的原始狀態。 不過，複製和原始的狀態分開的而且可以個別變更。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

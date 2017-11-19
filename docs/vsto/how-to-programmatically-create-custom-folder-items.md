@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Create Custom Folder Items | Microsoft Docs'
+title: "如何： 以程式設計方式建立自訂資料夾項目 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,28 +14,27 @@ helpviewer_keywords:
 - Outlook folders [Office development in Visual Studio], creating
 - Outlook folders [Office development in Visual Studio], custom
 ms.assetid: 5af5b11c-3911-46fa-8a80-413c23b4f2b5
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 74d07b4a4ce4b8c2acc25c0d5874ea367c5b19f5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7a3b6059acb924bd07d1205e6ffac1d58527875f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-create-custom-folder-items"></a>How to: Programmatically Create Custom Folder Items
-  This example creates a new folder in Microsoft Office Outlook. The name of the user who is logged on is used for the folder name.  
+# <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以程式設計方式建立自訂資料夾項目
+  這個範例會在 Microsoft Office Outlook 中建立新的資料夾。 登入的使用者名稱會用於資料夾名稱。  
   
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]  
   
-## <a name="example"></a>Example  
+## <a name="example"></a>範例  
  [!code-csharp[Trin_OL_CustFolderItem#1](../vsto/codesnippet/CSharp/Trin_OL_CustFolderItem/thisaddin.cs#1)]  
   
-## <a name="see-also"></a>See Also  
- [Working with Folders](../vsto/working-with-folders.md)   
- [How to: Programmatically Add an Entry to Outlook Contacts](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
- [How to: Programmatically Create Appointments](../vsto/how-to-programmatically-create-appointments.md)  
+## <a name="see-also"></a>另請參閱  
+ [使用資料夾](../vsto/working-with-folders.md)   
+ [如何： 以程式設計方式將項目加入 Outlook 連絡人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)   
+ [如何：以程式設計方式建立約會](../vsto/how-to-programmatically-create-appointments.md)  
   
   

@@ -1,93 +1,95 @@
 ---
-title: "Office 專案中的協助工具"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "網頁可及性 [Visual Studio 中的 Office 程式開發]"
-  - "Visual Studio 中的 Office 程式開發, 網頁可及性"
-  - "功能區 [Visual Studio 中的 Office 程式開發], 快速鍵"
-  - "快速鍵 [Visual Studio 中的 Office 程式開發]"
+title: "Office 專案中的協助工具 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- Office development in Visual Studio, accessibility
+- shortcut keys [Office development in Visual Studio]
+- Ribbon [Office development in Visual Studio], shortcut keys
+- accessibility [Office development in Visual Studio]
 ms.assetid: 48efcf1f-ca49-47ce-99f0-cc99f051aeae
-caps.latest.revision: 24
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 23
+caps.latest.revision: "24"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4636e55fa2bc20ba9ff958a897ef7898099cb5c2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Office 專案中的協助工具
-  Microsoft Visual Studio 和 Microsoft Office 提供許多協助工具功能，可讓您建置 \(Build\) 符合標準協助工具需求的自訂方案。  Microsoft 在 Web 上發行了一些協助工具指南。  如需詳細資料，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113) \(英文\)。  
+# <a name="accessibility-in-office-projects"></a>Office 專案中的協助工具
+  Microsoft Visual Studio 和 Microsoft Office 包含許多協助工具功能可讓您建置自訂的解決方案符合標準的協助工具需求。 Microsoft 會發行在網站上的協助工具的指導方針。 如需詳細資訊，請參閱[協助工具網站](http://go.microsoft.com/fwlink/?LinkID=37113)。  
   
- 在大部分情況下，Visual Studio 中的 Office 專案都能符合協助工具標準，或是公開可供您設定的屬性，以增加方案的使用性。  不過，某些功能的可及性會受到限制。  
+ 在大部分情況下，Visual Studio 中的 Office 專案會符合您可以設定讓您的解決方案都能存取的協助工具標準或公開屬性。 不過，有一些功能，以存取上受到限制。  
   
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
   
-## 設計階段的協助工具  
+## <a name="accessibility-at-design-time"></a>在設計階段的協助工具  
   
-### 在文件層級專案中使用快速鍵  
- 在 Visual Studio 中開啟 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿時，一次只有一個應用程式會收到快速鍵命令。  根據預設，Visual Studio 會接收所有快速鍵命令，不過您可選取 \[**選項**\] 對話方塊裡 \[**鍵盤設定**\] 頁面上的 \[**動態鍵盤配置**\]，使 Word 或 Excel 在文件取得焦點 \(Focus\) 時接收快速鍵命令。  如需詳細資訊，請參閱[選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Word 鍵盤](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)與[選項對話方塊、Microsoft Office 鍵盤設定、Microsoft Office Excel 鍵盤](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)。  
+### <a name="using-shortcut-keys-in-document-level-projects"></a>在文件層級專案中使用的快速鍵  
+ 開啟 Visual Studio 中的 Microsoft Office Word 文件或 Microsoft Office Excel 活頁簿時，一次只有一個應用程式接收快顯命令。 根據預設，Visual Studio 會收到所有捷徑命令，但您可以進行 Word 或 Excel 文件選取具有焦點時，接收這些**動態鍵盤配置**上**鍵盤設定**頁面**選項** 對話方塊。 如需詳細資訊，請參閱[Microsoft Office Word 鍵盤，Microsoft Office 鍵盤設定、 [選項] 對話方塊](../vsto/microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)和[Microsoft Office Excel 鍵盤，Microsoft Office 鍵盤設定、 選項對話方塊](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md).  
   
-### 針對文件層級專案中的功能區顯示快速鍵  
- 在 Visual Studio 中開啟 Word 文件或 Excel 活頁簿時，您無法在功能區按下 Alt 鍵來檢視索引標籤和控制項的快速鍵。  若要在使用設計工具開啟文件或活頁簿時檢視快速鍵，請執行下列步驟。  
+### <a name="displaying-shortcut-keys-for-the-ribbon-in-document-level-projects"></a>在文件層級專案中功能區顯示快速鍵  
+ Visual Studio 中開啟 Word 文件或 Excel 活頁簿時，您無法按下 Alt 鍵，若要檢視的索引標籤及功能區上的控制項的快速鍵。 若要檢視的鍵盤快速鍵，文件或活頁簿設計工具中開啟時，執行下列步驟。  
   
-##### 若要檢視設計工具中功能區索引標籤和控制項的快速鍵  
+##### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>若要檢視設計工具中的功能區索引標籤和控制項的快速鍵  
   
-1.  在 Visual Studio 中，按一下 \[**工具**\] 功能表的 \[**選項**\]。  
+1.  在 Visual Studio 中，在**工具**功能表上，按一下 **選項**。  
   
-2.  展開 \[**Office 工具**\] 節點，然後依需要選取 \[**Microsoft Office Excel 鍵盤**\] 或 \[**Microsoft Office Word 鍵盤**\]。  
+2.  展開**Office 工具**節點，然後選取**Microsoft Office Excel 鍵盤**或**Microsoft Office Word 鍵盤**視情況。  
   
-3.  選取 \[**動態鍵盤配置**\]。  
+3.  選取**動態鍵盤配置**。  
   
-     這時會出現一則訊息，告知您必須重新啟動 Visual Studio 以讓變更生效。  
+     此時會出現訊息指出您必須重新啟動 Visual Studio，變更才會生效。  
   
-4.  按一下 \[**確定**\]。  
+4.  按一下 [確定]。  
   
-5.  重新啟動 Visual Studio，然後重新開啟專案。  
+5.  重新啟動 Visual Studio，並重新開啟您的專案。  
   
-6.  開啟您的專案所需的文件或活頁簿設計工具。  
+6.  開啟您專案的文件或活頁簿設計工具。  
   
-7.  按 F6 顯示功能區快速鍵。  
+7.  按 F6 功能區顯示的快速鍵。  
   
-## 執行階段的協助工具  
+## <a name="accessibility-at-run-time"></a>在執行階段的協助工具  
   
-### Office 文件上的 Windows Form 控制項  
- Windows Form 控制項會公開可及性屬性，以提供有關控制網頁可及性 \(如螢幕助讀員\) 的資訊。  當控制項位於文件層級自訂中的 Office 文件上時，您便可利用這些協助工具屬性。  如需詳細資訊，請參閱[為 Windows Form 上的控制項提供可及性資訊](http://msdn.microsoft.com/library/887dee6f-5059-4d57-957d-7c6fcd4acb10)。  
+### <a name="windows-forms-controls-on-office-documents"></a>Windows Form Office 文件上的控制項  
+ Windows Form 控制項中公開協助工具屬性，以提供給協助工具輔助，例如螢幕助讀程式控制項的相關資訊。 您可以利用這些協助工具屬性的文件層級自訂中的 Office 文件上的控制項時。 如需詳細資訊，請參閱[提供 Windows Form 上控制項的協助工具資訊](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)。  
   
- 不過，當 Windows Form 控制項裝載到 Excel 活頁簿或 Word 文件上時，協助工具會在執行階段受到一些限制：  
+ 不過，在執行階段時的 Excel 活頁簿或 Word 文件裝載 Windows Form 控制項有一些協助工具的限制：  
   
--   您無法使用定位鍵在控制項之間移動。  
+-   您無法以另一個索引標籤從一個控制項。  
   
--   當您將文件的縮放設定變更為 100% 以外的設定時，會停用文件上的控制項。  
+-   當您將文件的縮放設定變更為 100%以外的任何項目時，會停用文件上的控制項。  
   
- 如需文件上 Windows Form 控制項限制的詳細資訊，請參閱 [Office 文件上的 Windows Form 控制項限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
+ 如需限制的文件上的 Windows Form 控制項的資訊，請參閱[限制的 Windows Form 控制項 Office 文件上](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)。  
   
-### 執行窗格和自訂工作窗格  
- 當執行窗格或自訂工作窗格取得焦點時，可以像存取 Windows Form 應用程式上的控制項一樣存取其上的控制項。  若要在執行窗格和文件之間移動游標，可按 **F6**。  
+### <a name="actions-panes-and-custom-task-panes"></a>執行窗格和自訂工作窗格  
+ 執行窗格或自訂工作窗格具有焦點，當您存取控制項，您會存取 Windows Form 應用程式上的控制項的方式相同。 [動作] 窗格和文件之間移動游標，您可以按**F6**。  
   
- 如需執行窗格和自訂工作窗格的詳細資訊，請參閱[執行窗格概觀](../vsto/actions-pane-overview.md)和[自訂工作窗格](../vsto/custom-task-panes.md)。  
+ 如需有關執行窗格和自訂工作窗格的詳細資訊，請參閱[執行窗格概觀](../vsto/actions-pane-overview.md)和[自訂工作窗格](../vsto/custom-task-panes.md)。  
   
-### 顯示模式  
- Visual Studio 具有下列與顯示模式相關的限制：  
+### <a name="display-modes"></a>顯示模式  
+ Visual Studio 有與顯示模式相關的下列限制：  
   
--   當您將文件的縮放設定變更為 100% 以外的設定時，會停用 Word 文件或 Excel 工作表上的控制項。  
+-   當您將文件的縮放設定變更為 100%以外的任何項目時，會停用的 Word 文件或 Excel 工作表上的控制項。  
   
--   如果使用者將電腦的可及性選項變更為 \[**使用高對比**\]，\[**新增專案**\] 對話方塊便不會正確顯示控制項。  
+-   **新專案**對話方塊如果未顯示控制項正確使用者變更電腦的協助工具選項，以**使用高對比**。  
   
- 您可以使用 \[放大鏡\] 克服這些限制。  \[放大鏡\] 是 Windows 的顯示公用程式，它會開啟另一個視窗來顯示螢幕上某個放大的部分。  
+ 您可以使用 [放大鏡]，以克服這些限制。 [放大鏡] 是顯示公用程式建立個別的視窗以顯示螢幕的放的大部分的 Windows。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [開發 Office 方案](../vsto/developing-office-solutions.md)   
  [Office 文件上的控制項](../vsto/controls-on-office-documents.md)   
- [適用於行動不便人士的協助工具](../ide/reference/accessibility-for-people-with-disabilities.md)   
- [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)  
+ [殘障人士的協助工具](/visualstudio/ide/reference/accessibility-for-people-with-disabilities)   
+ [Visual Studio 的協助工具功能](/visualstudio/ide/reference/accessibility-features-of-visual-studio)  
   
   

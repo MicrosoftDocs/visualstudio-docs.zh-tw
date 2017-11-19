@@ -1,55 +1,55 @@
 ---
-title: "IDebugProcess2::GetInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcess2::GetInfo"
-helpviewer_keywords: 
-  - "IDebugProcess2::GetInfo"
+title: "IDebugProcess2::GetInfo |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcess2::GetInfo
+helpviewer_keywords: IDebugProcess2::GetInfo
 ms.assetid: 46021dce-bb97-46c3-b0cc-e5b3b68acc35
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 34bea2c3853bfbe8a9ca66b0ea663e35989d74b0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcess2::GetInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 取得處理序的描述。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetInfo(  
-   PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO*        pProcessInfo  
+```cpp  
+HRESULT GetInfo(  
+   PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO*        pProcessInfo  
 );  
 ```  
   
-```c#  
-int GetInfo(  
-   enum_PROCESS_INFO_FIELDS  Fields,  
-   PROCESS_INFO[]            pProcessInfo  
+```csharp  
+int GetInfo(  
+   enum_PROCESS_INFO_FIELDS  Fields,  
+   PROCESS_INFO[]            pProcessInfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `Fields`  
- \[in\]從值的組合[PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)指定的那一個欄位的列舉型別`pProcessInfo`參數是要在 \[填滿。  
+ [in]值組合[PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)列舉，指定的哪些欄位`pProcessInfo`參數會被填入。  
   
  `pProcessInfo`  
- \[\] outA [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)會被填入的處理程序描述的結構。  
+ [out]A [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)填入這些程序描述的結構。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)   
- [PROCESS\_INFO\_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
- [PROCESS\_INFO](../../../extensibility/debugger/reference/process-info.md)
+ [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)   
+ [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

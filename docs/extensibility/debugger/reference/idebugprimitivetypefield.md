@@ -1,42 +1,43 @@
 ---
-title: "IDebugPrimitiveTypeField | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPrimitiveTypeField 介面"
+title: "IDebugPrimitiveTypeField |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPrimitiveTypeField interface
 ms.assetid: 73a428fd-797e-4ceb-8392-ba16f1c5226b
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 817f788c90eea9d52d5579aa7f2d6a73ea129eb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPrimitiveTypeField
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-表示從基本型別列舉值[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。  
+# <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
+表示基本類型列舉值從[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugPrimitiveTypeField : IDebugField  
 ```  
   
-## 方法  
- 除了在方法[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，這個介面會實作下列方法：  
+## <a name="methods"></a>方法  
+ 除了上[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)介面，這個介面會實作下列方法：  
   
-|方法|描述|  
-|--------|--------|  
-|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|擷取與這個欄位關聯的基本型別。|  
+|方法|說明|  
+|------------|-----------------|  
+|[GetPrimitiveType](../../../extensibility/debugger/reference/idebugprimitivetypefield-getprimitivetype.md)|擷取與這個欄位關聯的基本類型。|  
   
-## 需求  
- 標頭: Sh.h  
+## <a name="requirements"></a>需求  
+ 標頭： Sh.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll

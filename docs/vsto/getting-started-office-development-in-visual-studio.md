@@ -1,31 +1,35 @@
 ---
-title: "使用者入門 (Visual Studio 中的 Office 程式開發)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visual Studio 中的 Office 程式開發, 使用者入門"
+title: "使用者入門 （Visual Studio 中的 Office 程式開發） |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: Office development in Visual Studio, getting started
 ms.assetid: fc27e84c-dca2-4b0a-8794-f57a2a886262
-caps.latest.revision: 56
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 52
+caps.latest.revision: "56"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 04e0419fe3c56ef51656aafb20f16d78045dabab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 使用者入門 (Visual Studio 中的 Office 程式開發)
+# <a name="getting-started-office-development-in-visual-studio"></a>使用者入門 (Visual Studio 中的 Office 程式開發)
   本節包含的主題可協助您開始使用 Visual Studio 中的 Microsoft Office Developer Tools。  
   
-## 在本節中  
- [Office 方案開發概觀 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)  
+> [!NOTE]  
+>  感興趣開發方案，擴充的 Office 體驗，跨[多個平台](https://dev.office.com/add-in-availability)嗎？ 查看新[Office 增益集模型](https://dev.office.com/docs/add-ins/overview/office-add-ins)。 Office 增益集有相較於 VSTO 增益集和方案、 較小的耗用量，您可以使用幾乎任何 web 程式設計技術，例如 HTML5、 JavaScript、 CSS3 和 XML 來建置。  
+  
+## <a name="in-this-section"></a>本章節內容  
+ [Office 方案開發概觀 &#40;VSTO &#41;](../vsto/office-solutions-development-overview-vsto.md)  
  提供在 Visual Studio 中開發 Office 方案所需的背景資訊。  
   
  [變更以 .NET Framework 4 或 .NET Framework 4.5 為目標的 Office 專案設計](../vsto/changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)  
@@ -44,15 +48,15 @@ caps.handback.revision: 52
  摘要說明使用 Visual Studio 建立 Word 文件層級自訂所需的重要概念。  
   
  [VSTO 增益集程式設計入門](../vsto/getting-started-programming-vsto-add-ins.md)  
- 摘要說明使用 Visual Studio 建立 Microsoft Office 應用程式之應用程式層級 Visual Studio Tools for Office \(VSTO\) 增益集所需的重要概念。  
+ 摘要說明使用 Visual Studio 建立 Microsoft Office 應用程式之應用程式層級 Visual Studio Tools for Office (VSTO) 增益集所需的重要概念。  
   
- [VBA 和 Office 方案 &#40;在 Visual Studio 中&#41; 比較](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
+ [VBA 和 Office 方案 (在 Visual Studio 中) 比較](../vsto/vba-and-office-solutions-in-visual-studio-compared.md)  
  描述 Visual Basic for Applications 與 Visual Studio 中的 Office 程式開發工具在開發 Office 方案方面的相對優勢。  
   
- [Office 程式設計的一般工作](../vsto/common-tasks-in-office-programming.md)  
+ [Office 程式設計中的常見工作](../vsto/common-tasks-in-office-programming.md)  
  提供可協助解決常見問題的主題連結。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [Office 程式開發範例和逐步解說](../vsto/office-development-samples-and-walkthroughs.md)  
  提供範例應用程式連結，以及逐步指示如何執行一般工作的主題連結。  
   
@@ -60,7 +64,7 @@ caps.handback.revision: 52
  描述 Office 方案的元件，以及這些元件在設計階段和執行階段的運作方式。  
   
  [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)  
- 提供有關如何在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中建立 Office 專案及設定專案的資訊。  
+ 提供有關如何在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中建立 Office 專案及設定專案的資訊。  
   
  [開發 Office 方案](../vsto/developing-office-solutions.md)  
  提供有關如何在 Office 專案中實作程式碼和使用者介面自訂的資訊。  

@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Adding Controls to a Document at Run Time in a VSTO Add-In | Microsoft Docs'
+title: "逐步解說： 在 VSTO 增益集中的執行階段將控制項加入至文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,178 +16,182 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents at run time
 - documents [Office development in Visual Studio], adding controls at run time
 ms.assetid: ab6dff40-9964-468a-938c-a71a3ac23718
-caps.latest.revision: 29
-author: kempb
-ms.author: kempb
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: a063ac411599434907e43d8705bde1d0b358b49b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0d220cca9ddd08004540768bbeb7322d28dedaa8
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>Walkthrough: Adding Controls to a Document at Run Time in a VSTO Add-In
-  You can add controls to any open Microsoft Office Word document by using an VSTO Add-in. This walkthrough demonstrates how to use the Ribbon to enable users to add a <xref:Microsoft.Office.Tools.Word.Controls.Button> or a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to a document.  
+# <a name="walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>逐步解說：在執行階段於 VSTO 增益集中，將控制項加入文件
+  您可以使用 VSTO 增益集，將控制項加入任何開啟的 Microsoft Office Word 文件。 本逐步解說將示範如何使用功能區，讓使用者將 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件。  
   
- **Applies to:** The information in this topic applies to VSTO Add-in projects for Word 2010. For more information, see [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md).  
+ **適用對象：** 本主題資訊適用於 Word 2010 的 VSTO 增益集專案。 如需詳細資訊，請參閱 [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md)。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Creating a new Word VSTO Add-in project.  
+-   建立新的 Word VSTO 增益集專案。  
   
--   Providing a user interface (UI) to add controls to the document.  
+-   提供可將控制項加入文件的使用者介面 (UI)。  
   
--   Adding controls to the document at run time.  
+-   在執行階段將控制項加入文件。  
   
--   Removing controls from the document.  
+-   移除文件的控制項。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] or [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].  
+-   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)]。  
   
-## <a name="creating-a-new-word-add-in-project"></a>Creating a New Word Add-in Project  
- Start by creating a Word VSTO Add-in project.  
+## <a name="creating-a-new-word-add-in-project"></a>建立新的 Word 增益集專案  
+ 請從建立 Word VSTO 增益集專案開始。  
   
-#### <a name="to-create-a-new-word-vsto-add-in-project"></a>To create a new Word VSTO Add-in project  
+#### <a name="to-create-a-new-word-vsto-add-in-project"></a>建立新的 Word VSTO 增益集專案  
   
-1.  Create an VSTO Add-in project for Word with the name **WordDynamicControls**. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立名為 **WordDynamicControls**的 Word VSTO 增益集專案。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-2.  Add a reference to the **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** assembly. This reference is required to programmatically add a Windows Forms control to the document later in this walkthrough.  
+2.  加入 **Microsoft.Office.Tools.Word.v4.0.Utilities.dll** 組件的參考。 本逐步解說稍後會需要用到此參考，以透過程式設計的方式將 Windows Forms 控制項加入文件。  
   
-## <a name="providing-a-ui-to-add-controls-to-a-document"></a>Providing a UI to Add Controls to a Document  
- Add a custom tab to the Ribbon in Word. Users can select check boxes on the tab to add controls to a document.  
+## <a name="providing-a-ui-to-add-controls-to-a-document"></a>提供可將控制項加入文件的 UI  
+ 將自訂索引標籤加入 Word 功能區。 使用者可以選取索引標籤上的核取方塊，將控制項加入文件。  
   
-#### <a name="to-provide-a-ui-to-add-controls-to-a-document"></a>To provide a UI to add controls to a document  
+#### <a name="to-provide-a-ui-to-add-controls-to-a-document"></a>提供可將控制項加入文件的 UI  
   
-1.  On the **Project** menu, click **Add New Item**.  
+1.  在 [專案]  功能表中，按一下 [加入新項目] 。  
   
-2.  In the **Add New Item** dialog box, select **Ribbon (Visual Designer)**.  
+2.  選取 [ **加入新項目** ] 對話方塊中的 [ **功能區 (視覺化設計工具)**]。  
   
-3.  Change the name of the new Ribbon to **MyRibbon**, and click **Add**.  
+3.  將新功能區的名稱變更為 **MyRibbon**，然後按一下 [加入] 。  
   
-     The **MyRibbon.cs** or **MyRibbon.vb** file opens in the Ribbon Designer and displays a default tab and group.  
+     **MyRibbon.cs** 或 **MyRibbon.vb** 檔案會在功能區設計工具中開啟，並顯示預設索引標籤和群組。  
   
-4.  In the Ribbon Designer, click the **group1** group.  
+4.  在功能區設計工具中，按一下 [group1]  群組。  
   
-5.  In the **Properties** window, change the **Label** property for **group1** to **Add Controls**.  
+5.  在 [屬性]  視窗中，將 [group1]  的 [Label]  屬性變更為 [加入控制項] 。  
   
-6.  From the **Office Ribbon Controls** tab of the **Toolbox**, drag a **CheckBox** control onto **group1**.  
+6.  從 [工具箱]  的 [Office 功能區控制項] 索引標籤，將 **CheckBox** 控制項拖曳至 [group1] 。  
   
-7.  Click **CheckBox1** to select it.  
+7.  按一下 [CheckBox1]  予以選取。  
   
-8.  In the **Properties** window, change the following properties.  
+8.  在 [屬性]  視窗中變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**addButtonCheckBox**|  
-    |**Label**|**Add Button**|  
+    |**名稱**|**addButtonCheckBox**|  
+    |**標籤**|**加入按鈕**|  
   
-9. Add a second check box to **group1**, and then change the following properties.  
+9. 將第二個核取方塊加入 [group1] ，然後變更下列屬性。  
   
-    |Property|Value|  
+    |屬性|值|  
     |--------------|-----------|  
-    |**Name**|**addRichTextCheckBox**|  
-    |**Label**|**Add Rich Text Control**|  
+    |**名稱**|**addRichTextCheckBox**|  
+    |**標籤**|**加入 RTF 控制項**|  
   
-10. In the Ribbon Designer, double-click **Add Button**.  
+10. 在功能區設計工具中，按兩下 [加入按鈕] 。  
   
-     The <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> event handler of the **Add Button** check box opens in the Code Editor.  
+     在程式碼編輯器中，隨即開啟 [加入按鈕] <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**核取方塊的** 事件處理常式。  
   
-11. Return to the Ribbon Designer, and double-click **Add Rich Text Control**.  
+11. 返回功能區設計工具並按兩下 [加入 RTF 控制項] 。  
   
-     The <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> event handler of the **Add Rich Text Control** check box opens in the Code Editor.  
+     在程式碼編輯器中，隨即開啟 [加入 RTF 控制項] <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click>**核取方塊的** 事件處理常式。  
   
- Later in this walkthrough, you will add code to these event handlers to add and remove controls on the active document.  
+ 稍後在本逐步解說中，您將會把這些程式碼加入這些事件處理常式，以加入和移除使用中文件的控制項。  
   
-## <a name="adding-and-removing-controls-on-the-active-document"></a>Adding and Removing Controls on the Active Document  
- In the VSTO Add-in code, you must convert the active document into a <xref:Microsoft.Office.Tools.Word.Document>*host item* before you can add a control. In Office solutions, managed controls can be added only to host items, which act as containers for the controls. In VSTO Add-in projects, host items can be created at run time by using the GetVstoObject method.  
+## <a name="adding-and-removing-controls-on-the-active-document"></a>加入和移除使用中文件的控制項  
+ 在 VSTO 增益集程式碼中，您必須將使用中文件轉換成 <xref:Microsoft.Office.Tools.Word.Document>*主項目* ，才能加入控制項。 在 Office 方案中，Managed 控制項只能加入主項目，主項目是做為控制項的容器。 在 VSTO 增益集專案中，主項目可以建立在執行階段使用 GetVstoObject 方法。  
   
- Add methods to the `ThisAddIn` class that can be called to add or remove a <xref:Microsoft.Office.Tools.Word.Controls.Button> or <xref:Microsoft.Office.Tools.Word.RichTextContentControl> on the active document. Later in this walkthrough, you will call these methods from the <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> event handlers of the check boxes on the Ribbon.  
+ 將方法加入 `ThisAddIn` 類別，可以呼叫該類別來加入或移除使用中文件的 <xref:Microsoft.Office.Tools.Word.Controls.Button> 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。 稍後在本逐步解說，您將從功能區上之核取方塊的 <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> 事件處理常式呼叫這些方法。  
   
-#### <a name="to-add-and-remove-controls-on-the-active-document"></a>To add and remove controls on the active document  
+#### <a name="to-add-and-remove-controls-on-the-active-document"></a>加入和移除使用中文件的控制項  
   
-1.  In **Solution Explorer**, double-click ThisAddIn.cs or ThisAddIn.vb to open the file in the Code Editor.  
+1.  在 **方案總管**中，按兩下 ThisAddIn.cs 或 ThisAddIn.vb，在程式碼編輯器中開啟該檔案。  
   
-2.  Add the following code to the `ThisAddIn` class. This code declares <xref:Microsoft.Office.Tools.Word.Controls.Button> and <xref:Microsoft.Office.Tools.Word.RichTextContentControl> objects that represent the controls that will be added to the document.  
+2.  將下列程式碼加入 `ThisAddIn` 類別。 此程式碼會宣告 <xref:Microsoft.Office.Tools.Word.Controls.Button> 和 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 物件，它們代表將會加入文件的控制項。  
   
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]  [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]  
+     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#1)]
+     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#1](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#1)]  
   
-3.  Add the following method to the `ThisAddIn` class. When the user clicks the **Add Button** check box on the Ribbon, this method adds a <xref:Microsoft.Office.Tools.Word.Controls.Button> to the current selection on the document if the check box is selected, or removes the <xref:Microsoft.Office.Tools.Word.Controls.Button> if the check box is cleared.  
+3.  將下列方法加入 `ThisAddIn` 類別中。 當使用者按一下功能區上的 [加入按鈕]  核取方塊時，如果已選取核取方塊，則此方法會將 <xref:Microsoft.Office.Tools.Word.Controls.Button> 加入文件目前的選取範圍，如果已清除核取方塊則會移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 。  
   
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]  [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]  
+     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#2)]
+     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#2](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#2)]  
   
-4.  Add the following method to the `ThisAddIn` class. When the user clicks the **Add Rich Text Control** check box on the Ribbon, this method adds a <xref:Microsoft.Office.Tools.Word.RichTextContentControl> to the current selection on the document if the check box is selected, or removes the <xref:Microsoft.Office.Tools.Word.RichTextContentControl> if the check box is cleared.  
+4.  將下列方法加入 `ThisAddIn` 類別中。 當使用者按一下功能區上的 [加入 RTF 控制項]  核取方塊時，如果已選取核取方塊，則此方法會將 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 加入文件目前的選取範圍，如果已清除核取方塊則會移除 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。  
   
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]  [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]  
+     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#3)]
+     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#3](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#3)]  
   
-## <a name="removing-the-button-control-when-the-document-is-saved"></a>Removing the Button Control When the Document is Saved  
- Windows Forms controls are not persisted when the document is saved and then closed. However, an ActiveX wrapper for each control remains in the document, and the border of this wrapper can be seen by end users when the document is reopened. There are several ways to clean up dynamically created Windows Forms controls in VSTO Add-ins. In this walkthrough, you programmatically remove the <xref:Microsoft.Office.Tools.Word.Controls.Button> control when the document is saved.  
+## <a name="removing-the-button-control-when-the-document-is-saved"></a>儲存文件時移除按鈕控制項  
+ 在儲存文件然後關閉時，不會保存 Windows Forms 控制項。 不過，每個控制項的 ActiveX 包裝函式會保留在文件中，而當使用者重新開啟文件時，會看到這個包裝函式的框線。 有幾種方式可以在 VSTO 增益集中清除動態建立的 Windows Forms 控制項。在本逐步解說中，您會以程式設計方式，在儲存文件時移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項。  
   
-#### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>To remove the Button control when the document is saved  
+#### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>儲存文件時移除按鈕控制項  
   
-1.  In the ThisAddIn.cs or ThisAddIn.vb code file, add the following method to the `ThisAddIn` class. This method is an event handler for the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event. If the saved document has a <xref:Microsoft.Office.Tools.Word.Document> host item that is associated with it, the event handler gets the host item and removes the <xref:Microsoft.Office.Tools.Word.Controls.Button> control, if it exists.  
+1.  在 ThisAddIn.cs 或 ThisAddIn.vb 程式碼檔中，將下列方法加入 `ThisAddIn` 類別。 這個方法是 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件的事件處理常式。 如果已儲存的文件有與它相關的 <xref:Microsoft.Office.Tools.Word.Document> 主項目，事件處理常式會取得主項目並移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項 (如果存在的話)。  
   
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]  [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]  
+     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.vb#4)]
+     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#4](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#4)]  
   
-2.  In C#, add the following code to the `ThisAddIn_Startup` event handler. This code is required in C# to connect the `Application_DocumentBeforeSave` event handler with the <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> event.  
+2.  在 C# 中，將下列程式碼加入 `ThisAddIn_Startup` 事件處理常式。 在 C# 中連接 `Application_DocumentBeforeSave` 事件處理常式和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件時需要此程式碼。  
   
      [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#5](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs#5)]  
   
-## <a name="adding-and-removing-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>Adding and Removing Controls When the User Clicks the Check Boxes on the Ribbon  
- Finally, modify the <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> event handlers of the check boxes you added to the Ribbon to add or remove controls on the document.  
+## <a name="adding-and-removing-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>當使用者按一下功能區上的核取方塊時，加入和移除控制項  
+ 最後，修改您加入功能區之核取方塊的 <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> 事件處理常式，來加入或移除文件的控制項。  
   
-#### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>To add or remove controls when the user clicks the check boxes on the Ribbon  
+#### <a name="to-add-or-remove-controls-when-the-user-clicks-the-check-boxes-on-the-ribbon"></a>當使用者按一下功能區上的核取方塊時，加入和移除控制項  
   
-1.  In the MyRibbon.cs or MyRibbon.vb code file, replace the generated `addButtonCheckBox_Click` and `addRichTextCheckBox_Click` event handlers with the following code. This code redefines these event handlers to call the `ToggleButtonOnDocument` and `ToggleRichTextControlOnDocument` methods that you added to the `ThisAddIn` class earlier in this walkthrough.  
+1.  在 MyRibbon.cs 或 MyRibbon.vb 程式碼檔案中，將產生的 `addButtonCheckBox_Click` 和 `addRichTextCheckBox_Click` 事件處理常式取代為下列程式碼。 此程式碼會重新定義這些事件處理常式，呼叫您稍早在本逐步解說中加入 `ToggleButtonOnDocument` 類別的 `ToggleRichTextControlOnDocument` 和 `ThisAddIn` 方法。  
   
-     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]  [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]  
+     [!code-vb[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/VisualBasic/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.vb#6)]
+     [!code-csharp[Trin_WordAddInDynamicControlsWalkthrough#6](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/MyRibbon.cs#6)]  
   
-## <a name="testing-the-solution"></a>Testing the Solution  
- Add controls to a document by selecting them from the custom tab on the Ribbon. When you save the document, the <xref:Microsoft.Office.Tools.Word.Controls.Button> control is removed.  
+## <a name="testing-the-solution"></a>測試方案  
+ 從功能區上的自訂索引標籤選取控制項，將此控制項加入文件。 當您儲存文件時，會移除 <xref:Microsoft.Office.Tools.Word.Controls.Button> 控制項。  
   
-#### <a name="to-test-the-solution"></a>To test the solution.  
+#### <a name="to-test-the-solution"></a>若要測試方案  
   
-1.  Press F5 to run your project.  
+1.  請按 F5 執行您的專案。  
   
-2.  In the active document, press ENTER several times to add new empty paragraphs to the document.  
+2.  在使用中文件中，按數次 ENTER，在文件加入新的空白段落。  
   
-3.  Select the first paragraph.  
+3.  選取第一個段落。  
   
-4.  Click the **Add-Ins** tab.  
+4.  按一下 [增益集]  索引標籤。  
   
-5.  In the **Add Controls** group, click **Add Button**.  
+5.  在 [加入控制項]  群組中，按一下 [加入按鈕] 。  
   
-     A button appears in the first paragraph.  
+     按鈕隨即出現在第一個段落中。  
   
-6.  Select the last paragraph.  
+6.  選取最後一個段落。  
   
-7.  In the **Add Controls** group, click **Add Rich Text Control**.  
+7.  在 [加入控制項]  群組中，按一下 [加入 RTF 控制項] 。  
   
-     A rich text content control is added to the last paragraph.  
+     Rich text 格式內容控制項會加入最後一個段落。  
   
-8.  Save the document.  
+8.  儲存文件。  
   
-     The button is removed from the document.  
+     按鈕會從文件中移除。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about controls in VSTO Add-ins from these topics:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以從下列主題進一步了解 VSTO 增益集的控制項：  
   
--   For a sample that demonstrates how to add many other types of controls to a document at run time and recreate the controls when the document is reopened, see the Word Add-In Dynamic Controls Sample at [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md).  
+-   如需示範如何在執行階段將許多其他類型的控制項加入文件，並在重新開啟文件時重新建立控制項的範例，請參閱 Word 增益集動態控制項範例： [Office Development Samples and Walkthroughs](../vsto/office-development-samples-and-walkthroughs.md)。  
   
--   For a walkthrough that demonstrates how to add controls to a worksheet by using an VSTO Add-in for Excel, see [Walkthrough: Adding Controls to a Worksheet at Run Time in VSTO add-in Project](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md).  
+-   如需示範如何將控制項加入工作表加入 VSTO 增益集使用適用於 Excel 的逐步解說，請參閱[逐步解說： 將控制項加入工作表，在執行階段，在 VSTO 增益集專案](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。  
   
-## <a name="see-also"></a>See Also  
- [Word Solutions](../vsto/word-solutions.md)   
- [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)   
- [Persisting Dynamic Controls in Office Documents](../vsto/persisting-dynamic-controls-in-office-documents.md)   
- [How to: Add Windows Forms Controls to Office Documents](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
+## <a name="see-also"></a>另請參閱  
+ [Word 方案](../vsto/word-solutions.md)   
+ [在執行階段將控制項加入 Office 文件](../vsto/adding-controls-to-office-documents-at-run-time.md)   
+ [Office 文件中保存動態控制項](../vsto/persisting-dynamic-controls-in-office-documents.md)   
+ [如何： 將 Windows Form 控制項加入 Office 文件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)   
+ [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [在 VSTO 增益集的執行階段中擴充 Word 文件和 Excel 活頁簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)  
   
   

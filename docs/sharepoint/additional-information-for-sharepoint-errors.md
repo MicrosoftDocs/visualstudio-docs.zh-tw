@@ -1,56 +1,58 @@
 ---
-title: "SharePoint 錯誤的其他相關資訊"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "VS.SharePointTools.errors.general"
-  - "VS.SharePointTools.Project.Errors.General"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "Visual Studio 中的 SharePoint 開發, 錯誤"
-  - "Visual Studio 中的 SharePoint 開發, 疑難排解"
+title: "SharePoint 錯誤的其他資訊 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- VS.SharePointTools.errors.general
+- VS.SharePointTools.Project.Errors.General
+dev_langs:
+- VB
+- CSharp
+- VB
+- CSharp
+helpviewer_keywords:
+- SharePoint development in Visual Studio, errors
+- SharePoint development in Visual Studio, troubleshooting
 ms.assetid: 83d20a81-fd81-4cbd-8f28-bb6bddeb06de
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "9"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4323bb31cb1b63e26c4964bb8e1ce71f010a249e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# SharePoint 錯誤的其他相關資訊
-  您可以在疑難排解主題和 Microsoft Developer Network \(MSDN\) 公共論壇中尋求有關 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 工具錯誤和警告的疑難排解協助。  
+# <a name="additional-information-for-sharepoint-errors"></a>SharePoint 錯誤的其他相關資訊
+  您可以找到協助疑難排解[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具疑難排解主題和 Microsoft Developer Network (MSDN) 公共論壇中錯誤和警告。  
   
-## 疑難排解錯誤和問題  
- 如需解決 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 工具中幾個常見錯誤和其他問題的協助，請參閱下列主題：  
+## <a name="troubleshooting-errors-and-issues"></a>疑難排解錯誤和問題。  
+ 如需一些常見錯誤及其他問題[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具，請參閱下列主題：  
   
--   [SharePoint 方案疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
+-   [針對 SharePoint 方案進行疑難排解](../sharepoint/troubleshooting-sharepoint-solutions.md)  
   
 -   [對 SharePoint 方案進行偵錯](../sharepoint/debugging-sharepoint-solutions.md)  
   
--   [SharePoint 封裝和部署疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
+-   [針對 SharePoint 封裝和部署進行疑難排解](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)  
   
-## 其他資源  
- 下表列出 MSDN 上提供的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 工具論壇和其他資源。  
+## <a name="other-resources"></a>其他資源  
+ 下表列出[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]SharePoint 工具論壇，並提供在 MSDN 上的其他資源。  
   
 |詞彙|定義|  
-|--------|--------|  
-|[SharePoint 開發工作](http://go.microsoft.com/fwlink/?LinkId=179593)|這個論壇可供提出在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中開發 SharePoint 的相關問題。|  
-|[Visual Studio 論壇](http://go.microsoft.com/fwlink/?LinkID=150452)|提供 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 相關問題的論壇。|  
-|[Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=108287)|提供知識庫文件、資源下載和更新、支援網路廣播及其他服務的存取。|  
+|----------|----------------|  
+|[SharePoint 開發](http://go.microsoft.com/fwlink/?LinkId=179593)|提供在中的 SharePoint 開發相關問題的論壇[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
+|[Visual Studio 論壇](http://go.microsoft.com/fwlink/?LinkID=150452)|提供有關問題的論壇[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。|  
+|[Microsoft 說明和支援](http://go.microsoft.com/fwlink/?LinkID=108287)|提供知識庫文件、資源下載和更新、支援網路廣播及其他服務的存取。|  
   
- 如果您仍找不到所要的解答，可以利用線上支援選項，例如連絡 Microsoft 產品支援服務或搜尋知識庫文章。  如需詳細資訊，請參閱 [Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=155371) 頁面。  
+ 如果仍然找不到您需要的答案，您可以存取線上支援的選項，例如連絡 Microsoft 產品支援服務，或搜尋知識庫文章。 如需詳細資訊，請參閱[Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkID=155371)頁面。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [建置和偵錯 SharePoint 方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)  
   
   

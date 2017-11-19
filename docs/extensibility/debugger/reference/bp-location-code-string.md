@@ -1,54 +1,54 @@
 ---
-title: "BP_LOCATION_CODE_STRING | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_CODE_STRING"
-helpviewer_keywords: 
-  - "BP_LOCATION_CODE_STRING 結構"
+title: "BP_LOCATION_CODE_STRING |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_LOCATION_CODE_STRING
+helpviewer_keywords: BP_LOCATION_CODE_STRING structure
 ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 5ee54e8576d14e70e75372592501afc96517f5fc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# BP_LOCATION_CODE_STRING
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-用來進行設定，使用者可以從整合式的開發環境 \(IDE\) 中輸入的字串為基礎的程式碼中斷點。  
+# <a name="bplocationcodestring"></a>BP_LOCATION_CODE_STRING
+用於設定使用者可以輸入從整合式的開發環境 (IDE) 的字串為基礎的程式碼中斷點。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-typedef struct _BP_LOCATION_CODE_STRING {   
-   BSTR bstrContext;  
-   BSTR bstrCodeExpr;  
+```cpp  
+typedef struct _BP_LOCATION_CODE_STRING {   
+   BSTR bstrContext;  
+   BSTR bstrCodeExpr;  
 } BP_LOCATION_CODE_STRING;  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
  `bstrContext`  
- 程式碼內的中斷點，通常是方法或函式的名稱，做為 \[呼叫堆疊上看到的內容。  
+ 在程式碼中斷點，通常是方法或函式的名稱，當做呼叫堆疊上看到的內容。  
   
  `bstrCodeExpr`  
- 字串，使用者在型別來描述程式碼的中斷點。  
+ 使用者會在輸入描述程式碼中斷點的字串。  
   
-## 備註  
- 這個結構屬於[BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)的聯集一部分的結構。  
+## <a name="remarks"></a>備註  
+ 這個結構是屬於[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構做為聯集的一部分。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

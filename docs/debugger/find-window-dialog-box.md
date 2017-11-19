@@ -1,72 +1,73 @@
 ---
-title: "尋找視窗對話方塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "Spy++, 尋找視窗"
-  - "使用 Spy++ 尋找視窗"
+title: "尋找視窗對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Spy++, finding windows
+- finding windows with Spy++
 ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d7f2824cc86f919a2124d82fd5b23db571ac780b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 尋找視窗對話方塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用這個對話方塊可以選取視窗並顯示其屬性或訊息。  若要顯示這個對話方塊，請從 \[**Spy**\] 功能表中選擇 \[**尋找視窗**\]。  
+# <a name="find-window-dialog-box"></a>尋找視窗對話方塊
+使用此對話方塊來選取視窗，並顯示其屬性或訊息。 若要顯示此對話方塊中，選擇**尋找視窗**從**Spy**功能表。  
   
- 下列為可用的設定：  
+ 可用的設定如下：  
   
  **搜尋工具**  
- 用來選取視窗的拖放工具。  
+ 用來選取視窗拖放工具。  
   
- **隱藏 Spy\+\+**  
- 移除主要 Spy\+\+ 視窗，並將 \[**尋找視窗**\] 對話方塊顯示在其他應用程式的最上層。  
+ **隱藏 Spy + +**  
+ 移除主要 Spy + + 視窗，並將保留**尋找視窗**對話方塊在其他應用程式的上層。  
   
- **控點**  
- 要尋找之視窗的唯一 ID。  
+ **控制代碼**  
+ 尋找視窗的唯一識別碼。  
   
- **Caption**  
- 視窗標題的文字。  
+ **標題**  
+ 視窗標題文字。  
   
  **類別**  
- 視窗的類別。  
+ 視窗類別。  
   
  **樣式**  
- 視窗的樣式。  
+ 視窗樣式。  
   
- **方框**  
- 視窗的周框。  
+ **Rect**  
+ 視窗的週框。  
   
  **顯示屬性或訊息**  
- 決定按下 \[確定\] 將會顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，還是開啟[訊息檢視](../debugger/messages-view.md)。  
+ 決定是否按下 [確定] 將顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)或開啟[訊息檢視](../debugger/messages-view.md)。  
   
-## 相關章節  
- [使用搜尋工具](../Topic/How%20to:%20Use%20the%20Finder%20Tool.md)  
- 示範這個工具如何掃描視窗中的屬性或訊息。  
+## <a name="related-sections"></a>相關章節  
+ [使用搜尋工具](../debugger/how-to-use-the-finder-tool.md)  
+ 顯示此工具會用於屬性或訊息期間，所進行的掃描。  
   
  [視窗檢視](../debugger/windows-view.md)  
- 顯示可用視窗和控制項的樹狀檢視。  
+ 顯示可用的視窗和控制項的樹狀檢視。  
   
- [Spy\+\+ 檢視](../debugger/spy-increment-views.md)  
- 說明視窗、訊息、處理序和執行緒的 Spy\+\+ 樹狀檢視。  
+ [Spy++ 檢視](../debugger/spy-increment-views.md)  
+ 說明 windows、 訊息、 處理程序和執行緒的 Spy + + 樹狀結構檢視。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。  
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。  
   
  [視窗搜尋對話方塊](../debugger/window-search-dialog-box.md)  
- 用來在 \[視窗\] 檢視中尋找特定視窗的節點。  
+ 用來尋找特定的視窗，在視窗檢視中的節點。  
   
  [視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)  
- 用來在 \[視窗\] 檢視中顯示所選視窗的屬性。  
+ 用來顯示視窗，在視窗檢視中選取的屬性。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。

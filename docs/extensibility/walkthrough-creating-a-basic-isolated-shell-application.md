@@ -1,11 +1,11 @@
 ---
+redirect_url: shell/walkthrough-creating-a-basic-isolated-shell-application
 title: "逐步解說： 建立基本獨立 Shell 應用程式 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +13,15 @@ helpviewer_keywords:
 - Shell [Visual Studio], walkthroughs
 - walkthroughs [Visual Studio], isolated shell-based application
 ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
-caps.latest.revision: 54
+caps.latest.revision: "54"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: c4df0d9f772d92ac7f1f106b9befc0a8a2f89a22
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: e007e366847ac42d3916b16cbde190e8fd755821
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本獨立的 Shell 應用程式
 本逐步解說示範如何建立獨立的 shell 方案、 自訂 [說明] 工具視窗中，以及建立安裝程式安裝在 isolated 的 shell。  

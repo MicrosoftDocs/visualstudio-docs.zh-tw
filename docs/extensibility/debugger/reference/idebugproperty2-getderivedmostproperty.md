@@ -1,51 +1,51 @@
 ---
-title: "IDebugProperty2::GetDerivedMostProperty | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProperty2::GetDerivedMostProperty"
-helpviewer_keywords: 
-  - "IDebugProperty2::GetDerivedMostProperty"
+title: "IDebugProperty2::GetDerivedMostProperty |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProperty2::GetDerivedMostProperty
+helpviewer_keywords: IDebugProperty2::GetDerivedMostProperty
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ac691b8e1c2d28477eb8c07f760eae8909a9633
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProperty2::GetDerivedMostProperty
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得屬性的衍生最徹底的屬性。  
+# <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
+取得屬性的最具衍生性屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetDerivedMostProperty (   
-   IDebugProperty2** ppDerivedMost  
+```cpp  
+HRESULT GetDerivedMostProperty (   
+   IDebugProperty2** ppDerivedMost  
 );  
 ```  
   
-```c#  
-int GetDerivedMostProperty (   
-   out IDebugProperty2 ppDerivedMost  
+```csharp  
+int GetDerivedMostProperty (   
+   out IDebugProperty2 ppDerivedMost  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppDerivedMost`  
- \[\] out傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，表示衍生最徹底的屬性。  
+ [out]傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件，代表最具衍生性屬性。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則會傳回錯誤碼。  傳回`S_GETDERIVEDMOST_NO_DERIVED_MOST`如果沒有衍生最徹底的屬性來擷取。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則會傳回錯誤碼。 傳回`S_GETDERIVEDMOST_NO_DERIVED_MOST`如果擷取沒有最具衍生性屬性。  
   
-## 備註  
- 比方說，如果這個屬性描述物件實作`ClassRoot`也就是實際的執行個體化，但`ClassDerived` ，衍生自`ClassRoot`，那麼這個方法會傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件描述`ClassDerived`物件。  
+## <a name="remarks"></a>備註  
+ 例如，如果這個屬性描述的物件，實作`ClassRoot`但這是實際的具現化`ClassDerived`衍生自`ClassRoot`，則這個方法會傳回[IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)物件描述`ClassDerived`物件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

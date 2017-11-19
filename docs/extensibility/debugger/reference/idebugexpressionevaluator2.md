@@ -1,53 +1,54 @@
 ---
-title: "IDebugExpressionEvaluator2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugExpressionEvaluator2 介面"
+title: "IDebugExpressionEvaluator2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugExpressionEvaluator2 interface
 ms.assetid: cebe649f-1c77-4d33-854f-30d4f00eceb4
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: b3b8939df57445470229747c2b776215c9f30311
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugExpressionEvaluator2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
->  在 Visual Studio 2015，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱 [CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 表示運算式評估工具 \(EE\) 增強型的版本。  
+ 代表運算式評估工具 (EE) 的增強型的版本。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugExpressionEvaluator2 : IDebugExpressionEvaluator  
 ```  
   
-## 實作者注意事項  
+## <a name="notes-for-implementers"></a>實作者注意事項  
  實作這個介面是由運算式評估工具。  
   
-## 方法  
- 除了在方法 [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) 介面，這個介面會實作下列方法︰  
+## <a name="methods"></a>方法  
+ 除了上[IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)介面，這個介面會實作下列方法：  
   
-|方法|描述|  
-|--------|--------|  
-|[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|擷取服務物件指定的唯一識別碼。|  
+|方法|說明|  
+|------------|-----------------|  
+|[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|擷取服務物件，指定其唯一的識別項。|  
 |[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|預先載入指定的符號提供者所指定的模組。|  
-|[SetCallback](../Topic/IDebugExpressionEvaluator2::SetCallback.md)|可讓運算式評估工具 \(EE\) 來指定偵錯工具引擎 \(DE\) 會用來讀取度量設定回呼介面。|  
-|[SetCorPath](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcorpath.md)|Common language runtime \(CLR\) 載入偵錯工具中設定的路徑。|  
+|[SetCallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcallback.md)|可讓運算式評估工具 (EE)，指定偵錯工具引擎 (DE) 會用來讀取度量設定的回呼介面。|  
+|[SetCorPath](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcorpath.md)|Common language runtime (CLR) 載入偵錯工具中設定的路徑。|  
 |[SetIDebugIDECallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setidebugidecallback.md)|可讓偵錯引擎在初始化期間，傳遞給運算式評估工具的回呼。|  
-|[結束](../../../extensibility/debugger/reference/idebugexpressionevaluator2-terminate.md)|停止並清除運算式評估工具。|  
+|[終止](../../../extensibility/debugger/reference/idebugexpressionevaluator2-terminate.md)|停止和清除運算式評估工具。|  
   
-## 需求  
- 標頭︰ Ee.h  
+## <a name="requirements"></a>需求  
+ 標頭： Ee.h  
   
- 命名空間 ︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件 ︰ Microsoft.VisualStudio.Debugger.Interop.dll
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll

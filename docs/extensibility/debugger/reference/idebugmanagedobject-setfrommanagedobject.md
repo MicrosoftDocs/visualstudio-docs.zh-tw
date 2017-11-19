@@ -1,51 +1,51 @@
 ---
-title: "IDebugManagedObject::SetFromManagedObject | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugManagedObject::SetFromManagedObject"
-helpviewer_keywords: 
-  - "IDebugManagedObject::SetFromManagedObject 方法"
+title: "IDebugManagedObject::SetFromManagedObject |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugManagedObject::SetFromManagedObject
+helpviewer_keywords: IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a3f73236b45edea7a9dea003a1f3604669eb3739
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugManagedObject::SetFromManagedObject
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-將設定值的類別物件的執行個體的值做為參數所提供實值類別的執行個體。  
+# <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
+設定值的類別物件的執行個體的值做為參數的實值類別的執行個體。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT SetFromManagedObject(   
-   IUnknown* pManagedObject  
+```cpp  
+HRESULT SetFromManagedObject(   
+   IUnknown* pManagedObject  
 );  
 ```  
   
-```c#  
+```csharp  
 int SetFromManagedObject(  
-   object pManagedObject  
+   object pManagedObject  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pManagedObject`  
- \[in\]此介面表示受管理的物件，包含新的值。  
+ [in]表示包含新值的受管理的物件的介面。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 這個方法用來變更受管理的物件，表示[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)物件。  
+## <a name="remarks"></a>備註  
+ 這個方法用來變更受管理的物件所表示的[IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)物件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

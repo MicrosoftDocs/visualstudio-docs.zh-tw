@@ -1,60 +1,61 @@
 ---
-title: "如何: 使用文字標記 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "編輯器 [Visual Studio SDK]，舊版-使用文字標記"
+title: "如何： 使用文字標記 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: editors [Visual Studio SDK], legacy - using text markers
 ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 1070a88f1bae27b9ff10fedbf6a383ec30c1ed0e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何: 使用文字標記
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="how-to-use-text-markers"></a>如何： 使用文字標記
 文字標記可以套用至編輯<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>物件。  
   
-## 程序  
+## <a name="procedures"></a>程序  
   
-#### 若要套用文字資料標記  
+#### <a name="to-apply-text-markers"></a>若要套用標記的文字  
   
-1.  取得執行個體的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>類別。  
-  
-    > [!NOTE]
-    >  核心編輯器會自動套用標準的文字標記編輯它，所有文件，並應不需明確地套用標準的文字標記。  
-  
-2.  取得您有興趣點撥打標記的標記型別 ID <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法以`GUID`文字標記您想要使用。  
+1.  取得執行個體<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>類別。  
   
     > [!NOTE]
-    >  請勿使用`GUID` VSPackage 或提供文字標記的服務。  
+    >  核心編輯器會自動套用到它正在編輯的任何文件標準文字標記，它應該不需要明確地套用標準文字標記。  
   
-3.  使用資料標記的型別 ID 可以藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法當做參數來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法，以套用至指定的文字區域的文字標記。  
+2.  取得您感興趣藉由呼叫的標記的標記類型 ID<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法`GUID`文字標記您想要使用。  
   
-#### 若要將功能加入至文字資料標記  
+    > [!NOTE]
+    >  請勿使用`GUID`VSPackage 或提供文字標記的服務。  
   
-1.  它可能不需要額外的功能加入文字標記，例如工具提示、 特殊的快顯功能表或處理常式的特殊情況。  若要執行這項操作：  
+3.  使用標記類型識別碼取得藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A>方法當做參數來呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>方法，以套用到指定的文字區域的文字標記。  
   
-2.  建立物件的實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。  
+#### <a name="to-add-features-to-text-markers"></a>若要將功能加入至文字標記  
   
-3.  如果需要額外的功能，來實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，以及<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>上相同的物件實作的介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。  
+1.  它可能想要將其他功能加入至文字標記，例如工具提示、 特殊的內容功能表上或處理常式的特殊情況。 若要這樣做：  
   
-4.  傳遞<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面，建立對呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>用來將文字標記套用至指定的文字區域的方法。  
+2.  建立實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。  
   
-5.  文字標記區域中加入內容功能表支援時，不必建立功能表。  
+3.  如果想要使用額外的功能，實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientEx>，而<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClientAdvanced>介面實作在相同物件上的<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>介面。  
   
-     如需有關如何建立內容功能表，請參閱[內容功能表](../extensibility/context-menus.md)。  
+4.  傳遞<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient>建立至呼叫的介面<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A>方法或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A>用來套用到指定的文字區域的文字標記的方法。  
   
-6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]環境呼叫的方法所提供的介面，例如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>所需的方法。  
+5.  內容功能表支援加入的文字標記區域時就必須建立功能表。  
   
-## 請參閱  
- [使用舊版 API 中的文字標記](../extensibility/using-text-markers-with-the-legacy-api.md)   
- [如何: 新增標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
- [如何: 建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   
- [How to: 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)
+     如需有關如何建立內容功能表，請參閱[操作功能表](../extensibility/context-menus.md)。  
+  
+6.  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]環境會呼叫的方法提供的介面，例如<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.GetTipText%2A>方法，或<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient.ExecMarkerCommand%2A>視需要的方法。  
+  
+## <a name="see-also"></a>另請參閱  
+ [使用文字標記與舊版應用程式開發介面](../extensibility/using-text-markers-with-the-legacy-api.md)   
+ [如何： 加入標準文字標記](../extensibility/how-to-add-standard-text-markers.md)   
+ [如何： 建立自訂文字標記](../extensibility/how-to-create-custom-text-markers.md)   
+ [如何： 實作錯誤標記](../extensibility/how-to-implement-error-markers.md)

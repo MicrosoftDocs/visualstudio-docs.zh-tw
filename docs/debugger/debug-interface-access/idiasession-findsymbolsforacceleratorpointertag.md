@@ -1,50 +1,50 @@
 ---
-title: "IDiaSession::findSymbolsForAcceleratorPointerTag | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
+title: "IDiaSession::findSymbolsForAcceleratorPointerTag |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
 ms.assetid: 95fd5e7a-c637-437e-b369-c864eef733c2
-caps.latest.revision: 3
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 3
+caps.latest.revision: "3"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0f67263b385c184b0182716469f110c87bcebb50
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::findSymbolsForAcceleratorPointerTag
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-傳回符號的列舉型別變數的指定標記值對應父快速 Stub 函式。  
+# <a name="idiasessionfindsymbolsforacceleratorpointertag"></a>IDiaSession::findSymbolsForAcceleratorPointerTag
+父系 Accelerator 虛設常式函式中傳回符號的變數指定的標記值對應至的列舉。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT findSymbolsForAcceleratorPointerTag (   
-   IDiaSymbol*           parent,  
+```C++  
+HRESULT findSymbolsForAcceleratorPointerTag (   
+   IDiaSymbol*           parent,  
    DWORD                 tagValue,  
-   IDiaEnumSymbols**     ppResult  
+   IDiaEnumSymbols**     ppResult  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `parent`  
- \[in\] 對應至要搜尋的快速 Stub 函式的 IDiaSymbol。  
+ [in]IDiaSymbol 對應於要搜尋的快速鍵虛設常式函式。  
   
  `tagValue`  
- \[in\] 指標標記值。  
+ [in]指標的標記值。  
   
  `ppResult`  
- \[out\] 會使用這個結果的 `IDiaEnumSymbols` 介面指標的指標。  
+ [out]指標`IDiaEnumSymbols`初始化與結果的介面指標。  
   
-## 傳回值  
- 如果成功，則傳回 `S_OK`，否則傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

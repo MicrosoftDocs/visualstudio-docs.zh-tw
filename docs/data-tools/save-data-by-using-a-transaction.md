@@ -1,5 +1,5 @@
 ---
-title: Save data by using a transaction | Microsoft Docs
+title: "如何： 使用異動儲存資料 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,69 +9,49 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
 helpviewer_keywords:
 - saving data, using transactions
 - System.Transactions namespace
 - transactions, saving data
 - data [Visual Studio], saving
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
-caps.latest.revision: 13
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: f647aeb0772bde7933216aa360c9dfccd3c872da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 23cf5ee9ef7369d8c0f52adde639adad4abe3ae6
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="save-data-by-using-a-transaction"></a>Save data by using a transaction
-You save data in a transaction by using the <xref:System.Transactions> namespace. Use the <xref:System.Transactions.TransactionScope> object to participate in a transaction that is automatically managed for you.  
+# <a name="how-to-save-data-by-using-a-transaction"></a>如何： 使用異動儲存資料
+將資料儲存在交易中的使用<xref:System.Transactions>命名空間。 使用<xref:System.Transactions.TransactionScope>物件能夠參與的交易，為您自動管理。  
   
- Projects are not created with a reference to the System.Transactions assembly, so you need to manually add a reference to projects that use transactions.  
+因此您必須手動將參考加入至使用交易之專案的專案不會建立使用 System.Transactions 組件的參考。  
   
-> [!NOTE]
->  The <xref:System.Transactions> namespace is supported in Windows 2000 or later.  
+最簡單的方式實作交易是具現化<xref:System.Transactions.TransactionScope>物件存放至`using`陳述式。 (如需詳細資訊，請參閱[Using 陳述式](/dotnet/visual-basic/language-reference/statements/using-statement)，和[使用陳述式](/dotnet/csharp/language-reference/keywords/using-statement)。)執行內的程式碼`using`參與交易的陳述式。  
   
- The easiest way to implement a transaction is to instantiate a <xref:System.Transactions.TransactionScope> object in a `using` statement. (For more information, see [Using Statement](/dotnet/visual-basic/language-reference/statements/using-statement), and [using Statement](/dotnet/csharp/language-reference/keywords/using-statement).) The code that runs within the `using` statement participates in the transaction.  
+若要認可的交易，呼叫<xref:System.Transactions.TransactionScope.Complete%2A>方法中使用的最後一個陳述式區塊。  
   
- To commit the transaction, call the <xref:System.Transactions.TransactionScope.Complete%2A> method as the last statement in the using block.  
+若要回復交易，會擲回例外狀況之前呼叫<xref:System.Transactions.TransactionScope.Complete%2A>方法。  
   
- To roll back the transaction, throw an exception prior to calling the <xref:System.Transactions.TransactionScope.Complete%2A> method.  
+## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>若要加入的參考 system.transactions.dll  
   
- For more information, see [Save data in a transaction](../data-tools/save-data-in-a-transaction.md).  
+1.  在**專案**功能表上，選取**加入參考**。  
   
-### <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>To add a reference to the System.Transactions.dll  
+2.  上**.NET**  索引標籤 (**SQL Server**  索引標籤的 SQL Server 專案)，選取**System.Transactions**，然後選取**確定**。  
   
-1.  On the **Project** menu, select **Add Reference**.  
+     System.transactions.dll 的參考會加入至專案。  
   
-2.  On the **.NET** tab (**SQL Server** tab for SQL Server projects), select **System.Transactions**, and then select **OK**.  
+## <a name="to-save-data-in-a-transaction"></a>若要在交易中儲存資料  
   
-     A reference to System.Transactions.dll is added to the project.  
+-   加入程式碼中所使用的儲存資料以包含交易的陳述式。 下列程式碼會示範如何建立及具現化<xref:System.Transactions.TransactionScope>物件中使用陳述式：  
   
-### <a name="to-save-data-in-a-transaction"></a>To save data in a transaction  
+     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
+     [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
   
--   Add code to save data within the using statement that contains the transaction. The following code shows how to create and instantiate a <xref:System.Transactions.TransactionScope> object in a using statement:  
-  
-     [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]  [!code-cs[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]  
-  
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>請參閱
+[將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)  
+[逐步解說： 在交易中儲存資料](../data-tools/save-data-in-a-transaction.md)  

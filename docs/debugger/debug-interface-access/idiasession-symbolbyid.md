@@ -1,57 +1,56 @@
 ---
-title: "IDiaSession::symbolById | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSession::symbolById 方法"
+title: "Idiasession:: Symbolbyid |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSession::symbolById method
 ms.assetid: 062e4b5a-9c4d-4703-88da-ec13102c2b66
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 70139b7bf3286e7c4527bd71cf78b4ba86aeac1e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSession::symbolById
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-藉由一個符號來擷取其唯一的識別項。  
+# <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
+擷取符號依其唯一的識別項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT symbolById (   
-   DWORD        id,  
-   IDiaSymbol** ppSymbol  
+```C++  
+HRESULT symbolById (   
+   DWORD        id,  
+   IDiaSymbol** ppSymbol  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `id`  
- \[in\]唯一識別項。  
+ [in]唯一識別項。  
   
  `ppSymbol`  
- \[\] out傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取物件，表示該符號。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)擷取表示符號的物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 指定的識別項是唯一的值，以使所有符號都是唯一在內部使用 DIA SDK。  
+## <a name="remarks"></a>備註  
+ 指定的識別項是由 DIA SDK 在內部用來使所有符號都是唯一的唯一值。  
   
- 這個方法可用，比方說，若要擷取的符號，表示另一個符號的型別 \(請參閱範例\)。  
+ 這個方法可用，例如，擷取代表類型的另一個符號的符號 （請參閱範例）。  
   
-## 範例  
- 這個範例會擷取[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表另一個符號的型別。  本範例顯示如何使用`symbolById`工作階段中的方法。  較簡單手法，就是呼叫[IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法，以直接擷取型別符號。  
+## <a name="example"></a>範例  
+ 這個範例會擷取[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)代表類型的另一個符號。 這個範例示範如何使用`symbolById`工作階段中的方法。 更簡單的方法是呼叫[idiasymbol:: Get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)方法來直接擷取類型符號。  
   
-```cpp#  
+```C++  
 IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)  
 {  
     IDiaSymbol *pTypeSymbol = NULL;  
@@ -65,7 +64,7 @@ IDiaSymbol *GetSymbolType(IDiaSymbol *pSymbol, IDiaSession *pSession)
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaSymbol::get\_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
+ [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)

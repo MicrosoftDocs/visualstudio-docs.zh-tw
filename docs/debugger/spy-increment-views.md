@@ -1,48 +1,48 @@
 ---
-title: "Spy++ Views | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/05/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "views, Spy++"
-  - "Spy++, views"
+title: "Spy + + 檢視 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- views, Spy++
+- Spy++, views
 ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: c804ad5fc4921eefc5529094c45361c5fa115fb9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Spy++ Views
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-Spy \+\+ 會顯示您電腦上可用視窗、訊息、處理序和執行緒的樹狀檢視。  
+# <a name="spy-views"></a>Spy++ 檢視
+Spy + + 中會顯示在您的電腦上的 windows、 訊息、 處理程序和執行緒可用的樹狀檢視。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [視窗檢視](../debugger/windows-view.md)  
- 顯示可用視窗和控制項的樹狀檢視。  
+ 顯示可用的視窗和控制項的樹狀檢視。  
   
  [訊息檢視](../debugger/messages-view.md)  
- 顯示與視窗、處理序或執行緒關聯的訊息資料流。  
+ 顯示視窗、 處理序或執行緒相關聯的訊息資料流。  
   
  [處理序檢視](../debugger/processes-view.md)  
- 顯示作用中處理序的樹狀檢視。  
+ 顯示使用中處理序樹狀結構檢視。  
   
  [執行緒檢視](../debugger/threads-view.md)  
- 顯示作用中執行緒的樹狀檢視。  
+ 顯示樹狀檢視的使用中執行緒。  
   
-## 相關章節  
- [Spy\+\+ 檢視的搜尋工具](../debugger/search-tools-for-spy-increment-views.md)  
- 用來尋找 \[Spy\+\+ 檢視\] 視窗中特定節點的對話方塊。  
+## <a name="related-sections"></a>相關章節  
+ [Spy++ 檢視的搜尋工具](../debugger/search-tools-for-spy-increment-views.md)  
+ 用來在 Spy + + 檢視視窗中尋找特定節點的對話方塊。  
   
- [使用 Spy\+\+](../debugger/using-spy-increment.md)  
- 介紹 Spy\+\+ 工具並說明如何使用此工具。  
+ [使用 Spy++](../debugger/using-spy-increment.md)  
+ 介紹 Spy + + 工具，並說明如何使用它。  
   
- [Spy\+\+ 參考](../debugger/spy-increment-reference.md)  
- 包含描述每個 Spy\+\+ 功能表和對話方塊的章節。
+ [Spy++ 參考](../debugger/spy-increment-reference.md)  
+ 包含各節描述每個 Spy + + 功能表和對話方塊方塊。

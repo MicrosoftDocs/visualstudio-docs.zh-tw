@@ -1,43 +1,28 @@
 ---
-title: "新的專案產生︰ 在幕後，第二部分 |Microsoft 文件"
+title: "新的專案產生： 在幕後，第二部分 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-caps.latest.revision: 14
+caps.latest.revision: "14"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 859eeac9c2fd322dcf231e9c70fe83b92b099111
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: f7dc04752b034f666dfcb1d72b500f2c12f54fba
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生︰ 在幕後，第二部分
-中[產生新的專案︰ 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新專案**對話方塊方塊會填入。 讓我們假設您已選取**Visual C# Windows 應用程式**、 填寫**名稱**和**位置**文字方塊中，並按下 [確定]。  
+# <a name="new-project-generation-under-the-hood-part-two"></a>新的專案產生： 在幕後，第二部分
+中[產生新的專案： 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)我們可了解如何**新專案**對話方塊方塊會填入。 讓我們假設您已選取**Visual C# Windows 應用程式**、 填寫**名稱**和**位置**文字方塊中，並按下 [確定]。  
   
 ## <a name="generating-the-solution-files"></a>產生方案檔  
  選擇應用程式範本會指示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]才能解壓縮及開啟對應的.vstemplate 檔案，並啟動來解譯此檔案中的 XML 命令的範本。 這些命令會建立新的或現有方案中的專案和專案項目。  
@@ -93,9 +78,9 @@ namespace Simple
 </VSTemplate>  
 ```  
   
- 我們探討了\<TemplateData > 一節中[產生新的專案︰ 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 本節中的標記用來控制的外觀**新專案** 對話方塊。  
+ 我們探討了\<TemplateData > 一節中[產生新的專案： 下原理，一部份](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)。 本節中的標記用來控制的外觀**新專案** 對話方塊。  
   
- 中的標記\<TemplateContent > 區段控制產生新的專案和專案項目。 以下是\<TemplateContent > 區段從 cswindowsapplication.vstemplate 檔案 \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中。  
+ 中的標記\<TemplateContent > 區段控制產生新的專案和專案項目。 以下是\<TemplateContent > 從 cswindowsapplication.vstemplate 檔案 \Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 資料夾中的區段。  
   
 ```  
 <TemplateContent>  
@@ -129,15 +114,15 @@ namespace Simple
 </TemplateContent>  
 ```  
   
- \<專案 > 標記控制的專案，產生和\<ProjectItem > 標記控制的專案項目產生。 如果參數 ReplaceParameters 為 true，範本將自訂項目或專案檔中的所有範本參數。 在此情況下，所有專案項目所都自訂，但 Settings.settings 除外。  
+ \<專案 > 標記控制的專案，產生和\<專案項目 > 標記控制的專案項目產生。 如果參數 ReplaceParameters 為 true，範本將自訂項目或專案檔中的所有範本參數。 在此情況下，所有專案項目所都自訂，但 Settings.settings 除外。  
   
  TargetFileName 參數會指定產生的專案檔案或項目的相對路徑與名稱。 這可讓您建立專案的資料夾結構。 如果您未指定這個引數，專案項目必須與專案項目範本相同的名稱。  
   
- 所產生的 Windows 應用程式資料夾結構看起來像這樣︰  
+ 所產生的 Windows 應用程式資料夾結構看起來像這樣：  
   
  ![SimpleSolution](../../extensibility/internals/media/simplesolution.png "SimpleSolution")  
   
- 第一個且唯一\<專案 > 中的範本讀取的標記︰  
+ 第一個且唯一\<專案 > 中的範本讀取的標記：  
   
 ```  
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">  
@@ -148,7 +133,7 @@ namespace Simple
 ### <a name="designers-and-references"></a>設計工具和參照  
  您可以看到在 [方案總管] 中，確認 [Properties] 資料夾存在，且包含預期的檔案。 但專案相關的項目參考，設計工具檔案相依性，例如 Resources.Designer.cs Resources.resx，來和 Form1.cs 的 Form1.Designer.cs？  這些是 Simple.csproj 檔案中時設定其產生的。  
   
- 以下是\<ItemGroup > 建立的專案參考的 Simple.csproj 從︰  
+ 以下是\<ItemGroup > 從 Simple.csproj 所建立的專案參考：  
   
 ```  
 <ItemGroup>  
@@ -173,4 +158,4 @@ namespace Simple
   
 ## <a name="see-also"></a>另請參閱  
  [產生新專案︰深入探討，第一部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
- [MSBuild](../../msbuild/msbuild.md)
+ [ MSBuild](../../msbuild/msbuild.md)

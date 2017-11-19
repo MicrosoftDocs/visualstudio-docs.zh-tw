@@ -1,51 +1,51 @@
 ---
-title: "IDebugProcessEx2::Attach | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProcessEx2::Attach"
-helpviewer_keywords: 
-  - "IDebugProcessEx2::Attach 方法"
+title: "IDebugProcessEx2::Attach |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProcessEx2::Attach
+helpviewer_keywords: IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 111895b73ee9685b9608be9812452d04d84cd48c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProcessEx2::Attach
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會通知程序工作階段現在偵錯的處理程序。  
+# <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
+這個方法會通知處理程序工作階段現在偵錯程序。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Attach(   
-   IDebugSession2* pSession  
+```cpp  
+HRESULT Attach(   
+   IDebugSession2* pSession  
 );  
 ```  
   
-```c#  
+```csharp  
 int Attach(  
-   IDebugSession2 pSession  
+   IDebugSession2 pSession  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pSession`  
- \[in\]值，這個值可以唯一識別附加至此處理序工作階段。  
+ [in]可唯一識別附加至此處理序的工作階段值。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 介面傳入的`pSession`視為只以 cookie，該值可唯一識別附加至此處理序 ； 的偵錯工作階段管理員 在提供的介面方法，沒有任何可正常運作。  
+## <a name="remarks"></a>備註  
+ 在傳遞介面`pSession`cookie，可唯一識別附加至此處理序; 的偵錯工作階段管理員值僅被視為是提供的介面上的方法都是的功能。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

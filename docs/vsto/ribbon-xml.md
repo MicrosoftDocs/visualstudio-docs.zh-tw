@@ -1,16 +1,13 @@
 ---
-title: Ribbon XML | Microsoft Docs
+title: "功能區 XML |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VSTO.Ribbon.RibbonXMLItem
+f1_keywords: VSTO.Ribbon.RibbonXMLItem
 dev_langs:
 - VB
 - CSharp
@@ -26,80 +23,81 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], customizing
 - customizing the Ribbon, displaying
 ms.assetid: a5945667-40e8-4191-9f1e-71c18ec30a2e
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6b0eb5783aa5a58a1292f52bb50cb765673deddb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 7c0a4dd8bb577ddc52ed6a97b2e412109c214335
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="ribbon-xml"></a>Ribbon XML
-  The Ribbon (XML) item enables you to customize a Ribbon by using XML. Use the Ribbon (XML) item if you want to customize the Ribbon in a way that is not supported by the Ribbon (Visual Designer) item. For a comparison of what you can do with each item, see [Ribbon Overview](../vsto/ribbon-overview.md).  
+# <a name="ribbon-xml"></a>功能區 XML
+  [功能區 (XML)] 項目可讓您使用 XML 自訂功能區。 如果您想要以 [功能區 (視覺化設計工具)] 項目不支援的方式自訂功能區，請使用 [功能區 (XML)] 項目。 您可以如何處理每個項目比較，請參閱[功能區概觀](../vsto/ribbon-overview.md)。  
   
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
   
-## <a name="adding-a-ribbon-xml-item-to-a-project"></a>Adding a Ribbon (XML) Item to a Project  
- You can add a **Ribbon (XML)** item to any Office project from the **Add New Item** dialog box. Visual Studio automatically adds the following files to your project:  
+## <a name="adding-a-ribbon-xml-item-to-a-project"></a>將功能區 (XML) 項目加入至專案  
+ 您可以從 [加入新項目] **ribbon** 對話方塊，將 [功能區 (XML)] **GetCustomUI** 項目加入至任何 Office 專案。 Visual Studio 會自動將下列檔案加入您的專案中：  
   
--   A Ribbon XML file. This file defines the Ribbon user interface (UI). Use this file to add UI elements such as tabs, groups, and controls. For details, see [Ribbon XML File Reference](#RibbonDescriptorFile) later in this topic.  
+-   功能區 XML 檔。 這個檔案會定義功能區使用者介面 (UI)。 請使用這個檔案加入 UI 項目，例如索引標籤、群組和控制項。 如需詳細資訊，請參閱本主題稍後的功能區 XML 檔案參考 [GetCustomUI](#RibbonDescriptorFile) 。  
   
--   A Ribbon code file. This file contains the *Ribbon class*. This class has the name that you specified for the **Ribbon (XML)** item in the **Add New Item** dialog box. Microsoft Office applications use an instance of this class to load the custom Ribbon. For details, see [Ribbon Class Reference](#RibbonExtensionClass) later in this topic.  
+-   功能區程式碼檔案。 此檔案內含「功能區類別」 *GetCustomUI*(ribbon class)。 這個類別具有您在 [加入新項目] **ribbon** 對話方塊中為 [功能區 (XML)] **GetCustomUI** 項目所指定的名稱。 Microsoft Office 應用程式使用此類別的執行個體來載入自訂功能區。 如需詳細資訊，請參閱本主題稍後的功能區類別參考 [GetCustomUI](#RibbonExtensionClass) 。  
   
- By default, these files add a custom group to the **Add-Ins** tab in the Ribbon.  
+ 根據預設，這些檔案會在功能區的 [增益集] **GetCustomUI** 索引標籤中加入自訂群組。  
   
-## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>Displaying the Custom Ribbon in a Microsoft Office Application  
- After you add a **Ribbon (XML)** item to your project, you must add code to the **ThisAddin**, **ThisWorkbook**, or **ThisDocument** class that overrides the CreateRibbonExtensibilityObject method and returns the Ribbon XML class to the Office application.  
+## <a name="displaying-the-custom-ribbon-in-a-microsoft-office-application"></a>在 Microsoft Office 應用程式中顯示自訂功能區  
+ 您將加入之後**功能區 (XML)**項目至專案，您必須將程式碼加入**ThisAddin**， **ThisWorkbook**，或**ThisDocument**類別會覆寫 CreateRibbonExtensibilityObject 方法，而此功能區 XML 類別傳回 Office 應用程式。  
   
- The following code example overrides the CreateRibbonExtensibilityObject method and returns a Ribbon XML class named MyRibbon.  
+ 下列程式碼範例會覆寫 CreateRibbonExtensibilityObject 方法，並傳回名為 MyRibbon 的功能區 XML 類別。  
   
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)] [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
+ [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
+ [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]  
   
-## <a name="defining-the-behavior-of-the-custom-ribbon"></a>Defining the Behavior of the Custom Ribbon  
- You can respond to user actions, such as clicking a button on the Ribbon, by creating *callback methods*. Callback methods resemble events in Windows Forms controls, but they are identified by an attribute in the XML of the UI element. You write methods in the Ribbon class, and a control calls the method that has the same name as the attribute value. For example, you can create a callback method that is called when a user clicks a button on the Ribbon. Two steps are required to create a callback method:  
+## <a name="defining-the-behavior-of-the-custom-ribbon"></a>定義自訂功能區的行為  
+ 您可以建立「回呼方法」 *GetCustomUI*(callback method) 來回應使用者動作 (例如，按一下功能區上的按鈕)。 回呼方法和 Windows Forms 控制項中的事件非常類似，但回呼方法是由 UI 項目中 XML 的屬性所識別。 請在功能區類別中撰寫方法，接著控制項便會呼叫與屬性值名稱相同的方法。 例如，您可以建立當使用者按一下功能區按鈕時所呼叫的回呼方法。 建立回呼方法需要執行兩個步驟：  
   
--   Assign an attribute to a control in the Ribbon XML file that identifies a callback method in your code.  
+-   在程式碼中識別回呼方法的功能區 XML 檔案中，將屬性指派給控制項。  
   
--   Define the callback method in the Ribbon class.  
+-   在功能區類別中定義回呼方法。  
   
 > [!NOTE]  
->  Outlook requires an additional step. For more information, see [Customizing a Ribbon for Outlook](../vsto/customizing-a-ribbon-for-outlook.md).  
+>  Outlook 還需要另一個步驟。 如需詳細資訊，請參閱[自訂 Outlook 功能區](../vsto/customizing-a-ribbon-for-outlook.md)。  
   
- For a walkthrough that demonstrates how to automate an application from the Ribbon, see [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).  
+ 如需示範如何從功能區自動化應用程式的逐步解說，請參閱 [GetCustomUI](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)。  
   
-### <a name="assigning-callback-methods-to-controls"></a>Assigning Callback Methods to Controls  
- To assign a callback method to a control in the Ribbon XML file, add an attribute that specifies the type of the callback method and the name of the method. For example, the following element defines a toggle button that has an **onAction** callback method named `OnToggleButton1`.  
+### <a name="assigning-callback-methods-to-controls"></a>將回呼方法指派給控制項  
+ 若要將回呼方法指派給功能區 XML 檔中的控制項，請加入指定回呼方法類型及方法名稱的屬性。 例如，下列項目會定義擁有名為 **ribbon** 之 `OnToggleButton1`。  
   
 ```  
 <toggleButton id="toggleButton1" onAction="OnToggleButton1" />  
 ```  
   
- **onAction** is called when the user performs the main task associated with a particular control. For example, the **onAction** callback method of a toggle button is called when the user clicks the button.  
+ 當使用者執行與特定控制項相關聯的主要工作時，便會呼叫**GetCustomUI** 。 例如，當使用者按一下切換按鈕時，便會呼叫該按鈕的 **GetCustomUI** 回呼方法。  
   
- The method that you specify in the attribute can have any name. However, it must match the name of the method that you define in the Ribbon code file.  
+ 您在屬性中指定的方法可以具有任何名稱。 但必須符合您在功能區程式碼檔案中定義之方法的名稱。  
   
- There are many different types of callback methods that you can assign to Ribbon controls. For a complete list of the callback methods available for each control, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15).  
+ 您可以將許多不同類型的回呼方法指定給功能區控制項。 如需每個控制項可用之回呼方法的完整清單，請參閱技術文件自訂開發人員適用的 Office (2007) 功能區使用者介面 (第三部分，共三部分) [GetCustomUI](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15)。  
   
-###  <a name="CallBackMethods"></a> Defining Callback Methods  
- Define your callback methods in the Ribbon class in the Ribbon code file. A callback method has several requirements:  
+###  <a name="CallBackMethods"></a> 定義回呼方法  
+ 請在功能區程式碼檔案的功能區類別中定義回呼方法。 回呼方法具有幾項需求：  
   
--   It must be declared as public.  
+-   必須將其宣告為公用。  
   
--   Its name must match the name of a callback method that you assigned to a control in the Ribbon XML file.  
+-   其名稱必須符合您指派給功能區 XML 檔中控制項之回呼方法的名稱。  
   
--   Its signature must match the signature of a type of callback method that is available for the associated Ribbon control.  
+-   其簽章必須符合相關功能區項目適用之回呼方法類型的簽章。  
   
- For a complete list of the callback method signatures for Ribbon controls, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 3 of 3)](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15). Visual Studio does not provide IntelliSense support for callback methods that you create in the Ribbon code file. If you create a callback method that does not match a valid signature, the code will compile, but nothing will occur when the user clicks the control.  
+ 如需功能區控制項回呼方法簽章的完整清單，請參閱技術文件自訂開發人員適用的 Office (2007) 功能區使用者介面 (第三部分，共三部分) [GetCustomUI](http://msdn.microsoft.com/en-us/a16c7df5-93f3-4920-baa8-7b7290794c15)。 Visual Studio 不會針對您在功能區程式碼檔案中建立的回呼方法提供 IntelliSense 支援。 如果您建立的回呼方法不符合有效的簽章，雖然程式碼會進行編譯，但是當使用者按一下控制項時，並不會產生任何反應。  
   
- All callback methods have a <xref:Microsoft.Office.Core.IRibbonControl> parameter that represents the control that called the method. You can use this parameter to reuse the same callback method for multiple controls. The following code example demonstrates an **onAction** callback method that performs different tasks depending on which control the user clicks.  
+ 所有的回呼方法都有 <xref:Microsoft.Office.Core.IRibbonControl> 參數，代表呼叫該方法的控制項。 您可以使用這個參數，對多個控制項重複使用相同的回呼方法。 下列程式碼範例示範的 **GetCustomUI** 回呼方法會根據使用者所按下的控制項，執行不同的工作。  
   
- [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)] [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
+ [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
+ [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]  
   
-##  <a name="RibbonDescriptorFile"></a> Ribbon XML File Reference  
- You can define your custom Ribbon by adding elements and attributes to the Ribbon XML file. By default, the Ribbon XML file contains the following XML.  
+##  <a name="RibbonDescriptorFile"></a> GetCustomUI  
+ 您可以在功能區 XML 檔案中加入項目和屬性來定義自訂功能區。 根據預設，功能區 XML 檔包含下列 XML。  
   
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
@@ -116,41 +114,41 @@ ms.lasthandoff: 08/30/2017
 </customUI>  
 ```  
   
- The following table describes the default elements in the Ribbon XML file.  
+ 下表描述功能區 XML 檔中的預設項目。  
   
-|Element|Description|  
+|項目|說明|  
 |-------------|-----------------|  
-|**customUI**|Represents the custom Ribbon in the VSTO Add-in project.|  
-|**ribbon**|Represents the Ribbon.|  
-|**tabs**|Represents a set of Ribbon tabs.|  
-|**tab**|Represents a single Ribbon tab.|  
-|**group**|Represents a group of controls on the Ribbon tab.|  
+|**customUI**|代表 VSTO 增益集專案中的自訂功能區。|  
+|**ribbon**|代表功能區。|  
+|**索引標籤**|代表一組功能區索引標籤。|  
+|**索引標籤**|代表單一功能區索引標籤。|  
+|**group**|代表功能區索引標籤上的控制項群組。|  
   
- These elements have attributes that specify the appearance and behavior of the custom Ribbon. The following table describes the default attributes in the Ribbon XML file.  
+ 這些項目都擁有指定自訂功能區外觀和行為的屬性。 下表描述功能區 XML 檔中的預設屬性。  
   
-|Attribute|Parent element|Description|  
+|屬性|父項目|說明|  
 |---------------|--------------------|-----------------|  
-|**onLoad**|**customUI**|Identifies a method that is called when the application loads the Ribbon.|  
-|**idMso**|**tab**|Identifies a built-in tab to display in the Ribbon.|  
-|**id**|**group**|Identifies the group.|  
-|**label**|**group**|Specifies the text that appears on the group.|  
+|**onLoad**|**customUI**|識別應用程式載入功能區時所呼叫的方法。|  
+|**idMso**|**索引標籤**|識別要顯示在功能區中的內建索引標籤。|  
+|**id**|**group**|識別群組。|  
+|**標籤**|**group**|指定出現在群組上的文字。|  
   
- The default elements and attributes in the Ribbon XML file are a small subset of the elements and attributes that are available. For a complete list of the available elements and attributes, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 2 of 3)](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b).  
+ 功能區 XML 檔案中的預設項目和屬性是可用項目和屬性的小型子集。 如需可用項目和屬性的完整清單，請參閱技術文件自訂開發人員適用的 Office (2007) 功能區使用者介面 (第二部分，共三部分) [GetCustomUI](http://msdn.microsoft.com/en-us/6b904f55-525f-4520-9b81-a017db65657b)。  
   
-##  <a name="RibbonExtensionClass"></a> Ribbon Class Reference  
- Visual Studio generates the Ribbon class in the Ribbon code file. Add the callback methods for controls on the Ribbon to this class. This class implements the <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.  
+##  <a name="RibbonExtensionClass"></a> GetCustomUI  
+ Visual Studio 會在功能區程式碼檔中產生功能區類別。 將功能區上控制項的回呼方法加入至這個類別。 這個類別會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility> 介面。  
   
- The following table describes the default methods in this class.  
+ 下表描述此類別中的預設方法。  
   
-|Method|Description|  
+|方法|描述|  
 |------------|-----------------|  
-|`GetCustomUI`|Returns the contents of the Ribbon XML file. Microsoft Office applications call this method to obtain an XML string that defines the user interface of your custom Ribbon. This method implements the <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> method. **Note:**  `GetCustomUI` should be implemented only to return the contents of the Ribbon XML file; it should not be used to initialize your VSTO Add-in. In particular, you should not try to display dialog boxes or other windows in your `GetCustomUI` implementation. Otherwise, the custom Ribbon might not behave correctly. If you have to run code that initializes your VSTO Add-in, add the code to the `ThisAddIn_Startup` event handler.|  
-|`OnLoad`|Assigns the <xref:Microsoft.Office.Core.IRibbonControl> parameter to the `ribbon` field. Microsoft Office applications call this method when they load the custom Ribbon. You can use this field to dynamically update the custom Ribbon. For more information, see the technical article [Customizing the Office (2007) Ribbon User Interface for Developers (Part 1 of 3)](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3).|  
-|`GetResourceText`|Called by the `GetCustomUI` method to obtain the contents of the Ribbon XML file.|  
+|`GetCustomUI`|傳回功能區 XML 檔案的內容。 Microsoft Office 應用程式會呼叫這個方法，以取得定義自訂功能區使用者介面的 XML 字串。 這個方法會實作 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`應該只能為傳回功能區 XML 檔案的內容而實作不應該用來初始化 VSTO 增益集。   具體而言，您不應嘗試在 `GetCustomUI` 實作中顯示對話方塊或其他視窗。 否則自訂功能區可能無法正確運作。 如果需要執行初始化 VSTO 增益集的程式碼，請將該程式碼加入至 `ThisAddIn_Startup` 事件處理常式。|  
+|`OnLoad`|將 <xref:Microsoft.Office.Core.IRibbonControl> 參數指派給 `ribbon` 欄位。 Microsoft Office 應用程式會在載入自訂功能區時呼叫此方法。 您可以使用這個欄位動態更新自訂功能區。 如需詳細資訊，請參閱技術文件自訂開發人員適用的 Office (2007) 功能區使用者介面 (第一部分，共三部分) [GetCustomUI](http://msdn.microsoft.com/en-us/a4fd6d18-d4a8-4e64-bd89-f437208573d3)。|  
+|`GetResourceText`|由 `GetCustomUI` 方法呼叫以取得功能區 XML 檔案的內容。|  
   
-## <a name="see-also"></a>See Also  
- [Ribbon Overview](../vsto/ribbon-overview.md)   
- [Walkthrough: Creating a Custom Tab by Using Ribbon XML](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
- [Office UI Customization](../vsto/office-ui-customization.md)  
+## <a name="see-also"></a>另請參閱  
+ [功能區概觀](../vsto/ribbon-overview.md)   
+ [逐步解說： 使用功能區 XML 建立自訂索引標籤](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)   
+ [Office UI 自訂](../vsto/office-ui-customization.md)  
   
   

@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugEngine2::SetException
-helpviewer_keywords:
-- IDebugEngine2::SetException
+f1_keywords: IDebugEngine2::SetException
+helpviewer_keywords: IDebugEngine2::SetException
 ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
-caps.latest.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 5d383b1638bde801fa1abd2045666fb23fa21b32
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 2d7d1631c1b5179d51a80b2094766c4ed053ac36
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定偵錯引擎 (DE) 應該如何處理指定的例外狀況。  

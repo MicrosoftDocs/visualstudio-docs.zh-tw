@@ -1,49 +1,52 @@
 ---
-title: "IEnumDebugExtendedPropertyInfo::Next | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IEnumDebugExtendedPropertyInfo::Next |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IEnumDebugExtendedPropertyInfo.Next
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IEnumDebugExtendedPropertyInfo::Next"
+helpviewer_keywords: IEnumDebugExtendedPropertyInfo::Next
 ms.assetid: ac41c9a3-19d1-4596-8a87-01c10b131be3
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 343620e4539e9d095f2708ab46077ee0dafd1932
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IEnumDebugExtendedPropertyInfo::Next
-擷取`ExtendedDebugPropertyInfo` 結構的指定數目在列舉型別序列的。  
+# <a name="ienumdebugextendedpropertyinfonext"></a>IEnumDebugExtendedPropertyInfo::Next
+擷取指定的數目的`ExtendedDebugPropertyInfo`列舉順序中的結構。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT Next (  
-   ULONG celt,  
-   ExtendedDebugPropertyInfo *rgelt,  
-   ULONG* pceltFetched  
+   ULONGcelt,  
+   ExtendedDebugPropertyInfo *rgelt,  
+   ULONG* pceltFetched  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `celt`  
- \[in\] `ExtendedDebugPropertyInfo`結構數目要擷取之的。  
+ [in]數目`ExtendedDebugPropertyInfo`要擷取的結構。  
   
  `rgelt`  
- \[out\] 指標的陣列擷取的 `ExtendedDebugPropertyInfo` 結構。  
+ [out]陣列`ExtendedDebugPropertyInfo`結構擷取。  
   
  `pceltFetched`  
- \[in\] `ExtendedDebugPropertyInfo` 結構數目實際上已擷取的。  
+ [out]數目`ExtendedDebugPropertyInfo`實際擷取的結構。  
   
-## 傳回值  
- 傳回有效的 `HRESULT`，通常 `S_OK`。  
+## <a name="return-value"></a>傳回值  
+ 傳回有效`HRESULT`，通常`S_OK`。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IEnumDebugExtendedPropertyInfo 介面](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
  [ExtendedDebugPropertyInfo 結構](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

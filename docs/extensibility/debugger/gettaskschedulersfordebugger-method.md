@@ -1,43 +1,44 @@
 ---
-title: "GetTaskSchedulersForDebugger 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetTaskSchedulersForDebugger 方法，TaskScheduler 類別 [.NET Framework 偵錯引擎]"
+title: "GetTaskSchedulersForDebugger 方法 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: GetTaskSchedulersForDebugger method, TaskScheduler class [.NET Framework debug engines]
 ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 474d809f36d21b254dbb8bf302cd21bc83db88a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# GetTaskSchedulersForDebugger 方法
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取所有陣列 <xref:System.Threading.Tasks.TaskScheduler> 目前使用中的物件。  
+# <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
+擷取所有的陣列<xref:System.Threading.Tasks.TaskScheduler>目前使用中的物件。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件︰** mscorlib （在 mscorlib.dll\)  
+ **組件：** mscorlib （在 mscorlib.dll)  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 \(CIL\)。  
+ 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 .method assembly hidebysig static class System.Threading.Tasks.TaskScheduler[] GetTaskSchedulersForDebugger() cil managed  
 ```  
   
-## 傳回值  
- 所有陣列 <xref:System.Threading.Tasks.TaskScheduler> 目前作用中的物件 <xref:System.AppDomain>。  
+## <a name="return-value"></a>傳回值  
+ 所有陣列<xref:System.Threading.Tasks.TaskScheduler>且目前正在使用中的物件<xref:System.AppDomain>。  
   
-## 備註  
- 這個方法不具備執行緒安全，不應與其他執行個體同時 <xref:System.Threading.Tasks.TaskScheduler>。 只有當偵錯工具已暫停的其他所有執行緒，應該會呼叫它從偵錯工具。  
+## <a name="remarks"></a>備註  
+ 這個方法不是安全執行緒，並不應與其他執行個體同時使用<xref:System.Threading.Tasks.TaskScheduler>。 它應從呼叫偵錯工具只在偵錯工具已經暫停所有其他執行緒時。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [TaskScheduler 類別](../../extensibility/debugger/taskscheduler-class-internal-members.md)

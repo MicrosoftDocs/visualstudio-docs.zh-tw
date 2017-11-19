@@ -1,12 +1,10 @@
 ---
-title: 'How to: Manage Control Layout on Actions Panes | Microsoft Docs'
+title: "如何： 管理執行窗格控制項配置 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,63 +15,65 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], layout on actions panes
 - smart documents [Office development in Visual Studio], control layout
 ms.assetid: 857550d0-b9c0-4d2f-a947-dd955bcf2823
-caps.latest.revision: 59
-author: kempb
-ms.author: kempb
+caps.latest.revision: "59"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 62e24a207184c63d950c07934bee5ca98609aaaf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: dbc6f8876236d1a056874500aea4878f9643f91b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-manage-control-layout-on-actions-panes"></a>How to: Manage Control Layout on Actions Panes
-  An actions pane is docked to the right of a document or worksheet by default; however, it can be docked to the left, top, or bottom. If you are using multiple user controls, you can write code to properly stack the user controls on the actions pane. For more information, see [Actions Pane Overview](../vsto/actions-pane-overview.md).  
+# <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理執行窗格的控制項配置
+  動作窗格停駐右邊的文件或工作表的預設值;不過，它可以停駐於左方、 top 或 bottom。 如果您使用多個使用者控制項，您可以撰寫程式碼上適當堆疊使用者控制項 [動作] 窗格。 如需詳細資訊，請參閱 [Actions Pane Overview](../vsto/actions-pane-overview.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- The stack order of the controls depends on whether the actions pane is docked vertically or horizontally.  
+ 控制項堆疊順序取決於是否 [動作] 窗格垂直或水平停駐。  
   
 > [!NOTE]  
->  If the user resizes the actions pane at run time, you can set the controls to resize with the actions pane. You can use the <xref:System.Windows.Forms.Control.Anchor%2A> property of a Windows Forms control to anchor controls to the actions pane. For more information, see [How to: Anchor Controls on Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).  
+>  如果使用者在執行階段調整動作 窗格中，您可以設定控制項調整大小以使用 動作 窗格。 您可以使用 Windows Form 控制項的 <xref:System.Windows.Forms.Control.Anchor%2A> 屬性，將控制項錨定到執行窗格。 如需詳細資訊，請參閱[How to： 在 Windows Form 上控制項的錨定](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。  
   
 > [!NOTE]  
->  Your computer might show different names or locations for some of the Visual Studio user interface elements in the following instructions. The Visual Studio edition that you have and the settings that you use determine these elements. For more information, see [Personalize the Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md).  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
   
-### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>To set the stack order of the actions pane controls  
+### <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>若要設定執行窗格控制項堆疊順序  
   
-1.  Open a document-level project for Microsoft Office Word that includes an actions pane with multiple user controls or nested actions pane controls. For more information, see [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).  
+1.  開啟包含具有多個使用者控制項或巢狀的執行窗格控制項的 [動作] 窗格的 Microsoft Office Word 的文件層級專案。 如需詳細資訊，請參閱[如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。  
   
-2.  Right-click **ThisDocument.cs** or **ThisDocument.vb** in **Solution Explorer** and then click **View Code**.  
+2.  以滑鼠右鍵按一下**ThisDocument.cs**或**ThisDocument.vb**中**方案總管] 中**，然後按一下 [**檢視程式碼**。  
   
-3.  In the <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> event handler of the actions pane, check if the orientation of the actions pane is horizontal.  
+3.  在<xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged>動作 窗格中，檢查是否為水平方向的動作 窗格中的事件處理常式。  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]  [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]  
   
-4.  If the orientation is horizontal, stack the action pane controls from the left; otherwise, stack them from the top.  
+4.  從左邊; 水平方向時，控制堆疊 [動作] 窗格否則，從頂端堆疊它們。  
   
-     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]  [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]  
+     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
+     [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]  
   
-5.  In C#, you must add an event handler for the `ActionsPane` to the <xref:Microsoft.Office.Tools.Word.Document.Startup> event handler. For information about creating event handlers, see [How to: Create Event Handlers in Office Projects](../vsto/how-to-create-event-handlers-in-office-projects.md).  
+5.  在 C# 中，您必須加入事件處理常式`ActionsPane`至<xref:Microsoft.Office.Tools.Word.Document.Startup>事件處理常式。 如需建立事件處理常式的詳細資訊，請參閱[How to： 在 Office 專案中建立事件處理常式](../vsto/how-to-create-event-handlers-in-office-projects.md)。  
   
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]  
   
-6.  Run the project and verify that the actions pane controls are stacked left to right when the actions pane is docked at the top of the document, and the controls are stacked from top to bottom when the actions pane is docked at the right side of the document.  
+6.  執行專案並驗證執行窗格控制項堆疊左到右的文件頂端停駐 [動作] 窗格和 [動作] 窗格停駐在文件的右側時，會從上到下堆疊控制項時。  
   
-## <a name="example"></a>Example  
- [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)] [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
+## <a name="example"></a>範例  
+ [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
+ [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires:  
+## <a name="compiling-the-code"></a>編譯程式碼  
+ 這個範例需要：  
   
--   A Word document-level project with an actions pane that contains multiple user controls or nested actions pane controls.  
+-   控制與包含多個使用者控制項的執行窗格或巢狀的動作 窗格中的 Word 文件層級專案。  
   
-## <a name="see-also"></a>See Also  
- [Actions Pane Overview](../vsto/actions-pane-overview.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [How to: Add an Actions Pane to Word Documents or Excel Workbooks](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
- [Walkthrough: Inserting Text into a Document from an Actions Pane](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
+## <a name="see-also"></a>另請參閱  
+ [執行窗格概觀](../vsto/actions-pane-overview.md)   
+ [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [如何： 執行窗格加入 Word 文件或 Excel 活頁簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)   
+ [逐步解說： 將文字插入文件中從 [動作] 窗格](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)   
+ [逐步解說：從執行窗格將文字插入文件](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)  
   
   

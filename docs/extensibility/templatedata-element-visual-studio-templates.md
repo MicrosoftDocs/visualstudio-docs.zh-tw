@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
-helpviewer_keywords:
-- TemplateData element [Visual Studio project templates]
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#TemplateData
+helpviewer_keywords: TemplateData element [Visual Studio project templates]
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
-caps.latest.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Machine Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 185734d82820c8de0d84e995e2ff88894a2c86dc
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 0c0cda80ce9ff762547e6938ec27027fe5e045d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 項目 (Visual Studio 範本)
 將範本分類，並定義該範本在 [新增專案]  或 [加入新項目]  對話方塊中顯示的方式。  
@@ -63,29 +46,29 @@ ms.lasthandoff: 02/22/2017
   
 ### <a name="child-elements"></a>子項目  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
-|[Name](../extensibility/name-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的名稱出現在**新的專案**或**加入新項目**對話方塊。|  
-|[說明](../extensibility/description-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的描述出現在**新的專案**或**加入新項目**對話方塊。|  
-|[圖示](../extensibility/icon-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定的路徑和檔名做為圖示時，它會出現在 映像檔的**新的專案**或**加入新項目**對話方塊範本。|  
-|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必要項目。<br /><br /> 將專案範本分類，使其出現在指定的群組中**新的專案**對話方塊。|  
-|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將分類的專案範本，使其出現在指定的子類別中**新的專案**對話方塊。|  
-|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本的識別碼。|  
+|[Name](../extensibility/name-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本的名稱出現在**新專案**或**加入新項目** 對話方塊。|  
+|[說明](../extensibility/description-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定範本描述出現在**新專案**或**加入新項目** 對話方塊。|  
+|[圖示](../extensibility/icon-element-visual-studio-templates.md)|必要項目。<br /><br /> 指定的路徑和檔名做為圖示時，它會出現在 映像檔的**新專案**或**加入新項目**對話方塊範本。|  
+|[ProjectType](../extensibility/projecttype-element-visual-studio-templates.md)|必要項目。<br /><br /> 將專案範本分類，使其出現在中指定的群組**新專案** 對話方塊。|  
+|[ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 將專案範本分類，使它顯示在指定的子類別目錄之下**新專案** 對話方塊。|  
+|[TemplateID](../extensibility/templateid-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本 id。|  
 |[TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本的群組識別碼。|  
-|[排序方式](../extensibility/sortorder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定出現在用來排列次序相同分類中，所有範本中的值**新的專案**或**加入新項目**對話方塊。|  
-|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否要在具現化的專案建立所在的資料夾。|  
+|[排序方式](../extensibility/sortorder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定值，用於排列次序相同分類中的其他範本中所顯示的樣子**新專案**或**加入新項目** 對話方塊。|  
+|[CreateNewFolder](../extensibility/createnewfolder-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否要包含的資料夾建立在具現化的專案。|  
 |[DefaultName](../extensibility/defaultname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 在建立時，請指定 Visual Studio 專案系統將產生的專案或項目的名稱。|  
-|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定 Visual Studio 專案系統是否會在建立時產生專案或項目的預設名稱。|  
+|[ProvideDefaultName](../extensibility/providedefaultname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定在建立時，Visual Studio 專案系統是否會產生預設名稱為專案或項目。|  
 |[PromptForSaveOnCreation](../extensibility/promptforsaveoncreation-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定專案是否可以建立為暫存專案。|  
-|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否**瀏覽**按鈕位於**新的專案**對話方塊，讓使用者可以輕鬆地修改儲存新的專案的預設目錄。|  
-|[隱藏](../extensibility/hidden-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本是否顯示在**新的專案**或**加入新項目**對話方塊。|  
-|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定的數目會顯示在範本的父分類**新的專案**對話方塊。|  
+|[EnableLocationBrowseButton](../extensibility/enablelocationbrowsebutton-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否**瀏覽**按鈕位於**新專案**對話方塊，讓使用者可以輕鬆地修改儲存新專案的預設目錄。|  
+|[隱藏](../extensibility/hidden-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本是否會出現在**新專案**或**加入新項目** 對話方塊。|  
+|[NumberOfParentCategoriesToRollUp](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定的數目會顯示範本中的父類別**新專案** 對話方塊。|  
 |[LocationFieldMRUPrefix](../extensibility/locationfieldmruprefix-element-visual-studio-templates.md)|選擇性項目。|  
-|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定是否**位置**文字方塊中**新的專案** 對話方塊中已啟用、 停用，或隱藏專案範本。|  
-|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 如果範本只支援特定的最低版本和更新的版本，如果有的話，.NET framework，請使用此項目。|  
+|[LocationField](../extensibility/locationfield-element-visual-studio-project-templates.md)|選擇性項目。<br /><br /> 指定是否**位置**文字方塊中**新專案**對話方塊的 已啟用、 停用，或隱藏專案範本。|  
+|[RequiredFrameworkVersion](../extensibility/requiredframeworkversion-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 如果範本只支援特定的最小版本和更新的版本，如果有的話，.NET framework，請使用此項目。|  
 |[SupportsMasterPage](../extensibility/supportsmasterpage-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本是否支援 web 專案的主版頁面。|  
 |[SupportsCodeSeparation](../extensibility/supportscodeseparation-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本是否支援程式碼分離或程式碼後置頁面模型中，web 專案。|  
-|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定是否範本是相同的多個語言，以及是否**語言**選項都位於**新的專案**對話方塊。|  
+|[SupportsLanguageDropDown](../extensibility/supportslanguagedropdown-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定範本是否完全相同的多個語言，以及是否**語言**選項都**新專案** 對話方塊。|  
 |[TargetPlatformName](../extensibility/targetplatformname-element-visual-studio-templates.md)|選擇性項目。<br /><br /> 指定專案範本的目標平台。 這個項目指定的專案範本用來建立[!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)]應用程式。|  
   
 ### <a name="parent-elements"></a>父項目  

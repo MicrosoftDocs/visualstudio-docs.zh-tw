@@ -1,12 +1,10 @@
 ---
-title: 'How to: Expose Code to VBA in a Visual C# Project | Microsoft Docs'
+title: "如何： 公開程式碼給 Visual C# 專案中的 VBA |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,43 +16,42 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], exposing code
 - exposing code to VBA
 ms.assetid: 56d5894b-4823-42f4-8c7e-d8739b859c52
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 4bac541696170363b92ce99270460a10e2f181d8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/28/2017
-
+ms.openlocfilehash: a52060f1a1b2200109c5003321857915d95bd12a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>How to: Expose Code to VBA in a Visual C# Project
-  You can expose code in a Visual C# project to Visual Basic for Applications (VBA) code if you want the two types of code to interact with each other.  
+# <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：公開程式碼給 Visual C# 專案中的 VBA
+  如果您想要與彼此互動的程式碼的兩個類型，您可以公開的 Visual C# 專案給 Visual Basic for Applications (VBA) 程式碼中的程式碼。  
   
- The Visual C# process is different from the Visual Basic process. For more information, see [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md).  
+ Visual C# 處理序會與 Visual Basic 處理序不同。 如需詳細資訊，請參閱[如何： 公開程式碼給 Visual Basic 專案中的 VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
-## <a name="exposing-code-in-a-visual-c-project"></a>Exposing Code in a Visual C# Project  
- To enable VBA code to call code in a Visual C# project, modify the code so it is visible to COM, and then set the **ReferenceAssemblyFromVbaProject** property to **True** in the designer.  
+## <a name="exposing-code-in-a-visual-c-project"></a>Visual C# 專案中公開程式碼  
+ 若要啟用 Visual C# 專案中呼叫程式碼的 VBA 程式碼，修改的程式碼，所以為 COM 可見，並將**ReferenceAssemblyFromVbaProject**屬性**True**設計工具中。  
   
- For a walkthrough that demonstrates how to call a method in a Visual C# project from VBA, see [Walkthrough: Calling Code from VBA in a Visual C&#35; Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md).  
+ 如需示範如何從 VBA 呼叫 Visual C# 專案中的一種方法的逐步解說，請參閱[逐步解說： 從 VBA 在 Visual C# 35; 呼叫的程式碼專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。  
   
-#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>To expose code in a Visual C# project to VBA  
+#### <a name="to-expose-code-in-a-visual-c-project-to-vba"></a>若要公開給 VBA 的 Visual C# 專案中的程式碼  
   
-1.  Open or create a document-level project that is based on a Word document, Excel workbook, or Excel template that supports macros, and that already contains VBA code.  
+1.  開啟或建立 Word 文件、 Excel 活頁簿或 Excel 範本支援的巨集，並已包含 VBA 程式碼為基礎的文件層級專案。  
   
-     For more information about the document file formats that support macros, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+     如需支援的巨集的文件的檔案格式的詳細資訊，請參閱[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
   
     > [!NOTE]  
-    >  This feature cannot be used in Word template projects.  
+    >  這項功能無法用於 Word 範本專案。  
   
-2.  Ensure that VBA code in the document is allowed to run without prompting the user to enable macros. You can trust VBA code to run by adding the location of the Office project to the list of trusted locations in the Trust Center settings for Word or Excel.  
+2.  確定允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。  
   
-3.  Add the member that you want to expose to VBA to a public class in your project, and declare the new member as **public**.  
+3.  新增您想要公開給 VBA，若要在專案中，在公用類別成員，並宣告做為新的成員**公用**。  
   
-4.  Apply the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> and <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> attributes to the class that you are exposing to VBA. These attributes make the class visible to COM, but without generating a class interface.  
+4.  套用下列<xref:System.Runtime.InteropServices.ComVisibleAttribute>和<xref:System.Runtime.InteropServices.ClassInterfaceAttribute>屬性加入您要公開給 VBA 的類別。 這些屬性可以讓 COM 看到類別，但是不會產生類別介面。  
   
     ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
@@ -62,9 +59,9 @@ ms.lasthandoff: 08/28/2017
         System.Runtime.InteropServices.ClassInterfaceType.None)]  
     ```  
   
-5.  Override the **GetAutomationObject** method of a host item class in your project to return an instance of the class that you are exposing to VBA:  
+5.  覆寫**GetAutomationObject**傳回給 VBA 之類別所公開的執行個體的專案中的主項目類別的方法：  
   
-    -   If you are exposing a host item class to VBA, override the **GetAutomationObject** method that belongs to this class, and return the current instance of the class.  
+    -   如果您正在公開給 VBA 之主項目類別，覆寫**GetAutomationObject**屬於這個類別，並傳回目前的執行個體類別的方法。  
   
         ```csharp  
         protected override object GetAutomationObject()  
@@ -73,7 +70,7 @@ ms.lasthandoff: 08/28/2017
         }  
         ```  
   
-    -   If you are exposing a class that is not a host item to VBA, override the **GetAutomationObject** method of any host item in your project, and return an instance of the non-host item class. For example, the following code assumes that you are exposing a class named `DocumentUtilities` to VBA.  
+    -   如果您正在公開給 VBA 的主項目不是類別，覆寫**GetAutomationObject**之任何主機的方法在專案中，項目，並傳回非主項目類別的執行個體。 例如，下列程式碼假設您正在公開類別的`DocumentUtilities`給 VBA。  
   
         ```csharp  
         protected override object GetAutomationObject()  
@@ -82,36 +79,36 @@ ms.lasthandoff: 08/28/2017
         }  
         ```  
   
-     For more information about host items, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+     如需主項目的詳細資訊，請參閱 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
-6.  Extract an interface from the class that you are exposing to VBA. In the **Extract Interface** dialog box, select the public members that you want to include in the interface declaration. For more information, see [Extract Interface Refactoring &#40;C&#35;&#41;](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
+6.  擷取您要公開給 VBA 之類別的介面。 在**擷取介面**對話方塊方塊中，選取您想要包含在介面宣告中的公用成員。 如需詳細資訊，請參閱[擷取介面重構 &#40;C# 35; &#41;](/visualstudio/csharp-ide/extract-interface-refactoring-csharp).  
   
-7.  Add the **public** keyword to the interface declaration.  
+7.  新增**公用**關鍵字加入介面宣告。  
   
-8.  Make the interface visible to COM by adding the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> attribute to the interface.  
+8.  讓介面的 COM 可以看見，加入下列<xref:System.Runtime.InteropServices.ComVisibleAttribute>屬性至介面。  
   
     ```csharp  
     [System.Runtime.InteropServices.ComVisible(true)]  
     ```  
   
-9. Open the document (for Word) or worksheet (for Excel) in the designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+9. 在設計師中開啟的文件 （適用於 Word) 或 （針對 Excel) 的工作表[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-10. In the **Properties** window, select the **ReferenceAssemblyFromVbaProject** property, and change the value to **True**.  
+10. 在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。  
   
     > [!NOTE]  
-    >  If the workbook or document does not already contain VBA code or if VBA code in the document is not trusted to run, you will receive an error message when you set the **ReferenceAssemblyFromVbaProject** property to **True**. This is because Visual Studio cannot modify the VBA project in the document in this situation.  
+    >  如果活頁簿或文件尚未包含 VBA 程式碼，或如果文件中的 VBA 程式碼不受信任而得以執行，您會收到錯誤訊息，當您設定**ReferenceAssemblyFromVbaProject**屬性**True**. 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。  
   
-11. Click **OK** in the message that is displayed. This message reminds you that if you add VBA code to the workbook or document when running the project from [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], the VBA code will be lost the next time that you build the project. This is because the document in the build output folder is overwritten every time that you build the project.  
+11. 按一下訊息中顯示的 [確定]  。 此訊息會提醒您，如果您加入 VBA 程式碼加入活頁簿，或文件執行中的專案時[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，VBA 程式碼將會遺失在下一次建置專案。 這是因為在組建中的文件輸出資料夾會覆寫每次建置專案。  
   
-     At this point, Visual Studio configures the project so that the VBA project can call into the assembly. Visual Studio also adds a method named `GetManagedClass` to the VBA project. You can call this method from anywhere in the VBA project to access the class that you exposed to VBA.  
+     此時，Visual Studio 將專案設定可讓組件呼叫 VBA 專案。 Visual Studio 也會加入名為的方法`GetManagedClass`的 VBA 專案。 您可以呼叫這個方法，從任何地方存取您公開給 VBA 之類別的 VBA 專案中。  
   
-12. Build the project.  
+12. 建置專案。  
   
-## <a name="see-also"></a>See Also  
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Walkthrough: Calling Code from VBA in a Visual C&#35; Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
- [How to: Expose Code to VBA in a Visual Basic Project](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
+ [逐步解說： 呼叫 Visual C# 35; 中的 VBA 程式碼專案](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)   
+ [如何：公開程式碼給 Visual Basic 專案中的 VBA](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)  
   
   

@@ -1,61 +1,63 @@
 ---
-title: "索引鍵運算式評估工具介面 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "偵錯的 [偵錯 SDK]，運算式評估"
-  - "運算式評估、 介面"
+title: "索引鍵運算式評估工具介面 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- debugging [Debugging SDK], expression evaluation
+- expression evaluation, interfaces
 ms.assetid: 1cac9aa3-0867-4e12-a16e-1e90abbc0fb6
-caps.latest.revision: 15
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a03d419122f3cb72b3b9573279b41bc0de2636c5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 索引鍵運算式評估工具介面
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
+# <a name="key-expression-evaluator-interfaces"></a>索引鍵運算式評估工具介面
 > [!IMPORTANT]
->  在 Visual Studio 2015，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱 [CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
+>  在 Visual Studio 2015 中，這種實作運算式評估工具已被取代。 如需實作 CLR 運算式評估工具的資訊，請參閱[CLR 運算式評估工具](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[Managed 運算式評估工具範例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。  
   
- 在撰寫運算式評估工具 \(EE\)，以及評估內容時，您應該熟悉下列介面。  
+ 在撰寫及評估內容的運算式評估工具 (EE，)，您應該熟悉下列介面。  
   
-## 介面描述  
+## <a name="interface-descriptions"></a>介面描述  
   
 -   [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)  
   
-     具有單一方法， [GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md), ，此 cmdlet 會取得資料結構，代表目前執行點。 此資料結構是一個三個引數的偵錯引擎 \(DE\) 傳遞給 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 方法來評估運算式。 符號提供者通常實作這個介面。  
+     具有單一方法[GetAddress](../../extensibility/debugger/reference/idebugaddress-getaddress.md)，此 cmdlet 會取得的資料結構，代表目前執行點。 這個資料結構是偵錯引擎 (DE) 傳遞給三個引數的其中一個[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)方法來評估運算式。 符號提供者通常會實作這個介面。  
   
 -   [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)  
   
-     具有 [繫結](../../extensibility/debugger/reference/idebugbinder-bind.md) 方法，取得包含目前的符號值的記憶體區域。 指定這兩個包含方法，由 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件，以及符號本身，由 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 物件， `IDebugBinder::Bind` 傳回符號的值。`IDebugBinder` 通常是由 DE 實作。  
+     具有[繫結](../../extensibility/debugger/reference/idebugbinder-bind.md)方法，取得包含目前的符號值的記憶體區域。 指定這兩個包含的方法，由[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件和符號本身，由[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件`IDebugBinder::Bind`傳回符號的值。 `IDebugBinder`通常是由 DE 實作。  
   
 -   [IDebugField](../../extensibility/debugger/reference/idebugfield.md)  
   
-     表示簡單資料型別。 對於更複雜的型別，例如陣列和方法，使用衍生 [IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md) 和 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 分別介面。[IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) 這另一個重要的衍生的介面符號表示包含其他符號，例如方法或類別。`IDebugField` 符號提供者通常實作介面 （和其衍生項目）。  
+     表示簡單資料類型。 對於更複雜的類型，例如陣列和方法，使用衍生[IDebugArrayField](../../extensibility/debugger/reference/idebugarrayfield.md)和[IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md)分別介面。 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md)是另一個重要的衍生的介面，表示包含其他符號，例如方法或類別的符號。 `IDebugField`介面 （和其衍生項目） 通常由符號提供者實作。  
   
-     `IDebugField` 物件可以用來尋找名稱和類型的符號，搭配 [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) 物件，可以用來尋找其值。  
+     `IDebugField`物件可以用來尋找符號類型與名稱，連同[IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)物件，可以用來尋找其值。  
   
 -   [IDebugObject](../../extensibility/debugger/reference/idebugobject.md)  
   
-     代表實際的位元執行階段值的符號。[繫結](../../extensibility/debugger/reference/idebugbinder-bind.md) 採用 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 物件，代表符號，並且傳回 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 物件。[GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md) 方法會傳回符號的值在記憶體緩衝區。 DE 通常會實作這個介面來代表記憶體中的屬性值。  
+     代表實際的位元執行階段值的符號。 [繫結](../../extensibility/debugger/reference/idebugbinder-bind.md)採用[IDebugField](../../extensibility/debugger/reference/idebugfield.md)物件，代表一種符號，並且傳回[IDebugObject](../../extensibility/debugger/reference/idebugobject.md)物件。 [GetValue](../../extensibility/debugger/reference/idebugobject-getvalue.md)方法會傳回符號的值中的記憶體緩衝區。 DE 通常會實作這個介面來表示記憶體中的屬性的值。  
   
 -   [IDebugExpressionEvaluator](../../extensibility/debugger/reference/idebugexpressionevaluator.md)  
   
-     這個介面表示運算式評估工具本身。 重要的方法是 [剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md), ，它會傳回 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 介面。  
+     此介面代表運算式評估工具本身。 主要方法是[剖析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)，它會傳回[IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)介面。  
   
 -   [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md)  
   
-     這個介面表示準備要評估的已剖析的運算式。 重要的方法是 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) IDebugProperty2 會傳回代表的值和運算式的類型。  
+     此介面代表剖析準備要評估的運算式。 主要方法是[EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) IDebugProperty2 會傳回代表的值和運算式的類型。  
   
 -   [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)  
   
-     此介面表示值和其型別，而且是運算式評估的結果。  
+     此介面代表值和其類型，而且是運算式評估的結果。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [評估內容](../../extensibility/debugger/evaluation-context.md)

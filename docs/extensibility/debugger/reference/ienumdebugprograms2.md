@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IEnumDebugPrograms2
-helpviewer_keywords:
-- IEnumDebugPrograms2
+f1_keywords: IEnumDebugPrograms2
+helpviewer_keywords: IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: af46d12f546c2b8e53510ca1b3cd28b634909ea7
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: e29734f857453fa51860c13e71699a8d2173d07a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 這個介面會列舉在目前的偵錯工作階段中執行的程式。  
@@ -56,14 +40,14 @@ IEnumDebugPrograms2 : IUnknown
   
 |方法|說明|  
 |------------|-----------------|  
-|[下一篇](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|擷取指定的數目的列舉順序中的程式。|  
-|[略過](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|略過指定的數目的列舉順序中的程式。|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|擷取指定的數目的列舉順序中的程式。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|略過指定的數目的列舉順序中的程式。|  
 |[重設](../../../extensibility/debugger/reference/ienumdebugprograms2-reset.md)|列舉序列重設為開頭。|  
 |[複製](../../../extensibility/debugger/reference/ienumdebugprograms2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprograms2-getcount.md)|取得列舉值中的程式數目。|  
   
 ## <a name="remarks"></a>備註  
- Visual Studio 會使用此介面，以便︰  
+ Visual Studio 會使用此介面，以便：  
   
 -   填入**模組**視窗 (藉由呼叫[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) ，然後再呼叫[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)上每個程式)。  
   
@@ -74,11 +58,11 @@ IEnumDebugPrograms2 : IUnknown
 -   編輯後繼續 (ENC) 更新套用至每個程式 (透過呼叫 IDebugProcess2::EnumPrograms，然後再呼叫[GetENCUpdate](../../../extensibility/debugger/reference/idebugprogram2-getencupdate.md))。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

@@ -1,141 +1,143 @@
 ---
-title: "Guid 和 Id 的 Visual Studio 工具列 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "visual studio 群組"
-  - "工具列"
-  - "visual studio 工具列"
-  - "id"
-  - "toolgar 群組"
-  - "工具視窗工具列"
-  - "guid"
+title: "Guid 和 Id 的 Visual Studio 工具列 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- visual studio groups
+- toolbars
+- visual studio toolbar
+- id
+- toolgar group
+- tool window toolbar
+- guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 787cebc77d0ca3d06fd88be8ab6f42c6bae3ee38
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Guid 和 Id 的 Visual Studio 工具列
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-本節列舉的 GUID 及識別碼值 Visual Studio 的整合式的開發環境 \(IDE\) 中所包含的工具列，而且在它們包含的群組。  這些值會定義在.vsct 所安裝檔案做為 Visual Studio 的 SDK 的一部分。  如需詳細資訊，請參閱 [IDE 定義的命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
+# <a name="guids-and-ids-of-visual-studio-toolbars"></a>Guid 和 Id 的 Visual Studio 工具列
+本主題列舉的 GUID 和 ID 值的 Visual Studio 整合式的開發環境 (IDE) 中包含的工具列和包含的群組。 這些值會定義在.vsct 檔案會安裝 Visual Studio SDK 的一部分。 如需詳細資訊，請參閱[IDE-Defined 命令、 功能表和群組](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。  
   
 > [!NOTE]
->  許多可用的工具列 Visual Studio 至未定義的 Visual Studio，以及它們的 GUID 及識別碼值不是公用。  本主題列出 Visual Studio SDK.vsct 檔案中定義的工具列。  
+>  許多的 Visual Studio 工具列不由 Visual Studio 中，而且其 GUID 定義並不是公用的識別碼值。 本主題列出 Visual Studio SDK.vsct 檔案中定義的工具列。  
   
- 如需有關如何使用.vsct 檔案中定義的 IDE 物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
+ 如需如何使用 IDE.vsct 檔案中定義的物件的詳細資訊，請參閱[擴充的功能表和命令](../../extensibility/extending-menus-and-commands.md)。  
   
- Visual Studio 的 IDE 所提供的預設工具列使用 GUID `guidSHLMainMenu`，否則使用 GUID:ID 語法來指定除外。  
+ Visual Studio IDE 所提供的預設工具列會使用 GUID `guidSHLMainMenu`，指定，否則使用 guid: id 語法除外。  
   
-## IDE 工具列  
- 下列的工具列所提供的 Visual Studio 的 IDE 中。  可以顯示工具列，請選取圖形上**工具列** \] 子功能表的 **工具**功能表。  本章節中不包括的工具視窗的工具列。  
+## <a name="ide-toolbars"></a>IDE 工具列  
+ 下列工具列會提供在 Visual Studio IDE。 可以顯示的工具列上選取它們**工具列** 子功能表**工具**功能表。 本節中不包含的工具視窗的工具列。  
   
- 只有群組\]，可以直接從工具列下降。  若要新增的群組，請設定其父代的 GUID 及識別碼的工具列。  新增按鈕到工具列，請設定群組\] 工具列上的與其父代。  
+ 只有群組可以直接從工具列下降。 若要加入群組，設定其父代的 GUID 和 ID 的工具列。 若要將按鈕加入至工具列，設定其父群組工具列上。  
   
-|Toolbar|ID|  
+|工具列|ID|  
 |-------------|--------|  
-|Standard 版|IDM\_VS\_TOOL\_STANDARD|  
-|建置|IDM\_VS\_TOOL\_BUILD|  
-|文字編輯器|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|偵錯|guidVSDebugGroup:IDM\_DEBUG\_TOOLBAR|  
-|偵錯位置|guidVSDebugGroup:IDM\_DEBUG\_CONTEXT\_TOOLBAR|  
+|標準|IDM_VS_TOOL_STANDARD|  
+|組建|IDM_VS_TOOL_BUILD|  
+|文字編輯器|IDM_VS_TOOL_TEXTEDITOR|  
+|偵錯|guidVSDebugGroup:IDM_DEBUG_TOOLBAR|  
+|偵錯位置|guidVSDebugGroup:IDM_DEBUG_CONTEXT_TOOLBAR|  
   
-### 特殊的工具列  
- 這些工具列所定義的 Visual Studio 的 IDE 中，但提供特殊的函式並不主控命令群組。  
+### <a name="special-toolbars"></a>特殊的工具列  
+ 這些工具列會由 Visual Studio IDE 中，但可提供特殊的功能，且未裝載命令群組。  
   
-|Toolbar|ID|  
+|工具列|ID|  
 |-------------|--------|  
-|新增指令|IDM\_VS\_TOOL\_ADDCOMMAND|  
-|未定義|IDM\_VS\_TOOL\_UNDEFINED|  
-|XML 結構描述|IDM\_VS\_TOOL\_SCHEMA|  
-|XML 資料|IDM\_VS\_TOOL\_DATA|  
+|Add 命令|IDM_VS_TOOL_ADDCOMMAND|  
+|未定義|IDM_VS_TOOL_UNDEFINED|  
+|XML 結構描述|IDM_VS_TOOL_SCHEMA|  
+|XML 資料|IDM_VS_TOOL_DATA|  
   
-## 在 IDE 工具列上的群組  
- 若要新增到 \[標準\] 工具列的按鈕，設定下列群組的其中一個做為其父系。  群組被按照父工具列。  
+## <a name="groups-on-the-ide-toolbars"></a>在 IDE 工具列上的群組  
+ 若要將按鈕加入到 [標準] 工具列中，設定下列群組的其中一個為其父系。 群組會依照為父工具列。  
   
-### 標準工具列群組  
-  
-|名稱|ID|  
-|--------|--------|  
-|儲存或開啟|IDG\_VS\_TOOLSB\_SAVEOPEN|  
-|剪下\/複製|IDG\_VS\_TOOLSB\_CUTCOPY|  
-|復原\/取消復原|IDG\_VS\_TOOLSB\_UNDOREDO|  
-|執行\/建築|IDG\_VS\_TOOLSB\_RUNBUILD|  
-|搜尋|IDG\_VS\_TOOLSB\_SEARCH|  
-|視窗|IDG\_VS\_TOOLSB\_WINDOWS|  
-|新視窗|IDG\_VS\_TOOLSB\_NEWWINDOWS|  
-|載入\/儲存|IDG\_VS\_WINDOWUI\_LOADSAVE|  
-|彩色儀表|IDG\_VS\_TOOLSB\_GAUGE|  
-  
-### 建立工具列群組  
+### <a name="standard-toolbar-groups"></a>[標準] 工具列的群組  
   
 |名稱|ID|  
-|--------|--------|  
-|組建列|IDG\_VS\_BUILDBAR|  
-|Cancel|IDG\_VS\_BUILD\_CANCEL|  
+|----------|--------|  
+|儲存檔案/開啟|IDG_VS_TOOLSB_SAVEOPEN|  
+|剪下/複製|IDG_VS_TOOLSB_CUTCOPY|  
+|復原/取消復原|IDG_VS_TOOLSB_UNDOREDO|  
+|執行/組建|IDG_VS_TOOLSB_RUNBUILD|  
+|搜尋|IDG_VS_TOOLSB_SEARCH|  
+|Windows|IDG_VS_TOOLSB_WINDOWS|  
+|新的視窗|IDG_VS_TOOLSB_NEWWINDOWS|  
+|載入/儲存|IDG_VS_WINDOWUI_LOADSAVE|  
+|量測計|IDG_VS_TOOLSB_GAUGE|  
   
-### 文字編輯器\] 工具列上的群組  
-  
-|名稱|ID|  
-|--------|--------|  
-|完成|IDM\_VS\_TOOL\_TEXTEDITOR|  
-|Indent|IDG\_VS\_EDITTOOLBAR\_INDENT|  
-|註解|IDG\_VS\_EDITTOOLBAR\_COMMENT|  
-|書籤|IDG\_VS\_EDITTOOLBAR\_TEMPBOOKMARKS|  
-  
-### 偵錯\] 工具列的群組  
+### <a name="build-toolbar-groups"></a>建立工具列群組  
   
 |名稱|ID|  
-|--------|--------|  
-|執行|IDM\_DEBUG\_TOOLBAR|  
-|逐步執行|IDG\_DEBUG\_TOOLBAR\_STEPPING|  
-|Watch|IDG\_DEBUG\_TOOLBAR\_WATCH|  
-|視窗|IDG\_DEBUG\_TOOLBAR\_WINDOWS|  
+|----------|--------|  
+|建置列|IDG_VS_BUILDBAR|  
+|取消|IDG_VS_BUILD_CANCEL|  
   
-### 偵錯位置工具列群組  
+### <a name="text-editor-toolbar-groups"></a>文字編輯器 工具列上的群組  
   
 |名稱|ID|  
-|--------|--------|  
-|偵錯位置|IDG\_DEBUG\_CONTEXT\_TOOLBAR|  
+|----------|--------|  
+|完成|IDM_VS_TOOL_TEXTEDITOR|  
+|Indent|IDG_VS_EDITTOOLBAR_INDENT|  
+|註解|IDG_VS_EDITTOOLBAR_COMMENT|  
+|書籤|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|  
   
-## 工具視窗工具列  
- 工具列可以直接在 IDE 中或出現在工具視窗如**方案總管\] 中**。  工具視窗未定義在.vsct 檔案，因為工具視窗工具列中沒有已定義的父代。  相反地，它們會放在程式碼中。  下表顯示的工具列會出現在工具視窗在 IDE 中，以及它們所包含的命令群組。  
+### <a name="debug-toolbar-groups"></a>偵錯 工具列的群組  
+  
+|名稱|ID|  
+|----------|--------|  
+|執行|IDM_DEBUG_TOOLBAR|  
+|逐步執行|IDG_DEBUG_TOOLBAR_STEPPING|  
+|監看式|IDG_DEBUG_TOOLBAR_WATCH|  
+|Windows|IDG_DEBUG_TOOLBAR_WINDOWS|  
+  
+### <a name="debug-location-toolbar-groups"></a>偵錯位置工具列群組  
+  
+|名稱|ID|  
+|----------|--------|  
+|偵錯位置|IDG_DEBUG_CONTEXT_TOOLBAR|  
+  
+## <a name="tool-window-toolbars"></a>工具視窗工具列  
+ 工具列會顯示直接在 IDE 中或在工具視窗例如**方案總管 中**。 因為沒有.vsct 檔案中定義工具視窗，工具視窗工具列中沒有已定義父代。 相反地，它們都放在程式碼中。 下表顯示在 ide 中工具視窗顯示的工具列和它們所包含的命令群組。  
   
 > [!NOTE]
->  工具列和群組使用 GUID `guidSHLMainMenu`，否則使用 GUID:ID 語法來指定除外。  在工具列指定一個 GUID，它也適用於該工具列從下降的群組。  
+>  工具列和群組使用的 GUID `guidSHLMainMenu`，指定，否則使用 guid: id 語法除外。 指定工具列的 GUID，則它也適用於從該工具列下降的群組。  
   
-|工具視窗|Toolbar|Group|  
-|----------|-------------|-----------|  
-|方案總管|IDM\_VS\_TOOL\_PROJWIN|IDG\_VS\_PROJ\_TOOLBAR1。.5|  
-|伺服器總管|guid\_SE\_MenuGroup:IDM\_SE\_TOOLBAR\_SERVEREXPLORER|IDG\_SE\_TOOLBAR\_REFRESH|  
-|屬性|IDM\_VS\_TOOL\_PROPERTIES|IDG\_VS\_PROPERTIES\_SORT<br /><br /> IDG\_VS\_PROPERTIES\_PAGES|  
-|類別檢視|IDM\_VS\_TOOL\_CLASSVIEW|IDG\_VS\_CLASSVIEW\_FOLDERS<br /><br /> IDG\_VS\_CLASSVIEW\_SEARCH<br /><br /> IDG\_VS\_CLASSVIEW\_SETTINGS|  
-|類別檢視|IDM\_VS\_TOOL\_CLASSVIEW\_GO|IDG\_VS\_CLASSVIEW\_SEARCH2|  
-|物件瀏覽器|IDM\_VS\_TOOL\_OBJBROWSER|IDG\_VS\_OBJBROWSER\_SUBSETS<br /><br /> IDG\_VS\_OBJBROWSER\_SEARCH<br /><br /> IDG\_VS\_OBJBROWSER\_ADDREFERENCE<br /><br /> IDG\_VS\_OBJBROWSER\_BROWSERSETTINGS|  
-|物件瀏覽器|IDM\_VS\_TOOL\_OBJECT\_BROWSER\_GO|IDG\_VS\_OBJBROWSER\_SEARCH2|  
-|Output|IDM\_VS\_TOOL\_OUTPUTWINDOW|IDG\_VS\_OUTPUTWINDOW\_SELECT<br /><br /> IDG\_VS\_OUTPUTWINDOW\_GOTO<br /><br /> IDG\_VS\_OUTPUTWINDOW\_NEXTPREV<br /><br /> IDG\_VS\_OUTPUTWINDOW\_CLEAR<br /><br /> IDG\_VS\_OUTPUTWINDOW\_WORDWRAP|  
-|尋找和取代|IDM\_VS\_TOOL\_UNIFIEDFIND|IDG\_VS\_FINDTAB<br /><br /> IDG\_VS\_REPLACETAB|  
-|尋找結果 1|IDM\_VS\_TOOL\_FINDRESULTS1|IDG\_VS\_FINDRESULTS1\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS1\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS1\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS1\_STOPFIND|  
-|尋找結果 2|IDM\_VS\_TOOL\_FINDRESULTS2|IDG\_VS\_FINDRESULTS2\_GOTO<br /><br /> IDG\_VS\_FINDRESULTS2\_NEXTPREV<br /><br /> IDG\_VS\_FINDRESULTS2\_CLEAR<br /><br /> IDG\_VS\_FINDRESULTS2\_STOPFIND|  
-|Snippet|IDM\_VS\_TOOL\_SNIPPETMENUS|IDG\_VS\_SNIPPET\_REPL<br /><br /> IDG\_VS\_SNIPPET\_REF<br /><br /> IDG\_VS\_SNIPPET\_PROP|  
-|書籤|IDM\_VS\_TOOL\_BOOKMARKWIND|IDG\_VS\_BWNEWFOLDER<br /><br /> IDG\_VS\_BWNEXTBM<br /><br /> IDG\_VS\_BWNEXTBMF<br /><br /> IDG\_VS\_BWENABLE<br /><br /> IDG\_VS\_BWDELETE|  
-|工作清單|IDM\_VS\_TOOL\_TASKLIST|IDG\_VS\_TASKLIST\_PROVIDERLIST|  
-|使用者工作|IDM\_VS\_TOOL\_USERTASKS|IDG\_VS\_TASKLIST\_PROVIDERLIST<br /><br /> IDG\_VS\_USERTASKS\_EDIT|  
-|錯誤清單|IDM\_VS\_TOOL\_ERRORLIST|IDG\_VS\_ERRORLIST\_ERRORGROUP<br /><br /> IDG\_VS\_ERRORLIST\_WARNINGGROUP<br /><br /> IDG\_VS\_ERRORLIST\_MESSAGEGROUP|  
-|呼叫瀏覽器|IDM\_VS\_TOOL\_CALLBROWSER1。.16|IDG\_VS\_TOOLBAR\_CALLBROWSER1\_ACTIONS<br /><br /> IDG\_VS\_TOOLBAR\_CALLBROWSER1\_TYPE<br /><br /> IDG\_VS\_TOOLBAR\_CALLBROWSER1\_CBSETTINGS|  
-|中斷點|guidVSDebugGroup:IDM\_BREAKPOINTS\_WINDOW\_TOOLBAR|IDG\_BREAKPOINTS\_WINDOW\_NEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_DELETE<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_ALL<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_VIEW<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_EDIT<br /><br /> IDG\_BREAKPOINTS\_WINDOW\_COLUMNS|  
-|反組譯碼|guidVSDebugGroup:IDM\_DISASM\_WINDOW\_TOOLBAR|IDG\_DISASM\_WINDOW\_TOOLBAR|  
-|1\-4 的記憶體|guidVSDebugGroup:IDM\_MEMORY\_WINDOW\_TOOLBAR1…4|IDG\_MEMORY\_EXPRESSION1。.4<br /><br /> IDG\_MEMORY\_COLUMNS1。.4|  
-|處理序|guidVSDebugGroup:IDM\_ATTACHED\_PROCS\_TOOLBAR|IDG\_ATTACHED\_PROCS\_EXECCNTRL IDG\_ATTACHED\_PROCS\_STEPPING<br /><br /> IDG\_ATTACHED\_PROCS\_EXECCNTRL2<br /><br /> IDG\_ATTACHED\_PROCS\_ATTACH<br /><br /> IDG\_ATTACHED\_PROCS\_COLUMNS|  
+|工具視窗|工具列|群組|  
+|-----------------|-------------|------------|  
+|底下提供說明，包括方案總管|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1...5|  
+|伺服器總管|guid_SE_MenuGroup:IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|  
+|屬性|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|  
+|類別檢視|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|  
+|類別檢視|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|  
+|物件瀏覽器|IDM_VS_TOOL_OBJBROWSER|IDG_VS_OBJBROWSER_SUBSETS<br /><br /> IDG_VS_OBJBROWSER_SEARCH<br /><br /> IDG_VS_OBJBROWSER_ADDREFERENCE<br /><br /> IDG_VS_OBJBROWSER_BROWSERSETTINGS|  
+|物件瀏覽器|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|  
+|輸出|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|  
+|尋找和取代|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|  
+|尋找結果 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|  
+|尋找結果 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|  
+|程式碼片段|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|  
+|書籤|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|  
+|工作清單|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|  
+|使用者工作|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|  
+|錯誤清單|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|  
+|呼叫瀏覽器|IDM_VS_TOOL_CALLBROWSER1...16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|  
+|中斷點|guidVSDebugGroup:IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|  
+|反組譯碼|guidVSDebugGroup:IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|  
+|記憶體 1-4|guidVSDebugGroup:IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1...4<br /><br /> IDG_MEMORY_COLUMNS1...4|  
+|處理序|guidVSDebugGroup:IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|  
   
-## 請參閱  
- [加入至工具列功能表控制器](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
- [將工具列新增至工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
- [Guid 和 Id 的 Visual Studio 功能表](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+## <a name="see-also"></a>另請參閱  
+ [功能表控制器加入工具列](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)   
+ [新增工具列加入工具視窗](../../extensibility/adding-a-toolbar-to-a-tool-window.md)   
+ [Visual Studio 功能表的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

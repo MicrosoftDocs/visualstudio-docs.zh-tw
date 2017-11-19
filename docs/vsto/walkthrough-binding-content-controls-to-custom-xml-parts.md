@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Binding Content Controls to Custom XML Parts | Microsoft Docs'
+title: "逐步解說: 內容控制項繫結至自訂 XML 組件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,108 +18,107 @@ helpviewer_keywords:
 - DropDownListContentControl, binding items to a custom XML part
 - DatePickerContentControl, binding to a custom XML part
 ms.assetid: 10d67769-6157-4703-a10c-d33e988f9095
-caps.latest.revision: 51
-author: kempb
-ms.author: kempb
+caps.latest.revision: "51"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 03cc22cde8ac53230d9e5b1b8f31f0b514233099
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 252bbce784e412282f6092afdc53905faeb947d0
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>Walkthrough: Binding Content Controls to Custom XML Parts
-  This walkthrough demonstrates how to bind content controls in a document-level customization for Word to XML data that is stored in the document.  
+# <a name="walkthrough-binding-content-controls-to-custom-xml-parts"></a>逐步解說：將內容控制項繫結至自訂 XML 組件
+  本逐步解說示範如何將 Word 之文件層級自訂中的內容控制項繫結至文件中所儲存的 XML 資料。  
   
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]  
   
- Word enables you to store XML data, named *custom XML parts*, in a document. You can control the display of this data by binding content controls to elements in a custom XML part. The example document in this walkthrough displays employee information that is stored in a custom XML part. When you open the document, the content controls display the values of the XML elements. Any changes that you make to the text in the content controls are saved in the custom XML part.  
+ Word 可讓您儲存 XML 資料，名為*自訂 XML 組件*，文件中。 將內容控制項繫結至自訂 XML 組件中的項目，即可控制這項資料的顯示。 本逐步解說中的範例文件會顯示自訂 XML 組件中所儲存的員工資訊。 開啟文件時，內容控制項會顯示 XML 項目的值。 您對內容控制項中文字進行的任何變更都會儲存在自訂 XML 組件中。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   Adding content controls to the Word document in a document-level project at design time.  
+-   在設計階段，將內容控制項新增至文件層級專案中的 Word 文件。  
   
--   Creating an XML data file and an XML schema that defines the elements to bind to the content controls.  
+-   建立 XML 資料檔，以及定義項目以繫結至內容控制項的 XML 結構描述。  
   
--   Attaching the XML schema to the document at design time.  
+-   在設計階段，將 XML 結構描述附加至文件。  
   
--   Adding the contents of the XML file to a custom XML part in the document at run time.  
+-   在執行階段，將 XML 檔案的內容新增至文件中的自訂 XML 組件。  
   
--   Binding the content controls to elements in the custom XML part.  
+-   將內容控制項繫結至自訂 XML 組件中的項目。  
   
--   Binding a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to a set of values that are defined in the XML schema.  
+-   將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至 XML 結構描述中所定義的一組值。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
 -   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]  
   
--   Microsoft Word.  
+-   Microsoft Word。  
   
-## <a name="creating-a-new-word-document-project"></a>Creating a New Word Document Project  
- Create a Word document that you will use in the walkthrough.  
+## <a name="creating-a-new-word-document-project"></a>建立新的 Word 文件專案  
+ 建立將在逐步解說中使用的 Word 文件。  
   
-#### <a name="to-create-a-new-word-document-project"></a>To create a new Word document project  
+#### <a name="to-create-a-new-word-document-project"></a>建立新的 Word 文件專案  
   
-1.  Create a Word document project with the name **EmployeeControls**. Create a new document for the solution. For more information, see [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).  
+1.  建立 Word 文件專案名稱**EmployeeControls**。 建立方案的新文件。 如需詳細資訊，請參閱 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。  
   
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] opens the new Word document in the designer and adds the **EmployeeControls** project to **Solution Explorer**.  
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在設計工具中開啟新的 Word 文件，並將**EmployeeControls**專案加入**方案總管 中**。  
   
-## <a name="adding-content-controls-to-the-document"></a>Adding Content Controls to the Document  
- Create a table that contains three different types of content controls where the user can view or edit information about an employee.  
+## <a name="adding-content-controls-to-the-document"></a>將內容控制項新增至文件  
+ 建立包含三種不同類型之內容控制項的資料表，使用者可以使用這些內容控制項來檢視或編輯員工相關資訊。  
   
-#### <a name="to-add-content-controls-to-the-document"></a>To add content controls to the document  
+#### <a name="to-add-content-controls-to-the-document"></a>將內容控制項新增至文件  
   
-1.  In the Word document that is hosted in the [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] designer, on the Ribbon, choose the **Insert** tab.  
+1.  在 Word 文件裝載於[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]設計工具中的，在功能區中，選擇**插入** 索引標籤。  
   
-2.  In the **Tables** group, choose **Table**, and insert a table with 2 columns and 3 rows.  
+2.  在**資料表**群組中，選擇**資料表**，然後插入具有 2 個資料行和 3 個資料列的資料表。  
   
-3.  Type text in the first column so that it resembles the following column:  
+3.  在第一個資料行中輸入文字，讓它類似下面資料行：  
   
     ||  
     |-|  
-    |**Employee Name**|  
-    |**Hire Date**|  
-    |**Title**|  
+    |**員工名稱**|  
+    |**雇用日期**|  
+    |**標題**|  
   
-4.  In the second column of the table, choose the first row (next to **Employee Name**).  
+4.  在資料表的第二個資料行，選擇 第一個資料列 (旁**員工姓名**)。  
   
-5.  On the Ribbon, choose the **Developer** tab.  
+5.  在功能區中，選擇 [**開發人員**] 索引標籤。  
   
     > [!NOTE]  
-    >  If the **Developer** tab is not visible, you must first show it. For more information, see [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).  
+    >  如果 [開發人員]  索引標籤沒有顯示，您必須先使其顯示。 如需詳細資訊，請參閱 [How to: Show the Developer Tab on the Ribbon](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。  
   
-6.  In the **Controls** group, choose the **Text** button ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") to add a <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> to the first cell.  
+6.  在**控制項**群組中，選擇**文字**按鈕![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl")新增<xref:Microsoft.Office.Tools.Word.PlainTextContentControl>第一個資料格中。  
   
-7.  In the second column of the table, choose the second row (next to **Hire Date**).  
+7.  在資料表的第二個資料行，選擇 第二個資料列 (旁**雇用日期**)。  
   
-8.  In the **Controls** group, choose the **Date Picker** button ![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl") to add a <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> to the second cell.  
+8.  在**控制項**群組中，選擇**日期選擇器**按鈕![DatePickerContentControl](../vsto/media/datepicker.gif "DatePickerContentControl")新增<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>到第二個資料格。  
   
-9. In the second column of the table, choose the third row (next to **Title**).  
+9. 在資料表的第二個資料行，選擇 第三個資料列 (旁**標題**)。  
   
-10. In the **Controls** group, choose the **Drop-Down List** button ![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl") to add a <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to the last cell.  
+10. 在**控制項**群組中，選擇**下拉式選單**按鈕![DropDownListContentControl](../vsto/media/dropdownlist.gif "DropDownListContentControl")新增<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>最後一個儲存格。  
   
- That is the entire user interface for this project. If you run the project now, you can type text in the first row and select a date in the second row. The next step is to attach the data that you want to display to the document in an XML file.  
+ 這是此專案的整個使用者介面。 如果您立即執行專案，則可以在第一個資料列中輸入文字，並在第二個資料列選取日期。 下一個步驟是將您想要顯示的資料附加至 XML 檔案中的文件。  
   
-## <a name="creating-the-xml-data-file"></a>Creating the XML Data File  
- Typically, you will obtain XML data to store in a custom XML part from an external source, such as a file or a database. In this walkthrough, you create an XML file that contains the employee data, marked by elements that you will bind to the content controls in the document. To make the data available at runtime, embed the XML file as a resource in the customization assembly.  
+## <a name="creating-the-xml-data-file"></a>建立 XML 資料檔  
+ 通常，您會從外部來源 (例如檔案或資料庫) 取得要儲存在自訂 XML 組件中的 XML 資料。 在本逐步解說中，您會建立包含員工資料的 XML 檔案，而員工資料會標上將繫結至文件中內容控制項的項目。 若要將資料設為可在執行階段使用，請內嵌 XML 檔案做為自訂組件中的資源。  
   
-#### <a name="to-create-the-data-file"></a>To create the data file  
+#### <a name="to-create-the-data-file"></a>建立資料檔  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  在 [ **專案** ] 功能表中，選擇 [ **加入新項目**]。  
   
-     The **Add New Item** dialog box appears.  
+     [新增項目] 對話方塊隨即出現。  
   
-2.  In the **Templates** pane, select **XML File**.  
+2.  在**範本**窗格中，選取**XML 檔案**。  
   
-3.  Name the file **employees.xml**, and then choose the **Add** button.  
+3.  將檔案命名**employees.xml**，然後選擇 [**新增**] 按鈕。  
   
-     The **employees.xml** file opens in the Code Editor.  
+     **Employees.xml**檔案會在程式碼編輯器中開啟。  
   
-4.  Replace the contents of the **employees.xml** file with the following text.  
+4.  取代內容**employees.xml**包含下列文字的檔案。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -134,30 +131,30 @@ ms.lasthandoff: 08/30/2017
     </employees>  
     ```  
   
-5.  In **Solution Explorer**, choose the **employees.xml** file.  
+5.  在**方案總管 中**，選擇**employees.xml**檔案。  
   
-6.  In the **Properties** window, select the **Build Action** property, and then change the value to **Embedded Resource**.  
+6.  在**屬性**視窗中，選取**建置動作**屬性，然後變更到值**內嵌資源**。  
   
-     This step embeds the XML file as a resource in the assembly when you build the project. This enables you to access the contents of the XML file at run time.  
+     此步驟會在您建置專案時，將 XML 檔案內嵌為組件中的資源。 這可讓您在執行階段存取 XML 檔案的內容。  
   
-## <a name="creating-an-xml-schema"></a>Creating an XML Schema  
- If you want to bind a content control to a single element in a custom XML part, you do not have to use an XML schema. However, to bind the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to a set of values, you must create an XML schema that validates the XML data file that you created earlier. The XML schema defines the possible values for the `title` element. You will bind the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to this element later in this walkthrough.  
+## <a name="creating-an-xml-schema"></a>建立 XML 結構描述  
+ 如果您想要將內容控制項繫結至自訂 XML 組件中的單一項目，則不需要使用 XML 結構描述。 不過，若要將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至一組值，您必須建立 XML 結構描述，以驗證您稍早建立的 XML 資料檔。 XML 結構描述定義 `title` 項目的可能值。 稍後，您將在本逐步解說中將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至此項目。  
   
-#### <a name="to-create-an-xml-schema"></a>To create an XML schema  
+#### <a name="to-create-an-xml-schema"></a>建立 XML 結構描述  
   
-1.  On the **Project** menu, choose **Add New Item**.  
+1.  在 [ **專案** ] 功能表中，選擇 [ **加入新項目**]。  
   
-     The **Add New Item** dialog box appears.  
+     [新增項目] 對話方塊隨即出現。  
   
-2.  In the **Templates** pane, select **XML Schema**.  
+2.  在**範本**窗格中，選取**XML 結構描述**。  
   
-3.  Name the schema **employees.xsd** and choose the **Add** button.  
+3.  將結構描述**employees.xsd**選擇**新增** 按鈕。  
   
-     The schema designer opens.  
+     結構描述設計工具隨即開啟。  
   
-4.  In **Solution Explorer**, open the shortcut menu for  **employees.xsd**, and then choose  **View Code**.  
+4.  在**方案總管] 中**，開啟捷徑功能表**employees.xsd**，然後選擇 [**檢視程式碼**。  
   
-5.  Replace the contents of the **employees.xsd** file with the following schema.  
+5.  取代內容**employees.xsd**具有下列結構描述檔案。  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -188,141 +185,146 @@ ms.lasthandoff: 08/30/2017
     </xs:schema>  
     ```  
   
-6.  On the **File** menu, click **Save All** to save your changes to the **employees.xml** and the **employees.xsd** files.  
+6.  在**檔案**功能表上，按一下 **全部儲存**您將變更儲存到**employees.xml**和**employees.xsd**檔案。  
   
-## <a name="attaching-the-xml-schema-to-the-document"></a>Attaching the XML Schema to the Document  
- You must attach the XML schema to the document to bind the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to the valid values of the `title` element.  
+## <a name="attaching-the-xml-schema-to-the-document"></a>將 XML 結構描述附加至文件  
+ 您必須將 XML 結構描述附加至文件，以將 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 繫結至 `title` 項目的有效值。  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>To attach the XML schema to the document ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
+#### <a name="to-attach-the-xml-schema-to-the-document-includeword15shortvstoincludesword-15-short-mdmd"></a>將 XML 結構描述附加至文件 ([!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)])  
   
-1.  Activate **EmployeeControls.docx** in the designer.  
+1.  啟動**EmployeeControls.docx**設計工具中。  
   
-2.  On the Ribbon, choose the **Developer** tab, and then choose the **Add-Ins** button.  
+2.  在功能區中，選擇 **開發人員**索引標籤，然後選擇 **增益集** 按鈕。  
   
-3.  In the **Templates and Add-ins** dialog box, choose the **XML Schema** tab, and then choose the **Add Schema** button.  
+3.  在**範本與增益集**對話方塊方塊中，選擇**XML 結構描述**索引標籤，然後選擇 [**新增結構描述**] 按鈕。  
   
-4.  Browse to the **employees.xsd** schema you created earlier, which is located in your project directory, and then choose the **Open** button.  
+4.  瀏覽至**employees.xsd**結構描述您稍早建立，其位於您的專案目錄中，然後選擇**開啟** 按鈕。  
   
-5.  Choose the **OK** button in the **Schema Settings** dialog box.  
+5.  選擇**確定**按鈕**結構描述設定** 對話方塊。  
   
-6.  Choose the **OK** button to close the **Templates and Add-ins** dialog box.  
+6.  選擇**確定**按鈕以關閉**範本與增益集** 對話方塊。  
   
-#### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>To attach the XML schema to the document (Word 2010)  
+#### <a name="to-attach-the-xml-schema-to-the-document-word-2010"></a>將 XML 結構描述附加至文件 (Word 2010)  
   
-1.  Activate **EmployeeControls.docx** in the designer.  
+1.  啟動**EmployeeControls.docx**設計工具中。  
   
-2.  On the Ribbon, choose the **Developer** tab.  
+2.  在功能區中，選擇 [**開發人員**] 索引標籤。  
   
-3.  In the **XML** group, choose the **Schema** button.  
+3.  在**XML**群組中，選擇**結構描述** 按鈕。  
   
-4.  In the **Templates and Add-ins** dialog box, choose the **XML Schema** tab, and then choose the **Add Schema** button.  
+4.  在**範本與增益集**對話方塊方塊中，選擇**XML 結構描述**索引標籤，然後選擇 [**新增結構描述**] 按鈕。  
   
-5.  Browse to the **employees.xsd** schema that you created earlier, which is located in your project directory, and choose the **Open** button.  
+5.  瀏覽至**employees.xsd**結構描述您稍早建立的位於您專案的目錄，然後選擇 [**開啟**] 按鈕。  
   
-6.  Choose the **OK** button in the **Schema Settings** dialog box.  
+6.  選擇**確定**按鈕**結構描述設定** 對話方塊。  
   
-7.  Choose the **OK** button to close the **Templates and Add-ins** dialog box.  
+7.  選擇**確定**按鈕以關閉**範本與增益集** 對話方塊。  
   
-     The **XML Structure** task pane opens.  
+     **XML 結構**工作窗格隨即開啟。  
   
-8.  Close the **XML Structure** task pane.  
+8.  關閉**XML 結構**工作窗格。  
   
-## <a name="adding-a-custom-xml-part-to-the-document"></a>Adding a Custom XML Part to the Document  
- Before you can bind the content controls to the elements in the XML file, you must add the contents of the XML file to a new custom XML part in the document.  
+## <a name="adding-a-custom-xml-part-to-the-document"></a>將自訂 XML 組件新增至文件  
+ 您必須先將 XML 檔案的內容新增至文件中的新自訂 XML 組件，才能將內容控制項繫結至 XML 檔案中的項目。  
   
-#### <a name="to-add-a-custom-xml-part-to-the-document"></a>To add a custom XML part to the document  
+#### <a name="to-add-a-custom-xml-part-to-the-document"></a>將自訂 XML 組件新增至文件  
   
-1.  In **Solution Explorer**, open the shortcut menu for  **ThisDocument.cs** or **ThisDocument.vb**, and then choose **View Code**.  
+1.  在**方案總管] 中**，開啟捷徑功能表**ThisDocument.cs**或**ThisDocument.vb**，然後選擇 [**檢視程式碼**。  
   
-2.  Add the following declarations to the `ThisDocument` class. This code declares several objects that you will use to add a custom XML part to the document.  
+2.  將下列宣告新增至 `ThisDocument` 類別： 此程式碼會宣告數個物件，以用來將自訂 XML 組件新增至文件。  
   
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]  [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]  
+     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#1)]
+     [!code-vb[Trin_ContentControlXmlPartWalkthrough#1](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#1)]  
   
-3.  Add the following method to the `ThisDocument` class. This method gets the contents of the XML data file that is embedded as a resource in the assembly, and returns the contents as an XML string.  
+3.  將下列方法加入 `ThisDocument` 類別。 這個方法會取得內嵌為組件中資源的 XML 資料檔內容，並以 XML 字串形式傳回內容。  
   
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]  [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]  
+     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#3)]
+     [!code-vb[Trin_ContentControlXmlPartWalkthrough#3](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#3)]  
   
-4.  Add the following method to the `ThisDocument` class. The `AddCustomXmlPart` method creates a new custom XML part that contains an XML string that is passed to the method.  
+4.  將下列方法加入 `ThisDocument` 類別。 `AddCustomXmlPart` 方法會建立新的自訂 XML 組件，其中包含傳遞至此方法的 XML 字串。  
   
-     To ensure that the custom XML part is only created once, the method creates the custom XML part only if a custom XML part with a matching GUID does not already exist in the document. The first time this method is called, it saves the value of the <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> property to the `employeeXMLPartID` string. The value of the `employeeXMLPartID` string is persisted in the document because it was declared by using the <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> attribute.  
+     若要確保自訂 XML 組件只建立一次，只有在文件中還沒有具有相符 GUID 的自訂 XML 組件時，此方法才會建立自訂 XML 組件。 第一次呼叫此方法時，它會將 <xref:Microsoft.Office.Core._CustomXMLPart.Id%2A> 屬性的值儲存至 `employeeXMLPartID` 字串。 `employeeXMLPartID` 字串的值會保存在文件中，因為它是使用 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 屬性所宣告。  
   
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]  [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]  
+     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#4)]
+     [!code-vb[Trin_ContentControlXmlPartWalkthrough#4](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#4)]  
   
-## <a name="binding-the-content-controls-to-elements-in-the-custom-xml-part"></a>Binding the Content Controls to Elements in the Custom XML Part  
- Bind each content control to an element in the custom XML part by using the **XMLMapping** property of each content control.  
+## <a name="binding-the-content-controls-to-elements-in-the-custom-xml-part"></a>將內容控制項繫結至自訂 XML 組件中的項目  
+ 將每個內容控制項繫結至自訂 XML 組件中的項目使用**XMLMapping**的每個內容控制項的屬性。  
   
-#### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>To bind the content controls to elements in the custom XML part  
+#### <a name="to-bind-the-content-controls-to-elements-in-the-custom-xml-part"></a>將內容控制項繫結至自訂 XML 組件中的項目  
   
-1.  Add the following method to the `ThisDocument` class. This method binds each content control to an element in the custom XML part and sets the date display format of the <xref:Microsoft.Office.Tools.Word.DatePickerContentControl>.  
+1.  將下列方法新增至 `ThisDocument` 類別。 此方法會將每個內容控制項繫結至自訂 XML 組件中的項目，並設定 <xref:Microsoft.Office.Tools.Word.DatePickerContentControl> 的日期顯示格式。  
   
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]  [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  
+     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#5)]
+     [!code-vb[Trin_ContentControlXmlPartWalkthrough#5](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#5)]  
   
-## <a name="running-your-code-when-the-document-is-opened"></a>Running Your Code When the Document is Opened  
- Create the custom XML part and bind the custom controls to the data when the document is opened.  
+## <a name="running-your-code-when-the-document-is-opened"></a>在開啟文件時執行程式碼  
+ 建立自訂 XML 組件，並在開啟文件時，將自訂控制項繫結至資料。  
   
-#### <a name="to-run-your-code-when-the-document-is-opened"></a>To run your code when the document is opened  
+#### <a name="to-run-your-code-when-the-document-is-opened"></a>在開啟文件時執行程式碼  
   
-1.  Add the following code to the `ThisDocument_Startup` method of the `ThisDocument` class. This code gets the XML string from the **employees.xml** file, adds the XML string to a new custom XML part in the document, and binds the content controls to elements in the custom XML part.  
+1.  將下面程式碼加入 `ThisDocument` 類別的 `ThisDocument_Startup` 方法。 這個程式碼取得中的 XML 字串**employees.xml**檔案，XML 字串新增至新的自訂 XML 組件，並將內容控制項繫結至自訂 XML 組件中的項目。  
   
-     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]  [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]  
+     [!code-csharp[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/CSharp/EmployeeControls/ThisDocument.cs#2)]
+     [!code-vb[Trin_ContentControlXmlPartWalkthrough#2](../vsto/codesnippet/VisualBasic/EmployeeControls/ThisDocument.vb#2)]  
   
-## <a name="testing-the-project"></a>Testing the Project  
- When you open the document, the content controls display data from the elements in the custom XML part. You can click the <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> to select one of three valid values for the `title` element, which are defined in the **employees.xsd** file. If you edit the data in any of the content controls, the new values are saved in the custom XML part in the document.  
+## <a name="testing-the-project"></a>測試專案  
+ 開啟文件時，內容控制項會顯示自訂 XML 組件中項目的資料。 您可以按一下<xref:Microsoft.Office.Tools.Word.DropDownListContentControl>選取其中一個的三個有效值`title`項目中定義的**employees.xsd**檔案。 如果您編輯任何內容控制項中的資料，則新的值會儲存在文件的自訂 XML 組件中。  
   
-#### <a name="to-test-the-content-controls"></a>To test the content controls  
+#### <a name="to-test-the-content-controls"></a>測試內容控制項  
   
-1.  Press F5 to run the project.  
+1.  按 F5 執行專案。  
   
-2.  Verify that the table in the document resembles the following table. Each of the strings in the second column is obtained from an element in the custom XML part in the document.  
+2.  請確認文件中的資料表類似於下表。 第二個資料行中的每個字串都會取自文件之自訂 XML 組件中的項目。  
   
     |||  
     |-|-|  
-    |**Employee Name**|**Karina Leal**|  
-    |**Hire Date**|**April 1, 1999**|  
-    |**Title**|**Manager**|  
+    |**員工名稱**|**Karina Leal**|  
+    |**雇用日期**|**1999 年 4 月 1日日**|  
+    |**標題**|**Manager**|  
   
-3.  Choose the cell to the right of the **Employee Name** cell and type a different name.  
+3.  選擇右邊的儲存格**員工姓名**資料格，然後輸入不同的名稱。  
   
-4.  Choose the cell to the right of the **Hire Date** cell and select a different date in the date picker.  
+4.  選擇右邊的儲存格**雇用日期**資料格，然後在日期選擇器選取不同的日期。  
   
-5.  Choose the cell to the right of the **Title** cell and select a new item from the drop-down list.  
+5.  選擇右邊的儲存格**標題**資料格，然後從下拉式清單中選取新的項目。  
   
-6.  Save and close the document.  
+6.  儲存並關閉文件。  
   
-7.  In File Explorer, open the \bin\Debug folder under the location of your project.  
+7.  在 [檔案總管] 中，開啟專案位置下的 \bin\Debug 資料夾。  
   
-8.  Open the shortcut menu for **EmployeeControls.docx** and then choose **Rename**.  
+8.  開啟快顯功能表**EmployeeControls.docx** ，然後選擇 **重新命名**。  
   
-9. Name the file **EmployeeControls.docx.zip**.  
+9. 將檔案命名**命名為 EmployeeControls.docx.zip**。  
   
-     The **EmployeeControls.docx** document is saved in the Open XML Format. By renaming this document with the .zip file name extension, you can examine the contents of the document. For more information about Open XML, see the technical article [Introducing the Office (2007) Open XML File Formats](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf).  
+     **EmployeeControls.docx** Open XML 格式儲存文件。 將此文件重新命名為具有 .zip 副檔名，即可檢查文件的內容。 如需 Open XML 的詳細資訊，請參閱技術文件[簡介 Office (2007) Open XML 檔案格式](http://msdn.microsoft.com/en-us/96018532-f62c-4da7-bbff-16b96a483fbf)。  
   
-10. Open the **EmployeeControls.docx.zip** file.  
+10. 開啟**命名為 EmployeeControls.docx.zip**檔案。  
   
-11. Open the **customXml** folder.  
+11. 開啟**customXml**資料夾。  
   
-12. Open the shortcut menu for **item2.xml** and then choose **Open**.  
+12. 開啟快顯功能表**item2.xml** ，然後選擇 **開啟**。  
   
-     This file contains the custom XML part that you added to the document.  
+     此檔案包含您已新增至文件的自訂 XML 組件。  
   
-13. Verify that the `name`, `hireDate`, and `title` elements contain the new values that you entered into the content controls in the document.  
+13. 請確認 `name`、`hireDate` 和 `title` 項目包含您在文件中的內容控制項中輸入的新值。  
   
-14. Close the **item2.xml** file.  
+14. 關閉**item2.xml**檔案。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to use content controls from these topics:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以透過下列主題，進一步了解如何使用內容控制項：  
   
--   Use all the available content controls to create a template. For more information, see [Walkthrough: Creating a Template By Using Content Controls](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).  
+-   使用所有可用的內容控制項來建立範本。 如需詳細資訊，請參閱[逐步解說： 建立範本使用內容控制項](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。  
   
--   Modify the data in the custom XML parts while the document is closed. The next time the user opens the document, the content controls that are bound to the XML elements will display the new data.  
+-   在關閉文件時，修改自訂 XML 組件中的資料。 下次使用者開啟文件時，繫結至 XML 項目的內容控制項會顯示新的資料。  
   
--   Use content controls to protect parts of a document. For more information, see [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).  
+-   使用內容控制項保護文件的組件。 如需詳細資訊，請參閱 [ThisAddIn](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。  
   
-## <a name="see-also"></a>See Also  
- [Automating Word by Using Extended Objects](../vsto/automating-word-by-using-extended-objects.md)   
- [Content Controls](../vsto/content-controls.md)   
- [How to: Add Content Controls to Word Documents](../vsto/how-to-add-content-controls-to-word-documents.md)   
- [How to: Protect Parts of Documents by Using Content Controls](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
+## <a name="see-also"></a>另請參閱  
+ [使用擴充物件自動化 Word](../vsto/automating-word-by-using-extended-objects.md)   
+ [內容控制項](../vsto/content-controls.md)   
+ [如何： 將內容控制項加入 Word 文件](../vsto/how-to-add-content-controls-to-word-documents.md)   
+ [如何： 使用內容控制項保護文件的組件](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)   
  [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)   
  [Programmatic Limitations of Host Items and Host Controls](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)   
  [Adding Controls to Office Documents at Run Time](../vsto/adding-controls-to-office-documents-at-run-time.md)  

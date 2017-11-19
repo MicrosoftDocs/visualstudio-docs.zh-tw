@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Restore Selections After Searches | Microsoft Docs'
+title: "如何： 以程式設計方式搜尋後還原選取 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,47 +15,50 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], restoring selections
 - selections, restoring after a search
 ms.assetid: 1e6131ad-0e5b-4189-be67-5b2ed87d193d
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 9e71608574abb626930d79f6260eda96236392ee
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 28468eaba28d36394754b96bdb13727088885ff1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-restore-selections-after-searches"></a>How to: Programmatically Restore Selections After Searches
-  If you find and replace text in a document, you might want to restore the user's original selection after the search is completed.  
+# <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以程式設計方式在搜尋後還原選取
+  如果您尋找和取代文件中的文字，您可能要完成搜尋之後還原使用者的原始選取項目。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
- The code in the sample procedure makes use of two <xref:Microsoft.Office.Interop.Word.Range> objects. One stores the current <xref:Microsoft.Office.Interop.Word.Selection>, and one sets the entire document to use as a search range.  
+ 此範例程序中的程式碼會使用兩個<xref:Microsoft.Office.Interop.Word.Range>物件。 其中一個存放區目前<xref:Microsoft.Office.Interop.Word.Selection>，和其中一個設定要做為搜尋範圍將整個文件。  
   
-### <a name="to-restore-the-users-original-selection-after-a-search"></a>To restore the user's original selection after a search  
+### <a name="to-restore-the-users-original-selection-after-a-search"></a>若要還原的使用者在搜尋之後的原始選取項目  
   
-1.  Create the <xref:Microsoft.Office.Interop.Word.Range> objects for the document and the current selection.  
+1.  建立<xref:Microsoft.Office.Interop.Word.Range>文件和目前的選取範圍的物件。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]  [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
+     [!code-vb[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#83)]
+     [!code-csharp[Trin_VstcoreWordAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#83)]  
   
-2.  Perform the search and replace operation.  
+2.  執行搜尋和取代作業。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]  [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
+     [!code-vb[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#84)]
+     [!code-csharp[Trin_VstcoreWordAutomation#84](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#84)]  
   
-3.  Select the start range to restore the user's original selection.  
+3.  選取要還原使用者的原始選取項目開始範圍。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]  [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
+     [!code-vb[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#85)]
+     [!code-csharp[Trin_VstcoreWordAutomation#85](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#85)]  
   
- The following example shows the complete method.  
+ 下列範例示範完整的方法：  
   
-## <a name="example"></a>Example  
- [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)] [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
+## <a name="example"></a>範例  
+ [!code-vb[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#82)]
+ [!code-csharp[Trin_VstcoreWordAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#82)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Search for and Replace Text  in Documents](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
- [How to: Programmatically Set Search Options in Word](../vsto/how-to-programmatically-set-search-options-in-word.md)   
- [How to: Programmatically Loop Through Found Items in Documents](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計方式搜尋和取代文件中的文字](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)   
+ [如何： 以程式設計方式在 Word 中設定搜尋選項](../vsto/how-to-programmatically-set-search-options-in-word.md)   
+ [如何： 以程式設計方式重複使用文件中找到的項目](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

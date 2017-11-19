@@ -1,55 +1,55 @@
 ---
-title: "BP_LOCATION_CODE_FILE_LINE | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "BP_LOCATION_CODE_FILE_LINE"
-helpviewer_keywords: 
-  - "BP_LOCATION_CODE_FILE_LINE 結構"
+title: "BP_LOCATION_CODE_FILE_LINE |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: BP_LOCATION_CODE_FILE_LINE
+helpviewer_keywords: BP_LOCATION_CODE_FILE_LINE structure
 ms.assetid: 3ff32032-d412-44d3-91bf-870cc354a09e
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3032c914408e94f430506549ab55e04815ba456c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# BP_LOCATION_CODE_FILE_LINE
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-包含程式碼的原始程式檔中的特定資料行中的中斷點位置的資料。  
+# <a name="bplocationcodefileline"></a>BP_LOCATION_CODE_FILE_LINE
+包含的資料在程式碼來源檔案中的特定行中斷點的位置。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-typedef struct _BP_LOCATION_CODE_FILE_LINE {   
-   BSTR                     bstrContext;  
-   IDebugDocumentPosition2* pDocPos;  
+```cpp  
+typedef struct _BP_LOCATION_CODE_FILE_LINE {   
+   BSTR                     bstrContext;  
+   IDebugDocumentPosition2* pDocPos;  
 } BP_LOCATION_CODE_FILE_LINE;  
 ```  
   
-## Members  
+## <a name="members"></a>成員  
  `bstrContext`  
- 這個中斷點的內容，通常為 \[呼叫堆疊上看到的方法或函式的名稱。  
+ 中斷點的內容，通常為呼叫堆疊上所見的方法或函式名稱。  
   
  `pDocPos`  
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)物件，代表文件的位置中斷點。  
+ [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)物件，代表文件位置的中斷點。  
   
-## 備註  
- 這個結構屬於[BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)的聯集一部分的結構。  
+## <a name="remarks"></a>備註  
+ 這個結構是屬於[BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)結構做為聯集的一部分。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [結構和等位](../../../extensibility/debugger/reference/structures-and-unions.md)   
- [BP\_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
+ [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)   
  [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

@@ -1,39 +1,40 @@
 ---
-title: "偵錯 Web 應用程式：疑難排解 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "偵錯 Web 應用程式, 疑難排解"
-  - "Web 應用程式疑難排解"
-  - "Web 應用程式, 偵錯"
+title: "偵錯 Web 應用程式： 疑難排解 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- CSharp
+- VB
+- FSharp
+- C++
+helpviewer_keywords:
+- debugging Web applications, troubleshooting
+- Web applications, debugging
+- troubleshooting Web applications
 ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
-caps.latest.revision: 10
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 364da0cdee3f063bc982f2731969c1be98cf386c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 偵錯 Web 應用程式：疑難排解
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="debugging-web-applications-troubleshooting"></a>偵錯 Web 應用程式：疑難排解
 本節包含可以用來解決錯誤的通用程序。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [如何：檢查 IIS 屬性設定](../debugger/how-to-verify-iis-property-settings.md)  
  本節將會解釋如何正確地設定 IIS 的屬性以啟用偵錯。  
   
-## 相關章節  
+## <a name="related-sections"></a>相關章節  
  [偵錯 Web 應用程式：錯誤和疑難排解](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
  說明疑難排解和錯誤解決方式。  
   

@@ -1,57 +1,59 @@
 ---
-title: "IDebugComPlusSymbolProvider::GetTypeFromAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugComPlusSymbolProvider::GetTypeFromAddress"
-  - "GetTypeFromAddress"
+title: "IDebugComPlusSymbolProvider::GetTypeFromAddress |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugComPlusSymbolProvider::GetTypeFromAddress
+- GetTypeFromAddress
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d5045dd9061fc932c02c85a3e9b858ef33dd41fe
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugComPlusSymbolProvider::GetTypeFromAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取指定它的偵錯位址的符號型別。  
+# <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
+擷取至其偵錯位址符號類型。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetTypeFromAddress(  
-   IDebugAddress* pAddress,  
-   IDebugField**  ppField  
+   IDebugAddress* pAddress,  
+   IDebugField**  ppField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeFromAddress(  
-   IDebugAddress   pAddress,  
-   out IDebugField ppField  
+   IDebugAddress   pAddress,  
+   out IDebugField ppField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- \[in\]偵錯位址所表示[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
+ [in]由偵錯位址[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)介面。  
   
  `ppField`  
- \[\] out傳回陣列型別，如同它由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。  
+ [out]傳回陣列類型，因為它由[IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)介面。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugSymbolProvider** 物件，公開 \(expose\) [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugSymbolProvider**公開物件[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(  
     IDebugAddress *pAddress,  
     IDebugField **ppField)  
@@ -116,5 +118,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

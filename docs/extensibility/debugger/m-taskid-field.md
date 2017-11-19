@@ -1,39 +1,40 @@
 ---
-title: "m_taskId 欄位 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "m_taskId] 欄位中，工作類別 [.NET Framework 偵錯引擎]"
+title: "m_taskId 欄位 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: m_taskId field, Task class [.NET Framework debug engines]
 ms.assetid: 9e4b827e-7c41-4fa3-b646-830aba2ec736
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 4bec5033f6a824d217d0ba9b96fd4787b7d558e2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# m_taskId 欄位
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-支援欄位，如 <xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName> 屬性。  
+# <a name="mtaskid-field"></a>m_taskId 欄位
+支援欄位的<xref:System.Threading.Tasks.Task.Id%2A?displayProperty=fullName>屬性。  
   
- **命名空間︰** <xref:System.Threading.Tasks?displayProperty=fullName>  
+ **命名空間：**<xref:System.Threading.Tasks?displayProperty=fullName>  
   
- **組件︰** mscorlib （在 mscorlib.dll\)  
+ **組件：** mscorlib （在 mscorlib.dll)  
   
- 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 \(CIL\)。  
+ 因為您無法從.NET Framework 來存取這個內部成員，下列語法提供通用中繼語言 (CIL)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 .field private int32 m_taskId  
 ```  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作類別](../../extensibility/debugger/task-class-internal-members.md)

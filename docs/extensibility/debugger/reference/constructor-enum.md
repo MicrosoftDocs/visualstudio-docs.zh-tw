@@ -4,38 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- CONSTRUCTOR_ENUM
-helpviewer_keywords:
-- CONSTRUCTOR_ENUM enumeration
+f1_keywords: CONSTRUCTOR_ENUM
+helpviewer_keywords: CONSTRUCTOR_ENUM enumeration
 ms.assetid: 6d335b2c-66bc-460c-a4a6-4f3f1b697c2c
-caps.latest.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 939c41443bbd80dff2531591728d0a75536a982d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 22447cd6eadf1e4c094815112218bbd64877e9a3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="constructorenum"></a>CONSTRUCTOR_ENUM
 選取不同類型的建構函式。  

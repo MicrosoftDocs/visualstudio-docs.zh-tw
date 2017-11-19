@@ -1,110 +1,112 @@
 ---
-title: "原始檔控制外掛程式的測試指南 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "外掛程式，原始檔控制"
-  - "原始檔控制 [Visual Studio SDK]，測試外掛程式"
-  - "原始檔控制外掛程式的測試"
-  - "測試，原始檔控制外掛程式"
-  - "原始檔控制外掛程式，測試指南"
+title: "測試原始檔控制外掛程式的指南 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- plug-ins, source control
+- source control [Visual Studio SDK], testing plug-ins
+- tests, source control plug-ins
+- testing, source control plug-ins
+- source control plug-ins, test guide
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
-caps.latest.revision: 26
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "26"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 55783b604e929d2e5d4cdc613befa2fbec42aec4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 原始檔控制外掛程式的測試指南
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-本區段說明如何測試您的原始檔控制外掛程式的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  提供廣泛的概觀最常見的測試區域，以及某些更錯綜複雜便可能發生問題的區域。  本概觀，並不適合視為完整的測試案例的清單。  
+# <a name="test-guide-for-source-control-plug-ins"></a>測試指南的原始檔控制外掛程式
+本節提供指引來測試您的原始檔控制外掛程式與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 會提供更詳盡的最常見的測試區域，以及某些更錯綜複雜區域可能有問題的概觀。 本概觀不是測試案例的完整清單。  
   
 > [!NOTE]
->  有些錯誤修正和最新的改良功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 可能會發現問題的現有原始檔控制外掛程式先前不時所遇到的使用舊版的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  強烈建議您測試現有原始檔控制外掛程式的這一節中所列舉的區域，即使沒有已變更外掛程式自前一版的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+>  某些 bug 修正和最新的增強功能[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 可能會發現問題的現有原始檔控制外掛程式先前不時所遇到的使用舊版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 強烈建議您測試您現有原始檔控制外掛程式列舉在本節中的區域，即使沒有變更所做的外掛程式自前一版[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## 常見的準備工作  
- 一部電腦[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，目標原始檔控制外掛程式安裝，就需要。  第二部機器，同樣的設定後可用於 \[開啟\] 從原始檔控制的測試部分。  
+## <a name="common-preparation"></a>常見的準備工作  
+ 一部電腦[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和目標原始檔控制外掛程式安裝，則需要。 同樣地設定第二部電腦可用的 「 從原始檔控制測試開啟某些。  
   
-## 術語的定義  
- 這個測試 」 指南的目的使用以下的詞彙定義：  
+## <a name="definition-of-terms"></a>詞彙定義  
+ 本測試指南，請使用下列詞彙定義：  
   
  用戶端專案  
- 任何專案中可用的型別[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援原始檔控制整合 \(比方說， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[vcprvc](../../debugger/includes/vcprvc_md.md)]\)。  
+ 任何專案類型提供[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]支援原始檔控制整合 (例如， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]， [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，或[!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)])。  
   
  Web 專案  
- 有四種類型的 Web 專案： 檔案系統、 本機 IIS、 遠端站台，以及 FTP。  
+ 有四種類型的 Web 專案： 檔案系統、 本機 IIS、 遠端站台和 FTP。  
   
--   檔案系統專案已建立的本機路徑，但它們不需要的 「 網際網路資訊服務 \(IIS\) 」，因為它們底色圖案，透過內部存取，而且可以放在 IDE 內部的與用戶端專案很類似，從原始檔控制下進行安裝。  
+-   本機路徑上建立檔案系統的專案，但不是需要為它們透過 UNC 路徑，在內部存取，而且可以放置在 IDE 中，非常類似用戶端專案，從原始檔控制下安裝網際網路資訊服務 (IIS)。  
   
--   IIS 的本機專案是由 IIS 安裝在同一部電腦上，而且可存取的 URL，指向 \[本機電腦所使用。  
+-   本機 IIS 專案使用的 IIS 安裝在同一部電腦上，而且可存取指向本機電腦的 url。  
   
--   遠端站台的專案也會建立在 IIS 服務\] 下，但它們會放在原始檔控制在 IIS 伺服器電腦上，而不是從內部[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。  
+-   遠端站台的專案也會建立 IIS 的服務 下，但它們被放在 IIS 伺服器電腦上，而不是從原始檔控制下內[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
   
--   FTP 專案可以透過遠端 FTP 伺服器來存取，但不能置於原始檔控制。  
+-   FTP 專案透過遠端 FTP 伺服器存取，但不能放在原始檔控制。  
   
  登記  
- 方案或專案原始檔控制之下的另一種說法。  
+ 方案或專案原始檔控制下的另一個詞彙。  
   
- 版本儲存區  
+ 版本存放區  
  正在透過原始檔控制外掛程式 API 存取原始檔控制資料庫。  
   
-## 本章節所包含的測試區域  
+## <a name="test-areas-covered-in-this-section"></a>本章節涵蓋的測試區域  
   
--   [測試區 1︰ 加入開啟從原始檔控制](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+-   [測試區域 1： 加入開啟從原始檔控制](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   回復 1a： 將方案加入至原始檔控制  
+    -   案例 1： 將方案加入至原始檔控制  
   
     -   案例 1b： 從原始檔控制開啟方案  
   
-    -   案例 1： 將方案從原始檔控制  
+    -   案例 1 c： 將方案加入原始檔控制中  
   
--   [取得從原始檔控制的測試區域 2:](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+-   [測試區域 2︰從原始檔控制中取得](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [測試區 3︰ 簽出\/復原簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+-   [測試區域 3： 簽出/恢復簽出](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   案例 3： 簽出\/復原簽出  
+    -   案例 3： 簽出/恢復簽出  
   
-    -   回復 3a： 簽出  
+    -   案例 3a： 簽出  
   
     -   案例 3b： 中斷連接簽出  
   
-    -   案例 3 c： 編輯查詢的查詢儲存 \(QEQS\)  
+    -   案例 3 c： 查詢編輯查詢儲存 (QEQS)  
   
-    -   回復 3d: 無訊息簽出  
+    -   大小寫 3d： 無訊息的簽出  
   
-    -   回復 3e： 復原簽出  
+    -   大小寫 3e： 恢復簽出  
   
--   [簽入的測試區域 4:](../../extensibility/internals/test-area-4-check-in.md)  
+-   [測試區域 4︰簽入](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   回復匣 4a： 修改項目  
+    -   大小寫 4a： 修改項目  
   
-    -   案例 4b: 新增檔案  
+    -   案例 4b： 新增檔案  
   
-    -   案例 4 c： 加入專案  
+    -   案例 4c： 加入專案  
   
--   [測試區 5︰ 變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
+-   [測試區域 5︰變更原始檔控制](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   回復 5a： 繫結  
+    -   大小寫 5a： 繫結  
   
-    -   回復 5b： 解除繫結  
+    -   大小寫 5b： 解除繫結  
   
-    -   回復 5c： 重新繫結  
+    -   案例 5 c： 重新繫結  
   
--   [測試區域 6: 刪除](../../extensibility/internals/test-area-6-delete.md)  
+-   [測試區域 6︰刪除](../../extensibility/internals/test-area-6-delete.md)  
   
--   [測試區域 7: 共用](../../extensibility/internals/test-area-7-share.md)  
+-   [測試區域 7︰共用](../../extensibility/internals/test-area-7-share.md)  
   
--   [測試地區 8: 外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+-   [測試區域 8︰外掛程式切換](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   回復 8a： 自動變更  
+    -   大小寫 8a： 自動變更  
   
-    -   回復 8b： 解決方案架構的變更  
+    -   大小寫 8b： 方案架構的變更  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [原始檔控制外掛程式](../../extensibility/source-control-plug-ins.md)

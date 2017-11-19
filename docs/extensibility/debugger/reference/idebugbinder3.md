@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugBinder3
-helpviewer_keywords:
-- IDebugBinder3 interface
+f1_keywords: IDebugBinder3
+helpviewer_keywords: IDebugBinder3 interface
 ms.assetid: 92353a74-dc74-4f93-8762-61d6b220478c
-caps.latest.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 47df761681525fd0c1062ae3d84be61c388282e9
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 437d8414c725ffe7f5dab992da262de918c03693
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugbinder3"></a>IDebugBinder3
 > [!IMPORTANT]
@@ -55,9 +39,9 @@ IDebugBinder3 : IDebugBinder
  [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面取得此介面使用[QueryInterface](/cpp/atl/queryinterface)。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 除了所提供的方法[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面，這個介面會實作下列︰  
+ 除了所提供的方法[IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)介面，這個介面會實作下列：  
   
-|方法|描述|  
+|方法|說明|  
 |------------|-----------------|  
 |[GetMemoryObject](../../../extensibility/debugger/reference/idebugbinder3-getmemoryobject.md)|擷取記憶體物件，代表此物件所繫結的記憶體。|  
 |[GetExceptionObjectAndType](../../../extensibility/debugger/reference/idebugbinder3-getexceptionobjectandtype.md)|擷取這個物件 （如果有的話），與相關聯的例外狀況|  
@@ -69,11 +53,11 @@ IDebugBinder3 : IDebugBinder
 |[GetMemoryContext64](../../../extensibility/debugger/reference/idebugbinder3-getmemorycontext64.md)|將記憶體內容的物件位置或 64 位元記憶體位址。|  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ ee.h  
+ 標頭： ee.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [運算式評估介面](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)   

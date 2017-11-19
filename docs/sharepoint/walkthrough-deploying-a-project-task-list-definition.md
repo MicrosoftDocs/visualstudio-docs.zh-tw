@@ -1,12 +1,10 @@
 ---
-title: 'Walkthrough: Deploying a Project Task List Definition | Microsoft Docs'
+title: "逐步解說： 部署專案工作清單定義 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,190 +12,189 @@ dev_langs:
 - CSharp
 - VB
 - CSharp
-helpviewer_keywords:
-- SharePoint development in Visual Studio, deploying
+helpviewer_keywords: SharePoint development in Visual Studio, deploying
 ms.assetid: 18b62016-ed30-4dd1-9dfc-0d7e82c6767f
-caps.latest.revision: 34
-author: kempb
-ms.author: kempb
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 1e0f260d1f814a2b2a3396ece8a2505561ecbbfd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 0a9f981db2b48c550e1312acf4f387a495a0386e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="walkthrough-deploying-a-project-task-list-definition"></a>Walkthrough: Deploying a Project Task List Definition
-  This walkthrough shows you how to use [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] to create, customize, debug, and deploy a SharePoint list to track project tasks.  
+# <a name="walkthrough-deploying-a-project-task-list-definition"></a>逐步解說：部署專案工作清單定義
+  本逐步解說將示範如何使用 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 建立、自訂、偵錯和部署 SharePoint 清單以追蹤專案工作。  
   
- This walkthrough illustrates the following tasks:  
+ 這個逐步解說將說明下列工作：  
   
--   [Creating a SharePoint List](#CreatingListDef).  
+-   [建立 SharePoint 清單](#CreatingListDef)。  
   
--   [Creating a SharePoint List](#CreatingListDef).  
+-   [建立 SharePoint 清單](#CreatingListDef)。  
   
--   [Adding an Event Receiver](#AddEventRcvr).  
+-   [加入事件接收器](#AddEventRcvr)。  
   
--   [Customizing the Project Task List Feature](#CustomizeFeature).  
+-   [自訂專案工作清單功能](#CustomizeFeature)。  
   
--   [Building and Testing the Project Task List](#BuildTest).  
+-   [建置和測試專案工作清單](#BuildTest)。  
   
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
- You need the following components to complete this walkthrough:  
+## <a name="prerequisites"></a>必要條件  
+ 您需要下列元件才能完成此逐步解說：  
   
--   Supported editions of Microsoft Windows and SharePoint. For more information, see [Requirements for Developing SharePoint Solutions](../sharepoint/requirements-for-developing-sharepoint-solutions.md).  
+-   支援的 Microsoft Windows 和 SharePoint 版本。 如需詳細資訊，請參閱[開發 SharePoint 方案的需求](../sharepoint/requirements-for-developing-sharepoint-solutions.md)。  
   
--   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)] or an edition of Visual Studio Application Lifecycle Management (ALM).  
+-   [!INCLUDE[vs_pro_current_short](../sharepoint/includes/vs-pro-current-short-md.md)]或版本的 Visual Studio Application Lifecycle Management (ALM)。  
   
-##  <a name="CreatingListDef"></a> Creating a SharePoint List  
- Create a SharePoint list project and associate the list definition with tasks.  
+##  <a name="CreatingListDef"></a>建立 SharePoint 清單  
+ 建立 SharePoint 清單專案，並將清單定義與工作產生關聯。  
   
-#### <a name="to-create-a-sharepoint-list-project"></a>To create a SharePoint list project  
+#### <a name="to-create-a-sharepoint-list-project"></a>若要建立 SharePoint 清單專案  
   
-1.  Open the **New Project** dialog box, expand the **SharePoint** node, and then choose the **2010** node.  
+1.  開啟**新專案**對話方塊方塊中，展開  **SharePoint**  節點，然後選擇  **2010年**節點。  
   
-2.  In the **Templates** pane, choose the **SharePoint 2010 Project** template, name the project **ProjectTaskList**, and then choose the **OK** button.  
+2.  在**範本** 窗格中，選擇**SharePoint 2010 專案**範本，將專案**ProjectTaskList**，然後選擇 **確定** 按鈕。  
   
-     The **SharePoint Customization Wizard** appears.  
+     **SharePoint 自訂精靈**隨即出現。  
   
-3.  Specify the local SharePoint site that you use for debugging, choose the **Deploy as a farm solution** option button, and then choose the **Finish** button.  
+3.  指定您偵錯時，所使用之本機 SharePoint 網站選擇**部署為伺服陣列方案**選項按鈕，然後再選擇**完成** 按鈕。  
   
-4.  Open the shortcut menu for the project, and then choose **Add**, **New Item**.  
+4.  開啟專案的捷徑功能表，然後選擇**新增**，**新項目**。  
   
-5.  In the **Templates** pane, choose the **List** template, and then choose the **Add** button.  
+5.  在**範本** 窗格中，選擇**清單**範本，然後選擇 **新增** 按鈕。  
   
-     The **SharePoint Customization Wizard** appears.  
+     **SharePoint 自訂精靈**隨即出現。  
   
-6.  In the **What name do you want to display for your list?** box, enter **Project Task List**.  
+6.  在**您想要清單顯示什麼名稱？**方塊中，輸入**Project Task List**。  
   
-7.  Choose the **Create a non-customizable list based on an existing list type of** option button, and then, in its list, choose **Tasks**, and then choose the **Finish** button.  
+7.  選擇**建立不可自訂的清單的現有清單類型依據**選項按鈕，，然後在其清單中，選擇**工作**，然後選擇 [**完成**] 按鈕。  
   
-     The list, feature, and package appear in **Solution Explorer**.  
+     會出現在清單、 功能和封裝**方案總管 中**。  
   
-##  <a name="AddEventRcvr"></a> Adding an Event Receiver  
- In the task list, you can add an event receiver that automatically sets the due date and description of the task. The following procedure adds a simple event handler to the list instance as an event receiver.  
+##  <a name="AddEventRcvr"></a>加入事件接收器  
+ 在工作清單中，您可以加入事件接收器，以便自動設定工作的到期日和描述。 下列程序加入的清單執行個體做為事件接收器的簡單事件處理常式。  
   
-#### <a name="to-add-an-event-receiver"></a>To add an event receiver  
+#### <a name="to-add-an-event-receiver"></a>若要加入事件接收器  
   
-1.  Open the shortcut menu for the project node, choose **Add**, and then choose **New Item**.  
+1.  開啟專案節點的捷徑功能表，選擇 **新增**，然後選擇 **新項目**。  
   
-2.  In the list of SharePoint templates, choose the **Event Receiver** template, and then name it **ProjectTaskListEventReceiver**.  
+2.  在 SharePoint 範本清單中選擇**事件接收器**範本，並將其命名**ProjectTaskListEventReceiver**。  
   
-     The **SharePoint Customization Wizard** appears.  
+     **SharePoint 自訂精靈**隨即出現。  
   
-3.  On the **Choose Event Receiver Settings** page, choose **List Item Events** as the event receiver type in the **What type of event receiver do you want** list.  
+3.  在**選擇事件接收器設定**頁面上，選擇**清單項目事件**作為中的事件接收器類型**您要何種類型的事件接收器**清單。  
   
-4.  In the **What item should be the event source** list, choose **Tasks**.  
+4.  在**何種項目應該做為事件來源**清單中，選擇**工作**。  
   
-5.  In the list of events to handle, select the check box next to **An item was added**, and then choose the **Finish** button.  
+5.  在要處理的事件清單中，選取核取方塊旁的 **項目已加入**，然後選擇 **完成** 按鈕。  
   
-     A new event receiver node is added to the project with a code file that is named **ProjectTaskListEventReceiver**.  
+     新的事件接收器節點，會使用名為的程式碼檔案加入至專案**ProjectTaskListEventReceiver**。  
   
-6.  Add code to the `ItemAdded` method in the **ProjectTaskListEventReceiver** code file. Each time a new task is added, a default due date and a description is added to the task. The default due date is July 1, 2009.  
+6.  將程式碼加入`ItemAdded`方法中的**ProjectTaskListEventReceiver**程式碼檔案。 每次新的工作，預設的到期日和描述會新增至工作。 預設的到期日是 2009 年 7 月 1 日。  
   
-     [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]  [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]  
+     [!code-vb[SPProjectTaskList#1](../sharepoint/codesnippet/VisualBasic/projecttasklist1/projecttasklisteventreceiver/projecttasklisteventreceiver.vb#1)]
+     [!code-csharp[SPProjectTaskList#1](../sharepoint/codesnippet/CSharp/projecttasklist/projecttasklisteventreceiver/projecttasklisteventreceiver.cs#1)]  
   
-##  <a name="CustomizeFeature"></a> Customizing the Project Task List Feature  
- When you create a SharePoint solution, Visual Studio automatically creates features for the default project items. You can customize the project task list settings for the SharePoint site by using the Feature Designer.  
+##  <a name="CustomizeFeature"></a>自訂專案工作清單功能  
+ 當您建立 SharePoint 方案時，Visual Studio 會自動建立功能的預設專案項目。 您可以使用功能設計工具自訂 SharePoint 網站的專案工作清單設定。  
   
-#### <a name="to-customize-the-project-task-list-feature"></a>To customize the project task list feature  
+#### <a name="to-customize-the-project-task-list-feature"></a>若要自訂專案工作清單功能  
   
-1.  In **Solution Explorer**, expand **Features**.  
+1.  在**方案總管 中**，依序展開**功能**。  
   
-2.  Open the shortcut menu for **Feature1**, and then choose **View Designer**.  
+2.  開啟快顯功能表**Feature1**，然後選擇 **檢視表設計工具**。  
   
-3.  In the **Title** box, enter **Project Task List Feature**.  
+3.  在**標題**方塊中，輸入**專案工作清單功能**。  
   
-4.  In the **Scope** list, choose **Web**.  
+4.  在**範圍**清單中，選擇**Web**。  
   
-5.  In the **Properties** window, enter **1.0.0.0** as the value for the **Version** property.  
+5.  在**屬性**視窗中，輸入**1.0.0.0**做為值**版本**屬性。  
   
-##  <a name="CustomizePackage"></a> Customizing the Project Task List Package  
- When you create a SharePoint project, Visual Studio automatically adds the features that contain the default project items to the package. You can customize the project task list settings for the SharePoint site by using the Package Designer.  
+##  <a name="CustomizePackage"></a>自訂專案工作清單套件  
+ 當您建立 SharePoint 專案時，Visual Studio 會自動加入包含預設專案項目加入封裝的功能。 您可以自訂專案工作清單設定為 SharePoint 網站使用封裝設計工具。  
   
-#### <a name="to-customize-the-project-task-list-package"></a>To customize the project task list package  
+#### <a name="to-customize-the-project-task-list-package"></a>若要自訂專案工作清單套件  
   
-1.  In **SolutionExplorer**, open the shortcut menu for **Package**, and then choose **View Designer**.  
+1.  在**SolutionExplorer**，開啟捷徑功能表**封裝**，然後選擇 **檢視表設計工具**。  
   
-2.  In the **Name** box, enter **ProjectTaskListPackage**.  
+2.  在**名稱**方塊中，輸入**ProjectTaskListPackage**。  
   
-3.  Select the **Reset Web Server** check box.  
+3.  選取**重設 Web 伺服器**核取方塊。  
   
-##  <a name="BuildTest"></a> Building and Testing the Project Task List  
- When you run the project, the SharePoint site opens. However, you must manually navigate to the location of the task list.  
+##  <a name="BuildTest"></a>建置和測試專案工作清單  
+ 當您執行專案時，會開啟 SharePoint 網站。 不過，您必須手動瀏覽至工作清單的位置。  
   
-#### <a name="to-test-the-project-task-list"></a>To test the project task list  
+#### <a name="to-test-the-project-task-list"></a>若要測試專案工作清單  
   
-1.  Choose the F5 key to build and deploy your project task list.  
+1.  選擇 F5 鍵建置並部署專案工作清單。  
   
-     The SharePoint site opens.  
+     開啟 SharePoint 網站。  
   
-2.  Choose the **Home** tab.  
+2.  選擇**首頁** 索引標籤。  
   
-3.  In the left sidebar, choose the **Project Task List** link.  
+3.  在左提要欄位中，選擇  **Project Task List**連結。  
   
-     The Project Task List page appears.  
+     [專案工作清單] 頁面隨即出現。  
   
-4.  In the **List Tools** tab, choose the **Items** tab.  
+4.  在**清單工具**索引標籤上，選擇**項目** 索引標籤。  
   
-5.  In the **Items** group, choose the **New Item** button.  
+5.  在**項目**群組中，選擇**新項目** 按鈕。  
   
-6.  In the **Title** text box, enter **Task1**.  
+6.  在**標題**文字方塊中，輸入**Task1**。  
   
-7.  Choose the **Save** button.  
+7.  選擇**儲存** 按鈕。  
   
-     After the site is refreshed, the **Task1** task appears with a due date of 7/1/2009.  
+     重新整理站台後， **Task1**工作會顯示 2009 年 7 月 1 日到期日。  
   
-8.  Choose **Task1**.  
+8.  選擇**Task1**。  
   
-     The detailed view of the task appears, and the description shows "This is a critical task."  
+     此時會出現工作的詳細的檢視，並描述會顯示 「 這是很重要的工作 」。  
   
-##  <a name="Deploy"></a> Deploying the Project Task List  
- After you build and test the project task list, you can deploy it to the *local system* or a *remote system*. The local system is the same computer on which you developed the solution, whereas a remote system is a different computer.  
+##  <a name="Deploy"></a>部署專案工作清單  
+ 您在建置和測試專案工作清單之後，您可以部署它，*本機系統*或*遠端系統*。 本機系統是您用以開發方案，在同一部電腦，而遠端系統是不同的電腦。  
   
-#### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>To deploy the project task list to the local system  
+#### <a name="to-deploy-the-project-task-list-to-the-local-system"></a>若要為本機系統部署專案工作清單  
   
-1.  On the Visual Studio menu bar, choose **Build**, **Deploy Solution**.  
+1.  在 Visual Studio 功能表列上選擇 **建置**，**部署方案**。  
   
-     Visual Studio recycles the IIS application pool, retracts any existing versions of the solution, copies the solution package (.wsp) file to SharePoint, and then activates its features. You can now use the solution in SharePoint. For more information about deployment configuration steps, see [How to: Edit a SharePoint Deployment Configuration](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md).  
+     Visual Studio 會回收 IIS 應用程式集區、 會撤銷方案的任何現有版本，將方案套件 (.wsp) 檔案複製到 SharePoint，，然後啟動 其功能。 您現在可以在 SharePoint 中使用的方案。 如需有關部署組態步驟的詳細資訊，請參閱[如何： 編輯 SharePoint 部署組態](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。  
   
-#### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>To deploy the project task list to a remote system  
+#### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>若要部署到遠端系統的專案工作清單  
   
-1.  On the Visual Studio menu bar, choose **Build**, **Publish**.  
+1.  在 Visual Studio 功能表列上選擇 **建置**，**發行**。  
   
-2.  In the **Publish** dialog box, choose the **Publish to File System** option button.  
+2.  在**發行**對話方塊方塊中，選擇**發行至檔案系統**選項按鈕。  
   
-     You can change the target location in the **Publish** dialog box by choosing the ellipsis button ![Ellipsis Icon](../sharepoint/media/ellipsisicon.gif "Ellipsis Icon") and then navigating to another location.  
+     您可以變更的目標位置中**發行**對話方塊中，選擇省略符號按鈕![省略符號圖示](../sharepoint/media/ellipsisicon.gif "省略符號圖示")，然後瀏覽至另一個位置。  
   
-3.  Choose the **Publish** button.  
+3.  選擇**發行** 按鈕。  
   
-     A .wsp file is created for the solution.  
+     方案的 .wsp 檔隨即建立。  
   
-4.  Copy the .wsp file to the remote SharePoint system.  
+4.  將.wsp 檔案複製到遠端 SharePoint 系統。  
   
-5.  Use the PowerShell `Add-SPUserSolution` command to install the package on the remote SharePoint installation. (For farm solutions, use the `Add-SPSolution` command.)  
+5.  使用 PowerShell`Add-SPUserSolution`遠端 SharePoint 安裝上安裝封裝的命令。 (用於陣列方案`Add-SPSolution`命令。)  
   
-     For example, `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`.  
+     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。  
   
-6.  Use the PowerShell `Install-SPUserSolution` command to deploy the solution. (For farm solutions, use the `Install-SPSolution` command.)  
+6.  使用 PowerShell`Install-SPUserSolution`命令，以部署方案。 (用於陣列方案`Install-SPSolution`命令。)  
   
-     For example, `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`.  
+     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。  
   
-     For more information about remote deployment, see [Using Solutions](http://go.microsoft.com/fwlink/?LinkId=217680) and [Adding and Deploying Solutions with PowerShell in SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=217682).  
+     如需遠端部署的詳細資訊，請參閱[使用解決方案](http://go.microsoft.com/fwlink/?LinkId=217680)和[加入和部署的方案，在 SharePoint 2010 中使用 PowerShell](http://go.microsoft.com/fwlink/?LinkId=217682)。  
   
-## <a name="next-steps"></a>Next Steps  
- You can learn more about how to customize and deploy SharePoint solutions from the following topics:  
+## <a name="next-steps"></a>後續步驟  
+ 您可以深入了解如何自訂及部署 SharePoint 方案，從下列主題：  
   
--   [Walkthrough: Create a Site Column, Content Type, and List for SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)  
+-   [逐步解說：建立 SharePoint 的網站資料行、內容類型和清單](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)  
   
--   [How to: Create an Event Receiver](../sharepoint/how-to-create-an-event-receiver.md)  
+-   [如何：建立事件接收器](../sharepoint/how-to-create-an-event-receiver.md)  
   
--   [Windows PowerShell for SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=217684)  
+-   [SharePoint Server 2010 的 Windows PowerShell](http://go.microsoft.com/fwlink/?LinkId=217684)  
   
-## <a name="see-also"></a>See Also  
- [Packaging and Deploying SharePoint Solutions](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [封裝和部署 SharePoint 方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
   
   

@@ -1,56 +1,56 @@
 ---
-title: "IDebugBreakpointRequest2::GetRequestInfo | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBreakpointRequest2::GetRequestInfo"
-helpviewer_keywords: 
-  - "IDebugBreakpointRequest2::GetRequestInfo"
+title: "IDebugBreakpointRequest2::GetRequestInfo |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBreakpointRequest2::GetRequestInfo
+helpviewer_keywords: IDebugBreakpointRequest2::GetRequestInfo
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: c8f44bc48f2d16cd01be67a9058722749f1863d2
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointRequest2::GetRequestInfo
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-取得描述這個中斷點要求中斷點要求資訊。  
+# <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
+取得描述此中斷點要求的中斷點要求資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetRequestInfo(   
-   BPREQI_FIELDS    dwFields,  
-   BP_REQUEST_INFO* pBPRequestInfo  
+```cpp  
+HRESULT GetRequestInfo(   
+   BPREQI_FIELDS    dwFields,  
+   BP_REQUEST_INFO* pBPRequestInfo  
 );  
 ```  
   
-```c#  
-int GetRequestInfo(   
-   eunm_BPREQI_FIELDS  dwFields,  
-   BP_REQUEST_INFO[]   pBPRequestInfo  
+```csharp  
+int GetRequestInfo(   
+   eunm_BPREQI_FIELDS  dwFields,  
+   BP_REQUEST_INFO[]   pBPRequestInfo  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwFields`  
- \[in\]從的旗標組合[BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉型別，以判斷哪些欄位`pBPRequestInfo`參數都必須填寫。  
+ [in]從旗標的組合[BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)列舉，可判斷哪些欄位`pBPRequestInfo`參數會填入。  
   
  `pBPRequestInfo`  
- \[\] out指定[BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)好填入這些中斷點要求的描述的結構。  
+ [out]指定[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)結構以填入中斷點要求的描述。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CDebugBreakpointRequest`物件，公開 \(expose\) [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CDebugBreakpointRequest`公開物件[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)介面。  
   
 ```  
 HRESULT CDebugBreakpointRequest::GetRequestInfo(  
@@ -214,7 +214,7 @@ HRESULT CDebugBreakpointRequest::CopyBP_REQUEST_INFO(
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)   
- [BPREQI\_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
- [BP\_REQUEST\_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
+ [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)   
+ [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

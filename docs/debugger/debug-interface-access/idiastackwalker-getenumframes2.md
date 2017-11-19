@@ -1,59 +1,58 @@
 ---
-title: "IDiaStackWalker::getEnumFrames2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaStackWalker2::getEnumFrames2 方法"
+title: "IDiaStackWalker::getEnumFrames2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaStackWalker2::getEnumFrames2 method
 ms.assetid: 73196d3f-112c-4b3a-997b-7c6b815d4afc
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fac3dc85542ecf5f86eb40be111533ee5e5a4211
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaStackWalker::getEnumFrames2
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取特定的平台類型的堆疊框架列舉器。  
+# <a name="idiastackwalkergetenumframes2"></a>IDiaStackWalker::getEnumFrames2
+擷取特定平台類型的堆疊框架的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```C++  
   
-      HRESULT getEnumFrames2(   
-   enum  CV_CPU_TYPE_e    cpuid,  
-   IDiaStackWalkHelper*   pHelper,  
-   IDiaEnumStackFrames**  ppEnum  
+      HRESULT getEnumFrames2(   
+   enum  CV_CPU_TYPE_e    cpuid,  
+   IDiaStackWalkHelper*   pHelper,  
+   IDiaEnumStackFrames**  ppEnum  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `cpuid`  
- \[in\]介於[CV\_CPU\_TYPE\_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md) ，指定列舉型別平台類型。  
+ [in]中的值[CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)指定平台類型的列舉。  
   
  `pHelper`  
- \[in\]協助人員[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。  
+ [in]協助專家[IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)物件。  
   
  `ppEnum`  
- \[\] out傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
+ [out]傳回[IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)物件，其中包含一份[IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 若要取得建立堆疊框架的清單只是 x86 平台，呼叫[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。  
+## <a name="remarks"></a>備註  
+ 若要取得剛 x86 的堆疊框架清單平台，請呼叫[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaStackWalker](../../debugger/debug-interface-access/idiastackwalker.md)   
- [CV\_CPU\_TYPE\_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
+ [CV_CPU_TYPE_e 列舉](../../debugger/debug-interface-access/cv-cpu-type-e.md)   
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [IDiaStackFrame](../../debugger/debug-interface-access/idiastackframe.md)   
  [IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)

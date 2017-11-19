@@ -1,57 +1,59 @@
 ---
-title: "IDebugSymbolProviderDirect::GetMetaDataImport | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "GetMetaDataImport"
-  - "IDebugSymbolProviderDirect::GetMetaDataImport"
+title: "IDebugSymbolProviderDirect::GetMetaDataImport |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- GetMetaDataImport
+- IDebugSymbolProviderDirect::GetMetaDataImport
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: f35e76579a93dfc83454322699325e1dfec09734
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugSymbolProviderDirect::GetMetaDataImport
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 擷取中繼資料匯入資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetMetaDataImport (  
-    GUID*      guid,  
-    DWORD      appID,  
-    IUnknown** ppImport  
+    GUID*      guid,  
+    DWORD      appID,  
+    IUnknown** ppImport  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetMetaDataImport (  
-    Guid       guid,  
-    uint       appID,  
-    out object ppImport  
+    Guid       guid,  
+    uint       appID,  
+    out object ppImport  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `guid`  
- \[in\]模組的唯一識別項。  
+ [in]模組的唯一識別碼。  
   
  `appID`  
- \[in\]應用程式定義域的識別項。  
+ [in]應用程式定義域的識別項。  
   
  `ppImport`  
- \[\] out傳回物件，其中包含中繼資料匯入資訊。  
+ [out]傳回物件，其中包含中繼資料匯入資訊。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

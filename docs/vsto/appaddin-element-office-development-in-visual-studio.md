@@ -1,30 +1,31 @@
 ---
-title: "&lt;appAddin&gt; 項目 (Visual Studio 中的 Office 程式開發)"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "應用程式資訊清單 [Visual Studio 中的 Office 程式開發]、<appAddin> 項目"
+title: "&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發） |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords: application manifests [Office development in Visual Studio], <appAddin> element
 ms.assetid: 6152fe5b-6af1-465d-aee7-19e4fd4d04c1
-caps.latest.revision: 29
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "29"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: c5637a449ea40f6e4f910e061c7e2e324c91ae70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# &lt;appAddin&gt; 項目 (Visual Studio 中的 Office 程式開發)
-  `vstov4`  命名空間的 `appAddin` 項目會儲存自訂 VSTO 增益集特定的資訊。  
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt;元素 （在 Visual Studio 中的 Office 程式開發）
+  `appAddin` 命名空間的 `vstov4` 項目會儲存自訂 VSTO 增益集特定的資訊。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <appAddin  
@@ -37,42 +38,61 @@ caps.handback.revision: 28
 </appAddin>  
 ```  
   
-## 項目和屬性  
- `appAddin` 項目是必要的，且位於 `vstov4`  命名空間。 在應用程式資訊清單中，只可以定義一個 `appAddin` 項目。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `appAddin` 項目是必要的，且位於 `vstov4` 命名空間。 在應用程式資訊清單中，只可以定義一個 `appAddin` 項目。  
   
  `appAddin` 項目具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
+|---------------|-----------------|  
 |`application`|必要項。 識別 Microsoft Office 應用程式。 該值可以為下列其中一種：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|  
-|`loadBehavior`|選擇項。 根據預設，將此值設定為下列值時，會啟用 `loadBehavior`。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱 [VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md) 中標題為 LoadBehavior 值的表格。|  
-|`keyName`|必要項。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱[VSTO 增益集的登錄項目](../vsto/registry-entries-for-vsto-add-ins.md)。|  
+|`loadBehavior`|選擇項。 根據預設，將此值設定為下列值時，會啟用 `loadBehavior` 。 若要進行偵錯，可以將此值設定為 2 來停用 VSTO 增益集。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)中標題為 LoadBehavior 值的表格。|  
+|`keyName`|必要項。 這個值是該應用程式載入 VSTO 增益集時將要使用的登錄機碼名稱。 如需詳細資訊，請參閱 [Registry Entries for VSTO Add-ins](../vsto/registry-entries-for-vsto-add-ins.md)。|  
   
  `appAddin` 項目具有下列子項目。  
   
-### friendlyName  
- 選擇項。[&#60;friendlyName&#62; 項目 &#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md) 中會說明 `friendlyName` 項目。  
+### <a name="friendlyname"></a>friendlyName  
+ 選擇項。 `friendlyName`項目中會說明[&#60; friendlyName &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/friendlyname-element-office-development-in-visual-studio.md).  
   
-### 說明  
- 選擇項。[&#60;description&#62; 元素 &#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/description-element-office-development-in-visual-studio.md) 中會說明 `description` 項目。  
+### <a name="description"></a>描述  
+ 選擇項。 `description`項目中會說明[&#60; 描述 &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/description-element-office-development-in-visual-studio.md).  
   
-### formRegions  
- 只有包含表單區域的 Outlook VSTO 增益集需要。[&#60;formRegions&#62; 項目 &#40;Visual Studio 中的 Office 程式開發&#41;](../vsto/formregions-element-office-development-in-visual-studio.md) 中會說明 `formRegions` 項目。  
+### <a name="formregions"></a>formRegions  
+ 只有包含表單區域的 Outlook VSTO 增益集才需要。 `formRegions`項目中會說明[&#60; formRegions &#62;元素 &#40; Visual Studio &#41; 中的 Office 程式開發](../vsto/formregions-element-office-development-in-visual-studio.md).  
   
-## VSTO 增益集範例  
+## <a name="vsto-add-in-example"></a>VSTO 增益集範例  
   
-### 描述  
- 下列程式碼範例說明使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 部署之 Outlook 方案中的 `appAddin` 項目。 這個程式碼範例是 [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md) 中所提供之較大範例的一部分。  
+### <a name="description"></a>描述  
+ 下列程式碼範例說明使用 `appAddin` 部署之 Outlook 方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]項目。 這個程式碼範例是 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中所提供之較大範例的一部分。  
   
-### 程式碼  
+### <a name="code"></a>程式碼  
   
 ```  
-<vstov4:appAddIn application="Outlook" loadBehavior="3" keyName="ContosoOutlookAddIn"> <vstov4:friendlyName> ContosoOutlookAddIn </vstov4:friendlyName> <vstov4:description> ContosoOutlookAddIn - Outlook VSTO Add-in created with Visual Studio Tools for Office </vstov4:description> <vstov4:formRegions> <vstov4:formRegion name="OutlookAddIn1.FormRegion1"> <vstov4:messageClass name="IPM.Note" /> <vstov4:messageClass name="IPM.Contact" /> <vstov4:messageClass name="IPM.Appointment" /> </vstov4:formRegion> </vstov4:formRegions> </vstov4:appAddIn>  
+<vstov4:appAddIn   
+  application="Outlook"   
+  loadBehavior="3"   
+  keyName="ContosoOutlookAddIn">  
+  <vstov4:friendlyName>  
+    ContosoOutlookAddIn  
+  </vstov4:friendlyName>  
+  <vstov4:description>  
+    ContosoOutlookAddIn - Outlook VSTO Add-in   
+    created with Visual Studio Tools for Office  
+  </vstov4:description>  
+  <vstov4:formRegions>  
+    <vstov4:formRegion  
+        name="OutlookAddIn1.FormRegion1">  
+      <vstov4:messageClass name="IPM.Note" />  
+      <vstov4:messageClass name="IPM.Contact" />  
+      <vstov4:messageClass name="IPM.Appointment" />  
+    </vstov4:formRegion>  
+  </vstov4:formRegions>  
+</vstov4:appAddIn>  
 ```  
   
-## 請參閱  
- [Office 方案的應用程式資訊清單](../vsto/application-manifests-for-office-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)   
  [Office 方案的部署資訊清單](../vsto/deployment-manifests-for-office-solutions.md)   
- [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)  
+ [ClickOnce 應用程式資訊清單](/visualstudio/deployment/clickonce-application-manifest)  
   
   

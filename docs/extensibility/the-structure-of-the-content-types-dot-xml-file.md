@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,43 +13,30 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 7278fb37984b92a6a07823c552db5c59a446d0d2
-ms.openlocfilehash: 6f45707a88a27fa54840825d9562f859385ce4b7
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f399cb0c88e044224d554cf8e17cc4d217498e87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>[Content_types].xml 檔案的結構
-包含在 VSIX 套件的內容類型的相關資訊。 Visual Studio 會使用 [Content_Types].xml 檔案來安裝封裝，但不會安裝檔案本身。  
+包含在 VSIX 封裝的內容類型的相關資訊。 Visual Studio 會使用 [Content_Types].xml 檔案來安裝封裝，但不會安裝該檔案本身。  
   
 > [!NOTE]
->  雖然本主題僅適用於 [Content_Type].xml 檔案，以供在 VSIX 封裝中，[Content_Types].xml 檔案類型屬於*開放封裝慣例 (OPC)*標準。 如需詳細資訊，請參閱[OPC: 新標準的封裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
+>  雖然本主題只適用於使用 VSIX 封裝中的 [有效].xml 檔案，但是 [Content_Types].xml 檔案類型屬於的*開放封裝慣例 (OPC)*標準。 如需詳細資訊，請參閱[OPC: 新標準為封裝資料](http://go.microsoft.com/fwlink/?LinkID=148207)MSDN 網站上。  
   
 ## <a name="attributes-and-elements"></a>屬性和項目  
- 下列各節描述的根項目和其屬性和子項目。  
+ 下列各節描述的根項目與屬性和子項目。  
   
 ### <a name="root-element"></a>根項目  
   
 |項目|說明|  
 |-------------|-----------------|  
-|`Types`|包含列舉 VSIX 套件中的檔案類型的子項目。|  
+|`Types`|包含列舉 VSIX 封裝中的檔案類型的子項目。|  
   
 ### <a name="attributes"></a>屬性  
   
@@ -62,24 +48,24 @@ ms.lasthandoff: 02/22/2017
   
 |值|說明|  
 |-----------|-----------------|  
-|http://schemas.openformats.org/package/2006/content-types|內容類型的結構描述的位置。|  
+|http://schemas.openformats.org/package/2006/content-types|內容類型結構描述的位置。|  
   
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  `Types`項目可以包含任意數目的`Default`項目。  
   
-|項目|描述|  
+|項目|說明|  
 |-------------|-----------------|  
-|`Default`|描述 VSIX 套件中的內容類型。 在封裝中的每一種檔案類型必須有它自己`Default`項目。|  
+|`Default`|描述 VSIX 封裝中的內容型別。 每個封裝中的檔案類型必須有它自己`Default`項目。|  
   
 ### <a name="attributes"></a>屬性  
   
 |屬性|說明|  
 |---------------|-----------------|  
 |`Extension`|VSIX 套件中之檔案的副檔名。|  
-|`ContentType`|描述檔案副檔名相關聯的內容的類型。|  
+|`ContentType`|描述檔案名稱的副檔名相關聯的內容的類型。|  
   
 ### <a name="attribute-name-attribute"></a>{屬性名稱}屬性  
- Visual Studio 會辨識下列`ContentType`值相關聯之`Extension`型別。  
+ Visual Studio 可辨識下列`ContentType`值相關聯之`Extension`型別。  
   
 |副檔名|ContentType|  
 |---------------|-----------------|  
@@ -91,17 +77,17 @@ ms.lasthandoff: 02/22/2017
 |rtf|應用程式/rtf|  
 |pdf|應用程式/pdf|  
 |gif|gif 影像|  
-|jpg 或 jpeg|影像/jpg|  
-|tiff|影像/tiff|  
-|vsix|應用程式/zip|  
-|郵遞區號|應用程式/zip|  
-|dll|應用程式/八位元組資料流|  
-|所有其他檔案類型|應用程式/八位元組資料流|  
+|jpg 或 jpeg|jpg 影像 /|  
+|Tiff|tiff 影像 /|  
+|vsix|應用程式/郵遞區號|  
+|郵遞區號|應用程式/郵遞區號|  
+|dll|application/octet-stream|  
+|所有其他檔案類型|application/octet-stream|  
   
 ## <a name="example"></a>範例  
   
 ### <a name="description"></a>說明  
- 下列的 [Content_Types].xml 檔案會描述一般的 VSIX 套件。  
+ 下列 [Content_Types].xml 檔案會描述一般的 VSIX 封裝。  
   
 ### <a name="code"></a>程式碼  
   
@@ -117,6 +103,6 @@ ms.lasthandoff: 02/22/2017
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [VSIX 套件的剖析](../extensibility/anatomy-of-a-vsix-package.md)   
- [VSIX 擴充功能 1.0 結構描述參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
- [OPC︰ 新的標準來包裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)
+ [VSIX 封裝的結構](../extensibility/anatomy-of-a-vsix-package.md)   
+ [VSIX 擴充功能的結構描述 1.0 參考](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [OPC： 新的標準來包裝您的資料](http://go.microsoft.com/fwlink/?LinkID=148207)

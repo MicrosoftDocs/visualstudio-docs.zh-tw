@@ -1,44 +1,28 @@
 ---
-title: "在您的開發流程中使用模型 |Microsoft 文件"
+title: "在開發程序中使用模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-helpviewer_keywords:
-- UML, using models
+helpviewer_keywords: UML, using models
 ms.assetid: a33ac8fc-4ba0-4850-b71b-014dc8674e54
-caps.latest.revision: 29
+caps.latest.revision: "29"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 080f77253c886550dad4a10ae46409e5ac2c9506
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c9871a767ae8e2a9c77edecda19c986c4ee85f26
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="use-models-in-your-development-process"></a>在開發程序中使用模型
-在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片︰ 透過模型改善結構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
+在 Visual Studio 中，您可以使用模型來協助您了解並變更系統、應用程式或元件。 模型可以協助您將系統運作的領域視覺化、釐清使用者的需求、定義系統的架構、分析程式碼，以及確定您的程式碼符合需求。 請參閱[Channel 9 影片： 透過模型改進架構](http://go.microsoft.com/fwlink/?LinkID=252078)。  
   
- 若要查看哪些版本的 Visual Studio 支援每種模型類型，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看支援各類型之模型的 Visual Studio 版本，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
 ## <a name="how-to-use-models"></a>如何使用模型  
  模型可以藉由許多方式協助您：  
@@ -47,9 +31,9 @@ ms.lasthandoff: 02/22/2017
   
 -   使用模型可以協助您顯示出需求中的不一致。  
   
--   透過模型傳達可以協助您傳遞重要的概念，這比使用自然語言傳達更清楚。 如需詳細資訊，請參閱[模型應用程式架構](../modeling/model-your-app-s-architecture.md)。  
+-   透過模型傳達可以協助您傳遞重要的概念，這比使用自然語言傳達更清楚。 如需詳細資訊，請參閱[您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)。  
   
--   您可以偶爾使用模型來產生程式碼或其他成品，例如資料庫結構描述或文件。 例如，[!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] 的模型元件就是從模型產生的。  如需詳細資訊，請參閱[產生並設定您的應用程式模型](../modeling/generate-and-configure-your-app-from-models.md)。  
+-   您可以偶爾使用模型來產生程式碼或其他成品，例如資料庫結構描述或文件。 例如，[!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)] 的模型元件就是從模型產生的。  如需詳細資訊，請參閱[產生並設定您的應用程式，從模型](../modeling/generate-and-configure-your-app-from-models.md)。  
   
  您可以在各種不同的程序中使用模型，不論是極端敏捷式還是高度形式化都可以。  
   
@@ -60,14 +44,14 @@ ms.lasthandoff: 02/22/2017
   
  如果您的專案很龐大，而且包含分佈於全球不同地點的小組，就可以使用模型來協助傳達需求和架構，這比使用純文字更有效率。  
   
- 在這兩種情況下，建立模型幾乎總是會大幅減少不一致和語意模糊之處。 不同的專案關係人通常對於該系統運作的企業界具有不同的理解，而不同的開發人員通常對於該系統的運作方式具有不同的理解。 使用模型做為討論的焦點通常會顯示出這些差異。 如需如何使用模型來減少不一致的詳細資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
+ 在這兩種情況下，建立模型幾乎總是會大幅減少不一致和語意模糊之處。 不同的專案關係人通常對於該系統運作的企業界具有不同的理解，而不同的開發人員通常對於該系統的運作方式具有不同的理解。 使用模型做為討論的焦點通常會顯示出這些差異。 如需如何使用模型來減少出現不一致的詳細資訊，請參閱[模型使用者需求](../modeling/model-user-requirements.md)。  
   
 ### <a name="use-models-with-other-artifacts"></a>使用模型搭配其他成品  
  模型本身並非需求規格或架構。 雖然它是用來針對這些事情更清楚地表達某些層面的工具，不過並無法表達軟體設計期間所需的所有概念。 因此，您應該搭配其他通訊方式使用模型，例如 OneNote 頁面或段落、Microsoft Office 文件、[!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作項目或專案會議室牆上的自黏便箋。 除了最後一個項目以外，上述所有物件類型都可以連結至該模型的項目部分。  
   
  通常與模型一起使用的其他規格層面包含下列項目。 根據您的專案規模和樣式，可能會使用其中許多層面，或完全不使用任何層面：  
   
--   使用者劇本。 使用者劇本是系統行為之某個層面的簡短描述 (與使用者和其他專案關係人一起討論)，該層面將在其中一個專案反覆項目中傳遞。 一般使用者劇本的開頭是「客戶將能夠...」。 使用者劇本可能會引入一組使用案例，也可能會定義先前已經開發之使用案例的擴充功能。 定義或擴充使用案例有助於讓使用者劇本更加清楚。  
+-   使用者劇本。 使用者劇本是系統行為之某個層面的簡短描述 (與使用者和其他專案關係人一起討論)，該層面將在其中一個專案反覆項目中傳遞。 一般使用者劇本開始 「 客戶將能夠...」使用者劇本可能會引入一組使用案例，也可能會定義先前已經開發之使用案例的擴充功能。 定義或擴充使用案例有助於讓使用者劇本更加清楚。  
   
 -   變更要求。 較正式專案中的變更要求和敏捷式專案中的使用者劇本相當類似。 敏捷式方法會將所有需求視為已在先前反覆項目中開發的項目。  
   
@@ -108,7 +92,7 @@ ms.lasthandoff: 02/22/2017
 -   非技術性專案關係人通常只要透過您一些指引，就可以順利了解 UML 圖表。  
   
 #### <a name="link-model-to-work-items"></a>將模型連結至工作項目  
- 在需求研討會之後，請詳述該需求模型的詳細資料，並且將此模型連結至開發工作。 您可以將 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作項目連結至該模型中的項目，藉以完成此作業。 若要了解如何執行這項操作，請參閱[連結模型項目和工作項目](../modeling/link-model-elements-and-work-items.md)。  
+ 在需求研討會之後，請詳述該需求模型的詳細資料，並且將此模型連結至開發工作。 您可以將 [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)] 中的工作項目連結至該模型中的項目，藉以完成此作業。
   
  雖然您可以將任何項目連結至工作項目，不過最有用的項目如下所示：  
   
@@ -127,33 +111,32 @@ ms.lasthandoff: 02/22/2017
 ## <a name="levels-of-abstraction"></a>抽象層級  
  模型具有與軟體相關的抽象範圍。 最具體的模型直接代表程式碼，而最抽象的模型則代表不一定會展示於該程式碼中的商務概念。  
   
- 您可以透過許多種類的圖表檢視模型。 模型和圖表的相關資訊，請參閱[建立您的應用程式模型](../modeling/create-models-for-your-app.md)。  
+ 您可以透過許多種類的圖表檢視模型。 模型和圖表的相關資訊，請參閱[建立應用程式模型](../modeling/create-models-for-your-app.md)。  
   
  不同種類的圖表可用於描述不同抽象層級的設計。 許多圖表類型可用於多個層級。 下表顯示每種圖表類型的使用方式。  
   
 |設計層級|圖表類型|  
 |------------------|-------------------|  
-|商務程序<br /><br /> 了解使用系統的內容可協助您了解使用者的需求。|-概念性類別圖描述商務程序中所使用的商務概念。|  
-|使用者需求<br /><br /> 使用者對於系統需求的定義。|個別的文件可以描述商務規則和服務需求品質。|  
-|高階設計<br /><br /> 系統的整體結構：主要元件以及它們如何結合在一起。|相依性圖表說明系統如何結構化為彼此相依的組成部分。 您可以驗證程式碼，針對相依性圖表，以確保符合此架構。|  
-|程式碼分析<br /><br /> 圖表可以產生的程式碼。|相依性圖表顯示類別之間的相依性。 更新的程式碼可以根據相依性圖表進行驗證。<br />類別圖會顯示在程式碼中的類別。|  
+|商務程序<br /><br /> 了解使用系統的內容可協助您了解使用者的需求。|-概念的類別圖表描述商務程序內所使用的商務概念。|  
+|使用者需求<br /><br /> 使用者對於系統需求的定義。|商務規則和服務品質需求可以描述個別文件。|  
+|高階設計<br /><br /> 系統的整體結構：主要元件以及它們如何結合在一起。|相依性圖表描述系統結構到彼此相依的組件的方式。 您可以驗證針對相依性圖表，以確保它能遵守架構的程式碼。|  
+|程式碼分析<br /><br /> 圖表可以從程式碼產生。|相依性圖表會顯示類別之間的相依性。 更新的程式碼可驗證相依性圖表。<br />類別圖表會顯示在程式碼中的類別。|  
   
 ## <a name="external-resources"></a>外部資源  
   
-|**類別目錄**|**連結**|  
+|**分類**|**連結**|  
 |------------------|---------------|  
-|**影片**|![視訊連結](~/data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I 影片︰ 如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![視訊連結](~/data-tools/media/playvideo.gif "PlayVideo") [Channel 9︰ 搭配 Visual Studio 2010 使用 UML](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![視訊連結](~/data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I 系列︰ UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
-|**論壇**|-   [Visual Studio Visualization i 模型工具](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization i Modeling SDK （DSL 工具）](http://go.microsoft.com/fwlink/?LinkId=184721)|  
-|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格](http://go.microsoft.com/fwlink/?LinkID=201340)|  
+|**影片**|![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 影片： 如何建立和使用 UML 模型和圖表 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkId=214460)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML 搭配 Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=201106)<br /><br /> ![影片連結](../data-tools/media/playvideo.gif "PlayVideo") [MSDN 「 如何 」 系列： UML 工具和擴充性 (Visual Studio 2010 Ultimate)](http://go.microsoft.com/fwlink/?LinkID=214467)|  
+|**論壇**|-   [Visual Studio Visualization & Modeling Tools](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visual Studio Visualization & Modeling SDK (DSL 工具)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
+|**部落格**|[Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**技術文件和日誌**|[MSDN 架構中心](http://go.microsoft.com/fwlink/?LinkId=201343)<br /><br /> [Visual Studio 架構工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|  
   
 ## <a name="see-also"></a>另請參閱  
- [在 Agile 開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
- [建立您的應用程式模型](../modeling/create-models-for-your-app.md)   
- [模型的使用者需求](../modeling/model-user-requirements.md)   
- [建立您的應用程式架構的模型](../modeling/model-your-app-s-architecture.md)   
+ [在敏捷式開發中使用模型](http://msdn.microsoft.com/en-us/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [建立模型以供您的應用程式](../modeling/create-models-for-your-app.md)   
+ [模型使用者需求](../modeling/model-user-requirements.md)   
+ [您的應用程式架構模型](../modeling/model-your-app-s-architecture.md)   
  [開發模型中的測試](../modeling/develop-tests-from-a-model.md)   
  [建構模型方案](../modeling/structure-your-modeling-solution.md)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
-

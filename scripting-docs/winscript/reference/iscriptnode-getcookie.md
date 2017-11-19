@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::GetCookie | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IScriptNode::GetCookie |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.GetCookie
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::GetCookie"
+helpviewer_keywords: IScriptNode::GetCookie
 ms.assetid: 007339c6-a73a-4147-b3c0-cc041e467ecd
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: fa68f528aeb405ca150cff717ab5e4bebb82027a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::GetCookie
-傳回用來使 scriptlet 與主應用程式物件的應用程式定義的值。  
+# <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
+傳回應用程式定義的值，用來與主機物件產生關聯的程式碼片段。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetCookie(  
@@ -29,20 +32,20 @@ HRESULT GetCookie(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdwCookie`  
- \[in\] 為 `IScriptEntry` 物件，傳回應用程式定義的 Cookie 值。  
+ [out]如`IScriptEntry`物件，會傳回應用程式定義的 cookie 值。  
   
- 對於表示 Web 網頁 `IScriptNode` 物件，則傳回 0。  
+ 如`IScriptNode`物件，代表網頁，會傳回 0。  
   
-## 傳回值  
- `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)

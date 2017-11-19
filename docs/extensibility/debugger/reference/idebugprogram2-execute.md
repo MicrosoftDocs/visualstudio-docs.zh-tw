@@ -1,53 +1,53 @@
 ---
-title: "IDebugProgram2::Execute | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgram2::Execute"
-helpviewer_keywords: 
-  - "IDebugProgram2::Execute"
+title: "IDebugProgram2::Execute |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgram2::Execute
+helpviewer_keywords: IDebugProgram2::Execute
 ms.assetid: f7205ce8-0ac6-4fcd-b6ec-b720b4fcaccf
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: be6a1f1b2259b573b829490d6015eb1964790679
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgram2::Execute
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-會繼續執行此程式從停止的狀態。  清除任何先前的執行狀態 \(例如，一個步驟中\) 時，程式即開始執行一次。  
+# <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
+會繼續執行此程式從已停止的狀態。 清除任何先前的執行狀態 （例如步驟），並在程式啟動重新執行。  
   
 > [!NOTE]
->  這個方法已被取代。  請改用 [執行](../../../extensibility/debugger/reference/idebugprocess3-execute.md) 方法。  
+>  這個方法已被取代。 使用[Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md)方法改為。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT Execute(  
-   void  
+   void  
 );  
 ```  
   
-```c#  
+```csharp  
 int Execute();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 當使用者開始執行，從停止的狀態，在某些其他程式的執行緒中時，這個程式在呼叫這個方法。  當使用者選取，也會呼叫這個方法**開始** 指令從 **偵錯**在 IDE 中的功能表。  這個方法的實作可能會像電話一樣簡單[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)在程式中目前的執行緒上的方法。  
+## <a name="remarks"></a>備註  
+ 當使用者開始從某些其他程式的執行緒處於停止狀態時執行時，在這個程式會呼叫這個方法。 當使用者選取時，也會呼叫這個方法**啟動**命令**偵錯**在 IDE 中的功能表。 這個方法的實作可能會只要呼叫[繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)程式中目前的執行緒上的方法。  
   
 > [!WARNING]
->  不要傳送停止事件或立即 \(同步\) 事件[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫。 否則偵錯工具可能會停止回應。  
+>  不會停止事件或直接 （同步） 事件，以傳送[事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)時處理這個呼叫，否則偵錯工具可能會停止回應。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
  [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
- [繼續](../../../extensibility/debugger/reference/idebugthread2-resume.md)
+ [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md)

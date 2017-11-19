@@ -1,46 +1,47 @@
 ---
-title: "IDebugPortPicker | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugPortPicker 介面"
+title: "IDebugPortPicker |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugPortPicker interface
 ms.assetid: 8b7f6685-a3c5-4355-b706-c1b574f6ff84
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: ee5b500f0ba42f7aa3b56439d34f88294b3b3717
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugPortPicker
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-代表自訂使用者介面選取 \[連接埠。  
+# <a name="idebugportpicker"></a>IDebugPortPicker
+代表自訂的 UI 中選取連接埠。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IDebugPortPicker : IUnknown  
 ```  
   
-## 實作器注意事項  
- 實作這個介面是由連接埠的供應商。  連接埠提供者定義其連接埠選取器，藉由將它公開為 CLSID，並指向`metricPortPickerCLSID`公制在公開的 CLSID。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 實作這個介面是由連接埠供應商。 連接埠供應商定義公開為 CLSID，並指向其連接埠選取器`metricPortPickerCLSID`度量在公開的 CLSID。  
   
-## 方法  
+## <a name="methods"></a>方法  
  下表顯示的方法`IDebugPortPicker`。  
   
-|方法|描述|  
-|--------|--------|  
-|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|顯示指定的對話方塊，可讓使用者選取一個連接埠。|  
+|方法|說明|  
+|------------|-----------------|  
+|[DisplayPortPicker](../../../extensibility/debugger/reference/idebugportpicker-displayportpicker.md)|顯示指定的對話方塊，可讓使用者選取的連接埠。|  
 |[SetSite](../../../extensibility/debugger/reference/idebugportpicker-setsite.md)|設定服務提供者。|  
   
-## 需求  
- 標頭: Msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll

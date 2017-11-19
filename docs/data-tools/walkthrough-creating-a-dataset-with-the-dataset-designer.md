@@ -1,7 +1,7 @@
 ---
-title: 'Walkthrough: Creating a Dataset with the Dataset Designer | Microsoft Docs'
+title: "逐步解說： 以 Dataset 設計工具建立資料集 |Microsoft 文件"
 ms.custom: 
-ms.date: 11/02/2016
+ms.date: 09/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -13,133 +13,128 @@ helpviewer_keywords:
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
 ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: 19
+caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: 4dca7e32af0f3c24542a7a069ac74f4da7d114b1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>Walkthrough: Creating a Dataset with the Dataset Designer
-In this walkthrough you will create a dataset using the **Dataset Designer**. It will take you through the process of creating a new project and adding a new **DataSet** item to it. You will learn how to create tables based on tables in a database without using a wizard.  
+# <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立資料集
+在此逐步解說中您將建立資料集使用**Dataset 設計工具**。 它將引導您建立新的專案，並加入新的程序**資料集**給它的項目。 您將學習如何建立根據資料庫中的資料表，而不使用精靈的資料表。  
   
- Tasks illustrated in this walkthrough include:  
+ 這個逐步解說中所述的工作包括：  
   
--   Creating a new **Windows Forms Application** project.  
+-   建立新**Windows Forms 應用程式**專案。  
   
--   Adding an empty **DataSet** item to the project.  
+-   加入空**資料集**項目加入專案。  
   
--   Creating and configuring a data source in your application by building a dataset with the **Dataset Designer**.  
+-   建立及設定您的應用程式中的資料來源，建置與資料集**Dataset 設計工具**。  
   
--   Creating a connection to the Northwind database in **Server Explorer**.  
+-   建立 Northwind 資料庫中的連接**伺服器總管**。  
   
--   Creating tables with TableAdapters in the dataset based on tables in the database.  
+-   使用 Tableadapter 建立資料表，在基礎資料庫中資料表的資料集。  
   
- [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
-## <a name="prerequisites"></a>Prerequisites  
-In order to complete this walkthrough, you need:  
+## <a name="prerequisites"></a>必要條件  
+本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
--   Access to the Northwind sample database (SQL Server or Access version). For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
   
-## <a name="creating-a-new-windows-forms-application-project"></a>Creating a New Windows Forms Application Project  
-  
-#### <a name="to-create-a-new-windows-forms-application-project"></a>To create a new Windows Forms Application project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  安裝 Northwind 範例資料庫執行下列步驟：  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中安裝的一部份**資料儲存和處理**在 Visual Studio 安裝程式工作負載。)展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢...**.  
 
-4. Name the project **DatasetDesignerWalkthrough**, and then choose **OK**. 
+       查詢編輯器視窗隨即開啟。  
+
+    2. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。  
+
+    3. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。  
+
+       在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。  
   
-     The **DatasetDesignerWalkthrough** project is created, and added to **Solution Explorer**.  
+## <a name="creating-a-new-windows-forms-application-project"></a>建立新的 Windows Form 應用程式專案  
   
-## <a name="adding-a-new-dataset-to-the-application"></a>Adding a New Dataset to the Application  
+#### <a name="to-create-a-new-windows-forms-application-project"></a>若要建立新的 Windows Forms 應用程式專案  
   
-#### <a name="to-add-a-new-dataset-item-to-the-project"></a>To add a new dataset item to the project  
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
-1.  On the **Project** menu, click **Add New Item**.  
+2. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。  
+
+3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。  
+
+4. 將專案命名**DatasetDesignerWalkthrough**，然後選擇 **確定**。  
   
-     The **Add New Item** dialog box appears.  
+     Visual Studio 將專案加入**方案總管 中**和設計工具中顯示新的表單。  
   
-2.  In the **Templates** box of the **Add New Item** dialog box, click **DataSet**.  
+## <a name="adding-a-new-dataset-to-the-application"></a>將新的資料集加入至應用程式  
   
-3.  Name the Dataset `NorthwindDataset`, and then click **Add**.  
+#### <a name="to-add-a-new-dataset-item-to-the-project"></a>將新的資料集項目加入至專案  
   
-     [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] will add a file called **NorthwindDataset.xsd** to the project and open it in the **Dataset Designer**.  
+1.  在**專案**功能表上，選取**加入新項目...**.  
   
-## <a name="creating-a-data-connection-in-server-explorer"></a>Creating a Data Connection in Server Explorer  
+     [新增項目] 對話方塊隨即出現。  
   
-#### <a name="to-create-a-connection-to-the-northwind-database"></a>To create a connection to the Northwind database  
+2.  在左窗格中，選取**資料**，然後選取**資料集**中間窗格內。  
   
-1.  On the **View** menu, click **Server Explorer**.  
+3.  命名集**NorthwindDataset**，然後選擇 **新增**。  
   
-2.  In **Server Explorer**, click the **Connect to Database** button.  
+     Visual Studio 會加入名為的檔案**NorthwindDataset.xsd**至專案，並在開啟**Dataset 設計工具**。  
   
-3.  Create a connection to the Northwind sample database.  
+## <a name="creating-a-data-connection-in-server-explorer"></a>在伺服器總管 中建立資料連接  
   
-    > [!NOTE]
-    >  You can connect to the SQL Server or Access version of Northwind for this walkthrough.  
+#### <a name="to-create-a-connection-to-the-northwind-database"></a>若要建立 Northwind 資料庫的連接  
   
-## <a name="creating-the-tables-in-the-dataset"></a>Creating the Tables in the Dataset  
-This section explains how to add tables to the dataset.  
+1.  在**檢視**功能表上，按一下 **伺服器總管**。  
   
-#### <a name="to-create-the-customers-table"></a>To create the Customers table  
+2.  在**伺服器總管**，按一下 [**連接至資料庫**] 按鈕。  
   
-1.  Expand the data connection you created in **Server Explorer**, and then expand the **Tables** node.  
+3.  建立 Northwind 範例資料庫的連接。  
   
-2.  Drag the **Customers** table from **Server Explorer** onto the **Dataset Designer**.  
+## <a name="creating-the-tables-in-the-dataset"></a>建立資料集內的資料表  
+本節說明如何將資料表加入至資料集。  
   
-     A **Customers** data table and **CustomersTableAdapter** are added to the dataset.  
+#### <a name="to-create-the-customers-table"></a>若要建立 Customers 資料表  
   
-#### <a name="to-create-the-orders-table"></a>To create the Orders table  
+1.  展開您在中建立的資料連接**伺服器總管**，然後展開**資料表**節點。  
   
--   Drag the **Orders** table from **Server Explorer** onto the **Dataset Designer**.  
+2.  拖曳**客戶**資料表中**伺服器總管**到**Dataset 設計工具**。  
   
-     An **Orders** data table, **OrdersTableAdapter**, and data relation between the **Customers** and **Orders** tables are added to the dataset.  
+     A**客戶**資料表和**CustomersTableAdapter**加入到資料集。  
   
-#### <a name="to-create-the-orderdetails-table"></a>To create the OrderDetails table  
+#### <a name="to-create-the-orders-table"></a>若要建立 Orders 資料表  
   
--   Drag the **Order Details** table from **Server Explorer** onto the **Dataset Designer**.  
+-   拖曳**訂單**資料表中**伺服器總管**到**Dataset 設計工具**。  
   
-     An **Order Details** data table, **OrderDetailsTableAdapter**, and a data relation between the **Orders** and **OrderDetails** tables are added to the dataset.  
+     **訂單**資料表格**OrdersTableAdapter**，和資料之間的關聯性**客戶**和**訂單**資料表會加入至資料集。  
   
-## <a name="next-steps"></a>Next Steps  
+#### <a name="to-create-the-orderdetails-table"></a>若要建立 OrderDetails 資料表  
   
-### <a name="to-add-functionality-to-your-application"></a>To add functionality to your application  
+-   拖曳**Order Details**資料表中**伺服器總管**到**Dataset 設計工具**。  
   
--   Save the dataset.  
+     **Order Details**資料表格**OrderDetailsTableAdapter**，和之間的資料關聯**訂單**和**OrderDetails**資料表會加入至資料集。  
   
--   Select items in the **Data Sources** window and drag them onto a form. For more information, see [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+## <a name="next-steps"></a>後續步驟  
   
--   Add more queries to the TableAdapters. 
+### <a name="to-add-functionality-to-your-application"></a>加入應用程式的功能  
   
--   Add validation logic to the <xref:System.Data.DataTable.ColumnChanging> or <xref:System.Data.DataTable.RowChanging> events of the data tables in the dataset. For more information, see [Validate data in datasets](../data-tools/validate-data-in-datasets.md).  
+-   儲存資料集。  
   
-## <a name="see-also"></a>See Also  
- [Bind Windows Forms controls to data in Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
- [Bind controls to data in Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validating Data](validate-data-in-datasets.md)   
- [Saving Data](../data-tools/saving-data.md)
+-   選取項目中的**資料來源**視窗並將其拖曳到表單上。 如需詳細資訊，請參閱[繫結 Windows Form 控制項加入 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。  
+  
+-   將多個查詢加入至 Tableadapter。 
+  
+-   將驗證邏輯加入<xref:System.Data.DataTable.ColumnChanging>或<xref:System.Data.DataTable.RowChanging>資料中之資料表的資料集的事件。 如需詳細資訊，請參閱[驗證資料在資料集中](../data-tools/validate-data-in-datasets.md)。  
+  
+## <a name="see-also"></a>請參閱
+[在 Visual Studio 中建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
+[將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
+[將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)   
+[驗證資料](../data-tools/validate-data-in-datasets.md)   
+[儲存資料](../data-tools/saving-data.md)

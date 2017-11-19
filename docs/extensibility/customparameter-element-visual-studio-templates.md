@@ -1,58 +1,58 @@
 ---
-title: "CustomParameter 項目 (Visual Studio 範本) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter"
-helpviewer_keywords: 
-  - "CustomParameters 項目 [Visual Studio 專案範本]"
+title: "CustomParameter 項目 （Visual Studio 範本） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: http://schemas.microsoft.com/developer/vstemplate/2005#CustomParameter
+helpviewer_keywords: CustomParameters element [Visual Studio project templates]
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: d52d22e3b4200cee0bd5d3dd3eab3e5356f0dbbd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# CustomParameter 項目 (Visual Studio 範本)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-包含當您從範本建立專案或項目時，所要使用的自訂參數名稱和值。  
+# <a name="customparameter-element-visual-studio-templates"></a>CustomParameter 項目 (Visual Studio 範本)
+包含自訂的參數名稱和值，以從範本建立專案或項目時使用。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <CustomParameter Name="name" Value="value">  
 ```  
   
-## 屬性和項目  
- 下列章節會說明屬性、子項目和父項目。  
+## <a name="attributes-and-elements"></a>屬性和項目  
+ 下列章節說明屬性、子項目和父項目。  
   
-### 屬性  
+### <a name="attributes"></a>屬性  
   
 |屬性|描述|  
-|--------|--------|  
-|`Name`|必要項。  參數的名稱。  參數的格式為 $*name*$。|  
-|`Value`|必要項。  參數的取代值。|  
+|---------------|-----------------|  
+|`Name`|必要項。 參數名稱。 參數的格式為 $*名稱*$。|  
+|`Value`|必要項。 替代參數值。|  
   
-### 子項目  
+### <a name="child-elements"></a>子元素  
  無。  
   
-### 父項目  
+### <a name="parent-elements"></a>父項目  
   
-|項目|描述|  
-|--------|--------|  
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|群組自訂參數，這些參數將在精靈進行參數取代時傳遞至範本精靈。|  
+|項目|說明|  
+|-------------|-----------------|  
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|群組精靈進行參數取代時，應該傳遞至範本精靈的自訂參數。|  
   
-## 備註  
- 當範本中包含 `CustomParameter` 項目時，所建立之專案檔或項目檔中的每個執行個體都會以 `Value` 屬性 \(Attribute\) 取代 `Name` 屬性 \(Attribute\)。  
+## <a name="remarks"></a>備註  
+ 當範本包含`CustomParameter`項目，每個執行個體`Name`屬性取代`Value`中建立的專案或項目檔案的屬性。  
   
-## 範例  
- 下列範例示範如何使用範本中的數個自訂參數。  當您使用下列自訂參數從範本建立專案或項目時，範本檔中的 `$color1$` 和 `$color2$` 之所有執行個體，將分別為 `Red` 和 `Blue` 所取代。  
+## <a name="example"></a>範例  
+ 下列範例會示範如何在範本中使用數個自訂參數。 當從使用下列自訂參數的所有執行個體範本建立專案或項目`$color1$`和`$color2$`範本中的檔案將會取代`Red`和`Blue`分別。  
   
 ```  
 <CustomParameters>  
@@ -61,7 +61,7 @@ caps.handback.revision: 6
 </CustomParameters>  
 ```  
   
-## 請參閱  
- [CustomParameters 項目 \(Visual Studio 範本\)](../extensibility/customparameters-element-visual-studio-templates.md)   
- [樣板參數](../ide/template-parameters.md)   
+## <a name="see-also"></a>另請參閱  
+ [CustomParameters 項目 （Visual Studio 範本）](../extensibility/customparameters-element-visual-studio-templates.md)   
+ [範本參數](../ide/template-parameters.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

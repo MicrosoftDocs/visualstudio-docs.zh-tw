@@ -1,41 +1,42 @@
 ---
-title: "決定是否要實作的原始檔控制 VSPackage | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "關於原始檔控制套件的原始檔控制套件"
+title: "決定是否要實作原始檔控制 VSPackage |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-caps.latest.revision: 24
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 808f2fda26046962eada377f8a204351adef19bf
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 決定是否要實作的原始檔控制 VSPackage
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-這一節 elaborates 來擴充解決方案，並提供廣泛的方針，選擇適合的整合路徑相關的原始檔控制的原始檔控制外掛程式和 VSPackages 的原始檔控制的選項。  
+# <a name="determining-whether-to-implement-a-source-control-vspackage"></a>決定是否要實作原始檔控制 VSPackage
+本節的擴充原始檔控制方案並提供廣泛的指導方針選擇適合整合路徑的相關 elaborates 的原始檔控制外掛程式和原始檔控制 Vspackage 的選擇。  
   
-## 小型原始檔控制方案，並以有限的資源  
- 如果資源有限，而且無法負擔寫入原始檔控制套件的額外負荷，您可以建立原始檔控制外掛程式 API 為基礎外掛? 式。  這可讓您能夠與原始檔控制套件，並排，您可以切換原始檔控制外掛程式，並隨選的封裝。  如需詳細資訊，請參閱 [註冊和選取範圍](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。  
+## <a name="small-source-control-solution-with-limited-resources"></a>有限資源小型的原始檔控制方案  
+ 如果您具有有限的資源，並無法寫入原始檔控制封裝的額外負荷負擔，您可以建立原始檔控制外掛程式 API 為基礎的外掛程式。這可讓您能夠與原始檔控制套件，並切換原始檔控制外掛程式和隨選的封裝。 如需詳細資訊，請參閱[註冊和選取範圍](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)。  
   
-## 大型原始檔控制方案，並以豐富的功能設定  
- 如果您想要實作提供豐富的原始檔控制模型不會適當地擷取使用原始檔控制外掛程式 API 的原始檔控制方案，您可以考慮為整合路徑的原始檔控制套件。  此動作會套用特別是如果您不會取代原始檔控制配接器套件 \(這樣會與原始檔控制外掛程式進行通訊，並提供基本的原始檔控制 UI\) 時，才使用您自己，讓您可以自訂的方式來處理來源的控制項事件。  如果您已經有令人滿意的原始檔控制 UI，並想要保留這樣的經驗，在[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，\[原始檔控制套件\] 選項可讓您執行上述工作。  原始檔控制套件不是泛型，且只為了與使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE。  
+## <a name="large-source-control-solution-with-a-rich-feature-set"></a>大型的原始檔控制方案豐富功能集  
+ 如果您想要實作提供豐富的原始檔控制模型未充分利用原始檔控制外掛程式 API 擷取原始檔控制方案，您可以考慮原始檔控制封裝做為整合路徑。 這適用於尤其而是會取代原始檔控制配接器套件 （其與原始檔控制外掛程式通訊，提供基本的原始檔控制 UI） 以您自己，好讓您可以自訂方式來處理來源控制項事件。 如果您已經有令人滿意的原始檔控制 UI，並想要保留在該經驗[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，原始檔控制封裝選項可讓您執行上述工作。 原始檔控制封裝不是泛型，且只適用於與[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE。  
   
- 如果您想要實作提供彈性和更多控制的原始檔控制的邏輯和 UI 的原始檔控制方案，您可能偏好的原始檔控制套件整合路由。  您可以：  
+ 如果您想要實作提供彈性和更豐富的控制力的原始檔控制邏輯和 UI 原始檔控制方案，您可能會偏好的原始檔控制封裝整合路由。 您可以：  
   
-1.  註冊您自己的原始檔控制 VSPackage \(請參閱[註冊和選取範圍](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)\)。  
+1.  註冊您自己的原始檔控制 VSPackage (請參閱[註冊和選取範圍](../../extensibility/internals/registration-and-selection-source-control-vspackage.md))。  
   
-2.  使用自訂的使用者介面來取代預設的原始檔控制 UI \(請參閱[自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)\)。  
+2.  自訂 UI 以取代預設原始檔控制 UI (請參閱[自訂使用者介面](../../extensibility/internals/custom-user-interface-source-control-vspackage.md))。  
   
-3.  指定用來處理方案總管\] 中的圖像 \(glyph\) 事件的圖像 \(glyph\) \(請參閱[圖像控制項](../../extensibility/internals/glyph-control-source-control-vspackage.md)\)。  
+3.  指定使用和處理方案總管 中字符事件圖像 (請參閱[圖像控制項](../../extensibility/internals/glyph-control-source-control-vspackage.md))。  
   
-4.  處理查詢編輯和查詢儲存的事件 \(請參閱[儲存查詢編輯查詢](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)\)。  
+4.  處理查詢編輯和儲存查詢的事件 (請參閱[查詢編輯查詢儲存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md))。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立原始檔控制外掛程式](../../extensibility/internals/creating-a-source-control-plug-in.md)

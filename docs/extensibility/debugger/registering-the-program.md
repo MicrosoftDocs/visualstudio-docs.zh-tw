@@ -1,110 +1,112 @@
 ---
-title: "註冊程式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "註冊的程式"
-  - "偵錯 [偵錯 SDK]，程式註冊"
+title: "註冊程式 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- programs, registration
+- debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e0b0c883293cd01e21facfcc2e4483d2c5bbf164
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 註冊程式
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-偵錯引擎取得連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，啟用偵錯程式，下一步是用連接埠來登錄它。  一旦登錄，就有一個程式適用於偵錯的下列方法之一：  
+# <a name="registering-the-program"></a>註冊程式
+偵錯引擎取得連接埠之後，由[IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)介面，啟用偵錯程式下一步是註冊該連接埠。 註冊之後，程式會用於偵錯由下列方式的其中一個：  
   
--   程序附加，它可讓偵錯工具執行的應用程式完全偵錯的控制。  
+-   程序附加，可取得完整的偵錯控制權的執行中應用程式偵錯工具。  
   
--   只要精準 \(JIT\) 偵錯時，它可讓之後事實偵錯的獨立於偵錯工具執行的程式。  當執行階段架構會攔截錯誤時，偵錯工具會被通知之前的作業系統，或執行階段環境釋放的記憶體和資源之錯誤的程式。  
+-   在 just-in-time (JIT) 偵錯，以便允許獨立偵錯工具執行的程式進行偵錯之後事實。 當執行階段架構會攔截錯誤時，偵錯工具會通知之前的作業系統，或執行階段環境釋放的記憶體和資源的失敗的程式。  
   
-## 註冊程序  
+## <a name="registering-procedure"></a>註冊程序  
   
-#### 若要註冊您的程式  
+#### <a name="to-register-your-program"></a>若要註冊您的程式  
   
 1.  呼叫[AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)連接埠所實作的方法。  
   
-     `IDebugPortNotify2::AddProgramNode`需要有指向指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
+     `IDebugPortNotify2::AddProgramNode`需要指標[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  
   
-     一般而言，當作業系統或執行階段環境載入程式時，它就會建立 \[程式\] 節點。  如果偵錯引擎 \(DE\) 會詢問您是否可以載入程式 DE 就會建立檔案，並登錄程式\] 節點中。  
+     一般而言，當作業系統或執行階段環境載入程式，它會建立程式節點。 如果偵錯引擎 (DE) 會要求載入程式 DE 建立並註冊程式節點。  
   
-     下列範例會示範偵錯引擎啟動的程式，以及註冊與連接埠。  
+     下列範例會顯示啟動程式和註冊的通訊埠的偵錯引擎。  
   
     > [!NOTE]
-    >  這不是唯一的方式來啟動，並繼續處理程序。 這是主要的範例登錄程式與連接埠。  
+    >  這不是唯一的方式來啟動並繼續處理程序;這是主要程式登錄連接埠的範例。  
   
-    ```cpp#  
+    ```cpp  
     // This is an IDebugEngineLaunch2 method.  
     HRESULT CDebugEngine::LaunchSuspended(/* omitted parameters */,  
-                                          IDebugPort2 *pPort,  
-                                          /* omitted parameters */,  
-                                          IDebugProcess2**ppDebugProcess)  
+                                          IDebugPort2 *pPort,  
+                                          /* omitted parameters */,  
+                                          IDebugProcess2**ppDebugProcess)  
     {  
-        // do stuff here to set up for a launch (such as handling the other parameters)  
-        ...  
+        // do stuff here to set up for a launch (such as handling the other parameters)  
+        ...  
   
-        // Now get the IPortNotify2 interface so we can register a program node  
-        // in CDebugEngine::ResumeProcess.  
-        CComPtr<IDebugDefaultPort2> spDefaultPort;  
-        HRESULT hr = pPort->QueryInterface(&spDefaultPort);  
-        if (SUCCEEDED(hr))  
-        {  
-            CComPtr<IDebugPortNotify2> spPortNotify;  
-            hr = spDefaultPort->GetPortNotify(&spPortNotify);  
-            if (SUCCEEDED(hr))  
-            {  
-                // Remember the port notify so we can use it in ResumeProcess.  
-                m_spPortNotify = spPortNotify;  
+        // Now get the IPortNotify2 interface so we can register a program node  
+        // in CDebugEngine::ResumeProcess.  
+        CComPtr<IDebugDefaultPort2> spDefaultPort;  
+        HRESULT hr = pPort->QueryInterface(&spDefaultPort);  
+        if (SUCCEEDED(hr))  
+        {  
+            CComPtr<IDebugPortNotify2> spPortNotify;  
+            hr = spDefaultPort->GetPortNotify(&spPortNotify);  
+            if (SUCCEEDED(hr))  
+            {  
+                // Remember the port notify so we can use it in ResumeProcess.  
+                m_spPortNotify = spPortNotify;  
   
-                // Now launch the process in a suspended state and return the  
-                // IDebugProcess2 interface  
-                CComPtr<IDebugPortEx2> spPortEx;  
-                hr = pPort->QueryInterface(&spPortEx);  
-                if (SUCCEEDED(hr))  
-                {  
-                    // pass on the parameters we were given (omitted here)  
-                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
-                }  
-            }  
-        }  
-        return(hr);  
+                // Now launch the process in a suspended state and return the  
+                // IDebugProcess2 interface  
+                CComPtr<IDebugPortEx2> spPortEx;  
+                hr = pPort->QueryInterface(&spPortEx);  
+                if (SUCCEEDED(hr))  
+                {  
+                    // pass on the parameters we were given (omitted here)  
+                    hr = spPortEx->LaunchSuspended(/* omitted paramters */,ppDebugProcess)  
+                }  
+            }  
+        }  
+        return(hr);  
     }  
   
     HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)  
     {  
-        // Make a program node for this process  
-        HRESULT hr;  
-        CComPtr<IDebugProgramNode2> spProgramNode;  
-        hr = this->GetProgramNodeForProcess(pProcess, &spProgramNode);  
-        if (SUCCEEDED(hr))  
-        {  
-            hr = m_spPortNotify->AddProgramNode(spProgramNode);  
-            if (SUCCEEDED(hr))  
-            {  
-                // resume execution of the process using the port given to us earlier.  
-               // (Querying for the IDebugPortEx2 interface is valid here since  
-               // that's how we got the IDebugPortNotify2 interface in the first place.)  
-                CComPtr<IDebugPortEx2> spPortEx;  
-                hr = m_spPortNotify->QueryInterface(&spPortEx);  
-                if (SUCCEEDED(hr))  
-                {  
-                    hr  = spPortEx->ResumeProcess(pDebugProcess);  
-                }  
-            }  
-        }  
-        return(hr);  
+        // Make a program node for this process  
+        HRESULT hr;  
+        CComPtr<IDebugProgramNode2> spProgramNode;  
+        hr = this->GetProgramNodeForProcess(pProcess, &spProgramNode);  
+        if (SUCCEEDED(hr))  
+        {  
+            hr = m_spPortNotify->AddProgramNode(spProgramNode);  
+            if (SUCCEEDED(hr))  
+            {  
+                // resume execution of the process using the port given to us earlier.  
+               // (Querying for the IDebugPortEx2 interface is valid here since  
+               // that's how we got the IDebugPortNotify2 interface in the first place.)  
+                CComPtr<IDebugPortEx2> spPortEx;  
+                hr = m_spPortNotify->QueryInterface(&spPortEx);  
+                if (SUCCEEDED(hr))  
+                {  
+                    hr  = spPortEx->ResumeProcess(pDebugProcess);  
+                }  
+            }  
+        }  
+        return(hr);  
     }  
   
     ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [取得連接埠](../../extensibility/debugger/getting-a-port.md)   
- [啟用偵錯程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
+ [啟用要偵錯的程式](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

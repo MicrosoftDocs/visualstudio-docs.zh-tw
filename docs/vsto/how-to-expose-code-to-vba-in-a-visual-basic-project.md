@@ -1,11 +1,10 @@
 ---
-title: 'How to: Expose Code to VBA in a Visual Basic Project | Microsoft Docs'
+title: "如何： 公開程式碼給 Visual Basic 專案中的 VBA |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -18,91 +17,90 @@ helpviewer_keywords:
 - exposing code to VBA
 - host items [Office development in Visual Studio], exposing code to VBA
 ms.assetid: dc74f3ea-3f78-47f8-8a82-a67896144dd9
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: ff8ecec19f8cab04ac2190f9a4a995766f1750bf
-ms.openlocfilehash: 5d9af234eca3067687809f70d99466eafefe8f28
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/24/2017
-
+ms.openlocfilehash: 782b42c83f9557b6567849e4d03c7ad9e221da49
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>How to: Expose Code to VBA in a Visual Basic Project
-  You can expose code in a [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] project to Visual Basic for Applications (VBA) code if you want the two types of code to interact with each other.  
+  您的程式碼中的公開[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果您想要與彼此互動的程式碼的兩個類型，專案加入 Visual Basic for Applications (VBA) 程式碼。  
   
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]  
   
- The Visual Basic process is different from the Visual C# process. For more information, see [How to: Expose Code to VBA in a Visual C&#35; Project](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md).  
+ Visual Basic 處理序會與 Visual C# 處理序不同。 如需詳細資訊，請參閱[如何： 公開程式碼給 Visual C# 35; 中的 VBA專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)。  
   
- The process is different for code in a host item class than it is for code in other classes:  
+ 比其他類別中的程式碼用於不同的主項目類別中的程式碼為處理程序：  
   
--   [Exposing code in a host item class](#HostItemCode)  
+-   [公開主項目類別中的程式碼](#HostItemCode)  
   
--   [Exposing code that is not in a host item class](#NonHostItem)  
+-   [公開不是主項目類別中的程式碼](#NonHostItem)  
   
- ![link to video](../vsto/media/playvideo.gif "link to video") For a related video demonstration, see [How Do I: Call VSTO Code from VBA?](http://go.microsoft.com/fwlink/?LinkId=136757).  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 呼叫 VSTO 程式碼從 VBA？](http://go.microsoft.com/fwlink/?LinkId=136757)。  
   
-##  <a name="HostItemCode"></a> Exposing Code in a Host Item Class  
- To enable VBA code to call Visual Basic code in a host item class, set the **EnableVbaCallers** property of the host item to **True**.  
+##  <a name="HostItemCode"></a>公開主項目類別中的程式碼  
+ 若要啟用 Visual Basic 程式碼呼叫的主項目類別中的 VBA 程式碼，將**EnableVbaCallers**屬性主項目的**True**。  
   
- For a walkthrough that demonstrates how to expose a method of a host item class and then call it from VBA, see [Walkthrough: Calling Code from VBA in a Visual Basic Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md). For more information about host items, see [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md).  
+ 如需示範如何公開主項目類別的方法，然後將它從 VBA 呼叫的逐步解說，請參閱[逐步解說： 從 VBA 在 Visual Basic 專案中呼叫的程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。 如需主項目的詳細資訊，請參閱 [Host Items and Host Controls Overview](../vsto/host-items-and-host-controls-overview.md)。  
   
-#### <a name="to-expose-code-in-a-host-item-to-vba"></a>To expose code in a host item to VBA  
+#### <a name="to-expose-code-in-a-host-item-to-vba"></a>若要公開給 VBA 之主項目的程式碼  
   
-1.  Open or create a document-level [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] project that is based on a Word document, Excel workbook, or Excel template that supports macros, and that already contains VBA code.  
+1.  開啟或建立文件層級[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]Word 文件、 Excel 活頁簿或 Excel 範本支援的巨集，並已包含 VBA 程式碼為基礎的專案。  
   
-     For more information about the document file formats that support macros, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
-  
-    > [!NOTE]  
-    >  This feature cannot be used in Word template projects.  
-  
-2.  Ensure that VBA code in the document is allowed to run without prompting the user to enable macros. You can trust VBA code to run by adding the location of the Office project to the list of trusted locations in the Trust Center settings for Word or Excel.  
-  
-3.  Add the property, method, or event that you want to expose to VBA to one of the host item classes in your project, and declare the new member as **Public**. The name of the class depends on the application:  
-  
-    -   In a Word project, the host item class is named `ThisDocument` by default.  
-  
-    -   In an Excel project, the host item classes are named `ThisWorkbook`, `Sheet1`, `Sheet2`, and `Sheet3` by default.  
-  
-4.  Set the **EnableVbaCallers** property for the host item to **True**. This property is available in the **Properties** window when the host item is open in the designer.  
-  
-     After you set this property, Visual Studio automatically sets the **ReferenceAssemblyFromVbaProject** property to **True**.  
+     如需支援的巨集的文件的檔案格式的詳細資訊，請參閱[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
   
     > [!NOTE]  
-    >  If the workbook or document does not already contain VBA code, or if VBA code in the document is not trusted to run, you will receive an error message when you set the **EnableVbaCallers** property to **True**. This is because Visual Studio cannot modify the VBA project in the document in this situation.  
+    >  這項功能無法用於 Word 範本專案。  
   
-5.  Click **OK** in the message that is displayed. This message reminds you that if you add VBA code to the workbook or document while you are running the project from [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], the VBA code will be lost the next time you build the project. This is because the document in the build output folder is overwritten every time you build the project.  
+2.  確定允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。  
   
-     At this point, Visual Studio configures the project so that the VBA project can call into the assembly. Visual Studio also adds a property named `CallVSTOAssembly` to the `ThisDocument`, `ThisWorkbook`, `Sheet1`, `Sheet2`, or `Sheet3` module in the VBA project. You can use this property to access public members of the class that you exposed to VBA.  
+3.  加入屬性、 方法或您想要公開給 VBA，在專案中，主項目類別的其中一個事件，並做為新的成員宣告**公用**。 類別的名稱取決於應用程式：  
   
-6.  Build the project.  
+    -   在 Word 專案，主項目類別名稱為`ThisDocument`預設。  
   
-##  <a name="NonHostItem"></a> Exposing Code That Is Not in a Host Item Class  
- To enable VBA code to call Visual Basic code that is not in a host item class, modify the code so it is visible to VBA.  
+    -   在 Excel 專案中，主項目類別名為`ThisWorkbook`， `Sheet1`， `Sheet2`，和`Sheet3`預設。  
   
-#### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>To expose code that is not in a host item class to VBA  
+4.  設定**EnableVbaCallers**屬性主項目的**True**。 這個屬性是用於**屬性**主項目的設計工具中開啟時，視窗。  
   
-1.  Open or create a document-level [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] project that is based on a Word document, Excel workbook, or Excel template that supports macros, and that already contains VBA code.  
-  
-     For more information about the document file formats that support macros, see [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md).  
+     將此屬性設定之後，Visual Studio 會自動設定**ReferenceAssemblyFromVbaProject**屬性**True**。  
   
     > [!NOTE]  
-    >  This feature cannot be used in Word template projects.  
+    >  如果活頁簿或文件尚未包含 VBA 程式碼，或如果文件中的 VBA 程式碼不受信任而得以執行，您會收到錯誤訊息，當您設定**EnableVbaCallers**屬性**True**。 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。  
   
-2.  Ensure that VBA code in the document is allowed to run without prompting the user to enable macros. You can trust VBA code to run by adding the location of the Office project to the list of trusted locations in the Trust Center settings for Word or Excel.  
+5.  按一下訊息中顯示的 [確定]  。 此訊息會提醒您，如果您將 VBA 程式碼加入至活頁簿或文件，而您正在從專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，VBA 程式碼將會遺失您下次建置專案。 這是因為每次建置專案，就會覆寫將組建輸出資料夾中的文件。  
   
-3.  Add the member that you want to expose to VBA to a public class in your project, and declare the new member as **public**.  
+     此時，Visual Studio 將專案設定可讓組件呼叫 VBA 專案。 Visual Studio 也會加入名為的屬性`CallVSTOAssembly`至`ThisDocument`， `ThisWorkbook`， `Sheet1`， `Sheet2`，或`Sheet3`模組中的 VBA 專案。 您可以使用這個屬性來存取您公開給 VBA 之類別的公用成員。  
   
-4.  Apply the following <xref:System.Runtime.InteropServices.ComVisibleAttribute> and <xref:Microsoft.VisualBasic.ComClassAttribute> attributes to the class that you are exposing to VBA. These attributes make the class visible to VBA.  
+6.  建置專案。  
+  
+##  <a name="NonHostItem"></a>公開不是主項目類別中的程式碼  
+ 若要啟用 VBA 程式碼呼叫不是主項目類別中的 Visual Basic 程式碼，請修改程式碼，因此它會顯示給 VBA。  
+  
+#### <a name="to-expose-code-that-is-not-in-a-host-item-class-to-vba"></a>若要公開給 VBA 之主項目類別不是程式碼  
+  
+1.  開啟或建立文件層級[!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]Word 文件、 Excel 活頁簿或 Excel 範本支援的巨集，並已包含 VBA 程式碼為基礎的專案。  
+  
+     如需支援的巨集的文件的檔案格式的詳細資訊，請參閱[合併 VBA 和文件層級自訂](../vsto/combining-vba-and-document-level-customizations.md)。  
+  
+    > [!NOTE]  
+    >  這項功能無法用於 Word 範本專案。  
+  
+2.  確定允許文件中的 VBA 程式碼執行，而不提示使用者啟用巨集。 您可以將 Office 專案的位置加入 Word 或 Excel 信任中心設定的信任位置清單，以信任 VBA 程式碼執行。  
+  
+3.  新增您想要公開給 VBA，若要在專案中，在公用類別成員，並宣告做為新的成員**公用**。  
+  
+4.  套用下列<xref:System.Runtime.InteropServices.ComVisibleAttribute>和<xref:Microsoft.VisualBasic.ComClassAttribute>屬性加入您要公開給 VBA 的類別。 這些屬性可以讓顯示給 VBA 之類別。  
   
     ```vb  
     <Microsoft.VisualBasic.ComClass()> _  
     <System.Runtime.InteropServices.ComVisibleAttribute(True)> _  
     ```  
   
-5.  Override the **GetAutomationObject** method of a host item class in your project to return an instance of the class that you are exposing to VBA. The following code example assumes that you are exposing a class named `DocumentUtilities` to VBA.  
+5.  覆寫專案中之主項目類別的 **GetAutomationObject** 方法，傳回您正在公開給 VBA 之類別的執行個體。 下列程式碼範例假設您正在公開類別，名為`DocumentUtilities`給 VBA。  
   
     ```vb  
     Protected Overrides Function GetAutomationObject() As Object  
@@ -110,24 +108,24 @@ ms.lasthandoff: 08/24/2017
     End Function  
     ```  
   
-6.  Open the document (for Word) or worksheet (for Excel) designer in [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].  
+6.  （適用於 Word) 的文件或 （針對 Excel) 的工作表設計工具中開啟[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。  
   
-7.  In the **Properties** window, select the **ReferenceAssemblyFromVbaProject** property, and change the value to **True**.  
+7.  在 [屬性]  視窗中，選取 **ReferenceAssemblyFromVbaProject** 屬性，然後將值變更為 [True] 。  
   
     > [!NOTE]  
-    >  If the workbook or document does not already contain VBA code, or if VBA code in the document is not trusted to run, you will receive an error message when you set the **ReferenceAssemblyFromVbaProject** property to **True**. This is because Visual Studio cannot modify the VBA project in the document in this situation.  
+    >  如果活頁簿或文件尚未包含 VBA 程式碼，或如果文件中的 VBA 程式碼不受信任而得以執行，您會收到錯誤訊息，當您設定**ReferenceAssemblyFromVbaProject**屬性**，則為 True**. 這是因為在這種情況中，Visual Studio 無法修改文件中的 VBA 專案。  
   
-8.  Click **OK** in the message that is displayed. This message reminds you that if you add VBA code to the workbook or document while you are running the project from [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], the VBA code will be lost the next time you build the project. This is because the document in the build output folder is overwritten every time you build the project.  
+8.  按一下訊息中顯示的 [確定]  。 此訊息會提醒您，如果您將 VBA 程式碼加入至活頁簿或文件，而您正在從專案[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]，VBA 程式碼將會遺失您下次建置專案。 這是因為每次建置專案，就會覆寫將組建輸出資料夾中的文件。  
   
-     At this point, Visual Studio configures the project so that the VBA project can call into the assembly. Visual Studio also adds a method named `GetManagedClass` to the VBA project. You can call this method from anywhere in the VBA project to access the class that you exposed to VBA.  
+     此時，Visual Studio 將專案設定可讓組件呼叫 VBA 專案。 Visual Studio 也會加入名為的方法`GetManagedClass`的 VBA 專案。 您可以呼叫這個方法，從任何地方存取您公開給 VBA 之類別的 VBA 專案中。  
   
-9. Build the project.  
+9. 建置專案。  
   
-## <a name="see-also"></a>See Also  
- [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)   
- [Designing and Creating Office Solutions](../vsto/designing-and-creating-office-solutions.md)   
+## <a name="see-also"></a>另請參閱  
+ [如何： 在 Visual Studio 中建立 Office 專案](../vsto/how-to-create-office-projects-in-visual-studio.md)   
+ [設計和建立 Office 方案](../vsto/designing-and-creating-office-solutions.md)   
  [Combining VBA and Document-Level Customizations](../vsto/combining-vba-and-document-level-customizations.md)   
- [Walkthrough: Calling Code from VBA in a Visual Basic Project](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
- [How to: Expose Code to VBA in a Visual C&#35; Project](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
+ [逐步解說： 從 Visual Basic 專案中的 VBA 呼叫程式碼](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)   
+ [如何： 公開程式碼給 Visual C# 35; 中的 VBA專案](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)  
   
   

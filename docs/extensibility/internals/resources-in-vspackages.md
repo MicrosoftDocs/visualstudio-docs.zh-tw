@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,29 +12,15 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-caps.latest.revision: 23
+caps.latest.revision: "23"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: e4f74912dc5233cd62a4d35465d34c70e376c1df
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 8a49aa40daaa1bd0fc0543d2f6198212185c8490
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="resources-in-vspackages"></a>在 Vspackage 中的資源
 您可以在 managed VSPackage 本身或原生附屬 UI Dll，受管理的附屬 Dll 中內嵌的當地語系化的資源。  
@@ -60,7 +45,8 @@ ms.lasthandoff: 09/06/2017
   
  您可以使用<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>屬性來指出要[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]受管理的資源可供使用。  
   
- [!code-csharp[VSSDKResources #1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs) ] [!code-vb [VSSDKResources #1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
+ [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
+ [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]  
   
  設定<xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>以這種方式表示[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]搜尋的資源，例如，使用時，應該忽略 unmanaged 的附屬 Dll <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A>。 如果[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]遇到兩個或多個資源具有相同的資源識別碼，它會使用找到的第一個資源。  
   
@@ -105,4 +91,3 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 ## <a name="see-also"></a>另請參閱  
  [管理 Vspackage](../../extensibility/managing-vspackages.md)   
  [MFC 應用程式中的當地語系化資源：附屬 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)   
-

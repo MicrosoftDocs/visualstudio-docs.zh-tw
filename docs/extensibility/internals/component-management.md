@@ -1,53 +1,55 @@
 ---
-title: "管理元件 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "安裝 [Visual Studio SDK] 元件"
-  - "安裝 [Visual Studio SDK]，檔案管理"
+title: "元件管理 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- installation [Visual Studio SDK], components
+- installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-caps.latest.revision: 13
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 73a3100252dd5ddfcebd791588a4041c8d588e8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 管理元件
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在 Windows 「 安裝程式中的工作單位稱為 \(有時稱為 WICs 或只是元件\) 的 Windows 安裝程式元件。  GUID 會識別每個 WIC，也就是 「 基本單位安裝與參考計數若是使用 Windows 安裝程式的設定。  
+# <a name="component-management"></a>管理元件
+Windows 安裝程式中的工作單位被指 Windows 安裝程式元件 （有時稱為 WICs 或只是元件）。 GUID 識別每個 WIC，也就是安裝和參考計數，若是使用 Windows Installer 的設定的基本單位。  
   
- 雖然您可以使用數個產品建立您的 VSPackage 安裝程式時，以下的討論假設使用的 Windows 安裝程式 \(.msi\) 檔案。  在建立您的安裝程式時，您必須正確地管理檔案部署，以便正確的參考計數會發生在任何時間。  因此，不同版本的產品將不會干擾或破壞彼此中安裝多種和解除安裝案例。  
+ 雖然您可以使用數個產品建立 VSPackage installer，此討論假設您使用的 Windows Installer (.msi) 檔案。 在建立您的安裝程式時，您必須正確地管理檔案部署，這樣可以隨時都能正確的參考計數執行。 因此，您產品的不同版本將不會干擾或中斷彼此中混合的安裝和解除安裝案例。  
   
- 在 \[Windows 安裝程式，參考計數發生於元件層級。  您必須小心地整理您的資源 ； 檔案、 登錄項目等等 — 成元件。  有其他層級的組織 — 例如模組、 功能和產品，可協助在不同狀況下。  如需詳細資訊，請參閱 [Windows 安裝程式的基本概念](../../extensibility/internals/windows-installer-basics.md)。  
+ 在 Windows 安裝程式中，參考計數，就會發生在元件層級。 您必須仔細組織資源 — 檔案、 登錄項目，以及其他 — 元件。 有其他層級的組織 — 例如模組、 功能和產品，可協助在不同情況下。 如需詳細資訊，請參閱[Windows 安裝程式的基本概念](../../extensibility/internals/windows-installer-basics.md)。  
   
-## 撰寫並排顯示安裝的安裝程式的指導方針  
+## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>撰寫-並存安裝的安裝程式的指導方針  
   
--   作者的檔案和登錄機碼成他們自己的元件版本之間共用的。  
+-   作者的檔案和登錄機碼他們自己的元件版本之間共用。  
   
-     這可讓您輕鬆地使用它們在下一個版本。  比方說，全域註冊的型別程式庫檔案的副檔名，註冊 HKEY\_CLASSES\_ROOT，而其他項目。  
+     這可讓您輕鬆使用它們在下一版。 例如，全域註冊類型程式庫檔案延伸模組，登錄 HKEY_CLASSES_ROOT，等其他項目。  
   
--   群組到上一單獨合併模組的共用的元件。  
+-   共用的元件群組到個別的合併模組。  
   
-     這可協助作者正確設定並存向前移動。  
+     這可協助您撰寫正確的並存向前移動。  
   
--   使用相同的 Windows 安裝程式元件版本之間，即可安裝共用的檔案及登錄機碼。  
+-   跨版本使用相同的 Windows Installer 元件安裝共用的檔案和登錄機碼。  
   
-     如果您使用不同的元件時，檔案和登錄項目都解除安裝時解除安裝某個版本的 VSPackage，但仍安裝其他的 VSPackage。  
+     如果您使用不同的元件時，檔案和登錄項目會解除安裝時解除安裝一個已建立版本的 VSPackage，但仍安裝另一個 VSPackage。  
   
--   不要混合建立版本編號以及共用相同的元件中的項目。  
+-   請勿混合版本設定和共用同一個元件中的項目。  
   
-     如此一來，因此無法安裝共用的項目通用的位置，並已建立版本的項目到隔離的位置。  
+     如此一來，因此無法安裝共用的項目至全域位置和版本設定隔離的位置的項目。  
   
--   沒有建立版本的檔案的共用的登錄機碼。  
+-   沒有指向已建立版本的檔案共用的登錄機碼。  
   
-     如果您這麼做，另一個版本的 VSPackage 安裝時將會覆寫共用的金鑰。  移除第二個版本之後，檔案的索引鍵會指出指標是看不見了。  
+     如果您這樣做，共用的金鑰會覆寫已安裝另一個版本的 VSPackage。 第二個版本中移除之後，索引鍵指向的檔案會消失。  
   
-## 請參閱  
- [選擇 \[共用和版本建立 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
+## <a name="see-also"></a>另請參閱  
+ [選擇 共用和版本建立 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [VSPackage 安裝案例](../../extensibility/internals/vspackage-setup-scenarios.md)

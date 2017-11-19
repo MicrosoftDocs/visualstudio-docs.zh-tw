@@ -1,12 +1,10 @@
 ---
-title: Associating Custom Data with SharePoint Tools Extensions | Microsoft Docs
+title: "關聯自訂資料與 SharePoint 工具擴充功能 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,28 +17,27 @@ helpviewer_keywords:
 - SharePoint projects, associating custom data
 - SharePoint development in Visual Studio, extensibility features
 ms.assetid: cfc87272-85a1-4c36-89e4-2662417d59ea
-caps.latest.revision: 27
-author: kempb
-ms.author: kempb
+caps.latest.revision: "27"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 2f63ba5c4457d7ca7eae2de52fde52e3ce304f8b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3a37551f56159aaa3cda03edb6ec964a79d56da9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>Associating Custom Data with SharePoint Tools Extensions
-  You can add custom data to certain objects in SharePoint tools extensions. This is useful when you have data in one part of your extension that you want to access later from other code in your extension. Instead of implementing a custom way to store and access data, you can associate the data with an object in your extension and then retrieve the data from the same object later.  
+# <a name="associating-custom-data-with-sharepoint-tools-extensions"></a>讓自訂資料與 SharePoint 工具擴充功能產生關聯
+  您可以加入自訂資料中 SharePoint 工具擴充功能的特定物件。 當您想要從您的擴充功能中的其他程式碼供稍後存取的擴充功能的一個部分中有資料時，這非常有用。 而是實作自訂的方式來儲存及存取資料，您可以關聯物件中的資料，在您的擴充功能，然後稍後從相同的物件擷取資料。  
   
- Adding custom data to objects is also useful when you want to preserve data that is relevant to a specific item in Visual Studio. SharePoint tools extensions are loaded just once in Visual Studio, so your extension might work with several different items (such as projects, project items, or **Server Explorer** nodes) at any time. If you have custom data that is relevant only to a specific item, you can add the data to the object that represents that item.  
+ 加入自訂資料物件時也很有用您想要保留的 Visual Studio 中的特定項目相關資料。 SharePoint 工具擴充功能會載入一次在 Visual Studio 中，因此您的擴充功能可能會使用數個不同的項目 (例如專案、 專案項目，或**伺服器總管**節點) 在任何時間。 如果您有只與特定的項目有關的自訂資料，您可以將資料加入物件，表示該項目。  
   
- When you add custom data to objects in SharePoint tools extensions, the data does not persist. The data is available only during the lifespan of the object. After the object is reclaimed by garbage collection, the data is lost.  
+ 當您新增自訂資料物件中 SharePoint 工具擴充功能時，就不會保存資料。 只有在物件的存留期間有可用資料。 透過記憶體回收收回物件之後，資料會遺失。  
   
- In extensions of the SharePoint project system, you can also save string data that persists after an extension is unloaded. For more information, see [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ 擴充功能的 SharePoint 專案系統，您也可以儲存字串資料保存在卸載擴充功能之後。 如需詳細資訊，請參閱[擴充 SharePoint 專案系統中儲存的資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
-## <a name="objects-that-can-contain-custom-data"></a>Objects that Can Contain Custom Data  
- You can add custom data to any object in the SharePoint tools object model that implements the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> interface. This interface defines just one property, <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>, which is a collection of custom data objects. The following types implement <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
+## <a name="objects-that-can-contain-custom-data"></a>可以包含自訂資料物件  
+ 您可以加入實作 SharePoint 工具物件模型中的任何物件中的自訂資料<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>介面。 這個介面會定義一個屬性， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>，這是自訂的資料物件的集合。 下列型別會實作<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject>:  
   
 -   <xref:Microsoft.VisualStudio.SharePoint.IMappedFolder>  
   
@@ -72,23 +69,24 @@ ms.lasthandoff: 08/30/2017
   
 -   <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeDefinition>  
   
-## <a name="adding-and-retrieving-custom-data"></a>Adding and Retrieving Custom Data  
- To add custom data to an object in a SharePoint tools extension, get the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the object you want to add the data to, and then use the <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A> method to add the data to the object.  
+## <a name="adding-and-retrieving-custom-data"></a>加入和擷取自訂的資料  
+ 若要加入自訂資料中的 SharePoint 工具擴充功能的物件，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>您想要新增的資料，然後使用的物件屬性<xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.Add%2A>方法，將資料加入至物件。  
   
- To retrieve custom data from an object in a SharePoint tools extension, get the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the object and then use one of the following methods:  
+ 若要從 SharePoint 工具擴充功能中的物件擷取自訂的資料，取得<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性物件，然後使用其中一個的下列方法：  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. This method returns **true** if the data object exists, or **false** if it does not exist. You can use this method to retrieve instances of value types or reference types.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.TryGetValue%2A>. 這個方法會傳回**true**如果資料物件存在，或**false**如果不存在。 您可以使用這個方法來擷取實值類型或參考類型的執行個體。  
   
--   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. This method returns the data object if it exits, or **null** if it does not exist. You can use this method only to retrieve instances of reference types.  
+-   <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 這個方法傳回的資料物件，如果它存在時，或**null**如果不存在。 您可以使用這個方法，才能擷取參考類型的執行個體。  
   
- The following code example determines whether a certain data object is already associated with a project item. If the data object is not already associated with the project item, then the code adds the object to the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the project item. To see this example in the context of a larger example, see [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md).  
+ 下列程式碼範例會判斷特定資料物件是否已經與專案項目相關聯。 如果資料物件是不相關聯的專案項目，則程式碼將物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案項目的屬性。 若要查看這個內容中的較大範例的範例，請參閱[How to： 將屬性加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。  
   
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)] [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
+ [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
+ [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]  
   
-## <a name="see-also"></a>See Also  
- [Programming Concepts and Features for SharePoint Tools Extensions](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
- [Walkthrough: Creating a Custom Action Project Item with an Item Template, Part 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
- [Walkthrough: Extending Server Explorer to Display Web Parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
- [How to: Add a Property to SharePoint Projects](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
- [How to: Add a Property to a Custom SharePoint Project Item Type](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
+## <a name="see-also"></a>另請參閱  
+ [SharePoint 工具擴充功能的程式設計概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)   
+ [逐步解說： 建立自訂動作專案項目與項目範本，第 1 部分](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)   
+ [逐步解說： 擴充伺服器總管 以顯示 Web 組件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)   
+ [如何： 將屬性加入至 SharePoint 專案](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)   
+ [如何： 將屬性加入至自訂 SharePoint 專案項目類型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md   
   

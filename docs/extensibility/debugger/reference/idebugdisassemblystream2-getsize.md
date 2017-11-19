@@ -1,53 +1,53 @@
 ---
-title: "IDebugDisassemblyStream2::GetSize | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDisassemblyStream2::GetSize"
-helpviewer_keywords: 
-  - "IDebugDisassemblyStream2::GetSize"
+title: "IDebugDisassemblyStream2::GetSize |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDisassemblyStream2::GetSize
+helpviewer_keywords: IDebugDisassemblyStream2::GetSize
 ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 35dfb225c6359e3b039b21255b1e6ba5979c3e6f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDisassemblyStream2::GetSize
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 指示這個反組譯碼資料流中取得的大小。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetSize(   
-   UINT64* pnSize  
+```cpp  
+HRESULT GetSize(   
+   UINT64* pnSize  
 );  
 ```  
   
-```c#  
-int GetSize(   
-   out ulong pnSize  
+```csharp  
+int GetSize(   
+   out ulong pnSize  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pnSize`  
- \[\] out會傳回大小而定，在指令中。  
+ [out]傳回指示中的大小。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 從這個方法傳回的值可以用來配置一個陣列的[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構而接著會傳給[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
+## <a name="remarks"></a>備註  
+ 從這個方法傳回的值可以用來配置的陣列[DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)結構而接著會傳遞給[讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)   
  [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)   
  [讀取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

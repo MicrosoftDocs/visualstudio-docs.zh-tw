@@ -1,52 +1,51 @@
 ---
-title: "IDiaSymbol::get_lexicalParent | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "C++"
-helpviewer_keywords: 
-  - "IDiaSymbol::get_lexicalParent 方法"
+title: "Idiasymbol:: Get_lexicalparent |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs: C++
+helpviewer_keywords: IDiaSymbol::get_lexicalParent method
 ms.assetid: 4d119965-33a8-474c-9c64-95c5218c389c
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 0964fd67555166b6b1de0869177fa5c1fd25d754
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDiaSymbol::get_lexicalParent
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-擷取語彙的父代的符號參考。  
+# <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
+擷取語彙的父代符號的參考。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT get_lexicalParent (   
-   IDiaSymbol** pRetVal  
+```C++  
+HRESULT get_lexicalParent (   
+   IDiaSymbol** pRetVal  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pRetVal`  
- \[\] out傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) ，表示符號的語彙的父代的物件。  
+ [out]傳回[IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)表示語彙符號的父物件。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回`S_FALSE`或錯誤的程式碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回`S_FALSE`或錯誤碼。  
   
 > [!NOTE]
->  傳回值為`S_FALSE`表示此屬性不適用於該符號。  
+>  傳回值為`S_FALSE`表示屬性不適用於符號。  
   
-## 備註  
- 語彙的父代的符號是封入函式或模組。  比方說，函式參數或區域變數的語彙的父代都是函式本身的函式語彙的父代時，用來定義它的模組。  
+## <a name="remarks"></a>備註  
+ 封入函式或模組語彙符號的父系。 例如，函式參數或區域變數的父語彙是函式本身，而語彙函式的父項是定義中的模組。  
   
- 可能的符號，能顯示為語彙的父代會詳加[符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)。  
+ 能顯示為語彙父系所述的可能符號[語彙階層的符號類型](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

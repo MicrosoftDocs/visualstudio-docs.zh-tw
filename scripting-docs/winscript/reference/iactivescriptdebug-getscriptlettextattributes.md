@@ -1,27 +1,30 @@
 ---
-title: "IActiveScriptDebug::GetScriptletTextAttributes | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IActiveScriptDebug::GetScriptletTextAttributes |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IActiveScriptDebug.GetScriptletTextAttributes
 apilocation: jscript.dll
-helpviewer_keywords: 
-  - "IActiveScriptDebug::GetScriptletTextAttributes"
+helpviewer_keywords: IActiveScriptDebug::GetScriptletTextAttributes
 ms.assetid: b3990d86-5fdf-4c9f-9678-3f4b808c7ca8
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 909879030e5c6d26353d2003279d5c1ca7bacb74
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptDebug::GetScriptletTextAttributes
-傳回隨機 scriptlet 文字屬性。  
+# <a name="iactivescriptdebuggetscriptlettextattributes"></a>IActiveScriptDebug::GetScriptletTextAttributes
+傳回任意程式碼片段的文字屬性。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT GetScriptletTextAttributes(  
@@ -33,43 +36,43 @@ HRESULT GetScriptletTextAttributes(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pstrCode`  
- \[in\] scriptlet 文字。  不需要是以 null 結束之字串。  
+ [in]程式碼片段文字。 這個字串不需要結束的 null。  
   
  `uNumCodeChars`  
- \[in\] 的字元數。scriptlet 文字的。  
+ [in]中的程式碼片段文字的字元數。  
   
  `pstrDelimiter`  
- \[in\] 位址結束 scriptlet 符號。  當 `pstrCode` 從文字資料流剖析時，主應用程式通常會使用分隔符號 \(例如，兩個單引號 \("\)， scriptlet 偵測到的結尾。  這個參數指定 \(例如使用的主機，允許指令碼引擎提供了一些條件約束基底前置處理符號 \(，取代使用單引號 \(『\) 與兩個單引號做為分隔符號\)。  \(和\)，如果指令碼引擎正確方式使用這項資訊決定指令碼引擎。  如果未使用分隔符號 scriptlet 指令的結束，請將此參數設定為 NULL。  
+ [in]結尾的程式碼片段分隔符號的位址。 當`pstrCode`剖析文字資料流，從主應用程式通常會使用分隔符號，例如兩個單引號 （'），來偵測程式碼片段的結尾。 這個參數會指定使用主機，允許以提供一些條件的基本前置處理指令碼引擎的分隔符號 （例如，取代單引號 ['] 具有兩個單引號做為分隔符號使用）。 方式 （和 if） 這項資訊取決於指令碼引擎的指令碼引擎使用。 如果主機未使用的分隔符號來標示程式碼片段的結尾，請設定此參數為 NULL。  
   
  `dwFlags`  
- \[in\] 旗標與 scriptlet。  可以是下列值的組合:  
+ [in]程式碼片段相關聯的旗標。 可以是下列值的組合：  
   
 |常數|值|描述|  
-|--------|-------|--------|  
-|GETATTRTYPE\_DEPSCAN|0x0001|分別表示識別項和點運算子應該識別與 SOURCETEXT\_ATTR\_IDENTIFIER，並 SOURCETEXT\_ATTR\_MEMBERLOOKUP 旗標。|  
-|GETATTRFLAG\_THIS|0x0100|表示應該識別目前物件的識別項與 SOURCETEXT\_ATTR\_THIS 旗標。|  
-|GETATTRFLAG\_HUMANTEXT|0x8000|表示應該識別字串內容和註解文字 SOURCETEXT\_ATTR\_HUMANTEXT 旗標。|  
+|--------------|-----------|-----------------|  
+|GETATTRTYPE_DEPSCAN|0x0001|表示識別項和點運算子應該能識別出使用 SOURCETEXT_ATTR_IDENTIFIER 和 SOURCETEXT_ATTR_MEMBERLOOKUP 旗標，分別。|  
+|GETATTRFLAG_THIS|0x0100|表示目前物件的識別項，應該識別 SOURCETEXT_ATTR_THIS 旗標。|  
+|GETATTRFLAG_HUMANTEXT|0x8000|表示字串的內容和註解文字應該能識別出 SOURCETEXT_ATTR_HUMANTEXT 旗標。|  
   
  `pattr`  
- \[in， out\] 包含所傳回之屬性的緩衝區。  
+ [in、 out]包含傳回的屬性的緩衝區。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 實作介面的 `IDebugDocumentText` 智慧型主機可以使用這個方法將呼叫委派給 `IDebugDocumentText::GetText` 方法。  
+## <a name="remarks"></a>備註  
+ 實作智慧主機`IDebugDocumentText`介面可以使用這個方法來委派呼叫`IDebugDocumentText::GetText`方法。  
   
- 這個呼叫，因為 Scriptlet 比指令碼區塊時，經常會是運算式，而且可能會有不同的語法提供。  如果有相同的語法，這個方法的實作與 `GetScriptTextAttributes` 方法的實作都會相同。  
+ 提供此呼叫，因為程式碼片段通常是運算式，而且可能會有不同的語法比指令碼區塊。 如果他們有相同的語法，此方法的實作會完全相同的實作`GetScriptTextAttributes`方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IActiveScriptDebug 介面](../../winscript/reference/iactivescriptdebug-interface.md)   
  [IActiveScriptDebug::GetScriptTextAttributes](../../winscript/reference/iactivescriptdebug-getscripttextattributes.md)   
  [IDebugDocumentText 介面](../../winscript/reference/idebugdocumenttext-interface.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)   
- [SOURCE\_TEXT\_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)
+ [SOURCE_TEXT_ATTR 列舉](../../winscript/reference/source-text-attr-enumeration.md)

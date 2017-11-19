@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,29 +13,15 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-caps.latest.revision: 28
+caps.latest.revision: "28"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1c26b0e9b9f02cdf2aac68c2deb42980f42a7b5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 1ec6732b511d437a24149d9cd4b20e593a13a8f0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>語法色彩標示在舊版語言服務
 語法顏色標示是會導致不同的項目要顯示不同的色彩和樣式原始程式檔中的程式語言的功能。 若要支援這項功能，您需要提供剖析器或掃描器可以識別語彙項目或檔案中的語彙基元的類型。 許多語言來標示它們色彩不同的方式區分關鍵字、 分隔符號 （例如括號或大括號） 和註解。  

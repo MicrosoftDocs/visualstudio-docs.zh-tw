@@ -1,52 +1,52 @@
 ---
-title: "IDebugField::GetContainer | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugField::GetContainer"
-helpviewer_keywords: 
-  - "IDebugField::GetContainer 方法"
+title: "IDebugField::GetContainer |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugField::GetContainer
+helpviewer_keywords: IDebugField::GetContainer method
 ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 0049ebeb51d385850105d65d5db624829005d7d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugField::GetContainer
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 這個方法會取得欄位的容器。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetContainer(   
-   IDebugContainerField** ppContainerField  
+```cpp  
+HRESULT GetContainer(   
+   IDebugContainerField** ppContainerField  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetContainer(  
-   out IDebugContainerField ppContainerField  
+   out IDebugContainerField ppContainerField  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppContainerField`  
- \[\] out傳回由容器[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。  
+ [out]傳回容器所表示的[IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)介面。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 如果這個欄位就不需要一種容器，在`ppContainerField`會有 null 值。  
+## <a name="remarks"></a>備註  
+ 如果此欄位沒有一個容器傳回的`ppContainerField`將會是 null 的值。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)   
  [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

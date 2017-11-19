@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugProgramEx2
-helpviewer_keywords:
-- IDebugProgramEx2 interface
+f1_keywords: IDebugProgramEx2
+helpviewer_keywords: IDebugProgramEx2 interface
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
-caps.latest.revision: 18
+caps.latest.revision: "18"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 55781c5d1f0fc15c505394fb08291a058de71247
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 8ddcd913371a09646185f3b46a516cb3af8528ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 這個介面可讓偵錯管理員 (SDM) 附加至程式和取得程式節點與程式相關聯的工作階段。  
@@ -46,7 +30,7 @@ IDebugProgramEx2 : IUnknown
 ```  
   
 ## <a name="notes-for-implementers"></a>實作者注意事項  
- 自訂連接埠供應商實作此介面上相同的物件做為[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面，讓附加至程式時同時允許追蹤所有工作階段的連接埠供應商 SDM 附加至程式。 如果選擇自訂連接埠供應商可以實作這個介面。  
+ 自訂連接埠供應商實作此介面上相同的物件做為[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)介面，讓附加至程式時同時允許追蹤所有工作階段的連接埠供應商附加到 SDM程式。 如果選擇自訂連接埠供應商可以實作這個介面。  
   
 ## <a name="notes-for-callers"></a>呼叫端資訊  
  SDM 呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugProgram2`介面，以取得此介面來追蹤已附加至程式的工作階段。  
@@ -63,11 +47,11 @@ IDebugProgramEx2 : IUnknown
  這個介面是私用 SDM 與程式之間。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ Portpriv.h  
+ 標頭： Portpriv.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

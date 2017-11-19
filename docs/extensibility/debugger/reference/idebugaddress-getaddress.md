@@ -1,51 +1,51 @@
 ---
-title: "IDebugAddress::GetAddress | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugAddress::GetAddress"
-helpviewer_keywords: 
-  - "IDebugAddress:GetAddress 方法"
+title: "IDebugAddress::GetAddress |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugAddress::GetAddress
+helpviewer_keywords: IDebugAddress:GetAddress method
 ms.assetid: 2590387b-5d36-4116-9a75-737957b8898e
-caps.latest.revision: 6
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 3ed14b69dbc116514b191aadf58d209b4d39e458
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugAddress::GetAddress
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-傳回結構描述物件和它的範圍或容器中的位置。  
+# <a name="idebugaddressgetaddress"></a>IDebugAddress::GetAddress
+傳回結構描述和其位置，其範圍或容器內的物件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
 HRESULT GetAddress (  
-   DEBUG_ADDRESS * pAddress  
+   DEBUG_ADDRESS * pAddress  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetAddress(  
-   DEBUG_ADDRESS[] pAddress  
+   DEBUG_ADDRESS[] pAddress  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- 輸入 \[、 輸出\]A [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構，這個方法會填入。  
+ [in、 out]A [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)填入這個方法的結構。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構傳遞給這個方法，然後以適當的資訊在填滿它。  這項資訊的解譯方式，則傳回的資訊和符號處理常式本身的種類而定。  如需詳細資訊，請參閱 [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)。  
+## <a name="remarks"></a>備註  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)結構傳遞至這個方法，然後使用適當的資訊填入它。 這項資訊的解譯方式取決於傳回的資訊和符號處理常式本身的種類。 請參閱[DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)如需詳細資訊。  
   
-## 請參閱  
- [DEBUG\_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)
+## <a name="see-also"></a>另請參閱  
+ [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

@@ -1,47 +1,49 @@
 ---
-title: "XmlMappedRange 控制項"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "XMLMappedRange 控制項"
-  - "XMLMappedRange 控制項, 資料繫結"
-  - "XMLMappedRange 控制項, 事件"
+title: "XmlMappedRange 控制項 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- XMLMappedRange control, data binding
+- XMLMappedRange control
+- XMLMappedRange control, events
 ms.assetid: af1ae1b7-6cbe-4d6b-bc22-d9a3c8740665
-caps.latest.revision: 40
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 39
+caps.latest.revision: "40"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 391964152c48601b11b10ce6d8001d2d303a9a01
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# XmlMappedRange 控制項
-  只有當非重複的結構描述項目對應至 Microsoft Office Excel 的儲存格時，才會建立 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項範圍。  例如，當結構描述項目的 `maxOccurs` 屬性等於 1 時。  在 Visual Studio 建立 XML 對應的範圍之後，您可以直接對其進行程式設計，而不必周遊 Excel 物件模型。  您只有在移除項目對應之後，才可以刪除 Excel 中的 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項。  
+# <a name="xmlmappedrange-control"></a>XmlMappedRange 控制項
+  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項為非重複結構描述元素會對應到 Microsoft Office Excel 中的資料格時，才會建立一個範圍。 例如，當`maxOccurs`屬性結構描述元素等於 1。 Visual Studio 會建立對應的 XML 範圍之後，您可以針對它程式直接而不必周遊 Excel 物件模型。 您只能刪除<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>內時就會移除項目對應的 Excel 控制項。  
   
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]  
   
- ![視訊的連結](~/data-tools/media/playvideo.gif "視訊的連結") 如需觀看相關示範影片，請參閱[如何在 Excel 中使用 XML 對應？](http://go.microsoft.com/fwlink/?LinkID=130288)\(英文\)。  
+ ![影片連結](../vsto/media/playvideo.gif "影片連結")相關的影片示範，請參閱[如何執行 i： 使用 XML 中的對應 Excel？](http://go.microsoft.com/fwlink/?LinkID=130288)。  
   
-## 將資料繫結至控制項  
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項支援繫結至單一資料欄位 \(簡單資料繫結\)。  <xref:Microsoft.Office.Tools.Excel.ListObject> 控制項可以支援複雜資料繫結，在重複的結構描述項目對應至儲存格中時，會自動建立該控制項。  如需詳細資訊，請參閱[ListObject 控制項](../vsto/listobject-control.md)。  
+## <a name="binding-data-to-the-control"></a>將資料繫結至控制項  
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項支援繫結至單一資料欄位 （簡單資料繫結）。 <xref:Microsoft.Office.Tools.Excel.ListObject>控制項可以支援複雜資料繫結，而且重複的結構描述元素會對應至資料格中時自動建立。 如需詳細資訊，請參閱 [ListObject Control](../vsto/listobject-control.md)。  
   
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項使用 <xref:System.Windows.Forms.Control.DataBindings%2A> 屬性繫結至資料來源。  將 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 加入至工作表儲存格時，Visual Studio 會自動從對應之儲存格的資料產生資料集，並將控制項繫結至該資料集。  <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 的預設資料繫結屬性是 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>。  
+ <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項繫結至資料來源使用<xref:System.Windows.Forms.Control.DataBindings%2A>屬性。 當<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>Visual Studio 自動產生資料集從中對應的儲存格的資料，並將控制項繫結至該資料集加入至工作表儲存格。 預設資料繫結屬性<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>是<xref:Microsoft.Office.Tools.Excel.XmlMappedRange.Value2%2A>。  
   
- 如果繫結資料集中的資料是透過任何機制進行了更新，<xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項則會反映這些變更。  
+ 如果透過任何機制，更新繫結資料集中的資料<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項會反映這些變更。  
   
-## 格式  
- 您可以將相同的格式套用至 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項，其可套用至 <xref:Microsoft.Office.Interop.Excel.Range>。  包括框線、字型、數字格式和樣式。  
+## <a name="formatting"></a>格式化  
+ 您可以套用相同的格式設定<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>控制項，您可以套用到<xref:Microsoft.Office.Interop.Excel.Range>。 這包括框線、字型、數字格式和樣式。  
   
-## 事件  
- <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控制項可以使用的事件為：  
+## <a name="events"></a>事件  
+ 事件可供<xref:Microsoft.Office.Tools.Excel.XmlMappedRange>的項目：  
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.BeforeDoubleClick>  
   
@@ -59,11 +61,11 @@ caps.handback.revision: 39
   
 -   <xref:Microsoft.Office.Tools.Excel.XmlMappedRange.SelectionChange>  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [使用擴充物件自動化 Excel](../vsto/automating-excel-by-using-extended-objects.md)   
- [如何：將 XMLMappedRange 控制項加入至工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
- [將資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
- [如何：在 Visual Studio 內將結構描述對應至工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
+ [如何： 將 XMLMappedRange 控制項加入工作表](../vsto/how-to-add-xmlmappedrange-controls-to-worksheets.md)   
+ [資料繫結至 Office 方案中的控制項](../vsto/binding-data-to-controls-in-office-solutions.md)   
+ [如何： 將結構描述對應至 Visual Studio 內的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)   
  [主項目和主控制項的程式設計限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)  
   
   

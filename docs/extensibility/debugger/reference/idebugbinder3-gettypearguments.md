@@ -1,67 +1,67 @@
 ---
-title: "IDebugBinder3::GetTypeArguments | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugBinder3::GetTypeArguments"
-helpviewer_keywords: 
-  - "IDebugBinder3::GetTypeArguments 方法"
+title: "IDebugBinder3::GetTypeArguments |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugBinder3::GetTypeArguments
+helpviewer_keywords: IDebugBinder3::GetTypeArguments method
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
-caps.latest.revision: 7
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 7aff11599f00ad417915c4cb4f4e6ad907b5660d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBinder3::GetTypeArguments
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個方法會擷取一份此物件相關聯的引數型別。  
+# <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
+這個方法會擷取與此物件相關聯的引數類型的清單。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```cpp  
-HRESULT GetTypeArguments(  
-   UINT          skip,  
-   UINT          count,  
-   IDebugField** ppFields,  
-   UINT*         pFetched  
+HRESULT GetTypeArguments(  
+   UINT          skip,  
+   UINT          count,  
+   IDebugField** ppFields,  
+   UINT*         pFetched  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetTypeArguments(  
-   uint          skip,  
-   uint          count,  
-   IDebugField[] ppFields,  
-   out uint      pFetched  
+   uint          skip,  
+   uint          count,  
+   IDebugField[] ppFields,  
+   out uint      pFetched  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `skip`  
- \[in\]若要跳過之前取得引數型別欄位數目。  
+ [in]略過快速入門的引數類型的欄位數目。  
   
  `count`  
- \[in\]傳回引數欄位的數目 \(也會指定大小的`ppFields`陣列\)。  
+ [in]引數要傳回的欄位數目 (也會指定的大小`ppFields`陣列)。  
   
  `ppFields`  
- 輸入 \[、 輸出\]就會自動填入這個方法傳回的欄位的陣列。  
+ [in、 out]將會填入這個方法傳回的欄位的陣列。  
   
  `pFetched`  
- \[\] out\(選擇性\)引數的數字輸入實際傳回的欄位。  
+ [out]\(選擇性)實際傳回的欄位類型的引數數目。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 可以事先取得引數型別數目，與[GetTypeArgumentCount](../Topic/IDebugBinder3::GetTypeArgumentCount.md)。  
+## <a name="remarks"></a>備註  
+ 引數類型的數字可以事先取得與[GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [GetTypeArgumentCount](../Topic/IDebugBinder3::GetTypeArgumentCount.md)
+ [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

@@ -1,48 +1,48 @@
 ---
-title: "IDebugEngineProgram2::Stop | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugEngineProgram2::Stop"
-helpviewer_keywords: 
-  - "IDebugEngineProgram2::Stop"
+title: "IDebugEngineProgram2::Stop |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugEngineProgram2::Stop
+helpviewer_keywords: IDebugEngineProgram2::Stop
 ms.assetid: 6e1c3d56-fb67-4a5b-80f9-8ee5131972bf
-caps.latest.revision: 8
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 21dd14e1cc4d4e8c6b65b5285763a680a5f327f7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugEngineProgram2::Stop
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugengineprogram2stop"></a>IDebugEngineProgram2::Stop
 停止執行此程式中的所有執行緒。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT Stop(   
-   void   
+```cpp  
+HRESULT Stop(   
+   void   
 );  
 ```  
   
-```c#  
+```csharp  
 int Stop();  
 ```  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 當這個程式正在偵錯在 multi\-program 的環境中，會呼叫這個方法。  收到來自其他程式停止事件時，會呼叫這個方法，在這個程式。  這個方法的實作應該是非同步的。 也就是不是所有的執行緒應該要以這個方法會傳回前停止。  這個方法的實作可能會像電話一樣簡單[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)在這個程式的方法。  
+## <a name="remarks"></a>備註  
+ 此程式在多個程式的環境中偵錯時，會呼叫這個方法。 收到停止事件，從某些其他程式時，於這個程式會呼叫這個方法。 這個方法的實作應該是非同步的;也就是說，並非所有的執行緒應該需要這個方法會傳回前，先停止。 這個方法的實作可能會只要呼叫[CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)於這個程式的方法。  
   
- 沒有偵錯事件傳送至這個方法的回應。  
+ 這個方法的回應以傳送沒有偵錯事件。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   
  [CauseBreak](../../../extensibility/debugger/reference/idebugprogram2-causebreak.md)

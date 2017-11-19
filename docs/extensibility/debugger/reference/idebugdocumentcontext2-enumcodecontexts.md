@@ -1,56 +1,56 @@
 ---
-title: "IDebugDocumentContext2::EnumCodeContexts | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugDocumentContext2::EnumCodeContexts"
-helpviewer_keywords: 
-  - "IDebugDocumentContext2::EnumCodeContexts"
+title: "IDebugDocumentContext2::EnumCodeContexts |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugDocumentContext2::EnumCodeContexts
+helpviewer_keywords: IDebugDocumentContext2::EnumCodeContexts
 ms.assetid: 627af69c-5cce-4e1d-8233-5f4d8dbc62e5
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: a11ec6d678fce60cbecbc1dc9e2b7c61eb1e5867
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugDocumentContext2::EnumCodeContexts
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取一份與這個文件內容相關聯的所有程式碼內容。  
+# <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
+擷取此文件內容相關聯的所有程式碼內容的清單。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumCodeContexts(   
-   IEnumDebugCodeContexts2** ppEnumCodeCxts  
+```cpp  
+HRESULT EnumCodeContexts(   
+   IEnumDebugCodeContexts2** ppEnumCodeCxts  
 );  
 ```  
   
-```c#  
-int EnumCodeContexts(   
-   out IEnumDebugCodeContexts2 ppEnumCodeCxts  
+```csharp  
+int EnumCodeContexts(   
+   out IEnumDebugCodeContexts2 ppEnumCodeCxts  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppEnumCodeCxts`  
- \[\] out傳回[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)物件，其中包含的程式碼內容的清單。  
+ [out]傳回[IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)物件，其中包含一份程式碼內容。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 單一文件內容可以產生多個程式碼內容，當文件使用範本，或包含檔案。  
+## <a name="remarks"></a>備註  
+ 單一文件內容可以在文件會使用範本時產生多個程式碼內容，或包含檔案。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CDebugContext`物件，公開 \(expose\) [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CDebugContext`公開物件[IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts)    
 {    
    HRESULT hr;    
@@ -106,6 +106,6 @@ HRESULT CDebugContext::EnumCodeContexts(IEnumDebugCodeContexts2 **ppEnumCodeCxts
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)   
  [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

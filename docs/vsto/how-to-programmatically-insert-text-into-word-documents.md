@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Insert Text into Word Documents | Microsoft Docs'
+title: "如何： 以程式設計方式將文字插入 Word 文件 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -19,109 +17,121 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], inserting text
 - text [Office development in Visual Studio], replacing
 ms.assetid: 405d7442-8ba3-4fcc-b17e-7b289ffd3967
-caps.latest.revision: 41
-author: kempb
-ms.author: kempb
+caps.latest.revision: "41"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 763c5d5f607aad3aa7470006196d9b345bc01822
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 46b7219aa43be0ce3ae5e9ca6bc1e11c9e4dc25a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>How to: Programmatically Insert Text into Word Documents
-  There are three primary ways to insert text into Microsoft Office Word documents:  
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以程式設計方式在 Word 文件中插入文字
+  在 Microsoft Office Word 文件中插入文字的方式主要有三種：  
   
--   Insert text in a range.  
+-   在範圍中插入文字。  
   
--   Replace text in a range with new text.  
+-   以新文字取代範圍中的文字。  
   
--   Use the <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> method of a <xref:Microsoft.Office.Interop.Word.Selection> object to insert text at the cursor or selection.  
+-   使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法將文字插入游標或選取範圍。  
   
 > [!NOTE]  
->  You can also insert text into content controls and bookmarks. For more information, see [Content Controls](../vsto/content-controls.md) and [Bookmark Control](../vsto/bookmark-control.md).  
+>  您也可以將文字插入內容控制項與書籤中。 如需詳細資訊，請參閱[內容控制項](../vsto/content-controls.md)和[書籤控制項](../vsto/bookmark-control.md)。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-## <a name="inserting-text-in-a-range"></a>Inserting Text in a Range  
- Use the <xref:Microsoft.Office.Interop.Word.Range.Text%2A> property of a <xref:Microsoft.Office.Interop.Word.Range> object to insert text in a document.  
+## <a name="inserting-text-in-a-range"></a>在範圍中插入文字  
+ 使用 <xref:Microsoft.Office.Interop.Word.Range.Text%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Range> 屬性將文字插入文件。  
   
-#### <a name="to-insert-text-in-a-range"></a>To insert text in a range  
+#### <a name="to-insert-text-in-a-range"></a>若要在範圍中插入文字  
   
-1.  Specify a range at the beginning of a document and insert the text **New Text**.  
+1.  在文件的開頭指定範圍，並插入文字 **New Text**。  
   
-     The following code example can be used in a document-level customization.  
+     下列程式碼範例可用於文件層級自訂。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#51)]  [!code-csharp[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#51)]  
+     [!code-vb[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#51)]
+     [!code-csharp[Trin_VstcoreWordAutomation#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#51)]  
   
-     The following code example can be used in a VSTO Add-in. This code uses the active document.  
+     下列程式碼範例可用於 VSTO 增益集。 這個程式碼會使用現用的文件。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]  
   
-2.  Select the <xref:Microsoft.Office.Interop.Word.Range> object, which has expanded from one character to the length of the inserted text.  
+2.  選取 <xref:Microsoft.Office.Interop.Word.Range> 物件，這時物件已從一個字元擴展為所插入文字的長度。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]  [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
+     [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
+     [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]  
   
-## <a name="replacing-text-in-a-range"></a>Replacing Text in a Range  
- If the specified range contains text, all text in the range is replaced with the inserted text.  
+## <a name="replacing-text-in-a-range"></a>取代範圍中的文字  
+ 如果指定的範圍包含文字，則範圍內的所有文字都會以插入的文字取代。  
   
-#### <a name="to-replace-text-in-a-range"></a>To replace text in a range  
+#### <a name="to-replace-text-in-a-range"></a>若要取代範圍中的文字  
   
-1.  Create a <xref:Microsoft.Office.Interop.Word.Range> object that consists of the first 12 characters in the document.  
+1.  建立一個包含文件中前 12 個字元的 <xref:Microsoft.Office.Interop.Word.Range> 物件。  
   
-     The following code example can be used in a document-level customization.  
+     下列程式碼範例可用於文件層級自訂。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#53)]  [!code-csharp[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#53)]  
+     [!code-vb[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#53)]
+     [!code-csharp[Trin_VstcoreWordAutomation#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#53)]  
   
-     The following code example can be used in a VSTO Add-in. This code uses the active document.  
+     下列程式碼範例可用於 VSTO 增益集。 這個程式碼會使用現用的文件。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]  
   
-2.  Replace those characters with the string **New Text**.  
+2.  以 **New Text**字串取代這些字元。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]  [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]  
+     [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
+     [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]  
   
-3.  Select the range.  
+3.  選取範圍。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]  [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
+     [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
+     [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]  
   
-## <a name="inserting-text-using-typetext"></a>Inserting Text Using TypeText  
- The <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> method inserts text at the selection. <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> behaves differently depending on the options set on the user's computer. The code in the following procedure declares a <xref:Microsoft.Office.Interop.Word.Selection> object variable, and turns off the **Overtype** option if it is turned on. If the **Overtype** option is activated, then any text next to the cursor is overwritten.  
+## <a name="inserting-text-using-typetext"></a>使用 TypeText 插入文字  
+ <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 方法會在選取範圍插入文字。 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 的行為方式會因使用者電腦上設定的選項而異。 下列程序中的程式碼宣告了 <xref:Microsoft.Office.Interop.Word.Selection> 物件變數，並且關閉 **Overtype** 選項 (如果是開啟的)。 如果啟用 **Overtype** 選項，則會覆寫游標後面的任何文字。  
   
-#### <a name="to-insert-text-using-the-typetext-method"></a>To insert text using the TypeText method  
+#### <a name="to-insert-text-using-the-typetext-method"></a>若要使用 TypeText 方法插入文字  
   
-1.  Declare a <xref:Microsoft.Office.Interop.Word.Selection> object variable.  
+1.  宣告 <xref:Microsoft.Office.Interop.Word.Selection> 物件變數。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]  [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
+     [!code-vb[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#57)]
+     [!code-csharp[Trin_VstcoreWordAutomation#57](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#57)]  
   
-2.  Turn off the **Overtype** option if it is turned on.  
+2.  關閉 **Overtype** 選項 (如果是開啟的)。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]  [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
+     [!code-vb[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#58)]
+     [!code-csharp[Trin_VstcoreWordAutomation#58](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#58)]  
   
-3.  Test to see whether the current selection is an insertion point.  
+3.  測試目前的選取範圍是否為插入點。  
   
-     If it is, the code inserts a sentence using <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>, and then a paragraph mark using the <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> method.  
+     如果是，程式碼就會使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A>插入句子，然後使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeParagraph%2A> 方法插入段落標記。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]  [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
+     [!code-vb[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#59)]
+     [!code-csharp[Trin_VstcoreWordAutomation#59](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#59)]  
   
-4.  The code in the **ElseIf** block tests to see whether the selection is a normal selection. If it is, then another **If** block tests to see whether the **ReplaceSelection** option is turned on. If it is, the code uses the <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> method of the selection to collapse the selection to an insertion point at the start of the selected block of text. Insert the text and a paragraph mark.  
+4.  **ElseIf** 區塊中的程式碼會進行測試，檢查選取範圍是否為一般的選取範圍。 如果是，則另一個 **If** 區塊就會測試 **ReplaceSelection** 選項是否已開啟。 如果該選項已開啟，程式碼就會使用選取範圍的 <xref:Microsoft.Office.Interop.Word.Selection.Collapse%2A> 方法，將選取範圍摺疊至文字選取區塊起始處的插入點。 插入文字和段落標記。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]  [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
+     [!code-vb[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#60)]
+     [!code-csharp[Trin_VstcoreWordAutomation#60](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#60)]  
   
-5.  If the selection is not an insertion point or a block of selected text, then the code in the **Else** block does nothing.  
+5.  如果選取範圍不是插入點或選取文字的區塊，則 **Else** 區塊中的程式碼不會執行任何動作。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]  [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
+     [!code-vb[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#61)]
+     [!code-csharp[Trin_VstcoreWordAutomation#61](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#61)]  
   
- You can also use the <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> method of the <xref:Microsoft.Office.Interop.Word.Selection> object, which mimics the functionality of the BACKSPACE key on your keyboard. However, when it comes to inserting and manipulating text, the <xref:Microsoft.Office.Interop.Word.Range> object offers you more control.  
+ 您也可以使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 物件的 <xref:Microsoft.Office.Interop.Word.Selection> 方法，這個方法會模仿鍵盤上退格鍵 (BACKSPACE) 的功能。 但是，如果要插入和處理文字， <xref:Microsoft.Office.Interop.Word.Range> 物件可以讓您有更多的控制能力。  
   
- The following example shows the complete code. To use this example, run the code from the `ThisDocument` or `ThisAddIn` class in your project.  
+ 下列範例顯示完整程式碼。 若要使用這個範例，請從專案中的 `ThisDocument` 或 `ThisAddIn` 類別中執行程式碼。  
   
- [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)] [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
+ [!code-vb[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#56)]
+ [!code-csharp[Trin_VstcoreWordAutomation#56](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#56)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Format Text in Documents](../vsto/how-to-programmatically-format-text-in-documents.md)   
- [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [How to: Programmatically Extend Ranges in Documents](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計的方式格式化文件中的文字](../vsto/how-to-programmatically-format-text-in-documents.md)   
+ [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何：以程式設計方式在文件中擴充範圍](../vsto/how-to-programmatically-extend-ranges-in-documents.md)  
   
   

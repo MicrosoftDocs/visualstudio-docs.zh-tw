@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Filter Descriptor to a Finder Method | Microsoft Docs'
+title: "如何： 將篩選描述元加入至搜尋方法 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -20,67 +18,67 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], add a filter
 - BDC [SharePoint development in Visual Studio], filter descriptors
 ms.assetid: 228a6190-8cb8-4182-b6d9-d4c656f4a164
-caps.latest.revision: 14
-author: kempb
-ms.author: kempb
+caps.latest.revision: "14"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: fea1eb561889f545fd4d97bb05855d83b4070ddb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 37aff0510af501b75aafe190fc412a0d4b9fd625
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>How to: Add a Filter Descriptor to a Finder Method
-  Filter descriptors enable consumers of the model to pass values to methods before they execute. For more information, see [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md).  
+# <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：將篩選描述元加入至搜尋方法
+  篩選描述元可讓取用者的模型之前，它們執行，將值傳遞給方法。 如需詳細資訊，請參閱[設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。  
   
- One common scenario is that users in SharePoint want to retrieve instances of an external content type that match some criteria. You can support this scenario by adding a filter descriptor to a Finder method.  
+ 常見的案例之一是在 SharePoint 中的使用者想要擷取的外部內容類型符合某些準則的執行個體。 您可以將篩選描述元加入至搜尋方法，以支援此案例中。  
   
-### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>To add a filter descriptor to a Finder method  
+### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>若要將篩選描述元加入至搜尋方法  
   
-1.  In the **BDC Method Details** window, expand the node of a Finder method, expand the **Parameters** node, and then add an input parameter. For more information, see [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md).  
+1.  在**BDC 方法詳細資料**視窗中，展開搜尋方法的節點，展開 [**參數**] 節點，並將輸入的參數。 如需詳細資訊，請參閱[How to： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)。  
   
-2.  In the **Method Details** window, choose the type descriptor of the parameter.  
+2.  在**方法詳細資料**視窗中，選擇參數的類型描述元。  
   
-3.  On the menu bar, choose **View**, **Properties Window**.  
+3.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
   
-4.  In the **Properties** window, set the **Type Name** property to a data type that is appropriate for the filter.  
+4.  在**屬性**視窗中，將**型別名稱**適用於篩選的資料類型的屬性。  
   
-     For example, a filter might use an order date to limit the number of sales orders returned by the method. To support that filter, the **Type Name** property of the type descriptor must be set to **System.DateTime**.  
+     比方說，篩選可能會使用訂單日期來限制的方法所傳回的銷售訂單數目。 若要支援篩選，**型別名稱**類型描述元的屬性必須設定為**System.DateTime**。  
   
-5.  In the **Method Details** window, expand the **Filter Descriptors** node.  
+5.  在**方法詳細資料**視窗中，展開 **篩選描述元**節點。  
   
-6.  In **Add a Filter Descriptor** list, choose **Create Filter Descriptor**.  
+6.  在**新增篩選描述元**清單中，選擇**建立篩選器描述元**。  
   
-     A new filter descriptor appears underneath the **Filter Descriptors** node.  
+     下方會出現新的篩選描述元**篩選描述元**節點。  
   
-7.  On the menu bar, choose **View**, **Properties Window**.  
+7.  在功能表列上選擇 [**檢視**，**屬性] 視窗**。  
   
-8.  In the **Properties** window, choose the **Type** property.  
+8.  在**屬性**視窗中，選擇**類型**屬性。  
   
-9. In the list that appears for the **Type** property, choose the filtering pattern that you want.  
+9. 在清單中所顯示**類型**屬性中，選擇您想要的篩選模式。  
   
-     For example, to create a filter that uses an order date to limit the number of sales orders returned in a Finder method, choose **Comparison**. A Comparison filter ensures that a finder method returns only instances that meet a specific condition. For more information about each filtering pattern, see [Types of Filters Supported by the BDC](http://go.microsoft.com/fwlink/?LinkId=169287).  
+     例如，若要建立使用訂單日期來限制搜尋工具方法中傳回的銷售訂單數量的篩選條件，請選擇**比較**。 比較篩選條件可確保搜尋工具方法傳回符合特定條件的執行個體。 如需每個篩選模式的詳細資訊，請參閱[類型的篩選條件受到 BDC](http://go.microsoft.com/fwlink/?LinkId=169287)。  
   
-10. In the **Properties** window, choose the **Associated Type Descriptors** property.  
+10. 在**屬性**視窗中，選擇**相關聯的類型描述元**屬性。  
   
-11. In the list that appears for the **Associated Type Descriptors** property, choose the type descriptor that you created earlier in this procedure. This relates the filter to the input parameter of the Finder method.  
+11. 在清單中所顯示**相關聯的類型描述元**屬性中，選擇您稍早在此程序中建立的類型描述元。 這與篩選相關的搜尋方法的輸入參數。  
   
-12. Add code to the Finder method that returns data. You can use the input parameter as a condition in a select query.  
+12. 加入程式碼會傳回資料的搜尋工具方法。 您可以做為條件選取查詢中使用的輸入的參數。  
   
-     The following example returns sales orders that have the specified order date.  
+     下列範例會傳回具有指定的訂購日期的銷售訂單。  
   
     > [!NOTE]  
-    >  Replace the value of the `ServerName` field with the name of your server.  
+    >  取代的值`ServerName`欄位與您的伺服器名稱。  
   
-     [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]  [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
+     [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
+     [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]  
   
-## <a name="see-also"></a>See Also  
- [How to: Add a Finder Method](../sharepoint/how-to-add-a-finder-method.md)   
- [How to: Add a Specific Finder Method](../sharepoint/how-to-add-a-specific-finder-method.md)   
- [How to: Add a Parameter to a Method](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
- [How to: Define the Type Descriptor of a Parameter](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
- [Designing a Business Data Connectivity Model](../sharepoint/designing-a-business-data-connectivity-model.md)   
- [Integrating Business Data into SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 加入搜尋方法](../sharepoint/how-to-add-a-finder-method.md)   
+ [如何： 加入特定搜尋方法](../sharepoint/how-to-add-a-specific-finder-method.md)   
+ [如何： 將參數加入至方法](../sharepoint/how-to-add-a-parameter-to-a-method.md)   
+ [如何： 定義參數的類型描述元](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)   
+ [設計商務資料連接模型](../sharepoint/designing-a-business-data-connectivity-model.md)   
+ [將商業資料整合至 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)  
   
   

@@ -1,56 +1,56 @@
 ---
-title: "IDebugProgramNode2::GetProgramName | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugProgramNode2::GetProgramName"
-helpviewer_keywords: 
-  - "IDebugProgramNode2::GetProgramName"
+title: "IDebugProgramNode2::GetProgramName |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugProgramNode2::GetProgramName
+helpviewer_keywords: IDebugProgramNode2::GetProgramName
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 44581760a932940df4504691b5ad00b753ee304a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugProgramNode2::GetProgramName
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 取得程式的名稱。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetProgramName (   
-   BSTR* pbstrProgramName  
+```cpp  
+HRESULT GetProgramName (   
+   BSTR* pbstrProgramName  
 );  
 ```  
   
-```c#  
-int GetProgramName (   
-   out string pbstrProgramName  
+```csharp  
+int GetProgramName (   
+   out string pbstrProgramName  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pbstrProgramName`  
- \[\] out傳回程式的名稱。  
+ [out]傳回程式的名稱。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 備註  
- 程式名稱不一樣的程式路徑，即使程式的名稱，可以將這類路徑的一部分。  
+## <a name="remarks"></a>備註  
+ 程式的名稱不是程式的路徑相同的動作，雖然程式的名稱可能是這類路徑的一部分。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如`CProgram`實作物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。  `MakeBstr`函式會配置一份指定的字串，為 BSTR。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來簡單`CProgram`實作物件[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)介面。 `MakeBstr`函式會配置指定的字串為 BSTR 的複本。  
   
-```cpp#  
+```cpp  
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {    
    if (!pbstrProgramName)    
       return E_INVALIDARG;    
@@ -61,5 +61,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }    
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

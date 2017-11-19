@@ -1,30 +1,30 @@
 ---
-title: "視窗屬性對話方塊、樣式索引標籤 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "[視窗屬性] 對話方塊, 樣式索引標籤"
+title: "樣式索引標籤，視窗屬性對話方塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Window Properties dialog box, Styles Tab
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1fadd6043b86a6b73cc5c58be8b5d74558c3affc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 視窗屬性對話方塊、樣式索引標籤
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-使用 \[**樣式**\] 索引標籤，可以顯示套用至選取之視窗的樣式。  若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，請將焦點移至[視窗檢視](../debugger/windows-view.md)視窗。  選取樹狀結構中的任何視窗節點，然後從 \[**檢視**\] 功能表選取 \[**屬性**\]。  
+# <a name="styles-tab-window-properties-dialog-box"></a>視窗屬性對話方塊、樣式索引標籤
+使用**樣式**索引標籤，顯示套用到選取的視窗樣式。 若要顯示[視窗屬性對話方塊](../debugger/window-properties-dialog-box.md)，焦點移至[視窗檢視](../debugger/windows-view.md)視窗。 在樹狀目錄中，選取視窗中的任何節點，然後選擇 **屬性**從**檢視**功能表。  
   
- \[**樣式**\] 索引標籤中的可用設定如下：  
+ 下列設定都適用於**樣式** 索引標籤：  
   
-|Entry|描述|  
-|-----------|--------|  
-|**視窗樣式**|視窗樣式代碼及控制項樣式的組合 \(如果適用的話\)。|  
-|**延伸樣式**|延伸視窗樣式代碼的組合。|
+|進入|說明|  
+|-----------|-----------------|  
+|**視窗樣式**|組合的視窗樣式代碼和控制樣式，如果適用的話。|  
+|**延伸的樣式**|延伸的視窗樣式代碼的組合。|

@@ -1,51 +1,51 @@
 ---
-title: "IDebugArrayField::GetNumberOfElements | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugArrayField::GetNumberOfElements"
-helpviewer_keywords: 
-  - "IDebugArrayField::GetNumberOfElements 方法"
+title: "IDebugArrayField::GetNumberOfElements |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugArrayField::GetNumberOfElements
+helpviewer_keywords: IDebugArrayField::GetNumberOfElements method
 ms.assetid: a1961ef3-d69d-4022-b8c9-b9cfb9811345
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 30b85f22a433a457eb9813790eb0456ba7275c0b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugArrayField::GetNumberOfElements
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 取得陣列中的項目數。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT GetNumberOfElements(   
-   DWORD* pdwNumElements  
+```cpp  
+HRESULT GetNumberOfElements(   
+   DWORD* pdwNumElements  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetNumberOfElements(  
-   out uint pdwNumElements  
+   out uint pdwNumElements  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pdwNumElements`  
- \[\] out傳回陣列中的項目數。  
+ [out]傳回陣列中的項目數目。  
   
-## 傳回值  
- 如果成功的話，則傳回 S\_OK。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK;反之則傳回錯誤碼。  
   
-## 備註  
- 傳回的值是在陣列中，不論維度數目的元素總數。  
+## <a name="remarks"></a>備註  
+ 傳回的值是在陣列中，不論的維度數目的項目總數。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

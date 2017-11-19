@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortEx2
-helpviewer_keywords:
-- IDebugPortEx2 interface
+f1_keywords: IDebugPortEx2
+helpviewer_keywords: IDebugPortEx2 interface
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
-caps.latest.revision: 13
+caps.latest.revision: "13"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: fa36bf7ae96058c4eb7c0462114af50fa08af656
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 06eab3133669381d13416c0990370ad01378222c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 這個介面可讓偵錯管理員 (SDM) 控制項的程式和連接埠上執行的處理序的工作階段。  
@@ -69,11 +53,11 @@ IDebugPortEx2 : IUnknown
  如有需要，偵錯引擎 (DE) 可以此介面上尋找[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)介面傳遞到[LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)並用[LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md)来啟動程式。 這不是必要條件，不過，並將 DE 可以執行它所要執行您要啟動要求的程式。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ portpriv.h  
+ 標頭： portpriv.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

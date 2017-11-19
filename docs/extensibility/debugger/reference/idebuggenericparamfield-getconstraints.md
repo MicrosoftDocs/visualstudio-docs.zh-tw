@@ -1,62 +1,64 @@
 ---
-title: "IDebugGenericParamField::GetConstraints | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugGenericParamField::GetConstraints"
-  - "GetConstraints"
+title: "IDebugGenericParamField::GetConstraints |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IDebugGenericParamField::GetConstraints
+- GetConstraints
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 877e22759041414a92f813440e82e8f7dd2cf182
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugGenericParamField::GetConstraints
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 擷取這個泛型參數相關聯的條件約束。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetConstraints(  
-   ULONG32       cConstraints,  
-   IDebugField** ppConstraints,  
-   ULONG32*      pcConstraints  
+   ULONG32       cConstraints,  
+   IDebugField** ppConstraints,  
+   ULONG32*      pcConstraints  
 );  
 ```  
   
-```c#  
+```csharp  
 int GetConstraints(  
-   uint              cConstraints,  
-   out IDebugField[] ppConstraints,  
-   ref uint          pcConstraints  
+   uint              cConstraints,  
+   out IDebugField[] ppConstraints,  
+   ref uint          pcConstraints  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `cConstraints`  
- \[in\]條件約束的數目。  
+ [in]條件約束數目。  
   
  `ppConstraints`  
- \[\] out傳回陣列，其中包含與這個欄位關聯的條件約束。  
+ [out]傳回陣列，其中包含與這個欄位關聯的條件約束。  
   
  `pcConstraints`  
- 輸入 \[、 輸出\]中的條件約束的數字`ppConstraints`陣列。  
+ [in、 out]中的條件約束數目`ppConstraints`陣列。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會示範如何實作這個方法，如 **CDebugGenericParamFieldType** 物件，公開 \(expose\) [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
+## <a name="example"></a>範例  
+ 下列範例示範如何實作這個方法來**CDebugGenericParamFieldType**公開物件[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)介面。  
   
-```cpp#  
+```cpp  
 HRESULT CDebugGenericParamFieldType::GetConstraints(  
     ULONG32 cConstraints,  
     IDebugField** ppConstraints,  
@@ -149,5 +151,5 @@ Error:
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

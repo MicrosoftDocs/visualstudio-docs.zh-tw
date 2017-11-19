@@ -1,53 +1,54 @@
 ---
-title: "舊版語言服務模型 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "語言服務、 模型"
+title: "舊版語言服務模型 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: language services, model
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
-caps.latest.revision: 20
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 20
+caps.latest.revision: "20"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: afc15ea50921b1feca34a8b305c5028979a0d1ca
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 舊版語言服務模型
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-語言服務定義的項目和功能，針對特定語言，並用來提供該語言特定的資訊中的編輯器\]。  比方說，編輯器\] 中，需要知道的項目和語言的關鍵字，才能支援語法標色。  
+# <a name="model-of-a-legacy-language-service"></a>舊版語言服務模型
+語言服務定義的項目和功能特定的語言，並用來提供該語言的特定資訊的編輯器。 例如，編輯器必須知道的項目和語言的關鍵字，以支援的語法著色。  
   
- 語言服務密切管理編輯器\] 和 \[檢視\] 中包含編輯器\] 中的文字緩衝區中。  Microsoft IntelliSense **快速諮詢**選項是一種語言服務所提供的功能的範例。  
+ 語言服務密切管理編輯器和檢視，其中包含編輯器 中的文字緩衝區。 Microsoft IntelliSense**快速諮詢**選項是語言服務所提供之功能的範例。  
   
-## 最小的語言服務  
+## <a name="a-minimal-language-service"></a>基本語言服務  
  最基本的語言服務包含下列兩個物件：  
   
--   *語言服務*實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面。  語言服務有語言，包括其名稱、 副檔名、 程式碼視窗管理員 」 和 colorizer 的相關資訊。  
+-   *語言服務*實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>介面。 語言服務的語言，包括其名稱、 副檔名的檔案、 程式碼視窗管理員和色彩標示器資訊。  
   
--   *Colorizer* 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>介面。  
+-   *色彩標示器*實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>介面。  
   
- 下列的概念圖顯示基本語言服務的模型。  
+ 概念圖將顯示模型的基本語言服務。  
   
- ![語言服務模型圖形](~/extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
+ ![語言服務模型圖形](../../extensibility/media/vslanguageservicemodel.gif "vsLanguageServiceModel")  
 基本語言服務模型  
   
- 文件視窗的主機*文件檢視*的編輯器中，在這種情況下[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心編輯器。  文件檢視\] 和 \[文字緩衝區均屬編輯器\]。  這些物件將會使用[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用特殊的文件\] 視窗中，呼叫*程式碼\] 視窗*。  程式碼\] 視窗包含在<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> ，建立且由 IDE 控制的物件。  
+ 文件視窗主機*文件檢視*編輯器，在此情況下的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]核心編輯器。 編輯器 中所擁有的文件檢視和文字緩衝區。 這些物件運作的[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]透過特製化的文件視窗呼叫*程式碼視窗*。 程式碼視窗中<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>建立和由 IDE 所控制的物件。  
   
- 當載入具有指定副檔名的檔案時，編輯器\] 中尋找該副檔名相關聯的語言服務並傳遞至其程式碼\] 視窗點撥打<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>方法。  語言服務，則傳回*的程式碼視窗管理員*，哪一個實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>介面。  
+ 載入指定的副檔名的檔案時，編輯器會找出與該副檔名相關聯之語言服務並將傳遞給它的程式碼視窗藉由呼叫<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A>方法。 語言服務傳回*程式碼視窗管理員*，它會實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>介面。  
   
- 下表概要說明模型中的物件。  
+ 下表提供模型中物件的概觀。  
   
-|元件|物件|Function|  
-|--------|--------|--------------|  
-|文字緩衝區|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Unicode 讀取\/寫入文字資料流。  很可能使用其他編碼方式的文字。|  
-|程式碼\] 視窗|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|文件視窗，其中包含一或多個文字檢視。  當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在多重文件介面 \(MDI\) 模式中，程式碼\] 視窗是 MDI 子系。|  
-|文字檢視|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|這種視窗可讓使用者瀏覽，然後使用鍵盤和滑鼠來檢視文字。  文字檢視會顯示給使用者，作為編輯者。  您可以使用一般的編輯器視窗、 \[輸出\] 視窗和 \[即時運算\] 視窗中的文字檢視。  此外，您可以設定一或多個程式碼\] 視窗內的文字檢視。|  
-|文字管理員|由<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服務，從您取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指標|這種元件會維護先前所述的所有元件所共用的一般資訊。|  
-|語言服務|實作相關。 實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|語言特定的資訊，例如語法反白顯示、 陳述式完成和括號對稱會提供編輯器\] 中的物件。|  
+|元件|物件|函式|  
+|---------------|------------|--------------|  
+|文字緩衝區|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>|Unicode 讀取/寫入文字資料流。 您可使用其他編碼的文字。|  
+|程式碼視窗|<xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow>|文件視窗包含一個或多個文字檢視。 當[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]是在多重文件介面 (MDI) 模式中，程式碼視窗是 MDI 子系。|  
+|文字檢視|<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>|可讓使用者瀏覽，並使用鍵盤和滑鼠來檢視文字視窗中。 做為編輯器，對使用者顯示的文字檢視。 您可以使用一般的編輯器視窗、 [輸出] 視窗和即時運算視窗中的文字檢視。 此外，您可以設定程式碼視窗中的一個或多個文字檢視。|  
+|文字管理員|受<xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>服務，而從中您取得<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager>指標|維護常用資訊先前所述的所有元件都共用的元件。|  
+|語言服務|實作而定;實作<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo>|物件，提供特定語言資訊，例如語法反白顯示、 陳述式完成和大括號比對的編輯器。|  
   
-## 請參閱  
- [文件資料，以及在自訂編輯器中的文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)
+## <a name="see-also"></a>另請參閱  
+ [自訂編輯器中的文件資料和文件檢視](../../extensibility/document-data-and-document-view-in-custom-editors.md)

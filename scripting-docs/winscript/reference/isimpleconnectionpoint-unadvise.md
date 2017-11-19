@@ -1,27 +1,30 @@
 ---
-title: "ISimpleConnectionPoint::Unadvise | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "ISimpleConnectionPoint::Unadvise |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: ISimpleConnectionPoint.Unadvise
 apilocation: pdm.dll
-helpviewer_keywords: 
-  - "ISimpleConnectionPoint::Unadvise"
+helpviewer_keywords: ISimpleConnectionPoint::Unadvise
 ms.assetid: eae06a58-ed42-4839-aad4-14420b15343f
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7f926f206bb8a27e6265fd147909a5adb13c3543
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# ISimpleConnectionPoint::Unadvise
-結束先前透過 `ISimpleConnectionPoint::Advise` 建立的諮詢連接。  
+# <a name="isimpleconnectionpointunadvise"></a>ISimpleConnectionPoint::Unadvise
+終止透過先前建立諮詢連接`ISimpleConnectionPoint::Advise`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT Unadvise(  
@@ -29,19 +32,19 @@ HRESULT Unadvise(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `dwCookie`  
- \[in\] 結束連接的語彙基元，所傳回。 `ISimpleConnectionPoint::Advise`。  
+ [in]結束，傳回的連線語彙基元`ISimpleConnectionPoint::Advise`。  
   
-## 傳回值  
- 方法會傳回 `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ 方法會傳回 `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- 當諮詢連接結束時，連接點會在 `ISimpleConnectionPoint::Advise` 方法期間，用於連接已儲存之指標的 `Release` 方法。  執行 `ISimpleConnectionPoint::Advise` 的該呼叫反轉 `AddRef` ，當連接點呼叫通知接收的 `QueryInterface`時。  
+## <a name="remarks"></a>備註  
+ 當終止諮詢連接時，連接點上呼叫`Release`連線期間已儲存指標上的方法`ISimpleConnectionPoint::Advise`方法。 呼叫的反轉`AddRef`的期間執行`ISimpleConnectionPoint::Advise`當連接點呼叫通知的接收`QueryInterface`。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [ISimpleConnectionPoint 介面](../../winscript/reference/isimpleconnectionpoint-interface.md)

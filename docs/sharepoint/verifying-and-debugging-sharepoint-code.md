@@ -1,55 +1,56 @@
 ---
-title: "驗證及偵錯 SharePoint 程式碼"
-ms.custom: ""
-ms.date: "02/02/2017"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "office-development"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-helpviewer_keywords: 
-  - "單元測試 [Visual Studio 中的 SharePoint 開發]"
-  - "IntelliTrace [Visual Studio 中的 SharePoint 開發]"
-  - "Visual Studio 中的 SharePoint 程式開發、IntelliTrace"
-  - "Visual Studio 中的 SharePoint 程式開發、單元測試"
+title: "驗證及偵錯 SharePoint 程式碼 |Microsoft 文件"
+ms.custom: 
+ms.date: 02/02/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: office-development
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+helpviewer_keywords:
+- unit testing [SharePoint development in Visual Studio]
+- IntelliTrace [SharePoint development in Visual Studio]
+- SharePoint development in Visual Studio, IntelliTrace
+- SharePoint development in Visual Studio, unit testing
 ms.assetid: b5f3bce2-6a51-41b1-a292-9e384bae420c
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "18"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 8ab25807ffaf62773b6c02f22c548fb5e5c769ff
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 驗證及偵錯 SharePoint 程式碼
-  您可以藉由使用 IntelliTrace 和單元測試更輕鬆地偵錯 SharePoint解決方案，並確保應用程式中的每一個方法都能正確運作。  您可以依照其他專案類型的相同程序進行的方法在 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)]中將這些功能用於 SharePoint 專案。  
+# <a name="verifying-and-debugging-sharepoint-code"></a>驗證及偵錯 SharePoint 程式碼
+  您可以藉由使用 IntelliTrace 和單元測試更輕鬆地對 SharePoint 方案進行偵錯，並確保方案中的每一個方法都能正確運作。 您可以依照其他專案類型的相同程序進行，在 [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] 中針對 SharePoint 專案使用這些功能。  
   
-## IntelliTrace  
- 藉由使用 IntelliTrace，您不但可以判斷目前的解決方案狀態，也可以判斷過去發生的事件以及發生的內容。  您可以來回巡覽至SharePoint解決方案中記錄相關事件的各個時間點，並檢閱每一個時間點的狀態與變數值。  使用這個動態巡覽，您可以快速輕鬆地偵錯您的 SharePoint 方案，而不需要設定的中斷點。  您可以將偵錯工作階段加入至 IntelliTrace 記錄檔 \(.iTrace\) 檔案，之後在 Visual Studio Ultimate 開啟它和執行當機後偵錯。  .iTrace檔包含特定SharePoint錯誤位置和發生時機的詳細資訊，因此可以更輕鬆地找出錯誤的發生原因。  在 .iTrace 的檔案資訊是在聯合紀錄系統\(ULS\)在SharePoint建立完整錯誤紀錄的子集中。  這項資訊包括專用於 SharePoint的事件，像是當開啟或關閉使用者設定檔，和讀取或變更 SharePoint 專案的屬性。  您可以設定哪些事件由 IntelliTrace 來記錄。  如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](../debugger/using-saved-intellitrace-data.md)與[設定 IntelliTrace 以收集偵錯資訊](http://msdn.microsoft.com/zh-tw/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
+## <a name="intellitrace"></a>IntelliTrace  
+ 藉由使用 IntelliTrace，您不但可以判斷目前 SharePoint 方案的狀態，也可以判斷過去發生的事件以及發生的內容。 您可以來回巡覽至 SharePoint 方案中記錄相關事件的各個時間點，並檢閱每一個時間點的狀態與變數值。 藉由使用這個動態巡覽，您就可以快速輕鬆地對 SharePoint 方案進行偵錯，而不需要設定大量中斷點。 您也可以將偵錯工作階段儲存到 IntelliTrace 記錄檔 (.iTrace) 中，之後在 Visual Studio Ultimate 開啟它並執行當機後偵錯。 .ITrace 檔案包含有關時機和位置特定 SharePoint 錯誤發生，詳細的資訊，以便您更輕鬆地找出造成錯誤。 .iTrace 檔中的資訊是統一記錄系統 (ULS) 在 SharePoint 中建立之完整錯誤記錄的子集。 這項資訊包括 SharePoint 專屬的事件，像是使用者設定檔何時開啟或關閉，以及 SharePoint 專案中的屬性何時載入、讀取或變更。 您可以設定 IntelliTrace 記錄的事件。 如需詳細資訊，請參閱[使用儲存的 IntelliTrace 資料](/visualstudio/debugger/using-saved-intellitrace-data)和[設定 IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e)。  
   
- 當錯誤發生於 SharePoint 時，錯誤對話方塊中顯示該特定錯誤的「相互關聯 ID」識別項。  您可以在 .iTrace 檔案清單的事件也可以取得相關 ID。  若要顯示產生與特定相互關聯 ID 的所有清單事件，您可以輸入在 IntelliTrace 摘要頁面的 \[**分析**\] 區段中的 ID。  在這個章節中，您可以選擇僅顯示發生事件的名稱或是顯示發生事件的名稱和其他資訊，像是函式名稱、匯出和進入點、參數和傳回值。  
+ 當 SharePoint 中發生錯誤時，錯誤對話方塊會顯示該特定錯誤的「相互關聯識別碼」識別項。 您也可以從 .iTrace 檔中列出的事件取得相互關聯識別碼。 若要顯示所有所指定的相互關聯識別碼發生的事件清單，您可以輸入中的識別碼**分析**IntelliTrace 摘要頁面區段。 在該區段中，您可以選擇僅顯示發生的事件名稱，或是顯示事件名稱與其呼叫資訊，像是函式名稱、結束和進入點、參數及傳回值。  
   
- 您可以選擇 \[**F5**\] 鍵取得 Visual Studio 在 IntelliTrace 事件。  不過若要取得專屬於 SharePoint的事件，您必須使用Microsoft監視代理程式以收集 SharePoint 方案的 IntelliTrace 資料。  這個工具收集IntelliTrace 資料並建立在Visual Studio 以外的應用程式的 .iTrace檔案  
-這個工具收集 IntelliTrace 資料並建立部署在 Visual Studio 以外的應用程式的 .iTrace 檔案。  如需詳細資訊，請參閱[IntelliTrace 功能](../debugger/intellitrace-features.md)與[使用 IntelliTrace 獨立收集器](../debugger/using-the-intellitrace-stand-alone-collector.md)。  
+ 您也可以選擇在 IntelliTrace 中取得 Visual Studio 事件**F5**索引鍵。 不過，若要取得 SharePoint 專屬的事件，您必須使用 Microsoft Monitoring Agent 收集 SharePoint 方案中的 IntelliTrace 資料。 這個工具會收集 IntelliTrace 資料，並針對部署在 Visual Studio 以外的應用程式建立 .iTrace 檔。 如需詳細資訊，請參閱[IntelliTrace 功能](/visualstudio/debugger/intellitrace-features)和[使用 IntelliTrace 獨立收集器](/visualstudio/debugger/using-the-intellitrace-stand-alone-collector)。  
   
-## 單元測試  
- 您可以藉由執行單元測試來更輕鬆地尋找程式碼中的錯誤，您會在單元測試中撰寫程式碼，並在測試方法內執行測試程式碼。  這些方法包含空的變數和 Assert 陳述式，可用來根據 SharePoint 物件模型驗證專案的邏輯和功能。  如需詳細資訊，請參閱[對程式碼進行單元測試](../test/unit-test-your-code.md)。  
+## <a name="unit-testing"></a>單元測試  
+ 您可以更輕鬆地找到錯誤，程式碼中的執行單元測試，您撰寫並執行測試方法內的測試程式碼。 這些方法會包含空白的變數和 Assert 陳述式可讓您確認的邏輯和您的 SharePoint 物件模型為基礎的專案功能。 如需詳細資訊，請參閱[對程式碼進行單元測試](/visualstudio/test/unit-test-your-code)。  
   
-### Microsoft Fakes Framework 的支援  
- SharePoint 專案支援 Microsoft Fakes，一個獨立的framework，用這個framework你就可以create delegate\-based test stubs 並墊入 .NET Framework base 的程式。  使用 Fakes 架構，您可以建立、維護及插入在單元測試中的假的實作。  這些測試程式和墊片能隔離單元測試的環境。  您可以建立測試程式以測試使用者介面或非密封類別並具有可複寫的方法的程式碼。  您可以建立墊片以重新導向硬式編碼呼叫具有靜態的密封類別或是以不可複寫的方法去實作墊片。  您可以使用測試程式型別和墊片型別委派以動態自訂個別測試程式成員的行為。  如需詳細資訊，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
+### <a name="support-for-microsoft-fakes-framework"></a>Microsoft Fakes Framework 的支援  
+ SharePoint 專案支援 Microsoft Fakes，它是一種隔離架構，您可以利用該架構在 .NET Framework 為基礎的應用程式中建立委派為主的測試 Stub 和填充碼。 使用 Fakes 架構可以在單元測試中建立、維護及插入虛擬實作。 這些 Stub 和填充碼會將您的單元測試與環境隔離。 您可以建立 Stub 測試利用介面的程式碼，或是具有可覆寫方法的非密封類別。 您可以建立填充碼將對具有靜態或不可覆寫方法之密封類別的硬式編碼呼叫重新導向至替代填充碼實作。 您也可以使用具有 Stub 類型和填充碼類型的委派，動態自訂個別 Stub 成員的行為。 如需詳細資訊，請參閱[隔離測試程式碼在使用 Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes)。  
   
-## 相關主題  
+## <a name="related-topics"></a>相關主題  
   
-|標題|描述|  
-|--------|--------|  
-|[使用 IntelliTrace](../debugger/intellitrace.md)|透過使用 IntelliTrace，描述如何更輕鬆地偵錯 Visual Studio 方案。|  
-|[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|示範如何使用 IntelliTrace 來尋找 SharePoint 專案中的程式碼錯誤。|  
-|[對程式碼進行單元測試](../test/unit-test-your-code.md)|描述如何使用單元測試尋找程式碼中的邏輯錯誤。|  
+|標題|說明|  
+|-----------|-----------------|  
+|[IntelliTrace](/visualstudio/debugger/intellitrace)|描述如何使用 IntelliTrace 更輕鬆地對 Visual Studio 方案進行偵錯。|  
+|[逐步解說：使用 IntelliTrace 偵錯 SharePoint 應用程式](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|示範如何使用 IntelliTrace 尋找 SharePoint 專案中的編碼錯誤。|  
+|[對程式碼進行單元測試](/visualstudio/test/unit-test-your-code)|描述如何使用單元測試程式碼中找出邏輯錯誤。|  
   
-## 請參閱  
- [改善程式碼品質](../test/improve-code-quality.md)  
+## <a name="see-also"></a>另請參閱  
+ [改善程式碼品質](/visualstudio/test/improve-code-quality)  
   
   

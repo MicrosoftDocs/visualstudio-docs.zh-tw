@@ -1,5 +1,5 @@
 ---
-title: Save data with the TableAdapter DBDirect methods | Microsoft Docs
+title: "使用 TableAdapter DBDirect 方法儲存資料 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -15,162 +15,159 @@ helpviewer_keywords:
 - saving data, walkthroughs
 - data [Visual Studio], TableAdapter
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
-caps.latest.revision: 14
+caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: cca2a707627c36221a654cf8a06730383492f371
-ms.openlocfilehash: aac04197ee35aa613f70f09f653bbde988dbe995
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/13/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
-# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Save data with the TableAdapter DBDirect methods
-This walkthrough provides detailed instructions for running SQL statements directly against a database by using the DBDirect methods of a TableAdapter. The DBDirect methods of a TableAdapter provide a fine level of control over your database updates. You can use them to run specific SQL statements and stored procedures by calling the individual `Insert`, `Update`, and `Delete` methods as needed by your application (as opposed to the overloaded `Update` method that performs the UPDATE, INSERT, and DELETE statements all in one call).  
+# <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
+本逐步解說提供詳細的指示，直接對資料庫執行 SQL 陳述式，使用 TableAdapter 的 DBDirect 方法。 TableAdapter 的 DBDirect 方法提供資料庫更新的控制層的級。 您可以使用它們來執行特定 SQL 陳述式和預存程序的呼叫`Insert`， `Update`，和`Delete`方法視您的應用程式 (而不是多載`Update`執行更新的方法INSERT 和 DELETE 陳述式，在一個呼叫中的)。  
   
- During this walkthrough, you will learn how to:  
+ 在這個逐步解說期間，您將了解如何：  
   
--   Create a new **Windows Forms Application**.  
+-   建立新**Windows Forms 應用程式**。  
   
--   Create and configure a dataset with the [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).  
+-   建立及設定與資料集[資料來源組態精靈](../data-tools/media/data-source-configuration-wizard.png)。  
   
--   Select the control to be created on the form when dragging items from the **Data Sources** window. For more information, see [Set the control to be created when dragging from the Data Sources window](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+-   選取要拖曳的項目時，表單上建立的控制項**資料來源**視窗。 如需詳細資訊，請參閱[設定要從資料來源視窗拖曳時建立的控制項](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)。  
   
--   Create a data-bound form by dragging items from the **Data Sources** window onto the form.  
+-   建立資料繫結表單項目從**資料來源**視窗拖曳至表單。  
   
--   Add methods to directly access the database and perform inserts, updates, and deletes..  
+-   加入方法以直接存取資料庫並執行插入、 更新和刪除...  
   
-## <a name="prerequisites"></a>Prerequisites  
- In order to complete this walkthrough, you will need:  
+## <a name="prerequisites"></a>必要條件  
+本逐步解說會使用 SQL Server Express LocalDB 與 Northwind 範例資料庫。  
   
--   Access to the Northwind sample database. For more information, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+1.  如果您沒有 SQL Server Express LocalDB，將其安裝從[SQL Server 版本的下載頁面](https://www.microsoft.com/en-us/server-cloud/Products/sql-server-editions/sql-server-express.aspx)，或透過**Visual Studio 安裝程式**。 在 Visual Studio 安裝程式，可以安裝 SQL Server Express LocalDB 的一部份**資料儲存和處理**工作負載，或做為個別的元件。  
   
-## <a name="create-a-windows-forms-application"></a>Create a Windows Forms application  
- The first step is to create a **Windows Forms Application**.  
-  
-#### <a name="to-create-the-new-windows-project"></a>To create the new Windows project  
-  
-1. In Visual Studio, on the **File** menu, select **New**, **Project...**.  
-  
-2. Expand either **Visual C#** or **Visual Basic** in the left-hand pane, then select **Windows Classic Desktop**.  
+2.  安裝 Northwind 範例資料庫執行下列步驟：  
 
-3. In the middle pane, select the **Windows Forms App** project type.  
+    1. 在 Visual Studio 中開啟**SQL Server 物件總管**視窗。 (SQL Server 物件總管 中安裝的一部份**資料儲存和處理**在 Visual Studio 安裝程式工作負載。)展開**SQL Server**節點。 以滑鼠右鍵按一下您的 LocalDB 執行個體，然後選取**新的查詢...**.  
 
-4. Name the project **TableAdapterDbDirectMethodsWalkthrough**, and then choose **OK**. 
+       查詢編輯器視窗隨即開啟。  
+
+    2. 複製[Northwind TRANSACT-SQL 指令碼](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)到剪貼簿。 這個 T-SQL 指令碼會從頭建立 Northwind 資料庫，並填入資料。  
+
+    3. T-SQL 指令碼貼到查詢編輯器，然後選擇**Execute**  按鈕。  
+
+       在一段時間之後, 查詢完成執行，並建立 Northwind 資料庫。  
   
-     The **TableAdapterDbDirectMethodsWalkthrough** project is created and added to **Solution Explorer**.  
+## <a name="create-a-windows-forms-application"></a>建立 Windows Forms 應用程式  
+ 第一個步驟是建立**Windows Forms 應用程式**。  
   
-## <a name="create-a-data-source-from-your-database"></a>Create a data source from your database  
- This step uses the **Data Source Configuration Wizard** to create a data source based on the `Region` table in the Northwind sample database. You must have access to the Northwind sample database to create the connection. For information about setting up the Northwind sample database, see [How to: Install Sample Databases](../data-tools/installing-database-systems-tools-and-samples.md).  
+#### <a name="to-create-the-new-windows-project"></a>建立新的 Windows 專案  
   
-#### <a name="to-create-the-data-source"></a>To create the data source  
+1. 在 Visual Studio 中，在**檔案**功能表上，選取**新增**，**專案...**.  
   
-1.  On the **Data** menu, select **Show Data Sources**.  
+2. 展開  **Visual C#**或**Visual Basic**左窗格中，然後選取**的傳統 Windows 桌面**。  
+
+3. 在中間窗格中，選取**Windows Form 應用程式**專案類型。  
+
+4. 將專案命名**命名為 TableAdapterDbDirectMethodsWalkthrough**，然後選擇 **確定**。 
   
-2.  In the **Data Sources** window, select **Add New Data Source** to start the **Data Source Configuration Wizard**.  
+     **命名為 TableAdapterDbDirectMethodsWalkthrough**建立專案並將其加入**方案總管 中**。  
   
-3.  On the **Choose a Data Source Type** screen, select **Database**, and then select **Next**.  
+## <a name="create-a-data-source-from-your-database"></a>從您的資料庫建立資料來源  
+ 這個步驟會使用**資料來源組態精靈**來建立資料來源為基礎`Region`Northwind 範例資料庫中的資料表。 您必須具有 Northwind 範例資料庫的存取權，才能建立連接。 Northwind 範例資料庫設定的詳細資訊，請參閱[如何： 安裝範例資料庫](../data-tools/installing-database-systems-tools-and-samples.md)。  
   
-4.  On the **Choose your Data Connection** screen, do one of the following:  
+#### <a name="to-create-the-data-source"></a>若要建立資料來源  
   
-    -   If a data connection to the Northwind sample database is available in the drop-down list, select it.  
+1.  在**資料**功能表上，選取**顯示資料來源**。  
   
-         -or-  
+2.  在**資料來源**視窗中，選取**加入新資料來源**啟動**資料來源組態精靈**。  
   
-    -   Select **New Connection** to launch the **Add/Modify Connection** dialog box.  
+3.  在**選擇資料來源類型**畫面上，選取**資料庫**，然後選取**下一步**。  
   
-5.  If your database requires a password, select the option to include sensitive data, and then select **Next**.  
+4.  在**選擇資料連線**畫面上，執行下列其中一項：  
   
-6.  On the **Save connection string to the Application Configuration file** screen, select **Next**.  
+    -   如果下拉式清單中有提供 Northwind 範例資料庫的資料連接，請選取這個資料連接。  
   
-7.  On the **Choose your Database Objects** screen, expand the **Tables** node.  
+         -或-  
   
-8.  Select the `Region` table, and then select **Finish**.  
+    -   選取**新連線**啟動**新增/修改連接** 對話方塊。  
   
-     The **NorthwindDataSet** is added to your project and the `Region` table appears in the **Data Sources** window.  
+5.  如果您的資料庫需要密碼，選取選項來加入敏感性資料，然後選取**下一步**。  
   
-## <a name="add-controls-to-the-form-to-display-the-data"></a>Add controls to the form to display the data  
- Create the data-bound controls by dragging items from the **Data Sources** window onto your form.  
+6.  在**將連接字串儲存到應用程式組態檔**畫面上，選取**下一步**。  
   
-#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>To create data bound controls on the Windows form  
+7.  在**選擇您的資料庫物件**畫面上，依序展開**資料表**節點。  
   
--   Drag the main **Region** node from the **Data Sources** window onto the form.  
+8.  選取`Region`資料表，，然後選取**完成**。  
   
-     A <xref:System.Windows.Forms.DataGridView> control and a tool strip (<xref:System.Windows.Forms.BindingNavigator>) for navigating records appear on the form. A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), `RegionTableAdapter`, <xref:System.Windows.Forms.BindingSource>, and <xref:System.Windows.Forms.BindingNavigator> appear in the component tray.  
+     **NorthwindDataSet**加入至您的專案和`Region`資料表會出現在**資料來源**視窗。  
   
-#### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>To add buttons that will call the individual TableAdapter DbDirect methods  
+## <a name="add-controls-to-the-form-to-display-the-data"></a>將控制項加入表單以顯示資料  
+ 建立資料繫結控制項項目從**資料來源**視窗拖曳至表單。  
   
-1.  Drag three <xref:System.Windows.Forms.Button> controls from the **Toolbox** onto **Form1** (below the **RegionDataGridView**).  
+#### <a name="to-create-data-bound-controls-on-the-windows-form"></a>若要建立資料繫結 Windows form 上的控制項  
   
-2.  Set the following **Name** and **Text** properties on each button.  
+-   將主要**區域**節點從**資料來源**視窗拖曳至表單。  
   
-    |Name|Text|  
+     <xref:System.Windows.Forms.DataGridView> 控制項以及用於巡覽記錄的工具區域 (<xref:System.Windows.Forms.BindingNavigator>) 會出現在表單上。 A [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)， `RegionTableAdapter`， <xref:System.Windows.Forms.BindingSource>，和<xref:System.Windows.Forms.BindingNavigator>出現在元件匣中。  
+  
+#### <a name="to-add-buttons-that-will-call-the-individual-tableadapter-dbdirect-methods"></a>加入會呼叫個別 TableAdapter DbDirect 方法的按鈕  
+  
+1.  將三個<xref:System.Windows.Forms.Button>控制從**工具箱**到**Form1** (下面**RegionDataGridView**)。  
+  
+2.  設定下列**名稱**和**文字**每個按鈕上的屬性。  
+  
+    |名稱|Text|  
     |----------|----------|  
-    |`InsertButton`|**Insert**|  
-    |`UpdateButton`|**Update**|  
-    |`DeleteButton`|**Delete**|  
+    |`InsertButton`|**插入**|  
+    |`UpdateButton`|**更新**|  
+    |`DeleteButton`|**刪除**|  
   
-#### <a name="to-add-code-to-insert-new-records-into-the-database"></a>To add code to insert new records into the database  
+#### <a name="to-add-code-to-insert-new-records-into-the-database"></a>加入程式碼以將新記錄插入至資料庫  
   
-1.  Select **InsertButton** to create an event handler for the click event and open your form in the code editor.  
+1.  選取**InsertButton**以建立按一下事件的事件處理常式，並在程式碼編輯器中開啟表單。  
   
-2.  Replace the `InsertButton_Click` event handler with the following code:  
+2.  以下列程式碼取代 `InsertButton_Click` 事件處理常式：  
   
      [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
      [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]  
   
-#### <a name="to-add-code-to-update-records-in-the-database"></a>To add code to update records in the database  
+#### <a name="to-add-code-to-update-records-in-the-database"></a>加入程式碼以更新資料庫中的記錄  
   
-1.  Double-click the **UpdateButton** to create an event handler for the click event and open your form in the code editor.  
+1.  按兩下**UpdateButton**以建立按一下事件的事件處理常式，並在程式碼編輯器中開啟表單。  
   
-2.  Replace the `UpdateButton_Click` event handler with the following code:  
+2.  以下列程式碼取代 `UpdateButton_Click` 事件處理常式：  
   
      [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
      [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]  
   
-#### <a name="to-add-code-to-delete-records-from-the-database"></a>To add code to delete records from the database  
+#### <a name="to-add-code-to-delete-records-from-the-database"></a>加入程式碼以從資料庫刪除記錄  
   
-1.  Select **DeleteButton** to create an event handler for the click event and open your form in the code editor.  
+1.  選取**DeleteButton**以建立按一下事件的事件處理常式，並在程式碼編輯器中開啟表單。  
   
-2.  Replace the `DeleteButton_Click` event handler with the following code:  
+2.  以下列程式碼取代 `DeleteButton_Click` 事件處理常式：  
   
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]  
   
-## <a name="run-the-application"></a>Run the application  
+## <a name="run-the-application"></a>執行應用程式  
   
-#### <a name="to-run-the-application"></a>To run the application  
+#### <a name="to-run-the-application"></a>若要執行應用程式  
   
--   Select **F5** to run the application.  
+-   選取**F5**執行應用程式。  
   
--   Select the **Insert** button, and verify that the new record appears in the grid.  
+-   選取**插入**按鈕，並確認新的記錄，會顯示在方格中。  
   
--   Select the **Update** button, and verify that the record is updated in the grid.  
+-   選取**更新**按鈕，並確認更新的記錄時，會在方格中。  
   
--   Select the **Delete** button, and verify that the record is removed from the grid.  
+-   選取**刪除**按鈕，並確認該記錄移除時從方格。  
   
-## <a name="next-steps"></a>Next Steps  
- Depending on your application requirements, there are several steps you might want to perform after creating a data-bound form. Some enhancements you could make to this walkthrough include:  
+## <a name="next-steps"></a>後續步驟  
+ 根據您的應用程式需求，有幾個步驟，您可能想要在建立資料繫結表單後執行。 一些您可以加強這個逐步解說的部分包括：  
   
--   Adding search functionality to the form.  
+-   將搜尋功能加入至表單。  
   
--   Adding additional tables to the dataset by selecting **Configure DataSet with Wizard** from within the **Data Sources** window. You can add controls that display related data by dragging the related nodes onto the form. For more information, see [Relationships in Datasets](relationships-in-datasets.md).  
+-   選取將其他資料表加入資料集**以精靈設定資料集**從**資料來源**視窗。 您可以藉由將關聯節點拖曳至表單，加入顯示關聯資料的控制項。 如需詳細資訊，請參閱[集中的關聯性](relationships-in-datasets.md)。  
   
-## <a name="see-also"></a>See Also  
- [Save data back to the database](../data-tools/save-data-back-to-the-database.md)
+## <a name="see-also"></a>另請參閱  
+ [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

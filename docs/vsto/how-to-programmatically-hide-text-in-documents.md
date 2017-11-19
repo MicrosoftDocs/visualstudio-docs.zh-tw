@@ -1,12 +1,10 @@
 ---
-title: 'How to: Programmatically Hide Text in Documents | Microsoft Docs'
+title: "如何： 以程式設計方式隱藏文件中的文字 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -16,52 +14,55 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], hiding text
 - text [Office development in Visual Studio], hiding in documents
 ms.assetid: f5ced4ec-22ca-463b-b963-d34ce631b486
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 980f8f996665d795ace7c88ffa023115343d80da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: b9ec425a3d83ea088e47725866688ada834ffd34
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-programmatically-hide-text-in-documents"></a>How to: Programmatically Hide Text in Documents
-  You can hide text in a document by setting the <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> property of the <xref:Microsoft.Office.Interop.Word.Range.Font%2A> for a particular range of text.  
+# <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以程式設計方式在文件中隱藏文字
+  您可以針對文字的特定範圍設定 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 屬性，以隱藏文件中的文字。  
   
- For example, you can temporarily hide the text within a <xref:Microsoft.Office.Tools.Word.Bookmark> (in a document-level customization) or a <xref:Microsoft.Office.Interop.Word.Bookmark> (in an VSTO Add-in) before sending a document to a printer.  
+ 例如，您可以暫時隱藏 <xref:Microsoft.Office.Tools.Word.Bookmark> (文件層級自訂) 或 <xref:Microsoft.Office.Interop.Word.Bookmark> (VSTO 增益集) 內的文字，再將文件傳送至印表機。  
   
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]  
   
-### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>To hide text in a Bookmark control while printing the document  
+### <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>在列印文件時隱藏書籤控制項中的文字  
   
-1.  Create a procedure that hides all text that is in a specified range.  
+1.  建立隱藏指定範圍內所有文字的程序。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]  [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
+     [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
+     [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]  
   
-2.  Create a procedure that unhides all text that is in a specified range.  
+2.  建立取消隱藏指定範圍內所有文字的程序。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]  [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
+     [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
+     [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]  
   
-3.  Pass the range of a bookmark to the `HideText` method, print the document, and then pass the same range to the `UnhideText` method.  
+3.  將書籤範圍傳遞給 `HideText` 方法、列印文件，然後將相同範圍傳遞給 `UnhideText` 方法。  
   
-     The following code example can be used in a document-level customization. To use this example, run it from the `ThisDocument` class in your project.  
+     下列程式碼範例可用於文件層級自訂。 若要使用此範例，請從專案的 `ThisDocument` 類別中執行。  
   
-     [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]  [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
+     [!code-vb[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#107)]
+     [!code-csharp[Trin_VstcoreWordAutomation#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#107)]  
   
-     The following code example can be used in an VSTO Add-in. This example uses the active document. To use the example, run it from the `ThisAddIn` class in your project.  
+     下列程式碼範例可用於 VSTO 增益集。 本範例使用現用文件。 若要使用此範例，請從專案的 `ThisAddIn` 類別中執行。  
   
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]  [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
+     [!code-vb[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#107)]
+     [!code-csharp[Trin_VstcoreWordAutomationAddIn#107](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#107)]  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This code example assumes that the document contains a <xref:Microsoft.Office.Tools.Word.Bookmark> control (in a document-level customization) or <xref:Microsoft.Office.Interop.Word.Bookmark> control (in an VSTO Add-in) that is named `bookmark1`.  
+## <a name="compiling-the-code"></a>編譯程式碼  
+ 這個程式碼範例假設文件包含名為 <xref:Microsoft.Office.Tools.Word.Bookmark> 的 <xref:Microsoft.Office.Interop.Word.Bookmark> 控制項 (文件層級自訂) 或 `bookmark1`控制項 (VSTO 增益集)。  
   
-## <a name="see-also"></a>See Also  
- [How to: Programmatically Print Documents](../vsto/how-to-programmatically-print-documents.md)   
- [How to: Programmatically Define and Select Ranges in Documents](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
- [How to: Programmatically Reset Ranges in Word Documents](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
- [How to: Programmatically Update Bookmark Text](../vsto/how-to-programmatically-update-bookmark-text.md)   
- [Optional Parameters in Office Solutions](../vsto/optional-parameters-in-office-solutions.md)  
+## <a name="see-also"></a>另請參閱  
+ [如何： 以程式設計方式列印文件](../vsto/how-to-programmatically-print-documents.md)   
+ [如何： 以程式設計方式定義及選取範圍中的文件](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)   
+ [如何： 以程式設計方式在 Word 中重設範圍的文件](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)   
+ [如何： 以程式設計方式更新書籤文字](../vsto/how-to-programmatically-update-bookmark-text.md)   
+ [Office 方案中的選擇性參數](../vsto/optional-parameters-in-office-solutions.md)  
   
   

@@ -4,37 +4,21 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- IDebugPortSupplier3
-helpviewer_keywords:
-- IDebugPortSupplier3 interface
+f1_keywords: IDebugPortSupplier3
+helpviewer_keywords: IDebugPortSupplier3 interface
 ms.assetid: e458cd02-2370-4435-8953-17d7a60ce152
-caps.latest.revision: 8
+caps.latest.revision: "8"
+author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: 0eb7cf542fa61d53220cd10f54e3fbd7c6165bf4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 3bd2a46573ca655df3372c33182860cf2d4816d7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 這個介面可讓呼叫端判斷連接埠供應商可以保留連接埠 （寫入磁碟） 的偵錯工具的引動過程之間，然後取得這些保留的連接埠清單。  
@@ -52,7 +36,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  呼叫[QueryInterface](/cpp/atl/queryinterface)上`IDebugPortSupplier2`介面，以取得此介面。  
   
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
- 除了繼承自[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面，此介面支援下列︰  
+ 除了繼承自[IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)介面，此介面支援下列：  
   
 |方法|說明|  
 |------------|-----------------|  
@@ -65,11 +49,11 @@ IDebugPortSupplier3 : IDebugPortSupplier2
  偵錯引擎通常與連接埠供應商不會互動，而不會使用這個介面。  
   
 ## <a name="requirements"></a>需求  
- 標頭︰ msdbg.h  
+ 標頭： msdbg.h  
   
- 命名空間︰ Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
- 組件︰ Microsoft.VisualStudio.Debugger.Interop.dll  
+ 組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
 ## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   

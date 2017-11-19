@@ -1,56 +1,57 @@
 ---
-title: "IDebugBreakpointChecksumRequest2::GetChecksum | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IDebugBreakpointChecksumRequest2::GetChecksum"
+title: "IDebugBreakpointChecksumRequest2::GetChecksum |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: IDebugBreakpointChecksumRequest2::GetChecksum
 ms.assetid: ec434882-e5c0-4d76-a58b-22c260d8626e
-caps.latest.revision: 12
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 98ffcebd4070f86ff065e9eb3e4a1b06493cab20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugBreakpointChecksumRequest2::GetChecksum
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-擷取文件的總和檢查碼中斷點要求指定的總和檢查碼演算法的唯一識別項使用。  
+# <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
+擷取的中斷點要求指定總和檢查碼演算法的唯一識別項使用的文件總和檢查碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
+```cpp  
 HRESULT GetChecksum(   
-   REFGUID        guidAlgorithm,  
-   CHECKSUM_DATA *pChecksumData  
+   REFGUID        guidAlgorithm,  
+   CHECKSUM_DATA *pChecksumData  
 );  
 ```  
   
-```c#  
+```csharp  
 public int GetChecksum(   
-   ref Guid               guidAlgorithm,  
-   out enum_CHECKSUM_DATA pChecksumData  
+   ref Guid               guidAlgorithm,  
+   out enum_CHECKSUM_DATA pChecksumData  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `guidAlgorithm`  
- \[in\]唯一的加總檢查碼演算法識別項。  
+ [in]總和檢查碼演算法的唯一識別碼。  
   
  `pChecksumData`  
- \[\] out用中斷點要求的文件總和檢查碼。  
+ [out]中斷點要求文件總和檢查碼。  
   
-## 傳回值  
- 如果成功的話，會傳回`S_OK`。 否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## 範例  
- 下列範例會檢查文件，也就是要繫結，總和檢查碼是否符合從 UI 的函式。  
+## <a name="example"></a>範例  
+ 下列範例會檢查文件，這是即將要繫結，總和檢查碼是否符合從 UI 的函式。  
   
-```cpp#  
+```cpp  
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)  
 {  
     bool fRet = false;  
@@ -102,5 +103,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

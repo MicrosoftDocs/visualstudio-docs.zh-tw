@@ -1,27 +1,30 @@
 ---
-title: "IScriptNode::CreateChildHandler | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "IScriptNode::CreateChildHandler |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 apiname: IScriptNode.CreateChildHandler
 apilocation: scrobj.dll
-helpviewer_keywords: 
-  - "IScriptNode::CreateChildHandler"
+helpviewer_keywords: IScriptNode::CreateChildHandler
 ms.assetid: 4ce5eb10-1a3f-43b0-a4b7-599a397ed3a2
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ff2ba40d1570e23f0256bd34ca8aff0f8d77ce5c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IScriptNode::CreateChildHandler
-將 scriptlet 做為 `IScriptNode`的子執行個體。  
+# <a name="iscriptnodecreatechildhandler"></a>IScriptNode::CreateChildHandler
+將程式碼片段加入作為子執行個體`IScriptNode`。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 HRESULT CreateChildHandler(  
@@ -38,51 +41,51 @@ HRESULT CreateChildHandler(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pszDefaultName`  
- \[in\] 要與相關聯的預設名稱的地址。scriptlet。  
+ [in]使用程式碼片段相關聯的預設名稱的位址。  
   
  `prgpszNames`  
- \[in， size\_is \(`cpszNames`\)\]。從完整名稱的識別項的清單會在主應用程式。  
+ [在 size_is (`cpszNames`)] 的主機上的完整限定名稱的識別項清單。  
   
  `cpszNames`  
- \[in\] 識別項的數目。 `prgpszNames` 參數的。  
+ [in]中的識別項的數目`prgpszNames`參數。  
   
  `pszEvent`  
- \[in\] 識別事件名稱的緩衝區的位址與 scriptlet。  
+ [in]識別程式碼片段相關聯的事件名稱的緩衝區位址。  
   
  `pszDelimiter`  
- \[in\] 結束指令碼區塊符號的位址。  若要解析，主應用程式通常會使用分隔符號 \(例如兩個單引號\)，偵測指令碼區塊的結尾。  
+ [in]結束的指令碼區塊分隔符號的位址。 進行剖析，主應用程式通常使用的分隔符號 （例如兩個單引號），來偵測指令碼區塊的結尾。  
   
- 這個符號所撰寫的指令碼引擎啟用前置處理。  例如，引擎會使用兩個單引號取代一個單引號做為分隔符號。  引擎會決定使用此符號。  
+ 分隔符號，可讓前置處理指令碼撰寫引擎。 比方說，引擎可能會取代一個單引號兩個單引號做為分隔符號使用。 引擎會決定如何使用分隔符號。  
   
- 如果某個符號不是用來識別指令碼區塊的結尾，則設為 null。  
+ 如果沒有分隔符號用來識別指令碼區塊的結尾，則設為 NULL。  
   
  `ptiSignature`  
- \[in\] 函式物件的型別資訊。  
+ [in]函式物件類型資訊。  
   
  `iMethodSignature`  
- \[in\] 此函式的索引。 `ITypeInfo``ptiSignature` 參數的。  
+ [in]索引中的函式`ITypeInfo``ptiSignature`參數。  
   
  `isn`  
- \[in\] 父代的子系的索引。  
+ [in]與父系的子系的索引。  
   
  `dwCookie`  
- \[in\] 用來使項目與主應用程式物件的應用程式定義的值。  
+ [in]應用程式定義值，用來將項目與主應用程式物件產生關聯。  
   
  `ppse`  
- \[out\] 接收指標子執行個體的介面 `IScriptEntry` 變數的位址。  
+ [out]收到的指標變數的位址`IScriptEntry`子執行個體的介面。  
   
-## 傳回值  
- `HRESULT`。  可能的值包括，，但不限於\)，這些在下表中。  
+## <a name="return-value"></a>傳回值  
+ `HRESULT`。 可能的值包括 (但不限於) 下表中的這些值。  
   
-|值|描述|  
-|-------|--------|  
+|值|說明|  
+|-----------|-----------------|  
 |`S_OK`|方法成功。|  
   
-## 備註  
- scriptlet 指定事件處理常式。  這個方法會建立 scriptlet，若以表示 Web 網頁 `IScriptNode` 物件呼叫。  如果它是由其他介面，呼叫這個方法不會成功。  
+## <a name="remarks"></a>備註  
+ 程式碼片段會指定事件處理常式。 如果它由呼叫這個方法會建立程式碼片段`IScriptNode`物件，代表網頁。 如果其他介面呼叫此方法不會成功。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IScriptNode 介面](../../winscript/reference/iscriptnode-interface.md)   
  [IScriptEntry 介面](../../winscript/reference/iscriptentry-interface.md)

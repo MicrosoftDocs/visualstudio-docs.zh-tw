@@ -1,68 +1,68 @@
 ---
-title: "IEnumDebugBoundBreakpoints2 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IEnumDebugBoundBreakpoints2"
-helpviewer_keywords: 
-  - "IEnumDebugBoundBreakpoints2"
+title: "IEnumDebugBoundBreakpoints2 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IEnumDebugBoundBreakpoints2
+helpviewer_keywords: IEnumDebugBoundBreakpoints2
 ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
-caps.latest.revision: 11
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: e7e5f158a39974fca4a631617a0a26b38c5c6a12
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IEnumDebugBoundBreakpoints2
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-這個介面會列舉繫結相關聯的暫止中斷點的中斷點或中斷點繫結事件。  
+# <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
+這個介面會列舉暫止中斷點相關聯的繫結的中斷點或中斷點繫結的事件。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 IEnumDebugBoundBreakpoints2 : IUnknown  
 ```  
   
-## 實作器注意事項  
- 偵錯引擎 \(DE\) 會實作這個介面支援中斷點的一部分。  如果支援中斷點，就必須實作這個介面。  
+## <a name="notes-for-implementers"></a>實作者注意事項  
+ 偵錯引擎 (DE) 會實作這個介面做為其支援中斷點的一部分。 如果支援中斷點，則必須實作這個介面。  
   
-## 呼叫者的備忘稿  
- Visual Studio 的呼叫：  
+## <a name="notes-for-callers"></a>呼叫端資訊  
+ Visual Studio 會呼叫：  
   
--   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)若要取得這個介面表示一份已觸發的所有中斷點。  
+-   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)取得此介面代表所觸發的所有中斷點的清單。  
   
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)若要取得這個介面表示一份已繫結的所有中斷點。  
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)取得此介面代表已繫結的所有中斷點的清單。  
   
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)若要取得這個介面表示一份所有繫結至該暫止中斷點的中斷點。  
+-   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)取得此介面代表的所有繫結至該暫止中斷點的中斷點清單。  
   
-## 方法 Vtable 順序  
+## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IEnumDebugBoundBreakpoints2`。  
   
-|方法|描述|  
-|--------|--------|  
-|[下一步](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|擷取指定的列舉型別序列中的繫結中斷點。|  
-|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|略過指定的數目的列舉型別序列中的繫結中斷點。|  
-|[重設](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|將列舉型別序列重設至開頭。|  
-|[複製](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態。|  
+|方法|說明|  
+|------------|-----------------|  
+|[下一步](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-next.md)|擷取指定的數目的列舉順序中的繫結中斷點。|  
+|[Skip](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-skip.md)|略過指定的數目的列舉順序中的繫結中斷點。|  
+|[重設](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-reset.md)|列舉序列重設為開頭。|  
+|[複製](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-clone.md)|建立列舉值，包含目前的列舉值的列舉型別狀態相同。|  
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2-getcount.md)|取得列舉值中的繫結中斷點的數目。|  
   
-## 備註  
- Visual Studio 會使用這個介面表示繫結的中斷點，以更新顯示在 IDE 中的中斷點。  
+## <a name="remarks"></a>備註  
+ Visual Studio 會使用由這個介面的繫結的中斷點，以更新顯示在 IDE 中的中斷點。  
   
-## 需求  
- 標頭: msdbg.h  
+## <a name="requirements"></a>需求  
+ 標頭： msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ 命名空間： Microsoft.VisualStudio.Debugger.Interop  
   
  組件： Microsoft.VisualStudio.Debugger.Interop.dll  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [核心介面](../../../extensibility/debugger/reference/core-interfaces.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md)   
  [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md)   
