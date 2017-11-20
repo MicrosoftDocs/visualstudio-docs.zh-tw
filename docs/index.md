@@ -1,14 +1,13 @@
 ---
 layout: HubPage
-hide_bc: true
-title: Visual Studio Documentation
-description: Learn how to use Visual Studio 2017 to develop applications, services, and tools in the language of your choice, for your platforms and devices.
+hide_bc: True
+title: "Visual Studio 文件 | Microsoft Docs"
+description: "了解如何使用 Visual Studio 2017 以您選擇的語言，為您的平台和裝置開發應用程式、服務及工具。"
+ms.openlocfilehash: f33fce2ca2020827e2013199e596c0e6be2e9793
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: f4b17810a2f59aeee8d6002059d65928882fd51f
-ms.openlocfilehash: 5b20d403d64825f519697b5069ec94eb46233c20
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/08/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -24,8 +23,8 @@ ms.lasthandoff: 09/08/2017
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Setup &amp; Installation</h3>
-                                    <p>Learn how to install and set up Visual Studio.</p>
+                                    <h3>設定 &amp; 安裝</h3>
+                                    <p>了解如何安裝和設定 Visual Studio。</p>
                                 </div>
                             </div>
                         </div>
@@ -43,8 +42,8 @@ ms.lasthandoff: 09/08/2017
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Get Started with Visual Studio</h3>
-                                    <p>Develop any app for any platform.</p>
+                                    <h3>Visual Studio 使用者入門</h3>
+                                    <p>為任何平台開發任何應用程式。</p>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +61,7 @@ ms.lasthandoff: 09/08/2017
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>What's New in Visual Studio 2017</h3>
+                                    <h3>Visual Studio 2017 的新功能</h3>
                                 </div>
                             </div>
                         </div>
@@ -72,17 +71,17 @@ ms.lasthandoff: 09/08/2017
         </ul>
     </div>
     <div class="container">
-        <h1>Visual Studio Documentation</h1>
+        <h1>Visual Studio 文件</h1>
         <ul class="pivots">
             <li>
-                <a href="#workloads">Workloads</a>
+                <a href="#workloads">工作負載</a>
                 <ul id="workloads">
                     <li>
                         <a href="#windows">Windows</a>
                         <ul id="windows" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Develop apps and games using Visual Studio to reach every device running Windows.</p>
+                                    <p>使用 Visual Studio 開發應用程式與遊戲，並觸達所有執行 Windows 的裝置。</p>
                                 </div>
                             </li>
                             <li>
@@ -92,12 +91,12 @@ ms.lasthandoff: 09/08/2017
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1 cardScaleImage">
-                                                        <img data-scaleimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
+                                                        <img data-hoverimage="./images/vs_windows-1.svg" src="./images/vs_windows-1.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Universal Windows Platform development</h3>
-                                                    <p>Develop applications for Windows 10 with the Windows Universal Platform and C#, VB, or C++.</p>
+                                                    <h3>通用 Windows 平台開發</h3>
+                                                    <p>使用 Windows 通用平台和 C#、VB 或 C++ 開發 Windows 10 應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,8 +114,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>.NET Desktop development</h3>
-                                                    <p>Build WPF, Windows Forms, and console applications using the .NET Framework.</p>
+                                                    <h3>.NET 桌面開發</h3>
+                                                    <p>使用 .NET Framework 建置 WPF、Windows Form 及主控台應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -134,8 +133,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Windows development with C++</h3>
-                                                    <p>Build classic Windows-based applications using the power of MFC, ATL, and the Microsoft C++ toolset.</p>
+                                                    <h3>使用 C++ 進行 Windows 開發</h3>
+                                                    <p>使用 MFC、ATL 和 Microsoft C++ 工具組的功能建置傳統 Windows 應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,11 +144,11 @@ ms.lasthandoff: 09/08/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#web">Web &amp; Cloud</a>
+                        <a href="#web">Web &amp; 雲端</a>
                         <ul id="web" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Develop modern web apps using Visual Studio and powerful open tools.
+                                    <p>使用 Visual Studio 和強大的開放式工具開發新式 Web 應用程式。
                                     </p>
                                 </div>
                             </li>
@@ -164,8 +163,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Web development</h3>
-                                                    <p>Build web apps with ASP.NET and standards-based technologies like HTML, JavaScript, and CSS.</p>
+                                                    <h3>Web 程式開發</h3>
+                                                    <p>使用 ASP.NET 和 HTML、JavaScript 及 CSS 等標準技術建置 Web 應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -183,8 +182,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Azure development and management</h3>
-                                                    <p>Easily build, test, deploy, and manage scalable apps and services on the Microsoft cloud.</p>
+                                                    <h3>Azure 開發和管理</h3>
+                                                    <p>輕鬆地建置、測試、部署和管理 Microsoft 雲端上的可擴充應用程式和服務。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,7 +202,7 @@ ms.lasthandoff: 09/08/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Python</h3>
-                                                    <p>Interactive development for Python apps, using familiar frameworks including Django and Flask.</p>
+                                                    <p>使用包括 Django 和 Flask 在內的熟悉架構，針對 Python 應用程式進行互動式開發。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,7 +221,7 @@ ms.lasthandoff: 09/08/2017
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Node.js</h3>
-                                                    <p>Build scalable network applications using Node.js, an asnchronous, event-driven JavaScript runtime.</p>
+                                                    <p>使用 Node.js (非同步的事件導向 JavaScript 執行階段) 建置可擴充的網路應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -240,8 +239,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Data storage and processing</h3>
-                                                    <p>A full suite of tools for database developers to create solutions for SQL Server, Hadoop, and Azure ML.</p>
+                                                    <h3>資料儲存體和流程</h3>
+                                                    <p>用來透過 SQL Server、Azure Data Lake、Hadoop 來開發及測試資料解決方案的工具和架構。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,8 +258,8 @@ ms.lasthandoff: 09/08/2017
                                         </div>
                                         </div>
                                           <div class="cardText">
-                                            <h3>Data science and analytical applications</h3>
-                                            <p>Languages and tooling for creating data science applications, including Python, R, and F#.</p>
+                                            <h3>資料科學和分析應用程式</h3>
+                                            <p>用於建立資料科學應用程式的語言與工具，包括 Python、R 及 F#。</p>
                                         </div>
                                       </div>
                                     </div>
@@ -278,8 +277,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Office/SharePoint development</h3>
-                                                    <p>Create Office and SharePoint add-ins and solutions using C#, Visual Basic, and JavaScript.</p>
+                                                    <h3>Office/SharePoint 程式開發</h3>
+                                                    <p>使用 C#、Visual Basic 和 JavaScript，建立 Office 與 SharePoint 的增益集和解決方案。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -289,11 +288,11 @@ ms.lasthandoff: 09/08/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#mobile">Mobile &amp; Gaming</a>
+                        <a href="#mobile">行動裝置 &amp; 遊戲</a>
                         <ul id="mobile" class="cardsC">
                             <li>
                                 <div class="container intro">
-                                    <p>Create native or hybrid mobile apps that target Android, iOS, and Windows.</p>
+                                    <p>建立以 Android、iOS 及 Windows 為目標的原生或混合式行動裝置應用程式。</p>
                                 </div>
                             </li>
                             <li>
@@ -307,8 +306,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Mobile development with .NET</h3>
-                                                    <p>Build cross-platform applications for iOS, Android, or Windows using Xamarin.</p>
+                                                    <h3>使用 .NET 的行動應用程式開發</h3>
+                                                    <p>使用 Xamarin，建置 iOS、Android 或 Windows 的跨平台應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -326,8 +325,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Game development with Unity</h3>
-                                                    <p>Create 2D and 3D games with unity, a powerful cross-platform development environment.</p>
+                                                    <h3>使用 Unity 的遊戲程式開發</h3>
+                                                    <p>使用強大的跨平台開發環境 Unity 來建立 2D 和 3D 遊戲。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -345,8 +344,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Mobile development with JavaScript</h3>
-                                                    <p>Build cross-platform applications for iOS, Android, or Windows using the Apache Cordova framework.</p>
+                                                    <h3>使用 JavaScript 的行動裝置程式開發</h3>
+                                                    <p>使用 Apache Cordova 架構，建置 iOS、Android 或 Windows 的跨平台應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -364,8 +363,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Mobile development with C++</h3>
-                                                    <p>Build cross-platform applications for iOS, Android, or Windows using C++.</p>
+                                                    <h3>使用 C++ 的行動裝置程式開發</h3>
+                                                    <p>使用 C++，建置 iOS、Android 或 Windows 的跨平台應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -383,8 +382,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Game development with C++</h3>
-                                                    <p>Use the full power of C++ to build professional games powered by DirectX, Unreal, or Cocos2D.</p>
+                                                    <h3>使用 C++ 的遊戲程式開發</h3>
+                                                    <p>使用 C++ 的完整功能，建置由 DirectX、Unreal 或 Cocos2D 技術提供的專業遊戲。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -394,7 +393,7 @@ ms.lasthandoff: 09/08/2017
                         </ul>
                     </li>
                     <li>
-                        <a href="#other">Other Toolsets</a>
+                        <a href="#other">其他工具組</a>
                         <ul id="other" class="cardsC">
                             <li>
                                 <a href="https://go.microsoft.com/fwlink/?linkid=834750">
@@ -407,8 +406,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Visual Studio extension development</h3>
-                                                    <p>Create add-ons that extend Visual Studio, such as commands, code analyzers, and tool windows.</p>
+                                                    <h3>Visual Studio 擴充功能開發</h3>
+                                                    <p>建立可擴充 Visual Studio 的附加元件，例如命令、程式碼分析器和工具視窗。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -426,8 +425,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Linux development with C++</h3>
-                                                    <p>Create and debug applications running in a Linux environment.</p>
+                                                    <h3>使用 C++ 的 Linux 程式開發</h3>
+                                                    <p>建立和偵錯 Linux 環境中執行的應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -445,8 +444,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>.NET Core cross-platform development</h3>
-                                                    <p>Build cross-platform applications using .NET Core, ASP.NET Core, HTML, JavaScript, and container development tools.</p>
+                                                    <h3>.NET Core 跨平台開發</h3>
+                                                    <p>使用 .NET Core、ASP.NET Core、HTML、JavaScript 及容器開發工具來建置跨平台的應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -458,7 +457,7 @@ ms.lasthandoff: 09/08/2017
                 </ul>
             </li>
             <li>
-                <a href="#features">Features</a>
+                <a href="#features">功能</a>
                 <ul id="features">
                     <li>
                         <a href="#features1"> </a>
@@ -474,8 +473,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Develop</h3>
-                                                    <p>Write and manage your code using the code editor.</p>
+                                                    <h3>開發</h3>
+                                                    <p>使用程式碼編輯器撰寫並管理您的程式碼。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,8 +492,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Build</h3>
-                                                    <p>Compile and build your source code.</p>
+                                                    <h3>組建</h3>
+                                                    <p>編譯和建置您的原始程式碼。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -512,8 +511,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Debug</h3>
-                                                    <p>Investigate and fix problems with your code.</p>
+                                                    <h3>偵錯</h3>
+                                                    <p>調查並修正您的程式碼問題。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -531,8 +530,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Test</h3>
-                                                    <p>Organize your testing processes.</p>
+                                                    <h3>測試</h3>
+                                                    <p>組織您的測試流程。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -550,8 +549,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Deploy</h3>
-                                                    <p>Share your apps using Web Deploy, InstallShield, and Continuous Integration, and more.</p>
+                                                    <h3>部署</h3>
+                                                    <p>使用 Web Deploy、InstallShield 和連續整合等等，來共用您的應用程式。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -559,18 +558,37 @@ ms.lasthandoff: 09/08/2017
                                 </a>
                             </li>
                             <li>
-                                <a href="https://go.microsoft.com/fwlink/?linkid=833080">
+                                <a href="/vsts/#pivot=services&panel=code">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img data-scaleimage="./images/vs_features-6.svg" src="./images/vs_features-6.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-version-control.svg" src="./images/vs-hub-docs-features-version-control.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Collaborate</h3>
-                                                    <p>Share code using version control technologies such as Git and TFVC.</p>
+                                                    <h3>版本控制</h3>
+                                                    <p>使用 Git 和 TFVC 等版本控制技術來共用程式碼。</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/vsts">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img data-scaleimage="./images/vs-hub-docs-features-devops.svg" src="./images/vs-hub-docs-features-devops.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>DevOps</h3>
+                                                    <p>持續建置應用程式並將它發行至雲端，並透過 VSTS 實作敏捷式做法。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -588,8 +606,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Improve Performance</h3>
-                                                    <p>Identify bottlenecks and optimize code performance by using diagnostic tools.
+                                                    <h3>改善效能</h3>
+                                                    <p>識別瓶頸，並使用診斷工具將程式碼效能最佳化。
                                                     </p>
                                                 </div>
                                             </div>
@@ -608,8 +626,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Extend</h3>
-                                                    <p>Add your own functionality to the Visual Studio IDE to improve your development experience.</p>
+                                                    <h3>擴充</h3>
+                                                    <p>將您自己的功能加入至 Visual Studio IDE 來改善您的開發經驗。</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -627,8 +645,8 @@ ms.lasthandoff: 09/08/2017
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Data</h3>
-                                                    <p>Create data apps that connect to any database or service, and anywhere&#8212;local or cloud. </p>
+                                                    <h3>資料</h3>
+                                                    <p>建立連線到任何資料庫或服務，及任何位置 (本機或雲端) 的資料應用程式。 </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -640,7 +658,7 @@ ms.lasthandoff: 09/08/2017
                 </ul>
             </li>
             <li>
-                <a href="#languages">Languages</a>
+                <a href="#languages">語言</a>
                 <ul id="languages">
                     <li>
                         <a href="#languages1"> </a>
@@ -657,7 +675,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833062">
                                                     <h3>C#</h3>
-                                                    <p>A modern object-oriented programming language with functional programming capabilities for building any application on the .NET platform.</p>
+                                                    <p>一種新式的物件導向程式設計語言，提供的功能性程式設計能力可在 .NET 平台上建置任何應用程式。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -676,7 +694,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833060">
                                                     <h3>Visual Basic</h3>
-                                                    <p>A modern, easy to learn, object-oriented programming language for the .NET platform, focused on easily creating Windows applications.</p>
+                                                    <p>新式、易於了解的 .NET 平台物件導向程式設計語言，著重於讓人輕鬆建立 Windows 應用程式。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -694,8 +712,8 @@ ms.lasthandoff: 09/08/2017
                                             </div>
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833063">
-                                                    <h3>Visual C++</h3>
-                                                    <p>A powerful and flexible programming language and development environment for creating applications for Windows, Linux, iOS, and Android.</p>
+                                                    <h3>C++</h3>
+                                                    <p>功能強大且靈活的程式設計語言和開發環境，可用來建立 Windows、Linux、iOS 和 Android 的應用程式。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -714,7 +732,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833067">
                                                     <h3>F#</h3>
-                                                    <p>A modern functional programming language with object-oriented capabilities for the .NET platform, focused on making Functional Programming easier for any task.</p>
+                                                    <p>新式的功能性程式設計語言，提供適用於 .NET 平台的物件導向能力，著重於讓人更容易對任何工作進行功能性程式設計。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -733,7 +751,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833064">
                                                     <h3>JavaScript</h3>
-                                                    <p>A lightweight, cross-platform, scripting language often used to help make web pages more interactive.</p>
+                                                    <p>跨平台的輕量型指令碼語言，經常用來製作更具互動性的網頁。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -752,7 +770,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833066">
                                                     <h3>TypeScript</h3>
-                                                    <p>A superset of JavaScript that compiles to plain JavaScript and enables you to create more scalable code.</p>
+                                                    <p>JavaScript 的超集，可編譯成純文字 JavaScript，並讓您建立更可擴充的程式碼。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -771,7 +789,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833068">
                                                     <h3>Python</h3>
-                                                    <p>A dynamic object-oriented, high-level programming language often used for rapid application development.</p>
+                                                    <p>動態、物件導向的高階程式設計語言，經常用於快速應用程式開發。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -790,7 +808,7 @@ ms.lasthandoff: 09/08/2017
                                             <div class="cardText">
                                                 <a href="https://go.microsoft.com/fwlink/?linkid=833070">
                                                     <h3>R</h3>
-                                                    <p>An extensible programming language typically used for statistical computing and graphics.</p>
+                                                    <p>可延伸的程式設計語言，一般用於統計資料運算和圖形。</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -804,10 +822,10 @@ ms.lasthandoff: 09/08/2017
         </ul>
     </div>
     <div class="container centered pageFooter">
-        <h2>Keep in touch with us</h2>
+        <h2>和我們保持連絡</h2>
         <ul class="links">
            <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> Blog </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833100"> 部落格 </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833101"> Twitter </a>
@@ -816,7 +834,7 @@ ms.lasthandoff: 09/08/2017
                 <a href="https://go.microsoft.com/fwlink/?linkid=833103"> Stack Overflow </a>
             </li>
             <li>
-                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> Issue Reporting </a>
+                <a href="https://go.microsoft.com/fwlink/?linkid=833104"> 問題報告 </a>
             </li>
             <li>
                 <a href="https://go.microsoft.com/fwlink/?linkid=833105"> User Voice </a>
@@ -824,4 +842,3 @@ ms.lasthandoff: 09/08/2017
         </ul>
     </div>
 </div>
-
