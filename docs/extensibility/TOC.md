@@ -7,7 +7,6 @@
 ## [VSIX v3 中的 Ngen 支援](ngen-support.md)
 ## [在擴充功能資料夾之外進行安裝](set-install-root.md)
 ## [移轉偵錯工具 COM 註冊](migrate-debugger-com-registration.md)
-## [輕量型解決方案載入](lightweight-solution-load-extension-impact.md)
 ## [常見問題集](faq-2017.md)
 # [如何︰將擴充性專案移轉至 Visual Studio 2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
 # [如何：適用於 Visual Studio 的往返擴充功能](how-to-roundtrip-VSIXs.md)
