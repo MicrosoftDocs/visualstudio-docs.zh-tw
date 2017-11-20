@@ -1,105 +1,88 @@
 ---
-title: Debug using the Just-In-Time Debugger | Microsoft Docs
+title: "使用 Just-In-Time 偵錯工具進行偵錯 |Microsoft 文件"
 ms.custom: 
 ms.date: 07/06/17
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - debugging [Visual Studio], Just-In-Time
 - Just-In-Time debugging
 ms.assetid: ee4d79a5-a1d2-4418-a93f-dd57a53e1836
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: 79cf2896fa6dca5c6846768f30e180ae540af6b8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.openlocfilehash: 470e4c728d246570e6f7e38ff3b71772de5b05fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Debug using the Just-In-Time Debugger in Visual Studio
-Just-In-Time debugging launches Visual Studio automatically when an exception or crash occurs in an application that is running outside Visual Studio. This enables you to test your application when Visual Studio is not running, and begin debugging with Visual Studio when a problem occurs.
+# <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>使用 Visual Studio 中的 Just-In-Time 偵錯工具進行偵錯
+在 Just-in-time 偵錯 Visual Studio 會自動啟動時執行 Visual Studio 外部的應用程式中發生的例外狀況或損毀。 這可讓您測試您的應用程式未執行 Visual Studio，並開始發生問題時，使用 Visual Studio 偵錯。
 
-Just-In-Time debugging works for Windows desktop apps. It does not work for Universal Windows Apps, and it does not work for managed code that is hosted in a native application, such as Visualizers.
+在 Just-in-time 偵錯適用於 Windows 桌面應用程式。 它不適用於通用 Windows 應用程式，並不適用於裝載在原生應用程式，例如視覺化檢視中的 managed 程式碼。
 
 > [!TIP] 
-> If you just want to know how to respond to the Just-in-Time debugger dialog box, see [this topic](../debugger/just-in-time-debugging-in-visual-studio.md).
+> 如果您只想要知道如何回應的時間只需偵錯工具 對話方塊，請參閱[本主題](../debugger/just-in-time-debugging-in-visual-studio.md)。
 
-##  <a name="BKMK_Enabling"></a> Enable or disable Just-In-Time debugging  
-You can enable or disable Just-In-Time debugging from the Visual Studio **Tools > Options** dialog box.
+##  <a name="BKMK_Enabling"></a>啟用或停用時間恰好偵錯  
+您可以啟用或停用 Just 時間從 Visual Studio 偵錯**工具 > 選項** 對話方塊。
   
-#### <a name="to-enable-or-disable-just-in-time-debugging"></a>To enable or disable Just-In-Time debugging  
+#### <a name="to-enable-or-disable-just-in-time-debugging"></a>若要啟用或停用 Just-In-Time 偵錯  
   
-1.  Open Visual Studio with Administrator privileges (right-click and choose **Run as administrator**).
+1.  以系統管理員權限開啟 Visual Studio (以滑鼠右鍵按一下，然後選擇 **系統管理員身分執行**)。
 
-    Enabling or disabling Just-In-Time debugging sets a registry key, and Administrator privileges may be required to change that key.
+    啟用或停用時間恰好偵錯設定的登錄機碼，可能需要系統管理員權限，才能變更該金鑰。
     
-2. On the **Tools** menu, click **Options**.
+2. 在 [ **工具** ] 功能表上按一下 [ **選項**]。
   
-2.  In the **Options** dialog box, expand the **Debugging** node.  
+2.  在**選項**對話方塊方塊中，展開 **偵錯**節點。  
   
-3.  In the **Debugging** node, select **Just-In-Time**.
+3.  在**偵錯**節點中，選取**時間恰好**。
 
-    ![Enable or Disable JIT Debugging](../debugger/media/dbg-jit-enable-or-disable.png "Enable or Disable JIT Debugging") 
+    ![啟用或停用 JIT 偵錯](../debugger/media/dbg-jit-enable-or-disable.png "啟用或停用 JIT 偵錯") 
   
-4.  In the **Enable Just-In-Time debugging of these types of code** box, select or clear the relevant program types: **Managed**, **Native**, or **Script**.    
+4.  在**啟用 Just-In-Time 偵錯這些程式碼類型**方塊中，選取或清除相關的程式類型： **Managed**，**原生**，或**指令碼**.    
   
-5.  Click **OK**.  
+5.  按一下 [確定]。  
   
-Just-In-Time debugging may still be enabled even if Visual Studio is no longer installed on your computer. When Visual Studio is not installed, you cannot disable Just-In-Time debugging from the Visual Studio **Options** dialog box. In that case, you can disable Just-In-Time debugging by editing the Windows registry.  
+即使電腦上已沒有安裝 Visual Studio，Just-In-Time 偵錯可能仍然為啟用狀態。 未安裝 Visual Studio 時，您無法停用 Just 時間從 Visual Studio 偵錯**選項** 對話方塊。 在此情況下，您可以編輯 Windows 登錄來停用 Just-In-Time 偵錯。  
   
-#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>To disable Just-In-Time debugging by editing the registry  
+#### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>若要編輯登錄來停用 Just-In-Time 偵錯  
   
-1.  On the **Start** menu, search for and run `regedit.exe`  
+1.  在**啟動**功能表中，搜尋並執行`regedit.exe`  
   
-2.  In the **Registry Editor** window, locate and delete the following registry entries:  
+2.  在**登錄編輯程式**視窗中，找出並刪除下列登錄項目：  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\DbgManagedDebugger  
 
-    ![JIT Registry Key](../debugger/media/dbg-jit-registry.png "JIT Registry Key") 
+    ![JIT 登錄機碼](../debugger/media/dbg-jit-registry.png "JIT 登錄機碼") 
   
-3.  If your computer is running a 64-bit operating system, delete the following registry entries also:  
+3.  如果您的電腦執行 64 位元作業系統，也刪除下列登錄項目：  
   
     -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger  
   
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger  
+    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\。NETFramework\DbgManagedDebugger  
   
-4.  Take care not to accidentally delete or change any other registry keys.  
+4.  請小心不要刪除或變更其他任何登錄機碼。  
   
-5.  Close the **Registry Editor** window.   
+5.  關閉**登錄編輯程式**視窗。   
   
-#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>To enable Just-In-Time debugging of a Windows Form  
+#### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>若要啟用 Windows Form 的 Just-In-Time 偵錯  
   
-1.  By default, Windows Forms applications have a top-level exception handler that allows the program to continue to run if it can recover. For example, if your Windows Forms application throws an unhandled exception, you will see a dialog like the following:  
+1.  根據預設，Windows Forms 應用程式具有最上層的例外狀況處理常式，允許程式在能夠復原時繼續執行。 比方說，如果您的 Windows Form 應用程式擲回未處理的例外狀況，會看到一個對話方塊，如下所示：  
   
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")  
   
-     To enable Just-In-Time debugging of a Windows Forms application, you must perform the following additional steps:  
+     若要啟用時間恰好偵錯 Windows Forms 應用程式，您必須執行下列額外的步驟：  
   
-2.  Set the `jitDebugging` value to `true` in the `system.windows.form` section of the machine.config or *\<application name>*.exe.config file:  
+2.  設定`jitDebugging`值設定為`true`中`system.windows.form`區段 machine.config 或*\<應用程式名稱 >*。.exe.config 檔案：  
   
     ```  
     <configuration>  
@@ -107,28 +90,28 @@ Just-In-Time debugging may still be enabled even if Visual Studio is no longer i
     </configuration>  
     ```  
   
-3.  In a C++ Windows Form application, you must also set `DebuggableAttribute` in a .config file or in your code. If you compile with [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) and without [/Og](/cpp/build/reference/og-global-optimizations), the compiler sets this attribute for you. If you want to debug a non-optimized release build, however, you must set this yourself. You can do this by adding the following line to your the AssemblyInfo.cpp file of your application:  
+3.  在 C++ Windows Form 應用程式中，您也必須在 .config 檔或您的程式碼中設定 `DebuggableAttribute`。 如果您使用編譯[/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) ，而不[/Og](/cpp/build/reference/og-global-optimizations)，編譯器會將這個屬性設為您。 然而，如果您要對非最佳化的發行組建進行偵錯，則必須自行完成此設定。 若要這樣做，您可以將下面這行程式碼加入至應用程式的 AssemblyInfo.cpp 檔案。  
   
     ```  
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];   
     ```  
   
-     For more information, see <xref:System.Diagnostics.DebuggableAttribute>.  
+     如需詳細資訊，請參閱<xref:System.Diagnostics.DebuggableAttribute>。  
   
-## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">Use Just-In-Time Debugging  
- This section shows what happens when an executable throws an exception.  
+## <a name="a-namebkmkusingjituse-just-in-time-debugging"></a><a name="BKMK_Using_JIT">使用在 Just-in-time 偵錯  
+ 此區段會顯示可執行檔就會擲回例外狀況時，會發生什麼事。  
   
- You must have Visual Studio installed to follow these steps. If you don't have Visual Studio, you can download the free [Visual Studio Community Edition](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).  
+ 您必須遵循下列步驟安裝 Visual Studio。 如果您沒有 Visual Studio，您可以下載免費[Visual Studio Community 版本](https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=Community&rel=15)。  
   
- Make sure that Just-In-Time debugging is [enabled](#BKMK_Enabling).
+ 請確定該恰好時間偵錯[啟用](#BKMK_Enabling)。
   
- For the purposes of this section, we'll make a C# console app in Visual Studio that throws a [NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a).  
+ 基於本章節的目的，我們要 C# 主控台應用程式會擲回的 Visual Studio 中[NullReferenceException](http://msdn.microsoft.com/Library/658af786-d893-4114-a3c5-31c7d586056a)。  
   
- In Visual Studio, create a C# console app (**File > New > Project > Visual C# > Console Application**) named **ThrowsNullException**. For more information about creating projects in Visual Studio, see [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).  
+ 在 Visual Studio 中建立 C# 主控台應用程式 (**檔案 > 新增 > 專案 > Visual C# > 主控台應用程式**) 名為**ThrowsNullException**。 如需 Visual Studio 中建立專案的詳細資訊，請參閱[逐步解說： 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)。  
   
- When the project opens in Visual Studio, open the Program.cs file. Replace the Main() method with the following code, which prints a line to the console and then throws a NullReferenceException:  
+ 當專案開啟時 Visual Studio 中時，開啟 Program.cs 檔案中。 取代為下列程式碼，其會列印到主控台一行，然後擲回 NullReferenceException 的 main （） 方法：  
   
-```C#  
+```csharp  
 static void Main(string[] args)  
 {  
     Console.WriteLine("we will now throw a NullReferenceException");  
@@ -137,64 +120,64 @@ static void Main(string[] args)
 ```  
   
 > [!IMPORTANT]
->  In order for this procedure to work in a [release configuration](../debugger/how-to-set-debug-and-release-configurations.md), you need to turn off [Just My Code](../debugger/just-my-code.md). In Visual Studio, click **Tools > Options**. In the **Options** dialog, select **Debugging**. Remove the check from **Enable Just My Code**.  
+>  為了讓這個程序運作[發行組態](../debugger/how-to-set-debug-and-release-configurations.md)，您必須關閉[Just My Code](../debugger/just-my-code.md)。 在 Visual Studio 中，按一下 **工具 > 選項**。 在**選項**對話方塊中，選取**偵錯**。 移除從檢查**啟用 Just My Code**。  
   
- Build the solution (in Visual Studio, choose **Build > Rebuild Solution**). You can choose either the Debug or the Release configuration (choose **Debug** for the full debugging experience). For more information about build configurations, see [Understanding Build Configurations](../ide/understanding-build-configurations.md).  
+ 建置方案 (在 Visual Studio 中，選擇 **建置 > 重建方案**)。 您可以選擇偵錯或發行組態 (選擇**偵錯**完整的偵錯經驗)。 如需建置組態的詳細資訊，請參閱[了解建置組態](../ide/understanding-build-configurations.md)。  
   
- The build process creates an executable ThrowsNullException.exe. You can find it under the folder where you created the C# project: **...\ThrowsNullException\ThrowsNullException\bin\Debug** or **...\ThrowsNullException\ThrowsNullException\bin\Release**.  
+ 在建置程序會建立可執行檔的 ThrowsNullException.exe。 您可以建立 C# 專案的資料夾底下找到它： **...\ThrowsNullException\ThrowsNullException\bin\Debug**或**...\ThrowsNullException\ThrowsNullException\bin\Release**。  
   
- Double-click the ThrowsNullException.exe. You should see a command window like this:  
+ 按兩下 ThrowsNullException.exe。 您應該會看到命令視窗中的，像這樣：  
   
  ![ThrowsNullExceptionConsole](../debugger/media/throwsnullexceptionconsole.png "ThrowsNullExceptionConsole")  
   
- After a few seconds, an error window appears:  
+ 幾秒之後，會出現錯誤視窗：  
   
  ![ThrowsNullExceptionError](../debugger/media/throwsnullexceptionerror.png "ThrowsNullExceptionError")  
   
- Do not click **Cancel**! After a few seconds, you should see two buttons, **Debug** and **Close program**. Click **Debug**.  
+ 不要在上面按一下**取消**！ 幾秒之後，您應該會看到兩個按鈕，**偵錯**和**關閉程式**。 按一下**偵錯**。  
   
 > [!CAUTION]
->  If your application contains untrusted code, a dialog box with a security warning appears. This dialog box enables you to decide whether or not to proceed with debugging. Before you continue with debugging, decide whether you trust the code. Did you write the code yourself? Do you trust the coder? If the application is running on a remote machine, do you recognize the name of the process? Even if the application is running locally, that does not necessarily mean it can be trusted. Consider the possibility of malicious code running on your computer. If you decide that the code you are about to debug is trustworthy, click **Debug**. Otherwise, click **Don't Debug**.  
+>  如果您的應用程式包含不受信任的程式碼，就會出現安全性警告對話方塊。 這個對話方塊可讓您決定是否繼續偵錯。 在繼續偵錯之前，請決定這是否為可以信任的程式碼。 這是您自行撰寫的程式碼嗎？ 您信任撰寫這個程式碼的人嗎？ 如果應用程式在遠端電腦上執行，您認得它的處理序名稱嗎？ 即使應用程式在本機執行，也不代表絕對可以信任。 請考慮您的電腦上執行的惡意程式碼的可能性。 如果您決定的程式碼您即將偵錯的可信任，按一下**偵錯**。 否則，請按一下**不偵錯**。  
   
- The **Visual Studio Just-In-Time Debugger** window appears:  
+ **Visual Studio Just-In-Time 偵錯工具** 視窗隨即出現：  
   
  ![JustInTimeDialog](../debugger/media/justintimedialog.png "JustInTimeDialog")  
   
- Under **Possible Debuggers**, you should see that the **New instance of Microsoft Visual Studio <available version>** line is selected. If it isn't selected already, select it now.  
+ 在下**可能的偵錯工具**，您應該會看到**Microsoft Visual Studio 的新執行個體<available version>**列已選取。 如果已選取，選取該選項。  
   
- At the bottom of the window, under **Do you want to debug using the selected debugger?**, click **Yes**.  
+ 在視窗底部下**您要使用選取的偵錯工具進行偵錯？**，按一下 **是**。  
   
- The ThrowsNullException project opens in a new instance of Visual Studio, with execution stopped at the line that throws the exception:  
+ ThrowsNullException 專案可開啟的 Visual Studio 的新執行個體中的行，就會擲回例外狀況已停止執行：  
   
  ![NullReferenceSecondInstance](../debugger/media/nullreferencesecondinstance.png "NullReferenceSecondInstance")  
   
- You can start debugging at this point. If this were a real application, you would need to find out why the code is throwing the exception.  
+ 您可以開始偵錯這個時候。 如果這是實際的應用程式，您必須了解為什麼程式碼會擲回例外狀況。  
   
-## <a name="just-in-time-debugging-errors"></a>Just-In-Time debugging errors  
- if you don't see the dialog when the program crashes, this might due to Windows Error Reporting settings on your computer. For more information, see [.WER Settings](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started).  
+## <a name="just-in-time-debugging-errors"></a>Just-In-Time 偵錯的錯誤  
+ 如果您沒有看到對話方塊的程式損毀，這可能會因為您的電腦上的 Windows 錯誤報告設定。 如需詳細資訊，請參閱[。WER 設定](/windows-hardware/drivers/dashboard/windows-error-reporting-getting-started)。  
   
- You might see the following error messages that are associated with Just-In-Time debugging.  
+ 您可能會看見下列與 Just-in-Time 偵錯相關的錯誤訊息。  
   
--   **Unable to attach to the crashing process. The specified program is not a Windows or MS-DOS program.**  
+-   **無法附加至沒有回應的處理序。指定的程式不是 Windows 或 MS-DOS 程式。**  
   
-     This error occurs when you try to attach to a process running as another user.  
+     當您嘗試附加至以其他使用者身分執行的處理序時，就會發生此錯誤。  
   
-     To work around this problem, start Visual Studio, open the **Attach to Process** dialog box from the **Debug** menu, and find the process you want to debug in the **Available Processes** list. If you do not know the name of the process, look at the **Visual Studio Just-In-Time Debugger** dialog and note the process ID. Select the process in the **Available Processes** list and click **Attach**. In the **Visual Studio Just-In-Time Debugger** dialog, click **No** to dismiss the dialog box.  
+     若要解決這個問題，請啟動 Visual Studio，開啟**附加至處理序**對話方塊從**偵錯**功能表，然後尋找處理程序，您想要在偵錯**可用的處理序**清單。 如果您不知道處理序名稱，查看**Visual Studio Just-In-Time 偵錯工具**對話方塊，然後記處理序識別碼。 選取的處理序中**可用的處理序**清單，然後按一下**附加**。 在**Visual Studio Just-In-Time 偵錯工具**] 對話方塊中，按一下 [**否**關閉對話方塊。  
   
--   **Debugger could not be started because no user is logged on.**  
+-   **無法啟動偵錯工具，因為沒有使用者登入。**  
   
-     This error occurs when Just-In-Time debugging tries to start Visual Studio on a machine where there is no user logged onto the console. Because no user is logged on, there is no user session to display the Just-In-Time debugging dialog box.  
+     當 Just-In-Time 偵錯嘗試在沒有使用者登入主控台的電腦上啟動 Visual Studio 時，就會發生此錯誤。 因為沒有使用者登入，所以沒有使用者工作階段可顯示 [Just-In-Time 偵錯] 對話方塊。  
   
-     To fix this problem, log onto the machine.  
+     若要修正這個問題，請登入該電腦。  
   
--   **Class not registered.**  
+-   **類別未登錄。**  
   
-     This error indicates that the debugger tried to create a COM class that is not registered, probably due to an installation problem.  
+     這個錯誤表示偵錯工具嘗試建立的 COM 類別尚未登錄，可能是因為安裝問題所致。  
   
-     To fix this problem, use the setup disk to reinstall or repair your Visual Studio installation.  
+     若要修正這個問題，請使用安裝磁碟重新安裝或修復 Visual Studio 安裝。  
   
-## <a name="see-also"></a>See Also  
- [Debugger Security](../debugger/debugger-security.md)   
- [Debugger Basics](../debugger/debugger-basics.md)   
- [Just-In-Time, Debugging, Options Dialog Box](../debugger/just-in-time-debugging-options-dialog-box.md)   
- [Security Warning: Attaching to a process owned by an untrusted user can be dangerous. If the following information looks suspicious or you are unsure, do not attach to this process](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)
+## <a name="see-also"></a>另請參閱  
+ [偵錯工具安全性](../debugger/debugger-security.md)   
+ [偵錯工具基礎](../debugger/debugger-basics.md)   
+ [在 Just-in-time，偵錯、 選項對話方塊](../debugger/just-in-time-debugging-options-dialog-box.md)   
+ [安全性警告︰附加至未受信任的使用者所擁有的處理序可能會造成危險。如果下面的資訊看起來有問題，或者您並不確定，請不要附加至此處理序](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process.md)

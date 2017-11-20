@@ -1,12 +1,10 @@
 ---
-title: 'How to: Add a Property to SharePoint Projects | Microsoft Docs'
+title: "如何： 將屬性加入至 SharePoint 專案 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev14
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- office-development
+ms.technology: office-development
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,61 +15,61 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending projects
 - SharePoint projects, extending
 ms.assetid: c5eb4900-c35f-490a-b856-bf167da2d293
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: eb5c9550fd29b0e98bf63a7240737da4f13f3249
-ms.openlocfilehash: 6ef0b253acb4f6347627e1869e9b2f7f28dcc38f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/30/2017
-
+ms.openlocfilehash: 3e43e4921a32cc84b8384950e88c589b1bbddc31
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="how-to-add-a-property-to-sharepoint-projects"></a>How to: Add a Property to SharePoint Projects
-  You can use a project extension to add a property to any SharePoint project. The property appears in the **Properties** window when the project is selected in **Solution Explorer**.  
+# <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：將屬性加入至 SharePoint 專案
+  若要將屬性加入至任何 SharePoint 專案，您可以使用專案擴充功能。 屬性會出現在**屬性**視窗中選取專案時**方案總管 中**。  
   
- The following steps assume that you have already created a project extension. For more information, see [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md).  
+ 下列步驟假設您已經建立專案擴充功能。 如需詳細資訊，請參閱[How to： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)。  
   
-### <a name="to-add-a-property-to-a-sharepoint-project"></a>To add a property to a SharePoint project  
+### <a name="to-add-a-property-to-a-sharepoint-project"></a>若要將屬性加入至 SharePoint 專案  
   
-1.  Define a class with a public property that represents the property you are adding to SharePoint projects. If you want to add multiple properties, you can define all the properties in the same class or in different classes.  
+1.  以定義類別的公用屬性，代表您要加入至 SharePoint 專案的屬性。 如果您想要新增多個屬性，您可以在相同類別中，或是在不同的類別中定義的所有屬性。  
   
-2.  In the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> method of your <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementation, handle the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> event of the *projectService* parameter.  
+2.  在<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A>方法您<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>實作、 控制代碼<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件*projectService*參數。  
   
-3.  In the event handler for the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> event, add an instance of your properties class to the <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> collection of the event arguments parameter.  
+3.  中的事件處理常式<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件，加入您的屬性類別的執行個體<xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A>事件引數參數的集合。  
   
-## <a name="example"></a>Example  
- The following code example demonstrates how to add two properties to SharePoint projects. One property persists its data in the project user option file (the .csproj.user file or .vbproj.user file). The other property persists its data in the project file (.csproj file or .vbproj file).  
+## <a name="example"></a>範例  
+ 下列程式碼範例示範如何將兩個屬性加入至 SharePoint 專案。 一個屬性保存其資料在專案使用者選項檔 (。 檔案副檔名為.csproj.user 或。.vbproj.user 檔案)。 其他屬性會保留其專案檔 （.csproj 或.vbproj） 檔案中的資料。  
   
- [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)] [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
+ [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
+ [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]  
   
-### <a name="understanding-the-code"></a>Understanding the Code  
- To ensure that the same instance of the `CustomProjectProperties` class is used each time the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> event occurs, the code example adds the properties object to the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property of the project the first time this event occurs. The code retrieves this object whenever this event occurs again. For more information about using the <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> property to associate data with projects, see [Associating Custom Data with SharePoint Tools Extensions](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md).  
+### <a name="understanding-the-code"></a>了解程式碼  
+ 為了確保相同的執行個體`CustomProjectProperties`類別每次使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested>事件發生時，程式碼範例會將屬性的物件加入<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>專案第一個時間就會發生此事件的屬性。 此事件一次發生時，程式碼會擷取此物件。 如需有關使用<xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A>屬性產生關聯的專案，請參閱[關聯自訂資料與 SharePoint 工具擴充功能](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。  
   
- To persist changes to the property values, the **set** accessors for the properties use the following APIs:  
+ 若要保存為屬性的值變更**設定**屬性存取子會使用下列 Api:  
   
--   `CustomUserFileProperty` uses the <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> property to save its value to the project user option file.  
+-   `CustomUserFileProperty`使用<xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A>屬性，將其值儲存到專案使用者選項檔。  
   
--   `CustomProjectFileProperty` uses the <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> method to save its value to the project file.  
+-   `CustomProjectFileProperty`使用<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A>方法，將其值儲存至專案檔。  
   
- For more information about persisting data in these files, see [Saving Data in Extensions of the SharePoint Project System](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).  
+ 如需這些檔案中的保存資料的詳細資訊，請參閱[擴充 SharePoint 專案系統中儲存的資料](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。  
   
-### <a name="specifying-the-behavior-of-custom-properties"></a>Specifying the Behavior of Custom Properties  
- You can define how a custom property appears and behaves in the **Properties** window by applying attributes from the <xref:System.ComponentModel> namespace to the property definition. The following attributes are useful in many scenarios:  
+### <a name="specifying-the-behavior-of-custom-properties"></a>指定自訂屬性的行為  
+ 您可以定義自訂屬性會出現，在行為的方式**屬性**藉由套用屬性 視窗<xref:System.ComponentModel>屬性定義的命名空間。 下列屬性可用於許多案例：  
   
--   <xref:System.ComponentModel.DisplayNameAttribute>: Specifies the name of the property that appears in the **Properties** window.  
+-   <xref:System.ComponentModel.DisplayNameAttribute>： 指定出現在屬性名稱**屬性**視窗。  
   
--   <xref:System.ComponentModel.DescriptionAttribute>: Specifies the description string that appears in the bottom of the **Properties** window when the property is selected.  
+-   <xref:System.ComponentModel.DescriptionAttribute>： 指定描述字串，會出現在底部**屬性**時選取屬性 視窗。  
   
--   <xref:System.ComponentModel.DefaultValueAttribute>: Specifies the default value of the property.  
+-   <xref:System.ComponentModel.DefaultValueAttribute>： 指定屬性的預設值。  
   
--   <xref:System.ComponentModel.TypeConverterAttribute>: Specifies a custom conversion between the string that is displayed in the **Properties** window and a non-string property value.  
+-   <xref:System.ComponentModel.TypeConverterAttribute>： 指定之間的字串中所顯示的自訂轉換**屬性**視窗及非字串屬性值。  
   
--   <xref:System.ComponentModel.EditorAttribute>: Specifies a custom editor to use to modify the property.  
+-   <xref:System.ComponentModel.EditorAttribute>： 指定用來修改屬性的自訂編輯器。  
   
-## <a name="compiling-the-code"></a>Compiling the Code  
- This example requires references to the following assemblies:  
+## <a name="compiling-the-code"></a>編譯程式碼  
+ 這個範例需要參考下列組件：  
   
 -   Microsoft.VisualStudio.SharePoint  
   
@@ -83,13 +81,13 @@ ms.lasthandoff: 08/30/2017
   
 -   System.ComponentModel.Composition  
   
-## <a name="deploying-the-extension"></a>Deploying the Extension  
- To deploy the extension, create a [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extension (VSIX) package for the assembly and any other files that you want to distribute with the extension. For more information, see [Deploying Extensions for the SharePoint Tools in Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).  
+## <a name="deploying-the-extension"></a>部署擴充功能  
+ 若要部署延伸模組，建立[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]擴充功能 (VSIX) 封裝組件和任何其他您想要發佈副檔名的檔案。 如需詳細資訊，請參閱[部署 Visual Studio 中的 SharePoint 工具擴充功能](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。  
   
-## <a name="see-also"></a>See Also  
- [Extending SharePoint Projects](../sharepoint/extending-sharepoint-projects.md)   
- [How to: Create a SharePoint Project Extension](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
- [How to: Add a Shortcut Menu Item to SharePoint Projects](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
- [Extending the SharePoint Project System](../sharepoint/extending-the-sharepoint-project-system.md)  
+## <a name="see-also"></a>另請參閱  
+ [擴充 SharePoint 專案](../sharepoint/extending-sharepoint-projects.md)   
+ [如何： 建立 SharePoint 專案擴充功能](../sharepoint/how-to-create-a-sharepoint-project-extension.md)   
+ [如何： 將捷徑功能表項目加入至 SharePoint 專案](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)   
+ [擴充 SharePoint 專案系統](../sharepoint/extending-the-sharepoint-project-system.md)  
   
   

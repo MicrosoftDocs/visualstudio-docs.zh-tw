@@ -1,5 +1,5 @@
 ---
-title: Add code to datasets in n-tier applications | Microsoft Docs
+title: "將程式碼加入 n-tier 應用程式中的資料集 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -9,72 +9,53 @@ ms.topic: article
 dev_langs:
 - VB
 - CSharp
-- C++
-- aspx
-helpviewer_keywords:
-- n-tier applications, extending datasets
+helpviewer_keywords: n-tier applications, extending datasets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
-caps.latest.revision: 20
-author: mikeblome
-ms.author: mblome
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: ee1a0cf1b392fe6407fb66cf64a2372cc2208a69
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/22/2017
-
+ms.technology: vs-data-tools
+ms.openlocfilehash: 26dd5500f50b185c31809d9882e03e56541a567a
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Add code to datasets in n-tier applications
-You can extend the functionality of a dataset by creating a partial class file for the dataset and adding code to it (instead of adding code to the *DatasetName*.Dataset.Designer file). Partial classes enable code for a specific class to be divided among multiple physical files. For more information, see [Partial](/dotnet/visual-basic/language-reference/modifiers/partial) or [Partial Classes and Methods](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).  
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼加入 n-tier 應用程式中的資料集
+您可以藉由建立資料集部分類別檔案，並加入程式碼擴充的資料集的功能 (而不是加入程式碼以*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓分割為多個實體檔案的特定類別的程式碼。 如需詳細資訊，請參閱[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。  
   
- The code that defines a dataset is generated every time changes are made to the dataset definition (in the typed dataset). This code is also generated when you make changes during the running of any wizard that modifies the configuration of a dataset. To prevent your code from being deleted during the regeneration of a dataset, add code to the dataset's partial class file.  
+定義資料集的程式碼會產生每次變更 （在具類型的資料集） 的資料集定義。 當您進行任何修改的資料集設定的精靈執行期間的變更，也會產生此程式碼。 若要防止在資料集的重新產生期間正在刪除您的程式碼，將程式碼加入至資料集的部分類別檔案。  
   
- By default, after you separate the dataset and `TableAdapter` code, the result is a discrete class file in each project. The original project has a file named *DatasetName*.Designer.vb (or *DatasetName*.Designer.cs) that contains the `TableAdapter` code. The project that's designated in the **Dataset Project** property has a file that's named *DatasetName*.DataSet.Designer.vb (or *DatasetName*.DataSet.Designer.cs).This file contains the dataset code.  
-  
-> [!NOTE]
->  When you separate datasets and `TableAdapter`s (by setting the **DataSet Project** property), existing partial dataset classes in the project won't be moved automatically. Existing dataset partial classes must be moved manually to the dataset project.  
+根據預設，您可將資料集和 TableAdapter 的程式碼之後, 的結果會是離散的類別檔案中的每個專案。 原始的專案具有名為*DatasetName*。.Designer.vb (或*DatasetName*。.Designer.cs) 包含 TableAdapter 的程式碼。 專案中指定的**資料集專案**屬性有檔名為*DatasetName*。DataSet.Designer.vb (或*DatasetName*。DataSet.Designer.cs)。此檔案包含的資料集程式碼。  
   
 > [!NOTE]
->  When validation code needs to be added, the typed dataset provides functionality for generating <xref:System.Data.DataTable.ColumnChanging> and <xref:System.Data.DataTable.RowChanging> event handlers. For more information, see [Add validation to an n-tier dataset](../data-tools/add-validation-to-an-n-tier-dataset.md).  
+>  當您分隔資料集與 Tableadapter 時 (藉由設定**資料集專案**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的資料集部分類別必須手動移動至資料集專案。  
   
-### <a name="to-add-code-to-datasets-in-n-tier-applications"></a>To add code to datasets in n-tier applications  
+> [!NOTE]
+>  具類型資料集時必須加入驗證程式碼，提供功能來產生<xref:System.Data.DataTable.ColumnChanging>和<xref:System.Data.DataTable.RowChanging>事件處理常式。 如需詳細資訊，請參閱[驗證加入 n-tier 資料集](../data-tools/add-validation-to-an-n-tier-dataset.md)。  
   
-1.  Locate the project that contains the .xsd file. 
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>若要將程式碼加入 n-tier 應用程式中的資料集  
   
-2.  Select the **.xsd** file to open the dataset.  
+1.  找出包含.xsd 檔案的專案。 
   
-3.  Right-click the data table to which you want to add code (the table name in the title bar), and then select **View Code**.  
+2.  選取**.xsd**檔案以開啟資料集。  
   
-     A partial class is created and opens in the Code Editor.  
+3.  以滑鼠右鍵按一下您想要加入程式碼 （標題列中的資料表名稱），然後選取的資料表**檢視程式碼**。  
   
-4.  Add code inside the partial class declaration.  
+     建立部分類別，並會在程式碼編輯器中開啟。  
   
-     The following example shows where to add code to the CustomersDataTable in the NorthwindDataSet:  
+4.  加入部分類別宣告內的程式碼。  
   
-    ```vb#  
+     下列範例會示範如何將程式碼加入至 NorthwindDataSet 中 CustomersDataTable:  
+  
+    ```vb  
     Partial Public Class CustomersDataTable  
         ' Add code here to add functionality   
         ' to the CustomersDataTable.  
     End Class  
-    ```  
-  
-    ```c#  
+    ```    
+    ```csharp  
     partial class CustomersDataTable  
     {  
         // Add code here to add functionality  
@@ -82,10 +63,9 @@ You can extend the functionality of a dataset by creating a partial class file f
     }  
     ```  
   
-## <a name="see-also"></a>See Also  
- [N-Tier Data Applications Overview](../data-tools/n-tier-data-applications-overview.md)   
- [Add code to TableAdapters in n-tier applications](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)   
- [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
- [Create and Configure TableAdapters](create-and-configure-tableadapters.md)   
- [Hierarchical Update Overview](hierarchical-update.md)     
- [Dataset tools in Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+[多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
+[將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
+[建立及設定 TableAdapters](create-and-configure-tableadapters.md)  
+[階層式更新概觀](hierarchical-update.md)     
+[Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)
