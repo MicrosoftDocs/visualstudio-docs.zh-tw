@@ -1,35 +1,36 @@
 ---
-title: "DslTextTransform 命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "定義域專屬語言命令"
+title: "DslTextTransform 命令 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, commands
 ms.assetid: 7d025d0b-6543-4a49-9f6b-8b8cfcad77ee
-caps.latest.revision: 30
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 30
+caps.latest.revision: "30"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: fd45a33b421e889b05fd78eceddc0b05126e4a21
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# DslTextTransform 命令
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-DslTextTransform.cmd 是指令碼呼叫 TextTransform.exe 並執行常見的選項。 您可以使用 DslTextTransformation.cmd 自動夜間組建的程式 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 專案。 如需詳細資訊，請參閱 [使用 TextTransform 公用程式產生的檔案](../modeling/generating-files-with-the-texttransform-utility.md)。  
+# <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
+DslTextTransform.cmd 是指令碼呼叫 TextTransform.exe 並執行常見的選項。 您可用來自動化的夜間組建 DslTextTransformation.cmd 您[!INCLUDE[dsl](../modeling/includes/dsl_md.md)]專案。 如需詳細資訊，請參閱[使用 TextTransform 公用程式產生的檔案](../modeling/generating-files-with-the-texttransform-utility.md)。  
   
- DslTextTransform.cmd 位於下列目錄︰  
+ DslTextTransform.cmd 位於下列目錄：  
   
- **\< visual Studio SDK 安裝路徑>\VisualStudioIntegration\Tools\Bin**  
+ **\<Visual Studio SDK 安裝路徑 > \VisualStudioIntegration\Tools\Bin**  
   
- 您可以指定下列引數做為 DslTextTransform.cmd 輸入︰  
+ 您可以指定下列引數做為 DslTextTransform.cmd 輸入：  
   
 -   網域模型專案的輸出目錄。  
   
--   設計工具定義專案的輸出目錄。  
+-   設計工具定義中專案輸出目錄。  
   
--   文字範本檔案的位置。  
+-   文字範本檔的位置。  
   
- DslTextTransform.cmd 處理指定的文字範本檔案，使用預設指示詞處理器和組件。 如果您建立自訂指示詞處理器，您可以建立您自己呼叫 TextTransform.exe 的批次檔。 在批次檔案中，您可以指定組件和相關聯的自訂指示詞處理器。
+ DslTextTransform.cmd 處理指定的文字範本檔使用的預設指示詞處理器和組件。 如果您建立自訂指示詞處理器，您可以建立您自己呼叫 TextTransform.exe 的批次檔。 在此批次檔中，您可以指定您的組件和相關聯的自訂指示詞處理器。

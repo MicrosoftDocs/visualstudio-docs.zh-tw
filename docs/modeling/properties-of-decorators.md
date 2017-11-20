@@ -1,69 +1,70 @@
 ---
-title: "Decorator 的屬性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "網域指定的語言, Decorator"
+title: "裝飾項目屬性 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, decorators
 ms.assetid: f6322fe5-dc08-4d32-a6b3-0bd18879136d
-caps.latest.revision: 23
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 23288d1afe9b9c0a181a5d978b1956071b683218
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Decorator 的屬性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-裝飾是圖示\]、 \[文字\] 或 \[展開\/摺疊 ＞ 形箭號，可能會出現在 \[圖形\] 或 \[在圖表上的連接器。  下表說明三種類型的裝飾的屬性。  某些屬性可能會出現圖形裝飾只或只有在連接器裝飾上。  
+# <a name="properties-of-decorators"></a>Decorator 的屬性
+裝飾項目是圖示、 文字或圖形或圖表上的連接器上可出現的展開/摺疊形箭號。 下表顯示裝飾項目的三種類型的屬性。 某些屬性會出現只在圖形裝飾項目或只在連接器裝飾項目。  
   
- 如需詳細資訊，請參閱 [如何定義網域指定的語言](../modeling/how-to-define-a-domain-specific-language.md)。  如需有關如何使用這些屬性的詳細資訊，請參閱[自訂及擴充網域指定的語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
+ 如需詳細資訊，請參閱[如何定義特定領域語言](../modeling/how-to-define-a-domain-specific-language.md)。 如需如何使用這些屬性的詳細資訊，請參閱[自訂及擴充特定領域語言](../modeling/customizing-and-extending-a-domain-specific-language.md)。  
   
-## 展開\/摺疊裝飾  
+## <a name="expandcollapse-decorator"></a>展開/摺疊裝飾項目  
   
-|屬性|描述|Default|  
-|--------|--------|-------------|  
-|DisplayName|會顯示在 \[產生的設計工具裝飾名稱。|展開摺疊裝飾|  
-|名稱|裝飾名稱。|ExpandCollapseDecorator|  
-|備註|這個裝飾相關聯的非正式附註。|\<無\>|  
-|HorizontalOffset|水平位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|VerticalOffset|垂直位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|OffsetFromLine|從列，相對於它的預設位置，以英吋裝飾的位移。  \(在連接器只。\)|0|  
-|OffsetFromShape|相對於它的預設位置，以英吋為單位指定圖案裝飾的位移。  \(在連接器只。\)|0|  
-|Position|裝飾的預設位置。|SourceTop|  
+|屬性|說明|預設|  
+|--------------|-----------------|-------------|  
+|DisplayName|將會顯示在設計工具中產生的裝飾項目的名稱。|展開摺疊裝飾項目|  
+|名稱|裝飾項目的名稱。|ExpandCollapseDecorator|  
+|注意|此裝飾項目相關聯的非正式附註。|\<無 >|  
+|HorizontalOffset|預設的相對位置裝飾項目，以英吋水平位移。 （在圖形上只有。）|0|  
+|VerticalOffset|預設的相對位置裝飾項目，以英吋之垂直位移。 （在圖形上只有。）|0|  
+|OffsetFromLine|從相對於其預設位置，以英吋列裝飾項目的位移。 （連接器上只有。）|0|  
+|OffsetFromShape|從圖形，相對於其預設位置，以英吋裝飾項目的位移。 （連接器上只有。）|0|  
+|位置|裝飾項目的預設位置。|SourceTop|  
   
-## 圖示裝飾  
+## <a name="icon-decorator"></a>圖示裝飾項目  
   
-|屬性|描述|Default|  
-|--------|--------|-------------|  
-|DefaultIcon|要顯示的圖示或影像檔的路徑。|\<無\>|  
-|DisplayName|若要在產生的設計工具中顯示裝飾名稱。|圖示裝飾|  
-|名稱|裝飾名稱。|IconDecorator|  
-|備註|裝飾相關聯的非正式附註。|\<無\>|  
-|HorizontalOffset|水平位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|VerticalOffset|垂直位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|OffsetFromLine|從列，相對於它的預設位置，以英吋裝飾的位移。  \(在連接器只。\)|0|  
-|OffsetFromShape|相對於它的預設位置，以英吋為單位指定圖案裝飾的位移。  \(在連接器只。\)|0|  
-|Position|裝飾的預設位置。|SourceTop|  
+|屬性|說明|預設|  
+|--------------|-----------------|-------------|  
+|DefaultIcon|若要顯示的圖示或影像檔案路徑。|\<無 >|  
+|DisplayName|要在產生的設計工具中顯示裝飾項目的名稱。|圖示裝飾項目|  
+|名稱|裝飾項目的名稱。|IconDecorator|  
+|注意|裝飾項目相關聯的非正式附註。|\<無 >|  
+|HorizontalOffset|預設的相對位置裝飾項目，以英吋水平位移。 （在圖形上只有。）|0|  
+|VerticalOffset|預設的相對位置裝飾項目，以英吋之垂直位移。 （在圖形上只有。）|0|  
+|OffsetFromLine|從相對於其預設位置，以英吋列裝飾項目的位移。 （連接器上只有。）|0|  
+|OffsetFromShape|從圖形，相對於其預設位置，以英吋裝飾項目的位移。 （連接器上只有。）|0|  
+|位置|裝飾項目的預設位置。|SourceTop|  
   
-## TextDecorator  
+## <a name="textdecorator"></a>線 TextDecorator  
   
-|屬性|描述|Default|  
-|--------|--------|-------------|  
-|DefaultText|要顯示的預設文字。|Label|  
-|DisplayName|若要在產生的設計工具中顯示裝飾名稱。|Label|  
-|FontSize|裝飾\] 所示之文字的字型大小。|8|  
-|FontStyle|裝飾\] 所示的文字字型樣式。|Regular|  
-|名稱|裝飾名稱。|Label|  
-|備註|裝飾相關聯的非正式附註。|\<無\>|  
-|HorizontalOffset|水平位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|VerticalOffset|垂直位移，相對於裝飾，預設位置，以英吋為單位。  \(在圖形僅。\)|0|  
-|OffsetFromLine|從列，相對於它的預設位置，以英吋裝飾的位移。  \(在連接器只。\)|0|  
-|OffsetFromShape|相對於它的預設位置，以英吋為單位指定圖案裝飾的位移。  \(在連接器只。\)|0|  
-|Position|裝飾的預設位置。|TargetBottom|  
+|屬性|說明|預設|  
+|--------------|-----------------|-------------|  
+|DefaultText|要顯示的預設文字。|ThisAddIn|  
+|DisplayName|要在產生的設計工具中顯示裝飾項目的名稱。|ThisAddIn|  
+|FontSize|裝飾項目中所顯示的文字字型大小。|8|  
+|FontStyle|裝飾項目中所顯示的文字字型樣式。|Regular|  
+|名稱|裝飾項目的名稱。|ThisAddIn|  
+|注意|裝飾項目相關聯的非正式附註。|\<無 >|  
+|HorizontalOffset|預設的相對位置裝飾項目，以英吋水平位移。 （在圖形上只有。）|0|  
+|VerticalOffset|預設的相對位置裝飾項目，以英吋之垂直位移。 （在圖形上只有。）|0|  
+|OffsetFromLine|從相對於其預設位置，以英吋列裝飾項目的位移。 （連接器上只有。）|0|  
+|OffsetFromShape|從圖形，相對於其預設位置，以英吋裝飾項目的位移。 （連接器上只有。）|0|  
+|位置|裝飾項目的預設位置。|TargetBottom|  
   
-## 請參閱  
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/zh-tw/ca5e84cb-a315-465c-be24-76aa3df276aa)
+## <a name="see-also"></a>另請參閱  
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

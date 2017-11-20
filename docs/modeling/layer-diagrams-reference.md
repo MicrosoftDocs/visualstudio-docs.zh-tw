@@ -1,5 +1,5 @@
 ---
-title: "相依性圖表︰ 參考 |Microsoft 文件"
+title: "相依性圖表： 參考 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -20,38 +20,24 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - constraints, architectural
 ms.assetid: f26c986c-1e79-420e-b29a-a283e6d8a71d
-caps.latest.revision: 33
+caps.latest.revision: "33"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: fd26c504273cae739ccbeef5e406891def732985
-ms.openlocfilehash: 74829877befa9f48988d42e04a58e2a418e7d82b
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ce4a203fd0843fd6b15bfbf85019e85032defbd6
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# <a name="dependency-diagrams-reference"></a>相依性圖表︰ 參考
-在 Visual Studio 中，您可以使用*相依性圖表*以視覺化方式檢視您的系統的高階邏輯結構。 相依性圖表在系統中的實體成品組織成邏輯的抽象群組，稱為*層*。 您可以使用圖層來說明成品或系統主要元件所執行的主要工作。 每個圖層也可以包含巢狀圖層以描述更詳細的工作。  
+# <a name="dependency-diagrams-reference"></a>相依性圖表： 參考
+在 Visual Studio 中，您可以使用*相依性圖表*以視覺化方式檢視您的系統的高層級的邏輯架構。 相依性圖表將實體的成品在系統中組織成邏輯的抽象群組稱為*層*。 您可以使用圖層來說明成品或系統主要元件所執行的主要工作。 每個圖層也可以包含巢狀圖層以描述更詳細的工作。  
   
- 若要查看哪些版本的 Visual Studio 支援此功能，請參閱[的架構和模型工具版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 您可以指定圖層之間的預期或現有相依性。 這些以箭號代表的相依性，表示哪些圖層可以使用或目前使用其他圖層代表的功能。 組織成描述不同角色和功能的圖層，以便您的系統，相依性圖表有助於讓您更輕鬆地了解、 重複使用和維護您的程式碼。  
+ 您可以指定圖層之間的預期或現有相依性。 這些以箭號代表的相依性，表示哪些圖層可以使用或目前使用其他圖層代表的功能。 藉由組織您的系統到圖層以描述不同的角色和函式，相依性圖表有助於讓您更輕鬆地了解、 重複使用，及維護您的程式碼。  
   
- 使用相依性圖表，可協助您執行下列工作︰  
+ 您可以使用相依性圖表，協助您執行下列工作：  
   
 -   溝通系統的現有或預期邏輯架構。  
   
@@ -61,22 +47,22 @@ ms.lasthandoff: 02/22/2017
   
 -   在開發和維護您的程式碼期間，藉由在簽入及建置作業包含驗證，強化預期的架構。  
   
- 本主題說明您可以使用相依性圖表的項目。 如需詳細資訊，有關如何建立和繪製相依性圖表，請參閱[相依性圖表︰ 方針](../modeling/layer-diagrams-guidelines.md)。 如需分層模式的詳細資訊，請瀏覽[模式 i 作法網站](http://go.microsoft.com/fwlink/?LinkId=145794)。  
+ 本主題說明您可以使用相依性圖表的項目。 如需詳細資訊，有關如何建立和繪製相依性圖表，請參閱[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。 如需有關圖層模式的詳細資訊，請瀏覽[模式和實務 」 網站](http://go.microsoft.com/fwlink/?LinkId=145794)。  
   
 ## <a name="reading-dependency-diagrams"></a>讀取相依性圖表  
- ![相依性圖表上的項目](~/modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
+ ![相依性圖表上的項目](../modeling/media/uml_layerrefreading.png "UML_LayerRefReading")  
   
  下表描述您可以使用相依性圖表的項目。  
   
-|**圖形**|**項目**|**說明**|  
+|**圖形**|**目**|**說明**|  
 |---------------|-----------------|---------------------|  
-|1|**圖層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看成品連結至圖層，開啟圖層的捷徑功能表，然後按一下**檢視連結**開啟**圖層總管**。<br /><br /> 如需詳細資訊，請參閱[圖層總管](#Explorer)。<br /><br /> -   **Forbidden Namespace Dependencies** -指定與此圖層相關聯的成品不可相依於指定的命名空間。<br />-   **禁止的命名空間**-指定與此圖層相關聯的成品必須屬於指定的命名空間。<br />-   **必要的命名空間**-指定與此圖層相關聯的成品必須屬於其中一個指定的命名空間。|  
+|1|**圖層**|您系統中之實體成品的邏輯群組。 這些成品可以是命名空間、專案、類別、方法等等。<br /><br /> 若要查看成品連結至圖層，開啟圖層的捷徑功能表，然後選擇 **檢視連結**開啟**圖層總管**。<br /><br /> 如需詳細資訊，請參閱[圖層總管](#Explorer)。<br /><br /> -   **禁止的命名空間相依性**-指定此圖層相關聯的成品不可相依於指定的命名空間。<br />-   **禁止的命名空間**-指定此圖層相關聯的成品必須屬於指定的命名空間。<br />-   **需要命名空間**-指定此圖層相關聯的成品必須屬於其中一個指定的命名空間。|  
 |2|**相依性**|表示一個圖層可以使用另一個圖層的功能，但反之則不然。<br /><br /> -   **方向**-指定相依性的方向。|  
 |3|**雙向相依性**|表示一個圖層可以使用另一個圖層的功能，反之亦然。<br /><br /> -   **方向**-指定相依性的方向。|  
 |4|**註解**|用來將一般附註加入圖表或圖表上的項目。|  
 |5|**註解連結**|用來將註解連結到圖表上的項目。|  
   
-##  <a name="a-nameexplorera-layer-explorer"></a><a name="Explorer"></a>圖層總管  
+##  <a name="Explorer"></a>圖層總管  
  您可以將每個圖層連結到方案中的成品，例如專案、類別、命名空間、專案檔和您軟體的其他部分。 圖層上的數字顯示連結至該圖層的成品數目。 不過，當閱讀圖層上的成品數時，請記住下列：  
   
 -   如果圖層連結的成品有包含其他成品，但圖層未直接連結這些其他成品，則數字將只包含連結的成品。 然而，在圖層驗證期間會加入其他成品以進行分析。  
@@ -87,26 +73,25 @@ ms.lasthandoff: 02/22/2017
   
  如需連結圖層與成品的詳細資訊，請參閱：  
   
--   [相依性圖表︰ 方針](../modeling/layer-diagrams-guidelines.md)  
+-   [相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)  
   
 -   [從您的程式碼建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)  
   
 #### <a name="to-examine-the-linked-artifacts"></a>檢查連結的成品  
   
--   在相依性圖表中，開啟一或多個圖層的捷徑功能表，然後選擇 **檢視連結**。  
+-   相依性圖表中，開啟一或多個圖層的捷徑功能表，然後選擇 **檢視連結**。  
   
-     **圖層總管**隨即開啟並顯示連結至所選取圖層的成品。 **圖層總管**有一個資料行顯示每個成品連結的屬性。  
+     **圖層總管**隨即開啟並顯示連結至所選的圖層的成品。 **圖層總管**有一個資料行顯示每個成品連結的屬性。  
   
     > [!NOTE]
-    >  如果您無法看到所有這些屬性，依序展開**圖層總管**視窗。  
+    >  如果您無法查看所有這些屬性，請展開**圖層總管**視窗。  
   
     |**在圖層總管 中的資料行**|**說明**|  
     |----------------------------------|---------------------|  
     |**類別目錄**|成品的類型，例如類別、命名空間、原始程式檔等等|  
     |**圖層**|連結到成品的圖層|  
-    |**支援驗證**|如果**True**，則圖層驗證程序可確認專案符合這個項目之間的相依性。<br /><br /> 如果**False**，則連結不會參與圖層驗證程序。<br /><br /> 如需詳細資訊，請參閱[相依性圖表︰ 方針](../modeling/layer-diagrams-guidelines.md)。|  
-    |**識別項**|連結成品的參考|  
+    |**支援驗證**|如果**True**，則圖層驗證程序可以確認專案符合相依性，或從這個項目。<br /><br /> 如果**False**，則連結不會參與圖層驗證程序。<br /><br /> 如需詳細資訊，請參閱[相依性圖表： 指導方針](../modeling/layer-diagrams-guidelines.md)。|  
+    |**識別碼**|連結成品的參考|  
   
 ## <a name="see-also"></a>另請參閱  
  [建立應用程式模型](../modeling/create-models-for-your-app.md)
-

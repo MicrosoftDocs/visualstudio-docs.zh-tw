@@ -1,35 +1,36 @@
 ---
-title: "文字範本的安全性 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "文字範本, 安全性"
+title: "文字範本的安全性 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, security
 ms.assetid: 567a2383-7d43-4acc-af4a-cd70b7a0151e
-caps.latest.revision: 23
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 23
+caps.latest.revision: "23"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7c99f0a519ec62a2b9946baba072b0256a78697a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 文字範本的安全性
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-文字範本有下列安全性考量：  
+# <a name="security-of-text-templates"></a>文字範本的安全性
+文字範本具有下列安全性考量：  
   
--   文字範本容易受到任意程式碼插入的攻擊。  
+-   文字範本受到任意程式碼插入。  
   
--   如果主應用程式用來尋找指示詞處理器的機制沒有安全保護，就有可能會讓惡意的指示詞處理器執行。  
+-   如果主機用來尋找指示詞處理器的機制並不安全，就無法執行惡意的指示詞處理器。  
   
-## 任意程式碼  
- 當您撰寫範本時，可以將任何程式碼放置在 \<\# \#\> 標記內。  如此便會允許從文字範本之內執行任意程式碼。  
+## <a name="arbitrary-code"></a>任意程式碼  
+ 當您撰寫範本時，您可以將任何程式碼內\<# # > 標記。 這可讓從文字範本內執行的任意程式碼。  
   
- 請確定您取得來自信任來源的範本，  而且務必警告應用程式的使用者，不要執行不是來自於信任來源的範本。  
+ 請務必從受信任的來源取得的範本。 請確定您的應用程式未執行不是來自信任來源的範本的使用者，即發出警告。  
   
-## 惡意指示詞處理器  
- 文字範本引擎會和轉換主應用程式以及一個或多個指示詞處理器互動，將範本文字轉換為輸出檔。  如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
+## <a name="malicious-directive-processor"></a>惡意的指示詞處理器  
+ 文字範本引擎互動轉換主應用程式和一個或多個指示詞處理器轉換的輸出檔的範本文字。 如需詳細資訊，請參閱[文字範本轉換流程](../modeling/the-text-template-transformation-process.md)。  
   
- 如果主應用程式用來尋找指示詞處理器的機制沒有安全保護，就會有執行惡意指示詞處理器的風險。  惡意指示詞處理器可能會在範本執行時提供以 `FullTrust` 模式執行的程式碼。  如果您建立自訂文字範本轉換主應用程式，就必須使用安全保護機制 \(例如登錄\)，讓引擎可以找到指示詞處理器。
+ 如果主應用程式用來尋找指示詞處理器的機制並不安全的它會執行執行惡意的指示詞處理器的風險。 惡意的指示詞處理器無法提供執行中的程式碼`FullTrust`模式執行的範本時。 如果您建立自訂文字範本轉換主應用程式，您必須使用的安全機制，例如登錄中，尋找指示詞處理器引擎。

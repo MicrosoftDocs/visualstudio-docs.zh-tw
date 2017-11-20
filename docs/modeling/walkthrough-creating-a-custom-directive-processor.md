@@ -10,30 +10,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 - walkthroughs [text templates], directive processor
 ms.assetid: b8f35a36-14e1-4467-8f5f-e01402af14d5
-caps.latest.revision: 74
+caps.latest.revision: "74"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: fd49e497844c85482780c925ef94bc2c422cd80a
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
 ms.translationtype: MT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 449a8d80eef26935251c265b526d8aacd471d147
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>逐步解說：建立自訂指示詞處理器
 *指示詞處理器*碼加入至工作*產生轉換類別*。 如果您呼叫*指示詞*從*文字範本*，文字範本中所撰寫的程式碼的其餘部分可以依賴指示詞提供的功能。  
@@ -983,4 +968,3 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3.  若要檢視的瀏覽器中，輸出中**方案總管 中**，以滑鼠右鍵按一下 TestDP.htm，然後按一下**瀏覽器中檢視**。  
   
      您的輸出除了已套用 HTML 格式之外，應該與原本的文字相同。 每個項目名稱應該顯示為粗體。
-

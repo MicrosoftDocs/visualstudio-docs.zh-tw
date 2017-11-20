@@ -1,48 +1,51 @@
 ---
-title: "setUint8 方法 (DataView) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
+title: "setUint8 方法 (DataView) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
 ms.assetid: b294262b-3f4b-4183-a292-5a6982cbdd27
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 4ab533520d933b11657175d396433d732536c7a3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# setUint8 方法 (DataView)
-在從檢視開頭算起的指定位元組位移處儲存 Uint8 值。  
+# <a name="setuint8-method-dataview"></a>setUint8 方法 (DataView)
+儲存在指定的位元組位移，從開始檢視的 Uint8 值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 dataView.setUint8(byteOffset, value);   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `byteOffset`  
- 緩衝區中值應該設定的位置。  
+ 中的值應該設定的緩衝區位置。  
   
  `value`  
  要設定的值。  
   
-## 備註  
- 如果這些方法寫入的位置超過檢視的結尾，就會引發例外狀況。  
+## <a name="remarks"></a>備註  
+ 如果它們撰寫檢視的結尾之外，這些方法會引發例外狀況。  
   
-## 範例  
- 下列範例示範如何在 DataView 中設定第一個 Uint8。  
+## <a name="example"></a>範例  
+ 下列範例會示範如何設定在 DataView 中的第一個 Uint8。  
   
-```javascript  
+```JavaScript  
 var req = new XMLHttpRequest();  
     req.open('GET', "http://www.example.com");  
     req.responseType = "arraybuffer";  
@@ -58,5 +61,5 @@ var req = new XMLHttpRequest();
   
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv10](../../javascript/reference/includes/jsv10-md.md)]

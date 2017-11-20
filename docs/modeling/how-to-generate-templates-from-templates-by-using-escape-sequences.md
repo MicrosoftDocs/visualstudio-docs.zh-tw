@@ -1,28 +1,29 @@
 ---
-title: "如何：使用逸出序列從範本產生範本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "文字範本, 從範本產生範本"
+title: "如何： 使用逸出序列從範本產生範本 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
-caps.latest.revision: 35
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 35
+caps.latest.revision: "35"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 421b8a8bde2bb383889bcb58915fa8a3acb027cf
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 如何：使用逸出序列從範本產生範本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以建立文字範本，以建立另一個文字範本做為產生的文字輸出。  若要這麼做，您必須使用逸出序列來描述文字範本標記。  如果沒有使用逸出序列，產生的文字範本就含有預先定義的意義。  如需在文字範本中使用逸出序列的詳細資訊，請參閱[使用文字範本中的逸出序列](../modeling/using-escape-sequences-in-text-templates.md)。  
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用逸出序列從範本產生範本
+您可以建立可建立另一個文字範本產生的文字輸出的文字範本。 若要這樣做，您必須使用逸出序列來描述文字範本標記。 如果您不使用逸出序列，產生的文字範本必須預先定義的意義。 如需在文字範本中使用逸出序列的詳細資訊，請參閱[文字範本中使用逸出序列](../modeling/using-escape-sequences-in-text-templates.md)。  
   
-### 若要從文字範本中產生文字範本  
+### <a name="to-generate-a-text-template-from-within-a-text-template"></a>若要產生的文字範本內從文字範本  
   
--   使用反斜線 \(\\\) 做為逸出字元，在文字範本內產生必要的標記，以便在別的文字範本中提供指示詞、陳述式、運算式和類別等功能。  
+-   使用反斜線 (\\) 做為逸出字元，以產生必要的標記內的標記文字範本指示詞、 陳述式、 運算式和類別中的個別文字範本檔案的功能。  
   
     ```  
     \<#@ directive \#>  
@@ -31,10 +32,10 @@ caps.handback.revision: 35
     \<#+ classfeature \#>  
     ```  
   
-## 範例  
- 下列範例會使用逸出字元，從文字範本產生文字範本。  `output` 指示詞會將目的檔案類型設定為文字範本檔案類型 \(.tt\)。  
+## <a name="example"></a>範例  
+ 下列範例會使用逸出字元來產生文字範本，從文字範本。 `output`指示詞設定目的地檔案類型為文字範本的檔案類型 (.tt)。  
   
-```c#  
+```csharp  
 \<#@ output extension=".tt" \#>  
 \<#@ assembly name="System.Xml.dll" \#>  
 \<#@ import namespace="System.Xml" \#>  
@@ -53,7 +54,7 @@ XmlDocument xDoc = new XmlDocument();
 \#>  
 ```  
   
- 產生的文字輸出是文字範本。  
+ 產生的文字輸出是以文字範本。  
   
 ```  
 <#@ output extension=".tt" #>  

@@ -1,105 +1,106 @@
 ---
-title: "建立 ClickOnce 應用程式供其他人部署 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<useManifestForTrust> 項目"
-  - "應用程式資訊清單 [ClickOnce]"
-  - "ClickOnce 應用程式, 由其他人部署"
-  - "ClickOnce 應用程式, 舊版 .NET Framework"
-  - "ClickOnce 應用程式, 舊版 .NET Framework"
-  - "客戶部署 [ClickOnce]"
-  - "資料清單 [ClickOnce]"
-  - "多個 ClickOnce 部署和品牌"
-  - "保留品牌資訊"
-  - "信任應用程式, ClickOnce"
-  - "useManifestForTrust 項目"
+title: "建立 ClickOnce 應用程式供其他人部署 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- preserved branding information
+- useManifestForTrust element
+- customer deployments [ClickOnce]
+- multiple ClickOnce deployment and branding
+- ClickOnce applications, previous .NET Framework versions
+- application manifests [ClickOnce]
+- <useManifestForTrust> element
+- manifests [ClickOnce]
+- trust applications, ClickOnce
+- ClickOnce applications, deployed by others
+- ClickOnce applications, previous .NET Framework
 ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
-caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 0ca5bb824cbe4e37db241aba956f9f6bf91d18cd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 建立 ClickOnce 應用程式供其他人部署
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-不是所有正在建立 ClickOnce 部署計劃的開發人員都打算自己部署應用程式；  其中有許多人只是要使用 ClickOnce 封裝他們的應用程式，然後再將檔案交給客戶 \(例如大型企業\)，  再由客戶負責將應用程式裝載到其網路上。  本主題討論在 .NET Framework 3.5 版之前的版本中，這種部署所本身所存在的某些問題。  接著並說明使用 .NET Framework 3.5 中新增之「使用信任資訊清單」功能所提供的新方案。  最後再總結說明建立 ClickOnce 部署的建議策略，以供還在使用舊版 .NET Framework 的客戶使用。  
+# <a name="creating-clickonce-applications-for-others-to-deploy"></a>建立 ClickOnce 應用程式供其他人部署
+並非所有的開發人員建立 ClickOnce 部署計劃部署應用程式本身。 其中許多只使用 ClickOnce 封裝其應用程式，然後遞交檔案給客戶，例如大型公司。 客戶會變成負責裝載其網路上的應用程式。 本主題討論這類部署中的.NET Framework 3.5 版之前的版本中固有的問題。 然後，它會描述在.NET Framework 3.5 使用新的 [使用信任的資訊清單] 功能提供新的方案。 最後，它會做出結論與建議的策略，以建立 ClickOnce 部署的客戶仍在使用較舊版本的.NET framework。  
   
-## 為客戶建立部署時所涉及的問題  
- 當您規劃要提供部署給客戶時，將會發生幾個問題。  第一個問題與程式碼簽署有關。  為了跨網路進行部署，ClickOnce 部署的部署資訊清單和應用程式資訊清單都必須使用數位憑證進行簽署。  這項需求引發了簽署資訊清單時應該使用開發人員的憑證還是客戶的憑證的問題。  
+## <a name="issues-involved-in-creating-deployments-for-customers"></a>為客戶建立部署的相關問題  
+ 當您打算提供給客戶的部署時，就會發生幾個問題。 第一個問題是有關程式碼簽署。 才能透過網路部署，部署資訊清單和 ClickOnce 部署的應用程式資訊清單必須同時簽署的數位憑證。 這會引發的問題時是否要使用的開發人員憑證或客戶的憑證簽署資訊清單。  
   
- 使用哪一個憑證的問題非常重要，因為 ClickOnce 應用程式的識別 \(Identity\) 是以部署資訊清單的數位簽章做為基礎。  如果開發人員簽署了部署資訊清單，當客戶是大型公司，而且公司中有一個以上部門部署該應用程式的自訂版本時，可能就會造成衝突的情況。  
+ 要使用的憑證問題並重要，因為 ClickOnce 應用程式的身分識別為基礎的部署資訊清單的數位簽章。 如果開發人員簽署部署資訊清單，它可能會導致衝突，如果客戶是大型公司，並有一個以上的公司部門部署自訂應用程式的版本。  
   
- 例如，假設 Adventure Works 公司有財務部門和人力資源部門，  而這兩個部門都已授權使用 Microsoft Corporation 提供的 ClickOnce 應用程式，以便從儲存在 SQL 資料庫中的資料產生報告。  Microsoft 分別為這兩個部門提供適用於其資料的自訂應用程式版本。  如果這些應用程式都使用相同的 Authenticode 憑證進行簽署，則嘗試同時使用這兩種應用程式的使用者將會遇到錯誤，因為 ClickOnce 會將第二個應用程式和第一個應用程式視為完全相同。  在這種情況下，客戶可能會遇到無法預期且不必要的副作用，包括遺失應用程式儲存在本機的資料。  
+ 例如，Adventure Works 的財務部門和人力資源部門。 這兩個部門的授權從 SQL 資料庫中儲存的資料產生報告的 Microsoft corporation 的 ClickOnce 應用程式。 Microsoft 會提供每個部門各以自訂其資料的應用程式的版本。 如果應用程式使用相同的 Authenticode 憑證簽署，便會嘗試使用兩個應用程式的使用者會遇到錯誤，因為 ClickOnce 會將第二個為與第一個應用程式。 在此情況下，客戶可能會導致無法預期且不必要的副作用，包括由應用程式在本機儲存的任何資料遺失。  
   
- 另外一個與程式碼簽署有關的問題是部署資訊清單中的 `deploymentProvider` 項目，它可用來告知 ClickOnce 尋找應用程式更新的適當位置。  這個項目必須先加入至部署資訊清單中，然後才能進行簽署。  如果在簽署之後才加入這個項目，則必須重新簽署部署資訊清單。  
+ 發生其他問題相關的程式碼簽章是`deploymentProvider`會告訴 ClickOnce 何處尋找應用程式更新的部署資訊清單中的項目。 這個項目已加入至部署資訊清單簽署它之前。 如果這個項目加入之後，必須重新簽署部署資訊清單。  
   
-### 要求客戶簽署部署資訊清單  
- 如果要解決這種非唯一部署的問題，其中一種解決方法是讓開發人員簽署應用程式資訊清單，然後讓客戶簽署部署資訊清單。  雖然這個方法很有效，但是卻會引發其他問題。  由於 Authenticode 憑證必須維持受保護的資產之形態，因此客戶不能直接將此憑證提供給開發人員來簽署部署。  雖然客戶可以任意使用 .NET Framework SDK 所提供的工具以自行簽署部署資訊清單，這項程序所需要的技術知識可能超過客戶願意或能夠提供的範圍。  在這種情況下，開發人員通常都會建立應用程式、網站或其他機制，讓客戶可以透過這些機制送出他們的應用程式版本來進行簽署。  
+### <a name="requiring-the-customer-to-sign-the-deployment-manifest"></a>要求客戶簽署部署資訊清單  
+ 非唯一的部署問題的解決方案之一是讓開發人員簽署的應用程式資訊清單和客戶簽署部署資訊清單。 當這種方法，它會導致其他問題。 因為 Authenticode 憑證必須保持受保護的資產，客戶無法只會讓程式開發人員簽署部署憑證。 雖然客戶可以簽署部署資訊清單本身使用.NET Framework SDK 中使用免費的工具，這可能需要比客戶願意或能夠提供更多技術知識。 在這種情況下，開發人員通常會建立應用程式、 網站或其他機制，透過此客戶提交自己版本的簽章的應用程式。  
   
-### 客戶簽署對 ClickOnce 應用程式安全性的影響  
- 即使開發人員和客戶都同意應該由客戶來簽署應用程式資訊清單，還是會引發與應用程式識別有關的其他問題，尤其是將應用程式識別套用至受信任的應用程式部署時   \(如需此功能的詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)\)。 假設 Adventure Works 公司想要設定用戶端電腦，好讓 Microsoft Corporation 提供給他們的任何應用程式都能夠以完全信任的層級執行。  如果 Adventure Works 簽署了部署資訊清單，ClickOnce 就會使用 Adventure Works 的安全性簽章來判斷應用程式的信任層級。  
+### <a name="the-impact-of-customer-signing-on-clickonce-application-security"></a>簽署 ClickOnce 應用程式安全性的客戶的影響  
+ 即使開發人員和客戶同意客戶應該簽署應用程式資訊清單，這會引發有關應用程式的身分識別的其他問題尤其是它會套用至受信任的應用程式部署。 (如需有關這項功能的詳細資訊，請參閱[受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。)說出 Adventure Works 想要設定其用戶端電腦，讓任何 Microsoft Corporation 所提供給他們的應用程式執行以完全信任。 如果 Adventure Works 簽署部署資訊清單，ClickOnce 會判斷應用程式的信任層級使用 Adventure 工作安全性簽章。  
   
-## 使用信任應用程式資訊清單建立客戶部署  
- .NET Framework 3.5 中的 ClickOnce 包含一項新功能，可以為開發人員和客戶提供新的方案，以解決如何簽署資訊清單的案例。  ClickOnce 應用程式資訊清單支援一個名為 `<useManifestForTrust>` 的新項目，這個項目可以讓開發人員清楚說明，在決定信任層級時應該使用應用程式資訊清單的數位簽章。  開發人員可以使用 ClickOnce 封裝工具 \(例如 Mage.exe、MageUI.exe 和 Visual Studio\) 將這個項目包含在應用程式資訊清單中，同時也將他們的發行者 \(Publisher\) 名稱和應用程式名稱都內嵌在資訊清單中。  
+## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>使用信任的應用程式資訊清單建立客戶部署  
+ 在.NET Framework 3.5 的 ClickOnce 包含新的功能，可讓開發人員及客戶新方案的案例是應該用來簽署資訊清單的方式。 ClickOnce 應用程式資訊清單支援新的項目，名為`<useManifestForTrust>`，可讓開發人員，表示要在應用程式資訊清單的數位簽章項目應該用來進行信任決策。 開發人員會使用 ClickOnce 封裝工具 — 例如 Mage.exe、 MageUI.exe 和 Visual Studio，在應用程式資訊清單中包含這個項目以及其發行者名稱和應用程式的名稱嵌入資訊清單。  
   
- 使用 `<useManifestForTrust>` 時，部署資訊清單不需要以憑證授權單位所核發的 Authenticode 憑證進行簽署，  而且可以改用所謂的自我簽署憑證來簽署。  自我簽署憑證是由客戶或開發人員利用標準的 .NET Framework SDK 工具所產生的憑證，然後再使用標準的 ClickOnce 部署工具套用到部署資訊清單。  如需詳細資訊，請參閱[Makecert.exe \(Certificate Creation Tool\)](../Topic/Makecert.exe%20\(Certificate%20Creation%20Tool\).md)。  
+ 當使用`<useManifestForTrust>`，不需要使用憑證授權單位所核發的 Authenticode 憑證來簽署部署資訊清單。 相反地，它可以使用所謂的自我簽署憑證簽署。 自我簽署的憑證是使用標準.NET Framework SDK 工具，產生客戶或開發人員，然後使用標準的 ClickOnce 部署工具套用至部署資訊清單。 如需詳細資訊，請參閱[MakeCert](https://msdn.microsoft.com/library/windows/desktop/aa386968.aspx)。  
   
- 使用自我簽署憑證處理部署資訊清單有幾個優點。  由於客戶不需要取得或建立自己的 Authenticode 憑證，因此 `<useManifestForTrust>` 可以簡化客戶的部署工作，同時也讓開發人員可以在應用程式上保留自己專屬的品牌識別。  這種方式所產生的結果是一組已簽署的部署，而這組部署除了更為安全之外，也會有唯一的應用程式識別，  因此可以消除因為將同一個應用程式部署到多個客戶所可能產生的潛在衝突。  
+ 使用自我簽署的憑證的部署資訊清單有幾個優點。 不需要在取得或建立自己的 Authenticode 憑證，客戶`<useManifestForTrust>`可簡化部署的客戶，同時允許開發人員維護自己的商標設定識別身分應用程式上。 結果是帶正負號的部署更安全且唯一的應用程式身分識別的一組。 這樣就不可能從同一個應用程式部署至多個客戶，可能會發生的衝突。  
   
- 如需如何在啟用 `<useManifestForTrust>` 的情況下建立 ClickOnce 部署的逐步資訊，請參閱[逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)。  
+ 如需如何建立與 ClickOnce 部署的逐步解說資訊`<useManifestForTrust>`啟用，請參閱[逐步解說： 手動部署 ClickOnce 應用程式，並不需要重新簽署，並會保留商標資訊](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
   
-### 信任應用程式資訊清單在執行階段的運作方式  
- 若要更進一步了解使用信任應用程式資訊清單在執行階段運作的方式，請參考以下範例。  Microsoft 建立了以 .NET Framework 3.5 為目標的 ClickOnce 應用程式。  其應用程式資訊清單使用 `<useManifestForTrust>` 項目，並由 Microsoft 加以簽署。  Adventure Works 使用自我簽署憑證來簽署部署資訊清單。  Adventure Works 用戶端則已設定為信任由 Microsoft 簽署的任何應用程式。  
+### <a name="how-application-manifest-for-trust-works-at-runtime"></a>信任是在執行階段的運作方式的應用程式資訊清單  
+ 若要進一步了解使用信任的應用程式資訊清單的運作方式在執行階段，請考慮下列的範例。 以.NET Framework 3.5 為目標的 ClickOnce 應用程式是 Microsoft 所建立的。 應用程式資訊清單使用`<useManifestForTrust>`項目會由 Microsoft 簽署。 Adventure Works 會使用自我簽署的憑證來簽署部署資訊清單。 Adventure 的 Works 設定用戶端信任由 Microsoft 簽署的任何應用程式。  
   
- 當使用者按一下部署資訊清單的連結時，ClickOnce 便會將應用程式安裝在使用者的電腦上。  憑證和部署資訊可讓 ClickOnce 唯一識別用戶端電腦上的應用程式。  如果使用者再次嘗試從不同的位置安裝相同的應用程式，ClickOnce 就可以使用這項識別判斷應用程式是否已經存在用戶端上。  
+ 當使用者按一下部署資訊清單的連結時，ClickOnce 會在使用者電腦上安裝應用程式。 憑證和部署資訊識別唯一用戶端電腦上的 ClickOnce 應用程式。 如果使用者嘗試從不同位置，重新安裝相同的應用程式，ClickOnce 可以使用這個身分識別來判斷應用程式已經存在於用戶端。  
   
- 接著，ClickOnce 會檢查用來簽署應用程式資訊清單的 Authenticode 憑證，並決定 ClickOnce 將授與的信任層級。  由於 Adventure Works 已將其用戶端設定為信任由 Microsoft 簽署的任何應用程式，因此這個 ClickOnce 應用程式將會取得完全信任的授權。  如需詳細資訊，請參閱 [受信任的應用程式部署概觀](../deployment/trusted-application-deployment-overview.md)。  
+ 接下來，ClickOnce 會檢查用來簽署的 ClickOnce 會授與的信任層級的應用程式資訊清單的 Authenticode 憑證。 Adventure Works 已設定它的用戶端信任由 Microsoft 簽署的任何應用程式，因為此 ClickOnce 應用程式會授與完全信任。 如需詳細資訊，請參閱 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。  
   
-## 建立舊版本的客戶部署  
- 如果開發人員要為使用舊版 .NET Framework 的客戶部署 ClickOnce 應用程式，應該如何處理？  以下各節摘要說明幾個建議的方案，以及各個方案的優缺點。  
+## <a name="creating-customer-deployments-for-earlier-versions"></a>建立舊版的客戶部署  
+ 如果開發人員正在部署 ClickOnce 應用程式使用的.NET framework 的較舊版本的客戶？ 下列各節摘要說明幾個建議的解決方案，以及優點和缺點，每個。  
   
-### 代表客戶簽署部署  
- 其中一種可能的部署策略是由開發人員建立一種機制，利用客戶本身的私密金鑰來代表客戶簽署部署。  這種方法使得開發人員不需要管理私密金鑰或多個部署套件，  而只需要提供相同的部署給每一位客戶，  然後再由客戶依據其環境，自行利用簽署服務來自訂部署。  
+### <a name="sign-deployments-on-behalf-of-customer"></a>代表客戶的簽署部署  
+ 其中一種可能的部署策略是開發人員建立使用客戶自己的私密金鑰來簽署部署他們的客戶，代表一種機制。 這可防止開發人員不必管理私密金鑰或多個部署套件。 開發人員只是提供相同的部署，為每位客戶。 這是由客戶針對其環境加以自訂，使用簽章服務。  
   
- 這種方法的其中一個缺點是實作的時間和成本。  雖然這類服務可以使用 .NET Framework SDK 所提供的工具來建置，但是卻會拉長產品生命週期中的開發時間。  
+ 這個方法的缺點之一是實作它所需的成本與時間。 雖然可以使用.NET Framework SDK 中提供的工具來建置這類服務，它會在產品生命週期增加更多的開發時間。  
   
- 如本主題前面所述，另一個缺點是每個客戶的應用程式版本都會有相同的應用程式識別，而可能產生衝突。  如果這點可能造成問題，開發人員可以變更產生部署資訊清單時所使用的 \[名稱\] 欄位，以針對每個應用程式指定一個唯一的名稱。  如此便可為每個應用程式版本建立個別的識別，也可以消除任何潛在的識別衝突。  這個欄位對應於 Mage.exe 的 `-Name` 引數，以及 MageUI.exe 中 \[**名稱**\] 索引標籤上的 \[**名稱**\] 欄位。  
+ 如本主題稍早所述，另一個缺點是每個客戶的應用程式版本會具有相同的應用程式識別，這樣可能會導致衝突。 如果這是一項考量，開發人員可以變更 [名稱] 欄位，用於產生的部署資訊清單時提供每個應用程式的唯一名稱。 這將會建立在不同的識別每個版本的應用程式，並排除任何身分識別的潛在衝突。 此欄位對應到`-Name`引數的 Mage.exe，並**名稱**欄位**名稱**MageUI.exe 中的 索引標籤。  
   
- 例如，假設開發人員已經建立一個名為 Application1 的應用程式。  除了建立將 \[名稱\] 欄位設定為 Application1 的單一部署以外，開發人員也可以建立幾個部署，並因客戶不同為這個名稱進行變化，例如 Application1\-CustomerA、Application1\-CustomerB，依此類推。  
+ 例如，開發人員已經建立名為 Application1 應用程式。 不使用 [名稱] 欄位設定為 Application1 中建立單一部署，開發人員可以建立數個部署與特定客戶的變化，此名稱，例如 Application1 CustomerA，Application1 CustomerB，等等。  
   
-### 使用安裝套件部署  
- 第二個可能的部署策略是產生 Microsoft 安裝專案，以執行 ClickOnce 應用程式的初始部署。  這個安裝專案可以透過幾種不同的格式來提供，包括 MSI 部署、安裝程式可執行檔 \(.EXE\)，或是封包 \(.cab\) 檔搭配批次指令碼等格式。  
+### <a name="deploy-using-a-setup-package"></a>使用安裝程式封裝部署  
+ 產生的 Microsoft 安裝程式專案，以執行 ClickOnce 應用程式的初始部署為第二個可能的部署策略。 這可以提供數種不同格式之一： 為 MSI 部署，安裝程式可執行檔 (。EXE)，或以批次指令碼以及封包 (.cab) 檔案。  
   
- 使用這種技巧時，開發人員提供給客戶的部署中將包括應用程式檔案、應用程式資訊清單和做為範本的部署資訊清單。  客戶會執行安裝程式，而安裝程式則會提示客戶提供部署 URL \(使用者用來安裝 ClickOnce 應用程式的伺服器或檔案共用位置\) 以及數位憑證。  安裝應用程式可能也會選擇提示其他 ClickOnce 組態選項，例如更新檢查間隔。  在蒐集這些資訊之後，安裝程式便會產生實際的部署資訊清單、簽署該資訊清單，然後將 ClickOnce 應用程式發行到指定的伺服器位置。  
+ 使用這項技術，開發人員提供客戶的部署包含應用程式檔案、 應用程式資訊清單中，以及做為範本的部署資訊清單。 客戶會執行安裝程式會提示他們提供部署 URL （伺服器或檔案共用使用者將從中安裝 ClickOnce 應用程式的位置），以及數位憑證。 也可以選擇安裝應用程式提示您輸入其他 ClickOnce 組態選項，例如更新檢查的間隔。 之後會收集此資訊，安裝程式會產生實際的部署資訊清單、 登入，並發行 ClickOnce 應用程式，以指定的伺服器位置。  
   
- 在這種情況下，客戶可以透過下列三種方式來簽署部署資訊清單：  
+ 有三種方式，客戶可以簽署部署資訊清單在此情況下：  
   
-1.  客戶可以使用憑證授權單位 \(CA\) 核發的有效憑證。  
+1.  客戶可以使用憑證授權單位 (CA) 核發的有效憑證。  
   
-2.  與前述方法類似，客戶也可以選擇使用自我簽署憑證來簽署其部署資訊清單。  這種方法的缺點是它會在詢問使用者是否要安裝應用程式時，導致應用程式顯示 \[未知的發行者\] 等文字。  不過，優點是規模較小的客戶不需要花費大量時間和金錢取得憑證授權單位所核發的憑證。  
+2.  與這種方式的做法，客戶可以選擇使用自我簽署的憑證其部署資訊清單簽章。 這樣的缺點是，它會導致應用程式時，要顯示 「 未知的發行者 」 的單字會要求使用者是否要安裝它。 不過，好處是，它會防止較小的客戶需要花費大量時間和金錢所需的憑證授權單位所核發的憑證。  
   
-3.  最後，開發人員還可以將他們自己的自我簽署憑證包含在安裝套件中。  這種方法可能會造成本主題前面所述的應用程式識別相關問題。  
+3.  最後，開發人員可以在安裝套件包含自己的自我簽署的憑證。 這會導致與本主題稍早所述的應用程式識別潛在的問題。  
   
- 安裝部署專案方法的缺點是建置自訂部署應用程式所需的時間和成本。  
+ 設定部署專案方法的缺點是建置自訂部署應用程式所需的成本與時間。  
   
-### 讓客戶產生部署資訊清單  
- 第三種可能的部署策略是只將應用程式檔案和應用程式資訊清單交給客戶。  在這種情況下，必須由客戶負責使用 .NET Framework SDK 來產生及簽署部署資訊清單。  
+### <a name="have-customer-generate-deployment-manifest"></a>由客戶產生部署資訊清單  
+ 第三個可能的部署策略是要將只有應用程式檔案和應用程式資訊清單關閉給客戶。 在此案例中，客戶就是負責產生並簽署部署資訊清單使用.NET Framework SDK。  
   
- 這種方法的缺點是客戶必須安裝 .NET Framework SDK 工具，而且其開發人員或系統管理員必須熟悉這些工具的用法。  有些客戶可能會要求您提供只需要少數技術性需求或根本沒有任何技術性需求的解決方案。  
+ 這個方法的缺點是它需要客戶安裝.NET Framework SDK 工具，並讓開發人員或系統管理員身分在使用這些技術。 有些客戶可能會要求需要少量或沒有技術投入時間集中用於其組件的解決方案。  
   
-## 請參閱  
- [針對測試和實際執行伺服器部署 ClickOnce 應用程式但不重新簽章](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
+## <a name="see-also"></a>另請參閱  
+ [部署 ClickOnce 應用程式進行測試和實際執行伺服器，而不重新簽章](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [逐步解說：手動部署 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
  [逐步解說：手動部署不需要重新簽署而且會保留商標資訊的 ClickOnce 應用程式](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)

@@ -1,24 +1,25 @@
 ---
-title: "文字範本控制區塊 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "文字範本, 範本程式碼"
+title: "文字範本控制區塊 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: text templates, template code
 ms.assetid: bad198b9-57a4-4777-bd5b-ab6336c825f3
-caps.latest.revision: 32
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 32
+caps.latest.revision: "32"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 0a2f2ba54f26e84ee321f0f726f2f07dbef5c19b
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 文字範本控制區塊
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。  有三種類型的控制區塊，是使用左括號來區別：  
+# <a name="text-template-control-blocks"></a>文字範本控制區塊
+控制區塊可讓您在文字範本撰寫程式碼，以便產生不同的輸出。 有三種類型的控制區塊，是使用左括號來區別：  
   
 -   `<# Standard control blocks #>` 可以包含陳述式。  
   
@@ -26,8 +27,8 @@ caps.handback.revision: 32
   
 -   `<#+ Class feature control blocks #>` 可以包含方法、欄位和屬性。  
   
-## 標準控制區塊  
- 標準控制區塊包含陳述式。  例如，下列標準區塊會取得 XML 文件中所有屬性的名稱：  
+## <a name="standard-control-block"></a>標準控制區塊  
+ 標準控制區塊包含陳述式。 例如，下列標準區塊會取得 XML 文件中所有屬性的名稱：  
   
 ```  
 <#@ assembly name="System.Xml.dll" #>  
@@ -48,7 +49,7 @@ caps.handback.revision: 32
 #>  
 ```  
   
- 您也可以在複合陳述式中內嵌純文字，例如 `if` 或 `for`。  例如，此片段會在每個迴圈反覆項目產生輸出行：  
+ 您也可以在複合陳述式中內嵌純文字，例如 `if` 或 `for`。 例如，此片段會在每個迴圈反覆項目產生輸出行：  
   
 ```  
 <#  
@@ -63,9 +64,9 @@ Found another one!
 ```  
   
 > [!WARNING]
->  永遠使用 {...} 來分隔包含內嵌純文字的巢狀陳述式。  下列範例可能無法正常運作：  
+>  永遠使用 {...} 來分隔包含內嵌的純文字的巢狀陳述式。 下列範例可能無法正常運作：  
 >   
->  `<# if (ShouldPrint) #> Some text.  -- WRONG`  
+>  `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
 >  相反地，您應該包括 {大括號}，如下所示：  
   
@@ -82,8 +83,8 @@ Some text.
   
 ```  
   
-## 運算式控制區塊  
- 運算式控制區塊是用來提供要寫入至輸出檔之字串的程式碼。  例如，利用以上範例，您可以如下所示修改程式碼區塊，將屬性的名稱列印至輸出檔：  
+## <a name="expression-control-block"></a>運算式控制區塊  
+ 運算式控制區塊是用來提供要寫入至輸出檔之字串的程式碼。 例如，利用以上範例，您可以如下所示修改程式碼區塊，將屬性的名稱列印至輸出檔：  
   
 ```  
 <#  
@@ -94,14 +95,14 @@ Some text.
     {  
        foreach (XmlAttribute attr in attributes)  
        {   
-#> <#= attr.Name #> <#  
+#><#= attr.Name #><#  
        }  
     }  
 #>  
 ```  
   
-## 類別功能控制區塊  
- 您可以使用類別功能控制區塊將方法、屬性、欄位或甚至是巢狀類別加入至文字範本。  類別功能區塊的常見用法是在文字範本其他部分的程式碼中提供 helper 函式。  例如，下列類別功能區塊會將屬性名稱的第一個字母轉換成大寫字母 \(或者，如果名稱包含空格，則會將每個字的第一個字母轉換成大寫字母\)：  
+## <a name="class-feature-control-block"></a>類別功能控制區塊  
+ 您可以使用類別功能控制區塊將方法、屬性、欄位或甚至是巢狀類別加入至文字範本。 類別功能區塊的常見用法是在文字範本其他部分的程式碼中提供 helper 函式。 例如，下列類別功能區塊會將屬性名稱的第一個字母轉換成大寫字母 (或者，如果名稱包含空格，則會將每個字的第一個字母轉換成大寫字母)：  
   
 ```  
 <#@ import namespace="System.Globalization" #>  
@@ -117,9 +118,9 @@ Some text.
 ```  
   
 > [!NOTE]
->  類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。  不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。  每個包含的檔案的類別功能區塊後可以有標準區塊。  
+>  類別功能控制區塊後面不得接著相同的範本檔案中的標準控制區塊。 不過，這項限制不適用於使用 `<#@include#>` 指示詞的結果。 每個包含的檔案的類別功能區塊後可以有標準區塊。  
   
- 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。  例如:  
+ 您可以建立函式，其會透過在類別功能控制區塊內內嵌文字和運算式區塊來產生輸出。 例如:  
   
 ```  
 <#+  
@@ -142,22 +143,22 @@ Some text.
 #>  
 ```  
   
-## 如何使用控制區塊  
- 在單一範本 \(包括包含的範本中的所有程式碼\) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。  \(如需對 `include` 指示詞包括其他文字範本的詳細資訊，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。\)  
+## <a name="how-to-use-control-blocks"></a>如何使用控制區塊  
+ 在單一範本 (包括包含的範本中的所有程式碼) 中的所有標準和運算式控制區塊中的所有程式碼會結合，以形成所產生程式碼的 `TransformText()` 方法。 (如需詳細資訊，包括其他文字範本的`include`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)  
   
  使用控制區塊時，您應該記住下列考量：  
   
--   **語言。** 您可以在文字範本中使用 C\# 或 Visual Basic 程式碼。  預設語言是 C\# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。  \(如需 `template` 指示詞的詳細資訊，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。\)  
+-   **語言。** 您可以在文字範本中使用 C# 或 Visual Basic 程式碼。 預設語言是 C# 中，但是您可以使用 `template` 指示詞的 `language` 參數指定 Visual Basic。 (如需有關`template`指示詞，請參閱[T4 文字範本指示詞](../modeling/t4-text-template-directives.md)。)  
   
-     您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。  您可以使用 Visual Basic 程式碼產生 C\#，反之亦然。  
+     您在控制區塊中使用的語言，與您在文字範本中產生的文字的語言或格式無關。 您可以使用 Visual Basic 程式碼產生 C#，反之亦然。  
   
      您僅可以在指定的文字範本中使用一種語言，包括使用 `include` 指示詞併入的所有文字範本。  
   
--   **區域變數。** 由於文字範本中標準和運算式控制區塊中的所有程式碼，會產生為單一方法，您應該確定沒有與區域變數名稱的衝突。  如果還要包含其他文字範本，您必須確定變數名稱在所有內含的範本之間是唯一的。  確保這點的一個方式就是在宣告所的位置，在對識別文字範本的每個區域變數名稱加入一個字串。  
+-   **本機變數。** 由於文字範本中標準和運算式控制區塊中的所有程式碼，會產生為單一方法，您應該確定沒有與區域變數名稱的衝突。 如果還要包含其他文字範本，您必須確定變數名稱在所有內含的範本之間是唯一的。 確保這點的一個方式就是在宣告所的位置，在對識別文字範本的每個區域變數名稱加入一個字串。  
   
      在宣告變數時以合理的值初始化您的區域變數，也是不錯的主意，尤其是在包含多個文字範本時。  
   
--   **控制區塊的巢狀結構。** 控制區塊不能在彼此間形成巢狀結構。  開啟另一個之前，您永遠必須終止特定的控制區塊。  例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。  
+-   **控制區塊的巢狀結構。** 控制區塊不能在彼此間形成巢狀結構。 開啟另一個之前，您永遠必須終止特定的控制區塊。 例如，以下顯示如何在運算式區塊中列印某些文字做為標準控制區塊的一部分。  
   
     ```  
     <#   
@@ -169,4 +170,4 @@ Some text.
     <# } #>  
     ```  
   
--   **重構。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。
+-   **重構作業。** 為了讓您的文字範本保持簡潔和易於了解，強烈建議您避免重複的程式碼，方法是將可重複使用的程式碼重構到類別功能區塊中的 helper 函式，或建立繼承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 類別的自己的文字範本類別。

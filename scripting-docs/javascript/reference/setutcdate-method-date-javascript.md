@@ -1,60 +1,62 @@
 ---
-title: "setUTCDate 方法 (日期) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCDate"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "日期, 設定"
-  - "日期, UTC"
-  - "setUTCDate 方法"
-  - "UTC 日期, 設定"
+title: "setUTCDate 方法 （日期） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCDate
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- dates, setting
+- UTC dates, setting
+- setUTCDate method
 ms.assetid: e6c3b876-70fe-4103-b197-6c84c078ce10
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5631a36c8b1c4f1ee50dcadb39f0f21ae5aa28e3
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# setUTCDate 方法 (日期) (JavaScript)
-使用全球定位時間 \(UTC\) 設定 `Date` 物件中的數字月份日期。  
+# <a name="setutcdate-method-date-javascript"></a>setUTCDate 方法 (日期) (JavaScript)
+設定每一天中月份`Date`物件使用國際標準時間 (UTC)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 dateObj.setUTCDate(numDate)   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `dateObj`  
- 必要項。  任何 `Date` 物件。  
+ 必要項。 任何 `Date` 物件。  
   
  *numDate*  
- 必要項。  等於月份日期的數值。  
+ 必要項。 數值等於的月份天數。  
   
-## 備註  
- 若要使用當地時間設定月份日期，請使用 `setDate` 方法。  
+## <a name="remarks"></a>備註  
+ 若要設定使用本地時間的月份天數，使用`setDate`方法。  
   
- 如果 *numDate* 的值大於 **Date** 物件中所儲存之月份的天數，或者是負數的話，日期將會設成等於 *numDate* 減去所儲存之月份的天數。  例如，如果儲存的日期是 1996 年 1 月 5 日，而且有呼叫 **setUTCDate\(32\)**，日期就會變更為 1996 年 2 月 1 日。  負數的處理方式類似。  
+ 如果值*numDate*大於儲存在該月份的天數**日期**物件或為負數，日期會設定為相等的日期*numDate*減號預存的月份天數。 例如，如果預存的日期是 1996 年 1 月 5 日和**setutcdate （32)**呼叫時，1996 年 2 月 1 日的日期變更。 負數有類似的行為。  
   
- **setUTCFullYear** 方法可用來設定年、月和日期。  
+ **SetUTCFullYear**方法可以用來設定年、 月和月份天數。  
   
-## 範例  
- 在下列範例中，說明了如何使用 `setUTCDate` 方法。  
+## <a name="example"></a>範例  
+ 在下列程式碼中，說明了如何使用 `setUTCDate` 方法。  
   
-```javascript  
+```JavaScript  
 function SetUTCDateDemo(newdayofmonth){  
    var d = new Date();           // Create Date object.  
    d.setUTCDate(newdayofmonth);  // Set UTC day of month.  
@@ -64,12 +66,12 @@ function SetUTCDateDemo(newdayofmonth){
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **適用於**：[Date 物件](../../javascript/reference/date-object-javascript.md)  
+ **適用於**： [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## 請參閱  
- [getDate 方法 \(Date\)](../../javascript/reference/getdate-method-date-javascript.md)   
- [getUTCDate 方法 \(Date\)](../../javascript/reference/getutcdate-method-date-javascript.md)   
- [setDate 方法 \(Date\)](../../javascript/reference/setdate-method-date-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [getDate 方法 （日期）](../../javascript/reference/getdate-method-date-javascript.md)   
+ [getUTCDate 方法 （日期）](../../javascript/reference/getutcdate-method-date-javascript.md)   
+ [setDate 方法 (Date)](../../javascript/reference/setdate-method-date-javascript.md)

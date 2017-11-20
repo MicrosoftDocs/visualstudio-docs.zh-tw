@@ -1,5 +1,5 @@
 ---
-title: "如何︰ 修改標準功能表命令，以網域特定語言 |Microsoft 文件"
+title: "如何： 修改標準功能表中的命令的網域特定定義域語言 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -10,39 +10,39 @@ helpviewer_keywords:
 - .vsct files, adding commands to a domain-specific language
 - Domain-Specific Language, adding custom commands
 ms.assetid: 9b9d8314-d0d8-421a-acb9-d7e91e69825c
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translationtype: Machine Translation
-ms.sourcegitcommit: eb2ab9d49cdeb1ed71da8ef67841f7796862dc30
-ms.openlocfilehash: 571b30e0be9863b20dc1c8abca87940bb21cc344
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 6e5d17a1a84eb71252956e921522e6eebfd67925
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>如何：使用網域指定的語言修改標準功能表命令
-您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改**剪下**，以便排除機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別在 DslPackage 專案的 CommandSet.cs 檔中定義，以及衍生自<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。</xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>  
+您可以針對 DSL 中自動定義的一些標準命令，修改其行為。 例如，您可以修改**剪下**，讓它不包含機密資訊。 若要執行這項操作，您可以覆寫命令集類別中的方法。 這些類別是在 DslPackage 專案的 CommandSet.cs 檔中定義，並且衍生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>。  
   
  簡而言之，若要修改命令：  
   
-1.  [探索功能的命令可以修改](#what)。  
+1.  [探索哪些指令可以修改](#what)。  
   
 2.  [建立適當的命令集類別的部分宣告](#extend)。  
   
-3.  [覆寫 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
+3.  [覆寫的 ProcessOnStatus 和 ProcessOnMenu 方法](#override)命令。  
   
  本主題說明此程序。  
   
 > [!NOTE]
->  如果您想要建立您自己的功能表命令，請參閱[How to︰ 將命令加入至快顯功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
+>  如果您想要建立您自己的功能表命令，請參閱[如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。  
   
-##  <a name="a-namewhata-what-commands-can-you-modify"></a><a name="what"></a>您可以修改哪些命令？  
+##  <a name="what"></a>您可以修改哪些命令？  
   
 #### <a name="to-discover-what-commands-you-can-modify"></a>找出您可以修改的命令  
   
-1.  在`DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，做為`CommandSet.tt`。  
+1.  在`DslPackage`專案中，開啟`GeneratedCode\CommandSet.cs`。 可以在 [方案總管] 中找到這個 C# 檔案，為分公司的`CommandSet.tt`。  
   
-2.  在此檔案中尋找類別名稱結尾為"`CommandSet`」，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
+2.  此檔案中尋找類別其名稱結尾為"`CommandSet`"，例如`Language1CommandSet`和`Language1ClipboardCommandSet`。  
   
 3.  在每個命令集類別中，輸入 "`override`"，後面接著一個空格。 IntelliSense 會顯示您可以覆寫的方法清單。 每個命令都有名稱開頭為 "`ProcessOnStatus`" 和 "`ProcessOnMenu`" 的一組方法。  
   
@@ -53,7 +53,7 @@ ms.lasthandoff: 02/22/2017
     > [!NOTE]
     >  您通常不應該編輯產生的檔案。 任何編輯在下次產生檔案時都會遺失。  
   
-##  <a name="a-nameextenda-extend-the-appropriate-command-set-class"></a><a name="extend"></a>擴充適當的命令集類別  
+##  <a name="extend"></a>擴充適當的命令組類別  
  建立包含命令集類別之部分宣告的新檔案。  
   
 #### <a name="to-extend-the-command-set-class"></a>擴充命令集類別  
@@ -64,7 +64,7 @@ ms.lasthandoff: 02/22/2017
   
      `{ ...  internal partial class Language1CommandSet : ...`  
   
-2.  在**DslPackage**，建立一個名為**自訂程式碼**。 在此資料夾中，建立新的類別檔案命名為`CommandSet.cs`。  
+2.  在**DslPackage**，建立名為的資料夾**自訂程式碼**。 在這個資料夾中，建立新的類別檔案命名為`CommandSet.cs`。  
   
 3.  在新檔案中，撰寫具有與產生部分類別相同之命名空間和名稱的部分宣告。 例如:   
   
@@ -78,8 +78,8 @@ ms.lasthandoff: 02/22/2017
   
      **請注意**如果您使用的類別檔案範本來建立新的檔案，您必須更正命名空間和類別名稱。  
   
-##  <a name="a-nameoverridea-override-the-command-methods"></a><a name="override"></a>覆寫命令方法  
- 大多數命令具有兩個相關聯的方法︰ 具有名稱的方法要`ProcessOnStatus`...判斷命令是否應加以顯示並啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。  
+##  <a name="override"></a>覆寫命令的方法  
+ 大部分的命令有兩個相關聯的方法： 具有名稱的方法類似`ProcessOnStatus`...判斷命令是否應為可見並已啟用。 這個方法會在使用者以滑鼠右鍵按一下圖表時呼叫，應該會快速執行並且不進行任何變更。 `ProcessOnMenu`...當使用者按一下命令，並應該執行命令的函式呼叫。 您可能想覆寫其中一個或兩個方法。  
   
 ### <a name="to-change-when-the-command-appears-on-a-menu"></a>變更命令何時顯示在功能表上  
  覆寫 ProcessOnStatus...方法。 這個方法應該設定其參數 MenuCommand 的 Visible 和 Enabled 屬性。 命令通常會檢視 this.CurrentSelection 以判斷是否會套用至所選項目，也可能檢視其屬性以判斷是否可在其目前的狀態中套用命令。  
@@ -150,12 +150,11 @@ protected override void ProcessOnMenuDeleteCommand()
  如需有關如何瀏覽項目，以及有關如何建立物件和連結的詳細資訊，請參閱[巡覽和更新程式碼中的模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。  
   
 ## <a name="see-also"></a>另請參閱  
- <xref:System.ComponentModel.Design.MenuCommand></xref:System.ComponentModel.Design.MenuCommand>   
- [撰寫程式碼來自訂定義域專屬語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
- [如何︰ 將命令加入至快顯功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
- [VSPackages 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
- [Visual Studio 命令資料表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
+ <xref:System.ComponentModel.Design.MenuCommand>   
+ [撰寫程式碼以自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
+ [如何： 新增命令至捷徑功能表](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)   
+ [Vspackage 如何新增使用者介面項目](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
+ [Visual Studio 命令表 (。Vsct) 檔案](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [VSCT XML 結構描述參考](../extensibility/vsct-xml-schema-reference.md)   
- [VMSDK-電路圖表範例。廣泛的 DSL 自訂](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
- [程式碼範例︰ 電路圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
+ [VMSDK-循環圖表範例。廣泛的 DSL 自訂](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)   
+ [範例程式碼： 循環圖表](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

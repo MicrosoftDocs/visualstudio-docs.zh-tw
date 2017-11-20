@@ -1,37 +1,38 @@
 ---
-title: "Domain-Specific Language Tools 概觀 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "網域指定的語言"
+title: "特定領域語言工具的概觀 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language
 ms.assetid: 50d93ea2-8c88-4522-853b-40ab194953db
-caps.latest.revision: 54
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 54
+caps.latest.revision: "54"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 20d4222f96958a730c563ff9bc84b2b5d0b08538
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# Domain-Specific Language Tools 概觀
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-定義域專屬語言工具 \(DSL 工具\)，這些裝載於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，可以讓您設計一種定義域專屬語言，然後產生所有項目，使用者必須能夠建立模型為基礎的語言。  
+# <a name="overview-of-domain-specific-language-tools"></a>Domain-Specific Language Tools 概觀
+特定領域語言工具 （DSL 工具），裝載在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，讓您設計的特定領域語言，然後產生所有使用者必須具備才能建立模型為基礎之語言的項目。  
   
  DSL 工具包含下列工具：  
   
--   使用不同的方案範本\]，幫助您開始開發您的網域特定語言專案精靈。  
+-   專案精靈會協助您開始開發您的特定領域語言使用不同的解決方案範本。  
   
--   用於建立和編輯您的網域特定語言定義的圖形設計工具。  
+-   建立和編輯您的特定領域語言定義的圖形設計工具。  
   
--   驗證引擎，以確保定義域專屬語言定義正確，並顯示錯誤和警告，如果發生問題。  
+-   驗證引擎，以確保網域特定領域語言定義是語式正確，並顯示錯誤和警告，如果有問題。  
   
--   程式碼產生器，以取得做為輸入的網域特定語言定義，並產生做為輸出的原始程式碼。  
+-   程式碼產生器，會採用做為輸入的網域特定領域語言定義並產生原始程式碼，做為輸出。  
   
-## DSL 工具的解決方案  
- 定義域專屬設計工具精靈會提供下列的方案範本：  
+## <a name="the-dsl-tools-solution"></a>DSL 工具方案  
+ 定義域專屬 Designer 精靈提供下列解決方案範本：  
   
 -   工作流程  
   
@@ -43,38 +44,38 @@ caps.handback.revision: 54
   
 -   最小的 WPF  
   
--   最少的 Windows.Forms  
+-   最小 Windows.Forms  
   
--   DSL 文件庫  
+-   DSL 程式庫  
   
- 如需詳細資訊，請參閱 [選擇網域指定的語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
+ 如需詳細資訊，請參閱[選擇特定領域語言方案範本](../modeling/choosing-a-domain-specific-language-solution-template.md)。  
   
- 精靈會建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]方案具有下列專案：  
+ 精靈會建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]有下列專案的方案：  
   
 -   Dsl  
   
-     Dsl 專案定義網域特定語言和其編輯和處理工具。  
+     Dsl 專案定義的特定領域語言和其編輯和處理的工具。  
   
 -   **DslPackage**  
   
-     DslPackage 專案會決定如何與整合的語言工具[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
+     DslPackage 專案可讓您決定如何語言工具整合與[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
-## DSL 工具的圖形介面  
- 您可以使用 DSL 工具的圖形介面，將項目和關聯性新增至您的網域特定語言。  新增項目之後，您可以將它們對應至圖案、 自訂色彩，以及新增裝飾來定義其外觀。  您也可以加入工具箱\] 中的項目。  
+## <a name="the-dsl-tools-graphical-interface"></a>DSL 工具的圖形化介面  
+ 將項目和關聯性加入至您的特定領域語言，您可以使用 DSL 工具的圖形化介面。 加入項目之後，您可以對應至圖形、 自訂色彩，以及加入裝飾項目來定義其外觀。 您也可以在 [工具箱] 加入項目。  
   
-## 驗證在 DSL 工具  
- Dsl 會提供一個層級的驗證，請確定網域模型會符合用於產生程式碼的基本需求。  一般而言，當您建立您自己的定義域專屬語言時，即可將您自己的驗證，以表達您商務邏輯 」 規則。  如需有關自訂驗證的詳細資訊，請參閱[定義域專屬語言中的驗證](../modeling/validation-in-a-domain-specific-language.md)。  
+## <a name="validation-in-dsl-tools"></a>DSL 工具中的驗證  
+ Dsl 提供一個層級的驗證，則請確定網域模型的程式碼產生符合的基本需求。 一般而言，當您建立您自己的特定領域語言，您會加入您自己的驗證，以表達您的商務邏輯規則。 如需有關自訂驗證的詳細資訊，請參閱[中特定領域語言驗證](../modeling/validation-in-a-domain-specific-language.md)。  
   
- 我們建議您先通常驗證定義域專屬語言在設計。  如果您的網域特定語言有驗證錯誤，無法產生原始程式碼。  從範本產生原始程式碼的過程藉由按一下**轉換所有的範本**在 \[方案總管\] 的工具列。  每當您修改語言定義，也請務必**轉換所有的範本**。  如需詳細資訊，請參閱 [如何：建立網域指定的語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
+ 我們建議您先通常驗證您的特定領域語言在設計時。 如果您的特定領域語言有驗證錯誤，無法產生原始程式碼。 從範本產生原始程式碼的程序藉由按一下**轉換所有範本** 的 方案總管 工具列中。 每當您修改的語言定義，也請務必**轉換所有範本**。 如需詳細資訊，請參閱[How to： 建立特定領域語言方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。  
   
-## DSL 工具自訂作業  
- 您可以提供額外的程式碼要調整模型的行為，以及透過您的語言定義的條件約束。  如有需要，您可以藉由修改文字範本中進行重大變更。  
+## <a name="customization-of-dsl-tools"></a>DSL 工具的自訂  
+ 您可以提供額外的程式碼，來精簡模型的行為，並透過您的語言定義條件約束。 必要時，您可以藉由修改文字範本進行重大的變更。  
   
-## 發佈您的 DSL 方案  
- DSL 工具產生封裝裝載於[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  工具箱、 DSL 總管\] 中，與其他 UI 項目，可讓使用者藉由使用定義域專屬語言建立模型，則會顯示封裝。  
+## <a name="distributing-your-dsl-solution"></a>散發 DSL 方案  
+ DSL 工具會產生裝載中的套件[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 工具箱、 DSL 總管 中和其他 UI 項目，讓使用者可以使用您的特定領域語言建立模型，則會顯示封裝。  
   
- 當您建置並執行的 DSL 工具方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，第二個實例[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]顯示您語言的使用者網域特定語言的外觀。請確認所有項目是否能正確運作之後，您可以散佈`.vsix` DslPackage 專案 \[組建\] 資料夾中，您會發現的檔案。  這個檔案可以用來安裝為 DSL [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]在其他電腦上的擴充功能。  如需詳細資訊，請參閱 [部署網域指定的語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
+ 當您建置並執行 DSL 工具方案[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，另一個執行個體[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]顯示給使用者的語言特定領域語言的外觀。 在您確認一切運作正常之後，您可以將發佈`.vsix`DslPackage 專案的組建資料夾中的檔案。 這個檔案可以用來安裝做為 DSL[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]其他電腦上的擴充功能。  如需詳細資訊，請參閱[部署特定領域語言方案](../modeling/deploying-domain-specific-language-solutions.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [實驗執行個體](../extensibility/the-experimental-instance.md)   
- [Domain\-Specific Language Tools Glossary](http://msdn.microsoft.com/zh-tw/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [特定領域語言工具詞彙](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)

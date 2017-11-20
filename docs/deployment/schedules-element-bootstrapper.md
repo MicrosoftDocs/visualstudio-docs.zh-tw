@@ -1,33 +1,33 @@
 ---
-title: "&lt;Schedules&gt; 項目 (啟動載入器) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<Schedules> 項目 [啟動載入器]"
+title: "&lt;排程&gt;元素 （啟動載入器） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <Schedules> element [bootstrapper]
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
-caps.latest.revision: 5
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 104c187d373113e8e5dafe589af3995bef5c8cdc
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Schedules&gt; 項目 (啟動載入器)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`Schedules` 項目含有 `Schedule` 項目，根據 `Command` 項目所定義的命令指定執行的特定時間。  
+# <a name="ltschedulesgt-element-bootstrapper"></a>&lt;排程&gt;元素 （啟動載入器）
+`Schedules`元素包含`Schedule`項目，可定義特定時間所定義的命令在`Command`應該執行項目。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Schedules>  
@@ -41,29 +41,29 @@ caps.handback.revision: 5
 </Schedules>  
 ```  
   
-## 項目和屬性  
- `Schedules` 項目是 `Product` 項目的子系。  每個 `Product` 項目最多只能有一個 `Schedules` 項目。  `Schedules` 項目沒有任何屬性。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `Schedules`元素是子系`Product`項目。 每個`Product`元素可能會有最多一個`Schedules`項目。 `Schedules`項目沒有任何屬性。  
   
-## Schedule  
- `Schedule` 項目是 `Schedules` 項目的子系。  `Schedules` 項目必須至少有一個 `Schedule` 項目。  
+## <a name="schedule"></a>排程  
+ `Schedule`元素是子系`Schedules`項目。 A`Schedules`元素必須至少一個`Schedule`項目。  
   
- `Schedule` 具有下列屬性。  
+ `Schedule`具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`Name`|必要項。  排程項目的名稱。  此項對應於 `Command` 項目的 `ScheduleName` 屬性。  當 `Command` 參考具名排程時，就只會在 `Schedule` 項目指示的時間執行。  排程也可以和 `FailIf` 及 `BypassIf` 項目產生關聯，如此便可限制這些條件測試在指定的排程上執行。  如需詳細資訊，請參閱 [\<Commands\> 項目](../deployment/commands-element-bootstrapper.md)。|  
+|---------------|-----------------|  
+|`Name`|必要項。 排程項目名稱。 這會對應至`ScheduleName`屬性`Command`項目。 當`Command`參考具名的排程，就只會執行它時，由`Schedule`項目。 可能也與相關聯的排程`FailIf`和`BypassIf`項目，這些條件的測試限制於指定的排程執行。 如需詳細資訊，請參閱[\<命令 > 項目](../deployment/commands-element-bootstrapper.md)。|  
   
- 指定的 `Schedule` 項目可以只有下列其中一個子項目。  
+ 給定`Schedule`元素能有正好一個下列子節點。  
   
-## BuildList  
- `BuildList` 項目會指示安裝程式在啟動載入應用程式啟動之後，立即執行一項命令。  
+## <a name="buildlist"></a>BuildList  
+ `BuildList`項目會指示安裝程式啟動載入應用程式啟動後立即執行命令。  
   
-## BeforePackage  
- `BeforePackage` 項目會指示安裝程式在安裝指定的套件前，執行一項命令。  
+## <a name="beforepackage"></a>BeforePackage  
+ `BeforePackage`項目會指示安裝程式以安裝指定的封裝之前，請執行命令。  
   
-## AfterPackage  
- `AfterPackage` 項目會指示安裝程式在安裝指定的套件後，執行一項命令。  
+## <a name="afterpackage"></a>AfterPackage  
+ `AfterPackage`項目會指示安裝程式以安裝指定的封裝之後，執行命令。  
   
-## 請參閱  
- [\<Product\> 項目](../deployment/product-element-bootstrapper.md)   
+## <a name="see-also"></a>另請參閱  
+ [\<產品 > 項目](../deployment/product-element-bootstrapper.md)   
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

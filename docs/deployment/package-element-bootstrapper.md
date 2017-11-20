@@ -1,33 +1,33 @@
 ---
-title: "&lt;Package&gt; 項目 (啟動載入器) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "FSharp"
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<package> 項目 [啟動載入器]"
+title: "&lt;封裝&gt;元素 （啟動載入器） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- FSharp
+- VB
+- CSharp
+- C++
+helpviewer_keywords: <package> element [bootstrapper]
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
-caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 469024d48b1c145210aa518f10647d04315a0471
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;Package&gt; 項目 (啟動載入器)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-`Package` 項目是封裝 \(Package\) 檔案內部的最上層 XML 項目。  
+# <a name="ltpackagegt-element-bootstrapper"></a>&lt;封裝&gt;元素 （啟動載入器）
+`Package`項目是最上層 XML 元素內的封裝檔案。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <Package  
@@ -142,17 +142,17 @@ caps.handback.revision: 9
 </Package>  
 ```  
   
-## 項目和屬性  
- `Package` 項目為必要項。  它具有下列屬性：  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `Package`項目為必要。 它有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`Culture`|必要項。  定義此套件 \(Package\) 的文化特性 \(Culture\)，決定要使用的語言。  這個屬性 \(Attribute\) 是進入 `Strings` 項目的關鍵，會在安裝時列出產品名稱和錯誤訊息的文化特性特定字串。|  
-|`Name`|必要項。  在例如 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的工具內，對開發人員顯示的套件名稱。  這個屬性是進入 `Strings` 項目的關鍵，這個項目中所包含的 `String` 項目必須將 `Name` 和 `Culture` 屬性設定為符合 `Package` 的 `Name` 和 `Culture` 屬性。|  
-|`LicenseAgreement`|選擇項。  指定散發套件中含有使用者授權合約 \(EULA\) 的檔案名稱。  這個檔案可以是純文字 \(.txt\) 或是 RTF   \(.rtf\)|  
+|---------------|-----------------|  
+|`Culture`|必要項。 定義這個封裝，決定要使用的語言的文化特性。 這個屬性是索引鍵到`Strings`元素，其在安裝期間列出產品名稱和錯誤訊息的特定文化特性的字串。|  
+|`Name`|必要項。 例如，開發人員工具內顯示的套件名稱[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 這個屬性是索引鍵到`Strings`項目，其中應包含`String`具有項目`Name`和`Culture`屬性設定為符合`Name`和`Culture`屬性`Package`。|  
+|`LicenseAgreement`|選擇項。 指定的檔案名稱中包含使用者授權合約 (EULA) 散發套件。  這個檔案可以是純文字 (.txt) 或 Rtf 格式。 (.rtf)|  
   
-## 範例  
- 在下列程式碼範例中，示範轉散發 [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] 的完整封裝檔案。  
+## <a name="example"></a>範例  
+ 下列程式碼範例會顯示完整的封裝檔案轉散發[!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]。  
   
 ```  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -189,5 +189,5 @@ caps.handback.revision: 9
 </Package>  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [產品和封裝結構描述參考](../deployment/product-and-package-schema-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: "產生和設定您的應用程式模型 |Microsoft 文件"
+title: "產生並設定您的應用程式，從模型 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,29 +7,15 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 8f84f22444a5df5b9f4f4af44cd8ee9136403467
-ms.openlocfilehash: 864963f32fe703ada943f7e5202d7ebf6bf21e51
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 7dabd752aed4213c03ffd32ed5cc255ea4f2852e
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>透過模型產生和設定應用程式
 您可以透過模型產生或設定應用程式的各部分。
@@ -52,7 +38,7 @@ ms.lasthandoff: 02/22/2017
  不過，如果您從現有應用程式開始進行，則可能會發現需要進行許多重構，才能區隔模型所控管的不同行為，讓它們各自不同。 建議您在預估專案成本時評估應用程式的這個層面。  
   
 ## <a name="configuring-your-application-from-a-model"></a>透過模型設定應用程式  
- 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式讀取模型，並據此改變其行為。 如需詳細資訊，請參閱:  
+ 如果您想要改變應用程式在執行階段的行為，則無法使用程式碼產生，而程式碼產生會在編譯應用程式之前產生原始程式碼。 相反地，您可以設計應用程式讀取模型，並會隨之改變其行為。 如需詳細資訊，請參閱:  
   
 -   [如何：在程式碼中開啟檔案的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)  
   
@@ -63,31 +49,31 @@ ms.lasthandoff: 02/22/2017
 ## <a name="developing-a-derived-application"></a>開發衍生的應用程式  
  您可能會發現下列一般方針十分有用。  
   
--   **啟動特定，然後一般化。** 先撰寫應用程式的特定版本。 這個版本應該作用於一組條件。 滿意其運作正常狀態時，即可讓它的一部分衍生自模型。 逐漸擴充衍生的組件。  
+-   **啟動 [特定]，然後一般化。** 先撰寫應用程式的特定版本。 這個版本應該作用於一組條件。 滿意其運作正常狀態時，即可讓它的一部分衍生自模型。 逐漸擴充衍生的組件。  
   
      例如，先設計具有特定一組網頁的網站，再設計呈現模型中所定義頁面的應用程式。  
   
--   **模型化變異層面。** 識別將會改變的層面 (兩個部署之間，或一段時間的需求變更)。 這些是應該衍生自模型的層面。  
+-   **模型的 variant 的層面。** 識別將會改變的層面 (兩個部署之間，或一段時間的需求變更)。 這些是應該衍生自模型的層面。  
   
      例如，如果這組網頁以及其間的連結變更，但頁面的樣式和格式一律相同，則模型應該描述連結，而不需要描述頁面的格式。  
   
--   **不同的考量。** 如果變動層面可以分成獨立區域，請為每個區域使用不同的模型。 使用 ModelBus，您可以定義影響兩個模型的作業以及其間的條件約束。  
+-   **個別的考量。** 如果變動層面可以分成獨立區域，請為每個區域使用不同的模型。 使用 ModelBus，您可以定義影響兩個模型的作業以及其間的條件約束。  
   
      例如，使用一個模型來定義網頁之間的巡覽，而使用另一個模型來定義頁面的版面配置。
   
--   **模型的需求，而非方案。** 設計模型，讓它描述使用者需求。 反之，請不要根據實作的變動層面來設計標記法。  
+-   **模型的需求，而非解決方案。** 設計模型，讓它描述在使用者的需求。 反之，請不要根據實作的變動層面來設計標記法。  
   
      例如，Web 巡覽模型應該代表網頁和其間的超連結。 Web 巡覽模型不應該代表 HTML 的片段或應用程式中的類別。  
   
--   **產生或解譯？** 如果特定部署的需求極少變更，請透過模型產生程式碼。 如果需求可能經常變更，或可能共存於相同部署的多個變異中，請撰寫應用程式，使它可以讀取和轉譯模型。  
+-   **產生或解譯嗎？** 如果特定部署的需求極少變更，請透過模型產生程式碼。 如果需求可能經常變更，或可能共存於相同部署的多個變異中，請撰寫應用程式，使它可以讀取和轉譯模型。  
   
      例如，如果您使用網站模型來開發一系列的不同且分開安裝的網站，則應該透過模型產生網站的程式碼。 但是，如果您使用模型來控制每天變更的網站，則最好撰寫可讀取模型並據此呈現網站的網頁伺服器。  
   
--   **UML 或 DSL？** 請考慮使用造型來擴充 UML 以建立模型標記法。 如果沒有符合用途的 UML 圖表，請定義 DSL。 但是，請避免破壞 UML 的標準語意。  
+-   **UML 或 DSL 嗎？** 請考慮使用造型來擴充 UML 以建立模型標記法。 如果沒有符合用途的 UML 圖表，請定義 DSL。 但是，請避免破壞 UML 的標準語意。  
   
      例如，UML 類別圖是方塊與箭號的集合；運用這個標記法，您理論上可以定義任何項目。 但是，不建議您使用類別圖，而事實上描述一組類型的位置除外。 例如，您可以調整類別圖來描述不同類型的網頁。  
   
 ## <a name="see-also"></a>另請參閱  
- [從定義域專屬語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   
- [如何︰ 從程式碼中的檔案開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [從特定領域語言產生程式碼](../modeling/generating-code-from-a-domain-specific-language.md)   
+ [如何： 從程式碼中的檔案中開啟模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [使用 T4 文字範本在設計階段產生程式碼](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

@@ -1,33 +1,34 @@
 ---
-title: "&lt;fileAssociation&gt; 項目 (ClickOnce 應用程式) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-deployment"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "<fileAssociation> 項目 [ClickOnce 應用程式資訊清單]"
-  - "資料清單 [ClickOnce], fileAssociation 項目"
+title: "&lt;fileAssociation&gt;元素 （ClickOnce 應用程式） |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-deployment
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- <fileAssociation> element [ClickOnce application manifest]
+- manifests [ClickOnce], fileAssociation element
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
-caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: stevehoag
+ms.author: shoag
+manager: wpickett
+ms.openlocfilehash: 1b5040f6de578a6436f16c1a1c81d9cef4f789ee
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# &lt;fileAssociation&gt; 項目 (ClickOnce 應用程式)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-識別要與應用程式產生關聯的副檔名。  
+# <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;fileAssociation&gt;元素 （ClickOnce 應用程式）
+識別要與應用程式相關聯的副檔名。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 <fileAssociation  
@@ -39,23 +40,23 @@ caps.handback.revision: 8
 />  
 ```  
   
-## 項目和屬性  
- `fileAssociation` 項目是選擇性的。  項目具有下列屬性 \(Attribute\)。  
+## <a name="elements-and-attributes"></a>項目和屬性  
+ `fileAssociation` 項目是選擇性的。 項目具有下列屬性。  
   
 |屬性|描述|  
-|--------|--------|  
-|`extension`|必要項。  要與應用程式產生關聯的副檔名。|  
-|`description`|必要項。  Shell 所使用檔案類型的描述。|  
-|`progid`|必要項。  可唯一識別檔案類型的名稱。|  
-|`defaultIcon`|必要項。  指定要用於含有此副檔名之檔案的圖示。  圖示檔必須使用 [\<file\> 項目](../Topic/%3Cfile%3E%20Element%20\(ClickOnce%20Application\).md) 指定於包含此項目的 [\<assembly\> 項目](../deployment/assembly-element-clickonce-application.md) 內。|  
+|---------------|-----------------|  
+|`extension`|必要項。 要與應用程式相關聯的副檔名。|  
+|`description`|必要項。 Shell 所使用的檔案類型的描述。|  
+|`progid`|必要項。 可唯一識別檔案類型的名稱。|  
+|`defaultIcon`|必要項。 指定要用於此副檔名的檔案的圖示。 必須使用指定的圖示檔[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)內[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)，其中包含這個項目。|  
   
-## 備註  
- 這個項目必須將 XML 命名空間參考包含至 "urn:schemas\-microsoft\-com:clickonce.v1"。  如果使用了 `<fileAssociation>` 項目，則該項目必須接在父代 \(Parent\) [\<assembly\> 項目](../deployment/assembly-element-clickonce-application.md) 內的 `<application>` 項目之後。  
+## <a name="remarks"></a>備註  
+ 這個項目必須包括 XML 命名空間參考，以 「 結構描述 urn:-microsoft-com:clickonce.v1"。 如果`<fileAssociation>`項目時，它必須緊跟在後`<application>`中其父系的項目[\<組件 > 項目](../deployment/assembly-element-clickonce-application.md)。  
   
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 將不會覆寫現有的檔案關聯性。  然而，ClickOnce 應用程式只能覆寫目前使用者的副檔名。  解除安裝 ClickOnce 應用程式後，ClickOnce 會使用者的檔案關聯，並且再度啟用機器關聯。  
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]不會覆寫現有的檔案關聯。 不過，ClickOnce 應用程式可以覆寫目前使用者的副檔名。 解除安裝該 ClickOnce 應用程式之後，ClickOnce 會刪除檔案關聯的使用者，而每台機器關聯作用中一次。  
   
-## 範例  
- 在下列程式碼範例中，將說明使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的文字編輯器應用程式之應用程式資訊清單中的 `fileAssociation` 項目。  這個程式碼範例也包含 `defaultIcon` 屬性所要求的 [\<file\> 項目](../Topic/%3Cfile%3E%20Element%20\(ClickOnce%20Application\).md)。  
+## <a name="example"></a>範例  
+ 下列程式碼範例說明`fileAssociation`的部署使用的文字編輯器應用程式資訊清單的應用程式中的項目[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]。 這個程式碼範例也包含[\<檔案 > 項目](../deployment/file-element-clickonce-application.md)所`defaultIcon`屬性。  
   
 ```  
 <file name="text.ico" size="4286">  
@@ -80,5 +81,5 @@ caps.handback.revision: 8
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [ClickOnce 應用程式資訊清單](../deployment/clickonce-application-manifest.md)

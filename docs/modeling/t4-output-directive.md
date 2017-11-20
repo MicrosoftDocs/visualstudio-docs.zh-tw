@@ -1,32 +1,34 @@
 ---
-title: "T4 輸出指示詞 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "T4 輸出指示詞 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 03a14993-47ad-4f2e-8032-57db28d5842a
-caps.latest.revision: 4
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: bf96406356799a0953ee34eb736266267fe74510
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# T4 輸出指示詞
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="t4-output-directive"></a>T4 輸出指示詞
 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文字範本中，`output` 指示詞用來定義轉換檔案的副檔名和編碼。  
   
- 例如，如果 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案包括名稱為 **MyTemplate.tt** 且包含下列指示詞的範本檔：  
+ 例如，如果您[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]專案包含名為的範本檔**MyTemplate.tt**其中包含下列指示詞：  
   
  `<#@output extension=".cs"#>`  
   
- 則 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會產生名稱為 **MyTemplate.cs** 的檔案。  
+ 然後[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]會產生名為**MyTemplate.cs**  
   
- 在執行階段 \(前置處理過的\) 文字範本中，不需要 `output` 指示詞。  而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。  如需詳細資訊，請參閱[使用 T4 文字範本在執行階段產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
+ 在執行階段 (前置處理過的) 文字範本中，不需要 `output` 指示詞。 而是，您的應用程式會呼叫 `TextTransform()` 來取得產生的字串。 如需詳細資訊，請參閱[執行階段使用 T4 文字範本產生文字](../modeling/run-time-text-generation-with-t4-text-templates.md)。  
   
-## 使用輸出指示詞  
+## <a name="using-the-output-directive"></a>使用輸出指示詞  
   
 ```  
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
@@ -34,10 +36,10 @@ caps.handback.revision: 4
   
  在每個文字範本中，不應該有多個 `output` 指示詞。  
   
-## extension 屬性  
+## <a name="extension-attribute"></a>擴充屬性  
  指定所產生文字輸出檔案的副檔名。  
   
- 預設值是 **.cs**。  
+ 預設值是**.cs**  
   
  例如：  
  `<#@ output extension=".txt" #>`  
@@ -51,8 +53,8 @@ caps.handback.revision: 4
  可接受值：  
  任何有效的副檔名。  
   
-## encoding 屬性  
- 指定要在產生輸出檔案時使用的編碼。  例如：  
+## <a name="encoding-attribute"></a>編碼屬性  
+ 指定要在產生輸出檔案時使用的編碼。 例如：  
   
  `<#@ output encoding="utf-8"#>`  
   
@@ -71,6 +73,6 @@ caps.handback.revision: 4
   
  `utf-32`  
   
- `0` \(系統預設值\)  
+ `0` (系統預設值)  
   
  一般而言，您可以使用 <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=fullName> 所傳回之任何編碼的 WebName 字串或 CodePage 號碼。

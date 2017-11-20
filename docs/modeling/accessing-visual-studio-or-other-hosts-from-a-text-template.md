@@ -1,32 +1,34 @@
 ---
-title: "從文字範本存取 Visual Studio 或其他主機 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: "從文字範本存取 Visual Studio 或其他主機 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a68886da-7416-4785-8145-3796bb382cba
-caps.latest.revision: 5
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 6b75a3b3e57ee72afc11013a1cf7a041b222b204
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 從文字範本存取 Visual Studio 或其他主機
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-在文字範本中，您可以使用執行範本的主應用程式 \(例如 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]\) 所公開的方法和屬性。  
+# <a name="accessing-visual-studio-or-other-hosts-from-a-text-template"></a>從文字範本存取 Visual Studio 或其他主機
+在文字範本中，您可以使用方法和屬性執行範本，例如主機所公開[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
   
- 這適用於一般文字範本，不適用於前置處理過的文字範本。  
+ 這適用於一般文字範本，而不前置處理過的文字範本。  
   
-## 取得主機的存取權  
- 在 `template` 指示詞中設定 `hostspecific="true"`。  這可讓您使用`this.Host`，它具有型別<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。  這個型別的成員可用來，例如解析檔案名稱和記錄錯誤。  
+## <a name="obtaining-access-to-the-host"></a>取得主機的存取權  
+ 設定`hostspecific="true"`中`template`指示詞。 這可讓您使用`this.Host`，其具有型別<xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>。 此類型有一些成員，您可以使用，例如，若要解決檔案名稱，並記錄錯誤。  
   
-### 解析檔案名稱  
- 若要尋找相對於文字範本的完整檔案路徑，請使用 this.Host.ResolvePath\(\)。  
+### <a name="resolving-file-names"></a>解析檔案名稱  
+ 若要尋找的檔案與文字範本相對的完整路徑，請使用此。Host.ResolvePath()。  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.IO" #>  
@@ -39,10 +41,10 @@ Content of myFile is:
   
 ```  
   
-### 顯示錯誤訊息  
- 這個範例會在轉換範本時記錄訊息。  如果主應用程式為 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，則會將錯誤訊息加入至錯誤視窗。  
+### <a name="displaying-error-messages"></a>顯示錯誤訊息  
+ 轉換範本時，此範例中會記錄訊息。 如果主機是[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，會加入錯誤視窗。  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ import namespace="System.CodeDom.Compiler" #>  
@@ -57,14 +59,14 @@ Content of myFile is:
   
 ```  
   
-## 使用 Visual Studio API  
- 如果在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中執行文字範本，您可以使用 `this.Host` 存取 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 所提供的服務，以及任何已載入的封裝或擴充功能。  
+## <a name="using-the-visual-studio-api"></a>使用 Visual Studio 應用程式開發介面  
+ 如果您正在執行中的文字範本[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以使用`this.Host`來存取服務所提供[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]以及任何封裝或已載入的延伸模組。  
   
- 設定 hostspecific\="true"，並將 `this.Host` 轉換成 <xref:System.IServiceProvider>。  
+ 設定 hostspecific ="true"，並轉換`this.Host`至<xref:System.IServiceProvider>。  
   
- 這個範例會以服務方式取得 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] API，<xref:EnvDTE.DTE>：  
+ 這個範例會取得[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]API， <xref:EnvDTE.DTE>，做為服務：  
   
-```c#  
+```csharp  
 <#@ template hostspecific="true" language="C#" #>  
 <#@ output extension=".txt" #>  
 <#@ assembly name="EnvDTE" #>  
@@ -77,5 +79,5 @@ Number of projects in this solution: <#=  dte.Solution.Projects.Count #>
   
 ```  
   
-## 使用樣板繼承的 hostSpecific  
- 指定`hostspecific="trueFromBase"`如果您也使用`inherits`屬性，如果您是繼承自指定的範本，並`hostspecific="true"`。  這可避免編譯器警告的效果，該屬性`Host`已經宣告了兩次。
+## <a name="using-hostspecific-with-template-inheritance"></a>使用範本繼承 hostSpecific  
+ 指定`hostspecific="trueFromBase"`如果您同時使用`inherits`屬性，而且如果您繼承自指定的範本`hostspecific="true"`。 這可避免編譯器警告的效果，屬性`Host`已兩次宣告。

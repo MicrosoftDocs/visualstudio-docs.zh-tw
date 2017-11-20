@@ -1,68 +1,70 @@
 ---
-title: "setUTCHours 方法 (日期) (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "language-reference"
-f1_keywords: 
-  - "setUTCHours"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "日期, UTC"
-  - "setUTCHours 方法"
-  - "UTC 時間, 設定"
+title: "setUTCHours 方法 （日期） (JavaScript) |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: language-reference
+f1_keywords: setUTCHours
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- dates, UTC
+- UTC times, setting
+- setUTCHours method
 ms.assetid: 257e36fd-fb06-4a4d-8634-d66a020a1511
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 9fe83735028f86d38ef270beac6c44dfa4caae7f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# setUTCHours 方法 (日期) (JavaScript)
-使用「協調世界時」\(Coordinated Universal Time，UTC\) 設定 `Date` 物件中的小時值。  
+# <a name="setutchours-method-date-javascript"></a>setUTCHours 方法 (日期) (JavaScript)
+設定中的小時值`Date`物件使用國際標準時間 (UTC)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
   
 dateObj.setUTCHours(numHours[, numMin[, numSec[, numMilli]]])   
 ```  
   
-## 參數  
+## <a name="parameters"></a>參數  
  `dateObj`  
- 必要項。  任何 `Date` 物件。  
+ 必要項。 任何 `Date` 物件。  
   
  `numHours`  
- 必要項。  等於小時值的數值。  
+ 必要項。 數值等於小時值。  
   
  `numMin`  
- 選擇項。  等於分鐘值的數值。  如果有提供 `numSec` 或 `numMilli` 引數，就必須提供這個引數。  
+ 選擇項。 數值等於分鐘值。 如果必須提供`numSec`或`numMilli`可用。  
   
  `numSec`  
- 選擇項。  等於秒數值的數值。  如果有提供 `numMilli` 引數，就必須指定這個引數。  
+ 選擇項。 數值等於秒數值。 如果必須提供`numMilli`使用引數。  
   
  `numMilli`  
- 選擇項。  等於毫秒值的數值。  
+ 選擇項。 數值等於毫秒值。  
   
-## 備註  
- 如果不指定選擇性引數，則所有需要選擇性引數的 **set** 方法都會使用對應的 **get** 方法所傳回的值。  例如，如果 `numMin` 引數未指定，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 就會使用從 `getUTCMinutes` 方法所傳回的值。  
+## <a name="remarks"></a>備註  
+ 所有**設定**接受選擇性引數的方法會使用對應的傳回值**取得**方法，如果您沒有指定選擇性引數。 例如，如果`numMin`未指定引數，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]從傳回的值會使用`getUTCMinutes`方法。  
   
- 若要利用本地時間設定小時值，請使用 `setHours` 方法。  
+ 若要設定使用本地時間的小時值，請使用`setHours`方法。  
   
- 如果引數值大於其範圍或者是負數的話，其他的儲存值都會跟著修改。  例如，儲存的日期如果是 "Jan 5, 1996 00:00:00.00"，這時若呼叫 **setUTCHours\(30\)**，則日期會變成 "Jan 6, 1996 06:00:00.00"。  
+ 如果引數的值大於它的範圍，或為負數，就會據以修改其他的儲存的值。 例如，如果預存的日期是"1996 年 1 月 5 日 00:00:00.00"和**setUTCHours(30)**是呼叫，日期變更為"1996 年 1 月 6 日 06:00:00.00。 」  
   
-## 範例  
- 在下列範例中，說明了如何使用 `setUTCHours` 方法。  
+## <a name="example"></a>範例  
+ 在下列程式碼中，說明了如何使用 `setUTCHours` 方法。  
   
-```javascript  
+```JavaScript  
 function SetUTCHoursDemo(nhr, nmin, nsec){     
    var d, s;                        // Declare variables.  
    d = new Date();                  // Create Date object.  
@@ -72,12 +74,12 @@ function SetUTCHoursDemo(nhr, nmin, nsec){
 }  
 ```  
   
-## 需求  
+## <a name="requirements"></a>需求  
  [!INCLUDE[jsv3](../../javascript/reference/includes/jsv3-md.md)]  
   
- **適用於**：[Date 物件](../../javascript/reference/date-object-javascript.md)  
+ **適用於**： [Date Object](../../javascript/reference/date-object-javascript.md)  
   
-## 請參閱  
- [getHours 方法 \(日期\)](../../javascript/reference/gethours-method-date-javascript.md)   
- [getUTCHours 方法 \(日期\)](../../javascript/reference/getutchours-method-date-javascript.md)   
- [setHours 方法 \(日期\)](../../javascript/reference/sethours-method-date-javascript.md)
+## <a name="see-also"></a>另請參閱  
+ [getHours 方法 （日期）](../../javascript/reference/gethours-method-date-javascript.md)   
+ [getUTCHours 方法 （日期）](../../javascript/reference/getutchours-method-date-javascript.md)   
+ [setHours 方法 (Date)](../../javascript/reference/sethours-method-date-javascript.md)

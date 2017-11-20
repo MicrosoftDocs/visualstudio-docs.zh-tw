@@ -1,43 +1,28 @@
 ---
-title: "Modeling SDK for Visual Studio-定義域專屬語言 |Microsoft 文件"
+title: "Modeling SDK for Visual Studio-特定領域語言 |Microsoft 文件"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-techdebt
+ms.technology: vs-devops-techdebt
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
 ms.assetid: 17a531e2-1964-4a9d-84fd-6fb1b4aee662
-caps.latest.revision: 77
+caps.latest.revision: "77"
 author: alancameronwills
 ms.author: awills
 manager: douge
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Machine Translation
-ms.sourcegitcommit: 3d07f82ea737449fee6dfa04a61e195654ba35fa
-ms.openlocfilehash: 86e70eb82260cdced1ee4d74965832fbc7fa56ab
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 48cb7e5a274092a3ed82d2e41137633d12c3be01
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Modeling SDK for Visual Studio - 網域指定的語言
-使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大模型為基礎的開發工具，您可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  
+使用 Modeling SDK for [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]，您可以建立功能強大的模型為基礎的開發工具，可以整合[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 同樣地，您可以建立一個或多個模型定義，並將這些定義整合成一組工具。  
   
  MSDK 的核心就是模型定義，您可建立模型定義代表商業領域的概念。 您可以在模型四周放置各種不同的工具，例如圖表檢視、產生程式碼和其他成品的功能、轉換模型的命令，以及與 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的程式碼和其他物件互動的功能。 當您開發模型時，可以將它與其他模型和工具組合成強大的工具組，做為開發工作的重心。  
   
@@ -59,7 +44,7 @@ ms.lasthandoff: 02/22/2017
  
  [相關部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
   
- 如需進階的技術和疑難排解的指引，請瀏覽[Visual Studio DSL i 模型化工具擴充性論壇](http://go.microsoft.com/fwlink/?LinkID=186074)。  
+ 如需進階的技巧和疑難排解指引，請瀏覽[Visual Studio DSL & Modeling 工具擴充性論壇](http://go.microsoft.com/fwlink/?LinkID=186074)。  
   
 ## <a name="in-this-section"></a>本章節內容  
  [開始使用特定領域語言](../modeling/getting-started-with-domain-specific-languages.md)  
@@ -93,4 +78,3 @@ ms.lasthandoff: 02/22/2017
  [如何：將特定領域語言移轉至新的版本](../modeling/how-to-migrate-a-domain-specific-language-to-a-new-version.md)  
   
  [Modeling SDK for Visual Studio 的 API 參考](../modeling/api-reference-for-modeling-sdk-for-visual-studio.md)
-

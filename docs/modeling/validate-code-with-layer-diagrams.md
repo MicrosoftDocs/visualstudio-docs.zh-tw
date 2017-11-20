@@ -19,36 +19,21 @@ helpviewer_keywords:
 - MSBuild, dependency diagrams
 - MSBuild, validating code
 ms.assetid: 70cbe55d-4b33-4355-b0a7-88c770a6f75c
-caps.latest.revision: 82
+caps.latest.revision: "82"
 author: alexhomer1
 ms.author: ahomer
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Machine Translation
-ms.sourcegitcommit: 5581224b17a7b42f65b69f741f984a144d78fc26
-ms.openlocfilehash: 53c623ce7ab7126c22aaab856a439862252a5d56
-ms.contentlocale: zh-tw
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: c6c5954cdb4979ede5e43d2052801ca399f128fd
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用相依性圖表驗證程式碼
 
-**最新消息**︰ 請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)。
+**最新消息**： 請參閱[此部落格文章](https://blogs.msdn.microsoft.com/visualstudioalm/2016/11/30/live-dependency-validation-in-visual-studio-2017/)。
 
-[影片︰ 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
+[影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4) 
 
 ## <a name="why-use-dependency-diagrams"></a>為何要使用相依性圖表？
 
@@ -72,9 +57,9 @@ ms.lasthandoff: 04/04/2017
   
 -   具有相依性圖表的模型專案的方案。 此相依性圖表必須連結到您想要驗證的 Visual C#.NET 或 Visual Basic.NET 專案中的成品。 請參閱[從程式碼中建立相依性圖表](../modeling/create-layer-diagrams-from-your-code.md)。  
   
- 若要查看哪些 Visual Studio 版本支援這項功能，請參閱[architecture and modeling tools 的版本支援](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
+ 若要查看哪些 Visual Studio 版本支援這項功能，請參閱 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。  
   
- 您可以驗證程式碼以手動方式從 Visual Studio 中開啟相依性圖表或在命令提示字元。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片︰ 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
+ 您可以驗證程式碼以手動方式從 Visual Studio 中開啟相依性圖表或在命令提示字元。 您也可以在執行本機組建或 Team Foundation Build 時自動驗證程式碼。 請參閱[Channel 9 影片： 設計和驗證架構使用相依性圖表](http://go.microsoft.com/fwlink/?LinkID=252073)。  
   
 > [!IMPORTANT]
 >  如果您要以 Team Foundation Build 執行圖層驗證，您也必須在您的組建伺服器上安裝相同版本的 Visual Studio。  
@@ -154,7 +139,7 @@ ms.lasthandoff: 04/04/2017
   
          - 或 -  
   
-         瀏覽資料夾，其中包含模型專案 (.modelproj) 檔案和相依性圖表，然後執行[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]使用下列自訂屬性︰  
+         瀏覽資料夾，其中包含模型專案 (.modelproj) 檔案和相依性圖表，然後執行[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]使用下列自訂屬性：  
   
         ```  
         msbuild /p:ValidateArchitecture=true   
@@ -168,7 +153,7 @@ ms.lasthandoff: 04/04/2017
   
          - 或 -  
   
-         瀏覽至方案資料夾中，其中必須包含模型專案包含相依性圖表，然後再執行[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]使用下列自訂屬性︰  
+         瀏覽至方案資料夾中，其中必須包含模型專案包含相依性圖表，然後再執行[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]使用下列自訂屬性：  
   
         ```  
         msbuild /p:ValidateArchitecture=true  
@@ -188,7 +173,7 @@ ms.lasthandoff: 04/04/2017
   
 -   在**錯誤清單**視窗中，以滑鼠右鍵按一下錯誤，請指向**建立工作項目**，然後按一下您想要建立的工作項目類型。  
   
- 使用下列工作來管理中的驗證錯誤**錯誤清單**視窗︰  
+ 使用下列工作來管理中的驗證錯誤**錯誤清單**視窗：  
   
 |**若要**|**請遵循下列步驟**|  
 |------------|----------------------------|  
@@ -228,7 +213,7 @@ ms.lasthandoff: 04/04/2017
   
 1.  在**Team Explorer**，按兩下組建定義，然後按**程序**。  
   
-2.  在下**建置流程參數**，依序展開**編譯**，並輸入中的下列**MSBuild 引數**參數︰  
+2.  在下**建置流程參數**，依序展開**編譯**，並輸入中的下列**MSBuild 引數**參數：  
   
      `/p:ValidateArchitecture=true`  
   
@@ -247,7 +232,7 @@ ms.lasthandoff: 04/04/2017
 ##  <a name="TroubleshootingValidation"></a>疑難排解圖層驗證問題  
  下列表格描述圖層驗證的問題及其解決方式。 這些問題不同於因程式碼與設計衝突而導致的錯誤。 如需有關這些錯誤的詳細資訊，請參閱[了解並解決圖層驗證錯誤](#UnderstandingValidationErrors)。  
   
-|**問題**|**可能的原因**|**解決方式**|  
+|**問題**|**可能的原因**|**解決方法**|  
 |---------------|------------------------|--------------------|  
 |發生非預期的驗證錯誤。|驗證不適用於相依性圖表，會複製從方案總管 中的其他相依性圖表，以及屬於相同的模型專案中。 相依性圖表，如此一來會複製包含相同的參考與原始的相依性圖表。|將新的相依性圖表加入至模型專案。<br /><br /> 將來源的相依性圖表中的項目複製到新的圖表。|  
   
@@ -264,7 +249,7 @@ ms.lasthandoff: 04/04/2017
   
 |**語法**|**說明**|  
 |----------------|---------------------|  
-|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN*是相依性圖表上的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是種*ArtifactN*，例如**類別**或**方法**，例如︰<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
+|*ArtifactN*(*ArtifactTypeN*)|*ArtifactN*是相依性圖表上的圖層相關聯的成品。<br /><br /> *ArtifactTypeN*是種*ArtifactN*，例如**類別**或**方法**，例如：<br /><br /> MySolution.MyProject.MyClass.MyMethod(Method)|  
 |*NamespaceNameN*|命名空間的名稱。|  
 |*LayerNameN*|相依性圖表上的圖層名稱。|  
 |*DependencyType*|相依性之間的關聯性類型*Artifact1*和*Artifact2*。 例如， *Artifact1*具有**呼叫**關聯性*Artifact2*。|  
@@ -281,5 +266,4 @@ ms.lasthandoff: 04/04/2017
  
 ## <a name="see-also"></a>另請參閱  
  [在開發期間驗證您的系統](../modeling/validate-your-system-during-development.md)   
- [影片︰ 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   
-
+ [影片： 驗證您的架構相依性，即時](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)   

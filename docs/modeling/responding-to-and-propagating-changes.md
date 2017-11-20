@@ -1,55 +1,56 @@
 ---
-title: "回應及傳播變更 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "網域指定的語言, 事件"
+title: "回應，且將變更傳播 |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: Domain-Specific Language, events
 ms.assetid: fc2e9ac5-7a84-44ed-9945-94e45f89c227
-caps.latest.revision: 24
-author: "alancameronwills"
-ms.author: "awills"
-manager: "douge"
-caps.handback.revision: 24
+caps.latest.revision: "24"
+author: alancameronwills
+ms.author: awills
+manager: douge
+ms.openlocfilehash: 7ea11c018f210b804f4ea6542eb7a7817ae1507c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 回應及傳播變更
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-當項目所建立、 刪除或更新時，您可以撰寫會傳播變更的模型中，其他部分，或外部的資源，例如檔案、 資料庫或其他元件的程式碼。  
+# <a name="responding-to-and-propagating-changes"></a>回應及傳播變更
+當建立、 刪除或更新項目時，您可以撰寫傳播變更給模型的其他組件或外部的資源，例如檔案、 資料庫或其他元件的程式碼。  
   
-## 在本節中  
- 一般而言，請考慮這些技巧，以下列順序：  
+## <a name="in-this-section"></a>本章節內容  
+ 一般來說，請考慮下列技術順序如下：  
   
 |技術|案例|如需詳細資訊|  
-|--------|--------|------------|  
-|定義計算定義域屬性。|網域屬性，其值計算從模型中的其他屬性。  比方說，是相關的項目價格總額價格。|[計算和自訂的儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)|  
-|將自訂儲存網域屬性定義。|網域屬性，儲存在模型的還是在外部的其他部分。  比方說，您無法剖析運算式字串組合成模型中的樹狀目錄。|[計算和自訂的儲存體屬性](../modeling/calculated-and-custom-storage-properties.md)|  
-|覆寫變更處理常式，例如 OnValueChanging 和 OnDeleting|不同的項目同步，保留以及外部的值與模型的同步處理。<br /><br /> 限制值，以定義的範圍。<br /><br /> 之前及之後呼叫屬性值和其他的變更。  您可以藉由擲回例外狀況結束該變更。|[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)|  
-|規則|您可以定義佇列中等待變更發生的交易結尾之前執行的規則。  它們不會執行復原或取消復原上。  您可以使用它們來持續存放區的某一部分與另一個的同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|  
-|儲存區事件|模組化存放區提供告知的事件，例如新增或刪除項目或連結，或變更屬性的值。  事件也會執行復原和取消復原。  使用儲存區事件來更新存放區中所沒有的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
-|.NET 事件|圖形會有回應按滑鼠和其他筆勢的事件處理常式。  您必須註冊這些事件，為每個物件。  註冊通常是 InitializeInstanceResources，覆寫，都必須分別為每個項目。<br /><br /> 這些事件通常發生於外部交易。|[如何：攔截圖案或 Decorator 上的點選](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)|  
-|範圍規則|範圍規則特別用於限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
-|選取規則|選取規則特別限制使用者可選取。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
-|OnAssocatedPropertyChanged|指出模型項目狀態使用的圖案及連接線，如陰影、 箭頭、 色彩和線條寬度和樣式的功能。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
+|---------------|---------------|--------------------------|  
+|定義導出的網域屬性。|網域屬性，其值從模型中的其他屬性計算。 例如，價格的相關元素的加總價格。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|  
+|定義的自訂儲存體網域屬性。|網域屬性，儲存在模型或外部的其他部分。 例如，您無法剖析運算式字串為模型中的樹狀目錄。|[計算及自訂的儲存區屬性](../modeling/calculated-and-custom-storage-properties.md)|  
+|覆寫 OnValueChanging 等 OnDeleting 變更處理常式|保持同步，不同的項目，外部值與保持同步模型。<br /><br /> 限制值來定義的範圍。<br /><br /> 呼叫之前和之後屬性值和其他變更。 您可以藉由擲回例外狀況終止變更。|[網域屬性值變更處理常式](../modeling/domain-property-value-change-handlers.md)|  
+|規則|您可以定義佇列中等待變更發生在交易結束之前執行的規則。 它們不會在復原或重做上執行。 您可以使用它們來保留存放區的一組件與另一個同步處理。|[規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)|  
+|儲存事件|模型存放區，提供通知的事件，例如加入或刪除項目或連結，或變更屬性的值。 事件也會復原和取消復原上執行。 您可以使用存放區事件更新不在存放區中的值。|[事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)|  
+|.NET 事件|圖形有回應滑鼠點選與其他筆勢的事件處理常式。 您必須註冊這些事件中的每個物件。 註冊通常是 InitializeInstanceResources，覆寫中，且必須進行的每個項目。<br /><br /> 這些事件通常發生於外部交易。|[如何：攔截圖案或 Decorator 上的點選](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)|  
+|範圍規則|範圍規則是特別用來限制圖形的界限。|[BoundsRules 限制圖案位置和大小](../modeling/boundsrules-constrain-shape-location-and-size.md)|  
+|選取規則|選取規則特別限制使用者可以選取的項目。|[如何：存取及限制目前的選取範圍](../modeling/how-to-access-and-constrain-the-current-selection.md)|  
+|OnAssocatedPropertyChanged|表示使用的圖形和連接器陰影、 箭頭、 色彩和線條寬度和樣式等功能的模型項目狀態。|[更新圖案和接點來反映模型](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|  
   
-## **比較規則與儲存區事件**  
+## <a name="comparing-rules-and-store-events"></a>**比較規則與事件存放區**  
  在模型中發生變更時，會執行變更 notifiers、 規則和事件。  
   
- 在結束交易中發生變更，通常會套用規則，並認可交易中的變更之後，會套用事件。  
+ 規則通常會套用在一般交易中發生變更，並認可交易中的變更之後，事件會套用。  
   
- 使用儲存區事件來同步處理的模型與物件外的存放區和規則，以維持在存放區內的一致性。  
+ 使用存放區事件來同步處理的模型使用外部存放區和規則，以維護一致性存放區中的物件。  
   
--   **建立自訂規則**您做為抽象的統治的衍生類別中建立自訂規則。  此外，您也必須通知相關的自訂規則的架構。  如需詳細資訊，請參閱 [規則傳播模型內的變更](../modeling/rules-propagate-changes-within-the-model.md)。  
+-   **建立自訂規則**您為抽象的規則從衍生類別中建立自訂規則。 您也必須通知有關的自訂規則的架構。 如需詳細資訊，請參閱[規則傳播變更內模型](../modeling/rules-propagate-changes-within-the-model.md)。  
   
--   **訂閱事件**您可以訂閱事件之前，先建立事件處理常式和委派。  然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>屬性，以訂閱該事件。  如需詳細資訊，請參閱 [事件處理常式傳播模型外的變更](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
+-   **訂閱事件**可以訂閱事件之前，建立事件處理常式和委派。 然後使用<xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>訂閱事件的屬性。 如需詳細資訊，請參閱[事件處理常式傳播變更外部模型](../modeling/event-handlers-propagate-changes-outside-the-model.md)。  
   
--   **復原變更**當您復原交易時，會引發事件，但不是會套用規則。  如果將值變更的規則，而且您復原該變更，此值會重設為原來的值在復原動作。  當引發事件時，您必須以手動方式值變更回其原始值。  若要深入了解 transactons 和復原，請參閱[如何：使用異動更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
+-   **復原變更**時復原交易，會引發事件，但是不會套用規則。 如果規則會將值變更，您可以復原該變更值會重設原始的值在復原動作。 事件引發時，您必須手動變更此值設回其原始值。 若要深入了解 transactons 和復原，請參閱[How to： 使用異動來更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。  
   
--   **將事件引數傳遞至規則和事件**這兩個事件和規則會傳送`EventArgs`參數有相關的資訊模型的變更。  
+-   **事件引數傳遞至規則和事件**這兩個事件和傳遞規則`EventArgs`參數的相關資訊的模型變更。  
   
-## 請參閱  
- [如何：攔截圖案或 Decorator 上的點選](../Topic/How%20to:%20Intercept%20a%20Click%20on%20a%20Shape%20or%20Decorator.md)   
- [撰寫程式碼來自訂定義域專屬語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+## <a name="see-also"></a>另請參閱  
+ [如何： 攔截按一下圖形或裝飾項目](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   
+ [撰寫程式碼來自訂特定領域語言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -1,1 +1,1 @@
- Microsoft Office SharePoint Server 2007 
+Microsoft Office SharePoint Server 2007
