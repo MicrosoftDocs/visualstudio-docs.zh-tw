@@ -1,0 +1,29 @@
+- name: 適用於 AI 的 Visual Studio Tools
+  href: index.yml
+  items:
+    - name: 概觀
+      items:
+        - name: 關於適用於 AI 的 Visual Studio Tools
+          href: about-ai-tools.md
+    - name: 安裝
+      href: installation.md
+    - name: 快速入門
+      items:
+        - name: Tensorflow + Python
+          href: tensorflow-local.md
+    - name: 教學課程
+      items:
+        - name: TensorFlow + Azure 深度學習 VM
+          href: tensorflow-vm.md
+    - name: 作法指南
+      items:
+        - name: 建立新專案
+          href: create-project.md
+        - name: 定型您的模型
+          href: train-model.md
+    - name: 範例
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: 機器學習服務資源庫
+          href: 'https://gallery.cortanaintelligence.com/projects'
