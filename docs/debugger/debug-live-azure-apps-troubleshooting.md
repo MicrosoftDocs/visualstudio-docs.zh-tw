@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e111159029710684a1a49be2859f6ac5699a70a
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.openlocfilehash: 307e32587a7aac6e2595f35488ad057995c04f4b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>快照集，則在 Visual Studio 中偵錯的疑難排解和已知問題
 
@@ -30,8 +30,7 @@ ms.lasthandoff: 11/17/2017
 
 執行下列步驟：
 
-1. 請確定您具有相同版本的用來建置和部署您的應用程式的原始程式碼。
-1. 請確定您載入正確的符號為您的部署。 若要這樣做，請檢視**模組**視窗偵錯快照集時，並確認您正在偵錯模組載入的符號檔的資料行顯示.pdb 檔案。 請注意，快照集偵錯工具會嘗試自動下載並使用符號為您的部署。
+1. 請確定您具有相同版本的原始碼用來建置和部署您 app.isua1。 請確定您載入正確的符號為您的部署。 若要這樣做，請檢視**模組**視窗偵錯快照集時，並確認您正在偵錯模組載入的符號檔的資料行顯示.pdb 檔案。 請注意，快照集偵錯工具會嘗試自動下載並使用符號為您的部署。
 
 ## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>問題： 符號不會載入時開啟 快照集
 
@@ -70,9 +69,10 @@ ms.lasthandoff: 11/17/2017
 - Roslyn IL 最佳化不完全支援在 ASP.NET Core 專案。 對於某些 ASP.NET Core 專案，您可能無法看到部分變數，或在條件陳述式中使用一些變數。 
 - 特殊變數，例如*$FUNCTION*或*$CALLER*，無法評估在條件陳述式或 logpoints ASP.NET Core 專案。
 - 偵錯快照集不會對此應用程式服務具有[本機快取](https://docs.microsoft.com/en-us/azure/app-service/app-service-local-cache)開啟。
+- 目前不支援偵錯應用程式開發介面應用程式的快照集。
 
 ## <a name="see-also"></a>請參閱
 
 [Visual Studio 偵錯](../debugger/index.md)  
 [偵錯即時使用快照集偵錯工具的 ASP.NET 應用程式](../debugger/debug-live-azure-applications.md)  
-[偵錯快照集的常見問題集](../debugger/debug-live-azure-apps-faq.md)  
+[快照集偵錯的常見問題集](../debugger/debug-live-azure-apps-faq.md)  

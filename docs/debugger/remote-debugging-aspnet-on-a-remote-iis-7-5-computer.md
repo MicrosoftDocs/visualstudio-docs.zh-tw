@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 730a69894c8e38dd7b9d191fa7fe3396509148d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: a279b1eddf80a78ad20d137c288e6ee49c1993b9
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>遠端偵錯遠端 IIS 電腦上的 ASP.NET
 偵錯已部署至 IIS 的 ASP.NET 應用程式，安裝和部署您的應用程式的所在的電腦上執行遠端工具，然後附加至執行的應用程式從 Visual Studio。
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/31/2017
 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET MVC 4.5.2 應用程式、 將它部署到 IIS，並附加從 Visual Studio 遠端偵錯工具。 若要遠端偵錯 ASP.NET Core，請參閱[遠端偵錯 ASP.NET Core IIS 電腦上](../debugger/remote-debugging-aspnet-on-a-remote-iis-computer.md)。 您也可以部署和使用 Azure 在 IIS 上偵錯。 如需詳細資訊，請參閱[遠端偵錯在 Azure 上](../debugger/remote-debugging-azure.md)。
 
 這些伺服器設定過這些程序：
-* Windows Server 2012 R2 和 IIS 10 （Windows Server 2008 R2，則伺服器步驟會不同）
+* Windows Server 2012 R2 和 IIS 8.5 （Windows Server 2008 R2，則伺服器步驟會不同）
 
 ## <a name="requirements"></a>需求
 
