@@ -1,60 +1,60 @@
 ---
-title: "IDebugMethodField::EnumLocals | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumLocals"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumLocals 方法"
+title: "IDebugMethodField::EnumLocals |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumLocals
+helpviewer_keywords: IDebugMethodField::EnumLocals method
 ms.assetid: b0456a6d-2b96-49e2-a871-516571b4f6a5
-caps.latest.revision: 10
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: aa4ab5a8963ae8364e35cdc0e2a5237a75d35994
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumLocals
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
-建立所選取之方法的區域變數的列舉值。  
+# <a name="idebugmethodfieldenumlocals"></a>IDebugMethodField::EnumLocals
+建立選取的本機變數之方法的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumLocals(   
-   IDebugAddress*     pAddress,  
-   IEnumDebugFields** ppLocals  
+```cpp  
+HRESULT EnumLocals(   
+   IDebugAddress*     pAddress,  
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumLocals(  
-   IDebugAddress        pAddress,   
-   out IEnumDebugFields ppLocals  
+   IDebugAddress        pAddress,   
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `pAddress`  
- \[in\][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)代表偵錯地址內容或從中取得區域變數的範圍中選取的物件。  
+ [in][IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)物件，表示選取的內容或範圍，從中取得區域變數的偵錯位址。  
   
  `ppLocals`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示清單中的區域變數。 如果不有任何區域變數，否則傳回 null 值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件表示的區域變數清單; 如果沒有任何區域變數，反之則傳回 null 值。  
   
-## 傳回值  
- 如果成功的話，會傳回 S\_OK，或傳回 S\_FALSE，如果不有任何區域變數。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功的話，會傳回 S_OK，或如果沒有任何區域變數闇 S_FALSE。 反之則傳回錯誤碼。  
   
-## 備註  
- 只有包含特定的偵錯的地址區塊中所定義的變數，才會列舉。  若需要所有的區域變數，包括任何編譯器所產生的區域變數，則呼叫[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)方法。  
+## <a name="remarks"></a>備註  
+ 列舉只能定義在包含指定的偵錯位址區塊內的變數。 如需所有區域變數，包括任何編譯器產生的區域變數，呼叫[EnumAllLocals](../../../extensibility/debugger/reference/idebugmethodfield-enumalllocals.md)方法。  
   
- 一種方法可以包含多個範圍的內容或區塊。  例如，下列方法包含有三種範圍、 兩個內部區塊和方法主體本身。  
+ 一種方法可以包含多個範圍的內容或區塊。 例如，下列方法包含三個範圍、 兩個內部區塊和本身的方法主體。  
   
-```c#  
+```csharp  
 public void func(int index)  
 {  
     // Method body scope  
@@ -72,9 +72,9 @@ public void func(int index)
 }  
 ```  
   
- [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件代表`func`方法本身。  呼叫`EnumLocals`方法以[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)設定為 \[ `Inner Scope 1`位址傳回的列舉型別包含`temp1`變數，例如。  
+ [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)物件代表`func`方法本身。 呼叫`EnumLocals`方法[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)設`Inner Scope 1`位址可讓您傳回列舉包含`temp1`變數，例如。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   

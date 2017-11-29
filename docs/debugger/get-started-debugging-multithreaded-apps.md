@@ -4,8 +4,7 @@ ms.custom: H1HackMay2017
 ms.date: 06/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -17,30 +16,15 @@ helpviewer_keywords:
 - multithreaded debugging, tutorial
 - tutorials, multithreaded debugging
 ms.assetid: 62df746b-b0f6-4df4-83cf-b1d9d2e72833
-caps.latest.revision: 38
+caps.latest.revision: "38"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: HT
-ms.sourcegitcommit: 1d4298d60886d8fe8b402b59b1838a4171532ab1
-ms.openlocfilehash: 3ffb550707280d76756cbd144ed03f4143ce144b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.openlocfilehash: 86ffd65cf0ebe19a9f3c1f42c24fc365536be661
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="get-started-debugging-a-multithreaded-application-in-visual-studio"></a>開始偵錯 Visual Studio 中的多執行緒應用程式
 Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的使用者介面項目。 本教學課程示範如何使用執行緒標記**平行堆疊**視窗中，**平行監看式**視窗、 條件式中斷點和篩選中斷點。 本教學課程只需要幾分鐘時間，但是完成它會讓您熟悉的偵錯多執行緒應用程式的功能。
@@ -404,4 +388,3 @@ Visual Studio 提供數個工具和可協助您偵錯多執行緒應用程式的
 ## <a name="see-also"></a>另請參閱  
  [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [如何：在偵錯時切換到另一個執行緒](../debugger/how-to-switch-to-another-thread-while-debugging.md)
-

@@ -1,41 +1,41 @@
 ---
-title: "IActiveScriptProfilerHeapEnum::Next 方法 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-script-interfaces"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+title: "Iactivescriptprofilerheapenum:: Next 方法 |Microsoft 文件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-script-interfaces
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 0336286f-1dcd-4df9-adf5-76b59b4e74bb
-caps.latest.revision: 4
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 3927743a1de1d3048537327aebd24a847a7d22e5
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# IActiveScriptProfilerHeapEnum::Next 方法
-取得下一個物件或一組物件從 [IActiveScriptProfilerControl3::EnumHeap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)堆積上的物件。  
+# <a name="iactivescriptprofilerheapenumnext-method"></a>IActiveScriptProfilerHeapEnum::Next 方法
+從堆積物件的集合中取得下一個或多個物件[iactivescriptprofilercontrol3:: Enumheap 方法](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)。  
   
-## 語法  
-  
-```  
-HRESULT Next (  
-    [in] ULONG celt,  
-    [out, size_is(celt), length_is(*pceltFetched)] PROFILER_HEAP_OBJECT** heapObjects,   
-    [out] ULONG *pceltFetched);  
+## <a name="syntax"></a>語法  
   
 ```  
+HRESULT Next (    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] PROFILER_HEAP_OBJECT** heapObjects,     [out] ULONG *pceltFetched);  
+```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `celt`  
- 要傳回的物件數。  
+ 要傳回的物件數目。  
   
  `heapObjects`  
- \[in\] 下 [PROFILER\_HEAP\_OBJECT 結構](../../winscript/reference/profiler-heap-object-structure.md) 結構。  
+ [out]下一步 [PROFILER_HEAP_OBJECT 結構](../../winscript/reference/profiler-heap-object-structure.md)結構。  
   
  `pceltFetched`  
- \[in\] 物件數目傳回，  
+ [out]傳回的物件數目  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  HRESULT。

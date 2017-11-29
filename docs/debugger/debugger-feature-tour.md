@@ -1,217 +1,213 @@
 ---
-title: Debugger Feature Tour | Microsoft Docs
+title: "偵錯工具功能的教學課程 |Microsoft 文件"
 ms.custom: H1HackMay2017
 ms.date: 05/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.translationtype: HT
-ms.sourcegitcommit: 7c87490f8e4ad01df8761ebb2afee0b2d3744fe2
-ms.openlocfilehash: b2a317028022194e1b5b4e5cbbaf13893170ac2d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/31/2017
-
+ms.openlocfilehash: b7edb1428d3dedbbe6341427e28964559d9750b1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="feature-tour-of-the-visual-studio-debugger"></a>Feature Tour of the Visual Studio Debugger
+# <a name="feature-tour-of-the-visual-studio-debugger"></a>Visual Studio 偵錯工具的功能導覽
 
-This topic introduces the features of the Visual Studio debugger. If you want to follow along by opening your own app in Visual Studio, you can do that, or you can follow along with a sample app using the [Beginner's Guide](../debugger/getting-started-with-the-debugger.md).
+本主題將介紹 Visual Studio 偵錯工具的功能。 如果您想要跟著做 Visual Studio 中開啟您自己的應用程式，您可以這樣做，或您可以依照範例應用程式使用[初級開發人員指南](../debugger/getting-started-with-the-debugger.md)。
 
-The features described here are applicable to C#, C++, Visual Basic, JavaScript, and other languages supported by Visual Studio (except where noted).
+這裡說明的功能都適用於 C#、 c + +、 Visual Basic、 JavaScript 和 Visual Studio （除非註明） 支援其他語言。
 
-## <a name="set-a-breakpoint-and-start-the-debugger"></a>Set a breakpoint and start the debugger
+## <a name="set-a-breakpoint-and-start-the-debugger"></a>設定中斷點並開始偵錯工具
 
-To debug, you need to start your app with the debugger attached to the app process. F5 (**Debug > Start Debugging**) is the most common way to do that. However, right now you may not have set any breakpoints to examine your app code, so we will do that first and then start debugging.
+若要偵錯，您需要偵錯工具附加至應用程式處理序啟動您的應用程式。 F5 (**偵錯 > 開始偵錯**) 是最常見的方法。 不過，現在您可以設定任何中斷點來檢查您的應用程式的程式碼，因此我們會先執行，然後開始偵錯。
 
-If you have a file open in the code editor, you can set a breakpoint by clicking in the margin to the left of a line of code.
+如果您有程式碼編輯器中開啟的檔案，您可以按一下程式碼行的左邊界來設定中斷點。
 
-![Set a Breakpoint](../debugger/media/dbg-tour-set-a-breakpoint.gif "Set a breakpoint")
+![設定中斷點](../debugger/media/dbg-tour-set-a-breakpoint.gif "設定中斷點")
 
-Press F5 (**Debug > Start Debugging**) and the debugger runs to the first breakpoint that it encounters. If the app is not yet running, F5 starts the debugger and stops at the first breakpoint.
+按下 F5 (**偵錯 > 開始偵錯**) 和偵錯工具執行到它遇到第一個中斷點。 如果應用程式尚未執行，F5 啟動偵錯工具，並在第一個中斷點停止。
 
-Breakpoints are a useful feature when you know the line of code or the section of code that you want to examine in detail.
+當您知道的一行程式碼或您想要檢查詳細資料中的程式碼區段，中斷點會很有用的功能。
 
-## <a name="navigate-code-in-the-debugger-using-step-commands"></a>Navigate code in the debugger using step commands
+## <a name="navigate-code-in-the-debugger-using-step-commands"></a>巡覽偵錯工具使用步驟命令的程式碼
 
-We provide the keyboard shortcuts for most commands because they make navigation of your app code quicker. (Equivalent commands such as menu commands are shown in parentheses.)
+因為它們可讓瀏覽應用程式程式碼的速度較快，我們提供的大部分命令的鍵盤快速鍵。 （對等命令例如功能表命令會顯示在括號中）。
 
-To start your app with the debugger attached, press F11 (**Debug > Step Into**). F11 is the **Step Into** command and advances the app execution one statement at a time. When you start the app with F11, the debugger breaks on the first statement that gets executed.
+若要附加偵錯工具中啟動應用程式，請按 F11 (**偵錯 > 逐步執行**)。 F11 是**逐步執行**命令，並往前移應用程式執行一個陳述式一次。 當您使用 F11 應用程式時，偵錯工具會中斷執行的第一個陳述式。
 
-![F11 Step Into](../debugger/media/dbg-tour-f11.png "F11 Step Into")
+![F11 逐步執行](../debugger/media/dbg-tour-f11.png "F11 逐步執行")
 
-The yellow arrow represents the statement on which the debugger paused, which also suspends app execution at the same point (this statement has not yet executed).
+黃色箭號表示該陳述式暫停偵錯工具，這也會在相同的點 （此陳述式尚未執行） 的暫停應用程式執行。
 
-F11 is a good way to examine the execution flow in the most detail. (To move faster through code, we show you some other options as well.) By default, the debugger skips over non-user code (if you want more details, see [Just My Code](../debugger/just-my-code.md)).
+F11 是檢查大部分的詳細資料中的執行流程的好方法。 （若要更快速移動，透過程式碼，我們會示範一些其他選項也。）根據預設，偵錯工具會略過非使用者程式碼 (如果您想要更多詳細資料，請參閱[Just My Code](../debugger/just-my-code.md))。
 
 >[!NOTE]
-> In managed code, you will see a dialog box asking if you want to be notified when you automatically step over properties and operators (default behavior). If you want to change the setting later, disable **Step over properties and operators** setting in the **Tools > Options** menu under **Debugging**.
+> 在 managed 程式碼，您會看到對話方塊，詢問您是否要收到通知您自動不進入屬性和運算子 （預設行為）。 如果您想要變更設定之後，停用**不進入屬性和運算子**中設定**工具 > 選項**下的單**偵錯**。
 
-## <a name="step-over-code-to-skip-functions"></a>Step over code to skip functions
+## <a name="step-over-code-to-skip-functions"></a>不進入程式碼以略過函式
 
-When you are on a line of code that is a function or method call, you can press F10 (**Debug > Step Over**) instead of F11.
+當您的函式或方法呼叫的程式碼行上，您可以按下 F10 (**偵錯 > 不進入函式**) 而不是 F11。
 
-F10 advances the debugger without stepping into functions or methods in your app code (the code still executes). By pressing F10, you can skip over code that you're not interested in. This way, you can quickly get to code that you are more interested in.
+F10 鍵逐步執行函式或方法 （仍執行的程式碼） 的應用程式程式碼中沒有進階偵錯工具。 按 F10，則可略過您不感興趣的程式碼。 如此一來，您可以快速地取得您會更感興趣的程式碼。
 
-## <a name="step-into-a-property"></a>Step into a property
+## <a name="step-into-a-property"></a>逐步執行屬性
 
-As mentioned earlier, by default the debugger skips over managed properties and fields, but the **Step Into Specific** command allows you to override this behavior.
+如先前所述，根據預設，偵錯工具會略過受管理的屬性和欄位，但**逐步執行至特定**命令可讓您覆寫這個行為。
 
-Right-click on a property or field and choose **Step Into Specific**, then choose one of the available options.
+屬性或欄位上按一下滑鼠右鍵，然後選擇 **逐步執行至特定**，然後選擇其中一個可用的選項。
 
-![Step into Specific](../debugger/media/dbg-tour-step-into-specific.png "Step Into Specific")
+![逐步執行特定](../debugger/media/dbg-tour-step-into-specific.png "逐步執行至特定")
 
-In this example, **Step Into Specific** gets us to the code for `Path.set`.
+在此範例中，**逐步執行至特定**代碼，以取得我們`Path.set`。
 
-![Step into Specific](../debugger/media/dbg-tour-step-into-specific-2.png "Step Into Specific")
+![逐步執行特定](../debugger/media/dbg-tour-step-into-specific-2.png "逐步執行至特定")
 
-## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>Run to a point in your code quickly using the mouse
+## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>執行快速地使用滑鼠的程式碼中的點
 
-While in the debugger, hover over a line of code until the **Run to Click** (Run execution to here) button ![Run to Click](../debugger/media/dbg-tour-run-to-click.png "RunToClick") appears on the left.
+在 偵錯工具，將滑鼠停留在一行程式碼，直到**執行按一下**（執行的執行到此處） 按鈕![按一下執行](../debugger/media/dbg-tour-run-to-click.png "RunToClick")出現在左邊。
 
-![Run to Click](../debugger/media/dbg-tour-run-to-click-2.png "Run to Click")
+![按一下以執行](../debugger/media/dbg-tour-run-to-click-2.png "執行，然後按一下")
 
 >  [!NOTE] 
-> The **Run to Click** (Run execution to here) button is new in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> **執行按一下**的新功能 （執行的執行到此處） 按鈕[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
-Click the **Run to Click** (Run execution to here) button. The debugger advances to the line of code where you clicked.
+按一下**執行按一下**（執行的執行到此處） 按鈕。 偵錯工具將前移至下一行程式碼您所按的位置。
 
-Using this button is similar to setting a temporary breakpoint. This command is also handy for getting around quickly within a visible region of app code. You can use **Run to Click** in any open file.
+類似於設定暫時中斷點使用此按鈕。 此命令也是很方便用來快速瀏覽應用程式程式碼可見區域內。 您可以使用**執行按一下**任何開啟的檔案中。
 
-## <a name="advance-the-debugger-out-of-the-current-function"></a>Advance the debugger out of the current function
+## <a name="advance-the-debugger-out-of-the-current-function"></a>進階偵錯工具，移到目前函式
 
-Sometimes, you might want to continue your debugging session but advance the debugger all the way through the current function.
+有時候，您可能想要繼續您的偵錯工作階段，但向前移動，目前的函式偵錯工具。
 
-Press Shift + F11 (or **Debug > Step Out**).
+按 Shift + f11 鍵 (或**偵錯 > 跳離函式**)。
 
-This command resumes app execution (and advances the debugger) until the current function returns.
+此命令會繼續執行應用程式 （和進階偵錯工具） 直到目前的函式傳回。
 
-## <a name="run-to-cursor"></a>Run to cursor
+## <a name="run-to-cursor"></a>執行至游標處
 
-Stop the debugger by pressing the **Stop Debugging** red button ![Stop Debugging](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") or Shift + F5.
+按下停止偵錯工具**停止偵錯**的紅色按鈕![停止偵錯](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")或 Shift + F5。
 
-Right-click a line of code in your app and choose **Run to Cursor**. This command starts debugging and sets a temporary breakpoint on the current line of code.
+以滑鼠右鍵按一下您的應用程式中的程式碼行，然後選擇 **執行至游標處**。 此命令會開始偵錯，並在目前的程式碼行上設定暫時中斷點。
 
-![Run to Cursor](../debugger/media/dbg-tour-run-to-cursor.png "Run to Cursor")
+![執行至游標處](../debugger/media/dbg-tour-run-to-cursor.png "執行至游標處")
 
-If you have set breakpoints, the debugger pauses on the first breakpoint that it hits.
+如果您已設定中斷點，偵錯工具會暫停它遇到第一個中斷點。
 
-Press F5 until you reach the line of code where you selected **Run to Cursor**.
+按 f5 鍵，直到您到達您選取其中一行程式碼**執行至游標處**。
 
-This command is useful when you are editing code and want to quickly set a temporary breakpoint and start the debugger.
+此命令時，您正在編輯程式碼，而且想要快速地設定暫時中斷點並開始偵錯工具。
 
 
 > [!NOTE]
-> You can use **Run to Cursor** in the **Call Stack** window while you are debugging.
+> 您可以使用**執行至游標處**中**呼叫堆疊**您偵錯時的視窗。
 
-## <a name="restart-your-app-quickly"></a>Restart your app quickly
+## <a name="restart-your-app-quickly"></a>快速地重新啟動您的應用程式
 
-Click the **Restart** ![Restart App](../debugger/media/dbg-tour-restart.png "Restart App") button in the Debug Toolbar (**Ctrl + Shift +F5**).
+按一下**重新啟動** ![重新啟動應用程式](../debugger/media/dbg-tour-restart.png "重新啟動應用程式")中偵錯 工具列按鈕 (**Ctrl + Shift + F5**)。
 
-When you press **Restart**, it saves time versus stopping the app and restarting the debugger. The debugger pauses at the first breakpoint that is hit by executing code.
+當您按**重新啟動**，它可以節省時間和停止應用程式及重新啟動偵錯工具。 偵錯工具會在叫用時執行程式碼的第一個中斷點上暫停。
 
-If you do want to stop the debugger and get back into the code editor, you can press the red stop ![Stop Debugging](../debugger/media/dbg-tour-stop-debugging.png "Stop Debugging") button instead of **Restart**.
+如果您想要停止偵錯工具，並重新進入程式碼編輯器中，您可以按紅色停止![停止偵錯](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")按鈕而非**重新啟動**。
 
-## <a name="inspect-variables-with-data-tips"></a>Inspect variables with data tips
+## <a name="inspect-variables-with-data-tips"></a>檢查資料提示使用的變數
 
-Now that you know your way around a little, you have a good opportunity to start inspecting your app state (variables) with the debugger. Features that allow you to inspect variables are some of the most useful features of the debugger, and there are different ways to do it. Often, when you try to debug an issue, you are attempting to find out whether variables are storing the values that you expect them to have in a particular app state.
+您現在知道您的工作環境一點，您已開始檢查您的應用程式狀態 （變數），偵錯工具的好機會。 功能可讓您檢查變數是一些最實用的功能，偵錯工具，而且有不同的方式來進行。 通常，當您嘗試偵錯問題，您會嘗試找出是否變數會儲存您希望他們能夠在特定應用程式狀態的值。
 
-While paused in the debugger, hover over an object with the mouse and you see its default property value (in this example, the file name `market 031.jpg` is the default property value).
+暫停偵錯工具後，將滑鼠停留在滑鼠的物件，並查看其預設屬性值 (在此範例中，檔案名稱`market 031.jpg`預設屬性值)。
 
-![View a Data Tip](../debugger/media/dbg-tour-data-tips.gif "View a data tip")
+![檢視資料提示方塊](../debugger/media/dbg-tour-data-tips.gif "檢視資料提示方塊")
 
-Expand the object to see all its properties (such as the `FullPath` property in this example).
+展開以查看其所有屬性的物件 (例如`FullPath`屬性在此範例中)。
 
-Often, when debugging, you want a quick way to check property values on objects, and the data tips are a good way to do it.
+通常，偵錯時，您會想快速檢查物件的屬性值的方法，以及資料提示是很好的方法。
 
 > [!TIP]
-> In most supported languages, you can edit code in the middle of a debugging session. For more info, see [Edit and Continue](../debugger/edit-and-continue.md).
+> 最受支援的語言，您可以編輯程式碼進行偵錯工作階段。 如需詳細資訊，請參閱[編輯後繼續](../debugger/edit-and-continue.md)。
 
-## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>Inspect variables with the Autos and Locals windows
+## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>檢查 [自動變數] 和 [區域變數] 視窗的變數
 
-While debugging, look at the **Autos** window at the bottom of the code editor.
+偵錯時，看看**自動變數**底部的程式碼編輯器 視窗。
 
-![Autos Window](../debugger/media/dbg-tour-autos-window.png "Autos window")
+![[自動變數] 視窗](../debugger/media/dbg-tour-autos-window.png "自動變數視窗")
 
-In the **Autos** window, you see variables along with their current value and their type. The **Autos** window shows all variables used on the current line or the preceding line (In C++, the window shows variables in the preceding three lines of code. Check documentation for language-specific behavior).
-
-> [!NOTE]
-> In JavaScript, the **Locals** window is supported but not the **Autos** window.
-
-Next, look at the **Locals** window. The **Locals** window shows you the variables that are currently in scope.
-
-![Locals Window](../debugger/media/dbg-tour-locals-window.png "Locals window")
-
-In this example, the `this` object and the object `f` are in scope. For more info, see [Inspect Variables in the Autos and Locals Windows](../debugger/autos-and-locals-windows.md).
-
-## <a name="set-a-watch"></a>Set a watch
-
-You can use a **Watch** window to specify a variable (or an expression) that you want to keep an eye on.
-
-While debugging, right-click an object and choose **Add Watch**.
-
-![Watch Window](../debugger/media/dbg-tour-watch-window.png "Watch window")
-
-In this example, you have a watch set on the `File` object, and you can see its value change as you move through the debugger. Unlike the other variable windows, the **Watch** windows always show the variables that you are watching (they're grayed out when out of scope).
-
-For more info, see [Set a Watch using the Watch and QuickWatch Windows](../debugger/watch-and-quickwatch-windows.md)
-
-## <a name="examine-the-call-stack"></a>Examine the call stack
-
-Click the **Call Stack** window while you are debugging, which is by default open in the lower right pane.
-
-![Examine the Call Stack](../debugger/media/dbg-tour-call-stack.png "Examine the call stack")
-
-The **Call Stack** window shows the order in which methods and functions are getting called. The top line shows the current function (the `Update` method in this example). The second line shows that `Update` was called from the `Path.set` property, and so on. The call stack is a good way to examine and understand the execution flow of an app.
+在**自動變數**視窗中，您會看到沿著其目前值和其類型的變數。 **自動變數** 視窗會顯示目前這一行或前一行上使用的所有變數 （在 c + +，視窗會都顯示變數前面三行程式碼中。 檢查語言特定行為的文件）。
 
 > [!NOTE]
-> The **Call Stack** window is similar to the Debug perspective in some IDEs like Eclipse.
+> 在 JavaScript 中，**區域變數**但不是支援視窗**自動變數**視窗。
 
-You can double-click a line of code to go look at that source code and that also changes the current scope being inspected by the debugger. This does not advance the debugger.
+接下來，看看**區域變數**視窗。 **區域變數** 視窗會顯示目前在範圍中的變數。
 
-You can also use right-click menus from the **Call Stack** window to do other things. For example, you can insert breakpoints into specific functions, restart your app using **Run to Cursor**, and to go examine source code. See [How to: Examine the Call Stack](../debugger/how-to-use-the-call-stack-window.md).
+![[區域變數] 視窗](../debugger/media/dbg-tour-locals-window.png "[區域變數] 視窗")
 
-## <a name="examine-an-exception"></a>Examine an exception
+在此範例中，`this`物件和物件`f`範圍中。 如需詳細資訊，請參閱[檢查變數中的 [自動變數] 和 [區域變數] 視窗](../debugger/autos-and-locals-windows.md)。
 
-When your app throws an exception, the debugger takes you to the line of code that threw the exception.
+## <a name="set-a-watch"></a>設定 監看式
+
+您可以使用**監看式**指定變數 （或運算式），您想要特別注意落在視窗。
+
+偵錯時，以滑鼠右鍵按一下物件，然後選擇 **加入監看式**。
+
+![監看式視窗](../debugger/media/dbg-tour-watch-window.png "監看式視窗")
+
+在此範例中，您必須上設定的監看式`File`物件，而且您可以看到其值變更隨著您瀏覽偵錯工具。 不同於其他變數視窗，**監看式**windows 永遠顯示變數您觀賞 （它們灰色時超出範圍）。
+
+如需詳細資訊，請參閱[設定使用監看式和快速監看式視窗的監看式](../debugger/watch-and-quickwatch-windows.md)
+
+## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
+
+按一下**呼叫堆疊**視窗時您正在偵錯，這是預設在右下方的窗格中開啟。
+
+![檢查 呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "檢查呼叫堆疊")
+
+**呼叫堆疊** 視窗會顯示方法和函式會取得呼叫所在的順序。 第一行會顯示目前的函式 (`Update`方法在此範例中)。 第二行顯示`Update`呼叫`Path.set`屬性，依此類推。 呼叫堆疊是很好的方式來檢查，並了解應用程式的執行流程。
+
+> [!NOTE]
+> **呼叫堆疊**視窗是類似於偵錯觀點來看，某些像 Eclipse Ide 中。
+
+您可以按兩下要查看原始程式碼的程式碼行並，也會變更目前正在檢查偵錯工具的範圍。 偵錯工具不會前進。
+
+您也可以使用滑鼠右鍵功能表從**呼叫堆疊**視窗來執行其他動作。 例如，您可以插入到特定的函式的中斷點、 重新啟動您的應用程式使用**執行至游標處**，並移檢查原始程式碼。 請參閱[How to： 檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
+
+## <a name="examine-an-exception"></a>檢查例外狀況
+
+當您的應用程式擲回例外狀況時，偵錯工具會帶您前往發生例外狀況的程式碼行。
      
-![Exception Helper](../debugger/media/dbg-tour-exception-helper.png "Exception Helper")
+![例外狀況協助程式](../debugger/media/dbg-tour-exception-helper.png "例外狀況協助程式")
 
-In this example, the **Exception Helper** shows you a `System.Argument` exception and an error message that says that the path is not a legal form. So, we know the error occurred on a method or function argument.
+在此範例中，**例外狀況協助程式**示範`System.Argument`例外狀況和錯誤訊息，指出此路徑不是合法的表單。 因此，我們會知道方法或函式的引數發生錯誤。
 
-In this example, the `DirectoryInfo` call gave the error on the empty string stored in the `value` variable.
+在此範例中，`DirectoryInfo`呼叫空白的字串儲存在發生錯誤`value`變數。
 
-The Exception Helper is a great feature that can help you debug errors. You can also do things like view error details and add a watch from the Exception Helper. Or, if needed, you can change conditions for throwing the particular exception.
+例外狀況協助程式是很棒的功能，可協助您偵錯錯誤。 您也可以執行下列作業檢視錯誤詳細資料，並從例外狀況協助程式加入監看式。 或者，如果需要您可以變更擲回特定例外狀況的條件。
 
 >  [!NOTE] 
-> The Exception Helper replaces the Exception Assistant in [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> 例外狀況協助程式取代了例外狀況助理中[!include[vs_dev15](../misc/includes/vs_dev15_md.md)]。
 
-Expand the **Exception Settings** node to see more options on how to handle this exception type, but you don't need to change anything for this tour!
+展開**例外狀況設定**節點以查看更多選項如何處理此例外狀況類型，但您不需要變更任何項目為本教學課程 ！
 
-## <a name="more-features-to-look-at"></a>More features to look at
+## <a name="more-features-to-look-at"></a>若要查看更多的功能
 
--   [Debugger Tips and Tricks](../debugger/debugger-tips-and-tricks.md) Learn how to increase your productivity with the debugger.
+-   [偵錯工具秘訣和訣竅](../debugger/debugger-tips-and-tricks.md)了解如何增加您的產能，偵錯工具。
 
--   [Edit and Continue](../debugger/edit-and-continue.md) For a subset of languages (C#, C++, Visual Basic), the Edit and Continue feature allows you to edit code in the middle of a debugging session.
+-   [編輯後繼續](../debugger/edit-and-continue.md)語言 (C#、 c + +、 Visual Basic) 的子集，[編輯後繼續] 功能可讓您編輯程式碼進行偵錯工作階段。
 
--   [Debug Multithreaded Applications](../debugger/debug-multithreaded-applications-in-visual-studio.md) Describes how to debug multithreaded applications. 
+-   [偵錯多執行緒應用程式](../debugger/debug-multithreaded-applications-in-visual-studio.md)描述如何偵錯多執行緒應用程式。 
 
--   [Remote Debugging](../debugger/remote-debugging.md) Describes how to debug apps running on other machines or devices. 
+-   [遠端偵錯](../debugger/remote-debugging.md)描述如何偵錯其他電腦或裝置上執行的應用程式。 
   
--   [IntelliTrace](../debugger/intellitrace.md) Describes the IntelliTrace feature in Visual Studio Enterprise. You can use it to record and trace your code's execution history.
+-   [IntelliTrace](../debugger/intellitrace.md)說明在 Visual Studio Enterprise 中的 IntelliTrace 功能。 您可以使用它來記錄和追蹤程式碼的執行歷程記錄。
 
--   [Network Usage](../profiling/network-usage.md) Describes a profiling tool that you can use to debug web services and other network resources in Universal Windows Apps (UWP). Use the tool to examine payloads.
+-   [網路使用量](../profiling/network-usage.md)描述您可以使用 web 服務與其他網路資源在通用 Windows 應用程式 (UWP) 進行偵錯的程式碼剖析工具。 您可以使用此工具來檢查裝載。
 
--   [Debug Interface Access SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md) Describes the Microsoft Debug Interface Access Software Development Kit (DIA SDK). The DIA SDK provides access to debug information stored in program database (.pdb) files generated by Microsoft postcompiler tools.  
+-   [偵錯介面存取 SDK](../debugger/debug-interface-access/debug-interface-access-sdk.md)描述 Microsoft 偵錯介面存取軟體開發套件 (DIA SDK)。 DIA SDK 可讓您存取儲存在程式資料庫 (.pdb) 檔中，Microsoft 後置編輯器工具所產生的偵錯資訊。  
 
-## <a name="see-also"></a>See Also  
- [Debugging in Visual Studio](../debugger/index.md)
-
+## <a name="see-also"></a>另請參閱  
+ [Visual Studio 偵錯](../debugger/index.md)

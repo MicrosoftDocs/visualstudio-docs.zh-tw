@@ -1,53 +1,53 @@
 ---
-title: "IDebugMethodField::EnumStaticLocals | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "IDebugMethodField::EnumStaticLocals"
-helpviewer_keywords: 
-  - "IDebugMethodField::EnumStaticLocals 方法"
+title: "IDebugMethodField::EnumStaticLocals |Microsoft 文件"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: IDebugMethodField::EnumStaticLocals
+helpviewer_keywords: IDebugMethodField::EnumStaticLocals method
 ms.assetid: e0c522c4-f759-4c32-ae87-7abcb573e77d
-caps.latest.revision: 9
-ms.author: "gregvanl"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: gregvanl
+ms.author: gregvanl
+manager: ghogen
+ms.openlocfilehash: 49de63c81c46f379630f5d5cb328a670472ddcee
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# IDebugMethodField::EnumStaticLocals
-[!INCLUDE[vs2017banner](../../../code-quality/includes/vs2017banner.md)]
-
+# <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 建立方法的靜態區域變數的列舉值。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
-```cpp#  
-HRESULT EnumStaticLocals(   
-   IEnumDebugFields** ppLocals  
+```cpp  
+HRESULT EnumStaticLocals(   
+   IEnumDebugFields** ppLocals  
 );  
 ```  
   
-```c#  
+```csharp  
 int EnumStaticLocals(  
-   out IEnumDebugFields ppLocals  
+   out IEnumDebugFields ppLocals  
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ppLocals`  
- \[\] out傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，表示靜態區域變數的清單。  如果不有任何靜態區域變數，則傳回 null 值。  
+ [out]傳回[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)物件，代表靜態區域變數的清單。 如果沒有任何靜態區域變數，則傳回 null 值。  
   
-## 傳回值  
- 如果成功的話，會傳回 S\_OK，或傳回 S\_FALSE，如果不有任何靜態區域變數。  否則，會傳回錯誤碼。  
+## <a name="return-value"></a>傳回值  
+ 如果成功，會傳回 S_OK，或如果沒有任何靜態區域變數闇 S_FALSE。 反之則傳回錯誤碼。  
   
-## 備註  
- 每個元素是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同的靜態區域變數的型別。  呼叫[GetKind](../Topic/IDebugField::GetKind.md)方法來判斷到底什麼樣的 static 區域變數物件所表示的每個物件上。  
+## <a name="remarks"></a>備註  
+ 每個項目是[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)物件，代表不同類型的靜態區域變數。 呼叫[GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md)每個物件，以判斷確切的靜態區域變數的類型所代表的物件上的方法。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)   
  [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)   
  [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
