@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/09/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-translation.priority.mt:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 1d474374a0c7603bc9b6995783bbed96c81c8907
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: MT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: ac7a99673eb4dc23dd53a46c3c93fd735325c255
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 擴充中的變更
 
@@ -123,8 +107,3 @@ Visual Studio 處理序內執行的程式碼應該更新為使用 Visual Studio 
 * 外部元件可以找到 Visual Studio 位置[遵循的指導方針](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup)。
 * 我們建議使用的外部元件[外部設定管理員](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.settings.externalsettingsmanager.aspx)而不是直接到 Visual Studio 登錄機碼的讀取/寫入。
 * 請檢查您的延伸模組所使用的元件是否已實作另一種技術的註冊。 例如，偵錯工具擴充功能可能是能夠充分利用新的[msvsmon JSON 檔案 COM 登錄](migrate-debugger-COM-registration.md)。
-
-## <a name="change-lightweight-solution-load"></a>變更： 套輕量型方案負載
-
-輕量型方案載入 (LSL) 可減少直到使用者開始使用的它們未完全載入專案方案載入時。 這可能會影響擴充功能，但假設專案是完全載入。 請參閱[輕量型方案負載](lightweight-solution-load-extension-impact.md)若要了解您的延伸模組是否可能會受到影響，並取得更新您的擴充功能的指引。
-
