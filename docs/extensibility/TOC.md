@@ -50,6 +50,7 @@
 ### [編輯器中的 Managed Extensibility Framework](managed-extensibility-framework-in-the-editor.md)
 ### [語言服務及編輯器擴充點](language-service-and-editor-extension-points.md)
 ### [編輯器匯入](editor-imports.md)
+### [支援 EditorConfig](supporting-editorconfig.md)
 ### [逐步解說︰將內容類型連結至副檔名](walkthrough-linking-a-content-type-to-a-file-name-extension.md)
 ### [逐步解說：建立邊界字符](walkthrough-creating-a-margin-glyph.md)
 ### [逐步解說︰自訂文字檢視](walkthrough-customizing-the-text-view.md)
