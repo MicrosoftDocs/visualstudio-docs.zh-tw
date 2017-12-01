@@ -13,20 +13,20 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: dcac05939cd7f16de3bc5b6748134b52ac4f80d7
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 109d9d8718a2c46dbd982e58b22dcf43e55b2205
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/29/2017
 ---
 1.  裝置或伺服器電腦，您要偵錯 （而非執行 Visual Studio 的電腦），取得正確的版本的遠端工具。
 
     |版本|連結|注意|
     |-|-|-|
     |Visual Studio 2017 Update 4|[遠端工具](https://www.visualstudio.com/downloads/#remote-tools-for-visual-studio-2017)|一律會下載符合您的裝置作業系統 （x86 或 x64） 的版本。 對於較舊的瀏覽器，使用這些直接連結：[遠端工具 (x64)](https://go.microsoft.com/fwlink/?LinkId=746570&clcid=0x409)和[遠端工具 (x86)](https://go.microsoft.com/fwlink/?LinkId=746569&clcid=0x409)。|
-    |Visual Studio 2017 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 如有必要，然後重新開啟連結。|
-    |Visual Studio 2015 Update 3|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 如有必要，然後重新開啟連結。|
-    |Visual Studio 2015 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 如有必要，然後重新開啟連結。|
+    |Visual Studio 2017 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 對於較舊的瀏覽器，您必須加入新的受信任站台出現提示時。|
+    |Visual Studio 2015 Update 3|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 對於較舊的瀏覽器，您必須加入新的受信任站台出現提示時。|
+    |Visual Studio 2015 （舊版）|[遠端工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|如果出現提示，請加入免費的 Visual Studio Dev Essentials 群組，或您可以使用有效的 Visual Studio 訂用帳戶登入。 對於較舊的瀏覽器，您必須加入新的受信任站台出現提示時。|
     |Visual Studio 2013|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2013 文件中的頁面|
     |Visual Studio 2012|[遠端工具](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|下載 Visual Studio 2012 文件中的頁面|
   

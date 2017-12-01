@@ -11,18 +11,19 @@ ms.assetid: b3c8cfc4-7c1f-4606-970e-3f7651604bab
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d2972cfe2ea4481ab8f5eab6284277615d1d64a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: f7193722e7ec1bee7c63e2495ed2d07155cc663b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="generate-an-override-in-c"></a>在 C# 中產生的覆寫 #
-**項目：**可讓您立即產生，您可以覆寫任何方法的程式碼基底類別。 
 
-**當：**您想要覆寫基底類別方法，並自動產生的簽章。  
+**項目：**可讓您立即產生任何方法，您可以覆寫的程式碼基底類別。
 
-**原因：**您無法將方法簽章自行撰寫，不過這項功能將會自動產生的簽章。 
+**當：**您想要覆寫基底類別方法，並自動產生的簽章。
+
+**原因：**您無法將方法簽章自行撰寫，不過這項功能將會自動產生的簽章。
 
 **如何：**
 
@@ -34,11 +35,12 @@ ms.lasthandoff: 10/31/2017
 
    >[!TIP]
    >* 使用 [屬性] 圖示 ![屬性圖示](media/override_property.png) 若要顯示或隱藏的屬性清單中。
-   >* 使用方法圖示 ![屬性圖示](media/override_method.png) 若要顯示或隱藏在清單中的方法。
+   >* 使用方法圖示 ![方法圖示](media/override_method.png) 若要顯示或隱藏在清單中的方法。
 
 1. 選取的方法或屬性將會加入至類別是覆寫，準備好要實作。
 
    ![覆寫結果](media/override_result.png)
 
-## <a name="see-also"></a>另請參閱  
-[程式碼產生 (C#)](../code-generation-csharp.md)  
+## <a name="see-also"></a>請參閱
+
+[程式碼產生 (C#)](../code-generation-csharp.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b4ad0cdadcb3d56af55af629b853e660dc9d86f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c0527d33e47ce42449f2ae2bb75ee3e342b04c2b
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="remote-debug-aspnet-core-on-iis-and-azure-in-visual-studio-2017"></a>IIS 和 Visual Studio 2017 在 Azure 上的遠端偵錯 ASP.NET Core
 您可以部署到 Windows Server 電腦與 IIS，ASP.NET Web 應用程式，並將它設定為遠端偵錯。 本指南說明如何安裝和設定 Visual Studio 2017 ASP.NET Core 應用程式、 將它部署到 IIS 使用 Azure，並附加從 Visual Studio 遠端偵錯工具。
@@ -47,7 +47,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 ## <a name="create-the-aspnet-core-application-on-the-visual-studio-2017-computer"></a>在 Visual Studio 2017 電腦上建立 ASP.NET Core 應用程式 
 
-1. 建立新的 ASP.NET Core 應用程式。 (選擇**檔案 > 新增 > 專案**，然後選取**Visual C# > 網路 > ASP.NET Core Web 應用程式 (.NET Core)**)
+1. 建立新的 ASP.NET Core 應用程式。 (選擇**檔案 > 新增 > 專案**，然後選取**Visual C# > 網路 > ASP.NET Core Web 應用程式 (.NET Core)**)。
 
     在**ASP.NET Core**範本區段中，選取**Web 應用程式**。
 
@@ -59,7 +59,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a>Azure App Service 上的遠端偵錯 ASP.NET Core
 
-從 Visual Studio 中，您可以快速發行及偵錯應用程式完整佈建的 IIS 執行個體。 不過，預先設定的 IIS 設定，而且您不能加以自訂。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 的功能，請試著偵錯在[Azure VM](#BKMK_azure_vm)。) 
+從 Visual Studio 中，您可以快速發行及偵錯應用程式完整佈建的 IIS 執行個體。 不過，預先設定的 IIS 設定，而且您不能加以自訂。 如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 (如果您需要自訂 IIS 的功能，請試著偵錯在[Azure VM](#BKMK_azure_vm)。) 
 
 #### <a name="to-deploy-the-app-and-remote-debug"></a>若要部署的應用程式和遠端偵錯
 
@@ -67,7 +67,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 2. 選擇**Microsoft Azure App Service**從**發行**對話方塊中，選取**新建**，並遵循提示來發佈。
 
-    如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](https://docs.microsoft.com/en-us/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
+    如需詳細指示，請參閱[ASP.NET Core web 應用程式部署到 Azure 中使用 Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 3. 在**伺服器總管**，以滑鼠右鍵按一下應用程式服務執行個體，然後選擇 **附加偵錯工具**。
 
@@ -81,7 +81,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 您可以建立伺服器的 Azure VM 的 Windows，再安裝及設定 IIS 和其他必要的軟體元件。 這會花費的時間比部署到 Azure 應用程式服務，並且需要您在本教學課程執行其餘的步驟。
 
-首先，請依照下列所述的所有步驟[安裝和執行的 IIS](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role)。
+首先，請依照下列所述的所有步驟[安裝和執行的 IIS](/azure/virtual-machines/virtual-machines-windows-hero-role)。
 
 當您開啟通訊埠 80 的網路安全性群組中時，也請開啟連接埠 4022 遠端偵錯工具。 這樣一來，您不需要開啟它。
 
@@ -94,13 +94,13 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 - download.microsoft.com
 - visualstudio.com
 
-如果您使用 Internet Explorer，您可以加入信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 這些步驟是不同的其他瀏覽器。
+如果您使用 Internet Explorer，您可以加入信任的網站，請前往**網際網路選項 > 安全性 > 受信任的網站 > 網站**。 這些步驟是不同的其他瀏覽器。 （如果您需要從 my.visualstudio.com 下載較舊版本的遠端偵錯工具時，某些其他信任的網站才能登入。）
 
 當您下載軟體時，可能會收到要求授與權限來載入各種網站指令碼和資源。 在大部分情況下，這些額外的資源都不需要安裝軟體。
 
 ### <a name="install-aspnet-core-on-windows-server"></a>Windows 伺服器上安裝 ASP.NET Core
 
-1. 安裝[.NET 核心 Windows Server 裝載](https://go.microsoft.com/fwlink/?linkid=844461)主機系統上的套件組合。 組合將會安裝.NET 核心執行階段、.NET 核心程式庫和 ASP.NET 核心模組。
+1. 安裝[.NET 核心 Windows Server 裝載](https://aka.ms/dotnetcore-2-windowshosting)主機系統上的套件組合。 組合將會安裝.NET 核心執行階段、.NET 核心程式庫和 ASP.NET 核心模組。 深入了解的詳細指示，請參閱[發行至 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
     > [!NOTE]
     > 如果系統沒有網際網路連線，取得並安裝 *[Microsoft Visual c + + 2015年可轉散發](https://www.microsoft.com/download/details.aspx?id=53840)*之前安裝的.NET 核心 Windows Server 主控的組合。
@@ -209,7 +209,7 @@ Azure 應用程式服務，您必須將您的應用程式從 Visual Studio Azure
 
 大部分的安裝中安裝 ASP.NET 和遠端偵錯工具所開啟必要的連接埠。 不過，如果您正在疑難排解部署問題，而應用程式裝載在防火牆後面，您可能需要確認正確的通訊埠已開啟。
 
-在 Azure VM 中，您必須開啟連接埠通過[網路安全性群組](https://docs.microsoft.com/en-us/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80)。 
+在 Azure VM 中，您必須開啟連接埠通過[網路安全性群組](/azure/virtual-machines/virtual-machines-windows-hero-role#open-port-80)。 
 
 必要的連接埠：
 

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fc7ad92e708666baf1ab0429c041ca9b7d2e0f95
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>使用 IntelliTrace 步驟後的檢視快照集
 IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用程式的快照集步驟的事件。 記錄快照集可讓您回到上一個中斷點或步驟，並檢視應用程式的狀態，因為它已在過去。 IntelliTrace 步驟後可以節省許多時間當您想要查看先前的應用程式狀態，但是不想要重新啟動偵錯，或重新建立所需的應用程式狀態。
@@ -38,7 +38,7 @@ IntelliTrace 快照的應用程式的程序在每個偵錯工具步驟與中斷�
 
 ## <a name="navigate-and-view-snapshots"></a>瀏覽和檢視的快照集
 
-您可以使用事件之間瀏覽**步驟回溯**和**前進**中偵錯 工具列按鈕。 這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 自動逐步向前或向執行事件就會啟動選取的事件歷程偵錯。
+您可以使用事件之間瀏覽**步驟回溯 （Alt + [）**和**向前步驟 (Alt +])**中偵錯 工具列按鈕。 這些按鈕瀏覽中顯示的事件**事件**索引標籤中**診斷工具視窗**。 自動逐步向前或向執行事件就會啟動選取的事件歷程偵錯。
 
 ![向後和向前按鈕](../debugger/media/intellitrace-step-back-icons-description.png "步驟向後和向前步驟按鈕")
 

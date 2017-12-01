@@ -13,11 +13,11 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 98202db8e59957bfafe81b4a7d611b79c642daf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="code-generation-features-for-c"></a>若為 C# 程式碼產生功能 #
 Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工作。  下列程式碼產生功能可用在 Visual Studio C# 中：
@@ -26,7 +26,8 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 * [產生方法](code-generation/generate-method.md)
 * [產生欄位/屬性/區域](code-generation/generate-field-property-local.md)
 * [產生建構函式](code-generation/generate-constructor.md)
-* [產生覆寫](code-generation/generate-override.md)
+* [產生的覆寫](code-generation/generate-override.md)
+* [產生 Equals 與 GetHashCode 方法覆寫](code-generation/generate-overrides.md)
 * [產生 XML 文件註解](code-generation/generate-xml-documentation-comments.md)
 * [實作抽象類別](code-generation/implement-abstract-class.md)
 * [實作介面](code-generation/implement-interface.md)
@@ -34,4 +35,3 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
  
 ## <a name="see-also"></a>另請參閱  
  [使用 C# 的 Visual Studio 開發環境](using-the-visual-studio-development-environment-for-csharp.md)   
- 
