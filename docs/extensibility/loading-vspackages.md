@@ -15,11 +15,11 @@ caps.latest.revision: "17"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 94db8d3bb95e254a3fa528a424048162916fce99
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 29022d14311e71b7ee33f5339f8e450c47d1ce5c
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="loading-vspackages"></a>載入 Vspackage
 只有需要其功能時，只有 Vspackage 會載入 Visual Studio。 例如，VSPackage 會在 Visual Studio 會使用專案工廠或 VSPackage 實作的服務時載入。 這項功能稱為延遲的載入，會盡可能使用來改善效能。  
@@ -72,61 +72,7 @@ ms.lasthandoff: 10/31/2017
   
      當初始化 VSPackage 時，它會強制`PackageToBeLoaded`載入。  
   
-     強制載入不應該用於 VSPackage 通訊。 使用[使用並提供服務](../extensibility/using-and-providing-services.md)改為。  
-  
-## <a name="using-a-custom-attribute-to-register-a-vspackage"></a>使用自訂的屬性來登錄 VSPackage  
- 在某些情況下，您可能需要建立新的註冊屬性，您的擴充功能。 加入新的登錄機碼，或將新值加入至現有的索引鍵，您可以使用登錄屬性。 新的屬性必須衍生自<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute>，而且必須覆寫<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Register%2A>和<xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.Unregister%2A>方法。  
-  
-## <a name="creating-a-registry-key"></a>建立登錄機碼  
- 下列程式碼，建立自訂屬性**自訂**之 VSPackage 所登錄機碼下的子機碼。  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + @"}\Custom");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-    }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveKey(@"Packages\" + context.ComponentType.GUID + @"}\Custom");  
-}  
-  
-```  
-  
-## <a name="creating-a-new-value-under-an-existing-registry-key"></a>建立現有的登錄機碼下的新值  
- 您可以將自訂值加入到現有的金鑰。 下列程式碼會示範如何將新值加入至 VSPackage 的登錄機碼。  
-  
-```csharp  
-public override void Register(RegistrationAttribute.RegistrationContext context)  
-{  
-    Key packageKey = null;  
-    try  
-    {   
-        packageKey = context.CreateKey(@"Packages\{" + context.ComponentType.GUID + "}");  
-        packageKey.SetValue("NewCustom", 1);  
-    }  
-    finally  
-    {  
-        if (packageKey != null)  
-            packageKey.Close();  
-                }  
-}  
-  
-public override void Unregister(RegistrationContext context)  
-{  
-    context.RemoveValue(@"Packages\" + context.ComponentType.GUID, "NewCustom");  
-}  
-```  
+     強制載入不應該用於 VSPackage 通訊。 使用[使用並提供服務](../extensibility/using-and-providing-services.md)改為。
   
 ## <a name="see-also"></a>另請參閱  
  [VSPackage](../extensibility/internals/vspackages.md)
