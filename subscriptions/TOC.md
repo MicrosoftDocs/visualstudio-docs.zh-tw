@@ -10,7 +10,7 @@
 ### [使用產品金鑰](product-keys.md)
 ### 如何啟用權益
 #### 工具
-##### [Visual Studio 企業版](vs-ide-benefit.md) 
+##### [Visual Studio IDE](vs-ide-benefit.md) 
 ##### [Visual Studio Team Services](vs-vsts.md)
 ##### [Microsoft Azure](vs-azure.md) 
 ##### [Parasoft](vs-parasoft.md)
@@ -33,7 +33,7 @@
 ##### [技術支援](vs-tech-support.md)
 
 ## 系統管理員
-### [系統管理員角色和責任](admin-responsibilities.md)
+### [系統管理員概觀](admin-responsibilities.md)
 ### [存取系統管理員入口網站](access-admin-portal.md)
 ### [使用系統管理員入口網站](using-admin-portal.md)
 ### [指派訂閱](assign-license.md)
