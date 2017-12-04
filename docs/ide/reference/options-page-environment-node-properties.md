@@ -15,11 +15,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ae50f2d537836501ec4c9c29e50d86aa3e325661
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [環境] 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
@@ -71,7 +71,7 @@ ms.lasthandoff: 10/31/2017
 |屬性項目名稱|值|描述|  
 |------------------------|-----------|-----------------|  
 |EnableAdminExtensions|Get/Set (布林值)|以系統管理員認證執行 Visual Studio 時，載入個別使用者的擴充功能。 變更這個值之後，必須重新啟動 Visual Studio。|  
-|EnableOnline|Get/Set (布林值)|允許存取 Visual Studio 組件庫中的擴充功能。|  
+|EnableOnline|Get/Set (布林值)|允許存取 Visual Studio Marketplace 中的擴充功能。|  
 |AutomaticallyCheckForUpdates|Get/Set (布林值)|自動檢查已安裝擴充功能的更新。|  
   
 ## <a name="find-and-replace"></a>尋找和取代  

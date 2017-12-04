@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 89591535b232317abf395c237fdc267c847ca699
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: bb00d2c338ac1ef9e2be6d77d68ebfe2a246d807
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何： 將擴充性專案移轉至 Visual Studio 2017
 
@@ -102,11 +102,6 @@ ms.lasthandoff: 10/31/2017
   ![新增 roslyn 必要條件](media/add-roslyn-prerequisite.png)
 
 * Press **OK**.
-
-## <a name="if-migrating-from-preview-4-or-preview-5"></a>如果從 Preview 4 或 5 預覽移轉
-
-* 取代`SetupDependencies`與`Prerequisites`和移出的項目`Installer`項目。 `Prerequisites`現在位於直接內部`PackageManifest`項目。
-* [選用]移除`GenerateVsixV3`項目。 （這是 Preview 5 中才需要。）`GenerateVsixV3`版本 Preview 5 中，元素會被忽略。
 
 ## <a name="update-debug-settings-for-project"></a>更新專案的偵錯設定
 
@@ -197,3 +192,15 @@ WPF | Managed 桌面工作負載核心 | Microsoft.VisualStudio.Component.Manage
 
 * 如果您有偵錯工具擴充功能，並了解您的專案有 VSDebugEng.dll 和 VSDebug.dll 的參考，按一下篩選按鈕中**二進位碼檔案 / 檔案名稱**標頭。  搜尋"VSDebugEng.dll 」，並選取 [確定]。  接下來按一下 [篩選] 按鈕，在**二進位碼檔案 / 檔案名稱**一次標頭，並搜尋"VSDebug.dll"。  選取核取方塊 」 新增目前的選取範圍來篩選 」，選取 [確定]。  現在看起來**元件名稱**了大部分的元件相關的延伸類型。 在此範例中，您會選擇的時間只需偵錯工具，並將它加入至您 vsixmanifest。
 * 如果您知道您的專案處理與偵錯工具項目，您可以搜尋 「 偵錯工具 」 篩選器的 [搜尋] 方塊中查看哪些元件包含其名稱中偵錯工具上。
+
+## <a name="specifying-a-visual-studio-2017-release"></a>指定 Visual Studio 2017 版本
+
+如果您的擴充功能需要特定版本的 Visual Studio 2017，比方說，這取決於 15.3 發行一項功能，您必須指定組建編號，在您的 VSIX 中**InstallationTarget**。 例如，版本 15.3 有 '15.0.26730.3' 組建編號。 您可以看到的組建編號的版本對應[這裡](../install/visual-studio-build-numbers-and-release-dates.md)。 使用 版次號碼 '15.3' 將無法正常運作。
+
+如果您的擴充功能需要 15.3 或更高版本，您就可以宣告**InstallationTarget 版本**為 [15.0.26730.3, 16.0):
+
+```xml
+<Installation>
+  <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+</Installation>
+```

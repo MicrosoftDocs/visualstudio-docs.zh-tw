@@ -7,16 +7,15 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40f554f21cc2cee9fb6d457ef9f4a560740cebc6
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 
@@ -56,7 +55,7 @@ ms.lasthandoff: 11/17/2017
 |機制支援全新的開發人員機器。 (也就是，不需安裝作業，簡單地從原始程式碼控制擷取即可運作。)|N|由於您參考 SDK，因此您必須個別簽入您的方案和 SDK。 您可以從兩個 MSBuild 逐一查看 SDK 的非登錄預設位置簽入 SDK (如需詳細資訊，請參閱[建立軟體開發套件](../extensibility/creating-a-software-development-kit.md))。 或者，如果自訂位置包含 SDK，您可以在專案檔中指定下列程式碼︰<br /><br /> `<PropertyGroup>    <SDKReferenceDirectoryRoot>C:\MySDKs</SDKReferenceDirectoryRoot>   </PropertyGroup>`<br /><br /> 然後將 SDK 簽入到該位置。|Y|您可以簽出方案，Visual Studio 可立即辨識並處理檔案。|
 |您可以加入龐大的現有套件作者社群。|N/A|此為新社群。|Y||
 |您可以加入龐大的現有套件取用者社群。|N/A|此為新社群。|Y||
-|您可以加入合作夥伴的生態系統 (自訂組件庫、儲存機制等等)。|N/A|可用的儲存機制包含 Visual Studio 組件庫、Microsoft 下載中心，和 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。|Y||
+|您可以加入合作夥伴的生態系統 (自訂組件庫、儲存機制等等)。|N/A|可用的存放庫包含 Visual Studio Marketplace、Microsoft 下載中心與 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。|Y||
 |機制與連續整合建置伺服器整合，以建立和使用套件。|Y|SDK 必須在命令列上將簽入位置 (SDKReferenceDirectoryRoot 屬性) 傳遞給 MSBuild。|Y||
 |機制支援穩定和發行前版本的套件版本。|Y|SDK 支援將參考新增至多個版本。|Y||
 |機制支援自動更新已安裝的套件。|Y|如果作為 VSIX 或部分 Visual Studio 自動更新寄送，SDK 會提供自動通知。|Y||
