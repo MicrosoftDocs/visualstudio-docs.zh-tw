@@ -9,14 +9,14 @@ ms.tgt_pltfrm:
 ms.topic: get-started-article
 ms.assetid: 66b5b4eb-13b5-4071-98d2-87fafa4598a8
 caps.latest.revision: "10"
-author: TerryGLee
-ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 03fd3a4cc84852ad922dec417850a0f4a0b1ea1c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+author: conceptdev
+ms.author: crdun
+manager: crdun
+ms.openlocfilehash: 1727330a559b5a9aed41ea9063f3394e01bc45ab
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。  
