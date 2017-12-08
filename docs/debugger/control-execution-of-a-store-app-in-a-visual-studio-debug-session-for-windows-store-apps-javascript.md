@@ -17,11 +17,11 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31353d1063bc6d4f29eaa0fcde308ce3c34fc218
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>控制執行的 UWP 應用程式中的 Visual Studio 偵錯工作階段 (JavaScript)
 本快速入門示範如何在 Visual Studio 偵錯工具中巡覽，以及如何檢視工作階段中的程式狀態。  
@@ -69,7 +69,7 @@ ms.lasthandoff: 11/11/2017
   
 2.  **開啟 default.js 原始程式檔。** 在 方案總管 中，開啟**js**節點，然後選擇  `default.js`。  
   
-3.  **以範例程式碼取代頁面內容。** 刪除 `default.js` 檔案中開啟。 依照此連結進行： [Debugger navigation sample code (JavaScript)](../debugger/debugger-navigation-sample-code-javascript.md)，然後將 JavaScript 區段中列出的程式碼複製到剪貼簿。 (選擇**回**瀏覽器或說明檢視器，以返回本快速入門頁面中。)在 Visual Studio 編輯器中，將程式碼貼上至現在空白的 `default.js`。 選擇 **CTRL + S** 以儲存檔案。  
+3.  **以範例程式碼取代頁面內容。** 刪除 `default.js` 檔案中開啟。 依照此連結：[偵錯工具巡覽範例程式碼 (JavaScript)](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-javascript.js)，然後將複製到剪貼簿 JavaScript 區段中列出的程式碼。 (選擇**回**瀏覽器或說明檢視器，以返回本快速入門頁面中。)在 Visual Studio 編輯器中，將程式碼貼上至現在空白的 `default.js`。 選擇 **CTRL + S** 以儲存檔案。  
   
  您現在可以依照本主題中的範例進行。  
   

@@ -19,11 +19,11 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4eab796f0a3c6a7148c94e780439a727ee6fe450
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: b0b1d4f79be83f69989064ed7699df43b6930040
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-the-tasks-window"></a>使用工作視窗
 **工作**視窗類似於**執行緒**視窗中，差別在於前者顯示的相關資訊<xref:System.Threading.Tasks.Task?displayProperty=fullName>， [task_handle](/cpp/parallel/concrt/reference/task-group-class.md)，或[WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx)而不是每個執行緒的物件。 與執行緒一樣，工作代表可以並行執行的非同步作業，但是多項工作可能會在相同執行緒上執行。 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/11/2017
   
  在原生程式碼，您可以使用**工作**視窗中，當您使用[工作群組](/cpp/parallel/concrt/task-parallelism-concurrency-runtime)，[平行演算法](/cpp/parallel/concrt/parallel-algorithms)，[非同步代理程式](/cpp/parallel/concrt/asynchronous-agents)，和[輕量型工作](/cpp/parallel/concrt/task-scheduler-concurrency-runtime)。 如需原生程式碼中的工作的詳細資訊，請參閱[並行執行階段](/cpp/parallel/concrt/concurrency-runtime)。  
   
- 在 JavaScript 中，您可以在使用 promise .then 程式碼時使用 [工作] 視窗。 請參閱[JavaScript （UWP 應用程式） 中的非同步程式設計](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。   
+ 在 JavaScript 中，您可以使用 [工作] 視窗時您正在使用承諾`.then`程式碼。 請參閱[JavaScript （UWP 應用程式） 中的非同步程式設計](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx)如需詳細資訊。   
   
  您可以使用**工作**只要您進入偵錯工具視窗。 您可以存取上**偵錯**功能表按一下**Windows** ，然後按一下 **工作**。 下圖顯示**工作**視窗處於預設模式。  
   

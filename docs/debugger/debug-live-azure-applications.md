@@ -1,6 +1,6 @@
 ---
 title: "偵錯即時 ASP.NET Azure 應用程式的 Visual Studio |Microsoft 文件"
-ms.date: 11/13/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 02f91441c493d65e8abcdc80bd85b01f2bd423bf
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 04f3f90f6b3ee8aac2ddf1907569043c9d4b56ea
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>偵錯使用快照集偵錯工具的即時 ASP.NET Azure 應用程式
 
@@ -33,7 +33,7 @@ Snappoints 和 logpoints 的類似於中斷點。 不同於中斷點、 snappoin
 
 ## <a name="start-the-snapshot-debugger"></a>啟動快照集偵錯工具
 
-1. 安裝[Visual Studio Enterprise 15.5 Preview](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-preview-relnotes)或更新版本。 如果您要從先前的 Visual Studio 2017 預覽更新，請執行 Visual Studio 安裝程式，並檢查 ASP.NET 及 web 程式開發工作負載中的快照集偵錯工具元件。
+1. 安裝[Visual Studio 2017 Enterprise 版本 15.5](https://www.visualstudio.com/downloads/)或更新版本。 如果您要從舊版的 Visual Studio 2017 安裝更新，請執行 Visual Studio 安裝程式，並檢查 ASP.NET 及 web 程式開發工作負載中的快照集偵錯工具元件。
 
 2. 開啟您想要的快照集進行偵錯的專案。 
 

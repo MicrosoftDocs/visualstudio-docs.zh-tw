@@ -17,11 +17,11 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8c7679aff620b415a8b3c7f7b226d808d0f3f492
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 0c69ff648e2a1ac8c60746f1e7879e80c2063c2a
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>在 Visual Studio 中巡覽偵錯工作階段 (Xaml 和 C#)
 本快速入門示範如何巡覽 Visual Studio 偵錯工作階段，以及如何檢視與變更工作階段中的程式狀態。  
@@ -52,7 +52,7 @@ ms.lasthandoff: 11/11/2017
   
  **開啟 MainPage.xaml.cs 原始程式檔。** 以滑鼠右鍵按一下 XML 編輯器中的任何位置，然後選擇 **檢視程式碼**。 MainPage.xaml.cs 程式碼後置檔案便會顯示。 請注意，檔案中僅會列出一個方法，也就是 `MainPage()` 建構函式。  
   
- **使用範例程式碼取代 MainPage 建構函式。** 刪除 MainPage() 方法。 依照此連結：[偵錯工具巡覽範例程式碼 （Xaml 和 C#）](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)，然後將複製到剪貼簿 C# 區段中列出的程式碼。 (選擇**回**瀏覽器或說明檢視器，以返回本快速入門頁面中。)在 Visual Studio 編輯器中，貼上 `partial class MainPage` 區塊中的程式碼。 選擇 CTRL + S 以儲存檔案。  
+ **使用範例程式碼取代 MainPage 建構函式。** 刪除 MainPage() 方法。 依照此連結：[偵錯工具巡覽範例程式碼 （Xaml 和 C#）](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/debugger/samples/debugger-navigation-sample-code-xaml-and-csharp.cs)，然後將複製到剪貼簿 C# 區段中列出的程式碼。 (選擇**回**瀏覽器或說明檢視器，以返回本快速入門頁面中。)在 Visual Studio 編輯器中，貼上 `partial class MainPage` 區塊中的程式碼。 選擇 CTRL + S 以儲存檔案。  
   
  您現在可以依照本主題中的範例進行。  
   
