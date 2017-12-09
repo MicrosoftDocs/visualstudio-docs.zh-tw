@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d76ced1c908c832e9fd583eecc3419e57aeb76c7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -38,7 +38,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |SQL 資料庫|DocumentDB|儲存體 （blob、 資料表、 佇列、 檔案）|
 |SQL 資料倉儲|SQL Server Stretch Database|StorSimple|
 
-等等...
+等等
 
 **SQL**
 
@@ -48,7 +48,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-等等...
+等等
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
-等等...
+等等
 
 許多資料庫供應商和第三方 Visual Studio 整合支援 NuGet 封裝。 Nuget.org 上或透過 NuGet 封裝管理員 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝Packages for Solution**)。 做為擴充，與 Visual Studio 整合其他資料庫產品。 您可以瀏覽至瀏覽這些供應項目，在 Visual Studio Marketplace**工具**，**擴充功能和更新**，然後選取 **線上**的左窗格中對話方塊。 如需詳細資訊，請參閱[for Visual Studio 相容的資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 

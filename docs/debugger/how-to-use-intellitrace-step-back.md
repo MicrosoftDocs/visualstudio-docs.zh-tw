@@ -1,7 +1,7 @@
 ---
 title: "檢視快照集使用 IntelliTrace 步驟後-Visual Studio |Microsoft 文件"
 ms.custom: 
-ms.date: 11/08/2017
+ms.date: 12/06/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e8da202cf8ae5680bede1ec4b2f2c8984624e4e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: c05905e8ffeec3aa699aac9dfa46c4b017b86be5
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="view-snapshots-using-intellitrace-step-back"></a>使用 IntelliTrace 步驟後的檢視快照集
 IntelliTrace 步驟後會自動帶您在每個中斷點和偵錯工具的應用程式的快照集步驟的事件。 記錄快照集可讓您回到上一個中斷點或步驟，並檢視應用程式的狀態，因為它已在過去。 IntelliTrace 步驟後可以節省許多時間當您想要查看先前的應用程式狀態，但是不想要重新啟動偵錯，或重新建立所需的應用程式狀態。
