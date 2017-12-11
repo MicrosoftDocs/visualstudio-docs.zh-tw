@@ -12,11 +12,11 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8ca7133aa2cb4f02e3a8761d38fb22fcc2ce6122
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
@@ -88,7 +88,7 @@ IntelliTest 可大幅節省為新的或現有程式碼建立與維護單元測�
 
 * [開始使用單元測試](unit-test-your-code.md)
 * [使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)
-* [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp.md)
+* [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 * [安裝協力廠商單元測試架構](install-third-party-unit-test-frameworks.md)
 
 Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力廠商單元測試配接器的機門。 此外，程式碼複製功能透過協助您識別語意類似的程式碼區塊而成為交付高品質軟體的必要項目，而這些區塊可能適用於一般 Bug 修正或重構。

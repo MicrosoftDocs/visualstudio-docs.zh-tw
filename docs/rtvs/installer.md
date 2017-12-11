@@ -8,16 +8,15 @@ ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ebaacfba-12a1-45da-9817-c0937ca38acc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 39f21b73389285ab3114950bee8d84ad2837e206
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: a9120161c887d0ac794ecdd8f9c0fd47e0edc452
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>歡迎使用 Visual Studio R 工具
 

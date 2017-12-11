@@ -4,42 +4,25 @@ ms.custom: H1Hack27Feb2017
 ms.date: 02/27/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-f1_keywords:
-- vs.performance.wizard.intropage
+f1_keywords: vs.performance.wizard.intropage
 helpviewer_keywords:
 - Profiling Tools, quick start
 - Diagnostics Tools, CPU Usage
 - CPU Usage
 - Diagnostics Tools
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
-caps.latest.revision: 45
+caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: a5eabb6a62e4b362d9355772621d27f574034ff1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初學者指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -65,7 +48,7 @@ ms.lasthandoff: 09/06/2017
   
 3.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。
 
-4.  您可以透過工具列上的 [Select Tools (選取工具)] 設定來選擇是否要查看 [CPU Usage (CPU 使用量)]、[Memory Usage (記憶體使用量)][](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
+4.  您可以透過工具列上的 **[Select Tools (選取工具)]** 設定來選擇是否要查看 **[CPU Usage (CPU 使用量)]**、[[Memory Usage (記憶體使用量)]](../profiling/Memory-Usage.md) 或 (或兩者)。 若正在執行 Visual Studio Enterprise，您也可以在 [工具/選項/IntelliTrace]  中啟用或停用 IntelliTrace。
 
      ![顯示診斷工具](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
 
@@ -140,7 +123,7 @@ ms.lasthandoff: 09/06/2017
 |||
 |-|-|
 |![步驟 1](../profiling/media/ProcGuid_1.png "ProcGuid_1")|CPU 使用量呼叫樹狀圖中的最上層節點是虛擬節點|  
-|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [顯示外部程式碼] [](#BKMK_External_Code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 [外部程式碼]  節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
+|![步驟 2](../profiling/media/ProcGuid_2.png "ProcGuid_2")|在大部分的應用程式中，停用 [[顯示外部程式碼]](#BKMK_External_Code) 選項時，第二層節點是一個含有系統和 Framework 程式碼的 **[外部程式碼]** 節點，而系統和 Framework 程式碼會啟動和停止應用程式、繪製 UI、控制執行緒排程，以及提供應用程式的其他低階服務。|  
 |![步驟 3](../profiling/media/ProcGuid_3.png "ProcGuid_3")|第二層節點的子系是第二層系統和 Framework 程式碼所呼叫或建立的使用者程式碼方法和非同步常式。|
 |![步驟 4](../profiling/media/ProcGuid_4.png "ProcGuid_4")|某個方法的子節點只包含父系方法呼叫的資料。 停用 [顯示外部程式碼]  時，應用程式方法也可包含 [外部程式碼]  節點。|
 
@@ -174,5 +157,7 @@ ms.lasthandoff: 09/06/2017
 </div>
   
 ## <a name="see-also"></a>另請參閱  
- [[記憶體使用量](../profiling/memory-usage.md) [CPU 使用量](../profiling/cpu-usage.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)
-
+ [記憶體使用量](../profiling/memory-usage.md)  
+ [CPU 使用量](../profiling/cpu-usage.md)  
+ [Visual Studio 中的分析](../profiling/index.md)  
+ [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

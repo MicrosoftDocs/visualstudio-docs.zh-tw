@@ -1,11 +1,10 @@
 ---
-title: "Visual Studio 中的 Python 選項 | Microsoft Docs\""
+title: "Visual Studio 中的 Python 選項 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
@@ -14,19 +13,18 @@ f1_keywords:
 - VS.ToolsOptionsPages.Python_Tools
 - VS.ToolsOptionsPages.Python_Tools.General
 - VS.ToolsOptionsPages.Python_Tools.Debugging
+- VS.ToolsOptionsPages.Python_Tools.Diagnostics
 - VS.ToolsOptionsPages.Python_Tools.Interactive_Windows
 - VS.ToolsOptionsPages.Text_Editor.Python.Advanced
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 24293c3362249f2afcbcbb4b0266a478eaa1c9ab
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a71d076e85e1e7ae070014e83186c0011ca9e58f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-for-python-in-visual-studio"></a>Visual Studio 中 Python 的選項
 
 若要檢視 Python 選項，請使用 [工具] > [選項] 功能表命令，並確定選取 [顯示所有設定]，然後巡覽至 [Python 工具]：
@@ -39,6 +37,7 @@ ms.lasthandoff: 07/18/2017
 
 - [一般選項](#general-options)
 - [偵錯選項](#debugging-options)
+- [診斷選項](#diagnostics-options)
 - [互動式視窗選項](#interactive-windows-options)
 - [進階 Python 編輯器選項](#advanced-python-editor-options)
 
@@ -70,6 +69,17 @@ ms.lasthandoff: 07/18/2017
 | 啟用 Python 標準程式庫的偵錯 | Off | 可在偵錯時逐步執行標準程式庫原始程式碼，但會增加啟動偵錯工具所花費的時間。|
 
 ![Python 選項對話方塊、偵錯索引標籤](media/options-debugging.png)
+
+
+## <a name="diagnostics-options"></a>診斷選項
+
+| 選項 | 預設 | 說明 |
+| --- | --- | --- |
+| 包括分析記錄檔 | 開啟 | 使用按鈕將診斷儲存到檔案，或將它們複製到剪貼簿時，包含與已安裝 Python 環境分析相關的詳細記錄檔。 此選項可能會大幅增加所產生檔案的大小，但通常是診斷 IntelliSense 問題時所需的項目。 |
+| 將診斷儲存到檔案 (按鈕) | N/A | 提示輸入檔案名稱，然後將記錄檔儲存到文字檔。 |
+| 將診斷複製到剪貼簿 (按鈕) | N/A | 將完整的記錄檔放到剪貼簿；這項作業可能需要一些時間，視記錄檔的大小而定。 |
+
+![Python 選項對話方塊、診斷索引標籤](media/options-diagnostics.png)
 
 ## <a name="interactive-windows-options"></a>互動式視窗選項
 

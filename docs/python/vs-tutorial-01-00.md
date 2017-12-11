@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 33b93cb7-d826-4206-894a-fcfab32e7e76
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e37421ea74b1bfa2d8dc5dbb53eb5a981f7e62ca
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.openlocfilehash: d98688251cb7ea2d1336da0b0afc47a2b86fc03d
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安裝 Python 支援
 

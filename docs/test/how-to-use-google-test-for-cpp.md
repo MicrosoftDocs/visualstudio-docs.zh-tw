@@ -11,16 +11,16 @@ ms.assetid: a4868fae-fd6d-4b98-a85f-f23b0dd2fca5
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 917b0f0bc65ba4b0306a8bec12d7fd98ee540e34
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 4a67fa6e2a9f317643fe63138a4212676606a64d
+ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 在 **Visual Studio 2017 15.5 版**和更新版本中，Google Test 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 若要確認已安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 Google Test：
 
-![安裝 Google Test](media/cpp-gtest-install.png "安裝 C++ 的 Google Test")
+![安裝 Google Test](media/cpp-google-component.png "安裝 C++ 的 Google Test")
 
 ## <a name="add-a-google-test-project-to-the-solution"></a>將 Google Test 專案新增至方案
 1. 在**方案總管**中，以滑鼠右鍵按一下方案節點，然後選擇 [新增] | [新增專案]。 

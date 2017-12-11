@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: hero-article
-ms.assetid: 33f4f6fb-0ae4-4234-9df2-531f2d3af17f
 caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 652d69ed30c101e7ea8d9b85d9b71e597975d555
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c88c90fcc150187bd10e3100cd703522f86bc191
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="working-with-python-in-visual-studio"></a>在 Visual Studio 中使用 Python
 

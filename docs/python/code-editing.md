@@ -8,16 +8,15 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 03effe56-d6f6-461d-9005-e43c15bf537c
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 134442008dccbeac12dd328ed3b01c2b3a1a2e8c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 99859fc5b9e48078b037f6d68ad3d3847658a1d0
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="editing-python-code"></a>編輯 Python 程式碼
 
