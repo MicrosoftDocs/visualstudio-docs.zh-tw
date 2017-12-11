@@ -1,111 +1,111 @@
 ---
 title: "如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 52dcee2b-f178-4a76-bddc-e36c50bfcb78
-caps.latest.revision: 37
-caps.handback.revision: 37
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
+caps.latest.revision: "37"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 17a5d01ed0ceb139362c28168d430f19ea0fef55
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
-# 如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-本主題說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動獨立 \(用戶端\) 應用程式，以及使用取樣方法收集效能統計資料。  
+# <a name="how-to-launch-a-stand-alone-application-with-the-profiler-and-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列以程式碼剖析工具啟動獨立應用程式並收集應用程式統計資料
+本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具命令列工具啟動獨立的 (用戶端) 應用程式，並使用取樣方法收集效能統計資料。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 中的增強安全性功能，需要在 Visual Studio 分析工具收集這些平台資料的方式上進行重大變更。  Windows 市集應用程式也需要新的收集技術。  請參閱 [剖析 Windows 8 和 Windows Server 2012 應用程式](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
 >   
->  有命令列程式碼剖析工具的特定程序才可加入階層互動資料至程式碼剖析。  請參閱 [收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)。  
+>  若要將階層互動資料加入至程式碼剖析回合中，則需要使用命令列程式碼剖析工具的特定程序。 請參閱[收集階層互動資料](../profiling/adding-tier-interaction-data-from-the-command-line.md)  
   
- 若要使用分析工具命令列工具，您必須將路徑加入至 \[命令提示字元\] 視窗的 PATH 環境變數，或將它加入至命令本身。  您可以在安裝有 Visual Studio 的電腦上，使用 Visual Studio 命令視窗執行程式碼剖析工具。  
+ 若要使用程式碼剖析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 您可以從 Visual Studio 命令視窗，在已安裝 Visual Studio 的電腦上執行程式碼剖析工具。  
   
-1.  如果您在安裝有 Visual Studio 的電腦上執行程式碼剖析工具， Visual Studio 命令視窗會設定正確的路徑。  在 \[**工具**\] 功能表上，選擇 \[**對命令提示字元**\]。  
+1.  如果您是從已安裝 Visual Studio 的電腦上執行程式碼剖析工具，Visual Studio 命令視窗會設定正確的路徑。 在 [工具] 功能表上，選擇 [VS 命令提示字元]。  
   
 > [!NOTE]
->  程式碼剖析工具的命令列工具位於安裝目錄的 \\Team Tools\\Performance Tools 子目錄中。  在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。  若要使用分析工具命令列工具，您必須將路徑加入至 \[命令提示字元\] 視窗的 PATH 環境變數，或將它加入至命令本身。  如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
+>  程式碼剖析工具的命令列工具位於 Visual Studio 安裝目錄的 \Team Tools\Performance Tools 子目錄中。 在 64 位元電腦上，64 位元和 32 位元版本的工具都可以使用。 若要使用程式碼剖析工具命令列工具，必須將路徑加入至命令提示字元視窗的 PATH 環境變數，或將它加入至命令本身。 如需詳細資訊，請參閱[指定命令列工具的路徑](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)。  
   
-## 以程式碼剖析工具啟動應用程式  
- 若要使用分析工具來啟動目標應用程式，請使用 VSPerfCmd **\/start** 和 **\/launch** 選項來初始化分析工具並啟動應用程式。  在單一命令列上，可指定 **\/start** 和 **\/launch** 以及其個別選項。  
+## <a name="starting-the-application-with-the-profiler"></a>使用程式碼剖析工具啟動應用程式  
+ 若要使用程式碼剖析工具啟動目標應用程式，您可以使用 VSPerfCmd **/start** 和 **/launch** 選項初始化程式碼剖析工具，並啟動應用程式。 您可以在單一命令列上指定 **/start** 和 **/launch** 及其個別選項。  
   
- 您也可以加入 **\/globaloff** 選項，在目標應用程式啟動時暫停資料收集。  接著使用 **\/globalon** 開始收集資料。  
+ 您也可以加入 **/globaloff** 選項以在目標應用程式啟動時暫停資料收集。 然後使用 **/globalon** 開始收集資料。  
   
-#### 若要使用程式碼剖析工具啟動應用程式  
+#### <a name="to-start-an-application-by-using-the-profiler"></a>使用程式碼剖析工具啟動應用程式  
   
-1.  開啟 \[命令提示字元\] 視窗。  
+1.  開啟 [命令提示字元] 視窗。  
   
-2.  啟動程式碼剖析工具。  型別：  
+2.  啟動分析工具。 類型：  
   
-     **VSPerfCmd \/start:sample \/output:** `OutputFile` \[`Options`\]  
+     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]  
   
-    -   [\/start](../profiling/start.md) **:sample** 選項會初始化程式碼剖析工具。  
+    -   [/start](../profiling/start.md)**:sample** 選項會初始化程式碼剖析工具。  
   
-    -   [\/output](../profiling/output.md) **:** `OutputFile` 選項必須搭配 **\/start** 使用。  `OutputFile` 指定程式碼剖析資料 \(.vsp\) 檔案的名稱和位置。  
+    -   [/output](../profiling/output.md)**:**`OutputFile` 選項必須搭配 **/start** 使用。 `OutputFile` 指定程式碼剖析資料 (.vsp) 檔案的名稱和位置。  
   
-     下列任何選項都可以搭配 **\/start:sample** 選項使用。  
+     您可以使用下列任一選項搭配 **/start:sample** 選項。  
   
-    |選項|描述|  
-    |--------|--------|  
-    |[\/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
-    |[\/automark](../profiling/automark.md) **:** `Interval`|僅能與 **\/wincounter** 搭配使用。  指定 Windows 效能計數器收集事件之間的毫秒數。  預設為 500 毫秒。|  
-    |[\/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 \(ETW\) 事件。  ETW 事件是在不同的 \(.etl\) 檔案中收集的。|  
+    |選項|說明|  
+    |------------|-----------------|  
+    |[/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`|指定程式碼剖析期間要收集的 Windows 效能計數器。|  
+    |[/automark](../profiling/automark.md) **:** `Interval`|只能搭配 **/wincounter** 使用。 指定 Windows 效能計數器收集事件間隔的毫秒數。 預設值為 500 毫秒。|  
+    |[/events](../profiling/events-vsperfcmd.md) **:** `Config`|指定程式碼剖析期間要收集的 Windows 事件追蹤 (ETW) 事件。 ETW 事件會收集至個別的 (.etl) 檔案。|  
   
-3.  啟動目標應用程式。  輸入：**VSPerfCmd \/launch:**`appName` \[`Options`\] \[`Sample Event`\]  
+3.  啟動目標應用程式。 輸入：**VSPerfCmd /launch:**`appName` [`Options`] [`Sample Event`]  
   
-     您可以使用下列其中一個或多個選項搭配 **\/launch** 選項。  
-  
-    |選項|描述|  
-    |--------|--------|  
-    |[\/args](../profiling/args.md) **:** `Arguments`|指定字串，其中包含要傳遞至目標應用程式的命令列引數。|  
-    |[\/console](../profiling/console.md)|在另一個視窗中啟動目標命令列應用程式。|  
-  
-     根據預設，效能資料為每 10,000,000 個未暫止處理器時脈循環取樣一次。  在 1GHz 的處理器上，大約每 10 秒鐘一次。  您可以指定下列其中一項，變更時脈循環間隔或指定不同的取樣事件。  
-  
-    |取樣事件|描述|  
-    |----------|--------|  
-    |[\/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 所指定的未暫止時脈循環數目。|  
-    |[\/pf](../profiling/pf.md)\[**:**`Interval`\]|將取樣事件變更為分頁錯誤。  如果已指定 `Interval`，則會設定樣本之間的分頁錯誤數目。  預設值為 10。|  
-    |[\/sys](../profiling/sys-vsperfcmd.md)\[**:**`Interval`\]|將取樣事件變更為從處理序對作業系統核心的系統呼叫 \(syscall\)。  如果已指定 `Interval`，則會設定樣本之間的呼叫數目。  預設值為 10。|  
-    |[\/counter](../profiling/counter.md) **:** `Config`|將取樣事件和間隔變更為 `Config` 中指定的處理器效能計數器和間隔。|  
-  
-## 控制資料收集  
- 當目標應用程式正在執行時，您可以使用 **VSPerfCmd.exe** 選項，啟動及停止將資料寫入程式碼剖析工具資料檔案，以控制資料收集。  資料收集控制可讓您收集程式執行中特定組件的資料，例如應用程式的開始與結束。  
-  
-#### 若要啟動和停止資料收集  
-  
--   下列選項配對會啟動和停止資料收集。  在不同的命令列上指定每個選項。  您可以多次開啟或關閉資料收集。  
+     您可以使用下列一或多個選項搭配 **/launch** 選項。  
   
     |選項|描述|  
-    |--------|--------|  
-    |[\/globalon \/globaloff](../profiling/globalon-and-globaloff.md)|啟動 \(**\/globalon**\) 或停止 \(**\/globaloff**\) 所有處理序的資料收集。|  
-    |[\/processon](../profiling/processon-and-processoff.md) **:** `PID`  [\/processoff](../profiling/processon-and-processoff.md) **:** `PID`|啟動 \(**\/processon**\) 或停止 \(**\/processoff**\) 對處理序 ID \(`PID`\) 所指定的處理序進行資料收集。|  
-    |[\/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [\/detach](../profiling/detach.md)\[**:**{`PID`&#124;`ProcName`}\]|**\/attach** 會開始針對 `PID` 或處理序名稱 \(ProcName\) 指定的處理序收集資料。  **\/detach** 會停止對指定的處理序收集資料，如果沒有指定特定的處理序，則停止所有處理序的資料收集。|  
+    |------------|-----------------|  
+    |[/args](../profiling/args.md) **:** `Arguments`|指定包含要傳遞至目標應用程式的命令列引數的字串。|  
+    |[/console](../profiling/console.md)|在個別的視窗中啟動目標命令列應用程式。|  
   
-## 結束程式碼剖析工作階段  
- 若要結束程式碼剖析工作階段，分析工具不得附加至任何已進行程式碼剖析的處理序，而且分析工具必須明確地關閉。  您可以藉由關閉應用程式或呼叫 **VSPerfCmd \/detach** 選項，從已使用取樣方法進行程式碼剖析的應用程式中斷連結分析工具。  接著呼叫 **VSPerfCmd \/shutdown** 選項，關閉程式碼剖析工具並關閉程式碼剖析資料檔案。  **VSPerfClrEnv \/off** 命令會清除程式碼剖析環境變數。  
+     根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 在 1GHz 處理器上，這大約是每 10 秒一次。 您可以指定下列任一選項來變更時脈週期間隔，或指定不同的取樣事件。  
   
-#### 若要結束程式碼剖析工作階段  
+    |取樣事件|說明|  
+    |------------------|-----------------|  
+    |[/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|  
+    |[/pf](../profiling/pf.md)[**:**`Interval`]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|  
+    |[/sys](../profiling/sys-vsperfcmd.md)[**:**`Interval`]|將取樣事件從處理器變更為作業系統核心的系統呼叫 (syscalls)。 如果指定 `Interval`，請設定樣本間的呼叫數。 預設值為 10。|  
+    |[/counter](../profiling/counter.md) **:** `Config`|將取樣事件與間隔變更為 `Config` 中指定的處理器效能計數器與間隔。|  
   
-1.  請執行下列其中一個步驟，從目標應用程式中斷連結程式碼剖析工具：  
+## <a name="controlling-data-collection"></a>控制資料收集  
+ 當目標應用程式執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至程式碼剖析資料檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
+  
+#### <a name="to-start-and-stop-data-collection"></a>開始和停止資料收集  
+  
+-   下列成對的選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
+  
+    |選項|說明|  
+    |------------|-----------------|  
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID`  [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
+    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** 會開始為 `PID` 或處理序名稱 (ProcName) 指定的處理序收集資料。 **/detach** 會停止指定的處理序或所有處理序 (如果未指定特定處理序) 的資料收集。|  
+  
+## <a name="ending-the-profiling-session"></a>結束程式碼剖析工作階段  
+ 若要結束程式碼剖析工作階段，程式碼剖析工具不得附加至任何分析的處理序，而且必須明確地關閉程式碼剖析工具。 您可以關閉應用程式或呼叫 **VSPerfCmd /detach** 選項，以從使用取樣方法剖析的應用程式中斷連結程式碼剖析工具。 接著呼叫 **VSPerfCmd /shutdown** 選項以停止程式碼剖析工具，並關閉程式碼剖析資料檔案。 **VSPerfClrEnv /off** 命令會清除程式碼剖析環境變數。  
+  
+#### <a name="to-end-a-profiling-session"></a>結束程式碼剖析工作階段  
+  
+1.  執行下列其中一個步驟，以從目標應用程式中斷連結程式碼剖析工具：  
   
     -   關閉目標應用程式。  
   
-         \-或\-  
+         -或-  
   
-    -   輸入 **VSPerfCmd \/detach**  
+    -   輸入 **VSPerfCmd /detach**  
   
-2.  關閉程式碼剖析工具。  型別：  
+2.  關閉程式碼剖析工具。 類型：  
   
-     **VSPerfCmd**  [\/shutdown](../profiling/shutdown.md)  
+     **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -24,33 +23,17 @@ helpviewer_keywords:
 - Options dialog box, Web settings
 - Internet Explorer, setting options
 ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: e2852ef4eb48247a97fe513efc7cdecb89ec619a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2b91f59e6fd7dbf688f8d1cab8d95e9329c879b6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
-# 選項對話方塊、環境、Web 瀏覽器
-<a id="web-browser-environment-options-dialog-box" class="xliff"></a>
+# <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。  
   
 > [!NOTE]
@@ -59,29 +42,28 @@ ms.lasthandoff: 05/24/2017
 > [!IMPORTANT]
 >  從 Web 開啟特定檔案或元件可能會在您的電腦上執行程式碼。  
   
- 首頁  
+## <a name="home-page"></a>首頁
  設定當您開啟 IDE 網頁瀏覽器時所顯示的網頁。  
   
- 搜尋頁面  
+## <a name="search-page"></a>搜尋頁面
  可讓您指定內部網頁瀏覽器的搜尋網頁。 這個位置可能不同於在整合式開發環境 (IDE) 外部啟始之 Internet Explorer 執行個體所使用的搜尋網頁。  
   
- 檢視來源在  
+## <a name="view-source-in"></a>在其中檢視原始檔
  設定當您在網頁上從內部網頁瀏覽器選擇 [檢視原始檔] 時，用來開啟網頁的編輯器。  
   
--   **原始檔編輯器**：選取即可在[撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)時檢視原始檔。  
+-   **原始檔編輯器**：選取即可在[編輯器](../../ide/writing-code-in-the-code-and-text-editor.md)中檢視原始檔。  
   
 -   **HTML 編輯器**：選取即可在 [HTML 設計工具](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)中檢視原始檔。 使用此選項可在下列兩種檢視之一編輯網頁：設計檢視或標準文字原始檔檢視。  
   
 -   **外部編輯器**：選取即可在其他編輯器中檢視原始檔。 請指定您選擇的任何編輯器路徑，例如 Notepad.exe。  
   
- Internet Explorer 選項  
- 按一下即可在 [網際網路內容] 對話方塊中變更 Internet Explorer 的選項。 在此對話方塊中所做的變更，會同時影響內部網頁瀏覽器，以及在 Visual Studio IDE 外部起始的 Internet Explorer 執行個體 (例如透過 [開始] 功能表)。  
+## <a name="internet-explorer-options"></a>Internet Explorer 選項  
+按一下即可在 [網際網路內容] 對話方塊中變更 Internet Explorer 的選項。 在此對話方塊中所做的變更，會同時影響內部網頁瀏覽器，以及在 Visual Studio IDE 外部起始的 Internet Explorer 執行個體 (例如透過 [開始] 功能表)。  
   
 > [!NOTE]
->  使用 [瀏覽方式] 對話方塊，以不同的外部網頁瀏覽器取代 Visual Studio 的內部網頁瀏覽器 (也就是某個版本的 Internet Explorer)。  
+>  使用 [瀏覽方式] 對話方塊，將 Visual Studio 內部 Web 瀏覽器取代為您所選擇的瀏覽器。 您可以透過以滑鼠右鍵按一下專案中的 HTML 檔案 (舉例來說)，或從專案中 HTML 檔案的內容功能表，來存取 [瀏覽方式] 對話方塊。
   
-## 另請參閱
-<a id="see-also" class="xliff"></a>  
+## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML 設計工具](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

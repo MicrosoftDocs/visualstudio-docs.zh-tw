@@ -1,46 +1,47 @@
 ---
-title: "自訂專案範本和項目範本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "自訂 Visual Studio 範本"
-  - "Visual Studio 範本, 自訂"
+title: "自訂專案和項目範本 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- customizing Visual Studio templates
+- Visual Studio templates, customizing
 ms.assetid: d7344a0a-d93f-4b69-bbc4-0c2d67ef272b
-caps.latest.revision: 10
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 10
+caps.latest.revision: "10"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 3170c28527aa4ecfe335a946624ad95489b75280
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 自訂專案範本和項目範本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-在建立專案範本和項目範本之後，您仍然可以進一步自訂它們以符合您的需求。  
+# <a name="customizing-project-and-item-templates"></a>自訂專案範本和項目範本
+建立專案和項目範本之後，您仍然可以對其進一步自訂，以符合您的需求。  
   
  例如，您可以進行下列工作：  
   
--   修改和匯出自訂範本以現有的範本。  
+-   修改現有範本，並將其匯出為自訂範本。  
   
-     如需詳細資訊，請參閱 [如何：更新現有的範本](../ide/how-to-update-existing-templates.md)。  
+     如需詳細資訊，請參閱[如何：更新現有的範本](../ide/how-to-update-existing-templates.md)。  
   
--   自訂參數傳遞至範本，來取代現有的值。  
+-   將自訂參數傳遞給範本，以取代現有值。  
   
-     如需詳細資訊，請參閱 [如何：替代樣板中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
+     如需詳細資訊，請參閱[如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)。  
   
--   自訂精靈，建立專案範本。  
+-   自訂從範本建立專案的精靈。  
   
-     如需詳細資訊，請參閱 [如何：搭配專案範本使用精靈](../extensibility/how-to-use-wizards-with-project-templates.md)。  
+     如需詳細資訊，請參閱[如何：搭配使用精靈與專案範本](../extensibility/how-to-use-wizards-with-project-templates.md)。  
   
-## 相關章節  
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)  
+## <a name="related-sections"></a>相關章節  
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)  
   
- [如何：疑難排解範本](../ide/how-to-troubleshoot-templates.md)  
+ [如何：針對範本進行疑難排解](../ide/how-to-troubleshoot-templates.md)  
   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)  
   

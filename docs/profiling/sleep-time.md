@@ -1,28 +1,27 @@
 ---
 title: "睡眠時間 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.sleep"
-helpviewer_keywords: 
-  - "並行視覺化檢視, 睡眠時間"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.sleep
+helpviewer_keywords: Concurrency Visualizer, Sleep Time
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
-caps.latest.revision: 6
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 52ce4aa37b607072a0cf91c4baf0dbe6b077ac5e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 睡眠時間
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-時間表中的這些區段是與分類為睡眠的封鎖時間相關聯。  睡眠類別表示執行緒自動放棄其邏輯核心而且不執行任何作業。  在這段時間，執行緒在「並行視覺化檢視」計為睡眠的 API 中被封鎖。  `Sleep()` 和 `SwitchToThread()` 等 API 都屬於這個群組。  
+# <a name="sleep-time"></a>睡眠時間
+時間軸中的這些區段，會和分類為睡眠時間的封鎖時間相關聯。 睡眠分類表示執行緒自動放棄其邏輯核心，而且不執行任何工作。 在這段期間內，會在並行視覺化檢視當作睡眠分類計數的 API 中封鎖執行緒。 `Sleep()` 和 `SwitchToThread()` 等 API 即屬於這個群組。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

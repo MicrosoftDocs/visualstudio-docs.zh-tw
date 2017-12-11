@@ -1,61 +1,62 @@
 ---
 title: "如何：管理編輯器視窗 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼編輯器, 視窗管理"
-  - "編輯器視窗"
-  - "編輯器, 視窗管理"
-  - "視窗, 管理編輯器視窗"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- editor windows
+- windows, managing editor windows
+- editors, windows management
+- Code Editor, windows management
 ms.assetid: 340143d4-8a71-490d-823e-162b276f4c6d
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：管理編輯器視窗
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以在數個位置一次執行程式碼。  若要這麼做，您可以分割編輯器視窗，或開啟編輯器視窗的數個執行個體。  
+# <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
+您可以同時在數個位置處理程式碼。 做法是分割編輯器視窗，或開啟數個編輯器視窗執行個體。  
   
 > [!NOTE]
->  並非所有的編輯器視窗都支援多個執行個體。  
+>  並非所有編輯器視窗都支援多個執行個體。  
   
-## 分割編輯器視窗  
- 編輯器視窗的執行個體能夠分割為兩個不同的檢視，以便更輕鬆的編輯。  
+## <a name="splitting-an-editor-window"></a>分割編輯器視窗  
+ 編輯器視窗執行個體可以分割為兩個不同的檢視，以方便進行編輯。  
   
-#### 若要分割窗格  
+#### <a name="to-split-a-pane"></a>分割窗格  
   
-1.  在編輯器視窗內按一下以取得焦點。  
+1.  按一下要成為焦點的編輯器視窗。  
   
-2.  在 \[**視窗**\] 功能表中選取 \[**分隔**\]。  
+2.  從 [視窗] 功能表中，選取 [分割]。  
   
-     分隔列會將編輯區分割成兩個窗格。  您可以獨立捲動這些窗格，以便同時檢視並編輯現用文件的不同部分。  在其中一個窗格所做的任何改變都將反映在另一個窗格內。  
+     編輯區域分成兩個以分隔列分隔的窗格。 您可以分別捲動這些窗格，以同時檢視和編輯使用中文件的不同部分。 對某個窗格進行的任何變更都會反映在另一個窗格。  
   
     > [!TIP]
-    >  若要讓其中一個窗格比另一個大，請將分隔列往上或往下拖曳。  
+    >  若要讓某個窗格大於另一個窗格，請向上或向下拖曳分隔列。  
   
-#### 回到單一窗格的檢視  
+#### <a name="to-return-to-single-pane-view"></a>返回單一窗格檢視  
   
--   從 \[**視窗**\] 功能表中選取 \[**移除分割視窗**\]。  
+-   從 [視窗] 功能表中，選取 [移除分割視窗]。  
   
-## 建立新視窗  
- 您也可以建立編輯器視窗的多個執行個體。  這項功能允許您在編輯器一個以上的執行個體內開啟長文件，因此您可以在完整大小的不同編輯器視窗中，同時檢視並編輯不同的區段。  
+## <a name="creating-new-windows"></a>建立新視窗  
+ 您也可以建立多個編輯器視窗執行個體。 這項功能可讓您在多個編輯器執行個體中開啟冗長的文件，以同時在獨立且完整大小的編輯器視窗中檢視和編輯不同區段。  
   
-#### 若要建立新視窗  
+#### <a name="to-create-a-new-window"></a>建立新的視窗  
   
--   按一下 \[**視窗**\] 功能表中的 \[**開新視窗**\]。  
+-   在 [視窗] 功能表上，按一下 [開新視窗]。  
   
-     加入新的索引標籤執行個體的編輯器\]。  
+     會新增編輯器的新索引標籤式執行個體。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [自訂編輯器](../ide/customizing-the-editor.md)   
  [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)   
  [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

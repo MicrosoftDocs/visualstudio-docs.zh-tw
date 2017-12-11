@@ -1,87 +1,87 @@
 ---
 title: "尋找命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "edit.find"
-helpviewer_keywords: 
-  - "Edit.Find 命令"
-  - "尋找命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: edit.find
+helpviewer_keywords:
+- Find command
+- Edit.Find command
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 93ec728b6e7ab3a197382bbd66cb34906d248747
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 尋找命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-使用可用的選項子集搜尋檔案**檔案中尋找** 索引標籤上的 **尋找及取代**視窗。  
+# <a name="find-command"></a>尋找命令
+在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]   
 [/markall] [/options] [/reset] [/up] [/wild | /regex] [/word]  
 ```  
   
-## 引數  
+## <a name="arguments"></a>引數  
  `findwhat`  
- 必要項。  要比對的文字。  
+ 必要項。 要比對的文字。  
   
-## 參數  
- \/case、\/c 或 \/大小寫  
- 選擇項。  只有當大小寫字元與 `findwhat` 引數中所指定的大小寫字元完全相符時，才算符合。  
+## <a name="switches"></a>參數  
+ /case 或 /c  
+ 選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。  
   
- \/doc、\/d 或 \/文件  
- 選擇項。  只搜尋目前的文件。  指定可用的搜尋範圍 \(`/doc`、`/proc`、`/open` 或 `/sel`\) 其中之一。  
+ /doc 或 /d  
+ 選擇項。 僅搜尋目前的文件。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。  
   
- \/markall、\/m 或 \/全部標記  
- 選擇項。  在目前文件中含有搜尋相符的每一行上放置圖形。  
+ /markall 或 /m  
+ 選擇項。 將圖形放在每一行，每行包含一個目前文件內的搜尋相符項目。  
   
- \/open、\/o 或 \/開啟  
- 選擇項。  搜尋所有開啟的文件，就如同它們是一份文件一樣。  指定可用的搜尋範圍 \(`/doc`、`/proc`、`/open` 或 `/sel`\) 其中之一。  
+ /open 或 /o  
+ 選擇項。 將所有開啟的文件當成一份文件搜尋。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。  
   
- \/options、\/t 或 \/選項  
- 選擇項。  顯示目前的尋找選項設定清單，並且不執行搜尋。  
+ /options 或 /t  
+ 選擇項。 顯示目前的尋找選項設定清單，但不會執行搜尋。  
   
- \/proc、\/p 或 \/程序  
- 選擇項。  只搜尋目前的程序。  指定可用的搜尋範圍 \(`/doc`、`/proc`、`/open` 或 `/sel`\) 其中之一。  
+ /proc 或 /p  
+ 選擇項。 只搜尋目前的程序。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。  
   
- \/reset、\/e 或 \/重設  
- 選擇項。  將尋找選項恢復為預設值，並且不執行搜尋。  
+ /reset 或 /e  
+ 選擇項。 將尋找選項還原為預設值，但不會執行搜尋。  
   
- \/sel、\/s 或 \/選取  
- 選擇項。  只搜尋目前的選取範圍。  指定可用的搜尋範圍 \(`/doc`、`/proc`、`/open` 或 `/sel`\) 其中之一。  
+ /sel 或 /s  
+ 選擇項。 只搜尋目前的選取範圍。 只指定其中一個可用的搜尋範圍，`/doc`、`/proc`、`/open` 或 `/sel`。  
   
- \/up、\/u 或 \/上  
- 選擇項。  從目前在檔案中的位置向檔案的起始處進行搜尋。  根據預設值，搜尋從檔案中目前的位置，向檔案的結尾進行搜尋。  
+ /up 或 /u  
+ 選擇項。 從檔案目前的位置向檔案開頭處進行搜尋。 預設從檔案目前的位置開始向檔案結尾處進行搜尋。  
   
- \/regex 或 \/r  
- 選擇項。  在 `findwhat` 引數中使用預先定義的特殊字元，做為表示文字模式的標記法 \(而非表示文字字元\)。  如需規則運算式字元的完整清單，請參閱[規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)。  
+ /regex 或 /r  
+ 選擇項。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示文字模式，而不是常值字元模式。 如需規則運算式字元的完整清單，請參閱[規則運算式](../../ide/using-regular-expressions-in-visual-studio.md)。  
   
- \/wild、\/l 或 \/萬用  
- 選擇項。  在 `findwhat` 引數中使用預先定義的特殊字元，做為表示單一字元或字元序列的記號。  
+ /wild 或 /l  
+ 選擇項。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示字元或字元序列。  
   
- \/word、\/w 或 \/字  
- 選擇項。  只搜尋全字拼寫相符的字。  
+ /word 或 /w  
+ 選擇項。 僅搜尋全字拼寫。  
   
-## 範例  
- 這個範例在目前選取的程式碼區段中搜尋 "somestring" 字元組，同時也會區分大小寫。  
+## <a name="example"></a>範例  
+ 此範例會在目前選取的程式碼區段中，對 "somestring" 執行區分大小寫的搜尋。  
   
 ```  
 >Edit.Find somestring /sel /case  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [命令視窗](../../ide/reference/command-window.md)   
- [尋找\/命令方塊](../../ide/find-command-box.md)   
+ [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

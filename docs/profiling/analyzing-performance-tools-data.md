@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -17,31 +16,15 @@ helpviewer_keywords:
 - Profiling Tools,data views
 - Profiling Tools,reports
 ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
-caps.latest.revision: 41
+caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 669bc5894727c207691a7e37937f432d98fee8b1
-ms.openlocfilehash: f67e927ad2fdaa934027507441222af4bbde3394
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/30/2017
-
+ms.openlocfilehash: 439c3f5e433de41a0a6f4bcaf7ec0392ca16fa49
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="analyzing-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能報表可讓您檢視並分析應用程式效能問題。 本節提供可用來檢查效能資料的效能報告和檢視概觀。  
@@ -60,4 +43,6 @@ ms.lasthandoff: 06/30/2017
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [效能總管](../profiling/performance-explorer.md) [Visual Studio 中的分析](../profiling/index.md) [分析功能導覽](../profiling/profiling-feature-tour.md)
+ [效能總管](../profiling/performance-explorer.md)  
+ [Visual Studio 中的分析](../profiling/index.md)  
+ [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

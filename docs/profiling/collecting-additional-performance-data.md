@@ -1,29 +1,30 @@
 ---
 title: "收集其他效能資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 8c0ea5c6-74a4-4a23-89ca-8d589364079f
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f49d90cf2e1c80a23d132177c771ba78a84e6a87
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 收集其他效能資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-除了使用程式碼剖析方法收集的資料之外，[!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 程式碼剖析工具還可讓您記錄和檢視其他資料。  
+# <a name="collecting-additional-performance-data"></a>收集其他效能資料
+除了使用分析方法所收集的資料之外，[!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)] 分析工具還可讓您記錄和檢視其他資料。  
   
-## 一般工作  
+## <a name="common-tasks"></a>一般工作  
   
 |工作|相關內容|  
-|--------|----------|  
-|**收集應用程式中 ADO.NET 呼叫的效能資料**：加入應用程式對資料庫的同步呼叫相關資料。|-   [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|  
-|**收集 Windows 效能計數器資料**：將系統效能計數器當做程式碼剖析標記加入至程式碼剖析資料。  標記可用來篩選報告。|-   [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|  
-|**收集 Windows 事件追蹤 \(ETW\) 資料**：收集 Windows 事件追蹤 \(ETW\) 資料，以便記錄應用程式和系統事件以及程式碼剖析資料。|-   [如何：收集 Windows 事件追蹤 \(ETW\) 資料](../Topic/How%20to:%20Collect%20Event%20Tracing%20for%20Windows%20\(ETW\)%20Data.md)|
+|----------|---------------------|  
+|**收集應用程式中 ADO.NET 呼叫的效能資料。** 新增您應用程式對資料庫提出之同步呼叫的資料。|-   [收集階層互動資料](../profiling/collecting-tier-interaction-data.md)|  
+|**收集 Windows 效能計數器資料。** 將系統效能計數器當成分析標記新增至分析資料。 標記可以用來篩選報表。|-   [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)|  
+|**收集 Windows 事件追蹤資料。** 除了分析資料之外，還會收集 Windows 事件追蹤 (ETW) 資料來記錄應用程式和系統事件。|-   [如何：收集 Windows 事件追蹤 (ETW) 資料](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|

@@ -1,46 +1,20 @@
 ---
 redirect_url: /visualstudio/csharp-ide/refactoring-csharp
-title: "如何：還原 C# 重構程式碼片段 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- unsafe expansion
-- expansions, unsafe
-ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
-manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: a4721d8bbd5dd6ec29f555ee8d4848ef3660243f
-ms.openlocfilehash: 87ecb3149443bc90c2398b67158df35b193bcfe1
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cb4e45847008d99aa17b5ce3dde83da036a53dbb
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
+---
+title: "如何：還原 C# 重構程式碼片段 | Microsoft Docs" ms.custom: "" ms.date: "11/04/2016" ms.reviewer: "" ms.suite: "" ms.technology: 
+  - "vs-ide-general" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "不安全的擴充"
+  - "擴充，不安全" ms.assetid: 12114273-7f2f-43d0-abcb-2d4711a3a68d caps.latest.revision: 20 author: "gewarren" ms.author: "gewarren" manager: ghogen
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>如何：還原 C# 重構程式碼片段
 C# 重構作業需仰賴在下列目錄中找到的程式碼片段：  
   
- <安裝目錄>\Microsoft Visual Studio 14.0\VC#\Snippets\\<語言識別碼>\Refactoring  
+ <安裝目錄>\Microsoft Visual Studio 15.0\VC#\Snippets\\<語言識別碼>\Refactoring  
   
  如果這個重構目錄或此目錄中的任何檔案已被刪除或損毀，則 C# 重構作業可能無法在 IDE 中運作。 下列程序可協助您還原 C# 重構程式碼片段。  
   
@@ -64,11 +38,11 @@ C# 重構作業需仰賴在下列目錄中找到的程式碼片段：
   
 5.  找出目錄路徑如下的 [重構] 資料夾：  
   
-     <安裝目錄>\Microsoft Visual Studio 14.0\VC#\Snippets\\<語言識別碼>\Refactoring  
+     <安裝目錄>\Microsoft Visual Studio 15.0\VC#\Snippets\\<語言識別碼>\Refactoring  
   
      實際路徑類似於下列的預設安裝路徑：  
   
-     C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring。  
+     C:\Program Files\Microsoft Visual Studio 15.0\VC#\Snippets\1033\Refactoring。  
   
 6.  按一下 [程式碼片段目錄] 對話方塊中的 [開啟]，然後按一下程式碼片段管理員中的 [確定]。  
   

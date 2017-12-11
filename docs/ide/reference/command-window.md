@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.CommandWindow
+f1_keywords: VS.CommandWindow
 helpviewer_keywords:
 - IDE, Command window
 - Mark mode in Command window
@@ -17,30 +15,15 @@ helpviewer_keywords:
 - Command mode in Command window
 - IDE Command window
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
-caps.latest.revision: 20
-author: kempb
-ms.author: kempb
+caps.latest.revision: "20"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 5aedd2d660c1a3225cf1d2023864b099c0f080c3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。  
@@ -86,21 +69,9 @@ ms.lasthandoff: 05/13/2017
 ## <a name="the-equals--sign"></a>等號 (=)  
  用來輸入 `EvaluateStatement` 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。  
   
- 在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令] 視窗中使用指派運算子。 因此；例如，如果 `varA` 和 `varB` 變數的值不同，則命令  
+ 在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 您不能在 [命令] 視窗中使用指派運算子。 因此，比方說，如果 `varA` 和 `varB` 變數的值不同，則命令 `>Debug.EvaluateStatement(varA=varB)` 將傳回值 `False`。  
   
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- 會傳回值 `False`。  
-  
- 相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此；例如，命令  
-  
-```  
->Debug.EvaluateStatement(varA=varB)  
-```  
-  
- 會將 `varB` 變數的值指派給變數 `varA`。  
+ 相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此，舉例來說，`>Debug.EvaluateStatement(varA=varB)` 命令會將 `varB` 變數的值指派給變數 `varA`。  
   
 ## <a name="parameters-switches-and-values"></a>參數、切換參數和值  
  部分 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令具有必要和選擇性引數、切換參數和值。 處理這類命令時會套用特定規則。 以下是釐清術語的豐富命令範例。  
@@ -122,11 +93,11 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
     > [!NOTE]
     >  任何包含空格的命令、參數、切換參數或值的兩端都必須有雙引號。  
   
- 在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
+在命令列上，切換參數和參數的位置可以自由地互換，例外是 [Shell](../../ide/reference/shell-command.md) 命令，其切換參數和參數必須為特定順序。  
   
- 命令所支援的每個切換參數幾乎都會有兩種形式：簡短 (一個字元) 和完整形式。 多個簡短形式的切換參數可以合併成一個群組。 例如，`/p /g /m` 可以改成表示為 `/pgm`。  
+命令所支援的每個切換參數幾乎都會有兩種形式：簡短 (一個字元) 和完整形式。 多個簡短形式的切換參數可以合併成一個群組。 例如，`/p /g /m` 可以改成表示為 `/pgm`。  
   
- 如果將多個簡短形式的切換參數合併成一個群組，並指定值，則該值會套用至每個切換參數。 例如，`/pgm:123` 等同於 `/p:123 /g:123 /m:123`。 如果群組中的任何切換參數不接受值，就會發生錯誤。  
+如果將多個簡短形式的切換參數合併成一個群組，並指定值，則該值會套用至每個切換參數。 例如，`/pgm:123` 等同於 `/p:123 /g:123 /m:123`。 如果群組中的任何切換參數不接受值，就會發生錯誤。  
   
 ## <a name="escape-characters"></a>逸出字元  
  命令列中的插入號 (^) 字元表示緊接著的字元會解譯為常值字元，而不是控制字元。 這可用來在參數或參數的值中嵌入一般引號 (")、空格、前置斜線、插入號或任何其他常值字元，但參數名稱除外。 例如：  
@@ -134,7 +105,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ```  
 >Edit.Find ^^t /regex  
 ```  
-  
+
  無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。 這裡顯示的範例示範如何搜尋模式 "^t"。  
   
 ## <a name="use-quotes-for-path-names-with-spaces"></a>使用引號括住包含空格的路徑名稱  

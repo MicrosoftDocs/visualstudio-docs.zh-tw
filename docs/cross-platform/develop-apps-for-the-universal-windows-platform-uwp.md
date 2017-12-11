@@ -1,79 +1,57 @@
 ---
 title: "開發適用於通用 Windows 平台 (UWP) 的應用程式 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 10/24/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- tgt-pltfrm-cross-plat
+ms.technology: tgt-pltfrm-cross-plat
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-caps.latest.revision: 48
+caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
-manager: wpickett
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 74e8c8dcdeb0ae7796a89a2e1277404cbfd51f90
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+manager: ghogen
+ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
-透過通用 Windows 平台和單一 Windows 核心，您可以在從手機到桌上型電腦的任何 Windows 10 裝置上執行相同的應用程式。 您可以使用 Visual Studio 2015 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。  
+通用 Windows 平台和單一 Windows 核心可讓您在任何 Windows 10 裝置上執行相同的應用程式 (包括手機和桌上型電腦)。 您可以使用 Visual Studio 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。  
   
- ![通用 Windows 平台](~/cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
+ ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")  
   
- 在 Windows 10 手機、Windows 10 桌上型電腦或 Xbox 上執行您的應用程式。 全部使用相同的應用程式套件！ 有了 Windows 10 單一整合核心，一個應用程式套件可以在所有平台上執行。 數個平台都有擴充功能 SDK，可供您加入應用程式以利用平台專屬行為。 例如，手機的擴充功能 SDK 會處理在 Windows 手機上按下返回鍵的行為。 如果您在專案中參考擴充功能 SDK，只要加入執行階段檢查，就能測試該平台是否可以使用這個 SDK。 因此，您可以針對每一個平台使用相同的應用程式套件！  
+ 在 Windows 10 手機、Windows 10 桌上型電腦或 Xbox 上執行您的應用程式。 全部使用相同的應用程式套件！ 有了 Windows 10 單一整合核心，一個應用程式套件可以在所有平台上執行。 我們提供適用於多種平台的延伸模組 SDK，您可將其新增至應用程式以利用平台專屬行為。 例如，手機的擴充功能 SDK 會處理在 Windows 手機上按下返回鍵的行為。 如果您在專案中參考延伸模組 SDK，只要新增執行階段檢查，就能測試該平台是否可以使用這個 SDK。 因此，您可以針對每一個平台使用相同的應用程式套件！  
   
- **Windows Core 是什麼？**  
+ **Windows 核心是什麼？**  
   
- 這是第一次 Windows 在重整後擁有一個所有 Windows 10 平台通用的核心。 這個核心 (Core) 包含一個通用來源、一個通用 Windows 核心 (Kernel)、一個檔案 I/O 堆疊，還有一個應用程式模型。 針對 UI，只有一個 XAML UI 架構和一個 HTML UI 架構。 由於在不同的 Windows 10 裝置上執行應用程式變得很容易，因此您可以專注於建立絕佳的應用程式。  
+ 這是第一次 Windows 在重整後擁有一個所有 Windows 10 平台通用的核心。 這個核心 (Core) 包含一個通用來源、一個通用 Windows 核心 (Kernel)、一個檔案 I/O 堆疊，還有一個應用程式模型。 針對 UI，只有一個 XAML UI 架構和一個 HTML UI 架構。 既然應用程式能輕鬆地在不同的 Windows 10 裝置上執行，您就可以安心建立更棒的應用程式。  
   
  **通用 Windows 平台到底是什麼？**  
   
- 它不過是合約和版本的集合。 該集合可讓您設定要執行應用程式的目標。 您不會再以作業系統為目標。 現在您會將應用程式的目標設為一個或多個裝置系列。 如需詳細資訊，請參閱此 [平台指南](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx)。  
+通用 Windows 平台其實就是合約和版本的集合。 該集合可讓您設定要執行應用程式的目標。 現在，您再也不用鎖定一種作業系統目標，而可以將一或多個裝置系列設為目標。 如需詳細資訊，請參閱[通用 Windows 平台簡介](/windows/uwp/get-started/universal-application-platform-guide)。  
   
 ## <a name="requirements"></a>需求  
- 通用 Windows 應用程式開發工具隨附模擬器，可供您用來查看應用程式在不同裝置上的外觀。 如果您要使用這些模擬器，您需要在實體電腦上安裝這個軟體。 這部實體機器必須執行 Windows 8.1 (x64) Professional Edition (含) 以上版本，並具備支援用戶端 Hyper-V 和第二層位址轉譯 (SLAT) 的處理器。 如果在虛擬機器上安裝 Visual Studio，則無法使用模擬器。  
+ 通用 Windows 應用程式開發工具隨附模擬器，可供您查看應用程式在不同裝置上的外觀。 如果您要使用這些模擬器，您需要在實體電腦上安裝這個軟體。 這部實體機器必須執行 Windows 8.1 (x64) Professional Edition (含) 以上版本，並具備支援用戶端 Hyper-V 和第二層位址轉譯 (SLAT) 的處理器。 如果在虛擬機器上安裝 Visual Studio，則無法使用模擬器。  
   
  以下是您需要的軟體清單：  
   
--   [Windows 10](http://windows.microsoft.com/windows/downloads)  
+-   [Windows 10](http://windows.microsoft.com/windows/downloads)。 Visual Studio 2017 只支援在 Windows 10 上開發 UWP。 如需詳細資訊，請參閱 Visual Studio 的[平台目標](https://www.visualstudio.com/productinfo/vs2017-compatibility-vs)和[系統需求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)。   
   
--   [Visual Studio 2015](http://go.microsoft.com/fwlink/p/?LinkId=526725)。 請務必從選擇性功能清單中選取通用 Windows 應用程式開發工具。 如果沒有這些工具，您將無法建立通用應用程式。  
+-   [Visual Studio](https://www.visualstudio.com/downloads/)。 您也需要選用的通用 Windows 平台開發工作負載。  
+
+     ![UWP 工作負載](media/uwp_workload.png)
   
- 安裝這個軟體之後，您也需要 [啟用 Windows 10 裝置](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx) 進行開發。 (您不再需要取得每部 Windows 10 裝置的開發人員授權)。  
-  
- **Windows 8.1 和 Windows 7 支援**  
-  
- 如果您選擇在非 Windows 10 平台上，使用 Visual Studio 2015 開發通用 Windows 應用程式，其限制如下：  
-  
--   Windows 8.1：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您可以使用 Visual Studio 中的模擬器 (Emulator)，但無法使用模擬器 (Simulator)。  
-  
--   Windows 7：您無法在本機執行應用程式 (僅限在遠端 Windows 10 裝置上)。 您無法使用 Visual Studio 中的模擬器 (Emulator 或 Simulator)。  
-  
- 如果您的開發平台為 Windows 10，則只能使用 XAML 設計工具。  
-  
+安裝這個軟體之後，您需要啟用 Windows 10 裝置以進行開發。 請參閱[啟用您的裝置以用於開發](/windows/uwp/get-started/enable-your-device-for-development)。 您不再需要取得每部 Windows 10 裝置的開發人員授權。  
+    
 ## <a name="universal-windows-apps"></a>通用 Windows 應用程式  
- 從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以 [建立適用於 Windows 10 的通用 Windows 應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10)。 或觀賞 [此快速入門影片](http://channel9.msdn.com/Series/ConnectOn-Demand/229)。  
+從 C#、Visual Basic、C++ 或 JavaScript 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 請參閱[建立您的第一個應用程式](/windows/uwp/get-started/your-first-app)，或觀看 [Tools for Windows 10 Overview](http://channel9.msdn.com/Series/ConnectOn-Demand/229) (Windows 10 工具概觀) 影片。
   
- 若您現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式是以 Visual Studio 2015 RC 所建立，請 [移轉這些現有的應用程式](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) ，以使用最新版的通用 Windows 平台。  
+如果您已使用 Visual Studio 2015 建立現有的 Windows 市集 8.1 應用程式、Windows Phone 8.1 應用程式或通用 Windows 應用程式，則需要移轉這些應用程式，以使用最新版的通用 Windows 平台。 請參閱[從 Windows 執行階段 8 移至 UWP](/windows/uwp/porting/w8x-to-uwp-root)。
   
- 建立通用 Windows 應用程式之後，您必須 [封裝您的應用程式](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) ，以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。
+建立好您的通用 Windows 應用程式之後，您必須封裝應用程式以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。 請參閱[封裝應用程式](/windows/uwp/packaging/index)。
+
+## <a name="see-also"></a>請參閱
+[Visual Studio 中的跨平台行動裝置開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

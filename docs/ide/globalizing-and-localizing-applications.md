@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -16,30 +15,15 @@ helpviewer_keywords:
 - world-ready applications
 - international applications [Visual Studio]
 ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
-caps.latest.revision: 18
+caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3d32d11a430227800cb3ed53831a9565eb6adeb3
-ms.openlocfilehash: 409becfa400b7275da07fd8ac0035660f8b941eb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/30/2017
-
+ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
 如果您打算將應用程式散發給國際適用對象，您必須在設計和開發階段期間牢記下列幾項重點。 即使您不打算這麼做，這個簡單的前置工作，可讓您在未來版本的應用程式計劃有所變更時，更加事半功倍。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的內建服務可讓您使用 Visual Studio 的 Managed 開發功能，輕鬆開發單一應用程式，使其適應不同的地區設定。  
@@ -57,11 +41,11 @@ ms.lasthandoff: 05/30/2017
  提供建立支援多種文化特性之應用程式的相關頁面連結。  
   
 ## <a name="related-sections"></a>相關章節  
- [全球化您的應用程式 (使用 JavaScript 和 HTML 的 Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkId=258266)  
- 包含做法主題和指導方針，有助您針對以 JavaScript 和 HTML 建置的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式進行全球化和當地語系化作業。  
+ [全球化應用程式 (HTML)](http://go.microsoft.com/fwlink/?LinkId=258266)  
+ 包含「如何」主題和指導方針，有助您針對使用 HTML 所建置的 Windows 8.1 應用程式進行全球化和當地語系化作業。  
   
- [全球化您的應用程式 (使用 C#/VB/C++ 和 XAML 的 Windows 市集應用程式)](http://go.microsoft.com/fwlink/?LinkId=258267)  
- 包含做法主題和指導方針，有助您針對以 XAML 和 Visual C#、Visual Basic 或 Visual C++ 建置的 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式進行全球化和當地語系化作業。  
+ [全球化應用程式 (XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
+ 包含「如何」主題和指導方針，有助您針對使用 XAML 所建置的 Windows 8.1 應用程式進行全球化和當地語系化作業。  
   
  [開發世界性的應用程式的最佳做法](http://msdn.microsoft.com/Library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  提供針對國際適用對象進行程式設計的背景資訊。  

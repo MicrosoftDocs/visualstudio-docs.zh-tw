@@ -1,23 +1,27 @@
 ---
 title: "JavaScript 執行階段 Typedef、常數和列舉 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 1aa107ed-e144-4947-b5bb-90284a537174
-caps.latest.revision: 5
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: ad2f5a086062d6a4473a1befc83790d76056d19c
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# JavaScript 執行階段 Typedef、常數和列舉
-JavaScript Runtime \(JsRT\) typedef、常數及列舉支援將指令碼功能加入至 Windows 上執行的桌面和伺服器端應用程式。  
+# <a name="javascript-runtime-typedefs-constants-and-enumerations"></a>JavaScript 執行階段 Typedef、常數和列舉
+JavaScript Runtime (JsRT) typedef、常數及列舉支援將指令碼功能加入至 Windows 上執行的桌面和伺服器端應用程式。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  下列全域 typedef 支援 JsRT 裝載：  
   
 -   [JsBackgroundWorkItemCallback Typedef](../chakra-hosting/jsbackgroundworkitemcallback-typedef.md)  
@@ -60,13 +64,13 @@ JavaScript Runtime \(JsRT\) typedef、常數及列舉支援將指令碼功能加
   
  下列常數支援 JsRT 裝載：  
   
--   [JS\_INVALID\_PROPERTYID 常數](../chakra-hosting/js-invalid-propertyid-constant.md)  
+-   [JS_INVALID_PROPERTYID 常數](../chakra-hosting/js-invalid-propertyid-constant.md)  
   
--   [JS\_INVALID\_REFERENCE 常數](../chakra-hosting/js-invalid-reference-constant.md)  
+-   [JS_INVALID_REFERENCE 常數](../chakra-hosting/js-invalid-reference-constant.md)  
   
--   [JS\_INVALID\_RUNTIME\_HANDLE 常數](../chakra-hosting/js-invalid-runtime-handle-constant.md)  
+-   [JS_INVALID_RUNTIME_HANDLE 常數](../chakra-hosting/js-invalid-runtime-handle-constant.md)  
   
--   [JS\_SOURCE\_CONTEXT\_NONE 常數](../chakra-hosting/js-source-context-none-constant.md)  
+-   [JS_SOURCE_CONTEXT_NONE 常數](../chakra-hosting/js-source-context-none-constant.md)  
   
  下列列舉支援 JsRT 裝載：  
   
@@ -84,6 +88,6 @@ JavaScript Runtime \(JsRT\) typedef、常數及列舉支援將指令碼功能加
   
 -   [JsValueType 列舉](../chakra-hosting/jsvaluetype-enumeration.md)  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [裝載 JavaScript 執行階段](../chakra-hosting/hosting-the-javascript-runtime.md)   
  [JavaScript 執行階段裝載](../chakra-hosting/javascript-runtime-hosting.md)

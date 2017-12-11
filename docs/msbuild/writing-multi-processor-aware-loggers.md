@@ -1,99 +1,100 @@
 ---
 title: "撰寫能夠辨識多處理器的記錄器 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "記錄器, 多處理器"
-  - "msbuild, 辨識多處理器的記錄器"
-  - "多處理器的記錄器"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- msbuild, multi-proc aware loggers
+- multi-proc loggers
+- loggers, multi-proc
 ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: f11a3717e6096ac08a8201bc9b6fc81e1a197d0a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 撰寫能夠辨識多處理器的記錄器
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。  在單一處理器的環境中，事件、訊息、警告和錯誤會以可預期而且循序的方式到達記錄器。  但是，在多處理器環境中，來自於不同來源的事件可能會同時或不依順序到達。  為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  
+# <a name="writing-multi-processor-aware-loggers"></a>撰寫能夠辨識多處理器的記錄器
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 雖能夠使用多個處理器來大幅縮短專案建置時間，但同時也增加了建置事件記錄的複雜性。 在單一處理器環境中，事件、訊息、警告和錯誤是以可預測的循序方式傳入記錄器。 不過，在多處理器環境中，不同來源的事件可能會同時或不依順序傳入。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供了能夠辨識多處理器的記錄器以及新的記錄模型，可讓您建立自訂的「轉送記錄器」。  
   
-## 多處理器記錄的挑戰  
- 當您在多處理器或多核心系統中建置一個或多個專案時，所有專案的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 建置事件會同時產生。  記錄器可能會同時或不依順序收到大量的事件訊息。  由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 記錄器沒有處理這種情況的設計，這可能會使記錄器不勝負荷，導致建置時間拉長、記錄器輸出不正確，甚至中斷建置。  為解決這些問題，記錄器 \(從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始\) 可處理不依順序的事件，並將事件與其來源建立相互關聯。  
+## <a name="multi-processor-logging-challenges"></a>多處理器記錄挑戰  
+ 當您在多處理器或多核心系統中組建一或多個專案時，所有專案的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 組建事件會同時產生。 記錄器可能會同時或不依順序收到大量的事件訊息。 因為 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 記錄器不是專門處理這種情況的，所以記錄器可能不勝負荷，導致組建時間拉長、不正確記錄器輸出，甚至中斷組建。 為解決這些問題，記錄器 (從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始) 可處理不依順序的事件，並將事件與其來源建立相互關聯。  
   
- 您甚至可以建立自訂轉送記錄器，進一步提高記錄的效率。  自訂轉送記錄器的作用就如同篩選器，可讓您選擇在建置之前只要監視的事件。  使用自訂轉送記錄器之後，就不會有不想要的事件造成記錄器不勝負荷、充斥記錄或拖慢建置速度。  
+ 建立自訂轉送記錄器，甚至可以改善更多的記錄效率。 自訂轉送記錄器可讓您在組建之前只選擇您要監視的事件，以作為篩選。 當您使用自訂轉送記錄器時，不想要的事件不會讓記錄器不勝負荷、導致記錄雜亂，或讓組建時間變慢。  
   
-## 多處理器記錄模型  
+## <a name="multi-processor-logging-models"></a>多處理器記錄模型  
  為解決與多處理器相關的建置問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援兩種記錄模式，分別為中央和分散式。  
   
-### 中央記錄模型  
- 在中央記錄模型，MSBuild.exe 的單一執行個體會當做「中央節點」，而中央節點的子執行個體 \(稱為「次要節點」\) 會附加到中央節點，協助其執行建置工作。  
+### <a name="central-logging-model"></a>集中式記錄模型  
+ 在集中式記錄模型中，MSBuild.exe 的單一執行個體做為「中央節點」，中央節點的子執行個體 (「次要節點」) 則附加至中央節點，協助它執行組建工作。  
   
- ![中央記錄器模型](~/msbuild/media/centralnode.png "CentralNode")  
+ ![中央記錄器模型](../msbuild/media/centralnode.png "CentralNode")  
   
- 附加到中央節點的各種類型記錄器稱為「中央記錄器」。每種記錄器類型同時間只能有一個執行個體附加到中央節點。  
+ 附加至中央節點的各類記錄器稱為「中央記錄器」。 每個記錄器類型同時只能有一個執行個體附加到中央節點。  
   
- 當建置進行時，次要節點會將其建置事件傳送到中央節點。  中央節點會將本身的所有事件以及次要節點的事件傳送到一個或多個附加的中央記錄器。  記錄器接著會根據傳入的資料建立記錄檔。  
+ 組建時，次要節點會將其組建事件路由至中央節點。 中央節點則將其所有事件，以及次要節點的事件，路由至一或多個附加的中央記錄器。 然後，記錄器根據傳入的資料建立記錄檔。  
   
- 雖然中央記錄器只需要實作 <xref:Microsoft.Build.Framework.ILogger>，但建議您一起實作 <xref:Microsoft.Build.Framework.INodeLogger>，讓記錄器能夠以參與建置的節點數目初始化。  當引擎初始化記錄器時，會叫用 \(Invoke\) 下列 <xref:Microsoft.Build.Framework.ILogger.Initialize%2A> 方法多載。  
+ 雖然中央記錄器只需要實作 <xref:Microsoft.Build.Framework.ILogger>，但建議您一併實作 <xref:Microsoft.Build.Framework.INodeLogger>，以便中央記錄器使用參與組建的節點數目初始化。 引擎初始化記錄器時，<xref:Microsoft.Build.Framework.ILogger.Initialize%2A> 方法的下列多載會叫用。  
   
-```  
+```csharp
 public interface INodeLogger: ILogger  
 {  
     public void Initialize(IEventSource eventSource, int nodeCount);  
 }  
 ```  
   
- 任何已存在的 <xref:Microsoft.Build.Framework.ILogger> 記錄器都可以當做中央記錄器，並可附加到建置。  不過，中央記錄器若在撰寫時沒有明確加入多處理器記錄案例和不依順序事件的支援，可能會中斷建置或產生無意義的輸出。  
+ 任何預先存在的 <xref:Microsoft.Build.Framework.ILogger> 型記錄器都可當做中央記錄器，附加至組建。 不過，寫入中央記錄器但未明確支援多處理器記錄情況及失序事件，可能會中斷組建或產生無意義的輸出。  
   
-### 分散式記錄模型  
- 在中央記錄模型，傳入的訊息流量若太多，可能會使中央節點不勝負荷，例如，同時間有許多專案進行建置。  這可能會造成系統資源負擔並降低建置效能。  為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援分散式記錄模型。  
+### <a name="distributed-logging-model"></a>分散式記錄模型  
+ 在集中式記錄模型中，傳入訊息流量過多可能會造成中央節點不勝負荷，例如，同時組建許多專案時。 這會造成系統資源壓力並降低組建效能。 為解決這個問題，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 支援分散式記錄模型。  
   
- ![分散式記錄模型](~/msbuild/media/distnode.png "DistNode")  
+ ![分散式記錄模型](../msbuild/media/distnode.png "DistNode")  
   
- 分散式記錄模型是中央記錄模型的延伸，可讓您建立轉送記錄器。  
+ 分散式記錄模型可讓您建立轉送記錄器，擴展集中式記錄模型。  
   
-#### 轉送記錄器  
- 轉送記錄器是輕量型的次要記錄器，其事件篩選器會附加到次要節點，從該節點接收傳入的建置事件。  它會篩選傳入的事件，只將您所指定的事件轉送到中央節點。  這可減少傳送到中央節點的訊息流量，進而提高整體建置效能。  
+#### <a name="forwarding-loggers"></a>轉送記錄器  
+ 轉送記錄器是次要的輕量型記錄器，有附加至次要節點的事件篩選器，並可從該節點接收傳入的組建事件。 它會篩選傳入的事件，並只將您指定的事件轉送到中央節點。 這會減少傳送到中央節點的訊息流量，改善整體的組建效能。  
   
- 分散式記錄的使用方式有下列兩種：  
+ 使用分散式記錄的方式有兩種，如下所示：  
   
--   自訂名為 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 的預先建立轉送記錄器。  
+-   自訂預先製作的 <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> 轉送記錄器。  
   
--   自行撰寫自訂轉送記錄器。  
+-   撰寫您自己的自訂轉送記錄器。  
   
- 您可以修改 ConfigurableForwardingLogger 來符合需求。  若要執行這項作業，請在命令列上使用 MSBuild.exe 呼叫記錄器，然後列出要記錄器轉送到中央節點的建置事件。  
+ 您可以修改 ConfigurableForwardingLogger 使符合您的需求。 若要這樣做，請使用 MSBuild.exe 在命令列上呼叫記錄器，並列出您想要記錄器轉送到中央節點的組建事件。  
   
- 或者，您也可以建立自訂轉送記錄器。  藉由建立自訂轉送記錄器，您可以調整記錄器的行為。  不過，建立自訂轉送記錄器要比單純自訂 ConfigurableForwardingLogger 複雜。  如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
+ 或者，您也可以建立自訂的轉送記錄器。 建立自訂轉送記錄器，可以微調記錄器的行為。 不過，建立自訂轉送記錄器會比只自訂 ConfigurableForwardingLogger 更為複雜。 如需詳細資訊，請參閱[建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)。  
   
-## 使用 ConfigurableForwardingLogger 進行簡單分散式記錄  
- 若要附加 ConfigurableForwardingLogger 或自訂轉送記錄器，請在 MSBuild.exe 命令列建置中使用 `/distributedlogger` 參數 \(簡寫為 `/dl`\)。  指定記錄器類型和類別名稱的格式與 `/logger` 參數，唯一的差別在於分散式記錄器一定會有轉送記錄器和中央記錄器這兩個記錄類別，而不只有一個。  下列範例說明如何附加名為 XMLForwardingLogger 的自訂轉送記錄器。  
+## <a name="using-the-configurableforwardinglogger-for-simple-distributed-logging"></a>使用 ConfigurableForwardingLogger 進行簡單的分散式記錄  
+ 若要附加 ConfigurableForwardingLogger 或自訂的轉送記錄器，請在 MSBuild.exe 命令列組建中使用 `/distributedlogger` 參數 (簡寫為 `/dl`)。 用於指定記錄器類型和類別名稱的格式與 `/logger` 參數相同，差異在於分散式記錄器一律有兩個記錄類別，而不是一個：轉送記錄器和集中式記錄器。 以下是如何附加 XMLForwardingLogger 自訂轉送記錄器的範例。  
   
 ```  
 msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*XMLForwardingLogger,MyLogger,Version=1.0.2,Culture=neutral  
 ```  
   
 > [!NOTE]
->  星號 \(\*\) 必須用來將 `/dl` 參數中的兩個記錄器名稱分隔開來。  
+>  `/dl` 參數中必須使用星號 (*) 分隔兩個記錄器名稱。  
   
- 使用 ConfigurableForwardingLogger 就像使用任何其他記錄器 \(如 [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)所述\) 一樣，唯一的差別在於附加的是 ConfigurableForwardingLogger 記錄器而非一般 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 記錄器，而指定的參數是要 ConfigurableForwardingLogger 傳送到中央節點的事件。  
+ 使用 ConfigurableForwardingLogger 和使用任何其他記錄器一樣 (如[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)中所述)，不同之處為附加 ConfigurableForwardingLogger 記錄器，而不是一般的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 記錄器，而且要將您讓 ConfigurableForwardingLogger 傳遞給中央節點的事件，指定為參數。  
   
- 例如，如果只要在建置開始和結束以及發生錯誤時收到通知，請將 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 當做參數傳遞。  您可以傳遞多個參數，只要使用分號隔開參數即可。  下列範例說明如何使用 ConfigurableForwardingLogger 只轉送 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 事件。  
+ 例如，如果只想收到組建開始和結束以及發生錯誤的通知，您可以傳遞 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 做為參數。 傳遞多個參數時可以分號分隔。 下例示範如何使用 ConfigurableForwardingLogger 只轉送 `BUILDSTARTEDEVENT`、`BUILDFINISHEDEVENT` 和 `ERROREVENT` 事件。  
   
 ```  
 msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.2,Culture=neutral*ConfigureableForwardingLogger,C:\My.dll;BUILDSTARTEDEVENT; BUILDFINISHEDEVENT;ERROREVENT  
 ```  
   
- 以下是可用 ConfigurableForwardingLogger 參數的清單。  
+ 以下是可用的 ConfigurableForwardingLogger 參數清單。  
   
 |ConfigurableForwardingLogger 參數|  
-|-------------------------------------|  
+|---------------------------------------------|  
 |BUILDSTARTEDEVENT|  
 |BUILDFINISHEDEVENT|  
 |PROJECTSTARTEDEVENT|  
@@ -113,5 +114,5 @@ msbuild.exe myproj.proj /distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 |NOSUMMARY|  
 |SHOWCOMMANDLINE|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [建立轉送記錄器](../msbuild/creating-forwarding-loggers.md)

@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,32 +12,17 @@ dev_langs:
 - CSharp
 - C++
 - jsharp
-helpviewer_keywords:
-- MSBuild, tasks
+helpviewer_keywords: MSBuild, tasks
 ms.assetid: b3144b27-a426-4259-b8ae-5f7991b202b6
-caps.latest.revision: 32
+caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 48f6019ef12e2637917a0b70fbc4eaf3e0eb6f20
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: c0d1474fb03acd838387677786656967e852fdf9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-task-reference"></a>MSBuild 工作參考
 提供在建置流程期間執行之程式碼的工作。 下列清單的工作包含於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中。 若已安裝 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]，將提供可用來建置 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案的其他工作。 如需詳細資訊，請參閱 [Visual C++ 工作](../msbuild/msbuild-tasks-specific-to-visual-cpp.md)。  
@@ -52,13 +36,13 @@ ms.lasthandoff: 02/22/2017
   
 ## <a name="in-this-section"></a>本章節內容  
  [工作基底類別](../msbuild/task-base-class.md)  
- 將數個參數加入至衍生自 <xref:Microsoft.Build.Utilities.Task> 類別的工作。  
+ 將數個參數新增至從 <xref:Microsoft.Build.Utilities.Task> 類別衍生的工作。  
   
  [TaskExtension 基底類別](../msbuild/taskextension-base-class.md)  
- 將數個參數加入至衍生自 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的工作。  
+ 將數個參數新增至從 <xref:Microsoft.Build.Tasks.TaskExtension> 類別衍生的工作。  
   
  [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)  
- 將數個參數加入至衍生自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別的工作。  
+ 將數個參數新增至從 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別衍生的工作。  
   
  [AL (組件連結器) 工作](../msbuild/al-assembly-linker-task.md)  
  從一或多個模組或資源檔的檔案中，建立包含資訊清單的組件。  

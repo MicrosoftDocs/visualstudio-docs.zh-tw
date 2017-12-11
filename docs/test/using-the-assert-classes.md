@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,35 +13,20 @@ helpviewer_keywords:
 - unit tests, Assert statements
 - unit tests, Assert classes
 ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
-caps.latest.revision: 27
+caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5ab78b6b8eaa8156ed2c8a807b1d8a80e75afa84
-ms.openlocfilehash: 5a4f1fd5bf35a6010c2d919194b8ef21073e9a18
-ms.lasthandoff: 04/04/2017
-
+ms.openlocfilehash: 443c3fe0ece064993655895606ad8603b96f6286
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="using-the-assert-classes"></a>使用 Assert 類別
 使用 UnitTestingFramework 命名空間的 Assert 類別來驗證特定功能。 單元測試方法會執行開發程式碼中方法的程式碼，但是只有在加入 Assert 陳述式時，才會報告程式碼行為的正確性。  
   
 ## <a name="kinds-of-asserts"></a>Assert 的類型  
- <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 命名空間提供數種 Assert 類別︰  
+ <xref:Microsoft.VisualStudio.TestTools.UnitTesting> 命名空間提供數種 Assert 類別：  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>  
   
@@ -78,4 +62,3 @@ ms.lasthandoff: 04/04/2017
 ## <a name="see-also"></a>另請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting>   
  [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)
-

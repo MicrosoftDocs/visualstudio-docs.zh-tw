@@ -1,36 +1,36 @@
 ---
 title: "從 IDE 中啟動組建 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "組建"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
-caps.latest.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 5
+caps.latest.revision: "5"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 081bcfd01d8c28959bf0dd4d038e91895e9c3983
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 從 IDE 中啟動組建
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。  本主題說明這麼做的原因並概述相關程序。  
+# <a name="starting-a-build-from-within-the-ide"></a>從 IDE 中啟動組建
+自訂專案系統必須使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> 來啟動組建。 本主題說明上述情況的原因，並概述相關程序。  
   
-## 平行組建和執行緒  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 允許需要居中協調通用資源存取權的平行組建。  專案系統可以非同步方式執行組建，但是這樣的系統絕對不能從提供給組建管理員的回呼中呼叫組建函式。  
+## <a name="parallel-builds-and-threads"></a>平行組建和執行緒  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可允許需要中繼才能存取一般資源的平行組建。 專案系統可以非同步執行組建，但是這類系統不得從提供給組建管理員的回呼中來呼叫組建函式。  
   
- 如果專案系統修改環境變數，就必須將組建的 NodeAffinity 設定為 OutOfProc。  這表示您將無法使用主物件，因為這些物件必須有同處理序節點才能使用。  
+ 如果專案系統會修改環境變數，則必須將組建的 NodeAffinity 設為 OutOfProc。 這表示您無法使用主機物件，因為它們需要處理序節點。  
   
-## 使用 IVSBuildManagerAccessor  
- 下列程式碼概略說明專案系統可以用來啟動組建的方法：  
+## <a name="using-ivsbuildmanageraccessor"></a>使用 IVSBuildManagerAccessor  
+ 下列程式碼概要說明專案系統可用來啟動組建的方法：  
   
-```  
+```csharp
   
 public bool Build(Project project, bool isDesignTimeBuild)  
 {  

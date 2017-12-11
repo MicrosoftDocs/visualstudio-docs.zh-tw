@@ -1,27 +1,23 @@
 ---
 title: "在 Visual Studio 中格式化 Python 程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3d0f1631-360b-45d4-a0cb-01c3c10d25f2
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 80e23d4e3973590d5046468e9efb826afd1417d5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 9d04c52a595014d06b38205913e3eb1cdd264019
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="formatting-python-code"></a>格式化 Python 程式碼
 
 Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的格式化選項。
@@ -96,7 +92,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="wrapping"></a>換行
 
-[包裝] 讓您設定 [註解寬度上限] \(預設值為 80)。 如已設定 [將太寬的註解換行] 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
+[包裝] 讓您設定 [註解寬度上限] (預設值為 80)。 如已設定 [將太寬的註解換行] 選項，Visual Studio 會重新格式化註解，使不超過寬度上限。
 
 ```python
 # Wrapped to 40 columns
@@ -113,7 +109,7 @@ Visual Studio 可讓您快速重新格式化程式碼，以符合預先設定的
 
 ## <a name="fill-comment-paragraph-command"></a>填滿註解段落命令
 
-[編輯] > [進階] > [填滿註解段落] \(Ctrl+E、Ctrl+P) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
+[編輯] > [進階] > [填滿註解段落] (Ctrl+E、Ctrl+P) 會自動重排和格式化註解文字、結合較短的行和拆解較長的行。
 
 例如: 
 

@@ -4,36 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- msbuild, msbuild properties
+helpviewer_keywords: msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: cf04644c98062ffb2aee5b4b826f8426070c3d60
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。  
@@ -90,9 +74,9 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 ## <a name="properties-and-items-in-tasks"></a>工作中的屬性和項目  
  屬性和項目可用來做為 MSBuild 工作的輸入和輸出。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
   
- 屬性是當成屬性傳遞到工作。 在工作中，MSBuild 屬性是以值可來回轉換為字串的屬性類型來表示。 支援的屬性類型包括 `bool`、`char`、`DateTime`、`Decimal`、`Double`、`int`、`string`，以及 <xref:System.Convert.ChangeType%2A> 可以處理的所有類型。  
+ 屬性是當成屬性傳遞到工作。 在工作中，MSBuild 屬性是以值可來回轉換為字串的屬性類型來表示。 支援的屬性類型包含 `bool`、`char`、`DateTime`、`Decimal`、`Double`、`int`、`string`，以及 <xref:System.Convert.ChangeType%2A> 可處理的所有類型。  
   
- 項目是當成 <xref:Microsoft.Build.Framework.ITaskItem> 物件傳遞到工作。 在工作中，<xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> 代表項目的值，而 <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> 會擷取它的中繼資料。  
+ 項目會以 <xref:Microsoft.Build.Framework.ITaskItem> 物件形式傳遞給工作。 在工作內，<xref:Microsoft.Build.Framework.ITaskItem.ItemSpec%2A> 代表項目的值，而 <xref:Microsoft.Build.Framework.ITaskItem.GetMetadata%2A> 會擷取其中繼資料。  
   
  項目類型的項目清單可以當成 `ITaskItem` 物件陣列來傳遞。 從 .NET Framework 3.5 開始，就能在目標中使用 `Remove` 屬性，從項目清單中移除項目。 因為可從項目清單中移除項目，所以項目類型可能會有零個項目。 如果將項目清單傳遞到工作，工作中的程式碼應該會檢查這種可能性。  
   

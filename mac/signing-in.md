@@ -1,22 +1,20 @@
 ---
-title: "登入 Visual Studio for Mac"
+title: "登入 Visual Studio for Mac | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
+ms.openlocfilehash: c97e2216c8101c03c999b4f658dcd4b6e1dc4619
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 977e7bd14298901499c97c54a3c8fae424bca833
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="signing-in-to-visual-studio-for-mac"></a>登入 Visual Studio for Mac
 
-第一次啟動 Visual Studio for Mac 時，系統會提示您使用 Microsoft 帳戶登入。 您應該使用連線至您想要使用之授權的 Microsoft 帳戶。 如果您沒有 Microsoft 帳戶，請參閱[註冊 Microsoft 帳戶](https://support.microsoft.com/en-us/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)。 
+第一次啟動 Visual Studio for Mac 時，系統會提示您使用 Microsoft 帳戶登入。 您應該使用連線至您想要使用之授權的 Microsoft 帳戶。 如果您沒有 Microsoft 帳戶，請參閱[註冊 Microsoft 帳戶](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account)。 
 
 如果您決定不要立即登入，則可以使用 30 天的評估版。 您必須在 30 天後登入以繼續使用 Visual Studio for Mac 的複本 
 
@@ -45,5 +43,4 @@ ms.lasthandoff: 08/11/2017
 Visual Studio for Mac 支援將多個帳戶新增至您的個人化帳戶。 這些額外帳戶可讓您從任何已新增的帳戶存取資源 (例如 Azure)。 
 
 若要新增其他使用者帳戶，請遵循[如何登入 Visual Studio for Mac](#How_to_sign_in_to_Visual_Studio_for_Mac) 一節中的步驟。
-
 

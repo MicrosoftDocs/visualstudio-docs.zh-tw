@@ -1,79 +1,80 @@
 ---
-title: "Status | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Status | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: debc70294bf0b513f22ed1cc06b9f0790da7b778
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Status
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPerfCmd.exe **Status** 選項會程式碼剖析工具的狀態，以及目前正在進行程式碼剖析之處理序的相關資訊。  
+# <a name="status"></a>狀態
+VSPerfCmd.exe **Status** 選項會顯示分析工具和任何目前已分析處理序的狀態資訊。  
   
- **Status** 選項必須是命令列上指定的唯一選項。  程式碼剖析工具必須以 VSPerfCmd.exe **Start** 選項來初始化，才能顯示任何狀態。  
+ **Status** 選項必須是命令列上指定的唯一選項。 必須先使用 VSPerfCmd.exe **Start** 選項來初始化分析工具，才能顯示任何狀態。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 VSPerfCmd.exe /Status  
 ```  
   
-#### 參數  
- None  
+#### <a name="parameters"></a>參數  
+ 無  
   
-## 備註  
- **Status** 選項會顯示下列程式碼剖析工具的狀態資訊。  
+## <a name="remarks"></a>備註  
+ **Status** 選項會顯示分析工具的下列狀態資訊。  
   
- **Output File Name**  
- 目前程式碼分析工具資料檔的檔案名稱和路徑。  
+ **輸出檔名稱**  
+ 目前分析工具資料檔案的路徑和檔案名稱。  
   
- **Collection Mode**  
- SAMPLE 或 TRACE。  
+ **收集模式**  
+ SAMPLE 或 TRACE  
   
- **Maximum Processes**  
- 取得或設定可同時處於作用中之更新執行緒數目的最大值。可同時進行分析的處理序數目上限，以及目前作用中的處理序數目。  
+ **處理序最大數目**  
+ 可一次分析的處理序數目上限以及目前使用中處理序數目。  
   
- **Maximum Threads**  
- 可同時分析的執行緒之數目上限。  
+ **執行緒最大數目**  
+ 可一次分析的執行緒數目上限。  
   
- **Number of Buffers**  
- 專用於撰寫程式碼剖析資料的記憶體緩衝區數目。  
+ **緩衝區數目**  
+ 專用來撰寫分析資料的記憶體緩衝區數目。  
   
- **Size of Buffers**  
- 記憶體緩衝區的位元組大小。  
+ **緩衝區大小**  
+ 記憶體緩衝區的大小 (以位元組為單位)。  
   
- **Status** 選項會顯示下列狀態資訊，是目前正在進行分析的每一個處理序的資訊。  
+ **Status** 選項會顯示每個目前正在分析之處理序的下列狀態資訊。  
   
  **Process**  
- 受到剖析的處理序名稱。  
+ 已分析處理序的名稱。  
   
- **Process ID**  
- 處理序的系統識別項。  
+ **處理序 ID**  
+ 處理序的系統識別碼。  
   
- **Num Threads**  
+ **Num 執行緒**  
  目前執行中的執行緒數目。  
   
- **Start\/Stop Count**  
- 主要內部程式碼剖析工具計數，以控制此處理序的資料收集。  計數必須等於一，才能收集資料。  Start\/Stop 計數可以透過程式碼分析工具 API 及 VSPerfCmd 選項 **GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff**、**ThreadOn** 和 **ThreadOff** 來控制。  
+ **開始/停止計數**  
+ 控制此處理序之資料收集的主要內部分析工具計數。 計數必須等於一，才能收集資料。 分析工具 API 以及 VSPerfCmd 選項 **GlobalOn**、**GlobalOff**、**ProcessOn**、**ProcessOff**、**ThreadOn** 和 **ThreadOff** 都可以操控開始/停止計數。  
   
- **Suspend\/Resume Count**  
- 次要內部程式碼剖析工具計數，以控制此處理序的資料收集。  此計數必須小於或等於零，才能收集資料。  **Suspend\/Resume** 計數只能透過程式碼分析工具 API 來控制。  
+ **暫止/繼續計數**  
+ 控制此處理序之資料收集的次要內部分析工具計數。 計數必須小於或等於零，才能收集資料。 只有分析工具 API 才能操控**暫止/繼續**計數。  
   
- **Users with access rights to monitor**  
- 列出擁有程式碼剖析工具的存取權之使用者名稱。  使用 VSPerfCmd.exe **Admin** 選項，可以授權其他使用者存取權。  
+ **具有監視器存取權的使用者**  
+ 列出可存取分析工具的使用者名稱。 使用 VSPerfCmd.exe **Admin** 選項，其他使用者就可以獲授與存取權  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

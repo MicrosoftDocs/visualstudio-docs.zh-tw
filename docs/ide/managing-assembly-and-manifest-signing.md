@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 02/17/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - application manifests [Visual Studio]
 - assemblies [Visual Studio], signing
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
-caps.latest.revision: 15
-author: kempb
-ms.author: kempb
+caps.latest.revision: "15"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: a3c0f4d3bde8bb03d3766383eba01665e58458be
-ms.openlocfilehash: 6a28915840af1b22dffe704ac931a57f25ca6879
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 強式名稱簽署提供軟體元件的全域唯一識別。 強式名稱用以保證組件無法為他人作為詐騙之用，並確保元件的相依性和組態陳述式會對應到正確的元件和元件版本。  
@@ -62,7 +46,7 @@ ms.lasthandoff: 08/01/2017
   
 -   共用的元件組件 (.dll)  
   
- 您必須登入下列資產類型︰  
+您必須登入下列資產類型︰  
   
 1.  組件，如果您想要將它們部署到全域組件快取 (GAC)。  
   
@@ -70,7 +54,7 @@ ms.lasthandoff: 08/01/2017
   
 3.  主要 Interop 組件，用於 COM 互通性。 從 COM 類型程式庫建立主要 Interop 組件時，TLBIMP 公用程式會強制執行強式命名。  
   
- 通常，您不應該簽署可執行檔。 強式名稱元件無法參考與應用程式一起部署的非強式名稱元件。 Visual Studio 不簽署應用程式可執行檔，而是改為簽署應用程式資訊清單，指向弱式命名的可執行檔。 通常，您應該避免簽署應用程式的私用元件，因為簽章會使得相依性更難以管理。  
+通常，您不應該簽署可執行檔。 強式名稱元件無法參考與應用程式一起部署的非強式名稱元件。 Visual Studio 不簽署應用程式可執行檔，而是改為簽署應用程式資訊清單，指向弱式命名的可執行檔。 通常，您應該避免簽署應用程式的私用元件，因為簽章會使得相依性更難以管理。  
   
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>如何簽署 Visual Studio 中的組件  
  使用專案 [專案屬性] 視窗的 [簽署] 索引標籤來簽署應用程式或元件 (以滑鼠右鍵按一下方案總管中的專案節點 ，然後選取 [屬性]，或在 [快速啟動] 視窗中鍵入**專案屬性**，或在方案總管視窗中按 ALT + ENTER)。 選取 [簽署] 索引標籤，然後選取 [簽署組件] 核取方塊。  

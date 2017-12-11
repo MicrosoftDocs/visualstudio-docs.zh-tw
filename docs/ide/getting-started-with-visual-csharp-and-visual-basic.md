@@ -1,11 +1,10 @@
 ---
-title: Getting Started with Visual C# and Visual Basic using Visual Studio | Microsoft Docs
+title: "使用 Visual Studio 的 Visual C# 和 Visual Basic 使用者入門 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 helpviewer_keywords:
@@ -16,46 +15,37 @@ helpviewer_keywords:
 - learn C#
 - learn Visual Basic
 ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: edaf43791dc93693474c8cf68067dbcbb3196f79
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 562e94fb9881bc1844b78466d52611fc51a90a27
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>Getting Started with Visual C# and Visual Basic using Visual Studio
-Whether you are new to Visual C# or Microsoft Visual Basic, this is the place to start. Getting Started Help is a series of sequential lessons that introduces you to Visual C# and Visual Basic. Have fun, and write some great software.  
+# <a name="getting-started-with-visual-c-and-visual-basic-using-visual-studio"></a>使用 Visual Studio 的 Visual C# 和 Visual Basic 使用者入門
+不論您是剛接觸 Visual C# 或 Microsoft Visual Basic，都要從這裡開始學習。 「使用者入門說明」是一系列連續性的課程，將帶領您熟悉 Visual C# 和 Visual Basic。 盡情享受樂趣，並撰寫出一些了不起的軟體！  
   
- To learn about Visual C++, see [Visual C++ resources](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ 若要了解 Visual C++，請參閱 [Visual C++ 資源](http://msdn.microsoft.com/vstudio/hh386302.aspx)。  
   
-## <a name="in-this-section"></a>In This Section  
- [Walkthrough: Create a Simple Application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
- Identify the basic windows in the Visual Studio IDE, optimize your development experience by configuring a setting, and then build a simple program.  
+## <a name="in-this-section"></a>本章節內容  
+ [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
+ 識別 Visual Studio IDE 中的基本視窗，藉由進行設定來最佳化您的開發經驗，然後建立一個簡單的程式。  
   
- [Tutorial 1: Create a Picture Viewer](../ide/tutorial-1-create-a-picture-viewer.md)  
- Build a program that loads a picture from a file and displays it in a window. Learn how to drag controls like buttons and picture boxes on your form, set their properties, and use containers to smoothly resize the form. Get started writing code.  
+ [教學課程 1：建立圖片檢視器](../ide/tutorial-1-create-a-picture-viewer.md)  
+ 建置一個從檔案載入圖片並將圖片顯示在視窗中的程式。 了解如何拖曳表單上的控制項 (例如按鈕和圖片方塊)、設定其屬性，以及使用容器來順暢地調整表單的大小。 開始撰寫程式碼。  
   
- [Tutorial 2: Create a Timed Math Quiz](../ide/tutorial-2-create-a-timed-math-quiz.md)  
- Build a timed math quiz game, where the player must answer four random arithmetic problems within a specified time. Learn how to generate random numbers using the `Random` class, trigger events using a `Timer` control, control program flow using `if else` statements, and perform basic arithmetic operations.  
+ [教學課程 2：建立計時的數學測驗](../ide/tutorial-2-create-a-timed-math-quiz.md)  
+ 建置一個計時的數學測驗遊戲，玩家必須在指定的時間內回答四個隨機的算術問題。 了解如何使用 `Random` 類別產生亂數、使用 `Timer` 控制項觸發事件、使用 `if else` 陳述式控制程式流程，以及執行基本算術運算。  
   
- [Tutorial 3: Create a Matching Game](../ide/tutorial-3-create-a-matching-game.md)  
- Build a matching game, where the player must match pairs of hidden icons. Learn how to hold objects using a `List` object, use a `foreach` loop, keep track of a form's state using reference variables, build an event handler that you can use with multiple objects, and make a timer fire exactly once when started.
+ [教學課程 3：建立配對遊戲](../ide/tutorial-3-create-a-matching-game.md)  
+ 建置一個配對遊戲，而遊戲玩家必須配對隱藏的圖示。 了解如何使用 `List` 物件來保留物件、使用 `foreach` 迴圈、使用參考變數追蹤表單的狀態、建置可用於多個物件的事件處理常式，以及讓計時器於啟動時剛好引發一次。  
 
+|         |         |
+|---------|---------|
+|  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |    [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=nl3AuKD6D_9011787171)了解如何在 Visual Studio 中建立簡單通用 Windows 應用程式。  
+
+## <a name="see-also"></a>請參閱
+[Visual Studio Visual Studio 使用者開發入門](get-started-developing-with-visual-studio.md)

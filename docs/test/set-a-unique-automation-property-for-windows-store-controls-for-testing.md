@@ -1,40 +1,24 @@
 ---
-title: "為用於測試的 Windows 市集控制項設定唯一自動化屬性 | Microsoft Docs"
+title: "為 UWP 控制項設定唯一自動化屬性以進行測試 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
-caps.latest.revision: 10
+caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: e931c898147cb93683ae618f96eed53ae13607ea
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>為用於測試的 Windows 市集控制項設定唯一自動化屬性
-如果您想要執行 XAML Windows 市集應用程式的自動程式碼 UI 測試，則必須具有可識別每個控制項的唯一自動化屬性。  
+# <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
+如果您想要執行以 XAML 為基礎的 UWP 應用程式的自動程式化 UI 測試，則必須具有可識別每個控制項的唯一自動化屬性。  
   
  您可以根據應用程式中的 XAML 控制項類型來指派唯一自動化屬性。 以下是在下列情況中指派這個唯一自動化屬性的方法︰  
   
@@ -219,5 +203,4 @@ private void CreateCheckBox(string txt, StackPanel panel)
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 市集應用程式](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)
-
+ [使用自動程式化 UI 測試來測試 Windows UWP App](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

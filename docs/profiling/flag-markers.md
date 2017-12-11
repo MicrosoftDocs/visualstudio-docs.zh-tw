@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.cv.markers.flag
+f1_keywords: vs.cv.markers.flag
 ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 0095311f5188260bf1207e4094c1ceb87b1bbb86
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="flag-markers"></a>旗標標記
 旗標標記表示在應用程式時間中的某個時刻發生的項目。 旗標可代表許多種類的應用程式事件。 比方說，當特定工作項目已排程或擲回例外狀況時，可以顯示旗標。 工作平行程式庫等的執行階段也可以產生旗標。  
@@ -43,19 +25,19 @@ ms.lasthandoff: 05/13/2017
 ## <a name="flag-importance"></a>旗標重要性  
  旗標會依其重要性以不同的大小顯示。 與所有標記一樣，重要性可以是低、普通、高或嚴重。  下圖顯示標記的外觀 (依重要性層級排列)︰  
   
- ![低、普通、高和嚴重等重要性標記](~/profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
+ ![低、普通、高和嚴重重要性標記](../profiling/media/cvmarkerimportance.png "CVMarkerImportance")  
 顯示旗標重要性的標記  
   
 ## <a name="flag-category"></a>旗標分類  
  旗標共有五種不同的色彩，依其分類以其中一種顯示。 如果有五種以上的類別，則會重複使用這些色彩。 您無法選擇色彩。 與所有標記一樣，分類可以是任何整數。 下圖顯示前五個類別的色彩。  
   
- ![五種分類標記顏色](~/profiling/media/cvmarkercategory.png "CVMarkerCategory")  
+ ![五種分類標記色彩](../profiling/media/cvmarkercategory.png "CVMarkerCategory")  
 顯示分類的標記  
   
 ## <a name="alerts"></a>警示  
  警示為紅色旗標，表示嚴重的應用程式事件，例如例外狀況。  以下是警示︰  
   
- ![並行視覺化檢視警示標記](~/profiling/media/cvmarkeralert.png "CVMarkerAlert")  
+ ![並行視覺化檢視警示標記](../profiling/media/cvmarkeralert.png "CVMarkerAlert")  
 警示標記  
   
 ## <a name="aggregation-flags"></a>彙總旗標  
@@ -63,7 +45,7 @@ ms.lasthandoff: 05/13/2017
   
  彙總旗標以不同大小繪製。 大小取決於最重要的旗標在彙總中的重要性層級。 下圖顯示以遞增的重要性順序排序的彙總旗標。  
   
- ![顯示四種重要性層級的彙總旗標](~/profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
+ ![顯示四種重要性層級的彙總旗標](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 依重要性層級排序的彙總旗標  
   
 ## <a name="see-also"></a>另請參閱  

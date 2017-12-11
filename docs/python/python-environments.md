@@ -1,269 +1,266 @@
 ---
-title: Python Environments in Visual Studio | Microsoft Docs
+title: "Visual Studio 中的 Python 環境 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/25/2017
+ms.date: 07/25/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 8876f8c1-4770-44dc-97d8-bf0035ae8196
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 34e6898ce5c45033c8ac984d014d462a34552776
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
-ms.openlocfilehash: 9c0a841bf7607baa78d79245713a1fd648228f2a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/09/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
+# <a name="python-environments"></a>Python 環境
 
-# <a name="python-environments"></a>Python environments
+Visual Studio 中的 Python 可讓您輕鬆管理多個 Python 環境，以及針對不同的專案輕鬆在這些環境之間進行切換。 
 
-Python in Visual Studio makes it easy to manage multiple Python environments and easily switch between them for different projects. 
+注意︰如果您不熟悉 Visual Studio 中的 Python，請先參閱下列主題，因為本文的討論是以這些主題為基礎︰
 
-Note: if you're new to Python in Visual Studio, see the following topics first as this present discussion relies upon them:
+- [在 Visual Studio 中使用 Python](python-in-visual-studio.md)
+- [在 Visual Studio 中安裝 Python 支援](installation.md)
 
-- [Working with Python in Visual Studio](python-in-visual-studio.md)
-- [Installing Python support in Visual Studio](installation.md)
+一律執行 Python 程式碼的 Python「環境」，其由解譯器、程式庫 (通常是 Python 標準程式庫) 及一組已安裝的套件所組成。 這些元件一起決定哪些語言建構和語法有效、您可存取什麼作業系統功能，以及您可以使用哪些套件。
 
-A Python *environment*, in which you always run Python code, consists of an interpreter, a library (typically the Python Standard Library), and a set of installed packages. Together these components determine which language constructs and syntax are valid, what operating-system functionality you can access, and which packages you can use.
+在 Visual Studio 中，環境也包含環境程式庫的 IntelliSense 資料庫，因此您只要在 Visual Studio 編輯器中鍵入 `import` 之類的陳述式，就會自動顯示可用的程式庫清單及這些程式庫內的模組。
 
-In Visual Studio, an environment also includes an IntelliSense database for an environment's libraries, such that typing a statement like `import` in the Visual Studio editor automatically displays a list of available libraries as well as the modules within those libraries.
+開發人員通常只會使用單一全域 Python 環境。 不過，其他開發人員需要管理多個全域環境、專案特定環境和虛擬環境，如本主題所述：
 
-Oftentimes, developers use only a single, global Python environment. Other developers, however, need to manage multiple global environments, project-specific environments, and virtual environments as explained in this topic:
+- [選取並安裝 Python 解譯器](#selecting-and-installing-python-interpreters)
+- [在 Visual Studio 中管理 Python 環境](#managing-python-environments-in-visual-studio)
+- [全域環境](#global-environments)
+- [專案特定環境](#project-specific-environments)
+- [虛擬環境](#virtual-environments)
+- [安裝必要套件](#managing-required-packages)
+- [搜尋路徑](#search-paths)
 
-- [Selecting and installing Python interpreters](#selecting-and-installing-python-interpreters)
-- [Managing Python environments in Visual Studio](#managing-python-environments-in-visual-studio)
-- [Global environments](#global-environments)
-- [Project-specific environments](#project-specific-environments)
-- [Virtual environments](#virtual-environments)
-- [Managing required packages](#managing-required-packages)
-- [Search paths](#search-paths)
+如需影片介紹，請觀看 [Managing Python Environments](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=qrDmN4LWE_8305918567) (管理 Python 環境，Microsoft Virtual Academy，2 分 35 秒)。
 
-For a video introduction, see [Deep Dive: Python Interpreters](https://youtu.be/KY1GEOo3qy0) (youtube.com, 13m27s).
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Managing-Python-Environments-qrDmN4LWE_8305918567]
 
-> [!VIDEO https://www.youtube.com/embed/KY1GEOo3qy0]
+## <a name="selecting-and-installing-python-interpreters"></a>選取並安裝 Python 解譯器
 
-## <a name="selecting-and-installing-python-interpreters"></a>Selecting and installing Python interpreters
+除了 Visual Studio 2017 之外，Python 解譯器並未隨附 Python 支援，因此您必須安裝下列其中之一，才能執行您的程式碼。 一般而言，Visual Studio 會自動偵測新安裝的解譯器，並為每一個解譯器設定環境。 如果偵測不到安裝的環境，請參閱[為現有的解譯器建立環境](#creating-an-environment-for-an-existing-interpreter)。
 
-Except with Visual Studio 2017, Python support does not come with a Python interpreter, so you need to install one of the following to run your code. In general, Visual Studio automatically detects newly installed interpreters and sets up an environment for each. If it does not detect an installed environment, see [Creating an environment for an existing interpreter](#creating-an-environment-for-an-existing-interpreter).
-
-| Interpreter | Description | 
+| 解譯器 | 描述 | 
 | --- | --- | 
-| [CPython](https://www.python.org/) | The "native" and most commonly-used interpreter, available in 32-bit and 64-bit versions (32-bit recommended). Includes the latest language features, maximum Python package compatibility, full debugging support, and interop with [IPython](http://ipython.org/). See also: [Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3). Note that Visual Studio 2015 and earlier do not support Python 3.6 and can give the error "Unsupported python version 3.6". Use Python 3.5 or earlier instead. |
-| [IronPython](https://github.com/IronLanguages/main) | A .NET implementation of Python, available in 32-bit and 64-bit versions, providing C#/F#/Visual Basic interop, access to .NET APIs, standard Python debugging (but not C++ mixed-mode debugging), and mixed IronPython/C# debugging. IronPython, however, does not support virtual environments. | 
-| [Anaconda](https://www.continuum.io) | An open data science platform powered by Python, and includes the latest version of CPython and most of the difficult-to-install packages. We recommend it if you can't otherwise decide. |
-| [PyPy](http://www.pypy.org/) | A high-performance tracing JIT implementation of Python that's good for long-running programs and situations where you identify performance issues but cannot find other resolutions. Works with Visual Studio but with limited support for advanced debugging features. |
-| [Jython](http://www.jython.org/) | An implementation of Python on the Java Virtual Machine (JVM). Similar to IronPython, code running in Jython can interact with Java classes and libraries, but may not be able to use many libraries intended for CPython. Works with Visual Studio but with limited support for advanced debugging features. |
+| [CPython](https://www.python.org/) | 這是「原生」且最常用的解譯器，提供 32 位元和 64 位元版本 (建議使用 32 位元)。 包含最新的語言功能、最大的 Python 套件相容性、完整的偵錯支援，以及與 [IPython](http://ipython.org/) 的互通性。 另請參閱：[Should I use Python 2 or Python 3?](http://wiki.python.org/moin/Python2orPython3) (我應該使用 Python 2 還是 Python 3？) 請注意，Visual Studio 2015 及更早版本不支援 Python 3.6，因此可能會出現「不支援 python 3.6 版」的錯誤。 請改用 Python 3.5 或更早版本。 |
+| [IronPython](https://github.com/IronLanguages/main) | Python 的 .NET 實作具有 32 位元和 64 位元版本，除了提供 C#/F#/Visual Basic 互通性之外，還可存取 .NET API、標準 Python 偵錯 (但不包括 C++ 混合模式偵錯) 及混合式 IronPython/C# 偵錯。 不過，IronPython 並不支援虛擬環境。 | 
+| [Anaconda](https://www.continuum.io) | 由 Python 提供技術支援的開放式資料科學平台，它包含最新版的 CPython 和大多數難以安裝的套件。 如果您無法決定要使用哪一個解譯器，建議您使用此解譯器。 |
+| [PyPy](http://www.pypy.org/) | Python 的高效能追蹤 JIT 實作，適合用來處理長時間執行的程式，以及您找出效能問題但找不到其他解決方案的情況。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |
+| [Jython](http://www.jython.org/) | 「Java 虛擬機器」(JVM) 上的 Python 實作。 與 IronPython 類似，在 Jython 中執行的程式碼可以與 Java 類別和程式庫進行互動，但可能無法使用許多適用於 CPython 的程式庫。 可以與 Visual Studio 搭配運作，但對進階偵錯功能的支援有限。 |
 
-Developers that want to provide new forms of detection for Python environments, see [PTVS Environment Detection](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com).
+開發人員如果想要為 Python 環境提供新形式的偵測，可以參閱 [PTVS 環境偵測 (英文)](https://github.com/Microsoft/PTVS/wiki/Extensibility-Environments) (github.com)。
 
-## <a name="managing-python-environments-in-visual-studio"></a>Managing Python environments in Visual Studio
+## <a name="managing-python-environments-in-visual-studio"></a>在 Visual Studio 中管理 Python 環境
 
-To open the Python Environments window, do one of the following:
+若要開啟 [Python Environments (Python 環境)] 視窗，請執行下列其中一項操作：
 
-1. Select the **View > Other Windows > Python Environments** menu command.
-1. Right-click the **Python Environments** for a project in Solution Explorer and select **View All Python Environments**:
+1. 選取 [View (檢視)] > [Other Windows (其他視窗)] > [Python Environments (Python 環境)] 功能表命令。
+1. 在 [方案總管] 中某個專案的 [Python Environments (Python 環境)] 上按一下滑鼠右鍵，然後選取 [View All Python Environments (檢視所有 Python 環境)]：
 
-    ![View All Environments command in Solution Explorer](media/environments-view-all.png)
+    ![[方案總管] 中的「檢視所有環境」命令](media/environments-view-all.png)
     
-In either case, the Python Environments window appears as a sibling tab to Solution Explorer:
+不論是上述哪一種情況，[Python Environments (Python 環境)] 視窗都會顯示為與 [方案總管] 同層級的索引標籤：
 
-![Python Environments window](media/environments-default-view.png)
+![[Python Environments (Python 環境)] 視窗](media/environments-default-view.png)
 
-The example above shows that Python 3.4 (32-bit CPython) is installed along with 32-bit and 64-bit versions of IronPython 2.7. In this case, the default environment in boldface is Python 3.4, which is used for any new projects. If you don't see any environments listed, it means that you've installed Python Tools for Visual Studio in Visual Studio 2015 or earlier, but haven't installed a Python interpreter (see [Selecting and installing Python interpreters](#selecting-and-installing-python-interpreters) above). 
+上例顯示 Python 3.4 (32 位元 CPython) 已隨 32 位元和 64 位元版本的 IronPython 2.7 安裝。 在本例中，以粗體顯示的預設環境是 Python 3.4，用於所有新的專案。 如果未看到列出任何環境，即表示您已安裝 Visual Studio 2015 或更舊版本的 Python Tools for Visual Studio，但尚未安裝 Python 解譯器 (請參閱上述的[選取並安裝 Python 解譯器](#selecting-and-installing-python-interpreters))。 
 
 > [!Tip]
-> When the **Python Environments** window is narrow, as shown above, the environments are listed on the top and the various tabs on the bottom. Expanding the window enough, however, changes to a wide view that you may find more convenient to work with.
+> 當 [Python 環境] 視窗變窄時 (如上所示)，環境會列在上方，而各種索引標籤會列在下方。 不過，將視窗展開到足夠的寬度，會變更為可能較方便您使用的寬型檢視。
 >
-> ![Python Environments window expanded view](media/environments-expanded-view.png)
+> ![[Python Environments (Python 環境)] 視窗展開檢視](media/environments-expanded-view.png)
 
 > [!Note]
-> Although Visual Studio respects the system-site-packages option, it doesn't provide a way to change it from within Visual Studio.
+> 雖然 Visual Studio 會遵守「系統-站台-套件」選項，但未提供從 Visual Studio 內變更它的方式。
 
-### <a name="creating-an-environment-for-an-existing-interpreter"></a>Creating an environment for an existing interpreter
+### <a name="creating-an-environment-for-an-existing-interpreter"></a>為現有的解譯器建立環境
 
-Visual Studio normally locates an installed Python interpreter by checking the registry (following [PEP 514 - Python registration in the Windows registry](https://www.python.org/dev/peps/pep-0514/)). However, Visual Studio may not find it if the interpreter is installed in a non-standard fashion. In such cases, you can point Visual Studio directly to the interpreter as follows:
+Visual Studio 通常會透過檢查登錄來找出安裝的 Python 解譯器 (依照 [PEP 514 - Windows 登錄中的 Python 註冊](https://www.python.org/dev/peps/pep-0514/)) \(英文)\。 不過，如果解譯器以非標準方式安裝，Visual Studio 可能無法找到解譯器。 在這種情況下，您可以依照下列方式，將 Visual Studio 直接指向解譯器：
 
-1. Select **+ Custom...** in the Environments Window, which creates a new environment and opens the [**Configure** tab](#configure-tab) described below.)
+1. 在「環境視窗」中選取 [+ Custom (+ 自訂)]，這會建立一個新環境並開啟 [[Configure (設定)] 索引標籤](#configure-tab) (下面會說明)。
 
-    ![Default view for a new custom environment](media/environments-custom-1.png)
+    ![新自訂環境的預設檢視](media/environments-custom-1.png)
 
-1. Enter a name for the environment in the **Description** field.
-1. Enter or browse to the path of the interpreter in the **Prefix path** field.
-1. Select **Auto Detect** to have Visual Studio complete the remaining fields, or complete them manually.
-1. Select **Apply** to save the environment.
-1. If you need to remove the environment, select the **Remove** command on the **Configure** tab. Auto-detected environments do not provide this option. See the next section for more information.
+1. 在 [Description (描述)] 欄位中，輸入環境的名稱。
+1. 在 [Prefix path (前置路徑)] 欄位中，輸入或瀏覽至解譯器的路徑。
+1. 選取 [Auto Detect (自動偵測)] 來讓 Visual Studio 完成其餘欄位，或是手動完成它們。
+1. 選取 [Apply (套用)] 來儲存環境。
+1. 如果您需要移除環境，請在 [Configure (設定)] 索引標籤上選取 [Remove (移除)]。自動偵測環境不會提供這個選項。 如需詳細資訊，請參閱下一章節。
 
-### <a name="moving-an-existing-interpreter"></a>Moving an existing interpreter
+### <a name="moving-an-existing-interpreter"></a>移動現有的解譯器
 
-If you move an existing interpreter to a new location on the file system, Visual Studio doesn't automatically detect the change. Manual steps are necessary to update the list in the Environment window:
+如果您將現有的解譯器移至檔案系統上新的位置，Visual Studio 不會自動偵測變更。 您必須透過手動步驟來更新 [環境] 視窗中的清單：
 
-- If you originally created an environment for that interpreter, edit that environment to point to the new location.
+- 如果您最初是針對該解譯器來建立環境，請編輯該環境以指向新的位置。
 
-- If the environment was originally auto-detected, it was installed on the computer with a distinct installer program that created the registry entries that Visual Studio examines. In this case, first restore the Python interpreter to its original location. Then uninstall it using the installer, which clears the registry entries. Then reinstall the interpreter at the desired location. Restart Visual Studio and it should auto-detect the new location. This process ensures that any other side effects of the installer are properly applied.
+- 如果最初是自動偵測的環境，則環境是使用特定的安裝程式安裝在電腦上，而該安裝程式會建立登錄項目以供 Visual Studio 檢查。 在此情況下，請先將 Python 解譯器還原到其原始位置。 然後使用安裝程式將它解除安裝，以清除登錄項目。 接著，在所需的位置重新安裝解譯器。 重新啟動 Visual Studio，應該就會自動偵測新的位置。 此程序可確保正確地套用安裝程式的任何其他副作用。
 
-### <a name="overview-tab"></a>Overview tab
+### <a name="overview-tab"></a>Overview (概觀) 索引標籤
 
-Provides basic information and commands for the environment:
+提供環境的基本資訊和命令：
 
-![Python Environments overview tab](media/environments-overview-tab.png)
+![Python 環境的 [Oview (概觀)] 索引標籤](media/environments-overview-tab.png)
 
-| Command | Description |
+| 命令 | 說明 |
 | --- | --- |
-| Make this environment the default for new projects | Sets the active environment, which may cause Visual Studio to briefly become non-responsive while it loads the IntelliSense database. Environments with many packages may be non-responsive for longer. |
-| Visit the distributor's website | Opens a browser to the URL provided by the Python distribution. Python 3.x, for example, goes to python.org. |
-| Open interactive window | Opens the [interactive (REPL) window](interactive-repl.md) for this environment within Visual Studio, applying any [startup scripts (see below)](#startup-scripts). |
-| Use IPython interactive mode | When set, opens the interactive window with IPython by default. This enabled inline plots as well as the extended IPython syntax such as `name?` to view help and `!command` for shell commands. This option is recommended when using an Anaconda distribution, as it requires extra packages. For more information, see [Using IPython in the Interactive Window](interactive-repl-ipython.md). |
-| Open in PowerShell | Starts the interpreter in a PowerShell command window. |
-| (Folder links) | Provide you quick access to the environment's installation folder, the python.exe interpreter, and the pythonw.exe interpreter. The first opens in Windows Explorer, the latter two open a console window. |
+| 將此環境設為新專案的預設值 | 設定使用中環境，可能會導致在載入 IntelliSense 資料庫時，Visual Studio 短暫沒有反應。 環境如果含有許多套件，則無反應的時間可能會更長。 |
+| 前往散發者的網站 | 將瀏覽器開啟至 Python 發行所提供的 URL。 例如，Python 3.x 會移至 python.org。 |
+| 開啟互動式視窗 | 在 Visual Studio 內開啟此環境的[互動式 (REPL) 視窗](interactive-repl.md)，並套用任何[啟動指令碼 (請參閱下面)](#startup-scripts)。 |
+| 使用 IPython 互動模式 | 設定時，預設會開啟 IPython 的互動式視窗。 此已啟用的內嵌繪圖和擴充的 IPython 語法，例如 `name?` 檢視說明，而 `!command` 適用於殼層命令。 使用需要額外套件的 Anaconda 發佈時，建議使用此選項。 如需詳細資訊，請參閱[在互動式視窗中使用 IPython](interactive-repl-ipython.md)。 |
+| 在 PowerShell 中開啟 | 在 PowerShell 命令視窗中啟動解譯器。 |
+| (資料夾連結) | 可讓您快速存取環境的安裝資料夾、python.exe 解譯器和 pythonw.exe 解譯器。 第一個會在 Windows 檔案總管中開啟，後面兩個則會開啟主控台視窗。 |
 
-#### <a name="startup-scripts"></a>Startup scripts
+#### <a name="startup-scripts"></a>啟動指令碼
 
-As you use interactive windows in your everyday workflow, you likely develop helper functions that you use regularly. For example, you may create a function that opens a DataFrame in Excel, and then save that code as a startup script so that it's always available in the interactive window.
+因為您在日常工作流程中使用互動式視窗，所以您可能會開發定期使用的協助程式函式。 例如，您可以建立可在 Excel 中開啟 DataFrame 的函式，然後將該程式碼儲存為啟動指令碼，讓它一律可在互動式視窗中使用。
 
-Startup scripts contain code that the interactive window loads and runs automatically, including imports, function definitions, and literally anything else. Such scripts are referenced in two ways:
+啟動指令碼包含互動式視窗所載入並自動執行的程式碼，包括匯入、函式定義，以及文字形式的任何其他項目。 這類指令碼是使用兩種方式進行參考：
 
-1. When you install an environment, Visual Studio creates a folder `Documents\Visual Studio 2017\Python Scripts\<environment>` where &lt;environment&gt' matches the name of the environment. You can easily navigate to the environment-specific folder with the **Explore interactive scripts** command. When you start the interactive window for that environment, it loads and runs whatever `.py` files are found here in alphabetical order.
+1. 當您安裝環境時，Visual Studio 會建立資料夾 `Documents\Visual Studio 2017\Python Scripts\<environment>`，其中 &lt;environment&gt' 符合環境的名稱。 您可以使用 [探索互動式指令碼] 命令，輕鬆地巡覽至環境特定資料夾。 當您啟動該環境的互動式視窗時，只要依字母順序在這裡找到 `.py` 檔案，就會載入並執行互動式視窗。
 
-1. The **Scripts** control in **Tools > Options > Python Tools > Interactive Windows** tab (see [Interactive windows options](options.md#interactive-windows-options)) is intended to specify an additional folder for startup scripts that are loaded and run in all environments. However, this feature doesn't work at present.
+1. [工具] > [選項] > [Python 工具] > [互動式視窗] 索引標籤中的 [指令碼] 控制項 (請參閱[互動式視窗選項](options.md#interactive-windows-options)) 是用來指定所有環境中載入和執行之啟動指令碼的其他資料夾。 不過，此功能目前無法使用。
 
 
-### <a name="configure-tab"></a>Configure tab
+### <a name="configure-tab"></a>Configure (設定) 索引標籤
 
-If shown, contains details as described in the table below. If this tab isn't present, it means that Visual Studio is managing all the details automatically.
+如果顯示，會包含如下表所述的詳細資料。 如果沒有此索引標籤，即表示目前由 Visual Studio 自動管理所有詳細資料。
 
-![Python Environments configure tab](media/environments-configure-tab.png)
+![Python 環境的 [Configure (設定)] 索引標籤](media/environments-configure-tab.png)
 
-| Field | Description |
+| 欄位 | 描述 |
 | --- | --- |
-| **Description** | The name to give the environment. |
-| **Prefix path** | The base folder location of the interpreter. By filling this value and clicking **Auto Detect**, Visual Studio attempts to fill in the other fields for you. |
-| **Interpreter path** | The path to the interpreter executable, commonly the prefix path followed by `python.exe` |
-| **Windowed interpreter** | The path to the non-console executable, often the prefix path followed by `pythonw.exe`. |
-| **Library path** | Specifies the root of the standard library, but this value may be ignored if Visual Studio is able to request a more accurate path from the interpreter. |
-| **Language version** | Selected from the drop-down menu. |
-| **Architecture** | Normally detected and filled in automatically, otherwise specifies 32-bit or 64-bit. |
-| **Path environment variable** | The environment variable that the interpreter uses to find search paths. Visual Studio changes the value of the variable when starting Python so that it contains the project's search paths. Typically this property should be set to `PYTHONPATH`, but some interpreters use a different value. |
+| **說明** | 要賦予環境的名稱。 |
+| **Prefix path (前置路徑)** | 解譯器的基底資料夾位置。 填入此值並按一下 [自動偵測] 之後，Visual Studio 就會嘗試為您填入其他欄位。 |
+| **Interpreter path (解譯器路徑)** | 解譯器可執行檔的路徑，通常是前置路徑後面再接著 `python.exe` |
+| **Windowed interpreter (Windows 解譯器)** | 非主控台可執行檔的路徑，通常是前置路徑後面再接著 `pythonw.exe`。 |
+| **Library path (程式庫路徑)** | 指定標準程式庫的根目錄，但如果 Visual Studio 能夠從解譯器要求更精確的路徑，則可以忽略這個值。 |
+| **Language version (語言版本)** | 從下拉式功能表中選取。 |
+| **架構** | 通常會自動偵測並填入，否則會指定 32 位元或 64 位元。 |
+| **Path environment variable (路徑環境變數)** | 解譯器用來尋找搜尋路徑的環境變數。 Visual Studio 會在啟動 Python 時變更變數的值，使其包含專案的搜尋路徑。 通常這個屬性應該設定為 `PYTHONPATH`，但有些解譯器會使用不同的值。 |
 
-### <a name="pip-tab"></a>pip tab
+### <a name="pip-tab"></a>pip 索引標籤
 
-Manages the packages installed in the environment, allowing you also to and search for and install new ones (including any dependencies). Searching filters your currently installed packages and [PyPI](https://pypi.python.org). You can also directly enter any `pip install` command in the search box, including flags such as `--user` or `--no-deps`.
+管理安裝在環境中的套件，讓您也能夠搜尋並安裝新的套件 (包括任何相依性)。 搜尋會篩選您目前已安裝的套件和 [PyPI](https://pypi.python.org)。 您也可以在搜尋方塊中直接輸入任何 `pip install` 命令，包括 `--user` 或 `--no-deps` 之類的旗標。
 
-![Python environments pip tab](media/environments-pip-tab.png)
+![Python 環境的 [pip] 索引標籤](media/environments-pip-tab.png)
 
-Installing a package creates subfolders within the environment's `Lib` folder on the file system. For example, if you have Python 3.6 installed in `c:\Python36`, packages are installed in `c:\Python36\Lib`; if you have Anaconda3 installed in `c:\Program Files\Anaconda3` then packages are installed in `c:\Program Files\Anaconda3\Lib`.
+安裝套件時會在環境於檔案系統的 `Lib` 資料夾內建立子資料夾。 例如，如果您已在 `c:\Python36` 中安裝 Python 3.6，則會將套件安裝在 `c:\Python36\Lib` 中；如果已在 `c:\Program Files\Anaconda3` 中安裝 Anaconda3，則會將套件安裝在 `c:\Program Files\Anaconda3\Lib` 中。
 
-In the latter case, because the environment is located in a protected area of the file system, `c:\Program Files`, Visual Studio must run `pip install` elevated to allow it to create package subfolders. When elevation is required, Visual Studio displays the prompt, "Administrator privileges may be required to install, update or remove packages for this environment":
+在後者的情況下，因為環境位於檔案系統的受保護區域 `c:\Program Files` 中，所以 Visual Studio 必須提高權限來執行 `pip install` 以允許它建立套件子資料夾。 需要提高權限時，Visual Studio 會顯示「可能需要系統管理員權限才可安裝、更新或移除此環境的套件」提示：
 
-![Elevation prompt for package installation](media/environments-pip-elevate.png)
+![套件安裝的提高權限提示](media/environments-pip-elevate.png)
 
-**Elevate now** grants administrative privileges to pip for a single operation, subject also to any operating system prompts for permissions. Selecting **Continue without Administrator privileges** attempts to install the package, but pip fails when trying to create folders with output such as "error: could not create 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': Permission denied."
+[立即提高權限] 會將系統管理權限授與 pip 以進行單一作業、主題，也會授與權限的任何作業系統提示。 選取 [在沒有系統管理員權限的情況下繼續] 會嘗試安裝套件，但在嘗試建立包含「錯誤: 無法建立 'C:\Program Files\Anaconda3\Lib\site-packages\png.py': 權限遭拒」這類輸出的資料夾時，pip 會失敗。
 
-Selecting **Always elevate when installing or removing packages** prevents the dialog from appearing for the environment in question. To make the dialog appear again, go to **Tools > Options > Python Tools > General** and select the button, **Reset all permanently hidden dialogs**. 
+選取 [安裝或移除套件時一律提高權限] 可防止在環境有問題時顯示對話方塊。 若要再次顯示對話方塊，請移至 [工具] > [選項] > [Python 工具] > [一般]，然後選取 [重設所有永久隱藏的對話方塊] 按鈕。 
 
-In that same options tab, you can also select **Always run pip as administrator** to suppress the dialog for all environments. See [Options - General tab](options.md#general-options).
+在這個相同的選項索引標籤中，您也可以選取 [一律以系統管理員身分執行 pip] 來隱藏所有環境的對話方塊。 請參閱[選項 - 一般索引標籤](options.md#general-options)。
 
 
-### <a name="intellisense-tab"></a>IntelliSense tab
+### <a name="intellisense-tab"></a>IntelliSense 索引標籤
 
-Shows the current status of the IntelliSense completion database:
+顯示 IntelliSense 完成資料庫的目前狀態：
 
-![Python Environments IntelliSense tab](media/environments-intellisense-tab.png)
+![Python 環境的 [IntelliSense] 索引標籤](media/environments-intellisense-tab.png)
 
-The database contains metadata for all the environment's libraries and improves IntelliSense speed and reduces memory usage. When Visual Studio detects a new environment (or you add one), it automatically begins to compile the database by analyzing the library source files. This process can take anywhere from a minute to an hour or more depending on what's installed. (Anaconda, for example, comes with many libraries and takes some time to compile the database.) Once complete, you get detailed IntelliSense and don't need to refresh the database again (with the **Refresh DB** button) until you install more libraries.
+此資料庫包含環境所有程式庫的中繼資料，並可改善 IntelliSense 速度及降低記憶體使用量。 當 Visual Studio 偵測到新環境 (或您新增環境) 時，會透過分析程式庫原始程式檔來自動開始編譯資料庫。 視所安裝的項目而定，這個程序會花費一分鐘到一小時或數小時不等的時間。 (例如，Anaconda 隨附許多程式庫，因此就需要一些時間來編譯資料庫)。完成之後，您會獲得詳細的 IntelliSense，而在您安裝其他程式庫之前，就不需要再次重新整理資料庫 (使用 [Refresh DB] (重新整理資料庫) 按鈕)。
 
-Libraries for which data haven't been compiled are marked with a **!**; if an environment's database isn't complete, a **!** also appears next to it in the main environment list.
+資料尚未經過編譯的程式庫會標示 **!**；如果環境的資料庫尚未完成，則 **!** 也會出現在主要環境清單中該資料庫的旁邊。
 
-## <a name="global-environments"></a>Global environments
+## <a name="global-environments"></a>全域環境
 
-Global (or system-wide) environments are available to all of your projects on a machine. Visual Studio usually detects global environments automatically, and they can be viewed in the Python Environments window. If not, you can add an environment manually as described earlier under [Managing Python environments in Visual Studio](#managing-python-environments-in-visual-studio).
+全域 (或全系統) 環境可供電腦上您的所有專案使用。 Visual Studio 通常會自動偵測全域環境，而這些環境可供在 [Python Environments (Python 環境)] 視窗中檢視。 如果情況並非如此，您可以手動新增環境，如先前的[在 Visual Studio 中管理 Python 環境](#managing-python-environments-in-visual-studio)所述。
 
-Visual Studio uses the default environment for all new projects for executing, debugging, checking syntax, displaying import and member completions, and any other tasks that require an environment. Changing the default environment affects all projects that have not had a [project-specific environment](#project-specific-environments) added, as described next.
+Visual Studio 會針對所有新專案使用預設環境，來執行、偵錯、檢查語法、顯示匯入和成員完成狀況，以及任何其他需要環境的工作。 變更預設環境會影響所有尚未新增[專案特定環境](#project-specific-environments) (接下來將會說明) 的專案。
 
-## <a name="project-specific-environments"></a>Project-specific environments
+## <a name="project-specific-environments"></a>專案特定環境
 
-Project-specific environments ensure that a project always runs in a particular environment, ignoring the default global environment. For example, if the global default environment is CPython but a project requires IronPython and certain libraries that aren't installed in the global environment, then a project-specific environment is necessary.
+專案特定環境可確保讓專案忽略預設全域環境，而一律在特定的環境中執行。 例如，如果全域預設環境是 CPython，但專案需要的是 IronPython 及某些未安裝在全域環境中的程式庫，則專案特定環境就有其必要性。
 
-Project environments are listed in Solution Explorer under the Python Environments node. The bold entry is currently active, and Visual Studio uses it for debugging, import and member completions, syntax checking, and any other tasks that require an environment:
+專案環境會列在 [方案總管] 的 [Python Environments (Python 環境)] 節點底下。 以粗體顯示的項目是目前使用中的項目，並且 Visual Studio 使用它來偵錯、匯入和成員完成狀況、語法檢查，以及任何其他需要環境的工作：
 
-![Project environments displayed in Solution Explorer](media/environments-project.png)
+![[方案總管] 中顯示的專案環境](media/environments-project.png)
 
-To activate a different environment for the project, right-click that environment and select **Activate Environment**.
+若要為專案啟用不同的環境，請在該環境上按一下滑鼠右鍵，然後選取 [Activate Environment (啟用環境)]。
 
-Any global environment can be added as a project environment by right-clicking **Python Environments** and selecting **Add/Remove Python Environments...**. From the displayed list you can select or deselect those environments that are available in your project.
+您可以藉由按一下 [Python Environments (Python 環境)] 並選取 [Add/Remove Python Environments (新增/移除 Python 環境)]，來新增任何全域環境作為專案環境。從顯示的清單中，您可以選取或取消選取專案中可供使用的環境。
 
-![Add/Remove Python Environments dialog](media/environments-add-remove.png)
+![[Add/Remove Python Environments (新增/移除 Python 環境)] 對話方塊](media/environments-add-remove.png)
 
-In Solution Explorer, you can also expand the environment to show its installed packages (those you can import and use in your code when the environment is active):
+在 [方案總管] 中，您也可以展開環境來顯示它的已安裝套件 (可供您在環境處於作用中時匯入並在程式碼中使用的套件)：
 
-![Python packages for an environment in Solution Explorer](media/environments-installed-packages.png)
+![[方案總管] 中環境的 Python 套件](media/environments-installed-packages.png)
 
-To install new packages, right-click the environment, select **Install Python Package...**, and enter the name of the desired package. Packages (and dependencies) are downloaded from the [Python Package Index (PyPI)](https://pypi.python.org/pypi), where you can also search for available packages. Visual Studio's status bar and output window shows information about the install. To uninstall a package, right-click it select **Remove**.
+若要安裝新套件，請在環境上按一下滑鼠右鍵、選取 [Install Python Package (安裝 Python 套件)]，然後輸入所需套件的名稱。 套件 (及相依性) 是下載自 [Python 套件索引 (PyPI) (英文)](https://pypi.python.org/pypi)，您也可以在該處搜尋可用的套件。 Visual Studio 的狀態列和輸出視窗會顯示與該安裝相關的資訊。 若要將套件解除安裝，請在該套件上按一下滑鼠右鍵，然後選取 [移除]。
 
 > [!Note]
-> Python's package management support is currently under development by the core Python development team. The displayed entries may not always be accurate, and installation and uninstallation may not be reliable or available. Visual Studio uses the pip package manager if available, and downloads and installs it when required. Visual Studio can also use the easy_install package manager. Packages installed using pip or easy_install from the command line are also displayed.
+> 目前核心 Python 開發小組仍在開發 Python 的套件管理支援。 所顯示的項目可能未必正確，而安裝和解除安裝可能不可靠或可用。 Visual Studio 會使用 pip 套件管理員 (如果可用)，並會在必要時下載並安裝它。 Visual Studio 也可以使用 easy_install 套件管理員。 使用 pip 或 easy_install 從命令列安裝的套件也會一併顯示。
 
 > [!Tip]
-> A common situation where pip fails to install a package is when the package includes source code for native components in `*.pyd` files. Without the required version of Visual Studio installed, pip cannot compile these components. The error message displayed in this situation is `error: Unable to find vcvarsall.bat`. `easy_install` is often able to download pre-compiled binaries, and you can download a suitable compiler for older versions of Python from [http://aka.ms/VCPython27](http://aka.ms/VCPython27). For more details, see [How to deal with the pain of "unable to find vcvarsallbat"](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/) on the Python tools team blog.
+> 有一個 pip 無法安裝套件的常見情況，就是當套件的 `*.pyd` 檔案中包含原生元件的原始程式碼時。 如果未安裝所需的 Visual Studio 版本，pip 就無法編譯這些元件。 在此情況下顯示的錯誤訊息是 `error: Unable to find vcvarsall.bat`。 `easy_install` 通常能夠下載預先編譯的二進位檔，而您可以從 [http://aka.ms/VCPython27](http://aka.ms/VCPython27) 下載適用於舊版 Python 的編譯器。 如需詳細資訊，請參閱 Python 工具小組部落格中的[如何處理「找不到 vcvarsallbat」的困擾 (英文)](https://blogs.msdn.microsoft.com/pythonengineering/2016/04/11/unable-to-find-vcvarsall-bat/)。
 
 
-## <a name="virtual-environments"></a>Virtual Environments
+## <a name="virtual-environments"></a>虛擬環境
 
-Because packages installed into a global environment are available to all projects that use it, conflicts may occur when two projects require incompatible packages or different versions of the same package. To avoid such conflicts, Visual Studio provides the ability to create *virtual environments*, which are typically specific to a project.
+由於安裝到全域環境中的套件可供使用該環境的所有專案使用，因此當兩個專案所需的套件不相容，或所需的是相同套件的不同版本時，就可能發生衝突。 為了避免這類衝突，Visual Studio 提供建立「虛擬環境」的功能，此環境一般是專案的專屬環境。
 
-Like any other Python environment, a virtual environment consists of a Python interpreter, a library, and a set of packages. In this case, though, the virtual environment uses the interpreter and library from one of your global environments (provided it supports virtual environments), but its packages are separate and isolated from the global and all other virtual environments. This isolation again avoids conflicts and minimizes the virtual environment's footprint to the approximate size of its packages. 
+與任何其他 Python 環境相同，虛擬環境也是由 Python 解譯器、程式庫及一組套件所組成。 不過，在此情況下，虛擬環境會使用來自其中一個全域環境 (前提是它支援虛擬環境) 的解譯器和程式庫，但其套件則與全域及所有其他虛擬環境分開並隔離。 這項隔離就能避免衝突，並將虛擬環境的資源使用量降到最低來大致符合其套件的大小。 
 
-To create a virtual environment:
+建立虛擬環境：
 
-1. Right-click **Python Environments** in Solution Explorer and select **Add Virtual Environment...**, which brings up the following:
+1. 在 [方案總管] 中的 [Python Environments (Python 環境)] 上按一下滑鼠右鍵，然後選取 [Add Virtual Environments (新增虛擬環境)]，這會顯示以下畫面：
 
-    ![Creating a virtual environment](media/environments-add-virtual-1.png)
+    ![建立虛擬環境](media/environments-add-virtual-1.png)
 
-1. Specify a name to create the virtual environment in your project path, or a full path to create it elsewhere. (To ensure maximum compatibility with other tools, use only letters and numbers in the name.)
+1. 指定一個名稱以在您的專案路徑中建立虛擬環境，或是指定一個完整路徑以在其他位置建立它。 (為了確保與其他工具的最大相容性，在名稱中請只使用字母和數字)。
 
-1. Select a global environment as the base interpreter and click **Create**. If `pip` and `virtualenv` or `venv` packages are not available, they are downloaded and installed.
+1. 選取一個全域環境來作為基底編譯器，然後按一下 [建立]。 如果沒有 `pip` 和 `virtualenv` 或 `venv` 套件可供使用，就會下載並安裝它們。
 
-    If the provided path is an existing virtual environment, the base interpreter is detected and the create button changes to **Add**:
+    如果提供的路徑是現有的虛擬環境，則會偵測到基底解譯器，而 [建立] 按鈕會變更為 [新增]：
 
-    ![Adding an existing virtual environment](media/environments-add-virtual-2.png)
+    ![新增現有的虛擬環境](media/environments-add-virtual-2.png)
 
-An existing virtual environment can also be added by right-clicking **Python Environments** in Solution Explorer and selecting **Add Existing Virtual Environment...**. Visual Studio automatically detects the base interpreter using the `orig-prefix.txt` file in the environment's `lib` directory.
+您同樣可以在 [方案總管] 中的 [Python Environments (Python 環境)] 上按一下滑鼠右鍵，然後選取 [Add Existing Virtual Environment (新增現有的虛擬環境)]，來新增現有的虛擬環境。Visual Studio 會使用環境之 `lib` 目錄中的 `orig-prefix.txt` 檔案來自動偵測基底解譯器。
 
-Once a virtual environment is added to your project, it appears in the **Python Environments** window, you can activate it like any other environment, and you can manage its packages. Right-clicking it and selecting **Remove** either removes the reference to the environment, or deletes the environment and all its files on disk (but not the base interpreter).
+將虛擬環境新增到您的專案中之後，它會顯示在 [Python Environments (Python 環境)] 視窗中，您可以像啟用任何其他環境一樣啟用它，並且可以管理其套件。 以滑鼠右鍵按一下該環境，然後選取 [移除]，即可移除對該環境的參考，或是刪除該環境及磁碟上它的所有檔案 (但不包括基底編譯器)。
 
-Note that one drawback to virtual environments is that they contain hard-coded file paths and thus cannot easily be shared or transported to other development machines. Fortunately, you can use the `requirements.txt` file as described in the next section.
+請注意，虛擬機器有一個缺點，就是它們包含硬式編碼檔案路徑，因此無法輕易共用或傳輸到其他開發機器。 幸運的是，您可以使用 `requirements.txt` 檔案，在下一節中將會說明。
 
-## <a name="managing-required-packages"></a>Managing required packages
+## <a name="managing-required-packages"></a>管理必要套件
 
-If you're sharing a project with others, using a build system, or plan to [publish it to Microsoft Azure](template-azure-cloud-service.md), you need to specify the external packages it requires. The recommended approach is to use a [requirements.txt file](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org) that contains a list of commands for pip that installs the required versions of dependent packages.
+如果您要將專案與其他人共用、使用建置系統，或是打算[將它發行至 Microsoft Azure](template-azure-cloud-service.md)，則必須指定它所需的外部套件。 建議的方法是使用 [requirements.txt 檔案](http://pip.readthedocs.org/en/latest/user_guide.html#requirements-files) (readthedocs.org)，此檔案包含 pip 命令清單，可安裝所需的相依套件版本。
 
-Technically, any filename may be used to track requirements (by using `-r <full path to file>` when installing a package), but Visual Studio provides specific support for `requirements.txt`:
+就技術而言，任何檔案名稱都可用來追蹤必要條件 (藉由在安裝套件時使用 `-r <full path to file>`)，但 Visual Studio 為 `requirements.txt` 提供了專屬支援：
 
-- If you've loaded a project that contains `requirements.txt` and wish to install all the packages listed in that file, right-click the project and select **Install from requirements.txt**:
+- 如果您已上傳包含 `requirements.txt` 的專案並想要安裝該檔案中所列的全部套件，請在該專案上按一下滑鼠右鍵，然後選取 [Install from requirements.txt (從 requirements.txt 安裝)]：
 
-    ![Install from requirements.txt](media/environments-requirements-txt-install.png)
+    ![Install from requirements.txt (從 requirements.txt 安裝)](media/environments-requirements-txt-install.png)
 
-- When you have all the necessary packages installed in a project, you can right-click the project in Solution Explorer and select **Generate requirements.txt** to create the necessary file. If the file already exists, a prompt appears for how to update it:
+- 在專案中安裝所有必要的套件之後，您可以在 [方案總管] 中該專案上按一下滑鼠右鍵，然後選取 [Generate requirements.txt (產生 requirements.txt)] 以建立必要的檔案。 如果該檔案已經存在，系統會提示您如何更新它：
 
-    ![Update requirements.txt options](media/environments-requirements-txt-replace.png)
+    ![更新 requirements.txt 選項](media/environments-requirements-txt-replace.png)
 
-    - **Replace entire file** removes all items, comments, and options that exist.
-    - **Refresh existing entries** detects package requirements and updates the version specifiers to match the version you currently have installed.
-    - **Update and add entries** refreshes any requirements that are found, and adds all other packages to the end of the file.
+    - [Replace entire file (取代整個檔案)] 會移除所有已存在的項目、註解及選項。
+    - [重新整理現有項目] 會偵測套件需求並更新版本規範，以符合您目前已安裝的版本。
+    - [Update and add entries (更新及新增項目)] 會重新整理所找到的任何需求，並將所有其他套件新增到檔案結尾。
 
-Because `requirements.txt` files are intended to freeze the requirements of your project, all installed packages are written with precise versions. Using precise versions ensures that you can easily reproduce your environment on another machine. Packages are included even if they were installed with a version range, as a dependency of another package, or with an installer other than pip.
+由於 `requirements.txt` 檔案的用意是要固定住您專案的需求，因此所有安裝的套件都已寫明精確的版本。 使用精確的版本可確保您可以在另一部電腦上輕鬆重現您的環境。 即使安裝套件時已指定版本範圍，仍然會包含這些套件作為另一個套件的相依性，或隨附於 pip 以外的安裝程式。
 
-If a` requirements.txt` file exists when adding a new virtual environment, the **Add Virtual Environment** dialog displays an option to install the packages automatically, making it easy to recreate an environment on another machine:
+新增虛擬環境時，如果 ` requirements.txt` 檔案已經存在，則 [新增虛擬環境] 對話方塊就會顯示自動安裝套件的選項，讓您能夠輕鬆在另一部電腦上重新建立環境：
 
-![Create virtual environment with requirements.txt](media/environments-requirements-txt.png)
+![使用 requirements.txt 來建立虛擬環境](media/environments-requirements-txt.png)
 
-If a package cannot be installed by pip and it appears in a `requirements.txt` file, the entire installation fails. In this case, manually edit the file to exclude this package or to use [pip's options](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format) to refer to an installable version of the package. For example, you may prefer to use [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) to compile a dependency and add the `--find-links <path>` option to your `requirements.txt`:
+如果套件是 pip 無法安裝的套件，並且出現在 `requirements.txt` 檔案中，整個安裝就會失敗。 在此情況下，請手動編輯檔案以將此套件排除，或使用 [pip 的選項](http://pip.readthedocs.org/en/latest/reference/pip_install.html#requirements-file-format)來參考該套件的可安裝版本。 例如，您可能偏好使用 [`pip wheel`](http://pip.readthedocs.org/en/latest/reference/pip_wheel.html) 來編譯相依性並將 `--find-links <path>` 選項新增到您的 `requirements.txt`：
 
 ```output
 C:\Project>pip wheel azure
@@ -290,20 +287,19 @@ Cleaning up...
     Removing temporary dir C:\Project\env\build...
 ```
 
-## <a name="search-paths"></a>Search paths
+## <a name="search-paths"></a>搜尋路徑
 
-With typical Python usage, the `PYTHONPATH` environment variable (or `IRONPYTHONPATH`, etc.) provides the default search path for module files. That is, when you use an `import <name>` statement, Python first searches its built-in modules for a matching name, then searches folder containing the Python code you're running, then searches the "module search path" as defined by the applicable environment variable. (See [The Module Search Path](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) and [Environment variables](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH) in the core Python documentation.)
+在典型的 Python 用法中，`PYTHONPATH` 環境變數 (或 `IRONPYTHONPATH` 等) 會提供模組檔案的預設搜尋路徑。 也就是說，當您使用 `import <name>` 陳述式時，Python 會先搜尋其內建模組是否有相符的名稱，接著搜尋包含您要執行之 Python 程式碼的資料夾，然後才搜尋適用的環境變數所定義的「模組搜尋路徑」。 (請參閱核心 Python 文件中的[模組搜尋路徑 (英文)](https://docs.python.org/2/tutorial/modules.html#the-module-search-path) 和[環境變數 (英文)](https://docs.python.org/2/using/cmdline.html#envvar-PYTHONPATH))。
 
-The search path environment variable, however, is ignored by Visual Studio, even when it's been set for the entire system. It's ignored, in fact, precisely *because* it's set for the entire system and thus raises certain questions that cannot be answered automatically: Are the referenced modules meant for Python 2.7 or Python 3.3? Are they going to override standard library modules? Is the developer aware of this behavior or is it a malicious hijacking attempt?
+不過，即使針對整個系統設定了搜尋路徑環境變數，Visual Studio 也會將它忽略。 實際上，之所以忽略它，確切說來是「因為」它是針對整個系統設定的，因此會導致產生某些無法自動回答的問題：所參考的模組是用於 Python 2.7 還是 Python 3.3？ 它們是否將覆寫標準程式庫程式庫模組？ 開發人員是否知道此行為，或它是否是惡意的劫持嘗試？
 
-Python support in Visual Studio thus provides a means to specify search paths directly in both environments and projects. Search paths are passed as the value of `PYTHONPATH` (or equivalent) when you debug or execute your script from Visual Studio. By adding search paths, Visual Studio inspects the libraries in those locations and builds IntelliSense databases for them (constructing the database may take some time depending on the number of libraries).
+因此，Visual Studio 中的 Python 支援提供一個可在環境和專案中直接指定搜尋路徑的方法。 當您從 Visual Studio 對指令碼進行偵錯或執行指令碼時，搜尋路徑會當作 `PYTHONPATH` (或對等項目) 的值來傳遞。 透過新增搜尋路徑，Visual Studio 便會檢查這些位置中的程式庫，並為它們建置 IntelliSense 資料庫 (視程式庫的數目而定，建構資料庫可能需要一些時間)。
 
-To add a search path, right-click on the **Search Paths** item in Solution Explorer, select **Add Folder to Search Path...**, and select the folder to include. This path is used for any environment associated with the project.
+若要新增搜尋路徑，請在 [方案總管] 中的 [Search Paths (搜尋路徑)] 項目上按一下滑鼠右鍵、選取 [Add Folder to Search Path (將資料夾新增到搜尋路徑)]，然後選取要包含的資料夾。 這個路徑會用於與該專案關聯的所有環境。
 
-Files with a `.zip` or `.egg` extension can also be added as search paths by selecting **Add Zip Archive to Search Path...**. As with folders, the contents of these files are scanned and made available to IntelliSense.
+您也可以新增副檔名為 `.zip` 或 `.egg` 的檔案作為搜尋路徑，方法是選取 [Add Zip Archive to Search Path (將 Zip 封存新增到搜尋路徑)]。與使用資料夾時相同，系統會掃描這些檔案的內容並提供給 IntelliSense 使用。
 
 > [!Note]
-> It is possible to add a search path to Python 2.7 modules while you are using Python 3.3, and you may see errors as a result.
+> 您可以在使用 Python 3.3 時新增 Python 2.7 模組的搜尋路徑，但結果可能會看到錯誤。
 
-If you are regularly using the same search paths and the contents do not often change, it may be more efficient to install it into your site-packages folder. It's then be analyzed and stored in the IntelliSense database, is always be associated with the intended environment, and does not require a search path to be added for each project.
-
+如果您固定使用相同的搜尋路徑且內容不常變更，則將它安裝到您的站台套件資料夾中可能會較有效率。 系統會接著對它進行分析並儲存在 IntelliSense 資料庫中，而且一律會與其預期的環境建立關聯，而您不需要為每個專案新增搜尋路徑。

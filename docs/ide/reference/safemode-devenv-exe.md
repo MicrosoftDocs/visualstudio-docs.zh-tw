@@ -1,47 +1,47 @@
 ---
-title: "/SafeMode (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/SafeMode Devenv 參數"
-  - "Devenv, /SafeMode 參數"
-  - "SafeMode 參數"
+title: -SafeMode (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- /SafeMode Devenv switch
+- Devenv, /SafeMode switch
+- SafeMode switch
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
-caps.latest.revision: 5
-caps.handback.revision: 5
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "5"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 72630bd7c16c3830fecddc34a71b7ea1e4cf382c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# /SafeMode (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-在安全模式 \(Safe Mode\) 中啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，只載入預設的環境和服務。  
+# <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
+以安全模式啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，並且只載入預設環境和服務。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 devenv /SafeMode   
 ```  
   
-## 備註  
- 這個參數可在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 啟動時，阻止載入所有協力廠商的 VSPackage，以確保穩定執行。  
+## <a name="remarks"></a>備註  
+ 此參數會在啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 時防止載入所有協力廠商 VSPackages，因而確保穩定執行。  
   
-## 描述  
- 下列範例會在安全模式中啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
+## <a name="description"></a>描述  
+ 下列範例會以安全模式啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。  
   
-## 程式碼  
+## <a name="code"></a>程式碼  
   
 ```  
 Devenv.exe /SafeMode  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

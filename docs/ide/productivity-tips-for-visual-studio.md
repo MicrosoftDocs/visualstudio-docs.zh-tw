@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: ccc5e543-7dcf-465c-97dd-e133e869800c
-caps.latest.revision: 28
-author: kempb
-ms.author: kempb
+caps.latest.revision: "28"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: cc0ac8b3418c725579b25712e14c373028fca339
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: f4778bde9903ce3e264f0209c147eedc227b7d8d
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
 遵循下列提示，您可以在 Visual Studio 中更快速、有效率地撰寫、巡覽及偵錯程式碼。 如需常用鍵盤快速鍵的詳細資訊，請參閱[秘訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)。 如需更完整的清單，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
@@ -91,23 +75,11 @@ ms.lasthandoff: 05/24/2017
   
      若要插入程式碼片段，請在功能表列上依序選擇 [編輯]、[IntelliSense] 和 [插入程式碼片段]，或是開啟檔案中的捷徑功能表，然後選擇 [插入程式碼片段]。 如需詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
   
--   **修正內嵌程式碼錯誤**。 智慧標籤會在程式碼行底下顯示成藍色或紅色方塊。 您可以指向其中一個方塊或將游標放在程式碼行，並選擇 Ctrl + . (句號) 鍵，來顯示智慧標籤選項。  
-  
-     藍色方塊提供修正程式碼錯誤的建議。  
-  
-     圖 1︰錯誤智慧標籤  
-  
-     ![錯誤智慧標籤建議](../ide/media/productivity_bluesmarttags.png "Productivity_BlueSmartTags")  
-  
-     紅色方塊提供重構程式碼的建議。  
-  
-     圖 2︰程式碼重構智慧標籤  
-  
-     ![重構智慧標籤建議](../ide/media/productivity_redsmarttags.png "Productivity_RedSmartTags")  
-  
+-   **修正內嵌程式碼錯誤**。 快速動作可讓您輕鬆地重構、產生或用其他方式以單一動作修改程式碼。 您可以使用燈泡圖示 ![小燈泡圖示](media/vs2015_lightbulbsmall.png "VS2017_LightBulbSmall") 或按 **Alt + Enter** 或 **Ctrl +** 來套用這些動作。 。 如需詳細資訊，請參閱[快速動作](quick-actions.md)。  
+
 -   **顯示和編輯程式碼項目的定義**。 您可以快速顯示和編輯定義程式碼項目 (例如成員、變數或區域) 的模組。  
   
-     若要在快顯視窗中開啟定義，請反白顯示項目，然後選取 Alt+F12 鍵，或者開啟項目的捷徑功能表，然後選擇 [查看定義]。 若要在不同的程式碼視窗中開啟定義，請開啟項目的捷徑功能表，然後選擇 [移至定義]。  
+     若要在快顯視窗中開啟定義，請反白顯示項目，然後選取 **Alt+F12** 鍵，或者開啟項目的捷徑功能表，然後選擇 [查看定義]。 若要在不同的程式碼視窗中開啟定義，請開啟項目的捷徑功能表，然後選擇 [移至定義]。  
   
 ##  <a name="BKMK_Navigating"></a> 在您的程式碼中巡覽  
  您可以利用各種技巧，更快速地尋找和移動至程式碼中的某個位置。  
@@ -142,7 +114,7 @@ ms.lasthandoff: 05/24/2017
   
 -   **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認在偵錯或檢視頁面時要使用哪一個瀏覽器。  
   
-     ![選取網頁瀏覽器偵錯選項](~/ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
+     ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")  
   
 -   **設定暫時中斷點**。 您可以在目前的程式碼行建立暫時中斷點並同時啟動偵錯工具。 當您執行至該行程式碼時，偵錯工具將進入中斷模式。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。  
   

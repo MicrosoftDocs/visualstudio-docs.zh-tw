@@ -1,27 +1,24 @@
 ---
 title: "安裝 Visual Studio R 工具 | Microsoft Docs"
 ms.custom: 
-ms.date: 6/29/2017
+ms.date: 10/20/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-r
+ms.technology: devlang-r
 ms.tgt_pltfrm: 
 ms.devlang: r
 ms.topic: article
 ms.assetid: 3ff60292-1b88-4ee9-b2b2-edd957f1a519
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7a509743ce09f2bbfb69b62060abedb48e9777b6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 712cc780388acc5e373f71d51fc8f1f42adb5bed
-ms.openlocfilehash: 8e35c82a5f8583a609e9fccbacb0b27d9c3eac8f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/12/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安裝 Visual Studio R 工具
 
 本主題內容：
@@ -32,7 +29,7 @@ ms.lasthandoff: 07/12/2017
 - [離線安裝](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
-> 安裝 R 工具之後，您可能要設定 Visual Studio 以取得最佳化資料科學家版面配置，如[選項](options.md#data-scientist-layout)主題所述。
+> 安裝 R 工具之後，您可能要設定 Visual Studio 以取得最佳化資料科學家版面配置，如[選項](options.md)主題所述。
 
 ## <a name="supported-versions-of-visual-studio"></a>支援的 Visual Studio 版本
 
@@ -69,9 +66,12 @@ Microsoft R Open 和 CRAN R 都允許多個並行版本。 不過，Microsoft R 
 
 ### <a name="install-the-r-tools"></a>安裝 R 工具
 
-從 [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current) 下載目前 RTVS。 RTVS 會檢查適合的 Visual Studio 版本，並協助您安裝 R 解譯器 (若尚未安裝)。
+從 [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current) 下載目前 RTVS for Visual Studio 2015。 RTVS 會檢查適合的 Visual Studio 版本，並協助您安裝 R 解譯器 (若尚未安裝)。
 
-RTVS 會安裝在︰`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
+> [!Note]
+> 獨立 RTVS 安裝程式只能與 Visual Studio 2015 搭配運作；與 Visual Studio 2017 搭配運作時，透過如前所述的[資料科學與分析應用程式工作負載](#installing-rtvs-in-visual-studio-2017)來安裝 R 支援。
+
+RTVS for Visual Studio 2015 會安裝在：`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 
 ## <a name="offline-installation-of-visual-studio-and-rtvs"></a>Visual Studio and RTVS 的離線安裝
 
@@ -82,7 +82,7 @@ RTVS 會安裝在︰`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\
     - [Visual Studio 2017](../install/create-an-offline-installation-of-visual-studio.md)
     - [Visual Studio 2015](https://msdn.microsoft.com/library/mt706497.aspx)
 
-1. 從 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下載離線 RTVS 安裝程式。 
+1. 針對 Visual Studio 2015，從 [https://aka.ms/rtvs-current-zip](https://aka.ms/rtvs-current-zip) 和 [https://aka.ms/rtvs-remote-zip](https://aka.ms/rtvs-remote-zip) 下載離線 RTVS 安裝程式。 
 
 1. 從離線安裝程式安裝 Visual Studio 和 RTVS。
 
@@ -92,4 +92,3 @@ RTVS 會安裝在︰`%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\
 - [R 工具範例專案](getting-started-samples.md)
 - [取得協助](getting-started-help.md)
 - [選項設定](options.md)
-

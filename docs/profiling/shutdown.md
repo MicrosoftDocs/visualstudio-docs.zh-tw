@@ -1,41 +1,42 @@
 ---
 title: "關機 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: a1e37500-4ad1-4670-9737-3d9a20536386
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 822d9a15a248a72c19d41d548dcb68092c43d268
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 關機
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-**Shutdown** 選項會等候所有目前正在進行程式碼剖析的處理序結束或中斷連結，然後才關閉程式碼剖析工具並關閉程式碼剖析資料檔案。  **Shutdown** 選項必須是執行程式碼剖析的最後一個命令。  
+# <a name="shutdown"></a>關機
+[關機] 選項等候任何目前已分析的處理序結束或中斷連接，然後關閉分析工具，結束分析資料檔案。 [關機] 選項必須是分析執行的最後一道命令。  
   
- 如果未指定逾時參數，則 **Shutdown** 選項會無限期等候。  如果已指定逾時參數，則此選項會在指定的秒數之後傳回，而不會關閉程式碼剖析工具或關閉資料檔案。  
+ 如未指定逾時參數，[關機] 選項會無限期等候。 如已指定逾時參數，則此選項會在指定的秒數後傳回，不關閉分析工具或結束資料檔。  
   
- **Shutdown** 選項必須是命令列上指定的唯一選項。  
+ [關機] 選項必須是命令列上指定的唯一選項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 VSPerfCmd.exe /Shutdown[:Timeout]  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `Timeout`  
- -   \(選擇性\) 如果已指定，則此選項會在指定的秒數之後傳回，而不會關閉程式碼剖析工具或關閉程式碼剖析資料檔案。  
+ -   (選擇性) 如已指定，則此選項會在指定的秒數後傳回，不關閉分析工具或結束分析資料檔。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

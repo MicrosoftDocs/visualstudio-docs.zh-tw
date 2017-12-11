@@ -1,61 +1,62 @@
 ---
-title: "如何：建立多專案的範本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "多專案的範本"
-  - "專案範本, 建立多專案的範本"
-  - "Visual Studio 範本, 建立多專案的範本"
+title: "如何：建立多專案範本 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-project templates
+- project templates, creating multi-project templates
+- multi-project templates
 ms.assetid: 8c7f7065-137e-40ad-868d-37e007270efd
-caps.latest.revision: 16
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 16
+caps.latest.revision: "16"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 9d4ffd6c3aa23ebc2b801de2d581876ff5afd480
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：建立多專案的範本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-多專案範本是做為兩個以上專案的容器使用。  當您從 \[**新增專案**\] 對話方塊建立一個根據多專案範本的專案時，則該範本中的每一個專案都會加入至方案。  
+# <a name="how-to-create-multi-project-templates"></a>如何：建立多專案的範本
+多專案範本是做為兩個以上專案的容器使用。 從 [新增專案] 對話方塊建立，根據多專案範本的專案時，範本中的每個專案都會新增至解決方案。  
   
- 多專案範本必須包含下列項目，這些項目都被壓縮成一個 .zip 檔：  
+ 多專案範本必須包含下列項目，且壓縮成 .zip 檔案：  
   
--   整個多專案範本的根 .vstemplate 檔案。  這個根 .vstemplate 檔案包含 \[**新增專案**\] 對話方塊所顯示的中繼資料，此資料指定要在何處尋找這個範本中專案的 .vstemplate 檔。  這個檔案必須位於 .zip 檔的根目錄。  
+-   整個多專案範本的根 .vstemplate 檔案。 這個根 .vstemplate 檔案中包含 [新增專案] 對話方塊顯示的中繼資料，並指定何處可找到此範本中之專案的 .vstemplate 檔案。 這個檔案必須位於 .zip 檔案的根目錄。  
   
--   包含完整專案範本所需之檔案的一個或多個資料夾。  這包括了專案的所有程式碼檔以及專案的 .vstemplate 檔。  
+-   包含完整專案範本所需之檔案的一或多個資料夾。 這包括專案的所有程式碼檔案，以及專案的 .vstemplate 檔案。  
   
- 例如，具有兩個專案的多專案範本其 .zip 檔可能包含下列檔案和目錄：  
+ 例如，有兩個專案的多專案範本 .zip 檔，可能有下列檔案和目錄：  
   
  MultiProjectTemplate.vstemplate  
   
- \\Project1\\Project1.vstemplate  
+ \Project1\Project1.vstemplate  
   
- \\Project1\\Project1.vbproj  
+ \Project1\Project1.vbproj  
   
- \\Project1\\Class.vb  
+ \Project1\Class.vb  
   
- \\Project2\\Project2.vstemplate  
+ \Project2\Project2.vstemplate  
   
- \\Project2\\Project2.vbproj  
+ \Project2\Project2.vbproj  
   
- \\Project2\\Class.vb  
+ \Project2\Class.vb  
   
- 多專案範本的根 .vstemplate 檔案與單一專案範本的差異如下：  
+ 多專案範本的根 .vstemplate 檔案與單一專案範本在下列幾點有所不同：  
   
--   `VSTemplate` 項目的 `Type` 屬性 \(Attribute\) 包含 `ProjectGroup` 值。  例如：  
+-   `VSTemplate` 項目的 `Type` 屬性包含值 `ProjectGroup`。 例如：  
   
     ```  
     <VSTemplate Version="2.0.0" Type="ProjectGroup"  
         xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">  
     ```  
   
--   `TemplateContent` 項目所包含的 `ProjectCollection` 項目具有一個或多個 `ProjectTemplateLink` 項目，用以定義所包含之專案的 .vstemplate 檔路徑。  例如：  
+-   `TemplateContent` 項目包含 `ProjectCollection` 項目，它具有一或多個 `ProjectTemplateLink` 項目，後者會定義所包含專案的 .vstemplate 檔案路徑。 例如：  
   
     ```  
     <TemplateContent>  
@@ -70,26 +71,26 @@ caps.handback.revision: 16
     </TemplateContent>  
     ```  
   
- 多專案範本的運作方式也與一般範本不同。  多專案範本擁有以下與眾不同的特性：  
+ 多專案範本的行為也與一般範本不同。 多專案範本具有下列獨特的特性：  
   
--   多專案範本中的個別專案無法透過 \[**新增專案**\] 對話方塊指派名稱。  您可以改為使用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性 \(Attribute\)，指定每個專案的名稱。  如需詳細資訊，請參閱下節中的第一個範例。  
+-   多專案範本中的個別專案不能由 [新增專案] 對話方塊來指派名稱。 請改用 `ProjectTemplateLink` 項目上的 `ProjectName` 屬性來指定每個專案的名稱。 如需詳細資訊，請參閱下節的第一個範例。  
   
--   多專案範本可包含以不同語言撰寫的專案，但是整個範本本身只能放在一個分類中 \(利用 `ProjectType` 項目\)。  
+-   多專案範本可以包含以不同語言撰寫的專案，但整個範本本身只能使用 `ProjectType` 項目放在一個分類。  
   
-### 若要建立多專案範本  
+### <a name="to-create-a-multi-project-template"></a>建立多專案範本  
   
-1.  建立要包含在多專案範本中的專案。  
+1.  建立要包含在多專案範本的專案。  
   
-2.  為每一個專案建立 .vstemplate 檔。  如需詳細資訊，請參閱 [如何：建立專案範本](../ide/how-to-create-project-templates.md)。  
+2.  建立每個專案的 .vstemplate 檔案。 如需詳細資訊，請參閱[如何：建立專案範本](../ide/how-to-create-project-templates.md)。  
   
-3.  建立根 .vstemplate 檔案，該檔將包含多專案範本的中繼資料。  如需詳細資訊，請參閱下節中的第一個範例。  
+3.  建立根 .vstemplate 檔案來包含多專案範本的中繼資料。 如需詳細資訊，請參閱下節的第一個範例。  
   
-4.  選取範本所包含的檔案和資料夾，以滑鼠右鍵按一下選取項目，按一下 \[**傳送到**\]，再按一下 \[**壓縮的 \(zipped\) 資料夾**\]。  檔案和資料夾便壓縮成 .zip 檔。  
+4.  選取要包含在範本中的檔案和資料夾，在選取項目上按一下滑鼠右鍵，按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 檔案和資料夾即會壓縮成 .zip 檔案。  
   
-5.  將 .zip 範本檔放置在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本目錄中。  根據預設，此目錄是 \\My Documents\\Visual Studio*版本*\\Templates\\ProjectTemplates\\。  
+5.  將 .zip 範本檔放在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本目錄。 此目錄預設為 \My Documents\Visual Studio <版本>\Templates\ProjectTemplates\\。  
   
-## 範例  
- 這個範例顯示基本的多專案根 .vstemplate 檔案。  在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。  `ProjectTemplateLink` 項目的 `ProjectName` 屬性會設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的名稱，以指派此專案。  如果 `ProjectName` 屬性不存在，則 .vstemplate 檔案的名稱會做為專案名稱。  
+## <a name="example"></a>範例  
+ 這個範例將示範基本的多專案根 .vstemplate 檔案。 在這個範例中，範本包含兩個專案 `My Windows Application` 和 `My Class Library`。 `ProjectName` 項目的 `ProjectTemplateLink` 屬性會設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的名稱，以指派此專案。 如果 `ProjectName` 屬性不存在，則 .vstemplate 檔案的名稱會做為專案名稱。  
   
 ```  
 <VSTemplate Version="2.0.0" Type="ProjectGroup"  
@@ -113,8 +114,8 @@ caps.handback.revision: 16
 </VSTemplate>  
 ```  
   
-## 範例  
- 這個範例使用 `SolutionFolder` 項目將專案分成 `Math Classes` 和 `Graphics Classes` 兩個群組。  範本中包含了四個專案，每個方案資料夾中都放置了兩個專案。  
+## <a name="example"></a>範例  
+ 這個範例會使用 `SolutionFolder` 項目將專案分成兩個群組，也就是 `Math Classes` 和 `Graphics Classes`。 範本包含四個專案，每個方案資料夾各包含兩個專案。  
   
 ```  
 <VSTemplate Version="2.0.0" Type="ProjectGroup"  
@@ -148,10 +149,10 @@ caps.handback.revision: 16
 </VSTemplate>  
 ```  
   
-## 請參閱  
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另請參閱  
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
- [SolutionFolder 項目 \(Visual Studio 範本\)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
- [ProjectTemplateLink 項目 \(Visual Studio 範本\)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+ [SolutionFolder 項目 (Visual Studio 範本)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
+ [ProjectTemplateLink 元素 (Visual Studio 範本)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

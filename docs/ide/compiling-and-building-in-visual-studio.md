@@ -1,32 +1,29 @@
 ---
 title: "在 Visual Studio 中編譯與建置 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - builds [Visual Studio], about building in Visual Studio
 - custom build steps, types of builds
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 5918c0070be747f7ebdca9d789d5706820b93e20
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 1a2db8a10664e1d4b38b1d6867c5a3bad1532b39
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/10/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio"></a>在 Visual Studio 中編譯與建置
 
-執行建置便可在您開發週期的任何時間點，從原始程式碼建立組件及可執行應用程式。 不同專案類型 (如 Windows、ASP.NET、行動裝置及其他類型) 進行的建置流程大致上都很相似。 不同的程式語言 (如 C#、Visual Basic、C++ 和 F#) 也進行類似的建置流程。 
+執行組建便可在您開發週期的任何時間點，從原始程式碼建立組件和可執行應用程式。 不同專案類型 (如 Windows、ASP.NET、行動裝置及其他類型) 進行的建置流程大致上都很相似。 不同的程式語言 (如 C#、Visual Basic、C++ 和 F#) 也進行類似的建置流程。 
 
 經常建置程式碼讓您可以迅速識別編譯錯誤，例如語法不正確、關鍵字拼字錯誤和類型不相符。 時常建置和執行程式碼的偵錯版本也可讓您快速偵測並更正執行階段錯誤，像是邏輯錯誤和語意錯誤。  
 
@@ -61,4 +58,3 @@ Visual Studio 產品系列中，您可採用三種方式建置應用程式：Vis
 ## <a name="see-also"></a>另請參閱  
 
 - [建置 (編譯) 網站專案](http://msdn.microsoft.com/Library/a9cbb88c-8fff-4c67-848b-98fbfd823193)   
-

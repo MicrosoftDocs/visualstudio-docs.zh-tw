@@ -1,22 +1,25 @@
 ---
 title: "MSBuild 工作 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "工作"
-  - "MSBuild 工作"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- tasks
+- MSBuild, tasks
 ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
-caps.latest.revision: 18
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 18
+caps.latest.revision: "18"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
@@ -24,11 +27,11 @@ caps.handback.revision: 18
 ## <a name="task-logic"></a>工作邏輯  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 專案檔格式無法完全獨立執行建置作業，因此，必須在專案檔以外的地方實作工作邏輯。  
   
- 工作的執行邏輯會實作為 .NET 類別，此類別會 實作 <xref:Microsoft.Build.Framework.ITask> 介面，而其定義於 <xref:Microsoft.Build.Framework> 命名空間中。  
+ 工作的執行邏輯會實作為 .NET 類別，此類別會實作 <xref:Microsoft.Build.Framework> 命名空間中所定義的 <xref:Microsoft.Build.Framework.ITask> 介面。  
   
  工作類別也會定義可供專案檔中的工作使用的輸入和輸出參數。 由工作類別公開的所有公用、可設定、非靜態且非抽象的屬性都可在專案檔中加以存取，方法是在 [Task](../msbuild/task-element-msbuild.md) 項目上放置具有相同名稱的對應屬性。  
   
- 您可以撰寫 Managed 類別來實作 <xref:Microsoft.Build.Framework.ITask> 介面，藉以撰寫自己的工作。 如需詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
+ 若要撰寫自己的工作，請編寫可實作 <xref:Microsoft.Build.Framework.ITask> 介面的 Managed 類別。 如需詳細資訊，請參閱[工作撰寫](../msbuild/task-writing.md)。  
   
 ## <a name="executing-a-task-from-a-project-file"></a>從專案檔執行工作  
  在執行專案檔中的工作之前，您必須先使用 [UsingTask](../msbuild/usingtask-element-msbuild.md) 項目，將實作工作之組件中的類型對應到工作名稱。 這讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 知道，如果它在您的專案檔中找到工作，應該到何處尋找該工作的執行邏輯。  
@@ -69,8 +72,3 @@ caps.handback.revision: 18
  [MSBuild](../msbuild/msbuild.md)   
  [工作撰寫](../msbuild/task-writing.md)   
  [內嵌工作](../msbuild/msbuild-inline-tasks.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

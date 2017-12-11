@@ -3,16 +3,14 @@ layout: LandingPage
 author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
-title: "使用 Visual Studio 來撰寫和管理程式碼的文件"
+title: "使用 Visual Studio 來撰寫和管理程式碼的文件 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 中的程式碼編輯器和其他工具來撰寫、瀏覽、管理及改善您的程式碼。"
-ms.technology:
-- vs-ide-general
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 91fde66abf2f325ef0a6a0a2fd30e36981f44033
-ms.openlocfilehash: 041e8ca9989b88d4d237e1ae64a051483bc09fb2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/08/2017
-
+ms.technology: vs-ide-general
+ms.openlocfilehash: bc08b4822f411587db76f648e2b3ba508d513fb3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="write-and-manage-code-using-visual-studio-documentation"></a>使用 Visual Studio 來撰寫和管理程式碼的文件
 
@@ -182,4 +180,3 @@ ms.lasthandoff: 03/08/2017
         </div>
     </li>
 </ul>
-

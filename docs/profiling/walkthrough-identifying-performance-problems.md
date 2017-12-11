@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - performance, analyzing
 - profiling applications, walkthroughs
 ms.assetid: 36f6f123-0c14-4763-99c3-bd60ecb95b87
-caps.latest.revision: 53
+caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: a20a64818982484a56ba7dc82af890c729da40e4
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 本逐步解說將示範如何剖析應用程式以找出效能問題。  
@@ -105,7 +89,7 @@ ms.lasthandoff: 04/05/2017
   
 2.  [函式詳細資料] 檢視包含兩個視窗。 [成本分配] 視窗提供下列項目的圖形檢視：函式已完成的工作、它呼叫的函式已完成的工作，以及呼叫此函式之函式對取樣執行個體數目的比重。 您可以按一下函式名稱以變更檢視的焦點函式。 例如，您可以按一下 PeopleNS.People.GetPeople，讓 GetPeople 成為選取的函式。  
   
-     [函式程式碼檢視] 視窗會顯示函式函式原始程式碼 (若可用)，並且反白顯示選取的函式中耗費最多資源的程式行。 選取 GetNames 時，您會發現這個函式從應用程式資源讀取字串，然後使用 <xref:System.IO.StringReader> 將字串中的每一行加入至 <xref:System.Collections.ArrayList>。 沒有顯著方式可以最佳化這個函式。  
+     [函式程式碼檢視] 視窗會顯示函式函式原始程式碼 (若可用)，並且反白顯示選取的函式中耗費最多資源的程式行。 選取 GetNames 時，您可以看到這個函式會從應用程式資源讀取字串，然後使用 <xref:System.IO.StringReader> 將字串中的每一行新增至 <xref:System.Collections.ArrayList>。 沒有顯著方式可以最佳化這個函式。  
   
 3.  因為 PeopleNS.People.GetPeople 是 GetNames 的唯一呼叫端，請按一下 [成本分配] 視窗中的 [GetPeople] 來檢查其程式碼。 這個方法會從 GetNames 所產生的人員和公司名稱傳回 PersonInformationNS.PersonInformation 物件的 <xref:System.Collections.ArrayList>。 不過，每次建立 PersonInformation 物件時會呼叫 GetNames 兩次。 您會發現只要在方法開頭建立清單一次，然後在 PersonInformation 建立迴圈期間在這些清單中索引，即可輕鬆最佳化方法。  
   
@@ -158,7 +142,7 @@ ms.lasthandoff: 04/05/2017
   
 3.  您會發現 PeopleTrax.Form1.ExportData 是呼叫 Concat 的唯一方法。 按一下 [呼叫函式] 清單中的 [PeopleTrax.Form1.ExportData]，選取此方法做為 [函式詳細資料] 檢視的目標。  
   
-4.  檢查 [函式程式碼檢視] 視窗中的方法。 請注意，並沒有 **System.String.Concat** 的常值呼叫。 相反地，有數個地方使用 += 運算元，編譯器將其取代為 **System.String.Concat** 的呼叫。 在 .NET Framework 中對一個字串所做的任何修改，都會導致一個新字串受到配置。 這是因為 .NET Framework 含有 <xref:System.Text.StringBuilder> 類別，此類別會針對字串的串連進行最佳化  
+4.  檢查 [函式程式碼檢視] 視窗中的方法。 請注意，並沒有 **System.String.Concat** 的常值呼叫。 相反地，有數個地方使用 += 運算元，編譯器將其取代為 **System.String.Concat** 的呼叫。 在 .NET Framework 中對一個字串所做的任何修改，都會導致一個新字串受到配置。 .NET Framework 含有 <xref:System.Text.StringBuilder> 類別，此類別會針對字串的串連進行最佳化  
   
 5.  若要以最佳化的程式碼取代這個有問題的區域，請將 OPTIMIZED_EXPORTDATA 以條件式編譯符號的方式加入至 PeopleTrax 專案。  
   

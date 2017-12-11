@@ -1,35 +1,35 @@
 ---
 title: "Item 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, Item 函式"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
-caps.latest.revision: 28
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 28
+caps.latest.revision: "28"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Item 函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式，以取得有關專案中項目的資訊。  這些函式可以簡化取得 Distinct\(\) 項目，並且比執行項目迴圈的速度更快。  
+# <a name="item-functions"></a>Item 函式
+從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式來取得專案中項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。  
   
-## 字串項目函式  
- 在 .NET Framework 中使用字串方法和屬性在所有項目值。  對於 <xref:System.String> 方法，指定方法名稱。  對於 <xref:System.String> 屬性，請在「get\_」之後指定屬性名稱。  
+## <a name="string-item-functions"></a>字串項目函式  
+ 您可以使用 .NET Framework 中的字串方法和屬性，來操作任何項目值。 針對 <xref:System.String> 方法，指定方法名稱。 針對 <xref:System.String> 屬性，在 "get_" 後面指定屬性名稱。  
   
- 有多個字串、字串方法或屬性會在每個資料項目之的。  
+ 針對有多個字串的項目，字串方法或屬性是在每個字串上執行。  
   
- 下列範例顯示如何使用這些字串項目的函式。  
+ 下列範例示範如何使用這些字串項目函式。  
   
-```  
+```xml  
 <ItemGroup>  
     <theItem Include="andromeda;tadpole;cartwheel" />  
 </ItemGroup>  
@@ -50,25 +50,25 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## 內部項目函式  
- 下表列出項目可使用的內建函式。  
+## <a name="intrinsic-item-functions"></a>內建項目函式  
+ 下表列出項目可用的內建函式。  
   
-|Function|範例|描述|  
-|--------------|--------|--------|  
-|`Count`|`@(MyItem->Count())`|傳回項目的計數。|  
-|`DirectoryName`|`@(MyItem->DirectoryName())`|傳回 `Path.DirectoryName` 對等的每個項目的。|  
-|`Distinct`|`@(MyItem->Distinct())`|傳回具有不同 `Include` 值的項目。  中繼資料會被忽略。  比較時不區分大小寫。|  
-|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|傳回具有不同 `itemspec` 值的項目。  中繼資料會被忽略。  比較時會區分大小寫。|  
-|`Reverse`|`@(MyItem->Reverse())`|傳回以反向順序的項目。|  
-|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|傳回 `boolean` 表示任何項目是否有指定的中繼資料名稱和值。  比較時不區分大小寫。|  
-|`ClearMetadata`|`@(MyItem->ClearMetadata())`|傳回與其已清除中繼資料的項目。  只 `itemspec` 保留。|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName")`|傳回具有指定之中繼資料名稱的項目。  比較時不區分大小寫。|  
-|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|傳回具有中繼資料名稱中繼資料的值。|  
-|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue")`|傳回具有指定之中繼資料名稱和值的項目。  比較時不區分大小寫。|  
+|函式|範例|說明|  
+|--------------|-------------|-----------------|  
+|`Count`|`@(MyItem->Count())`|傳回項目計數。|  
+|`DirectoryName`|`@(MyItem->DirectoryName())`|傳回每個項目之 `Path.DirectoryName` 的對等項目。|  
+|`Distinct`|`@(MyItem->Distinct())`|傳回具有相異 `Include` 值的項目。 會略過中繼資料。 比較不區分大小寫。|  
+|`DistinctWithCase`|`@(MyItem->DistinctWithCase())`|傳回具有相異 `itemspec` 值的項目。 會略過中繼資料。 比較會區分大小寫。|  
+|`Reverse`|`@(MyItem->Reverse())`|以反向順序傳回項目。|  
+|`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|傳回 `boolean`，以指出任何項目是否具有指定的中繼資料名稱和值。 比較不區分大小寫。|  
+|`ClearMetadata`|`@(MyItem->ClearMetadata())`|傳回已清除其中繼資料的項目。 只會保留 `itemspec`。|  
+|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|傳回具有所指定中繼資料名稱的項目。 比較不區分大小寫。|  
+|`Metadata`|`@(MyItem->Metadata("MetadataName"))`|傳回具有中繼資料名稱的中繼資料值。|  
+|`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|傳回具有所指定中繼資料名稱和值的項目。 比較不區分大小寫。|  
   
- 下列範例顯示如何使用內部項目的函式。  
+ 下列範例示範如何使用內建項目函式。  
   
-```  
+```xml  
 <ItemGroup>  
     <TheItem Include="first">  
         <Plant>geranium</Plant>  
@@ -101,5 +101,5 @@ caps.handback.revision: 28
   -->  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [項目](../msbuild/msbuild-items.md)

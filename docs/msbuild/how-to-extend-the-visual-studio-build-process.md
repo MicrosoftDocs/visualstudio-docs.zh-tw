@@ -1,44 +1,45 @@
 ---
 title: "如何：擴充 Visual Studio 建置處理序 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, DependsOn 屬性"
-  - "MSBuild, 擴充 Visual Studio"
-  - "MSBuild, 覆寫 DependsOn 屬性"
-  - "MSBuild, 覆寫預先定義的目標"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, overriding predefined targets
+- MSBuild, overriding DependsOn properties
+- MSBuild, extending Visual Studio builds
+- MSBuild, DependsOn properties
 ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
-caps.latest.revision: 8
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：擴充 Visual Studio 建置處理序
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由一系列匯入至您的專案檔的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義，  其中一個匯入的檔案 \(即 Microsoft.Common.targets\) 可加以擴充，好讓您能夠在建置處理序的幾個時間點執行自訂的工作。  這個主題將說明您可以用來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序的兩種方法：  
+# <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本主題說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序：  
   
--   覆寫定義於 Microsoft.Common.targets 內特定之預先定義的目標。  
+-   覆寫 Microsoft.Common.targets 中所定義的特定預先定義目標。  
   
--   覆寫 Microsoft.Common.targets 內定義的 "DependsOn" 屬性。  
+-   覆寫 Microsoft.Common.targets 中所定義的 "DependsOn" 屬性。  
   
-## 覆寫預先定義的目標  
- Microsoft.Common.targets 檔案包含一組預先定義的空目標，這些目標會在建置處理序內的某些主要目標前後呼叫。  例如，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在主要的 `CoreBuild` 目標之前呼叫 `BeforeBuild` 目標，並在 `CoreBuild` 目標之後呼叫 `AfterBuild` 目標。  根據預設，Microsoft.Common.targets 內的空目標不會執行任何動作，不過您可以在匯入 Microsoft.Common.targets 的專案檔內定義所需的目標，以覆寫其預設行為。  進行這項處理之後，您就可以使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作，讓您對於整個建置處理序有更多控制權。  
+## <a name="overriding-predefined-targets"></a>覆寫預先定義的目標  
+ Microsoft.Common.targets 檔案包含一組預先定義的空目標，可在建置處理序的部分主要目標之前和之後呼叫。 例如，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 在主要 `CoreBuild` 目標之前呼叫 `BeforeBuild` 目標，而在 `CoreBuild` 目標之後呼叫 `AfterBuild` 目標。 Microsoft.Common.targets 中的空目標預設不會執行任何作業，但是您可以在匯入 Microsoft.Common.targets 的專案檔中定義您想要的目標，來覆寫其預設行為。 若要這麼做，您可以使用 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作，更充分地控制建置處理序。  
   
-#### 若要覆寫預先定義的目標  
+#### <a name="to-override-a-predefined-target"></a>覆寫預先定義的目標  
   
-1.  在您想要覆寫的 Microsoft.Common.targets 內找出預先定義的目標。  請參閱下表，其中包含完整的目標清單，您可以安心地覆寫這些目標。  
+1.  識別 Microsoft.Common.targets 中您要覆寫的預先定義目標。 如需您可安全覆寫之目標的完整清單，請參閱下表。  
   
-2.  定義在專案檔結尾、緊接在 `</Project>` 標記 \(Tag\) 之前的一或多個目標。  例如：  
+2.  在專案檔結尾，於 `</Project>` 標記的正前方定義目標。 例如：  
   
-    ```  
+    ```xml  
     <Project>  
         ...  
         <Target Name="BeforeBuild">  
@@ -50,32 +51,32 @@ caps.handback.revision: 8
     </Project>  
     ```  
   
-3.  建置此專案檔。  
+3.  建置專案檔。  
   
- 下表顯示您可以在 Microsoft.Common.targets 內安心覆寫的所有目標。  
+ 下表顯示 Microsoft.Common.targets 中您可安全覆寫的所有目標。  
   
 |目標名稱|描述|  
-|----------|--------|  
-|`BeforeCompile`, `AfterCompile`|插入其中一個目標的工作會在核心編譯 \(Compilation\) 完成之前或之後執行。  大多數的自訂動作會在這兩個目標的其中一個內完成。|  
-|`BeforeBuild`, `AfterBuild`|插入其中一個目標的工作將會在建置中任何其他動作之前或之後執行。 **Note:**  `BeforeBuild` 和 `AfterBuild` 目標已在大多數專案檔結尾的註解中定義。  如此可讓您輕鬆地將建置前和建置後的事件加入至專案檔中。|  
-|`BeforeRebuild`, `AfterRebuild`|插入其中一個目標的工作會在叫用 \(Invoke\) 核心重建功能之前或之後執行。  Microsoft.Common.targets 內的目標執行順序為：`BeforeRebuild`、`Clean`、`Build`，然後是 `AfterRebuild`。|  
-|`BeforeClean`, `AfterClean`|插入其中一個目標的工作會在叫用核心清除功能之前或之後執行。|  
-|`BeforePublish`, `AfterPublish`|插入其中一個目標的工作會在叫用核心發行功能之前或之後執行。|  
-|`BeforeResolveReference`, `AfterResolveReferences`|插入其中一個目標的工作會在解析組件參考之前或之後執行。|  
-|`BeforeResGen`, `AfterResGen`|插入其中一個目標的工作會在產生資源之前或之後執行。|  
+|-----------------|-----------------|  
+|`BeforeCompile`, `AfterCompile`|在核心編譯完成之前或之後，會執行插入至其中一個目標的工作。 大部分的自訂是在這兩個目標的其中一個中完成。|  
+|`BeforeBuild`, `AfterBuild`|在組建的任何其他項目之前或之後，將會執行其中一個目標中插入的工作。 **注意：**在大部分專案檔結尾的註解中，已定義 `BeforeBuild` 和 `AfterBuild` 目標。 這可讓您輕鬆地將建置前和建置後事件新增至專案檔。|  
+|`BeforeRebuild`, `AfterRebuild`|在叫用核心重建功能之前或之後，執行插入至其中一個目標的工作。 Microsoft.Common.targets 中的目標執行順序是：`BeforeRebuild`、`Clean`、`Build` 和 `AfterRebuild`。|  
+|`BeforeClean`, `AfterClean`|在叫用核心清除功能之前或之後，執行插入至其中一個目標的工作。|  
+|`BeforePublish`, `AfterPublish`|在叫用核心發行功能之前或之後，執行插入至其中一個目標的工作。|  
+|`BeforeResolveReference`, `AfterResolveReferences`|在解析組件參考之前或之後，會執行插入至其中一個目標的工作。|  
+|`BeforeResGen`, `AfterResGen`|在產生資源之前或之後，會執行插入至其中一個目標的工作。|  
   
-## 覆寫 "DependsOn" 屬性  
- 覆寫預先定義的目標是擴充建置處理序的簡單方法，不過，由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會依序評估目標的定義，因此，無法防止匯入您專案的另一個專案覆寫您已覆寫的目標。  因此，在匯入所有其他專案後，該專案檔內定義的最後一個 `AfterBuild` 目標將會成為建置期間使用的目標。  
+## <a name="overriding-dependson-properties"></a>覆寫 "DependsOn" 屬性  
+ 覆寫預先定義的目標是擴充建置處理序的簡單方法，但因為 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會循序評估目標的定義，所以沒有任何方法可防止另一個匯入您專案的專案覆寫您已覆寫的目標。 因此，例如，在匯入所有其他專案之後，專案檔中所定義的最後一個 `AfterBuild` 目標就是建置期間所使用的目標。  
   
- 您可以覆寫整個 Microsoft.Common.targets 檔案內，於 `DependsOnTargets` 屬性 \(Attribute\) 中所使用的 "DependsOn" 屬性 \(Property\)，以防止不小心覆寫了目標。  例如，`Build` 目標包含一個值為 `"$(BuildDependsOn)"` 的 `DependsOnTargets` 屬性。  請考量：  
+ 您可以覆寫整個 Microsoft.Common.targets 檔案之 `DependsOnTargets` 屬性中所使用的 "DependsOn" 屬性，來防止意外覆寫目標。 例如，`Build` 目標包含 `"$(BuildDependsOn)"` 的 `DependsOnTargets` 屬性值。 請考慮：  
   
-```  
+```xml  
 <Target Name="Build" DependsOnTargets="$(BuildDependsOn)"/>  
 ```  
   
- 這個 XML 片段指示在執行 `Build` 目標之前，必須先執行 `BuildDependsOn` 屬性內指定的所有目標。  `BuildDependsOn` 屬性定義如下：  
+ 這部分的 XML 指出必須先執行 `BuildDependsOn` 屬性中所指定的所有目標，才能執行 `Build` 目標。 `BuildDependsOn` 屬性定義為：  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         BeforeBuild;  
@@ -85,9 +86,9 @@ caps.handback.revision: 8
 </PropertyGroup>  
 ```  
   
- 您可以在專案檔的結尾宣告另一個名為 `BuildDependsOn` 的屬性，以覆寫這個屬性值。  在新的屬性內包含前一個 `BuildDependsOn` 屬性，就可以將新的目標加入目標清單的開頭和結尾。  例如：  
+ 您可以在專案檔結尾宣告名為 `BuildDependsOn` 的另一個屬性，來覆寫此屬性值。 在新屬性中包含先前的 `BuildDependsOn` 屬性，即可將新目標新增至目標清單開頭和結尾。 例如：  
   
-```  
+```xml  
 <PropertyGroup>  
     <BuildDependsOn>  
         MyCustomTarget1;  
@@ -104,27 +105,27 @@ caps.handback.revision: 8
 </Target>  
 ```  
   
- 匯入專案檔的專案可以覆寫 \(Override\) 這些屬性，而不會覆寫 \(Overwrite\) 您所做的自訂工作。  
+ 匯入您專案檔的專案可以覆寫這些屬性，而不覆寫您進行的自訂。  
   
-#### 若要覆寫 "DependsOn" 屬性  
+#### <a name="to-override-a-dependson-property"></a>覆寫 "DependsOn" 屬性  
   
-1.  在您想要覆寫的 Microsoft.Common.targets 內找出預先定義的 "DependsOn" 屬性。  請參閱下表，以取得通常會覆寫的 "DependsOn" 屬性清單。  
+1.  識別 Microsoft.Common.targets 中您要覆寫的預先定義 "DependsOn" 屬性。 如需經常覆寫的 "DependsOn" 屬性清單，請參閱下表。  
   
-2.  定義位於專案檔結尾的一或多個屬性的另一個執行個體。  在新的屬性內包含原始屬性，例如 `$(BuildDependsOn)`。  
+2.  在專案檔結尾定義另一個屬性執行個體。 在新屬性中，包含原始屬性 (例如 `$(BuildDependsOn)`)。  
   
-3.  在屬性定義之前或之後定義您自訂的目標。  
+3.  在屬性定義之前或之後，定義您的自訂目標。  
   
-4.  建置此專案檔。  
+4.  建置專案檔。  
   
-### 通常會覆寫的 "DependsOn" 屬性  
+### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 "DependsOn" 屬性  
   
-|屬性名稱|描述|  
-|----------|--------|  
-|`BuildDependsOn`|當您想要在整個建置處理序之前或之後插入自訂的目標時，所要覆寫的屬性。|  
-|`CleanDependsOn`|當您想要從自訂的建置處理序中清除輸出時，所要覆寫的屬性。|  
-|`CompileDependsOn`|當您想要在編譯步驟之前或之後插入自訂的處理序時，所要覆寫的屬性。|  
+|屬性名稱|說明|  
+|-------------------|-----------------|  
+|`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|  
+|`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|  
+|`CompileDependsOn`|如果您想要在編譯步驟之前或之後插入自訂處理序，這是要覆寫的屬性。|  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [.Targets Files](../msbuild/msbuild-dot-targets-files.md)
+ [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)

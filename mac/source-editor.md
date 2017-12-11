@@ -1,19 +1,17 @@
 ---
-title: "原始檔編輯器"
+title: "原始檔編輯器 | Microsoft Docs"
 description: "使用 Visual Studio for Mac 中的原始檔編輯器"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
+ms.openlocfilehash: f52e60c0ade8cebc78b3408b4ef81ef85fcd767b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: aa7635cd2593b871128c0588110f0bfdad5a82ec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="source-editor"></a>原始檔編輯器
 
 可靠的原始檔編輯器是以簡潔且具效率的方式撰寫程式碼的必要項目。 Visual Studio for Mac 提供一個精細的原始檔編輯器，其為您與 IDE 互動的核心。 原始檔編輯器提供您可能預期以及可輕鬆執行工作所需的功能：範圍從基礎功能 (例如語法反白顯示、程式碼片段和程式碼摺疊功能) 到其 Roslyn 編譯器整合的優點 (例如功能完整的 IntelliSense 程式碼完成)。
@@ -84,7 +82,6 @@ Visual Studio for Mac 提供許多功能強大的功能，讓跨平台開發更�
 反白顯示的色彩也適用於表示要指派或參考的項目。 如果指派某個項目，則會以紅色將它反白顯示；如果參考它，則會以藍色反白顯示：
 
 ![](media/source-editor-image7.png)
-
 
 
 

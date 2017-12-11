@@ -1,32 +1,31 @@
 ---
-title: "開啟/關閉測量模式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.tools.measure"
-helpviewer_keywords: 
-  - "並行視覺化檢視, 開啟/關閉測量模式"
+title: "開關測量模式 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.tools.measure
+helpviewer_keywords: Concurrency Visualizer, Measure Mode On/Off
 ms.assetid: fbd99736-9ea8-47d2-af51-7e3a4e9c29c1
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 1e1be9c268826c64d775d56904dfdb1f3cd1bc14
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 開啟/關閉測量模式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以透過這個工具精確測量時間表中的時間長度。  若要啟用測量模式，請按一下測量按鈕 \(有尺規圖示\)，然後拖曳時間表。  拖曳時，注意指標底下的區域會反白顯示為黃色，而且在工具列中的按鈕右邊會出現測量的時間。  這個值是在拖曳時動態計算得出，因此您可以立即看到特定事件所花的時間。  放開滑鼠按鈕時，時間值會保持為可見的狀態。  
+# <a name="measure-mode-onoff"></a>開啟/關閉測量模式
+您可以使用此工具精確地測量時間軸中的時間長度。 若要啟用測量模式，請按一下 [量值] 按鈕 (有尺規圖示)，然後拖曳到時間軸中。 拖曳時請注意，指標下方的區域會以黃色反白顯示，而測量的時間會出現在工具列按鈕的右邊。 您拖曳時會動態計算此值，讓您立即看到特定事件所花的時間長短。 當您放開滑鼠按鈕時，時間值仍保持可見狀態。  
   
- 您可以重複測量程序，但只會顯示最近一次的測量值。  再按一下測量按鈕，即可關閉測量模式。  
+ 您可以重複測量程序，但只會顯示最新的量值。 再按一下 [量值] 按鈕，關閉測量模式。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [管理通道](../profiling/manage-channels.md)   
- [縮放控制 \(執行緒檢視\)](../profiling/zoom-control-threads-view.md)   
+ [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

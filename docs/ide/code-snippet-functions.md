@@ -1,40 +1,41 @@
 ---
 title: "程式碼片段函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "程式碼片段 [Visual Studio], 函式"
-  - "IntelliSense 程式碼片段, 函式"
-  - "片段 [Visual Studio], 函式"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- code snippets [Visual Studio], functions
+- snippets [Visual Studio], functions
+- IntelliSense code snippets, functions
 ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
-caps.latest.revision: 11
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 程式碼片段函式
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-有三個函式可與 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 程式碼片段一起使用。  函式是在程式碼片段的 [Function](http://msdn.microsoft.com/zh-tw/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中指定。  如需建立程式碼片段的詳細資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
+# <a name="code-snippet-functions"></a>程式碼片段函式
+有三個函式可用來與 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
   
-## 功能  
- 下表將描述可與程式碼片段中的 `Function` 項目一起使用的函式。  
+## <a name="functions"></a>函式  
+ 下表描述可用於與程式碼片段中的 `Function` 項目搭配使用的函式。  
   
-|Function|描述|Language|  
-|--------------|--------|--------------|  
-|`GenerateSwitchCases(` `EnumerationLiteral` `)`|會針對 `EnumerationLiteral` 參數所指定的列舉型別成員，產生一個 switch 陳述式以及一組 case 陳述式。  `EnumerationLiteral` 參數必須是列舉型別常值的參考或是列舉型別的參考。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`ClassName()`|傳回其中包含插入的程式碼片段的類別名稱。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
-|`SimpleTypeName(` `TypeName` `)`|將位於叫用程式碼片段之內容中的 *TypeName* 參數縮減為最簡單的形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|函式|描述|語言|  
+|--------------|-----------------|--------------|  
+|`GenerateSwitchCases(` `EnumerationLiteral` `)`|針對 `EnumerationLiteral` 參數所指定列舉的成員，產生 switch 陳述式和一組 case 陳述式。 `EnumerationLiteral` 參數必須是列舉常值或列舉類型的參考。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`ClassName()`|傳回包含已插入程式碼片段的類別名稱。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
+|`SimpleTypeName(` `TypeName` `)`|在叫用程式碼片段的內容中，將 *TypeName* 參數降低為其最簡單形式。|[!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]|  
   
-## 範例  
- 下列範例將說明如何使用 `GenerateSwitchCases` 函式。  如果插入此程式碼片段並且將列舉型別輸入至 `$switch_on$` 常值中，`$cases$` 常值將會針對列舉型別中的每一個值，產生一個 `case` 陳述式。  
+## <a name="example"></a>範例  
+ 下列範例示範如何使用 `GenerateSwitchCases` 函式。 插入此程式碼片段並將列舉輸入至 `$switch_on$` 常值時，`$cases$` 常值會為列舉中的每個值產生 `case` 陳述式。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -74,8 +75,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 範例  
- 下列範例將說明如何使用 `ClassName` 函式。  插入這個程式碼片段時，`$classname$` 常值會由程式碼檔中您所在的封入類別 \(Enclosing Class\) 名稱取代。  
+## <a name="example"></a>範例  
+ 下列範例示範如何使用 `ClassName` 函式。 插入此程式碼片段時，會將 `$classname$` 常值取代為程式碼檔案中該位置的封入類別名稱。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -120,8 +121,8 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 範例  
- 這個範例將說明如何使用 `SimpleTypeName` 函式。  如果在程式碼檔中插入此程式碼片段，便會以叫用程式碼片段的內容中的 <xref:System.Console> 型別之最簡單形式取代 `$SystemConsole$` 常值。  
+## <a name="example"></a>範例  
+ 此範例示範如何使用 `SimpleTypeName` 函式。 將此程式碼片段插入至程式碼檔案時，會將 `$SystemConsole$` 常值取代為叫用程式碼片段之內容中 <xref:System.Console> 類型的最簡單表單。  
   
 ```  
 <CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">  
@@ -152,6 +153,6 @@ caps.handback.revision: 11
 </CodeSnippets>  
 ```  
   
-## 請參閱  
- [Function Element \(Intellisense Code Snippets\)](http://msdn.microsoft.com/zh-tw/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+## <a name="see-also"></a>另請參閱  
+ [Function 項目 (Intellisense 程式碼片段)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

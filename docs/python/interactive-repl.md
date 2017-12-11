@@ -1,27 +1,23 @@
 ---
 title: "Visual Studio 中的 Python 互動式 REPL | Microsoft Docs"
 ms.custom: 
-ms.date: 7/13/2017
+ms.date: 07/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 642dc47e-c265-44ea-a77d-3db14170a36f
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 80b53ca4a4ada7374d0d62101b00b8ed1a9ca335
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: 69943d19c0eec4702285d255ce0c26defde79b1c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="working-with-the-python-interactive-window"></a>使用 Python 互動式視窗
 
 Visual Studio 為您的每個 Python 環境提供互動式「讀取、求值、輸出」迴圈 (REPL) 視窗，它是以透過命令列上的 `python.exe` 取得的 REPL 為基礎加以改進。 互動式視窗 (以 檢視 > 其他視窗 > &lt;環境&gt; 互動式 功能表命令開啟) 可讓您輸入任意的 Python 程式碼並立即查看結果。 這種編碼方式可協助您了解並實驗應用程式開發介面和程式庫，並以互動方式開發工作程式碼，以包含在您的專案中。
@@ -39,9 +35,9 @@ Visual Studio 有多個 Python REPL 模式可供選擇：
 
 本主題描述「標準」和「偵錯」REPL 模式。 如需 IPython 模式的詳細資料，請參閱[使用 IPython REPL](interactive-repl-ipython.md)。
 
-如需詳細逐步解說與範例，包括與編輯器的互動，例如 Ctrl + Enter，請參閱[使用者入門 - 使用互動式 REPL 視窗](getting-started.md#using-the-interactive-repl-window)。 如需影片簡介，請參閱 [Getting Started with Python in Visual Studio, Part 5: Interactive REPL](https://youtu.be/yc2CROtTsC0?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff) (開始在 Visual Studio 中使用 Python，第 5 部分：互動式 REPL) (youtube.com，2 分 51 秒)。
+如需範例的詳細逐步解說 (包含與編輯器的互動，例如 Ctrl+Enter)，請參閱[教學課程步驟 3：使用互動式 REPL 視窗](vs-tutorial-01-03.md)。 如需影片簡介，請參閱 [Python 互動式視窗](https://mva.microsoft.com/en-US/training-courses/python-tools-for-visual-studio-2017-18121?l=gJYKY5LWE_4605918567) (Microsoft Virtual Academy，2 分 22 秒)。
 
-> [!VIDEO https://www.youtube.com/embed/yc2CROtTsC0]
+> [!VIDEO https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567]
 
 ## <a name="opening-an-interactive-window"></a>開啟互動式視窗
 
@@ -131,4 +127,3 @@ Visual Studio 也會偵測以例如 `# In[1]:` 的註解開始的程式碼儲存
 互動式視窗包含以即時物件為基礎的 IntelliSense，而不像程式碼編輯器的 IntelliSense，僅以原始程式碼分析為基礎。 這些建議在互動式視窗中更加正確，尤其是針對動態產生的程式碼。 缺點是，具有附加作用 (例如記錄訊息) 的函數可能會影響您的開發體驗。
 
 如果此行為會造成問題，請在 [工具] > [選項] > [Python 工具] > [互動式視窗] 底下的 [完成模式] 群組中變更設定，如[選項 - 互動式視窗選項](options.md#interactive-windows-options)中所述。
-

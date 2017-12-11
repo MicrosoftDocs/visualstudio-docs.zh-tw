@@ -1,34 +1,31 @@
 ---
 title: "Visual Studio 中的 Python 跨平台遠端偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: aa667357-763f-4ce6-8e47-48f9337658a8
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 7d5526bbcde438896f63c0f9b4f75d919d3ca457
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 1e017806ca7bf3d23410ba3a2f999dca0b78f240
-ms.openlocfilehash: 2711238ccc6d90b34df748c6b59e4130c74de69b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="remotely-debugging-python-code-on-linux"></a>對 Linux 上的 Python 程式碼進行遠端偵錯
 
 Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式並進行偵錯 (請參閱[遠端偵錯](../debugger/remote-debugging.md))。 它也可在其他作業系統、裝置或使用 [ptvsd 程式庫](https://pypi.python.org/pypi/ptvsd)的 Python 實作 (不同於 CPython) 上進行遠端偵錯。
 
 使用 ptvsd 時，進行偵錯的 Python 程式碼會裝載 Visual Studio 可以附加到的偵錯伺服器。 這項裝載需要稍微修改您的程式碼以匯入和啟用伺服器，並可能需要遠端電腦上的網路或防火牆組態允許 TCP 連線。
 
-如需遠端偵錯的簡介，請參閱[深入探討︰跨平台遠端偵錯 (英文)](https://youtu.be/y1Qq7BrV6Cc) (youtube.com，6 分 22 秒)。
+如需遠端偵錯簡介，請參閱適用於 Visual Studio 2015 和 2017 的[深入探討︰跨平台遠端偵錯](https://youtu.be/y1Qq7BrV6Cc) (youtube.com，6 分 22 秒)。
 
 > [!VIDEO https://www.youtube.com/embed/y1Qq7BrV6Cc]
 
@@ -185,4 +182,3 @@ Visual Studio 可在 Windows 電腦的本機或遠端啟動 Python 應用程式�
 
 > [!Warning]
 > 目前，若不予理會這些警告，Visual Studio 2017 會停止回應。 請務必在嘗試連線之前，修正所有問題。
-

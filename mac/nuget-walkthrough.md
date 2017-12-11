@@ -1,19 +1,17 @@
 ---
-title: "逐步解說 - 在專案中包含 NuGet 套件"
+title: "逐步解說 - 在專案中包含 NuGet 套件 | Microsoft Docs"
 description: "本文件涵蓋如何在 Xamarin 專案中包含 NuGet 套件。 它會逐步尋找和下載套件，以及介紹 IDE 整合功能。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
+ms.openlocfilehash: cb927b14e3637edd7e16c78fbed01fa4e9522652
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 0fa91c18592dee4f20832d7a0dad8aea069da93e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="including-a-nuget-package-in-your-project"></a>在專案中包含 NuGet 套件
 
 NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual Studio for Mac 以及 Windows 上的 Visual Studio。 您可以使用任一 IDE 來搜尋套件，並將其新增至 Xamarin.iOS 和 Xamarin.Android 專案。
@@ -42,7 +40,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ![來源清單下拉式清單](media/nuget-walkthrough-Source.png)
 
-開啟視窗時，會從預設套件來源載入套件清單：nuget.org。 初始結果如下：
+開啟視窗時，會從預設套件來源載入套件清單：nuget.org。初始結果如下：
 
 ![列出 NuGet 套件](media/nuget-walkthrough-AddPackages1.png)
 
@@ -97,7 +95,7 @@ NuGet 是進行 .NET 開發的最受歡迎套件管理員，並內建於 Visual 
 
 ## <a name="adding-package-sources"></a>新增套件來源
 
-一開始會從 nuget.org 擷取可用於安裝的套件。 不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
+一開始會從 nuget.org 擷取可用於安裝的套件。不過，您可以將其他套件位置新增至 Visual Studio for Mac。 這適用於測試您自己正在開發的 NuGet 套件，或在公司或組織內使用私用 NuGet 伺服器。
 
 在 Visual Studio for Mac 中，巡覽至 [Visual Studio] > [喜好設定] > [NuGet] > [來源] 來檢視和編輯套件來源清單。 請注意，來源可以是遠端伺服器 (由 URL 指定) 或本機目錄。 
 
@@ -118,5 +116,4 @@ NuGet 文件討論 [using NuGet without committing packages to source control](h
 ![自動還原套件](media/nuget-walkthrough-AutoRestore.png)
 
 如需如何排除 `packages` 目錄不進行追蹤的詳細資料，請參閱特定原始檔控制文件。
-
 

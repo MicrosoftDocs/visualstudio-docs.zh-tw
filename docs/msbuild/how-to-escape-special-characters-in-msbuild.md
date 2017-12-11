@@ -1,24 +1,27 @@
 ---
 title: "如何：在 MSBuild 中逸出特殊字元 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "逸出的特殊字元"
-  - "逸出字元"
-  - "逸出字元"
-  - "MSBuild 逸出特殊字元"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- special characters, escaping
+- characters, escapes
+- escape characters
+- MSBuild, escaping special characters
 ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 1713416665dcdb4970b6a74eb4f1e66164078cdd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：在 MSBuild 中逸出特殊字元
 某些字元在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔中具有特殊意義。 這些字元範例包括分號 (;) 和星號 (*)。 如需這些特殊字元的完整清單，請參閱 [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)。  
@@ -44,10 +47,4 @@ caps.handback.revision: 12
   
 ## <a name="see-also"></a>另請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [MSBuild](../msbuild/msbuild.md)
- [項目](../msbuild/msbuild-items.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-
+ [MSBuild](../msbuild/msbuild.md) [項目](../msbuild/msbuild-items.md)

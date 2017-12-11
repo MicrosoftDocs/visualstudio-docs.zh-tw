@@ -1,21 +1,18 @@
 ---
-title: "以 Xamarin 偵錯"
-description: "偵錯是程式設計當中常見且必要的一部分。 作為成熟的 IDE，Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 從安全偵錯到資料視覺效果，本文將說明如何使用在 Visual Studio for Mac 偵錯的完整潛力。"
+title: "以 Xamarin 偵錯 | Microsoft Docs"
+description: "偵錯是程式設計中常見且必要的一部分。 作為成熟的 IDE，Visual Studio for Mac 包含整個套件的功能，可讓偵錯變容易。 從安全偵錯到資料視覺效果，本文將說明如何使用在 Visual Studio for Mac 偵錯的完整潛力。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
+ms.openlocfilehash: 6d85c318b60e065be86d242bf3199b3716c59ada
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: d416c0967daa3354e09660e3b618e0cc6f3b49f7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
-
 # <a name="debugging-with-xamarin"></a>以 Xamarin 偵錯
 
 
@@ -103,4 +100,3 @@ Xamarin 產品隨附 Mono 類別庫的原始程式碼，您可以使用它從偵
 若要啟用這項功能，請瀏覽至 [Visual Studio for Mac] > [喜好設定] > [偵錯工具]，並確定 [只偵錯專案程式碼; 不涉及架構程式碼。] 選項為 [未選取]，如下所示：
 
  ![不進入架構程式碼選項](media/debugging-image8.png)
-

@@ -1,24 +1,26 @@
 ---
-title: "程式碼剖析工具中的 CPU 和 Windows 計數器 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.property.counters"
-helpviewer_keywords: 
-  - "程式碼剖析工具中的 Windows 計數器"
-  - "程式碼剖析工具中的 CPU 計數器"
+title: "CPU 和 Windows 計數器 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.property.counters
+helpviewer_keywords:
+- Windows counters in Profiling Tools
+- CPU counters in Profiling Tools
 ms.assetid: d2c45c6a-f975-45ab-b8a5-4768ddd518fb
-caps.latest.revision: 28
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 26
+caps.latest.revision: "28"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 62889012c5640fb0f29eadb6f70e678f941ff286
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 計數器
 Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所產生的效能資料，以及處理器單元 (CPU 計數器) 所產生的效能資料。  
@@ -28,7 +30,7 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 Windows 市集應用程式也需要新的資料收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="windows-counters"></a>Windows 計數器  
  Windows 計數器是 Windows 診斷基礎結構的一部分，提供作業系統或應用程式、服務或驅動程式的效能資訊。 Windows 計數器取決於目前電腦的設定，可能無法在其他電腦上使用。 在分析資料檔案中，收集到的 Windows 效能計數器會做為分析標記，然後可以用來篩選檢視和報表。  
@@ -131,8 +133,3 @@ Visual Studio 分析工具可讓您收集由作業系統 (Windows 計數器) 所
  [如何：選擇取樣事件](../profiling/how-to-choose-sampling-events.md)   
  [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)   
  [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -1,19 +1,17 @@
 ---
-title: "使用 Git"
+title: "使用 Git | Microsoft Docs"
 description: "在 Visual Studio for Mac 中使用 Git。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
+ms.openlocfilehash: 76bb378297e29fa5967a43e4df38ca2ecc4e6361
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: b3ffe27e343cd02fa52f4f82dfe170d5d0efb8c3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="working-with-git"></a>使用 Git
 
 Git 是一種分散式版本控制系統，可讓小組同時處理相同的文件。 這表示有中央伺服器包含所有檔案，但從這個中央來源簽出存放庫時，會將整個存放庫複製至本機電腦。

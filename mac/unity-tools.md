@@ -1,18 +1,16 @@
 ---
-title: Visual Studio for Mac Tools for Unity
+title: Visual Studio for Mac Tools for Unity | Microsoft Docs
 author: dantogno
 ms.author: v-davian
 ms.date: 07/17/2017
 ms.topic: article
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
+ms.openlocfilehash: eae1aa9526d515e7d02d8e1727da9634e0501662
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a9bd932341ab76feb9d91e96ac816ba6e1488064
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-tools-for-unity"></a>Visual Studio for Mac Tools for Unity
 
 ![Unity 和 Visual Studio for Mac 的樣式化圖](media/vsmac-tools-unity-image1.png)
@@ -65,4 +63,3 @@ Visual Studio for Mac Tools for Unity 支援預期從 Visual Studio 取得的所
 
 * [自訂 IDE](/visualstudio/mac/customizing-the-ide) - 了解如何[變更視覺效果佈景主題](/visualstudio/mac/customizing-the-ide#dark-theme)，或切換至更熟悉的[按鍵繫結關係](/visualstudio/mac/customizing-the-ide#key-bindings)配置。
 * [原始檔編輯器](/visualstudio/mac/source-editor) - 了解 Visual Studio for Mac 如何更快速且更輕鬆地撰寫更好的程式碼，包含一般[鍵盤快速鍵](/visualstudio/mac/keyboard-shortcuts)。
-

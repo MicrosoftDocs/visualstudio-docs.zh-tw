@@ -1,19 +1,17 @@
 ---
-title: "在 Visual Studio for Mac 中設定 Subversion 存放庫"
+title: "在 Visual Studio for Mac 中設定 Subversion 存放庫 | Microsoft Docs"
 description: "在 Visual Studio for Mac 中使用 Git 和 Subversion。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 0D58FB37-530E-495B-BED6-FD499477A9B6
+ms.openlocfilehash: 0757ad29b8614a86f059f525f6ffe3100595d09b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea2dffed0b9091dae61792783eb83c103ca9375c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="setting-up-a-subversion-repository"></a>設定 Subversion 存放庫
 
 Subversion 是集中式版本控制系統。 這表示有單一伺服器包含所有檔案和修訂，而使用者可以從中簽出任何檔案的任何版本。 從遠端 Subversion 存放庫簽出檔案時，使用者將會收到存放庫在該時間點的快照集。
@@ -45,5 +43,4 @@ Subversion 是集中式版本控制系統。 這表示有單一伺服器包含�
     ![](media/version-control-subversion5.png)
 
 8.  現在應該可以在版本控制功能表中看到所有可用的版本控制命令。
-
 

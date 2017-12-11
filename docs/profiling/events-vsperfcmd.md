@@ -1,34 +1,35 @@
 ---
-title: "Events (VSPerfCmd) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Events (VSPerfCmd) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 84f1d515722203f15b1b667df6fb7fdf72fe4fb4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# Events (VSPerfCmd)
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPerfCmd.exe **Events** 選項會控制 Windows 事件追蹤 \(ETW\) 記錄。  ETW 資料會儲存至與程式碼剖析工具資料檔案不同的 .etl 檔案。  使用 [VSPerfReport](../profiling/vsperfreport.md) \/summary:etw 命令即可在報告中檢視這項資料。  
+# <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
+VSPerfCmd.exe **Events** 選項會控制 Windows 事件追蹤 (ETW) 記錄。 ETW 資料會儲存至與分析工具資料檔案不同的 .etl 檔案。 使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令，即可透過報表形式來檢視資料。  
   
- 在呼叫 VSPerfCmd **Shutdown** 命令以停止程式碼剖析前，可以隨時呼叫 **Events** 選項。  
+ 呼叫 VSPerfCmd **Shutdown** 命令停止分析之前，隨時都可以呼叫 **Events** 選項。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  **On**&#124;**Off**  
  啟動或停止收集事件資料。  
   
@@ -36,15 +37,15 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  提供者控制項的 GUID。  
   
  `ProviderName`  
- 已向 Windows Management Instrumentation \(WMI\) 註冊之提供者的名稱。  
+ 向 Windows Management Instrumentation (WMI) 註冊的提供者名稱。  
   
  `Flags`  
- 前置詞為 "0x" 的十六進位旗標值，由事件提供者定義。  
+ 由事件提供者所定義而且前面加上 "0x" 的十六進位旗標值。  
   
  `Level`  
- 指定所收集的資料量。  `Level`是由事件提供者所定義。  
+ 指定所收集的資料量。 `Level` 是由事件提供者所定義。  
   
- **Events** 選項會將下列核心關鍵字解讀為提供者名稱：  
+ **Events** 選項了解下列核心關鍵字作為提供者名稱：  
   
  **Process**  
  處理序事件  
@@ -52,20 +53,20 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Thread**  
  執行緒事件  
   
- **Image**  
- 影像載入及卸載事件  
+ **影像**  
+ 影像載入和卸載事件  
   
  **Disk**  
- 磁碟 I\/O 事件  
+ 磁碟 I/O 事件  
   
- **File**  
- 檔案 I\/O 事件  
+ **檔案**  
+ 檔案 I/O 事件  
   
  **Hardfault**  
- 硬體分頁錯誤  
+ 硬性分頁錯誤  
   
  **Pagefault**  
- 軟體分頁錯誤  
+ 軟性分頁錯誤  
   
  **Network**  
  網路事件  
@@ -73,22 +74,22 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
  **Registry**  
  登錄存取事件  
   
- 請注意，核心提供者必須處於啟用狀態。  在監視器關閉之前，核心提供者無法停用，其旗標也不能修改。  
+ 請注意，只能啟用核心提供者。 不可以予以停用，也不可以在關閉監視器之前修改其旗標。  
   
-## 備註  
+## <a name="remarks"></a>備註  
   
 > [!NOTE]
->  當 CLR ETW 事件啟用時，在追蹤檢視報告中也會收集額外的啟動資料。  若要排除啟動事件，不在報告中顯示，請使用下列命令：  
+>  啟用 CLR ETW 事件時，也會透過「追蹤檢視」報表收集其他啟動資料。 若要排除啟動事件使其不出現在報表中，請使用下列命令：  
   
 ```  
 C:\<path>VSPerfCmd -events on, \".NET Common Language Runtime\", 0x7fffffff, 5  
 ```  
   
 > [!IMPORTANT]
->  由於這些事件未列在 Managed 物件格式 \(MOF\) 檔中，因此假如您不排除啟動事件，則這些事件在報告中便會顯示為 GUID。  如需詳細資訊，請參閱 Microsoft 網站上的下列網頁: [範例 Managed 物件格式 \(MOF\) \(MOF\) 檔案。](http://go.microsoft.com/fwlink/?linkid=37118).  
+>  如果您不要排除啟動事件，則因為這些事件不會列出在受控物件格式 (MOF) 檔案中，所以它們在報表中會顯示為 GUID。 如需詳細資訊，請參閱 Microsoft 網站上的這個頁面：[範例受控物件格式 (MOF) 檔案](http://go.microsoft.com/fwlink/?linkid=37118)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

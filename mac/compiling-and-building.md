@@ -1,19 +1,17 @@
 ---
-title: "在 Visual Studio for Mac 中編譯和建置"
+title: "在 Visual Studio for Mac 中編譯和建置 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
+ms.openlocfilehash: 9005cf64f4b72f39923d6525e78de745d79c3953
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: ea98f80d037a03912cf3d8212588ebb7520b4bbb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中編譯和建置
 
 Visual Studio for Mac 可用來在專案開發期間建置應用程式和建立組件。 請務必及早且經常編譯和建置您的程式碼，讓您能夠識別類型不符以及其他的編譯時期錯誤。
@@ -46,9 +44,9 @@ Visual Studio for Mac 也可用來執行下列作業：
 
 您可以使用 MSBuild 組建引擎，透過命令列建置應用程式。
 
-如需使用 MSBuild 的詳細資訊，請參閱 [MSBuild](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild) 內容。
+如需使用 MSBuild 的詳細資訊，請參閱 [MSBuild](https://docs.microsoft.com/visualstudio/msbuild/msbuild) 內容。
 
 ### <a name="using-visual-studio-team-services"></a>使用 Visual Studio Team Services
 
-* [建置 Xamarin 應用程式](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin)
+* [建置 Xamarin 應用程式](https://www.visualstudio.com/docs/build/apps/mobile/xamarin)
 * [使用 Xamarin 的連續整合](https://developer.xamarin.com/guides/cross-platform/ci/)

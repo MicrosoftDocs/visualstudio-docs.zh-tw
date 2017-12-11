@@ -1,82 +1,83 @@
 ---
-title: "專案設計工具、安全性頁 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vb.ProjectPropertiesSecurity"
-  - "vb.XBAPProjectPropertiesSecurity"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-helpviewer_keywords: 
-  - "專案設計工具, [安全性] 頁面"
-  - "專案設計工具中的 [安全性] 頁面"
+title: "安全性頁面、專案設計工具 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vb.ProjectPropertiesSecurity
+- vb.XBAPProjectPropertiesSecurity
+dev_langs:
+- VB
+- CSharp
+- C++
+helpviewer_keywords:
+- Project Designer, Security page
+- Security page in Project Designer
 ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
-caps.latest.revision: 34
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 34
+caps.latest.revision: "34"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 4eaa6a746f67c891e9e4979f9c5b06202383e5f3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 專案設計工具、安全性頁
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-\[**專案設計工具**\] 的 \[**安全性**\] 頁面是用來針對使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署的應用程式，設定程式碼存取安全性。  如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
+# <a name="security-page-project-designer"></a>專案設計工具、安全性頁
+[專案設計工具] 的 [安全性] 頁面是用於設定使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署之應用程式的程式碼存取安全性設定。 如需詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
   
- 如果要存取 \[**安全性**\] 頁面，請選取 \[**方案總管**\] 中的專案節點，然後按一下 \[**專案**\] 功能表上的 \[**屬性**\]。  當 \[**專案設計工具**\] 出現時，請按一下 \[**安全性**\] 索引標籤。  
+ 若要存取 [安全性] 頁面，請選取方案總管中的專案節點，然後按一下 [專案] 功能表上的 [屬性]。 [專案設計工具] 出現時，請按一下 [安全性] 索引標籤。  
   
-## 安全性設定  
+## <a name="security-settings"></a>安全性設定  
  **啟用 ClickOnce 安全性設定**  
- 判斷是否可以在設計階段啟用安全性設定。  如果清除這個選項，則 \[**安全性**\] 頁面中的所有其他選項也都無法使用。  
+ 決定是否在設計階段啟用安全性設定。 清除這個選項後，就無法使用 [安全性] 頁面上的所有其他選項。  
   
 > [!NOTE]
->  使用 \[**發行**\] 精靈發行應用程式時，這個選項會自動啟用。  
+>  當您使用 [發行精靈] 發佈應用程式時，會自動啟用此選項。  
   
- 如果選取這個選項，您可以選擇其中一個選項按鈕：\[**這是完全信任的應用程式**\] 或 \[**這是部分信任的應用程式**\]。  
+ 選取此選項後，就可以選取兩個選項按鈕的其中之一：[這是完全信任的應用程式] 或 [這是部分信任的應用程式]。  
   
- 根據預設，WPF 瀏覽器應用程式專案中這個選項為選取。  
+ WPF 網頁瀏覽器應用程式專案預設選取此選項。  
   
- 根據預設，對於其他專案類型，這個選項為清除。  
+ 所有其他專案類型則預設清除此選項。  
   
  **這是完全信任的應用程式**  
- 如果選取這個選項，則在用戶端電腦上安裝或執行應用程式時，應用程式就會要求「完全信任」權限。  如果可以請避免使用「完全信任」，因為應用程式將可不受限制的存取檔案系統和登錄等資源。  
+ 如果選取此選項，在用戶端電腦上安裝或執行應用程式時，應用程式會要求完全信任權限。 可能的話，請避免使用完全信任，因為這會授權應用程式完全不受限制地存取資源，例如檔案系統和登錄。  
   
- 根據預設，WPF 瀏覽器應用程式專案中這個選項為「部分信任」。  
+ 根據預設，WPF 網頁瀏覽器應用程式專案的這個選項設為部分信任。  
   
- 根據預設，對其他專案類型，這個選項設定為「完全信任」。  
+ 所有其他專案類型的這個選項則預設為完全信任。  
   
  **這是部分信任的應用程式**  
- 如果選取這個選項，則在用戶端電腦上安裝或執行應用程式時，應用程式就會要求「部分信任」權限。  「*部分信任*」表示只有在要求之程式碼存取安全性權限下所允行的動作才會執行。  如需如何設定安全性權限的詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)  
+ 如果選取此選項，在用戶端電腦上安裝或執行應用程式時，應用程式會要求部分信任權限。 「部分信任」表示只會執行要求程式碼存取安全性權限下允許的動作。 如需如何設定安全性權限的詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
   
- 您可以在 \[**ClickOnce 安全性權限**\] 區域中設定這個選項，以指定「部分信任」安全性設定。  
+ 您可以在 [ClickOnce 安全性權限] 區域中設定選項，指定部分信任的安全性設定。  
   
-## ClickOnce 安全性權限  
+## <a name="clickonce-security-permissions"></a>ClickOnce 安全性權限  
  **安裝應用程式的區域**  
- 指定程式碼存取安全性權限的預設集合。  選擇 \[**網際網路**\] 或 \[**近端內部網路**\] 以取得限制的權限集，或者選擇 \[**\(自訂\)**\] 以設定自訂的權限集。  如果應用程式要求比區域中所授與的更多權限，ClickOnce 信任提示便會對使用者出現以授與額外權限。  如需如何設定安全性權限的詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)  
+ 指定預設的程式碼存取安全性權限集。 為受限的權限集選擇 [網際網路] 或 [近端內部網路]，或選擇[(自訂)] 設定自訂的權限集。 如果應用程式要求高於區域中授與的權限，即會顯示 ClickOnce 信任提示，提示使用者授與其他權限。 如需如何設定安全性權限的詳細資訊，請參閱 [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)。  
   
- 根據預設，WPF Web 瀏覽器應用程式專案中這個選項為 \[**網際網路**\]。  
+ 根據預設，WPF 網頁瀏覽器應用程式專案的這個選項設為 [網際網路]。  
   
  **編輯權限 XML**  
- 開啟應用程式資訊清單範本 \(app.manifest\) 來設定\[**\(自訂\)**\] 權限集的權限。  
+ 開啟應用程式資訊清單範本 (app.manifest) 設定 [(自訂)] 權限集的權限。  
   
  **進階**  
- 開啟[進階安全性設定對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)，這個對話方塊是用來針對使用權限受到限制的應用程式進行偵錯設定。  偵錯時會檢查這些設定，而且權限例外狀況指出您的應用程式所需的權限可能多於在區域中定義的權限。  
+ 開啟 [[進階安全性設定] 對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)，這是用來設定以限制權限偵錯應用程式的設定。 偵錯期間會檢查這些設定，權限例外狀況會指出應用程式可能需要比在區域中定義更高的權限。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [ClickOnce 應用程式的程式碼存取安全性](../../deployment/code-access-security-for-clickonce-applications.md)   
  [如何：啟用 ClickOnce 安全性設定](../../deployment/how-to-enable-clickonce-security-settings.md)   
  [如何：設定 ClickOnce 應用程式的安全性區域](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [如何：設定 ClickOnce 應用程式的自訂使用權限](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [如何：以限制使用權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：以限制權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [ClickOnce 安全性和部署](../../deployment/clickonce-security-and-deployment.md)   
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [進階安全性設定對話方塊](../../ide/reference/advanced-security-settings-dialog-box.md)

@@ -1,57 +1,58 @@
 ---
 title: "如何：顯示以逗號分隔的項目清單 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "MSBuild, 格式化項目集合"
-  - "MSBuild, 以分號分隔項目"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- MSBuild, separating items with semicolons
+- MSBuild, formatting item collections
 ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: be7beec070d58f265912f61d37a2d213e50ea0c7
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：顯示以逗號分隔的項目清單
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-當您處理 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] \([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]\) 中的項目清單時，以簡易方式顯示這些項目清單的內容，有時候會很有用。  或者，您的工作所使用的項目清單可能需要以特殊的分隔符號字串來加以分隔。  無論是前述的任何一種情形，您都可以指定項目清單的分隔符號字串。  
+# <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：顯示以逗號分隔的項目清單
+在使用 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 中列出的項目時，建議您以易於閱讀的方式顯示這些項目清單中的內容。 否則，您可能必須進行以特殊分隔符號字串分隔項目清單的工作。 在這兩種情況下，您都可以為項目清單指定分隔符號字串。  
   
-## 以逗號分隔清單中的項目  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 預設使用分號來分隔清單中的項目。  舉例來說，假設有一個 `Message` 項目具有以下的值：  
+## <a name="separating-items-in-a-list-with-commas"></a>以逗號分隔清單中的項目  
+ 根據預設，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會使用分號來分隔清單中的項目。 例如，假設是含有下列值的 `Message` 項目：  
   
  `<Message Text="This is my list of TXT files: @(TXTFile)"/>`  
   
- 當 `@(TXTFile)` 項目清單含有 App1.txt、App2.txt 和 App3.txt 等項目時，訊息就會顯示為：  
+ 當 `@(TXTFile)` 項目清單包含 App1.txt、App2.txt 和 App3.txt 項目時，訊息為：  
   
  `This is my list of TXT files: App1.txt;App2.txt;App3.txt`  
   
- 如果想變更預設行為，可以自行指定分隔符號。  指定項目清單分隔符號的語法如下：  
+ 如果您想要變更預設行為，可以指定自己的分隔符號。 指定項目清單分隔符號的語法是：  
   
  `@(ItemListName, '<separator>')`  
   
- 分隔符號可以是單一字元，也可以是以單引號括起來的字串。  
+ 分隔符號可以是單一字元或字串，且必須括在單引號中。  
   
-#### 若要在項目之間插入逗號和空格  
+#### <a name="to-insert-a-comma-and-a-space-between-items"></a>若要在項目之間插入逗號和空格  
   
--   使用以下的項目標記法：  
+-   使用類似下列的項目標記法：  
   
      `@(TXTFile, ', ')`  
   
-## 範例  
- 在這個範例中，[Exec](../msbuild/exec-task.md) 工作會執行 findstr 工具，在 Phrases.txt 檔案中找出指定的文字字串。  在 findstr 命令中，常值搜尋字串是以 **\/c:** 參數表示，因此在 `@(Phrase)` 項目清單中，項目之間會插入分隔符號 `/c:`。  
+## <a name="example"></a>範例  
+ 在此範例中，[Exec](../msbuild/exec-task.md) 工作會執行 findstr 工具，以在 Phrases.txt 檔案中尋找指定的文字字串。 在 findstr 命令中，字串常值搜尋是以 **/c:** 參數指定，因此 `@(Phrase)` 項目清單中的項目之間會差入 `/c:` 項目分隔符號。  
   
- 這個範例的對等命令列命令為：  
+ 此範例中，對等的命令列命令是：  
   
  `findstr /i /c:hello /c:world /c:msbuild phrases.txt`  
   
-```  
+```xml  
 <Project DefaultTargets = "Find"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -68,6 +69,6 @@ caps.handback.revision: 12
 </Project>  
 ```  
   
-## 請參閱  
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
+## <a name="see-also"></a>另請參閱  
+ [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [項目](../msbuild/msbuild-items.md)

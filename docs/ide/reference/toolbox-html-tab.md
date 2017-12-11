@@ -4,41 +4,24 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.toolbox.html
+f1_keywords: vs.toolbox.html
 helpviewer_keywords:
 - Toolbox, HTML tab
 - HTML Designer, setting options
 - HTML tab in Toolbox
 ms.assetid: 9bfdd3b8-f5ac-4a5f-bdbf-c2b4e97641d8
-caps.latest.revision: 13
-author: kempb
-ms.author: kempb
+caps.latest.revision: "13"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: bc243e4d5ec1141244314109aa76fef86287d1c1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 工具箱的 [HTML] 索引標籤提供適用於網頁和 Web Forms 的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視] 功能表上，按一下 [工具箱]，然後按一下 [工具箱] 的 [HTML] 索引標籤。  
@@ -53,12 +36,12 @@ ms.lasthandoff: 06/23/2017
  [HTML] 索引標籤上預設會有下列工具。  
 
  **指標**  
- ![ASP.NET Mobile 設計工具 HTML 網頁指標](~/ide/reference/media/vxpointer.gif "vxPointer")  
+ ![ASP.NET Mobile 設計工具 HTML 網頁指標](../../ide/reference/media/vxpointer.gif "vxPointer")  
 
  任何 [工具箱] 索引標籤開啟時，根據預設都會選取這個工具。 它無法予以刪除。 指標可讓您將物件拖曳至 [設計] 檢視介面、重新調整其大小，以及將它們重新置入頁面或表單上。 如需詳細資訊，請參閱[使用工具箱](../../ide/using-the-toolbox.md)。  
 
  **輸入 (按鈕)**  
- ![HTML 網頁按鈕](~/ide/reference/media/vxbutton.gif "vxButton")  
+ ![HTML 網頁按鈕](../../ide/reference/media/vxbutton.gif "vxButton")  
 
  插入 `type="button"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Button1"` 表示第一個按鈕、插入 `id="Button2"` 表示第二個按鈕，以此類推。  
 
@@ -69,7 +52,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **輸入 (重設)**  
- ![HTMLpageResetButton 螢幕擷取畫面](~/ide/reference/media/vxreset.gif "vxReset")  
+ ![HTMLpageResetButton 螢幕擷取畫面](../../ide/reference/media/vxreset.gif "vxReset")  
 
  插入 `type="reset"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Reset1"` 表示第一個重設按鈕、插入 `id="Reset2"` 表示第二個重設按鈕，以此類推。  
 
@@ -80,7 +63,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **輸入 (送出)**  
- ![HTMLpageToolbarSubmitButton 螢幕擷取畫面](~/ide/reference/media/vxsubmit.gif "vxSubmit")  
+ ![HTMLpageToolbarSubmitButton 螢幕擷取畫面](../../ide/reference/media/vxsubmit.gif "vxSubmit")  
 
  插入 `type="submit"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Submit1"` 表示第一個送出按鈕、插入 `id="Submit2"` 表示第二個送出按鈕，以此類推。  
 
@@ -91,7 +74,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **輸入 (文字)**  
- ![HTMLpageToolbarTextField 螢幕擷取畫面](~/ide/reference/media/vxtextfield.gif "vxTextfield")  
+ ![HTMLpageToolbarTextField 螢幕擷取畫面](../../ide/reference/media/vxtextfield.gif "vxTextfield")  
 
  在文件中，插入 `type="text"` 的 `input` 項目。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="Text1"` 表示第一個文字欄位、插入 `id="Text2"` 表示第二個文字欄位，以此類推。  
 
@@ -105,7 +88,7 @@ ms.lasthandoff: 06/23/2017
 >  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (檔案)**  
- ![HTML 網頁檔案欄位](~/ide/reference/media/vxfilefield.gif "vxFilefield")  
+ ![HTML 網頁檔案欄位](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
 
  在文件中，插入 `type="file"` 的 `input` 項目。 根據預設，插入 `id="File1"` 表示第一個檔案欄位、插入 `id="File2"` 表示第二個檔案欄位，以此類推。  
 
@@ -119,7 +102,7 @@ ms.lasthandoff: 06/23/2017
 >  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (密碼)**  
- ![Visual Studio 密碼欄位](~/ide/reference/media/vxpassword.gif "vxPassword")  
+ ![Visual Studio 密碼欄位](../../ide/reference/media/vxpassword.gif "vxPassword")  
 
  插入 `type="password"` 的 `input` 項目。 根據預設，插入 `id="Password1"` 表示第一個密碼欄位、插入 `id="Password2"` 表示第二個密碼欄位，以此類推。  
 
@@ -133,7 +116,7 @@ ms.lasthandoff: 06/23/2017
 >  如果您的應用程式傳輸使用者名稱和密碼，您應該設定網站使用安全通訊端層 (SSL) 來加密傳輸。 如需詳細資訊，請參閱 [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (IIS 作業手冊) 中的 "Securing Connections with SSL" (保護與 SSL 的連線)。 此外，建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **輸入 (核取方塊)**  
- ![HTML 網頁工具箱核取方塊選項](~/ide/reference/media/vxcheckbox.gif "vxCheckbox")  
+ ![HTML 網頁工具箱核取方塊選項](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
 
  插入 `type="checkbox"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Checkbox1"` 表示第一個核取方塊、插入 `id="Checkbox2"` 表示第二個核取方塊，以此類推。  
 
@@ -144,7 +127,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **輸入 (選項按鈕)**  
- ![VisualStudioHTMLpageRadioButton 螢幕擷取畫面](~/ide/reference/media/vxradio.gif "vxRadio")  
+ ![VisualStudioHTMLpageRadioButton 螢幕擷取畫面](../../ide/reference/media/vxradio.gif "vxRadio")  
 
  插入 `type="radio"` 的 `input` 項目。 若要變更顯示的文字，請編輯 `name` 屬性。 根據預設，插入 `id="Radio1"` 表示第一個選項按鈕、插入 `id="Radio2"` 表示第二個選項按鈕，以此類推。  
 
@@ -155,7 +138,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **輸入 (隱藏)**  
- ![HTML 網頁隱藏項目](~/ide/reference/media/vxhidden.gif "vxhidden")  
+ ![HTML 網頁隱藏項目](../../ide/reference/media/vxhidden.gif "vxhidden")  
 
  插入 `type="hidden"` 的 `input` 項目。 根據預設，插入 `id="Hidden1"` 表示第一個隱藏欄位、插入 `id="Hidden2"` 表示第二個隱藏欄位，以此類推。  
 
@@ -166,7 +149,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **文字區域**  
- ![HTML 網頁工具列文字區域](~/ide/reference/media/vxtextarea.gif "vxTextarea")  
+ ![HTML 網頁工具列文字區域](../../ide/reference/media/vxtextarea.gif "vxTextarea")  
 
  插入 `textarea` 項目。 您可以重新調整文字區域，或使用其捲軸來檢視超出顯示區域的文字。 若要變更顯示的預設文字，請編輯 `value` 屬性。 根據預設，插入 `id="textarea1"` 表示第一個文字區域、插入 `id=" textarea 2"` 表示第二個文字區域，以此類推。  
 
@@ -180,7 +163,7 @@ ms.lasthandoff: 06/23/2017
 >  建議驗證所有使用者輸入。 如需詳細資訊，請參閱[驗證 ASP.NET 網頁中的使用者輸入 (Razor) 網站](https://docs.microsoft.com/aspnet/web-pages/overview/ui-layouts-and-themes/validating-user-input-in-aspnet-web-pages-sites)。  
 
  **資料表**  
- ![HTMLpageToolbarTable 螢幕擷取畫面](~/ide/reference/media/vxtable.gif "vxTable")  
+ ![HTMLpageToolbarTable 螢幕擷取畫面](../../ide/reference/media/vxtable.gif "vxTable")  
 
  插入 `table` 項目。  
 
@@ -191,7 +174,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
 **影像**  
- ![HTML 網頁影像項目](~/ide/reference/media/vximage.gif "vxImage")  
+ ![HTML 網頁影像項目](../../ide/reference/media/vximage.gif "vxImage")  
 
  插入 `img` 項目。 編輯這個項目來指定其 `src` 和其 `alt` 文字。  
 
@@ -202,7 +185,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **選取**  
- ![HTML 網頁工具箱下拉式清單](~/ide/reference/media/vxdropdown.gif "vxDropdown")  
+ ![HTML 網頁工具箱下拉式清單](../../ide/reference/media/vxdropdown.gif "vxDropdown")  
 
  插入下拉式清單 `select` 項目 (不使用 `size` 屬性)。 根據預設，插入 `id="select1"` 表示第一個清單方塊、插入 `id="select2"` 表示第二個清單方塊，以此類推。  
 
@@ -215,7 +198,7 @@ ms.lasthandoff: 06/23/2017
  您可以增加 size 屬性的值來建立多行 `select` 項目。  
 
  **水平尺規**  
- ![HTML 網頁水平尺規項目](~/ide/reference/media/vxhorizontal.gif "vxHorizontal")  
+ ![HTML 網頁水平尺規項目](../../ide/reference/media/vxhorizontal.gif "vxHorizontal")  
 
  插入 `hr` 項目。 若要增加線條的粗細，請編輯 `size` 屬性。  
 
@@ -226,7 +209,7 @@ ms.lasthandoff: 06/23/2017
 ```  
 
  **Div**  
- ![HTML 網頁標籤](~/ide/reference/media/vxlabel.gif "vxLabel")  
+ ![HTML 網頁標籤](../../ide/reference/media/vxlabel.gif "vxLabel")  
 
  插入包含 `ms_positioning="FlowLayout"` 屬性的 `div` 項目。 除了寬度和高度之外，這個項目等同於「流程配置面板」。 若要格式化 `div` 項目內所含的文字，請將 `class="stylename"` 屬性新增至開始標記。  
 
@@ -239,4 +222,3 @@ ms.lasthandoff: 06/23/2017
 ## <a name="see-also"></a>另請參閱  
  [工具箱](../../ide/reference/toolbox.md)   
  [使用工具箱](../../ide/using-the-toolbox.md)   
-

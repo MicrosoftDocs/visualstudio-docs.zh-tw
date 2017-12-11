@@ -1,47 +1,48 @@
 ---
 title: "DA0003：許多核心樣本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.rules.DA0003"
-  - "vs.performance.DA0003"
-  - "vs.performance.3"
-  - "vs.performance.rules.DAManyKernelSamples"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords:
+- vs.performance.rules.DA0003
+- vs.performance.DA0003
+- vs.performance.3
+- vs.performance.rules.DAManyKernelSamples
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
-caps.latest.revision: 11
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 11
+caps.latest.revision: "11"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 7c3825c151190641b1cc9d9815f4916ccded423a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# DA0003：許多核心樣本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
+# <a name="da0003-many-kernel-samples"></a>DA0003：許多核心樣本
 |||  
 |-|-|  
 |規則 ID|DA0003|  
-|分類|程式碼剖析工具使用|  
-|程式碼剖析方法|取樣|  
-|Message|您在核心模式中有高比例的樣本。  這可能表示有大量的 I\/O 活動或很高的內容切換率。  請考慮使用檢測模式重新分析您的應用程式。|  
+|分類|分析工具使用方式|  
+|分析方法|取樣|  
+|訊息|您在核心模式中有高比例的樣本。 這可能指出大量 I/O 活動或較高的內容切換率。 請考慮使用檢測模式重新分析應用程式。|  
 |規則型別|資訊|  
   
-## 原因  
- 針對應用程式所收集的相當高比例的呼叫堆疊樣本是以核心模式執行。  請考慮使用不同的程式碼剖析方法對應用程式進行程式碼剖析。  
+## <a name="cause"></a>原因  
+ 針對應用程式收集的大部分呼叫堆疊範例是以核心模式執行。 請考慮使用不同的分析方法來分析應用程式。  
   
-## 規則描述  
- 在 Windows 中，程式碼可以在核心模式或使用者模式下執行。\(核心模式也稱為特殊權限模式\)。只有低階系統程式碼，例如裝置驅動程式，才能在核心模式下執行。  使用者模式應用程式可轉換至核心模式，以執行 I\/O 作業、等候執行緒或處理序同步處理基本型別，或執行系統呼叫。  
+## <a name="rule-description"></a>規則描述  
+ 在 Windows 中，您可以使用核心模式或使用者模式來執行程式碼  (核心模式也稱為特權模式)。只有低階系統程式碼 (例如裝置驅動程式) 才會以核心模式執行。 使用者模式應用程式可以轉換為核心模式以執行 I/O 作業、等候執行緒或處理序同步原始物件，或執行系統呼叫。  
   
- 針對花費大多數時間進行使用者模式下工作的應用程式進行程式碼剖析時，取樣會是最有效率的。  應用程式以核心模式執行時所收集到的範本數目，可以指出頻繁的 I\/O 作業，或是指出內容切換正在發生。  對於這些作業都無法使用取樣方法調查。  如果採用太多核心模式樣本，取樣資料可能不會包含足夠的使用者模式範例以具有統計上的意義。  
+ 當您要分析將大部分時間都用在以使用者模式工作的分析應用程式時，取樣最為有效。 以核心模式執行應用程式時所收集的樣本數目可能指出經常執行的 I/O 作業，或可能指出正在發生內容參數。 無法使用取樣方法來調查其中任一項作業。 如果取得太多核心模式樣本，則取樣資料可能未包含足夠的使用者模式樣本來進行統計。  
   
-## 如何修正違規  
- 考慮使用下列其中一個選項，再次對您的應用程式進行程式碼剖析：  
+## <a name="how-to-fix-violations"></a>如何修正違規  
+ 請考慮使用下列其中一個選項重新分析應用程式：  
   
--   使用檢測方法進行程式碼剖析。  
+-   使用檢測方法進行分析。  
   
--   增加取樣率以嘗試在使用者模式中收集更多樣本。
+-   增加取樣率，嘗試以使用者模式收集更多的樣本。

@@ -4,40 +4,22 @@ ms.custom:
 ms.date: 2015-10-05
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- vs.UnitTest.CreateIntelliTest
+f1_keywords: vs.UnitTest.CreateIntelliTest
 ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
-caps.latest.revision: 33
+caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c1c9f7dc62fab9de6bc32c80138c3fadbb036200
-ms.openlocfilehash: 79f4da148658c950957636fd050b5e83947f04b7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
-IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 if 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。  
+IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 `if` 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。  
   
  當您執行 IntelliTest 時，您很容易就能看到哪些測試失敗，進而加入必要的程式碼來修正測試。 您可以選取產生的測試，將其儲存到測試專案中做為迴歸套件。 當您變更程式碼時，請重新執行 IntelliTest，如此所產生的測試才能與您的程式碼變更保持同步。  
 
@@ -60,7 +42,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
 2.  在您程式碼中的方法上按一下滑鼠右鍵，然後選擇 [執行 IntelliTest]  ，為方法中的程式碼產生單元測試。  
   
-     ![以滑鼠右鍵按一下您的方法，以產生單元測試](~/test/media/runpex.png "RunPEX")  
+     ![以滑鼠右鍵按一下您的方法，以產生單元測試](../test/media/runpex.png "RunPEX")  
   
      IntelliTest 會以不同的輸入多次執行您的程式碼。 每次執行都會顯示在資料表中，並指出其測試資料及最終結果或例外狀況。  
   
@@ -92,7 +74,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
      您可以檢視這些警告，決定您的因應對策。  
   
-     ![檢視警告](~/test/media/pexviewwarning.png "PEXViewWarning")  
+     ![檢視警告](../test/media/pexviewwarning.png "PEXViewWarning")  
   
 2.  當您檢查完程式碼，並確認您的測試標的之後，您可以修正警告，以選擇測試該介面時所要使用的類別。  
   
@@ -154,7 +136,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
   
  接受預設格式以產生測試，或變更專案和測試的命名方式。 您可以建立新的測試專案，或將您的測試儲存至現有的專案。  
   
- ![使用 MSTest 預設值建立 IntelliTest](~/test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
+ ![使用 MSTest 預設值建立 IntelliTest](../test/media/pexcreateintellitestmstest.png "PEXCreateIntelliTestMSTest")  
 
 <a name="extend-framework"></a>  
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？  
@@ -176,4 +158,3 @@ Visual Studio Marketplace 也提供測試架構延伸模組︰
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>問：我可以進一步了解如何產生測試嗎？  
 
 **答：** 可以，如需高階概觀，請閱讀這篇 [部落格文章](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/05/intellitest-one-test-to-rule-them-all.aspx)。
-

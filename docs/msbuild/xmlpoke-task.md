@@ -1,46 +1,47 @@
 ---
-title: "XmlPoke Task | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "VB"
-  - "CSharp"
-  - "C++"
-  - "jsharp"
-helpviewer_keywords: 
-  - "XmlPoke task [MSBuild]"
-  - "MSBuild, XmlPoke task"
+title: "XmlPoke 工作 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- VB
+- CSharp
+- C++
+- jsharp
+helpviewer_keywords:
+- XmlPoke task [MSBuild]
+- MSBuild, XmlPoke task
 ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
-caps.latest.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 4
+caps.latest.revision: "4"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 254a23aed67fc7b06558142dd7426e2da5359cc1
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# XmlPoke Task
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-設定值，如同 XML 檔案的 XPath 查詢所指定。  
+# <a name="xmlpoke-task"></a>XmlPoke 工作
+將 XPath 查詢所指定的值設定至 XML 檔案。  
   
-## 參數  
+## <a name="parameters"></a>參數  
  下表說明 `XmlPoke` 工作的參數。  
   
 |參數|描述|  
-|--------|--------|  
-|`Namespaces`|選擇性 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|  
-|`Query`|選擇性 `String` 參數。<br /><br /> 指定 XPath 查詢。|  
+|---------------|-----------------|  
+|`Namespaces`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢前置詞的命名空間。|  
+|`Query`|選擇性的 `String` 參數。<br /><br /> 指定 XPath 查詢。|  
 |`Value`|必要的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定輸出檔。|  
-|`XmlInputPath`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指定為檔案路徑形式的 XML 輸入。|  
+|`XmlInputPath`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 將 XML 輸入指定為檔案路徑。|  
   
-## 備註  
- 除了會有表中列出的參數之外，此項工作還會繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。  如需這些錯誤碼的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
+## <a name="remarks"></a>備註  
+ 除了具有表格中所列的參數之外，此工作也繼承 <xref:Microsoft.Build.Tasks.TaskExtension> 類別的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需這些其他參數的清單及其說明，請參閱 [TaskExtension Base Class](../msbuild/taskextension-base-class.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
- [Task Reference](../msbuild/msbuild-task-reference.md)
+ [工作參考](../msbuild/msbuild-task-reference.md)

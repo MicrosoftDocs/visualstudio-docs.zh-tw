@@ -1,20 +1,18 @@
 ---
-title: "自訂 IDE"
+title: "自訂 IDE | Microsoft Docs"
 description: "Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在符合其效率與審美需求的環境中開發應用程式。 本主題探討 Visual Studio for Mac 可調整以符合您需求的各種方式。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
+ms.openlocfilehash: f0192b63c76fe4c3fe51c0f5aa6700e072fb80d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 514f758718105db366363cd1c9e69163a9872dc7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
-#<a name="customizing-the-ide"></a>自訂 IDE
+# <a name="customizing-the-ide"></a>自訂 IDE
 
 Visual Studio for Mac 可以使用各種方式加以自訂，讓使用者能夠在效率與審美方面符合其需求的環境中開發應用程式。 本主題探討 Visual Studio for Mac 可調整以符合您需求的各種方式。
 
@@ -131,4 +129,3 @@ Visual Studio for Mac 可讓您並排開啟文字編輯器，或以卸離的浮�
  ![二欄並排及其他索引標籤](media/customizing-the-ide-sbs2.png)
 
 若要還原為單一開啟的編輯器，請選取 [檢視] > [Editor Columns] (編輯器資料欄) > [1 column] (單欄)。
-

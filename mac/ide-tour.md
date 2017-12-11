@@ -1,19 +1,17 @@
 ---
-title: "Visual Studio for Mac 教學課程"
+title: "Visual Studio for Mac 教學課程 | Microsoft Docs"
 description: "Visual Studio for Mac 提供整合式的開發環境，以在 macOS 上建置 .NET 應用程式，包括 ASP.NET Core 網站，和適用於 iOS、Android、Mac 和 Xamarin.Forms 的 Xamarin 專案。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
+ms.openlocfilehash: 0f8f3ba04d4e5a8949bc57cb8cf61d470690d786
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 04f7ec6474aafedeccdbbf704486c431a4258f61
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="visual-studio-for-mac-tour"></a>Visual Studio for Mac 教學課程
 
 Visual Studio for Mac 將 Xamarin 的行動中心 IDE Xamarin Studio，發展為 Mac 上的行動優先和雲端優先的開發環境。 這項以開發人員為焦點的工具，可讓您利用 .NET 的功能建立使用者所需的所有平台應用程式。

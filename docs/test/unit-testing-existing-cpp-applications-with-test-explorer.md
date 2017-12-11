@@ -1,23 +1,12 @@
 ---
-title: "使用測試總管針對現有 C++ 應用程式執行單元測試 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-devops-test
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
-caps.latest.revision: "11"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 665e16720466faff5dd52635066198e36d58d117
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/test/how-to-use-microsoft-test-framework-for-cpp
+ms.openlocfilehash: 7ab917a55d9a2d00a8d4635e2de45cd43cbe02f2
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-existing-c-applications-with-test-explorer"></a>使用測試總管針對現有 C++ 應用程式執行單元測試
+# <a name="how-to-use-the-microsoft-unit-testing-framework-for-c"></a>如何使用適用於 C++ 的 Microsoft 單元測試架構
 我們建議在變更現有的應用程式之前，您要確定它能夠良好地涵蓋單元測試。 這會讓您對於變更不會產生 Bug 有信心。 如果應用程式尚未具有單元測試，您可以使用本主題中所示範的技術來加入單元測試。 本主題說明如何為現有的 Visual C++ 程式碼加入單元測試，從決定如何測試程式碼開始，然後建立、撰寫測試，最後則執行測試。  
   
 ## <a name="deciding-how-to-test-your-code"></a>決定如何測試程式碼  
@@ -29,7 +18,7 @@ ms.lasthandoff: 10/27/2017
   
  有幾種方式可以測試產品程式碼，這取決於產品是否有公開您要測試的介面。 請選擇下列其中一種方式：  
   
- **單元測試只會使用從受測程式碼匯出的函式：**  
+ **單元測試只會呼叫從受測程式碼匯出的函式：**  
  加入個別的測試專案。 在測試專案中，加入受測專案的參考。  
   
  移至[從測試專案參考匯出的函式](#projectRef)程序。  
@@ -46,7 +35,7 @@ ms.lasthandoff: 10/27/2017
   
  請移至[將受測程式碼變更為靜態程式庫](#staticLink)程序。  
   
- **單元測試必須使用私用函式和資料，而程式碼必須建置為動態連結程式庫 (DLL)：**  
+ **單元測試必須使用私用成員函式和資料，而程式碼必須建置為動態連結程式庫 (DLL)：**  
  將單元測試加入至與產品程式碼相同的專案中。  
   
  請移至[在相同專案中新增單元測試](#sameProject)程序。  
@@ -65,9 +54,9 @@ ms.lasthandoff: 10/27/2017
   
  繼續進行[將測試連結至物件或程式庫檔案](#objectRef)程序。  
   
-###  <a name="projectRef"></a> 從測試專案參考匯出的函式  
+###  <a name="projectRef"></a> 從測試專案參考匯出的 DLL 函式  
   
--   如果受測專案會匯出您要測試的函式，那麼您就可以從測試專案加入程式碼專案的參考。  
+-   如果受測專案是匯出您要測試之函式的 DLL，那麼您就可以從測試專案加入程式碼專案的參考。  
   
     1.  建立 C++ 測試專案。  
   
@@ -162,8 +151,11 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="run-the-tests"></a>執行測試  
   
-1.  在 [ **檢視** ] 功能表上，選擇 [ **其他視窗**]、[ **測試總管**]。  
+1.  在 [測試] 功能表上，選擇 [Windows]、**測試總管**。  
+2. 如果視窗中未顯示您所有的測試，請建置測試專案，方法是在**方案總管**中，以滑鼠右鍵按一下其節點，然後選擇 [建置] 或 [重建]。
   
-2.  在 [測試總管] 中，選擇 [ **全部執行**]。  
+2.  在測試總管中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。
   
- 如需詳細資訊，請參閱[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)。
+## <a name="see-also"></a>另請參閱
+[快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
+

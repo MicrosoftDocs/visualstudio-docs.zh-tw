@@ -1,66 +1,66 @@
 ---
 title: "開啟檔案命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "file.openfile"
-helpviewer_keywords: 
-  - "File.OpenFile 命令"
-  - "of 命令"
-  - "開啟檔案命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: file.openfile
+helpviewer_keywords:
+- Open File command
+- File.OpenFile command
+- of command
 ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f7b1576ce7c34e953c45d7b303190a00d77e86cc
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 開啟檔案命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-開啟現有的檔案，並且允許您指定編輯器。  
+# <a name="open-file-command"></a>開啟檔案命令
+開啟現有的檔案，並可讓您指定編輯器。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 File.OpenFile filename [/e:editorname]  
 ```  
   
-## 引數  
+## <a name="arguments"></a>引數  
  `filename`  
- 必要項。  要開啟檔案的完整或部分路徑及檔案名稱。  包含空白的路徑必須使用引號括住。  
+ 必要項。 要開啟之檔案的完整或部分路徑和檔名。 包含空格的路徑必須包含在引號中。  
   
-## 參數  
- \/e:`editorname`  
- 選擇項。  將開啟檔案的編輯器名稱。  如果已指定引數但是未提供編輯器名稱，則 \[**開啟方式**\] 對話方塊隨即出現。  
+## <a name="switches"></a>參數  
+ /e:`editorname`  
+ 選擇項。 將用來開啟檔案之編輯器的名稱。 如果指定此引數，但未提供編輯器名稱，則會出現 [開啟方式] 對話方塊。  
   
- \/E:`editorname`引數語法使用的編輯器名稱，以讓其顯示在 \[開啟方式\] 對話方塊，以引號括住。  
+ /e:`editorname` 引數語法會使用出現在 [開啟方式] 對話方塊並使用引號括住的編輯器名稱。  
   
- 例如，要在原始程式碼編輯器中開啟檔案，您可以輸入下列 \/e:`editorname` 引數。  
+ 例如，若要使用原始程式碼編輯器開啟檔案，您將針對 /e:`editorname` 引數輸入下列項目。  
   
 ```  
 /e:"Source Code (text) Editor"  
 ```  
   
-## 備註  
- 當您輸入路徑時，自動完成會嘗試找到正確的路徑及檔案名稱。  
+## <a name="remarks"></a>備註  
+ 在您輸入路徑時，自動完成會嘗試找出正確的路徑和檔名。  
   
-## 範例  
- 此範例在原始程式碼編輯器中開啟樣式檔案 "Test1.css"。  
+## <a name="example"></a>範例  
+ 本範例會在原始程式碼編輯器中開啟樣式檔案 "Test1.css"。  
   
 ```  
 >File.OpenFile "C:\My Projects\project1\Test1.css" /e:"Source Code (text) Editor"  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [即時運算視窗](../../ide/reference/immediate-window.md)   
- [尋找\/命令方塊](../../ide/find-command-box.md)   
+ [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

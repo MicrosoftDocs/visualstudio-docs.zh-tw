@@ -1,71 +1,72 @@
 ---
 title: "ProcessOn 和 ProcessOff | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
-caps.latest.revision: 8
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 8
+caps.latest.revision: "8"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6e187498656f1fd781d26e6b04426621bd2f3c3c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# ProcessOn 和 ProcessOff
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPerfCmd.exe **ProcessOff** 及 **ProcessOn** 子命令會暫停和繼續對命令列程式碼剖析工作階段中指定的處理序進行的程式碼剖析。  **ProcessOff** 會停止對處理序進行程式碼剖析，**ProcessOn** 則會開始對處理序進行程式碼剖析。  
+# <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
+VSPerfCmd.exe 的 **ProcessOff** 和 **ProcessOn** 子命令會暫停和繼續分析命令列分析工作階段中指定的處理序。 **ProcessOff** 會停止分析處理序，**ProcessOn** 則開始分析處理序。  
   
- 在大部分的情況下，您會指定 **ProcessOn** 或 **ProcessOff** 做為 VSPerfCmd.exe 命令列中唯一的選項，但是它們也可以與 **GlobalOn**、**GlobalOff**、**ThreadOn** 以及 **ThreadOff** 子命令結合。  
+ 在大部分的情況下，您可以將 **ProcessOn** 或 **ProcessOff** 指定為 VSPerfCmd.exe 命令列的唯一選項，但它們也可以和 **GlobalOn**、**GlobalOff**、**ThreadOn** 及 **ThreadOff** 子命令合併使用。  
   
- **ProcessOn** 和 **ProcessOff** 子命令會與控制命令列程式碼剖析工作階段中所有處理序之資料收集的 **GlobalOn** 和 **GlobalOff** 子命令互動，也會與控制指定之執行緒的資料收集的 **ThreadOn** 和 **ThreadOff** 子命令互動。  
+ **ProcessOn** 和 **ProcessOff** 子命令可與 **GlobalOn** 和 **GlobalOff** 子命令互動，控制命令列分析工作階段中所有處理序的資料收集，與 **ThreadOn** 和 **ThreadOff** 子命令互動，控制指定執行緒的資料收集。  
   
- **ProcessOff** 和 **ProcessOn** 子命令也會影響程式碼剖析工具 API 函式操作的 \[處理序 Start\/Stop 計數\]。  
+ **ProcessOff** 和 **ProcessOn** 子命令也會影響分析工具 API 函式操控的處理序開始/停止計數。  
   
--   **ProcessOff** 會立即將 \[處理序 Start\/Stop 計數\] 設定為 0，因此會暫停程式碼剖析。  
+-   **ProcessOff** 可立即將處理序開始/停止計數設定為 0，並因此會暫停分析。  
   
--   **ProcessOn** 會立即將 \[處理序 Start\/Stop 計數\] 設定為 1，因此會繼續程式碼剖析。  
+-   **ProcessOn** 可立即將處理序開始/停止計數設定為 1，並因此會繼續分析。  
   
  如需詳細資訊，請參閱[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]  
   
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `PID`  
- 要開始或停止之處理序的整數識別項。  處理序 ID 列於 Windows \[工作管理員\] 的 \[處理程序\] 索引標籤上。  
+ 開始或停止處理序的整數識別碼。 處理序識別碼會列在 Windows 工作管理員的 [處理序] 索引標籤。  
   
-## 所需的子命令  
- None  
+## <a name="required-subcommands"></a>必要的子命令  
+ 無  
   
-## 有效的子命令  
- **ProcessOn** 和 **ProcessOff** 可以在同時包含下列子命令的命令列上指定。  
+## <a name="valid-subcommands"></a>有效的子命令  
+ 您可以在也包含下列子命令的命令列上指定 **ProcessOn** 和 **ProcessOff**。  
   
  **Start:** `Method`  
- 初始化命令列程式碼剖析工作階段，並設定指定的程式碼剖析方法。  
+ 初始化命令列分析工作階段，並設定指定的分析方法。  
   
- **Launch:** `AppName`  
- 啟動指定的應用程式並以取樣方法開始執行程式碼剖析。  
+ **Launch：** `AppName`  
+ 啟動指定的應用程式，並使用取樣方法開始程式碼剖析。  
   
  **Attach:** `PID`  
- 開始對指定的處理序進行程式碼剖析。  
+ 開始對指定的處理序進行分析。  
   
  **GlobalOff**&#124;**GlobalOn**  
- 停止或開始對命令列程式碼剖析工作階段中的所有處理序進行程式碼剖析。  
+ 在命令列分析工作階段中，停止或開始分析所有處理序。  
   
  {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
- 停止或開始對指定的執行緒進行程式碼剖析 \(僅限檢測方法\)。  
+ 停止或開始對指定的執行緒進行分析 (僅檢測方法)。  
   
-## 範例  
- 這個範例會使用 **ProcessOff** 子命令，以收集應用程式啟動的程式碼剖析資料。  
+## <a name="example"></a>範例  
+ 在此範例中，**ProcessOff** 子命令是用來收集應用程式啟動的分析資料。  
   
 ```  
 ; Initialize the profiler.  
@@ -79,8 +80,8 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

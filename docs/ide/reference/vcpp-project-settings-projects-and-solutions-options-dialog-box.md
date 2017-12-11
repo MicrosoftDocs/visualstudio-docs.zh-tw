@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 08/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.VCBuild
+f1_keywords: VS.ToolsOptionsPages.Projects.VCBuild
 helpviewer_keywords:
 - builds [Visual Studio], logs
 - build process [C++]
@@ -19,31 +17,15 @@ helpviewer_keywords:
 - extensions, files built by C or C++ compiler
 - BuildLog.htm
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: ea1e787c1d509123a650cf2bd20e5fa8bffd5b4e
-ms.openlocfilehash: 2581fdecd9a26c8d4500f83b9abd0e1f967e2ee6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。  
@@ -53,7 +35,6 @@ ms.lasthandoff: 09/26/2017
 1.  在 [ **工具** ] 功能表上按一下 [ **選項**]。  
   
 2.  選取 [專案和方案]，然後選取 [VC++ 專案設定]。  
-  
  
 ## <a name="build-logging"></a>建置記錄  
  **是**  
@@ -95,17 +76,13 @@ ms.lasthandoff: 09/26/2017
  **顯示所有檔案**  
   將方案總管設定為顯示專案中的檔案，以及專案資料夾中磁碟上的檔案。  
 
-
 ## <a name="enable-project-caching"></a>啟用專案快取
-**是**：讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必重新從專案檔計算資料。 使用快取資料可以大幅加速專案載入時間。   
+**是**  
+讓 Visual Studio 能夠快取專案資料，以便在您下次開啟專案時，載入那份快取的資料，而不必從專案檔重新計算資料。 使用快取資料可以大幅加速專案載入時間。   
 
-**否**：不使用快取的專案資料。 每次載入專案時都會剖析專案檔。
+**No**  
+不使用快取的專案資料。 每次載入專案時都會剖析專案檔。
 
-
-  
-
-  
-#
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建置 C/C++ 程式](/cpp/build/building-c-cpp-programs)   
  [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)

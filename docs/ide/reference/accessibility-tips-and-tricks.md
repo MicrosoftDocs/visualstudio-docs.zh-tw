@@ -1,37 +1,44 @@
 ---
-title: "協助工具祕訣和訣竅 | Microsoft Docs"
+title: "Visual Studio 協助工具祕訣和訣竅 | Microsoft Docs"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 09/15/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- accessibility [Visual Studio]
+helpviewer_keywords: accessibility [Visual Studio]
 ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
-caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 17defdd0b96ec1c3273fc6b845af844b031a4a17
-ms.openlocfilehash: 906e8c70df502245001f87795cab9f5efe808c83
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="accessibility-tips-and-tricks"></a>協助工具祕訣和訣竅
+# <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 > [!TIP]
 > 若要深入了解最新的協助工具更新，請參閱 [Visual Studio 2017 15.3 版中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
 
-Visual Studio 包括內建協助工具功能，可讓您透過鍵盤輕鬆工作，以及使用螢幕助讀程式或其他輔助技術裝置。 本主題包括針對協助工具最佳化 Visual Studio 的一些建議，以及一些實用快速鍵組合。 快速鍵組合可讓您使用鍵盤在 Visual Studio 中執行工作。
+Visual Studio 有與螢幕助讀程式和其他輔助技術相容的內建協助工具功能。 本主題列出的常見快速組合鍵，可用以執行只能使用鍵盤的工作，包括使用高對比佈景主題以改善可見性的相關資訊。 它也會向您示範如何使用註解顯示實用的程式碼資訊，以及如何設定組建和中斷點事件的音效提示。
 
 ## <a name="save-your-ide-settings"></a>儲存 IDE 設定  
  您可以儲存視窗配置、鍵盤對應配置和其他喜好設定，來自訂 IDE 體驗。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
 
-## <a name="accessing-toolbars"></a>存取工具列
+## <a name="modify-your-ide-for-high-contrast-viewing"></a>修改您的 IDE 進行高對比檢視
+對有些人而言，部分色彩十分難以辨識。 如果希望提高程式碼的對比，但不想使用一般的「高對比」佈景主題，我們現在提供「藍色 (超對比)」佈景主題。
+
+  ![比較藍色佈景主題和藍色超對比佈景主題](media/blue-extra-contrast-theme.png "看到藍色佈景主題和藍色超對比佈景主題之間的差異")
+
+## <a name="use-annotations-to-reveal-useful-information-about-your-code"></a>使用註釋顯示程式碼的實用資訊
+
+Visual Studio 編輯器包含許多文字「裝飾」，讓您知道程式碼特定點的特性和功能，例如燈泡、錯誤和警告的「波浪線」、書籤等等。 您可以使用「顯示程式碼行註釋」命令集協助探索，然後巡覽這些裝飾。
+
+  ![使用顯示程式碼行註釋命令集](media/show-line-annotations-command-set.png "示範如何設定顯示程式碼行註釋命令集")
+
+## <a name="access-toolbars-by-using-shortcut-key-combinations"></a>使用快速鍵組合存取工具列
 Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速鍵組合可協助您進行存取。
 
 |功能|描述|按鍵組合|  
@@ -40,7 +47,7 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 |工作視窗工具列|將焦點移至工具視窗中的工具列。 <br> <br> **注意：**這適用於大部分的工具視窗，但只限焦點在工具視窗中時。 此外，您必須先選擇 SHIFT 鍵再選擇 ALT 鍵。 在部分工具視窗 (例如 Team Explorer) 中，您必須先按住 SHIFT 鍵再選擇 ALT 鍵。|**SHIFT** + **ALT**|
 |工具列|移至下一個工具列中的第一個項目 (當工具列有焦點時)。|**CTRL** + **TAB**|
 
-## <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合  
+### <a name="other-useful-shortcut-key-combinations"></a>其他實用快速鍵組合  
 有些其他實用快速鍵組合包括下列項目。
 
 |功能|描述|按鍵組合|  
@@ -56,10 +63,38 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 > [!NOTE]
 >  根據您目前使用的設定或版本，您所看到的對話方塊與功能表命令可能會與 [說明] 中描述的不同。  
 
+
+## <a name="use-the-sound-applet-to-set-build-and-breakpoint-cues"></a>使用音效小程式設定組建與中斷點提示
+您可以使用 Windows 的音效小程式，指派 Visual Studio 程式事件的音效。 具體而言，您可以指派下列程式事件的音效：
+
+ * 遇到中斷點
+ * 已取消組建
+ * 組建失敗
+ * 組建成功
+
+方式如下：
+
+1. 在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入**變更系統音效**。
+
+  ![Windows 10 的 [搜尋] 方塊](media/type-here-to-search.png "在執行 Windows 10 電腦的 [搜尋] 方塊中鍵入音效")
+
+  (或者，如啟用 Cortana，說出「嘿 Cortana」，接著說出「變更系統音效」。)
+
+2. 按兩下 [變更系統音效]。
+
+  ![Windows 10 的搜尋結果](media/change-system-sounds.png "按兩下搜尋結果中的 [變更系統音效]")
+
+3. 在 [音效] 對話方塊中，按一下 [音效] 索引標籤。 <br><br>
+ 然後，在 [程式事件] 中捲動到 **Microsoft Visual Studio**，選取您想要套用至所選事件的音效。
+
+  ![Windows 10 音效小程式的 [音效] 索引標籤](media/sound-applet.png "按兩下搜尋結果中的 [變更系統音效]")
+
+4. 按一下 [確定]。
+
+
+
 ## <a name="see-also"></a>請參閱  
- [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
-
- [如何：在 Visual Studio 中自訂功能表和工具列](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
-
- [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
-
+* [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
+  * [如何：在 Visual Studio 中自訂功能表和工具列](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)
+* [Microsoft Accessibility](https://www.microsoft.com/Accessibility) (Microsoft 協助工具)

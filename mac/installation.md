@@ -1,5 +1,5 @@
 ---
-title: "安裝 Visual Studio for Mac"
+title: "安裝 Visual Studio for Mac | Microsoft Docs"
 description: "如何安裝 Visual Studio for Mac 和跨平台開發所需之其他元件的指示。"
 author: asb3993
 ms.author: amburns
@@ -7,14 +7,12 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
+ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 24d2fa5f9054e621cd5167692a2571e9275c2bae
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
-
 # <a name="setup-and-install-visual-studio-for-mac"></a>設定與安裝 Visual Studio for Mac
 
 ## <a name="setup"></a>安裝程式
@@ -25,7 +23,7 @@ ms.lasthandoff: 08/11/2017
 
 * 具有 macOS Sierra 10.12 或以上版本的 Mac
 * Xcode 8.3
-* Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 免費建立一個新識別碼。 安裝及登入 Xcode 時需要有 Apple 識別碼。
+* Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 免費建立一個新識別碼。安裝及登入 Xcode 時需要有 Apple 識別碼。
 
 ## <a name="install"></a>安裝
 
@@ -76,3 +74,22 @@ ms.lasthandoff: 08/11/2017
 > [!NOTE]
 如果您在原始安裝期間選擇不安裝平台或工具 (在步驟 #6 中取消選取它)，當您稍後想要新增元件時，必須再次執行[安裝程式](https://www.visualstudio.com/vs/)。
 
+## <a name="manual-installation"></a>手動安裝
+
+如果您的安裝失敗或安裝的任何單一元件失敗，您或許可以透過手動安裝來解決此問題。 若要檢視必要元件並下載每個元件，請採取下列步驟：
+
+1. 在 Visual Studio 安裝程式的第二個畫面中，移至功能表列，然後選取 [View Manual Installation Instructions] (檢視手動安裝指示)：
+
+    ![顯示手動安裝功能表項目的選項](media/installer-image12.png)
+
+2. 遵循指示以手動下載並安裝這些元件：
+
+  ![手動安裝對話方塊](media/installer-image13.png)
+
+## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>將 Visual Studio for Mac 安裝在防火牆或 Proxy 伺服器後方
+
+若要將 Visual Studio for Mac 安裝在防火牆後方，某些端點必須設為可供存取，才能允許下載您軟體所需的工具和更新。
+
+將您的網路設定為允許存取下列位置：
+
+* [Visual Studio 端點](https://docs.microsoft.com/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)

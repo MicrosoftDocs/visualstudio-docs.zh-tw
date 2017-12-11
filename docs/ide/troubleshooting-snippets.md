@@ -1,42 +1,43 @@
 ---
-title: "疑難排解程式碼片段 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "IntelliSense 程式碼片段, 疑難排解"
-  - "IntelliSense 程式碼片段疑難排解"
-  - "Visual Basic 疑難排解, IntelliSense 程式碼片段"
+title: "針對程式碼片段進行疑難排解 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- IntelliSense Code Snippets, troubleshooting
+- troubleshooting IntelliSense Code Snippets
+- troubleshooting Visual Basic, IntelliSense Code Snippets
 ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
-caps.latest.revision: 17
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 17
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 80e5ba76a54b584e5eed74f507f1fb3b81e7f89e
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 疑難排解程式碼片段
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-與 IntelliSense 程式碼片段有關的問題通常會由兩個問題所造成：損毀的程式碼片段檔案或程式碼片段檔案中有不正確的內容。  
+# <a name="troubleshooting-snippets"></a>疑難排解程式碼片段
+IntelliSense 程式碼片段的問題通常是由兩個問題所造成：損毀的程式碼片段檔案或程式碼片段檔案中有錯誤內容。  
   
-## 常見問題  
+## <a name="common-problems"></a>常見問題  
   
-### 程式碼片段無法從 Visual Studio 原始程式檔的檔案總管拖曳  
+### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>程式碼片段無法從檔案總管拖曳至 Visual Studio 的原始程式檔  
   
--   程式碼片段檔案中的 XML 可能已損毀。  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的 \[**XML 編輯器**\] 可以找出 XML 結構中的問題。  
+-   程式碼片段檔案中的 XML 可能已損毀。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
   
--   程式碼片段檔案可能不符合程式碼片段結構描述。  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的 \[**XML 編輯器**\] 可以找出 XML 結構中的問題。  
+-   程式碼片段檔案可能不符合程式碼片段結構描述。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 **XML 編輯器**可以找出 XML 結構中的問題。  
   
-### 程式碼有未反白顯示的編譯器錯誤  
+### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>程式碼有未反白顯示的編譯器錯誤  
   
--   您可能遺漏專案參考。  請檢查程式碼片段的相關文件。  如果在電腦上找不到參考，您需要加以安裝。  插入程式碼片段應該將任何需要的參考加入至專案。  如果程式碼片段遺漏參考資訊，可以當做錯誤向程式碼片段建立者報告。  
+-   您可能遺漏了專案參考。 檢查有關程式碼片段的文件。 如果電腦上找不到參考，您需要安裝它。 插入程式碼片段應該會在專案中新增所有需要的參考。 如果程式碼片段遺漏了參考資訊，可向程式碼片段建立者報告為錯誤。  
   
--   可能未定義變數。  應該反白顯示程式碼片段中未定義的變數。  如果沒有，可以當做錯誤向程式碼片段建立者報告。  
+-   可能未定義變數。 程式碼片段中未定義的變數應予反白顯示。 否則，會向程式碼片段建立者報告為錯誤。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [程式碼片段](../ide/code-snippets.md)

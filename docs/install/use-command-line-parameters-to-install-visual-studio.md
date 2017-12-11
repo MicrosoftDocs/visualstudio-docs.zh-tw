@@ -1,11 +1,10 @@
 ---
 title: "使用命令列參數安裝 Visual Studio | Microsoft Docs"
 ms.custom: 
-ms.date: 08/14/2017
+ms.date: 09/22/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology:
-- vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,12 +15,11 @@ ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
+ms.openlocfilehash: ff653e6fd9fb33cd7141671e9b77f297f8457a8b
+ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
 ms.translationtype: HT
-ms.sourcegitcommit: f23906933add1f4706d8786b2950fb3b5d2e6781
-ms.openlocfilehash: 12db04604356a9b6a8b565b7bfaf9db2eab199c1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/14/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>使用命令列參數來安裝 Visual Studio 2017
 當您從命令提示字元安裝 Visual Studio 2017 時，可以使用各種命令列參數來控制或自訂安裝。 您可以從命令列執行下列動作：
@@ -87,15 +85,15 @@ ms.lasthandoff: 08/14/2017
 | **進階安裝選項** | **說明** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **選擇性**：要安裝執行個體的通道識別碼。 這對安裝命令是必要的，對其他指定了 `--installPath` 的命令則會予以略過。 |
-| `--channelUri <uri>` | **選擇性**︰通道資訊清單的 URI。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
-| `--installChannelUri <uri>` | **選擇性**︰要用於安裝之通道資訊清單的 URI。 `--channelUri` 指定的 URI (指定 `--installChannelUri` 時必須指定) 會用來偵測更新。 如果不需要更新，就必須指定沒有引數的 `--channelUri`。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
+| `--channelUri <uri>` | **選擇性**︰通道資訊清單的 URI。 如果不需要更新，`--channelUri` 可以指向不存在的檔案 (例如 --channelUri C:\doesntExist.chman)。此選項可用於安裝命令，但針對其他命令則會予以略過。 |
+| `--installChannelUri <uri>` | **選擇性**︰要用於安裝之通道資訊清單的 URI。 `--channelUri` 指定的 URI (指定 `--installChannelUri` 時必須指定) 會用來偵測更新。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
 | `--installCatalogUri <uri>` | **選擇性**︰要用於安裝之目錄資訊清單的 URI。 如有指定，通道管理員會嘗試從此 URI 下載目錄資訊清單，再於安裝通道資訊清單中使用此 URI。 此參數可用來支援離線安裝，在此安裝中會使用已下載的產品目錄來建立配置快取。 此選項可用於安裝命令，但針對其他命令則會予以略過。 |
 | `--productId <id>` | **選擇性**：要安裝之執行個體的產品識別碼。 在一般安裝情況中會預先填入此識別碼。 |
 | `--wait` | **選擇性**︰處理序會在安裝完成後才傳回結束代碼。 這適用於自動化安裝的情況，在此情況下，使用者必須等候安裝完成，才能處理該安裝的傳回碼。 |
 | `--locale <language-locale>` | **選擇性**︰變更安裝程式本身的使用者介面顯示語言。 設定將會予以保留。 如需詳細資訊，請參閱此頁面上的[語言地區設定清單](#list-of-language-locales)一節。|
 | `--cache` | **15.2 的新功能，選擇性**︰如果存在，套件將會在安裝之後加以保留，以利後續修復。 這會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
 | `--nocache` | **版本 15.2 的新功能，選擇性**︰如果套件存在，會在安裝或修復之後刪除。 只有在需要時才會再次下載它們，並於使用過後再次刪除。 這會覆寫要用於後續安裝、修復或修改的全域原則設定。 預設原則是快取套件。 若是解除安裝命令，則會略過此項。 如需詳細資訊，請參閱如何[停用或移動套件快取](disable-or-move-the-package-cache.md)。 |
-| `--noUpdateInstaller` | **15.2 的新功能，選擇性**︰如果存在，則在指定無訊息時會防止安裝程式更新它自己。 如果在需要安裝程式更新時指定具有無訊息的 noUpdateInstaller，則安裝程式會讓命令失敗，並傳回非零結束代碼。 | 
+| `--noUpdateInstaller` | **15.2 的新功能，選擇性**︰如果存在，則在指定無訊息時會防止安裝程式更新它自己。 如果在需要安裝程式更新時指定具有無訊息的 noUpdateInstaller，則安裝程式會讓命令失敗，並傳回非零結束代碼。 |
 | `--noWeb` | **版本 15.3 的新功能，選擇性**：安裝程式現在會下載任何從網際網路安裝的內容。  離線配置中必須提供所有正在安裝的內容。  如果配置缺少內容，安裝程式會失敗。  如需詳細資訊，請參閱[從網路安裝部署](create-a-network-installation-of-visual-studio.md)。 |
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>工作負載識別碼和元件識別碼清單
@@ -133,11 +131,18 @@ ms.lasthandoff: 08/14/2017
 
 每個作業會在 `%TEMP%` 目錄中產生幾個記錄檔，顯示安裝進度。 依日期將資料夾排序，然後分別針對啟動載入器、安裝程式應用程式和安裝程式引擎尋找開頭為 `dd_bootstrapper`、`dd_client` 和 `dd_setup` 的檔案。
 
+## <a name="get-support"></a>取得支援
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+
+以下是一些支援選項：
+* 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
+* 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
+* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
+* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
+
 ## <a name="see-also"></a>請參閱
 
  * [安裝 Visual Studio 2017](install-visual-studio.md)
  * [建立 Visual Studio 2017 的離線安裝](create-an-offline-installation-of-visual-studio.md)
  * [Visual Studio 2017 安裝的命令列參數範例](command-line-parameter-examples.md)
  * [使用回應檔自動安裝 Visual Studio](automated-installation-with-response-file.md)
- * [回報 Visual Studio 2017 的問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
-

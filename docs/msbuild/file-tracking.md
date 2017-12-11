@@ -1,36 +1,36 @@
 ---
 title: "檔案追蹤 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "msbuild, 檔案追蹤"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords: msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: a43c651b6f39e53b77eabe261c67ad7ca0fdcf78
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 檔案追蹤
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-檔案追蹤會記錄處理序及其子處理序對 Windows 檔案系統的呼叫。  程式會藉由呼叫下列函式，控制開啟和關閉這項記錄功能的時機，並指定要使用的記錄檔。  
+# <a name="file-tracking"></a>檔案追蹤
+檔案追蹤會記錄對 Windows 檔案系統處理序及其子處理序的呼叫。 呼叫下列函式，程式可以控制此記錄開啟和關閉的時間，並指定要使用的記錄檔。  
   
-## 在本節中  
+## <a name="in-this-section"></a>本章節內容  
  [EndTrackingContext](../msbuild/endtrackingcontext.md)  
  停止追蹤目前的內容。  
   
  [ResumeTracking](../msbuild/resumetracking.md)  
- 在呼叫 [SuspendTracking](../msbuild/suspendtracking.md) 之後繼續追蹤。  
+ 呼叫 [SuspendTracking](../msbuild/suspendtracking.md) 後繼續追蹤。  
   
  [SetThreadCount](../msbuild/setthreadcount.md)  
- 設定要用於追蹤的執行緒數目。  
+ 設定用於追蹤的執行緒數目。  
   
  [StartTrackingContext](../msbuild/starttrackingcontext.md)  
  開始新的追蹤內容。  
@@ -39,7 +39,7 @@ caps.handback.revision: 6
  使用指定的根目錄開始新的追蹤內容。  
   
  [StopTrackingAndCleanup](../msbuild/stoptrackingandcleanup.md)  
- 結束追蹤並釋放使用的資源。  
+ 結束追蹤並釋出使用的資源。  
   
  [SuspendTracking](../msbuild/suspendtracking.md)  
  暫時停止追蹤。  

@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c4ddcffd-d5b7-4ce8-8775-14e649c34518
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: ca7c86466fa23fb21a932f26dc24e37c71cf29b4
-ms.openlocfilehash: e32d7a177a1a6ff0e26fba7f418f368a64bb1337
-ms.lasthandoff: 04/05/2017
-
+ms.openlocfilehash: 3fb02550aef01a16dbdb1c5e5cff4219ccd15100
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="visual-studio-reference"></a>Visual Studio 參考
 本節包含使用者介面參考、語言對等用法，以及其他參考文件。  
@@ -50,20 +34,13 @@ ms.lasthandoff: 04/05/2017
  [Visual Studio 中的 XML 工具](../../xml-tools/xml-tools-in-visual-studio.md)  
  包含 Visual Studio 中 XML 工具的相關文件並提供詳細資訊的連結。  
   
- [Visual Studio for Applications 參考](../../ide/reference/visual-studio-for-applications-reference.md)  
- 包含可用於將 .NET Framework 指令碼引擎整合至應用程式之介面的參考文件。  
-  
- [MSBuild](../../msbuild/msbuild.md)
- 包含如何使用整合至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 之 Microsoft 組建平台的相關文件。  
-  
- [IDE 錯誤疑難排解資源](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
- 包含資源的連結，可協助您解決 IDE 錯誤訊息。  
-  
- [告訴我們](../../ide/talk-to-us.md)  
- 包含如何尋找 Visual Studio 客戶支援的相關資訊。  
+ [MSBuild](../../msbuild/msbuild.md) 包含如何使用整合至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 之 Microsoft 組建平台的相關文件。  
   
  [適用於行動不便人士的協助工具](../../ide/reference/accessibility-for-people-with-disabilities.md)  
  包含如何變更協助工具選項的提示。  
+  
+ [IDE 錯誤疑難排解資源](../../ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md)  
+ 包含資源的連結，可協助您解決 IDE 錯誤訊息。  
   
 ## <a name="related-sections"></a>相關章節  
  [Visual Basic 參考](/dotnet/visual-basic/reference/index)  

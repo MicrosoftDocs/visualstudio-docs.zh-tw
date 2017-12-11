@@ -1,28 +1,24 @@
 ---
 title: "選項對話方塊、專案和方案、Web 專案 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.ToolsOptionsPages.Projects.WebProjects
+f1_keywords: VS.ToolsOptionsPages.Projects.WebProjects
 ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: cebc1598001459d6ab1c920fa390273242e893e0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
 設定 Web 專案將用來在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內進行開發的 Web 伺服器。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和解決方案]，然後選取 [Web 專案]。
@@ -41,5 +37,5 @@ ms.lasthandoff: 07/26/2017
 如有設定此選項，若您嘗試執行編譯過程中有錯誤的 Web 應用程式，會出現警告。
 
 ## <a name="see-also"></a>另請參閱  
-- [選項對話方塊、專案和解決方案](projects-and-solutions-options-dialog-box.md)
-- [選項對話方塊、專案和方案、建置並執行](options-dialog-box-projects-and-solutions-web-projects.md)
+[選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)  
+[選項對話方塊、專案和方案、建置並執行](options-dialog-box-projects-and-solutions-web-projects.md)

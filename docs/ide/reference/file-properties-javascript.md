@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 06/21/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -26,30 +25,15 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d2f4eba36e9069a35cf279ccf1c78f72a51d77a1
-ms.openlocfilehash: 6c2b3c577685fcb09cd9e9c7eeee955b75e76e27
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/23/2017
-
+ms.openlocfilehash: f732a23631de181524382914e954ad50a7f0385d
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="file-properties-javascript"></a>JavaScript、檔案屬性
 您可以使用檔案屬性，指出專案系統應該對檔案執行哪些動作。 例如，您可以設定檔案屬性，指出是否應該將檔案新增至套件以作為資源檔。  
@@ -73,7 +57,7 @@ ms.lasthandoff: 06/23/2017
 
 -   **資源**：檔案未包含在套件資訊清單中。 相反地，會以進入套件資訊清單的套件資源索引 (PRI) 編製檔案內容的索引。 這通常用於資源檔。  
 
- [套件動作] 的預設值取決於您新增至方案之檔案的副檔名。  
+[套件動作] 的預設值取決於您新增至方案之檔案的副檔名。  
 
 ### <a name="file-name-property"></a>檔案名稱屬性  
  將檔案名稱顯示為唯讀值。 若要將檔案重新命名，您必須以滑鼠右鍵按一下方案總管，然後選取 [重新命名]。  
@@ -82,7 +66,7 @@ ms.lasthandoff: 06/23/2017
  將檔案的完整路徑顯示為唯讀值。 若要變更檔案的路徑，您可以在方案總管中拖放檔案。  
 
 ## <a name="reference-file-properties"></a>參考檔案屬性  
- 此區段描述從 [!INCLUDE[win8_app_js](../../ide/reference/includes/win8_app_js_md.md)] 參考之檔案的共用屬性。 當您在方案總管中選取 .winmd 檔案這類參考、SDK 參考、專案對專案參考或組件參考時，根據檔案類型，可能會在 [屬性] 視窗中顯示其他屬性。  
+ 本節描述從使用 JavaScript 建置的 UWP 應用程式所參考之檔案的共用屬性。 當您在方案總管中選取 .winmd 檔案這類參考、SDK 參考、專案對專案參考或組件參考時，根據檔案類型，可能會在 [屬性] 視窗中顯示其他屬性。  
 
 ### <a name="culture"></a>文化特性  
  顯示與參考建立關聯的語言。  
@@ -113,4 +97,3 @@ ms.lasthandoff: 06/23/2017
 
 ## <a name="see-also"></a>另請參閱  
  [管理專案和方案屬性](../../ide/managing-project-and-solution-properties.md)
-

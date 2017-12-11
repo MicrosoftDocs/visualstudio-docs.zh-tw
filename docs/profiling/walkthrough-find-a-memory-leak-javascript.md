@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -13,38 +12,22 @@ dev_langs:
 - VB
 - FSharp
 - C++
-helpviewer_keywords:
-- memory leaks, JavaScript example
+helpviewer_keywords: memory leaks, JavaScript example
 ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 7e848a57962636a8ca346e809f3dadad675a7963
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體流失 (JavaScript)
-![適用於 Windows 和 Windows Phone](~/debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
+![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
   
- 本逐步解說將帶領您使用 JavaScript 記憶體分析器找出並修正簡單的記憶體問題。 您可以在 Visual Studio 中使用 JavaScript 記憶體分析器來分析使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式。 在這個案例中，您建立的應用程式在記憶體內以不正確的方式保留 DOM 項目，而不是以這些項目在建立時的相同速度來處理這些項目。  
+ 本逐步解說將帶領您使用 JavaScript 記憶體分析器找出並修正簡單的記憶體問題。 您可以在 Visual Studio 中使用 JavaScript 記憶體分析器來分析使用 JavaScript 針對 Windows 建置的 UWP App。 在這個案例中，您建立的應用程式在記憶體內以不正確的方式保留 DOM 項目，而不是以這些項目在建立時的相同速度來處理這些項目。  
   
  雖然此應用程式中記憶體流失的原因非常明確，但此處所示之步驟所示範的工作流程，對於找出流失記憶體的物件一般來說都相當有效。  
   
@@ -153,13 +136,13 @@ ms.lasthandoff: 02/22/2017
 1.  在 [偵錯]  工具列的 [開始偵錯]  清單中，選擇已更新專案的偵錯目標：其中一個 Windows Phone 模擬器或 [模擬器] 。  
   
     > [!TIP]
-    >  如果是 Windows 市集應用程式，您也可以選擇此清單內的 [ **本機電腦** ] 或 [ **遠端電腦** ]。 但使用模擬器 (emulator 或 simulator) 的優點是，您可以將其置於 Visual Studio 旁邊，方便在執行中的應用程式與 JavaScript 記憶體分析器之間切換。 如需詳細資訊，請參閱[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)及[在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)。  
+    >  針對 UWP App，您也可以選擇此清單中的 [本機電腦] 或 [遠端電腦]。 
   
-2.  在 [偵錯]  功能表上選擇 [效能分析工具...] 。  
+2.  在 [偵錯] 功能表上選擇 [效能分析工具]。  
   
 3.  在 [ **可用的工具**] 中選擇 [ **JavaScript 記憶體**]，然後選擇 [ **開始**]。  
   
-     在本教學課程中，我們會將記憶體分析器附加至啟始專案。 如需其他選項 (例如將記憶體分析器連結至已安裝的 App) 的詳細資訊，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md)。  
+     在本教學課程中，我們會將記憶體分析器附加至啟始專案。 如需其他選項 (例如將記憶體分析器連結至已安裝的應用程式) 的詳細資訊，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md)。  
   
      當您啟動記憶體分析器時，可能會出現 [使用者帳戶控制] 要求您提供執行 VsEtwCollector.exe 的權限。 選擇 [ **是**]。  
   
@@ -227,7 +210,7 @@ ms.lasthandoff: 02/22/2017
   
 15. 開啟位於物件樹狀結構頂端的 HTMLDivElement 物件，如下所示。  
   
-     ![堆積上物件計數的差異比對檢視](~/profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
+     ![堆積上物件計數的差異比對檢視](../profiling/media/js_mem_app_typesdiff.png "JS_Mem_App_TypesDiff")  
   
      這個檢視會顯示關於記憶體流失的實用資訊，如下所示：  
   
@@ -240,7 +223,7 @@ ms.lasthandoff: 02/22/2017
     > [!TIP]
     >  在某些情況下，找出與 `Global` 物件有關的物件可能有助於識別該物件。 若要這麼做，請開啟識別項的捷徑功能表，然後選擇 [ **在根檢視中顯示**]。  
   
-##  <a name="a-namefixingmemorya-fixing-the-memory-issue"></a><a name="FixingMemory"></a> 修正記憶體問題  
+##  <a name="FixingMemory"></a> 修正記憶體問題  
   
 1.  透過分析工具所呈現的資料，您檢查負責移除 ID 為 "item" 之 DOM 元素的程式碼。 這段程式碼是在 `initialize()` 函式中。  
   

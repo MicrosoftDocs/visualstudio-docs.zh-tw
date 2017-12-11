@@ -1,11 +1,10 @@
 ---
 title: "選項對話方塊、專案和解決方案、建置並執行 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/14/2017
+ms.date: 07/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -16,18 +15,16 @@ helpviewer_keywords:
 - run actions
 - debugger, run options
 ms.assetid: c884976e-c0df-4c6d-8e3a-856ea2bd547c
-caps.latest.revision: 20
+caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
+ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: e48ebcafaca37505dbcc92bce682d0c6169004e1
-ms.openlocfilehash: 8e5165b4b17195e5f9172dd25962c9486a7aeeeb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>選項對話方塊, 專案和方案, 建置和執行
 
 在此對話方塊中，您可以指定可同時建置的 Visual C++ 或 Visual C# 專案最大數目、特定的預設建置行為，和一些建置記錄檔設定。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後選取 [建置並執行]。
@@ -59,7 +56,7 @@ ms.lasthandoff: 07/26/2017
 
 決定多少資訊會寫入建置記錄檔，其位置在 \\...\\*專案名稱*\Debug\\*專案名稱*.log。  
 
-## <a name="see-also"></a>另請參閱  
--[編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)
-- [選項對話方塊、專案和解決方案](projects-and-solutions-options-dialog-box.md)
-- [選項對話方塊、專案和解決方案、Web 專案](options-dialog-box-projects-and-solutions-web-projects.md)
+## <a name="see-also"></a>請參閱  
+[編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)  
+[選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)  
+[選項對話方塊、專案和方案、Web 專案](options-dialog-box-projects-and-solutions-web-projects.md)

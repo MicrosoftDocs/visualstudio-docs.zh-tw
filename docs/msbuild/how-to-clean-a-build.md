@@ -1,66 +1,67 @@
 ---
 title: "如何：清除組建 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "目錄 [.NET Framework], 輸出項目"
-  - "Exec 工作 [MSBuild]"
-  - "MSBuild, 清除建置"
-  - "輸出, 移除項目"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Exec task [MSBuild]
+- MSBuild, cleaning a build
+- directories [.NET Framework], for output items
+- output, removing items
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
-caps.latest.revision: 13
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: 2b935e0d09bb80347ee17c796f83846cef02a39f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：清除組建
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-清除組建 \(Build\) 時，所有的中繼檔和輸出檔都會刪除，只留下專案檔和元件檔。  接著再從專案檔和元件檔中，建置 \(Build\) 中繼檔和輸出檔的新執行個體。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 隨附的一般工作程式庫中包含 [Exec](../msbuild/exec-task.md) 工作，您可以用此工作來執行系統命令。  如需工作程式庫的詳細資訊，請參閱 [Task Reference](../msbuild/msbuild-task-reference.md)。  
+# <a name="how-to-clean-a-build"></a>如何：清除組建
+當您清除組建時，會刪除所有中繼和輸出檔案，只留下專案檔和元件檔案。 從專案和元件檔案中，接著可以建置新的中繼和輸出檔案執行個體。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 所提供的一般工作程式庫包含 [Exec](../msbuild/exec-task.md) 工作，讓您可用來執行系統命令。 如需工作程式庫的詳細資訊，請參閱[工作參考](../msbuild/msbuild-task-reference.md)。  
   
-## 建立輸出項目的目錄  
- 在您編譯專案時所建立的 .exe 檔，其預設位置是在與專案檔和原始程式檔 \(Source File\) 相同的目錄。  不過，輸出項目通常會建立在另一個目錄中。  
+## <a name="creating-a-directory-for-output-items"></a>建立輸出項目的目錄  
+ 編譯專案時所建立的 .exe 檔案預設位於與專案和原始程式檔相同的目錄中。 不過，一般而言，會在不同的目錄中建立輸出項目。  
   
-#### 若要建立輸出項目的目錄  
+#### <a name="to-create-a-directory-for-output-items"></a>建立輸出項目的目錄  
   
-1.  使用 `Property` 項目來定義目錄的位置和名稱。  例如，在包含專案檔和原始程式檔的目錄中，建立名為 `BuiltApp` 的目錄：  
+1.  使用 `Property` 項目來定義目錄的位置和名稱。 例如，在包含專案和原始程式檔的目錄中，建立名為 `BuiltApp` 的目錄：  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  如果這個目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作加以建立。  例如：  
+2.  如果目錄不存在，請使用 [MakeDir](../msbuild/makedir-task.md) 工作來建立目錄。 例如:   
   
      `<MakeDir Directories = "$(builtdir)"`  
   
      `Condition = "!Exists('$(builtdir)')" />`  
   
-## 移除輸出項目  
- 在建立中繼檔和輸出檔的新執行個體前，您可能想先清除中繼檔和輸出檔先前的所有執行個體。  請使用 [RemoveDir](../msbuild/removedir-task.md) 工作，從磁碟中刪除目錄以及其中包含的所有檔案和目錄。  
+## <a name="removing-the-output-items"></a>移除輸出項目  
+ 建立新的中繼和輸出檔案執行個體之前，您可能想要清除所有先前的中繼和輸出檔案執行個體。 使用 [RemoveDir](../msbuild/removedir-task.md) 工作，以從磁碟中刪除目錄以及其所含的所有檔案和目錄。  
   
-#### 若要刪除目錄和其中所包含的所有檔案  
+#### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>移除目錄中所含的目錄和所有檔案  
   
--   使用 `RemoveDir` 工作來移除目錄。  例如：  
+-   使用 `RemoveDir` 工作，以移除目錄。 例如:   
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
-## 範例  
- 下列程式碼範例的專案中含有新目標 \(Target\) `Clean`，此目標使用 `RemoveDir` 工作刪除目錄和其中包含的所有檔案和目錄。  同樣在這個範例中，`Compile` 目標會建立另一個目錄供輸出項目使用，這些輸出項目會在組建清除之後刪除。  
+## <a name="example"></a>範例  
+ 下列程式碼範例專案包含新的目標 `Clean`，以使用 `RemoveDir` 工作來刪除目錄以及其中所含的所有檔案和目錄。 在此範例中，`Compile` 目標也會為要在清除組建時刪除的輸出項目建立個別目錄。  
   
- `Compile` 被定義為預設目標，因此會自動使用，除非您指定其他目標。  您可以使用命令列參數 **\/target** 來指定不同的目標。  例如：  
+ `Compile` 定義為預設目標，因此除非您指定不同的目標，否則都會自動予以使用。 您使用命令列參數 **/target** 來指定不同的目標。 例如:   
   
  `msbuild <file name>.proj /target:Clean`  
   
- **\/target** 參數可以縮寫為 **\/t**，並且能指定一個以上的目標。  例如，若要依序使用 `Clean` 和 `Compile` 目標，請輸入：  
+ **/target** 參數可以縮短為 **/t**，而且可以指定多個目標。 例如，若要依序使用目標 `Clean` 和目標 `Compile`，請鍵入：  
   
  `msbuild <file name>.proj /t:Clean;Compile`  
   
-```  
+```xml  
 <Project DefaultTargets = "Compile"  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
   
@@ -100,9 +101,9 @@ caps.handback.revision: 13
 </Project>  
 ```  
   
-## 請參閱  
- [Exec Task](../msbuild/exec-task.md)   
- [MakeDir Task](../msbuild/makedir-task.md)   
- [RemoveDir Task](../msbuild/removedir-task.md)   
- [Csc Task](../msbuild/csc-task.md)   
+## <a name="see-also"></a>另請參閱  
+ [Exec 工作](../msbuild/exec-task.md)   
+ [MakeDir 工作](../msbuild/makedir-task.md)   
+ [RemoveDir 工作](../msbuild/removedir-task.md)   
+ [Csc 工作](../msbuild/csc-task.md)   
  [目標](../msbuild/msbuild-targets.md)

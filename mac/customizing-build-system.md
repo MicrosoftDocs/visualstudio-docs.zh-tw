@@ -1,19 +1,17 @@
 ---
-title: "自訂組建系統"
+title: "自訂組建系統 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
+ms.openlocfilehash: 2d17a952c58e5ef7e593ee7aeb1980e09a376800
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: c261dbc285da6f488e6a328c997e2a9563c1c73a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="customizing-the-build-system"></a>自訂組建系統
 
 MSbuild 是 Microsoft 所開發的組建引擎，可用來建置主要的 .NET 應用程式。 而 Mono 架構也有它自己的 Microsoft 組建引擎實作，稱為 **xbuild**。 不過，xbuild 已遭淘汰，改為在所有作業系統上使用 MSBuild。
@@ -105,8 +103,7 @@ MSBuild 中有兩種基本資料類型：「項目」和「屬性」，其詳細
 
 若要更詳細了解 MSBuild，可使用下列資源：
 
-* [MSDN - 概觀](https://msdn.microsoft.com/en-us/library/dd393574.aspx)
-* [MSDN - 概念](https://msdn.microsoft.com/en-us/library/dd637714.aspx)
-
+* [MSDN - 概觀](https://msdn.microsoft.com/library/dd393574.aspx)
+* [MSDN - 概念](https://msdn.microsoft.com/library/dd637714.aspx)
 
 

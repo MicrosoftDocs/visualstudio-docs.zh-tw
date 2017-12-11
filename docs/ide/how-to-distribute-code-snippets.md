@@ -4,47 +4,31 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- code snippets, distributing
+helpviewer_keywords: code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 8700d4814494aafb6558f354d5904ed647c1f5a7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+dev_langs: VB
+ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 您可以使用程式碼片段管理員，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 使用者可以安裝的 Visual Studio 擴充功能中包含您的程式碼片段檔案。  
 
- 若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/)，以尋找符合您 Visual Studio 安裝的 VSSDK 版本。  
+若要建立 Visual Studio 擴充功能，您必須安裝 Visual Studio SDK。 請前往 [Visual Studio 下載](https://www.visualstudio.com/downloads/)，以尋找符合您 Visual Studio 安裝的 VSSDK 版本。  
 
 ## <a name="setting-up-the-extension"></a>設定擴充功能  
- 在此程序中，我們將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立之相同的 Hello World 程式碼片段。 我們將提供 .snippet 文字，所以您不需返回再做一次。  
+在此程序中，我們將使用在[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)中所建立之相同的 Hello World 程式碼片段。 我們將提供 .snippet 文字，所以您不需返回再做一次。  
 
-1.  建立新的 VSIX 專案，名為 **TestSnippet**。 ( [檔案] / [新增] / [專案] / [Visual C#] \(或 [Visual Basic] / [擴充性])  
+1.  建立新的 VSIX 專案，名為 **TestSnippet**。 ([檔案]、[新增]、[專案]、[Visual C#] 或 [Visual Basic]、[擴充性])。  
 
 2.  在 **TestSnippet** 專案中加入新的 XML 檔案，並將其命名為 **VBCodeSnippet.snippet**。 使用下列內容取代此內容：  
 
@@ -84,7 +68,7 @@ ms.lasthandoff: 05/13/2017
 
 1.  將文字檔新增至 **HelloWorldVB** 資料夾，並將它命名為 **HelloWorldVB.pkgdef**。 這個檔案用來將特定機碼加入登錄。 在此情況下，它會將新的機碼加入   
 
-     **HKCU\Software\Microsoft\VisualStudio\14.0\Languages\CodeExpansions\Basic**。  
+     **HKCU\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic**。  
 
 2.  將下列各行加入檔案。  
 
@@ -94,13 +78,13 @@ ms.lasthandoff: 05/13/2017
     "HelloWorldVB"="$PackageFolder$"  
     ```  
 
-     如果您檢查此機碼，您可以了解如何指定不同的語言。  
+    如果您檢查此機碼，您可以了解如何指定不同的語言。  
 
 3.  在方案總管中選取此 .pkgdef 檔案，然後確認 [屬性] 視窗的 [建置動作] 已設為 [內容]、[複製到輸出目錄] 已設為 [一律複製]，且 [包含在 VSIX] 已設為 [true]。  
 
 4.  加入 .pkgdef 檔做為 VSIX 資訊清單中的資產。 在 source.extension.vsixmanifest 檔案中，移至 [資產] 索引標籤，然後按一下 [新增]。  
 
-5.  在 [新增資產] 對話方塊中，將 [類型] 設為 [Microsoft.VisualStudio.VsPackage]、[類型] 設為 [檔案系統上的檔案]，並將 [路徑] 設為 [HelloWorldVB.pkgdef]\(這應該會出現在下拉式清單中)。  
+5.  在 [新增資產] 對話方塊中，將 [類型] 設為 [Microsoft.VisualStudio.VsPackage]、將 [來源] 設為 [檔案系統上的檔案]，並將 [路徑] 設為 [HelloWorldVB.pkgdef] (這應該會出現在下拉式清單中)。  
 
 ### <a name="testing-the-snippet"></a>測試程式碼片段  
 
@@ -112,12 +96,11 @@ ms.lasthandoff: 05/13/2017
 
 4.  測試程式碼片段。 在實驗性執行個體中，開啟 Visual Basic 專案，並開啟其中一個程式碼檔案。 將游標放在程式碼中的某處，按一下滑鼠右鍵，然後在 [操作功能表] 上選取 [插入程式碼片段]。  
 
-5.  您應該會看到 HelloWorldVB 做為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段: HellowWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 HelloWorldVB 下拉式清單。 您應該會看到下面這一行已加入此檔案：  
+5.  您應該會看到 HelloWorldVB 做為其中一個資料夾。 對它按兩下。 您應該會看到快顯視窗 [插入程式碼片段: HelloWorldVB >]，這具有下拉式清單 [HelloWorldVB]。 按一下這個 HelloWorldVB 下拉式清單。 您應該會看到下面這一行已加入此檔案：  
 
     ```vb  
     Console.WriteLine("Hello, World!")  
     ```  
 
 ## <a name="see-also"></a>另請參閱  
- [程式碼片段](../ide/code-snippets.md)
-
+[程式碼片段](../ide/code-snippets.md)

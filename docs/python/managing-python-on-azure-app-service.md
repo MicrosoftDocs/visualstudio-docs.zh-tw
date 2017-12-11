@@ -1,114 +1,138 @@
 ---
-title: Managing Python on Azure App Service | Microsoft Docs
+title: "管理 Azure App Service 上的 Python | Microsoft Docs"
 ms.custom: 
-ms.date: 9/6/2017
+ms.date: 09/13/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: e56b5d55-6e6b-48af-af40-5172c768cabc
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: db2929dc6f92af7b31747dbbea906417ef84b36c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 4013eb0b251985b0984d0cbf2a723175fe91aad5
-ms.openlocfilehash: a8f76fce826911d9f35adc2c6a0960d0b6ffa034
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/09/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
+# <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
-# <a name="managing-python-on-azure-app-service"></a>Managing Python on Azure App Service
+[Azure App Service](https://azure.microsoft.com/services/app-service/) 是一種適用於 Web 應用程式的平台即服務供應項目，不論它們是否為透過瀏覽器、您自己的用戶端所使用的 REST API 或是事件觸發處理所存取的網站。 App Service 完全支援使用 Python 來實作應用程式。
 
-[Azure App Service](https://azure.microsoft.com/services/app-service/) is a platform-as-a-service offering for web apps, whether they are sites accessed through a browser, REST APIs used by your own clients, or event-triggered processing. App Service fully supports using Python to implement apps.
+Azure App Service 是以一組 App Service「網站延伸模組」的形式來支援可自訂的 Python，且每個延伸模組都包含特定版本的 Python 執行階段。 如此一來，您即可將任何所需的套件直接安裝到該環境中，如本主題所述。 您可以在 App Service 當中自訂環境，即不需要維護 Web 應用程式專案中的套件，或使用應用程式程式碼來上傳套件。 
 
-Python support on Azure App Service is provided as a set of App Service site extensions that each contain a specific version of the Python runtime. The latest Python 3 version is recommended, obviously, but you can choose an older version when necessary. This topic explains how to install and configure a site extension along with any desired packages.
+> [!Tip]
+> 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本主題所述。
 
-> [!Note]
-> The processes described here are subject to change, and especially to improvement. Changes are announced on the [Python Engineering at Microsoft blog](https://blogs.msdn.microsoft.com/pythonengineering/).
+> [!Important]
+> 此處所述的程序得隨時變更，特別是改善。 變更相關資訊會公告於 [Microsoft 的 Python 工程部落格](https://blogs.msdn.microsoft.com/pythonengineering/)。
 
-## <a name="choosing-a-python-version-through-the-azure-portal"></a>Choosing a Python version through the Azure portal
+## <a name="choosing-a-python-version-through-the-azure-portal"></a>透過 Azure 入口網站選擇 Python 版本
 
-If your site is already deployed and running on Azure App Service, navigate to your App Service in the Azure portal, scroll to the **Development Tools** section, and select **Extensions > Add**. Scroll through the list to find the specific extensions for the version of Python you want:
+1. 在 Azure 入口網站中，為您的 Web 應用程式建立 App Service。
+1. 在 App Service 頁面中，捲動到 [開發工具] 區段，再依序選取 [延伸模組] 和 [+ 新增]。
+1. 向下捲動至含有所需 Python 版本的延伸模組清單中：
 
-![Azure portal showing Python extensions](media/python-on-azure-extensions.png)
+    ![顯示 Python 延伸模組的 Azure 入口網站](media/python-on-azure-extensions.png)
 
-## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>Choosing a Python version through the Azure Resource Manager
+    > [!Tip]
+    > 如果您需要較舊的 Python 版本，但網站延伸模組並未列出這個版本，您仍然可以透過 Azure Resource Manager 進行安裝，如下一節所述。
 
-If you are deploying your site with an Azure Resource Manager template, add the site extension as a resource. The extension appears as a nested resource of your site with the type `siteextensions` and the name from [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22).
+1. 選取延伸模組，並接受法律條款，然後選取 [確定]。
+1. 安裝完成時，入口網站即會顯示通知。
 
-For example, after adding a reference to `python361x64` (Python 3.6.1 x64), your template may look like the following:
 
-```json
-  "resources": [
-    {
-      "apiVersion": "2015-08-01",
-      "name": "[parameters('siteName')]",
-      "type": "Microsoft.Web/sites",
-      ...
-      "resources": [
-        {
-          "apiVersion": "2015-08-01",
-          "name": "python361x64",
-          "type": "siteextensions",
-          "properties": { },
-          "dependsOn": [
-            "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
-          ]
-        },
-      ...
+## <a name="choosing-a-python-version-through-the-azure-resource-manager"></a>透過 Azure Resource Manager 選擇 Python 版本
+
+如果您要使用 Azure Resource Manager 範本來部署 App Service，請將網站延伸模組新增為資源。 延伸模組會顯示為巢狀資源，其類型為 `siteextensions` 並具有來自 [siteextensions.net](https://www.siteextensions.net/packages?q=Tags%3A%22python%22) 的名稱。
+
+例如，新增 `python361x64` (Python 3.6.1 x64) 的參考之後，您的範本可能如下所示 (已省略部分屬性)：
+
+```
+"resources": [
+  {
+    "apiVersion": "2015-08-01",
+    "name": "[parameters('siteName')]",
+    "type": "Microsoft.Web/sites",
+    
+    // ...
+
+    "resources": [
+      {
+        "apiVersion": "2015-08-01",
+        "name": "python361x64",
+        "type": "siteextensions",
+        "properties": { },
+        "dependsOn": [
+          "[resourceId('Microsoft.Web/sites', parameters('siteName'))]"
+        ]
+      },
+      // ...
+    ]
+  }
 ```
 
-## <a name="configuring-your-site"></a>Configuring your site
+## <a name="setting-webconfig-to-point-to-the-python-interpreter"></a>將 web.config 設定為指向 Python 解譯器
 
-After installing the site extension (through either the portal or an Azure Resource Manager template), the Python installation path will be something like `d:\home\python361x64\python.exe`. To see the specific path, select the extension in the list shown for your App Service to open its description page containing the path:
+安裝網站延伸模組之後 (透過入口網站或 Azure Resource Manager 範本)，您要將應用程式的 `web.config` 檔案指向 Python 解譯器。 `web.config` 檔案會指示在 App Service 上執行的 IIS (7+) 網頁伺服器應如何透過 FastCGI 或 HttpPlatform 來處理 Python 要求。
 
-![Extension list on Azure App Service](media/python-on-azure-extension-list.png)
+請先從尋找網站延伸模組的 `python.exe` 完整路徑開始，然後建立並修改適當的 `web.config` 檔案。
 
-![Extension details on Azure App Service](media/python-on-azure-extension-detail.png)
+### <a name="finding-the-path-to-pythonexe"></a>尋找 python.exe 的路徑
 
-If you have trouble seeing the path for the extension, you can find it manually using the console:
+Python 網站延伸模組會安裝在伺服器的 `d:\home` 下方，適當的 Python 版本和架構資料夾中 (少數較舊版本例外)。 例如，Python 3.6.1 x64 會安裝在 `d:\home\python361x64`。 因此，Python 解譯器的完整路徑即為 `d:\home\python361x64\python.exe`。
 
-1. In your App Service on the Azure portal, select the **Development Tools > Console**.
-2. Enter the command `ls ../home` to see the top-level extensions folders, such as `Python361x64`.
-3. Enter a command like `ls ../home/python361x64` using one of the Python folders to verify that it contains `python.exe` and other interpreter files.
+若要查看 App Service 上的特定路徑，請選取 App Service 頁面的 [延伸模組]，然後選取清單中的延伸模組。 
 
-Note that the full path to `python.exe` is important in the next step, which is to reference that path in the site's `web.config` file for either the FastCGI and Http Platform request handlers.
+![Azure App Service 上的延伸模組清單](media/python-on-azure-extension-list.png)
 
-### <a name="using-the-fastcgi-handler"></a>Using the FastCGI handler
+這個動作會開啟延伸模組描述頁面，其中包含路徑：
 
-FastCGI is an interface that works at the request level. IIS receives incoming connections and forwards each request to a WSGI app running in one or more persistent Python processes. The [wfastcgi package](https://pypi.io/project/wfastcgi) is pre-installed and configured with each Python site extension, so you can easily enable it by including the following code in `web.config`:
+![Azure App Service 上的延伸模組詳細資料](media/python-on-azure-extension-detail.png)
+
+如果您無法查看延伸模組的路徑，可以手動使用主控台來尋找：
+
+1. 在您的 App Service 頁面上，選取 [開發工具] > [主控台]。
+2. 輸入 `ls ../home` 或 `dir ..\home` 命令，以查看最上層的延伸模組資料夾，例如 `Python361x64`。
+3. 輸入 `ls ../home/python361x64` 或 `dir ..\home\python361x64` 之類的命令，以驗證該資料夾中包含 `python.exe` 和其他解譯器檔案。
+
+### <a name="configuring-the-fastcgi-handler"></a>設定 FastCGI 處理常式
+
+FastCGI 是一種在要求層級運作的介面。 IIS 會接收連入連線並將每個要求轉送至在一或多個持續性 Python 程序中執行的 WSGI 應用程式。 每個 Python 網站延伸模組都已預先安裝和設定 [wfastcgi 套件](https://pypi.io/project/wfastcgi)，因此，針對 Bottle 架構的 Web 應用程式，您可以在 `web.config` 中包含下列程式碼輕鬆予以啟用。 請注意，`python.exe` 和 `wfastcgi.py` 的完整路徑位於 `PythonHandler` 機碼中：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <appSettings>
     <add key="PYTHONPATH" value="D:\home\site\wwwroot"/>
-    <add key="WSGI_HANDLER" value="app.wsgi_app"/>
+    <!-- The handler here is specific to Bottle; other frameworks vary. -->
+    <add key="WSGI_HANDLER" value="app.wsgi_app()"/>
     <add key="WSGI_LOG" value="D:\home\LogFiles\wfastcgi.log"/>
   </appSettings>
   <system.webServer>
     <handlers>
-      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule" scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py" resourceType="Unspecified" requireAccess="Script"/>
+      <add name="PythonHandler" path="*" verb="*" modules="FastCgiModule"
+           scriptProcessor="D:\home\Python361x64\python.exe|D:\home\Python361x64\wfastcgi.py"
+           resourceType="Unspecified" requireAccess="Script"/>
     </handlers>
   </system.webServer>
 </configuration>
 ```
 
-The `<appSettings>` are available to your app as environment variables:
-- The value for `PYTHONPATH` may be freely extended but must include the root of your site.
-- `WSGI_HANDLER` must point to a WSGI app importable from your site.
-- `WSGI_LOG` is optional but recommended for debugging your site. 
+此處定義的 `<appSettings>` 可供應用程式作為環境變數：
+- `PYTHONPATH` 的值可以自由擴充，但必須包含應用程式的根目錄。
+- `WSGI_HANDLER` 必須指向可從應用程式匯入的 WSGI 應用程式。
+- `WSGI_LOG` 是選擇性的，但建議用於偵錯應用程式。 
 
-Under `<handlers>`, make sure the `scriptProcessor` attribute in the `<add>` element contains the proper paths to your specific installation. The path is again shown on the extension's details.
+如需 Bottle、Flask 以及 Django Web 應用程式的 `web.config` 內容詳細資料，請參閱[發行至 Azure](publishing-to-azure.md)。
 
-### <a name="using-the-http-platform-handler"></a>Using the Http Platform handler
+### <a name="configuring-the-httpplatform-handler"></a>設定 HTTP 平台處理常式
 
-The HttpPlatform module passes the socket connections directly to a standalone Python process. This pass-through allows you to run any web server you like, but requires a startup script that runs a local web server. You specify the script in the `<httpPlatform>` element of `web.config`, where the `processPath` attribute points to Python and the `arguments` attribute points to your script and any arguments you want to provide:
+HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Python 處理序。 這個傳遞可讓您執行任何喜歡的網頁伺服器，但需要執行本機網頁伺服器的啟動指令碼。 您可以在 `web.config` 的 `<httpPlatform>` 項目中指定指令碼，其中 `processPath` 屬性指向網站延伸模組的 Python 解譯器，而 `arguments` 屬性則指向您的指令碼以及您想要提供的任何引數：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -131,69 +155,63 @@ The HttpPlatform module passes the socket connections directly to a standalone P
 </configuration>
 ```
 
-The path to `python.exe` in your configuration is, of course, specific to the version you installed.
+此處所顯示的 `HTTP_PLATFORM_PORT` 環境變數包含本機伺服器應該接聽 localhost 連線的連接埠。 此範例也會示範如何建立另一個環境變數 (如有需要)，在此情況下，是 `SERVER_PORT`。
 
-The `HTTP_PLATFORM_PORT` environment variable shown in the code contains the port your local server should listen on for connections from localhost. This example also shows how to create another environment variable, if desired, in this case `SERVER_PORT`.
+## <a name="installing-packages"></a>安裝套件
 
-## <a name="installing-packages"></a>Installing packages
+透過網站延伸模組安裝的 Python 解譯器只是 Python 環境的一小部分。 您可能還需要在該環境中安裝不同的套件。
 
-The Python interpreter installed through a site extension is only one piece of your Python environment. You likely need to install different packages in that environment as well, which can be done through one of three methods:
+若要直接在伺服器環境中安裝套件，請使用下列方法之一：
 
-- The [Azure App Service Kudu console](#kudu-console).
-- The [Kudu REST API](#kudu-rest-api)
-- [Copying libraries into app source code](#copying-libraries-into-app-source-code)
+| 方法 | 使用方式 | 
+| --- | --- |
+| [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
+| [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |
+| 應用程式套件組合 | 直接將套件安裝到您的專案中，然後將其部署到 App Service，如同套件就是應用程式的一部分。 根據更新它們的相依性數目和頻率，這個方法可能是讓工作中部署進行的最簡單方式。 請務必注意，這些程式庫必須符合伺服器上的 Python 版本，否則您在部署之後會看到難以理解的錯誤。 儘管如此，由於 App Service 網站延伸模組中的 Python 版本與 python.org 上發行的版本完全相同，因此您可以輕鬆取得適用於本機開發的相容版本。 |
+| 虛擬環境 | 不支援。 請改為使用套件組合，並設定 `PYTHONPATH` 環境變數以指向套件的位置。 |
 
-### <a name="kudu-console"></a>Kudu console
 
-The [Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) gives you direct, elevated command-line access to the App Service server and its file system. In addition to being a valuable debugging tool, it can also be used for CLI-based configurations such as installing packages.
+### <a name="azure-app-service-kudu-console"></a>Azure App Service 的 Kudu 主控台
 
-To open Kudu, go to your App Service on the Azure portal, select **Development Tools > Advanced Tools**, then select **Go**. This action navigates to a URL that's the same as your base App Service URL except with `.scm` inserted. For example, if your base URL is `https://vspython-test.azurewebsites.net/` then Kudu is on `https://vspython-test.scm.azurewebsites.net/`:
+[Kudu console](https://github.com/projectkudu/kudu/wiki/Kudu-console) (Kudu 主控台) 可讓您透過直接且提高權限的命令列存取 App Service 伺服器和其檔案系統。 這既是一項重要的偵錯工具，也可讓 CLI 作業 (例如安裝套件) 順利進行。
 
-![The Kudu console for Azure App Service](media/python-on-azure-console01.png)
+1. 在 Azure 入口網站上，依序選取 [開發工具] > [進階工具]，然後選取 [移至]，即可從您的 App Service 頁面開啟 Kudu。 這個動作會瀏覽至與基底 App Service URL 相同的 URL，差別只在於插入了 `.scm`。 例如，如果您的基底 URL 是 `https://vspython-test.azurewebsites.net/`，則 Kudu 位於 `https://vspython-test.scm.azurewebsites.net/` (您可將其設為書籤)：
 
-You can bookmark this URL for future use, fo course.
+    ![Azure App Service 的 Kudu 主控台](media/python-on-azure-console01.png)    
 
-Select **Debug console > CMD** to open the console, in which you can navigate into your Python installation and see what libraries are already there.
+2. 選取 [偵錯主控台] > [CMD] 開啟主控台，您可以在其中巡覽至 Python 安裝，並查看現有的程式庫。
 
-To install a single package:
+3. 安裝單一套件：
 
-1. Navigate to the folder of the Python installation where you want to install the package, such as `d:\home\python361x64`.
-1. Use `python.exe -m pip install <package_name>` to install a package.
+    a. 巡覽至您想要安裝套件的 Python 安裝資料夾，例如 `d:\home\python361x64`。
+     
+    b. 使用 `python.exe -m pip install <package_name>` 來安裝套件。
+    
+    ![透過 Azure App Service 的 Kudu 主控台安裝 Bottle 的範例](media/python-on-azure-console02.png)
+    
+4. 如果您已將應用程式的 `requirements.txt` 部署至伺服器，請安裝下列所有需求，如下所示：
 
-![Example of installing matplotlib through the Kudu console for Azure App Service](media/python-on-azure-console02.png)
-
-If you've deployed a `requirements.txt` for your application to the server already, install all those requirements as follows:
-
-1. Navigate to the folder of the Python installation where you want to install the package, such as `d:\home\python361x64`.
-1. Enter the command `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt`.
-
-Using requirements.txt is recommended because it's easy to reproduce your exact package set both locally and on the server. Just remember to visit the console after deploying any changes to `requirements.txt` and run the command again.
-
+    a. 巡覽至您想要安裝套件的 Python 安裝資料夾，例如 `d:\home\python361x64`。
+    
+    b. 執行 `python.exe -m pip install --upgrade -r d:\home\site\wwwroot\requirements.txt` 命令。
+    
+    建議使用 `requirements.txt`，因為它可以輕鬆重現您在本機和伺服器上設定的確切套件。 將任何變更部署至 `requirements.txt` 之後，請務必前往主控台，然後再次執行命令。
+    
 > [!Note]
-> There's no C compiler on your web server, so you need to install the wheel for any packages with native extension modules. Many popular packages provide their own wheels. For packages that don't, use `pip wheel <package_name>` on your local development computer and then upload the wheel to your site. For an example, see [Managing required packages](python-environments.md#managing-required-packages)
+> 您的 App Service 上沒有 C 編譯器，因此您需要針對任何含原生延伸模組的套件安裝 Wheel。 許多熱門的套件都會提供自己的滾輪。 如果是未提供的套件，請在本機開發電腦上使用 `pip wheel <package_name>`，然後將滾輪上傳至您的網站。 如需範例，請參閱[管理必要套件](python-environments.md#managing-required-packages)。
 
 ### <a name="kudu-rest-api"></a>Kudu REST API
 
-Instead of using the Kudu console through the Azure portal, you can run commands remotely through the Kudu REST API by posting the command to `https://yoursite.scm.azurewebsites.net/api/command`. For example, to install the `matplotlib` package, post the following JSON to `/api/command`:
+您可以將命令張貼到 `https://yoursite.scm.azurewebsites.net/api/command` 以透過 Kudu REST API 遠端執行命令，而不是透過 Azure 入口網站使用 Kudu 主控台。 例如，若要安裝 `bottle` 套件，請將下列 JSON 張貼到 `/api/command`：
 
 ```json
 {
-    "command": 'python.exe -m pip install matplotlib',
+    "command": 'python.exe -m pip install bottle',
     "dir": '\home\python361x64'
 }
 ```
 
-For information about commands and authentication, see the [Kudu documentation](https://github.com/projectkudu/kudu/wiki/REST-API). You can also see credentials using the [`az webapp deployment list-publishing-profiles command`](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) from the Azure CLI. A helper library for posting Kudu commands is also [available on GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42).
+如需命令和驗證的資訊，請參閱 [Kudu 文件](https://github.com/projectkudu/kudu/wiki/REST-API)。 
 
-
-### <a name="copying-libraries-into-app-source-code"></a>Copying libraries into app source code
-
-Instead of installing packages directly on the server, you can instead copy libraries into your own source code and deploy them as if they were part of your app. Depending on how many dependencies you have and how frequently you update them, this method may be the easiest way to get a working deployment going.
-
-The caveat is that these libraries must precisely match the version of Python on the server, otherwise you'll see obscure errors after deployment. However, because the versions of Python in the App Service site extensions are exactly the same as those versions released on python.org, you can easily obtain a compatible version for local development.
-
-### <a name="avoiding-virtual-environments"></a>Avoiding virtual environments
-
-Although working in a virtual environment locally can help you fully understand the dependencies needed by your site, using virtual environments on App Service is not recommended. Instead, just install libraries into your main Python folder and deploy them with your app to avoid conflicting dependencies.
-
+您也可以透過 Azure CLI 使用 `az webapp deployment list-publishing-profiles` 命令 (請參閱 [az webapp deployment](https://docs.microsoft.com/cli/azure/webapp/deployment#list-publishing-profiles) (az webapp 部署)) 以查看認證。 [GitHub](https://github.com/lmazuel/azure-webapp-publish/blob/master/azure_webapp_publish/kudu.py#L42) 上也提供用於發佈 Kudu 命令的協助程式庫。
 

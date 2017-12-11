@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,30 +13,15 @@ helpviewer_keywords:
 - code snippets [Visual Studio], schema reference
 - IntelliSense Code Snippets, XML Schema
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
-caps.latest.revision: 17
-author: kempb
-ms.author: kempb
+caps.latest.revision: "17"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 18627c9f14e82bef85ff433eea14d99653f78e68
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 14e043feae7a201ff5b31ee17aa790fe6f338341
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="code-snippets-schema-reference"></a>程式碼片段結構描述參考
 IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的應用程式。 您可以提供程式碼片段來縮短輸入重複程式碼或搜尋範例所花費的時間，藉此提高產能。 您可以使用 IntelliSense 程式碼片段 XML 結構描述，建立自己的程式碼片段，並新增至 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已包含的程式碼片段中。  
@@ -58,10 +42,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 |[Header 項目](../ide/code-snippets-schema-reference.md#header)|[Reference 項目](../ide/code-snippets-schema-reference.md#reference)||  
   
 ##  <a name="assembly"></a> Assembly 項目  
- 指定程式碼片段所參考的組件名稱。  
-  
-> [!NOTE]
->  只有 Visual Basic 程式碼片段支援 `Assembly` 項目。  
+ 指定程式碼片段所參考的組件名稱。
   
  **Assembly** 項目的文字值有兩種，即組件的易記文字名稱，例如 `System.dll`，或是組件的強式名稱，例如 `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`。  
   
@@ -83,8 +64,7 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
 ```xml  
 <Author>  
    Code Snippet Author  
-</Author>  
-  
+</Author>    
 ```  
   
 |Parent 項目|說明|  
@@ -93,36 +73,39 @@ IntelliSense 程式碼片段是預先設計的程式碼片段，可用以插入�
   
  需要文字值。 此文字會指定程式碼片段的作者。  
   
-##  <a name="code"></a> Code 項目  
- 提供簡短程式碼區塊的容器。  
+## <a name="a-namecode--code-element"></a><a name="code" />程式碼項目  
+提供簡短程式碼區塊的容器。  
   
- `Code` 項目的文字可以使用兩個保留字：`$end$` 和 `$selected$`。 `$end$` 會標記程式碼片段插入後，放置游標的位置。 `$selected$` 表示在文件中選取的文字，該文字會在叫用時插入程式碼片段中。 例如，假設程式碼片段包含：  
+### <a name="keywords"></a>關鍵字
+`Code` 項目的文字可以使用兩個保留字：`$end$` 和 `$selected$`。 `$end$` 會標記程式碼片段插入後，放置游標的位置。 `$selected$` 表示在文件中選取的文字，該文字會在叫用時插入程式碼片段中。 例如，假設程式碼片段包含：  
   
-```xml  
+```  
 $selected$ is a great color.  
 ```  
   
- 如果使用者叫用範本時選取的文字是 "Blue"，結果為：  
+如果使用者叫用範本時選取的文字是 "Blue"，結果為：  
   
-```xml  
+```  
 Blue is a great color.  
 ```  
   
- 您不可以在程式碼片段中多次使用 `$end$` 或 `$selected$`。 如果這麼做，系統只會辨認第二個執行個體。 假設程式碼片段包含：  
+您不可以在程式碼片段中多次使用 `$end$` 或 `$selected$`。 如果這麼做，系統只會辨認第二個執行個體。 假設程式碼片段包含：  
   
 ```  
 $selected$ is a great color. I love $selected$.  
 ```  
   
- 如果選取的文字是 "Blue"，結果為：  
+如果選取的文字是 "Blue"，結果為：  
   
 ```  
-is a great color. I love Blue.  
+ is a great color. I love Blue.  
 ```  
   
- 由於 `$selected$` 和 `is` 之間有一個空格，因此開頭會出現空格。  
+由於 `$selected$` 和 `is` 之間有一個空格，因此開頭會出現空格。  
   
- 所有其他 `$` 關鍵字都會在 `<Literal>` 和 `<Object>` 標記中動態定義。  
+所有其他 `$` 關鍵字都會在 `<Literal>` 和 `<Object>` 標記中動態定義。  
+
+以下是程式碼項目的結構：
   
 ```xml  
 <Code Language="Language"  
@@ -130,37 +113,41 @@ is a great color. I love Blue.
     Delimiter="Delimiter">  
     Code to insert  
 </Code>  
-```  
-  
-|屬性|描述|  
-|---------------|-----------------|  
-|`Delimiter`|選擇性屬性。 指定在程式碼中用來描述常值和物件的分隔符號。 根據預設，分隔符號為 `$`。|  
-|`Kind`|選擇性屬性。 指定程式碼片段包含的程式碼種類，以及程式碼片段必須插入以供編譯的位置。 可用的值包括 `method body`、`method decl`、`type decl`、`file` 及 `any`。|  
-|`Language`|必要屬性。 指定程式碼片段的語言。|  
-  
-|種類屬性值|描述|  
-|--------------------------|-----------------|  
-|`method body`|指定程式碼片段為方法主體，因此必須在方法宣告中插入。|  
-|`method decl`|指定程式碼片段為方法，因此必須在類別或模組中插入。|  
-|`type decl`|指定程式碼片段為類型，因此必須在類別、模組或命名空間中插入。|  
-|`file`|指定程式碼片段為完整的程式碼檔。 這些程式碼片段可以單獨插入程式碼檔中或命名空間內。|  
-|`any`|指定程式碼片段可以插入任何位置。 這個標記可用於與內容無關的程式碼片段，例如註解。|  
-  
-|語言屬性值|描述|  
-|------------------------------|-----------------|  
-|`VB`|識別 Visual Basic 程式碼片段。|  
-|`CSharp`|識別 C# 程式碼片段。|  
-|`CPP`|識別 C++ 程式碼片段。|  
-|`XML`|識別 XML 程式碼片段。|  
-|`JavaScript`|識別 JavaScript 程式碼片段。|  
-|`SQL`|識別 SQL 程式碼片段。|  
-|`HTML`|識別 HTML 程式碼片段。|  
-  
+```
+
+需要文字值。 此文字會指定程式碼以及常值和物件，讓您可以在將此程式碼片段插入程式碼檔時使用。  
+
+### <a name="attributes"></a>屬性
+程式碼項目有三個屬性可用：
+
+- **Language** - _Required_ 屬性，指定程式碼片段的語言。 值可以是下列其中一項：
+
+   |值|說明|  
+   |-----|-----------|  
+   |`VB`|識別 Visual Basic 程式碼片段。|  
+   |`CSharp`|識別 C# 程式碼片段。|  
+   |`CPP`|識別 C++ 程式碼片段。|  
+   |`XML`|識別 XML 程式碼片段。|  
+   |`JavaScript`|識別 JavaScript 程式碼片段。|  
+   |`SQL`|識別 SQL 程式碼片段。|  
+   |`HTML`|識別 HTML 程式碼片段。|
+ 
+- **Kind** - _Optional_ 屬性，指定程式碼片段包含的程式碼種類，以及程式碼片段必須插入以供編譯的位置。 值可以是下列其中一項：
+
+   |值|說明|  
+   |-----|-----------|  
+   |`method body`|指定程式碼片段為方法主體，因此必須在方法宣告中插入。|  
+   |`method decl`|指定程式碼片段為方法，因此必須在類別或模組中插入。|  
+   |`type decl`|指定程式碼片段為類型，因此必須在類別、模組或命名空間中插入。|  
+   |`file`|指定程式碼片段為完整的程式碼檔。 這些程式碼片段可以單獨插入程式碼檔中或命名空間內。|  
+   |`any`|指定程式碼片段可以插入任何位置。 這個標記可用於與內容無關的程式碼片段，例如註解。|
+
+- **Delimiter** - _Optional_ 屬性，指定在程式碼中用來描述常值和物件的分隔符號。 根據預設，分隔符號為 `$`。
+
+### <a name="parent-element"></a>父項目
 |Parent 項目|說明|  
 |--------------------|-----------------|  
-|[Snippet 項目](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|  
-  
- 需要文字值。 此文字會指定程式碼以及常值和物件，讓您可以在將此程式碼片段插入專案時使用。  
+|[Snippet 項目](../ide/code-snippets-schema-reference.md#snippet)|包含程式碼片段的參考、匯入、宣告和程式碼。|
   
 ##  <a name="codesnippet"></a> CodeSnippet 項目  
  讓您指定可插入 Visual Studio 程式碼檔中的標題和多個 IntelliSense 程式碼片段。  
@@ -170,7 +157,6 @@ is a great color. I love Blue.
     <Header>... </Header>  
     <Snippet>... </Snippet>  
 </CodeSnippet>  
-  
 ```  
   
 |屬性|描述|  
@@ -193,7 +179,6 @@ is a great color. I love Blue.
 <CodeSnippets>  
     <CodeSnippet>... </CodeSnippet>  
 </CodeSnippets>  
-  
 ```  
   
 |子項目|說明|  
@@ -208,7 +193,6 @@ is a great color. I love Blue.
     <Literal>... </Literal>  
     <Object>... </Object>  
 </Declarations>  
-  
 ```  
   
 |子項目|描述|  
@@ -227,7 +211,6 @@ is a great color. I love Blue.
 <Default>  
     Default value  
 </Default>  
-  
 ```  
   
 |Parent 項目|說明|  
@@ -284,7 +267,6 @@ is a great color. I love Blue.
     <Keywords>... </Keywords>  
     <Shortcut>... </Shortcut>  
 </Header>  
-  
 ```  
   
 |子項目|說明|  
@@ -311,7 +293,6 @@ is a great color. I love Blue.
 <HelpUrl>  
     www.microsoft.com  
 </HelpUrl>  
-  
 ```  
   
 |Parent 項目|說明|  
@@ -327,7 +308,6 @@ is a great color. I love Blue.
 <ID>  
     Unique Identifier  
 </ID>  
-  
 ```  
   
 |Parent 項目|說明|  
@@ -347,7 +327,6 @@ is a great color. I love Blue.
 <Import>  
     <Namespace>... </Namespace>  
 </Import>  
-  
 ```  
   
 |子項目|說明|  
@@ -488,10 +467,7 @@ is a great color. I love Blue.
 |[Declarations 項目](../ide/code-snippets-schema-reference.md#declarations)|包含您可以編輯之程式碼片段的常值和物件。|  
   
 ##  <a name="reference"></a> Reference 項目  
- 指定程式碼片段所需之組件參考的相關資訊。  
-  
-> [!NOTE]
->  只有 Visual Basic 專案支援 `Reference` 項目。  
+ 指定程式碼片段所需之組件參考的相關資訊。 
   
 ```xml  
 <Reference>  
@@ -511,9 +487,6 @@ is a great color. I love Blue.
   
 ##  <a name="references"></a> References 項目  
  將個別 `Reference` 項目設為群組。  
-  
-> [!NOTE]
->  只有 Visual Basic 專案支援 `References` 項目。  
   
 ```xml  
 <References>  
@@ -556,8 +529,7 @@ is a great color. I love Blue.
     <Imports>... </Imports>  
     <Declarations>... </Declarations>  
     <Code>... </Code>  
-</Snippet>  
-  
+</Snippet>    
 ```  
   
 |子項目|說明|  

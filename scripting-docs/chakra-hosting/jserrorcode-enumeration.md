@@ -1,38 +1,40 @@
 ---
 title: "JsErrorCode 列舉 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-f1_keywords: 
-  - "jsrt/JsErrorCode"
-helpviewer_keywords: 
-  - "JsErrorCode 列舉"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
+f1_keywords: jsrt/JsErrorCode
+helpviewer_keywords: JsErrorCode enumeration
 ms.assetid: 4902f3f3-47a5-4e74-9c29-f96eeecbcda9
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: b09babd38505c5619f414d2e349cd52b3596ceac
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# JsErrorCode 列舉
+# <a name="jserrorcode-enumeration"></a>JsErrorCode 列舉
 從 Chakra 裝載 API 傳回的錯誤碼。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 enum JsErrorCode : unsigned int;  
 ```  
   
-## 成員  
+## <a name="members"></a>Members  
   
-### 值  
+### <a name="values"></a>值  
   
 |名稱|描述|  
-|--------|--------|  
+|----------|-----------------|  
 |`JsErrorAlreadyDebuggingContext`|由於內容已處於偵錯狀態，因此無法再將它設為偵錯狀態。|  
 |`JsErrorAlreadyProfilingContext`|由於內容已經在進行分析，因此無法啟動分析。|  
 |`JsErrorArgumentNotObject`|呼叫處理物件值的裝載 API 時內含非物件值。|  
@@ -57,19 +59,19 @@ enum JsErrorCode : unsigned int;
 |`JsErrorNullArgument`|在不允許 null 的內容中，裝載 API 的引數為 null。|  
 |`JsErrorObjectNotInspectable`|不能將物件解除包裝成 `IInspectable` 指標。<br /><br /> 只有邊緣模式會支援這個列舉值。|  
 |`JsErrorOutOfMemory`|Chakra 引擎記憶體不足。|  
-|`JsErrorPropertyNotSymbol`|在符號屬性 ID 上運作的裝載 API ，但以非符號屬性 ID 被呼叫。 如果以非符號屬性 ID 呼叫此函式，則 `JsGetSymbolFromPropertyId` 會傳回錯誤碼。<br /><br /> 只有邊緣模式會支援這個列舉值。|  
-|`JsErrorPropertyNotString`|在字串屬性 ID 上運作的裝載 API ，但以非字串屬性 ID 被呼叫。 如果以非字串屬性 ID 呼叫此函式，則現有的 `JsGetPropertyNamefromId` 會傳回錯誤碼。<br /><br /> 只有邊緣模式會支援這個列舉值。|  
+|`JsErrorPropertyNotSymbol`|在符號屬性 ID 上運作的裝載 API ，但以非符號屬性 ID 被呼叫。如果以非符號屬性 ID 呼叫此函式，則 `JsGetSymbolFromPropertyId` 會傳回錯誤碼。<br /><br /> 只有邊緣模式會支援這個列舉值。|  
+|`JsErrorPropertyNotString`|在字串屬性 ID 上運作的裝載 API ，但以非字串屬性 ID 被呼叫。如果以非字串屬性 ID 呼叫此函式，則現有的 `JsGetPropertyNamefromId` 會傳回錯誤碼。<br /><br /> 只有邊緣模式會支援這個列舉值。|  
 |`JsErrorRuntimeInUse`|無法處置仍在使用的執行階段。|  
 |`JsErrorScriptCompile`|無法編譯 JavaScript。|  
-|`JsErrorScriptEvalDisabled`|指令碼已終止，因為它嘗試使用 `eval` 或 `function`，而且 eval 已停用。|  
+|`JsErrorScriptEvalDisabled`|指令碼已終止，因為它嘗試使用 `eval` 或 `function` ，而且 eval 已停用。|  
 |`JsErrorScriptException`|執行指令碼時發生 JavaScript 例外狀況。|  
 |`JsErrorScriptTerminated`|指令碼因暫停執行階段的要求而終止。|  
 |`JsErrorWrongRuntime`|使用在不同 JavaScript 執行階段中建立的物件呼叫裝載 API。|  
 |`JsErrorWrongThread`|在錯誤的執行緒上呼叫裝載 API。|  
 |`JsNoError`|成功錯誤碼。|  
   
-## 需求  
- **標頭：**jsrt.h  
+## <a name="requirements"></a>需求  
+ **標頭：** jsrt.h  
   
-## 請參閱  
- [參考 \(JavaScript 執行階段\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>另請參閱  
+ [參考資料 (JavaScript 執行階段)](../chakra-hosting/reference-javascript-runtime.md)

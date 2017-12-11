@@ -4,12 +4,10 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
+f1_keywords: http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
 dev_langs:
 - VB
 - CSharp
@@ -19,29 +17,15 @@ helpviewer_keywords:
 - MSBuild, UnregisterAssembly task
 - UnregisterAssembly task [MSBuild]
 ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 79460291e91f0659df0a4241e17616e55187a0e2
-ms.openlocfilehash: 9f2973dcb28338d26b0c3372a95d166d1b2170a0
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: ecb4688452457f9a24a0ab982c06567aae2491d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 工作
 針對 COM Interop 用途取消註冊指定的組件。 與 [RegisterAssembly 工作](../msbuild/registerassembly-task.md)執行的方式相反。  
@@ -58,7 +42,7 @@ ms.lasthandoff: 02/22/2017
 ## <a name="remarks"></a>備註  
  此工作的成功不一定需要組件存在。 如果您嘗試取消註冊不存在的組件，工作將會完成並隨附警告。 這是因為此工作作業的目的是從登錄中移除組件註冊。 如果組件並不存在，就不存在於登錄中，因此工作就會成功。  
   
- 除了上述所列的參數，此工作也繼承 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 類別的參數，該類別本身則繼承自 <xref:System.MarshalByRefObject> 類別。 `MarshalByRefObject` 類別提供與 <xref:Microsoft.Build.Utilities.Task> 類別相同的功能，但它可在自己專屬的應用程式定義域中具現化。  
+ 除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:System.MarshalByRefObject> 類別。 `MarshalByRefObject` 類別提供與 <xref:Microsoft.Build.Utilities.Task> 類別相同的功能，但可以在其專屬應用程式定義域中進行具現化。  
   
 ## <a name="example"></a>範例  
  下列範例會使用 `UnregisterAssembly` 工作來將 `OutputPath` 和 `FileName` 屬性所指定之路徑中的組件取消註冊 (如果存在的話)。  

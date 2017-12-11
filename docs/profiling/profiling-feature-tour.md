@@ -4,38 +4,20 @@ ms.custom: H1HackMay2017
 ms.date: 05/18/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- debugger
+helpviewer_keywords: debugger
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
 ms.translationtype: HT
-ms.sourcegitcommit: 9e6c28d42bec272c6fd6107b4baf0109ff29197e
-ms.openlocfilehash: b4f4e312fb7717edfe950cf6977279a1bd67a458
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -114,7 +96,7 @@ CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會
 
 ## <a name="analyze-resource-consumption-xaml"></a>分析資源取用量 (XAML)
 
-在 XAML 應用程式 (例如 Windows 桌面應用程式 WPF 和 Windows 市集應用程式) 中，您可以使用應用程式時間軸工具來分析資源耗用量。 例如，您可以分析應用程式準備 UI 畫面格 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。 若要使用此工具，請選擇 [效能分析工具] 中的 [應用程式時間軸]，然後選擇 [開始]。 在應用程式中，完整瀏覽具有可疑資源消耗問題的案例，然後選擇 [停止收集] 以產生報表。
+在 XAML 應用程式 (例如 Windows 傳統型 WPF 應用程式和 UWP App) 中，您可以使用應用程式時間軸工具來分析資源耗用量。 例如，您可以分析應用程式準備 UI 畫面格 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。 若要使用此工具，請選擇 [效能分析工具] 中的 [應用程式時間軸]，然後選擇 [開始]。 在應用程式中，完整瀏覽具有可疑資源消耗問題的案例，然後選擇 [停止收集] 以產生報表。
 
 如果您執行應用程式時出現視覺化的問題，其可能反應在 [視覺輸送量] 圖形中的低畫面播放速率。 同樣地，若出現 UI 回應性問題，也可能會反應在 [UI 執行緒使用率] 圖形中居高的數字。 您可以在報表中針對可疑的效能問題選擇一個時段，然後檢查 [時間軸] 詳細資料檢視 (下方窗格) 中的詳細 UI 執行緒活動。
 

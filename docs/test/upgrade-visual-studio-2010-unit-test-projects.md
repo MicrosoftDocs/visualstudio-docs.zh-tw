@@ -4,35 +4,18 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: d6550f2aa1aab249eda569ff84ddf4dcf488aa18
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 2e3e99bfad1ebf33f23c3b38189568935d0cedee
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>升級 Visual Studio 2010 單元測試專案
 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 包含與 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 測試專案的測試專案相容性。 例如，您透過 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 建立的測試專案可以使用 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 開啟，不需要任何升級。 因此，您的小組可以同時使用 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 處理相同的測試專案。 如需詳細資訊，請參閱[從 Visual Studio 2010 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)。  
@@ -43,14 +26,14 @@ ms.lasthandoff: 05/13/2017
 >  [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 測試專案中的現有單位測試將能夠順暢地在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之間運作。 當包含您單元測試的 Visual Studio 2010 測試專案在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中開啟時，系統將不會對它做出任何變更 (反之亦然)。  
   
 > [!CAUTION]
->  Visual Studio 2010 無法開啟以 11.0 工具組為目標的 C++/CLI 專案，也就是在 Visual Studio 2012 中建立的專案。 這項限制適用於所有 C++/CLI 專案，而不只是 C++/CLI 單元測試專案。  
+>  Visual Studio 2010 無法開啟以 11.0 工具組為目標的 C++/CLI 專案，也就是在 Visual Studio 2012 或更新版本中建立的專案。 這項限制適用於所有 C++/CLI 專案，而不只是 C++/CLI 單元測試專案。  
   
 > [!NOTE]
 >  您可以從命令列使用 vstest.console.exe 執行新的單元測試。 如需使用 vstest.console.exe 的詳細資訊，請參閱 [VSTest.Console.exe 命令列選項](/devops-test-docs/test/vstest-console-exe-command-line-options)，或使用說明參數執行該命令︰**vstest.console.exe /?**。 您可以使用 MStest.exe 繼續執行現有的單元測試。 如需詳細資訊，請參閱[從命令列使用 MSTest 執行自動化測試](/devops-test-docs/test/run-automated-tests-from-the-command-line-using-mstest)和 [MSTest.exe 命令列選項](/devops-test-docs/test/mstest-exe-command-line-options)。  
   
  另一個重大的變更是新的 [測試總管]。 在 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 中，部分您所熟悉的舊版測試視窗已淘汰，例如 [測試檢視] 視窗。 [測試總管] 的設計可進一步支援開發人員和小組在其軟體開發實務中併入「單元測試」(unit testing)。 如需詳細資訊，請參閱[使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)。  
   
-## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012"></a>Visual Studio 2010 SP1 和 Visual Studio 2012 之間的相容性問題  
+## <a name="compatibility-issues-between-visual-studio-2010-sp1-and-visual-studio-2012-or-later"></a>Visual Studio 2010 SP1 和 Visual Studio 2012 或更新版本之間的相容性問題  
  以下是一些您在 Visual Studio 2010 SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 之間移轉單元測試時須注意的問題：  
   
 |單元測試功能|問題|方案|  
@@ -65,4 +48,3 @@ ms.lasthandoff: 05/13/2017
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [升級 Visual Studio 2010 的自動程式化 UI 測試](../test/upgrading-coded-ui-tests-from-visual-studio-2010.md)
-

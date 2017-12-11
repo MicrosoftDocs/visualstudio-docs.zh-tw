@@ -1,32 +1,31 @@
 ---
 title: "存在多個分類 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.cv.threads.timeline.multicategory"
-helpviewer_keywords: 
-  - "並行視覺化檢視, 存在多個分類"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.cv.threads.timeline.multicategory
+helpviewer_keywords: Concurrency Visualizer, Multiple Categories Are Present
 ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
-caps.latest.revision: 7
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 7
+caps.latest.revision: "7"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 存在多個分類
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-已選取指定時間範圍內包含多種活動類型的區段。  請注意顯示兩個色彩，其中一個垂直堆疊於另一個之上。  這些色彩就是代表指定時間範圍內前兩個最頻繁的活動。  這兩個活動的頻率會彼此相對顯示為垂直列的三分之一或二分之一。  若要查看更多詳細資訊，請將執行緒檢視的這個區段放大。  
+# <a name="multiple-categories-are-present"></a>存在多個分類
+已選取包含指定時間範圍內多種活動的區段。 請注意，會顯示兩種色彩，一個垂直堆疊在另一個上。 這些色彩只代表指定時間範圍內頻率最高的前兩項活動。 這兩項活動的頻率顯示彼此相關，不是各佔直條的三分之一和三分之二就是各佔對半。 若要查看詳細資訊，請嘗試放大執行緒檢視的這個區段。  
   
-## 請參閱  
- [執行時間 \(執行緒檢視\)](../profiling/execution-time-threads-view.md)   
- [I\/O 時間 \(執行緒檢視\)](../profiling/i-o-time-threads-view.md)   
+## <a name="see-also"></a>另請參閱  
+ [執行時間 (執行緒檢視)](../profiling/execution-time-threads-view.md)   
+ [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)   
  [記憶體管理時間](../profiling/memory-management-time.md)   
  [先佔時間](../profiling/preemption-time.md)   
  [睡眠時間](../profiling/sleep-time.md)   

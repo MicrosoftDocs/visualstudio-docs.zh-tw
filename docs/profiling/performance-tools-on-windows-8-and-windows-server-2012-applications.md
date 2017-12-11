@@ -4,45 +4,28 @@ ms.custom:
 ms.date: 06/19/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: a704215d-d252-4087-921b-ac81ebe2a9c9
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: baf12bba10dfba15f10d75fd1f7a4cdc4000e441
-ms.openlocfilehash: a5d885f8604bdb52907adae4f231b41e0881017f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/21/2017
-
+ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
-自 Windows 8 和 Windows Server 2012 開始的增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 Windows 市集應用程式也需要新的資料收集技術。 本主題描述自 Windows 8 和 Windows Server 2012 平台開始的效能工具變更。
+自 Windows 8 和 Windows Server 2012 開始的增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 UWP App 也需要新的收集技術。 本主題描述自 Windows 8 和 Windows Server 2012 平台開始的效能工具變更。
   
 > [!NOTE]
 >  其他支援的 Windows 版本 (Windows 7、Windows Server 2008 R2) 的效能工具並未變更。
   
 ##  <a name="BKMK_In_this_topic"></a>本主題內容  
- [從 Visual Studio IDE 收集 Windows 市集應用程式資料](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
+ [從 Visual Studio IDE 收集 UWP App 資料](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
   
  [從 Visual Studio IDE 收集 Windows 8 桌面或 Windows Server 2012 上所執行應用程式的資料](#BKMK_Profiling_apps_running_on_the_Windows_8_desktop_or_on_Windows_Server_2012_from_the_Visual_Studio_IDE)  
   
@@ -52,10 +35,10 @@ ms.lasthandoff: 06/21/2017
   
  [收集階層互動 (TIP) 資料](#BKMK_Collecting_tier_interaction__TIP__data)  
   
-##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a>從 Visual Studio IDE 收集 Windows 市集應用程式資料  
- 當您剖析以 JavaScript 和 HTML 5 撰寫的 Windows 市集應用程式的程式碼時，要收集 JavaScript 程式碼的檢測資料。 當您剖析以 Visual C++、Visual C# 或 Visual Basic 撰寫的 Windows 市集應用程式或元件的程式碼時，要收集機器碼和 Managed 程式碼的取樣資料。 您可以在本機或遠端電腦上剖析應用程式的程式碼。  
+##  <a name="BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE"></a> 從 Visual Studio IDE 收集 UWP App 資料  
+ 當您分析以 JavaScript 和 HTML 5 撰寫的 UWP App 時，要收集 JavaScript 程式碼的檢測資料。 當您分析以 Visual C++、Visual C# 或 Visual Basic 撰寫的 UWP App 或元件時，要收集機器碼和 Managed 程式碼的取樣資料。 您可以在本機或遠端電腦上剖析應用程式的程式碼。  
   
- 剖析 Windows 市集應用程式的程式碼時，不支援這些程式碼剖析的功能和選項：  
+ 分析 UWP App 時，不支援下列分析功能和選項：  
   
 -   使用取樣方法剖析 JavaScript 應用程式。  
   
@@ -71,21 +54,21 @@ ms.lasthandoff: 06/21/2017
   
 -   檢測選項，例如收集效能和視窗計數器資料，或指定其他命令列選項。  
   
- 如需對 Windows 市集應用程式進行程式碼剖析的詳細資訊，請參閱下列主題：  
+ 如需對 UWP App 進行分析的詳細資訊，請參閱下列主題：  
   
- [在本機電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-the-local-machine.md)  
+ [在本機電腦上執行 UWP App](../debugger/run-windows-store-apps-on-the-local-machine.md)  
   
- [在遠端電腦上執行 Windows 市集應用程式](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
+ [在遠端電腦上執行 UWP App](../debugger/run-windows-store-apps-on-a-remote-machine.md)  
   
- [程式碼剖析工具](profiling-tools.md)  
+ [分析工具](profiling-tools.md)  
   
 -   [JavaScript 記憶體](../profiling/javascript-memory.md)
   
--   [剖析本機電腦上 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
+-   [在本機電腦上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/2d0c939e-0bac-48c5-b727-46f6c6113060)  
   
--   [在遠端裝置上分析 Windows 市集應用程式中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
+-   [在遠端裝置上分析 UWP App 中的 Visual C++、Visual C# 和 Visual Basic 程式碼](http://msdn.microsoft.com/en-us/b932a2be-11b0-40fd-b996-75c6b6a79d22)  
   
--   [分析 Windows 市集應用程式中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
+-   [分析 UWP App 中 Visual C++、Visual C# 和 Visual Basic 程式碼的效能資料](http://msdn.microsoft.com/en-us/5de4a413-d924-425f-afc4-e1ecfb0fca18)  
   
  [本主題內容](#BKMK_In_this_topic)  
   
@@ -106,7 +89,7 @@ ms.lasthandoff: 06/21/2017
   
 |工具名稱|說明|  
 |---------------|-----------------|  
-|[VSPerf](../profiling/vsperf.md)|從 Windows 市集應用程式收集程式碼剖析資料，以及從 Windows 8 桌面應用程式和 Windows Server 2012 應用程式收集範例程式碼剖析資料。|  
+|[VSPerf](../profiling/vsperf.md)|從 UWP App 收集分析資料，以及從 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式收集樣本分析資料。|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式，收集檢測、並行和階層互動分析資料。 從舊版 Windows 中收集所有類型的程式碼剖析資料。|  
   
  兩種工具都以 Visual Studio 安裝，以在本機電腦上使用。  
@@ -139,7 +122,7 @@ ms.lasthandoff: 06/21/2017
   
 1.  若要從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式收集階層互動資料，您必須使用檢測方法。  
   
-2.  您無法收集 Windows 市集應用程式的階層互動資料。  
+2.  您無法收集 UWP App 的階層互動資料。  
   
 3.  其他支援的 Windows 版本上的所有程式碼剖析方法都可以包含階層互動資料。  
   

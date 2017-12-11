@@ -1,35 +1,38 @@
 ---
-title: "如何：分析網頁中的 JavaScript (ECMA) 程式碼 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "JavaScript 效能分析"
-  - "程式碼剖析工具，JavaScript"
-  - "網站效能分析"
+title: "如何：分析網頁中的 JavaScript 程式碼 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- JavaScript performance profiling
+- Profiling Tools,JavaScript
+- web site performance profiling
 ms.assetid: 37d02aad-ca4d-4eb0-bf66-ca3ecef31fbe
-caps.latest.revision: 27
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 27
+caps.latest.revision: "27"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 8e33605b75dfe80bf755081692bc8a4991def801
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]程式碼剖析工具可以使用檢測程式碼剖析方法，針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 -   Internet Explorer 8 (含) 以後版本。  
   
 > [!WARNING]
->  若要對 Windows 市集應用程式中的 JavaScript 進行程式碼剖析，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md) 
+>  若要對 UWP 應用程式中的 JavaScript 進行程式碼剖析，請參閱 [JavaScript 記憶體](../profiling/javascript-memory.md) 
   
  您可以使用 [程式碼剖析精靈] 建立效能工作階段。 指定檢測方法，然後在效能工作階段的 [屬性] 對話方塊中，於 [檢測] 頁面上指定 JavaScript 程式碼剖析選項。  
   
@@ -41,7 +44,7 @@ caps.handback.revision: 27
   
 ### <a name="to-profile-javascript-in-an-aspnet-web-application-project"></a>對 ASP.NET Web 應用程式專案中的 JavaScript 進行程式碼剖析  
   
-1.  在 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中，開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。  
+1.  在 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]中，開啟 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 專案。  
   
 2.  按一下 [分析]  功能表上的 [啟動效能精靈] 。  
   
@@ -78,8 +81,3 @@ caps.handback.revision: 27
 7.  執行您要進行程式碼剖析的功能。  
   
 8.  若要結束程式碼剖析工作階段，請關閉瀏覽器。
-
-
-<!--HONumber=Feb17_HO4-->
-
-

@@ -1,131 +1,87 @@
 ---
-title: "移至 | Microsoft Docs"
+title: "使用移至命令來尋找程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/16/2016
+ms.date: 09/26/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 509b2107-23d1-4fb3-987f-ab99ef45b72e
+helpviewer_keywords:
+- code editor, go to
+- code editor, go to line
+- go to line
+- go to
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3b812629bf0f655f39c35a56eb1b3ca9113303a6
-ms.openlocfilehash: 8bf6d49b21d128d15f5312fb230d4a8e7a8195af
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/01/2017
-
+ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
+# <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼  
+Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助您快速找出指定的項目。 您可以透過簡潔的整合介面，移至特定行、類型、符號、檔案和成員。 Visual Studio 2017 及更新版本有提供這項功能，  
 
-# <a name="go-to"></a>到
-有許多方法可以透過鍵盤和滑鼠在 Visual Studio IDE 內輕鬆地巡覽程式碼。
+### <a name="how-to-use-it"></a>如何使用  
 
-<!-- VERSIONLESS -->
-## <a name="go-to-all"></a>移至全部
-Visual Studio 2017 及更新版本有提供這項功能，  其可巡覽程式碼，以找到您所尋找的特定位元。  您可以透過簡潔的整合介面，搜尋特定行、類型、符號、檔案和其他項目。
+輸入        | 函式 
+------------ | ---
+**鍵盤** | 按 **Ctrl + t** 或 **Ctrl + ,**     
+**滑鼠**    | 選取 [編輯]、[移至]、[移至全部]  
 
-### <a name="how-to-use"></a>如何使用
-* **鍵盤**
-  * 按 **Ctrl+** 或 **Ctrl+T**  (請注意，根據您所選取的設定檔，鍵盤快速鍵可能會不同)。
-* **滑鼠**
-  * 選取 [編輯] > [移至] > [移至全部]。
-
-這預設會在 IDE 的右上方顯示一個小型視窗。
+這預設會在程式碼編輯器的右上方顯示一個小型視窗。  
 
 ![移至全部](media/gotoall.png)
 
-在這裡，有幾種方式可以繼續：
-* 使用文字方塊下方選取的[篩選圖示](#filtered-searches)，輸入要搜尋且沒有前置詞的文字。
-* 輸入後接要搜尋之文字的[前置詞](#filtered-searches)。
-* 輸入問號 (?) 以取得其他說明。
+當您在文字方塊中鍵入時，結果會出現在文字方塊下方的下拉式清單中。 若要移至項目，請在清單中選擇它。    
+
+![[巡覽至] 視窗](../ide/media/vside_navigatetowindow.png "[巡覽至] 視窗")  
+
+您也可以輸入問號 (?) 以取得其他說明。  
+
   ![移至全部說明](media/gotoall_help.png)
 
-### <a name="filtered-searches"></a>篩選的搜尋
-若要將搜尋範圍縮小為特定類型，您可以在輸入時使用前置詞，或使用搜尋視窗下方的圖示，如下所示。
+### <a name="filtered-searches"></a>篩選的搜尋  
+根據預設，會在所有方案項目中搜尋指定的項目。 不過，您可以在搜尋詞彙前面引用特定字元，以將程式碼搜尋限制為特定項目類型。 您也可以選擇 [移至] 對話方塊工具列上的按鈕，快速變更搜尋篩選。 變更類型篩選的按鈕是在左邊，變更搜尋範圍的按鈕則是在右邊。  
+
+![移至成員](../ide/media/vside_navigation_toolbar.png)
+
+#### <a name="filter-to-a-specific-type-of-code-element"></a>篩選至特定類型的程式碼項目  
+若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：  
 
 前置詞 | 圖示 | 快速鍵 | 說明
 :----: | ---- | -------- | ---
-#      | ![符號圖示](media/gotoall_symbolicon.png) | Ctrl+1、Ctrl+S | 尋找相符的符號
-f      | ![檔案圖示](media/gotoall_fileicon.png)     | Ctrl+1、Ctrl+F | 尋找相符的檔名
-m      | ![成員圖示](media/gotoall_membericon.png) | Ctrl+1、Ctrl+M | 尋找相符的成員
-t      | ![類型圖示](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 尋找相符的類型
-:      | ![行圖示](media/gotoall_lineicon.png)     | Ctrl+G         | 移至輸入的行號
+\#      | ![符號圖示](media/gotoall_symbolicon.png) | Ctrl+1、Ctrl+S | 移至指定的符號
+f      | ![檔案圖示](media/gotoall_fileicon.png)     | Ctrl+1、Ctrl+F | 移至指定的檔案
+m      | ![成員圖示](media/gotoall_membericon.png) | Ctrl+1、Ctrl+M | 移至指定的成員
+t      | ![類型圖示](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 移至指定的類型
+:      | ![行圖示](media/gotoall_lineicon.png)     | Ctrl+G         | 移至指定的行號
 
-### <a name="search-locations"></a>搜尋位置
-若要將搜尋範圍縮小為特定位置，請使用兩個文件圖示。
+#### <a name="filter-to-a-specific-location"></a>篩選至特定位置    
+若要將搜尋範圍縮小為特定位置，請選取兩個文件圖示的其中一個：  
 
 圖示 | 說明
 ---- | ---
 ![目前文件](media/gotoall_currentdocument.png) | 僅搜尋目前文件
-![外部文件](media/gotoall_external.png) | 除了專案/方案中的文件之外，還會搜尋外部文件
+![外部文件](media/gotoall_external.png) | 除了專案/方案中的文件之外，還會搜尋外部文件  
 
-### <a name="settings"></a>設定
-按一下齒輪圖示 ![齒輪圖示](media/gotoall_gear.png) (位於右下方) 可讓您變更這項功能的運作方式。
+### <a name="camel-casing"></a>駝峰式命名法的大小寫  
+如果您在程式碼中使用 [camel casing](https://en.wikipedia.org/wiki/Camel_case) (駝峰式命名法)，則只要輸入程式碼項目名稱的大寫字母，就可以更快速地找到程式碼項目。 例如，如果您的程式碼有一個稱為 `CredentialViewModel` 的類型，則選擇類型篩選 ("t")，並且只要在 [移至] 對話方塊中輸入名稱的大寫字母 (`CVM`)，就可以縮小搜尋範圍。 如果您的程式碼名稱很長，則這個功能十分有用。  
+
+![[巡覽至] 視窗 - 使用大寫搜尋](../ide/media/vside_capitalsearch.png)
+
+### <a name="settings"></a>設定  
+選取齒輪圖示 ![齒輪圖示](media/gotoall_gear.png) 可讓您變更這項功能的運作方式：  
 
 設定 | 說明
 ------- | ---
 使用預覽索引標籤 | 在 IDE 的預覽索引標籤中立即顯示選取的項目
 顯示詳細資料    | 在視窗中顯示文件註解中的專案、檔案、行和摘要資訊
-置中視窗   | 將此視窗移至 IDE 的中心，而不是右上方
-<!-- END VERSIONLESS -->
+置中視窗   | 將此視窗移至程式碼編輯器的正上方，而不是右上方   
 
-## <a name="go-to-definition"></a>移至定義
-巡覽至類型來源，然後在新的索引標籤中開啟結果︰
-
-輸入        | 函式 
------------- | ---
-**鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至定義]
-
-## <a name="peek-definition"></a>查看定義
-在快顯視窗中預覽類型的定義，而不是在新的索引標籤中︰
-
-輸入        | 函式 
------------- | ---
-**鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Alt+F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [查看定義]
-
-如果您從快顯視窗查看另一個定義，則將開始階層連結路徑，而階層連結路徑可使用出現在快顯視窗上方的圓形和箭號進行巡覽。  如需詳細資訊，請參閱[如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。
-
-## <a name="go-to-implementation"></a>移至實作
-從基底類別或類型巡覽至其實作。  如果有多個實作，您會看到它們列在 [尋找符號結果] 視窗中︰
-
-輸入        | 函式 
------------- | ---
-**鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Ctrl+F12**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至實作]
-
-## <a name="find-all-references"></a>尋找所有參考
-尋找所有正在使用方法/屬性/變數的位置。  您可以使用此項目來驗證無作用程式碼，並檢查大型重構的可能副作用。  按 **F8** 在結果之間移動。
-
-輸入        | 函式 
------------- | ---
-**鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Ctrl+K、R**
-**滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [尋找所有參考]
-
-## <a name="navigating-results"></a>巡覽結果
-使用 Visual Studio 的巡覽功能時，可以前後巡覽堆疊︰
-
-輸入        | 函式 
------------- | ---
-**Ctrl+-**          | 向後巡覽堆疊
-**Ctrl+Shift+-**    | 向前巡覽堆疊
-
-您也可以使用 [檢視] > [向後巡覽] 和 [檢視] > [向前巡覽] 功能表項目。
+## <a name="see-also"></a>另請參閱  
+[巡覽程式碼](../ide/navigating-code.md)  
+[移至定義和查看定義](../ide/go-to-and-peek-definition.md)  

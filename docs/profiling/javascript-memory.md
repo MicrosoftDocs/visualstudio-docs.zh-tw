@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -23,34 +22,18 @@ helpviewer_keywords:
 - analyzing memory, JavaScript
 - memory analyzer, JavaScript
 ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
-caps.latest.revision: 49
+caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 24250d68042f77a653fe9ef36c743dd4f32ee57c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
-您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的市集應用程式中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
+您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
   
  JavaScript 記憶體分析器可以執行下列項目：  
   
@@ -62,7 +45,7 @@ ms.lasthandoff: 05/13/2017
   
 -   減少 JavaScript 堆積資料中屬於不可執行動作的資訊。  
   
-     不是直接由應用程式程式碼建立的物件都將被自動篩選掉。 您也可以根據物件名稱來篩選資料。  
+     不是直接由應用程式程式碼建立的物件都將被自動篩選掉。您也可以根據物件名稱來篩選資料。  
   
  如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
   
@@ -85,31 +68,31 @@ ms.lasthandoff: 05/13/2017
  [識別記憶體問題的提示](#Tips)  
   
 ##  <a name="Run"></a> 執行 JavaScript 記憶體分析器  
- 當您在 Visual Studio 中開啟執行中的 Windows 市集應用程式或在執行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本的電腦上安裝這些應用程式時，可以使用記憶體分析器。  
+ 當您在 Visual Studio 中開啟執行中的 UWP App 或在執行 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更新版本的電腦上安裝這些應用程式時，可以使用記憶體分析器。  
   
 #### <a name="to-run-the-memory-analyzer"></a>若要執行記憶體分析器  
   
 1.  開啟 Visual Studio。  
   
-2.  如果您是從 Visual Studio 執行應用程式，請在 [標準]  工具列上的 [開始偵錯]  清單中選擇專案的部署目標：Windows Phone 模擬器或是 (針對 Windows 市集應用程式) [本機電腦] 、[模擬器] 或 [遠端電腦] 。  
+2.  如果您是從 Visual Studio 執行應用程式，請在 [標準] 工具列上的 [開始偵錯] 清單中選擇專案的偵錯目標：Windows Phone 模擬器或是 (針對 UWP App) [本機電腦]、[模擬器]或 [遠端電腦]。  
   
-     如需這些選項的詳細資訊，請參閱[從 Visual Studio 執行應用程式](../debugger/run-store-apps-from-visual-studio.md)。  
+     如需這些選項的詳細資訊，請參閱 [Run apps from Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
 3.  在功能表列上，依序選擇 [偵錯] 和 [效能分析工具]。  
   
      根據預設，Visual Studio 隨即開始分析啟始專案。 如果要變更分析目標，請選擇 [ **變更目標**]。  
   
-     ![變更分析目標](~/profiling/media/js_tools_target.png "JS_Tools_Target")  
+     ![變更分析目標](../profiling/media/js_tools_target.png "JS_Tools_Target")  
   
      下列選項適用於分析目標：  
   
     -   **啟始專案**： 分析目前的啟始專案。 如果您是在遠端電腦執行應用程式，必須選擇這個選項 (預設值)。  
   
-    -   **執行中的應用程式**： 讓您從執行中的應用程式清單選取 Windows 市集應用程式。 如果您是在遠端電腦執行應用程式，便無法使用這個選項。  
+    -   **執行中的應用程式**： 可讓您從執行中的應用程式清單選取 UWP App。 如果您是在遠端電腦執行應用程式，便無法使用這個選項。  
   
          當您無法存取原始程式碼時，可以使用這個選項分析在電腦上執行之應用程式的記憶體使用量。  
   
-    -   **已安裝的應用程式**： 可讓您選取已安裝且要分析的 Windows 市集應用程式。 如果您是在遠端電腦執行應用程式，便無法使用這個選項。  
+    -   **已安裝的應用程式**： 可讓您選取已安裝且要分析的 UWP App。 如果您是在遠端電腦執行應用程式，便無法使用這個選項。  
   
          當您無法存取原始程式碼時，可以使用這個選項分析安裝在電腦上之應用程式的記憶體使用量。 如果這不是您開發的應用程式，但是您又希望分析應用程式的記憶體使用量，這個選項就很有用。  
   
@@ -140,7 +123,7 @@ ms.lasthandoff: 05/13/2017
   
 -   [檢視快照詳細資料](#SnapshotDetails). 顯示單一快照的詳細記憶體使用量資料。  
   
--   [檢視快照差異](#SnapshotDiff). 顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
+-   [檢視快照差異](#SnapshotDiff).顯示快照之間的差異值。 這些檢視會顯示物件大小和物件計數的差異。  
   
 ##  <a name="Isolate"></a> Isolate a memory leak  
  下列步驟提供的工作流程，有助於您更有效地使用 JavaScript 記憶體分析器。 如果您懷疑應用程式有記憶體流失，這些步驟可能會很有用。 如需能協助您找出運作中應用程式發生記憶體流失問題的教學課程，請參閱[逐步解說：找出記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)。  
@@ -177,7 +160,7 @@ ms.lasthandoff: 05/13/2017
   
      下圖顯示第二及第三張範例快照。  
   
-     ![第二個和第三個快照](~/profiling/media/js_mem_leak_workflow.png "JS_Mem_Leak_Workflow")  
+     ![第二個和第三個快照](../profiling/media/js_mem_leak_workflow.png "JS_Mem_Leak_Workflow")  
   
      您可以在這個工作流程中擷取基準、第二及第三張快照，藉此更輕鬆地篩選掉與記憶體流失無關聯的變更。 例如，可能會有如更新頁首和頁尾等預期的變更，這將會對記憶體使用量產生一些變更，但可能與記憶體流失無關。  
   
@@ -213,7 +196,7 @@ ms.lasthandoff: 05/13/2017
   
  記憶體圖表可讓您即時檢視應用程式的處理序記憶體，包括私用位元組、原生記憶體和 JavaScript 堆積。 記憶體圖表可讓您以捲動方式檢視處理序記憶體。 看起來如下：  
   
- ![JavaScript 記憶體分析器記憶體圖表](~/profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
+ ![JavaScript 記憶體分析器記憶體圖表](../profiling/media/js_mem_memory_graph.png "JS_Mem_Memory_Graph")  
   
  如果您已將使用者標記加入應用程式程式碼 (請參閱 [Associate source code with memory usage data](#JSConsoleCommands))，記憶體使用量圖表中會出現倒三角形，表示到達該程式碼區段的時間。  
   
@@ -252,7 +235,7 @@ ms.lasthandoff: 05/13/2017
   
  下圖顯示快照詳細資料中的 [類型] 檢視，其中的記憶體使用量資料會依保留大小排序。  
   
- ![顯示可能發生之問題的快照詳細資料檢視](~/profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")  
+ ![顯示可能發生之問題的快照詳細資料檢視](../profiling/media/js_mem_snapshot_details.png "JS_Mem_Snapshot_Details")  
   
  在快照詳細資料檢視中，您可以從工具列選擇類型、根或主導者，根據這些選項來檢閱記憶體使用量資料：  
   
@@ -293,9 +276,9 @@ ms.lasthandoff: 05/13/2017
   
  在快照差異視窗中，[主導者]、[類型] 和 [根] 檢視與 [檢視快照詳細資料](#SnapshotDetails) 視窗中的相同。 快照差異與快照詳細資料都會顯示相同資料，但是前者還包含下列額外的值：  
   
--   **大小差異**： 目前快照和上一個快照中的物件大小差異，其中不包括任何參考之物件的大小。  
+-   **大小差異**：目前快照和上一個快照中的物件大小差異，其中不包括任何參考之物件的大小。  
   
--   **保留大小差異**： 目前快照和上一個快照中的物件保留大小差異。 保留大小包含物件大小加上該物件沒有其他父代之所有子物件的大小。 這個保留大小實際上是物件保留的記憶體數量，因此如果您刪除物件，就會回復指定的記憶體數量。  
+-   **保留大小差異**：目前快照和上一個快照中的物件保留大小差異。 保留大小包含物件大小加上該物件沒有其他父代之所有子物件的大小。 這個保留大小實際上是物件保留的記憶體數量，因此如果您刪除物件，就會回復指定的記憶體數量。  
   
  如果要篩選快照之間的差異資訊，請選擇位於差異檢視頂端的其中一個 [範圍]  篩選條件。  
   
@@ -308,7 +291,7 @@ ms.lasthandoff: 05/13/2017
   
 -   **快照 #\<number> 中的所有物件**。 此篩選條件設定不會篩選掉堆積中的任何物件。  
   
- 若要顯示不符合目前 [範圍] 篩選條件的物件參考，請在窗格右上角設定清單 ![記憶體分析器中的設定下拉式清單](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") 中選取 [顯示不相符的參考]。 如果您啟用此設定，則不相符的參考會以灰色文字顯示。  
+ 若要顯示不符合目前 [範圍] 篩選條件的物件參考，請在窗格右上角設定清單 ![記憶體分析器中的設定下拉式清單](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中選取 [顯示不相符的參考]。 如果您啟用此設定，則不相符的參考會以灰色文字顯示。  
   
 > [!TIP]
 >  建議您進行 [Isolate a memory leak](#Isolate) 中的步驟，然後使用剩餘的物件 [範圍]  篩選條件，協助您找出流失記憶體的物件。  
@@ -316,7 +299,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="FoldObjects"></a> 依主導者檢視物件  
  在 [類型] 和 [主導者] 檢視中，可以選擇是否要檢視摺疊在其主導者中的物件 (此為 [主導者] 索引標籤中的預設檢視)。 選取此檢視時，只有主導者會顯示在物件的最上層檢視中 (在最上層檢視中，會隱藏非全域物件的子物件)。對於某些應用程式而言，如此可減少不必要的資料，以釐清是哪些物件造成記憶體流失。  
   
- 若要依主導者切換物件的檢視，請選擇 [依主導者摺疊在物件中]  按鈕。 ![將物件摺疊到其主導者](~/profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
+ 若要依主導者切換物件的檢視，請選擇 [依主導者摺疊在物件中]  按鈕。 ![將物件摺疊到其主導者](../profiling/media/js_mem_fold_objects.png "JS_Mem_Fold_Objects")  
   
  如需主導者的詳細資訊，請參閱 [檢視快照詳細資料](#SnapshotDetails).  
   
@@ -334,7 +317,7 @@ ms.lasthandoff: 05/13/2017
 > [!NOTE]
 >  循環參考會顯示星號 (*) 以及參考用工具提示，而且不能展開。 否則，循環參考會讓您無法向上查看參考樹狀結構，以及找出持有記憶體的物件。  
   
- 如果您需要找出對等物件的其他說明，可以在上方窗格右上角的設定清單 ![記憶體分析器中的設定下拉式清單](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") 中，選擇 [顯示物件 ID]。 這個選項可以讓 [ **識別項** ] 清單中的物件名稱旁都顯示物件 ID (這些 ID 會顯示在所有檢視中，而非只有 [物件] 參考清單)。 具有相同 ID 的物件都是共用參考。  
+ 如果您需要找出對等物件的其他說明，可以在上方窗格右上角的設定清單 ![記憶體分析器中的設定下拉式清單](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中，選擇 [顯示物件 ID]。 這個選項可以讓 [ **識別項** ] 清單中的物件名稱旁都顯示物件 ID (這些 ID 會顯示在所有檢視中，而非只有 [物件] 參考清單)。 具有相同 ID 的物件都是共用參考。  
   
  下圖顯示已選取項目的 [物件] 參考清單，其中顯示物件的 ID。  
   
@@ -343,7 +326,7 @@ ms.lasthandoff: 05/13/2017
 ##  <a name="BuiltInValues"></a> 顯示內建物件  
  根據預設，[主導者] 和 [類型] 檢視只會顯示應用程式中建立的物件。 這有助於篩選掉不需要的資訊並隔離應用程式相關的問題。 不過，當您要檢視 JavaScript 執行階段為應用程式產生的所有物件時，這就相當實用。  
   
- 若要顯示這些物件，請在窗格右上角的設定清單 ![記憶體分析器中的設定下拉式清單](~/profiling/media/js_mem_settings.png "JS_Mem_Settings") 中，選擇 [顯示內建]。  
+ 若要顯示這些物件，請在窗格右上角的設定清單 ![記憶體分析器中的設定下拉式清單](../profiling/media/js_mem_settings.png "JS_Mem_Settings") 中，選擇 [顯示內建]。  
   
 ##  <a name="Save"></a> 儲存診斷工作階段檔案  
  診斷快照摘要及其關聯的詳細資料檢視會儲存為 .diagsession 檔案。 [**方案總管** ] 會在 [診斷工作階段] 資料夾中顯示之前的診斷工作階段。 在 [ **方案總管**] 中，您可以開啟先前的工作階段，或者刪除或重新命名這些檔案。  
@@ -407,7 +390,7 @@ if (performance && performance.mark) {
   
 -   請觀賞 Build 2013 大會中關於 JavaScript 記憶體分析器的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
--   閱讀 [管理 Windows 市集應用程式中的記憶體](http://msdn.microsoft.com/magazine/jj651575.aspx)(機器譯文)。  
+-   請閱讀[在 UWP App 中管理記憶體](http://msdn.microsoft.com/magazine/jj651575.aspx)。  
   
 -   考慮暫時修改程式碼來隔離問題。 例如，您可能要：  
   

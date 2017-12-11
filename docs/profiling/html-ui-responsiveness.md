@@ -4,8 +4,7 @@ ms.custom: H1Hack27Feb2017
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-debug
+ms.technology: vs-ide-debug
 ms.tgt_pltfrm: 
 ms.topic: article
 dev_langs:
@@ -14,37 +13,21 @@ dev_langs:
 - FSharp
 - C++
 helpviewer_keywords:
-- performance, JavaScript [Windows Store apps]
-- performance tools, JavaScript [Windows Store apps]
+- performance, JavaScript [UWP apps]
+- performance tools, JavaScript [UWP apps]
 - UI Responsiveness Profiler [JavaScript]
 - profiler, UI responsiveness [JavaScript]
-- profiler, JavaScript [Windows Store apps]
+- profiler, JavaScript [UWP apps]
 ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
-caps.latest.revision: 47
+caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 90fed413835f118e59bc32f0b94cb62a40baaca1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供通用 Windows App 使用。  
@@ -58,7 +41,7 @@ ms.lasthandoff: 05/13/2017
 -   視覺效果更新比預期較不頻繁。 如果 UI 執行緒太忙碌而無法保持順暢的畫面播放速率，就會發生這種情況。 例如，如果 UI 執行緒忙碌，畫面格可能會被捨棄。 某些非 UI 執行緒工作也可能會限制如網路要求、影像解碼和繪製的視覺效果更新頻率 (並非所有繪製都是在 UI 執行緒上執行)。  
   
 ##  <a name="RunningProfiler"></a> 執行 HTML UI 回應性工具  
- 當您在 Visual Studio 中有開啟的運作中 Windows 通用或 Windows 市集應用程式，或在執行 Windows 8 或更新版本的電腦上安裝這些應用程式時，便可以使用 HTML UI 回應性工具。  
+ 當您在 Visual Studio 中有開啟的運作中 UWP 或 Windows 8.1 應用程式，或在執行 Windows 8 或更新版本的電腦上安裝這些應用程式時，便可以使用 HTML UI 回應性工具。  
   
 1.  如果您是從 Visual Studio 執行應用程式，請在 [ **標準** ] 工具列上的 [ **開始偵錯** ] 清單中選擇部署目標，例如其中一個 Windows Phone 模擬器、[ **本機電腦**]、[ **模擬器**] 或 [ **遠端電腦**]。  
   
@@ -72,7 +55,7 @@ ms.lasthandoff: 05/13/2017
   
     -   **啟始專案**： 選擇這個選項即可分析目前的啟始專案。 如果您是在遠端電腦或裝置上執行應用程式，必須使用這項設定 (預設值)。  
   
-    -   **執行中的應用程式**： 選擇這個選項，即可從執行中的應用程式清單選取 Windows 市集應用程式。 如果您是在遠端電腦或裝置上執行應用程式，便無法使用這個選項。  
+    -   **執行中的應用程式**： 選擇這個選項，即可從執行中的應用程式清單選取 UWP App。 如果您是在遠端電腦或裝置上執行應用程式，便無法使用這個選項。  
   
          當您無法存取原始程式碼時，可以使用這個選項分析在電腦上執行之應用程式的效能。  
   
@@ -146,7 +129,7 @@ ms.lasthandoff: 05/13/2017
     > [!TIP]
     >  分析工具中大部分的有用資訊都會出現在時間軸詳細資料圖表中。  
   
-12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ]\(按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。  
+12. 在 CPU 使用率或視覺輸送量 (FPS) 圖表中選取區域後，選擇 [ **放大** ] (按鈕或內容功能表) 以取得詳細資訊。 圖形的時間軸會變成只顯示選取的時段。  
   
 13. 放大時，請選取 CPU 使用率或視覺輸送量圖形的一部分。 確定選取範圍時，分析工具下方窗格的時間軸詳細資料圖形會變成只顯示選取的時段。  
   
@@ -375,7 +358,7 @@ if (performance.mark && performance.measure) {
   
 -   請觀賞 Build 2013 大會中關於 UI 回應性分析工具的 [影片](http://channel9.msdn.com/Events/Build/2013/3-316) 。  
   
--   讀取有關使用 JavaScript 針對 Windows 建置的 Windows 市集應用程式的效能提示。 如需詳細資訊，請參閱 [使用 JavaScript 的 Windows 市集應用程式的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
+-   讀取有關使用 JavaScript 針對 Windows 建置的 UWP App 的效能提示。 如需詳細資訊，請參閱[使用 JavaScript 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx)。  
   
 -   如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   

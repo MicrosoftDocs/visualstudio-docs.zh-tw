@@ -1,30 +1,33 @@
 ---
 title: "物件和陣列 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "陣列 [JavaScript]"
-  - "陣列 [JavaScript]，物件"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- arrays [JavaScript]
+- arrays [JavaScript], objects
 ms.assetid: f5106284-1240-4f47-8c3b-5a45e227e5e1
-caps.latest.revision: 15
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 15
+caps.latest.revision: "15"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 6776701ba108ae0ecefc2331c2b12272e0c1be19
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 物件和陣列 (JavaScript)
-[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 物件是屬性和方法的集合。  方法是物件的函式成員。  屬性 \(Property\) 是一個值或一系列的值 \(以陣列或物件的格式存在\)，它是物件的成員。  [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支援四種物件：  
+# <a name="objects-and-arrays-javascript"></a>物件和陣列 (JavaScript)
+[!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 物件是屬性和方法的集合。 方法是物件的函式成員。 屬性 (Property) 是一個值或一系列的值 (以陣列或物件的格式存在)，它是物件的成員。 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 支援四種物件：  
   
 -   內建物件，例如 `Array` 和 `String`。  
   
@@ -34,10 +37,10 @@ caps.handback.revision: 15
   
 -   ActiveX 物件。  
   
-## Expando 屬性和方法  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中的所有物件都支援可在執行階段加入和移除的 expando 屬性和方法。  這些屬性和方法可以有任何名稱，而且可以藉由數字來識別。  如果屬性或方法的名稱是簡單識別碼，可以將它寫在加上句號的物件名稱之後，例如下列程式碼中的 `myObj.name`、`myObj.age` 和 `myObj.getAge`：  
+## <a name="expando-properties-and-methods"></a>Expando 屬性和方法  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中的所有物件都支援可在執行階段加入和移除的 expando 屬性和方法。 這些屬性和方法可以有任何名稱，而且可以藉由數字來識別。 如果屬性或方法的名稱是簡單識別碼，可以將它寫在加上句號的物件名稱之後，例如下列程式碼中的 `myObj.name`、`myObj.age` 和 `myObj.getAge`：  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
 myObj.name = "Fred";  
 myObj.age = 42;  
@@ -60,9 +63,9 @@ document.write(myObj.getAge());
   
 ```  
   
- 如果屬性或方法的名稱不是簡單識別碼，或者在您撰寫指令碼時為未知，您可以在方括號內使用運算式來建立屬性的索引。  在將 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 的所有 expando 屬性名稱加入物件之前，會先將屬性名稱轉換為字串。  
+ 如果屬性或方法的名稱不是簡單識別碼，或者在您撰寫指令碼時為未知，您可以在方括號內使用運算式來建立屬性的索引。 在將 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 的所有 expando 屬性名稱加入物件之前，會先將屬性名稱轉換為字串。  
   
-```javascript  
+```JavaScript  
 var myObj = new Object();  
   
 // Add two expando properties that cannot be written in the  
@@ -76,14 +79,14 @@ myObj["not a valid identifier"] = "This is the property value";
 myObj[100] = "100";  
 ```  
   
- 如需從定義建立物件的詳細資訊，請參閱[建立物件](../javascript/creating-objects-javascript.md)。  
+ 如需從定義建立物件的資訊，請參閱[建立物件](../javascript/creating-objects-javascript.md)。  
   
-## 物件形式的陣列  
- 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，由於陣列只是一種特殊的物件，因此物件和陣列幾乎是以相同的方式處理。  物件和陣列都可以有屬性和方法。  
+## <a name="arrays-as-objects"></a>陣列當做物件  
+ 在 [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 中，由於陣列只是一種特殊的物件，因此物件和陣列幾乎是以相同的方式處理。 物件和陣列都可以有屬性和方法。  
   
- 陣列有 `length` 屬性，但是物件沒有。  當您將值指派給陣列的項目，但是其索引大於陣列的長度 \(例如，`myArray[100] = "hello"`\) 時，`length` 屬性會自動增加至新的長度。  同樣地，如果您讓 `length` 屬性變得較小，就會刪除其索引落在陣列長度之外的所有項目。  
+ 陣列有 `length` 屬性，但是物件沒有。 當您將值指派給陣列的項目，但是其索引大於陣列的長度 (例如，`myArray[100] = "hello"`) 時，`length` 屬性會自動增加至新的長度。 同樣地，如果您讓 `length` 屬性變得較小，就會刪除其索引落在陣列長度之外的所有項目。  
   
-```javascript  
+```JavaScript  
 // An array with three elements  
 var myArray = new Array(3);  
   
@@ -108,9 +111,9 @@ document.write("new length is : " + myArray.length);
   
 ```  
   
- 陣列提供逐一查看和管理成員的方法。  下面範例會示範如何取得儲存於陣列之物件的屬性。  
+ 陣列提供逐一查看和管理成員的方法。 下面範例會示範如何取得儲存於陣列之物件的屬性。  
   
-```javascript  
+```JavaScript  
 var myArray = new Array(3);  
   
 // Add some data  
@@ -128,10 +131,10 @@ myArray.forEach(function (item) {
 // 2003  
 ```  
   
-## 多維陣列  
- [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 不直接支援多維陣列，但是您可以將陣列儲存在另一個陣列的項目中，以獲得多維陣列的行為 \(您可以將任何類型的資料儲存在陣列元素中，包括其他陣列\)。例如，下面程式碼會建立最大數字為 5 的乘法表。  
+## <a name="multi-dimensional-arrays"></a>多維陣列  
+ [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] 不直接支援多維陣列，但是您可以將陣列儲存在另一個陣列的項目中，以獲得多維陣列的行為  (您可以將任何類型的資料儲存在陣列元素中，包括其他陣列)。例如，下面程式碼會建立最大數字為 5 的乘法表。  
   
-```javascript  
+```JavaScript  
 // The size of the table.  
 var iMaxNum = 5;  
 // Loop counters.  

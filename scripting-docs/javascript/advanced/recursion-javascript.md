@@ -1,36 +1,39 @@
 ---
 title: "遞迴 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "函式，遞迴函式呼叫"
-  - "遞迴程序"
-  - "函式呼叫，遞迴"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- functions, recursive function calls
+- recursive procedures
+- function calls, recursive
 ms.assetid: 885855a6-3838-457d-9eb4-cce1ccaa5a8d
-caps.latest.revision: 14
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 14
+caps.latest.revision: "14"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 06735c244ed6bd3c8d9abe59123f9f961e6f1847
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 遞迴 (JavaScript)
-遞迴是一種重要的程式設計技巧，可以使函式呼叫其本身。  
+# <a name="recursion-javascript"></a>遞迴 (JavaScript)
+遞迴是重要程式設計技巧，其中，函式會呼叫本身。  
   
-## 遞迴的範例  
- 階乘計算就是一個例子。  數字之階乘 *n* 是藉由乘以 1 \* 2 \* 3 \*…  *n* 來計算。  下列範例示範如何反覆計算階乘，亦即，您可以使用會計算結果的 `while` 迴圈。  
+## <a name="an-example-of-recursion"></a>遞迴範例  
+ 其中一個範例是階乘計算。 數字 *n* 的階乘計算方式是乘 1 \* 2 \* 3 \*... *n*。 下列範例示範如何反覆地計算階乘，也就是使用在其中計算結果的 `while` 迴圈。  
   
-```javascript  
+```JavaScript  
 function factorial(num)  
 {  
     // If the number is less than 0, reject it.  
@@ -54,9 +57,9 @@ document.write(result);
 // Output: 40320  
 ```  
   
- 您可以很容易就讓此範例遞迴。  除了使用 `while` 迴圈計算值，您可以簡單地再次呼叫 `factorial`，傳入下一個最小的值。  當值為 1 時，遞迴就會停止。  
+ 您可以極簡單地將範例設為遞迴。 您只需要重新呼叫 `factorial`，並傳入下一個最小值，而不需要使用 `while` 迴圈來計算值。 值為 1 時，遞迴會停止。  
   
-```javascript  
+```JavaScript  
 function factorial(num)  
 {  
     // If the number is less than 0, reject it.  

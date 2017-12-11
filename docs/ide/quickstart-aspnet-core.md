@@ -1,0 +1,80 @@
+---
+title: "快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式 | Microsoft Docs"
+ms.custom: 
+ms.date: 10/10/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-acquisition
+ms.tgt_pltfrm: 
+ms.topic: article
+ms.devlang: csharp
+ms.assetid: e173fb7d-c5bd-4568-ba0f-aa61913b3244
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+dev_langs: CSharp
+ms.openlocfilehash: e87c46d1d78fafdc629a9f08e0bd7afacc1e1f3f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
+---
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
+在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，您將建立簡單的 C# ASP.NET Core Web 應用程式。 如果您尚未安裝 Visual Studio，請在[這裡](http://www.visualstudio.com)免費安裝它。  
+
+## <a name="create-a-project"></a>建立專案
+首先，您將建立 ASP.NET Core Web 應用程式專案。 在新增任何項目之前，專案類型隨附的範本檔案可構成功能性 Web 應用程式！  
+
+1. 開啟 Visual Studio 2017。  
+
+1. 從頂端功能表列中，依序選擇 [檔案]、[新增] 和 [專案]。  
+
+1. 在 [新增專案] 對話方塊的左窗格中，展開 [Visual C#]，然後選擇 [.NET Core]。 在中間窗格中，選擇 [ASP.NET Web 應用程式]，然後選擇 [確定]。   
+
+     如果您看不到 **.NET Core** 專案範本，請取消 [新增專案] 對話方塊，然後從頂端功能表列中依序選擇 [工具] 和 [Get Tools and Features] (取得工具和功能)。Visual Studio 安裝程式即會啟動。 選擇 [ASP.NET 與網頁程式開發] 工作負載，然後選擇 [修改]。  
+
+     ![VS 安裝程式中的 ASP.NET 工作負載](../ide/media/quickstart-aspnet-workload.png)  
+
+1. 在 [新增 ASP.NET Core Web 應用程式] 對話方塊中，從上方的下拉式功能表中選取 [ASP.NET Core 2.0]  (如果您在清單中看不到 [ASP.NET Core 2.0]，請遵循應該出現在接近對話方塊頂端之黃色列中的 [下載] 連結來進行安裝)。選擇 [ **確定**]。  
+
+   ![新增 ASP.NET Core Web 應用程式對話方塊](../ide/media/quickstart-aspnet-core20.png)  
+
+## <a name="explore-the-ide"></a>探索 IDE  
+1. 在方案總管工具列中，展開 [頁面] 資料夾，然後選擇 **About.cshtml** 以在編輯器中予以開啟。 此檔案對應至 Web 應用程式中稱為 [關於] 的頁面。  
+
+1. 在編輯器中，選擇 `AboutModel`，然後按 **F12**，或選擇操作 (右鍵) 功能表中的 [移至定義]。 此命令會將您帶到 `AboutModel` C# 類別的定義。  
+
+   ![移至定義操作功能表](../ide/media/quickstart-aspnet-gotodefinition.png)  
+
+1. 接下來，我們將會使用簡單捷徑來清除檔案頂端的 `using` 指示詞。 選擇任何灰色 using 指示詞，而且[快速動作](../ide/quick-actions.md)燈泡會顯示在插入點正下方或左邊界中。 選擇燈泡，然後選擇 [移除不必要的 Using]。  
+
+     不必要的 using 會從檔案中刪除。  
+
+1. 在 `OnGet()` 方法中，將主體變更為下列程式碼：  
+
+ ```csharp
+ public void OnGet()
+ {
+     string directory = Environment.CurrentDirectory;
+     Message = String.Format("Your directory is {0}.", directory);
+ }
+ ```  
+
+1. 您會看到兩個波浪底線出現在 [環境] 和 [字串] 下方，因為這些類型不在範圍內。 開啟 [錯誤清單] 工具列，以查看該處所列的相同錯誤  (如果您看不到 [錯誤清單] 工具列，請從頂端功能表列中選擇 [檢視] 和 [錯誤清單])。  
+
+   ![錯誤清單](../ide/media/quickstart-aspnet-errorlist.png)  
+
+1. 在編輯器視窗中，將游標放在包含錯誤的任一行上方，然後選擇左邊界的 [快速動作] 燈泡。 從下拉式功能表中，選擇 **using System;** 將此指示詞新增至檔案頂端，並解決錯誤。  
+
+## <a name="run-the-application"></a>執行應用程式
+1. 按 **Ctrl+F5** 執行應用程式，並在網頁瀏覽器中開啟它。  
+
+1. 在網站頂端，選擇 [關於]，以查看您在 [關於] 頁面的 `OnGet()` 方法中新增目錄訊息。  
+
+1. 關閉網頁瀏覽器。  
+
+恭喜您完成此快速入門！ 我們希望您更了解 Visual Studio IDE。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。  
+
+## <a name="see-also"></a>請參閱   
+[使用 Visual Studio 的 C# 和 Visual Basic 使用者入門](getting-started-with-visual-csharp-and-visual-basic.md)
+[開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)  

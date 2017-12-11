@@ -1,39 +1,23 @@
 ---
-title: "在 Visual Studio 中對市集應用程式執行單元測試 | Microsoft Docs"
+title: "在 Visual Studio 中對 UWP 應用程式執行單元測試 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 5a6f5b32-bfce-4a63-81e9-02d54c592539
-caps.latest.revision: 12
+caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4ecdcce4d45b15e6574ca70044249e4d32776fdd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: cdb13478a7e403be916d7773dab6315429508e9c
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>在 Visual Studio 中對市集應用程式執行單元測試
+# <a name="run-unit-tests-for-uwp-apps-in-visual-studio"></a>在 Visual Studio 中對 UWP 應用程式執行單元測試
 本主題說明如何使用 Microsoft Visual Studio 的 [測試總管] 執行單元測試。  
   
 > [!NOTE]
@@ -65,13 +49,13 @@ ms.lasthandoff: 02/22/2017
   
  [偵錯單元測試](#BKMK_Debugging_unit_tests)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a>單元測試架構和測試專案  
- 適用於 Windows 市集應用程式的 Visual Studio Express，包括用於 Managed 和原生 C++ 程式碼的 Microsoft 單元測試架構。 [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以是 Visual C++ 或 Visual C# 和 Visual Basic 單元測試架構的任意組合。 只要寫好 .NET Framework 的待測程式碼，不論目標程式碼語言為何，就可使用任何 .NET Framework 語言撰寫測試專案。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。  
+##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> 單元測試架構和測試專案  
+ 適用於 UWP 應用程式的 Visual Studio Express，包括用於 Managed 和原生 C++ 程式碼的 Microsoft 單元測試架構。 [測試總管] 可以從方案中的多個測試專案，以及屬於實際執行程式碼專案的測試類別執行測試。 測試專案可以是 Visual C++ 或 Visual C# 和 Visual Basic 單元測試架構的任意組合。 只要寫好 .NET Framework 的待測程式碼，不論目標程式碼語言為何，就可使用任何 .NET Framework 語言撰寫測試專案。 原生 C/C++ 程式碼專案必須使用 C++ 單元測試架構進行測試。  
   
 ##  <a name="BKMK_Running_tests_in_Test_Explorer"></a>在 [測試總管] 中執行測試  
  在建置測試專案後，這些測試便會出現在 [測試總管] 中。 如果沒有看到 [測試總管]，請選擇 Visual Studio 功能表上的 [測試]  ，接著選擇 [Windows] ，然後選擇 [測試總管] 。  
   
- ![單元測試總管](~/ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
+ ![單元測試總管](../ide/media/ute_failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")  
   
  當您執行、寫入、重新執行您的測試時，測試總管會顯示 [失敗的測試] 、[通過的測試] 、[略過的測試]  和 [未執行的測試] 預設群組中的結果。 您可以變更測試總管群組測試的方式。  
   
@@ -120,7 +104,7 @@ ms.lasthandoff: 02/22/2017
   
 |||  
 |-|-|  
-|![[測試總管] 的 [群組] 按鈕](~/test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|若要將測試按執行耗用時間分組，請開啟 [群組依據] 清單，然後選擇 [持續時間]。 選擇 [測試結果]，切換到原始群組。|  
+|![[測試總管] 的 [群組] 按鈕](../test/media/ute_groupby_btn.png "UTE_GroupBy_btn")|若要將測試按執行耗用時間分組，請開啟 [群組依據] 清單，然後選擇 [持續時間]。 選擇 [測試結果]，切換到原始群組。|  
   
 ###  <a name="BKMK_Searching_and_filtering_the_test_list"></a>搜尋和篩選測試清單  
  當有大量測試時，您可以在 [測試總管] 的搜尋方塊中輸入指定字串以篩選清單。 您可以先在篩選清單中選擇，限制篩選特定類型的字串，再輸入搜尋字串。  
@@ -138,4 +122,3 @@ ms.lasthandoff: 02/22/2017
 2.  在 [測試總管] 中，選取測試方法，然後選擇捷徑功能表上的 [偵錯選取的測試]。  
   
  如需偵錯工具的詳細資訊，請參閱 [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)。
-

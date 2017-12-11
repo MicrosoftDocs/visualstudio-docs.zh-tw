@@ -1,68 +1,68 @@
 ---
 title: "評估陳述式命令 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "debug.evaluatestatement"
-helpviewer_keywords: 
-  - "Debug.EvaluateStatement 命令"
-  - "評估陳述式命令"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: debug.evaluatestatement
+helpviewer_keywords:
+- Debug.EvaluateStatement command
+- Evaluate Statement command
 ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 評估陳述式命令
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-評估和顯示給定的陳述式。  
+# <a name="evaluate-statement-command"></a>評估陳述式命令
+評估並顯示指定的陳述式。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Debug.EvaluateStatement text   
 ```  
   
-## 引數  
+## <a name="arguments"></a>引數  
  `text`  
- 必要項。  要評估的陳述式。  
+ 必要項。 要評估的陳述式。  
   
-## 備註  
- 用來輸入 **EvaluateStatement** 命令的視窗決定等號 \(\=\) 解釋為比較運算子或指派運算子。  
+## <a name="remarks"></a>備註  
+ 用來輸入 **EvaluateStatement** 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。  
   
- 在 \[**命令**\] 視窗中，等號 \(\=\) 是解釋為比較運算子。  所以，例如，如果變數值 `a` 和 `b` 是不同的，則命令  
-  
-```  
->Debug.EvaluateStatement(a=b)  
-```  
-  
- 會傳回 `false` 的值。  
-  
- 相反地，在 \[**即時運算**\] 視窗中，等號 \(\=\) 是解釋為指派運算子。  所以，例如，命令  
+ 在 [命令] 視窗中，等號 (=) 會解譯為比較運算子。 因此；例如，如果 `a` 和 `b` 變數的值不同，則命令  
   
 ```  
 >Debug.EvaluateStatement(a=b)  
 ```  
   
- 會將變數 `a` 的值指派為變數 `b` 的值。  
+ 會傳回值 `false`。  
   
-## 範例  
+ 相較之下，在 [即時運算] 視窗中，等號 (=) 會解譯為指派運算子。 因此；例如，命令  
+  
+```  
+>Debug.EvaluateStatement(a=b)  
+```  
+  
+ 會將 `b` 變數的值指派給變數 `a`。  
+  
+## <a name="example"></a>範例  
   
 ```  
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [列印命令](../../ide/reference/print-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
- [尋找\/命令方塊](../../ide/find-command-box.md)   
+ [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

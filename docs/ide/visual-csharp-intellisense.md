@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -13,30 +12,15 @@ helpviewer_keywords:
 - Visual C#, IntelliSense
 - IntelliSense [C#]
 ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: 99f7756369fe4848fc5641009e95bbba23c95227
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: b19e53d5c82c6c6a3abeda72a6b321dd630d586a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 在編輯器中撰寫程式碼，以及在 [[即時模式]](../ide/reference/immediate-window.md) 命令視窗中偵錯時，有 Visual C# IntelliSense 可供使用。  
@@ -44,25 +28,25 @@ ms.lasthandoff: 05/24/2017
 ## <a name="completion-lists"></a>完成清單  
  Visual C# 中的 IntelliSense 完成清單包含來自清單成員和自動完成文字等的語彙基元。 它可以讓您快速存取：  
   
--   類型或命名空間的成員、  
+-   類型或命名空間的成員  
   
--   變數、命令及函式名稱、  
+-   變數、命令及函式名稱  
   
--   [程式碼片段](#CodeSnippets)、  
+-   程式碼片段  
   
--   [語言關鍵字](#Keywords)、  
+-   語言關鍵字  
   
--   [擴充方法](#ExtensionMethods)  
+-   擴充方法  
   
- C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱[篩選後的完成清單](#filtered-completion-lists)。  
+C# 中的完成清單也十分聰明，可以篩選掉不相關的語彙基元，並根據內容預先選取語彙基元。 如需詳細資訊，請參閱[篩選後的完成清單](#filtered-completion-lists)。  
   
-###  <a name="CodeSnippets"></a> 完成清單中的程式碼片段  
- Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 在完成清單中，程式碼片段會顯示為片段的 [Shortcut 項目 (IntelliSense 程式碼片段)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa)。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
+### <a name="code-snippets-in-completion-lists"></a>完成清單中的程式碼片段  
+ Visual C# 完成清單包含程式碼片段，可以協助您在程式中輕鬆地插入預先定義的程式碼主體。 完成清單中顯示為程式碼片段[捷徑文字](../ide/code-snippets-schema-reference.md#shortcut)的程式碼片段。  如需 Visual C# 中所提供之預設程式碼片段的詳細資訊，請參閱 [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
-###  <a name="Keywords"></a> 完成清單中的語言關鍵字  
+### <a name="language-keywords-in-completion-lists"></a>完成清單中的語言關鍵字  
  Visual C# 的完成清單也包含語言關鍵字。 如需 C# 語言關鍵字的詳細資訊，請參閱 [C# 關鍵字](/dotnet/csharp/language-reference/keywords/index)。  
   
-###  <a name="ExtensionMethods"></a> 完成清單中的擴充方法  
+### <a name="extension-methods-in-completion-lists"></a>完成清單中的擴充方法  
  Visual C# 的完成清單包含範圍內的擴充方法。  
   
 > [!NOTE]
@@ -70,18 +54,14 @@ ms.lasthandoff: 05/24/2017
   
  擴充方法與執行個體方法使用不同的圖示。 如需清單圖示的清單，請參閱[類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)。 當同名的執行個體方法與擴充方法都在範圍中時，完成清單會顯示擴充方法圖示。  
   
-### <a name="filtered-completion-lists"></a> 篩選後的完成清單  
- IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。  
+### <a name="filtered-completion-lists"></a>篩選後的完成清單  
+IntelliSense 會利用篩選條件，將不必要的成員從完成名單中移除。 Visual C# 會篩選針對下列項目所顯示的完成清單：  
   
- Visual C# 會篩選針對下列項目所顯示的完成清單：  
-  
--   **介面與基底類別。** 在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
+-   **介面與基底類別**：在類別宣告基底和介面清單與條件約束清單中，IntelliSense 都會自動從介面和基底類別的完成清單移除項目。 例如，列舉不會出現在基底類別的完成清單中，因為列舉不能使用於基底類別。 基底類別的完成清單只包含介面和命名空間。 如果您在清單中選取一個項目，然後輸入一個逗號，IntelliSense 會將基底類別從清單中移除，因為 Visual C# 不支援多重繼承。 相同的行為也會發生在條件約束子句。  
   
 -   **屬性**：當您將屬性套用至類型時，完成清單會經過篩選，讓清單只包括從含有這些類型的命名空間繼承而來之類型，例如 <xref:System.Attribute>。  
   
--   `as` 及 `is` 運算子。  
-  
--   **Catch 子句。**  
+-   **Catch 子句**  
   
 -   **物件初始設定式**：只有能夠初始化的成員會出現在完成清單中。  
   
@@ -91,9 +71,9 @@ ms.lasthandoff: 05/24/2017
   
 -   **as 及 is 運算子**：當您鍵入 `as` 或 `is` 關鍵字後按空格鍵，即會自動顯示篩選後的完成清單。  
   
--   Event：當您輸入關鍵字 `event`，完成清單僅包含委派類型。  
+-   **事件**：當您鍵入關鍵字 `event`，完成清單僅包含委派類型。  
   
--   參數會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
+-   **參數說明**會自動排序到符合您所輸入之參數的第一個方法多載。 如有多個方法多載，您可以使用向上鍵與向下鍵巡覽至清單中下一個可能的多載。  
   
 ## <a name="most-recently-used-members"></a>最近使用的成員  
  IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md) 快顯方塊中選取的成員，自動完成物件名稱。 下次使用 [成員] 清單時，最近使用過的成員就會顯示在頂端。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。  
@@ -104,15 +84,13 @@ ms.lasthandoff: 05/24/2017
 ## <a name="automatic-code-generation"></a>自動產生程式碼  
   
 ### <a name="add-using"></a>加入 using  
- 加入 using 的 IntelliSense 作業可讓您專注在自己所撰寫的程式碼上，而不需要將焦點轉移到其他部分的程式碼。  
+ **加入 using** IntelliSense 作業會自動將必要的 `using` 指示詞新增至程式碼檔案。 此功能可讓您專注在自己所撰寫的程式碼上，而不需要將焦點轉移到其他部分的程式碼。  
   
- 若要起始加入 using 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，智慧標籤將會出現在 `XmlTextReader` 最右邊的字元下方，因為它會顯示為無法解析的類型參考。  
+ 若要起始加入 using 作業，請將游標放在無法解析的類型參考上。 例如，當您建立主控台應用程式，然後將 `XmlTextReader` 新增至 `Main` 方法主體時，該行程式碼就會出現紅色波浪線，因為無法解析類型參考。 您可以接著透過 [快速動作] 叫用加入 using。 只有當游標停在未繫結的類型上時，才會顯示 [快速動作]。  
   
- ![新增 using 智慧標籤影像](../ide/media/addusesmart.gif "AddUseSmart")  
-  
- 若要叫用 [加入 using]，您可以從 [IntelliSense] 功能表中的 [解析] 子功能表或操作功能表加以選取，或透過智慧標籤叫用 [加入 using]。 只有當游標位於未繫結類型的上方或旁邊時，才會顯示智慧標籤。  
-  
- ![加入 using，智慧標籤展開的影像](../ide/media/addusesmartexp.gif "AddUseSmartExp")  
+ ![加入 using，快速動作展開的影像](../ide/media/addusing-quickaction.png "AddUsing-QuickAction")  
+
+ 按一下燈泡圖示，然後選擇 [using System.Xml;] 自動新增 using 指示詞。  
   
 ### <a name="organize-usings"></a>組合管理 Using  
  [組合管理 Using]**`extern` 選項會排序並移除**  和 `using` 宣告，但不變更原始程式碼的行為。 不必要且缺乏組織的 `using` 指示詞會使原始程式碼隨著時間而變得繁雜難以閱讀。 [組合管理 Using] 選項可移除未使用的 `using` 指示詞來精簡原始程式碼，並加以排序來改善可讀性。  
@@ -120,37 +98,33 @@ ms.lasthandoff: 05/24/2017
  若要查看 Visual Studio IDE 中的可用選項，請在 [編輯] 功能表上，指向 [IntelliSense]，然後指向 [組合管理 Using]。 IDE 提供下列選項來組合管理和移除 `usings` 指示詞：  
   
 ### <a name="implement-interface"></a>實作介面  
- 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示智慧標籤。 您可利用智慧標籤，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。  
+ 在程式碼編輯器中工作時，IntelliSense 可提供協助您實作[介面](/dotnet/csharp/language-reference/keywords/interface)的選項。 一般來說，若要正確地實作介面，必須為類別中介面的每位成員建立方法宣告。 使用 IntelliSense 會在您於類別宣告中輸入介面名稱後，顯示 [快速動作] 燈泡。 您可利用燈泡，選擇要使用明確或隱含命名的方式進行自動實作介面。 在明確命名的情況下，方法宣告會使用介面的名稱; 而在隱含命名的情況下，方法宣告則不會指出其所屬的介面。 明確命名的介面方法只可透過介面執行個體而不是透過類別執行個體加以存取。 如需詳細資訊，請參閱[明確介面實作](/dotnet/csharp/programming-guide/interfaces/explicit-interface-implementation)。  
   
  實作介面將會產生最少數目的滿足介面之方法虛設常式。 如果基礎類別實作部分的介面，則不會重新產生這些虛設常式。  
   
 ### <a name="implement-abstract-base-class"></a>實作抽象基底類別  
- 在使用 [程式碼編輯器] 時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示智慧標籤。 智慧標籤提供您自動實作基底類別方法的選項。  
+ 在使用 [程式碼編輯器] 時，IntelliSense 提供您可自動實作抽象基底類別成員的選項。 一般而言，實作抽象基底類別的成員需要針對衍生類別中抽象基底類別的每個方法建立新的方法定義。 使用 IntelliSense，在類別宣告中輸入抽象基底類別的名稱後，就會顯示 [快速動作] 燈泡。 燈泡提供您自動實作基底類別方法的選項。  
   
  [實作抽象基底類別] 功能所產生的方法虛設常式是由定義在 MethodStub.snippet 檔案中的程式碼片段所模式化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)。  
-  
-<a name="generate-from-usage></a>  
   
 ### <a name="generate-from-usage"></a>使用時產生  
  [使用時產生] 功能可讓您直接使用類別和成員，而不需要先行定義。 您可以為任何想要使用但尚未定義的類別、建構函式、方法、屬性、欄位或列舉，產生虛設常式。 您可以產生新類型和成員，不用離開目前在程式碼中的位置。 這可將對工作流程的干擾降至最低。  
   
- 每個未定義的識別碼下都會顯示波浪底線。 當您將滑鼠指標放在識別碼時，工具提示中就會出現錯誤訊息。  
+ 每個未定義的識別碼下都會顯示紅色波浪底線。 當您將滑鼠指標放在識別碼時，工具提示中就會出現錯誤訊息。 若要顯示適當的選項，您可以使用下列其中一項程序：    
   
- 若要顯示適當的選項，您可以使用下列其中一項程序：  
+-   按一下未定義的識別碼。 [快速動作] 燈泡會出現在識別碼下。 按一下燈泡。  
   
--   按一下未定義的識別碼。 最左邊的字元下會出現短底線。 將滑鼠指標停留在短底線，就會顯示智慧標籤 (圖示)。 按一下智慧標籤。  
+-   按一下未定義的識別碼，再按 **Ctrl+**。 (Ctrl + 句號)。  
   
--   按一下未定義的識別碼，然後再按 CTRL+. (句點)。  
+-   以滑鼠右鍵按一下未定義的識別碼，然後按一下 [快速動作及重構]。  
   
--   以滑鼠右鍵按一下未定義的識別碼，然後按一下 [產生]。  
+顯示的選項包括：  
   
- 顯示的選項包括：  
+-   **產生屬性**  
   
--   **產生屬性虛設常式**  
+-   **產生欄位**  
   
--   **產生欄位虛設常式**  
-  
--   **產生方法虛設常式**  
+-   **產生方法**  
   
 -   **產生類別**  
   

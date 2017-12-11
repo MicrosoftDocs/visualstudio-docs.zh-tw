@@ -1,41 +1,25 @@
 ---
 title: "快速鍵 (Help Reviewer) | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/02/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
-- shortcut keys [Help Viewer 2.0]
-- Help Viewer 2.0, shortcut keys
+- shortcut keys [Help Viewer]
+- Help Viewer, shortcut keys
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
-caps.latest.revision: 22
+caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 3d5a655a82180b7ffc82cf279b28750f55f5d4c8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>快速鍵 (說明檢視器)
 您可以使用下表的快速鍵巡覽 Microsoft Help Viewer：  
@@ -132,3 +116,6 @@ ms.lasthandoff: 05/13/2017
 |向上鍵和向下鍵|捲動 [暫止的變更] 清單。|  
 |空格|將項目從 [暫止的變更] 清單移除。|  
 |Alt + T|套用所有暫止的變更。|
+
+## <a name="see-also"></a>請參閱
+[說明檢視器的協助工具功能](../ide/accessibility-features-of-the-help-viewer.md)

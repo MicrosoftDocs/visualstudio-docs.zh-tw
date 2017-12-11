@@ -1,48 +1,31 @@
 ---
-title: "需要 Proxy 授權 | Microsoft Docs"
+title: "需要 Proxy 授權錯誤 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 09/22/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: c2d24ae1-9902-460e-b72a-0299eed9ee82
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
+ms.openlocfilehash: a7bb65f07f1e9cf4b6a292e434f8d71a98cc4f3a
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 63aad78bdc7df685ca3a73ec16a9cbc87b78151f
-ms.openlocfilehash: 537928b9ce99cbda9873500780719353d34fcbe1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/14/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="proxy-authorization-required"></a>所需的 Proxy 授權
-通常當使用者透過 Proxy 伺服器連接到 Visual Studio Online，而 Proxy 伺服器封鎖呼叫時，就會發生這個錯誤。 Visual Studio Online 可用來讓使用者保持登入至 IDE。  
+通常當使用者透過 Proxy 伺服器連線到網際網路，而 Proxy 伺服器封鎖 Visual Studio 對某些網路資源所做的呼叫時，就會發生這個錯誤。    
   
 ## <a name="to-correct-this-error"></a>更正這個錯誤  
   
 -   重新啟動 Visual Studio。 應該會出現 [Proxy 驗證] 對話方塊。 在對話方塊中輸入您的認證。  
   
--   如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您必須將下列清單列為允許清單，以解除封鎖 Visual Studio 中的所有登入情節：  
+-   如果上述步驟無法解決問題，這可能是因為您的 Proxy 伺服器並未提示輸入 http://go.microsoft.com 位址的認證，而是提示輸入 *.visualStudio.com 位址的認證。 對於這些伺服器，您必須將下列 URL 清單列為允許清單，以解除封鎖 Visual Studio 中的所有登入情節：  
   
     -   * windows.net  
   
@@ -56,11 +39,11 @@ ms.lasthandoff: 07/14/2017
   
 -   否則您可以從允許清單中移除 http://go.microsoft.com，這樣 Proxy 驗證對話方塊在 Visual Studio 重新啟動時，就會同時為 http://go.microsoft.com 位址及伺服器端點而顯示。  
   
--   或  
+    或  
   
 -   如果您想要將您的預設認證用於 Proxy，您可以執行下列作業：  
   
-    1.  在 **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (或 **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**) 尋找 devenv.exe.config (devenv.exe 組態檔)。  
+    1.  在 **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 或 **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** 中尋找 **devenv.exe.config** (devenv.exe 設定檔)。  
   
     2.  在組態檔中，找出 `<system.net>` 區塊，並加入下列程式碼：  
   
@@ -71,8 +54,11 @@ ms.lasthandoff: 07/14/2017
   
         ```  
   
-         您必須在 `proxyaddress="<http://<yourproxy:port#>`中插入您的網路的正確 Proxy 位址。  
+        您必須在 `proxyaddress="<http://<yourproxy:port#>`中插入您的網路的正確 Proxy 位址。  
   
--   或  
+    或  
   
--   您也可以遵循 [這篇文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) 中的指令，加入允許您使用 Proxy 的程式碼。
+-   您也可以遵循 [這篇文章](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) 中的指令，加入允許您使用 Proxy 的程式碼。  
+
+## <a name="see-also"></a>請參閱
+[連線的環境](../connected-environment.md)  

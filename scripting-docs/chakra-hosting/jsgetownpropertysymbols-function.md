@@ -1,23 +1,27 @@
 ---
 title: "JsGetOwnPropertySymbols 函式 | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.tgt_pltfrm: 
+ms.topic: reference
 ms.assetid: 57c431e3-de0b-4ed0-b750-87a86448daff
-caps.latest.revision: 2
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 2
+caps.latest.revision: "2"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 5528acf52e16aa7b8896f3a69cc23465e23cb2b4
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# JsGetOwnPropertySymbols 函式
+# <a name="jsgetownpropertysymbols-function"></a>JsGetOwnPropertySymbols 函式
 取得物件的所有符號屬性清單。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 STDAPI_(JsErrorCode) JsGetOwnPropertySymbols(  
@@ -26,23 +30,23 @@ STDAPI_(JsErrorCode) JsGetOwnPropertySymbols(
 );  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `object`  
  要從中取得屬性符號的物件。  
   
  `propertySymbols`  
  屬性符號的陣列。  
   
-## 傳回值  
+## <a name="return-value"></a>傳回值  
  如果作業成功，則為 `JsNoError` 碼，否則為失敗碼。  
   
-## 備註  
+## <a name="remarks"></a>備註  
  需要使用中指令碼內容。  
   
  只有邊緣模式才支援這個 API。  
   
-## 需求  
- **標頭：**jsrt.h  
+## <a name="requirements"></a>需求  
+ **標頭：** jsrt.h  
   
-## 請參閱  
- [參考 \(JavaScript 執行階段\)](../chakra-hosting/reference-javascript-runtime.md)
+## <a name="see-also"></a>另請參閱  
+ [參考資料 (JavaScript 執行階段)](../chakra-hosting/reference-javascript-runtime.md)

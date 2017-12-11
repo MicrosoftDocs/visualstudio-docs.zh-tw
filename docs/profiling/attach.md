@@ -1,82 +1,83 @@
 ---
-title: "附加 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+title: Attach | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 79614283-6733-4592-a53a-d428052271ad
-caps.latest.revision: 12
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: cbba99fd39bff8364e7853cd8d0f73f0e567e1d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 附加
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-VSPerfCmd.exe **Attach** 選項會開始進行處理序 ID \(PID\) 所指定之執行中處理序的樣本程式碼剖析。  
+# <a name="attach"></a>附加
+VSPerfCmd.exe **Attach** 選項會開始處理序識別碼 (PID) 所指定之執行中處理序的範例分析。  
   
- 若要使用 **Attach** 選項，您必須在 Start 選項中指定 **Sample** 方法。  
+ 若要使用 **Attach** 選項，您必須在 Start 選項中指定 **Sample** 選項。  
   
 > [!NOTE]
->  如果 **Start** 選項和 **Crosssession** 選項一起指定，則對 **VSPerfCmd \/Attach** 或 **VSPerfCmd \/Detach** 的任何呼叫也必須指定 **Crosssession**。  
+>  如果指定 **Start** 選項和 **Crosssession** 選項，則任何 **VSPerfCmd /Attach** 或 **VSPerfCmd /Detach** 呼叫也必須指定 **Crosssession**。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 VSPerfCmd.exe /Attach:ProcessID [Options]  
 ```  
   
-#### 參數  
+#### <a name="parameters"></a>參數  
  `ProcessID`  
- 執行中處理序的處理序 ID \(PID\)。  執行中處理序的 PID 會列在 \[Windows 工作管理員\] 的 \[處理程序\] 索引標籤上。  
+ 執行中處理序的處理序識別碼 (PID)。 執行中處理序的 PID 會列在 Windows 工作管理員的 [處理序] 索引標籤上。  
   
-## 有效的選項  
- 下列 **VSPerfCmd** 選項可以在單一命令列中搭配 **Attach** 選項使用。  
+## <a name="valid-options"></a>有效選項  
+ 在單一命令列上，下列 **VSPerfCmd** 選項可以與 **Attach** 選項一起使用。  
   
  **Crosssession**  
- 啟用登入工作階段以外工作階段的程式碼剖析應用程式。  如果 **Start** 選項與 **Crosssession** 選項一起指定，則為必要項。  
+ 在登入工作階段以外的工作階段中，啟用分析應用程式。 如果指定 **Start** 選項和 **Crosssession** 選項，則為必要項目。  
   
  **Start:** `Method`  
- 初始化命令列程式碼剖析工具工作階段，並設定指定的程式碼剖析方法。  
+ 初始化命令列分析工具工作階段，並設定指定的分析方法。  
   
  **TargetCLR**  
- 當有多個 .NET Framework Common Language Runtime \(CLR\) 版本載入到程式碼剖析工作階段時，指定要進行程式碼剖析的版本。  根據預設，會對第一個載入的版本進行程式碼剖析。  
+ 指定要在分析工作階段中載入多個版本時分析的 .NET Framework Common Language Runtime (CLR) 版本。 預設會分析第一個載入的版本。  
   
  **GlobalOn GlobalOff**  
- 繼續 \(**GlobalOn**\) 或暫停 \(**GlobalOff**\) 程式碼剖析，但是不會結束程式碼剖析工作階段。  
+ 繼續 (**GlobalOn**) 或暫停 (**GlobalOff**) 分析，但未結束分析工作階段。  
   
  **ProcessOn:** `PID` **ProcessOff:** `PID`  
- 繼續 \(**ProcessOn**\) 或暫停 \(**ProcessOff**\) 指定之處理序的程式碼剖析。  
+ 繼續 (**ProcessOn**) 或暫停 (**ProcessOff**) 所指定處理序的分析。  
   
-## 間隔選項  
- 下列其中一個取樣間隔選項可以在 Attach 命令列上指定。  預設的取樣間隔為 10,000,000 次處理器時脈週期。  
+## <a name="interval-options"></a>間隔選項  
+ 下列其中一個取樣間隔選項可以指定於 Attach 命令列上。 預設取樣間隔為 10,000,000 個處理器時脈週期。  
   
- **Timer**\[**:**`Cycles`\]**PF**\[**:**`Events`\]**Sys**\[**:**Events\]**Counter**\[**:**`Name`,`Reload`,`FriendlyName`\]  
+ **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[**:**Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`]  
  指定取樣間隔的數目和類型。  
   
--   **Timer** \- 每隔 `Cycles` 次處理器時脈週期時取樣。  如果未指定 `Cycles`，則會使用 10,000,000 次週期。  
+-   **Timer** - 每 `Cycles` 個處理器時脈週期取樣一次。 如果未指定 `Cycles`，會使用 10,000,000 個週期。  
   
--   **PF** \- 每隔 `Events` 個分頁錯誤時取樣。  如果未指定 `Events`，則會使用 10 個分頁錯誤。  
+-   **PF** - 每 `Events` 個分頁錯誤取樣一次。 如果未指定 `Events`，則會使用 10 個分頁錯誤。  
   
--   **Sys** \- 每隔 `Events` 次呼叫作業系統時取樣。  如果未指定 `Events`，則會使用 10 次系統呼叫。  
+-   **Sys** - 對作業系統每呼叫 `Events` 次取樣一次。 如果未指定 `Events`，則會使用 10 次系統呼叫。  
   
--   **Counter** \- 每隔 `Name` 指定之 CPU 效能計數器 `Reload` 次時取樣。  或者，`FriendlyName` 可以指定一個字串，做為程式碼剖析工具報告的資料行標題。  
+-   **Counter** - `Name` 所指定的 CPU 效能計數器每 `Reload` 個數目就取樣一次。 選擇性，`FriendlyName` 可以指定要作為分析工具報表中資料行標題的字串。  
   
-## 範例  
- 這個範例示範如何附加至處理序 ID 為 12345 的執行中應用程式執行個體。  
+## <a name="example"></a>範例  
+ 此範例示範如何附加至處理序識別碼為 12345 的執行中應用程式執行個體。  
   
 ```  
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp  
 VSPerfCmd.exe /Attach:12345  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
- [為 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
+ [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [對服務進行程式碼剖析](../profiling/command-line-profiling-of-services.md)

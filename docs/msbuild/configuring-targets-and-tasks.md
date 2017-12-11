@@ -1,34 +1,35 @@
 ---
 title: "設定目標和工作 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
 ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
-caps.latest.revision: 6
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 6
+caps.latest.revision: "6"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: d86802493e07bfd865ef0a737acae94dde95bf8b
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 設定目標和工作
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-您可以設定MSBuild 目標和工作以跨處理序執行，如此一來你就能把目標設為你現在沒在運行的內文。  例如，在開發電腦上執行 64 位元作業系統的 .NET Framework 4.5 時，您能以 32 位元 .NET Framework 2.0 應用程式為建立目標。  您也可以使用裝有 .NET Framework 4或更早版本的目標電腦。  32\- 或者 64\- 位元和特定版本的 .NET Framework 的組合被稱為 *目標的內容*。  
+# <a name="configuring-targets-and-tasks"></a>設定目標和工作
+您可以設定 MSBuild 目標和工作以跨處理序方式隨 MSBuild 一起執行，如此您就能以與目前執行的內容不同的內容做為目標。 例如，您可以在開發電腦以 64 位元 .NET Framework 4.5 作業系統執行時，以 32 位元 .NET Framework 2.0 應用程式為目標。 您也可以將執行 .NET Framework 4 或以前版本的電腦做為目標。 32 或 64 位元與特定 .NET Framework 版本的組合稱為「目標內容」。  
   
-## 安裝  
- .NET Framework 4.5 和 4.5.1 取代 Common Language Runtime \(CLR\)、目標、.NET Framework 4 的工作和工具，而不用重新命名。  .NET Framework 4.5.1 安裝為 [!INCLUDE[vs_dev12](../data-tools/includes/vs_dev12_md.md)]的一部份。  
+## <a name="installation"></a>安裝  
+ .NET Framework 4.5 和 4.5.1 會取代 .NET Framework 4 的通用語言執行平台 (CLR)、目標、工作和工具，而不會將它們重新命名。 .NET Framework 4.5.1 會安裝為 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 的一部分。  
   
- 如果您想要個別安裝 MSBuild 與 Visual Studio，您可以從[MSBuild 下載](http://go.microsoft.com/fwlink/?LinkId=309745)中下載安裝套件。  您也必須安裝您希望也使用的 .NET Framework 版本。  
+ 如果您想要將 MSBuild 與 Visual Studio 分開安裝，可以從 [MSBuild 下載](http://go.microsoft.com/fwlink/?LinkId=309745)下載安裝套件。 另外，您必須安裝要同時使用的 .NET Framework 版本。  
   
-## 目標和工作  
- MSBuild 執行一些流程之外的組建工作以鎖定一組較大的內容。例如， 32 位元 MSBuild 可能在 64 位元處理序執行組建工作以鎖定 64 位元電腦。  這是提供的 `UsingTask` 和 `Task` 參數的控制項。  以 .NET Framework 4.5 安裝設定這些引數和參數的目標，並不需要變更建立對各種目標內容的應用程式。  
+## <a name="targets-and-tasks"></a>目標和工作  
+ MSBuild 會以跨處理序的方式執行一些建置工作，以鎖定範圍更廣的內容。  例如，32 位元 MSBuild 可在 64 位元處理序中執行建置工作，以鎖定 64 位元電腦。 這是由 `UsingTask` 引數和 `Task` 參數所控制。 .NET Framework 4.5 所安裝的目標會設定這些引數和參數，而且不需進行變更就能為各種目標內容建置應用程式。  
   
- 如果您要建立自己的目標內容，您必須適當地設定這些引數和參數。  如果需要參考範例，請看 .NET Framework 4.5 Microsoft.Common.targets 檔案和 Microsoft.Common.Tasks 檔案。如需如何建立可以與多個目標內容一起使用的相關資訊、如何修改現有的工作的自訂工作，請參閱 [如何：設定目標和工作](../msbuild/how-to-configure-targets-and-tasks.md)。  
+ 如果您要建立自己的目標內容，則必須適當設定這些引數和參數。 如需範例，請查看 .NET Framework 4.5 Microsoft.Common.targets 檔案和 Microsoft.Common.Tasks 檔案。  如需如何建立可處理多個目標內容的自訂工作或如何修改現有工作的資訊，請參閱[如何：設定目標和工作](../msbuild/how-to-configure-targets-and-tasks.md)。  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

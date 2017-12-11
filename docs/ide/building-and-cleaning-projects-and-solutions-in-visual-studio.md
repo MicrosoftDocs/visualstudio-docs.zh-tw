@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -23,37 +22,21 @@ helpviewer_keywords:
 - solution build configurations, build order
 - builds [Visual Studio], preparing
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
-caps.latest.revision: 35
-author: kempb
-ms.author: kempb
+caps.latest.revision: "35"
+author: gewarren
+ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ea9179ad37514ffad4876177b05150eecc22def
-ms.openlocfilehash: f43b470f07e8b90c62d17c7905ad458a22d41ff1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/24/2017
-
+ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)。  
   
 > [!NOTE]
->  您 Visual Studio 版本中的 UI 可能不同於本主題所述，視您目前使用的設定而定。 若要變更設定，請開啟 [工具] 功能表，然後選擇 [匯入和匯出設定]。 如需詳細資訊，請參閱[將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)。  
+> 您 Visual Studio 版本中的 UI 可能不同於本主題所述，視您目前使用的設定而定。 若要變更您的設定 (例如變更為 [一般] 或 [Visual C++] 設定)，請選擇 [工具]、[匯入和匯出設定]，然後選擇 [重設所有設定]。
   
 ### <a name="to-build-rebuild-or-clean-an-entire-solution"></a>建置、重建或清除整個方案  
   
@@ -96,7 +79,7 @@ ms.lasthandoff: 05/24/2017
   
     -   在功能表列上，選擇 [建置]、[建置方案]\ (CTRL+SHIFT+B)。  
   
-     如果清除此核取方塊，當您執行其中一個上述命令時，會建置所有專案、其相依性及方案檔。 根據預設，會清除此核取方塊。  
+    如果清除此核取方塊，當您執行其中一個上述命令時，會建置所有專案、其相依性及方案檔。 根據預設，會清除此核取方塊。  
   
 ### <a name="to-build-only-the-selected-visual-c-project"></a>只建置選取的 Visual C++ 專案  
   
@@ -110,13 +93,13 @@ ms.lasthandoff: 05/24/2017
   
     -   僅連結 <專案名稱>  
   
-     這些命令只適用於您選擇的 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，而不建置、重建、清除或連結任何專案相依性或方案檔。 根據您的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本，[僅限專案] 子功能表可能包含更多命令。  
+    這些命令只適用於您選擇的 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，而不建置、重建、清除或連結任何專案相依性或方案檔。 根據您的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 版本，[僅限專案] 子功能表可能包含更多命令。  
   
 ### <a name="to-compile-multiple-c-project-items"></a>編譯多個 C++ 專案項目  
   
 1.  在方案總管中，選擇具有可編譯動作的多個檔案、開啟這些檔案之一的捷徑功能表，然後選擇 [編譯]。  
   
-     如果檔案具有相依性，就會將檔案依照相依性順序編譯。 如果檔案需要先行編譯標頭檔，但在您進行編譯時無法使用，則編譯作業會失敗。 編譯作業會使用目前的作用中方案組態。  
+    如果檔案具有相依性，就會將檔案依照相依性順序編譯。 如果檔案需要先行編譯標頭檔，但在您進行編譯時無法使用，則編譯作業會失敗。 編譯作業會使用目前的作用中方案組態。  
   
 ### <a name="to-stop-a-build"></a>停止建置  
   
@@ -126,12 +109,12 @@ ms.lasthandoff: 05/24/2017
   
     -   選擇 Ctrl + Break 鍵。  
   
-## <a name="see-also"></a>另請參閱  
- [如何：檢閱、儲存和設定建置記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)   
- [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
- [了解組建組態](../ide/understanding-build-configurations.md)   
- [偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
- [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)   
- [Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
- [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)
+## <a name="see-also"></a>請參閱
+[如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)   
+[取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
+[編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
+[了解組建組態](../ide/understanding-build-configurations.md)   
+[偵錯和發行專案組態](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)   
+[C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)   
+[Devenv 命令列參數](../ide/reference/devenv-command-line-switches.md)   
+[專案和方案](../ide/solutions-and-projects-in-visual-studio.md)

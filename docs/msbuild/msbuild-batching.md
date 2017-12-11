@@ -1,37 +1,38 @@
 ---
 title: "MSBuild 批次處理 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-sdk"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "批次處理 [MSBuild]"
-  - "MSBuild, 批次處理"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-sdk
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- batching [MSBuild]
+- MSBuild, batching
 ms.assetid: d35c085b-27b8-49d7-b6f8-8f2f3a0eec38
-caps.latest.revision: 9
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: kempb
+ms.author: kempb
+manager: ghogen
+ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# MSBuild 批次處理
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料將項目清單分割成不同的分類或批次，並且一次執行每一批次的一項目標 \(Target\) 或工作。  
+# <a name="msbuild-batching"></a>MSBuild 批次處理
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後針對每個批次一次執行一個目標或工作。  
   
-## 工作批次處理  
- 工作批次處理可讓您藉由提供將項目清單分割成不同批次，並分別將各批次傳遞至工作的方式簡化專案檔。  這表示即使專案檔可多次執行，也只需要宣告工作及其屬性一次。  
+## <a name="task-batching"></a>工作批次處理  
+ 工作批次處理可讓您將項目清單分割成不同的批次，並分別將各批次傳遞給工作，以簡化專案檔案。 這表示即使工作可能要執行若干次，專案檔也只需要宣告一次工作和其屬性。  
   
- 您可指定讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 利用工作執行批次處理，只要在其中一個工作屬性中使用 %\(*ItemMetaDataName*\) 標記法即可。  下列範例會依據 `Color` 項目中繼資料值將 `Example` 項目清單分割成批次，並分別將各批次傳遞至 `MyTask` 工作。  
+ 您可以在其中一個工作屬性中使用 %(*ItemMetaDataName*) 標記法，以指定要讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 執行工作的批次處理。 下列範例會根據 `Color` 項目中繼資料值，將 `Example` 項目清單分割成批次，並將每個批次個別傳遞給 `MyTask` 工作。  
   
 > [!NOTE]
->  如果您未在工作屬性中的其他位置參考項目清單，或中繼資料名稱可能模稜兩可，可使用 %\(*ItemCollection.ItemMetaDataName*\) 標記法將項目中繼資料值完整限定為用於批次處理。  
+>  如果您不需參考工作屬性中其他位置的項目清單，或中繼資料名稱可能模稜兩可，您可以使用 %(*ItemCollection.ItemMetaDataName*) 標記法，來完整限定要用於批次處理的項目中繼資料值。  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -53,14 +54,14 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- 如需更多特定批次處理的範例，請參閱 [工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)。  
+ 如需更具體的批次處理範例，請參閱[工作批次處理中的項目中繼資料](../msbuild/item-metadata-in-task-batching.md)。  
   
-## 目標批次處理  
- [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在執行目標之前，先檢查目標的輸入和輸出是否為最新的。  如果輸入和輸出都是最新的，便會略過該目標。  如果目標內的工作使用批次處理，則 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 須判斷各批次項目的輸入和輸出是否為最新的。  否則，每次點擊時都會執行目標。  
+## <a name="target-batching"></a>目標批次處理  
+ [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在執行目標之前檢查目標的輸入和輸出是否都為最新狀態。 如果輸入和輸出都是最新的，則會略過目標。 如果在目標內的工作會使用批次處理，[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 需要判斷每個批次項目的輸入和輸出是否都為最新狀態。 否則，每次叫用目標時均會執行。  
   
- 下列範例使用 %\(*ItemMetaDataName*\) 標記法，示範包含 `Outputs` 屬性的 `Target` 項目。  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會將 `Example` 項目清單根據 `Color` 項目中繼資料分別數個批次，並分析每一個批次輸出檔案的時間戳記。  如果某個批次的輸出不是最新的，則會執行該目標。  否則會略過目標。  
+ 下列範例示範包含 `Outputs` 屬性與 %(*ItemMetaDataName*) 標記法的 `Target` 項目。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會根據 `Color` 項目中繼資料，將 `Example` 項目清單分割成批次，並分析每個批次的輸出檔時間戳記。 如果批次的輸出不是最新狀態，則會執行目標。 否則，會略過目標。  
   
-```  
+```xml  
 <Project  
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   
@@ -84,25 +85,25 @@ caps.handback.revision: 9
 </Project>  
 ```  
   
- 如需其他目標批次處理的範例，請參閱 [目標批次處理中的項目中繼資料](../msbuild/item-metadata-in-target-batching.md)。  
+ 如需目標批次處理的其他範例，請參閱[目標批次處理中的項目中繼資料](../msbuild/item-metadata-in-target-batching.md)。  
   
-## 使用中繼資料的屬性函式  
- 批次處理可以由包含中繼資料的屬性函式控制。  例如：  
+## <a name="property-functions-using-metadata"></a>使用中繼資料的屬性函式  
+ 批次處理可由包含中繼資料的屬性函式來控制。 例如：  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
- 會使用 <xref:System.IO.Path.Combine%2A> 合併根資料夾路徑與 Compile 項目路徑。  
+ 會使用 <xref:System.IO.Path.Combine%2A> 來結合根資料夾路徑和編譯項目路徑。  
   
- 屬性函式不可出現在中繼資料值內。  例如：  
+ 屬性函式可能不會出現在中繼資料值內。  例如：  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
- 是不允許的。  
+ 不允許。  
   
  如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
-## 請參閱  
- [ItemMetadata Element \(MSBuild\)](../msbuild/itemmetadata-element-msbuild.md)   
+## <a name="see-also"></a>另請參閱  
+ [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
+ [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

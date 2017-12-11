@@ -1,52 +1,36 @@
 ---
-title: Customize your build | Microsoft Docs
+title: "自訂組建 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/14/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-sdk
+ms.technology: vs-ide-sdk
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: 3ce2d22a82f81db35575275a99d193066068e127
-ms.openlocfilehash: 999b5d081a36d21caa917bce2523cb00a1770754
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/07/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# <a name="customize-your-build"></a>Customize your build
-In versions of MSBuild prior to version 15, if you wanted to provide a new, custom property to projects in your solution, you had to manually add a reference to that property to every project file in the solution. Or, you had to define the property in a .props file and then explicitly import the .props file in every project in the solution, among other things.
+# <a name="customize-your-build"></a>自訂組建
+在版本 15 之前的 MSBuild 版本中，如果您想要將新的自訂屬性提供給方案中的專案，則必須手動將該屬性的參考新增至方案中的每個專案檔。 或者，除此之外，您必須在 .props 檔案中定義屬性，然後明確地匯入方案之每個專案中的 .props 檔案。
 
-However, now you can add a new property to every project in one step by defining it in a single file called Directory.Build.props at the root of your repo. When MSBuild runs, Microsoft.Common.props searches your directory structure for the Directory.Build.props file (and Microsoft.Common.targets looks for Directory.Build.targets). If it finds one, it imports the property. Directory.Build.props is a user-defined file that provides customizations to projects under a directory.
+不過，您現在可以使用一個步驟將新的屬性新增至每個專案，方法是在存放庫根目錄中稱為 Directory.Build.props 的單一檔案中定義它。 執行 MSBuild 時，Microsoft.Common.props 會搜尋您的目錄結構中是否有 Directory.Build.props 檔案 (而且 Microsoft.Common.targets 會尋找 Directory.Build.targets)。 如果找到，則會匯入屬性。 Directory.Build.props 是使用者定義的檔案，可讓您自訂目錄下的專案。
 
-## <a name="directorybuildprops-example"></a>Directory.Build.props example
-For example, if you wanted to enable all of your projects to access the new Roslyn **/deterministic** feature (which is exposed in the Roslyn CoreCompile target by the property `$(Deterministic)`), you could do the following.
+## <a name="directorybuildprops-example"></a>Directory.Build.props 範例
+例如，如果您想要讓所有專案存取新的 Roslyn **/deterministic** 功能 (透過 `$(Deterministic)` 屬性公開於 Roslyn CoreCompile 目標中)，則可以執行下列動作。
 
-1. Create a new file in the root of your repo called Directory.Build.props.
-2. Add the following XML to the file.
+1. 在存放庫根目錄中建立稱為 Directory.Build.props 的新檔案。
+2. 將下列 XML 新增至檔案。
 
   ```xml
   <Project>
@@ -55,10 +39,10 @@ For example, if you wanted to enable all of your projects to access the new Rosl
     </PropertyGroup>
   </Project>
   ```
-3. Run MSBuild. Your project’s existing imports of Microsoft.Common.props and Microsoft.Common.targets find the file and import it.
+3. 執行 MSBuild。 您專案之 Microsoft.Common.props 和 Microsoft.Common.targets 的現有匯入會找到檔案，並將其匯入。
 
-## <a name="search-scope"></a>Search scope
-When searching for a Directory.Build.props file, MSBuild walks the directory structure upwards from your project location ($(MSBuildProjectFullPath)), stopping after it locates a Directory.Build.props file. For example, if your $(MSBuildProjectFullPath) was c:\users\username\code\test\case1, MSBuild would start searching there and then search the directory structure upward until it located a Directory.Build.props file, as in the following directory structure.
+## <a name="search-scope"></a>搜尋範圍
+搜尋 Directory.Build.props 檔案時，MSBuild 會從專案位置 ($(MSBuildProjectFullPath)) 往上逐步瀏覽目錄結構，並在找到 Directory.Build.props 檔案之後停止。 例如，如果您的 $(MSBuildProjectFullPath) 是 c:\users\username\code\test\case1，則 MSBuild 會在該處開始搜尋，然後往上搜尋目錄結構，直到找到下列目錄結構中的 Directory.Build.props 檔案。
 
 ```
 c:\users\username\code\test\case1
@@ -68,17 +52,17 @@ c:\users\username
 c:\users
 c:\
 ```
-The location of the solution file is irrelevant to Directory.Build.props.
+方案檔的位置與 Directory.Build.props 無關。
 
-## <a name="import-order"></a>Import order
+## <a name="import-order"></a>匯入順序
 
-Directory.Build.props is imported very early in Microsoft.Common.props, so properties defined later are unavailable to it. So, avoid referring to properties that are not yet defined (and will thus evaluate to empty).
+在 Microsoft.Common.props 中，會極早匯入 Directory.Build.props，因此它無法使用稍後定義的屬性。 因此，請避免參考尚未定義的屬性 (因此會評估為空的)。
 
-Directory.Build.targets is imported from Microsoft.Common.targets after importing .targets files from NuGet packages. So, it can be used to override properties and targets defined in most of the build logic, but at times it may be necessary to do customizations within the project file after the final import.
+從 NuGet 套件匯入 .targets 檔案之後，會從 Microsoft.Common.targets 匯入 Directory.Build.targets。 因此，它可以用來覆寫大部分組建邏輯中所定義的屬性和目標，但有時可能需要在最後匯入之後於專案檔內執行自訂。
 
-## <a name="use-case-multi-level-merging"></a>Use case: multi-level merging
+## <a name="use-case-multi-level-merging"></a>使用案例：多層級合併
 
-Suppose you have this standard solution structure:
+假設您有這種標準方案結構：
 
 ````
 \
@@ -94,22 +78,21 @@ Suppose you have this standard solution structure:
     \Project2Tests
 ````
 
-It might be desirable to have common properties for all projects `(1)`, common properties for `src` projects `(2-src)`, and common properties for `test` projects `(2-test)`.
+使用者可能需要所有專案 `(1)` 的通用屬性、`src` 專案 `(2-src)` 的通用屬性和 `test` 專案 `(2-test)` 的通用屬性。
 
-For msbuild to correctly merge the "inner" files (`2-src` and `2-test`) with the "outer" file (`1`), you must take into account that once msbuild finds a `Directory.Build.props` file, it stops further scanning. To continue scanning, and merge into the outer file, place this into both inner files:
+若要讓 MSBuild 正確合併「內部」檔案 (`2-src` 和 `2-test`) 與「外部」檔案 (`1`)，您必須注意，一旦 MSBuild 找到 `Directory.Build.props` 檔案，就會停止進一步掃描。 若要繼續掃描並合併至外部檔案，請將此項目放入這兩個內部檔案中：
 
 `<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />`
 
-A summary of msbuild's general approach is as follows:
+MSBuild 的一般方法摘要如下：
 
-- For any given project, msbuild finds the first `Directory.Build.props` upward in the solution structure, merges it with defaults, and stops scanning for more
-- If you want multiple levels to be found and merged, then [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) (shown above) the "outer" file from the "inner" file
-- If the "outer" file does not itself also import something above it, then scanning stops there
-- To control the scanning/merging process, use `$(DirectoryBuildPropsPath)` and `$(ImportDirectoryBuildProps)`
+- 針對任何指定的專案，MSBuild 會在方案結構中向上尋找第一個 `Directory.Build.props`，再將它與預設值合併，然後停止進一步掃描
+- 如果您想要找到多個層級並加以合併，請從「內部」檔案對「外部」檔案進行 [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) 作業 (如上所示)
+- 如果「外部」檔案本身不會在其上匯入任何項目，掃描就會到此停止
+- 若要控制掃描/合併程序，請使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
 
-Or more simply: the first `Directory.Build.props` which doesn't import anything, is where msbuild stops.
+或更簡單的做法：第一個不會匯入任何項目的 `Directory.Build.props`，則為 MSBuild 停止的位置。
 
-## <a name="see-also"></a>See Also  
- [MSBuild Concepts](../msbuild/msbuild-concepts.md)   
- [MSBuild Reference](../msbuild/msbuild-reference.md)   
-
+## <a name="see-also"></a>另請參閱  
+ [MSBuild 概念](../msbuild/msbuild-concepts.md)   
+ [MSBuild 參考](../msbuild/msbuild-reference.md)   

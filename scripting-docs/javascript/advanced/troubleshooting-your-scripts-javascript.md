@@ -1,75 +1,78 @@
 ---
-title: "指令碼疑難排解 (JavaScript) | Microsoft Docs"
-ms.custom: ""
-ms.date: "01/18/2017"
-ms.prod: "windows-client-threshold"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-javascript"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs: 
-  - "JavaScript"
-  - "TypeScript"
-  - "DHTML"
-helpviewer_keywords: 
-  - "自動類型轉換"
-  - "指令碼疑難排解"
+title: "針對指令碼進行疑難排解 (JavaScript) | Microsoft Docs"
+ms.custom: 
+ms.date: 01/18/2017
+ms.prod: windows-client-threshold
+ms.reviewer: 
+ms.suite: 
+ms.technology: devlang-javascript
+ms.tgt_pltfrm: 
+ms.topic: article
+dev_langs:
+- JavaScript
+- TypeScript
+- DHTML
+helpviewer_keywords:
+- automative type conversion
+- troubleshooting scripts
 ms.assetid: 0e0545d9-44e5-4179-befc-99a882c5c672
-caps.latest.revision: 9
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 9
+caps.latest.revision: "9"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: d7e0193e6dc0996d5e2d0d3df7103c7705d29477
+ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/27/2017
 ---
-# 指令碼疑難排解 (JavaScript)
-任何程式語言中都有幾個令人詫異的地方。  例如，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 中 `null` 值的作用就與 C 或 C\+\+ 語言的 `Null` 值不同。  
+# <a name="troubleshooting-your-scripts-javascript"></a>指令碼疑難排解 (JavaScript)
+任何程式設計語言都會有些地方有意外狀況。 例如，[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 中的 `null` 值，其行為與 C 或 C++ 語言中的 `Null` 值不同。  
   
- 這裡列出您在撰寫 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 指令碼時可能遇到的一些疑難問題。  
+ 以下是您在撰寫 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 指令碼時可能遇到的一些問題區域。  
   
-## 語法錯誤  
- 撰寫指令碼時，注意詳細資料是很重要的。  例如，所有字串都必須包含在引號中。  
+## <a name="syntax-errors"></a>語法錯誤  
+ 請務必注意撰寫指令碼時的詳細資料。 例如，字串都必須包含在引號中。  
   
-## 指令碼解譯的順序  
- 網頁瀏覽器在剖析 HTML 時，就會一併解譯 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)]。  如果您是將指令碼放置在文件的 \<HEAD\> 標記內，瀏覽器會在剖析 \<BODY\> 標記前就先解譯指令碼。  如果您的物件是建立於 \<BODY\> 標記內，那麼當瀏覽器剖析 \<HEAD\> 期間，那些物件尚未存在，因此無法由指令碼操作。  
+## <a name="order-of-script-interpretation"></a>指令碼解譯的順序  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 解譯是網頁瀏覽器之 HTML 剖析處理序的一部分。 如果您將指令碼放在文件的 \<HEAD> 標記內，則會在 \<BODY> 標記的任何部分之前進行解譯。 如果您的物件是在 \<BODY> 標記中建立，則它們在剖析 \<HEAD> 時不存在，因此無法透過指令碼操作。  
   
 > [!NOTE]
->  Internet Explorer 的運作方式就是如此，  而 ASP 和 WSH 則有不同的執行模型 \(如同其他的主控處理程序\)。  
+>  這個行為是 Internet Explorer 所特有。 ASP 和 WSH 有不同的執行模型 (與其他主機一樣)。  
   
-## 自動強制型轉  
- [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 是不嚴格規定型別且具備自動強制型轉 \(Coercion\) 功能的語言。  雖然不同型別的值並不相等，但下列範例中的運算式還是會被評估為 **true**。  
+## <a name="automatic-type-coercion"></a>自動類型轉換  
+ [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 是含自動強制型轉的鬆散類型語言。 即使具有不同類型的值不相等，下列範例中的運算式還是會評估為 **true**。  
   
-```javascript  
+```JavaScript  
 "100" == 100;  
 false == 0;  
 ```  
   
- 如果要檢查型別和值是否相同，請使用嚴格等號比較運算子 \(\=\=\=\)。  以下兩個運算式都會評估為 false：  
+ 若要檢查類型和值是否相同，請使用嚴格相等運算子 (===)。 下列兩個都評估為 false：  
   
-```javascript  
+```JavaScript  
 "100" === 100;  
 false === 0;  
 ```  
   
-## 運算子優先順序  
- 在評估運算式期間，[運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)會判斷各種運算的執行時機。  在以下範例中，即使運算式中的減法運算位於乘法運算之前，還是會先執行乘法再執行減法運算。  
+## <a name="operator-precedence"></a>運算子優先順序  
+ [運算子優先順序](../../javascript/operator-subtractprecedence-javascript.md)可決定運算式評估期間執行運算時。 在下列範例中，先執行乘法，再執行減法，即使減法先出現在運算式中也是一樣。  
   
-```javascript  
+```JavaScript  
 theRadius = aPerimeterPoint - theCenterpoint * theCorrectionFactor;  
 ```  
   
-## 將 for...in 迴圈與物件搭配使用  
- 使用 [for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md) 迴圈逐一查看物件的屬性時，您無法預測或控制將物件欄位指派給迴圈計數器變數的順序。  再者，不同的語言實作也可能會有不同的順序。  
+## <a name="using-forin-loops-with-objects"></a>搭配使用 for...in 迴圈與物件  
+ 當您使用 [for...in](../../javascript/reference/for-dot-dot-dot-in-statement-javascript.md) 迴圈逐一查看物件的屬性時，無法預測或控制將物件的欄位指派給迴圈計數器變數的順序。 此外，不同語言實作的順序可能會不同。  
   
-## with 關鍵字  
- [with](../../javascript/reference/with-statement-javascript.md) 陳述式很適合用於存取已存在於指定之物件中的屬性，但是無法用來為物件添加屬性。  若要在物件中建立新屬性，您必須具體指明物件。  
+## <a name="with-keyword"></a>with 關鍵字  
+ [with](../../javascript/reference/with-statement-javascript.md) 陳述式方便用於存取所指定物件中的現有屬性，但不能用來將屬性新增至物件。 若要在物件中建立新屬性，您必須特別參考物件。  
   
-## this 關鍵字  
- 雖然您可以在物件的定義範圍內使用 `this` 關鍵字來參考物件本身，但如果目前執行中的函式不是物件定義，就不能使用 `this` 或類似的關鍵字來參考該函式。  如果要將函式當做方法指派給物件，您就能在函式中使用 `this` 關鍵字來參考該物件。  
+## <a name="this-keyword"></a>this 關鍵字  
+ 雖然您在物件定義內使用 `this` 關鍵字來參考物件本身，但目前執行中函式不是物件定義時，無法使用 `this` 或類似的關鍵字來參考該函式。 如果要將函式以方法形式指派給物件，您可以在函式內使用 `this` 關鍵字來參考物件。  
   
-## 撰寫會在 Internet Explorer 中寫入指令碼的指令碼  
- 如果解譯器遇到 \<\/SCRIPT\> 標記，便會結束目前的指令碼。  若要顯示 "\<\/SCRIPT\>" 本身，必須至少將它重寫為兩個以上的字串，例如 "\<\/SCR" 和 "IPT\>"，這樣就可以在寫出這兩個字串的陳述式中將它們串連在一起。  
+## <a name="writing-a-script-that-writes-a-script-in-internet-explorer"></a>撰寫可在 Internet Explorer 中撰寫程式碼的指令碼  
+ 如果解譯器遇到 \</SCRIPT> 標記，則此標記會終止目前指令碼。 若要顯示 "\</SCRIPT>" 本身，請將這個項目重新撰寫為至少兩個字串 (例如，"\</SCR" 和 "IPT>")，之後您可以在寫出它們的陳述式中將它們串連在一起。  
   
-## Internet Explorer 中的隱含視窗參考  
- 由於一次就能開啟一個以上的視窗，因此所有隱含視窗參考都會指向現有視窗。  至於其他視窗，則必須使用明確的參考。
+## <a name="implicit-window-references-in-internet-explorer"></a>Internet Explorer 中的隱含視窗參考  
+ 因為一次可以開啟多個視窗，所以任何隱含視窗參考都會指向目前視窗。 針對其他視窗，您必須使用明確參考。

@@ -1,52 +1,67 @@
 ---
 title: "Help Content Manager 覆寫設定 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/01/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: c4889d40e9ca53cccf7de384e609eb959d8981f5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫設定
-您可以修改登錄，來變更說明檢視器和 Visual Studio IDE 之說明相關功能的預設行為。  
+您可以變更 Help Viewer 和 Visual Studio IDE 之說明相關功能的預設行為。 某些選項是透過建立 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 檔案以設定各種登錄機碼值來指定。 其他選項則是在登錄中直接設定。
+
+## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>如何使用 .pkgdef 檔案控制 Help Viewer 行為
+
+1. 建立 .pkgdef 檔案並以 `[$RootKey$\Help]` 作為第一行。
+
+2. 分行加入下表中所述的任何或所有登錄機碼值，例如 `“UseOnlineHelp”=dword:00000001`。
+
+3. 將檔案複製到 %ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<版本\>\Common7\IDE\CommonExtensions。
+
+4. 在開發人員命令提示字元中執行 `devenv /updateconfiguration`。
+
+### <a name="registry-key-values"></a>登錄機碼值
+|登錄機碼值|類型|資料|說明|  
+|------------------|----|----|-----------|  
+|NewContentAndUpdateService|字串|\<服務端點的 HTTP URL\>|定義唯一的服務端點|
+|UseOnlineHelp|dword|`0` 表示指定本機說明，`1` 表示指定線上說明|定義線上或離線說明預設值|
+|OnlineBaseUrl|字串|\<服務端點的 HTTP URL\>|定義唯一的 F1 端點|
+|OnlineHelpPreferenceDisabled|dword|`0` 表示啟用線上說明喜好設定選項，`1` 表示停用|停用線上說明喜好設定選項|
+|DisableManageContent|dword|`0` 表示啟用 Help Viewer 中的 [管理內容] 索引標籤，`1` 表示停用|停用 [管理內容] 索引標籤|
+|DisableFirstRunHelpSelection|dword|`0` 表示啟用第一次啟動 Visual Studio 時所設定的說明功能，`1` 表示停用|停用第一次啟動 Visual Studio 時所安裝的內容|
+
+### <a name="example-pkgdef-file-contents"></a>.pkgdef 檔案內容範例
+```
+[$RootKey$\Help]
+“NewContentAndUpdateService”=”https://some.service.endpoint”
+“UseOnlineHelp”=dword:00000001
+“OnlineBaseUrl”=”https://some.service.endpoint”
+“OnlineHelpPreferenceDisabled”=dword:00000000
+“DisableManageContent”=dword:00000000
+“DisableFirstRunHelpSelection”=dword:00000001
+```
+
+## <a name="using-registry-editor-to-change-help-viewer-behavior"></a>使用登錄編輯程式變更 Help Viewer 行為
+您可以在登錄編輯程式中設定登錄機碼值，來控制下列兩種行為。  
   
-|工作|登錄機碼|值和定義|  
-|----------|------------------|--------------------------|  
-|定義唯一的服務端點|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSWinExpress\14.0\Help|NewContentAndUpdateService--*HTTPValueForTheServiceEndpoint*。|  
-|定義線上/離線預設值|HKEY_LOCAL_MACHINE\Software\Microsoft\VSWinExpress\14.0\help|UseOnlineHelp - 輸入 `0` 可指定本機說明，輸入 `1` 可指定線上說明。|  
-|定義唯一的 F1 端點|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSWinExpress\14.0\Help|OnlineBaseUrl--*HTTPValueForTheServiceEndpoint*|  
-|覆寫 BITS 工作優先權|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\Help\v2.2|BITSPriority - 使用下列其中一個值：**前景**、**高**、**正常**或**低**。|  
-|停用線上 (和 IDE Online 選項)|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\VisualStudio\14.0\Help|OnlineHelpPreferenceDisabled - 設為 1 可停用線上說明內容的存取。|  
-|停用管理內容|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\VisualStudio\14.0\Help|ContentManagementDisabled - 設為 1 可停用 Help Viewer 中的 [管理內容] 索引標籤。|  
-|指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.2\Catalogs\VisualStudio11|LocationPath="*ContentStoreNetworkShare*"|  
-|停用第一次啟動 Visual Studio 功能時所安裝的內容。|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\VisualStudio\14.0\Help|DisableFirstRunHelpSelection - 設為 1 可停用第一次啟動 Visual Studio 時所設定的說明功能。|  
+|工作|登錄機碼|值|資料|  
+|----------|-----|------|----|
+|覆寫 BITS 工作優先權|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\Help\v2.3|BITSPriority|**前景**、**高**、**一般**或**低**|
+|指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
   
-## <a name="see-also"></a>另請參閱  
- [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)
+## <a name="see-also"></a>請參閱
+[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)  
+[Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)  
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
+[使用 .pkgdef 檔案修改 Isolated Shell](../extensibility/shell/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)

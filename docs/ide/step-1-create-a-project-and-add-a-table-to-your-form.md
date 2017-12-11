@@ -4,35 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-caps.latest.revision: 19
-author: kempb
-ms.author: kempb
+caps.latest.revision: "19"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: a112e67966ddf76e6bde53153828c72dbf5b478b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 3f5d33b4a8362340c0716242cba7c9aefaf1eab3
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表加入至表單
 建立配對遊戲的第一個步驟就是建立專案並將資料表加入至您的表單。 資料表可協助依 4x4 格線對齊圖示。 您也可以設定多個屬性來強化遊戲面板的外觀。  
@@ -100,9 +84,9 @@ ms.lasthandoff: 05/13/2017
     > [!NOTE]
     >  如果您貼上的次數太多，則 IDE 會將新資料列加入至 TableLayoutPanel，讓它有位置可以加入新的 Label 控制項。 您可以將它復原。 若要移除新的儲存格，請選擇 Ctrl+Z 鍵，或依序選擇功能表列上的 [編輯] 和 [復原]。  
   
-     現在您的表單已配置完成。 其外觀應該如下列圖片。  
+     現在您的表單已配置完成。其外觀應該如下列圖片。  
   
-     ![初始配對遊戲表單](~/ide/media/express_tut4step1.png "Express_Tut4Step1")  
+     ![初始配對遊戲表單](../ide/media/express_tut4step1.png "Express_Tut4Step1")  
 初始配對遊戲表單  
   
 ### <a name="to-continue-or-review"></a>繼續或檢視  

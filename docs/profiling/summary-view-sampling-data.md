@@ -1,57 +1,58 @@
 ---
-title: "摘要檢視 - 分析工具：取樣資料 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "取樣分析方法, 摘要檢視"
-  - "摘要檢視"
+title: "摘要檢視 - 取樣資料 | Microsoft Docs"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- sampling profiling method, Summary view
+- Summary view
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
-caps.latest.revision: 13
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 13
+caps.latest.revision: "13"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bb10ac11fc49ce4ca6137e9749e802563de2a0e5
+ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/11/2017
 ---
-# 摘要檢視 - 分析工具：取樣資料
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-\[摘要\] 檢視顯示執行程式碼剖析時，高度耗費效能之函式的相關資訊。  如需詳細資訊，包括通知連結和報表清單的說明，請參閱[摘要檢視](../profiling/summary-view.md)。  
+# <a name="summary-view---sampling-data"></a>摘要檢視 - 取樣資料
+[摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
   
 > [!NOTE]
->  在 Windows 8 中的增強的安全性功能和 Windows Server 2012 要求 Visual Studio 分析工具會收集這些平台之資料的方式有重大的變更。  Windows 存放區應用程式也需要新的技術。  請參閱 [剖析 Windows 8 和 Windows Server 2012 應用程式](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-## 時間表圖形  
- \[摘要\] 檢視中的時間表圖形會顯示程式碼剖析期間，程式碼剖析的應用程式使用處理器 \(CPU\) 的百分比。  您可以使用時間表圖形，將檢視篩選至選取的時間範圍。  如需詳細資訊，請參閱[如何：從摘要時間表篩選報表檢視](../Topic/How%20to:%20Filter%20Report%20Views%20from%20the%20Summary%20Timeline.md)。  
+## <a name="timeline-graph"></a>時間軸圖形  
+ [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的處理器 (CPU) 使用率百分比。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
   
-## 最忙碌路徑  
- \[**最忙碌路徑**\] 會顯示收集最多樣本的執行路徑。  您可以按一下函式，顯示函式的 \[函式詳細資料\] 檢視。  若要顯示函式的其他檢視，請以滑鼠右鍵按一下該函式，然後按一下清單中的檢視。  
+## <a name="hot-path"></a>最忙碌路徑  
+ 「最忙碌路徑」顯示收集到最多樣本的執行路徑。 您可以按一下函式來顯示該函式的 [函式詳細資料] 檢視。 若要顯示該函式的其他檢視，以滑鼠右鍵按一下函式，然後按一下清單中的檢視。  
   
- \[**最忙碌路徑**\] 包括每個函式的下列資料：  
-  
-|資料行|描述|  
-|---------|--------|  
-|**名稱**|函式的名稱。|  
-|**內含樣本 %**|此函式或此函式呼叫的函式執行時，發生之所有樣本的百分比。|  
-|**專有樣本 %**|函式在函式主體中執行程式碼時，發生之所有樣本的百分比。  此函式所呼叫函式中收集的樣本不包括在內。|  
-  
-## 執行最多個別工作的函式  
- \[**執行最多個別工作的函式**\] 清單會顯示在執行程式碼剖析時，擁有最多專有樣本的函式。  收集樣本時，如果函式正在執行自己的程式碼，便會指派專有樣本給該函式。  收集樣本時，如果函式正在呼叫另一個函式，則不會指派專有樣本給該函式。  大量的專有樣本數目，表示花費在函式本身的時間相當長。  
-  
- 您可以按一下函式，顯示函式的 \[函式詳細資料\] 檢視。  若要顯示函式的其他檢視，請以滑鼠右鍵按一下該函式，然後按一下清單中的檢視。  
-  
- \[**執行最多個別工作的函式**\] 包括每個函式的下列資料：  
+ [最忙碌路徑] 的每個函式都包含下列資料︰  
   
 |資料行|描述|  
-|---------|--------|  
-|**名稱**|函式的名稱。|  
-|**專有樣本 %**|程式碼剖析期間，函式在其函式主體中執行程式碼時收集之所有樣本的百分比。  此百分比不包括此函式所呼叫的函式執行時收集的樣本。|  
+|------------|-----------------|  
+|**Name**|函式的名稱。|  
+|**內含樣本 %**|此函式或由此函式呼叫的函式執行時發生的所有樣本百分比。|  
+|**專有樣本 %**|函式在執行其函式主體中的程式碼時發生的所有樣本百分比。 不包含在此函式所呼叫的函式中收集到的樣本。|  
   
-## 請參閱  
+## <a name="functions-doing-most-individual-work"></a>執行最多個別工作的函式  
+ [執行最多個別工作的函式] 清單會顯示在程式碼剖析執行時具有最多專有樣本數的函式。 如果收集到樣本時，函式正在執行自己的程式碼，便會將專有樣本指派給該函數。 如果收集到樣本時，函式正在呼叫另一個函式，則不會將專有樣本指派給該函數。 有大量專有樣本表示花費很長時間在該函式本身。  
+  
+ 您可以按一下函式來顯示該函式的 [函式詳細資料] 檢視。 若要顯示該函式的其他檢視，以滑鼠右鍵按一下函式，然後按一下清單中的檢視。  
+  
+ [執行最多個別工作的函式] 的每個函式都包含下列資料︰  
+  
+|資料行|描述|  
+|------------|-----------------|  
+|**Name**|函式的名稱。|  
+|**專有樣本 %**|當函式正在執行其函式主體中的程式碼時，在程式碼剖析執行時收集到的所有樣本百分比。 不包括此函式所呼叫的函式正在執行時所收集到的樣本百分比。|  
+  
+## <a name="see-also"></a>另請參閱  
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)

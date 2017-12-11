@@ -1,19 +1,17 @@
 ---
-title: "疑難排解"
+title: "疑難排解 | Microsoft Docs"
 description: 
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: CE860D79-E29E-4B93-B094-BE74B35FC1C2
+ms.openlocfilehash: 4e483548e916bf00b07c472b18adac8504b6e967
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a820423704b6f656b55b7e33f15d1c7880d2e27d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="troubleshooting"></a>疑難排解
 
 ## <a name="viewing-logs-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中檢視記錄

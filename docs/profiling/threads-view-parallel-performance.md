@@ -1,23 +1,24 @@
 ---
 title: "執行緒檢視 (平行處理效能) | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-debug"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-f1_keywords: 
-  - "vs.performance.view.threadblocking"
-helpviewer_keywords: 
-  - "並行視覺化檢視，執行緒檢視 (平行處理效能)"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-debug
+ms.tgt_pltfrm: 
+ms.topic: article
+f1_keywords: vs.performance.view.threadblocking
+helpviewer_keywords: Concurrency Visualizer, Threads View (Parallel Performance)
 ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
-caps.latest.revision: 21
-author: "mikejo5000"
-ms.author: "mikejo"
-manager: "ghogen"
-caps.handback.revision: 21
+caps.latest.revision: "21"
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 執行緒檢視是並行視覺化檢視中最詳細且功能豐富的檢視。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
@@ -66,14 +67,14 @@ caps.handback.revision: 21
   
  下圖是執行緒檢視：  
   
- ![執行緒檢視](~/profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
+ ![執行緒檢視](../profiling/media/threadsviewnarrowing.png "ThreadsViewNarrowing")  
 執行緒檢視  
   
  一開始會依照執行緒建立的順序排列，因此第一個是主應用程式。 您可以使用檢視左上角的排序選項，根據另一準則來排序執行緒 (例如，依據最常執行的工作)。  
   
  您可以在左邊資料行中選取執行緒的名稱，然後選擇工具列上的 [隱藏選取的執行緒] 按鈕，來隱藏未在執行工作的執行緒。 建議您隱藏完全遭到封鎖的執行緒，因為其統計資料無關緊要，並會塞滿報表。  
   
- 若要識別要隱藏的其他執行緒，請在作用中圖例中，選擇 [設定檔報告] 索引標籤上的 [個別執行緒摘要] 報表。 這會顯示執行解析圖形，顯示目前選取的時間間隔內的執行緒狀態。 在一些縮放層級，可能不會顯示某些執行緒。 發生這種情況時，會在右邊顯示省略符號。  
+ 若要識別要隱藏的其他執行緒，請在作用中圖例中，選擇 [設定檔報告] 索引標籤上的 [個別執行緒摘要] 報表。這會顯示執行解析圖形，顯示目前選取的時間間隔內的執行緒狀態。 在一些縮放層級，可能不會顯示某些執行緒。 發生這種情況時，會在右邊顯示省略符號。  
   
  當您選取一段時間間隔和其中的一些執行緒後，就可以開始進行效能分析。  
   
@@ -91,7 +92,7 @@ caps.handback.revision: 21
 ### <a name="thread-execution-details"></a>執行緒執行詳細資料  
  在執行緒的時間軸圖形中，當執行緒正在執行程式碼時，會顯示綠色區段。 您可以取得有關執行區段的詳細資訊。  
   
- 當您選取執行區段中的某點時，並行視覺化檢視會在相關的呼叫堆疊上尋找該時間點，然後在執行區段中選取的那點上方顯示黑色插入號，並在 [目前的堆疊] 索引標籤上顯示本身的呼叫堆疊。 您可以在執行區段上選取多個點。  
+ 當您選取執行區段中的某點時，並行視覺化檢視會在相關的呼叫堆疊上尋找該時間點，然後在執行區段中選取的那點上方顯示黑色插入號，並在 [目前的堆疊] 索引標籤上顯示本身的呼叫堆疊。您可以在執行區段上選取多個點。  
   
 > [!NOTE]
 >  並行視覺化檢視可能無法解析執行區段上的選取範圍。 通常，當區段的持續時間少於一毫秒時，才會發生這種情況。  
@@ -148,8 +149,3 @@ caps.handback.revision: 21
   
 ## <a name="see-also"></a>另請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)
-
-
-<!--HONumber=Feb17_HO4-->
-
-

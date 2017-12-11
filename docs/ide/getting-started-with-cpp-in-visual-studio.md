@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
 ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
-caps.latest.revision: 18
-author: kempb
-ms.author: kempb
+caps.latest.revision: "18"
+author: TerryGLee
+ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: 65b94b58da1e06febb1c189ddff85f792fef1737
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 48f2bb4e61ca6a4f9a9464a6b67a3218b418c8ab
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 完成這個逐步解說，您就能熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具與對話方塊。 您將建立簡單的 "Hello, World" 型應用程式，同時深入了解如何使用整合式開發環境 (IDE)。  
@@ -124,7 +107,7 @@ ms.lasthandoff: 05/13/2017
   
 -   啟動偵錯工具。  
   
-     ![[偵錯] 功能表上的 [開始偵錯] 命令](~/ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
+     ![[偵錯] 功能表上的 [開始偵錯] 命令](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")  
   
      偵錯工具會啟動並執行程式碼。 主控台視窗 (外觀類似命令提示字元的另一個視窗) 會出現幾秒鐘，並在偵錯工具停止執行時快速關閉。 若要查看文字，則必須設定中斷點以停止程式執行。  
   
@@ -157,7 +140,7 @@ ms.lasthandoff: 05/13/2017
   
 2.  將 GreetingsConsoleApp 的組建組態由 [偵錯]  變更為 [發行] 。  
   
-     ![建置應用程式的發行版本](~/ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
+     ![建置應用程式的發行版本](../ide/media/c--ide_changingbuildtorelease.png "C++IDE_ChangingBuildtoRelease")  
   
 3.  建置方案。  
   

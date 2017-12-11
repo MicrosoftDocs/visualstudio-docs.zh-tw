@@ -1,40 +1,24 @@
 ---
-title: "改善程式碼品質"
+title: "改善程式碼品質 | Microsoft Docs"
 ms.custom: na
 ms.date: 02/17/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- vs-devops-test
+ms.technology: vs-devops-test
 ms.tgt_pltfrm: na
 ms.topic: article
 helpviewer_keywords:
 - Visual Studio ALM
 - team-based development
 ms.assetid: 73baa961-c21f-43fe-bb92-3f59ae9b5945
-caps.latest.revision: 39
+caps.latest.revision: "39"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 11a9cee75f912c5fb31cf4a031644abe9c63d744
-ms.openlocfilehash: db500747061b436db2a0897e5b43a1cae4a3acae
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/03/2017
-
+ms.openlocfilehash: 93847beaef971f9370d59a8c5c8ac9f3a59a0967
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="improve-code-quality"></a>改善程式碼品質
 什麼是程式碼品質？ 正確性、可維護性，甚至是優雅與否，都是建立出色應用程式所必須考量的事項。 不論您如何定義它，Visual Studio 測試工具都可以協助您和小組開發及維持絕佳的高標準程式碼表現。  
@@ -71,4 +55,3 @@ ms.lasthandoff: 06/03/2017
   
  [使用 Visual Studio Online 或 Team Foundation Server 追蹤工作](https://www.visualstudio.com/docs/work/overview)  
  您可以使用 [!INCLUDE[vstsTfsLong](../test/includes/vststfslong_md.md)] 計劃和追蹤專案，無論使用的是彈性程序、正式程序或是這些程序的變化。 透過計劃專案、依據計劃追蹤進度及進行必要的調整，就可以降低風險、避免發生意外狀況，以及管理專案的成本。
-

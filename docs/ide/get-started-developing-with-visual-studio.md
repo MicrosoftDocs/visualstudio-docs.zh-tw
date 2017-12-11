@@ -4,38 +4,20 @@ ms.custom:
 ms.date: 11/16/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-helpviewer_keywords:
-- Visual Studio, getting started
+helpviewer_keywords: Visual Studio, getting started
 ms.assetid: 041ef726-f117-4a91-9c18-fef043bf2529
-caps.latest.revision: 65
+caps.latest.revision: "65"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 4b2952b9233c7c4571ad4509cc7c4beda7ee2338
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 5ac7781ecb53727572a9d8594f4a65c5e9c6628c
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="get-started-developing-with-visual-studio"></a>Get Started Developing with Visual Studio
 歡迎使用 Visual Studio！ 當您 [下載](http://www.visualstudio.com/community) 產品後，這些頁面將能協助您開始撰寫程式碼。  
@@ -44,7 +26,7 @@ ms.lasthandoff: 02/22/2017
 
      [進行教學課程](https://docs.asp.net/en/latest/tutorials/your-first-aspnet-application.html) &#124;                               [瀏覽文件](https://docs.asp.net/) &#124;                                   [觀看影片](http://www.asp.net/vnext)  
 
--   **[使用 HTML/Javascript (Apache Cordova) 製作跨平台的行動應用程式](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**：Apache Cordova 是以 HTML/CSS/Javascript 為基礎的開放原始碼跨平台環境。  您的 Javascript 程式碼可在以特定平台為目標的包裝函式中執行，並且能夠存取裝置的所有硬體功能。 為 Apple Store、Android 市集和 Windows 市集開發應用程式。  
+-   **[使用 HTML/Javascript (Apache Cordova) 製作跨平台的行動應用程式](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/)**：Apache Cordova 是以 HTML/CSS/Javascript 為基礎的開放原始碼跨平台環境。 您的 Javascript 程式碼可在以特定平台為目標的包裝函式中執行，並且能夠存取裝置的所有硬體功能。 為 Apple Store、Android 市集和 Microsoft Store 開發應用程式。  
 
      [載入範例](https://github.com/Microsoft/cordova-samples/tree/master/todo-angularjs) &#124; [進行教學課程](http://taco.visualstudio.com/en-us/docs/get-started-first-mobile-app/) &#124;                               [瀏覽文件](http://taco.visualstudio.com/en-us/docs/get-started-vs-tools-apache-cordova/) &#124;                                   [觀看影片](https://channel9.msdn.com/Blogs/Seth-Juarez/Getting-Started-with-Apache-Cordova-in-Visual-Studio)  
 
@@ -85,4 +67,3 @@ ms.lasthandoff: 02/22/2017
 |[Visual C# 和 Visual Basic 使用者入門](../ide/getting-started-with-visual-csharp-and-visual-basic.md)|[撰寫 JavaScript 程式碼](https://msdn.microsoft.com/library/cte3c772.aspx)|  
 |[適用於跨平台行動裝置開發的 Visual C++](../cross-platform/visual-cpp-for-cross-platform-mobile-development.md)|[使用 F# 進行函式程式設計簡介](http://msdn.microsoft.com/library/vstudio/dd233147.aspx)|  
 |[C++ 使用者入門](../ide/getting-started-with-cpp-in-visual-studio.md)|[Visual Studio 中的偵錯入門](../ide/getting-started-with-debugging-in-visual-studio.md)|
-

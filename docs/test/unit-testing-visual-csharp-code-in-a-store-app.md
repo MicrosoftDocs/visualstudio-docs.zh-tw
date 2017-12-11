@@ -1,47 +1,31 @@
 ---
-title: "對市集應用程式中的 Visual C# 程式碼進行單元測試 | Microsoft Docs"
+title: "對 UWP 應用程式中的 Visual C# 程式碼進行單元測試 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
-caps.latest.revision: 19
+caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
+ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
+ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
 ms.translationtype: HT
-ms.sourcegitcommit: 4a36302d80f4bc397128e3838c9abf858a0b5fe8
-ms.openlocfilehash: 768dd5253edac137c50ced5bf524bcc1fdd7f6da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/02/2017
 ---
-# <a name="unit-testing-visual-c-code-in-a-store-app"></a>對市集應用程式中的 Visual C# 程式碼進行單元測試
-本主題說明如何在 Windows 市集應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。  
+# <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>對 UWP 應用程式中的 Visual C# 程式碼進行單元測試
+本主題說明如何在 UWP 應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。  
   
  本主題示範如何使用單元測試做為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。  
   
  本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 DLL 建立個別方案。  
   
 > [!NOTE]
->  Visual Studio Community、Enterprise  及 Professional 均提供針對單元測試的額外功能。  
+>  Visual Studio Community、Enterprise 及 Professional 均提供針對單元測試的額外功能。  
 >   
 >  -   請使用任何協力廠商及開放原始碼單元測試架構，只要該架構已經為 Microsoft [測試總管] 建立附加配接器即可。 您也可以分析及顯示測試的程式碼涵蓋範圍資訊。  
 > -   每次建置後都執行測試。  
@@ -68,13 +52,13 @@ ms.lasthandoff: 09/26/2017
   
 1.  選擇 [檔案] 功能表上的 [新增]，然後選擇 [新專案]。  
   
-2.  在 [新增專案] 對話方塊上，展開 [已安裝的]，然後展開 [Visual C#]，並選擇 [Windows 市集]。 然後從專案範本清單中選擇 [空白應用程式]。  
+2.  在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C#]，並選擇 [Windows 通用]。 然後從專案範本清單中選擇 [空白應用程式]。  
   
 3.  將專案命名為 `Maths`，並確認已選取 [為方案建立目錄]。  
   
 4.  在方案總管中選擇方案名稱，並從捷徑功能表選擇 [新增]，然後選擇 [新增專案]。  
   
-5.  在 [新增專案] 對話方塊上，展開 [已安裝的]，然後展開 [Visual C#]，並選擇 [Windows 市集]。 接著從專案範本清單中選擇 [單元測試程式庫 (Windows 市集應用程式)]。  
+5.  在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C#]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試程式庫 (通用 Windows)]。  
   
      ![建立單元測試專案](../test/media/ute_cs_windows_createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
@@ -381,4 +365,3 @@ ms.lasthandoff: 09/26/2017
   
 > [!NOTE]
 >  若要將協助程式方法新增至測試類別，請不要將 `[TestMethod]` 屬性新增至方法。 [測試總管] 並未登錄要執行的方法。
-

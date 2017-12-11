@@ -1,19 +1,17 @@
 ---
-title: "版本控制"
+title: "版本控制 | Microsoft Docs"
 description: "在 Visual Studio for Mac 中使用 Git 和 Subversion。"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
+ms.openlocfilehash: 6e467cf6acda75948a189309b7648b1c4c085941
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: a63ebdccc2a7cbde18715291a65ada613dc2c00e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="version-control"></a>版本控制
 
 版本控制是管理許多不同版本之檔案的系統，而且在軟體開發中，通常是由許多開發人員提供。 任何版本控制系統的主要目的 (_VCS_) 都是尋找方案，讓所有使用者同時處理程式碼基底。

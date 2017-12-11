@@ -1,42 +1,43 @@
 ---
 title: "如何：建立多檔案項目範本 | Microsoft Docs"
-ms.custom: ""
-ms.date: "11/04/2016"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "項目範本, 建立多檔案項目範本"
-  - "多檔案項目範本"
-  - "Visual Studio 範本, 建立多檔案項目範本"
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Visual Studio templates, creating multi-file item templates
+- multi-file item templates
+- item templates, creating multi-file item templates
 ms.assetid: fe3c4257-e383-4c80-b8af-c5c521959c33
-caps.latest.revision: 12
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
-caps.handback.revision: 12
+caps.latest.revision: "12"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# 如何：建立多檔案項目範本
-[!INCLUDE[vs2017banner](../code-quality/includes/vs2017banner.md)]
-
-項目範本只能指定一個項目，但是這個項目有時是由多個檔案組成。  比方說，如Visual BasicWindows Forms項目範本需要下列三個檔案：  
+# <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
+項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Visual Basic 的 Windows Forms 項目範本需要下列三個檔案：  
   
--   包含表單之程式碼的 .vb 檔  
+-   包含表單程式碼的.vb 檔案。  
   
--   包含表單之設計工具資訊的 .designer.vb 檔  
+-   包含表單設計工具資訊的 .designer.vb 檔案。  
   
--   包含表單之內嵌資源的 .resx 檔  
+-   包含表單內嵌資源的 .resx 檔案。  
   
- 多檔案項目範本需要參數，才能確保在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中建立項目時使用正確的副檔名。  如果您是使用 \[**匯出範本**\] 精靈建立項目範本，則這些參數將會自動產生並且不需要再進行編輯。  下列步驟說明如何使用參數確保建立正確的副檔名。  
+ 多檔案項目範本需要參數，確保在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中建立項目時使用正確的檔案名稱副檔名。 如果您使用 [匯出範本精靈] 建立項目範本，則會自動產生這些參數，而且不需要進行任何進一步編輯。 下列步驟說明如何使用參數，確保建立正確的檔案名稱副檔名。  
   
-### 若要手動建立多檔案項目範本  
+### <a name="to-manually-create-a-multi-file-item-template"></a>手動建立多檔案項目範本  
   
-1.  請依照您建立單一檔案項目範本的方式來建立項目範本。  如需詳細資訊，請參閱 [如何：建立項目範本](../ide/how-to-create-item-templates.md)。  
+1.  當您建立單一檔案項目範本，請建立項目範本。 如需詳細資訊，請參閱[如何：建立項目範本](../ide/how-to-create-item-templates.md)。  
   
-2.  將 `TargetFileName` 屬性加入至每一個 `ProjectItem` 項目。  將 `TargetFileName` 屬性值設定為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是包含於範本中的檔案之副檔名。  例如：  
+2.  將 `TargetFileName` 屬性新增至每個 `ProjectItem` 項目。 將 `TargetFileName` 屬性的值設為 $fileinputname$.*FileExtension*，其中 *FileExtension* 是範本中所含檔案的檔案名稱副檔名。 例如:   
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -50,14 +51,14 @@ caps.handback.revision: 12
     </ProjectItem>  
     ```  
   
-     當衍生自這個範本的項目加入至專案時，檔名將會依據使用者在 \[**加入新項目**\] 對話方塊中所輸入的名稱。  
+     將衍生自此範本的項目新增至專案時，檔案名稱是根據使用者在 [新增項目] 對話方塊中鍵入的名稱。  
   
-3.  選取範本所包含的檔案，以滑鼠右鍵按一下選取項目，按一下 \[**傳送到**\]，再按一下 \[**壓縮的 \(zipped\) 資料夾**\]。  您選取的檔案被壓縮在 .zip 檔中。  
+3.  選取要包含在範本中的檔案，並以滑鼠右鍵按一下選取項目，再按一下 [傳送到]，然後按一下 [壓縮的 (zipped) 資料夾]。 您選取的檔案即會壓縮成 .zip 檔。  
   
-4.  將 .zip 檔放在使用者項目範本位置。  預設情況下，目錄會是 \\My Documents\\Visual Studio*版本*\\Templates\\ItemTemplates\\。  如需詳細資訊，請參閱 [如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
+4.  將 .zip 檔案放在使用者項目範本位置中。 此目錄預設為 \My Documents\Visual Studio <版本>\Templates\ItemTemplates\\。 如需詳細資訊，請參閱[如何：尋找並整理範本](../ide/how-to-locate-and-organize-project-and-item-templates.md)。  
   
-## 範例  
- 下列範例將示範 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows Forms 範本。  如果項目是依照這個範本建立，那麼所建立的三個檔案其名稱將會符合 \[**加入新項目**\] 對話方塊中輸入的名稱。  
+## <a name="example"></a>範例  
+ 下列範例示範 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Windows Forms 範本。 根據此範本來建立項目時，所建立三個檔案的名稱會符合 [新增項目] 對話方塊中所輸入的名稱。  
   
 ```  
 <VSTemplate Version="2.0.0" Type="Item"  
@@ -82,8 +83,8 @@ caps.handback.revision: 12
 </VSTemplate>  
 ```  
   
-## 請參閱  
- [建立自訂專案與項目範本](../ide/creating-project-and-item-templates.md)   
+## <a name="see-also"></a>另請參閱  
+ [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)   
- [樣板參數](../ide/template-parameters.md)   
- [如何：替代樣板中的參數](../ide/how-to-substitute-parameters-in-a-template.md)
+ [範本參數](../ide/template-parameters.md)   
+ [如何：替代範本中的參數](../ide/how-to-substitute-parameters-in-a-template.md)

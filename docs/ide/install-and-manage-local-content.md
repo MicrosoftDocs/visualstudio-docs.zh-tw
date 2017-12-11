@@ -1,61 +1,44 @@
 ---
-title: "安裝與管理本機內容 | Microsoft Docs"
+title: "安裝本機 Visual Studio 文件 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-help-viewer
+ms.technology: vs-help-viewer
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- hv_manage
+f1_keywords: hv_manage
 helpviewer_keywords:
-- changing content installation source [Help Viewer 2.0]
-- updating local content [Help Viewer 2.0]
-- Help Viewer 2.0, content installation source
-- Help Viewer 2.0, updating local content
-- Help Viewer 2.0, changing content installation source
-- installing local content [Help Viewer 2.0]
-- content installation source [Help Viewer 2.0]
-- downloading content [Help Viewer 2.0]
-- removing local content [Help Viewer 2.0]
-- Help Viewer 2.0, removing local content
-- Help Viewer 2.0, installing local content
-- Help Viewer 2.0, downloading content
+- changing content installation source [Help Viewer]
+- updating local content [Help Viewer]
+- Help Viewer, content installation source
+- Help Viewer, updating local content
+- Help Viewer, changing content installation source
+- installing local content [Help Viewer]
+- content installation source [Help Viewer]
+- downloading content [Help Viewer]
+- removing local content [Help Viewer]
+- Help Viewer, removing local content
+- Help Viewer, installing local content
+- Help Viewer, downloading content
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
-caps.latest.revision: 25
+caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: b016ce5c67f1aa7242d7af3f3fb1142b61145f63
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 藉由使用 Microsoft Help Viewer，您可以加入、移除、更新和移動安裝於您電腦上的說明內容，以符合您的軟體開發需求。  
   
- 若要管理本機電腦上的內容，您必須以具有系統管理權限的帳戶登入。 此外，如果您在企業環境中使用，可能會無法管理本機內容，因為系統管理員可能會為您的組織做決策。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
+若要管理本機電腦上的內容，您必須以具有系統管理員權限的帳戶登入。 此外，如果您在企業環境中使用，可能會無法管理本機內容，因為系統管理員可能會為您的組織做決策。 如需詳細資訊，請參閱[說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)。  
   
 ## <a name="changing-the-content-installation-source"></a>變更內容安裝來源  
- 根據預設，說明檢視器會使用 Microsoft 線上服務做為來源來安裝內容。 通常您不應變更內容的來源，除非您在企業環境上使用，為此系統管理員早已安裝內容在另一個位置。  
+根據預設，說明檢視器會使用 Microsoft 線上服務做為來源來安裝內容。 通常您不應變更內容的來源，除非您在企業環境上使用，為此系統管理員早已安裝內容在另一個位置。  
   
 #### <a name="to-change-the-content-installation-source"></a>變更內容安裝來源  
   
@@ -73,12 +56,13 @@ ms.lasthandoff: 05/13/2017
     -   在清單中，選擇最近使用的項目。  
   
 ## <a name="download-and-install-content-locally"></a>在本機下載及安裝內容  
- 如果您在本機電腦上下載及安裝內容，就可以不使用網際網路連線來檢視主題。  
+如果您在本機電腦上下載及安裝內容，就可以在沒有網際網路連線時檢視主題。  
   
 > [!IMPORTANT]
->  若要安裝內容，您必須以具有系統管理權限的帳戶登入。  
+> 若要安裝內容，您必須以具有系統管理權限的帳戶登入。  
   
- 如果 Visual Studio IDE 設定為英文以外的語言，您可以安裝英文內容、當地語系化內容或兩者兼具。 不過，如果您只安裝英文版，且清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
+> [!NOTE]
+> 如果 Visual Studio IDE 設定為英文以外的語言，您可以安裝英文內容、當地語系化內容或兩者兼具。 不過，如果您只安裝英文版，且清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
   
 #### <a name="to-download-and-install-content"></a>下載及安裝內容  
   
@@ -93,12 +77,13 @@ ms.lasthandoff: 05/13/2017
      您所指定的書籍會隨任何您早已安裝在電腦上的書籍更新一併安裝。 安裝時間不盡相同，但是您可以在狀態列中檢視進度。  
   
 ## <a name="removing-local-content"></a>移除本機內容  
- 您可以從電腦移除不要的內容，以節省磁碟空間。  
+您可以從電腦移除不要的內容，以節省磁碟空間。  
   
 > [!IMPORTANT]
->  您必須擁有系統管理權限才能移除內容。  
+> 您必須擁有系統管理權限才能移除內容。  
   
- 如果 Visual Studio IDE 設定為英文以外的語言，而您又移除當地語系化內容和清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
+> [!NOTE]
+> 如果 Visual Studio IDE 設定為英文以外的語言，而您又移除當地語系化內容和清除 [檢視器選項] 對話方塊中的 [將英文內容包含在所有瀏覽索引標籤和 F1 要求中] 核取方塊，則不會出現任何內容。  
   
 #### <a name="to-remove-content"></a>移除內容  
   
@@ -140,5 +125,5 @@ ms.lasthandoff: 05/13/2017
   
 3.  當內容經移動後，請選擇 [關閉] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
- [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)
+## <a name="see-also"></a>請參閱  
+[Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

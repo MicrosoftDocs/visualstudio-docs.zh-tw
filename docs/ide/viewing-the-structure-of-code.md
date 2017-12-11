@@ -4,8 +4,7 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords:
@@ -28,30 +27,15 @@ helpviewer_keywords:
 - class view
 - object browser
 ms.assetid: e6064f58-5ad9-4f05-8c3f-12e994b6583f
-caps.latest.revision: 28
+caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- cs-cz
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- pl-pl
-- pt-br
-- ru-ru
-- tr-tr
-- zh-cn
-- zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 47057e9611b824c17077b9127f8d2f8b192d6eb8
-ms.openlocfilehash: cf7325de6a4d5ee4cac1b48a7da33202034fde0c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/13/2017
-
+ms.openlocfilehash: f85bcde09d6748aa781ceefd85ccbf138245aca6
+ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 您可以檢查 Visual Studio 專案中的物件與成員，以及 .NET Framework 元件、COM 元件、動態連結程式庫 (DLL) 與類型程式庫 (TLB) 中的物件與成員。  
@@ -115,7 +99,7 @@ ms.lasthandoff: 05/13/2017
 |**移至定義**|如果開啟的專案中未定義該項目，便在原始程式碼或 [物件瀏覽器] 中尋找該項目的定義。|  
 |**瀏覽定義**|在 [物件瀏覽器] 中顯示所選項目。|  
 |**尋找所有參考**|尋找目前所選物件項目，並在 [尋找結果] 視窗中顯示結果。|  
-|**對類型篩選** (僅限 Managed 程式碼)|僅顯示所選類型或命名空間。 您可以選擇 [尋找] 方塊旁的 [清除尋找]\(X) 按鈕來移除篩選。|  
+|**對類型篩選** (僅限 Managed 程式碼)|僅顯示所選類型或命名空間。 您可以選擇 [尋找] 方塊旁的 [清除尋找] (X) 按鈕來移除篩選。|  
 |**複製**|複製項目的完整名稱。|  
 |**依字母順序排序**|依名稱照字母順序列出類型與成員。|  
 |**依成員類型排序**|依類型列出類型與成員 (例如類別在介面前面、介面在委派前面、方法在屬性前面)。|  
@@ -164,11 +148,11 @@ ms.lasthandoff: 05/13/2017
   
 -   一組自訂的元件  
   
- 自訂元件可包含 Managed 程式碼可執行檔、程式庫組件、類型程式庫和 .ocx 檔案。 無法加入 C + + 自訂元件。 自訂設定儲存在 Visual Studio 使用者應用程式目錄 %appdata%\roaming\microsoft\visualstudio\11.0\objbrowex.dat 中。  
+ 自訂元件可包含 Managed 程式碼可執行檔、程式庫組件、類型程式庫和 .ocx 檔案。 無法加入 C + + 自訂元件。 自訂設定儲存在 Visual Studio 使用者應用程式目錄 %APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat 中。  
   
  [物件瀏覽器] 的左窗格會顯示實體容器，例如 .NET Framework 和 COM 元件。 您可以展開容器以顯示其含有的命名空間，然後展開命名空間以顯示其包含的類型。 選取類型時，其成員 (例如屬性及方法) 將會列於右窗格中。 右下方的窗格會顯示有關所選項目的詳細資訊。  
   
- 您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋]\ (X) 按鈕。  
+ 您可以使用視窗頂端的 [搜尋] 方塊，搜尋特定項目。 搜尋不區分大小寫。 搜尋結果會顯示在左窗格中。 若要清除搜尋，請選擇 [搜尋] 方塊旁的 [清除搜尋] (X) 按鈕。  
   
  [物件瀏覽器] 會持續追蹤您選取的項目，您可以使用工具列上的 [向前] 和 [向後] 按鈕，在選取的項目之間巡覽。  
   

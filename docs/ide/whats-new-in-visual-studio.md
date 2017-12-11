@@ -1,13 +1,15 @@
 ---
 title: "Visual Studio 2017 的新功能 | Microsoft Docs"
 ms.custom: 
-ms.date: 08/22/2017
+ms.date: 11/06/2017
 ms.reviewer: 
 ms.suite: 
+ms.technology:
+- vs-ide-general
+- vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
-f1_keywords:
-- VS.StartPage.WhatsNew
+f1_keywords: VS.StartPage.WhatsNew
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,26 +17,24 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.technology:
-- vs-acquisition
+ms.openlocfilehash: 1e616fb0c223a30152b9cd18e6ea53e989690f9b
+ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
 ms.translationtype: HT
-ms.sourcegitcommit: 3cd705d703b3d745c502290422e29b3c6da39ee5
-ms.openlocfilehash: 5bf00b7e5ed79f8679b837d0dcabf03550d2b849
-ms.contentlocale: zh-tw
-ms.lasthandoff: 09/06/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
-#### <a name="updated-for-the-153-release"></a>已針對 15.3 版本更新
-適用於任何開發人員、任何應用程式及任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
+#### <a name="updated-for-the-154-release"></a>已針對 15.4 版本更新
+想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
-以下是我們所做變更的高階回顧︰
+以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
 
 * **重新定義基本概念**。 新的安裝體驗意謂著您可以安裝得更快，且可以在需要時安裝所需的項目。 不論您是要載入大型方案與專案，還是要使用程式碼資料夾或甚至是單一程式碼檔案，Visual Studio 的啟動速度都更快。 而且，Visual Studio 可協助您將焦點放在主要目標，特別適用於採用 DevOps 的小組。
 * **效能和生產力**。 我們已經著重於新的和現代的行動、雲端和桌面開發功能。 而且，我們也已改善整體擷取、效能和一般開發人員生產力體驗。 與以前相比，Visual Studio 的啟動速度、回應速度都變得更快，且使用的記憶體也更少。
 * **搭配 Azure 的雲端應用程式開發**。 一套內建的 Azure 工具套件，可讓您輕鬆建立由 Microsoft Azure 提供技術的雲端優先應用程式。 Visual Studio 可讓您在 Azure 上輕鬆設定、建置、偵錯、封裝及部署應用程式與服務。
 * **行動應用程式開發**。 在 Visual Studio 2017 中，您可以透過 Xamarin 快速創新並獲得結果，它使用一個核心程式碼基底和一組技術來統一您的多平台行動需求。 利用您現有的小組、技術投資及 C# 程式碼即可撰寫行動應用程式，讓您不僅能夠提前還能以低於預算的方式，提供消費者等級的體驗。 您可以加速行動應用程式生命週期的每個步驟，以提供世界級的消費者體驗，或是提供生產力應用程式組合來提升工作人員能力。
-* **跨平台開發**：將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 使用 Visual Studio Tools for Unity，開發和發行多平台遊戲。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫 (15.3 的新功能：取得 .NET Core 2.0 SDK 的並存支援)。
+* **跨平台開發**。 將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫 (**15.3 的新功能**：取得 .NET Core 2.0 SDK 的並存支援)。
+* **遊戲開發**。 透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含 Unity ShaderLab 著色器語言的語法著色、更佳的偵錯工具視覺化，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。
 
 > [!NOTE]
 > 如需 Visual Studio 2017 中新功能的完整清單，請參閱[版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。
@@ -58,9 +58,14 @@ ms.lasthandoff: 09/06/2017
 
 若要深入了解新的安裝體驗 (包括引導您執行這項作業的逐步指示)，請參閱[安裝 Visual Studio](../install/install-visual-studio.md) 頁面。
 
+### <a name="a-focus-on-accessibility"></a>聚焦於協助工具
+**15.3 的新功能**：有超過 1,700 項的目標式修正，針對 Visual Studio 與眾多客戶使用的輔助技術，改善了其間的相容性。 在數十種案例中，螢幕助讀程式、高對比佈景主題與其他輔助技術的相容性更勝以往。 偵錯工具、編輯器與 shell 也都有顯著的改善。
+
+如需詳細資訊，請參閱 [Visual Studio 2017 版本 15.3 中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
+
 ## <a name="performance-and-productivity"></a>效能和生產力
 ### <a name="sign-in-across-multiple-accounts"></a>跨多個帳戶登入  
-我們已在 Visual Studio 中導入新的身分識別服務，可讓您在 Team Explorer、Azure Tools、Windows 市集發行等工具之間共用使用者帳戶。
+我們已在 Visual Studio 中引進新的身分識別服務，可讓您在 Team Explorer、Azure Tools、Microsoft Store 發行等工具之間共用使用者帳戶。
 
 此外，您也可以保持登入的狀態更久。 Visual Studio 將不會每隔 12 小時要求您重新登入一次。 若要深入了解，請參閱 [Fewer Visual Studio Sign-in Prompts](https://blogs.msdn.microsoft.com/visualstudio/2016/08/15/fewer-visual-studio-sign-in-prompts/) (較少的 Visual Studio 登入提示) 部落格文章。
 
@@ -110,7 +115,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![即時單元測試](../ide/media/lut-codewindow.png "Visual Studio Enterprise 版中新「即時單元測試」功能的範例")
 
-如需詳細資訊，請參閱 [Live Unit Testing in Visual Studio 2017 Enterprise](https://blogs.msdn.microsoft.com/visualstudio/2017/03/09/live-unit-testing-in-visual-studio-2017-enterprise/) (Visual Studio 2017 Enterprise 中的 Live Unit Testing) 部落格文章。
+如需詳細資訊，請參閱 [Live Unit Testing 簡介](../test/live-unit-testing-intro.md)。 如需每個 Visual Studio Enterprise 2017 版本中新增的功能清單，請參閱 [Live Unit Testing 的新功能](../test/live-unit-testing-whats-new.md)。
 
 #### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>設定 CI/CD 管線，有效率地執行自動化測試
 自動化測試是任何 DevOps 管線的主要部分。 它可讓您在較短的循環內一致且可靠地測試和發行您的方案。 CI/CD (持續整合和持續傳遞) 流程有助於讓程序更具效率。
@@ -119,14 +124,9 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 此外，針對 [Visual Studio 的持續傳遞工具](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio) \(英文\) DevLabs 擴充功能的新功能，如需相關詳細資訊，請參閱[有信心地認可：認可時的程式碼品質](https://blogs.msdn.microsoft.com/visualstudio/2017/08/21/committing-with-confidence-commit-time-code-quality-information-updated/) \(英文\) 部落格文章。
 
-### <a name="a-focus-on-accessibility"></a>聚焦於協助工具
-在 15.3 中有超過 1,700 項的標的式修正，針對 Visual Studio 與眾多客戶使用的輔助技術，改善了其間的相容性。 在數十種案例中，螢幕助讀程式、高對比佈景主題與其他輔助技術的相容性更勝以往。 偵錯工具、編輯器與 shell 也都有顯著的改善。
-
-如需詳細資訊，請參閱 [Visual Studio 2017 版本 15.3 中的協助工具改善](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) \(英文\) 部落格文章。
-
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
 #### <a name="use-new-refactorings"></a>使用新的重構
-在 15.3 中，我們已新增少數新的重構，包含：
+**15.3 的新功能**：我們已新增少數新的重構，包含：
 *   解決合併衝突
 *   新增參數 (從 CallSite)
 *   產生覆寫
@@ -137,33 +137,31 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 *   轉換 if-to-switch
 *   移除未使用的變數
 
-如需詳細資訊，請參閱 [Visual Studio 中的重構、程式碼產生和快速動作](refactoring-code-generation-quick-actions.md)頁面。
-
+如需詳細資訊，請參閱 [Visual Studio 中的重構、程式碼產生和快速動作](refactoring-code-generation-quick-actions.md)頁面。  
 
 #### <a name="interact-with-git"></a>與 Git 互動
 當您在 Visual Studio 中處理專案時，可以設定您的程式碼，然後快速認可並發行到 Git 服務。 您也可以從 IDE 右下角的按鈕中使用功能表點選，來管理您的 Git 儲存機制。
 
 ![Visual Studio 2017 與 Git 互動對話方塊](../ide/media/vsIDE-GitInteraction.png "Visual Studio IDE 中的 Git 工具")
 
-#### <a name="view-and-navigate-code-with-structure-visualizer"></a>使用結構視覺化檢視來檢視和巡覽程式碼
-「結構視覺化檢視」會在您的程式碼上繪製結構輔助線 (也稱為 縮排輔助線)。 您可以使用它們，以視覺化方式隨時呈現您所在的程式碼區塊，而不需捲動。 將滑鼠游標暫留在程式碼行上會顯示工具提示，可讓您看到該區塊的開頭及其父代。 此功能除了在 C#、Visual Basic 及 XAML 有提供之外，所有透過 TextMate 文法支援的語言也都有此功能。
-
-![Visual Studio 2017 結構視覺化檢視](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的結構視覺化檢視")
-
 #### <a name="experience-improved-navigation-controls"></a>體驗改善的瀏覽控制項
 我們已重新整理瀏覽體驗，以協助您在從 A 移到 B 時更為堅定而不易分心。
 
-* **移至** (Ctrl+F12) &ndash; 會從任何基底類型或成員瀏覽至其各種實作。
+* **15.4 的新功能**：**移至定義 (Ctrl+按一下滑鼠左鍵或 F12)** &ndash; 滑鼠使用者可透過按住 **Ctrl** 鍵然後按一下成員，更輕鬆地巡覽至成員的定義。 按住 **Ctrl** 鍵並將滑鼠游標暫留在程式碼符號上，會加上底線並將它轉換成連結。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。  
 
-* **移至全部** (Ctrl+T 或 Ctrl+,) &ndash; 會直接瀏覽至任何檔案/類型/成員/符號宣告。 您可以篩選您的結果清單或使用查詢語法 (例如 "f searchTerm" 用於檔案，"t searchTerm" 用於類型等等)。
+* **移至實作 (Ctrl+F12)** &ndash; 從任何基底類型或成員巡覽至其各種實作。
+
+* **移至全部 (Ctrl+T 或 Ctrl+,)** &ndash; 直接巡覽至任何檔案/類型/成員/符號宣告。 您可以篩選您的結果清單或使用查詢語法 (例如 "f searchTerm" 用於檔案，"t searchTerm" 用於類型等等)。
 
  ![已改進的 [移至全部]](../ide/media/vs2017ide-navigation-go-to.png "已改進的 [移至全部] 功能範例")
 
-* **尋找所有參考 (Shift+F12)** &ndash; 包含語法色彩標示，您可以依據專案、定義及路徑的組合，將 [尋找所有參考] 結果分組。 您也可以「鎖定」結果，如此您便可以繼續尋找其他參考，又不會遺失原始結果。
+* **尋找所有參考 (Shift+F12)** &ndash; 透過語法顏色標示，您可以依據專案、定義及路徑的組合，將 [尋找所有參考] 結果分組。 您也可以「鎖定」結果，如此您便可以繼續尋找其他參考，又不會遺失原始結果。
 
  ![新的 [尋找所有參考] 工具](../ide/media/vs2017ide-find-all-references.png "新的 [尋找所有參考] 工具範例")
 
-* **縮排輔助線** &ndash; 灰色垂直虛線在程式碼中就像是地標，可提供在您檢視框架內的內容。 您可以透過熱門的 Productivity Power Tools 辨識它們。
+* **結構視覺化檢視** &ndash; 灰色垂直虛線 (縮排輔助線) 在程式碼中就像是地標，可提供在您檢視框架內的內容。 您可以透過熱門的 Productivity Power Tools 辨識它們。 您可以使用它們，以視覺化方式隨時呈現您所在的程式碼區塊，而不需捲動。 將滑鼠游標暫留在程式碼行上會顯示工具提示，可讓您看到該區塊的開頭及其父代。 此功能除了在 C#、Visual Basic 及 XAML 有提供之外，所有透過 TextMate 文法支援的語言也都有此功能。  
+
+![Visual Studio 2017 結構視覺化檢視](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的結構視覺化檢視")
 
 如需有關我們新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Visual Studio 2017 中的生產力 (英文)](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) 部落格文章。
 
@@ -206,7 +204,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ## <a name="cross-platform-development"></a>跨平台開發
 ### <a name="redgate-data-tools"></a>Redgate Data Tools
-為了將 DevOps 功能擴充到 SQL Server 資料庫開發，下列 Visual Studio 2017 版本現在會提供 Redgate Data Tools。
+為了將 DevOps 功能擴充到 SQL Server 資料庫開發，Visual Studio 現在提供 Redgate Data Tools。
 
 隨附於 Visual Studio 2017 Enterprise：
 - [Redgate ReadyRoll Core](http://www.red-gate.com/products/sql-development/readyroll/entrypage/microsoft-and-readyroll?utm_source=microsoft&utm_medium=link&utm_campaign=readyroll&utm_term=docs-newinvs) 可協助您開發移轉指令碼、使用原始檔控制管理資料庫變更，並且可以將 SQL Server 資料庫變更和應用程式變更的部署安全地自動化。
@@ -217,32 +215,33 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需詳細資訊，請參閱我們的 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
+### <a name="net-core"></a>.NET Core
+.NET Core 是 .NET Standard 的一般用途、模組化、跨平台和開放原始碼實作，並且包含許多與 .NET Framework 相同的 API。
+
+.NET Core 平台是由幾個元件所組成，其中包含 Managed 編譯器、執行階段、基底類別庫，以及許多應用程式模型 (例如 ASP.NET Core)。 .NET Core 支援三個主要作業系統：Windows、Linux 和 macOS。 您可以在裝置、雲端和內嵌/IoT 案例中使用 .NET Core。
+
+而且，它現在包含 Docker 支援。  
+
+**15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK。  
+
+如需詳細資訊，請參閱 [.NET Core 指南](https://docs.microsoft.com/dotnet/core/index)頁面。
+
+## <a name="games-development"></a>遊戲開發
 ### <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 我們已包含工具來協助開發跨平台以建立 2D 和 3D 遊戲與互動式內容，以作為「Unity 的遊戲開發」工作負載的一部分。 只需要建立一次，即可發行至 21 個平台，包含所有行動平台、WebGL、Mac、PC 和 Linux 桌面、Web 或使用 Visual Studio 2017 和 Unity 5.6 的主控台。
 
 如需詳細資訊，請參閱 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 頁面。
 
-### <a name="net-core"></a>.NET 核心
-.NET Core 是 .NET Standard 的一般用途、模組化、跨平台和開放原始碼實作，並且包含許多與 .NET Framework 相同的 API。
-
-.NET Core 平台是由幾個元件所組成，其中包含 Managed 編譯器、執行階段、基底類別庫，以及許多應用程式模型 (例如 ASP.NET Core)。 .NET Core 支援三個主要作業系統：Windows、Linux 和 macOS。 您可以在裝置、雲端和內嵌/IoT 案例中使用 .NET Core。
-
-而且，它現在包含 Docker 支援。
-
-**15.3 的新功能**：Visual Studio 2017 版本 15.3 支援 .NET Core 2.0 開發 (在 15.3 中，使用 .NET Core 2.0 需要分別下載和安裝 .NET Core 2.0 SDK)。
-
-如需詳細資訊，請參閱 [.NET Core 指南](https://docs.microsoft.com/dotnet/core/index)頁面。
-
 ## <a name="talk-to-us"></a>告訴我們  
- 為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應：它可以讓我們更有動力進行改善。
+ 為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。  
 
-如果您想要建議我們如何改善 Visual Studio，或回報問題，請參閱[告訴我們](../ide/talk-to-us.md)頁面來取得詳細資訊。
+如果您想要建議我們如何改善 Visual Studio，或回報問題，請參閱[告訴我們](../ide/talk-to-us.md)頁面。  
 
 ### <a name="report-a-problem"></a>回報問題  
- 訊息有時無法完整傳達您所發生問題的完整影響。 如果您遇到停止回應、當機或其他效能問題，則可以使用 [回報問題] 工具，輕鬆地與我們分享重現步驟和支援檔案 (例如螢幕擷取畫面以及追蹤和堆積傾印檔案)。 如需如何使用此工具的詳細資訊，請參閱[如何回報問題](how-to-report-a-problem-with-visual-studio-2017.md)頁面。
+ 訊息有時無法完整傳達您所發生問題的完整影響。 如果您遇到停止回應、當機或其他效能問題，則可以使用 [回報問題] 工具，輕鬆地與我們分享重現步驟和支援檔案 (例如螢幕擷取畫面、追蹤和堆積傾印檔案)。 如需如何使用此工具的詳細資訊，請參閱[如何回報問題](how-to-report-a-problem-with-visual-studio-2017.md)頁面。  
 
 ### <a name="track-your-issue-in-connect"></a>使用 Connect 追蹤您的問題  
- 如果您想要追蹤 Visual Studio 意見反應的狀態，請前往 [Connect](http://connect.microsoft.com/) 並回報 Bug。 回報 Bug 之後，就可以回到 Connect 來追蹤其狀態。
+ 如果您想要追蹤 Visual Studio 意見反應的狀態，請前往 [Connect](http://connect.microsoft.com/) 並回報 Bug。 回報 Bug 之後，就可以回到 Connect 來追蹤其狀態。  
 
 ## <a name="see-also"></a>另請參閱
 * [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/vs2015-vs)
@@ -250,4 +249,3 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 * [C# 的新功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Team Foundation Server 的新功能](https://www.visualstudio.com/docs/whats-new)
 * [Visual Studio for Mac 的新功能](https://www.visualstudio.com/vs/visual-studio-mac/)
-

@@ -1,51 +1,51 @@
 ---
-title: "/DebugExe (devenv.exe) | Microsoft Docs"
-ms.custom: ""
-ms.date: "12/15/2016"
-ms.prod: "visual-studio-dev14"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "vs-ide-general"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-helpviewer_keywords: 
-  - "/DebugExe [devenv.exe]"
-  - "DebugExe 參數"
-  - "Devenv, /DebugExe 參數"
+title: -DebugExe (devenv.exe) | Microsoft Docs
+ms.custom: 
+ms.date: 11/04/2016
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: article
+helpviewer_keywords:
+- Devenv, /DebugExe switch
+- DebugExe switch
+- /DebugExe [devenv.exe]
 ms.assetid: cd700006-1648-418f-924b-4b1e5c1412ab
-caps.latest.revision: 4
-caps.handback.revision: 4
-author: "kempb"
-ms.author: "kempb"
-manager: "ghogen"
+caps.latest.revision: "4"
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-# /DebugExe (devenv.exe)
-[!INCLUDE[vs2017banner](../../code-quality/includes/vs2017banner.md)]
-
-開啟要進行偵錯的指定可執行檔。  
+# <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
+開啟要偵錯的指定可執行檔。  
   
-## 語法  
+## <a name="syntax"></a>語法  
   
 ```  
 Devenv /debugexe ExecutableFile  
 ```  
   
-## 引數  
+## <a name="arguments"></a>引數  
  `ExecutableFile`  
- 必要項。  .exe 檔的路徑和檔名。  
+ 必要項。 .exe 檔案的路徑和檔案名稱。  
   
- 找不到 .exe 檔或該檔案不存在時，並不會顯示警告或錯誤，且 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會正常啟動。  
+ 如果 .exe 檔案找不到或不存在，則不會顯示任何警告或錯誤，而且 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會正常啟動。  
   
-## 備註  
- `ExecutableFile` 參數 \(Parameter\) 後面的任何字串都會傳遞至該檔案做為引數 \(Argument\)。  
+## <a name="remarks"></a>備註  
+ `ExecutableFile` 參數後面的任何字串都會當成引數傳遞給該檔案。  
   
-## 範例  
- 下列範例會開啟 `MyApplication.exe` 檔進行偵錯。  
+## <a name="example"></a>範例  
+ 下列範例會開啟 `MyApplication.exe` 檔案以進行偵錯。  
   
 ```  
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## 請參閱  
+## <a name="see-also"></a>另請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

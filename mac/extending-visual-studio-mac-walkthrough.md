@@ -1,19 +1,17 @@
 ---
-title: "擴充 Visual Studio for Mac 逐步解說"
+title: "擴充 Visual Studio for Mac 逐步解說 | Microsoft Docs"
 author: asb3993
 ms.author: amburns
 ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
+ms.openlocfilehash: 30571e0f83d2b54fdb5346030cc7cc4430901797
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
 ms.translationtype: HT
-ms.sourcegitcommit: e2b7ff9126e1cc38ac2e58d6be339b656a024e7f
-ms.openlocfilehash: 7d267051abbf0341b3842b24906e10e0906a0a72
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/11/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
-
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>擴充 Visual Studio for Mac 逐步解說
 
 本主題會引導您建立[簡單的延伸模組套件](https://github.com/mjh4/AddIns/tree/master/DateInserter)。 延伸模組套件將在 Visual Studio for Mac 的 [編輯] 功能表中建立新的命令，讓使用者可在開啟的文字文件中插入目前日期和時間。
@@ -137,4 +135,3 @@ ms.lasthandoff: 08/11/2017
 15.   最後，讓我們執行延伸模組套件來進行測試。 在 Visual Studio for Mac 的新執行個體中，選取 [編輯] > [插入日期]。 目前的日期和時間會插入在我們的插入號，如以下螢幕擷取畫面所示：
 
   ![插入日期螢幕擷取畫面](media/extending-visual-studio-mac-addin12.png)
-

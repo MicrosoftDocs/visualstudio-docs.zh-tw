@@ -1,35 +1,30 @@
 ---
 title: "Visual Studio 中的 Python 混和模式偵錯 | Microsoft Docs"
 ms.custom: 
-ms.date: 7/12/2017
-ms.prod: visual-studio-dev15
+ms.date: 07/12/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- devlang-python
+ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 4ca86a87-e254-4ab7-b3ba-a0ab99c1da93
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
+ms.openlocfilehash: 47c0bd7bea18f32b8e017dabb803c4db4f46e2ca
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
-ms.sourcegitcommit: 6d25db4639f2c8391c1e32542701ea359f560178
-ms.openlocfilehash: a185a7888b693d37aa5df8f3a051679d6b7e9ec5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/18/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/01/2017
 ---
-
 # <a name="debugging-python-and-c-together"></a>同時對 Python 和 C++ 進行偵錯
 
 多數的標準 Python 偵錯工具都僅支援對 Python 程式碼進行偵錯。 不過，實際上在需要高效能或是需要能直接叫用平台 API 的情況下，會將 Python 搭配 C 或 C++ 使用 (範例請參閱[建立適用於 Python 的 C++ 延伸模組](cpp-and-python.md))。 載入 Python 專案之後，Visual Studio 為 Python 和原生 (C/C++) 提供整合式的同步混合模式偵錯，包含合併的呼叫堆疊、可在 Python 和原生程式碼及任一類型的程式碼中斷點之間逐步執行、可在原生框架查看物件的 Python 表示法，反之亦然︰
 
 ![混合模式偵錯](media/mixed-mode-debugging.png) 
 
-如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱[深入探討︰建立原生模組 (英文)](https://youtu.be/D9RlT06a1EI) (youtube.com，9 分 9 秒)。
+如需使用 Visual Studio 建置、測試原生 C 模組並進行偵錯的簡介，請參閱[深入探討︰建立原生模組 (英文)](https://youtu.be/D9RlT06a1EI) (youtube.com，9 分 9 秒)。 本影片適用於 Visual Studio 2015 和 Visual Studio 2017。
 
 > [!VIDEO https://www.youtube.com/embed/D9RlT06a1EI]
 
@@ -60,7 +55,7 @@ ms.lasthandoff: 07/18/2017
 > [!Note]
 > 只有當 Python 專案已經載入到 Visual Studio 時，才會啟用這裡所述的混合模式偵錯。 該專案會決定 Visual Studio 偵錯模式，此模式會讓混合模式選項成為可用。 不過，如果您載入了 C++ 專案 (如同 [python.org 上所述，在另一個應用程式中內嵌 Python](https://docs.python.org/3/extending/embedding.html) 時會做的)，則 Visual Studio 會使用原生 C++ 偵錯工具，它並不支援混合模式偵錯。
 >
-> 在此情況下，請啟動 C++ 專案但不進行偵錯 ([偵錯] > [啟動但不偵錯] 或 Ctrl + F5)，然後使用 [偵錯] > [附加至處理序]。 在出現的對話方塊中，選取適當的處理序，然後使用 [選取] 按鈕來開啟 [選取程式碼類型] 對話方塊，在其中您可以選取 [Python]，如下所示。 選取 [確定] 關閉該對話方塊，然後選取 [附加] 啟動偵錯工具。 請注意，您可能需要在 C++ 應用程式中加入適合的暫停或延遲，以確保它不會在您可以附加偵錯工具之前就呼叫您要偵錯的 Python。
+> 在此情況下，請啟動 C++ 專案但不進行偵錯 ([偵錯] > [啟動但不偵錯] 或 Ctrl + F5)，然後使用 [偵錯] > [附加至處理序]。在出現的對話方塊中，選取適當的處理序，然後使用 [選取] 按鈕來開啟 [選取程式碼類型] 對話方塊，在其中您可以選取 [Python]，如下所示。 選取 [確定] 關閉該對話方塊，然後選取 [附加] 啟動偵錯工具。 請注意，您可能需要在 C++ 應用程式中加入適合的暫停或延遲，以確保它不會在您可以附加偵錯工具之前就呼叫您要偵錯的 Python。
 >
 > ![附加偵錯工具時，選取 Python 作為偵錯類型](media/mixed-mode-debugging-attach-type.png)
 

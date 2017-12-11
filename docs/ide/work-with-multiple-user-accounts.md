@@ -4,36 +4,19 @@ ms.custom:
 ms.date: 11/04/2016
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
+ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 ms.assetid: b73c865c-74e0-420e-89cc-43524f4aafd0
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-translation.priority.ht:
-- de-de
-- es-es
-- fr-fr
-- it-it
-- ja-jp
-- ko-kr
-- ru-ru
-- zh-cn
-- zh-tw
-translation.priority.mt:
-- cs-cz
-- pl-pl
-- pt-br
-- tr-tr
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5db97d19b1b823388a465bba15d057b30ff0b3ce
-ms.openlocfilehash: 592cde9dac7ea7b49934200469e85caf1fd58f82
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/22/2017
-
+ms.openlocfilehash: 42a66b69bb2c1736ddf3cb4c07e8ef8be86ed4d4
+ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 如果您有多個 Microsoft 帳戶及 (或) 工作或學校的帳戶，可以將它們全部加入 Visual Studio，這樣就可以存取所有帳戶的資源，而無須各別登入每個帳戶。 目前，Azure、Application Insights、Team Foundation Server 和 Office 365 服務支援經簡化的登入體驗。 日後也可能會提供其他服務。
@@ -61,12 +44,12 @@ ms.lasthandoff: 02/22/2017
 
 ### <a name="access-your-azure-account-via-add-connected-service-dialog"></a>透過加入已連接服務對話方塊存取您的 Azure 帳戶  
 
-1.  以 C# 建立通用應用程式專案。  
+1.  以 C# 建立 UWP 應用程式專案。  
 
 2.  在方案總管中選擇專案節點，然後依序選擇 [新增] 和 [已連接服務]。 [新增已連接服務精靈] 隨即出現，並顯示與 Visual Studio 登入識別碼相關聯之 Azure 帳戶中的服務清單。 請注意，您不需要分別登入 Azure。 但當您在指定的電腦上第一次嘗試存取其他帳戶的資源時，就必須登入這些帳戶。  
 
     > [!WARNING]
-    >  如果這是您第一次在特定電腦上於 Visual Studio 中建立市集應用程式，系統會提示您前往電腦上的 [設定] &#124; [更新與安全性] &#124; [適用於開發人員] 來啟用裝置的開發模式。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。  
+    >  如果這是您第一次在特定電腦的 Visual Studio 中建立 UWP 應用程式，系統會提示您前往電腦上的 [設定] &#124; [更新與安全性] &#124; [適用於開發人員] 來啟用裝置的開發模式。 如需詳細資訊，請參閱[啟用您的裝置以用於開發](https://msdn.microsoft.com/en-us/library/windows/apps/dn706236.aspx)。  
 
 ###  <a name="access_azure"></a> 在 Web 專案中存取 Azure Active Directory  
  Azure AD 可支援在 ASP.NET MVC Web 應用程式中進行使用者單一登入，或是在 Web API 服務中進行 AD 驗證。 網域驗證與個別使用者帳戶驗證不同；擁有您 Active Directory 網域存取權的使用者，可以使用其現有的 Azure AD 帳戶，連接到您的 Web 應用程式。 Office 365 應用程式也可以使用網域驗證。 若要查看此作業如何進行，請建立 Web 應用程式 ([檔案]、[新增專案]、[C#]、[雲端]、[ASP.NET Web 應用程式])。 然後在 [ASP.NET 新專案] 對話方塊中，選擇 [變更驗證] 。 隨即會出現驗證精靈，供您選擇要在應用程式中使用何種驗證。  
@@ -88,5 +71,7 @@ ms.lasthandoff: 02/22/2017
  ![帳戶管理員](../ide/media/vs2015_accountmanager.gif "VS2015_AccountManager")  
 
 ## <a name="revisit-the-add-connected-services-wizard-and-server-explorer"></a>再次瀏覽加入已連接服務精靈和伺服器總管  
- 現在，再次前往 [伺服器總管]  ，在 Azure 節點上按一下滑鼠右鍵，然後選擇 [管理和篩選訂閱] 。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，接著選擇您想要在伺服器總管中顯示的訂閱。 您應該會看到與指定的訂閱相關聯之所有服務。即使您目前並未使用第二個帳戶登入 Visual Studio IDE，但仍登入了該帳戶的服務與資源。 [專案]、[新增已連接服務] 以及 [小組]、[連接到 Team Foundation Server] 也是這樣。
+ 現在，再次前往 [伺服器總管]  ，在 Azure 節點上按一下滑鼠右鍵，然後選擇 [管理和篩選訂閱] 。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，接著選擇您想要在伺服器總管中顯示的訂閱。 您應該會看到與指定的訂閱相關聯之所有服務。即使您目前並未使用第二個帳戶登入 Visual Studio IDE，但仍登入了該帳戶的服務與資源。 [專案]、[新增已連接服務] 以及 [小組]、[連接到 Team Foundation Server] 也是這樣。  
 
+ ## <a name="see-also"></a>請參閱  
+[已連線的環境](../ide/connected-environment.md)  
