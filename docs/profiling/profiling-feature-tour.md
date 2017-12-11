@@ -37,7 +37,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 [CPU 使用量] 工具的詳細逐步解說，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
 
-從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] (必須在偵錯工作階段中)。
+從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] \(必須在偵錯工作階段中)。
 
 ![在診斷工具中啟用 CPU 使用量](../profiling/media/prof-tour-enable-cpu-profiling.png "診斷工具啟用 CPU 使用量")
 
