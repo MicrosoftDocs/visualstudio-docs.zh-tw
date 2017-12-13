@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 75a333c7e5948e13db0c0c91b41128914e23222b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: fb4da07f2ee8d4c30717209ee07221285a8275ee
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>逐步解說：我的第一個 WPF 桌面應用程式
 本逐步解說提供 Windows Presentation Foundation (WPF) 開發的簡介。 您會建立基本的應用程式，包含對大部分 WPF 桌面應用程式都通用的項目：XAML 標記、程式碼後置、應用程式定義、控制項、配置、資料繫結和樣式。  
@@ -851,40 +851,40 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="Best_Practices"></a> 最佳做法  
  這個範例示範 WPF 的基本概念，因此不符合應用程式開發的最佳作法。 如需 WPF 和 .NET Framework 應用程式開發最佳作法的完整資訊，請視需要參閱下列主題：  
   
--   協助工具： [協助工具最佳作法](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)  
+-   協助工具： [協助工具最佳作法](/dotnet/framework/ui-automation/accessibility-best-practices)  
   
--   安全性： [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   安全性： [Windows Presentation Foundation 安全性](/dotnet/framework/wpf/security-wpf)  
   
--   當地語系化： [WPF 全球化和當地語系化概觀](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   當地語系化： [WPF 全球化和當地語系化概觀](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   效能： [最佳化 WPF 應用程式效能](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   效能： [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
 ##  <a name="Whats_Next"></a> 後續步驟  
  您現在有多項技術可使用 WPF 建立桌上型電腦的應用程式。 您現在應該對資料繫結 WPF 應用程式的建置組塊有基本的了解。 本主題並不詳盡，但希望您有一些概念，可以自行發掘本主題所述技術之外的可能性。  
   
  如需 WPF 架構和程式設計模型的詳細資訊，請參閱下列主題：  
   
--   [WPF 架構](https://msdn.microsoft.com/en-us/library/ms750441\(v=vs.100\).aspx)  
+-   [WPF 架構](/dotnet/framework/wpf/advanced/wpf-architecture)  
   
--   [XAML 概觀](https://msdn.microsoft.com/en-us/library/ms752059\(v=vs.100\).aspx)  
+-   [XAML 概觀](/dotnet/framework/wpf/advanced/xaml-overview-wpf)  
   
--   [相依性屬性概觀](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx)  
+-   [相依性屬性概觀](/dotnet/framework/wpf/advanced/dependency-properties-overview)  
   
--   [配置系統](https://msdn.microsoft.com/en-us/library/ms745058\(v=vs.100\).aspx)  
+-   [配置系統](/dotnet/framework/wpf/advanced/layout)  
   
--   [樣式和範本](https://msdn.microsoft.com/en-us/library/bb613570\(v=vs.100\).aspx)  
+-   [樣式和範本](/dotnet/framework/wpf/controls/styles-and-templates)  
   
  如需建立應用程式的詳細資訊，請參閱下列主題：  
   
--   [應用程式開發概觀](https://msdn.microsoft.com/en-us/library/bb613549\(v=vs.100\).aspx)  
+-   [應用程式開發概觀](/dotnet/framework/wpf/app-development/index)  
   
--   [控制項概觀](https://msdn.microsoft.com/en-us/library/bb613551\(v=vs.100\).aspx)  
+-   [控制項概觀](/dotnet/framework/wpf/controls/index)  
   
--   [資料繫結概觀](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)  
+-   [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)  
   
--   [WPF 圖形、動畫和媒體概觀](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)  
+-   [WPF 圖形、動畫和媒體概觀](https://msdn.microsoft.com/en-us/library/ms742562)  
   
--   [WPF 中的文件](https://msdn.microsoft.com/en-us/library/ms748388\(v=vs.100\).aspx)  
+-   [WPF 中的文件](/dotnet/framework/wpf/advanced/documents-in-wpf)  
   
 ## <a name="see-also"></a>另請參閱  
 [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

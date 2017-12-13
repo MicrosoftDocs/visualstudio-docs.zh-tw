@@ -11,11 +11,11 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: dba101890bd2f27c85e8e6053944d8781fa03ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="setup-and-install"></a>設定和安裝
 若要建置 Xamarin 從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，您需要下列項目：  
@@ -50,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ##  <a name="windows"></a> Windows 設定 (Visual Studio 和 Xamarin)  
   
 > [!TIP]
->  這些指示適用於 Visual Studio 2017。 若為 Visual Studio 2015，請參閱 [MSDN](https://msdn.microsoft.com/en-us/library/mt613162.aspx)。 若要使用 Xamarin 搭配 Visual Studio 2013 (Update 2 是必要項)，請依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示執行。  
+>  這些指示適用於 Visual Studio 2017。 若為 Visual Studio 2015，請參閱 [MSDN](setup-and-install.md)。 若要使用 Xamarin 搭配 Visual Studio 2013 (Update 2 是必要項)，請依照[直接安裝 Xamarin (英文)](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com) 的指示執行。  
   
 1.  [下載並啟動任何 Visual Studio 2017 版本的安裝程式](https://www.visualstudio.com/downloads/) (Community、Professional 或 Enterprise)。 Visual Studio 2017 Community 是免費版本，而 Professional 和 Enterprise 版則可試用 30 天，之後您必須購買授權。  
   

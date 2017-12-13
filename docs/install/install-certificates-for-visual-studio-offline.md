@@ -4,7 +4,7 @@ description: "描述安裝 Visual Studio 離線安裝的憑證所需的步驟"
 ms.date: 08/30/2017
 ms.reviewer: tims
 ms.suite: 
-ms.technology: vs-ide-install
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords:
@@ -14,11 +14,11 @@ ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: timsneath
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4370638ae1cac3e310bbb206d08e1d57b10722f2
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: ed86e3cd404c40026fad20ef08d4daecd98d74f2
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安裝 Visual Studio 離線安裝所需的憑證
 
@@ -42,7 +42,7 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 
 如果您撰寫指令碼，在離線環境中將 Visual Studio 部署至用戶端工作站，您應該遵循下列步驟：
 
-1. 將[憑證管理員工具](https://msdn.microsoft.com/library/e78byta0.aspx) (certmgr.exe) 複製到安裝共用 (例如 \\server\share\vs2017)。 Certmgr.exe 不包含為 Windows 本身的一部分，但提供於 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 中。
+1. 將[憑證管理員工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 複製到安裝共用 (例如 \\server\share\vs2017)。 Certmgr.exe 不包含為 Windows 本身的一部分，但提供於 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 中。
 
 2. 使用下列命令建立批次檔：
 
@@ -113,7 +113,13 @@ Visual Studio 安裝程式引擎只會安裝受信任的內容。 它的作法�
 在您安裝憑證之後，可以使用＜建立 Visual Studio 的網路安裝＞頁面之[從網路安裝部署](create-a-network-installation-of-visual-studio.md#deploying-from-a-network-installation)一節中的指示，繼續部署 Visual Studio。
 
 ## <a name="get-support"></a>取得支援
-有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面，以取得疑難排解祕訣。 同樣地，您可以透過 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具向我們報告產品問題，或者在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享建議。 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。 您也可以透過我們在 [Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動 (需要 [GitHub](https://github.com/) 帳戶)。
+有時可能會發生一些問題。 如果您的 Visual Studio 安裝失敗，請參閱[針對 Visual Studio 2017 安裝和升級問題進行疑難排解](troubleshooting-installation-issues.md)頁面。 如果所有疑難排解步驟都沒有幫助，您可以透過即時聊天與我們連絡，以取得安裝協助 (僅限英文)。 如需詳細資訊，請參閱 [Visual Studio 支援頁面](https://www.visualstudio.com/vs/support/#talktous) \(英文\)。
+
+以下是一些支援選項：
+* 您可以透過 Visual Studio 安裝程式和 Visual Studio IDE 中的[回報問題](../ide/how-to-report-a-problem-with-visual-studio-2017.md)工具來向我們報告產品問題。
+* 您可以在 [UserVoice](https://visualstudio.uservoice.com/forums/121579) 上與我們分享產品建議。
+* 您可以在 [Visual Studio 開發人員社群](https://developercommunity.visualstudio.com/)追蹤產品問題，也可以在那裡詢問問題和尋找解答。
+* 您也可以透過我們[在 Gitter 社群中的 Visual Studio 交談](https://gitter.im/Microsoft/VisualStudio)，與我們以及其他 Visual Studio 開發人員進行互動  (這個選項需要 [GitHub](https://github.com/) 帳戶)。
 
 ## <a name="see-also"></a>請參閱
 * [安裝 Visual Studio](install-visual-studio.md)

@@ -1,6 +1,7 @@
 # [Visual Studio IDE 概觀](visual-studio-ide.md)
-# IDE 快速入門
+# 快速入門
 ## [Visual Studio IDE 初探](quickstart-ide-orientation.md)
+## [專案和方案](quickstart-projects-solutions.md)
 ## [個人化佈景主題與文字色彩](quickstart-personalize-the-ide.md)
 ## [在編輯器中編碼](quickstart-editor.md)
 # [Visual Studio 使用者開發入門](get-started-developing-with-visual-studio.md)

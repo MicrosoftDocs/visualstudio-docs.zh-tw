@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: c4ed4d6a90a91ac927feb3be76a06d8080267057
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 735c95d9eda5cba15b9d75a5abf10d26dd14b0cb
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 在本節中，您將了解如何使用 Visual Studio Tools for Unity 的整合和產能功能，以及如何針對 Unity 開發使用 Visual Studio 偵錯工具。  
@@ -97,9 +97,9 @@ ms.lasthandoff: 11/29/2017
 |開啟 Unity Project Explorer|**Alt+Shift+E**|**View.UnityProjectExplorer**|  
 |存取 Unity 文件|**Ctrl+Alt+M、Ctrl+H**|**Help.UnityAPIReference**|  
 |附加至 Unity 偵錯工具 (播放器或編輯器)|***無預設值***|**Debug.AttachUnityDebugger**|  
-
- 如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](https://msdn.microsoft.com/en-us/library/5zwses53.aspx)。  
-
+  
+ 如果您不喜歡預設值，可以變更快速鍵組合。 如需如何變更它的詳細資訊，請參閱[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。  
+  
 ## <a name="unity-debugging"></a>Unity 偵錯  
  Visual Studio Tools for Unity 可讓您使用 Visual Studio 的強大偵錯工具，同時對 Unity 專案的編輯器和遊戲指令碼進行偵錯。  
 

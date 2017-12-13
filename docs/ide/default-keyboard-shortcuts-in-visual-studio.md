@@ -13,25 +13,23 @@ helpviewer_keywords:
 - Help [Visual Studio], shortcut keys
 - keyboard shortcuts [Visual Studio], keyboard binding schemes
 - keyboard shortcuts
-ms.assetid: c2c64648-00f8-4e48-a8a0-96c67cfd968c
-caps.latest.revision: "55"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2926543ca041ac2b2cc25bc178b99bbafd2407db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 335589c6487d99726b86921fa988dce64dd384b8
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的預設鍵盤快速鍵
 如需鍵盤存取範圍的詳細資訊，請參閱[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)和[如何：以獨佔模式使用鍵盤](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
 
 只需選擇適當的鍵盤快速鍵，您就可以在 Visual Studio 中存取各種命令和視窗。 本主題列出 [一般開發] 設定檔的預設捷徑，您可能已在已安裝的 Visual Studio 中選擇該設定檔。 不管您選擇哪一個設定檔，都可以開啟 [選項] 對話方塊、展開 [環境] 節點，然後選擇 [鍵盤] 來識別命令的捷徑。 您也可以為指定的命令指派不同的捷徑，以自訂捷徑。
 
- 如需常用鍵盤快速鍵的清單和其他生產力資訊，請參閱 [Visual Studio 中常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[祕訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)和[提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)。
+如需常用鍵盤快速鍵的清單和其他生產力資訊，請參閱 [Visual Studio 中常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)、[祕訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)和[提高生產力的祕訣](../ide/productivity-tips-for-visual-studio.md)。
 
- 下表中的各個區段包含全域的命令，您可以在 Visual Studio 的任何位置使用鍵盤快速鍵存取這些命令：  
+下表中的各個區段包含全域的命令，您可以在 Visual Studio 的任何位置使用鍵盤快速鍵存取這些命令：
 
 |||||  
 |-|-|-|-|  
@@ -43,12 +41,12 @@ ms.lasthandoff: 10/31/2017
 |[偵錯工具操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[其他操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Team Foundation 操作功能表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|  
 |[診斷中樞](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||  
 
- 下表中每個區塊包含的鍵盤快速鍵命令是適用於該區段名稱的內容功能表。  
+下表中每個區塊包含的鍵盤快速鍵命令是適用於該區段名稱的內容功能表。
 
 |||||  
 |-|-|-|-|  
 |[ADO.NET 實體資料模型設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ADONET)|[分層圖](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layerDiagram)|[設定設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SettingsDesigner)|[VC 影像編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcimageeditor)|  
-|[類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Managed 資源編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字串編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|  
+|[類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classDiagram)|[Managed 資源編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managedResources)|[方案總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SolutionExplorer)|[VC 字串編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcstringeditor)|
 |[自動程式化 UI 測試編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_codedUItest)|[合併編輯器視窗](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_MergeEditor)|[Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TeamExplorer)|[檢視表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_viewDesigner)|  
 |[資料集編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset)|[Microsoft SQL Server Data Tools，結構描述比較](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SchemaCompare)|[Team Foundation Build 詳細資料編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFBuild)|[Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visualstudio)|  
 |[差異檢視器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diff)|[Microsoft SQL Server Data Tools，資料表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TableDesigner)|[測試總管](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TestExplorer)|[Windows Form 設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_wfdesigner)|  
@@ -56,26 +54,26 @@ ms.lasthandoff: 10/31/2017
 |[F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_FSharp)|[Microsoft SQL Server Data Tools，T-SQL PDW 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_linkfix)|[UML 活動圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLactivityDiagram)|[工作項目查詢檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIqueryview)|  
 |[圖形文件編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphDoc)|[Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_PageInspector)|[UML 類別圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLclassDiagram)|[工作項目結果檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_WIresultsview)|  
 |[圖形診斷](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphicsDebugger)|[查詢設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryDesigner)|[UML 元件圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLcomponentDiagram)|[工作流程設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflowdesigner)|  
-|[HTML 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[查詢結果](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML 使用案例圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML UI 設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|  
+|[HTML 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditor)|[查詢結果](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_QueryResults)|[UML 使用案例圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_UMLusecaseDiagram)|[XAML UI 設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xamluidesigner)|
 |[HTML 編輯器設計檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorDesign)|[報表設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_ReportDesigner)|[VC 快速鍵編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcaccelerator)|[XML (文字) 編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlTextEditor)|  
 |[HTML 編輯器原始碼檢視](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_HTMLeditorSource)|[順序圖表](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_SequenceDiagram)|[VC 對話方塊編輯器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vcdialogeditor)|[XML 結構描述設計工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xmlSchemaDesigner)|  
 
-##  <a name="bkmk_global"></a> 全域  
+##  <a name="bkmk_global"></a> 全域
 
-###  <a name="bkmk_analyze"></a> 分析  
+###  <a name="bkmk_analyze"></a> 分析
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |Analyze.NavigateBackward|Shift+Alt+3|  
 |Analyze.NavigateForward|Shift+Alt+4|  
 
-###  <a name="bkmk_architecture"></a> 架構  
+###  <a name="bkmk_architecture"></a> 架構
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |Architecture.NewDiagram|Ctrl+\\、Ctrl+N|  
 
-###  <a name="bkmk_build"></a> 建置  
+###  <a name="bkmk_build"></a> 建置
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -84,13 +82,13 @@ ms.lasthandoff: 10/31/2017
 |Build.Compile|Ctrl+F7|  
 |Build.RunCodeAnalysisonSolution|ALT+F11|  
 
-###  <a name="bkmk_classview"></a> 類別檢視操作功能表  
+###  <a name="bkmk_classview"></a> 類別檢視操作功能表
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|Alt+Enter|  
 
-###  <a name="bkmk_debug"></a> 偵錯  
+###  <a name="bkmk_debug"></a> 偵錯
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -158,7 +156,7 @@ ms.lasthandoff: 10/31/2017
 |Debug.Watch3|Ctrl+Alt+W、3|  
 |Debug.Watch4|Ctrl+Alt+W、4|  
 
-###  <a name="bkmk_debugger"></a> 偵錯工具操作功能表  
+###  <a name="bkmk_debugger"></a> 偵錯工具操作功能表
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -166,13 +164,13 @@ ms.lasthandoff: 10/31/2017
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|Alt+F9、A|  
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|Alt+F9、S|  
 
-###  <a name="bkmk_diagnostics"></a> 診斷中樞  
+###  <a name="bkmk_diagnostics"></a> 診斷中樞
 
 |命令|鍵盤快速鍵|  
 |-------------|-----------------------|  
 |DiagnosticsHub.StopCollection|Ctrl+Alt+F2|  
 
-###  <a name="bkmk_edit"></a> 編輯  
+###  <a name="bkmk_edit"></a> 編輯
 
 |命令||  
 |--------------|-|  
@@ -231,7 +229,7 @@ ms.lasthandoff: 10/31/2017
 |Edit.SurroundWith|Ctrl+K、Ctrl+S|  
 |Edit.Undo|Ctrl+Z<br /><br /> 或<br /><br /> Alt+退格鍵|  
 
-###  <a name="bkmk_editorContext"></a> 編輯器操作功能表  
+###  <a name="bkmk_editorContext"></a> 編輯器操作功能表
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -242,7 +240,7 @@ ms.lasthandoff: 10/31/2017
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|Ctrl+K、Ctrl+O|  
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|Ctrl+K、Ctrl+T<br /><br /> 或<br /><br /> Ctrl+K、T|  
 
-###  <a name="bkmk_file"></a> 檔案  
+###  <a name="bkmk_file"></a> 檔案
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -258,7 +256,7 @@ ms.lasthandoff: 10/31/2017
 |File.SaveSelectedItems|Ctrl+S|  
 |File.ViewinBrowser|Ctrl+Shift+W|  
 
-###  <a name="bkmk_help"></a> 說明  
+###  <a name="bkmk_help"></a> 說明
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -267,19 +265,19 @@ ms.lasthandoff: 10/31/2017
 |Help.ViewHelp|Ctrl+F1|  
 |Help.WindowHelp|Shift+F1|  
 
-###  <a name="bkmk_loadtest"></a> 負載測試  
+###  <a name="bkmk_loadtest"></a> 負載測試
 
 |命令|鍵盤快速鍵|  
 |-------------|-----------------------|  
 |LoadTest.JumpToCounterPane|Ctrl+R、Q|  
 
-###  <a name="bkmk_otherContext"></a> 其他操作功能表  
+###  <a name="bkmk_otherContext"></a> 其他操作功能表
 
 |命令|鍵盤快速鍵|  
 |-------------|-----------------------|  
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|Insert|  
 
-###  <a name="bkmk_project"></a> 專案  
+###  <a name="bkmk_project"></a> 專案
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -291,14 +289,14 @@ ms.lasthandoff: 10/31/2017
 |Project.Publishselectedfiles|Alt+;、Alt+P|  
 |Project.Replaceselectedfilesfromserver|Alt+;、Alt+R|  
 
-###  <a name="bkmk_projectContext"></a> 專案及方案操作功能表  
+###  <a name="bkmk_projectContext"></a> 專案及方案操作功能表
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |ProjectandSolutionContextMenus.Item.MoveDown|Alt+向下鍵|  
 |ProjectandSolutionContextMenus.Item.MoveUp|Alt+向上鍵|  
 
-###  <a name="bkmk_refactor"></a> 重構  
+###  <a name="bkmk_refactor"></a> 重構
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -309,7 +307,7 @@ ms.lasthandoff: 10/31/2017
 |Refactor.Rename|Ctrl+R、Ctrl+R|  
 |Refactor.ReorderParameters|Ctrl+R、Ctrl+O|  
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管  
+###  <a name="bkmk_solutionexplorerGLOBAL"></a> 方案總管
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -317,7 +315,7 @@ ms.lasthandoff: 10/31/2017
 |SolutionExplorer.PendingChangesFilter|Ctrl+[、P<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+P|  
 |SolutionExplorer.SyncWithActiveDocument|Ctrl+[、S<br /><br /> 或<br /><br /> Ctrl+[、Ctrl+S|  
 
-###  <a name="bkmk_team"></a> 小組  
+###  <a name="bkmk_team"></a> 小組
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -326,7 +324,7 @@ ms.lasthandoff: 10/31/2017
 |Team.Git.GoToGitCommits|Ctrl+0、Ctrl+O<br /><br /> 或<br /><br /> Ctrl+0、O|  
 |Team.TeamExplorerSearch|Ctrl+'|  
 
-###  <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表  
+###  <a name="bkmk_TFcontext"></a> Team Foundation 操作功能表
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -341,14 +339,14 @@ ms.lasthandoff: 10/31/2017
 |TeamFoundationContextMenus.Commands.GoToWebAccess|Ctrl+0、Ctrl+A<br /><br /> 或<br /><br /> Ctrl+0、A|  
 |TeamFoundationContextMenus.Commands.GoToWorkItems|Ctrl+0、Ctrl+W<br /><br /> 或<br /><br /> Ctrl+0、W|  
 
-###  <a name="bkmk_test"></a> 測試  
+###  <a name="bkmk_test"></a> 測試
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
 |Test.UseCodedUITestBuilder|Ctrl+\\、Ctrl+C|  
 |Test.UseExistingActionRecording|Ctrl+\\、Ctrl+A|  
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> 測試總管  
+###  <a name="bkmk_testexplorerGLOBAL"></a> 測試總管
 
 |命令|鍵盤快速鍵|  
 |--------------|------------------------|  
@@ -1166,6 +1164,7 @@ ms.lasthandoff: 10/31/2017
 |XsdDesigner.ShowGraphView|Ctrl+3|  
 |XsdDesigner.ShowStartView|Ctrl+1|  
 
-## <a name="see-also"></a>另請參閱  
- [圖示影像編輯器](/cpp/windows/image-editor-for-icons)   
- [使用 IntelliSense](../ide/using-intellisense.md)
+## <a name="see-also"></a>請參閱
+ 
+[圖示影像編輯器](/cpp/windows/image-editor-for-icons)  
+[使用 IntelliSense](../ide/using-intellisense.md)

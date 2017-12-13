@@ -5,11 +5,11 @@ ms.author: gewarren
 title: "使用 Visual Studio 中的資料工具來開發資料解決方案 | Microsoft Docs"
 description: "了解 Visual Studio 中適用於資料解決方案的工具。"
 ms.technology: vs-data-tools
-ms.openlocfilehash: cd493348492d14a84842be61e195e3a506c92436
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 134d5ffa213f08bfa22a87e639edf59b990f1e68
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>使用 Visual Studio 中的資料工具來開發資料解決方案
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 10/31/2017
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/library/hh272686(v=vs.103).aspx">
+        <a href="/sql/ssdt/download-sql-server-data-tools-ssdt">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -22,18 +22,17 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Formatting
 helpviewer_keywords:
 - formatting [C#]
-- formatting [J#]
 - Text Editor Options dialog box, formatting
 ms.assetid: 5a7bb668-1d0c-4ffe-9508-24592813162e
 caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24ebcd48e60e748a671241b5f562e67f6a3dc2a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 18cf7c7ee9c7f40231482b7c0466929bd0290fb1
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
 使用 [格式] 屬性頁對話方塊，設定程式碼編輯器中的程式碼格式化選項。 若要存取這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並依序展開 [文字編輯器] 和 [C#]，然後按一下 [格式化]。  
