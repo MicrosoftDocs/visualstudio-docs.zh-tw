@@ -18,11 +18,11 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b907be5e46b6d8d33232d120d4229b0e205f948b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: cdb7339c902c94dc0052b1bd4d0570247069dc01
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>效能分析的初學者指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [診斷工具] 的 [CPU 使用量] 索引標籤，以取得您的應用程式的效能資料。 診斷工具可用於 Visual Studio 中的 .NET 開發 (包括 ASP.NET) 和原生/C++ 開發。
@@ -108,7 +108,6 @@ ms.lasthandoff: 10/31/2017
     在此檢視中，選取的函式會出現在標題和 [目前的函式] 方塊中 (在此範例中為 GetNumber)。 呼叫目前函式的函式顯示在左邊的 [Calling Function (呼叫的函式)] 下方，而目前函式所呼叫的任何函式會顯示在右邊的 [Called Functions (所呼叫函式)] 方塊。 (您可以選取任一個方塊來變更目前的函式。)
 
     此檢視會顯示總時間 (毫秒) 及完成函式所需時間在整體應用程式執行時間所佔的百分比。
-
     [函式主體] 也會顯示函式主體所花費的總時間 (和時間百分比)，不包括呼叫的函式和所呼叫函式所花的時間。 (在此範例中，3729 毫秒中的 3713 毫秒花在函式主體，其餘 16 毫秒則花在此函式呼叫的外部程式碼)。
 
     > [!TIP]
