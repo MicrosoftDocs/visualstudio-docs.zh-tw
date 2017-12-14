@@ -92,7 +92,7 @@ TEST_METHOD 傳回 void。 若要產生測試結果，請使用 `Assert` 類別�
   
 1.  在 [測試] 功能表上，選擇 [Windows]、**測試總管**。 下圖顯示其測試尚未執行的測試專案。 
 
-![執行測試前的]測試總管(media/cpp-test-explorer.png " C++ 測試總管")
+![執行測試前的測試總管](media/cpp-test-explorer.png "C++ 測試總管 ")
 
 > [!NOTE]
 > 目前無法將 CTest 與**測試總管**整合。 從 CMake 主功能表執行 CTest 測試。
