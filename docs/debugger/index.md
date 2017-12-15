@@ -3,11 +3,11 @@ layout: LandingPage
 title: "對 Visual Studio 中的應用程式進行偵錯 | Microsoft Docs"
 description: "了解如何使用 Visual Studio 2017 以您選擇的語言，針對您的平台和裝置進行應用程式、服務及工具的偵錯。"
 ms.technology: vs-ide-debug
-ms.openlocfilehash: d00ef04d3d8f73b607c91f33f9af53429666ba5f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5a526302d11b259c87317ee14c660b0d6fef5541
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="debugging-in-visual-studio"></a>Visual Studio 偵錯
 
@@ -21,7 +21,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_road-map.svg" alt="">
+                            <img src="/media/common/i_road-map.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -39,7 +39,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -57,7 +57,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -75,7 +75,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_video.svg" alt="">
+                            <img src="/media/common/i_video.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -93,7 +93,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -111,7 +111,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/common/i_get-started.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -129,7 +129,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -147,7 +147,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_debug.svg" alt="">
+                            <img src="/media/common/i_debug.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -165,7 +165,7 @@ Visual Studio 偵錯工具協助您觀察程式的執行階段行為，並找出
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_whats-new.svg" alt="">
+                            <img src="/media/common/i_whats-new.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">

@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
 title: "Visual Studio 中的 JavaScript | Microsoft Docs"
-ms.openlocfilehash: 839a6ec136700c373fa5d29ce50b785c85275057
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c9f6366ac7b1c2393b598c30c60a674331a4cc05
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="javascript-in-visual-studio"></a>Visual Studio 中的 JavaScript
 
@@ -19,7 +19,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_JS.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -37,7 +37,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_cordova.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -49,13 +49,13 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
         </a>
     </li>
     <li>
-        <a href="https://www.visualstudio.com/vs/node-js/">
+        <a href="https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-nodejs">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -67,13 +67,13 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
         </a>
     </li>
     <li>
-        <a href="https://msdn.microsoft.com/windows/uwp/get-started/create-a-hello-world-app-js-universal">
+        <a href="https://docs.microsoft.com/en-us/windows/uwp/get-started/create-a-hello-world-app-js-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/logos/logo_windows.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -91,7 +91,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/logos/logo_TS.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -109,7 +109,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/logos/logo_nodejs.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -127,7 +127,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_get-started.svg" alt="">
+                            <img src="/media/logos/logo_net.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
@@ -145,7 +145,7 @@ JavaScript 是在 Visual Studio 中的第一級語言。 當您在 Visual Studio
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="/en-us/media/common/i_learn-about.svg" alt="">
+                            <img src="/media/common/i_learn-about.svg" alt="">
                         </div>
                     </div>
                     <div class="cardText">
