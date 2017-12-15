@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 55aea29b-1066-4e5a-aa99-fc87d4efb6d5
-ms.openlocfilehash: 656274c965cb2c360aa8b197b8afa5c66d86ea9c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: ef6a121f848d39534b9a96bd215e1d3dba04a923
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-test-agent-2017-component-directory"></a>Visual Studio Test Agent 2017 元件目錄
 
@@ -42,7 +42,7 @@ ms.lasthandoff: 11/22/2017
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功能 | 15.0.26606.0 | 必要
+Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Test Agent 核心功能 | 15.0.27019.1 | 必要
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 

@@ -1,26 +1,25 @@
 ---
 title: "使用 Visual Studio R 工具編輯程式碼 | Microsoft Docs"
 ms.custom: 
-ms.date: 06/29/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: a198ccc3-5506-48e7-b3b2-9399661b80d5
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 5c856bb02ca33f999273fd6da782226be5f0f2d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c36afd0483a49537eac67e5fa219699f2366750e
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="editing-r-code-in-visual-studio"></a>在 Visual Studio 中編輯 R 程式碼
- 
+
 Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體驗，同時保留所有功能和使用延伸模組的能力。 (例如，如果您偏好 VIM 按鍵繫結，您可以從 Visual Studio 組件庫安裝免費的 [VsVim 延伸模組](https://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329)。)
 
 本主題內容：
@@ -33,8 +32,7 @@ Visual Studio R 工具 (RTVS) 可針對 R 量身打造 Visual Studio 編輯體�
 - [插入 Roxygen 註解](#inserting-roxygen-comments)
 - [編輯器選項](#editor-options)
 
-另請參閱 [IntelliSense](code-intellisense.md)、[程式碼片段](code-snippets.md)和 [R Markdown](rmarkdown.md) 的主題。
-
+另請參閱 [IntelliSense](code-intellisense.md)、[Linting](code-linting.md)、[程式碼片段](code-snippets.md)和 [R Markdown](rmarkdown.md) 的主題。
 
 ## <a name="syntax-highlighting"></a>語法醒目提示 
 
@@ -107,9 +105,9 @@ f <- function(a) { return(a + 1) }
 若要重新格式化整個程式碼檔案，請選取 [編輯] > [進階] > [格式化文件] (Ctrl+E、D)。
 
 自動格式化是可以復原的個別作業。 例如，如果您將程式碼貼入編輯器，以及它套用的格式化，則選取 [編輯] > [復原] 或按 Ctrl+Z，會反轉格式化，第二次 [復原] 則會反轉貼上作業本身。
- 
+
 格式化選項 (包括關閉格式化) 是透過 [文字編輯器] > [R] > [進階] 索引標籤的 [工具] > [選項] 設定。您可以使用 [R 工具] > [編輯器選項] 命令，或在編輯器中按一下滑鼠右鍵，然後選取 [格式選項]，直接移至此頁面。如需詳細資訊，請參閱[編輯器選項](#editor-options)一節。
- 
+
 ## <a name="inserting-roxygen-comments"></a>插入 Roxygen 註解
 
 RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解的捷徑。 只要在函式定義上方的空白行上輸入 `###`︰
@@ -144,5 +142,5 @@ RTVS 提供使用函式參數名稱產生 [Roxygen](http://roxygen.org/) 註解�
 | | 按 Tab 鍵時會出現自動完成清單 | Off | 鍵入一或多個字元並按 Tab 鍵來叫用完成清單。 |
 | | 符合部分鍵入的引數名稱 | Off | 在函式呼叫中鍵入引數名稱時，特徵標記可協助顯示最貼切的引數描述。 |
 | 互動式視窗 | R Console 中的語法檢查 | Off | 在 Interactive 視窗中套用語法檢查。 語法檢查可能無法正確運作於多行陳述式。 | 
-| 大綱 | 程式碼大綱 | 開啟 | 自動為多行陳述式等區域建立可摺疊區域。 | 
+| 大綱 | 程式碼大綱 | 開啟 | 自動為多行陳述式等區域建立可摺疊區域。 |
 | 語法檢查 | 顯示語法錯誤 | 開啟 | 啟用程式碼的自動語法檢查。 |

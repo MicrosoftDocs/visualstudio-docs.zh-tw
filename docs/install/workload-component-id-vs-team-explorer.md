@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: c6ef9a3b-d13d-49b4-9faa-51fa06b21e1f
-ms.openlocfilehash: da943c4315552a8eab6aa9239e147f48a1c6bf4c
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 4f202f1a000951616b49d7614bc91e71aa2457f6
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-team-explorer-2017-component-directory"></a>Visual Studio Team Explorer 2017 元件目錄
 
@@ -43,6 +43,7 @@ ms.lasthandoff: 11/22/2017
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.CoreEditor | Visual Studio 核心編輯器 | 15.0.26606.0 | 必要
+Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 使用者的 Visual Studio 起始畫面 | 15.0.27128.1 | Optional
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 

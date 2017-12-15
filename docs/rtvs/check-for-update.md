@@ -1,27 +1,26 @@
 ---
 title: "Visual Studio R 工具的目前版本 | Microsoft Docs"
 ms.custom: 
-ms.date: 07/25/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: ae5fca3b-ce82-4b81-8625-75454e4099b0
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e4d8c85efe007a890876865b0ab6b0cd69b54bbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 835a854e4b5540910b5d6a6bae2e3bf89748c860
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="rtvs-current-version"></a>RTVS 目前版本
 
-此頁面上次更新後的 Visual Studio R 工具 (RTVS) 最新版本為 **1.0.30623.0940**。 您的版本會隨 Visual Studio 版本以及是否使用預覽通道而有所不同。
+此頁面上次更新後的 Visual Studio R 工具 (RTVS) 最新版本為 **1.3.31108.1213**。 您的版本會隨 Visual Studio 版本以及是否使用預覽通道而有所不同。
 
 若要檢查版本，可以在 Visual Studio 中前往 [說明] > [關於]，向下捲動到 [Visual Studio R 工具] 項目︰ 
 

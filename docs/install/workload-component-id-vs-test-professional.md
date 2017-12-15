@@ -5,7 +5,7 @@ keywords:
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.date: 10/09/2017
+ms.date: 12/01/2017
 ms.topic: article
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -14,11 +14,11 @@ helpviewer_keywords:
 ms.service: 
 ms.technology: vs-acquisition
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.openlocfilehash: c6f4843c6bb1b6811e38668207cd0ace5c5dd445
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 3f3ca9ec09572a46e61b2c47d8e49cc7b3d729e5
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="visual-studio-test-professional-2017-component-directory"></a>Visual Studio Test Professional 2017 元件目錄
 
@@ -42,8 +42,8 @@ ms.lasthandoff: 11/22/2017
 
 元件識別碼 | 名稱 | 版本 | 相依性類型
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.26711.1 | 必要
-Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.26606.0 | 必要
+Microsoft.VisualStudio.Component.TestTools.FeedbackClient | Microsoft Feedback Client | 15.0.27005.2 | 必要
+Microsoft.VisualStudio.Component.TestTools.MicrosoftTestManager | Microsoft Test Manager | 15.0.27005.2 | 必要
 
 ## <a name="unaffiliated-components"></a>非附屬元件
 

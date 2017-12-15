@@ -13,11 +13,11 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4ae2344bb1bce77d7e71cadf34660db57380f6b4
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 22a6c84608f8955e3a751af4ee2b9fb113645590
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -42,8 +42,278 @@ ms.lasthandoff: 11/22/2017
 ## <a name="common-quick-actions"></a>一般的快速動作
 
 以下是一些同時適用於 C# 和 Visual Basic 程式碼的一般快速動作。
+- [修正錯誤的動作](#fix)
+- [移除不必要程式碼的動作](#remove)
+- [新增遺漏程式碼的動作](#add)
+- [程式碼轉換](#transform)
 
-### <a name="add-missing-casesdefault-caseboth"></a>新增遺漏的 Case/預設的 Case/兩者
+### <a id="fix"></a> 修正錯誤的動作
+
+#### <a name="correct-misspelled-type"></a>更正拼字錯誤的類型
+|  錯誤識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS0103、BC30002 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
+
+如果您不小心拼錯 Visual Studio 中的類型，這個快速動作會自動更正它。  您會看到燈泡功能表中的這些項目**「變更 '*拼字錯誤類型*' 為 '*正確類型*'**。  例如: 
+
+```csharp
+// Before
+private viod MyMethod()
+{
+}
+
+// Change 'viod' to 'void'
+
+// After
+private void MyMethod()
+{
+}
+```
+
+```vb
+' Before
+Function MyFunction as Intger
+End Function
+
+' Change 'Intger' to 'Integer'
+
+' After
+Function MyFunction as Integer
+End Function
+```
+
+#### <a name="resolve-git-merge-conflict"></a>解決 git merge 衝突
+|  錯誤識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS8300、BC37284  | C# 和 Visual Basic | Visual Studio 2017 15.3 版 |
+
+這些快速動作可讓您透過「採取變更」解決 git merge 衝突，這樣會移除衝突的程式碼和標記。  
+
+```csharp
+// Before     
+private void MyMethod()
+{
+<<<<<<< HEAD
+    if (true)
+    {
+
+    }
+=======
+    if (false)
+    {
+
+    }
+>>>>>>> upstream
+}
+
+// Take changes from 'HEAD'
+
+// After 
+private void MyMethod()
+{
+    if (true)
+    {
+
+    }
+}
+```
+
+#### <a name="make-method-synchronous"></a>將方法設為同步
+|  錯誤識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS1998、BC42356 | C# 和 Visual Basic | Visual Studio 2015 Update 2 |
+
+對方法使用 `async`/`Async` 關鍵字時，預期在該方法中的某處，也會使用 `await`/`Await` 關鍵字。  不過，若情況不是這樣，就會顯示快速動作，讓您可藉由移除 `async`/`Async` 關鍵字和變更傳回型別將方法設為同步。  使用 [快速動作] 功能表的 [將方法設為同步] 選項。
+
+```csharp
+// Before
+async Task<int> MyAsyncMethod()
+{
+    return 3;
+}
+
+// Make method synchronous
+
+// After
+int MyAsyncMethod()
+{
+    return 3;
+}
+```
+
+```vb
+' Before
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return 3
+End Function
+
+' Make method synchronous
+
+' After
+Function MyAsyncMethod() As Integer
+    Return 3
+End Function
+```
+
+#### <a name="make-method-asynchronous"></a>將方法設為非同步
+|  錯誤識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS4032、BC37057 | C# 和 Visual Basic | Visual Studio 2017 |
+
+在方法內使用 `await`/`Await` 關鍵字時，預期方法本身會標記 `async`/`Async` 關鍵字。  不過，若情況不是這樣，就會顯示快速動作，讓您可以將方法設為非同步。  使用 [快速動作] 功能表的 [將方法/函式設為非同步] 選項。
+
+```csharp
+// Before
+int MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+
+// Make method asynchronous
+
+// After
+async Task<int> MyAsyncMethod()
+{
+    return await Task.Run(...);
+}
+```
+
+```vb
+' Before
+Function MyAsyncMethod() as Integer
+    Return  Await Task.Run(...)
+End Function
+
+' Make method asynchronous
+
+' After
+Async Function MyAsyncMethod() As Task(Of Integer)
+    Return Await Task.Run(...)
+End Function
+```
+
+### <a id="remove"></a> 移除不必要程式碼的動作
+
+#### <a name="remove-unnecesary-usingsimports"></a>移除不必要的 using/Import
+
+|  適用語言 |  支援版本 |
+|  -------------------- | ----------------  |
+|  C# 和 Visual Basic | Visual Studio 2015 RTW |
+
+**移除不必要的 using/Import** 快速動作將會移除目前檔案中任何未使用的 `using` 和 `Import` 陳述式。  當您選取此項目時，將會立即移除未使用的命名空間匯入。
+
+#### <a name="remove-unnecessary-cast"></a>移除不必要的 Cast
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0004 | C# 和 Visual Basic | Visual Studio 2015 RTW |
+
+如果您將類型轉型為不需要轉型的另一種類型，**移除不必要的 Cast** 快速動作項目將會移除您程式碼中的 Cast。
+
+```csharp
+// before
+int number = (int)3;
+
+// Remove Unnecessary Cast
+
+// after
+int number = 3;
+```
+```vb
+' Before
+Dim number as Integer = CType(3, Integer)
+
+' Remove Unnecessary Cast
+
+' After
+Dim number as Integer = 3
+```
+
+#### <a name="remove-unused-variables"></a>移除未使用的變數
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS0219、BC42024 | C# 和 Visual Basic | Visual Studio 2017 15.3 版 |
+
+這個快速動作可讓您移除已宣告但從未在程式碼中使用的變數。
+
+```csharp
+// Before
+public MyMethod()
+{
+    var unused = 8;
+    var used = 1;
+    return DoStuff(used);
+}
+
+// Remove unused variables
+
+// After
+public MyMethod()
+{
+    var used = 1;
+    return DoStuff(used);
+}
+```
+
+#### <a name="remove-type-from-default-value-expression"></a>從 **default** 值運算式中移除類型
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0034 | C# 7.1+ | Visual Studio 2017 15.3 版 |
+
+這個快速動作會從 default 值運算式中移除實值型別，並在編譯器可推斷運算式的類型時使用 [`default` 常值](/dotnet/csharp/programming-guide/statements-expressions-operators/default-value-expressions#default-literal-and-type-inference)。
+
+```csharp 
+// Before
+void DoWork(CancellationToken cancellationToken = default(CancellationToken)) { ... }
+
+// Simplify default expression
+
+// After
+void DoWork(CancellationToken cancellationToken = default) { ... }
+
+```
+
+### <a id="add"></a> 新增遺漏程式碼的動作
+
+#### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>針對參考組件的類型、NuGet 套件的類型或您方案中的其他類型新增 using/Import
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| CS0103、BC30451 | C# 和 Visual Basic| Visual Studio 2015 Update 2 |
+
+使用位於您方案中其他專案的類型會自動顯示快速動作，但是其他則需要從 [工具] > [選項] > [C#] 或 [基本] > [進階] 索引標籤啟用︰  
+
+* 針對參考組件中的類型建議 using/Import
+* 針對 NuGet 套件中的類型建議 using/Import
+
+啟用時，如果您使用的類型位於目前未匯入，但存在於參考組件或 NuGet 套件的命名空間中，將會建立 using/Import 陳述式。
+
+```csharp
+// Before
+Debug.WriteLine("Hello");
+
+// using System.Diagnostics;
+
+// After
+using System.Diagnostics;
+
+Debug.WriteLine("Hello");
+```
+
+```vb
+' Before
+Debug.WriteLine("Hello")
+
+' Imports System.Diagnostics
+
+// After
+Imports System.Diagnostics
+
+Debug.WriteLine("Hello")
+```
+
+#### <a name="add-missing-casesdefault-caseboth"></a>新增遺漏的 Case/預設的 Case/兩者
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0010 | C# 和 Visual Basic| Visual Studio 2017 15.3 版 |
 
 以 C# 建立 `switch` 陳述式或以 Visual Basic 建立 `Select Case` 陳述式時，您可以使用程式碼動作，自動新增遺漏的 Case 項目、預設的 Case 陳述式，或兩者。  對於如下的空陳述式：
 
@@ -94,7 +364,6 @@ switch(myEnum)
         break;
 }
 ```
-
 ```vb
 Select Case myEnum
     Case MyEnum.Item1
@@ -106,282 +375,117 @@ Select Case myEnum
 End Select
 ```
 
-### <a name="correct-misspelled-type"></a>更正拼字錯誤的類型
+#### <a name="add-null-checks-for-parameters"></a>新增參數的 Null 檢查
+| 適用語言 |  支援版本 |
+| -------------------- | ----------------  |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版 |
 
-如果您不小心拼錯 Visual Studio 中的類型，這個快速動作會自動更正它。  您會看到燈泡功能表中的這些項目**「變更 '*拼字錯誤類型*' 為 '*正確類型*'**。  例如: 
-
-```csharp
-// Before
-private viod MyMethod()
-{
-}
-
-// Change 'viod' to 'void'
-
-// After
-private void MyMethod()
-{
-}
-```
-
-```vb
-' Before
-Function MyFunction as Intger
-End Function
-
-' Change 'Intger' to 'Integer'
-
-' After
-Function MyFunction as Integer
-End Function
-```
-
-### <a name="remove-unnecessary-cast"></a>移除不必要的 Cast
-
-如果您將類型轉型為不需要轉型的另一種類型，**移除不必要的 Cast** 快速動作項目將會移除您程式碼中的 Cast。
-
-```csharp
-// before
-int number = (int)3;
-
-// Remove Unnecessary Cast
-
-// after
-int number = 3;
-```
-
-```vb
-' Before
-Dim number as Integer = CType(3, Integer)
-
-' Remove Unnecessary Cast
-
-' After
-Dim number as Integer = 3
-```
-
-### <a name="replace-method-with-property-or-replace-property-with-method"></a>以屬性取代方法或以方法取代屬性
-
-這些快速動作會將方法轉換為屬性，或反過來轉換。  下列範例顯示從方法變更為屬性。  相反的情況下，只要反轉「之前」和「之後」區段。
-
-```csharp
-private int MyValue;
-
-// Before
-public int GetMyValue()
-{
-    return MyValue;
-}
-
-// Replace 'GetMyValue' with property
-
-// After
-public int MyValue
-{
-    get { return MyValue; }
-}
-```
-
-```vb
-Dim MyValue As Integer
-
-' Before
-Function GetMyValue() As Integer
-    Return MyValue
-End Function
-
-' Replace 'GetMyValue' with property
-
-' After
-ReadOnly Property MyValue As Integer
-    Get
-        Return MyValue
-    End Get
-End Property
-```
-
-### <a name="make-method-synchronous"></a>將方法設為同步
-
-對方法使用 `async`/`Async` 關鍵字時，預期在該方法中的某處，也會使用 `await`/`Await` 關鍵字。  不過，若情況不是這樣，就會顯示快速動作，讓您可藉由移除 `async`/`Async` 關鍵字和變更傳回型別將方法設為同步。  使用 [快速動作] 功能表的 [將方法設為同步] 選項。
+這個快速動作可讓您在程式碼中新增檢查，以判斷參數是否為 Null。
 
 ```csharp
 // Before
-async Task<int> MyAsyncMethod()
+class MyClass
 {
-    return 3;
+    public string MyProperty { get; set; }
+
+    public MyClass(string myProperty) // cursor inside myProperty
+    {
+        MyProperty = myProperty;
+    }
 }
 
-// Make method synchronous
+// Add null check
 
 // After
-int MyAsyncMethod()
+class MyClass
 {
-    return 3;
+    public string MyProperty { get; set; }
+
+    public MyClass(string myProperty)
+    {
+        MyProperty = myProperty ?? throw new ArgumentNullException(nameof(myProperty));
+    }
 }
 ```
 
-```vb
-' Before
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return 3
-End Function
-
-' Make method synchronous
-
-' After
-Function MyAsyncMethod() As Integer
-    Return 3
-End Function
-```
-
-### <a name="make-method-asynchronous"></a>將方法設為非同步
-
-在方法內使用 `await`/`Await` 關鍵字時，預期方法本身會標記 `async`/`Async` 關鍵字。  不過，若情況不是這樣，就會顯示快速動作，讓您可以將方法設為非同步。  使用 [快速動作] 功能表的 [將方法/函式設為非同步] 選項。
+#### <a name="add-argument-name"></a>新增引數名稱
+| 適用語言 |  支援版本 |
+| -------------------- | ----------------  |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版 |
 
 ```csharp
 // Before
-int MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
+var date = new DateTime(1997, 7, 8);
 
-// Make method synchronous
+// Include argument name 'year' (include trailing arguments)
 
 // After
-async Task<int> MyAsyncMethod()
-{
-    return await Task.Run(...);
-}
+var date = new DateTime(year: 1997, month: 7, day: 8);
 ```
 
-```vb
-' Before
-Function MyAsyncMethod() as Integer
-    Return  Await Task.Run(...)
-End Function
+#### <a name="add-braces"></a>新增大括弧
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0011 | C# | Visual Studio 2017 RTW |
 
-' Make method synchronous
-
-' After
-Async Function MyAsyncMethod() As Task(Of Integer)
-    Return Await Task.Run(...)
-End Function
-```
-
-### <a name="remove-unnecessary-usingsimports"></a>移除不必要的 using/Import
-
-**移除不必要的 using/Import** 快速動作將會移除目前檔案中任何未使用的 `using` 和 `Import` 陳述式。  當您選取此項目時，將會立即移除未使用的命名空間匯入。
-
-### <a name="add-usingsimports-for-types-in-reference-assemblies-nuget-packages-or-other-types-in-your-solution"></a>針對參考組件的類型、NuGet 套件的類型或您方案中的其他類型新增 using/Import
-
-使用位於您方案中其他專案的類型會自動顯示快速動作，但是其他則需要從 [工具] > [選項] > [C#] 或 [基本] > [進階] 索引標籤啟用︰
-
-* 針對參考組件中的類型建議 using/Import
-* 針對 NuGet 套件中的類型建議 using/Import
-
-啟用時，如果您使用的類型位於目前未匯入，但存在於參考組件或 NuGet 套件的命名空間中，將會建立 using/Import 陳述式。
+「新增大括弧」快速動作會為單行 `if` 陳述式加上大括弧並自動換行。
 
 ```csharp
 // Before
-Debug.WriteLine("Hello");
+if (true)
+    return "hello,world";
 
-// using System.Diagnostics;
-
-// After
-using System.Diagnostics;
-
-Debug.WriteLine("Hello");
-```
-
-```vb
-' Before
-Debug.WriteLine("Hello")
-
-' Imports System.Diagnostics
+// Add braces
 
 // After
-Imports System.Diagnostics
-
-Debug.WriteLine("Hello")
+if (true) 
+{
+    return "hello,world";
+}
 ```
 
-### <a name="convert-to-interpolated-string"></a>轉換成字串插值
+#### <a name="add-and-order-modifiers"></a>新增及排序修飾詞
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0036 | C# 和 Visual Basic| Visual Studio 2017 15.5 版 |
+| IDE0040 | C# 和 Visual Basic| Visual Studio 2017 15.5 版 |
 
-[字串插值](/dotnet/csharp/language-reference/keywords/interpolated-strings)可以輕鬆表示含有內嵌變數的字串，類似於 **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** 方法。  這個快速動作會辨識字串串連或使用 **String.Format** 的情況，並將使用方式變更為字串插值。
+這些快速動作可讓您排序現有的並新增遺漏的存取範圍修飾詞，來協助您組織化修飾詞。
 
 ```csharp
 // Before
-int num = 3;
-string s = string.Format("My string with {0} in the middle", num);
+enum Color
+{
+    Red, White, Blue
+}
 
-// Convert to interpolated string
+// Add accessibility modifiers
 
 // After
-int num = 3;
-string s = $"My string with {num} in the middle";
+internal enum Color
+{
+    Red, White, Blue
+}
+```
+```csharp
+// Before
+static private int thisFieldIsPublic;
+
+// Order modifiers
+
+// After
+private static int thisFieldIsPublic;
+
 ```
 
-```vb
-' Before
-Dim num as Integer = 3
-Dim s as String = String.Format("My string with {0} in the middle", num)
+### <a id="transform"></a> 程式碼轉換
 
-' Convert to interpolated string
+#### <a name="convert-if-construct-to-switch"></a>將 **if** 建構轉換為 **switch**
+| 適用語言 |  支援版本 |
+| -------------------- | ----------------  |
+| C# 和 Visual Basic| Visual Studio 2017 15.3 版 |
 
-' After
-Dim num as Integer = 3
-Dim s As String = $"My string with {num} in the middle"
-```
-
-### <a name="remove-merge-conflict-markers"></a>移除合併衝突標記
-
-這些快速動作可讓您透過「採取變更」解決合併衝突，這樣會移除衝突的程式碼和標記。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 解決合併衝突](../ide/media/vside-refactoring-merge-conflicts.png)
-
-### <a name="add-null-checks-for-parameters"></a>新增參數的 Null 檢查
-
-這個快速動作可讓您在程式碼中新增檢查，以判斷參數是否為 Null。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 新增 Null 檢查](../ide/media/vside-refactoring-nullcheck.png)
-
-### <a name="constructor-generator-improvements"></a>建構函式產生器的增強功能
-
-當您建立建構函式時，這個快速動作可讓您選取要產生的屬性或欄位，或者您可以從空的內文產生建構函式。 您也可以使用它將參數從呼叫位置新增至現有的建構函式。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 產生建構函式](../ide/media/vside-refactoring-constructors.png)
-
-### <a name="remove-unused-variables"></a>移除未使用的變數
-
-這個快速動作可讓您移除已宣告但從未在程式碼中使用的變數。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 未使用的變數](../ide/media/vside-refactoring-unusedvars.png)
-
-### <a name="generate-overrides"></a>產生覆寫
-
-這個快速動作可讓您從類別或結構中的空白行建立覆寫。 [挑選成員] 對話方塊可讓您選擇要覆寫的成員。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 覆寫](../ide/media/vside-refactoring-overrides.png)
-
-![重構 - [覆寫] 對話方塊](../ide/media/vside-refactoring-overrides-dialog.png)
-
-### <a name="change-base-for-numeric-literals"></a>變更數值常值的基底
-
-這個快速動作可讓您將數值常值從一個基底數值系統轉換至另一個基底數值系統。 例如，您可以將數字變更為十六進位或二進位格式。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 變更基底](../ide/media/vside-refactoring-changebase1.png)
-
-![重構 - 變更基底](../ide/media/vside-refactoring-changebase2.png)
-
-### <a name="insert-digit-separators-into-literals"></a>將數字分隔符號插入到常值中
-
-這個快速動作可讓您將分隔符號字元加入到常值中。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
-
-![重構 - 變更數字分隔符號](../ide/media/vside-refactoring-separators.png)
-
-### <a name="convert-if-construct-to-switch"></a>將 **if** 建構轉換為 **switch**
-
-這個快速動作可讓您將 **if-then-else** 建構轉換為 **switch** 建構。 (僅適用於 Visual Studio 2017 (15.3 版 - 預覽))。
+這個快速動作可讓您將 **if-then-else** 建構轉換為 **switch** 建構。
 
 ```csharp
 // Before
@@ -430,7 +534,416 @@ Select Case obj
 End Select
 ```
 
-## <a name="see-also"></a>請參閱
+#### <a name="convert-to-interpolated-string"></a>轉換成字串插值
+| 適用語言 |  支援版本 |
+| -------------------- | ----------------  |
+| C# 6.0+ 和 Visual Basic 14+ | Visual Studio 2017 RTW |
 
-[程式碼樣式及快速動作](code-styles-and-quick-actions.md)  
-[撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
+[字串插值](/dotnet/csharp/language-reference/keywords/interpolated-strings)可以輕鬆表示含有內嵌變數的字串，類似於 **[String.Format](https://msdn.microsoft.com/library/system.string.format.aspx)** 方法。  這個快速動作會辨識字串串連或使用 **String.Format** 的情況，並將使用方式變更為字串插值。
+
+```csharp
+// Before
+int num = 3;
+string s = string.Format("My string with {0} in the middle", num);
+
+// Convert to interpolated string
+
+// After
+int num = 3;
+string s = $"My string with {num} in the middle";
+```
+```vb
+' Before
+Dim num as Integer = 3
+Dim s as String = String.Format("My string with {0} in the middle", num)
+
+' Convert to interpolated string
+
+' After
+Dim num as Integer = 3
+Dim s As String = $"My string with {num} in the middle"
+```
+
+#### <a name="use-object-initializers"></a>使用物件初始設定式
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0017 | C# 和 Visual Basic | Visual Studio 2017 RTW |
+
+這個快速動作可讓您使用[物件初始設定式](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md) ，而非叫用建構函式及新增額外的指派陳述式。
+
+```csharp
+// Before
+var c = new Customer();
+c.Age = 21;
+
+// Object initialization can be simplified
+
+// After
+var c = new Customer() { Age = 21 };
+```
+```vb
+' Before
+Dim c = New Customer()
+c.Age = 21
+
+' Object initialization can be simplified
+
+' After
+Dim c = New Customer() With {.Age = 21}
+```
+
+#### <a name="use-collection-initializers"></a>使用集合初始設定式
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0028 | C# 和 Visual Basic | Visual Studio 2017 RTW |
+
+這個快速動作可讓您使用[集合初始設定式](/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers.md)，而非多次呼叫您類別的 `Add` 方法。
+
+```csharp
+// Before
+var list = new List<int>();
+list.Add(1);
+list.Add(2);
+list.Add(3);
+
+// Collection initialization can be simplified
+
+// After
+var list = new List<int> { 1, 2, 3 };
+```
+```vb
+' Before
+Dim list = New List(Of Integer)
+list.Add(1)
+list.Add(2)
+list.Add(3)
+
+' Collection initialization can be simplified
+
+' After
+Dim list = New List(Of Integer) From {1, 2, 3}
+
+```  
+
+#### <a name="convert-auto-property-to-full-property"></a>將自動屬性轉換為完整屬性
+|  適用語言 |  支援版本 |
+|  -------------------- | ----------------  |
+| C# 和 Visual Basic | Visual Studio 2017 15.5 版 |
+
+這個快速動作可讓您將自動屬性轉換為完整屬性，反之亦然。
+
+```csharp
+// Before
+private int MyProperty { get; set; }
+
+// Convert to full property
+
+// After
+private int MyProperty
+{
+    get { return _myProperty; }
+    set { _myProperty = value; } 
+}
+```
+```vb
+' Before
+Public Property Name As String
+
+' Convert to full property
+
+' After
+Private _Name As String
+
+Public Property Name As String
+    Get
+        Return _Name
+    End Get
+    Set
+        _Name = Value
+    End Set
+End Property
+
+```
+
+#### <a name="convert-block-body-to-expression-bodied-member"></a>將區塊主體轉換成運算式主體成員
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0021-27 | C# 6.0+ | Visual Studio 2017 RTW |
+
+這個快速動作允許您為方法、建構函式、運算子、屬性、索引子及存取子將區塊主體轉換為運算式主體成員。
+
+```csharp
+//Before
+class MyClass4
+{
+    private int _myProperty;
+
+    public int MyProperty
+    {
+        get { return _myProperty; }
+        set
+        {
+            _myProperty = value;
+        }
+    }
+
+    public MyClass4(int myProperty)
+    {
+        MyProperty = myProperty;
+    }
+
+    public void PrintProperty()
+    {
+        Console.WriteLine(MyProperty);
+    }
+}
+
+// Use expression body for accessors/constructors/methods
+
+// After
+class MyClass4
+{
+    private int _myProperty;
+
+    public int MyProperty
+    {
+        get => _myProperty;
+        set => _myProperty = value;
+    }
+
+    public MyClass4(int myProperty) => MyProperty = myProperty;
+
+    public void PrintProperty() => Console.WriteLine(MyProperty);
+}
+```
+
+#### <a name="convert-anonymous-function-to-local-function"></a>將匿名函式轉換成區域函式
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0039 | C# 7.0+ | Visual Studio 2017 15.5 版 |
+
+這個快速動作會將匿名函式轉換成區域函式。
+
+```csharp 
+// Before
+Func<int, int> fibonacci = null;
+fibonacci = (int n) =>
+{
+    return n <= 1 ? 1 : fibonacci(n - 1) + fibonacci(n - 2);
+};
+
+// Use local function
+
+// After
+int fibonacci(int n)
+{
+    return n <= 1 ? 1 : fibonacci(n-1) + fibonacci(n-2);
+}
+
+```
+
+#### <a name="convert-referenceequals-to-is-null"></a>將 `ReferenceEquals` 轉換為 `is null`
+|  診斷識別碼 | 適用語言 |  支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0041 | C# 7.0+ | Visual Studio 2017 15.5 版 |
+
+這個快速動作會建議在可能的情況下使用[模式比對](/dotnet/csharp/pattern-matching)，而非 ```ReferenceEquals``` 程式碼模式。
+
+```csharp
+// Before
+var value = "someString";
+if (object.ReferenceEquals(value, null))
+{
+    return;
+}
+
+// Use 'is null' check
+
+// After
+var value = "someString";
+if (value is null)
+{
+    return;
+}
+```
+
+#### <a name="introduce-pattern-matching"></a>引進模式比對
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0020 | C# 7.0+ | Visual Studio 2017 RTW |
+| IDE0019 | C# 7.0+ | Visual Studio 2017 RTW |
+
+這個快速動作會建議使用[模式比對](/dotnet/csharp/pattern-matching)並搭配 C# 中的轉換及 Null 檢查。   
+
+```csharp
+// Before
+if (o is int) 
+{
+    var i = (int)o; 
+    ... 
+}
+
+// Use pattern matching
+
+// After
+if (o is int i) 
+{
+    ...
+}
+
+```
+```csharp
+// Before
+var s = o as string;
+if (s != null) 
+{
+    ...
+}
+
+// Use pattern matching
+
+// After
+if (o is string s) 
+{
+    ...
+}
+```
+
+#### <a name="change-base-for-numeric-literals"></a>變更數值常值的基底
+| 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| C# 7.0+ 及 Visual Basic 14+ | Visual Studio 2017 15.3 版 |
+
+這個快速動作可讓您將數值常值從一個基底數值系統轉換至另一個基底數值系統。 例如，您可以將數字變更為十六進位或二進位格式。 
+
+```csharp
+// Before
+int countdown = 2097152;
+
+// Convert to hex
+
+// After
+int countdown = 0x200000;
+```
+```vb
+' Before
+Dim countdown As Integer = 2097152
+
+' Convert to hex
+
+' After
+Dim countdown As Integer = &H200000
+```
+
+#### <a name="insert-digit-separators-into-literals"></a>將數字分隔符號插入到常值中
+| 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| C# 7.0+ 及 Visual Basic 14+ | Visual Studio 2017 15.3 版 |
+
+這個快速動作可讓您將分隔符號字元加入到常值中。  
+
+```csharp
+// Before
+int countdown = 1000000;
+
+// Separate thousands
+
+// After
+int countdown = 1_000_000;
+```
+```vb
+' Before
+Dim countdown As Integer = 1000000
+
+' Separate thousands
+
+' After
+Dim countdown As Integer = 1_000_000
+```
+
+#### <a name="use-explicit-tuple-names"></a>使用明確的元組名稱
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0033 | C# 7.0+ 和 Visual Basic 15+ | Visual Studio 2017 RTW |
+
+這個快速動作會識別可使用明確元組名稱，而非 Item1、Item2 等的區域。
+
+```csharp
+// Before
+(string name, int age) customer = GetCustomer();
+var name = customer.Item1;
+
+// Use explicit tuple name
+
+// After
+(string name, int age) customer = GetCustomer();
+var name = customer.name;
+```
+```vb
+' Before
+Dim customer As (name As String, age As Integer) = GetCustomer()
+Dim name = customer.Item1
+
+' Use explicit tuple name
+
+' After
+Dim customer As (name As String, age As Integer) = GetCustomer()
+Dim name = customer.name
+```
+
+#### <a name="use-inferred-names"></a>使用推斷名稱
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0037 | C# | Visual Studio 2017 v. 15.5 |
+| IDE0037 | C# 7.1+ | Visual Studio 2017 v. 15.5 |
+
+這些快速動作會指出使用者何時可在匿名型別中使用推斷成員名稱或 C# 7.1 的推斷元組項目名稱。
+
+```csharp 
+// Before
+var anon = new { age = age, name = name };
+
+// Use inferred member name
+
+// After
+var anon = new { age, name };
+```
+```csharp
+// Before
+var tuple = (age: age, name: name);
+
+// Use inferred tuple element name
+
+// After
+var tuple = (age, name);
+
+```
+
+#### <a name="deconstruct-tuple-declaration"></a>解構元組宣告
+| 診斷識別碼 | 適用語言 | 支援版本 |
+| ------- | -------------------- | ----------------  |
+| IDE0042 | C# 7.0+ | Visual Studio 2017 v. 15.5 |
+
+這個快速動作可讓您解構元組變數宣告。 
+
+```csharp 
+// Before
+var person = GetPersonTuple();
+Console.WriteLine($"{person.name} {person.age}");
+
+(int x, int y) point = GetPointTuple();
+Console.WriteLine($"{point.x} {point.y}");
+
+//Deconstruct variable declaration
+
+// After
+var (name, age) = GetPersonTuple();
+Console.WriteLine($"{name} {age}");
+
+(int x, int y) = GetPointTuple();
+Console.WriteLine($"{x} {y}");
+```
+
+## <a name="see-also"></a>另請參閱
+* [程式碼樣式及快速動作](code-styles-and-quick-actions.md)  
+* [撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)
