@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 191206e9cc16271e64abbeaba87d86ac0108924b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 當編輯資料繫結控制項中的值，使用者必須瀏覽目前的資料錄控制項繫結至基礎資料來源認可更新的值。 當您拖曳項目從[資料來源視窗](add-new-data-sources.md)拖曳至表單，您卸除的第一個項目產生程式碼到**儲存**按鈕的 click 事件的<xref:System.Windows.Forms.BindingNavigator>。 此程式碼會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法<xref:System.Windows.Forms.BindingSource>。 因此，呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法只會產生第一個<xref:System.Windows.Forms.BindingSource>加入至表單。  
@@ -38,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  設計工具加入`BindingSource.EndEdit`放到表單上的程式碼，僅針對第一個項目。 因此，您必須加入一行程式碼以呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>每個方法<xref:System.Windows.Forms.BindingSource>表單上。 您可以手動加入一行呼叫的程式碼<xref:System.Windows.Forms.BindingSource.EndEdit%2A>每個方法<xref:System.Windows.Forms.BindingSource>。 或者，您可以新增`EndEditOnAllBindingSources`方法加入表單並執行儲存之前，先呼叫它。  
   
- 下列程式碼會使用[LINQ (Language-Integrated Query ()](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)來逐一查看所有的查詢<xref:System.Windows.Forms.BindingSource>元件並呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>每個方法<xref:System.Windows.Forms.BindingSource>表單上。  
+ 下列程式碼會使用[LINQ (Language-Integrated Query ()](/dotnet/csharp/linq/)來逐一查看所有的查詢<xref:System.Windows.Forms.BindingSource>元件並呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>每個方法<xref:System.Windows.Forms.BindingSource>表單上。  
   
 ## <a name="to-call-endedit-for-all-bindingsource-components-on-a-form"></a>若要呼叫 EndEdit 表單上的所有 BindingSource 元件  
   

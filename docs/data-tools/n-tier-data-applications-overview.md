@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3949d49f763c2513e86c2cd3f1b20c20fb858ecc
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 0fb26eddd3a7bf6af9a2888b6fbc8efa79e33bf5
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="n-tier-data-applications-overview"></a>多層式架構資料應用程式概觀
 *多層式架構*資料應用程式是分成多個資料應用程式*層*。 多層式架構應用程式也稱為 「 分散式應用程式 」 和 「 多層式應用程式 」，在個別分成離散層級用戶端與伺服器之間分散處理。 當您開發存取資料的應用程式時，您應該有清楚的區隔構成應用程式的各層之間。  
@@ -34,7 +34,7 @@ Visual Studio 包含可協助開發人員建立多層式架構應用程式的一
   
 -   [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供設定至不同的命名空間中產生的 DataContext 和資料類別。 這可讓資料存取與資料實體層的邏輯分隔。  
   
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的 DataContext 結合在一起。 如需詳細資訊，請參閱[N-tier 和遠端的應用程式以及 LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)。  
+-   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)提供<xref:System.Data.Linq.Table%601.Attach%2A>方法可讓您將應用程式中的不同層級的 DataContext 結合在一起。 如需詳細資訊，請參閱[N-tier 和遠端的應用程式以及 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)。  
   
 ## <a name="presentation-tier"></a>展示層  
 *展示層*使用者互動的應用程式層。 它通常會包含其他應用程式邏輯也。 典型的展示層元件包括：  
@@ -82,7 +82,7 @@ Visual Studio 包含可協助開發人員建立多層式架構應用程式的一
   
 [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 
-[多層式架構和遠端的應用程式使用 LINQ to SQL](http://msdn.microsoft.com/Library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+[多層式架構和遠端的應用程式使用 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)  
   
 ## <a name="see-also"></a>請參閱
 [逐步解說： 建立 N-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   

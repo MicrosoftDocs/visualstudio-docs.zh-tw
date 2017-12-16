@@ -18,11 +18,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d9784ae650a411ef4fe5086ae8bf756147fd2365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114：方法安全性應該是類型的超集
 |||  
@@ -33,7 +33,7 @@ ms.lasthandoff: 10/31/2017
 |中斷變更|中斷|  
   
 ## <a name="cause"></a>原因  
- 型別具有宣告式安全性，而且其中一個方法具有相同的安全性動作的宣告式安全性及安全性動作不是[連結要求](/dotnet/framework/misc/link-demands)或[繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)，以及權限檢查型別所不方法所檢查的權限的子集。  
+ 型別具有宣告式安全性，而且其中一個方法具有相同的安全性動作的宣告式安全性及安全性動作不是[連結要求](/dotnet/framework/misc/link-demands)，並沒有權限的子集這種型別所檢查的權限。檢查此方法。  
   
 ## <a name="rule-description"></a>規則描述  
  方法不應該都相同的動作方法層級和類型層級宣告式安全性。 不會合併兩個檢查;只有方法層級需求會套用。 例如，如果型別要求權限`X`，其中一個方法會要求權限和`Y`，程式碼沒有擁有的權限`X`執行方法。  
@@ -63,6 +63,5 @@ ms.lasthandoff: 10/31/2017
 **[（要求的方法） 沒有讀取權限]無法存取個人資訊： 要求失敗。**   
 ## <a name="see-also"></a>另請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
- [繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)   
  [連結要求](/dotnet/framework/misc/link-demands)   
  [資料與模型化](/dotnet/framework/data/index)

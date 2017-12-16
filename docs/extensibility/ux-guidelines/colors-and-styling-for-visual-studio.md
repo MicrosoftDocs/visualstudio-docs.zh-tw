@@ -12,11 +12,11 @@ caps.latest.revision: "4"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: ff1f5d9c7c28c63e2f1f1c0783f1032888e3c645
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b6d287e7e85ef908f9504f8e1f66e0c221042553
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>色彩和樣式設定適用於 Visual Studio
 ## <a name="using-color-in-visual-studio"></a>使用 Visual Studio 中的色彩  
@@ -320,7 +320,7 @@ Windows 會使用數種高對比系統層級主題增加文字、 背景和影�
 ### <a name="building-a-vspackage-for-your-customizable-colors"></a>建立 VSPackage，您可自訂的色彩  
 VSPackage 可以控制的字型和色彩透過自訂類別，和字型和色彩 屬性頁上顯示的項目。 當使用這項機制，Vspackage 必須實作[IVsFontAndColorDefaultsProvider](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolordefaultsprovider.aspx)介面和其相關聯的介面。  
   
-基本上，此機制可用來修改所有現有的顯示項目和包含它們的類別。 不過，它不應修改的文字編輯器的類別目錄或其顯示的項目。 如需有關文字編輯器分類的詳細資訊，請參閱[字型和色彩概觀](https://msdn.microsoft.com/en-us/library/bb165065.aspx)。  
+基本上，此機制可用來修改所有現有的顯示項目和包含它們的類別。 不過，它不應修改的文字編輯器的類別目錄或其顯示的項目。 如需有關文字編輯器分類的詳細資訊，請參閱[字型和色彩概觀](../font-and-color-overview.md)。  
   
 若要實作的自訂類別，或顯示項目，VSPackage 必須：  
   
@@ -397,7 +397,7 @@ IDE 會快取的字型和色彩設定的相關資訊。 因此，IDE 字型和�
   
  **OR**  
   
--   **輪詢變更 IDE**。 這可以透過系統實作[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)介面。 雖然主要是針對支援的持續性， [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以取得字型和色彩資訊顯示項目。 如需有關字型和色彩設定的詳細資訊，請參閱 MSDN 文章：[存取儲存的字型和色彩設定](https://msdn.microsoft.com/en-us/library/bb166382.aspx)。  
+-   **輪詢變更 IDE**。 這可以透過系統實作[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)介面。 雖然主要是針對支援的持續性， [GetItem](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.getitem.aspx)方法可以取得字型和色彩資訊顯示項目。 如需有關字型和色彩設定的詳細資訊，請參閱 MSDN 文章：[存取儲存的字型和色彩設定](../accessing-stored-font-and-color-settings.md)。  
   
 > **注意：**若要確保輪詢結果正確無誤，請使用[IVsFontAndColorCacheManager](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorcachemanager.aspx)介面，以判斷是否需要快取排清及更新之前呼叫的方法擷取[IVsFontAndColorStorage](https://msdn.microsoft.com/en-us/library/microsoft.visualstudio.shell.interop.ivsfontandcolorstorage.aspx)介面。
   

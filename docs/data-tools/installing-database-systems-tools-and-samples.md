@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 17bdaffa8fdbb6ddff9d7fe5590db021997aa01f
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/22/2017
 
 如果您使用 Azure 儲存體 Api，安裝的 Azure 儲存體模擬器在本機電腦上在開發期間才能避免產生費用，直到您準備好要部署到生產環境。 如需詳細資訊，請參閱[使用 Azure 儲存體模擬器進行開發和測試](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/)。
 
-下列清單包含常見可用的資料庫系統的某些 Visual Studio 專案中。 清單未全部列出。 如需第三方廠商，提供可讓 Visual Studio 工具與深度整合 ADO.NET 資料提供者的清單，請參閱[ADO.NET 資料提供者](https://msdn.microsoft.com/en-us/library/dd363565.aspx)。
+下列清單包含常見可用的資料庫系統的某些 Visual Studio 專案中。 清單未全部列出。 如需第三方廠商，提供可讓 Visual Studio 工具與深度整合 ADO.NET 資料提供者的清單，請參閱[ADO.NET 資料提供者](/dotnet/framework/data/adonet/data-providers)。
 
 ## <a name="microsoft-sql-server"></a>Microsoft SQL Server
 

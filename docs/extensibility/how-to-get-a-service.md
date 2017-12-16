@@ -13,11 +13,11 @@ caps.latest.revision: "20"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 4ccb0abcf70f66812ab1ffe91958119f08c97966
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: dc427dbca201b472feca89201284ab009abd9d34
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-get-a-service"></a>如何： 取得服務
 您通常需要取得 Visual Studio 服務來存取不同的功能。 一般情況下，Visual Studio 服務提供您可以使用的一個或多個介面。 您可以從 VSPackage 取得大部分的服務。  
@@ -28,9 +28,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>從初始化 VSPackage 取得服務  
   
-1.  每個 Visual Studio 擴充功能開頭 VSIX 部署專案，以將包含延伸模組資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到 VSIX 專案範本，在**新專案**對話方塊底下**Visual C# / 擴充性**。  
+1.  每個 Visual Studio 擴充功能開頭 VSIX 部署專案，以將包含延伸模組資產。 建立[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]VSIX 專案，名為`GetServiceExtension`。 您可以找到 VSIX 專案範本，在**新專案**對話方塊底下**Visual C# > 擴充性**。  
   
-2.  現在，加入名為的自訂命令項目範本**GetServiceCommand**。 在**加入新項目**對話方塊中，移至**Visual C# / 擴充性**選取**自訂命令**。 在**名稱**視窗的底部欄位中，將命令檔名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂的命令，[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2.  現在，加入名為的自訂命令項目範本**GetServiceCommand**。 在**加入新項目**對話方塊中，移至**Visual C# > 擴充性**選取**自訂命令**。 在**名稱**視窗的底部欄位中，將命令檔名稱變更為**GetServiceCommand.cs**。 如需有關如何建立自訂的命令，[建立擴充的功能表命令](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 3.  在 GetServiceCommand.cs，移除 MenuItemCommand 方法的主體，並加入下列程式碼：  
   

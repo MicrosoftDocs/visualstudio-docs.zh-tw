@@ -18,11 +18,11 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fb802e0d97d265c01540ca10ffe8d0dcf9b273cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  方法包含指定的 PermitOnly] 或 [拒絕的安全性動作的安全性檢查。  
   
 ## <a name="rule-description"></a>規則描述  
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)和<xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由了解進階的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。  
+ <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>安全性動作應只由了解進階的[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]安全性。 而使用這些安全性動作的程式碼應該接受安全性檢閱。  
   
  拒絕改變安全性要求的回應中發生堆疊查核行程的預設行為。 它可讓您指定必須不持續時間的拒絕的方法，不論實際呼叫堆疊中的呼叫端的權限授與的權限。 如果堆疊查核行程偵測到拒絕，受保護的方法，如果要求的使用權限包含在拒絕的權限，堆疊查核行程便會失敗。 PermitOnly 也會改變堆疊查核行程的預設行為。 它可讓程式碼，以指定可以授與，不論呼叫端的權限那些權限。 如果堆疊查核行程偵測 PermitOnly，受保護的方法，如果要求的使用權限不會納入 PermitOnly 所指定的權限，堆疊查核行程便會失敗。  
   
@@ -82,5 +82,4 @@ ms.lasthandoff: 10/31/2017
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>   
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
- [覆寫安全性檢查](http://msdn.microsoft.com/en-us/4acdeff5-fc05-41bf-8505-7387cdbfca28)   
- [使用 PermitOnly 方法](http://msdn.microsoft.com/en-us/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+

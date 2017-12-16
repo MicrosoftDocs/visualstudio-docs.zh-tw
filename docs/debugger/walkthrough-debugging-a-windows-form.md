@@ -26,11 +26,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a21450dda35addae55019545d67ab7f1e4ebe99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 02db9a01286e65f371ab4d8388102a3db4c5602e
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>逐步解說：偵錯 Windows Form
 Windows Form 是其中一個最常見的受管理應用程式。 Windows Form 建立標準的 Windows 應用程式。 您可以完成這個逐步解說中使用 Visual Basic、 C# 或 c + +。  
@@ -126,7 +126,7 @@ Windows Form 是其中一個最常見的受管理應用程式。 Windows Form �
   
 4.  在**偵錯**功能表上，選擇**Windows**，然後**監看式**，然後按一下**監看式 1**。  
   
-5.  在**監看式 1**視窗中，按一下空白資料列。 在**名稱**欄中，輸入`textBox1.Text`（如果您正在使用 Visual Basic、 Visual C# 或 J#） 或`textBox1->Text`（如果您使用 c + +），然後按 ENTER 鍵。  
+5.  在**監看式 1**視窗中，按一下空白資料列。 在**名稱**欄中，輸入`textBox1.Text`（如果您正在使用 Visual Basic 或 Visual C#） 或`textBox1->Text`（如果您使用 c + +），然後按 ENTER 鍵。  
   
      **監看式 1**  視窗會顯示這個變數的值以引號括起來：  
   

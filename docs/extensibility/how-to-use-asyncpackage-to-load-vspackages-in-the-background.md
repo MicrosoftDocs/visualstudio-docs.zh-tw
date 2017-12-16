@@ -10,17 +10,17 @@ ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: "8"
 author: gregvanl
 ms.author: gregvanl
-ms.openlocfilehash: 8adc348553ba613898117f10ccd21a6e5cd02ab8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b89f021b181e653dff97368cc5c1f2d993f04323
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何： 使用 AsyncPackage 載入 Vspackage 在背景中
 正在載入和初始化 VS 套件可能會導致磁碟 I/O。 如果這類 I/O 情況發生在 UI 執行緒上，它可能會導致回應性問題。 為了解決這個問題，Visual Studio 2015 導入了<xref:Microsoft.VisualStudio.Shell.AsyncPackage>類別，可讓封裝載入背景執行緒上的。  
   
 ## <a name="creating-an-asyncpackage"></a>建立 AsyncPackage  
- 您可以藉由建立 VSIX 專案啟動 (**檔案 / 新增 / 專案 / Visual C# / 擴充性 / VSIX 專案**) 並加入 VSPackage 專案 (專案上按一下滑鼠右鍵和**新增/新增項目 / C# 項目/擴充性 /visualStudio Package**)。 您可以建立您的服務，並將這些服務加入至您的封裝。  
+ 您可以藉由建立 VSIX 專案啟動 (**檔案 > 新增 > 專案 > Visual C# > 擴充性 > VSIX 專案**) 並加入 VSPackage 專案 (以滑鼠右鍵按一下專案和**新增/新增項目 / C# 項目 /Extensibility/Visual Studio Package**)。 您可以建立您的服務，並將這些服務加入至您的封裝。  
   
 1.  衍生中的封裝<xref:Microsoft.VisualStudio.Shell.AsyncPackage>。  
   

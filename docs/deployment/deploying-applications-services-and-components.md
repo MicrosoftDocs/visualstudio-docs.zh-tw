@@ -1,7 +1,7 @@
 ---
-title: "部署應用程式、 服務和元件 |Microsoft 文件"
+title: "部署概觀-Visual Studio |Microsoft 文件"
 ms.custom: 
-ms.date: 07/14/2017
+ms.date: 11/26/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-deployment
@@ -22,36 +22,93 @@ helpviewer_keywords:
 - components [.NET Framework], deploying
 ms.assetid: 63fcdd5b-2e54-4210-9038-65bc23167725
 caps.latest.revision: "33"
-author: stevehoag
-ms.author: shoag
-manager: wpickett
-ms.openlocfilehash: 9d9aeaa80aa054b8178adbfc707b1537449776d7
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+author: mikejo5000
+ms.author: mikejo
+manager: ghogen
+ms.openlocfilehash: 30261fea83870b5bdfce11a25969207aad260ee4
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="deploying-applications-services-and-components"></a>部署應用程式、服務和元件
+# <a name="deployment-overview-in-visual-studio"></a>在 Visual Studio 中的部署概觀
 
-透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。  
-  
-下表描述不同的部署案例，並提供每個案例的詳細資訊連結。  
+透過部署應用程式、服務或元件，就可以將它散發到其他電腦、裝置、伺服器或雲端上進行安裝。 請在 Visual Studio 中針對您需要的部署類型選擇適當的方法。 （許多應用程式類型支援此處未描述其他部署工具命令列部署或 NuGet 等）。
 
-如需選項來建立 Windows 應用程式的安裝程式經驗的討論，請參閱[桌面到通用 Windows 平台 (UWP) 橋接器](/windows/uwp/porting/desktop-to-uwp-root#convert)。
+如需逐步教學課程，請參閱。
 
- 
-## <a name="in-this-section"></a>本章節內容  
-  
-| 部署情節 | 支援內容 |
-| --- | --- |  
-| **發行至雲端：**您可以讓應用程式、 服務和資料可從任何地方使用 Visual Studio 將它們部署到 Microsoft Azure。|[應用程式發行至 Microsoft Azure](http://msdn.microsoft.com/library/windowsazure/ee460772.aspx) |
-| **發行 Windows 應用程式：**您可以輕鬆地建置提交，並銷售您的應用程式從 Microsoft Store 世界各地的客戶。 |[發行 Windows 應用程式](https://developer.microsoft.com/store/publish-apps) |
-| **部署 ASP.NET 應用程式或服務：**可以數種不同方式部署 ASP.NET 應用程式和服務。|[部署 ASP.NET web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment) |
-| **適用於 Office 的增益集發佈：**可以在從 Visual Studio 的 Office 增益集發行。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
-| **部署 WCF 或 OData 服務：**其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發和部署 WCF Data Services](https://docs.microsoft.com/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **部署桌面應用程式：**藉由使用 ClickOnce 部署，您可以發行到 web 伺服器或網路檔案共用的桌面應用程式。 使用者只要按一下，就可以安裝應用程式。 | [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md) |
-| **部署 Visual c + + 應用程式：**您可以部署與應用程式的 Visual c + + 執行階段使用集中部署、 本機部署或靜態連結。 | [部署原生傳統型應用程式 (Visual C++)](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md) |
-| **建立安裝程式：** MSI 為基礎的 WiX 安裝程式可以使用建立[WiX 工具組 Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)。 請注意，InstallShield Limited Edition 不再隨附於 Visual Studio;請洽詢[Flexera 軟體](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)有關 Visual Studio 2017 的可用性。 |
-| **部署應用程式進行測試：**更趨精密完美的開發和測試部署到虛擬環境的應用程式，您可以啟用。|[在實驗室環境中測試](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md) | 
-| **安裝必要條件：**您可以藉由設定泛型安裝程式，稱為啟動載入器安裝桌面應用程式的必要條件元件。|[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md) |
-| **部署 LightSwitch 應用程式或服務：** LightSwitch 不再適用於 Visual Studio 2017，但仍然從 Visual Studio 2015 及更早版本可以部署。 | [部署 LightSwitch 應用程式](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |  
+### <a name="deploy-to-local-folder"></a>將部署到本機資料夾
+
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 使用發行工具部署到本機資料夾。 實際可用的選項取決於您的應用程式類型。 在 方案總管 中，以滑鼠右鍵按一下您的專案，然後選擇 **發行**，然後選擇 **資料夾**。 如需詳細資訊，請參閱[部署至本機資料夾](quickstart-deploy-to-local-folder.md)。
+
+    ![選擇發行](../deployment/media/quickstart-publish.png)
+
+- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用本機部署或靜態連結。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+
+### <a name="publish-to-web-or-deploy-to-network-share"></a>發行至 Web 或網路共用部署
+
+- **ASP.NET**， **ASP.NET Core**， **Node.js**， **Python**，和**.NET Core**： 您可以將部署到使用發行工具使用 FTP 或 Web Deploy 的網站。 如需詳細資訊，請參閱[部署網站至](quickstart-deploy-to-a-web-site.md)。
+
+    在 方案總管 中，以滑鼠右鍵按一下專案，然後選擇 **發行**。 在 [發行] 工具中，選擇您想要的選項組態步驟。
+
+    ![選擇 IIS、 FTP 和其他內容。](../deployment/media/quickstart-publish-iis-ftp.png)
+
+    您也可以部署 ASP.NET 應用程式和服務中的其他方法的數字。 如需詳細資訊，請參閱[部署 ASP.NET web 應用程式和服務](http://www.asp.net/aspnet/overview/deployment)。
+
+- **Visual c + + 執行階段**： 您可以部署 Visual c + + 執行階段使用集中部署。 如需詳細資訊，請參閱[部署原生桌面應用程式 （Visual c + +）](/cpp/ide/deploying-native-desktop-applications-visual-cpp.md)。 
+
+- **Windows 桌面**可以發行到 web 伺服器或網路檔案共用使用 ClickOnce 部署的 Windows 桌面應用程式。 使用者只要按一下，就可以安裝應用程式。 如需詳細資訊，請參閱[部署桌面應用程式使用 ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)和[部署原生應用程式使用 ClickOnce](/cpp/ide/clickonce-deployment-for-visual-cpp-applications)。
+
+### <a name="publish-to-azure"></a>發佈至 Azure
+
+- **ASP.NET、 ASP.NET Core、 Python、 Node.js 和.NET Core** web 應用程式： 您可以使用 [發行] 工具，快速地將應用程式部署至 Azure App Service 或至 Azure 虛擬機器。 在 方案總管 中，以滑鼠右鍵按一下專案，然後選擇 **發行**。 在 發行 對話方塊中，選擇  **Microsoft Azure App Service**或**Microsoft Azure 虛擬機器**，然後依照 設定步驟。
+
+    ![選擇 Azure App Service](../deployment/media/quickstart-publish-azure.png "選擇 Azure App Service")
+
+    若要發行至 Azure 虛擬機器，向右捲動並選取**Microsoft Azure 虛擬機器**。
+
+    快速簡介，請參閱[發行到 Azure](quickstart-deploy-to-azure.md)。 此外，請參閱[ASP.NET Core 應用程式發行至 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 使用 Git 的部署，請參閱[的 ASP.NET Core 使用 Git 連續部署](/aspnet/core/publishing/azure-continuous-deployment)。
+
+    > [!NOTE]
+    > 如果您沒有 Azure 帳戶，您可以[這裡進行註冊](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=doc&utm_campaign=visualstudio)。
+
+- 其他**Azure 服務**： 請參閱特定[Azure 服務](https://docs.microsoft.com/azure/#pivot=products)可能支援的 Visual Studio 的不同的部署選項的文件。
+
+### <a name="publish-to-microsoft-store"></a>發行至 Microsoft Store
+
+從 Visual Studio 中，您可以建立以部署至 Microsoft Store 的應用程式套件。
+
+- **UWP**： 您可以封裝應用程式並部署使用功能表項目。 如需詳細資訊，請參閱[UWP 應用程式封裝使用 Visual Studio](/windows/uwp/packaging/packaging-uwp-apps)。
+
+    ![建立應用程式套件](../deployment/media/feature-tour-create-app-package.jpg)
+
+- **Windows 桌面**： 您可以部署到 Microsoft Store 使用桌面橋接器在 Visual Studio 2017 版本 15.4 中啟動。 若要這樣做，請開始建立 Windows 應用程式封裝專案。 如需詳細資訊，請參閱[桌面應用程式封裝 Microsoft Store (桌面 Bridge)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)。
+
+    ![桌面的橋接器](../deployment/media/feature-tour-desktop-bridge.png)
+
+### <a name="create-an-installer-package-windows-client"></a>建立安裝程式套件 （Windows 用戶端）
+
+- 您可以使用建立 MSI 為基礎的 WiX 安裝程式[WiX 工具組 Visual Studio 2017 Extension](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension)。
+
+- [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) Flexera 軟體可搭配使用 Visual Studio 2017 （不支援的 Community 版本）。 請注意 InstallShield Limited Edition 不再隨附於 Visual Studio 和 Visual Studio 2017; 不支援請洽詢[Flexera 軟體](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio)有關未來的可用性。
+
+- 如果您想要建立安裝專案 (vdproj)，安裝[Visual Studio 2017 Installer Projects extension](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview)。
+
+- 您可以藉由設定泛型安裝程式，稱為啟動載入器安裝桌面應用程式的必要條件元件。 如需詳細資訊，請參閱[應用程式部署必要條件](../deployment/application-deployment-prerequisites.md)。
+
+### <a name="deploy-to-test-lab"></a>若要測試實驗室部署
+
+您可以啟用更趨精密完美的開發和測試部署到虛擬環境的應用程式。 如需詳細資訊，請參閱[在實驗室環境測試](../test/lab-management/using-a-lab-environment-for-your-application-lifecycle.md)。
+
+### <a name="devops-deployment"></a>DevOps 部署
+
+在小組環境中，您可以使用 Visual Studio Team Services (VSTS) 以啟用您的應用程式的連續部署。 如需詳細資訊，請參閱[組建與版本](/vsts/build-release/index)和[部署至 Azure](/vsts/deploy-azure/index)。
+
+### <a name="deployment-for-other-app-types"></a>部署其他應用程式類型
+
+| 應用程式類型 | 部署情節 | 連結 |
+| --- | --- | --- |
+| **Office 應用程式** | 您可以從 Visual Studio 的 office 發行增益集。 | [部署及發行 Office 增益集](https://dev.office.com/docs/add-ins/publish/publish) |
+| **WCF 或 OData 服務**  | 其他應用程式可以使用您部署至 web 伺服器的 WCF RIA 服務。 | [開發和部署 WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
+| **LightSwitch** | LightSwitch 已不再支援在 Visual Studio 2017，但仍然從 Visual Studio 2015 及更早版本可以部署。 | [部署 LightSwitch 應用程式](http://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) | 
+

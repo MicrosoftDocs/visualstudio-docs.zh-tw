@@ -24,11 +24,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2c309bd30fb364c36b9e98640a02eb3cf2611aef
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f5d50dff4b71402184e0c1127242c1ddb0b1827f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="save-data-back-to-the-database"></a>將資料儲存回資料庫
 資料集是記憶體中資料的複本。 如果您修改該資料時，它會是最好的作法是將這些變更儲存回資料庫。 您可以執行這三種方式之一：  
@@ -50,7 +50,7 @@ ms.lasthandoff: 11/09/2017
 |[階層式更新](../data-tools/hierarchical-update.md)|如何從兩個或多個相關資料表的資料集執行的更新|  
 |[處理並行例外狀況](../data-tools/handle-a-concurrency-exception.md)|如何處理例外狀況，當兩個使用者嘗試同時變更資料庫中相同的資料|  
 |[如何： 使用異動儲存資料](../data-tools/save-data-by-using-a-transaction.md)|如何使用 System.Transactions 命名空間和 TransactionScope 物件的交易中儲存資料|  
-|[逐步解說： 在交易中儲存資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Form 應用程式示範儲存至資料庫在交易內資料的逐步解說|  
+|[逐步解說：儲存異動中的資料](../data-tools/save-data-in-a-transaction.md)|建立 Windows Form 應用程式示範儲存至資料庫在交易內資料的逐步解說|  
 |[儲存資料至資料庫 (多個資料表)](../data-tools/save-data-to-a-database-multiple-tables.md)|如何編輯記錄，並將變更儲存回資料庫的多個資料表中|  
 |[從物件中將資料儲存至資料庫](../data-tools/save-data-from-an-object-to-a-database.md)|如何將資料傳遞至資料庫的資料集內不是使用 TableAdapter DbDirect 方法的物件從|  
 |[使用 TableAdapter DBDirect 方法儲存資料](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|如何使用 SQL 查詢直接傳送至資料庫的 TableAdapter|  
@@ -217,7 +217,7 @@ ms.lasthandoff: 11/09/2017
 -   資料中備份結束時，將資料傳送至資料來源 — 例如，資料庫，並讓它接受或拒絕資料。 如果您正在使用具有複雜的驗證資料，並提供錯誤資訊的機能的資料庫，這可能是相當實用的方法，因為您可以驗證的資料，不論其來自何處。 不過，這種方法可能無法符合特定應用程式驗證需求。 此外，由資料來源驗證資料可能會導致許多往返到資料來源，根據您的應用程式可解析後端所產生的驗證錯誤的協助。  
   
     > [!IMPORTANT]
-    >  使用與資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType.Text>，仔細檢查之前將它傳遞給您的資料庫從用戶端傳送的資訊。 惡意使用者可能會嘗試傳送 （插入） 已修改或額外的 SQL 陳述式，來取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，一定要驗證的資訊有效。 它是為一律使用參數化的查詢或預存程序會在可能的最佳作法。 如需詳細資訊，請參閱 [Script Exploits Overview](http://msdn.microsoft.com/Library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07) (指令碼攻擊概觀)。  
+    >  使用與資料命令時<xref:System.Data.SqlClient.SqlCommand.CommandType%2A>屬性設為<xref:System.Data.CommandType.Text>，仔細檢查之前將它傳遞給您的資料庫從用戶端傳送的資訊。 惡意使用者可能會嘗試傳送 （插入） 已修改或額外的 SQL 陳述式，來取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，一定要驗證的資訊有效。 它是為一律使用參數化的查詢或預存程序會在可能的最佳作法。  
   
 ## <a name="transmitting-updates-to-the-data-source"></a>傳輸至資料來源更新  
 已變更資料集之後，您可以將變更傳送至資料來源。 大多數情況下，您可以呼叫`Update`TableAdapter （或資料配接器） 的方法。 方法會迴圈每一筆記錄資料表中的資料，判斷需要該類型的更新 （更新、 插入或刪除），若有的話，然後執行適當的命令。  
@@ -258,7 +258,7 @@ ms.lasthandoff: 11/09/2017
   
  <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>每個參數的屬性會指向資料表中的資料行。 例如，`SourceColumn`屬性`au_id`和`Original_au_id`參數設定為資料表中的任何資料行包含作者 id。當配接器的`Update`方法執行時，它會讀取作者 id 資料行從正在進行更新，將值填入陳述式的記錄。  
   
- 在 UPDATE 陳述式，您需要指定這兩個新的值 （其會將記錄寫入），以及舊值 （以便可以在資料庫中找到記錄）。 因此會為每個值的兩個參數： 一個用於 SET 子句，如 WHERE 子句的另一個。 這兩個參數更新時，記錄讀取資料，但他們取得的參數為基礎的資料行值的不同版本[SqlParameter.SourceVersion 屬性](https://msdn.microsoft.com/en-us/library/system.data.sqlclient.sqlparameter.sourceversion.aspx)。 SET 子句的參數取得最新版本，而 WHERE 子句的參數取得原始的版本。  
+ 在 UPDATE 陳述式，您需要指定這兩個新的值 （其會將記錄寫入），以及舊值 （以便可以在資料庫中找到記錄）。 因此會為每個值的兩個參數： 一個用於 SET 子句，如 WHERE 子句的另一個。 這兩個參數更新時，記錄讀取資料，但他們取得的參數為基礎的資料行值的不同版本<xref:System.Data.SqlClient.SqlParameter.SourceVersion>屬性。 SET 子句的參數取得最新版本，而 WHERE 子句的參數取得原始的版本。  
   
 > [!NOTE]
 >  您也可以設定值`Parameters`集合自行在程式碼中，您通常會執行中的資料配接器的事件處理常式<xref:System.Data.DataTable.RowChanging>事件。  

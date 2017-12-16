@@ -25,11 +25,11 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9147439d6aab7a6393f37f0cf8b14b0b0401ed1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5e00d43898fbc29ba238a670d39cf8d3e7638122
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="allocation-hook-functions"></a>配置攔截函式
 配置攔截函式，使用安裝[_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook)，稱為每次配置、 重新配置或釋放記憶體。 這種類型的攔截 (Hook) 可以用於許多不同的用途。 例如，可以使用它來測試應用程式處理記憶體不足的方式、檢查配置模式或記錄供稍後分析的配置資訊。  
@@ -56,5 +56,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
   
 ## <a name="see-also"></a>另請參閱  
  [配置攔截和 C 執行階段記憶體配置](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
- [偵錯攔截函式寫入](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2 範例](http://msdn.microsoft.com/en-us/21e1346a-6a17-4f57-b275-c76813089167)
+ [撰寫偵錯攔截函式](../debugger/debug-hook-function-writing.md)   

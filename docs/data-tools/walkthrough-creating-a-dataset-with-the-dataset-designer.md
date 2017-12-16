@@ -12,34 +12,32 @@ helpviewer_keywords:
 - data [Visual Studio], Dataset Designer
 - Dataset Designer, walkthroughs
 - datasets [Visual Basic], creating
-ms.assetid: 12360f54-db6c-45d2-a91f-fee43214b555
-caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: f327d2010105c12c4b137317ed2406cae6cad9a3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: f826f7d33a8d35719afacb053995629433b27642
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-dataset-with-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立資料集
+
 在此逐步解說中您將建立資料集使用**Dataset 設計工具**。 它將引導您建立新的專案，並加入新的程序**資料集**給它的項目。 您將學習如何建立根據資料庫中的資料表，而不使用精靈的資料表。  
-  
- 這個逐步解說中所述的工作包括：  
-  
+
+這個逐步解說中所述的工作包括：  
+
 -   建立新**Windows Forms 應用程式**專案。  
-  
+
 -   加入空**資料集**項目加入專案。  
-  
+
 -   建立及設定您的應用程式中的資料來源，建置與資料集**Dataset 設計工具**。  
-  
+ 
 -   建立 Northwind 資料庫中的連接**伺服器總管**。  
-  
+
 -   使用 Tableadapter 建立資料表，在基礎資料庫中資料表的資料集。  
-  
+
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]  
   
 ## <a name="prerequisites"></a>必要條件  

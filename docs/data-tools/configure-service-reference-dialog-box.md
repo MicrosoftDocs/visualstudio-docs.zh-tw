@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26e74c43e79012adc6b241390cd463a35c9f58c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 **設定服務參考**對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服務。  
@@ -62,7 +62,7 @@ ms.lasthandoff: 10/31/2017
  判斷將以同步方式 (預設) 或非同步方式呼叫 WCF 服務方法。  
   
  **產生以工作為基礎的作業**  
- 撰寫非同步程式碼時，這個選項可讓您利用 .Net 4 所引進的工作平行程式庫 (TPL)。 請參閱[工作平行程式庫 (TPL)](http://msdn.microsoft.com/library/dd460717.aspx)。  
+ 撰寫非同步程式碼時，這個選項可讓您利用 .Net 4 所引進的工作平行程式庫 (TPL)。 請參閱[工作平行程式庫 (TPL)](/dotnet/standard/parallel-programming/task-parallel-library-tpl)。  
   
  **總是產生訊息合約**  
  判斷是否會產生 WCF 用戶端的訊息合約類型。 如需訊息合約的詳細資訊，請參閱[使用訊息合約](/dotnet/framework/wcf/feature-details/using-message-contracts)。  

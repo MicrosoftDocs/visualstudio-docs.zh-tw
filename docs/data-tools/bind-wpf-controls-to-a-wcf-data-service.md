@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4cd3231856dafd869290082337528523544b1e19
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 這些控制項會繫結至封裝於 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]中的客戶記錄。 您也會加入按鈕，讓客戶可使用這些按鈕檢視及更新記錄。  
@@ -56,8 +56,6 @@ ms.lasthandoff: 11/09/2017
 -   [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中的資料模型。  
   
 -   實體資料模型及 ADO.NET Entity Framework。 如需詳細資訊，請參閱[Entity Framework 概觀](/dotnet/framework/data/adonet/ef/overview)。  
-  
--   使用 WPF 設計工具。 如需詳細資訊，請參閱[WPF 和 Silverlight Designer 概觀](http://msdn.microsoft.com/en-us/570b7a5c-0c86-4326-a371-c9b63378fc62)。  
   
 -   WPF 資料繫結。 如需詳細資訊，請參閱 [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。  
   

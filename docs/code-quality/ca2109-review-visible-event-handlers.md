@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d558526f89b96c01e8bc7aba593d9c2b7f2654b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 6d437aab8e6e6dcdb0500ecfef53c78fab6c1c6b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109：必須檢閱可見的事件處理常式
 |||  
@@ -66,4 +66,4 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>另請參閱  
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
  <xref:System.EventArgs?displayProperty=fullName>   
- [安全性要求](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ 

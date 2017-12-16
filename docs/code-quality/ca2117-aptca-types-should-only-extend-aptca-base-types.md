@@ -18,11 +18,11 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5619de2512e18cbe9d7dbfb3d992886ae23a25bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 |||  
@@ -36,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  公用或受保護的類型與組件中<xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName>屬性繼承自沒有屬性的組件中宣告的型別。  
   
 ## <a name="rule-description"></a>規則描述  
- 根據預設，使用強式名稱的組件中的公用或受保護類型隱含地受到[繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)完全信任。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用繼承要求。 這可讓組件中宣告繼承公開型別沒有完全信任的類型。  
+ 根據預設，使用強式名稱的組件中的公用或受保護類型隱含地受到<xref:System.Security.Permissions.SecurityAction.InheritanceDemand>完全信任。 強式名稱組件標示<xref:System.Security.AllowPartiallyTrustedCallersAttribute>(APTCA) 屬性並沒有這項保護。 屬性會停用繼承要求。 這可讓組件中宣告繼承公開型別沒有完全信任的類型。  
   
  當 APTCA 屬性完全受信任的組件，並且組件中的類型會繼承自不允許部分信任呼叫端的型別時，產生安全性弱點有可能。 如果兩種型別`T1`和`T2`符合下列條件，惡意呼叫端可以使用類型`T1`略過隱含完全信任的繼承要求保護`T2`:  
   
@@ -85,6 +85,4 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>另請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework 組件可由部分信任程式碼](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
- [從部分受信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [從部分信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   

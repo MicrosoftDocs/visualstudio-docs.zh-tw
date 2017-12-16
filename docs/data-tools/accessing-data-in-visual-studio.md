@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8102301ee098ef662f27c8a6dc586a683a85d177
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 
@@ -38,7 +38,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |SQL 資料庫|DocumentDB|儲存體 （blob、 資料表、 佇列、 檔案）|
 |SQL 資料倉儲|SQL Server Stretch Database|StorSimple|
 
-等等
+等等...
 
 **SQL**
 
@@ -48,7 +48,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |MySQL|Oracle|PostgreSQL|
 |SQLite|||
 
-等等
+等等...
 
 **NoSQL**
 
@@ -58,7 +58,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 |NDatabase|OrientDB|RavenDB|
 |VelocityDB|||
 
-等等
+等等...
 
 許多資料庫供應商和第三方 Visual Studio 整合支援 NuGet 封裝。 Nuget.org 上或透過 NuGet 封裝管理員 Visual Studio 中，您可以瀏覽供應項目 (**工具** > **NuGet 套件管理員** > **管理 nuget 封裝Packages for Solution**)。 做為擴充，與 Visual Studio 整合其他資料庫產品。 您可以瀏覽至瀏覽這些供應項目，在 Visual Studio Marketplace**工具**，**擴充功能和更新**，然後選取 **線上**的左窗格中對話方塊。 如需詳細資訊，請參閱[for Visual Studio 相容的資料庫系統](../data-tools/installing-database-systems-tools-and-samples.md)。
 
@@ -67,7 +67,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 ## <a name="net-languages"></a>.NET 語言
 
-所有的.NET 資料存取，包括在.NET Core 根據 ADO.NET 中，一組類別，定義用於存取任何種類的資料來源，關聯式和非關聯式的介面。 Visual Studio 有數個工具，可搭配 ADO.NET 為了連接到資料庫，設計工具操作資料，並將資料呈現給使用者。 本節中的文件描述如何使用這些工具。 您也可以直接針對 ado.net 指令程式。 如需直接呼叫 ADO.NET 應用程式開發介面的詳細資訊，請參閱[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx) MSDN Library 中。
+所有的.NET 資料存取，包括在.NET Core 根據 ADO.NET 中，一組類別，定義用於存取任何種類的資料來源，關聯式和非關聯式的介面。 Visual Studio 有數個工具，可搭配 ADO.NET 為了連接到資料庫，設計工具操作資料，並將資料呈現給使用者。 本節中的文件描述如何使用這些工具。 您也可以直接針對 ado.net 指令程式。 如需直接呼叫 ADO.NET 應用程式開發介面的詳細資訊，請參閱[ADO.NET](/dotnet/framework/data/adonet/index)。
 
 與 ASP.NET 特別相關的資料存取文件，請參閱[使用資料](http://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 網站上。 如需使用 Entity Framework 搭配 ASP.NET MVC 的教學課程，請參閱[開始使用 Entity Framework 6 Code First 使用 MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
@@ -98,7 +98,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 ## <a name="native-c"></a>原生 C++
 
-連接到 SQL Server 的 c + + 應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結伺服器，則是必要的 OLE DB 和該使用[SQL Server Native Client](https://msdn.microsoft.com/sqlserver/aa937733.aspx)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是在目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面來存取的自訂功能。 OLE DB 是傳統的 COM 資料存取技術，仍然支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱[Visual c + + 中的資料存取](https://docs.microsoft.com/cpp/data/)。
+連接到 SQL Server 的 c + + 應用程式應使用[Microsoft® ODBC Driver 13.1 for SQL Server](https://www.microsoft.com/download/details.aspx?id=53339)在大部分情況下。 如果連結伺服器，則是必要的 OLE DB 和該使用[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client)。 您可以使用來存取其他資料庫[ODBC](https://msdn.microsoft.com/library/ms710252\(v=vs.85\).aspx)或直接 OLE DB 驅動程式。 ODBC 是在目前的標準資料庫介面，但大部分資料庫系統提供無法透過 ODBC 介面來存取的自訂功能。 OLE DB 是傳統的 COM 資料存取技術，仍然支援，但不是建議用於新的應用程式。 如需詳細資訊，請參閱[Visual c + + 中的資料存取](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服務的 c + + 程式可以使用[c + + REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
@@ -106,11 +106,11 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 
 資料模型化&mdash;Visual Studio c + + 不提供 ORM 圖層。 [ODB](http://www.codesynthesis.com/products/odb/)熱門的開放原始碼 ORM 為 c + +。
 
-若要深入了解從 c + + 應用程式連接到資料庫，請參閱[c + + 的 Visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需舊版的 Visual c + + 資料存取技術的詳細資訊，請參閱[資料存取](http://msdn.microsoft.com/Library/a9455752-39c4-4457-b14e-197772d3df0b)。
+若要深入了解從 c + + 應用程式連接到資料庫，請參閱[c + + 的 Visual Studio 資料工具](../data-tools/visual-studio-data-tools-for-cpp.md)。 如需舊版的 Visual c + + 資料存取技術的詳細資訊，請參閱[資料存取](/cpp/data/data-access-in-cpp)。
 
 ## <a name="javascript"></a>JavaScript
 
-[Visual Studio 中的 JavaScript](https://msdn.microsoft.com/library/hh334522.aspx)是用於建置跨平台應用程式、 UWP 應用程式、 雲端服務、 網站及 web 應用程式的第一級語言。 您可以安裝您最愛的 JavaScript 程式庫和資料庫產品使用 Bower、 Grunt、 Gulp、 npm 及從 Visual Studio 中的 NuGet。 下載 Sdk，從連接到 Azure 儲存體和服務[Azure 網站](https://azure.microsoft.com/)。 Edge.js 是伺服器端 JavaScript (Node.js) 連接至 ADO.NET 資料來源的程式庫。
+[Visual Studio 中的 JavaScript](/scripting/javascript/javascript-language-reference)是用於建置跨平台應用程式、 UWP 應用程式、 雲端服務、 網站及 web 應用程式的第一級語言。 您可以安裝您最愛的 JavaScript 程式庫和資料庫產品使用 Bower、 Grunt、 Gulp、 npm 及從 Visual Studio 中的 NuGet。 下載 Sdk，從連接到 Azure 儲存體和服務[Azure 網站](https://azure.microsoft.com/)。 Edge.js 是伺服器端 JavaScript (Node.js) 連接至 ADO.NET 資料來源的程式庫。
 
 ## <a name="python"></a>Python
 
@@ -127,7 +127,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 [Azure SQL Database](https://azure.microsoft.com/documentation/services/sql-database/)  
 描述如何連接到 Azure SQL Database 的關聯式資料庫做為服務。
 
-[SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx)  
+[SQL Server Data Tools](/sql/ssdt/download-sql-server-data-tools-ssdt)  
 說明的工具可簡化設計中，瀏覽、 測試和部署的資料連接的應用程式和資料庫。
 
 [ADO.NET](/dotnet/framework/data/adonet/index)  
@@ -142,7 +142,7 @@ JavaScript、 Python、 PHP、 Ruby、 或 c + + 中的應用程式，您連接�
 [Office 方案的資料](/office-dev/office-dev/data-in-office-solutions)  
 包含說明資料在 Office 方案中的運作方式的主題連結。 這包括結構描述導向的程式設計、 資料快取，以及伺服器端資料存取的相關資訊。
 
-[LINQ (Language-Integrated Query)](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)  
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)  
 描述 C# 和 Visual Basic 中，以及通用模型來查詢關聯式資料庫、 XML 文件、 資料集和記憶體中集合內建查詢功能。
 
 [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)  

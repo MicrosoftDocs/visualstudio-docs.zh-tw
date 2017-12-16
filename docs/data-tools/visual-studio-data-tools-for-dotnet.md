@@ -12,14 +12,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6b48b16d33c62c2d0ca96eb1d55ce22682458029
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: bc63c636d58bcde7aefeb7d35939008387bb6808
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="visual-studio-data-tools-for-net"></a>適用於.NET 的 visual Studio 資料工具
-Visual Studio 和.NET Framework 一起提供廣泛的應用程式開發介面和工具支援連接至資料庫、 在記憶體中，資料模型化和使用者介面中顯示的資料。 .NET Framework 類別，可讓資料存取功能稱為[ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)。 ADO.NET 中，以及資料的工具在 Visual Studio 中，原先設計主要是支援關聯式資料庫和 XML。 這幾天，許多 NoSQL 資料庫廠商或第三方提供 ADO.NET 提供者。  
+Visual Studio 和.NET Framework 一起提供廣泛的應用程式開發介面和工具支援連接至資料庫、 在記憶體中，資料模型化和使用者介面中顯示的資料。 .NET Framework 類別，可讓資料存取功能稱為[ADO.NET](/dotnet/framework/data/adonet/index)。 ADO.NET 中，以及資料的工具在 Visual Studio 中，原先設計主要是支援關聯式資料庫和 XML。 這幾天，許多 NoSQL 資料庫廠商或第三方提供 ADO.NET 提供者。  
   
 [.NET core](https://www.dotnetfoundation.org/netcore)支援 ADO.NET 資料集和相關的類型除外。 如果您的目標.NET Core 和需要的物件關聯式對應 (ORM) 層級，使用[Entity Framework Core](https://docs.microsoft.com/ef/core/)。  
   
@@ -39,7 +39,7 @@ Visual Studio 和.NET Framework 一起提供廣泛的應用程式開發介面和
   
 5.  加入自訂程式碼的事情，像是商務規則、 搜尋和資料驗證，或若要充分利用基礎資料庫會公開的自訂功能。  
   
-您可以略過步驟 3 和.NET 應用程式到問題的命令，直接以資料庫，而不是使用模型進行程式設計。 在此情況下，您可以在這裡找到相關文件： [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx.aspx)。 請注意，您仍然可以使用之資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入您自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
+您可以略過步驟 3 和.NET 應用程式到問題的命令，直接以資料庫，而不是使用模型進行程式設計。 在此情況下，您可以在這裡找到相關文件： [ADO.NET](/dotnet/framework/data/adonet/index)。 請注意，您仍然可以使用之資料來源組態精靈和設計工具來產生資料繫結程式碼，當您填入您自己的記憶體，然後將 UI 控制項資料繫結至這些物件的物件。
   
 ## <a name="see-also"></a>請參閱
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

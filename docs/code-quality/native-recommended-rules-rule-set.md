@@ -12,11 +12,11 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3063f1a65035018df9c9d6a034ef11b5e9732a30
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 07704e589ae56b04dc28ceb465afad7812a29111
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 原生建議規則的重點在於機器碼，包括潛在的安全性漏洞和應用程式損毀中最關鍵且常見的問題。  您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  這個規則集被設計來搭配 Visual Studio Professional 版與更高版本。  
@@ -116,7 +116,6 @@ ms.lasthandoff: 10/31/2017
 |[C6504](../code-quality/c6504.md)|非指標上的 Null|  
 |[C6505](../code-quality/c6505.md)|Void 上的 MustCheck|  
 |[C6506](../code-quality/c6506.md)|非指標或陣列上的緩衝區大小|  
-|[C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)|取值零時的 Null 不符|  
 |[C6508](../code-quality/c6508.md)|寫入存取常數|  
 |[C6509](../code-quality/c6509.md)|先前的條件所用的 Return|  
 |[C6510](../code-quality/c6510.md)|非指標上的 Null Terminated|  
@@ -127,12 +126,8 @@ ms.lasthandoff: 10/31/2017
 |[C6516](../code-quality/c6516.md)|屬性 (Attribute) 上沒有屬性 (Property)|  
 |[C6517](../code-quality/c6517.md)|不能讀取的緩衝區上的有效大小|  
 |[C6518](../code-quality/c6518.md)|不能寫入的緩衝區上的可寫入大小|  
-|[C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)|無效的註釋：'NeedsRelease' 屬性的值必須為 Yes 或 No|  
-|[C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)|無效的大小字串取值|  
 |[C6522](../code-quality/c6522.md)|無效的大小字串類型|  
-|[C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)|無效的大小字串參數|  
 |[C6525](../code-quality/c6525.md)|無效的大小字串不可能執行到的位置|  
-|[C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)|無效的大小字串緩衝區類型|  
 |[C6527](../code-quality/c6527.md)|無效的註釋：'NeedsRelease' 屬性不能用於 void 類型的值|  
 |[C6530](../code-quality/c6530.md)|無法辨認的格式字串樣式|  
 |[C6540](../code-quality/c6540.md)|在這個函式上使用屬性註釋會使其所有現有的 __declspec 註釋無效。|  
@@ -221,8 +216,7 @@ ms.lasthandoff: 10/31/2017
 |[C28253](../code-quality/c28253.md)|函式的註釋不一致：參數有這個執行個體的另一個註釋。|  
 |[C28254](../code-quality/c28254.md)|註釋中不支援 dynamic_cast<>()|  
 |[C28262](../code-quality/c28262.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤|  
-|[C28263](../code-quality/c28263.md)|找到內建註釋的條件式註釋語法錯誤|  
-|[C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)|結果清單值必須是常數。|  
+|[C28263](../code-quality/c28263.md)|找到內建註釋的條件式註釋語法錯誤| 
 |[C28267](../code-quality/c28267.md)|在函式 (隸屬於註釋) 中找到註釋的語法錯誤。|  
 |[C28272](../code-quality/c28272.md)|函式參數的註釋在檢查時，與函式宣告不一致|  
 |[C28273](../code-quality/c28273.md)|對於函式，線索與函式宣告不一致|  

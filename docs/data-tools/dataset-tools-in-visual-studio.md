@@ -50,11 +50,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 6a7e5741b11263ef3c3730ddaa69e566cd7c2e24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 > [!NOTE]
@@ -83,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
     -   [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)  
   
--   查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱[查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]可讓[LINQ (Language-Integrated Query ()](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。  
+-   查詢，並在資料集中搜尋的資料。 如需詳細資訊，請參閱[查詢資料集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)]可讓[LINQ (Language-Integrated Query ()](/dotnet/csharp/linq/)中的資料<xref:System.Data.DataSet>物件。 如需詳細資訊，請參閱 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。  
   
 -   使用**資料來源**視窗使用者介面控制項繫結至資料集或其個別的資料行，並指定使用者可編輯的哪些資料行。 如需詳細資訊，請參閱[控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)。  
   

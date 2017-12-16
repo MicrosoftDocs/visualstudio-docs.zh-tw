@@ -16,7 +16,6 @@ helpviewer_keywords:
 - debugging Windows applications
 - Windows applications, debugging
 - debugging [Visual Studio], Windows applications
-- debugging [J#], Windows applications
 - debugging [C#], Windows applications
 - debugging [Visual Basic], Windows applications
 ms.assetid: 7092ee7f-8378-4def-aef8-1695bd97cf14
@@ -24,11 +23,11 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d2d8f123359e4dfff02f05709d8028c2b9fcd3e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 873b7dd10a2e39aa795626bc7d387df7017740d8
+ms.sourcegitcommit: 1e08318a8a684b21609af7a5e48b56abcc3239e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/13/2017
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>偵錯準備：Windows Forms 應用程式
 Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中可以直接偵錯這種類型的應用程式。 如需詳細資訊，請參閱[建立 Windows 應用程式專案](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa)。  
@@ -71,7 +70,7 @@ Windows Form 專案範本會建立 Windows Forms 應用程式。 在 [!INCLUDE[v
  [偵錯 Managed 程式碼](../debugger/debugging-managed-code.md)   
  [C#、F# 和 Visual Basic 專案類型](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
  [如何： 設定偵錯和發行組態](../debugger/how-to-set-debug-and-release-configurations.md)   
- [若為 C# 專案設定偵錯組態](../debugger/project-settings-for-csharp-debug-configurations.md)   
- [適用於 Visual Basic 專案設定偵錯組態](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
+ [C# 偵錯設定的專案設定](../debugger/project-settings-for-csharp-debug-configurations.md)   
+ [Visual Basic 偵錯設定的專案設定](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [附加至執行中處理程序](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)   
  [Windows Forms](/dotnet/framework/winforms/index)

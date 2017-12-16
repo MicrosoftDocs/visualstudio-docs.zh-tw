@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 重構功能 (C#) |Microsoft 文件"
+title: "C# 重構 Visual Studio 中的功能 |Microsoft 文件"
 ms.custom: 
 ms.date: 02/27/2017
 ms.reviewer: 
@@ -16,15 +16,17 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a03a5a8d7b8456f6c03646304dce0a85703bf1cc
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/14/2017
 ---
-# <a name="refactoring-features-for-c"></a>若為 C# 的重構功能 #
+# <a name="refactoring-features-in-c"></a>在 C# 的重構功能 #
 
-重構是已寫入之後，改善您的程式碼的程序。 重構變更程式碼的內部結構，而不需要變更其行為。 下列的重構功能可在 Visual Studio C# 中：
+重構是變更程式碼的內部結構，而不需要變更其行為的程序。 通常用來讓程式碼，可讀取、 可維護性，以及可靠重構。
+
+下列的重構功能可在 Visual Studio C# 中：
 
 * [變更方法簽章](refactoring/change-method-signature.md)
 * [將 Get 方法轉換為屬性/將屬性轉換為 Get 方法](refactoring/convert-get-method-to-property.md)
@@ -40,4 +42,6 @@ ms.lasthandoff: 11/29/2017
 
 ## <a name="see-also"></a>請參閱
 
-[使用 C# 的 Visual Studio 開發環境](using-the-visual-studio-development-environment-for-csharp.md)  
+[重構程式碼產生和 Visual Studio 中的快速動作](../ide/refactoring-code-generation-quick-actions.md)  
+[在 Visual Basic 中重構](../vb-ide/refactoring-vb.md)  
+[使用 C# 的 Visual Studio 開發環境](using-the-visual-studio-development-environment-for-csharp.md)

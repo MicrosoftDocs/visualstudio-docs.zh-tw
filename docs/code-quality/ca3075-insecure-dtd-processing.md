@@ -12,11 +12,11 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9660e2dc94cf23269b923c6ba5426a7cc384161
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 |||  
@@ -30,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  如果您使用不安全的 <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> 執行個體或參考外部實體來源，剖析器可能會接受未受信任的輸入，而將機密資訊洩漏給攻擊者。  
   
 ## <a name="rule-description"></a>規則描述  
- [文件類型定義 (DTD)](https://msdn.microsoft.com/en-us/library/aa468547.aspx) 是  [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)中針對 XML 剖析器用來判斷文件有效性所定義之兩種方式的其中一種。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：  
+ A*文件類型定義 (DTD)*所定義 XML 剖析器可以判斷文件中，有效性的兩種方式之一是[World Wide Web Consortium (W3C) 可延伸標記語言 (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/)。 此規則會搜尋已接受不受信任之資料的屬性和執行個體，藉此警告開發人員潛在的 [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) 威脅，這些威脅可能會導致 [Denial of Service (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) 攻擊。 下列情況會觸發此規則：  
   
 -   <xref:System.Xml.XmlReader> 執行個體上已啟用 DtdProcessing，它會使用 <xref:System.Xml.XmlUrlResolver>解析外部 XML 項目。  
   
@@ -60,11 +60,11 @@ ms.lasthandoff: 10/31/2017
   
 -   如果您正在處理不受信任的來源，請將 <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> 屬性設為 **true** 以停用 DTD 處理。  
   
--   XmlTextReader 類別具有完全信任的繼承要求。 請參閱[繼承要求](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)如需詳細資訊。  
+-   XmlTextReader 類別具有完全信任的繼承要求。  
   
  .NET 4 和更新版本  
   
--   請避免啟用 DtdProcessing，如果您正在處理未受信任來源的 DtdProcessing 屬性設[Prohibit 或 Ignore](https://msdn.microsoft.com/en-us/library/system.xml.dtdprocessing.aspx)  
+-   請避免啟用 DtdProcessing，如果您正在處理未受信任來源，藉由設定<xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType>屬性**禁止**或**忽略**。  
   
 -   請確認在所有 InnerXml 案例中 Load() 方法皆會使用 XmlReader 執行個體。  
   

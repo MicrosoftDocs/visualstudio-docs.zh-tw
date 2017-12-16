@@ -12,11 +12,11 @@ caps.latest.revision: "1"
 author: BertanAygun
 ms.author: bertaygu
 manager: ghogen
-ms.openlocfilehash: 7ff2aeecfbabb055f0fa9740623bc2bd949b11c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: c2d8b27937be4580da8ff33c5b3c1d57654b4c89
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="measuring-extension-impact-in-startup"></a>測量延伸模組中啟動的影響
 
@@ -48,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 
 下列文件中，您可以找到更多有關這些功能的詳細資料：
 
-[規則基礎 UI 內容](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 更豐富的基礎的規則引擎，建置 UI 內容可讓您建立根據專案類型、 類別和功能的自訂內容。 這些自訂內容可以用來更特定的案例，例如出現在專案中使用的特定功能，而不是啟動; 期間載入的封裝允許或[命令繫結至自訂內容的可見性](https://msdn.microsoft.com/en-us/library/bb166512.aspx)根據專案功能或其他可用的詞彙，因此不需要載入封裝，以註冊命令狀態查詢處理常式。
+[規則基礎 UI 內容](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)： 更豐富的基礎的規則引擎，建置 UI 內容可讓您建立根據專案類型、 類別和功能的自訂內容。 這些自訂內容可以用來更特定的案例，例如出現在專案中使用的特定功能，而不是啟動; 期間載入的封裝允許或[命令繫結至自訂內容的可見性](visibilityconstraints-element.md)根據專案功能或其他可用的詞彙，因此不需要載入封裝，以註冊命令狀態查詢處理常式。
 
 [非同步封裝支援](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md): Visual Studio 2015 中新的 AsyncPackage 基底類別可讓 Visual Studio 封裝載入至在背景中以非同步方式如果載入封裝所要求的自動載入屬性或非同步服務查詢. 此背景載入可讓 IDE 擴充功能會在背景中初始化和啟動和方案負載等重大案例不會受到影響時持續回應。
 

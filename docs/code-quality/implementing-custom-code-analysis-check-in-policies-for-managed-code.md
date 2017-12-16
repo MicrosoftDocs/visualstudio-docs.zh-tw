@@ -16,11 +16,11 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5c2853d06bf7dcf2ffd894ee3ae1a90e78e61c6d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 簽入原則指定的 team 專案的成員必須在它前面的程式碼執行的規則集的程式碼分析簽入版本控制。 Microsoft 提供一組標準*規則集*該群組的程式碼分析規則到功能區域。 *自訂簽入原則規則集*指定一組特定的 team 專案的程式碼分析規則。 規則集儲存在.ruleset 檔案。  
@@ -35,7 +35,7 @@ ms.lasthandoff: 10/31/2017
  若要建立自訂規則集為 team 專案，您先建立簽入原則中的規則集的特殊資料夾**原始檔控制總管**。 然後您會建立規則集檔案，並將檔案加入至版本控制。 最後，您指定設定為程式碼分析簽入原則的 team 專案的規則。  
   
 > [!NOTE]
->  若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。 如需詳細資訊，請參閱[建立和使用工作區 （舊）](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2)。  
+>  若要建立 team 專案的資料夾，您先必須對應 team 專案的根目錄到本機電腦上的位置。  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>若要建立為簽入原則規則集的版本控制資料夾  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在**原始檔控制總管**，以滑鼠右鍵按一下新的資料夾，然後按一下**將項目加入資料夾**。  
   
-     如需詳細資訊，請參閱[使用版本控制](http://msdn.microsoft.com/Library/33267cee-fe5f-4aa3-b2cd-6d22ceace314)。  
+     如需詳細資訊，請參閱[Git 和 VSTS](/vsts/git/overview)。  
   
 2.  按一下規則集您所建立的檔案，然後按一下**完成**。  
   

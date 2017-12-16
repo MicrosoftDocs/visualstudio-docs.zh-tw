@@ -11,11 +11,11 @@ caps.latest.revision: "10"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: c71d76e3b085260043f6f07de8b352ab74c3930f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 1bcf34f730411589624075bde4ace0b5457e07a7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>如何： 提供非同步的 Visual Studio 服務
 如果您想要取得服務，而不封鎖 UI 執行緒，您應該建立非同步的服務，並載入背景執行緒上的套件。 您可以針對此用途使用<xref:Microsoft.VisualStudio.Shell.AsyncPackage>而不是<xref:Microsoft.VisualStudio.Shell.Package>，然後以非同步的封裝特殊的非同步方法中加入服務  
@@ -24,9 +24,9 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="implementing-an-asynchronous-service"></a>實作非同步服務  
   
-1.  建立 VSIX 專案 (**檔案 / 新增 / 專案 / Visual C# / Extensiblity / VSIX 專案**)。 將專案命名**TestAsync**。  
+1.  建立 VSIX 專案 (**檔案 > 新增 > 專案 > Visual C# > Extensiblity > VSIX 專案**)。 將專案命名**TestAsync**。  
   
-2.  加入專案中的 VSPackage。 選取專案節點中的**方案總管] 中**按一下**新增 / [新增項目 / Visual C# 項目 / 擴充性 / Visual Studio Package**。 將這個檔案命名**TestAsyncPackage.cs**。  
+2.  加入專案中的 VSPackage。 選取專案節點中的**方案總管 中**按一下**新增 > 新的項目 > Visual C# 項目 > 擴充性 > Visual Studio Package**。 將這個檔案命名**TestAsyncPackage.cs**。  
   
 3.  在 TestAsyncPackage.cs，來變更要繼承自 AsyncPackage，而不是封裝的封裝：  
   

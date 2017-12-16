@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cba3d5568ee2fa2b4af0eb9c10995c813fe09c01
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c493a7ea448277275072ab71cf013333ccb9b4ea
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>LINQ to SQL 工具，Visual Studio 中
 LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 它適用於基本案例，並繼續在 Visual Studio 中，支援，但不再是真的開發。 使用 LINQ to SQL 時維護舊版的應用程式已使用它，或在使用 SQL Server，且不需要多重資料表對應的簡單應用程式。 一般情況下，新的應用程式需要的物件關聯對應程式層級時，應該使用 Entity Framework。  
@@ -62,7 +62,7 @@ LINQ to SQL 是 Microsoft 所發行的第一個物件關聯式對應技術。 �
  [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 類別就像其他物件，可以使用繼承，也可以衍生自其他類別。 在資料庫中，有數種方式可以建立繼承關聯性。 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]通常是在關聯式系統中實作，因此支援單一資料表繼承概念。 如需詳細資訊，請參閱[How to： 使用 O/R 設計工具設定繼承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)。  
   
 ## <a name="linq-to-sql-queries"></a>LINQ to SQL 查詢  
- 所建立的實體類別[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]專為搭配[LINQ (Language-Integrated Query ()](http://msdn.microsoft.com/Library/a73c4aec-5d15-4e98-b962-1274021ea93d)。 如需詳細資訊，請參閱[如何： 查詢資訊](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。  
+ 所建立的實體類別[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]專為搭配[LINQ (Language-Integrated Query ()](/dotnet/csharp/linq/)。 如需詳細資訊，請參閱[如何： 查詢資訊](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information)。  
   
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>將產生的 DataContext 和實體類別程式碼分隔至不同的命名空間  
  [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]提供**內容命名空間**和**實體命名空間**屬性<xref:System.Data.Linq.DataContext>。 這些屬性會決定 <xref:System.Data.Linq.DataContext> 和實體類別程式碼產生時，會落在哪一個命名空間 (Namespace) 中。 根據預設，這些屬性是空的，而且 <xref:System.Data.Linq.DataContext> 和實體類別產生時，會落在應用程式的命名空間中。 若要產生的程式碼到應用程式的命名空間以外的命名空間，請輸入值**內容命名空間**及/或**實體命名空間**屬性。

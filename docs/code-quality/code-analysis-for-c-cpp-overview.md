@@ -25,11 +25,11 @@ caps.latest.revision: "25"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 55b1f4061d408187525c255e4ab12c3fe93eb60e
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: f1634250d97e83b21cccd3ada90933fc0806d35f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="code-analysis-for-cc-overview"></a>C/C++ 程式碼分析概觀
 C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相關資訊提供給開發人員。 這個工具所報告的常見程式碼撰寫錯誤包括緩衝區滿溢、未初始化的記憶體、Null 指標取值以及記憶體和資源流失。  
@@ -38,7 +38,7 @@ C/C++ 程式碼分析工具會將其 C/C++ 原始程式碼中可能的缺失相�
  若要讓自然適用於開發人員分析工具的用法，它會完整地整合在[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。 建置程序期間所產生的原始碼的警告會出現在錯誤清單。 您可以瀏覽至造成警告的原始程式碼，您可以檢視有關原因和可能的解決方案，問題的其他資訊。  
   
 ## <a name="pragma-support"></a>#pragma 支援  
- 開發人員可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行的警告。 如需詳細資訊，請參閱[How to： 啟用和停用特定的 C/c + + 警告的程式碼分析](http://msdn.microsoft.com/en-us/910b8518-71f1-4b2e-b012-70647795642a)。  
+ 開發人員可以使用`#pragma`指示詞，以將警告視為錯誤; 啟用或停用警告，並隱藏個別的程式碼行的警告。 如需詳細資訊，請參閱[How to: C/c + + 專案設定程式碼分析屬性](how-to-set-code-analysis-properties-for-c-cpp-projects.md)。  
   
 ## <a name="annotation-support"></a>附註支援  
  註解改善程式碼分析的精確度。 註釋提供前置和後置條件的其他資訊在函式參數和傳回型別。 如需詳細資訊，請參閱[How to： 使用 __analysis_assume 指定其他的程式碼資訊](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)  

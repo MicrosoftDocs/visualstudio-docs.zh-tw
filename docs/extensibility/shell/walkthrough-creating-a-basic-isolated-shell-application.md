@@ -16,11 +16,11 @@ caps.latest.revision: "54"
 author: gregvanl
 ms.author: gregvanl
 manager: ghogen
-ms.openlocfilehash: 0bd87c01367ea7f120413ad4aae2ae61b0332f6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 886185c61f407906ff059b84b5f1f8b18e3ace98
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>逐步解說： 建立基本獨立的 Shell 應用程式
 本逐步解說示範如何建立獨立的 shell 方案、 自訂 [說明] 工具視窗中，以及建立安裝程式安裝在 isolated 的 shell。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  建置方案並開始偵錯。  
   
-4.  在**檢視 / 其他視窗**，按一下 **網頁瀏覽器**。 **網頁瀏覽器**視窗會顯示 Microsoft Corporation 的 [首頁] 頁面。  
+4.  在**檢視 > 其他視窗**，按一下 **網頁瀏覽器**。 **網頁瀏覽器**視窗會顯示 Microsoft Corporation 的 [首頁] 頁面。  
   
 ## <a name="removing-the-print-command"></a>移除列印命令  
  .Vsct 檔中的獨立的 shell UI 專案組成一組宣告的形式`<Define name=No_`*元素*`>`，其中*元素*是其中一個標準的 Visual Studio 功能表和命令。  
@@ -100,7 +100,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  這會移除列印命令。  
   
-5.  開始偵錯 isolated 的 shell 應用程式。 確認**檔案 / 列印**命令就會消失。  
+5.  開始偵錯 isolated 的 shell 應用程式。 確認**檔案 > 列印**命令就會消失。  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>從 Isolated Shell 中移除功能  
  您可以移除某些藉由編輯.pkgundef 檔案，如果您不想自訂的獨立的 shell 應用程式中的功能與 Visual Studio 會載入的封裝。 您在其中 $RootKey$ \Packages 登錄機碼的子機碼中指定的封裝。  
@@ -146,7 +146,7 @@ ms.lasthandoff: 10/31/2017
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.")]  
     ```  
   
-4.  開始偵錯，並在獨立的 shell 應用程式中，開啟**說明 / 關於**方塊。 您應該會看到已變更的字串。 標題的 說明/關於方塊是與相同`AssemblyTitle`AssemblyInfo.cs 中的值。  
+4.  開始偵錯，並在獨立的 shell 應用程式中，開啟**協助 > 關於**方塊。 您應該會看到已變更的字串。 標題的 說明/關於方塊是與相同`AssemblyTitle`AssemblyInfo.cs 中的值。  
   
 5.  內容**說明/關於**方塊本身 MyVSShellStub.AboutBoxPackage\AboutBox.xaml 檔案中找到。 若要變更 說明/關於方塊的寬度，請移至`AboutDialogStyle`區塊並將設定`Width`到 200 個屬性：  
   

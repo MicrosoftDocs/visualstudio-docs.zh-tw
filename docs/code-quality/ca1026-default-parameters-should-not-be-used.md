@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0d7a850c959787282cdf6f9d24b392ef4684b7dd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0c8a6176d25f8eb8f2e7aa66dc0a00f0490f0910
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026：不應使用預設參數
 |||  
@@ -55,4 +55,4 @@ ms.lasthandoff: 10/31/2017
  [CA1025：必須以參數陣列取代重複的引數](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)  
   
 ## <a name="see-also"></a>另請參閱  
- [語言獨立性以及與語言無關的元件](http://msdn.microsoft.com/Library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

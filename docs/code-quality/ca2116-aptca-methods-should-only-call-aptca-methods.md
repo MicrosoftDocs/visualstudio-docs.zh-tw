@@ -18,11 +18,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c6a91cffc3ce388a3dfb9000b9f432672018f4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 5c1b61e8895258a4f27d3803bf7fb5e4e2a0fba3
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116：APTCA 方法應該只呼叫 APTCA 方法
 |||  
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/31/2017
  部分信任呼叫端`X`可以呼叫方法`M1`，因而導致`M1`呼叫`M2`。 因為`M2`沒有 APTCA 屬性，其立即呼叫端 (`M1`) 必須滿足連結要求完全信任。`M1`具有完全信任，因此會滿足這項檢查。 安全性風險是因為`X`不會參與滿足連結要求保護`M2`來自不受信任的呼叫端。 因此，使用 APTCA 屬性的方法不可以呼叫不具有屬性的方法。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
- 如果需要 APCTA 屬性，使用需求來保護完全信任組件呼叫的方法。 您的需求將取決於您的方法所公開的功能完全權限。 如果可能的話，保護具有完全信任，以確保基礎功能，不會公開給部分信任呼叫端要求的方法。 如果不可行，請選取一組權限可有效保護公開的功能。 如需有關需求的詳細資訊，請參閱[要求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)。  
+ 如果需要 APCTA 屬性，使用需求來保護完全信任組件呼叫的方法。 您的需求將取決於您的方法所公開的功能完全權限。 如果可能的話，保護具有完全信任，以確保基礎功能，不會公開給部分信任呼叫端要求的方法。 如果不可行，請選取一組權限可有效保護公開的功能。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  若要安全地隱藏此規則的警告，您必須確定，您的方法所公開的功能不會直接或間接允許來電者存取機密資訊、 作業或資源，可用於破壞性的方式。  
@@ -78,8 +78,6 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="see-also"></a>另請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
- [.NET framework 組件可由部分信任程式碼](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d)   
  [從部分受信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   
- [要求](http://msdn.microsoft.com/en-us/e5283e28-2366-4519-b27d-ef5c1ddc1f48)   
  [連結要求](/dotnet/framework/misc/link-demands)   
  [資料與模型化](/dotnet/framework/data/index)

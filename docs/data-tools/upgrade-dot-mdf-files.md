@@ -13,41 +13,39 @@ helpviewer_keywords:
 - SQLEXPRESS
 - upgrading SQLExpress to SQLExpress
 - upgrading to LocalDB
-ms.assetid: 14ca6f76-f80e-4926-8020-3fee2d802b75
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8ed511eed7b0ace46bbc61c1d486ade608d4b5a5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c02ae1ba7091871f92d1fdf00f55f7d0ded6024f
+ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/14/2017
 ---
 # <a name="upgrade-mdf-files"></a>升級的.mdf 檔案
-本主題描述安裝較新版的 Visual Studio 之後，升級資料庫檔案 (.mdf) 的選項。 它包含下列工作的指示：  
-  
--   升級使用較新版的 SQL Server Express LocalDB 資料庫檔案  
-  
--   升級使用較新版的 SQL Server Express 資料庫檔案  
-  
--   使用 Visual Studio 中的資料庫檔案，但會保留與舊版的 SQL Server Express 或 LocalDB 的相容性  
-  
--   讓 SQL Server Express 的預設資料庫引擎  
-  
-您可以使用 Visual Studio 開啟包含資料庫檔案 (.mdf)，以使用較舊版本的 SQL Server Express 或 LocalDB 所建立的專案。 不過，若要繼續開發您的專案，Visual Studio 中，您必須具有該版本的 SQL Server Express 或 LocalDB 安裝在與 Visual Studio 中，在相同電腦上，或者您必須升級資料庫檔案。 如果您升級資料庫檔案，您將無法使用舊版的 SQL Server Express 或 LocalDB 存取它。  
-  
-您可能也會提示您升級的檔案版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，如果是舊版的 SQL Server Express 或 LocalDB 透過建立的資料庫檔案。 若要解決此問題，Visual Studio 會提示您升級檔。  
-  
+
+本主題說明安裝較新版的 Visual Studio 之後，升級資料庫檔案 (.mdf) 選項。 它包含下列工作的指示：
+
+- 升級使用較新版的 SQL Server Express LocalDB 資料庫檔案
+
+- 升級使用較新版的 SQL Server Express 資料庫檔案
+
+- 使用 Visual Studio 中的資料庫檔案，但會保留與舊版的 SQL Server Express 或 LocalDB 的相容性
+
+- 讓 SQL Server Express 的預設資料庫引擎
+
+您可以使用 Visual Studio 開啟包含資料庫檔案 (.mdf)，以使用較舊版本的 SQL Server Express 或 LocalDB 所建立的專案。 不過，若要繼續開發您的專案，Visual Studio 中，您必須具有該版本的 SQL Server Express 或 LocalDB 安裝在與 Visual Studio 中，在相同電腦上，或者您必須升級資料庫檔案。 如果您升級資料庫檔案，您將無法使用舊版的 SQL Server Express 或 LocalDB 存取它。
+
+您可能也會提示您升級的檔案版本不相容的 SQL Server Express 或目前已安裝的 LocalDB 執行個體，如果是舊版的 SQL Server Express 或 LocalDB 透過建立的資料庫檔案。 若要解決此問題，Visual Studio 會提示您升級檔。
+
 > [!IMPORTANT]
-> 我們建議您在升級之前備份的資料庫檔案。  
-  
+> 我們建議您在升級之前備份的資料庫檔案。
+
 > [!WARNING]
 > 如果您升級至 LocalDB 2016 (V13) 的 32 位元 LocalDB 2014 (V12) 中所建立的.mdf 檔案或更新版本中，您將無法在 32 位元版本的 LocalDB 再次開啟檔案。
-  
-當您升級資料庫之前，請考慮下列準則：  
+
+當您升級資料庫之前，請考慮下列準則：
   
 -   如果您要使用舊版和新版的 Visual Studio 中的專案不升級。  
   
@@ -116,4 +114,5 @@ ms.lasthandoff: 11/09/2017
     SQL Server Express，將會是您的應用程式的預設 database engine。
 
 ## <a name="see-also"></a>請參閱
+
 [存取 Visual Studio 中的資料](accessing-data-in-visual-studio.md)

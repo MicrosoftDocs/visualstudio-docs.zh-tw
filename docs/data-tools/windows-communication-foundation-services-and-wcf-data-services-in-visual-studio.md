@@ -39,11 +39,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 39c9ac7b1cbed8c64ee3b87fde4c990f998157a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]檢視方塊。 如需完整的文件，請參閱[WCF 資料服務 4.5](/dotnet/framework/data/wcf/index)。  
@@ -243,7 +243,6 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可以同步�
 ||[如何：新增、更新或移除 WCF 資料服務參考](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)|討論如何參考及使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。|  
 |[服務參考的疑難排解](../data-tools/troubleshooting-service-references.md)|呈現服務的參考，以及如何讓它們可以發生的一些常見錯誤。|  
 |[偵錯 WCF 服務](../debugger/debugging-wcf-services.md)|描述常見的偵錯問題和偵錯 WCF 服務時，可能會遇到的技術。|  
-|[Windows Communication Foundation 驗證服務概觀](http://msdn.microsoft.com/Library/6e121a28-89e8-4974-88a8-70aaa6a7d52b)|描述如何使用 WCF 來提供網站的角色服務。|  
 |[逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)|提供用於建立具類型資料集以及將 TableAdapter 和資料集程式碼分成多個專案的逐步指示。|  
 |[設定服務參考對話方塊](../data-tools/configure-service-reference-dialog-box.md)|描述使用者介面項目**設定服務參考** 對話方塊。|  
   
