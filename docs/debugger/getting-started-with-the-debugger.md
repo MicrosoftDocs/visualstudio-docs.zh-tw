@@ -1,7 +1,7 @@
 ---
-title: "開始使用偵錯工具 |Microsoft 文件"
+title: "了解如何使用 Visual Studio 偵錯 |Microsoft 文件"
 ms.custom: H1HackMay2017
-ms.date: 05/18/2017
+ms.date: 10/11/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-debug
@@ -13,13 +13,13 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f6bcc75341297ad20d66514c92f92513ef44d2f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
-ms.translationtype: MT
+ms.openlocfilehash: 645546f373582bb0a81d7ab23df1a467b27f8e47
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="get-started-with-the-visual-studio-debugger"></a>開始使用 Visual Studio 偵錯工具
+# <a name="learn-to-debug-using-visual-studio"></a>了解如何使用 Visual Studio 偵錯
 
 本主題將介紹 Visual Studio 偵錯工具的逐步解說中的功能。 如果您想要偵錯工具功能的高階檢視，請參閱[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)。
 
@@ -138,19 +138,81 @@ ms.lasthandoff: 10/31/2017
 
      ![逐步執行更新方法的結果](../debugger/media/dbg-tour-update-method.png "步驟到 Update 方法")
 
-    在這裡，我們找到某些更多的程式碼看起來很有趣。應用程式會取得所有 *.jpg 檔案位於特定的目錄，並建立每個檔案的相片物件。 此程式碼可讓我們開始檢查您的應用程式狀態 （變數），偵錯工具的好機會。
+    在這裡，我們找到某些更多的程式碼看起來很有趣。應用程式會取得所有 *.jpg 檔案位於特定的目錄，並建立每個檔案的相片物件。 此程式碼可讓我們開始檢查您的應用程式狀態 （變數），偵錯工具的好機會。 我們會執行，在本教學課程的下一節。
 
     功能可讓您檢查變數是其中一個最有用的功能，偵錯工具，而且有不同的方式來進行。 通常，當您嘗試偵錯問題，您會嘗試找出是否變數會儲存您希望他們能夠在特定時間的值。
 
+## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
+
+- 在暫停期間`Update`方法中，按一下 **呼叫堆疊**視窗中，這是預設在右下方的窗格中開啟。
+
+     ![檢查呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
+
+    **呼叫堆疊** 視窗會顯示方法和函式會取得呼叫所在的順序。 第一行會顯示目前的函式 (`Update`教學課程應用程式中的方法)。 第二行顯示`Update`呼叫`Path.set`屬性，依此類推。
+
+    >  [!NOTE]
+    > **呼叫堆疊**視窗是類似於偵錯觀點來看，某些像 Eclipse Ide 中。
+
+    呼叫堆疊是很好的方式來檢查，並了解應用程式的執行流程。
+
+    您可以按兩下要查看原始程式碼的程式碼行並，也會變更目前正在檢查偵錯工具的範圍。 此動作不前移偵錯工具。
+
+    您也可以使用滑鼠右鍵功能表從**呼叫堆疊**視窗來執行其他動作。 例如，您可以在其中插入指定的函式的中斷點、 前進偵錯工具使用**執行至游標處**，並移檢查原始程式碼。 如需詳細資訊，請參閱[How to： 檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
+
+## <a name="step-out"></a>跳離函式
+
+假設您已完成檢查`Update`方法中 Data.cs，而且您想要取得移到函式，並且保留在偵錯工具。 您可以使用**跳離函式**命令。
+
+1. 按 Shift + f11 鍵 (或**偵錯 > 跳離函式**)。
+
+     此命令會繼續執行應用程式 （和進階偵錯工具） 直到目前的函式傳回。
+
+     您應該在`Update`中 Data.cs 方法呼叫。
+
+2. 按 Shift + f11 鍵，以及偵錯工具在呼叫堆疊向上移回`OnApplicationStartup`事件處理常式。
+
+## <a name="run-to-cursor"></a>執行至游標處
+
+1. 選擇**停止偵錯**的紅色按鈕![停止偵錯](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")或 Shift + F5。
+
+2. 在`Update`方法中 Data.cs，以滑鼠右鍵按一下`Add`方法呼叫，並選擇**執行至游標處**。 此命令會開始偵錯，並在目前的程式碼行上設定暫時中斷點。
+
+     ![使用 執行至資料指標功能](../debugger/media/dbg-tour-run-to-cursor.png "執行至游標處")
+
+    您應該在中斷點上暫停`MainWindow`（因為這是第一個中斷點您設定）。
+
+3. 按 F5，前進到`Add`方法其中選取**執行至游標處**。
+
+    此命令時，您正在編輯程式碼，而且想要快速地設定暫時中斷點並開始偵錯工具。
+
+## <a name="change-the-execution-flow"></a>變更執行流程
+
+1. 偵錯工具暫停上`Add`呼叫方法時，使用滑鼠來抓取 （執行指標） 的黃色箭號左邊和移動一行來向上的黃色箭頭`foreach`迴圈。
+
+     ![執行將指標移至](../debugger/media/dbg-tour-move-the-execution-pointer.gif "執行將指標移至")
+
+    藉由變更執行流程，您可以執行一些作業，例如測試不同的程式碼執行路徑，或執行程式碼並不會重新啟動偵錯工具。
+
+2. 現在，請按 F5。
+
+    您可以查看加入至應用程式視窗的映像。 因為您正在重新執行中的程式碼`foreach`兩次已加入迴圈中，某些影像 ！
+    
+    > [!WARNING]
+    > 通常需要謹慎使用這項功能，您會看到工具提示中的警告。 您可能會太看到其他警告。 移動指標無法還原成先前的應用程式狀態的應用程式。
+
 ## <a name="inspect-variables-with-data-tips"></a>檢查資料提示使用的變數
 
-1. 上暫停偵錯工具`Add`呼叫方法時，暫留在`Add`方法呼叫，並按一下**執行按一下**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+1. 開啟 Data.cs 相片檢視器示範應用程式中，以滑鼠右鍵按一下`private void Update`函式宣告，並選擇**執行至游標處**（停止應用程式第一次如果已在執行）。
 
-2. 現在，將滑鼠停留在 「 檔案 」 物件 (`f`)，並查看其預設屬性值、 檔案名稱`market 031.jpg`。
+    這將會附加偵錯工具暫停應用程式。 這可讓我們檢查它的狀態。
+
+2. 將滑鼠停留在`Add`方法呼叫，並按一下**執行按一下**按鈕![執行按一下](../debugger/media/dbg-tour-run-to-click.png "RunToClick")。
+
+3. 現在，將滑鼠停留在 「 檔案 」 物件 (`f`)，並查看其預設屬性值、 檔案名稱`market 031.jpg`。
 
      ![檢視資料提示方塊](../debugger/media/dbg-tour-data-tips.gif "檢視資料提示方塊")
 
-3. 展開以查看所有內容，例如物件`FullPath`屬性。
+4. 展開以查看所有內容，例如物件`FullPath`屬性。
 
     通常，偵錯時，您會想快速檢查物件的屬性值的方法，以及資料提示是很好的方法。
 
@@ -192,66 +254,6 @@ ms.lasthandoff: 10/31/2017
 
     如需詳細資訊，請參閱[設定使用監看式和快速監看式視窗的監看式](../debugger/watch-and-quickwatch-windows.md)
 
-## <a name="examine-the-call-stack"></a>檢查呼叫堆疊
-
-1. 按一下**呼叫堆疊**視窗中，這是預設在右下方的窗格中開啟。
-
-     ![檢查呼叫堆疊](../debugger/media/dbg-tour-call-stack.png "ExamineCallStack")
-
-    **呼叫堆疊** 視窗會顯示方法和函式會取得呼叫所在的順序。 第一行會顯示目前的函式 (`Update`教學課程應用程式中的方法)。 第二行顯示`Update`呼叫`Path.set`屬性，依此類推。
-
-    >  [!NOTE]
-    > **呼叫堆疊**視窗是類似於偵錯觀點來看，某些像 Eclipse Ide 中。
-
-    呼叫堆疊是很好的方式來檢查，並了解應用程式的執行流程。
-
-    您可以按兩下要查看原始程式碼的程式碼行並，也會變更目前正在檢查偵錯工具的範圍。 此動作不前移偵錯工具。
-
-    您也可以使用滑鼠右鍵功能表從**呼叫堆疊**視窗來執行其他動作。 例如，您可以在其中插入指定的函式的中斷點、 前進偵錯工具使用**執行至游標處**，並移檢查原始程式碼。 如需詳細資訊，請參閱[How to： 檢查呼叫堆疊](../debugger/how-to-use-the-call-stack-window.md)。
-
-## <a name="change-the-execution-flow"></a>變更執行流程
-
-1. 偵錯工具暫停上`Add`呼叫方法時，使用滑鼠來抓取 （執行指標） 的黃色箭號左邊和移動一行來向上的黃色箭頭`foreach`迴圈。
-
-     ![執行將指標移至](../debugger/media/dbg-tour-move-the-execution-pointer.gif "執行將指標移至")
-
-    藉由變更執行流程，您可以執行一些作業，例如測試不同的程式碼執行路徑，或執行程式碼並不會重新啟動偵錯工具。
-
-2. 現在，請按 F5。
-
-    您可以查看加入至應用程式視窗的映像。 因為您正在重新執行中的程式碼`foreach`兩次已加入迴圈中，某些影像 ！
-    
-    > [!WARNING]
-    > 通常需要謹慎使用這項功能，您會看到工具提示中的警告。 您可能會太看到其他警告。 移動指標無法還原成先前的應用程式狀態的應用程式。
-
-## <a name="run-to-cursor"></a>執行至游標處
-
-1. 選擇**停止偵錯**的紅色按鈕![停止偵錯](../debugger/media/dbg-tour-stop-debugging.png "停止偵錯")或 Shift + F5。
-
-2. 在`Update`方法，以滑鼠右鍵按一下`Add`方法呼叫，並選擇**執行至游標處**。 此命令會開始偵錯，並在目前的程式碼行上設定暫時中斷點。
-
-     ![使用 執行至資料指標功能](../debugger/media/dbg-tour-run-to-cursor.png "執行至游標處")
-
-    您應該在中斷點上暫停`MainWindow`（因為這是第一個中斷點。
-
-3. 按 F5，前進到`Add`方法其中選取**執行至游標處**。
-
-    此命令時，您正在編輯程式碼，而且想要快速地設定暫時中斷點並開始偵錯工具。
-
-## <a name="step-out"></a>跳離函式
-
-假設您已完成檢查`Update`方法中 Data.cs，而且您想要取得移到函式，並且保留在偵錯工具。 您可以使用**跳離函式**命令。
-
-1. 按 Shift + f11 鍵 (或**偵錯 > 跳離函式**)。
-
-     此命令會繼續執行應用程式 （和進階偵錯工具） 直到目前的函式傳回。
-
-     您應該在`Update`中 Data.cs 方法呼叫。
-
-2. 按 Shift + f11 鍵，以及偵錯工具在呼叫堆疊向上移回`OnApplicationStartup`事件處理常式。
-
-3. 按 f5 鍵繼續。
-
 ## <a name="examine-an-exception"></a>檢查例外狀況
 
 1. 在執行的應用程式視窗中，刪除中的文字**路徑**輸入的方塊，然後選取**變更** 按鈕。
@@ -283,6 +285,7 @@ ms.lasthandoff: 10/31/2017
 <iframe style="position: absolute;top: 0;left: 0;right: 0;bottom: 0;" width="100%" height="100%" src="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171" frameborder="0" allowfullscreen></iframe>
 </div>
 
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 偵錯](../debugger/index.md)  
- [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
+## <a name="see-also"></a>請參閱
+
+[Visual Studio 偵錯](../debugger/index.md)  
+[偵錯工具功能導覽](../debugger/debugger-feature-tour.md)
