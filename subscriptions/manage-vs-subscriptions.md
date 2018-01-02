@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何充分利用 Visual Studio 訂閱。"
+Description: Learn how to get the most out of your Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 640dfcd7a337606982b97f6631cb836a2bffb16c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 58dfc6e6cce60e28c15d6b7de80265f6ec37f8f5
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="managing-subscriptions"></a>管理訂閱
 ## <a name="signing-in-to-the-portal"></a>登入入口網站
@@ -21,7 +21,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="first-time-access"></a>第一次存取時
 第一次使用訂閱的步驟取決於您的訂閱取得方式而定。  
 #### <a name="microsoft-store"></a>Microsoft 市集
-如果您是透過 Microsoft 市集購買 Visual Studio 訂閱，即可從付款**確認頁面**或**確認電子郵件**開始啟動步驟。  
+如果您是透過 Microsoft Store 購買 Visual Studio 訂用帳戶，則可以從付款 [確認頁面] 或 [確認電子郵件] 起始啟用步驟。  
 1.  在「確認頁面」或「確認電子郵件」中，按一下 [請按這裡登入]。  系統會將您重新導向至 https://my.visualstudio.com/subscriptions/activate。
 2.  輸入您要用來登入訂閱者入口網站的電子郵件地址，並按一下 [繼續]。
 3.  根據電子郵件地址，系統可能會將您重新導向至 Microsoft 帳戶登入頁面，或您公司/學校的登入頁面。
@@ -31,9 +31,9 @@ ms.lasthandoff: 10/27/2017
 #### <a name="workschool-accounts"></a>公司帳戶/學校帳戶
 如果您的訂閱是由公司/學校提供，則您會收到一封歡迎電子郵件。  
 1.  前往[訂閱者入口網站](https://my.visualstudio.com/)
-2.  輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者的「歡迎郵件」中識別這個地址。 如果沒有收到「歡迎郵件」，請檢查垃圾郵件資料夾。
+2.  輸入指派給新 Visual Studio 訂閱的電子郵件地址。 您也可以在訂閱者的**歡迎郵件**中識別這個地址。 如果沒有收到「歡迎郵件」，請檢查垃圾郵件資料夾。
 3.  按一下 [繼續]。
-4.  系統會將您重新導向至「公司登入」頁面。
+4.  系統會將您重新導向至公司登入頁面。
 5.  請輸入您的密碼。
 6.  按一下 [登入]。
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 10/27/2017
 6.  按一下 [登入] 
 
 ### <a name="managing-multiple-subscriptions"></a>管理多重訂閱
-MY 入口網站可將您所有 Visual Studio 訂閱與程式整合為較佳的單一入口網站體驗。  例如，您可能因為工作原因而使用 Visual Studio Enterprise 這類標準訂閱，在家則使用每月的 Visual Studio Professional 訂閱或 Visual Studio Dev Essentials 成員資格。 
+Visual Studio 訂用帳戶入口網站可將您所有 Visual Studio 訂閱與方案整合為較佳的單一入口網站體驗。  例如，您可能因為工作原因而使用 Visual Studio Enterprise 這類標準訂閱，在家則使用每月的 Visual Studio Professional 訂閱或 Visual Studio Dev Essentials 成員資格。 
 #### <a name="which-subscription-am-i-using"></a>我目前使用的是哪一種訂閱？
 使用中的訂閱會醒目顯示在「權益」頁面的藍色橫幅中，  以及頁面右上方。
 
@@ -64,9 +64,9 @@ MY 入口網站可將您所有 Visual Studio 訂閱與程式整合為較佳的�
 #### <a name="if-your-subscription-is-not-visible"></a>如果未顯示您的訂閱...
 - 表示訂閱可能已經過期。  訂閱者入口網站僅會顯示現用的訂閱。
 - 訂閱可能與其他電子郵件地址建立關聯。 例如，如果您使用工作/學校電子郵件登入 Visual Studio Professional 訂閱，並將 Visual Studio Dev Essentials 成員資格與您的 Microsoft 帳戶建立關聯，則只會顯示您用來登入訂閱者入口網站之對應電子郵件地址的訂閱。  若要查看其他訂閱，您必須先登出，再使用其他電子郵件地址登入。
-- 如果您的公司是透過大量授權購買訂閱，可能系統管理員尚未指派訂閱給您。  
+- 如果您的公司是透過大量授權購買訂閱，您的系統管理員可能尚未指派訂閱給您，或可能將您的訂閱重新指派給其他使用者。  
 
-#### <a name="renewing-my-subscriptions"></a>續訂訂閱
+### <a name="renewing-my-subscriptions"></a>續訂訂閱
 **標準訂閱**
 - Microsoft 市集：如果您是從 [Microsoft 市集](http://www.microsoft.com/store)購買訂閱，即可在同樣的位置更新憑證。 
 - 大量授權：如果您的公司是透過大量授權購買訂閱，則應該由系統管理員連絡轉銷商以更新您的訂閱。
@@ -81,7 +81,7 @@ MY 入口網站可將您所有 Visual Studio 訂閱與程式整合為較佳的�
 
 **Visual Studio Dev Essentials** - Dev Essentials 是免費的程式，因此成員資格不會過期。  
 
-#### <a name="transferring-subscriptions"></a>轉移訂閱
+### <a name="transferring-subscriptions"></a>轉移訂閱
 如果您的訂閱是透過 Microsoft 大量授權購買而得，但您要將訂閱重新指派給組織內的其他人員，則必須交由系統管理員來處理。 您可以連絡客戶服務中心，以將零售訂閱轉移給其他使用者。  免費或「禁止轉售」訂閱則無法轉移。 
 
 

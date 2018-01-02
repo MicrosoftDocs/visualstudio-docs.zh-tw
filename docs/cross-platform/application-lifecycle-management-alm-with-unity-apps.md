@@ -12,11 +12,11 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 48f29ec016b426319241c1a72701ed529ec7dddd
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。  
@@ -73,12 +73,12 @@ ms.lasthandoff: 11/29/2017
 3.  Unity 專案中的二進位資產 (例如紋理或音訊檔) 可能會佔用大量儲存體。 各種原始檔控制系統 (如 Git) 會針對進行的每一項變更儲存唯一的檔案複本，即使變更只影響一小部分的檔案也是一樣。 這可能會讓 Git 儲存機制變得過大。 若要解決這個問題，Unity 開發人員通常會選擇只將最後一個資產加入其儲存機制，並使用不同的方法來保留其資產的工作歷程記錄 (例如 OneDrive、DropBox 或 git-annex)。 因為這類資產一般不需要進行版本控制以及原始程式碼變更，所以這種方式適用。 開發人員一般也會將專案編輯器的 [資產序列化模式] 設定為 [強制文字]，以文字格式 (非允許在原始檔控制中進行合併的二進位格式) 來儲存場景檔案。 如需詳細資訊，請參閱[編輯器設定 (英文)](http://docs.unity3d.com/Manual/class-EditorManager.html) (Unity 文件)。  
 
 ## <a name="build"></a>組建  
- 參考連結︰**[建置](http://msdn.microsoft.com/Library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ 參考連結︰**[建置和發行](/vsts/build-release/index)**  
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
 |內部部署 TFS 伺服器|可能|Unity 專案是透過 Unity 環境而非透過 Visual Studio 組建系統所建置 (Visual Studio Tools for Unity 內的建置將會編譯指令碼，而不會產生可執行檔)。 可能會[從命令列建置 Unity 專案](http://docs.unity3d.com/Manual/CommandLineArguments.html) (Unity 文件)，因此，可能會在 TFS 伺服器上設定 MSBuild 處理序來執行適當的 Unity 命令，但前提是要將 Unity 安裝於該電腦上。<br /><br /> Unity 也提供 [Unity 雲端組建 (英文)](https://build.cloud.unity3d.com/landing/)，其會監視 Git 或 SVN 儲存機制，並執行定期建置。 它目前並未使用 Team Foundation 版本控制或 Visual Studio Team Services。|  
-|連結至 Visual Studio Team Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Visual Studio Team Services 觸發的組建使用內部部署的 TFS 電腦。  如需相關指示，請參閱[組建伺服器](http://msdn.microsoft.com/Library/2d258a0a-f178-4e93-9da1-eba61151af3c)。|  
+|連結至 Visual Studio Team Services 的內部部署組建伺服器|可能|假設條件與上面相同，可進一步指示透過 Visual Studio Team Services 觸發的組建使用內部部署的 TFS 電腦。  相關指示，請參閱[建置和發行代理程式](/vsts/build-release/concepts/agents/agents)。|  
 |Visual Studio Team Services 的裝載控制器服務|否|目前不支援 Unity 組建。|  
 |具有預先定義和後置指令碼的組建定義|是|也可以針對建置前和建置後的指令碼，設定使用 Unity 命令列來執行組建的自訂組建定義。|  
 |包括閘道簽入的連續整合|是|TFVC 的閘道簽入，只適用於 Git 在提取要求模型上運作的時候，而不是簽入運作時。|  

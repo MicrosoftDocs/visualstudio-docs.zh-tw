@@ -15,11 +15,11 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 1f703c1eefe535906f287c9e7b50e0b7ad99677f
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 5dacd44d72e5be7a898ba90c074dedf4b2f2bb4b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="introduction-to-wpf"></a>WPF 簡介
 Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之使用者介面的 Windows 桌面用戶端應用程式。  
@@ -33,7 +33,7 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
 ##  <a name="Programming_with_WPF"></a> 使用 WPF 進行程式設計  
  WPF 是以 .NET Framework 類型的子集來表示，大部分位於 <xref:System.Windows> 命名空間中。 如果您之前使用過 ASP.NET 和 Windows Form 等 Managed 技術建置 .NET Framework 應用程式，應該很熟悉基本 WPF 程式設計功能：您可以具現化類別、設定屬性、呼叫方法及處理事件，全部透過您最愛的 .NET 程式設計語言來完成，例如 C# 或 Visual Basic。  
   
- WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬性](https://msdn.microsoft.com/en-us/library/ms752914\(v=vs.100\).aspx) 和 [路由事件](https://msdn.microsoft.com/en-us/library/ms742806\(v=vs.100\).aspx)。  
+ WPF 包含可增強屬性和事件的額外程式設計建構： [相依性屬性](/dotnet/framework/wpf/advanced/dependency-properties-overview) 和 [路由事件](/dotnet/framework/wpf/advanced/routed-events-overview)。  
   
 ##  <a name="Markup_And_Codebehind"></a> 標記和程式碼後置  
  WPF 可讓您使用 *標記* 和 *程式碼後置*來開發應用程式，這是 ASP.NET 開發人員應該很熟悉的功能。 您通常會使用 XAML 標記來實作應用程式的外觀，同時使用 Managed 程式設計語言 (程式碼後置) 來實作其行為。 將外觀與行為區隔開來的優點如下：  
@@ -42,7 +42,7 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
   
 -   由於實作應用程式外觀的設計人員可以與實作應用程式行為的設計人員同時進行，因此開發作業會更有效率。  
   
--   WPF 應用程式的[全球化和當地語系化](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx) 已經過簡化。  
+-   WPF 應用程式的[全球化和當地語系化](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview) 已經過簡化。  
   
  以下是 WPF 標記和程式碼後置的簡介。  
   
@@ -69,7 +69,7 @@ Windows Presentation Foundation (WPF) 可讓您建立具有豐富視覺效果之
   
  ![包含按鈕的視窗](../designers/media/wpfintrofigure10.png "WPFIntroFigure10")  
   
- 由於 XAML 是以 XML 為基礎，您以此撰寫的 UI 會組合成巢狀項目階層架構，稱為 [項目樹狀結構](https://msdn.microsoft.com/en-us/library/ms753391\(v=vs.100\).aspx)。 項目樹狀結構提供一個邏輯和直覺方式來建立及管理 UI。  
+ 由於 XAML 是以 XML 為基礎，您以此撰寫的 UI 會組合成巢狀項目階層架構，稱為 [項目樹狀結構](/dotnet/framework/wpf/advanced/trees-in-wpf)。 項目樹狀結構提供一個邏輯和直覺方式來建立及管理 UI。  
   
 ### <a name="code-behind"></a>程式碼後置  
  應用程式的主要行為是實作回應使用者互動的功能，包括處理事件 (例如按一下功能表、工具列或按鈕)，以及呼叫商務邏輯和資料存取邏輯進行回應。 在 WPF 中，這項行為通常會在與標記相關聯的程式碼中實作。 這種類型的程式碼稱為程式碼後置。 下列範例顯示從上一個範例更新的標記和程式碼後置。  
@@ -181,9 +181,9 @@ End Namespace
 -   **使用者資訊**： <xref:System.Windows.Controls.AccessText>、 <xref:System.Windows.Controls.Label>、 <xref:System.Windows.Controls.Primitives.Popup>、 <xref:System.Windows.Controls.ProgressBar>、 <xref:System.Windows.Controls.Primitives.StatusBar>、 <xref:System.Windows.Controls.TextBlock>和 <xref:System.Windows.Controls.ToolTip>。  
   
 ##  <a name="Input_And_Commanding"></a> 輸入和命令  
- 控制項最常用來偵測及回應使用者輸入。 [WPF 輸入系統](https://msdn.microsoft.com/en-us/library/ms754010\(v=vs.100\).aspx) 使用直接和路由事件來支援文字輸入、焦點管理和滑鼠定位。  
+ 控制項最常用來偵測及回應使用者輸入。 [WPF 輸入系統](/dotnet/framework/wpf/advanced/input-overview) 使用直接和路由事件來支援文字輸入、焦點管理和滑鼠定位。  
   
- 應用程式通常具有複雜的輸入需求。 WPF 提供一個 [命令系統](https://msdn.microsoft.com/en-us/library/ms752308\(v=vs.100\).aspx) ，將使用者輸入動作與回應這些動作的程式碼區隔開來。  
+ 應用程式通常具有複雜的輸入需求。 WPF 提供一個 [命令系統](/dotnet/framework/wpf/advanced/commanding-overview) ，將使用者輸入動作與回應這些動作的程式碼區隔開來。  
   
 ##  <a name="Layout"></a> 版面配置  
  當您建立使用者介面時，您可依位置和大小排列控制項，以形成一個版面配置。 所有版面配置的一個關鍵需求是隨視窗大小和顯示設定的變更進行調整。 WPF 為您提供一流且可擴充的版面配置系統，而不是強迫您在這些情況下撰寫程式碼來調整版面配置。  
@@ -211,7 +211,7 @@ End Namespace
  <xref:System.Windows.Controls.DockPanel> 可讓子 <xref:System.Windows.Controls.TextBox> 控制項指示排列方式。 為了執行這項操作，<xref:System.Windows.Controls.DockPanel> 會實作公開給子控制項的 `Dock` 附加屬性，讓每個控制項都能指定停駐樣式。  
   
 > [!NOTE]
->  WPF 建構是由父控制項實作並可供子控制項使用的屬性，又稱為 [附加屬性](https://msdn.microsoft.com/en-us/library/ms749011\(v=vs.100\).aspx)。  
+>  WPF 建構是由父控制項實作並可供子控制項使用的屬性，又稱為 [附加屬性](/dotnet/framework/wpf/advanced/attached-properties-overview)。  
   
  下圖顯示上述範例中之 XAML 標記的結果。  
   
@@ -254,7 +254,7 @@ End Namespace
   
  WPF 資料繫結引擎還提供其他支援，包括驗證、排序、篩選和群組。 此外，資料繫結可在標準 WPF 控制項所顯示的使用者介面不適用時，使用資料範本來建立繫結資料的自訂使用者介面。  
   
- 如需詳細資訊，請參閱 [資料繫結概觀](https://msdn.microsoft.com/en-us/library/ms752347\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)。  
   
 ##  <a name="Graphics"></a> 圖形  
  WPF 引進了一組詳盡、可擴充且彈性的圖形功能，其優點如下：  
@@ -283,7 +283,7 @@ End Namespace
   
  ![包含 "you clicked the ellipse&#33;" 文字的視窗](../designers/media/wpfintrofigure12.png "WPFIntroFigure12")  
   
- 如需詳細資訊，請參閱 [WPF 中圖案和基本繪圖概觀](https://msdn.microsoft.com/en-us/library/ms747393\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [WPF 中圖案和基本繪圖概觀](/dotnet/framework/wpf/data/data-binding-overview)。  
   
 ### <a name="2-d-geometries"></a>2D 幾何  
  WPF 提供的 2D 圖案涵蓋一組標準的基本圖案。 不過，您可能需要建立自訂圖案，來實現自訂使用者介面的設計。 為了達成這個目的，WPF 提供了幾何。 下圖示範如何使用幾何來建立自訂圖案，您可以直接繪製、當做筆刷來使用，或是用來裁剪其他圖案和控制項。  
@@ -294,28 +294,28 @@ End Namespace
   
  ![Path 的各種用法](../designers/media/wpfintrofigure5.PNG "WPFIntroFigure5")  
   
- 如需詳細資訊，請參閱 [幾何概觀](https://msdn.microsoft.com/en-us/library/ms751808\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱[幾何概觀](/dotnet/framework/wpf/graphics-multimedia/geometry-overview)。  
   
 ### <a name="2-d-effects"></a>2D 效果  
  WPF 2D 功能子集包含漸層、點陣圖、繪圖、利用視訊繪製、旋轉、縮放和傾斜等視覺效果。 這些全部可用筆刷來完成；下圖顯示一些範例。  
   
  ![不同筆刷的圖例](../designers/media/wpfintrofigure6.PNG "WPFIntroFigure6")  
   
- 如需詳細資訊，請參閱 [WPF 筆刷概觀](https://msdn.microsoft.com/en-us/library/aa970904\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [WPF 筆刷概觀](/dotnet/framework/wpf/graphics-multimedia/wpf-brushes-overview)。  
   
 ### <a name="3-d-rendering"></a>3D 轉譯  
  WPF 也包含可與 2D 圖形互動的 3D 轉譯功能，以便建立更生動有趣的使用者介面。 例如，下圖顯示轉譯成 3D 圖案的 2D 影像。  
   
  ![Visual3D 範例螢幕擷取畫面](../designers/media/wpfintrofigure13.png "WPFIntroFigure13")  
   
- 如需詳細資訊，請參閱 [3D 圖形診斷](https://msdn.microsoft.com/en-us/library/ms747437\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [3D 圖形診斷](/dotnet/framework/wpf/graphics-multimedia/3-d-graphics-overview)。  
   
 ##  <a name="Animation"></a> 動畫  
  WPF 動畫支援可讓您將控制項設為放大、搖晃、旋轉和淡出，以建立有趣的網頁切換及執行其他工作。 您可以建立大多數 WPF 類別的動畫，甚至是自訂類別。 下圖顯示執行中的簡單動畫。  
   
  ![動畫效果立方體的影像](../designers/media/wpfintrofigure7.png "WPFIntroFigure7")  
   
- 如需詳細資訊，請參閱 [動畫概觀](https://msdn.microsoft.com/en-us/library/ms752312\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [動畫概觀](/dotnet/framework/wpf/graphics-multimedia/animation-overview)。  
   
 ##  <a name="Media"></a> 媒體  
  傳達豐富內容的一個方式是透過視聽媒體。 WPF 提供對影像、視訊和音訊的特殊支援。  
@@ -325,7 +325,7 @@ End Namespace
   
  ![縮圖影像與完整大小影像](../designers/media/wpfintrofigure8.PNG "WPFIntroFigure8")  
   
- 如需詳細資訊，請參閱 [影像處理概觀](https://msdn.microsoft.com/en-us/library/ms748873\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [影像處理概觀](/dotnet/framework/wpf/graphics-multimedia/imaging-overview)。  
   
 ### <a name="video-and-audio"></a>視訊和音訊  
  <xref:System.Windows.Controls.MediaElement> 控制項可播放視訊和音訊，而且有足夠的彈性可做為自訂媒體播放程式的基礎。 下列 XAML 標記實作一個媒體播放程式。  
@@ -336,7 +336,7 @@ End Namespace
   
  ![具有音訊與視訊的 MediaElement 控制項](../designers/media/wpfintrofigure1.png "WPFIntroFigure1")  
   
- 如需詳細資訊，請參閱 [WPF 圖形、動畫和媒體概觀](https://msdn.microsoft.com/en-us/library/ms742562\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱[圖形和多媒體](/dotnet/framework/wpf/graphics-multimedia)。  
   
 ##  <a name="Text_and_Typography"></a> 文字和印刷樣式  
  為了達成高品質文字轉譯，WPF 提供下列功能：  
@@ -355,7 +355,7 @@ End Namespace
   
  ![帶有各種文字裝飾的文字](../designers/media/wpfintrofigure23.png "WPFIntroFigure23")  
   
- 如需詳細資訊，請參閱 [Windows Presentation Foundation 中的印刷樣式](https://msdn.microsoft.com/en-us/library/ms742190\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [Windows Presentation Foundation 中的印刷樣式](/dotnet/framework/wpf/advanced/typography-in-wpf)。  
   
 ##  <a name="WPF_Customization"></a> 自訂 WPF 應用程式  
  到目前為止，您已經認識用於開發應用程式的核心 WPF 建置組塊。 您可以使用應用程式模型，來裝載及傳遞主要由控制項所組成的應用程式內容。 為了簡化使用者介面中的控制項排列方式，並確保不論視窗大小和顯示設定如何變更，都能維持此排列方式，您可以使用 WPF 版面配置系統。 由於大多數應用程式可讓使用者與資料互動，因此您可以使用資料繫結來減少使用者介面與資料整合的工作。 若要改進應用程式的視覺外觀，您可以使用的 WPF 所提供的各種圖形、動畫和媒體支援。  
@@ -408,10 +408,10 @@ End Namespace
   
  ![包含多種類型內容的按鈕](../designers/media/wpfintrofigure22.png "WPFIntroFigure22")  
   
- 如需各種控制項所支援之內容類型的詳細資訊，請參閱 [WPF 內容模型](https://msdn.microsoft.com/en-us/library/bb613548\(v=vs.100\).aspx)。  
+ 如需各種控制項所支援之內容類型的詳細資訊，請參閱 [WPF 內容模型](/dotnet/framework/wpf/controls/wpf-content-model)。  
   
 ### <a name="triggers"></a>觸發程序  
- 雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱 [設定樣式和範本](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx)。  
+ 雖然 XAML 標記的主要目的是要實作應用程式的外觀，您也可以使用 XAML 來實作某些方面的應用程式行為。 其中一個範例是使用觸發程序，根據使用者互動來變更應用程式的外觀。 如需詳細資訊，請參閱 [設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。  
   
 ### <a name="control-templates"></a>控制項範本  
  WPF 控制項的預設使用者介面通常是從其他控制項和圖案建構而來。 例如， <xref:System.Windows.Controls.Button> 是由 <xref:Microsoft.Windows.Themes.ButtonChrome> 和 <xref:System.Windows.Controls.ContentPresenter> 控制項所組成。 <xref:Microsoft.Windows.Themes.ButtonChrome> 提供標準按鈕外觀，而 <xref:System.Windows.Controls.ContentPresenter> 則顯示 <xref:System.Windows.Controls.ContentControl.Content%2A> 屬性所指定的按鈕內容。  
@@ -491,7 +491,7 @@ End Namespace
   
  請注意， <xref:System.Windows.Controls.ListBox> 已保留其行為和整體外觀，只會變更清單方塊所要顯示的內容外觀。  
   
- 如需詳細資訊，請參閱 [資料範本化概觀](https://msdn.microsoft.com/en-us/library/ms742521\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [資料範本化概觀](/dotnet/framework/wpf/data/data-templating-overview)。  
   
 ### <a name="styles"></a>樣式  
  樣式可讓開發人員和設計人員標準化其產品的特定外觀。 WPF 提供強式樣式模型，其中的基礎就是 <xref:System.Windows.Style> 項目。 下列範例會建立一個樣式，以將視窗上每一個 <xref:System.Windows.Controls.Button> 的背景色彩設定為 `Orange`。  
@@ -525,7 +525,7 @@ End Namespace
   
  ![兩個橙色按鈕](../designers/media/wpfintrofigure20.png "WPFIntroFigure20")  
   
- 如需詳細資訊，請參閱 [設定樣式和範本](https://msdn.microsoft.com/en-us/library/ms745683\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [設定樣式和範本](/dotnet/framework/wpf/controls/styling-and-templating)。  
   
 ### <a name="resources"></a>資源  
  應用程式中的控制項應該共用相同的外觀，可包含從字型和背景色彩，到控制項範本、資料範本和樣式的任何項目。 您可以使用 WPF 對使用者介面資源的支援，將這些資源封裝到單一位置以重複使用。  
@@ -596,7 +596,7 @@ End Namespace
   
  資源與資源字典是 WPF 支援佈景主題和面板的基礎。  
   
- 如需詳細資訊，請參閱 [資源概觀](https://msdn.microsoft.com/en-us/library/ms750613\(v=vs.100\).aspx)。  
+ 如需詳細資訊，請參閱 [資源概觀](/dotnet/framework/wpf/advanced/xaml-resources)。  
   
 ### <a name="custom-controls"></a>自訂控制項  
  雖然 WPF 提供許多自訂支援，但是您可能還是會遇到現有 WPF 控制項不符合應用程式或其使用者需求的情況。 這種情況的發生原因包括：  
@@ -628,18 +628,18 @@ End Namespace
   
  ![自訂使用者控制項](../designers/media/wpfintrofigure3.png "WPFIntroFigure3")  
   
- 如需自訂控制項的詳細資訊，請參閱 [控制項撰寫概觀](https://msdn.microsoft.com/en-us/library/ms745025\(v=vs.100\).aspx)。  
+ 如需自訂控制項的詳細資訊，請參閱 [控制項撰寫概觀](/dotnet/framework/wpf/controls/control-authoring-overview)。  
   
 ##  <a name="WPF_Best_Practices"></a> WPF 最佳作法  
  如同任何開發平台，您可以透過各種方式來使用 WPF，以取得想要的結果。 為了確保您的 WPF 應用程式提供所需的使用者體驗，並符合一般大眾的需求，已針對協助工具、全球化和當地語系化，以及效能提供了建議的最佳作法。 如需詳細資訊，請參閱下列主題：  
   
--   [協助工具最佳作法](https://msdn.microsoft.com/en-us/library/aa350483\(v=vs.100\).aspx)協助工具最佳作法  
+-   [協助工具最佳作法](/dotnet/framework/ui-automation/accessibility-best-practices)協助工具最佳作法  
   
--   [WPF 全球化和當地語系化概觀](https://msdn.microsoft.com/en-us/library/ms788718\(v=vs.100\).aspx)  
+-   [WPF 全球化和當地語系化概觀](/dotnet/framework/wpf/advanced/wpf-globalization-and-localization-overview)  
   
--   [最佳化 WPF 應用程式效能](https://msdn.microsoft.com/en-us/library/aa970683\(v=vs.100\).aspx)  
+-   [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  
   
--   [Windows Presentation Foundation 安全性](https://msdn.microsoft.com/en-us/library/aa970906\(v=vs.100\).aspx)  
+-   [Windows Presentation Foundation 安全性](/dotnet/framework/wpf/security-wpf)  
   
 ##  <a name="Summary"></a> 總結  
  WPF 是功能齊全的呈現技術，可建置具有豐富視覺效果的各種用戶端應用程式。 本簡介提供 WPF 的主要功能一覽。  
@@ -651,4 +651,4 @@ End Namespace
 ## <a name="see-also"></a>另請參閱  
  [WPF 使用者入門](../designers/getting-started-with-wpf.md)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)   
- [Windows Presentation Foundation](https://msdn.microsoft.com/en-us/library/ms754130\(v=vs.100\).aspx)
+ [Windows Presentation Foundation](/dotnet/framework/wpf/index)

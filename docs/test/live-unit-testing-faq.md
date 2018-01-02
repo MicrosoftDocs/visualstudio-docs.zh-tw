@@ -11,11 +11,11 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: de3ddc4288f2e14f0657f6bfb0ff3ee49ff7b5c9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -226,7 +226,9 @@ public class Class1
 
 **答：**
 
-Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配。 它只有在載入至少一個測試專案之後才會運作。 在那之前，它將不會運作，因為 Live Unit Testing 目前相依於至少一個參考所載入測試配接器 (MSTest、xUnit 或 NUnit) 的測試專案。
+Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配。 它只有在載入至少一個測試專案之後才會運作。 在那之前，它將不會運作，因為 Live Unit Testing 相依於至少一個參考所載入測試配接器 (MSTest、xUnit 或 NUnit) 的測試專案。
+
+注意：Visual Studio 2017 15.5 版和更新版本不再提供輕量型解決方案載入。 在 Visual Studio 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有 受控碼之大型解決方案的載入速度也比過去更快。
  
 ## <a name="why-does-live-unit-testing-does-not-capture-coverage-from-a-new-process-created-by-a-test"></a>為什麼 Live Unit Testing 無法從測試所建立的新流程中擷取涵蓋範圍？
  

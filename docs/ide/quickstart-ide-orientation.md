@@ -10,15 +10,15 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 096b5651f9d8133712d9296f09178fc9c8bc6086
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
-在此 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，我們將簡介部分視窗、功能表和其他 UI 功能。
+在這個 5-10 分鐘的 Visual Studio 整合式開發環境 (IDE) 簡介中，我們將簡介部分視窗、功能表和其他 UI 功能。
 
 ## <a name="start-page"></a>起始頁
 
@@ -94,8 +94,10 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 - 請瀏覽 VS 文件中的＜一般使用者介面項目＞小節，其中會進一步討論[錯誤清單](../ide/reference/error-list-window.md)、[輸出視窗](../ide/reference/output-window.md)、[屬性視窗](../ide/reference/properties-window.md)和[選項對話方塊](../ide/reference/options-dialog-box-visual-studio.md)等視窗
 
-- 在 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)中進行更深入的導覽，甚至嘗試一些偵錯工作
+- 在 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)中進行更深入的 IDE 導覽，甚至嘗試一些偵錯工作
 
 ## <a name="see-also"></a>請參閱
 
-[快速入門：將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)
+[快速入門：將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
+[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
+[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)  

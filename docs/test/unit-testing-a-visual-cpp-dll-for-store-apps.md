@@ -1,7 +1,7 @@
 ---
-title: "對 UWP 應用程式的 Visual C++ DLL 進行單元測試 | Microsoft Docs"
+title: "如何測試 UWP app 的 Visual C++ DLL | Microsoft Docs"
 ms.custom: 
-ms.date: 11/04/2016
+ms.date: 11/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: vs-ide-general
@@ -9,43 +9,42 @@ ms.tgt_pltfrm:
 ms.topic: article
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: "13"
-ms.author: douge
-manager: douge
-ms.openlocfilehash: a900c779401277e4b8694e75f69203fee82d73f0
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.author: mblome
+manager: ghogen
+ms.openlocfilehash: 4fc133d96f8306b46e4d820b6f7256db8c471122
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="unit-testing-a-visual-c-dll-for-uwp-apps"></a>對 UWP 應用程式的 Visual C++ DLL 進行單元測試
-本主題說明如何建立 UWP 應用程式的 C++ DLL 單元測試。透過實作概算指定數字的平方根函式，RooterLib DLL 示範了微積分極限理論的模糊記憶。 接著可將這個 DLL 包含在 UWP 應用程式中，以向使用者顯示可利用數學完成的有趣運算。  
+# <a name="how-to-test-a-visual-c-dll-for-uwp-apps"></a>如何測試 UWP app 的 Visual C++ DLL 
+本主題提供一種方式，說明如何使用適用於 C++ 的 Microsoft 單元測試架構，來為通用 Windows 平台 (UWP) app 的 C++ DLL 建立單元測試。 RooterLib DLL 會藉由實作計算某數值的平方根估計數函式，示範微積分中極限理論的模糊記憶。 接著可將這個 DLL 包含在 UWP 應用程式中，以向使用者顯示可利用數學完成的有趣運算。  
   
  本主題示範如何使用單元測試做為開發工作的第一步。 採用這種方式時，您會先撰寫測試方法，用來驗證要測試之系統中的特定行為，然後撰寫通過測試的程式碼。 依照下列程序的順序進行變更，您就可以反轉策略，先撰寫要測試的程式碼，再撰寫單元測試。  
   
  本主題還會建立單一 Visual Studio 方案，以及用於單元測試和要測試之 DLL 的個別專案。 您也可以直接在 DLL 專案中包含單元測試，或是針對單元測試和 .DLL 建立個別方案。 如需使用何種結構的秘訣，請參閱[將單元測試新增至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)。  
   
-##  <a name="BKMK_In_this_topic"></a> 本主題內容  
- 本主題會引導您完成下列工作：  
+##  <a name="In_this_topic"></a>本主題內容  
+
+ [建立方案和單元測試專案](#Create_the_solution_and_the_unit_test_project)  
   
- [建立方案和單元測試專案](#BKMK_Create_the_solution_and_the_unit_test_project)  
+ [確認測試在測試總管中執行](#Verify_that_the_tests_run_in_Test_Explorer)  
   
- [確認測試在測試總管中執行](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
+ [將 DLL 專案加入方案](#Add_the_DLL_project_to_the_solution)  
   
- [將 DLL 專案加入方案](#BKMK_Add_the_DLL_project_to_the_solution)  
+ [讓測試程式碼能夠看到 DLL 函式](#make_the_dll_functions_visible_to_the_test_code)  
   
- [將測試專案結合至 DLL 專案](#BKMK_Couple_the_test_project_to_the_dll_project)  
+ [反覆擴大測試範圍並使其通過](#Iteratively_augment_the_tests_and_make_them_pass)  
   
- [反覆擴大測試範圍並使其通過](#BKMK_Iteratively_augment_the_tests_and_make_them_pass)  
+ [對失敗的測試進行偵錯](#Debug_a_failing_test)  
   
- [對失敗的測試進行偵錯](#BKMK_Debug_a_failing_test)  
+ [重構程式碼，但不變更測試](#Refactor_the_code_without_changing_tests)  
   
- [重構程式碼，但不變更測試](#BKMK_Refactor_the_code_without_changing_tests)  
-  
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> 建立方案和單元測試專案  
+##  <a name="Create_the_solution_and_the_unit_test_project"></a> 建立方案和單元測試專案  
   
 1.  選擇 [檔案] 功能表上的 [新增]，然後選擇 [新專案]。  
   
-2.  在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C++]，並選擇 [Windows 通用]。 接著從專案範本清單中選擇 [單元測試程式庫 (通用 Windows)]。  
+2.  在 [新增專案] 對話方塊上，展開 [已安裝]，然後展開 [Visual C++]，並選擇 [UWP]。 接著從專案範本清單中選擇 [單元測試程式庫 (UWP app)]。  
   
      ![建立 C&#43;&#43; 單元測試程式庫](../test/media/ute_cpp_windows_unittestlib_create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
@@ -67,7 +66,7 @@ ms.lasthandoff: 11/02/2017
   
          當測試執行時，就會建立每個測試類別的執行個體。 將會以非指定的順序來呼叫測試方法。 您可以定義在每個模組、類別或方法之前和之後叫用的特殊方法。 如需詳細資訊，請參閱 MSDN Library 中的[使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)。  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> 確認測試在測試總管中執行  
+##  <a name="Verify_that_the_tests_run_in_Test_Explorer"></a> 確認測試在測試總管中執行  
   
 1.  插入一些測試程式碼：  
   
@@ -86,7 +85,7 @@ ms.lasthandoff: 11/02/2017
   
      ![測試總管](../test/media/ute_cpp_testexplorer_testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> 將 DLL 專案加入方案  
+##  <a name="Add_the_DLL_project_to_the_solution"></a> 將 DLL 專案加入方案  
   
 1.  在 [方案總管] 中，選擇方案名稱。 從捷徑功能表選擇 [加入]，然後選擇 [加入新的專案]。  
   
@@ -146,7 +145,7 @@ ms.lasthandoff: 11/02/2017
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> 將測試專案與 DLL 專案結合  
+##  <a name="make_the_dll_functions_visible_to_the_test_code"></a> 讓測試程式碼能夠看到 DLL 函式  
   
 1.  將 RooterLib 加入 RooterLibTests 專案。  
   
@@ -199,7 +198,7 @@ ms.lasthandoff: 11/02/2017
   
  您已經設定測試和程式碼專案，並確認您可以執行在程式碼專案中執行函式的測試。 現在您可以開始撰寫真正的測試和程式碼。  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> 反覆擴大測試範圍並使其通過  
+##  <a name="Iteratively_augment_the_tests_and_make_them_pass"></a> 反覆擴大測試範圍並使其通過  
   
 1.  加入新的測試：  
   
@@ -260,7 +259,7 @@ ms.lasthandoff: 11/02/2017
 > [!TIP]
 >  開發程式碼時，一次加入一個測試。 確定所有測試在每次反覆之後都通過。  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> 對失敗的測試進行偵錯  
+##  <a name="Debug_a_failing_test"></a> 對失敗的測試進行偵錯  
   
 1.  將另一個測試加入至 **unittest1.cpp**：  
   
@@ -330,7 +329,7 @@ ms.lasthandoff: 11/02/2017
   
  ![所有測試都成功](../test/media/ute_ult_alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> 重構程式碼，但不變更測試  
+##  <a name="Refactor_the_code_without_changing_tests"></a> 重構程式碼，但不變更測試  
   
 1.  簡化 `SquareRoot` 函式的主要計算：  
   

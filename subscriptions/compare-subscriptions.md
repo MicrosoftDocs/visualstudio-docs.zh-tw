@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "比較 Visual Studio 標準與雲端訂用帳戶的功能和權益"
+Description: Compare features and benefits of Visual Studio standard and cloud subscriptions
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: c231095c7d96c44f35752aa0a1c233599c43b420
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 0f820a0ae85bf4661f2c8a3ce244469b95c9a136
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="compare-visual-studio-subscription-options"></a>比較 Visual Studio 訂用帳戶選項
 
@@ -24,7 +24,7 @@ Visual Studio 訂用帳戶將最全面的一組開發人員工具、雲端服務
 
 **Visual Studio Enterprise：**不管它是用於電話、桌上型電腦還是雲端，Visual Studio 都能輕鬆地在電腦和 Mac 上建置絕佳的軟體。 訂用帳戶包含幾乎所有的 Microsoft 軟體，再加上 Azure 點數、Pluralsight 課程、技術支援等等。
 
-**Visual Studio Professional：**提供為任何平台建置任何應用程式的專業開發人員工具及服務。 不論您是自己工作還是與小型小組一起工作，都可以更輕鬆地共同作業，進而提高工作效率。
+**Visual Studio Professional：**取得為任何平台建置任何應用程式的專業開發人員工具及服務。 不論您是自己工作還是與小型小組一起工作，都可以更輕鬆地共同作業，進而提高工作效率。
 
 **Visual Studio Test Professional：**利用最全面的測試工具和標準訂用帳戶權益 (包括核心的 Microsoft 軟體、Azure 每月點數、技術訓練、專業支援等等)，提升整個開發過程中的品質和共同作業。
 
@@ -33,7 +33,7 @@ Visual Studio 訂用帳戶將最全面的一組開發人員工具、雲端服務
 **Visual Studio Dev Essentials：**取得在任何平台上建置及部署應用程式所需的一切資源。 具備先進工具、雲端功能、訓練及支援，這是有史以來，我們提供給開發人員之免費計劃，涵蓋面最廣的一次。  
 
 ## <a name="subscription-types"></a>訂用帳戶類型
-**標準訂用帳戶** – 可透過簽訂多年 Microsoft 大量授權合約的轉售商取得，以及直接透過 Microsoft Store 網路商店取得。  它們具有 Visual Studio 的永久授權。 
+**標準訂用帳戶** – 可透過簽訂多年 Microsoft 大量授權合約的轉售商取得，以及直接透過 Microsoft Store 網路商店取得。  標準訂用帳戶具有 Visual Studio 的永久授權。 
 
 **雲端訂用帳戶** – 透過雲端訂閱，您無需簽訂長期合約，即可存取 Visual Studio、Visual Studio Team Services 以及其他訂閱者權益。  以每月或每年為基礎進行訂閱。 計費則是透過 Microsoft Azure 訂用帳戶處理。 
 
@@ -45,7 +45,7 @@ Visual Studio 訂用帳戶將最全面的一組開發人員工具、雲端服務
 - [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx) - 可為您量身訂做以提供資源的獨佔存取，協助您進一步開發您的技術專業能力和訓練技能。
 
 ## <a name="visual-studio-licensing"></a>Visual Studio 授權
-Visual Studio 訂用帳戶 (先前稱作 MSDN 訂用帳戶) 是以每個使用者為基礎來授權。 單一個人可以在任意數量的裝置上使用軟體來設計、開發、測試或示範其程式。 Visual Studio 訂用帳戶也允許授權使用者評估軟體並模擬客戶環境，以診斷與其程式相關的問題。
+Visual Studio 訂用帳戶依使用者授權。 單一個人可以在任意數量的裝置上使用軟體來設計、開發、測試或示範其程式。 Visual Studio 訂用帳戶也允許授權使用者評估軟體並模擬客戶環境，以診斷與其程式相關的問題。
 
 Visual Studio 訂閱者還可獲授權在 Microsoft Azure 虛擬機器上執行訂閱者軟體 (Windows 和 Windows Server 除外)，針對開發和測試應用程式提供更大的彈性。 Windows Server 或 Windows 的授權成本已包含在 Windows 虛擬機器費率中。
 
@@ -58,7 +58,7 @@ Visual Studio 訂用帳戶授權也會允許您的終端使用者存取軟體，
 ## <a name="additional-information"></a>其他資訊
 [下載 Visual Studio 授權白皮書](https://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=2b1504e6-0bf1-46da-be0e-85cc792c6b9d)
 
-[比較訂用帳戶選項和定價](https://www.visualstudio.com/pricing).
+[比較訂用帳戶選項和定價](https://www.visualstudio.com/vs/pricing).
 
 [比較 Visual Studio IDE 功能](https://www.visualstudio.com/vs/compare/).
 

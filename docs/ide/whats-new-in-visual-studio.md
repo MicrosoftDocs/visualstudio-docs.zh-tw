@@ -1,12 +1,10 @@
 ---
 title: "Visual Studio 2017 的新功能 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/06/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
-ms.technology:
-- vs-ide-general
-- vs-acquisition
+ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: VS.StartPage.WhatsNew
@@ -17,14 +15,14 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1e616fb0c223a30152b9cd18e6ea53e989690f9b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
-#### <a name="updated-for-the-154-release"></a>已針對 15.4 版本更新
+#### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
 想要從舊版 Visual Studio 升級嗎？ Visual Studio 2017 提供您下列功能：適用於任何開發人員、任何應用程式和任何平台的卓越生產力。 您可使用 Visual Studio 2017 來開發適用於 Android、iOS、Windows、Linux、Web 及雲端的應用程式。 快速編碼、輕鬆偵錯及診斷、頻繁測試，然後自信地發行。 您也可以建置自己的擴充功能來擴充和自訂 Visual Studio 。 使用版本控制、變得敏捷、使用這個版本有效率地共同作業！
 
 以下是自舊版 Visual Studio 2015 以來，我們所做變更的高階回顧：
@@ -32,19 +30,21 @@ ms.lasthandoff: 11/09/2017
 * **重新定義基本概念**。 新的安裝體驗意謂著您可以安裝得更快，且可以在需要時安裝所需的項目。 不論您是要載入大型方案與專案，還是要使用程式碼資料夾或甚至是單一程式碼檔案，Visual Studio 的啟動速度都更快。 而且，Visual Studio 可協助您將焦點放在主要目標，特別適用於採用 DevOps 的小組。
 * **效能和生產力**。 我們已經著重於新的和現代的行動、雲端和桌面開發功能。 而且，我們也已改善整體擷取、效能和一般開發人員生產力體驗。 與以前相比，Visual Studio 的啟動速度、回應速度都變得更快，且使用的記憶體也更少。
 * **搭配 Azure 的雲端應用程式開發**。 一套內建的 Azure 工具套件，可讓您輕鬆建立由 Microsoft Azure 提供技術的雲端優先應用程式。 Visual Studio 可讓您在 Azure 上輕鬆設定、建置、偵錯、封裝及部署應用程式與服務。
+* **Windows 應用程式開發**。 在 Visual Studio 2017 中，您可以使用 UWP 範本建立適用於所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的單一專案。 然後，您可以產生應用程式套件，並從 Visual Studio 提交給 Microsoft Store，以將您的應用程式提供給客戶。
 * **行動應用程式開發**。 在 Visual Studio 2017 中，您可以透過 Xamarin 快速創新並獲得結果，它使用一個核心程式碼基底和一組技術來統一您的多平台行動需求。 利用您現有的小組、技術投資及 C# 程式碼即可撰寫行動應用程式，讓您不僅能夠提前還能以低於預算的方式，提供消費者等級的體驗。 您可以加速行動應用程式生命週期的每個步驟，以提供世界級的消費者體驗，或是提供生產力應用程式組合來提升工作人員能力。
 * **跨平台開發**。 將軟體順暢地提供給任何目標平台。 透過 Redgate Data Tools 將 DevOps 程序延伸到 SQL Server，並從 Visual Studio 安全地將資料庫部署自動化。 或者，使用 .NET Core 來撰寫在未修改的情況下跨 Windows、Linux 和 macOS 作業系統執行的應用程式和程式庫 (**15.3 的新功能**：取得 .NET Core 2.0 SDK 的並存支援)。
 * **遊戲開發**。 透過 Visual Studio Tools for Unity (VSTU)，您可以在 C# 中使用 Visual Studio 來撰寫遊戲和編輯器指令碼，然後使用其強大的偵錯工具來尋找及修正錯誤。 最新版的 VSTU 包含 Unity ShaderLab 著色器語言的語法著色、更佳的偵錯工具視覺化，以及 MonoBehavior 精靈的改良式程式碼產生。 VSTU 也會將您的 Unity 專案檔案、主控台訊息和啟動遊戲的功能整合到 Visual Studio 中，以便您可以在撰寫程式碼時，花較少的時間來切換 Unity Editor。
+* **AI 開發**。 有了 Visual Studio Tools for AI (**15.5 的新功能**)，您就可以使用 Visual Studio 的生產力功能，來加速 AI 創新。 建置、測試及部署與 Azure Machine Learning 緊密整合的深度學習/AI 解決方案，以取得強大的測試功能，例如將資料準備和模型定型作業明確提交至不同的計算目標。 此外，Visual Studio Tools for AI 也提供自訂計量的支援並執行歷程記錄追蹤，以便進行資料科學重現與稽核。
 
 > [!NOTE]
-> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。
+> 如需 Visual Studio 2017 中新功能的完整清單，請參閱[目前版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)。 如需預覽未來提供的功能，請參閱[預覽版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-preview-relnotes)。
 
 以下是一些最值得注意的 Visual Studio 2017 改善和新功能的詳細資訊。
 
 ## <a name="redefined-fundamentals"></a>重新定義的基本概念
 ### <a name="a-new-setup-experience"></a>新的安裝經驗
 
-[下載 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 或[查看 Visual Studio 系統需求](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
+[下載 Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) 或[查看 Visual Studio 系統需求](https://www.visualstudio.com/productinfo/vs2017-system-requirements-vs)
 
  Visual Studio 可讓您在需要功能時，以更輕鬆、更快的方式只安裝所需的功能。 而且，它也會完全進行解除安裝。
 
@@ -72,11 +72,6 @@ ms.lasthandoff: 11/09/2017
 ### <a name="start-visual-studio-faster"></a>更快速啟動 Visual Studio
 新的「Visual Studio 效能中心」可協助您將 IDE 啟動時間最佳化。 「效能中心」會列出可能讓 IDE 啟動變慢的所有擴充功能和工具視窗。 您可以使用它來改善啟動效能，方法是判斷延伸模組啟動時機，或是否在啟動時開啟工具視窗。
 
-### <a name="decrease-solution-load-time"></a>減少解決方案載入時間
-處理包含大量專案的方案並不意謂著您必須一次處理所有的檔案或專案。 您現在可以進行編輯和偵錯，而不需要等待 Visual Studio 載入每個專案。 若要使用 Managed 專案進行試用，請從 [工具] -> [選項] -> [專案和方案] 中開啟 [輕量型解決方案載入]。
-
-  ![Visual Studio 2017 中的 [選項] 對話方塊](../ide/media/vs2017ide-lightweight-solution-load.png "Visual Studio 2017 - [選項] 對話方塊 - [對所有解決方案使用輕量型解決方案載入]")
-
 ### <a name="faster-on-demand-loading-of-extensions"></a>依需求更快速地載入延伸模組
 Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充功能)，讓它們變成在需要時載入，而不是在 IDE 啟動時載入。 想要知道哪些延伸模組影響啟動、解決方案載入和輸入效能嗎？ 您可以在 [說明] -> [管理 Visual Studio 效能] 中查看這項資訊。
 
@@ -103,21 +98,15 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 您在登入後下載的任何擴充功能都會新增到您的清單中並顯示為「已漫遊並已安裝」，而且會包含在您的「漫遊清單」中，讓您從任何電腦都可以存取它。
 
-### <a name="experience-live-architecture-dependency-validation-and-live-unit-testing"></a>體驗即時架構相依性驗證和即時單元測試
-當您在文字編輯器中鍵入程式碼時，如果違反架構相依性規則，Visual Studio 可以使用「相依性驗證」圖表 (也稱為 分層圖) 來即時通知您。
-
-錯誤會出現在 [錯誤清單] 中，而且文字編輯器中的波浪線會顯示違規的確切位置。 如此較不容易引進您不想要的相依性。
-
-![即時驗證架構](../ide/media/vs2017ide-LiveArchitectureDepedendencyValidation.png "即時驗證架構相依性")
-
-#### <a name="live-unit-testing"></a>即時單元測試
+### <a name="experience-live-unit-testing"></a>體驗 Live Unit Testing
 在 Visual Studio Enterprise 2017 中，即時單元測試會在您撰寫程式碼時，在編輯器中提供即時單元測試結果和程式碼涵蓋範圍。 它可以與 .NET Framework 和 .NET Core 的 C# 和 Visual Basic 專案搭配運作，並且支援 MSTest、xUnit 及 NUnit 這三種測試架構。
 
-![即時單元測試](../ide/media/lut-codewindow.png "Visual Studio Enterprise 版中新「即時單元測試」功能的範例")
+![Live Unit Testing](../ide/media/lut-codewindow.png "Visual Studio Enterprise 版中新 Live Unit Testing 功能的範例")
 
 如需詳細資訊，請參閱 [Live Unit Testing 簡介](../test/live-unit-testing-intro.md)。 如需每個 Visual Studio Enterprise 2017 版本中新增的功能清單，請參閱 [Live Unit Testing 的新功能](../test/live-unit-testing-whats-new.md)。
 
-#### <a name="set-up-a-cicd-pipeline-to-run-automated-tests-efficiently"></a>設定 CI/CD 管線，有效率地執行自動化測試
+#### <a name="setting-up-a-cicd-pipeline"></a>設定 CI/CD 管線
+#### <a name="automated-testing"></a>自動化測試
 自動化測試是任何 DevOps 管線的主要部分。 它可讓您在較短的循環內一致且可靠地測試和發行您的方案。 CI/CD (持續整合和持續傳遞) 流程有助於讓程序更具效率。
 
 如需有關自動化測試的詳細資訊，請參閱 [DevOps 中自動化測試的 CI/CD 管線](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) \(英文\) 部落格文章。
@@ -126,8 +115,8 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ### <a name="visual-studio-ide-enhancements"></a>Visual Studio IDE 加強功能
 #### <a name="use-new-refactorings"></a>使用新的重構
-**15.3 的新功能**：我們已新增少數新的重構，包含：
-*   解決合併衝突
+重構是指撰寫程式碼之後，用以改善程式碼的程序。 重構會變更程式碼的內部結構，而不會變更其行為。 我們經常會新增重構，以下是其中一些：
+
 *   新增參數 (從 CallSite)
 *   產生覆寫
 *   新增具名引數
@@ -163,7 +152,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![Visual Studio 2017 結構視覺化檢視](../ide/media/vsIDE-StructureVisualizer.png "Visual Studio 中的結構視覺化檢視")
 
-如需有關我們新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Visual Studio 2017 中的生產力 (英文)](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) 部落格文章。
+如需新生產力功能的詳細資訊，請參閱 Mark Wilson-Thomas 所撰寫的 [Productivity in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/productivity-in-visual-studio-2017-rc/) (Visual Studio 2017 中的生產力) 部落格文章。
 
 ### <a name="visual-c"></a>Visual C++
 您將在 Visual Studio 中看到數項改善，例如使用 Visual Studio 來散發「C++ 核心指南」、新增增強的 C++11 和 C++ 功能支援以更新編譯器，以及新增和更新 C++ 程式庫中的功能。 我們還提升了 C++ IDE、安裝工作負載等的效能。
@@ -185,11 +174,56 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需詳細資訊，請參閱 [Using the New Exception Helper in Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/) (在 Visual Studio 中使用新的例外狀況協助程式) 部落格文章。
 
+#### <a name="snapshots-and-intellitrace-step-back"></a>快照集和 IntelliTrace 回溯：
+**15.5 的新功能**：IntelliTrace 回溯會自動擷取應用程式在每個中斷點和偵錯工具逐步執行事件的快照集。 記錄的快照集可讓您回溯到先前的中斷點或步驟，以檢視應用程式過去的狀態。 如果您想要查看先前的應用程式狀態，但不想要重新啟動偵錯或重新建立所需的應用程式狀態，IntelliTrace 回溯可節省您的時間。
+
+您可以使用[偵錯] 工具列的 [逐步返回] 和 [逐步前進] 按鈕，來巡覽及檢視快照集。 這些按鈕可巡覽出現在 [診斷工具] 視窗之 [事件] 索引標籤中的事件。 逐步返回或前進至某個事件會自動啟動所選事件的歷程偵錯。
+
+![Visual Studio 中新的例外狀況協助程式對話方塊](../debugger/media/intellitrace-step-back-icons-description.png  "[逐步返回] 和 [逐步前進] 按鈕")
+
+如需詳細資訊，請參閱[使用 IntelliTrace 回溯檢視快照集](../debugger/how-to-use-intellitrace-step-back.md)頁面。
+
+### <a name="containerization"></a>容器化
+容器提供您更高的應用程式密度和更低的部署成本，並提高生產力和 DevOps 彈性。
+
+#### <a name="docker-container-tooling"></a>Docker 容器工具
+**15.5 的新功能**
+* Visual Studio 包含適用於 Docker 容器的工具，這些工具現在支援多階段 Dockerfile，以簡化最佳化容器映像的建立流程。
+* 根據預設，當您開啟具有 Docker 支援的專案時，Visual Studio 會自動在背景提取、建置及執行執行必要的容器映像。 您可以在 Visual Studio 中透過 [自動在背景中啟動容器] 設定停用此選項。
+
 ## <a name="cloud-app-development-with-azure"></a>搭配 Azure 的雲端應用程式開發
 ### <a name="azure-functions-tools"></a>Azure Functions Tools
 我們已包含工具來協助您使用先行編譯的 C# 類別庫來開發 Azure 函式，以作為「Azure 開發」工作負載的一部分。 現在您可以在本機開發電腦上進行建置、執行和偵錯，然後從 Visual Studio 直接發行至 Azure。
 
 如需詳細資訊，請參閱 [Azure Functions Tools for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) 頁面。
+
+### <a name="debug-live-aspnet-apps-using-snappoints-and-logpoints-in-live-azure-applications"></a>使用即時 Azure 應用程式中的快照點和記錄點對即時 ASP.NET 應用程式進行偵錯
+**15.5 的新功能**：快照集偵錯工具會在您感興趣的程式碼執行時，擷取實際執行應用程式的快照集。 若要指示偵錯工具擷取快照集，您可以在程式碼中設定快照點和記錄點。 偵錯工具可讓您清楚了解發生什麼問題，而不會影響實際執行應用程式的流量。 快照集偵錯工具可協助您大幅縮短為解決出現在生產環境之問題所花費的時間。
+
+快照集合適用於 Azure App Service 中執行的下列 Web 應用程式：
+
+* 執行 .NET Framework 4.6.1 或更新版本的 ASP.NET 應用程式。
+* 在 Windows 上執行 .NET Core 2.0 或更新版本的 ASP.NET Core 應用程式。
+
+如需詳細資訊，請參閱[使用快照點和記錄點對即時 ASP.NET 應用程式進行偵錯](../debugger/debug-live-azure-applications.md)。
+
+## <a name="windows-app-development"></a>Windows 應用程式開發
+### <a name="universal-windows-platform"></a>通用 Windows 平台
+通用 Windows 平台 (UWP) 是適用於 Windows 10 的應用程式平台。 您只需要一個 API 集合、一個應用程式套件和一個觸達所有 Windows 10 裝置 (電腦、平板電腦、手機、Xbox、HoloLens、Surface Hub 等) 的 Store，就能開發 UWP app。 UWP 支援不同螢幕大小及各種互動模型，不論是觸控、滑鼠和鍵盤、遊戲控制器，還是手寫筆都沒問題。 UWP app 的核心概念是使用者想要在其「所有」裝置之間移動體驗到的事物，並想要使用最方便或最有效率的任何裝置來處理手邊的工作。
+
+ ![通用 Windows 平台](../cross-platform/media/uwp_coreextensions.png "UWP_CoreExtensions")
+
+&mdash;從 C#、Visual Basic、C++ 或 JavaScript&mdash; 中，選擇您慣用的開發語言，以建立適用於 Windows 10 裝置的通用 Windows 平台應用程式。 Visual Studio 2017 提供各種語言的 UWP app 範本，讓您可以建立適用於所有裝置的單一專案。 當工作完成時，您可以產生應用程式套件，並從 Visual Studio 提交給 Microsoft Store，以將您的應用程式提供給任何 Windows 10 裝置上的客戶。
+
+**15.5 的新功能**<br/>
+Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.16299.0) 的最佳支援。 Windows 10 Fall Creators Update 也提供 UWP 開發人員許多增強功能。 以下是其中一些最重大的變更： 
+
+* **.NET Standard 2.0 的支援**<br/>
+除了簡化應用程式部署之外，Windows 10 Fall Creators Update 也是第一個提供 .NET Standard 2.0 支援的版本。 實際上，[.NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/) 是任何 .NET 平台都能實作之基底類別庫的參考實作。 .NET Standard 的目標是讓 .NET 開發人員在其選擇工作的任何 .NET 平台之間，盡可能輕鬆地共用程式碼。
+* **UWP 和 Win32 的最佳選擇** <br/>
+我們改進了 Windows 10 平台，提供[傳統型橋接器](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root)讓 Windows 10 更適用於所有 .NET 開發人員，不論其目前焦點是在 UWP、WPF、Windows Form 或 Xamarin。 透過 Visual Studio 2017 15.5 版中新增的應用程式套件專案類型，您可以像是針對 UWP 專案一樣，針對 WPF 或 Windows Forms 專案建立 Windows 應用程式套件。 封裝應用程式之後，您將享有所有 Windows 10 應用程式部署優點，並可選擇透過 Microsoft Store (適用於消費者應用程式) 或商務用 Microsoft Store 和教育用 Microsoft Store 進行散發。 由於已封裝應用程式可以存取桌面上的完整 UWP API 介面和 Win32 API，因此您現在可以使用 UWP API 和 Windows 10 功能逐漸將 WPF 和 Windows Forms 應用程式現代化。 此外，您可以將 Win32 元件加入 UWP 應用程式，在桌面上顯示所有 Win32 功能。 
+
+如需 UWP 的詳細資訊，請參閱[開發適用於通用 Windows 平台 (UWP) 的應用程式](https://docs.microsoft.com/visualstudio/cross-platform/develop-apps-for-the-universal-windows-platform-uwp)頁面。
 
 ## <a name="mobile-app-development"></a>行動應用程式開發
 ### <a name="xamarin"></a>Xamarin
@@ -202,6 +236,18 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 ![Xamarin 的權利編輯器](../ide/media/xamarin-entitlements-editor.png "Xamarin 的權利編輯器")
 
+### <a name="visual-studio-tools-for-xamarin"></a>Visual Studio Tools for Xamarin
+**15.4 的新功能**：Xamarin Live 能讓開發人員直接在 iOS 和 Android 裝置上持續部署、測試及偵錯他們的應用程式。 下載 Xamarin Live Player 後 (可從 App Store 或 Google Play 取得)，您就可以配對裝置和 Visual Studio，並改革建置行動應用程式的方式。 這項功能現在已包含在 Visual Studio 中，於 [工具] > [選項] > [Xamarin] > [其他] > [啟用 Xamarin Live Player] 啟用。
+
+![Xamarin Live Player 配對、部署和即時編輯模式的動畫](../ide/media/xamarinliveplayer.gif)
+
+### <a name="visual-studio-app-center"></a>Visual Studio 應用程式中心
+**15.5 的新功能**：Visual Studio 應用程式中心 (現在 Android、iOS、macOS 和 Windows 應用程式都能使用) 具有管理應用程式生命週期所需的一切功能，包括自動化組建、在雲端測試實際裝置、散發給搶鮮版 (Beta) 測試人員和應用程式市集，以及透過損毀和分析資料來監視真實世界的使用情況。 所有功能都支援以 Objective-C、Swift、Java、C#、Xamarin 和 React Native 撰寫的應用程式。
+
+  ![Visual Studio 應用程式中心測試環境](../ide/media/app-center-test-env.png)
+
+如需詳細資訊，請參閱 [Introducing App Center: Build, Test, Distribute and Monitor Apps in the Cloud](https://blogs.msdn.microsoft.com/vsappcenter/introducing-visual-studio-app-center/) (應用程式中心簡介：在雲端建置、測試、散發及監視應用程式) 部落格文章。
+
 ## <a name="cross-platform-development"></a>跨平台開發
 ### <a name="redgate-data-tools"></a>Redgate Data Tools
 為了將 DevOps 功能擴充到 SQL Server 資料庫開發，Visual Studio 現在提供 Redgate Data Tools。
@@ -213,7 +259,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 隨附於所有版本的 Visual Studio 2017：
 - [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高產能。
 
-如需詳細資訊，請參閱我們的 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
+如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
 ### <a name="net-core"></a>.NET Core
 .NET Core 是 .NET Standard 的一般用途、模組化、跨平台和開放原始碼實作，並且包含許多與 .NET Framework 相同的 API。
@@ -232,6 +278,15 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 
 如需詳細資訊，請參閱 [Visual Studio Tools for Unity](../cross-platform/visual-studio-tools-for-unity.md) 頁面。
 
+## <a name="ai-development"></a>AI 開發
+### <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
+**15.5 的新功能**：立即使用 Visual Studio 的生產力功能，來加速 AI 創新。 使用內建程式碼編輯器功能，例如語法醒目顯示、IntelliSense 和文字自動格式化。 您可以透過逐步偵錯區域變數和模型，以互動方式來測試您本機環境中的深度學習應用程式。
+
+  ![深度學習 IDE](../ai/media/about/ide.png)
+
+如需詳細資訊，請參閱 [Visual Studio Tools for AI](../ai/about-ai-tools.md) 頁面。
+
+
 ## <a name="talk-to-us"></a>告訴我們  
  為什麼要傳送意見反應給 Visual Studio 小組？ 我們極為重視客戶的意見反應。 它們是我們進步的動力。  
 
@@ -244,7 +299,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
  如果您想要追蹤 Visual Studio 意見反應的狀態，請前往 [Connect](http://connect.microsoft.com/) 並回報 Bug。 回報 Bug 之後，就可以回到 Connect 來追蹤其狀態。  
 
 ## <a name="see-also"></a>另請參閱
-* [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/vs2015-vs)
+* [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
 * [Team Foundation Server 的新功能](https://www.visualstudio.com/docs/whats-new)

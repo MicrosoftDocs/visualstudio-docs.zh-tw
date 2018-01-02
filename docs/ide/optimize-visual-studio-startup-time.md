@@ -1,7 +1,7 @@
 ---
 title: "最佳化 Visual Studio 效能 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/19/2017
+ms.date: 11/15/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -17,11 +17,11 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: d1058ca5762db28f0afc678a9d31cc6f0f3be6bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
+ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某些 Visual Studio 延伸模組和工具視窗可能會在載入時對啟動時間有不利的影響。 您可以在 [管理 Visual Studio 效能] 對話方塊中控制緩慢延伸模組和工具視窗的行為。 如需提升效能的一般提示，請參閱 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。  
@@ -66,17 +66,8 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 
     ![管理 Visual Studio 效能 - 工具視窗檢視](../ide/media/vside_perfdialog_toolwindows.png)
 
-## <a name="speed_up_solution_load"></a>在 Visual Studio 2017 中更快地載入大型方案
-
-Visual Studio 2017 導入一項稱為「輕量型解決方案載入」的新功能，可減少在 IDE 中載入大型方案所需的時間量和記憶體數量。 如果您有包含許多 C#、VB 或 C++ 專案的大型方案，則可能會在啟用輕量型解決方案載入時看到大幅效能改善。 如需此功能所提供優勢的詳細資訊，請參閱[最佳化方案載入](../ide/optimize-solution-loading-in-visual-studio.md)。
-
-### <a name="enable-or-disable-lightweight-solution-load"></a>啟用或停用輕量型解決方案載入
-
-以滑鼠右鍵按一下方案總管中的方案名稱，並選取 [啟用輕量型解決方案載入]。 選取選項之後，必須關閉並重新開啟方案，才能啟動輕量型解決方案載入。
-
-![底下提供說明，包括方案總管](../ide/media/VSIDE_LSL_Solution_Setting.png)
-
-若要設定輕量型解決方案載入的全域設定，請參閱[最佳化方案載入](../ide/optimize-solution-loading-in-visual-studio.md#global_solution_load_settings)。
+> [!NOTE]
+> 15.5 版之前的 Visual Studio 版本有一項稱為**輕量型解決方案載入**的功能。 Visual Studio 2017 15.5 版和更新版本不再提供這項功能。 在 Visual Studio 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有 受控碼之大型解決方案的載入速度也比過去更快。  
 
 ## <a name="see-also"></a>另請參閱
 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)

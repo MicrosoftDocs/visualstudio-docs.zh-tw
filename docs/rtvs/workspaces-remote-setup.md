@@ -1,34 +1,33 @@
 ---
 title: "使用 Visual Studio R 工具的遠端工作區 | Microsoft Docs"
 ms.custom: 
-ms.date: 06/30/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5778c9cf-564d-47b0-8d64-e5dc09162479
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: aaea147589f274a5b3e1de4071f980b05e8f6745
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d36f49a9b2865c89bd1551ded0d23cf541ff7840
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="setting-up-remote-workspaces"></a>設定遠端工作區
 
-本主題說明如何使用 SSL 和適當的 R 服務來設定遠端伺服器。 這可讓 Visual Studio R 工具 (RTVS) 連線到該伺服器上的遠端工作區。 
+本主題說明如何使用 SSL 和適當的 R 服務來設定遠端伺服器。 這可讓 Visual Studio R 工具 (RTVS) 連線到該伺服器上的遠端工作區。
 
 - [遠端電腦需求](#remote-computer-requirements)
 - [安裝 SSL 憑證](#install-an-ssl-certificate)
 - [在 Windows 上安裝 SSL 憑證](#install-an-ssl-certificate-on-windows)
 - [在 Ubuntu 上安裝 SSL 憑證](#install-an-ssl-certificate-on-ubuntu)
 - [在 Windows 上安裝 R 服務](#install-r-services-on-windows)
-- [在 Ubuntu 上安裝 R 服務](#install-r-services-on-ubuntu)
+- [在 Linux 上安裝 R 服務](#install-r-services-on-Linux)
 - [設定 R 服務](#configure-r-services)
 - [疑難排解](#troubleshooting)
 
@@ -50,9 +49,10 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 如需詳細背景，請參閱維基百科的[公開金鑰憑證](https://en.wikipedia.org/wiki/Public_key_certificate)。
 
 ## <a name="install-an-ssl-certificate-on-windows"></a>在 Windows 上安裝 SSL 憑證
+
 您必須以手動方式將 SSL 憑證安裝到 Windows 上。 請遵循下列指示安裝 SSL 憑證。
 
-### <a name="obtaining-a-self-signed-certificate"></a>取得自我簽署憑證
+### <a name="obtaining-a-self-signed-certificate-windows"></a>取得自我簽署憑證 (Windows)
 
 如果您有受信任的憑證，請略過本節。 相較於來自受信任授權單位的憑證，自我簽署的憑證就像是您自行建立的身分證。 此程序當然比使用受信任的授權單位更為簡單，但因為缺乏強有力的驗證，表示攻擊者可以他們自己的憑證取代未簽署的憑證，擷取用戶端與伺服器之間的所有流量。 因此，「自我簽署憑證應該僅用於受信任網路上的測試案例，絕不能用在生產環境中」。
 
@@ -83,7 +83,6 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 ![匯入憑證命令](media/workspaces-remote-certificate-import.png)
 
-
 ### <a name="granting-permissions-to-read-the-ssl-certificates-private-key"></a>授權讀取 SSL 憑證的私密金鑰
 
 一旦匯入憑證，即授與 `NETWORK SERVICE` 帳戶讀取私密金鑰的權限，如下列指示所述。 `NETWORK_SERVICE` 是執行 R 服務訊息代理程式所使用的帳戶，這是終止 SSL 連線連入伺服器電腦的服務。
@@ -98,23 +97,25 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 1. 選取兩次 [確定] 關閉對話方塊並認可變更。
 
 ## <a name="install-an-ssl-certificate-on-ubuntu"></a>在 Ubuntu 上安裝 SSL 憑證
+
 `rtvs-daemon` 套件預設會在安裝時一併安裝自我簽署的憑證。
 
-### <a name="obtaining-a-self-signed-certificate"></a>取得自我簽署憑證
+### <a name="obtaining-a-self-signed-certificate-ubuntu"></a>取得自我簽署憑證 (Ubuntu)
 
 如需了解使用自我簽署憑證的優點與風險，請參閱 Windows 說明。 `rtvs-daemon` 套件會在安裝期間產生自我簽署的憑證並進行設定。 只有當您想要取代自動產生的自我簽署憑證時，才需要進行下列作業。
 
 自行核發自我簽署憑證：
 1. SSH 或登入您的 Linux 電腦。
-2. 安裝 `ssl-cert` 套件：
+
+1. 安裝 `ssl-cert` 套件：
     ```sh
     sudo apt-get install ssl-cert
     ```
-3. 執行 `make-ssl-cert` 以產生預設的自我簽署 SSL 憑證：
+1. 執行 `make-ssl-cert` 以產生預設的自我簽署 SSL 憑證：
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
-4. 將產生的金鑰和 PEM 檔案轉換成 PFX。 產生的 PFX 應該在主資料夾中：
+1. 將產生的金鑰和 PEM 檔案轉換成 PFX。 產生的 PFX 應該在主資料夾中：
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```
@@ -137,7 +138,7 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
     ```
 
 儲存檔案並重新啟動 `sudo systemctl restart rtvsd` 精靈。
-    
+
 ## <a name="install-r-services-on-windows"></a>在 Windows 上安裝 R 服務
 
 若要執行 R 程式碼，遠端電腦就必須安裝 R 解譯器，如下所示︰
@@ -161,9 +162,9 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 - **R 主機訊息代理程式服務**處理 Visual Studio 與電腦上執行 R 程式碼之處理序間的所有 HTTPS 流量。
 - **R 使用者設定檔服務**是處理 Windows 使用者設定檔建立的特殊權限元件。 新使用者第一次登入 R 伺服器電腦時，會呼叫此服務。
 
-您可以在服務管理主控台中看到這些服務 (`compmgmt.msc`)。  
+您可以在服務管理主控台中看到這些服務 (`compmgmt.msc`)。
 
-## <a name="install-r-services-on-ubuntu"></a>在 Ubuntu 上安裝 R 服務
+## <a name="install-r-services-on-linux"></a>在 Linux 上安裝 R 服務
 
 若要執行 R 程式碼，遠端電腦就必須安裝 R 解譯器，如下所示︰
 
@@ -174,29 +175,18 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
     兩者有相同的功能，但 Microsoft R Open 得益於使用 [Intel Math Kernel Library](https://software.intel.com/intel-mkl) (Intel 數學核心程式庫) 提供的線性代數程式庫加速的額外硬體。
 
-1. 下載、解壓縮並執行 [RTVS 精靈套件](https://aka.ms/r-remote-services-linux-binary-current)安裝指令碼。 如此一來，應該會安裝必要的套件、相依項目和 RTVS 精靈：
-
-    - 下載：`wget -O rtvs-daemon.tar.gz https://aka.ms/rtvs-daemon-current`
-    - 解壓縮：`tar -xvzf rtvs-daemon.tar.gz`
-    - 執行安裝程式：`sudo ./rtvs-install`。 安裝 Dotnet 套件時，您需要新增受信任的簽署金鑰。 若要進行無訊息安裝或自動化，請使用這個 `sudo ./rtvs-install -s` 命令。
-    
-
-1. 啟用和啟動精靈：
-
-    - 啟用：`sudo systemctl enable rtvsd`
-    - 啟動精靈：`sudo systemctl start rtvsd`
-
-1. 若要檢查精靈是否正在執行，請執行 `ps -A -f | grep rtvsd` 這個命令。 您應該會看到以 `rtvssvc` 使用者身分執行的處理序。 現在，您應該能夠使用連接到這台 Linux 電腦的 URL，以從 Visual Studio R 工具連接至此。
-
-若要設定 `rtvs-daemon`，請參閱 `man rtvsd`。
+1. 遵循 [Linux 的遠端 R 服務](workspaces-remote-r-service-for-linux.md)指示，其中涵蓋了實體 Ubuntu 電腦、Azure Ubuntu VM、適用於 Linux 的 Windows 子系統 (WSL) 及 Docker 容器，包括在 Azure Container Repository 上執行的項目。
 
 ## <a name="configure-r-services"></a>設定 R 服務
 
 在遠端電腦上執行 R 服務，也需要建立使用者帳戶、設定防火牆規則、設定 Azure 網路功能，以及設定 SSL 憑證。
 
 1. 使用者帳戶︰為每位存取遠端電腦的使用者建立帳戶。 您可以建立標準的 (不具權限) 本機使用者帳戶，或者將 R 伺服器電腦加入您的網域，並將適當的安全性群組新增至 `Users` 安全性群組。
+
 1. 防火牆規則︰根據預設，`R Host Broker` 會接聽 TCP 通訊埠 5444。 因此，請確定傳入和傳出流量皆已啟用 Windows 防火牆規則 (安裝套件和類似案例需要傳出)。  R 服務安裝程式會為內建的 Windows 防火牆自動設定這些規則。 不過，如果您使用協力廠商防火牆，請手動開啟連接埠 5444 供 `R Host Broker` 使用。
+
 1. Azure 組態︰如果您的遠端電腦是 Azure 的虛擬機器，請也開啟連接埠 5444 供 Azure 網路的連入流量使用，它不受 Windows 防火牆影響。 如需詳細資訊，請參閱 Azure 文件的[使用網路安全性群組來篩選網路流量](https://docs.microsoft.com/azure/virtual-network/virtual-networks-nsg)。
+
 1. 通知 R 主機訊息代理程式要載入的 SSL 憑證︰如果您要在內部網路伺服器上安裝憑證，則您伺服器的完整網域名稱很可能與其 NETBIOS 名稱相同。 在此情況下，您不需要做任何事，因為這是載入的預設憑證。
 
     不過，如果您要在網際網路伺服器 (例如 Azure VM) 上安裝憑證，請使用伺服器的完整網域名稱 (FQDN)，因為網際網路伺服器的 FQDN 與其 NETBIOS 名稱絕不會相同。
@@ -224,18 +214,19 @@ RTVS 需要所有與遠端伺服器通訊均透過 HTTP，而這需要伺服器�
 
 有三個可能的原因：
 
--   電腦上未安裝 [.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) 或更新版本。
--   通訊埠 5444 連接埠的連入和連出連線未啟用 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 防火牆規則。
--   未安裝具有 `CN=<remote-machine-name>` 的SSL 憑證。
+- 電腦上未安裝 [.NET Framework 4.6.1](https://www.microsoft.com/download/details.aspx?id=49981) 或更新版本。
+- 通訊埠 5444 連接埠的連入和連出連線未啟用 `Microsoft.R.Host.Broker` 和 `Microsoft.R.Host` 防火牆規則。
+- 未安裝具有 `CN=<remote-machine-name>` 的SSL 憑證。
 
-完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 `services.msc` 確定 `RHostBrokerService` 和 `RUserPofileService` 正在執行。
+完成任何上述變更後，請重新啟動電腦。 然後透過工作管理員 ([服務] 索引標籤) 或 `services.msc` 確定 `RHostBrokerService` 和 `RUserProfileService` 正在執行。
 
 **問：連線到 R 伺服器時，R 互動視窗為何顯示「401 拒絕存取」？**
 
 可能有二個原因：
 
 - `NETWORK SERVICE` 帳戶很可能無法存取 SSL 憑證的私密金鑰。 請依稍早的指示授與私密金鑰的 `NETWORK SERVICE` 存取權。
-- 確定 `seclogon` 服務正在執行。 使用 `services.msc` 設定 `seclogon` 自動啟動。                                                         
+- 確定 `seclogon` 服務正在執行。 使用 `services.msc` 設定 `seclogon` 自動啟動。
+
 **問：連線到 R 伺服器時，R 互動視窗為何顯示「找不到 404 」？**
 
 此錯誤可能是因為遺漏 Visual C++ 可轉散發程式庫。 檢查 R 互動視窗看看是否有關於遺漏文件庫的訊息 (DLL)。 然後檢查是否安裝 VS 2015 可轉散發套件以及已安裝 R。

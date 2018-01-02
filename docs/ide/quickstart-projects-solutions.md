@@ -1,0 +1,190 @@
+---
+title: "Visual Studio 中的專案和解決方案簡介 | Microsoft Docs"
+ms.custom: 
+ms.date: 12/11/2017
+ms.reviewer: 
+ms.suite: 
+ms.technology: vs-ide-general
+ms.tgt_pltfrm: 
+ms.topic: quickstart
+author: gewarren
+ms.author: gewarren
+manager: ghogen
+ms.openlocfilehash: f3b30b796ca389d5adfc4f8ece3c8f774626e994
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/12/2017
+---
+# <a name="quickstart-projects-and-solutions"></a>快速入門：專案和解決方案
+
+在這個 10 分鐘的快速入門中，我們將探討在 Visual Studio 中建立解決方案和專案的意義。 我們會查看專案的屬性以及它可包含的一些檔案。 我們也會建立第二個專案的參考。
+
+> [!TIP]
+> 我們將會在本快速入門中從頭建構解決方案和專案，作為教育練習以了解專案的概念。 在 Visual Studio 的一般使用中，您最可能在建立新專案時使用 Visual Studio 所提供的許多專案範本。
+
+> [!NOTE]
+> 在 Visual Studio 中開發應用程式不需要解決方案和專案。 您也可以只開啟包含程式碼的資料夾，並開始撰寫程式碼、建置和偵錯。 例如，如果您複製 GitHub 存放庫，則它可能不會包含 Visual Studio 專案和解決方案。 如需詳細資訊，請參閱[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)。
+
+## <a name="solutions"></a>方案
+
+解決方案是 Visual Studio 用來組織一個或多個相關專案的容器。 當您在 Visual Studio 中開啟解決方案時，它會自動載入所包含的所有專案。
+
+### <a name="create-a-solution"></a>建立解決方案
+
+我們會建立空白解決方案以開始探索。 在您了解 Visual Studio 之後，可能不會發現自己太過頻繁地建立空白解決方案。 當您在 Visual Studio 中建立新的專案時，會自動建立要儲存專案的解決方案 (如果尚未開啟)。
+
+1. 啟動 Visual Studio。
+
+   Visual Studio 隨即開啟，而且您可能會看到 [起始頁] 佔用大部分視窗的不動產。
+
+1. 在功能表列上，選擇 [檔案] > [新增] > [專案]。
+
+   [ **新增專案** ] 對話方塊隨即開啟。
+
+1. 在左窗格中，展開 [其他專案類型]，然後選擇 [Visual Studio 解決方案]。 在中央窗格中，選擇 [空白解決方案]。 將解決方案命名為 "QuickSolution"，然後選擇 [確定]。
+
+   ![空白解決方案範本](media/quickstart-projects-new-solution.png)
+
+   [起始頁] 隨即關閉，而且解決方案會出現在 Visual Studio 視窗右側的方案總管中。 您可能會經常使用方案總管來瀏覽專案的內容。
+
+### <a name="add-a-project"></a>新增專案
+
+現在讓我們將第一個專案新增至解決方案。 我們將從空白專案開始，並將需要的項目新增至專案。
+
+1. 在方案總管中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+
+   [ **加入新的專案** ] 對話方塊隨即開啟。
+
+1. 在左窗格中，展開 [Visual C#]，然後選擇 [Windows 傳統桌面]。 然後，在中間窗格中，選擇 [空白專案 (.NET Framework)]。 將專案命名為 "QuickDate"，然後選擇 [確定] 按鈕。
+
+   名為 "QuickDate" 的專案隨即出現在方案總管中該解決方案的下方。 它目前包含稱為 **App.config** 的單一檔案。
+
+   > [!NOTE]
+   > 如果您在對話方塊的左窗格中看不到 [Visual C#]，則需要安裝 **.NET 桌面開發** 工作負載。 簡單的作法是按一下該左窗格底端的 [開啟 Visual Studio 安裝程式] 連結。 [Visual Studio 安裝程式] 隨即開啟，而且您可以在這裡選擇正確的工作負載，然後選擇 [修改] 按鈕。
+
+   ![開啟 Visual Studio 安裝程式連結](media/quickstart-projects-open-installer.png)
+
+## <a name="add-an-item-to-the-project"></a>將項目新增至專案
+
+我們有空白專案 &mdash; 讓我們新增程式碼檔案。
+
+1. 在方案總管 中，從 [QuickDate] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增項目]。
+
+   [新增項目] 對話方塊隨即開啟。
+
+1. 展開 [Visual C# 項目]，然後選擇 [程式碼]。 在中間窗格中，選擇 [類別]。 將類別命名為 "Calendar"，然後選擇 [新增] 按鈕。
+
+   名為 "Calendar.cs" 的檔案會新增至專案。 一端的 **.cs** 是提供給 C# 程式碼檔案的副檔名。 此檔案會出現在方案總管的視覺效果專案階層中，並在編輯器中開啟其內容。
+
+1. 以下列程式碼取代 **Calendar.cs** 檔案的內容。
+
+   ```csharp
+   using System;
+
+   namespace QuickDate
+   {
+       internal class Calendar
+       {
+           static void Main(string[] args)
+           {
+               DateTime now = GetCurrentDate();
+               Console.WriteLine($"Today's date is {now}");
+               Console.ReadLine();
+           }
+
+           internal static DateTime GetCurrentDate()
+           {
+               return DateTime.Now.Date;
+           }
+       }
+   }
+   ```
+
+   您不需要了解程式碼的作用，但如果您想要，則可以執行程式，並查看它是否將今天的日期列印至主控台視窗。
+
+## <a name="add-a-second-project"></a>新增第二個專案
+
+解決方案通常會包含多個專案，而且這些專案通常會彼此參考。 解決方案中有些專案可能是類別庫、有些是可執行的應用程式，有些可能是單元測試專案或網站。
+
+請將單元測試專案新增至解決方案。 現在我們先從專案範本開始，因此不需要將額外程式碼檔案新增至專案。
+
+1. 在方案總管中，從 [解決方案 'QuickSolution'] 的右鍵功能表或操作功能表中，選擇 [新增] > [新增專案]。
+
+   [ **加入新的專案** ] 對話方塊隨即開啟。
+
+1. 在左窗格中，展開 [Visual Basic]，然後選擇 [測試] 類別。 在中間窗格中，選擇 [單元測試專案 (.NET Framework)]。 將專案命名為 "QuickTest"，然後選擇 [確定] 按鈕。
+
+   第二個專案會新增至**方案總管**，並在編輯器中開啟名為 **UnitTest1.vb** 的檔案。 **.vb** 是提供給 Visual Basic 程式碼檔案的副檔名。
+
+   ![包含兩個專案的方案總管](media/quickstart-projects-solution-explorer.png)
+
+## <a name="add-a-project-reference"></a>新增專案參考
+
+我們將使用新的單元測試專案來測試 **QuickDate** 專案中的方法，因此必須新增該專案的參考。 這會建立兩個專案之間的組建相依性，表示在建置解決方案時先建置 **QuickDate** 再建置 **QuickTest**。
+
+1. 選擇 [QuickTest] 專案中的 [參考] 節點，然後從右鍵功能表或操作功能表中選擇 [新增參考]。
+
+   ![新增參考功能表](media/quickstart-projects-add-reference.png)
+
+   [參考管理員] 對話方塊隨即開啟。
+
+1. 在左窗格中，展開 [專案]，然後選擇 [解決方案]。 在中間窗格中，選擇 [QuickDate] 旁邊的核取方塊，然後選擇 [確定] 按鈕。
+
+   隨即新增 **QuickDate** 專案的參考。
+
+## <a name="add-test-code"></a>新增測試程式碼
+
+1. 我們現在會將測試程式碼新增至 Visual Basic 程式碼檔案。 以下列程式碼取代 **UnitTest1.vb** 檔案的內容。
+
+   ```vb
+   <TestClass()> Public Class UnitTest1
+
+       <TestMethod()> Public Sub TestGetCurrentDate()
+           Assert.AreEqual(DateTime.Now.Date, QuickDate.Calendar.GetCurrentDate())
+       End Sub
+
+   End Class
+   ```
+
+   您會在一些程式碼下方看到紅色「曲線」。 我們將修正這個錯誤，方法是將測試專案設為 **QuickDate** 專案的 [friend 組件](/dotnet/csharp/programming-guide/concepts/assemblies-gac/friend-assemblies)。
+
+1. 回到 **QuickDate** 專案，開啟尚未開啟的 **Calendar.cs** 檔案，並新增下列 using 陳述式和 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性，以解決測試專案中的錯誤。
+
+   ```csharp
+   using System.Runtime.CompilerServices;
+
+   [assembly: InternalsVisibleTo("QuickTest")]
+   ```
+
+   程式碼檔應該如下。
+
+   ![CSharp 程式碼](media/quickstart-projects-cs-code.png)
+
+## <a name="project-properties"></a>專案屬性
+
+C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> 屬性的行會參考 **QuickTest** 專案的組件名稱。 組件名稱不一定會與專案名稱相同。 若要尋找專案的組件名稱，請開啟專案屬性。
+
+1. 在方案總管中，選取 **QuickTest** 專案。 從右鍵功能表或操作功能表中，選擇 [屬性]，或只按 **Alt**+**Enter** 鍵。
+
+   專案的屬性頁會在 [應用程式] 索引標籤上開啟。請注意，**QuickTest** 專案的組件名稱確實是 "QuickTest"。 如果您想要變更它，則這是進行變更的位置。 然後，當您建置測試專案時，所產生可執行檔的名稱會從 **QuickTest.exe** 變更為您選擇的任何名稱。
+
+   ![專案屬性](media/quickstart-projects-properties.png)
+
+1. 探索專案屬性頁的一些其他索引標籤 (例如 [編譯] 和 [設定])。 這些索引標籤會根據專案類型而不同。
+
+## <a name="next-steps"></a>後續步驟
+
+如果您想要確認單元測試是否正常運作，請從功能表列中選擇 [測試] > [執行] > [所有測試]。 稱為 [測試總管] 的視窗隨即開啟，而且您應該會看到 **TestGetCurrentDate** 測試通過。
+
+恭喜您完成此快速入門！ 接下來，您可能想要探索一些其他 Visual Studio 快速入門，或深入了解如何[建立專案和解決方案](../ide/creating-solutions-and-projects.md)。
+
+## <a name="see-also"></a>請參閱
+
+[快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
+[快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
+[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
+[管理專案和解決方案屬性](../ide/managing-project-and-solution-properties.md)  
+[管理專案中的參考](../ide/managing-references-in-a-project.md)  
+[在 Visual Studio 中不使用專案或方案來開發程式碼](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)  
+[Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

@@ -12,11 +12,11 @@ caps.latest.revision: "5"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: ede4bd9594e3bb19f081d8a7343f5a0c08003cad
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: 338f80724598a3c89dcde3806511427b81bffca4
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑難排解和已知問題 (Visual Studio Tools for Unity)
 在本節中，您將找到 Visual Studio Tools for Unity 之常見問題的解決方法、已知問題的描述，並了解如何透過回報錯誤來協助改善 Visual Studio Tools for Unity。  
@@ -62,7 +62,8 @@ ms.lasthandoff: 11/29/2017
 ### <a name="unable-to-attach"></a>無法附加
 -   請嘗試暫時停用您的防毒軟體，或為 VS 和 Unity 建立排除規則。
 -   請嘗試暫時停用防火牆，或建立規則以允許 VS 與 Unity 之間的 TCP/UDP 網路功能。
--   我們發現 Team Viewer 這類程式會干擾處理序偵測，也許您可以嘗試暫時停止任何額外的軟體，看看是否有什麼變化。
+-   我們發現 Team Viewer 這類程式會干擾處理序偵測；您或許可以嘗試暫時停止任何額外的軟體，看看是否有什麼變化。
+-   因為 VSTU 只會監視 "Unity.exe" 處理序，所以請不要重新命名主要 Unity 可執行檔。
 
 ### <a name="unable-to-debug-android-players"></a>無法偵錯 Android 播放器
 我們使用多點傳送進行播放器偵測 (這是 Unity 所使用的預設機制)，在此之後，我們會使用一般的 TCP 連線來附加偵錯工具。 對 Android 裝置來說，偵測階段是 主要問題。

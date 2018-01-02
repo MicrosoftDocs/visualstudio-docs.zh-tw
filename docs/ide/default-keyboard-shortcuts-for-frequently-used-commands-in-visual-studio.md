@@ -7,41 +7,33 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 5839d6ca-e5ac-4468-9025-3d5ea177f19c
-caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ad9a9e8851d428010d7116ba94cc08ced211740
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
-您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。  
-  
+
+您可以選擇這些預設鍵盤快速鍵以存取 Visual Studio 中的常用命令。 如需內含預設快速鍵命令的完整清單，請參閱[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+
 > [!NOTE]
->  您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。  
-  
- **本主題內容**  
-  
-||||||  
-|-|-|-|-|-|  
-|[建置](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[編輯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Project](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[工具](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[視窗](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|  
-|[偵錯](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[檔案](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[重構](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[檢視](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||  
-  
-##  <a name="bkmk_build"></a> 建置  
-  
+> 您可以開啟 [選項] 對話方塊，展開 [環境] 節點，然後選擇 [鍵盤]，查閱命令的捷徑。
+
+## <a name="build"></a>組建
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |Build.BuildSolution|Ctrl+Shift+B [全域]|  
 |Build.Cancel|Ctrl+Break [全域]|  
 |Build.Compile|Ctrl+F7 [全域]|  
 |Build.RunCodeAnalysisonSolution|Alt+F11 [全域]|  
-  
-##  <a name="bkmk_debug"></a> 偵錯  
-  
+
+## <a name="debug"></a>偵錯
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |Debug.BreakatFunction|Ctrl+B [全域]|  
@@ -59,9 +51,9 @@ ms.lasthandoff: 10/31/2017
 |Debug.StepOver|F10 [全域]|  
 |Debug.StopDebugging|Shift+F5 [全域]|  
 |Debug.ToggleBreakpoint|F9 [全域]|  
-  
-##  <a name="bkmk_edit"></a> 編輯  
-  
+
+## <a name="edit"></a>Edit
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |Edit.BreakLine|Enter [文字編輯器、報表設計工具、Windows Form 設計工具]<br /><br /> 或 Shift+Enter [文字編輯器]|  
@@ -110,9 +102,9 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |Edit.Undo|Ctrl+Z [全域]<br /><br /> 或 Alt+退格鍵 [全域]|  
 |Edit.WordDeleteToEnd|Ctrl+Delete [文字編輯器]|  
 |Edit.WordDeleteToStart|Ctrl+退格鍵 [文字編輯器]|  
-  
-##  <a name="bkmk_file"></a> 檔案  
-  
+
+## <a name="file"></a>檔案
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |File.Exit|Alt+F4 [全域]|  
@@ -126,28 +118,28 @@ dit.SurroundWith|Ctrl+K、Ctrl+S [全域]|
 |File.SaveAll|Ctrl+Shift+S [全域]|  
 |File.SaveSelectedItems|Ctrl+S [全域]|  
 |File.ViewinBrowser|Ctrl+Shift+W [全域]|  
-  
-##  <a name="bkmk_project"></a> 專案  
-  
+
+## <a name="project"></a>專案
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |Project.AddExistingItem|Shift+Alt+A [全域]|  
 |Project.AddNewItem|Ctrl+Shift+A [全域]|  
-  
-##  <a name="bkmk_refactor"></a> 重構  
-  
+
+## <a name="refactor"></a>重構
+
 |命令|鍵盤快速鍵 [內容]|  
 |-------------|-----------------------------------|  
 |Refactor.ExtractMethod|Ctrl+R、Ctrl+M [全域]|  
-  
-##  <a name="bkmk_tools"></a> 工具  
-  
+
+## <a name="tools"></a>工具
+
 |命令|鍵盤快速鍵 [內容]|  
 |-------------|-----------------------------------|  
 |Tools.AttachtoProcess|Ctrl+Alt+P [全域]|  
-  
-##  <a name="bkmk_view"></a> 檢視  
-  
+
+## <a name="view"></a>檢視
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |View.ClassView|Ctrl+Shift+C [全域]|  
@@ -166,9 +158,9 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|
 |View.Toolbox|Ctrl+Alt+X [全域]|  
 |View.ViewCode|Enter [類別圖]<br /><br /> 或 F7 [設定設計工具]|  
 |View.ViewDesigner|Shift+F7 [HTML 編輯器原始碼檢視]|  
-  
-##  <a name="bkmk_window"></a> Window  
-  
+
+## <a name="window"></a>視窗
+
 |命令|鍵盤快速鍵 [內容]|  
 |--------------|-------------------------------------|  
 |Window.ActivateDocumentWindow|Esc [全域]|  
@@ -176,3 +168,7 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|
 |Window.NextDocumentWindow|Ctrl+F6 [全域]|  
 |Window.NextDocumentWindowNav|Ctrl+Tab [全域]|  
 |Window.NextSplitPane|F6 [全域]|
+
+## <a name="see-also"></a>請參閱
+
+[識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

@@ -31,7 +31,7 @@
 ### [跨平台遠端偵錯](debugging-cross-platform-remote.md)
 ## 使用 Azure App Service
 ### [管理 Azure App Service 上的 Python](managing-python-on-azure-app-service.md)
-### [發佈至 Azure App Service](publishing-to-azure.md)
+### [發行至 Azure App Service](publishing-to-azure.md)
 ### [Azure 遠端偵錯](debugging-azure-remote.md)
 ### [針對 Azure 遠端偵錯進行疑難排解](debugging-azure-remote-troubleshooting.md)
 ## 與 C++ 互動

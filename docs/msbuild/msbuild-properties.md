@@ -13,11 +13,11 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0fe5627c7307b2d06e894a236d60f4188e6cf427
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: c603e0c235b37c63719abb8e9a5e6dbb3ca3e652
+ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。  

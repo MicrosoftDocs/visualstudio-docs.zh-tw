@@ -1,23 +1,22 @@
 ---
 title: "適用於 Visual Studio 的 R 工具常見問題集 | Microsoft Docs"
 ms.custom: 
-ms.date: 11/13/2017
+ms.date: 12/04/2017
 ms.reviewer: 
 ms.suite: 
 ms.technology: devlang-r
 ms.devlang: r
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e656ac64-915a-40bb-8196-93d33250ef98
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 79420e09f7ca0b01ce97fc19a063a8b15431b544
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.openlocfilehash: 22d114500ca602806facbf6f6e81ab7497e07526
+ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/04/2017
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -97,7 +96,7 @@ ms.lasthandoff: 11/15/2017
 
 問： **RTVS 可以連線到使用 Azure 上的資料科學 VM 映像建立的 VM 嗎？**
 
-答： 可以，Visual Studio 的遠端 R 服務預先安裝資料科學 VM 映像。
+答： 可以，[資料科學 VM - Windows 2016](https://azure.microsoft.com/services/virtual-machines/data-science-virtual-machines/) 映像以預先安裝的形式隨附於 Visual Studio 的遠端 R 服務。
 
 問：**RTVS 可以連線到安裝 R 的遠端電腦嗎？**
 

@@ -12,11 +12,11 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6e71a7cc3200de9570ee0545bbc60e59943a693
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 自 Windows 8 和 Windows Server 2012 開始的增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 UWP App 也需要新的收集技術。 本主題描述自 Windows 8 和 Windows Server 2012 平台開始的效能工具變更。

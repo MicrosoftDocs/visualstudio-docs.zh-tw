@@ -1,0 +1,152 @@
+---
+layout: LandingPage
+title: "Visual Studio 中的版本控制 | VSTS 與 TFS"
+description: "Visual Studio 中的版本控制使用者入門指南"
+keywords: "VSTS, TFS, 版本控制"
+author: steved0x
+ms.manager: douge
+ms.author: sdanie
+ms.date: 12/15/2017
+ms.topic: article
+ms.prod: .net-core
+ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
+ms.openlocfilehash: 471e0cf7640f07c946e2808621233c6ae20b35c7
+ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 12/14/2017
+---
+# <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
+
+版本控制系統可協助您追蹤程式碼隨著時間的變更。 當您進行變更時，版本控制系統就會為您的檔案建立快照。 版本控制系統會永久儲存快照，讓您可以在稍後需要時叫用。 Visual Studio 提供 [Git](/vsts/git/index) 與 [Team Foundation 版本控制 (TFVC)](/vsts/tfvc/index)。 若要在兩種系統之間下決定，請參閱[為您的專案選擇合適的版本控制](/vsts/tfvc/comparison-git-tfvc?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json)。
+
+## <a name="git"></a>Git
+Git 是現今最常使用的版本控制系統，並且快速成為版本控制標準。 Git 是分散式版本控制系統，亦即您的本機程式碼複本即是完整的版本控制存放庫。 這些功能完整的本機存放庫可以讓離線或遠端工作變得更容易。 您在本機認可您的工作，然後將存放庫的複本與伺服器上的複本同步。 此種模式與集中式版本控制不同。集中式版本控制的用戶端必須與伺服器同步程式碼，之後才能建立新版本的程式碼。
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="https://www.visualstudio.com/learn-git/">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>了解 Git</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/git/share-your-code-in-git-vs-2017?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>藉由 Visual Studio 使用 Git 的使用者入門</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/git/tutorial/clone?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/common/i_git-mark.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>複製現有的 Git 存放庫</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+## <a name="tfvc"></a>TFVC
+
+Team Foundation 版本控制 (TFVC) 是集中式版本控制系統。 一般而言，小組成員的開發電腦上每個檔案只有一個版本。 只在伺服器上維護記錄資料。 分支以路徑為基礎，在伺服器上建立。
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/vsts/tfvc/overview">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>了解 TFVC</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/vsts/tfvc/share-your-code-in-tfvc-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Visual Studio 中的 TFVC 使用者入門</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+   <li>
+        <a href="/vsts/tfvc/get-code-reviewed-vs?toc=/visualstudio/version-control/toc.json&bc=/vsts/git/breadcrumb/vc/toc.json">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img width="48" height="48" alt="" src="https://docs.microsoft.com/media/logos/logo_visual-studio.svg" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>檢閱您的程式碼</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
+
+
+## <a name="resources"></a>資源 
+
+- [Pro Git 書籍](https://git-scm.com/book/en/v2)  
+- [規劃移轉至 Git](https://www.visualstudio.com/learn/centralized-to-git/) \(英文\)  
+- [從 TFVC 移轉至 Git](https://www.visualstudio.com/learn/migrate-from-tfvc-to-git/) \(英文\)  
+
+ 
+

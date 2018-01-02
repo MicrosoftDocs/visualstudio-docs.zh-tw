@@ -7,11 +7,11 @@ ms.date: 04/14/2017
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
-ms.openlocfilehash: 25d3227bcf8a18a2fc6ba68c194e9cac75b2e919
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 7f91a28449ffad135058438ec767095818cc8527
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="setup-and-install-visual-studio-for-mac"></a>設定與安裝 Visual Studio for Mac
 
@@ -22,7 +22,7 @@ ms.lasthandoff: 11/09/2017
 若要在 Visual Studio 中使用 iOS，您需要下列各項：
 
 * 具有 macOS Sierra 10.12 或以上版本的 Mac
-* Xcode 8.3
+* Xcode 8.3 或以上版本。 通常建議使用最新穩定版本。
 * Apple ID。 如果您還沒有 Apple 識別碼，可以在 https://appleid.apple.com 免費建立一個新識別碼。安裝及登入 Xcode 時需要有 Apple 識別碼。
 
 ## <a name="install"></a>安裝

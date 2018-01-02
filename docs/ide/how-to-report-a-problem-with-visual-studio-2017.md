@@ -11,11 +11,11 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: aec5948ed985b6ff2abde47a48198cf1a67c4337
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
+ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下是如何回報問題，讓我們能夠加以診斷並修正。  
@@ -65,6 +65,12 @@ ms.lasthandoff: 11/09/2017
 ## <a name="submit-the-report"></a>提交報告  
 ###  <a name="submit_the_report"></a>  
  按一下 [提交] 按鈕，連同任何影像、追蹤檔案或傾印檔案送出您的報表 (如果 [提交] 按鈕呈現灰色，請確定您已提供報表的標題與描述)。  
+
+## <a name="alternate-reporting"></a>其他回報方式
+###  <a name="alternate_reporting"></a>  
+ 若您無法完成 Visual Studio 安裝，或是無法存取 Visual Studio 中的意見反應工具，也可以使用 Visual Studio 安裝程式中的意見反應工具。 按一下 Visual Studio 安裝程式右上角的意見反應圖示，然後遵循本文所述的步驟。
+
+ ![您也可以按 Tab 移至 Visual Studio 安裝程式中的 [提供意見反應] 按鈕，以開啟意見反應工具](../install/media/report-a-problem.png)
 
 ## <a name="see-also"></a>另請參閱  
  [告訴我們](../ide/talk-to-us.md)

@@ -15,11 +15,11 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e6e0b55e86130f316c09583d4a52e1ad3dc22608
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 單元測試提供開發人員及測試人員一個快速的方法，可在 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 專案中查看類別之方法中的邏輯錯誤。  
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/02/2017
   
 2.  **適用於 Managed 程式碼的 Microsoft 單元測試架構。** 適用於 Managed 程式碼的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試 .NET 程式碼的架構。  
   
-3.  **適用於 C++ 的 Microsoft 單元測試架構。** 適用於 C++ 的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試機器碼的架構。  
+3.  **適用於 C++ 的 Microsoft 單元測試架構。** 適用於 C++ 的 Microsoft 單元測試架構是與 Visual Studio 一起安裝的，可提供用於測試機器碼的架構。  Google Test、Boost.Test 及 CTest 架構也都隨附於 Visual Studio，且協力廠商配接器可用於其他測試架構。 如需詳細資訊，請參閱[撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)。 
   
 4.  **程式碼涵蓋範圍工具。** 您可以使用測試總管中的一個命令來判斷單元測試所執行的產品程式碼數量。  
   

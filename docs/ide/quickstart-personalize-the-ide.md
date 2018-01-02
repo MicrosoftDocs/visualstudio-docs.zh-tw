@@ -10,11 +10,11 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7adb1ec7badaefceb8430d0fcacd8e54e7404ea7
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
+ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
@@ -79,11 +79,13 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
 1. 在 [環境] 底下，選擇 [字型和色彩] 類別。
 
-   請注意，[顯示設定] 底下的文字為 [文字編輯器]，這正是我們要的設定目標。 您可以展開下拉式清單，看看您可以自訂字型和文字色彩的多個位置清單。
+   請注意，[顯示設定] 底下的文字為 [文字編輯器]&mdash; 這正是我們要的設定目標。 您可以展開下拉式清單，看看您可以自訂字型和文字色彩的多個位置清單。
 
 1. 若要變更行號文字的色彩，請在 [顯示項目] 清單中，選擇 [行號]。 在 [項目前景] 方塊中，選擇 [橄欖色]。
 
    ![[選項] 對話方塊、[字型和色彩] 類別](media/quickstart-personalize-line-number-color.png)
+
+   某些語言具有其專屬特定字型和色彩設定。 如果您是 C++ 開發人員，而且想要變更用於函式的色彩，例如，您可以在 [顯示項目] 清單中尋找 [C++ 函式]。
 
 1. 在結束對話方塊之前，讓我們也變更 XML 屬性的色彩。 在 [顯示項目] 清單中，向下捲動至 [XML 屬性] 並加以選取。 在 [項目前景] 方塊中，選擇 [淡黃綠色]。 選擇 [確定] 以儲存選取項目並關閉對話方塊。
 
@@ -96,6 +98,8 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 ## <a name="see-also"></a>請參閱
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
+[快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  
+[快速入門：專案和解決方案](../ide/quickstart-projects-solutions.md)  
 [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
 [自訂編輯器](../ide/customizing-the-editor.md)  
 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)

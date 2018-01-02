@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何取得及管理您的 Visual Studio 訂用帳戶產品金鑰。"
+Description: Learn how to obtain and manage your product keys in Visual Studio subscriptions.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 9de4470a35c4eafdd16f8c8b40f2487383707f25
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 6d0da452a205042cee2b2c0b41990da50b303b3f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 訂用帳戶的產品金鑰
 ## <a name="product-keys-overview"></a>產品金鑰概觀
@@ -21,12 +21,12 @@ Visual Studio 訂用帳戶能讓您存取各種用於設計、開發、測試以
 
 針對目前版本的 Windows 及 Office 產品，Visual Studio 訂用帳戶通常包含五組產品金鑰，而針對舊版則包含三組金鑰。
 
-大部分的產品金鑰也允許每個金鑰可多次啟用產品。  許多產品也允許您在不啟用的情況下，安裝和使用產品長達 30 天或以上。  對大多數的訂閱者而言，這種比足夠還多的啟用更符合其需求。  不過，如果您已用完產品的可用啟用，您可以透過 [Visual Studio 訂用帳戶客戶服務](https://www.visualstudio.com/subscriptions/support/)要求額外的金鑰。
+大部分的產品金鑰也允許每個金鑰可多次啟用產品。  許多產品也允許您在不啟用的情況下，安裝和使用產品長達 30 天或以上。  對大多數的訂閱者而言，這種比足夠還多的啟用更符合其需求。  不過，如果您已用完產品的可用啟用次數，您可以透過 [Visual Studio 訂用帳戶客戶服務](https://www.visualstudio.com/subscriptions/support/)要求額外的金鑰。
 
 ## <a name="activating-a-product"></a>啟用產品
-某些產品需要啟用；在 Visual Studio 訂用帳戶中，通常只有 Windows、Windows Server、Microsoft Office 用戶端應用程式及 Expression Studio 需要啟用。 許多需要啟用的產品 (包括 Windows 及 Office)，會允許您在不啟用的情況下，安裝並使用該產品長達 30 天或以上。 如果您經常要重新製作電腦映像 (至少每隔 30 天一次)，不妨考慮「不」啟用產品。 隨 Visual Studio 訂用帳戶一起提供的產品金鑰，不允許無限次地啟用產品。
+某些產品需要啟用。  在 Visual Studio 訂用帳戶中，通常只有 Windows、Windows Server、Microsoft Office 用戶端應用程式及 Expression Studio 需要啟用。 許多需要啟用的產品 (包括 Windows 及 Office)，會允許您在不啟用的情況下，安裝並使用該產品長達 30 天或以上。 如果您經常要重新製作電腦映像 (至少每隔 30 天一次)，不妨考慮「不」啟用產品。 隨 Visual Studio 訂用帳戶一起提供的產品金鑰，不允許無限次地啟用產品。
 
-如果您把訂用帳戶提供的所有產品金鑰全部領取完畢，而且也把所有啟用次數全部使用完畢，可以連絡當地的 [Visual Studio 訂用帳戶客戶服務中心](https://www.visualstudio.com/subscriptions/support/)，再額外索取金鑰。 要求會以個案為基礎加以考量。 如經獲准，則可以在[下載](https://my.visualstudio.com/downloads)中存取產品金鑰。
+如果您把訂用帳戶提供的所有產品金鑰全部領取完畢，而且也把所有啟用次數全數用盡，可以連絡當地的 Visual Studio 訂用帳戶[客戶服務中心](https://www.visualstudio.com/subscriptions/support/)索取額外金鑰。 要求會以個案為基礎加以考量。 如經獲准，則可以在[下載](https://my.visualstudio.com/downloads)中存取產品金鑰。
 
 ## <a name="retail-and-volume-licensing-versions-of-products"></a>產品的零售和大量授權版本
 Visual Studio 訂用帳戶提供精選 Microsoft 產品的零售和大量授權版本。 下載提供的某些產品只在零售版本或大量授權版本有提供；有些則兩種版本都有提供。 一般而言，需要啟用的產品，例如 Windows、Windows Server 和 Office 用戶端產品，都只透過下載在零售版本中提供。
@@ -42,13 +42,15 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 如果您領取的金鑰數目已達您的訂用帳戶 24 小時內所容許的上限，您將會看到錯誤，告知您已達限額。 限額每 24 小時重設一次，自太平洋時間上午 12:01 開始。
 
-我們的研究指出，大多數的訂閱者其訂用帳戶所含的產品金鑰數便足以使用。 如果您需要額外的金鑰，可透過 [Visual Studio 訂用帳戶客戶服務](https://www.visualstudio.com/subscriptions/support/)提出申請，該要求會視個別的情況而考慮核准。
+我們的研究指出，大多數的訂閱者其訂用帳戶所含的產品金鑰數便足以使用。 如果您需要額外的金鑰，可透過 Visual Studio 訂用帳戶[客戶服務](https://www.visualstudio.com/subscriptions/support/)提出申請，該要求會視個別的情況而考慮核准。
 
 ## <a name="locating-and-claiming-product-keys"></a>尋找和索取產品金鑰
-您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在 [[下載]](https://my.visualstudio.com/downloads) 頁面上選取特定產品的藍色 [取得金鑰] 按鈕，即可找到個別的產品金鑰。  [產品金鑰](https://my.visualstudio.com/productkeys)頁面也彙總提供所有金鑰。 如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
+您必須登入 Visual Studio 訂用帳戶才能檢視您的產品金鑰。 在 [[下載]](https://my.visualstudio.com/downloads) 頁面選取特定產品的藍色 [取得金鑰] 連結，即可找到個別的產品金鑰，如下所示。  [產品金鑰](https://my.visualstudio.com/productkeys)頁面也彙總提供所有金鑰。 如果單一產品存在多組金鑰，下載的 [備註] 欄上就會顯示附註，協助您識別應該使用的金鑰。
 
-![[下載] 頁面的 [取得金鑰]](_img/product-keys/download-get-key-cropped.png) 部分產品將該產品的多重版本套裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
-有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取 [取得金鑰] 或產品的按鈕才能領取。
+![從下載頁面取得金鑰](_img/product-keys/download-get-key.png)
+
+部分產品將該產品的多重版本包裝為單一下載。 在這種情況下，輸入的產品金鑰會決定要安裝的產品版本。
+有的金鑰會自動提供，例如「靜態」金鑰，因為它不需要啟用，所以您可以不限次數地使用。 有的金鑰則必須選取產品的 [取得金鑰] 連結才能領取。
 
 根據產品提供各種金鑰類型。 
 
@@ -79,7 +81,9 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 1.  登入 Visual Studio 訂用帳戶。  您必須登入才能下載產品或索取產品金鑰。 
 2.  按一下 [[產品金鑰]](https://my.visualstudio.com/productkeys) 索引標籤。
 3.  產品金鑰會依產品名稱的字母順序列出。  您可以向下捲動至所需產品的名稱，或使用頁面頂端的搜尋列搜尋產品。  
-![搜尋產品金鑰](_img\product-keys\visio-product-key-cropped.png)在此範例中，我們會使用搜尋列尋找 Visio 2010 的產品金鑰。
+![搜尋產品金鑰](_img\product-keys\visio-product-key-cropped.png)
+
+在此範例中，我們使用了搜尋列尋找 Visio 2010 的產品金鑰。
 您會看到列出數個 Visio 2010 版本。  Visio Standard 2010 和 Visio Premium 2010 已各領取一個金鑰，且各餘四個金鑰。  已領取的兩個金鑰都是零售金鑰，會顯示在頁面上。  請注意，您可以在 [備註] 欄中簡短註記已領取的金鑰。  這個項目可以和 [已領取] 欄中的日期搭配使用，追蹤已領取的金鑰。  例如，當您使用金鑰啟用產品安裝時，您可能會寫下它。  
 
 ### <a name="exporting-your-claimed-keys"></a>匯出已領取的金鑰
@@ -87,7 +91,7 @@ Microsoft 承諾保護 Visual Studio 訂用帳戶方案的完整性，以及該�
 
 **重要事項：如果訂用帳戶到期，您就不能再索取新的金鑰，或匯出已領取的金鑰。** 
 
-若要匯出金鑰，按一下 [產品金鑰] 頁面最右邊的 [匯出所有金鑰] 連結即可。  即會建立標題為 KeysExport.xml 的 .xml 檔案，而您可以選擇開啟或儲存檔案。  您必須使用可以處理 .xml 檔案的應用程式開啟檔案。  例如，您可以使用 Excel 將檔案開啟為唯讀活頁簿。  
+若要匯出金鑰，按一下 [產品金鑰] 頁面最右邊的 [匯出所有金鑰] 按鈕即可。  即會建立標題為 KeysExport.xml 的 .xml 檔案，而您可以選擇開啟或儲存檔案。  您必須使用可以處理 .xml 檔案的應用程式開啟檔案。  例如，您可以使用 Excel 將檔案開啟為唯讀活頁簿。  
 
 ## <a name="internet-demonstrations-via-terminal-services"></a>透過終端機服務存取網際網路示範
 透過 Visual Studio 訂用帳戶，您可以授權使用者透過終端機服務 (Windows Server 2003 或 Windows Server 2008) 或遠端桌面服務 (Windows Server 2008 R2 及更新版本) 存取您程式的網際網路示範。 以這種方式同時存取示範的匿名使用者最多限 200 名。 示範絕對不可以使用生產資料。 Visual Studio 訂閱者享有向使用者示範其應用程式的權利。 使用終端機服務 (TS) 或遠端桌面服務 (RDS) 存取網際網路示範的目的，只在讓沒有 Visual Studio 訂用帳戶的使用者，可以在軟體經由 Visual Studio 訂用帳戶獲得授權之後，與示範應用程式互動。

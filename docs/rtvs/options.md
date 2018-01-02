@@ -17,11 +17,11 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 227aea28265de5f522c177c4ba224904b78383b1
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: dd21ba3c54ed274f181c036ed0121d8d3c5a180e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="r-tools-for-visual-studio-options"></a>Visual Studio R 工具選項
 
@@ -46,7 +46,7 @@ ms.lasthandoff: 12/04/2017
 
 ## <a name="text-editor--r--advanced-options"></a>[文字編輯器] > [R] > [進階選項]
 
-這些選項可控制 R 格式設定、IntelliSense、大綱、縮排和語法檢查的行為
+這些選項可控制 R 格式設定、IntelliSense、大綱、縮排和語法檢查的行為。
 
 ![R 文字編輯器進階選項中的選項對話方塊](media/options-dialog-advanced-text-editor.png)
 

@@ -18,16 +18,17 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9b76decbfcb314733d0b195baeda24474e9574d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 362daf0d3044841260ae7e9b8f0eb42bad8e610b
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="concurrency-visualizer"></a>並行視覺化檢視
 > [!NOTE]
 >  並行視覺化檢視是 Visual Studio 的選擇性擴充功能。 從下列連結下載並行視覺化檢視和並行視覺化檢視收集工具：  
 >   
+>  -   下載 [Visual Studio 2017 並行視覺化檢視](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ConcurrencyVisualizer2017#overview)延伸模組。  
 >  -   下載[適用於 Visual Studio 2015 的並行視覺化檢視](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9)延伸模組。  
 > -   下載              [適用於 Visual Studio 2015 的並行視覺化檢視收集工具](http://www.microsoft.com/en-in/download/details.aspx?id=49103)。  
 >   
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  透過使用並行視覺化檢視來查看多執行緒 App 的執行情況。 [並行視覺化檢視] 中的這些檢視會提供圖形、表格和文字資料，顯示程式和整體系統中執行緒之間的暫時關聯性。 您可以使用 [並行視覺化檢視] 找出效能瓶頸、CPU 使用率不彰、執行緒爭用、跨核心執行緒移轉、同步處理延遲、DirectX 活動、I/O 重疊區域以及其他資訊。 這些檢視透過將其圖形輸出連結至呼叫堆疊和原始程式碼的方式，來提供可採取動作的資料。  
 
 > [!NOTE]
->  並行視覺化檢視尚未適用於 Visual Studio 2017。 [並行視覺化檢視] 不支援 Web 專案。  
+>  [並行視覺化檢視] 不支援 Web 專案。  
   
  [並行視覺化檢視] 的運作是依賴 [Windows 事件追蹤](http://go.microsoft.com/fwlink/?LinkId=234579) 功能。  
   

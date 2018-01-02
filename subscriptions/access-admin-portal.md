@@ -5,21 +5,21 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何存取系統管理員入口網站"
+Description: Learn how to access the Administrator Portal
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 89661c12a820d2a7aa3bed562a5efec141dcf01a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 3028ea616f6336918e49d49856f62707876772c9
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
-# <a name="accessing-the-visual-studio-subsubscriptions-administrator-portal"></a>存取 Visual Studio 訂閱的系統管理員入口網站
+# <a name="accessing-the-visual-studio-subscriptions-administrator-portal"></a>存取 Visual Studio 訂用帳戶管理入口網站
 ## <a name="for-mpsa"></a>針對 MPSA
 若要存取 Visual Studio 訂閱的管理入口網站，您必須是 Microsoft Business Center 入口網站或 BCP 的系統管理員。 
 
-如需如何成為系統管理員的資訊，請參閱 [Manage User Quick Start Guide](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf) (管理使用者快速入門指南)。 如果您已具備系統管理員的身分，就可以直接前往 [Visual Studio 訂閱管理入口網站](https://manage.visualstudio.com)。
+如需如何成為系統管理員的資訊，請參閱 [Manage User Quick Start Guide](https://mvlc.blob.core.windows.net/en-us/MVLC_QS_Manage_Users.pdf) (管理使用者快速入門指南)。 如果您已具備系統管理員的身分，就可以直接前往 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)
 
 ## <a name="for-volume-licensing-vl"></a>針對大量授權 (VL)
 自 2017 年 3 月 1 日起，如果客戶仍在進行入口網站的上架及移轉程序，即需要透過[大量授權服務中心 (VLSC)](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 來管理訂閱。 
@@ -30,9 +30,9 @@ ms.lasthandoff: 10/31/2017
 
 您必須請組織的大量授權合約連絡人的主要連絡人或通知連絡人，執行幾個步驟，以將您設定為系統管理員。 
 
-如果您需要如何設定系統管理員的資訊，請觀看[這段影片](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)，並參閱 [Visual Studio 訂閱管理入口網站的系統管理員上架與管理](https://go.microsoft.com/fwlink/?linkid=839391)相關文章。 
+如果您需要如何設定系統管理員的資訊，請觀看[這段影片](https://channel9.msdn.com/Series/Visual-Studio-Subscriptions-Administration/Onboarding-your-organization-to-the-new-Visual-Studio-Subscription-Administration-Portal-and-setting)，並參閱 Visual Studio 訂用帳戶管理入口網站的[系統管理員上架與管理](https://go.microsoft.com/fwlink/?linkid=839391)相關文章。 
 
-如果您已具備系統管理員的身分，就可以直接前往 [Visual Studio 訂閱管理入口網站](https://manage.visualstudio.com)。
+如果您已具備系統管理員的身分，就可以直接前往 Visual Studio 訂用帳戶[管理入口網站](https://manage.visualstudio.com)。
 
 ## <a name="for-cloud-subscriptions"></a>針對雲端訂閱
 當您購買 Visual Studio 雲端訂閱時，即會自動將您設為這些訂閱的系統管理員。  如果您已購買這些產品，即可在 [https://manage.visualstudio.com](https://manage.visualstudio.com) 中進行管理。

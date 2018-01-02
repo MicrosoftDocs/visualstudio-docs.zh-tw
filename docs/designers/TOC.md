@@ -24,6 +24,7 @@
 ### [WPF 使用者入門](getting-started-with-wpf.md)
 #### [WPF 簡介](introduction-to-wpf.md)
 #### [逐步解說：我的第一個 WPF 傳統型應用程式](walkthrough-my-first-wpf-desktop-application2.md)
+#### [使用 C# 或 Visual Basic 建立 WPF 應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)
 #### [WPF 社群資源](wpf-community-resources.md)
 #### [WPF 資料繫結與 LINQ to XML](wpf-data-binding-with-linq-to-xml.md)
 ##### [WPF 資料繫結與 LINQ to XML 概觀](wpf-data-binding-with-linq-to-xml-overview.md)

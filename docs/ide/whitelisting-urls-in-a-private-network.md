@@ -11,49 +11,51 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bc7db7b6a1d3e1d39b5fb3b128c28da37a9538b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
+ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/17/2017
 ---
-# <a name="whitelisting-urls-in-a-private-network"></a>將私人網路中的 URL 置於白名單中    
-如果您在使用安全性設備 (例如防火牆) 的私人網路中使用 Visual Studio，Visual Studio 可能無法連線到某些網路資源。 這些資源包括用於登入和授權的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服務。 如果 Visual Studio 無法連線到這些資源的其中一項，您會看到以下錯誤訊息：  
+# <a name="whitelisting-urls-in-a-private-network"></a>將私人網路中的 URL 置於白名單中
 
-  **基礎連線已關閉：傳送時發生未預期的錯誤**  
+如果您在使用安全性設備 (例如防火牆) 的私人網路中使用 Visual Studio，Visual Studio 可能無法連線到某些網路資源。 這些資源包括用於登入和授權的 Visual Studio Team Services (VSTS)、NuGet 和 Azure 服務。 如果 Visual Studio 無法連線到這些資源的其中一項，您會看到以下錯誤訊息：
+
+  **基礎連線已關閉：傳送時發生未預期的錯誤**
 
 Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資源。 有些私人網路的安全性設備在 Visual Studio 使用 TLS 1.2 時，會封鎖某些伺服器連線。 若要修正錯誤，請啟用下列 URL 連線：
 
-- https://management.core.windows.net  
+- https://management.core.windows.net
 
-- https://app.vssps.visualstudio.com  
+- https://app.vssps.visualstudio.com
 
-- https://login.microsoftonline.com  
+- https://login.microsoftonline.com
 
-- https://login.live.com  
+- https://login.live.com
 
-- https://go.microsoft.com  
+- https://go.microsoft.com
 
-- https://graph.windows.net  
+- https://graph.windows.net
 
-- https://app.vsspsext.visualstudio.com  
+- https://app.vsspsext.visualstudio.com
 
-- *.azurewebsites.net (適用於 Azure 連線)  
+- *.azurewebsites.net (適用於 Azure 連線)
 
-- *.nuget.org (適用於 NuGet 連線)  
+- *.nuget.org (適用於 NuGet 連線)
 
-- *.visualstudio.com  
+- *.visualstudio.com
 
-- cdn.vsassets.io (主機內容傳遞網路 (又稱 CDN) 內容)  
+- cdn.vsassets.io (主機內容傳遞網路 (又稱 CDN) 內容)
 
-- *.gallerycdn.vsassets.io (主機 VSTS 延伸模組)  
+- *.gallerycdn.vsassets.io (主機 VSTS 延伸模組)
 
 - static2.sharepointonline.com (Visual Studio 在 Office 網狀架構 UI 套件中使用的主機資源，例如字型)
 
 > [!NOTE]
->  上列清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以藉由開啟 %APPData%\Nuget\NuGet.Config 來檢查您所使用的 NuGet 伺服器。  
+> 上列清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以藉由開啟 %APPData%\Nuget\NuGet.Config 來檢查您所使用的 NuGet 伺服器。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>請參閱
+
 [需要 Proxy 授權錯誤](../ide/reference/proxy-authorization-required.md)  
-[連線的環境](../ide/connected-environment.md)  
-[將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)  
+[Visual Studio 所使用的網際網路資源](../ide/connected-environment.md)  
+[將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

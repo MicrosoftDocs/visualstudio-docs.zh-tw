@@ -1,7 +1,16 @@
-# [分析功能導覽](profiling-feature-tour.md)
-## [效能分析的初學者指南](beginners-guide-to-performance-profiling.md)
-## [程式碼剖析工具的新功能](what-s-new-in-profiling-tools.md)
+
+# [分析文件](index.md)
+# 概觀
+## [分析功能導覽](profiling-feature-tour.md)
+# 快速入門
+## [分析 CPU 使用量 (受控)](quickstart-cpu-usage-managed.md)
+## [分析 CPU 使用量 (原生)](quickstart-cpu-usage-native.md)
+## [分析 CPU 使用量 (ASP.NET)](quickstart-cpu-usage-aspnet.md)
+# 教學課程
+## [在 Visual Studio 中分析應用程式效能](beginners-guide-to-performance-profiling.md)
+# 概念
 ## [使用或不使用偵錯工具來執行程式碼剖析工具](running-profiling-tools-with-or-without-the-debugger.md)
+# 作法指南
 ## [分析記憶體使用量](memory-usage.md)
 ### [自訂原生 ETW 堆積事件](custom-native-etw-heap-events.md)
 ### [記憶體使用量 (不使用偵錯工具)](memory-usage-without-debugging2.md)
@@ -366,4 +375,6 @@
 ##### [CvWriteFlag 函式](cvwriteflag-function.md)
 ##### [CvWriteMessage 函式](cvwritemessage-function.md)
 ### [並行視覺化檢視命令列公用程式 (CVCollectionCmd)](concurrency-visualizer-command-line-utility-cvcollectioncmd.md)
-## [分析 UWP App 中的能源耗用量](analyze-energy-use-in-store-apps.md)
+## [分析市集應用程式中的能源利用](analyze-energy-use-in-store-apps.md)
+# 資源
+## [程式碼剖析工具的新功能](what-s-new-in-profiling-tools.md)

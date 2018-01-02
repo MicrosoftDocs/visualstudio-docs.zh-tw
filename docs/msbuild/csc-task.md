@@ -21,11 +21,11 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0e36e4c9e01d7ee8f12a59f2fd72ee4ef6b83e9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: d91a1a5fca1530f42e9781a09b2e9364daf8e15f
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="csc-task"></a>Csc 工作
 包裝 CSC.exe，並產生可執行檔 (.exe 檔)、動態連結程式庫 (.dll 檔) 或程式碼模組 (.netmodule 檔)。 如需 CSC.exe 的詳細資訊，請參閱 [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index)。  
@@ -63,6 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`NoWin32Manifest`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，就不會包含預設的 Win32 資訊清單。|  
 |`Optimize`|選擇性的 `Boolean` 參數。<br /><br /> 如果是 `true`，即會啟用最佳化。 如果是 `false`，則會停用最佳化。 如需詳細資訊，請參閱 [/optimize (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。|  
 |`OutputAssembly`|選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 如需詳細資訊，請參閱 [/out (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/out-compiler-option)。|  
+|`OutputRefAssembly`|選擇性的 `String` 參數。<br /><br /> 指定輸出參考組件檔的名稱。 如需詳細資訊，請參閱 [/refout (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/refout-compiler-option)。|  
 |`PdbFile`|選擇性的 `String` 參數。<br /><br /> 指定偵錯資訊檔案名稱。 預設名稱是副檔名為 .pdb 的輸出檔案名稱。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 此參數可以具有 `x86`、`x64` 或 `anycpu` 的值。 預設為 `anycpu`。 如需詳細資訊，請參閱 [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)。|  
 |`References`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 如需詳細資訊，請參閱 [/reference (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/reference-compiler-option)。<br /><br /> 您可以將中繼資料 `Aliases` 加入至原始的「參考」項目，藉以在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案中指定 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 參考別名。 例如，若要在下列 CSC 命令列中設定別名 "LS1"：<br /><br /> `csc /r:LS1=MyCodeLibrary.dll /r:LS2=MyCodeLibrary2.dll *.cs`<br /><br /> 您可以使用：<br /><br /> `<Reference Include="MyCodeLibrary"> <Aliases>LS1</Aliases> </Reference>`|  

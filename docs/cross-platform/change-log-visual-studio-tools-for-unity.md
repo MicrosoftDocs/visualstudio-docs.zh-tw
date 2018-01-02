@@ -12,14 +12,47 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 3f5569a6f6d5bb51db61292e3ba12b16dbc201b9
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity 變更記錄。  
+
+## <a name="3502"></a>3.5.0.2
+ 發行日期：2017-12-04
+
+### <a name="new-features"></a>新功能  
+
+-   **整合：**  
+
+    -   Unity 專案現在會在您從 Unity 新增或移除指令碼時，自動重新載入 Visual Studio 中。
+
+-   **偵錯工具：**  
+
+    -   已新增選項，使用 Xamarin 和 Visual Studio for Mac 共用的單聲道偵錯工具偵錯 Unity 編輯器。
+
+    -   已新增可攜式偵錯符號檔的支援。
+
+### <a name="bug-fixes"></a>Bug 修正  
+
+-   **整合：**  
+
+    -   已修正安裝相依性問題。
+
+    -   已修正 Unity API 說明功能表未顯示。
+    
+-   **專案產生：**  
+
+    -   已修正使用 IL2CPP/.NET 4.6 後端處理 UWP 遊戲時產生播放程式專案的問題。
+    
+    -   已修正錯誤新增至組件檔名的額外 .dll 副檔名。
+    
+    -   已修正特定專案 API 相容性層級的使用，而非全域專案 API 相容性層級。
+    
+    -   因為預設值現在是 'true'，所以請不要強制執行 AllowAttachedDebuggingOfEditor Unity 旗標。
 
 ## <a name="3402"></a>3.4.0.2
  發行日期：2017 年 9 月 19 日
@@ -59,7 +92,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 -   **專案產生：**  
 
-    -   修正 Unity 5.5 和先前版本上 Visual Studio 方案的產生。
+    -   已修正 Unity 5.5 和舊版本上 Visual Studio 解決方案的產生。
 
 ## <a name="3300"></a>3.3.0.0
  發行日期：2017 年 8 月 14 日

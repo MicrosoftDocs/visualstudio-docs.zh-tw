@@ -16,11 +16,11 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b68d1a67055e14fce0af48fa58f805216205d4ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: eaf790d8c02c95047e28ca4d911d7f42a33bbd4f
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 使用 **CodeIndex** 命令管理 Team Foundation Server 上的程式碼索引。 例如，您可能會想要重設索引以修正 CodeLens 資訊，或關閉索引以調查伺服器效能問題。  
@@ -124,8 +124,8 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
- [尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
+## <a name="see-also"></a>請參閱
 
- [使用 TFSConfig 管理伺服器組態](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)   
- [命令列工具 (適用於 TFS)](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)
+[尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
+[使用 TFSConfig 管理伺服器組態](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  
+[命令列工具 (適用於 TFS)](http://msdn.microsoft.com/en-us/be8c997a-b97b-4e59-97f5-04db0a601a6c)

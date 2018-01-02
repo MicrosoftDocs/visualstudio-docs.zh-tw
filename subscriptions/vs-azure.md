@@ -5,15 +5,15 @@ Ms.author: jaunger
 Manager: evelynp
 Ms.date: 10/3/2017
 Ms.topic: Get-Started-Article
-Description: "了解如何啟用 Visual Studio 訂用帳戶所含的 Azure 權益。"
+Description: Learn how to activate the Azure benefit included in your Visual Studio subscription.
 Ms.prod: vs-subscription
 Ms.technology: vs-subscriptions
 Searchscope: VS Subscription
-ms.openlocfilehash: 0ed03e61e9f62535e80ad5891c314f26121cfd7d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.openlocfilehash: 32cb58f86a3664764f645f133a42d298e72dedbc
+ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="using-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 訂用帳戶中使用 Microsoft Azure
 身為 Visual Studio 訂閱者，您不需要額外收費即可使用 Microsoft Azure。  使用[每月 Azure 信用額度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，Azure 就是您進行開發/測試的個人沙箱。  您可以佈建虛擬機器、雲端服務和其他 Azure 資源。  信用額度會依訂用帳戶層級而異。 
@@ -23,7 +23,7 @@ ms.lasthandoff: 10/27/2017
 1.  按一下權益磚底部的 [啟用] 連結。   
 ![Azure 磚](_img\vs-azure\vs-azure-tile.png)
 
-2.  填寫必要資訊來建立 Azure 訂用帳戶：![Azure 註冊](_img\vs-azure\vs-azure-sign-up-cropped.png)
+2.  填入建立 Azure 訂用帳戶所需的資訊，按一下核取方塊以接受條款和條件，然後按一下 [註冊]：![Azure 註冊](_img\vs-azure\vs-azure-sign-up-cropped.png)
 
  
 3.  您的帳戶就緒時，可以選擇 Azure 支援方案 (個別銷售)，或開始使用您的 Azure 訂用帳戶。  

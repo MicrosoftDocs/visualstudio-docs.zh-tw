@@ -1,5 +1,5 @@
 ---
-title: "Visual Studio 秘訣和訣竅 | Microsoft Docs"
+title: "Visual Studio 鍵盤快速鍵 | Microsoft Docs"
 ms.custom: 
 ms.date: 06/21/2017
 ms.reviewer: 
@@ -7,21 +7,20 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 20489db9-7441-4f8b-97de-c72070d569b1
-caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 40172defbd56f31de9aedbb4cc422c10d1a68dfd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
-您可以使用本主題的捷徑，更輕鬆地在 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 中巡覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。  
 
-##  <a name="BKMK_WindowMgmt"></a> 視窗管理  
+您可以使用本主題中的快速鍵，更輕鬆地在 Visual Studio 中導覽。 本主題只是可用鍵盤快速鍵的子集。 如需更完整的清單，請參閱 [Visual Studio 中的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。 如需如何最佳化 Visual Studio 協助工具功能的相關資訊，請參閱[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)。
+
+##  <a name="BKMK_WindowMgmt"></a> 視窗管理
 
 |||  
 |-|-|  
@@ -32,7 +31,7 @@ ms.lasthandoff: 10/31/2017
 |顯示開啟檔案清單|Ctrl+Alt+向下鍵|  
 |顯示所有浮動視窗|Ctrl+Shift+M|  
 
-##  <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵  
+##  <a name="BKMK_WindowShortcuts"></a> 視窗快速鍵
 
 |||  
 |-|-|  
@@ -42,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 |開始新執行個體|Win+Shift+n|  
 |切換視窗|Win+n|  
 
-##  <a name="BKMK_Search"></a> Visual Studio 搜尋  
+##  <a name="BKMK_Search"></a> Visual Studio 搜尋
 
 |||  
 |-|-|  
@@ -52,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |快速啟動範圍結果|-   @opt 選項<br />-   @cmd 命令<br />-   @mru 最近使用<br />-   @doc 開啟文件|  
 |在工具選項中搜尋|Ctrl+E|  
 
-##  <a name="BKMK_EditorFind"></a> 編輯器尋找  
+##  <a name="BKMK_EditorFind"></a> 編輯器尋找
 
 |||  
 |-|-|  
@@ -67,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 |檔案中尋找|Ctrl+Shift+F|  
 |檔案中取代|Ctrl+Shift+H|  
 
-##  <a name="BKMK_CodeEditor"></a> 程式碼編輯器  
+##  <a name="BKMK_CodeEditor"></a> 程式碼編輯器
 
 |||  
 |-|-|  
@@ -91,7 +90,7 @@ ms.lasthandoff: 10/31/2017
 |在多個查看結果之間巡覽|F8 和 Shift+F8|  
 |在程式碼編輯器視窗和 [查看定義] 視窗之間切換|Shift+Esc|  
 
-##  <a name="BKMK_Toolbars"></a> 工具列  
+##  <a name="BKMK_Toolbars"></a> 工具列
 
 |||  
 |-|-|  
@@ -100,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 |尋找文字方塊命令模式|鍵入 ">"|  
 |建立新別名|>alias NewAlias 命令|  
 
-##  <a name="BKMK_Debugging"></a> 偵錯  
+##  <a name="BKMK_Debugging"></a> 偵錯
 
 |||  
 |-|-|  
@@ -119,12 +118,14 @@ ms.lasthandoff: 10/31/2017
 |即時運算視窗清除緩衝區|>cls|  
 |即時運算視窗列印值|?varname|  
 
-##  <a name="BKMK_ALM"></a> 應用程式生命週期管理  
- 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
+##  <a name="BKMK_ALM"></a> 應用程式生命週期管理
 
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)   
- [Visual Studio Tips and Tricks Blog](http://blogs.msdn.com/b/zainnab)  (Visual Studio 秘訣和訣竅部落格)  
- [Visual Studio Toolbox on Channel 9](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  (Channel 9 上的 Visual Studio 工具箱)  
- [Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)   
- [Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)
+請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
+
+## <a name="see-also"></a>請參閱
+
+[Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)  
+[Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)  
+[Channel 9 上的 Visual Studio 工具箱](http://channel9.msdn.com/Shows/Visual-Studio-Toolbox)  
+[Visual Studio UserVoice](http://visualstudio.uservoice.com/forums/121579-visual-studio)  
+[Visual Studio 連接 Bug](http://connect.microsoft.com/VisualStudio)

@@ -1,32 +1,22 @@
 ---
-title: "Visual Studio 中的最佳化方案載入 | Microsoft Docs"
-ms.custom: 
-ms.date: 08/31/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- startup time [Visual Studio]
-- optimizing startup time [Visual Studio]
-- speed up start time [Visual Studio]
-ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138
-caps.latest.revision: "4"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-f1_keywords: vs.performancecenter
-ms.technology: vs-ide-general
-ms.openlocfilehash: 2102fc026b566c89108f0d74dcf604020653e358
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/optimize-visual-studio-startup-time/
+ms.openlocfilehash: 6ba351d5b395caaddd12021b09f8792cd19b2905
+ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="optimize-solution-loading-in-visual-studio"></a>Visual Studio 中的最佳化方案載入
+title: "最佳化 Visual Studio 中的解決方案載入 | Microsoft Docs" ms.custom: "" ms.date: 08/31/2017 ms.reviewer: "" ms.suite: "" ms.tgt_pltfrm: "" ms.topic: "article" helpviewer_keywords: 
+  - "啟動時間 [Visual Studio]"
+  - "最佳化啟動時間 [Visual Studio]"
+  - "加速開始時間 [Visual Studio]" ms.assetid: 84989983-84bc-4f81-97a8-2131e3a25138 caps.latest.revision: 4 author: "gewarren" ms.author: "gewarren" manager: ghogen f1_keywords: 
+  - "vs.performancecenter" ms.technology: 
+  - "vs-ide-general"
+---
+# <a name="optimize-solution-loading-in-visual-studio"></a>最佳化 Visual Studio 中的解決方案載入
 許多解決方案包含大量的專案，這會影響載入這些解決方案所花費的時間。 不過，在小組環境中，開發人員通常是處理這些專案的不同子集，不需要載入所有個別專案。
 
-Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型解決方案載入 (LSL) 模式時，Visual Studio 2017 會載入專案的小子集，而不是載入大型解決方案的所有專案。 大部分的常用 IDE 功能都是在 LSL 模式下運作，它能讓您建置、搜尋及偵錯整個解決方案。 (LSL 模式中不支援的主要功能是編輯後繼續)。
+Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型解決方案載入 (LSL) 模式時，Visual Studio 2017 會載入專案的小子集，而不是載入大型解決方案的所有專案。 大部分的常用 IDE 功能都是在 LSL 模式下運作，它能讓您建置、搜尋及偵錯整個解決方案。 (LSL 模式中不支援的主要功能是編輯後繼續)。  
 
 > [!NOTE]
 > 此內容適用於 Visual Studio 2017 Update 3
@@ -46,7 +36,7 @@ Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型�
 
 ![底下提供說明，包括方案總管](../ide/media/VSIDE_LSL_Solution_Setting.png)
 
-## <a name="global_solution_load_settings"></a>設定輕量型方案載入的全域設定
+## <a name="global_solution_load_settings"></a>設定輕量型解決方案載入的全域設定
 
 您可以選擇 [工具] > [選項] > [專案和方案]，全域停用或設定所有解決方案的 LSL。
 
@@ -54,8 +44,7 @@ Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型�
 
 ## <a name="how-does-lightweight-solution-load-work-behind-the-scenes"></a>輕量型解決方案載入如何在幕後運作？
 
-當您載入解決方案時，Visual Studio 會記住您之前開啟過哪些專案，只載入這些專案。 所有其他專案會顯示在方案總管中，但不載入。 只要展開的專案或以滑鼠右鍵按一下專案，Visual Studio 就會自動載入該專案。 自動載入專案通常不到一秒，但某些專案可能需時較長。
-不過，Visual Studio 可在整個解決方案中使用搜尋、偵錯、建置和原始檔控制等 IDE 功能。 例如，即使輕量級模式中只載入幾個專案，您仍可以搜尋整個解決方案。 
+當您載入解決方案時，Visual Studio 會記住您之前開啟過哪些專案，只載入這些專案。 所有其他專案會顯示在方案總管中，但不載入。 只要展開的專案或以滑鼠右鍵按一下專案，Visual Studio 就會自動載入該專案。 自動載入專案通常不到一秒，但某些專案可能需時較長。 不過，Visual Studio 可在整個解決方案中使用搜尋、偵錯、建置和原始檔控制等 IDE 功能。 例如，即使輕量級模式中只載入幾個專案，您仍可以搜尋整個解決方案。 
 
 當您展開更多專案時，Visual Studio 會記住已展開專案的清單。 重新開啟解決方案時，Visual Studio 會自動載入之前展開過的專案。
 
@@ -63,15 +52,13 @@ Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型�
 
 從 Visual Studio 遙測中，專案數逾 30 的大型解決方案顯著受益於 LSL 模式。 因此，我們會提示開發人員利用大型解決方案嘗試 LSL 模式。 大部分初次嘗試 LSL 的開發人員，最後都會定期使用它。 
 
-我們經常檢閱 Visual Studio 使用狀況遙測，改善啟發學習法，向可能獲益最多的開發人員提供 LSL 模式。 
-
 ## <a name="visual-studio-makes-recommendations-to-turn-on-lightweight-solution-load-based-on-heuristics"></a>Visual Studio 會建議根據啟發學習法開啟輕量型解決方案載入
 
 根據預設，Visual Studio 會為最有可能受益的使用者開啟 LSL。 如果您有多個解決方案，Visual Studio 會提供最可能看到效能提升顯著的解決方案 LSL 模式。 如果您選取輕量級模式選項 [Let Visual Studio decide] (讓 Visual Studio 決定) (預設選項)，Visual Studio 會根據啟發學習法在輕量級模式中開啟解決方案。 訊息列，指出解決方案是否為輕量級模式。 當訊息列出現時，您可以選擇深入了解，或更新設定。
 
 ![快顯視窗](../ide/media/VSIDE_LSL_Popup.png)
 
-## <a name="ide-features-fully-supported-in-lightweight-mode"></a>IDE 功能，在輕量級模式中受到完全支援
+## <a name="ide-features-fully-supported-in-lightweight-mode"></a>IDE 功能，在輕量型模式中受到完全支援
 
 |功能|輕量級模式是否支援？|
 |-|-|-|
@@ -130,5 +117,5 @@ Visual Studio 2017 支援**輕量型解決方案載入**。 當啟用輕量型�
 
 我們欣然樂見能夠最佳化開發人員解決方案載入時間效能的創新。 因為這是一項新功能，所以我們會主動查看客戶的意見反應以及解決已知問題。 我們期待收到您的意見反應。 您可以向 Visual Studio 解決方案載入最佳化小組傳送電子郵件：lslsupport@microsoft.com
 
-## <a name="see-also"></a>另請參閱
-[Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)
+## <a name="see-also"></a>請參閱
+[Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)  

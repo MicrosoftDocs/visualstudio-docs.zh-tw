@@ -15,11 +15,11 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c477cd9160a765a554cfa432b023b20eb6ef6b4e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 8acc59afdd050998f2269cc9be1986b7f4f426ae
+ms.sourcegitcommit: 38097344f3ff74ba7b03bcfa45910015ca6bc2be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在專案檔中使用保留的 XML 字元
 當您撰寫專案檔時，您可能需要使用保留的 XML 字元，例如，在屬性值或工作參數值中。 不過，您必須使用具名實體來取代某些保留字元，如此才能剖析專案檔。  
@@ -29,18 +29,18 @@ ms.lasthandoff: 10/31/2017
   
 |保留字元|具名實體|  
 |------------------------|------------------|  
-|\<|&lt;|  
-|>|&gt;|  
-|&|&amp;|  
-|"|&quot;|  
-|'|&apos;|  
+|\<|&amp;lt;|  
+|>|&amp;gt;|  
+|&|&amp;amp;|  
+|"|&amp;quot;|  
+|'|&amp;apos;|  
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>在專案檔中使用雙引號  
   
--   使用對應的具名實體 &quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：  
+-   使用對應的具名實體 &amp;quot; 來取代雙引號。 例如，若要以雙引號括住 `EXEFile` 項目清單，請輸入：  
   
     ```xml  
-    <Message Text="The output file is "@(EXEFile)"."/>  
+    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     ```  
   
 ## <a name="example"></a>範例  
@@ -68,10 +68,11 @@ ms.lasthandoff: 10/31/2017
                 ItemName = "EXEFile"/>  
         </Csc>  
         <!-- Log the file name of the output file -->  
-        <Message Text="The output file is "@(EXEFile)"."/>  
+        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
     </Target>  
 </Project>  
 ```  
   
 ## <a name="see-also"></a>另請參閱  
- [MSBuild 參考](../msbuild/msbuild-reference.md) [MSBuild](../msbuild/msbuild.md)
+ [MSBuild 參考](../msbuild/msbuild-reference.md)    
+ [ MSBuild](../msbuild/msbuild.md)    

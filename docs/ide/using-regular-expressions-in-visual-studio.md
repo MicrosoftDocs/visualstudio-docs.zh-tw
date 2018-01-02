@@ -16,34 +16,32 @@ f1_keywords:
 helpviewer_keywords:
 - regular expressions [Visual Studio]
 - regular expressions
-- Visual Studio, regular expressions
-ms.assetid: 718a617d-0e05-47e1-a218-9746971527f4
-caps.latest.revision: "53"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c01023649879c34838cbca3172aec6b5a053f4bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
-[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 .NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](/dotnet/standard/base-types/regular-expressions)。  
-  
- 在 Visual Studio 2012 之前，Visual Studio 在 [尋找和取代] 視窗中使用自訂的規則運算式語法。 如需如何將一些常用的自訂規則運算式符號轉換成該 .NET 版本之說明，請參閱 [Visual Studio Regular Expression Conversions](https://msdn.microsoft.com/en-us/library/2k3te2cs\(v=vs.110\).aspx) (Visual Studio 規則運算式轉換)。  
-  
+
+[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 使用 .NET Framework 規則運算式來尋找和取代文字。 如需 .NET 規則運算式的詳細資訊，請參閱 [.NET Framework 規則運算式](/dotnet/standard/base-types/regular-expressions)。
+
 > [!TIP]
->  在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。  
+> 在 Windows 作業系統中，大部分的程式行都是以 "\r\n" 結尾 (歸位字元後面接著新行)。 這些字元並不可見，但是會顯示在編輯器中，並傳遞至 .NET 規則運算式服務。
+
+## <a name="replacement-patterns"></a>取代模式
+
+如需取代模式中所用規則運算式的資訊，請參閱[替代](/dotnet/standard/base-types/substitutions-in-regular-expressions)。 若要使用已編號的擷取群組，則指定已編號群組的語法為 `$1`，而指定考慮中群組的語法為 `(x)`。 例如，群組規則運算式 `(\d)([a-z])` 在下列字串中找到四個相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。
   
-> [!TIP]
->  如需取代模式中所用規則運算式的資訊，請參閱[替代](/dotnet/standard/base-types/substitutions-in-regular-expressions)。 若要使用已編號的擷取群組，指定編號的群組之語法為 `$1`，以及使用 `(x)` 指定考慮中的此群組。 例如，群組規則運算式 `(\d)([a-z])` 在下列字串中找到四個相符項目：**1a 2b 3c 4d**。 取代字串 `z$1` 會將該字串轉換為 **z1 z2 z3 z4**。  
-  
-## <a name="regular-expressions-in-visual-studio"></a>在 Visual Studio 中的規則運算式  
- 以下是一些範例  
-  
-|用途|運算式|範例|  
-|-------------|----------------|-------------|  
+## <a name="regular-expression-examples"></a>規則運算式範例
+
+以下是一些範例：
+
+|用途|運算式|範例|
+|-------------|----------------|-------------|
 |比對任何單一字元 (分行符號除外)|。|`a.o` 會比對 "around" 中的 "aro" 和 "about" 中的 "abo"，但不比對 "across" 中的 "acro"。|  
 |比對先前運算式中零個或多個項目 (比對的字元越多越好)|*|`a*r` 會比對 "rack" 中的 "r"、"ark" 中的 "ar"，以及 "aardvark" 中的 "aar"|  
 |比對任何字元零或多次 (萬用字元 *)|.*|c.*e 會比對 "racket" 中的 "cke"、"comment" 中的 "comme"，以及 "code" 中的 "code"|  
@@ -72,6 +70,7 @@ ms.lasthandoff: 10/31/2017
 |比對引號內的字串|((\\".+?\\")&#124;('.+?'))|比對單引號或雙引號內的任何字串。|  
 |比對十六進位數字|\b0[xX]([0-9a-fA-F]\)\b|比對 "0xc67f" 但不比對 "0xc67fc67f"。|  
 |比對整數和小數|\b[0-9]*\\.\*[0-9]+\b|會比對 "1.333"。|  
-  
-## <a name="see-also"></a>另請參閱  
- [尋找和取代文字](../ide/finding-and-replacing-text.md)
+
+## <a name="see-also"></a>請參閱
+
+[尋找和取代文字](../ide/finding-and-replacing-text.md)

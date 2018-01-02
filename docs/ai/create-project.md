@@ -1,62 +1,27 @@
----
-title: "在適用於 Visual Studio 的 AI 工具中建立專案"
-description: "使用 Azure Machine Learning 資源庫中的範例來建立專案"
-keywords: AI, Visual Studio, Azure Machine Learning
-author: lisawong19
-ms.author: liwong
-manager: routlaw
-ms.date: 11/13/2017
-ms.topic: how to article
-ms.technology: visual studio
-ms.devlang: multiple
-ms.service: multiple
-ms.openlocfilehash: 2d8b5f1d06d31eaba9c75e0f0515b2526fc7efdf
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
-ms.translationtype: HT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
----
-## <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中從 Azure Machine Learning 資源庫建立 AI 專案
+# <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>在 Visual Studio 中從範本建立 AI 專案
 
-Azure Machine Learning 與 Visual Studio Tools for AI 整合。 您可以使用它來提交機器學習作業給 Azure 虛擬機器、Spark 叢集等遠端計算目標。 深入了解 [Azure Machine Learning 測試](https://docs.microsoft.com/azure/machine-learning/preview/experimentation-service-configuration) 
+[安裝 Visual Studio Tools for AI](installation.md) 後，您就可以使用各種範本輕鬆地建立新的 Python 專案。
 
-[安裝 Visual Studio Tools for AI](installation.md) 之後，您就可以使用 Azure Machine Learning 範例庫中預先製作的配方，輕鬆建立新的 Python 專案。
+1. 啟動 Visual Studio。
 
-> ! 您必須安裝 Azure Machine Learning Workbench。 若要安裝，請參閱 [Azure Machine Learning 安裝快速入門](https://docs.microsoft.com/azure/machine-learning/preview/quickstart-installation) 
+1. 選取 [檔案] > [新增] > [專案] (Ctrl+Shift+N)。 在 [新增專案] 對話方塊中，搜尋 "**AI Tools**"，然後選取您想要的範本。 請注意，選取範本時會顯示範本所提供項目的簡短描述  
 
-1. 啟動 Visual Studio。 開啟 [AI Tools] (AI 工具) 功能表，然後選擇 [選取叢集] 以開啟**伺服器總管**  
+    ![含 Python 範本的 VS2017 [新增專案] 對話方塊](media\create-project\new-ai-project.png)
 
-    ![叢集選擇器](media\create-project\select-cluster.png)
+1. 在本快速入門中，選取 [TensorFlow 應用程式] 範本，並提供專案的名稱 (例如 "MNIST") 和位置，然後選取 [確定]。 
 
-1. 在伺服器總管中以滑鼠右鍵按一下 [Azure Machine Learning] 節點，然後選取 [登入] 並遵循指示進行，以登入您的 Azure Machine Learning 訂用帳戶。
+1. Visual Studio 會建立專案檔 (磁碟上的 `.pyproj` 檔案) 以及範本所述的任何其他檔案。 使用 [TensorFlow 應用程式] 範本，專案會包含一個名稱與您專案相同的檔案。 根據預設，會在 Visual Studio 編輯器中開啟檔案。
 
-    ![登入](media\create-project\azureml-login.png)
- 
-2. 選取 [AI Tools] (AI 工具) > [Azure Machine Learning 範例庫]。 
-    
-    ![範例庫](media\create-project\gallery.png)
+    ![使用 Python 應用程式範本時所產生的專案](media\create-project\new-tensorflowapp.png)
 
-1. 針對本快速入門，選取 [MNIST using TensorFlow] (使用 TensorFlow 的 MNIST) 範例，然後按一下 [安裝]。 提供 
-2.
- - **資源群組**：儲存中繼資料的 Azure 資源群組
- - **帳戶**：Azure Machine Learning 測試帳戶
- - **工作區**：Azure Machine Learning 工作區
- - **專案類型**：機器學習架構。 在本例中選擇 [TensorFlow]
- - **加入至方案**：決定要新增至目前的 Visual Studio 方案，或建立並開啟新的方案
- - **專案路徑**：儲存程式碼的位置
- - **專案名稱**：鍵入 **TensorFlowMNIST**
-   
+1. 請注意，此程式碼已經匯入多個程式庫，包括 TensorFlow、numpy、sys 及 os。 此外還可讓您的應用程式啟動就緒，並附帶一些輸入引數，以便輕鬆切換輸入定型資料、輸出模型及記錄檔的位置。 當您將作業提交到多個計算內容 (亦即本機開發人員方塊上與 Azure 檔案共用不同的目錄) 時，這些參數會很實用。 
 
-    ![使用 Python 應用程式範本時所產生的專案](media\create-project\new-AzureSampleProject.png)
+1. 您的專案也有一些已建立的屬性，會自動將命令列引數傳遞到這些輸入參數，讓應用程式的偵錯程序變得更簡單。 **以滑鼠右鍵按一下**您的專案，然後選取 [屬性] 
 
-1. Visual Studio 會建立專案檔 (磁碟上的 `.pyproj` 檔) 及範例中定義的其他檔案。 使用 "MNIST" 範本時，專案會包含數個檔案。
+    ![屬性](media\create-project\project-properties.png)
 
-    ![mnist](media\create-project\azml-mnist.png)
+1. 按一下[偵錯] 索引標籤以查看自動新增的指令碼引數。 您可以視需求變更輸入資料的位置，以及輸出的儲存位置。
 
-1. 將作業提交至 Azure Machine Learning。 
+    ![屬性](media\create-project\/project-properties_1.png)
 
-    ![mnist](media\create-project\submit-azml.png)
-
-1. 在 Docker 容器中或您的本機電腦上執行
-
-    ![mnist](media\create-project\azml-local.png)
+1. 按 Ctrl+F5，或是選取功能表上的 [偵錯] > [啟動但不偵錯]，以執行程式。 結果會顯示在主控台視窗中。

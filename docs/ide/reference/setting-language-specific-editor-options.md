@@ -11,43 +11,44 @@ helpviewer_keywords:
 - editor options
 - configure editor
 - editor settings
-ms.assetid: ba64d517-a60d-409b-9860-5d75065a5bb7
-caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8d3c25221b2d063064b82981a069a99d7395c59e
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.openlocfilehash: ba5d9a146993a4df7d4d60318e0dc3a548819a20
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
+
 Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的程式語言。 您可以設定 [選項] 對話方塊中的選項，以從 [工具] 功能表中存取。 您也可以透過建立 EditorConfig 檔案，設定某些以專案或程式碼庫為基礎的編輯器設定。 請參閱[使用 EditorConfig 建立可攜式自訂編輯器設定](../../ide/create-portable-custom-editor-options.md)。
-  
-## <a name="settings-available-in-the-options-dialog-box"></a>[選項] 對話方塊中提供的設定  
+
+## <a name="settings-available-in-the-options-dialog-box"></a>[選項] 對話方塊中提供的設定
+
  [基本 (Visual Basic)、文字編輯器、選項](../../ide/reference/options-text-editor-basic-visual-basic.md)  
- 描述 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 程式碼的 End 建構、程式碼重新格式化、大綱，以及錯誤修正建議等的設定。  
-  
+ 描述 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 程式碼的 End 建構、程式碼重新格式化、大綱，以及錯誤修正建議等的設定。
+
  [格式、C/C++、文字編輯器、選項](../../ide/reference/options-text-editor-c-cpp-formatting.md)  
- 描述 C 和 C++ 程式碼的大綱、縮排、快速諮詢及其他設定。  
-  
+ 描述 C 和 C++ 程式碼的大綱、縮排、快速諮詢及其他設定。
+
  [進階、C/C++、文字編輯器、選項](../../ide/reference/options-text-editor-c-cpp-advanced.md)  
- 描述使用 C 和 C++ 時的 IntelliSense 和資料庫檔案設定。  
-  
+ 描述使用 C 和 C++ 時的 IntelliSense 和資料庫檔案設定。
+
  [格式、C#、文字編輯器、選項](../../ide/reference/options-text-editor-csharp-formatting.md)  
- 描述 C# 和 J# 的縮排、新行格式化、文字換行等的設定。  
-  
+ 描述 C# 的縮排、新行格式化、文字換行等的設定。
+
  [進階、C#、文字編輯器、選項](../../ide/reference/options-text-editor-csharp-advanced.md)  
- 描述 C# 和 J# 的大綱、錯誤識別及 XML 文件註解設定。  
-  
+ 描述 C# 的大綱、錯誤識別和 XML 文件註解設定。
+
  [IntelliSense、C#、文字編輯器、選項](../../ide/reference/options-text-editor-csharp-intellisense.md)  
- 描述當您使用 C# 和 J# 程式碼執行工作時，指定 IntelliSense 完成清單行為的設定。 
-  
+ 描述當您使用 C# 程式碼執行工作時，指定 IntelliSense 完成清單行為的設定。
+
  [格式、XAML、文字編輯器、選項](../../ide/reference/options-text-editor-xaml-formatting.md)  
- 描述 XAML 文件中項目和屬性排列的設定。  
-  
-## <a name="see-also"></a>請參閱  
+ 描述 XAML 文件中項目和屬性排列的設定。
+
+## <a name="see-also"></a>請參閱
+
 [自訂編輯器](../../ide/customizing-the-editor.md)  
 [使用 EditorConfig 建立可攜式自訂編輯器設定](../../ide/create-portable-custom-editor-options.md)  
 [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md) &mdash; 提供說明如何自訂設定、按鍵繫結關係及其他整合式開發環境 (IDE) 功能的主題連結。

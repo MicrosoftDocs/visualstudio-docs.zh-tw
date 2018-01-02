@@ -13,11 +13,11 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e2422774a9bf588b77aeaff81f8529906b68549
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -37,7 +37,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 [CPU 使用量] 工具的詳細逐步解說，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
 
-從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] \(必須在偵錯工作階段中)。
+從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] (必須在偵錯工作階段中)。
 
 ![在診斷工具中啟用 CPU 使用量](../profiling/media/prof-tour-enable-cpu-profiling.png "診斷工具啟用 CPU 使用量")
 
@@ -152,7 +152,7 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |效能工具|Windows 桌面|Windows 通用/市集|ASP.NET/ASP.NET Core|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|  
-|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是|  
+|[CPU 使用量](../profiling/cpu-usage.md)|是|是|是 (對 .NET Core/ASP.NET Core 則否)|  
 |[GPU 使用量](../debugger/gpu-usage.md)|是|是|no|  
 |[應用程式時間軸](../profiling/application-timeline.md)|是|是|no|  
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|  
