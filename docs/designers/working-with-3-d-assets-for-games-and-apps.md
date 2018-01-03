@@ -13,11 +13,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c57284e21e1b276c6191109701f507c5a12f819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a4b0cc6e7105f91a4192d2c079854c8953736eaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>使用 3D 資產來打造遊戲和應用程式
 本文件所描述的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 工具，可用來建立或修改 DirectX 遊戲和應用程式的 3D 模型、紋理和著色器。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[使用紋理和影像](../designers/working-with-textures-and-images.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 來使用影像和紋理。|  
 |[使用 3D 模型](../designers/working-with-3-d-models.md)|描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 來使用 3D 模型。|  

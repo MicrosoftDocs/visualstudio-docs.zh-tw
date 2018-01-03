@@ -1,7 +1,7 @@
 ---
-title: "EditorConfig 的 .NET 程式碼慣例設定 | Microsoft Docs"
+title: "EditorConfig 的 .NET 程式碼撰寫慣例設定 | Microsoft Docs"
 ms.custom: 
-ms.date: 10/13/2017
+ms.date: 12/05/2017
 ms.reviewer: 
 ms.suite: 
 ms.tgt_pltfrm: 
@@ -14,19 +14,17 @@ helpviewer_keywords:
 - EditorConfig coding conventions
 - language conventions [EditorConfig]
 - formatting conventions [EditorConfig]
-ms.assetid: 
-caps.latest.revision: "1"
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 25db1488faef4ddb54af9831bee7ccd3d8479f76
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.openlocfilehash: e6ce48d060e340076b336083cb73bdd8145fc1a0
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 編碼慣例設定
+# <a name="net-coding-convention-settings-for-editorconfig"></a>EditorConfig 的 .NET 程式碼撰寫慣例設定
 
 您可以使用 [EditorConfig](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options) 檔案定義程式碼基底的程式碼樣式並維持一致。 EditorConfig 包含數個核心格式設定屬性，例如 `indent_style` 和 `indent_size`。 在 Visual Studio 中，也可以使用 EditorConfig 檔案設定 .NET 編碼慣例設定。 EditorConfig 檔案可讓您啟用或停用個別的 .NET 編碼慣例，並設定要強制執行慣例的程度 (透過嚴重性層級)。 若要深入了解使用 EditorConfig 在程式碼基底上強制一致性的方式，請參閱[使用 EditorConfig 建立可攜式自訂編輯器設定](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options)。 您也可以查看 [.NET 編譯器平台的 .editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)作為範例。
 
@@ -220,7 +218,7 @@ dotnet_style_qualification_for_event = false:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | dotnet_style_predefined_type_for_locals_parameters_members | IDE0012 和 IDE0014 | C# 和 Visual Basic | true:none | Visual Studio 2017 |
 | dotnet_style_predefined_type_for_member_access | IDE0013 和 IDE0015 | C# 和 Visual Basic | true:none | Visual Studio 2017 |  
@@ -281,19 +279,19 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | Visual Studio 2017 15.5 版 |
-| csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | Visual Studio 2017 15.5 版 |
-| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial、Default、Private、Protected、Public、Friend、NotOverridable、Overridable、MustOverride、Overloads、Overrides、MustInherit、NotInheritable、Static、Shared、Shadows、ReadOnly、WriteOnly、Dim、Const、WithEvents、Widening、Narrowing、Custom、Async:none | Visual Studio 2017 15.5 版 |
+| dotnet_style_require_accessibility_modifiers | IDE0040 | C# 和 Visual Basic | for_non_interface_members:none | Visual Studio 2017 v. 15.5 |
+| csharp_preferred_modifier_order | IDE0036 | C# | public、private、protected、internal、static、extern、new、virtual、abstract、sealed、override、readonly、unsafe、volatile、async:none | Visual Studio 2017 v. 15.5 |
+| visual_basic_preferred_modifier_order | IDE0036 | Visual Basic | Partial、Default、Private、Protected、Public、Friend、NotOverridable、Overridable、MustOverride、Overloads、Overrides、MustInherit、NotInheritable、Static、Shared、Shadows、ReadOnly、WriteOnly、Dim、Const、WithEvents、Widening、Narrowing、Custom、Async:none | Visual Studio 2017 v. 15.5 |
 
 **dotnet\_style\_require\_accessibility_modifiers**  
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | always | 偏好指定存取範圍修飾詞 |
-| for_non_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 目前此值相當於 **always**，未來將視 C# 是否新增預設介面方法予以校正而定。 |
+| for\_non\_interface_members | 偏好宣告存取範圍修飾詞，但公用介面成員除外。 目前此值相當於 **always**，未來將視 C# 是否新增預設介面方法予以校正而定。 |
 | never | 偏好不指定存取範圍修飾詞 | 
 
 程式碼範例：  
@@ -512,7 +510,7 @@ dotnet_style_null_propagation = true:suggestion
 
 下表顯示規則名稱、適用的程式設計語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_var_for_built_in_types | C# | true:none | Visual Studio 2017 |
 | csharp_style_var_when_type_is_apparent | C# | true:none | Visual Studio 2017 |
@@ -575,128 +573,128 @@ csharp_style_var_elsewhere = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
-| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | never:none | Visual Studio 2017 15.3 版 |
-| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | never:none | Visual Studio 2017 15.3 版 |
-| csharp_style_expression_bodied_operators | IDE0023 和 IDE0024 | C# 7.0+ | never:none | Visual Studio 2017 15.3 版 |
-| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | when_possible:none | Visual Studio 2017 15.3 版 |
-| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | when_possible:none | Visual Studio 2017 15.3 版 |
-| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | when_possible:none | Visual Studio 2017 15.3 版 |  
+| csharp_style_expression_bodied_methods | IDE0022 | C# 6.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_constructors | IDE0021 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_operators | IDE0023 和 IDE0024 | C# 7.0+ | false:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_properties | IDE0025 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_indexers | IDE0026 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |
+| csharp_style_expression_bodied_accessors | IDE0027 | C# 7.0+ | true:none | Visual Studio 2017 v. 15.3 |  
 
 **csharp\_style\_expression\_bodied_methods**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：  
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對方法使用運算式主體的成員 |
+| true | 偏好針對方法使用運算式主體的成員 |
 | when_on_single_line | 當所有方法都在同一行時，偏好針對方法使用運算式主體的成員 |
-| never | 偏好針對方法使用區塊主體 | 
+| False | 偏好針對方法使用區塊主體 | 
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_methods = when_possible
+// csharp_style_expression_bodied_methods = true
 public int GetAge() => this.Age;
 
-// csharp_style_expression_bodied_methods = never
+// csharp_style_expression_bodied_methods = false
 public int GetAge() { return this.Age; }
 ```  
 
 **csharp\_style\_expression\_bodied_constructors**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：   
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對建構函式使用運算式主體的成員 |
+| true | 偏好針對建構函式使用運算式主體的成員 |
 | when_on_single_line | 當所有建構函式都在同一行時，偏好針對建構函式使用運算式主體的成員 |
-| never | 偏好針對建構函式使用區塊主體 |  
+| False | 偏好針對建構函式使用區塊主體 |  
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_constructors = when_possible
+// csharp_style_expression_bodied_constructors = true
 public Customer(int age) => Age = age;
 
-// csharp_style_expression_bodied_constructors = never
+// csharp_style_expression_bodied_constructors = false
 public Customer(int age) { Age = age; }
 ```  
 
 **csharp\_style\_expression\_bodied_operators**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：    
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對運算子使用運算式主體的成員 |
+| true | 偏好針對運算子使用運算式主體的成員 |
 | when_on_single_line | 當所有運算子都在同一行時，偏好針對運算子使用運算式主體的成員 |
-| never | 偏好針對運算子使用區塊主體 |  
+| False | 偏好針對運算子使用區塊主體 |  
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_operators = when_possible
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = true
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
     => new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary);
 
-// csharp_style_expression_bodied_operators = never
-public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+// csharp_style_expression_bodied_operators = false
+public static ComplexNumber operator + (ComplexNumber c1, ComplexNumber c2)
 { return new ComplexNumber(c1.Real + c2.Real, c1.Imaginary + c2.Imaginary); }
 ```  
 
 **csharp\_style\_expression\_bodied_properties**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：   
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對屬性使用運算式主體的成員 |
+| true | 偏好針對屬性使用運算式主體的成員 |
 | when_on_single_line | 當所有屬性都在同一行時，偏好針對屬性使用運算式主體的成員 |
-| never | 偏好針對屬性使用區塊主體 |  
+| False | 偏好針對屬性使用區塊主體 |  
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_properties = when_possible
+// csharp_style_expression_bodied_properties = true
 public int Age => _age;
 
-// csharp_style_expression_bodied_properties = never
+// csharp_style_expression_bodied_properties = false
 public int Age { get { return _age; }}
 ```  
 
 **csharp\_style\_expression\_bodied_indexers**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：  
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對索引子使用運算式主體的成員 |
+| true | 偏好針對索引子使用運算式主體的成員 |
 | when_on_single_line | 當所有索引子都在同一行時，偏好針對索引子使用運算式主體的成員 |
-| never | 偏好針對索引子使用區塊主體 | 
+| False | 偏好針對索引子使用區塊主體 | 
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_indexers = when_possible
+// csharp_style_expression_bodied_indexers = true
 public T this[int i] => _value[i];
 
-// csharp_style_expression_bodied_indexers = never
+// csharp_style_expression_bodied_indexers = false
 public T this[int i] { get { return _values[i]; } }
 ```  
 
 **csharp\_style\_expression\_bodied_accessors**  
-此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
+此規則接受下表中的值：   
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
-| when_possible | 偏好針對存取子使用運算式主體的成員 |
+| true | 偏好針對存取子使用運算式主體的成員 |
 | when_on_single_line | 當所有存取子都在同一行時，偏好針對存取子使用運算式主體的成員 |
-| never | 偏好針對存取子使用區塊主體 | 
+| False | 偏好針對存取子使用區塊主體 | 
 
 程式碼範例：  
 
 ```csharp
-// csharp_style_expression_bodied_accessors = when_possible
+// csharp_style_expression_bodied_accessors = true
 public int Age { get => _age; set => _age = value; }
 
-// csharp_style_expression_bodied_accessors = never
+// csharp_style_expression_bodied_accessors = false
 public int Age { get { return _age; } set { _age = value; } }
 ```  
 
@@ -705,12 +703,12 @@ public int Age { get { return _age; } set { _age = value; } }
 ```
 # CSharp code style settings:
 [*.cs]
-csharp_style_expression_bodied_methods = never:none
-csharp_style_expression_bodied_constructors = never:none
-csharp_style_expression_bodied_operators = never:none
-csharp_style_expression_bodied_properties = when_possible:suggestion
-csharp_style_expression_bodied_indexers = when_possible:suggestion
-csharp_style_expression_bodied_accessors = when_possible:suggestion
+csharp_style_expression_bodied_methods = false:none
+csharp_style_expression_bodied_constructors = false:none
+csharp_style_expression_bodied_operators = false:none
+csharp_style_expression_bodied_properties = true:suggestion
+csharp_style_expression_bodied_indexers = true:suggestion
+csharp_style_expression_bodied_accessors = true:suggestion
 ```  
 
 #### <a name="pattern_matching">模式比對</a>
@@ -718,7 +716,7 @@ csharp_style_expression_bodied_accessors = when_possible:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_pattern_matching_over_is_with_cast_check | IDE0020 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
 | csharp_style_pattern_matching_over_as_with_null_check | IDE0019 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
@@ -766,7 +764,7 @@ csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | -------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_inlined_variable_declaration | IDE0018 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
 
@@ -798,7 +796,7 @@ csharp_style_inlined_variable_declaration = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_simple_default_expression | IDE0034 | C# 7.1+ | true:suggestion | Visual Studio 2017 15.3 版 |
 | csharp_style_deconstructed_variable_declaration | IDE0042 | C# 7.0+ | true:suggestion | Visual Studio 2017 15.5 版 |
@@ -878,7 +876,7 @@ csharp_style_pattern_local_over_anonymous_function = true:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_style_throw_expression | IDE0016 | C# 7.0+ | true:suggestion | Visual Studio 2017 |
 | csharp_style_conditional_delegate_call | IDE0041 | C# 6.0+ | true:suggestion | Visual Studio 2017 |
@@ -926,7 +924,7 @@ csharp_style_conditional_delegate_call = false:suggestion
 
 下表顯示規則名稱、規則識別碼、適用的語言版本、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 規則識別碼 | 適用的語言 | Visual Studio 預設值 | 支援版本 |
 | --------- | ------- | -------------------- | ----------------------| ----------------  |
 | csharp_prefer_braces | IDE0011 | C# | true:none | Visual Studio 2017 15.3 版 |
 
@@ -997,7 +995,7 @@ csharp_prefer_braces = true:none
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | dotnet_sort_system_directives_first |  C# 和 Visual Basic | true | Visual Studio 2017 15.3 版  |
 
@@ -1036,7 +1034,7 @@ dotnet_sort_system_directives_first = true
 
 下表顯示「新行」規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_new_line_before_open_brace |  C# | 全部 | Visual Studio 2017 15.3 版  |
 | csharp_new_line_before_else |  C# | true | Visual Studio 2017 15.3 版  |
@@ -1049,7 +1047,7 @@ dotnet_sort_system_directives_first = true
 **csharp\_new\_line\_before\_open_brace**  
 此規則是有關左大括弧 `{` 應該和前面的程式碼放在同一行還是放在新行中。 此規則不指定 **true** 或 **false**。 請改為指定 [全部]、[無] 或一或多個程式碼項目，例如**方法**或**屬性**，來定義應於何時套用此規則。 下表顯示允許變數的完整清單：  
 
-| 值 | 說明 
+| 值 | 描述 
 | ------------- |:-------------|
 | accessors、anonymous_methods、anonymous_types、control_blocks、events、indexers、lambdas、local_functions、methods、object_collection、properties、types。<br>(請以 ',' 分隔多種類型)。 | 指定的程式碼項目 (也稱為 "Allman" 樣式) 在新行需有括弧 |
 | 全部 | 針對所有運算式要求大括弧位於新行上 ("Allman" 樣式) |
@@ -1227,7 +1225,7 @@ csharp_new_line_between_query_expression_clauses = true
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_indent_case_contents |  C# | true | Visual Studio 2017 15.3 版  |
 | csharp_indent_switch_labels |  C# | true | Visual Studio 2017 15.3 版  |
@@ -1304,7 +1302,7 @@ default:
 **csharp\_indent_labels**  
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:----------- |
 | flush_left | 標籤放在最左邊的資料行 |
 | one_less_than_current | 將標籤置於比目前內容的縮排少一個單位的位置 |
@@ -1368,13 +1366,13 @@ csharp_indent_labels = flush_left
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
-| csharp_space_after_cast |  C# | false | Visual Studio 2017 15.3 版  |
+| csharp_space_after_cast |  C# | False | Visual Studio 2017 15.3 版  |
 | csharp_space_after_keywords_in_control_flow_statements |  C# | true | Visual Studio 2017 15.3 版  |
-| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | false | Visual Studio 2017 15.3 版  |
-| csharp_space_between_method_call_parameter_list_parentheses |  C# | false | Visual Studio 2017 15.3 版  |
-| csharp_space_between_parentheses |  C# | false | Visual Studio 2017 15.3 版  |
+| csharp_space_between_method_declaration_parameter_list_parentheses |  C# | False | Visual Studio 2017 15.3 版  |
+| csharp_space_between_method_call_parameter_list_parentheses |  C# | False | Visual Studio 2017 15.3 版  |
+| csharp_space_between_parentheses |  C# | False | Visual Studio 2017 15.3 版  |
 
 **csharp\_space\_after_cast**  
 當此規則設定為 **true** 時，轉換和值之間需要空格。  
@@ -1435,7 +1433,7 @@ MyMethod(argument);
 **csharp_space_between_parentheses**  
 此規則不接受 **true** 或 **false** 值，但接受下列資料表中的值：  
 
-| 值 | 說明 |
+| 值 | 描述 |
 | ----- |:------------|
 | control_flow_statements | 在控制流程陳述式的括號之間加入空格 |
 | 運算式 | 在運算式的括號之間加入空格 |
@@ -1471,7 +1469,7 @@ csharp_space_between_parentheses = control_flow_statements, type_casts
 
 下表顯示規則名稱、適用的語言、預設值，以及第一個支援的 Visual Studio 版本：  
 
-| 規則名稱 | 適用的語言 | Visual Studio 預設值 | 支援的版本 |
+| 規則名稱 | 適用語言 | Visual Studio 預設值 | 支援版本 |
 | ----------- | -------------------- | ----------------------| ----------------  |
 | csharp_preserve_single_line_statements |  C# | true | Visual Studio 2017 15.3 版  |
 | csharp_preserve_single_line_blocks |  C# | true | Visual Studio 2017 15.3 版  |
@@ -1517,9 +1515,9 @@ csharp_preserve_single_line_statements = true
 csharp_preserve_single_line_blocks = true
 ``` 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速動作](../ide/quick-actions.md)  
 [EditorConfig 的 .NET 命名慣例](../ide/editorconfig-naming-conventions.md)  
-[使用 EditorConfig 建立可攜式自訂編輯器設定](../ide/create-portable-custom-editor-options.md)  
+[建立可攜式自訂編輯器選項](../ide/create-portable-custom-editor-options.md)  
 [.NET 編譯器平台的 .editorconfig 檔案](https://github.com/dotnet/roslyn/blob/master/.editorconfig)  

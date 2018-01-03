@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 6879d29b1e8c36ce9456fc44cf738a57603a6d50
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: cfcb85704302303704ef9b4bb1affc60031793d9
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入門：使用 Visual Studio 建立您的第一個 ASP.NET Core Web 應用程式
 
@@ -75,9 +75,12 @@ ms.lasthandoff: 11/22/2017
 
 1. 關閉網頁瀏覽器。
 
+> [!NOTE]
+> 如果您收到錯誤訊息指出「無法連接到 Web 伺服器 'IIS Express'」，請關閉 Visual Studio，然後以滑鼠右鍵按一下或開啟快顯功能表，使用 [以系統管理員身分執行] 選項開啟它。 接著，再次執行應用程式。
+
 恭喜您完成此快速入門！ 我們希望您更了解 Visual Studio IDE。 如果您想要更深入地鑽研其功能，請繼續目錄的 [教學課程] 一節中的教學課程。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio 的 C# 和 Visual Basic 使用者入門](getting-started-with-visual-csharp-and-visual-basic.md)  
 [開始使用 ASP.NET Core 中的 Razor 頁面](/aspnet/core/tutorials/razor-pages/razor-pages-start)

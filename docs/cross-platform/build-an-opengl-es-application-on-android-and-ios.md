@@ -13,11 +13,12 @@ caps.latest.revision: "5"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 80463925da89165a569b1e6317ef8b1b22c77514
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 6378826a090b05a681a4808573eefd95899b9f6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Build an OpenGL ES Application on Android and iOS
 當您安裝適用於跨平台行動裝置開發的 Visual C++ 選項時，您可以為 iOS 應用程式和 Android 應用程式，建立共用通用程式碼的 Visual Studio 方案和專案。 本主題引導您完成可建立一個簡單的 iOS 應用程式和一個 Android Native Activity 應用程式的方案範本。 這兩個應用程式有通用的 C++ 程式碼，該程式碼使用 OpenGL ES 在每個平台上顯示相同的動畫旋轉立方體。 OpenGL ES (適用於內嵌系統的 OpenGL 或 GLES) 是受到許多行動裝置支援的 2D 和 3D 圖形 API。  

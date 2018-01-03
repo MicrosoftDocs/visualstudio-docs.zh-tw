@@ -23,15 +23,16 @@ f1_keywords:
 - VC.Project.VCConfiguration.DeleteExtensionsOnClean
 - VC.Project.VCConfiguration.UseOfSTL
 - VC.Project.VCConfiguration.ThumbMode
-ms.openlocfilehash: f564ca09b3a19848ae95128ba8b529b8a84c2210
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: e18fffbe0eb3104ec445fca7d791d74f5bf02bf9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-project-properties-android-c"></a>一般專案屬性 (Android C++)
 
-屬性 | 說明 | 選擇
+屬性 | 描述 | 選擇
 --- | ---| ---
 輸出目錄 | 指定輸出檔案目錄的相對路徑；可包含環境變數。
 中繼目錄 | 指定中繼檔案目錄的相對路徑；可包含環境變數。

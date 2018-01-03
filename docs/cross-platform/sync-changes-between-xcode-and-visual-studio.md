@@ -11,11 +11,12 @@ caps.latest.revision: "7"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: c2a665a397e89edf80f62d0150a98c1941afcd1d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: 6913ffc5f2a0515b2682036b46ec8c164e9f877b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>同步處理 XCode 和 Visual Studio 之間的變更
 適用於行動裝置開發的 Microsoft Visual C++ 元件，包含可在您的電腦與 Mac 之間同步處理工作的遠端功能。 當您將 Visual Studio 和 Mac 電腦配對之後，Visual Studio 中就會提供適用於 iOS 應用程式專案的新選項，讓您可用來在 XCode 中開啟專案、在 XCode 和 Visual Studio 之間移動程式碼，以及清除暫存的 XCode 專案目錄。  

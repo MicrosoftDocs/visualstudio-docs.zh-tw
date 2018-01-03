@@ -15,11 +15,11 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: dc865fe81a51ff3ae2ca497b8982292ffda18372
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
@@ -126,7 +126,7 @@ Visual Studio 正在移動其擴充功能 (同時也在處理協力廠商擴充�
 *   轉換 if-to-switch
 *   移除未使用的變數
 
-如需詳細資訊，請參閱 [Visual Studio 中的重構、程式碼產生和快速動作](refactoring-code-generation-quick-actions.md)頁面。  
+如需詳細資訊，請參閱[快速動作](../ide/quick-actions.md#common-quick-actions)。
 
 #### <a name="interact-with-git"></a>與 Git 互動
 當您在 Visual Studio 中處理專案時，可以設定您的程式碼，然後快速認可並發行到 Git 服務。 您也可以從 IDE 右下角的按鈕中使用功能表點選，來管理您的 Git 儲存機制。
@@ -257,11 +257,11 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 - [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) 可協助您透過智慧型程式碼自動完成的協助，更快且更精確地撰寫 SQL。 SQL Prompt 會自動完成資料庫及系統物件和關鍵字，並在輸入期間提供資料行建議。 由於您不再需要記住所有資料行名稱或別名，這會使程式碼更加簡潔，並具有更少的錯誤。
 
 隨附於所有版本的 Visual Studio 2017：
-- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高產能。
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高生產力。
 
 如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
-### <a name="net-core"></a>.NET Core
+### <a name="net-core"></a>.NET 核心
 .NET Core 是 .NET Standard 的一般用途、模組化、跨平台和開放原始碼實作，並且包含許多與 .NET Framework 相同的 API。
 
 .NET Core 平台是由幾個元件所組成，其中包含 Managed 編譯器、執行階段、基底類別庫，以及許多應用程式模型 (例如 ASP.NET Core)。 .NET Core 支援三個主要作業系統：Windows、Linux 和 macOS。 您可以在裝置、雲端和內嵌/IoT 案例中使用 .NET Core。
@@ -298,7 +298,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 ### <a name="track-your-issue-in-connect"></a>使用 Connect 追蹤您的問題  
  如果您想要追蹤 Visual Studio 意見反應的狀態，請前往 [Connect](http://connect.microsoft.com/) 並回報 Bug。 回報 Bug 之後，就可以回到 Connect 來追蹤其狀態。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [C# 的新功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  

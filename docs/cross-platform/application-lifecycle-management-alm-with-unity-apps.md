@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a9364a6eb9e46503a257cdc066e3d9ecd1a6c9d0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: unity
+ms.openlocfilehash: c6c22a04348266b4db83984ff194ad1cef2ac668
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>應用程式生命週期管理 (ALM) (含 Unity 應用程式)
 開發新型平台的應用程式比起只撰寫程式碼牽涉到更多活動。 這些稱為 DevOps (開發 + 作業) 的活動會橫跨應用程式的整個生命週期，包含計劃和追蹤工作、設計和實作程式碼、管理原始程式碼儲存機制、執行組建、管理持續整合和部署、測試 (包含單元測試和 UI 測試)、在開發和生產環境中執行各種形式的診斷，以及透過遙測和分析即時監視應用程式效能和使用者行為。  
@@ -32,11 +33,11 @@ ms.lasthandoff: 12/12/2017
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|管理待處理項目和衝刺 (Sprint)|是||  
+|管理待處理項目和衝刺 (Sprint)|[是]||  
 |工作追蹤|是||  
 |小組聊天室共同作業|是||  
 |看板|是||  
-|報告和視覺化進度|是||  
+|報告和視覺化進度|[是]||  
 
 ## <a name="modeling"></a>模型化  
  參考連結：**[分析架構並製作架構模型](../modeling/analyze-and-model-your-architecture.md)**  
@@ -58,11 +59,11 @@ ms.lasthandoff: 12/12/2017
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|[使用 Team Foundation 版本控制](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285)或 Visual Studio Team Services|是|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|  
-|[開始使用 Team Services 中的 Git (英文)](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|是|請參閱表格後面的注意事項。|  
-|[改善程式碼品質](/visualstudio/test/improve-code-quality)|是||  
-|[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|是||  
-|[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|是||  
+|[使用 Team Foundation 版本控制](http://msdn.microsoft.com/Library/1d629052-c65d-4c5d-81eb-eaa4413fe285)或 Visual Studio Team Services|[是]|就像任何其他專案一樣，Unity 專案就只是一組可放入版本控制系統的檔案，但此表格後面將會說明一些特殊考量。|  
+|[開始使用 Team Services 中的 Git (英文)](http://msdn.microsoft.com/Library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|[是]|請參閱表格後面的注意事項。|  
+|[改善程式碼品質](/visualstudio/test/improve-code-quality)|[是]||  
+|[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)|[是]||  
+|[使用 Code Map 偵錯您的應用程式](../modeling/use-code-maps-to-debug-your-applications.md)|[是]||  
 
  使用 Unity 的版本控制特殊考量：  
 
@@ -100,9 +101,9 @@ ms.lasthandoff: 12/12/2017
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|[分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|  
-|[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|是|可以在 Visual Studio 內分析 C# 指令碼。|  
-|[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|是|可以在 Visual Studio 內分析 C# 指令碼。|  
+|[分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|  
+|[使用程式碼複製品偵測來尋找重複程式碼](http://msdn.microsoft.com/Library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|  
+|[測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|[是]|可以在 Visual Studio 內分析 C# 指令碼。|  
 |[效能總管](../profiling/performance-explorer.md)|否|使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 網站)。|  
 |[分析 .NET Framework 記憶體問題](https://msdn.microsoft.com/en-us/library/dn342825.aspx)|否|Visual Studio 工具並不會為程式碼剖析而連結 Unity 所使用的 Mono 架構。 使用 [Unity 分析工具 (英文)](http://docs.unity3d.com/Manual/Profiler.html) (Unity 文件)。|  
 
@@ -120,4 +121,4 @@ ms.lasthandoff: 12/12/2017
 
 |功能|支援 Unity|其他註解|  
 |-------------|--------------------------|-------------------------|  
-|當機分析、遙測和 Beta 發佈|是|HockeyApp 主要用於處理 Beta 發佈和取得當機報告。<br /><br /> 針對來自 C# 指令碼的遙測，可以使用任何分析架構，但前提是它在 Unity 所使用的 .NET 版本上執行。 不過，這只允許遊戲指令碼內的分析，並不會深入 Unity 引擎內部。 目前沒有任何適用的 Application Insights 的外掛程式，但外掛程式適用於其他分析解決方案，例如 [Unity Analytics (英文)](https://www.assetstore.unity3d.com/en/#!/content/28120) 和 [Google Analytics (英文)](https://github.com/googleanalytics/google-analytics-plugin-for-unity)。 當然，了解 Unity 專案本質的服務 (如 Unity Analytics) 所提供的分析比一般架構更有意義。|
+|當機分析、遙測和 Beta 發佈|[是]|HockeyApp 主要用於處理 Beta 發佈和取得當機報告。<br /><br /> 針對來自 C# 指令碼的遙測，可以使用任何分析架構，但前提是它在 Unity 所使用的 .NET 版本上執行。 不過，這只允許遊戲指令碼內的分析，並不會深入 Unity 引擎內部。 目前沒有任何適用的 Application Insights 的外掛程式，但外掛程式適用於其他分析解決方案，例如 [Unity Analytics (英文)](https://www.assetstore.unity3d.com/en/#!/content/28120) 和 [Google Analytics (英文)](https://github.com/googleanalytics/google-analytics-plugin-for-unity)。 當然，了解 Unity 專案本質的服務 (如 Unity Analytics) 所提供的分析比一般架構更有意義。|

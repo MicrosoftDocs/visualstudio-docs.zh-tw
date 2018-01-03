@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6b18f5169558067b67795e983e93ca07141ae8be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f8e1bde92cec70264beea8e9a62205ec0c2e8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>WPF 資料繫結與 LINQ to XML 概觀
 這個主題說明 <xref:System.Xml.Linq> 命名空間中的動態資料繫結功能。 這些功能在 Windows Presentation Foundation (WPF) 中可以當做使用者介面 (UI) 項目的資料來源使用。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
  若要實作 WPF 動態繫結，動態屬性將搭配 <xref:System.Windows.Data> 命名空間 (特別是 <xref:System.Windows.Data.Binding> 類別) 所提供的功能使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [LINQ to XML 動態屬性](../designers/linq-to-xml-dynamic-properties.md)   
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   

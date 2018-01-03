@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7900b976e2533f1bd9a53d1e9e437339c6041a73
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: df3e4def97d8563e3901662ede92e79acd5c5d4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-emulator-for-android"></a>Visual Studio Emulator for Android
 Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式。 它提供虛擬化環境，讓您不需要實體裝置，便可以在其中偵錯及測試 Android 應用程式。 它也為您的應用程式原型提供一個隔離環境。  
@@ -98,6 +99,6 @@ Visual Studio Emulator for Android 是模擬 Android 裝置的桌面應用程式
   
 -   使用 Visual Studio 或模擬器管理員中的 [傳送笑臉] 工具回報問題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 的 Android 模擬器系統需求](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)   
- [進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)
+ [Troubleshooting the Visual Studio Emulator for Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d97e2160ddf5185e966dff44169ced8663d1c637
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd957dbf9a0d1f11a1b08bc9e01ce1ed1e988da1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：建立基本材質
 本文件將示範如何使用影像編輯器來建立基本材質。  
@@ -90,5 +91,5 @@ ms.lasthandoff: 10/31/2017
   
  下一步可以產生這個材質的 MIP 層級。 如需詳細資訊，請參閱[如何：建立和修改 MIP 層級](../designers/how-to-create-and-modify-mip-levels.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [影像編輯器](../designers/image-editor.md)

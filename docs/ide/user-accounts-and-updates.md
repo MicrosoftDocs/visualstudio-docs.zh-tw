@@ -1,8 +1,8 @@
 ---
-redirect_url: /visualstudio/ide/connected-environment
-ms.openlocfilehash: 867de03da87c15ed0ba7b50aaba3a8779f864480
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/install/update-visual-studio
+ms.openlocfilehash: 19d17b9efd8220e5a351b8e54067c50d3a61bad5
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---

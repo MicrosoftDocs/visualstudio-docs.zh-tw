@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d38ef64a370b11c2695ea1e03d2e3ceead7cb63c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 14deeec64d4645135f19587997844bfdd0b18cd5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diff"></a>/Diff
 比較兩個檔案。 這些差異會顯示在特殊 Visual Studio 視窗中。  
@@ -29,13 +30,13 @@ devenv /Diff SourceFile, TargetFile, [SourceDisplayName],[TargetDisplayName]
   
 ## <a name="arguments"></a>引數  
  `SourceFile`  
- 必要項。 要比較之第一個檔案的完整路徑和名稱。  
+ 必要。 要比較之第一個檔案的完整路徑和名稱。  
   
  `TargetFile`  
- 必要項。 要比較之第二個檔案的完整路徑和名稱  
+ 必要。 要比較之第二個檔案的完整路徑和名稱  
   
  `SourceDisplayName`  
- 選擇項。 第一個檔案的顯示名稱。  
+ 選擇性。 第一個檔案的顯示名稱。  
   
  `TargetDisplayName`  
- 選擇項。 第二個檔案的顯示名稱。
+ 選擇性。 第二個檔案的顯示名稱。

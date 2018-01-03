@@ -16,11 +16,12 @@ manager: ghogen
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 28f06905820d890f2f13c3c7e77fd57fb75fe4b6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: azure
+ms.openlocfilehash: f3fd548234dbd7f02be4abfab77a22d3efd9b34a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>逐步解說：建立連接至 Azure 行動服務的 WPF 桌面應用程式
 您可以使用 Windows Presentation Foundation (WPF) 快速建立現代桌面應用程式，以使用 Azure 行動服務來儲存與提供資料。  
@@ -562,6 +563,6 @@ ms.lasthandoff: 12/12/2017
 
  您可以連接到現有的 SQL 資料庫或其他使用 Azure 行動服務的資料來源。 請參閱 [行動服務文件](http://azure.microsoft.com/en-us/services/app-service/mobile/)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：我的第一個 WPF 桌面應用程式](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [使用 Windows Presentation Foundation 建立新式桌面應用程式](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

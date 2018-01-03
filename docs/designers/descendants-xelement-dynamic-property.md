@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a70d56be83a824c8bfd950ea148fe68e6ffa43b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 12d50f38d8f8d907ddb663a03db459851f1e14e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="descendants-xelement-dynamic-property"></a>Descendants (XElement 動態屬性)
 取得用於擷取目前項目 (符合指定的擴充名稱) 之所有子代項目的索引子 (Indexer)。  
@@ -37,6 +38,6 @@ elem.Descendants[{namespaceName}localName]
   
  這個屬性會使用延後執行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)   
  [項目](../designers/elements-xelement-dynamic-property.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 03ef7e9e7402ba03e132eb4c80c37a21d556c09c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd71c63ab20dc943d1e0c7ac94d374c9d3bca359
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="designing-xaml-in-visual-studio"></a>在 Visual Studio 中設計 XAML
 

@@ -13,11 +13,12 @@ caps.latest.revision: "15"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: b2d86a6025e2ec9c2ba92870939248cf2dffb5b5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: d677c74d44f1ddc0b250d6763cef4738cd642832
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Install Visual C++ for Cross-Platform Mobile Development
 [Visual C++ for Cross-Platform Mobile Development](http://go.microsoft.com/fwlink/p/?LinkId=536383) 是包含在 Visual Studio 2015 中的可安裝元件。 它包含了跨平台的 Visual Studio 範本，並會安裝跨平台工具和 SDK 以便迅速開始使用，讓您不需要自行尋找、下載與設定。 您可以使用 Visual Studio 中的這些工具來輕鬆建立、編輯、偵錯和測試跨平台專案。 本主題描述如何安裝必要的工具和協力廠商軟體，以使用 Visual Studio 開發跨平台應用程式。 如需元件概觀，請參閱 [Visual C++ 跨平台行動開發](http://go.microsoft.com/fwlink/p/?LinkId=536387)  
@@ -132,6 +133,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  選擇 [確定]  ，儲存自訂工具資料夾的位置。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安裝和設定工具以使用 iOS 進行建置](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   
  [Visual C++ 跨平台行動開發](https://www.visualstudio.com/explore/cplusplus-mdd-vs.aspx)

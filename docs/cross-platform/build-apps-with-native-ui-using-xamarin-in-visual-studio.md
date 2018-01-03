@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 92bd6ea136c30c02e32045692d311afe93b86296
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: c135468e380bd65383f61aa69b906352a3febe47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>使用 Visual Studio 的 Xamarin 建置具有原生 UI 的應用程式
 在您完成[設定與安裝](../cross-platform/setup-and-install.md)和[驗證您的 Xamarin 環境](../cross-platform/verify-your-xamarin-environment.md)中的步驟之後，本逐步解說將示範如何建立具有原生 UI 層的基本 Xamarin 應用程式 (如下所示)。 使用原生 UI，共用程式碼會位於可攜式類別庫 (PCL) 中，而個別的平台專案會包含 UI 定義。  
@@ -643,7 +644,7 @@ ms.lasthandoff: 10/31/2017
   
  PCL 中的共用程式碼是非平台相關的，因為 PCL 只編譯一次，並隨附於每個平台專屬的應用程式封裝中。 如果您想要撰寫共用程式碼，以使用條件式編譯來隔離平台專屬的程式碼，您可以使用「共用」專案。 如需詳細資訊，請參閱[程式碼共用選項 (英文)](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Xamarin 開發人員網站 (英文)](http://developer.xamarin.com/)   
  [Windows 開發人員中心](https://dev.windows.com/en-us)   
  [Swift 與 C# 的快速參考海報](http://aka.ms/scposter)

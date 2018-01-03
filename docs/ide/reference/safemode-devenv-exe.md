@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 72630bd7c16c3830fecddc34a71b7ea1e4cf382c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 17a8d92075f558e1e00bbba04f2c3ae955056b61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 以安全模式啟動 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]，並且只載入預設環境和服務。  
@@ -43,5 +44,5 @@ devenv /SafeMode
 Devenv.exe /SafeMode  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

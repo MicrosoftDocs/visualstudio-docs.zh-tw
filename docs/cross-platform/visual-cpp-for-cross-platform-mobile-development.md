@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: corob-msft
 ms.author: corob
 manager: ghogen
-ms.openlocfilehash: 51b579d047987648caab31136b6378e0a6f0475d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 699fc53d0679e303e9c661c54634f162d95e2a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-for-cross-platform-mobile-development"></a>適用於跨平台行動裝置開發的 Visual C++
 您可以建置 iOS、Android 和 Windows 裝置的原生 C++ 應用程式，以及使用跨平台行動裝置開發的 Visual C++，在為 iOS、Android 和 Windows 建置的程式庫中共用通用程式碼。 這是為共用程式庫和原生應用程式的跨平台開發工具安裝了所需 SDK 和工具的 Visual Studio 2015 提供的選項。 安裝好後，您就可以使用 Visual C++ 建立程式碼，除了 Windows、Windows Phone 和 Xbox 之外，還可在 iOS 和 Android 裝置及平台上執行。  
@@ -103,6 +104,6 @@ ms.lasthandoff: 10/31/2017
   
 3.  [建立 Android Native Activity 應用程式](../cross-platform/create-an-android-native-activity-app.md)  
   
-4.  [在 Android 和 iOS 上建置 OpenGL ES 應用程式](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
+4.  [Build an OpenGL ES Application on Android and iOS](../cross-platform/build-an-opengl-es-application-on-android-and-ios.md)  
   
 5.  [Cross-Platform Mobile Development Examples](../cross-platform/cross-platform-mobile-development-examples.md)

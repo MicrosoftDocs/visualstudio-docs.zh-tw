@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6c93a889ca1bfa911a9f0934302450f6c1ec5413
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d01c655924bfbeae525c91ffb231f4d2b3d2c38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-nodes"></a>參數節點
 在著色器設計工具中，參數節點代表每次繪製時都受應用程式控制的著色器輸入，例如材質屬性、定向光線、觀景窗位置及時間。 因為您可以透過每次的繪製呼叫，變更這些參數，所以能夠使用相同的著色器提供物件不同的外觀。  

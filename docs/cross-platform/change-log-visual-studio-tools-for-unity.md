@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f33a7f43fdd52103fcd041d1f6502b88677eef1e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: unity
+ms.openlocfilehash: 45a06d17b2a3033af64c9d9a007af4a74dedabba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-log-visual-studio-tools-for-unity"></a>變更記錄 (Visual Studio Tools for Unity)
 Visual Studio Tools for Unity 變更記錄。  
@@ -44,7 +45,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已修正 Unity API 說明功能表未顯示。
     
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已修正使用 IL2CPP/.NET 4.6 後端處理 UWP 遊戲時產生播放程式專案的問題。
     
@@ -90,7 +91,7 @@ Visual Studio Tools for Unity 變更記錄。
 
 ### <a name="bug-fixes"></a>Bug 修正  
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已修正 Unity 5.5 和舊版本上 Visual Studio 解決方案的產生。
 
@@ -149,7 +150,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增對全新 Unity 執行階段的支援 (以及 .NET 4.6 / C# 6 相容性)。
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已新增對 .NET 4.6 設定檔的支援。
 
@@ -165,7 +166,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   使用自動完成來插入方法之後的固定插入號位置。
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已移除組件版本的後續處理步驟。
 
@@ -198,7 +199,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增 (在找不到對應的來源位置時) 發生無法繫結之中斷點的警告。
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已修正使用特殊/當地語系化的字元產生 csproj。
 
@@ -243,7 +244,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已新增可在預期或找不到某個類型時提供的更好錯誤訊息。
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已從專案名稱中移除 CSharp 尾碼。
 
@@ -271,7 +272,7 @@ Visual Studio Tools for Unity 變更記錄。
 
     -   已修正使用新的 C# 編譯器偵錯迭代器框架的支援。
 
--   **專案產生：**  
+-   **Project Generation:**  
 
     -   已修正在以 Unity Web Player 為目標時無法編譯的 Bug。
 

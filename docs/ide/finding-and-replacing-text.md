@@ -40,11 +40,12 @@ caps.latest.revision: "31"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a2b925e32711e1624a4dfbe74fb5614ee6e0b062
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72081f6c140c4634918e67098493cb37bb324848
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 在 Visual Studio 程式碼編輯器以及特定以文字為基礎的輸出視窗 (例如 [尋找結果] 視窗) 中，您可以使用 [尋找和取代] 控制項或 [檔案中尋找/取代] 來尋找和取代文字。 您也可以在某些設計工具視窗 (例如 XAML 設計工具和 Windows Forms 設計工具) 以及工具視窗中進行搜尋和取代。  
@@ -79,5 +80,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="creating-custom-component-sets"></a>建立自訂元件集  
  您可以選擇 [查詢] 方塊旁的 [編輯自訂元件集] 按鈕，將元件集定義為搜尋範圍。 您可以指定已安裝的 .NET 或 COM 元件、方案中所含的 Visual Studio 專案，或者任何組件或類型庫 (.dll、.tlb、.olb、.exe 或 .ocx)。 若要搜尋參考，請選取 [查詢參考] 方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)

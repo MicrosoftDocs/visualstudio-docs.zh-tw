@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4bba90206a428ae9bb782e7eac408b872721351f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b9a7bfb1d2eb3f54da0953a78d1e9630ed00aab3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>如何：建立基本 3D 模型
 本文件將示範如何使用模型編輯器來建立基本 3D 模型。  
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
   
  下一步可以將著色器套用至這個 3D 模型。 如需詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)   
  [模型編輯器](../designers/model-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)

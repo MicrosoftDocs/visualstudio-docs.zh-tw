@@ -10,11 +10,12 @@ ms.date: 12/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
-ms.openlocfilehash: 471e0cf7640f07c946e2808621233c6ae20b35c7
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: d2a73f861238b8a4709084e9f4be4ae3ef3b73cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="version-control-in-visual-studio"></a>Visual Studio 中的版本控制
 

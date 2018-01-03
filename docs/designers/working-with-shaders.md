@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c92f7975e3fe45e4f87e67f2c3c54a26a7d8b87a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf96f1cdbdf8e3f995d8a1020a655b73d369cf7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-shaders"></a>使用著色器
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中以圖形為基礎的「著色器設計工具」來設計自訂著色器效果。 您可以在 DirectX 型遊戲或應用程式中使用這些著色器。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[著色器設計工具](../designers/shader-designer.md)|說明如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 著色器設計工具，搭配著色器一起運作。|  
 |[著色器設計工具節點](../designers/shader-designer-nodes.md)|探討您可用來達成圖形效果的「著色器設計工具」節點類型。|  

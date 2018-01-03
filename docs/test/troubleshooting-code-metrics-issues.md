@@ -1,34 +1,8 @@
 ---
-title: "針對程式碼度量問題進行疑難排解 | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: f2fdb995-4888-4246-85dc-7bacadd45968
-caps.latest.revision: "4"
-author: erickson-doug
-ms.author: douge
-manager: douge
-ms.openlocfilehash: 6dde34ce4808f21a90fa9d2e37daf7ed88d4e7fa
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/code-quality/measuring-complexity-and-maintainability-of-managed-code
+ms.openlocfilehash: db33b32faafb0b71883df72397da2b279e853982
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="troubleshooting-code-metrics-issues"></a>程式碼度量問題疑難排解
-收集程式碼度量時，可能會遇到下列一些問題：  
-  
--   [Visual Studio 2010 程式碼複雜度計算變更](#Changes_in_Visual_Studio_2010_code_complexity_calculations)  
-  
-##  <a name="Changes_in_Visual_Studio_2010_code_complexity_calculations"></a> Visual Studio 2010 程式碼複雜度計算變更  
- 針對相同的函式，在下列情況下，[!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中所計算的程式碼複雜度度量可以與舊版 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 所計算的度量不同：  
-  
--   此函式包含一或多個 catch 區塊。 在舊版 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 中，計算時不會包含 catch 區塊。 在 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中，每個 catch 區塊的複雜度都會新增至函式的複雜度。  
-  
--   函式包含參數 (VB 中的 Select Case) 陳述式。 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 與舊版本之間的編譯器差異可能會針對一些包含 fallthrough 案例的 switch 陳述式產生不同的 MSIL 程式碼。  
-  
-## <a name="see-also"></a>另請參閱  
- [測量 Managed 程式碼的複雜度和維護性](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

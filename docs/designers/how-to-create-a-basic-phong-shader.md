@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 29def0d3aef8a097f5b956bd43df7d8b53abebb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52040b717204f151e4a370f5f2a25b29781878b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>如何：建立基本 Phong 著色器
 本文件將示範如何使用著色器設計工具和有向圖著色器語言 (DGSL) 來建立光源的著色器，實作傳統的 Phong 光源模型。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
  如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：建立基本 Lambert 著色器](../designers/how-to-create-a-basic-lambert-shader.md)   

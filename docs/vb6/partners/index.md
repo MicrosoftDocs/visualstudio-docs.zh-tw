@@ -9,11 +9,12 @@ dev_langs: visual-basic
 author: rpetrusha
 ms.author: ronpet
 manager: wpickett
-ms.openlocfilehash: cc853dfef7c991c00488be7401363a13c5a7d092
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 10db1f39ac362d64b0bf5b794695f6f2089f8aca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-basic-60-offers-from-partners"></a>來自合作夥伴的 Visual Basic 6.0 優惠
 

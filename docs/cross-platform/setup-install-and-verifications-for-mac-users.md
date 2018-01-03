@@ -11,11 +11,12 @@ caps.latest.revision: "10"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: b93ea35fd58d5ee678176e3da98e33b65f82740a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xamarin
+ms.openlocfilehash: b4656e98095b9ab7ff5dd5e95dd729c972190720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>針對 Mac 使用者的設定、安裝和驗證
 本主題適用於主要在 Mac 上工作的開發人員，這些開發人員會選擇性地在 Mac 上的 Windows 虛擬機器中使用 Visual Studio。 如果您是主要在 Windows 電腦上工作的開發人員，並且需要設定以 iOS 為目標的次要 Mac，請參閱主要的[設定和安裝](../cross-platform/setup-and-install.md)主題。

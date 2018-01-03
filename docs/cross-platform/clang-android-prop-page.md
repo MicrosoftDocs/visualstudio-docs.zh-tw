@@ -44,15 +44,16 @@ f1_keywords:
 - VC.Project.VCClangCompilerTool.ForcedIncludeFiles
 - VC.Project.VCClangCompilerTool.MultiProcessorCompilation
 - vc.project.AdditionalOptionsPage
-ms.openlocfilehash: 876650f14ea5017d80a554ed038ca1bcd5d19cfa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 693ab7a1068ebe841e7e59a79ed015c4f287798a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clang-project-properties-android-c"></a>Clang 專案屬性 (Android C++)
 
-屬性 | 說明 | 選擇
+屬性 | 描述 | 選擇
 --- | ---| ---
 其他 Include 目錄 | 指定一或多個要新增至 Include 路徑中的目錄；如有多個目錄，請使用分號加以分隔。 (-I[路徑])。
 偵錯資訊格式 | 指定編譯器所產生的偵錯資訊類型。 | **無** - 因為不產生任何偵錯資訊，所以編譯速度會較快。<br>**完整偵錯資訊 (DWARF2)** - 產生 DWARF2 偵錯資訊。<br>**行號資訊** - 僅產生行號資訊。<br>

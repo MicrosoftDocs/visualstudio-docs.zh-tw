@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92d133d688ad009dae1b4e518bdd8c749ebc329f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7c15d6bd2bd50b8ba8c5075ab2d90287e3a4750
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-textures-and-images"></a>使用紋理和影像
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的影像編輯器來建立和修改紋理和影像。 影像編輯器支援豐富的紋理和影像格式，如同在 DirectX 應用程式開發中所使用的一樣。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[影像編輯器](../designers/image-editor.md)|描述如何使用影像編輯器來處理紋理和影像。|  
 |[影像編輯器範例](../designers/image-editor-examples.md)|提供示範如何使用影像編輯器來執行一般映像處理工作的主題連結。|

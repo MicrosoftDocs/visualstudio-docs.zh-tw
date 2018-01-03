@@ -12,11 +12,12 @@ caps.latest.revision: "48"
 author: stevehoag
 ms.author: shoag
 manager: ghogen
-ms.openlocfilehash: acf69e6cddabad98a68c870ccfaeafa9b420cac7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: a696a0b827cc8fe367390efbba01c2a18ff178bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>開發適用於通用 Windows 平台 (UWP) 的應用程式
 通用 Windows 平台和單一 Windows 核心可讓您在任何 Windows 10 裝置上執行相同的應用程式 (包括手機和桌上型電腦)。 您可以使用 Visual Studio 和通用 Windows 應用程式開發工具，來建立這些通用 Windows 應用程式。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
   
 建立好您的通用 Windows 應用程式之後，您必須封裝應用程式以在 Windows 10 裝置上進行安裝，或提交至 Windows 市集。 請參閱[封裝應用程式](/windows/uwp/packaging/index)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Visual Studio 中的跨平台行動裝置開發](../cross-platform/cross-platform-mobile-development-in-visual-studio.md)  

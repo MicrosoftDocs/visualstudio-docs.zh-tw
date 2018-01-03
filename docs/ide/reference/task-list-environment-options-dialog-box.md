@@ -27,11 +27,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e99dff1fbe5638c81572f9b370f94c0337f9f7e3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6f8adfd3ce7d585cffe3c7506c4fdd56cad4a11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="task-list-environment-options-dialog-box"></a>選項對話方塊、環境、工作清單
 此 [選項] 頁面可讓您新增、刪除和變更產生 [工作清單] 提醒的註解語彙基元。 若要顯示這些設定，請從 [工具] 功能表中選取 [選項]，並展開 [環境] 資料夾，然後選擇 [工作清單]。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  您無法重新命名或刪除預設的註解語彙基元，但可以變更其優先權層級。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工作清單](../../ide/using-the-task-list.md)   
  [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)   
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

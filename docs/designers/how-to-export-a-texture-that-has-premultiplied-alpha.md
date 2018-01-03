@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7b8b5c213a7184eaab0034ede6bc71acda496ba8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f0c8267d1153cf5ea112573e8af5c82ad7e8e805
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>如何：匯出包含預乘 Alpha 的材質
 影像內容管線可以從來源影像產生預乘 Alpha 的材質。 這些使用起來可以更簡單，且比起不包含預乘 Alpha 的材質更穩固。  

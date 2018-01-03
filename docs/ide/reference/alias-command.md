@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cac24838cd848770c45794637620b70cea3e1bd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c8abd8c38bcff23b43365253af25547f854cb581
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="alias-command"></a>別名命令
 針對完整命令、完整命令和引數或其他別名，建立新的別名。  
@@ -39,10 +40,10 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
   
 ## <a name="arguments"></a>引數  
  `aliasname`  
- 選擇項。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。  
+ 選擇性。 新別名的名稱。 如果未提供 `aliasname` 的值，則會出現目前別名和其定義清單。  
   
  `aliasstring`  
- 選擇項。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。  
+ 選擇性。 完整命令名稱或現有別名，以及任何您想要建立為別名的參數。 如果未提供 `aliasstring` 的值，則會顯示所指定別名的別名和別名字串。  
   
 ## <a name="switches"></a>參數  
  /delete 或 /del 或 /d  
@@ -77,7 +78,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 >Tools.Alias  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

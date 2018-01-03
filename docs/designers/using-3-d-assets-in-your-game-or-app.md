@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5613790632c4bd462c1efbb3f218a0299b276179
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5f1e8888461026f734ac08c5ec3f23b10f310174
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>在遊戲或應用程式中使用 3D 資產
 本文描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 處理 3-D 資產，並將它們包括在您的組建中。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="image-content-pipeline-configuration"></a>影像內容管線組態  
  當您使用影像內容管線工具建置紋理資產時，可以使用各種方式壓縮紋理，以及指出是否應該在建置時產生 MIP 層級，還可以變更輸出檔案的名稱。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**壓縮**|指定用於輸出檔案的壓縮類型。<br /><br /> 可用的選項如下：<br /><br /> -   **不壓縮**<br />-   **BC1_UNORM 壓縮**<br />-   **BC1_UNORM_SRGB 壓縮**<br />-   **BC2_UNORM 壓縮**<br />-   **BC2_UNORM_SRGB 壓縮**<br />-   **BC3_UNORM 壓縮**<br />-   **BC3_UNORM_SRGB 壓縮**<br />-   **BC4_UNORM 壓縮**<br />-   **BC4_SNORM 壓縮**<br />-   **BC5_UNORM 壓縮**<br />-   **BC5_SNORM 壓縮**<br />-   **BC6H_UF16 壓縮**<br />-   **BC6H_SF16 壓縮**<br />-   **BC7_UNORM 壓縮**<br />-   **BC7_UNORM_SRGB 壓縮**<br /><br /> 如需不同 DirectX 版本所支援壓縮格式的資訊，請參閱 [DXGI 程式設計指南](http://go.microsoft.com/fwlink/p/?LinkId=246265)。|  
 |轉換成預乘的 Alpha 格式|[是] 在輸出檔案中將影像轉換成預乘的 Alpha 格式，否則為 [否]。 只會變更輸出檔案，來源影像並不會變更。|  
@@ -97,14 +98,14 @@ ms.lasthandoff: 10/31/2017
 ### <a name="mesh-content-pipeline-configuration"></a>網狀內容管線組態  
  當您使用網狀內容管線工具建置網狀資產時，可以變更輸出檔案的名稱。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：**變更輸出檔案的副檔名並不會影響其檔案格式。|  
   
 ### <a name="shader-content-pipeline-configuration"></a>著色器內容管線組態  
  當您使用著色器內容管線工具建置著色器資產時，可以變更輸出檔案的名稱。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**內容輸出**|指定輸出檔案的名稱。 **重要事項：**變更輸出檔案的副檔名並不會影響其檔案格式。|  
   
@@ -200,7 +201,7 @@ cbuffer MiscVars : register(b3)
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|描述如何使用影像內容管線，匯出含有預先計算之 MIP 對應的紋理。|  
 |[如何：匯出包含預乘 Alpha 的材質](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|描述如何使用影像內容管線，匯出含有預乘的 Alpha 值的紋理。|  

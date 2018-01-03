@@ -1,5 +1,5 @@
 ---
-title: "使用 Visual Studio 提高產能的秘訣 | Microsoft Docs"
+title: "使用 Visual Studio 提高生產力的秘訣 | Microsoft Docs"
 ms.custom: 
 ms.date: 11/04/2016
 ms.reviewer: 
@@ -7,45 +7,28 @@ ms.suite:
 ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
-caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 803a1a94fe3eaa1bc63d59e9de2a42711f502262
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: fe42e4d2a61b4166d8a69b7c90cf212c36610bd2
+ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/07/2017
 ---
-# <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高產能的秘訣
+# <a name="productivity-tips-for-visual-studio"></a>使用 Visual Studio 提高生產力的祕訣
 
-遵循下列提示，您可以在 Visual Studio 中更快速、有效率地撰寫、巡覽及偵錯程式碼。 如需常用鍵盤快速鍵的詳細資訊，請參閱[秘訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)。 如需更完整的清單，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+遵循下列提示，您可以在 Visual Studio 中更快速、有效率地撰寫、巡覽及偵錯程式碼。
 
-## <a name="accessing-visual-studio-tools"></a>存取 Visual Studio Tools
+如需常用鍵盤快速鍵的詳細資訊，請參閱[祕訣和訣竅](../ide/tips-and-tricks-for-visual-studio.md)。 如需更完整的清單，請參閱[識別及自訂鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)和[預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
-如果釘選至 [開始] 畫面或工作列，您可以更輕鬆地存取開發人員命令提示字元或其他工具。
+## <a name="accessing-visual-studio-tools"></a>存取 Visual Studio 工具
 
-1. 從開始畫面，輸入 `Visual Studio Tools`，然後選擇 **Enter** 鍵。
+如果您將開發人員命令提示字元或其他 Visual Studio 工具釘選至 [開始] 功能表或工作列，就可以更輕鬆地存取它。
 
-1. 在檔案總管中，開啟您想要之項目的捷徑功能表：
+1. 在 [Windows 檔案總管] 中，瀏覽至 `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`。
 
-    - 組建通知
-
-    - Debuggable Package 管理員
-
-    - VS2013 開發人員命令提示字元
-
-    - Microsoft Feedback Client 2013
-
-    - VS2013 ARM Cross Tools 命令提示字元
-
-    - VS2013 x64 Cross Tools 命令提示字元
-
-    - VS2013 x64 Native Tools 命令提示字元
-
-    - VS2013 x86 Native Tools 命令提示字元
-
-1. 選擇 [釘選到 [開始] 畫面] 或 [釘選到工作列]。
+1. 以滑鼠右鍵按一下 [開發人員命令提示字元] 或開啟其快顯功能表，然後選擇 [釘選到 [開始]] 或 [釘選到工作列]。
 
 ## <a name="writing-code"></a>撰寫程式碼
 
@@ -91,11 +74,11 @@ ms.lasthandoff: 11/22/2017
 
 - **只顯示您要處理的錯誤**。 如果您選擇 [錯誤清單] 工具列上的 [篩選] 按鈕，則可以減少 [錯誤清單] 視窗中出現的錯誤數目。 您可以選擇顯示只在目前編輯器開啟之檔案中的錯誤、只在目前檔案中的錯誤或只在目前專案中的錯誤。 您也可以在 [錯誤清單] 視窗中搜尋以找出特定錯誤。
 
-- **尋找對話方塊、功能表命令和選項**。 在[選項對話方塊、環境、快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md)方塊中，輸入您要嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
+- **尋找對話方塊、功能表命令和選項**。 在 [快速啟動](../ide/reference/quick-launch-environment-options-dialog-box.md) 方塊中，輸入您嘗試尋找之項目的關鍵字或片語。 例如，如果您輸入 `new project`，則會出現下列選項︰
 
-     !['new project' 的快速啟動結果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
+    !['new project' 的快速啟動結果](../ide/media/productivity_quicklaunch.png "Productivity_QuickLaunch")
 
-     [快速啟動] 會顯示 [新增專案] 對話方塊、[新增項目] 對話方塊以及 [選項] 對話方塊中的 [專案和方案] 頁面的連結。 快速啟動結果也可以包含專案檔和工具視窗。
+    [快速啟動] 會顯示 [新增專案] 對話方塊、[新增項目] 對話方塊以及 [選項] 對話方塊中的 [專案和方案] 頁面的連結。 快速啟動結果也可以包含專案檔和工具視窗。
 
 ## <a name="debugging-code"></a>偵錯程式碼
 
@@ -103,11 +86,11 @@ ms.lasthandoff: 11/22/2017
 
 - **在不同瀏覽器中測試相同頁面、應用程式或網站**。 當您偵錯程式碼時，可以輕鬆地切換包括 [Page Inspector (Visual Studio)](http://msdn.microsoft.com/Library/65880969-1ad2-47be-85b9-bb12c81bf209) 在內的已安裝網頁瀏覽器，而不需要開啟 [瀏覽方式] 對話方塊。 您可以使用 [偵錯目標] 清單 (位於 [開始偵錯] 按鈕旁的 [標準] 工具列)，快速確認在偵錯或檢視頁面時要使用哪一個瀏覽器。
 
-     ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
+    ![選取網頁瀏覽器偵錯選項](../ide/media/webbrowserdropdowntoolbar.png "WebBrowserDropDownToolbar")
 
 - **設定暫時中斷點**。 您可以在目前的程式碼行建立暫時中斷點並同時啟動偵錯工具。 當您執行至該行程式碼時，偵錯工具將進入中斷模式。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
-     若要使用這個功能，請選擇 **Ctrl** + **F10** 鍵，或為您要設定中斷點的該行程式碼開啟捷徑功能表，然後選擇 [執行至游標處]。
+    若要使用這個功能，請選擇 **Ctrl** + **F10** 鍵，或為您要設定中斷點的該行程式碼開啟捷徑功能表，然後選擇 [執行至游標處]。
 
 - **在偵錯期間移動執行點**。 您可以移動目前的執行點至程式碼的其他部分，並從該點重新啟動偵錯。 對於只要偵錯某一區段的程式碼，而不重新建立抵達該部分所需的所有步驟，這個技術非常有用。 如需詳細資訊，請參閱[使用偵錯工具巡覽程式碼](../debugger/navigating-through-code-with-the-debugger.md)。
 
@@ -135,9 +118,9 @@ ms.lasthandoff: 11/22/2017
 
 - **自訂出現在 Visual Studio 中的字型**。 您可以為 IDE 中使用的文字變更字體、大小和色彩。 例如，您可以為編輯器裏的某一種程式碼項目自訂色彩，以及變更工具視窗或整個 IDE 的字體。 如需詳細資訊，請參閱[如何：變更字型和色彩](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)和[如何：在編輯器中變更字型和顏色](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [常用命令的預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)  
 [如何：自訂功能表和工具列](../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)  
 [逐步解說：建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  
-[協助工具秘訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)
+[協助工具祕訣和訣竅](../ide/reference/accessibility-tips-and-tricks.md)

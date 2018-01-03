@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93ec728b6e7ab3a197382bbd66cb34906d248747
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dde6bed2fda4dbf68a37636df83044e945a1f5d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-command"></a>尋找命令
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。  
@@ -34,7 +35,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
   
 ## <a name="arguments"></a>引數  
  `findwhat`  
- 必要項。 要比對的文字。  
+ 必要。 要比對的文字。  
   
 ## <a name="switches"></a>參數  
  /case 或 /c  
@@ -80,7 +81,7 @@ Edit.Find findwhat [/case] [/doc | /proc | /open | /sel]
 >Edit.Find somestring /sel /case  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

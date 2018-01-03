@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f79bc2ca79cdec10fa480d87f48abc240420c34e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db7afbc68ab4e02803959dd0ff0b4de92233fece
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>使用雙向語言建立應用程式
 您可以使用 Visual Studio 來建立應用程式，以正確顯示由右至左撰寫的語言文字，包括阿拉伯文和希伯來文。 針對某些功能，您可以直接設定屬性， 若為其他情況，則必須在程式碼中實作功能。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
   
 -   程式碼註解。 您可以使用阿拉伯文或希伯來文建立註解。 您也可以在註解產生器工具中使用這些語言。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對 Windows Forms 應用程式的雙向支援](http://msdn.microsoft.com/Library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   
  [ASP.NET Web 應用程式的雙向支援](http://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03)   
  [全球化應用程式](../ide/globalizing-applications.md)   

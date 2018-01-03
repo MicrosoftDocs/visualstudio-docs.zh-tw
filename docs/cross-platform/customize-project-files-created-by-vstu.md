@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2fb9315caccd7a6e761b8c82df6f6c3bc874c004
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: ec48b219b0d70455154f43584f7b00e85dd42992
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自訂 VSTU 所建立的專案檔
 Visual Studio Tools for Unity 在專案檔產生期間提供 Unity 樣式回呼。 使用 `VisualStudioIntegration.ProjectFileGeneration` 事件註冊可在每次重新產生時修改專案檔。  
@@ -68,5 +69,5 @@ public class ProjectFileHook
 }  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [範例：記錄回呼](../cross-platform/share-the-unity-log-callback-with-vstu.md)

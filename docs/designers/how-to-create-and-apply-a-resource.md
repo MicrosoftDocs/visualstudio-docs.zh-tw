@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 815f93d50258dac2018a75f7b95d05378bdc77e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 77754f0243c8223dd55ba253fdde1e0b6a8aee57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何建立和套用資源
 XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體中 (稱為資源)。 樣式可讓您設定項目屬性，並重複使用這些設定，以確保多個項目有一致的外觀。 [ControlTemplate](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.controltemplate.aspx) 可以定義控制項的外觀，也可以當作資源來套用。 如需詳細資訊，請參閱[快速入門：設定控制項的樣式](http://go.microsoft.com/fwlink/?LinkID=248239)和[快速入門：控制項範本](http://go.microsoft.com/fwlink/?LinkID=247982)。  
@@ -75,5 +76,5 @@ XAML 設計工具中的項目樣式和樣板會儲存在可重複使用的實體
   
 3.  修改資源的選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

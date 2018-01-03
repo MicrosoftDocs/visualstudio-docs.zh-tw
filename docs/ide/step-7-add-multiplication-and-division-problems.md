@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a23149551aef02e2ada4b986eb3e8170335ff38b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c9c326e85ecb2c52dc83230b520d75eb944355da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>步驟 7：加入乘法和除法問題
 在本教學課程的第七個部分中，您將加入乘法和除法問題，不過要先思考如何進行這項變更。 思考初始步驟，其中牽涉到儲存值。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
      ![包含四個問題的數學測驗](../ide/media/express_finishedquiz.png "Express_FinishedQuiz")  
 包含四個問題的數學測驗  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 8：自訂測驗](../ide/step-8-customize-the-quiz.md)。  
   

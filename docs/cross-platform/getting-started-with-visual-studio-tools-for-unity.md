@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 1727330a559b5a9aed41ea9063f3394e01bc45ab
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: 47b355d9b07ba2dab78111c36344eec94c935091
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 使用者入門
 在本節中，您將學習如何安裝 Visual Studio Tools for Unity 和設定您的 Unity 專案以使用 Visual Studio。  
@@ -115,5 +116,5 @@ ms.lasthandoff: 11/29/2017
 
  如需了解如何在 Visual Studio 中使用及偵錯 Unity 專案，請參閱[使用 Visual Studio Tools for Unity](../cross-platform/using-visual-studio-tools-for-unity.md)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Unity 首頁 (英文)](http://unity3d.com)

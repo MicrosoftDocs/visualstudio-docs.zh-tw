@@ -29,11 +29,12 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9531a49ced6e8f72154cbdd59fce271ff673f59
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2d1d3c327101e535c037dba30ed19af3dcf7faaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>在 Visual Studio 中不使用專案或方案來開發程式碼  
 在 Visual Studio 2017 中，您可以在 Visual Studio 中從幾乎任何類型的目錄型專案開啟程式碼，而不需使用方案或專案檔。 例如，這意謂著您可以在 Git 上尋找程式碼專案、複製它，然後直接在 Visual Studio 中開啟它並開始開發，而不需建立方案或專案。  
@@ -237,5 +238,5 @@ tasks.vs.json 檔案會隱藏，因為大多數使用者通常都不會想要將
 
 其他 .json 檔案可能會在 .vs 資料夾中，但您應該移動的檔案僅限 tasks.vs.json 檔案和 launch.vs.json 檔案 (如果存在的話)。 launch.vs.json 檔案會設定 Visual Studio 偵錯工具，而 tasks.vs.json 檔案則會設定 Visual Studio 中的組建。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

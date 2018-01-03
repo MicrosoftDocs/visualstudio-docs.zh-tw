@@ -5,11 +5,12 @@ ms.author: apexprodleads
 ms.topic: landing-page
 title: "使用 C++ 進行行動裝置開發文件 | Microsoft Docs"
 description: "使用 Visual Studio 建立適用於 iOS、Android 和 Windows 裝置的原生 C++ 應用程式。"
-ms.openlocfilehash: 2d7dc3860091e11ab7b8983d9f1b739ffd383ba3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: apexprodleads
+ms.openlocfilehash: ec8f21742192a098543986d117241d2bb29bb36d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mobile-development-with-c-documentation"></a>使用 C++ 進行行動裝置開發文件
 

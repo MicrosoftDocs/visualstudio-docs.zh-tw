@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4620278c98ea373b8e0cde387f1b5526bf21349b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52e909e911a552b69930ef6a60257fca29a0794d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：建立基本材質著色器
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立單一材質著色器。 這個著色器會將完稿色彩直接設定為從材質中取樣 RGB 和 Alpha 值。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
  某些圖形可對一些著色器提供更佳的預覽。 如需如何在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [影像編輯器](../designers/image-editor.md)   
  [著色器設計工具](../designers/shader-designer.md)   

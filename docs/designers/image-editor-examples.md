@@ -12,18 +12,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b69e225bf4d7273e4e9ff1a33a1b5c4e8e332ebf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c257b39f6bb320ce39ca34278d6eff29a3f4615
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="image-editor-examples"></a>影像編輯器範例
 文件中的本節包含影像編輯器使用方法的範例。  
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)|示範如何建立基本紋理。|  
 |[如何：匯出材質以搭配 Direct2D 或 Javascipt 應用程式使用](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|示範如何建立 DDS 格式紋理，其中含有可用於 Direct2D 或 WWA 應用程式中的預乘 Alpha。|  

@@ -6,11 +6,12 @@ author: gewarren
 ms.author: gewarren
 ms.topic: landing-page
 ms.technology: vs-ide-general
-ms.openlocfilehash: 0726372b4ba1a5feb87da223dce5e5d72f5280db
-ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
+ms.workload: multiple
+ms.openlocfilehash: 43a8e6128c83b0c7a99e9fee11c55927c8341d4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-documentation"></a>Visual Studio 文件
 

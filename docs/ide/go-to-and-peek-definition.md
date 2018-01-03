@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 467d119e67db254b6e15630c08c411bb15283351
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: db67f01ff2a58ee856e4588df8770fc4edef8ca2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-definition-and-peek-definition"></a>移至定義和查看定義  
 [移至定義] 和 [查看定義] 功能可讓您輕鬆地檢視類型或成員的定義。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 
 如需詳細資訊，請參閱[如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [巡覽程式碼](../ide/navigating-code.md)  
 [如何：使用查看定義檢視和編輯程式碼 (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  

@@ -11,15 +11,15 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 49a42bdc9f8ec979e47f0977abdf36f614141c89
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
+ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 
-您可以使用各種不同的方法來個人化 Visual Studio，以最佳方式支援您自己的開發風格與需求。 您有多項設定可在 Visual Studio 執行個體之間漫遊 &mdash; 請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 本主題簡要說明各種不同的個人化設定，以及何處可找到詳細資訊。
+您可以使用各種不同的方法來個人化 Visual Studio，以最佳方式支援您自己的開發風格與需求。 您的許多設定可在 Visual Studio 執行個體之間漫遊 &mdash; 請參閱[同步設定](../ide/synchronized-settings-in-visual-studio.md)。 本主題簡要說明各種不同的個人化設定，以及何處可找到詳細資訊。
 
 ## <a name="general-environment-options"></a>一般環境選項
 
@@ -58,7 +58,7 @@ ms.lasthandoff: 11/22/2017
 
 您可以自訂 [工具] 功能表來啟動外部工具。如需詳細資訊，請參閱[管理外部工具](../ide/managing-external-tools.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)  
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)

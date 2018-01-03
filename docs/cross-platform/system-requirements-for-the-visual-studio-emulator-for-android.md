@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 469a8298122abdc96c69f13ed96a893b02575fc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 571cc5ffc3637ecdca54cda74fd6aa20983fdab6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 8 及更新版本的虛擬化技術) 上執行。 若要執行模擬器，您的電腦必須符合執行 Hyper-V 的需求 (如本主題所述)。  
@@ -26,7 +27,7 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 > [!IMPORTANT]
 >  模擬器的安裝程式會檢查執行 Visual Studio Emulator for Android 的必要條件。 如果必要條件不存在，則會顯示警告，但安裝時不需要這些必要條件。  
   
- 此主題包括下列章節。  
+ 此主題包括下列各節。  
   
 -   [快速檢查清單](#Checklist)  
   
@@ -155,5 +156,5 @@ Visual Studio Emulator for Android 是以虛擬機器形式在 Hyper-V (Windows 
 ## <a name="hardware-graphics-forwarding-opengl-es-support-requirements"></a>硬體圖形轉送 (OpenGL ES 支援) 需求  
  為了讓模擬器模擬 GPU 呼叫 (例如 OpenGL ES 所使用的呼叫)，您的電腦必須具有已安裝適當 DirectX 驅動程式的 DirectX 相容 GPU。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進行 Android 版 Visual Studio 模擬器的疑難排解](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

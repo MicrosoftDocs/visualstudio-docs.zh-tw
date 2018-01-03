@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: conceptdev
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 2af38cbebc1695a78a86d80240acc40c5463cbed
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: unity
+ms.openlocfilehash: d7d692ba1ee1bf2eb0fda5430b2576edc9646ebf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity 概觀
 在本節中，您將進一步了解 Visual Studio Tools for Unity 所提供的功能，及如何使用這些功能更有效率地使用 Unity。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 11/29/2017
 
 -   您可以使用 Unity 樣式回呼 ProjectFileGeneration，來變更 Visual Studio Tools for Unity 產生專案檔的方式。 如需詳細資訊，請參閱「產生專案檔」範例。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Unity 首頁 (英文)](http://unity3d.com)

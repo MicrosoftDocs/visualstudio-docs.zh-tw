@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3eeb080af73966b48cf8be543faa4276ae3b438c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7d46fe01947e7f2813ae7eea8df81ae0b35f4f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>如何：建立以幾何為基礎的漸層著色器
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言，來建立以幾何為基礎的漸層著色器。 這個著色器可透過世界空間中物件各點的高度，來縮放 RGB 色彩常數值。  
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/31/2017
   
  如需如何將著色器套用至 3D 模型的詳細資訊，請參閱[如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：為 3D 地形建立模型](../designers/how-to-model-3-d-terrain.md)   

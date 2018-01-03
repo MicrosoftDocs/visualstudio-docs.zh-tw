@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 96c5864deb3f5db0599eaca26a3b99bb9691c9b2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cordova
+ms.openlocfilehash: 0df91521f768a2389655339472c6d4a896347053
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-apache-cordova"></a>Visual Studio Tools for Apache Cordova
 建置可執行於 iOS、Android 與 Windows 的應用程式，且幾乎完全共用您的程式碼。 使用您慣用的 Web 技術加以建置。 Apache Cordova 可讓您以原生形式存取裝置功能，例如手機上的相機，最棒的是完全免費。 Visual Studio 加入這些額外項目，讓您能更輕鬆地建置應用程式：  

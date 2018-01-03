@@ -16,17 +16,18 @@ f1_keywords:
 - VC.Project.VCConfiguration.IntermediateDirectory
 - VC.Project.VCConfiguration.BuildLogFile
 - VC.Project.VCConfiguration.ConfigurationType
-ms.openlocfilehash: d7105b75328175abcaba98d062ebeb591ce72d46
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: xplat-cplusplus
+ms.openlocfilehash: 95d420d57fbf37ae511d92ce32ea03b9f7c5fcad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-project-properties-android-c-makefile"></a>一般專案屬性 (Android C++ Makefile)
 
-屬性 | 說明 | 選擇
+屬性 | 描述 | 選擇
 --- | ---| ---
 輸出目錄 | 指定輸出檔案目錄的相對路徑；可包含環境變數。
 中繼目錄 | 指定中繼檔案目錄的相對路徑；可包含環境變數。
 建置記錄檔 | 指定啟用組建記錄時，要寫入的組建記錄檔。
-組態類型 | 指定此組態產生的輸出類型。 | **動態程式庫 (.so)** - 動態程式庫 (.so)<br>**靜態程式庫 (.a)** - 靜態程式庫 (.a)<br>**公用程式** - 公用程式<br>**Makefile** - Makefile<br>
+組態類型 | 指定此組態所產生的輸出類型。 | **動態程式庫 (.so)** - 動態程式庫 (.so)<br>**靜態程式庫 (.a)** - 靜態程式庫 (.a)<br>**公用程式** - 公用程式<br>**Makefile** - Makefile<br>

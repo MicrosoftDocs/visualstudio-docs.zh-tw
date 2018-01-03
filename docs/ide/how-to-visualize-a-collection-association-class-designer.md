@@ -1,44 +1,8 @@
 ---
-title: "如何：視覺化集合關聯 (類別設計工具) | Microsoft Docs"
-ms.custom: 
-ms.date: 11/04/2016
-ms.reviewer: 
-ms.suite: 
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- vs.classdesigner.collectionassociationline
-- vs.classdesigner.ShowAssociationException
-helpviewer_keywords:
-- collection associations
-- collections, collection associations
-- Class Designer [Visual Studio], collection associations
-ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
-caps.latest.revision: "6"
-author: gewarren
-ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 53eb6ed7e8025ee6cc9a9a3ee8161078accbc457
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+redirect_url: /visualstudio/ide/class-designer/how-to-visualize-a-collection-association
+ms.openlocfilehash: 67fef5b373f2f69684eac4775db75f5eb5f00836
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/15/2017
 ---
-# <a name="how-to-visualize-a-collection-association-class-designer"></a>如何：視覺化集合關聯 (類別設計工具)
-屬性和欄位是可在類別圖表上顯示為集合關聯之其他類型的集合。 不同於會將欄位或屬性顯示為將主控類別連結到欄位類型的一般關聯，集合關聯會顯示為將主控類別連結到收集的類型。  
-  
-### <a name="to-create-a-collection-association"></a>建立集合關聯  
-  
-1.  在程式碼中，建立類型本身就是強型別集合的屬性或欄位。  
-  
-2.  在類別圖表中，展開類別以便顯示屬性和欄位。  
-  
-3.  在類別中，以滑鼠右鍵按一下欄位或屬性上，然後選擇 [顯示為集合關聯]。  
-  
-     屬性或欄位會顯示為連結所收集類型的關聯線。  
-  
-## <a name="see-also"></a>另請參閱  
- [如何：建立類型之間的關聯 (類別設計工具)](../ide/how-to-create-associations-between-types-class-designer.md)   
- [設計類別和類型 (類別設計工具)](../ide/designing-classes-and-types-class-designer.md)   
- [檢視類型和關聯性 (類別設計工具)](../ide/viewing-types-and-relationships-class-designer.md)

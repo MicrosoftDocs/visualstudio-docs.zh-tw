@@ -12,11 +12,12 @@ caps.latest.revision: "64"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 95aa5c1a5df7200ff3fda3554ea5944767aeb082
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f6e8eb7d7349bc88a54707c68a4e505d3f6720b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台行動裝置應用程式開發
 您可以使用 Visual Studio 建置 Android、iOS 和 Windows 裝置的應用程式。  設計應用程式時，請使用 Visual Studio 中的工具，輕鬆地加入已連線的服務，例如 Office 365、Azure App Service 和 Application Insights。
@@ -118,7 +119,7 @@ ms.lasthandoff: 10/31/2017
 |--------------------|
 |[安裝 Visual Studio](http://www.visualstudio.com/products/visual-studio-community-vs) (VisualStudio.com)|
 |[開始使用 Visual Studio Tools for Apache Cordova (英文)](https://docs.microsoft.com/visualstudio/cross-platform/tools-for-cordova/) (docs.microsoft.com)|
-|[了解 Visual Studio 的 Android 模擬器](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
+|[了解 Visual Studio Emulator for Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ##  <a name="CPP"></a> 建置 Android 和 Windows 的應用程式 (C++)
  ![使用 C&#43;&#43; 為 Android、 iOS 和 Windows 建置](../cross-platform/media/cross_plat_cpp_intro_image.png "Cross_Plat_CPP_Intro_Image")
@@ -170,7 +171,7 @@ ms.lasthandoff: 10/31/2017
 |[觀賞 Visual Studio Tools for Unity 2.0 Preview 的介紹影片](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (影片)|
 |[了解 Unity](http://unity3d.com/) (Unity 網站)|
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  - [將 Office 365 API 新增至 Visual Studio 專案](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
  - [Azure App Service - Mobile Apps](https://azure.microsoft.com/en-us/services/app-service/mobile/)
  - [適用於行動裝置的 HockeyApp](https://azure.microsoft.com/en-us/services/hockeyapp/)
