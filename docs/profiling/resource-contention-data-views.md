@@ -15,16 +15,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0006505bb1c1825c79a7ba1b04d1323c8ca1608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 31f9f7650336c3787e68b511cf099c04317bca7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contention-data-views"></a>資源爭用資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有執行緒爭用分析資料。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [摘要檢視 - 分析爭用資料](../profiling/resource-contention-data-views.md)  
  顯示分析資料的圖形化時間軸，並列出參與最多封鎖事件的函式和資源。  
   

@@ -26,11 +26,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e52bef93735efc1ec5e43230ba46c7aa90cb67bc
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: bda996f825c492e323f84ba5444327a49f50aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-javascript-memory-usage-in-uwp-apps"></a>分析 UWP App 中的 JavaScript 記憶體使用量
 您可以使用 Visual Studio 中提供的 JavaScript 記憶體分析器，在使用 JavaScript 針對 Windows 建置的 UWP App 中了解記憶體使用量並找出記憶體流失的問題。 支援的應用程式包括通用 Windows App。
@@ -380,7 +381,7 @@ if (performance && performance.mark) {
   
 -   如果難以識別造成記憶體問題的原因，請使用各種檢視 (例如主導者和類型) 尋找其共同特徵，特別是幫助識別一個 (或幾個) 物件，且這些物件可能包含顯示在檢視中許多其他物件的參考。  
   
--   尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如：  
+-   尋找使用者巡覽至新頁面之後在記憶體中不慎保留的物件，這些物件是造成記憶體問題的常見原因。 例如:   
   
     -   使用 [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) 函式不正確，可能會造成此問題。  
   
@@ -400,5 +401,5 @@ if (performance && performance.mark) {
   
     -   建立測試物件並在 JavaScript 記憶體分析器的檢視 (例如類型檢視) 中追蹤此物件。 例如，您可以將大型物件附加至其他物件，查看特定物件或項目是否已進行記憶體回收。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：尋找記憶體流失 (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

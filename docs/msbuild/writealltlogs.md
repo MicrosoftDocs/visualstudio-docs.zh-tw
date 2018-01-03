@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7cd9965a5a521c4c1984792b0f10c809d3aafe86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8abc76ef0c9d3e04f0aae676af0bfa20183b3a8d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writealltlogs"></a>WriteAllTLogs
 寫入所有執行緒和內容的追蹤記錄檔。  
@@ -32,7 +33,7 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ```  
   
 #### <a name="parameters"></a>參數  
- [in] `intermediateDirectory`  
+ [輸入] `intermediateDirectory`  
  儲存追蹤記錄的目錄。  
   
  [in] `tlogRootName`  
@@ -44,5 +45,5 @@ HRESULT WINAPI WriteAllTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRootName
 ## <a name="requirements"></a>需求  
  **標頭：**FileTracker.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)

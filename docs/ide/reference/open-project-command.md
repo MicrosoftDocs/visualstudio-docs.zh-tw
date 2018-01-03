@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3b0916874fbd4c16dfe2232a6a5865743d0c388
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6ae2b8f0c9f0a17f29bf42a8a2893f8671df4cd6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="open-project-command"></a>開啟專案命令
 開啟現有專案。  
@@ -34,7 +35,7 @@ File.OpenProject filename
   
 ## <a name="arguments"></a>引數  
  `filename`  
- 必要項。 要開啟之專案的完整路徑和檔案名稱。  
+ 必要。 要開啟之專案的完整路徑和檔案名稱。  
   
  `filename` 引數的語法需要包含空格的路徑使用引號。  
   
@@ -50,7 +51,7 @@ File.OpenProject filename
 >File.OpenProject "C:\My Projects\Test1\Test1.vbproj"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

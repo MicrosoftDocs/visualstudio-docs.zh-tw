@@ -20,11 +20,12 @@ caps.latest.revision: "31"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 922c68ee927d05579ab2566e03b8acc0d9a56608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4feedb6f32b1d1fb03ef51468eb50ef1a0aa7a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-element-msbuild"></a>Item 項目 (MSBuild)
 包含使用者定義的項目及其中繼資料。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個項目，都必須指定為 `ItemGroup` 項目的子系。  
@@ -84,13 +85,13 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|使用者定義的項目中繼資料索引鍵，其中含有項目中繼資料值。 項目中可能有零個或多個 `ItemMetadata` 項目。|  
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|項目的群組項目。|  
 
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 ```  
 
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [項目](../msbuild/msbuild-items.md)   
  [MSBuild 屬性](../msbuild/msbuild-properties.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

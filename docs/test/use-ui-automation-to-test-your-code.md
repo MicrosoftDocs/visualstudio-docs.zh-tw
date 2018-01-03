@@ -20,11 +20,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: "85"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: af6cb2319ffb851e91ff87d7e998eeb25315e9fc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a8a7f23593e3d4056d1f3469d1d26ff6aed23882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>使用 UI 自動化來測試您的程式碼
 驅動應用程式通過其使用者介面 (UI) 的自動化測試稱為「自動程式化 UI 測試」(CUIT)。 這些測試包括 UI 控制項的功能測試。 它們可讓您確認整個應用程式 (包括其使用者介面) 正確運作。 自動程式碼 UI 測試特別適用於使用者介面中有驗證或其他邏輯時 (例如，在網頁中)。 它們也經常用來自動化現有手動測試。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/27/2017
   
  特殊 CUIT 測試產生器和編輯器可以輕鬆地建立與編輯自動程式化 UI 測試，即使您的主要技能是在測試，而非編寫程式碼也是一樣。 但是，如果您是開發人員，而且想要使用更進階的方式擴充測試，請讓程式碼更具結構性，以直接複製和調整。 例如，您可能錄製一個在網站上購買某項東西的測試，接著編輯產生的程式碼以加入購買許多項目的迴圈。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -482,7 +483,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>   
  [改善程式碼品質](../test/improve-code-quality.md)   

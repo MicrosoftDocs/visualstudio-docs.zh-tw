@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a910c3f43dc0cb49e6b7f6f70355c6c195df7a82
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 372a1efccbfa211167930710418905d95411760c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-3-d-models"></a>使用 3D 模型
 您可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的模型編輯器建立 3D 模型。 您可以在 DirectX 型遊戲或應用程式中使用這些模型。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[模型編輯器](../designers/model-editor.md)|說明如何使用模型編輯器來處理 3D 模型。|  
 |[模型編輯器範例](../designers/model-editor-examples.md)|提供示範如何使用模型編輯器來執行一般 3D 模型工作的主題連結。|

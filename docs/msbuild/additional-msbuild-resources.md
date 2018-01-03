@@ -603,11 +603,12 @@ author: kempb
 ms.author: kempb
 manager: ghogen
 redirect_url: https://social.msdn.microsoft.com/Forums/vstudio/home?forum=msbuild
-ms.openlocfilehash: bf172e3a2f2098d72db5e56d54c598d656650c88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c795dca53bec8191cdb9e2d61fa49ec03d84fa66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-msbuild-resources"></a>其他 MSBuild 資源
 如果您嘗試解決問題，但在文件中找不到所需的資訊，則可以參閱知識庫文章、開發人員社群或產品支援等其他資源。  
@@ -623,5 +624,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="product-support"></a>產品支援  
  如果您在嘗試其他資源之後仍有疑問，可以前往 [Microsoft 說明及支援](http://go.microsoft.com/fwlink/?linkid=1782)網站，連絡 Microsoft 支援服務。 如需您地區中可用的產品支援資訊，請參閱[告訴我們](../ide/talk-to-us.md)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進行 .NET Framework 目標錯誤的疑難排解](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

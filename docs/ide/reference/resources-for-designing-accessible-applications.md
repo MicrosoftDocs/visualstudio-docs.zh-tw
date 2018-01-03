@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a5469b3e6f09df75561cf85ba56c96721494aabf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 789eafd7bc7137026bb6c144615f1234f7288f29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-designing-accessible-applications"></a>設計可及性應用程式的資源
 您可以使用下列連結來尋找支援協助工具設計的技術，以及用來開發可存取的 Windows 應用程式和網站的秘訣和範例等相關資訊。 您可以在下列網站線上找到協助工具的一般資訊，網址為：[http://www.microsoft.com/enable/](http://www.microsoft.com/enable/)。  
@@ -56,5 +57,5 @@ ms.lasthandoff: 10/31/2017
   
 -   **Web Accessibility Initiative of the World Wide Web Consortium (W3C)** (全球資訊網協會 (W3C) 的 Web 協助工具計劃)：本網站提供可存取之網站開發的指導方針和技術。 如需詳細資訊，請參閱 [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)

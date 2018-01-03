@@ -21,11 +21,12 @@ caps.latest.revision: "44"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f97ce4480ebdf04cce6a129d7c1950ac28df2aaf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b0120e93e809d1d0f57b5b7dc993a982b1c78836
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具是用來檢測二進位檔。 使用下列語法叫用：  
@@ -36,7 +37,7 @@ VSInstr [/U] filename [/options]
   
  下表說明 VSInstr 工具選項：  
   
-|選項|說明|  
+|選項|描述|  
 |-------------|-----------------|  
 |**Help** 或 **?**|顯示說明。|  
 |**U**|將重新導向的主控台輸出以 Unicode 寫入。 務必要優先指定此選項。|  
@@ -58,7 +59,7 @@ VSInstr [/U] filename [/options]
 |**SuspendOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間暫止資料收集。 在指定位置插入 SuspendProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StartProfile 函式，請在它之前插入 SuspendProfile 函式。|  
 |**ResumeOnly:**{**Before**`&#124;`**After**`&#124;`**Top**`&#124;`**Bottom**}`,funcname`|在執行程式碼剖析期間開始或繼續資料收集。<br /><br /> 其通常是在 **SuspendOnly** 選項已停止程式碼剖析之後，用來啟動程式碼剖析。 在指定位置插入 ResumeProfile API。<br /><br /> **Before** - 緊接在目標函式進入之前。<br /><br /> **After** - 緊跟在目標函式結束之後。<br /><br /> **Top** - 緊跟在目標函式進入之後。<br /><br /> **Bottom** - 緊接在目標函式中的每個傳回之前。<br /><br /> `funcname` - 目標函式的名稱。<br /><br /> 如果目標函式包含 StopProfile 函式，請在它之後插入 ResumeProfile 函式。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [VSPerfReport](../profiling/vsperfreport.md)   

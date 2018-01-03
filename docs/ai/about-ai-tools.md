@@ -10,11 +10,12 @@ ms.topic: article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: 90fcbd7e07ee4f18682d5cf914794982007088d0
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: multiple
+ms.openlocfilehash: acb674176374e532b59bf704890afd5869b3ebac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 

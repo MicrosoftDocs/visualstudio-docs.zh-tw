@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa7ba54d15697c02b62f13c3fa54a3005f410bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a592082cac8cf493a742c9ce6f7de3bb0c706aad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-profiler-apis"></a>逐步解說：使用分析工具 API
 本逐步解說會使用 C# 應用程式示範如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具 API。 您將使用分析工具 API 來限制檢測分析期間所收集的資料量。  
@@ -161,7 +162,7 @@ DataCollection.CurrentId);
   
      在目前目錄中，會使用產生的效能資料來建立 .csv 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.Profiler>   
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)   
  [快速入門](../profiling/getting-started-with-performance-tools.md)   

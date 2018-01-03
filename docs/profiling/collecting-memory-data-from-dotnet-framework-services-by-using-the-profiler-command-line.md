@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d94a31fbb1c0fca649f53496ff39fe36527c013
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: a20c3cff1ee86e0dc0a9530e9ac75aabe881bacb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列以收集 .NET Framework 服務的記憶體資料
 本節說明從命令列使用取樣方法收集 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 服務之記憶體配置和物件存留期資料的程序和選項。  
@@ -50,4 +51,4 @@ ms.lasthandoff: 10/31/2017
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>參考資料  
- [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
+ [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)

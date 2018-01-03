@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 744e3031c94a3b152728000e7c5425f85fb9e9ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8c938f5effc963fa881506f55d0e4b271ae3a914
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>行為錯誤之多執行緒應用程式的一般模式
 「並行視覺化檢視」可協助開發人員以視覺化方式檢視多執行緒應用程式的行為。 此工具包含行為錯誤之多執行緒應用程式的一般模式陳列庫。 陳列庫包含許多透過工具顯示出，典型而可辨識的視覺模式，以及每個模式所代表的行為說明、該行為的可能結果，以及解決的最常見方法。  
@@ -64,5 +65,5 @@ ms.lasthandoff: 10/31/2017
   
  當應用程式以先到先服務的順序取得鎖定時，以及當鎖定的抵達速率高於取得速率時，就會發生鎖定護送。 這兩項條件的組合會導致鎖定的要求開始堵塞。 解決這個問題的一個方法是使用「不公平」的鎖定，或使用能提供第一個執行緒存取權以找出處於未鎖定狀態之鎖定的鎖定。 上圖顯示這個護送行為。 若要解決這個問題，請嘗試減少同步處理物件的爭用，並嘗試使用不公平的鎖定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

@@ -17,11 +17,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: "83"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 825adc757b9ae984bb39b308bab37a0d98b63ab5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: ebdac762d3dcc4079ed6e8247b394da685b1013a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>逐步解說：針對 Managed 程式碼建立和執行單元測試
 本逐步解說會引導您使用適用於 Managed 程式碼的 Microsoft 單元測試架構和 Visual Studio 測試總管，來建立、執行和自訂一系列的單元測試。 您可以從開發中的 C# 專案開始，建立執行其程式碼的測試、執行測試，並檢查結果。 然後，您可以修改專案程式碼並重新執行測試。  

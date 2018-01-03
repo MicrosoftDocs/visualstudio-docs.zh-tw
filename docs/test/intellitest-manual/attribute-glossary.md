@@ -12,11 +12,12 @@ ms.assetid: 557C7869-48BE-4B82-9563-1FF356ABACDB
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 71f8adb78c594b6558d570bf79b7535a7517ddbe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9e3fe1108c316eefe7993a7f564cfd89f4f123dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attribute-glossary"></a>屬性字彙
 

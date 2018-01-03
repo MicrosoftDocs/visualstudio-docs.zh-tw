@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ccb733d483026e7490d447c139e57700568a5f13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a41357670b7f9c634de57f66bd292320d354dbc2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：蒐集資料庫專案的階層互動度量
 |||  

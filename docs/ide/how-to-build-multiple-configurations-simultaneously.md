@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eca23f38a27ac43246fd6fbf0b4449630ef3f64d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c0a9fbbfe7e4b0b38b0286cf10f06dd7eec89c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-multiple-configurations-simultaneously"></a>如何：同時建置多個組態
 您可以使用 [批次建置] 對話方塊，同時建置具有多個甚至所有組建組態的多數類型專案。 不過，您無法同時在多個組建組態中組建下列類型的專案：  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  選擇 [建置] 或 [重建] 按鈕，以使用您指定的組態來建置專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [同時建置多個專案](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)

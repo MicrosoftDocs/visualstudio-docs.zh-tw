@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fcabe7b1ce4130eb52369ff9f16900b1979b8582
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 957e987854aae91b72c5cd6109e279253a5772b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 清除然後建置指定的解決方案設定。  
@@ -35,10 +36,10 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="arguments"></a>引數  
  `SolnConfigName`  
- 必要項。 將用來重建在 `SolutionName` 中命名之解決方案的解決方案設定名稱。  
+ 必要。 將用來重建在 `SolutionName` 中命名之解決方案的解決方案設定名稱。  
   
  `SolutionName`  
- 必要項。 方案檔的完整路徑和名稱。  
+ 必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
@@ -52,7 +53,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 -   請以雙引號括住包含空格的字串。  
   
--   清除和組建的摘要資訊 (包括錯誤) 可顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
+-   清除和組建的摘要資訊 (包含錯誤) 可以顯示在 [命令] 視窗中，或使用 `/out` 參數指定的任何記錄檔中。  
   
 ## <a name="example"></a>範例  
  此範例使用 `MySolution` 的 `Debug` 解決方案設定中的 `Debug` 專案組建設定，來清除和重建專案 `CSharpWinApp`。  
@@ -61,7 +62,7 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /rebuild Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   

@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 978f1d43e278a6e8a112151221bda0a828b92f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1238748b07d820a045e440e8d130bf9423668854
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="incremental-builds"></a>累加建置
 累加組建是已最佳化的組置，因此不會執行輸出檔案與其相關對應輸入檔案為最新的目標。 目標項目可能有 `Inputs` 屬性可指出目標預期作為輸入的項目，以及 `Outputs` 屬性可指出它產生作為輸出的項目。 MSBuild 嘗試尋找這些屬性值之間的 1 對 1 對應。 如果具有 1 對 1 對應，MSBuild 會比較每個輸入項目的時間戳記與其對應輸出項目的時間戳記。 沒有 1 對 1 對應的輸出檔案會與所有輸入檔案進行比較。 如果項目的輸出檔與輸入檔同齡或是前者較新，該項目則可視為最新狀態。  
@@ -80,5 +81,5 @@ ms.lasthandoff: 10/31/2017
   
  這會建立 CompileRan 屬性，並對其提供 `true` 值，但只有在執行目標時。 如果跳過目標，則不會建立 CompileRan。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)

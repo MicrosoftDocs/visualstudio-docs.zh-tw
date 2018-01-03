@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 22838f561793845c9b44e57631c46773b094c98b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ccca87721c39daa7e613d7426c9d5fed6a144cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：將專案設定成以平台為目標
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 可讓您將應用程式的目標設定為不同的平台，包括 64 位元的平台。 如需 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中 64 位元平台支援的詳細資訊，請參閱 [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
   
 -   若是 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 專案，請參閱 [/clr (Common Language Runtime 編譯)](/cpp/build/reference/clr-common-language-runtime-compilation)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解組建平台](../ide/understanding-build-platforms.md)   
  [/platform (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/platform-compiler-option)   
  [64 位元應用程式](http://msdn.microsoft.com/Library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   

@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f076985edeeec43d9f5a71e0e53b3937d6b8358f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da81862b736605b93d4429e0e574ca5558a529c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步驟 7：將對話方塊元件加入至您的表單
 若要讓程式開啟圖片檔並選擇背景色彩，請在這個步驟中，將 **OpenFileDialog** 元件和 **ColorDialog** 元件新增至表單。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  若要查看不同應用程式中的 [開啟檔案] 對話方塊範例，請開啟記事本或小畫家，並在功能表列上選擇 [檔案]、[開啟舊檔]。 請注意底部的 [檔案類型] 下拉式清單。 您剛才已使用 **OpenFileDialog** 元件的 [篩選條件] 屬性來設定此清單。 另外，請注意 [屬性] 視窗中的 [標題] 和 [篩選條件] 屬性都是粗體。 IDE 這樣做是為了讓您知道任何屬性已變更，而不再是預設值。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 8：為顯示圖片按鈕事件處理常式撰寫程式碼](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)。  
   

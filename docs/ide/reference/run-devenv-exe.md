@@ -19,11 +19,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5be97e75ac7dc29a6dd0244293259bcd17591233
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 97e4339546eda741ba961b0015f9f62edf231d24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 編譯並執行指定的專案或方案。  
@@ -36,10 +37,10 @@ devenv {/run|/r} {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>引數  
  `SolutionName`  
- 必要項。 方案檔的完整路徑和名稱。  
+ 必要。 方案檔的完整路徑和名稱。  
   
  `ProjectName`  
- 必要項。 專案檔的完整路徑和名稱。  
+ 必要。 專案檔的完整路徑和名稱。  
   
 ## <a name="remarks"></a>備註  
  根據為使用中方案組態所指定的設定，編譯並執行指定的專案或方案。 此參數會啟動整合式開發環境 (IDE)，並在專案或方案完成執行之後讓它保持使用中。  
@@ -55,7 +56,7 @@ devenv {/run|/r} {SolutionName|ProjectName}
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

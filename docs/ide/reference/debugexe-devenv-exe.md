@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00677826cceab6a54c0fb2216ac6c6284a65631f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8f50bfd0fa5b0f9303bc6256078a30da6e1c0575
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 開啟要偵錯的指定可執行檔。  
@@ -33,7 +34,7 @@ Devenv /debugexe ExecutableFile
   
 ## <a name="arguments"></a>引數  
  `ExecutableFile`  
- 必要項。 .exe 檔案的路徑和檔案名稱。  
+ 必要。 .exe 檔案的路徑和檔案名稱。  
   
  如果 .exe 檔案找不到或不存在，則不會顯示任何警告或錯誤，而且 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 會正常啟動。  
   
@@ -47,5 +48,5 @@ Devenv /debugexe ExecutableFile
 Devenv.exe /debugexe MyApplication.exe  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

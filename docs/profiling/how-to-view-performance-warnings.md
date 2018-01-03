@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 04616ba5f6ef4166f492335ba3028d428099f984
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6ced745a12b38ba0695709c986cdeaeecd4d26e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-performance-warnings"></a>如何：檢視效能警告
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的效能警告指出，已分析應用程式中發現的問題可能會降低程式執行速度。 警告也可能表示您可能想要變更收集方法，以收集更有用的資料。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中開啟分析資料檔案時，效能警告會於分析工作階段中自動產生，並出現在 [錯誤清單] 視窗中。  

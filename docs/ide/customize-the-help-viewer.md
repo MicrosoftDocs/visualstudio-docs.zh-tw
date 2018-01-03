@@ -16,17 +16,18 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 42e686558088e549e43a91effee0d4938401ea9c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e0aa2503e7e729a632c677a317493b85a6822741
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-the-help-viewer"></a>自訂說明檢視器
 您可以自訂說明檢視器視窗的版面配置，以及其他選項，例如字型大小、結果數目上限，以及是否要包含英文內容。
 
 ## <a name="customizing-window-layout"></a>自訂視窗版面配置
-您可以自訂說明檢視器的視窗配置。 若要將說明檢視器視窗還原為其預設版面配置，請開啟 [檢視器選項] 對話方塊，然後選擇 [重設] 按鈕。  
+您可以自訂說明檢視器的視窗配置。 若要將說明檢視器視窗還原為其預設配置，請開啟 [檢視器選項] 對話方塊，然後選擇 [重設] 按鈕。  
 
 ### <a name="docking-tabs"></a>固定索引標籤
 說明檢視器支援標準固定功能。 預設會固定說明檢視器中的所有索引標籤，但您可以移動它們、調整其大小、將它們固定到其他位置，以及讓它們「浮動」，使其顯示為獨立的子視窗。
@@ -47,5 +48,5 @@ ms.lasthandoff: 11/07/2017
 |變更[我的最愛] 視窗中顯示的記錄項目數目上限|在 [儲存的記錄項目上限] 清單中選擇值。|  
 |當您檢視非英文版產品的內容時，請包含或排除英文內容。|選取或清除 [將英文內容包含在所有巡覽索引標籤和 F1 要求中] 核取方塊。 **注意：**這項功能也會控制您是否可以在 [管理內容] 索引標籤中下載英文內容。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

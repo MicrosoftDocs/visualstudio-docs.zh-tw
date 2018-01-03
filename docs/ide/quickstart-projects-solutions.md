@@ -10,11 +10,12 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3b30b796ca389d5adfc4f8ece3c8f774626e994
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b757178f29439f162df9e8844ae65ed8df642bb5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-projects-and-solutions"></a>快速入門：專案和解決方案
 
@@ -179,7 +180,7 @@ C# 程式碼檔案中包含 <xref:System.Runtime.CompilerServices.InternalsVisib
 
 恭喜您完成此快速入門！ 接下來，您可能想要探索一些其他 Visual Studio 快速入門，或深入了解如何[建立專案和解決方案](../ide/creating-solutions-and-projects.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
 [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  

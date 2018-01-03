@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e17e8ada438ab8b7223bd9fcaca326c91e69f901
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8288ce8d049f949120c5631366dbaac2efc792b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>在 Visual Studio 中指定自訂建置事件
 您可以指定自訂建置事件，在建置開始之前或完成之後自動執行命令。 例如，您可以在建置開始之前執行 .bat 檔案，或在建置完成之後將新檔案複製到資料夾。 只有在建置成功到達建置流程中的這些點時，建置事件才會執行。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  在批次指令碼中，上述程式碼中的 `%I` 應該是 `%%I`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [建置前事件/建置後事件命令列對話方塊](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
  [MSBuild 特殊字元](../msbuild/msbuild-special-characters.md)   

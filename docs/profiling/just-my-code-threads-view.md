@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c9cc9eea737f11c8ec28e33414f40a981848e123
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9993e31b29e25b95d475d15bd8c1190d1ffae6c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="just-my-code-threads-view"></a>Just My Code (執行緒檢視)
 如果選取此選項，即會篩選呼叫堆疊只顯示您的程式碼，加上一個層級的已呼叫函式。  
@@ -27,6 +28,6 @@ ms.lasthandoff: 10/31/2017
   
  在某些情況下，選取此選項可能會篩選掉封鎖的呼叫。 如果您需要完整的呼叫堆疊詳細資料進行判斷，請清除此選項以公開完整的呼叫堆疊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)   
  [雜訊減少百分比](../profiling/noise-reduction-percentage.md)

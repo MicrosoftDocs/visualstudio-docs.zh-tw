@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d5f34e421160e8cca56897e6530ff47da7b1a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4db6bd98fcecf6d99e9d6e98570ed8b24b7ee47c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：以手動方式建立網站範本
 建立網站範本與建立其他種類的範本不同。 因為 Web 專案範本出現在 [新增網站] 對話方塊中，並且依程式語言分類 Web 專案項目，所以 .vstemplate 檔案必須將範本指定為網站範本，並識別程式設計語言。  
@@ -86,6 +87,6 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

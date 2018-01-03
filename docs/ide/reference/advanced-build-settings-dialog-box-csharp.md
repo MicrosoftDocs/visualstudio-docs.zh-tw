@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7df850e46f8f5d81b9127a9885128452900b84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 44694e84fc0ab83ca4caf7bf80535dcae50a636f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>進階建置設定對話方塊 (C#)
 
@@ -80,6 +81,6 @@ ms.lasthandoff: 10/31/2017
 
 **程式庫基底位址**：指定載入 DLL 時慣用的基底位址。 DLL 的預設基底位址是由 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 通用語言執行平台所設定。 如需詳細資訊，請參閱 [/baseaddress (C# 編譯器選項)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
  [C# 編譯器選項](/dotnet/csharp/language-reference/compiler-options/index) [專案設計工具、建置頁面 (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -22,11 +22,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6acfbee87e64e71ae85290ba74f1464af7181228
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff9927357b23ced05bbee6db354cbe8e82e62b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：使用效能精靈對網站或 Web 應用程式進行程式碼剖析
 您可以使用 [效能精靈]  收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式的效能資料。 您可以對 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中開啟之 Web 應用程式進行程式碼剖析，也可以對位於本機電腦上但在 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] IDE 中未開啟之 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 網站進行程式碼剖析。  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
      分析工具隨即產生資料檔案，並在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 主視窗中顯示資料的 [摘要] 檢視。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   

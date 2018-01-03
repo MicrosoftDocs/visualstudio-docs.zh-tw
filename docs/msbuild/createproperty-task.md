@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a585c0c3065d16000737ebfd5c42e3f020c0074a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ae7e6d5203ac4f2b6ff58a19d4938180b7a11c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="createproperty-task"></a>CreateProperty 工作
 將傳入的值填入屬性中。 這允許將值從某個屬性或字串複製至另一個屬性或字串。  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
   
  執行專案之後，`NewFile` 屬性的值是 `Module1.vb`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e5e4729ffacfbe1a561af98be202a21dbf958de9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: cd4d65a4e14f274a167c971383702a789cc2c539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 您可以在 XAML 中、在程式碼中或使用 XAML 設計工具，將項目 (控制項、版面配置和圖形) 加入應用程式。 本主題說明如何在 Visual Studio 或 Blend for Visual Studio 中，使用 XAML 設計工具來處理項目。  
@@ -121,5 +122,5 @@ ms.lasthandoff: 10/31/2017
   
 -   在 [文件大綱] 視窗或畫板中，以滑鼠右鍵按一下項目，然後依序選擇 [版面配置] 和 [重設*屬性名稱*]，其中*屬性名稱* 是您要重設的屬性 (或者依序選擇 [版面配置] 和 [全部重設]，以重設項目的所有版面配置屬性)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 XAML 設計工具建立 UI](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

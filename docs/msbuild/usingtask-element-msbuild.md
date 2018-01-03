@@ -21,11 +21,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 05a7dabcfe251a1d27eef559456bca4e267e55ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95013682d5968cc1fb894f3e30746043e99e4a46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 項目 (MSBuild)
 將 [Task](../msbuild/task-element-msbuild.md) 元素中參考的工作對應至包含工作實作的組件。  
@@ -100,7 +101,7 @@ ms.lasthandoff: 10/31/2017
               AssemblyFile="c:\myTasks\myTask.dll" />  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

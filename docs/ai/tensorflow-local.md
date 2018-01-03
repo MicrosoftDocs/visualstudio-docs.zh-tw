@@ -10,11 +10,12 @@ ms.topic: quickstart
 ms.technology: visual studio
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 2b48acc8cfea97a89c32ce7180d693246ca6ab26
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 133c6c29bed581a478fa6127fa69cee1b00b2c44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本機定型 TensorFlow 模型 
 

@@ -18,11 +18,12 @@ caps.latest.revision: "37"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f07b924c5af117f39e19dc5add6046a14be22a6b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 552a2c66bd71d83ff1c8cd3453154c065d8bdb3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view"></a>摘要檢視
 [摘要] 檢視顯示分析回合中效能耗費最多資源的函式或物件資訊。 此檢視會提供時間軸圖表，以及根據分析方法效能計量之兩個以上耗費最多資源的函式或物件清單。 此檢視中的資料取決於所使用的分析方法 (取樣、檢測或並行) 以及是否收集 .NET 記憶體配置。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 |**篩選報告資料**|顯示分析報表篩選窗格，您可以在其中指定準則來限制報表檢視中的資料。 如需詳細資訊，請參閱[效能報表檢視篩選](../profiling/performance-report-view-filter.md)|  
 |**切換全螢幕**|切換報表檢視的全螢幕模式。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)   
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)

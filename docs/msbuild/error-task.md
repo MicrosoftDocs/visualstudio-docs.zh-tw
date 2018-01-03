@@ -21,11 +21,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 35360c057d0c18a1d6c891796f5788d5cfeab89b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35f4d34bb96e5128e6a321041864e18c12380949
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="error-task"></a>Error 工作
 停止組建，並根據評估的條件陳述式來記錄錯誤。  
@@ -64,6 +65,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)

@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2bf115cdf81acbadab719eff5a19905c59832af8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: febf90633994dd825bd6ce84de8ecdc97d469e84
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assembly-information-dialog-box"></a>組件資訊對話方塊
 您可以使用 [組件資訊] 對話方塊來指定 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 全域組件屬性的值，該值會儲存在隨專案自動建立的 AssemblyInfo 檔案中。 在方案總管中，若是 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]，此檔案是在 [我的專案] 節點中 (按一下 [顯示所有檔案] 即可檢視)；若是 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]，則是在 [屬性] 底下。 如需組件屬性的詳細資訊，請參閱[屬性](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  **標題**  
  指定組件資訊清單的標題。 對應至 <xref:System.Reflection.AssemblyTitleAttribute>。  
   
- **說明**  
+ **描述**  
  指定組件資訊清單的選擇性描述。 對應至 <xref:System.Reflection.AssemblyDescriptionAttribute>。  
   
  **公司**  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
  **讓組件成為 COM-Visible**  
  指定組件中的類型是否可供 COM 使用。 對應至 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案設計工具、應用程式頁面 (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
  [屬性](http://msdn.microsoft.com/Library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

@@ -18,11 +18,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a3c6d848821495b5db069b4343ca5c596a064422
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 64fd40d78b31c4791c699c2602528b33a36f4245
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="outlining"></a>大綱
 
@@ -52,6 +53,6 @@ ms.lasthandoff: 12/07/2017
 
 您也可以使用 Visual Studio SDK 來定義您想要展開或摺疊的文字區域。 請參閱[逐步解說︰大綱](../extensibility/walkthrough-outlining.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

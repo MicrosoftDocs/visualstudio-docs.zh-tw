@@ -21,11 +21,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 1c0238bb7a525166f69a59b0af5d08db5286a5f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c21160247a617c1f74333ef567a6857bbc902cdd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="onerror-element-msbuild"></a>OnError 項目 (MSBuild)
 如果失敗工作的 `ContinueOnError` 屬性是 `false`，則會執行一或多個目標。  
@@ -51,12 +52,12 @@ ms.lasthandoff: 10/31/2017
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 |`ExecuteTargets`|必要屬性。<br /><br /> 工作失敗時要執行的目標。 以分號分隔多個目標。 多個目標會以指定的順序執行。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無。  
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Target](../msbuild/target-element-msbuild.md)|[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的容器元素。|  
 
@@ -78,6 +79,6 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [目標](../msbuild/msbuild-targets.md)

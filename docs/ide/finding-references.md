@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4a402d8541f7056ebcb57885197d001b39c8d9b0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92c12e4d51255849843f938c032ca17b611eeeab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-references-in-your-code"></a>在程式碼中尋找參考  
 您可以使用 [尋找所有參考] 命令，來尋找在整個程式碼基底中參考特定程式碼項目的位置。 在您想要尋找其參考之項目的操作 (右鍵) 功能表上會提供 [尋找所有參考] 命令。 或者，如果您是鍵盤使用者，請按 **Shift + F12**。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
 
 [定義] 和 [專案] 使用兩個預設群組，但您可以選擇所選取項目之操作功能表上的 [群組] 命令來新增其他群組。 如果您的方案有大量檔案和路徑，則新增更多群組十分有用。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [巡覽程式碼](../ide/navigating-code.md)  

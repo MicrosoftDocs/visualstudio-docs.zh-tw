@@ -11,11 +11,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e9ae492d7fc4d110c6e5015c782f97a2561c8bd8
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 2a3058e2033c5458e5479c346799cd266718374c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="personalize-the-visual-studio-ide"></a>將 Visual Studio IDE 個人化
 

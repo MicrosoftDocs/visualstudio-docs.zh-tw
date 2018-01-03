@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7201086ade629dc7c6d39039c088333be815cc26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea63db35d5bb1eeca08f3e948ffcf5183259ef1c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-command"></a>取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。  
@@ -35,14 +36,14 @@ Edit.Replace findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>引數  
  `findwhat`  
- 必要項。 要比對的文字。  
+ 必要。 要比對的文字。  
   
  `replacewith`  
- 必要項。 要用來取代相符文字的文字。  
+ 必要。 要用來取代相符文字的文字。  
   
 ## <a name="switches"></a>參數  
  /all 或 /a  
- 選擇項。 以取代文字來取代搜尋文字的所有出現項目。  
+ 選擇項。 以取代文字來取代所有出現的搜尋文字。  
   
  /case 或 /c  
  選擇項。 只有當大寫和小寫字元完全符合 `findwhat` 引數中所指定的項目時，才會出現相符項目。  
@@ -87,7 +88,7 @@ Edit.Replace findwhat replacewith [/all] [/case]
 >Edit.Replace btnSend btnSubmit /open  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

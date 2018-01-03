@@ -21,11 +21,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5fd338079978cec84c93a22d262d25f575d32e4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1105701c5c84de200dca674a117d7b464ba9fd62
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vbc-task"></a>Vbc 工作
 包裝 vbc.exe，這會產生可執行檔 (.exe)、動態連結程式庫 (.dll) 或程式碼模組 (.netmodule)。 如需 vbc.exe 的詳細資訊，請參閱 [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)。  
@@ -48,11 +49,11 @@ ms.lasthandoff: 10/31/2017
 |`ErrorReport`|選擇性的 `String` 參數。<br /><br /> 指定工作應如何報告編譯器內部錯誤。 此參數的值如下：<br /><br /> -   `prompt`<br />-   `send`<br />-   `none`<br /><br /> 如果指定 `prompt` 且發生編譯器內部錯誤時，會提示使用者選擇是否將錯誤資料傳送給 Microsoft。<br /><br /> 如果指定 `send` 且發生編譯器內部錯誤時，工作會將錯誤資料傳送給 Microsoft。<br /><br /> 預設值為 `none`，僅報告文字輸出中的錯誤。<br /><br /> 此參數對應至 vbc.exe 編譯器的 [/errorreport](/dotnet/visual-basic/reference/command-line-compiler/errorreport) 參數。|  
 |`FileAlignment`|選擇性的 `Int32` 參數。<br /><br /> 以位元組為單位，指定要對齊輸出檔案區段的位置。 此參數的值如下：<br /><br /> -   `512`<br />-   `1024`<br />-   `2048`<br />-   `4096`<br />-   `8192`<br /><br /> 此參數對應至 vbc.exe 編譯器的 [/filealign](/dotnet/visual-basic/reference/command-line-compiler/filealign) 參數。|  
 |`GenerateDocumentation`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true` 則產生文件資訊，並將該資訊放入 XML 檔中，此檔案的名稱為工作所建立的可執行檔或程式庫名稱。 如需詳細資訊，請參閱 [/doc](/dotnet/visual-basic/reference/command-line-compiler/doc)。|  
-|`Imports`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) 參數。|  
+|`Imports`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 從指定的項目集合匯入命名空間。 此參數對應至 vbc.exe 編譯器的 [/imports](/dotnet/visual-basic/reference/command-line-compiler/imports) 參數。|  
 |`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定密碼編譯金鑰容器的名稱。 此參數對應至 vbc.exe 編譯器的 [/keycontainer](/dotnet/visual-basic/reference/command-line-compiler/keycontainer) 參數。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含密碼編譯金鑰的檔名。 如需詳細資訊，請參閱 [/keyfile](/dotnet/visual-basic/reference/command-line-compiler/keyfile)。|  
 |`LangVersion`|選擇性的 <xref:System.String?displayProperty=fullName> 參數。<br /><br /> 指定語言版本，"9" 或 "10"。|  
-|`LinkResources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) 參數。|  
+|`LinkResources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 在輸出檔中建立 .NET Framework 資源的連結；不要將資源檔放置於輸出檔中。 此參數對應至 vbc.exe 編譯器的 [/linkresource](/dotnet/visual-basic/reference/command-line-compiler/linkresource) 參數。|  
 |`MainEntryPoint`|選擇性的 `String` 參數。<br /><br /> 指定包含 `Sub Main` 程序的類別或模組。 此參數對應至 vbc.exe 編譯器的 [/main](/dotnet/visual-basic/reference/command-line-compiler/main) 參數。|  
 |`ModuleAssemblyName`|選擇性的 `String` 參數。<br /><br /> 指定將包含此模組的組件。|  
 |`NoConfig`|選擇性的 `Boolean` 參數。<br /><br /> 指定編譯器不應使用 vbc.rsp 檔案。 此參數對應至 vbc.exe 編譯器的 [/noconfig](/dotnet/visual-basic/reference/command-line-compiler/noconfig) 參數。|  
@@ -68,13 +69,13 @@ ms.lasthandoff: 10/31/2017
 |`OptionStrictType`|選擇性的 `String` 參數。<br /><br /> 指定哪些嚴格的類型語意會產生警告。 目前只支援 "custom"。 此參數對應至 vbc.exe 編譯器的 [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict) 參數。|  
 |`OutputAssembly`|選擇性的 `String` 輸出參數。<br /><br /> 指定輸出檔案的名稱。 這個參數對應於 vbc.exe 編譯器的 [/out](/dotnet/visual-basic/reference/command-line-compiler/out) 參數。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔設為目標的處理器平台。 這個參數可以具有 `x86`、`x64`、`Itanium` 或 `anycpu` 的值。 預設為 `anycpu`。 這個參數對應於 vbc.exe 編譯器的 [/platform](/dotnet/visual-basic/reference/command-line-compiler/platform) 參數。|  
-|`References`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 vbc.exe 編譯器的 [/reference](/dotnet/visual-basic/reference/command-line-compiler/reference) 參數。|  
+|`References`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 導致工作將公用類型資訊從指定的項目匯入目前的專案。 這個參數對應於 vbc.exe 編譯器的 [/reference](/dotnet/visual-basic/reference/command-line-compiler/reference) 參數。|  
 |`RemoveIntegerChecks`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，停用整數的溢位錯誤檢查。 預設值是 `false`。 這個參數對應於 vbc.exe 編譯器的 [/removeintchecks](/dotnet/visual-basic/reference/command-line-compiler/removeintchecks) 參數。|  
-|`Resources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 vbc.exe 編譯器的 [/resource](/dotnet/visual-basic/reference/command-line-compiler/resource) 參數。|  
-|`ResponseFiles`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 vbc.exe 編譯器的 [@ (指定回應檔)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) 選項。|  
+|`Resources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 將 .NET Framework 資源內嵌到輸出檔中。 這個參數對應於 vbc.exe 編譯器的 [/resource](/dotnet/visual-basic/reference/command-line-compiler/resource) 參數。|  
+|`ResponseFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含適用於此工作之命令的回應檔。 此參數對應至 vbc.exe 編譯器的 [@ (指定回應檔)](/dotnet/visual-basic/reference/command-line-compiler/specify-response-file) 選項。|  
 |`RootNamespace`|選擇性的 `String` 參數。<br /><br /> 指定所有類型宣告的根命名空間。 這個參數對應於 vbc.exe 編譯器的 [/rootnamespace](/dotnet/visual-basic/reference/command-line-compiler/rootnamespace) 參數。|  
 |`SdkPath`|選擇性的 `String` 參數。<br /><br /> 指定 mscorlib.dll 和 microsoft.visualbasic.dll 的位置。 這個參數對應於 vbc.exe 編譯器的 [/sdkpath](/dotnet/visual-basic/reference/command-line-compiler/sdkpath) 參數。|  
-|`Sources`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 原始程式檔。|  
+|`Sources`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定一或多個 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 原始程式檔。|  
 |`TargetCompactFramework`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，工作會以 [!INCLUDE[Compact](../extensibility/includes/compact_md.md)] 為目標。 這個參數對應於 vbc.exe 編譯器的 [/netcf](/dotnet/visual-basic/reference/command-line-compiler/netcf) 參數。|  
 |`TargetType`|選擇性的 `String` 參數。<br /><br /> 指定輸出檔的檔案格式。 此參數的值如下：`library` (可建立程式碼程式庫)、`exe` (可建立主控台應用程式)、`module` (可建立模組) 或 `winexe` (可建立 Windows 程式)。 預設為 `library`。 這個參數對應於 vbc.exe 編譯器的 [/target](/dotnet/visual-basic/reference/command-line-compiler/target) 參數。|  
 |`Timeout`|選擇性的 `Int32` 參數。<br /><br /> 指定時間量 (以毫秒為單位)，在此時間量之後會終止工作可執行檔。 預設值是 `Int.MaxValue`，表示沒有逾時期間。|  
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
    OutputAssembly="out.exe"/>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Basic 命令列編譯器](/dotnet/visual-basic/reference/command-line-compiler/index)   
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

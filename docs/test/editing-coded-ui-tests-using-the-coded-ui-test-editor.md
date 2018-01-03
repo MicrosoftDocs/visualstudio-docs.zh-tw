@@ -13,11 +13,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: "40"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 637bf6a6e52943e2eae247bbe5a40e10c2d3742d
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2bce8aa82b1076860f9c9b96e39e7a13955b9444
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用自動程式化 UI 測試編輯器，編輯自動程式化 UI 測試
 自動程式碼 UI 測試編輯器可讓您輕鬆地修改自動程式碼 UI 測試。 您可以使用自動程式碼 UI 測試編輯器，尋找、檢視和編輯測試方法和 UI 動作的屬性。 此外，您也可以使用 UI 控制項對應，檢視和編輯其對應的控制項。  
@@ -213,7 +214,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括 CodedUI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [建立資料驅動自動程式碼 UI 測試](../test/creating-a-data-driven-coded-ui-test.md)   

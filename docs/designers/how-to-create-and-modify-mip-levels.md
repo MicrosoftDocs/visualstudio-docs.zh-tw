@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18f7aa6c48b0f1deebd292193d46119e8a97c4b6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fbc385f5bf00d8e54aadc21162a9174be71d416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：建立和修改 MIP 層級
 本文件將示範如何使用「影像編輯器」來產生和修改材質空間「詳細層級」(LoD) 的「MIP 層級」。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  如果您不需要修改個別 MIP 層級的內容 (就像您想要達成特定效果時可能會做的)，建議您在建置階段從來源材質產生 Mipmap。 這有助於確保 MIP 層級與來源材質保持同步，因為對某個 MIP 層級的修改並不會自動傳播至其他層級。 如需有關如何在建置階段產生 Mipmap 的詳細資訊，請參閱[如何：匯出包含 Mipmap 的材質](../designers/how-to-export-a-texture-that-contains-mipmaps.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立基本材質](../designers/how-to-create-a-basic-texture.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d80aa5c71651fc6540711dc23ee2f9c8d45415b9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18d2fa0dd28d22e04b4df5942c3a3585693ede33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何︰暫停和繼續效能資料收集
 您可以從程式碼剖析工作階段頁面視窗，透過互動的方式控制程式碼剖析資料的收集。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
     -   選擇 [停止分析] 即可結束程式碼剖析工作階段並產生報告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)

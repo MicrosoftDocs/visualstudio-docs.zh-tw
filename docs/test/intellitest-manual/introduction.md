@@ -12,11 +12,12 @@ ms.assetid: A7B98509-7ACA-4E25-BD1B-BBC98742F028
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 454cd11d9e196e7de9775448640a8ee22c434d4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a7dac076dabaf0d44a1eda9c267e5c9b2eafe5a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Microsoft IntelliTest 的概觀
 
@@ -107,7 +108,7 @@ public void HelloWorldThrowsException167()
 * [並行](#concurrency)
 * [原生 .NET 程式碼](#native-code)
 * [平台](#platform)
-* [語言](#language)
+* [Language](#language)
 * [符號推理](#symbolic-reasoning)
 * [堆疊追蹤](#incorrect-stack)
 

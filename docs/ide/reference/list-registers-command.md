@@ -17,11 +17,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 83f4830b79c4492337abb6052b1b2803b34b5a9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 016de257d1ce4e6d2aa95284adbe762a5c54eacf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-registers-command"></a>列出暫存器命令
 顯示所選暫存器的值，並讓您修改要顯示的暫存器清單。  
@@ -63,7 +64,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
 r /Display Flags  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [偵錯基本概念：暫存器視窗](../../debugger/debugging-basics-registers-window.md)   
  [如何：使用暫存器視窗](../../debugger/how-to-use-the-registers-window.md)

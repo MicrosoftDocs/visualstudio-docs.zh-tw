@@ -23,11 +23,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61b3ab54929cdd7e6a584737f8963302335c4fd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 3ef5133f1d92d9f18a62117e40a0788766dfe439
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages"></a>選項，文字編輯器，所有語言
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要開啟此對話方塊，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [一般]。  
@@ -95,7 +96,7 @@ ms.lasthandoff: 11/02/2017
  巡覽列  
  選取時，會在程式碼編輯器的頂端顯示 [導覽列]。 它的下拉式 [物件] 和 [成員] 清單，可讓您選擇程式碼中的特定物件、從其成員選擇，並在程式碼編輯器中巡覽至選取之成員的宣告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項、文字編輯器、所有語言、定位點](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [使用 IntelliSense](../../ide/using-intellisense.md)

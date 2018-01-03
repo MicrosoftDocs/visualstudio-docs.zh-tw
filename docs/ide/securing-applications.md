@@ -15,11 +15,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: da6628c34570bfe637c2cc5b3d8cad12b16dac12
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 665f03744fc559727e96373512fc983e5d75293c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="securing-applications"></a>設定應用程式的安全性
 雖然大部分的應用程式都有共通的安全性挑戰，但每個應用程式定義域擁有自己的安全性挑戰。  
@@ -66,5 +67,5 @@ ms.lasthandoff: 10/31/2017
  [Windows Forms 安全性](/dotnet/framework/winforms/windows-forms-security)  
  提供 Windows Form 安全性實作的概觀。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全性](../ide/security-in-visual-studio.md)

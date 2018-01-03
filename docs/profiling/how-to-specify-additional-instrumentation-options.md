@@ -17,16 +17,17 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 59bc7f5a03577c00d6c085ff1a6861e73eda2f71
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c663b4de5f35df1d0fb1bdcfda076502360361d5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>如何：指定其他的檢測選項
 您可以從 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中或是使用命令列工具檢測二進位檔。 如果是從 IDE 中檢測二進位檔，您可以為 [VSInstr](../profiling/vsinstr.md) 工具指定其他的檢測選項，藉以控制檢測期間所收集的資料量。 這些選項可以在工作階段或目標層級中使用。 例如，若要在檢測程序期間包含或排除特定函式，請在目標層級使用其他的檢測選項。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -43,8 +44,8 @@ ms.lasthandoff: 10/31/2017
   
      例如，使用 /CONTROL:THREAD 以指定程式碼剖析層級。 如需選項的完整清單，請參閱 [VSInstr](../profiling/vsinstr.md)。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

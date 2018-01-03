@@ -17,11 +17,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a87b97946e3b0c45b00bdfe00a4da23c266605c7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bebac9ca310230fa0b5d63ce56a8caa6b524a145
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：擴充 Visual Studio 建置處理序
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序是由匯入至您專案檔的一系列 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .targets 檔案所定義。 可以擴充其中一個已匯入的檔案 (Microsoft.Common.targets)，以讓您在建置處理序的數個點執行自訂工作。 本主題說明您可以使用兩種方法來擴充 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 建置處理序：  
@@ -119,13 +120,13 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="commonly-overridden-dependson-properties"></a>經常覆寫的 "DependsOn" 屬性  
   
-|屬性名稱|說明|  
+|屬性名稱|描述|  
 |-------------------|-----------------|  
 |`BuildDependsOn`|如果您想要在整個建置處理序之前或之後插入自訂目標，這是要覆寫的屬性。|  
 |`CleanDependsOn`|如果您想要清除自訂建置處理序的輸出，這是要覆寫的屬性。|  
 |`CompileDependsOn`|如果您想要在編譯步驟之前或之後插入自訂處理序，這是要覆寫的屬性。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [.Targets 檔案](../msbuild/msbuild-dot-targets-files.md)

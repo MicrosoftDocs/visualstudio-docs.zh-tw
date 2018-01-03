@@ -20,11 +20,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 49da59387ccd3c7367e06c91fc7f57b824e32ab5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5ec46e5d6aea28a4124447c0f541cfb71e2f62f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 項目
 包含選擇性參數清單，將出現在 `UsingTask``TaskFactory` 所產生的工作中。 如需詳細資訊，請參閱 [UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -45,15 +46,15 @@ ms.lasthandoff: 10/31/2017
 ### <a name="attributes"></a>屬性  
  無。  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Parameter](../msbuild/parameter-element.md)|包含 `UsingTask``TaskFactory` 所產生之工作的特定參數相關資訊。 項目的名稱是參數的名稱。|  
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供一種方式，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。|  
 
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

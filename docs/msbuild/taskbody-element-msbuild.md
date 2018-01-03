@@ -20,11 +20,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2f0f502a206a321bd581054eecef0b75485809e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5263de3b583d39294ca5011922df441aee892d4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="taskbody-element-msbuild"></a>TaskBody 項目 (MSBuild)
 包含傳遞至 `UsingTask``TaskFactory` 的資料。 如需詳細資訊，請參閱 [UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |`Evaluate`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，當具現化工作時，MSBuild 會評估所有內部元素，並且展開項目和屬性，然後才將資訊傳遞給 `TaskFactory`。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
 
 |項目|描述|  
 |-------------|-----------------|  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[UsingTask](../msbuild/usingtask-element-msbuild.md)|提供一種方式，在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中登錄工作。 專案中可能有零或多個 `UsingTask` 項目。|  
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 10/31/2017
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

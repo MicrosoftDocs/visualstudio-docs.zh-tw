@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43217eeac5722923daca289113f3f5407ae7c649
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e813e51511b88397f0accc637e85d9e546b48c47
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：管理編輯器中的自動換行
 您可以設定和清除 [自動換行] 選項。 設定這個選項時，過長的行超出目前程式碼編輯器視窗寬度的部分會顯示在下一行。 清除這個選項時，例如，為了方便使用行號，您可以捲動到右邊以看到過長行的結尾。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  這些提醒箭頭不會新增到程式碼：它們僅供顯示之用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)   
  [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)

@@ -11,11 +11,12 @@ ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: "19"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 39b3ce6765d1f4ec342d9a6e5b156eaee01f0faf
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 63018bdae7cec687ccf81d53ef6e35ecdc169c83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-testing-visual-c-code-in-a-uwp-app"></a>對 UWP 應用程式中的 Visual C# 程式碼進行單元測試
 本主題說明如何在 UWP 應用程式中建立 Visual C# 類別的單元測試。 Rooter 類別會藉由實作計算某數值的平方根估計數的函式，示範微積分中極限理論的模糊記憶。 然後 Maths 應用程式就可以使用這個函式向使用者展現許多可運用數學運算執行的有趣作業。  

@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8cfba9d4868f72ba327035c2fe865fd8ffe6344f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ebb6579cd4ac4ee96547bbc7d70f471f17e4e53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sgen-task"></a>SGen 工作
 針對指定組件中的型別建立 XML 序列化組件。 此工作會包裝 XML 序列化程式產生器工具 (Sgen.exe)。 如需詳細資訊，請參閱 [XML 序列化程式產生器工具 (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe)。  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.ToolTask> 類別。 如需這些其他參數的清單及其說明，請參閱 [ToolTaskExtension 基底類別](../msbuild/tooltaskextension-base-class.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)

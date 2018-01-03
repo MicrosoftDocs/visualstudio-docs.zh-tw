@@ -16,16 +16,17 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b94b842566c3f8bf5ad5374acda0ccc9e9b50cbe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff646066c4e29c46c7ad3c24322d368fa54da9eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：選擇收集方法
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具支援三種效能資料收集方法︰取樣、檢測和並行。 您也可以使用取樣或檢測方法來收集 .NET 記憶體配置和存留期資料。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -37,7 +38,7 @@ ms.lasthandoff: 10/31/2017
   
 -   在精靈的第一個頁面上，選取下列其中一個選項︰  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**CPU 取樣**|收集對初始分析和 CPU 使用率問題分析有用的應用程式統計資料。|  
 |**檢測**|收集對重點分析和輸入/輸出效能問題分析有用的詳細計時資料。|  
@@ -96,7 +97,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  按一下 [並行]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)

@@ -11,16 +11,17 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fa2ffd383d2180b672347043dd02459473e3a608
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 72c8918d0f3396273bb0eee81cddd8f09c779592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel
 自動程式化 UI 測試的測試架構和動作記錄並不支援所有可能的使用者介面。 它可能不支援您要測試的特定 UI。 例如，您無法立即為 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 試算表建立自動程式碼 UI 測試或動作記錄。 不過，您可以利用自動程式碼 UI 測試架構的擴充性，在自動程式碼 UI 測試架構中自行建立可以支援特定 UI 的擴充功能。 以下主題會透過範例說明如何擴充架構，以支援 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的自動程式碼 UI 測試和動作記錄建立作業。 如需支援平台的詳細資訊，請參閱[自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -71,7 +72,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="testing-excel-with-the-sampletestproject"></a>使用 SampleTestProject 測試 Excel  
  您可以在提供的測試專案中執行測試 (該專案可能會使用您沒有的特定版本 Excel)，或是自行建立測試專案並自行記錄測試。 如需詳細資訊，請參閱[建立自動程式化 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>   

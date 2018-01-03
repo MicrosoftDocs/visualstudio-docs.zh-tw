@@ -11,11 +11,12 @@ ms.assetid: a4868fae-fd6d-4b98-a85f-f23b0dd2fca5
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 4a67fa6e2a9f317643fe63138a4212676606a64d
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: 7655c8690c48657c9efab967851ceff43c253135
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 Google Test
 在 **Visual Studio 2017 15.5 版**和更新版本中，Google Test 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的預設元件。 若要確認已安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 Google Test：
@@ -47,7 +48,7 @@ ms.lasthandoff: 11/17/2017
 ## <a name="write-and-run-tests"></a>撰寫及執行測試
 您現在準備好撰寫及執行 Google Test。 如需測試巨集的資訊，請參閱 [Google Test 入門](https://github.com/google/googletest/blob/master/googletest/docs/Primer.md)。 如需使用**測試總管**探索、執行及分組測試的資訊，請參閱[使用測試總管執行單元測試](run-unit-tests-with-test-explorer.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
 

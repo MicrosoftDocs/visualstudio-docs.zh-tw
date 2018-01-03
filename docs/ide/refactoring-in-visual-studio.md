@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f3ce9677f344b8d97992d78b08ed44341657d51c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c4c5b0e1cb14e32ae4303da76baca7b7ef88590f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-in-visual-studio"></a>在 Visual Studio 中重構
 重構是修改程式碼的流程，以使其更容易維護、了解和擴充，但不會變更其行為。 某些常見的「重構」包含：  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="refactoring-in-f"></a>在 F# 中重構 #
  支援 F# 的重構於第三方 Visual Studio 延伸模組 [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff) 中提供。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)   
  [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)  
  [預覽變更](../ide/preview-changes.md)

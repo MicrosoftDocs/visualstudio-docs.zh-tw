@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 573e88f1ebc3777f0ce6a6bfa048a9784d8f6488
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca64f2a05e587fdaf3b7ee46e13abc49406cd65
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多目標概觀
 您可以使用 MSBuild，將應用程式編譯為在數個 .NET Framework 版本中的任一版上或數個系統平台中的任一個平台上執行。 例如，您可以將應用程式編譯為在 32 位元平台的 .NET Framework 2.0 上執行，也可以將同一個應用程式編譯為在 64 位元平台的 .NET Framework 4.5 上執行。  

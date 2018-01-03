@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 510913c4989e0dac8fd3fa3091a91b2173639c83
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 46f56fc6bad74b3144b3dbd4701248598a01883b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 
@@ -158,7 +159,7 @@ IntelliSense 會記住您最近在 [[列出成員]](../ide/using-intellisense.md
 > [!NOTE]
 > 使用 [檢視] 功能表上的 [向後巡覽] 命令 (**Ctrl** + **-**)，返回事件連結陳述式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 IntelliSense](../ide/using-intellisense.md)  
 [Visual Studio IDE](../ide/visual-studio-ide.md)

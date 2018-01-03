@@ -22,18 +22,19 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5a8b4c68e5ed3d9d2322f7e2468c800bea793590
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2dfa5dd2112557d942e2e7dc1011bc605ae3e974
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 工作
 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 工作會將未當地語系化的 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 專案檔案轉換成已編譯的二進位格式。  
   
 ## <a name="task-parameters"></a>工作參數  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AllGeneratedFiles`|選擇性的 **ITaskItem[]** 輸出參數。<br /><br /> 包含 <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass1> 工作產生的完整檔案清單。|  
 |`AlwaysCompileMarkupFilesInSeparateDomain`|選擇性的 **Boolean** 參數。<br /><br /> 指定是否在不同的 <xref:System.AppDomain> 中執行工作。 如果此參數傳回 **false**，工作就會在與 [!INCLUDE[TLA#tla_msbuild](../msbuild/includes/tlasharptla_msbuild_md.md)] 相同的 <xref:System.AppDomain> 中執行，且執行速度會較快。 如果此參數傳回 **true**，工作就會在與 [!INCLUDE[TLA2#tla_msbuild](../msbuild/includes/tla2sharptla_msbuild_md.md)] 隔離的第二個 <xref:System.AppDomain> 中執行，且執行速度會較慢。|  
@@ -120,7 +121,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)   
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

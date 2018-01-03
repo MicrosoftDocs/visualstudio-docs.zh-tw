@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 5ef21632d4d1de211aeb84c00adc0f852d4ebae9
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: cplusplus
+ms.openlocfilehash: e7b9d0ef40fd0efc4bbf071ef5da75b13e8dd82a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-experimental"></a>選項、文字編輯器、C/C++、實驗
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/22/2017
 Visual Studio 2017 安裝提供這些功能。
 
 > [!NOTE]
-> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
+> 在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="enable-predictive-intellisense"></a>啟用預測性 Intellisense
 
@@ -53,9 +54,9 @@ Visual Studio 2017 安裝提供這些功能。
 
 - **線上說明** - 在線上說明中搜尋錯誤訊息
 
-- 等等
+- 等等...
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)  
 [Refactoring in C++ (VC Blog)](http://blogs.msdn.com/b/vcblog/archive/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview.aspx) (在 C++ 中重構 (VC 部落格))

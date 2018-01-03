@@ -14,14 +14,15 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 24e0019ce0111c4a557e54fe7c2e2dfa40658ef6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 26f0a0eae84e8a1247996dc21dff002ad7e79239
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unblocking-stack"></a>解除封鎖堆疊
 如果目前選取的執行緒元素代表封鎖的區段，稍後會在目前處理序中的另一個執行緒將其解除封鎖之後執行，此索引標籤上會顯示執行解除封鎖的執行緒呼叫堆疊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

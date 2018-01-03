@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 robots: noindex,nofollow
-ms.openlocfilehash: 59669f0430760bb98dd0cb63e05f433cb3a1fe54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0eb22a7ac23c0848984ba872ccbcb2e40fb61fe5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-cpu-usage-in-a-universal-windows-app-uwp"></a>分析通用 Windows App (UWP) 中的 CPU 使用量
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -311,6 +312,6 @@ namespace CpuUseDemo
 }  
   
 ```
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

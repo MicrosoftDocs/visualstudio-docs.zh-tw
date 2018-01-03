@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 646faaa3c80a01565540bd05850b76286121203a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 79105e43cba14c12cf0f82edd05b57286c012ee5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="flag-markers"></a>旗標標記
 旗標標記表示在應用程式時間中的某個時刻發生的項目。 旗標可代表許多種類的應用程式事件。 比方說，當特定工作項目已排程或擲回例外狀況時，可以顯示旗標。 工作平行程式庫等的執行階段也可以產生旗標。  
@@ -48,6 +49,6 @@ ms.lasthandoff: 10/31/2017
  ![顯示四種重要性層級的彙總旗標](../profiling/media/cvmarkeraggregate.png "CVMarkerAggregate")  
 依重要性層級排序的彙總旗標  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)   
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

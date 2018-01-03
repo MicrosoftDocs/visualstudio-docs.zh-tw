@@ -11,11 +11,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: "6"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1a723104cdd350dcc2c5fac80eef4e98b178df4c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 9468b796a601956941fb8d913e6ae6198afbfa59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>在單元測試中使用 Microsoft.VisualStudio.TestTools.UnitTesting 成員
 單元測試架構支援 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的單元測試。 當您撰寫單元測試的程式碼時，請使用 Microsoft.VisualStudio.TestPlatform.UnitTestFramework 命名空間中的類別與成員。 當您從頭開始撰寫單元測試，或正在調整從您正在測試的程式碼所產生的單元測試時，您可以使用它們。  
@@ -127,5 +128,5 @@ ms.lasthandoff: 10/27/2017
   
 -   Microsoft.VisualStudio.TestPlatform.UnitTestFramework.PrivateType  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  Microsoft.VisualStudio.TestPlatform.UnitTestFramework

@@ -15,17 +15,18 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a1f2bc5acb69aa49fb37713942edb4e018039e8a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ca6dd3c084c6ef8287469b3c1629af49e7a6f4fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>使用 VSPerfASPNETCmd 快速進行網站程式碼剖析
 **VSPerfASPNETCmd** 命令列工具可讓您輕鬆地分析 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式。 與 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具相較之下，選項變少，無須設定任何環境變數，也不需要重新啟動電腦。 使用獨立分析工具進行程式碼剖析慣用的方法是使用 **VSPerfASPNETCmd**。 如需詳細資訊，請參閱[如何：安裝獨立分析工具](../profiling/how-to-install-the-stand-alone-profiler.md)。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  在某些情況下，像是收集並行資料或暫停和繼續程式碼剖析時，慣用的程式碼剖析方法是使用 **VSPerfCmd**。  
   
@@ -96,7 +97,7 @@ ms.lasthandoff: 11/11/2017
 ## <a name="additional-options"></a>其他選項  
  您可以將本節中的任何下列選項加入至稍早所列的命令，但 **vsperfaspnetcmd /shutdown** 命令除外。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**/Output:** `VspFile`|根據預設，會使用檔案名稱**PerformanceReport.vsp** 在目前目錄中建立程式碼剖析資料 (.vsp) 檔案。 您可以使用 /output 選項指定不同的位置、 檔案名稱，或兩者。|  
 |**/PackSymbols:Off**|根據預設，VsPerfASPNETCmd 會將符號 (函式和參數名稱等等) 嵌入 .vsp 檔。 內嵌符號會讓程式碼剖析資料檔案變得非常大。 如果當您分析資料時，可以存取含有符號的 .pdb 檔案，請使用 /packsymbols:off 選項以停用內嵌符號。|

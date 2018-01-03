@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83922b913e810042bef82eb0b81a0e42f8d3bbb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e5a9e6029ed579a6e7464eae8a198948c49fed58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseriesmarkerseries-constructor"></a>marker_series::marker_series 建構函式
 初始化 `marker_series` 類別的新執行個體。  
@@ -51,5 +52,5 @@ marker_series(
   
  **命名空間：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [marker_series 類別](../profiling/marker-series-class.md)

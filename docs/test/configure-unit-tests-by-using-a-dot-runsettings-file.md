@@ -11,11 +11,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a02ce3721b6eb96770c9fbf074179b7afefdb97b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 36e235af45e1ce313f2f0e22ab9777d5e205dbe1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 檔案設定單元測試
 您可以使用 \*.runsettings 檔案來設定 Visual Studio 中的單元測試。 (檔案名稱並不重要，但前提是您使用副檔名 '.runsettings'。) 例如，您可以變更執行測試的 .NET Framework、傳遞測試結果的所在目錄，以及測試回合期間所收集的資料。  
@@ -162,6 +163,6 @@ ms.lasthandoff: 10/27/2017
 |InProcMode|false|如果您想要在 MS 測試配接器的處理序中執行測試，請將此值設定為 true。 這個設定提供較小效能。 但如果測試因為例外狀況而結束，其他測試將不會繼續。|  
 |AssemblyResolution|false|您可以在求解及執行單元測試時，指定其他組件的路徑。  例如，您可以針對與測試組件位於不同目錄的相依性組件，使用這些路徑。  若要指定路徑，請使用 "Directory Path" 項目。  路徑可以包含環境變數。<br /><br /> `<AssemblyResolution>  <Directory Path>"D:\myfolder\bin\" includeSubDirectories="false"/> </AssemblyResolution>`|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
  [指定 Visual Studio 測試的測試設定](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)

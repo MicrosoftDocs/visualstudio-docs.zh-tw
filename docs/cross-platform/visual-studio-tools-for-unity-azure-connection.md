@@ -11,11 +11,14 @@ ms.assetid: 516A8FB2-8DFF-4BAB-8116-FDCD1C228DB3
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: f21e320fe9e27f6873b9caed3048a93bfa94a9c4
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: cb2ce447f21231b98d6464824ba7d088fee16cce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-the-client-connection"></a>測試用戶端連線
 

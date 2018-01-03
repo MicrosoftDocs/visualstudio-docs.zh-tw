@@ -11,11 +11,12 @@ ms.assetid:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 94348821e44b5ed07e3df5e4859796342919a833
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 4a4093c7ebba74493a64833bfbf83ee6d28ef1ef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whitelisting-urls-in-a-private-network"></a>將私人網路中的 URL 置於白名單中
 
@@ -54,8 +55,7 @@ Visual Studio 使用傳輸層安全性 (TLS) 1.2 通訊協定連線到網路資�
 > [!NOTE]
 > 上列清單可能不含私人擁有的 NuGet 伺服器 URL。 您可以藉由開啟 %APPData%\Nuget\NuGet.Config 來檢查您所使用的 NuGet 伺服器。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [需要 Proxy 授權錯誤](../ide/reference/proxy-authorization-required.md)  
-[Visual Studio 所使用的網際網路資源](../ide/connected-environment.md)  
 [將 Visual Studio 安裝在防火牆或 Proxy 伺服器後方](../install/install-visual-studio-behind-a-firewall-or-proxy-server.md)

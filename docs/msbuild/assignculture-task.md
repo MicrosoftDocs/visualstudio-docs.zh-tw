@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1522f4d3b7f97ccea1529c043e6179502fcd14a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 765f74a80e98737b65fb913113b2879ce4609248
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assignculture-task"></a>AssignCulture 工作
 這項工作接受項目清單檔案名稱中包含有效的 .NET 文化特性識別碼字串，而產生的項目有包含對應的文化特性識別碼中繼資料，名為 `Culture`。 例如，檔案名稱 Form1.fr-fr.resx 有內嵌的文化特性識別碼 "fr-fr"，所以此工作會產生中繼資料 `Culture` 等於 `fr-fr` 的同檔名項目。 工作也會產生檔名移除了文化特性的檔案名稱清單。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `AssignCulture` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AssignedFiles`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含以 `Files` 參數接收到的項目清單，每個項目都會新增 `Culture` 中繼資料項目。<br /><br /> 如果從 `Files` 參數傳入的項目已包含 `Culture` 中繼資料項目，則使用原始的中繼資料項目。<br /><br /> 如果檔案名稱中包含有效的文化特性識別碼，此工作只會指派 `Culture` 中繼資料項目。 文化特性識別碼必須介於檔案名稱的最後兩個點之間。|  
 |`AssignedFilesWithCulture`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 包含來自 `AssignedFiles` 參數，具有 `Culture` 中繼資料項目的項目子集。|  
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
 |`OutAssignedFilesWithNoCulture`|`MyResource2.XX.resx` (沒有其他的中繼資料)|  
 |`OutCultureNeutralAssignedFiles`|`MyResource1.resx (Culture="fr")`<br /><br /> `MyResource2.XX.resx (` (沒有其他的中繼資料)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -28,11 +28,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0f6535c656c512d5c849a8a5d8d2fb37319aa883
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 70daed24f72e6bf9efc0c81fc309c4b893285c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理編輯器模式
 您可以使用各種不同的顯示模式來顯示 Visual Studio 程式碼編輯器。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 11/07/2017
     > [!NOTE]
     >  在 [資料行選取] 模式中會啟用 [虛擬空間]。 未啟用 [虛擬空間] 模式時，插入點會從一行結尾直接移到下一行的第一個字元。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [自訂編輯器](../ide/customizing-the-editor.md)   
 [在 Visual Studio 中自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)   
 [選項對話方塊、環境、字型和色彩](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

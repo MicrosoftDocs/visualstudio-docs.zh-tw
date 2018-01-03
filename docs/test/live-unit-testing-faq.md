@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 61baf3bb-646f-4c5a-b7c0-a6bdff68f21c
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 4a585310f19a03524d73deeb863b080d1d335c6c
-ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
+ms.workload: dotnet
+ms.openlocfilehash: 6845c97f906e19ed86b0baec5fa23b6bdca73632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Live Unit Testing 常見問題集
 
@@ -266,7 +267,7 @@ Live Unit Testing 目前無法與輕量型解決方案載入功能良好搭配�
 
 - 建立名為 `VS_UTE_DIAGNOSTICS` 的使用者層級環境變數，並將它設為 1 (或任何值)，然後重新啟動 Visual Studio。 現在您應該會在 Visual Studio 的 [輸出 - 測試] 索引標籤中看見許多記錄。 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [即時單元測試](live-unit-testing.md)
  

@@ -14,18 +14,19 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0be707ec592265c75ce6e0c36954010e496ac91c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 2ecea317b60e100b282428d953694238b5c63f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>測試含有多個 UI 對應的大型應用程式
 本主題討論如何使用自動程式化 UI 測試，透過多個 UI 對應來測試大型應用程式。  
   
- **Requirements**  
+ **需求**  
   
--   Visual Studio Enterprise  
+-   Visual Studio 企業版  
   
  當您建立新的自動程式化 UI 測試時，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 測試架構預設會在 <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> 類別中產生測試的程式碼。 如需如何錄製自動程式碼 UI 測試的詳細資訊，請參閱[建立自動程式碼 UI 測試](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)和[自動程式碼 UI 測試的結構](../test/anatomy-of-a-coded-ui-test.md)。  
   
@@ -138,7 +139,7 @@ namespace ContosoProject
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.BrowserWindow.CopyFrom%2A>   
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   

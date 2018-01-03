@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b196adf16359c640ba08495b36f4ba428cf8ba48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc5a5013b402d01db8aa84134c9a2740d0ff6304
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-visual-studio"></a>選項對話方塊 (Visual Studio)
 [選項] 對話方塊可讓您依需求設定整合式的開發環境 (IDE)。 例如，您可以建立專案的預設儲存位置、改變視窗的預設外觀和行為，並建立常用命令的快速鍵。 也有開發語言與平台的專屬選項。 您可以從 [工具] 功能表存取 [選項]。  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="show-all-settings"></a>顯示所有設定  
  選取或取消選取 [顯示所有設定] 適用於所有在 [選項] 對話方塊中進行的變更，即使您還沒按一下 [確定]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)

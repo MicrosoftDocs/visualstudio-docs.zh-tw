@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4878b71317e67c152c45d58168531f1039128f0e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4714399d1ea7b17f1d79858185157e9c11902d7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>步驟 1：建立 Windows Forms 應用程式專案
 建立圖片檢視器的第一個步驟是建立 Windows Forms 應用程式專案。  
@@ -68,7 +69,7 @@ IDE 視窗
   
      Visual Studio 會自動填入資料夾名稱和專案名稱，然後將專案儲存在專案資料夾中。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 2：執行您的程式](../ide/step-2-run-your-program.md)。  
   

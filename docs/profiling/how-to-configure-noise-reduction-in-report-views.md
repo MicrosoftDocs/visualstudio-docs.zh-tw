@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1cda2b61c50deb98752063f9606849356386a84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c0648336f4ba6be42de7253c27703fe544fb58d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在報表檢視中設定減少雜訊
 效能報告可透過限制 [呼叫樹狀圖] 檢視和 [配置] 檢視中呈現的資料量來減少雜訊。 藉由減少雜訊，效能問題將更為顯著。 在分析效能報告時，這一點非常有用。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要停用修剪，請清除 [啟用修剪]。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ### <a name="to-configure-folding-for-a-performance-report"></a>設定折疊效能報告  
   
@@ -76,9 +77,9 @@ ms.lasthandoff: 10/31/2017
   
 3.  若要停用摺疊，請清除 [啟用摺疊]。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)   
  [如何：從檢測排除或包含精簡函式](../profiling/how-to-exclude-or-include-short-functions-from-instrumentation.md)   
  [呼叫樹狀圖檢視](../profiling/call-tree-view.md)   

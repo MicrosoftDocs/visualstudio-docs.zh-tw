@@ -15,16 +15,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4157b6292a292274a24242fddc46fb1f707247e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ae9531eb344cf08599f1c69bcc0842f38f10df1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-data-views"></a>一般資料檢視
 本節包含所有分析方法常見分析工具資料檔案之檢視與報表的相關參考資訊。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [摘要檢視](../profiling/summary-view.md)  
  描述摘要檢視和報表。 資料行取決於分析方法。  
   

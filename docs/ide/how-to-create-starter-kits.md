@@ -13,11 +13,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e93d1f3e49384097cdadf6623dae2415fe63cd18
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a5994739df03752521b60ac4f415323c6bc4a8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-starter-kits"></a>如何：建立入門套件
 入門套件包含完整應用程式的程式碼，以及如何修改或擴充應用程式的文件。 建立入門套件基本上與建立標準專案範本相同，唯一的差異在於入門套件所包含的文件檔案設定為在建立根據入門套件的專案時開啟。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
  [如何：更新現有的範本](../ide/how-to-update-existing-templates.md)  
  描述如何編輯已匯出的範本。 使用此程序即可修改 .vstemplate 檔案來自訂入門套件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

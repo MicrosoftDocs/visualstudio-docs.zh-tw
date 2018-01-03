@@ -14,11 +14,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 7759e67a4ce886388b9a7afea531448edeefac54
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 990c13a0fa42d845668c66419ab5cd989b6d2d61
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="talk-to-us"></a>Talk to Us
 我們想要知道您對於改善我們產品和文件的看法。 我們無法一一回應，但我們會確保您的意見傳達至適當的人員或小組。  
@@ -52,5 +53,5 @@ Microsoft 支援服務可能因當時的價格、條款和條件而有所變更�
 ## <a name="i-want-to-help-improve-the-visual-studio-documentation"></a>我想要協助改善 Visual Studio 文件  
   請使用頁面底部的意見反應按鈕 (**本頁是否能提供幫助？**)。 您可以在所有文件頁面上找到這個按鈕。 如果找不到您需要的解答，請告訴我們您要找什麼樣的資訊。 (或者，您可以使用 [Comments]\(註解) 區段，將意見反應新增至 [docs.microsoft.com](https://docs.microsoft.com/visualstudio/) 上的任何 Visual Studio 頁面)。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何回報 Visual Studio 的問題](how-to-report-a-problem-with-visual-studio-2017.md)

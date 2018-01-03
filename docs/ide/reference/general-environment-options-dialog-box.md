@@ -29,11 +29,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 615aff9adacc8c4ce54505b0267f4bb39608dfe1
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: de71795242cd5fbb1d41f3d071629e54cf5d04f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="general-environment-options-dialog-box"></a>選項對話方塊、環境、一般
 
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/22/2017
 **自動隱藏 按鈕只影響作用中的工具視窗**  
 指定按一下 [自動隱藏] 按鈕時，只會自動隱藏具有焦點的工具視窗，而非停駐集中的所有工具視窗。 根據預設，這個選項並未選取。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)  
 [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

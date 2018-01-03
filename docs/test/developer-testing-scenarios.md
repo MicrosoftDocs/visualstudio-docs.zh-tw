@@ -12,11 +12,12 @@ ms.assetid: 9DE41406-8D39-427E-99D9-987E99103B73
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: feb31e2a5c4abf0013ee4d3ec0a20c7f3cfdff2a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: f384722161ff46a193c1492698ab9ef7543eaefc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>開發人員測試工具、案例和功能
 
@@ -95,7 +96,7 @@ Visual Studio 亦為可延伸，並且會開啟 NUnit 和 xUnit.net 這類協力
 
 ![協力廠商測試整合](media/devtest-thirdparty.png)
 
-## <a name="also-see"></a>另請參閱
+## <a name="see-also"></a>另請參閱
 
 * [開始使用單元測試](getting-started-with-unit-testing.md)
 * [Speeding up Unit Test Execution in Team Foundation Server](http://blogs.msdn.com/b/visualstudioalm/archive/2015/07/30/speeding-up-test-execution-in-tfs.aspx) (加速 Team Foundation Server 中的單元測試執行)

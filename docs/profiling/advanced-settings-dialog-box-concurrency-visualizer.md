@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 412253e6b182488179e7b3eaa4098ff026d66cfb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44087bc1626ddde5b2e3339a874d16ec4af16b4d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>進階設定對話方塊 (並行視覺化檢視)
 使用並行視覺化檢視中的 [進階設定] 對話方塊，您可以控制收集追蹤的方式。  此對話方塊提供適用於符號、Just My Code、緩衝處理、篩選、CLR 事件、標記、提供者及檔案的索引標籤。  
@@ -85,6 +86,6 @@ ms.lasthandoff: 10/31/2017
   
  這兩個 ETL 檔案會儲存原始追蹤資料，而這兩個並行視覺化檢視檔案會儲存已處理的資料。  在處理追蹤之後，通常不會用到原始的 ETL 檔案。  選取 [分析後刪除事件追蹤記錄 (ETL) 檔案] 核取方塊，可減少儲存在磁碟上的追蹤資料量。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Just My Code](../profiling/just-my-code-threads-view.md)   
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)

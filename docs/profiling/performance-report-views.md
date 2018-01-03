@@ -16,16 +16,17 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e93b23c9bd30ec81088b7ec9a81cda837d6bafd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cb369d239cd480456cd54382cab0befe5c37b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-views"></a>效能報告檢視
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具報表和檢視的參考資訊。 程式碼剖析資料檔案的檢視會顯示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境 (IDE) 中， 報表則由 [VSPerfReport](../profiling/vsperfreport.md) 命令列工具產生。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [一般資料檢視](../profiling/common-data-views.md)  
  所有程式碼剖析方法中常見的程式碼剖析資料檔案之檢視和報告的參考資訊。  
   
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
  [階層互動檢視](../profiling/tier-interactions-view.md)  
  包含階層互動資料的程式碼剖析資料檔案之互動檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

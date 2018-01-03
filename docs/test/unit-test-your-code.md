@@ -15,11 +15,12 @@ ms.assetid: c191de3e-3f3b-471e-b828-29ec24e80e2c
 caps.latest.revision: "62"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7d4b3634f651cd8fc0ebc9c2e5254914a62e3771
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: a60e3236769cbaf35a9b232629834a8b8d52a852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="unit-test-your-code"></a>對程式碼進行單元測試
 單元測試提供開發人員及測試人員一個快速的方法，可在 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)]、[!INCLUDE[vb_current_short](../debugger/includes/vb_current_short_md.md)] 和 [!INCLUDE[cpp_current_short](../misc/includes/cpp_current_short_md.md)] 專案中查看類別之方法中的邏輯錯誤。  
@@ -72,7 +73,7 @@ ms.lasthandoff: 11/15/2017
   
 ## <a name="external-resources"></a>外部資源  
   
-### <a name="videos"></a>影片  
+### <a name="videos"></a>視訊  
  [Channel 9: Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (單元測試使用 XAML 建置的 UWP 應用程式)  
   
 ### <a name="forums"></a>論壇  
@@ -84,6 +85,6 @@ ms.lasthandoff: 11/15/2017
 ### <a name="reference"></a>參考資料  
  [單元測試的內容索引](http://go.microsoft.com/fwlink/?LinkID=254719)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [改善程式碼品質](/visualstudio/test/improve-code-quality)   
  [測試應用程式](/devops-test-docs/test/test-apps-early-and-often)

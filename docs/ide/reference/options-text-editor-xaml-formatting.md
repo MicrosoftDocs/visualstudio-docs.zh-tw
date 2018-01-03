@@ -34,11 +34,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 978a2709fb95a0ade74f5c67d5dc774823ded6a3
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: a5a3ffde718d951181d788cca5cf57a21cbff4d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-xaml-formatting"></a>格式、XAML、文字編輯器、選項
 使用 [格式化] 屬性頁來指定如何格式化您 XAML 文件中的項目和屬性。 若要開啟 [選項] 對話方塊，請按一下 [工具] 功能表，然後按一下 [選項]。 若要存取 [格式] 屬性頁，請展開 [文字編輯器]、[XAML]、[格式] 節點。  
@@ -112,7 +113,7 @@ ms.lasthandoff: 11/02/2017
 |**MarkupExtension 的右大括弧**|指定當您輸入左大括弧字元 ({) 時，是否自動產生標記延伸的右大括弧 (})。|  
 |**分隔 MarkupExtension 參數的逗號**|指定是否在您於標記延伸中輸入多個參數時產生逗號。|  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [如何︰變更 XAML 檢視設定](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [XAML 和程式碼逐步解說](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

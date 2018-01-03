@@ -12,11 +12,12 @@ caps.latest.revision: "29"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: bbda1d3a9835d95978f7bfadbfe1b99971f6d367
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eed8f03eefb15b982f297b78f7503c947df8d712
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-name-your-button-controls"></a>步驟 6：命名您的按鈕控制項
 表單上只有一個 PictureBox。 加入它時，IDE 會自動將它命名為 **pictureBox1**。 只有一個 CheckBox，名為 **checkBox1**。 接著，您將撰寫一些程式碼，該程式碼會參考 CheckBox 和 PictureBox。 因為這些控制項都只有一個，所以您在程式碼中看到 **pictureBox1** 或 **checkBox1** 時就知道它們代表的意義。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
      當您建置程式時，名稱很重要，而方法 (包括事件處理常式) 則可以具有您想要的任何名稱。 當您使用 IDE 加入事件處理常式時，IDE 會根據控制項的名稱和所處理的事件來建立名稱。 例如，名稱為 **showButton** 按鈕的 Click 事件稱為 `showButton_Click()` 事件處理常式方法。 此外，方法名稱後面通常會加上左括弧和右括弧 ()，以表示目前所討論的是方法。 如果您決定要變更程式碼變數名稱，請用滑鼠右鍵按一下程式碼中的變數，然後選擇 [重構] 、[重新命名] 。 會重新命名該變數在程式碼中的所有執行個體。 如需詳細資訊，請參閱[重新命名重構 (C#)](../csharp-ide/refactoring/rename.md) 或[重新命名重構 (Visual Basic)](../vb-ide/refactoring/rename.md)。
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 7：將對話方塊元件新增至您的表單](../ide/step-7-add-dialog-components-to-your-form.md)。  
   

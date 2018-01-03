@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9d6a473997283fa5d72b0495d8bafed861fdcc33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8b9e0e64b4b4645f769ef3262077ca2a590f7b7f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="value-xelement-dynamic-property"></a>Value (XElement 動態屬性)
 取得或設定項目的內容。  
@@ -33,7 +34,7 @@ elem.Value
 ## <a name="remarks"></a>備註  
  此屬性相當於 <xref:System.Xml.Linq.XElement.Value%2A> 類別的 <xref:System.Xml.Linq.XElement?displayProperty=fullName> 屬性，但此動態屬性也支援變更通知。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=fullName>   
  [XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)   
  [Xml](../designers/xml-xelement-dynamic-property.md)

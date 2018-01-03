@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd4b344860190d0dcfc01adf6ccf553d34c5b038
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5982cfd7b9201008f4ecc5930041200fd4980dca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 清除所有中繼檔案和輸出目錄。  
@@ -34,7 +35,7 @@ devenv FileName /Clean [ /project projectnameorfile [/projectconfig name ] ]
   
 ## <a name="arguments"></a>引數  
  `FileName`  
- 必要項。 方案檔或專案檔的完整路徑和名稱。  
+ 必要。 方案檔或專案檔的完整路徑和名稱。  
   
  /project `ProjName`  
  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
@@ -60,7 +61,7 @@ Devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /Clean /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig "Debug"   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

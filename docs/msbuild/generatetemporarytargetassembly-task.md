@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29b9d79523f032b8d2fc5982747cb60d171a6ea9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2e7dfaa8f12a89f0afe13df56af0803b73b1a71a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 工作
 如果專案中有至少一個 [!INCLUDE[TLA#tla_xaml](../msbuild/includes/tlasharptla_xaml_md.md)] 網頁參考該專案中本機宣告的類型，<xref:Microsoft.Build.Tasks.Windows.GenerateTemporaryTargetAssembly> 工作會產生組件。 建置流程完成之後，或如果建置流程失敗，都會將產生的組件移除。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF MSBuild 參考](../msbuild/wpf-msbuild-reference.md)   
  [工作參考](../msbuild/wpf-msbuild-task-reference.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

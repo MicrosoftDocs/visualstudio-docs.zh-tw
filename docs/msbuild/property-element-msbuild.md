@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e931468b27807a99e86249008718faf4e044cbd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a93b339a062bd2e0c8dc1bf626c4ad109fa2af2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-element-msbuild"></a>Property 項目 (MSBuild)
 包含使用者定義的屬性名稱和值。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案中使用的每個屬性，都必須指定為 `PropertyGroup` 項目的子系。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
 </PropertyGroup>  
 ```  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [MSBuild 屬性](../msbuild/msbuild-properties.md)  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

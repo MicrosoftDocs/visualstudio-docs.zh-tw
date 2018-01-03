@@ -27,11 +27,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2b91f59e6fd7dbf688f8d1cab8d95e9329c879b6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f618f9f056b59195561101f2f5634e60dc7be8e8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>選項對話方塊、環境、Web 瀏覽器
 設定內部網頁瀏覽器和 Internet Explorer 的選項。 若要存取這個對話方塊，請按一下 [工具] 功能表中的 [選項]，展開 [環境] 資料夾，然後選取 [網頁瀏覽器]。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/07/2017
 > [!NOTE]
 >  使用 [瀏覽方式] 對話方塊，將 Visual Studio 內部 Web 瀏覽器取代為您所選擇的瀏覽器。 您可以透過以滑鼠右鍵按一下專案中的 HTML 檔案 (舉例來說)，或從專案中 HTML 檔案的內容功能表，來存取 [瀏覽方式] 對話方塊。
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [HTML 設計工具](http://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477)

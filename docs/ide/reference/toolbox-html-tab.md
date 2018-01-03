@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: def8de31a28a6a49f611c863ebb88d566ff93aa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 88d34f29593af6e15a30c45f44793c60794ebb24
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-html-tab"></a>HTML 索引標籤、工具箱
 工具箱的 [HTML] 索引標籤提供適用於網頁和 Web Forms 的元件。 若要檢視這個索引標籤，請先在 HTML 設計工具中開啟文件進行編輯。 在 [檢視] 功能表上，按一下 [工具箱]，然後按一下 [工具箱] 的 [HTML] 索引標籤。  
@@ -219,6 +220,6 @@ ms.lasthandoff: 10/31/2017
 <div ms_positioning="FlowLayout" style="width: 70px; position: relative; height: 15px">Label</div>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工具箱](../../ide/reference/toolbox.md)   
  [使用工具箱](../../ide/using-the-toolbox.md)   

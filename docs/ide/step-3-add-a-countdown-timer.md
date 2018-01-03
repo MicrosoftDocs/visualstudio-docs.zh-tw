@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: b2d9a565300dabd4212695d62c01a415d0e11012
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09d956f897e81d5e785c561a69cc8b716375676d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步驟 3：加入倒數計時器
 在本教學課程的第三個部分中，您將加入倒數計時器來追蹤受測者可完成作答的剩餘秒數。  
@@ -105,7 +106,7 @@ ms.lasthandoff: 10/31/2017
      ![數學測驗正在進行中](../ide/media/express_addcountdown.png "Express_AddCountdown")  
 數學測驗正進行中  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 4：新增 CheckTheAnswer() 方法](../ide/step-4-add-the-checktheanswer-parens-method.md)。  
   

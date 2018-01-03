@@ -18,11 +18,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2e2e7369d57f7a23cf8467d8a8eb5c99447d35e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e55e469112053d7a78416c21a685d423a6bfa31
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view"></a>呼叫樹狀圖檢閱
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出其所呼叫的所有函式，以及這些函式呼叫的效能資料。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  [呼叫樹狀圖檢視](../profiling/call-tree-view-contention-data.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)   
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)   
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

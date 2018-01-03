@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b326e88e18e3a7c5515cc11bfda7e5c35ae4a063
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9bb2cbe0a87e61a50f3f2b071aef9ef9e12663a0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerseries-class"></a>marker_series 類別
 表示由單一提供者產生之事件的序列通道。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 class marker_series;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="public-constructors"></a>公用建構函式  
   
@@ -55,5 +56,5 @@ class marker_series;
   
  **命名空間：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)

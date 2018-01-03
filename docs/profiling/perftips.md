@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 38f344baa9fd1f5b2ab139db496e7860d3f33bb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cfcb4fdf488233a2be7ea55b57d041641f2ea882
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="perftips"></a>效能提示
 Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工具的 [診斷工具]  幫助您在偵錯時監視及分析應用程式效能。  
@@ -57,6 +58,6 @@ Visual Studio 偵錯工具 *「效能提示」* (PerfTips) 和已整合偵錯工
   
 2.  核取或清除 [偵錯時啟用診斷工具] 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

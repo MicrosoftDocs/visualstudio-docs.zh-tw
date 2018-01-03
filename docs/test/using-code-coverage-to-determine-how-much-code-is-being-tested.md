@@ -8,15 +8,18 @@ ms.technology: vs-devops-test
 ms.tgt_pltfrm: 
 ms.topic: article
 helpviewer_keywords: code coverage
-ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
-caps.latest.revision: "36"
+dev_langs:
+- CSharp
+- VB
+- CPP
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5c6889d705b882d92f701238f0890cb1fc532eed
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 51c8076ef3166e7f0f887a77399a0edfd5cfc072
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>使用程式碼涵蓋範圍來決定所測試的程式碼數量
 若要判斷單元測試等自動程式碼測試實際測試的專案程式碼比例，您可以使用 Visual Studio 程式碼涵蓋範圍功能。 為有效防範 Bug，您的測試應該要使用或「覆蓋」大部分的程式碼。  
@@ -27,7 +30,7 @@ ms.lasthandoff: 10/27/2017
   
  ![顯示著色內容的程式碼涵蓋範圍結果](../test/media/codecoverage1.png "CodeCoverage1")  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -282,7 +285,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ### <a name="guidance"></a>指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)   
  [針對程式碼涵蓋範圍進行疑難排解](../test/troubleshooting-code-coverage.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

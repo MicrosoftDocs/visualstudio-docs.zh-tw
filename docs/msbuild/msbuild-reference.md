@@ -18,16 +18,17 @@ caps.latest.revision: "22"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 40b1fdb27bd2a256a1cff4b5a2066a3223939771
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f780de1bac1786ac3c5ffb70bd1a2f442fc8734
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-reference"></a>MSBuild 參考
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是適用於 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的建置系統。 下列連結會引導至包含 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 參考資訊的主題。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
  說明組成 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 檔案格式的 XML 項目。  
   

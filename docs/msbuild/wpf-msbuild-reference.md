@@ -20,16 +20,17 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8ed4228dbd7b9adf5909108ff0a46f0d94405615
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9af538203f5705e89b2c9492bbc2b2b4658ebfe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="wpf-msbuild-reference"></a>WPF MSBuild 參考
 Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) 增加建置支援，本節會加以說明。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [.Targets 檔案](../msbuild/wpf-dot-targets-files.md)  
  描述 WPF .Targets 檔案。  
   
@@ -51,5 +52,5 @@ Windows Presentation Foundation (WPF) 擴充 Microsoft Build Engine (MSBuild) �
  <xref:Microsoft.Build.Tasks.Windows>  
  建置工作視窗組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ MSBuild](../msbuild/msbuild.md)

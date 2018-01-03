@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 88b8169f5e0e53a76ff2b1bee61dc80f41a9f595
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1465b9d8a14d5889bf856caa52b807ee2954cd0a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view---contention-data"></a>程式行檢視 - 爭用資料
 爭用資料的 [程式行] 檢視會針對在執行分析期間收集樣本時執行的陳述式，列出效能資料。 在原始程式檔中，陳述式在原始程式檔中可以長達多行，而單一行程式也可能包含一個以上的陳述式。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  下表說明 [程式行] 檢視報表的資料行。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|此陳述式因爭用事件遭封鎖，無法在陳述式中執行程式碼的時間長度。 陳述式所呼叫函式中的封鎖時間不包括在內。|  
 |**專有封鎖時間 %**|陳述式的專有封鎖時間佔處理序中所有封鎖時間的百分比。|  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 |**原始程式碼開頭行**|此陳述式在原始程式檔中開始的行號。|  
 |**原始程式碼結尾行**|此陳述式在原始程式檔中結束的行號。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [程式行檢視](../profiling/lines-view.md)   
  [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)   

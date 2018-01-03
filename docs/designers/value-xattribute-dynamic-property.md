@@ -14,11 +14,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d647e7623820c6621f6605277a695a98454fec5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4807a84b9e1de5186e72cbe138f0f54e2f33525e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (XAttribute 動態屬性)
 取得或設定 XML 屬性的值。  
@@ -41,7 +42,7 @@ attrib.Value
 ## <a name="remarks"></a>備註  
  此屬性相當於 <xref:System.Xml.Linq.XAttribute.Value%2A> 類別的 <xref:System.Xml.Linq.XAttribute?displayProperty=fullName> 屬性，但此動態屬性也支援變更通知。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=fullName>   
  [XAttribute 類別動態屬性](../designers/xattribute-class-dynamic-properties.md)   
  [屬性](../designers/attribute-xelement-dynamic-property.md)

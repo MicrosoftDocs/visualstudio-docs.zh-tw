@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6547c139df10498c7be7c2ad13401001d38c067d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f95197bcd7315f432ce2fff2bd1e5dae1005e7e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer"></a>效能總管
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具可讓開發人員測量、評估和標定程式碼中與效能有關的問題。 這些工具已經完全整合到 IDE，藉此提供順暢無礙又平易近人的使用者體驗。  
@@ -47,5 +48,5 @@ ms.lasthandoff: 10/31/2017
 |**以程式設計方式控制程式碼分析：**了解如何使用 Managed 和原生程式碼剖析工具應用程式開發介面，直接從原始程式碼控制資料收集。|[程式碼剖析工具 API](../profiling/profiling-tools-apis.md)|  
 |**疑難排解分析問題**|[效能工具問題疑難排解](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析工具](../profiling/profiling-tools.md)

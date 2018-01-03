@@ -15,18 +15,19 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edd51a47e4db363e7a684a59c402fd49e533e6bb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: aspnet
+ms.openlocfilehash: e567d6afb0d7e778dcc656e633ba4a670eb2ecea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 應用程式的統計資料
 
 本節說明使用 **VSPerfASPNETCmd** 和 **VSPerfCmd** 命令列工具和取樣分析方法收集 ASP.NET Web 應用程式之效能統計資料的程序和選項。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 > [!NOTE]
 >  雖然 **VSPerfCmd** 工具可讓您完整存取分析工具的功能，包括暫停和繼續分析，以及收集處理器和 Windows 效能計數器的其他資料，但是您可以在不需要這項功能時使用 **VSPerfASPNETCmd** 命令列工具。 當您使用獨立的分析工具分析 ASP.NET 網站時，**VSPerfASPNETCmd** 命令列工具是慣用的方法。 相較於 [VSPerfCmd](../profiling/vsperfcmd.md) 命令列工具，無須設定任何環境變數，也不需要重新啟動電腦。 如需詳細資訊，請參閱[使用 VSPerfASPNETCmd 快速進行網站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。  

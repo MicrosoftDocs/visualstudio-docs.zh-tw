@@ -12,11 +12,12 @@ ms.assetid: B938E2D2-7B7C-4D76-B26C-2616F5B4A9F5
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7739a7fd1d802150ecf6cdc3e364423598ff090c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 89754f6b66de78b4ff3fb9c80cf9eb3dfab7cfac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="input-generatation-using-dynamic-symbolic-execution"></a>使用動態符號執行產生輸入
 

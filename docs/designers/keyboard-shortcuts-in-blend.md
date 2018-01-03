@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b6a19ed79db2625fc7e1ad339ab2396635767a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: afdf338d300d67964499fc67ce260fc32b8664af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>鍵盤快速鍵 (Blend)
 ## <a name="project-shortcuts"></a>專案快速鍵  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="view-shortcuts"></a>檢視快速鍵  
   
-|若要執行此工作|請這樣做|  
+|若要執行此工作|請執行|  
 |----------------|-------------|  
 |切換 [設計]、[程式碼] 與 [分割] 檢視|F11|  
 |放大畫板|CTRL+等號|  
@@ -110,7 +111,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="workspace-shortcuts"></a>工作區快速鍵  
   
-|若要執行此工作|請這樣做|  
+|若要執行此工作|請執行|  
 |----------------|-------------|  
 |切換 [動畫] 和 [設計] 工作區|CTRL+F11|  
 |顯示或隱藏 [資產] 面板|CTRL+句號|  

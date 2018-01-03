@@ -11,11 +11,14 @@ ms.assetid: DA86FC7F-E456-4DFC-84BF-D780421508B9
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 204389c2341c3aa9f729b92b5f3d459e7b101d24
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 7d0a7da4093b8f90ab76dee55f1ec9ad6dc21679
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-the-sample-game"></a>測試範例遊戲
 

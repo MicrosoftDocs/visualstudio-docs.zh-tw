@@ -11,11 +11,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: "22"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 0d9e28ee58dde41703f2149534f542b08d55b9ec
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d44026c2a4424cbacd16af57d3fb132d23ba8068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>啟用控制項的自動程式化 UI 測試功能
 如果您實作自動程式化 UI 測試架構的支援，就可以更輕鬆地測試您的控制項。 您可以用累加方式加入不斷增加的支援層級。 您可以從支援錄製和播放以及屬性驗證開始。 您可以依此為建置基礎，讓自動程式化 UI 測試產生器能夠辨識控制項的自訂屬性，並提供自訂類別，以從產生的程式碼存取那些屬性。 您也可以協助自動程式化 UI 測試產生器，以較接近所錄製動作之意圖的方式來擷取動作。  
@@ -219,6 +220,6 @@ ms.lasthandoff: 10/27/2017
 ### <a name="guidance"></a>指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Windows.Forms.AccessibleObject>   
  [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ad433ea0b1627d3e3ddcd80640f21a519d0264de
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 877f1e556498a31ec7ddfac12b1907d159c713cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-editor-windows"></a>如何：管理編輯器視窗
 您可以同時在數個位置處理程式碼。 做法是分割編輯器視窗，或開啟數個編輯器視窗執行個體。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
      會新增編輯器的新索引標籤式執行個體。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../ide/customizing-the-editor.md)   
  [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)   
  [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)

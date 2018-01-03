@@ -22,11 +22,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0223d57cf4c16166149b1fc9e8903f563b724d20
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23b4f8a116287d7bfe524173f9f88040ba5f1100
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setenv-task"></a>SetEnv 工作
 設定或刪除指定環境變數的值。  
@@ -34,9 +35,9 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>參數  
  下表說明 **SetEnv** 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
-|**Name**|必要的 **String** 參數。<br /><br /> 環境變數的名稱。|  
+|**名稱**|必要的 **String** 參數。<br /><br /> 環境變數的名稱。|  
 |**OutputEnvironmentVariable**|選擇性的 **String** 輸出參數。<br /><br /> 包含指派給環境變數 (由 **Name** 參數所指定) 的值。|  
 |**前置詞**|必要的 `Boolean` 參數。<br /><br /> 如果系統會先將 **Value** 參數的值串連到 **Name** 參數所指定的環境變數值，然後將結果指派給環境變數，則為 `true`。 如果系統只會將 **Value** 參數的值指派給環境變數，則為 `false`。|  
 |**Target**|選擇性的 **String** 參數。<br /><br /> 指定儲存環境變數的位置。 請指定 "`User`" 或 "`Machine`"。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的「EnvironmentVariableTarget 列舉」。|  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 42c447625093adb84f3db0c495efb7b0cfa2664e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1b19cb452d937b018a1ecd7ffb1c4c9567349f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>如何：建置包含資源的專案
 如果您要建置專案的當地語系化版本，就必須將所有使用者介面項目分隔成適用於各種語言的資源檔。 如果專案只會使用字串，資源檔就能使用文字檔。 或者，您可以使用 .resx 檔案做為資源檔。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
  [GenerateResource 工作](../msbuild/generateresource-task.md)   
  [Csc 工作](../msbuild/csc-task.md)   

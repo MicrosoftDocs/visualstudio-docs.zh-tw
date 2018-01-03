@@ -11,16 +11,17 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 34cfe9041a9e724136c9d7c5a19b1c74f2309b2a
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e293d6ef200fec89150d76d94233bb171374a1d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的程式碼產生、編譯和命名慣例
 本主題討論產生與編譯 Fakes 程式碼的選項和問題，並且描述 Fakes 產生類型、成員和參數的命名慣例。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -304,5 +305,5 @@ attribute of the Assembly element in the .fakes:
 ###  <a name="BKMK_Guidance"></a> 指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)

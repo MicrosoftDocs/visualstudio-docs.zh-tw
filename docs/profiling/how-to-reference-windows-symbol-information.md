@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09e17cc1e28ad520f76d60c3411de4803a2b4b96
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6578a6fe623afe8ceb20f9db32e7fa005f06618c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>如何：參考 Windows 符號資訊
 Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號名稱，例如程式二進位檔案中的函式名稱。 您可以依照下列步驟進行，以為本機電腦上的 Windows 版本自動下載並更新正確的 .pdb 檔案。  
@@ -49,6 +50,6 @@ Visual Studio 程式碼剖析工具會使用符號 (.pdb) 檔案來解析符號�
   
      您也可以按一下省略符號按鈕 (**...**)，然後從 [瀏覽資料夾] 對話方塊選取一個目錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：序列化符號資訊](../profiling/how-to-serialize-symbol-information.md)

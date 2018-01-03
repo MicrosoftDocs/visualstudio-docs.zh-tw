@@ -22,11 +22,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d770c1b7d05117243643680898348b71cf0a978d
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 9902ca6ff157713573eb2f8ccc806bb9f2a0dfc0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 您可以使用 Microsoft Help Viewer 在本機電腦上安裝並檢視各種產品和技術的內容，包括 Visual Studio、.NET Framework、語言參考、SQL Server 和 Windows 程式開發。 說明檢視器可讓您：  
@@ -48,7 +49,7 @@ ms.lasthandoff: 11/07/2017
 
 ### <a name="navigation-tabs"></a>瀏覽索引標籤
 
-|索引標籤|說明|
+|索引標籤|描述|
 |---|-----------|
 |內容|將安裝的內容顯示為階層 (目錄)。 您可以指定條件來篩選顯示的標題。|
 |索引|顯示已編製索引的詞彙按字母順序排列的清單。 您可以搜尋索引、指定條件來篩選項目，以及要求索引項目包含指定的文字或以其開頭。|
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/07/2017
 
 -   右側的小三角形會開啟索引標籤清單，包含主題索引標籤和 [管理內容] 索引標籤。您可以選擇某個索引標籤名稱，使它成為作用中的索引標籤。 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Microsoft Help Viewer 安裝](../ide/microsoft-help-viewer-installation.md)  
 [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)  
 [安裝與管理本機內容](../ide/install-and-manage-local-content.md)

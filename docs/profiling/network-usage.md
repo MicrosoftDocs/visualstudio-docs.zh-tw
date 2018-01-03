@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 412b6c2a1dede7438fd5c1564229a0e67f5cf845
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: de821b0c2e073104ae07abfcccff9ccce56fd3d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-network-usage-in-uwp-apps"></a>分析 UWP App 的網路使用量
 Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用程式開發介面](/uwp/api/windows.web.http)執行之網路作業的相關資料。 分析這份資料可協助您解決存取和驗證、不正確的快取使用，以及顯示和下載效能不佳等問題。  
@@ -73,7 +74,7 @@ Visual Studio 的 [網路] 診斷工具會收集使用 [Windows.Web.Http 應用�
   
 3.  回應美化顯示按鈕 (在主體索引標籤內) 可協助您藉由增加內容可讀性來剖析 JSON、XML、HTML、CSS、JavaScript 和 TypeScript 的回應裝載。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用或不使用偵錯工具來執行分析工具](../profiling/running-profiling-tools-with-or-without-the-debugger.md)  
  [Visual Studio 部落格：Visual Studio 網路檢查簡介](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Channel 9 Video: VS Diagnostics tools - New Network Profiler](http://channel9.msdn.com/Series/ConnectOn-Demand/206) (Channel 9 影片︰VS 診斷工具 - 新的網路分析工具)  

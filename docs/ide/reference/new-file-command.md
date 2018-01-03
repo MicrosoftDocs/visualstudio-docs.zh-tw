@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f3b469466080403122484a7b6259c099765edd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7f0232a4e08c134a7dffcc3d10a2180e235717
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="new-file-command"></a>新增檔案命令
 建立新的檔案並開啟它。 檔案會顯示其他檔案資料夾之下。  
@@ -33,7 +34,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
   
 ## <a name="arguments"></a>引數  
  `filename`  
- 選擇項。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。  
+ 選擇性。 檔案名稱。 如果未提供名稱，會提供預設名稱。 如果未列出任何範本名稱，則會建立文字檔。  
   
 ## <a name="switches"></a>參數  
  /t:`templatename`  
@@ -67,7 +68,7 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [即時運算視窗](../../ide/reference/immediate-window.md)   

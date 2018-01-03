@@ -18,18 +18,19 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dcdf2ff51c0ed1aeb667c33a519d540251799c01
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44f67dd4b1c6717dfaf48ada0f093a845899e16c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-permissions"></a>如何：設定權限
 本主題說明電腦的系統管理員如何將程式碼剖析所需的安全性權限，授與在該電腦上沒有系統管理員權限的使用者或群組。  
   
  基本的安全性原則就是，應用程式應該以不超過所需的權限來執行。 此原則也適用於使用者。 如果使用者不必是 Administrators 群組的成員，只要登入身分是 Users 群組的成員就可以正常工作，那麼就不應該授與他們系統管理員權限。 第一個程序，「建立具有使用者權限的使用者」，說明如何建立身分為 Users 群組成員的使用者帳號。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -78,7 +79,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  在 [\<user name> 的使用權限] 方塊中，選取 [完全控制]的核取方塊。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
      如此便會將共用之資料夾樹狀目錄 (從步驟 5 中選取的資料夾開始) 的權限授與使用者。  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
  指定的使用者登入之後，不需要有系統管理員權限就可以使用程式碼剖析工具。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)

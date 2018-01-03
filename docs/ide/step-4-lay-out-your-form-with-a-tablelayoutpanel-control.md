@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 1740beb4c671b2e66e249827c2db678f6b6f7da3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 81eb6578c0ffaf76103b27d41709e476aa732e7e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步驟 4：使用 TableLayoutPanel 控制項來配置您的表單
 在此步驟中，您會將 `TableLayoutPanel` 控制項新增至表單。 TableLayoutPanel 有助於正確對齊稍後加入至表單中的控制項。  
@@ -88,7 +89,7 @@ TableLayoutPanel 資料行和資料列樣式
      ![包含已調整大小之 TableLayoutPanel 的 Form1](../ide/media/vs_formafterlayoutpanel.png "VS_FormAfterLayoutPanel")  
 包含已調整大小之 TableLayoutPanel 的 Form1  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 5：將控制項新增至您的表單](../ide/step-5-add-controls-to-your-form.md)。  
   

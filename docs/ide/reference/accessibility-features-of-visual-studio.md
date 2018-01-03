@@ -14,11 +14,12 @@ ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0ee9f615ad28e486566fb117124a1b69634a4b57
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e947fa523b2d5e79e1df1966e6a4c3d9b6c8e7af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的協助工具功能
 > [!TIP]
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
 
 -   [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Microsoft 提供的協助工具產品和服務](../../ide/reference/accessibility-products-and-services-from-microsoft.md)

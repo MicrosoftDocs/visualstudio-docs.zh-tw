@@ -17,11 +17,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d52f6bfe745cf7e8684094cf9244b6eedcba13a9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da961d153713c996c6f057e7bb0366c747c87205
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>逐步解說：找出效能問題
 本逐步解說將示範如何剖析應用程式以找出效能問題。  
@@ -158,7 +159,7 @@ ms.lasthandoff: 10/31/2017
   
  當您再次執行應用程式時，便可見到顯著的效能改進。 雖然使用者能感覺到效能已有所改善，還是建議您再次執行剖析工作階段。 由於第一個問題可能會遮蔽其他問題，因此在修正問題後再次檢閱資料是很重要的。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [入門](../profiling/getting-started-with-performance-tools.md)   
  [/Z7、/Zi、/ZI (偵錯資訊格式)](/cpp/build/reference/z7-zi-zi-debug-information-format)

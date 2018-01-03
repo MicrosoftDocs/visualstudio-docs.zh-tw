@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: cb5128bf6412fa0f06c211f06f0d7f87353d52e0
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: aca1fc0200e57867418c2a4c5ca7a718afdbc469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-r-in-visual-studio"></a>在 Visual Studio 中對 R 進行偵錯
 
@@ -57,12 +58,12 @@ add <- function(x, y) {
 
 環境瀏覽器支援許多特殊命令︰
 
-| 命令 | 說明 | 
+| 命令 | 描述 |
 | --- | --- |
 | n | 下一步︰執行程式碼檔案中的下一個陳述式 (與不進入函式相同)。 |
-| s | 逐步執行︰執行程式碼檔案中的下一個陳述式，如果下一個陳述式是函式呼叫，則逐步執行函式範圍。 | 
+| 秒 | 逐步執行︰執行程式碼檔案中的下一個陳述式，如果下一個陳述式是函式呼叫，則逐步執行函式範圍。 |
 | f | 完成︰執行目前函式範圍的其餘部分，並傳回給呼叫端 (與跳離函式相同)。 |
-| c、cont | 繼續︰執行程式直到下一個中斷點。 | 
+| c、cont | 繼續︰執行程式直到下一個中斷點。 |
 | Q | 結束：結束偵錯工作階段。 |
 | 其中 | 顯示堆疊︰在互動式視窗中顯示呼叫堆疊。 |
 | help | 顯示說明︰在互動式視窗中顯示可用的命令。 |

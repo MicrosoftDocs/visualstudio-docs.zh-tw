@@ -15,11 +15,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 91e079fa996c30160454dcd7f8cc3d3bade27b2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3f0003370525dafd29195473b2de0a02e18f3070
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集獨立應用程式的並行資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的並行方法可讓您收集資源爭用資料和執行緒活動資料，顯示 CPU 使用率、執行緒爭用、執行緒移轉、同步處理延遲、重疊 IO 區域 和其他系統事件。  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)  
   
 ## <a name="reference"></a>參考資料  
- [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
+ [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)

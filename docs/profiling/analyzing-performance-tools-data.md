@@ -20,11 +20,12 @@ caps.latest.revision: "41"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 439c3f5e433de41a0a6f4bcaf7ec0392ca16fa49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33ae54490ab9dbb7015df1ce6bafc4794d8254ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-performance-tools-data"></a>分析效能工具資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的效能報表可讓您檢視並分析應用程式效能問題。 本節提供可用來檢查效能資料的效能報告和檢視概觀。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

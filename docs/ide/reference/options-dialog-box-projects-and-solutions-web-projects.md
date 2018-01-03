@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ab80c499a95f8fd1dee764edea9f971d9429688
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 75d892c4947ee93521234f9bb2cdb781bd0b09f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>選項對話方塊、專案和方案、Web 專案
 
@@ -36,6 +37,6 @@ ms.lasthandoff: 11/02/2017
 **當錯誤清單中有錯誤時，在執行 Web 應用程式前提出警告**  
 如有設定此選項，若您嘗試執行編譯過程中有錯誤的 Web 應用程式，會出現警告。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)  
 [選項對話方塊、專案和方案、建置並執行](options-dialog-box-projects-and-solutions-web-projects.md)

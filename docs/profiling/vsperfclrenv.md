@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 580d3b5f1dab03e34dac7c452da08e00e453a503
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a8f41fdf3a337fb2dea5ccca7131de34743c9096
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 VSPerfCLREnv 工具可用來設定分析 .NET Framework 應用程式所需的環境變數。 其使用下列語法：  
@@ -39,7 +40,7 @@ VsPerfCLREnv [/option]
  **用於包含階層互動資料的 VSPerfCLREnv 選項**  
   
 > [!WARNING]
->  使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] 可以收集階層互動分析。 不過，只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 中檢視階層互動分析資料。  
+>  使用 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]、 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] 或 [!INCLUDE[vs_pro_current_short](../profiling/includes/vs_pro_current_short_md.md)] 可以收集階層互動分析。 不過，只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 和 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]檢視階層互動分析資料。  
   
  階層互動分析會提供多介層應用程式中有關 ADO.NET 查詢的其他資訊。 只針對同步函式呼叫收集資料。 互動資料可以使用任何程式碼剖析方法加入至任何程式碼剖析執行。  
   
@@ -67,7 +68,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述用於檢測程式碼剖析的 VSPerfCLREnv 選項︰  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**TraceOn**|使用檢測方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|  
 |**TraceGC**|使用檢測方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|  
@@ -77,7 +78,7 @@ VSPerfCmd /Attach:MyService.exe
   
  下表描述用於取樣程式碼剖析的 VSPerfCLREnv 選項︰  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**SampleOn**|使用取樣方法啟用程式碼剖析功能。 不會啟用記憶體配置程式碼剖析功能或收集物件存留期資料。|  
 |**SampleGC**|使用取樣方法啟用記憶體配置程式碼剖析功能。 不會啟用收集物件存留期資料的功能。|  
@@ -101,7 +102,7 @@ VSPerfCmd /Attach:MyService.exe
   
  當您完成對 Managed 應用程式進行程式碼剖析時，使用下列其中一個選項來刪除 VSPerfCLREnv 所加入的環境變數。 下表描述如何刪除這兩個標準和全域環境變數︰  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**Off**|刪除標準 .NET 程式碼剖析的環境變數。 使用非全域 VSPerfClrEnv 選項來設定分析工具環境變數時，請使用此選項。|  
 |**GlobalOff**|刪除全域 .NET 程式碼剖析的環境變數。 當應用程式由作業系統啟動且不是分析工具時，請使用此選項。|  
@@ -111,5 +112,5 @@ VSPerfCmd /Attach:MyService.exe
   
  如果程式碼剖析期間未設定正確的環境，會在分析期間報告警告且無法正確解析 Managed 函式名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

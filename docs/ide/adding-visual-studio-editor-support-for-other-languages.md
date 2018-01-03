@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2dfdf4f5a722bf4fea0c4bd3175e33799aa8b8df
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bff7a486bcb72af126dc770542f63e57af0171ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>新增其他語言的 Visual Studio 編輯器支援
 了解 Visual Studio 編輯器如何支援讀取，並在不同的電腦語言之間巡覽，以及如何新增其他語言的 Visual Studio 編輯器支援。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
  如需如何建立 TextMate 文法的詳細資料，請參閱 [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - 語言文法簡介︰如何新增內嵌於 HTML 的原始程式碼語法反白顯示) 和 [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (如何為 Textmate 組合建立語言文法及自訂佈景主題的附註)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 2013 巡覽至增強功能](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/)   
  [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)   
  [逐步解說：顯示陳述式完成](../extensibility/walkthrough-displaying-statement-completion.md)

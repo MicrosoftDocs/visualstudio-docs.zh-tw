@@ -19,11 +19,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a473ac2be65acc9b08455fe687b52468f5ca9fa6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 603cfdd3a52163959ed223952994d3e8e4147298
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-project-templates"></a>如何：建立專案範本
 此程序可讓您使用 [匯出範本精靈] 建立範本，此精靈會將您的範本封裝在 .zip 檔案中。 您也可以使用 [匯出範本精靈] 延伸模組，或是使用 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 中包含的範本，以 VSIX 檔案格式建立範本以改進部署，也可以手動建立範本。  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
   
      如果您已安裝 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]，可以使用 [VSIX 專案] 範本，將完成的範本包裝成 .vsix 檔以便部署。 如需詳細資訊，請參閱[開始使用 VSIX 專案範本](../extensibility/getting-started-with-the-vsix-project-template.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)

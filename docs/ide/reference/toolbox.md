@@ -19,11 +19,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4e345b573544839aea7601e334545e4ba410d6b7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dee9f1379dd7cd4c1d134714a35fc91d74f9f128
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox"></a>工具箱
 [工具箱] 會顯示您可以新增至 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 專案的控制項和其他項目的圖示。 若要開啟 [工具箱]，請按一下 [檢視] 功能表上的 [工具箱]。 您可以停駐 [工具箱]，而且您可以將它釘選成開啟狀態，或將它設定為 [自動隱藏]。  
@@ -50,5 +51,5 @@ ms.lasthandoff: 10/31/2017
   
 -   [HTML 索引標籤、工具箱](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用工具箱](../../ide/using-the-toolbox.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3b2c55cd9985612e6ec36abb2416d897b0b6c019
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e57a4e8d7d4a46b9938c5d2fe5a2bb6612309dc9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>步驟 8：加入方法以驗證玩家是否贏了
 您已建立一個有趣的遊戲，但它需要額外的項目才能完成。 這個遊戲應該在玩家獲勝時結束，因此您需要加入 `CheckForWinner()` 方法以驗證玩家是否贏了。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
      ![配對遊戲和訊息方塊](../ide/media/express_tut4step8.png "Express_Tut4Step8")  
 配對遊戲和訊息方塊  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 9：嘗試其他功能](../ide/step-9-try-other-features.md)。  
   

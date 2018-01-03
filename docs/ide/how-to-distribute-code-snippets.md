@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: e4c103aec04a9012b82c5fe979f8d5d23cfa1680
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 39f6006ec6dfe754efc58f2ccdc7b09d803de6b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：散發程式碼片段
 您可以使用程式碼片段管理員，將您的程式碼片段提供給您的朋友，並讓他們在自己的電腦上安裝程式碼片段。 不過，如果您有數個程式碼片段要散發，或想要更廣泛地散發，請在 Visual Studio 使用者可以安裝的 Visual Studio 擴充功能中包含您的程式碼片段檔案。  
@@ -102,5 +103,5 @@ ms.lasthandoff: 11/07/2017
     Console.WriteLine("Hello, World!")  
     ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼片段](../ide/code-snippets.md)

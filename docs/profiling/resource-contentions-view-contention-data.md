@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e763d37cecb35bee3d6b4ace9d5e4f9bf4e3173
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5cb6b102025591a6ef00ca594657dca511f5b8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resource-contentions-view---contention-data"></a>資源爭用檢視 - 爭用資料
 資源爭用檢視列出爭用事件來源的資源爭用資料。 因為另一個執行緒中的函式已取得資源的獨佔存取權，所以會強制執行緒中的函式等候存取資源，而發生爭用事件。 每項資源都是呼叫樹狀圖的根節點，會顯示導致爭用事件的函式執行路徑。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|資源或函式的名稱。|  
+|**名稱**|資源或函式的名稱。|  
 |**專有封鎖時間**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總時間。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的時間。 不包括由該函式所呼叫函式的封鎖時間。|  
 |**專有封鎖時間 %**|-   對於資源，是指就程式碼剖析資料中的所有封鎖時間，此資源封鎖時間所佔的百分比<br />-   對於函式，是指就程式碼剖析資料中的所有封鎖時間，這些函式執行個體的專有封鎖時間所佔的百分比。|  
 |**專有爭用**|-   對於資源，是指遭到封鎖而無法存取資源並導致執行緒等候的總次數。<br />-   對於函式，是指當函式在執行函式主體中的程式碼時，這些函式執行個體遭到封鎖而無法存取父資源的次數。 不包括由該函式所呼叫函式的封鎖事件。|  

@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 46c80a49d0e043d7cdbffbc74698a29e10ab4795
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b3f0d5ecdcf1318490ac0829bb9dd6ded9519872
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="evaluate-statement-command"></a>評估陳述式命令
 評估並顯示指定的陳述式。  
@@ -33,7 +34,7 @@ Debug.EvaluateStatement text
   
 ## <a name="arguments"></a>引數  
  `text`  
- 必要項。 要評估的陳述式。  
+ 必要。 要評估的陳述式。  
   
 ## <a name="remarks"></a>備註  
  用來輸入 **EvaluateStatement** 命令的視窗可判斷是否將等號 (=) 解譯為比較運算子或指派運算子。  
@@ -60,7 +61,7 @@ Debug.EvaluateStatement text
 >Debug.EvaluateStatement(a+b)  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列印命令](../../ide/reference/print-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   

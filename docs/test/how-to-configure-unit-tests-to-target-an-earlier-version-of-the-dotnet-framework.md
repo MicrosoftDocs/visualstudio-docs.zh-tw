@@ -11,11 +11,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d7a899e16d79ba2aae40506eb3cd6739dcdb4397
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: f4da0733b53b17dbcca779b0fd3e7afcddcb2e85
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>如何：設定以舊版 .NET Framework 為目標的單元測試
 當您在 Microsoft Visual Studio 中建立測試專案時，預設會將目標設為最新版本的 .NET Framework。 此外，如果您升級舊版的 Visual Studio 測試專案，它們也會升級成以最新版本的 .NET Framework 為目標。 藉由編輯專案屬性，您可以明確地將專案目標重定為舊版的 .NET Framework。  
@@ -125,7 +126,7 @@ ms.lasthandoff: 10/27/2017
   
 8.  在 [方案總管] 中，從新的 Visual C++ 測試專案的捷徑功能表選取 [重新載入專案]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [針對現有的程式碼建立和執行單元測試](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
  [建立 SharePoint 方案](/office-dev/office-dev/create-sharepoint-solutions)   
  [建置和偵錯 SharePoint 方案](/office-dev/office-dev/building-and-debugging-sharepoint-solutions)   

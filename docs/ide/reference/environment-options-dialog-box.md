@@ -15,11 +15,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d6d7f0bc3d55e59fec506d6387f0f6254300ee8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 567d1c8248ff00a1387ccd1c40a8c8c658b551ea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="environment-options-dialog-box"></a>環境選項對話方塊
 您可以使用 [選項] 對話方塊之 [環境] 資料夾內的頁面，設定整合式開發環境 (IDE) 會如何顯示及作用某些項目。 您可以在功能表列上依序選擇 [工具] 和 [選項]，然後選取 [環境]，以存取 [環境] 頁面。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |學習如何設定工作和工作清單的選項。|[選項對話方塊、環境、工作清單](../../ide/reference/task-list-environment-options-dialog-box.md)|  
 |變更預設的首頁和搜尋網頁、變更系統原始檔編輯器，並設定 Internet Explorer 選項。|[選項對話方塊、環境、Web 瀏覽器](../../ide/reference/web-browser-environment-options-dialog-box.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)

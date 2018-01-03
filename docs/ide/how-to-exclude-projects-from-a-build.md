@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 64a10c356100e6ace36ec1c574c85479741113c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8392a17a1d1f0648176c6b68463102e31c61cf20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-exclude-projects-from-a-build"></a>如何：從組建中排除專案
 您可以建置方案，而不建置它所包含的所有專案。 例如，您可能會排除會中斷組建的專案。 然後您可以在調查和處理這些問題之後才建置專案。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 7.  在功能表列上，依序選擇 [建置] 和 [重建方案]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [如何：建立和編輯組態](../ide/how-to-create-and-edit-configurations.md)   
  [如何：同時建置多個組態](../ide/how-to-build-multiple-configurations-simultaneously.md)

@@ -8,23 +8,18 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-ms.assetid: 153527c6-8b95-4003-8e8e-03a489d0a629
-caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0829c1514e8d98d32914c4cc8f59de822d6b7f4d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbe2be8ec1012295f84fbbec4cc0f614fd86d8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="publish-page-project-designer"></a>專案設計工具、發行頁
 [專案設計工具]  的 [發行]  頁面，可用以設定 ClickOnce 部署的屬性。  
@@ -41,7 +36,7 @@ ms.lasthandoff: 10/31/2017
  根據預設，如果您已安裝 IIS，發行位置為 `http://localhost/<projectname>/` ；如果未安裝 IIS，則為 `publish\` 目錄。 如果您的電腦執行 Windows Vista，則不論是否安裝 IIS，預設值一律都會是 `publish\` 目錄。  
   
  **安裝資料夾 URL**  
- 選擇項。 指定使用者前往以安裝應用程式的網站。 只有在它與 [發行位置] 不同時 (例如，將應用程式發行至預備伺服器時) 才是必要項目。  
+ 選擇性。 指定使用者前往以安裝應用程式的網站。 只有在它與 [發行位置] 不同時 (例如，將應用程式發行至預備伺服器時) 才是必要項目。  
   
  **安裝模式和設定**  
  判斷是從 [發行位置]  直接執行應用程式 (選取 [應用程式只能在線上時使用]  時)，還是將應用程式安裝並新增至 [開始]  功能表以及 [控制台]  中的 [新增或移除程式]  項目 (選取 [應用程式也可以在離線時使用]  時)。  
@@ -66,7 +61,7 @@ ms.lasthandoff: 10/31/2017
  當您使用 ClickOnce 安裝多個版本的應用程式時，安裝會將舊版應用程式移至您指定之發行位置中名為 Archive 的資料夾。 以這種方式封存先前的版本可將安裝目錄與舊版的資料夾分開。  
   
  **隨著每次發行自動遞增修訂**  
- 選擇項。 選取此選項時 (預設)，每次發行應用程式時，發行版本號碼的 [修訂]  部分都會加一。 這樣會以更新形式發行應用程式。  
+ 選擇性。 選取此選項時 (預設)，每次發行應用程式時，發行版本號碼的 [修訂]  部分都會加一。 這樣會以更新形式發行應用程式。  
   
  **發行精靈**  
  開啟 [[發行精靈]](http://msdn.microsoft.com/en-us/fc6abebd-13d6-48e4-a567-fbc52dad0872)。 完成 [發行精靈] 的效果，與執行 [建置]  功能表上的 [發行]  命令相同。  
@@ -74,7 +69,7 @@ ms.lasthandoff: 10/31/2017
  **立即發行**  
  使用目前的設定發行應用程式。 這相當於 [發行精靈] 中的 [完成] 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [發佈 ClickOnce 應用程式](../../deployment/publishing-clickonce-applications.md)   
  [如何：使用發行精靈發行 ClickOnce 應用程式](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
  [如何：指定 Visual Studio 複製檔案的位置](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

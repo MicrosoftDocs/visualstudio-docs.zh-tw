@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f6835d418cab15752ca4faa5599cead63e157d1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: cplusplus
+ms.openlocfilehash: b71242bfd0744b2b2dc8c5561b87ab893fb81a9b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-c-code-snippets"></a>Visual C++ 程式碼片段
 
@@ -171,6 +172,6 @@ class SomeClass {
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼片段](../ide/code-snippets.md)

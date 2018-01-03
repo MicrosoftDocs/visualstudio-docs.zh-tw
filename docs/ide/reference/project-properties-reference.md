@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 95ffd0009e50f01e40a3182bfbf6c8c6947836c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 66bd8d44fdd7ddfed502b72dcb60853fb63d3671
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="project-properties-reference"></a>專案屬性參考
 深入了解如何設定和自訂專案屬性。  
@@ -42,5 +43,5 @@ ms.lasthandoff: 10/31/2017
 |[專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md)|使用這個頁面來設定使用 [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)] 部署所部署之應用程式的程式碼存取安全性設定。|  
 |[專案設計工具、簽署頁面](../../ide/reference/signing-page-project-designer.md)|使用這個頁面來簽署應用程式和部署資訊清單，以及簽署組件。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案和方案](../../ide/solutions-and-projects-in-visual-studio.md)

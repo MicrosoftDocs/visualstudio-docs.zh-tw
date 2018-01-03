@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dab9b5c631edde1883d4e4d2dcfa0dbf530b0441
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd49879c6c23981bc88eb4309fb6c7da8e215bd7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>逐步解說：建立逼真的 3D 撞球
 本逐步解說示範如何在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用著色器設計工具與影像編輯器，建立逼真的 3D 撞球。 結合數種著色器技術與適當的紋理資源，達成 3D 撞球的外觀。  
@@ -214,7 +215,7 @@ ms.lasthandoff: 10/31/2017
   
  在完稿影像中，請注意您新增的效果如何結合在一起，建立非常逼真的撞球。 形狀、紋理和光源建構了基本的 3D 物件外觀，而高光和反射則讓撞球更有趣且融入環境。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [著色器設計工具](../designers/shader-designer.md)   

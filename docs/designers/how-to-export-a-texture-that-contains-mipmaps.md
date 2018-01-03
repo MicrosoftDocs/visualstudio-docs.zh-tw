@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d150c517d4ac0b4f3c47c5e9e4758e24d697c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ef8f94ae451902c8f7b5e5d2b5f3156d01107589
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：匯出包含 Mipmap 的材質
 影像內容管線可以在您的專案建置階段中，從來源影像產生 mipmap 。 當您不需要手動指定每個 MIP 層級的影像內容時 — 您可能會為了取得特定的效果而這麼做 — 在建置時產生 mipmap 可確保 mipmap 內容永遠不會變成不同步，並且能消除在執行階段產生 mipmap 的效能成本。  

@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 35d062e3ab0cae690cb6242f132a20c53604cd0c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f706ca6fcaba9d1f5423fee3f32eefdaca163b1b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>說明檢視器的協助工具功能
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 本主題包含功能、產品和服務的相關資訊，協助各類人士存取 Microsoft Help Viewer。  
@@ -36,6 +37,6 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 本
 ## <a name="help-viewer-position"></a>說明檢視器位置  
 您可以將標題列拖曳到不同的位置來重新置放說明檢視器。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [快速鍵 (說明檢視器)](../ide/shortcut-keys-help-viewer.md)

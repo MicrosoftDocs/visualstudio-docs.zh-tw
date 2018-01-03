@@ -11,16 +11,17 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 343935b46b17f876b6bde65d3bd1547069447730
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 65f9a9dd0e07a86ee6a4b883a7318f9add7df3cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>安裝協力廠商單元測試架構
 Visual Studio 測試總管可以執行任何已針對總管開發配接器介面的單元測試架構。 架構的安裝程式會安裝二進位檔，並加入支援語言版本的 Visual Studio 專案範本。 當您使用範本來建立專案時，系統會向測試總管註冊架構。 Visual Studio 方案可包含多個單元測試專案，這些專案使用不同的架構並提供不同的語言版本。 測試總管會全部一起執行。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio Enterprise、Visual Studio Professional  
   
@@ -58,5 +59,5 @@ Visual Studio 測試總管可以執行任何已針對總管開發配接器介面
   
 4.  在結果清單中選擇架構，以巡覽至工具的 [Visual Studio Marketplace] 頁面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)

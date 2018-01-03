@@ -14,16 +14,17 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9aac5f9ac8886bef61d700209f77b4b1852fe2bf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a42e748e45d7db0606d585d774be254a7358d6b0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tier-interactions-view"></a>階層互動檢視
 階層互動分析提供透過 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 與資料庫通訊的多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]  
   
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|-   對於最上層資料列，其為已進行程式碼剖析的處理序或網頁名稱。<br />-   對於資料庫連接資料列，其為裝載資料庫的伺服器名稱。|  
+|**名稱**|-   對於最上層資料列，其為已進行程式碼剖析的處理序或網頁名稱。<br />-   對於資料庫連接資料列，其為裝載資料庫的伺服器名稱。|  
 |**資料庫**|資料庫的名稱 (僅資料庫連接資料列)。|  
 |**計數**|處理序、網頁或資料庫連接產生的要求總數。|  
 |**總耗用時間**|執行處理序、網頁或資料庫連接的任何一個要求所花費的總時間。|  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="database-connection-details-pane"></a>資料庫連接詳細資料窗格  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**命令文字**|要求的 SQL 查詢。|  
 |**查詢計數**|執行該查詢的次數。|  

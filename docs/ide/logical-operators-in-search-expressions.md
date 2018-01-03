@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3378a554a9e576bde011a70916c48597218bb512
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 09141b10ab9ee39568176fa7252a503bdaa747dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜尋運算式中的邏輯與進階運算子
 您可以使用邏輯運算子與進階的搜尋運算子，來精簡說明檢視器的說明內容搜尋範圍。
@@ -30,7 +31,7 @@ ms.lasthandoff: 11/07/2017
 |搜尋|用法|範例|結果|  
 |-------------------|---------|-------------|------------|  
 |相同文章中的兩個詞彙|AND|dib AND palette|包含 "dib" 和 "palette" 的主題。|  
-|文章中的任一個詞彙|或|raster OR vector|包含 "raster" 或 "vector" 的主題。|  
+|文章中的任一個詞彙|OR|raster OR vector|包含 "raster" 或 "vector" 的主題。|  
 |相同文章中沒有第二個詞彙的第一個詞彙|NOT|"operating system" NOT DOS|包含 "operating system" 但沒有 "DOS" 的主題。|  
 |文章中接近的兩個詞彙|NEAR|user NEAR kernel|包含十分接近 "kernel" 之 "user" 的主題。|  
   

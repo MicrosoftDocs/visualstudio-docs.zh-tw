@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0f1146b590e66c5f8c08dd58c858b2d50326a2ca
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c53c542741cc64c0d60a94116acf7de4ff7f61ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>步驟 11：執行您的程式並嘗試其他功能
 您的程式已完成，可以開始執行。 您可以執行程式並設定 PictureBox 的背景色彩。 若要進一步了解，請試著變更表單的色彩、自訂按鈕和核取方塊並變更表單的屬性，以改善程式。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 -   使用表單的 **AcceptButton** 和 **CancelButton** 屬性，如此就會在使用者選擇 ENTER 或 ESC 鍵時，自動選擇這些按鈕。 讓程式在使用者選擇 ENTER 鍵時開啟 [開啟檔案] 對話方塊，以及在使用者選擇 ESC 鍵時關閉對話方塊。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要深入了解如何使用 Visual Studio 進行程式設計，請參閱[程式設計概念](http://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6)。  
   

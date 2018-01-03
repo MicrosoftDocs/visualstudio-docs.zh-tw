@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9a175f5ba879ec84397785f91012f2b2e1653238
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: cplusplus
+ms.openlocfilehash: b84efa68a82f857179f7cffb22d93455dd723078
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至原生服務以收集應用程式統計資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 原生服務，並使用取樣方法收集效能統計資料。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/11/2017
     > [!NOTE]
     >  **/User** 和 **/crosssession** 選項通常是服務的必要選項。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有程式碼剖析處理序之帳戶的網域和使用者名稱。 只有在以登入的使用者之外的使用者身分執行處理序時，才需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。|  
     |[/crosssession](../profiling/crosssession.md)|在其他工作階段啟用處理序程式碼剖析。 如果應用程式在不同的工作階段中執行，則需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。|  
@@ -69,7 +70,7 @@ ms.lasthandoff: 11/11/2017
   
      根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 在 1GH 處理器上，這大約是每 10 秒一次。 您可以指定下列任一選項來變更時脈週期間隔，或指定不同的取樣事件。  
   
-    |取樣事件|說明|  
+    |取樣事件|描述|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|  
@@ -83,7 +84,7 @@ ms.lasthandoff: 11/11/2017
   
 -   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 處理序 ID (`PID`) 指定的處理序資料收集。|  
@@ -102,10 +103,10 @@ ms.lasthandoff: 11/11/2017
   
     -   輸入 **VSPerfCmd /detach**  
   
-2.  關閉程式碼剖析工具。 類型：  
+2.  關閉分析工具。 類型：  
   
      **VSPerfCmd /shutdown**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析服務](../profiling/command-line-profiling-of-services.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

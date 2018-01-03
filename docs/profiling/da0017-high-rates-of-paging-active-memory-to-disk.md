@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1fad088c659c168b40e6d56cfd67ba28bf3cef4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0490b5c18c166c6826ac4433277dd5e871ee4d2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：作用中的記憶體分頁至磁碟的比率很高
 |||  

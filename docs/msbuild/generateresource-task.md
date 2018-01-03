@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b3004b780400d2fac46866ac4ad02bda18ada9f7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3004f90f05a41ef0d2557236643af18b9be89d38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateresource-task"></a>GenerateResource 工作
 在 .txt 和 .resx (XML 型資源格式) 檔案，以及通用語言執行平台二進位 .resources 檔案 (可以內嵌在執行階段二進位可執行檔，或是編譯到附屬組件中) 之間轉換。 此工作一般用來將 .txt 或 .resx 檔轉換為 .resource 檔。 `GenerateResource` 工作的功能類似於 [resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator)。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>參數  
  下表說明 `GenerateResource` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`AdditionalInputs`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 包含此工作所執行相依性檢查的其他輸入。 例如，專案與目標檔案通常應為輸入，如有所更新時，就會重新產生所有資源。|  
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 指定環境變數的名稱/值組，該名稱/值組除了 (或選擇性覆寫) 一般環境區塊，還應傳遞給繁衍的 resgen.exe。|  
@@ -92,6 +93,6 @@ ms.lasthandoff: 10/31/2017
   
  沒有 \<LogicalName > 中繼資料時，則會將資源命名為 myAssembly.myResource.resources。  此範例僅適用於 Visual Basic 和 Visual C# 建置流程。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

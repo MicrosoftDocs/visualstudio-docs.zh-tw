@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eaf790d8c02c95047e28ca4d911d7f42a33bbd4f
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 3f181dccce6239cc8014e8e8ebf54c2e53794a50
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 使用 **CodeIndex** 命令管理 Team Foundation Server 上的程式碼索引。 例如，您可能會想要重設索引以修正 CodeLens 資訊，或關閉索引以調查伺服器效能問題。  
@@ -40,13 +41,13 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
   
 #### <a name="parameters"></a>參數  
   
-|**引數**|**說明**|  
+|**引數**|**描述**|  
 |------------------|---------------------|  
 |`CollectionName`|指定 Team 專案集合的名稱。 如果名稱包含空格，請為名稱加上引號，例如，"Fabrikam Web Site"。|  
 |`CollectionId`|指定 Team 專案集合的識別號碼。|  
 |`ServerPath`|指定程式碼檔案的路徑。|  
   
-|**選項**|**說明**|  
+|**選項**|**描述**|  
 |----------------|---------------------|  
 |**/indexingStatus**|顯示程式碼索引服務的狀態和組態。|  
 |**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**：開始為所有變更集編製索引。<br />-   **off**：停止為變更集編製索引。<br />-   **keepupOnly**：停止為先前建立的變更集編製索引，並且開始僅為新變更集編製索引。|  
@@ -124,7 +125,7 @@ TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam We
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Web Site"  
 ```  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [尋找 CodeLens 的程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)  
 [使用 TFSConfig 管理伺服器組態](http://msdn.microsoft.com/en-us/94424190-3b6b-4f33-a6b6-5807f4225b62)  

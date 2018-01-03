@@ -21,11 +21,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d489cc152d0f5652c8e6a787d9539b246d0f5285
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8db8c8414e4ce347ca8dbb59bec0f682911cf777
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 工作
 從文字檔讀取項目清單。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [工作](../msbuild/msbuild-tasks.md)

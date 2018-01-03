@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4ab874a59ad67e42e29270ac5f3da45816177a4
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: multiple
+ms.openlocfilehash: 33f8c8c8068f14d7cdf8bf32c4cff960b98957f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -79,6 +80,6 @@ Azure AD 可支援在 ASP.NET MVC Web 應用程式中進行使用者單一登入
 
 現在，再次前往 [伺服器總管]  ，在 Azure 節點上按一下滑鼠右鍵，然後選擇 [管理和篩選訂閱] 。 按一下目前帳戶旁的下拉式箭號，選擇新的帳戶，接著選擇您想要在伺服器總管中顯示的訂閱。 您應該會看到與指定的訂閱相關聯之所有服務。即使您目前並未使用第二個帳戶登入 Visual Studio IDE，但仍登入了該帳戶的服務與資源。 [專案]、[新增已連接服務] 以及 [小組]、[連接到 Team Foundation Server] 也是這樣。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-[Visual Studio 所使用的網際網路資源](../ide/connected-environment.md)
+[登入 Visual Studio](signing-in-to-visual-studio.md)

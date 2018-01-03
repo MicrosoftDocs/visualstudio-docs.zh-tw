@@ -15,16 +15,17 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7f0fc8530e45831132f3ec3f357ff0113fa4abe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e1addb93dfe5c4c39bb29507aa39eba66131f888
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-instrumentation-data-values"></a>認識檢測資料值
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的「檢測」分析方法會記錄已進行程式碼剖析的應用程式中函式呼叫、程式碼及指示的詳細計時資訊  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 -   作業系統在間隔期間是否曾執行作業。 例如，作業系統可能會讀取或寫入磁碟，或在目標執行緒與另一個處理序中的另一個執行緒之間切換。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -98,6 +99,6 @@ ms.lasthandoff: 10/31/2017
   
  100 * 函式應用程式專屬 / 工作階段應用程式內含  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)

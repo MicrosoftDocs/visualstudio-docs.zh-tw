@@ -11,11 +11,12 @@ ms.assetid: fc929a81-b20c-4802-92a7-388fd15aec3c
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 653d02466e608d8d2c2955da8fec987c50517382
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 6fe43af670320a5832765faf25294a46b8f98d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-code-generation-and-quick-actions-in-visual-studio"></a>Visual Studio 中的重構、程式碼產生和快速動作
 
@@ -49,7 +50,7 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 
 * [程式碼樣式及快速動作](code-styles-and-quick-actions.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio IDE](../ide/visual-studio-ide.md)  
 [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

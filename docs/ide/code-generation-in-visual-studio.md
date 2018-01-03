@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c4f3001eb630ce2f5a03d8e3f5169d25e413a6c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e001d58b37dadbc075c39964cea0da58656d6931
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-in-visual-studio"></a>Visual Studio 中的程式碼產生
 Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工作。  一些常見的程式碼產生功能包括︰  
@@ -34,7 +35,7 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 
 即將推出其他語言的文件...
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [Visual Studio IDE](../ide/visual-studio-ide.md)   
 [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)  
 [預覽變更](preview-changes.md)

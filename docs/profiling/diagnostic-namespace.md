@@ -14,11 +14,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 76d86738f53e0d6dc60289d1e3f395794f8482ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3fb9b831562e2d9e4ce7d686f49ac484d58f6804
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空間
 `diagnostics` 命名空間提供的功能可用來發出並行視覺化檢視標記。  
@@ -29,11 +30,11 @@ ms.lasthandoff: 10/31/2017
 namespace diagnostic;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="classes"></a>類別  
   
-|名稱|說明|  
+|名稱|描述|  
 |----------|-----------------|  
 |[marker_series 類別](../profiling/marker-series-class.md)|表示由單一提供者產生之事件的序列通道。|  
 |[span 類別](../profiling/span-class.md)|定義應用程式階段。|  
@@ -49,5 +50,5 @@ namespace diagnostic;
   
  **命名空間：** 並行  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Concurrency 命名空間 (並行視覺化檢視)](../profiling/concurrency-namespace-concurrency-visualizer.md)

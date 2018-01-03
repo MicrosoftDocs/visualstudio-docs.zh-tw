@@ -20,11 +20,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 746622d0a3282681599a26c8cba8782806e915e5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bc2d31565713e8985074ccf8fab6b9904f52199d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>基本 (Visual Basic)、文字編輯器、選項
 位於 [選項] ([工具] 功能表) 對話方塊上 [文字編輯器] 資料夾的[基本] 資料夾中的 [VB 專用] 屬性頁面包含下列屬性：  
@@ -70,6 +71,6 @@ ms.lasthandoff: 11/02/2017
 **啟用參考和關鍵字的反白顯示**  
 文字編輯器可以反白顯示符號的所有執行個體或子句中的所有關鍵字，例如 `If..Then`、`While...End While` 或 `Try...Catch...Finally`。 您可以按 CTRL+SHIFT+向下鍵或 CTRL+SHIFT+向上鍵，在反白顯示的參考或關鍵字之間巡覽。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
 [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)

@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bae1a28c7d9d0a87eeec3148301234cc0f45c286
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a67e3884fbb5e0c4bbb3a5aefe2cdcc8ac7d683e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="open-solution-command"></a>開啟方案命令
 關閉任何其他開啟的方案，以開啟現有方案。  
@@ -33,7 +34,7 @@ File.OpenSolution filename
   
 ## <a name="arguments"></a>引數  
  `Filename`  
- 必要項。 要開啟之方案的完整路徑和檔名。  
+ 必要。 要開啟之方案的完整路徑和檔名。  
   
  `filename` 引數的語法需要包含空格的路徑使用引號。  
   
@@ -47,7 +48,7 @@ File.OpenSolution filename
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

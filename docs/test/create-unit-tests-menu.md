@@ -12,11 +12,12 @@ ms.assetid: 5D625021-BA96-48A5-9453-3EF6F0943466
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7e69218700314224f67094486cfd381ac1460995
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: c1bd2d883a86a74ee79ced5bf857e3c81c019c5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>使用建立單元測試命令來建立單元測試方法虛設常式
 

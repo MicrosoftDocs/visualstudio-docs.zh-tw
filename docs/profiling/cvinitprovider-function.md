@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f0ddb249c825048b5bb98dd5b648902663ccd85a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 15abebb58382674bc7943d7949dfddbc62524c91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函式
 初始化標記提供者。 必須在其他並行視覺化檢視 SDK 函式之前呼叫。  
@@ -45,5 +46,5 @@ HRESULT CvInitProvider(
 ## <a name="requirements"></a>需求  
  **標頭︰**cvmarkers.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

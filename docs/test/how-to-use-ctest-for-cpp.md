@@ -11,11 +11,12 @@ ms.assetid: a8b30934-5f38-4a18-8819-263e0733cdbe
 caps.latest.revision: "14"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 7e1d00460a4acf26f23c256f8eb0180360315a98
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 1b471b90748442369cd9cf917e65fd283c5c52ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用 C++ 的 CTest
 CMake (包括 CTest) 已整合到 Visual Studio IDE 作為 [使用 C++ 的桌面開發] 工作負載的元件。 若要將它安裝在您的電腦上，請開啟 Visual Studio 安裝程式，並在工作負載元件清單下尋找 [適用於 Visual C++ 的 CMake 工具](/cpp/ide/cmake-tools-for-visual-cpp)。
@@ -27,7 +28,7 @@ Visual Studio 中的 CMake 支援不包括 Visual Studio 專案系統。 因此�
 ![執行 CTest 測試](media/cpp-cmake-run-tests.png "執行 CTest 測試")
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)
 
 

@@ -16,16 +16,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f7edc6e37b21b8810e8967c160e44e82c0903b24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc3da69cd89421ed3f8b04f5c47a190d8453411d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-applications"></a>全球化應用程式
 「全球化」是針對多種文化特性，設計和開發軟體產品的程序。 本節同時適用於 Windows Forms 和 Web Forms 頁面。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [全域 Windows Forms 和 Web Forms 的文化特性特定類別](../ide/culture-specific-classes-for-global-windows-forms-and-web-forms.md)  
  根據文化特性設定，探討可格式化日期、時間、數字、貨幣和其他資訊的類別。  
   

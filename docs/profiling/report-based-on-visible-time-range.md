@@ -14,18 +14,19 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cf6a2a2a663854d79a33eb84bb135d349a185532
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ea4f4593f40ae08cd865d65550f6316baaee618
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="report-based-on-visible-time-range"></a>以可見時間範圍為基礎的報表
 [設定檔] 檢視顯示的報表是以目前可見的時間範圍和通道為基礎。 若要查看資料不同子集的詳細資訊，請按一下圖例中的項目。  
   
  您可以在這裡的資料表中找到資料的詳細資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [沒有執行緒活動可顯示](../profiling/no-thread-activity-to-show-threads-view.md)   
  [執行分析報表](../profiling/execution-profile-report.md)   
  [同步處理時間](../profiling/synchronization-time.md)   

@@ -9,11 +9,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 8d5e7a40854157c49464875edfbbdfe03f41bb8b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 5329c55ef1cc8e7ef0f00cba0731c7f09574de89
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introducing-live-unit-testing"></a>Live Unit Testing 簡介
 

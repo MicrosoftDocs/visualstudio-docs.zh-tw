@@ -15,11 +15,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 881075ee32ccac155237035dbe1a2f6d17a82893
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9634fe1a0fa26d5180edc9312b925e6740bac216
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 我們建議用來撰寫 MSBuild 指令碼的最佳作法如下：  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
   
 -   當您選取項目時，請避免使用萬用字元， 而要明確地指定檔案。 這樣會比較容易追蹤當您新增或刪除檔案時，可能發生的錯誤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

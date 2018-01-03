@@ -8,21 +8,16 @@ ms.technology: vs-ide-general
 ms.tgt_pltfrm: 
 ms.topic: article
 f1_keywords: Microsoft.VisualStudio.Publish.BaseProvider.Dialog.Bootstrapper
-dev_langs:
-- VB
-- CSharp
-- C++
 helpviewer_keywords: Prerequisites dialog box
-ms.assetid: 53ac863c-77a0-409b-91e5-7a4bd8b8474e
-caps.latest.revision: "75"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 68e326d8045733fc4f491c51405ed51414a92afd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9e363dcdb8b15b1436da3738d75486b6675e9c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prerequisites-dialog-box"></a>Prerequisites Dialog Box
 這個對話方塊可指定已安裝的必要條件元件、安裝方式，以及套件的安裝順序。  
@@ -31,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|項目|說明|  
+|元素|描述|  
 |-------------|-----------------|  
 |**建立安裝程式以安裝必要條件元件**|將必要條件元件包含在應用程式的安裝程式 (Setup.exe) 中，才能在安裝應用程式之前，依照相依性的順序進行安裝。 根據預設，這個選項是選取的。 如果沒有選取這個選項，則不會建立 Setup.exe。|  
 |**選擇要安裝的必要條件**|指定是否要安裝元件，例如 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)]、Crystal Reports 等。<br /><br /> 例如，選取 [SQL Server 2005 Express Edition SP2] 旁的核取方塊，即指定安裝程式確認這個元件是否已安裝在目標電腦上，如果尚未安裝就會進行安裝。<br /><br /> 如需各個必要條件套件的詳細資訊，請參閱本主題稍後的「必要條件資訊」表格。|  
@@ -43,7 +38,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="prerequisites-information"></a>必要條件資訊  
  [必要條件] 對話方塊中顯示的必要條件元件，可能和以下所列的不同。 第一次開啟該對話方塊時，會自動設定**必要條件對話方塊**中所列的必要條件套件。 如果您接著變更專案的目標架構，您就必須手動選取必要條件以符合新的目標架構。  
   
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |**.NET Framework 3.5 SP1**|這個套件會安裝下列項目：<br /><br /> -   .NET Framework 2.0、3.0 和 3.5 版。<br />-   支援 32 位元 (x86) 及 64 位元 (x64) 作業系統上的所有 .NET Framework 版本。<br />-   隨著這個套件一併安裝之每個 .NET Framework 版本的語言套件。<br />-   .NET Framework 2.0 及 3.0 的 Service Pack。<br /><br /> .NET Framework 3.0 隨附於 Windows Vista，.NET Framework 3.5 則隨附於 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]。 所有針對 32 位元作業系統編譯，而且目標架構設定為 [.NET Framework 3.5] 的 Visual Basic 和 Visual C# 專案，以及針對 64 位元作業系統編譯的 Visual Basic 和 Visual C# 專案，都需要 .NET Framework 3.5  (不支援 IA64)。請注意，根據預設，Visual Basic 和 Visual C# 專案是針對任何 CPU 架構編譯。 如需詳細資訊，請參閱 [Visual Studio 多目標概觀](../../ide/visual-studio-multi-targeting-overview.md)、[轉散發 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287) 和 [64 位元應用程式的部署必要條件](../../deployment/deploying-prerequisites-for-64-bit-applications.md)。<br /><br /> 這個項目預設為選取。|  
 |**.NET Framework 3.5 SP1 Client Profile**|.NET Framework Client Profile 是完整 .NET Framework 3.5 SP1 的子集，以用戶端應用程式為目標。 它提供了 Windows Presentation Foundation (WPF)、Windows Forms、Windows Communication Foundation (WCF) 以及 ClickOnce 功能的精簡子集。 這樣可以快速部署以 .NET Framework Client Profile 為目標的 WPF、Windows Form、WCF 及主控台應用程式。 如需詳細資訊，請參閱 [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)。|  
@@ -63,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 |**Windows Installer 3.1**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 3.1 版，以允許安裝 Windows Installer 安裝專案。 Windows Server 2003 SP1 (含) 以後版本都會預先安裝這個套件。<br /><br /> 這個項目預設為選取。|  
 |**Windows Installer 4.5**|這個套件會安裝 Microsoft Windows Installer 可轉散發套件 4.5 版，以允許安裝 Windows Installer 安裝專案。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案設計工具、發行頁面](../../ide/reference/publish-page-project-designer.md)   
  [應用程式部署必要條件](../../deployment/application-deployment-prerequisites.md)   
  [轉散發 .NET Framework](http://msdn.microsoft.com/en-us/a18d0456-fd89-493e-97f4-756505bfe287)   

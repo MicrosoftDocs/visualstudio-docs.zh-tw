@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 822d9a15a248a72c19d41d548dcb68092c43d268
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f2e5411a4d5b88340105f71248ca2e5c2410ff12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shutdown"></a>關機
 [關機] 選項等候任何目前已分析的處理序結束或中斷連接，然後關閉分析工具，結束分析資料檔案。 [關機] 選項必須是分析執行的最後一道命令。  
@@ -35,7 +36,7 @@ VSPerfCmd.exe /Shutdown[:Timeout]
  `Timeout`  
  -   (選擇性) 如已指定，則此選項會在指定的秒數後傳回，不關閉分析工具或結束分析資料檔。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -10,11 +10,12 @@ ms.topic: tutorial
 ms.technology: visual studio
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 3ea1fb096f1c5215a0f2fe8fd59c1afd4baa5b6f
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 39cffe5aa2c24c04a6543bbf0851e0e147c5ba6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-a-tensorflow-model-in-the-cloud"></a>在雲端中定型 TensorFlow 模型
 

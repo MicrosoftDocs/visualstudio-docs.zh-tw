@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 57f6cf279bc20514aa16d7da422a22349d2b792e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 561affd955385f6797774e08d52c6949763a4eae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="marks-view"></a>標記檢視
 [標記] 檢視會顯示插入應用程式中的取樣和 ETW 事件。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
  Windows 效能計數器資料  
  收集 Windows 效能計數器資料時，值會顯示在含有計數器名稱的資料行中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能報告概觀](../profiling/performance-report-overview.md)   
  [如何：收集 Windows 計數器資料](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; 資料收集控制項視窗](http://msdn.microsoft.com/en-us/98d740d8-459f-4605-bf04-fb17aafaaa8f)

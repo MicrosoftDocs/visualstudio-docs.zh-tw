@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f54e50e62b7f7f8f6dd1610904b66c82da02380
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b003f4890b16a7b69f7f66f8b0ef83a0ade7ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resetaddin-devenvexe"></a>/ResetAddin (devenv.exe)
 移除與所指定增益集相關聯的命令和命令 UI。  
@@ -33,7 +34,7 @@ Devenv /ResetAddin AddIn
   
 ## <a name="arguments"></a>引數  
  `AddIn`  
- 選擇項。 增益集的命令名稱。  
+ 選擇性。 增益集的命令名稱。  
   
 ## <a name="remarks"></a>備註  
  根據預設，增益集的命令名稱等於 \<增益集方案名稱>.Connect.\<增益集方案名稱>，並出現在 Connect.cs 中作為 `Exec` 方法的 `commandName` 參數。 您也可以確認命令名稱，方法是在 Visual Studio 的 [命令] 視窗中開始輸入增益集名稱，並使用 Intellisense 填入其餘部分。  
@@ -45,6 +46,6 @@ Devenv /ResetAddin AddIn
 Devenv.exe /ResetAddin MyAddin.Connect.MyAddin  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

@@ -17,11 +17,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5b3c5334e99000c220db730238c75e086c3acbc7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 282d9a70470686af71120887ee18bb2b6a899f78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-task-list"></a>使用工作清單
 
@@ -113,6 +114,6 @@ ms.lasthandoff: 12/07/2017
 
 若要在程式碼中巡覽捷徑，請在清單中選擇捷徑，然後從捷徑功能表中選擇 [下一個工作]  或 [上一個工作]  。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [選項對話方塊、環境、工作清單](../ide/reference/task-list-environment-options-dialog-box.md)

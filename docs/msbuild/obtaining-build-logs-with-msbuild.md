@@ -15,11 +15,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cd7e50a44e5d53653f233372b643c31fe58aedc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 129f9c9235035e828e1825898aac89eaf8cd1388
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>使用 MSBuild 取得組建記錄檔
 將 MSBuild 與參數搭配使用，您可以指定想要檢閱的組建資料量，以及是否要將組建資料儲存至一或多個檔案。 您也可以指定自訂記錄器來收集組建資料。 如需本主題未涵蓋的 MSBuild 命令列參數相關資訊，請參閱[命令列參考](../msbuild/msbuild-command-line-reference.md)。  
@@ -76,7 +77,7 @@ msbuild MyProject.proj /t:go /fl1 /fl2 /fl3 /flp2:logfile=JustErrors.log;errorso
   
  在 MSBuild 命令列中，您會使用 **/logger** 參數來指定自訂記錄器。 您也可以使用 **/noconsolelogger** 參數，來停用預設的主控台記錄器。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.Build.Framework.LoggerVerbosity>   
  [組建記錄器](../msbuild/build-loggers.md)   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)   

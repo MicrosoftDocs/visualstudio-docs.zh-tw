@@ -16,11 +16,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b95a691f3246fd3745ce90bffa7967bd5ad52d31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 18817d7fd6af26c5e1ce9d021afc37d1e9da8f34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>專案設計工具、My 擴充頁 (Visual Basic)
 使用 [專案設計工具] 的 [My 延伸模組] 頁面管理專案中的 `My` 命名空間延伸模組。 `My` 命名空間延伸模組可讓您自訂 `My` 命名空間，新增您自己的自訂成員。 如需建立自訂 `My` 命名空間延伸模組的資訊，請參閱[擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  **移除延伸模組**  
  在 [My 命名空間延伸模組] 清單中選取一或多個參考，然後一下此按鈕移除專案的 `My` 命名空間延伸模組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充 Visual Basic 中的 My 命名空間](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)   
  [封裝和部署自訂的 My 延伸模組](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)   
  [擴充 Visual Basic 應用程式模型](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-visual-basic-application-model)   

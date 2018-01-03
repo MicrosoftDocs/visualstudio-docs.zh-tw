@@ -10,11 +10,12 @@ helpviewer_keywords:
 - Live Unit Testing
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 83458b769b5551ed07774e244cce65a97477a713
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: b0d4726bc29ebbb6f90fde5e7817ec2fb596177c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>在 Visual Studio 中開始使用 Live Unit Testing
 
@@ -380,6 +381,6 @@ Live Unit Testing 所識別的主要問題是不完整的程式碼涵蓋範圍�
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Visual Studio 中的 Live Unit Testing](live-unit-testing.md)   
 [Live Unit Testing 常見問題集](live-unit-testing-faq.md)   

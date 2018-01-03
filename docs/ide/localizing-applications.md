@@ -18,16 +18,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 55e4156552c58f7505ec8a497d7ebb9d6d3f2c94
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c389f8dd13514d940941bcefc228236b3418e317
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="localizing-applications"></a>當地語系化應用程式
 「當地語系化」是針對指定文化特性或地區設定自訂應用程式的程序。 當地語系化工作主要是翻譯使用者介面。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [階層式組織當地語系化的資源](../ide/hierarchical-organization-of-resources-for-localization.md)  
  說明在 Visual Studio 中如何儲存及存取當地語系化的資源。  
   

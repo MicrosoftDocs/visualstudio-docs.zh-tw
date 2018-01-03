@@ -19,11 +19,12 @@ caps.latest.revision: "30"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 630a51cc9933b1e7b71f2926c6a057bff13bc81b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e847e1295e4514f8e1c327f207a6ae7166c892df
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：為執行中的處理序附加和中斷連結程式碼剖析工具
 程式碼剖析工具可以用來附加至或中斷連結執行中的處理序，以協助取樣與蒐集效能資料。 當您想要避免蒐集應用程式載入時間的資料，或是在處理序進入特定狀態後監視其效能時，就可以使用這種方法來執行處理序的程式碼剖析。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  按一下 [中斷連結]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
  [如何︰啟動和結束效能資料收集](../profiling/how-to-start-and-end-performance-data-collection.md)   

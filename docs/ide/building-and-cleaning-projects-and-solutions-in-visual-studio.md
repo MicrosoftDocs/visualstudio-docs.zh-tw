@@ -26,11 +26,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2e66af6d2d38685bdd905b7991c6e8f782e4f696
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: faf5978119ef9029db99ae953d5c60876abddabf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中建置和清除專案與方案
 您可以使用本主題中的程序來建置、重建或清除所有或部分專案，或方案中的專案項目。 如需逐步教學課程，請參閱[逐步解說︰建置應用程式](../ide/walkthrough-building-an-application.md)。  
@@ -109,7 +110,7 @@ ms.lasthandoff: 11/07/2017
   
     -   選擇 Ctrl + Break 鍵。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [如何：檢視、儲存和設定組建記錄檔](../ide/how-to-view-save-and-configure-build-log-files.md)   
 [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
 [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   

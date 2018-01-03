@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1ea8dfe604b0038c13b4702bc14e94923cca5b88
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: f839156c470f14097e216f55318cf94f123f5c91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集 ASP.NET Web 應用程式的記憶體資料
 本節描述使用 **VSPerfCmd** 命令列工具收集 ASP.NET Web 應用程式之記憶體配置和物件存留期資料的程序和選項。  
@@ -56,4 +57,4 @@ ms.lasthandoff: 10/31/2017
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
   
 ## <a name="reference"></a>參考資料  
- [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
+ [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)

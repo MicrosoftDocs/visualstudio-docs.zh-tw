@@ -11,11 +11,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 14e3d3432a62d54564c92a12a02204ffb5e05889
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: eea8b4bb93d0e848bd085fd534fcaaa553a15e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>使用 NuGet 和擴充功能 SDK 兩種方式新增參考
 
@@ -68,6 +69,6 @@ ms.lasthandoff: 11/22/2017
 |機制可供所有 Visual Studio 版本使用。|Y|SDK 支援所有 Visual Studio 版本，從 Visual Studio Express 直至 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。|Y|NuGet 支援所有 Visual Studio 版本，從 Express 直至 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]。|
 |機制適用於所有專案類型。|N|從 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] 開始，SDK 支援 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式。|N|您可以檢閱允許專案的清單。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [管理專案中的參考](../ide/managing-references-in-a-project.md)

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2232c2564963a236c5698e081f2bd79c76ae3bf6
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 45aaccf19518572211bf9468a133989e651504bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Visual Studio 中常用命令的預設鍵盤快速鍵
 
@@ -169,6 +170,6 @@ iew.TfsTeamExplorer|Ctrl+\\、Ctrl+M [全域]|
 |Window.NextDocumentWindowNav|Ctrl+Tab [全域]|  
 |Window.NextSplitPane|F6 [全域]|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [識別及自訂 Visual Studio 中的鍵盤快速鍵](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e2f2e76d9dec25e6c5bf5d6deeab42364d28de8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35dfc24f22d223fcd6f1db225342bb406e73c3ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="version-numbers-for-main-and-localized-satellite-assemblies"></a>主要和當地語系化附屬組件的版本號碼
 <xref:System.Resources.SatelliteContractVersionAttribute> 類別針對透過資源管理員使用當地語系化資源的主要組件提供了版本控制支援。 將 <xref:System.Resources.SatelliteContractVersionAttribute> 套用至應用程式的主要組件，可讓您更新和重新部署該組件，而不需要更新其附屬組件。 例如，您可以搭配未引進新資源的 Service Pack 使用 <xref:System.Resources.SatelliteContractVersionAttribute> 類別，而不需要重建和重新部署您的附屬組件。 若要使用當地語系化資源，主要組件的附屬合約版本必須與附屬組件的 <xref:System.Reflection.AssemblyVersionAttribute> 類別相符。 您必須在 <xref:System.Resources.SatelliteContractVersionAttribute> 中指定確切的版本號碼；不允許萬用字元，例如 "*"。 如需詳細資訊，請參閱[擷取資源](/dotnet/framework/resources/retrieving-resources-in-desktop-apps)。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 [assembly: SatelliteContractVersionAttribute("4.3.2.1")]  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行階段如何找出組件](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)   
  [設定組件屬性](/dotnet/framework/app-domains/set-assembly-attributes)   
  [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)   

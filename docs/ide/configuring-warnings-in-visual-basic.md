@@ -16,11 +16,12 @@ caps.latest.revision: "35"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4df81a0d5f6faee7a272abd13ca6e046681b045d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c076fe18318a9110babdf17d74898f35466d710c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuring Warnings in Visual Basic
 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器會包含一組警告，這組警告與可能會造成執行階段錯誤的程式碼有關。 您可以使用該項資訊，來撰寫更簡潔、更快速、更好且錯誤更少的程式碼。 例如，當使用者嘗試叫用未指派之物件變數的成員時、從未設定傳回值的函式傳回時，或執行 `Try` 區塊但攔截例外狀況的邏輯有錯誤時，編譯器就會產生警告。  
@@ -52,7 +53,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="examples"></a>範例  
  下表提供命令列引數範例，並描述每個引數的功能。  
   
-|引數|說明|  
+|引數|描述|  
 |--------------|-----------------|  
 |`vbc /warnaserror`|指定應該將所有警告視為錯誤。|  
 |`vbc /warnaserror:42024`|指定應該將警告 42024 視為錯誤。|  
@@ -119,7 +120,7 @@ ms.lasthandoff: 10/31/2017
   
  識別碼：42029、42031  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [錯誤類型](/dotnet/visual-basic/programming-guide/language-features/error-types)   
  [Try...Catch...Finally 陳述式](/dotnet/visual-basic/language-reference/statements/try-catch-finally-statement)   
  [/nowarn](/dotnet/visual-basic/reference/command-line-compiler/nowarn)   

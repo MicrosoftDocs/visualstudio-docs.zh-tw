@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 337bf9a33f781046f0713dbb52a72412229dcd17
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 515aefab86a0a047d7074d127d9dd621feb0117c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>如何：建立灰階材質著色器
 本文件將示範如何使用著色器設計工具和有向圖形著色器語言 (DGSL)，來建立灰階材質著色器。 這個著色器可修改材質範例的 RGB 色彩值，然後和未經修改的 Alpha 值一起使用來設定完稿色彩。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
  某些圖形可對一些著色器提供更佳的預覽。 如需在著色器設計工具中預覽著色器的詳細資訊，請參閱[著色器設計工具](../designers/shader-designer.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：將著色器套用至 3D 模型](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [如何：匯出著色器](../designers/how-to-export-a-shader.md)   
  [影像編輯器](../designers/image-editor.md)   

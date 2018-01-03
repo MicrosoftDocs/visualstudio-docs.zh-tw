@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f572075106d815a791ca59fa2b35a31918f02bd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 32eb0b4e34edde03cd455384d7b1c6d36e0365c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-sampling-data"></a>模組檢視 - .NET 記憶體取樣資料
 使用取樣方法收集的 .NET 記憶體檢測資料模組檢視，會將記憶體資料依據分析執行中所執行的模組來分類。 每個模組都是階層式樹狀結構的根。 模組的函式列在模組節點之下。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|模組、函式、行號或指令位址的名稱。|  
+|**名稱**|模組、函式、行號或指令位址的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
 |**模組名稱**|包含該函式的模組名稱。|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |**專有位元組**|-   對於函式，這是該函式配置的位元組總數。 該數量不包含由此函式呼叫之函式所配置的位元組。<br />-   對於模組，這是該模組中的函式所配置的專有位元組總和。<br />-   對於程式行或指令，這是此程式行或指令配置的物件總數。|  
 |**專有位元組 %**|分析執行期間，模組、函式、程式行或指令的專有位元組佔所有已配置位元組的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視](../profiling/modules-view-sampling-data.md)   

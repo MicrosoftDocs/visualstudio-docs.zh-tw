@@ -31,11 +31,12 @@ caps.latest.revision: "28"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 124448e5c989597361f678b290fe345968f0cf08
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: c7c852033d5835c4da4cc7f1e3bdf5d20472439c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>如何：在 Visual Studio 中自訂功能表和工具列
 您可以自訂 Visual Studio，不只是可以新增及移除功能表列上的工具列和功能表，還可以新增及移除任何指定工具列或功能表上的命令。  
@@ -119,6 +120,6 @@ ms.lasthandoff: 11/07/2017
   
     您也可以選擇 [全部重設] 按鈕，重設所有功能表和工具列。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [個人化 IDE](../ide/personalizing-the-visual-studio-ide.md)  
 [自訂編輯器](../ide/customizing-the-editor.md)

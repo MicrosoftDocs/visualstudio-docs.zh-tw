@@ -15,11 +15,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f33a5650230eced6f6713e943daba1ef0cacb74a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 716d19362495fccf475a068a28a9fe2acbe27b53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hosting-process-vshostexe"></a>裝載處理序 (vshost.exe)
 Visual Studio 的裝載處理序功能可改善偵錯效能、啟用部分信任偵錯及設計階段運算式評估。 裝載處理序檔案會放在您專案的輸出資料夾中，其檔名包含 vshost。 如需詳細資訊，請參閱[偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)。  
@@ -36,7 +37,7 @@ Visual Studio 的裝載處理序功能可改善偵錯效能、啟用部分信任
 ## <a name="design-time-expression-evaluation"></a>設計階段運算式評估  
  設計階段運算式評估可讓您透過 [即時運算] 視窗來測試程式碼，而不需執行應用程式。 在設計階段運算式評估期間，裝載處理序會執行這個程式碼。 如需詳細資訊，請參閱[即時運算視窗](../ide/reference/immediate-window.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯和裝載處理序](../debugger/debugging-and-the-hosting-process.md)   
  [如何：停用裝載處理序](../ide/how-to-disable-the-hosting-process.md)   
  [即時運算視窗](../ide/reference/immediate-window.md)   

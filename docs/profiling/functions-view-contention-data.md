@@ -13,18 +13,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c226c112cfb5854e882297fafdf56219adc2bdb1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d9dcf9ab34e5d0441f3c1ce3a47d5e148c9394d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---contention-data"></a>函式檢視 - 爭用資料
 爭用資料的函式報告檢視會列出執行的分析中，於分析執行期間被封鎖執行的函式。  
   
  下表說明分析資料檔 [函式] 檢視顯示的值，此檔案是使用並行方法收集。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|此函式遭封鎖而無法執行函式主體程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。|  
 |**專有封鎖時間 %**|在分析執行的所有封鎖時間中，屬於此函式的專屬封鎖時間百分比。|  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [函式檢視](../profiling/functions-view.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dd9e082834af6194b84c7975e4a42337d66a429a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b2f48162ed4c37358980c40b5c71c4f955880358
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-well-known-item-metadata"></a>MSBuild 已知的項目中繼資料
 下表說明在建立期間指派給每個項目的中繼資料。 每個範例都使用了下列項目宣告，以在專案中包含 `C:\MyProject\Source\Program.cs` 檔案。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 |%(CreatedTime)|包含項目建立時間的時間戳記。 例如: <br /><br /> `2004-06-25 09:26:45.8237425`|  
 |%(AccessedTime)|包含上次存取項目時間的時間戳記。<br /><br /> `2004-08-14 16:52:36.3168743`|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [項目](../msbuild/msbuild-items.md)   
  [批次處理](../msbuild/msbuild-batching.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

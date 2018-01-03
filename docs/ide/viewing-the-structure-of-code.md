@@ -29,11 +29,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 75a8f4251d6624487484dbd02230bc5d7c79baef
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 48b146a14310b0b148f886ef0e09bd23859abf5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="viewing-the-structure-of-code"></a>檢視程式碼的結構
 
@@ -221,6 +222,6 @@ ms.lasthandoff: 12/07/2017
 
 您可以搭配使用 [文件大綱] 視窗與設計工具檢視，例如 XAML 頁面的設計工具或 Windows Forms 設計工具，或搭配 HTML 頁面。 此視窗會以樹狀檢閱來顯示項目，使您能夠檢閱表單或頁面的邏輯結構，以及尋找深度內嵌或隱藏的控制項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [類別檢視和物件瀏覽器圖示](../ide/class-view-and-object-browser-icons.md)

@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e044e3d89f7cbaae28ff0fd3cefe1c6fe4583c65
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3cf223b0b4d2f8ca710a5d5fdb349c7a423b1b86
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="user-permissions-and-visual-studio"></a>使用者權限和 Visual Studio
 基於安全性原因，您最好盡可能以一般使用者身分來執行 Visual Studio。  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
 
      在 Visual Studio 啟動時，**(系統管理員)** 會顯示在標題列的產品名稱之後。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [安裝 Visual Studio](../install/install-visual-studio.md)

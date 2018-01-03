@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: d17f11394b533cebd2481ea859ec2b0f2194c360
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5037b284a0f524a8b7c550a72fe76a27afd37f10
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-forwarding-loggers"></a>建立轉送記錄器
 轉送記錄器可讓您選擇在多處理器系統上建置專案時想要監視的事件，以提高記錄的效率。 啟用轉送記錄器時，您可以防止不必要的事件塞滿中央記錄器，而導致建置時間變慢、記錄空間暴增等問題。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="multi-processor-aware-loggers"></a>能夠辨識多處理器的記錄器  
  當您在多處理器系統建置專案時，來自每個處理器的建置訊息不會自動按一致順序交錯排列。 因此，您必須使用附加至每個訊息的 <xref:Microsoft.Build.Framework.BuildEventContext> 類別，以建立訊息群組優先順序。 如需多處理器建置的詳細資訊，請參閱[在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [組建記錄器](../msbuild/build-loggers.md)   
  [在多處理器環境中記錄](../msbuild/logging-in-a-multi-processor-environment.md)

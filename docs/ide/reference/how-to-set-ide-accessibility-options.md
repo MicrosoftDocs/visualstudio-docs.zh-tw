@@ -12,11 +12,12 @@ ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 402d59b80c5765447468468c9aa7def8c14f079c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e7b7623a60f5a6e06739596b02125806205c07b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>如何：設定 IDE 協助工具選項
 > [!TIP]
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  若要重設以文字為基礎之工具視窗和編輯器的文字大小，請選擇 [使用預設值]。  
 
-7.  選擇 [ **確定**]。  
+7.  選擇 [確定] 。  
 
 ### <a name="changing-the-colors-used-in-the-ide"></a>變更 IDE 中使用的色彩  
  您也可以選擇變更編輯器中文字、邊界指標、空白字元和程式碼項目的預設色彩。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
 
 5.  從下列選項選取顯示設定：[項目前景]、[項目背景] 和 [粗體]。  
 
-6.  選擇 [ **確定**]。  
+6.  選擇 [確定] 。  
 
 ## <a name="toolbars"></a>工具列  
  若要改善工具列的可用性和協助工具，您可以為工具列按鈕新增文字。  
@@ -111,6 +112,6 @@ ms.lasthandoff: 10/31/2017
 
 2.  在相鄰 [名稱] 處，提供選取按鈕的新標題。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)   
  [設計可及性應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c5aaff542f654928a7ed56313232a6e6ead67f9d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b4e82450286d5da47a11217401ebbc17133530b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="filtering-report-views"></a>篩選報表檢視
 您可以在分析資料檔案上套用篩選，限制效能報告檢視中顯示的分析資料，並匯出報表檔案。 您可以將報告限制為介於時間戳記值之間的資料，也可以將資料限制為特定處理序和執行緒。 您可以將篩選儲存到檔案，然後匯入儲存的篩選，在不同的分析資料檔案中建立篩選。  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  請為想要新增至篩選的每個子句，在資料列的下列欄位中選取或輸入值。  
   
-    |欄位|說明|  
+    |欄位|描述|  
     |-----------|-----------------|  
     |**和/或**|如果這個子句和下一個子句必須同時為 true，請選擇**和**以進行結果比對。 如果這個子句或下一個子句可以為 true，請選擇**或**以進行結果比對。|  
     |**欄位**|從顯示的資料欄位清單中選取要用在篩選子句中的報表欄位。|  
@@ -93,5 +94,5 @@ ms.lasthandoff: 10/31/2017
   
 2.  指定要儲存之篩選條件 (.vspf) 檔案的位置和檔案名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂效能工具報表檢視](../profiling/customizing-performance-tools-report-views.md)

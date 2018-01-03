@@ -21,11 +21,12 @@ caps.latest.revision: "57"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 07beb4cfbc8acad0184ff93d12121699f3b27b03
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa07e9e489dd6334e0075da4cd8c265e71aa1db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令列參考
 在使用 MSBuild.exe 來建置專案或方案檔時，您可以包含數個參數來指定處理程序的各個層面。  
@@ -89,6 +90,6 @@ MSBuild.exe MyProject.proj /t:rebuild
 msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder:Clean  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 參考](../msbuild/msbuild-reference.md)   
  [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

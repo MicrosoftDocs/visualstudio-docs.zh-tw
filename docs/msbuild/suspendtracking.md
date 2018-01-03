@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c00b78b3a1d69b0d68abf9d07615bc1875ffc5a4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 34aa890b8aaa4f1b4dd1f61dc79091ed81eb428c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 在目前的內容中暫停追蹤。  
@@ -37,5 +38,5 @@ HRESULT WINAPI SuspendTracking(void);
 ## <a name="requirements"></a>需求  
  **標頭：**FileTracker.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ResumeTracking](../msbuild/resumetracking.md)

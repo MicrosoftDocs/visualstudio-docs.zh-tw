@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0628e118ecf0d22591ff1f88208e2cc5396a6bc4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58c1b8332e472484a0c932018bf6725cca9c7725
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-functions"></a>程式碼片段函式
 有三個函式可用來與 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 程式碼片段搭配使用。 函式指定於程式碼片段的 [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) 項目中。 如需建立程式碼片段的資訊，請參閱[程式碼片段](../ide/code-snippets.md)。  
@@ -153,6 +154,6 @@ ms.lasthandoff: 10/31/2017
 </CodeSnippets>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Function 項目 (Intellisense 程式碼片段)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

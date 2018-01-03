@@ -17,11 +17,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2fe5e36b6d6f8cd7672c2300c385a1045bb677f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ceadf13f6567b303337b14b6b76be86ddcbac8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="supplying-xml-code-comments"></a>提供 XML 程式碼註解
 您可以將原始程式碼檔中的註解當成 IntelliSense 使用。 將 /doc 參數新增至 Visual Basic、C# 或 C++ 編譯器命令列時，會產生當成 IntelliSense 文件基礎的 .xml 檔案。  
@@ -32,5 +33,5 @@ ms.lasthandoff: 10/31/2017
   
  如需在 C++ 中撰寫程式碼的詳細資訊，請參閱[註解](/cpp/cpp/comments-cpp)和 [XML 文件](/cpp/ide/xml-documentation-visual-cpp)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 IntelliSense](../ide/using-intellisense.md)

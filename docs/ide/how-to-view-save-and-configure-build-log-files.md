@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 617b495cab96d8fdb0ddd7c69d6e6c1dd93d7ccc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a57911b8736af27caf0bd9ba30e9e03bdebed2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：檢閱、儲存和設定建置記錄檔
 在 Visual Studio IDE 中建置專案之後，您可以在 [輸出] 視窗中檢視該組建的資訊。 例如，使用這項資訊，您可以針對建置失敗進行疑難排解。 對於 C++ 專案，您也可以在自動建立和儲存的 .txt 檔案中，檢視相同的資訊。 對於受控碼專案，您可以將 [輸出] 視窗的資訊複製並貼至 .txt 檔案，然後自行儲存它。 您也可以使用 IDE 來指定您想要檢視每個組建的資訊種類。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
     > [!IMPORTANT]
     >  您必須重建專案，您的變更才會在 [輸出] 視窗 (所有專案) 和 <專案名稱>.txt 檔案 C++ 專案) 中生效。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [取得組建記錄檔](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

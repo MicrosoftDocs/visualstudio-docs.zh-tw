@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 69669acc9cc0815dc8df0c88172213ad3e3698f9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 692f39fb3f83ee12e3e1c6ec20ce892727d1f2a7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>如何：設定目標和工作
 不論開發電腦的環境是哪一種，您都可以將選取的 MSBuild 工作設定為在所針對的環境中執行。 例如，當您使用 64 位元電腦來建置以 32 位元架構為目標的應用程式時，就會在 32 位元處理程序中執行選取的工作。  
@@ -110,5 +111,5 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  工作參數是在父節點的內容中評估，而非工作主機的內容。執行階段或架構相依的環境變數 (例如程式檔案位置) 將評估為符合父節點的值。  不過，如果工作直接讀取相同的環境變數，它會正確地在工作主機的內容中進行評估。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定目標和工作](../msbuild/configuring-targets-and-tasks.md)

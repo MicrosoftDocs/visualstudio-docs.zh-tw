@@ -11,11 +11,12 @@ ms.assetid: d2a34de2-6527-4c21-8b93-2f268ee894b7
 caps.latest.revision: "12"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: b95b4754af66c39d741b7df8a74a433ff812f834
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 8ddd21dde8057475c1169cf4ef3d43df84a1c96d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>使用填充碼將應用程式與其他組件隔離，方便進行單元測試
 **填充碼類型**是 Microsoft Fakes 架構兩項技術的其中一個，讓您輕鬆地隔離受測元件與環境。 填充碼會將指向特定方法的呼叫轉向至您撰寫來做為測試一部分的程式碼。 有許多方法會取決於外部條件傳回不同的結果，不過填充碼會受您的測試所控制，並且可在每個呼叫中傳回一致的結果。 這可讓您更容易撰寫測試。  
@@ -24,7 +25,7 @@ ms.lasthandoff: 10/27/2017
   
  如需概觀和快速入門指南，請參閱[使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -549,7 +550,7 @@ ShimFile.WriteAllTextStringString = shim;
 ### <a name="guidance"></a>指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Microsoft Fakes 在測試期間隔離程式碼](../test/isolating-code-under-test-with-microsoft-fakes.md)   
  [Peter Provost’s blog: Visual Studio 2012 Shims](http://www.peterprovost.org/blog/2012/04/25/visual-studio-11-fakes-part-2)  (Peter Provost 部落格︰Visual Studio 2012 填充碼)  
  [Video (1h16): Testing Un-testable Code with Fakes in Visual Studio 2012](http://go.microsoft.com/fwlink/?LinkId=261837) (影片 (1 小時 16 分鐘)：在 Visual Studio 2012 中使用 Fakes 測試不可測試的程式碼)

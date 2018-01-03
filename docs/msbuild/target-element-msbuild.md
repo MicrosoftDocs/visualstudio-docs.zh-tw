@@ -21,11 +21,12 @@ caps.latest.revision: "34"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ed3af7142d556c52fbed71f03d5cc53eb3025035
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3e8a444add9d28a79458dabab75b4cf62bf951dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-element-msbuild"></a>目標項目 (MSBuild)
 包含一組可循序執行的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作。  
@@ -71,9 +72,9 @@ ms.lasthandoff: 10/31/2017
 |`DependsOnTargets`|選擇性屬性。<br /><br /> 必須在此目標執行之前，或發生最上層相依性分析之前執行的目標。 若有多個目標，則會以分號分隔。|  
 |`Label`|選擇性屬性。<br /><br /> 用來識別或排序系統和使用者項目的識別項。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。 目標中可能有零或多個工作。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|包含一組使用者定義的 `Property` 項目。 從 .NET Framework 3.5 開始，`Target` 項目可以包含 `PropertyGroup` 項目。|  
@@ -118,6 +119,6 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

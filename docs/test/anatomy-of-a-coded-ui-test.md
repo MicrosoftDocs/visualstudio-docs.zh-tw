@@ -12,16 +12,17 @@ ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 5eb576be81849215f1413a7b58c6e460479af7f3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 04472a9dee89a270c78876022b16ef54f200ecd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>自動程式化 UI 測試的結構
 當您在自動程式化 UI 測試專案中建立自動程式碼 UI測試時，有數個檔案會加入至您的方案。 在本主題中，我們將使用範例自動程式化 UI 測試來探索這些檔案。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -31,8 +32,8 @@ ms.lasthandoff: 10/27/2017
 |檔案|內容|可編輯？|  
 |----------|--------------|---------------|  
 |[UIMap.Designer.cs](#UIMapDesignerFile)|[宣告區段](#UIMapDesignerFile)<br /><br /> [UIMap 類別](#UIMapClass) (部分、自動產生)<br /><br /> [方法](#UIMapMethods)<br /><br /> [屬性](#UIMapProperties)|否|  
-|[UIMap.cs](#UIMapCS)|[UIMap 類別](#UIMapCS) (部分)|是|  
-|[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 類別](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [屬性](#CodedUITestProperties)|是|  
+|[UIMap.cs](#UIMapCS)|[UIMap 類別](#UIMapCS) (部分)|[是]|  
+|[CodedUITest1.cs](#CodedUITestCS)|[CodedUITest1 類別](#CodedUITestCS)<br /><br /> [方法](#CodedUITestMethods)<br /><br /> [屬性](#CodedUITestProperties)|[是]|  
 |[UIMap.uitest](#UIMapuitest)|測試的 UI XML 對應。|否|  
   
 ###  <a name="UIMapDesignerFile"></a> UIMap.Designer.cs  
@@ -266,7 +267,7 @@ public void MyTestCleanup()
   
  不可直接編輯 `UIMap.uitest` 檔案。 不過，您可以使用自動程式碼 UI 產生器來修改測試，進而自動修改 `UIMap.uitest` 檔案和 [UIMap.Designer.cs](#UIMapDesignerFile) 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>   

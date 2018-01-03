@@ -11,11 +11,14 @@ ms.assetid: 6FCCA8D1-0D06-4B2A-A55F-FC3D1FEA0F56
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: e3b6064a3947f57ffcbe6422162c6c72fca0ab21
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 57a6a6aaff1c41a8720f842e20142e3cb1a2e538
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-data-model-classes"></a>建立資料模型類別
 

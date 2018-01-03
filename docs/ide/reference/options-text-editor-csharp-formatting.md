@@ -28,11 +28,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18cf7c7ee9c7f40231482b7c0466929bd0290fb1
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 2032b0b50c9f22396d63b32b1d050eb40ea70a79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-formatting"></a>格式、C#、文字編輯器、選項
 使用 [格式] 屬性頁對話方塊，設定程式碼編輯器中的程式碼格式化選項。 若要存取這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並依序展開 [文字編輯器] 和 [C#]，然後按一下 [格式化]。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 12/07/2017
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|ThisAddIn|說明|  
+|ThisAddIn|描述|  
 |-----------|-----------------|  
 |**遇到 ; 字元時自動格式化完成的陳述式**|選取時，系統會在陳述式完成時，根據程式碼編輯器選取的格式化選項來格式化陳述式。 如果您不希望程式碼編輯器修改陳述式，請清除此方塊。|  
 |**遇到 } 字元時自動格式化完成的區塊**|選取時，系統會在您完成程式碼區塊時，根據程式碼編輯器選取的格式化選項來格式化程式碼區塊。 如果您不希望程式碼編輯器修改區塊，請清除此方塊。|  
@@ -57,5 +58,5 @@ ms.lasthandoff: 12/07/2017
 ## <a name="remarks"></a>備註  
  針對每種語言，[索引標籤] 頁面上的 [縮排] 選項只會決定當您在結尾行按下 ENTER 時，程式碼編輯器會在哪裡放置游標。 [格式] 下方的 [縮排] 選項會在自動格式化程式碼時套用，例如：當您將程式碼貼入至檔案，同時選取 [貼上時調整縮排] 時，以及以手動方式輸入要格式化的區塊時。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

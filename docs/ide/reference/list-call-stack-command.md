@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 178f219cf25ccddea0121d6c565cb5f9e99d3b33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 71095bd7ec4b856c5fbee73e13be27dcd9abdaf4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-call-stack-command"></a>列出呼叫堆疊命令
 顯示目前的呼叫堆疊。  
@@ -37,7 +38,7 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
   
 ## <a name="arguments"></a>引數  
  `index`  
- 選擇項。 設定目前堆疊框架且不顯示任何輸出。  
+ 選擇性。 設定目前堆疊框架且不顯示任何輸出。  
   
 ## <a name="switches"></a>參數  
  每個參數都可以使用其完整格式或簡短形式叫用。  
@@ -46,31 +47,31 @@ Debug.ListCallStack [/Count:number] [/ShowTypes:yes|no]
  選擇項。 要顯示的呼叫堆疊最大數目。 預設值無限制。  
   
  /ShowTypes:`yes`&#124;`no` [or] /T:`yes`&#124;`no`  
- 選擇項。 指定是否顯示參數類型。 預設值為 `yes`。  
+ 選擇性。 指定是否顯示參數類型。 預設值為 `yes`。  
   
  /ShowNames:`yes`&#124;`no` [or] /N:`yes`&#124;`no`  
- 選擇項。 指定是否顯示參數名稱。 預設值為 `yes`。  
+ 選擇性。 指定是否顯示參數名稱。 預設值為 `yes`。  
   
  /ShowValues:`yes`&#124;`no` [or] /V:`yes`&#124;`no`  
- 選擇項。 指定是否顯示參數值。 預設值為 `yes`。  
+ 選擇性。 指定是否顯示參數值。 預設值為 `yes`。  
   
  /ShowModule:`yes`&#124;`no` [or] /M:`yes`&#124;`no`  
- 選擇項。 指定是否顯示模組名稱。 預設值為 `yes`。  
+ 選擇性。 指定是否顯示模組名稱。 預設值為 `yes`。  
   
  /ShowLineOffset:`yes`&#124;`no` [or] /#:`yes`&#124;`no`  
- 選擇項。 指定是否顯示行位移。 預設值為 `no`。  
+ 選擇性。 指定是否顯示行位移。 預設值為 `no`。  
   
  /ShowByteOffset:`yes`&#124;`no` [or] /B:`yes`&#124;`no`  
- 選擇項。 指定是否顯示位元組位移。 預設值為 `no`。  
+ 選擇性。 指定是否顯示位元組位移。 預設值為 `no`。  
   
  /ShowLanguage:`yes`&#124;`no` [or] /L:`yes`&#124;`no`  
- 選擇項。 指定是否顯示語言。 預設值為 `no`。  
+ 選擇性。 指定是否顯示語言。 預設值為 `no`。  
   
  /IncludeCallsAcrossThreads:`yes`&#124;`no` [or] /I:`yes`&#124;`no`  
- 選擇項。 指定是否包含對或來自其他執行緒的呼叫。 預設值為 `no`。  
+ 選擇性。 指定是否包含對或來自其他執行緒的呼叫。 預設值為 `no`。  
   
  /ShowExternalCode:`yes`&#124;`no`  
- 選擇項。 指定是否顯示呼叫堆疊的 Just My Code。 當 Just My Code 關閉時，會顯示所有的非使用者程式碼。 當 Just My Code 開啟時，非使用者程式碼在呼叫堆疊輸出中會顯示為 `[external]`。  
+ 選擇性。 指定是否顯示呼叫堆疊的 Just My Code。 當 Just My Code 關閉時，會顯示所有的非使用者程式碼。 當 Just My Code 開啟時，非使用者程式碼在呼叫堆疊輸出中會顯示為 `[external]`。  
   
  Thread:`n`  
  選擇項。 顯示執行緒 `n` 的呼叫堆疊。 如果不指定任何執行緒，則顯示目前執行緒的呼叫堆疊。  
@@ -98,7 +99,7 @@ kb 2
 >Debug.CallStack /Count:4 /ShowTypes:yes  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)   
  [列出執行緒命令](../../ide/reference/list-threads-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

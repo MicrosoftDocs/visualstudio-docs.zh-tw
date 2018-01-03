@@ -18,11 +18,12 @@ caps.latest.revision: "56"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5f32dceca8a6b14e6b1777e5c525327f46adca47
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: dotnet
+ms.openlocfilehash: ec48d6a581eb756ee89d9db1a3dfaa78ac1fb3a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-c"></a>專案設計工具，應用程式頁 (C#)
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。  
@@ -99,6 +100,6 @@ ms.lasthandoff: 11/02/2017
   
 輸入路徑名稱，或使用 [瀏覽] 按鈕 (**...**) 將 Win32 資源檔新增至專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [管理應用程式屬性](../../ide/application-properties.md)  
 [撰寫 Office 方案中的程式碼](/office-dev/office-dev/writing-code-in-office-solutions)

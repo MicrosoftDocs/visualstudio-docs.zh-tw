@@ -19,11 +19,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 89e6e1f0814165781f92049537b4ae8748246b48
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 755be1dac065f2a8cd9ee769557f0a48e72ce03f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="neutral-resources-languages-for-localization"></a>當地語系化的中性資源語言
 <xref:System.Resources.NeutralResourcesLanguageAttribute> 類別指定主要組件中所含資源的文化特性 (Culture)。 此屬性用作效能增強，因此 <xref:System.Resources.ResourceManager> 物件不會搜尋主要組件中所含的資源。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 [assembly: NeutralResourcesLanguageAttribute("en")]  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Resources.ResourceManager>   
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)   
  [階層式組織當地語系化的資源](../ide/hierarchical-organization-of-resources-for-localization.md)   

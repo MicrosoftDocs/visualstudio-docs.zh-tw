@@ -18,11 +18,12 @@ caps.latest.revision: "49"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82fada9e9b043511fe94cab6cae99ee9e521f84b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af5636866e2d91cc5aac5c8054a92961aeb3d042
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 **VSPerfCmd.exe** 工具的用途是啟動及停止效能資料收集。 其使用下列語法：  
@@ -33,7 +34,7 @@ VSPerfCmd [/U] [/options]
   
  下表說明 **VSPerfCmd.exe** 工具選項。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**U**|以 Unicode 撰寫重新導向的主控台輸出。 務必優先指定此選項。|  
 |[Start](../profiling/start.md) **:** `mode`|以指定的模式啟動分析服務。|  
@@ -59,7 +60,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="sampling-method-options"></a>取樣方法選項  
  只有在使用取樣分析方法時，才能使用下列選項。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |[Launch](../profiling/launch.md) **:** *Executable*|啟動指定的應用程式並開始分析。|  
 |[Args](../profiling/args.md) **:** *Arguments*|指定要傳遞給啟動應用程式的命令列引數。|  
@@ -71,7 +72,7 @@ VSPerfCmd [/U] [/options]
 ### <a name="sampling-interval-options"></a>取樣間隔選項  
  下列選項會指定取樣間隔的類型和持續時間。 預設為 **Timer**。 您也可以使用 **Counter** 選項，將 CPU 計數器指定為間隔。 這些選項只能搭配 **Launch** 或分析工作階段的第一個 **Attach** 指定。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |[PF](../profiling/pf.md)[**:***n*]|在遇到每第 n 個分頁錯誤時取樣 (預設=10)。|  
 |[Sys](../profiling/sys-vsperfcmd.md)[**:***n*]|在遇到每第 n 個系統呼叫時取樣 (預設=10)。|  
@@ -82,7 +83,7 @@ VSPerfCmd [/U] [/options]
   
  Admin 選項必須在使用系統管理認證執行的命令提示字元執行。  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**Admin:Security** \<**ALLOW&#124;DENY**> *Right*[ *Right*] \<*User*&#124;*Group*>|允許或拒絕指定的使用者或群組存取分析服務。<br /><br /> `Right` 可以是：<br /><br /> CrossSession - 將服務存取權提供給使用者，以進行交叉工作階段分析。<br /><br /> SampleProfiling - 將驅動程式存取權提供給使用者，以進行取樣分析。 也可用來在追蹤分析期間存取核心轉換資訊。<br /><br /> FullAccess - 將 CrossSession 和 SampleProfiling 存取權都提供給使用者。|  
 |**Admin:Security, List**|列出分析服務的目前狀態，並列出使用者權限。|  
@@ -92,7 +93,7 @@ VSPerfCmd [/U] [/options]
 ## <a name="vsperfcmd-driver"></a>VSPerfCmd /Driver  
  **VSPerfCmd /Driver** 選項現已淘汰。 請對這個功能使用 **VsPerfCmdAdmin** 選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSInstr](../profiling/vsinstr.md)   
  [VSPerfMon](../profiling/vsperfmon.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

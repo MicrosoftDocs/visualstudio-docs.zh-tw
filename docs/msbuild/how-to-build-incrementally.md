@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2edb49095bb71e71414e82855c1b3c39904a62f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73931a8be39933c727225d582bc4e4e35b805d7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-incrementally"></a>如何：累加建置
 當您建置大型專案時，很重要的一點是，如果先前建置的元件仍是最新，就不會重建。 如果每次都建置所有目標，每次建置會花很長的時間才能完成。 若要啟用累加建置 (在這些建置中，只會重建先前尚未建置過的目標，或是已過期的目標)，[!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) 可以比較輸入檔案的時間戳記，與輸出檔案的的時間戳記，然後判斷是要跳過、建置還是部分重建目標。 不過，在輸入和輸出之間必須有一對一的對應。 您可以使用轉換，讓目標可以找出這種直接對應。 如需轉換的詳細資訊，請參閱[轉換](../msbuild/msbuild-transforms.md)。  
@@ -104,7 +105,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)   
  [Target 項目 (MSBuild)](../msbuild/target-element-msbuild.md)   
  [轉換](../msbuild/msbuild-transforms.md)   

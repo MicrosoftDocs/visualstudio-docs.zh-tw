@@ -15,19 +15,20 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a27e4854371ebdae828335e84f2fab8d0165831
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e189434481c9fbe7e5f97c6e0cb6d0598b4b7379
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiler-sampling-method-data-views"></a>程式碼剖析工具取樣方法資料檢視
 本節包含使用取樣方法所產生的分析工具資料檔案之檢視和報告的參考資訊。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [摘要檢視](../profiling/summary-view-sampling-data.md)  
  列出收集樣本時最常執行的函式，以及執行最多個別工作的函式。  
   
@@ -66,5 +67,5 @@ ms.lasthandoff: 11/11/2017
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)  
  包含 .NET 記憶體資料的分析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解取樣資料值](../profiling/understanding-sampling-data-values.md)

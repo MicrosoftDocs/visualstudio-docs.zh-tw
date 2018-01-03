@@ -28,11 +28,12 @@ caps.latest.revision: "6"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 2b0c421ca3d1e56c22cab7ff066d17d59914961c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a2da1c3012b65f71b63b61d2bc0415dbebd8b9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mt-task"></a>MT 工作
 包裝 Microsoft 資訊清單工具 mt.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。  
@@ -43,7 +44,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  mt.exe 文件使用連字號 (**-**) 做為命令列選項的前置詞，但本主題使用斜線 (**/**)。 任一前置詞都可接受。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |**AdditionalManifestFiles**|選擇性的 **String[]** 參數。<br /><br /> 指定一或多個資訊清單檔案的名稱。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站中 "Mt.exe" 的 **/manifest** 選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 命令列選項清單。 例如 "*/option1 /option2 /option#*"。 使用此參數，來指定任何其他 **MT** 工作參數未表示的命令列選項。<br /><br /> 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站的 "Mt.exe"。|  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

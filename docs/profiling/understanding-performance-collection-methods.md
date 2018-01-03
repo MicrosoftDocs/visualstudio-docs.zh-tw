@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ad7ecfb61e1d8ecb7bcb000a659b798eb651461
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: a126ec0329695455013ca8625a8aeb774cf2ad36
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-performance-collection-methods"></a>了解效能收集方法
 Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。 本主題說明不同方法，並建議一些適合利用特定方法收集資料的案例。  
@@ -87,7 +88,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
 -   並行視覺化檢視顯示的圖形化資訊可讓您用來找出效能瓶頸、CPU 使用率不彰、執行緒爭用、執行緒移轉、同步處理延遲、I/O 重疊區域以及其他資訊。 請盡可能將圖形化輸出連結至呼叫堆疊和原始程式碼資料。 只會針對命令列和 Windows 應用程式來收集並行視覺化資料。  
   
- [了解資源爭用資料值](../profiling/understanding-resource-contention-data-values.md)  
+ [認識資源爭用資料值](../profiling/understanding-resource-contention-data-values.md)  
   
  [收集執行緒和處理序並行資料](../profiling/collecting-thread-and-process-concurrency-data.md)  
   
@@ -110,7 +111,7 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
 -   當您在檢測模式中執行.NET 記憶體分析時，會收集詳細的計時資訊以及內含與專有配置值。  
   
- [了解記憶體配置和物件存留期資料值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
+ [認識記憶體配置和物件存留期資料值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)  
   
  [收集 .NET 記憶體配置和存留期資料](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
@@ -126,6 +127,6 @@ Visual Studio 程式碼剖析工具提供五種方法讓您收集效能資料。
   
  [階層互動檢視](../profiling/tier-interaction-views.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：收集網站的效能資料](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [效能分析的初級開發人員指南](../profiling/beginners-guide-to-performance-profiling.md)

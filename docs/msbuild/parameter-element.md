@@ -21,11 +21,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 39dd727eee6f9af2f60410c4dbfc9daa9ea805a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 359f0f58a1c3b813216e4a760a1c750710fb3416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="parameter-element"></a>Parameter 元素
 包含 `UsingTask``TaskFactory` 所產生之工作的特定參數相關資訊。  元素的名稱是參數的名稱。  如需詳細資訊，請參閱 [UsingTask 元素 (MSBuild)](../msbuild/usingtask-element-msbuild.md)。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
 |屬性|描述|  
 |---------------|-----------------|  
 |`ParameterType`|選擇性屬性。<br /><br /> 參數的 .NET 型別，例如 "System.String"。|  
-|`Output`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 根據預設，該值為 `false`。|  
+|`Output`|選擇性的 Boolean 屬性。<br /><br /> 如果為 `true`，則此參數是工作的輸出參數。 預設值為 `false`。|  
 |`Required`|選擇性的布林值屬性。<br /><br /> 如果為 `true`，則此參數是工作的必要參數。 根據預設，該值為 `false`。|  
 
 ### <a name="child-elements"></a>子元素  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 </UsingTask>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d83a19e04a2e795005f2e0cdf0fdfe3a30c22c87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e703372a3b59ceee439b234e02e4a2d5a3cb6275
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-set-your-form-properties"></a>步驟 3：設定您的表單屬性
 接下來，您要使用 [屬性] 視窗變更表單的外觀。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
     -   選擇 [Form1] 視窗右上角的 X 按鈕。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移至下一個教學課程步驟，請參閱[步驟 4：使用 TableLayoutPanel 控制項來配置您的表單](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)。  
   

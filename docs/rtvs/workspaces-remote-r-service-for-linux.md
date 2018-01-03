@@ -16,11 +16,12 @@ ms.author:
 - kraigb
 - karthiknadig
 manager: ghogen
-ms.openlocfilehash: e56da64376a0db3c10fef38ff50074e254c1e539
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: f5a70817735eddf8299532f1f761733268b9d9bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remote-r-service-for-linux"></a>適用於 Linux 的遠端 R 服務
 

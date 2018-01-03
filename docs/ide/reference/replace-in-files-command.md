@@ -17,11 +17,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e9ccf0c77f28d2f57d6861dd39591a7cbbce36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ccb81bffa6845e4e644294916a508820445da263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-in-files-command"></a>檔案中取代命令
 使用在 [尋找和取代] 視窗 [檔案中取代] 索引標籤提供的選項子集，取代檔案中的文字。  
@@ -36,10 +37,10 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>引數  
  `findwhat`  
- 必要項。 要比對的文字。  
+ 必要。 要比對的文字。  
   
  `replacewith`  
- 必要項。 要用來取代相符文字的文字。  
+ 必要。 要用來取代相符文字的文字。  
   
 ## <a name="switches"></a>參數  
  /all 或 /a  
@@ -77,7 +78,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  選擇項。 搜尋 /lookin:`searchpath` 引數所指定之目錄內的子資料夾。  
   
  /text2 或 /2  
- 選擇項。 在 [尋找結果 2] 視窗中顯示取代結果。  
+ 選擇性。 在 [尋找結果 2] 視窗中顯示取代結果。  
   
  /wild 或 /l  
  選擇項。 可將 `findwhat` 引數中預先定義的特殊字元作為標記法，以表示字元或字元序列。  
@@ -92,7 +93,7 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
 >Edit.ReplaceinFiles btnCancel btnReset /lookin:"c:/my visual studio projects" /ext:.cls /text2  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)   
  [檔案中取代](../../ide/replace-in-files.md)   
  [命令視窗](../../ide/reference/command-window.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 300ca6d9a3fd633b9cd20ad0436901e4080560e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 58053640dabb74a8044eeca70f03673656c0bc26
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts-and-colors-in-the-editor"></a>如何：在編輯器中變更字型和顏色
 在程式碼編輯器的 [顯示項目] 中，您可以變更預設字體、調整字型大小，亦可變更各種文字的前景和背景色彩。 當變更字型設定時，請注意下列資訊：  
@@ -51,9 +52,9 @@ ms.lasthandoff: 10/31/2017
     > [!TIP]
     >  按一下 [使用預設值] 可重設預設設定。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)   
  [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)   

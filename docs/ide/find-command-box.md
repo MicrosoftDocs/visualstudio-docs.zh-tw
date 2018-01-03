@@ -12,11 +12,12 @@ helpviewer_keywords: Find/Command box
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8fa54e65ed581d547d7e4a0c6c5d1c1e0908c0ca
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: ede1e6cd1340ea204199df66108c49db310949f6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="findcommand-box"></a>尋找/命令方塊
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 12/07/2017
 
 ## <a name="searching-for-text"></a>搜尋文字
 
-如果您在 [尋找/命令] 方塊中指定文字，然後選擇 **Enter** 鍵，則 Visual Studio 預設會使用 [檔案中尋找] 對話方塊中所指定的選項來搜尋目前文件或工具視窗。 如需詳細資訊，請參閱[尋找和取代文字](../ide/finding-and-replacing-text.md)。
+如果您在 [尋找/命令] 方塊中指定文字，然後選擇 **Enter** 鍵，則 Visual Studio 預設會使用 [檔案中尋找] 對話方塊中所指定的選項來搜尋目前文件或工具視窗。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。
 
 ## <a name="entering-commands"></a>輸入命令
 
@@ -52,7 +53,7 @@ ms.lasthandoff: 12/07/2017
 
 無論插入號位於引號內部或外部，功能都相同。 如果插入號是該程式行的最後一個字元，則會將其忽略。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [命令視窗](../ide/reference/command-window.md)  
 [尋找和取代文字](../ide/finding-and-replacing-text.md)

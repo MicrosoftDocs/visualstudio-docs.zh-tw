@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9392776d44602ee81358e31708d331e09d0d7a70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 72bcca85f57a5c68e70dfa942ec607072af86561
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-your-build"></a>自訂組建
 在版本 15 之前的 MSBuild 版本中，如果您想要將新的自訂屬性提供給方案中的專案，則必須手動將該屬性的參考新增至方案中的每個專案檔。 或者，除此之外，您必須在 .props 檔案中定義屬性，然後明確地匯入方案之每個專案中的 .props 檔案。
@@ -87,12 +88,12 @@ c:\
 MSBuild 的一般方法摘要如下：
 
 - 針對任何指定的專案，MSBuild 會在方案結構中向上尋找第一個 `Directory.Build.props`，再將它與預設值合併，然後停止進一步掃描
-- 如果您想要找到多個層級並加以合併，請從「內部」檔案對「外部」檔案進行 [`<Import...>`](http://docs.microsoft.com/en-us/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) 作業 (如上所示)
+- 如果您想要找到多個層級並加以合併，請從「內部」檔案對「外部」檔案進行 [`<Import...>`](http://docs.microsoft.com/visualstudio/msbuild/property-functions#msbuild-getpathoffileabove) 作業 (如上所示)
 - 如果「外部」檔案本身不會在其上匯入任何項目，掃描就會到此停止
 - 若要控制掃描/合併程序，請使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
 
 或更簡單的做法：第一個不會匯入任何項目的 `Directory.Build.props`，則為 MSBuild 停止的位置。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

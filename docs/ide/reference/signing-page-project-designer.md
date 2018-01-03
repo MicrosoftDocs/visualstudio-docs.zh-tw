@@ -23,11 +23,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d193b8927019354244d6d80032ed0c761f584f83
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7aa75e814ddd4d8b8c093fd37a366410a279d6ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="signing-page-project-designer"></a>專案設計工具、簽署頁
 使用 [專案設計工具]的 [簽署] 頁面可簽署應用程式和部署資訊清單，也可簽署組件 (強式名稱簽署)。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  當您簽署組件時，不一定可以存取私密金鑰。 例如，組織可能會有嚴密保護的金鑰組，即使開發人員也沒有這類金鑰組的日常存取權。 公開金鑰可能可以使用，但只有少數人才能存取私密金鑰。 在這類情況下，您可以使用「延遲」或「部分簽署」提供公開金鑰，並將私密金鑰的新增延遲到交付組件時。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [管理組件和資訊清單簽署](../../ide/managing-assembly-and-manifest-signing.md)   
  [Managed 應用程式的強式名稱簽章](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   

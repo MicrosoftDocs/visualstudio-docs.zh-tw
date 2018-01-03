@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 577c6a7b76bcecb3c3f5fc7889d75b5fd3ff1ce0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 888f8f39b409559ac4d5c219f024a867f71b2263
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用規則運算式
 
@@ -71,6 +72,6 @@ ms.lasthandoff: 12/07/2017
 |比對十六進位數字|\b0[xX]([0-9a-fA-F]\)\b|比對 "0xc67f" 但不比對 "0xc67fc67f"。|  
 |比對整數和小數|\b[0-9]*\\.\*[0-9]+\b|會比對 "1.333"。|  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [尋找和取代文字](../ide/finding-and-replacing-text.md)

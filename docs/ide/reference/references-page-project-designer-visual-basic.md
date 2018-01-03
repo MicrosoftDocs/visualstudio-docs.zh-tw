@@ -20,11 +20,12 @@ caps.latest.revision: "34"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cada43ba0ac05d5ec7355f77578127c3339929be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6fb8d57be1101f8faa5826b2459a9a1658009d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="references-page-project-designer-visual-basic"></a>專案設計工具，參考頁 (Visual Basic)
 使用 [專案設計工具] 的 [參考] 頁面來管理專案中的參考、Web 參考，以及匯入的命名空間。 專案可以包含 COM 元件、XML Web 服務、.NET Framework 類別庫/組件或其他類別庫的參考。 如需使用參考的詳細資訊，請參閱[管理專案中的參考](../../ide/managing-references-in-a-project.md)。  
@@ -86,7 +87,7 @@ ms.lasthandoff: 10/31/2017
 
 -   XML 命名空間，例如 `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理專案中的參考](../../ide/managing-references-in-a-project.md)   
  [如何：新增或移除匯入的命名空間 (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
  [Imports 陳述式 (XML 命名空間)](/dotnet/visual-basic/language-reference/statements/imports-statement-xml-namespace)

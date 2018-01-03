@@ -11,11 +11,12 @@ author: TerryGLee
 ms.author: tglee
 manager: ghogen
 ms.technology: vs-acquisition
-ms.openlocfilehash: 283fec9bcaa4f678f30f3a0eb0dda667146b03b9
-ms.sourcegitcommit: 2c7f48ad6073a81fa927568793633f26cc1f0b15
+ms.workload: multiple
+ms.openlocfilehash: d3349190fdfca4c0d4520a89b6c862b0a05898ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2017"></a>如何回報 Visual Studio 2017 的問題
 如果您在使用 Visual Studio 時發生問題，我們會想要進行了解。 以下是如何回報問題，讓我們能夠加以診斷並修正。  
@@ -46,7 +47,7 @@ ms.lasthandoff: 11/17/2017
 
 ## <a name="provide-a-screenshot-and-attachments-optional"></a>提供螢幕擷取畫面和附件 (選擇性)
 ###  <a name="provide_screenshots"></a>
- 選擇將目前螢幕傳送給 Microsoft。 按一下 [附加其他檔案] 按鈕，即可附加其他螢幕擷取畫面或其他檔案。  
+ 選擇將目前螢幕傳送給 Microsoft。 您可按一下 [附加其他檔案]  按鈕，即可附加其他螢幕擷取畫面或檔案。  
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>提供追蹤和堆積傾印 (選擇性)  
 ###  <a name="provide_a_trace_and_heap_dump"></a>  
@@ -72,5 +73,5 @@ ms.lasthandoff: 11/17/2017
 
  ![您也可以按 Tab 移至 Visual Studio 安裝程式中的 [提供意見反應] 按鈕，以開啟意見反應工具](../install/media/report-a-problem.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [告訴我們](../ide/talk-to-us.md)

@@ -13,11 +13,12 @@ manager: ghogen
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Code_Style.General
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
-ms.openlocfilehash: 24470f4fdb1a75d6ebd2743b2ade72e6195842b4
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 80b7260296f1f57448ae94147a59dbb29160be40
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-style-preferences"></a>程式碼樣式喜好設定
 
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/07/2017
 
 您也可以使用 [EditorConfig](../ide/editorconfig-code-style-settings-reference.md) 檔案管理 .NET 程式碼樣式設定。 在此情況下，EditorConfig 檔案中設定的優先權高於 [選項] 對話方塊中所選取的選項。 您可以使用 EditorConfig 檔案強制執行並設定整個存放庫或專案的程式碼撰寫樣式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速動作](quick-actions.md)  
 [EditorConfig 的 .NET 編碼慣例設定](../ide/editorconfig-code-style-settings-reference.md)

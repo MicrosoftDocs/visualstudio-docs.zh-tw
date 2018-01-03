@@ -21,11 +21,12 @@ caps.latest.revision: "27"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb7444c529cc4ba592574ba38566235cb13c4169
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1dc0d1af8c79fe95ea091ac691519653b59a9648
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署資訊清單透過定義部署的唯一識別、識別例如安裝或線上模式的部署特性、指定應用程式更新設定和更新位置，以及指出對應的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單，來描述應用程式部署。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，此項工作還會繼承 <xref:Microsoft.Build.Tasks.GenerateManifestBase> 類別中的參數，而該類別本身又繼承 <xref:Microsoft.Build.Utilities.Task> 類別。 如需工作類別的參數清單，請參閱[工作基底類別](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [GenerateApplicationManifest 工作](../msbuild/generateapplicationmanifest-task.md)   
  [SignFile 工作](../msbuild/signfile-task.md)   

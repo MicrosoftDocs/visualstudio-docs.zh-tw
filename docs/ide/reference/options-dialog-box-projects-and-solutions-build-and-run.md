@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e15880551e2a896bca473d463b253ec15dda7b36
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 0187b8a70fc012fc6d2564f77ea5a2b2ff7c20d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>選項對話方塊, 專案和方案, 建置和執行
 
@@ -56,7 +57,7 @@ ms.lasthandoff: 11/02/2017
 
 決定多少資訊會寫入建置記錄檔，其位置在 \\...\\*專案名稱*\Debug\\*專案名稱*.log。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [編譯和建置](../../ide/compiling-and-building-in-visual-studio.md)  
 [選項對話方塊、專案和方案](projects-and-solutions-options-dialog-box.md)  
 [選項對話方塊、專案和方案、Web 專案](options-dialog-box-projects-and-solutions-web-projects.md)

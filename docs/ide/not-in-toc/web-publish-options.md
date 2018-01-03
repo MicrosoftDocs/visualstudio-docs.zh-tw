@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: Mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16bc087e6c4a12d3f70e2e71ba644faab9567fee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10cb0ca2d5190ce73f0fd67da5b1f795d5aa8dd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # 適合我的發行選項為何？
 

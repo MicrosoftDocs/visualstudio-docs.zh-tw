@@ -12,11 +12,12 @@ caps.latest.revision: "25"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 150aab80022398246a1b1abb89ec6d286eb86869
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 35fc0fd7be5d060019521467851708d0c6677935
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步驟 6：加入減法問題
 在本教學課程的第六個部分中，您將加入減法問題並學習如何執行下列工作：  
@@ -81,7 +82,7 @@ IntelliSense 中 Next() 方法的多載
      ![包含減法問題的數學測驗](../ide/media/express_addsubtract.png "Express_AddSubtract")  
 包含減法問題的數學測驗  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 7：新增乘法和除法問題](../ide/step-7-add-multiplication-and-division-problems.md)。  
   

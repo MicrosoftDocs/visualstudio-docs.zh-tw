@@ -11,11 +11,14 @@ ms.assetid: 1F9304E8-0F1B-4325-8BED-FE3EB0ADCE8D
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 304fb69ab6e5da058cd3d2a4d6de202fa042b8f9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 7dc57628774624975cc6ede5bd241f322472bfe6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="racescene-explanation"></a>RaceScene 說明
 

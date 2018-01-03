@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d3d01a13acf68bbf8e58ca0fa1cb41b145d9d3a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2920642c46aa3f6cdf85f4f80c2334d18095718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="utility-nodes"></a>公用程式節點
 在著色器設計工具中，公用程式節點代表常見且實用，卻不完全適合其他類別的著色器計算。 有些公用程式節點執行簡單的作業，例如將向量附加在一起，或有條件地選擇結果，還有其他執行複雜作業的節點，例如根據常用的光源模型計算光源比重。  

@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 32d6ac2581f71196d1f1d826d8f1024906b7cab9
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3109f33c24b3ff217f6e48c6458a4c6514b0b151
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析資源耗用量和 UI 執行緒活動 (XAML)
 使用 [應用程式時間軸]  程式碼剖析工具來找出並修正 XAML 應用程式中的應用程式互動相關效能問題。 此工具可透過提供應用程式資源耗用量的詳細檢視，來協助改善 XAML 應用程式的效能。 您可以分析應用程式準備 UI 畫面格 (版面配置和轉譯)、服務網路和磁碟要求，以及像是應用程式啟動、頁面載入和視窗大小調整等情況所花費的時間。  
@@ -119,7 +120,7 @@ ms.lasthandoff: 11/11/2017
 |![篩選時間軸詳細資料清單](../profiling/media/timeline_filter.png "TIMELINE_Filter")|依選取的分類和事件長度篩選清單。|  
 |![自訂時間軸詳細資料資訊](../profiling/media/timeline_viewsettings.png "TIMELINE_ViewSettings")|可讓您指定事件的註釋。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF Team Blog: New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx) (WPF 小組部落格︰WPF 應用程式的新 UI 效能分析工具)  
  [使用 C++、C# 及 Visual Basic 的 UWP App 的效能最佳做法](http://msdn.microsoft.com/en-us/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [最佳化 WPF 應用程式效能](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)  

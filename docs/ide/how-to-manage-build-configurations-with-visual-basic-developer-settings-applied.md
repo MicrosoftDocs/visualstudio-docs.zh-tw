@@ -20,11 +20,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3e61fb6667c16fd75cef78fbcaa835b97603dbe5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 094f87ca4a56f71cbecfa9b6b1dc9189244c0c57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>如何：在套用 Visual Basic 開發者設定的情況下管理組建組態
 根據預設，所有進階組建組態選項會隱藏，並套用 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] Developer 設定。 本主題說明如何手動啟用這些設定。  
@@ -43,10 +44,10 @@ ms.lasthandoff: 10/31/2017
   
 3.  按一下 [顯示進階組建組態]。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      在 [組建] 功能表上，現在已可使用 [Configuration Manager]，而且 [組態] 和 [平台] 清單也會顯示在專案設計工具中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

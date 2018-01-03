@@ -11,11 +11,14 @@ ms.assetid: B921C2AC-B5D6-4B24-918E-511F83D57275
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 92f85e39d0f643e896457cae48ab10aa0446dfcd
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 7554380435c77750eb48a5ce261cc0a2b3885ccd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-the-development-environment"></a>準備開發環境
 

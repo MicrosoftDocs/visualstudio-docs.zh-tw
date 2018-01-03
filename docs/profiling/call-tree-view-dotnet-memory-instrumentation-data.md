@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e77a6a1b97d186cfdc9619fc2d57c05831a752ac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 043259d4ffd403abcffcfdfa724c8a8044caf5ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>呼叫樹狀結構檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體配置分析資料的 [呼叫樹狀結構] 檢視，會顯示在分析應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及 .NET 記憶體和函式的計時資料。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="general"></a>一般  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**函式名稱**|函式的名稱。|  
 |**函式位址**|函式的位址。|  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含函式呼叫函式以及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總功能內含耗用 (Elapsed Inclusive) 時間。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在分析執行的總功能內含耗用 (Elapsed Inclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總功能內含耗用 (Elapsed Inclusive) 時間的百分比。|  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。 該時間確實包括函式呼叫子函式所花費的時間。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|在呼叫樹狀結構中父函式呼叫此函式時，所有對此函式呼叫的總應用程式內含 (Application Inclusive) 時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在分析執行的總功能內含耗用 (Elapsed Inclusive) 時間中，當呼叫樹狀結構中父函式呼叫此函式時，花費在此函式之總應用程式內含 (Application Inclusive) 時間的百分比。|  

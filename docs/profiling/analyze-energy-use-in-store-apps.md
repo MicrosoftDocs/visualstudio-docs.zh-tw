@@ -17,11 +17,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bcdebabac1197317b5e282be8bd648168f201673
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 9ad762745627c2c30378f5017d88e78b00921d4a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP App 中的能源耗用量
 Visual Studio [能源消耗] 分析工具可協助您分析 UWP App 在全部或部分時間使用自己的電池執行之低電源平板裝置上的功率和能源消耗情形。 在電池供電的裝置上，使用太多能源的應用程式可能導致客戶諸多不滿，最後客戶可能會解除安裝應用程式。 最佳化能源利用，可以提高客戶對應用程式的採用率。  
@@ -154,6 +155,6 @@ if (performance && performance.mark) {
   
 -   [JavaScript 函式計時]  和 [CPU 使用量]  工具可以協助您降低因為沒有效率的函式所造成的 CPU 負載。 請參閱[分析 CPU 使用量](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

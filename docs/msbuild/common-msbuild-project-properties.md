@@ -22,11 +22,12 @@ caps.latest.revision: "36"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0ab37b9bf44cdac647a939ed7313a2e40eb88aea
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b78c2c1276f04a53a4f7a01e70a7d98efdba0514
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-properties"></a>一般 MSBuild 專案屬性
 下表列出 Visual Studio 專案檔中所定義或 MSBuild 提供的 .targets 檔案中所包含的最常用屬性。  
@@ -130,5 +131,5 @@ ms.lasthandoff: 10/31/2017
 |Win32Manifest|應內嵌於最終組件中的資訊清單檔案名稱。 這個參數 (Parameter) 相當於 `/win32Manifest` 編譯器參數 (Switch)。|  
 |Win32Resource|要內嵌於最終組件中的 Win32 資源檔案名稱。 這個參數 (Parameter) 相當於 `/win32resource` 編譯器參數 (Switch)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [通用的 MSBuild 專案項目](../msbuild/common-msbuild-project-items.md)

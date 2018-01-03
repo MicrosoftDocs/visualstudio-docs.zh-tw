@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bc4b1d49b80dd449201db003b3a4ad6e54a18a1f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b041772c98fb8466ebc262863638ae5583500ef6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-in-files-command"></a>檔案中尋找命令
 在 [尋找和取代] 視窗中，您可以使用 [檔案中尋找] 索引標籤提供的選項子集，搜尋檔案。  
@@ -35,7 +36,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
   
 ## <a name="arguments"></a>引數  
  `findwhat`  
- 必要項。 要比對的文字。  
+ 必要。 要比對的文字。  
   
 ## <a name="switches"></a>參數  
  /case 或 /c  
@@ -85,7 +86,7 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [檔案中尋找](../../ide/find-in-files.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

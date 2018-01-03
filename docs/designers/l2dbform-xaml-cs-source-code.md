@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f34917cf5138201b1668e2800bc4ae1fd8e73a8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e477801883abde205a1667b444575c0f831b930f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="l2dbformxamlcs-source-code"></a>L2DBForm.xaml.cs 原始程式碼
 本主題包含 L2DBForm.xaml.cs 檔案中，C# 原始程式碼的內容與描述。 此檔案中所包含的 L2XDBForm 部分類別可分為三個邏輯區段：資料成員、`OnRemove` 以及 `OnAddBook` 按鈕 Click 事件處理常式。  
@@ -137,6 +138,6 @@ namespace LinqToXmlDataBinding {
 ### <a name="comments"></a>註解  
  如需這些處理常式的相關 XAML 來源，請參閱 [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：LinqToXmlDataBinding 範例](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml 原始程式碼](../designers/l2dbform-xaml-source-code.md)

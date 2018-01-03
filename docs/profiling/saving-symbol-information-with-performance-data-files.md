@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 89913922d4c806e591d6a488f35242444d16ceb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd963c269ee5fe18d3f490bf85bab5dcf3afbf9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>使用效能資料檔案儲存符號資訊
 如果您使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 分析檔案，並打算將 VSP 檔移至不同的電腦，您必須將效能專案設定設為儲存或「序列化」報告檔中的符號。 這樣會增加報告檔的大小。 必須將符號序列化的原因有兩個︰  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
   
 -   保留符號以便將效能報表從已分析的電腦攜出，並可在另一部可能有不同符號的電腦上開啟報表進行分析時，輸出相同的資訊。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
  VsPerfReport -packsymbols -summary:all filename.vsp  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [儲存和匯出效能工具資料](../profiling/saving-and-exporting-performance-tools-data.md)   
  [如何：參考 Windows 符號資訊](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

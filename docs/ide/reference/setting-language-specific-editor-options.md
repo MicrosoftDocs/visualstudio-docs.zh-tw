@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba5d9a146993a4df7d4d60318e0dc3a548819a20
-ms.sourcegitcommit: 1aa9282b1f0bc2795df3264cbd1e331cc44c23f3
+ms.workload: multiple
+ms.openlocfilehash: 082569ea1875e03154e98e8078a21aafc7ad76dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-language-specific-editor-options"></a>設定語言特定編輯器選項
 
@@ -47,7 +48,7 @@ Visual Studio 提供多種 [文字編輯器] 選項，可以套用至特定的�
  [格式、XAML、文字編輯器、選項](../../ide/reference/options-text-editor-xaml-formatting.md)  
  描述 XAML 文件中項目和屬性排列的設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [自訂編輯器](../../ide/customizing-the-editor.md)  
 [使用 EditorConfig 建立可攜式自訂編輯器設定](../../ide/create-portable-custom-editor-options.md)  

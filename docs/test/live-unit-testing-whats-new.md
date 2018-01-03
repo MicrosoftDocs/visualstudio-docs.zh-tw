@@ -9,11 +9,12 @@ helpviewer_keywords:
 - Live Unit Testing What's New
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 58e3d44e1644c8582ee423cc4c1572af21efe763
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 0b28bb09a7bae7261b65e268149eaab0cadb2de7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-in-live-unit-testing"></a>Live Unit Testing 中的新功能
 
@@ -23,7 +24,7 @@ ms.lasthandoff: 10/31/2017
 
 從 Visual Studio 2017 15.4 版開始，Live Unit Testing 包含數個區域的改善和增強功能：
 
-- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 這些活動包括：
+- **改善發現能力**. 對於不知道有 Live Unit Testing 功能的使用者，只要使用者開啟內含單元測試但未啟用 Live Unit Testing 的方案，Visual Studio IDE 就會顯示提及 Live Unit Testing 的金色列。 金色列中所呈現的資訊可讓使用者深入了解並啟用 Live Unit Testing。 不符合 Live Unit Testing 必要條件時，金色列也會顯示資訊。 它們包括：
 
    - 遺漏測試配接器。
    - 具有舊版測試配接器。
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
    - 針對 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
    - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]`
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Live Unit Testing 簡介](live-unit-testing-intro.md)   
 [Visual Studio 2017 的 Live Unit Testing](live-unit-testing.md)
 

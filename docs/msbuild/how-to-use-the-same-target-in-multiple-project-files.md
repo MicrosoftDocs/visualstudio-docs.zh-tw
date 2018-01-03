@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b591f0158408161d268930416d49c465e29d0b2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 821c0634f4e23d0aa8fd71a8b0eedd796efe3a03
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>如何：使用多個專案檔內相同的目標
 如果您撰寫了數個 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔，您可能已發現到需要在不同的專案檔中使用相同的工作和目標。 您可以不在每個專案檔中包含這些工作或目標的完整描述，而是在一個個別的專案檔中儲存目標，然後將該專案匯入到任何其他需要使用該目標的專案中。  
@@ -31,7 +32,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在匯入端專案檔中，定義用來作為所匯入專案中屬性和項目之參數的所有屬性和項目。  
   
-2.  使用 `Import` 元素來匯入專案。 例如：  
+2.  使用 `Import` 元素來匯入專案。 例如:   
   
      `<Import Project="MyCommon.targets"/>`  
   
@@ -114,6 +115,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [目標](../msbuild/msbuild-targets.md)

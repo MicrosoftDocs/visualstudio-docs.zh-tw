@@ -22,11 +22,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ca0ae746d116ae3613b51009c3b91e6f4aa0fa4f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6d59464050c3233e09e9d0d0844916ae3517408
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Microsoft 提供的協助工具產品和服務
 > [!TIP]
@@ -81,6 +82,6 @@ Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下
 ##  <a name="moreinfo"></a> 詳細資訊  
  如需電腦協助工具技術如何改善身障人士生活的詳細資訊，請參閱 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計可及性應用程式的資源](../../ide/reference/resources-for-designing-accessible-applications.md)   
  [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)

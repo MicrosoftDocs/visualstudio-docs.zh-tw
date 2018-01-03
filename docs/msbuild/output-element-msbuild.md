@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 359bcd55d73429c118abc802a08ab86da96064e5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: abeb4b0f4a34270b8b4ae4155cac910c08cf5f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 在項目或屬性中儲存工作輸出值。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
 |[Task](../msbuild/task-element-msbuild.md)|建立並執行 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 工作的執行個體。|  
 
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
 </Target>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

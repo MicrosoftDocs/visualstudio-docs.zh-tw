@@ -17,11 +17,12 @@ caps.latest.revision: "30"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 85d570564ba3e82808f0876ead938f535368ec29
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7c8658b3c1a39efc24e65845be2ce75eafc4437
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般而言，MSBuild 工具組包括 microsoft.common.tasks 檔案、microsoft.common.targets 檔案和編譯器，例如 csc.exe 和 vbc.exe。 大部分的工具組都可用來將應用程式編譯為多個版本的 .NET Framework 和多個系統平台。 不過，MSBuild 2.0 工具組僅能以 .NET Framework 2.0 為使用目標。  
@@ -115,6 +116,6 @@ MSBuild 使用工作、目標和工具的工具組建置應用程式。 一般�
   
  子工具組已引進 .NET Framework 4.5。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [標準和自訂工具組的組態](../msbuild/standard-and-custom-toolset-configurations.md)   
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

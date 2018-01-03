@@ -19,18 +19,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6e32c592894b5d44a2d257d183c11da01c90456
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27f298ad0317223e40f6e9a8606aa9b6aed735fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalizing-and-localizing-applications"></a>全球化和當地語系化應用程式
 如果您打算將應用程式散發給國際適用對象，您必須在設計和開發階段期間牢記下列幾項重點。 即使您不打算這麼做，這個簡單的前置工作，可讓您在未來版本的應用程式計劃有所變更時，更加事半功倍。 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 的內建服務可讓您使用 Visual Studio 的 Managed 開發功能，輕鬆開發單一應用程式，使其適應不同的地區設定。  
   
  Visual Studio 在設計之初就已設想到利用 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 內建的服務優勢，讓針對國際適用對象的開發作業更加輕鬆。 下列頁面有助您了解 Visual Studio 內建的國際化功能。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [以 .NET Framework 為基礎的國際應用程式簡介](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  介紹使用 Visual Studio 和 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]，針對國際市場開發軟體的相關概念。  
   

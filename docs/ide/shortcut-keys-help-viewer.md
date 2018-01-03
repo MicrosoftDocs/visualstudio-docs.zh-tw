@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 04d63762eda13bd0b21f6532f1d401cdef638ea6
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 17f71324031bfdf01b32151288257b97c036056b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shortcut-keys-help-viewer"></a>快速鍵 (說明檢視器)
 您可以使用下表的快速鍵巡覽 Microsoft Help Viewer：  
@@ -117,5 +118,5 @@ ms.lasthandoff: 11/07/2017
 |空格|將項目從 [暫止的變更] 清單移除。|  
 |Alt + T|套用所有暫止的變更。|
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [說明檢視器的協助工具功能](../ide/accessibility-features-of-the-help-viewer.md)

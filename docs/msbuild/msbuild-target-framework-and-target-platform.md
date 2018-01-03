@@ -12,11 +12,12 @@ caps.latest.revision: "10"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: cdfbe126e8a647cda4c8e29e50591a1aa229df80
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 06807c3011e806c3b3910b9f1811229129ddace7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目標 Framework 和目標平台
 您可以建置專案，以在特定 .NET Framework 版本的「目標 Framework」，以及特定軟體架構的「目標平台」上執行。  例如，您可以在目標為 .NET Framework 2.0 以及與 802x86 處理器系列 ("x86") 相容的 32 位元平台上，執行應用程式。 目標 Framework 和目標平台的組合稱為「目標內容」。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 ```  
   
 ## <a name="target-platform"></a>目標平台  
- 「平台」是定義特定執行階段環境的軟硬體組合。 例如：  
+ 「平台」是定義特定執行階段環境的軟硬體組合。 例如，套用至物件的  
   
 -   `x86` 指定在 Intel 80x86 處理器或其對等項目上執行的 32 位元 Windows 作業系統。  
   
@@ -85,5 +86,5 @@ ms.lasthandoff: 10/31/2017
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [多目標](../msbuild/msbuild-multitargeting-overview.md)

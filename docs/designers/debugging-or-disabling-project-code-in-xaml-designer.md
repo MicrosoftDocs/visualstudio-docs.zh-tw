@@ -11,11 +11,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6bf9220205e35a0c72d3812e1943154c6fedeacd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: bbfe3eb4f76d8237d6e1a1b7c26aa48b1f081f1e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>偵錯或停用 XAML 設計工具的專案程式碼
 在許多情況下，當應用程式在設計工具中執行時，專案程式碼嘗試存取會傳回不同值或以不同方式運作的屬性或方法，造成 XAML 設計工具發生未處理的例外狀況。 您可以偵錯 Visual Studio 另一個執行個體的專案程式碼，解決這些例外狀況；或暫時停用設計工具中的專案程式碼，防止這些例外狀況發生。  
@@ -86,5 +87,5 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  停用專案程式碼會導致設計階段資料遺失。 另一個方法是偵錯在設計工具中執行的程式碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 和 Blend for Visual Studio 中設計 XAML](../designers/designing-xaml-in-visual-studio.md)

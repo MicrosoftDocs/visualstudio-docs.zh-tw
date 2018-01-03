@@ -11,11 +11,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: "28"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 33c6d52536bc5295197c810058e959570c1d0242
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 8aa1bac1a98d8121dcba30dace22483e4a80e1d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>使用自動程式碼 UI 測試來測試 Windows UWP 和 8.1 Phone 應用程式
 
@@ -387,5 +388,5 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 ## <a name="external-resources"></a>外部資源  
  Microsoft Visual Studio 應用程式生命週期管理部落格： [使用自動程式碼 UI 來測試以 XAML 為基礎的 Windows Phone 應用程式](http://blogs.msdn.com/b/visualstudioalm/archive/2014/04/05/using-coded-ui-to-test-xaml-based-windows-phone-apps.aspx?PageIndex=2#comments)  
   
-## <a name="see-also"></a>另請參閱  
- [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)
+## <a name="see-also"></a>請參閱  
+ [使用 UI 自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)

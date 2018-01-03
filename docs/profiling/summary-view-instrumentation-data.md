@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 296faf330e23d65ae0ab7e9f434ab831ee520ac5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e486f7df85081ce010e6d2f518978f0952412ea1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---instrumentation-data"></a>摘要檢視 - 檢測資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|函式的名稱。|  
+|**名稱**|函式的名稱。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體和其所呼叫函式中程式碼的所有時間百分比。|  
 |**功能專屬耗用 (Elapsed Exclusive) 時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|  
   
@@ -43,9 +44,9 @@ ms.lasthandoff: 10/31/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|函式的名稱。|  
+|**名稱**|函式的名稱。|  
 |**專有時間 %**|在程式碼剖析執行時，該函式花費在執行其函式主體中程式碼的所有時間百分比。 不包括該函式所呼叫函式中所花費的時間。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)

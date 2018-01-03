@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb0f988ce0d1b266fd930909f6e5d6462929e8f5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 899c39af318e16465ccd36d671a2c9d7305b431d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法會遞減指定分析層級的暫止/繼續計數器。  
@@ -50,18 +51,18 @@ PROFILE_COMMAND_STATUS PROFILERAPI ResumeProfile(
   
 |列舉值|描述|  
 |----------------|-----------------|  
-|PROFILE_ERROR_ID_NOEXIST|分析元素識別碼不存在。|  
+|PROFILE_ERROR_ID_NOEXIST|分析項目識別碼不存在。|  
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析層級不存在。|  
 |PROFILE_ERROR_MODE_NEVER|呼叫函式時，分析模式設定為 NEVER。|  
 |PROFILE_ERROR_NOT_YET_IMPLEMENTED|尚未實作分析函式呼叫、分析層級或呼叫與層級的組合。|  
 |PROFILE_OK|呼叫成功。|  
   
 ## <a name="remarks"></a>備註  
- 暫止/繼續計數器的初始值為 0。 每次呼叫 SuspendProfile，Suspend/Resume 計數即加 1；每次呼叫 ResumeProfile 則減 1。  
+ 暫止/繼續計數器的初始值為 0。 每次呼叫 SuspendProfile，暫止/繼續計數即加 1；每次呼叫 ResumeProfile 則減 1。  
   
- Suspend/Resume 計數大於 0 時，層級的暫止/繼續狀態為 OFF。 當計數小於或等於 0 時，暫止/繼續狀態為 ON。  
+ 暫止/繼續計數大於 0 時，層級的暫止/繼續狀態為 OFF。 當計數小於或等於 0 時，暫止/繼續狀態為 ON。  
   
- 當啟動/停止狀態以及暫止/繼續狀態都是 ON 時，層級的分析狀態是 ON。 至於要分析的執行緒，其全域、處理序和執行緒層級的狀態必須全部為 ON。  
+ 當開始/停止狀態以及暫止/繼續狀態都是 ON 時，層級的分析狀態就會是 ON。 針對要分析的執行緒，其全域、處理序和執行緒層級狀態都必須為 ON。  
   
 ## <a name="net-framework-equivalent"></a>.NET Framework 同等  
  Microsoft.VisualStudio.Profiler.dll  
@@ -104,5 +105,5 @@ void ExerciseResumeProfile()
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

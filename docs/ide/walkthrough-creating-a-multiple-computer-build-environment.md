@@ -15,11 +15,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9666f4f26476544baa6afc5dad17798b4e8360d1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9db6306126c64b0f2d5243ce443659f910be299c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>逐步解說：建立多電腦建置環境
 
@@ -290,7 +291,7 @@ ms.lasthandoff: 10/31/2017
     |----------------------------|--------------|---------------------------------|-------------------------------|  
     |x86 (預設)|32 位元 Native|x86、x64|x86|  
     |x86_amd64|x64 Cross|x86、x64|x64|  
-    |amd64|x64 Native|x64|x64|  
+    |amd64|x64 Native|x64|X64|  
   
      如果 vcvarsall.bat 順利執行 (也就是未顯示任何錯誤訊息)，您可以略過下一個步驟，並繼續進行本文件的[將 MSBuild 組件安裝到組建電腦上的全域組件快取 (GAC)](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#InstallingMSBuildToGAC) 一節。  
   
@@ -423,6 +424,6 @@ ms.lasthandoff: 10/31/2017
   
          如需原生 64 位元建置，請指向 64 位元 MSBuild。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [準備測試電腦以執行偵錯可執行檔](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)   
  [命令列參考](../msbuild/msbuild-command-line-reference.md)

@@ -15,11 +15,12 @@ caps.latest.revision: "35"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dff0b96bc40f857224df5222b43efac914de4f7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4996f6cd60889412958765a02811b1b6728f2efa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-overview"></a>效能工作階段概觀
 這個概觀說明程式碼剖析的基本概念。 接觸效能工作不久的開發人員將可見識 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 如何加速提升他們的生產力，並增進其程式碼的效能。 擁有豐富的程式碼剖析經驗的開發人員，則可獲得具體的程式碼剖析工具功能和處理程序的概觀。  
@@ -76,6 +77,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="generate-a-report-of-the-results"></a>產生結果報告  
  您可以將任何效能報告檢視的資料列貼入電子郵件和試算表中，而且可以產生包含一個或多個檢視資料的報告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [逐步解說：找出效能問題](../profiling/walkthrough-identifying-performance-problems.md)

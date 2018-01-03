@@ -14,16 +14,17 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f4beda1530fb36b4cad751c143a3a3962029f2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1986f1cf206774303ea9d3c040d7f10c05ffe491
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="multiple-categories-are-present"></a>存在多個分類
 已選取包含指定時間範圍內多種活動的區段。 請注意，會顯示兩種色彩，一個垂直堆疊在另一個上。 這些色彩只代表指定時間範圍內頻率最高的前兩項活動。 這兩項活動的頻率顯示彼此相關，不是各佔直條的三分之一和三分之二就是各佔對半。 若要查看詳細資訊，請嘗試放大執行緒檢視的這個區段。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行時間 (執行緒檢視)](../profiling/execution-time-threads-view.md)   
  [I/O 時間 (執行緒檢視)](../profiling/i-o-time-threads-view.md)   
  [記憶體管理時間](../profiling/memory-management-time.md)   

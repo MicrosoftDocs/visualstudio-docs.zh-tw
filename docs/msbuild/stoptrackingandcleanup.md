@@ -16,11 +16,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b38b298c78d549787591aff227d7064287e5480c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c4ed935391ecdca464bc4b7e3b6e38342ad5afdc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 停止所有的追蹤，並釋放追蹤工作階段使用的所有記憶體。  
@@ -37,5 +38,5 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ## <a name="requirements"></a>需求  
  **標頭：**FileTracker.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

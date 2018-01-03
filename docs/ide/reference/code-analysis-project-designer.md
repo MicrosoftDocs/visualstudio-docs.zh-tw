@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3f993e47ea748d8caf90aee0a2ee99cbf78dbede
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8e1fc85dbd4fa5f4a8fe757b279826a81705dfd0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-project-designer"></a>專案設計工具、程式碼分析
 包含您可以選擇在您的程式碼上執行的程式碼分析工具。 此工具會報告您組件的相關資訊，例如違反 Microsoft .NET Framework 設計方針所制定的程式設計和設計規則。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
  使用規則  
  啟用或停用使用規則。 您也可以展開此項目來啟用或停用個別規則。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [受控碼的程式碼分析警告](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [受控碼的程式碼分析概觀](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [逐步解說：分析 Managed 程式碼中的程式碼缺失](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

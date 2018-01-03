@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 4dcb40a02de239c8061ae2559ce6adb581625b8d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 01c2867c60a3aa7b00462503da08bda0a8ac80fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="maintaining-security"></a>維護安全性
 常有人說，安全性的代價就是長期的警覺， 儘管您在應用程式的設計和開發過程中已經對安全性投注極大的心力，仍應該假設部署之後會產生安全性問題。 藉由稽核應用程式和分析事件記錄檔的方式，您可能會發現一些之前隱藏的問題。  

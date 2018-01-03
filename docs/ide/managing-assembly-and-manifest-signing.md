@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 62e9060c812666f671f1c2d3378fad510d6524f6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8227a514887150e3477e026a238df608fe98d11
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>管理組件和資訊清單簽署
 強式名稱簽署提供軟體元件的全域唯一識別。 強式名稱用以保證組件無法為他人作為詐騙之用，並確保元件的相依性和組態陳述式會對應到正確的元件和元件版本。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
   
  如需簽署資訊清單的資訊，請參閱[如何：簽署應用程式和部署資訊清單](../ide/how-to-sign-application-and-deployment-manifests.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)   
  [強式名稱組件 (組件簽署) (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

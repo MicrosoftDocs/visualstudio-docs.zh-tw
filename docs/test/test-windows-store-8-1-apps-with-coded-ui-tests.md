@@ -11,11 +11,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 9680f9886e4aeaefe8c476b7e9fff46fb3e24182
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: f5df259efedd50e67ee6e8f94203eb4e0ac56c71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="test-windows-uwp-apps-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 Windows UWP 應用程式
 
@@ -89,7 +90,7 @@ ms.lasthandoff: 11/02/2017
   
      ![按一下按鈕控制項以設定文字方塊值](../test/media/cuit_windowsstoreapp_clickbutton.png "CUIT_WindowsStoreApp_ClickButton")  
   
-7.  使用交叉線工具選取文字方塊控制項，然後選取 [文字]  屬性。  
+7.  使用交叉線工具選取文字方塊控制項，然後選取 **Text** 屬性。  
   
      ![選取 Text 屬性](../test/media/cuit_windowsstoreapp_selecttextproperty.png "CUIT_WindowsStoreApp_SelectTextProperty")  
   
@@ -322,6 +323,6 @@ ms.lasthandoff: 11/02/2017
   
 **答**：每次您使用 [UIMap - 自動程式碼 UI 測試產生器] 產生程式碼時，對 UIMapDesigner.cs 檔案中的程式碼所做的變更都會被覆寫。 如果您需要修改錄製的方法，必須將它複製到 UIMap.cs 檔案並重新命名。 UIMap.cs 檔案可用來覆寫 UIMapDesigner.cs 檔案中的方法和屬性。 您必須移除 Coded UITest.cs 檔案中原始方法的參考，並將它取代為重新命名的方法名稱。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [為 UWP 控制項設定唯一自動化屬性以進行測試](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md)

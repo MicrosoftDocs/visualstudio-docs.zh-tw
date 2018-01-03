@@ -18,11 +18,12 @@ caps.latest.revision: "31"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1f31221f52e9e944dcfc82c98d18e2cf5ec263bf
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 13d9fd328ffab5c182078e46bbd832cddcba6fd9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>逐步解說：尋找記憶體流失 (JavaScript)
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -285,5 +286,5 @@ ms.lasthandoff: 11/11/2017
   
      ![顯示已修正記憶體流失的快照](../profiling/media/js_mem_app_fixed_snapshot3.png "JS_Mem_App_Fixed_Snapshot3")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)

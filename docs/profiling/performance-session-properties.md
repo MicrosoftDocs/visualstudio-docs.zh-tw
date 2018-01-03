@@ -16,16 +16,17 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 268a3b335990bc620a2eb798c3b774f34bc3262b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2038f69117c94752d14c9e8ce6f22aea98a67353
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-session-properties"></a>效能工作階段屬性
 [效能工作階段] 可以讓您進行設定，以決定如何對應用程式進行程式碼剖析。 它也會儲存針對程式碼剖析工作階段所產生的報告。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -111,7 +112,7 @@ ms.lasthandoff: 10/31/2017
   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [控制資料收集](../profiling/controlling-data-collection.md)

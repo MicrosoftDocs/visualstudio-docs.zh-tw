@@ -27,11 +27,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 056101593be6119d994cab40f1536fe130fc25bb
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c40be53bb72d0d61b0455c2f42afcb128e0d511f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 
@@ -136,6 +137,6 @@ function Foo(param1) {
 
 如果您不想使用自動擷取，請如下所示新增組態檔來停用這項功能。 您仍然放置定義檔案，以手動方式直接在專案中使用它。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 IntelliSense](../ide/using-intellisense.md)

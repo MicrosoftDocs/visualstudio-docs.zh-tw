@@ -11,11 +11,14 @@ ms.assetid: 7921D4C7-5526-42F5-8E03-82D3E33A893F
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: a7e12508537a3bcda1df7997ba9e390b75b9beaf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: d5242dd873591abee15f528d09b6f588ea12f5ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-azure-easy-tables-with-unity-walkthrough"></a>搭配使用 Azure 簡易表和 Unity 逐步解說
 

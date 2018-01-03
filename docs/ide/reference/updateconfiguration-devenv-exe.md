@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 93efd5d0e0eb391a164f4997b7ddeedab09b4201
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ec3bfc47829bce2fe5ad836c970cb28f8a1294e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="updateconfiguration-devenvexe"></a>/Updateconfiguration (devenv.exe)
 通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合併系統上的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 套件，並檢查 MEF 快取中的任何變更。  
@@ -41,6 +42,6 @@ devenv /updateconfiguration
 Devenv.exe /updateconfiguration  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)

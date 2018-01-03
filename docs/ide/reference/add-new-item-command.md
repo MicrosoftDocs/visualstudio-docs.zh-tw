@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ef0373d148d386d0b725d74ea639f1b8b0719cc3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 70290f588fe3fac83a5cf0b0ab0339d5e0741186
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-item-command"></a>加入新項目命令
 將新的方案項目，例如 .htm、.css、.txt 或框架組新增至目前的方案，並開啟它。  
@@ -33,7 +34,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
   
 ## <a name="arguments"></a>引數  
  `filename`  
- 選擇項。 要新增至方案之項目的路徑和檔名。  
+ 選擇性。 要新增至方案之項目的路徑和檔名。  
   
 ## <a name="switches"></a>參數  
  /t: `templatename`  
@@ -65,7 +66,7 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
 >File.AddNewItem MyHTMLpg /t:"General\HTML Page"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

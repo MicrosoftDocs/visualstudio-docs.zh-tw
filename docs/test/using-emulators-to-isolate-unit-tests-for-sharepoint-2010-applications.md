@@ -11,11 +11,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 1a7692176545f341fa753aa8838a089639a7b753
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 68999863abbf539bf1d83456d0630820249adb77
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>使用模擬器來隔離 Sharepoint 2010 應用程式的單元測試
 Microsoft.SharePoint.Emulators 套件提供一組程式庫，可協助您建立 Microsoft SharePoint 2010 應用程式的隔離單元測試。 模擬器會使用來自 [Microsoft Fakes](../test/isolating-code-under-test-with-microsoft-fakes.md) 隔離架構的[填充碼](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)建立輕量型記憶體內部物件，用於模仿 SharePoint 應用程式開發介面最常見的物件和方法。 沒有模擬 SharePoint 方法或要變更模擬器的預設行為時，則可以建立 Fakes 填充碼提供您想要的結果。  
@@ -587,7 +588,7 @@ namspace MySPAppTests
   
  [本主題內容](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [使用自動程式碼 UI 測試來測試 SharePoint 2010 應用程式](../test/testing-sharepoint-2010-applications-with-coded-ui-tests.md)   
  [對 SharePoint 2010 和 2013 應用程式執行 Web 效能和負載測試](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   

@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1672a505fbd7accfdc7fa644eafa6b3af0744d26
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c3e191509b7b0ed80447399eeb533c4a318ad8c8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-allocations-view"></a>.NET 記憶體配置檢視
 [配置] 檢視會列出在分析回合期間建立的類型。 每種類型都是呼叫樹狀圖的根節點，可顯示導致類型配置的函式執行路徑。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|已配置類型或函式的名稱。|  
+|**名稱**|已配置類型或函式的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
 |**模組名稱**|包含類型或函式的模組名稱。|  

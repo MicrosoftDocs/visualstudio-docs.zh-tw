@@ -13,11 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 dev_langs: C++
-ms.openlocfilehash: 10d4ab630132d8ce4191978de669436ca7ba5852
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 360efc2b185e6485b2bb08d5d8d0b09a128099d0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="custom-native-etw-heap-events"></a>自訂原生 ETW 堆積事件
 
@@ -63,7 +64,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 將 `__declspec(allocator)` 裝飾項目新增至自訂堆積管理員中的任何函式，以傳回新配置之堆積記憶體的指標。  此裝飾項目可讓工具正確識別要傳回的記憶體類型。  例如：
+1. 將 `__declspec(allocator)` 裝飾項目新增至自訂堆積管理員中的任何函式，以傳回新配置之堆積記憶體的指標。  此裝飾項目可讓工具正確識別要傳回的記憶體類型。  例如: 
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -157,6 +158,6 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 > [!TIP]
 > Visual Studio 的 [效能分析] 工具集中也包含 [記憶體使用量] 工具，您可從 [偵錯] > [效能分析工具] 功能表選項或 **Alt + F2** 鍵盤組合，加以啟用。  這項功能不包含堆積追蹤，亦不會顯示此處所述的自訂堆積。  只有 [診斷工具] 視窗才包含這項功能 (您可以透過 [偵錯] > [視窗] > [顯示診斷工具] 功能表，或 **Ctrl+Alt+F2** 鍵盤組合，加以啟用)。
 
-## <a name="see-also"></a>另請參閱
-[程式碼剖析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
+## <a name="see-also"></a>請參閱
+[分析工具](https://docs.microsoft.com/en-us/visualstudio/profiling/profiling-tools)  
 [記憶體使用量](https://docs.microsoft.com/en-us/visualstudio/profiling/memory-usage)

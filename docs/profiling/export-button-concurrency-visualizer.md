@@ -14,15 +14,16 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1c16186c54d423791f952f7aba558e056037b596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 679a5437976404bfd085897ad17910b8241a973e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="export-button-concurrency-visualizer"></a>匯出按鈕 (並行視覺化檢視)
 [匯出] 按鈕可讓您將專屬記錄的呼叫堆疊匯出為 .csv 檔案或與 Microsoft Excel 這類其他工具搭配使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

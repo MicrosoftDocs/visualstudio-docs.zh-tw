@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a88962b87466a2345ac8dafa642d457a6fee5be0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96676f23cd4741d084f25d1dad3c288b98bf023c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-project-file-schema-reference"></a>MSBuild 專案檔案結構描述參考
 提供表格來說明所有的 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] XML 結構描述項目及其可用屬性和子項目。  
@@ -56,8 +57,8 @@ ms.lasthandoff: 10/31/2017
 |[UsingTask 項目 (MSBuild)](../msbuild/usingtask-element-msbuild.md)|ParameterGroup<br /><br /> TaskBody|AssemblyFile<br /><br /> AssemblyName<br /><br /> 條件<br /><br /> TaskFactory<br /><br /> TaskName|  
 |[When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)|選擇<br /><br /> ItemGroup<br /><br /> PropertyGroup|條件|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [條件](../msbuild/msbuild-conditions.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+ [ MSBuild](../msbuild/msbuild.md)

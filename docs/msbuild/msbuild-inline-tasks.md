@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ef4376d8d7600b1072e2afa5df2cf474a8b3ab32
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ea7720cbe005044e2b0eea021a720c79b651f740
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-inline-tasks"></a>MSBuild 內嵌工作
 MSBuild 工作通常是透過編譯實作 <xref:Microsoft.Build.Framework.ITask> 介面的類別來建立。 如需詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -142,7 +143,7 @@ Log.LogError("Hello, world!");
   
 -   `Output` 是選擇性屬性，預設值為 `false`。 如果是 `true`，則必須為參數提供值，才能從 Execute 方法傳回。  
   
- 例如：  
+ 例如，套用至物件的  
   
 ```xml  
 <ParameterGroup>  
@@ -190,6 +191,6 @@ File.WriteAllText(Path, content);
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [逐步解說：建立內嵌工作](../msbuild/walkthrough-creating-an-inline-task.md)

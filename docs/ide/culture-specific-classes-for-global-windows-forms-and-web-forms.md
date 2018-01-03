@@ -29,11 +29,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1864d3bd07906d5bd7413689c912e0a3c7ede036
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d3dbe578ac9f902314e7270ecb8a7d799fcc47a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>全域 Windows Form 和 Web Form 的文化特性特定類別
 每個文化特性對於顯示日期、時間、數字、貨幣及其他資訊都有不同的慣例。 <xref:System.Globalization> 命名空間包含的類別可用來修改文化特性 (Culture) 特定值的顯示方式，例如 <xref:System.Globalization.DateTimeFormatInfo>、**Calendar** 和 <xref:System.Globalization.NumberFormatInfo>。  
@@ -70,7 +71,7 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
   
  `$100.00`  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IFormattable.ToString%2A?displayProperty=fullName>   
  <xref:System.Globalization.DateTimeFormatInfo>   
  <xref:System.Globalization.NumberFormatInfo>   

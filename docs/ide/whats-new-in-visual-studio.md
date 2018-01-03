@@ -15,11 +15,12 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a08f5a15cd83af05c91eb35ad2ad4a2c4c229458
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 011c86caae5eaa00577dcc9a5d9c372849eb28f0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="what39s-new-in-visual-studio-2017"></a>Visual Studio 2017 的新功能
 #### <a name="updated-for-the-155-releasehttpswwwvisualstudiocomnewsreleasenotesvs2017-relnotes"></a>已針對 [15.5 版本](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)更新
@@ -257,7 +258,7 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 - [Redgate SQL Prompt Core](http://www.red-gate.com/products/sql-development/sql-prompt/entrypage/microsoft-and-sql-prompt?utm_source=microsoft&utm_medium=link&utm_campaign=sqlprompt&utm_term=docs-newinvs) 可協助您透過智慧型程式碼自動完成的協助，更快且更精確地撰寫 SQL。 SQL Prompt 會自動完成資料庫及系統物件和關鍵字，並在輸入期間提供資料行建議。 由於您不再需要記住所有資料行名稱或別名，這會使程式碼更加簡潔，並具有更少的錯誤。
 
 隨附於所有版本的 Visual Studio 2017：
-- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高生產力。
+- [Redgate SQL Search](http://www.red-gate.com/products/sql-development/sql-search/?utm_source=microsoft&utm_medium=link&utm_campaign=sqlsearch&utm_term=docs-newinvs) 可協助您跨多個資料庫快速尋找 SQL 片段和物件以提高產能。
 
 如需詳細資訊，請參閱 [Redgate Data Tools in Visual Studio 2017](https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/redgate-data-tools-in-visual-studio-2017/) (Visual Studio 2017 中的 Redgate Data Tools) 部落格文章。
 
@@ -301,6 +302,6 @@ Visual Studio 2017 15.5 版提供 Windows 10 Fall Creators Update SDK (10.0.1629
 ## <a name="see-also"></a>請參閱
 * [Visual Studio 2017 版本資訊](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes)
 * [Visual C++ 的新功能](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
-* [C# 的新功能](https://docs.microsoft.com/dotnet/csharp/csharp-7)  
+* [C# 的新功能](/dotnet/csharp/whats-new)  
 * [Team Foundation Server 的新功能](https://www.visualstudio.com/docs/whats-new)
 * [Visual Studio for Mac 的新功能](https://www.visualstudio.com/vs/visual-studio-mac/)

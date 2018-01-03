@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 879af047f09e34cf2d0f56e15ba786f7bb0562e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c7cf60293ca2d0a0ebd18dc9715d2954bd1128b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步驟 5：將控制項加入至您的表單
 在這個步驟中，您要將控制項 (例如 `PictureBox` 控制項和 `CheckBox` 控制項) 新增至表單。 接著，您要將按鈕加入至表單。  
@@ -79,7 +80,7 @@ PictureBox 工作
   
 6.  現在，重新執行程式來查看新配置的表單。 選擇按鈕和核取方塊並不會執行任何動作，不過很快就會有作用。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 6：命名您的按鈕控制項](../ide/step-6-name-your-button-controls.md)。  
   

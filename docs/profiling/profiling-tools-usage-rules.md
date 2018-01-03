@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2660586ce2757f2aa1b58c6c7b0e4dc36a700bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5585f6828677387d07f00039634fdfe904216ef2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-tools-usage-rules"></a>程式碼剖析工具使用規則
 程式碼剖析工具使用分類中的效能規則提供的指引，可最有效地使用分析工具來收集資料。  

@@ -16,11 +16,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e80bd33d9351c6b2dd5ce65d327e6cdb40fc70a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e5e83629bdb2b93db3a34ba577da4df84b119cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自訂報表檢視資料行
 Visual Studio Team System Development 版的效能工具已完全整合至整合式開發環境 (Integrated Development Environment，IDE)，可提供流暢的使用者經驗。 下列清單是可透過新增、移除及重新排列資料行來自訂的代表性檢視︰  
@@ -57,4 +58,4 @@ Visual Studio Team System Development 版的效能工具已完全整合至整合
   
 4.  按一下箭號按鈕以重新排列資料行。  
   
-5.  按一下 [確定]。
+5.  按一下 [確定 **Deploying Office Solutions**]。

@@ -30,11 +30,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccb924164b4d590f8ed440dfa905c1c040a13924
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 23e6712dbf66c898757176aca9e89b98de2f65bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>選項對話方塊、環境、字型和色彩
 [選項] 對話方塊的 [字型和色彩] 頁面可讓您為整合式開發環境 (IDE) 中的各種使用者介面項目建立自訂的字型和色彩配置。 按一下 [工具]/[選項]，然後選取 [環境]/[字型和色彩]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/02/2017
   
  部分顯示項目包括：  
   
-|顯示項目|說明|  
+|顯示項目|描述|  
 |------------------|-----------------|  
 |**純文字**|編輯器中的文字。|  
 |**選取的文字**|當編輯器具有焦點時，目前的選取範圍中所包含的文字。|  
@@ -127,7 +128,7 @@ ms.lasthandoff: 11/02/2017
 |**涵蓋範圍未觸及的區域**|尚未被單元測試涵蓋的程式碼。|  
 |**涵蓋範圍部分觸及的區域**|已被單元測試部分涵蓋的程式碼。|  
 |**涵蓋範圍觸及的區域**|已被單元測試完全涵蓋的程式碼。|  
-|**CSS 註解**|階層式樣式表中的註解。 例如：<br /><br /> /* comment \*/|  
+|**CSS 註解**|階層式樣式表中的註解。 例如: <br /><br /> /* comment \*/|  
 |**CSS 關鍵字**|階層式樣式表中的關鍵字。|  
 |**CSS 屬性名稱**|屬性 (例如背景) 的名稱。|  
 |**CSS 屬性值**|指派給屬性 (例如藍色) 的值。|  
@@ -232,7 +233,7 @@ ms.lasthandoff: 11/02/2017
  **範例**  
  顯示所選取 [顯示設定] 和 [顯示項目] 的字型樣式、大小和色彩配置範例。 您可以使用此方塊來預覽結果，嘗試使用不同的格式選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [選項對話方塊](../../ide/reference/options-dialog-box-visual-studio.md)   
  [如何：變更字型和色彩](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

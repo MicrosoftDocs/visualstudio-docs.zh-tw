@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae0bd48af8c9fbaaaf8c38f50a2fe8233f15cb3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5503422ece5847018e8d321dba9cf674dff9e623
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---contention-data"></a>模組檢視 - 爭用資料
 爭用資料的 [模組檢視] 會顯示根據分析資料中取樣的模組所分組的效能資料。 每個模組都是階層式樹狀結構的根。 爭用事件發生所在模組的函式會列在模組節點之下。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
  下表描述爭用資料之 [模組檢視] 中資料行的值。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|-   針對函式，即為此函式已遭封鎖而無法執行函式主體中程式碼的時間。 不包括由該函式所呼叫函式的封鎖時間。<br />-   針對模組，即為模組中函式的專有封鎖時間總和。<br />-   針對程式行或指令，即為封鎖執行此程式行或指令的時間。|  
 |**專有封鎖時間 %**|-   針對函式或模組，即為在分析回合的所有封鎖時間中，屬於此函式或模組的專有封鎖時間百分比。<br />-   針對程式行或指令，即為分析回合中封鎖執行此程式行或指令之所有封鎖時間的百分比。|  
@@ -39,12 +40,12 @@ ms.lasthandoff: 10/31/2017
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
 |**模組名稱**|包含該函式、程式行或指令指標的模組名稱。|  
 |**模組路徑**|包含該模組、函式、程式行或指令指標的模組路徑。|  
-|**Name**|模組或函式的名稱。|  
+|**名稱**|模組或函式的名稱。|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [模組檢視](../profiling/modules-view.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

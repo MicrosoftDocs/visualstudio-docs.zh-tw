@@ -24,16 +24,17 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 423b2537b425066ca490eb8ae3c20d17fbc31253
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 80668df65b1250eb579597653cf32ab79d30218c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="text-editor-options-dialog-box"></a>文字編輯器選項對話方塊
 [選項] 對話方塊中的編輯器選項提供方式來自訂編輯器的外觀和行為。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：變更編輯器中的字型和色彩](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  說明如何變更編輯器字型和色彩。  
   

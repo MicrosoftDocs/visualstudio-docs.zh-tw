@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 97f5eef312d954445bd208364ccbe48f9325b066
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 55c6fa99cf22148657f0515d817c6d40525497d1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：撰寫 C++ DLL 的單元測試
 本逐步解說描述如何使用測試先行方法來開發原生 C++ DLL。 基本步驟如下：  
@@ -325,7 +326,7 @@ ms.lasthandoff: 11/15/2017
   
      您也可以強制規定程式碼涵蓋範圍的最低層級。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將單元測試加入至現有的 C++ 應用程式](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [使用 Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)   

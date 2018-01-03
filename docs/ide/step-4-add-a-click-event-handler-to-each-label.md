@@ -12,11 +12,12 @@ caps.latest.revision: "20"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: ca218a20f46bf1233602287b1ad374921f85428a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 03fa141d6f254c385c525ac439121034e7fc816f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步驟 4：將 Click 事件處理常式加入至每個標籤
 配對遊戲的運作方式如下：  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  在功能表列上選擇 [檔案]、[全部儲存] 以儲存進度，然後在功能表列上選擇 [偵錯]、[開始偵錯] 以執行程式。 您應該會看到一個藍色背景的空白表單。 在該表單中選擇任一個儲存格，應該就可以看見其中一個圖示。 繼續在表單中選擇不同位置。 當您選擇圖示時，圖示應該就會出現。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移至下一個教學課程步驟，請參閱[步驟 5：新增標籤參考](../ide/step-5-add-label-references.md)。  
   

@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ba4284fa53447a1444040a903c915be4bfdf728
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 23cd5cf58585c8ba1397552d20cb519c1f62c236
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Visual Studio 秘訣和訣竅
 
@@ -122,7 +123,7 @@ ms.lasthandoff: 12/07/2017
 
 請參閱[鍵盤快速鍵：Visual Studio Online、TFS 入口網站和 Team Explorer](http://msdn.microsoft.com/en-us/35ea128b-7565-4ee3-8266-b9f0d32aecf4)。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 部落格](http://blogs.msdn.com/b/visualstudio)  
 [Visual Studio 秘訣和訣竅部落格](http://blogs.msdn.com/b/zainnab)  

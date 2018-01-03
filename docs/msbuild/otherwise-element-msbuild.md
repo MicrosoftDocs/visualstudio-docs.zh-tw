@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ae4185d56b77d40cf817d7ea3003f64dc6fff556
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11e917f21071a273f56ddd358fd5a845ce7411dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 項目 (MSBuild)
 指定只有當所有 `When` 項目的條件評估為 `false` 時，才需執行的程式碼區塊。  
@@ -55,19 +56,19 @@ ms.lasthandoff: 10/31/2017
 ### <a name="attributes"></a>屬性  
  無。  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子項目，以選取一個要執行的程式碼區段。 `Otherwise` 項目中可能有零或多個 `Choose` 項目。|  
+|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子項目，以選取一個要執行的程式碼區段。 `Otherwise` 元素中可能有零個或多個 `Choose` 元素。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 項目。 `Otherwise` 項目中可能有零或多個 `ItemGroup` 項目。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `Otherwise` 元素中可能有零個或多個 `PropertyGroup` 元素。|  
 
 ### <a name="parent-elements"></a>父項目  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|評估子項目，以選取一個要執行的程式碼區段。|  
+|[Choose](../msbuild/choose-element-msbuild.md)|評估子元素，以選取要執行的一個程式碼區段。|  
 
 ## <a name="remarks"></a>備註  
  `Choose` 項目中可能只有一個 `Otherwise` 項目，而且它必須是最後一個項目。  
@@ -122,6 +123,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

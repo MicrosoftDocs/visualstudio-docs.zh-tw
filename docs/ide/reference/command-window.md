@@ -19,11 +19,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 112264b0bbe5e752a7f56004e767f26b527a6f6a
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: b3b1de69c905757c8d28922cd09eadd5abf7d05e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-window"></a>命令視窗
 [命令] 視窗是用來直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 整合式開發環境 (IDE) 中執行命令或別名。 您可以執行功能表命令以及不會出現在任何功能表上的命令。 若要顯示 [命令] 視窗，請從 [檢視] 功能表中選擇 [其他視窗]，然後選取 [命令視窗]。  
@@ -111,6 +112,6 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 ## <a name="use-quotes-for-path-names-with-spaces"></a>使用引號括住包含空格的路徑名稱  
  例如，如果您想要開啟之檔案的路徑包含空格，則必須用雙引號括住包含空格的路徑或路徑區段：**C:\\"Program Files"** 或 **"C:\Program Files"**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

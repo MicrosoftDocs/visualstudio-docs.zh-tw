@@ -14,11 +14,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 794b34365dfa025c6ade7f2d7a2f1216c2b4e4ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3915606f9bfaaf2a747ecd5ede0195116c346f0b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-channels"></a>管理通道
 在並行視覺化檢視的 [執行緒檢視] 中，您可以針對處理序組織通道，以檢查特定模式。 您可以排序、上下移動及隱藏或顯示通道。  
@@ -59,7 +60,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="group-markers-by-thread"></a>依據執行緒來分組標記  
  如果追蹤包含標記事件，您就可以使用此命令將標記通道分組在產生標記事件的執行緒下方。  磁碟通道會移動到通道清單的最上方，而 GPU 通道會移動到最下方。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)   
  [開啟/關閉測量模式](../profiling/measure-mode-on-off.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

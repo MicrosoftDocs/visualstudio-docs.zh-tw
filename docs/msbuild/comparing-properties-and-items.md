@@ -13,11 +13,12 @@ caps.latest.revision: "16"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: f1a0f6df56cebe769ec514abea49ade0083c512e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6210f6e96c4e0b1330ee83a3f0f19ae58849dfce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="comparing-properties-and-items"></a>比較屬性和項目
 MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以及儲存可在整個專案檔中參考的值。  
@@ -42,7 +43,7 @@ MSBuild 屬性和項目都可用來將資訊傳遞至工作、評估條件，以
 </PropertyGroup>  
 ```  
   
- 通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如：  
+ 通常會使用 `BuildDependsOn` 屬性 (Property) 做為目標 `DependsOnTargets` 屬性 (Attribute) 的引數，以便有效地將它轉換至項目清單。 您可以覆寫這個屬性，以加入目標，或是變更目標執行順序。 例如，套用至物件的  
   
 ```xml  
 <PropertyGroup>  
@@ -180,5 +181,5 @@ KeyFileVersion:
 KeyFileVersion: 1.0.0.3  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

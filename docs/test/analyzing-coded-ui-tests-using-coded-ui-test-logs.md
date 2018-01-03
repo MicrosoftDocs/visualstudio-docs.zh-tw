@@ -11,16 +11,17 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: "13"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 39ed1ba397fd1c0a9ff1f30acea1cff4a38529a2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: af89bbfadfa992fad4b2ba114ffb006e4b0f818a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用自動程式化 UI 測試記錄分析自動程式化 UI 測試
 自動程式化 UI 測試記錄會篩選和錄製您自動程式化 UI 測試執行的重要資訊。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -107,6 +108,6 @@ ms.lasthandoff: 10/27/2017
   
  自 Visual Studio 2012 之後，這兩個設定都已遭取代。 EqtTraceLevel 是修改為啟用 HtmlLogger 所需的唯一設定。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [如何：從 Microsoft Visual Studio 執行測試](http://msdn.microsoft.com/Library/1a1207a9-2a33-4a1e-a1e3-ddf0181b1046)

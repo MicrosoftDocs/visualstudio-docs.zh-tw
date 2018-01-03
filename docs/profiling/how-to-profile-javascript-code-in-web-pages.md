@@ -16,11 +16,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e33605b75dfe80bf755081692bc8a4991def801
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 61955ead7996a395745a8869bc38c10dc59b537a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-profile-javascript-code-in-web-pages"></a>如何：分析網頁中的 JavaScript 程式碼
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]程式碼剖析工具可以使用檢測程式碼剖析方法，針對 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 應用程式、任意網頁或 JavaScript 應用程式中執行的 JavaScript 程式碼來收集效能資料。  

@@ -14,11 +14,12 @@ ms.assetid: d23a9ee7-58e3-4e8b-a38c-b2207ea73fea
 caps.latest.revision: "25"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: bb22521dc0c4f4a1a824c3554ce37297a61108c5
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 39addca0d673ae5a9423d4195ffc2bfe3358de4e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>以 64 位元處理序的形式執行單元測試
 如果您有 64 位元的電腦，即可透過 64 位元處理序的形式執行單元測試並擷取程式碼涵蓋範圍資訊。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/27/2017
   
      在 .runsettings 檔案中指定 `<TargetPlatform>x64</TargetPlatform>`。 這個方法的優點是，您可以指定不同檔案中的設定群組，並且在不同設定之間快速切換。 您也可以在方案之間複製設定。 如需詳細資訊，請參閱[使用 .runsettings 檔案設定單元測試](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用測試總管執行單元測試](../test/run-unit-tests-with-test-explorer.md)   
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [指定 Visual Studio 測試的測試設定](/devops-test-docs/test/specifying-test-settings-for-visual-studio-tests)

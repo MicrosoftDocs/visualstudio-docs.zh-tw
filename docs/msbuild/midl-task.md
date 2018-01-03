@@ -30,11 +30,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 99c0e5dfa2c2ffdb9aaf79356c83e925290f0db2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3dc6bcbf4814a05d05aa69a42e8d19f581e78863
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="midl-task"></a>MIDL 工作
 包裝 Microsoft 介面定義語言 (MIDL) 編譯器工具 midl.exe。 如需詳細資訊，請參閱 [MSDN](http://go.microsoft.com/fwlink/?LinkId=737) 網站上的＜MIDL 命令列參考＞。  
@@ -420,5 +421,5 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="remarks"></a>備註  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

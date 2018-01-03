@@ -12,11 +12,12 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 3f5d33b4a8362340c0716242cba7c9aefaf1eab3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dc8def9bb088275cef9f15e4e643d6811feab462
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步驟 1：建立專案並將資料表加入至表單
 建立配對遊戲的第一個步驟就是建立專案並將資料表加入至您的表單。 資料表可協助依 4x4 格線對齊圖示。 您也可以設定多個屬性來強化遊戲面板的外觀。  
@@ -89,7 +90,7 @@ ms.lasthandoff: 10/31/2017
      ![初始配對遊戲表單](../ide/media/express_tut4step1.png "Express_Tut4Step1")  
 初始配對遊戲表單  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 2：新增隨機物件和圖示清單](../ide/step-2-add-a-random-object-and-a-list-of-icons.md)。  
   

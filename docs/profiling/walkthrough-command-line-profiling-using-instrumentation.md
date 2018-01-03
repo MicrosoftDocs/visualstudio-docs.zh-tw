@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 54c91b8238b21f214edda0941c0c91fd4bdda8e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29a68dc22a348c787d192bebecea91caed7aa0cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>逐步解說：使用檢測進行命令列剖析
 本逐步解說將引導您分析一個 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 獨立應用程式，以使用「程式碼剖析工具」的檢測方法來收集計時和呼叫計數的詳細資料。 在這個逐步解說中，您將完成下列工作：  
@@ -123,9 +124,9 @@ ms.lasthandoff: 10/31/2017
   
      您可以使用試算表程式分析產生的報表，也可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 來分析 Report.vsp 檔案中的剖析資料。 如需詳細資訊，請參閱[分析效能工具資料](../profiling/analyzing-performance-tools-data.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
  [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
+ [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [效能報告檢視](../profiling/performance-report-views.md)

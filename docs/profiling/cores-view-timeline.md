@@ -14,15 +14,16 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd6e114837daa754c165d83be327bd6b3b39a6ae
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8e117c305c02d7a5af5cbc915b139cb80d2308
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-timeline"></a>核心檢視時間表
 時間軸中的每個資料列都代表已分析系統上的邏輯處理器核心。 針對每個資料列，水平軸會顯示哪一個執行緒在指定時間點的邏輯核心上執行。 您可以將滑鼠指標停留在時間軸中感興趣的色彩上方，以傳回可識別執行緒的工具提示。 為了協助執行緒識別，視窗底部的圖例會顯示每個色彩所代表的內容。 使用 [縮放] 工具來放大和縮小，方法是按一下並拖曳，或按 CTRL 鍵並移動滑鼠滾輪。 切換 [核心檢視] 與 [執行緒檢視] 時，會維護縮放一致性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心檢視](../profiling/cores-view.md)   
  [縮放控制 (執行緒檢視)](../profiling/zoom-control-threads-view.md)

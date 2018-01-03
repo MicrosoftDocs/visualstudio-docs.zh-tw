@@ -26,11 +26,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bd498004568bab80565782e11b46691a7d0ef1f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: be2145f95ac28654852ad4e6d77aa6f33e0ecf8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="install-and-manage-local-content"></a>安裝與管理本機內容
 藉由使用 Microsoft Help Viewer，您可以加入、移除、更新和移動安裝於您電腦上的說明內容，以符合您的軟體開發需求。  
@@ -125,5 +126,5 @@ ms.lasthandoff: 11/07/2017
   
 3.  當內容經移動後，請選擇 [關閉] 按鈕。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

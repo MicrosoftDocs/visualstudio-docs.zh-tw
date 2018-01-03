@@ -18,11 +18,12 @@ caps.latest.revision: "64"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5483245e7f2ae341d08618485a4f49e91eb8fa9
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 13d04bde21f46fd8950e79464beccfe2228633aa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 使用 [專案設計工具] 的 [應用程式] 頁面來指定專案的應用程式設定和屬性。  
@@ -158,5 +159,5 @@ ms.lasthandoff: 11/02/2017
   
  特定應用程式狀態變更時 (例如，應用程式啟動或關機時)，<xref:System.Windows.Application> 物件會引發事件。 如需此類別所公開的完整事件清單，請參閱 <xref:System.Windows.Application>。 這些事件是在 `Application` 部分類別的使用者程式碼區段中處理。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [管理應用程式屬性](../../ide/application-properties.md)[撰寫 Office 方案中的程式碼](/office-dev/office-dev/writing-code-in-office-solutions)

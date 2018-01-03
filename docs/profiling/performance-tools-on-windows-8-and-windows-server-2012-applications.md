@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 83bd33e6da9795a7e4e638fa91612e930a882cb0
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: b82860f4bdbf206441591703137f15decb294269
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Windows 8 和 Windows Server 2012 應用程式的效能工具
 自 Windows 8 和 Windows Server 2012 開始的增強式安全性功能需要的重大變更，是 Visual Studio 效能工具在這些平台收集資料的方式。 UWP App 也需要新的收集技術。 本主題描述自 Windows 8 和 Windows Server 2012 平台開始的效能工具變更。
@@ -87,7 +88,7 @@ ms.lasthandoff: 12/07/2017
 ##  <a name="BKMK_Profiling_from_the_command_line"></a> 從命令列進行程式碼剖析  
  您使用兩種命令列工具在 Windows 8 和 Windows Server 2012 的裝置上收集程式碼剖析資料，包括沒有安裝 Visual Studio 的裝置：  
   
-|工具名稱|說明|  
+|工具名稱|描述|  
 |---------------|-----------------|  
 |[VSPerf](../profiling/vsperf.md)|從 UWP App 收集分析資料，以及從 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式收集樣本分析資料。|  
 |[VSPerfCmd](../profiling/vsperfcmd.md)|從 Windows 8 桌面程式或 Windows Server 2012 中執行的應用程式，收集檢測、並行和階層互動分析資料。 從舊版 Windows 中收集所有類型的程式碼剖析資料。|  
@@ -140,7 +141,7 @@ ms.lasthandoff: 12/07/2017
   
  階層互動資料只能在 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)] IDE 中檢視。 不提供透過 [VSPerfReport](../profiling/vsperfreport.md) 的檔案型階層互動報告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

@@ -12,11 +12,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: "16"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 7fd461a6fea45676dcb443c8cf69c064af675793
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bb7bb32458e13fc424ba0287e00d8c85c70314e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>自動程式化 UI 測試的範例 Excel 增益集
 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 的此範例增益集是特別設計來支援 Excel 工作表的自動程式碼 UI 測試，在 Visual Studio 企業版中記錄及執行 增益集是使用 Visual Studio Tools for Office 所建立的。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/27/2017
 ## <a name="exceluicommunicator-class"></a>ExcelUICommunicator 類別  
  這個類別會實作 `IExcelUITestCommunication` 介面，並且從 Excel 物件模型取得要求 UI 資訊。 如需詳細資訊，請參閱[範例 Excel Communicator 介面](../test/sample-excel-communicator-interface.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
  [逐步解說：建立 Excel 的第一個 VSTO 增益集](http://msdn.microsoft.com/Library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Office 和 SharePoint 開發](/office-dev/office-dev/office-and-sharepoint-development-in-visual-studio)

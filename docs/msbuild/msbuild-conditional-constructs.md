@@ -26,11 +26,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb6244ceed63fead2925c0af7d98669b1bf5bfc2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c95420accf377cc4debaae88e1290c3056b5001a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 條件式建構
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 提供搭配使用 [Choose](../msbuild/choose-element-msbuild.md)、[When](../msbuild/when-element-msbuild.md) 和 [Otherwise](../msbuild/otherwise-element-msbuild.md) 項目的二選一處理機制。  
@@ -79,7 +80,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Choose 項目 (MSBuild)](../msbuild/choose-element-msbuild.md)   
  [When 項目 (MSBuild)](../msbuild/when-element-msbuild.md)   
  [Otherwise 項目 (MSBuild)](../msbuild/otherwise-element-msbuild.md)   

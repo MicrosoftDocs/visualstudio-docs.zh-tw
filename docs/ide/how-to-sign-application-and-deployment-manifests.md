@@ -21,11 +21,12 @@ caps.latest.revision: "58"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9be05b63169d155f7e1662112ca119422ddbc1a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0ca5caa822108d5a6417e69f827e1ba754b0d105
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>如何：簽署應用程式和部署資訊清單
 如果您想要使用 ClickOnce 部署來發行應用程式，必須搭配使用 Authenticode 技術和公開/私密金鑰組來簽署應用程式和部署資訊清單。 您可以使用 Windows 憑證存放區或金鑰檔的憑證來簽署資訊清單。  
@@ -108,7 +109,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  發行應用程式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [強式名稱的組件](/dotnet/framework/app-domains/strong-named-assemblies)   
  [如何：建立公開/私密金鑰組](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair)   
  [專案設計工具、簽署頁](../ide/reference/signing-page-project-designer.md)   

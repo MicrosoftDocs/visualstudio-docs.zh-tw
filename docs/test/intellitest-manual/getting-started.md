@@ -12,11 +12,12 @@ ms.assetid: 21FE4D68-9E7F-4BB1-BD69-B0D09A941F09
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: e89b6d8860e0964eacb9d58f6d92c64cc661afa0
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 539565d5f37c60cfb87b3aa33ab8b82f7fee5015
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-microsoft-intellitest"></a>開始使用 Microsoft IntelliTest
 

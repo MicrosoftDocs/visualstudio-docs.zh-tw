@@ -12,11 +12,12 @@ caps.latest.revision: "33"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3084796fd8260d128a7ae3a8c9b12eb5e6bda806
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: aspnet
+ms.openlocfilehash: 173ddaec8bffe0dde43eee1d96c708e4e5203912
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：使用命令列將程式碼剖析工具附加至 ASP.NET Web 應用程式以收集應用程式統計資料
 本主題描述如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令列工具將分析工具附加至 ASP.NET Web 應用程式，並使用取樣方法收集效能統計資料。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 11/11/2017
     > [!NOTE]
     >  **/user** 和 **/crosssession** 選項通常是 ASP.NET 應用程式的必要選項。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName`|指定擁有 ASP.NET 背景工作處理序之帳戶的網域和使用者名稱。 如果以登入的使用者之外的使用者身分執行處理程序，就需要這個選項。 處理序擁有者會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [使用者名稱] 欄。|  
     |[/crosssession](../profiling/crosssession.md)|在其他登入工作階段啟用處理序程式碼剖析。 如果 ASP.NET 應用程式是在不同的工作階段中執行，就需要這個選項。 工作階段識別碼會列在 [Windows 工作管理員] 的 [處理程序] 索引標籤上的 [工作階段識別碼] 欄。 **/crosssession** 可縮寫成 **/CS**。|  
@@ -77,7 +78,7 @@ ms.lasthandoff: 11/11/2017
   
     -   根據預設，每經過 10,000,000 個未暫止處理器時脈週期，會取樣一次效能資料。 這在 1GH 處理器上大約是每秒 100 次。 您可以指定下列 **VSPerfCmd** 選項之一來變更時脈週期間隔，或指定不同的取樣事件。  
   
-    |取樣事件|說明|  
+    |取樣事件|描述|  
     |------------------|-----------------|  
     |[/timer](../profiling/timer.md) **:** `Interval`|將取樣間隔變更為 `Interval` 指定的未暫止時脈週期數。|  
     |[/pf](../profiling/pf.md)[**:**`Interval`]|將取樣事件變更為分頁錯誤。 如果指定 `Interval`，請設定樣本間的分頁錯誤數。 預設值為 10。|  
@@ -85,7 +86,7 @@ ms.lasthandoff: 11/11/2017
     |[/counter](../profiling/counter.md) **:** `Config`|將取樣事件與間隔變更為 `Config` 中指定的處理器效能計數器與間隔。|  
     |[/targetclr](../profiling/targetclr.md) **:** `Version`|指定當應用程式載入多個版本的執行階段時要分析的 Common Language Runtime (CLR) 版本。|  
   
-    -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 CLR 版本。 選擇項。  
+    -   **targetclr:** `Version` 指定當應用程式載入多個版本的執行階段時要分析的 CLR 版本。 選擇性。  
   
 ## <a name="controlling-data-collection"></a>控制資料收集  
  當應用程式執行時，您可以使用 **VSPerfCmd.exe** 選項開始和停止將資料寫入至檔案，以控制資料收集。 控制資料收集可讓您收集特定程式執行 (例如啟動或關閉應用程式) 的資料。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 11/11/2017
   
 -   下列成對的 **VSPerfCmd** 選項會開始和停止資料收集。 請在個別的命令列上指定各個選項。 您可以多次開始和停止資料收集。  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|開始 (**/globalon**) 或停止 (**/globaloff**) 所有處理序的資料收集。|  
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` **/processoff:** `PID`|開始 (**/processon**) 或停止 (**/processoff**) 對 `PID` 指定的處理序收集資料。|  
@@ -117,7 +118,7 @@ ms.lasthandoff: 11/11/2017
   
     -   關閉 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 背景工作處理序。  
   
-2.  關閉程式碼剖析工具。 鍵入：**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2.  關閉分析工具。 鍵入：**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
   
 3.  (選擇性) 清除程式碼剖析環境變數。 類型：  
   
@@ -125,6 +126,6 @@ ms.lasthandoff: 11/11/2017
   
 4.  重新啟動電腦。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)

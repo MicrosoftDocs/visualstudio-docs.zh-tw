@@ -15,16 +15,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 595297dbafb35ed8b3bb376ce5ddfee484ac2442
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: caf3c6168e81b7384fbf056f5365614950b24ff2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instrumentation-method-data-views"></a>檢測方法資料檢視
 本節包含使用檢測方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)  
  列出耗用最多時間的函式，以及執行最多個別工作的函式。  
   
@@ -57,5 +58,5 @@ ms.lasthandoff: 10/31/2017
  [資源爭用資料檢視](../profiling/resource-contention-data-views.md)  
  使用執行緒爭用方法所產生的程式碼剖析工具資料檔案之檢視和報告的參考資訊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解檢測資料值](../profiling/understanding-instrumentation-data-values.md)

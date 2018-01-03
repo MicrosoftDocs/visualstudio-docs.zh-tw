@@ -20,11 +20,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa33b329002991c5629f3d48361c6f4fa3c694e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bdc04655ccfc8ca5f6c1e45e4378f15221b99f4c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 設定用於整合式開發環境 (IDE) 內文字、貨幣和其他值的預設語言。  
@@ -37,7 +38,7 @@ devenv {/LCID|/l} LocaleID
   
 ## <a name="arguments"></a>引數  
  `LocaleID`  
- 必要項。 所指定語言的 LCID (地區設定識別碼)。  
+ 必要。 所指定語言的 LCID (地區設定識別碼)。  
   
 ## <a name="remarks"></a>備註  
  載入 IDE，並設定環境的預設自然語言。 在工作階段之間會持續保存這項變更，並在 IDE 中，將其反映在 [選項] 對話方塊中 [環境] 選項的 [國際設定] 窗格中。  
@@ -65,7 +66,7 @@ devenv {/LCID|/l} LocaleID
 devenv /LCID 1033  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [選項對話方塊、環境、國際設定](../../ide/reference/international-settings-environment-options-dialog-box.md)   
  [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

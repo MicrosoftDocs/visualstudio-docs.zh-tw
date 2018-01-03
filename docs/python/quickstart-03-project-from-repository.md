@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 1ce09377-9073-404c-9339-fa871a4b0841
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 8ba37a922c24a02d7586b9c95f57ad27a7152736
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 5ce79d4e8ff2056b5d713eaa781b22359141c9b4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入門：在 Visual Studio 中複製 Python 程式碼的存放庫
 
@@ -27,11 +27,11 @@ ms.lasthandoff: 10/31/2017
 
 2. 啟動 Visual Studio。
 
-3. 選取 [檢視] > [Team Explorer] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。
+3. 選取 [檢視] > [Team Explorer...] 以開啟 **Team Explorer** 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製存放庫。
 
     ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media/team-explorer.png)
 
-4. 在 [本機 Git 存放庫] 的 [URL] 欄位中，輸入 `https://github.com/gregmalcolm/python_koans`，並輸入所複製檔案的資料夾，然後選取 [複製]。
+4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/gregmalcolm/python_koans`，輸入複製檔案的資料夾，然後選取 [複製]。
 
     > [!Tip]
     > 您在 Team Explorer 中指定的資料夾是用來接收所複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用存放庫的名稱來建立子資料夾。
@@ -42,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 
 6. 在出現的 [新增專案] 對話方塊中，選取 [從現有 Python 程式碼]，並指定專案名稱，再將 [位置] 設定為與存放庫相同的資料夾，然後選取 [確定]。 在出現的精靈中，選取 [完成]。
 
-7. 從功能表中選取 [檢視] > **方案總管**。
+7. 從功能表中選取 [檢視] > 方案總管。
 
 8. 在方案總管中，展開 `python3` 節點，並以滑鼠右鍵按一下 `contemplate_koans.py`，然後選取 [設定為啟動檔案]。 此步驟會告訴 Visual Studio 在執行專案時應該使用哪個檔案。
 
@@ -79,5 +79,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>另請參閱
 
 - [建立現有 Python 解譯器的環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md).
-- [安裝位置](installation.md#install-locations).
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md)。
+- [安裝位置](installation.md#install-locations)。

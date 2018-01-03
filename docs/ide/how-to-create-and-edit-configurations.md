@@ -22,11 +22,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: afa939c0b8a033930f5e8e7bcc525d6f33e55f86
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ca6dfe8132603b06b9bd08655eaff3861e4700d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-and-edit-configurations"></a>如何：建立和編輯組態
 您可以為方案建立數個組建組態。 例如，您可以設定偵錯組建讓測試人員可以用來尋找和修正問題，也可以設定不同類型的組建，散發給不同的客戶。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
 
 3.  在 [專案內容] 窗格中，針對每個專案選取您要的 [組態] 和 [平台]，然後選取是否要 [建置] 它，以及是否要 [部署] 它。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [了解組建組態](../ide/understanding-build-configurations.md)   
  [在 Visual Studio 中建置和清除專案與方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [管理專案和方案屬性](managing-project-and-solution-properties.md)

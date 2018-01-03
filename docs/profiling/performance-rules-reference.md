@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec05a24a932816374766c107c1aab6f018e77cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24ae3ce7346c3fb6608a2db4faa4c57dd3399773
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-rules-reference"></a>效能規則參考
 程式碼剖析工具的效能規則提供關於應用程式效能的額外警告和資訊。 效能規則會分析從 Windows 和處理器效能計數器等來源收集到的程式碼剖析執行資料。 規則訊息會出現在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 整合式開發環境的 [錯誤輸出] 視窗。 訊息會隨下列其中一項規則層級同時列出：  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 |**警告**|警告代表您應用程式的某個區域可能是效能問題的源頭，或該區域可能會因為最佳化而受益。|  
 |**資訊**|資訊訊息代表規則條件的分析未到達產生錯誤訊息的臨界值，或是訊息中的資訊有用，但無法反映效能問題。|  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [依 ID 排序的效能規則](../profiling/performance-rules-by-id.md)  
   
  程式碼剖析工具效能規則分成四個類別︰  

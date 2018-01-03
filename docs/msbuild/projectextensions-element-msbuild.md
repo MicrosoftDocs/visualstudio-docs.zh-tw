@@ -21,11 +21,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9a53f7514f58720abfe5c2b5542b354e3255e0cc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 803cdbdf037ca46b95ac2aad9289a56e3cfcc69e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 項目 (MSBuild)
 可讓 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案檔包含非 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 的資訊。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 將會忽略 `ProjectExtensions` 內部的一切。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 ### <a name="attributes"></a>屬性  
  無  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無  
 
 ### <a name="parent-elements"></a>父項目  
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
 </ProjectExtensions>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+ [ MSBuild](../msbuild/msbuild.md)

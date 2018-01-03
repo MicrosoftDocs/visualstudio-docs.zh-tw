@@ -17,11 +17,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a13701dd85cfc2339650ec2df641ac1f5f15e75f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69bc0ae15a33cd3f7fd9b06a25a34f7dc88c083c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 取樣的初級開發人員指南
 您可以使用 Visual Studio 程式碼剖析工具來分析應用程式中的效能問題。 此程序示範如何使用 [取樣] 資料。
@@ -124,7 +125,7 @@ ms.lasthandoff: 10/31/2017
   
      新視窗隨即開啟並顯示比較結果。 如需如何使用比較檢視的詳細資訊，請參閱[如何：比較程式碼剖析工具資料檔案](../profiling/how-to-compare-performance-data-files.md)。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [快速入門](../profiling/getting-started-with-performance-tools.md)   
  [概觀](../profiling/overviews-performance-tools.md)  

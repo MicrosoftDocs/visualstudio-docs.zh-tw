@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: CSharp
-ms.openlocfilehash: 3994c7087cb26e31c5745c99a8b7678aa7e24f23
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 614e8856fa8d4c674e40703448399265f2adc456
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-coding-in-the-editor"></a>快速入門：在編輯器中編碼
 
@@ -152,7 +153,7 @@ Visual Studio 編輯器讓檢查類型、方法等等的定義變得十分輕鬆
 
 您已經完成這個 Visual Studio 編輯器快速入門！ 接下來，您可以試試看一些其他 Visual Studio IDE 快速入門、查看一些[導覽程式碼](../ide/navigating-code.md)的方式，或查看我們所查看功能之相關資訊的連結。 否則，高興撰寫程式碼！
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
 [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  

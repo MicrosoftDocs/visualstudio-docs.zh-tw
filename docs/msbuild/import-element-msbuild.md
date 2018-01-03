@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5709fc2ea456a8cfa45d8ce01e97c0c79d256c38
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 86c4b896944c3241f01329202696aa72bfd0f160
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="import-element-msbuild"></a>Import 項目 (MSBuild)
 將某個專案檔的內容匯入至另一個專案檔。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
 |`Project`|必要屬性。<br /><br /> 要匯入之專案檔的路徑。 路徑可以包含萬用字元。 相符的檔案會依排序的順序進行匯入。 使用這項功能，只要將程式碼檔案新增至目錄，就可以將程式碼新增至專案。|  
 |`Condition`|選擇性屬性。<br /><br /> 要評估的條件。 如需詳細資訊，請參閱[條件](../msbuild/msbuild-conditions.md)。|  
 
-### <a name="child-elements"></a>子項目  
+### <a name="child-elements"></a>子元素  
  無  
 
 ### <a name="parent-elements"></a>父項目  
@@ -113,6 +114,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)   
  [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

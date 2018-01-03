@@ -11,11 +11,12 @@ ms.assetid: 7c251098-00aa-49cf-9e37-5717c0c6b3f1
 caps.latest.revision: "9"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8a7524046d981b9938c9df00be7edbcfa595f0fe
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 0a0643f6e290d5be5b4d2854246d5dc95c0d731f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-excel-extension-element-classes"></a>範例 Excel 延伸模組：Element 類別
 延伸模組會使用衍生自 <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> 並代表 [!INCLUDE[ofprexcel](../test/includes/ofprexcel_md.md)] 中 Worksheet 控制項和 Cell 控制項的類別。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/27/2017
   
  `Utilities` 類別有 Helper 方法，會傳回 UI 的各種資訊。 有些方法會透過直接呼叫外部系統 DLL (例如 **USER32.DLL** 和 **OLEACC.DLL**)，從 UI 取得視窗控制代碼**。**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.IQueryElement>   
  [擴充自動程式化 UI 測試和動作記錄以支援 Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)

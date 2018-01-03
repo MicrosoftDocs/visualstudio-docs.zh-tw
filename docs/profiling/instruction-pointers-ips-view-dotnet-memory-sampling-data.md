@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c37cc7b63a8f93c3b63cdda0bb9ce460a01d195a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 193497f6fd995c8e3a31b5228675130d97641ffa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---net-memory-sampling-data"></a>指令指標 (IP) 檢視 - .NET 記憶體取樣資料
 使用取樣方法所收集之 .NET 記憶體配置分析資料的 IP 檢視，會列出已在分析回合期間配置記憶體的組件指令。 檢視的資料行也會列出配置的大小和數目。  
   
  只會列出專有值。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -44,5 +45,5 @@ ms.lasthandoff: 10/31/2017
 |**專有位元組**|指令所配置之分析回合中所配置記憶體的位元組數目。|  
 |**專有位元組 %**|指令所配置之分析回合中所配置記憶體的所有位元組百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view-sampling-data.md)

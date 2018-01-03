@@ -18,11 +18,12 @@ ms.assetid: d71a4cc1-d352-4164-8538-3f9fa070a331
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 895b2a7f8dd60cdddb2eb785a732032524174d4c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 882a21dbace4197d93a3a3c985a58a0c938e4f2a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>如何：以獨佔模式使用鍵盤
 > [!TIP]
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
 
      工具視窗會貼齊在新的固定位置。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [識別及自訂鍵盤快速鍵](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)   
  [協助工具祕訣和訣竅](../../ide/reference/accessibility-tips-and-tricks.md)   
  [預設鍵盤快速鍵](../../ide/default-keyboard-shortcuts-in-visual-studio.md)

@@ -11,11 +11,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: "11"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c3e5410769ba10a905c8116677ae5d03d0df656e
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 1612856fa4c098b5b7ff081020a84324bd5f8c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-code-coverage"></a>針對程式碼涵蓋範圍進行疑難排解
 Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Managed 組件 (.dll 或 .exe 檔) 的資料。 不過，在某些情況下，[程式碼涵蓋範圍結果] 視窗會顯示類似「產生空白的結果:....」的錯誤。有幾個可能發生這種情況的原因。 本主題有助於解決這些問題。  
@@ -39,7 +40,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  說明  
  程式碼涵蓋範圍分析會在執行測試時進行。 這項分析只包括在執行測試時載入記憶體的組件。 如果沒有執行任何測試，程式碼涵蓋範圍就不會產生任何報告。  
   
- 解決方法  
+ 解決方式  
  在 [測試總管] 中，選擇 [全部執行]，確認所執行的測試是否成功。 在使用 [分析程式碼涵蓋範圍] 之前修正所有錯誤。  
   
 ### <a name="youre-looking-at-a-previous-result"></a>您看到的是之前的結果  
@@ -92,7 +93,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  說明  
  基於效能考量，不會分析原生映像組件。 如需詳細資訊，請參閱 [Ngen.exe (原生映像產生器)](/dotnet/framework/tools/ngen-exe-native-image-generator)。  
   
- 解決方法  
+ 解決方式  
  使用組件的 MSIL 版本。 不可用 NGen 處理。  
   
 ### <a name="custom-runsettings-file-with-bad-syntax"></a>語法不正確的自訂 .runsettings 檔案  
@@ -104,7 +105,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  說明  
  您可以使用自訂 .runsettings 檔案執行單元測試．以設定程式碼涵蓋範圍選項。 這些選項可讓您包含或排除檔案。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。  
   
- 解決方法  
+ 解決方式  
  可能發生兩種類型的錯誤：  
   
 -   **XML 錯誤**  
@@ -126,7 +127,7 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  說明  
  您可以使用自訂 .runsettings 檔案執行單元測試．以設定程式碼涵蓋範圍選項。 這些選項可讓您包含或排除檔案。 如需詳細資訊，請參閱[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)。  
   
- 解決方法  
+ 解決方式  
  移除 .runsettings 檔中的所有 `Include` 節點，然後移除所有 `Exclude` 節點。 如果這樣可以解決問題，請將它們放回階段。  
   
  確定 DataCollectors 節點有指定 [程式碼涵蓋範圍]。 請將它和[自訂程式碼涵蓋範圍分析](../test/customizing-code-coverage-analysis.md)中的範例比較。  
@@ -145,5 +146,5 @@ Visual Studio 中的程式碼涵蓋範圍分析工具會收集原生組件和 Ma
  解決方式  
  無。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用程式碼涵蓋範圍來決定所測試的程式碼數量](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)

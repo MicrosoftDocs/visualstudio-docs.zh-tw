@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 94ec31194438bd02274bb6a0a222d13f1c66130b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38a04c735584722ba2cac4f608cf558aae03382a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 啟動追蹤內容。  
@@ -32,7 +33,7 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
 ```  
   
 #### <a name="parameters"></a>參數  
- [in] `intermediateDirectory`  
+ [輸入] `intermediateDirectory`  
  儲存追蹤記錄的目錄。  
   
  [in] `taskName`  
@@ -42,4 +43,4 @@ HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskN
  如已建立追蹤內容，則為 **HRESULT** 和已設定的 **SUCCEEDED** 位元。  
   
 ## <a name="requirements"></a>需求  
- **標頭：** FileTracker.h
+ **標頭：**FileTracker.h

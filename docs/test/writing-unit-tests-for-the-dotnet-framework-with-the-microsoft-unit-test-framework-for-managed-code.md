@@ -11,11 +11,12 @@ ms.assetid: fbeba971-c468-4429-8017-0f12ab55638c
 caps.latest.revision: "5"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3242c3361638651cf4760eb7971630205e5bb893
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: a41cbda0b929d1c1692b13c3a848a0d70317e9b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="writing-unit-tests-for-the-net-framework-with-the-microsoft-unit-test-framework-for-managed-code"></a>使用適用於 Managed 程式碼的 Microsoft 單元測試架構撰寫適用於 .NET Framework 的單元測試
 ## <a name="in-this-section"></a>本節內容  

@@ -12,11 +12,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561c7e12b1c8e888513b44b8fec36f8bb5e5f9fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bf92d22b3c27d23fa90b6d9be13cf4fa6604384a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="linq-to-xml-dynamic-properties"></a>LINQ to XML 動態屬性
 本節提供 LINQ to XML 之動態屬性的參考資訊。 特別是，這些屬性會由 <xref:System.Xml.Linq.XAttribute> 命名空間中的 <xref:System.Xml.Linq.XElement> 和 <xref:System.Xml.Linq> 類別公開。  
@@ -31,9 +32,9 @@ ms.lasthandoff: 10/31/2017
   
  傳回 <xref:System.Collections.Generic.IEnumerable%601> 型別之索引值的所有動態屬性都使用延緩執行。 如需延後執行的詳細資訊，請參閱 [LINQ 查詢簡介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[XAttribute 類別動態屬性](../designers/xattribute-class-dynamic-properties.md)|提供由 <xref:System.Xml.Linq.XAttribute> 類別公開之動態屬性的詳細資料。|  
 |[XElement 類別動態屬性](../designers/xelement-class-dynamic-properties.md)|提供由 <xref:System.Xml.Linq.XElement> 類別公開之動態屬性的詳細資料。|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
  <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 LINQ to XML 進行 WPF 資料繫結](../designers/wpf-data-binding-with-linq-to-xml.md)   
  [WPF 資料繫結與 LINQ to XML 概觀](../designers/wpf-data-binding-with-linq-to-xml-overview.md)   
  [LINQ 查詢簡介 (C#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)

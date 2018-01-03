@@ -11,11 +11,14 @@ ms.assetid: FFE17FC6-0B47-4A00-A125-01BD49E3873C
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 447f32c2e736084a08223b56f4188ca7c8abeea5
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: ba9de2e6af5c066e83b75576f9b104f20908aec6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-easy-tables"></a>建立簡易表
 

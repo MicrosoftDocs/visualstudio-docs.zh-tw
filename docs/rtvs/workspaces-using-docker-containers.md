@@ -16,11 +16,12 @@ ms.author:
 - kraigb
 - karthiknadig
 manager: ghogen
-ms.openlocfilehash: eb756874e6366b84a0b8f1145a41b52ac063dc02
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: 45bfebe905b9cae502247fbd0b46d9b856fb2fea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-docker-containers-with-r-tools-for-visual-studio"></a>搭配 Visual Studio R 工具使用 Docker 容器
 

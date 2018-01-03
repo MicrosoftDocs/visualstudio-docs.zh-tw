@@ -14,11 +14,12 @@ ms.assetid: db80aaf2-0652-4d3f-a8c5-2a98fd8502a2
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: a3ab1b6abf1949dd2c3a6afcca2987ebcf1594b9
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 85abc33ab5dd1253402e020c3b77c1b639e5ae44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="sample-project-for-creating-unit-tests"></a>用於建立單元測試的範例專案
 所提供的這個範例程式碼可用於下列逐步解說：  
@@ -131,7 +132,7 @@ namespace BankAccountNS
 ## <a name="working-with-the-code"></a>使用程式碼  
  若要使用此程式碼，您必須先在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中為其建立專案。 請遵循[逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)中＜準備逐步解說＞一節的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：針對 Managed 程式碼建立和執行單元測試](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)   
  [逐步解說：執行測試並檢視程式碼涵蓋範圍](http://msdn.microsoft.com/en-us/d4aab8e2-2140-4975-b4e3-41ef3fa944c8)   
  [逐步解說：使用命令列測試公用程式](http://msdn.microsoft.com/Library/52c11992-9e94-4067-a4b7-59f19d69d867)

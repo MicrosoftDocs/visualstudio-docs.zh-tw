@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7911a505494c3af0c047208660671ec3f5a8c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 548a4cedf715faf998912500bf3e2390ac07070b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pf"></a>PF
 VSPerfCmd.exe 的 **PF** 選項會將取樣的分析事件設定為分頁錯誤，並且選擇性地變更取樣間隔的分頁錯誤數目，預設值為 10。  
@@ -38,7 +39,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
   
 #### <a name="parameters"></a>參數  
  `Events`  
- 指定取樣間隔中分頁錯誤事件數目的整數值。 如未指定 `Events`，間隔會設定為 10。  
+ 指定取樣間隔中分頁錯誤事件數目的整數值。 如果未指定 `Events`，間隔會設定為 10。  
   
 ## <a name="required-options"></a>必要選項  
  **PF** 只能在包含下列其中一個選項的命令列上指定。  
@@ -72,7 +73,7 @@ VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp
 VSPerfCmd.exe /Launch:TestApp.exe /PF:20  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [對獨立應用程式進行程式碼剖析](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

@@ -22,11 +22,12 @@ caps.latest.revision: "24"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 79e8958ca5e2e75ed62da63f52bdac5b0f3b5043
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0ae1ff71e2fb304849b70222fec7a4ce85c0560
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 工作
 產生 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單或原生資訊清單。 原生資訊清單在描述元件時，會定義元件的唯一身分識別，並識別組成元件的所有組件和檔案。 透過指出應用程式的進入點並指定應用程式的安全性層級之後，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式資訊清單就可以擴充原生資訊清單。  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
 |---------------|-----------------|  
 |`AssemblyName`|選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Name` 欄位。 如果未指定此參數，會從 `EntryPoint` 或 `InputManifest` 參數來推斷名稱。 如果無法建立名稱，工作便會擲回錯誤。|  
 |`AssemblyVersion`|選擇性的 `String` 參數。<br /><br /> 針對產生的資訊清單指定組件識別的 `Version` 欄位。 如果未指定此參數，就會使用 "1.0.0.0" 的預設值。|  
-|`ClrVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小 Common Language Runtime (CLR) 版本。 預設值是建置系統所使用的 CLR 版本。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
+|`ClrVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小 Common Language Runtime (CLR) 版本。 預設值是建置系統所使用的 CLR 版本。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`ConfigFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定包含應用程式組態檔的項目。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
 |`Dependencies`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定項目清單，這份清單會為所產生的資訊清單定義一組相依組件。 每個項目都可以利用項目中繼資料進一步描述，以指出其他部署狀態和相依性的類型。 如需詳細資訊，請參閱以下的＜項目中繼資料＞一節。|  
 |`Description`|選擇性的 `String` 參數。<br /><br /> 指定應用程式或元件的描述。|  
@@ -47,11 +48,11 @@ ms.lasthandoff: 10/31/2017
 |`FileAssociations`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定與 ClickOnce 部署資訊清單建立關聯之一或多個檔案類型的清單。<br /><br /> 檔案關聯只有在 .NET Framework 3.5 或更新版本設為目標時才有效。|  
 |`Files`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 要包含在資訊清單中的檔案。 指定每個檔案的完整路徑。|  
 |`HostInBrowser`|選擇性的 <xref:System.Boolean> 參數。<br /><br /> 如果為 `true`，表示應用程式是裝載於瀏覽器中 (與 WPF 網頁瀏覽器應用程式相同)。|  
-|`IconFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 表示應用程式圖示檔。 應用程式圖示會在產生的應用程式資訊清單中顯示，並在 [開始] 功能表和 [新增/移除程式] 對話方塊中使用。 如果未指定這項輸入，便會使用預設圖示。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
+|`IconFile`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 表示應用程式圖示檔。 應用程式圖示會在產生的應用程式資訊清單中顯示，並在 [開始] 功能表和 [新增/移除程式] 對話方塊中使用。 如果未指定這項輸入，便會使用預設圖示。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`InputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 參數。<br /><br /> 指出要作為資訊清單產生器基底的輸入 XML 文件。 這可讓結構化資料 (例如應用程式安全性或自訂資訊清單定義) 能夠反映在輸出資訊清單中。 XML 文件中的根元素必須是 asmv1 命名空間中的組件節點。|  
 |`IsolatedComReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。<br /><br /> 指定要在所產生資訊清單中隔離的 COM 元件。 這個參數支援可在「免註冊的 COM」部署中隔離 COM 元件的功能。 其運作方式是利用標準的 COM 註冊定義來自動產生資訊清單。 不過，必須在建置電腦上註冊 COM 元件，才能讓這項功能正常運作。|  
 |`ManifestType`|選擇性的 `String` 參數。<br /><br /> 指定要產生的資訊清單類型。 此參數的值如下：<br /><br /> -   `Native`<br />-   `ClickOnce`<br /><br /> 如果未指定此參數，工作會預設為 `ClickOnce`。|  
-|`MaxTargetPath`|選擇性的 `String` 參數。<br /><br /> 指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署中允許的檔案路徑長度上限。 如果指定這個值，則會根據這項限制來檢查應用程式中的每個檔案路徑長度。 任何超過限制的項目都會引發建置警告。 如果這項輸入未指定或為零，則不會執行任何檢查。 如果工作是要產生原生資訊清單，則會忽略此參數。|  
+|`MaxTargetPath`|選擇性的 `String` 參數。<br /><br /> 指定 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 應用程式部署中允許的檔案路徑長度上限。 如果指定這個值，則會根據這項限制來檢查應用程式中的每個檔案路徑長度。 任何超過限制的項目都會引發建置警告。 如果這項輸入未指定或為零，則不會執行任何檢查。 如果工作要產生原生資訊清單，則會忽略此參數。|  
 |`OSVersion`|選擇性的 `String` 參數。<br /><br /> 指定應用程式所需的最小必要作業系統 (OS) 版本。 例如，"5.1.2600.0" 的值表示作業系統是 Windows XP。 如果未指定此參數，便會使用表示 Windows 98 Second Edition 的值 "4.10.0.0"，也就是 .NET Framework 支援的最小 OS 版本。 如果工作是要產生原生資訊清單，則會忽略這項輸入。|  
 |`OutputManifest`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem> 輸出參數。<br /><br /> 指定所產生的輸出資訊清單檔名稱。 如果未指定此參數，會從產生的資訊清單識別來推斷輸出檔的名稱。|  
 |`Platform`|選擇性的 `String` 參數。<br /><br /> 指定應用程式的目標平台。 此參數的值如下：<br /><br /> -   `AnyCPU`<br />-   `x86`<br />-   `x64`<br />-   `Itanium`<br /><br /> 如果未指定此參數，工作會預設為 `AnyCPU`。|  
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="item-metadata"></a>項目中繼資料  
   
-|中繼資料名稱|說明|  
+|中繼資料名稱|描述|  
 |-------------------|-----------------|  
 |`DependencyType`|指出相依性是以應用程式或必要條件進行發行和安裝。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Install`<br />-   `Prerequisite`<br /><br /> Install 是預設值。|  
 |`AssemblyType`|指出相依性為 Managed 或原生組件。 這項中繼資料可用於所有相依性，但不能用於檔案。 此中繼資料可用的值如下：<br /><br /> -   `Managed`<br />-   `Native`<br />-   `Unspecified`<br /><br /> `Unspecified` 是預設值，表示資訊清單產生器將會自動決定組件類型。|  
@@ -351,7 +352,7 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [GenerateDeploymentManifest 工作](../msbuild/generatedeploymentmanifest-task.md)   
  [SignFile 工作](../msbuild/signfile-task.md)   

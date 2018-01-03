@@ -12,11 +12,12 @@ ms.assetid: 6b491d88-f79e-4686-8841-857624bdcfda
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: a4ac0c709f2b7f9dfded7c6781dda9831e457fa5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4cfc07cb77e1db595d1b381b1097dcfcba0abdab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Visual Studio 協助工具祕訣和訣竅
 > [!TIP]
@@ -89,11 +90,11 @@ Visual Studio IDE 工具列的作用與許多工具視窗相同。 下列快速�
 
   ![Windows 10 音效小程式的 [音效] 索引標籤](media/sound-applet.png "按兩下搜尋結果中的 [變更系統音效]")
 
-4. 按一下 [確定]。
+4. 按一下 [確定 **Deploying Office Solutions**]。
 
 
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 * [Visual Studio 的協助工具功能](../../ide/reference/accessibility-features-of-visual-studio.md)
   * [如何：在 Visual Studio 中自訂功能表和工具列](../../ide/how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * [將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)

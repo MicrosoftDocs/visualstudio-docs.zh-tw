@@ -17,11 +17,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 463caf59bcc11c109ad42cba45b57818fa0960ec
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 496cd3c2c6d92e5db591c09bf4d0d5ec645e4c79
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="replace-in-files"></a>檔案中取代
 
@@ -97,7 +98,7 @@ ms.lasthandoff: 12/07/2017
 > [!CAUTION]
 > 只有在保持開啟可供編輯的檔案中，才可以使用 [復原]。 如果未選取這個選項，則未開啟以供編輯的檔案將會保持關閉狀態，其中也不會出現 [復原] 選項。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [尋找和取代文字](../ide/finding-and-replacing-text.md)  
 [檔案中尋找](../ide/find-in-files.md)  

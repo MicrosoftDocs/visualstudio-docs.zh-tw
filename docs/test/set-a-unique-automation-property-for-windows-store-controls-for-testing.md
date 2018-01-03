@@ -11,11 +11,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: "10"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3038f70405239d69f0924be022040bcc8c7db9a4
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: 6f7b32031d99b6286595ca5ef05215fc88b20ea2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-a-unique-automation-property-for-uwp-controls-for-testing"></a>為 UWP 控制項設定唯一自動化屬性以進行測試
 如果您想要執行以 XAML 為基礎的 UWP 應用程式的自動程式化 UI 測試，則必須具有可識別每個控制項的唯一自動化屬性。  
@@ -202,5 +203,5 @@ private void CreateCheckBox(string txt, StackPanel panel)
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用自動程式化 UI 測試來測試 Windows UWP App](../test/test-windows-store-8-1-apps-with-coded-ui-tests.md)

@@ -23,11 +23,12 @@ caps.latest.revision: "47"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bee8bdc56586f1c79ff10d8d2b70e30801f54254
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 3c0bc7195fd862d5131a4a70b4e59ecea2afc0bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析通用 Windows App 中 HTML UI 的回應性
 本主題描述如何使用 UI 回應性分析工具隔離應用程式中的效能問題。該效能工具可供通用 Windows App 使用。  
@@ -333,18 +334,18 @@ if (performance.mark && performance.measure) {
 |事件|事件分類|發生於|  
 |-----------|--------------------|-----------------|  
 |CSS 剖析中|正在載入|遇到新的 CSS 內容，而且嘗試剖析 CSS 內容。|  
-|HTML 剖析中|正在載入|遇到新的 HTML 內容，而且嘗試將內容剖析成節點和將內容插入至 DOM 樹狀目錄。|  
-|HTTP 要求|正在載入|在 DOM 中找到遠端資源，或因建立 XMLHttpRequest 而產生 HTTP 要求。|  
-|理論式下載|正在載入|在頁面的 HTML 內容中搜尋所需的資源，以便資源的後續 HTTP 要求可以迅速排程。|  
-|動畫畫面格回呼函式|正在處理指令碼|瀏覽器即將要呈現另一個畫面格，因此觸發應用程式提供的回呼函式。|  
-|DOM 事件|正在處理指令碼|已發生且執行 DOM 事件。<br /><br /> DOM 事件 (例如 `context` 或  `DOMContentLoaded` ) 的 `click`屬性顯示在括號中。|  
-|事件接聽程式|正在處理指令碼|已呼叫且執行事件接聽程式。|  
+|HTML 剖析中|載入中|遇到新的 HTML 內容，而且嘗試將內容剖析成節點和將內容插入至 DOM 樹狀目錄。|  
+|HTTP 要求|載入中|在 DOM 中找到遠端資源，或因建立 XMLHttpRequest 而產生 HTTP 要求。|  
+|理論式下載|載入中|在頁面的 HTML 內容中搜尋所需的資源，以便資源的後續 HTTP 要求可以迅速排程。|  
+|動畫畫面格回呼函式|指令碼|瀏覽器即將要呈現另一個畫面格，因此觸發應用程式提供的回呼函式。|  
+|DOM 事件|指令碼|已發生且執行 DOM 事件。<br /><br /> DOM 事件 (例如 `context` 或  `DOMContentLoaded` ) 的 `click`屬性顯示在括號中。|  
+|事件接聽程式|指令碼|已呼叫且執行事件接聽程式。|  
 |媒體查詢接聽程式|正在處理指令碼|已註冊的媒體查詢失效，因而會執行其相關聯的接聽程式。|  
 |變動觀察者|正在處理指令碼|一或多個受觀察的 DOM 項目已修改，因而會執行 MutationObserver 的關聯回呼。|  
-|指令碼評估|正在處理指令碼|在 DOM 中找到新的 SCRIPT 項目，而且嘗試剖析和執行指令碼。|  
-|計時器|正在處理指令碼|排程計時器已過，這會導致執行其關聯的回呼函式。|  
-|Windows 執行階段非同步回呼函式|正在處理指令碼|觸發 `Promise` 回呼函式的非同步作業，已經由 Windows 執行階段物件完成。|  
-|Windows 執行階段錯誤|正在處理指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|  
+|指令碼評估|指令碼|在 DOM 中找到新的 SCRIPT 項目，而且嘗試剖析和執行指令碼。|  
+|計時器|指令碼|排程計時器已過，這會導致執行其關聯的回呼函式。|  
+|Windows 執行階段非同步回呼函式|指令碼|觸發 `Promise` 回呼函式的非同步作業，已經由 Windows 執行階段物件完成。|  
+|Windows 執行階段錯誤|指令碼|在 Windows 執行階段物件中發生的事件，觸發已註冊的接聽程式。|  
 |記憶體回收|GC|花費時間收集不再使用之物件的記憶體。|  
 |CSS 計算|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的樣式屬性。|  
 |配置|樣式|對 DOM 進行變更，導致必須重新計算所有受影響項目的大小和 (或) 位置。|  
@@ -362,5 +363,5 @@ if (performance.mark && performance.measure) {
   
 -   如需單執行緒程式碼執行模型和效能的相關資訊，請參閱 [執行程式碼](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析工具](../profiling/profiling-tools.md)

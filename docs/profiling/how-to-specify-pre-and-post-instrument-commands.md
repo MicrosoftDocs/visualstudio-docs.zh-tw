@@ -17,11 +17,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7daf63f27d9c285c126e437f55d25ff674d7360f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ebd5ff13eec62eae238b126efd7001b1f6348551
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定檢測前置和檢測後續命令
 您可以指定要在檢測效能工作階段中的二進位檔之前或之後執行的命令。 任何可從命令列發出的命令都可以指定為檢測前置或檢測後續事件。 例如，您可以在檢測二進位檔之後執行的批次檔中，指定使用強式名稱金鑰自動重新簽署組件的命令。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。  
   
@@ -84,9 +85,9 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  您可以按一下 [命令列] 方塊旁的省略符號按鈕 **(...)**，以瀏覽並選取適當的 .exe、.cmd 或 .bat 檔案。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      若要停止執行命令但不將它移除，請選取 [從檢測中排除] 核取方塊。 若要修改編譯器或連結器設定，請使用專案屬性頁。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)

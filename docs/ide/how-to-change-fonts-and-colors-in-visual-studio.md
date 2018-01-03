@@ -15,11 +15,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0ed7705b2c32b64ba242333ae68057c60ae2a870
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ccfb4f178fa2e6db89b9ebaf16ca1f072cfc8720
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>如何：變更 Visual Studio 中的字型和色彩
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 11/22/2017
 
 1. 在 [大小] 清單中，選擇文字大小，然後選擇 [確定] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)  
 [如何：變更編輯器中的字型和色彩](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

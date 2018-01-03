@@ -10,11 +10,12 @@ ms.topic: article
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0a239fa0f96b1552e72fe7501ae7a6fd5ef28025
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 8f56e834e6c2b80706e4ed1d1a91583e1015791b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>How to: Track Your Code by Customizing the Scrollbar
 
@@ -56,6 +57,6 @@ ms.lasthandoff: 12/07/2017
 
     如果您想要保留地圖模式捲動行為和預覽工具提示，但不想看到原始程式碼概觀，可以將 [原始檔概觀] 設定為 [關閉]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

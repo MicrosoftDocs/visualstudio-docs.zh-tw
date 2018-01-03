@@ -11,11 +11,14 @@ ms.assetid: BAE62C27-CA7A-4466-8738-3DB880221CE1
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: 4e1cf47420cafda2552cdbb625d6d41626c32971
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 25424ea06c01224bb1b35f783be82a857b991adf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-easy-tables-in-azure"></a>在 Azure 中設定簡易表
 

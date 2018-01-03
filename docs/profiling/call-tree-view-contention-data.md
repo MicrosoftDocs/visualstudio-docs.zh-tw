@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41bf306b96db2b3aa00fff1bdcc8562823cd9d98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c829f11efd5eddda0ea819422856cb2bcc30c2ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="call-tree-view---contention-data"></a>呼叫樹狀圖檢視 - 爭用資料
 [呼叫樹狀圖] 檢視顯示在分析的應用程式中周遊的函式執行路徑。 樹狀圖的根是應用程式或元件的進入點。 每個函式節點都會列出它呼叫的所有函式，以及因函式與其他執行緒或處理序爭用資源而遭封鎖的次數和時間長度。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
  設定根節點時，除了所選取節點的樹狀子目錄以外，會從檢視中排除所有其他的項目。 若要將根節點重設回原始節點，在 [呼叫樹狀圖] 檢視上按一下滑鼠右鍵，然後按一下 [重設根目錄]。  
   
-|資料行|說明|  
+|資料行|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|在此執行路徑中，此函式的執行個體遭到封鎖而無法在執行程式碼剖析期間執行的時間。 此時間不包括函式所呼叫的子函式封鎖時間。|  
 |**專有封鎖時間 %**|執行程式碼剖析期間，屬於此執行路徑中此函式的專有封鎖時間佔所有封鎖時間的百分比。|  
@@ -54,7 +55,7 @@ ms.lasthandoff: 10/31/2017
 |**處理序名稱**|處理序的名稱。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [呼叫樹狀圖檢視](../profiling/call-tree-view.md)   
  [呼叫樹狀圖檢視 - 檢測](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   

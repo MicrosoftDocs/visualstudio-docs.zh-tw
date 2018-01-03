@@ -10,11 +10,12 @@ ms.topic: article
 ms.assetid: 84575412-1de7-4e53-811d-ae035eb21d13
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3eff65b7a70c29adf39eda32805e0773255ba61
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: ac5389640c486d5b886454c15dc0e979c0683caf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中撰寫 C++ DLL 的單元測試
 
@@ -156,11 +157,11 @@ ms.lasthandoff: 11/15/2017
   
 2.  在測試總管中，選擇 [全部執行]，或選取您要執行的特定測試。 以滑鼠右鍵按一下測試即可顯示其他選項，包括在啟用中斷點的偵錯模式中執行測試。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
 
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)   
  [Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考](../test/microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)   

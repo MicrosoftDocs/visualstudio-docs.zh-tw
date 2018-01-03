@@ -15,11 +15,12 @@ caps.latest.revision: "42"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bf15a647c2dcd3f99afd476607fcdf48c2865a7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8529bc4cc9708ea58a0480d61327c50c96c996fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 中程式碼剖析工具的新功能
 診斷工具所包含的新視覺效果可協助您識別 App 中需要修正的問題。 診斷工具現已支援 ASP.NET App。
@@ -34,6 +35,6 @@ CPU 使用量工具有[新的視覺效果](../profiling/Beginners-Guide-to-Perfo
 
 ![診斷工具的呼叫端被呼叫端檢視](../profiling/media/DiagToolsCallerCallee.png "DiagToolsCallerCallee")
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)

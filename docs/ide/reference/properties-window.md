@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb5030a6f70851e46ab7d8df081cfe94ed35c2c1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6f01347eb3410940f96a4ac966cf4f5e466ed964
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="properties-window"></a>屬性視窗
 使用這個視窗來檢視和變更設計階段屬性，以及位於編輯器和設計工具中的選定物件的事件。 您也可以使用 [屬性] 視窗來編輯和檢視檔案、專案和解決方案屬性。 您可以在 [檢視] 功能表上找到 [屬性] 視窗。 您也可以按 F4 或在 [快速啟動] 視窗中鍵入 **Properties** 來開啟它。  
@@ -84,6 +85,6 @@ ms.lasthandoff: 10/31/2017
  搜尋  
  提供在設計工具中編輯 XAML 檔案時，屬性和事件的搜尋功能。 [搜尋] 方塊會回應部分文字搜尋，並在您鍵入時更新搜尋結果。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案屬性參考](../../ide/reference/project-properties-reference.md)   
  [自訂視窗版面配置](../../ide/customizing-window-layouts-in-visual-studio.md)

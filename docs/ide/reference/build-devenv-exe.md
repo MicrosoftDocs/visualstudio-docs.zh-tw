@@ -17,11 +17,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 490c3c4f424d9a8bac2fb0d4042604f8a53439fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8eba6684167e4b60f02512e9b0fc1c7dc514a614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 使用指定的方案組態檔建置方案。  
@@ -34,10 +35,10 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
   
 ## <a name="arguments"></a>引數  
  `SolutionName`  
- 必要項。 方案檔的完整路徑和名稱。  
+ 必要。 方案檔的完整路徑和名稱。  
   
  `SolnConfigName`  
- 必要項。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。  
+ 必要。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。  
   
  /project `ProjName`  
  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
@@ -61,7 +62,7 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在 Visual Studio 中建置和清除專案與方案](../../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   

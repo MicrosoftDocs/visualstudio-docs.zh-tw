@@ -13,11 +13,12 @@ caps.latest.revision: "33"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 46df0fc4be6abf639f939b5145765f0ba41b0b8c
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e77803150d747d05d8f6b0002814010c45244282
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="property-functions"></a>屬性函式
 在 .NET Framework 第 4 和 4.5 版中，屬性函式可用於評估 MSBuild 指令碼。 屬性函式可用於屬性出現的任何位置。 與工作不同，屬性函式可用於目標外部，並在執行任何目標之前，先進行評估。  
@@ -338,6 +339,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [MSBuild 屬性](../msbuild/msbuild-properties.md)   
 [MSBuild 概觀](../msbuild/msbuild.md)

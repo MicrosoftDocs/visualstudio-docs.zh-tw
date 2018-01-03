@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eacea655fe24b497b6bf9caa699e03cac99103d8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 794a853db12f106e8f7002d93bca798d45bb582c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>如何：使用並行視覺化檢視標記 SDK
 本主題說明如何使用並行視覺化檢視 SDK 建立範圍和寫入旗標、訊息和警示。  
@@ -179,5 +180,5 @@ ms.lasthandoff: 10/31/2017
   
      ![包含 3 個自訂標記系列的並行視覺化檢視](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

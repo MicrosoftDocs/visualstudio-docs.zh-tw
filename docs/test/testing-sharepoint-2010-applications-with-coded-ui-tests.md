@@ -11,11 +11,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: "30"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: d3ba0b9ce4366efd386d0b5c1b4d9c3f0094511b
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4cf5eac9600be44405142666e1f94408c44b0a13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>使用自動程式化 UI 測試來測試 SharePoint 2010 應用程式
 在 SharePoint 應用程式中包含自動程式碼 UI 測試，可讓您驗證整個應用程式 (包括其 UI 控制項) 是否正常運作。 自動程式碼 UI 測試也可以驗證使用者介面中的值和邏輯。  
@@ -143,7 +144,7 @@ uiGridKeyboardInputEdit.Text=value;
 ### <a name="forum"></a>論壇  
  [Visual Studio ALM + Team Foundation Server 部落格 (英文)](http://go.microsoft.com/fwlink/?LinkID=254496)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [對 SharePoint 2010 和 2013 應用程式執行 Web 效能和負載測試](/devops-test-docs/test/web-performance-and-load-testing-sharepoint-2010-and-2013-applications)   
  [建立 SharePoint 方案](/office-dev/office-dev/create-sharepoint-solutions)   

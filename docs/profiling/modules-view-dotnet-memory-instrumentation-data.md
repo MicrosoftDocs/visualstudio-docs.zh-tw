@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7d0346732de89fcc08c0f3604e8a66fa1fd7acdb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e67b1676495b6217a6134bc7e0f3f4cf74b1faf6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---net-memory-instrumentation-data"></a>模組檢視 - .NET 記憶體檢測資料
 使用檢測方法收集的 .NET 記憶體檢測資料 [模組] 檢視，會將記憶體和計時資料依據分析執行中所執行的模組來分類。 模組函式的分析資料會列在模組節點下。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|函式或模組的名稱。|  
+|**名稱**|函式或模組的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
 |**呼叫次數**|呼叫此函式或模組的總次數。|  
 |**原始程式檔**|包含此函式定義的原始程式檔。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|-   對於函式，這是在函式中花費的時間。 此時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間長度。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在此模組或函式的總功能內含耗用時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -78,9 +79,9 @@ ms.lasthandoff: 10/31/2017
 |**最小功能專屬耗用 (Elapsed Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小功能專屬耗用時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小功能專屬耗用時間。|  
   
 ## <a name="application-inclusive-values"></a>應用程式內含值  
- 應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
+ 應用程式內含值表示函數在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|-   對於函式，這是呼叫函式所花費的時間。 這包含在子函式中花費的時間，但排除呼叫作業系統 (例如內容切換和輸入/輸出作業) 的時間。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間，排除呼叫作業系統的時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在此模組或函式的應用程式內含時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 |**最大應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的最大應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最大應用程式專屬時間。|  
 |**最小應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小應用程式專屬時間。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)   
  [模組檢視](../profiling/modules-view-sampling-data.md)

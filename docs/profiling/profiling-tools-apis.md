@@ -12,16 +12,17 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 70892fc115767ede7d9ba23bf0fff5981ad12962
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b02eecfaaecb365519daa8cd59fd29252bc3340f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-tools-apis"></a>程式碼剖析工具 API
 您可以插入 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具 API 的 Managed 或原生方法，來控制程式碼剖析執行時收集的資料。 本節描述 API 方法並說明如何使用它們。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)  
  描述 ++ 程式碼剖析工具的方法。  
   
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-sections"></a>相關章節  
  [控制資料收集](../profiling/controlling-data-collection.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)

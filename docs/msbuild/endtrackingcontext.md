@@ -16,11 +16,12 @@ caps.latest.revision: "3"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 39313dd4bec3e5111aee588422080657d5a897d6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 976b6af01b26d6fb8738d1d418b09fb04a61c5c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 結束目前追蹤內容。  
@@ -37,5 +38,5 @@ HRESULT WINAPI EndTrackingContext();
 ## <a name="requirements"></a>需求  
  **標頭：**FileTracker.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)

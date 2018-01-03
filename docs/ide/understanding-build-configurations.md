@@ -29,11 +29,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 003e4abaf5e6fbabead604c495b2018402cf74ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cf3f299f2b5ec2e38b5fe0315b6d0abc0411b12
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-build-configurations"></a>了解組建組態
 您可以儲存不同的方案和專案屬性組態，以用於不同類型的組建。 若要建立、選取、修改或刪除組態，您可以使用 [組態管理員]。 若要開啟組態，請在功能表列上，依序選擇 [建置]、[組態管理員]，或直接在 [快速啟動] 方塊中鍵入**組態**。 您也可以使用 [標準] 工具列上的 [方案組態] 清單，來選取組態或開啟 [組態管理員]。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 -   如果專案支援多個平台，則會為每個支援的平台找到或加入一個方案組態。 每個方案組態的名稱包含專案組態名稱和平台名稱，並且採用 *\<專案組態名稱> \<平台名稱>* 格式。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：建置應用程式](../ide/walkthrough-building-an-application.md)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [專案和方案](../ide/solutions-and-projects-in-visual-studio.md)   

@@ -12,16 +12,17 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48e733a49617b55d2f09f7782c87c9160124ccd6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 00ec00f549198972714e95d9c586b0a3e30f2ffb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="overviews-performance-tools"></a>概觀 (效能工具)
 本節提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具的概念與術語概觀；您可以使用這套工具來測量開發中應用程式的效能特性。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [效能工作階段概觀](../profiling/performance-session-overview.md)  
  學習使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具進行效能分析的基本概念。  
   
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
  [分析和 Windows Vista 安全性](../profiling/profiling-and-windows-vista-security.md)  
  了解在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 上收集取樣資料以及剖析跨工作階段應用程式時，可能會遇到的問題與必須執行的步驟。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用者入門](../profiling/getting-started-with-performance-tools.md)   
  [效能總管](../profiling/performance-explorer.md)

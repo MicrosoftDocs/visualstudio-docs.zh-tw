@@ -19,11 +19,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f174223900b6f8deba2291a80425df1c77589ce1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c730169988d931d3e1e57dd22f2793b1f8a16a72
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="process-view"></a>處理序檢視
 處理序檢視顯示程式碼剖析執行期間所執行處理序和執行緒的程式碼剖析資料。  
@@ -34,15 +35,15 @@ ms.lasthandoff: 10/31/2017
   
  使用取樣和檢測方法所產生的資料和包括.NET 記憶體資料在內的資料，其處理序檢視的資料行都相同。 下表說明資料行的值。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**唯一 ID**|分析工具產生的唯一處理程序或執行緒識別碼。|  
 |**ID**|系統產生的處理序或執行緒識別碼。|  
-|**Name**|處理序或執行緒的名稱。|  
+|**名稱**|處理序或執行緒的名稱。|  
 |**開始時間**|從程式碼剖析開始到處理序或執行緒開始的毫秒數或處理器週期數。|  
 |**結束時間**|從程式碼剖析開始到處理序或執行緒結束的毫秒數或處理器週期數。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [取樣方法資料檢視](../profiling/profiler-sampling-method-data-views.md)   
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)   
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

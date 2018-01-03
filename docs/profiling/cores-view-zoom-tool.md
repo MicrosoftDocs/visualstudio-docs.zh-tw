@@ -14,11 +14,12 @@ caps.latest.revision: "5"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 16df4a6823bfb23847cd49b97d7b4a29edf0fa4b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da3598568d0f607e37a3d42fbb080f0a70dfda57
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-zoom-tool"></a>核心檢視縮放工具
 [縮放] 控制項是可讓您放大和縮小時間軸的滑桿，以專注在特別感興趣的區域。 此控制項會放大目前檢視的中心，以在放大之前調整檢視。  
@@ -29,5 +30,5 @@ ms.lasthandoff: 10/31/2017
   
 -   放大和縮小：將滑鼠指標放在時間軸上方，然後在移動滑鼠滾輪時按 CTRL 鍵。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心檢視](../profiling/cores-view.md)

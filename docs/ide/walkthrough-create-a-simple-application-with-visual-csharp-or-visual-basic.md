@@ -15,36 +15,29 @@ caps.latest.revision: "19"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 44429ccde6dece8ff0b8a0c41fd4cff328d1160f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3490d9d4f88bbcc104132e35c3f86d3fe75622b5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式
-藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您了解整合式開發環境 (IDE) 的運作時，您將會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。  
-  
- 此主題包括下列章節：  
-  
- [設定 IDE](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_ConfigureIDE)  
-  
- [建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_CreateApp)  
-  
- [偵錯和測試應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
+藉由完成這個逐步解說，讓自己更熟悉許多可在使用 Visual Studio 開發應用程式時運用的工具、對話方塊和設計工具。 當您了解整合式開發環境 (IDE) 的運作時，您將會建立簡單的 "Hello, World" 應用程式、設計 UI、新增程式碼，以及進行偵錯。
   
 ##  <a name="BKMK_ConfigureIDE"></a> 設定 IDE  
 當您第一次啟動 Visual Studio 時，系統會提示您登入。 在此逐步解說中為選擇性步驟。 接下來您可能會看到對話方塊，要求您選擇開發設定和色彩佈景主題。 保留預設值，然後選擇 [啟動 Visual Studio]。  
 
 ![選擇 [設定] 對話方塊](../ide/media/exploreide-settings.png "exploreide-settings")
   
- Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。  
+Visual Studio 啟動後，您會看到工具視窗、功能表和工具列，以及主視窗空間。 工具視窗會停駐在應用程式視窗的左右端，同時 [ **快速啟動**]、功能表列和標準工具列則位於視窗的上方。 位於應用程式視窗中央的是 [ **起始頁**]。 當您載入方案或專案時，編輯器和設計工具會出現在 [起始頁]  所在的空間中。 在開發應用程式時，您大部分時間都會在此中央區域工作。  
   
- ![已套用一般設定的 IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
+![已套用一般設定的 IDE](../ide/media/exploreide-idewithgeneralsettings.png "ExploreIDE-IDEwithgeneralsettings")  
   
 ##  <a name="BKMK_CreateApp"></a> 建立簡單的應用程式  
   
 ### <a name="create-the-project"></a>建立專案  
- 當您在 Visual Studio 中建立應用程式時，您需要先建立一個專案和一個方案。 在這個範例中，您將建立 Windows Presentation Foundation (WPF) 專案。  
+當您在 Visual Studio 中建立應用程式時，您需要先建立一個專案和一個方案。 在這個範例中，您將建立 Windows Presentation Foundation (WPF) 專案。  
   
 #### <a name="to-create-the-wpf-project"></a>若要建立 WPF 專案  
   
@@ -56,11 +49,11 @@ ms.lasthandoff: 10/31/2017
   
      ![建立 C# WPF 專案 HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
- Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 WPF Designer 會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱[適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。下列項目會在 **方案總管**中出現：  
+Visual Studio 會建立 HelloWPFApp 專案和方案，而且**方案總管**會顯示各種不同檔案。 WPF Designer 會在分割檢視中顯示 MainWindow.xaml 的設計檢視和 XAML 檢視。 您可以滑動分隔器來增加或減少顯示任一檢視。  您可以選擇只查看視覺檢視，或只查看 XAML 檢視。 (如需詳細資訊，請參閱[適用於 Windows Form 開發人員的 WPF 設計工具](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca))。下列項目會在 **方案總管**中出現：  
   
- ![已載入 HelloWPFApp 檔案的方案總管](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
+![已載入 HelloWPFApp 檔案的方案總管](../ide/media/exploreide-hellowpfappfiles.png "ExploreIDE-HelloWPFAppFiles")  
   
- 建立專案之後，您可以進行自訂。 使用 [屬性]  視窗 (在 [檢視]  功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。  
+建立專案之後，您可以進行自訂。 使用 [屬性]  視窗 (在 [檢視]  功能表上)，就可以顯示和變更應用程式中的專案項目、控制項及其他項目的選項。  
   
 #### <a name="to-change-the-name-of-mainwindowxaml"></a>變更 MainWindow.xaml 的名稱  
 讓我們給 MainWindow 一個更具體的名稱。  
@@ -73,7 +66,7 @@ ms.lasthandoff: 10/31/2017
      **方案總管**現在顯示的檔案名稱是 Greetings.xaml，而巢狀程式碼檔案的名稱現在是 Greetings.xaml.vb 或 Greetings.xaml.cs。 這個程式碼檔案套疊在.xaml 檔案節點下，顯示它們彼此密切相關。  
   
 ### <a name="design-the-user-interface-ui"></a>設計使用者介面 (UI)  
- 我們會將三種類型的控制項加入至這個應用程式：一個 TextBlock 控制項、兩個 RadioButton 控制項和一個 Button 控制項。  
+我們會將三種類型的控制項加入至這個應用程式：一個 TextBlock 控制項、兩個 RadioButton 控制項和一個 Button 控制項。  
   
 #### <a name="to-add-a-textblock-control"></a>加入 TextBlock 控制項  
   
@@ -85,16 +78,16 @@ ms.lasthandoff: 10/31/2017
   
 3.  選擇 TextBlock 項目並將它拖曳至設計介面上的視窗，即可將 **TextBlock** 控制項加入設計介面。 將控制項置中靠近視窗頂端。  
   
- 您的視窗應該會和下圖類似：  
+您的視窗應該會和下圖類似：  
   
- ![問候表單上的 TextBlock 控制項](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
+![問候表單上的 TextBlock 控制項](../ide/media/exploreide-greetingswithtextblockonly.png "ExploreIDE-GreetingswithTextblockonly")  
   
- XAML 標記應該看起來與下列程式碼範例相似：  
+XAML 標記應該看起來與下列程式碼範例相似：  
   
-     ```xaml  
-     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
-     ```  
-  
+```xaml  
+<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>  
+```  
+
 #### <a name="to-customize-the-text-in-the-text-block"></a>自訂文字方塊中的文字  
   
 1.  在 XAML 檢視中，找出 TextBlock 的標記並變更 Text 屬性：  
@@ -158,7 +151,7 @@ IsChecked="True"
      ![具有控制項標籤的問候表單](../ide/media/exploreide-greetingswithconrollabels.png "ExploreIDE-Greetingswithconrollabels")  
   
 ### <a name="add-code-to-the-display-button"></a>將程式碼加入至 Display Button  
- 此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 Button_Click 事件。  
+此應用程式執行時，會在使用者選擇選項按鈕並選擇 [顯示] 按鈕之後顯示訊息方塊。 一個訊息方塊會顯示 Hello，而另外一個會顯示 Goodbye。 若要建立這個行為，您必須將程式碼新增至 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 Button_Click 事件。  
   
 #### <a name="add-code-to-display-message-boxes"></a>加入程式碼以顯示訊息方塊    
 1.  在設計介面上，按兩下 [ **顯示** ] 按鈕。  
@@ -201,10 +194,10 @@ IsChecked="True"
 3.  儲存應用程式。  
   
 ##  <a name="BKMK_DebugTest"></a> 偵錯和測試應用程式  
- 接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀[建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和[偵錯 WPF](../debugger/debugging-wpf.md) 以取得詳細資訊。  
+接下來，您會偵錯應用程式以尋找錯誤，並測試兩個訊息方塊是否都正確出現。 下列指示會告訴您如何建置和啟動偵錯工具，不過您稍後也可閱讀 [建置 WPF 應用程式 (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf) 和 [Debugging WPF](../debugger/debugging-wpf.md) 以取得詳細資訊。  
   
 ### <a name="find-and-fix-errors"></a>尋找和修正錯誤  
- 在這個步驟中，您會發現我們先前變更 MainWindow.xaml 檔案名稱所產生的錯誤。  
+在這個步驟中，您會發現我們先前變更 MainWindow.xaml 檔案名稱所產生的錯誤。  
   
 #### <a name="to-start-debugging-and-find-the-error"></a>開始偵錯並找出錯誤  
   
@@ -218,7 +211,7 @@ IsChecked="True"
   
      ![[偵錯] 功能表上的 [停止偵錯] 命令](../ide/media/exploreide-stopdebugging.png "ExploreIDE-StopDebugging")  
   
- 我們在這個逐步解說開始時，將 Mainwindow.xaml 重新命名為 Greetings.xaml，但是程式碼仍然參照 mainwindow.xaml 做為應用程式的啟動 URI，因此專案無法啟動。  
+我們在這個逐步解說開始時，將 Mainwindow.xaml 重新命名為 Greetings.xaml，但是程式碼仍然參照 mainwindow.xaml 做為應用程式的啟動 URI，因此專案無法啟動。  
   
 #### <a name="to-specify-greetingsxaml-as-the-startup-uri"></a>指定 Greetings.xaml 做為啟動 URI  
   
@@ -284,7 +277,7 @@ IsChecked="True"
   
 恭喜您完成此逐步解說！ 您可在方案和專案目錄下找到您建置的 (...\HelloWPFApp\HelloWPFApp\bin\Release\\)。 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。  
   
-## <a name="see-also"></a>另請參閱  
- [Visual Studio 2017 中的新功能](../ide/whats-new-in-visual-studio.md)   
- [Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)   
- [產能的秘訣](../ide/productivity-tips-for-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+[Visual Studio 2017 中的新功能](../ide/whats-new-in-visual-studio.md)   
+[Visual Studio 使用者開發入門](../ide/get-started-developing-with-visual-studio.md)   
+[產能的秘訣](../ide/productivity-tips-for-visual-studio.md)

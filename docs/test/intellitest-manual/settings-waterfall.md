@@ -12,11 +12,12 @@ ms.assetid: 45777037-9E16-4ABF-BD26-5AF4E740D4E6
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: fda01f53c02c0de03e69b65287dd627bf4a786e3
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: a56062f68fb0952d2b18726e1edecc26432e3fc3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="settings-waterfall"></a>設定瀑布圖
 

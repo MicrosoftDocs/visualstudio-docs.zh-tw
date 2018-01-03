@@ -13,16 +13,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3732c842d182698ecb8b43af3e5ebc5831385433
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8ca1f5d0c310fa4f9d75f27c6baf73f7a230e87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setting-general-performance-session-options"></a>設定一般效能工作階段選項
 您可以在效能工作階段屬性對話方塊的 [一般] 頁面上設定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具效能工作階段的收集方法和分析資料命名慣例。 若要從 [效能總管] 中開啟此對話方塊，請以滑鼠右鍵按一下效能工作階段，然後按一下 [屬性]。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

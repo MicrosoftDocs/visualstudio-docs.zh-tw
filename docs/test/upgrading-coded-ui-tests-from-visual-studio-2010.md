@@ -11,11 +11,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8b854bcfcb7227a454023f89ce732706b1e545cc
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: a24166bb88737699dc3b853cf7a821649acbc118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>升級 Visual Studio 2010 的自動程式化 UI 測試
 包含建立於 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 中之自動程式化 UI 測試的測試專案在 Visual Studio 2012 或更新版本中開啟時，會以無訊息模式修復。 如果已將測試專案簽入原始檔控制，則專案檔會簽出此修復。 一旦修復，這些包含自動程式碼 UI 測試的測試專案可以再次用於 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] SP1 和 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)]。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/02/2017
   
 -   **負載測試：** 當您在執行 Windows 8 的電腦上執行負載測試，而網路類型並非區域網路 (LAN) 設定檔時，網路模擬器驅動程式會造成作業系統當機。 如需詳細資訊，請參閱 [知識庫文件 2736182](http://support.microsoft.com/kb/2736182)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [移植、移轉和升級 Visual Studio 專案](../porting/port-migrate-and-upgrade-visual-studio-projects.md)   
  [從舊版 Visual Studio 升級測試](http://msdn.microsoft.com/en-us/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52)   
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   

@@ -18,11 +18,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5eccac7a0b139b830121add61518c23fa055ca23
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd1fdd7760fce5e40422cf017a4f5f7e2623263f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函式
 建立指定提供者的標記系列。  
@@ -61,5 +62,5 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
   
  **ANSI：**CvCreateMarkerSeriesA  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

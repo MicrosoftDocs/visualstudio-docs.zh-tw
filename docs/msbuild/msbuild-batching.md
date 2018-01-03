@@ -15,11 +15,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e2ad60b0b0f98cee23de911a8ca7cf2e5d43b364
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68977ca672aae84cd65ca169c4ca13feda6d7887
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-batching"></a>MSBuild 批次處理
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 能夠根據項目中繼資料，將項目清單分割成不同的類別或批次，然後針對每個批次一次執行一個目標或工作。  
@@ -88,13 +89,13 @@ ms.lasthandoff: 10/31/2017
  如需目標批次處理的其他範例，請參閱[目標批次處理中的項目中繼資料](../msbuild/item-metadata-in-target-batching.md)。  
   
 ## <a name="property-functions-using-metadata"></a>使用中繼資料的屬性函式  
- 批次處理可由包含中繼資料的屬性函式來控制。 例如：  
+ 批次處理可由包含中繼資料的屬性函式來控制。 例如，套用至物件的  
   
  `$([System.IO.Path]::Combine($(RootPath),%(Compile.Identity)))`  
   
  會使用 <xref:System.IO.Path.Combine%2A> 來結合根資料夾路徑和編譯項目路徑。  
   
- 屬性函式可能不會出現在中繼資料值內。  例如：  
+ 屬性函式可能不會出現在中繼資料值內。  例如，套用至物件的  
   
  `%(Compile.FullPath.Substring(0,3))`  
   
@@ -102,7 +103,7 @@ ms.lasthandoff: 10/31/2017
   
  如需屬性函式的詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [ItemMetadata 元素 (MSBuild)](../msbuild/itemmetadata-element-msbuild.md)   
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

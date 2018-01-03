@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a7e3d7541075642d3aaa417874aa51f7f3f7faa7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 275ec14b1b6a0d43d2c8fdb88bbf1056db86d097
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>呼叫端/被呼叫端檢視 - .NET 記憶體取樣資料
 [呼叫端/被呼叫端] 檢視會顯示所選取函式及其父函式和子函式的 .NET 記憶體分析資料。 [呼叫端/被呼叫端] 檢視包含三個方格。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
  按兩下呼叫端或被呼叫端函式資料列，讓該資料列變成目前的函式。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -40,8 +41,8 @@ ms.lasthandoff: 10/31/2017
 |**函式名稱**|函式的完整格式名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
 |**函式位址**|函式的位址。|  
-|**Type**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|  
-|**層級**|函式在呼叫樹狀圖中的深度。 只在[VSPerfReport](../profiling/vsperfreport.md) 命令列的報表中。|  
+|**Type**|函式的內容︰<br /><br /> **0** - 目前的函式<br /><br /> **1** - 呼叫目前函式的函式<br /><br /> **2** - 目前的函式所呼叫的函式<br /><br /> 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
+|**層級**|函式在呼叫樹狀圖中的深度。 只存在於 [VSPerfReport](../profiling/vsperfreport.md) 命令列報表中。|  
 |**內含配置**|- 若為目前的函式，這是函式在分析執行中所配置的物件數目。 這個數目包括在被呼叫端函式中所建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的內含配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所配置的物件數目。 這個數目包含由被呼叫端函式所呼叫之函式所做的配置。|  
 |**內含配置 %**|在分析執行中建立的所有物件中，屬於此函式之內含配置的百分比。|  
 |**專有配置**|- 若為目前的函式，這是當函式執行函式主體程式碼時 (即函式位於呼叫堆疊的最上方) 所建立的物件數目。 這個數目不包含由此函式呼叫之函式建立的物件。<br />- 若為呼叫端函式，這是目前函式 (從此函式的呼叫所產生) 的專有配置數目。<br />- 若為被呼叫端函式，這是此函式之執行個體 (由目前函式呼叫) 所建立的物件數目。 這個數目不包含被呼叫端函式呼叫之函式建立的物件。|  
@@ -51,8 +52,8 @@ ms.lasthandoff: 10/31/2017
 |**專有位元組**|- 若為目前的函式，這是函式在分析執行中所配置的記憶體位元組數目。 這個數目不包含由目前函式呼叫之函式所配置的記憶體。<br />- 若為呼叫端函式，這是目前函式 (從呼叫端函式的呼叫所產生) 的專有位元組數目。<br />- 若為被呼叫端函式，這是函式之執行個體 (從目前函式的呼叫所產生) 所配置的位元組數目。 這個數目不包含由被呼叫端函式呼叫之函式所配置的位元組。|  
 |**專有位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式之專有配置的百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [呼叫端/被呼叫端檢視 - .NET 記憶體檢測資料](../profiling/caller-callee-view-net-memory-instrumentation-data.md)   
  [呼叫端/被呼叫端檢視 - 取樣資料](../profiling/caller-callee-view-sampling-data.md)   
- [呼叫端/被呼叫端檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)
+ [呼叫者/被呼叫者檢視 - 檢測資料](../profiling/caller-callee-view-instrumentation-data.md)

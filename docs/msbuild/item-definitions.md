@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b2cf0713a38187f27bfddd46b0ad32b592d397a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7df40a697bb294e369964fb6a4252b884794aea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-definitions"></a>項目定義
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 可讓您使用 [ItemGroup](../msbuild/itemgroup-element-msbuild.md) 元素來靜態宣告專案檔中的項目。 不過，您只能在項目層級新增中繼資料，即使所有項目的中繼資料都相同也是如此。 從 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5 開始，名為 [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) 的專案元素可克服這項限制。 *ItemDefinitionGroup* 可讓您定義一組項目定義，這些項目定義會將預設的中繼資料值，新增到具名項目類型中的所有項目。  
@@ -253,5 +254,5 @@ ms.lasthandoff: 10/31/2017
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [批次處理](../msbuild/msbuild-batching.md)

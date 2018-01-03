@@ -22,11 +22,12 @@ caps.latest.revision: "7"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 3d05dfce1679c6fba182c75a7d864cd09bc61b5b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09b308084d9fd839c3b24a7d60317a9f93efd32a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xdcmake-task"></a>XDCMake 工作
 包裝 XML 文件工具 (xdcmake.exe)，此工具可將 XML 文件註解 (.xdc) 檔案合併至 .xml 檔案。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="parameters"></a>參數  
  下表說明 **XDCMake** 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |**AdditionalDocumentFile**|選擇性的 **String[]** 參數。<br /><br /> 指定其他一或多個要合併的 .xdc 檔案。<br /><br /> 如需詳細資訊，請參閱 [XML 文件產生器工具屬性頁](/cpp/ide/xml-document-generator-tool-property-pages)中的**其他文件檔**描述。 另請參閱 xdcmake.exe 的 **/old** 和 **/Fs** 命令列選項。|  
 |**AdditionalOptions**|選擇性的 **String** 參數。<br /><br /> 選項的清單，如命令列上所指定。 例如 "*/option1 /option2 /option#*"。 使用這個參數來指定任何其他 **XDCMake** 工作參數未表示的選項。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](/cpp/ide/xdcmake-reference)、[XML 文件產生器工具屬性頁](/cpp/ide/xml-document-generator-tool-property-pages)，以及 xdcmake.exe 的命令列說明 (**/?**)。|  
@@ -51,5 +52,5 @@ ms.lasthandoff: 10/31/2017
 |**SuppressStartupBanner**|選擇性的 **Boolean** 參數。<br /><br /> 如果是 `true`，當工作開始時，會防止顯示著作權和版本號碼訊息。<br /><br /> 如需詳細資訊，請參閱 [XDCMake 參考](/cpp/ide/xdcmake-reference)中的 **/nologo** 選項。|  
 |**TrackerLogDirectory**|選擇性的 **String** 參數。<br /><br /> 指定追蹤器記錄檔的目錄。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

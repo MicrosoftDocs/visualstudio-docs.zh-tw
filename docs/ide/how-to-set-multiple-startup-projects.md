@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f6241d739a48e8061bb9962578fd4e4158f78cac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9b148fe01c3cd36713853531941c09611a6bf57f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>如何：設定多個啟動專案
 Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。  
@@ -32,7 +33,7 @@ Visual Studio 可讓您指定在啟動偵錯工具時應執行的多個專案。
 
 4.  選擇 [多個啟始專案] 選項並設定適當的動作。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)
 
  [建立方案和專案](../ide/creating-solutions-and-projects.md)

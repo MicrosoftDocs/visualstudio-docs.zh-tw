@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da35bb6f685455e280609252561c8a676f37230c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b31f426720cf410d45bf28be3b0278fe6af2bc38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-performance-tools-report-views"></a>自訂效能工具報表檢視
 本節說明如何自訂使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具產生的報表。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
  [效能報告檢視](../profiling/performance-report-views.md)  
  描述可用來對分析資料進行分析的檢視。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7cfa9fc89ad2d4776a7aa0b5071db6bd5daddd9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0f71cca51a27c8ed9d6467d99425d4d3b721d195
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>選項對話方塊、環境、快速啟動
 您可以使用 [快速啟動] 快速搜尋選項、範本、功能表這類 IDE 資產，並對其執行動作。 但無法使用 [快速啟動] 來搜尋程式碼和符號。 [快速啟動] 搜尋方塊位於功能表列的右上角，而且選擇 Ctrl+Q 鍵即可存取。 只要在方塊中輸入搜尋字串即可。 若要搜尋包含 @ 的字串，請使用 '@@'。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
   
  如需使用 [快速啟動] 的最新祕訣和訣竅，請參閱 [Visual Studio 部落格](http://go.microsoft.com/fwlink/?LinkId=236054)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [一般使用者介面項目 (Visual Studio)](../../ide/reference/general-user-interface-elements-visual-studio.md)   
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

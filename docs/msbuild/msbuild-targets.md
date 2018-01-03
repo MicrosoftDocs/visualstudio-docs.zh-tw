@@ -13,11 +13,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 29c9397ea886024c894b977f05ec83f8d7c70f60
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1055a11a428d477ef44645fbc85d3f281b523357
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets"></a>MSBuild 目標
 依特定順序將目標設為群組工作，並允許將建置處理序分成較小的單位。 例如，一個目標可能會刪除輸出目錄中的所有檔案來準備進行建置，而另一個目標會編譯專案的輸入，並將它們放在空目錄中。 如需工作的詳細資訊，請參閱[工作](../msbuild/msbuild-tasks.md)。  
@@ -97,6 +98,6 @@ Reference: 4.0
   
  如果所有輸出項目都是最新的，則 MSBuild 會略過目標，這可大幅改善建置速度。 這稱為目標的累加組建。 如果只有某些檔案是最新的，則 MSBuild 會執行沒有最新項目的目標。 這稱為目標的部分累加組建。 如需詳細資訊，請參閱[累加建置](../msbuild/incremental-builds.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [如何：使用多個專案檔內相同的目標](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

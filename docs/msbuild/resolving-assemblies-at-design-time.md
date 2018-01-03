@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7ce11fb27959f5d468e08f6967b53ac079a2a28e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3db59c3cb9234231a5a5fe4f881857433ab09479
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolving-assemblies-at-design-time"></a>在設計階段時解析組件
 當您透過 [加入參考] 對話方塊的 [.NET] 索引標籤加入組件的參考時，參考會指向中繼參考組件，也就是說，這個組件會包含所有類型和簽章資訊，但不一定會包含任何程式碼。 [.NET] 索引標籤列出的參考組件對應至.NET Framework 中的執行階段組件。 此外，它會列出的參考組件對應至協力廠商使用的已註冊 AssemblyFoldersEx 資料夾中的執行階段組件。  
@@ -38,5 +39,5 @@ ms.lasthandoff: 10/31/2017
   
  現在隨附於 .NET Framework SDK 的目標套件包含 Framework 版本中所有執行階段組件的清單，稱為轉散發 (redist) 清單。 如此一來，使得建置系統不可能根據錯誤的組件版本來解析類別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [進階概念](../msbuild/msbuild-advanced-concepts.md)

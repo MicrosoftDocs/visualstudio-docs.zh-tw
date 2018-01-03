@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3058e19d4ac6211c741efd973344a1af14238d10
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 459642fde4d695317a453e223edd54f223569603
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xaml-designer-options-page"></a>XAML 設計工具選項頁面
 使用 [XAML 設計工具] 選項頁面來指定如何設定 XAML 文件中元素和屬性的格式。 若要開啟此頁面，請選擇 [工具] 功能表，然後選擇 [選項]。 若要存取 [XAML 設計工具] 屬性頁面，請選擇 [XAML 設計工具] 節點。 當您開啟文件時，會套用 XAML 設計工具的設定。 因此，若要變更設定，您需要關閉然後重新開啟 Visual Studio，才能看到變更。
@@ -99,7 +100,7 @@ ms.lasthandoff: 10/31/2017
 |**呈現效果**|指定使用 Blend 在 XAML 設計工具中編輯 XAML 檔案時，是否呈現效果。|  
 |**縮放臨界值**|指定當選取 [呈現效果] 核取方塊時，效果呈現所使用的縮放百分比。 如果放大超過此設定，效果將不再呈現於 XAML 設計工具中。|  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [WPF 中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)   
  [如何︰變更 XAML 檢視設定](http://msdn.microsoft.com/en-us/aee87c79-ca01-4f84-8fb7-a9e47048ee47)   
  [XAML 和程式碼逐步解說](http://msdn.microsoft.com/en-us/b3ff41a0-a2a3-4f61-b698-ac88ec8f799c)

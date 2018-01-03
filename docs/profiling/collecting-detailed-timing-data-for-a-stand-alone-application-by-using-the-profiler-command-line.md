@@ -15,11 +15,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 340346aa6c4bea432f2946cf9311dd2f6442b42f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 07bb6cf6a0426f0287c01c431e4b3d05f79b5d39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用程式碼剖析工具命令列收集獨立應用程式的詳細計時資料
 本節說明從命令列使用檢測方法收集用戶端 (獨立) 元件之詳細效能資料的程序和選項。  
@@ -53,4 +54,4 @@ ms.lasthandoff: 10/31/2017
  [檢測方法資料檢視](../profiling/instrumentation-method-data-views.md)  
   
 ## <a name="reference"></a>參考資料  
- [命令列分析工具參考](../profiling/command-line-profiling-tools-reference.md)
+ [命令列程式碼剖析工具參考](../profiling/command-line-profiling-tools-reference.md)

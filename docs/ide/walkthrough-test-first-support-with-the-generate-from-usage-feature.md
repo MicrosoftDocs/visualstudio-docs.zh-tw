@@ -18,11 +18,12 @@ caps.latest.revision: "63"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d195aa1f16d7883c2d4152286018cf3e8abc74dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1906e55add4dfb4663e3c7da5e84d7538409db17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>逐步解說：以使用時產生功能開發測試優先
 本主題示範如何使用支援「測試優先」開發的[使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)功能。  
@@ -159,7 +160,7 @@ ms.lasthandoff: 10/31/2017
   
      ![成功的測試結果](../ide/media/testspassed.png "TestsPassed")
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用時產生](../ide/visual-csharp-intellisense.md#generate-from-usage)   
  [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)   
  [使用 IntelliSense](../ide/using-intellisense.md)   

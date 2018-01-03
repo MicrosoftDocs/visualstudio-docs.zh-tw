@@ -24,11 +24,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: df309f6b4d28da051dca9b824d06dcae221b2a9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e45350598a50709a411da270e3607197a36ee20b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="xsd-task"></a>XSD 工作
 包裝 XML 結構描述定義工具 (xsd.exe)，其會從來源產生結構描述或類別檔案。  
@@ -86,5 +87,5 @@ ms.lasthandoff: 10/31/2017
   
      指定追蹤器記錄檔的目錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)

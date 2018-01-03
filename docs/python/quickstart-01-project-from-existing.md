@@ -8,16 +8,16 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: 3fd90afb-8d76-4c93-81f2-e10edbed2069
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: e650679a78612494810cda254a3c2432c6fa67fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: python
+ms.openlocfilehash: 5f8f5b3baa26bf9c17b016c2a480443af3990256
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>快速入門：在 Visual Studio 中從現有程式碼建立 Python 專案
 
@@ -30,7 +30,6 @@ ms.lasthandoff: 10/31/2017
 
 8. 如有需要，請按 Ctrl+F5，或是選取 [偵錯] > [啟動但不偵錯]，以執行程式。 
 
-
 ## <a name="next-steps"></a>後續步驟
 
 > [!div class="nextstepaction"]
@@ -39,5 +38,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="see-also"></a>另請參閱
 
 - [建立現有 Python 解譯器的環境](python-environments.md#creating-an-environment-for-an-existing-interpreter)。
-- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md).
-- [安裝位置](installation.md#install-locations).
+- [在 Visual Studio 2015 和更早版本中安裝 Python 支援](installation.md)。
+- [安裝位置](installation.md#install-locations)。

@@ -11,11 +11,12 @@ helpviewer_keywords:
 ms.assetid: 5b51fb96-94f4-4926-92b9-262156c05b85
 author: rpetrusha
 ms.author: ronpet
-ms.openlocfilehash: 38cf43429b5078de100c963df133ea1ba11c8717
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: dotnet
+ms.openlocfilehash: 45ab3f266a46cd08d269f0c463fb6cc26f494a91
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="live-unit-testing-with-visual-studio-2017"></a>Visual Studio 2017 的 Live Unit Testing
 
@@ -183,7 +184,7 @@ Live Unit Testing 適用於下表所列的三種熱門單元測試架構。 其�
 - 針對 NUnit：`[Category("SkipWhenLiveUnitTesting")]`
 - 針對 MSTest：`[TestCategory("SkipWhenLiveUnitTesting")]` 
  
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼測試工具](https://www.visualstudio.com/vs/testing-tools/)   
 [Live Unit Testing 部落格 (英文)](https://go.microsoft.com/fwlink/?linkid=842514)   

@@ -12,11 +12,12 @@ caps.latest.revision: "21"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d4a31cd461f470c7b510be02c33dd1744f7ed616
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 530b57b0f8a39990d37dc8cd25ac4c7bacba5a6e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-6-add-a-timer"></a>步驟 6：加入計時器
 接下來，您可以將 [計時器] 控制項新增至配對遊戲。 計時器會等候指定的毫秒數，然後引發事件，稱為「刻度」。 這對於定期啟動動作或重複動作非常有用。 在這個案例中，您將使用計時器讓玩家選擇兩個圖示，如果圖示不相符，則在短時間之後再次隱藏兩個圖示。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
   
 6.  請選擇其他圖示。 它會短暫出現，然後這兩個圖示會消失。 重複此動作許多次。 表單現在會追蹤您選擇的第一個和第二個圖示，並使用計時器在圖示消失之前暫停追蹤。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移至下一個教學課程步驟，請參閱[步驟 7：讓配對保持可見](../ide/step-7-keep-pairs-visible.md)。  
   

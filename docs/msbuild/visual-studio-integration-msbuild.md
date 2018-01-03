@@ -22,11 +22,12 @@ caps.latest.revision: "21"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 5aff5914d9b278b206f81abd4f28ce9f4dfa409c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2458203cdaa23509e35c61eb71a9e9cfa6e214ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 整合 (MSBuild)
 Visual Studio 會裝載 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ，用於載入及建置 Managed 專案。 由於 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 是負責處理專案，因此幾乎任何 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 格式的專案都可以成功地用在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中，即使專案是用不同的工具撰寫，而且含有自訂的建置處理序，也不會有問題。  
@@ -125,7 +126,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須正確定義 `OutputPath`、 `AssemblyName`和 `OutputType` 屬性，才能找到並啟動輸出組件以及連接到偵錯工具。 如果建置處理序未能使編譯器產生 .pdb 檔，將會無法連接到偵錯工具。  
   
 ## <a name="design-time-target-execution"></a>設計階段目標執行  
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、 `ResolveAssemblyReferences`、 `ResolveCOMReferences`、 `GetFrameworkPaths`與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的設計階段功能將無法全部正常運作。  
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 在載入專案時，會嘗試執行具有特定名稱的目標， 這些目標包括 `Compile`、`ResolveAssemblyReferences`、`ResolveCOMReferences`、`GetFrameworkPaths` 與 `CopyRunEnvironmentFiles`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會執行這些目標，以便能初始化編譯器以提供 IntelliSense、初始化偵錯工具，以及解析顯示在 [方案總管] 中的參考。 如果沒有這些目標，專案仍然可以正常載入和建置，但是 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的設計階段功能將無法全部正常運作。  
   
 ##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  若要直接編輯 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 專案，可以在 Visual Studio XML 編輯器中開啟專案檔。  
@@ -153,7 +154,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會快取專案檔以及專案檔所匯入之檔案的內容。 如果您編輯的是已載入的專案檔， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 將會自動提示您重新載入專案，才能使變更生效。 但是，如果您編輯的是已載入專案所匯入的檔案，就不會出現重新載入的提示，您必須以手動方式將專案卸載，然後再重新載入，才能使變更生效。  
   
 ## <a name="output-groups"></a>輸出群組  
- 在 Microsoft.Common.targets 中定義的數個目標名稱結尾為 `OutputGroups` 或 `OutputGroupDependencies`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會呼叫這些目標以取得專案輸出的特定清單。 例如， `SatelliteDllsProjectOutputGroup` 目標會建立一份清單，列出組建將要建立的所有附屬組件。 使用這些輸出群組的功能包括發行、部署以及專案對專案間的參考。 沒有定義輸出群組的專案仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]載入和建置，但是有些功能可能無法正常運作。  
+ 在 Microsoft.Common.targets 中定義的數個目標名稱結尾為 `OutputGroups` 或 `OutputGroupDependencies`。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 會呼叫這些目標以取得專案輸出的特定清單。 例如，`SatelliteDllsProjectOutputGroup` 目標會建立一份清單，列出組建將要建立的所有附屬組件。 使用這些輸出群組的功能包括發行、部署以及專案對專案間的參考。 沒有定義輸出群組的專案仍然可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]載入和建置，但是有些功能可能無法正常運作。  
   
 ## <a name="reference-resolution"></a>參考解析  
  參考解析是使用儲存於專案檔中參考項目以找到實際組件的程序。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 必須觸發參考解析，才能夠在 [ **屬性** ] 視窗中顯示每一個參考的屬性。 下列清單會說明三種參考類型及其解析方式。  
@@ -181,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
   
  快速更新檢查並不適用 Visual Studio 中的定期組建，而且專案的建置方式就如同您在命令提示字元中叫用組建一般。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：擴充 Visual Studio 建置流程](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [從 IDE 中啟動組建](../msbuild/starting-a-build-from-within-the-ide.md)   
  [登錄 .NET Framework 的延伸模組](../msbuild/registering-extensions-of-the-dotnet-framework.md)   

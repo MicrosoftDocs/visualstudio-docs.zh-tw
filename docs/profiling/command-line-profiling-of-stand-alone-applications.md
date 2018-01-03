@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 212631838fa6c396fc6f1a5af5164538a156bcd0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dd2b50ae03263cd072143481a91679663f126c53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>獨立應用程式的命令列分析
 本節說明從命令列使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集獨立 (用戶端) 應用程式之效能資料的程序和選項。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
   
 |工作|相關內容|  
 |----------|---------------------|  
-|**分析 ASP.NET 應用程式**|-   [分析 ASP.NET Web 應用程式](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
+|**分析 ASP.NET 應用程式**|-   [對 ASP.NET Web 應用程式進行程式碼剖析](../profiling/command-line-profiling-of-aspnet-web-applications.md)|  
 |**分析服務**|-   [分析服務](../profiling/command-line-profiling-of-services.md)|

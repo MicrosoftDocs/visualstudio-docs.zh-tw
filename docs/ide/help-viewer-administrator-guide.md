@@ -12,11 +12,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3c4c034b6aec75499d2e38af35f22cd852fa2e15
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 5f509b0ace14c4e0becd714e25ee9ec26770c6e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 系統管理員指南
 不管使用或不使用網際網路存取，說明檢視器可讓您管理網路環境的本機說明安裝。 本機說明內容會設定為以每台機器為基礎。 根據預設，使用者必須擁有系統管理員權限，以更新其本機說明安裝。  
@@ -142,7 +143,7 @@ ms.lasthandoff: 11/07/2017
   
 3.  在您要安裝說明內容的本機電腦上執行 .bat 檔案。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Help Content Manager 覆寫設定](../ide/help-content-manager-overrides.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  

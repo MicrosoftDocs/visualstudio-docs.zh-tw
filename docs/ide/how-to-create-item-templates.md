@@ -17,11 +17,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ecd17694e65c6273f8e73a321a72bc209038922
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 96501134565c4339abe9e3abc7fcfe7e29927fa4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-item-templates"></a>如何：建立項目範本
 本主題的[第一個程序](../ide/how-to-create-item-templates.md#export_template)步驟，說明如何使用 [匯出範本精靈] 建立項目範本。 如果您的範本中包含多個檔案，請參閱[如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)。  
@@ -162,7 +163,7 @@ ms.lasthandoff: 10/31/2017
 
 8.  複製 .zip 檔案，並在使用者項目範本位置中貼上它。 在 Visual Studio 2017 中，預設目錄為 ..\Users\\<使用者名稱\>\Documents\Visual Studio 2017\Templates\ItemTemplates\\。 如需詳細資訊，請參閱＜作法：尋找並組織專案範本和項目範本＞。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立多檔案項目範本](../ide/how-to-create-multi-file-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)

@@ -21,11 +21,12 @@ caps.latest.revision: "11"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 4cb7e3ab70fb2820ed2ecdb38b5876c5daf956fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: aspnet
+ms.openlocfilehash: 3299efa1675e4e9d173379fbb00f09c1d8ece414
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 工作
 `AspNetCompiler` 工作會包裝 aspnet_compiler.exe，此為先行編譯 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 應用程式的公用程式。  
@@ -70,6 +71,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

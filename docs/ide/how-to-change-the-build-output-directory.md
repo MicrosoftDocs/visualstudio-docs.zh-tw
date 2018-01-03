@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ccbb32b9fd035a9058812eb5a3df306ff629086f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1dcd42cf2251a4cd20047eaa3fc67110cf048e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-build-output-directory"></a>如何：變更組建輸出目錄
 您可以根據組態 (針對偵錯及/或發行) 為專案所產生的輸出指定位置。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  在安裝專案中，[輸出檔名稱]  方塊只會變更 Setup.exe 檔案的位置，而非專案檔案的位置。 如需詳細資訊，請參閱 **建置、組態屬性、部署專案屬性對話方塊**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案設計工具、建置頁面 (C#)](../ide/reference/build-page-project-designer-csharp.md)   
  [一般屬性頁面 (專案)](/cpp/ide/general-property-page-project)   
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)

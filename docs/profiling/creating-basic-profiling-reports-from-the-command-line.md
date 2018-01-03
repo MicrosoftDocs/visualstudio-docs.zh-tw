@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 111227b41b3fe48af963f93f07cdee5e5511661f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8915f71d4dcb84a481c0223a64afbddf9b0c722a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>從命令列建立基本的分析報告
 本主題描述基本的 VSPerfReport 命令，它們會從 .vsp、.vsps 分析資料檔案產生逗號分隔值 (.csv) 的報告。 如需所有報表選項的說明，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 |**Ip**|依指令列出分析資料。|-   [取樣資料](../profiling/instruction-pointers-ips-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/instruction-pointers-ips-view-contention-data.md)|  
 |**存留期**|列出配置物件的存留期。|-   [物件存留期檢視](../profiling/object-lifetime-view.md)|  
 |**程式碼**|按原始程式碼列出分析資料。|-   [取樣資料](../profiling/lines-view-sampling-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/lines-view-dotnet-memory-sampling-data.md)<br />-   [爭用資料](../profiling/lines-view-contention-data.md)|  
-|**標題**|分析資料檔案標頭資訊。|檔案專用。|  
+|**標頭**|分析資料檔案標頭資訊。|檔案專用。|  
 |**Mark**|在分析執行中收集的分析標記。|-   [標記檢視](../profiling/marks-view.md)|  
 |**模組**|列出模組的分析資料。|-   [取樣資料](../profiling/modules-view-sampling-data.md)<br />-   [檢測資料](../profiling/modules-view-instrumentation-data.md)<br />-   [.NET 記憶體取樣資料](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [.NET 記憶體檢測資料](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [爭用資料](../profiling/modules-view-contention-data.md)|  
 |**Process**|列出處理序的分析資料。|-   [處理序檢視](../profiling/process-view.md)<br />-   [爭用資料](../profiling/process-view-contention-data.md)|  

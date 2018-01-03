@@ -17,11 +17,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa71ec1c6eb8ac50d957782dda02a2c3fb59a3c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4499bd11e60aba81b37f13f5ce95e8a17412e2d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="list-threads-command"></a>列出執行緒命令
 顯示目前程式中的執行緒清單。  
@@ -34,7 +35,7 @@ Debug.ListThreads [index]
   
 ## <a name="arguments"></a>引數  
  `index`  
- 選擇項。 依據索引選取一個執行緒，以成為目前執行緒。  
+ 選擇性。 依據索引選取一個執行緒，以成為目前執行緒。  
   
 ## <a name="remarks"></a>備註  
  指定時，`index` 引數會將指出的執行緒標記為目前執行緒。 星號 (*) 會顯示在目前執行緒旁邊的清單。  
@@ -45,7 +46,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [列出呼叫堆疊命令](../../ide/reference/list-call-stack-command.md)   
  [列出反組譯碼命令](../../ide/reference/list-disassembly-command.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   

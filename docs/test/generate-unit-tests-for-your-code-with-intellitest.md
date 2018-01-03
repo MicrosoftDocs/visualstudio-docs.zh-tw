@@ -12,11 +12,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 533e1938e83a7d4dccc3be4d8847967ee7c91f6f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bf6bdf29541b721839bbdef42a2bc018d4a9c424
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>使用 IntelliTest 為程式碼產生單元測試
 IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元測試套件。 其會為程式碼中的每一個陳述式產生一個用以執行該陳述式的測試輸入。 程式碼的每個條件分支都會執行大小寫分析。 例如，可能擲回例外狀況的 `if` 陳述式、判斷提示及所有作業都會加以分析。 這項分析會用於為每個方法的參數型單元測試產生測試資料，從而建立具有高程式碼涵蓋範圍的單元測試。  
@@ -141,7 +142,7 @@ IntelliTest 會探索您的 .NET 程式碼，從而產生測試資料及單元�
 <a name="extend-framework"></a>  
 ### <a name="q-can-i-use-other-unit-test-frameworks-with-intellitest"></a>問： 是否可以使用其他單元測試架構搭配 IntelliTest？  
 
-**答：**可以，請遵循[尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
+**答：** 可以，請遵循 [尋找並安裝其他架構](../test/install-third-party-unit-test-frameworks.md)中的步驟。
 Visual Studio Marketplace 也提供測試架構延伸模組︰
 
 * [測試產生器的 NUnit 延伸模組](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)

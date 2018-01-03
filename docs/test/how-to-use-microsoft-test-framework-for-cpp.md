@@ -11,11 +11,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: "11"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 2905f606d47eff8c210ccd66adfd983c11c65a98
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 37356782854b9bbc45787fea727643f6d244f04d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用適用於 C++ 的 Microsoft 單元測試架構 
 
@@ -92,6 +93,6 @@ TEST_METHOD(Method1)
 |`TEST_PRIORITY(priority)`|使用預先定義的優先權特性，將相對優先權指派給測試方法。|  
   
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [快速入門：搭配測試總管進行以測試為導向的開發工作](../test/quick-start-test-driven-development-with-test-explorer.md)
 

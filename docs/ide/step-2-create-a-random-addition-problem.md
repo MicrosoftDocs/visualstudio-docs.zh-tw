@@ -12,11 +12,12 @@ caps.latest.revision: "27"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 9f26d2db9145599d941331dce646868aafa45cb9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f275477c691d8cdfa60dc607b1d31cd1e042184f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>步驟 2：建立隨機加法問題
 在本教學課程的第二個部分中，您會加入以隨機數字為基礎的數學問題，藉此增加測驗的挑戰性。 您也會建立名為 `StartTheQuiz()` 的方法，這個方法會填入問題並啟動倒數計時器。 稍後在本教學課程中，您將加入減法、乘法和除法問題。  
@@ -95,7 +96,7 @@ Next 方法
   
      在本教學課程的下一個步驟中，您將加入總和。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 3：新增倒數計時器](../ide/step-3-add-a-countdown-timer.md)。  
   

@@ -13,11 +13,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb474e832f815453fd84ba35bc3680b961e17954
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1ee4b614d677d260de42315095cdd3d25545419a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="toolbox-components-tab"></a>元件索引標籤、工具箱
 顯示您可以新增至 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 設計工具的元件。 除了 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 隨附的 [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] 元件之外 (例如 <xref:System.Messaging.MessageQueue> 和 <xref:System.Diagnostics.EventLog> 元件)，您還可以將您自己的元件或協力廠商元件新增至這個索引標籤。如需詳細資訊，請參閱[如何：操作工具箱索引標籤](http://msdn.microsoft.com/en-us/21285050-cadd-455a-b1f5-a2289a89c4db)。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  還會有以系統為基礎的 <xref:System.Timers.Timer> 可以新增至 [工具箱]。這個 <xref:System.Timers.Timer> 已針對伺服器應用程式最佳化，而且 Windows Forms <xref:System.Windows.Forms.Timer> 最適合在 Windows Forms 上使用。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用元件進行程式設計](http://msdn.microsoft.com/Library/d4d4fcb4-e0b8-46b3-b679-7ee0026eb9e3)   
  [元件程式撰寫逐步解說](http://msdn.microsoft.com/Library/373cacf7-479e-4b05-991c-5cb18824e913)   
  [工具箱](../../ide/reference/toolbox.md)   

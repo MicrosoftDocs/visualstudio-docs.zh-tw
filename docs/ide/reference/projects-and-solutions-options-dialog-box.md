@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fee3419b6e041983fb3aa77cace5bb02e48e1b9a
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: d7b122c66c4fd49cbc8939e5770c56fe8bc48b78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>專案和方案、選項對話方塊
 設定與專案和解決方案有關的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 行為。 若要存取這些選項，請選取 [工具] > [選項] 來展開 [專案和方案]，然後按一下 [一般]。
@@ -74,6 +75,6 @@ ms.lasthandoff: 11/15/2017
 **使用者項目範本位置**  
 指定 [新增新項目] 對話方塊用來建立 [我的範本] 清單的預設位置。 如需詳細資訊，請參閱[如何：尋找並整理範本](../../ide/how-to-locate-and-organize-project-and-item-templates.md)。 
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 - [選項對話方塊、專案和方案、建置並執行](../../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md)  
 - [選項對話方塊、專案和解決方案、Web 專案](../../ide/reference/options-dialog-box-projects-and-solutions-web-projects.md)

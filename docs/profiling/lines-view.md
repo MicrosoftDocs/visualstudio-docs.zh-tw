@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa6492447650be1b7ab9db1725b7146fa808ecc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3b645a6cee08f1b27e353f01aaedcbc258d6d98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="lines-view"></a>程式行檢視
 [程式行] 檢視僅適用於使用取樣方法收集的分析工具資料。 此檢視不適用於使用檢測收集的資料。  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
   
 -   此陳述式在原始程式檔中結束的字元。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式行檢視](../profiling/lines-view-sampling-data.md)   
  [程式行檢視 - 取樣](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [程式行檢視](../profiling/lines-view-contention-data.md)

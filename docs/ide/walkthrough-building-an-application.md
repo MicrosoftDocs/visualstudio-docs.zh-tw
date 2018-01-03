@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a06bd1eb1ced8305425a9e3698e66f0d19438463
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65c48fe6ff7f675add8b5bd5944e159587de2e3b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-building-an-application"></a>逐步解說：建置應用程式
 藉由完成本逐步解說，您將更熟悉使用 Visual Studio 建置應用程式時可設定的幾個選項。 您將針對一個範例應用程式建立自訂組建組態、隱藏特定警告訊息以及增加組建輸出資訊。  
@@ -87,7 +88,7 @@ ms.lasthandoff: 10/31/2017
 
 1. 在 C# 專案中，開啟 **ExpenseReportPage.xaml.cs** 檔案。 在 **ExpenseReportPage** 方法中，新增下列程式碼：`int i;`。  
 
-    或
+    OR
 
     在 Visual Basic 專案中，開啟 **ExpenseReportPage.xaml.vb** 檔案。 在自訂的建構函式 **Public Sub New...** 中，新增下列程式碼：`Dim i`。  
 
@@ -235,7 +236,7 @@ ms.lasthandoff: 10/31/2017
   
 恭喜︰您已成功完成本逐步解說。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：建置專案 (C++)](/cpp/ide/walkthrough-building-a-project-cpp)   
  [ASP.NET Web Application Project Precompilation Overview](http://msdn.microsoft.com/en-us/b940abbd-178d-4570-b441-52914fa7b887) (ASP.NET Web 應用程式專案先行編譯概觀)   
  [逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)

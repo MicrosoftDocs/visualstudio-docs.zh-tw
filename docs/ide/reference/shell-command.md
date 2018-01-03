@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fa005388b0b8ec79e2647cc269ff20868ca647e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7744feca20a14a85c7a035a9b74ed415a43553b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="shell-command"></a>Shell 命令
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 內啟動可執行程式。  
@@ -38,20 +39,20 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
   
 ## <a name="arguments"></a>引數  
  `path`  
- 必要項。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。  
+ 必要。 要執行之檔案或要開啟之文件的路徑和檔案名稱。 如果指定的檔案不在 PATH 環境變數的其中一個目錄中，則需要完整路徑。  
   
  `args`  
- 選擇項。 任何要傳遞給已叫用程式的引數。  
+ 選擇性。 任何要傳遞給已叫用程式的引數。  
   
 ## <a name="switches"></a>參數  
  /commandwindow [或] /command [或] /c [或] /cmd  
- 選擇項。 指定可執行檔的輸出會顯示在 [命令] 視窗中。  
+ 選擇性。 指定可執行檔的輸出會顯示在 [命令] 視窗中。  
   
  /dir:`folder` [或] /d: `folder`  
  選擇項。 指定要在執行程式時設定的工作目錄。  
   
  /outputwindow [或] /output [或] /out [或] /o  
- 選擇項。 指定可執行檔的輸出會顯示在 [輸出] 視窗中。  
+ 選擇性。 指定可執行檔的輸出會顯示在 [輸出] 視窗中。  
   
 ## <a name="remarks"></a>備註  
  必須緊接在 `Tools.Shell` 後面指定 /dir /o /c 參數。 在可執行檔名稱後面指定的任何內容都是當成命令列引數傳遞給它。  
@@ -81,7 +82,7 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 >Tools.Shell /o /c xcopy.exe c:\MyText.txt c:\Text\MyText.txt  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [輸出視窗](../../ide/reference/output-window.md)   

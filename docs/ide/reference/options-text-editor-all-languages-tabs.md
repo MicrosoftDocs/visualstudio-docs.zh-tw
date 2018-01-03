@@ -24,11 +24,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a83572bfad9aef93f7b5589e45bb24ec99fdb2c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae28077b52faf97b0ed1005e6fe5474925d197de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>索引標籤、所有語言、文字編輯器、選項
 編輯樣式表時，這個對話方塊可讓您變更程式碼編輯器的預設行為。 這些設定也適用於以程式碼編輯器為基礎的其他編輯器，例如 HTML 設計工具的來源檢視。 若要顯示這些選項，請從 [工具] 功能表選取 [選項]。 在 [文字編輯器] 資料夾內，展開 [所有語言] 子資料夾，然後選擇 [定位點]。  
@@ -66,6 +67,6 @@ ms.lasthandoff: 10/31/2017
  保留定位點  
  選取時，縮排作業會盡可能插入越多的定位字元。 每個定位字元都會以指定的 [定位點大小] 填入空格數。 如果 [縮排大小] 不是 [定位點大小] 的偶數倍數，就會加入空格字元填滿其間的差距。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項、文字編輯器、所有語言](../../ide/reference/options-text-editor-all-languages.md)   
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

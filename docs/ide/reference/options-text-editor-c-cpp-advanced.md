@@ -17,11 +17,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6870313900da464bb2e8a9ae7facfea8c87b72d4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 76485b85ffcf44ef94e116350ca8c7a3dc371bf8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-cc-advanced"></a>進階、C/C++、文字編輯器、選項
 藉由變更這些選項，您可以變更進行 C 或 C++ 程式設計時之 IntelliSense 和瀏覽資料庫的相關行為。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
  若要存取這個頁面，請在 [選項] 對話方塊的左窗格中依序展開 [文字編輯器] 和 [C/C++]，然後選擇 [進階]。  
   
 > [!NOTE]
->  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置： 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
+>  在下列指示的某些 Visual Studio 使用者介面項目中，您的電腦可能會顯示不同的名稱或位置。 您所擁有的 Visual Studio 版本以及使用的設定會決定這些項目。 請參閱[將 Visual Studio IDE 個人化](../../ide/personalizing-the-visual-studio-ide.md)。  
   
 ## <a name="browsingnavigation"></a>瀏覽/巡覽  
  在方案太大此種極少數情況之外，您應該永遠不要選擇這些選項，因為資料庫活動會耗用無法接受的系統資源量。  
@@ -165,5 +166,5 @@ ms.lasthandoff: 10/31/2017
  **啟用展開優先順序**  
  如果啟用，您可以在文字編輯器中輸入 '('，以圓括號來括住選取的文字。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)

@@ -12,11 +12,12 @@ helpviewer_keywords: external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 65cd18ea74ced278d53841cb8204f7cc4d163dc3
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 3e796b1e5a1773183c04409781cf6e2026bfe96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="manage-external-tools"></a>管理外部工具
 
@@ -72,6 +73,6 @@ ms.lasthandoff: 11/22/2017
 > [!NOTE]
 > IDE 狀態列會顯示目前這一行和目前資料行的變數，以指出插入點在作用中程式碼編輯器的位置。 目前的文字變數則會傳回在該位置選取的文字或程式碼。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [C/C++ 建置工具](/cpp/build/reference/c-cpp-build-tools)

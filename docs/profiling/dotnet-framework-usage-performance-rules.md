@@ -12,11 +12,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1db182507eb351bd36d7d4d517e19b9902f595ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ffc5a37378248e331e9a8b594f6d39f842fa3e78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用效能規則
 .Net Framework 使用類別中的效能規則會識別可最佳化的特定方法，也會識別較一般的使用模式 (例如記憶體回收和鎖定爭用)，以用於效能問題調查。  

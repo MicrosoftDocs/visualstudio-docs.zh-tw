@@ -13,18 +13,19 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53db0506509813b0c92651c8c53d681d8f650167
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3d6dcabe310743fee85c4560a0a37f029660bc90
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>指令指標 (IP) 檢視 - 爭用資料
 爭用資料的 IP檢視會列出遭到封鎖而不可在程式碼剖析執行時執行的組件指令。  
   
  下表說明指令指標檢視中各資料行的值。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**專有封鎖時間**|這個函式中的封鎖時間。|  
 |**專有封鎖時間 %**|指令執行時的封鎖時間百分比。|  
@@ -44,7 +45,7 @@ ms.lasthandoff: 10/31/2017
 |**原始程式碼開頭行**|此函式在原始程式檔中開始的行號。|  
 |**原始程式碼結尾行**|此函式在原始程式檔中結束的行號。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：自訂報表檢視資料行](../profiling/how-to-customize-report-view-columns.md)   
  [指令指標 (IP) 檢視](../profiling/instruction-pointers-ips-view.md)   
  [指令指標 (IP) 檢視 - 取樣](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

@@ -20,11 +20,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 0811a2f32ae9834c1141265a936e67c6a04adbcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c382d6e967705b95e46c6c797915c49841688c6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-targets-files"></a>MSBuild .Targets 檔案
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 內含數個 .targets 檔案，其中包含適用於通用案例的項目、屬性、目標和工作。 這些檔案會自動匯入大部分的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案檔，以簡化維護和可讀性。  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="directorybuildtargets"></a>Directory.Build.targets
 Directory.Build.targets 是使用者定義的檔案，可讓您自訂目錄下的專案。 除非屬性 **ImportDirectoryBuildTargets** 設為 **false**，否則系統皆會從 Microsoft.Common.targets 自動匯入這個檔案。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Import 項目 (MSBuild)](../msbuild/import-element-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)  
- [MSBuild](../msbuild/msbuild.md)
+ [ MSBuild](../msbuild/msbuild.md)

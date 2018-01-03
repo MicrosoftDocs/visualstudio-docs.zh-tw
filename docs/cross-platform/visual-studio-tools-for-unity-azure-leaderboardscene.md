@@ -11,11 +11,14 @@ ms.assetid: 2127DEBA-9470-490B-BDDF-6F77A5ACC329
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: d257d1bdab02128d6c7ac8cebb819bc91ea8df41
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: b9d60ffe9dc5f58243328b7aaba3d3aa16cd4beb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="leaderboardscene-explanation"></a>LeaderboardScene 說明
 

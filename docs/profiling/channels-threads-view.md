@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 878aa18e4df1c38790831bc550107f9f2247352e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 74d0796b1d2d3ecbe3ff08cc1eb4cfe79153f738
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="channels-threads-view"></a>通道 (執行緒檢視)
 並行視覺化檢視會顯示四種通道︰執行緒通道、磁碟通道、標記通道和 GPU 通道。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="gpu-channels"></a>GPU 通道  
  GPU 通道顯示系統上 DirectX 11 活動的相關資訊。  與圖形卡相關聯的每個 DirectX 引擎都有不同的通道。  個別區段代表處理 DMA 封包所花費的時間。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

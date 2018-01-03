@@ -11,11 +11,14 @@ ms.assetid: E11DA08B-7341-4743-A817-0CAD59844305
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: f707052e0ec0b9cda60c111767800c1ce14d6103
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 472b6d5adae5e23007b9c1aa4d9c75118a94e1cc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="heatmapscene-explanation"></a>HeatmapScene 說明
 

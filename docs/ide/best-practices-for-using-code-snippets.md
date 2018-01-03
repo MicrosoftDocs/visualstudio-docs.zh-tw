@@ -15,11 +15,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 34424ae13a47008eaefa3634f2bf25d31daf285e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7ccfae6292f696fa7c0951595a9baab123c81149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-for-using-code-snippets"></a>使用程式碼片段的最佳作法
 程式碼片段中的程式碼只會顯示最基本的做法。 對於大部分的應用程式，此程式碼必須經過修改以符合應用程式。  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
     -   程式碼片段可能包含以無訊息模式新增至專案，而且可能會從您系統上的任何位置載入的參考。 這些參考可能已從您下載程式碼片段的位置下載到您的電腦。 程式碼片段可能會接著呼叫參考中執行惡意程式碼的方法。 為了保護您自己免於遭受這類攻擊，請檢閱程式碼片段檔案的匯入和參考區塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
  [設定應用程式的安全性](../ide/securing-applications.md)   
  [程式碼片段](../ide/code-snippets.md)

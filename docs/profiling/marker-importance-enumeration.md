@@ -14,11 +14,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d09138f90b94d3b37c4a20fbe53f311fa29a36e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae7bb9f300a1d57707966a3b4dbae202eea78d8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="markerimportance-enumeration"></a>marker_importance 列舉
 表示並行視覺化檢視標記的重要性層級。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 enum marker_importance;  
 ```  
   
-## <a name="members"></a>Members  
+## <a name="members"></a>成員  
   
 ### <a name="values"></a>值  
   
@@ -45,5 +46,5 @@ enum marker_importance;
   
  **命名空間：**Concurrency::diagnostic  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [diagnostic 命名空間](../profiling/diagnostic-namespace.md)

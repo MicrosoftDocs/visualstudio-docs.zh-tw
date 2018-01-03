@@ -11,11 +11,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: "15"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: c52ce6556ae8937dd26c1be16cfaf1a4b05b1c74
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 4344c844c47568c3c23744a890c202493704b6a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>快速入門：搭配測試總管進行以測試為導向的開發工作
 我們建議您建立單元測試，以便讓您的程式碼在經歷許多漸進的開發步驟後仍然能夠正確運作。 有數種架構都可以用來撰寫單元測試，包含由協力廠商所開發的架構。 某些測試架構是專門讓您使用不同的語言或平台來進行測試。 [測試總管] 提供單一介面，讓您使用任一種架構來進行單元測試。 目前已有適用於最常用架構的配接器可供使用，而您也可以自己撰寫適用於其他架構的配接器。  

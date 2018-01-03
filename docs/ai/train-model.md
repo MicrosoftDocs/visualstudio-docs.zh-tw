@@ -10,11 +10,12 @@ ms.topic: how-to article
 ms.technology: visual studio
 ms.devlang: multiple
 ms.service: multiple
-ms.openlocfilehash: d8289a482bc83741a6b6bf31499925f5d24d0192
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: azure
+ms.openlocfilehash: af2307638209a54c7ce20df6412a1f95ea51d84d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="train-ai-models-in-azure-batch-ai"></a>在 Azure Batch AI 中定型 AI 模型
 
@@ -33,12 +34,12 @@ Batch AI 是受管理的服務，可讓資料科學家和 AI 研究員定型 AI 
 
 3. 選取 [檢視] > [Team Explorer...] 以開啟 [Team Explorer] 視窗，您可以從中連線到 GitHub 或 Visual Studio Team Services，或是複製儲存機制。
 
-    ![顯示 Visual Studio Team Services 和 GitHub 及複製儲存機制的 Team Explorer 視窗](media\train-model\team-explorer.png)
+    ![顯示 Visual Studio Team Services 和 GitHub 並複製存放庫的 Team Explorer 視窗](media\train-model\team-explorer.png)
 
-4. 在 [本機 Git 儲存機制] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
+4. 在 [本機 Git 存放庫] 下的 [URL] 欄位中，輸入 `https://github.com/Microsoft/samples-for-ai`，輸入複製檔案的資料夾，然後選取 [複製]。
 
     > [!Tip]
-    > 您在 Team Explorer 中指定的資料夾是用來接收複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用儲存機制的名稱來建立子資料夾。
+    > 您在 Team Explorer 中指定的資料夾是用來接收所複製檔案的特定資料夾。 不同於 `git clone` 命令，在 Team Explorer 中建立複製品不會自動使用儲存機制的名稱來建立子資料夾。
 
 5. 複製完成時，按一下 [檔案] > [開啟方案] > [專案/方案]
     

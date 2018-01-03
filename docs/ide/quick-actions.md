@@ -13,11 +13,12 @@ manager: ghogen
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e9196f3e4bc76e53d50bc480b8e0860186fe778e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 5d60fa62ee23ef942a6ef3ec20b7840374a33149
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quick-actions"></a>快速動作
 
@@ -982,7 +983,7 @@ Console.WriteLine($"{name} {age}");
 Console.WriteLine($"{x} {y}");
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼樣式及快速動作](code-styles-and-quick-actions.md)  
 [撰寫及重構程式碼 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)

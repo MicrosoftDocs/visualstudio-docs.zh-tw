@@ -15,17 +15,18 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bb10ac11fc49ce4ca6137e9749e802563de2a0e5
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c78ba45fda91650b5b7deb37ce9fd5dabbee6fb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---sampling-data"></a>摘要檢視 - 取樣資料
 [摘要] 檢視顯示有關程式碼剖析執行時效能耗費最多資源的函式資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ## <a name="timeline-graph"></a>時間軸圖形  
  [摘要] 檢視的時間軸圖形會顯示已進行程式碼剖析的應用程式在程式碼剖析期間的處理器 (CPU) 使用率百分比。 您可以使用時間軸圖形，將檢視篩選為選取的時間範圍。 如需詳細資訊，請參閱[如何：從摘要時間軸篩選報表檢視](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)。  
@@ -37,7 +38,7 @@ ms.lasthandoff: 11/11/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|函式的名稱。|  
+|**名稱**|函式的名稱。|  
 |**內含樣本 %**|此函式或由此函式呼叫的函式執行時發生的所有樣本百分比。|  
 |**專有樣本 %**|函式在執行其函式主體中的程式碼時發生的所有樣本百分比。 不包含在此函式所呼叫的函式中收集到的樣本。|  
   
@@ -50,9 +51,9 @@ ms.lasthandoff: 11/11/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|函式的名稱。|  
+|**名稱**|函式的名稱。|  
 |**專有樣本 %**|當函式正在執行其函式主體中的程式碼時，在程式碼剖析執行時收集到的所有樣本百分比。 不包括此函式所呼叫的函式正在執行時所收集到的樣本百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)

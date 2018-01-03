@@ -53,11 +53,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 747e17f876972fb44f686fe90ad4e97fd035279e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 55c4678954a274b99c0bdeadb250ec3c602d3b20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-general"></a>一般、文字編輯器、選項
 此對話方塊可讓您變更 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 程式碼和文字編輯器的全域設定。 若要顯示這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並展開 [文字編輯器] 資料夾，然後按一下 [一般]。  
@@ -98,7 +99,7 @@ ms.lasthandoff: 10/31/2017
  反白顯示目前的行  
  選取時，灰色方塊會框住游標所在的程式碼行。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages.md)   
  [索引標籤、所有語言、文字編輯器、選項](../../ide/reference/options-text-editor-all-languages-tabs.md)   
  [副檔名、文字編輯器、選項](../../ide/reference/options-text-editor-file-extension.md)   

@@ -22,11 +22,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb1c757ed5c266c74ca14e0b990528844bad0fb2
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: 1f7bcff6d2e94944985789db2bf0ac80150a478e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-advanced"></a>進階、C#、文字編輯器、選項
 使用這個對話方塊來修改 Visual C# 的編輯器格式、程式碼重構和 XML 文件註解設定。 若要存取這個對話方塊，請按一下 [工具] 功能表上的 [選項]，並依序展開 [文字編輯器] 資料夾和 [C#]，然後按一下 [進階]。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 12/07/2017
  排序 using 時先放置 'System' 指示詞  
  選取此選項時，`System` using 指示詞會出現在其他 using 指示詞前面。 如需詳細資訊，請參閱 [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md#automatic-code-generation) 中的組合管理 using。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [XML 文件註解](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [設定語言特定編輯器選項](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

@@ -12,11 +12,12 @@ caps.latest.revision: "22"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: d61602ce6c1542e746f54ecebc8576326e5e6889
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9767bae7aaa7a4dcadd425cbccdde6ec56af5646
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步驟 2：加入隨機物件和圖示清單
 在這個步驟中，您會為遊戲建立一組配對符號。 每個符號會加入至表單上 TableLayoutPanel 中的兩個隨機儲存格。 若要這麼做，您必須使用兩個 `new` 陳述式來建立兩個物件。 第一個是 `Random` 物件，就像是您用於數學測驗遊戲中的物件。 該物件在這個程式碼中會用來隨機選擇 TableLayoutPanel 中的儲存格。 第二個物件 (您可能不熟悉) 是一個 `List` 物件，用來儲存隨機選擇的符號。  
@@ -53,7 +54,7 @@ IntelliSense 視窗
     > [!NOTE]
     >  在 Visual Basic 中，您會得到相同的結果，但是字串會先放入暫存陣列中，然後該暫存陣列會轉換為 `List` 物件。 陣列類似於清單，但有所不同，例如建立的陣列為固定大小。 清單可以視需要壓縮和擴展，在此程式中這點很重要。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移至下一個教學課程步驟，請參閱[步驟 3：將隨機圖示指派給每個標籤](../ide/step-3-assign-a-random-icon-to-each-label.md)。  
   

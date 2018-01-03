@@ -16,13 +16,14 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9255473c3c8cd73a74a6758e698b8942dedce660
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: 8902d63f89167e4d977f130757af10557bffb529
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Options, Text Editor, JavaScript, Formatting
+# <a name="options-text-editor-javascript-formatting"></a>格式、JavaScript、文字編輯器、選項
 使用 [選項] 對話方塊的 [格式] 頁面，設定在程式碼編輯器中格式化程式碼的選項。 若要存取此頁面，請在功能表列上依序選擇 [工具] 和 [選項]，然後依序展開 [文字編輯器]、[JavaScript] 和 [格式]。  
   
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]  
@@ -54,7 +55,7 @@ ms.lasthandoff: 11/02/2017
   
 ## <a name="uielement-list"></a>UIElement 清單  
   
-|選項|說明|  
+|選項|描述|  
 |------------|-----------------|  
 |**在逗號分隔符號後面插入空格**|選取這個選項時，程式碼編輯器會在逗號分隔符號後面新增空格。|  
 |**在 "for" 陳述式中的分號後面插入空格**|選取這個選項時，程式碼編輯器會在 `for` 迴圈第一行中的每個分號後面新增空格。|  
@@ -63,5 +64,5 @@ ms.lasthandoff: 11/02/2017
 |**在匿名函式的 function 關鍵字後面插入空格**|選取這個選項時，程式碼編輯器會在匿名函式的 `function` 關鍵字後面新增空格。|  
 |**在非空白括弧的左括弧後面及右括弧前面插入空格**|選取這個選項時，如果括弧內有非空白字元，則程式碼編輯器會在左括弧後面及右括弧前面新增空格。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

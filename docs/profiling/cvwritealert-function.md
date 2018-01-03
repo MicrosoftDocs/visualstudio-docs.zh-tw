@@ -22,11 +22,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6a9faf31dea1eeb7b7a613b8e0c963620bc644af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2acfd3572d7586d2194e3979954049aede14a965
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cvwritealert-function"></a>CvWriteAlert 函式
 將警示寫入並行視覺化檢視追蹤檔。  
@@ -77,5 +78,5 @@ HRESULT CvWriteAlertVA(
   
  **ANSI：**CvWriteAlertA、CvWriteAlertVA  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [C++ 程式庫參考](../profiling/cpp-library-reference.md)

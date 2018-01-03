@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8139a54c57e37240d9be730014759951bd2bfc06
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e341db6e1c83e268d7074c2b8afed307f6c0840f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="message-markers"></a>訊息標記
 訊息標記表示記錄檔輸出。 訊息是由特定執行緒在特定時間發出的字串。 您可以將訊息匯出成文字檔，以便與其他工具搭配使用。 您可以將指標放在並行視覺化檢視中的訊息上，以檢視訊息字串。 您可以檢視在[標記報告](../profiling/markers-report.md)中檢視所有訊息標記。  下圖顯示訊息標記。  
@@ -25,6 +26,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="message-aggregation-markers"></a>訊息彙總標記  
  有時多個訊息發生的位置太靠近並行視覺化檢視中的另一個標記，以至於無法個別繪製。 發生這種情況時，會顯示一個表示基礎訊息的灰色「訊息彙總標記」。 當您將指標放在這些圖示的其中一個時，工具提示會顯示所代表基礎訊息的數目。 若要檢視訊息，請予以放大。  如果您縮放到最大後仍然出現彙總標記，您可以在[標記報告](../profiling/markers-report.md)中檢視基礎訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視標記](../profiling/concurrency-visualizer-markers.md)   
  [並行視覺化檢視 SDK](../profiling/concurrency-visualizer-sdk.md)

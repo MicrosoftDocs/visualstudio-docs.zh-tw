@@ -18,11 +18,12 @@ ms.assetid: a0322bc5-02c8-4f9f-af43-100a60b1bd28
 caps.latest.revision: "33"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: ec1c20ae334e81724af1b8d4e2b25d755a024bdc
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: f0d0250e2810adc8fd79239aa8e0807b04bbf0a3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>如何：建立資料驅動型單元測試
 使用適用於 Managed 程式碼的 Microsoft 單元測試架構，您就可以設定單元測試方法，從資料來源擷取用於測試方法中的值。 這個方法會針對資料來源中每個資料列依序執行，讓您輕鬆地用單一方法來測試各種輸入。  
@@ -182,7 +183,7 @@ int x = Convert.ToInt32(TestContext.DataRow["FirstNumber"]);
   
  當受測方法已修正並重新執行測試時，結果列會變成綠色，且測試方法會移動到 [通過的測試] 群組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext?displayProperty=fullName>   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A?displayProperty=fullName>   

@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 968d46c4fe771229647282c719815982d81bf416
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c0223950fb5082c84de8026cb07778d1f7381a33
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---net-memory-data"></a>摘要檢視 - .NET 記憶體資料
 [摘要] 檢視顯示有關在程式碼剖析執行時，配置最多記憶體的 .NET 函式和類型資訊，以及建立次數最多的類型資訊。 如需包括通知連結和報表清單描述在內的詳細資訊，請參閱[摘要檢視](../profiling/summary-view.md)。  
@@ -30,7 +31,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|函式的名稱。|  
+|**名稱**|函式的名稱。|  
 |**位元組 %**|在程式碼剖析執行時，由此函式所配置或由此函式所呼叫的子函式配置的所有配置位元組數百分比。|  
   
 ## <a name="types-with-most-memory-allocated"></a>配置最多記憶體的類型  
@@ -38,7 +39,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|型別的名稱。|  
+|**名稱**|型別的名稱。|  
 |**位元組 %**|在程式碼剖析執行時配置給此類型的所有配置位元組數百分比。|  
   
 ## <a name="types-with-most-instances"></a>具有最多執行個體的類型  
@@ -46,9 +47,9 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|型別的名稱。|  
+|**名稱**|型別的名稱。|  
 |**執行個體 %**|在程式碼剖析執行時建立為此類型執行個體的 .NET 物件總數百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [摘要檢視](../profiling/summary-view-sampling-data.md)   
  [摘要檢視](../profiling/summary-view-instrumentation-data.md)

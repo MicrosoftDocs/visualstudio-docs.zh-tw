@@ -14,11 +14,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 867e6a8bffd25a25e9c021aa7565e2087a7c4bd9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a2ce5cc9d80e7b96318d0e1fcf8aead09652b41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view"></a>核心檢視
 核心檢視顯示執行緒執行如何對應至邏輯處理器核心。 如果您要撰寫伺服器應用程式，此檢視可使用執行緒同質性或執行緒集區管理協助您最佳化快取效能。 它也可以協助您檢查使用執行緒同質性可能讓跨核心移轉問題惡化的情況。 核心檢視有兩個部分：圖形和圖例。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
  圖例區域有圖形中每一種色彩的項目。 每個項目會顯示執行緒色彩和名稱、跨核心內容切換的次數、內容切換總數和跨核心之內容切換的百分比。 圖例以遞減順序，依跨核心內容切換的次數排序。 只列出在顯示的時間範圍內執行的執行緒。  如果您縮放或平移，就會更新清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)   
  [使用率檢視](../profiling/utilization-view.md)   
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

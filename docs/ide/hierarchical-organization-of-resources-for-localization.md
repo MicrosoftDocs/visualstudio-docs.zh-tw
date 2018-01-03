@@ -22,11 +22,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f52d57d45c0f78a5bd64b16f10c9bb7c2256cd7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8235f246a52e3f8f53536abdf1aba2c0dede875d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>階層式組織當地語系化的資源
 在 Visual Studio 中，當地語系化資源 (例如適用於各文化的字串和影像資料) 會儲存在不同的檔案中，並根據 UI 文化特性設定載入。 若要了解當地語系化資源載入的方式，最好將它們視為以階層方式組織而成。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  ![NeutralSpecificResources 圖形](../ide/media/vbneutralspecificresources.gif "vbNeutralSpecificResources")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [當地語系化的中性資源語言](../ide/neutral-resources-languages-for-localization.md)   
  [安全性和當地語系化附屬組件](../ide/security-and-localized-satellite-assemblies.md)   
  [當地語系化應用程式](../ide/localizing-applications.md)   

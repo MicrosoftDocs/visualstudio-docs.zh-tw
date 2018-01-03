@@ -24,11 +24,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9e83f20106d4165e861c23ade178a86838a41f58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53fea09175d9d9653dd4552832cd511ed7900b8e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>程式碼剖析 HPC (高效能運算) 叢集
 您可以使用 [!INCLUDE[vsPreExt](../profiling/includes/vspreext_md.md)] 或 [!INCLUDE[vsUltExt](../profiling/includes/vsultext_md.md)] 程式碼剖析工具的取樣方法，在 Microsoft Windows HPC 叢集的計算節點上進行程式碼剖析。 如需有關 HPC 的詳細資訊，請參閱 Microsoft 網站上的 [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393)。  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
     -   若要進行程式碼剖析的二進位檔不在開啟專案中，請選取 [可執行檔 (.EXE 檔)] 選項。  
   
-4.  按 [下一步] 。  
+4.  按 [ **下一步**]。  
   
 5.  在精靈的第三個頁面上：  
   
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
   
     -   在 [部署位置] 中，指定 HPC 伺服器用以佈置部署映像的目錄路徑。  
   
-6.  按 [下一步] 。  
+6.  按 [ **下一步**]。  
   
 7.  在精靈的第四個頁面上：  
   
@@ -126,7 +127,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="hpc-launch-properties"></a>HPC 啟動屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**前端節點**|指定可在執行程式碼剖析時做為 HPC 前端節點的電腦。|  
 |**處理序數目**|指定要在已進行程式碼剖析的應用程式中執行的應用程式執行個體數目。|  
@@ -137,7 +138,7 @@ ms.lasthandoff: 10/31/2017
   
 ### <a name="advanced-properties"></a>進階屬性  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**專案名稱**|目前 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 專案或解決方案的名稱。|  
 |**於分析工具停止時清除**|為 true 時，會將已部署至執行目錄的二進位檔移除。 此步驟不會移除由使用者程式建立的檔案和目錄。 如果是由 IDE 建立執行目錄和部署目錄，IDE 會嘗試加以移除，但不是由 IDE 所部署的檔案，則不會嘗試移除。|  

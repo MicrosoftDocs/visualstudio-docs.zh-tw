@@ -16,11 +16,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: "21"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 32cab11dd909fc8b60134ebff0d5f37c0b14dcd6
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: uwp
+ms.openlocfilehash: dfb7d875c922b8ed9e86ae05e2d129bc21a3ea8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-uwp-apps"></a>逐步解說：針對 UWP 應用程式建立和執行單元測試
 Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 應用程式的單元測試支援，並包含 Visual C#、Visual Basic 和 Visual C++ 的單元測試程式庫範本。  
@@ -138,7 +139,7 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../debugger/includes/w
   
 ## <a name="external-resources"></a>外部資源  
   
-### <a name="videos"></a>影片  
+### <a name="videos"></a>視訊  
  [Channel 9: Unit testing your UWP apps built using XAML](http://go.microsoft.com/fwlink/?LinkId=226285) (單元測試使用 XAML 建置的 UWP 應用程式)  
   
 ### <a name="forums"></a>論壇  
@@ -147,6 +148,6 @@ Visual Studio 包含 Managed [!INCLUDE[win8_appname_long](../debugger/includes/w
 ### <a name="msdn-library"></a>MSDN Library  
  [MSDN Library - 建立並執行現有程式碼的單元測試 (Visual Studio 2010)](http://go.microsoft.com/fwlink/?LinkID=223683)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Visual Studio 測試 UWP 應用程式](../test/testing-store-apps-with-visual-studio.md)   
  [使用 Team Foundation Build 建置和測試 UWP 應用程式](http://msdn.microsoft.com/Library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

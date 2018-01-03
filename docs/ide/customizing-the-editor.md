@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4938949fa050770acb3473de4aed3ff913882323
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: 1efd5c84459c6902073dad2b2b8ebcd5b034c0ed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customizing-the-editor"></a>自訂編輯器
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 11/22/2017
 
 如需文字編輯器選項的詳細資訊，請參閱[文字編輯器選項對話方塊](../ide/reference/text-editor-options-dialog-box.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：將 Visual Studio IDE 和編輯器個人化](../ide/quickstart-personalize-the-ide.md)  
 [撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)  

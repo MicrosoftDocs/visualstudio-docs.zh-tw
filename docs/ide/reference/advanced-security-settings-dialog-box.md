@@ -14,11 +14,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 06ca9ec7fc3c084ce503ba0900d10eb2b68f4349
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ff3f23af3bf9358f47251a7ea45082f5508349b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="advanced-security-settings-dialog-box"></a>[進階安全性設定] 對話方塊
 此對話方塊可讓您指定在區域中偵錯的相關安全性設定。  
@@ -39,5 +40,5 @@ ms.lasthandoff: 10/31/2017
  **將下列 URL 視為此應用程式的下載位置來進行偵錯**  
  如果您必須讓應用程式存取對應至 [發行] 頁面上所指定之**安裝 URL** 的網站或伺服器共用，請在這裡鍵入該 URL。 只有在選取 [允許應用程式存取它的來源網站] 時，才能使用此選項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [專案設計工具、安全性頁面](../../ide/reference/security-page-project-designer.md)

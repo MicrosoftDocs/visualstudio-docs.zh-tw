@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 82d4687a72cb0f13291aa01ff37b91afbcc254e9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 931ccda0fd42a01c9afe272ef985380bc3276e6a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="common-msbuild-project-items"></a>一般 MSBuild 專案項目
 在 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 中，項目是一個或多個檔案的具名參考。 項目包含中繼資料，例如檔案名稱、路徑和版本號碼。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中的所有專案類型都有共同的數個項目。 這些檔案會在 microsoft.build.commontypes.xsd 中定義。  
@@ -141,5 +142,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="import"></a>匯入  
  代表應該由 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 編譯器匯入命名空間的組件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [通用的 MSBuild 專案屬性](../msbuild/common-msbuild-project-properties.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "2"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: fda8c5cb5066684ba0de5341042060d8ab2660cb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb3e4307b18c7ed929672cec1dc9f7cc55f72b01
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>選項對話方塊、環境、擴充功能和更新
 您可以使用這個頁面，設定有關 Visual Studio 如何執行更新，以及如何更新和探索擴充功能的選項。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
 ### <a name="additional-extension-galleries"></a>其他擴充組件庫  
  這個企業版功能可支援專屬擴充功能的組件庫。 如需詳細資訊，請參閱[私用組件庫](../../extensibility/private-galleries.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)

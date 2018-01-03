@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e31c9c065f7e285e76d85bbcd901d3a9c23cba6a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: dotnet
+ms.openlocfilehash: 5607f5a2828b7589cbe803732262a52d9e760421
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>收集 .NET 記憶體配置和存留期資料
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具支援收集 .NET 記憶體配置和物件存留期資料，這些資料可協助您偵測應用程式中與記憶體相關的效能問題。  
@@ -28,12 +29,12 @@ ms.lasthandoff: 11/11/2017
   
 -   物件存留期資料包含在三個記憶體回收層代中回收之 .NET Framework 記憶體物件的大小和數目。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
  您可以使用取樣或檢測分析方法來收集資料。  
   
@@ -82,7 +83,7 @@ ms.lasthandoff: 11/11/2017
 |在 [CPU 計數器]  頁面上，指定將加入程式碼剖析資料的一或多個處理器效能計數器。|-   [如何：收集 CPU 計數器資料](../profiling/how-to-collect-cpu-counter-data.md)|  
 |在 [進階] 頁面上，指定您想要的任何其他 VSInstr.exe 選項，例如要包含或排除特定函式的選項。 如需有關 VSInstr 選項的詳細資訊，請參閱 [VSInstr](../profiling/vsinstr.md)|-   [如何：指定其他檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)<br />-   [如何：限制檢測特定函式](../profiling/how-to-limit-instrumentation-to-specific-functions.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [如何：選擇收集方法](../profiling/how-to-choose-collection-methods.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)

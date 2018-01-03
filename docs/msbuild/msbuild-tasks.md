@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: fc2afbe7b0226cb5983aa3022ff4b24ac31fe7aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6a03a05dd2d72b6733b0936849f218b3358f15cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-tasks"></a>MSBuild 工作
 組建平台必須能夠在建置程序期間執行任意數目的動作。 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會使用「工作」來執行這些動作。 工作是 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 用來執行不可部分完成之建置作業的可執行程式碼單元。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="overridden-tasks"></a>覆寫的工作  
  [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 會在數個位置中尋找工作。 第一個位置是在儲存於 .NET Framework 目錄中副檔名為 .OverrideTasks 的檔案中。 這些檔案中的工作會覆寫任何其他具有相同名稱的工作，包括專案檔中的工作。 第二個位置是在 .NET Framework 目錄中副檔名為 .Tasks 的檔案中。 如果在這兩個位置中找不到工作，就會使用專案檔中的工作。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild](../msbuild/msbuild.md)   
  [工作撰寫](../msbuild/task-writing.md)   

@@ -13,16 +13,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bd6473f0b0ca09369ff81d028ea80dc3f55bfb66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 92d2df0182f976af36e9182d080ef6b51130c826
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>函式檢視 - .NET 記憶體取樣資料
 使用取樣方法所收集之 .NET 記憶體配置分析資料的 [函式] 檢視，會列出已在分析回合期間配置記憶體的函式，並報告配置大小和數目。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**處理序 ID**|分析執行的處理序 ID (PID)。|  
 |**處理序名稱**|處理序的名稱。|  
@@ -33,15 +34,15 @@ ms.lasthandoff: 10/31/2017
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
 |**函式位址**|函式的位址。|  
 |**內含配置**|此函式和其子函式中所配置的物件總數。|  
-|**內含配置 %**|分析回合中配置的所有物件中，屬於此函式之內含配置的百分比。|  
+|**內含配置 %**|在分析執行配置的所有物件中，屬於此函式的內含配置百分比。|  
 |**專有配置**|函式直接在呼叫堆疊最上方執行時所建立的物件數目。 此數目未包含子函式中所建立的物件。|  
 |**專有配置 %**|分析回合中配置的所有物件中，屬於此函式之專有配置的百分比。|  
 |**內含位元組**|此函式和其子函式所配置的記憶體位元組數目。|  
-|**內含位元組 %**|分析回合中配置的所有記憶體位元組中，屬於此函式之內含位元組的百分比。|  
+|**內含位元組 %**|在分析執行中配置的所有記憶體位元組中，屬於此函式的內含位元組百分比。|  
 |**專有位元組**|此函式但非其子函式所配置的記憶體位元組數目。|  
-|**專有位元組 %**|分析回合中配置的所有記憶體位元組中，屬於此函式之專有位元組的百分比。|  
+|**專有位元組 %**|在分析執行配置的所有記憶體位元組中，屬於此函式的專屬位元組百分比。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
  [函式檢視](../profiling/functions-view-sampling-data.md)   
  [函式檢視](../profiling/functions-view-instrumentation-data.md)

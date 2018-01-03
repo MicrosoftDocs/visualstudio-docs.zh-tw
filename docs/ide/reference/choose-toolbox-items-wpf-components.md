@@ -16,11 +16,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8aaa76694a60aad5c8bfcc2dd6d26feac03ab6e1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: bd9959d6883eec10f048733d3119206cc5dea3bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>選擇工具箱項目，WPF 元件
 [選擇工具箱項目] 對話方塊的這個索引標籤會顯示您的本機電腦上可用的 Windows Presentation Foundation (WPF) 控制項清單。 若要顯示這份清單，請從 [工具] 功能表，選取 [選擇工具箱項目] 以顯示 [選擇工具箱項目] 對話方塊，然後選取其 [WPF 元件] 索引標籤。若要排序上列元件，請選取任一資料行標題。  
@@ -73,6 +74,6 @@ Directory
 
 您可以藉由對應控制項的命名空間和組件，直接在 XAML 檢視中參考控制項。  
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
 [工具箱](../../ide/reference/toolbox.md)  
 [WPF 使用者入門](../../designers/getting-started-with-wpf.md)

@@ -12,11 +12,12 @@ ms.assetid: F34B0D19-B430-4C01-B402-62A861007E71
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 8d843800666ae53a686a18fcab28d02eb4c16743
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: d103e74c0f6cf40bfd0e6dc26dd5777c6fe11f2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="use-build-and-release-management-instead-of-lab-management-for-automated-testing"></a>使用 Build and Release Management 而非 Lab Management 進行自動化測試
 

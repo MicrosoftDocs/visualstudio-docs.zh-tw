@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 819ca48da96e2ff48479edfe94ee7378852be5f1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 73829a3283df5d3648212a79b4ad0b0f88d8b02a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>選項對話方塊、環境、尋找和取代
 使用 [選項] 對話方塊的這個頁面，即可控制訊息方塊以及尋找和取代作業的其他層面。 從 [工具] 功能表中按一下 [選項]，並展開 [環境]，然後按一下 [尋找和取代]，即可存取此對話方塊。 如果此頁面未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
@@ -54,5 +55,5 @@ ms.lasthandoff: 10/31/2017
  **用編輯器的文字自動填入 [尋找目標]**  
  選取此選項，可在您從 [編輯] 功能表中選取 [尋找和取代] 視窗的任何檢視時，將目前編輯器插入點任一端的文字貼入 [尋找目標] 欄位。 清除此選項，可使用前一個搜尋的最後一個搜尋模式作為 [尋找目標] 字串。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)

@@ -11,11 +11,14 @@ ms.assetid: F4FD6E1C-EA64-4613-BDDE-6E4E5CCF983E
 author: dantogno
 ms.author: v-davian
 manager: crdun
-ms.openlocfilehash: d036d180fddcce443debe3d7917415380187994c
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload:
+- azure
+- unity
+ms.openlocfilehash: 1ffb0c57329a8453208978cee69daa771d8ee0e9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="update-unity-mono-security-certificate-store"></a>更新 Unity Mono 安全性憑證存放區
 

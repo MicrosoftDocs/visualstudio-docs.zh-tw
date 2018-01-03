@@ -19,21 +19,22 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d5b16cf6260932f11c9d4fd33f2eb5662327355a
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 125bca0b0edd6571c6cc969da0cd3cbe809057da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 計數器資料
 Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效能計數器。 在程式碼剖析工具報告的 [標記] 檢視中，每個收集間隔會有一個標示為 [自動標記] 的資料列。 該資料列包含以該間隔描述效能計數器值的資料行。 若要將分析限制於兩個特定標記之間的時段，請選取標記並按一下滑鼠右鍵，然後從捷徑功能表中選取 [篩選依據]  ->   [標記]。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 > [!NOTE]
->  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP 應用程式也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
+>  Windows 8 和 Windows Server 2012 增強式安全性功能需要的重大變更，會以 Visual Studio 分析工具在這些平台收集資料的方式表現。 UWP App 也需要新的收集技術。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。  
   
 ### <a name="to-collect-windows-counter-data"></a>收集 Windows 計數器資料  
   
@@ -53,7 +54,7 @@ Windows 計數器是程式碼剖析期間可以設定的間隔收集的系統效
   
 8.  按一下 [套用]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [效能工作階段屬性](../profiling/performance-session-properties.md)   
  [CPU 和 Windows 計數器](../profiling/cpu-and-windows-counters.md)

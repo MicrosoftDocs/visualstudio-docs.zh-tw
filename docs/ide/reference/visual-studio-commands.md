@@ -16,11 +16,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 904350641c9db8bfb62522ee13051d69bb529535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5b58cec1da21daf67c8a77d53312e92fdbf4dfb0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-commands"></a>Visual Studio 命令
 Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗，或 [尋找/命令]  方塊來叫用命令。 在每種情況下，大於符號 (`>`) 都用來表示應執行命令，而不是搜尋或偵錯作業。  
@@ -77,7 +78,7 @@ Visual Studio 的命令可讓您透過 [命令]  視窗、[即時運算]  視窗
 |[切換中斷點](../../ide/reference/toggle-breakpoint-command.md)|根據中斷點目前的狀態以及在檔案中的目前位置，將其開啟或關閉。|  
 |[監看式命令](../../ide/reference/watch-command.md)|建立並開啟 [監看式]  視窗的指定執行個體。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   
  [Visual Studio 命令別名](../../ide/reference/visual-studio-command-aliases.md)

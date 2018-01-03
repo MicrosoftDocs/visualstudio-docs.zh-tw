@@ -22,11 +22,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 52e3714249ceabd79a490a084fe44d4d1a69fcf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 891204811a0c27471e8ab4be315da14be4b80794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 指定檔案以在您執行、建置、重建或部署解決方案時儲存及顯示錯誤。  
@@ -39,7 +40,7 @@ devenv /out FileName
   
 ## <a name="arguments"></a>引數  
  `FileName`  
- 必要項。 當您建置可執行檔時要接收錯誤的檔案路徑和名稱。  
+ 必要。 當您建置可執行檔時要接收錯誤的檔案路徑和名稱。  
   
 ## <a name="remarks"></a>備註  
  如果指定不存在的檔名，會自動建立該檔案。 如果檔案已經存在，則結果會附加至檔案的現有內容。  
@@ -53,7 +54,7 @@ devenv /out FileName
 devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /out "C:\MyErrorLog.txt"  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

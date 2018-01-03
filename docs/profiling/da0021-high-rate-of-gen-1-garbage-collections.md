@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8621dfbd3dea6f1c2dec7152aef586748f8e948a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b6a9d6214fc0960a5aca324f519d555f2631109f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：高比率的 Gen 1 記憶體回收
 |||  

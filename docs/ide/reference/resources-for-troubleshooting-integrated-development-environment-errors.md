@@ -97,11 +97,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dacc2d2b34cd0e3bb755fc0ed6972457a307d006
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5353009e2fbfc26898f4163aaad98dd8651c5b1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>用於疑難排解整合式開發環境錯誤的資源
 並非所有錯誤訊息都有特定的相關說明主題。 如果錯誤訊息中的資訊無法協助您解決問題，則可以參閱知識庫文章、開發人員社群或產品支援這類其他資源。  

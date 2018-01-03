@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 6c236a86677dab4015f8a0dc234ed211def7b1f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2fde39272a9e9ededafd28a26a13f8c3adb9aaaf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="special-characters-to-escape"></a>要逸出的特殊字元
 只有正在使用特殊字元的內容中，特殊字元具有特殊意義時，才必須逸出。 例如，星號 (*) 只有在項目定義的 "Include" 和 "Exclude" 屬性中，或是呼叫  <xref:Microsoft.Build.Tasks.CreateItem> 時，才是特殊字元。 在其他情況下，星號會視為星號常值。 雖然您不需要逸出專案檔中的所有星號，但要這麼做也無妨。  
@@ -45,6 +46,6 @@ ms.lasthandoff: 10/31/2017
 |?|問號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|  
 |*|星號，在項目的 Include/Exclude 區段中描述檔案規格時為萬用字元。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：在 MSBuild 中逸出特殊字元](../msbuild/how-to-escape-special-characters-in-msbuild.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)

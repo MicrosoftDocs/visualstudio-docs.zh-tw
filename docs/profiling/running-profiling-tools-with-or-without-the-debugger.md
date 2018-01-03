@@ -12,11 +12,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11ebadac433076a6ab54afce59584b1f0966df68
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: 2507ec49129692914ba6d11e4f651d5895b49c8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>使用或不使用偵錯工具來執行程式碼剖析工具
 Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無論是否含偵錯工具皆可執行 (例如：[CPU 使用量] 和 [記憶體使用量])。 非偵錯工具效能工具適用於針對「版本」設定執行，而偵錯工具整合工具適用於針對「偵錯」設定執行。  
@@ -43,7 +44,7 @@ Visual Studio 現在提供各種效能工具選擇，其中有些效能工具無
   
 1.  開啟您想要偵錯的專案，然後按一下[偵錯/開始偵錯]\ (或工具列上的 [開始]  或 **F5**)。  
   
-2.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯] / [視窗] / [顯示診斷工具]。  
+2.  [偵錯工具]  視窗會自動出現，除非您將其關閉。 如需再次顯示視窗，請按一下 [偵錯/Windows/顯示診斷工具]。  
   
 3.  執行您要收集資料的案例。  
   

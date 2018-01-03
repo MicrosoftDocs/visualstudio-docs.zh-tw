@@ -16,11 +16,12 @@ caps.latest.revision: "10"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9273cd908a8948b47b818e9c4333cb8bd70fe094
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53c45ccf528375bc31b4d61fd6af0193aa295e6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-command"></a>移至命令
 將游標移至指定的程式行。  
@@ -33,7 +34,7 @@ Edit.GoTo [linenumber]
   
 ## <a name="arguments"></a>引數  
  `linenumber`  
- 選擇項。 整數，代表要移至的行號。  
+ 選擇性。 整數，代表要移至的行號。  
   
 ## <a name="remarks"></a>備註  
  行編號是從一開始。 如果 `linenumber` 的值小於一，則會顯示第一行。 如果 `linenumber` 的值大於最後一行的行號，則會顯示最後一行。  
@@ -48,7 +49,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

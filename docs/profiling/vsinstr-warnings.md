@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a4ef9833b61a88fe45d9293cd036a52ce74788d0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25156aa6087e5ce1b00e1a4230d4fbf42ef75513
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出 VSInstr.exe 工具所發出的警告。 若要隱藏警告訊息使其不出現，您可以使用 NOWARN 選項以及警告編號。  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |**VSP2013**|這個映像必須當做 32 位元處理序執行才能進行檢測。 已更新 CLR 標頭旗標以反映這種情況。<br /><br /> 分析工具可修改二進位檔，這樣一來 64 位元作業系統就可以在 WOW64 模擬器中開啟 32 位元處理序。 針對程式庫 (DLL)，如果它們在現有的 64 位元處理序中載入，這可能會失敗。 這個警告會通知使用者此相依性。|  
 |**VSP2014**|產生的已經過檢測的映像似乎無效，可能無法執行。<br /><br /> 當最後已經過檢測的組件具有無效的 PE 標頭時，會出現此訊息。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [VSInstr](../profiling/vsinstr.md)

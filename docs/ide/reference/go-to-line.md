@@ -16,11 +16,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 92c0e5ea85e4a758258219a5ee489fa7ec9309f0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 99197e9aa5937273b8ea21847cb6aad797464a04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="go-to-line"></a>移至行
 此對話方塊可讓您移至使用中文件內的特定行。 若要存取此對話方塊，請開啟文件以進行編輯，然後選取 [編輯] 功能表中的 [移至]。  
@@ -28,7 +29,7 @@ ms.lasthandoff: 10/31/2017
  行號 (1 - `n`)  
  可讓您輸入使用中文件內您要移至的行號。 輸入的數字必須落在 1 與 `n` 之間，即目前文件中的行號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)   
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)

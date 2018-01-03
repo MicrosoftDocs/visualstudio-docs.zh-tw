@@ -11,16 +11,17 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: "23"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 6c8e2cac9d6f2622bacae0b27cecc8f074ea3a15
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 009ae62acc9685ee0d004976ce86b751cc0d1852
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>使用不同的 Web 瀏覽器搭配自動程式化 UI 測試
 自動程式化 UI 測試可以使用 Internet Explorer 錄製測試，以自動測試 Web 應用程式。 之後，您可以自訂測試再使用 Internet Explorer 或其他瀏覽器類型的 Web 應用程式進行播放。  
   
- **Requirements**  
+ **需求**  
   
 -   Visual Studio 企業版  
   
@@ -127,7 +128,7 @@ ms.lasthandoff: 10/27/2017
   
 ## <a name="external-resources"></a>外部資源  
   
-### <a name="videos"></a>影片  
+### <a name="videos"></a>視訊  
  [在 IE 中記錄並在任何位置播放](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)  
   
  [使用自動程式碼 UI 測試產生器撰寫跨瀏覽器的測試](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)  
@@ -151,7 +152,7 @@ ms.lasthandoff: 10/27/2017
 ### <a name="forum"></a>論壇  
  [Visual Studio 使用者介面自動化測試 (包括自動程式碼 UI)](http://go.microsoft.com/fwlink/?LinkID=224497)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用使用者介面自動化來測試您的程式碼](../test/use-ui-automation-to-test-your-code.md)   
  [自動程式化 UI 測試和動作記錄的支援組態和平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [使用自動程式化 UI 測試記錄分析自動程式化 UI 測試](../test/analyzing-coded-ui-tests-using-coded-ui-test-logs.md)

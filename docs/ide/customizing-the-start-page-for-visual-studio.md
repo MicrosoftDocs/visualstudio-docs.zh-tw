@@ -19,11 +19,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45cfb501103c762f7af6fc130a981028c262540b
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: d6bf05e014ff70b221d1ec77c4ee5677764142ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-the-start-page-for-visual-studio"></a>自訂 Visual Studio 的起始頁
 
@@ -54,6 +55,6 @@ ms.lasthandoff: 11/22/2017
 > [!NOTE]
 > 如果自訂起始頁中的錯誤導致 Visual Studio 當掉，請以安全模式啟動 Visual Studio，然後設定它使用預設起始頁。 請參閱 [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [將 Visual Studio IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)

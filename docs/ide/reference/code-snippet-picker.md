@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 58f419d52d2d89f998f64e236cfc1f0053c9cfd1
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: multiple
+ms.openlocfilehash: e352baf834f026462cb35921f7f79e75b3aecd96
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippet-picker"></a>程式碼片段選擇器
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 程式碼編輯器提供了 [程式碼片段選擇器] ，讓您只需按幾下滑鼠即可將現成的程式碼區塊插入至使用中文件。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 11/02/2017
 項目清單  
 可供插入的程式碼片段清單，或是含有程式碼片段的資料夾清單。 若要插入程式碼片段或展開資料夾，請選取您要的項目並按 Enter。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [使用程式碼片段的最佳做法](../../ide/best-practices-for-using-code-snippets.md)   
 [Visual Basic IntelliSense 程式碼片段](/dotnet/visual-basic/developing-apps/using-ide/intellisense-code-snippets)   
 [在程式碼中設定書籤](../../ide/setting-bookmarks-in-code.md)   

@@ -8,16 +8,18 @@ ms.technology: devlang-python
 ms.devlang: python
 ms.tgt_pltfrm: 
 ms.topic: article
-ms.assetid: e56b5d55-6e6b-48af-af40-5172c768cabc
 caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: db2929dc6f92af7b31747dbbea906417ef84b36c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload:
+- python
+- azure
+ms.openlocfilehash: 5ebbded093da4b3a6bb5b829628de481d43355dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="managing-python-on-azure-app-service"></a>管理 Azure App Service 上的 Python
 
@@ -29,7 +31,7 @@ Azure App Service 是以一組 App Service「網站延伸模組」的形式來�
 > 雖然 App Service 預設已在伺服器根資料夾中安裝 Python 2.7 和 Python 3.4，但您無法在這些環境中自訂或安裝套件，因此也不應該依賴這些套件。 反之，您應該倚賴自己所控制的網站延伸模組，如本主題所述。
 
 > [!Important]
-> 此處所述的程序得隨時變更，特別是改善。 變更相關資訊會公告於 [Microsoft 的 Python 工程部落格](https://blogs.msdn.microsoft.com/pythonengineering/)。
+> 此處所述的程序得隨時變更，特別是改善。 變更宣告於 [Python Engineering at Microsoft blog](https://blogs.msdn.microsoft.com/pythonengineering/) (Microsoft 部落格的 Python 工程)。
 
 ## <a name="choosing-a-python-version-through-the-azure-portal"></a>透過 Azure 入口網站選擇 Python 版本
 
@@ -163,7 +165,7 @@ HTTP 平台處理常式模組會將通訊端連線直接傳遞給獨立的 Pytho
 
 若要直接在伺服器環境中安裝套件，請使用下列方法之一：
 
-| 方法 | 使用方式 | 
+| 方法 | 使用量 | 
 | --- | --- |
 | [Azure App Service 的 Kudu 主控台](#azure-app-service-kudu-console) | 可透過互動方式安裝套件。 套件必須是純 Python 套件，或必須發行 Wheel。 |
 | [Kudu REST API](#kudu-rest-api) | 可用來自動化安裝套件。  套件必須是純 Python 套件，或必須發行 Wheel。 |

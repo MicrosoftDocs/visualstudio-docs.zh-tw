@@ -12,11 +12,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: "27"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 3881b015821952b4a2aeaa60d22c66bf47dff9c4
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 76cad59931a6c99bfd21fc0d149b86bf8a3b8a71
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用測試總管執行單元測試
 您可使用測試總管，透過 Visual Studio 或協力廠商單元測試專案來執行單元測試、將測試依分類分組、篩選測試清單，以及建立、儲存和執行測試播放清單。 您也可以偵錯測試和分析測試效能和程式碼涵蓋範圍。  
@@ -176,7 +177,7 @@ ms.lasthandoff: 11/15/2017
 |限定詞|描述|  
 |---------------|-----------------|  
 |**特性**|在特性分類和值中搜尋相符項目。 指定特性分類和值的語法是由單元測試架構所定義。|  
-|**專案**|在測試專案名稱中搜尋相符項目。|  
+|**Project**|在測試專案名稱中搜尋相符項目。|  
 |**錯誤訊息**|在失敗的判斷提示所傳回之使用者定義錯誤訊息中搜尋相符項目。|  
 |**檔案路徑**|在測試來源檔的完整檔案名稱中搜尋相符項目。|  
 |**完整名稱**|在測試命名空間、類別和方法的完整檔案名稱中搜尋相符項目。|  
@@ -262,6 +263,6 @@ FullName:"MyClass" - FullName:"PerfTest"
 ###  <a name="BKMK_Guidance"></a> 指引  
  [使用 Visual Studio 2012 測試持續傳遞 - 第 2 章：單元測試：測試內部](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [以 64 位元處理序的形式執行單元測試](../test/run-a-unit-test-as-a-64-bit-process.md)

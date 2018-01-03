@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 74e74184840e74c6333c6e503ea24cc7252061bc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5c16226e53afedd400360aa78cd87c878e30be68
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同選項來建置相同的原始程式檔
 當您建置專案時，經常會以不同的組建選項編譯相同的元件。 例如，您可以建立含有符號資訊的偵錯組建，或是不含符號資訊但已啟用最佳化的發行組建。 或者，您可以建置要在特定平台上執行的專案，例如 x86 或 [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)]。 在這些情況下，大部分的建置選項都會保持不變。只會變更某些選項來控制組建組態。 透過 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]，您可以使用屬性和條件來建立不同的建置組態。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>在命令列中設定專案屬性  
   
--   使用 **/property** 參數搭配屬性和屬性值。 例如：  
+-   使用 **/property** 參數搭配屬性和屬性值。 例如:   
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -185,7 +186,7 @@ ToolsVersion="4.0" TreatAsLocalProperty="Color">
 -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [ MSBuild](../msbuild/msbuild.md)  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)   
  [MSBuild 參考](../msbuild/msbuild-reference.md)   

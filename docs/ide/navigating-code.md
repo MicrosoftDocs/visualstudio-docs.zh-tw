@@ -21,11 +21,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0c4c7613cca7f9dec7c2db7ceffef1cc542cfa61
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7b81517d8d8e0cc6dd1386525f7a2129ed18851c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="navigating-code"></a>巡覽程式碼  
 Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會摘要說明不同的程式碼巡覽方式，並提供詳細資訊的主題連結。  
@@ -61,7 +62,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="find-all-references"></a>尋找所有參考  
 在解決方案中尋找選取項目的所有參考。 您可以使用它來檢查大型重構可能的副作用，並驗證「無作用」程式碼。 按 **F8** 在結果之間移動。 如需詳細資訊，請參閱[在程式碼中尋找參考](finding-references.md)。  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Shift + F12**  
 **滑鼠**    | 從操作功能表選取 [尋找所有參考]  
@@ -89,7 +90,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="go-to-definition"></a>移至定義  
 [移至定義] 會帶您到所選項目的定義。 如需詳細資訊，請參閱[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **F12**
 **滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至定義] 或按 **Ctrl**，再按一下類型名稱 (Visual Studio 2017 15.4 版的新功能)  
@@ -97,7 +98,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="peek-definition"></a>查看定義  
 [查看定義] 會在視窗中顯示所選項目的定義，您不用離開目前所在程式碼編輯器的位置。 如需詳細資訊，請參閱[如何：使用查看定義檢視及編輯程式碼](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)以及[移至定義和查看定義](../ide/go-to-and-peek-definition.md)。  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Alt + F12**
 **滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [查看定義] 或按 **Ctrl**，再按一下類型名稱 (如已勾選 [在預覽檢視中開啟定義] 選項)  
@@ -105,7 +106,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="go-to-implementation"></a>移至實作  
 使用 [前往實作] 從基底類別或類型巡覽至其實作。 如果有多個實作，您會看到它們列在 [尋找符號結果] 視窗中︰  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Ctrl + F12**
 **滑鼠**    | 以滑鼠右鍵按一下類型名稱，然後選取 [移至實作]  
@@ -113,7 +114,7 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="call-hierarchy"></a>呼叫階層  
 [呼叫階層] 會在 [呼叫階層] 視窗中顯示對方法的呼叫：  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 將文字游標放在類型名稱內的某個位置，然後按 **Ctrl + K**、**Ctrl + T**  
 **滑鼠**    | 以滑鼠右鍵按一下成員名稱，然後選取 [檢視呼叫階層]  
@@ -134,5 +135,5 @@ Visual Studio 提供許多方式在編輯器中巡覽程式碼。 本主題會�
 ## <a name="codelens-information"></a>CodeLens 資訊
 當您在程式碼編輯器中使用 CodeLens 時，可以尋找特定程式碼的相關資訊，例如變更及進行這些變更的人員、參考、Bug、工作項目、程式碼檢閱和單元測試狀態。 當您使用 Visual Studio Enterprise 與 Team Foundation Server 時，CodeLens 將以類似抬頭顯示方式執行。 請參閱[尋找程式碼變更和其他記錄](../ide/find-code-changes-and-other-history-with-codelens.md)。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [在程式碼和文字編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md) 

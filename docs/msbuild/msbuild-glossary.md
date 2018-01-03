@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dccc0592d050a07f3682834b6f2a66e2f8c6eb7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cdbe7702711c5196de42d18379d6870ca54f4dcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-glossary"></a>MSBuild 字彙表
 這些詞彙可用來說明 Microsoft Build Engine (MSBuild) 及其元件。  
@@ -101,7 +102,7 @@ ms.lasthandoff: 10/31/2017
  屬性函式是一個系統屬性或方法，可用於評估 MSBuild 指令碼。 屬性方法可用來讀取系統時間、比較字串、比對規則運算式，以及執行其他動作。 如需詳細資訊，請參閱[屬性函式](../msbuild/property-functions.md)。  
   
  屬性函式，巢狀  
- 屬性函式可能會加以結合，以形成更複雜的函式。 例如：  
+ 屬性函式可能會加以結合，以形成更複雜的函式。 例如，套用至物件的  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
   
@@ -170,5 +171,5 @@ ms.lasthandoff: 10/31/2017
  已知的中繼資料  
  請參閱＜中繼資料，已知＞。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild](../msbuild/msbuild.md)

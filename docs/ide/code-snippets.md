@@ -20,11 +20,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 999a4f6fb5c60b7d2708134706024a42d44b2611
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 2d937f36fcf2b76af8f5865ecdf2b137188e15eb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-snippets"></a>程式碼片段
 
@@ -84,7 +85,7 @@ End Property
 
 您可以在 [程式碼片段管理員] 對話方塊中使用 [新增] 和 [移除] 按鈕，來新增和移除程式碼片段目錄。 若要新增個別程式碼片段，請使用 [匯入] 按鈕。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [逐步解說：建立程式碼片段](../ide/walkthrough-creating-a-code-snippet.md)  
 [如何：散發程式碼片段](../ide/how-to-distribute-code-snippets.md)  

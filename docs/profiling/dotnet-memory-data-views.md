@@ -15,16 +15,17 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6bbbc764c7b5275082b6261249d48122ea3c836
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8fa1fb6dbaed5ed43f9a7eb3e69b52e91f43bd7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="net-memory-data-views"></a>.NET 記憶體資料檢視
 本節包含程式碼剖析工具資料檔案的檢視與報告，而此檔案含有 .NET 記憶體程式碼剖析資料。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [摘要檢視](../profiling/summary-view-dotnet-memory-data.md)  
  列出配置最多記憶體的函式和型別。  
   

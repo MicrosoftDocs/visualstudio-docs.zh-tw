@@ -16,11 +16,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ca31c95a1927565153270c8280b595fa0131c726
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 487986a1e5630b882a82b76b8acc6e2eeaa7cc88
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>如何：以連結方式顯示編輯器中的 URL
 您可以選擇用程式碼編輯器，將您的程式碼中的統一資源定位器 (URL) 視為使用中的連結。 當您使用這項功能時，URL：  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  在 [顯示] 底下，選取 [啟用按一下方式的 URL 巡覽]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂編輯器](../../ide/customizing-the-editor.md)   
  [文字編輯器選項對話方塊](../../ide/reference/text-editor-options-dialog-box.md)   
  [撰寫程式碼](../../ide/writing-code-in-the-code-and-text-editor.md)

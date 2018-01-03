@@ -12,11 +12,12 @@ ms.assetid: 5be92444-c701-43c7-8b2a-77df8e02bc27
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 281cf7b876c67d3c9eefa0aa7a56621de1ea791c
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: 7a50c075effd8c1bb63bd56b7fab04a7509d23e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="upgrade-scvmm-2008-r2-to-scvmm-2012"></a>將 SCVMM 2008 R2 升級至 SCVMM 2012
 
@@ -57,6 +58,6 @@ Lab Management **不**支援 SCVMM 2016。
 
 **SCVMM 失敗：**如果收到與 SCVMM 失敗有關的錯誤，請使用您的 SCVMM 工作記錄取得與錯誤有關的其他資訊。 解決 SCVMM 中的錯誤之後，傳回 **upgradeSCVMM** 命令。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [變更現有 Lab Management 組態](https://msdn.microsoft.com/library/ee704508%28v=vs.140%29.aspx)

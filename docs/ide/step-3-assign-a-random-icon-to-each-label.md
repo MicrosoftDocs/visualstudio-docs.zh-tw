@@ -12,11 +12,12 @@ caps.latest.revision: "31"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0f92699f25e01234eb3f236d1282e267307e5083
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f0e594e3ef4d0b08dcd957250f7645d40f6533e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步驟 3：將隨機圖示指派給每個標籤
 如果讓圖示在每個遊戲的相同儲存格中顯示，這樣就不夠有挑戰性。 若要避免此情形，請使用 `AssignIconsToSquares()` 方法在表單上將圖示隨機指派給 Label 控制項。  

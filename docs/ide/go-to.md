@@ -16,18 +16,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 15b222eaa3e03a44f99f64e86f9c88d125e41f98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9309a143760aab5b59355b4cea6cd214aaa49812
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="find-code-using-go-to-commands"></a>使用移至命令來尋找程式碼  
 Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助您快速找出指定的項目。 您可以透過簡潔的整合介面，移至特定行、類型、符號、檔案和成員。 Visual Studio 2017 及更新版本有提供這項功能，  
 
 ### <a name="how-to-use-it"></a>如何使用  
 
-輸入        | 函式 
+輸入        | 功能 
 ------------ | ---
 **鍵盤** | 按 **Ctrl + t** 或 **Ctrl + ,**     
 **滑鼠**    | 選取 [編輯]、[移至]、[移至全部]  
@@ -52,7 +53,7 @@ Visual Studio 的 [移至] 命令會對程式碼執行焦點式搜尋，協助�
 #### <a name="filter-to-a-specific-type-of-code-element"></a>篩選至特定類型的程式碼項目  
 若要縮小搜尋範圍至特定類型的程式碼項目，您可以在 [搜尋] 方塊中指定前置詞，或選取五個篩選條件圖示的其中一個：  
 
-前置詞 | 圖示 | 快速鍵 | 說明
+前置詞 | 圖示 | 快速鍵 | 描述
 :----: | ---- | -------- | ---
 \#      | ![符號圖示](media/gotoall_symbolicon.png) | Ctrl+1、Ctrl+S | 移至指定的符號
 f      | ![檔案圖示](media/gotoall_fileicon.png)     | Ctrl+1、Ctrl+F | 移至指定的檔案
@@ -63,7 +64,7 @@ t      | ![類型圖示](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 移
 #### <a name="filter-to-a-specific-location"></a>篩選至特定位置    
 若要將搜尋範圍縮小為特定位置，請選取兩個文件圖示的其中一個：  
 
-圖示 | 說明
+圖示 | 描述
 ---- | ---
 ![目前文件](media/gotoall_currentdocument.png) | 僅搜尋目前文件
 ![外部文件](media/gotoall_external.png) | 除了專案/方案中的文件之外，還會搜尋外部文件  
@@ -76,12 +77,12 @@ t      | ![類型圖示](media/gotoall_typeicon.png)     | Ctrl+1、Ctrl+T | 移
 ### <a name="settings"></a>設定  
 選取齒輪圖示 ![齒輪圖示](media/gotoall_gear.png) 可讓您變更這項功能的運作方式：  
 
-設定 | 說明
+設定 | 描述
 ------- | ---
 使用預覽索引標籤 | 在 IDE 的預覽索引標籤中立即顯示選取的項目
 顯示詳細資料    | 在視窗中顯示文件註解中的專案、檔案、行和摘要資訊
 置中視窗   | 將此視窗移至程式碼編輯器的正上方，而不是右上方   
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [巡覽程式碼](../ide/navigating-code.md)  
 [移至定義和查看定義](../ide/go-to-and-peek-definition.md)  

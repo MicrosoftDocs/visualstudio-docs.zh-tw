@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff4bae4f3071755149acdea49d312f8a9efcf31d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 27309a459128e6ed9ebb17d295bc39c6c621dcd3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>如何：從命令列篩選報告
 使用 **VSPerfReport** 命令的選項，即可將報表篩選到分析資料檔案的特定時間區段，或將資料限制到一或多個處理序或執行緒。 如需此命令的詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
-|選項|說明|  
+|選項|描述|  
 |-------------|-----------------|  
 |**StartTime:**[*Value*]|只顯示值 (以毫秒為單位) 之後所收集的資料。|  
 |**EndTime:**[*Value*]|只顯示值 (以毫秒為單位) 之前所收集的資料。|  

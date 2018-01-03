@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: c56250677e99a11c52ac368037525803394242b3
-ms.sourcegitcommit: ae9450e81c4167b3fbc9ee5d1992fc693628eafa
+ms.workload: data-science
+ms.openlocfilehash: c75e15def5f9abe98be3f062650c84693716c87e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="variable-explorer"></a>變數總管
 
@@ -27,22 +28,22 @@ x <- 42
 y <- 43
 n <- c(1,2,3,5,8,13)
 ```
- 
+
 變數總管視窗會隨即出現，如下所示︰
 
 ![Visual Studio 中的變數總管視窗](media/variable-explorer-window.png)
 
 如已在工作階段中定義了更複雜的 R 資料框架，您可以巡覽資料。 例如，在執行 `cars <- mtcars` 之後，您可以展開變數總管中的不同節點來巡覽資料集︰
- 
+
 ![變數總管的展開檢視](media/variable-explorer-expanded-results.png)
- 
+
 若要刪除變數，請以滑鼠右鍵按一下並選取 [刪除]，或選取變數，然後按 Delete 鍵。
 
 您也可以使用累加搜尋，在資料框架中搜尋觀察值。 首先，展開您要搜尋之資料框架中的節點，然後在搜尋方塊中輸入搜尋字詞。
 
 ## <a name="details-table-view"></a>詳細 (資料表) 檢視
 
-因為資料通常是表格式的，所以您可以選取放大鏡圖示或以滑鼠右鍵按一下選取 [顯示詳細資料]，將任何複雜的資料類型當成個別的資料表檢視。 
+因為資料通常是表格式的，所以您可以選取放大鏡圖示或以滑鼠右鍵按一下選取 [顯示詳細資料]，將任何複雜的資料類型當成個別的資料表檢視。
 
 ![變數總管表格檢視](media/variable-explorer-table-view.png)
 
@@ -69,7 +70,6 @@ n <- c(1,2,3,5,8,13)
 ![在偵錯期間顯示資料框架的變數總管](media/variable-explorer-as-locals-window.png)
 
 當您逐步執行偵錯工具的程式碼時，例如在函式中顯示區域變數，變數總管會自動變更函式範圍。
-
 
 ## <a name="importing-data-into-variable-explorer"></a>將資料匯入變數總管
 

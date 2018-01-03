@@ -19,11 +19,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 280df2197aa7ef9b5e533244831585cb72f7466e
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 7258a1ba99764fa7af7ce73874f447db99b8b168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>識別及自訂 Visual Studio 中的鍵盤快速鍵
 
@@ -131,6 +132,6 @@ ms.lasthandoff: 12/07/2017
 
     ![僅匯入自訂的鍵盤快速鍵](../ide/media/importshortcuts.png "ImportShortcuts")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 的協助工具功能](../ide/reference/accessibility-features-of-visual-studio.md)

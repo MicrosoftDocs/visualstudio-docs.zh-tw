@@ -12,11 +12,12 @@ caps.latest.revision: "16"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 55e0802f58be0a1ad3a060fce257554b36c01a52
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ab50592e345a54853e9cfbd95d0b9bd1bc86d794
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步驟 1：建立專案並將標籤加入至表單
 開發這個測驗的前幾個步驟是建立專案，然後將標籤、按鈕和其他控制項加入至表單。 另外也會設定您所加入每個控制項的屬性。 專案將包含表單、控制項和程式碼 (稍後在本教學課程中加以說明)。 按鈕用於開始測驗，標籤用於顯示測驗問題，而其他控制項則顯示測驗的答案及完成測驗所剩餘的時間。  
@@ -173,7 +174,7 @@ ms.lasthandoff: 10/31/2017
   
 8.  若要驗證 **TabIndex** 屬性是否如您預期般運作，請選擇 F5 鍵或在功能表列上依序選擇 [偵錯] 和 [開始偵錯] 儲存並執行您的程式，然後選擇 Tab 鍵幾次。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 2：建立隨機加法問題](../ide/step-2-create-a-random-addition-problem.md)。  
   

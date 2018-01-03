@@ -12,11 +12,12 @@ caps.latest.revision: "23"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: e31746567a300ea8f9a62079ab1392fe9f1e0ec8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ae35bafc612b4fd7b76a06c47300fee4f35ce5ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 的新功能
 MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/download/core) 的一部分來取得，並且可以在 Windows、macOS 和 Linux 上建置 .NET Core 專案。  
@@ -50,5 +51,5 @@ MSBuild 現在已可當作 [.NET Core SDK](https://www.microsoft.com/net/downloa
 - `NormalizeDirectory` 會結合路徑元素，確保具有結尾斜線，及確保輸出字串具有適用於目前作業系統的正確目錄分隔字元。
 - `GetPathOfFileAbove` 會傳回此檔案前一個檔案的路徑。 它在功能上相當於呼叫 `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [ MSBuild](../msbuild/msbuild.md)

@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 954d2807e510e43e0931070335dce5f92d5c2464
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6069ed9b15ed49f2f7c7a5113f1377cebdd031fc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 指定要在建置、清除、重建或部署 `/project` 引數中所指定的專案時套用的專案建置組態。  
@@ -53,10 +54,10 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
  指定在建置或重建之後部署專案。  
   
  `SolnConfigName`  
- 必要項。 將套用至 `SolutionName` 中所指定方案的方案組態名稱。  
+ 必要。 將套用至 `SolutionName` 中所指定方案的方案組態名稱。  
   
  `SolutionName`  
- 必要項。 方案檔的完整路徑和名稱。  
+ 必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
@@ -79,7 +80,7 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /build Debug /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Debug   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

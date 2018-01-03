@@ -18,11 +18,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ea1a3e42e5ce634073e9abaf7d89dda9df51c315
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 396b7e99e0850ce5d66436d8b56d21e69ae65ea6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="functions-view"></a>函式檢視
 [函式] 檢視會列出分析期間呼叫的函式。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
   
  [函式] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [函式檢視](../profiling/functions-view-sampling-data.md)   
  [函式檢視](../profiling/functions-view-instrumentation-data.md)   
  [函式檢視 - 檢測](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   

@@ -21,11 +21,12 @@ caps.latest.revision: "13"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9add80659ea5c574dbdd56c2c09c9da4a9b646ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 036f519529f0226c56b711096abc91e4ebf97d3a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 工作
 提供自動化方式來偵測、下載及安裝應用程式及其必要條件。 它可用來做為單一安裝程式，針對組成應用程式的所有元件整合個別的安裝程式。  
@@ -65,7 +66,7 @@ ms.lasthandoff: 10/31/2017
   
 -   `BootstrapperItems`  
   
-     選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。  
+     選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 參數。  
   
      指定要在啟動載入器內建置的產品。 傳遞給此參數的項目應具有下列語法：  
   
@@ -177,6 +178,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

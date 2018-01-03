@@ -13,11 +13,12 @@ caps.latest.revision: "28"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 8503de5c90544e06fa7119482f67726655a4ffed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6152cfe60a7628ce830cbf589a6808f5ca87fae2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="item-functions"></a>Item 函式
 從 MSBuild 4.0 開始，工作和目標中的程式碼可以呼叫項目函式來取得專案中項目的相關資訊。 這些函式會簡化取得 Distinct() 項目的方式，速度比執行項目迴圈還快。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="intrinsic-item-functions"></a>內建項目函式  
  下表列出項目可用的內建函式。  
   
-|函式|範例|說明|  
+|函式|範例|描述|  
 |--------------|-------------|-----------------|  
 |`Count`|`@(MyItem->Count())`|傳回項目計數。|  
 |`DirectoryName`|`@(MyItem->DirectoryName())`|傳回每個項目之 `Path.DirectoryName` 的對等項目。|  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 |`Reverse`|`@(MyItem->Reverse())`|以反向順序傳回項目。|  
 |`AnyHaveMetadataValue`|`@(MyItem->AnyHaveMetadataValue("MetadataName", "MetadataValue"))`|傳回 `boolean`，以指出任何項目是否具有指定的中繼資料名稱和值。 比較不區分大小寫。|  
 |`ClearMetadata`|`@(MyItem->ClearMetadata())`|傳回已清除其中繼資料的項目。 只會保留 `itemspec`。|  
-|`HasMetadata`|`@(MyItem->HasMetadataValue("MetadataName"))`|傳回具有所指定中繼資料名稱的項目。 比較不區分大小寫。|  
+|`HasMetadata`|`@(MyItem->HasMetadata("MetadataName"))`|傳回具有所指定中繼資料名稱的項目。 比較不區分大小寫。|  
 |`Metadata`|`@(MyItem->Metadata("MetadataName"))`|傳回具有中繼資料名稱的中繼資料值。|  
 |`WithMetadataValue`|`@(MyItem->WithMetadataValue("MetadataName", "MetadataValue"))`|傳回具有所指定中繼資料名稱和值的項目。 比較不區分大小寫。|  
   
@@ -101,5 +102,5 @@ ms.lasthandoff: 10/31/2017
   -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [項目](../msbuild/msbuild-items.md)

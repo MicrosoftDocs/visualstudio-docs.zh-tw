@@ -21,11 +21,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b0ccfd3d526cee44a30c8d4c33030f2eb2a585e5
-ms.sourcegitcommit: c0422a3d594ea5ae8fc03f1aee684b04f417522e
+ms.workload: cplusplus
+ms.openlocfilehash: 7f24c1cd65d4669f326f866fbc04160d32daa4a1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>選項對話方塊、專案和方案、VC++ 專案設定
 此對話方塊可讓您定義與記錄、效能和支援檔案類型相關的 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 組建和專案設定。  
@@ -83,6 +84,6 @@ ms.lasthandoff: 11/02/2017
 **No**  
 不使用快取的專案資料。 每次載入專案時都會剖析專案檔。
 
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
  [建置 C/C++ 程式](/cpp/build/building-c-cpp-programs)   
  [C/C++ 建置參考](/cpp/build/reference/c-cpp-building-reference)

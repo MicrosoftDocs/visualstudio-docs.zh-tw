@@ -16,11 +16,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b045646ffb5771d40cd7531d01ed33181dff9cc9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 09e16202fb1b35a48925297e35840a60b65f0488
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比較效能資料檔案
 您可以透過建立比較 (「差異」) 報告或檢視，來比較兩個不同的程式碼剖析工具資料檔案 (.vsp 或 .vsps) 的結果。 比較會顯示相較於另一個程式碼剖析工作階段所發生的差異、效能衰退和改進。  
@@ -57,4 +58,4 @@ ms.lasthandoff: 10/31/2017
   
 2.  在 [選取要進行比較的分析檔案] 視窗中，瀏覽並選取 [基準檔案] 分析檔 (.vsp 或 .vsps) 和 [比較檔案] (.vsp 或 .vsps)。  
   
-3.  按一下 [確定]。
+3.  按一下 [確定 **Deploying Office Solutions**]。

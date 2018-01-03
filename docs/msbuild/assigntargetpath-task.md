@@ -17,11 +17,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: dac2cd390d6b7b706785d4807e659ca44620def9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 144b8b82209b63262db8b7a25f2478b9a4c89edb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 工作
 此工作接受檔案清單，並新增 `<TargetPath>` 屬性 (如果尚未指定)。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="task-parameters"></a>工作參數  
  下表說明 `AssignTargetPath` 工作的參數。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`RootFolder`|選擇性 `string` 輸入參數。<br /><br /> 包含有目標連結的資料夾路徑。|  
 |`Files`|選擇性 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸入參數。<br /><br /> 包含傳入的檔案清單。|  
@@ -54,6 +55,6 @@ RootFolder="Resources"
 </Project>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

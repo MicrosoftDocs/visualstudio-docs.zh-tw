@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 dev_langs: VB
-ms.openlocfilehash: 0ad7cdb245aa43deab22593fbbb5a5b10105f5af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2ac4cef411bb6304e4033de1850e6c428e34285e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-code-snippet"></a>逐步解說：建立程式碼片段
 只需要幾個步驟就能建立程式碼片段。 您只需要建立 XML 檔案、填入適當的項目，並在其中新增您的程式碼。 您也可以將參考和取代參數新增至程式碼。 您可以使用 [程式碼片段管理員] 上的 [匯入] 按鈕，將程式碼片段新增至 Visual Studio 安裝 ([工具]、[程式碼片段管理員])。  
@@ -251,5 +252,5 @@ ms.lasthandoff: 10/31/2017
     daCustomers.SelectCommand.Connection = dcConnection
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼片段結構描述參考](../ide/code-snippets-schema-reference.md)

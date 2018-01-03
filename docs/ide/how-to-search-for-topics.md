@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ec4ec1c06d6c64a344e9e39d01c850b901534af8
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: e93a3ca0c6cf7446b4b943c2e6a19018f1a16c7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜尋主題
 您可以使用全文檢索搜尋功能尋找包含的特定字詞的任何主題。 您也可以使用萬用字元運算式、邏輯運算子和進階的搜尋運算子來修改和自訂查詢。  
@@ -71,7 +72,7 @@ ms.lasthandoff: 11/07/2017
 ### <a name="stopwords"> 搜尋中忽略的字詞 (停用字詞) </a>
 全文檢索搜尋期間會自動忽略常出現的文字或數字，這些有時稱為停用字詞。 例如，如果您搜尋片語 "pass through"，搜尋結果會顯示包含單字 "pass" 但不包含 "through" 的主題。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [邏輯與進階運算子](../ide/logical-operators-in-search-expressions.md)  
 [如何：在索引中尋找主題](../ide/how-to-find-topics-in-the-index.md)  
 [如何：在 TOC 中尋找主題](../ide/how-to-find-topics-in-the-table-of-contents.md)  

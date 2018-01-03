@@ -13,11 +13,12 @@ caps.latest.revision: "20"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 740eefc28e0b48d327fb5d0900ab39364633f877
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b8c0f47186b36cea9b203805c3c9c009acb3fb42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>逐步解說：從頭開始建立 MSBuild 專案檔案
 以 .NET Framework 為目標的程式設計語言，使用 MSBuild 專案檔描述及控制應用程式建置流程。 當您使用 Visual Studio 建立 MSBuild 專案檔時，系統會自動將適當的 XML 加入該檔案。 不過，您可能會發現，了解 XML 的組織方式，以及您如何對其進行變更以控制組建會非常有用。  
@@ -479,6 +480,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="whats-next"></a>後續步驟？  
  Visual Studio 可以自動執行本逐步解說中提及的大量工作。 若要了解如何使用 Visual Studio 建立、編輯、建置及測試 MSBuild 專案檔，請參閱[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [MSBuild 概觀](../msbuild/msbuild.md)  
  [MSBuild 參考](../msbuild/msbuild-reference.md)

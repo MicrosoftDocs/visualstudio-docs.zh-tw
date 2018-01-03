@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b7d86b0b5b8deabad9536defa7ef56a3b71e6691
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d339312eec4727fa83b9b21ec3e08f7ec4e811d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessibility-products-and-services-blend"></a>協助工具產品和服務 (Blend)
 Microsoft 致力於使其產品和服務對於每個人都更容易使用。 下列章節提供讓行動不便人士更容易存取 Microsoft Windows 之功能、產品和服務的相關資訊：  

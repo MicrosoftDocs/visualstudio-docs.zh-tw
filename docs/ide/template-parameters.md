@@ -17,11 +17,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c9a719e39506e080ce55bad45124e34d79dbbfac
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7218b5bdcc95ed5db7f87c6fb17230895db579cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="template-parameters"></a>範本參數
 透過使用範本中的參數，您可以在範本具現化時取代範本機碼部分的值，例如類別名稱和命名空間。 當使用者按一下 [新增專案] 或 [新增項目] 對話方塊中的 [確定] 時，在背景執行的範本精靈即會取代這些參數。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  範本參數會區分大小寫。  
   
-|參數|說明|  
+|參數|描述|  
 |---------------|-----------------|  
 |`clrversion`|通用語言執行平台 (CLR) 的最新版本。|  
 |`GUID [1-10]`|GUID；用來取代專案檔中的專案 GUID。 您最多可以指定 10 個唯一的 GUID (例如，`guid1)`。|  
@@ -123,5 +124,5 @@ namespace $safeprojectname$
 </TemplateContent>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂範本](../ide/customizing-project-and-item-templates.md)

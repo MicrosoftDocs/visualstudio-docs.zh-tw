@@ -12,11 +12,12 @@ caps.latest.revision: "1"
 author: kraigb
 ms.author: kraigb
 manager: ghogen
-ms.openlocfilehash: 3d0dd65ec5ca42d54c16c0c57b919f849a7a0e20
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: python
+ms.openlocfilehash: 2acd8aebda03d7d9809563a6c1959c8dd69bf96e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-installing-packages-in-your-python-environment"></a>第 5 步：在 Python 環境中安裝套件
 
@@ -48,23 +49,22 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
 
 1. 使用 [檔案] > [新增] > [專案] 建立新的專案，並選取「Python 應用程式」範本。 在出現的程式碼檔案中，貼上下列程式碼，這會像先前的教學課程步驟一樣建立一個餘弦波，只是這次會以圖形方式繪製：
 
-    ```python  
+    ```python
     import numpy as np     # installed with matplotlib
     import matplotlib.pyplot as plt
     from math import radians
 
-    def main():  
+    def main():
         x = np.arange(0, radians(1800), radians(12))
         plt.plot(x, np.cos(x), 'b')
         plt.show()
-                    
+
     main()
-    ```  
+    ```
 
 1. 在使用 (F5) 或不使用偵錯工具 (Ctrl + F5) 的情況下，執行程式來查看輸出：
 
   ![matplotlib 範例的輸出](media/environments-add-matplotlib3.png)
-
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -72,4 +72,5 @@ Python 開發人員社群已產生數千個有用的套件，您可以將它們�
 > [使用 Git](vs-tutorial-01-06.md)
 
 ### <a name="going-deeper"></a>繼續探討
+
 - [Python 環境](python-environments.md)

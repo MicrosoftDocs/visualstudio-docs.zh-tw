@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 474ba0510194590a199c9a418eef2a46888342f8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be7e6b2e29ed74fe57016bb286b54742b0add632
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函式會將字串指派給指定的處理序或執行緒。  
@@ -54,7 +55,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
   
 |列舉值|描述|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|全域層級設定會影響分析回合中的所有處理序和執行緒。|  
+|PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|  
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|  
 |PROFILE_THREADLEVEL|執行緒分析層級設定會影響指定的執行緒。|  
   
@@ -135,5 +136,5 @@ void ExerciseNameProfile()
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

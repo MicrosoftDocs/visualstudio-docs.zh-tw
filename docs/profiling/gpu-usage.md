@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f2c265fde65ae20012e2846d99b86c71254d5b44
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a79d924e8f20079040f29a85854555e214e4281
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="gpu-usage"></a>GPU 使用量
 使用「Visual Studio 效能及診斷中樞」中的「GPU 使用量」工具，適當地了解 Direct3D 應用程式的高階硬體使用率。 您可以使用它來判斷您應用程式的效能是 CPU-bound 還是 GPU-bound，並深入了解如何更有效地使用平台的硬體。 GPU 使用量支援使用 Direct3D 12、Direct3D 11 和 Direct3D 10 的應用程式；它不支援其他圖形 API (例如 Direct2D 或 OpenGL)。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
 #### <a name="to-start-the-gpu-usage-tool"></a>啟動 GPU 使用量工具：  
   
-1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷] (鍵盤：按 Alt+F2)。  
+1.  在主功能表中，依序選擇 [偵錯] 和 [效能及診斷]\(鍵盤：按 Alt+F2)。  
   
 2.  在 [效能及診斷] 中樞中，核取 [GPU 使用量] 旁邊的方塊。 選擇性地核取您感興趣之其他工具旁邊的方塊。 您可以同時執行數個效能與診斷工具，以取得更完整的應用程式效能。  
   
@@ -148,7 +149,7 @@ ms.lasthandoff: 10/31/2017
   
  目前不支援多 GPU 組態 (例如 NVIDIA® SLI™ 和 AMD Crossfire™)。 支援混合式圖形安裝程式 (例如 NVIDIA® Optimus™ 和 AMD Enduro™)。  
   
-## <a name="see-also"></a>請參閱  
+## <a name="see-also"></a>另請參閱  
   
 -   [Solve the Tough Graphics Problems with your Game Using DirectX Tools (video)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools) (使用 DirectX 工具解決遊戲的艱難圖形問題 (影片))  
 -   [GPU Usage Tool in Visual Studio (video)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715) (Visual Studio 中的 GPU 使用量工具 (影片))  

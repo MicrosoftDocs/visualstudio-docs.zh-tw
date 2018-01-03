@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b60a28d7422125a745cf1b088891b2675da0bc8a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d8fa19da70b55e4a519153898a800bb259983c39
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="object-lifetime-view"></a>物件存留期檢視
 在 [效能工作階段] 屬性頁上核取 [Also collect .NET object lifetime data (同時收集 .NET 物件存留期的資料)] 時，可以使用 [物件存留期] 檢視。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="general"></a>一般  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**類別名稱**|已配置類型的類別名稱。|  
 |**處理序 ID**|分析執行的處理序 ID。|  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="instance-data"></a>執行個體資料  
  執行個體資料指出分析回合中所建立類型的物件數目，以及記憶體回收行程所解除配置物件的世代。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**執行個體**|這類型之物件的配置數目。|  
 |**總執行個體 %**|分析回合中進行的配置總數百分比。|  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="size-byte-data"></a>大小 (位元組) 資料  
  大小 (位元組) 資料指出分析回合中所建立類型的物件大小，以及在每個解除配置物件的世代中所回收的記憶體數量。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**配置的總位元組數**|類型之所有執行個體的位元組總數。|  
 |**總位元組 %**|分析回合中配置給此類型執行個體的已配置位元組總數百分比。|  
@@ -68,10 +69,10 @@ ms.lasthandoff: 10/31/2017
 ## <a name="large-object-heap-data"></a>大型物件堆積資料  
  .NET 記憶體配置器可管理與標準 Managed 堆積不同的位置中的超大型物件。 大型物件堆積資料指出在此位置管理之類型的物件數目和大小。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**大型物件堆積執行個體已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體數目。|  
 |**大型物件堆積位元組已收集**|位於大型物件堆積以及在分析回合中所收集之此類型的執行個體大小 (以位元組為單位)。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [.NET 記憶體資料檢視](../profiling/dotnet-memory-data-views.md)

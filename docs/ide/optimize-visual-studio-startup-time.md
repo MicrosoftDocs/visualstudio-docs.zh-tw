@@ -17,11 +17,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.performancecenter
 ms.technology: vs-ide-general
-ms.openlocfilehash: 78a2a4dc41b4c6b3154951f6f48b95b3894fc92e
-ms.sourcegitcommit: 15907b980eadeaa646f010cb197cfd188579d0f5
+ms.workload: multiple
+ms.openlocfilehash: 44e620ed0092f9761b3a6c72e306898fe6ea06af
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="optimize-visual-studio-performance"></a>最佳化 Visual Studio 效能
 Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某些 Visual Studio 延伸模組和工具視窗可能會在載入時對啟動時間有不利的影響。 您可以在 [管理 Visual Studio 效能] 對話方塊中控制緩慢延伸模組和工具視窗的行為。 如需提升效能的一般提示，請參閱 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)。  
@@ -69,5 +70,5 @@ Visual Studio 設計旨在盡可能快速且有效率地啟動。 不過，某�
 > [!NOTE]
 > 15.5 版之前的 Visual Studio 版本有一項稱為**輕量型解決方案載入**的功能。 Visual Studio 2017 15.5 版和更新版本不再提供這項功能。 在 Visual Studio 15.5 版和更新版本中，即便不使用輕量型解決方案載入，含有 受控碼之大型解決方案的載入速度也比過去更快。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [Visual Studio 效能祕訣和訣竅](../ide/visual-studio-performance-tips-and-tricks.md)

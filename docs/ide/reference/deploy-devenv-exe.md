@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4561c8955f0ce4b1b5b50be8e31b5ff2ef5751d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2f7697217d59d430e2b4661548b7f922f8fd8c95
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="deploy-devenvexe"></a>/Deploy (devenv.exe)
 在建置或重建之後部署方案。 只適用於 受控碼專案。  
@@ -34,10 +35,10 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
   
 ## <a name="arguments"></a>引數  
  `SolnConfigName`  
- 必要項。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。  
+ 必要。 將用來建置在 `SolutionName` 中命名之方案的方案組態名稱。  
   
  `SolutionName`  
- 必要項。 方案檔的完整路徑和名稱。  
+ 必要。 方案檔的完整路徑和名稱。  
   
  /project `ProjName`  
  選擇項。 方案中專案檔的路徑和名稱。 您可以輸入從 `SolutionName` 資料夾到專案檔的相對路徑、專案的顯示名稱，或專案檔的完整路徑和名稱。  
@@ -59,7 +60,7 @@ devenv SolutionName /deploy SolnConfigName [/project ProjName] [/projectconfig P
 devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\MySolution\MySolution.sln" /deploy Release /project "CSharpWinApp\CSharpWinApp.csproj" /projectconfig Release   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Devenv 命令列參數](../../ide/reference/devenv-command-line-switches.md)   
  [/Project (devenv.exe)](../../ide/reference/project-devenv-exe.md)   
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   

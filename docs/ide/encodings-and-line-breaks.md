@@ -20,11 +20,12 @@ caps.latest.revision: "8"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b6afbc9ca8f93dcb0313c70a9d1e41579a6bf31f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 8a472a09a4d4d67f59d7879d03b466932d1445e6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encodings-and-line-breaks"></a>編碼與分行符號
 在 Visual Studio 中，會將下列字元解譯為分行符號：  
@@ -52,5 +53,5 @@ ms.lasthandoff: 11/07/2017
 
 或者，您可以選擇 [檔案]、[另存 \<檔案\> 為...] 來存取 [進階儲存選項] 對話方塊。在 [另存新檔] 對話方塊中，選擇 [儲存] 按鈕旁的下拉式三角形，然後選擇 [以編碼方式儲存...]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

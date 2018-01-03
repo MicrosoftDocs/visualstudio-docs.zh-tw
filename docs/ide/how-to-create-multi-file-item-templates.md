@@ -16,11 +16,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e3e1f6c6e62494f040e2f52180c5588688f460db
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a0cdd8fdd8ec36ccb070e8aaa197d728047a3fef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>如何：建立多檔案項目範本
 項目範本只能指定一個項目，但有時項目是由多個檔案所構成。 例如，Visual Basic 的 Windows Forms 項目範本需要下列三個檔案：  
@@ -83,7 +84,7 @@ ms.lasthandoff: 10/31/2017
 </VSTemplate>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立專案和項目範本](../ide/creating-project-and-item-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   

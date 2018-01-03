@@ -14,11 +14,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdad50eff09e96c5d9c0513be1f571a901278871
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 21b341f8900664c57fa21d33bc138a969a273759
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="threads-view-parallel-performance"></a>執行緒檢視 (平行處理效能)
 執行緒檢視是並行視覺化檢視中最詳細且功能豐富的檢視。 使用此檢視，您可以識別執行緒是否在執行中，或因為同步處理、 I/O 或因其他原因而遭到封鎖。  
@@ -147,5 +148,5 @@ ms.lasthandoff: 10/31/2017
 #### <a name="disk-operations"></a>磁碟作業  
  此索引標籤會顯示和代表目前處理序的磁碟 I/O 相關的處理序和執行緒，接觸到哪些檔案 (例如，載入的 DLL)、一共讀取多少個位元組以及其他資訊。 您可以使用此報表來評估執行期間花費在存取檔案的時間，尤其是處理序似乎為 I/O 繫結時。 如需詳細資訊，請參閱[磁碟作業報告](../profiling/disk-operations-report-threads-view.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [並行視覺化檢視](../profiling/concurrency-visualizer.md)

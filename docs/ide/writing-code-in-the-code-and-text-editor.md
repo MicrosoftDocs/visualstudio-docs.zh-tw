@@ -62,18 +62,19 @@ caps.latest.revision: "44"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb8229cffc2a3e30e3ce5a3a42af7e1673d11f3d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4f26fcfb6b12266dd980fb8c38075e1937fcc022
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="write-code-in-the-code-editor"></a>在程式碼編輯器中撰寫程式碼
 Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管理程式碼和文字。 您可以使用大綱，展開及摺疊程式碼的不同區塊。 您可以使用 IntelliSense、[物件瀏覽器] 及呼叫階層，進一步了解程式碼。 您可以使用 [移至]、[移至定義] 和 [尋找所有參考] 這類功能，找到程式碼。 您可以將程式碼片段插入程式碼區塊，並使用像是 [從使用量產生] 的功能來產生程式碼。 如果您從未使用過 Visual Studio 編輯器，請參閱[編輯程式碼](https://www.visualstudio.com/features/ide-vs) ，以取得快速概觀。  
 
  檢視程式碼有許多不同的方法。 根據預設，**方案總管**會顯示您按檔案組織的程式碼。 您可以按一下視窗底部的 [類別檢視] 索引標籤來檢視依類別組織的程式碼。
 
- 您可以搜尋並取代單一或多個檔案中的文字。 如需詳細資訊，請參閱[尋找和取代文字](../ide/finding-and-replacing-text.md)。 您可以使用規則運算式來尋找和取代文字。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。  
+ 您可以搜尋並取代單一或多個檔案中的文字。 如需詳細資訊，請參閱 [Finding and Replacing Text](../ide/finding-and-replacing-text.md)。 您可以使用規則運算式來尋找和取代文字。 如需詳細資訊，請參閱[在 Visual Studio 中使用規則運算式](../ide/using-regular-expressions-in-visual-studio.md)。  
 
  不同的 Visual Studio 語言提供不同的功能集，而在某些情況下，功能在不同的語言下運作方式也會不同。 在功能的描述中有指出許多這些差異，如需詳細資訊，請參閱特定 Visual Studio 語言的各章節。  
 
@@ -133,5 +134,5 @@ Visual Studio 編輯器提供許多功能，讓您能夠更輕鬆地撰寫並管
 
 如需自訂編輯器的詳細資訊，請參閱[自訂編輯器](../ide/customizing-the-editor.md)。 如需語言特定編輯器選項的資訊，請參閱[使用 C# 的 Visual Studio 開發環境](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)和[選項、文字編輯器、JavaScript、格式](../ide/reference/options-text-editor-javascript-formatting.md)。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

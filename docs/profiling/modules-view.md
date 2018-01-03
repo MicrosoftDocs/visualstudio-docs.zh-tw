@@ -17,11 +17,12 @@ caps.latest.revision: "17"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dd32edd9828702ec95754018ff361a44da00e5bd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: be5b8481170ee6d733fbe4cfc36d4606b644517e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view"></a>模組檢視
 模組檢視會列出分析資料的模組。 每個模組都是階層式樹狀結構的根節點。 模組的已分析函式列在模組節點之下。 如果使用取樣方法收集分析資料，則行資訊會列在函式節點下，而指令指標資料則列在行節點下。  
@@ -32,7 +33,7 @@ ms.lasthandoff: 10/31/2017
   
  [模組] 檢視中可用的資料行取決於用來收集資料的分析方法 (取樣或檢測)，以及是否在分析回合中收集 .NET 記憶體資料。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視](../profiling/modules-view-instrumentation-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   

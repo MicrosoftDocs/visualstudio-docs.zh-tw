@@ -16,11 +16,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 18c417016071cc25bdccde1c85e97431f20195d9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 24a3f7d50d90769fe64b3657a0327eb8c96b7b42
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-current-thread-command"></a>設定目前執行緒命令
 將指定的執行緒設為目前執行緒。  
@@ -33,7 +34,7 @@ Debug.SetCurrentThread index
   
 ## <a name="arguments"></a>引數  
  `index`  
- 必要項。 依索引選取執行緒。  
+ 必要。 依索引選取執行緒。  
   
 ## <a name="example"></a>範例  
   
@@ -41,7 +42,7 @@ Debug.SetCurrentThread index
 >Debug.SetCurrentThread 1  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)   
  [命令視窗](../../ide/reference/command-window.md)   
  [尋找/命令方塊](../../ide/find-command-box.md)   

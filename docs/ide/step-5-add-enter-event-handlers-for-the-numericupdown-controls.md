@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: f3cf117116f5da70391f5252e3d1bde4e2416b69
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3d205dae6dd00ec5d763b9fb36f9c48041438ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步驟 5：加入 NumericUpDown 控制項的 Enter 事件處理常式
 在本教學課程的第五個部分中，您將加入 Enter 事件處理常式，讓輸入測驗問題的答案時更加容易。 只要受測者選擇並開始輸入不同的值，這個程式碼就會選取並清除每個 NumericUpDown 控制項中的目前值。  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
      當您選擇 NumericUpDown 控制項時，現有的值就會自動選取，然後在您開始輸入不同的值時清除。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要移到下一個教學課程步驟，請參閱[步驟 6：新增減法問題](../ide/step-6-add-a-subtraction-problem.md)。  
   

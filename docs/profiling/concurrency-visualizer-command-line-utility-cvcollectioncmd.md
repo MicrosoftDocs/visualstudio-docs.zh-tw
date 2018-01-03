@@ -13,11 +13,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c23bc80fff6bf088d10c788b92a52b1c43fc5db9
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 53dd29671e20f19c0ef83d5920581c7038f32c9f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>並行視覺化檢視命令列公用程式 (CVCollectionCmd)
 您可以使用並行視覺化檢視命令列公用程式 (CVCollectionCmd.exe) 從命令列收集追蹤，以便在 Visual Studio 的並行視覺化檢視中進行檢視。 此工具可在未安裝 Visual Studio 的電腦上使用。  
@@ -74,7 +75,7 @@ ms.lasthandoff: 10/31/2017
 |Markers|包含標記提供者的清單。|可包含零個或多個 MarkerProvider 項目。|  
 |MarkerProvider|指定單一標記提供者。|必須包含下列項目：<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> 可包含下列項目：<br /><br /> -   Categories<br />-   IsEnabled|  
 |層級|設定 MarkerProvider 的重要性層級。|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
-|GUID|ETW 標記提供者的全域唯一識別項。|GUID。|  
+|Guid|ETW 標記提供者的全域唯一識別項。|GUID。|  
 |名稱|指定標記提供者的描述。|字串。|  
 |分類|指定標記提供者所收集的分類。|以逗號分隔字串表示多個數字或多個範圍的數字。|  
 |IsEnabled|設定值，決定是否啟用標記提供者進行收集。|-   True<br />-   False|  

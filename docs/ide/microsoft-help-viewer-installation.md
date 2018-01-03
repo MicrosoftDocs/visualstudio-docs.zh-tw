@@ -15,11 +15,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c3a7716f7f2f20504e854fe91afa0b315d856fef
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: f9192bc9e69e977b8e0e8a4bbdf36a9d20e9d33f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安裝
 有幾項產品可以在 Microsoft Help Viewer 中顯示說明內容，包括 Visual Studio 和 SQL Server。
@@ -50,6 +51,6 @@ ms.lasthandoff: 11/07/2017
 |---------|---------|
 |  ![影片的電影攝影機圖示](../install/media/video-icon.png "觀看影片")  |  [觀看影片](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) (英文) 以了解如何使用 Visual Studio 安裝程式安裝 Microsoft Help Viewer。 |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  
 [適用於 SQL Server 的說明檢視器和離線內容](/sql/sql-server/sql-server-help-installation)

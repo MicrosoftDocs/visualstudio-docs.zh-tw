@@ -17,11 +17,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7dea60ba0f6a443b8db94611460442bd08a8cf95
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: e17055848d7913547fcbcd563774e8360eea73e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="memory-usage-without-the-debugger"></a>記憶體使用量 (不使用偵錯工具)
 您可以使用「記憶體使用量」工具 (不偵錯) 來執行下列動作  
@@ -202,7 +203,7 @@ ms.lasthandoff: 11/11/2017
 |**大小 (位元組)**|對於執行個體，此為主要快照中的物件大小，但排除執行個體中包含的物件大小。<br /><br /> 對於類型，此為主要快照中，類型的執行個體大小總計，但排除執行個體中包含的物件大小。|  
 |**內含大小 (位元組)**|主要快照中的物件大小，包括物件中包含的物件大小。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [JavaScript 記憶體](../profiling/javascript-memory.md)  
  [Visual Studio 中的分析](../profiling/index.md)  
  [程式碼剖析功能導覽](../profiling/profiling-feature-tour.md)  

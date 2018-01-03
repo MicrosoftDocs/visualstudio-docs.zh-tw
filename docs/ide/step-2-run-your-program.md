@@ -12,11 +12,12 @@ caps.latest.revision: "14"
 author: TerryGLee
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: 0c50254bc632bce298e547e5599adeb99d593da7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 78b85460ad7edf7163a8a53c7c4706790f493b58
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="step-2-run-your-program"></a>步驟 2：執行您的程式
 當您建立新的方案時，實際上就是建置要執行的程式。 它現在還沒有其他功能，只是顯示空白視窗，標題列中顯示 **Form1**。 但它真的可以執行，因為您即將進一步了解其做法。  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  當您在 IDE 內部執行程式時，就稱為「偵錯」，因為您通常會這樣做來尋找和修正程式碼中的 Bug (錯誤)。 雖然此程式很小，而且實際上不會有任何作用，但它仍然是真正的程式。 您遵循相同程序執行和偵錯其他程式。 若要進一步了解偵錯，請參閱[偵錯工具基本概念](../debugger/debugger-basics.md)。  
   
-### <a name="to-continue-or-review"></a>繼續或檢視  
+### <a name="to-continue-or-review"></a>若要繼續或檢視  
   
 -   若要前往下一個教學課程步驟，請參閱[步驟 3：設定您的表單屬性](../ide/step-3-set-your-form-properties.md)。  
   

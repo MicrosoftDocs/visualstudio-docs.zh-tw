@@ -14,11 +14,12 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 852779620ec1d070da5aaabb0b5a9df8dafda359
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1158d4a584bddc065b65bd282a5f53666eae9946
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cpu-utilization-graph"></a>CPU 使用率圖形
 CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X 軸代表追蹤的持續時間，而 y 軸代表系統上的邏輯核心數目。 圖形不會顯示在任何指定時間作用中的特定核心。 例如，如果兩個核心在某個指定期間各以 50% 的產能執行，則此檢視會顯示共使用一個邏輯核心。  
@@ -33,6 +34,6 @@ CPU 使用率圖形顯示應用程式經過一段時間的使用率等級。 X �
   
 -   白色表示系統上未使用的邏輯核心可用性。 如果您可以找到更多平行處理的機會，您的處理序就可以使用這些核心。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用率檢視](../profiling/utilization-view.md)   
  [平均 CPU 使用率](../profiling/average-cpu-utilization.md)

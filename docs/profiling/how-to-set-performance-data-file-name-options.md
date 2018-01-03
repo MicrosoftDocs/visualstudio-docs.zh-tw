@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 308766c1a4fbe5194f1330bd74c81f6d9d41b36f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 309cf7f8fe93cdfca355ff55f54e2247e80068cf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：設定效能資料檔案名稱選項
 根據預設，您要使用下列語法來儲存程式碼剖析資料 (.vsp) 檔案：  
@@ -25,7 +26,7 @@ ms.lasthandoff: 10/31/2017
   
  您可以在效能工作階段中屬性對話方塊的 [一般] 頁面上，變更任何命名參數。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   

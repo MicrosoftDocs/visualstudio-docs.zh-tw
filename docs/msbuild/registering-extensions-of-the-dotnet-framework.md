@@ -16,11 +16,12 @@ caps.latest.revision: "5"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: ccffad8637f032993c71efa2eca3ba7d14e6e88a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 5e9ab37b054dd137590b38dcd62d2de7ebdd1cd1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>註冊 .NET Framework 的擴充功能
 您可以開發組件來擴充特定版本的 .NET Framework。 若要讓組件出現在 Visual Studio 的 [加入參考] 對話方塊中，您必須將包含該組件的資料夾加入至系統登錄。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
   
  若要登錄 64 位元電腦上的 32 位元組件，請使用 Wow6432 節點，例如︰HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 整合](../msbuild/visual-studio-integration-msbuild.md)

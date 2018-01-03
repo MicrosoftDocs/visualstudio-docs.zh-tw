@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 87fc48cb69534e723a0a48e559550bdbef63f93f
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 175a22ecb56f8c41d76512309df2b0443a7481b6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>做法：在 Visual Studio IDE 中四處移動
 整合式開發環境 (IDE) 經過設計，可讓您使用數種不同方式，執行視窗至視窗以及檔案至檔案之間的移動 (根據您的喜好或專案需求而定)。 您可選擇在編輯器中循環瀏覽開啟的檔案，或是在 IDE 中循環瀏覽所有使用中的工具視窗。 您亦可在編輯器中直接切換至任何開啟的檔案，而忽略上次存取檔案的順序。 這些功能可協助您提升使用 IDE 工作時的生產力。  
@@ -91,6 +92,6 @@ ms.lasthandoff: 11/07/2017
     > [!TIP]
     > 若要反轉瀏覽 [使用中的工具視窗] 清單的順序，請按住 SHIFT + ALT 鍵並按 F7。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [自訂視窗版面配置](../ide/customizing-window-layouts-in-visual-studio.md)   
 [預設鍵盤快速鍵](../ide/default-keyboard-shortcuts-in-visual-studio.md)

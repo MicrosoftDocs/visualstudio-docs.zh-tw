@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a30a37f5003d407edb46ab3d4475b99f5bbe54ab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a7fcef6ffd829ea999c1ed8d62d34083f5adab46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="disk-operations-report-threads-view"></a>磁碟作業報告 (執行緒檢視)
 磁碟作業報告顯示磁碟通道中的磁碟 I/O 作業。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 10/31/2017
   
 -   寫入延遲 (以毫秒為單位)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [執行緒檢視](../profiling/threads-view-parallel-performance.md)

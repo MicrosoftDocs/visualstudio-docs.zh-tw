@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f6b91542039544e085b6599923e9cc8dcb08d6c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fd39cc9116ffed336f45bb31b859b5f1d8b92735
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法會遞增所指定分析層級的暫止/繼續計數器。  
@@ -37,7 +38,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI SuspendProfile(
   
 |列舉值|描述|  
 |----------------|-----------------|  
-|PROFILE_GLOBALLEVEL|全域層級設定會影響分析回合中的所有處理序和執行緒。|  
+|PROFILE_GLOBALLEVEL|全域層級設定會影響分析執行中的所有處理序和執行緒。|  
 |PROFILE_PROCESSLEVEL|處理序層級設定會影響屬於所指定處理序的所有執行緒。|  
 |PROFILE_THREADLEVEL|執行緒分析層級設定會影響指定的執行緒。|  
   
@@ -106,5 +107,5 @@ void ExerciseSuspendProfile()
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

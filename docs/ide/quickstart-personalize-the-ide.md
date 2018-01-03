@@ -10,11 +10,12 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a08bcc91159182043b68391bc869243909d6df8b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: ef88495e4251376a7b2f297293ce865f3917c7e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>快速入門：將 Visual Studio IDE 和編輯器個人化
 
@@ -95,7 +96,7 @@ Visual Studio 2017 的預設色彩佈景主題為 [藍色]。 讓我們將它變
 
 我們已探索在 Visual Studio 中自訂色彩的幾種方式。 希望您繼續探索 [選項] 對話方塊中的其他自訂選項，以真正打造屬於您自己的 Visual Studio。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：Visual Studio IDE 初探](../ide/quickstart-ide-orientation.md)  
 [快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  

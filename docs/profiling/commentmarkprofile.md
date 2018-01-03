@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0cb46497c8e00cedeb4056571d8fa1d19eb26c0c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 413c429343b564aea941e61d86308e68d5910c51
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 函式會在 .vsp 檔中插入數字標記和文字字串。 針對要插入的標記和註解，包含 `CommentMarkProfile` 函式之執行緒的分析必須是 ON。  
@@ -69,7 +70,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
   
 |||  
 |-|-|  
-|**標題**|包含 VSPerf.h|  
+|**標頭**|包含 VSPerf.h|  
 |**程式庫**|使用 VSPerf.lib|  
 |**Unicode**|實作為 `CommentMarkProfileW` (Unicode) 和 `CommentMarkProfileA` (ANSI)。|  
   
@@ -112,5 +113,5 @@ void ExerciseCommentMarkProfile()
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

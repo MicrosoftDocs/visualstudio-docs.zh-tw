@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.codefix.previewchanges
-ms.openlocfilehash: 52555d0bc112dae41f189fd9f29711da365fd59c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 615dd6b627e06fc02196363612ed2ac43eda38a6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="preview-changes"></a>預覽變更
 
@@ -30,5 +31,5 @@ ms.lasthandoff: 10/31/2017
 
 檢閱變更之後，請按一下 [套用] 按鈕認可這些變更，或按一下 [取消] 按鈕不進行變更。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [在 Visual Studio 中重構](../ide/refactoring-in-visual-studio.md)

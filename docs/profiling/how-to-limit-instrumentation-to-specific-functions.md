@@ -13,11 +13,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8fae944ae73c3bfdfdf278b9b905ebab06ba3ff1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 69cc476dc43562e5226ebd6564dfb2733f1d57ae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：限制檢測特定函式
 您可以透過在 [效能工作階段] 或目標二進位檔屬性頁的 [進階] 頁面中設定選項，將檢測和資料收集限制在一或多個函式：  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 1.  在 [效能總管] 中，以滑鼠右鍵按一下工作階段名稱，然後按一下 [屬性]。  
   
-     [屬性頁] 對話方塊隨即顯示。  
+     [屬性頁] 對話方塊隨即出現。  
   
 2.  在 [屬性頁] 對話方塊中，按一下 [進階]。  
   
@@ -67,7 +68,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  若要列出二進位檔中的函式，請在程式碼剖析工具安裝目錄 (通常是 [!INCLUDE[vsprvsts](../code-quality/includes/vsprvsts_md.md)] 安裝目錄底下的 \Team Tools\Performance Tools 目錄) 中開啟命令提示字元視窗，然後輸入 **vsinstr /DumpFuncs**  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制資料收集](../profiling/controlling-data-collection.md)   
  [如何：限制檢測特定 DLL](../profiling/how-to-limit-instrumentation-to-specific-dlls.md)   
  [如何：指定其他的檢測選項](../profiling/how-to-specify-additional-instrumentation-options.md)

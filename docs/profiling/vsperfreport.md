@@ -19,11 +19,12 @@ caps.latest.revision: "32"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7fceff125460ad5dc9896226458b1c7dddb077a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 075d6549125af399382b1f0018fedadf8dad53ee
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令列工具可用來建立使用「[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具」分析資料檔案的報告。 預設報告格式為 .csv 檔案。  
@@ -92,5 +93,5 @@ VSPerfReport [/U] /diff vspfilename1 vspfilename2 [/options]
 |**DiffColumn:**[*columnname*]|使用此特定資料行來比較值。 預設為專有樣本百分比資料行。|  
 |**QueryDiffTables**|列出提供之兩個報告檔案的有效資料表和資料行。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能報告檢視](../profiling/performance-report-views.md)

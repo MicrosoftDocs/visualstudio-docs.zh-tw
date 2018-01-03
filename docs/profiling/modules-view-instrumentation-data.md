@@ -13,11 +13,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bdf78e13b7205ac5bc04a67796c1e226f194b0c3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 897a64f10ce7b4970f4ec0b9b631315104bcaae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="modules-view---instrumentation-data"></a>模組檢視 - 檢測資料
 模組檢視顯示依據分析資料中模組來分組的效能資料。 模組的函式列在模組節點之下。  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
   
 |Column|描述|  
 |------------|-----------------|  
-|**Name**|函式或模組的名稱。|  
+|**名稱**|函式或模組的名稱。|  
 |**函式行號**|原始程式檔中這個函式的開頭行號。|  
 |**呼叫次數**|呼叫此函式或模組的總次數。|  
 |**原始程式檔**|含有這個函式定義的原始程式檔。|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="elapsed-inclusive-values"></a>功能內含耗用值  
  功能內含耗用值表示函式在呼叫堆疊上的時間。 該時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**功能內含耗用 (Elapsed Inclusive) 時間**|-   對於函式，這是在函式中花費的時間。 此時間包含在子函式中及呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間。|  
 |**功能內含耗用 (Elapsed Inclusive) 時間 %**|在此模組或函式的總功能內含耗用時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -63,7 +64,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="application-inclusive-values"></a>應用程式內含值  
  應用程式內含值表示函式在呼叫堆疊上的時間。 該時間不包含呼叫作業系統所花費的時間，例如內容切換和輸入/輸出作業，但包含在子函式中花費的時間。  
   
-|Column|說明|  
+|Column|描述|  
 |------------|-----------------|  
 |**應用程式內含 (Application Inclusive) 時間**|-   對於函式，這是呼叫函式所花費的時間。 這包含在子函式中花費的時間，但排除呼叫作業系統 (例如內容切換和輸入/輸出作業) 的時間。<br />-   對於模組，這是模組中至少有一個函式在呼叫堆疊上的時間。 此時間排除呼叫作業系統所花費的時間。|  
 |**應用程式內含 (Application Inclusive) 時間 %**|在此模組或函式的應用程式內含時間內，花費在分析執行的總功能內含耗用時間百分比。|  
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
 |**最大應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此函式的最大應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最大應用程式專屬時間。|  
 |**最小應用程式專屬 (Application Exclusive) 時間**|-   對於函式，這是呼叫此模組或函式的最小應用程式專屬時間。<br />-   對於模組，這是所有呼叫此模組中之函式的最小應用程式專屬時間。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [模組檢視](../profiling/modules-view-sampling-data.md)   
  [模組檢視 - 檢測](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [模組檢視 - 取樣](../profiling/modules-view-dotnet-memory-sampling-data.md)

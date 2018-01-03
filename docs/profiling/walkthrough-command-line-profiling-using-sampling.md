@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 338b79cfe5dbdb812b385d237523d2a79d8cc965
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 403e685fa6a386ea0de73c74a27261d9ab77786e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>逐步解說：使用取樣進行命令列剖析
 本逐步解說將示範如何使用命令列工具和取樣來剖析應用程式，以識別效能問題。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="prerequisites"></a>必要條件  
   
--   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]、[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)] 或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
+-   [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]、 [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]或 [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
 -   對 [!INCLUDE[csharp_current_short](../misc/includes/csharp_current_short_md.md)] 有中等程度的了解  
   
@@ -105,9 +106,9 @@ ms.lasthandoff: 10/31/2017
         VSPerfReport <dir> PeopleTraxReport.vsp /output:<dir> /summary:all  
         ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能工作階段概觀](../profiling/performance-session-overview.md)   
  [從命令列使用程式碼剖析工具](../profiling/using-the-profiling-tools-from-the-command-line.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [認識取樣資料值](../profiling/understanding-sampling-data-values.md)   
+ [了解取樣資料值](../profiling/understanding-sampling-data-values.md)   
  [效能報告檢視](../profiling/performance-report-views.md)

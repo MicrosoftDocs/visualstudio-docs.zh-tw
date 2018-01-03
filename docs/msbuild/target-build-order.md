@@ -13,11 +13,12 @@ caps.latest.revision: "18"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7fbe62b55fde85127756b9d73be333068bb9aad3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7768d6ba35c2116c658dcd1b7968080932b99543
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="target-build-order"></a>目標建置順序
 如果某一個目標的輸入相依於另一個目標的輸出，則必須排序目標。 您可以使用這些屬性來指定執行目標的順序：  
@@ -120,5 +121,5 @@ ms.lasthandoff: 10/31/2017
   
 7.  執行或略過目標之後，就會執行在 `AfterTargets` 屬性中列出它的任何目標。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [目標](../msbuild/msbuild-targets.md)

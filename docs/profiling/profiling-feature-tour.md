@@ -13,11 +13,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4899f59362f623f6ecf92927e8a15ed4762fa367
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: 25e4397ac3f3b2a8191dc9d9850f643e0be3d539
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="profiling-feature-tour"></a>分析功能導覽
 
@@ -37,7 +38,7 @@ Visual Studio 提供各種不同的分析工具，可協助您依據應用程式
 
 CPU 使用量工具是您開始分析應用程式效能的最佳入門。 它會告訴您應用程式耗用的 CPU 資源詳細資訊。 如需 [CPU 使用量] 工具的詳細逐步解說，請參閱[效能分析的初學者指南](../profiling/beginners-guide-to-performance-profiling.md)。
 
-從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] (必須在偵錯工作階段中)。
+從 [診斷工具] 的 [摘要] 檢視中，選擇 [啟用 CPU 分析] \(必須在偵錯工作階段中)。
 
 ![在診斷工具中啟用 CPU 使用量](../profiling/media/prof-tour-enable-cpu-profiling.png "診斷工具啟用 CPU 使用量")
 
@@ -154,13 +155,13 @@ JavaScript 記憶體工具和其他應用程式類型提供的記憶體使用量
 |[記憶體使用量](../profiling/memory-usage.md)|是|是|是|  
 |[CPU 使用量](../profiling/cpu-usage.md)|是|是|是 (對 .NET Core/ASP.NET Core 則否)|  
 |[GPU 使用量](../debugger/gpu-usage.md)|是|是|no|  
-|[應用程式時間軸](../profiling/application-timeline.md)|是|是|no|  
+|[應用程式時間軸](../profiling/application-timeline.md)|是|是|否|  
 |[效能提示](../profiling/perftips.md)|是|對 XAML 為是，對 HTML 為否|是|  
-|[效能總管](../profiling/performance-explorer.md)|是|no|是 (對 ASP.NET Core 則否)|  
+|[效能總管](../profiling/performance-explorer.md)|是|否|是 (對 ASP.NET Core 則否)|  
 |[IntelliTrace](../debugger/intellitrace.md)|僅限 .NET Enterprise|僅限 .NET Enterprise|僅限 .NET Enterprise|
-|[網路使用量](../profiling/network-usage.md)|no|是|no| 
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|no|對 HTML 為是，對 XAML 為否|no|  
-|[JavaScript 記憶體](../profiling/javascript-memory.md)|no|對 HTML 為是，對 XAML 為否|no|  
+|[網路使用量](../profiling/network-usage.md)|否|是|否| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|否|對 HTML 為是，對 XAML 為否|否|  
+|[JavaScript 記憶體](../profiling/javascript-memory.md)|否|對 HTML 為是，對 XAML 為否|否|  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/debugging-in-visual-studio.md)

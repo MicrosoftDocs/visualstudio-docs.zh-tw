@@ -13,11 +13,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 520b5b2d9d0a66df3bbe17a0e8deea69147cbf17
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: e99bda20d8591f314a75ee74e1b162e5fd64be81
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Visual Basic 程式碼檔案的 IntelliSense
 
@@ -55,6 +56,6 @@ IntelliSense in Zone 可協助需要透過 [!INCLUDE[ndptecclick](../deployment/
 
 在 Visual Basic 中，IntelliSense 完成清單有兩個接近清單底部的索引標籤控制項。 預設選取的 [通用] 索引標籤會顯示最常用來完成您所撰寫陳述式的項目。 [全部] 索引標籤會顯示所有可用於進行自動完成的項目，包含也在 [通用] 索引標籤上的項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 IntelliSense](../ide/using-intellisense.md)

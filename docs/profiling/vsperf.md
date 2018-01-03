@@ -12,11 +12,12 @@ caps.latest.revision: "6"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8bd2365752e31ce463610b75fee3884271841b3c
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: ea6214987e12b8c5cf7e563b666822989d3a7015
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="vsperf"></a>VSPerf
 使用 **VsPerf** 命令列工具，可以︰  
@@ -44,7 +45,7 @@ ms.lasthandoff: 11/11/2017
 |**/app:{AppName}**|從 [開始] 功能表啟動分析工具，並等候指定的應用程式啟動。<br /><br /> 執行 `vsperf /listapps` 來檢視已安裝應用程式的 AppName 和 PackageFullName。|  
 |**/package:{PackageFullName}**|從 [開始] 功能表啟動分析工具，並等候指定的應用程式啟動。<br /><br /> 執行 `vsperf /listapps` 來檢視已安裝應用程式的 AppName 和 PackageFullName。|  
 |**/js**|分析 JavaScript 應用程式時的必要項。<br /><br /> 可從 JavaScript 應用程式收集效能資料。<br /><br /> 只能搭配 /package 或 /attach 一起使用。|  
-|**/noclr**|選擇項。 不會收集 CLR 資料。<br /><br /> 只能搭配 /package 或 /attach 一起使用。<br /><br /> 最佳化，不會解析任何 Managed 符號。|  
+|**/noclr**|選擇性。 不會收集 CLR 資料。<br /><br /> 只能搭配 /package 或 /attach 一起使用。<br /><br /> 最佳化，不會解析任何 Managed 符號。|  
 |**/listapps**|列出已安裝應用程式的 AppName 和 PackageFullNames。|  
   
 ##  <a name="BKMK_Windows_8_classic_applications_and_Windows_Server_2012_applications_only"></a>僅限 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式  
@@ -62,13 +63,13 @@ ms.lasthandoff: 11/11/2017
 |||  
 |-|-|  
 |**/attach:{PID&#124;ProcessName}[,PID&#124;ProcessName]...**|從指定的處理序收集資料。<br /><br /> 使用 [工作管理員] 來檢視執行中應用程式的處理序識別碼 (PID) 和處理序名稱。|  
-|**/file:{ReportName}**|選擇項。 指定輸出檔案 (覆寫現有的檔案)。<br /><br /> 只能搭配 /package 或 /attach 一起使用。|  
+|**/file:{ReportName}**|選擇性。 指定輸出檔案 (覆寫現有的檔案)。<br /><br /> 只能搭配 /package 或 /attach 一起使用。|  
 |**/pause**|暫停資料收集。|  
 |**/resume**|繼續資料收集。|  
 |**/stop**|停止資料收集，並終止目標處理序。|  
 |**/detach**|停止資料收集，但讓目標處理序繼續執行。|  
 |**/status**|顯示分析工具的狀態。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)   
  [從命令列進行程式碼剖析](../profiling/using-the-profiling-tools-from-the-command-line.md)

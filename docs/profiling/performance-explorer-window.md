@@ -16,16 +16,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e6fc3be33c332d643e5feb48f4a3733395c2a608
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ab16dca3d4d27c157620f59774ec37f57aae020
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-explorer-window"></a>效能總管視窗
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]整合式開發環境 (IDE) 中的 [效能總管] 視窗可讓您利用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 程式碼剖析工具來設定及啟動效能工作階段。  
   
- **Requirements**  
+ **需求**  
   
 -   [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)], [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)], [!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]  
   
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 -   **報表** - 顯示針對工作階段產生的程式碼剖析工具資料檔案的名稱。 以滑鼠右鍵按一下 [報表] 以加入現有的報表，或比較兩個程式碼剖析工具資料檔案。 以滑鼠右鍵按一下報表名稱以開啟、移除或匯出程式碼剖析工具資料檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [概觀](../profiling/overviews-performance-tools.md)   
  [設定效能工作階段](../profiling/configuring-performance-sessions.md)   
  [控制資料收集](../profiling/controlling-data-collection.md)

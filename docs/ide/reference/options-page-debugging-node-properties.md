@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6bb51d32ea249ba573733babcb7c9ed0cf0dde
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d53460304cee56d39100a82a2e1e975f8129aa6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-debugging-node-properties"></a>偵錯節點屬性、選項頁
 下表描述與 [選項] 對話方塊的 [偵錯] 分類 `DTE.Properties("Debugging", <Property Page>)` 相關聯的頁面 (或屬性集合)。  
@@ -80,7 +81,7 @@ ms.lasthandoff: 10/31/2017
 |LoadDllExports|Get/Set (布林值)|決定偵錯工具是否載入 DLL 匯出表。|  
 |EnableRPC|Get/Set (布林值)|決定偵錯工具是否可以逐步執行至 COM 遠端程序呼叫。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [字型和色彩節點屬性、選項頁](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   

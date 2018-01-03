@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae321a8d09bb52b6ef835ab6469fd161013d4eeb
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: multiple
+ms.openlocfilehash: c12d279541e60353a9e6e4354a16870713498b66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="collecting-tier-interaction-data"></a>收集階層互動資料
 階層互動分析提供透過 ADO.NET 服務與資料庫通訊之多介層應用程式函式執行時間的其他資訊。 只針對同步函式呼叫收集資料。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/11/2017
   
  **Windows 8 和 Windows Server 2012**  
   
- 若要在 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式上收集階層互動資料，您必須使用檢測方法。 您無法收集 UWP 應用程式的階層互動資料。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。 其他支援的 Windows 版本上的所有程式碼剖析方法都可以包含階層互動資料。  
+ 若要在 Windows 8 傳統型應用程式和 Windows Server 2012 應用程式上收集階層互動資料，您必須使用檢測方法。 您無法收集 UWP App 的階層互動資料。 請參閱 [Windows 8 和 Windows Server 2012 應用程式的效能工具](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md)。 其他支援的 Windows 版本上的所有程式碼剖析方法都可以包含階層互動資料。  
   
  **效能精靈**  
   
@@ -47,5 +48,5 @@ ms.lasthandoff: 11/11/2017
   
 3.  在 [效能總管] 中，選取 [目標] 節點，然後指定您想要分析的專案、可執行檔或網站。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [階層互動檢視](../profiling/tier-interactions-view.md)

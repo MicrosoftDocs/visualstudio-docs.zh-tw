@@ -21,11 +21,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ba6e1613410c8143126254c8f7a4bd325c6e6f22
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: dotnet
+ms.openlocfilehash: b0b69b7eafbfbb1b5c2c582fd0c734a183ea0a78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-text-editor-c-intellisense"></a>IntelliSense、C#、文字編輯器、選項
 使用 [IntelliSense] 屬性頁修改影響 Visual C# 之 IntelliSense 行為的設定。 您可以存取 [IntelliSense] 屬性頁，方法是按一下 [工具] 功能表上的 [選項]，並按一下 [文字編輯器] 資料夾中的 [C#]，然後按一下 [IntelliSense]。  
@@ -69,7 +70,7 @@ ms.lasthandoff: 12/07/2017
  **預先選取最近使用的成員**  
  選取這個選項時，IntelliSense 會預先選取您最近在 [列出成員] 快顯方塊中選取的成員，以在整合式開發環境 (IDE) 中於目前工作階段期間自動補齊物件名稱。 IDE 會在每個工作階段之間，清除最近使用過的成員記錄。 如需詳細資訊，請參閱[用於最近一次使用之成員的 IntelliSense](../../ide/visual-csharp-intellisense.md#most-recently-used-members)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)   
  [XML 文件註解](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)   
  [使用 IntelliSense](../../ide/using-intellisense.md)

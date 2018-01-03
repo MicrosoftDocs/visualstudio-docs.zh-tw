@@ -15,11 +15,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8a7bee6cb18fee301dfab5e7c08c58521eac4e84
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 587e76a0108f3636d851b299c30506e0d8d55d9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="performance-report-view-filter"></a>效能報告檢視篩選條件
 [程式碼剖析工具報告檢視篩選條件] 視窗位於 [效能報告] 視窗頂端。 如果您看不到這個視窗，請按一下 [顯示篩選條件] 按鈕。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
  若要儲存篩選條件，請按一下 [效能報告] 工具列上的 [匯出篩選條件]，然後指定 .vspf 檔案的位置和檔案名稱。 若要載入先前儲存的篩選條件，請按一下 [匯入篩選條件]，並找出已儲存的篩選條件檔案。 您也可以在已安裝獨立程式碼剖析工具的電腦上，使用篩選條件檔案來篩選資料檔案。 如需詳細資訊，請參閱 [VSPerfReport](../profiling/vsperfreport.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析效能工具資料](../profiling/analyzing-performance-tools-data.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

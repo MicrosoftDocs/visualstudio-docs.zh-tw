@@ -12,16 +12,17 @@ caps.latest.revision: "6"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f67fd72d6e7a74d0af462ef65e0ddd535474188c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c5faa495aac0538b017e341a31a2546f9a528716
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="artboard-modifier-keys-in-blend"></a>Blend 中的畫板輔助按鍵
 某些鍵盤快速鍵沒有相關的功能表項目，這代表您不能使用 [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] 使用者介面來找出它們。 下表列出可修改動作的快速鍵，例如調整物件大小。  
   
-|若要執行這項操作|請這樣做|  
+|若要執行這項操作|請執行|  
 |-----------------------|-------------|  
 |在其他工具仍為選取狀態時，暫時選取[選取] 工具 (這樣可減少您必須在 [工具] 面板中，於 [選取] 工具和其他工具間來回選取項目的次數)|按住 CTRL|  
 |在已選取 [選取] 工具時，微調選取的物件|按下方向鍵|  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
 |切換開啟的文件|按下 CTRL+TAB|  
 |開啟 [資產] 面板|按下 CTRL+句點|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [鍵盤快速鍵](../designers/keyboard-shortcuts-in-blend.md)   
  [畫筆工具輔助按鍵](../designers/pen-tool-modifier-keys-in-blend.md)   
  [直接選取工具輔助按鍵](../designers/direct-selection-tool-modifier-keys-in-blend.md)

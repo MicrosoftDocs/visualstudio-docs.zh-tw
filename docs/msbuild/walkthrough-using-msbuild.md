@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 9500cdb26b51d3a91b9565c7ef0353907e9afe7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fa0ec9c483244e15e5cc51cb6bdb743c1f586e7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-using-msbuild"></a>逐步解說：使用 MSBuild
 MSBuild 是 Microsoft 和 Visual Studio 的建置平台。 此逐步解說將介紹 MSBuild 的建置區塊，以及示範如何撰寫和管理 MSBuild 專案及進行偵錯。 學習內容：  
@@ -389,7 +390,7 @@ $(PropertyName)
     ```  
   
 ### <a name="include-exclude-and-wildcards"></a>Include、Exclude 和萬用字元  
- 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如：  
+ 您可以使用萬用字元 "*"、"\*\*" 及 "?" 搭配 Include 屬性，來將項目加入至項目類型。 例如，套用至物件的  
   
 ```xml  
 <Photos Include="images\*.jpeg" />  
@@ -577,6 +578,6 @@ $(PropertyName)
 ## <a name="whats-next"></a>後續步驟？  
  若要了解如何逐步建立簡單的專案檔，請嘗試[逐步解說︰從頭開始建立 MSBuild 專案檔](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。  
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [MSBuild 概觀](../msbuild/msbuild.md)  
  [MSBuild 參考](../msbuild/msbuild-reference.md)

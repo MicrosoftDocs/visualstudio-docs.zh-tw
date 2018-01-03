@@ -15,11 +15,12 @@ caps.latest.revision: "59"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 45714799a518cefa1edb7164437af7c4a067b0e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4e809363656b94dc4e922d558a57a0848dba46e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] 是用於建置應用程式的平台。 這個引擎也稱為 MSBuild，提供了專案檔的 XML 結構描述，以控制組建平台處理和建置軟體的方式。 Visual Studio 會使用 MSBuild，但 MSBuild 並不倚賴 Visual Studio。 藉由在專案或方案檔上叫用 msbuild.exe，就可以在未安裝 Visual Studio 的環境中組織及建置產品。  
@@ -191,7 +192,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[逐步解說：從頭開始建立 MSBuild 專案檔案](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|顯示如何僅使用文字編輯器來累加建立基本專案檔。|  
 |[逐步解說：使用 MSBuild](../msbuild/walkthrough-using-msbuild.md)|介紹 MSBuild 的建置區塊，以及顯示如何在不關閉 Visual Studio IDE 的情況下，撰寫和管理 MSBuild 專案及進行偵錯。|  

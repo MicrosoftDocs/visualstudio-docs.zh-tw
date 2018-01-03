@@ -1,10 +1,10 @@
 ---
-redirect_url: ../ide/visual-studio-ide
-ms.openlocfilehash: a615a3a6da289f265e350d529349f1fb6ba6865f
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+redirect_url: /visualstudio/ide/visual-studio-ide
+ms.openlocfilehash: 5f1fa39d6e6cde1664a8aaa34aed7cba726b1d56
+ms.sourcegitcommit: 64c7682ec3a2cbea684e716803398d4278b591d1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="get-started-with-visual-studio"></a>Visual Studio 使用者入門
 Visual Studio 是用於開發應用程式的功能強大工具。 如果您尚未這麼做，請繼續進行，並下載和安裝 [Visual Studio](https://www.visualstudio.com/vs/)。 如需下載 Visual Studio 並以想要方式進行設定的詳細資訊，請觀看 [Getting Started with Visual Studio - Setting up your IDE](https://www.youtube.com/watch?v=xLCedknQkN0&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=1) (Visual Studio 使用者入門 - 設定 IDE) 影片。

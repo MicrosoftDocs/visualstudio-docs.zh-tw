@@ -18,11 +18,12 @@ caps.latest.revision: "4"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 7ed15f93394b5709d1ab06cc36b65464cdff8385
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e2d370f559478f0fd11f4d1edb10618658a87ccc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基底類別
 許多工作繼承自 <xref:Microsoft.Build.Tasks.ToolTaskExtension> 類別，該類別繼承自 <xref:Microsoft.Build.Utilities.ToolTask> 類別，而其本身是繼承自 <xref:Microsoft.Build.Utilities.Task> 類別。 此繼承鏈結將數個參數加入至從它們衍生的工作。 本文件會列出這些參數。  
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
 |<xref:Microsoft.Build.Utilities.ToolTask.UseCommandProcessor%2A>|選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作會針對命令列建立批次檔，並且使用命令處理器來執行，而不是直接執行命令。|  
 |<xref:Microsoft.Build.Utilities.ToolTask.YieldDuringToolExecution%2A>|選擇性的 `bool` 參數。<br /><br /> 當設為 `true` 時，這項工作在執行其工作時，會產生節點。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作參考](../msbuild/msbuild-task-reference.md)   
  [工作](../msbuild/msbuild-tasks.md)

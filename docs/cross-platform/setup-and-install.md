@@ -11,11 +11,12 @@ caps.latest.revision: "16"
 author: ghogen
 ms.author: ghogen
 manager: ghogen
-ms.openlocfilehash: 4f525157e9e34838be4379f8df0845b294880f11
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: xamarin
+ms.openlocfilehash: ab7dc9eb430f797f11bcdd641af2a06b2380d9ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="setup-and-install"></a>設定和安裝
 若要建置 Xamarin 從通用 C#/.NET 程式碼基底建置原生 iOS、Android 和 Windows 應用程式，您需要下列項目：  

@@ -21,11 +21,12 @@ caps.latest.revision: "29"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: b35c3b87a1526f0453e1385c92c5ecefc5ec55da
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 222299d3a13b716f6a522513a71fc1cb7cbe1084
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>疑難排解 .NET Framework 目標錯誤
 本主題說明可能因參考問題造成的 MSBuild 錯誤，以及如何解決這些錯誤。  
@@ -56,7 +57,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  在關閉並重新開啟專案後，您也應該重建它，以確保能夠正確解析所有參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：以 .NET Framework 版本為目標](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile)   
  [以特定的 .NET Framework 版本為目標](../ide/targeting-a-specific-dotnet-framework-version.md)   

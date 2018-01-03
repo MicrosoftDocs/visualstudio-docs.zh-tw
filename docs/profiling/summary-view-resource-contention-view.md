@@ -13,11 +13,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 99865ecf81fbc7873fef43c51f543f224e281928
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7a6e681c703847c970d79c1523ab12ce89e68d28
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="summary-view---resource-contention-view"></a>摘要檢視 - 資源爭用檢視
 [摘要] 檢視顯示因在等候資源存取權而暫停應用程式中執行緒或處理序的事件相關資訊。  
@@ -34,7 +35,7 @@ ms.lasthandoff: 10/31/2017
   
 |資料行|描述|  
 |------------|-----------------|  
-|**Name**|資源名稱。|  
+|**名稱**|資源名稱。|  
 |**爭用 %**|就程式碼剖析資料中的所有爭用事件，爭用此資源所佔的百分比。|  
   
 ## <a name="most-contended-thread"></a>最多爭用的執行緒  
@@ -45,5 +46,5 @@ ms.lasthandoff: 10/31/2017
 |資料行|描述|  
 |------------|-----------------|  
 |**ID**|執行緒識別碼。|  
-|**Name**|擁有該執行緒的處理序名稱。|  
+|**名稱**|擁有該執行緒的處理序名稱。|  
 |**爭用 %**|就程式碼剖析資料中的所有爭用事件，爭用此資源所佔的百分比。|

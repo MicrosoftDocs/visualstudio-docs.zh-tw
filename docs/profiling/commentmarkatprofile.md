@@ -15,11 +15,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f8c51fc0f1009316f406a45c62e95f24397fef3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7f196a9e2c5951037c215dfd69fd29864b72cd41
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法會在 .vsp 檔案中插入時間戳記值、數字標記和註解字串。 時間戳記值可以用來同步處理外部事件。 針對要插入的標記和註解，包含 CommentMarkAtProfile 函式之執行緒的分析必須是 ON。  
@@ -72,7 +73,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
   
 |||  
 |-|-|  
-|**標題**|包含 VSPerf.h|  
+|**標頭**|包含 VSPerf.h|  
 |**程式庫**|使用 VSPerf.lib|  
 |**Unicode**|實作為 CommentMarkAtProfileW (Unicode) 和 CommentMarkAtProfileA (ANSI)。|  
   
@@ -117,5 +118,5 @@ void ExerciseCommentMarkAtProfile(void)
 }  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 分析工具 API 參考 (原生)](../profiling/visual-studio-profiler-api-reference-native.md)

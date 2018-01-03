@@ -19,11 +19,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1846b145833a7474e8662442313d0e39a262e67c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e4f3388d7484021bd4c12e4a7273b312190bd6dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>如何：尋找並組織專案範本和項目範本
 範本檔案必須放在 Visual Studio 可以辨識的位置，以便範本將出現在 [新增專案] 和 [新增項目] 對話方塊中。 您可以建立範本的自訂子類別，因此子類別也會出現在使用者介面中。  
@@ -172,7 +173,7 @@ ms.lasthandoff: 10/31/2017
 
 8.  將新的.zip 檔案放在有已刪除 .zip 檔案的目錄。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [自訂範本](../ide/customizing-project-and-item-templates.md)   
  [Visual Studio 範本結構描述參考](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Visual Studio 範本)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   

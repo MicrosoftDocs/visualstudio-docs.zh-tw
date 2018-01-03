@@ -24,11 +24,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a22ac991b88dd62c91a9bf08f5397fe80e4ae37d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f06722f4a6192323d92ce6828b25bc57666de8bc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="devenv-command-line-switches"></a>Devenv 命令列參數
 Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您從命令列建置、偵錯和部署專案。 使用這些參數透過指令碼或 .bat 檔案 (例如，夜間組建指令碼) 執行 IDE，或在特定組態中啟動 IDE。  
@@ -68,7 +69,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 ## <a name="devenv-switches"></a>Devenv 參數  
  使用下列命令列參數來顯示 IDE，並執行所述的工作。  
   
-|命令列參數|說明|  
+|命令列參數|描述|  
 |-------------------------|-----------------|  
 |[/Command (devenv.exe)](../../ide/reference/command-devenv-exe.md)|啟動 IDE，並執行指定的命令。|  
 |[/DebugExe (devenv.exe)](../../ide/reference/debugexe-devenv-exe.md)|透過偵錯工具的控制，載入 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 可執行檔。 此參數不適用於 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 可執行檔。 如需詳細資訊，請參閱[在偵錯工具中自動啟動處理序](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger)。|  
@@ -85,7 +86,7 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
   
  使用下列命令列參數來執行所述的工作。 這些命令列參數不會顯示 IDE。  
   
-|命令列參數|說明|  
+|命令列參數|描述|  
 |-------------------------|-----------------|  
 |[/? (devenv.exe)](../../ide/reference/q-devenv-exe.md)|在 [命令提示字元] 視窗中顯示 devenv 參數的說明。<br /><br /> **Devenv /?**|  
 |[/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)|根據所指定方案的組態，建置指定的方案或專案。<br /><br /> **Devenv myproj.csproj /build**|  
@@ -101,5 +102,5 @@ Devenv 可讓您設定整合式開發環境 (IDE) 的各種選項，也可讓您
 |[/Updateconfiguration (devenv.exe)](../../ide/reference/updateconfiguration-devenv-exe.md)|通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合併系統上的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 套件，並檢查 MEF 快取中的任何變更。|  
 |[/Upgrade (devenv.exe)](../../ide/reference/upgrade-devenv-exe.md)|將指定的方案檔和其所有專案檔或指定的專案檔升級至這些檔案的目前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 格式。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [選項對話方塊、環境、一般](../../ide/reference/general-environment-options-dialog-box.md)

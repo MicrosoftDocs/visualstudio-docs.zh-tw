@@ -12,11 +12,12 @@ ms.assetid: F725B4A3-F79E-4F05-945F-847756CD69B9
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 214637302a326750abc7b782d47ed6e7241a53c2
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: bc011c875b676f0d667c54976e24badc7a771554
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warnings-and-errors"></a>警告和錯誤
 

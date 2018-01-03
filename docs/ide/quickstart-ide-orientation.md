@@ -10,11 +10,12 @@ ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7f10ee7dc03ffe0f80b6ee3d7ff47f5fcd6a1624
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 49518c7d38ebbec74908123b83b57bf039dda6f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入門：Visual Studio IDE 初探
 
@@ -96,7 +97,7 @@ IDE 頂端的功能表列可將命令依類別分組。 例如，[專案] 功能
 
 - 在 [Visual Studio IDE 概觀](../ide/visual-studio-ide.md)中進行更深入的 IDE 導覽，甚至嘗試一些偵錯工作
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [快速入門：將 IDE 個人化](../ide/personalizing-the-visual-studio-ide.md)  
 [快速入門：在編輯器中編碼](../ide/quickstart-editor.md)  

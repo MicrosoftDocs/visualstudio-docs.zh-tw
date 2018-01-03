@@ -12,11 +12,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: adec7e86fcb33985aa61b7e20b7e9ac16d2ad7b1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 852baa1c8a2b627e5426411d8c156ab28d5c6614
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>如何：將著色器套用至 3D 模型
 本文件將示範如何使用模型編輯器將有向圖形著色器語言 (DGSL) 著色器套用至 3D 模型。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 10/31/2017
   
  在將著色器套用至模型之後，您可以選取該模型，然後在 [屬性] 視窗中，於 [效果] 屬性群組的 [(進階)] 屬性中，選擇省略符號(**...**) 按鈕。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立基本 3D 模型](../designers/how-to-create-a-basic-3-d-model.md)   
  [如何：建立基本色彩著色器](../designers/how-to-create-a-basic-color-shader.md)   
  [模型編輯器](../designers/model-editor.md)   

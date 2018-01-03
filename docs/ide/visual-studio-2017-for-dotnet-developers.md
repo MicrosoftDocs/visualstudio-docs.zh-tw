@@ -8,11 +8,12 @@ ms.technology: vs-ide-general
 ms.date: 11/08/2017
 ms.topic: article
 helpviewer_keywords: editor
-ms.openlocfilehash: 6650faa7ed519c6237b459ac4278b6e90d7a5bc6
-ms.sourcegitcommit: b7d3b90d0be597c9d01879338dd2678c881087ce
+ms.workload: dotnet
+ms.openlocfilehash: ed3eacba3611b010c95f650bd24e412d99fdde5d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-2017-for-net-developers"></a>適用於 .NET 開發人員的 Visual Studio 2017
 
@@ -86,7 +87,7 @@ Visual Studio 具有豐富的延伸模組生態系統，可供您視需要加以
 
 以下是常用的 Visual Studio 快速鍵。 請注意，有些延伸模組會解除預設 Visual Studio 按鍵繫結關係，您必須還原按鍵繫結關係才能使用下列命令。 若要將按鍵繫結關係還原為 Visual Studio 的預設，請移至 [工具] > [匯入和匯出設定...] > [重設所有設定]。
 
-| 快速鍵 (所有設定檔) | 命令 | 說明 |
+| 快速鍵 (所有設定檔) | 命令 | 描述 |
 |-|-|-| 
 | **Ctrl+T** | 移至全部 | 巡覽至任何檔案/類型/成員/符號宣告 |
 | **F12** (以及 **Ctrl+按一下滑鼠左鍵**) | 移至定義 | 巡覽至定義符號的位置 |

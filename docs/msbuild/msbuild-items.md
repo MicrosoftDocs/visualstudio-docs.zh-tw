@@ -13,11 +13,12 @@ caps.latest.revision: "35"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: a306f7cda287e41efc0cb59cf5a75c7111d32c39
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bec7bd5420c16d291db2566e86dd47ba986cca37
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-items"></a>MSBuild 項目
 MSBuild 項目是建置系統的輸入，通常代表檔案。 項目 (Item) 會依據它們的項目 (Element) 名稱分組為項目 (Item) 類型。 項目類型是具名的項目清單，可用來做為工作的參數。 工作會使用項目值來執行建置程序的步驟。  
@@ -353,7 +354,7 @@ Output:
 -->  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)   
  [如何：選取要建置的檔案](../msbuild/how-to-select-the-files-to-build.md)   

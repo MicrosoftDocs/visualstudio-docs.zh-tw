@@ -21,11 +21,12 @@ caps.latest.revision: "26"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: bb95d43af71a7860f239c56ab3db46a2e3c5e238
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f00f7464d44423be4d37694c42ad3bfddaaea3e0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 工作
 取得一或多個類型程式庫名稱或 .tlb 檔案的清單，並將那些類型程式庫解析至磁碟上的位置。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 |`EnvironmentVariables`|選擇性的 `String[]` 參數。<br /><br /> 環境變數組陣列，以等號分隔。 這些變數是在規則環境區塊以外傳遞至繁衍的 tlbimp.exe 和 aximp.exe，或選擇性地覆寫。|  
 |`ExecuteAsTool`|選擇性的 `Boolean` 參數。<br /><br /> 如果為 `true`，會從適當目標 Framework 跨處理序執行 tlbimp.exe 和 aximp.exe，以產生必要的包裝函式組件。 此參數會啟用多目標。|  
 |`IncludeVersionInInteropName`|選擇性的 `Boolean` 參數。<br /><br /> 如為 `true`，則包裝函式名稱會包含 TypeLib 版本。 預設為 `false`。|  
-|`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定保留公開/私密金鑰組<br /><br /> 的容器。|  
+|`KeyContainer`|選擇性的 `String` 參數。<br /><br /> 指定保留公開/私密金鑰組<br /><br /> 的項目。|  
 |`KeyFile`|選擇性的 `String` 參數。<br /><br /> 指定包含公開/私密金鑰組<br /><br /> 的項目。|  
 |`NoClassMembers`|選擇性的 `Boolean` 參數。|  
 |`ResolvedAssemblyReferences`|選擇性的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 輸出參數。<br /><br /> 指定已解析的組件參考。|  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="typelibnames-item-metadata"></a>TypeLibNames 項目中繼資料  
  下表描述將項目傳遞給 `TypeLibNames` 參數的可用項目中繼資料。  
   
-|中繼資料|說明|  
+|中繼資料|描述|  
 |--------------|-----------------|  
 |`GUID`|必要的項目中繼資料。<br /><br /> 類型程式庫的 GUID。 如未指定此項目中繼資料，則工作會失敗。|  
 |`VersionMajor`|必要的項目中繼資料。<br /><br /> 類型程式庫的主要版本。 如未指定此項目中繼資料，則工作會失敗。|  
@@ -69,7 +70,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="typelibfiles-item-metadata"></a>TypeLibFiles 項目中繼資料  
  下表描述將項目傳遞給 `TypeLibFiles` 參數的可用項目中繼資料。  
   
-|中繼資料|說明|  
+|中繼資料|描述|  
 |--------------|-----------------|  
 |`WrapperTool`|選擇性項目中繼資料。<br /><br /> 指定為此類型程式庫產生組件包裝函式使用的包裝函式工具。 如未指定此項目中繼資料，工作會使用預設的包裝函式工具 "tlbimp"。 可用且不區分大小寫的 TypeLib 選項有：<br /><br /> -   `Primary`：當您想要使用 COM 元件已產生的主要 Interop 組件時，請使用此包裝函式工具。 當您使用此包裝函式工具時，請勿指定包裝函式的輸出目錄，因為這會造成工作失敗。<br />-   `TLBImp`：當您想要產生 COM 元件的 Interop 組件時，請使用此包裝函式工具。<br />-   `AXImp`：當您想要產生 ActiveX 控制項的 Interop 組件時，請使用此包裝函式工具。|  
   
@@ -79,6 +80,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  除了上述所列的參數，這項工作也會從 <xref:Microsoft.Build.Utilities.Task> 類別繼承參數。 如需這些其他參數的清單及其說明，請參閱 [Task 基底類別](../msbuild/task-base-class.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [工作](../msbuild/msbuild-tasks.md)   
  [工作參考](../msbuild/msbuild-task-reference.md)

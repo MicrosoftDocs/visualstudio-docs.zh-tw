@@ -14,11 +14,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 820c5c48b9fc3b8d05d6e4d867e198ecc9237634
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cb7ae3c6bee8b75fd99edc7da150e71ef7394d63
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cores-view-legend"></a>核心檢視圖例
 核心檢視圖例依色彩和名稱識別每個執行緒。 當中包含顯示跨核心內容切換計數、內容切換總數，以及跨核心之內容切換百分比的欄。 圖例中的列以遞減順序，依跨核心內容切換的次數排序。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 10/31/2017
 |總計內容切換次數|在取樣期間內指定執行緒的內容切換總數。 每次當執行緒變更內容 (例如，從執行到同步處理) 時，就計算一次內容切換。|  
 |跨核心內容切換的百分比|以跨核心內容切換總數除以內容切換總數的百分比計算。 這個百分比越高，跨核心內容切換的負荷對於此特定執行緒的效能整體影響越大。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [核心檢視](../profiling/cores-view.md)

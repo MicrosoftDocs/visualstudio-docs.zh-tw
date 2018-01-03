@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 43947a2e239833459923f6991d4ee54d12876fe3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 015f2efa352b5ff2d8b87e356972270c175d0168
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：加入或移除匯入的命名空間 (Visual Basic)
 匯入命名空間可讓您在程式碼中使用該命名空間中的項目，而不需要完全符合項目。 例如，如果您想要存取 `System.Messaging.MessageQueue` 類別中的 `Create` 方法，則可以匯入 `System.Messaging` 命名空間，而且只將程式碼中您需要的項目參照為 `MessageQueue.Create`。  
@@ -78,5 +79,5 @@ ms.lasthandoff: 10/31/2017
 
 5.  按一下 [更新使用者匯入] 按鈕，更新 [匯入的命名空間] 清單中的命名空間。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理專案中的參考](../ide/managing-references-in-a-project.md)

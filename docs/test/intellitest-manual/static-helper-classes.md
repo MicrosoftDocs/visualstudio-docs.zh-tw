@@ -12,11 +12,12 @@ ms.assetid: 1EE26913-E498-492E-BB90-BB0D6E8A097C
 caps.latest.revision: "56"
 ms.author: douge
 manager: douge
-ms.openlocfilehash: 52b30219b66aa4df83b6dd362db73dcf6604ae01
-ms.sourcegitcommit: aadb9588877418b8b55a5612c1d3842d4520ca4c
+ms.workload: multiple
+ms.openlocfilehash: e429de9ae91f7899bbf936db7483006739d1404d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="static-helper-classes"></a>靜態協助程式類別
 

@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: 58032ea7c1c15de794b5374017e84f07434d8310
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed1fee60a7cda6d260833ba60d37a7a7a762d58e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="when-element-msbuild"></a>When 元素 (MSBuild)
 指定 `Choose` 元素的可能程式碼區塊以選取。  
@@ -60,9 +61,9 @@ ms.lasthandoff: 10/31/2017
 
 ### <a name="child-elements"></a>子元素  
 
-|項目|說明|  
+|項目|描述|  
 |-------------|-----------------|  
-|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 元素中可能有零個或多個 `When` 元素。|  
+|[Choose](../msbuild/choose-element-msbuild.md)|選擇性項目。<br /><br /> 評估子元素，以選取要執行的一個程式碼區段。 `Choose` 項目中可能有零個或多個 `When` 項目。|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Item](../msbuild/item-element-msbuild.md) 元素。 `ItemGroup` 元素中可能有零個或多個 `When` 元素。|  
 |[PropertyGroup](../msbuild/propertygroup-element-msbuild.md)|選擇性項目。<br /><br /> 包含一組使用者定義的 [Property](../msbuild/property-element-msbuild.md) 項目。 `When` 元素中可能有零個或多個 `PropertyGroup` 元素。|  
 
@@ -125,6 +126,6 @@ ms.lasthandoff: 10/31/2017
 </Project>  
 ```  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [條件式建構](../msbuild/msbuild-conditional-constructs.md)   
  [專案檔案結構描述參考](../msbuild/msbuild-project-file-schema-reference.md)

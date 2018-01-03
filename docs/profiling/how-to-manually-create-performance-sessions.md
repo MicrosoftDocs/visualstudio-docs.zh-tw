@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a9a88a82896eeb2d8f124fa7abcfa26dc9b5ab2b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 763e123fcae809e174238ab2f204bec537dbf868
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手動建立效能工作階段
 您可以手動建立效能工作階段， 而且不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中開啟專案便可以完成。 如需詳細資訊，請參閱[設定效能工作階段](../profiling/configuring-performance-sessions.md)。  
@@ -39,6 +40,6 @@ ms.lasthandoff: 10/31/2017
   
      新的二進位檔就會加入。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [效能總管](../profiling/performance-explorer.md)   
  [快速入門](../profiling/getting-started-with-performance-tools.md)

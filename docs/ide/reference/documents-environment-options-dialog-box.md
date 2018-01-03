@@ -36,11 +36,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c7d9f7cef6c0dfa35a4a718c0918fbc55409af04
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c89e8b018fa0979fe4c73f5cd9e0db95efd88d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="documents-environment-options-dialog-box"></a>選項對話方塊、環境、文件
 使用 [選項] 對話方塊的這個頁面，即可控制整合式開發環境 (IDE) 中的文件顯示，以及管理文件和檔案的外部變更。 按一下 [工具] 功能表上的 [選項]，然後選取 [環境] 節點中的 [文件]，即可存取此對話方塊。 如果 [文件] 未出現在清單中，請在 [選項] 對話方塊中選取 [顯示所有設定]。  
@@ -85,7 +86,7 @@ ms.lasthandoff: 10/31/2017
  **無法以字碼頁儲存資料時，將文件儲存為 Unicode**  
  選取此選項，預設會將包含所選取字碼頁不相容資訊的檔案儲存為 Unicode。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [環境選項對話方塊](../../ide/reference/environment-options-dialog-box.md)   
  [其他檔案](../../ide/reference/miscellaneous-files.md)   
  [尋找和取代文字](../../ide/finding-and-replacing-text.md)

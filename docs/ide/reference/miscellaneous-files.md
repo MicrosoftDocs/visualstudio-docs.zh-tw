@@ -24,11 +24,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 831d0f60c992324c81cb1366ac28b3e3f1b066ad
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd45af08abd3d3523e2c88af13f46d81ebdb8e2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="miscellaneous-files"></a>其他檔案
 您可能想要使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 編輯器，單獨處理專案或方案中的檔案。 開啟方案時，可以開啟並修改檔案，而不需要將它們新增至方案或專案。 您想要單獨處理稱為其他檔案的容器中檔案。 其他檔案是方案和專案的外部檔案、未納入組建中，而且不能隨附於原始檔控制下的方案。  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="folder-display-options"></a>資料夾顯示選項  
  您可以設定 [其他資料夾] 的顯示選項，以顯示資料夾，即使您尚未開啟任何其他檔案也是一樣。 方案檔不會永久管理其他檔案的清單。 它會使用選擇性功能，以記住每位使用者最常使用 (MRU) 的檔案清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [方案和專案](../../ide/solutions-and-projects-in-visual-studio.md)   
  [選項對話方塊、環境、文件](../../ide/reference/documents-environment-options-dialog-box.md)

@@ -5,15 +5,16 @@ ms.date: 12/04/2017
 ms.technology: vs-acquisition
 ms.tgt_pltfrm: 
 ms.topic: get-started-article
-ms.assetid: 99c73344-86ba-4b08-9e15-f6111cc04185
 author: corob-msft
 ms.author: tglee
 manager: ghogen
-ms.openlocfilehash: c86e7bcfe43eeaa6554efeed6654f34e140d9ea7
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+dev_langs: CPP
+ms.workload: cplusplus
+ms.openlocfilehash: 9c0a7a8e206704e1b7cd694a91f376f4ec531d6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Visual Studio 中的 C++ 使用者入門
 
@@ -148,7 +149,7 @@ Visual Studio 會使用「專案」來組織應用程式的程式碼，並使用
 
 恭喜您完成此快速入門！ 如果您想要探索更多範例，請參閱 [Visual Studio 範例](../ide/visual-studio-samples.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Visual Studio IDE 進行 C++ 桌面程式開發](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)  
 [逐步解說：使用 Visual C# 或 Visual Basic 建立簡單的應用程式](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

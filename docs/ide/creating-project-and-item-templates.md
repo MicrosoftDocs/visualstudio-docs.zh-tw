@@ -21,11 +21,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7d95781c2c5c4370e09c13b382016b015ec1a0d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 43b45f70e8ac7a6eeadfd3fb216b53540ec9a8b8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-project-and-item-templates"></a>建立專案和項目範本
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 專案範本和項目範本提供可重複使用的 Stub，讓使用者有一些基本的程式碼和結構可自行運用。  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="starter-kits"></a>入門套件  
  入門套件是增強的範本，可以與社群的其他成員共用。 入門套件包含可編譯的程式碼範例、文件和其他資源，協助使用者經由建置實際有用的應用程式，學習新的工具和程式設計技巧。 入門套件的基本內容和程序，與範本完全相同。 如需詳細資訊，請參閱[如何：建立入門套件](../ide/how-to-create-starter-kits.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何：建立專案範本](../ide/how-to-create-project-templates.md)   
  [如何：建立項目範本](../ide/how-to-create-item-templates.md)   
  [範本參數](../ide/template-parameters.md)   

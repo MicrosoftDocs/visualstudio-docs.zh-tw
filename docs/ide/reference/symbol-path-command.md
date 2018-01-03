@@ -17,11 +17,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d446779e4f84bf19e965393f9fa1142c7e4e166a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6eb125c691cb9e6f8642093612aca142172e76d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="symbol-path-command"></a>符號路徑命令
 設定目錄清單，以讓偵錯工具搜尋符號。  
@@ -34,7 +35,7 @@ Debug.SymbolPath pathname1;pathname2;... pathnameN
   
 ## <a name="arguments"></a>引數  
  `pathname`  
- 選擇項。 讓偵錯工具搜尋符號的路徑清單 (以分號分隔)。  
+ 選擇性。 讓偵錯工具搜尋符號的路徑清單 (以分號分隔)。  
   
 ## <a name="remarks"></a>備註  
  如果未指定 `pathname`，則此命令會列出目前符號路徑。  
@@ -53,6 +54,6 @@ Debug.SymbolPath C:\Symbol Path 1;C:\Symbol Path 2
 Debug.SymbolPath  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [命令視窗](../../ide/reference/command-window.md)   
  [Visual Studio 命令](../../ide/reference/visual-studio-commands.md)

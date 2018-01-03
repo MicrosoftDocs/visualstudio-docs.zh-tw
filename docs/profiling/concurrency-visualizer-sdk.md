@@ -13,11 +13,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe710a237ff9cde5d66a7e377f7a4b700a00705
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5eecc1d317f2391632cbe87df30a2ba2fd7c692c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-sdk"></a>並行視覺化檢視 SDK
 您可以使用並行視覺化檢視 SDK 檢測原始程式碼，以便在並行視覺化檢視中顯示其他資訊。 您可以在程式碼中將其他資料與階段和事件關聯。 這些額外的視覺效果稱為*標記*。  如需入門逐步解說，請參閱[並行視覺化檢視 SDK 簡介](http://go.microsoft.com/fwlink/?LinkId=235405)。  
@@ -123,7 +124,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[C++ 程式庫參考](../profiling/cpp-library-reference.md)|描述 C++ 的並行視覺化檢視 API。|  
 |[C 程式庫參考](../profiling/c-library-reference.md)|描述 C 的並行視覺化檢視 API。|  

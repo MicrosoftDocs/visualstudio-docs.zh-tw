@@ -12,11 +12,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 561913dc4a215869bd33fde39527cfb0b0232b9a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: 58462b6cb20efd441c99f335b56b06944dbdf206
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>在 XAML 設計工具中插入影像、視訊和音訊剪輯
 影像、視訊和音訊剪輯可為應用程式加入視覺效果。  
@@ -34,5 +35,5 @@ ms.lasthandoff: 10/31/2017
 |匯入 Adobe Photoshop 檔案|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [匯入 Photoshop 檔案至 Blend](https://www.youtube.com/watch?v=ekYyhirFKs0)|  
 |插入音訊剪輯|![設定已安裝的功能](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [新增音訊剪輯](https://www.youtube.com/watch?v=7qW9l0tmkAI&index=52&list=PLBDF977B2F1DAB358)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Blend for Visual Studio 建立 UI](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

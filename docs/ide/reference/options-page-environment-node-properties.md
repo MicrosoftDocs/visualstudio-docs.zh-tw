@@ -15,11 +15,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 076b48d5526c0cefffb5f18daed9aaaebb031aad
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: multiple
+ms.openlocfilehash: ddc53a84ca6cc09c5682bc874503849eee98eae8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="options-page-environment-node-properties"></a>環境節點屬性、選項頁
 本文件描述與 [選項] 對話方塊的 [環境] 分類 `DTE.Properties("Environment", <Property Page>)` 相關聯的頁面 (或屬性集合)。 每一小節的標題就是用來存取屬性集合的呼叫，而每一小節中的表格會列出集合中的屬性。  
@@ -160,7 +161,7 @@ ms.lasthandoff: 11/22/2017
 |ViewSourceIn|Get/Set (列舉)|<xref:EnvDTE.vsBrowserViewSource> (原始檔、設計、外部)。|  
 |ViewSourceExternalProgram|Get/Set (字串)|外部來源檢視器的路徑。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [控制選項設定](http://msdn.microsoft.com/Library/a09ed242-7494-4cde-bbd1-7a8ec617965d)   
  [在選項頁中決定屬性項目的名稱](http://msdn.microsoft.com/Library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [字型和色彩節點屬性、選項頁](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   

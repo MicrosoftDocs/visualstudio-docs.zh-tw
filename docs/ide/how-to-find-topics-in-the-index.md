@@ -19,11 +19,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ea90dba4090565143c84d510b5e4f9e998cfb5fc
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 0e6c9df2254108b778eb1478311ddaa386f70d74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="finding-topics-by-using-the-help-viewer-index"></a>使用說明檢視器索引來尋找主題
 索引包含與已安裝內容的主題相關聯的關鍵字清單。 每個主題都可能有多個相關聯的關鍵字，而且每個關鍵字都可能與多個主題建立關聯。 請以在活頁簿中使用索引的相同方式來使用此索引。  
@@ -75,7 +76,7 @@ ms.lasthandoff: 11/07/2017
   
     例如，如果您輸入的詞彙是 "building"，請嘗試改為輸入 "creating"。 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [如何：在 TOC 中尋找主題](../ide/how-to-find-topics-in-the-table-of-contents.md)  
 [如何：搜尋主題](../ide/how-to-search-for-topics.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

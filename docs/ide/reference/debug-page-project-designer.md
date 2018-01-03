@@ -16,11 +16,12 @@ caps.latest.revision: "32"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 39b19b6e418203a33c410173d46e190bbd6c01e1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a16f39d9f9ba6c3e0790a53c85d0824178083953
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-page-project-designer"></a>專案設計工具、偵錯頁
 > [!WARNING]
@@ -73,10 +74,10 @@ ms.lasthandoff: 10/31/2017
   
  若要在安全性區域中進行偵錯，您必須在 [進階安全性設定] 對話方塊中，啟用這個選項和[以選取的使用權限集合對此應用程式進行偵錯](../../ide/reference/advanced-security-settings-dialog-box.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../../debugger/debugging-in-visual-studio.md)   
  [C# 偵錯設定的專案設定](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Visual Basic 偵錯設定的專案設定](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [管理偵錯屬性](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [如何：以限制使用權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [如何：以限制權限偵錯 ClickOnce 應用程式](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [如何：建立和編輯組態](../../ide/how-to-create-and-edit-configurations.md)

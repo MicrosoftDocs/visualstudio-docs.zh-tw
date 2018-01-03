@@ -28,11 +28,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9290f2dbaae27bef7934d8fd619b4ee5355f4ec3
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: multiple
+ms.openlocfilehash: c41a77a1fdb36ab8610ebc648cacb1568b330de8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-toolbox"></a>使用工具箱
 
@@ -70,6 +71,6 @@ ms.lasthandoff: 12/07/2017
 
 您可以在 Visual Basic 或 Visual C# 中建立自訂工具箱控制項，也可以使用以 [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) 或 [Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md) 為基礎的專案範本開始作業。 您接著可以將控制項發佈給小組成員，或使用 [工具箱控制項安裝程式](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx)將它發佈到網站。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在編輯器中撰寫程式碼](../ide/writing-code-in-the-code-and-text-editor.md)

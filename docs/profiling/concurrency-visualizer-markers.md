@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ff86fd14857206361a4bd9c15088cb3547200b28
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7baa202558b6bb7bc60a0bb27d42ae004933ddea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="concurrency-visualizer-markers"></a>並行視覺化檢視中的標記
 在並行視覺化檢視中，標記是代表應用程式中事件的圖示。  一般而言，應用程式會產生這些事件，以指定應用程式中的階段或發生次數。  應用程式或程式庫和應用程式使用的執行階段，可以產生事件。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="markers-from-eventsource"></a>來自 EventSource 的標記  
  並行視覺化檢視也可以顯示 EventSource 事件。  如需詳細資訊，請參閱[將 EventSource 事件顯示為標記](../profiling/visualizing-eventsource-events-as-markers.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [旗標標記](../profiling/flag-markers.md)   
  [訊息標記](../profiling/message-markers.md)   
  [範圍標記](../profiling/span-markers.md)   

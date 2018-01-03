@@ -12,11 +12,12 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 143bc6af5aa42eb480d5eff736633c2df6e68979
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: multiple
+ms.openlocfilehash: 35bc6ae23fdbc89f6bdeaa57bd37d5d961d87286
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 覆寫設定
 您可以變更 Help Viewer 和 Visual Studio IDE 之說明相關功能的預設行為。 某些選項是透過建立 [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) 檔案以設定各種登錄機碼值來指定。 其他選項則是在登錄中直接設定。
@@ -32,7 +33,7 @@ ms.lasthandoff: 11/07/2017
 4. 在開發人員命令提示字元中執行 `devenv /updateconfiguration`。
 
 ### <a name="registry-key-values"></a>登錄機碼值
-|登錄機碼值|類型|資料|說明|  
+|登錄機碼值|類型|資料|描述|  
 |------------------|----|----|-----------|  
 |NewContentAndUpdateService|字串|\<服務端點的 HTTP URL\>|定義唯一的服務端點|
 |UseOnlineHelp|dword|`0` 表示指定本機說明，`1` 表示指定線上說明|定義線上或離線說明預設值|
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/07/2017
 |覆寫 BITS 工作優先權|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node (在 64 位元電腦上)\Microsoft\Help\v2.3|BITSPriority|**前景**、**高**、**一般**或**低**|
 |指向網路共用上的本機內容存放區|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.3\Catalogs\VisualStudio15|LocationPath|"*ContentStoreNetworkShare*"|
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [說明檢視器系統管理員指南](../ide/help-viewer-administrator-guide.md)  
 [Help Content Manager 的命令列引數](../ide/command-line-arguments-for-the-help-content-manager.md)  
 [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)  

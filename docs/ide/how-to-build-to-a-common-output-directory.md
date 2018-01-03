@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0082f69e0c35bb84a15a8dd4798e7a17b6a3dd7c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f45831618e7d685da1f50ae634770ef735a6ff78
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：建置到通用輸出目錄
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 預設會在方案的專屬資料夾中建立方案中的每個專案。 您可以變更專案的建置輸出路徑，強制將所有輸出放在相同的資料夾中。  
@@ -35,6 +36,6 @@ ms.lasthandoff: 10/31/2017
   
 4.  針對方案中的所有專案，重複步驟 1-3。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編譯和建置](../ide/compiling-and-building-in-visual-studio.md)   
  [如何：變更組建輸出目錄](../ide/how-to-change-the-build-output-directory.md)

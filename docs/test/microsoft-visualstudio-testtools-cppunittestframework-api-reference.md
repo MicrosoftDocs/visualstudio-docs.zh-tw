@@ -11,11 +11,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: "8"
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 48a9626a0ed30a3652703e9f55bf6a6c9e7200c5
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 38715fa97c93d020eee2b5babd5ed103ffb5a6c1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 參考
 本主題列出 `Microsoft::VisualStudio::CppUnitTestFramework` 命名空間的公用成員。 您可以使用這些 API 來撰寫以 Microsoft 原生單元測試架構為基礎的 C++ 單元測試。 本主題結尾有[使用範例](#example)。 
@@ -643,7 +644,7 @@ public:
 };  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [對程式碼進行單元測試](../test/unit-test-your-code.md)   
  [撰寫 C/C++ 的單元測試](writing-unit-tests-for-c-cpp.md)   
 

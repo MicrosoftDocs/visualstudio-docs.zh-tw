@@ -13,11 +13,12 @@ caps.latest.revision: "32"
 author: kempb
 ms.author: kempb
 manager: ghogen
-ms.openlocfilehash: c603e0c235b37c63719abb8e9a5e6dbb3ca3e652
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: multiple
+ms.openlocfilehash: b00a4a46846b6b3b6c07c57614ac5a769cf0b8a4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="msbuild-properties"></a>MSBuild 屬性
 屬性是名稱/值組，可以用來設定組建。 屬性可用於將值傳遞給工作、評估條件，以及儲存將在整個專案檔中參考的值。  
@@ -138,7 +139,7 @@ msbuild.exe MyProj.proj /p:Configuration=DEBUG
 </PropertyGroup>  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [MSBuild 概念](../msbuild/msbuild-concepts.md)  
  [MSBuild](../msbuild/msbuild.md)  
  [如何：在組建中使用環境變數](../msbuild/how-to-use-environment-variables-in-a-build.md)   
