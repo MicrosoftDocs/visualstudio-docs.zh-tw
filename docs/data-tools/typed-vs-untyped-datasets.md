@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 8fda7a1663a8aa9ccbf1f89f2a3b05d74b0a2316
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af42a48a311cadba9fc22a487d03492f92ba6469
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="typed-vs-untyped-datasets"></a>具型別與具型別
 具類型資料集是第一次衍生自基底的資料集<xref:System.Data.DataSet>類別，並接著會使用從資訊**Dataset 設計工具**，其會儲存於.xsd 檔案，以產生新的強類型 dataset 類別。 從結構描述 （資料表、 資料行，等等） 的資訊會產生，並編譯成這個新的資料集類別，當做第一級物件和屬性的一組。 因為具類型資料集繼承自基底<xref:System.Data.DataSet>類別，型別的類別假設所有的功能<xref:System.Data.DataSet>類別，並可以搭配這些方法會採用的執行個體<xref:System.Data.DataSet>類別做為參數。  
@@ -43,5 +44,5 @@ ms.lasthandoff: 11/09/2017
   
  較常見地，有許多次時您可能會以動態方式建立資料集，而不需要提供的結構描述。 在此情況下，資料集都是只是一個便利的結構，您可以在其中保留的詳細資訊，只要資料可以代表關聯的方式。 同時，您可以利用資料集的功能，例如序列化資訊將傳遞給另一個處理序，或以寫出 XML 檔案的能力。
 
-## <a name="see-also"></a>請參閱
-[資料集的工具](../data-tools/dataset-tools-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+[資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

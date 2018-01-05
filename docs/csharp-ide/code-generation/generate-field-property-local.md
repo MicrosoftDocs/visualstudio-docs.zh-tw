@@ -11,11 +11,12 @@ ms.assetid: c11888e0-31b1-44cc-9037-98d3f8b3623b
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7304ad001b5e5c26594c147f4ffc416c9ee539c2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 85d15d28fae994f029e678183d2f08d561c70f1d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-field-property-or-local-in-c"></a>產生 C# 中的欄位、 屬性或本機 #
 **項目：**可讓您立即產生先前未宣告的欄位、 屬性或本機的程式碼。 
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
 
    ![產生欄位/屬性/本機結果](media/field_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md) 

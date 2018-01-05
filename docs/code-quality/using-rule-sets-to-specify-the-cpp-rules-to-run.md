@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 5ad51388ae1580ada61442798b46048ad71ece64
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: f78a3f48ce6e8d08134694bc03c80f9c2e9b3363
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>使用規則集指定要執行的 C++ 規則
 在[!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)]和[!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)]，您可以建立和修改自訂*規則集*以符合與程式碼分析相關聯的特定專案需求。 若要建立自訂的 c + + 規則設定，必須在 Visual Studio IDE 開啟 C/c + + 專案。 您再規則集編輯器中開啟標準規則集然後加入或移除特定規則，以及選擇性地變更程式碼分析會判斷已違反規則時所發生的動作。  

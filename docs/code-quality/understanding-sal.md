@@ -12,11 +12,12 @@ caps.latest.revision: "18"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: d1c6ac08b47bd5ad5e6dd84bbf78496c421a21a6
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 196bfdbeeda00199861ea2f676553f024fcaf98f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="understanding-sal"></a>了解 SAL
 Microsoft 原始程式碼註釋語言 (SAL) 提供一組註釋可讓您描述函式如何使用它的參數、 建立與其，相關的假設和完成時，它可保證。 標頭檔中定義的註解`<sal.h>`。 C + + 的 visual Studio 程式碼分析會使用 SAL 註釋，來修改其分析的函式。 用於 Windows 的驅動程式開發 SAL 2.0 的相關資訊，請參閱[SAL 2.0 註解的 Windows 驅動程式](http://go.microsoft.com/fwlink/?LinkId=250979)。  
@@ -84,7 +85,7 @@ wchar_t * wmemcpy(
 ### <a name="sal-basics"></a>SAL 基本概念  
  SAL 定義四種基本參數，依使用方式模式分類。  
   
-|分類|參數註釋|說明|  
+|分類|參數註釋|描述|  
 |--------------|--------------------------|-----------------|  
 |**輸入要呼叫函式**|`_In_`|資料傳遞至呼叫的函式，而且會被視為唯讀。|  
 |**輸入呼叫函式，並輸出至呼叫端**|`_Inout_`|可用的資料傳遞至函式，並可能會修改。|  
@@ -411,7 +412,7 @@ bool GetValue(_Out_ int *pInt, bool flag)
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/p/?LinkId=251197)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07704e589ae56b04dc28ceb465afad7812a29111
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: f7728a293c1d93ab95a73d829bcdb37f5c09cc59
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-recommended-rules-rule-set"></a>原生建議規則規則集
 原生建議規則的重點在於機器碼，包括潛在的安全性漏洞和應用程式損毀中最關鍵且常見的問題。  您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  這個規則集被設計來搭配 Visual Studio Professional 版與更高版本。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|使用尚未初始化的記憶體|  
 |[C6011](../code-quality/c6011.md)|取值的指標為 NULL|  

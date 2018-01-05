@@ -24,11 +24,12 @@ caps.latest.revision: "18"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 795f911e9020c4bec6e6bfe9d103666d007d0711
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e6ddf648f28139c4805c6d417e3f353d494c48bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-debugging-tools"></a>COM 偵錯工具
 本主題列出可幫助您進行測試和檢驗 COM 程式的工具。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  MFC 範例  
  MFC ActiveX 範例 OCLIENT 和 SUPERPAD 也可以用來測試您的應用程式。 這些範例的完整原始程式碼都包含在內。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [COM 和 ActiveX 的偵錯](../debugger/com-and-activex-debugging.md)   
  [COM 偵錯工具](../debugger/com-debugging-tools.md)  
  [Visual Studio 偵錯](../debugger/index.md)  

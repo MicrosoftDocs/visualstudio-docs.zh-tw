@@ -19,11 +19,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4893dbf799a964024fef59b7b0092b3066e8fdd4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 38ac5492c987515c7c6504c91d2e035f8b8645ff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147：透明的方法不可以使用安全性判斷提示
 |||  
@@ -63,5 +64,5 @@ ms.lasthandoff: 10/31/2017
   
  另一個選項是從程式碼移除判斷提示，並讓任何後續的檔案 I/O 的權限要求流程超出 SecurityTransparentMethod 給呼叫者。 這可讓安全性檢查。 在此情況下，沒有安全性稽核通常需要，因為權限要求會流動至呼叫端和 （或） 應用程式定義域。 裝載環境和程式碼來源的權限授與的安全性原則，透過密切控制的權限要求。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全性警告](../code-quality/security-warnings.md)

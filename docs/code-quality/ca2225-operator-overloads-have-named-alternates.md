@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 07d15e5ec123e645a7607f16b6020487d4c0fc2a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f8c7b71fc964f898aefc5e243c787be71a8a063a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225：運算子多載必須有具名的替代方法
 |||  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
 |true|IsTrue|N/A|IsTrue （屬性）|  
 |-（一元）|N/A|-|變換正負號|  
 |+ （一元）|N/A|+|加號|  
-|false|IsFalse|False|IsTrue （屬性）|  
+|False|IsFalse|False|IsTrue （屬性）|  
   
  N/A = = 無法多載，以選取的語言。  
   

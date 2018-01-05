@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: acd88eb0d4a485f01f9ced8cc1d2b2cebd182a71
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: data-storage
+ms.openlocfilehash: 5313269a4575cb41ebe6e8b9cedb5ca02d49b493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="display-related-data-in-wpf-applications"></a>WPF 應用程式中顯示相關的資料
 在某些應用程式，您可以使用來自多個資料表或實體的父子式關聯性中彼此有關聯的資料。 例如，您可能想要顯示一個方格，其中會顯示從客戶`Customers`資料表。 當使用者選取特定的客戶時，另一個方格會顯示該客戶的相關訂單`Orders`資料表。
@@ -57,6 +58,6 @@ ms.lasthandoff: 12/07/2017
 
      ![顯示關聯的資料來源視窗](../data-tools/media/datasources2.gif "DataSources2")
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [在 WPF 應用程式中建立查閱資料表](../data-tools/create-lookup-tables-in-wpf-applications.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 87779cb647e00c990f4f8b29907a0dc344b80f42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: a78f38d4b02311a164e0858744b70fbc5fb0ddaa
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>如何： 開啟複數表示開啟和關閉 （O/R 設計工具）
 根據預設，當您將資料庫物件名稱結尾 s 或從 ies**伺服器總管**/**資料庫總管**到[LINQ to SQL 工具，在 Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，產生的實體類別的名稱會變成從複數單數。 這是為了更正確地呈現具現化 (Instantiated) 的實體類別對應至單一筆記錄的情況。 例如，將名為 Customers 的資料表加入至 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]會產生實體類別 Customer，原因是這個類別只會保留單一客戶的資料。  
@@ -41,7 +42,7 @@ ms.lasthandoff: 11/09/2017
   
 5.  設定**名稱的複數表示**至**啟用** = **True**將複數表示規則套用至類別名稱加入物件[!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

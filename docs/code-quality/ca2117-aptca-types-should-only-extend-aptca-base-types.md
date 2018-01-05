@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 977f721ed45343e247f8639accc0fa5dc83263c6
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: be208c156e8710b6aa6b2821a5a85131f3c2e4b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117：APTCA 類型應該只擴充 APTCA 基底類型
 |||  
@@ -83,6 +84,6 @@ ms.lasthandoff: 12/12/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA2116：APTCA 方法應該只呼叫 APTCA 方法](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [從部分信任程式碼使用程式庫](/dotnet/framework/misc/using-libraries-from-partially-trusted-code)   

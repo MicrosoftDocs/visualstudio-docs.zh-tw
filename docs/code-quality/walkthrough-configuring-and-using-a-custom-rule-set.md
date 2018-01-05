@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 28f572ff80888f9d207c9ade9042414127abb154
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 054cf016dba69561591ad6bc8b18029272e85d8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>逐步解說：設定和使用自訂規則集
 本逐步解說示範如何使用已設定為使用自訂的程式碼分析工具*規則集*類別庫。 您可以選取規則集相關的專案類型，您可以選取或指定您的解決方案，替代的規則集來滿足特定需求，例如掃描舊版程式碼中斷的方式，可以修正的問題。 在任一情況下，規則集也可以自訂來微調他們自己專案的需求。  
@@ -152,6 +153,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  在 [錯誤清單] 視窗中，請注意，當您按一下**警告**，您不會再看見 CA1704 警告違規 」 的識別項應該使用正確的拼字 」 規則。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)

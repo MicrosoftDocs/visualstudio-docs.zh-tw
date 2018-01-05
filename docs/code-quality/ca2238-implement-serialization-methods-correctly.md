@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9ca904e9259855127825b594db80cdc3524d53ec
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e3fa59585a5233bbebde7df0d074d303285c616
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238：請正確實作序列化方法
 |||  
@@ -33,7 +34,7 @@ ms.lasthandoff: 10/31/2017
 |中斷變更|中斷-如果組件外部可見方法。<br /><br /> 非中斷-如果不是組件外部可見方法。|  
   
 ## <a name="cause"></a>原因  
- 處理序列化事件的方法沒有正確的簽章、傳回類型或可視性。  
+ 處理序列化事件的方法沒有正確的簽章、傳回型別或可視性。  
   
 ## <a name="rule-description"></a>規則描述  
  方法所套用下列序列化事件屬性的其中一個指定的序列化事件處理常式：  

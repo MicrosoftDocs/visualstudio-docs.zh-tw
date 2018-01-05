@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.encapsulatefield
 dev_langs: csharp
-ms.openlocfilehash: f934d33d2c7bdc698b00305f3c86f904eae99e33
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 59b71a0716415dcedeab9954486ef27e0fc438d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-a-field-in-c"></a>封裝 C# 中的欄位 #
 **項目：**可讓您將欄位轉換成屬性，並更新所有使用該欄位，以使用新建立的屬性。
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
      * 選取**編輯 > 重構 > 封裝欄位**。
      * 以滑鼠右鍵按一下程式碼中，選取**快速控制項目及重構**功能表並選取 **封裝欄位**預覽視窗快顯功能表項目。
 
-   選取 | 說明
+   選取 | 描述
    --------- | -----------
    **封裝欄位 （並使用屬性）** | 封裝具有屬性的欄位，並更新使用產生的屬性欄位的所有使用方式
    **封裝欄位 （但仍使用欄位）** | 封裝具有屬性的欄位，但會讓所有的欄位的使用方式不變
@@ -53,6 +54,6 @@ ms.lasthandoff: 10/31/2017
 
    ![封裝屬性結果](media/encapsulate_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (C#)](../refactoring-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

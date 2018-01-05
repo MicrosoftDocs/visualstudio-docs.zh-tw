@@ -17,18 +17,19 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 810583a04cea63582e560d8068827137ab5c8b89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9d8a0587bdfce2284f4767087c88faab573e04b7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="interoperability-warnings"></a>互通性警告
 互通性警告支援與 COM 用戶端互動。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[CA1400: P/Invoke 進入點應該要存在](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)|公用或受保護的方法是使用 System.Runtime.InteropServices.DllImportAttribute 屬性來標記。 有可能是找不到 Unmanaged 程式庫，或是方法不符合程式庫中的函式。|  
 |[CA1401: P/Invokes 不應該為可見](../code-quality/ca1401-p-invokes-should-not-be-visible.md)|公用類型中公用或受保護的方法具有 System.Runtime.InteropServices.DllImportAttribute 屬性 （在 Visual Basic 中的 Declare 關鍵字也實作）。 但不得公開 (Expose) 此類方法。|  

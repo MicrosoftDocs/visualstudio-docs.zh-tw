@@ -13,11 +13,12 @@ caps.latest.revision: "43"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5a0f290fa42a04ddf60a49282d2f350111076ab0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f396bb289e7e4288dbb80c6e08990960861e970c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-rule-set-reference"></a>程式碼分析規則集參考
 當您設定的程式碼分析 managed 程式碼專案中的[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]， [!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]，或[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]您會看到一份內建*規則集*。 您可以使用其中一個標準規則集，或您可以自訂規則集以符合您的專案需求。  

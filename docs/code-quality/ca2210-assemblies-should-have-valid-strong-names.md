@@ -18,11 +18,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11e50cb87364a85d0c97ae5e566b1209696febbd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 066c78158b688db8164a5ebf23dbe957c7c324ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210：組件應包含有效的強式名稱
 |||  
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  只有隱藏此規則的警告，如果組件的環境中使用其中竄改的內容不是問題。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName>   
  <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName>   
  [如何：使用強式名稱簽署組件](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name)   

@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4ae00a8b3a51b088100d4a27893dd100d5d7ba71
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: af4e082bfa3e1b7669eb43218977b03a47c2f0bd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>個別的資料集和 TableAdapters 分成不同的專案
 具類型資料集已經過加強，以便[Tableadapter](create-and-configure-tableadapters.md)和資料集類別產生為不同的專案。 這可讓您快速分隔應用程式層級，並產生多層式架構資料應用程式。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 11/09/2017
 > [!NOTE]
 >  若要檢視產生的類別檔案，請選取資料集或 TableAdapter 專案。 然後，在**方案總管 中**，選取**顯示所有檔案**。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
 [逐步解說： 建立 N-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
 [階層式更新](../data-tools/hierarchical-update.md)   

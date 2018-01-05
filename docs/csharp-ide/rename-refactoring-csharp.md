@@ -17,11 +17,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: eba5a9f55e5d3d08eee48dc083a7e2f848118162
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 42c5f99b3bf5ba95bc279cd5e117745ccc8e02c3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-refactoring-c"></a>重新命名重構 (C#)
 **重新命名**是最簡單的方式來重新命名識別項程式碼的符號，例如欄位、 區域變數、 方法、 命名空間、 屬性和類型的 Visual Studio 整合式的開發環境 (IDE) 的重構功能。 **重新命名**可以用來變更的註解，並在字串中的名稱，以及變更宣告及呼叫的識別項。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
 5.  選取**註解中的搜尋**核取方塊。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
 7.  在**預覽變更**對話方塊中，按一下 **套用**。  
   
@@ -162,6 +163,6 @@ var orderIDs =
   
  在上述程式碼中，重新命名`ID`只會重新命名的一個執行個體`ID`因為`companyIDs`和`orderIDs`沒有相同的屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [重構 (C#)](refactoring-csharp.md)   
  [匿名類型](/dotnet/csharp/programming-guide/classes-and-structs/anonymous-types)

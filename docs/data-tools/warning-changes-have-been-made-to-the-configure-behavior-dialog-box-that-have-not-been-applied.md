@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: cb887a31855c7c31451b2f15c4da3c386a3fe0f4
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: a5243d0a7b4e1d6ddf8665afda98fef824f723b3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告。 尚未套用的設定行為對話方塊已經變更了
 警告。 尚未套用的設定行為對話方塊已經變更了。 是否要套用您的變更?  
@@ -31,6 +32,6 @@ ms.lasthandoff: 11/09/2017
   
 -   按一下**否**取消的變更所選**類別**和**行為**。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

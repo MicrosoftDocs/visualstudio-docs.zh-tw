@@ -13,11 +13,12 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 773fecba4b3a635d86d6b06937151e38ad94912e
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: f70130a0652f6a7f9d7947ef0cebafb038ea6335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-generation-features-for-c"></a>若為 C# 程式碼產生功能 #
 Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工作。  下列程式碼產生功能可用在 Visual Studio C# 中：
@@ -33,5 +34,5 @@ Visual Studio 可協助產生部分的原始程式碼，讓您專注於實際工
 * [實作介面](code-generation/implement-interface.md)
 * [引進區域變數](code-generation/introduce-local-variable.md)
  
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 C# 的 Visual Studio 開發環境](using-the-visual-studio-development-environment-for-csharp.md)   

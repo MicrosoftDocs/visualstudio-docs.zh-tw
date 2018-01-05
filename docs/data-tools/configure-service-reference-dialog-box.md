@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0826d241cc1f3741a35e635bc27dff1d69ad86af
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: ce1419882422ddc12fdb380601e908eed7e5c7ba
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-service-reference-dialog-box"></a>設定服務參考對話方塊
 **設定服務參考**對話方塊可讓您設定的行為[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]服務。  
@@ -94,7 +95,7 @@ ms.lasthandoff: 12/12/2017
 > [!NOTE]
 >  **加入 Web 參考**按鈕是只有**設定服務參考**對話方塊會顯示從**加入服務參考對話方塊**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 
  [如何： 將參考加入至 Web 服務](how-to-add-update-or-remove-a-wcf-data-service-reference.md)   
  [Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/configure-service-reference-dialog-box.md)

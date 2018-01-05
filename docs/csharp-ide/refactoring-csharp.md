@@ -16,11 +16,12 @@ helpviewer_keywords: refactoring [C#]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a26fed472f0f1765f7a6ae447127ffce75061c1f
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: dotnet
+ms.openlocfilehash: 6dec764acef39550189d0b99c419a9e472c26b7d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="refactoring-features-in-c"></a>在 C# 的重構功能 #
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/14/2017
 * [重新命名](refactoring/rename.md)
 * [同步處理類型和檔案名稱](refactoring/sync-type-and-file.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [重構程式碼產生和 Visual Studio 中的快速動作](../ide/refactoring-code-generation-quick-actions.md)  
 [在 Visual Basic 中重構](../vb-ide/refactoring-vb.md)  

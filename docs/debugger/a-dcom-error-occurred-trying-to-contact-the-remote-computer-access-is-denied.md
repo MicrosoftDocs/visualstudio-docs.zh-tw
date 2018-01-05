@@ -23,11 +23,12 @@ caps.latest.revision: "27"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe153a5252603cf967b396932a6479a8df437a08
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: e0d64aef8fd571032959eb8c3ea2e622a8233620
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>嘗試聯繫遠端電腦時，發生 DCOM 錯誤。 存取被拒絕。
 在下列情況下，遠端偵錯會使用 DCOM 在本機與遠端電腦之間進行通訊：  
@@ -50,6 +51,6 @@ ms.lasthandoff: 10/31/2017
   
 -   如果遠端偵錯要求輸入認證，請核取這個選項儲存認證。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯錯誤和疑難排解](../debugger/remote-debugging-errors-and-troubleshooting.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

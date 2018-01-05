@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: e46c8bf778ff18ea25096e524716bcb44916f460
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: b57547aa9a5fa3c036a534c85cb55bb1749a421b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="troubleshooting-service-references"></a>服務參考的疑難排解
 本主題列出常見的問題，當您正在使用時，可能會發生[!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)]或[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]參考[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。  
@@ -98,5 +99,5 @@ ms.lasthandoff: 10/31/2017
   
 4.  按一下**確定**關閉**網際網路選項** 對話方塊。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

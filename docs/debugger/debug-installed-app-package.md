@@ -22,11 +22,12 @@ caps.latest.revision: "1"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 354c574a890ae0385a58594a22b3314a13b9d6b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: uwp
+ms.openlocfilehash: ca1edcc26c8e015f12db6b1d564c182aa765ed52
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-an-installed-app-package-in-visual-studio-uwp"></a>偵錯已安裝的應用程式套件 Visual Studio (UWP)
 
@@ -94,7 +95,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 > UWP 應用程式可以開發及編譯的 Windows 8.1 或更新版本，但需要執行的 Windows 10。 如果您正在開發 UWP 應用程式在 Windows 8.1 的電腦上，從遠端可以偵錯其他的 Windows 10 裝置上執行的 UWP 應用程式，前提是主控件和目標電腦位於相同的區域網路。 若要這樣做，請下載並兩台電腦上安裝 Visual Studio 遠端工具。 已安裝的版本必須符合現有版本的 Visual Studio 一起安裝，並選取 (x86、 x64) 的架構也必須符合您目標的應用程式的。
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 偵錯](../debugger/index.md)  
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  [遠端偵錯](../debugger/remote-debugging.md)  

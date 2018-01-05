@@ -14,11 +14,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 842d4e909c85d85802b68517c15a2ee307b0cb6e
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: 3ca031d23d244c3b02cfea1e64685663e4e25a34
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何： 產生程式碼度量資料
 
@@ -50,6 +51,6 @@ ms.lasthandoff: 12/14/2017
 
 - 在**程式碼度量結果**視窗中，展開樹狀目錄中的**階層**資料行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼度量值](../code-quality/code-metrics-values.md)

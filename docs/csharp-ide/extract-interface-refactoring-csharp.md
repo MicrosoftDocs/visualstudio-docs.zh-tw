@@ -17,11 +17,12 @@ caps.latest.revision: "25"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4ed81f6f0fbcc2e72fd57d7706b051dcdf7bea75
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e3e606a86f5989ca928e0b093b564f997f92a559
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-interface-refactoring-c"></a>擷取介面重構 (C#)
 擷取介面 是提供簡單的方式，使用來自現有的類別、 結構或介面的成員建立的新介面重構作業。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  按一下**選取所有**。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
      您會看到新的檔案、 IProtoA.cs 和下列程式碼：  
   
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/31/2017
   
  當您叫用類別或結構上的 擷取介面時，基底和介面清單會修改成包含新的介面名稱。 當您叫用在介面上的 擷取介面時，則不會修改基底和介面清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [重構 (C#)](refactoring-csharp.md)

@@ -13,11 +13,12 @@ caps.latest.revision: "39"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7d8ab4732938721da8e72c5a4c5f7387a4e67e2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: b7187ef8d3342ad050c66debf939e9c6a6213957
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>建立和使用程式碼分析簽入原則
 當您使用 Team Foundation 版本控制 (TFVC) 時，您可以建立.net 和原生 （C/c + +） 程式碼專案的 team 專案中的程式碼分析簽入原則。 您可以使用程式碼分析簽入原則，控制及改善已簽入程式碼基底的程式碼的品質。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 12/12/2017
   
  您所使用的 Team 專案設定建立程式碼分析簽入原則[!INCLUDE[esprscc](../code-quality/includes/esprscc_md.md)]。 指定並針對 team 專案時，強制執行簽入原則，但是設定和在本機開發電腦上執行的個別程式碼專案中的程式碼分析回合。 本章節描述如何指定程式碼分析簽入原則，針對 team 專案，以及如何實作自訂程式碼分析原則，針對 managed 程式碼。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [如何：建立或更新標準程式碼分析簽入原則](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)  
  說明您用來設定和修改 team 專案的程式碼分析原則的步驟。  
   

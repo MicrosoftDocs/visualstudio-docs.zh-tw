@@ -18,18 +18,19 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aca9692b990df5b2612b04418729fec9cf59c256
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1de7a644cd22a05ab10001a61bb91b5374211915
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-warnings"></a>全球化警告
 全球化警告支援全球化程式庫和應用程式。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[CA1300：必須指定 MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|若要對使用由右至左讀取順序的文化特性 (Culture) 正確顯示訊息方塊，MessageBoxOptions 列舉類型的 RightAlign 和 RtlReading 成員必須傳遞至 Show 方法。|  
 |[CA1301：避免使用重複的快速鍵](../code-quality/ca1301-avoid-duplicate-accelerators.md)|便捷鍵也稱為快速鍵，可讓鍵盤使用 ALT 鍵存取控制項。 當多個控制項具有重複的便捷鍵時，就無法妥善定義便捷鍵的行為。|  

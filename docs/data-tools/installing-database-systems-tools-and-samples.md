@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2b3a551f19e3410b5f56ebe994676666cdc3d4e1
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: af76fad7d6288aff08de22b076d27cafbb5c3cff
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>適用於 Visual Studio 相容的資料庫系統
 
@@ -56,7 +57,7 @@ SQLite 是內嵌的 SQL 資料庫引擎執行的應用程式本身的處理序�
 
 Firebird 是開放原始碼 SQL 資料庫系統。 您可以下載從[Firebird 下載頁面](http://firebirdsql.org/en/downloads/)。 透過 NuGet 套件管理員中使用的 ADO.NET 資料提供者。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)  
 [如何判斷 SQL Server 和其元件的版本](http://support.microsoft.com/kb/321185)

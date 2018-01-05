@@ -11,11 +11,12 @@ ms.assetid: bebff2ad-25b6-4adc-8762-60d23bdd639a
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e37cda45519062564e45127f8b8f329b75caa9a0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e0b8df77e82ada8197b89fcdf451e4234a43669f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implement-an-interface-in-c"></a>在 C# 中實作介面 #
 **項目：**可讓您立即產生來實作介面的程式碼。 
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/31/2017
    >
    >![明確地產生實作介面](media/interface_explicitresult.png); 
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)  

@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ac633134b5b8037eb9e45131128b0ee0cf2887ab
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: a3ff1a6be01b51f45b0ca5b5417ead2195d023bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114：方法安全性應該是類型的超集
 |||  
@@ -61,7 +62,7 @@ ms.lasthandoff: 12/12/2017
  **[所有的權限]個人資訊： 6/16/1964年 12:00:00 AM**  
 **[（型別所要求） 沒有的寫入權限]個人資訊： 6/16/1964年 12:00:00 AM**  
 **[（要求的方法） 沒有讀取權限]無法存取個人資訊： 要求失敗。**   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [連結要求](/dotnet/framework/misc/link-demands)   
  [資料與模型化](/dotnet/framework/data/index)

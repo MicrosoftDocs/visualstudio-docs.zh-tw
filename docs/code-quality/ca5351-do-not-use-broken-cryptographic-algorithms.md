@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 32cd265451609e99c062270aeda0b278b98240d5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d23ca03e10476bba11a8f64c0626e0dd8aec5147
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 不要使用中斷的密碼編譯演算法
 |||  
@@ -85,7 +86,7 @@ RC2 encAlg = RC2.Create();
   
 ```  
   
-### <a name="solution"></a>解決方式  
+### <a name="solution"></a>方案  
   
 ```  
 using System.Security.Cryptography;   
@@ -105,7 +106,7 @@ DES encAlg = DES.Create();
   
 ```  
   
-### <a name="solution"></a>解決方式  
+### <a name="solution"></a>方案  
   
 ```  
 using System.Security.Cryptography;   

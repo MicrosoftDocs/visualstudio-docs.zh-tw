@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9bfbb1e05dadb18e9357e38d6ed660c248dccec4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc892cbdf49ab883c2bd45f4ef13ddda21b23d83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 編譯模組的資訊分割成具有符號`SymTagCompiland`標記 （低詳細資料） 和`SymTagCompilandDetails`標記 （高詳細資料）。 `SymTagCompilandDetails`需要載入其他符號。 不過，它會提供豐富的資訊不提供的編譯`SymTagCompiland`符號。  
@@ -26,7 +27,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="properties"></a>屬性  
  下表顯示適用於此符號類型的屬性。  
   
-|屬性|資料類型|說明|  
+|屬性|資料類型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|編譯器後端組建編號。|  
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|編譯器後端的主要版本號碼。|  
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="remarks"></a>備註  
  編譯器通常有表單，稱為兩階段編譯器。在某些編譯器版本中，每個階段會處理由個別的程式。 這些值稱為前端和後端編譯器，因此後端和前端版本號碼的符號屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [編譯模組](../../debugger/debug-interface-access/compiland.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

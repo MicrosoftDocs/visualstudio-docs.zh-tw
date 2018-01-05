@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11086ba17f3f2fb7af99d76b3efadece4a23c426
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 3c9b501b78a82a94b81b2a29c86fd07a7a0d7f98
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-tableadapters"></a>建立及設定 TableAdapters
 Tableadapter 會提供您的應用程式和資料庫之間的通訊。 這些連接到資料庫、 執行的查詢或預存程序，並傳回新的資料資料表，或將現有的填滿<xref:System.Data.DataTable>傳回資料。 Tableadapter 也可以從資料庫應用程式傳送更新的資料。  
@@ -112,5 +113,5 @@ Tableadapter 的簡介，請參閱[填滿資料集，使用 Tableadapter](../dat
     > [!NOTE]
     >  拖曳**查詢**物件直接放入**Dataset 設計工具**建立傳回純量 （單一） 值的方法。 當您選取的預存程序的查詢可能會傳回一個以上的單一值時，精靈所建立的方法只會傳回單一值。 例如，查詢可能會傳回所傳回資料的第一個資料列的第一個資料行。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [使用 TableAdapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)

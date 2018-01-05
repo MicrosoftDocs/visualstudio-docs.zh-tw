@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: ec56d03acd9a0a4acae4fada28cf191cbe444059
-ms.sourcegitcommit: e951faab601f5c05ad6606d8fd0cd2059fc4cc25
+ms.workload: data-storage
+ms.openlocfilehash: 7df2579f5556e0e35b4203c700ca3f96f46a7d2f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-datatable-in-the-dataset-designer"></a>逐步解說：以 DataSet 設計工具建立 DataTable
 
@@ -109,7 +110,7 @@ ms.lasthandoff: 12/14/2017
   
 -   在**檔案**功能表上，按一下 **全部儲存**。  
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [在 Visual Studio 中建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)  
 [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)  

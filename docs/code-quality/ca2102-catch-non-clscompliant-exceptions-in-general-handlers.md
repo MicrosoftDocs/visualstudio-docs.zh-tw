@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c241766a38ffc172924516e70b86ebdc22e117e2
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 17238e140f8672e9d2d5a67594eb26b415c0b8d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102：在一般處理常式中攔截非 CLSCompliant 的例外狀況
 |||  
@@ -80,7 +81,7 @@ csc /r:ThrowNonClsCompliantException.dll CatchNonClsCompliantException.cs
 ## <a name="related-rules"></a>相關的規則  
  [CA1031：不要攔截一般例外狀況類型](../code-quality/ca1031-do-not-catch-general-exception-types.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [例外狀況和例外狀況處理](/dotnet/csharp/programming-guide/exceptions/exceptions-and-exception-handling)   
  [Ilasm.exe (IL 組譯工具)](/dotnet/framework/tools/ilasm-exe-il-assembler)   
  [語言獨立性以及與語言無關的元件](/dotnet/standard/language-independence-and-language-independent-components)

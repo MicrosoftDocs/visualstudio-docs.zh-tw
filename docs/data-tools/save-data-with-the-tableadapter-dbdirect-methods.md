@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 3ed52a167b607236b8493e4c8c1736ee597162b9
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: fb85f9cfb2b70838d32761b412541bf15b2884c6
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>使用 TableAdapter DBDirect 方法儲存資料
 本逐步解說提供詳細的指示，直接對資料庫執行 SQL 陳述式，使用 TableAdapter 的 DBDirect 方法。 TableAdapter 的 DBDirect 方法提供資料庫更新的控制層的級。 您可以使用它們來執行特定 SQL 陳述式和預存程序的呼叫`Insert`， `Update`，和`Delete`方法視您的應用程式 (而不是多載`Update`執行更新的方法INSERT 和 DELETE 陳述式，在一個呼叫中的)。  
@@ -169,5 +170,5 @@ ms.lasthandoff: 11/07/2017
   
 -   選取將其他資料表加入資料集**以精靈設定資料集**從**資料來源**視窗。 您可以藉由將關聯節點拖曳至表單，加入顯示關聯資料的控制項。 如需詳細資訊，請參閱[集中的關聯性](relationships-in-datasets.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

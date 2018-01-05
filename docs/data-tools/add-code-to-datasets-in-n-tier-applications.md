@@ -16,18 +16,19 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 26dd5500f50b185c31809d9882e03e56541a567a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 775c03583a2fac35f2b62525bf5a18a67f250cef
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>將程式碼加入 n-tier 應用程式中的資料集
 您可以藉由建立資料集部分類別檔案，並加入程式碼擴充的資料集的功能 (而不是加入程式碼以*DatasetName*。Dataset.Designer 檔案）。 部分類別可讓分割為多個實體檔案的特定類別的程式碼。 如需詳細資訊，請參閱[部分](/dotnet/visual-basic/language-reference/modifiers/partial)或[部分類別和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。  
   
 定義資料集的程式碼會產生每次變更 （在具類型的資料集） 的資料集定義。 當您進行任何修改的資料集設定的精靈執行期間的變更，也會產生此程式碼。 若要防止在資料集的重新產生期間正在刪除您的程式碼，將程式碼加入至資料集的部分類別檔案。  
   
-根據預設，您可將資料集和 TableAdapter 的程式碼之後, 的結果會是離散的類別檔案中的每個專案。 原始的專案具有名為*DatasetName*。.Designer.vb (或*DatasetName*。.Designer.cs) 包含 TableAdapter 的程式碼。 專案中指定的**資料集專案**屬性有檔名為*DatasetName*。DataSet.Designer.vb (或*DatasetName*。DataSet.Designer.cs)。此檔案包含的資料集程式碼。  
+根據預設，您可將資料集和 TableAdapter 的程式碼之後, 的結果會是離散的類別檔案中的每個專案。 原始的專案具有名為*DatasetName*.Designer.vb (或*DatasetName*.Designer.cs) 包含 TableAdapter 的程式碼。 專案中指定的**資料集專案**屬性有檔名為*DatasetName*。DataSet.Designer.vb (或*DatasetName*。DataSet.Designer.cs)。此檔案包含的資料集程式碼。  
   
 > [!NOTE]
 >  當您分隔資料集與 Tableadapter 時 (藉由設定**資料集專案**屬性)，將不會自動移動專案中的現有部份資料集類別。 現有的資料集部分類別必須手動移動至資料集專案。  
@@ -63,7 +64,7 @@ ms.lasthandoff: 11/09/2017
     }  
     ```  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
 [將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
 [建立及設定 TableAdapters](create-and-configure-tableadapters.md)  

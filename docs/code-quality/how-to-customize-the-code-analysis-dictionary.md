@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6a14870e494c9c8efeb7c15dabf034f059c4a3c8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7fa5f88a3578998fca325500a3815b909b6ce4a9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自訂程式碼分析字典
 程式碼分析會使用內建的字典來檢查是否有錯誤的拼字、 文法的情況下和其他的命名慣例的程式碼中的識別項[!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]指導方針。 您可以建立自訂字典 Xml 檔案來新增、 移除或修改詞彙、 縮寫，以及首字母縮略字內建的字典。  

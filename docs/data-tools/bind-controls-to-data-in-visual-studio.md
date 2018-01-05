@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9361380aa53b8f6070f4ff9d956620c5344eec7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: d6a1ab26dc402d039a5e858896ec25668be8df9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>將控制項繫結至 Visual Studio 中的資料
 您可以透過將資料繫結至控制項，對應用程式的使用者顯示資料。 您可以建立這些資料繫結控制項項目從**資料來源**視窗拖曳到設計介面或在 Visual Studio 中的介面上的控制項。  
@@ -33,12 +34,12 @@ ms.lasthandoff: 10/31/2017
   
 |資料來源|中的拖放支援**Windows Form 設計工具**|中的拖放支援**WPF 設計工具**|中的拖放支援**Silverlight Designer**|  
 |-----------------|---------------------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------------|  
-|資料集|是|是|否|  
-|實體資料模型|[是]<sup>1</sup>|是|是|  
+|資料集|[是]|是|否|  
+|實體資料模型|[是]<sup>1</sup>|[是]|[是]|  
 |LINQ to SQL 類別|否<sup>2</sup>|否<sup>2</sup>|否<sup>2</sup>|  
-|服務 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服務和 web 服務)|是|是|是|  
-|物件|是|是|是|  
-|SharePoint|是|是|是|  
+|服務 (包括[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，WCF 服務和 web 服務)|[是]|是|[是]|  
+|Object|[是]|是|[是]|  
+|SharePoint|[是]|是|[是]|  
   
  1. 產生模型使用**實體資料模型**精靈，然後將這些物件拖曳至設計工具。  
   
@@ -65,6 +66,6 @@ ms.lasthandoff: 10/31/2017
 |UI 中顯示的篩選資料。|[在 Windows Forms 應用程式中篩選和排序資料](../data-tools/filter-and-sort-data-in-a-windows-forms-application.md)|  
 |自訂控制項的標題。|[自訂 Visual Studio 為資料繫結的控制項建立標題的方式](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)   
  [Windows Forms 資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)

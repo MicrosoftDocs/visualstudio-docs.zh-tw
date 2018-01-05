@@ -11,11 +11,12 @@ ms.assetid: 683790b4-b68b-42d7-8dc4-a68eca05aa01
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 626db0d9c62fc606539fc9d72fc14c3651dca7ff
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 2d0354549d01fb31a813630066c96f6378db4b7a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-method-in-c"></a>在 C# 中產生方法 #
 **項目：**可讓您立即將方法加入至類別。 
@@ -47,6 +48,6 @@ ms.lasthandoff: 10/31/2017
 
    ![產生方法結果](media/method_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

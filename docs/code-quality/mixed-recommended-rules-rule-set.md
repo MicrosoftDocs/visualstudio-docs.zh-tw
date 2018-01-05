@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44bc05bc6ba27dffdc267ad2cad1e15bc9b0a61a
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 44c01069539ef5b67a9f208bc89786dfd0ac40a8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>混合建議規則規則集
 Microsoft 混合建議規則的重點在於支援 Common Language Runtime，包括潛在的安全性漏洞、 應用程式當機，以及其他重要邏輯和設計錯誤的 c + + 專案中最常用及最重要的問題。 您應該包含您為支援 Common Language Runtime 之 c + + 專案建立這個規則集的任何自訂規則集。 這個規則集被設計來與 Visual Studio Professional 版及更高版本設定。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|使用尚未初始化的記憶體|  
 |[C6011](../code-quality/c6011.md)|取值的指標為 NULL|  

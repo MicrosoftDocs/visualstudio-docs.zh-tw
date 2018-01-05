@@ -11,11 +11,12 @@ ms.assetid: f2280cfa-a9ec-4b56-9d94-c8fd384db980
 author: kuhlenh
 ms.author: kaseyu
 manager: ghogen
-ms.openlocfilehash: 668036b5a9c963a48255e8425c0d443fce4b8bb7
-ms.sourcegitcommit: 5f5587a1bcf4aae995c80d54a67b4b461f8695f3
+ms.workload: dotnet
+ms.openlocfilehash: 9ffa85d768939522935199edde6d0f19b3f2b7a2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="generate-a-constructor-in-c"></a>在 C# 中產生的建構函式 #
 **項目：**可讓您立即產生新的建構函式，在類別上的程式碼。 
@@ -133,6 +134,6 @@ ms.lasthandoff: 11/29/2017
 
    ![產生建構函式的結果](media/constructor5_result.png)
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

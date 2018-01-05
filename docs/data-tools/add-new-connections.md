@@ -11,11 +11,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 06170174436f37713f20c708c439e79af4d90198
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: data-storage
+ms.openlocfilehash: 26a45e8fe44e2e0945a105711ae84b1082d5c891
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-connections"></a>加入新的連線
 
@@ -57,6 +58,6 @@ ms.lasthandoff: 11/22/2017
 
 如果測試成功，即準備好建立*資料來源*，這是一個 Visual Studio 詞彙，實際上會*資料模型*為基礎的基礎資料庫或服務。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

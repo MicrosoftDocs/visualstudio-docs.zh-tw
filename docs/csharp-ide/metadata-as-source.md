@@ -17,11 +17,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 118d19a1be813b0488503be86a316ccc82bd7b37
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 29b783e20925b3eaa4a7b0956fdcfdbcab06a328
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="metadata-as-source"></a>中繼資料當做原始碼
 中繼資料當做原始程式碼，可讓您檢視在唯讀緩衝區中顯示為 C# 原始程式碼的中繼資料。 這會啟用類型和成員 (不含實作) 宣告的檢視。 針對專案或解決方案不提供原始程式碼的類型或成員執行 [移至定義]  命令，就可以檢視當做原始程式碼的中繼資料。  

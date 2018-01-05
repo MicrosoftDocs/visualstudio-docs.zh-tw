@@ -15,11 +15,12 @@ caps.latest.revision: "40"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f35833df8e84a4e4caba8fd46f8daea8dd5119a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 92babbf3c7a5863d178463b69525bdb722bf28ad
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="in-source-suppression-overview"></a>原始檔中隱藏項目概觀
 在原始程式檔隱藏項目是隱藏或忽略 managed 程式碼中的程式碼分析違規所加入的能力**SuppressMessage**屬性造成違規的程式碼區段。 **SuppressMessage**屬性是在編譯時期定義 CODE_ANALYSIS 編譯的符號時，才包含 managed 程式碼組件的 IL 中繼資料中條件式屬性。  
@@ -64,7 +65,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 -   **範圍**位在其要隱藏警告的目標。 如果未指定目標，則會將它設定為屬性的目標。 支援的範圍包括下列各項：  
   
-    -   模組  
+    -   Module  
   
     -   命名空間  
   
@@ -79,11 +80,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="suppressmessage-usage"></a>SuppressMessage 使用量  
  程式碼分析警告會隱藏層級的執行個體**SuppressMessage**屬性會套用。 目的是緊密結合的程式碼的隱藏項目資訊發生違規。  
   
- 一般格式的隱藏項目包括規則分類和規則識別項包含規則名稱的選擇性人們可讀取表示。 例如：  
+ 一般格式的隱藏項目包括規則分類和規則識別項包含規則名稱的選擇性人們可讀取表示。 例如，套用至物件的  
   
  `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`  
   
- 如果有嚴格的效能原因，而最小化在原始程式檔隱藏項目中繼資料，規則名稱本身可以省略。規則類別和其規則識別碼一起構成充分唯一的規則識別項。 例如：  
+ 如果有嚴格的效能原因，而最小化在原始程式檔隱藏項目中繼資料，規則名稱本身可以省略。規則類別和其規則識別碼一起構成充分唯一的規則識別項。 例如，套用至物件的  
   
  `[SuppressMessage("Microsoft.Design", "CA1039")]`  
   
@@ -123,5 +124,5 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 ## <a name="global-suppression-file"></a>全域隱藏項目檔  
  全域隱藏項目檔案維護的全域層級隱藏項目或未指定目標的隱藏項目的隱藏項目。 例如，組件層級違規的隱藏項目會儲存此檔案中。 此外，某些 ASP.NET 隱藏項目會儲存在這個檔案中，因為專案層級設定不適用於表單背後的程式碼。 建立全域隱藏項目並將其加入您的專案選取 第一次**專案隱藏項目檔中**選項**隱藏訊息**錯誤清單 視窗中命令。 如需詳細資訊，請參閱[How to： 使用功能表項目隱藏的警告](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Diagnostics.CodeAnalysis>

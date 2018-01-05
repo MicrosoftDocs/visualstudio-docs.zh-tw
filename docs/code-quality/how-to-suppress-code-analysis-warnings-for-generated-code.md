@@ -12,11 +12,12 @@ caps.latest.revision: "5"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 24b94c0c4ce6031876f5ad26ce01a22299f7056a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bd917c8c9a3b66dc1fe34e089e14481c2b7df5a5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：隱藏所產生程式碼的程式碼分析警告
 Managed 程式碼編譯器通常會產生程式碼加入至專案，以便快速的程式碼開發。 此外，開發人員通常會使用第三方工具可協助您快速地開發應用程式。 這些工具也會產生程式碼加入至專案。  

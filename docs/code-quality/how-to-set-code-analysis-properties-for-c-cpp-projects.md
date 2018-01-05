@@ -22,11 +22,12 @@ caps.latest.revision: "17"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: b2ad22eccb561bf58ee845d58268620aad778a20
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: 629bc4dc36ade84f6a6e55518775f0d11165da7c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>如何：為 C/C++ 專案設定程式碼分析屬性
 您可以設定使用哪些規則程式碼分析工具來分析專案的每個組態中的程式碼。 此外，您可以將程式碼分析，隱藏警告的程式碼與產生及協力廠商工具加入至您的專案。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 11/15/2017
 ## <a name="rule-sets"></a>規則集  
  如果您的專案包含 managed 程式碼，您可以選取要藉由選取規則集的程式碼分析中套用的規則**執行此規則集**清單。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)   
  [C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)

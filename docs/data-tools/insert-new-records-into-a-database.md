@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2450ed950227b6755b57f20f3520a1e75034aafe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 1ebb2621aa8da474c08d12e187feadef85840663
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="insert-new-records-into-a-database"></a>將新記錄插入至資料庫
 若要將新記錄插入資料庫中，您可以使用`TableAdapter.Update`方法，或其中一個 TableAdapter 的 DBDirect 方法 (特別是`TableAdapter.Insert`方法)。 如需詳細資訊，請參閱[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。  
@@ -82,5 +83,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您必須存取您嘗試連接的資料庫，以及所需的資料表執行插入的權限。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

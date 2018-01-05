@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 29b24794c74f2bd042845384d72a3716506d5e2d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 88c8687511dd600802cc7c6ecdc12f0827fd7f6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>填入 dataset 時關閉條件約束
 如果資料集包含條件約束 （例如外部索引鍵條件約束），它們可以引發順序對資料集執行的作業相關的錯誤。 例如，載入之前載入的子記錄相關的父資料錄可能違反條件約束，而且會導致錯誤。 您載入子記錄，如條件約束檢查有相關的父記錄，並引發錯誤。  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
 2.  在**屬性**視窗中，將<xref:System.Data.DataSet.EnforceConstraints%2A>屬性`false`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 Tableadapter 填入資料集](../data-tools/fill-datasets-by-using-tableadapters.md)   
  [資料集中的關聯性](../data-tools/relationships-in-datasets.md)

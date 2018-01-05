@@ -16,11 +16,12 @@ caps.latest.revision: "33"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d62957a75c844d736a1168010616d5cf2c795bee
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 134645ced3352d820165b23a73308894fed0897a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>如何：設定 Managed 程式碼專案的程式碼分析
 在[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]，[!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]和[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，您可以從程式碼分析的清單中選擇*規則集*套用至 managed 程式碼專案。 預設規則集是 Microsoft 最小建議規則。 您可以套用另一個規則集對專案或方案中的所有專案。  
@@ -53,5 +54,5 @@ ms.lasthandoff: 10/31/2017
   
          如需詳細資訊，請參閱[建立自訂規則集](../code-quality/creating-custom-code-analysis-rule-sets.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：設定和使用自訂規則集](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)

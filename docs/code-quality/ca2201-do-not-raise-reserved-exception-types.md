@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 713018b96aed70d52b1b11e75b0c2993312ef474
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 11e00594c1cf279fb6b07791bb48f2222cc9c79b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201：不要引發保留的例外狀況類型
 |||  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
  下表顯示參數和驗證參數，包括實值參數中的 set 存取子屬性時所擲回的例外狀況：  
   
-|參數描述|例外狀況|  
+|參數描述|例外|  
 |---------------------------|---------------|  
 |`null`參考|<xref:System.ArgumentNullException?displayProperty=fullName>|  
 |允許範圍之外的值 （例如集合或清單的索引）|<xref:System.ArgumentOutOfRangeException?displayProperty=fullName>|  

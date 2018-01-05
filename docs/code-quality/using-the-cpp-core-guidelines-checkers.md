@@ -12,11 +12,12 @@ author: mikeblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a6c32f906ca3edfa8afb27937f859d93c8428168
-ms.sourcegitcommit: cc288456329aefca1fdaa7ce74751ce195985c14
+ms.workload: cplusplus
+ms.openlocfilehash: cadee7d9cae0c59333a034e6f0ea12049bf3853f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
@@ -63,7 +64,7 @@ int main()
   
 -   C26485 是規則 Bounds.3： 沒有陣列至指標衰退。  
   
--   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span` 。  
+-   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span`。  
   
  如果安裝和編譯此程式碼前, 兩個警告就是輸出，但是第三個隱藏時啟用 c + + 核心檢查程式碼分析規則集。 以下是範例程式碼的組建輸出：  
   
@@ -95,7 +96,7 @@ C + + 核心指導方針，會有幫助您撰寫更好且更安全的程式碼�
 
   - **輸入規則**強制[輸入設定檔的 c + + 核心指導方針](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile)。
 
-  **Visual Studio 2017 版本 15.5**:
+  **Visual Studio 2017 15.5 版**：
   - **類別規則**焦點放在適當的特殊方法，以及虛擬規格使用的一些規則。 這是建議用於檢查子集[類別和類別階層架構](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class)。 
   - **並行規則**攔截 badlyly 宣告成立條件物件的單一規則。 如需詳細資訊，請參閱[並行存取相關指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency)。 
   - **宣告規則**的規則數[介面指導方針](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces)哪些著重於如何全域變數宣告。  
@@ -247,6 +248,6 @@ msbuild /p:EnableCppCoreCheck=true /p:RunCodeAnalysis=true /p:CodeAnalysisRuleSe
   
  NuGet 封裝加入其他的 MSBuild *.targets*檔案加入專案時啟用程式碼分析您的專案上叫用。 這*.targets*檔案將 c + + 核心檢查規則做為額外的擴充加入至 Visual Studio 程式碼分析工具。 安裝封裝時，您可以使用 [屬性頁] 對話方塊啟用或停用發行和實驗性規則。  
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 [Visual Studio c + + 核心檢查參考](code-analysis-for-cpp-corecheck.md)。
   

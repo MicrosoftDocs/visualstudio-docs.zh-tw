@@ -16,11 +16,12 @@ f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
 dev_langs: csharp
-ms.openlocfilehash: 9ed72704c37fcfc5d0c48ba17937f5b06097ce0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6344a30b5772ffa23c09baa4f38a4478d907cc9e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="change-a-method-signature-in-c"></a>變更在 C# 方法簽章 #
 **項目：**可讓您移除或變更的方法參數的順序。
@@ -48,7 +49,7 @@ ms.lasthandoff: 10/31/2017
 
    ![變更簽章對話方塊](media/changesignature_dialog.png)
 
-   | 按鈕 | 說明
+   | 按鈕 | 描述
    | ------ | ---
    | **向上/向下鍵** | 將選取的參數在清單中上下移動
    | **移除**  | 從清單中移除選取的參數
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
 
    ![變更簽章結果](media/changesignature_result.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (C#)](../refactoring-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

@@ -262,11 +262,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 11ad6bea31523474bb5b07aaad4be63de5741830
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 4f08a53f5af8342387ce5b523e29e007de3a0524
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>依據 CheckId 列出 Managed 程式碼的程式碼分析警告
 下表依照警告的 CheckId 識別項列出 Managed 程式碼的程式碼分析警告。  
@@ -275,13 +276,13 @@ ms.lasthandoff: 10/31/2017
   
 |CheckId|警告|描述|  
 |-------------|-------------|-----------------|  
-|CA1000|[CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|呼叫泛型類型的靜態成員時，必須為類型指定型別引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定類型引數。 在上述兩種情況下，指定類型引數的語法不同且容易混淆。|  
+|CA1000|[CA1000：不要在泛型型別上宣告靜態成員](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)|呼叫泛型類型的靜態成員時，必須為類型指定型別引數。 呼叫不支援介面的泛型執行個體 (Instance) 成員時，必須為成員指定型別引數。 在上述兩種情況下，指定型別引數的語法不同且容易混淆。|  
 |CA1001|[CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|類別會宣告及實作類型為 System.IDisposable 的執行個體欄位，且該類別不會實作 IDisposable。 宣告 IDisposable 欄位的類別會間接擁有 Unmanaged 資源，且應實作 IDisposable 介面。|  
 |CA1002|[CA1002：不要公開泛型清單](../code-quality/ca1002-do-not-expose-generic-lists.md)|System.collections.generic.list< < (的\<(T >) >) 針對效能而非繼承所設計的泛型集合。 因此，List 不包含任何虛擬成員。 應該改為公開專為繼承所設計的泛型集合。|  
 |CA1003|[CA1003：必須使用一般事件處理常式執行個體](../code-quality/ca1003-use-generic-event-handler-instances.md)|型別包含的委派會傳回 void，其簽章會包含兩個參數 （物件的第一個和第二個指派給 EventArgs 的類型），而包含組件的目標 Microsoft.NET Framework 2.0。|  
-|CA1004|[CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之類型參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 使用所有類型參數的推斷時，呼叫泛型和非泛型執行個體方法之語法是相同的；這簡化泛型方法的可用性。|  
+|CA1004|[CA1004：泛型方法應該提供類型參數](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)|推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定型別引數。 使用所有類型參數的推斷時，呼叫泛型和非泛型執行個體方法之語法是相同的；這簡化泛型方法的可用性。|  
 |CA1005|[CA1005：避免在泛型型別上包含過多參數](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)|泛型類型所包含的型別參數越多，就越難了解並記住每個型別參數所代表的含意。 具有一個型別參數，如清單所示通常都清楚\<T >，並在某些情況下，有兩個類型參數，如\<Dictionary<tkey，Tvalue> >。 不過，如果存在兩個以上的型別參數，則對大多數使用者而言都會變得難以理解。|  
-|CA1006|[CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀類型引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。|  
+|CA1006|[CA1006：不要在成員簽章中巢狀化泛型類型](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)|巢狀型別引數就是也是泛型類型的型別引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。|  
 |CA1007|[CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)|外部可見的方法包含 System.Object 類型的傳址參數。 使用泛型方法可讓所有類型 (遵守條件約束) 傳遞給方法，而不需要先將類型轉型為傳址參數類型。|  
 |CA1008|[CA1008：列舉值中應該要有值為零的成員](../code-quality/ca1008-enums-should-have-zero-value.md)|如同其他實值類型一般，未初始化的列舉其預設值為零。 非旗標屬性的列舉應該要使用零值來定義成員，讓預設值成為列舉的有效值。 如果已套用 FlagsAttribute 屬性的列舉定義零值成員，則其名稱應該是 "None"，以表示列舉中未設定任何值。|  
 |CA1009|[CA1009：事件處理常式必須正確宣告](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式方法會採用兩個參數。 第一個的類型為 System.Object 且名稱為 "sender"。 這是引發事件的物件。 第二個參數的類型為 System.EventArgs 且名稱為 "e"。 這是與事件相關聯的資料。 事件處理常式方法不應該傳回值；在 C# 程式設計語言中，這是由 void 傳回類型所表示。|  
@@ -425,7 +426,7 @@ ms.lasthandoff: 10/31/2017
 |CA2101|[Ca2101： 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|平台叫用成員允許部分信任的呼叫端、具有字串參數，並且未明確封送處理字串。 這樣會造成安全性弱點。|  
 |CA2102|[CA2102：必須使用一般處理常式攔截非 CLSCompliant 例外狀況](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|組件中不是使用 RuntimeCompatibilityAttribute 來標記或是以 RuntimeCompatibility(WrapNonExceptionThrows = false) 標記的成員包含處理 System.Exception 的 catch 區塊，同時不包含緊接其後的一般 catch 區塊。|  
 |CA2103|[CA2103：必須檢閱命令式安全性](../code-quality/ca2103-review-imperative-security.md)|方法會使用命令式安全性，而且可能會利用只要要求正在使用中就可能變更的狀態資訊或傳回值建構權限。 請盡可能使用宣告式安全性。|  
-|CA2104|[CA2104：不要宣告唯讀的可變動參考類型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|外部可見類型包含了可變動參考類型的外部可見唯讀欄位。 可變動類型是可以修改執行個體 (Instance) 資料的類型。|  
+|CA2104|[CA2104：不要宣告唯讀的可變動參考類型](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|外部可見類型包含了可變動參考類型的外部可見唯讀欄位。 可變動類型是可以修改執行個體資料的類型。|  
 |CA2105|[CA2105：陣列欄位不應該為唯讀](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|當您將唯讀 (在 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 中為 ReadOnly) 修飾詞套用至包含陣列的欄位時，欄位就不能變更為參考不同的陣列。 但是，儲存在唯讀欄位的陣列元素則可以變更。|  
 |CA2106|[CA2106：必須保護判斷提示](../code-quality/ca2106-secure-asserts.md)|方法會判斷提示使用權限，而且不會在呼叫端上執行安全性檢查。 判斷提示安全性權限但未執行任何安全性檢查，會在您的程式碼中留下可能遭利用的安全性弱點。|  
 |CA2107|[CA2107：必須檢視 Deny 和 Permit Only 的使用方式](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|只有相當了解 [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 安全性的人員才能執行 PermitOnly 方法和 CodeAccessPermission.Deny 安全性動作。 而使用這些安全性動作的程式碼應該接受安全性檢閱。|  
@@ -477,7 +478,7 @@ ms.lasthandoff: 10/31/2017
 |CA2208|[CA2208：必須正確具現化引數例外狀況](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|對例外狀況類型為 (或衍生自) ArgumentException 的預設 (無參數) 建構函式進行呼叫，或將錯誤的字串引數傳遞至例外狀況類型為 (或衍生自) ArgumentException 的參數化建構函式。|  
 |CA2210|[CA2210：組件應該具備有效的強式名稱](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|強式名稱可避免用戶端在不知情的狀況下，載入已遭他人修改的組件。 除了極少數的案例以外，您都應該避免部署沒有強式名稱的組件。 如果您共用或散發未正確簽署的組件，表示這個組件或許已遭他人修改，通用語言執行平台可能不會載入組件，或是使用者可能必須停用電腦上的驗證作業。|  
 |CA2211|[CA2211：非常數欄位不應該為可見的](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|既非常數，亦非唯讀的靜態欄位不是安全執行緒。 必須小心控制對這類欄位的存取，而且需要進階的程式設計技巧來同步處理對類別物件的存取。|  
-|CA2212|[CA2212：不要以 WebMethod 標記 Serviced 元件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|類型中繼承自 System.EnterpriseServices.ServicedComponent 的方法是使用 System.Web.Services.WebMethodAttribute 來標記。 因為 WebMethodAttribute 和 ServicedComponent 方法具有衝突的內容和交易流程的行為及需求，所以方法的行為在某些情節中會是不正確的。|  
+|CA2212|[CA2212：不要以 WebMethod 標記 Serviced 元件](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|類型中繼承自 System.EnterpriseServices.ServicedComponent 的方法是使用 System.Web.Services.WebMethodAttribute 來標記。 因為 WebMethodAttribute 和 ServicedComponent 方法具有衝突的內容和異動流程的行為及需求，所以方法的行為在某些情節中會是不正確的。|  
 |CA2213|[CA2213：可處置的欄位應該受到處置](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|實作 System.IDisposable 的類型宣告了也實作 IDisposable 之類型的欄位。 宣告類型的 Dispose 方法不會呼叫欄位的 Dispose 方法。|  
 |CA2214|[CA2214：不要呼叫建構函式中的可覆寫方法](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|當建構函式呼叫虛擬方法時，叫用此方法之執行個體的建構函式可能尚未執行。|  
 |CA2215|[CA2215：Dispose 方法應該呼叫基底類別處置](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|如果類型會繼承自可處置的類型，則必須從本身的 Dispose 方法呼叫基底類型的 Dispose 方法。|  

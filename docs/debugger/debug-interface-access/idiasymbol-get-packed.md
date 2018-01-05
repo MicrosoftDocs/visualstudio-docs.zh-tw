@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 29c56e7a1a86b8b88056b49dc0a6d93276fd597c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 64ede0e35b9d4e67a038f4af9e43e11669ea736a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetpacked"></a>IDiaSymbol::get_packed
 擷取指定使用者定義資料型別 (UDT) 是否已壓縮的旗標。  
@@ -44,5 +45,5 @@ HRESULT get_packed (
 ## <a name="remarks"></a>備註  
  封裝的表示 UDT 的所有成員都為短越好，都位於要對齊記憶體界限沒有中介填補。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

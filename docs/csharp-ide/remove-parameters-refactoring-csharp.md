@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5e53d813d9b2dcefd2b2d19da2a76b6c0d1f989
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 549914476db028cc5135de3c954ac841ab2da628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="remove-parameters-refactoring-c"></a>移除參數重構 (C#)
 `Remove Parameters`是提供簡單的方式，從方法、 索引子或委派移除參數重構作業。 移除參數變更宣告;在呼叫成員的任何位置，以反映新的宣告被移除的參數。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
 4.  使用**參數**欄位中，將游標放在`int i`，然後按一下 **移除**。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
 6.  在**預覽變更 — 移除參數**對話方塊中，按一下 **套用**。  
   
@@ -88,5 +89,5 @@ MyMethod(param2);
   
  重構作業，由`param1`也不會遞增。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [重構 (C#)](refactoring-csharp.md)

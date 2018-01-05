@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 5936edd6096bd708dda1b03f60f94cea3d6c1e5b
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 7ade7aa6e103a8637d26b10029faabc434ce3a83
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Windows Form 控制項繫結至 Visual Studio 中的資料
 您可以加入 Windows Form 資料繫結，您的應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至 Visual Studio 中的 Windows Form 設計工具。
@@ -76,6 +77,6 @@ ms.lasthandoff: 11/09/2017
   
 請注意每個控制項具有智慧標籤。 這個標記可讓該控制項只會套用的自訂項目。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)  
 [在 Windows Form (.NET Framework) 中的資料繫結](/dotnet/framework/winforms/windows-forms-data-binding)

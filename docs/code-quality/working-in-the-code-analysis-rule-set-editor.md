@@ -13,16 +13,17 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d5a0fc10230c4c2b7638e1be75770872e0dcf4aa
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c832b29512bfd7339ab60044ece81f1626be9bc7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>在程式碼分析規則集編輯器中工作
 程式碼分析規則集編輯器可讓您指定自訂規則集所隨附的規則，以及指定的動作。 您也可以指定當發生規則的違規，程式碼分析時要採取的動作。  
   
-|動作|說明|  
+|動作|描述|  
 |------------|-----------------|  
 |**警告**|產生一個警告**錯誤清單**視窗。|  
 |**錯誤**|會產生錯誤**錯誤清單**視窗。|  
@@ -41,7 +42,7 @@ ms.lasthandoff: 10/31/2017
   
  下表描述的規則集編輯器工具列上的控制項。  
   
-|工具列控制項|說明|  
+|工具列控制項|描述|  
 |---------------------|-----------------|  
 |**全部展開**|中的所有群組顯示的規則。|  
 |**全部摺疊**|隱藏所有群組中的規則。|  
@@ -59,12 +60,12 @@ ms.lasthandoff: 10/31/2017
   
  下表描述的規則集的欄位。  
   
-|欄位|說明|  
+|欄位|描述|  
 |-----------|-----------------|  
 |**ID**|規則的識別碼。|  
 |**分類**|它們的成員資格規則集，除了程式碼分析規則也會依類別分組。 如需詳細資訊，請參閱[Managed 程式碼警告的程式碼分析](../code-quality/code-analysis-for-managed-code-warnings.md)。|  
-|**Name**|規則的標題。|  
-|**Namespace**|規則的命名空間。|  
+|**名稱**|規則的標題。|  
+|**命名空間**|規則的命名空間。|  
 |**目標類型**|表示規則適用於原生、 管理，或資料庫程式碼。|  
 |**動作**|當執行程式碼分析中違反此規則時所採取的動作。<br /><br /> **警告**-會產生警告。<br /><br /> **錯誤**-會產生錯誤。<br /><br /> **無**-停用規則。<br /><br /> 您可以編輯動作 欄位中。 將值設定為 None 時清除核取方塊，規則相同。|  
 |**來源的規則集**|包含規則的規則集。|  

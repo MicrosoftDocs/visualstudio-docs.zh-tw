@@ -50,11 +50,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0a589cf48f53636bcd3892c7c4c991e0fb516bf3
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: a8c8660fbc489dd8c4926bb09b8b42006da0897a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的資料集工具
 > [!NOTE]
@@ -93,5 +94,5 @@ ms.lasthandoff: 12/12/2017
 ## <a name="datasets-and-xml"></a>資料集和 XML  
  有關轉換資料集與 XML 的詳細資訊，請參閱[讀取 XML 資料至資料集](../data-tools/read-xml-data-into-a-dataset.md)和[將資料集儲存為 XML](../data-tools/save-a-dataset-as-xml.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

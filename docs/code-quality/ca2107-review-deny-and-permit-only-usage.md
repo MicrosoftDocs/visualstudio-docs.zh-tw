@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: edd0bd14a75dfd58ca043bfaa663e2cfb2660e75
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 3d6f514546c298a134785740fe7bbf948031bc74
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107：必須檢視 Deny 和 Permit Only 的使用方式
 |||  
@@ -76,7 +77,7 @@ ms.lasthandoff: 12/12/2017
 **LinkDemand： 拒絕呼叫者的影響不上的 LinkDemand 與判斷提示的權限。**  
 **LinkDemand： 拒絕呼叫者的影響不使用 LinkDemand 保護的程式碼。**  
 **LinkDemand： 這個 Deny 影響不使用 LinkDemand 保護的程式碼。**   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>   

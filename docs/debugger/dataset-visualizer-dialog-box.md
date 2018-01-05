@@ -24,11 +24,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 95261dd96b6fdd7350254c74ae895965a3a8eeed
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 56cfc8dfdcb3c61b5f1eb1b0f14f3ad1af5fb89e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="dataset-visualizer-dialog-box"></a>資料集視覺化檢視對話方塊
 [資料集視覺化檢視] 可讓您檢視 DataSet、DataTable、DataView 或 DataViewManager 物件的內容。 在偵錯工具變數視窗或 DataTip 中，按一下每一個物件的 [值] 旁邊出現的放大鏡圖示，就可以存取這個視覺化檢視。  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
  資料表  
  使用這個下拉式清單方塊可以選取您要以視覺化方式檢視之資料集內的資料表。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [建立自訂的視覺化檢視](../debugger/create-custom-visualizers-of-data.md)   
  [偵錯工具視窗](../debugger/debugger-windows.md)   

@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 2274ac9bcfd3ba7c87364f5c4c79cd155844fe73
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 1bb1b91894fc562b7080a8225b69b3703948a604
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>使用多層式架構應用程式中的資料集
 *多層式架構資料應用程式*分成多個邏輯層的資料中心應用程式 (或*層*)。 換句話說，多層式架構資料應用程式是分成多個專案的應用程式，而其專屬專案中各有資料存取層、商務邏輯層和呈現層。 如需詳細資訊，請參閱[多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 12/12/2017
 <xref:System.Data.DataSet>  
 <xref:System.Data.TypedTableBase%601>  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [多層式架構 (N-Tier) 資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)  
 [逐步解說：建立多層式架構 (N-Tier) 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
 [將程式碼新增至多層式架構 (N-Tier) 應用程式中的 TableAdapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)  
@@ -51,4 +52,4 @@ ms.lasthandoff: 12/12/2017
 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)  
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)  
 [建立及設定 TableAdapters](../data-tools/create-and-configure-tableadapters.md)  
-[多層式架構和遠端的應用程式使用 LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
+[使用 LINQ to SQL 的多層式架構和遠端應用程式](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)

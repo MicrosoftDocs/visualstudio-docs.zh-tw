@@ -14,11 +14,12 @@ caps.latest.revision: "36"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 44d64b7371f1b27afaa7796dc42d4b7864d20819
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 51b282cb86ca83ecf2ace1e4b12c8444928b15e1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>使用規則集分組程式碼分析規則
 當您設定中的程式碼分析[!INCLUDE[vsUltLong](../code-quality/includes/vsultlong_md.md)]， [!INCLUDE[vsPreLong](../code-quality/includes/vsprelong_md.md)]，或[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，您可以從 Microsoft 內建的清單選擇*規則集*。 規則集是識別目標的問題和的特定狀況的程式碼分析規則的邏輯群組。 比方說，您可以將套用的規則集是設計用來掃描程式碼公開可用的應用程式開發介面，或您可以套用包含只有最小建議規則規則集。 您也可以套用的規則集包含的所有規則。  

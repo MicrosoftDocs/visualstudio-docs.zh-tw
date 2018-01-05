@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: c950abb08e937ded4511408367f7163f3b2e16de
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: be8bbbec67b70576aa3a059dd400d46c92137ab9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>無法建立關聯&lt;關聯名稱&gt;-屬性類型不相符
 無法建立關聯\<關聯名稱 >-屬性類型不相符。 屬性沒有相符的型別：\<屬性名稱 >。  
@@ -33,9 +34,9 @@ ms.lasthandoff: 11/09/2017
   
 3.  檢查**關聯屬性**並選取相同的資料類型的屬性。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
 [如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md) 

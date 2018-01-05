@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 685f57286a022be6b7acbdaf2b8ffed33457fef1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77c56d70c6fc3dd3dac9a563c146d8bab2c6f699
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>將 WPF 控制項繫結至 Visual Studio 中的資料
 您可以透過將資料繫結至 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 控制項，對應用程式的使用者顯示資料。 若要建立這些資料繫結控制項，您可以將項目從**資料來源**視窗拖曳至[!INCLUDE[wpfdesigner_current_short](../data-tools/includes/wpfdesigner_current_short_md.md)]中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。 本主題描述可用來建立資料繫結 [!INCLUDE[TLA#tla_titlewinclient](../data-tools/includes/tlasharptla_titlewinclient_md.md)] 應用程式的一些最常用工作、工具和類別。  
@@ -51,10 +52,10 @@ ms.lasthandoff: 11/09/2017
   
 |資料來源|產生可將控制項繫結至資料來源的 XAML|產生可將資料填入資料來源的程式碼|  
 |-----------------|-----------------------------------------------------------|--------------------------------------------------------|  
-|資料集|是|是|  
-|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|是|是|  
-|服務|是|否|  
-|物件|是|否|  
+|資料集|[是]|是|  
+|[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]|是|[是]|  
+|服務|[是]|否|  
+|Object|[是]|否|  
   
 ### <a name="datasets"></a>資料集  
  當您拖曳資料表或資料行從**資料來源**設計工具中，視窗[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]產生[!INCLUDE[TLA#tla_titlexaml](../data-tools/includes/tlasharptla_titlexaml_md.md)]，會執行下列：  
@@ -101,5 +102,5 @@ Visual Studio 也會對程式碼後置檔案進行下列變更：
   
 -   建立控制項的資料繫結。 如果您將項目拖曳至設計工具中的現有控制項，XAML 會將控制項繫結至項目。 如果您將項目拖曳至容器時，XAML 中建立控制項選取要拖曳的項目，並將繫結控制項的項目。 控制項是在新的 <xref:System.Windows.Controls.Grid> 內建立。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

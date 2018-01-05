@@ -14,11 +14,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6396b698a5f4d2602c9969d6cab0422832b3e6dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d11a8c3169b019ac504ed98258d9281037eb1dd2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：建立或更新標準程式碼分析簽入原則
 您可以要求中的所有程式碼專案的 team 專案執行程式碼分析，使用程式碼分析簽入原則。 需要程式碼分析可以改善已簽入程式碼基底程式碼的品質。  
@@ -50,7 +51,7 @@ ms.lasthandoff: 10/31/2017
   
 -   選取或清除下列選項：  
   
-    |選項|說明|  
+    |選項|描述|  
     |------------|-----------------|  
     |**強制執行簽入以僅包含屬於目前方案的檔案。**|只有在方案和專案的組態檔中指定的檔案，可以執行程式碼分析。 此原則可確保分析的所有程式碼都是方案的一部分。|  
     |**強制執行 C/c + + 程式碼分析 (/analyze)**|需要所有的 C 或 c + + 專案，以建置 / analyze 編譯器選項，簽入之前執行程式碼分析。|  
@@ -70,5 +71,5 @@ ms.lasthandoff: 10/31/2017
   
     -   如需有關如何建立及實作自訂簽入原則規則設定，請參閱[Managed 程式碼的實作自訂簽入原則](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [建立和使用程式碼分析簽入原則](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

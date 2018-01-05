@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: ea1d53ef5fb99c161793670049fd5f473da1aa51
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: ec13e17aac37a24e92732b9b052147c7d9faa916
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>將 WPF 控制項繫結至 WCF 資料服務
 您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 這些控制項會繫結至封裝於 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]中的客戶記錄。 您也會加入按鈕，讓客戶可使用這些按鈕檢視及更新記錄。  
@@ -318,7 +319,7 @@ ms.lasthandoff: 12/12/2017
   
 -   了解如何使用**資料來源**WPF 控制項中顯示相關的資料 （也就是父子式關聯性中的資料） 的 Visual Studio 中的視窗。 如需詳細資訊，請參閱[逐步解說： 在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [將 WPF 控制項繫結至資料集](../data-tools/bind-wpf-controls-to-a-dataset.md)   
 [WCF 概觀 (.NET Framework)](/dotnet/framework/data/wcf/wcf-data-services-overview)   

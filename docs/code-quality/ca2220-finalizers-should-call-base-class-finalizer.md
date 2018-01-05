@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: aa5ed3329d4168a0781243a4faf021de3488e77c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 46427cffe64c6c81e0f262520a61c1b1ea01fff8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220：完成項應該呼叫基底類別完成項
 |||  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]  
   
-## <a name="see-also"></a>另請參閱  
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>請參閱  
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

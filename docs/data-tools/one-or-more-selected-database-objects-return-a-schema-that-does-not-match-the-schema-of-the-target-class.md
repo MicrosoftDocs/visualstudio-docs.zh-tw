@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 40842e1067a0b764a4b35ac679ee774f04347359
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e188947f51cb8e277c71a072dfcee72922f37982
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一個或多個選取的資料庫物件傳回與目標類別之結構描述不符的結構描述
 一個或多個選取的資料庫物件傳回的結構描述與目標資料類別的結構描述不相符。 未加入任何項目到此設計工具。  
@@ -29,6 +30,6 @@ ms.lasthandoff: 11/09/2017
   
 2.  選取另一個資料庫物件，這個資料庫物件傳回的資料會符合目標類別 (O/R 設計工具中要置放資料庫物件的類別) 的結構描述。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

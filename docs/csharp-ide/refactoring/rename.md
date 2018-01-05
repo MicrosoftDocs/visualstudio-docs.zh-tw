@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.rename
 dev_langs: CSharp
-ms.openlocfilehash: c89aae8e6e0f43ee2083bba46f2bbeeadd488535
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3cc15e155683feb7e7bbcc26285d00e5538765f8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="rename-a-code-symbol-in-c"></a>重新命名 C# 中的程式碼符號 #
 **項目：**可讓您重新命名程式碼的符號，例如欄位、 區域變數、 方法、 命名空間、 屬性和類型的識別項。
@@ -54,6 +55,6 @@ ms.lasthandoff: 10/31/2017
 >
 > ![重新命名衝突](media/rename_conflict.png)
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (C#)](../refactoring-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)
