@@ -17,11 +17,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ab5acc92df96c416cd614ac18ac66ff34d142a22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3439739626a81636020a6b645ba5820a59747f2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202：不要多次處置物件
 |||  
@@ -84,6 +85,6 @@ finally
   
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IDisposable?displayProperty=fullName>   
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

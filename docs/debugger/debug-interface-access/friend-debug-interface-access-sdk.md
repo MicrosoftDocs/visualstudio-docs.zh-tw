@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: db196ef924383068ed5572b2711f374b74ef789a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9a4e8214228209c5eadbd6649a9b50de86f89459
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="friend-debug-interface-access-sdk"></a>friend (偵錯介面存取 SDK)
 Friend 類別和 friend 函式由`SymTagFriend`符號。 可為父系的子系的使用者定義型別 (Udt)，並且具有[idiasymbol:: Get_classparent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)屬性。  
@@ -29,7 +30,7 @@ Friend 類別和 friend 函式由`SymTagFriend`符號。 可為父系的子系�
 ## <a name="properties"></a>屬性  
  下表顯示這個符號類型的其他有效屬性。  
   
-|屬性|資料類型|說明|  
+|屬性|資料類型|描述|  
 |--------------|---------------|-----------------|  
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|UDT 父符號。|  
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|此類別父符號的識別碼。|  
@@ -39,5 +40,5 @@ Friend 類別和 friend 函式由`SymTagFriend`符號。 可為父系的子系�
 |[IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)|`IDiaSymbol*`|類別或函式的符號。|  
 |[IDiaSymbol::get_typeId](../../debugger/debug-interface-access/idiasymbol-get-typeid.md)|`DWORD`|類型符號的識別碼。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [符號類型的類別階層架構](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

@@ -21,11 +21,12 @@ manager: ghogen
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 1d59983639284fb8a6134a73ea58e09c6d49b183
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 260ced17d030d083854022ff3d1812184700d20d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800：請勿執行不必要的轉型
 |||  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/VisualBasic/ca1800-do-not-cast-unnecessarily_2.vb)]
  [!code-csharp[FxCop.Performance.UnnecessaryCasts#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_2.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [（C# 參考）](/dotnet/csharp/language-reference/keywords/as)   
 [是 （C# 參考）](/dotnet/csharp/language-reference/keywords/is)

@@ -17,11 +17,12 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: f3c3be4f5a2cebda5b7fd0f705eefc0077b36f29
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: c95d03201fe9c84e01e83e7fd55bef83755337e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>逐步解說：分析 C/C++ 程式碼的缺失
 本逐步解說示範如何使用 C/c + + 程式碼的程式碼分析工具分析 C/c + + 程式碼有潛在的程式碼缺失。  
@@ -194,5 +195,5 @@ ms.lasthandoff: 11/15/2017
   
      專案建置時沒有任何警告或錯誤訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [逐步解說：分析 Managed 程式碼中的程式碼缺失](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)

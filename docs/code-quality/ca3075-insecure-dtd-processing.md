@@ -12,11 +12,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 955587b0fbf9a0fa48d2a7083bea04e102b7a622
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 34f3d518e282650f9369aa3af8fe1600b4f28662
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075：不安全的 DTD 處理
 |||  

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09a570f27200dc677d292d645973fae8f9460f95
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fdc876897d5106f4d03d5b25b51dec5572837f21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiareadexeatrvacallback"></a>IDiaReadExeAtRVACallback
 可讓用戶端應用程式提供的可執行檔的相對虛擬位址所指定的位元組。  
@@ -32,7 +33,7 @@ IDiaReadExeAtRVACallback : IUnknown
 ## <a name="methods-in-vtable-order"></a>依照 Vtable 順序的方法  
  下表顯示的方法`IDiaReadExeAtRVACallback`。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |[IDiaReadExeAtRVACallback::ReadExecutableAtRVA](../../debugger/debug-interface-access/idiareadexeatrvacallback-readexecutableatrva.md)|讀取指定的開始的指定相對虛擬位址 (RVA) 從可執行檔的位元組數目。|  
   
@@ -49,7 +50,7 @@ IDiaReadExeAtRVACallback : IUnknown
   
  DLL: msdia80.dll  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [Idiadatasource:: Loaddataforexe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md)   
  [IDiaReadExeAtOffsetCallback](../../debugger/debug-interface-access/idiareadexeatoffsetcallback.md)

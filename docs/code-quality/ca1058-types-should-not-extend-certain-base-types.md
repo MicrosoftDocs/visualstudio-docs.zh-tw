@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 45cddd908c53d129a230b998c6dad03196a31c49
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c042c854e535f764fe4e0eac01a0e66aa5b49f20
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058：類型不應該擴充特定的基底類型
 |||  

@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e8dc7c435d9f853cfb67f7c45f5ec7116ff6fb8e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0e2763cb21107f19768a8161d18e1128eb000d29
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1413-avoid-non-public-fields-in-com-visible-value-types"></a>CA1413：避免在 COM 可見的實值類型中使用非公用欄位
 |||  
@@ -57,6 +58,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)   
  [限定互通的 .NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)

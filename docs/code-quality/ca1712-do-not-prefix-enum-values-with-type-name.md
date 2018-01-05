@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: a7c2ba5f81cadb8940c519174bec7cf76cbf8500
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 101aa7852b9c6b163e6f18268e5c9ebb6e691760
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712：不要使用類型名稱做為列舉值的前置字元
 |||  
@@ -60,5 +61,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Enum?displayProperty=fullName>

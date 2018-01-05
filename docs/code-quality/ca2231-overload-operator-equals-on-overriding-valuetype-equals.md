@@ -19,11 +19,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0295b7379fbac1ae3e1c84afca651503d6984ba6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ee207eb3e5c4babb5bcb9f7d88f9afd3908a3c7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2231-overload-operator-equals-on-overriding-valuetypeequals"></a>CA2231：覆寫 ValueType.Equals 時必須一併多載等號比較運算子
 |||  
@@ -39,7 +40,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="rule-description"></a>規則描述  
  在大部分的程式設計語言中沒有的實值類型的等號比較運算子 （= =） 的預設實作。 如果您的程式語言支援運算子多載，您應該考慮實作等號比較運算子。 其行為應該與相同<xref:System.Object.Equals%2A>。  
   
- 您無法使用預設等號比較運算子多載等號比較運算子的實作中。 這樣會導致堆疊溢位。 若要實作等號比較運算子，使用 Object.Equals 方法實作中。 例如：  
+ 您無法使用預設等號比較運算子多載等號比較運算子的實作中。 這樣會導致堆疊溢位。 若要實作等號比較運算子，使用 Object.Equals 方法實作中。 例如:   
   
 ```vb  
 If (Object.ReferenceEquals(left, Nothing)) Then  
@@ -77,5 +78,5 @@ return left.Equals(right);
   
  [CA2218：覆寫 Equals 時必須一併覆寫 GetHashCode](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

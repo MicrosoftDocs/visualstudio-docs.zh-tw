@@ -12,18 +12,19 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cfe5e81256c6a1c105d8bff88c7f6271ffa4d235
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 011773ab8a1f4436313b318a13bde637c91b055a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的基本正確性規則規則集
 基本正確性規則規則集著重於邏輯錯誤和使用 framework 應用程式開發介面中常見的錯誤。 基本正確性規則規則在集合中包含最小建議規則規則。 如需詳細資訊，請參閱[managed 程式碼的 Managed 建議規則規則集](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)您應該包含這個規則集以擴充的最小建議規則報告的警告清單。  
   
  下表說明 Microsoft 基本正確性規則規則集的所有規則。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[CA1001 具有](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|應該處置可處置欄位的類型|  
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|事件處理常式必須正確宣告|  

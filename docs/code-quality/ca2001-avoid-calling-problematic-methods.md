@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2ca28bc1fd6a76262b47800dcca466e8843d3271
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: da5da213d400f846f634a98dbdbe919cedf03bcd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2001-avoid-calling-problematic-methods"></a>CA2001：避免呼叫有問題的方法
 |||  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
  當成員呼叫下列方法之一，就會發生此規則的違規情形。  
   
-|方法|說明|  
+|方法|描述|  
 |------------|-----------------|  
 |<xref:System.GC.Collect%2A?displayProperty=fullName>|呼叫 GC。收集會大幅影響應用程式效能，通常不需要。 如需詳細資訊，請參閱[波多黎各 Mariani 效能小知識](http://go.microsoft.com/fwlink/?LinkId=169256)MSDN 上的部落格文章。|  
 |<xref:System.Threading.Thread.Resume%2A?displayProperty=fullName><br /><br /> <xref:System.Threading.Thread.Suspend%2A?displayProperty=fullName>|Thread.Suspend 和 Thread.Resume 已被取代，因為其無法預期的行為。  使用中的其他類別<xref:System.Threading>命名空間，例如<xref:System.Threading.Monitor>， <xref:System.Threading.Mutex>， <xref:System.Threading.Mutex>，和<xref:System.Threading.Semaphore>來同步處理執行緒或保護資源。|  
@@ -54,5 +55,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  僅有問題的方法沒有其他替代可用時，您應該隱藏此規則的訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [可靠性警告](../code-quality/reliability-warnings.md)

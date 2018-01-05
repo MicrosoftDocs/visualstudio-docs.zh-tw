@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b83aec0a44e0762ed2d65f9bbbd39318b1b1b942
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: d70c453e502dd0a7f4eda2e9247dbc3ec3229ebe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2006-use-safehandle-to-encapsulate-native-resources"></a>CA2006：使用 SafeHandle 封裝原生資源
 |||  
@@ -48,5 +49,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  您不應該隱藏這個警告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IDisposable>

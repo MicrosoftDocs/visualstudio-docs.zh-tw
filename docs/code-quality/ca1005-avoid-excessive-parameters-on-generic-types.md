@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b5fad132dfdda0ef12e6d74c503c5d27024a8382
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3bbf8dae17c9f0fd257388d8520485bf1a5d6970
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005：避免在泛型類型上包含過多參數
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  外部可見的泛型類型有兩個以上的型別參數。  
   
 ## <a name="rule-description"></a>規則描述  
- 泛型類型所包含的類型參數越多，就越難了解並記住每個類型參數所代表的含意。 具有一個型別參數，如下所示通常都清楚`List<T>`，在某些情況下，具有兩個型別參數，如下所示`Dictionary<TKey, TValue>`。 如果存在兩個以上的型別參數，難度都會變得難以對大多數使用者 (例如，`TooManyTypeParameters<T, K, V>`在 C# 或`TooManyTypeParameters(Of T, K, V)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。  
+ 泛型類型所包含的型別參數越多，就越難了解並記住每個型別參數所代表的含意。 具有一個型別參數，如下所示通常都清楚`List<T>`，在某些情況下，具有兩個型別參數，如下所示`Dictionary<TKey, TValue>`。 如果存在兩個以上的型別參數，難度都會變得難以對大多數使用者 (例如，`TooManyTypeParameters<T, K, V>`在 C# 或`TooManyTypeParameters(Of T, K, V)`中[!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)])。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，變更設計使用兩個以上的型別參數。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

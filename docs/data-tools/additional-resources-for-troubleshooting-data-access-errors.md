@@ -229,11 +229,12 @@ ms.author: gewarren
 manager: ghogen
 robots: noindex,nofollow
 ms.technology: vs-data-tools
-ms.openlocfilehash: d578457776afb058ee0f40bba4bb0d208f2f5e66
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ea895859550d1ebb5ddfebe743388dc971d82592
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>用於疑難排解資料存取錯誤的其他資源
 您可以在 Microsoft Developer Network (MSDN) 公共論壇中尋求有關疑難排解錯誤和警告的協助。 下表列出在 MSDN 上的資料相關論壇。  
@@ -261,5 +262,5 @@ ms.lasthandoff: 10/31/2017
   
  如需如何疑難排解 SQL Server 的連線資訊，請參閱[如何疑難排解連接到 SQL Server Database Engine](http://go.microsoft.com/fwlink/?LinkID=246151)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

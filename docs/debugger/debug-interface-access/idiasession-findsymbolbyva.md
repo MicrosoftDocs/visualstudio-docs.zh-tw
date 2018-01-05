@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8cc7f925eb3031d96bd229d80eb308560cd5121d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1f379c646b5ca5418e8a271f8f1a76a1d5a2fc21
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionfindsymbolbyva"></a>IDiaSession::findSymbolByVA
 擷取包含此項目，或指定的虛擬位址到最接近指定的符號類型。  
@@ -53,7 +54,7 @@ IDiaSymbol* pFunc;
 pSession->findSymbolByVA( va, SymTagFunction, &pFunc );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)   
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [SymTagEnum 列舉](../../debugger/debug-interface-access/symtagenum.md)

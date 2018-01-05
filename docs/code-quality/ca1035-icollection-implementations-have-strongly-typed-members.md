@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6be0c08efcd1f409bfb69775822e4904372f2511
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a3e595046442092c11b068b6df6fde2a9a56e705
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1035-icollection-implementations-have-strongly-typed-members"></a>CA1035：ICollection 實作包含強類型成員
 |||  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
   
  [CA1039：清單為強類型](../code-quality/ca1039-lists-are-strongly-typed.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   

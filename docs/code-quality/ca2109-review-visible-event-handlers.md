@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6d437aab8e6e6dcdb0500ecfef53c78fab6c1c6b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 42b4ed61faae66c0a07e171a89a6ac9e4b9157e2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109：必須檢閱可見的事件處理常式
 |||  
@@ -38,7 +39,7 @@ ms.lasthandoff: 12/12/2017
 ## <a name="rule-description"></a>規則描述  
  外部可見的事件處理方法呈現的安全性問題，需要檢閱。  
   
- 除非有絕對的必要性，否則不應該公開 (Expose) 事件處理方法。 事件處理常式，公開的方法會叫用的委派類型，可以加入任何事件，只要處理常式和事件簽章相符。 事件可能由任何程式碼所造成，而且經常會引發以回應使用者動作，例如按一下按鈕的高度信任的系統程式碼。 加入事件處理方法的安全性檢查不會阻止程式碼註冊事件處理常式叫用方法。  
+ 除非有絕對的必要性，否則不應該公開事件處理方法。 事件處理常式，公開的方法會叫用的委派類型，可以加入任何事件，只要處理常式和事件簽章相符。 事件可能由任何程式碼所造成，而且經常會引發以回應使用者動作，例如按一下按鈕的高度信任的系統程式碼。 加入事件處理方法的安全性檢查不會阻止程式碼註冊事件處理常式叫用方法。  
   
  要求無法可靠地保護的事件處理常式叫用的方法。 安全性要求協助防止不受信任的呼叫者藉由檢查呼叫堆疊上的呼叫端的程式碼。 事件處理常式的方法執行時，事件加入事件處理常式的程式碼不需要出現呼叫堆疊上。 因此，呼叫堆疊可能只有高度信任的呼叫端叫用事件處理常式方法時。 這會使要求的事件處理常式方法才會成功。 此外，叫用方法時，需要的權限就可能會判斷提示。 基於這些理由，未修正此規則的違規情形的風險只受到檢閱的事件處理方法之後評估。 當您檢閱您的程式碼時，請考慮下列問題：  
   
@@ -63,7 +64,7 @@ ms.lasthandoff: 12/12/2017
   
  [!code-csharp[FxCop.Security.EventSecLib#1](../code-quality/codesnippet/CSharp/ca2109-review-visible-event-handlers_1.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName>   
  <xref:System.EventArgs?displayProperty=fullName>   
  

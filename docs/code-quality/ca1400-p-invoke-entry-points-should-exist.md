@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dd92619a652255f67c1e1558c40ea05840cd0eb5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 95e4b0841cfed5ae5ba2428a9a38da2ab43b8527
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400：P/Invoke 進入點應該要存在
 |||  
@@ -49,5 +50,5 @@ ms.lasthandoff: 10/31/2017
   
  [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>

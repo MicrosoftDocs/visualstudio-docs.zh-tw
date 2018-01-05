@@ -18,11 +18,12 @@ caps.latest.revision: "22"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3bb11846ed204ee15525266a750b218295c8d662
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8bb3d993cc79ebf683f0a2622628bfc87d7c065a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305：指定 IFormatProvider
 |||  
@@ -77,5 +78,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1304：必須指定 CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [使用 CultureInfo 類別](/dotnet/standard/globalization-localization/globalization#Cultures)  

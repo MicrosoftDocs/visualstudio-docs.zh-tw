@@ -19,11 +19,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e653f4b4d1cb350b936b4b8d906b43b3926b741e
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 06d214a8726ea03cc16aff8391db1acceb3f91f5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100：必須檢視 SQL 查詢中是否有安全性弱點
 |||  
@@ -84,5 +85,5 @@ string query = String.Format("SELECT TOP {0} FROM Table", x);
  [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]
  [!code-cpp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CPP/ca2100-review-sql-queries-for-security-vulnerabilities_1.cpp)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全性概觀](/dotnet/framework/data/adonet/security-overview)

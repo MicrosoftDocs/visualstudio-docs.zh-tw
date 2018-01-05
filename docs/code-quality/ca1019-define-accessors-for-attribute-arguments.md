@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9f04a49c8c68fcc597ecd98471b46932d467b365
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1c67e5963cdac0c9398ee2e4d54a4cd3347fee66
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019：必須定義屬性引數的存取子
 |||  
@@ -76,5 +77,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1813：避免使用非密封屬性](../code-quality/ca1813-avoid-unsealed-attributes.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [屬性](/dotnet/standard/design-guidelines/attributes)

@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bd0f74a322e136263b6445db2692380dfea2efa3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b09082cd78b3b78dda28201e85099e87f87d8ad4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1028-enum-storage-should-be-int32"></a>CA1028：列舉儲存區應該是 Int32
 |||  
@@ -73,7 +74,7 @@ ms.lasthandoff: 10/31/2017
   
  [CA1712：不要使用類型名稱做為列舉值的前置字元](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Byte?displayProperty=fullName>   
  <xref:System.Int16?displayProperty=fullName>   
  <xref:System.Int32?displayProperty=fullName>   

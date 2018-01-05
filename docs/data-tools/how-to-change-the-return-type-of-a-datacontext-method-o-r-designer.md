@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 869460f4ac40aece5421611cd83aad6a7f11ef57
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e086747d859e1e3306d9f42fbe296d144954382f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>如何： 變更 DataContext 方法 （O/R 設計工具） 的傳回型別
 <xref:System.Data.Linq.DataContext> 方法 (根據預存程序 (Stored Procedure) 或函式所建立) 的傳回型別，會隨預存程序或函式在 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]中的置放位置而不同。 如果將項目直接放入現有的實體類別，且預存程序或函式所傳回資料的結構描述符合實體類別的型態，則建立的 <xref:System.Data.Linq.DataContext> 方法會具有該實體類別的傳回型別。 如果您將項目放入 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]的空白區域，則建立的 <xref:System.Data.Linq.DataContext> 方法會傳回自動產生的型別。 您可以在將 <xref:System.Data.Linq.DataContext> 方法加入至方法窗格後，變更方法的傳回型別。 若要檢查或變更的傳回型別<xref:System.Data.Linq.DataContext>方法中，選取它，然後按一下 **傳回型別**屬性**屬性**視窗。  
@@ -42,7 +43,7 @@ ms.lasthandoff: 11/09/2017
   
 3.  儲存 .dbml 檔案。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   

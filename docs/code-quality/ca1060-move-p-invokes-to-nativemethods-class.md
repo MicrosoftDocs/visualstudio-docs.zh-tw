@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb93a44eebd9380499394c612ee12c40d0c62271
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7805710c61e6a9fcf4ede2ebcbf69589b53141f9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060：將 P/Invokes 移到 NativeMethods 類別
 |||  
@@ -66,7 +67,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="nativemethods-example"></a>NativeMethods 範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  因為**NativeMethods**類別不應該使用標示**SuppressUnmanagedCodeSecurityAttribute**，將要求放入其中的 P/Invokes **UnmanagedCode**權限。 由於大部分的應用程式從本機電腦上執行，而且與完全信任執行，這通常不是問題。 不過，如果您正在開發可重複使用程式庫，您應該考慮定義**SafeNativeMethods**或**UnsafeNativeMethods**類別。  
   
  下列範例所示**Interaction.Beep**方法包裝**MessageBeep**從 user32.dll 函式。 **MessageBeep** P/Invoke 置於**NativeMethods**類別。  
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="safenativemethods-example"></a>SafeNativeMethods 範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  可以安全地公開之任何應用程式並沒有任何副作用的 P/Invoke 方法都應該放在名為類別**SafeNativeMethods**。 您沒有指定的權限，並沒有太多注意從的呼叫位置。  
   
  下列範例所示**Environment.TickCount**包裝屬性**GetTickCount**函式，從 kernel32.dll。  
@@ -88,7 +89,7 @@ ms.lasthandoff: 10/31/2017
   
 ## <a name="unsafenativemethods-example"></a>UnsafeNativeMethods 範例  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  無法安全地呼叫，而且，可能會造成副作用的 P/Invoke 方法都應該放在名為類別**UnsafeNativeMethods**。 這些方法應該嚴格檢查以確定它們都不會公開該使用者不小心。 此規則[ca2118 必須： 檢閱 SuppressUnmanagedCodeSecurityAttribute 使用方法](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)這可以協助。 或者，方法應該有另一個權限，而不是要求**UnmanagedCode**它們時使用。  
   
  下列範例所示**Cursor.Hide**方法包裝**ShowCursor**從 user32.dll 函式。  
@@ -97,5 +98,5 @@ ms.lasthandoff: 10/31/2017
  [!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_4.vb)]
  [!code-csharp[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/CSharp/ca1060-move-p-invokes-to-nativemethods-class_4.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [設計警告](../code-quality/design-warnings.md)

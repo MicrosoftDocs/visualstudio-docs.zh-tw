@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4451c3166997e64dcefaaf154e94906c5e08a5f2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f21f736baae082257b736c21057634a5a2b6b2ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2121-static-constructors-should-be-private"></a>CA2121：靜態建構函式應為私用
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  型別具有不是私用靜態建構函式。  
   
 ## <a name="rule-description"></a>規則描述  
- 靜態建構函式，也稱為類別建構函式，用來初始化型別。 系統會在建立類型的第一個執行個體 (Instance) 或參考任何靜態成員之前呼叫靜態建構函式。 使用者已無法控制當呼叫靜態建構函式。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。  
+ 靜態建構函式，也稱為類別建構函式，用來初始化型別。 系統會在建立類型的第一個執行個體或參考任何靜態成員之前呼叫靜態建構函式。 使用者已無法控制當呼叫靜態建構函式。 如果靜態建構函式不是私用的，則可由系統以外的程式碼呼叫。 視建構函式中執行的作業而定，這會造成非預期的行為。  
   
  此規則會強制執行的 C# 和 Visual Basic.NET 編譯器。  
   

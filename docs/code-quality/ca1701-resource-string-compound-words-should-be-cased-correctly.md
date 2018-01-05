@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4dee5b21724944ea26e89c2cd1ace556f1377848
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0b4b154d6e959e636ee75481816a2424d5ea2e18
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701：資源字串複合字應該使用正確的大小寫
 |||  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA1708：識別項名稱不應該只靠大小寫區別](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [大小寫慣例](/dotnet/standard/design-guidelines/capitalization-conventions)   
  [命名方針](/dotnet/standard/design-guidelines/naming-guidelines)

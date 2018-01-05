@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 6992dc561fb9ef018de02b0192528621d2e069fb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 893a08f474d9ecc58412c8278cc7c7a5a04d9e8f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239：必須為選擇性欄位提供還原序列化方法
 |||  

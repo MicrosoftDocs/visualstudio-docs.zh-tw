@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: cda7936a1a701b1b51957a7038db496f70ddd9c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5ed0b47255fb34f50b79913e8ce417c29302f10b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708：識別項名稱不應該只靠大小寫區別
 |||  

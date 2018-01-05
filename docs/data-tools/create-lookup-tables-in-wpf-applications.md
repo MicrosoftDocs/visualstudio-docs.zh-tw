@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 78322512fdc59b4ba661bca0d40d1532ac4c98e2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 4b403d3bbe2e42ee74af7a2f7babe8b2700dd0d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>WPF 應用程式建立查閱資料表
 詞彙*查閱資料表*(有時稱為*查閱繫結*) 描述會顯示資訊從一個資料表，另一個資料表中的外部索引鍵欄位的值為基礎的控制項。 您可以透過將主要節點的父資料表中建立查閱資料表或物件存放至**資料來源**視窗拖曳至已繫結至資料行或屬性相關的子系資料表中的控制項。  
@@ -90,7 +91,7 @@ ms.lasthandoff: 11/09/2017
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A>|Visual Studio 會將這個屬性繫結至資料行或屬性拖曳至設計工具的子資料。 這是父資料的外部索引鍵。|  
     |<xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A>|Visual Studio 會設定這個屬性的資料行的路徑或父資料的外部索引鍵的子資料的內容。|  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [WPF 應用程式中顯示相關的資料](../data-tools/display-related-data-in-wpf-applications.md)   
 [逐步解說：顯示 WPF 應用程式中的相關資料](../data-tools/display-related-data-in-wpf-applications.md)

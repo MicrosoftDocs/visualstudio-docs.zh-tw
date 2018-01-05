@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 086b1db960e8a910e34631a40f125ea5eb4874ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: addef0c9eb77ed2a50313d54588d9e185d109ae3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetmaxstack"></a>IDiaFrameData::get_maxStack
 擷取推入堆疊框架中的位元組的數目上限。  
@@ -41,6 +42,6 @@ HRESULT get_maxStack (
 ## <a name="remarks"></a>備註  
  這個方法所傳回的值通常用於解譯的程式字串 (請參閱[idiaframedata:: Get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)方法定義的程式字串)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)   
  [IDiaFrameData::get_program](../../debugger/debug-interface-access/idiaframedata-get-program.md)

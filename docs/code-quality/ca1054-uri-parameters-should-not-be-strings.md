@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f965c200e7c020a151a0ffa8dc67f3b75e330bab
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 61f3f42e8a873f4be2873798f9137fbc22feb8fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054：URI 參數不應該為字串
 |||  

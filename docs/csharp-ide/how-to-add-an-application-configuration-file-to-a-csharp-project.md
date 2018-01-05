@@ -14,11 +14,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 097e7a2eac78fe85b2a3ab62d5cdf1fd18908d56
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 707100d33e91d1b0920d008140dc2fb6f1e078fe
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：將應用程式組態檔加入至 C# 專案
 將應用程式組態檔 （app.config 檔案） 加入至 C# 專案，您可以自訂 common language runtime 如何找出並載入組件檔案。 如需應用程式組態檔的詳細資訊，請參閱[執行階段如何找出組件](/dotnet/framework/deployment/how-the-runtime-locates-assemblies)。  
@@ -40,7 +41,7 @@ ms.lasthandoff: 10/31/2017
   
      名為 app.config 的檔案加入至您的專案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [管理應用程式設定 (.NET)](../ide/managing-application-settings-dotnet.md)   
  [組態檔結構描述](/dotnet/framework/configure-apps/file-schema/index)   
  [設定應用程式](/dotnet/framework/configure-apps/index)   

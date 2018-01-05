@@ -19,11 +19,12 @@ caps.latest.revision: "27"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8f225159e551dac2327c35774db846eec4ccc6fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: eb659fa8bfd18d8caf4a7473f6cd53809d0a126b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062：驗證公用方法的引數
 |||  

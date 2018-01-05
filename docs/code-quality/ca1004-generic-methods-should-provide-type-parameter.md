@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 01e795c4505b71f337212f85c3946f8800fbc05d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4ca506d827c954a9863a6a37efd0980ecf4d8452
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004：泛型方法應該提供型別參數
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  外部可見的泛型方法的參數簽章不包含對應至方法的所有型別參數的類型。  
   
 ## <a name="rule-description"></a>規則描述  
- 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用類型引數的明確規格，來決定泛型方法的類型引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之類型參數具有相同類型的參數。 在上述情形中，不必指定類型引數。 當使用推斷的所有型別參數時，呼叫泛型和非泛型執行個體方法語法是相同的。 這簡化泛型方法的可用性。  
+ 推斷是指如何利用傳遞到泛型方法的引數類型，而不是利用型別引數的明確規格，來決定泛型方法的型別引數。 若要啟用推斷，泛型方法的參數簽章必須包含與方法之型別參數具有相同類型的參數。 在上述情形中，不必指定型別引數。 當使用推斷的所有型別參數時，呼叫泛型和非泛型執行個體方法語法是相同的。 這簡化泛型方法的可用性。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，變更設計，使參數簽章包含每個類型參數的方法相同的類型。  
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

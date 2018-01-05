@@ -14,11 +14,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7e9cba33565af81a76d043a3fc3f63eef831e1ce
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 36b5e9e0a3ca0a994547679ba71e545b4235b6c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-a-custom-rule-set"></a>如何：建立自訂規則集
 在[!INCLUDE[vsUltShort](../code-quality/includes/vsultshort_md.md)]， [!INCLUDE[vsPreShort](../code-quality/includes/vspreshort_md.md)]，和[!INCLUDE[vsPro](../code-quality/includes/vspro_md.md)]，您可以建立和修改自訂*規則集*以符合與程式碼分析相關聯的特定專案需求。 建立自訂規則集、 開啟一個或多標準規則設定規則集編輯器中。 您可以再新增或移除特定規則，您可以變更程式碼分析會判斷已違反規則時所發生的動作。  
@@ -109,6 +110,6 @@ ms.lasthandoff: 10/31/2017
   
 -   若要新增或移除的 Microsoft 預設規則設定為目前的規則集，請按一下**新增或移除子規則集**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 設定 Managed 程式碼專案的程式碼分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)   
  [程式碼分析規則集參考](../code-quality/code-analysis-rule-set-reference.md)

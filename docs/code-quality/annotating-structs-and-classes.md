@@ -27,11 +27,12 @@ caps.latest.revision: "9"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 651108f2c917fb81857e3466384a9bfebada4a4b
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 8aafad0da7581f1fa07f1e0134df0032655d679a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-structs-and-classes"></a>註釋結構和類別
 您可以使用作用類似非變異項目的註釋來標註結構和類別，在包含封入結構做為參數或結果值的任何函式呼叫或函式進入/結束點，會假定這些註釋為真。  
@@ -58,7 +59,7 @@ ms.lasthandoff: 11/15/2017
   
      具有可讀取及可寫入大小的欄位，其大小是以 `size` 所指定的項目 (或位元組) 為單位表示。  
   
-     套用至結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如：  
+     套用至結構或類別宣告。  指出該類型的有效物件可能大於所宣告的類型，其位元組數目是由 `size` 所指定。  例如:   
   
     ```cpp  
   
@@ -76,7 +77,7 @@ ms.lasthandoff: 11/15/2017
     min(pM->nSize, sizeof(MyStruct))  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac64795a128e1fc82bf817288dc39759ce9e61a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3a46b11ab518c818704c73ea762256382426100f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenuminjectedsourcesgetcount"></a>IDiaEnumInjectedSources::get_Count
 擷取插入來源的數目。  
@@ -38,6 +39,6 @@ HRESULT get_Count (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)   
  [IDiaEnumInjectedSources::Item](../../debugger/debug-interface-access/idiaenuminjectedsources-item.md)

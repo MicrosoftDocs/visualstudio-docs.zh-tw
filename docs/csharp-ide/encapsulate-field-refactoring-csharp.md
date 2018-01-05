@@ -17,11 +17,12 @@ caps.latest.revision: "26"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 7bd9e255b35ffb843c15d5ffa9c1547891bf437d
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: d587edebcea443e0bfff52004b128c70923470d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="encapsulate-field-refactoring-c"></a>封裝欄位重構 (C#)
 **封裝欄位**重構作業，可讓您快速地從現有的欄位，建立屬性，然後以新屬性的參考順暢地更新您的程式碼。  
@@ -103,6 +104,6 @@ ms.lasthandoff: 10/31/2017
   
  封裝欄位程式碼片段功能會將重構作業所產生的程式碼模型化。 程式碼片段是可以修改的。 如需詳細資訊，請參閱[程式碼片段](../ide/visual-csharp-code-snippets.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [重構 (C#)](refactoring-csharp.md)   
  [Visual C# 程式碼片段](../ide/visual-csharp-code-snippets.md)

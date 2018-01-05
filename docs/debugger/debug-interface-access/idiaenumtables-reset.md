@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 94eb6b89b618815f2d4dad66864be9fc38343794
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cbdd0732bbf51cff5ce10cc378dcd841e861ed46
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumtablesreset"></a>IDiaEnumTables::Reset
 列舉序列重設為開頭。  
@@ -32,5 +33,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)

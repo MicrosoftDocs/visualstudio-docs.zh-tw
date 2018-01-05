@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 087df27916465b3ddba0b8e2c92bacf89dd33c1e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 65332b37da874ce3475bb166b29c47ccc5a5870d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216：可處置類型應該宣告完成項
 |||  
@@ -62,10 +63,10 @@ ms.lasthandoff: 10/31/2017
   
  [CA1049：具有原生資源的類型應該要可呼叫 Dispose 方法明確釋放資源](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IDisposable?displayProperty=fullName>   
  <xref:System.IntPtr?displayProperty=fullName>   
  <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>   
  <xref:System.UIntPtr?displayProperty=fullName>   
  <xref:System.Object.Finalize%2A?displayProperty=fullName>   
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

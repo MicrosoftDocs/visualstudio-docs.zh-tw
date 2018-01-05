@@ -129,11 +129,12 @@ caps.latest.revision: "15"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: e256b519600a983886ac6d21317ef1757d7497f1
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: ac25f8bbda4431850f613f2b41b1d9ed4908c118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>註釋函式參數和傳回值
 本文章說明簡單的函式參數的註解一般用法： 純量和結構和類別的指標，和大部分的緩衝區類型。  本文也會顯示常見的使用模式的附註。 功能相關的其他註解，請參閱[標註函式行為](../code-quality/annotating-function-behavior.md)  
@@ -484,7 +485,7 @@ ms.lasthandoff: 11/15/2017
   
 -   `_Struct_size_bytes_(size)`  
   
-     套用至結構或類別宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如：  
+     套用至結構或類別宣告。  表示具有所指定的位元組數目可能會大於宣告的型別，該類型的有效物件`size`。  例如:   
   
      `typedef _Struct_size_bytes_(nSize) struct MyStruct {    size_t nSize;    ... };`  
   
@@ -495,7 +496,7 @@ ms.lasthandoff: 11/15/2017
 ## <a name="related-resources"></a>相關資源  
  [程式碼分析小組部落格](http://go.microsoft.com/fwlink/?LinkId=251197)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式行為](../code-quality/annotating-function-behavior.md)   

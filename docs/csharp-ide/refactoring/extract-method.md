@@ -14,11 +14,12 @@ ms.author: gewarren
 manager: ghogen
 f1_keywords: vs.csharp.refactoring.extractmethod
 dev_langs: csharp
-ms.openlocfilehash: 3890d427ed2888647675a241f4e62a5635d7308c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 44a5dd2da4cd19a532e8e6cc9f21ef48b2585fe4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-a-method-in-c"></a>擷取在 C# 方法 #
 **項目：**可讓您的程式碼片段變成它自己的方法。
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
 
 1. 變更感到滿意時，按一下**套用**按鈕或按**Enter**和會認可變更。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [重構 (C#)](../refactoring-csharp.md)  
 [預覽變更](../../ide/preview-changes.md)

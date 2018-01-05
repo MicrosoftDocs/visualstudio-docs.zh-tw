@@ -18,11 +18,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d07e63363542a9bf5a1dd756026183349659abe1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9c8eedd58df2665b9e00051e40a07a0ac226ec6c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036：必須在 Comparable 類型中覆寫方法
 |||  
@@ -64,7 +65,7 @@ ms.lasthandoff: 10/31/2017
   
  [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IComparable?displayProperty=fullName>   
  <xref:System.Object.Equals%2A?displayProperty=fullName>   
  [等號比較運算子](/dotnet/standard/design-guidelines/equality-operators)

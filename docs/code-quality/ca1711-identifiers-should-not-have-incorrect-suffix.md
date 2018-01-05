@@ -18,11 +18,12 @@ caps.latest.revision: "18"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 1e0701c93146b4cc460a7216d2f4159832389db6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6cde73eeec2b6a73f25f714c41976d3d0513e939
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711：識別項名稱不應該使用不正確的後置字元
 |||  
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
 |字典|<xref:System.Collections.IDictionary?displayProperty=fullName><br /><br /> <xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|  
 |EventArgs|<xref:System.EventArgs?displayProperty=fullName>|  
 |事件處理常式|事件處理常式委派|  
-|例外狀況|<xref:System.Exception?displayProperty=fullName>|  
+|例外|<xref:System.Exception?displayProperty=fullName>|  
 |權限|<xref:System.Security.IPermission?displayProperty=fullName>|  
 |Queue|<xref:System.Collections.Queue?displayProperty=fullName>|  
 |堆疊|<xref:System.Collections.Stack?displayProperty=fullName>|  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
  此外，下列尾碼應該**不**使用：  
   
--   委派  
+-   Delegate - 委派  
   
 -   列舉  
   
@@ -74,6 +75,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA1710：識別項應該使用正確的後置字元](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [屬性](/dotnet/standard/design-guidelines/attributes)   
  [處理和引發事件](/dotnet/standard/events/index)  

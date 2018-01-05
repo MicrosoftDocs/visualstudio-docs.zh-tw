@@ -12,11 +12,12 @@ caps.latest.revision: "4"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 9a703dec98c93c03a2df51d3bd3d4ecf870f2031
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 76a763e2adcf8af588d08a9cd443a4eaf6e36e0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2151-fields-with-critical-types-should-be-security-critical"></a>CA2151：具有關鍵類型的欄位應為安全性關鍵
 |||  
@@ -27,7 +28,7 @@ ms.lasthandoff: 10/31/2017
 |中斷變更|中斷|  
   
 ## <a name="cause"></a>原因  
- 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如：  
+ 已宣告安全性透明欄位或安全性關鍵欄位。 它的指定類型為安全性關鍵類型。 例如:   
   
 ```csharp  
 [assembly: AllowPartiallyTrustedCallers]  

@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 08092243699e58bd6bc4d737d31c60e5b3c3dd0b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d98b088b663eca89b04ea264a582a062d324a473
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1002-do-not-expose-generic-lists"></a>CA1002：不要公開泛型清單
 |||  
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

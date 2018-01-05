@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 86f0e451fe81875868db0d6ddcd9cead790800d3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 60d98d6b8cefc2f7fb7829d841001f92bd9063de
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自訂 Visual Studio 如何建立資料繫結控制項的標題
 當您拖曳項目從[資料來源視窗](add-new-data-sources.md)拖曳至設計工具中，特殊的考量派上用場： 標題標籤資料行名稱重新格式化成更容易讀取的字串當兩個或多個單字所找到不串連在一起。 您可以自訂建立的方式，這些標籤，藉由設定**SmartCaptionExpression**， **SmartCaptionReplacement**，和**SmartCaptionSuffix**中的值**HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data 設計工具**登錄機碼。  
@@ -33,7 +34,7 @@ ms.lasthandoff: 11/09/2017
   
 下表描述控制標題標籤的登錄值。  
   
-|登錄項目|說明|  
+|登錄項目|描述|  
 |-------------------|-----------------|  
 |**SmartCaptionExpression**|用來比對模式的規則運算式。|  
 |**SmartCaptionReplacement**|若要顯示在比對任何群組的格式**SmartCaptionExpression**。|  
@@ -108,5 +109,5 @@ ms.lasthandoff: 11/09/2017
   
     下次您拖曳項目，從**資料來源**視窗中，與未修改的標題，會建立標題標籤。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

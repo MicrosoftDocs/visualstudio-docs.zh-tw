@@ -17,11 +17,12 @@ caps.latest.revision: "29"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e85e745241d8fa880098b73a6306cbca3f19da70
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 18fc4c20b39341f884fb23b51822ce7f6e427007
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="extract-method-refactoring-c"></a>擷取方法重構 (C#)
 **擷取方法**是重構作業，提供簡單的方法來建立新的方法，從現有成員的程式碼片段。  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
   
      底下會顯示新的方法簽章的預覽**預覽方法簽章**。  
   
-5.  按一下 [確定]。  
+5.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="remarks"></a>備註  
  當您使用**擷取方法**命令時，新的方法就會插入下列來源中的成員相同的類別。  
@@ -122,5 +123,5 @@ class Program
   
  若要解決這種情況，請在匿名方法欄位之類別中可用的本機變數。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [重構 (C#)](refactoring-csharp.md)

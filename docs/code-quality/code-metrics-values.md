@@ -11,11 +11,12 @@ helpviewer_keywords: code metrics [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c70648f0821ddaadfe0a70fd5307742ee110564c
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: dc9a688892ca7ec08a89c4da8e1732b5e2b3e267
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-metrics-values"></a>程式碼度量值
 

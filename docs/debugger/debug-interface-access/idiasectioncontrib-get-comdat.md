@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3797f60e9ca6e97da3b7b6e44c89f802b086d13
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fb8f2ff8655be144df6a65123cee8651e3845bb3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetcomdat"></a>IDiaSectionContrib::get_comdat
 擷取指出區段是否為 COMDAT 記錄旗標。  
@@ -41,5 +42,5 @@ HRESULT get_comdat (
 ## <a name="remarks"></a>備註  
  COMDAT 記錄是會封裝函式使連結器看見的通用物件檔案格式 (COFF) 記錄。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

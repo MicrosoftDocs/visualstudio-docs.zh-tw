@@ -13,11 +13,12 @@ caps.latest.revision: "4"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d14ceaa2f793897bab4503d9d920bd2ce9f8c4fe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2575ef4aca817133eab19498f4c40cdc3e83e506
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="copyright-notice-for-spy-help"></a>Spy++ 說明的著作權注意事項
 本文中的資訊可能不經通知即予以變更。 除非另有說明，否則本文範例中所使用的公司、名稱和資料均為虛構。 非經 Microsoft Corporation 的書面許可，不得將本文的任何部分以任何形式或任何方式 (電子或機械式) 重製或傳輸以用於任何用途。  

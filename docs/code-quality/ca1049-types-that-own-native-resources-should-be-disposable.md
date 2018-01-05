@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: ebcb3325cfefdfeeb95b30477c4b266a70f40eb0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 8d387cd29b0c17bdb31db495fe42146cf1a886d8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049：擁有原生資源的類型應為可處置
 |||  
@@ -61,6 +62,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA1001：具有可處置欄位的類型應該是可處置的](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [清除 Unmanaged 資源](/dotnet/standard/garbage-collection/unmanaged)   
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

@@ -18,18 +18,19 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5e99f722d211b2e1bd548f1bf22c995246f3e0b4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d0287b570ed1ff5393ff0ff04b9e5d2252c29bf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816：正確呼叫 GC.SuppressFinalize
 |||  
 |-|-|  
 |TypeName|CallGCSuppressFinalizeCorrectly|  
 |CheckId|CA1816|  
-|分類|Microsoft。 使用方式|  
+|分類|Microsoft。 使用量|  
 |中斷變更|非中斷|  
   
 ## <a name="cause"></a>原因  
@@ -74,5 +75,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA2216：可處置的類型應該宣告完成項](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)  
   
-## <a name="see-also"></a>另請參閱  
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+## <a name="see-also"></a>請參閱  
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

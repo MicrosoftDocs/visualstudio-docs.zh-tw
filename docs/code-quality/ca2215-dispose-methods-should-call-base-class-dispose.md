@@ -19,11 +19,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 0659b9ec82353e3c658f1ba89f07fad197dd8670
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 791de4f70113df3759e920591ec94da5108eec9a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2215-dispose-methods-should-call-base-class-dispose"></a>CA2215：Dispose 方法應該呼叫基底類別處置
 |||  
@@ -55,6 +56,6 @@ ms.lasthandoff: 10/31/2017
   
  [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2215-dispose-methods-should-call-base-class-dispose_2.vb)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.IDisposable?displayProperty=fullName>   
- [處置模式](/dotnet/standard/design-guidelines/dispose-pattern)
+ [Dispose 模式](/dotnet/standard/design-guidelines/dispose-pattern)

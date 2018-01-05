@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d8b602d83eee4be49f63eef0ee8d2cd3d77f5040
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f5d048476997517a835337b568930367f97c2c92
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233：運算不應該發生溢位
 |||  
@@ -109,11 +110,11 @@ End Sub
   
 1.  在**方案總管] 中**，以滑鼠右鍵按一下您的專案，然後選擇 [**屬性**。  
   
-2.  選取**建置**索引標籤上，按一下 **進階**。  
+2.  選取 [建置] 索引標籤，然後按一下 [進階]。  
   
 3.  選取**算術溢位/反向溢位檢查**按一下**確定**。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.OverflowException?displayProperty=fullName>   
  [C# 運算子](/dotnet/csharp/language-reference/operators/index)   
  [Checked 與 Unchecked](/dotnet/csharp/language-reference/keywords/checked-and-unchecked)

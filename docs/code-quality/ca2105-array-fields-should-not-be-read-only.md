@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bfc20d1bb2ae34455c836219bb809221f2ca382e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c791bfaa652570767a5ea0f3fa351b1b3b88b068
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105：陣列欄位不應為唯讀
 |||  
@@ -68,6 +69,6 @@ ms.lasthandoff: 10/31/2017
   
  **之前遭到竄改： 成績： 90，90，90 的私用成績： 90，90，90 保護等級，90，90，90**  
 **之後遭到竄改： 成績： 90、 555，90 的私用成績： 90、 555，90 保護等級，90，90，90**   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Array?displayProperty=fullName>   
  <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>

@@ -16,11 +16,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 8ebf550ca92cbefbed684e2b11e0b20b62661133
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0c7016145d5d34c9077f45f2dbf6c1507aa0e6fb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>匿名方法和程式碼分析
 *匿名方法*是沒有名稱的方法。 匿名方法最常用來做為委派的參數傳遞的程式碼區塊。  
@@ -152,5 +153,5 @@ class Class
   
  您可以暫時解決此問題，在兩種方式之一。 您無法宣告**anonymousMethod**一般建構函式中的所有建構函式鏈結。 或者，您無法在初始設定方法所呼叫的所有建構函式宣告它。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

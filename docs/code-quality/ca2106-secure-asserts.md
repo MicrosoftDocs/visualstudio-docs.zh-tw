@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 321d00f13ebc891070549778239fec60201d03c4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 33e200b06ed9bb0999116ea91a64b06aaa879067
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106：必須保護判斷提示
 |||  
@@ -44,6 +45,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  隱藏此規則的警告，只有在仔細的安全性檢閱之後。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>   
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)

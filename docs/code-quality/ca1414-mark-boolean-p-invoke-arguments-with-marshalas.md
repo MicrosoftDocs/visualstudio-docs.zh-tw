@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f990336f84a518a754615eb878e41100d7ccb3f3
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 3ce70291bd59ef3211c9fea871c8155f1a3e7fed
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414：以 MarshalAs 標記布林值 P/Invoke 引數
 |||  
@@ -58,6 +59,6 @@ ms.lasthandoff: 12/12/2017
   
  [Ca2101： 必須指定 P/Invoke 字串引數的封送處理](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>   
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

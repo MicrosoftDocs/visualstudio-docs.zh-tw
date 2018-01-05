@@ -12,16 +12,17 @@ caps.latest.revision: "3"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: bb6d83004414abd530a8274f5338b134de2a5403
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6db3e112f45200221eff80c033daed4a04c152d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="native-minimum-rules-rule-set"></a>原生最小規則規則集
 Microsoft 原生最小規則的重點在於機器碼中最關鍵的問題，包括可能的安全性漏洞和應用程式損毀。 您應該在為原生專案建立的任何自訂規則集中，包含此規則集。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[C6001](../code-quality/c6001.md)|使用尚未初始化的記憶體|  
 |[C6011](../code-quality/c6011.md)|取值的指標為 NULL|  

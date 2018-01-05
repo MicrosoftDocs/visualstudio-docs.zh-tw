@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f0d6910d2bf449172bac86a3ecd18be8169ef244
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 20669a4ec19865e99a9498e87e896aa645321257
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何： 指派預存程序來執行更新、 插入和刪除 （O/R 設計工具）
 預存程序 (Stored Procedure) 可以加入至 O/R 設計工具，而且可以當成一般 <xref:System.Data.Linq.DataContext> 方法來執行。 也可以使用覆寫預設[!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)]執行插入、 更新和刪除時變更儲存至資料庫的實體類別的執行階段行為 (例如，當呼叫<xref:System.Data.Linq.DataContext.SubmitChanges%2A>方法)。  
@@ -64,7 +65,7 @@ ms.lasthandoff: 11/09/2017
   
 若要還原為使用預設的執行階段邏輯進行更新，請按一下 Insert、 Update、 旁邊的省略符號或刪除命令中的**屬性**視窗，然後選取**使用執行階段**中**設定行為** 對話方塊。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)   
 [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)   

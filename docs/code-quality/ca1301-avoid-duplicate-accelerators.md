@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 13d2f36014ab15aea3148ab4175a89b77deb4846
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a61e4c0ab9957772609c20623f0bc6ef7659a9d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301：避免使用重複的快速鍵
 |||  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
  [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Resources.ResourceManager?displayProperty=fullName>   
  [桌面應用程式中的資源](/dotnet/framework/resources/index)

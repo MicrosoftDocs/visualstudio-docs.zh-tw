@@ -18,11 +18,12 @@ caps.latest.revision: "16"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 47b872afd70a357938b8a9fd3fc7ecf7b180f77b
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: ad19c3fa245998d57542a5dfe1b9da0c61984626
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408：不要使用 AutoDual ClassInterfaceType
 |||  
@@ -57,6 +58,6 @@ ms.lasthandoff: 12/12/2017
   
  [CA1412：ComSource 介面必須標記為 IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [限定交互操作的 .NET 類型](/dotnet/framework/interop/qualifying-net-types-for-interoperation)   
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)

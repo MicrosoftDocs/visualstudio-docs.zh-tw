@@ -11,11 +11,12 @@ author: mblome
 ms.author: mblome
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: 65f4e7ed865a3a620d58b45580914d6e0b589660
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: d03330ce8213e7df56ec9f8df73458b3819180ca
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>使用 c + + 核心指導方針 checker
 C + + 核心指導方針是可攜式的一組成指導方針、 規則和關於 c + + 專家和設計工具所建立的 c + + 中撰寫程式碼的最佳作法。 Visual Studio 目前支援 c + + 做為其程式碼分析工具的一部分，這些規則的子集。 核心導線西洋棋安裝預設會在 Visual Studio 2017，而且[可做為 Visual Studio 2015 的 NuGet 套件](#vs2015_corecheck)。
@@ -62,7 +63,7 @@ int main()
   
 -   C26485 是規則 Bounds.3： 沒有陣列至指標衰退。  
   
--   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span` 。  
+-   C26481 是規則 Bounds.1： 不要使用指標算術。 請改用 `span`。  
   
  如果安裝和編譯此程式碼前, 兩個警告就是輸出，但是第三個隱藏時啟用 c + + 核心檢查程式碼分析規則集。 以下是範例程式碼的組建輸出：  
   

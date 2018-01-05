@@ -12,16 +12,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 09bfa2101acd4bce8fa825ce9a8ffcd91c940ca1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 07a2e8da87eb486f8247a79263ec371a8fd4afc5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的全球化規則規則集
 您可以使用 Microsoft 全球化規則規則集的重點在於可能會讓您正確出現在不同的語言、 地區設定中和文化特性的應用程式中資料的問題。 您應該包含這個規則集，如果您的應用程式當地語系化，全球化，或兩者。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|指定 MessageBoxOptions|  
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|避免重複的快速鍵|  

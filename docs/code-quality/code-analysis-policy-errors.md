@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 052bb1314560089feb714027737f35167c947418
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 268940f39d3d74e7dd701f9c458d7dd08ff6c1f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-policy-errors"></a>程式碼分析原則錯誤
 如果程式碼分析原則不符合在簽入時，會發生下列錯誤：  
@@ -73,5 +74,5 @@ ms.lasthandoff: 10/31/2017
   
  此錯誤適用於 unmanaged 的專案。 程式碼分析原則需要程式碼分析 C/c + +，但是未啟用用戶端上目前專案中。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [程式碼分析應用程式錯誤](../code-quality/code-analysis-application-errors.md)

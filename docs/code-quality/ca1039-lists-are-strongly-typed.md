@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 57bbb053c39680d8064fb757679ffadb3c87aeeb
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 358ae06a2913f7b89338027c79f81c298253d23b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039：清單為強類型
 |||  
@@ -70,7 +71,7 @@ ms.lasthandoff: 10/31/2017
   
  [CA1038：列舉程式應該是強類型](../code-quality/ca1038-enumerators-should-be-strongly-typed.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Collections.CollectionBase?displayProperty=fullName>   
  <xref:System.Collections.ICollection?displayProperty=fullName>   
  <xref:System.Collections.IEnumerable?displayProperty=fullName>   

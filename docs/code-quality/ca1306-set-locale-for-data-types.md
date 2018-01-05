@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 2a8760aa983cdd798e5ea46fa4161375f0eab7fc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc39ece5eaecfdb36576501caa432abeb365b9cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306：設定資料類型的地區設定
 |||  
@@ -49,7 +50,7 @@ ms.lasthandoff: 10/31/2017
   
  [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Data.DataTable?displayProperty=fullName>   
  <xref:System.Data.DataSet?displayProperty=fullName>   
  <xref:System.Globalization.CultureInfo?displayProperty=fullName>   

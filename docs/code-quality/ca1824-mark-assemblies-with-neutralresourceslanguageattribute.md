@@ -18,11 +18,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: c1d2138065946bfd14abfedbbffdd2dc5b433d89
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 6c9d4da3becaa6831f30a5cc6c72d1f0b3b70eea
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824：以 NeutralResourcesLanguageAttribute 標記組件
 |||  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
 3.  在**組件資訊**對話方塊方塊中，選取語言，從**中性語言**下拉式清單。  
   
-4.  按一下 [確定]。  
+4.  按一下 [確定 **Deploying Office Solutions**]。  
   
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  它是可以隱藏此規則的警告。 不過，可能會降低啟動效能。

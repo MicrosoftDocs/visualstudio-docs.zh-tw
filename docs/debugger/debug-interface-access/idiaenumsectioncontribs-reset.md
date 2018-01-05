@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2657ca96d994f44a0843700aa92d6dfa64f16ada
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 25cd01247b2bd4c8a0acc75643cdc9c6a8789f44
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsectioncontribsreset"></a>IDiaEnumSectionContribs::Reset
 列舉序列重設為開頭。  
@@ -32,5 +33,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0c83367d383ab72194e5f83609b0f93d8602fdcd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 865f575aefedb5813a72d7a0bb2024bc85313db0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-new-data-sources"></a>加入新的資料來源
 在 Visual Studio 中的.NET 資料工具的內容中的詞彙*資料來源*指的是連接到資料存放區，並將資料公開給.NET 應用程式的.NET 物件。 Visual Studio 設計工具可以取用的資料來源，以產生拖曳和卸除的資料庫物件時，將資料繫結至表單的指令碼輸出**資料來源**視窗。 這種資料來源可以是：  
@@ -96,5 +97,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 清單資料來源  
  您可以從 SharePoint 清單建立資料來源，藉由執行**資料來源組態精靈**，然後選取**SharePoint**資料來源類型。 SharePoint 會將資料公開透過[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，因此建立 SharePoint 資料來源是從服務中建立資料來源相同。 選取**SharePoint**中的項目**資料來源組態精靈**開啟**加入服務參考**對話方塊，連接到 SharePoint 資料服務藉由指向 SharePoint 伺服器。  這需要 SharePoint SDK。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

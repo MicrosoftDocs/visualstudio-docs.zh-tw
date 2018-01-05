@@ -20,16 +20,17 @@ caps.latest.revision: "35"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: 9694985711ee8bc9b46725214ecc6df2d5020b1d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: cplusplus
+ms.openlocfilehash: e1f714756d13fd4606362f8923f4746a5a85c8ec
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="analyzing-cc-code-quality-by-using-code-analysis"></a>使用程式碼分析進行 C/C++ 程式碼品質分析
 您可以使用 Visual Studio 中的程式碼分析尋找並修正程式碼缺失，藉以改善您的 C/C++ 程式碼。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 |||  
 |-|-|  
@@ -43,6 +44,6 @@ ms.lasthandoff: 11/15/2017
 |[使用 SAL 註釋減少 C/C++ 程式碼的缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)|深入了解註釋，偵測的呼叫端和被呼叫端之間的合約違規的程式碼分析工具的功能。|  
 |[C/C++ 程式碼分析警告](../code-quality/code-analysis-for-c-cpp-warnings.md)|列出並描述程式碼分析警告。|  
   
-## <a name="see-also"></a>另請參閱  
- [分析應用程式品質分析](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
+## <a name="see-also"></a>請參閱  
+ [分析應用程式品質](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)   
  [分析 Managed 程式碼品質](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)

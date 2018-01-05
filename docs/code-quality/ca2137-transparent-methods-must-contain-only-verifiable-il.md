@@ -13,11 +13,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 70a7574e0379c8e4b8dc9a888185efceb480fad4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 3ec0dda4db164f4bd3368f1bb90c782f4aee6024
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137：透明方法必須只包含可驗證的 IL
 |||  

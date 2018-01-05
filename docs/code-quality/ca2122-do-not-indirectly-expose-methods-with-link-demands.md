@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 00222c71e537856d420c6472efb104a8c928237e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: fc1d8c2ea663862e44b3092b0e2b8489eff3df6f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122：不要間接公開具有連結要求的方法
 |||  
@@ -57,7 +58,7 @@ ms.lasthandoff: 10/31/2017
  此範例會產生下列輸出。  
   
  **從受保護成員的值： seattle.corp.contoso.com**   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [安全程式碼撰寫方針](/dotnet/standard/security/secure-coding-guidelines)   
  [連結要求](/dotnet/framework/misc/link-demands)   
  [資料與模型化](/dotnet/framework/data/index)

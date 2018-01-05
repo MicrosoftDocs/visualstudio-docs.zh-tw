@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e003e49e6745a096467944717f4cd817312cbca3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a913d40820532fab76729dcc6a96191f27085714
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetcode"></a>IDiaSectionContrib::get_code
 擷取指出區段是否包含可執行程式碼的旗標。  
@@ -38,5 +39,5 @@ HRESULT get_code (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

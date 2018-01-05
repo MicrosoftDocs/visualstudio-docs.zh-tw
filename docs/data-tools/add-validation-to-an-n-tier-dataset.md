@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b4c204c7515e8bb178ba1ee541650593c0281f15
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: a3f37b734bb9d109634fc272fca3140d40c040f7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>將驗證加入至 n-tier 資料集
 將驗證加入至資料集分成多層式架構方案，基本上是相同的單一檔案的資料集 （單一專案中的資料集） 中加入驗證。 在資料上執行驗證的建議的位置是在<xref:System.Data.DataTable.ColumnChanging>及/或<xref:System.Data.DataTable.RowChanging>事件資料表的資料。  
@@ -167,7 +168,7 @@ End Sub
     }  
     ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [多層式架構資料應用程式概觀](../data-tools/n-tier-data-applications-overview.md)   
  [逐步解說： 建立 N-tier 資料應用程式](../data-tools/walkthrough-creating-an-n-tier-data-application.md)   
  [驗證資料集中的資料](../data-tools/validate-data-in-datasets.md)

@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: dff1251824a07e8448c6f0dbcf421776d90977a2
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5c86eff5c25dbabb368d7d90ed46be718b8db8e7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何： 建立 LINQ to SQL 類別 （O/R 設計工具） 之間的關聯
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中實體類別 (Class) 之間的關聯，與資料庫中資料表之間的關聯性 (Relationship) 類似。 您可以建立使用的實體類別之間的關聯**關聯編輯器** 對話方塊。  
@@ -29,7 +30,7 @@ ms.lasthandoff: 11/09/2017
 ## <a name="association-properties"></a>關聯屬性
 當您在 O/R 設計工具中選取該關聯時，建立關聯之後，有一些可設定的屬性中**屬性**視窗。 (關聯就是相關類別之間的線條)。下表提供關聯屬性的說明。  
   
-|屬性|說明|  
+|屬性|描述|  
 |--------------|-----------------|  
 |**基數**|控制關聯是一對多還是一對一。|  
 |**子屬性**|指定是否要在父代 (Parent) 上建立屬性，這個屬性是位於關聯的外部索引鍵端上之子記錄的集合或參考。 例如，在 Customer 與 Order，之間的關聯如果**子屬性**設**True**，父類別上會建立名為 Orders 的屬性。|  
@@ -49,9 +50,9 @@ ms.lasthandoff: 11/09/2017
   
 5.  按一下**確定**建立關聯。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [逐步解說： 建立 LINQ to SQL 類別](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
 [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)   
 [DataContext 方法 （O/R 設計工具）](../data-tools/datacontext-methods-o-r-designer.md)   
-[如何： 表示主索引鍵](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)
+[如何：表示主索引鍵](/dotnet/framework/data/adonet/sql/linq/how-to-represent-primary-keys)

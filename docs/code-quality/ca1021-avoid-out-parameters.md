@@ -18,11 +18,12 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dbefcb83efbcea76fec889b520f0cd0dd181bf9e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f8748b9943f3a3aa31a6585de07bdc9eff3cc5ab
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1021-avoid-out-parameters"></a>CA1021：避免使用 out 參數
 |||  
@@ -84,7 +85,7 @@ ms.lasthandoff: 10/31/2017
 **12345 ABCDE**   
 ## <a name="try-pattern-methods"></a>再試一次模式方法  
   
-### <a name="description"></a>說明  
+### <a name="description"></a>描述  
  實作方法**再試一次\<項目 >**模式，例如<xref:System.Int32.TryParse%2A?displayProperty=fullName>，不會引發這個違規。 下列範例示範結構 （實值型別），實作<xref:System.Int32.TryParse%2A?displayProperty=fullName>方法。  
   
 ### <a name="code"></a>程式碼  

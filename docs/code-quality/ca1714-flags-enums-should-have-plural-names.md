@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b83cb82dab5f723c656b51a5322df7d7aad4570c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 82f5e18b838e6f6c0696359a9d88ba3350e636ce
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714：旗標列舉應該使用複數名稱
 |||  
@@ -51,6 +52,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA2217：不要以 FlagsAttribute 標記列舉](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.FlagsAttribute?displayProperty=fullName>   
  [列舉設計](/dotnet/standard/design-guidelines/enum)

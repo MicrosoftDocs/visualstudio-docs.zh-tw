@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7db71923d924d9d19415a3311b75e3e15618a1f3
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b47a5faa6da14977a7dfb28810cfe273e09105c0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetcompilandid"></a>IDiaLineNumber::get_compilandId
 擷取造成這一行的編譯模組的唯一識別碼。  
@@ -38,5 +39,5 @@ HRESULT get_compilandId (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`。 傳回`S_FALSE`不支援這個屬性，則為。 反之則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

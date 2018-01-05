@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 96d5407672ff94749731f9d00088b27e8c4da036
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 072adcf912e5921164647cf77ee561617f844786
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>將 WPF 控制項繫結至資料集
 您將在此逐步解說中，建立包含資料繫結控制項的 WPF 應用程式。 這些控制項會繫結至封裝於資料集中的產品記錄。 您也要加入按鈕，以瀏覽產品，並將變更儲存至產品記錄。  
@@ -252,7 +253,7 @@ ms.lasthandoff: 12/12/2017
   
 -   了解如何使用**資料來源**WPF 控制項中顯示相關的資料 （也就是父子式關聯性中的資料） 的 Visual Studio 中的視窗。 如需詳細資訊，請參閱[逐步解說： 在 WPF 應用程式中顯示相關資料](../data-tools/display-related-data-in-wpf-applications.md)。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)   
 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)   
 [資料繫結概觀](/dotnet/framework/wpf/data/data-binding-overview)

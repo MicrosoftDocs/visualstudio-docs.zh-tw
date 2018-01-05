@@ -18,11 +18,12 @@ caps.latest.revision: "20"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 4fd4f23ab77e2b810d5064bd45e9f7d530e9844e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d1593800a2cde8ff0aa1bbecd169f5f3ebd601cb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710：識別項應該使用正確的後置字元
 |||  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 |--------------------------|------------|  
 |<xref:System.Attribute?displayProperty=fullName>|屬性|  
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|  
-|<xref:System.Exception?displayProperty=fullName>|例外狀況|  
+|<xref:System.Exception?displayProperty=fullName>|例外|  
 |<xref:System.Collections.ICollection?displayProperty=fullName>|集合|  
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|字典|  
 |<xref:System.Collections.IEnumerable?displayProperty=fullName>|集合|  
@@ -92,6 +93,6 @@ foreach(SomeType x in SomeDictionary.Values) { }
 ## <a name="related-rules"></a>相關的規則  
  [CA1711：識別項名稱不應該使用不正確的後置字元](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [屬性](/dotnet/standard/design-guidelines/attributes)   
  [處理和引發事件](/dotnet/standard/events/index)  

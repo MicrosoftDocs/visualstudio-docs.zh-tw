@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: e2ec28ce2cfe1e8c0de622a0f35d37ddd82e1be7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cd72555ff9877c9142057f04b9ff5881a4fe5932
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006：不要在成員簽章中巢狀化泛型類型
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  外部可見成員的簽章含有巢狀的型別引數。  
   
 ## <a name="rule-description"></a>規則描述  
- 巢狀類型引數就是也是泛型類型的類型引數。 若要呼叫其簽章含有巢狀類型引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。  
+ 巢狀類型引數就是也是泛型類型的類型引數。 若要呼叫其簽章含有巢狀型別引數的成員，則使用者必須具現化 (Instantiate) 一個泛型類型，並將這個類型傳遞給第二個泛型類型的建構函式。 必要程序及語法十分複雜，且應予以避免。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，變更設計，以移除巢狀型別引數。  
@@ -65,5 +66,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

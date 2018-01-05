@@ -17,16 +17,17 @@ caps.latest.revision: "23"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f89420d19696c0be26a2fb0a9b9b405574325797
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: e7e1e0f504c9d813b2dbcacca1689475ec42aeb1
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="code-analysis-application-errors"></a>程式碼分析應用程式錯誤
 此區段是由 managed 程式碼分析工具所產生的錯誤訊息的參考。 若要取得特定的錯誤訊息的說明，請輸入中的錯誤號碼**尋找**方塊中的索引。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 |||  
 |-|-|  

@@ -18,11 +18,12 @@ caps.latest.revision: "24"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f0cefdb203011a24769b5b180a442d22a90d0b5c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 20538a6729b1221d4559e65eae957b0125df7e4b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1010-collections-should-implement-generic-interface"></a>CA1010：集合應該實作泛型介面
 |||  
@@ -101,5 +102,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1007：建議在適當時使用泛型](../code-quality/ca1007-use-generics-where-appropriate.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [泛型](/dotnet/csharp/programming-guide/generics/index)

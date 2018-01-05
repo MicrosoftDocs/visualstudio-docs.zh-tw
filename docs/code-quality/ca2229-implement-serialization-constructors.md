@@ -18,11 +18,12 @@ caps.latest.revision: "15"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5d262718e6728a87cb955019fff0ce95db2b49d2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f954626a45035aa84633f82ba3a2da0f2a682421
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229：請實作序列化建構函式
 |||  
@@ -58,7 +59,7 @@ ms.lasthandoff: 10/31/2017
 ## <a name="related-rules"></a>相關的規則  
  [CA2237：ISerializable 類型必須標記 SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>   
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>

@@ -18,11 +18,12 @@ caps.latest.revision: "17"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 20b31e4ea20fd3d1a4ec254507962bf4e8946bb4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 927e13266bf308096592fb5714e1247f4b596ca8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815：覆寫實值類型上的等號和等號比較運算子
 |||  
@@ -36,7 +37,7 @@ ms.lasthandoff: 10/31/2017
  公用實值類型不會覆寫<xref:System.Object.Equals%2A?displayProperty=fullName>，或未實作等號比較運算子 （= =）。 此規則不會檢查列舉型別。  
   
 ## <a name="rule-description"></a>規則描述  
- 針對實值類型的繼承實作<xref:System.Object.Equals%2A>會使用 Reflection 程式庫，並比較所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果您預期使用者比較或排序執行個體，或使用它們做為雜湊資料表索引鍵，值類型應實作<xref:System.Object.Equals%2A>。 如果您的程式語言支援運算子多載，也應該提供相等和不等比較運算子的實作。  
+ 針對實值類型的繼承實作<xref:System.Object.Equals%2A>會使用 Reflection 程式庫，並比較所有欄位的內容。 但是 Reflection 相當耗費運算資源，而且可能不需要比較每個欄位是否相等。 如果您預期使用者比較或排序執行個體，或使用它們做為雜湊資料表索引鍵，值類型應實作<xref:System.Object.Equals%2A>。 如果您的程式設計語言支援運算子多載，則也應該提供相等和不等運算子的實作。  
   
 ## <a name="how-to-fix-violations"></a>如何修正違規  
  若要修正此規則的違規情形，提供的實作<xref:System.Object.Equals%2A>。 如果可以，您可以實作等號比較運算子。  
@@ -67,5 +68,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA2226：運算子應該有對稱的多載](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Object.Equals%2A?displayProperty=fullName>

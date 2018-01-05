@@ -13,11 +13,12 @@ caps.latest.revision: "12"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: b1434e095fbf5c20286626cdc4cdc96716f2b9e6
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 346ddadef815f4926b0a87a924a502ab2184de3e
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution"></a>如何：對方案中的多個專案指定 Managed 程式碼規則集
 根據預設，方案的所有 managed 的專案都會被指派 Microsoft 最小建議規則程式碼分析*規則集*。 您可以變更規則集指派給專案的方案的 [屬性] 對話方塊中的解決方案。  

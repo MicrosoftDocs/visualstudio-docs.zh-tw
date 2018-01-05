@@ -14,11 +14,12 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3b12ef6fa6da9338346aa997ba16cb023548f138
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f4721ee818c4dc75d883c7accd2faa162521de13
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasessionputloadaddress"></a>IDiaSession::put_loadAddress
 符號設定載入位址，對應的可執行檔，此符號存放區中。  
@@ -41,5 +42,5 @@ HRESULT put_loadAddress (
 > [!NOTE]
 >  您必須先呼叫這個方法，當您取得[IDiaSession](../../debugger/debug-interface-access/idiasession.md)物件，並開始使用物件，如果您需要使用在符號上的任何虛擬屬性之前。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSession](../../debugger/debug-interface-access/idiasession.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "11"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 61d8ca557bfc55e3488a35e82f0242f931c51ed4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7087cfe23f7911ec33891a70cd88cf47ee9e4a7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1307-specify-stringcomparison"></a>CA1307：指定 StringComparison
 |||  
@@ -46,6 +47,6 @@ ms.lasthandoff: 10/31/2017
 ## <a name="when-to-suppress-warnings"></a>隱藏警告的時機  
  它可以安全地隱藏此規則的警告，當程式庫或應用程式適用於有限制的本機使用者，並因此不會當地語系化。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [全球化警告](../code-quality/globalization-warnings.md)   
  [CA1309：使用循序的 StringComparison](../code-quality/ca1309-use-ordinal-stringcomparison.md)

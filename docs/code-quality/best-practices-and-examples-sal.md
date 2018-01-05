@@ -12,11 +12,12 @@ caps.latest.revision: "12"
 author: mikeblome
 ms.author: mblome
 manager: ghogen
-ms.openlocfilehash: cfd56596a49bc562ded401dc65009bcde73cec2d
-ms.sourcegitcommit: fb751e41929f031d1a9247bc7c8727312539ad35
+ms.workload: multiple
+ms.openlocfilehash: 1d5daf0f5d79683b3c6ef7f97d5f5113d294f6ac
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="best-practices-and-examples-sal"></a>最佳作法和範例 (SAL)
 以下是一些取得大部分超出來源的程式碼的註釋語言 (SAL)，並避免一些常見的問題。  
@@ -240,7 +241,7 @@ _Ret_maybenull_ void *MightReturnNullPtr2();
   
  在此範例中，`_Out_opt_`指出指標可能是 NULL，做為前置條件的一部分。 不過，前置條件不適用於傳回的值。 在此情況下，正確的註解是`_Ret_maybenull_`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 SAL 註釋減少 C/c + + 程式碼缺失](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   
  [了解 SAL](../code-quality/understanding-sal.md)   
  [註釋函式參數和傳回值](../code-quality/annotating-function-parameters-and-return-values.md)   

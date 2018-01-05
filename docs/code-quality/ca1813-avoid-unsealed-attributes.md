@@ -18,11 +18,12 @@ caps.latest.revision: "13"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 5aec235494b29a21eb5a3c2de39a6933e04b0ebe
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 9ad548bd51985484ebcb39cb6022e994a5e0534a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813：避免使用非密封屬性
 |||  
@@ -55,5 +56,5 @@ ms.lasthandoff: 10/31/2017
   
  [CA1018：必須以 AttributeUsageAttribute 標記屬性](../code-quality/ca1018-mark-attributes-with-attributeusageattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [屬性](/dotnet/standard/design-guidelines/attributes)

@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5b7aa58a94b44270c89a1ea0ddcb380abd830b31
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23df339101ada3ad6f2d59311c38380d0cdfc201
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsskip"></a>IDiaEnumSymbols::Skip
 略過指定的數目的列舉順序中的符號。  
@@ -38,5 +39,5 @@ HRESULT Skip (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回`S_FALSE`是否有任何符號略過。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

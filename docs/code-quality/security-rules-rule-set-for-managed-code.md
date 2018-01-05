@@ -12,16 +12,17 @@ caps.latest.revision: "9"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: f32f687a9fc18d7149ef08c10a85e7f1f8044807
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 3085eaabd5725a158c7099015adbe940ea5bd61c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>適用於 Managed 程式碼的安全性規則規則集
 您應該包含的 Microsoft 安全性規則規則集所報告的潛在安全性問題數目最大化。  
   
-|規則|說明|  
+|規則|描述|  
 |----------|-----------------|  
 |[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|檢閱 SQL 查詢有安全性弱點|  
 |[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|在一般處理常式中攔截非 CLSCompliant 例外狀況|  

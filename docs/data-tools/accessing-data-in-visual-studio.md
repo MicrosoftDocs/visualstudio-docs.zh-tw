@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: da7176d3fd64591064bfd33a0780ba7939621182
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 3e147307514656a693d47d24a8017b1b4ebbf182
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="accessing-data-in-visual-studio"></a>存取 Visual Studio 中的資料
 

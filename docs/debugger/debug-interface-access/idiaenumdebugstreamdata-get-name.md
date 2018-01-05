@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ebf4e56004bf684edd46cccf977e91fe5ba8a7b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: a6102230e8618a2a77c2c7f2365ee36f6c2b8f3c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumdebugstreamdatagetname"></a>IDiaEnumDebugStreamData::get_name
 擷取偵錯資料流的名稱。  
@@ -38,5 +39,5 @@ HRESULT get_Name (
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回錯誤碼。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumDebugStreamData](../../debugger/debug-interface-access/idiaenumdebugstreamdata.md)

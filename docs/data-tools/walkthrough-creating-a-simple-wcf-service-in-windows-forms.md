@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9dc8bc777d1818a50e727787bdf024036a5cb378
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: c45ea549f17d71fd524a96e7d019c2b0d86bc628
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>逐步解說： 在 Windows Form 中建立簡單的 WCF 服務
 本逐步解說示範如何建立簡單的 [!INCLUDE[vsindigo](../data-tools/includes/vsindigo_md.md)] 服務、予以測試，然後從 Windows Form 應用程式加以存取。  
@@ -129,5 +130,5 @@ ms.lasthandoff: 10/31/2017
   
      ![結果的顯示格式](../data-tools/media/wcf10.png "wcf10")  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

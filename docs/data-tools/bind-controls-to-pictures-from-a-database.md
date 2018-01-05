@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc71529f852e87ca206509e06cb80940c11ac36d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 77d2780200fd8be7a42d396cdade39b271b04bae
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>從資料庫繫結控制項至圖片
 您可以使用**資料來源**視窗來將資料庫中的映像繫結至您的應用程式中的控制項。 比方說，您可以繫結至影像<xref:System.Windows.Controls.Image>控制在 WPF 應用程式，或為<xref:System.Windows.Forms.PictureBox>Windows Forms 應用程式中的控制項。  
@@ -48,5 +49,5 @@ ms.lasthandoff: 11/09/2017
   
     -   或者，您可以選取不同的控制項可支援資料繫結，並且可以顯示的影像。 如果您想要使用的控制項不在可用的控制項清單中，您可以將其加入清單並加以選取。 如需詳細資訊，請參閱[將自訂控制項加入至資料來源視窗](../data-tools/add-custom-controls-to-the-data-sources-window.md)。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將 WPF 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

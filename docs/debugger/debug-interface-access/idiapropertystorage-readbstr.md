@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 93ab7271ccef1819e16e4cdb4c690f82bfaeec35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7c8fc8520791228158ad336a7bb709cdbf83a5dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiapropertystoragereadbstr"></a>IDiaPropertyStorage::ReadBSTR
 讀取`BSTR`屬性集合中的值。  
@@ -45,5 +46,5 @@ HRESULT ReadBSTR (
 ## <a name="remarks"></a>備註  
  A `BSTR` Windows 所定義的以零結尾的寬字元字串。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

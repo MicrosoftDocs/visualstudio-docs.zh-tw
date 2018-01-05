@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 607ae2e6f78bc501ad1372c32f20451ca74f1c87
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dde08f836984e56237f4db1d672d8ae4304485c9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsectioncontribsskip"></a>IDiaEnumSectionContribs::Skip
 略過指定的數目的列舉順序中的區段比重。  
@@ -38,5 +39,5 @@ HRESULT Skip(
 ## <a name="return-value"></a>傳回值  
  如果成功，傳回`S_OK`; 否則傳回`S_FALSE`如果沒有更多的區段比重略過。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)

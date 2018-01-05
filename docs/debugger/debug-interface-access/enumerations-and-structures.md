@@ -18,16 +18,17 @@ caps.latest.revision: "11"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 15fed0e2638ba8870a47a65a359b4f02bc6c7eda
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ad7b4d4a42c15398b1817c06ec0193aef16e865b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="enumerations-and-structures"></a>列舉和結構
 這些是列舉型別和結構 DIA SDK 使用。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 ## <a name="enumerations"></a>列舉  
  [BasicType 列舉](../../debugger/debug-interface-access/basictype.md)  
@@ -83,5 +84,5 @@ ms.lasthandoff: 10/31/2017
  [常數 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/constants-debug-interface-access-sdk.md)  
  指定常數，DIA SDK 中提供。  
   
-## <a name="see-also"></a>另請參閱  
- [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+## <a name="see-also"></a>請參閱  
+ [參考資料](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)

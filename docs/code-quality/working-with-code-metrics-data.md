@@ -15,11 +15,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 198e4b6d0ba2f3517cf907007cc544ca2e154013
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload: multiple
+ms.openlocfilehash: c259a1d303c741d4e36af46250073b0378a65f8b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="working-with-code-metrics-data"></a>使用程式碼度量資料
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 12/14/2017
 
 您可以建立[Visual Studio Team Services (VSTS)](/vsts/index)為基礎的工作項目會導致**程式碼度量結果**視窗。 建立工作項目時，Visual Studio 會自動輸入中的標題**標題**底下的欄位和程式碼度量資料**記錄** 索引標籤。
 
-如需有關 VSTS 工作項目，請參閱[工作項目](/vsts/work/work-items/index)。
+如需有關 VSTS 工作項目，請參閱[工作項目 (VSTS)](/vsts/work/work-items/index)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>若要建立根據結果的工作項目
 
@@ -125,7 +126,7 @@ ms.lasthandoff: 12/14/2017
 
 4.  在**檔案**功能表上，按一下 **全部儲存**儲存工作項目。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [程式碼度量值](../code-quality/code-metrics-values.md)  
 [如何：產生程式碼度量資料](../code-quality/how-to-generate-code-metrics-data.md)

@@ -18,11 +18,12 @@ caps.latest.revision: "14"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 10b02338b16dc3bd1c67e3ab11cdd02d3d1ef1be
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ed47a2ccea76ce9cb6e2a1ef6dd73d53c961544c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="ca1406-avoid-int64-arguments-for-visual-basic-6-clients"></a>CA1406：避免對 Visual Basic 6 用戶端使用 Int64 引數
 |||  
@@ -59,6 +60,6 @@ ms.lasthandoff: 10/31/2017
   
  [CA1017：組件必須標記 ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [與 Unmanaged 程式碼互通](/dotnet/framework/interop/index)   
  [Long 資料類型](/dotnet/visual-basic/language-reference/data-types/long-data-type)

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d440c25c21ddd32551ac9c34253ad9d2be4801c5
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 4082603677d23c152c2ab0b608e2c429399681d7
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
 列舉序列重設為開頭。  
@@ -32,5 +33,5 @@ HRESULT Reset ();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

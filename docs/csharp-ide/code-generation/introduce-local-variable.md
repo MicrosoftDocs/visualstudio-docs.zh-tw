@@ -11,11 +11,12 @@ ms.assetid: 1490d6ac-ed56-4d03-95db-c23f23cba70d
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: d3e68029ec1233eb5bc77ac21002fb7ce9befe98
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: c52a29cb3dd408dacb805479b9680873abb047d9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="introduce-a-local-variable-in-c"></a>介紹 C# 中的區域變數 #
 **項目：**可讓您立即產生一個本機變數來取代現有的運算式。
@@ -49,6 +50,6 @@ ms.lasthandoff: 10/31/2017
    >[!NOTE]
    >您可以使用**..所有出現的...**取代找不到，所選的運算式不只是一個您有特別反白顯示的每個執行個體的功能表選項。
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
 [程式碼產生 (C#)](../code-generation-csharp.md)  
 [預覽變更](../../ide/preview-changes.md) 

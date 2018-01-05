@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: a2c836364092aa71f40d4d7aa4566b2d12def00e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 0bb8155f2ec1ed6815ac37f1124dfbf57cf838b2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="automatic-feature-suspension"></a>自動功能暫止
 如果可用的系統記憶體會設為 200 MB 或更少，Visual Studio 將程式碼編輯器中顯示下列訊息。  
@@ -60,7 +61,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  自動功能暫止警告只發生一次針對每個解決方案，不是在每個工作階段為基礎。 這表示如果您從 Visual Basic 切換至 Visual C# （或反之亦然），並執行到另一個記憶體不足的狀況，則可以可能取得另一個自動功能暫止的警告。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [如何： 啟用和停用完整解決方案分析](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)   
  [記憶體回收的基本概念](/dotnet/standard/garbage-collection/fundamentals)   
  [針對大型方案的效能考量](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)
