@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: faad61923bcf7a691b26dd48f740e25a14a43ffc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2daf6f342f2e344dd11d02aef4da1344b3b84381
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetlength"></a>IDiaLineNumber::get_length
 擷取在區塊中的位元組數目。  
@@ -41,5 +42,5 @@ HRESULT get_length (
 ## <a name="remarks"></a>備註  
  區塊長度的來源行程式碼所表示的[IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)物件。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

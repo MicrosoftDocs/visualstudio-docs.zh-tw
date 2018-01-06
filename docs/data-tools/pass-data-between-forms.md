@@ -21,11 +21,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f401224657e64922fc9f6102a33eaf1cf824a556
-ms.sourcegitcommit: ec1c7e7e3349d2f3a4dc027e7cfca840c029367d
+ms.workload: data-storage
+ms.openlocfilehash: 7704b8f4af9f6858e476f4075c6f38cda3052118
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="pass-data-between-forms"></a>在表單之間傳遞資料
 此逐步解說提供將資料從某個表單傳遞至另一個表單的指示。 使用 customers 和 orders 資料表，從 Northwind，一種格式可讓使用者選取客戶，和第二種形式會顯示所選取的客戶的訂單。 本逐步解說示範如何建立第一個表單接收資料的第二個表單上的方法。  
@@ -207,5 +208,5 @@ ms.lasthandoff: 11/07/2017
   
 -   加入將資料存回資料庫的功能。 如需詳細資訊，請參閱[將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

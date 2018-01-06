@@ -32,11 +32,12 @@ caps.latest.revision: "22"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eaa6ba7a5ba88d3a7f5ff2b8f9f7571c26a3baf4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 46ea417ccd8b4dbecd0c6584699e9f2e98330d69
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="cc-assertions"></a>C/C++ 判斷提示
 判斷提示陳述式會指定您希望為您程式中的點，則為 true 的條件。 如果該條件不成立，判斷提示會失敗，中斷程式執行，而[判斷提示失敗對話方塊](../debugger/assertion-failed-dialog-box.md)隨即出現。  
@@ -346,7 +347,7 @@ _ASSERT(!myErr); // Don't do this, either!
   
  [本主題內容](#BKMK_In_this_topic)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [偵錯機器碼](../debugger/debugging-native-code.md)   
  [Managed 程式碼中的判斷提示](../debugger/assertions-in-managed-code.md)

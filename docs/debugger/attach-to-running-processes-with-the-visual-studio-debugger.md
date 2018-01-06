@@ -31,11 +31,12 @@ caps.latest.revision: "53"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 48462684498136d09354fb87917f553d522188c0
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: multiple
+ms.openlocfilehash: 6ca076ef20ad8751619a715721c6423b5211bc3f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio Debugger 附加至執行中處理序
 您可以將 Visual Studio 偵錯工具附加至本機或遠端電腦上執行的處理序。 處理序執行之後，請按一下**偵錯 > 附加至處理序**(或按**CTRL + ALT + P**) 若要開啟**附加至處理序** 對話方塊。
@@ -66,7 +67,7 @@ ms.lasthandoff: 12/12/2017
   
     2.  在 [選取程式碼類型]  對話方塊中，按一下 [偵錯這些程式碼類型]  ，然後選取要偵錯的類型。  
   
-    3.  按一下 [確定] 。  
+    3.  按一下 [確定 **Deploying Office Solutions**]。  
   
 4.  按一下 [附加] 。
 
@@ -191,7 +192,7 @@ ms.lasthandoff: 12/12/2017
   
      這時，該附加將完全失敗，您將取得特定的錯誤訊息。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯多個處理序](../debugger/debug-multiple-processes.md)   
  [在 Just-in-time 偵錯](../debugger/just-in-time-debugging-in-visual-studio.md)   
  [遠端偵錯](../debugger/remote-debugging.md)

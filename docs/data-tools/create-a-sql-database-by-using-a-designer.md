@@ -16,11 +16,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 47fad923b0e31d650d18426bf5f9a7da7bca3e38
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: ffbb2259ff556dcf96021adc47c733fdbcd9125d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>建立資料庫，並在 Visual Studio 中加入資料表
 您可以使用 Visual Studio 建立及更新 SQL Server Express LocalDB 中的本機資料庫檔案。 您也可以藉由執行 TRANSACT-SQL 陳述式中的建立資料庫**SQL Server 物件總管**Visual Studio 中的工具視窗。 本主題中，我們將建立的.mdf 檔案，並使用資料表設計工具中加入資料表和索引鍵。
@@ -170,5 +171,5 @@ ms.lasthandoff: 11/09/2017
   
 7.  在功能表列上，選取**檔案**，**全部儲存**。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [存取 Visual Studio 中的資料](accessing-data-in-visual-studio.md)

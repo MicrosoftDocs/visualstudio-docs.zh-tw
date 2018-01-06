@@ -26,11 +26,12 @@ caps.latest.revision: "34"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae3149350bac7aca92ffbc8b308c75357c3edba4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 329e7fae6a2a8682c23417f88e59700b7caffd53
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-managed-objects"></a>建立受管理物件的自訂檢視
 您可以自訂 Visual Studio 在偵錯工具變數視窗中顯示資料型別的方式。  
@@ -51,7 +52,7 @@ ms.lasthandoff: 10/31/2017
   
  您也可以透過撰寫運算式評估工具增益集來自訂原生型別檢視。 如需詳細資訊，請參閱[EEAddIn 範例： 偵錯運算式評估工具增益集](http://msdn.microsoft.com/en-us/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用 DebuggerTypeProxy 屬性](../debugger/using-debuggertypeproxy-attribute.md)   
  [使用 DebuggerDisplay 屬性](../debugger/using-the-debuggerdisplay-attribute.md)   
  [監看式和快速監看式視窗](../debugger/watch-and-quickwatch-windows.md)   

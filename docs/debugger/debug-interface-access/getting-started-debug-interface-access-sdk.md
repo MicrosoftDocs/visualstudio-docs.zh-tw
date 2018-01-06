@@ -16,11 +16,12 @@ caps.latest.revision: "15"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 938aaf760a2a6305580331945875391e6ad819af
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d37843917be3a2668e9a2887f046eaee00600dc8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="getting-started-debug-interface-access-sdk"></a>使用者入門 (偵錯介面存取 SDK)
 偵錯介面存取 (DIA) SDK 會提供您與指示文件說明如何使用 DIA API 的範例。 使用介面和方法在 DIA SDK 來開發自訂應用程式開啟的.pdb 和.dbg 檔案，搜尋其內容中的符號、 值、 屬性、 位址和其他偵錯資訊。 此 SDK 也提供 c + + 應用程式中找到的符號相關聯的屬性參考資料表。  
@@ -43,12 +44,12 @@ ms.lasthandoff: 10/31/2017
   
  IDL: idl\dia2.idl  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [概觀](../../debugger/debug-interface-access/overview-debug-interface-access-sdk.md)  
  檢閱 dia 時發生的基本架構  
   
  [查詢 .Pdb 檔案](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
  提供逐步指示如何使用 DIA API 來查詢.pdb 檔案。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

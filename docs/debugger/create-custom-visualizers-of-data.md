@@ -22,11 +22,12 @@ caps.latest.revision: "28"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ec31ea837c78fc1d47c3df02d129ac3c5f4f3657
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 23985c56ba61e5a788232523611a48cfde902335
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-visualizers-of-data"></a>建立自訂的視覺化檢視的資料
  視覺化檢視是元件的[!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]偵錯工具使用者介面。 A*視覺化檢視*建立對話方塊或另一個介面是適用於其資料類型的方式顯示變數或物件。 例如，HTML 視覺化檢視會解譯 HTML 字串，並在瀏覽視窗中顯示出現的結果，而點陣圖視覺化檢視會解譯點陣圖結構，並顯示其所代表的圖形。 除了檢視資料外，有些視覺化檢視也能讓您修改資料。
@@ -82,7 +83,7 @@ ms.lasthandoff: 10/31/2017
   
 2.  如果您希望視覺化檢視能夠編輯和顯示資料物件，您必須從 `TransferData` 覆寫 `CreateReplacementObject` 或 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource> 方法。   
   
-## <a name="in-this-section"></a>本章節內容
+## <a name="in-this-section"></a>本節內容
   
  [逐步解說：在 C# 中撰寫視覺化檢視](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)  
 

@@ -77,11 +77,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 947da9ccdbf67a71edfaa122de8861912a9e9596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: cc7b945a8c53d290f573eac4565f2240ec7a2d7b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-heap-details"></a>CRT 偵錯堆積詳細資料
 本主題提供 CRT 偵錯堆積的詳細檢視。  
@@ -193,7 +194,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  **_CrtDbgFlag**旗標包含下列的位元欄位：  
   
-|位元欄位|預設<br /><br /> value|說明|  
+|位元欄位|預設<br /><br /> value|描述|  
 |---------------|-----------------------|-----------------|  
 |**_CRTDBG_ALLOC_MEM_DF**|開啟|開啟偵錯配置。 當這個位元為關閉，配置會鏈結在一起，但是區塊類型是**_IGNORE_BLOCK**。|  
 |**_CRTDBG_DELAY_FREE_MEM_DF**|Off|防止真的釋放記憶體，這是為了模擬低記憶體情況。 當這個位元開啟時，釋放的區塊會保留在偵錯堆積的連結清單中，但是會標記為**_FREE_BLOCK**並填入一個特殊位元組值。|  
@@ -303,7 +304,7 @@ typedef struct _CrtMemState
   
  下列函式報告堆積的狀態和內容，並且使用資訊來幫助偵測記憶體流失和其他問題。  
   
-|函式|說明|  
+|功能|描述|  
 |--------------|-----------------|  
 |[_CrtMemCheckpoint](/cpp/c-runtime-library/reference/crtmemcheckpoint)|將儲存在堆積的快照集**_CrtMemState**應用程式所提供的結構。|  
 |[_CrtMemDifference](/cpp/c-runtime-library/reference/crtmemdifference)|比較兩個記憶體狀態結構，將它們之間的差異儲存在第三個狀態結構，如果兩個狀態不同則傳回 TRUE。|  
@@ -368,5 +369,5 @@ int addNewRecord(struct RecStruct *prevRecord,
   
  ![回到頁首](../debugger/media/pcs_backtotop.png "PCS_BackToTop") [內容](#BKMK_Contents)  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯機器碼](../debugger/debugging-native-code.md)

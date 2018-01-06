@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9943b6d5263a616523db92a67df58746579b0d51
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: b53dec270481ca8aa6009b9ddd27bdcdfeae6037
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何： 使用 O/R 設計工具設定繼承
 [!INCLUDE[vs_ordesigner_long](../data-tools/includes/vs_ordesigner_long_md.md)] ([!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)]) 通常是在關聯式系統中實作，因此支援單一資料表繼承概念。 在單一資料表繼承 (Inheritance) 中，單一資料庫資料表的欄位會同時包含父代資訊和子系資料。 使用關聯式資料時，鑑別子資料行所含的值會決定任何記錄所屬的類別 (Class)。  
@@ -53,7 +54,7 @@ ms.lasthandoff: 12/12/2017
   
 10. （選擇性） 您也可以設定**繼承預設值**屬性來指定將載入的資料列不符合任何既定的繼承程式碼時，會使用的繼承階層架構中的型別。 換句話說，如果某筆記錄的鑑別子資料行有值，不符合值在**衍生類別鑑別子值**或**基底類別鑑別子值**屬性、 記錄會將載入的型別指定為**繼承預設值**。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [逐步解說： 建立 LINQ to SQL 類別 （O R 設計工具）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)   
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)   

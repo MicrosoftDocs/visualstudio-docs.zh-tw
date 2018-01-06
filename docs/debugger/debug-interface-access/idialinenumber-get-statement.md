@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 05cb3f85fe2f1ea82622a4537b89895a44eebf63
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8659123c09482537aadc3baedb597f5c7030708d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetstatement"></a>IDiaLineNumber::get_statement
 擷取旗標，表示這個行資訊會描述陳述式，而不是運算式，以原始程式碼的開頭。  
@@ -41,5 +42,5 @@ HRESULT get_statement (
 ## <a name="remarks"></a>備註  
  陳述式可以跨越多行。 這個方法會指出是否相關聯的行號標示的這類的多行陳述式開頭。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

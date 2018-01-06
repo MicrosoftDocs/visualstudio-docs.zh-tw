@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7f538c51bd5f15f91dfae0d13a9dae8cf4f8afb1
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 8e599e1d309ab254c2b2d5a3a490c0cd912b8823
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="database-projects-and-data-tier-applications-in-visual-studio"></a>資料庫專案和 Visual Studio 中的資料層應用程式  
 您可以使用資料庫專案建立新的資料庫，新的資料層應用程式 (Dac)，並且更新現有的資料庫和資料層應用程式。 資料庫專案和 DAC 專案可讓您套用至您的資料庫開發工作中相同的方式將這些技術套用至 managed 或原生程式碼中的版本控制和專案管理技術。 您可以協助您建立來管理對資料庫和資料庫伺服器的開發小組*DAC 專案*，*資料庫專案*，或*伺服器專案*並將它放置版本控制。 您的小組成員可以簽出檔案，以進行、 建置和測試中的變更*隔離式的開發環境*，或沙箱，與小組共用它們之前。 為協助確保程式碼品質，您的小組可以完成，並預備環境中測試之資料庫的特定版本的所有變更，然後再部署到實際執行環境的變更。  
@@ -36,5 +37,5 @@ ms.lasthandoff: 11/09/2017
 |**執行資料庫反覆開發：**如果您是開發人員或測試人員，您簽出專案的組件，並加以隔離式的開發環境中更新。 藉由使用這種環境，您可以測試您的變更，而不會影響小組的其他成員。 變更已完成之後，您可以檢查檔案重新加入版本控制，讓其他小組成員可以取得您的變更和建立並將其部署至測試伺服器。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）<br />-   [TRANSACT-SQL 偵錯工具](http://go.microsoft.com/fwlink/?LinkId=227324)（Microsoft 網站上）|  
 |**建立原型，驗證測試的結果，並修改資料庫指令碼和物件：**您可以使用[!INCLUDE[tsql](../data-tools/includes/tsql_md.md)]編輯器執行其中一個這些常見的工作。|-   [查詢與文字編輯器 (SQL Server Management Studio)](http://go.microsoft.com/fwlink/?LinkId=227327) （Microsoft 網站上）|  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

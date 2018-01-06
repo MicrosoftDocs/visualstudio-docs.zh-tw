@@ -16,11 +16,12 @@ caps.latest.revision: "21"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3d8747ddb78c257ae0ba38d24fb2c5cc529f67b9
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: dotnet
+ms.openlocfilehash: 1c940c10c85901e5da7425c33f4bdbd726be7627
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>為 Managed 程式碼實作自訂程式碼分析簽入原則
 簽入原則指定的 team 專案的成員必須在它前面的程式碼執行的規則集的程式碼分析簽入版本控制。 Microsoft 提供一組標準*規則集*該群組的程式碼分析規則到功能區域。 *自訂簽入原則規則集*指定一組特定的 team 專案的程式碼分析規則。 規則集儲存在.ruleset 檔案。  

@@ -24,16 +24,17 @@ caps.latest.revision: "14"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 30d645042908a7ff307017d090c2789b9d40b99a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: b5071e2fd7c8114cb13697eef4a4ddfa32d95718
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-hook-function-writing"></a>撰寫偵錯攔截函式
 本節將說明一些您可以撰寫的自訂偵錯攔截函式，這些函式可讓您將程式碼插入偵錯工具正常處理中的某些預先定義點。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [用戶端區塊攔截函式](../debugger/client-block-hook-functions.md)  
  針對能夠驗證或報告儲存於 _CLIENT_BLOCK 區塊內資料內容的函式，提供撰寫的指引和原型 (Prototype)。  
   

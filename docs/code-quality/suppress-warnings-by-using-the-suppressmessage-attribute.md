@@ -22,16 +22,17 @@ caps.latest.revision: "19"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: dfa752c56d26b16f1fac569ba05cfa44693c77a2
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: ce246c0ff960c78aed1901618fdc26bff97779d2
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="suppress-warnings-by-using-the-suppressmessage-attribute"></a>使用 SuppressMessage 屬性隱藏警告
 通常會很有用，表示這項警告是 nonapplicable，讓小組成員知道此程式碼已檢閱，並發現，應該隱藏的警告。 在 原始檔 (ISS) 可讓開發人員將會隱藏的警告接近產生警告的位置的屬性。 您可以將 ISS 屬性直接加入原始程式檔，或者您可以使用中的捷徑功能表[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]IDE。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
   
 |||  
 |-|-|  

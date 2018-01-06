@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 349477bed67450e897ec60a00635fb65442eb1ba
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 1a8320a78c807f08d24f6bcc41db9d775850101b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiadatasourcegetlasterror"></a>IDiaDataSource::get_lastError
 擷取最後一個載入錯誤的檔案名稱。  
@@ -45,5 +46,5 @@ BSTR    fileName;
 HRESULT errorCode = pSource->get_lastError( &fileName );  
 ```  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md)

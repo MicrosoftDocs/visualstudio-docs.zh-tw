@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b3a896e64e048a5104bca84b726c730d4d9d524a
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5bba0739a35dbc90c0c9141619c54b93f653d482
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>屬性&lt;屬性名稱&gt;無法刪除
 屬性\<屬性名稱 > 無法刪除，因為它會設定為**鑑別子屬性**間之繼承\<類別名稱 > 和\<類別名稱 >  
@@ -33,6 +34,6 @@ ms.lasthandoff: 11/09/2017
   
 3.  試著再次刪除屬性。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [O/R 設計工具訊息](../data-tools/o-r-designer-messages.md)  
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -24,11 +24,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 31c17df9b8b3e0a0b54d99f95e8a3d5704140cf7
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 093dbb5ee8f088a7f2e4ccd1dd063cfeecc2c5e3
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="read-xml-data-into-a-dataset"></a>XML 資料讀入資料集
 ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可以建立 Windows 應用程式，可將 XML 資料載入資料集。 資料集即會顯示在<xref:System.Windows.Forms.DataGridView>控制項。 最後，XML 檔案的內容為基礎的 XML 結構描述會顯示在文字方塊中。  
@@ -169,9 +170,9 @@ ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可
     |-------------|--------------|-------------|  
     |`TextBox1`|**多行**|`true`|  
     ||**捲軸**|**垂直**|  
-    |`Button1`|**Name**|`ReadXmlButton`|  
+    |`Button1`|**名稱**|`ReadXmlButton`|  
     ||**Text**|`Read XML`|  
-    |`Button2`|**Name**|`ShowSchemaButton`|  
+    |`Button2`|**名稱**|`ShowSchemaButton`|  
     ||**Text**|`Show Schema`|  
   
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>建立接收 XML 資料的資料集  
@@ -245,6 +246,6 @@ ADO.NET 提供簡單的方法，使用 XML 資料。 在本逐步解說，您可
   
 -   編輯資料集中的資料，並寫出至資料庫。 如需詳細資訊，請參閱[儲存資料](../data-tools/saving-data.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)       
  [Visual Studio 中的 XML 工具](../xml-tools/xml-tools-in-visual-studio.md)

@@ -22,16 +22,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b4cab890c97599b8b925004b735e7f980f5ba2fd
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 52f1847112741e90634ce0e68acbcfdd11b837db
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debugging-techniques"></a>CRT 偵錯技術
 如果您要偵錯的程式使用 C 執行階段程式庫，可以使用這些偵錯技術。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [CRT 偵錯程式庫操作](../debugger/crt-debug-library-use.md)  
  描述由 C 執行階段程式庫提供的偵錯支援，並提供存取這些工具的指示。  
   

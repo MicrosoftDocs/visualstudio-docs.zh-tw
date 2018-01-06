@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bfc537118f6c1769ec98893099daa0c61d1b5b1d
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 95bfef50e7ce5016b68df1442e625a88beb22181
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-relationships-between-datasets"></a>建立資料集之間的關聯性
 包含相關的資料的資料集資料表會使用<xref:System.Data.DataRelation>代表資料表之間的父子式關聯性，並傳回相關的記錄從另一個物件。 相關的資料表加入至資料集，利用**資料來源組態精靈**，或**Dataset 設計工具**，建立以及設定<xref:System.Data.DataRelation>為您的物件。  
@@ -107,5 +108,5 @@ A<xref:System.Data.DataRelation>物件也可用來建立和強制執行下列條
   
 2.  從**資料**功能表上，選取**顯示關聯性標籤**命令，以顯示關聯性名稱。 清除該命令可以隱藏關聯名稱。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [在 Visual Studio 中建立和設定資料集](../data-tools/create-and-configure-datasets-in-visual-studio.md)

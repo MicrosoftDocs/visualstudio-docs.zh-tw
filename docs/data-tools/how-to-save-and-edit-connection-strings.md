@@ -12,11 +12,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4a7482c269cd978d2c1848c896985b1194797e42
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: bb3ddcf8a4d1ac14b356bfabac2378ff345ef65b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>如何：儲存和編輯連接字串
 Visual Studio 應用程式中的連接字串可以儲存在應用程式組態檔 （也稱為應用程式設定），或硬式編碼直接在您的應用程式中。 將連接字串儲存至應用程式組態檔，可簡化應用程式維護工作。 如果需要變更連接字串，則您可以在應用程式設定檔中更新它 (而不需要在原始程式碼中變更它並重新編譯應用程式)。
@@ -58,5 +59,5 @@ Visual Studio 應用程式中的連接字串可以儲存在應用程式組態檔
 在連接字串內儲存敏感性資訊 (如密碼) 會影響應用程式的安全性。 使用 Windows 整合式安全性是控制資料庫存取的更安全方式。
 如需詳細資訊，請參閱[保護連線資訊](/dotnet/framework/data/adonet/protecting-connection-information)。
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [加入連接](../data-tools/add-new-connections.md)

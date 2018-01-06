@@ -16,11 +16,12 @@ caps.latest.revision: "45"
 author: gewarren
 ms.author: gewarren
 manager: ghogen
-ms.openlocfilehash: 3dd0c93476e646895362b98c2f62b569d87ffe35
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: 6ea39704ea232fb304257b897087f0ae60d19c4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>逐步解說：分析 Managed 程式碼中的程式碼缺失
 在本逐步解說中，您會使用程式碼分析工具分析 managed 的專案的程式碼缺失。  

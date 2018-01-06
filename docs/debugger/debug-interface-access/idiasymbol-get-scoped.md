@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 502f0e40d0047d931fb31376abddd4a98fec11e0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: bc3447f828b15e8f755758ee309d148754ebba17
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetscoped"></a>IDiaSymbol::get_scoped
 擷取指定的使用者定義資料類型是否會出現在非全域的語彙範圍中的旗標。  
@@ -41,5 +42,5 @@ HRESULT get_scoped (
 > [!NOTE]
 >  傳回值為`S_FALSE`表示屬性不是使用符號。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

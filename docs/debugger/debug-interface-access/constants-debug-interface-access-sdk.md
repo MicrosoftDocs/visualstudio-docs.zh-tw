@@ -16,11 +16,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 50b6533b1036087dc8d0cdfe59b653774d781f55
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8241190650bf395e1e4e2467b4862119cd2b10dc
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="constants-debug-interface-access-sdk"></a>常數 (偵錯介面存取 SDK)
 這些字串常數可以用來識別透過 DIA SDK 程式偵錯資料庫 (PDB) 檔案的各個不同區段。  
@@ -57,7 +58,7 @@ HRESULT GetSymbolTable(IDiaEnumTables *pEnumTables, IDiaTable **pTable)
 ## <a name="requirements"></a>需求  
  標頭： dia2.h  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [參考](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)   
  [列舉和結構](../../debugger/debug-interface-access/enumerations-and-structures.md)   
  [介面 （偵錯介面存取 SDK）](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   

@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3d7a01aafad5349cf3da6957f39130639de34b58
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c47066b647bfb0bfa89714ca14d16e34f67d6af0
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasourcefilegetuniqueid"></a>IDiaSourceFile::get_uniqueId
 擷取是唯一的這個映像的簡單的整數值。  
@@ -41,5 +42,5 @@ HRESULT get_uniqueId (
 ## <a name="remarks"></a>備註  
  比較索引鍵，而不是字串可加速行數處理。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSourceFile](../../debugger/debug-interface-access/idiasourcefile.md)

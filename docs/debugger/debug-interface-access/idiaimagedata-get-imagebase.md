@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: daaaf26e0a33ce8e90b2b8ac621ed47d299c8276
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 5e3730e7bc543d0b7bdea18e162dfe83e1d803bb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaimagedatagetimagebase"></a>IDiaImageData::get_imageBase
 擷取映像應該為基礎的記憶體位置。  
@@ -41,5 +42,5 @@ HRESULT get_imageBase (
 ## <a name="remarks"></a>備註  
  映像基底的衝突，因為映像可能會被重定基底自動未使用的記憶體位置載入時將它。 這個方法會傳回已儲存在模組中，在編譯時期的基底提示 （建議的記憶體位置）。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaImageData](../../debugger/debug-interface-access/idiaimagedata.md)

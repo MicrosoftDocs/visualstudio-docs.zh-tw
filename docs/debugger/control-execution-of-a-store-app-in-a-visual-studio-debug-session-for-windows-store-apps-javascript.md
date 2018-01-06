@@ -17,11 +17,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 60b9465677ce033f8b285ce21e2b8332bf88a73a
-ms.sourcegitcommit: ebe9fb5eda724936f7a059d35d987c29dffdb50d
+ms.workload: uwp
+ms.openlocfilehash: 1e1e30400a630c7a5b01438e521b651f25ab3137
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="control-execution-of-a-uwp-app-in-a-visual-studio-debug-session-javascript"></a>控制執行的 UWP 應用程式中的 Visual Studio 偵錯工作階段 (JavaScript)
 本快速入門示範如何在 Visual Studio 偵錯工具中巡覽，以及如何檢視工作階段中的程式狀態。  
@@ -304,7 +305,7 @@ ms.lasthandoff: 12/07/2017
   
 7.  **停止偵錯。** 在 [新專案]  功能表上，選擇 [逐步執行] **Stop ging** (鍵盤： **Shift+F5**)。 這樣會結束偵錯工作階段。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [開始偵錯工作階段 (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md)   
  [快速入門： 偵錯工具巡覽 (JavaScript)](../debugger/control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript.md)   
  [快速入門： 偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)   

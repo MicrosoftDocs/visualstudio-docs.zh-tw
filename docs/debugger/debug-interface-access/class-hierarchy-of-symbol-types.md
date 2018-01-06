@@ -14,18 +14,19 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a89cc0342ed5b9d4e1fcb85cbc84e124588d9c9b
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d2cb2374a33677f961fa798332ac96b6d801990b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>符號類型的類別階層架構
 下表描述在類別階層中的符號類型。  
   
 ## <a name="symbol-types"></a>符號類型  
   
-|符號類型|說明|  
+|符號類型|描述|  
 |-----------------|-----------------|  
 |[UDT](../../debugger/debug-interface-access/udt.md)|用來代表每個類別、 結構和等位的符號。|  
 |[Enum (偵錯介面存取 SDK)](../../debugger/debug-interface-access/enum-debug-interface-access-sdk.md)|列舉類型的符號。|  
@@ -46,7 +47,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  每個符號可以有保存相關的符號，以及其他符號的參考資訊的屬性。 在個別的符號主題中列出了這些屬性。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CV_access_e 列舉](../../debugger/debug-interface-access/cv-access-e.md)   
  [符號類型的語彙階層架構](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)

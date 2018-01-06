@@ -12,16 +12,17 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 11d7c7b510f2714af13d84614daba8d2a10bf099
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 0c3e399e7c1885f8c288bc05c49ac0a020fc7470
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="or-designer-messages"></a>O/R 設計工具訊息
 本主題列出使用 O/R 設計工具時可能會出現的訊息。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [無法建立關聯\<關聯名稱 >-屬性列出兩次](../data-tools/cannot-create-an-association-association-name-property-listed-twice.md)  
   
  [無法建立關聯\<關聯名稱 >-屬性類型不相符](../data-tools/cannot-create-an-association-association-name-property-types-do-not-match.md)  

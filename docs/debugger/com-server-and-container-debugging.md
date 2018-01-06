@@ -24,11 +24,12 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 558640368021f3556db479fc431c66dae266c9a1
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 8d1e4ec34b55e9e24c33157446cd74262a640d4f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-server-and-container-debugging"></a>COM 伺服器和容器偵錯
 COM 應用程式可以在程式設計人員直接控制之外執行許多工作。 DLL 之間的通訊、物件的使用次數和剪貼簿作業只是您可能碰到預期外行為的一小部分而已。 發生這種狀況時，第一步驟便是追蹤搜尋問題的來源。  
@@ -56,5 +57,5 @@ COM 應用程式可以在程式設計人員直接控制之外執行許多工作�
   
  若要存取*專案*屬性頁 對話方塊中，以滑鼠右鍵按一下方案總管 中的專案，並從捷徑功能表，然後選擇 屬性。 若要尋找 [命令列的引數] 屬性，請展開 [組態屬性] 分類，然後按一下 [偵錯] 頁。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯 COM 和 ActiveX](../debugger/com-and-activex-debugging.md)

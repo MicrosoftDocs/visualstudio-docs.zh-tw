@@ -19,11 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 1c7e99ce49df969fae439afac5d65369fae9c37a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: e7078e6814abeb0db2afd2cffe698f923e530179
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>將資料從物件儲存至資料庫
 您也可以從物件的值傳遞至 TableAdapter 的 DBDirect 方法的其中一個資料庫物件中儲存資料 (例如， `TableAdapter.Insert`)。 如需詳細資訊，請參閱[TableAdapter](../data-tools/create-and-configure-tableadapters.md)。  
@@ -35,7 +36,7 @@ ms.lasthandoff: 10/31/2017
 > [!NOTE]
 >  當您設定 TableAdapter 時，主要的查詢必須提供足以 DBDirect 方法，以建立資訊。 例如，如果沒有定義主索引鍵資料行的資料表，TableAdapter 設定為查詢資料，它不會產生 DBDirect 方法。  
   
-|TableAdapter DBDirect 方法|說明|  
+|TableAdapter DBDirect 方法|描述|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|將新記錄新增至資料庫，並讓您在個別資料行值做為方法參數中傳遞。|  
 |`TableAdapter.Update`|更新現有的資料庫中的記錄。 `Update`方法會採用原始和新的資料行值做為方法參數。 用來尋找原始記錄中，原始值和新值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也用來協調回資料庫的變更集中的資料，採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或一組<xref:System.Data.DataRow>做為方法參數。|  
@@ -77,5 +78,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="net-framework-security"></a>.NET Framework 安全性  
  您必須擁有權限來執行選取的 INSERT、 UPDATE 或 DELETE 上的資料庫中的資料表。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將資料儲存回資料庫](../data-tools/save-data-back-to-the-database.md)

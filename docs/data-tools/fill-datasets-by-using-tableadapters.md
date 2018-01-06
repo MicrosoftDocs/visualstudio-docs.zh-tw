@@ -23,11 +23,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f93a0d11435a060806a89db48b2c9e81efebe3f3
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: e338335263a9c0757bbf6305a42fd092d4f90c04
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填入資料集
 TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定的預存程序的資料庫中的資料。 也可以執行 Tableadapter 加入、 更新和刪除的資料庫來保存您對資料集的變更。 您也可以發出與任何特定資料表無關的通用命令。  
@@ -37,7 +38,7 @@ TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定�
   
  如需 TableAdapter 作業的詳細資訊，您可以略過直接以其中一個主題：  
   
-|主題|說明|  
+|主題|描述|  
 |-----------|-----------------|  
 |[建立和設定 TableAdapter](../data-tools/create-and-configure-tableadapters.md)|如何使用設計工具來建立及設定 TableAdapters|  
 |[建立參數型 TableAdapter 查詢](../data-tools/create-parameterized-tableadapter-queries.md)|如何讓使用者以引數提供給 TableAdapter 程序或查詢|  
@@ -84,7 +85,7 @@ TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定�
   
  以下是常用的方法和 Tableadapter 的屬性：  
   
-|成員|說明|  
+|成員|描述|  
 |------------|-----------------|  
 |`TableAdapter.Fill`|填入 TableAdapter 的相關聯的資料表格 TableAdapter 的 SELECT 命令的結果。|  
 |`TableAdapter.Update`|將變更傳送回資料庫，並傳回整數，表示更新作業所影響的資料列數目。 如需詳細資訊，請參閱[使用 TableAdapter 更新資料](../data-tools/update-data-by-using-a-tableadapter.md)。|  
@@ -127,5 +128,5 @@ TableAdapter 元件會填入資料集，根據一個或多個查詢或您指定�
 ## <a name="security"></a>安全性  
 當 CommandType 屬性設定為使用資料命令<xref:System.Data.CommandType.Text>，仔細檢查之前將它傳遞給您的資料庫從用戶端傳送的資訊。 惡意使用者可能會嘗試傳送 （插入） 已修改或額外的 SQL 陳述式，來取得未經授權的存取，或資料庫損毀。 傳送至資料庫的使用者輸入之前，一定要驗證的資訊有效。 最佳做法是永遠使用參數型的查詢或預存程序時可能。  
   
-## <a name="see-also"></a>請參閱
-[資料集的工具](../data-tools/dataset-tools-in-visual-studio.md)
+## <a name="see-also"></a>另請參閱
+[資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

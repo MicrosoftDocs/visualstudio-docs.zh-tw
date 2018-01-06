@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: efe1d3ff2c2a73b7f44a8057db94f06a5e0f0d7e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 88352e89e3ffa5689252c78975411392b14ee0c5
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="about-microsoft-spy"></a>關於 Microsoft Spy++
 若要顯示著作權、 版本、 擁有權，以及其他相關資訊 Spy + + 中使用此對話方塊。

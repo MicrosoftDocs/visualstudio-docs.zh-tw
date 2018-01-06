@@ -25,11 +25,12 @@ caps.latest.revision: "23"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fc52fb07cd4da994df07410953787272e3cb724
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 1cae22698a0200dc0971f45dbcfd7b28005f8f0c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="context-operator-in-the-visual-studio-debugger-c"></a>內容運算子，在 Visual Studio 偵錯工具 （c + +）
 您可以使用 C++ 中的內容運算子限定中斷點位置、變數名稱或運算式。 內容運算子對於指定來自外部範圍的名稱相當實用，因為這類名稱會被本機名稱所隱藏。  
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/31/2017
   
 -   *module* 是模組的名稱。 您可以使用完整路徑釐清具有相同名稱的模組。  
   
-     如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如：  
+     如果 *module* 路徑包含逗號、內嵌空格或大括號，您就必須使用引號括住路徑，如此內容剖析器才能正確辨識字串。 單引號會視為 Windows 檔案名稱的一部分，因此您必須使用雙引號。 例如，套用至物件的  
   
     ```C++  
     {,,"a long, long, library name.dll"} g_Var  

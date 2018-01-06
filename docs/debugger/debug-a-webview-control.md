@@ -17,11 +17,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5071d122534f73b18ebb1cfb674e8b15a2876504
-ms.sourcegitcommit: 26419ab0cccdc30d279c32d6a841758cfa903806
+ms.workload: uwp
+ms.openlocfilehash: 40c3a112d77e7e00d95aaa92a77a3b6739c96293
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>偵錯 WebView 控制項的 UWP 應用程式
 ![適用於 Windows 和 Windows Phone](../debugger/media/windows_and_phone_content.png "windows_and_phone_content")  
@@ -67,9 +68,9 @@ ms.lasthandoff: 11/11/2017
   
 ### <a name="use-the-javascript-console-window-to-inspect-and-debug-a-webview-control"></a>使用 [JavaScript 主控台] 視窗檢查及偵錯 WebView 控制項  
   
-1.  (C#、Visual  Basic、C++)  將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
+1.  (C#、Visual Basic、C++) 將指令碼偵錯工具附加到應用程式。 請參閱第一節裡的指示。  
   
-2.  如果您尚未這麼做，請將  `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。  
+2.  如果您尚未這麼做，請將 `WebView` 控制項加入到應用程式，然後按 F5 開始偵錯。  
   
 3.  開啟 JavaScript 主控台視窗`WebView`選擇控制項**偵錯**， **Windows**， **JavaScript 主控台**。  
   
@@ -86,5 +87,5 @@ ms.lasthandoff: 11/11/2017
   
 6.  檢視和修改您的應用程式中的變數，或使用主控台命令中所述[快速入門： 偵錯 JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)和[JavaScript 主控台命令](../debugger/javascript-console-commands.md)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [快速入門：偵錯 HTML 和 CSS](../debugger/quickstart-debug-html-and-css.md)

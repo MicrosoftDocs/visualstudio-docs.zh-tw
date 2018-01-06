@@ -13,11 +13,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 24d6401cae58b0bede44519900f6d72bd77ab2a9
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: c4dd77680fb529575140dc718a4f1c0a58090029
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 中建立簡單資料應用程式
 此 walkthough 示範如何使用 SQL Server LocalDB，Northwind 資料庫中，Entity Framework 6 和 Windows Presentation Foundation 的 Visual Studio 中建立基本 「 資料表單 」 應用程式。 它會顯示如何執行基本的資料繫結的主版詳細資料檢視，而且也有自訂 「 繫結導覽 」 與 「 移動下一步] 按鈕，「 移到上一個""將移至 [開始時，「"Move 若要結束，"「 更新 」 和 「 刪除 」。  
@@ -422,8 +423,8 @@ Visual Studio 所產生的預設排列方式不適合我們的應用程式，因
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]  
   
 ## <a name="run-the-application"></a>執行應用程式
-若要開始偵錯，請按**F5**。 您應該會看到客戶和訂單資料，填入在方格中，並瀏覽按鈕應該可正常運作。 按一下 「 認可 」 會將新客戶或訂單加入至模型，在您輸入的資料之後。 按一下 「 取消 」 返回用完新客戶或新的訂單表單而不儲存資料。 您可以對現有的客戶和訂單直接在文字方塊中編輯，而且這些變更會自動寫入至模型。  
+若要開始偵錯，請按 **F5**。 您應該會看到客戶和訂單資料，填入在方格中，並瀏覽按鈕應該可正常運作。 按一下 「 認可 」 會將新客戶或訂單加入至模型，在您輸入的資料之後。 按一下 「 取消 」 返回用完新客戶或新的訂單表單而不儲存資料。 您可以對現有的客戶和訂單直接在文字方塊中編輯，而且這些變更會自動寫入至模型。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)  
 [Entity Framework 文件](https://msdn.microsoft.com/en-us/data/ee712907.aspx)

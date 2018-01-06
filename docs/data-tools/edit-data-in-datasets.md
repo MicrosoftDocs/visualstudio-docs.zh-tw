@@ -18,11 +18,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: bc42474ff9cb4762b43463e5e0929f11d58ad7d0
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: afb484c1d3bfdd705c5a28f150e4631048ead49d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="edit-data-in-datasets"></a>編輯資料集中的資料
 方式一樣編輯任何資料庫中的資料表中的資料，您可以編輯資料的資料表中的資料。 處理程序可以包含插入、 更新和刪除資料表中的記錄。 在資料繫結表單中，您可以指定哪些欄位是使用者可編輯。 在這些情況下，資料繫結基礎結構會處理所有變更追蹤，以便所做的變更可以傳送回資料庫更新版本。 如果您以程式設計方式進行編輯的資料，而且您想要將這些變更傳送回資料庫，您必須使用的物件和方法讓您進行變更追蹤。  
@@ -110,5 +111,5 @@ ms.lasthandoff: 11/09/2017
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

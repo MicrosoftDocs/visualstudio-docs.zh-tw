@@ -14,11 +14,12 @@ caps.latest.revision: "10"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a26982c1827b9d9b4a7ed09e8aa3af61c9141c9f
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 10d5d331c4308586485ea77824cda4864c6ee943
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaframedatagetprogram"></a>IDiaFrameData::get_program
 擷取用來計算目前的函式的呼叫之前設定的暫存器的程式字串。  
@@ -51,5 +52,5 @@ HRESULT get_program (
   
  請注意，程式字串是特定的 cpu 和設定由目前的堆疊框架的函式的呼叫慣例。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

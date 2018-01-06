@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d1efd7051d9119c4d0e6643c1d42e78d9cdde7cf
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: ffa55100e9bbec33fdbca19ab2757c4de63f5030
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>將自訂控制項加入 [資料來源] 視窗
 當您拖曳的項目**資料來源**至設計介面來建立資料繫結控制項視窗中的，您可以選取您建立的控制項類型。 在視窗中的每個項目有會顯示您可以選擇從控制項下拉式清單。 項目的資料類型所決定的每個項目相關聯的控制項集合。 如果您想要建立的控制項不會出現在清單中，您可以遵循本主題中的指示，將控制項加入至清單。  
@@ -62,7 +63,7 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  如果您想要選取的控制項不會顯示在**相關聯控制項** 方塊中，您必須將控制項加入至清單。 如需詳細資訊，請參閱[將控制項加入清單的相關聯控制項的資料型別](#addingcontrols)。  
   
-6.  按一下 [確定]。  
+6.  按一下 [確定 **Deploying Office Solutions**]。  
   
 7.  在**資料來源**視窗中，按一下資料的項目輸入只相關一或多個控制項，然後按一下 下拉式清單項目的功能表。  
   
@@ -77,7 +78,7 @@ ms.lasthandoff: 10/31/2017
   
      控制項必須具有下列屬性。  
   
-    |屬性|說明|  
+    |屬性|描述|  
     |---------------|-----------------|  
     |<xref:System.ComponentModel.DefaultBindingPropertyAttribute>|實作此屬性顯示的資料，單一資料行 （或屬性） 的簡單控制項，例如<xref:System.Windows.Forms.TextBox>。|  
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|實作這個屬性的控制項，顯示清單 （或資料表） 的資料，例如<xref:System.Windows.Forms.DataGridView>。|  
@@ -90,5 +91,5 @@ ms.lasthandoff: 10/31/2017
     > [!NOTE]
     >  只有位於目前的方案內，或參考的組件的控制項可以加入至相關聯的控制項的清單。 （控制項也必須實作其中一個資料繫結屬性上表中。）若要將資料繫結中沒有的自訂控制項**資料來源**視窗中，拖曳控制項**工具箱**拖曳至設計介面，然後拖曳的項目，從繫結至**資料來源**視窗拖曳至控制項。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

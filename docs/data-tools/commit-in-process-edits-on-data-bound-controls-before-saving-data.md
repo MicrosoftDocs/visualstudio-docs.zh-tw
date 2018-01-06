@@ -22,11 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: d2b0ea1999c9742c04d1bb118d9a036ff2bed5ea
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 38d50f1e3da0004869ae66df8e486affa1b68c2d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>儲存資料前先認可資料繫結控制項上的同處理序編輯
 當編輯資料繫結控制項中的值，使用者必須瀏覽目前的資料錄控制項繫結至基礎資料來源認可更新的值。 當您拖曳項目從[資料來源視窗](add-new-data-sources.md)拖曳至表單，您卸除的第一個項目產生程式碼到**儲存**按鈕的 click 事件的<xref:System.Windows.Forms.BindingNavigator>。 此程式碼會呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法<xref:System.Windows.Forms.BindingSource>。 因此，呼叫<xref:System.Windows.Forms.BindingSource.EndEdit%2A>方法只會產生第一個<xref:System.Windows.Forms.BindingSource>加入至表單。  
@@ -52,6 +53,6 @@ ms.lasthandoff: 12/12/2017
      [!code-csharp[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/CSharp/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.cs)]
      [!code-vb[VSProDataOrcasEndEditOnAll#2](../data-tools/codesnippet/VisualBasic/commit-in-process-edits-on-data-bound-controls-before-saving-data_2.vb)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)   
  [階層式更新](../data-tools/hierarchical-update.md)

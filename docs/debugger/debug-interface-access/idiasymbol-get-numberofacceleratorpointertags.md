@@ -13,11 +13,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d4d7145903269822fbc67d0894cbbea1530044e4
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 7701fefc0c9d754d4d1728b5713deb9e21428a5f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 虛設常式函式 c + + AMP 中傳回 accelerator 指標標記數目。  
@@ -39,5 +40,5 @@ HRESULT get_numberOfAcceleratorPointerTags(
 ## <a name="remarks"></a>備註  
  這個方法會在呼叫`IDiaSymbol`對應至 c + + AMP 加速器虛設常式函式的介面。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

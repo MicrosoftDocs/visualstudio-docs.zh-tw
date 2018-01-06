@@ -39,11 +39,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: b73e2cf93cf0f557db072586b7aa67ab730fad4f
-ms.sourcegitcommit: f0ddee934713ea9126fa107018a57a94a05eafd3
+ms.workload: data-storage
+ms.openlocfilehash: 898cdbd15367aef6ac48d35a44b1ccb4a3deded9
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服務和 WCF 資料服務
 Visual Studio 提供工具使用與 Windows Communication Foundation (WCF) 和[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]，Microsoft 技術，用於建立分散式應用程式。 本主題提供簡介服務從[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]檢視方塊。 如需完整的文件，請參閱[WCF 資料服務 4.5](/dotnet/framework/data/wcf/index)。  
@@ -235,7 +236,7 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可以同步�
   
 ## <a name="related-topics"></a>相關主題  
   
-|標題|說明|  
+|標題|描述|  
 |-----------|-----------------|  
 |[逐步解說：在 Windows Forms 中建立簡單的 WCF 服務](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md)|提供建立和使用中的 WCF 服務的逐步示範[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。|  
 |[逐步解說︰使用 WPF 和 Entity Framework 建立 WCF 資料服務](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md)|提供的逐步示範如何建立及使用[!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]中[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。|  
@@ -251,5 +252,5 @@ Windows Communication Foundation (WCF) 服務中的大部分方法可以同步�
   
  <xref:System.Data.Services>  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [適用於 .NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)

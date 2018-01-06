@@ -14,11 +14,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: f48371e17830b2cf31ff81708a72ba9d95f9a7c5
-ms.sourcegitcommit: eb954434c34b4df6fd2264266381b23ce9e6204a
+ms.workload: data-storage
+ms.openlocfilehash: da81d141e453e0106d329565338f7893b4fad758
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>建立和設定 Visual Studio 中的資料集
 
@@ -90,6 +91,6 @@ A*資料集*是一組儲存在記憶體中的資料庫中的資料，並且支�
 
 4.  獨立的資料表必須實作`Fill`獨立資料表中的邏輯，讓您可以填入資料。 如需填滿獨立資料的資料表資訊，請參閱[填入資料集從 DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)

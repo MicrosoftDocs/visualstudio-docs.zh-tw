@@ -14,11 +14,12 @@ caps.latest.revision: "19"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aa3a6f515ca039c86d453f5729800fe8e1637c0
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: cplusplus
+ms.openlocfilehash: 340d0d7366749f402cb76f3075778fb2b7ea215b
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-custom-views-of-native-objects-in-the-visual-studio-debugger"></a>在 Visual Studio 偵錯工具中建立原生物件的自訂檢視
 Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視窗中顯示原生類型的方式 (例如，**監看式**視窗中，**區域變數**視窗中，然後在**資料提示方塊**。
@@ -217,7 +218,7 @@ Visual Studio Natvis 架構可讓您自訂 Visual Studio 偵錯工具變數視�
 ```  
   
 ####  <a name="BKMK_Versioning"></a> Version 項目  
- `Version` 項目可用來將視覺化範圍設為特定模組及其版本，以將名稱衝突降到最低，並且可針對不同版本的類型使用不同視覺化。 例如：  
+ `Version` 項目可用來將視覺化範圍設為特定模組及其版本，以將名稱衝突降到最低，並且可針對不同版本的類型使用不同視覺化。 例如:   
   
 ```xml
 <Type Name="DirectUI::Border">  

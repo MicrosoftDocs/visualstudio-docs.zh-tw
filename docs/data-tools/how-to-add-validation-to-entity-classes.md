@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 7110fed065816c6d6843e9ed6f95d2da2d6f4851
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 1ff8eb04ae9b5009aff13dc8588633b34d4d72dd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何： 為實體類別加入驗證
 *驗證*實體類別會確認程序的輸入資料物件的值符合的條件約束物件的結構描述，以及建立應用程式的規則。 先驗證資料再將更新傳送至基礎資料庫是減少錯誤的良好做法。 它同時也會降低應用程式與資料庫之間的可能往返次數。  
@@ -122,7 +123,7 @@ ms.lasthandoff: 11/09/2017
     }  
     ```  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [LINQ to SQL 工具，Visual Studio 中](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
 [驗證資料](../data-tools/validate-data-in-datasets.md)  
 [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)  

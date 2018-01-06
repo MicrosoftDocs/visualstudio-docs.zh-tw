@@ -26,11 +26,12 @@ caps.latest.revision: "29"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 283903076a5f6e465f3cb87be7d6710af8d914ef
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: dotnet
+ms.openlocfilehash: e60235e497f770d7e8ce30e27c3a86143f7144e4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="assertions-in-managed-code"></a>Managed 程式碼中的判斷提示
 判斷提示 (或 `Assert` 陳述式) 可以測試條件，您可以將此條件指定為 `Assert` 陳述式的引數。 如果條件判斷值為 true，則不會執行任何動作。 如果條件判斷值為 false，則判斷提示會失敗。 如果您是以偵錯組建執行，則您的程式將進入中斷模式。  
@@ -215,7 +216,7 @@ Trace.Assert ( stacksize > 0, "Out of stack space", "Failed in inctemp" );
 ##  <a name="BKMK_Setting_assertions_in_configuration_files"></a>在組態檔中設定判斷提示  
  您可以在程式組態檔中設定判斷提示，就像在程式碼中一樣。 如需詳細資訊，請參閱 <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>或 <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName>   
  <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName>   
  [偵錯工具安全性](../debugger/debugger-security.md)   

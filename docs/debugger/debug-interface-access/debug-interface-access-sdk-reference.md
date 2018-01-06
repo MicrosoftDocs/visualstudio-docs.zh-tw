@@ -17,16 +17,17 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8206ed1f1215a88408db6f3ef0be387932ec11a
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: c1349a2d92f8c824fe61844ba04606ed16075d3d
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="debug-interface-access-sdk-reference"></a>偵錯介面存取 SDK 參考
 完整的介面和支援列舉和結構在 DIA SDK 中的所有參考。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [介面 (偵錯介面存取 SDK)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)  
  DIA SDK 所提供之介面的所有完整的參考。  
   
@@ -40,5 +41,5 @@ ms.lasthandoff: 10/31/2017
  [符號和符號標記](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
  描述符號為何，以及如何識別型別。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯介面存取 SDK](../../debugger/debug-interface-access/debug-interface-access-sdk.md)

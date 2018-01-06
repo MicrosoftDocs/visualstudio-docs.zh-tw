@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 35d956b1d246d0a43ae058bb58635117c093602c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: dac8991fa31aae0ba65b0377e159b20256c4a416
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiastackwalkhelpergetregistervalue"></a>IDiaStackWalkHelper::get_registerValue
 擷取暫存器的值。  
@@ -45,6 +46,6 @@ HRESULT get_registerValue (
 ## <a name="remarks"></a>備註  
  儘管大小`pRetVal`參數，實作應只哪些暫存器通常會保留儲存。 例如的 8 位元暫存器保留只最低 8 位元的指定值。 8 位元值，這個已擴充成 64 位元，從這個方法傳回時。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md)   
  [CV_HREG_e 列舉](../../debugger/debug-interface-access/cv-hreg-e.md)

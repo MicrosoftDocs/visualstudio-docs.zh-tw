@@ -11,11 +11,14 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 4842ce7f7ec8b6e5542e41017a6e16de6abbc575
-ms.sourcegitcommit: f36eb7f989efbdbed0d0a087afea8ffe27d8ca15
+ms.workload:
+- data-storage
+- cplusplus
+ms.openlocfilehash: 2e354145fa47e243c3dea1641086626e9bcc2c5c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="visual-studio-data-tools-for-c"></a>C + + 的 visual Studio data tools
 
@@ -66,6 +69,6 @@ ms.lasthandoff: 12/14/2017
   
      ![ODBC 範例查詢輸出](../data-tools/media/raddata-odbc-sample-query-output.png "raddata ODBC 範例查詢輸出")  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [存取 Visual Studio 中的資料](../data-tools/accessing-data-in-visual-studio.md)

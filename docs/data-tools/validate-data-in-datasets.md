@@ -25,11 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 0f328cbaac03680885bdbda97dff7bc9ac3cf2cf
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: b5cc63d5a83c9f1400dd183982fa68864d35fdbf
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="validate-data-in-datasets"></a>驗證資料集的資料
 驗證資料是確認的程序的輸入資料物件的值符合資料集的結構描述中的條件約束。 驗證程序也會確認這些值會遵循您的應用程式已建立的規則。 它是最好的作法是驗證之前將更新傳送至基礎資料庫的資料。 這會減少錯誤，以及可能的應用程式與資料庫之間的往返次數。  
@@ -67,7 +68,7 @@ ms.lasthandoff: 11/09/2017
   
 ## <a name="data-update-events"></a>資料更新事件  
   
-|事件|說明|  
+|Event - 事件|描述|  
 |-----------|-----------------|  
 |<xref:System.Data.DataTable.ColumnChanging>|正在變更的資料行中的值。 事件傳遞資料列和資料行，以及建議的新值。|  
 |<xref:System.Data.DataTable.ColumnChanged>|已變更資料行中的值。 事件傳遞資料列和資料行，以及建議的值。|  
@@ -210,7 +211,7 @@ ms.lasthandoff: 11/09/2017
      [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
      [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [Visual Studio 中的資料集工具](../data-tools/dataset-tools-in-visual-studio.md)  
 [如何： 驗證 Windows Form DataGridView 控制項中的資料](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)   
 [操作說明：使用 Windows Forms ErrorProvider 元件顯示表單驗證的錯誤圖示](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

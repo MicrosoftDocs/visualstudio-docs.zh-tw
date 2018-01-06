@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 98a20a771de7c03a2b9b28b21fd3c42634c1a989
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 45c33d02b6ce7aa10f26ca9ea0c285937934ca8c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasectioncontribgetcode16bit"></a>IDiaSectionContrib::get_code16bit
 擷取指出區段是否包含 16 位元程式碼的旗標。  
@@ -41,5 +42,5 @@ HRESULT get_code16bit(
 ## <a name="remarks"></a>備註  
  這個方法只會指出程式碼是否 16 位元。 如果程式碼不是 16 位元，它可能是任何其他 32 位元或 64 位元程式碼等項目。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

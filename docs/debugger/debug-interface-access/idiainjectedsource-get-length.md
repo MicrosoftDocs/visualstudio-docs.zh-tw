@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a02439d05fd160fa73c843d85b27dee9f8a9f29c
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: af59275d8fcf554046f9dd2305cb6dd3b9a8161c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetlength"></a>IDiaInjectedSource::get_length
 擷取的程式碼的位元組數目。  
@@ -41,6 +42,6 @@ HRESULT get_length (
 ## <a name="remarks"></a>備註  
  這個方法所傳回的值是原始碼的長度，且所傳回的是相同的值[idiainjectedsource:: Get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)方法。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)   
  [IDiaInjectedSource::get_source](../../debugger/debug-interface-access/idiainjectedsource-get-source.md)

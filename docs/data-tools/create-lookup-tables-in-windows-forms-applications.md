@@ -15,11 +15,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 00686648576ecc0f8054fe56112c5c47bb54adb8
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: f27fdbe216b6ba2a738f6d9f45d746344d542b38
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Windows Form 應用程式建立查閱資料表
 詞彙*查閱資料表*描述繫結至兩個關聯的資料表的控制項。 這些查閱控制項顯示資料的第一個資料表，根據在第二個資料表中選取的值。  
@@ -59,5 +60,5 @@ ms.lasthandoff: 10/31/2017
     |**ValueMember**|Visual Studio 會將此屬性設定為參與主索引鍵的第一個資料行，或者，如果未定義索引鍵，則為資料表中的第一個資料行。<br /><br /> 如果您需要進行調整，然後設定為您想要顯示的資料行的資料表中的主索引鍵。|  
     |**SelectedValue**|Visual Studio 會將此屬性設定為從卸除原始的資料行**資料來源**視窗。<br /><br /> 如果您需要進行調整，然後設定為相關資料表中的外部索引鍵資料行。|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將 Windows Forms 控制項繫結至 Visual Studio 中的資料](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

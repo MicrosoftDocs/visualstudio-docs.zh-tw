@@ -17,11 +17,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 12b8c166873802e3c0e6a8d4e73ff1b686229222
-ms.sourcegitcommit: ee42a8771f0248db93fd2e017a22e2506e0f9404
+ms.workload: data-storage
+ms.openlocfilehash: 5556a5d9a537684a8d1e73ee363b4c9ac8f6baa8
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>設定從 [資料來源] 視窗拖曳時要建立的控制項
 您可以建立資料繫結控制項項目從**資料來源**視窗拖曳至 WPF 設計工具或 Windows Form 設計工具。 每個項目**資料來源**視窗有時將它拖曳至設計工具所建立的預設控制項。 不過，您可以選擇建立不同的控制項。  
@@ -66,5 +67,5 @@ ms.lasthandoff: 11/09/2017
   
      如果您不想要建立資料行或屬性的控制項，選取**無**下拉式選單中。 如果您想要將父資料表或物件拖曳至設計工具中，但您不想要包含的特定資料行或屬性，這非常有用。  
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

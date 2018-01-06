@@ -31,11 +31,12 @@ caps.latest.revision: "16"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a2774eacfb0472145edb84d5c3becf77513ee986
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 420dcc98aad4f4ca2ad76d16b7f4c6c7c51d2beb
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="crt-debug-library-use"></a>CRT 偵錯程式庫操作
 C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一種 CRT 偵錯程式庫，您必須連結[偵錯](/cpp/build/reference/debug-generate-debug-info)然後使用編譯**/MDd**， **/MTd**，或**/LDd**。  
@@ -49,6 +50,6 @@ C 執行階段程式庫提供更多的偵錯支援。 若要使用其中一種 C
   
  如需有關您可以使用的各種執行階段程式庫的詳細資訊，請參閱[C 執行階段程式庫](/cpp/c-runtime-library/crt-library-features)。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [CRT 偵錯技術](../debugger/crt-debugging-techniques.md)   
  [/MD、 /MT、 /LD （使用執行階段程式庫）](/cpp/build/reference/md-mt-ld-use-run-time-library)

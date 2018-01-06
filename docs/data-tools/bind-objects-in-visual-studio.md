@@ -20,11 +20,12 @@ author: gewarren
 ms.author: gewarren
 manager: ghogen
 ms.technology: vs-data-tools
-ms.openlocfilehash: 9f410fdfea8a241b10cbab621dbd781d3648a080
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: data-storage
+ms.openlocfilehash: 64031303545f293d9274158eeb1527ba26676751
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="bind-objects-in-visual-studio"></a>在 Visual Studio 中的物件繫結
 Visual Studio 會提供設計階段工具，為您的應用程式中的資料來源使用自訂物件。 當您想要將資料庫的資料儲存在您繫結至 UI 控制項的物件時，建議的方法就是使用 Entity Framework 來產生類別。 Entity Framework 自動產生所有重複使用變更追蹤程式碼，這表示，本機物件的任何變更會自動保存至資料庫時您 DbSet 物件上呼叫 AcceptChanges。 如需詳細資訊，請參閱[Entity Framework 文件](https://ef.readthedocs.org/en/latest/)。  
@@ -128,7 +129,7 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
   
  Visual Studio 會建立可以直接對資料庫執行的 DBDirect 方法。 這些方法不需要 DataSet 或 DataTable 物件。  
   
-|TableAdapter DBDirect 方法|說明|  
+|TableAdapter DBDirect 方法|描述|  
 |----------------------------------|-----------------|  
 |`TableAdapter.Insert`|將新記錄新增至資料庫，讓您在個別資料行值做為方法參數中傳遞。|  
 |`TableAdapter.Update`|更新現有的資料庫中的記錄。 更新方法會接受原始和新的資料行值做為方法參數。 用來尋找原始記錄中，原始值和新值來更新該記錄。<br /><br /> `TableAdapter.Update`方法也用來協調回資料庫，變更集中的資料，採取<xref:System.Data.DataSet>， <xref:System.Data.DataTable>， <xref:System.Data.DataRow>，或陣列<xref:System.Data.DataRow>做為方法參數。|  
@@ -141,5 +142,5 @@ Visual Studio 會提供設計階段工具，為您的應用程式中的資料來
  [!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
  [!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [將控制項繫結至 Visual Studio 中的資料](../data-tools/bind-controls-to-data-in-visual-studio.md)

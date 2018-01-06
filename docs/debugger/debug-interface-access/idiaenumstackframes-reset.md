@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb92e02eb48f46508a3bcca4286d1f5eb39381dc
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 44ef1f1d77545a2bd38a9bb132ff971c6b02a9da
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
 將列舉序列重設為開頭。  
@@ -32,5 +33,5 @@ HRESULT Reset();
 ## <a name="return-value"></a>傳回值  
  傳回 `S_OK`。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

@@ -24,16 +24,17 @@ caps.latest.revision: "20"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6d892c4c0c8f580d9a3f219fd61211f8e0e9e22
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 2854a74bd8da32db5d954a0e68a33a484b7eb493
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="com-and-activex-debugging"></a>偵錯 COM 和 ActiveX
 本章節提供有關偵錯 COM 應用程式和 ActiveX 控制項的秘訣。  
   
-## <a name="in-this-section"></a>本章節內容  
+## <a name="in-this-section"></a>本節內容  
  [COM 伺服器和容器偵錯](../debugger/com-server-and-container-debugging.md)  
  內容提出偵錯 COM 應用程式時的特殊考量。 涉及的問題包含：在同一方案中使用兩個專案偵錯 COM 伺服器和容器 (Container)、跨處理序 (Process) 界限追蹤呼叫、設定回呼函式 (Callback Function) 的中斷點，以及逐步跨和進入容器和伺服器等的問題。  
   
@@ -47,7 +48,7 @@ ms.lasthandoff: 10/31/2017
  [偵錯工具功能導覽](../debugger/debugger-feature-tour.md)  
  提供偵錯相關文件的主要連結。 這些資訊包括：偵錯工具的新功能、設定和準備、中斷點、例外狀況處理、編輯後繼續、Managed 程式碼的偵錯、Visual C++ 專案的偵錯、COM 和 ActiveX 的偵錯、DLL 偵錯、SQL 偵錯，以及使用者介面的參考。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [偵錯工具安全性](../debugger/debugger-security.md)   
  [COM 簡介](/cpp/atl/introduction-to-com)   
  [ActiveX 控制項](/cpp/mfc/activex-controls)   

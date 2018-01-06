@@ -14,11 +14,12 @@ caps.latest.revision: "8"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b87233f3d63c896ea70c7efef9a65b0ce6693251
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 04894f9ef6d1779b5e27c2552b5ea05d84649a2c
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idialinenumbergetcolumnnumberend"></a>IDiaLineNumber::get_columnNumberEnd
 擷取運算式或陳述式的結束位置的其中一個基礎來源資料行編號。  
@@ -41,5 +42,5 @@ HRESULT get_columnNumberEnd (
 ## <a name="remarks"></a>備註  
  這個方法所傳回的資料行值是中的列位置的位移之後的陳述式的一行的最後一個字元的位元組。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

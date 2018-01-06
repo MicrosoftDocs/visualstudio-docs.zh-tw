@@ -12,11 +12,12 @@ caps.latest.revision: "3"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9432c65ec6a481b23655fb2a92915a4a4365ed5e
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: f7458c2f35bfd29c53b939b6300d2759f0e7897f
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="configure-the-windows-firewall-for-remote-debugging"></a>設定 Windows 防火牆進行遠端偵錯
 本主題描述如何設定防火牆，在執行下列作業系統的電腦上啟用遠端偵錯：  
@@ -45,7 +46,7 @@ ms.lasthandoff: 10/31/2017
   
 |||||  
 |-|-|-|-|  
-|**連接埠**|**傳入/傳出**|**通訊協定**|**說明**|   
+|**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|   
 |4022|內送|TCP|針對 VS 2017。 針對每個 Visual Studio 版本，通訊埠編號會遞增 2。 如需詳細資訊，請參閱[Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。|  
 |4023|內送|TCP|針對 VS 2017。 針對每個 Visual Studio 版本，通訊埠編號會遞增 2。 （只用於遠端偵錯從 64 位元版本的遠端偵錯工具的 32 位元處理序。）如需詳細資訊，請參閱[Visual Studio 遠端偵錯工具連接埠指派](../debugger/remote-debugger-port-assignments.md)。| 
 |3702|傳出|UDP|（選擇性）遠端偵錯工具探索的必要項。|    
@@ -117,10 +118,10 @@ ms.lasthandoff: 10/31/2017
 |||||  
 |-|-|-|-|  
 |**連接埠**|**傳入/傳出**|**通訊協定**|**描述**|  
-|135、139、445|傳出|TCP|必要項。|  
-|137、138|傳出|UDP|必要項。|  
+|135、139、445|傳出|TCP|必要。|  
+|137、138|傳出|UDP|必要。|  
 |500、4500|傳出|UDP|如果您的網域原則需要透過 IPSec 進行網路通訊時，則為必要項。|  
 |80|傳出|TCP|網頁伺服器偵錯的必要項。|
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [遠端偵錯](../debugger/remote-debugging.md)

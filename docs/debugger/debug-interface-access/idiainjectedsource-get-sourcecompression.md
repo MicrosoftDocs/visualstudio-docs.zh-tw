@@ -14,11 +14,12 @@ caps.latest.revision: "9"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cbf917a219443051da95634e8dc3263b3927c719
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 68b0d80d57e8e29aa326946b6cf94fe119ca30fd
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiainjectedsourcegetsourcecompression"></a>IDiaInjectedSource::get_sourceCompression
 擷取來源壓縮用於的指標。  
@@ -41,5 +42,5 @@ HRESULT get_sourceCompression (
 ## <a name="remarks"></a>備註  
  這個方法所傳回的值是使用編譯器專有的。 例如，編譯器可能會使用執行長度編碼方式編碼或 Huffman 樣式壓縮。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md)

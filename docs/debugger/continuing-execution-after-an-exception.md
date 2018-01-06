@@ -29,11 +29,12 @@ caps.latest.revision: "25"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9491eb19796c766d216af458ca122b1fa5032596
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: 84ade967c00e33390402e16a1b2980277f89ed5a
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="continuing-execution-after-an-exception"></a>例外狀況之後繼續執行
 當偵錯工具會中斷執行，因為發生例外狀況時，您會看到**例外狀況協助程式**，根據預設。 如果您已停用**例外狀況協助程式**中**選項**對話方塊中，您會看到**例外狀況助理**（C# 或 Visual Basic） 或**例外狀況**對話方塊 （c + +）。  
@@ -46,5 +47,5 @@ ms.lasthandoff: 10/31/2017
 ## <a name="mixed-code"></a>混合程式碼  
  如果在偵錯原生和 Managed 混合的程式碼時發生未處理的例外狀況，作業系統條件約束會禁止回溯呼叫堆疊。 如果您嘗試使用捷徑功能表回溯呼叫堆疊，就會出現錯誤訊息，說明在混合程式碼偵錯期間，偵錯工具無法從未處理的例外狀況回溯。  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [使用偵錯工具管理例外狀況](../debugger/managing-exceptions-with-the-debugger.md)

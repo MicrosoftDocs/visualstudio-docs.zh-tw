@@ -14,11 +14,12 @@ caps.latest.revision: "7"
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ed8cd869bc552b98f524bae2a372060b87129d24
-ms.sourcegitcommit: f40311056ea0b4677efcca74a285dbb0ce0e7974
+ms.workload: multiple
+ms.openlocfilehash: d6d7141e6dd97fbe4c1d7b3df9a2d245e2abe3d4
+ms.sourcegitcommit: 32f1a690fc445f9586d53698fc82c7debd784eeb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="idiasymbolgethassetjump"></a>IDiaSymbol::get_hasSetJump
 擷取指定函式是否包含使用的旗標[setjmp](/cpp/c-runtime-library/reference/setjmp)命令 (搭配[longjmp](/cpp/c-runtime-library/reference/longjmp)命令時，這些形成例外狀況處理的 C 樣式方法)。  
@@ -45,10 +46,10 @@ HRESULT get_hasSetJump(
   
 |需求|描述|  
 |-----------------|-----------------|  
-|Header:|dia2.h|  
+|標頭：|dia2.h|  
 |版本:|DIA SDK v8.0|  
   
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Idiasymbol:: Get_haslongjump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)   
  [longjmp](/cpp/c-runtime-library/reference/longjmp)   
